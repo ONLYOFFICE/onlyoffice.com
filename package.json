@@ -1,0 +1,46 @@
+{
+  "name": "onlyoffice.com",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "i18next": "^24.2.2",
+    "next": "15.1.7",
+    "next-i18next": "^15.4.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.0",
+    "styled-components": "^6.1.15"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "3.2.4",
+    "@eslint/eslintrc": "^3",
+    "@storybook/addon-essentials": "8.5.4",
+    "@storybook/addon-interactions": "8.5.4",
+    "@storybook/addon-onboarding": "8.5.4",
+    "@storybook/blocks": "8.5.4",
+    "@storybook/nextjs": "8.5.4",
+    "@storybook/react": "8.5.4",
+    "@storybook/test": "8.5.4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "eslint-plugin-storybook": "^0.11.2",
+    "storybook": "8.5.4",
+    "typescript": "^5"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}
