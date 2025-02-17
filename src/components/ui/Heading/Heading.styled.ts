@@ -15,7 +15,6 @@ const StyledHeading = styled.h1<{
     props.$size === 1 &&
     css`
       font-size: 48px;
-      font-weight: 700;
       line-height: 64px;
       letter-spacing: -0.03em;
 
@@ -35,7 +34,6 @@ const StyledHeading = styled.h1<{
     props.$size === 2 &&
     css`
       font-size: 40px;
-      font-weight: 700;
       line-height: 52px;
       letter-spacing: -0.02em;
 
@@ -54,7 +52,6 @@ const StyledHeading = styled.h1<{
     props.$size === 3 &&
     css`
       font-size: 32px;
-      font-weight: 700;
       line-height: 40px;
       letter-spacing: -0.02em;
 
@@ -73,7 +70,6 @@ const StyledHeading = styled.h1<{
     props.$size === 4 &&
     css`
       font-size: 24px;
-      font-weight: 700;
       line-height: 32px;
       letter-spacing: -0.02em;
 
@@ -85,7 +81,6 @@ const StyledHeading = styled.h1<{
 
       @media ${device.mobile} {
         font-size: 18px;
-        font-weight: 600;
         line-height: 24px;
       }
     `}
@@ -94,7 +89,6 @@ const StyledHeading = styled.h1<{
     props.$size === 5 &&
     css`
       font-size: 18px;
-      font-weight: 700;
       line-height: 24px;
       letter-spacing: -0.02em;
 
@@ -107,7 +101,6 @@ const StyledHeading = styled.h1<{
     props.$size === 6 &&
     css`
       font-size: 14px;
-      font-weight: 700;
       line-height: 16px;
 
       @media ${device.mobile} {
@@ -120,7 +113,6 @@ const StyledHeading = styled.h1<{
     props.$size === 7 &&
     css`
       font-size: 13px;
-      font-weight: 600;
       line-height: 16px;
       letter-spacing: 0.04em;
 
