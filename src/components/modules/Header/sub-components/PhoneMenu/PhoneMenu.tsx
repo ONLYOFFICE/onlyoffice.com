@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { TI18n } from "@src/types/i18n";
+import { useTranslation } from "next-i18next";
 import {
   StyledPhoneMenu,
   StyledPhoneButton,
@@ -10,7 +10,8 @@ import {
 } from "./PhoneMenu.styled";
 import { PhoneIcon } from "@src/components/icons";
 
-const PhoneMenu = ({ t }: TI18n) => {
+const PhoneMenu = () => {
+  const { t } = useTranslation("common");
   const buttonRef = useRef(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import {
   GlobalStyle,
@@ -23,8 +21,6 @@ interface IHeader {
 }
 
 const Header = ({ locale }: IHeader) => {
-  const { t } = useTranslation("common");
-  const router = useRouter();
   const [isOpenMenuMobile, setIsOpenMenuMobile] = useState<boolean>(false);
 
   return (
@@ -46,14 +42,11 @@ const Header = ({ locale }: IHeader) => {
                 priority
               />
             </StyledHeaderLogo>
-            <HeaderMenu
-              locale={locale ?? router.locale}
-              isOpen={isOpenMenuMobile}
-            />
+            <HeaderMenu locale={locale} isOpen={isOpenMenuMobile} />
             <StyledHeaderBox>
               <SearchInput />
-              <PhoneMenu t={t} />
-              <LanguageSelector t={t} />
+              <PhoneMenu />
+              <LanguageSelector />
             </StyledHeaderBox>
           </StyledHeaderWrapper>
         </Container>

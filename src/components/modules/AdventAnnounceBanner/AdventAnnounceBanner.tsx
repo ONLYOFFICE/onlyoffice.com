@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { AdventAnnounce } from "onlyoffice-react-ui-kit/advent-announce";
 import "onlyoffice-react-ui-kit/advent-announce/css";
 
@@ -7,9 +6,7 @@ interface IAdventAnnounceBanner {
 }
 
 const AdventAnnounceBanner = ({ locale }: IAdventAnnounceBanner) => {
-  const router = useRouter();
-
-  return <AdventAnnounce locale={locale ?? router.locale} />;
+  return <AdventAnnounce locale={locale} />;
 };
 
 export { AdventAnnounceBanner };

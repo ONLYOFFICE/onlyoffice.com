@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import Link from "next/link";
-import { TI18n } from "@src/types/i18n";
 import {
   StyledLanguageSelector,
   StyledLanguageSelectorButton,
@@ -10,7 +10,8 @@ import {
 import languages from "@src/config/languages.json";
 import { ArrowDownIcon, FlagIcon } from "@src/components/icons";
 
-const LanguageSelector = ({ t }: TI18n) => {
+const LanguageSelector = () => {
+  const { t } = useTranslation("common");
   const router = useRouter();
   const buttonRef = useRef(null);
   const listRef = useRef<HTMLUListElement>(null);

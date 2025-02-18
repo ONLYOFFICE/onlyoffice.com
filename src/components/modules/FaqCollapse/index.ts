@@ -1,0 +1,1 @@
+export { FaqCollapse } from "./FaqCollapse";
