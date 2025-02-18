@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useRouter } from "next/router";
 import {
   StyledImageTabs,
   StyledTabButton,
@@ -9,9 +8,6 @@ import { IImageTabs } from "./ImageTabs.types";
 import { ChevronDownIcon } from "@src/components/icons";
 
 const ImageTabs = ({ id, className, items, position = "left" }: IImageTabs) => {
-  const router = useRouter();
-  const locale = router.locale;
-
   const [activeTab, setActiveTab] = useState(0);
 
   return (
@@ -30,15 +26,8 @@ const ImageTabs = ({ id, className, items, position = "left" }: IImageTabs) => {
             {activeTab === index && (
               <StyledTabImage
                 $isMobile
-                $image={
-                  items[activeTab].images[locale!]?.url ??
-                  items[activeTab].images.en.url
-                }
-                $image2x={
-                  items[activeTab].images[locale!]?.url2x ??
-                  items[activeTab].images.en.url2x ??
-                  ""
-                }
+                $image={items[activeTab].images.url}
+                $image2x={items[activeTab].images?.url2x ?? ""}
               ></StyledTabImage>
             )}
           </li>
@@ -48,15 +37,8 @@ const ImageTabs = ({ id, className, items, position = "left" }: IImageTabs) => {
       {items[activeTab] && (
         <StyledTabImage
           $isDesktop
-          $image={
-            items[activeTab].images[locale!]?.url ??
-            items[activeTab].images.en.url
-          }
-          $image2x={
-            items[activeTab].images[locale!]?.url2x ??
-            items[activeTab].images.en.url2x ??
-            ""
-          }
+          $image={items[activeTab].images.url}
+          $image2x={items[activeTab].images?.url2x ?? ""}
         ></StyledTabImage>
       )}
     </StyledImageTabs>

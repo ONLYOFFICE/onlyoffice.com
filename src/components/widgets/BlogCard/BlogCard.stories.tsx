@@ -38,9 +38,9 @@ const Template: StoryFn<IBlogCard> = (args: IBlogCard) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  linkUrl: "#",
+  linkUrl:
+    "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
   heading:
     "How Kinderhaus Berlin shares and collaborates on sensitive files with ONLYOFFICE DocSpace",
-  imgUrl:
-    "https://static-blog.onlyoffice.com/wp-content/uploads/2023/11/24111341/use-case-kinderhaus.png",
+  imgUrl: "/images/storybook/widgets/blog-card/kinderhaus.jpg",
 };

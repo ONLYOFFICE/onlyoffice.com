@@ -1,18 +1,18 @@
 import {
   StyledSolutionCard,
   StyledSolutionCardImg,
-  StyledSolutionCardHeading,
   StyledSolutionCardBody,
   StyledSolutionCardText,
   StyledSolutionCardCustomLinks,
 } from "./SolutionCard.styled";
 import { ISolutionCard } from "./SolutionCard.types";
+import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 
 const SolutionCard = ({
   id,
   className,
-  imageUrl,
+  imgUrl,
   heading,
   text,
   links,
@@ -28,14 +28,14 @@ const SolutionCard = ({
   return (
     <StyledSolutionCard id={id} className={className} $large={large}>
       <StyledSolutionCardImg
-        style={{ backgroundImage: `url(${imageUrl})` }}
+        style={{ backgroundImage: `url(${imgUrl})` }}
         display="block"
         href={links && links[0].url}
         tabIndex={-1}
         $large={large}
       />
       <StyledSolutionCardBody>
-        {heading && <StyledSolutionCardHeading level={3} label={heading} />}
+        {heading && <Heading level={3} label={heading} />}
         {text && <StyledSolutionCardText>{text}</StyledSolutionCardText>}
 
         {links &&

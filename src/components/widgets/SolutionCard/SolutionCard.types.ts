@@ -4,7 +4,7 @@ export interface ISolutionCard {
   /** Additional CSS class names. */
   className?: string;
   /** The image URL. */
-  imageUrl: string;
+  imgUrl: string;
   /** The heading. */
   heading?: string;
   /** The text. */

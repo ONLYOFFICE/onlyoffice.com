@@ -10,17 +10,12 @@ import { Link } from "@src/components/ui/Link";
 const BlogCard = ({ id, className, linkUrl, imgUrl, heading }: IBlogCard) => {
   return (
     <StyledBlogCard id={id} className={className}>
-      <StyledBlogCardLink
-        className="blog-card-img-wrapper"
-        href={linkUrl}
-        tabIndex={-1}
-        target="_blank"
-      >
+      <StyledBlogCardLink href={linkUrl} tabIndex={-1} target="_blank">
         <StyledBlogCardImg $imgUrl={imgUrl} />
       </StyledBlogCardLink>
 
       <Heading level={4}>
-        <Link href={linkUrl} target="_blank">
+        <Link href={linkUrl} target="_blank" hover="main-color">
           {heading}
         </Link>
       </Heading>

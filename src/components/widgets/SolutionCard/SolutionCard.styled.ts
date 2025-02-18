@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { ISolutionCard } from "./SolutionCard.types";
 import { device } from "@src/utils/device";
-import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
@@ -21,7 +20,7 @@ const StyledSolutionCardImg = styled(Link)<{
   $large?: ISolutionCard["large"];
 }>`
   border-radius: 6px;
-  padding-bottom: ${(props) => (props.$large ? "49.634%" : "80.267%")};
+  padding-bottom: ${(props) => (props.$large ? "49.634%" : "85.23%")};
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,16 +34,6 @@ const StyledSolutionCardImg = styled(Link)<{
   @media ${device.mobile} {
     padding-bottom: initial;
     height: ${(props) => (props.$large ? "143px" : "240px")};
-  }
-`;
-
-const StyledSolutionCardHeading = styled(Heading)`
-  font-size: 22px;
-  line-height: 30px;
-
-  @media ${device.mobile} {
-    font-size: 18px;
-    line-height: 24px;
   }
 `;
 
@@ -82,7 +71,6 @@ const StyledSolutionCardCustomLinks = styled(Text)`
 export {
   StyledSolutionCard,
   StyledSolutionCardImg,
-  StyledSolutionCardHeading,
   StyledSolutionCardBody,
   StyledSolutionCardText,
   StyledSolutionCardCustomLinks,

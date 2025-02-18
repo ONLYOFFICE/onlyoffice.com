@@ -45,21 +45,15 @@ Default.args = {
     {
       label: "View, edit and collaborate on docs, sheets, slides",
       images: {
-        en: {
-          url: "https://static-www.onlyoffice.com/v9.5.0/images/mainpage/actions.png",
-          url2x:
-            "https://static-www.onlyoffice.com/v9.5.0/images/mainpage/actions@2x.png",
-        },
+        url: "/images/storybook/widgets/image-tabs/actions.png",
+        url2x: "/images/storybook/widgets/image-tabs/actions@2x.png",
       },
     },
     {
       label: "Build fillable PDF forms and fill in them online",
       images: {
-        en: {
-          url: "https://static-www.onlyoffice.com/v9.5.0/images/mainpage/pdf_forms.png",
-          url2x:
-            "https://static-www.onlyoffice.com/v9.5.0/images/mainpage/pdf_forms@2x.png",
-        },
+        url: "/images/storybook/widgets/image-tabs/pdf-forms.png",
+        url2x: "/images/storybook/widgets/image-tabs/pdf-forms@2x.png",
       },
     },
   ],

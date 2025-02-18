@@ -57,6 +57,7 @@ const StyledTabButton = styled.button`
   }
 
   svg {
+    min-width: 24px;
     margin-left: 16px;
   }
 
