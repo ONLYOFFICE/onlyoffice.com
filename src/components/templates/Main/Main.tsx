@@ -1,3 +1,4 @@
+import { ILocale } from "@src/types/locale";
 import { GlobalStyle } from "./Main.styled";
 import { Hero } from "./sections/Hero";
 import { Docs } from "./sections/Docs";
@@ -9,11 +10,7 @@ import { Rating } from "./sections/Rating";
 import { LatestNews } from "./sections/LatestNews";
 import { Faq } from "./sections/Faq";
 
-interface IMainTemplate {
-  locale: string;
-}
-
-const MainTemplate = ({ locale }: IMainTemplate) => {
+const MainTemplate = ({ locale }: ILocale) => {
   return (
     <>
       <GlobalStyle />

@@ -6,15 +6,12 @@ import {
   StyledHeroImageWrapper,
   StyledHeroImage,
 } from "./Hero.styled";
+import { ILocale } from "@src/types/locale";
 import { Container } from "@src/components/ui/Container";
 import { Button } from "@src/components/ui/Button";
 import { Section } from "@src/components/ui/Section";
 
-interface IHero {
-  locale?: string;
-}
-
-const Hero = ({ locale }: IHero) => {
+const Hero = ({ locale }: ILocale) => {
   const { t } = useTranslation("main");
 
   return (

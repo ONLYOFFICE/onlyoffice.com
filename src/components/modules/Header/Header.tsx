@@ -10,17 +10,14 @@ import {
 } from "./Header.styled";
 import { HeaderMenu } from "onlyoffice-react-ui-kit/header-menu";
 import "onlyoffice-react-ui-kit/header-menu/css";
+import { ILocale } from "@src/types/locale";
 import { Container } from "@src/components/ui/Container";
 import { SearchInput } from "./sub-components/SearchInput";
 import { PhoneMenu } from "./sub-components/PhoneMenu";
 import { LanguageSelector } from "./sub-components/LanguageSelector";
 import { Overlay } from "@src/components/ui/Overlay";
 
-interface IHeader {
-  locale?: string;
-}
-
-const Header = ({ locale }: IHeader) => {
+const Header = ({ locale }: ILocale) => {
   const [isOpenMenuMobile, setIsOpenMenuMobile] = useState<boolean>(false);
 
   return (

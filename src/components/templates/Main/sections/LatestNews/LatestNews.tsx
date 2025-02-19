@@ -8,6 +8,7 @@ import {
   StyledLatestNewsItemHeading,
   StyledLatestNewsCards,
 } from "./LatestNews.styled";
+import { ILocale } from "@src/types/locale";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
@@ -16,11 +17,7 @@ import { NewsItem } from "./sub-components/NewsItem";
 import { latestNewsItems } from "./data/latestNewsItems";
 import { getLink } from "@src/utils/getLink";
 
-interface ILatestNews {
-  locale: string;
-}
-
-const LatestNews = ({ locale }: ILatestNews) => {
+const LatestNews = ({ locale }: ILocale) => {
   const { t } = useTranslation("main");
   const ref = useRef<HTMLDivElement | null>(null);
 

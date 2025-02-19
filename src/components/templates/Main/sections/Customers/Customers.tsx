@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
+import { ILocale } from "@src/types/locale";
 import {
   StyledCustomers,
   StyledCustomersHeading,
@@ -14,11 +15,7 @@ import { BlogCard } from "@src/components/widgets/BlogCard";
 import { customersItems } from "./data/customersItems";
 import { successStoriesItems } from "./data/successStoriesItems";
 
-interface ICustomers {
-  locale: string;
-}
-
-const Customers = ({ locale }: ICustomers) => {
+const Customers = ({ locale }: ILocale) => {
   const { t } = useTranslation("main");
 
   return (

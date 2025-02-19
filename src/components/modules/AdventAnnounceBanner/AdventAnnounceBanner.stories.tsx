@@ -1,5 +1,6 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { AdventAnnounceBanner } from "./AdventAnnounceBanner";
+import { ILocale } from "@src/types/locale";
 import languages from "@src/config/languages.json";
 
 export default {
@@ -21,7 +22,7 @@ export default {
   },
 } as Meta<typeof AdventAnnounceBanner>;
 
-const Template: StoryFn<{ locale: string }> = (args: { locale: string }) => (
+const Template: StoryFn<ILocale> = (args: ILocale) => (
   <AdventAnnounceBanner {...args} />
 );
 

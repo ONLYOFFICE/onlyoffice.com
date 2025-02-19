@@ -1,15 +1,12 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { ILocale } from "@src/types/locale";
 import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
-import { Footer } from "@src/components/modules/Footer";
 import { Header } from "@src/components/modules/Header";
 import { MainTemplate } from "@src/components/templates/Main";
+import { Footer } from "@src/components/modules/Footer";
 
-interface IMainPage {
-  locale: string;
-}
-
-const MainPage = ({ locale }: IMainPage) => {
+const MainPage = ({ locale }: ILocale) => {
   return (
     <Layout>
       <Layout.AdventAnnounce>
@@ -28,7 +25,7 @@ const MainPage = ({ locale }: IMainPage) => {
   );
 };
 
-export async function getStaticProps({ locale }: IMainPage) {
+export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
       ...(await serverSideTranslations(locale, [

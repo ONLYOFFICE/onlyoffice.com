@@ -1,10 +1,8 @@
 import { FooterMenu } from "onlyoffice-react-ui-kit/footer-menu";
 import "onlyoffice-react-ui-kit/footer-menu/css";
-interface IAdventAnnounceBanner {
-  locale?: string;
-}
+import { ILocale } from "@src/types/locale";
 
-const Footer = ({ locale }: IAdventAnnounceBanner) => {
+const Footer = ({ locale }: ILocale) => {
   return <FooterMenu locale={locale} />;
 };
 
