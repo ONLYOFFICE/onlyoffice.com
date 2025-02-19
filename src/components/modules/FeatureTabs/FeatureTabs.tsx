@@ -11,6 +11,7 @@ const FeatureTabs = ({
   id,
   className,
   heading,
+  linkId,
   linkName,
   linkUrl,
   items,
@@ -30,6 +31,7 @@ const FeatureTabs = ({
         {linkName && (
           <StyledFeatureTabsLinkWrapper>
             <Link
+              id={linkId}
               href={linkUrl}
               label={linkName}
               fontSize="16px"

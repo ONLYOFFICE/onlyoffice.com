@@ -41,6 +41,7 @@ const SolutionCard = ({
         {links &&
           links.map((link, index) => (
             <Link
+              id={link.id}
               label={link.name}
               href={link.url}
               fontSize="14px"

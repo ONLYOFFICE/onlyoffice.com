@@ -1,0 +1,1 @@
+export { MedalAward } from "./MedalAward";

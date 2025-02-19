@@ -5,6 +5,8 @@ export interface IFeatureTabs {
   className?: string;
   /** The heading of the image tabs. */
   heading?: React.ReactNode;
+  /** The unique identifier of the bottom link. */
+  linkId?: string;
   /** The name of the bottom link. */
   linkName?: string;
   /** The href of the bottom link. */

@@ -49,6 +49,7 @@ const SecurityFirst = ({ id, className }: ISecurityFirst) => {
               ))}
             </StyledSecurityFirstList>
             <StyledSecurityFirstLink
+              id="security-first-learn-more"
               href="/security"
               label={t("LearnMoreAboutOOSecurityFeatures")}
               color="main-color"
