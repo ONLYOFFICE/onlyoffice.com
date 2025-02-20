@@ -1,8 +1,5 @@
 import styled, { css, keyframes } from "styled-components";
 import { ILoaderButton } from "./LoaderButton.types";
-import loaderIcon from "@public/images/icons/loader.svg";
-import checkIcon from "@public/images/icons/check.svg";
-import crossIcon from "@public/images/icons/cross.svg";
 
 const loaderAnimation = keyframes`
   100%  { 
@@ -75,7 +72,7 @@ const StyledLoaderButton = styled.button<{
         top: 50%;
         width: 24px;
         height: 24px;
-        background-image: url(${loaderIcon.src});
+        background-image: url("/images/icons/loader.svg");
         background-repeat: no-repeat;
         background-size: contain;
         transform: translate(-50%, -50%);
@@ -88,7 +85,7 @@ const StyledLoaderButton = styled.button<{
     css`
       color: transparent;
       background-color: #8bb825;
-      background-image: url(${checkIcon.src});
+      background-image: url("/images/icons/check.svg");
       background-repeat: no-repeat;
       background-size: 24px 24px;
       background-position: center;
@@ -99,7 +96,7 @@ const StyledLoaderButton = styled.button<{
     css`
       color: transparent;
       background-color: #cb0000;
-      background-image: url(${crossIcon.src});
+      background-image: url("/images/icons/cross.svg");
       background-repeat: no-repeat;
       background-size: 24px 24px;
       background-position: center;

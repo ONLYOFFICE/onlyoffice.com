@@ -1,10 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import { device } from "@src/utils/device";
-import mainBg from "@public/images/main/main-bg.svg";
 
 const GlobalStyle = createGlobalStyle`
   .layout {
-    background-image: url(${mainBg.src});
+    background-image: url("images/main/main-bg.svg");
     background-repeat: no-repeat;
     background-position: 58% -1216px;
 

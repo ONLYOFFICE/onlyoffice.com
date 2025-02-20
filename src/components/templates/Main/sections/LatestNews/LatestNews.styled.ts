@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
-import chevronRight from "@public/images/icons/chevron-right-orange.svg";
 
 const StyledLatestNewsHeading = styled(Heading)`
   margin: 0 auto 60px;
@@ -71,7 +70,7 @@ const StyledLatestNewsItemHeading = styled(Heading)`
       right: 0;
       width: 24px;
       height: 24px;
-      background-image: url(${chevronRight.src});
+      background-image: url("/images/icons/chevron-right-orange.svg");
       background-repeat: no-repeat;
       background-size: contain;
       transform: translateY(-50%);
