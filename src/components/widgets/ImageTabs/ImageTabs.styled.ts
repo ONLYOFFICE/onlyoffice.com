@@ -6,7 +6,7 @@ const StyledImageTabs = styled.div<{ $position?: IImageTabs["position"] }>`
   display: grid;
   grid-template-columns: ${(props) =>
     props.$position === "left" ? "352px auto" : "auto 352px"};
-  align-items: start;
+  align-items: center;
   column-gap: 32px;
 
   ul {

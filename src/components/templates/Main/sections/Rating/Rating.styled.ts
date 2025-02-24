@@ -21,7 +21,6 @@ const StyledRatingWrapper = styled.div`
 
 const StyledRatingAwardsHeading = styled(Heading)`
   margin-bottom: 72px;
-  line-height: 43px;
 
   @media ${device.tablet} {
     margin-bottom: 64px;
@@ -29,7 +28,6 @@ const StyledRatingAwardsHeading = styled(Heading)`
 
   @media ${device.mobile} {
     margin-bottom: 32px;
-    line-height: 27px;
     text-align: center;
   }
 `;

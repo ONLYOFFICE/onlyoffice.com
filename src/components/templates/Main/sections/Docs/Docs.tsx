@@ -35,9 +35,9 @@ const Docs = () => {
                   id={id}
                   key={index}
                   href={url}
-                  color="main-color"
+                  color="main"
                   textUnderline
-                  hover="text-underline-none"
+                  hover="underline-none"
                 />
               ))}
             />

@@ -26,9 +26,9 @@ const GetStarted = () => {
                     <Link
                       key={index}
                       href={link.url}
-                      color="main-color"
+                      color="main"
                       textUnderline
-                      hover="text-underline-none"
+                      hover="underline-none"
                     />
                   ))}
                 />

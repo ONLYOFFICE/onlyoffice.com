@@ -49,9 +49,9 @@ const Customers = ({ locale }: ILocale) => {
             label={t("MoreCustomers")}
             fontSize="14px"
             lineHeight="22px"
-            color="main-color"
+            color="main"
             textUnderline
-            hover="text-underline-none"
+            hover="underline-none"
           />
         </StyledCustomers>
 
@@ -85,9 +85,9 @@ const Customers = ({ locale }: ILocale) => {
               label={t("MoreSuccessStories")}
               fontSize="14px"
               lineHeight="22px"
-              color="main-color"
+              color="main"
               textUnderline
-              hover="text-underline-none"
+              hover="underline-none"
             />
           </StyledSuccessStoriesLinkWrapper>
         </div>

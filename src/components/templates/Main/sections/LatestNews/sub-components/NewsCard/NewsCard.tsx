@@ -35,7 +35,7 @@ const NewsCard = ({
               href={linkUrl}
               target={isExternalLink ? "_blank" : undefined}
               display="block"
-              hover="main-color"
+              hover="color"
             />
           </StyledNewsCardHeading>
           <StyledNewsCardInfo>
@@ -68,7 +68,7 @@ const NewsCard = ({
               href={linkUrl}
               target={isExternalLink ? "_blank" : undefined}
               display="block"
-              hover="main-color"
+              hover="color"
             />
           </StyledNewsCardHeading>
           <StyledNewsCardInfo>

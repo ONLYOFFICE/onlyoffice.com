@@ -46,9 +46,9 @@ const SolutionCard = ({
               href={link.url}
               fontSize="14px"
               lineHeight="23px"
-              color="main-color"
+              color="main"
               textUnderline
-              hover="text-underline-none"
+              hover="underline-none"
               key={index}
             />
           ))}

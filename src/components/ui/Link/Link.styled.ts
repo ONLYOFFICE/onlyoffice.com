@@ -15,12 +15,11 @@ const StyledLink = styled(Link)<{
   font-size: ${(props) => props.$fontSize};
   font-weight: ${(props) => props.$fontWeight};
   line-height: ${(props) => props.$lineHeight};
-  color: ${(props) =>
-    props.$color === "main-color" ? "#ff6f3d" : props.$color};
+  color: ${(props) => (props.$color === "main" ? "#ff6f3d" : props.$color)};
   text-decoration: ${(props) => props.$textUnderline && "underline"};
 
   ${(props) =>
-    props.$hover === "main-color" &&
+    props.$hover === "color" &&
     css`
       transition: color 0.2s;
 
@@ -30,7 +29,7 @@ const StyledLink = styled(Link)<{
     `}
 
   ${(props) =>
-    props.$hover === "text-underline" &&
+    props.$hover === "underline" &&
     css`
       &:hover {
         text-decoration: underline;
@@ -38,7 +37,7 @@ const StyledLink = styled(Link)<{
     `}
 
   ${(props) =>
-    props.$hover === "text-underline-none" &&
+    props.$hover === "underline-none" &&
     css`
       &:hover {
         text-decoration: none;

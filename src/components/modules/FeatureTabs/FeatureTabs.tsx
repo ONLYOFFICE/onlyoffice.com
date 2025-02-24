@@ -36,9 +36,9 @@ const FeatureTabs = ({
               label={linkName}
               fontSize="16px"
               lineHeight="26px"
-              color="main-color"
+              color="main"
               textUnderline
-              hover="text-underline-none"
+              hover="underline-none"
             />
           </StyledFeatureTabsLinkWrapper>
         )}

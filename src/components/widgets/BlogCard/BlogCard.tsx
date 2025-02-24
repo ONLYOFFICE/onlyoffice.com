@@ -15,7 +15,7 @@ const BlogCard = ({ id, className, linkUrl, imgUrl, heading }: IBlogCard) => {
       </StyledBlogCardLink>
 
       <Heading level={4}>
-        <Link href={linkUrl} target="_blank" hover="main-color">
+        <Link href={linkUrl} target="_blank" hover="color">
           {heading}
         </Link>
       </Heading>

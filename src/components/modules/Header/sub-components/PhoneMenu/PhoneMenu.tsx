@@ -54,12 +54,12 @@ const PhoneMenu = () => {
 
       {isOpen && (
         <StyledPhoneDropdown $isOpen={isOpen} ref={dropdownRef}>
-          <StyledPhoneLabel>{t("Ascensio System SIA")}</StyledPhoneLabel>
+          <StyledPhoneLabel>Ascensio System SIA</StyledPhoneLabel>
           <StyledPhoneNumber href="tel:+37163399867">
-            <span>{t("Phone:")}</span> +371 63399867
+            <span>{t("Phone")}</span> +371 63399867
           </StyledPhoneNumber>
           <StyledPhoneLink href="/call-back-form">
-            {t("Request call")}
+            {t("RequestCall")}
           </StyledPhoneLink>
         </StyledPhoneDropdown>
       )}

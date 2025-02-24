@@ -12,9 +12,9 @@ const NewsItem = ({ id, className, heading, linkUrl, date }: INewsItem) => {
           href={linkUrl}
           label="点击阅读本文"
           target="_blank"
-          color="main-color"
+          color="main"
           textUnderline
-          hover="text-underline-none"
+          hover="underline-none"
         />
       </StyledNewsItemHeading>
       <StyledNewsItemDate>{date}</StyledNewsItemDate>

@@ -13,16 +13,16 @@ import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+const items = [
+  { label: "OpenSourceCodeAvailableOnGithub" },
+  { label: "ComplianceWithInternationalSecurityStandards" },
+  { label: "ThreeLevelsOfEncryption" },
+  { label: "SecureAccessAndMonitoringTools" },
+  { label: "ExtraDocumentPermissions" },
+];
+
 const SecurityFirst = ({ id, className }: ISecurityFirst) => {
   const { t } = useTranslation("security-first");
-
-  const items = [
-    { label: t("OpenSourceCodeAvailableOnGithub") },
-    { label: t("ComplianceWithInternationalSecurityStandards") },
-    { label: t("ThreeLevelsOfEncryption") },
-    { label: t("SecureAccessAndMonitoringTools") },
-    { label: t("ExtraDocumentPermissions") },
-  ];
 
   return (
     <Section
@@ -40,21 +40,21 @@ const SecurityFirst = ({ id, className }: ISecurityFirst) => {
               <Trans
                 t={t}
                 i18nKey="SecurityFirst"
-                components={[<Text as="span" color="#ff6f3d" key={0} />]}
+                components={[<Text as="span" color="main" key={0} />]}
               />
             </Heading>
             <StyledSecurityFirstList>
               {items.map((item, index) => (
-                <li key={index}>{item.label}</li>
+                <li key={index}>{t(item.label)}</li>
               ))}
             </StyledSecurityFirstList>
             <StyledSecurityFirstLink
               id="security-first-learn-more"
               href="/security"
               label={t("LearnMoreAboutOOSecurityFeatures")}
-              color="main-color"
+              color="main"
               textUnderline
-              hover="text-underline-none"
+              hover="underline-none"
             />
             <StyledSecurityFirstFeatures>
               <li></li>

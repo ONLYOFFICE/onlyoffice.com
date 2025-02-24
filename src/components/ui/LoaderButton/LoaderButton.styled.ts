@@ -96,7 +96,7 @@ const StyledLoaderButton = styled.button<{
     css`
       color: transparent;
       background-color: #cb0000;
-      background-image: url("/images/icons/cross.svg");
+      background-image: url("/images/icons/cross-white.svg");
       background-repeat: no-repeat;
       background-size: 24px 24px;
       background-position: center;

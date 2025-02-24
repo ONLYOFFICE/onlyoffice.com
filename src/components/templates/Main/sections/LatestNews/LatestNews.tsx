@@ -68,7 +68,7 @@ const LatestNews = ({ locale }: ILocale) => {
               <Link
                 href={getLink("blog", locale)}
                 label={t("Blog")}
-                hover="main-color"
+                hover="color"
               />
             </StyledLatestNewsItemHeading>
             <StyledLatestNewsCards>
@@ -87,9 +87,9 @@ const LatestNews = ({ locale }: ILocale) => {
                 href={getLink("blog", locale)}
                 label={t("MoreNewsHere")}
                 fontSize="14px"
-                color="main-color"
+                color="main"
                 textUnderline
-                hover="text-underline-none"
+                hover="underline-none"
               />
             </StyledLatestNewsCards>
           </StyledLatestNewsItem>
@@ -119,7 +119,7 @@ const LatestNews = ({ locale }: ILocale) => {
                     href="https://www.youtube.com/user/onlyofficeTV"
                     label={t("Youtube")}
                     target="_blank"
-                    hover="main-color"
+                    hover="color"
                   />
                 </StyledLatestNewsItemHeading>
                 <StyledLatestNewsCards>
@@ -141,9 +141,9 @@ const LatestNews = ({ locale }: ILocale) => {
                     label={t("MoreVideosHere")}
                     target="_blank"
                     fontSize="14px"
-                    color="main-color"
+                    color="main"
                     textUnderline
-                    hover="text-underline-none"
+                    hover="underline-none"
                   />
                 </StyledLatestNewsCards>
               </>
@@ -155,7 +155,7 @@ const LatestNews = ({ locale }: ILocale) => {
               <Link
                 href="/events?from=default"
                 label={t("Events")}
-                hover="main-color"
+                hover="color"
               />
             </StyledLatestNewsItemHeading>
             <StyledLatestNewsCards>
@@ -180,9 +180,9 @@ const LatestNews = ({ locale }: ILocale) => {
                 href="/events?from=default"
                 label={t("MoreEventsHere")}
                 fontSize="14px"
-                color="main-color"
+                color="main"
                 textUnderline
-                hover="text-underline-none"
+                hover="underline-none"
               />
             </StyledLatestNewsCards>
           </StyledLatestNewsItem>

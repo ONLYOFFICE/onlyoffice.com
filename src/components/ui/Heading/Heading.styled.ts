@@ -52,17 +52,12 @@ const StyledHeading = styled.h1<{
     props.$size === 3 &&
     css`
       font-size: 32px;
-      line-height: 40px;
+      line-height: 43px;
       letter-spacing: -0.02em;
-
-      @media ${device.tabletS} {
-        font-size: 30px;
-        line-height: 40px;
-      }
 
       @media ${device.mobile} {
         font-size: 20px;
-        line-height: 24px;
+        line-height: 27px;
       }
     `}
 
@@ -72,12 +67,6 @@ const StyledHeading = styled.h1<{
       font-size: 24px;
       line-height: 32px;
       letter-spacing: -0.02em;
-
-      @media ${device.tabletS} {
-        font-size: 22px;
-        line-height: 32px;
-        letter-spacing: -0.01em;
-      }
 
       @media ${device.mobile} {
         font-size: 18px;
@@ -94,6 +83,7 @@ const StyledHeading = styled.h1<{
 
       @media ${device.mobile} {
         font-size: 16px;
+        line-height: 22px;
       }
     `}
 

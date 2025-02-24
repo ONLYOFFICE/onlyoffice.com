@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import {
   StyledLanguageSelector,
@@ -11,7 +10,6 @@ import languages from "@src/config/languages.json";
 import { ArrowDownIcon, FlagIcon } from "@src/components/icons";
 
 const LanguageSelector = () => {
-  const { t } = useTranslation("common");
   const router = useRouter();
   const buttonRef = useRef(null);
   const listRef = useRef<HTMLUListElement>(null);
@@ -64,7 +62,7 @@ const LanguageSelector = () => {
                 href={router.asPath}
                 locale={el.shortKey}
               >
-                <span>{el.shortKey}</span> {t(el.name)}
+                <span>{el.shortKey}</span> {el.name}
               </Link>
             </li>
           ))}
