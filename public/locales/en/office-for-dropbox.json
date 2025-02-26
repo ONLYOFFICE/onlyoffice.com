@@ -1,0 +1,42 @@
+{
+  "FreeOnlineOfficeForDropbox": "Online office for <0>Dropbox</0>",
+  "EditOfficeFilesRightInDropbox": "Edit office files right in Dropbox using the complete feature set of ONLYOFFICE Docs.",
+  "GetFreeApp": "Get free App",
+
+  "WorkOnOfficeDocumentsStored": "Work on office documents stored in Dropbox",
+  "DocumentsTab1Label": "View and edit text documents, spreadsheets, presentations",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-dropbox/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "Build and fill out complex online forms",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-dropbox/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "Export/import to/from PDF",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-dropbox/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "Turn your textbooks into e-books",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-dropbox/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Built to work in Dropbox seamlessly",
+  "MarketplaceConnectorDescription": "Install ONLYOFFICE app for Dropbox today from the Dropbox Marketplace",
+
+  "WhyOO": "Why ONLYOFFICE?",
+  "FeaturesRobustSet": "<0>Robust set</0> of editing tools",
+  "FeaturesFamiliarInterface": "<0>Familiar interface</0> with tabs",
+  "FeaturesAIHelper": "<0>AI helper</0> & collection of free plugins",
+  "FeaturesFormats": "Support for more than <0>50 file formats</0>",
+  "FeaturesHighestCompatibility": "<0>Highest compatibility</0> with docx, xlsx, and pptx",
+  "FeaturesOpenSourceCode": "Watermark, password protection, <0>open source code</0>",
+  "FeaturesFreeApp": "<0>Free app</0>, no installation and registration required",
+  "GetStarted": "Get Started",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Log into your Dropbox account.",
+  "HowToStartStep2": "Follow the <0>link</0>",
+  "HowToStartStep3": "Grant the required permissions to the ONLYOFFICE app.",
+  "HowToStartStep4": "Access the context menu of the required file.",
+  "HowToStartStep5": "Click Open in -> ONLYOFFICE Docs.",
+  "ExploreMoreDetails": "Explore more details in <0>this guide</0>.",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}
