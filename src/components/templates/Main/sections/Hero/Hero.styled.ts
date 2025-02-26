@@ -84,9 +84,7 @@ const StyledHeroImage = styled.div<{ $img?: string; $img2x?: string }>`
       background-image: url(${$img});
     `}
 
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (min-resolution: 120dpi),
-    only screen and (min-width: 592px) {
+  @media ${device.retina} {
     ${({ $img2x }) =>
       $img2x &&
       css`

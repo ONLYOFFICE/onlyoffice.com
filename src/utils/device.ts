@@ -14,6 +14,7 @@ const device = {
   tabletS: `screen and (max-width: ${size.tabletS})`,
   mobile: `screen and (max-width: ${size.mobile})`,
   mobileS: `screen and (max-width: ${size.mobileS})`,
+  retina: `screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-resolution: 120dpi), screen and (min-width: 592px)`,
 };
 
 export { device };

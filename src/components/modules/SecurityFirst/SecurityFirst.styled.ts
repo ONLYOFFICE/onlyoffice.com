@@ -21,9 +21,7 @@ const StyledSecurityFirstImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (min-resolution: 120dpi),
-    only screen and (min-width: 592px) {
+  @media ${device.retina} {
     background-image: url("/images/templates/main/security/secure@2x.png");
   }
 `;

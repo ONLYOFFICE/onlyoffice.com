@@ -113,9 +113,7 @@ const StyledTabImage = styled.div<{
       }
     `}
 
-  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (min-resolution: 120dpi),
-    only screen and (min-width: 592px) {
+  @media ${device.retina} {
     background-image: ${({ $image, $image2x }) => `url(${$image2x || $image})`};
   }
 `;
