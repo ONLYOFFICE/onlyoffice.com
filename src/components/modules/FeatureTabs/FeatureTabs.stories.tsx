@@ -23,6 +23,10 @@ export default {
     heading: {
       control: { type: "text" },
     },
+    headingSize: {
+      control: { type: "select" },
+      options: [1, 2, 3, 4, 5, 6, 7],
+    },
     linkName: {
       control: { type: "text" },
     },
@@ -37,6 +41,21 @@ export default {
     position: {
       control: { type: "radio" },
       options: ["left", "right"],
+    },
+    bgColor: {
+      control: { type: "color" },
+    },
+    desktopSpacing: {
+      control: { type: "object" },
+    },
+    tabletSpacing: {
+      control: { type: "object" },
+    },
+    tabletSmallSpacing: {
+      control: { type: "object" },
+    },
+    mobileSpacing: {
+      control: { type: "object" },
     },
   },
 } as Meta<typeof FeatureTabs>;

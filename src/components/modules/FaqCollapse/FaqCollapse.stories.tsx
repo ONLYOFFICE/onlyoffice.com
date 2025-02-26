@@ -32,6 +32,18 @@ export default {
       control: { type: "boolean" },
       options: [true, false],
     },
+    desktopSpacing: {
+      control: { type: "object" },
+    },
+    tabletSpacing: {
+      control: { type: "object" },
+    },
+    tabletSmallSpacing: {
+      control: { type: "object" },
+    },
+    mobileSpacing: {
+      control: { type: "object" },
+    },
   },
 } as Meta<typeof FaqCollapse>;
 

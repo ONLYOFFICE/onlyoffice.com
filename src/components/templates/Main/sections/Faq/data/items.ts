@@ -1,4 +1,4 @@
-export const faqItems = [
+export const items = [
   {
     label: "IsOOrReallyFree",
     text: "IsONLYOFFICEReallyFreeDescription",

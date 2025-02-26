@@ -3,7 +3,7 @@ import { device } from "@src/utils/device";
 
 const GlobalStyle = createGlobalStyle`
   .layout {
-    background-image: url("images/main/main-bg.svg");
+    background-image: url("/images/templates/main/main-bg.svg");
     background-repeat: no-repeat;
     background-position: 58% -1216px;
 

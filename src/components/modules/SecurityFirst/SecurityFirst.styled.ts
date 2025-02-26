@@ -17,14 +17,14 @@ const StyledSecurityFirst = styled.div`
 
 const StyledSecurityFirstImage = styled.div`
   padding-bottom: 77.58%;
-  background-image: url("/images/main/security/secure.png");
+  background-image: url("/images/templates/main/security/secure.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
     only screen and (min-resolution: 120dpi),
     only screen and (min-width: 592px) {
-    background-image: url("/images/main/security/secure@2x.png");
+    background-image: url("/images/templates/main/security/secure@2x.png");
   }
 `;
 
@@ -85,7 +85,7 @@ const StyledSecurityFirstFeatures = styled.ul`
   li {
     width: 64px;
     height: 64px;
-    background-image: url("/images/main/security/features.svg");
+    background-image: url("/images/templates/main/security/features.svg");
     background-repeat: no-repeat;
 
     &:not(:last-child) {

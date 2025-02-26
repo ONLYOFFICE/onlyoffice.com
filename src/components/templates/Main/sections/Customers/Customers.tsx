@@ -1,6 +1,5 @@
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
-import { ILocale } from "@src/types/locale";
 import {
   StyledCustomers,
   StyledCustomersHeading,
@@ -15,7 +14,7 @@ import { BlogCard } from "@src/components/widgets/BlogCard";
 import { customersItems } from "./data/customersItems";
 import { successStoriesItems } from "./data/successStoriesItems";
 
-const Customers = ({ locale }: ILocale) => {
+const Customers = () => {
   const { t } = useTranslation("main");
 
   return (
@@ -59,21 +58,9 @@ const Customers = ({ locale }: ILocale) => {
           <StyledSuccessStoriesItems>
             {successStoriesItems.map((item, index) => (
               <BlogCard
-                imgUrl={
-                  item[locale as keyof typeof item]?.imgUrl || item.en.imgUrl
-                }
-                linkUrl={t(
-                  `${
-                    item[locale as keyof typeof item]?.linkUrl ||
-                    item.en.linkUrl
-                  }`,
-                )}
-                heading={t(
-                  `${
-                    item[locale as keyof typeof item]?.heading ||
-                    item.en.heading
-                  }`,
-                )}
+                imgUrl={t(item.imgUrl)}
+                linkUrl={t(item.linkUrl)}
+                heading={t(item.heading)}
                 key={index}
               />
             ))}

@@ -58,7 +58,7 @@ const Hero = ({ locale }: ILocale) => {
                 onContextMenu={(e) => e.preventDefault()}
               >
                 <source
-                  src="/images/main/hero/hero-video.mp4"
+                  src="/images/templates/main/hero/hero-video.mp4"
                   type="video/mp4"
                 />
               </video>

@@ -5,6 +5,7 @@ import {
   StyledChooseSolutionLargeItems,
 } from "./ChooseSolution.styled";
 import { IChooseSolution } from "./ChooseSolution.types";
+import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { SolutionCard } from "@src/components/widgets/SolutionCard";
 
@@ -14,9 +15,20 @@ const ChooseSolution = ({
   heading,
   items,
   largeItems,
+  desktopSpacing,
+  tabletSpacing,
+  tabletSmallSpacing,
+  mobileSpacing,
 }: IChooseSolution) => {
   return (
-    <div id={id} className={className}>
+    <Section
+      id={id}
+      className={className}
+      desktopSpacing={desktopSpacing}
+      tabletSpacing={tabletSpacing}
+      tabletSmallSpacing={tabletSmallSpacing}
+      mobileSpacing={mobileSpacing}
+    >
       <Container>
         {heading && (
           <StyledChooseSolutionHeading
@@ -58,7 +70,7 @@ const ChooseSolution = ({
           )}
         </StyledChooseSolutionWrapper>
       </Container>
-    </div>
+    </Section>
   );
 };
 

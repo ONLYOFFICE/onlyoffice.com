@@ -1,7 +1,7 @@
 export const starsRatingItems = [
   {
     url: "https://sourceforge.net/projects/teamlab/",
-    imgUrl: "/images/main/rating/stars-rating/sourceforge.svg",
+    imgUrl: "/images/templates/main/rating/stars-rating/sourceforge.svg",
     imgAlt: "SourceForge",
     imgWidth: 150,
     imgHeight: 22,
@@ -9,7 +9,7 @@ export const starsRatingItems = [
   },
   {
     url: "https://www.getapp.com/operations-management-software/a/onlyoffice/",
-    imgUrl: "/images/main/rating/stars-rating/getapp.svg",
+    imgUrl: "/images/templates/main/rating/stars-rating/getapp.svg",
     imgAlt: "GetApp",
     imgWidth: 150,
     imgHeight: 22,
@@ -17,7 +17,7 @@ export const starsRatingItems = [
   },
   {
     url: "https://www.softwareadvice.com/project-management/onlyoffice-profile/",
-    imgUrl: "/images/main/rating/stars-rating/software-advice.svg",
+    imgUrl: "/images/templates/main/rating/stars-rating/software-advice.svg",
     imgAlt: "Software Advice",
     imgWidth: 150,
     imgHeight: 22,
@@ -25,7 +25,7 @@ export const starsRatingItems = [
   },
   {
     url: "https://linux.softpedia.com/get/Office/Office-Suites/ONLYOFFICE-Desktop-Editors-103956.shtml",
-    imgUrl: "/images/main/rating/stars-rating/softpedia.svg",
+    imgUrl: "/images/templates/main/rating/stars-rating/softpedia.svg",
     imgAlt: "Softpedia",
     imgWidth: 150,
     imgHeight: 22,
@@ -33,7 +33,7 @@ export const starsRatingItems = [
   },
   {
     url: "https://www.capterra.com/p/141243/ONLYOFFICE/",
-    imgUrl: "/images/main/rating/stars-rating/capterra.svg",
+    imgUrl: "/images/templates/main/rating/stars-rating/capterra.svg",
     imgAlt: "Capterra",
     imgWidth: 150,
     imgHeight: 23,
@@ -41,7 +41,7 @@ export const starsRatingItems = [
   },
   {
     url: "https://www.pcmag.com/reviews/ascensio-system-onlyoffice",
-    imgUrl: "/images/main/rating/stars-rating/editors-choice.png",
+    imgUrl: "/images/templates/main/rating/stars-rating/editors-choice.png",
     imgAlt: "Editors Choice",
     imgWidth: 150,
     imgHeight: 33,
@@ -49,7 +49,7 @@ export const starsRatingItems = [
   },
   {
     url: "https://crozdesk.com/software/onlyoffice-docs",
-    imgUrl: "/images/main/rating/stars-rating/crozdesk.svg",
+    imgUrl: "/images/templates/main/rating/stars-rating/crozdesk.svg",
     imgAlt: "Crozdesk",
     imgWidth: 150,
     imgHeight: 22,

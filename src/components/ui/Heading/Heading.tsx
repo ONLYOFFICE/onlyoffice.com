@@ -10,6 +10,7 @@ const Heading = ({
   level = 1,
   size,
   textAlign,
+  textTransform,
 }: IHeading) => {
   const levelSize =
     size ??
@@ -24,6 +25,7 @@ const Heading = ({
       $level={level}
       $size={levelSize}
       $textAlign={textAlign}
+      $textTransform={textTransform}
     >
       {children || label}
     </StyledHeading>

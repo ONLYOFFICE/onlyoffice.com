@@ -7,9 +7,11 @@ const StyledHeading = styled.h1<{
   $level: IHeading["level"];
   $size: IHeading["size"];
   $textAlign: IHeading["textAlign"];
+  $textTransform: IHeading["textTransform"];
 }>`
   color: ${(props) => (props.$color ? props.$color : "#333333")};
   text-align: ${(props) => props.$textAlign};
+  text-transform: ${(props) => props.$textTransform};
 
   ${(props) =>
     props.$size === 1 &&
@@ -103,7 +105,7 @@ const StyledHeading = styled.h1<{
     props.$size === 7 &&
     css`
       font-size: 13px;
-      line-height: 16px;
+      line-height: 18px;
       letter-spacing: 0.04em;
 
       @media ${device.mobile} {

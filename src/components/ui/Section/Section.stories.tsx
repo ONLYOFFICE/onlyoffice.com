@@ -35,6 +35,9 @@ export default {
     tabletSpacing: {
       control: { type: "object" },
     },
+    tabletSmallSpacing: {
+      control: { type: "object" },
+    },
     mobileSpacing: {
       control: { type: "object" },
     },

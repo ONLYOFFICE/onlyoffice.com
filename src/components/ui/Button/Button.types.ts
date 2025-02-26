@@ -13,6 +13,8 @@ export interface IButton {
   tabIndex?: number;
   /** Specifies the type. Default: "button". */
   type?: "button" | "submit" | "reset";
+  /** The title attribute. */
+  title?: string;
   /** The element to render as. Default: "button". */
   as?: "button" | "a";
   /** The URL to link to. `href` is not allowed if `as` is "button" */

@@ -2,8 +2,8 @@
   "RunYourPrivateOfficeWithTheOO": "Run your private office with the <0>ONLYOFFICE</0>",
   "GetItNow": "Get it now",
   "SeeItInAction": "See it in action",
-  "HeroImg": "/images/main/hero/hero.png",
-  "HeroImg2x": "/images/main/hero/hero@2x.png",
+  "HeroImg": "/images/templates/main/hero/hero.png",
+  "HeroImg2x": "/images/templates/main/hero/hero@2x.png",
 
   "OODocsTheMostCompleteOfficeSuite": "<0>ONLYOFFICE Docs</0>,<br> the most complete office suite",
   "LearnMoreAboutOODocsFeatures": "Learn more about ONLYOFFICE Docs features",

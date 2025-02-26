@@ -14,7 +14,7 @@ import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
 import { NewsCard } from "./sub-components/NewsCard";
 import { NewsItem } from "./sub-components/NewsItem";
-import { latestNewsItems } from "./data/latestNewsItems";
+import { items } from "./data/items";
 import { getLink } from "@src/utils/getLink";
 
 const LatestNews = ({ locale }: ILocale) => {
@@ -72,7 +72,7 @@ const LatestNews = ({ locale }: ILocale) => {
               />
             </StyledLatestNewsItemHeading>
             <StyledLatestNewsCards>
-              {latestNewsItems.blog.map((newsItem, newsIndex) => (
+              {items.blog.map((newsItem, newsIndex) => (
                 <NewsCard
                   className={newsItem.className}
                   heading={t(newsItem.heading)}
@@ -102,7 +102,7 @@ const LatestNews = ({ locale }: ILocale) => {
                   label="微信"
                 ></StyledLatestNewsItemHeading>
                 <StyledLatestNewsCards>
-                  {latestNewsItems.wechat.map((newsItem, newsIndex) => (
+                  {items.wechat.map((newsItem, newsIndex) => (
                     <NewsItem
                       heading={newsItem.heading}
                       linkUrl={newsItem.linkUrl}
@@ -123,7 +123,7 @@ const LatestNews = ({ locale }: ILocale) => {
                   />
                 </StyledLatestNewsItemHeading>
                 <StyledLatestNewsCards>
-                  {latestNewsItems.webinar.map((newsItem, newsIndex) => (
+                  {items.webinar.map((newsItem, newsIndex) => (
                     <NewsCard
                       className={newsItem.className}
                       heading={t(newsItem.heading)}
@@ -159,7 +159,7 @@ const LatestNews = ({ locale }: ILocale) => {
               />
             </StyledLatestNewsItemHeading>
             <StyledLatestNewsCards>
-              {latestNewsItems.events.map((newsItem, newsIndex) => (
+              {items.events.map((newsItem, newsIndex) => (
                 <NewsCard
                   heading={t(newsItem.heading)}
                   imgUrl={newsItem.imgUrl}

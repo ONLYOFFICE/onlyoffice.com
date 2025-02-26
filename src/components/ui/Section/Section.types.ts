@@ -4,7 +4,7 @@ export interface ISection {
   /** Additional CSS class names. */
   className?: string;
   /** Content to be rendered inside. */
-  children: React.ReactNode;
+  children?: React.ReactNode;
   /** HTML element to be rendered. Default: "section". */
   as?: string;
   /** Background color. */

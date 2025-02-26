@@ -19,7 +19,7 @@ const MainTemplate = ({ locale }: ILocale) => {
       <Collaboration />
       <SecurityFirst />
       <GetStarted />
-      <Customers locale={locale} />
+      <Customers />
       <Rating />
       <LatestNews locale={locale} />
       <Faq />

@@ -1,16 +1,16 @@
-export const latestNewsItems = {
+export const items = {
   blog: [
     {
       className: "latest-news-item-blog",
       heading: "OODocSpaceReleased",
-      imgUrl: "/images/main/latest-news/docspace-3-0.jpg",
+      imgUrl: "/images/templates/main/latest-news/docspace-3-0.jpg",
       linkUrl: "OODocSpaceReleasedLink",
       isExternalLink: false,
       date: "2024-11-25",
     },
     {
       heading: "OODocsReleased",
-      imgUrl: "/images/main/latest-news/docs-8-3.png",
+      imgUrl: "/images/templates/main/latest-news/docs-8-3.png",
       linkUrl: "OODocsReleasedLink",
       isExternalLink: false,
       date: "2025-02-05",
@@ -20,7 +20,7 @@ export const latestNewsItems = {
     {
       className: "latest-news-item-webinar",
       heading: "MeetOODocSpace",
-      imgUrl: "/images/main/latest-news/docspace-3-0.jpg",
+      imgUrl: "/images/templates/main/latest-news/docspace-3-0.jpg",
       linkUrl: "https://www.youtube.com/watch?v=zCyzbJkiN0k",
       isExternalLink: true,
       date: "2024-11-25",
@@ -28,7 +28,7 @@ export const latestNewsItems = {
     },
     {
       heading: "MeetOODocs",
-      imgUrl: "/images/main/latest-news/docs-8-3.png",
+      imgUrl: "/images/templates/main/latest-news/docs-8-3.png",
       linkUrl: "https://www.youtube.com/watch?v=nxTIJmsg9iM",
       isExternalLink: true,
       date: "2025-02-05",
@@ -39,7 +39,7 @@ export const latestNewsItems = {
   events: [
     {
       heading: "FOSSASIASummit2025",
-      imgUrl: "/images/main/latest-news/fossasia-summit-2025.png",
+      imgUrl: "/images/templates/main/latest-news/fossasia-summit-2025.png",
       linkUrl: "https://eventyay.com/e/4c0e0c27",
       isExternalLink: true,
       startDate: "2025-03-13",
@@ -48,7 +48,7 @@ export const latestNewsItems = {
     },
     {
       heading: "TechUniteAfrica",
-      imgUrl: "/images/main/latest-news/tech-unite-africa-2025.png",
+      imgUrl: "/images/templates/main/latest-news/tech-unite-africa-2025.png",
       linkUrl: "https://techuniteafrica.com/",
       isExternalLink: true,
       date: "2025-03-27",

@@ -4,6 +4,7 @@ import {
   StyledFaqCollapseText,
 } from "./FaqCollapse.styled";
 import { IFaqCollapse } from "./FaqCollapse.types";
+import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { CollapseGroup } from "@src/components/ui/CollapseGroup";
 
@@ -13,11 +14,22 @@ const FaqCollapse = ({
   text,
   items,
   isAccordion,
+  desktopSpacing,
+  tabletSpacing,
+  tabletSmallSpacing,
+  mobileSpacing,
 }: IFaqCollapse) => {
   const { t } = useTranslation("common");
 
   return (
-    <div id={id} className={className}>
+    <Section
+      id={id}
+      className={className}
+      desktopSpacing={desktopSpacing}
+      tabletSpacing={tabletSpacing}
+      tabletSmallSpacing={tabletSmallSpacing}
+      mobileSpacing={mobileSpacing}
+    >
       <Container>
         <StyledFaqCollapseHeading
           label={t("Frequently Asked Questions")}
@@ -26,7 +38,7 @@ const FaqCollapse = ({
         {text && <StyledFaqCollapseText>{text}</StyledFaqCollapseText>}
         <CollapseGroup items={items} isAccordion={isAccordion} divider />
       </Container>
-    </div>
+    </Section>
   );
 };
 

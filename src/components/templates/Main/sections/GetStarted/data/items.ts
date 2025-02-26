@@ -1,8 +1,8 @@
-export const getStartedItems = [
+export const items = [
   {
     items: [
       {
-        imgUrl: "/images/main/get-started/docspace.svg",
+        imgUrl: "/images/templates/main/get-started/docspace.svg",
         heading: "InOODocSpace",
         text: "CreateRoomsWithinYourSecureDocSpace",
         links: [
@@ -14,7 +14,7 @@ export const getStartedItems = [
         ],
       },
       {
-        imgUrl: "/images/main/get-started/connectors.svg",
+        imgUrl: "/images/templates/main/get-started/connectors.svg",
         heading: "InThePlatformYouUse",
         text: {
           label: "ConnectDocsToEditDocuments",
@@ -33,7 +33,7 @@ export const getStartedItems = [
         ],
       },
       {
-        imgUrl: "/images/main/get-started/developers.svg",
+        imgUrl: "/images/templates/main/get-started/developers.svg",
         heading: "InThePlatformYouBuild",
         text: "IntegrateDocsIntoYourService",
         links: [
@@ -47,7 +47,7 @@ export const getStartedItems = [
     ],
     largeItems: [
       {
-        imgUrl: "/images/main/get-started/from-pc.svg",
+        imgUrl: "/images/templates/main/get-started/from-pc.svg",
         heading: "FromYourPC",
         text: "EditDocsOfflineWithFreeOfficeApps",
         links: [
@@ -59,7 +59,7 @@ export const getStartedItems = [
         ],
       },
       {
-        imgUrl: "/images/main/get-started/from-mobile.svg",
+        imgUrl: "/images/templates/main/get-started/from-mobile.svg",
         heading: "FromYourMobileDevices",
         text: "WorkOnDocumentsOnTheGoWithFreeApps",
         links: [
