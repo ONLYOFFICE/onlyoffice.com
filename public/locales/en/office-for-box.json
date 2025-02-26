@@ -1,0 +1,34 @@
+{
+  "FreeOnlineOfficeForBox": "Free online office for Box",
+  "OpenAndEditWithinBox": "Open and edit documents, spreadsheets, presentations, and PDFs within Box using integrated ONLYOFFICE Docs Cloud",
+  "GetItNow": "Get it now",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Fully compatible with docx, xlsx, and pptx",
+
+  "EditAndCoAuthorOfficeDocuments": "Edit and co-author office documents within the Box interface",
+  "DocumentsTab1Label": "Open and edit Office documents stored in your Box storage",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-box/documents/screenshot1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-box/documents/screenshot1@2x.png",
+  "DocumentsTab2Label": "Co-author documents with multiple users in real time or paragraph-locking mode",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-box/documents/screenshot2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-box/documents/screenshot2@2x.png",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Box",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Box now from the Box App Center.",
+  "GetStarted": "Get Started",
+
+  "WhyOO": "Why ONLYOFFICE?",
+  "FeaturesWorking": "<0>Working</0> with office files directly within the Box frontend.",
+  "FeaturesFormats": "Support for more than <0>50 file formats</0>, fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
+  "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools.",
+  "FeaturesWorkingCoEditing": "Real-time and paragraph-locking <0>co-editing</0>, review, version history, document comparison, comments & chat. Audio and video calls.",
+  "FeaturesFreeApp": "<0>Free app</0> available in the Box App Center. No additional configuration required.",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Log into your Box account",
+  "HowToStartStep2": "Go to the <0>Box App Center</0>",
+  "HowToStartStep3": "Add the ONLYOFFICE app*",
+  "CheckDetailedInstructions": "Check detailed instructions in <0>Help Center</0>.",
+  "TheAppUsesThePreConfiguredTenant": "*The app uses the pre-configured tenant of <0>ONLYOFFICE Docs Cloud</0> and doesn't require any additional configuration.",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}

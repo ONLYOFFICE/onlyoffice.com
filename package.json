@@ -20,7 +20,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.0",
-    "styled-components": "^6.1.15"
+    "styled-components": "^6.1.15",
+    "swiper": "^11.2.4"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "3.2.4",
