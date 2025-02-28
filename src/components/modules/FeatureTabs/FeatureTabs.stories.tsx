@@ -39,7 +39,7 @@ export default {
       },
     },
     position: {
-      control: { type: "radio" },
+      control: { type: "boolean" },
       options: ["left", "right"],
     },
     bgColor: {

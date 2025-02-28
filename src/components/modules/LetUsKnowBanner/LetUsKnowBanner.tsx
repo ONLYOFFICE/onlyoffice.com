@@ -22,6 +22,7 @@ const LetUsKnowBanner = ({ id, className, heading }: ILetUsKnowBanner) => {
         <StyledLetUsKnowBannerWrapper>
           <Heading level={3} label={heading} />
           <Link
+            id="let-us-know-banner-link"
             href="mailto:sales@onlyoffice.com"
             label={t("LetUsKnow")}
             color="main"

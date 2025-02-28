@@ -33,6 +33,7 @@ const Features = () => {
           </StyledFeaturesItems>
 
           <Button
+            id="features-get-started"
             as="a"
             variant="secondary"
             href="https://dropbox.onlyoffice.com/oauth/redirect"

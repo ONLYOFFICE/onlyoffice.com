@@ -29,6 +29,7 @@ const MarketplaceConnector = () => {
               label={t("MarketplaceConnectorDescription")}
             />
             <Button
+              id="marketplace-connector-get-started"
               as="a"
               variant="quaternary"
               target="_blank"

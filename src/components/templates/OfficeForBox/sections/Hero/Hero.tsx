@@ -35,6 +35,7 @@ const Hero = () => {
           </StyledHeroHeader>
 
           <Button
+            id="hero-get-it-now"
             as="a"
             href="https://app.box.com/app-center/onlyoffice_personal/app"
             variant="quaternary"

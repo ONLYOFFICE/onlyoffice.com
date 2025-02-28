@@ -18,6 +18,7 @@ const StepCarousel = ({ id, className, items }: IStepCarousel) => {
       <Swiper
         spaceBetween={32}
         loop
+        autoHeight
         modules={[Navigation, Pagination]}
         pagination={{ clickable: true }}
         navigation={{

@@ -33,6 +33,7 @@ const Features = () => {
           </StyledFeaturesItems>
 
           <Button
+            id="features-get-started"
             as="a"
             href="https://app.box.com/app-center/onlyoffice_personal/app"
             label={t("GetStarted")}

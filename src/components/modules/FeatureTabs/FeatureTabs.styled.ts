@@ -13,7 +13,6 @@ const StyledFeatureTabsHeading = styled(Heading)`
 
   @media ${device.mobile} {
     margin-bottom: 24px;
-    text-align: initial;
   }
 `;
 

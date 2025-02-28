@@ -16,6 +16,7 @@ const ConnectApp = () => {
         <StyledConnectAppWrapper>
           <StyledConnectAppHeading level={3} label={t("NeedAnAppToConnect")} />
           <Button
+            id="connect-app-let-us-know"
             as="a"
             href="mailto:sales@onlyoffice.com"
             label={t("LetUsKnow")}

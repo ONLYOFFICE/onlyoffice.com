@@ -21,6 +21,7 @@ const MarketplaceConnector = () => {
             <Heading level={2} label={t("MarketplaceConnectorTitle")} />
             <Text size={1} label={t("MarketplaceConnectorDescription")} />
             <Button
+              id="marketplace-connector-get-free-app"
               as="a"
               target="_blank"
               href="https://dropbox.onlyoffice.com/oauth/redirect"

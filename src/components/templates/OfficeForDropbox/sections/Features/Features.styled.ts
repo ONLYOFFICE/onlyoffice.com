@@ -20,6 +20,7 @@ const StyledFeaturesItems = styled.div`
   > div {
     @media ${device.desktop} {
       width: calc(33.333% - 24px);
+      max-width: 100%;
     }
 
     @media ${device.tablet} {

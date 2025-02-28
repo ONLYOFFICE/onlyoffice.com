@@ -32,6 +32,7 @@ const Hero = () => {
           </Heading>
           <Text size={1} label={t("EditOfficeFilesRightInDropbox")} />
           <Button
+            id="hero-get-free-app"
             as="a"
             href="https://dropbox.onlyoffice.com/oauth/redirect"
             target="_blank"
