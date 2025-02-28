@@ -7,7 +7,7 @@ import {
 } from "./HowToStart.styled";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
-import { StepCarousel } from "@src/components/modules/StepCarousel";
+import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 

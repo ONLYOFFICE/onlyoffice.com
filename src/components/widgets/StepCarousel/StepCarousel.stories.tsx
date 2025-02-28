@@ -1,9 +1,10 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { StepCarousel } from "./StepCarousel";
 import { IStepCarousel } from "./StepCarousel.types";
+import { Container } from "@src/components/ui/Container";
 
 export default {
-  title: "Modules/StepCarousel",
+  title: "Widgets/StepCarousel",
   component: StepCarousel,
   parameters: {
     docs: {
@@ -29,22 +30,24 @@ export default {
 } as Meta<typeof StepCarousel>;
 
 const Template: StoryFn<IStepCarousel> = (args: IStepCarousel) => (
-  <StepCarousel {...args} />
+  <Container>
+    <StepCarousel {...args} />
+  </Container>
 );
 
 export const Default = Template.bind({});
 Default.args = {
   items: [
     {
-      imgUrl: "/images/storybook/modules/step-carousel/step-1.svg",
+      imgUrl: "/images/storybook/widgets/step-carousel/step-1.svg",
       heading: "Log into your Box account",
     },
     {
-      imgUrl: "/images/storybook/modules/step-carousel/step-2.svg",
+      imgUrl: "/images/storybook/widgets/step-carousel/step-2.svg",
       heading: "Go to the Box App Center",
     },
     {
-      imgUrl: "/images/storybook/modules/step-carousel/step-3.svg",
+      imgUrl: "/images/storybook/widgets/step-carousel/step-3.svg",
       heading: "Add the ONLYOFFICE app*",
     },
   ],

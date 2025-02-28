@@ -1,22 +1,10 @@
 import styled, { css } from "styled-components";
-import { IFeatureTabs } from "./FeatureTabs.types";
+import { IFeatureSwitcher } from "./FeatureSwitcher.types";
 import { device } from "@src/utils/device";
-import { Heading } from "@src/components/ui/Heading";
 
-const StyledFeatureTabsHeading = styled(Heading)`
-  margin: 0 auto 56px;
-  max-width: 720px;
-
-  span {
-    color: #ff6f3d;
-  }
-
-  @media ${device.mobile} {
-    margin-bottom: 24px;
-  }
-`;
-
-const StyledImageTabs = styled.div<{ $position?: IFeatureTabs["position"] }>`
+const StyledFeatureSwitcher = styled.div<{
+  $position?: IFeatureSwitcher["position"];
+}>`
   display: grid;
   grid-template-columns: ${(props) =>
     props.$position === "left" ? "352px auto" : "auto 352px"};
@@ -43,7 +31,7 @@ const StyledImageTabs = styled.div<{ $position?: IFeatureTabs["position"] }>`
   }
 `;
 
-const StyledTabButton = styled.button`
+const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,24 +39,25 @@ const StyledTabButton = styled.button`
   padding: 16px;
   font-size: 16px;
   line-height: 26px;
-  color: #333333;
+  color: ${(props) => (props.$active ? "#ff6f3d" : "#333333")};
   width: 100%;
   background-color: transparent;
   transition: color 0.2s, box-shadow 0.2s;
   cursor: pointer;
 
-  &.active {
-    color: #ff6f3d;
-    box-shadow: 0px 7px 15px 0px rgba(85, 85, 85, 0.1);
+  ${(props) =>
+    props.$active &&
+    css`
+      box-shadow: 0px 7px 15px 0px rgba(85, 85, 85, 0.1);
 
-    svg {
-      transform: rotate(180deg);
+      svg {
+        transform: rotate(180deg);
 
-      path {
-        fill: #ff6f3d;
+        path {
+          fill: #ff6f3d;
+        }
       }
-    }
-  }
+    `}
 
   svg {
     min-width: 24px;
@@ -82,7 +71,7 @@ const StyledTabButton = styled.button`
   }
 `;
 
-const StyledTabImage = styled.div<{
+const StyledFeatureSwitcherImage = styled.div<{
   $image: string;
   $image2x: string;
   $isDesktop?: boolean;
@@ -117,19 +106,8 @@ const StyledTabImage = styled.div<{
   }
 `;
 
-const StyledFeatureTabsLinkWrapper = styled.div`
-  margin-top: 56px;
-  text-align: center;
-
-  @media ${device.mobile} {
-    margin-top: 24px;
-  }
-`;
-
 export {
-  StyledFeatureTabsHeading,
-  StyledImageTabs,
-  StyledTabButton,
-  StyledTabImage,
-  StyledFeatureTabsLinkWrapper,
+  StyledFeatureSwitcher,
+  StyledFeatureSwitcherBtn,
+  StyledFeatureSwitcherImage,
 };

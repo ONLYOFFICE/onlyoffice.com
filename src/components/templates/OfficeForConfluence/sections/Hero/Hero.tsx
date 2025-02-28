@@ -50,7 +50,7 @@ const Hero = () => {
               as="a"
               variant="quaternary"
               id="hero-request-free-demo"
-              href="/demo-order.aspx?from=officeforconfluence"
+              href="/demo-order?from=officeforconfluence"
               label={t("RequestFreeDemo")}
             />
           </StyledHeroHeaderBtns>
