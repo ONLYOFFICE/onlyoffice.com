@@ -1,0 +1,1 @@
+export { OfficeForConfluenceTemplate } from "./OfficeForConfluence";
