@@ -21,8 +21,10 @@ export interface IText {
   fontStyle?: "italic";
   /** The line height for styling. */
   lineHeight?: string;
+  /** The letter spacing for styling. */
+  letterSpacing?: string;
   /** The text color. */
-  color?: string;
+  color?: "main" | string;
   /** The horizontal alignment of the text. */
   textAlign?: "left" | "center" | "right";
   /** The text transformation style. */

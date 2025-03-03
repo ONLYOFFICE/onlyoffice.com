@@ -9,6 +9,7 @@ const StyledText = styled.p<{
   $fontWeight: IText["fontWeight"];
   $fontStyle: IText["fontStyle"];
   $lineHeight: IText["lineHeight"];
+  $letterSpacing: IText["letterSpacing"];
   $color: IText["color"];
   $textAlign: IText["textAlign"];
   $textTransform: IText["textTransform"];
@@ -20,7 +21,8 @@ const StyledText = styled.p<{
   font-weight: ${(props) => props.$fontWeight};
   font-style: ${(props) => props.$fontStyle};
   line-height: ${(props) => props.$lineHeight};
-  color: ${(props) => props.$color};
+  letter-spacing: ${(props) => props.$letterSpacing};
+  color: ${(props) => (props.$color === "main" ? "#ff6f3d" : props.$color)};
   text-align: ${(props) => props.$textAlign};
   text-transform: ${(props) => props.$textTransform};
   text-decoration: ${(props) => props.$textDecoration};

@@ -27,12 +27,12 @@ export interface ILink {
   fontWeight?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
   /** The line height for styling. */
   lineHeight?: string;
-  /** The color of the link text. Can be a predefined "main-color" or any custom color. */
-  color?: "main-color" | string;
+  /** The color of the link text. Can be a predefined "main" or any custom color. */
+  color?: "main" | string;
   /** If `true`, the text will be underlined. */
   textUnderline?: boolean;
   /** Specifies the hover style variant. */
-  hover?: "main-color" | "text-underline" | "text-underline-none";
+  hover?: "color" | "underline" | "underline-none";
   /** Custom styles. */
   style?: React.CSSProperties;
 }

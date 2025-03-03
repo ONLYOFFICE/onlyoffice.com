@@ -4,13 +4,13 @@ export interface ISolutionCard {
   /** Additional CSS class names. */
   className?: string;
   /** The image URL. */
-  imageUrl: string;
+  imgUrl: string;
   /** The heading. */
   heading?: string;
   /** The text. */
   text?: React.ReactNode;
   /** The links. */
-  links?: { name: string; url: string }[];
+  links?: { id?: string; name: string; url: string }[];
   /** Custom link elements that can be passed as React nodes. */
   customLinks?: React.ReactNode;
   /** The large size. */

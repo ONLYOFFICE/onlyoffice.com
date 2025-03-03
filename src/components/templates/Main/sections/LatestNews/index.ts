@@ -1,0 +1,1 @@
+export { LatestNews } from "./LatestNews";

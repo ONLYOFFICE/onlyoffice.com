@@ -1,0 +1,1 @@
+export { OfficeForBoxTemplate } from "./OfficeForBox";

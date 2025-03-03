@@ -1,4 +1,4 @@
-import "@src/styles/globals.css";
+import "@src/styles/global.css";
 import { appWithTranslation } from "next-i18next";
 import type { AppProps } from "next/app";
 

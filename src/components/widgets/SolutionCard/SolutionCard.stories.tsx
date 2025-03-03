@@ -21,7 +21,7 @@ export default {
     className: {
       control: { type: "text" },
     },
-    imageUrl: {
+    imgUrl: {
       control: { type: "text" },
     },
     heading: {
@@ -53,7 +53,7 @@ const Template: StoryFn<ISolutionCard> = (args: ISolutionCard) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  imageUrl: "/images/main/get-started/docspace.svg",
+  imgUrl: "/images/storybook/widgets/get-started/docspace.svg",
   heading: "In ONLYOFFICE DocSpace",
   text: "Create rooms within your secure DocSpace, invite people, view, edit, and collaborate on all kinds of documents from any desktop or mobile device.",
   links: [
@@ -66,7 +66,7 @@ Default.args = {
 
 export const Large = Template.bind({});
 Large.args = {
-  imageUrl: "/images/main/get-started/from-pc.svg",
+  imgUrl: "/images/storybook/widgets/get-started/from-pc.svg",
   heading: "From your PC",
   text: "Edit docs offline with free office apps for Windows, Linux, and macOS",
   large: true,
@@ -80,7 +80,7 @@ Large.args = {
 
 export const LargeWithCustomLinks = Template.bind({});
 LargeWithCustomLinks.args = {
-  imageUrl: "/images/main/get-started/from-pc.svg",
+  imgUrl: "/images/storybook/widgets/get-started/from-pc.svg",
   text: "Edit and co-edit your Nextcloud files in the desktop environment with ONLYOFFICE Desktop Editors on Windows, Linux, or macOS",
   large: true,
   customLinks: [

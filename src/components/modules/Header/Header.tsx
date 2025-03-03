@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import {
   GlobalStyle,
@@ -12,19 +10,14 @@ import {
 } from "./Header.styled";
 import { HeaderMenu } from "onlyoffice-react-ui-kit/header-menu";
 import "onlyoffice-react-ui-kit/header-menu/css";
+import { ILocale } from "@src/types/locale";
 import { Container } from "@src/components/ui/Container";
 import { SearchInput } from "./sub-components/SearchInput";
 import { PhoneMenu } from "./sub-components/PhoneMenu";
 import { LanguageSelector } from "./sub-components/LanguageSelector";
 import { Overlay } from "@src/components/ui/Overlay";
 
-interface IHeader {
-  locale?: string;
-}
-
-const Header = ({ locale }: IHeader) => {
-  const { t } = useTranslation("common");
-  const router = useRouter();
+const Header = ({ locale }: ILocale) => {
   const [isOpenMenuMobile, setIsOpenMenuMobile] = useState<boolean>(false);
 
   return (
@@ -46,14 +39,11 @@ const Header = ({ locale }: IHeader) => {
                 priority
               />
             </StyledHeaderLogo>
-            <HeaderMenu
-              locale={locale ?? router.locale}
-              isOpen={isOpenMenuMobile}
-            />
+            <HeaderMenu locale={locale} isOpen={isOpenMenuMobile} />
             <StyledHeaderBox>
               <SearchInput />
-              <PhoneMenu t={t} />
-              <LanguageSelector t={t} />
+              <PhoneMenu />
+              <LanguageSelector />
             </StyledHeaderBox>
           </StyledHeaderWrapper>
         </Container>

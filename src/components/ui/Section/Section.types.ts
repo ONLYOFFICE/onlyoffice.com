@@ -4,7 +4,7 @@ export interface ISection {
   /** Additional CSS class names. */
   className?: string;
   /** Content to be rendered inside. */
-  children: React.ReactNode;
+  children?: React.ReactNode;
   /** HTML element to be rendered. Default: "section". */
   as?: string;
   /** Background color. */
@@ -15,6 +15,6 @@ export interface ISection {
   tabletSpacing?: [string, string];
   /** Top and bottom spacing value for tablet small screens. */
   tabletSmallSpacing?: [string, string];
-  /** Top and bottom spacing value for mobile screens. Default: ["16px", "16px"]. */
+  /** Top and bottom spacing value for mobile screens. Default: ["48px", "48px"]. */
   mobileSpacing?: [string, string];
 }

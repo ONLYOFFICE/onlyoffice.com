@@ -1,1 +1,0 @@
-export { ImageTabs } from "./ImageTabs";

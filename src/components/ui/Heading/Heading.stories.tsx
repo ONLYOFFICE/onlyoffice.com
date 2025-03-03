@@ -40,6 +40,10 @@ export default {
       control: { type: "select" },
       options: ["left", "center", "right"],
     },
+    textTransform: {
+      control: { type: "select" },
+      options: ["uppercase", "lowercase", "capitalize"],
+    },
   },
 } as Meta<typeof Heading>;
 

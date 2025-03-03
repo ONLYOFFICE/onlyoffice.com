@@ -1,15 +1,9 @@
-import { useRouter } from "next/router";
 import { FooterMenu } from "onlyoffice-react-ui-kit/footer-menu";
 import "onlyoffice-react-ui-kit/footer-menu/css";
+import { ILocale } from "@src/types/locale";
 
-interface IFooter {
-  locale?: string;
-}
-
-const Footer = ({ locale }: IFooter) => {
-  const router = useRouter();
-
-  return <FooterMenu locale={locale ?? router.locale} />;
+const Footer = ({ locale }: ILocale) => {
+  return <FooterMenu locale={locale} />;
 };
 
 export { Footer };

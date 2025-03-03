@@ -6,24 +6,23 @@ interface IHeader {
 }
 
 const Header = ({ children }: IHeader) => {
-  const headerRef = useRef(null);
+  const headerRef = useRef<HTMLDivElement | null>(null);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const headerRefCurrent = headerRef.current;
+    const handleScroll = () => {
+      requestAnimationFrame(() => {
+        if (headerRef.current) {
+          setScrolled(headerRef.current.getBoundingClientRect().bottom <= 0);
+        }
+      });
+    };
 
-    const observer = new IntersectionObserver(([entry]) => {
-      setScrolled(!entry.isIntersecting);
-    });
-
-    if (headerRefCurrent) {
-      observer.observe(headerRefCurrent);
-    }
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
 
     return () => {
-      if (headerRefCurrent) {
-        observer.unobserve(headerRefCurrent);
-      }
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 

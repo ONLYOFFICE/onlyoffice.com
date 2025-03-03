@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { TI18n } from "@src/types/i18n";
+import { useTranslation } from "next-i18next";
 import {
   StyledPhoneMenu,
   StyledPhoneButton,
@@ -10,7 +10,8 @@ import {
 } from "./PhoneMenu.styled";
 import { PhoneIcon } from "@src/components/icons";
 
-const PhoneMenu = ({ t }: TI18n) => {
+const PhoneMenu = () => {
+  const { t } = useTranslation("common");
   const buttonRef = useRef(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -53,12 +54,12 @@ const PhoneMenu = ({ t }: TI18n) => {
 
       {isOpen && (
         <StyledPhoneDropdown $isOpen={isOpen} ref={dropdownRef}>
-          <StyledPhoneLabel>{t("Ascensio System SIA")}</StyledPhoneLabel>
+          <StyledPhoneLabel>Ascensio System SIA</StyledPhoneLabel>
           <StyledPhoneNumber href="tel:+37163399867">
-            <span>{t("Phone:")}</span> +371 63399867
+            <span>{t("Phone")}</span> +371 63399867
           </StyledPhoneNumber>
           <StyledPhoneLink href="/call-back-form">
-            {t("Request call")}
+            {t("RequestCall")}
           </StyledPhoneLink>
         </StyledPhoneDropdown>
       )}

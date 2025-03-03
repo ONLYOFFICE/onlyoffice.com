@@ -13,6 +13,7 @@ const Text = ({
   fontWeight,
   fontStyle,
   lineHeight,
+  letterSpacing,
   color,
   textAlign,
   textTransform,
@@ -30,6 +31,7 @@ const Text = ({
       $fontWeight={fontWeight}
       $fontStyle={fontStyle}
       $lineHeight={lineHeight}
+      $letterSpacing={letterSpacing}
       $color={color}
       $textAlign={textAlign}
       $textTransform={textTransform}

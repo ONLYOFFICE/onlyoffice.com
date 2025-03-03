@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { TI18n } from "@src/types/i18n";
 import {
   StyledLanguageSelector,
   StyledLanguageSelectorButton,
@@ -10,7 +9,7 @@ import {
 import languages from "@src/config/languages.json";
 import { ArrowDownIcon, FlagIcon } from "@src/components/icons";
 
-const LanguageSelector = ({ t }: TI18n) => {
+const LanguageSelector = () => {
   const router = useRouter();
   const buttonRef = useRef(null);
   const listRef = useRef<HTMLUListElement>(null);
@@ -63,7 +62,7 @@ const LanguageSelector = ({ t }: TI18n) => {
                 href={router.asPath}
                 locale={el.shortKey}
               >
-                <span>{el.shortKey}</span> {t(el.name)}
+                <span>{el.shortKey}</span> {el.name}
               </Link>
             </li>
           ))}

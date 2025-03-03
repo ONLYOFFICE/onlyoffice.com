@@ -7,15 +7,16 @@ const StyledHeading = styled.h1<{
   $level: IHeading["level"];
   $size: IHeading["size"];
   $textAlign: IHeading["textAlign"];
+  $textTransform: IHeading["textTransform"];
 }>`
   color: ${(props) => (props.$color ? props.$color : "#333333")};
   text-align: ${(props) => props.$textAlign};
+  text-transform: ${(props) => props.$textTransform};
 
   ${(props) =>
     props.$size === 1 &&
     css`
       font-size: 48px;
-      font-weight: 700;
       line-height: 64px;
       letter-spacing: -0.03em;
 
@@ -35,7 +36,6 @@ const StyledHeading = styled.h1<{
     props.$size === 2 &&
     css`
       font-size: 40px;
-      font-weight: 700;
       line-height: 52px;
       letter-spacing: -0.02em;
 
@@ -54,18 +54,12 @@ const StyledHeading = styled.h1<{
     props.$size === 3 &&
     css`
       font-size: 32px;
-      font-weight: 700;
-      line-height: 40px;
+      line-height: 43px;
       letter-spacing: -0.02em;
-
-      @media ${device.tabletS} {
-        font-size: 30px;
-        line-height: 40px;
-      }
 
       @media ${device.mobile} {
         font-size: 20px;
-        line-height: 24px;
+        line-height: 27px;
       }
     `}
 
@@ -73,19 +67,11 @@ const StyledHeading = styled.h1<{
     props.$size === 4 &&
     css`
       font-size: 24px;
-      font-weight: 700;
       line-height: 32px;
       letter-spacing: -0.02em;
 
-      @media ${device.tabletS} {
-        font-size: 22px;
-        line-height: 32px;
-        letter-spacing: -0.01em;
-      }
-
       @media ${device.mobile} {
         font-size: 18px;
-        font-weight: 600;
         line-height: 24px;
       }
     `}
@@ -94,12 +80,12 @@ const StyledHeading = styled.h1<{
     props.$size === 5 &&
     css`
       font-size: 18px;
-      font-weight: 700;
       line-height: 24px;
       letter-spacing: -0.02em;
 
       @media ${device.mobile} {
         font-size: 16px;
+        line-height: 22px;
       }
     `}
 
@@ -107,7 +93,6 @@ const StyledHeading = styled.h1<{
     props.$size === 6 &&
     css`
       font-size: 14px;
-      font-weight: 700;
       line-height: 16px;
 
       @media ${device.mobile} {
@@ -120,8 +105,7 @@ const StyledHeading = styled.h1<{
     props.$size === 7 &&
     css`
       font-size: 13px;
-      font-weight: 600;
-      line-height: 16px;
+      line-height: 18px;
       letter-spacing: 0.04em;
 
       @media ${device.mobile} {

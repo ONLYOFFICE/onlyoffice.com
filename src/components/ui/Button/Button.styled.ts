@@ -133,6 +133,10 @@ const StyledButton = styled.button<{
     pointer-events: none;
     cursor: initial;
   }
+
+  @media ${device.mobile} {
+    width: 100%;
+  }
 `;
 
 export { StyledButton };

@@ -1,5 +1,6 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { Footer } from "./Footer";
+import { ILocale } from "@src/types/locale";
 import languages from "@src/config/languages.json";
 
 export default {
@@ -21,9 +22,7 @@ export default {
   },
 } as Meta<typeof Footer>;
 
-const Template: StoryFn<{ locale: string }> = (args: { locale: string }) => (
-  <Footer {...args} />
-);
+const Template: StoryFn<ILocale> = (args: ILocale) => <Footer {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

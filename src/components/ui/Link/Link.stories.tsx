@@ -61,7 +61,7 @@ export default {
     },
     color: {
       control: { type: "color" },
-      options: ["main-color"],
+      options: ["main"],
     },
     textUnderline: {
       control: { type: "boolean" },
@@ -69,7 +69,7 @@ export default {
     },
     hover: {
       control: { type: "select" },
-      options: ["main-color", "text-underline", "text-underline-none"],
+      options: ["color", "underline", "underline-none"],
     },
     style: {
       control: { type: "object" },

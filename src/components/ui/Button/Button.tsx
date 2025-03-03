@@ -13,6 +13,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
       disabled,
       tabIndex,
       type = "button",
+      title,
       as = "button",
       href,
       target,
@@ -32,6 +33,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
         disabled={disabled}
         tabIndex={tabIndex}
         type={as === "button" ? type : undefined}
+        title={title}
         as={as === "a" ? Link : as}
         href={as === "a" ? href ?? "" : undefined}
         target={as === "a" ? target : undefined}

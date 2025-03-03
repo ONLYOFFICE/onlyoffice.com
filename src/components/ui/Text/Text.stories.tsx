@@ -47,6 +47,9 @@ export default {
     lineHeight: {
       control: { type: "text" },
     },
+    letterSpacing: {
+      control: { type: "text" },
+    },
     color: {
       control: { type: "color" },
     },

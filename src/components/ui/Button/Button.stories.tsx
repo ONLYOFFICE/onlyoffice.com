@@ -36,6 +36,9 @@ export default {
       control: { type: "select" },
       options: ["button", "submit", "reset"],
     },
+    title: {
+      control: { type: "text" },
+    },
     as: {
       control: { type: "select" },
       options: ["button", "a"],

@@ -15,4 +15,6 @@ export interface IHeading {
   size?: 1 | 2 | 3 | 4 | 5 | 6 | 7;
   /** The text alignment. */
   textAlign?: "left" | "center" | "right";
+  /** The text transformation style. */
+  textTransform?: "uppercase" | "lowercase" | "capitalize";
 }
