@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run clean-cache && next dev",
+    "build": "npm run clean-cache && next build",
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "clean-cache": "rimraf .next/cache"
   },
   "dependencies": {
     "dayjs": "^1.11.13",
