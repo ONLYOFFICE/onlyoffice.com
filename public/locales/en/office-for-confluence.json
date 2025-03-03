@@ -32,7 +32,7 @@
   "FeaturesFreeTrial": "Scalable Enterprise versions. <0>Free 30-day trial.</0> Self-hosted solution for total control over your data. Docs Cloud version for Confluence Cloud.",
 
   "HowToStart": "How to start",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <0>ONLYOFFICE Docs Cloud</0>.",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Get the integration app from the <0>Atlassian Marketplace</0>. Select the corresponding option by switching the hosting tabs (Server / Data Center / Cloud).",
   "HowToStartStep3": "Configure the integration app.",
 

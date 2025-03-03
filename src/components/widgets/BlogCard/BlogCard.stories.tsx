@@ -9,7 +9,7 @@ export default {
     docs: {
       description: {
         component:
-          "The BlogCard component displays a blog card with an image, heading, and link to an external URL.",
+          "The BlogCard component is used to display a blog card with an image, heading, and related links.",
       },
     },
   },
@@ -20,14 +20,17 @@ export default {
     className: {
       control: { type: "text" },
     },
-    linkUrl: {
+    url: {
+      control: { type: "text" },
+    },
+    imgUrl: {
       control: { type: "text" },
     },
     heading: {
       control: { type: "text" },
     },
-    imgUrl: {
-      control: { type: "text" },
+    links: {
+      control: { type: "object" },
     },
   },
 } as Meta<typeof BlogCard>;
@@ -38,9 +41,18 @@ const Template: StoryFn<IBlogCard> = (args: IBlogCard) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  linkUrl:
-    "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  url: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
+  imgUrl: "/images/storybook/widgets/blog-card/story.jpg",
   heading:
-    "How Kinderhaus Berlin shares and collaborates on sensitive files with ONLYOFFICE DocSpace",
-  imgUrl: "/images/storybook/widgets/blog-card/kinderhaus.jpg",
+    "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
+  links: [
+    {
+      href: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
+      label: "Read the full story",
+    },
+    {
+      href: "https://www.youtube.com/watch?v=vNbFcqhJ7wI",
+      label: "Watch a video version",
+    },
+  ],
 };

@@ -26,6 +26,12 @@ export default {
         type: "object",
       },
     },
+    imageWidth: {
+      control: { type: "number" },
+    },
+    imageHeight: {
+      control: { type: "number" },
+    },
     position: {
       control: { type: "radio" },
       options: ["left", "right"],

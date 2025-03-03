@@ -12,6 +12,7 @@ const StyledHero = styled(Section)`
 
   @media ${device.tablet} {
     margin-top: -64px;
+    background-position: calc(50% + 154px) top;
   }
 
   @media ${device.tabletS} {

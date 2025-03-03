@@ -15,7 +15,7 @@ const Collaboration = () => {
 
   return (
     <Section tabletSpacing={["80px", "112px"]} mobileSpacing={["32px", "48px"]}>
-      <Container>
+      <Container maxWidth="1240px">
         <StyledCollaborationHeading level={2} size={2}>
           <Trans
             t={t}
@@ -25,6 +25,8 @@ const Collaboration = () => {
         </StyledCollaborationHeading>
 
         <FeatureSwitcher
+          imageWidth={776}
+          imageHeight={576}
           items={items.map(({ label, images }) => ({
             label: t(label),
             images,

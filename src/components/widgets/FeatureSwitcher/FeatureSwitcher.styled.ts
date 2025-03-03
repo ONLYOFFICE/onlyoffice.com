@@ -17,9 +17,6 @@ const StyledFeatureSwitcher = styled.div<{
 
     @media ${device.tablet} {
       padding: 0;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 776px;
     }
   }
 
@@ -66,18 +63,22 @@ const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
 
   @media ${device.tablet} {
     justify-content: space-between;
-    margin-bottom: 8px;
     width: 100%;
   }
 `;
 
 const StyledFeatureSwitcherImage = styled.div<{
+  $imageWidth?: IFeatureSwitcher["imageWidth"];
+  $imageHeight?: IFeatureSwitcher["imageHeight"];
   $image: string;
   $image2x: string;
   $isDesktop?: boolean;
   $isMobile?: boolean;
 }>`
-  padding-bottom: 70.655%;
+  padding-bottom: ${(props) =>
+    props.$imageHeight && props.$imageWidth
+      ? ((props.$imageHeight / props.$imageWidth) * 100).toFixed(4) + "%"
+      : "0%"};
   background-image: url(${(props) => props.$image});
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,12 +98,15 @@ const StyledFeatureSwitcherImage = styled.div<{
 
       @media ${device.tablet} {
         display: block;
-        padding-bottom: 70.654%;
       }
     `}
 
   @media ${device.retina} {
     background-image: ${({ $image, $image2x }) => `url(${$image2x || $image})`};
+  }
+
+  @media ${device.tablet} {
+    margin: 8px 0;
   }
 `;
 

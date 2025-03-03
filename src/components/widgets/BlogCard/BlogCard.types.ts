@@ -3,10 +3,12 @@ export interface IBlogCard {
   id?: string;
   /** Additional CSS class names. */
   className?: string;
-  /** The URL for the link. */
-  linkUrl: string;
-  /** The heading text. */
-  heading: string;
+  /** The URL. */
+  url: string;
   /** The image URL. */
   imgUrl: string;
+  /** The heading. */
+  heading: string;
+  /** The links. */
+  links?: { href: string; label: string }[];
 }
