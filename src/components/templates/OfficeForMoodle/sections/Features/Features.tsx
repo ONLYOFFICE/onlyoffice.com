@@ -1,0 +1,62 @@
+import { useTranslation, Trans } from "next-i18next";
+import { StyledFeaturesWrapper, StyledFeaturesItems } from "./Features.styled";
+import { Section } from "@src/components/ui/Section";
+import { Container } from "@src/components/ui/Container";
+import { Heading } from "@src/components/ui/Heading";
+import { Button } from "@src/components/ui/Button";
+import { items } from "./data/items";
+import { FeatureItem } from "@src/components/widgets/FeatureItem";
+import { Link } from "@src/components/ui/Link";
+
+const Features = () => {
+  const { t } = useTranslation("office-for-moodle");
+
+  const scrollToBlock = () => {
+    const element = document.getElementById("how-to-start");
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <Section>
+      <Container>
+        <StyledFeaturesWrapper>
+          <Heading level={2} textAlign="center" label={t("WhyOO")} />
+
+          <StyledFeaturesItems>
+            {items.map((item, index) => (
+              <FeatureItem
+                icon={item.icon}
+                heading={
+                  <Trans
+                    t={t}
+                    i18nKey={item.heading}
+                    components={[
+                      <b key="0" />,
+                      <Link
+                        href="/download?from=officeformoodle#docs-enterprise"
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                        key={1}
+                      />,
+                    ]}
+                  />
+                }
+                key={index}
+              />
+            ))}
+          </StyledFeaturesItems>
+
+          <Button
+            onClick={scrollToBlock}
+            id="features-get-started"
+            variant="secondary"
+            label={t("GetStarted")}
+          />
+        </StyledFeaturesWrapper>
+      </Container>
+    </Section>
+  );
+};
+
+export { Features };
