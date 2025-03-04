@@ -13,7 +13,7 @@ export const LetterButton = styled.button<{ selected?: boolean }>`
   align-items: center;
   justify-content: center;
   border-radius: 9px;
-  border: 1px solid #E2E2E2;
+  border: 1px solid #e2e2e2;
   background: ${({ selected }) => (selected ? "#333" : "white")};
   color: ${({ selected }) => (selected ? "white" : "#333")};
   cursor: pointer;
@@ -23,12 +23,11 @@ export const LetterButton = styled.button<{ selected?: boolean }>`
   &:hover {
     border-color: ${({ selected }) => (selected ? "none" : "#FF6F3D")};
     color: ${({ selected }) => (selected ? "white" : "#FF6F3D")};
-    font-weight: ${({ selected }) => (selected ? "400" : "600")};
   }
 
-  &[data-letter="All"] { 
-      width: initial;
-      height: initial;
-      padding: 8px 11px;
+  &:first-child {
+    width: initial;
+    height: initial;
+    padding: 8px 11.5px;
   }
 `;

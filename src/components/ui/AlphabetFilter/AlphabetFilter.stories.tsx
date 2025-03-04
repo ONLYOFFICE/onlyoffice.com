@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from "@storybook/react";
-import { IAlphabetFilterProps } from "./AlphabetFilter.types";
+import { IAlphabetFilter } from "./AlphabetFilter.types";
 import { AlphabetFilter } from "./AlphabetFilter";
 
 const partners = [
@@ -19,19 +19,17 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: "",
+        component:
+          "The AlphabetFilter component is used to filter items by letter.",
       },
     },
   },
-  argTypes: {
-    
-  },
 } as Meta<typeof AlphabetFilter>;
 
-const Template: StoryFn<IAlphabetFilterProps> = (args: IAlphabetFilterProps) => (
-    <AlphabetFilter {...args} />
-  );
-  
+const Template: StoryFn<IAlphabetFilter> = (args: IAlphabetFilter) => (
+  <AlphabetFilter {...args} />
+);
+
 export const Default = Template.bind({});
 Default.args = {
   arr: partners,

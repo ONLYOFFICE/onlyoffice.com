@@ -1,4 +1,4 @@
-export interface IAlphabetFilterProps {
+export interface IAlphabetFilter {
     /** Array of partners */
     arr: string[];
     /** Currently selected letter */
@@ -7,7 +7,7 @@ export interface IAlphabetFilterProps {
     onLetterSelect: (letter: string) => void;
 }
 
-export interface ILetterButtonProps {
+export interface ILetterButton {
     /** Letter to display */
     letter: string;
     /** Whether the letter is currently selected */

@@ -1,10 +1,20 @@
 import React from "react";
 import { AlphabetContainer, LetterButton } from "./AlphabetFilter.styled";
-import { IAlphabetFilterProps } from "./AlphabetFilter.types";
+import { IAlphabetFilter } from "./AlphabetFilter.types";
+import { useTranslation } from "react-i18next";
 
-const AlphabetFilter: React.FC<IAlphabetFilterProps> = ({arr, selectedLetter, onLetterSelect }) => {
-  const sortedArray = [...arr?.map(name => name.charAt(0).toUpperCase()).sort()];
-  const letters = Array.from(new Set(["All", ...sortedArray])) || [];
+const AlphabetFilter = ({
+  arr,
+  selectedLetter,
+  onLetterSelect,
+}: IAlphabetFilter) => {
+  const { t } = useTranslation("common");
+  const allLabel = t("All");
+
+  const sortedArray = [
+    ...arr?.map((name) => name.charAt(0).toUpperCase()).sort(),
+  ];
+  const letters = Array.from(new Set([allLabel, ...sortedArray])) || [];
 
   return (
     <AlphabetContainer>
@@ -13,7 +23,11 @@ const AlphabetFilter: React.FC<IAlphabetFilterProps> = ({arr, selectedLetter, on
           key={letter}
           data-letter={letter}
           onClick={() => onLetterSelect(letter)}
-          selected={selectedLetter ? letter === selectedLetter.toUpperCase() : letter === "All"}
+          selected={
+            selectedLetter
+              ? letter === selectedLetter.toUpperCase()
+              : letter === allLabel
+          }
         >
           {letter}
         </LetterButton>
