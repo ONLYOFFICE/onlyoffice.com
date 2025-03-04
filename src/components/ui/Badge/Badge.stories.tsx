@@ -25,6 +25,18 @@ export default {
     children: {
       control: { type: "text" },
     },
+    verticalAlign: {
+      control: { type: "select" },
+      options: [
+        "top",
+        "middle",
+        "bottom",
+        "text-top",
+        "text-bottom",
+        "sub",
+        "super",
+      ],
+    },
   },
 } as Meta<typeof Badge>;
 

@@ -13,7 +13,7 @@ export interface ISection {
   desktopSpacing?: [string, string];
   /** Top and bottom spacing value for tablet screens. Default: ["88px", "88px"]. */
   tabletSpacing?: [string, string];
-  /** Top and bottom spacing value for tablet small screens. */
+  /** Top and bottom spacing value for tablet small screens. Default: ["80px", "80px"]. */
   tabletSmallSpacing?: [string, string];
   /** Top and bottom spacing value for mobile screens. Default: ["48px", "48px"]. */
   mobileSpacing?: [string, string];

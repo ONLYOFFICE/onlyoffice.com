@@ -7,12 +7,12 @@ import {
   StyledConnectorCardHeading,
   StyledConnectorCardText,
   StyledConnectorCardInfo,
+  StyledConnectorCardButton,
 } from "./ConnectorCard.styled";
 import { IConnectorCard } from "./ConnectorCard.types";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
-import { Button } from "@src/components/ui/Button";
 import { Badge } from "@src/components/ui/Badge";
 
 const ConnectorCard = ({
@@ -91,14 +91,14 @@ const ConnectorCard = ({
           </div>
         </StyledConnectorCardInfo>
 
-        <Button
-          as="a"
+        <StyledConnectorCardButton
+          forwardedAs="a"
           id={idName ? `${idName}-get-it-now` : undefined}
-          className={`connector-card-btn ${getItNowUrl ? "" : "hidden"}`}
           href={getItNowUrl}
           variant="tertiary"
           label={t("GetItOn")}
           target="_blank"
+          $isHidden={getItNowUrl ? false : true}
         />
       </StyledConnectorCardBody>
     </StyledConnectorCard>

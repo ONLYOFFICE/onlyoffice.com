@@ -36,6 +36,9 @@ export default {
       control: { type: "radio" },
       options: ["left", "right"],
     },
+    customButton: {
+      control: { type: "object" },
+    },
   },
 } as Meta<typeof FeatureSwitcher>;
 

@@ -9,7 +9,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 
 const LetUsKnowBanner = ({ id, className, heading }: ILetUsKnowBanner) => {
-  const { t } = useTranslation("connectors");
+  const { t } = useTranslation("Connectors");
 
   return (
     <StyledLetUsKnowBanner

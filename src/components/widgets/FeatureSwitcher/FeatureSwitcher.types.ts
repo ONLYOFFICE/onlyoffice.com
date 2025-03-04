@@ -14,4 +14,6 @@ export interface IFeatureSwitcher {
   imageHeight?: number;
   /** The position of the tabs. Default: "left". */
   position?: "left" | "right";
+  /** Custom button displayed below the tabs. */
+  customButton?: React.ReactNode;
 }

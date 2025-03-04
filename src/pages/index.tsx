@@ -31,7 +31,7 @@ export async function getStaticProps({ locale }: ILocale) {
       ...(await serverSideTranslations(locale, [
         "common",
         "main",
-        "security-first",
+        "SecurityFirst",
       ])),
       locale,
     },

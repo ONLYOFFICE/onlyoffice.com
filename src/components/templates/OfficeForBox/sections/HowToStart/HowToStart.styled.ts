@@ -9,7 +9,7 @@ const StyledHowToStart = styled(Section)`
   h2 {
     margin-bottom: 96px;
 
-    @media ${device.tabletS} {
+    @media ${device.tablet} {
       margin-bottom: 56px;
     }
 

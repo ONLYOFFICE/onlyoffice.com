@@ -22,7 +22,7 @@ const items = [
 ];
 
 const SecurityFirst = ({ id, className }: ISecurityFirst) => {
-  const { t } = useTranslation("security-first");
+  const { t } = useTranslation("SecurityFirst");
 
   return (
     <Section

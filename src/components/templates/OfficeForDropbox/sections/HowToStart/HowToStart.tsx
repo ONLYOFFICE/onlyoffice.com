@@ -10,7 +10,7 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-dropbox");
 
   return (
-    <StyledHowToStart bgColor="#f9f9f9" tabletSmallSpacing={["80px", "80px"]}>
+    <StyledHowToStart bgColor="#f9f9f9">
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 

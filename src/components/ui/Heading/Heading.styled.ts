@@ -27,8 +27,8 @@ const StyledHeading = styled.h1<{
       }
 
       @media ${device.mobile} {
-        font-size: 30px;
-        line-height: 40px;
+        font-size: 28px;
+        line-height: 37px;
       }
     `}
 

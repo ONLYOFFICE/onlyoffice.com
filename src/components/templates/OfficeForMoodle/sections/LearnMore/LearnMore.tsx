@@ -27,7 +27,10 @@ const LearnMore = () => {
               url={item.url}
               imgUrl={item.imgUrl}
               heading={item.heading}
-              links={item.links}
+              links={item.links.map((item) => ({
+                href: item.href,
+                label: t(item.label),
+              }))}
             />
           ))}
         </StyledLearnMoreItems>

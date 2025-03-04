@@ -31,7 +31,7 @@ export async function getStaticProps({ locale }: ILocale) {
       ...(await serverSideTranslations(locale, [
         "common",
         "office-for-moodle",
-        "connectors",
+        "Connectors",
       ])),
       locale,
     },

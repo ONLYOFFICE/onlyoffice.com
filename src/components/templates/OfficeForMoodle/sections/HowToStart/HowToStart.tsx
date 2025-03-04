@@ -12,11 +12,7 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-moodle");
 
   return (
-    <StyledHowToStart
-      id="how-to-start"
-      bgColor="#f9f9f9"
-      tabletSmallSpacing={["80px", "80px"]}
-    >
+    <StyledHowToStart id="how-to-start" bgColor="#f9f9f9">
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 

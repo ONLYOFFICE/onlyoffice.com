@@ -4,19 +4,21 @@ import {
   StyledOtherConnectors,
   StyledOtherConnectorsWrapper,
   StyledOtherConnectorsItems,
+  StyledOtherConnectorsItem,
+  StyledOtherConnectorsItemImg,
   StyledOtherConnectorsBlock,
   StyledOtherConnectorsList,
+  StyledOtherConnectorsButton,
 } from "./OtherConnectors.styled";
 import { IOtherConnectors } from "./OtherConnectors.types";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
-import { Button } from "@src/components/ui/Button";
 import { connectors } from "./data/connectors";
 import { develop } from "./data/develop";
 import { partners } from "./data/partners";
 
 const OtherConnectors = ({ id, className }: IOtherConnectors) => {
-  const { t } = useTranslation("connectors");
+  const { t } = useTranslation("Connectors");
   const router = useRouter();
 
   return (
@@ -31,20 +33,16 @@ const OtherConnectors = ({ id, className }: IOtherConnectors) => {
           <StyledOtherConnectorsItems>
             {connectors.map((item, index) => (
               <li key={index}>
-                <Button
+                <StyledOtherConnectorsItem
                   id={`connector-${item.id}`}
-                  className={`connector-btn ${
-                    router.pathname === item.url ? "active" : ""
-                  }`}
-                  as="a"
+                  forwardedAs="a"
                   href={item.url}
                   title={item.title}
                   variant="quaternary"
+                  $active={router.pathname === item.url}
                 >
-                  <span
-                    className={`connector-img-btn connector-img-btn--${item.id}`}
-                  ></span>
-                </Button>
+                  <StyledOtherConnectorsItemImg $id={item.id} />
+                </StyledOtherConnectorsItem>
               </li>
             ))}
           </StyledOtherConnectorsItems>
@@ -60,15 +58,13 @@ const OtherConnectors = ({ id, className }: IOtherConnectors) => {
             <StyledOtherConnectorsList>
               {develop.map((item, index) => (
                 <li key={index}>
-                  <Button
-                    className={`connector-link ${
-                      router.pathname === item.url ? "active" : ""
-                    }`}
-                    as="a"
+                  <StyledOtherConnectorsButton
+                    forwardedAs="a"
                     href={item.url}
                     label={item.name}
                     title={item.name}
                     variant="tertiary"
+                    $active={router.pathname === item.url}
                   />
                 </li>
               ))}
@@ -86,12 +82,12 @@ const OtherConnectors = ({ id, className }: IOtherConnectors) => {
             <StyledOtherConnectorsList>
               {partners.map((item, index) => (
                 <li key={index}>
-                  <Button
-                    className="connector-link connector-link--partners"
+                  <StyledOtherConnectorsButton
+                    forwardedAs="span"
                     label={item.title}
                     title={item.title}
                     variant="tertiary"
-                    tabIndex={-1}
+                    $disabled={true}
                   />
                 </li>
               ))}
