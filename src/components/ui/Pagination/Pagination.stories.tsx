@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { Pagination } from "./Pagination";
-import { IPaginationProps } from "./Pagination.types";
+import { IPagination } from "./Pagination.types";
 
 export default {
   title: "UI/Pagination",
@@ -27,7 +27,7 @@ export default {
   },
 } as Meta<typeof Pagination>;
 
-const Template: StoryFn<IPaginationProps> = (args) => <Pagination {...args} />;
+const Template: StoryFn<IPagination> = (args) => <Pagination {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
