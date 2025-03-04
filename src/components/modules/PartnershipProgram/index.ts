@@ -1,0 +1,1 @@
+export { PartnershipProgram } from "./PartnershipProgram";
