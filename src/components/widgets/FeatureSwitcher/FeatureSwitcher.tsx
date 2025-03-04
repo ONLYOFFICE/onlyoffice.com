@@ -11,6 +11,8 @@ const FeatureSwitcher = ({
   id,
   className,
   items,
+  imageWidth = 736,
+  imageHeight = 520,
   position = "left",
 }: IFeatureSwitcher) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -30,6 +32,8 @@ const FeatureSwitcher = ({
 
             {activeTab === index && (
               <StyledFeatureSwitcherImage
+                $imageWidth={imageWidth}
+                $imageHeight={imageHeight}
                 $isMobile
                 $image={items[activeTab].images.url}
                 $image2x={items[activeTab].images?.url2x ?? ""}
@@ -41,6 +45,8 @@ const FeatureSwitcher = ({
 
       {items[activeTab] && (
         <StyledFeatureSwitcherImage
+          $imageWidth={imageWidth}
+          $imageHeight={imageHeight}
           $isDesktop
           $image={items[activeTab].images.url}
           $image2x={items[activeTab].images?.url2x ?? ""}

@@ -1,0 +1,1 @@
+export { OfficeForMoodleTemplate } from "./OfficeForMoodle";

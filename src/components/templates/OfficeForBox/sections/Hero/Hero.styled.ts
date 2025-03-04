@@ -50,7 +50,7 @@ const StyledHeroHeader = styled.div`
 const StyledHeroVideo = styled.div`
   position: relative;
   border: 6px solid #ffffff;
-  padding-bottom: 55.7%;
+  padding-bottom: calc(56.25% - 6px);
   box-shadow: 0px 7px 25px rgba(85, 85, 85, 0.15);
 
   iframe {

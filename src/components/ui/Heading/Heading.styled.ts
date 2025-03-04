@@ -57,6 +57,11 @@ const StyledHeading = styled.h1<{
       line-height: 43px;
       letter-spacing: -0.02em;
 
+      @media ${device.tabletS} {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
       @media ${device.mobile} {
         font-size: 20px;
         line-height: 27px;

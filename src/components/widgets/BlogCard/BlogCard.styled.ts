@@ -1,59 +1,52 @@
 import styled from "styled-components";
-import { IBlogCard } from "./BlogCard.types";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
+import { Heading } from "@src/components/ui/Heading";
 
 const StyledBlogCard = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
   width: 100%;
-  max-width: 544px;
+  max-width: 352px;
+  height: 100%;
+  box-shadow: 0px 7px 25px 0px rgba(85, 85, 85, 0.15);
+  transition: box-shadow 0.2s;
 
-  @media ${device.tablet} {
-    align-items: initial;
-    flex-direction: column;
-  }
-
-  @media ${device.tabletS} {
-    align-items: center;
-    flex-direction: initial;
-    max-width: 100%;
-  }
-
-  @media ${device.mobile} {
-    align-items: initial;
-    flex-direction: column;
+  &:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
   }
 `;
 
-const StyledBlogCardLink = styled(Link)`
-  margin-right: 32px;
-
-  @media ${device.tablet} {
-    margin-right: initial;
-    margin-bottom: 32px;
-  }
-
-  @media ${device.tabletS} {
-    margin-right: 32px;
-    margin-bottom: initial;
-  }
-
-  @media ${device.mobile} {
-    margin-right: initial;
-    margin-bottom: 16px;
-  }
-`;
-
-const StyledBlogCardImg = styled.div<{
-  $imgUrl: IBlogCard["imgUrl"];
-}>`
-  width: 256px;
-  min-width: 256px;
-  height: 129px;
-  background-image: url(${(props) => props.$imgUrl});
+const StyledBlogCardImg = styled(Link)<{ $imgUrl: string }>`
+  display: block;
+  padding-bottom: 50.287%;
+  background-image: ${(props) => `url(${props.$imgUrl})`};
   background-repeat: no-repeat;
   background-size: cover;
 `;
 
-export { StyledBlogCard, StyledBlogCardLink, StyledBlogCardImg };
+const StyledBlogCardBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  height: 100%;
+
+  @media ${device.mobile} {
+    padding: 24px;
+  }
+`;
+
+const StyledBlogCardHeading = styled(Heading)`
+  flex: 1 1 auto;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+`;
+
+export {
+  StyledBlogCard,
+  StyledBlogCardImg,
+  StyledBlogCardBody,
+  StyledBlogCardHeading,
+};

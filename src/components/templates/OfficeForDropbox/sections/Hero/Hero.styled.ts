@@ -17,6 +17,10 @@ const StyledHero = styled(Section)`
     margin-top: -48px;
     background-position: calc(50% - 146px) -564px;
   }
+
+  @media ${device.mobile} {
+    background-position: calc(50% - 266px) -564px;
+  }
 `;
 
 const StyledHeroWrapper = styled.div`

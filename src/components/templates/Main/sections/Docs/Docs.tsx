@@ -16,7 +16,7 @@ const Docs = () => {
       tabletSpacing={["80px", "56px"]}
       mobileSpacing={["48px", "32px"]}
     >
-      <Container>
+      <Container maxWidth="1240px">
         <StyledDocsHeading level={2} size={2}>
           <Trans
             t={t}
@@ -27,6 +27,8 @@ const Docs = () => {
 
         <FeatureSwitcher
           position="right"
+          imageWidth={776}
+          imageHeight={576}
           items={items.map(({ label, links, images }) => ({
             label: links ? (
               <Trans

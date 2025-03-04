@@ -10,7 +10,7 @@ import {
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
-import { BlogCard } from "@src/components/widgets/BlogCard";
+import { StoryCard } from "@src/components/widgets/StoryCard";
 import { customersItems } from "./data/customersItems";
 import { successStoriesItems } from "./data/successStoriesItems";
 
@@ -57,7 +57,7 @@ const Customers = () => {
         <div>
           <StyledSuccessStoriesItems>
             {successStoriesItems.map((item, index) => (
-              <BlogCard
+              <StoryCard
                 imgUrl={t(item.imgUrl)}
                 linkUrl={t(item.linkUrl)}
                 heading={t(item.heading)}
