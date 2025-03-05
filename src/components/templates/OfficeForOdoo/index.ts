@@ -1,0 +1,1 @@
+export { OfficeForOdooTemplate } from "./OfficeForOdoo";

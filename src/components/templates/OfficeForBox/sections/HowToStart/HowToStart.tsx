@@ -15,7 +15,7 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-box");
 
   return (
-    <StyledHowToStart tabletSmallSpacing={["80px", "80px"]}>
+    <StyledHowToStart>
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 

@@ -9,7 +9,7 @@ const Section = ({
   bgColor,
   desktopSpacing = ["112px", "112px"],
   tabletSpacing = ["88px", "88px"],
-  tabletSmallSpacing,
+  tabletSmallSpacing = ["80px", "80px"],
   mobileSpacing = ["48px", "48px"],
 }: ISection) => {
   return (

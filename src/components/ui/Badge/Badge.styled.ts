@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { IBadge } from "./Badge.types";
 
-const StyledBadge = styled.span`
+const StyledBadge = styled.span<{ $verticalAlign?: IBadge["verticalAlign"] }>`
   display: inline-flex;
   align-items: center;
   border: 1px solid #ff6f3d;
@@ -12,7 +13,7 @@ const StyledBadge = styled.span`
   letter-spacing: 0.1em;
   min-height: 20px;
   color: #ff6f3d;
-  vertical-align: text-top;
+  vertical-align: ${(props) => props.$verticalAlign};
   text-transform: uppercase;
 `;
 

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
-import { Heading } from "@src/components/ui/Heading";
 
 const StyledBlogCard = styled.div`
   display: flex;
@@ -36,8 +35,12 @@ const StyledBlogCardBody = styled.div`
   }
 `;
 
-const StyledBlogCardHeading = styled(Heading)`
+const StyledBlogCardWrapper = styled.div`
   flex: 1 1 auto;
+
+  h3 {
+    margin-bottom: 8px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -48,5 +51,5 @@ export {
   StyledBlogCard,
   StyledBlogCardImg,
   StyledBlogCardBody,
-  StyledBlogCardHeading,
+  StyledBlogCardWrapper,
 };

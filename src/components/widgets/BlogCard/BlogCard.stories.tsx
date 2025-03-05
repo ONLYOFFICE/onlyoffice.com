@@ -29,6 +29,9 @@ export default {
     heading: {
       control: { type: "text" },
     },
+    text: {
+      control: { type: "text" },
+    },
     links: {
       control: { type: "object" },
     },

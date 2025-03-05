@@ -9,6 +9,8 @@ export interface IBlogCard {
   imgUrl: string;
   /** The heading. */
   heading: string;
+  /** The text. */
+  text?: string;
   /** The links. */
   links?: { href: string; label: string }[];
 }

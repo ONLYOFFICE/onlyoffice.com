@@ -11,20 +11,22 @@ const StyledFeatureSwitcher = styled.div<{
   align-items: center;
   column-gap: 32px;
 
-  ul {
-    padding: 40px 0;
-    order: ${(props) => props.$position === "right" && 2};
-
-    @media ${device.tablet} {
-      padding: 0;
-    }
-  }
-
   @media ${device.tablet} {
     display: block;
     grid-template-columns: initial;
     align-items: initial;
     column-gap: initial;
+  }
+`;
+
+const StyledFeatureSwitcherWrapper = styled.div<{
+  $position?: IFeatureSwitcher["position"];
+}>`
+  padding: 40px 0;
+  order: ${(props) => props.$position === "right" && 2};
+
+  @media ${device.tablet} {
+    padding: 0;
   }
 `;
 
@@ -35,7 +37,7 @@ const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
   border: none;
   padding: 16px;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 21px;
   color: ${(props) => (props.$active ? "#ff6f3d" : "#333333")};
   width: 100%;
   background-color: transparent;
@@ -64,6 +66,10 @@ const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
   @media ${device.tablet} {
     justify-content: space-between;
     width: 100%;
+  }
+
+  @media ${device.mobile} {
+    font-size: 14px;
   }
 `;
 
@@ -110,8 +116,14 @@ const StyledFeatureSwitcherImage = styled.div<{
   }
 `;
 
+const StyledFeatureSwitcherCustomBtn = styled.div`
+  margin-top: 16px;
+`;
+
 export {
   StyledFeatureSwitcher,
+  StyledFeatureSwitcherWrapper,
   StyledFeatureSwitcherBtn,
   StyledFeatureSwitcherImage,
+  StyledFeatureSwitcherCustomBtn,
 };

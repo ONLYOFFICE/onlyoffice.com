@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { IConnectorCard } from "./ConnectorCard.types";
 import { device } from "@src/utils/device";
+import { Button } from "@src/components/ui/Button";
 
 const StyledConnectorCard = styled.div`
   display: flex;
@@ -11,13 +12,6 @@ const StyledConnectorCard = styled.div`
   height: 100%;
   box-shadow: 0px 7px 15px 0px rgba(85, 85, 85, 0.1);
   transition: box-shadow 0.2s;
-
-  .connector-card-btn {
-    &.hidden {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -97,6 +91,15 @@ const StyledConnectorCardInfo = styled.div`
   }
 `;
 
+const StyledConnectorCardButton = styled(Button)<{ $isHidden?: boolean }>`
+  ${(props) =>
+    props.$isHidden &&
+    css`
+      opacity: 0;
+      visibility: hidden;
+    `}
+`;
+
 export {
   StyledConnectorCard,
   StyledConnectorCardImgWrapper,
@@ -105,4 +108,5 @@ export {
   StyledConnectorCardHeading,
   StyledConnectorCardText,
   StyledConnectorCardInfo,
+  StyledConnectorCardButton,
 };

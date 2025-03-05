@@ -41,29 +41,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <link
-            rel="preload"
-            href="/fonts/OpenSans/OpenSans-Regular.woff"
-            as="font"
-            type="font/woff"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/fonts/OpenSans/OpenSans-SemiBold.woff"
-            as="font"
-            type="font/woff"
-            crossOrigin="anonymous"
-          />
-          <link
-            rel="preload"
-            href="/fonts/OpenSans/OpenSans-Bold.woff"
-            as="font"
-            type="font/woff"
-            crossOrigin="anonymous"
-          />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

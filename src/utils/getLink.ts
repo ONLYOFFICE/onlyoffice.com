@@ -1,6 +1,6 @@
 const links: Record<string, { base: string; paths: Record<string, string> }> = {
   blog: {
-    base: "https://www.onlyoffice.com/blog",
+    base: `${process.env.NEXT_PUBLIC_SITE_URL}/blog`,
     paths: {
       en: "",
       nl: "",
@@ -10,7 +10,7 @@ const links: Record<string, { base: string; paths: Record<string, string> }> = {
     },
   },
   marketplace: {
-    base: "https://www.onlyoffice.com/app-directory",
+    base: `${process.env.NEXT_PUBLIC_SITE_URL}/app-directory`,
     paths: {
       pt: "",
       it: "",

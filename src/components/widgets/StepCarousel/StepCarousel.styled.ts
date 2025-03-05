@@ -30,6 +30,10 @@ const StyledStepCarousel = styled.div`
         );
       }
     }
+
+    @media ${device.mobile} {
+      margin-top: 32px;
+    }
   }
 
   .swiper-button-prev,

@@ -1,4 +1,7 @@
 {
+  "PageTitle": "Ready-to-use connectors for your platform",
+  "PageDescription": "Use ONLYOFFICE Docs or DocSpace together with your favourite business platform: Alfresco, Confluence, Nextcloud, Redmine, Jira, Liferay, ownCloud, and others.",
+
   "IntegrateOODocsOrDocSpace": "Integrate <0>ONLYOFFICE Docs</0> or <1>DocSpace</1> into your favorite business platform with ready-to-use connectors",
   "FeaturedConnectors": "Featured connectors",
   "ConnectorFor": "Connector for",

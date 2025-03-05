@@ -6,7 +6,7 @@ const StyledDocumentsHeading = styled(Heading)`
   margin: 0 auto 56px;
   max-width: 720px;
 
-  @media ${device.tabletS} {
+  @media ${device.tablet} {
     margin: 0 auto 40px;
   }
 

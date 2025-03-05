@@ -6,6 +6,10 @@ const StyledDocsHeading = styled(Heading)`
   margin-bottom: 56px;
   text-align: center;
 
+  @media ${device.tablet} {
+    margin-bottom: 40px;
+  }
+
   @media ${device.mobile} {
     margin-bottom: 24px;
     text-align: initial;

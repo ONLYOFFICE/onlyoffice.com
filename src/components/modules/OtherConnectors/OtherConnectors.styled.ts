@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
+import { Button } from "@src/components/ui/Button";
 
 const StyledOtherConnectors = styled(Section)`
   border-top: 1px solid #e2e2e2;
@@ -44,62 +45,54 @@ const StyledOtherConnectorsItems = styled.ul`
     }
   }
 
-  .connector-btn {
-    padding: 14px 16px;
-    background-color: #ffffff;
-    filter: grayscale(100%);
-    transition: filter 0.2s, box-shadow 0.2s;
-
-    &.active,
-    &:hover {
-      filter: grayscale(0);
-      box-shadow: 0px 20px 50px 0px rgba(85, 85, 85, 0.15);
-    }
-  }
-
-  .connector-img-btn {
-    width: 48px;
-    height: 28px;
-    background-image: url("/images/modules/connector-links/connectors.svg");
-    background-repeat: no-repeat;
-
-    &--confluence {
-      width: 128px;
-      background-position-x: -67px;
-    }
-
-    &--dropbox {
-      width: 112px;
-      background-position-x: -211px;
-    }
-
-    &--moodle {
-      width: 64px;
-      background-position-x: -338px;
-    }
-
-    &--nextcloud {
-      width: 40px;
-      background-position-x: -418px;
-    }
-
-    &--odoo {
-      width: 56px;
-      background-position-x: -474px;
-    }
-
-    &--owncloud {
-      width: 52px;
-      background-position-x: -547px;
-    }
-  }
-
   @media ${device.mobile} {
     flex-wrap: initial;
     padding: 0 16px 32px;
     margin: 0 -16px -32px;
     overflow-x: auto;
   }
+`;
+
+const StyledOtherConnectorsItem = styled(Button)<{
+  $active?: boolean;
+}>`
+  padding: 14px 16px;
+  background-color: #ffffff;
+  filter: grayscale(100%);
+  transition: filter 0.2s, box-shadow 0.2s;
+
+  ${(props) =>
+    props.$active &&
+    css`
+      filter: grayscale(0);
+      box-shadow: 0px 20px 50px 0px rgba(85, 85, 85, 0.15);
+    `}
+
+  &:hover {
+    filter: grayscale(0);
+    box-shadow: 0px 20px 50px 0px rgba(85, 85, 85, 0.15);
+  }
+`;
+
+const connectorStyles: Record<
+  string,
+  { width: number; backgroundPositionX: number }
+> = {
+  confluence: { width: 128, backgroundPositionX: -67 },
+  dropbox: { width: 112, backgroundPositionX: -211 },
+  moodle: { width: 64, backgroundPositionX: -338 },
+  nextcloud: { width: 40, backgroundPositionX: -418 },
+  odoo: { width: 56, backgroundPositionX: -474 },
+  owncloud: { width: 52, backgroundPositionX: -547 },
+};
+
+const StyledOtherConnectorsItemImg = styled.span<{ $id: string }>`
+  width: ${({ $id }) => connectorStyles[$id]?.width || 48}px;
+  height: 28px;
+  background-image: url("/images/modules/other-connectors/connectors.svg");
+  background-repeat: no-repeat;
+  background-position-x: ${({ $id }) =>
+    connectorStyles[$id]?.backgroundPositionX || 0}px;
 `;
 
 const StyledOtherConnectorsList = styled.ul`
@@ -118,32 +111,38 @@ const StyledOtherConnectorsList = styled.ul`
       }
     }
   }
+`;
 
-  .connector-link {
-    padding: 11px 18px;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: initial;
+const StyledOtherConnectorsButton = styled(Button)<{
+  $active?: boolean;
+  $disabled?: boolean;
+}>`
+  padding: 11px 18px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: initial;
 
-    &--partners {
-      &:hover,
-      &:active {
+  ${(props) =>
+    props.$active &&
+    css`
+      border-color: #ff6f3d;
+      color: #ff6f3d;
+    `}
+
+  ${(props) =>
+    props.$disabled &&
+    css`
+      &:hover {
         border-color: #aaaaaa;
         color: #444444;
         cursor: default;
       }
-    }
+    `}
 
-    &.active {
-      border-color: #ff6f3d;
-      color: #ff6f3d;
-    }
-
-    @media ${device.mobile} {
-      padding: 6px 11px;
-      font-size: 14px;
-      line-height: 21px;
-    }
+  @media ${device.mobile} {
+    padding: 6px 11px;
+    font-size: 14px;
+    line-height: 21px;
   }
 `;
 
@@ -151,6 +150,9 @@ export {
   StyledOtherConnectors,
   StyledOtherConnectorsWrapper,
   StyledOtherConnectorsItems,
+  StyledOtherConnectorsItem,
+  StyledOtherConnectorsItemImg,
   StyledOtherConnectorsBlock,
   StyledOtherConnectorsList,
+  StyledOtherConnectorsButton,
 };
