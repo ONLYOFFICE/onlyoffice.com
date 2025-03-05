@@ -88,6 +88,27 @@ const Head = ({ title, description, titleOG, descriptionOG }: IHead) => {
         href="/images/favicons/favicon325.png"
         type="image/png"
       />
+      <link
+        rel="preload"
+        href="/fonts/OpenSans/OpenSans-Regular.woff"
+        as="font"
+        type="font/woff"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href="/fonts/OpenSans/OpenSans-SemiBold.woff"
+        as="font"
+        type="font/woff"
+        crossOrigin="anonymous"
+      />
+      <link
+        rel="preload"
+        href="/fonts/OpenSans/OpenSans-Bold.woff"
+        as="font"
+        type="font/woff"
+        crossOrigin="anonymous"
+      />
     </NextHead>
   );
 };
