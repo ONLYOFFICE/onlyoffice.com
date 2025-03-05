@@ -1,9 +1,5 @@
 {
-  "All": "All",
   "Phone": "Phone:",
   "RequestCall": "Request call",
-  "WatchVideo": "Watch video",
-  "DownloadButtonForWindows": "For Windows",
-  "DownloadButtonForLinux": "For Linux",
-  "DownloadButtonForMacOS": "For Mac OS"
+  "WatchVideo": "Watch video"
 }
