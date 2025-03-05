@@ -8,7 +8,6 @@ const StyledHero = styled(Section)`
   background-image: url("/images/templates/office-for-confluence/hero/bg.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
 
   @media ${device.tablet} {
     margin-top: -64px;
@@ -68,7 +67,7 @@ const StyledHeroHeaderBtns = styled.div`
 `;
 
 const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
-  padding-bottom: 51.786%;
+  padding-bottom: 53.572%;
   background-image: url(${(props) => props.$imgUrl});
   background-position: center;
   background-repeat: no-repeat;
