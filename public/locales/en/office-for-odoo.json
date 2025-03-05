@@ -1,4 +1,7 @@
 {
+  "PageTitle": "Online office for Odoo",
+  "PageDescription": "Edit and collaborate on office documents within Odoo Documents using ONLYOFFICE Docs",
+
   "OnlineOfficeForOdoo": "Online office for Odoo",
   "WorkWithBusinessDocuments": "Work with business documents within Odoo using ONLYOFFICE",
   "GetStarted": "Get started",
