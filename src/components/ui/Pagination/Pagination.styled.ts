@@ -15,12 +15,12 @@ const buttonBaseStyles = `
   font-size: 16px;
 `;
 
-export const PaginationList = styled.div`
+export const StyledPaginationList = styled.div`
   display: flex;
   gap: 6px;
 `;
 
-export const PageButton = styled.button<IPageButton>`
+export const StyledPageButton = styled.button<IPageButton>`
   ${buttonBaseStyles}
   border: 1px solid #E2E2E2;
   border-color: ${({ active }) => active && "#333333"};
@@ -33,7 +33,7 @@ export const PageButton = styled.button<IPageButton>`
   }
 `;
 
-export const ArrowButton = styled(Link)`
+export const StyledArrowButton = styled(Link)`
   ${buttonBaseStyles}
   max-width: 36px;
 

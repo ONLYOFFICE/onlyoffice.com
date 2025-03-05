@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { ArrowButton, PaginationList, PageButton } from "./Pagination.styled";
+import {
+  StyledPaginationList,
+  StyledArrowButton,
+  StyledPageButton,
+} from "./Pagination.styled";
 import { IPagination } from "./Pagination.types";
 import { ChevronLeftIcon, ChevronRightIcon } from "@src/components/icons";
 
@@ -14,11 +18,11 @@ const Pagination = ({ totalPages, currentPage }: IPagination) => {
   const hasNext = endPage < totalPages;
 
   return (
-    <PaginationList>
+    <StyledPaginationList>
       {hasPrevious && (
-        <ArrowButton href={`?page=${startPage - 1}`}>
+        <StyledArrowButton href={`?page=${startPage - 1}`}>
           <ChevronLeftIcon />
-        </ArrowButton>
+        </StyledArrowButton>
       )}
 
       {Array.from(
@@ -26,16 +30,18 @@ const Pagination = ({ totalPages, currentPage }: IPagination) => {
         (_, i) => startPage + i,
       ).map((page) => (
         <Link key={page} href={`?page=${page}`}>
-          <PageButton active={page === currentPage}>{page}</PageButton>
+          <StyledPageButton active={page === currentPage}>
+            {page}
+          </StyledPageButton>
         </Link>
       ))}
 
       {hasNext && (
-        <ArrowButton href={`?page=${endPage + 1}`} passHref>
+        <StyledArrowButton href={`?page=${endPage + 1}`} passHref>
           <ChevronRightIcon />
-        </ArrowButton>
+        </StyledArrowButton>
       )}
-    </PaginationList>
+    </StyledPaginationList>
   );
 };
 
