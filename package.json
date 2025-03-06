@@ -17,7 +17,7 @@
     "i18next-http-backend": "^3.0.2",
     "next": "15.1.7",
     "next-i18next": "^15.4.2",
-    "onlyoffice-react-ui-kit": "ONLYOFFICE/onlyoffice-react-ui-kit#1.8.1",
+    "onlyoffice-react-ui-kit": "ONLYOFFICE/onlyoffice-react-ui-kit#1.9.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.0",
