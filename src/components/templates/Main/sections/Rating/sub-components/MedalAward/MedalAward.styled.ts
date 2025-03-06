@@ -1,15 +1,5 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Link } from "@src/components/ui/Link";
-
-const StyledMedalAward = styled(Link)`
-  width: 100%;
-  max-width: 224px;
-
-  @media ${device.tablet} {
-    max-width: 100%;
-  }
-`;
 
 const StyledMedalAwardImage = styled.div<{ $imgUrl: string }>`
   margin-bottom: 16px;
@@ -36,4 +26,4 @@ const StyledMedalAwardHeading = styled.div`
   }
 `;
 
-export { StyledMedalAward, StyledMedalAwardImage, StyledMedalAwardHeading };
+export { StyledMedalAwardImage, StyledMedalAwardHeading };
