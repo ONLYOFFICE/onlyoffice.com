@@ -1,0 +1,7 @@
+{
+  "platforms": {
+    "ForWindows": "For Windows",
+    "ForLinux": "For Linux",
+    "ForMacOS": "For Mac OS"
+  }
+}

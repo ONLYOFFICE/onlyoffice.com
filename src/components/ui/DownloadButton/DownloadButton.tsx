@@ -1,25 +1,26 @@
-import { useTranslation } from "react-i18next";
-import { ButtonStyled } from "./DownloadButton.styled";
+import { useTranslation } from "next-i18next";
+import { StyledDownloadButton } from "./DownloadButton.styled";
 import { IDownloadButton } from "./DownloadButton.types";
 
 const DownloadButton = ({
+  id,
   variant,
   platform,
   href,
   target,
 }: IDownloadButton) => {
-  const { t } = useTranslation("common");
-  const label = t(`DownloadButton${platform}`);
+  const { t } = useTranslation("DownloadButton");
 
   return (
-    <ButtonStyled
-      variant={variant}
-      platform={platform}
+    <StyledDownloadButton
+      id={id}
+      $variant={variant}
+      $platform={platform}
       href={href}
       target={target}
     >
-      {["ForWindows", "ForLinux", "ForMacOS"].includes(platform) && label}
-    </ButtonStyled>
+      <span>{t(`platforms.${platform}`)}</span>
+    </StyledDownloadButton>
   );
 };
 

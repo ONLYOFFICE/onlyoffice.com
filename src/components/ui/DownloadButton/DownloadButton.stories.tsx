@@ -14,9 +14,12 @@ export default {
     },
   },
   argTypes: {
+    id: {
+      control: { type: "text" },
+    },
     variant: {
       control: { type: "select" },
-      options: ["outline-light-text", "outline-dark-text", "dark", "light"],
+      options: ["primary", "secondary", "tertiary", "quaternary"],
     },
     platform: {
       control: { type: "select" },
@@ -53,38 +56,38 @@ const Template: StoryFn<IDownloadButton> = (args: IDownloadButton) => (
   <DownloadButton {...args} />
 );
 
-export const OutlineLightText = Template.bind({});
-OutlineLightText.args = {
-  variant: "outline-light-text",
+export const Primary = Template.bind({});
+Primary.args = {
+  variant: "primary",
   platform: "ForWindows",
 };
 
-export const Dark = Template.bind({});
-Dark.args = {
-  variant: "dark",
-  platform: "ForLinux",
+export const Secondary = Template.bind({});
+Secondary.args = {
+  variant: "secondary",
+  platform: "ForWindows",
 };
 
-export const OutlineDarkText: StoryObj<typeof DownloadButton> = {
+export const Tertiary: StoryObj<typeof DownloadButton> = {
   render: (args) => (
     <DarkWrapper>
       <DownloadButton {...args} />
     </DarkWrapper>
   ),
   args: {
-    variant: "outline-dark-text",
-    platform: "ForMacOS",
+    variant: "tertiary",
+    platform: "ForWindows",
   },
 };
 
-export const Light: StoryObj<typeof DownloadButton> = {
+export const Quaternary: StoryObj<typeof DownloadButton> = {
   render: (args) => (
     <YellowWrapper>
       <DownloadButton {...args} />
     </YellowWrapper>
   ),
   args: {
-    variant: "light",
-    platform: "AppStore",
+    variant: "quaternary",
+    platform: "ForWindows",
   },
 };
