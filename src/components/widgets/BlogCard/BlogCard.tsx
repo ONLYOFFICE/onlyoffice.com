@@ -38,7 +38,7 @@ const BlogCard = ({
               target="_blank"
             />
           </Heading>
-          <Text size={3} color="#666666" label={text} />
+          {text && <Text size={3} color="#666666" label={text} />}
         </StyledBlogCardWrapper>
 
         {links && (
@@ -49,6 +49,7 @@ const BlogCard = ({
                   href={link.href}
                   label={link.label}
                   target="_blank"
+                  display="inline-block"
                   fontSize="14px"
                   lineHeight="21px"
                   color="main"

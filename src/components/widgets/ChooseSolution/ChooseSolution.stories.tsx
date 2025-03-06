@@ -1,9 +1,10 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { ChooseSolution } from "./ChooseSolution";
 import { IChooseSolution } from "./ChooseSolution.types";
+import { Container } from "@src/components/ui/Container";
 
 export default {
-  title: "Modules/ChooseSolution",
+  title: "Widgets/ChooseSolution",
   component: ChooseSolution,
   parameters: {
     docs: {
@@ -19,9 +20,6 @@ export default {
     className: {
       control: { type: "text" },
     },
-    heading: {
-      control: { type: "text" },
-    },
     items: {
       control: {
         type: "object",
@@ -32,28 +30,17 @@ export default {
         type: "object",
       },
     },
-    desktopSpacing: {
-      control: { type: "object" },
-    },
-    tabletSpacing: {
-      control: { type: "object" },
-    },
-    tabletSmallSpacing: {
-      control: { type: "object" },
-    },
-    mobileSpacing: {
-      control: { type: "object" },
-    },
   },
 } as Meta<typeof ChooseSolution>;
 
 const Template: StoryFn<IChooseSolution> = (args: IChooseSolution) => (
-  <ChooseSolution {...args} />
+  <Container>
+    <ChooseSolution {...args} />
+  </Container>
 );
 
 export const Default = Template.bind({});
 Default.args = {
-  heading: "Get started and choose where to work",
   items: [
     {
       imgUrl: "/images/storybook/modules/choose-solution/docspace.svg",

@@ -39,7 +39,9 @@ const StyledBlogCardWrapper = styled.div`
   flex: 1 1 auto;
 
   h3 {
-    margin-bottom: 8px;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
   }
 
   &:not(:last-child) {

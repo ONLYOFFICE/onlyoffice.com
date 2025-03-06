@@ -1,9 +1,9 @@
 import { useTranslation } from "next-i18next";
 import {
+  StyledLearnMore,
   StyledLearnMoreHeading,
   StyledLearnMoreItems,
 } from "./LearnMore.styled";
-import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { BlogCard } from "@src/components/widgets/BlogCard";
 import { items } from "./data/items";
@@ -12,7 +12,7 @@ const LearnMore = () => {
   const { t } = useTranslation("office-for-odoo");
 
   return (
-    <Section>
+    <StyledLearnMore>
       <Container>
         <StyledLearnMoreHeading
           level={2}
@@ -36,7 +36,7 @@ const LearnMore = () => {
           ))}
         </StyledLearnMoreItems>
       </Container>
-    </Section>
+    </StyledLearnMore>
   );
 };
 

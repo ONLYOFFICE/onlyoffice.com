@@ -1,8 +1,8 @@
 import {
-  StyledMedalAward,
   StyledMedalAwardImage,
   StyledMedalAwardHeading,
 } from "./MedalAward.styled";
+import { Link } from "@src/components/ui/Link";
 
 interface IMedalAward {
   linkUrl: string;
@@ -12,10 +12,10 @@ interface IMedalAward {
 
 const MedalAward = ({ linkUrl, imgUrl, heading }: IMedalAward) => {
   return (
-    <StyledMedalAward href={linkUrl} target="_blank">
+    <Link href={linkUrl} target="_blank">
       <StyledMedalAwardImage $imgUrl={imgUrl} />
       <StyledMedalAwardHeading>{heading}</StyledMedalAwardHeading>
-    </StyledMedalAward>
+    </Link>
   );
 };
 

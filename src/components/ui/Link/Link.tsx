@@ -12,7 +12,7 @@ const Link = ({
   type,
   target,
   tabIndex,
-  display = "inline-block",
+  display,
   fontSize,
   fontWeight,
   lineHeight,

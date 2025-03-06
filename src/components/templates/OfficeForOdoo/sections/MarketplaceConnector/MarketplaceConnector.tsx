@@ -29,7 +29,7 @@ const MarketplaceConnector = () => {
               label={t("MarketplaceConnectorDescription")}
             />
             <Button
-              id="marketplace-connector-get-free-app"
+              id="marketplace-connector-get-started"
               as="a"
               target="_blank"
               href="https://apps.odoo.com/apps/modules/browse?author=ONLYOFFICE"

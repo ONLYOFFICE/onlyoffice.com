@@ -28,7 +28,6 @@ const HowToStart = () => {
                     key={index}
                     href={link.url}
                     target={link.isExternal ? "_blank" : undefined}
-                    display="inline"
                     color="main"
                     textUnderline
                     hover="underline-none"

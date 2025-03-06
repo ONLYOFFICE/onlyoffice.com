@@ -1,20 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Heading } from "@src/components/ui/Heading";
 
-const StyledChooseSolutionHeading = styled(Heading)`
-  margin-bottom: 72px;
-
-  @media ${device.tabletS} {
-    margin-bottom: 40px;
-  }
-
-  @media ${device.mobile} {
-    margin-bottom: 32px;
-  }
-`;
-
-const StyledChooseSolutionWrapper = styled.div`
+const StyledChooseSolution = styled.div`
   display: grid;
   row-gap: 32px;
 
@@ -44,8 +31,7 @@ const StyledChooseSolutionLargeItems = styled.div`
 `;
 
 export {
-  StyledChooseSolutionHeading,
-  StyledChooseSolutionWrapper,
+  StyledChooseSolution,
   StyledChooseSolutionItems,
   StyledChooseSolutionLargeItems,
 };

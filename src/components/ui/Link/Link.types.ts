@@ -19,8 +19,8 @@ export interface ILink {
   target?: "_self" | "_blank" | "_parent" | "_top";
   /** The tab index of the link, which controls its keyboard navigation order. */
   tabIndex?: number;
-  /** CSS display property. Default: "inline-block". */
-  display?: "block" | "inline-block" | "inline" | "flex" | "inline-flex";
+  /** CSS display property. */
+  display?: "block" | "inline-block" | "flex" | "inline-flex";
   /** The font size for styling. */
   fontSize?: string;
   /** The font weight for styling. Default: 400. */

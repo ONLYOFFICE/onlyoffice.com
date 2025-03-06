@@ -1,0 +1,83 @@
+println("Branch name: ${BRANCH_NAME}")
+
+switch(BRANCH_NAME) {
+  case "test_deploy":
+    aws_region="us-east-1"
+    region="info"
+    src_domain="test-new.teamlab.info"
+    public_static_url="https://test-new.teamlab.info"
+    break
+  case "production_deploy":
+    aws_region="us-east-1"
+    region="com"
+    MONITOR_ID = '8888888888888'
+    src_domain="test-new.teamlab.info"
+    public_static_url="https://test-new.teamlab.info"
+    break
+  default:
+    println("Branch: ${BRANCH_NAME} do not for deploy.")
+    break
+}
+
+pipeline {
+  agent { label 'ubuntu' }
+  triggers {
+    githubPush()
+  }
+  options {
+    disableConcurrentBuilds()
+    buildDiscarder (logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
+  }
+  stages {
+    
+    stage('deploy') {
+      when { 
+        anyOf { branch 'test_deploy';
+                branch 'production_deploy' }
+      }
+      environment {
+        region = "${region}"
+        src_domain="${src_domain}"
+        public_static_url = "${public_static_url}"
+      }
+      steps {
+        withCredentials([string(credentialsId: 'blog_revalidate_token', variable: 'revalidate_token')]) {
+        sh '''
+          cp .jenkins/build.sh .jenkins/site_build.sh
+          
+          if [ "${region}" = "info" ]; then
+            cp .jenkins/robots.txt ./
+          fi
+          
+          tar -czpf .jenkins/onlyoffice.com.tar.gz \
+            --exclude ".git" \
+            --exclude ".gitignore" \
+            --exclude ".jenkins" \
+            --exclude "README.md" .
+          
+          echo "Deploy from ${BRANCH_NAME} is starting."
+        '''
+        }
+        
+        sshPublisher(publishers: [sshPublisherDesc(configName: "strapi_oforms@${region}", 
+          transfers: [sshTransfer(cleanRemote: false, 
+            excludes: '', 
+            execCommand: '''
+              sudo bash /home/ubuntu/deploy/.jenkins/site_build.sh |& tee -a > /home/ubuntu/deploy/site_deploy.log
+            ''', 
+            execTimeout: 0, 
+            flatten: false, 
+            makeEmptyDirs: false, 
+            noDefaultExcludes: false, 
+            patternSeparator: '[, ]+', 
+            remoteDirectory: '', 
+            remoteDirectorySDF: false, 
+            removePrefix: '', 
+            sourceFiles: '.jenkins/onlyoffice.com.tar.gz,.jenkins/site_build.sh')], 
+          usePromotionTimestamp: false, 
+          useWorkspaceInPromotion: false, 
+          verbose: false)])
+      }
+    }    
+  }
+}

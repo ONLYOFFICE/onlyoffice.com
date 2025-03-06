@@ -1,5 +1,6 @@
 import {
   StyledSolutionCard,
+  StyledSolutionCardImgWrapper,
   StyledSolutionCardImg,
   StyledSolutionCardBody,
   StyledSolutionCardText,
@@ -27,14 +28,16 @@ const SolutionCard = ({
 
   return (
     <StyledSolutionCard id={id} className={className} $large={large}>
-      <StyledSolutionCardImg
-        style={{ backgroundImage: `url(${imgUrl})` }}
+      <StyledSolutionCardImgWrapper
         display="block"
         href={links && links[0].url}
         tabIndex={-1}
         $large={large}
-      />
-      <StyledSolutionCardBody>
+      >
+        <StyledSolutionCardImg $imgUrl={imgUrl} $large={large} />
+      </StyledSolutionCardImgWrapper>
+
+      <StyledSolutionCardBody $customLinks={customLinks}>
         {heading && <Heading level={3} label={heading} />}
         {text && <StyledSolutionCardText>{text}</StyledSolutionCardText>}
 

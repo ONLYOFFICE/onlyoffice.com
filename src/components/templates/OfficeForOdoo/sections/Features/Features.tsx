@@ -2,7 +2,6 @@ import { useTranslation, Trans } from "next-i18next";
 import { StyledFeaturesHeading, StyledFeaturesItems } from "./Features.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-
 import { items } from "./data/items";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
 
