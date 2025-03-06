@@ -1,0 +1,1 @@
+export { OfficeForOwnCloudTemplate } from "./OfficeForOwnCloud";
