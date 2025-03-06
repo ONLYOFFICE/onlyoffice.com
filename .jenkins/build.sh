@@ -6,7 +6,7 @@
 CURRENT_DATE=$(date "+%Y%m%d-%H%M%S")
 
 # Define variables
-DOCKER_CONTAINER_TAG="node:18-alpine"
+DOCKER_CONTAINER_TAG="node:18.18-alpine"
 EXPOSE_PORT="30015"
 APP_NAME="onlyoffice.com"
 APP_DIR="/app/$APP_NAME"
@@ -65,9 +65,9 @@ if docker ps -a | grep -wq "$APP_NAME"; then
     else
         # Build and run a new container if the image tag does not match
         docker rm "$APP_NAME"
-        docker run -d --name "$APP_NAME" --publish "0.0.0.0:$EXPOSE_PORT:$EXPOSE_PORT" -v "$APP_DIR:$APP_DIR" -w "$APP_DIR" --restart always "$DOCKER_CONTAINER_TAG" npm run start
+        docker run -d --name "$APP_NAME" --publish "0.0.0.0:$EXPOSE_PORT:3000" -v "$APP_DIR:$APP_DIR" -w "$APP_DIR" --restart always "$DOCKER_CONTAINER_TAG" npm run start
     fi
 else
     # Build and run a new container if it doesn't exist
-    docker run -d --name "$APP_NAME" --publish "0.0.0.0:$EXPOSE_PORT:$EXPOSE_PORT" -v "$APP_DIR:$APP_DIR" -w "$APP_DIR" --restart always "$DOCKER_CONTAINER_TAG" npm run start
+    docker run -d --name "$APP_NAME" --publish "0.0.0.0:$EXPOSE_PORT:3000" -v "$APP_DIR:$APP_DIR" -w "$APP_DIR" --restart always "$DOCKER_CONTAINER_TAG" npm run start
 fi
