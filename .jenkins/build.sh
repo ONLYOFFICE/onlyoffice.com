@@ -6,7 +6,7 @@
 CURRENT_DATE=$(date "+%Y%m%d-%H%M%S")
 
 # Define variables
-DOCKER_CONTAINER_TAG="node:18-alpine"
+DOCKER_CONTAINER_TAG="node:18.18-alpine"
 EXPOSE_PORT="30015"
 APP_NAME="onlyoffice.com"
 APP_DIR="/app/$APP_NAME"
