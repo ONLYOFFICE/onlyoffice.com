@@ -1,36 +1,29 @@
 import Link from "next/link";
 import styled from "styled-components";
-import { SocialType } from "./SocialButton.type";
+import { ISocialButton } from "./SocialButton.type";
 
-// images for icons
-const backgroundIcons: Record<SocialType, string> = {
-  google: "images/icons/google.svg",
-  zoom: "images/icons/zoom.svg",
-  twitter: "images/icons/twitter.svg",
-  linkedin: "images/icons/linkedin.svg",
-  facebook: "images/icons/facebook.svg",
+const socialStyles: Record<
+  ISocialButton["type"],
+  { icon: string; border: string }
+> = {
+  google: { icon: "/images/icons/google.svg", border: "#1877F2" },
+  zoom: { icon: "/images/icons/zoom.svg", border: "#2196f3" },
+  twitter: { icon: "/images/icons/twitter.svg", border: "#000000" },
+  linkedin: { icon: "/images/icons/linkedin.svg", border: "#0084B1" },
+  facebook: { icon: "/images/icons/facebook.svg", border: "#000000" },
 };
 
-// colors for active border
-const activeBorderColors: Record<SocialType, string> = {
-  google: "#1877F2",
-  zoom: "#2196f3",
-  twitter: "#000000",
-  linkedin: "#0084B1",
-  facebook: "#000000",
-};
-
-export const StyledButtonIcon = styled(Link)<{ type: SocialType }>`
+export const StyledButtonIcon = styled(Link)<{ $type: ISocialButton["type"] }>`
   display: inline-flex;
   align-items: center;
-  padding: 7px;
   justify-content: center;
+  padding: 7px;
   min-width: 40px;
   height: 40px;
   border: 1px solid transparent;
   border-radius: 3px;
-  background: ${({ type }) =>
-    `url(${backgroundIcons[type]}) no-repeat 7px center / 24px 24px`};
+  background: ${({ $type }) =>
+    `url(${socialStyles[$type].icon}) no-repeat 7px center / 24px 24px`};
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 
@@ -39,12 +32,8 @@ export const StyledButtonIcon = styled(Link)<{ type: SocialType }>`
   }
 
   &:active {
-    border-color: ${({ type }) => activeBorderColors[type] || "transparent"};
+    border-color: ${({ $type }) => socialStyles[$type].border};
     box-shadow: none;
-
-    span {
-      color: ${({ type }) => type === "google" && `#1877F2;`};
-    }
   }
 `;
 
@@ -53,8 +42,7 @@ export const StyledButtonLabel = styled.span`
   font-size: 14px;
   font-weight: 700;
   line-height: 16.41px;
-  letter-spacing: 0%;
   color: #666;
-  padding-left: 48px;
+  padding-left: 49px;
   transition: color 0.3s;
 `;

@@ -1,13 +1,6 @@
-export type SocialType =
-  | "google"
-  | "zoom"
-  | "twitter"
-  | "linkedin"
-  | "facebook";
-
 export interface ISocialButton {
-  /** Icon url */
-  icon: SocialType;
-  /** Button url */
+  /** Button type */
+  type: "google" | "zoom" | "twitter" | "linkedin" | "facebook";
+  /** Button href */
   href: string;
 }

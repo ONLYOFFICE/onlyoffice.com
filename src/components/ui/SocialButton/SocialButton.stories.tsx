@@ -14,7 +14,7 @@ export default {
     },
   },
   argTypes: {
-    icon: {
+    type: {
       control: "select",
       options: ["google", "zoom", "twitter", "linkedin", "facebook"],
     },
@@ -26,16 +26,16 @@ const Template: StoryFn<ISocialButton> = (args: ISocialButton) => (
 );
 
 export const Google = Template.bind({});
-Google.args = { icon: "google", href: "/" };
+Google.args = { type: "google", href: "/" };
 
 export const Zoom = Template.bind({});
-Zoom.args = { icon: "zoom", href: "/" };
+Zoom.args = { type: "zoom", href: "/" };
 
 export const Twitter = Template.bind({});
-Twitter.args = { icon: "twitter", href: "/" };
+Twitter.args = { type: "twitter", href: "/" };
 
 export const LinkedIn = Template.bind({});
-LinkedIn.args = { icon: "linkedin", href: "/" };
+LinkedIn.args = { type: "linkedin", href: "/" };
 
 export const Facebook = Template.bind({});
-LinkedIn.args = { icon: "facebook", href: "/" };
+Facebook.args = { type: "facebook", href: "/" };
