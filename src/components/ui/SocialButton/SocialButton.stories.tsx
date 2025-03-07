@@ -1,6 +1,6 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { SocialButton } from "./SocialButton";
-import { ISocialButton } from "./SocialButton.type";
+import { ISocialButton } from "./SocialButton.types";
 
 export default {
   title: "UI/SocialButton",

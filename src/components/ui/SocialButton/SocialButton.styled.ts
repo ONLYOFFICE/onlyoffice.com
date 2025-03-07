@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
-import { ISocialButton } from "./SocialButton.type";
+import { ISocialButton } from "./SocialButton.types";
 
 const socialStyles: Record<
   ISocialButton["type"],
@@ -25,7 +25,7 @@ export const StyledButtonIcon = styled(Link)<{ $type: ISocialButton["type"] }>`
   background: ${({ $type }) =>
     `url(${socialStyles[$type].icon}) no-repeat 7px center / 24px 24px`};
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  transition: box-shadow 0.2s ease, border 0.2s ease;
 
   &:hover {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
@@ -44,5 +44,5 @@ export const StyledButtonLabel = styled.span`
   line-height: 16.41px;
   color: #666;
   padding-left: 49px;
-  transition: color 0.3s;
+  transition: color 0.2s;
 `;
