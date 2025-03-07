@@ -35,6 +35,11 @@
     "name": "Čeština"
   },
   {
+    "key": "nl-NL",
+    "shortKey": "nl",
+    "name": "Nederlands"
+  },
+  {
     "key": "ja-JP",
     "shortKey": "ja",
     "name": "日本語"
