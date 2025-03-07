@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 import { ISolutionCard } from "./SolutionCard.types";
 import { device } from "@src/utils/device";
-import { Link } from "@src/components/ui/Link";
 
 const StyledSolutionCard = styled.div<{
   $large?: ISolutionCard["large"];
@@ -15,7 +14,7 @@ const StyledSolutionCard = styled.div<{
   }
 `;
 
-const StyledSolutionCardImgWrapper = styled(Link)<{
+const StyledSolutionCardImgWrapper = styled.div<{
   $large?: ISolutionCard["large"];
 }>`
   border-radius: 6px;

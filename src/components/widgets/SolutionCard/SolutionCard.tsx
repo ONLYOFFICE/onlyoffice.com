@@ -28,12 +28,7 @@ const SolutionCard = ({
 
   return (
     <StyledSolutionCard id={id} className={className} $large={large}>
-      <StyledSolutionCardImgWrapper
-        display="block"
-        href={links && links[0].url}
-        tabIndex={-1}
-        $large={large}
-      >
+      <StyledSolutionCardImgWrapper $large={large}>
         <StyledSolutionCardImg $imgUrl={imgUrl} $large={large} />
       </StyledSolutionCardImgWrapper>
 

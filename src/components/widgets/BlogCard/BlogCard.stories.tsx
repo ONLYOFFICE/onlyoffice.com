@@ -20,9 +20,6 @@ export default {
     className: {
       control: { type: "text" },
     },
-    url: {
-      control: { type: "text" },
-    },
     imgUrl: {
       control: { type: "text" },
     },
@@ -44,7 +41,6 @@ const Template: StoryFn<IBlogCard> = (args: IBlogCard) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  url: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
   imgUrl: "/images/storybook/widgets/blog-card/story.jpg",
   heading:
     "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",

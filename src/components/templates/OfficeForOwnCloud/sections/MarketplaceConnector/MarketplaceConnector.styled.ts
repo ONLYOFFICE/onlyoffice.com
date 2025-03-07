@@ -77,6 +77,7 @@ const StyledMarketplaceConnectorImg = styled.div`
     display: none;
   }
 `;
+
 export {
   StyledMarketplaceConnector,
   StyledMarketplaceConnectorWrapper,

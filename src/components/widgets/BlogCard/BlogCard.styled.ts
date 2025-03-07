@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Link } from "@src/components/ui/Link";
 
 const StyledBlogCard = styled.div`
   display: flex;
@@ -16,7 +15,7 @@ const StyledBlogCard = styled.div`
   }
 `;
 
-const StyledBlogCardImg = styled(Link)<{ $imgUrl: string }>`
+const StyledBlogCardImg = styled.div<{ $imgUrl: string }>`
   display: block;
   padding-bottom: 50.287%;
   background-image: ${(props) => `url(${props.$imgUrl})`};

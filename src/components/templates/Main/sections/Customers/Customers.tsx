@@ -67,7 +67,7 @@ const Customers = () => {
           </StyledSuccessStoriesItems>
           <StyledSuccessStoriesLinkWrapper>
             <Link
-              id="more-success stories"
+              id="more-success-stories"
               href="/customers?from=default"
               label={t("MoreSuccessStories")}
               fontSize="14px"

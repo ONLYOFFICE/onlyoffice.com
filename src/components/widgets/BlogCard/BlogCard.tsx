@@ -12,7 +12,6 @@ import { Text } from "@src/components/ui/Text";
 const BlogCard = ({
   id,
   className,
-  url,
   imgUrl,
   heading,
   text,
@@ -20,24 +19,11 @@ const BlogCard = ({
 }: IBlogCard) => {
   return (
     <StyledBlogCard id={id} className={className}>
-      <StyledBlogCardImg
-        href={url}
-        $imgUrl={imgUrl}
-        tabIndex={-1}
-        target="_blank"
-      />
+      <StyledBlogCardImg $imgUrl={imgUrl} />
 
       <StyledBlogCardBody>
         <StyledBlogCardWrapper>
-          <Heading level={3} size={5}>
-            <Link
-              href={url}
-              label={heading}
-              display="block"
-              hover="color"
-              target="_blank"
-            />
-          </Heading>
+          <Heading level={3} size={5} label={heading} />
           {text && <Text size={3} color="#666666" label={text} />}
         </StyledBlogCardWrapper>
 

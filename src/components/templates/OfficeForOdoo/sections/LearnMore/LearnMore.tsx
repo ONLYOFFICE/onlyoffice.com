@@ -24,7 +24,6 @@ const LearnMore = () => {
             <BlogCard
               className="blog-card"
               key={index}
-              url={item.url}
               imgUrl={item.imgUrl}
               heading={t(item.heading)}
               text={t(item.text)}

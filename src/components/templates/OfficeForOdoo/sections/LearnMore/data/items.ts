@@ -1,6 +1,5 @@
 export const items = [
   {
-    url: "https://medium.com/onlyoffice/working-on-documents-within-odoo-257d6552691d",
     imgUrl: "/images/templates/office-for-odoo/learn-more/blog-1.png",
     heading: "Guide",
     text: "WorkingOnDocuments",
@@ -12,7 +11,6 @@ export const items = [
     ],
   },
   {
-    url: "https://www.onlyoffice.com/blog/2024/07/onlyoffice-templates-app-odoo",
     imgUrl: "/images/templates/office-for-odoo/learn-more/blog-2.png",
     heading: "Blog",
     text: "WorkWithFillableTemplates",
@@ -24,7 +22,6 @@ export const items = [
     ],
   },
   {
-    url: "https://www.onlyoffice.com/blog/2024/08/how-to-create-a-new-onlyoffice-form-template-for-odoo",
     imgUrl: "/images/templates/office-for-odoo/learn-more/blog-3.png",
     heading: "Blog",
     text: "ADetailedGuideOnCreating",

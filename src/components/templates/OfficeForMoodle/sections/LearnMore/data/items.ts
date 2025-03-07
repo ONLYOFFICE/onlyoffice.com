@@ -1,6 +1,5 @@
 export const items = [
   {
-    url: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
     imgUrl: "/images/templates/office-for-moodle/learn-more/story-1.jpg",
     heading: "HowEnsuresDigitalEquality",
     links: [
@@ -15,7 +14,6 @@ export const items = [
     ],
   },
   {
-    url: "https://www.onlyoffice.com/blog/2024/08/why-moodle-onlyoffice-training-center",
     imgUrl: "/images/templates/office-for-moodle/learn-more/story-2.png",
     heading: "WhyWeChoseMoodle",
     links: [
@@ -26,7 +24,6 @@ export const items = [
     ],
   },
   {
-    url: "https://www.onlyoffice.com/blog/2024/07/updates-of-onlyoffice-plugins-for-moodle",
     imgUrl: "/images/templates/office-for-moodle/learn-more/story-3.png",
     heading: "NewUpdatesOfOOPlugins",
     links: [
