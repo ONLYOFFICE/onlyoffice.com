@@ -1,0 +1,1 @@
+export { OfficeForNextcloudTemplate } from "./OfficeForNextcloud";
