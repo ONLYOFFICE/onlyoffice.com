@@ -25,6 +25,7 @@ const Features = () => {
             {items.map((item, index) => (
               <FeatureItem
                 icon={item.icon}
+                iconPositionX={item.iconPositionX}
                 heading={
                   <Trans
                     t={t}

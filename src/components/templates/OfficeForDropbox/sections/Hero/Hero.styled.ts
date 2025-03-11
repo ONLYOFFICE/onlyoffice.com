@@ -77,14 +77,6 @@ const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
         background-image: url(${props.$imgUrl2x});
       }
     `}
-
-  @media ${device.tabletS} {
-    padding-bottom: 55.234%;
-  }
-
-  @media ${device.mobile} {
-    padding-bottom: 56.076%;
-  }
 `;
 
 export { StyledHero, StyledHeroWrapper, StyledHeroLogo, StyledHeroImg };

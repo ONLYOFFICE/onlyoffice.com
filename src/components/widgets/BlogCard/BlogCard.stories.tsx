@@ -32,6 +32,9 @@ export default {
     links: {
       control: { type: "object" },
     },
+    isLarge: {
+      control: { type: "boolean" },
+    },
   },
 } as Meta<typeof BlogCard>;
 
@@ -54,4 +57,22 @@ Default.args = {
       label: "Watch a video version",
     },
   ],
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  imgUrl: "/images/storybook/widgets/blog-card/story.jpg",
+  heading:
+    "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
+  links: [
+    {
+      href: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
+      label: "Read the full story",
+    },
+    {
+      href: "https://www.youtube.com/watch?v=vNbFcqhJ7wI",
+      label: "Watch a video version",
+    },
+  ],
+  isLarge: true,
 };

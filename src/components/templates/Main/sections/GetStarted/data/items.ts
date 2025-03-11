@@ -28,7 +28,7 @@ export const items = [
           {
             id: "get-started-all-connectors",
             name: "GetDocsNow",
-            url: "/all-connectors",
+            url: "/download#docs-enterprise",
           },
         ],
       },

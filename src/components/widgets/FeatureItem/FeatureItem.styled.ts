@@ -10,13 +10,18 @@ const StyledFeatureItem = styled.div`
   text-align: center;
 `;
 
-const StyledFeatureItemIcon = styled.div<{ $icon: string }>`
+const StyledFeatureItemIcon = styled.div<{
+  $icon: string;
+  $iconPositionX?: string;
+  $iconPositionY?: string;
+}>`
   margin-bottom: 16px;
   width: 64px;
   height: 64px;
   background-image: ${(props) => `url(${props.$icon})`};
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position-x: ${(props) => props.$iconPositionX};
+  background-position-y: ${(props) => props.$iconPositionY};
 `;
 
 const StyledFeatureItemText = styled.p`

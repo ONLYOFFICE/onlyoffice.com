@@ -1,22 +1,27 @@
 export const items = [
   {
-    icon: "/images/templates/office-for-odoo/features/ai-helper.svg",
+    icon: "/images/templates/office-for-odoo/features/features.svg",
+    iconPositionX: "0px",
     heading: "FeaturesAIHelper",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/collaboration.svg",
+    icon: "/images/templates/office-for-odoo/features/features.svg",
+    iconPositionX: "-160px",
     heading: "FeaturesCollaboration",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/formats.svg",
+    icon: "/images/templates/office-for-odoo/features/features.svg",
+    iconPositionX: "-320px",
     heading: "FeaturesFormats",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/open-source-code.svg",
+    icon: "/images/templates/office-for-odoo/features/features.svg",
+    iconPositionX: "-80px",
     heading: "FeaturesOpenSourceCode",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/free-trial.svg",
+    icon: "/images/templates/office-for-odoo/features/features.svg",
+    iconPositionX: "-240px",
     heading: "FeaturesFreeTrial",
   },
 ];
