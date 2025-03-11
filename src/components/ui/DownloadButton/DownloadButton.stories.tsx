@@ -17,6 +17,9 @@ export default {
     id: {
       control: { type: "text" },
     },
+    className: {
+      control: { type: "text" },
+    },
     variant: {
       control: { type: "select" },
       options: ["primary", "secondary", "tertiary", "quaternary"],
@@ -31,6 +34,22 @@ export default {
         "GooglePlay",
         "SnapStore",
       ],
+    },
+    href: {
+      control: { type: "text" },
+    },
+    target: {
+      control: { type: "select" },
+      options: ["_self", "_blank", "_parent", "_top"],
+    },
+    rel: {
+      control: { type: "text" },
+    },
+    title: {
+      control: { type: "text" },
+    },
+    locale: {
+      control: { type: "text" },
     },
     onClick: { action: "clicked" },
   },

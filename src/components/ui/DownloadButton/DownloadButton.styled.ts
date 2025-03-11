@@ -1,31 +1,10 @@
 import styled, { css } from "styled-components";
 import { IDownloadButton } from "./DownloadButton.types";
 
-const platformIcons = {
-  light: {
-    ForWindows: "/images/icons/windows.svg",
-    ForLinux: "/images/icons/linux-white.svg",
-    ForMacOS: "/images/icons/macos-white.svg",
-    AppStore: "/images/icons/appstore-white.svg",
-    GooglePlay: "/images/icons/googleplay-white.svg",
-    SnapStore: "/images/icons/snapstore-white.svg",
-  },
-  dark: {
-    ForWindows: "/images/icons/windows.svg",
-    ForLinux: "/images/icons/linux-dark.svg",
-    ForMacOS: "/images/icons/macos-dark.svg",
-    AppStore: "/images/icons/appstore-dark.svg",
-    GooglePlay: "/images/icons/googleplay-dark.svg",
-    SnapStore: "/images/icons/snapstore-dark.svg",
-  },
-} as const;
-
-const getTheme = (variant: string) =>
-  variant === "primary" || variant === "quaternary" ? "dark" : "light";
-
 export const StyledDownloadButton = styled.a<{
   $variant: IDownloadButton["variant"];
   $platform: IDownloadButton["platform"];
+  $icon: IDownloadButton["icon"];
 }>`
   width: 170px;
   height: 56px;
@@ -38,7 +17,8 @@ export const StyledDownloadButton = styled.a<{
   padding: 11px;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: border 0.2s ease, color 0.2s ease, background-color 0.2s ease,
+    opacity 0.2s ease, filter 0.2s ease;
   filter: grayscale(1);
   background-repeat: no-repeat;
   background-position: center;
@@ -79,10 +59,10 @@ export const StyledDownloadButton = styled.a<{
       `,
     }[$variant])}
 
-  ${({ $variant, $platform }) =>
+  ${({ $platform, $icon }) =>
     ["AppStore", "GooglePlay", "SnapStore"].includes($platform) &&
     css`
-      background-image: url(${platformIcons[getTheme($variant)][$platform]});
+      background-image: url(${$icon});
     `}
 
   &:hover {
@@ -110,12 +90,10 @@ export const StyledDownloadButton = styled.a<{
       background-size: contain;
       background-position: center;
 
-      ${({ $variant, $platform }) =>
+      ${({ $platform, $icon }) =>
         ["ForWindows", "ForLinux", "ForMacOS"].includes($platform) &&
         css`
-          background-image: url(${platformIcons[getTheme($variant)][
-            $platform
-          ]});
+          background-image: url(${$icon});
         `}
     }
   }

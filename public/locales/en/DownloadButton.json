@@ -1,7 +1,41 @@
 {
-  "platforms": {
-    "ForWindows": "For Windows",
-    "ForLinux": "For Linux",
-    "ForMacOS": "For Mac OS"
+  "ForWindows": {
+    "text": "For Windows",
+    "icon": {
+      "light": "/images/icons/download-button/windows.svg",
+      "dark": "/images/icons/download-button/windows.svg"
+    }
+  },
+  "ForLinux": {
+    "text": "For Linux",
+    "icon": {
+      "light": "/images/icons/download-button/linux-white.svg",
+      "dark": "/images/icons/download-button/linux-dark.svg"
+    }
+  },
+  "ForMacOS": {
+    "text": "For Mac OS",
+    "icon": {
+      "light": "/images/icons/download-button/macos-white.svg",
+      "dark": "/images/icons/download-button/macos-dark.svg"
+    }
+  },
+  "AppStore": {
+    "icon": {
+      "light": "/images/icons/download-button/appstore/white/appstore-white.svg",
+      "dark": "/images/icons/download-button/appstore/dark/appstore-dark.svg"
+    }
+  },
+  "GooglePlay": {
+    "icon": {
+      "light": "/images/icons/download-button/googleplay/white/googleplay-white.svg",
+      "dark": "/images/icons/download-button/googleplay/dark/googleplay-dark.svg"
+    }
+  },
+  "SnapStore": {
+    "icon": {
+      "light": "/images/icons/download-button/snapstore/white/snapstore-white.svg",
+      "dark": "/images/icons/download-button/snapstore/dark/snapstore-dark.svg"
+    }
   }
 }
