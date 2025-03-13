@@ -1,26 +1,31 @@
 export const items = [
   {
-    icon: "/images/templates/office-for-confluence/features/formats.svg",
+    icon: "/images/templates/office-for-confluence/features/features.svg",
     heading: "FeaturesFormats",
   },
   {
-    icon: "/images/templates/office-for-confluence/features/ai-helper.svg",
+    icon: "/images/templates/office-for-confluence/features/features.svg",
+    iconPositionX: "-80px",
     heading: "FeaturesAIHelper",
   },
   {
-    icon: "/images/templates/office-for-confluence/features/co-editing.svg",
+    icon: "/images/templates/office-for-confluence/features/features.svg",
+    iconPositionX: "-160px",
     heading: "FeatureCoEditing",
   },
   {
-    icon: "/images/templates/office-for-confluence/features/enhanced-security.svg",
+    icon: "/images/templates/office-for-confluence/features/features.svg",
+    iconPositionX: "-240px",
     heading: "FeaturesEnhancedSecurity",
   },
   {
-    icon: "/images/templates/office-for-confluence/features/easy-configuration.svg",
+    icon: "/images/templates/office-for-confluence/features/features.svg",
+    iconPositionX: "-320px",
     heading: "FeaturesEasyConfiguration",
   },
   {
-    icon: "/images/templates/office-for-confluence/features/free.svg",
+    icon: "/images/templates/office-for-confluence/features/features.svg",
+    iconPositionX: "-400px",
     heading: "FeaturesFreeTrial",
   },
 ];

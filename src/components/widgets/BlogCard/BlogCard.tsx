@@ -16,13 +16,14 @@ const BlogCard = ({
   heading,
   text,
   links,
+  isLarge,
 }: IBlogCard) => {
   return (
-    <StyledBlogCard id={id} className={className}>
-      <StyledBlogCardImg $imgUrl={imgUrl} />
+    <StyledBlogCard id={id} className={className} $isLarge={isLarge}>
+      <StyledBlogCardImg $imgUrl={imgUrl} $isLarge={isLarge} />
 
       <StyledBlogCardBody>
-        <StyledBlogCardWrapper>
+        <StyledBlogCardWrapper $isLarge={isLarge}>
           <Heading level={3} size={5} label={heading} />
           {text && <Text size={3} color="#666666" label={text} />}
         </StyledBlogCardWrapper>

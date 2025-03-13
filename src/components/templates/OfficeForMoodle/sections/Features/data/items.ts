@@ -1,26 +1,32 @@
 export const items = [
   {
-    icon: "/images/templates/office-for-moodle/features/ai-helper.svg",
+    icon: "/images/templates/office-for-moodle/features/features.svg",
+    iconPositionX: "0px",
     heading: "FeaturesAIHelper",
   },
   {
-    icon: "/images/templates/office-for-moodle/features/co-editing.svg",
+    icon: "/images/templates/office-for-moodle/features/features.svg",
+    iconPositionX: "-76px",
     heading: "FeaturesCoEditing",
   },
   {
-    icon: "/images/templates/office-for-moodle/features/formats.svg",
+    icon: "/images/templates/office-for-moodle/features/features.svg",
+    iconPositionX: "-152px",
     heading: "FeaturesFormats",
   },
   {
-    icon: "/images/templates/office-for-moodle/features/desktop-editors.svg",
+    icon: "/images/templates/office-for-moodle/features/features.svg",
+    iconPositionX: "-230px",
     heading: "FeaturesDesktopEditors",
   },
   {
-    icon: "/images/templates/office-for-moodle/features/open-source-code.svg",
+    icon: "/images/templates/office-for-moodle/features/features.svg",
+    iconPositionX: "-306px",
     heading: "FeaturesOpenSourceCode",
   },
   {
-    icon: "/images/templates/office-for-moodle/features/free-trial.svg",
+    icon: "/images/templates/office-for-moodle/features/features.svg",
+    iconPositionX: "-380px",
     heading: "FeaturesFreeTrial",
   },
 ];

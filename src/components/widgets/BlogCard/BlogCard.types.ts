@@ -11,4 +11,6 @@ export interface IBlogCard {
   text?: string;
   /** The links. */
   links?: { href: string; label: string }[];
+  /** The size of the card. */
+  isLarge?: boolean;
 }

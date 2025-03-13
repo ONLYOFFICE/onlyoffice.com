@@ -112,7 +112,7 @@ const StyledFeatureSwitcherImage = styled.div<{
   }
 
   @media ${device.tablet} {
-    margin: 8px 0;
+    margin: 24px 0;
   }
 `;
 

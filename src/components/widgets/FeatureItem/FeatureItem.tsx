@@ -5,10 +5,19 @@ import {
 } from "./FeatureItem.styled";
 import { IFeatureItem } from "./FeatureItem.types";
 
-const FeatureItem = ({ icon, heading }: IFeatureItem) => {
+const FeatureItem = ({
+  icon,
+  iconPositionX = "0",
+  iconPositionY = "center",
+  heading,
+}: IFeatureItem) => {
   return (
     <StyledFeatureItem>
-      <StyledFeatureItemIcon $icon={icon} />
+      <StyledFeatureItemIcon
+        $icon={icon}
+        $iconPositionX={iconPositionX}
+        $iconPositionY={iconPositionY}
+      />
       <StyledFeatureItemText>{heading}</StyledFeatureItemText>
     </StyledFeatureItem>
   );

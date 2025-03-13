@@ -22,6 +22,12 @@ export default {
     icon: {
       control: { type: "text" },
     },
+    iconPositionX: {
+      control: { type: "text" },
+    },
+    iconPositionY: {
+      control: { type: "text" },
+    },
     heading: {
       control: { type: "text" },
     },
