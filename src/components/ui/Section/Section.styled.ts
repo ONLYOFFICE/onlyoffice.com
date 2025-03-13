@@ -4,6 +4,7 @@ import { device } from "@src/utils/device";
 
 const StyledSection = styled.section<{
   $bgColor: ISection["bgColor"];
+  $bg: ISection["bg"];
   $desktopSpacing: ISection["desktopSpacing"];
   $tabletSpacing: ISection["tabletSpacing"];
   $tabletSmallSpacing: ISection["tabletSmallSpacing"];
@@ -15,6 +16,7 @@ const StyledSection = styled.section<{
       ? `${props.$desktopSpacing[0]} 0`
       : `${props.$desktopSpacing[0]} 0 ${props.$desktopSpacing[1]}`)};
   background-color: ${(props) => props.$bgColor};
+  background: ${(props) => props.$bg};
 
   @media ${device.tablet} {
     padding: ${(props) =>

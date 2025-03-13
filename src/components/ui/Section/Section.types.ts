@@ -9,6 +9,8 @@ export interface ISection {
   as?: string;
   /** Background color. */
   bgColor?: string;
+  /** Background */
+  bg?: string;
   /** Top and bottom spacing value for desktop screens. Default: ["112px", "112px"]. */
   desktopSpacing?: [string, string];
   /** Top and bottom spacing value for tablet screens. Default: ["88px", "88px"]. */
