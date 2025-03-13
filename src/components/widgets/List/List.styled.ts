@@ -1,9 +1,20 @@
 import styled, { css } from "styled-components";
 import { IList } from "./List.types";
+import { device } from "@src/utils/device";
 
-export const StyledList = styled.ul`
+export const StyledList = styled.ul<{
+  $gap?: string;
+}>`
   list-style: none;
   font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: ${({ $gap }) => $gap || "16px"};
+  text-align: start;
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
 `;
 
 export const StyledListItem = styled.li<{
@@ -14,12 +25,11 @@ export const StyledListItem = styled.li<{
   $lineHeight?: string;
 }>`
   color: ${({ $color }) => $color || "#333"};
-  padding-bottom: ${({ $paddingBottom }) => $paddingBottom || "8px"};
   line-height: ${({ $lineHeight }) => $lineHeight || "1.5em"};
   position: relative;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
 
   ${({ $isBullet, $bulletType }) =>

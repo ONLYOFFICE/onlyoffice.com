@@ -17,10 +17,13 @@ export default {
         type: "object",
       },
     },
+    className: {
+      control: { type: "text" },
+    },
     color: {
       control: { type: "color" },
     },
-    paddingBottom: {
+    gap: {
       control: { type: "text" },
     },
     lineHeight: {
@@ -41,14 +44,24 @@ type Story = StoryObj<typeof List>;
 export const Default: Story = {};
 Default.args = {
   items: [
-    "Ideal for teamwork",
-    "Secure for sensitive documents",
-    <>
-      From <em>18%</em> commission <em>per sale</em>
-    </>,
-    "Cost-effective for any budget",
+    {
+      label: "Ideal for teamwork",
+    },
+    {
+      label: "Secure for sensitive documents",
+    },
+    {
+      label: (
+        <>
+          From <em>18%</em> commission <em>per sale</em>
+        </>
+      ),
+    },
+    {
+      label: "Cost-effective for any budget",
+    },
   ],
   color: "#333333",
-  paddingBottom: "16px",
+  gap: "16px",
   lineHeight: "24px",
 };

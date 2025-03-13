@@ -3,24 +3,24 @@ import { IList } from "./List.types";
 
 const List = ({
   items,
+  className,
   isBullet = true,
   bulletType = "rhombus",
   color,
-  paddingBottom,
+  gap,
   lineHeight,
 }: IList) => {
   return (
-    <StyledList>
-      {items.map((item, index) => (
+    <StyledList $gap={gap} className={className}>
+      {items.map(({ label }, index) => (
         <StyledListItem
           key={index}
           $isBullet={isBullet}
           $bulletType={bulletType}
           $color={color}
-          $paddingBottom={paddingBottom}
           $lineHeight={lineHeight}
         >
-          {item}
+          {label}
         </StyledListItem>
       ))}
     </StyledList>
