@@ -1,5 +1,8 @@
 import { useTranslation, Trans } from "next-i18next";
-import { StyledFreeAppsHeading } from "./FreeApps.styled";
+import {
+  StyledFreeAppsHeading,
+  StyledFreeAppsDownloadButton,
+} from "./FreeApps.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { ChooseSolution } from "@src/components/widgets/ChooseSolution";
@@ -32,7 +35,16 @@ const FreeApps = () => {
               />
             ),
             customLinks: item.customLinks?.map((link, index) =>
-              "label" in link ? (
+              "platform" in link ? (
+                <StyledFreeAppsDownloadButton
+                  key={index}
+                  id={link.id}
+                  platform={link.platform ?? "google-play"}
+                  variant="secondary"
+                  href={link.url}
+                  target={link.isExternal ? "_blank" : undefined}
+                />
+              ) : (
                 <Button
                   key={index}
                   id={link.id}
@@ -40,9 +52,9 @@ const FreeApps = () => {
                   href={link.url}
                   target={link.isExternal ? "_blank" : undefined}
                 >
-                  {"label" in link ? t(String(link.label)) : ""}
+                  {t(link.label ?? "")}
                 </Button>
-              ) : null,
+              ),
             ),
           }))}
         />

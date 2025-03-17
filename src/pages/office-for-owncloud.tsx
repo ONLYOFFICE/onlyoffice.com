@@ -40,6 +40,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "office-for-owncloud",
         "Connectors",
         "PartnershipProgram",
+        "DownloadButton",
       ])),
       locale,
     },
