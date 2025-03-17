@@ -1,4 +1,10 @@
-export const connectors = [
+interface IConnector {
+  id: string;
+  title: string;
+  url: string;
+}
+
+export const connectors: IConnector[] = [
   {
     id: "box",
     title: "Box",

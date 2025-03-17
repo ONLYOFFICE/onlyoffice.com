@@ -1,12 +1,12 @@
 import { IConnectorCard } from "../sub-components/ConnectorCard/ConnectorCard.types";
 
-interface IConnector extends IConnectorCard {
+interface IConnectorCardExtended extends IConnectorCard {
   productType?: ("docs" | "docspace")[];
   developerType?: ("oo-developers" | "partners")[];
   isWopi?: boolean;
 }
 
-export const connectors: IConnector[] = [
+export const connectors: IConnectorCardExtended[] = [
   {
     id: "agorum",
     imgUrl: "/images/templates/all-connectors/connectors/agorum.svg",

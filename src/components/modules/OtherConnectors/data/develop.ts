@@ -1,4 +1,9 @@
-export const develop = [
+interface IDevelop {
+  name: string;
+  url: string;
+}
+
+export const develop: IDevelop[] = [
   {
     name: "Alfresco",
     url: "/office-for-alfresco",

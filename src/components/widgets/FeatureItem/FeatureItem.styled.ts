@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { IFeatureItem } from "./FeatureItem.types";
 import { device } from "@src/utils/device";
 
 const StyledFeatureItem = styled.div`
@@ -11,9 +12,9 @@ const StyledFeatureItem = styled.div`
 `;
 
 const StyledFeatureItemIcon = styled.div<{
-  $icon: string;
-  $iconPositionX?: string;
-  $iconPositionY?: string;
+  $icon: IFeatureItem["icon"];
+  $iconPositionX?: IFeatureItem["iconPositionX"];
+  $iconPositionY?: IFeatureItem["iconPositionY"];
 }>`
   margin-bottom: 16px;
   width: 64px;

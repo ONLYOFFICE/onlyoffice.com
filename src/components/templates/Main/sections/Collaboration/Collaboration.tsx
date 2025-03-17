@@ -28,8 +28,11 @@ const Collaboration = () => {
           imageWidth={776}
           imageHeight={576}
           items={items.map(({ label, images }) => ({
-            label: t(label),
-            images,
+            label: t(String(label)),
+            images: {
+              url: t(images.url),
+              url2x: images.url2x ? t(images.url2x) : undefined,
+            },
           }))}
         />
 

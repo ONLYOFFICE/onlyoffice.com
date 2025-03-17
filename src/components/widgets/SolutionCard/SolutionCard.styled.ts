@@ -121,6 +121,7 @@ const StyledSolutionCardCustomLinks = styled.div`
 
   @media ${device.mobile} {
     flex-direction: column;
+    align-items: center;
   }
 `;
 

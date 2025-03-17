@@ -1,4 +1,6 @@
-export const items = [
+import { IBlogCard } from "@src/components/widgets/BlogCard";
+
+export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/office-for-odoo/learn-more/blog-1.png",
     heading: "Guide",

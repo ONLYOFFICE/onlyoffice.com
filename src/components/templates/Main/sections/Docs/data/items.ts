@@ -1,4 +1,10 @@
-export const items = [
+import { IFeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
+
+type DocsItem = IFeatureSwitcher["items"][0] & {
+  links?: { id: string; url: string }[];
+};
+
+export const items: DocsItem[] = [
   {
     label: "ViewEditAndCollaborateOnDocsSheetsSlides",
     links: [

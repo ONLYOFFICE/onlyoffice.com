@@ -20,17 +20,17 @@ const GetStarted = () => {
         />
 
         <ChooseSolution
-          items={items[0].items.map(({ imgUrl, heading, text, links }) => ({
+          items={items.items.map(({ imgUrl, heading, text, links }) => ({
             imgUrl,
-            heading: t(heading),
+            heading: t(heading ?? ""),
             text:
               typeof text === "string" ? (
                 t(text)
               ) : (
                 <Trans
                   t={t}
-                  i18nKey={text.label}
-                  components={text.links.map((link, index) => (
+                  i18nKey={text?.label}
+                  components={text?.links?.map((link, index) => (
                     <Link
                       key={index}
                       href={link.url}
@@ -41,18 +41,18 @@ const GetStarted = () => {
                   ))}
                 />
               ),
-            links: links.map(({ id, name, url }) => ({
+            links: links?.map(({ id, name, url }) => ({
               id,
               name: t(name),
               url,
             })),
           }))}
-          largeItems={items[0].largeItems.map(
+          largeItems={items.largeItems.map(
             ({ imgUrl, heading, text, links }) => ({
               imgUrl,
-              heading: t(heading),
-              text: t(text),
-              links: links.map(({ id, name, url }) => ({
+              heading: t(heading ?? ""),
+              text: t(String(text)),
+              links: links?.map(({ id, name, url }) => ({
                 id,
                 name: t(name),
                 url,

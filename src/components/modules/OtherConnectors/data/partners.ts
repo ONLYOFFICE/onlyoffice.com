@@ -1,4 +1,8 @@
-export const partners = [
+interface IPartner {
+  title: string;
+}
+
+export const partners: IPartner[] = [
   {
     title: "agorum",
   },

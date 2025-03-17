@@ -1,5 +1,4 @@
 import { useTranslation } from "next-i18next";
-import Image from "next/image";
 import {
   StyledCustomers,
   StyledCustomersHeading,
@@ -33,7 +32,7 @@ const Customers = () => {
           <StyledCustomersItems>
             {customersItems.map((item, index) => (
               <li key={index}>
-                <Image
+                <img
                   src={item.imgUrl}
                   alt={item.heading}
                   width={item.width}

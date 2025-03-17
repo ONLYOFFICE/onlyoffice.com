@@ -40,6 +40,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "office-for-nextcloud",
         "Connectors",
         "PartnershipProgram",
+        "DownloadButton",
       ])),
       locale,
     },

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { IStepCarouselItem } from "./StepCarousel.types";
 import { device } from "@src/utils/device";
 
 const StyledStepCarousel = styled.div`
@@ -72,7 +73,9 @@ const StyledStepCarouselWrapper = styled.div`
   }
 `;
 
-const StyledStepCarouselImg = styled.div<{ $imgUrl: string }>`
+const StyledStepCarouselImg = styled.div<{
+  $imgUrl: IStepCarouselItem["imgUrl"];
+}>`
   padding-bottom: 57.59%;
   background-image: url(${(props) => props.$imgUrl});
   background-repeat: no-repeat;

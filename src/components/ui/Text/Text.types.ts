@@ -31,6 +31,15 @@ export interface IText {
   textTransform?: "uppercase" | "lowercase" | "capitalize";
   /** Whether to underline the text. */
   textDecoration?: "underline";
+  /** The vertical alignment of the badge. */
+  verticalAlign?:
+    | "top"
+    | "middle"
+    | "bottom"
+    | "text-top"
+    | "text-bottom"
+    | "sub"
+    | "super";
   /** Whether to truncate the text. */
   truncate?: boolean;
 }

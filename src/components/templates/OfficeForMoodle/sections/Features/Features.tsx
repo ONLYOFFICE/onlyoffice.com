@@ -30,7 +30,7 @@ const Features = () => {
                 heading={
                   <Trans
                     t={t}
-                    i18nKey={item.heading}
+                    i18nKey={String(item.heading)}
                     components={[
                       <b key="0" />,
                       <Link

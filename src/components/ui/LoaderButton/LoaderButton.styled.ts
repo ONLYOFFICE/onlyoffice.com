@@ -85,7 +85,7 @@ const StyledLoaderButton = styled.button<{
     css`
       color: transparent;
       background-color: #8bb825;
-      background-image: url("/images/icons/check.svg");
+      background-image: url("/images/icons/check-white.svg");
       background-repeat: no-repeat;
       background-size: 24px 24px;
       background-position: center;

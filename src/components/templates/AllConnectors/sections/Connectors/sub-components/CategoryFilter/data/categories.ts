@@ -1,4 +1,10 @@
-export const categories = [
+interface ICategories {
+  id: string;
+  label: string;
+  items?: ICategories[];
+}
+
+export const categories: ICategories[] = [
   { id: "all", label: "AllConnectors" },
   {
     id: "by-products",

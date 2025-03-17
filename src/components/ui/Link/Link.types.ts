@@ -29,6 +29,8 @@ export interface ILink {
   lineHeight?: string;
   /** The color of the link text. Can be a predefined "main" or any custom color. */
   color?: "main" | string;
+  /** The text transformation style. */
+  textTransform?: "uppercase" | "lowercase" | "capitalize";
   /** If `true`, the text will be underlined. */
   textUnderline?: boolean;
   /** Specifies the hover style variant. */

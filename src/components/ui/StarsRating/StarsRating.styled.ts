@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { IStarsRating } from "./StarsRating.types";
 
-const StyledStarsRating = styled.div<{ $value: number }>`
+const StyledStarsRating = styled.div<{ $value: IStarsRating["value"] }>`
   position: relative;
   width: 90px;
   height: 18px;
