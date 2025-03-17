@@ -7,4 +7,5 @@ module.exports = {
     defaultLocale: "en",
     localeDetection: false,
   },
-}
+  returnObjects: true,
+};
