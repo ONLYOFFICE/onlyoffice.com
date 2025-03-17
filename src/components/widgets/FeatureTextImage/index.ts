@@ -1,0 +1,1 @@
+export { FeatureTextImage } from "./FeatureTextImage";
