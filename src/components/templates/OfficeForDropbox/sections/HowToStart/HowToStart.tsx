@@ -20,7 +20,7 @@ const HowToStart = () => {
             heading: item.headingLinks ? (
               <Trans
                 t={t}
-                i18nKey={item.heading}
+                i18nKey={String(item.heading)}
                 components={item.headingLinks.map((link, index) => (
                   <Link
                     key={index}
@@ -33,7 +33,7 @@ const HowToStart = () => {
                 ))}
               />
             ) : (
-              t(item.heading)
+              t(String(item.heading))
             ),
           }))}
         />

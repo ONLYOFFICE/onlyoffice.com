@@ -1,4 +1,6 @@
-export const featuredConnectors = [
+import { IFeatureConnectorCard } from "../sub-components/FeatureConnectorCard";
+
+export const featuredConnectors: IFeatureConnectorCard[] = [
   {
     url: "/office-for-trello",
     imgUrl: "/images/templates/all-connectors/featured-connectors/trello.svg",

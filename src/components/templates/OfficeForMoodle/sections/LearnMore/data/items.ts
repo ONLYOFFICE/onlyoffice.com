@@ -1,4 +1,6 @@
-export const items = [
+import { IBlogCard } from "@src/components/widgets/BlogCard";
+
+export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/office-for-moodle/learn-more/story-1.jpg",
     heading: "HowEnsuresDigitalEquality",

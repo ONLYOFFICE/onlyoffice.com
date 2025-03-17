@@ -3,6 +3,13 @@ export interface IStepCarouselItem {
   imgUrl: string;
   /** The heading for the carousel item. */
   heading: React.ReactNode;
+  /** The links for the heading. */
+  headingLinks?: {
+    /** The URL of the link. */
+    url: string;
+    /** Whether the link is external. */
+    isExternal?: boolean;
+  }[];
 }
 
 export interface IStepCarousel {

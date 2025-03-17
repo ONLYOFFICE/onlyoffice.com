@@ -7,7 +7,7 @@ import {
   StyledFeatureConnectorCardHeader,
   StyledFeatureConnectorCardHeading,
 } from "./FeatureConnectorCard.styled";
-import { IFeatureConnectorCard } from "./FeatureConenctorCard.types";
+import { IFeatureConnectorCard } from "./FeatureConnectorCard.types";
 import { Text } from "@src/components/ui/Text";
 import { Heading } from "@src/components/ui/Heading";
 import { Badge } from "@src/components/ui/Badge";

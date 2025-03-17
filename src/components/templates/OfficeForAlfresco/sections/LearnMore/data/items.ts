@@ -1,4 +1,6 @@
-export const items = [
+import { IBlogCard } from "@src/components/widgets/BlogCard";
+
+export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/office-for-alfresco/learn-more/help-center.jpg",
     heading: "HelpCenter",

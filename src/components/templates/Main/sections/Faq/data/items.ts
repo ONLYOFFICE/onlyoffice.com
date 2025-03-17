@@ -1,7 +1,13 @@
-export const items = [
+import { ICollapse } from "@src/components/ui/CollapseGroup/Collapse";
+
+interface ICollapseExtended extends ICollapse {
+  links?: { href: string; isExternal?: boolean }[];
+}
+
+export const items: ICollapseExtended[] = [
   {
     label: "IsOOrReallyFree",
-    text: "IsONLYOFFICEReallyFreeDescription",
+    children: "IsONLYOFFICEReallyFreeDescription",
     links: [
       { href: "https://github.com/ONLYOFFICE", isExternal: true },
       { href: "/desktop" },
@@ -12,7 +18,7 @@ export const items = [
   },
   {
     label: "WhatIsOOUsedFor",
-    text: "WhatIsONLYOFFICEUsedForDescription",
+    children: "WhatIsONLYOFFICEUsedForDescription",
     links: [
       { href: "/office-suite" },
       { href: "/all-connectors" },
@@ -24,16 +30,16 @@ export const items = [
   },
   {
     label: "IsOOSafeToUse",
-    text: "IsONLYOFFICESafeToUse",
+    children: "IsONLYOFFICESafeToUse",
     links: [{ href: "/security" }],
   },
   {
     label: "CanIUseOOOffline",
-    text: "CanIUseONLYOFFICEOfflineDescription",
+    children: "CanIUseONLYOFFICEOfflineDescription",
     links: [{ href: "/download-desktop#desktop" }],
   },
   {
     label: "DoesOOHaveAds",
-    text: "NoOOIsAdFree",
+    children: "NoOOIsAdFree",
   },
 ];

@@ -1,4 +1,11 @@
-export const customersItems = [
+interface ICustomersItem {
+  imgUrl: string;
+  heading: string;
+  width: number;
+  height: number;
+}
+
+export const customersItems: ICustomersItem[] = [
   {
     imgUrl: "/images/templates/main/customers/logo/unesko.svg",
     heading: "Unesko",

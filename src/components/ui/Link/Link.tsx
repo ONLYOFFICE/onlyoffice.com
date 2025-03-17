@@ -17,6 +17,7 @@ const Link = ({
   fontWeight,
   lineHeight,
   color,
+  textTransform,
   textUnderline,
   hover,
   style,
@@ -36,6 +37,7 @@ const Link = ({
       $fontWeight={fontWeight}
       $lineHeight={lineHeight}
       $color={color}
+      $textTransform={textTransform}
       $textUnderline={textUnderline}
       $hover={hover}
       style={style}

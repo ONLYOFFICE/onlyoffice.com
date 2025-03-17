@@ -17,7 +17,7 @@ const StyledBlogCard = styled.div<{ $isLarge: IBlogCard["isLarge"] }>`
 `;
 
 const StyledBlogCardImg = styled.div<{
-  $imgUrl: string;
+  $imgUrl: IBlogCard["imgUrl"];
   $isLarge: IBlogCard["isLarge"];
 }>`
   display: block;

@@ -1,4 +1,6 @@
-export const starsRatingItems = [
+import { IStarsRatingLogo } from "@src/components/widgets/StarsRatingLogo";
+
+export const starsRatingItems: IStarsRatingLogo[] = [
   {
     url: "https://sourceforge.net/projects/teamlab/",
     imgUrl: "/images/templates/main/rating/stars-rating/sourceforge.svg",

@@ -8,6 +8,7 @@ const StyledLink = styled(Link)<{
   $fontWeight: ILink["fontWeight"];
   $lineHeight: ILink["lineHeight"];
   $color: ILink["color"];
+  $textTransform: ILink["textTransform"];
   $textUnderline: ILink["textUnderline"];
   $hover: ILink["hover"];
 }>`
@@ -16,6 +17,7 @@ const StyledLink = styled(Link)<{
   font-weight: ${(props) => props.$fontWeight};
   line-height: ${(props) => props.$lineHeight};
   color: ${(props) => (props.$color === "main" ? "#ff6f3d" : props.$color)};
+  text-transform: ${(props) => props.$textTransform};
   text-decoration: ${(props) => props.$textUnderline && "underline"};
 
   ${(props) =>

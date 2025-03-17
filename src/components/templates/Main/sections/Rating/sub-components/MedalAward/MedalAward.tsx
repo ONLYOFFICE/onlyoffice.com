@@ -2,13 +2,8 @@ import {
   StyledMedalAwardImage,
   StyledMedalAwardHeading,
 } from "./MedalAward.styled";
+import { IMedalAward } from "./MedalAward.types";
 import { Link } from "@src/components/ui/Link";
-
-interface IMedalAward {
-  linkUrl: string;
-  imgUrl: string;
-  heading: string;
-}
 
 const MedalAward = ({ linkUrl, imgUrl, heading }: IMedalAward) => {
   return (

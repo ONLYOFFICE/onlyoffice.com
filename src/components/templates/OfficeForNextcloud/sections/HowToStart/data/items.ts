@@ -1,4 +1,6 @@
-export const items = [
+import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
+
+export const items: IStepCarouselItem[] = [
   {
     imgUrl: "/images/templates/office-for-nextcloud/how-to-start/step-1.svg",
     heading: "HowToStartStep1",

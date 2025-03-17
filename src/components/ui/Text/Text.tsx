@@ -18,6 +18,7 @@ const Text = ({
   textAlign,
   textTransform,
   textDecoration,
+  verticalAlign,
   truncate,
 }: IText) => {
   return (
@@ -36,6 +37,7 @@ const Text = ({
       $textAlign={textAlign}
       $textTransform={textTransform}
       $textDecoration={textDecoration}
+      $verticalAlign={verticalAlign}
       $truncate={truncate}
     >
       {children || label}

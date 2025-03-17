@@ -1,4 +1,6 @@
-export const awardItems = [
+import { IMedalAward } from "../sub-components/MedalAward";
+
+export const awardItems: IMedalAward[] = [
   {
     linkUrl: "https://slashdot.org/software/p/ONLYOFFICE/",
     imgUrl: "/images/templates/main/rating/awards/slashdot-2024.svg",

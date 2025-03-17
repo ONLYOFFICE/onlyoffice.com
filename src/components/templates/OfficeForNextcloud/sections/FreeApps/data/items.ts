@@ -1,4 +1,16 @@
-export const items = [
+import { ISolutionCard } from "@src/components/widgets/SolutionCard";
+
+export interface ISolutionCardExtended
+  extends Omit<ISolutionCard, "customLinks"> {
+  customLinks?: {
+    id?: string;
+    label?: string;
+    url: string;
+    isExternal?: boolean;
+  }[];
+}
+
+export const items: ISolutionCardExtended[] = [
   {
     imgUrl: "/images/templates/office-for-nextcloud/free-apps/desktop.svg",
     text: "FreeAppsDesktopText",

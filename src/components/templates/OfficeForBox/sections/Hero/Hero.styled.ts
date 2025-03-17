@@ -5,6 +5,7 @@ import { Section } from "@src/components/ui/Section";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-image: url("/images/templates/office-for-box/hero/hero.svg");
+  background-color: #0056cf;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;

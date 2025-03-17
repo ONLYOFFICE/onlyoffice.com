@@ -1,4 +1,6 @@
-export const items = [
+import { IFeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
+
+export const items: IFeatureSwitcher["items"] = [
   {
     label: "AssignmentsTab1Label",
     images: {

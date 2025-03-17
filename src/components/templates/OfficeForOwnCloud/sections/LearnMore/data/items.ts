@@ -1,4 +1,6 @@
-export const items = [
+import { IBlogCard } from "@src/components/widgets/BlogCard";
+
+export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/office-for-owncloud/learn-more/czech-tv.jpg",
     heading: "HowCzechTVReplaced",

@@ -33,7 +33,7 @@ const Docs = () => {
             label: links ? (
               <Trans
                 t={t}
-                i18nKey={label}
+                i18nKey={String(label)}
                 components={links.map(({ id, url }, index) => (
                   <Link
                     id={id}
@@ -46,7 +46,7 @@ const Docs = () => {
                 ))}
               />
             ) : (
-              t(label)
+              t(String(label))
             ),
             images,
           }))}

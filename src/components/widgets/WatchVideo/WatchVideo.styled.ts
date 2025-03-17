@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { IWatchVideo } from "./WatchVideo.types";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
@@ -33,7 +34,9 @@ const StyledWatchVideo = styled.div`
   }
 `;
 
-const StyledWatchVideoImg = styled.div<{ $videoImgUrl: string }>`
+const StyledWatchVideoImg = styled.div<{
+  $videoImgUrl: IWatchVideo["videoImgUrl"];
+}>`
   position: relative;
   padding-bottom: 56.08%;
   background-image: url(${(props) => props.$videoImgUrl});

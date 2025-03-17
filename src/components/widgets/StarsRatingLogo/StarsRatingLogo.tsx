@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { IStarsRatingLogo } from "./StarsRatingLogo.types";
 import { StyledStarsRatingLogo } from "./StarsRatingLogo.styled";
 import { StarsRating } from "@src/components/ui/StarsRating";
@@ -21,13 +20,7 @@ const StarsRatingLogo = ({
   return (
     <StyledStarsRatingLogo id={id} className={className}>
       <Link href={url} target="_blank" display="inline-flex">
-        <Image
-          src={imgUrl}
-          alt={imgAlt}
-          width={imgWidth}
-          height={imgHeight}
-          quality={100}
-        />
+        <img src={imgUrl} alt={imgAlt} width={imgWidth} height={imgHeight} />
       </Link>
       <StarsRating value={getPercentage(value)} />
       <Text

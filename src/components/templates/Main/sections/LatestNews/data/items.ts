@@ -1,4 +1,14 @@
-export const items = {
+import { INewsCard } from "../sub-components/NewsCard";
+import { INewsItem } from "../sub-components/NewsItem";
+
+interface INewsItems {
+  blog: INewsCard[];
+  webinar: INewsCard[];
+  events: INewsCard[];
+  wechat: INewsItem[];
+}
+
+export const items: INewsItems = {
   blog: [
     {
       className: "latest-news-item-blog",

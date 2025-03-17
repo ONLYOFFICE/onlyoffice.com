@@ -19,10 +19,10 @@ const Documents = () => {
 
         <FeatureSwitcher
           items={items.map(({ label, images }) => ({
-            label: t(label),
+            label: t(String(label)),
             images: {
               url: t(images.url),
-              url2x: t(images.url2x),
+              url2x: images.url2x ? t(images.url2x) : undefined,
             },
           }))}
         />

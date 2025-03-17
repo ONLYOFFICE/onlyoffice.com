@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { IModal } from "./Modal.types";
 
-const StyledModal = styled.div<{ $isOpen: boolean }>`
+const StyledModal = styled.div<{ $isOpen: IModal["isOpen"] }>`
   position: fixed;
   top: 0;
   left: 0;
@@ -22,7 +23,7 @@ const StyledModalContainer = styled.div`
   min-height: 100%;
 `;
 
-const StyledModalWrapper = styled.div<{ $maxWidth: string }>`
+const StyledModalWrapper = styled.div<{ $maxWidth: IModal["maxWidth"] }>`
   position: relative;
   width: 100%;
   max-width: ${(props) => props.$maxWidth};

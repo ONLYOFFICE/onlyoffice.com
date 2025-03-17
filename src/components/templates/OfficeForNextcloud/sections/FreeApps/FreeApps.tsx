@@ -25,7 +25,11 @@ const FreeApps = () => {
           largeItems={items.map((item) => ({
             imgUrl: item.imgUrl,
             text: (
-              <Trans t={t} i18nKey={item.text} components={[<b key={0} />]} />
+              <Trans
+                t={t}
+                i18nKey={String(item.text)}
+                components={[<b key={0} />]}
+              />
             ),
             customLinks: item.customLinks?.map((link, index) =>
               "label" in link ? (
@@ -36,7 +40,7 @@ const FreeApps = () => {
                   href={link.url}
                   target={link.isExternal ? "_blank" : undefined}
                 >
-                  {"label" in link ? t(link.label) : ""}
+                  {"label" in link ? t(String(link.label)) : ""}
                 </Button>
               ) : null,
             ),

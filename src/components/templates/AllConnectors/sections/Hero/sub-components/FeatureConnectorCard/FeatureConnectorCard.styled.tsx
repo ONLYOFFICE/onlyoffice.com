@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { IFeatureConnectorCard } from "./FeatureConenctorCard.types";
+import { IFeatureConnectorCard } from "./FeatureConnectorCard.types";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 

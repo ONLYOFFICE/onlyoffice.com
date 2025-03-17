@@ -1,4 +1,6 @@
-export const items = [
+import { IFeatureItem } from "@src/components/widgets/FeatureItem";
+
+export const items: IFeatureItem[] = [
   {
     icon: "/images/templates/office-for-dropbox/features/robust-set.svg",
     heading: "FeaturesRobustSet",

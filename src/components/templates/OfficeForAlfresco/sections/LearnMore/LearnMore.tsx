@@ -27,8 +27,8 @@ const LearnMore = () => {
               key={index}
               imgUrl={item.imgUrl}
               heading={t(item.heading)}
-              text={t(item.text)}
-              links={item.links.map((item) => ({
+              text={t(item.text ?? "")}
+              links={item.links?.map((item) => ({
                 href: item.href,
                 label: t(item.label),
               }))}
