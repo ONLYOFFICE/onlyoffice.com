@@ -1,8 +1,10 @@
 export interface ISocialButton {
-  //** The id of the social button. */
+  /** The unique identifier. */
   id?: string;
-  //** The type of the social button. */
-  type: "google" | "zoom" | "twitter" | "linkedin" | "facebook";
-  //** The href of the social button. */
+  /** Additional CSS class names. */
+  className?: string;
+  /** The type of the social button. */
+  platform: "google" | "zoom" | "x" | "linkedin" | "facebook";
+  /** The href of the social button. */
   href: string;
 }

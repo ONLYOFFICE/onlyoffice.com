@@ -14,9 +14,18 @@ export default {
     },
   },
   argTypes: {
-    type: {
+    id: {
+      control: { type: "text" },
+    },
+    className: {
+      control: { type: "text" },
+    },
+    platform: {
       control: "select",
-      options: ["google", "zoom", "twitter", "linkedin", "facebook"],
+      options: ["google", "zoom", "x", "linkedin", "facebook"],
+    },
+    href: {
+      control: { type: "text" },
     },
   },
 } as Meta<typeof SocialButton>;
@@ -26,16 +35,16 @@ const Template: StoryFn<ISocialButton> = (args: ISocialButton) => (
 );
 
 export const Google = Template.bind({});
-Google.args = { type: "google", href: "/" };
+Google.args = { platform: "google", href: "/" };
 
 export const Zoom = Template.bind({});
-Zoom.args = { type: "zoom", href: "/" };
+Zoom.args = { platform: "zoom", href: "/" };
 
-export const Twitter = Template.bind({});
-Twitter.args = { type: "twitter", href: "/" };
+export const X = Template.bind({});
+X.args = { platform: "x", href: "/" };
 
 export const LinkedIn = Template.bind({});
-LinkedIn.args = { type: "linkedin", href: "/" };
+LinkedIn.args = { platform: "linkedin", href: "/" };
 
 export const Facebook = Template.bind({});
-Facebook.args = { type: "facebook", href: "/" };
+Facebook.args = { platform: "facebook", href: "/" };

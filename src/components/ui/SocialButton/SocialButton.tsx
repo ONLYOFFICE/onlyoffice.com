@@ -1,11 +1,21 @@
+import {
+  StyledSocialButton,
+  StyledSocialButtonLabel,
+} from "./SocialButton.styled";
 import { ISocialButton } from "./SocialButton.types";
-import { StyledButtonIcon, StyledButtonLabel } from "./SocialButton.styled";
 
-const SocialButton = ({ id, type, href }: ISocialButton) => {
+const SocialButton = ({ id, className, platform, href }: ISocialButton) => {
   return (
-    <StyledButtonIcon id={id} href={href} $type={type}>
-      {type === "google" && <StyledButtonLabel>Google</StyledButtonLabel>}
-    </StyledButtonIcon>
+    <StyledSocialButton
+      id={id}
+      className={className}
+      href={href}
+      $platform={platform}
+    >
+      {platform === "google" && (
+        <StyledSocialButtonLabel>Google</StyledSocialButtonLabel>
+      )}
+    </StyledSocialButton>
   );
 };
 
