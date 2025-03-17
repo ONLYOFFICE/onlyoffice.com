@@ -54,7 +54,7 @@ const LatestNews = ({ locale }: ILocale) => {
   }, []);
 
   return (
-    <Section bgColor="#f5f5f5">
+    <Section bg="#f5f5f5">
       <Container>
         <StyledLatestNewsHeading
           level={2}

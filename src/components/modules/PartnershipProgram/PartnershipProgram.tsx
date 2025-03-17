@@ -22,7 +22,7 @@ const PartnershipProgram = ({
   const { t } = useTranslation("PartnershipProgram");
 
   return (
-    <Section id={id} className={className} bgColor="#f3f5f6">
+    <Section id={id} className={className} bg="#f3f5f6">
       <Container>
         <StyledPartnershipProgramWrapper>
           <StyledPartnershipProgramBody>

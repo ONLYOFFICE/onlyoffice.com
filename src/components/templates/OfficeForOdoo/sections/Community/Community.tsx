@@ -13,7 +13,7 @@ const Community = () => {
   const { t } = useTranslation("office-for-odoo");
 
   return (
-    <Section bgColor="#f9f9f9">
+    <Section bg="#f9f9f9">
       <Container>
         <StyledCommunityHeading level={2} textAlign="center">
           <Trans

@@ -12,7 +12,7 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-nextcloud");
 
   return (
-    <StyledHowToStart bgColor="#f9f9f9">
+    <StyledHowToStart bg="#f9f9f9">
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 

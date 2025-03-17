@@ -26,7 +26,7 @@ export default {
     as: {
       control: { type: "text" },
     },
-    bgColor: {
+    bg: {
       control: { type: "color" },
     },
     desktopSpacing: {

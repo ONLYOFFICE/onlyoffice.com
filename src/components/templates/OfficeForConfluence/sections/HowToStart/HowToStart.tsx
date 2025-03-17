@@ -12,7 +12,7 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-confluence");
 
   return (
-    <StyledHowToStart id="how-to-start" bgColor="#f9f9f9">
+    <StyledHowToStart id="how-to-start" bg="#f9f9f9">
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 

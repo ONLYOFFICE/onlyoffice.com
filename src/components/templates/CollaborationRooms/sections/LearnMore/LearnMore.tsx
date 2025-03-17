@@ -12,7 +12,7 @@ const LearnMore = () => {
   const { t } = useTranslation("collaboration-rooms");
 
   return (
-    <Section tabletSmallSpacing={["72px", "72px"]} bgColor="#F9F9F9">
+    <Section tabletSmallSpacing={["72px", "72px"]} bg="#F9F9F9">
       <Container>
         <StyledLearnMoreHeading
           level={2}

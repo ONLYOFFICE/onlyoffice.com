@@ -6,7 +6,6 @@ const Section = ({
   className,
   children,
   as,
-  bgColor,
   bg,
   desktopSpacing = ["112px", "112px"],
   tabletSpacing = ["88px", "88px"],
@@ -18,7 +17,6 @@ const Section = ({
       id={id}
       className={className}
       as={as}
-      $bgColor={bgColor}
       $bg={bg}
       $desktopSpacing={desktopSpacing}
       $tabletSpacing={tabletSpacing}

@@ -14,7 +14,7 @@ const Documents = () => {
 
   return (
     <Section
-      bgColor="#f9f9f9"
+      bg="#f9f9f9"
       desktopSpacing={["112px", "90px"]}
       mobileSpacing={["48px", "0"]}
     >

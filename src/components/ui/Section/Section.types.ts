@@ -8,8 +8,6 @@ export interface ISection {
   /** HTML element to be rendered. Default: "section". */
   as?: string;
   /** Background color. */
-  bgColor?: string;
-  /** Background */
   bg?: string;
   /** Top and bottom spacing value for desktop screens. Default: ["112px", "112px"]. */
   desktopSpacing?: [string, string];

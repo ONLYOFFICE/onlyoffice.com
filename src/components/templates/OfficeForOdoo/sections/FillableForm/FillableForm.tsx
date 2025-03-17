@@ -16,7 +16,7 @@ const FillableForm = () => {
 
   return (
     <Section
-      bgColor="#f9f9f9"
+      bg="#f9f9f9"
       desktopSpacing={["112px", "16px"]}
       tabletSpacing={["88px", "16px"]}
       tabletSmallSpacing={["80px", "16px"]}

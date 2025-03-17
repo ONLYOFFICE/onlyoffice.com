@@ -1,29 +1,30 @@
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-const StyledTeamworkWrapper = styled.div`
-  .teamwork-title {
-    font-size: 32px;
+const StyledTeamworkHeading = styled(Heading)`
+  font-size: 32px;
 
-    @media ${device.tabletS} {
-      font-size: 30px;
-    }
-
-    @media ${device.tabletS} {
-      font-size: 20px;
-    }
+  @media ${device.tabletS} {
+    font-size: 30px;
   }
-  .teamwork-text {
-    padding-top: 24px;
 
-    @media ${device.tabletS} {
-      font-size: 16px;
-    }
+  @media ${device.mobile} {
+    font-size: 20px;
+  }
+`;
 
-    @media ${device.mobile} {
-      font-size: 14px;
-      padding-top: 16px;
-    }
+const StyledTeamworkText = styled(Text)`
+  padding-top: 24px;
+
+  @media ${device.tabletS} {
+    font-size: 16px;
+  }
+
+  @media ${device.mobile} {
+    font-size: 14px;
+    padding-top: 16px;
   }
 `;
 
@@ -53,7 +54,47 @@ const StyledSecondLine = styled.div`
   }
 `;
 
-const StyledTeamworkCard = styled.div`
+const StyledCardTitle = styled(Heading)`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 24px;
+  line-height: 133%;
+  font-weight: 700;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    background-image: url("/images/templates/collaboration-rooms/ideal-for-teamwork/teamwork-icons.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media ${device.tabletS} {
+    font-size: 20px;
+  }
+
+  @media ${device.mobile} {
+    font-size: 18px;
+  }
+`;
+
+const StyledCardText = styled(Text)`
+  font-size: 18px;
+
+  @media ${device.tabletS} {
+    font-size: 16px;
+  }
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
+`;
+
+const StyledTeamworkCard = styled.div<{
+  $type: "education" | "business" | "individuals" | "legal";
+}>`
   padding: 32px;
   border: 1px solid #cccccc;
   border-radius: 6px;
@@ -61,79 +102,46 @@ const StyledTeamworkCard = styled.div`
   flex-direction: column;
   gap: 16px;
 
-  &.education {
-    margin-right: 32px;
+  ${({ $type }) =>
+    $type === "education" &&
+    css`
+      margin-right: 32px;
+    `}
+
+  ${({ $type }) =>
+    $type === "business" &&
+    css`
+      border: none;
+      background-color: #ff6f3d;
+      color: #fff;
+    `}
+
+  ${({ $type }) =>
+    $type === "individuals" &&
+    css`
+      border-color: #8bb825;
+      background-color: #f9feef;
+    `}
+
+  ${({ $type }) =>
+    $type === "legal" &&
+    css`
+      margin-left: 32px;
+    `}
+
+  ${StyledCardTitle} {
+    color: ${({ $type }) => $type === "business" && "#fff"};
   }
 
-  &.business {
-    border: none;
-    background-color: #ff6f3d;
-    color: #fff;
-  }
-
-  &.individuals {
-    border-color: #8bb825;
-    background-color: #f9feef;
-  }
-
-  &.legal {
-    margin-left: 32px;
-  }
-
-  .education-title,
-  .business-title,
-  .individuals-title,
-  .legal-title {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    font-size: 24px;
-    line-height: 133%;
-    font-weight: 700;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 56px;
-      height: 56px;
-      background-image: url("/images/templates/collaboration-rooms/ideal-for-teamwork/teamwork-icons.svg");
-      background-repeat: no-repeat;
-      background-position: -18px -20px;
-    }
-
-    @media ${device.tabletS} {
-      font-size: 20px;
-    }
-
-    @media ${device.mobile} {
-      font-size: 18px;
-    }
-  }
-
-  .business-title::before {
-    background-position-x: -94px;
-  }
-
-  .individuals-title::before {
-    background-position-x: -170px;
-  }
-
-  .legal-title::before {
-    background-position-x: -245px;
-  }
-
-  .education-text,
-  .business-text,
-  .individuals-text,
-  .legal-text {
-    font-size: 18px;
-
-    @media ${device.tabletS} {
-      font-size: 16px;
-    }
-    @media ${device.mobile} {
-      font-size: 14px;
-    }
+  ${StyledCardTitle}::before {
+    background-position: ${({ $type }) =>
+      $type === "business"
+        ? "-94px -20px"
+        : $type === "individuals"
+        ? "-170px -20px"
+        : $type === "legal"
+        ? "-245px -20px"
+        : "-18px -20px"};
   }
 
   @media ${device.tabletS} {
@@ -141,21 +149,33 @@ const StyledTeamworkCard = styled.div`
   }
 
   @media ${device.mobile} {
-    margin: 0 !important;
+    ${({ $type }) =>
+      $type === "education" &&
+      css`
+        order: 2;
+        margin: 0;
+      `}
 
-    &.education {
-      order: 2;
-    }
+    ${({ $type }) =>
+      $type === "business" &&
+      css`
+        order: 1;
+      `}
 
-    &.business {
-      order: 1;
-    }
+    ${({ $type }) =>
+      $type === "legal" &&
+      css`
+        margin: 0;
+      `}
   }
 `;
 
 export {
-  StyledTeamworkWrapper,
+  StyledTeamworkHeading,
+  StyledTeamworkText,
   StyledFirstLine,
   StyledSecondLine,
   StyledTeamworkCard,
+  StyledCardTitle,
+  StyledCardText,
 };
