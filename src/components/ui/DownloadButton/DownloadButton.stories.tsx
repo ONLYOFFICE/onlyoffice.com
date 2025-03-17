@@ -27,12 +27,12 @@ export default {
     platform: {
       control: { type: "select" },
       options: [
-        "ForWindows",
-        "ForLinux",
-        "ForMacOS",
-        "AppStore",
-        "GooglePlay",
-        "SnapStore",
+        "windows",
+        "linux",
+        "macos",
+        "app-store",
+        "google-play",
+        "snap-store",
       ],
     },
     href: {
@@ -48,24 +48,12 @@ export default {
     title: {
       control: { type: "text" },
     },
-    locale: {
-      control: { type: "text" },
-    },
-    onClick: { action: "clicked" },
   },
 } as Meta<typeof DownloadButton>;
 
-const DarkWrapper = ({ children }: { children: React.ReactNode }) => {
+const Wrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <div style={{ background: "#333333" }}>
-      <div style={{ padding: "1rem" }}>{children}</div>
-    </div>
-  );
-};
-
-const YellowWrapper = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div style={{ background: "#FF6F3D" }}>
       <div style={{ padding: "1rem" }}>{children}</div>
     </div>
   );
@@ -75,38 +63,43 @@ const Template: StoryFn<IDownloadButton> = (args: IDownloadButton) => (
   <DownloadButton {...args} />
 );
 
+export const Default = Template.bind({});
+Default.args = {
+  platform: "windows",
+};
+
 export const Primary = Template.bind({});
 Primary.args = {
+  platform: "windows",
   variant: "primary",
-  platform: "ForWindows",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+  platform: "windows",
   variant: "secondary",
-  platform: "ForWindows",
 };
 
 export const Tertiary: StoryObj<typeof DownloadButton> = {
   render: (args) => (
-    <DarkWrapper>
+    <Wrapper>
       <DownloadButton {...args} />
-    </DarkWrapper>
+    </Wrapper>
   ),
   args: {
+    platform: "windows",
     variant: "tertiary",
-    platform: "ForWindows",
   },
 };
 
 export const Quaternary: StoryObj<typeof DownloadButton> = {
   render: (args) => (
-    <YellowWrapper>
+    <Wrapper>
       <DownloadButton {...args} />
-    </YellowWrapper>
+    </Wrapper>
   ),
   args: {
+    platform: "windows",
     variant: "quaternary",
-    platform: "ForWindows",
   },
 };

@@ -1,100 +1,140 @@
 import styled, { css } from "styled-components";
 import { IDownloadButton } from "./DownloadButton.types";
+import Link from "next/link";
 
-export const StyledDownloadButton = styled.a<{
+const StyledDownloadButton = styled(Link)<{
   $variant: IDownloadButton["variant"];
   $platform: IDownloadButton["platform"];
-  $icon: IDownloadButton["icon"];
+  $imageSrc?: string;
 }>`
-  width: 170px;
-  height: 56px;
-  display: flex;
-  align-items: center;
+  position: relative;
+  display: inline-flex;
   justify-content: center;
-  font-size: 16px;
-  font-weight: 400;
+  align-items: center;
   border-radius: 9px;
-  padding: 11px;
-  border: 1px solid transparent;
-  cursor: pointer;
-  transition: border 0.2s ease, color 0.2s ease, background-color 0.2s ease,
-    opacity 0.2s ease, filter 0.2s ease;
+  padding: 11px 15px;
+  font-size: 16px;
+  line-height: 24px;
+  min-width: 170px;
+  min-height: 56px;
   filter: grayscale(1);
-  background-repeat: no-repeat;
-  background-position: center;
-
-  ${({ $variant }) =>
-    ({
-      primary: css`
-        background-color: transparent;
-        border-color: #ff6f3d;
-        color: #444;
-
-        &:hover {
-          color: #333;
-        }
-      `,
-      secondary: css`
-        background-color: #444;
-        color: #fff;
-
-        &:hover {
-          background-color: #000;
-        }
-      `,
-      tertiary: css`
-        background-color: transparent;
-        border-color: #ff6f3d;
-        color: #fff;
-      `,
-      quaternary: css`
-        background-color: #fff;
-        color: #444;
-        opacity: 0.9;
-
-        &:hover {
-          color: #333;
-          opacity: 1;
-        }
-      `,
-    }[$variant])}
-
-  ${({ $platform, $icon }) =>
-    ["AppStore", "GooglePlay", "SnapStore"].includes($platform) &&
-    css`
-      background-image: url(${$icon});
-    `}
 
   &:hover {
     filter: grayscale(0);
   }
 
-  span {
-    display: ${({ $platform }) =>
-      ["AppStore", "GooglePlay", "SnapStore"].includes($platform)
-        ? "none"
-        : "flex"};
-    align-items: center;
-    padding-left: 40px;
-    position: relative;
+  ${({ $variant }) =>
+    $variant === "primary"
+      ? css`
+          border: 1px solid #aaaaaa;
+          color: #444444;
+          transition: filter 0.2s, border-color 0.2s;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      width: 32px;
-      height: 32px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
+          &:hover {
+            border-color: #ff6f3d;
+          }
+        `
+      : $variant === "secondary"
+      ? css`
+          color: #ffffff;
+          background-color: #444444;
+          transition: filter 0.2s, background-color 0.2s;
 
-      ${({ $platform, $icon }) =>
-        ["ForWindows", "ForLinux", "ForMacOS"].includes($platform) &&
-        css`
-          background-image: url(${$icon});
-        `}
-    }
-  }
+          &:hover {
+            background-color: #000000;
+          }
+        `
+      : $variant === "tertiary"
+      ? css`
+          border: 1px solid #aaaaaa;
+          color: #ffffff;
+          transition: filter 0.2s, border-color 0.2s;
+
+          &:hover {
+            border-color: #ff6f3d;
+          }
+        `
+      : $variant === "quaternary"
+      ? css`
+          color: #444444;
+          background-color: rgba(255, 255, 255, 0.9);
+          transition: filter 0.2s, color 0.2s, background-color 0.2s;
+
+          &:hover {
+            color: #000000;
+            background-color: #ffffff;
+          }
+        `
+      : null}
+
+  ${({ $platform, $variant, $imageSrc }) =>
+    $platform === "windows"
+      ? css`
+          &::before {
+            content: "";
+            display: inline-flex;
+            align-items: center;
+            margin-right: 8px;
+            width: 32px;
+            height: 32px;
+            background-image: url("/images/ui/download-button/windows.svg");
+          }
+        `
+      : $platform === "linux"
+      ? css`
+          &::before {
+            content: "";
+            display: inline-flex;
+            align-items: center;
+            margin-right: 8px;
+            width: 32px;
+            height: 32px;
+            background-image: ${$variant === "primary" ||
+            $variant === "quaternary"
+              ? "url('/images/ui/download-button/linux.svg')"
+              : "url('/images/ui/download-button/linux-white.svg')"};
+          }
+        `
+      : $platform === "macos"
+      ? css`
+          &::before {
+            content: "";
+            display: inline-flex;
+            align-items: center;
+            margin-right: 8px;
+            width: 32px;
+            height: 32px;
+            background-image: ${$variant === "primary" ||
+            $variant === "quaternary"
+              ? "url('/images/ui/download-button/macos.svg')"
+              : "url('/images/ui/download-button/macos-white.svg')"};
+          }
+        `
+      : $platform === "app-store"
+      ? css`
+          background-image: ${$imageSrc && `url(${$imageSrc})`};
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100% 32px;
+        `
+      : $platform === "google-play"
+      ? css`
+          background-image: ${$imageSrc && `url(${$imageSrc})`};
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100% 32px;
+        `
+      : $platform === "snap-store"
+      ? css`
+          background-image: ${$variant === "primary" ||
+          $variant === "quaternary"
+            ? "url('/images/ui/download-button/snap-store.svg')"
+            : "url('/images/ui/download-button/snap-store-white.svg')"};
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100% 32px;
+        `
+      : null}
 `;
+
+export { StyledDownloadButton };

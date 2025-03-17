@@ -1,21 +1,26 @@
 import { useTranslation } from "next-i18next";
 import { StyledDownloadButton } from "./DownloadButton.styled";
-import { IDownloadButton, IPlatformData } from "./DownloadButton.types";
+import { IDownloadButton } from "./DownloadButton.types";
 
 const DownloadButton = ({
   id,
   className,
   variant = "primary",
-  platform = "ForWindows",
+  platform,
   href,
-  target = "_blank",
+  target,
   rel,
   title,
 }: IDownloadButton) => {
   const { t } = useTranslation("DownloadButton");
-  const platformData = t(platform, { returnObjects: true }) as IPlatformData;
-  const theme =
-    variant === "primary" || variant === "quaternary" ? "dark" : "light";
+
+  const imageSrc = ["app-store", "google-play"].includes(platform)
+    ? t(
+        `${platform}.${
+          ["primary", "quaternary"].includes(variant) ? "dark" : "light"
+        }`,
+      )
+    : undefined;
 
   return (
     <StyledDownloadButton
@@ -23,13 +28,13 @@ const DownloadButton = ({
       className={className}
       $variant={variant}
       $platform={platform}
-      $icon={platformData?.icon?.[theme]}
-      href={href}
-      target={target === "_self" ? undefined : target}
+      href={href ?? ""}
+      target={target}
       rel={!rel && target === "_blank" ? "noopener noreferrer" : rel}
       title={title}
+      $imageSrc={imageSrc}
     >
-      <span>{platformData?.text}</span>
+      {["windows", "macos", "linux"].includes(platform) && t(platform)}
     </StyledDownloadButton>
   );
 };

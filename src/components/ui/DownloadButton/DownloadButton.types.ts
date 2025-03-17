@@ -1,38 +1,24 @@
 export interface IDownloadButton {
-  //** The id of the download button. */
+  /** The unique identifier. */
   id?: string;
-  /** The class name of the download button. */
+  /** Additional CSS class names. */
   className?: string;
-  /** The variant of the download button. Default: "primary". */
-  variant: "primary" | "secondary" | "tertiary" | "quaternary";
-  //** The platform the download button is for. Default: "ForWindows". */
+  /** The visual style variant. Default: "primary". */
+  variant?: "primary" | "secondary" | "tertiary" | "quaternary";
+  /** The platform for which the download button is intended. */
   platform:
-    | "ForWindows"
-    | "ForLinux"
-    | "ForMacOS"
-    | "AppStore"
-    | "GooglePlay"
-    | "SnapStore";
-  //** The URL the download button points to. */
+    | "windows"
+    | "linux"
+    | "macos"
+    | "app-store"
+    | "google-play"
+    | "snap-store";
+  /** The URL to link to. */
   href: string;
-  //** Specifies where to open the linked document. */
+  /** Specifies where to open the linked document. If `rel` is not provided, it will default to `"noopener noreferrer"`. */
   target?: "_self" | "_blank" | "_parent" | "_top";
-  //** Specifies the relationship between the current page and the linked page. */
+  /** Specifies the relationship between the current page and the linked page. */
   rel?: string;
-  //** The title attribute of the download button. */
+  /** The title attribute. */
   title?: string;
-  //** The icon of donwload button */
-  icon?: string;
-}
-
-export interface IPlatformData {
-  //** The text of the download button. */
-  text?: string;
-  //** The icon of the download button. */
-  icon?: {
-    //** The light icon of the download button. */
-    light?: string;
-    //** The dark icon of the download button. */
-    dark?: string;
-  };
 }
