@@ -1,4 +1,6 @@
-export const items = [
+import { ILearnMoreItem } from "../LearnMore.types";
+
+export const items: ILearnMoreItem[] = [
   {
     imgUrl: "/images/templates/office-for-moodle/learn-more/story-1.jpg",
     heading: "CustomerTestimonial",

@@ -6,8 +6,7 @@ import { ChooseSolution } from "@src/components/widgets/ChooseSolution";
 import { items } from "./data/items";
 
 const GetStarted = () => {
-  const main = useTranslation("main");
-  const collaboration = useTranslation("collaboration-rooms");
+  const { t } = useTranslation("collaboration-rooms");
 
   return (
     <Section
@@ -19,28 +18,28 @@ const GetStarted = () => {
           level={2}
           size={2}
           textAlign="center"
-          label={main.t("GetStartedAndChooseWhereToWork")}
+          label={t("GetStartedAndChooseWhereToWork")}
         />
 
         <ChooseSolution
-          items={items[0].items.map(({ imgUrl, heading, text, links }) => ({
+          items={items.items.map(({ imgUrl, heading, text, links }) => ({
             imgUrl,
-            heading: collaboration.t(heading),
-            text: collaboration.t(text),
+            heading: t(heading),
+            text: t(text),
             links: links.map(({ id, name, url }) => ({
               id,
-              name: collaboration.t(name),
+              name: t(name),
               url,
             })),
           }))}
-          largeItems={items[0].largeItems.map(
+          largeItems={items.largeItems.map(
             ({ imgUrl, heading, text, links }) => ({
               imgUrl,
-              heading: main.t(heading),
-              text: main.t(text),
+              heading: t(heading),
+              text: t(text),
               links: links.map(({ id, name, url }) => ({
                 id,
-                name: main.t(name),
+                name: t(name),
                 url,
               })),
             }),

@@ -85,7 +85,7 @@ const StyledHeroImage = styled.div<{
   background-size: 672px 730px;
   background-repeat: no-repeat;
   background-position: 100% 0;
-  background-image: url(${(props) => props.$imgUrl});
+  background-image: url(${({ $imgUrl }) => $imgUrl});
 
   ${(props) =>
     props.$imgUrl2x &&

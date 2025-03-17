@@ -1,4 +1,6 @@
-export const items = [
+import { IFaq } from "../Faq.types";
+
+export const items: IFaq[] = [
   {
     label: "HowMuchIsDocSpacePerMonth?",
     text: "ONLYOFFICEDocSpacePrice",

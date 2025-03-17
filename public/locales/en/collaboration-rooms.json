@@ -3,7 +3,7 @@
   "PageDescription": "Enjoy stress-free co-editing in ONLYOFFICE DocSpace. Easily get any group work or project done.",
 
   "WorkTogetherBetterInCollaborationRooms": "Work together better in <0>collaboration rooms</0>",
-  "EnjoyStressFreeCoEditing":"Enjoy stress-free co-editing in ONLYOFFICE DocSpace",
+  "EnjoyStressFreeCoEditing": "Enjoy stress-free co-editing in ONLYOFFICE DocSpace",
   "EasilyInteractWithThirdParties": "Easily interact with third-parties in ONLYOFFICE DocSpace",
 
   "HeroImgUrl": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header.png",
@@ -26,7 +26,7 @@
   "SecureImgUrl": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents.png",
   "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents@2x.png",
   "ConvenientForMultipleCoAuthors": "Convenient for multiple co-authors",
-  "CollaborateEffectively":"Collaborate effectively to get work done faster.",
+  "CollaborateEffectively": "Collaborate effectively to get work done faster.",
   "CostEffectiveForAnyBudget": "Cost-effective for any budget",
   "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors.png",
   "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors@2x.png",
@@ -37,6 +37,7 @@
   "RegisterAFreeAccount": "Register a free account",
   "TryOnPremise": "Try on-premise",
 
+  "GetStartedAndChooseWhereToWork": "Get started and choose where to work",
   "OnPremisesOrInTheCloud": "On-premises or in the cloud",
   "CreateRoomsWithinYourSecureDocSpace": "Create rooms within your secure DocSpace, invite people, view, edit, and collaborate on all kinds of documents from any desktop or mobile device.",
   "StartWithYourFreeCloudAccount": "Start with your free cloud account",
@@ -47,6 +48,12 @@
   "InThePlatformYouBuild": "In the platform you build",
   "EmbedRoomsOrTheWholeDocSpace": "Embed rooms or the whole DocSpace into your service to provide document storing and collaboration capabilities to your customers under your brand.",
   "LearnMore": "Learn more",
+  "FromYourPC": "From your PC",
+  "EditDocsOfflineWithFreeOfficeApps": "Edit docs offline with free office apps for Windows, Linux, and macOS",
+  "DownloadNow": "Download now",
+  "FromYourMobileDevices": "From your mobile devices",
+  "WorkOnDocumentsOnTheGoWithFreeApps": "Work on documents on the go with free apps for iOS and Android devices",
+  "InstallNow": "Install now",
 
   "LearnMoreHeading": "Learn more about DocSpace Collaboration rooms",
   "CustomerTestimonial": "Customer testimonial",
@@ -61,6 +68,7 @@
   "ExploreTheToolsetAndCollaborativeFeatures": "Explore the toolset and collaborative features available in the editors",
   "HelpCenterLink": "https://helpcenter.onlyoffice.com/docs/userguides",
 
+  "GetAnswersToTheMostPopularQuestions": "Frequently Asked Questions",
   "HowMuchIsDocSpacePerMonth": "How much is DocSpace per month?",
   "ONLYOFFICEDocSpacePrice": "ONLYOFFICE DocSpace starts at $20 per admin per month. Learn more about DocSpace <0>pricing and plans</0>.",
   "IsThereASelfHostedVersion": "Is there a self-hosted version of ONLYOFFICE DocSpace?",

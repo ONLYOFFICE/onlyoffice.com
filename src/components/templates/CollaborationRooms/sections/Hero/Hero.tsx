@@ -10,16 +10,10 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { List } from "@src/components/widgets/List";
 import { Button } from "@src/components/ui/Button";
+import { items } from "./data/items";
 
 const Hero = () => {
   const { t } = useTranslation("collaboration-rooms");
-
-  const items = [
-    { label: t("IdealForTeamwork") },
-    { label: t("SecureForSensitiveDocuments") },
-    { label: t("ConvenientForMultipleCoAuthors") },
-    { label: t("CostEffectiveForAnyBudget") },
-  ];
 
   return (
     <StyledHero
@@ -39,7 +33,12 @@ const Hero = () => {
               />
             </Heading>
             <Text size={1} label={t("EnjoyStressFreeCoEditing")} />
-            <List items={items} className="header-list" />
+            <List
+              items={items.map(({ label }) => ({
+                label: t(label),
+              }))}
+              className="header-list"
+            />
             <Button
               id="create-free-account"
               className="header-button"
