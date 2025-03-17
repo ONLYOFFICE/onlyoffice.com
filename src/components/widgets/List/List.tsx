@@ -4,10 +4,10 @@ import { IList } from "./List.types";
 const List = ({
   items,
   className,
-  isBullet = true,
   bulletType = "rhombus",
   color,
   gap,
+  fontSize,
   lineHeight,
 }: IList) => {
   return (
@@ -15,7 +15,7 @@ const List = ({
       {items.map(({ label }, index) => (
         <StyledListItem
           key={index}
-          $isBullet={isBullet}
+          $fontSize={fontSize}
           $bulletType={bulletType}
           $color={color}
           $lineHeight={lineHeight}

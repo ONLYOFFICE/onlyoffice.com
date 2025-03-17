@@ -29,9 +29,6 @@ export default {
     lineHeight: {
       control: { type: "text" },
     },
-    isBullet: {
-      control: { type: "boolean" },
-    },
     bulletType: {
       control: { type: "radio" },
       options: ["rhombus", "check"],

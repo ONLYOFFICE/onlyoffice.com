@@ -3,7 +3,7 @@ import { IList } from "./List.types";
 import { device } from "@src/utils/device";
 
 export const StyledList = styled.ul<{
-  $gap?: string;
+  $gap: IList["gap"];
 }>`
   list-style: none;
   font-size: 16px;
@@ -18,26 +18,25 @@ export const StyledList = styled.ul<{
 `;
 
 export const StyledListItem = styled.li<{
-  $isBullet?: boolean;
-  $bulletType?: IList["bulletType"];
-  $color?: string;
-  $paddingBottom?: string;
-  $lineHeight?: string;
+  $fontSize: IList["fontSize"];
+  $bulletType: IList["bulletType"];
+  $color: IList["color"];
+  $lineHeight?: IList["lineHeight"];
 }>`
+  font-size: ${({ $color }) => $color || "#333"};
   color: ${({ $color }) => $color || "#333"};
   line-height: ${({ $lineHeight }) => $lineHeight || "1.5em"};
   position: relative;
 
   &:last-child {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
   }
 
-  ${({ $isBullet, $bulletType }) =>
-    $isBullet &&
+  ${({ $bulletType }) =>
     css`
       &::before {
         content: "";
-        display: ${($isBullet) => ($isBullet ? "inline-block" : "none")};
+        display: inline-block;
 
         ${$bulletType === "rhombus" &&
         css`
@@ -49,7 +48,6 @@ export const StyledListItem = styled.li<{
           -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
         `}
-
         ${$bulletType === "check" &&
         css`
           background: url(../images/icons/check-dark.svg) no-repeat 0 0;
@@ -60,7 +58,7 @@ export const StyledListItem = styled.li<{
           -ms-transform: rotate(0deg);
           -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-        `}
+        `};
       }
     `}
 
