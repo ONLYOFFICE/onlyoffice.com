@@ -15,7 +15,7 @@ export const items: IGetStarted = {
         {
           id: "deploy-on-your-own-server",
           name: "DeployOnYourOwnServer",
-          url: "/docspace-registration",
+          url: "/download#docspace-enterprise",
         },
       ],
     },
