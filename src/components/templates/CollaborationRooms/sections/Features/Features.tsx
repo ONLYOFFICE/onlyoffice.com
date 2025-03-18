@@ -17,13 +17,13 @@ const Features = () => {
     >
       <Container>
         <StyledFeaturesWrapper>
-          {items.map(({ title, text, link, image, ...rest }, index) => (
+          {items.map(({ title, text, links, image, ...items }, index) => (
             <FeatureTextImage
               key={index}
-              {...rest}
+              {...items}
               title={t(title)}
               text={t(text)}
-              link={link && { ...link, label: t(link.label) }}
+              links={links?.map((link) => ({ ...link, label: t(link.label) }))}
               image={{
                 url: t(image.url),
                 url2x: image.url2x && t(image.url2x),
