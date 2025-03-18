@@ -32,14 +32,8 @@ export default {
       control: { type: "select" },
       options: ["default", "success"],
     },
-    cols: {
-      control: { type: "number" },
-    },
-    rows: {
-      control: { type: "number" },
-    },
-    maxLength: {
-      control: { type: "number" },
+    fullWidth: {
+      control: { type: "boolean" },
     },
     required: {
       control: { type: "boolean" },
@@ -60,12 +54,13 @@ const Template: StoryFn<ITextArea> = (args: ITextArea) => <TextArea {...args} />
 
 export const Default = Template.bind({});
 Default.args = {
-  placeholder: "Text input",
+  label: "Textarea",
   variant: "default",
 };
 
 export const Success = Template.bind({});
 Success.args = {
-  placeholder: "Text input",
+  label: "Textarea",
+  value: "Correct text",
   variant: "success",
 };

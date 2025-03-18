@@ -1,86 +1,136 @@
-import { forwardRef, useState, FC } from "react";
-import { StyledInput, InputWrapper, InputLabel, ErrorText } from "./Input.styled";
+import { forwardRef, useState, useEffect } from "react";
+import {
+  StyledInput,
+  StyledInputWrapper,
+  StyledInputLabel,
+  StyledErrorText,
+  StyledToggleButton,
+} from "./Input.styled";
 import { IInput } from "./Input.types";
 
-const Input: FC<IInput> = ({
-  id,
-  className,
-  label,
-  placeholder,
-  tabIndex,
-  variant: initialVariant,
-  type,
-  required,
-  name,
-  onFocus,
-  onChange,
-  onKeyDown,
-  value,
-}) => {
-  const [variant, setVariant] = useState(initialVariant);
-  const [isFocused, setIsFocused] = useState(false);
-  const [inputValue, setInputValue] = useState(value || "");
-  const [errorMessage, setErrorMessage] = useState("");
+const Input = forwardRef<HTMLInputElement, IInput>(
+  (
+    {
+      id,
+      className,
+      label,
+      placeholder,
+      tabIndex,
+      variant = "default",
+      type = "text",
+      required,
+      onFocus,
+      onChange,
+      onKeyDown,
+      value,
+      fullWidth,
+    },
+    ref,
+  ) => {
+    const [isFocused, setIsFocused] = useState(false);
+    const [inputValue, setInputValue] = useState(value || "");
+    const [currentType, setCurrentType] = useState(type);
+    const [errorMessage, setErrorMessage] = useState("");
+    const [inputVariant, setInputVariant] = useState(variant);
+    const rightSide =
+      type == "password" || (type == "text" && id == "search") ? true : false;
 
-  const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
-    setIsFocused(true);
-    if (onFocus) onFocus(e);
-  };
+    useEffect(() => {
+      setInputValue(value || "");
+    }, [value]);
 
-  const validateInput = (value: string) => {
-    if (required) {
-      if (!value.trim()) {
+    const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
+      setIsFocused(true);
+      if (onFocus) onFocus(e);
+    };
+
+    const validateInput = (value: string) => {
+      if (required && !value.trim()) {
         return "error";
       }
-      return "success";
-    }
-    
-    return value.trim() ? "success" : "default";
-  };
+      return value.trim() ? "success" : "default";
+    };
 
-  const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
-    setIsFocused(false);
-    const newVariant = validateInput(inputValue?.toString() || '');
-    setVariant(newVariant);
-    setErrorMessage(newVariant === "error" ? `${label} is empty` : "");
-  };
+    const handleBlur = () => {
+      setIsFocused(false);
+      const newVariant = validateInput(inputValue?.toString() || "");
+      setInputVariant(newVariant);
+      setErrorMessage(newVariant === "error" ? `${label} is empty` : "");
+    };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInputValue(e.target.value);
-    if (onChange) onChange(e);
-  };
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      setInputValue(e.target.value);
+      if (onChange) onChange(e);
+    };
 
-  const isFloating = isFocused || (inputValue !== undefined && inputValue.toString().length > 0);
+    const togglePasswordVisibility = () => {
+      setCurrentType((prevType) =>
+        prevType === "password" ? "text" : "password",
+      );
+    };
 
-  return (
-    <InputWrapper>
-      {label && (
-        <InputLabel 
-          htmlFor={id} 
-          isFloating={isFloating} 
-          variant={variant || 'default'}
+    const onButtonToggle = () => {
+      if (id === "password") {
+        togglePasswordVisibility();
+      } else {
+        setInputValue("");
+        setInputVariant("default");
+      }
+    };
+
+    const isFloating =
+      isFocused ||
+      (inputValue !== undefined && inputValue.toString().length > 0);
+
+    return (
+      <StyledInputWrapper $variant={inputVariant} $fullWidth={fullWidth}>
+        <StyledInputLabel
+          htmlFor={id}
+          $isFloating={isFloating}
+          $variant={inputVariant}
         >
           {label}
           {required && <span>*</span>}
-        </InputLabel>
-      )}
-      <StyledInput
-        id={id}
-        className={className}
-        tabIndex={tabIndex}
-        variant={variant}
-        onChange={handleChange}
-        onFocus={handleFocus}
-        onBlur={handleBlur}
-        onKeyDown={onKeyDown}
-        placeholder={isFocused ? placeholder : ''}
-        required={required}
-        type={type}
-        value={inputValue}
-      />
-      {variant === 'error' && <ErrorText>{errorMessage}</ErrorText>}
-    </InputWrapper>
-  );
-};
+        </StyledInputLabel>
+        <StyledInput
+          id={id}
+          ref={ref}
+          className={className}
+          tabIndex={tabIndex}
+          onChange={handleChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          onKeyDown={onKeyDown}
+          placeholder={isFocused ? placeholder : ""}
+          required={required}
+          type={currentType}
+          value={inputValue}
+          $fullWidth={fullWidth}
+          $hasRightSide={!!rightSide}
+        />
+        {rightSide && (
+          <StyledToggleButton
+            $id={id}
+            type="button"
+            $type={currentType}
+            onClick={onButtonToggle}
+            aria-label={
+              currentType === "password"
+                ? "Show password"
+                : currentType === "text" && id === "password"
+                ? "Hide password"
+                : ""
+            }
+          />
+        )}
+        {inputVariant === "error" && (
+          <StyledErrorText>{errorMessage}</StyledErrorText>
+        )}
+      </StyledInputWrapper>
+    );
+  },
+);
+
+Input.displayName = "Input";
 
 export { Input };

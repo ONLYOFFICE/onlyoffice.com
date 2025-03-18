@@ -1,47 +1,50 @@
 import styled from "styled-components";
+import { device } from "@src/utils/device";
+import { ICheckbox } from "./Checkbox.types";
 
-export const InputWrapper = styled.div`
+export const StyledCheckboxWrapper = styled.div`
   align-items: center;
   display: flex;
   margin: 0 0 24px;
   position: relative;
   gap: 8px;
+  width: fit-content;
 `;
 
-export const InputLabel = styled.label`
+export const StyledCheckboxLabel = styled.label`
   color: #666666;
   font-size: 16px;
   line-height: 1.6em;
   background: transparent;
   pointer-events: none;
-  @media screen and (max-width: 592px) {
+  @media ${device.mobile} {
     font-size: 14px;
   }
 `;
 
-export const StyledCheckbox = styled.span<{ checked: boolean }>`
+export const StyledCheckbox = styled.span<{ $checked: ICheckbox["checked"] }>`
   -webkit-appearance: none;
   width: 24px;
   height: 24px;
   border: 1px solid;
   border-radius: 3px;
   outline: none;
-  margin: 8px 0;
   box-sizing: border-box;
   display: inline-block;
   cursor: pointer;
   border-color: ${(props) => {
-    if (props.checked) return "#8BB825";
+    if (props.$checked) return "#8BB825";
     return "#aaaaaa";
   }};
   background-color: ${(props) => {
-    if (props.checked) return "#f9feef";
+    if (props.$checked) return "#f9feef";
     return "#f9f9f9";
   }};
+  transition: all 0.2s ease-in-out;
 
   &:before {
-    content: ${(props) => (props.checked ? '""' : "none")};
-    display: ${(props) => (props.checked ? "block" : "none")};
+    content: ${(props) => (props.$checked ? '""' : "none")};
+    display: ${(props) => (props.$checked ? "block" : "none")};
     width: 6px;
     height: 13px;
     border: 0 solid #8bb825;
@@ -53,6 +56,6 @@ export const StyledCheckbox = styled.span<{ checked: boolean }>`
   }
 
   &:hover {
-    border-color: ${(props) => (props.checked ? "#8bb825" : "#666666")};
+    border-color: ${(props) => (props.$checked ? "#8bb825" : "#666666")};
   }
 `;

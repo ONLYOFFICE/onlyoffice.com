@@ -1,6 +1,7 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { Checkbox } from "./Checkbox";
 import { ICheckbox } from "./Checkbox.types";
+import { useState } from "react";
 
 export default {
   title: "UI/Checkbox",
@@ -25,12 +26,9 @@ export default {
     tabIndex: {
       control: { type: "number" },
     },
-    type: {
-      control: { type: "select" },
-      options: ["checkbox"],
-    },
     checked: {
       control: { type: "boolean" },
+      options: [true, false],
     },
     onChange: {
       action: "clicked",
@@ -38,7 +36,13 @@ export default {
   },
 } as Meta<typeof Checkbox>;
 
-const Template: StoryFn<ICheckbox> = (args: ICheckbox) => <Checkbox {...args} />;
+const Template: StoryFn<ICheckbox> = (args) => {
+  const [isChecked, setIsChecked] = useState(args.checked || false);
+
+  const handleChange = () => setIsChecked(!isChecked);
+
+  return <Checkbox {...args} checked={isChecked} onChange={handleChange} />;
+};
 
 export const Default = Template.bind({});
 Default.args = {
@@ -51,4 +55,3 @@ Checked.args = {
   label: "Checkbox input",
   checked: true,
 };
-

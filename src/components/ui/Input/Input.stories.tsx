@@ -30,11 +30,11 @@ export default {
     },
     type: {
       control: { type: "select" },
-      options: ["text"],
+      options: ["text", "password"],
     },
     variant: {
       control: { type: "select" },
-      options: ["default", "success"],
+      options: ["default", "success", "error"],
     },
     required: {
       control: { type: "boolean" },
@@ -48,6 +48,12 @@ export default {
     onChange: {
       action: "clicked",
     },
+    hasRightSide: {
+      control: { type: "boolean" },
+    },
+    fullWidth: {
+      control: { type: "boolean" },
+    },
   },
 } as Meta<typeof Input>;
 
@@ -55,18 +61,20 @@ const Template: StoryFn<IInput> = (args: IInput) => <Input {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  placeholder: "Text input",
+  label: "Text input",
+  placeholder: "Put some text",
   variant: "default",
 };
 
 export const Error = Template.bind({});
 Error.args = {
-  placeholder: "Text input",
+  label: "Text input",
   variant: "error",
 };
 
 export const Success = Template.bind({});
 Success.args = {
-  placeholder: "Text input",
+  label: "Text input",
+  value: "Correct text",
   variant: "success",
 };

@@ -1,40 +1,57 @@
-import { forwardRef, useState, FC } from "react";
-import { StyledCheckbox, InputWrapper, InputLabel } from "./Checkbox.styled";
+import { forwardRef, useState } from "react";
+import {
+  StyledCheckbox,
+  StyledCheckboxWrapper,
+  StyledCheckboxLabel,
+} from "./Checkbox.styled";
 import { ICheckbox } from "./Checkbox.types";
 
-const Checkbox: FC<ICheckbox> = ({
-  id,
-  label,
-  tabIndex,
-  type = "checkbox",
-  checked,
-  defaultChecked = false,
-  onChange,
-}) => {
-    const [isChecked, setIsChecked] = useState(defaultChecked);
+const Checkbox = forwardRef<HTMLInputElement, ICheckbox>(
+  ({ id, label, tabIndex, checked, onChange }, ref) => {
+    const [isChecked, setIsChecked] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setIsChecked(e.target.checked);
-      onChange && onChange(e);
+      if (onChange) onChange(e);
     };
-  
+
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+      if (e.key === " " || e.key === "Enter") {
+        handleChange({
+          target: { checked: !currentChecked },
+        } as React.ChangeEvent<HTMLInputElement>);
+        e.preventDefault();
+      }
+    };
+
     const isControlled = checked !== undefined;
     const currentChecked = isControlled ? checked : isChecked;
-  
+
     return (
-      <InputWrapper>
+      <StyledCheckboxWrapper
+        tabIndex={tabIndex}
+        onKeyDown={handleKeyDown}
+        onClick={() =>
+          handleChange({
+            target: { checked: !currentChecked },
+          } as React.ChangeEvent<HTMLInputElement>)
+        }
+      >
         <input
           id={id}
-          tabIndex={tabIndex}
-          type={type}
+          ref={ref}
+          tabIndex={-1}
+          type="checkbox"
           checked={currentChecked}
           onChange={handleChange}
           hidden
         />
-        <StyledCheckbox checked={currentChecked} onClick={() => handleChange({ target: { checked: !currentChecked } } as React.ChangeEvent<HTMLInputElement>)} />
-        <InputLabel htmlFor={id}>{label}</InputLabel>
-      </InputWrapper>
-  );
-};
+        <StyledCheckbox $checked={currentChecked} />
+        <StyledCheckboxLabel htmlFor={id}>{label}</StyledCheckboxLabel>
+      </StyledCheckboxWrapper>
+    );
+  },
+);
 
+Checkbox.displayName = "Checkbox";
 export { Checkbox };
