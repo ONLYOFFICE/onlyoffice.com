@@ -3,36 +3,20 @@ import {
   StyledFeatureImage,
   StyledFeatureImageContent,
   StyledFeatureImageText,
-  StyledFeatureImageTitle,
   StyledFeatureImageWrapper,
 } from "./FeatureTextImage.styled";
 import { IFeatureTextImage } from "./FeatureTextImage.types";
+import { Heading } from "@src/components/ui/Heading";
 
 const FeatureTextImage = ({
   id,
   className,
-  position,
-  contentWidth,
-  gap,
-  tabletGap,
-  mobileGap,
-  textGap,
-  tabletTextGap,
-  mobileTextGap,
+  position = "left",
   title,
-  titleColor,
-  titleLineHeight,
-  titleFontSize,
-  titleTabletFontSize,
-  titleMobileFontSize,
   text,
-  textColor,
-  textLineHeight,
-  textTabletFontSize,
-  textMobileFontSize,
-  link,
+  links,
   image,
-  imageWidth,
+  imageWidth = 640,
   imageHeight,
 }: IFeatureTextImage) => {
   return (
@@ -40,42 +24,21 @@ const FeatureTextImage = ({
       id={id}
       className={className}
       $position={position}
-      $width={contentWidth}
-      $gap={gap}
-      $tabletGap={tabletGap}
-      $mobileGap={mobileGap}
     >
-      <StyledFeatureImageContent
-        $textGap={textGap}
-        $tabletTextGap={tabletTextGap}
-        $mobileTextGap={mobileTextGap}
-        $position={position}
-      >
-        <StyledFeatureImageTitle
-          $titleColor={titleColor}
-          $titleLineHeight={titleLineHeight}
-          $fontSize={titleFontSize}
-          $tabletFontSize={titleTabletFontSize}
-          $mobileFontSize={titleMobileFontSize}
-          label={title}
-        />
-        <StyledFeatureImageText
-          $textColor={textColor}
-          $textLineHeight={textLineHeight}
-          $tabletFontSize={textTabletFontSize}
-          $mobileFontSize={textMobileFontSize}
-          label={text}
-        />
-        {link && (
+      <StyledFeatureImageContent $position={position}>
+        <Heading level={3} label={title} />
+        <StyledFeatureImageText label={text} />
+        {links?.map(({ href, label }, index) => (
           <Link
-            href={link.href}
+            key={index}
+            href={href}
             color="#ff6f3d"
             textUnderline
             hover="underline-none"
           >
-            {link.label}
+            {label}
           </Link>
-        )}
+        ))}
       </StyledFeatureImageContent>
       <StyledFeatureImage
         $imageHeight={imageHeight}
