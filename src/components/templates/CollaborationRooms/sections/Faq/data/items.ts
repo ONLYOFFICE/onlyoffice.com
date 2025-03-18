@@ -2,7 +2,7 @@ import { IFaq } from "../Faq.types";
 
 export const items: IFaq[] = [
   {
-    label: "HowMuchIsDocSpacePerMonth?",
+    label: "HowMuchIsDocSpacePerMonth",
     text: "ONLYOFFICEDocSpacePrice",
     links: [{ href: "/docspace-prices.aspx" }],
   },
