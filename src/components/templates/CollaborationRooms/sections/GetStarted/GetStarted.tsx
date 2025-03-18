@@ -11,7 +11,7 @@ const GetStarted = () => {
   return (
     <Section
       tabletSmallSpacing={["72px", "72px"]}
-      bg="linear-gradient(#F8F9F9,#F8F9F900)"
+      background="linear-gradient(#F8F9F9,#F8F9F900)"
     >
       <Container>
         <StyledGetStartedHeading

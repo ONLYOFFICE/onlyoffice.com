@@ -14,7 +14,7 @@ const Enterprise = () => {
 
   return (
     <Section
-      bg="#f9f9f9"
+      background="#f9f9f9"
       desktopSpacing={["112px", "16px"]}
       tabletSpacing={["88px", "16px"]}
       tabletSmallSpacing={["80px", "16px"]}

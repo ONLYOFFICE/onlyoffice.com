@@ -12,7 +12,7 @@ const LearnMore = () => {
   const { t } = useTranslation("collaboration-rooms");
 
   return (
-    <Section tabletSmallSpacing={["72px", "72px"]} bg="#F9F9F9">
+    <Section tabletSmallSpacing={["72px", "72px"]} background="#F9F9F9">
       <Container>
         <StyledLearnMoreHeading
           level={2}
@@ -30,6 +30,7 @@ const LearnMore = () => {
               links={item.links.map((item) => ({
                 href: t(item.href),
                 label: t(item.label),
+                target: item?.target,
               }))}
             />
           ))}

@@ -14,7 +14,7 @@ const Assignments = () => {
 
   return (
     <Section
-      bg="#f9f9f9"
+      background="#f9f9f9"
       desktopSpacing={["90px", "112px"]}
       mobileSpacing={["0", "48px"]}
     >

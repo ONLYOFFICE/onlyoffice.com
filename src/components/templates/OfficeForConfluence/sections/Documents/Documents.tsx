@@ -9,7 +9,7 @@ const Documents = () => {
   const { t } = useTranslation("office-for-confluence");
 
   return (
-    <Section bg="#f9f9f9">
+    <Section background="#f9f9f9">
       <Container>
         <StyledDocumentsHeading
           level={2}
