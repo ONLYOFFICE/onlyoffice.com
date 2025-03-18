@@ -3,13 +3,12 @@ import { Container } from "@src/components/ui/Container";
 import {
   StyledTeamworkHeading,
   StyledTeamworkText,
-  StyledCardText,
-  StyledCardTitle,
   StyledFirstLine,
   StyledSecondLine,
-  StyledTeamworkCard,
 } from "./Teamwork.styled";
 import { Section } from "@src/components/ui/Section";
+import { teamworkItems } from "./data/items";
+import { TeamworkCard } from "./sub-components/TeamworkCard";
 
 const Teamwork = () => {
   const { t } = useTranslation("collaboration-rooms");
@@ -21,6 +20,7 @@ const Teamwork = () => {
     >
       <Container>
         <StyledTeamworkHeading
+          level={2}
           label={t("IdealForTeamwork")}
           textAlign="center"
         />
@@ -29,24 +29,28 @@ const Teamwork = () => {
           label={t("EasilyGetAnyGroupWorkOrProject")}
         />
         <StyledFirstLine>
-          <StyledTeamworkCard $type="education">
-            <StyledCardTitle level={3} label={t("Education")} />
-            <StyledCardText label={t("EducationDesc")} />
-          </StyledTeamworkCard>
-          <StyledTeamworkCard $type="business">
-            <StyledCardTitle level={3} label={t("Business")} />
-            <StyledCardText label={t("BusinessDesc")} />
-          </StyledTeamworkCard>
+          {teamworkItems.firstLineItems.map(
+            ({ type, title, description }, index) => (
+              <TeamworkCard
+                key={index}
+                type={type}
+                title={t(title)}
+                text={t(description)}
+              />
+            ),
+          )}
         </StyledFirstLine>
         <StyledSecondLine>
-          <StyledTeamworkCard $type="individuals">
-            <StyledCardTitle level={3} label={t("Individuals")} />
-            <StyledCardText label={t("IndividualsDesc")} />
-          </StyledTeamworkCard>
-          <StyledTeamworkCard $type="legal">
-            <StyledCardTitle level={3} label={t("Legal")} />
-            <StyledCardText label={t("LegalDesc")} />
-          </StyledTeamworkCard>
+          {teamworkItems.secondLineItems.map(
+            ({ type, title, description }, index) => (
+              <TeamworkCard
+                key={index}
+                type={type}
+                title={t(title)}
+                text={t(description)}
+              />
+            ),
+          )}
         </StyledSecondLine>
       </Container>
     </Section>

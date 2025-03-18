@@ -2,6 +2,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled, { css } from "styled-components";
+import { ITeamworkCard } from "./sub-components/TeamworkCard.types";
 
 const StyledTeamworkHeading = styled(Heading)`
   font-size: 32px;
@@ -93,7 +94,7 @@ const StyledCardText = styled(Text)`
 `;
 
 const StyledTeamworkCard = styled.div<{
-  $type: "education" | "business" | "individuals" | "legal";
+  $type: ITeamworkCard["type"];
 }>`
   padding: 32px;
   border: 1px solid #cccccc;
