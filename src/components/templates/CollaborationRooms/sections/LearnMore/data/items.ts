@@ -9,6 +9,7 @@ export const items: ILearnMoreItem[] = [
       {
         href: "CustomerTestimonialLink",
         label: "ReadStory",
+        target: "_self",
       },
     ],
   },

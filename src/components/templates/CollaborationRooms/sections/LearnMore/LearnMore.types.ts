@@ -3,6 +3,8 @@ export interface IItemLink {
   href: string;
   /** The key for the translation of the link label. */
   label: string;
+  /** The targer of the link. */
+  target?: "_self";
 }
 
 export interface ILearnMoreItem {
