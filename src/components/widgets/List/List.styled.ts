@@ -6,7 +6,6 @@ export const StyledList = styled.ul<{
   $gap: IList["gap"];
 }>`
   list-style: none;
-  font-size: 16px;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: ${({ $gap }) => $gap || "16px"};
@@ -23,10 +22,14 @@ export const StyledListItem = styled.li<{
   $color: IList["color"];
   $lineHeight?: IList["lineHeight"];
 }>`
-  font-size: ${({ $color }) => $color || "#333"};
+  font-size: ${({ $fontSize }) => $fontSize || "16px"};
   color: ${({ $color }) => $color || "#333"};
   line-height: ${({ $lineHeight }) => $lineHeight || "1.5em"};
   position: relative;
+  padding-left: ${({ $bulletType }) =>
+    $bulletType === "rhombus" ? "26px" : "32px"};
+  display: flex;
+  align-items: center;
 
   &:last-child {
     margin-bottom: 0;
@@ -37,16 +40,16 @@ export const StyledListItem = styled.li<{
       &::before {
         content: "";
         display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
 
         ${$bulletType === "rhombus" &&
         css`
           background: #ff6f3d;
           width: 6px;
           height: 6px;
-          margin: 0 20px 3px 0px;
-          -ms-transform: rotate(45deg);
-          -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+          transform: rotate(45deg) translateY(-50%);
         `}
         ${$bulletType === "check" &&
         css`
@@ -54,10 +57,8 @@ export const StyledListItem = styled.li<{
           width: 12px;
           height: 12px;
           background-size: 12px 12px;
-          margin: 0 14px 0 6px;
-          -ms-transform: rotate(0deg);
-          -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+          left: 6px;
+          transform: rotate(0deg) translateY(-50%);
         `};
       }
     `}
