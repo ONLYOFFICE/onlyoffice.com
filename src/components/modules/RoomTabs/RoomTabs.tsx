@@ -5,7 +5,6 @@ import {
   StyledRoomTabs,
   StyledRoomTabsWrapper,
 } from "./RoomTabs.styled";
-import { Text } from "@src/components/ui/Text";
 import { rooms } from "./data/rooms";
 import { IRoomTab } from "./RoomTabs.types";
 import { useRouter } from "next/router";
@@ -19,9 +18,7 @@ const RoomTabs = () => {
       <StyledRoomTabs>
         {rooms.map(({ id, url, label }: IRoomTab, index) => (
           <StyledRoomTab key={index} $active={router.pathname === url}>
-            <Link id={id} href={url}>
-              <Text label={t(label)} />
-            </Link>
+            <Link id={id} href={url} label={t(label)} />
           </StyledRoomTab>
         ))}
       </StyledRoomTabs>
