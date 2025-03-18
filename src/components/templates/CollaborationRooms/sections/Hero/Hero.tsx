@@ -1,16 +1,9 @@
 import { Trans, useTranslation } from "next-i18next";
-import {
-  StyledHero,
-  StyledHeroContent,
-  StyledHeroImage,
-  StyledHeroWrapper,
-} from "./Hero.styled";
+import { StyledHero } from "./Hero.styled";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { List } from "@src/components/widgets/List";
-import { Button } from "@src/components/ui/Button";
-import { items } from "./data/items";
+import { RoomsHero } from "@src/components/widgets/RoomsHero";
+import { hero } from "./data/hero";
 
 const Hero = () => {
   const { t } = useTranslation("collaboration-rooms");
@@ -23,35 +16,24 @@ const Hero = () => {
       mobileSpacing={["96px", "48px"]}
     >
       <Container>
-        <StyledHeroWrapper>
-          <StyledHeroContent>
-            <Heading level={1}>
-              <Trans
-                t={t}
-                i18nKey="WorkTogetherBetterInCollaborationRooms"
-                components={[<Text as="span" color="#FF6F3D" key="0" />]}
-              />
-            </Heading>
-            <Text size={1} label={t("EnjoyStressFreeCoEditing")} />
-            <List
-              items={items.map(({ label }) => ({
-                label: t(label),
-              }))}
-              className="header-list"
+        <RoomsHero
+          title={
+            <Trans
+              t={t}
+              i18nKey="WorkTogetherBetterInCollaborationRooms"
+              components={[<Text as="span" color="#FF6F3D" key="0" />]}
             />
-            <Button
-              id="create-free-account"
-              className="header-button"
-              as="a"
-              href="/docspace-registration.aspx"
-              label={t("CreateFreeAccount")}
-            />
-          </StyledHeroContent>
-          <StyledHeroImage
-            $imgUrl={t("HeroImgUrl")}
-            $imgUrl2x={t("HeroImgUrl2x")}
-          />
-        </StyledHeroWrapper>
+          }
+          text={t(hero.text)}
+          items={hero.items.map(({ label }) => ({
+            label: typeof label === "string" && t(label),
+          }))}
+          button={{ ...hero.button, label: t(hero.button.label) }}
+          imgUrl={t(hero.imgUrl)}
+          imgUrl2x={t(hero.imgUrl2x)}
+          imgWidht={hero.imgWidht}
+          imgHeight={hero.imgHeight}
+        />
       </Container>
     </StyledHero>
   );
