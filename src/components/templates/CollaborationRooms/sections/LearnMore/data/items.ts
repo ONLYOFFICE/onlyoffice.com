@@ -9,7 +9,6 @@ export const items: IBlogCard[] = [
       {
         href: "CustomerTestimonialLink",
         label: "ReadStory",
-        isInternal: true,
       },
     ],
   },
@@ -21,6 +20,7 @@ export const items: IBlogCard[] = [
       {
         href: "MasterONLYOFFICEDocSpaceLink",
         label: "WatchNow",
+        isExternal: true,
       },
     ],
   },
@@ -32,6 +32,7 @@ export const items: IBlogCard[] = [
       {
         href: "HelpCenterLink",
         label: "LearnMore",
+        isExternal: true,
       },
     ],
   },

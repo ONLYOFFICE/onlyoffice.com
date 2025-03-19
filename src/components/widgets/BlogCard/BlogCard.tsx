@@ -35,7 +35,7 @@ const BlogCard = ({
                 <Link
                   href={link.href}
                   label={link.label}
-                  target={link.isInternal ? undefined : "_blank"}
+                  target={link.isExternal ? "_blank" : undefined}
                   display="inline-block"
                   fontSize="14px"
                   lineHeight="21px"

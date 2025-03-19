@@ -31,6 +31,7 @@ const LearnMore = () => {
               links={item.links?.map((item) => ({
                 href: item.href,
                 label: t(item.label),
+                isInternal: item.isExternal,
               }))}
               isLarge
             />

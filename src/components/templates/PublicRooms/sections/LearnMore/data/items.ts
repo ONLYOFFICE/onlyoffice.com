@@ -9,18 +9,19 @@ export const items: IBlogCard[] = [
       {
         href: "BlogLink",
         label: "LearnMore",
-        isInternal: true,
       },
     ],
   },
   {
-    imgUrl: "/images/templates/public-rooms/learn-more/public-rooms-docspace.png",
+    imgUrl:
+      "/images/templates/public-rooms/learn-more/public-rooms-docspace.png",
     heading: "YouTube",
     text: "MasterONLYOFFICEDocSpace",
     links: [
       {
         href: "MasterONLYOFFICEDocSpaceLink",
         label: "WatchNow",
+        isExternal: true,
       },
     ],
   },
@@ -32,7 +33,6 @@ export const items: IBlogCard[] = [
       {
         href: "HelpCenterLink",
         label: "LearnMore",
-        isInternal: true,
       },
     ],
   },
