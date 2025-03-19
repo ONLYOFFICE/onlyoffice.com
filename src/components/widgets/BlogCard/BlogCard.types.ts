@@ -10,7 +10,7 @@ export interface IBlogCard {
   /** The text. */
   text?: string;
   /** The links. */
-  links?: { href: string; label: string; target?: string }[];
+  links?: { href: string; label: string; isInternal?: boolean }[];
   /** The size of the card. */
   isLarge?: boolean;
 }
