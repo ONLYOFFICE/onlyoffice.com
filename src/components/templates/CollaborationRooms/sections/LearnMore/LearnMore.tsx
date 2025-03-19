@@ -26,11 +26,11 @@ const LearnMore = () => {
               key={index}
               imgUrl={item.imgUrl}
               heading={t(item.heading)}
-              text={t(item.text)}
-              links={item.links.map((item) => ({
+              text={t(item.text ?? "")}
+              links={item.links?.map((item) => ({
                 href: t(item.href),
                 label: t(item.label),
-                target: item?.target,
+                isInternal: item.isInternal,
               }))}
             />
           ))}

@@ -34,13 +34,13 @@ const Features = () => {
             <Button
               id="features-register-a-free-account"
               as="a"
-              href="/docspace-registration.aspx"
+              href="/docspace-registration"
               label={t("RegisterAFreeAccount")}
             />
             <Button
               id="features-try-on-premise"
               as="a"
-              href="/download.aspx#docspace-enterprise"
+              href="/download#docspace-enterprise"
               variant="secondary"
               label={t("TryOnPremise")}
             />

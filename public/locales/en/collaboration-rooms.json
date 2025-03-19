@@ -4,7 +4,6 @@
 
   "WorkTogetherBetterInCollaborationRooms": "Work together better in <0>collaboration rooms</0>",
   "EnjoyStressFreeCoEditing": "Enjoy stress-free co-editing in ONLYOFFICE DocSpace",
-  "EasilyInteractWithThirdParties": "Easily interact with third-parties in ONLYOFFICE DocSpace",
 
   "HeroImgUrl": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header.png",
   "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header@2x.png",
@@ -37,24 +36,6 @@
   "RegisterAFreeAccount": "Register a free account",
   "TryOnPremise": "Try on-premise",
 
-  "GetStartedAndChooseWhereToWork": "Get started and choose where to work",
-  "OnPremisesOrInTheCloud": "On-premises or in the cloud",
-  "CreateRoomsWithinYourSecureDocSpace": "Create rooms within your secure DocSpace, invite people, view, edit, and collaborate on all kinds of documents from any desktop or mobile device.",
-  "StartWithYourFreeCloudAccount": "Start with your free cloud account",
-  "DeployOnYourOwnServer": "Deploy on your own server",
-  "InThePlatformYouUse": "In the platform you use",
-  "ConnectDocSpaceToCollaborateOnOfficeDocuments": "Connect DocSpace to collaborate on office documents directly from your business platform: Zoom, Pipedrive, Drupal or WordPress. Make use of Zapier integration to connect DocSpace with thousands of tools your team uses.",
-  "DiscoverAllIntegrations": "Discover all integrations",
-  "InThePlatformYouBuild": "In the platform you build",
-  "EmbedRoomsOrTheWholeDocSpace": "Embed rooms or the whole DocSpace into your service to provide document storing and collaboration capabilities to your customers under your brand.",
-  "LearnMore": "Learn more",
-  "FromYourPC": "From your PC",
-  "EditDocsOfflineWithFreeOfficeApps": "Edit docs offline with free office apps for Windows, Linux, and macOS",
-  "DownloadNow": "Download now",
-  "FromYourMobileDevices": "From your mobile devices",
-  "WorkOnDocumentsOnTheGoWithFreeApps": "Work on documents on the go with free apps for iOS and Android devices",
-  "InstallNow": "Install now",
-
   "LearnMoreHeading": "Learn more about DocSpace Collaboration rooms",
   "CustomerTestimonial": "Customer testimonial",
   "HowKinderhausBerlinSharesAndCollaborates": "How Kinderhaus Berlin shares and collaborates on sensitive files with ONLYOFFICE DocSpace",
@@ -66,13 +47,5 @@
   "WatchNow": "Watch now",
   "HelpCenter": "Help Center",
   "ExploreTheToolsetAndCollaborativeFeatures": "Explore the toolset and collaborative features available in the editors",
-  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docs/userguides",
-
-  "GetAnswersToTheMostPopularQuestions": "Frequently Asked Questions",
-  "HowMuchIsDocSpacePerMonth": "How much is DocSpace per month?",
-  "ONLYOFFICEDocSpacePrice": "ONLYOFFICE DocSpace starts at $20 per admin per month. Learn more about DocSpace <0>pricing and plans</0>.",
-  "IsThereASelfHostedVersion": "Is there a self-hosted version of ONLYOFFICE DocSpace?",
-  "SelfHostedVersion": "Yes, you can download it <0>here</0>.",
-  "WhatIsTheTechnologyStack": "What is the technology stack of ONLYOFFICE DocSpace?",
-  "TheTechnologyStack": "Back-end: С# 9.0, .NET 5.0/.NET Core/ASP.NET Core/MySQL 8.0/Kafka/ElasticSearch <br /> Front-end: ES6, CSS/SASS, React, Mobx, Styled-Components, i18next, Webpack 4/5"
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docs/userguides"
 }

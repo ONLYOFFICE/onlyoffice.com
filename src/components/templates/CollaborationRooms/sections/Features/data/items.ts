@@ -13,13 +13,12 @@ export const items: IFeatureTextImage[] = [
   {
     title: "ConvenientForMultipleCoAuthors",
     text: "CollaborateEffectively",
-    links: [{ label: "LearnMore", href: "/seamless-collaboration.aspx" }],
+    links: [{ label: "LearnMore", href: "/seamless-collaboration" }],
     image: {
       url: "ConvenientImgUrl",
       url2x: "ConvenientImgUrl2x",
     },
     imageHeight: 540,
-    position: "right",
   },
   {
     title: "CostEffectiveForAnyBudget",

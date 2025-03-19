@@ -1,6 +1,6 @@
-import { ILearnMoreItem } from "../LearnMore.types";
+import { IBlogCard } from "@src/components/widgets/BlogCard";
 
-export const items: ILearnMoreItem[] = [
+export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/office-for-moodle/learn-more/story-1.jpg",
     heading: "CustomerTestimonial",
@@ -9,7 +9,7 @@ export const items: ILearnMoreItem[] = [
       {
         href: "CustomerTestimonialLink",
         label: "ReadStory",
-        target: "_self",
+        isInternal: true,
       },
     ],
   },

@@ -31,7 +31,7 @@ const Hero = () => {
           button={{ ...hero.button, label: t(hero.button.label) }}
           imgUrl={t(hero.imgUrl)}
           imgUrl2x={t(hero.imgUrl2x)}
-          imgWidht={hero.imgWidht}
+          imgWidth={hero.imgWidth}
           imgHeight={hero.imgHeight}
         />
       </Container>

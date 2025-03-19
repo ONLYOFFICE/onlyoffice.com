@@ -2,12 +2,17 @@ import {
   StyledCardText,
   StyledCardTitle,
   StyledTeamworkCard,
-} from "../Teamwork.styled";
+} from "./TeamworkCard.styled";
 import { ITeamworkCard } from "./TeamworkCard.types";
 
-const TeamworkCard = ({ type, title, text }: ITeamworkCard) => {
+const TeamworkCard = ({
+  title,
+  text,
+  background,
+  borderColor,
+}: ITeamworkCard) => {
   return (
-    <StyledTeamworkCard $type={type}>
+    <StyledTeamworkCard $background={background} $borderColor={borderColor}>
       <StyledCardTitle level={3} label={title} />
       <StyledCardText label={text} />
     </StyledTeamworkCard>

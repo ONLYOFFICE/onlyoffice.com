@@ -12,10 +12,10 @@ export const hero: IRoomsHero = {
   button: {
     id: "create-free-account",
     label: "CreateFreeAccount",
-    href: "/docspace-registration.aspx",
+    href: "/docspace-registration",
   },
   imgUrl: "HeroImgUrl",
   imgUrl2x: "HeroImgUrl2x",
-  imgWidht: 672,
+  imgWidth: 672,
   imgHeight: 730,
 };

@@ -6,7 +6,7 @@ import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBann
 import { Head } from "@src/components/modules/Head";
 import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
-import { CollaborationRooms } from "@src/components/templates/CollaborationRooms";
+import { CollaborationRoomsTemplate } from "@src/components/templates/CollaborationRooms";
 
 const CollaborationRoomsPage = ({ locale }: ILocale) => {
   const { t } = useTranslation("collaboration-rooms");
@@ -23,7 +23,7 @@ const CollaborationRoomsPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <CollaborationRooms />
+        <CollaborationRoomsTemplate />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -38,8 +38,9 @@ export async function getStaticProps({ locale }: ILocale) {
       ...(await serverSideTranslations(locale, [
         "common",
         "collaboration-rooms",
+        "RoomsGetStarted",
+        "RoomsFaq",
         "RoomTabs",
-        "main",
       ])),
       locale,
     },
