@@ -1,0 +1,48 @@
+{
+  "PageTitle": "Work together according to your goals in custom rooms",
+  "PageDescription": "Edit and collaborate your way in ONLYOFFICE DocSpace. Fine-tune room access with flexible permissions",
+
+  "WorkTogetherAccording": "Work together according to your goals in <0>custom rooms</0>",
+  "EditAndCollaborate": "Edit and collaborate your way in ONLYOFFICE DocSpace",
+  "CreateFreeAccount": "Create free account",
+
+  "HeroImgUrl": "/images/templates/custom-rooms/hero/custom-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/custom-rooms/hero/custom-rooms-header@2x.png",
+
+  "Tailored": "Tailored to any scenario",
+  "Sophisticated": "Sophisticated access settings",
+  "CostEfectiveForAnyBudget": "Cost-effective for any budget",
+
+  "TailoredDesc": "Apply your own settings to use a room for any custom purpose: share content for viewing only, request document editing or reviewing, ask for comments from collaborators or form-filling.",
+  "TailoredImgUrl": "/images/templates/custom-rooms/features/tailored-to-any-scenario.png",
+  "TailoredImgUrl2x": "/images/templates/custom-rooms/features/tailored-to-any-scenario@2x.png",
+
+  "SophisticatedDesc": "Fine-tune room access with a wide range of flexible permissions",
+  "WatchAVideoToLearnMore": "Watch a video to learn more",
+  "SophisticatedImgUrl": "/images/templates/custom-rooms/features/sophisticate-access-settings.png",
+  "SophisticatedImgUrl2x": "/images/templates/custom-rooms/features/sophisticate-access-settings@2x.png",
+
+  "CostEfectiveForAnyBudgetDesc": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses, no matter if it's SMB or a big enterprise. Want to get full control over your corporate data? Deploy DocSpace on your private server.",
+  "CostEfectiveForAnyBudgetImgUrl": "/images/templates/custom-rooms/features/cost-effective-for-any-budget.png",
+  "CostEfectiveForAnyBudgetImgUrl2x": "/images/templates/custom-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "RegisterAFreeAccount": "Register a free account",
+  "TryOnPremise": "Try on-premise",
+
+  "LearnMoreHeading": "Learn more about DocSpace Custom rooms",
+
+  "HelpCenter": "Help Center",
+  "HelpCenterDesc": "Check detailed user guides for effective work",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "Learn more",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Master ONLYOFFICE DocSpace with video guides",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Watch now",
+
+  "CustomerTestimonial": "Customer testimonial",
+  "HowKinderhausBerlinSharesAndCollaborates": "How Kinderhaus Berlin shares and collaborates on sensitive files with ONLYOFFICE DocSpace",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Read story"
+}
