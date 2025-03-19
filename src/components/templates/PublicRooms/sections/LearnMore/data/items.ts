@@ -2,7 +2,7 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 
 export const items: IBlogCard[] = [
   {
-    imgUrl: "/images/templates/public-rooms/learn-more/public-rooms-blog.png",
+    imgUrl: "/images/templates/public-rooms/learn-more/blog.png",
     heading: "Blog",
     text: "BlogDesc",
     links: [
@@ -13,8 +13,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl:
-      "/images/templates/public-rooms/learn-more/public-rooms-docspace.png",
+    imgUrl: "/images/templates/public-rooms/learn-more/docspace.png",
     heading: "YouTube",
     text: "MasterONLYOFFICEDocSpace",
     links: [

@@ -2,7 +2,7 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 
 export const items: IBlogCard[] = [
   {
-    imgUrl: "/images/templates/office-for-moodle/learn-more/story-1.jpg",
+    imgUrl: "/images/templates/collaboration-rooms/learn-more/customers.png",
     heading: "CustomerTestimonial",
     text: "HowKinderhausBerlinSharesAndCollaborates",
     links: [
@@ -13,7 +13,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-moodle/learn-more/story-2.png",
+    imgUrl: "/images/templates/public-rooms/learn-more/docspace.png",
     heading: "YouTube",
     text: "MasterONLYOFFICEDocSpace",
     links: [
@@ -25,7 +25,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-moodle/learn-more/story-3.png",
+    imgUrl: "/images/templates/collaboration-rooms/learn-more/helpcenter.png",
     heading: "HelpCenter",
     text: "ExploreTheToolsetAndCollaborativeFeatures",
     links: [
