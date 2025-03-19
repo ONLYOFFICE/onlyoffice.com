@@ -15,14 +15,23 @@ const FeatureTextImage = ({
   text,
   links,
   image,
+  position = "left",
   imageWidth = 640,
   imageHeight,
 }: IFeatureTextImage) => {
   return (
-    <StyledFeatureImageWrapper id={id} className={className}>
+    <StyledFeatureImageWrapper
+      id={id}
+      className={className}
+      $position={position}
+    >
       <StyledFeatureImageContent>
         <Heading level={3} label={title} />
-        <StyledFeatureImageText label={text} />
+        <StyledFeatureImageText
+          label={text}
+          color="#666666"
+          lineHeight="150%"
+        />
         {links?.map(({ href, label }, index) => (
           <Link
             key={index}

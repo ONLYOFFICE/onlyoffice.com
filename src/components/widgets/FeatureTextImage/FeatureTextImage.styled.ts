@@ -8,28 +8,31 @@ const StyledFeatureImageContent = styled.div`
   flex-direction: column;
   row-gap: 16px;
 
-  @media ${device.tablet} {
-    order: 0;
-  }
-
   @media ${device.mobile} {
     row-gap: 8px;
-    order: 0;
   }
 `;
 
-const StyledFeatureImageWrapper = styled.div`
+const StyledFeatureImageWrapper = styled.div<{
+  $position?: IFeatureTextImage["position"];
+}>`
   max-width: 1120px;
   display: grid;
-  grid-template-columns: 448px auto;
+  grid-template-columns: ${({ $position }) =>
+    $position === "left" ? "448px auto" : "auto 448px"};
   column-gap: 32px;
   align-items: center;
 
+  ${StyledFeatureImageContent} {
+    order: ${({ $position }) => ($position === "left" ? 0 : 2)};
+  }
+
   &:nth-child(even) {
-    grid-template-columns: auto 448px;
+    grid-template-columns: ${({ $position }) =>
+      $position === "left" ? "auto 448px" : "448px auto"};
 
     ${StyledFeatureImageContent} {
-      order: 2;
+      order: ${({ $position }) => ($position === "left" ? 2 : 0)};
     }
 
     @media ${device.tablet} {
@@ -57,9 +60,6 @@ const StyledFeatureImageWrapper = styled.div`
 `;
 
 const StyledFeatureImageText = styled(Text)`
-  color: #666;
-  line-height: 1.5em;
-
   @media ${device.tablet} {
     font-size: 16px;
   }
@@ -75,16 +75,17 @@ const StyledFeatureImage = styled.div<{
   $image: IFeatureTextImage["image"]["url"];
   $image2x: IFeatureTextImage["image"]["url2x"];
 }>`
-  padding-bottom: ${({ $imageHeight, $imageWidth }) =>
-    $imageHeight && $imageWidth
-      ? (($imageHeight / $imageWidth) * 100).toFixed(4) + "%"
-      : "0%"};
+  aspect-ratio: ${({ $imageWidth, $imageHeight }) =>
+    $imageWidth && $imageHeight ? `${$imageWidth} / ${$imageHeight}` : "auto"};
+  /* aspect-ratio: auto; */
   background-image: url(${({ $image }) => $image});
   background-repeat: no-repeat;
   background-size: cover;
 
   @media ${device.tablet} {
-    display: block;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   @media ${device.retina} {
