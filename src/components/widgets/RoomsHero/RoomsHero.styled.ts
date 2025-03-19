@@ -62,7 +62,7 @@ const StyledHeroContent = styled.div`
 const StyledHeroImage = styled.div<{
   $imgUrl: IRoomsHero["imgUrl"];
   $imgUrl2x: IRoomsHero["imgUrl2x"];
-  $imgWidht: IRoomsHero["imgWidht"];
+  $imgWidht: IRoomsHero["imgWidth"];
   $imgHeight: IRoomsHero["imgHeight"];
 }>`
   padding-bottom: ${({ $imgHeight, $imgWidht }) =>
