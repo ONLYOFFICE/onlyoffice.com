@@ -1,0 +1,39 @@
+import { IBlogCard } from "@src/components/widgets/BlogCard";
+
+export const items: IBlogCard[] = [
+  {
+    imgUrl: "/images/templates/public-rooms/learn-more/public-rooms-blog.png",
+    heading: "Blog",
+    text: "BlogDesc",
+    links: [
+      {
+        href: "BlogLink",
+        label: "LearnMore",
+        isInternal: true,
+      },
+    ],
+  },
+  {
+    imgUrl: "/images/templates/public-rooms/learn-more/public-rooms-docspace.png",
+    heading: "YouTube",
+    text: "MasterONLYOFFICEDocSpace",
+    links: [
+      {
+        href: "MasterONLYOFFICEDocSpaceLink",
+        label: "WatchNow",
+      },
+    ],
+  },
+  {
+    imgUrl: "/images/templates/public-rooms/learn-more/tutorial.png",
+    heading: "Tutorial",
+    text: "TutorialDesc",
+    links: [
+      {
+        href: "HelpCenterLink",
+        label: "LearnMore",
+        isInternal: true,
+      },
+    ],
+  },
+];
