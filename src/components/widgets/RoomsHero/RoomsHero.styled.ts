@@ -7,7 +7,7 @@ const StyledHeroWrapper = styled.div`
   grid-template-columns: 448px auto;
   align-items: center;
 
-  @media screen and (max-width: 970px) {
+  @media ${device.tablet} {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -80,26 +80,6 @@ const StyledHeroImage = styled.div<{
         background-image: url(${props.$imgUrl2x});
       }
     `}
-
-  @media ${device.desktop} {
-    background-size: contain;
-    background-position-y: 50%;
-  }
-
-  @media ${device.tablet} {
-    height: 545px;
-  }
-
-  @media ${device.tabletS} {
-    height: 420px;
-    width: 100%;
-    background-position: 50%;
-  }
-
-  @media ${device.mobile} {
-    height: 282px;
-    background-position: 50%;
-  }
 `;
 
 export { StyledHeroWrapper, StyledHeroContent, StyledHeroImage };
