@@ -4,15 +4,11 @@ import styled from "styled-components";
 const StyledFeaturesWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 112px;
+  gap: 72px;
   justify-content: center;
 
-  @media ${device.tablet} {
-    gap: 72px;
-  }
-
   @media ${device.mobile} {
-    gap: 48px;
+    gap: 56px;
   }
 `;
 
