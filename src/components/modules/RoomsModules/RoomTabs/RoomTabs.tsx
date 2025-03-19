@@ -6,7 +6,6 @@ import {
   StyledRoomTabsWrapper,
 } from "./RoomTabs.styled";
 import { rooms } from "./data/rooms";
-import { IRoomTab } from "./RoomTabs.types";
 import { useRouter } from "next/router";
 
 const RoomTabs = () => {
@@ -16,7 +15,7 @@ const RoomTabs = () => {
   return (
     <StyledRoomTabsWrapper>
       <StyledRoomTabs>
-        {rooms.map(({ id, url, label }: IRoomTab, index) => (
+        {rooms.map(({ id, url, label }, index) => (
           <StyledRoomTab key={index} $active={router.pathname === url}>
             <Link id={id} href={url} label={t(label)} />
           </StyledRoomTab>

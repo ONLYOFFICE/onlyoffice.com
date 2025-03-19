@@ -1,1 +1,1 @@
-export { CollaborationRooms } from "./CollaborationRooms";
+export { CollaborationRoomsTemplate } from "./CollaborationRooms";

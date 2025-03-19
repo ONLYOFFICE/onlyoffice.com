@@ -11,14 +11,6 @@ export default {
           "RoomTabs displays a list of room categories as navigation links.",
       },
     },
-    argTypes: {
-      id: {
-        control: { type: "text" },
-      },
-      className: {
-        control: { type: "text" },
-      },
-    },
   },
 } as Meta<typeof RoomTabs>;
 

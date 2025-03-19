@@ -1,4 +1,11 @@
-import { IRoomTab } from "../RoomTabs.types";
+interface IRoomTab {
+  /** The unique identifier. */
+  id: string;
+  /** The tab href */
+  url: string;
+  /** The tab label */
+  label: string;
+}
 
 export const rooms: IRoomTab[] = [
   {
