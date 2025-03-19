@@ -62,13 +62,11 @@ const StyledHeroContent = styled.div`
 const StyledHeroImage = styled.div<{
   $imgUrl: IRoomsHero["imgUrl"];
   $imgUrl2x: IRoomsHero["imgUrl2x"];
-  $imgWidht: IRoomsHero["imgWidth"];
+  $imgWidth: IRoomsHero["imgWidth"];
   $imgHeight: IRoomsHero["imgHeight"];
 }>`
-  padding-bottom: ${({ $imgHeight, $imgWidht }) =>
-    $imgHeight && $imgWidht
-      ? (($imgHeight / $imgWidht) * 100).toFixed(4) + "%"
-      : "0%"};
+  aspect-ratio: ${({ $imgWidth, $imgHeight }) =>
+    $imgWidth && $imgHeight ? `${$imgWidth} / ${$imgHeight}` : "auto"};
   background-image: url(${({ $imgUrl }) => $imgUrl});
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,6 +78,16 @@ const StyledHeroImage = styled.div<{
         background-image: url(${props.$imgUrl2x});
       }
     `}
+
+  @media ${device.tabletS} {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media ${device.mobile} {
+    max-width: 262px;
+  }
 `;
 
 export { StyledHeroWrapper, StyledHeroContent, StyledHeroImage };

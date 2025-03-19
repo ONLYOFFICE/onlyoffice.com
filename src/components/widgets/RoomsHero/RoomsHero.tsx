@@ -16,7 +16,7 @@ const RoomsHero = ({
   items,
   imgUrl,
   imgUrl2x,
-  imgWidth,
+  imgWidth = 672,
   imgHeight = 730,
 }: IRoomsHero) => {
   return (
@@ -32,7 +32,7 @@ const RoomsHero = ({
         <Button id={button.id} as="a" href={button.href} label={button.label} />
       </StyledHeroContent>
       <StyledHeroImage
-        $imgWidht={imgWidth}
+        $imgWidth={imgWidth}
         $imgHeight={imgHeight}
         $imgUrl={imgUrl}
         $imgUrl2x={imgUrl2x}
