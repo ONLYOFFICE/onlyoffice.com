@@ -8,7 +8,6 @@ const StyledCardTitle = styled(Heading)`
   display: flex;
   align-items: center;
   gap: 16px;
-  font-size: 24px;
   line-height: 133%;
   font-weight: 700;
 
@@ -20,14 +19,6 @@ const StyledCardTitle = styled(Heading)`
     background-image: url("/images/templates/collaboration-rooms/ideal-for-teamwork/teamwork-icons.svg");
     background-repeat: no-repeat;
     background-position-y: -20px;
-  }
-
-  @media ${device.tabletS} {
-    font-size: 20px;
-  }
-
-  @media ${device.mobile} {
-    font-size: 18px;
   }
 `;
 
@@ -51,6 +42,8 @@ const StyledTeamworkCard = styled.div<{
   border: 1px solid ${({ $borderColor }) => $borderColor || "#ccc"};
   background: ${({ $background }) => $background || "#fff"};
   border-radius: 6px;
+  color: #666;
+  line-height: 1.5em;
   display: flex;
   flex-direction: column;
   gap: 16px;
