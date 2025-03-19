@@ -23,7 +23,7 @@ export const StyledListItem = styled.li<{
   $lineHeight?: IList["lineHeight"];
 }>`
   font-size: ${({ $fontSize }) => $fontSize || "16px"};
-  color: ${({ $color }) => $color || "#333"};
+  color: ${({ $color }) => $color || "#444444"};
   line-height: ${({ $lineHeight }) => $lineHeight || "1.5em"};
   position: relative;
   padding-left: ${({ $bulletType }) =>
@@ -33,6 +33,20 @@ export const StyledListItem = styled.li<{
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:nth-child(odd):last-child {
+    @media ${device.tabletS} {
+      grid-column: span 2;
+      justify-self: center;
+      width: 50%;
+    }
+
+    @media ${device.mobile} {
+      grid-column: unset;
+      justify-self: unset;
+      width: auto;
+    }
   }
 
   ${({ $bulletType }) =>

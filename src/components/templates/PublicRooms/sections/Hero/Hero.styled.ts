@@ -16,22 +16,10 @@ const StyledHero = styled(Section)`
   @media ${device.tabletS} {
     margin-top: -48px;
     background-position: 26% -564px;
-
-    ul li:nth-child(5) {
-      grid-column: span 2;
-      justify-self: center;
-      width: 50%;
-    }
   }
 
   @media ${device.mobile} {
     background-position: 24% -690px;
-
-    ul li:nth-child(5) {
-      grid-column: unset;
-      justify-self: unset;
-      width: auto;
-    }
   }
 `;
 
