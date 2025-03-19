@@ -30,7 +30,7 @@ const LearnMore = () => {
               links={item.links?.map((item) => ({
                 href: t(item.href),
                 label: t(item.label),
-                isInternal: item.isExternal,
+                isExternal: item.isExternal,
               }))}
             />
           ))}
