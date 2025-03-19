@@ -15,12 +15,20 @@ export default {
     },
   },
   argTypes: {
+    id: {
+      control: "text",
+    },
+    className: {
+      control: "text",
+    },
+    title: {
+      control: "text",
+    },
     text: {
       control: "text",
     },
-    position: {
-      control: { type: "radio" },
-      options: ["left", "right"],
+    links: {
+      control: "object",
     },
     imageWidth: { control: "number" },
     imageHeight: { control: "number" },
@@ -43,11 +51,9 @@ Default.args = {
   },
   imageWidth: 640,
   imageHeight: 518,
-  position: "left",
 };
 
 export const RightPosition = Template.bind({});
 RightPosition.args = {
   ...Default.args,
-  position: "right",
 };

@@ -11,7 +11,6 @@ import { Heading } from "@src/components/ui/Heading";
 const FeatureTextImage = ({
   id,
   className,
-  position = "left",
   title,
   text,
   links,
@@ -20,12 +19,8 @@ const FeatureTextImage = ({
   imageHeight,
 }: IFeatureTextImage) => {
   return (
-    <StyledFeatureImageWrapper
-      id={id}
-      className={className}
-      $position={position}
-    >
-      <StyledFeatureImageContent $position={position}>
+    <StyledFeatureImageWrapper id={id} className={className}>
+      <StyledFeatureImageContent>
         <Heading level={3} label={title} />
         <StyledFeatureImageText label={text} />
         {links?.map(({ href, label }, index) => (

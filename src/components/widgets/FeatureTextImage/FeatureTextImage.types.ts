@@ -15,6 +15,4 @@ export interface IFeatureTextImage {
   imageWidth?: number;
   /** Image height */
   imageHeight?: number;
-  /** Text position. Default: left */
-  position?: "left" | "right";
 }
