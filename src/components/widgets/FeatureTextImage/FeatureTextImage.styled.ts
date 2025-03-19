@@ -10,6 +10,10 @@ const StyledFeatureImageContent = styled.div`
 
   @media ${device.mobile} {
     row-gap: 8px;
+
+    a {
+      font-size: 13px;
+    }
   }
 `;
 

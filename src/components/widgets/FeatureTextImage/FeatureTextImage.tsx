@@ -32,13 +32,14 @@ const FeatureTextImage = ({
           color="#666666"
           lineHeight="150%"
         />
-        {links?.map(({ href, label }, index) => (
+        {links?.map(({ href, label, isExternal }, index) => (
           <Link
             key={index}
             href={href}
             color="#ff6f3d"
             textUnderline
             hover="underline-none"
+            target={isExternal ? "_blank" : undefined}
           >
             {label}
           </Link>

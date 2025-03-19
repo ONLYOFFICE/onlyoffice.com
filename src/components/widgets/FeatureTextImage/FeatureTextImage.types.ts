@@ -8,7 +8,7 @@ export interface IFeatureTextImage {
   /** The text. */
   text: string;
   /** The links. */
-  links?: { href: string; label: string }[];
+  links?: { href: string; label: string; isExternal?: boolean }[];
   /** The image. */
   image: { url: string; url2x?: string };
   /** Image width. Default: 640 */
