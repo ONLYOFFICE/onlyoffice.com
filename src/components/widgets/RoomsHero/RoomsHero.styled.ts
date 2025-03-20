@@ -65,8 +65,10 @@ const StyledHeroImage = styled.div<{
   $imgWidth: IRoomsHero["imgWidth"];
   $imgHeight: IRoomsHero["imgHeight"];
 }>`
-  aspect-ratio: ${({ $imgWidth, $imgHeight }) =>
-    $imgWidth && $imgHeight ? `${$imgWidth} / ${$imgHeight}` : "auto"};
+  padding-bottom: ${({ $imgHeight, $imgWidth }) =>
+    $imgHeight && $imgWidth
+      ? (($imgHeight / $imgWidth) * 100).toFixed(4) + "%"
+      : "0%"};
   background-image: url(${({ $imgUrl }) => $imgUrl});
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,10 +85,19 @@ const StyledHeroImage = styled.div<{
     max-width: 420px;
     width: 100%;
     margin: 0 auto;
+    height: ${({ $imgHeight, $imgWidth }) =>
+      $imgHeight && $imgWidth
+        ? ((420 * $imgHeight) / $imgWidth).toFixed(2) + "px"
+        : "0px"};
+    padding-bottom: 0;
   }
 
   @media ${device.mobile} {
     max-width: 262px;
+    height: ${({ $imgHeight, $imgWidth }) =>
+      $imgHeight && $imgWidth
+        ? ((262 * $imgHeight) / $imgWidth).toFixed(2) + "px"
+        : "0px"};
   }
 `;
 

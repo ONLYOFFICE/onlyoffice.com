@@ -79,17 +79,30 @@ const StyledFeatureImage = styled.div<{
   $image: IFeatureTextImage["image"]["url"];
   $image2x: IFeatureTextImage["image"]["url2x"];
 }>`
-  aspect-ratio: ${({ $imageWidth, $imageHeight }) =>
-    $imageWidth && $imageHeight ? `${$imageWidth} / ${$imageHeight}` : "auto"};
-  /* aspect-ratio: auto; */
+  padding-bottom: ${({ $imageHeight, $imageWidth }) =>
+    $imageHeight && $imageWidth
+      ? (($imageHeight / $imageWidth) * 100).toFixed(4) + "%"
+      : "0%"};
   background-image: url(${({ $image }) => $image});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 
   @media ${device.tablet} {
     max-width: 640px;
     width: 100%;
     margin: 0 auto;
+    padding-bottom: ${({ $imageHeight, $imageWidth }) =>
+      $imageHeight && $imageWidth
+        ? ((640 * $imageHeight) / $imageWidth).toFixed(4) + "px"
+        : "0px"};
+  }
+
+  @media ${device.tabletS} {
+    padding-bottom: ${({ $imageHeight, $imageWidth }) =>
+      $imageHeight && $imageWidth
+        ? (($imageHeight / $imageWidth) * 100).toFixed(4) + "%"
+        : "0%"};
   }
 
   @media ${device.retina} {
