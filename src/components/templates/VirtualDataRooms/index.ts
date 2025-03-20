@@ -1,0 +1,1 @@
+export { VirtualDataRoomsTemplate } from "./VirtualDataRooms";
