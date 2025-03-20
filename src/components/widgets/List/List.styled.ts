@@ -10,10 +10,6 @@ export const StyledList = styled.ul<{
   grid-template-columns: 1fr;
   row-gap: ${({ $gap }) => $gap || "16px"};
   text-align: start;
-
-  @media ${device.mobile} {
-    font-size: 14px;
-  }
 `;
 
 export const StyledListItem = styled.li<{
@@ -76,6 +72,10 @@ export const StyledListItem = styled.li<{
         `};
       }
     `}
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
 
   span,
   em,
