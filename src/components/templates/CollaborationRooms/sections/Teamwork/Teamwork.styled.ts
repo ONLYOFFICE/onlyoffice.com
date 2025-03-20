@@ -23,6 +23,7 @@ const StyledTeamworkItems = styled.div`
 
   @media ${device.mobile} {
     flex-direction: column;
+    row-gap: 24px;
   }
 `;
 
