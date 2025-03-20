@@ -6,7 +6,7 @@ import { RoomsHero } from "@src/components/widgets/RoomsHero";
 import { hero } from "./data/hero";
 
 const Hero = () => {
-  const { t } = useTranslation("collaboration-rooms");
+  const { t } = useTranslation("form-filling-rooms");
 
   return (
     <StyledHero

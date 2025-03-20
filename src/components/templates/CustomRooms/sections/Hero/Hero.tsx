@@ -20,7 +20,7 @@ const Hero = () => {
           title={
             <Trans
               t={t}
-              i18nKey="WorkTogetherAccording"
+              i18nKey={String(hero.title)}
               components={[<Text as="span" color="#FF6F3D" key="0" />]}
             />
           }

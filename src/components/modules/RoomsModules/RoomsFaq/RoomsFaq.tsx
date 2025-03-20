@@ -8,10 +8,8 @@ const RoomsFaq = () => {
 
   return (
     <FaqCollapse
-      desktopSpacing={["112px", "112px"]}
       tabletSpacing={["72px", "112px"]}
       mobileSpacing={["48px", "64px"]}
-      text={t("GetAnswersToTheMostPopularQuestions")}
       items={items.map(({ label, children, links }) => ({
         label: t(label),
         content: links ? (
