@@ -24,19 +24,22 @@ const Input = forwardRef<HTMLInputElement, IInput>(
       onKeyDown,
       value,
       fullWidth,
+      errorMessage,
+      clearable,
     },
     ref,
   ) => {
     const [isFocused, setIsFocused] = useState(false);
-    const [inputValue, setInputValue] = useState(value || "");
+    const [inputValue, setInputValue] = useState(value || undefined);
     const [currentType, setCurrentType] = useState(type);
-    const [errorMessage, setErrorMessage] = useState("");
+    const [currentErrorMessage, setCurrentErrorMessage] =
+      useState(errorMessage);
     const [inputVariant, setInputVariant] = useState(variant);
-    const rightSide =
-      type == "password" || (type == "text" && id == "search") ? true : false;
+    const rightSide = type == "password" || type == "search" ? true : false;
+    const leftSide = type === "search";
 
     useEffect(() => {
-      setInputValue(value || "");
+      setInputValue(value || undefined);
     }, [value]);
 
     const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
@@ -47,15 +50,17 @@ const Input = forwardRef<HTMLInputElement, IInput>(
     const validateInput = (value: string) => {
       if (required && !value.trim()) {
         return "error";
+      } else if (required && value.trim()) {
+        return "success";
       }
-      return value.trim() ? "success" : "default";
+      return "default";
     };
 
     const handleBlur = () => {
       setIsFocused(false);
       const newVariant = validateInput(inputValue?.toString() || "");
       setInputVariant(newVariant);
-      setErrorMessage(newVariant === "error" ? `${label} is empty` : "");
+      setCurrentErrorMessage(newVariant === "error" ? `${label} is empty` : "");
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -70,12 +75,14 @@ const Input = forwardRef<HTMLInputElement, IInput>(
     };
 
     const onButtonToggle = () => {
-      if (id === "password") {
+      if (type === "password") {
         togglePasswordVisibility();
-      } else {
-        setInputValue("");
-        setInputVariant("default");
-      }
+      } 
+    };
+
+    const onButtonClear = () => {
+      setInputValue("");
+      setInputVariant("default");
     };
 
     const isFloating =
@@ -83,15 +90,26 @@ const Input = forwardRef<HTMLInputElement, IInput>(
       (inputValue !== undefined && inputValue.toString().length > 0);
 
     return (
-      <StyledInputWrapper $variant={inputVariant} $fullWidth={fullWidth}>
-        <StyledInputLabel
-          htmlFor={id}
-          $isFloating={isFloating}
-          $variant={inputVariant}
-        >
-          {label}
-          {required && <span>*</span>}
-        </StyledInputLabel>
+      <StyledInputWrapper $variant={inputVariant} $fullWidth={fullWidth} $isFocused={isFocused}>
+        {label && (
+          <StyledInputLabel
+            htmlFor={id}
+            $isFloating={isFloating}
+            $variant={inputVariant}
+            $leftSide={leftSide}
+          >
+            {label}
+            {required && <span>*</span>}
+          </StyledInputLabel>
+        )}
+        {leftSide && (
+          <StyledToggleButton
+            type="button"
+            $type={currentType}
+            $leftSide={leftSide}
+            aria-label="Search icon left"
+          />
+        )}
         <StyledInput
           id={id}
           ref={ref}
@@ -101,30 +119,38 @@ const Input = forwardRef<HTMLInputElement, IInput>(
           onFocus={handleFocus}
           onBlur={handleBlur}
           onKeyDown={onKeyDown}
-          placeholder={isFocused ? placeholder : ""}
+          placeholder={isFocused ? placeholder : undefined}
           required={required}
           type={currentType}
           value={inputValue}
           $fullWidth={fullWidth}
           $hasRightSide={!!rightSide}
+          $hasLeftSide={!!leftSide}
+          $label={label ? true : false}
         />
-        {rightSide && (
+        {rightSide && !clearable && (
           <StyledToggleButton
-            $id={id}
             type="button"
             $type={currentType}
             onClick={onButtonToggle}
             aria-label={
               currentType === "password"
                 ? "Show password"
-                : currentType === "text" && id === "password"
-                ? "Hide password"
-                : ""
+                : "Hide password"
             }
           />
         )}
+        {clearable && inputValue && (
+          <StyledToggleButton
+            type="button"
+            $type={currentType}
+            $clearable={clearable}
+            onClick={onButtonClear}
+            aria-label="Clear input"
+          />
+        )}
         {inputVariant === "error" && (
-          <StyledErrorText>{errorMessage}</StyledErrorText>
+          <StyledErrorText>{currentErrorMessage}</StyledErrorText>
         )}
       </StyledInputWrapper>
     );

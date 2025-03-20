@@ -30,11 +30,14 @@ export default {
     },
     type: {
       control: { type: "select" },
-      options: ["text", "password"],
+      options: ["text", "password", "search"],
     },
     variant: {
       control: { type: "select" },
       options: ["default", "success", "error"],
+    },
+    clearable: {
+      control: { type: "boolean" },
     },
     required: {
       control: { type: "boolean" },

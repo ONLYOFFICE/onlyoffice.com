@@ -5,25 +5,17 @@ import { ITextArea } from "./TextArea.types";
 export const StyledTextAreaWrapper = styled.div<{
   $variant: ITextArea["variant"];
   $fullWidth: ITextArea["fullWidth"];
+  $isFocused: boolean;
 }>`
   border: 1px solid;
   border-radius: 9px;
-  border-color: #aaaaaa;
-  background-color: #f9f9f9;
-  margin: 0 0 32px;
-  padding: 27px 16px 8px 16px;
+  border-color: ${(props) => (props.$isFocused ? "#666666" : "#aaaaaa")};
+  background-color:  ${(props) => (props.$isFocused ? "#ffffff" : "#f9f9f9")};
+    outline: none;
   position: relative;
   transition: all 0.2s ease-in-out;
   width: ${(props) => (props.$fullWidth ? "100%" : "fit-content")};
 
-  &:hover {
-    border-color: #666666;
-  }
-  &:focus {
-    border-color: #666666;
-    background-color: #ffffff;
-    outline: none;
-  }
   &:hover {
     border-color: #666666;
   }
@@ -59,6 +51,8 @@ export const StyledTextAreaLabel = styled.label<{
 
 export const StyledTextArea = styled.textarea<{
   $fullWidth: ITextArea["fullWidth"];
+  $label: boolean;
+  $hasValue: boolean;
 }>`
   color: #333333;
   font-size: 16px;
@@ -70,12 +64,17 @@ export const StyledTextArea = styled.textarea<{
   border-color: transparent;
   line-height: 22px;
   outline: none;
-  padding: 0;
+  margin-top: ${(props) => (props.$hasValue && props.$label ? "24px" : props.$hasValue && !props.$label ? "16px" : "0")};
+  padding: ${(props) => (props.$label ? (props.$hasValue ? "0px 16px 0" : "24px 16px 0") : (props.$hasValue ? "0px 16px 0" : "16px 16px 0"))};
   resize: none;
   width: ${(props) => props.$fullWidth && "100%"};
 
+  &:focus {
+    margin-top: ${(props) => (props.$label ? "24px" : "16px")};
+    padding-top: 0px;
+  }
+
   @media ${device.mobile} {
-    padding: 14px 12px;
     width: 100%;
   }
 `;

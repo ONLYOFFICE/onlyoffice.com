@@ -21,6 +21,9 @@ const TextArea = forwardRef<HTMLTextAreaElement, ITextArea>(
       onKeyDown,
       value,
       fullWidth,
+      cols,
+      rows,
+      maxLength,
     },
     ref
   ) => {
@@ -50,7 +53,7 @@ const TextArea = forwardRef<HTMLTextAreaElement, ITextArea>(
       (textareaValue !== undefined && textareaValue.toString().length > 0);
 
     return (
-      <StyledTextAreaWrapper $variant={variant} $fullWidth={fullWidth}>
+      <StyledTextAreaWrapper $variant={variant} $fullWidth={fullWidth} $isFocused={isFocused}>
         {label && (
           <StyledTextAreaLabel
             htmlFor={id}
@@ -73,10 +76,12 @@ const TextArea = forwardRef<HTMLTextAreaElement, ITextArea>(
           placeholder={isFocused ? placeholder : undefined}
           required={required}
           value={textareaValue}
-          cols={5}
-          rows={3}
-          maxLength={250}
+          cols={cols}
+          rows={rows}
+          maxLength={maxLength}
           $fullWidth={fullWidth}
+          $label={label ? true : false}
+          $hasValue={textareaValue ? true : false}
         />
       </StyledTextAreaWrapper>
     );

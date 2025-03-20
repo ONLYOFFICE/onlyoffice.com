@@ -3,6 +3,7 @@ import {
   StyledCheckbox,
   StyledCheckboxWrapper,
   StyledCheckboxLabel,
+  StyledInput
 } from "./Checkbox.styled";
 import { ICheckbox } from "./Checkbox.types";
 
@@ -37,14 +38,12 @@ const Checkbox = forwardRef<HTMLInputElement, ICheckbox>(
           } as React.ChangeEvent<HTMLInputElement>)
         }
       >
-        <input
+        <StyledInput
           id={id}
           ref={ref}
-          tabIndex={-1}
           type="checkbox"
           checked={currentChecked}
           onChange={handleChange}
-          hidden
         />
         <StyledCheckbox $checked={currentChecked} />
         <StyledCheckboxLabel htmlFor={id}>{label}</StyledCheckboxLabel>

@@ -5,21 +5,18 @@ import { IInput } from "./Input.types";
 export const StyledInputWrapper = styled.div<{
   $variant: IInput["variant"];
   $fullWidth: IInput["fullWidth"];
-  $hasRightSide?: boolean;
+  $isFocused: boolean;
 }>`
-  background-color: #f9f9f9;
+  background-color: ${(props) => (props.$isFocused ? "#ffffff" : "#f9f9f9")};
   border: 1px solid;
+  border-color: ${(props) => (props.$isFocused ? "#666666" : "#aaaaaa")};
   border-radius: 9px;
   height: 56px;
-  margin: 0 0 32px;
+  outline: none;
   position: relative;
+  transition: all 0.2s ease-in-out;
   width: ${(props) => (props.$fullWidth ? "100%" : "fit-content")};
 
-  &:focus {
-    border-color: #666666;
-    background-color: #ffffff;
-    outline: none;
-  }
   &:hover {
     border-color: #666666;
   }
@@ -35,13 +32,12 @@ export const StyledInputWrapper = styled.div<{
     css`
       border-color: #cb0000;
       background-color: #fff7f7;
+      margin: 0 0 32px;
     `}
-  ${(props) =>
-    props.$variant === "default" &&
-    css`
-      border-color: #aaaaaa;
-      background-color: #f9f9f9;
-    `}
+
+  @media ${device.mobile} {
+    height: 48px;
+  }
 `;
 
 export const StyledErrorText = styled.div`
@@ -49,22 +45,28 @@ export const StyledErrorText = styled.div`
   font-weight: 400;
   color: #cb0000;
   font-size: 13px;
-  margin: 6px 0 0 0;
+  margin: 8px 0 0 0;
+  @media ${device.mobile} {
+    font-size: 12px;
+    margin: 4px 0 0 0;
+  }
 `;
 
 export const StyledToggleButton = styled.button<{
   $type: IInput["type"];
-  $id: IInput["id"];
+  $clearable?: IInput["clearable"];
+  $leftSide?: boolean;
 }>`
   background: none;
   background-image: ${(props) => {
     if (props.$type === "password")
       return "url('/images/icons/pass-eye-opened-light.svg')";
-    if (props.$type === "text" && props.$id === "password")
+    if (props.$type === "text")
       return "url('/images/icons/pass-eye-closed-light.svg')";
-    if (props.$type === "text" && props.$id === "search")
+    if (props.$clearable)
       return "url('/images/icons/close-cross.svg')";
-    return "none";
+    if (props.$leftSide)
+      return "url('/images/icons/search-light.svg')";
   }};
   background-repeat: no-repeat;
   background-size: contain;
@@ -74,19 +76,28 @@ export const StyledToggleButton = styled.button<{
   transform: translateY(-50%);
   border: none;
   cursor: pointer;
-  height: 20px;
+  height: ${(props) => (props.$type === "search" ? "24px" : "20px")};
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
+  transition: all 0.2s ease-in-out;
+  width: ${(props) => (props.$type === "search" ? "24px" : "20px")};
+
+  ${(props) =>
+    props.$leftSide &&
+    css`
+      left: 16px;
+    `}
 
   &:hover {
     background-image: ${(props) => {
       if (props.$type === "password")
         return "url('/images/icons/pass-eye-opened.svg')";
-      if (props.$type === "text" && props.$id === "password")
+      if (props.$type === "text")
         return "url('/images/icons/pass-eye-closed.svg')";
+      if (props.$leftSide)
+        return "url('/images/icons/search.svg')";
     }};
   }
 `;
@@ -94,10 +105,11 @@ export const StyledToggleButton = styled.button<{
 export const StyledInputLabel = styled.label<{
   $variant: IInput["variant"];
   $isFloating: boolean;
+  $leftSide?: boolean;
 }>`
   position: absolute;
   line-height: 16px;
-  left: 16px;
+  left: ${(props) => (props.$leftSide ? "48px" : "16px")};
   color: ${(props) => {
     if (props.$isFloating) return "#666666";
     if (props.$variant === "error") return "#EA9494";
@@ -110,11 +122,21 @@ export const StyledInputLabel = styled.label<{
     props.$isFloating ? "translateX(0) translateY(-13px)" : "translate(0, 0)"};
   font-size: ${(props) => (props.$isFloating ? "12px" : "16px")};
   top: 18px;
+
+  @media ${device.mobile} {
+    line-height: 15px;
+    left: ${(props) => (props.$leftSide ? "48px" : "12px")};
+    font-size: ${(props) => (props.$isFloating ? "11px" : "14px")};
+    top: 15px;
+  }
 `;
 
 export const StyledInput = styled.input<{
   $fullWidth: IInput["fullWidth"];
-  $hasRightSide?: boolean;
+  $hasRightSide: IInput["hasRightSide"];
+  type: IInput["type"];
+  $hasLeftSide: boolean;
+  $label: boolean;
 }>`
   align-items: center;
   background-color: transparent;
@@ -123,20 +145,35 @@ export const StyledInput = styled.input<{
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.04em;
-  line-height: 32px;
-  height: 32px;
+  line-height: ${(props) => (props.$label ? "34px" : "24px")};
   justify-content: center;
-  margin-top: 20px;
+  margin: 0px;
   outline: none;
-  padding: 0px ${(props) => (props.$hasRightSide ? "48px" : "16px")} 0 16px;
+  padding: ${(props) => (props.$label ? "20px" : "16px")}
+    ${(props) => (props.$hasRightSide ? "48px" : "16px")}
+    ${(props) => (props.$label ? "0px" : "16px")} 
+    ${(props) => (props.$hasLeftSide ? "48px" : "16px")};
   transition: all 0.2s ease-in-out;
-  width: ${(props) => (props.$fullWidth ? "100%" : "auto")};
+  width: 100%;
+
+  &:-webkit-autofill {
+    background-color: transparent;
+    border-radius: 9px;
+    color: #333333;
+    box-shadow: 0 0 0px 1000px white inset;
+  }
+
+  ${(props) => props.type === "search" && `
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+  `}
 
   @media ${device.mobile} {
     font-size: 13px;
-    height: 20px;
-    line-height: 16px;
-    padding: 0px ${(props) => (props.$hasRightSide ? "48px" : "12px")} 0 12px;
+    height: 46px;
+    line-height: 20px;
+    padding: ${(props) => (props.$label ? "10px" : "16px")} ${(props) => (props.$hasRightSide ? "48px" : "12px")}  ${(props) => (props.$label ? "0px" : "16px")} ${(props) => (props.$hasLeftSide ? "48px" : "12px")};
     width: 100%;
   }
 `;

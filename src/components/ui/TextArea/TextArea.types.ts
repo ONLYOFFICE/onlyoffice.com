@@ -17,6 +17,12 @@ export interface ITextArea {
   name?: string;
   /** The value attribute of the input element. */
   value?: string;
+  /** The number of columns in the textarea. */
+  cols?: number;
+  /** The number of rows in the textarea. */
+  rows?: number;
+  /** The number max length in the textarea. */
+  maxLength?: number;
   /** If true, it will stretch to fill the container's width. */
   fullWidth?: boolean;
   /** A callback function for the textarea focus event. */

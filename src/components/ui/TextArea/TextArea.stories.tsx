@@ -35,6 +35,15 @@ export default {
     fullWidth: {
       control: { type: "boolean" },
     },
+    cols: {
+      control: { type: "number" },
+    },
+    rows: {
+      control: { type: "number" },
+    },
+    maxLength: {
+      control: { type: "number" },
+    },
     required: {
       control: { type: "boolean" },
     },

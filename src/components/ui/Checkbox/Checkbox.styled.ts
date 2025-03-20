@@ -4,8 +4,8 @@ import { ICheckbox } from "./Checkbox.types";
 
 export const StyledCheckboxWrapper = styled.div`
   align-items: center;
+  cursor: pointer;
   display: flex;
-  margin: 0 0 24px;
   position: relative;
   gap: 8px;
   width: fit-content;
@@ -20,6 +20,14 @@ export const StyledCheckboxLabel = styled.label`
   @media ${device.mobile} {
     font-size: 14px;
   }
+`;
+
+export const StyledInput = styled.input`
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
 `;
 
 export const StyledCheckbox = styled.span<{ $checked: ICheckbox["checked"] }>`
