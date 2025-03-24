@@ -1,3 +1,4 @@
+import { device } from "@src/utils/device";
 import styled from "styled-components";
 
 export const StyledRoomTabsWrapper = styled.div`
@@ -17,7 +18,7 @@ export const StyledRoomTab = styled.li<{
   display: flex;
   text-align: center;
   justify-content: center;
-  min-width: 190px;
+  min-width: 191.5px;
   width: 100%;
   background-color: ${({ $active }) => ($active ? "#fff" : "#f5f5f5")};
   position: relative;
@@ -55,6 +56,10 @@ export const StyledRoomTab = styled.li<{
       width: 1px;
       height: 56px;
       background-color: #ccc;
+    }
+
+    @media ${device.mobile} {
+      padding: 23px 12px;
     }
   }
 `;
