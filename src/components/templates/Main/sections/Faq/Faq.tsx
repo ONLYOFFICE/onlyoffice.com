@@ -8,7 +8,6 @@ const Faq = () => {
 
   return (
     <FaqCollapse
-      desktopSpacing={["112px", "111px"]}
       text={t("GetAnswersToTheMostPopularQuestions")}
       items={items.map(({ label, children, links }) => ({
         label: t(label),

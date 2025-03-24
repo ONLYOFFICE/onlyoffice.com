@@ -56,6 +56,7 @@ const StyledCollapseLabel = styled.button<{ $isOpen: ICollapse["isOpen"] }>`
 
   @media ${device.tabletS} {
     padding-left: 32px;
+    font-size: 16px;
   }
 `;
 
