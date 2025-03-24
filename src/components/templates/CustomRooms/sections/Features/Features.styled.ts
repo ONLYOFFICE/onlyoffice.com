@@ -20,6 +20,10 @@ const StyledFeatureButtons = styled.div`
   @media ${device.mobile} {
     flex-direction: column;
     width: 100%;
+
+    a {
+      font-size: 12px;
+    }
   }
 `;
 
