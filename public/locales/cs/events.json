@@ -1,0 +1,18 @@
+{
+  "noEvents": "Žádné události",
+  "pageTitle": "Události",
+  "pageTitleOG": "Události, kterých jsme se zúčastnili",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> se účastní zajímavých událostí po celém světě",
+  "currentEvents": "Potkejte ONLYOFFICE na jedné z událostí v roce 2025",
+  "pastEvents": "Přečtěte si o událostech, kterých se ONLYOFFICE zúčastnil",
+  "moreInfo": "Více informací",
+  "pastEventRecording": "Záznam minulé události",
+  "scheduleMeeting": "Naplánovat schůzku",
+  "noPastEvents": "Žádné minulé události",
+  "dateTemplates": {
+    "singleDay": "{{day}}. {{month}} {{year}}",
+    "sameMonth": "{{dayStart}}. - {{dayEnd}}. {{month}} {{year}}",
+    "differentMonths": "{{dayStart}}. {{monthStart}} - {{dayEnd}}. {{monthEnd}} {{year}}",
+    "differentYears": "{{dayStart}}. {{monthStart}} {{yearStart}} - {{dayEnd}}. {{monthEnd}} {{year}}"
+  }
+}

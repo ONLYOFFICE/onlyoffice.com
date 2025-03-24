@@ -1,0 +1,18 @@
+{
+  "noEvents": "Нет событий",
+  "pageTitle": "События",
+  "pageTitleOG": "События, в которых мы участвовали",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> участвует в интересных событиях по всему миру",
+  "currentEvents": "Встречайте ONLYOFFICE на одном из событий в 2025 году",
+  "pastEvents": "Читайте о событиях, в которых участвовал ONLYOFFICE",
+  "moreInfo": "Подробнее",
+  "pastEventRecording": "Запись прошедшего события",
+  "scheduleMeeting": "Запланировать встречу",
+  "noPastEvents": "Нет прошедших событий",
+  "dateTemplates": {
+    "singleDay": "{{day}} {{month}} {{year}} года",
+    "sameMonth": "{{dayStart}} – {{dayEnd}} {{month}} {{year}} года",
+    "differentMonths": "{{dayStart}} {{monthStart}} – {{dayEnd}} {{monthEnd}} {{year}} года",
+    "differentYears": "{{dayStart}} {{monthStart}} {{yearStart}} года – {{dayEnd}} {{monthEnd}} {{year}} года"
+  }
+}

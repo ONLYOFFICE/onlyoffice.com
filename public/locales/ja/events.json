@@ -1,0 +1,18 @@
+{
+  "noEvents": "イベントはありません",
+  "pageTitle": "イベント",
+  "pageTitleOG": "参加したイベント",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0>は世界中の興味深いイベントに参加しています",
+  "currentEvents": "2025年のイベントでONLYOFFICEに会いましょう",
+  "pastEvents": "ONLYOFFICEが参加したイベントについて読む",
+  "moreInfo": "詳細情報",
+  "pastEventRecording": "過去のイベント録画",
+  "scheduleMeeting": "ミーティングを予約",
+  "noPastEvents": "過去のイベントはありません",
+  "dateTemplates": {
+    "singleDay": "{{year}}年{{month}}{{day}}日",
+    "sameMonth": "{{year}}年{{month}}{{dayStart}}日～{{dayEnd}}日",
+    "differentMonths": "{{year}}年{{monthStart}}{{dayStart}}日～{{monthEnd}}{{dayEnd}}日",
+    "differentYears": "{{yearStart}}年{{monthStart}}{{dayStart}}日～{{year}}年{{monthEnd}}{{dayEnd}}日"
+  }
+}

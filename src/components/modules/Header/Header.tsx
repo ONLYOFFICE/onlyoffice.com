@@ -17,13 +17,13 @@ import { PhoneMenu } from "./sub-components/PhoneMenu";
 import { LanguageSelector } from "./sub-components/LanguageSelector";
 import { Overlay } from "@src/components/ui/Overlay";
 
-const Header = ({ locale }: ILocale) => {
+const Header = ({ locale, bgColor }: ILocale & { bgColor?: string }) => {
   const [isOpenMenuMobile, setIsOpenMenuMobile] = useState<boolean>(false);
 
   return (
     <>
       <GlobalStyle $isOpenMenuMobile={isOpenMenuMobile} />
-      <StyledHeader>
+      <StyledHeader $bgColor={bgColor}>
         <Container maxWidth="1280px" desktopSpacing="24px">
           <StyledHeaderWrapper>
             <StyledHumburgerButton

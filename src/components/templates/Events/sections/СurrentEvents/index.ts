@@ -1,0 +1,1 @@
+export { СurrentEvents } from "./СurrentEvents";

@@ -1,0 +1,18 @@
+{
+  "noEvents": "Keine Veranstaltungen",
+  "pageTitle": "Veranstaltungen",
+  "pageTitleOG": "Veranstaltungen, an denen wir teilgenommen haben",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> nimmt an interessanten Veranstaltungen weltweit teil",
+  "currentEvents": "Treffen Sie ONLYOFFICE auf einer der Veranstaltungen in 2025",
+  "pastEvents": "Lesen Sie über die Veranstaltungen, an denen ONLYOFFICE teilgenommen hat",
+  "moreInfo": "Mehr Informationen",
+  "pastEventRecording": "Aufzeichnung der vergangenen Veranstaltung",
+  "scheduleMeeting": "Meeting planen",
+  "noPastEvents": "Keine vergangenen Veranstaltungen",
+  "dateTemplates": {
+    "singleDay": "{{day}}. {{month}} {{year}}",
+    "sameMonth": "{{dayStart}}.-{{dayEnd}}. {{month}} {{year}}",
+    "differentMonths": "{{dayStart}}. {{monthStart}}-{{dayEnd}}. {{monthEnd}} {{year}}",
+    "differentYears": "{{dayStart}}. {{monthStart}} {{yearStart}} bis {{dayEnd}}. {{monthEnd}} {{year}}"
+  }
+}

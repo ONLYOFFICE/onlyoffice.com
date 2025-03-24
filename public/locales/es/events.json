@@ -1,0 +1,18 @@
+{
+  "noEvents": "No hay eventos",
+  "pageTitle": "Eventos",
+  "pageTitleOG": "Eventos en los que hemos participado",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> asiste a eventos interesantes en todo el mundo",
+  "currentEvents": "Conozca a ONLYOFFICE en uno de los eventos en 2025",
+  "pastEvents": "Lea sobre los eventos en los que ONLYOFFICE participó",
+  "moreInfo": "Más información",
+  "pastEventRecording": "Grabación del evento pasado",
+  "scheduleMeeting": "Programar reunión",
+  "noPastEvents": "No hay eventos pasados",
+  "dateTemplates": {
+    "singleDay": "{{day}} de {{month}} de {{year}}",
+    "sameMonth": "{{dayStart}} - {{dayEnd}} de {{month}} de {{year}}",
+    "differentMonths": "{{dayStart}} de {{monthStart}} - {{dayEnd}} de {{monthEnd}} de {{year}}",
+    "differentYears": "{{dayStart}} de {{monthStart}}, {{yearStart}} al {{dayEnd}} de {{monthEnd}}, {{year}}"
+  }
+}

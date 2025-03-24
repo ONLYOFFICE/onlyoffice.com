@@ -1,0 +1,19 @@
+{
+  "noEvents": "Нема догађаја",
+  "pageTitle": "Догађаји",
+  "pageDescription": "Прочитати о догађајима у свемирију у којим се ONLYOFFICE јави или ће јавити.",
+  "pageTitleOG": "Догађаји у којим се јави ONLYOFFICE",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> јави у интересантим догађајима у свемирију",
+  "currentEvents": "Пријати ONLYOFFICE на једном од догађаја у 2025",
+  "pastEvents": "Прочитати о догађајима у којим се ONLYOFFICE јави",
+  "moreInfo": "Пријати ONLYOFFICE на једном од догађаја у 2025",
+  "pastEventRecording": "Пријати ONLYOFFICE на једном од догађаја у 2025",
+  "scheduleMeeting": "Пријати ONLYOFFICE на једном од догађаја у 2025",
+  "noPastEvents": "Нема проћих догађаја",
+  "dateTemplates": {
+    "singleDay": "{{month}} {{day}}, {{year}}",
+    "sameMonth": "{{month}} {{dayStart}} – {{dayEnd}}, {{year}}",
+    "differentMonths": "{{monthStart}} {{dayStart}} – {{monthEnd}} {{dayEnd}}, {{year}}",
+    "differentYears": "{{monthStart}} {{dayStart}}, {{yearStart}} – {{monthEnd}} {{dayEnd}}, {{year}}"
+  }
+}
