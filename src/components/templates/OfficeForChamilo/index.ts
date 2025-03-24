@@ -1,0 +1,1 @@
+export { OfficeForChamiloTemplate } from "./OfficeForChamilo";
