@@ -1,0 +1,1 @@
+export { DocSpacePricesTemplate } from "./DocSpacePrices";

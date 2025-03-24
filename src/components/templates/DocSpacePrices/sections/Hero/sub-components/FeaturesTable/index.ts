@@ -1,0 +1,1 @@
+export { FeaturesTable } from "./FeaturesTable";
