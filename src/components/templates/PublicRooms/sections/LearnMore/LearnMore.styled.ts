@@ -19,13 +19,21 @@ const StyledLearnMoreItems = styled.div`
 
   .blog-card {
     @media ${device.tablet} {
-      max-width: 320px;
-      min-width: 320px;
+      max-width: 352px;
+      min-width: 352px;
     }
 
     @media ${device.mobile} {
-      max-width: 240px;
-      min-width: 240px;
+      max-width: 272px;
+      min-width: 272px;
+    }
+
+    div:nth-child(2) > div:first-child {
+      margin-bottom: 12px;
+
+      h3 {
+        margin-bottom: 8px;
+      }
     }
   }
 
