@@ -1,0 +1,17 @@
+{
+    "HeroImgUrl": "/images/templates/office-for-jira/hero/fr/hero.png",
+    "HeroImgUrl2x": "/images/templates/office-for-jira/hero/fr/hero@2x.png",
+  
+    "DocumentsTab1ImgUrl": "/images/templates/office-for-jira/documents/fr/screen1.png",
+    "DocumentsTab1ImgUrl2x": "/images/templates/office-for-jira/documents/fr/screen1@2x.png",
+    
+    "DocumentsTab2ImgUrl": "/images/templates/office-for-jira/documents/fr/screen2.png",
+    "DocumentsTab2ImgUrl2x": "/images/templates/office-for-jira/documents/fr/screen2@2x.png",
+    
+    "DocumentsTab3ImgUrl": "/images/templates/office-for-jira/documents/fr/screen3.png",
+    "DocumentsTab3ImgUrl2x": "/images/templates/office-for-jira/documents/fr/screen3@2x.png",
+
+
+    "HowToStartStep3Url": "/images/templates/office-for-jira/how-to-start/fr/step3.svg"
+  }
+  
