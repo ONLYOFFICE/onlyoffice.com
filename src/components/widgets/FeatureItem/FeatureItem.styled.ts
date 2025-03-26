@@ -13,16 +13,14 @@ const StyledFeatureItem = styled.div`
 
 const StyledFeatureItemIcon = styled.div<{
   $icon: IFeatureItem["icon"];
-  $iconPositionX?: IFeatureItem["iconPositionX"];
-  $iconPositionY?: IFeatureItem["iconPositionY"];
 }>`
   margin-bottom: 16px;
   width: 64px;
   height: 64px;
-  background-image: ${(props) => `url(${props.$icon})`};
+  background-image: ${(props) => `url(${props.$icon.url})`};
   background-repeat: no-repeat;
-  background-position-x: ${(props) => props.$iconPositionX};
-  background-position-y: ${(props) => props.$iconPositionY};
+  background-position-x: ${(props) => props.$icon.positionX};
+  background-position-y: ${(props) => props.$icon.positionY};
 `;
 
 const StyledFeatureItemText = styled.p`

@@ -20,8 +20,7 @@ const Hero = () => {
         label: t(String(label)),
       }))}
       button={{ ...hero.button, label: t(hero.button.label) }}
-      imgUrl={t(hero.imgUrl)}
-      imgUrl2x={t(hero.imgUrl2x)}
+      image={{ url: t(hero.image.url), url2x: t(hero.image.url2x) }}
     />
   );
 };

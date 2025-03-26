@@ -20,8 +20,10 @@ const Features = () => {
         <StyledFeaturesItems>
           {items.map((item, index) => (
             <FeatureItem
-              icon={item.icon}
-              iconPositionX={item.iconPositionX}
+              icon={{
+                url: item.icon.url,
+                positionX: item.icon.positionX,
+              }}
               heading={
                 <Trans
                   t={t}

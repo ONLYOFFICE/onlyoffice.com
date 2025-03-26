@@ -14,6 +14,8 @@ export const hero: IRoomHero = {
     label: "CreateFreeAccount",
     href: "/docspace-registration",
   },
-  imgUrl: "HeroImgUrl",
-  imgUrl2x: "HeroImgUrl2x",
+  image: {
+    url: "HeroImgUrl",
+    url2x: "HeroImgUrl2x",
+  },
 };

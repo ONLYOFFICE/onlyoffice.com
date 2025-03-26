@@ -67,8 +67,10 @@ const Connectors = ({ locale }: ILocale) => {
             <ConnectorCard
               key={index}
               idName={connector.id}
-              imgBgColor={connector.imgBgColor}
-              imgUrl={connector.imgUrl}
+              image={{
+                url: connector.image.url,
+                bgColor: connector.image.bgColor,
+              }}
               name={
                 ["zh", "ja"].includes(locale)
                   ? `${connector.name} ${

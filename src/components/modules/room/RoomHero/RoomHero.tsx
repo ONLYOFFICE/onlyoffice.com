@@ -17,8 +17,7 @@ const RoomHero = ({
   text,
   button,
   items,
-  imgUrl,
-  imgUrl2x,
+  image: { url: imgUrl, url2x: imgUrl2x },
 }: IRoomHero) => {
   return (
     <StyledRoomHero

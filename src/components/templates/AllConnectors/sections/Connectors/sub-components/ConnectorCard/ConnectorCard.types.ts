@@ -5,10 +5,13 @@ export interface IConnectorCard {
   className?: string;
   /** Identifier name used for constructing element IDs. */
   idName?: string;
-  /** The background color of the image wrapper. */
-  imgBgColor?: string;
-  /** The URL of the image to be displayed. */
-  imgUrl: string;
+  /** The image. */
+  image: {
+    /** The URL of the image to be displayed. */
+    url: string;
+    /** The background color of the image wrapper. */
+    bgColor?: string;
+  };
   /** The name of the connector. */
   name: string;
   /** The description text of the connector. */

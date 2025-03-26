@@ -12,7 +12,7 @@ export const items: DocsItem[] = [
       { id: "docs-spreadsheet-editor", url: "/spreadsheet-editor" },
       { id: "docs-presentation-editor", url: "/presentation-editor" },
     ],
-    images: {
+    image: {
       url: "/images/templates/main/docs/actions.png",
       url2x: "/images/templates/main/docs/actions@2x.png",
     },
@@ -20,7 +20,7 @@ export const items: DocsItem[] = [
   {
     label: "BuildFillablePDFFormsAndFillThemInOnline",
     links: [{ id: "docs-form-creator", url: "/form-creator" }],
-    images: {
+    image: {
       url: "/images/templates/main/docs/pdf_forms.png",
       url2x: "/images/templates/main/docs/pdf_forms@2x.png",
     },
@@ -28,14 +28,14 @@ export const items: DocsItem[] = [
   {
     label: "ReadAndEditPDFsExportImportToFromPDF",
     links: [{ id: "docs-pdf-editor", url: "/pdf-editor" }],
-    images: {
+    image: {
       url: "/images/templates/main/docs/pdfs.png",
       url2x: "/images/templates/main/docs/pdfs@2x.png",
     },
   },
   {
     label: "ConvertDocsToMarkdownAndHTML",
-    images: {
+    image: {
       url: "/images/templates/main/docs/convert.png",
       url2x: "/images/templates/main/docs/convert@2x.png",
     },
@@ -43,7 +43,7 @@ export const items: DocsItem[] = [
   {
     label: "TurnYourTextbooksIntoEbooks",
     links: [{ id: "docs-e-book", url: "/e-book" }],
-    images: {
+    image: {
       url: "/images/templates/main/docs/e_book.png",
       url2x: "/images/templates/main/docs/e_book@2x.png",
     },

@@ -4,7 +4,7 @@ export const teamworkItems: ITeamworkCard[] = [
   {
     title: "Education",
     text: "EducationDesc",
-    img: {
+    image: {
       url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",
       positionX: "-18px",
     },
@@ -12,7 +12,7 @@ export const teamworkItems: ITeamworkCard[] = [
   {
     title: "Business",
     text: "BusinessDesc",
-    img: {
+    image: {
       url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",
       positionX: "-94px",
     },
@@ -22,7 +22,7 @@ export const teamworkItems: ITeamworkCard[] = [
   {
     title: "Individuals",
     text: "IndividualsDesc",
-    img: {
+    image: {
       url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",
       positionX: "-170px",
     },
@@ -32,7 +32,7 @@ export const teamworkItems: ITeamworkCard[] = [
   {
     title: "Legal",
     text: "LegalDesc",
-    img: {
+    image: {
       url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",
       positionX: "-245px",
     },

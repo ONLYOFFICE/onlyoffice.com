@@ -9,7 +9,9 @@ interface IConnectorCardExtended extends IConnectorCard {
 export const connectors: IConnectorCardExtended[] = [
   {
     id: "agorum",
-    imgUrl: "/images/templates/all-connectors/connectors/agorum.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/agorum.svg",
+    },
     name: "agorum",
     text: "AgorumConnectorText",
     moreInfoUrl:
@@ -24,7 +26,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "alfresco",
-    imgUrl: "/images/templates/all-connectors/connectors/alfresco.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/alfresco.svg",
+    },
     name: "Alfresco",
     text: "AlfrescoConnectorText",
     moreInfoUrl: "/office-for-alfresco",
@@ -37,7 +41,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "box",
-    imgUrl: "/images/templates/all-connectors/connectors/box.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/box.svg",
+    },
     name: "Box",
     text: "BoxConnectorText",
     moreInfoUrl: "/office-for-box",
@@ -50,7 +56,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "chamilo",
-    imgUrl: "/images/templates/all-connectors/connectors/chamilo.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/chamilo.svg",
+    },
     name: "Chamilo",
     text: "ChamiloConnectorText",
     moreInfoUrl: "/office-for-chamilo",
@@ -63,8 +71,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "communigate",
-    imgBgColor: "#475965",
-    imgUrl: "/images/templates/all-connectors/connectors/communigate.svg",
+    image: {
+      bgColor: "#475965",
+      url: "/images/templates/all-connectors/connectors/communigate.svg",
+    },
     name: "CommuniGate",
     text: "CommuniGateConnectorText",
     vendor: "CommuniGate Systems",
@@ -75,8 +85,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "confluence",
-    imgBgColor: "#253858",
-    imgUrl: "/images/templates/all-connectors/connectors/confluence.svg",
+    image: {
+      bgColor: "#253858",
+      url: "/images/templates/all-connectors/connectors/confluence.svg",
+    },
     name: "Confluence",
     text: "ConfluenceConnectorText",
     moreInfoUrl: "/office-for-confluence",
@@ -89,7 +101,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "dropbox",
-    imgUrl: "/images/templates/all-connectors/connectors/dropbox.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/dropbox.svg",
+    },
     name: "Dropbox",
     text: "DropboxConnectorText",
     moreInfoUrl: "/office-for-dropbox",
@@ -102,8 +116,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "drupal",
-    imgBgColor: "#0E497F",
-    imgUrl: "/images/templates/all-connectors/connectors/drupal.svg",
+    image: {
+      bgColor: "#0E497F",
+      url: "/images/templates/all-connectors/connectors/drupal.svg",
+    },
     name: "Drupal",
     text: "DrupalConnectorText",
     moreInfoUrl: "/office-for-drupal",
@@ -116,7 +132,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "enaio",
-    imgUrl: "/images/templates/all-connectors/connectors/enaio.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/enaio.svg",
+    },
     name: "enaio",
     text: "EnaioConnectorText",
     moreInfoUrl: "https://ecmind.ch/solutions/embeddedoffice/",
@@ -130,8 +148,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "exoplatform",
-    imgBgColor: "#405F97",
-    imgUrl: "/images/templates/all-connectors/connectors/exo.svg",
+    image: {
+      bgColor: "#405F97",
+      url: "/images/templates/all-connectors/connectors/exo.svg",
+    },
     name: "eXo Platform",
     text: "eXoConnectorText",
     moreInfoUrl:
@@ -145,8 +165,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "flinkiso",
-    imgBgColor: "#0095ff",
-    imgUrl: "/images/templates/all-connectors/connectors/flinkiso.png",
+    image: {
+      bgColor: "#0095ff",
+      url: "/images/templates/all-connectors/connectors/flinkiso.png",
+    },
     name: "FlinkISO",
     text: "FlinkISOConnectorText",
     moreInfoUrl: "https://www.flinkiso.com/features/onlyoffice-editors.html",
@@ -160,7 +182,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "humhub",
-    imgUrl: "/images/templates/all-connectors/connectors/humhub.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/humhub.svg",
+    },
     name: "HumHub",
     text: "HumHubConnectorText",
     moreInfoUrl: "/office-for-humhub",
@@ -173,7 +197,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "jalios",
-    imgUrl: "/images/templates/all-connectors/connectors/jalios.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/jalios.svg",
+    },
     name: "Jalios",
     text: "JaliosConnectorText",
     moreInfoUrl:
@@ -189,7 +215,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "jira",
-    imgUrl: "/images/templates/all-connectors/connectors/jira.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/jira.svg",
+    },
     name: "Jira",
     text: "JiraConnectorText",
     moreInfoUrl: "/office-for-jira",
@@ -202,8 +230,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "liferay",
-    imgBgColor: "#0B63CE",
-    imgUrl: "/images/templates/all-connectors/connectors/liferay.svg",
+    image: {
+      bgColor: "#0B63CE",
+      url: "/images/templates/all-connectors/connectors/liferay.svg",
+    },
     name: "Liferay",
     text: "LiferayConnectorText",
     moreInfoUrl: "/office-for-liferay",
@@ -216,8 +246,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "liferaysmc",
-    imgBgColor: "#0B63CE",
-    imgUrl: "/images/templates/all-connectors/connectors/liferay.svg",
+    image: {
+      bgColor: "#0B63CE",
+      url: "/images/templates/all-connectors/connectors/liferay.svg",
+    },
     name: "Liferay",
     text: "LiferaySMCConnectorText",
     moreInfoUrl:
@@ -233,7 +265,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "maarch",
-    imgUrl: "/images/templates/all-connectors/connectors/maarch.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/maarch.svg",
+    },
     name: "Maarch Courrier",
     text: "CourrierConnectorText",
     moreInfoUrl:
@@ -248,7 +282,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "mattermost",
-    imgUrl: "/images/templates/all-connectors/connectors/mattermost.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/mattermost.svg",
+    },
     name: "Mattermost",
     text: "MattermostConnectorText",
     moreInfoUrl: "/office-for-mattermost",
@@ -261,7 +297,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "moodle-oo",
-    imgUrl: "/images/templates/all-connectors/connectors/moodle.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/moodle.svg",
+    },
     name: "Moodle",
     text: "MoodleConnectorText",
     moreInfoUrl: "/office-for-moodle",
@@ -274,8 +312,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "moodle",
-    imgBgColor: "#F47F29",
-    imgUrl: "/images/templates/all-connectors/connectors/moodle-white.svg",
+    image: {
+      bgColor: "#F47F29",
+      url: "/images/templates/all-connectors/connectors/moodle-white.svg",
+    },
     name: "Moodle",
     text: "MoodleLogicConnectorText",
     moreInfoUrl: "https://github.com/logicexpertise/moodle-mod_onlyoffice",
@@ -288,7 +328,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "neo",
-    imgUrl: "/images/templates/all-connectors/connectors/neo.png",
+    image: {
+      url: "/images/templates/all-connectors/connectors/neo.png",
+    },
     name: "NEO",
     text: "NEOConnectorText",
     moreInfoUrl: "https://edifice.io/nos-produits/neo/",
@@ -302,8 +344,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "nextcloud",
-    imgBgColor: "#0082C9",
-    imgUrl: "/images/templates/all-connectors/connectors/nextcloud.svg",
+    image: {
+      bgColor: "#0082C9",
+      url: "/images/templates/all-connectors/connectors/nextcloud.svg",
+    },
     name: "Nextcloud",
     text: "NextcloudConnectorText",
     moreInfoUrl: "/office-for-nextcloud",
@@ -316,8 +360,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "nuxeo",
-    imgBgColor: "#0B59F5",
-    imgUrl: "/images/templates/all-connectors/connectors/nuxeo.svg",
+    image: {
+      bgColor: "#0B59F5",
+      url: "/images/templates/all-connectors/connectors/nuxeo.svg",
+    },
     name: "Nuxeo",
     text: "NuxeoConnectorText",
     moreInfoUrl: "/office-for-nuxeo",
@@ -330,7 +376,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "odoo",
-    imgUrl: "/images/templates/all-connectors/connectors/odoo.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/odoo.svg",
+    },
     name: "Odoo",
     text: "OdooConnectorText",
     moreInfoUrl: "/office-for-odoo",
@@ -343,7 +391,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "one",
-    imgUrl: "/images/templates/all-connectors/connectors/one.png",
+    image: {
+      url: "/images/templates/all-connectors/connectors/one.png",
+    },
     name: "ONE",
     text: "ONEConnectorText",
     moreInfoUrl: "https://edifice.io/nos-produits/one/",
@@ -357,8 +407,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "openolat",
-    imgBgColor: "#5284A9",
-    imgUrl: "/images/templates/all-connectors/connectors/openolat.svg",
+    image: {
+      bgColor: "#5284A9",
+      url: "/images/templates/all-connectors/connectors/openolat.svg",
+    },
     name: "OpenOlat",
     text: "OpenOlatConnectorText",
     moreInfoUrl:
@@ -373,8 +425,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "owncloud",
-    imgBgColor: "#1D2D44",
-    imgUrl: "/images/templates/all-connectors/connectors/owncloud.svg",
+    image: {
+      bgColor: "#1D2D44",
+      url: "/images/templates/all-connectors/connectors/owncloud.svg",
+    },
     name: "ownCloud",
     text: "ownCloudConnectorText",
     moreInfoUrl: "/office-for-owncloud",
@@ -387,8 +441,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "pintexx",
-    imgBgColor: "#FFFFFF",
-    imgUrl: "/images/templates/all-connectors/connectors/pintexx.png",
+    image: {
+      bgColor: "#FFFFFF",
+      url: "/images/templates/all-connectors/connectors/pintexx.png",
+    },
     name: "Pintexx Workplace",
     text: "PintexxConnectorText",
     moreInfoUrl: "https://www.pintexx.com/de/products/onlyoffice/",
@@ -402,8 +458,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "pipedrive",
-    imgBgColor: "#017737",
-    imgUrl: "/images/templates/all-connectors/connectors/pipedrive.svg",
+    image: {
+      bgColor: "#017737",
+      url: "/images/templates/all-connectors/connectors/pipedrive.svg",
+    },
     name: "Pipedrive",
     text: "PipedriveConnectorText",
     moreInfoUrl: "/office-for-pipedrive",
@@ -417,8 +475,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "plone",
-    imgBgColor: "#006C9D",
-    imgUrl: "/images/templates/all-connectors/connectors/plone.svg",
+    image: {
+      bgColor: "#006C9D",
+      url: "/images/templates/all-connectors/connectors/plone.svg",
+    },
     name: "Plone",
     text: "PloneConnectorText",
     moreInfoUrl: "/office-for-plone",
@@ -431,8 +491,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "powerfolder",
-    imgBgColor: "#1F3142",
-    imgUrl: "/images/templates/all-connectors/connectors/powerfolder.svg",
+    image: {
+      bgColor: "#1F3142",
+      url: "/images/templates/all-connectors/connectors/powerfolder.svg",
+    },
     name: "PowerFolder",
     text: "PowerFolderConnectorText",
     moreInfoUrl:
@@ -448,7 +510,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "pydio",
-    imgUrl: "/images/templates/all-connectors/connectors/pydio.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/pydio.svg",
+    },
     name: "Pydio",
     text: "PydioConnectorText",
     moreInfoUrl: "https://pydio.com/en/docs/cells/v2/ed-only-office",
@@ -462,8 +526,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "quasaro",
-    imgBgColor: "#FFFFFF",
-    imgUrl: "/images/templates/all-connectors/connectors/quasaro.png",
+    image: {
+      bgColor: "#FFFFFF",
+      url: "/images/templates/all-connectors/connectors/quasaro.png",
+    },
     name: "Quasaro",
     text: "QuasaroConnectorText",
     moreInfoUrl: "https://quasaro.de/Funktionen/#Zusammenarbeit",
@@ -477,7 +543,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "redmine",
-    imgUrl: "/images/templates/all-connectors/connectors/redmine.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/redmine.svg",
+    },
     name: "Redmine",
     text: "RedmineConnectorText",
     moreInfoUrl: "/office-for-redmine",
@@ -490,8 +558,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "seafile",
-    imgBgColor: "linear-gradient(180deg,#FBD44E 0%,#FFA613 100%),#FFA816",
-    imgUrl: "/images/templates/all-connectors/connectors/seafile.svg",
+    image: {
+      bgColor: "linear-gradient(180deg,#FBD44E 0%,#FFA613 100%),#FFA816",
+      url: "/images/templates/all-connectors/connectors/seafile.svg",
+    },
     name: "Seafile",
     text: "SeafileConnectorText",
     moreInfoUrl: "https://manual.seafile.com/11.0/deploy/only_office/",
@@ -504,8 +574,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "sharepoint",
-    imgBgColor: "#006CC5",
-    imgUrl: "/images/templates/all-connectors/connectors/sharepoint.svg",
+    image: {
+      bgColor: "#006CC5",
+      url: "/images/templates/all-connectors/connectors/sharepoint.svg",
+    },
     name: "SharePoint",
     text: "SharePointConnectorText",
     moreInfoUrl: "/office-for-sharepoint",
@@ -518,7 +590,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "strapi",
-    imgUrl: "/images/templates/all-connectors/connectors/strapi.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/strapi.svg",
+    },
     name: "Strapi",
     text: "StrapiConnectorText",
     moreInfoUrl: "/office-for-strapi",
@@ -531,7 +605,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "suitecrm",
-    imgUrl: "/images/templates/all-connectors/connectors/suitecrm.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/suitecrm.svg",
+    },
     name: "SuiteCRM",
     text: "SuiteCRMConnectorText",
     moreInfoUrl: "/office-for-suitecrm",
@@ -544,8 +620,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "talkspirit",
-    imgBgColor: "#101830",
-    imgUrl: "/images/templates/all-connectors/connectors/talkspirit.svg",
+    image: {
+      bgColor: "#101830",
+      url: "/images/templates/all-connectors/connectors/talkspirit.svg",
+    },
     name: "Talkspirit",
     text: "TalkspiritConnectorText",
     moreInfoUrl:
@@ -560,8 +638,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "trello",
-    imgBgColor: "#253858",
-    imgUrl: "/images/templates/all-connectors/connectors/trello.svg",
+    image: {
+      bgColor: "#253858",
+      url: "/images/templates/all-connectors/connectors/trello.svg",
+    },
     name: "Trello",
     text: "TrelloConnectorText",
     moreInfoUrl: "/office-for-trello",
@@ -575,8 +655,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "webweaver",
-    imgBgColor: "#FFFFFF",
-    imgUrl: "/images/templates/all-connectors/connectors/webweaver.svg",
+    image: {
+      bgColor: "#FFFFFF",
+      url: "/images/templates/all-connectors/connectors/webweaver.svg",
+    },
     name: "WebWeaver",
     text: "WebWeaverConnectorText",
     moreInfoUrl:
@@ -591,8 +673,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "wedoc",
-    imgBgColor: "#FFFFFF",
-    imgUrl: "/images/templates/all-connectors/connectors/wedoc.svg",
+    image: {
+      bgColor: "#FFFFFF",
+      url: "/images/templates/all-connectors/connectors/wedoc.svg",
+    },
     name: "WeDoc",
     text: "WeDocConnectorText",
     moreInfoUrl: "https://appstore.jamespot.com/store/en/wedoc",
@@ -606,8 +690,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "wordpress",
-    imgBgColor: "#000000",
-    imgUrl: "/images/templates/all-connectors/connectors/wordpress.svg",
+    image: {
+      bgColor: "#000000",
+      url: "/images/templates/all-connectors/connectors/wordpress.svg",
+    },
     name: "WordPress",
     text: "WordPressConnectorText",
     moreInfoUrl: "/office-for-wordpress",
@@ -620,7 +706,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "xwiki",
-    imgUrl: "/images/templates/all-connectors/connectors/xwiki.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/xwiki.svg",
+    },
     name: "XWiki",
     text: "XWikiConnectorText",
     moreInfoUrl:
@@ -636,8 +724,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "zapier",
-    imgBgColor: "#ffffff",
-    imgUrl: "/images/templates/all-connectors/connectors/zapier.svg",
+    image: {
+      bgColor: "#ffffff",
+      url: "/images/templates/all-connectors/connectors/zapier.svg",
+    },
     name: "Zapier",
     text: "ZapierConnectorText",
     moreInfoUrl: "/office-for-zapier",
@@ -651,8 +741,10 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "zoom",
-    imgBgColor: "#0B5CFF",
-    imgUrl: "/images/templates/all-connectors/connectors/zoom.svg",
+    image: {
+      bgColor: "#0B5CFF",
+      url: "/images/templates/all-connectors/connectors/zoom.svg",
+    },
     name: "Zoom",
     text: "ZoomConnectorText",
     moreInfoUrl: "/office-for-zoom",
@@ -665,7 +757,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "filecloud",
-    imgUrl: "/images/templates/all-connectors/connectors/filecloud.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/filecloud.svg",
+    },
     name: "FileCloud",
     text: "FileCloudConnectorText",
     moreInfoUrl: "https://www.filecloud.com/onlyoffice-integration/",
@@ -680,7 +774,9 @@ export const connectors: IConnectorCardExtended[] = [
   },
   {
     id: "openkm",
-    imgUrl: "/images/templates/all-connectors/connectors/openkm.svg",
+    image: {
+      url: "/images/templates/all-connectors/connectors/openkm.svg",
+    },
     name: "OpenKM",
     text: "OpenKMConnectorText",
     moreInfoUrl:
