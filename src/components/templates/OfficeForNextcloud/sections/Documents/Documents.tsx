@@ -13,7 +13,7 @@ const Documents = () => {
   const { t } = useTranslation("office-for-nextcloud");
 
   return (
-    <Section bgColor="#f9f9f9">
+    <Section background="#f9f9f9">
       <Container>
         <StyledDocumentsHeading
           level={2}

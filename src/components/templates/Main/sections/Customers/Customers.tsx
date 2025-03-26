@@ -18,7 +18,7 @@ const Customers = () => {
 
   return (
     <Section
-      bgColor="#f5f5f5"
+      background="#f5f5f5"
       tabletSpacing={["80px", "112px"]}
       tabletSmallSpacing={["88px", "88px"]}
     >

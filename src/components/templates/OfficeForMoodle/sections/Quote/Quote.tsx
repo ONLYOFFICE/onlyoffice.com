@@ -10,7 +10,7 @@ const Quote = () => {
   return (
     <Section
       as="div"
-      bgColor="#f9f9f9"
+      background="#f9f9f9"
       desktopSpacing={["90px", "90px"]}
       mobileSpacing={["88px", "88px"]}
     >

@@ -12,6 +12,7 @@ export const items: IBlogCard[] = [
       {
         href: "https://www.youtube.com/watch?v=vNbFcqhJ7wI",
         label: "WatchAVideoVersion",
+        isExternal: true,
       },
     ],
   },

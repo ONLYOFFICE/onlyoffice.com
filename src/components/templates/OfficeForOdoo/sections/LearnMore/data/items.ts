@@ -9,6 +9,7 @@ export const items: IBlogCard[] = [
       {
         href: "https://medium.com/onlyoffice/working-on-documents-within-odoo-257d6552691d",
         label: "Explore",
+        isExternal: true,
       },
     ],
   },

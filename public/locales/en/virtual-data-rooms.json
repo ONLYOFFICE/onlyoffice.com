@@ -1,0 +1,50 @@
+{
+  "PageTitle": "ONLYOFFICE - Cloud Office Applications",
+  "PageDescription": "Organize secure storing and sharing of confidential business information in ONLYOFFICE DocSpace",
+
+  "UseVirtualDataRooms": "Use <0>Virtual Data rooms</0> for advanced file security and transparency",
+  "OrganizeSecure": "Organize secure storing and sharing of confidential business information in ONLYOFFICE DocSpace",
+
+  "IdealForDueDiligence": "Ideal for due diligence",
+  "CompletelyOrganized": "Completely organized",
+  "HighLevelOfDataSecurity": "High level of data security",
+  "CostEffectiveForAnyBudget": "Cost-effective for any budget",
+
+  "CreateFreeAccount": "Create free account",
+
+  "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
+
+  "IdealForDueDiligenceDesc": "Use VDR for due diligence, when merging, working on a project with other businesses, or other joint venture that requires access to the shared data.",
+  "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/ideal-for-due-diligence.png",
+  "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/ideal-for-due-diligence@2x.png",
+
+  "CompletelyOrganizedDesc": "Automatically index and track all content to keep great records and stay organized. Generate a summary report on the room file structure.",
+  "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/completely-organized.png",
+  "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/completely-organized@2x.png",
+
+  "HighLevelOfDataSecurityDesc": "Enable watermarks, set file lifetime, restrict downloading and copying to protect your sensitive records.",
+  "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/high-level-of-data-security.png",
+  "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/high-level-of-data-security@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses, no matter if it's SMB or a big enterprise. Want to get full control over your corporate data? Deploy DocSpace on your private server.",
+  "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget.png",
+  "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Learn more about DocSpace Virtual Data rooms",
+
+  "HelpCenter": "Help Center",
+  "HelpCenterDesc": "Check detailed user guides for effective work",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "Learn more",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Master ONLYOFFICE DocSpace with video guides",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Watch now",
+
+  "CustomerTestimonial": "Customer testimonial",
+  "HowKinderhausBerlinSharesAndCollaborates": "How Kinderhaus Berlin shares and collaborates on sensitive files with ONLYOFFICE DocSpace",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Read story"
+}

@@ -53,7 +53,7 @@ const Connectors = ({ locale }: ILocale) => {
   };
 
   return (
-    <Section bgColor="#f2f2f2" desktopSpacing={["64px", "112px"]}>
+    <Section background="#f2f2f2" desktopSpacing={["64px", "112px"]}>
       <Container>
         <StyledConnectorsHeading level={3} label={t("Connectors")} />
 

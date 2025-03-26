@@ -9,7 +9,7 @@ const Documents = () => {
   const { t } = useTranslation("office-for-box");
 
   return (
-    <Section bgColor="#f9f9f9" tabletSmallSpacing={["80px", "80px"]}>
+    <Section background="#f9f9f9" tabletSmallSpacing={["80px", "80px"]}>
       <Container>
         <StyledDocumentsHeading
           level={2}

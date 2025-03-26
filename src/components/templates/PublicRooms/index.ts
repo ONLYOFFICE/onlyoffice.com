@@ -1,0 +1,1 @@
+export { PublicRoomsTemplate } from "./PublicRooms";

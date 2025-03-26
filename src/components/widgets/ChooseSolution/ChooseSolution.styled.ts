@@ -17,6 +17,7 @@ const StyledChooseSolutionItems = styled.div`
 
   @media ${device.tabletS} {
     grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
   }
 `;
 
@@ -27,6 +28,7 @@ const StyledChooseSolutionLargeItems = styled.div`
 
   @media ${device.tabletS} {
     grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
   }
 `;
 
