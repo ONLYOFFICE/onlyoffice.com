@@ -9,7 +9,7 @@ export const items: IBlogCard[] = [
     },
   },
   {
-    imgUrl: "Blog1ImgUrl",
+    imgUrl: "Blog2ImgUrl",
     blogLink: {
       href: "Blog2Link",
       label: "Blog2",
