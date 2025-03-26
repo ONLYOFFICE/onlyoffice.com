@@ -8,6 +8,7 @@ import {
 } from "./FeatureSwitcher.styled";
 import { IFeatureSwitcher } from "./FeatureSwitcher.types";
 import { ChevronDownIcon } from "@src/components/icons";
+import { Text } from "@src/components/ui/Text";
 
 const FeatureSwitcher = ({
   id,
@@ -17,12 +18,14 @@ const FeatureSwitcher = ({
   imageHeight = 520,
   position = "left",
   customButton,
+  header,
 }: IFeatureSwitcher) => {
   const [activeTab, setActiveTab] = useState(0);
-
+  
   return (
     <StyledFeatureSwitcher id={id} className={className} $position={position}>
-      <StyledFeatureSwitcherWrapper $position={position}>
+      <StyledFeatureSwitcherWrapper $position={position} $withHeader={header?.toString() !== null && true}>
+        {header && <Text fontSize="20px" fontWeight={700}>{header}</Text>}
         <ul>
           {items.map((item, index) => (
             <li key={index}>

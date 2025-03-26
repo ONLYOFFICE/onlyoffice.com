@@ -21,7 +21,15 @@ const StyledFeatureSwitcher = styled.div<{
 
 const StyledFeatureSwitcherWrapper = styled.div<{
   $position?: IFeatureSwitcher["position"];
+  $withHeader?: boolean;
 }>`
+  ${(props) =>
+    props.$withHeader &&
+    css`
+   display: flex;
+flex-direction: column;
+gap: 32px;
+  `}
   padding: 40px 0;
   order: ${(props) => props.$position === "right" && 2};
 

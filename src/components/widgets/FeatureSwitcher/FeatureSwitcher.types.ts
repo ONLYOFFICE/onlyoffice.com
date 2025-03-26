@@ -16,4 +16,6 @@ export interface IFeatureSwitcher {
   position?: "left" | "right";
   /** Custom button displayed below the tabs. */
   customButton?: React.ReactNode;
+  /** The header of the component. */
+  header?: React.ReactNode;
 }
