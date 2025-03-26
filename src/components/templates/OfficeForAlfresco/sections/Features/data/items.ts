@@ -4,31 +4,31 @@ export const items: IFeatureItem[] = [
   {
     icon: "/images/templates/office-for-alfresco/features/features.svg",
     iconPositionX: "-20px",
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: "/images/templates/office-for-alfresco/features/features.svg",
     iconPositionX: "-108px",
-    heading: "FeaturesCoEditing",
+    text: "FeaturesCoEditing",
   },
   {
     icon: "/images/templates/office-for-alfresco/features/features.svg",
     iconPositionX: "-196px",
-    heading: "FeaturesFree",
+    text: "FeaturesFree",
   },
   {
     icon: "/images/templates/office-for-alfresco/features/features.svg",
     iconPositionX: "-284px",
-    heading: "FeaturesSecurity",
+    text: "FeaturesSecurity",
   },
   {
     icon: "/images/templates/office-for-alfresco/features/features.svg",
     iconPositionX: "-372px",
-    heading: "FeaturesConfiguration",
+    text: "FeaturesConfiguration",
   },
   {
     icon: "/images/templates/office-for-alfresco/features/features.svg",
     iconPositionX: "-460px",
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
 ];

@@ -22,8 +22,11 @@ const Features = () => {
               key={index}
               {...items}
               title={t(title)}
-              text={t(text)}
-              links={links?.map((link) => ({ ...link, label: t(link.label) }))}
+              text={t(String(text))}
+              links={links?.map((link) => ({
+                ...link,
+                label: t(String(link.label)),
+              }))}
               image={{
                 url: t(image.url),
                 url2x: image.url2x && t(image.url2x),

@@ -3,22 +3,22 @@ import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 export const items: IFeatureItem[] = [
   {
     icon: "/images/templates/office-for-box/features/working.svg",
-    heading: "FeaturesWorking",
+    text: "FeaturesWorking",
   },
   {
     icon: "/images/templates/office-for-box/features/formats.svg",
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: "/images/templates/office-for-box/features/ai-helper.svg",
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
   {
     icon: "/images/templates/office-for-box/features/co-editing.svg",
-    heading: "FeaturesWorkingCoEditing",
+    text: "FeaturesWorkingCoEditing",
   },
   {
     icon: "/images/templates/office-for-box/features/free-app.svg",
-    heading: "FeaturesFreeApp",
+    text: "FeaturesFreeApp",
   },
 ];

@@ -3,31 +3,31 @@ import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 export const items: IFeatureItem[] = [
   {
     icon: "/images/templates/office-for-confluence/features/features.svg",
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: "/images/templates/office-for-confluence/features/features.svg",
     iconPositionX: "-80px",
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
   {
     icon: "/images/templates/office-for-confluence/features/features.svg",
     iconPositionX: "-160px",
-    heading: "FeatureCoEditing",
+    text: "FeatureCoEditing",
   },
   {
     icon: "/images/templates/office-for-confluence/features/features.svg",
     iconPositionX: "-240px",
-    heading: "FeaturesEnhancedSecurity",
+    text: "FeaturesEnhancedSecurity",
   },
   {
     icon: "/images/templates/office-for-confluence/features/features.svg",
     iconPositionX: "-320px",
-    heading: "FeaturesEasyConfiguration",
+    text: "FeaturesEasyConfiguration",
   },
   {
     icon: "/images/templates/office-for-confluence/features/features.svg",
     iconPositionX: "-400px",
-    heading: "FeaturesFreeTrial",
+    text: "FeaturesFreeTrial",
   },
 ];

@@ -26,7 +26,7 @@ const LearnMore = () => {
               className="blog-card"
               key={index}
               imgUrl={item.imgUrl}
-              heading={t(item.heading)}
+              heading={t(item.heading ?? "")}
               text={t(item.text ?? "")}
               links={item.links?.map((item) => ({
                 href: item.href,

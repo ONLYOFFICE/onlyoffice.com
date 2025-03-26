@@ -4,31 +4,31 @@ export const items: IFeatureItem[] = [
   {
     icon: "/images/templates/office-for-moodle/features/features.svg",
     iconPositionX: "0px",
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
   {
     icon: "/images/templates/office-for-moodle/features/features.svg",
     iconPositionX: "-76px",
-    heading: "FeaturesCoEditing",
+    text: "FeaturesCoEditing",
   },
   {
     icon: "/images/templates/office-for-moodle/features/features.svg",
     iconPositionX: "-152px",
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: "/images/templates/office-for-moodle/features/features.svg",
     iconPositionX: "-230px",
-    heading: "FeaturesDesktopEditors",
+    text: "FeaturesDesktopEditors",
   },
   {
     icon: "/images/templates/office-for-moodle/features/features.svg",
     iconPositionX: "-306px",
-    heading: "FeaturesOpenSourceCode",
+    text: "FeaturesOpenSourceCode",
   },
   {
     icon: "/images/templates/office-for-moodle/features/features.svg",
     iconPositionX: "-380px",
-    heading: "FeaturesFreeTrial",
+    text: "FeaturesFreeTrial",
   },
 ];

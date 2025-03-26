@@ -21,10 +21,10 @@ const Features = () => {
               <FeatureItem
                 key={index}
                 icon={item.icon}
-                heading={
+                text={
                   <Trans
                     t={t}
-                    i18nKey={String(item.heading)}
+                    i18nKey={String(item.text)}
                     components={[<b key="0" />]}
                   />
                 }

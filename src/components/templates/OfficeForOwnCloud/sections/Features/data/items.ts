@@ -3,38 +3,38 @@ import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 export const items: IFeatureItem[] = [
   {
     icon: "/images/templates/office-for-owncloud/features/formats.svg",
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: "/images/templates/office-for-owncloud/features/co-editing.svg",
-    heading: "FeaturesCoEditing",
+    text: "FeaturesCoEditing",
   },
   {
     icon: "/images/templates/office-for-owncloud/features/ai-helper.svg",
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
   {
     icon: "/images/templates/office-for-owncloud/features/security.svg",
-    heading: "FeaturesSecurity",
+    text: "FeaturesSecurity",
   },
   {
     icon: "/images/templates/office-for-owncloud/features/configuration.svg",
-    heading: "FeaturesConfiguration",
+    text: "FeaturesConfiguration",
   },
   {
     icon: "/images/templates/office-for-owncloud/features/free.svg",
-    heading: "FeaturesFree",
+    text: "FeaturesFree",
   },
   {
     icon: "/images/templates/office-for-owncloud/features/permission.svg",
-    heading: "FeaturesPermissions",
+    text: "FeaturesPermissions",
   },
   {
     icon: "/images/templates/office-for-owncloud/features/customization.svg",
-    heading: "FeaturesCustomization",
+    text: "FeaturesCustomization",
   },
   {
     icon: "/images/templates/office-for-owncloud/features/support.svg",
-    heading: "FeaturesSupport",
+    text: "FeaturesSupport",
   },
 ];

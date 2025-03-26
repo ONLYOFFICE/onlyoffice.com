@@ -4,26 +4,26 @@ export const items: IFeatureItem[] = [
   {
     icon: "/images/templates/office-for-odoo/features/features.svg",
     iconPositionX: "0px",
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
   {
     icon: "/images/templates/office-for-odoo/features/features.svg",
     iconPositionX: "-160px",
-    heading: "FeaturesCollaboration",
+    text: "FeaturesCollaboration",
   },
   {
     icon: "/images/templates/office-for-odoo/features/features.svg",
     iconPositionX: "-320px",
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: "/images/templates/office-for-odoo/features/features.svg",
     iconPositionX: "-80px",
-    heading: "FeaturesOpenSourceCode",
+    text: "FeaturesOpenSourceCode",
   },
   {
     icon: "/images/templates/office-for-odoo/features/features.svg",
     iconPositionX: "-240px",
-    heading: "FeaturesFreeTrial",
+    text: "FeaturesFreeTrial",
   },
 ];
