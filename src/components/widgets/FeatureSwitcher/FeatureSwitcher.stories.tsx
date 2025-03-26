@@ -53,14 +53,14 @@ Default.args = {
   items: [
     {
       label: "View, edit and collaborate on docs, sheets, slides",
-      images: {
+      image: {
         url: "/images/storybook/widgets/feature-switcher/actions.png",
         url2x: "/images/storybook/widgets/feature-switcher/actions@2x.png",
       },
     },
     {
       label: "Build fillable PDF forms and fill in them online",
-      images: {
+      image: {
         url: "/images/storybook/widgets/feature-switcher/pdf-forms.png",
         url2x: "/images/storybook/widgets/feature-switcher/pdf-forms@2x.png",
       },

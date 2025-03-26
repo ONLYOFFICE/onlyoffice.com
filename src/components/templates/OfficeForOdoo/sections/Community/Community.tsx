@@ -13,7 +13,7 @@ const Community = () => {
   const { t } = useTranslation("office-for-odoo");
 
   return (
-    <Section bgColor="#f9f9f9">
+    <Section background="#f9f9f9">
       <Container>
         <StyledCommunityHeading level={2} textAlign="center">
           <Trans
@@ -24,11 +24,11 @@ const Community = () => {
         </StyledCommunityHeading>
 
         <FeatureSwitcher
-          items={items.map(({ label, images }) => ({
+          items={items.map(({ label, image }) => ({
             label: t(String(label)),
-            images: {
-              url: t(images.url),
-              url2x: images.url2x ? t(images.url2x) : undefined,
+            image: {
+              url: t(image.url),
+              url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
           customButton={

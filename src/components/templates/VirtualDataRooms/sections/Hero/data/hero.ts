@@ -1,0 +1,21 @@
+import { IRoomHero } from "@src/components/modules/room/RoomHero";
+
+export const hero: IRoomHero = {
+  title: "UseVirtualDataRooms",
+  text: "OrganizeSecure",
+  items: [
+    { label: "IdealForDueDiligence" },
+    { label: "CompletelyOrganized" },
+    { label: "HighLevelOfDataSecurity" },
+    { label: "CostEffectiveForAnyBudget" },
+  ],
+  button: {
+    id: "create-free-account",
+    label: "CreateFreeAccount",
+    href: "/docspace-registration",
+  },
+  image: {
+    url: "HeroImgUrl",
+    url2x: "HeroImgUrl2x",
+  },
+};

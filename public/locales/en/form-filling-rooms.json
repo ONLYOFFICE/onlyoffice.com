@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Collect and analyze responses in form filling rooms",
+  "PageDescription": "Organize straightforward form filling for your projects in ONLYOFFICE DocSpace",
+
+  "EasilyCollectAndAnalyze": "Easily collect and analyze responses in <0>form filling rooms</0>",
+  "OrganizeStraightforwardFormFilling": "Organize straightforward form filling for your projects in ONLYOFFICE DocSpace",
+
+  "EasyFormUploading": "Easy form uploading",
+  "QuickSharing": "Quick sharing",
+  "IntuitiveProcess": "Intuitive process of form filling",
+  "ConvenientAnalyzing": "Convenient analyzing of the collected responses",
+  "CostEffectiveForAnyBudget": "Cost-effective for any budget",
+
+  "CreateFreeAccount": "Create free account",
+
+  "HeroImgUrl": "/images/templates/form-filling-rooms/hero/form-filling-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/form-filling-rooms/hero/form-filling-rooms-header@2x.png",
+
+  "EasyFormUploadingDesc": "Upload ready PDF forms to a room from your DocSpace or device with several clicks. Make use of the integrated template library and choose among numerous ready PDF templates.",
+  "EasyFormUploadingUrl": "/images/templates/form-filling-rooms/features/easy-form-uploading.png",
+  "EasyFormUploadingUrl2x": "/images/templates/form-filling-rooms/features/easy-form-uploading@2x.png",
+
+  "QuickSharingDesc": "Invite your colleagues and team members to the room to fill out the uploaded PDF forms. Copy a public access link to share the room with external attendants.",
+  "QuickSharingUrl": "/images/templates/form-filling-rooms/features/quick-sharing.png",
+  "QuickSharingUrl2x": "/images/templates/form-filling-rooms/features/quick-sharing@2x.png",
+
+  "IntuitiveProcessDesc": "A piece of cake for everyone! Use the Previous Field or Next Field buttons to navigate between fields. If necessary, adjust zoom, fit to page or width. Once ready, just click the Complete & Submit button.",
+  "IntuitiveProcessUrl": "/images/templates/form-filling-rooms/features/intuitive-process.png",
+  "IntuitiveProcessUrl2x": "/images/templates/form-filling-rooms/features/intuitive-process@2x.png",
+
+  "ConvenientAnalyzingDesc": "Check the filled forms and analyze data automatically collected into a spreadsheet. Everything – within one room.",
+  "ConvenientAnalyzingUrl": "/images/templates/form-filling-rooms/features/convenient-analyzing.png",
+  "ConvenientAnalyzingUrl2x": "/images/templates/form-filling-rooms/features/convenient-analyzing@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses, no matter if it's SMB or a big enterprise. Want to get full control over your corporate data? Deploy DocSpace on your private server.",
+  "CostEffectiveForAnyBudgetUrl": "/images/templates/form-filling-rooms/features/cost-effective-for-any-budget.png",
+  "CostEffectiveForAnyBudgetUrl2x": "/images/templates/form-filling-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Learn more about DocSpace Form Filling rooms",
+
+  "HelpCenter": "Help Center",
+  "HelpCenterDesc": "Check detailed user guides for effective work",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "Learn more",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Master ONLYOFFICE DocSpace with video guides",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Watch now",
+
+  "CustomerTestimonial": "Customer testimonial",
+  "HowKinderhausBerlinSharesAndCollaborates": "How Kinderhaus Berlin shares and collaborates on sensitive files with ONLYOFFICE DocSpace",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Read story"
+}

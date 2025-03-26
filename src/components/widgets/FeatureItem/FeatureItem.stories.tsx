@@ -20,13 +20,7 @@ export default {
       control: { type: "text" },
     },
     icon: {
-      control: { type: "text" },
-    },
-    iconPositionX: {
-      control: { type: "text" },
-    },
-    iconPositionY: {
-      control: { type: "text" },
+      control: { type: "object" },
     },
     heading: {
       control: { type: "text" },
@@ -40,6 +34,8 @@ const Template: StoryFn<IFeatureItem> = (args: IFeatureItem) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  icon: "/images/storybook/widgets/feature-item/working.svg",
+  icon: {
+    url: "/images/storybook/widgets/feature-item/working.svg",
+  },
   heading: "Working with office files directly within the Box frontend",
 };

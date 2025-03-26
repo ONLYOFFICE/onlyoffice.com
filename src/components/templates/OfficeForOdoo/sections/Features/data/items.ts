@@ -2,28 +2,38 @@ import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
 export const items: IFeatureItem[] = [
   {
-    icon: "/images/templates/office-for-odoo/features/features.svg",
-    iconPositionX: "0px",
+    icon: {
+      url: "/images/templates/office-for-odoo/features/features.svg",
+      positionX: "0",
+    },
     heading: "FeaturesAIHelper",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/features.svg",
-    iconPositionX: "-160px",
+    icon: {
+      url: "/images/templates/office-for-odoo/features/features.svg",
+      positionX: "-160px",
+    },
     heading: "FeaturesCollaboration",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/features.svg",
-    iconPositionX: "-320px",
+    icon: {
+      url: "/images/templates/office-for-odoo/features/features.svg",
+      positionX: "-320px",
+    },
     heading: "FeaturesFormats",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/features.svg",
-    iconPositionX: "-80px",
+    icon: {
+      url: "/images/templates/office-for-odoo/features/features.svg",
+      positionX: "-80px",
+    },
     heading: "FeaturesOpenSourceCode",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/features.svg",
-    iconPositionX: "-240px",
+    icon: {
+      url: "/images/templates/office-for-odoo/features/features.svg",
+      positionX: "-240px",
+    },
     heading: "FeaturesFreeTrial",
   },
 ];

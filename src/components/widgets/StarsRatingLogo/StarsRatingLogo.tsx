@@ -8,10 +8,7 @@ const StarsRatingLogo = ({
   id,
   className,
   url,
-  imgUrl,
-  imgAlt,
-  imgWidth,
-  imgHeight,
+  image,
   value,
   maxValue = 5,
 }: IStarsRatingLogo) => {
@@ -20,7 +17,12 @@ const StarsRatingLogo = ({
   return (
     <StyledStarsRatingLogo id={id} className={className}>
       <Link href={url} target="_blank" display="inline-flex">
-        <img src={imgUrl} alt={imgAlt} width={imgWidth} height={imgHeight} />
+        <img
+          src={image.url}
+          alt={image.alt}
+          width={image.width}
+          height={image.height}
+        />
       </Link>
       <StarsRating value={getPercentage(value)} />
       <Text

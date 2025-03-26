@@ -9,6 +9,7 @@ export const items: IBlogCard[] = [
       {
         href: "https://helpcenter.onlyoffice.com/integration/alfresco.aspx",
         label: "VisitOurHelpCenter",
+        isExternal: true,
       },
     ],
   },

@@ -20,7 +20,9 @@ const Features = () => {
             {items.map((item, index) => (
               <FeatureItem
                 key={index}
-                icon={item.icon}
+                icon={{
+                  url: item.icon.url,
+                }}
                 heading={
                   <Trans
                     t={t}

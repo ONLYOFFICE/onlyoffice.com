@@ -17,7 +17,7 @@ const HowToStart = () => {
   return (
     <StyledHowToStart
       id="how-to-start"
-      bgColor="#f9f9f9"
+      background="#f9f9f9"
       tabletSmallSpacing={["80px", "80px"]}
     >
       <Container>

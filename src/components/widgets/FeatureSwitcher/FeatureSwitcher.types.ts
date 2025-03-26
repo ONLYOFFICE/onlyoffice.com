@@ -6,7 +6,7 @@ export interface IFeatureSwitcher {
   /** An array of image tabs. */
   items: {
     label: React.ReactNode;
-    images: { url: string; url2x?: string };
+    image: { url: string; url2x?: string };
   }[];
   /** The width of the image. Default: 736. */
   imageWidth?: number;

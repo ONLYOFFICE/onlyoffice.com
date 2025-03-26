@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import {
+  StyledFaqCollapseHeader,
   StyledFaqCollapseHeading,
   StyledFaqCollapseText,
 } from "./FaqCollapse.styled";
@@ -31,11 +32,14 @@ const FaqCollapse = ({
       mobileSpacing={mobileSpacing}
     >
       <Container>
-        <StyledFaqCollapseHeading
-          label={t("Frequently Asked Questions")}
-          level={2}
-        />
-        {text && <StyledFaqCollapseText>{text}</StyledFaqCollapseText>}
+        <StyledFaqCollapseHeader>
+          <StyledFaqCollapseHeading
+            label={t("Frequently Asked Questions")}
+            level={2}
+          />
+          {text && <StyledFaqCollapseText>{text}</StyledFaqCollapseText>}
+        </StyledFaqCollapseHeader>
+
         <CollapseGroup items={items} isAccordion={isAccordion} divider />
       </Container>
     </Section>

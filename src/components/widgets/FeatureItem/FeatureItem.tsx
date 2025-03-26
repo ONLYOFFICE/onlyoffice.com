@@ -6,18 +6,12 @@ import {
 import { IFeatureItem } from "./FeatureItem.types";
 
 const FeatureItem = ({
-  icon,
-  iconPositionX = "0",
-  iconPositionY = "center",
+  icon: { url, positionX = "0", positionY = "center" },
   heading,
 }: IFeatureItem) => {
   return (
     <StyledFeatureItem>
-      <StyledFeatureItemIcon
-        $icon={icon}
-        $iconPositionX={iconPositionX}
-        $iconPositionY={iconPositionY}
-      />
+      <StyledFeatureItemIcon $icon={{ url, positionX, positionY }} />
       <StyledFeatureItemText>{heading}</StyledFeatureItemText>
     </StyledFeatureItem>
   );
