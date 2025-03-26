@@ -20,7 +20,7 @@ const Hero = () => {
 
   return (
     <StyledHero
-      bgColor="#f9f9f9"
+      background="#f9f9f9"
       desktopSpacing={["160px", "112px"]}
       tabletSpacing={["152px", "88px"]}
       tabletSmallSpacing={["128px", "80px"]}
