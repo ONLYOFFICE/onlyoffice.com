@@ -14,7 +14,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/public-rooms/learn-more/docspace.png",
+    imgUrl: "/images/templates/custom-rooms/learn-more/docspace.png",
     heading: "YouTube",
     text: "MasterONLYOFFICEDocSpace",
     links: [
@@ -26,7 +26,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/collaboration-rooms/learn-more/customers.png",
+    imgUrl: "/images/templates/custom-rooms/learn-more/customers.png",
     heading: "CustomerTestimonial",
     text: "HowKinderhausBerlinSharesAndCollaborates",
     links: [

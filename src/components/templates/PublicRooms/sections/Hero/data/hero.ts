@@ -1,6 +1,6 @@
-import { IRoomsHero } from "@src/components/widgets/RoomsHero";
+import { IRoomHero } from "@src/components/modules/room/RoomHero";
 
-export const hero: IRoomsHero = {
+export const hero: IRoomHero = {
   title: "SimplifyFileSharingWithExternalUsers",
   text: "EasilyInteractWithThirdParties",
   items: [
@@ -17,6 +17,4 @@ export const hero: IRoomsHero = {
   },
   imgUrl: "HeroImgUrl",
   imgUrl2x: "HeroImgUrl2x",
-  imgWidth: 672,
-  imgHeight: 730,
 };

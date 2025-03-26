@@ -1,29 +1,57 @@
-import { device } from "@src/utils/device";
 import styled from "styled-components";
+import { device } from "@src/utils/device";
+import { ITeamworkCard } from "./TeamworkCard.types";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { ITeamworkCard } from "./TeamworkCard.types";
 
-const StyledCardTitle = styled(Heading)`
+const StyledTeamworkCard = styled.div<{
+  $bgColor: ITeamworkCard["bgColor"];
+  $borderColor: ITeamworkCard["borderColor"];
+}>`
+  border: 1px solid
+    ${(props) => (props.$borderColor ? props.$borderColor : "#cccccc")};
+  border-radius: 6px;
+  padding: 32px;
+  width: 100%;
+  background: ${(props) => props.$bgColor};
+
+  @media ${device.tabletS} {
+    padding: 16px;
+  }
+`;
+
+const StyledCardTitle = styled(Heading)<{
+  $img: ITeamworkCard["img"];
+  $color: ITeamworkCard["color"];
+}>`
   display: flex;
   align-items: center;
   gap: 16px;
-  line-height: 133%;
-  font-weight: 700;
+  margin-bottom: 16px;
+  color: ${(props) => props.$color};
 
   &::before {
     content: "";
     display: inline-block;
     width: 56px;
+    min-width: 56px;
     height: 56px;
-    background-image: url("/images/templates/collaboration-rooms/ideal-for-teamwork/teamwork-icons.svg");
+    background-image: ${(props) => `url(${props.$img.url})`};
     background-repeat: no-repeat;
-    background-position-y: -20px;
+    background-position-y: center;
+    background-position-x: ${(props) => props.$img.positionX};
+  }
+
+  @media ${device.tabletS} {
+    font-size: 20px;
+    line-height: 27px;
   }
 `;
 
-const StyledCardText = styled(Text)`
+const StyledCardText = styled(Text)<{ $color: ITeamworkCard["color"] }>`
   font-size: 18px;
+  line-height: 1.5em;
+  color: ${(props) => (props.$color ? props.$color : "#666666")};
 
   @media ${device.tabletS} {
     font-size: 16px;
@@ -31,83 +59,6 @@ const StyledCardText = styled(Text)`
 
   @media ${device.mobile} {
     font-size: 14px;
-  }
-`;
-
-const StyledTeamworkCard = styled.div<{
-  $background: ITeamworkCard["background"];
-  $borderColor: ITeamworkCard["borderColor"];
-}>`
-  padding: 32px;
-  border: 1px solid ${({ $borderColor }) => $borderColor || "#ccc"};
-  background: ${({ $background }) => $background || "#fff"};
-  border-radius: 6px;
-  color: #666;
-  line-height: 1.5em;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  &:nth-child(1) {
-    width: calc(60% - 32px);
-    margin-right: 32px;
-
-    ${StyledCardTitle}::before {
-      background-position-x: -18px;
-    }
-
-    @media ${device.mobile} {
-      width: 100%;
-      margin-right: 0;
-    }
-  }
-
-  &:nth-child(2) {
-    width: 40%;
-    color: #fff;
-
-    ${StyledCardTitle} {
-      color: #fff;
-
-      &::before {
-        background-position-x: -94px;
-      }
-    }
-
-    @media ${device.mobile} {
-      width: 100%;
-      order: -1;
-    }
-  }
-
-  &:nth-child(3) {
-    width: calc(40% - 32px);
-    margin-right: 32px;
-
-    ${StyledCardTitle}::before {
-      background-position-x: -170px;
-    }
-
-    @media ${device.mobile} {
-      width: 100%;
-      margin-right: 0;
-    }
-  }
-
-  &:nth-child(4) {
-    width: 60%;
-
-    ${StyledCardTitle}::before {
-      background-position-x: -245px;
-    }
-
-    @media ${device.mobile} {
-      width: 100%;
-    }
-  }
-
-  @media ${device.tabletS} {
-    padding: 16px;
   }
 `;
 

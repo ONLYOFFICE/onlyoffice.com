@@ -2,7 +2,7 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 
 export const items: IBlogCard[] = [
   {
-    imgUrl: "/images/templates/custom-rooms/learn-more/helpcenter.png",
+    imgUrl: "/images/templates/form-filling-rooms/learn-more/helpcenter.png",
     heading: "HelpCenter",
     text: "HelpCenterDesc",
     links: [
@@ -14,7 +14,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/public-rooms/learn-more/docspace.png",
+    imgUrl: "/images/templates/form-filling-rooms/learn-more/docspace.png",
     heading: "YouTube",
     text: "MasterONLYOFFICEDocSpace",
     links: [
@@ -26,7 +26,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/collaboration-rooms/learn-more/customers.png",
+    imgUrl: "/images/templates/form-filling-rooms/learn-more/customers.png",
     heading: "CustomerTestimonial",
     text: "HowKinderhausBerlinSharesAndCollaborates",
     links: [

@@ -27,14 +27,6 @@ const StyledLearnMoreItems = styled.div`
       max-width: 272px;
       min-width: 272px;
     }
-
-    div:nth-child(2) > div:first-child {
-      margin-bottom: 12px;
-
-      h3 {
-        margin-bottom: 8px;
-      }
-    }
   }
 
   @media ${device.tablet} {

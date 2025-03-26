@@ -1,1 +1,0 @@
-export { RoomsFaq } from "./RoomsFaq";

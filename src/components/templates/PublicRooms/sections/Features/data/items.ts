@@ -1,14 +1,14 @@
-import { IFeatureTextImage } from "@src/components/widgets/FeatureTextImage";
+import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
-export const items: IFeatureTextImage[] = [
+export const items: IFeatureImageItem[] = [
   {
     title: "IdealForPublicSharing",
     text: "PublicSharingDesc",
     image: {
       url: "PublicSharingImgUrl",
       url2x: "PublicSharingImgUrl2x",
+      height: 550,
     },
-    imageHeight: 550,
   },
   {
     title: "AbsolutelySafe",
@@ -16,8 +16,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "AbsolutelySafeImgUrl",
       url2x: "AbsolutelySafeImgUrl2x",
+      height: 594,
     },
-    imageHeight: 594,
   },
   {
     title: "EasyToStore",
@@ -25,8 +25,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "EasyToStoreImgUrl",
       url2x: "EasyToStoreImgUrl2x",
+      height: 586,
     },
-    imageHeight: 586,
   },
   {
     title: "SeamlesslyEmbeddable",
@@ -34,8 +34,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "SeamlesslyEmbeddableImgUrl",
       url2x: "SeamlesslyEmbeddableImgUrl2x",
+      height: 540,
     },
-    imageHeight: 540,
   },
   {
     title: "CostEffectiveForAnyBudget",
@@ -43,7 +43,7 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "CostEffectiveImgUrl",
       url2x: "CostEffectiveImgUrl2x",
+      height: 504,
     },
-    imageHeight: 504,
   },
 ];

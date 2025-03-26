@@ -1,1 +1,0 @@
-export { RoomsGetStarted } from "./RoomsGetStarted";

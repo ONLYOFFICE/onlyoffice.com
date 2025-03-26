@@ -1,14 +1,14 @@
-import { IFeatureTextImage } from "@src/components/widgets/FeatureTextImage";
+import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
-export const items: IFeatureTextImage[] = [
+export const items: IFeatureImageItem[] = [
   {
     title: "Tailored",
     text: "TailoredDesc",
     image: {
       url: "TailoredImgUrl",
       url2x: "TailoredImgUrl2x",
+      height: 550,
     },
-    imageHeight: 550,
   },
   {
     title: "Sophisticated",
@@ -23,8 +23,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "SophisticatedImgUrl",
       url2x: "SophisticatedImgUrl2x",
+      height: 560,
     },
-    imageHeight: 560,
   },
   {
     title: "CostEfectiveForAnyBudget",
@@ -32,7 +32,7 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "CostEfectiveForAnyBudgetImgUrl",
       url2x: "CostEfectiveForAnyBudgetImgUrl2x",
+      height: 504,
     },
-    imageHeight: 504,
   },
 ];
