@@ -1,25 +1,35 @@
+import React from "react";
 import {
-  StyledFeatureItem,
-  StyledFeatureItemIcon,
+  StyledFeatureItemWrapper,
+  StyledFeatureItemTitle,
   StyledFeatureItemText,
 } from "./FeatureItem.styled";
 import { IFeatureItem } from "./FeatureItem.types";
 
 const FeatureItem = ({
+  variant = "vertical",
+  sprite,
   icon,
-  iconPositionX = "0",
+  iconPositionX = "0px",
   iconPositionY = "center",
-  heading,
+  title,
+  text,
 }: IFeatureItem) => {
   return (
-    <StyledFeatureItem>
-      <StyledFeatureItemIcon
-        $icon={icon}
-        $iconPositionX={iconPositionX}
-        $iconPositionY={iconPositionY}
-      />
-      <StyledFeatureItemText>{heading}</StyledFeatureItemText>
-    </StyledFeatureItem>
+    <StyledFeatureItemWrapper
+      $variant={variant}
+      $sprite={sprite}
+      $icon={icon}
+      $iconPositionX={iconPositionX}
+      $iconPositionY={iconPositionY}
+    >
+      {title && (
+        <StyledFeatureItemTitle $variant={variant} level={5}>
+          {title}
+        </StyledFeatureItemTitle>
+      )}
+      <StyledFeatureItemText $variant={variant}>{text}</StyledFeatureItemText>
+    </StyledFeatureItemWrapper>
   );
 };
 
