@@ -2,33 +2,45 @@ import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
 export const items: IFeatureItem[] = [
   {
-    icon: "/images/templates/office-for-drupal/features/features.svg",
-    iconPositionX: "-20px",
+    icon: {
+      url: "/images/templates/office-for-drupal/features/features.svg",
+      positionX: "-20px",
+    },
     heading: "Reason1",
   },
   {
-    icon: "/images/templates/office-for-drupal/features/features.svg",
-    iconPositionX: "-148px",
+    icon: {
+      url: "/images/templates/office-for-drupal/features/features.svg",
+      positionX: "-148px",
+    },
     heading: "Reason2",
   },
   {
-    icon: "/images/templates/office-for-drupal/features/features.svg",
-    iconPositionX: "-276px",
+    icon: {
+      url: "/images/templates/office-for-drupal/features/features.svg",
+      positionX: "-276px",
+    },
     heading: "Reason3",
   },
   {
-    icon: "/images/templates/office-for-drupal/features/features.svg",
-    iconPositionX: "-404px",
+    icon: {
+      url: "/images/templates/office-for-drupal/features/features.svg",
+      positionX: "-404px",
+    },
     heading: "Reason4",
   },
   {
-    icon: "/images/templates/office-for-drupal/features/features.svg",
-    iconPositionX: "-532px",
+    icon: {
+      url: "/images/templates/office-for-drupal/features/features.svg",
+      positionX: "-532px",
+    },
     heading: "Reason5",
   },
   {
-    icon: "/images/templates/office-for-drupal/features/features.svg",
-    iconPositionX: "-658px",
+    icon: {
+      url: "/images/templates/office-for-drupal/features/features.svg",
+      positionX: "-658px",
+    },
     heading: "Reason6",
   },
 ];

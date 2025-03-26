@@ -2,33 +2,45 @@ import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
 export const items: IFeatureItem[] = [
   {
-    icon: "/images/templates/office-for-trello/features/features.svg",
-    iconPositionX: "0px",
+    icon: {
+      url: "/images/templates/office-for-trello/features/features.svg",
+      positionX: "0px",
+    },
     heading: "Reason1",
   },
   {
-    icon: "/images/templates/office-for-trello/features/features.svg",
-    iconPositionX: "-74px",
+    icon: {
+      url: "/images/templates/office-for-trello/features/features.svg",
+      positionX: "-74px",
+    },
     heading: "Reason2",
   },
   {
-    icon: "/images/templates/office-for-trello/features/features.svg",
-    iconPositionX: "-148px",
+    icon: {
+      url: "/images/templates/office-for-trello/features/features.svg",
+      positionX: "-148px",
+    },
     heading: "Reason3",
   },
   {
-    icon: "/images/templates/office-for-trello/features/features.svg",
-    iconPositionX: "-222px",
+    icon: {
+      url: "/images/templates/office-for-trello/features/features.svg",
+      positionX: "-222px",
+    },
     heading: "Reason4",
   },
   {
-    icon: "/images/templates/office-for-trello/features/features.svg",
-    iconPositionX: "-296px",
+    icon: {
+      url: "/images/templates/office-for-trello/features/features.svg",
+      positionX: "-296px",
+    },
     heading: "Reason5",
   },
   {
-    icon: "/images/templates/office-for-trello/features/features.svg",
-    iconPositionX: "-370px",
+    icon: {
+      url: "/images/templates/office-for-trello/features/features.svg",
+      positionX: "-370px",
+    },
     heading: "Reason6",
   },
 ];

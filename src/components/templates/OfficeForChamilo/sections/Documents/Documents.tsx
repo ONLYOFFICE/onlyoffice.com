@@ -9,7 +9,7 @@ const Documents = () => {
   const { t } = useTranslation("office-for-chamilo");
 
   return (
-    <Section bgColor="#f9f9f9">
+    <Section background="#f9f9f9">
       <Container>
         <StyledDocumentsHeading
           level={2}
@@ -20,11 +20,11 @@ const Documents = () => {
         <FeatureSwitcher
           imageHeight={470}
           imageWidth={736}
-          items={items.map(({ label, images }) => ({
+          items={items.map(({ label, image }) => ({
             label: t(String(label)),
-            images: {
-              url: t(images.url),
-              url2x: images.url2x ? t(images.url2x) : undefined,
+            image: {
+              url: t(image.url),
+              url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
         />

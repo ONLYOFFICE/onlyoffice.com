@@ -2,33 +2,45 @@ import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
 export const items: IFeatureItem[] = [
   {
-    icon: "/images/templates/office-for-jira/features/features.svg",
-    iconPositionX: "0px",
+    icon: {
+      url: "/images/templates/office-for-jira/features/features.svg",
+      positionX: "0px",
+    },
     heading: "Reason1",
   },
   {
-    icon: "/images/templates/office-for-jira/features/features.svg",
-    iconPositionX: "-80px",
+    icon: {
+      url: "/images/templates/office-for-jira/features/features.svg",
+      positionX: "-80px",
+    },
     heading: "Reason2",
   },
   {
-    icon: "/images/templates/office-for-jira/features/features.svg",
-    iconPositionX: "-160px",
+    icon: {
+      url: "/images/templates/office-for-jira/features/features.svg",
+      positionX: "-160px",
+    },
     heading: "Reason3",
   },
   {
-    icon: "/images/templates/office-for-jira/features/features.svg",
-    iconPositionX: "-240px",
+    icon: {
+      url: "/images/templates/office-for-jira/features/features.svg",
+      positionX: "-240px",
+    },
     heading: "Reason4",
   },
   {
-    icon: "/images/templates/office-for-jira/features/features.svg",
-    iconPositionX: "-320px",
+    icon: {
+      url: "/images/templates/office-for-jira/features/features.svg",
+      positionX: "-320px",
+    },
     heading: "Reason5",
   },
   {
-    icon: "/images/templates/office-for-jira/features/features.svg",
-    iconPositionX: "-400px",
+    icon: {
+      url: "/images/templates/office-for-jira/features/features.svg",
+      positionX: "-400px",
+    },
     heading: "Reason6",
   },
 ];
