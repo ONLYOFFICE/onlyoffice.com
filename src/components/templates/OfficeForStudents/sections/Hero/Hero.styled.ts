@@ -7,7 +7,7 @@ import { IHero } from "./Hero.types";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/templates/public-rooms/hero/bg.svg");
+  background-image: url("/images/templates/office-for-students/hero/bg.svg");
   background-position: 37% -630px;
   background-repeat: no-repeat;
   background-color: #f9f9f9;

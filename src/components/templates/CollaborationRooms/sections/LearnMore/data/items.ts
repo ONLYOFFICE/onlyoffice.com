@@ -13,7 +13,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/public-rooms/learn-more/docspace.png",
+    imgUrl: "/images/templates/collaboration-rooms/learn-more/docspace.png",
     heading: "YouTube",
     text: "MasterONLYOFFICEDocSpace",
     links: [

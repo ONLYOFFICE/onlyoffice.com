@@ -9,9 +9,9 @@ import {
 } from "./DocSpace.styled";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
-import { FeatureTextImage } from "@src/components/widgets/FeatureTextImage";
 import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
+import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
 const DocSpace = () => {
   const { t } = useTranslation("office-for-students");
@@ -38,10 +38,11 @@ const DocSpace = () => {
 
         <StyledDesktopEditorsFeatures>
           {items.map(({ title, text, links, image, ...items }, index) => (
-            <FeatureTextImage
+            <FeatureImageItem
               key={index}
               {...items}
               title={t(title)}
+              position={index % 2 === 1 ? "right" : "left"}
               text={
                 <Trans
                   t={t}

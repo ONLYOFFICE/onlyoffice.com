@@ -1,14 +1,14 @@
-import { IFeatureTextImage } from "@src/components/widgets/FeatureTextImage";
+import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
-export const items: IFeatureTextImage[] = [
+export const items: IFeatureImageItem[] = [
   {
     title: "IdealForDueDiligence",
     text: "IdealForDueDiligenceDesc",
     image: {
       url: "IdealForDueDiligenceImgUrl",
       url2x: "IdealForDueDiligenceImgUrl2x",
+      height: 594,
     },
-    imageHeight: 594,
   },
   {
     title: "CompletelyOrganized",
@@ -16,8 +16,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "CompletelyOrganizedImgUrl",
       url2x: "CompletelyOrganizedImgUrl2x",
+      height: 552,
     },
-    imageHeight: 552,
   },
   {
     title: "HighLevelOfDataSecurity",
@@ -25,8 +25,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "HighLevelOfDataSecurityImgUrl",
       url2x: "HighLevelOfDataSecurityImgUrl2x",
+      height: 622,
     },
-    imageHeight: 622,
   },
   {
     title: "CostEffectiveForAnyBudget",
@@ -34,7 +34,7 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "CostEffectiveForAnyBudgetImgUrl",
       url2x: "CostEffectiveForAnyBudgetImgUrl2x",
+      height: 504,
     },
-    imageHeight: 504,
   },
 ];

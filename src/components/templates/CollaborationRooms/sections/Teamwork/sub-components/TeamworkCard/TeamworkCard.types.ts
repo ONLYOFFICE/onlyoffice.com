@@ -1,10 +1,19 @@
 export interface ITeamworkCard {
-  /** The teamwork card title. */
+  /** Title of the card */
   title: string;
-  /** The teamwork card text. */
+  /** Text content of the card */
   text: string;
-  /** The teamwork card background. Default: #fff */
-  background?: string;
-  /** The teamwork card border color. Default: #ccc */
+  /** Image details including URL and position */
+  img: {
+    /** URL of the image */
+    url: string;
+    /** X-axis position for background image */
+    positionX?: string;
+  };
+  /** Text color */
+  color?: string;
+  /** Background color */
+  bgColor?: string;
+  /** Border color. Default: "#cccccc" */
   borderColor?: string;
 }

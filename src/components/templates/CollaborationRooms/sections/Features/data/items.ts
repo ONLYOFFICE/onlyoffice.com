@@ -1,14 +1,14 @@
-import { IFeatureTextImage } from "@src/components/widgets/FeatureTextImage";
+import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
-export const items: IFeatureTextImage[] = [
+export const items: IFeatureImageItem[] = [
   {
     title: "SecureForSensitiveDocuments",
     text: "ProtectYourFiles",
     image: {
       url: "SecureImgUrl",
       url2x: "SecureImgUrl2x",
+      height: 518,
     },
-    imageHeight: 518,
   },
   {
     title: "ConvenientForMultipleCoAuthors",
@@ -17,8 +17,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "ConvenientImgUrl",
       url2x: "ConvenientImgUrl2x",
+      height: 540,
     },
-    imageHeight: 540,
   },
   {
     title: "CostEffectiveForAnyBudget",
@@ -26,7 +26,7 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "BudgetImgUrl",
       url2x: "BudgetImgUrl2x",
+      height: 504,
     },
-    imageHeight: 504,
   },
 ];

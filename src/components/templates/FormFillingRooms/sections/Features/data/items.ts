@@ -1,14 +1,14 @@
-import { IFeatureTextImage } from "@src/components/widgets/FeatureTextImage";
+import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
-export const items: IFeatureTextImage[] = [
+export const items: IFeatureImageItem[] = [
   {
     title: "EasyFormUploading",
     text: "EasyFormUploadingDesc",
     image: {
       url: "EasyFormUploadingUrl",
       url2x: "EasyFormUploadingUrl2x",
+      height: 580,
     },
-    imageHeight: 580,
   },
   {
     title: "QuickSharing",
@@ -16,8 +16,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "QuickSharingUrl",
       url2x: "QuickSharingUrl2x",
+      height: 580,
     },
-    imageHeight: 580,
   },
   {
     title: "IntuitiveProcess",
@@ -25,8 +25,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "IntuitiveProcessUrl",
       url2x: "IntuitiveProcessUrl2x",
+      height: 530,
     },
-    imageHeight: 530,
   },
   {
     title: "ConvenientAnalyzing",
@@ -34,8 +34,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "ConvenientAnalyzingUrl",
       url2x: "ConvenientAnalyzingUrl2x",
+      height: 530,
     },
-    imageHeight: 530,
   },
   {
     title: "CostEffectiveForAnyBudget",
@@ -43,7 +43,7 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "CostEffectiveForAnyBudgetUrl",
       url2x: "CostEffectiveForAnyBudgetUrl2x",
+      height: 504,
     },
-    imageHeight: 504,
   },
 ];

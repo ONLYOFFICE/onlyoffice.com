@@ -38,8 +38,9 @@ export async function getStaticProps({ locale }: ILocale) {
       ...(await serverSideTranslations(locale, [
         "common",
         "public-rooms",
-        "RoomsGetStarted",
-        "RoomsFaq",
+        "RoomFeatures",
+        "RoomGetStarted",
+        "RoomFaq",
         "RoomTabs",
       ])),
       locale,

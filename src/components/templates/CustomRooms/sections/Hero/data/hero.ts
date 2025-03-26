@@ -1,6 +1,6 @@
-import { IRoomsHero } from "@src/components/widgets/RoomsHero";
+import { IRoomHero } from "@src/components/modules/room/RoomHero";
 
-export const hero: IRoomsHero = {
+export const hero: IRoomHero = {
   title: "WorkTogetherAccording",
   text: "EditAndCollaborate",
   items: [
@@ -15,6 +15,4 @@ export const hero: IRoomsHero = {
   },
   imgUrl: "HeroImgUrl",
   imgUrl2x: "HeroImgUrl2x",
-  imgWidth: 674,
-  imgHeight: 730,
 };

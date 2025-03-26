@@ -1,6 +1,6 @@
-import { IFeatureTextImage } from "@src/components/widgets/FeatureTextImage";
+import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
-export const items: IFeatureTextImage[] = [
+export const items: IFeatureImageItem[] = [
   {
     title: "SmoothAndIntuitiveOfficeExperience",
     text: "SmoothAndIntuitiveOfficeExperienceDesc",
@@ -25,8 +25,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "SmoothAndIntuitiveOfficeExperienceUrl",
       url2x: "SmoothAndIntuitiveOfficeExperienceUrl2x",
+      height: 500,
     },
-    imageHeight: 500,
   },
   {
     title: "SuitedForAllOperatingSystems",
@@ -34,8 +34,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "SuitedForAllOperatingSystemsUrl",
       url2x: "SuitedForAllOperatingSystemsUrl2x",
+      height: 470,
     },
-    imageHeight: 470,
   },
   {
     title: "FreeAndOpenSource",
@@ -43,8 +43,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "FreeAndOpenSourceUrl",
       url2x: "FreeAndOpenSourceUrl2x",
+      height: 470,
     },
-    imageHeight: 470,
   },
   {
     title: "BothOfflineAndOnline",
@@ -62,8 +62,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "BothOfflineAndOnlineUrl",
       url2x: "BothOfflineAndOnlineUrl2x",
+      height: 494,
     },
-    imageHeight: 494,
   },
   {
     title: "DigitalLibraryAtHand",
@@ -77,7 +77,7 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "DigitalLibraryAtHandUrl",
       url2x: "DigitalLibraryAtHandUrl2x",
+      height: 494,
     },
-    imageHeight: 494,
   },
 ];

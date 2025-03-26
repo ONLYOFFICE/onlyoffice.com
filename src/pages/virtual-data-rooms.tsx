@@ -37,10 +37,10 @@ export async function getStaticProps({ locale }: ILocale) {
     props: {
       ...(await serverSideTranslations(locale, [
         "common",
-        "form-filling-rooms",
         "virtual-data-rooms",
-        "RoomsGetStarted",
-        "RoomsFaq",
+        "RoomFeatures",
+        "RoomGetStarted",
+        "RoomFaq",
         "RoomTabs",
       ])),
       locale,

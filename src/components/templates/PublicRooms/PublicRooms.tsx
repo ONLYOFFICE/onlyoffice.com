@@ -1,18 +1,18 @@
-import { Features } from "./sections/Features";
 import { Hero } from "./sections/Hero";
-import { RoomTabs } from "@src/components/modules/RoomsModules/RoomTabs";
-import { RoomsGetStarted } from "@src/components/modules/RoomsModules/RoomsGetStarted";
-import { RoomsFaq } from "@src/components/modules/RoomsModules/RoomsFaq";
+import { Features } from "./sections/Features";
+import { RoomGetStarted } from "@src/components/modules/room/RoomGetStarted";
 import { LearnMore } from "./sections/LearnMore";
+import { RoomFaq } from "@src/components/modules/room/RoomFaq";
+import { RoomTabs } from "@src/components/modules/room/RoomTabs";
 
 const PublicRoomsTemplate = () => {
   return (
     <>
       <Hero />
       <Features />
-      <RoomsGetStarted />
+      <RoomGetStarted />
       <LearnMore />
-      <RoomsFaq />
+      <RoomFaq />
       <RoomTabs />
     </>
   );

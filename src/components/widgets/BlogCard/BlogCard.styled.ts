@@ -33,6 +33,7 @@ const StyledBlogCardBody = styled.div`
   flex-direction: column;
   padding: 32px;
   height: 100%;
+  background-color: #ffffff;
 
   @media ${device.mobile} {
     padding: 24px;

@@ -9,9 +9,9 @@ import {
 } from "./DesktopEditors.styled";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
-import { FeatureTextImage } from "@src/components/widgets/FeatureTextImage";
 import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
+import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
 const DesktopEditors = () => {
   const { t } = useTranslation("office-for-students");
@@ -40,9 +40,10 @@ const DesktopEditors = () => {
 
         <StyledDesktopEditorsFeatures>
           {items.map(({ title, text, links, image, ...items }, index) => (
-            <FeatureTextImage
+            <FeatureImageItem
               key={index}
               {...items}
+              position={index % 2 === 1 ? "right" : "left"}
               title={t(title)}
               text={
                 <Trans

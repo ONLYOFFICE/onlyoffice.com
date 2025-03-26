@@ -8,13 +8,15 @@ import { ITeamworkCard } from "./TeamworkCard.types";
 const TeamworkCard = ({
   title,
   text,
-  background,
+  img,
+  color,
+  bgColor,
   borderColor,
 }: ITeamworkCard) => {
   return (
-    <StyledTeamworkCard $background={background} $borderColor={borderColor}>
-      <StyledCardTitle level={3} label={title} />
-      <StyledCardText label={text} />
+    <StyledTeamworkCard $bgColor={bgColor} $borderColor={borderColor}>
+      <StyledCardTitle $img={img} $color={color} level={3} label={title} />
+      <StyledCardText $color={color} label={text} />
     </StyledTeamworkCard>
   );
 };

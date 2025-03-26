@@ -1,14 +1,14 @@
-import { IFeatureTextImage } from "@src/components/widgets/FeatureTextImage";
+import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
-export const items: IFeatureTextImage[] = [
+export const items: IFeatureImageItem[] = [
   {
     title: "TeamworkHasNeverBeenEasier",
     text: "TeamworkHasNeverBeenEasierDesc",
     image: {
       url: "TeamworkHasNeverBeenEasierUrl",
       url2x: "TeamworkHasNeverBeenEasierUrl2x",
+      height: 550,
     },
-    imageHeight: 550,
   },
   {
     title: "FitToAnyScenario",
@@ -38,8 +38,8 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "FitToAnyScenarioUrl",
       url2x: "FitToAnyScenarioUrl2x",
+      height: 550,
     },
-    imageHeight: 550,
   },
   {
     title: "StressFreeCoEditing",
@@ -47,7 +47,7 @@ export const items: IFeatureTextImage[] = [
     image: {
       url: "StressFreeCoEditingUrl",
       url2x: "StressFreeCoEditingUrl2x",
+      height: 540,
     },
-    imageHeight: 540,
   },
 ];
