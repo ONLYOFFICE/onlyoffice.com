@@ -50,7 +50,7 @@ const EventsPage = ({ locale, events }: EventsPageProps) => {
         <Header locale={locale} bgColor="#F5F5F5"/>
       </Layout.Header>
       <Layout.Main>
-        <EventsTemplate events={events} locale={locale} />
+        <EventsTemplate events={events} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -70,7 +70,21 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
       throw new Error('No data in API response');
     }
 
-    const events = response.data.map((item: any) => ({
+    const events = response.data.map((item: {
+      id: number;
+      documentId: string;
+      name: string;
+      start_date: string;
+      end_date: string;
+      start_time: string | null;
+      end_time: string | null;
+      place: string;
+      description: string;
+      link: string;
+      pastlink: string;
+      image: EventImage[];
+      image_2X: EventImage[];
+    }) => ({
       id: item.id,
       documentId: item.documentId,
       name: item.name,

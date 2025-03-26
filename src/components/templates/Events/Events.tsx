@@ -1,5 +1,5 @@
 import { Hero } from "./sections/Hero";
-import { СurrentEvents } from "./sections/СurrentEvents";
+import { CurrentEvents } from "./sections/CurrentEvents";
 import { PastEvents } from "./sections/PastEvents";
 
 interface EventImage {
@@ -24,15 +24,14 @@ interface Event {
 
 interface EventsTemplateProps {
   events: Event[] | null;
-  locale: string;
 }
 
-const EventsTemplate = ({ events, locale }: EventsTemplateProps) => {
+const EventsTemplate = ({ events }: EventsTemplateProps) => {
   return (
     <>
       <Hero />
-      <СurrentEvents events={events} locale={locale} />
-      <PastEvents events={events} locale={locale} />
+      <CurrentEvents events={events} />
+      <PastEvents events={events} />
     </>
   );
 };

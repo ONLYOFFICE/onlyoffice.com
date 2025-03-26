@@ -1,1 +1,0 @@
-export { СurrentEvents } from "./СurrentEvents";

@@ -1,9 +1,9 @@
-import { useTranslation } from "next-i18next";
+import { useTranslation, TFunction } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import { StyledPastEvents, StyledMoreLink } from "./PastEvents.styled";
 import { Heading } from "@src/components/ui/Heading";
 
-const formatEventDate = (startDate: string, t: any, endDate?: string) => {
+const formatEventDate = (startDate: string, t: TFunction, endDate?: string) => {
   const start = new Date(startDate);
   const end = endDate ? new Date(endDate) : null;
   
@@ -75,10 +75,9 @@ interface Event {
 
 interface PastEventsProps {
   events: Event[] | null;
-  locale: string;
 }
 
-const PastEvents = ({ events, locale }: PastEventsProps) => {
+const PastEvents = ({ events }: PastEventsProps) => {
   const { t } = useTranslation(["events", "months"]);
 
   if (!events) {
@@ -127,7 +126,7 @@ const PastEvents = ({ events, locale }: PastEventsProps) => {
               <div className="emt_place">{event.place}</div> 
               {event.pastlink && (
                 <div className="emt_past_link">
-                  <StyledMoreLink 
+                  <StyledMoreLink                   
                     href={event.pastlink} 
                     target="_blank" 
                     rel="noopener noreferrer"

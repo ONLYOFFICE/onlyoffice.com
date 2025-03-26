@@ -1,9 +1,9 @@
-import { useTranslation } from "next-i18next";
+import { useTranslation, TFunction } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
-import { StyledCurrentEvents } from "./СurrentEvents.styled";
+import { StyledCurrentEvents } from "./CurrentEvents.styled";
 import { Heading } from "@src/components/ui/Heading";
 
-const formatEventDate = (startDate: string, t: any, endDate?: string) => {
+const formatEventDate = (startDate: string, t: TFunction, endDate?: string) => {
   const start = new Date(startDate);
   const end = endDate ? new Date(endDate) : null;
   
@@ -75,10 +75,9 @@ interface Event {
 
 interface CurrentEventsProps {
   events: Event[] | null;
-  locale: string;
 }
 
-const СurrentEvents = ({ events, locale }: CurrentEventsProps) => {
+const CurrentEvents = ({ events }: CurrentEventsProps) => {
   const { t } = useTranslation(["events", "months"]);
 
   if (!events) {
@@ -150,4 +149,4 @@ const СurrentEvents = ({ events, locale }: CurrentEventsProps) => {
   );
 };
 
-export { СurrentEvents };
+export { CurrentEvents };
