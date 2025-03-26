@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface IFeatureTextImage {
   /** The unique identifier. */
   id?: string;
@@ -6,9 +8,9 @@ export interface IFeatureTextImage {
   /** The title. */
   title: string;
   /** The text. */
-  text: string;
+  text: string | ReactNode;
   /** The links. */
-  links?: { href: string; label: string; isExternal?: boolean }[];
+  links?: { href?: string; label?: string; isExternal?: boolean }[];
   /** The image. */
   image: { url: string; url2x?: string };
   /** Image width. Default: 640 */
