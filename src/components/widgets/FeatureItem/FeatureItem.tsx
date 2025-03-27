@@ -8,20 +8,16 @@ import { IFeatureItem } from "./FeatureItem.types";
 
 const FeatureItem = ({
   variant = "vertical",
-  sprite,
   icon,
-  iconPositionX = "0px",
-  iconPositionY = "center",
   title,
   text,
 }: IFeatureItem) => {
   return (
     <StyledFeatureItemWrapper
       $variant={variant}
-      $sprite={sprite}
-      $icon={icon}
-      $iconPositionX={iconPositionX}
-      $iconPositionY={iconPositionY}
+      $icon={icon.url}
+      $iconPositionX={icon.positionX}
+      $iconPositionY={icon.positionY}
     >
       {title && (
         <StyledFeatureItemTitle $variant={variant} level={5}>

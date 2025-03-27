@@ -43,7 +43,10 @@ const Teamwork = () => {
                     key={j}
                     title={t(item.title)}
                     text={t(item.text)}
-                    img={item.img}
+                    image={{
+                      url: item.image.url,
+                      positionX: item.image.positionX,
+                    }}
                     color={item.color}
                     bgColor={item.bgColor}
                     borderColor={item.borderColor}

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { IModal } from "./Modal.types";
+import { device } from "@src/utils/device";
 
 const StyledModal = styled.div<{ $isOpen: IModal["isOpen"] }>`
   position: fixed;
@@ -21,6 +22,10 @@ const StyledModalContainer = styled.div`
   justify-content: center;
   padding: 24px;
   min-height: 100%;
+
+  @media ${device.mobile} {
+    padding: 16px;
+  }
 `;
 
 const StyledModalWrapper = styled.div<{ $maxWidth: IModal["maxWidth"] }>`

@@ -19,7 +19,9 @@ const Features = () => {
           <StyledFeaturesItems>
             {items.map((item, index) => (
               <FeatureItem
-                icon={item.icon}
+                icon={{
+                  url: item.icon.url,
+                }}
                 text={
                   <Trans
                     t={t}

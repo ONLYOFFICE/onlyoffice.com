@@ -1,12 +1,10 @@
-import { ReactNode } from "react";
-
 export interface IText {
   /** The unique identifier. */
   id?: string;
   /** Additional CSS class names. */
   className?: string;
   /** Text label content. If both `children` and `label` are provided, `children` will take precedence. */
-  label?: string | ReactNode;
+  label?: string | React.ReactNode;
   /** Content to be rendered inside. If both `children` and `label` are provided, `children` will take precedence. */
   children?: React.ReactNode;
   /** The type of element to render. Default: "p". */

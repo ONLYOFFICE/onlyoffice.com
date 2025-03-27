@@ -33,10 +33,10 @@ const Customers = () => {
             {customersItems.map((item, index) => (
               <li key={index}>
                 <img
-                  src={item.imgUrl}
-                  alt={item.heading}
-                  width={item.width}
-                  height={item.height}
+                  src={item.image.url}
+                  alt={item.image.alt ?? item.heading}
+                  width={item.image.width}
+                  height={item.image.height}
                 />
               </li>
             ))}

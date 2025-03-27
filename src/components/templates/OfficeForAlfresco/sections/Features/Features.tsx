@@ -25,8 +25,10 @@ const Features = () => {
             {items.map((item, index) => (
               <FeatureItem
                 key={index}
-                icon={item.icon}
-                iconPositionX={item.iconPositionX}
+                icon={{
+                  url: item.icon.url,
+                  positionX: item.icon.positionX,
+                }}
                 text={
                   <Trans
                     t={t}

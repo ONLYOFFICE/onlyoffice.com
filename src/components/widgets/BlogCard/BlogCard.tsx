@@ -26,7 +26,7 @@ const BlogCard = ({
 
       <StyledBlogCardBody>
         <StyledBlogCardWrapper $isLarge={isLarge}>
-          <Heading level={3} size={5} label={heading} />
+          {heading && <Heading level={3} size={5} label={heading} />}
           {text && <Text size={3} color="#666666" label={text} />}
           {blogLink && (
             <StyledBlogLink

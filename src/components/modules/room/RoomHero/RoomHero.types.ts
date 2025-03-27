@@ -7,8 +7,6 @@ export interface IRoomHero {
   button: { id?: string; label: string; href: string };
   /** Hero list items. */
   items: { label: string }[];
-  /** Hero image url. */
-  imgUrl: string;
-  /** Hero image url 2x. */
-  imgUrl2x: string;
+  /** Hero image. */
+  image: { url: string; url2x: string };
 }

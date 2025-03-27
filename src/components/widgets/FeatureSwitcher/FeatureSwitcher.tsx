@@ -39,8 +39,8 @@ const FeatureSwitcher = ({
                   $imageWidth={imageWidth}
                   $imageHeight={imageHeight}
                   $isMobile
-                  $image={items[activeTab].images.url}
-                  $image2x={items[activeTab].images?.url2x ?? ""}
+                  $imageUrl={items[activeTab].image.url}
+                  $imageUrl2x={items[activeTab].image?.url2x ?? ""}
                 ></StyledFeatureSwitcherImage>
               )}
             </li>
@@ -58,8 +58,8 @@ const FeatureSwitcher = ({
           $imageWidth={imageWidth}
           $imageHeight={imageHeight}
           $isDesktop
-          $image={items[activeTab].images.url}
-          $image2x={items[activeTab].images?.url2x ?? ""}
+          $imageUrl={items[activeTab].image.url}
+          $imageUrl2x={items[activeTab].image?.url2x ?? ""}
         ></StyledFeatureSwitcherImage>
       )}
     </StyledFeatureSwitcher>

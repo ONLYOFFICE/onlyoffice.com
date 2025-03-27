@@ -6,10 +6,9 @@ import { IFeatureItem } from "./FeatureItem.types";
 
 const StyledFeatureItemWrapper = styled.div<{
   $variant: IFeatureItem["variant"];
-  $sprite: IFeatureItem["sprite"];
-  $icon: IFeatureItem["icon"];
-  $iconPositionX: IFeatureItem["iconPositionX"];
-  $iconPositionY: IFeatureItem["iconPositionY"];
+  $icon: IFeatureItem["icon"]["url"];
+  $iconPositionX: IFeatureItem["icon"]["positionX"];
+  $iconPositionY: IFeatureItem["icon"]["positionY"];
 }>`
   display: flex;
   flex-direction: column;
@@ -31,10 +30,12 @@ const StyledFeatureItemWrapper = styled.div<{
       $variant === "vertical" ? "translateX(-50%)" : "none"};
     width: 64px;
     height: 64px;
-    background-image: url(${({ $sprite, $icon }) => $sprite || $icon});
+    background-image: url(${({ $icon }) => $icon});
     background-repeat: no-repeat;
-    background-position: ${({ $iconPositionX, $iconPositionY }) =>
-      `${$iconPositionX} ${$iconPositionY}`};
+    background-position: ${({
+      $iconPositionX = "0px",
+      $iconPositionY = "center",
+    }) => `${$iconPositionX} ${$iconPositionY}`};
   }
 `;
 

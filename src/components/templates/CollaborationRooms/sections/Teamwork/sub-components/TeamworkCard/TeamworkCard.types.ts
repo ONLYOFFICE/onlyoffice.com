@@ -4,7 +4,7 @@ export interface ITeamworkCard {
   /** Text content of the card */
   text: string;
   /** Image details including URL and position */
-  img: {
+  image: {
     /** URL of the image */
     url: string;
     /** X-axis position for background image */

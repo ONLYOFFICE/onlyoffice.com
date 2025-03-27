@@ -24,8 +24,7 @@ export default {
       control: "object",
     },
     items: { control: "object" },
-    imgUrl: { control: "text" },
-    imgUrl2x: { control: "text" },
+    image: { control: "object" },
   },
 } as Meta;
 
@@ -47,6 +46,8 @@ Default.args = {
     label: "Create free account",
     href: "/docspace-registration",
   },
-  imgUrl: "/images/storybook/modules/room/room-hero/room-hero.png",
-  imgUrl2x: "/images/storybook/modules/room/room-hero/room-hero@2x.png",
+  image: {
+    url: "/images/storybook/modules/room/room-hero/room-hero.png",
+    url2x: "/images/storybook/modules/room/room-hero/room-hero@2x.png",
+  },
 };

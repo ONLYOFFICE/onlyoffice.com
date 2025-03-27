@@ -21,7 +21,7 @@ const StyledTeamworkCard = styled.div<{
 `;
 
 const StyledCardTitle = styled(Heading)<{
-  $img: ITeamworkCard["img"];
+  $image: ITeamworkCard["image"];
   $color: ITeamworkCard["color"];
 }>`
   display: flex;
@@ -36,10 +36,10 @@ const StyledCardTitle = styled(Heading)<{
     width: 56px;
     min-width: 56px;
     height: 56px;
-    background-image: ${(props) => `url(${props.$img.url})`};
+    background-image: ${(props) => `url(${props.$image.url})`};
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: ${(props) => props.$img.positionX};
+    background-position-x: ${(props) => props.$image.positionX};
   }
 
   @media ${device.tabletS} {

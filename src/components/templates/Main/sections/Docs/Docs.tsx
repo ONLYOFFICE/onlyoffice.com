@@ -29,7 +29,7 @@ const Docs = () => {
           position="right"
           imageWidth={776}
           imageHeight={576}
-          items={items.map(({ label, links, images }) => ({
+          items={items.map(({ label, links, image }) => ({
             label: links ? (
               <Trans
                 t={t}
@@ -48,7 +48,7 @@ const Docs = () => {
             ) : (
               t(String(label))
             ),
-            images,
+            image,
           }))}
         />
 

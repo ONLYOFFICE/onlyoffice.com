@@ -113,8 +113,8 @@ const StyledRoomHeroListItem = styled.li`
 `;
 
 const StyledRoomHeroImage = styled.div<{
-  $imgUrl: IRoomHero["imgUrl"];
-  $imgUrl2x: IRoomHero["imgUrl2x"];
+  $imgUrl: IRoomHero["image"]["url"];
+  $imgUrl2x: IRoomHero["image"]["url2x"];
 }>`
   padding-bottom: 108.632%;
   background-image: url(${({ $imgUrl }) => $imgUrl});

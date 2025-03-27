@@ -5,10 +5,15 @@ export interface IFeatureItem {
   className?: string;
   /** The benefit variant */
   variant?: "horizontal" | "vertical";
-  /** The benefits icons sprite */
-  sprite?: string;
-  /** The benefit icon */
-  icon: string;
+  /** The icon. */
+  icon: {
+    /** The icon url. */
+    url: string;
+    /** Horizontal positioning of the icon. Default: "0px". */
+    positionX?: string;
+    /** Vertical positioning of the icon. Default: "center". */
+    positionY?: string;
+  };
   /** Horizontal positioning of the icon. Default: "0px". */
   iconPositionX?: string;
   /** Vertical positioning of the icon. Default: "center". */

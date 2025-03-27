@@ -76,8 +76,8 @@ const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
 const StyledFeatureSwitcherImage = styled.div<{
   $imageWidth?: IFeatureSwitcher["imageWidth"];
   $imageHeight?: IFeatureSwitcher["imageHeight"];
-  $image: string;
-  $image2x: string;
+  $imageUrl: IFeatureSwitcher["items"][0]["image"]["url"];
+  $imageUrl2x: IFeatureSwitcher["items"][0]["image"]["url2x"];
   $isDesktop?: boolean;
   $isMobile?: boolean;
 }>`
@@ -85,7 +85,7 @@ const StyledFeatureSwitcherImage = styled.div<{
     props.$imageHeight && props.$imageWidth
       ? ((props.$imageHeight / props.$imageWidth) * 100).toFixed(4) + "%"
       : "0%"};
-  background-image: url(${(props) => props.$image});
+  background-image: url(${(props) => props.$imageUrl});
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -108,7 +108,8 @@ const StyledFeatureSwitcherImage = styled.div<{
     `}
 
   @media ${device.retina} {
-    background-image: ${({ $image, $image2x }) => `url(${$image2x || $image})`};
+    background-image: ${({ $imageUrl, $imageUrl2x }) =>
+      `url(${$imageUrl2x || $imageUrl})`};
   }
 
   @media ${device.tablet} {
