@@ -44,6 +44,9 @@ export default {
       control: { type: "boolean" },
       options: [true, false],
     },
+    fullWidth: {
+      control: { type: "boolean" },
+    },
   },
 } as Meta<typeof SolutionCard>;
 

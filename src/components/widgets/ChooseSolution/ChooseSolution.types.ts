@@ -9,4 +9,6 @@ export interface IChooseSolution {
   items?: ISolutionCard[];
   /** The large items. */
   largeItems?: ISolutionCard[];
+  /** The full width. */
+  fullWidth?: boolean;
 }
