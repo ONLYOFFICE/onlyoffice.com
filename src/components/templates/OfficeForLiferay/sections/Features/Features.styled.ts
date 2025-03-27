@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Section } from "@src/components/ui/Section";
 
 const StyledFeaturesWrapper = styled.div`
   display: grid;
@@ -10,10 +9,6 @@ const StyledFeaturesWrapper = styled.div`
   @media ${device.mobile} {
     row-gap: 24px;
   }
-`;
-
-const StyledSection = styled(Section)`
-  border-top: 1px solid #E2E2E2;
 `;
 
 const StyledFeaturesItems = styled.div`
@@ -38,4 +33,4 @@ const StyledFeaturesItems = styled.div`
   }
 `;
 
-export { StyledFeaturesWrapper, StyledFeaturesItems, StyledSection };
+export { StyledFeaturesWrapper, StyledFeaturesItems };
