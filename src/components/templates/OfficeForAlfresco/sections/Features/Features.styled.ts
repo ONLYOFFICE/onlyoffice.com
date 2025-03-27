@@ -18,8 +18,6 @@ const StyledFeaturesItems = styled.div`
   gap: 32px;
 
   > div {
-    width: 352px;
-
     @media ${device.desktop} {
       width: calc(33.333% - 24px);
       max-width: 100%;

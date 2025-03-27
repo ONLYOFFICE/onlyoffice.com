@@ -17,6 +17,10 @@ const StyledFeatureItemWrapper = styled.div<{
   padding: ${({ $variant }) =>
     $variant === "horizontal" ? "0 0 0 88px" : "80px 0 0 0"};
 
+  max-width: ${({ $variant }) =>
+    $variant === "horizontal" ? "100%" : "352px"};
+  width: 100%;
+
   @media ${device.mobile} {
     padding: 80px 0 0 0;
   }
