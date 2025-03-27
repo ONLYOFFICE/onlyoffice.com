@@ -15,24 +15,19 @@ export const items: IFeatureImageItem[] = [
     text: "FitToAnyScenarioDesc",
     links: [
       {
-        href: "form-filling-rooms",
-        isExternal: false,
+        href: "/form-filling-rooms",
       },
       {
-        href: "collaboration-rooms",
-        isExternal: false,
+        href: "/collaboration-rooms",
       },
       {
-        href: "custom-rooms",
-        isExternal: false,
+        href: "/custom-rooms",
       },
       {
-        href: "public-rooms",
-        isExternal: false,
+        href: "/public-rooms",
       },
       {
-        href: "office-for-zoom",
-        isExternal: false,
+        href: "/office-for-zoom",
       },
     ],
     image: {
