@@ -1,18 +1,32 @@
 {
   "noEvents": "Geen evenementen",
   "pageTitle": "Evenementen",
-  "pageTitleOG": "Evenementen waaraan we hebben deelgenomen",
+  "pageTitleOG": "Evenementen waar we aan hebben deelgenomen",
   "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> neemt deel aan interessante evenementen over de hele wereld",
   "currentEvents": "Ontmoet ONLYOFFICE op een van de evenementen in 2025",
-  "pastEvents": "Lees over de evenementen waaraan ONLYOFFICE heeft deelgenomen",
+  "pastEvents": "Lees over de evenementen waar ONLYOFFICE aan heeft deelgenomen",
   "moreInfo": "Meer informatie",
-  "pastEventRecording": "Opname van vorig evenement",
+  "pastEventRecording": "Opname van het vorige evenement",
   "scheduleMeeting": "Afspraak plannen",
   "noPastEvents": "Geen eerdere evenementen",
   "dateTemplates": {
     "singleDay": "{{day}} {{month}} {{year}}",
-    "sameMonth": "{{dayStart}} - {{dayEnd}} {{month}} {{year}}",
-    "differentMonths": "{{dayStart}} {{monthStart}} - {{dayEnd}} {{monthEnd}} {{year}}",
-    "differentYears": "{{dayStart}} {{monthStart}} {{yearStart}} - {{dayEnd}} {{monthEnd}} {{year}}"
+    "sameMonth": "{{dayStart}}–{{dayEnd}} {{month}} {{year}}",
+    "differentMonths": "{{dayStart}} {{monthStart}} – {{dayEnd}} {{monthEnd}} {{year}}",
+    "differentYears": "{{dayStart}} {{monthStart}} {{yearStart}} – {{dayEnd}} {{monthEnd}} {{year}}"
+  },
+  "months": {
+    "January": "januari",
+    "February": "februari",
+    "March": "maart",
+    "April": "april",
+    "May": "mei",
+    "June": "juni",
+    "July": "juli",
+    "August": "augustus",
+    "September": "september",
+    "October": "oktober",
+    "November": "november",
+    "December": "december"
   }
 }

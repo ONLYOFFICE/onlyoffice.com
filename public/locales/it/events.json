@@ -11,8 +11,22 @@
   "noPastEvents": "Nessun evento passato",
   "dateTemplates": {
     "singleDay": "{{day}} {{month}} {{year}}",
-    "sameMonth": "{{dayStart}}-{{dayEnd}} {{month}} {{year}}",
+    "sameMonth": "{{dayStart}}–{{dayEnd}} {{month}} {{year}}",
     "differentMonths": "{{dayStart}} {{monthStart}} – {{dayEnd}} {{monthEnd}} {{year}}",
-    "differentYears": "{{dayStart}} {{monthStart}} {{yearStart}} - {{dayEnd}} {{monthEnd}} {{year}}"
+    "differentYears": "{{dayStart}} {{monthStart}} {{yearStart}} – {{dayEnd}} {{monthEnd}} {{year}}"
+  },
+  "months": {
+    "January": "gennaio",
+    "February": "febbraio",
+    "March": "marzo",
+    "April": "aprile",
+    "May": "maggio",
+    "June": "giugno",
+    "July": "luglio",
+    "August": "agosto",
+    "September": "settembre",
+    "October": "ottobre",
+    "November": "novembre",
+    "December": "dicembre"
   }
 }

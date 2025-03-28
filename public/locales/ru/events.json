@@ -11,8 +11,22 @@
   "noPastEvents": "Нет прошедших событий",
   "dateTemplates": {
     "singleDay": "{{day}} {{month}} {{year}} года",
-    "sameMonth": "{{dayStart}} – {{dayEnd}} {{month}} {{year}} года",
+    "sameMonth": "{{dayStart}}–{{dayEnd}} {{month}} {{year}} года",
     "differentMonths": "{{dayStart}} {{monthStart}} – {{dayEnd}} {{monthEnd}} {{year}} года",
     "differentYears": "{{dayStart}} {{monthStart}} {{yearStart}} года – {{dayEnd}} {{monthEnd}} {{year}} года"
+  },
+  "months": {
+    "January": "января",
+    "February": "февраля",
+    "March": "марта",
+    "April": "апреля",
+    "May": "мая",
+    "June": "июня",
+    "July": "июля",
+    "August": "августа",
+    "September": "сентября",
+    "October": "октября",
+    "November": "ноября",
+    "December": "декабря"
   }
 }

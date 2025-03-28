@@ -110,7 +110,6 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
         locale,
         events,
       },
-      revalidate: 60,
     };
   } catch (error) {
     console.error("Error fetching events:", error);
@@ -120,7 +119,6 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
         locale,
         events: null,
       },
-      revalidate: 60,
     };
   }
 };

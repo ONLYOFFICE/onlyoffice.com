@@ -3,7 +3,7 @@
   "pageTitle": "Veranstaltungen",
   "pageTitleOG": "Veranstaltungen, an denen wir teilgenommen haben",
   "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> nimmt an interessanten Veranstaltungen weltweit teil",
-  "currentEvents": "Treffen Sie ONLYOFFICE auf einer der Veranstaltungen in 2025",
+  "currentEvents": "Treffen Sie ONLYOFFICE auf einer der Veranstaltungen im Jahr 2025",
   "pastEvents": "Lesen Sie über die Veranstaltungen, an denen ONLYOFFICE teilgenommen hat",
   "moreInfo": "Mehr Informationen",
   "pastEventRecording": "Aufzeichnung der vergangenen Veranstaltung",
@@ -11,8 +11,22 @@
   "noPastEvents": "Keine vergangenen Veranstaltungen",
   "dateTemplates": {
     "singleDay": "{{day}}. {{month}} {{year}}",
-    "sameMonth": "{{dayStart}}.-{{dayEnd}}. {{month}} {{year}}",
-    "differentMonths": "{{dayStart}}. {{monthStart}}-{{dayEnd}}. {{monthEnd}} {{year}}",
-    "differentYears": "{{dayStart}}. {{monthStart}} {{yearStart}} bis {{dayEnd}}. {{monthEnd}} {{year}}"
+    "sameMonth": "{{dayStart}}.–{{dayEnd}}. {{month}} {{year}}",
+    "differentMonths": "{{dayStart}}. {{monthStart}} – {{dayEnd}}. {{monthEnd}} {{year}}",
+    "differentYears": "{{dayStart}}. {{monthStart}} {{yearStart}} – {{dayEnd}}. {{monthEnd}} {{year}}"
+  },
+  "months": {
+    "January": "Januar",
+    "February": "Februar",
+    "March": "März",
+    "April": "April",
+    "May": "Mai",
+    "June": "Juni",
+    "July": "Juli",
+    "August": "August",
+    "September": "September",
+    "October": "Oktober",
+    "November": "November",
+    "December": "Dezember"
   }
 }

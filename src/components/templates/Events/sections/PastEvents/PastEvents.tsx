@@ -3,11 +3,19 @@ import { Text } from "@src/components/ui/Text";
 import { StyledPastEvents, StyledMoreLink } from "./PastEvents.styled";
 import { Heading } from "@src/components/ui/Heading";
 
+const getMonthKey = (date: Date): string => {
+  const months = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+  return months[date.getMonth()];
+};
+
 const formatEventDate = (startDate: string, t: TFunction, endDate?: string) => {
   const start = new Date(startDate);
   const end = endDate ? new Date(endDate) : null;
   
-  const month = t(start.toLocaleString('en-US', { month: 'long' }));
+  const month = t(`events:months.${getMonthKey(start)}`);
   const startDay = start.getDate();
   const year = start.getFullYear();
   
@@ -18,36 +26,35 @@ const formatEventDate = (startDate: string, t: TFunction, endDate?: string) => {
       year: year
     });
   }
-  
-  
-  if (start.getFullYear() !== end.getFullYear()) {
-    const endMonth = t(end.toLocaleString('en-US', { month: 'long' }));
+
+  const endMonth = t(`events:months.${getMonthKey(end)}`);
+  const endDay = end.getDate();
+  const endYear = end.getFullYear();
+
+  if (year !== endYear) {
     return t("events:dateTemplates.differentYears", {
       dayStart: startDay,
       monthStart: month,
-      yearStart: start.getFullYear(),
-      dayEnd: end.getDate(),
+      yearStart: year,
+      dayEnd: endDay,
       monthEnd: endMonth,
-      year: end.getFullYear()
+      year: endYear
     });
   }
-  
-  
+
   if (start.getMonth() !== end.getMonth()) {
-    const endMonth = t(end.toLocaleString('en-US', { month: 'long' }));
     return t("events:dateTemplates.differentMonths", {
       dayStart: startDay,
       monthStart: month,
-      dayEnd: end.getDate(),
+      dayEnd: endDay,
       monthEnd: endMonth,
       year: year
     });
   }
-  
-  
+
   return t("events:dateTemplates.sameMonth", {
     dayStart: startDay,
-    dayEnd: end.getDate(),
+    dayEnd: endDay,
     month: month,
     year: year
   });
@@ -88,7 +95,6 @@ const PastEvents = ({ events }: PastEventsProps) => {
     );
   }
 
-  
   const pastEvents = events.filter(event => {
     if (!event.end_date) return false; 
     const endDate = new Date(event.end_date);
@@ -106,7 +112,7 @@ const PastEvents = ({ events }: PastEventsProps) => {
   }
 
   return (
-    <StyledPastEvents>            
+    <StyledPastEvents>
       <div className="past_events_wrapper">
         <Text label={t("events:pastEvents")} color="#666666" className="emt_past_events_title"/>
         <div className="emtPastEvents">

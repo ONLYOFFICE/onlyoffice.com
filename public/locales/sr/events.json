@@ -1,19 +1,32 @@
 {
   "noEvents": "Нема догађаја",
   "pageTitle": "Догађаји",
-  "pageDescription": "Прочитати о догађајима у свемирију у којим се ONLYOFFICE јави или ће јавити.",
-  "pageTitleOG": "Догађаји у којим се јави ONLYOFFICE",
-  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> јави у интересантим догађајима у свемирију",
-  "currentEvents": "Пријати ONLYOFFICE на једном од догађаја у 2025",
-  "pastEvents": "Прочитати о догађајима у којим се ONLYOFFICE јави",
-  "moreInfo": "Пријати ONLYOFFICE на једном од догађаја у 2025",
-  "pastEventRecording": "Пријати ONLYOFFICE на једном од догађаја у 2025",
-  "scheduleMeeting": "Пријати ONLYOFFICE на једном од догађаја у 2025",
-  "noPastEvents": "Нема проћих догађаја",
+  "pageTitleOG": "Догађаји којима смо присуствовали",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> присуствује интересантним догађајима широм света",
+  "currentEvents": "Упознајте ONLYOFFICE на једном од догађаја у 2025. години",
+  "pastEvents": "Прочитајте о догађајима којима је ONLYOFFICE присуствовао",
+  "moreInfo": "Више информација",
+  "pastEventRecording": "Снимак прошлог догађаја",
+  "scheduleMeeting": "Закажите састанак",
+  "noPastEvents": "Нема прошлих догађаја",
   "dateTemplates": {
-    "singleDay": "{{month}} {{day}}, {{year}}",
-    "sameMonth": "{{month}} {{dayStart}} – {{dayEnd}}, {{year}}",
-    "differentMonths": "{{monthStart}} {{dayStart}} – {{monthEnd}} {{dayEnd}}, {{year}}",
-    "differentYears": "{{monthStart}} {{dayStart}}, {{yearStart}} – {{monthEnd}} {{dayEnd}}, {{year}}"
+    "singleDay": "{{day}}. {{month}} {{year}}.",
+    "sameMonth": "{{dayStart}}.–{{dayEnd}}. {{month}} {{year}}.",
+    "differentMonths": "{{dayStart}}. {{monthStart}} – {{dayEnd}}. {{monthEnd}} {{year}}.",
+    "differentYears": "{{dayStart}}. {{monthStart}} {{yearStart}}. – {{dayEnd}}. {{monthEnd}} {{year}}."
+  },
+  "months": {
+    "January": "јануар",
+    "February": "фебруар",
+    "March": "март",
+    "April": "април",
+    "May": "мај",
+    "June": "јун",
+    "July": "јул",
+    "August": "август",
+    "September": "септембар",
+    "October": "октобар",
+    "November": "новембар",
+    "December": "децембар"
   }
 }
