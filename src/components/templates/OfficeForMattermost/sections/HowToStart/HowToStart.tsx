@@ -19,7 +19,7 @@ const HowToStart = () => {
               components={[
                 <Link
                   key={0}
-                  href="https://helpcenter.onlyoffice.com/installation/mattermost-install.aspx"
+                  href="https://helpcenter.onlyoffice.com/integration/mattermost.aspx"
                   target="_blank"
                   color="main"
                   textUnderline
