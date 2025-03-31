@@ -4,10 +4,6 @@ export interface IImageCarouselItem {
     url: string;
     url2x?: string;
   };
-  /** The width of the image. Default: 736. */
-  imageWidth?: number;
-  /** The height of the image. Default: 520. */
-  imageHeight?: number;
 }
 
 export interface IImageCarousel {
@@ -17,8 +13,8 @@ export interface IImageCarousel {
   className?: string;
   /** The items to display in the carousel. */
   items: IImageCarouselItem[];
-  /** The width of the image. Default: 736. */
+  /** The width of the image. Default: 960. */
   imageWidth?: number;
-  /** The height of the image. Default: 520. */
+  /** The height of the image. Default: 532. */
   imageHeight?: number;
 }
