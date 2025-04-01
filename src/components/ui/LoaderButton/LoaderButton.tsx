@@ -13,7 +13,7 @@ const LoaderButton = forwardRef<HTMLButtonElement, ILoaderButton>(
       tabIndex,
       type = "button",
       fullWidth,
-      variant = "default",
+      status = "default",
       size = "medium",
       onClick,
     },
@@ -28,7 +28,7 @@ const LoaderButton = forwardRef<HTMLButtonElement, ILoaderButton>(
         tabIndex={tabIndex}
         type={type}
         $fullWidth={fullWidth ?? undefined}
-        $variant={variant}
+        $status={status}
         $size={size}
         onClick={onClick}
       >

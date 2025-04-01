@@ -30,8 +30,15 @@ export default {
       control: { type: "boolean" },
       options: [true, false],
     },
-    onChange: {
-      action: "clicked",
+    required: {
+      control: { type: "boolean" },
+      options: [true, false],
+    },
+    name: {
+      control: { type: "text" },
+    },
+    value: {
+      control: { type: "text" },
     },
   },
 } as Meta<typeof Checkbox>;
@@ -47,11 +54,10 @@ const Template: StoryFn<ICheckbox> = (args) => {
 export const Default = Template.bind({});
 Default.args = {
   label: "Checkbox input",
-  checked: false,
 };
 
 export const Checked = Template.bind({});
 Checked.args = {
-  label: "Checkbox input",
+  ...Default.args,
   checked: true,
 };

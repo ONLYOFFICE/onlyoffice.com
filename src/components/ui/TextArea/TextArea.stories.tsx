@@ -28,12 +28,18 @@ export default {
     tabIndex: {
       control: { type: "number" },
     },
-    variant: {
+    status: {
       control: { type: "select" },
       options: ["default", "success"],
     },
-    fullWidth: {
+    required: {
       control: { type: "boolean" },
+    },
+    name: {
+      control: { type: "text" },
+    },
+    value: {
+      control: { type: "text" },
     },
     cols: {
       control: { type: "number" },
@@ -44,32 +50,25 @@ export default {
     maxLength: {
       control: { type: "number" },
     },
-    required: {
+    fullWidth: {
       control: { type: "boolean" },
-    },
-    onFocus: {
-      action: "clicked",
-    },
-    onKeyDown: {
-      action: "clicked",
-    },
-    onChange: {
-      action: "clicked",
     },
   },
 } as Meta<typeof TextArea>;
 
-const Template: StoryFn<ITextArea> = (args: ITextArea) => <TextArea {...args} />;
+const Template: StoryFn<ITextArea> = (args: ITextArea) => (
+  <TextArea {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {
-  label: "Textarea",
-  variant: "default",
+  label: "Description",
+  status: "default",
 };
 
 export const Success = Template.bind({});
 Success.args = {
-  label: "Textarea",
-  value: "Correct text",
-  variant: "success",
+  label: "Description",
+  value: "Example text",
+  status: "success",
 };

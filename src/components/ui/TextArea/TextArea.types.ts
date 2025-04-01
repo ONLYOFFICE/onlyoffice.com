@@ -10,7 +10,7 @@ export interface ITextArea {
   /** The tab index of the textarea, which controls its keyboard navigation order. */
   tabIndex?: number;
   /** The variant style of the textarea. Options include "default" or "success". */
-  variant?: "default" | "success";
+  status?: "default" | "success";
   /** Boolean value that indicates whether the textarea is required. */
   required?: boolean;
   /** The name attribute of the input element. */
@@ -27,8 +27,10 @@ export interface ITextArea {
   fullWidth?: boolean;
   /** A callback function for the textarea focus event. */
   onFocus?: (e: React.FocusEvent<HTMLTextAreaElement>) => void;
-  /** A callback function for the textarea keydown event. */
-  onKeyDown?: () => void;
+  /** A callback function for the textarea blur event. */
+  onBlur?: (e: React.FocusEvent<HTMLTextAreaElement>) => void;
   /** A callback function for the textarea change event. */
   onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  /** A callback function for the textarea keydown event. */
+  onKeyDown?: () => void;
 }

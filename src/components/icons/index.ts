@@ -5,3 +5,6 @@ export { SearchIcon } from "./Search";
 export { ChevronDownIcon } from "./ChevronDown";
 export { ChevronRightIcon } from "./ChevronRight";
 export { ChevronLeftIcon } from "./ChevronLeft";
+export { CrossIcon } from "./Cross";
+export { EyeIcon } from "./Eye";
+export { EyeCloseIcon } from "./EyeClose";

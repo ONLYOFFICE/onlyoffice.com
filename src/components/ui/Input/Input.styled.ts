@@ -1,179 +1,255 @@
 import styled, { css } from "styled-components";
-import { device } from "@src/utils/device";
 import { IInput } from "./Input.types";
 
-export const StyledInputWrapper = styled.div<{
+const StyledInput = styled.div`
+  position: relative;
+`;
+
+const StyledInputLabel = styled.label<{
+  $value: IInput["value"];
+  $leftSide: IInput["leftSide"];
   $variant: IInput["variant"];
-  $fullWidth: IInput["fullWidth"];
   $isFocused: boolean;
 }>`
-  background-color: ${(props) => (props.$isFocused ? "#ffffff" : "#f9f9f9")};
-  border: 1px solid;
-  border-color: ${(props) => (props.$isFocused ? "#666666" : "#aaaaaa")};
-  border-radius: 9px;
-  height: 56px;
-  outline: none;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-  width: ${(props) => (props.$fullWidth ? "100%" : "fit-content")};
-
-  &:hover {
-    border-color: #666666;
-  }
-
-  ${(props) =>
-    props.$variant === "success" &&
-    css`
-      border-color: #8bb825;
-      background-color: #f9feef;
-    `}
-  ${(props) =>
-    props.$variant === "error" &&
-    css`
-      border-color: #cb0000;
-      background-color: #fff7f7;
-      margin: 0 0 32px;
-    `}
-
-  @media ${device.mobile} {
-    height: 48px;
-  }
-`;
-
-export const StyledErrorText = styled.div`
-  position: relative;
-  font-weight: 400;
-  color: #cb0000;
-  font-size: 13px;
-  margin: 8px 0 0 0;
-  @media ${device.mobile} {
-    font-size: 12px;
-    margin: 4px 0 0 0;
-  }
-`;
-
-export const StyledToggleButton = styled.button<{
-  $type: IInput["type"];
-  $clearable?: IInput["clearable"];
-  $leftSide?: boolean;
-}>`
-  background: none;
-  background-image: ${(props) => {
-    if (props.$type === "password")
-      return "url('/images/icons/pass-eye-opened-light.svg')";
-    if (props.$type === "text")
-      return "url('/images/icons/pass-eye-closed-light.svg')";
-    if (props.$clearable)
-      return "url('/images/icons/close-cross.svg')";
-    if (props.$leftSide)
-      return "url('/images/icons/search-light.svg')";
-  }};
-  background-repeat: no-repeat;
-  background-size: contain;
   position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  cursor: pointer;
-  height: ${(props) => (props.$type === "search" ? "24px" : "20px")};
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease-in-out;
-  width: ${(props) => (props.$type === "search" ? "24px" : "20px")};
-
-  ${(props) =>
-    props.$leftSide &&
-    css`
-      left: 16px;
-    `}
-
-  &:hover {
-    background-image: ${(props) => {
-      if (props.$type === "password")
-        return "url('/images/icons/pass-eye-opened.svg')";
-      if (props.$type === "text")
-        return "url('/images/icons/pass-eye-closed.svg')";
-      if (props.$leftSide)
-        return "url('/images/icons/search.svg')";
-    }};
-  }
-`;
-
-export const StyledInputLabel = styled.label<{
-  $variant: IInput["variant"];
-  $isFloating: boolean;
-  $leftSide?: boolean;
-}>`
-  position: absolute;
-  line-height: 16px;
-  left: ${(props) => (props.$leftSide ? "48px" : "16px")};
-  color: ${(props) => {
-    if (props.$isFloating) return "#666666";
-    if (props.$variant === "error") return "#EA9494";
-    return "#AAAAAA";
-  }};
-  transition: all 0.2s ease-in-out;
-  background: transparent;
+  top: ${(props) => (props.$value || props.$isFocused ? "8px" : "16px")};
+  left: ${(props) =>
+    props.$leftSide || props.$variant === "search" ? "48px" : "16px"};
+  font-size: ${(props) => (props.$value || props.$isFocused ? "12px" : "16px")};
+  line-height: 24px;
+  color: ${(props) => (props.$isFocused ? "#666666" : "#aaaaaa")};
+  transition: top 0.2s, font-size 0.2s, color 0.2s;
   pointer-events: none;
-  transform: ${(props) =>
-    props.$isFloating ? "translateX(0) translateY(-13px)" : "translate(0, 0)"};
-  font-size: ${(props) => (props.$isFloating ? "12px" : "16px")};
-  top: 18px;
-
-  @media ${device.mobile} {
-    line-height: 15px;
-    left: ${(props) => (props.$leftSide ? "48px" : "12px")};
-    font-size: ${(props) => (props.$isFloating ? "11px" : "14px")};
-    top: 15px;
-  }
 `;
 
-export const StyledInput = styled.input<{
-  $fullWidth: IInput["fullWidth"];
-  $hasRightSide: IInput["hasRightSide"];
-  type: IInput["type"];
-  $hasLeftSide: boolean;
-  $label: boolean;
+const StyledInputIcon = styled.span<{
+  $leftSide?: IInput["leftSide"];
+  $rightSide?: IInput["rightSide"];
+  $variant?: IInput["variant"];
 }>`
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  color: #333333;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: ${(props) => (props.$label ? "34px" : "24px")};
-  justify-content: center;
-  margin: 0px;
-  outline: none;
-  padding: ${(props) => (props.$label ? "20px" : "16px")}
-    ${(props) => (props.$hasRightSide ? "48px" : "16px")}
-    ${(props) => (props.$label ? "0px" : "16px")} 
-    ${(props) => (props.$hasLeftSide ? "48px" : "16px")};
-  transition: all 0.2s ease-in-out;
-  width: 100%;
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
 
-  &:-webkit-autofill {
-    background-color: transparent;
-    border-radius: 9px;
-    color: #333333;
-    box-shadow: 0 0 0px 1000px white inset;
+  ${(props) =>
+    props.$leftSide || props.$variant === "search"
+      ? css`
+          left: 16px;
+        `
+      : props.$rightSide || props.$variant === "password"
+      ? css`
+          right: 16px;
+        `
+      : null}
+
+  ${(props) =>
+    props.$variant === "search" &&
+    css`
+      svg {
+        path {
+          fill: #808080;
+          transition: fill 0.2s;
+        }
+      }
+    `}
+
+    ${(props) =>
+    props.$variant === "password"
+      ? css`
+          cursor: pointer;
+
+          &:not(:disabled):hover {
+            svg {
+              path {
+                fill: #666666;
+              }
+            }
+          }
+        `
+      : css`
+          pointer-events: none;
+        `}
+`;
+
+const StyledInputField = styled.input<{
+  $value: IInput["value"];
+  $label: IInput["label"];
+  $status: IInput["status"];
+  $withClearButton: IInput["withClearButton"];
+  $leftSide: IInput["leftSide"];
+  $rightSide: IInput["rightSide"];
+  $variant: IInput["variant"];
+  $isFocused: boolean;
+}>`
+  border: 1px solid;
+  border-radius: 9px;
+  padding: ${(props) =>
+    props.$label && props.$leftSide && props.$rightSide
+      ? "24px 48px 8px"
+      : props.$leftSide && props.$rightSide
+      ? "16px 48px"
+      : props.$label && props.$leftSide
+      ? "24px 16px 8px 48px"
+      : props.$label && props.$rightSide
+      ? "24px 48px 8px 16px"
+      : props.$label
+      ? "24px 16px 8px"
+      : props.$leftSide
+      ? "16px 16px 16px 48px"
+      : props.$rightSide
+      ? "16px 48px 16px 16px"
+      : "16px"};
+  padding-right: ${(props) =>
+    props.$withClearButton && props.$rightSide
+      ? "88px"
+      : props.$withClearButton ||
+        props.$variant === "search" ||
+        props.$variant === "password"
+      ? "48px"
+      : null};
+  padding-left: ${(props) => props.$variant === "search" && "48px"};
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  height: 56px;
+  color: #333333;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.2s, background-color 0.2s;
+
+  ${(props) =>
+    props.$status === "success"
+      ? css`
+          border-color: #8bb825;
+          background-color: #f9feef;
+        `
+      : props.$status === "error"
+      ? css`
+          border-color: #cb0000;
+          background-color: #fff7f7;
+
+          ~ ${StyledInputLabel} {
+            color: #cb0000;
+          }
+        `
+      : css`
+          border-color: #aaaaaa;
+
+          &:not(:disabled):hover {
+            border-color: #666666;
+          }
+
+          ${props.$variant === "search"
+            ? css`
+                ~ ${StyledInputIcon} {
+                  svg {
+                    path {
+                      fill: ${props.$isFocused && "#444444"};
+                    }
+                  }
+                }
+
+                &:not(:disabled):hover {
+                  ~ ${StyledInputIcon} {
+                    svg {
+                      path {
+                        fill: ${props.$variant === "search" && "#444444"};
+                      }
+                    }
+                  }
+                }
+              `
+            : props.$variant === "password"
+            ? css`
+                ~ ${StyledInputIcon} {
+                  svg {
+                    path {
+                      fill: #aaaaaa;
+                      transition: fill 0.2s;
+                    }
+                  }
+                }
+
+                ${props.$isFocused &&
+                css`
+                  ~ ${StyledInputIcon} {
+                    svg {
+                      path {
+                        fill: #666666;
+                      }
+                    }
+                  }
+                `}
+
+                &:not(:disabled):hover {
+                  ~ ${StyledInputIcon} {
+                    svg {
+                      path {
+                        fill: #666666;
+                      }
+                    }
+                  }
+                }
+              `
+            : null}
+        `}
+
+  ${(props) =>
+    props.$isFocused &&
+    css`
+      border-color: #666666;
+      background-color: #ffffff;
+    `}
+
+  &::placeholder {
+    color: #cccccc;
   }
 
-  ${(props) => props.type === "search" && `
-    &::-webkit-search-cancel-button {
-      display: none;
-    }
-  `}
-
-  @media ${device.mobile} {
-    font-size: 13px;
-    height: 46px;
-    line-height: 20px;
-    padding: ${(props) => (props.$label ? "10px" : "16px")} ${(props) => (props.$hasRightSide ? "48px" : "12px")}  ${(props) => (props.$label ? "0px" : "16px")} ${(props) => (props.$hasLeftSide ? "48px" : "12px")};
-    width: 100%;
+  &:disabled {
+    background-color: rgba(249, 249, 249, 0.4);
   }
 `;
+
+const StyledInputClearButton = styled.button<{
+  $rightSide: IInput["rightSide"];
+  $withClearButton: IInput["withClearButton"];
+  $variant: IInput["variant"];
+}>`
+  position: absolute;
+  top: 50%;
+  right: ${(props) =>
+    (props.$rightSide || props.$variant === "password") &&
+    props.$withClearButton
+      ? "48px"
+      : "16px"};
+  border: none;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  svg {
+    path {
+      fill: #666666;
+    }
+  }
+`;
+
+const StyledInputCaption = styled.div`
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #cb0000;
+`;
+
+export {
+  StyledInput,
+  StyledInputLabel,
+  StyledInputIcon,
+  StyledInputField,
+  StyledInputClearButton,
+  StyledInputCaption,
+};

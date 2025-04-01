@@ -41,7 +41,7 @@ export default {
       control: { type: "boolean" },
       options: [true, false],
     },
-    variant: {
+    status: {
       control: { type: "select" },
       options: ["default", "loading", "success", "error"],
     },
@@ -60,26 +60,26 @@ export const Default = Template.bind({});
 Default.args = {
   label: "Submit",
   size: "medium",
-  variant: "default",
+  status: "default",
 };
 
 export const Loading = Template.bind({});
 Loading.args = {
   label: "Submit",
   size: "medium",
-  variant: "loading",
+  status: "loading",
 };
 
 export const Success = Template.bind({});
 Success.args = {
   label: "Submit",
   size: "medium",
-  variant: "success",
+  status: "success",
 };
 
 export const Error = Template.bind({});
 Error.args = {
   label: "Submit",
   size: "medium",
-  variant: "error",
+  status: "error",
 };

@@ -1,8 +1,8 @@
 import { forwardRef, useState, useEffect } from "react";
 import {
   StyledTextArea,
-  StyledTextAreaWrapper,
   StyledTextAreaLabel,
+  StyledTextAreaField,
 } from "./TextArea.styled";
 import { ITextArea } from "./TextArea.types";
 
@@ -14,24 +14,26 @@ const TextArea = forwardRef<HTMLTextAreaElement, ITextArea>(
       label,
       placeholder,
       tabIndex,
-      variant = "default",
+      status = "default",
       required,
-      onFocus,
-      onChange,
-      onKeyDown,
+      name,
       value,
-      fullWidth,
       cols,
       rows,
       maxLength,
+      fullWidth,
+      onFocus,
+      onBlur,
+      onChange,
+      onKeyDown,
     },
-    ref
+    ref,
   ) => {
     const [isFocused, setIsFocused] = useState(false);
-    const [textareaValue, setTextareaValue] = useState(value || "");
+    const [inputValue, setInputValue] = useState(value || "");
 
     useEffect(() => {
-      setTextareaValue(value || "");
+      setInputValue(value || "");
     }, [value]);
 
     const handleFocus = (e: React.FocusEvent<HTMLTextAreaElement>) => {
@@ -39,53 +41,58 @@ const TextArea = forwardRef<HTMLTextAreaElement, ITextArea>(
       if (onFocus) onFocus(e);
     };
 
-    const handleBlur = () => {
+    const handleBlur = (e: React.FocusEvent<HTMLTextAreaElement>) => {
       setIsFocused(false);
+      if (onBlur) onBlur(e);
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-      setTextareaValue(e.target.value);
+      setInputValue(e.target.value);
       if (onChange) onChange(e);
     };
 
     const isFloating =
       isFocused ||
-      (textareaValue !== undefined && textareaValue.toString().length > 0);
+      (inputValue !== undefined && inputValue.toString().length > 0);
 
     return (
-      <StyledTextAreaWrapper $variant={variant} $fullWidth={fullWidth} $isFocused={isFocused}>
+      <StyledTextArea
+        $status={status}
+        $fullWidth={fullWidth}
+        $isFocused={isFocused}
+      >
         {label && (
           <StyledTextAreaLabel
             htmlFor={id}
             $isFloating={isFloating}
-            $variant={variant}
+            $status={status}
           >
             {label}
             {required && <span>*</span>}
           </StyledTextAreaLabel>
         )}
-        <StyledTextArea
+        <StyledTextAreaField
           id={id}
           ref={ref}
           className={className}
           tabIndex={tabIndex}
-          onChange={handleChange}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
-          onKeyDown={onKeyDown}
           placeholder={isFocused ? placeholder : undefined}
           required={required}
-          value={textareaValue}
+          value={inputValue}
+          name={name}
           cols={cols}
           rows={rows}
           maxLength={maxLength}
-          $fullWidth={fullWidth}
           $label={label ? true : false}
-          $hasValue={textareaValue ? true : false}
+          $hasValue={inputValue ? true : false}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          onChange={handleChange}
+          onKeyDown={onKeyDown}
         />
-      </StyledTextAreaWrapper>
+      </StyledTextArea>
     );
-  }
+  },
 );
 
 TextArea.displayName = "TextArea";

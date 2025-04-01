@@ -1,34 +1,48 @@
-import { InputHTMLAttributes } from "react";
-
-export interface IInput extends InputHTMLAttributes<HTMLInputElement> {
-  /** The unique identifier for the input element. */
+export interface IInput {
+  /** The unique identifier for the input field. */
   id?: string;
-  /** The class name(s) applied to the input element. */
+  /** Additional CSS class names for styling. */
   className?: string;
-  /** The label text that will animate on focus. */
+  /** Label text associated with the input field. */
   label?: string;
-  /** The placeholder text for the input. */
+  /** Placeholder text displayed inside the input field. */
   placeholder?: string;
-  /** The tab index of the input, which controls its keyboard navigation order. */
+  /** Specifies the tab order of the input field. */
   tabIndex?: number;
-  /** The variant style of the input. Options include "default", "error" or "success". */
-  variant?: "default" | "error" | "success";
-  /** The type of the input. */
-  type?: "text" | "password" | "search";
-  /** Boolean value that indicates whether the input is required. */
+  /** Defines the status of the input field (default, success, or error). */
+  status?: "default" | "success" | "error";
+  /** Defines the variant of the input field (search or password). */
+  variant?: "search" | "password";
+  /** Specifies the type of the input field. */
+  type?: "text" | "number" | "password" | "tel" | "email" | "search";
+  /** Disables the input field when set to true. */
+  disabled?: boolean;
+  /** Marks the input field as required when set to true. */
   required?: boolean;
-  /** If true, it will stretch to fill the container's width. */
-  fullWidth?: boolean;
-  /** A callback function for the input focus event. */
+  /** The controlled value of the input field. */
+  value: string;
+  /** The default value of the input field (used for uncontrolled inputs). */
+  defaultValue?: string;
+  /** The name attribute for the input field. */
+  name?: string;
+  /** Automatically focuses the input field when the component mounts. */
+  autoFocus?: boolean;
+  /** Caption text displayed below the input field for error messages. */
+  caption?: string;
+  /** Left-side icon inside the input field. */
+  leftSide?: React.ReactNode;
+  /** Right-side icon inside the input field. */
+  rightSide?: React.ReactNode;
+  /** Displays a clear button inside the input field. */
+  withClearButton?: boolean;
+  /** Callback function triggered when the input field is clicked. */
+  onClick?: () => void;
+  /** Callback function triggered when the input value changes. */
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  /** Callback function triggered when the input field gains focus. */
   onFocus?: (e: React.FocusEvent<HTMLInputElement>) => void;
-  /** A callback function for the input keydown event. */
+  /** Callback function triggered when the input field loses focus. */
+  onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
+  /** Callback function triggered when a key is pressed in the input field. */
   onKeyDown?: () => void;
-  /** A callback function for the input change event. */
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  /** Boolean value that indicates whether additional elements are to be displayed on the right side of the input. */
-  hasRightSide?: boolean;
-  /** The error message to display when the input is invalid. */
-  errorMessage?: string;
-  /** Boolean value that indicates whether the input is clearable. */
-  clearable?: boolean;
 }

@@ -1,80 +1,76 @@
 import styled, { css } from "styled-components";
-import { device } from "@src/utils/device";
 import { ITextArea } from "./TextArea.types";
+import { device } from "@src/utils/device";
 
-export const StyledTextAreaWrapper = styled.div<{
-  $variant: ITextArea["variant"];
+const StyledTextArea = styled.div<{
+  $status: ITextArea["status"];
   $fullWidth: ITextArea["fullWidth"];
   $isFocused: boolean;
 }>`
-  border: 1px solid;
-  border-radius: 9px;
-  border-color: ${(props) => (props.$isFocused ? "#666666" : "#aaaaaa")};
-  background-color:  ${(props) => (props.$isFocused ? "#ffffff" : "#f9f9f9")};
-    outline: none;
   position: relative;
-  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid ${(props) => (props.$isFocused ? "#666666" : "#aaaaaa")};
+  border-radius: 9px;
   width: ${(props) => (props.$fullWidth ? "100%" : "fit-content")};
+  background-color: ${(props) => (props.$isFocused ? "#ffffff" : "#f9f9f9")};
+  transition: border-color 0.2s, background-color 0.2s;
 
   &:hover {
     border-color: #666666;
   }
 
   ${(props) =>
-    props.$variant === "success" &&
+    props.$status === "success" &&
     css`
       border-color: #8bb825;
       background-color: #f9feef;
     `}
 `;
 
-export const StyledTextAreaLabel = styled.label<{
+const StyledTextAreaLabel = styled.label<{
   $isFloating: boolean;
-  $variant: ITextArea["variant"];
+  $status: ITextArea["status"];
 }>`
   position: absolute;
-  line-height: 16px;
+  top: ${(props) => (props.$isFloating ? "8px" : "16px")};
   left: 16px;
-  color: ${(props) => {
-    if (props.$isFloating) return "#666666";
-    if (props.$variant === "success") return "#8BB825";
-    return "#AAAAAA";
-  }};
-  transition: all 0.2s ease-in-out;
-  background: transparent;
-  pointer-events: none;
-  transform: ${(props) =>
-    props.$isFloating ? "translateX(0) translateY(-13px)" : "translate(0, 0)"};
   font-size: ${(props) => (props.$isFloating ? "12px" : "16px")};
-  top: 18px;
+  line-height: 16px;
+  color: ${(props) =>
+    props.$isFloating
+      ? "#666666"
+      : props.$status === "success"
+      ? "#8BB825"
+      : "#AAAAAA"};
+  transition: top 0.2s, font-size 0.2s;
+  pointer-events: none;
 `;
 
-export const StyledTextArea = styled.textarea<{
-  $fullWidth: ITextArea["fullWidth"];
+const StyledTextAreaField = styled.textarea<{
   $label: boolean;
   $hasValue: boolean;
 }>`
-  color: #333333;
+  border: none;
+  margin: 16px 0;
+  margin-top: ${(props) => (props.$label ? "24px" : "16px")};
+  padding: 0 16px;
   font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 32px;
-  background-color: transparent;
-  border: 0;
-  border-color: transparent;
   line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #333333;
+  width: 100%;
+  background-color: transparent;
   outline: none;
-  margin-top: ${(props) => (props.$hasValue && props.$label ? "24px" : props.$hasValue && !props.$label ? "16px" : "0")};
-  padding: ${(props) => (props.$label ? (props.$hasValue ? "0px 16px 0" : "24px 16px 0") : (props.$hasValue ? "0px 16px 0" : "16px 16px 0"))};
   resize: none;
-  width: ${(props) => props.$fullWidth && "100%"};
 
   &:focus {
     margin-top: ${(props) => (props.$label ? "24px" : "16px")};
-    padding-top: 0px;
   }
 
   @media ${device.mobile} {
     width: 100%;
   }
 `;
+
+export { StyledTextArea, StyledTextAreaLabel, StyledTextAreaField };
