@@ -1,0 +1,41 @@
+{
+  "PageTitle": "Document viewing and editing within Strapi",
+  "PageDescription": "Edit DOCX, XLSX, and PPTX files, and collaborate on content in Strapi",
+
+  "OnlineOfficeForConnector": "Online office for <0>Strapi</0>",
+  "Subheader": "Edit and co-author office files added to the Strapi Media Library using ONLYOFFICE Docs",
+  "GetItNow": "Get it now",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Fully compatible with docx, xlsx, and pptx",
+  
+  "HeroTab1ImgUrl": "/images/templates/office-for-strapi/hero/screen1.png",
+  "HeroTab2ImgUrl": "/images/templates/office-for-strapi/hero/screen2.png",
+  "HeroTab3ImgUrl": "/images/templates/office-for-strapi/hero/screen3.png",
+  "HeroTab4ImgUrl": "/images/templates/office-for-strapi/hero/screen4.png",
+  "HeroTab5ImgUrl": "/images/templates/office-for-strapi/hero/screen5.png",
+
+  "GetStarted": "Get started",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Strapi",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for Strapi now from the <0>Strapi Market</0> or <1>npm directory</1>.",
+
+  "WhyOO": "Why ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs is a self-hosted office suite for working on text documents, spreadsheets, presentations, and forms.",
+  "Reason1": "<0>Ready-to-use</0> integration plugin",
+  "Reason2": "Easy installation from <0>Strapi Market</0> & quick configuration",
+  "Reason3": "<0>Intuitive</0> interface with tabs",
+  "Reason4": "<0>Multiple</0> editing, formatting, and styling tools",
+  "Reason5": "<0>Real-time collaboration</0>, Track Changes, comments, chat",
+  "Reason6": "<0>Free Community</0> and <1>scalable Enterprise</1> versions",
+  "Reason7": "<0>JWT protection</0> from unauthorized access",
+  "Reason8": "<0>Open-source code</0> available on GitHub",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>Strapi Market</0> or <1>npm directory</1>.",
+  "HowToStartStep3": "Configure the connector and enable JWT.",
+  "HowToStartImgUrl": "/images/templates/office-for-strapi/how-to-start/how-to-start.svg",
+
+  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}
