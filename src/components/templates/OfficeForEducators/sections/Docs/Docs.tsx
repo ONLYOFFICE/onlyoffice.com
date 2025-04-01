@@ -5,6 +5,7 @@ import {
   StyledDocsFeatures,
   StyledDocsHeading,
   StyledDocsText,
+  StyledFeatureItemText,
 } from "./Docs.styled";
 import { Text } from "@src/components/ui/Text";
 import { Trans, useTranslation } from "next-i18next";
@@ -39,11 +40,10 @@ const Docs = () => {
               {...props}
               title={t(title)}
               position={index % 2 === 1 ? "left" : "right"}
-              isTextArray={Array.isArray(text)}
               text={
                 Array.isArray(text) ? (
                   text.map((item, index) => (
-                    <span key={index}>
+                    <StyledFeatureItemText key={index}>
                       {
                         <Trans
                           key={index}
@@ -61,7 +61,7 @@ const Docs = () => {
                           ))}
                         />
                       }
-                    </span>
+                    </StyledFeatureItemText>
                   ))
                 ) : (
                   <Trans

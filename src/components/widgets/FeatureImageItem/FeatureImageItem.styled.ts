@@ -36,14 +36,7 @@ const StyleFeatureImageItemContent = styled.div`
   }
 `;
 
-const StyledFeatureImageItemText = styled(Text)<{ $isTextArray?: boolean }>`
-  ${(props) =>
-    props.$isTextArray &&
-    css`
-      display: grid;
-      gap: 8px;
-    `}
-
+const StyledFeatureImageItemText = styled(Text)`
   @media ${device.tablet} {
     font-size: 16px;
   }

@@ -58,15 +58,13 @@ const StyledButtonWrapper = styled.div`
   }
 `;
 
-const StyledLastItem = styled.p`
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-`;
+const StyledFeatureItemText = styled.span`
+  display: inline-block;
+  margin-bottom: 8px;
 
-const StyledFeatureItemTextWrapper = styled.span`
-  display: grid;
-  gap: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 export {
@@ -74,6 +72,5 @@ export {
   StyledDocsText,
   StyledDocsFeatures,
   StyledButtonWrapper,
-  StyledLastItem,
-  StyledFeatureItemTextWrapper,
+  StyledFeatureItemText,
 };

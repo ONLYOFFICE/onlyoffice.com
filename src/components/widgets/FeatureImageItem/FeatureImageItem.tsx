@@ -14,7 +14,6 @@ const FeatureImageItem = ({
   className,
   title,
   text,
-  isTextArray = false,
   links,
   image,
   position = "left",
@@ -24,7 +23,6 @@ const FeatureImageItem = ({
       <StyleFeatureImageItemContent>
         <Heading level={3} label={title} />
         <StyledFeatureImageItemText
-          $isTextArray={isTextArray}
           color="#666666"
           lineHeight="150%"
         >

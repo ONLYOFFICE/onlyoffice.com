@@ -4,7 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { IFeatureItem } from "./FeatureItem.types";
 
-const StyledFeatureItemWrapper = styled.div<{
+const StyledFeatureItem = styled.div<{
   $variant: IFeatureItem["variant"];
   $icon: IFeatureItem["icon"]["url"];
   $iconPositionX: IFeatureItem["icon"]["positionX"];
@@ -71,7 +71,7 @@ const StyledFeatureItemText = styled(Text)<{
 `;
 
 export {
-  StyledFeatureItemWrapper,
+  StyledFeatureItem,
   StyledFeatureItemTitle,
   StyledFeatureItemText,
 };

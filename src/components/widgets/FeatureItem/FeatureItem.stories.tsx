@@ -30,7 +30,7 @@ export default {
   },
 } as Meta<typeof FeatureItem>;
 
-const Template: StoryFn<typeof FeatureItem> = (args: IFeatureItem) => (
+const Template: StoryFn<IFeatureItem> = (args: IFeatureItem) => (
   <FeatureItem {...args} />
 );
 

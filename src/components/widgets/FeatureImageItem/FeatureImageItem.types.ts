@@ -7,10 +7,8 @@ export interface IFeatureImageItem {
   title: string;
   /** The text. */
   text: React.ReactNode | React.ReactNode[];
-  /** If the text is an array. Default: false */
-  isTextArray?: boolean;
   /** The links. */
-  links?: { href?: string; label?: string; isExternal?: boolean }[];
+  links?: { href: string; label?: string; isExternal?: boolean }[];
   /** The image.  */
   image: { url: string; url2x?: string; /**Default: 504 */ height?: number };
   /** The text content position. Default: "left" */

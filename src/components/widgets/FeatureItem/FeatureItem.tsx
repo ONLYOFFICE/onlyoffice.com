@@ -1,5 +1,5 @@
 import {
-  StyledFeatureItemWrapper,
+  StyledFeatureItem,
   StyledFeatureItemTitle,
   StyledFeatureItemText,
 } from "./FeatureItem.styled";
@@ -12,7 +12,7 @@ const FeatureItem = ({
   text,
 }: IFeatureItem) => {
   return (
-    <StyledFeatureItemWrapper
+    <StyledFeatureItem
       $variant={variant}
       $icon={icon.url}
       $iconPositionX={icon.positionX}
@@ -24,7 +24,7 @@ const FeatureItem = ({
         </StyledFeatureItemTitle>
       )}
       <StyledFeatureItemText $variant={variant}>{text}</StyledFeatureItemText>
-    </StyledFeatureItemWrapper>
+    </StyledFeatureItem>
   );
 };
 
