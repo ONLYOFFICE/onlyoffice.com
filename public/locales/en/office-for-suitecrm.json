@@ -1,0 +1,54 @@
+{
+  "PageTitle": "Online editors for SuiteCRM",
+  "PageDescription": "Work with office files in the SuiteCRM Documents module using ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Online office for <0>SuiteCRM</0>",
+  "Subheader": "Work with office files in the SuiteCRM Documents module using ONLYOFFICE Docs",
+  "GetItNow": "Get it now",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Fully compatible with docx, xlsx, and pptx",
+  
+  "HeroTab1ImgUrl": "/images/templates/office-for-suitecrm/hero/screen1.png",
+  "HeroTab1ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen1@2x.png",
+  "HeroTab2ImgUrl": "/images/templates/office-for-suitecrm/hero/screen2.png",
+  "HeroTab2ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen2@2x.png",
+  "HeroTab3ImgUrl": "/images/templates/office-for-suitecrm/hero/screen3.png",
+  "HeroTab3ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen3@2x.png",
+  "HeroTab4ImgUrl": "/images/templates/office-for-suitecrm/hero/screen4.png",
+  "HeroTab4ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen4@2x.png",
+  "HeroTab5ImgUrl": "/images/templates/office-for-suitecrm/hero/screen5.png",
+  "HeroTab5ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen5@2x.png",
+  "HeroTab6ImgUrl": "/images/templates/office-for-suitecrm/hero/screen6.png",
+  "HeroTab6ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen6@2x.png",
+  "HeroTab7ImgUrl": "/images/templates/office-for-suitecrm/hero/screen7.png",
+  "HeroTab7ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen7@2x.png",
+  "HeroTab8ImgUrl": "/images/templates/office-for-suitecrm/hero/screen8.png",
+  "HeroTab8ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen8@2x.png",
+  "HeroTab9ImgUrl": "/images/templates/office-for-suitecrm/hero/screen9.png",
+  "HeroTab9ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen9@2x.png",
+
+  "GetStarted": "Get started",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with SuiteCRM",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for SuiteCRM now from <0>GitHub</0>.",
+
+  "WhyOO": "Why ONLYOFFICE Docs Cloud",
+  "WhySubheader": "ONLYOFFICE Docs Cloud is a professional office suite for working with text documents, spreadsheets, presentations, forms, and PDFs.",
+  "Reason1": "<0>Ready-to-use</0> connector",
+  "Reason2": "<0>Editing and co-authoring office files</0> directly within the SuiteCRM Documents module",
+  "Reason3": "<0>Real-time collaboration</0>, Track Changes, comments, chat",
+  "Reason4": "<0>Intuitive</0> interface with tabs",
+  "Reason5": "<0>Multiple</0> editing, formatting, and styling tools",
+  "Reason6": "<0>JWT protection</0> from unauthorized access",
+  "Reason7": "<0>No installation required.</0> Quick configuration.",
+  "Reason8": "<0>Open-source code</0> available on GitHub",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from <0>GitHub</0>.",
+  "HowToStartStep3": "Install and configure the connector.",
+  "HowToStartImgUrl": "/images/templates/office-for-suitecrm/how-to-start/how-to-start.png",
+
+  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}
