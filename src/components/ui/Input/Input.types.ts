@@ -23,8 +23,6 @@ export interface IInput {
   required?: boolean;
   /** The controlled value of the input field. */
   value: string;
-  /** The default value of the input field (used for uncontrolled inputs). */
-  defaultValue?: string;
   /** The name attribute for the input field. */
   name?: string;
   /** Automatically focuses the input field when the component mounts. */

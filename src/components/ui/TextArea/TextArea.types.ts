@@ -16,7 +16,7 @@ export interface ITextArea {
   /** The name attribute of the input element. */
   name?: string;
   /** The value attribute of the input element. */
-  value?: string;
+  value: string;
   /** The number of columns in the textarea. */
   cols?: number;
   /** The number of rows in the textarea. */
@@ -30,7 +30,7 @@ export interface ITextArea {
   /** A callback function for the textarea blur event. */
   onBlur?: (e: React.FocusEvent<HTMLTextAreaElement>) => void;
   /** A callback function for the textarea change event. */
-  onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   /** A callback function for the textarea keydown event. */
   onKeyDown?: () => void;
 }
