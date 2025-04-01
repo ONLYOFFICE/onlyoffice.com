@@ -6,7 +6,9 @@ export interface IFeatureImageItem {
   /** The title. */
   title: string;
   /** The text. */
-  text: string | React.ReactNode;
+  text: React.ReactNode | React.ReactNode[];
+  /** If the text is HTML */
+  isTextHtml?: boolean;
   /** The links. */
   links?: { href?: string; label?: string; isExternal?: boolean }[];
   /** The image.  */

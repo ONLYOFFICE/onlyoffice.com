@@ -54,7 +54,7 @@ const StyledBlogCardWrapper = styled.div<{ $isLarge: IBlogCard["isLarge"] }>`
   }
 `;
 
-const StyledBlogLink = styled(Link)`
+const StyledHeadingLink = styled(Link)`
   font-size: 18px;
   font-weight: 700;
   line-height: 133%;
@@ -71,5 +71,5 @@ export {
   StyledBlogCardImg,
   StyledBlogCardBody,
   StyledBlogCardWrapper,
-  StyledBlogLink,
+  StyledHeadingLink,
 };

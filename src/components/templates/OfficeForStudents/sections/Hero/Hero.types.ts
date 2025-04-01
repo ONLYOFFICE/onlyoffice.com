@@ -1,8 +1,6 @@
-import { ReactNode } from "react";
-
 export interface IHero {
   /** The hero title */
-  title: string | ReactNode;
+  title: React.ReactNode;
   /** The hero text */
   text: string;
   /** The hero image */

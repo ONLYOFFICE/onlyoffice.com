@@ -14,6 +14,7 @@ const FeatureImageItem = ({
   className,
   title,
   text,
+  isTextHtml,
   links,
   image,
   position = "left",
@@ -23,10 +24,12 @@ const FeatureImageItem = ({
       <StyleFeatureImageItemContent>
         <Heading level={3} label={title} />
         <StyledFeatureImageItemText
-          label={text}
+          $isTextHtml={isTextHtml}
           color="#666666"
           lineHeight="150%"
-        />
+        >
+          {text}
+        </StyledFeatureImageItemText>
         {links?.map(({ href, label, isExternal }, index) => (
           <StyledFeatureImageItemLink
             key={index}

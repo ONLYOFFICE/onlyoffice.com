@@ -27,10 +27,10 @@ const SuccessStories = () => {
               className="blog-card"
               key={index}
               imgUrl={t(item.imgUrl)}
-              blogLink={
-                item.blogLink && {
-                  href: item.blogLink.href,
-                  label: t(item.blogLink.label),
+              headingLink={
+                item.headingLink && {
+                  href: item.headingLink.href,
+                  label: t(item.headingLink.label),
                 }
               }
             />

@@ -26,8 +26,6 @@ export default {
     icon: {
       control: { type: "object" },
     },
-    iconPositionX: { control: "text" },
-    iconPositionY: { control: "text" },
     title: { control: "text" },
     text: { control: "text" },
   },

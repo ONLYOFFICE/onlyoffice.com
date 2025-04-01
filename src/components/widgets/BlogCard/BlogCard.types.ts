@@ -14,5 +14,5 @@ export interface IBlogCard {
   /** The size of the card. */
   isLarge?: boolean;
   /** The blog link. */
-  blogLink?: { href: string; label: string; isExternal?: boolean };
+  headingLink?: { href: string; label: string; isExternal?: boolean };
 }

@@ -3,21 +3,21 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 export const items: IBlogCard[] = [
   {
     imgUrl: "Blog1ImgUrl",
-    blogLink: {
+    headingLink: {
       href: "Blog1Link",
       label: "Blog1",
     },
   },
   {
     imgUrl: "Blog2ImgUrl",
-    blogLink: {
+    headingLink: {
       href: "Blog2Link",
       label: "Blog2",
     },
   },
   {
     imgUrl: "Blog3ImgUrl",
-    blogLink: {
+    headingLink: {
       href: "Blog3Link",
       label: "Blog3",
     },

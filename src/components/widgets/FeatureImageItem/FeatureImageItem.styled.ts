@@ -36,7 +36,14 @@ const StyleFeatureImageItemContent = styled.div`
   }
 `;
 
-const StyledFeatureImageItemText = styled(Text)`
+const StyledFeatureImageItemText = styled(Text)<{ $isTextHtml?: boolean }>`
+  ${(props) =>
+    props.$isTextHtml &&
+    css`
+      display: grid;
+      gap: 8px;
+    `}
+
   @media ${device.tablet} {
     font-size: 16px;
   }

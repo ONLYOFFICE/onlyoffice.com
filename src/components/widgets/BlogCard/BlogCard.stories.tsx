@@ -80,7 +80,7 @@ Large.args = {
 export const WithBlogLink = Template.bind({});
 WithBlogLink.args = {
   imgUrl: "/images/storybook/widgets/blog-card/story.jpg",
-  blogLink: {
+  headingLink: {
     href: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
     label:
       "Digital transformation in higher education: how Jambi University implemented ONLYOFFICE Docs",
