@@ -9,7 +9,7 @@ const loaderAnimation = keyframes`
 
 const StyledLoaderButton = styled.button<{
   $fullWidth: ILoaderButton["fullWidth"];
-  $variant: ILoaderButton["variant"];
+  $status: ILoaderButton["status"];
   $size: ILoaderButton["size"];
 }>`
   display: inline-flex;
@@ -43,7 +43,7 @@ const StyledLoaderButton = styled.button<{
     `}
 
   ${(props) =>
-    props.$variant === "default" &&
+    props.$status === "default" &&
     css`
       color: #ffffff;
       background-color: #ff6f3d;
@@ -59,7 +59,7 @@ const StyledLoaderButton = styled.button<{
     `}
 
   ${(props) =>
-    props.$variant === "loading" &&
+    props.$status === "loading" &&
     css`
       position: relative;
       color: transparent;
@@ -81,7 +81,7 @@ const StyledLoaderButton = styled.button<{
     `}
 
   ${(props) =>
-    props.$variant === "success" &&
+    props.$status === "success" &&
     css`
       color: transparent;
       background-color: #8bb825;
@@ -92,7 +92,7 @@ const StyledLoaderButton = styled.button<{
     `}
 
   ${(props) =>
-    props.$variant === "error" &&
+    props.$status === "error" &&
     css`
       color: transparent;
       background-color: #cb0000;
