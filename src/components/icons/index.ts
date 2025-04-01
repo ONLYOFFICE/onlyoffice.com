@@ -9,3 +9,6 @@ export { ChevronLeftIcon } from "./ChevronLeft";
 export { DashIcon } from "./Dash";
 export { PlusIcon } from "./Plus";
 export { InfoIcon } from "./Info";
+export { CrossIcon } from "./Cross";
+export { EyeIcon } from "./Eye";
+export { EyeCloseIcon } from "./EyeClose";
