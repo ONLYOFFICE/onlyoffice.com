@@ -9,7 +9,7 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-redmine");
 
   return (
-    <StyledHowToStart id="how-to-start" background="#f9f9f9">
+    <StyledHowToStart id="how-to-start">
       <Container>
         <SimpleHowToStart
           text={
