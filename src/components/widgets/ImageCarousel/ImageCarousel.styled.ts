@@ -74,6 +74,7 @@ const StyledStepCarouselImg = styled.div<{
   background-size: contain;
   width: ${(props) => props.$imageWidth}px;
   height: ${(props) => props.$imageHeight}px;
+  box-shadow: 0px 20px 50px rgba(85, 85, 85, 0.15);
 
   @media ${device.desktop} {
     aspect-ratio: ${(props) => props.$imageWidth! / props.$imageHeight!};
