@@ -4,7 +4,7 @@ export interface IText {
   /** Additional CSS class names. */
   className?: string;
   /** Text label content. If both `children` and `label` are provided, `children` will take precedence. */
-  label?: React.ReactNode;
+  label?: string;
   /** Content to be rendered inside. If both `children` and `label` are provided, `children` will take precedence. */
   children?: React.ReactNode;
   /** The type of element to render. Default: "p". */

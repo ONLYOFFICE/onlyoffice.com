@@ -13,7 +13,6 @@ import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
 import { Fit } from "./sub-components/Fit/Fit";
-import React from "react";
 
 const Docs = () => {
   const { t } = useTranslation("office-for-educators");
@@ -24,16 +23,13 @@ const Docs = () => {
       tabletSmallSpacing={["72px", "72px"]}
     >
       <Container>
-        <StyledDocsHeading
-          level={2}
-          label={
-            <Trans
-              t={t}
-              i18nKey={"OODocsTitle"}
-              components={[<Text as="span" color="#FF6F3D" key="0" />]}
-            />
-          }
-        />
+        <StyledDocsHeading level={2}>
+          <Trans
+            t={t}
+            i18nKey={"OODocsTitle"}
+            components={[<Text as="span" color="#FF6F3D" key="0" />]}
+          />
+        </StyledDocsHeading>
         <StyledDocsText label={t("OODocsDesc")} />
         <Fit />
         <StyledDocsFeatures>
@@ -43,7 +39,7 @@ const Docs = () => {
               {...props}
               title={t(title)}
               position={index % 2 === 1 ? "left" : "right"}
-              isTextHtml={index === items.length - 1}
+              isTextArray={Array.isArray(text)}
               text={
                 Array.isArray(text) ? (
                   text.map((item, index) => (

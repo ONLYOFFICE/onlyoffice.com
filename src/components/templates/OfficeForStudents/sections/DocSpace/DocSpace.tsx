@@ -24,16 +24,13 @@ const DocSpace = () => {
       background="#F9F9F9"
     >
       <Container>
-        <StyledDesktopEditorsHeading
-          level={2}
-          label={
-            <Trans
-              t={t}
-              i18nKey={"OODocSpaceTitle"}
-              components={[<Text as="span" color="#FF6F3D" key="0" />]}
-            />
-          }
-        />
+        <StyledDesktopEditorsHeading level={2}>
+          <Trans
+            t={t}
+            i18nKey={"OODocSpaceTitle"}
+            components={[<Text as="span" color="#FF6F3D" key="0" />]}
+          />
+        </StyledDesktopEditorsHeading>
         <StyledDesktopEditorsText label={t("OODocSpaceDesc")} />
 
         <StyledDesktopEditorsFeatures>

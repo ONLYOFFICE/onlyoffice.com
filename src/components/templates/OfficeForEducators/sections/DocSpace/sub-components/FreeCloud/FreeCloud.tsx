@@ -13,16 +13,13 @@ const FreeCloud = () => {
 
   return (
     <StyledFreeCloudWrapper>
-      <StyledFreeCloudTitle
-        level={3}
-        label={
-          <Trans
-            t={t}
-            i18nKey={"FreeCloud"}
-            components={[<Text as="span" color="#FF6F3D" key="0" />]}
-          />
-        }
-      />
+      <StyledFreeCloudTitle level={3}>
+        <Trans
+          t={t}
+          i18nKey={"FreeCloud"}
+          components={[<Text as="span" color="#FF6F3D" key="0" />]}
+        />
+      </StyledFreeCloudTitle>
       <StyledFreeCloudText label={t("FreeCloudText")} />
       <Link
         href="/free-cloud"

@@ -7,8 +7,8 @@ export interface IFeatureImageItem {
   title: string;
   /** The text. */
   text: React.ReactNode | React.ReactNode[];
-  /** If the text is HTML */
-  isTextHtml?: boolean;
+  /** If the text is an array. Default: false */
+  isTextArray?: boolean;
   /** The links. */
   links?: { href?: string; label?: string; isExternal?: boolean }[];
   /** The image.  */

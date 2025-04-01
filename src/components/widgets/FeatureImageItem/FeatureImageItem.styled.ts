@@ -36,9 +36,9 @@ const StyleFeatureImageItemContent = styled.div`
   }
 `;
 
-const StyledFeatureImageItemText = styled(Text)<{ $isTextHtml?: boolean }>`
+const StyledFeatureImageItemText = styled(Text)<{ $isTextArray?: boolean }>`
   ${(props) =>
-    props.$isTextHtml &&
+    props.$isTextArray &&
     css`
       display: grid;
       gap: 8px;

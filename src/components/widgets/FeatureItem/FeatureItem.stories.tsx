@@ -1,4 +1,3 @@
-import React from "react";
 import { FeatureItem } from "./FeatureItem";
 import { IFeatureItem } from "./FeatureItem.types";
 import { Meta, StoryFn } from "@storybook/react";

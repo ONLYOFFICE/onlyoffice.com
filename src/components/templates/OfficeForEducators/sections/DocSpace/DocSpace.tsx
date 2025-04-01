@@ -24,16 +24,13 @@ const DocSpace = () => {
       tabletSmallSpacing={["72px", "72px"]}
     >
       <Container>
-        <StyledDocSpaceHeading
-          level={2}
-          label={
-            <Trans
-              t={t}
-              i18nKey={"OODocSpaceTitle"}
-              components={[<Text as="span" color="#FF6F3D" key="0" />]}
-            />
-          }
-        />
+        <StyledDocSpaceHeading level={2}>
+          <Trans
+            t={t}
+            i18nKey={"OODocSpaceTitle"}
+            components={[<Text as="span" color="#FF6F3D" key="0" />]}
+          />
+        </StyledDocSpaceHeading>
         <StyledDocSpaceText label={t("OODocSpaceTitleDesc")} />
         <StyledDocSpaceFeatures>
           {items.map(({ title, text, links, image, ...props }, index) => (
@@ -42,7 +39,6 @@ const DocSpace = () => {
               {...props}
               title={t(title)}
               position={index % 2 === 1 ? "right" : "left"}
-              isTextHtml={index === items.length - 1}
               text={
                 <Trans
                   t={t}

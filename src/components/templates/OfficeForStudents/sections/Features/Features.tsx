@@ -19,16 +19,13 @@ const Features = () => {
   return (
     <Section>
       <Container>
-        <StyledFeaturesHeading
-          level={2}
-          label={
-            <Trans
-              t={t}
-              i18nKey={"WhyOOTitle"}
-              components={[<Text as="span" color="#FF6F3D" key="0" />]}
-            />
-          }
-        />
+        <StyledFeaturesHeading level={2}>
+          <Trans
+            t={t}
+            i18nKey={"WhyOOTitle"}
+            components={[<Text as="span" color="#FF6F3D" key="0" />]}
+          />
+        </StyledFeaturesHeading>
         <StyledFeaturesText label={t("WhyOODesc")} />
         <StyledFeatures>
           {items.map(({ icon, title, text, links }, index) => (
