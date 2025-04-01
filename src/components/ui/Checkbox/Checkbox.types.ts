@@ -15,6 +15,8 @@ export interface ICheckbox {
   name?: string;
   /** The value attribute of the input element. */
   value?: string;
+  /** The alignment of the label. Default: "top". */
+  align?: "top" | "center";
   /** A callback function for the input change event. */
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }

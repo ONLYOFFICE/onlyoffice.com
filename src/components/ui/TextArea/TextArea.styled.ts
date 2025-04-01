@@ -36,7 +36,7 @@ const StyledTextAreaLabel = styled.label<{
   top: ${(props) => (props.$isFloating ? "8px" : "16px")};
   left: 16px;
   font-size: ${(props) => (props.$isFloating ? "12px" : "16px")};
-  line-height: 16px;
+  line-height: ${(props) => (props.$isFloating ? "16px" : "22px")};
   color: ${(props) =>
     props.$isFloating
       ? "#666666"
@@ -45,6 +45,13 @@ const StyledTextAreaLabel = styled.label<{
       : "#AAAAAA"};
   transition: top 0.2s, font-size 0.2s;
   pointer-events: none;
+
+  @media ${device.mobile} {
+    top: ${(props) => (props.$isFloating ? "6px" : "12px")};
+    left: 12px;
+    font-size: ${(props) => (props.$isFloating ? "11px" : "14px")};
+    line-height: ${(props) => (props.$isFloating ? "15px" : "20px")};
+  }
 `;
 
 const StyledTextAreaField = styled.textarea<{
@@ -53,11 +60,10 @@ const StyledTextAreaField = styled.textarea<{
 }>`
   border: none;
   margin: 16px 0;
-  margin-top: ${(props) => (props.$label ? "24px" : "16px")};
+  margin-top: ${(props) => props.$label && "24px"};
   padding: 0 16px;
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: 0.04em;
   color: #333333;
   width: 100%;
   background-color: transparent;
@@ -65,11 +71,19 @@ const StyledTextAreaField = styled.textarea<{
   resize: none;
 
   &:focus {
-    margin-top: ${(props) => (props.$label ? "24px" : "16px")};
+    margin-top: ${(props) => props.$label && "24px"};
+
+    @media ${device.mobile} {
+      margin-top: ${(props) => props.$label && "22px"};
+    }
   }
 
   @media ${device.mobile} {
-    width: 100%;
+    margin: 12px 0;
+    margin-top: ${(props) => props.$label && "22px"};
+    padding: 0 12px;
+    font-size: 14px;
+    line-height: 20px;
   }
 `;
 

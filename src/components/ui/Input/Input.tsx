@@ -3,6 +3,7 @@ import {
   StyledInput,
   StyledInputLabel,
   StyledInputIcon,
+  StyledInputFieldWrapper,
   StyledInputField,
   StyledInputClearButton,
   StyledInputCaption,
@@ -21,6 +22,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
       id,
       className,
       label,
+      labelPosition = "default",
       placeholder,
       tabIndex,
       status = "default",
@@ -83,6 +85,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
         {label && (
           <StyledInputLabel
             htmlFor={id}
+            $labelPosition={labelPosition}
             $isFocused={isFocused}
             $value={inputValue}
             $leftSide={leftSide}
@@ -93,72 +96,79 @@ const Input = forwardRef<HTMLInputElement, IInput>(
           </StyledInputLabel>
         )}
 
-        <StyledInputField
-          ref={inputRef}
-          id={id}
-          className={className}
-          placeholder={isFocused ? placeholder : undefined}
-          tabIndex={tabIndex}
-          value={inputValue}
-          defaultValue={defaultValue}
-          name={name}
-          type={
-            type === "password" ? (passwordVisible ? "password" : "text") : type
-          }
-          required={required}
-          disabled={disabled}
-          $value={inputValue}
-          $label={label}
-          $status={status}
-          $isFocused={isFocused}
-          $withClearButton={withClearButton}
-          $leftSide={leftSide}
-          $rightSide={rightSide}
-          $variant={variant}
-          onClick={onClick}
-          onChange={handleChange}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
-          onKeyDown={onKeyDown}
-        />
-
-        {(leftSide || variant === "search") && (
-          <StyledInputIcon $leftSide={leftSide} $variant={variant}>
-            {variant === "search" ? <SearchIcon /> : leftSide}
-          </StyledInputIcon>
-        )}
-
-        {(rightSide || variant === "password") && (
-          <StyledInputIcon
+        <StyledInputFieldWrapper>
+          <StyledInputField
+            ref={inputRef}
+            id={id}
+            className={className}
+            placeholder={isFocused ? placeholder : undefined}
+            tabIndex={tabIndex}
+            value={inputValue}
+            defaultValue={defaultValue}
+            name={name}
+            type={
+              type === "password"
+                ? passwordVisible
+                  ? "password"
+                  : "text"
+                : type
+            }
+            required={required}
+            disabled={disabled}
+            $value={inputValue}
+            $label={label}
+            $status={status}
+            $isFocused={isFocused}
+            $withClearButton={withClearButton}
+            $leftSide={leftSide}
             $rightSide={rightSide}
             $variant={variant}
-            onClick={() =>
-              type === "password" && setPasswordVisible(!passwordVisible)
-            }
-          >
-            {variant === "password" ? (
-              passwordVisible ? (
-                <EyeIcon />
-              ) : (
-                <EyeCloseIcon />
-              )
-            ) : (
-              rightSide
-            )}
-          </StyledInputIcon>
-        )}
+            $labelPosition={labelPosition}
+            onClick={onClick}
+            onChange={handleChange}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+            onKeyDown={onKeyDown}
+          />
 
-        {(inputValue || defaultValue) &&
-          (withClearButton || variant === "search") && (
-            <StyledInputClearButton
-              onClick={handleClear}
-              $rightSide={rightSide}
-              $withClearButton={withClearButton}
-              $variant={variant}
-            >
-              <CrossIcon />
-            </StyledInputClearButton>
+          {(leftSide || variant === "search") && (
+            <StyledInputIcon $leftSide={leftSide} $variant={variant}>
+              {variant === "search" ? <SearchIcon /> : leftSide}
+            </StyledInputIcon>
           )}
+
+          {(rightSide || variant === "password") && (
+            <StyledInputIcon
+              $rightSide={rightSide}
+              $variant={variant}
+              onClick={() =>
+                type === "password" && setPasswordVisible(!passwordVisible)
+              }
+            >
+              {variant === "password" ? (
+                passwordVisible ? (
+                  <EyeIcon />
+                ) : (
+                  <EyeCloseIcon />
+                )
+              ) : (
+                rightSide
+              )}
+            </StyledInputIcon>
+          )}
+
+          {(inputValue || defaultValue) &&
+            (withClearButton || variant === "search") && (
+              <StyledInputClearButton
+                onClick={handleClear}
+                $rightSide={rightSide}
+                $withClearButton={withClearButton}
+                $variant={variant}
+              >
+                <CrossIcon />
+              </StyledInputClearButton>
+            )}
+        </StyledInputFieldWrapper>
 
         {status === "error" && caption && !isFocused && (
           <StyledInputCaption>{caption}</StyledInputCaption>

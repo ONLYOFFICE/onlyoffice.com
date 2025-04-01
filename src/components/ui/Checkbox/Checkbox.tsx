@@ -18,6 +18,7 @@ const Checkbox = forwardRef<HTMLInputElement, ICheckbox>(
       required,
       name,
       value,
+      align = "top",
       onChange,
     },
     ref,
@@ -33,7 +34,7 @@ const Checkbox = forwardRef<HTMLInputElement, ICheckbox>(
     };
 
     return (
-      <StyledCheckbox>
+      <StyledCheckbox $align={align}>
         <StyledCheckboxInput
           ref={ref}
           id={id}

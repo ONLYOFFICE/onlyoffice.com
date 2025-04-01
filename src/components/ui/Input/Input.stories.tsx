@@ -20,6 +20,13 @@ export default {
     className: {
       control: { type: "text" },
     },
+    label: {
+      control: { type: "text" },
+    },
+    labelPosition: {
+      control: { type: "select" },
+      options: ["default", "top"],
+    },
     placeholder: {
       control: { type: "text" },
     },
@@ -95,7 +102,7 @@ Error.args = {
 
 export const SimpleInput = Template.bind({});
 SimpleInput.args = {
-  label: "Firt name",
+  label: "First name",
   placeholder: "Marina",
 };
 

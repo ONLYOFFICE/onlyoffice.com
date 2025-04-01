@@ -5,6 +5,8 @@ export interface IInput {
   className?: string;
   /** Label text associated with the input field. */
   label?: string;
+  /** Position of the label relative to the input field. Default: "default". */
+  labelPosition?: "default" | "top";
   /** Placeholder text displayed inside the input field. */
   placeholder?: string;
   /** Specifies the tab order of the input field. */
