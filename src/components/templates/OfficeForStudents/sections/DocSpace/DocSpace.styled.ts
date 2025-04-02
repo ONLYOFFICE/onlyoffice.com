@@ -6,14 +6,10 @@ import { Text } from "@src/components/ui/Text";
 const StyledDesktopEditorsHeading = styled(Heading)`
   max-width: 928px;
   margin: 0 auto;
-  font-size: 40px;
-  letter-spacing: -0.02em;
-  line-height: 133%;
   text-align: center;
   margin-bottom: 24px;
 
   @media ${device.tabletS} {
-    font-size: 36px;
     text-align: start;
   }
 
@@ -28,6 +24,7 @@ const StyledDesktopEditorsText = styled(Text)`
   margin: 0 auto;
   text-align: center;
   font-size: 18px;
+  line-height: 150%;
 
   @media ${device.tabletS} {
     text-align: start;
@@ -40,8 +37,7 @@ const StyledDesktopEditorsText = styled(Text)`
 
 const StyledDesktopEditorsFeatures = styled.div`
   margin: 72px 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 72px;
   justify-content: center;
 

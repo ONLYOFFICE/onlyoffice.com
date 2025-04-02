@@ -6,6 +6,7 @@ import { Text } from "@src/components/ui/Text";
 const StyledSuccessStoriesHeading = styled(Heading)`
   margin: 0 auto 24px;
   font-size: 32px;
+  line-height: 133%;
 
   @media ${device.mobile} {
     text-align: start;

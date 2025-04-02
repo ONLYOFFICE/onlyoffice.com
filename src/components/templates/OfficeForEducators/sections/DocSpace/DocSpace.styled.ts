@@ -6,12 +6,10 @@ import styled from "styled-components";
 const StyledDocSpaceHeading = styled(Heading)`
   max-width: 928px;
   margin: 0 auto 24px;
-  font-size: 40px;
-  letter-spacing: -0.02em;
   text-align: center;
+  line-height: 133%;
 
   @media ${device.tabletS} {
-    font-size: 36px;
     text-align: start;
   }
 
@@ -38,13 +36,13 @@ const StyledDocSpaceText = styled(Text)`
 `;
 
 const StyledDocSpaceFeatures = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 72px;
   padding: 72px 0;
 
   @media ${device.mobile} {
     padding: 48px 0 56px;
+    gap: 56px;
   }
 `;
 

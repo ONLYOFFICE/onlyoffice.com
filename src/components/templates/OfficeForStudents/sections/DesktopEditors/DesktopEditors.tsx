@@ -23,7 +23,7 @@ const DesktopEditors = () => {
       tabletSmallSpacing={["72px", "72px"]}
     >
       <Container>
-        <StyledDesktopEditorsHeading level={2}>
+        <StyledDesktopEditorsHeading level={2} size={2}>
           <Trans
             t={t}
             i18nKey={"OODesktopEditorsTitle"}

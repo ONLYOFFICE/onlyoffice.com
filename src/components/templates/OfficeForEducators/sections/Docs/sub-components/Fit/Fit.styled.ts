@@ -20,7 +20,6 @@ const StyledFitWrapper = styled.div`
 `;
 
 const StyledFitTitle = styled(Heading)`
-  font-size: 24px;
   line-height: 133%;
   padding-top: 80px;
   margin-bottom: 16px;

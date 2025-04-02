@@ -19,7 +19,7 @@ const Features = () => {
   return (
     <Section>
       <Container>
-        <StyledFeaturesHeading level={2}>
+        <StyledFeaturesHeading level={2} size={2}>
           <Trans
             t={t}
             i18nKey={"WhyOOTitle"}

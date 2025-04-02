@@ -13,7 +13,7 @@ const FreeCloud = () => {
 
   return (
     <StyledFreeCloudWrapper>
-      <StyledFreeCloudTitle level={3}>
+      <StyledFreeCloudTitle level={3} size={3}>
         <Trans
           t={t}
           i18nKey={"FreeCloud"}

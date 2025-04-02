@@ -4,9 +4,8 @@ import { device } from "@src/utils/device";
 import styled from "styled-components";
 
 const StyledFreeCloudWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-content: center;
   gap: 16px;
   padding: 64px;
   border: 1px solid #e2e2e2;
@@ -28,8 +27,6 @@ const StyledFreeCloudWrapper = styled.div`
 `;
 
 const StyledFreeCloudTitle = styled(Heading)`
-  font-size: 32px;
-  line-height: 133%;
   padding-top: 88px;
   position: relative;
 
@@ -44,14 +41,6 @@ const StyledFreeCloudTitle = styled(Heading)`
     background-image: url("/images/templates/office-for-educators/sprites/icons.svg");
     background-repeat: no-repeat;
     background-position: -754px center;
-  }
-
-  @media ${device.tabletS} {
-    font-size: 30px;
-  }
-
-  @media ${device.mobile} {
-    font-size: 20px;
   }
 `;
 

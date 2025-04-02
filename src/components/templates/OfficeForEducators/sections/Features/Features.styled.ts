@@ -4,14 +4,11 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
 const StyledFeaturesHeading = styled(Heading)`
-  font-size: 40px;
-  letter-spacing: -0.02em;
   line-height: 133%;
   margin-bottom: 24px;
   text-align: center;
 
   @media ${device.tabletS} {
-    font-size: 36px;
     text-align: start;
   }
 
@@ -26,6 +23,7 @@ const StyledFeaturesText = styled(Text)`
   margin: 0 auto;
   font-size: 18px;
   text-align: center;
+  line-height: 150%;
 
   @media ${device.tabletS} {
     font-size: 16px;
@@ -53,12 +51,13 @@ const StyledFeatures = styled.div`
 `;
 
 const StyledFeaturesButtonsWrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: center;
   gap: 16px;
 
   @media ${device.mobile} {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 `;
 

@@ -25,13 +25,11 @@ const Hero = () => {
         <StyledHeroWrapper>
           <StyledHeroContent>
             <StyledHeroHeading>
-              {
-                <Trans
-                  t={t}
-                  i18nKey={String(hero.title)}
-                  components={[<Text as="span" color="#FF6F3D" key="0" />]}
-                />
-              }
+              <Trans
+                t={t}
+                i18nKey={String(hero.title)}
+                components={[<Text as="span" color="#FF6F3D" key="0" />]}
+              />
             </StyledHeroHeading>
             <StyledHeroText label={t(hero.text)} />
           </StyledHeroContent>

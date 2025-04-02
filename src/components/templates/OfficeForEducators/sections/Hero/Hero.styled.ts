@@ -8,7 +8,7 @@ import { IHero } from "./Hero.types";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-image: url("/images/templates/office-for-educators/hero/bg.svg");
-  background-position: 37% -630px;
+  background-position: center -630px;
   background-repeat: no-repeat;
   background-color: #f9f9f9;
 
@@ -49,27 +49,22 @@ const StyledHeroWrapper = styled.div`
 `;
 
 const StyledHeroContent = styled.div`
-  display: flex;
-  align-items: start;
-  flex-direction: column;
+  display: grid;
   gap: 24px;
 
   @media ${device.tabletS} {
     max-width: 100%;
     gap: 32px;
-    align-items: center;
   }
 
   @media ${device.mobile} {
     gap: 16px;
-    align-items: start;
   }
 `;
 
 const StyledHeroHeading = styled(Heading)`
   font-size: 56px;
-  letter-spacing: -0.02em;
-  line-height: 133%;
+  line-height: 110%;
 
   @media ${device.tabletS} {
     font-size: 44px;
@@ -108,23 +103,15 @@ const StyledHeroImage = styled.div<{
   background-size: cover;
 
   @media ${device.tabletS} {
-    max-width: 488px;
-    width: 100%;
+    width: 488px;
+    height: 526px;
     margin: 0 auto;
-    height: ${({ $imgHeight, $imgWidth }) =>
-      $imgHeight && $imgWidth
-        ? ((488 * $imgHeight) / $imgWidth).toFixed(2) + "px"
-        : "0px"};
     padding-bottom: 0;
   }
 
   @media ${device.mobile} {
-    max-width: 100%;
-    height: auto;
-    padding-bottom: ${({ $imgHeight, $imgWidth }) =>
-      $imgHeight && $imgWidth
-        ? (($imgHeight / $imgWidth) * 100).toFixed(4) + "%"
-        : "0%"};
+    width: 288px;
+    height: 310px;
   }
 `;
 

@@ -24,7 +24,7 @@ const DocSpace = () => {
       tabletSmallSpacing={["72px", "72px"]}
     >
       <Container>
-        <StyledDocSpaceHeading level={2}>
+        <StyledDocSpaceHeading level={2} size={2}>
           <Trans
             t={t}
             i18nKey={"OODocSpaceTitle"}

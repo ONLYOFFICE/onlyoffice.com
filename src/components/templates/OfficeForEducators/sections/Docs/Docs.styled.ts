@@ -6,12 +6,10 @@ import styled from "styled-components";
 const StyledDocsHeading = styled(Heading)`
   max-width: 876px;
   margin: 0 auto 24px;
-  font-size: 40px;
-  letter-spacing: -0.02em;
   text-align: center;
+  line-height: 133%;
 
   @media ${device.tabletS} {
-    font-size: 36px;
     text-align: start;
   }
 
@@ -38,23 +36,24 @@ const StyledDocsText = styled(Text)`
 `;
 
 const StyledDocsFeatures = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 72px;
   padding-bottom: 72px;
 
   @media ${device.mobile} {
     padding-bottom: 56px;
+    gap: 56px;
   }
 `;
 
 const StyledButtonWrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: center;
   gap: 16px;
 
   @media ${device.mobile} {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 `;
 
