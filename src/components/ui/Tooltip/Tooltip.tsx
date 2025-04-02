@@ -14,13 +14,16 @@ const Tooltip = ({
 }: ITooltip) => {
   return (
     <>
-      <StyledTooltipBtn data-tooltip-id={id} $width={width}>
+      <StyledTooltipBtn
+        className={className}
+        data-tooltip-id={id}
+        $width={width}
+      >
         {children}
       </StyledTooltipBtn>
 
       <ReactTooltip
         id={id}
-        className={className}
         noArrow
         float={float}
         place={place}

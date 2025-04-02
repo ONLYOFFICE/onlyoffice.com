@@ -24,10 +24,6 @@ export default {
     label: {
       control: { type: "text" },
     },
-    labelPosition: {
-      control: { type: "select" },
-      options: ["default", "top"],
-    },
     placeholder: {
       control: { type: "text" },
     },

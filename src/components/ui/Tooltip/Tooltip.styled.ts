@@ -17,6 +17,7 @@ const StyledTooltipBtn = styled.button<{ $width: ITooltip["width"] }>`
     max-width: ${(props) => props.$width};
     text-align: initial;
     background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
   }
 `;
 

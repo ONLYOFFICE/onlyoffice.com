@@ -7,48 +7,32 @@ const StyledInput = styled.div`
 `;
 
 const StyledInputLabel = styled.label<{
-  $labelPosition: IInput["labelPosition"];
   $value: IInput["value"];
   $leftSide: IInput["leftSide"];
   $variant: IInput["variant"];
   $isFocused: boolean;
 }>`
-  ${(props) =>
-    props.$labelPosition === "top"
-      ? css`
-          display: block;
-          margin-bottom: 8px;
-          font-size: 16px;
-          line-height: 24px;
-          color: #333333;
+  position: absolute;
+  top: ${(props) => (props.$value || props.$isFocused ? "8px" : "16px")};
+  left: ${(props) =>
+    props.$leftSide || props.$variant === "search" ? "48px" : "16px"};
+  font-size: ${(props) => (props.$value || props.$isFocused ? "12px" : "16px")};
+  line-height: ${(props) =>
+    props.$value || props.$isFocused ? "16px" : "24px"};
+  color: ${(props) => (props.$isFocused ? "#666666" : "#aaaaaa")};
+  transition: top 0.2s, font-size 0.2s, color 0.2s;
+  pointer-events: none;
+  z-index: 1;
 
-          @media ${device.mobile} {
-            font-size: 14px;
-            line-height: 20px;
-          }
-        `
-      : css`
-          position: absolute;
-          top: ${props.$value || props.$isFocused ? "8px" : "16px"};
-          left: ${props.$leftSide || props.$variant === "search"
-            ? "48px"
-            : "16px"};
-          font-size: ${props.$value || props.$isFocused ? "12px" : "16px"};
-          line-height: ${props.$value || props.$isFocused ? "16px" : "24px"};
-          color: ${props.$isFocused ? "#666666" : "#aaaaaa"};
-          transition: top 0.2s, font-size 0.2s, color 0.2s;
-          pointer-events: none;
-          z-index: 1;
-
-          @media ${device.mobile} {
-            top: ${props.$value || props.$isFocused ? "6px" : "12px"};
-            left: ${props.$leftSide || props.$variant === "search"
-              ? "44px"
-              : "12px"};
-            font-size: ${props.$value || props.$isFocused ? "11px" : "14px"};
-            line-height: ${props.$value || props.$isFocused ? "15px" : "24px"};
-          }
-        `}
+  @media ${device.mobile} {
+    top: ${(props) => (props.$value || props.$isFocused ? "6px" : "12px")};
+    left: ${(props) =>
+      props.$leftSide || props.$variant === "search" ? "44px" : "12px"};
+    font-size: ${(props) =>
+      props.$value || props.$isFocused ? "11px" : "14px"};
+    line-height: ${(props) =>
+      props.$value || props.$isFocused ? "15px" : "24px"};
+  }
 `;
 
 const StyledInputIcon = styled.span<{
@@ -110,10 +94,6 @@ const StyledInputIcon = styled.span<{
         `}
 `;
 
-const StyledInputFieldWrapper = styled.div`
-  position: relative;
-`;
-
 const StyledInputField = styled.input<{
   $value: IInput["value"];
   $label: IInput["label"];
@@ -122,24 +102,20 @@ const StyledInputField = styled.input<{
   $leftSide: IInput["leftSide"];
   $rightSide: IInput["rightSide"];
   $variant: IInput["variant"];
-  $labelPosition: IInput["labelPosition"];
   $isFocused: boolean;
 }>`
   border: 1px solid;
   border-radius: 9px;
   padding: ${(props) =>
-    props.$labelPosition === "default" &&
-    props.$label &&
-    props.$leftSide &&
-    props.$rightSide
+    props.$label && props.$leftSide && props.$rightSide
       ? "24px 48px 8px"
       : props.$leftSide && props.$rightSide
       ? "16px 48px"
-      : props.$labelPosition === "default" && props.$label && props.$leftSide
+      : props.$label && props.$leftSide
       ? "24px 16px 8px 48px"
-      : props.$labelPosition === "default" && props.$label && props.$rightSide
+      : props.$label && props.$rightSide
       ? "24px 48px 8px 16px"
-      : props.$labelPosition === "default" && props.$label
+      : props.$label
       ? "24px 16px 8px"
       : props.$leftSide
       ? "16px 16px 16px 48px"
@@ -265,18 +241,15 @@ const StyledInputField = styled.input<{
 
   @media ${device.mobile} {
     padding: ${(props) =>
-      props.$labelPosition === "default" &&
-      props.$label &&
-      props.$leftSide &&
-      props.$rightSide
+      props.$label && props.$leftSide && props.$rightSide
         ? "22px 44px 6px"
         : props.$leftSide && props.$rightSide
         ? "12px 44px"
-        : props.$labelPosition === "default" && props.$label && props.$leftSide
+        : props.$label && props.$leftSide
         ? "22px 12px 6px 44px"
-        : props.$labelPosition === "default" && props.$label && props.$rightSide
+        : props.$label && props.$rightSide
         ? "22px 44px 6px 12px"
-        : props.$labelPosition === "default" && props.$label
+        : props.$label
         ? "22px 12px 6px"
         : props.$leftSide
         ? "12px 12px 12px 44px"
@@ -349,7 +322,6 @@ export {
   StyledInput,
   StyledInputLabel,
   StyledInputIcon,
-  StyledInputFieldWrapper,
   StyledInputField,
   StyledInputClearButton,
   StyledInputCaption,
