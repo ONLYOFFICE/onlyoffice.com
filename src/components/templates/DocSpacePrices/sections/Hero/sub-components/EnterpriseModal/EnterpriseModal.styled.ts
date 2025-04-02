@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Button } from "@src/components/ui/Button";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { Tooltip } from "@src/components/ui/Tooltip";
 
 const StyledEnterpriseModal = styled.div`
   border-radius: 5px;
@@ -27,22 +28,12 @@ const StyledEnterpriseModalItems = styled.div`
   row-gap: 30px;
 `;
 
-const StyledEnterpriseModalItem = styled.div`
-  display: grid;
-  row-gap: 8px;
-`;
+const StyledEnterpriseModalTooltip = styled(Tooltip)`
+  opacity: 0.3;
+  transition: opacity 0.2s;
 
-const StyledEnterpriseModalItemBox = styled.div`
-  display: flex;
-  column-gap: 8px;
-
-  #info-icon {
-    opacity: 0.3;
-    transition: opacity 0.2s;
-
-    &:hover {
-      opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
   }
 `;
 
@@ -95,6 +86,15 @@ const StyledEnterpriseModalTotal = styled.div`
   justify-content: space-between;
   border-top: 1px solid #cccccc;
   padding-top: 11px;
+  min-height: 65px;
+
+  @media ${device.tabletS} {
+    min-height: 59px;
+  }
+
+  @media ${device.mobile} {
+    min-height: 43px;
+  }
 `;
 
 const StyledEnterpriseModalTotalCurrency = styled(Text)`
@@ -113,11 +113,10 @@ export {
   StyledEnterpriseModal,
   StyledEnterpriseModalHeading,
   StyledEnterpriseModalItems,
-  StyledEnterpriseModalItem,
-  StyledEnterpriseModalItemBox,
   StyledEnterpriseModalBtns,
   StyledEnterpriseModalBtn,
   StyledEnterpriseModalList,
   StyledEnterpriseModalTotal,
   StyledEnterpriseModalTotalCurrency,
+  StyledEnterpriseModalTooltip,
 };

@@ -4,29 +4,28 @@ import {
   StyledEnterpriseModal,
   StyledEnterpriseModalHeading,
   StyledEnterpriseModalItems,
-  StyledEnterpriseModalItem,
-  StyledEnterpriseModalItemBox,
   StyledEnterpriseModalBtns,
   StyledEnterpriseModalBtn,
   StyledEnterpriseModalList,
   StyledEnterpriseModalTotal,
   StyledEnterpriseModalTotalCurrency,
+  StyledEnterpriseModalTooltip,
 } from "./EnterpriseModal.styled";
 import { IEnterpriseModal } from "./EnterpriseModal.types";
 import { Modal } from "@src/components/ui/Modal";
-import { Text } from "@src/components/ui/Text";
 import { Heading } from "@src/components/ui/Heading";
-import { Tooltip } from "@src/components/ui/Tooltip";
+import { Checkbox } from "@src/components/ui/Checkbox";
 import { CounterSelector } from "@src/components/widgets/CounterSelector";
 import { ToggleButtons } from "@src/components/widgets/ToggleButtons";
 import { Tabs } from "@src/components/widgets/Tabs";
+import { LabeledWrapper } from "@src/components/widgets/LabeledWrapper";
 import {
   licenseDurations,
   numberOfUsers,
+  numberOfUsersTotal,
   supportUpdates,
   supportLevel,
-} from "../../data/enterprise";
-
+} from "../../data/plans";
 import { InfoIcon } from "@src/components/icons";
 
 const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
@@ -42,6 +41,8 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
   const [supportLevelValue, setSupportLevelValue] = useState(
     supportLevel[0].id,
   );
+  const [supportMultiServer, setSuppoerMultiServer] = useState(false);
+  const [trainingCourses, setTrainingCourses] = useState(false);
 
   const handleLicenseChange = (value: string) => {
     setSelectedOption({
@@ -63,6 +64,16 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
     });
   };
 
+  const isUponRequest =
+    selectedOption.licenseDuration !== licenseDurations[0].id ||
+    selectedOption.supportUpdates !== supportUpdates[0].id ||
+    supportLevelValue !== supportLevel[0].id ||
+    supportMultiServer ||
+    trainingCourses;
+  const total =
+    numberOfUsersTotal[numberOfUsersValue as keyof typeof numberOfUsersTotal];
+  const isUponRequestOrEmpty = isUponRequest || !total;
+
   return (
     <Modal maxWidth="544px" isOpen={isOpen} onClose={onClose}>
       <StyledEnterpriseModal>
@@ -72,19 +83,19 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
         />
 
         <StyledEnterpriseModalItems>
-          <StyledEnterpriseModalItem>
-            <StyledEnterpriseModalItemBox>
-              <Text as="div" size={2} label={t("NumberOfUsers")} />
-              <Tooltip
+          <LabeledWrapper
+            label={t("NumberOfUsers")}
+            rightSide={
+              <StyledEnterpriseModalTooltip
                 id="number-of-users"
                 place="bottom-start"
                 width="220px"
                 content={t("NumberOfUsersTooltip")}
               >
-                <InfoIcon id="info-icon" />
-              </Tooltip>
-            </StyledEnterpriseModalItemBox>
-
+                <InfoIcon />
+              </StyledEnterpriseModalTooltip>
+            }
+          >
             <CounterSelector
               items={numberOfUsers.map((item) => ({
                 id: item.id,
@@ -93,10 +104,9 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
               selected={numberOfUsersValue}
               onChange={setNumberOfUsersValue}
             />
-          </StyledEnterpriseModalItem>
+          </LabeledWrapper>
 
-          <StyledEnterpriseModalItem>
-            <Text as="div" size={2} label={t("LicenseDuration")} />
+          <LabeledWrapper label={t("LicenseDuration")}>
             <ToggleButtons
               items={licenseDurations.map((item) => ({
                 id: item.id,
@@ -105,10 +115,9 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
               selected={selectedOption.licenseDuration}
               onChange={handleLicenseChange}
             />
-          </StyledEnterpriseModalItem>
+          </LabeledWrapper>
 
-          <StyledEnterpriseModalItem>
-            <Text as="div" size={2} label={t("Support&Updates")} />
+          <LabeledWrapper label={t("Support&Updates")}>
             <ToggleButtons
               items={supportUpdates.map((item) => ({
                 id: item.id,
@@ -117,10 +126,9 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
               selected={selectedOption.supportUpdates}
               onChange={handleSupportChange}
             />
-          </StyledEnterpriseModalItem>
+          </LabeledWrapper>
 
-          <StyledEnterpriseModalItem>
-            <Text as="div" size={2} label={t("SupportLevel")} />
+          <LabeledWrapper label={t("SupportLevel")}>
             <Tabs
               items={supportLevel.map((item) => ({
                 id: item.id,
@@ -140,25 +148,44 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
               collapsible
               onChange={setSupportLevelValue}
             />
-          </StyledEnterpriseModalItem>
+          </LabeledWrapper>
 
-          <StyledEnterpriseModalItem>
-            <Text as="div" size={2} label={t("Scalability")} />
-          </StyledEnterpriseModalItem>
+          <LabeledWrapper label={t("Scalability")}>
+            <Checkbox
+              label="Support for multi-server deployment"
+              checked={supportMultiServer}
+              onChange={() => setSuppoerMultiServer(!supportMultiServer)}
+            />
+          </LabeledWrapper>
 
-          <StyledEnterpriseModalItem>
-            <Text as="div" size={2} label={t("AdditionalToolsAndServices")} />
-          </StyledEnterpriseModalItem>
+          <LabeledWrapper label={t("AdditionalToolsAndServices")}>
+            <Checkbox
+              label="Training courses"
+              checked={trainingCourses}
+              onChange={() => setTrainingCourses(!trainingCourses)}
+            />
+          </LabeledWrapper>
 
           <StyledEnterpriseModalTotal>
             <Heading level={4} label={t("Total")} />
-            <Heading level={5} size={2} color="#ff6f3d">
-              <StyledEnterpriseModalTotalCurrency
-                forwardedAs="span"
-                color="main"
-                label="$"
-              />
-              6550
+
+            <Heading
+              level={5}
+              size={isUponRequestOrEmpty ? 4 : 2}
+              color="#ff6f3d"
+            >
+              {isUponRequestOrEmpty ? (
+                t("UponRequest")
+              ) : (
+                <>
+                  <StyledEnterpriseModalTotalCurrency
+                    forwardedAs="span"
+                    color="main"
+                    label="$"
+                  />
+                  {total}
+                </>
+              )}
             </Heading>
           </StyledEnterpriseModalTotal>
         </StyledEnterpriseModalItems>
@@ -167,7 +194,7 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
           <StyledEnterpriseModalBtn
             forwardedAs="a"
             href=""
-            label={t("BuyNow")}
+            label={isUponRequest ? t("GetAQuote") : t("BuyNow")}
           />
           <StyledEnterpriseModalBtn
             onClick={onClose}
