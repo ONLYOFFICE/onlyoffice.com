@@ -15,23 +15,23 @@
 
   "SuitedForAllOperatingSystems": "Suited for all operating systems",
   "SuitedForAllOperatingSystemsDesc": "Choose the operating system that best matches your style – we don’t mind! ONLYOFFICE Desktop Editors gets along great with Windows, macOS and Linux as well!",
-  "SuitedForAllOperatingSystemsUrl": "/images/templates/office-for-students/desktop-editors/suited-for-all-operating-systems.png",
-  "SuitedForAllOperatingSystemsUrl2x": "/images/templates/office-for-students/desktop-editors/suited-for-all-operating-systems@2x.png",
+  "SuitedForAllOperatingSystemsUrl": "/images/templates/office-for-students/desktop-editors/en/suited-for-all-operating-systems.png",
+  "SuitedForAllOperatingSystemsUrl2x": "/images/templates/office-for-students/desktop-editors/en/suited-for-all-operating-systems@2x.png",
 
   "FreeAndOpenSource": "Free & open source",
   "FreeAndOpenSourceDesc": "Yes, you read that right. ONLYOFFICE Desktop Editors is completely free – which means you’ll be getting access to a professional-grade office software without any financial constraints. What’s more, due to our editors being entirely open source, you’ll benefit from the transparency, community collaboration, and innovation that comes along with it.",
-  "FreeAndOpenSourceUrl": "/images/templates/office-for-students/desktop-editors/free-open-source.png",
-  "FreeAndOpenSourceUrl2x": "/images/templates/office-for-students/desktop-editors/free-open-source@2x.png",
+  "FreeAndOpenSourceUrl": "/images/templates/office-for-students/desktop-editors/en/free-open-source.png",
+  "FreeAndOpenSourceUrl2x": "/images/templates/office-for-students/desktop-editors/en/free-open-source@2x.png",
 
   "BothOfflineAndOnline": "Both offline and online",
   "BothOfflineAndOnlineDesc": "ONLYOFFICE desktop app is not only a local application. It can be connected to cloud of your choice (Moodle, ONLYOFFICE DocSpace, Nextcloud, ownCloud, Seafile, Liferay, kDrive) for online work and collaboration. Need to make quick edits to your essay on-the-go? Make use of the free apps for <0>iOS</0> and <1>Android</1>.",
-  "BothOfflineAndOnlineUrl": "/images/templates/office-for-students/desktop-editors/both-offline-and-online.png",
-  "BothOfflineAndOnlineUrl2x": "/images/templates/office-for-students/desktop-editors/both-offline-and-online@2x.png",
+  "BothOfflineAndOnlineUrl": "/images/templates/office-for-students/desktop-editors/en/both-offline-and-online.png",
+  "BothOfflineAndOnlineUrl2x": "/images/templates/office-for-students/desktop-editors/en/both-offline-and-online@2x.png",
 
   "DigitalLibraryAtHand": "Digital library at hand",
   "DigitalLibraryAtHandDesc": "Sure, research for your assignments looks way cooler with a dozen of books spread around your desk – but it’s also wildly impractical. With ONLYOFFICE Desktop Editors, you are able to read EPUB, FB2 and PDFs, and search through all the <0>digital e-books</0> directly within your office solution.",
-  "DigitalLibraryAtHandUrl": "/images/templates/office-for-students/desktop-editors/digital-library-at-hand.png",
-  "DigitalLibraryAtHandUrl2x": "/images/templates/office-for-students/desktop-editors/digital-library-at-hand@2x.png",
+  "DigitalLibraryAtHandUrl": "/images/templates/office-for-students/desktop-editors/en/digital-library-at-hand.png",
+  "DigitalLibraryAtHandUrl2x": "/images/templates/office-for-students/desktop-editors/en/digital-library-at-hand@2x.png",
 
   "DownloadNow": "DOWNLOAD NOW",
 
@@ -40,18 +40,18 @@
 
   "TeamworkHasNeverBeenEasier": "Teamwork has never been easier",
   "TeamworkHasNeverBeenEasierDesc": "By creating virtual rooms, you get to control who gets to view, collaborate on and share any project files within your room. And you will never miss important files again by keeping all docs related to your project neatly stored within rooms.",
-  "TeamworkHasNeverBeenEasierUrl": "/images/templates/office-for-students/docspace/teamwork-has-never-been-easier.png",
+  "TeamworkHasNeverBeenEasierUrl": "/images/templates/office-for-students/docspace/en/teamwork-has-never-been-easier.png",
   "TeamworkHasNeverBeenEasierUrl2x": "/images/templates/office-for-students/docspace/teamwork-has-never-been-easier@2x.png",
 
   "FitToAnyScenario": "Fit to any scenario",
   "FitToAnyScenarioDesc": "Collect responses for your projects and fill out assignments in <0>Form filling rooms</0>, prepare group presentations in <1>Collaboration rooms</1>, write essays and let your educators review them in <2>Custom rooms</2>. Allow group mates and teachers to view contents without registration in <3>Public rooms</3>. Discuss group projects in <4>Meeting rooms</4>.",
-  "FitToAnyScenarioUrl": "/images/templates/office-for-students/docspace/fit-to-any-scenario.png",
-  "FitToAnyScenarioUrl2x": "/images/templates/office-for-students/docspace/fit-to-any-scenario@2x.png",
+  "FitToAnyScenarioUrl": "/images/templates/office-for-students/docspace/en/fit-to-any-scenario.png",
+  "FitToAnyScenarioUrl2x": "/images/templates/office-for-students/docspace/en/fit-to-any-scenario@2x.png",
 
   "StressFreeCoEditing": "Stress-free co-editing",
   "StressFreeCoEditingDesc": "Efficiently work together with built-in communication tools such as chat and comments to discuss project details, share ideas, and provide feedback to your group members without switching between different platforms.",
-  "StressFreeCoEditingUrl": "/images/templates/office-for-students/docspace/stress-free-co-editing.png",
-  "StressFreeCoEditingUrl2x": "/images/templates/office-for-students/docspace/stress-free-co-editing@2x.png",
+  "StressFreeCoEditingUrl": "/images/templates/office-for-students/docspace/en/stress-free-co-editing.png",
+  "StressFreeCoEditingUrl2x": "/images/templates/office-for-students/docspace/en/stress-free-co-editing@2x.png",
 
   "CreateFreeAccount": "CREATE FREE ACCOUNT",
 
