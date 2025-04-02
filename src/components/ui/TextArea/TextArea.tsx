@@ -1,4 +1,4 @@
-import { forwardRef, useState, useEffect } from "react";
+import { forwardRef, useState } from "react";
 import {
   StyledTextArea,
   StyledTextAreaLabel,
@@ -30,11 +30,6 @@ const TextArea = forwardRef<HTMLTextAreaElement, ITextArea>(
     ref,
   ) => {
     const [isFocused, setIsFocused] = useState(false);
-    const [inputValue, setInputValue] = useState(value || "");
-
-    useEffect(() => {
-      setInputValue(value || "");
-    }, [value]);
 
     const handleFocus = (e: React.FocusEvent<HTMLTextAreaElement>) => {
       setIsFocused(true);
@@ -47,13 +42,8 @@ const TextArea = forwardRef<HTMLTextAreaElement, ITextArea>(
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-      setInputValue(e.target.value);
       if (onChange) onChange(e);
     };
-
-    const isFloating =
-      isFocused ||
-      (inputValue !== undefined && inputValue.toString().length > 0);
 
     return (
       <StyledTextArea
@@ -64,7 +54,7 @@ const TextArea = forwardRef<HTMLTextAreaElement, ITextArea>(
         {label && (
           <StyledTextAreaLabel
             htmlFor={id}
-            $isFloating={isFloating}
+            $isFloating={isFocused || (value !== undefined && value.length > 0)}
             $status={status}
           >
             {label}
@@ -78,13 +68,13 @@ const TextArea = forwardRef<HTMLTextAreaElement, ITextArea>(
           tabIndex={tabIndex}
           placeholder={isFocused ? placeholder : undefined}
           required={required}
-          value={inputValue}
+          value={value}
           name={name}
           cols={cols}
           rows={rows}
           maxLength={maxLength}
           $label={label ? true : false}
-          $hasValue={inputValue ? true : false}
+          $hasValue={value ? true : false}
           onFocus={handleFocus}
           onBlur={handleBlur}
           onChange={handleChange}

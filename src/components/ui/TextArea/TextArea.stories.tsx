@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Meta, StoryFn } from "@storybook/react";
 import { TextArea } from "./TextArea";
 import { ITextArea } from "./TextArea.types";
@@ -56,9 +57,17 @@ export default {
   },
 } as Meta<typeof TextArea>;
 
-const Template: StoryFn<ITextArea> = (args: ITextArea) => (
-  <TextArea {...args} />
-);
+const Template: StoryFn<ITextArea> = (args: ITextArea) => {
+  const [value, setValue] = useState("");
+
+  return (
+    <TextArea
+      {...args}
+      value={args.value ?? value}
+      onChange={(e) => setValue(e.target.value)}
+    />
+  );
+};
 
 export const Default = Template.bind({});
 Default.args = {

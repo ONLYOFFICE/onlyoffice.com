@@ -99,7 +99,7 @@
   "EnterTheNumberOfAdmins": "Enter the number of admins",
   "BussinesCloud": "Bussines cloud",
   "PricePerAdmin": "Price per admin:",
-  "ValuePerMonth": "20 per month",
+  "ValuePerMonth": "per month",
   "Admins": "Admins:",
   "DiskSpace": "Disk space:",
   "Total": "Total:",
@@ -141,5 +141,6 @@
   "Scalability": "Scalability",
   "SupportForMultiServerDeployment": "Support for multi-server deployment",
   "AdditionalToolsAndServices": "Additional tools and services",
-  "TrainingCourses": "Training courses"
+  "TrainingCourses": "Training courses",
+  "UponRequest": "Upon request"
 }

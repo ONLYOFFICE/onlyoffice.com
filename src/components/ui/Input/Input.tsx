@@ -29,8 +29,8 @@ const Input = forwardRef<HTMLInputElement, IInput>(
       disabled,
       required,
       value,
-      defaultValue,
       name,
+      maxLength,
       autoFocus,
       caption,
       leftSide,
@@ -47,7 +47,6 @@ const Input = forwardRef<HTMLInputElement, IInput>(
     const localRef = useRef<HTMLInputElement | null>(null);
     const inputRef = (ref as React.RefObject<HTMLInputElement>) || localRef;
 
-    const [inputValue, setInputValue] = useState(value || defaultValue || "");
     const [isFocused, setIsFocused] = useState(false);
     const [passwordVisible, setPasswordVisible] = useState(true);
 
@@ -58,7 +57,6 @@ const Input = forwardRef<HTMLInputElement, IInput>(
     }, [autoFocus, inputRef]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      setInputValue(e.target.value);
       onChange?.(e);
     };
 
@@ -73,7 +71,9 @@ const Input = forwardRef<HTMLInputElement, IInput>(
     };
 
     const handleClear = () => {
-      setInputValue("");
+      onChange?.({
+        target: { value: "" },
+      } as React.ChangeEvent<HTMLInputElement>);
       setIsFocused(false);
       inputRef.current?.focus();
     };
@@ -84,7 +84,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
           <StyledInputLabel
             htmlFor={id}
             $isFocused={isFocused}
-            $value={inputValue}
+            $value={value}
             $leftSide={leftSide}
             $variant={variant}
           >
@@ -99,15 +99,15 @@ const Input = forwardRef<HTMLInputElement, IInput>(
           className={className}
           placeholder={isFocused ? placeholder : undefined}
           tabIndex={tabIndex}
-          value={inputValue}
-          defaultValue={defaultValue}
+          value={value}
           name={name}
+          maxLength={maxLength}
           type={
             type === "password" ? (passwordVisible ? "password" : "text") : type
           }
           required={required}
           disabled={disabled}
-          $value={inputValue}
+          $value={value}
           $label={label}
           $status={status}
           $isFocused={isFocused}
@@ -148,17 +148,16 @@ const Input = forwardRef<HTMLInputElement, IInput>(
           </StyledInputIcon>
         )}
 
-        {(inputValue || defaultValue) &&
-          (withClearButton || variant === "search") && (
-            <StyledInputClearButton
-              onClick={handleClear}
-              $rightSide={rightSide}
-              $withClearButton={withClearButton}
-              $variant={variant}
-            >
-              <CrossIcon />
-            </StyledInputClearButton>
-          )}
+        {value && (withClearButton || variant === "search") && (
+          <StyledInputClearButton
+            onClick={handleClear}
+            $rightSide={rightSide}
+            $withClearButton={withClearButton}
+            $variant={variant}
+          >
+            <CrossIcon />
+          </StyledInputClearButton>
+        )}
 
         {status === "error" && caption && !isFocused && (
           <StyledInputCaption>{caption}</StyledInputCaption>

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Meta, StoryFn } from "@storybook/react";
 import { Input } from "./Input";
 import { IInput } from "./Input.types";
@@ -18,6 +19,9 @@ export default {
       control: { type: "text" },
     },
     className: {
+      control: { type: "text" },
+    },
+    label: {
       control: { type: "text" },
     },
     placeholder: {
@@ -76,7 +80,15 @@ export default {
 } as Meta<typeof Input>;
 
 const Template: StoryFn<IInput> = (args: IInput) => {
-  return <Input {...args} />;
+  const [value, setValue] = useState(args.value || "");
+
+  return (
+    <Input
+      {...args}
+      value={args.value ?? value}
+      onChange={(e) => setValue(e.target.value)}
+    />
+  );
 };
 
 export const Default = Template.bind({});
@@ -95,7 +107,7 @@ Error.args = {
 
 export const SimpleInput = Template.bind({});
 SimpleInput.args = {
-  label: "Firt name",
+  label: "First name",
   placeholder: "Marina",
 };
 

@@ -2,9 +2,9 @@ import styled, { css } from "styled-components";
 import { ICheckbox } from "./Checkbox.types";
 import { device } from "@src/utils/device";
 
-const StyledCheckbox = styled.label`
+const StyledCheckbox = styled.label<{ $align: ICheckbox["align"] }>`
   display: flex;
-  align-items: center;
+  align-items: ${(props) => props.$align === "center" && "center"};
   cursor: pointer;
 `;
 
@@ -34,6 +34,7 @@ const StyledCheckboxIcon = styled.span<{ $checked: ICheckbox["checked"] }>`
   border: 1px solid ${(props) => (props.$checked ? "#8BB825" : "#aaaaaa")};
   border-radius: 3px;
   width: 24px;
+  min-width: 24px;
   height: 24px;
   background-color: ${(props) => (props.$checked ? "#f9feef" : "#f9f9f9")};
   transition: border-color 0.2s;

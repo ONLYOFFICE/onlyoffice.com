@@ -40,6 +40,10 @@ export default {
     value: {
       control: { type: "text" },
     },
+    align: {
+      control: { type: "select" },
+      options: ["top", "center"],
+    },
   },
 } as Meta<typeof Checkbox>;
 
