@@ -1,6 +1,19 @@
 import { useTranslation, TFunction } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
-import { StyledCurrentEvents } from "./CurrentEvents.styled";
+import { 
+  StyledCurrentEvents,
+  StyledEmtEvents,
+  StyledEmtUpcomingHeading,
+  StyledEmtUpcomingEvents,
+  StyledEmtEventBlock,
+  StyledEmtEventTitle,
+  StyledEmtDate,
+  StyledEmtPlace,
+  StyledEmtDescription,
+  StyledEmtLinks,
+  StyledEmtLink,
+  StyledEmtPastLink
+} from "./CurrentEvents.styled";
 import { Heading } from "@src/components/ui/Heading";
 
 const getMonthKey = (date: Date): string => {
@@ -95,7 +108,6 @@ const CurrentEvents = ({ events }: CurrentEventsProps) => {
     );
   }
 
-  
   const currentEvents = events.filter(event => {
     if (!event.end_date) return true; 
     const endDate = new Date(event.end_date);
@@ -113,45 +125,47 @@ const CurrentEvents = ({ events }: CurrentEventsProps) => {
   }
 
   return (
-    <StyledCurrentEvents >      
-      <div className="emt_events">
-      <Text label={t("events:currentEvents")} color="main" className="emt_upcoming_heading"/>
-        <div className="emt_upcoming_events">          
-          
-          {currentEvents.map((event) => {
-            return (
-              
-                <div key={event.id} className="emt_event_block">
-                  <Heading
-                    level={2}
-                    label={event.name}
-                    className="emt_event_title"
-                    size={4}
-                  />
-                  <div className="emt_date">
-                    {formatEventDate(event.start_date, t, event.end_date)}
-                    {event.start_time && ` ${event.start_time}`}
-                    {event.end_time && ` ${event.end_time}`}
-                  </div>
-                  <div className="emt_place">{event.place}</div>
-                  <div className="emt_description" dangerouslySetInnerHTML={{ __html: event.description }} style={{ backgroundImage: `url(${event.image[0].url})` }}/>
-                  <div className="emt_links">
-                    <div className="emt_link">
-                      <a href={event.link} target="_blank" rel="noopener noreferrer">
-                        {t("events:moreInfo")}
-                      </a>
-                    </div>
-                    <div className="emt_pastlink">
-                      <a href={event.pastlink} target="_blank" rel="noopener noreferrer">
-                        {t("events:scheduleMeeting")}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              );
-          })}
-          </div>
-      </div>
+    <StyledCurrentEvents>      
+      <StyledEmtEvents>
+        <StyledEmtUpcomingHeading>
+          <Text label={t("events:currentEvents")} color="main" />
+        </StyledEmtUpcomingHeading>
+        <StyledEmtUpcomingEvents>          
+          {currentEvents.map((event) => (
+            <StyledEmtEventBlock key={event.id}>
+              <StyledEmtEventTitle>
+                <Heading
+                  level={2}
+                  label={event.name}
+                  size={4}
+                />
+              </StyledEmtEventTitle>
+              <StyledEmtDate>
+                {formatEventDate(event.start_date, t, event.end_date)}
+                {event.start_time && ` ${event.start_time}`}
+                {event.end_time && ` ${event.end_time}`}
+              </StyledEmtDate>
+              <StyledEmtPlace>{event.place}</StyledEmtPlace>
+              <StyledEmtDescription 
+                dangerouslySetInnerHTML={{ __html: event.description }} 
+                style={{ backgroundImage: `url(${event.image[0].url})` }}
+              />
+              <StyledEmtLinks>
+                <StyledEmtLink>
+                  <a href={event.link} target="_blank" rel="noopener noreferrer">
+                    {t("events:moreInfo")}
+                  </a>
+                </StyledEmtLink>
+                <StyledEmtPastLink>
+                  <a href={event.pastlink} target="_blank" rel="noopener noreferrer">
+                    {t("events:scheduleMeeting")}
+                  </a>
+                </StyledEmtPastLink>
+              </StyledEmtLinks>
+            </StyledEmtEventBlock>
+          ))}
+        </StyledEmtUpcomingEvents>
+      </StyledEmtEvents>
     </StyledCurrentEvents>
   );
 };

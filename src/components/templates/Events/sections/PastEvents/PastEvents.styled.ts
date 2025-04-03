@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
+import { Heading } from "@src/components/ui/Heading";
 
 const StyledMoreLink = styled.a<{ imageUrl?: string }>`
   position: relative;
@@ -27,14 +28,14 @@ const StyledMoreLink = styled.a<{ imageUrl?: string }>`
   &:hover {
     text-decoration: none;
   }
+
   @media ${device.tablet} {
-   
-      padding-top: 50vw;
-      &::before{
+    padding-top: 50vw;
+    &::before {
       background-size: 100% auto;
-        width: 100%;
-        height: 50vw;
-      }
+      width: 100%;
+      height: 50vw;
+    }
   }
 `;
 
@@ -43,96 +44,105 @@ const StyledPastEvents = styled(Section)`
   width: 100%;
   margin: auto;
   background-color: #F9F9F9;
-  .past_events_wrapper {
-    width: 1120px;
-    margin: auto;    
-    .emt_past_events_title {
-      font-size: 12px;
-      font-weight: 600;   
-      line-height: 133%;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    
-    .emt_past_events {
-      display: grid;
-      grid-template-columns: repeat(2, 380px);
-      padding: 40px 0 0;
-      gap: 50px 100px;
-      .emt_event_block{
-      width: 380px;
-        .emt_event_title {
-          
-          font-size: 18px;
-          font-weight: 600;
-          line-height: 1.3em;
-          margin: 0;
-          padding: 0 0 5px;
-          height: 52px;
-          display: table-cell;
-          vertical-align: bottom;
-        }
-        .emt_date {
-          font-size: 13px;
-          color: #808080;
-          padding: 0 0 0 25px;
-          margin: 10px 0;
-          min-height: 16px;
-          line-height: 16px;
-          background: url(/images/templates/events/СurrentEvents/time-01.png) 0 50% no-repeat;
-        }
-        .emt_place {
-          font-size: 13px;
-          color: #333333;
-          padding: 0;
-          margin: 0 0 20px;
-        }
-        .emt_past_link {
-          .emt_more_link {
-            color: #FF6F3D;
-            font-size: 14px;
-            line-height: 133%;
-            cursor: pointer;
-            margin-right: 35px;
-            text-decoration: underline;
-
-            &:hover {
-              text-decoration: none;
-            }
-          }
-        }
-      }
-      .emt_img {
-        margin: 24px 0 20px 0;
-        position: relative;
-        width: 100%;
-        
-        img {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-        }
-      }
-    }
-  }  
-
-  @media ${device.desktop} {
-    .past_events_wrapper{
-    width: calc(100% - 10vw);
-    }
-  }
-
-  @media ${device.tablet} {
-    .emt_past_events{
-      grid-template-columns: 1fr !important;
-      .emt_event_block{
-      width: 100% !important;
-      }
-    }
 `;
 
-export { StyledPastEvents, StyledMoreLink };
+const StyledPastEventsWrapper = styled.div`
+  width: 1120px;
+  margin: auto;
+`;
 
+const StyledPastEventsTitle = styled.div`
+  font-size: 12px;
+  font-weight: 600;   
+  line-height: 133%;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+`;
 
+const StyledPastEventsList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 380px);
+  padding: 40px 0 0;
+  gap: 50px 100px;
 
+  @media ${device.tablet} {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const StyledPastEventBlock = styled.div`
+  width: 380px;
+
+  @media ${device.tablet} {
+    width: 100%;
+  }
+`;
+
+const StyledPastEventTitle = styled(Heading)`
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0 0 5px;
+  height: 52px;
+  display: table-cell;
+  vertical-align: bottom;
+`;
+
+const StyledPastEventDate = styled.div`
+  font-size: 13px;
+  color: #808080;
+  padding: 0 0 0 25px;
+  margin: 10px 0;
+  min-height: 16px;
+  line-height: 16px;
+  background: url(/images/templates/events/СurrentEvents/time-01.png) 0 50% no-repeat;
+`;
+
+const StyledPastEventPlace = styled.div`
+  font-size: 13px;
+  color: #333333;
+  padding: 0;
+  margin: 0 0 20px;
+`;
+
+const StyledPastEventLink = styled.div`
+  .emt_more_link {
+    color: #FF6F3D;
+    font-size: 14px;
+    line-height: 133%;
+    cursor: pointer;
+    margin-right: 35px;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+`;
+
+const StyledPastEventImage = styled.div`
+  margin: 24px 0 20px 0;
+  position: relative;
+  width: 100%;
+  
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+`;
+
+export {
+  StyledMoreLink,
+  StyledPastEvents,
+  StyledPastEventsWrapper,
+  StyledPastEventsTitle,
+  StyledPastEventsList,
+  StyledPastEventBlock,
+  StyledPastEventTitle,
+  StyledPastEventDate,
+  StyledPastEventPlace,
+  StyledPastEventLink,
+  StyledPastEventImage
+};

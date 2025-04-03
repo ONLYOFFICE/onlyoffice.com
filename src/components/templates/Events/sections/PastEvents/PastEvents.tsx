@@ -1,7 +1,17 @@
 import { useTranslation, TFunction } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
-import { StyledPastEvents, StyledMoreLink } from "./PastEvents.styled";
-import { Heading } from "@src/components/ui/Heading";
+import { 
+  StyledPastEvents, 
+  StyledMoreLink,
+  StyledPastEventsWrapper,
+  StyledPastEventsTitle,
+  StyledPastEventsList,
+  StyledPastEventBlock,
+  StyledPastEventTitle,
+  StyledPastEventDate,
+  StyledPastEventPlace,
+  StyledPastEventLink
+} from "./PastEvents.styled";
 
 const getMonthKey = (date: Date): string => {
   const months = [
@@ -113,25 +123,25 @@ const PastEvents = ({ events }: PastEventsProps) => {
 
   return (
     <StyledPastEvents>
-      <div className="past_events_wrapper">
-        <Text label={t("events:pastEvents")} color="#666666" className="emt_past_events_title"/>
-        <div className="emtPastEvents">
-        <div className="emt_past_events">
+      <StyledPastEventsWrapper>
+        <StyledPastEventsTitle>
+          <Text label={t("events:pastEvents")} color="#666666" />
+        </StyledPastEventsTitle>
+        <StyledPastEventsList>
           {pastEvents.map((event) => (
-            <div key={event.id} className="emt_event_block">
-              <Heading
+            <StyledPastEventBlock key={event.id}>
+              <StyledPastEventTitle
                 level={2}
                 label={event.name}
-                className="emt_event_title"
               />
-              <div className="emt_date">
+              <StyledPastEventDate>
                 {formatEventDate(event.start_date, t, event.end_date)}
                 {event.start_time && ` ${event.start_time}`}
                 {event.end_time && ` ${event.end_time}`}
-              </div>
-              <div className="emt_place">{event.place}</div> 
+              </StyledPastEventDate>
+              <StyledPastEventPlace>{event.place}</StyledPastEventPlace>
               {event.pastlink && (
-                <div className="emt_past_link">
+                <StyledPastEventLink>
                   <StyledMoreLink                   
                     href={event.pastlink} 
                     target="_blank" 
@@ -141,13 +151,12 @@ const PastEvents = ({ events }: PastEventsProps) => {
                   >
                     {t("events:moreInfo")}
                   </StyledMoreLink>
-                </div>
+                </StyledPastEventLink>
               )}
-            </div>
+            </StyledPastEventBlock>
           ))}
-        </div>
-        </div>
-      </div>
+        </StyledPastEventsList>
+      </StyledPastEventsWrapper>
     </StyledPastEvents>
   );
 };
