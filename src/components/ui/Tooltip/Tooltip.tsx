@@ -1,12 +1,14 @@
 import { StyledTooltipBtn } from "./Tooltip.styled";
 import { ITooltip } from "./Tooltip.types";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import { InfoIcon } from "@src/components/icons";
 
 const Tooltip = ({
   id,
   className,
   content,
   children,
+  infoIcon,
   float,
   offset,
   place = "bottom",
@@ -18,8 +20,11 @@ const Tooltip = ({
         className={className}
         data-tooltip-id={id}
         $width={width}
+        $infoIcon={infoIcon}
+        tabIndex={0}
+        role="button"
       >
-        {children}
+        {infoIcon ? <InfoIcon /> : children}
       </StyledTooltipBtn>
 
       <ReactTooltip

@@ -10,8 +10,12 @@ const StyledLabeledWrapperLabel = styled.div`
   line-height: 24px;
   color: #333333;
 
-  & > *:not(:last-child) {
-    margin-right: 8px;
+  > span {
+    display: inline-flex;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
   }
 
   @media ${device.mobile} {

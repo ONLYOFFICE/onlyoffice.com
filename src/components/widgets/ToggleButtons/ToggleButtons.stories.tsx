@@ -45,8 +45,8 @@ const Template: StoryFn<IToggleButtons> = (args: IToggleButtons) => {
 export const Default = Template.bind({});
 Default.args = {
   items: [
-    { id: "toggle-button-1", label: "Option 1" },
-    { id: "toggle-button-2", label: "Option 2" },
+    { id: "toggle-button-1", label: { name: "Option 1" } },
+    { id: "toggle-button-2", label: { name: "Option 2" } },
   ],
   selected: "toggle-button-1",
 };

@@ -36,13 +36,13 @@ const numberOfUsersTotal = {
 };
 
 const licenseDurations: IToggleButtons["items"] = [
-  { id: "license-1-year", label: "1Year" },
-  { id: "license-lifetime", label: "Lifetime" },
+  { id: "license-1-year", label: { name: "1Year" } },
+  { id: "license-lifetime", label: { name: "Lifetime" } },
 ];
 
 const supportUpdates: IToggleButtons["items"] = [
-  { id: "support-1-year", label: "1Year" },
-  { id: "support-3-years", label: "3Years" },
+  { id: "support-1-year", label: { name: "1Year" } },
+  { id: "support-3-years", label: { name: "3Years" } },
 ];
 
 const supportLevel: ITabs["items"] = [
