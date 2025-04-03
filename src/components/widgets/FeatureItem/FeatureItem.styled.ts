@@ -12,7 +12,7 @@ const StyledFeatureItem = styled.div<{
 }>`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   position: relative;
   padding: ${({ $variant }) =>
     $variant === "horizontal" ? "0 0 0 88px" : "80px 0 0 0"};
