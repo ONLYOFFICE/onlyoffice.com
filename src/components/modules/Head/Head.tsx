@@ -12,9 +12,14 @@ const Head = ({ title, description, titleOG, descriptionOG }: IHead) => {
       <title>{titleString}</title>
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content={description} />
+      {description && <meta name="description" content={description} />}
       <meta property="og:title" content={titleOG || titleString} />
-      <meta property="og:description" content={descriptionOG || description} />
+      {(descriptionOG || description) && (
+        <meta
+          property="og:description"
+          content={descriptionOG || description}
+        />
+      )}
       <meta
         property="og:url"
         content={`${process.env.NEXT_PUBLIC_SITE_URL}${
