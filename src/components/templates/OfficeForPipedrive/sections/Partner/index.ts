@@ -1,0 +1,1 @@
+export { Partner } from "./Partner";
