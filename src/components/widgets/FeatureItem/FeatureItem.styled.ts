@@ -1,8 +1,6 @@
-import styled from "styled-components";
-import { device } from "@src/utils/device";
-import { Heading } from "@src/components/ui/Heading";
-import { Text } from "@src/components/ui/Text";
+import styled, { css } from "styled-components";
 import { IFeatureItem } from "./FeatureItem.types";
+import { device } from "@src/utils/device";
 
 const StyledFeatureItem = styled.div<{
   $variant: IFeatureItem["variant"];
@@ -10,28 +8,26 @@ const StyledFeatureItem = styled.div<{
   $iconPositionX: IFeatureItem["icon"]["positionX"];
   $iconPositionY: IFeatureItem["icon"]["positionY"];
 }>`
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   position: relative;
-  padding: ${({ $variant }) =>
-    $variant === "horizontal" ? "0 0 0 88px" : "80px 0 0 0"};
-
-  max-width: ${({ $variant }) =>
-    $variant === "horizontal" ? "100%" : "352px"};
+  display: grid;
+  align-content: start;
+  gap: 8px;
   width: 100%;
-
-  @media ${device.mobile} {
-    padding: 80px 0 0 0;
-  }
+  ${(props) =>
+    props.$variant === "horizontal"
+      ? css`
+          padding-left: 88px;
+        `
+      : css`
+          padding-top: 80px;
+          max-width: 352px;
+          text-align: center;
+        `}
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: ${({ $variant }) => ($variant === "vertical" ? "50%" : "0")};
-    transform: ${({ $variant }) =>
-      $variant === "vertical" ? "translateX(-50%)" : "none"};
     width: 64px;
     height: 64px;
     background-image: url(${({ $icon }) => $icon});
@@ -40,38 +36,21 @@ const StyledFeatureItem = styled.div<{
       $iconPositionX = "0px",
       $iconPositionY = "center",
     }) => `${$iconPositionX} ${$iconPositionY}`};
-  }
-`;
 
-const StyledFeatureItemTitle = styled(Heading)<{
-  $variant: IFeatureItem["variant"];
-}>`
-  font-size: 18px;
-  line-height: 133%;
-  letter-spacing: -0.02em;
-  text-align: ${({ $variant }) =>
-    $variant === "vertical" ? "center" : "left"};
+    ${(props) =>
+      props.$variant === "horizontal"
+        ? css`
+            left: 0;
+          `
+        : css`
+            left: 50%;
+            transform: translateX(-50%);
+          `}
+  }
 
   @media ${device.mobile} {
-    font-size: 16px;
+    padding: 80px 0 0 0;
   }
 `;
 
-const StyledFeatureItemText = styled(Text)<{
-  $variant: IFeatureItem["variant"];
-}>`
-  font-size: 16px;
-  line-height: 150%;
-  text-align: ${({ $variant }) =>
-    $variant === "vertical" ? "center" : "left"};
-
-  @media ${device.mobile} {
-    font-size: 14px;
-  }
-`;
-
-export {
-  StyledFeatureItem,
-  StyledFeatureItemTitle,
-  StyledFeatureItemText,
-};
+export { StyledFeatureItem };

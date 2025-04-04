@@ -6,7 +6,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-educators/sprites/icons.svg",
       positionX: "-172px",
     },
-    title: "ItProvidesFreeApps",
+    heading: "ItProvidesFreeApps",
     text: "ItProvidesFreeAppsDesc",
     links: [
       {
@@ -25,7 +25,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-educators/sprites/icons.svg",
       positionX: "-270px",
     },
-    title: "ItsAffordable",
+    heading: "ItsAffordable",
     text: "ItsAffordableDesc",
   },
   {
@@ -33,7 +33,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-educators/sprites/icons.svg",
       positionX: "-368px",
     },
-    title: "ItsHighlyCustomizable",
+    heading: "ItsHighlyCustomizable",
     text: "ItsHighlyCustomizableDesc",
     links: [
       {
@@ -46,7 +46,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-educators/sprites/icons.svg",
       positionX: "-464px",
     },
-    title: "ItsFullyCompatible",
+    heading: "ItsFullyCompatible",
     text: "ItsFullyCompatibleDesc",
   },
   {
@@ -54,7 +54,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-educators/sprites/icons.svg",
       positionX: "-560px",
     },
-    title: "YouWontFindABetterPlaceToCollaborate",
+    heading: "YouWontFindABetterPlaceToCollaborate",
     text: "YouWontFindABetterPlaceToCollaborateDesc",
   },
 ];

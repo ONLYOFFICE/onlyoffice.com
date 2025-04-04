@@ -34,10 +34,9 @@ const DocSpace = () => {
         <StyledDesktopEditorsText label={t("OODocSpaceDesc")} />
 
         <StyledDesktopEditorsFeatures>
-          {items.map(({ title, text, links, image, ...items }, index) => (
+          {items.map(({ title, text, links, image }, index) => (
             <FeatureImageItem
               key={index}
-              {...items}
               title={t(title)}
               position={index % 2 === 1 ? "right" : "left"}
               text={

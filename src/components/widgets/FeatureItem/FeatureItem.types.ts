@@ -3,7 +3,7 @@ export interface IFeatureItem {
   id?: string;
   /** Additional CSS class names. */
   className?: string;
-  /** The benefit variant */
+  /** The variant. Default: "vertical". */
   variant?: "horizontal" | "vertical";
   /** The icon. */
   icon: {
@@ -14,10 +14,10 @@ export interface IFeatureItem {
     /** Vertical positioning of the icon. Default: "center". */
     positionY?: string;
   };
-  /** The benefit title */
-  title?: string;
-  /** The benefit text */
+  /** The heading. */
+  heading?: string;
+  /** The text */
   text: React.ReactNode;
-  /** The benefit links */
+  /** The links */
   links?: { href: string; isExternal?: boolean }[];
 }

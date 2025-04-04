@@ -25,8 +25,11 @@ export default {
     icon: {
       control: { type: "object" },
     },
-    title: { control: "text" },
+    heading: { control: "text" },
     text: { control: "text" },
+    links: {
+      control: { type: "object" },
+    },
   },
 } as Meta<typeof FeatureItem>;
 
@@ -34,8 +37,14 @@ const Template: StoryFn<IFeatureItem> = (args: IFeatureItem) => (
   <FeatureItem {...args} />
 );
 
-export const vertical = Template.bind({});
-vertical.args = {
+export const Default = Template.bind({});
+Default.args = {
+  icon: { url: "/images/storybook/widgets/feature-item/working.svg" },
+  text: "Working with office files directly within the Box frontend",
+};
+
+export const Vertical = Template.bind({});
+Vertical.args = {
   variant: "vertical",
   icon: { url: "/images/storybook/widgets/feature-item/working.svg" },
   text: "Working with office files directly within the Box frontend",
@@ -45,17 +54,6 @@ export const Horizontal = Template.bind({});
 Horizontal.args = {
   variant: "horizontal",
   icon: { url: "/images/storybook/widgets/feature-item/working.svg" },
-  title: "It’s free",
+  heading: "It’s free",
   text: "No need to save on food or drinks just to be able to work on your assignment with a potent office suite. We’ve got your back – for students, ONLYOFFICE is completely free.",
-};
-
-export const WithSprite = Template.bind({});
-WithSprite.args = {
-  variant: "vertical",
-  icon: {
-    url: "/images/storybook/widgets/feature-item/features.svg",
-    positionX: "-20px",
-    positionY: "center",
-  },
-  text: "Working with office files directly within the Box frontend",
 };

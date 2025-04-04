@@ -33,10 +33,9 @@ const DocSpace = () => {
         </StyledDocSpaceHeading>
         <StyledDocSpaceText label={t("OODocSpaceTitleDesc")} />
         <StyledDocSpaceFeatures>
-          {items.map(({ title, text, links, image, ...props }, index) => (
+          {items.map(({ title, text, links, image }, index) => (
             <FeatureImageItem
               key={index}
-              {...props}
               title={t(title)}
               position={index % 2 === 1 ? "right" : "left"}
               text={

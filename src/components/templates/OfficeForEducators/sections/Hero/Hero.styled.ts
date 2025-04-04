@@ -53,7 +53,6 @@ const StyledHeroContent = styled.div`
   gap: 24px;
 
   @media ${device.tabletS} {
-    max-width: 100%;
     gap: 32px;
   }
 
@@ -64,14 +63,16 @@ const StyledHeroContent = styled.div`
 
 const StyledHeroHeading = styled(Heading)`
   font-size: 56px;
-  line-height: 110%;
+  line-height: 62px;
 
   @media ${device.tabletS} {
     font-size: 44px;
+    line-height: 59px;
   }
 
   @media ${device.mobile} {
     font-size: 24px;
+    line-height: 32px;
   }
 `;
 
