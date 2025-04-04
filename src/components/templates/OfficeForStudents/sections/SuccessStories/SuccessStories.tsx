@@ -29,7 +29,7 @@ const SuccessStories = () => {
               imgUrl={t(item.imgUrl)}
               headingLink={
                 item.headingLink && {
-                  href: item.headingLink.href,
+                  href: t(item.headingLink.href),
                   label: t(item.headingLink.label),
                 }
               }
