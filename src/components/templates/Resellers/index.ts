@@ -1,0 +1,1 @@
+export { ResellersTemplate } from "./Resellers";
