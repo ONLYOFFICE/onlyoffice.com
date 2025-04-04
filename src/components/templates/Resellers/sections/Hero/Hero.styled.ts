@@ -51,9 +51,11 @@ const StyledHeroContent = styled.div`
     font-size: 18px;
     line-height: 150%;
     margin-bottom: 30px;
+    padding-right: 77px;
 
     @media ${device.tabletS} {
       margin-bottom: 40px;
+      padding-right: 0;
     }
 
     @media ${device.mobile} {

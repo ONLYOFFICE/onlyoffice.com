@@ -12,7 +12,7 @@ const Product = ({ title, text, link, image }: IPortfolio) => {
   return (
     <StyledPortfolioWrapper>
       <StyledPortfolioContent>
-        <Heading label={title} level={4} />
+        <Heading label={title} level={3} />
         <Text label={text} size={3} />
         <Link
           href={link.href}
