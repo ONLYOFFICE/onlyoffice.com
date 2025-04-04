@@ -44,7 +44,11 @@ const EventsPage = ({ locale, events }: EventsPageProps) => {
         <AdventAnnounceBanner locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head title={t("PageTitle")} description={t("PageDescription")}  />
+        <Head 
+          title={t("pageTitle")} 
+          description={t("pageDescription")}
+          titleOG={t("pageTitleOG")}
+        />
       </Layout.Head>
       <Layout.Header>
         <Header locale={locale} bgColor="#F5F5F5"/>
