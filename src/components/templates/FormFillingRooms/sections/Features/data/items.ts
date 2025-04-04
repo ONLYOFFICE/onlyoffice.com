@@ -3,7 +3,7 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 export const items: IFeatureImageItem[] = [
   {
     title: "EasyFormUploading",
-    text: { label: "EasyFormUploadingDesc" },
+    text: "EasyFormUploadingDesc",
     image: {
       url: "EasyFormUploadingUrl",
       url2x: "EasyFormUploadingUrl2x",
@@ -12,7 +12,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "QuickSharing",
-    text: { label: "QuickSharingDesc" },
+    text: "QuickSharingDesc",
     image: {
       url: "QuickSharingUrl",
       url2x: "QuickSharingUrl2x",
@@ -21,7 +21,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "IntuitiveProcess",
-    text: { label: "IntuitiveProcessDesc" },
+    text: "IntuitiveProcessDesc",
     image: {
       url: "IntuitiveProcessUrl",
       url2x: "IntuitiveProcessUrl2x",
@@ -30,7 +30,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "ConvenientAnalyzing",
-    text: { label: "ConvenientAnalyzingDesc" },
+    text: "ConvenientAnalyzingDesc",
     image: {
       url: "ConvenientAnalyzingUrl",
       url2x: "ConvenientAnalyzingUrl2x",
@@ -39,7 +39,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "CostEffectiveForAnyBudget",
-    text: { label: "CostEffectiveForAnyBudgetDesc" },
+    text: "CostEffectiveForAnyBudgetDesc",
     image: {
       url: "CostEffectiveForAnyBudgetUrl",
       url2x: "CostEffectiveForAnyBudgetUrl2x",

@@ -1,25 +1,27 @@
 import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
-export const items: IFeatureImageItem[] = [
+interface IFeatureImageItemExtended extends IFeatureImageItem {
+  textLinks?: { href: string; isExternal?: boolean }[];
+}
+
+export const items: IFeatureImageItemExtended[] = [
   {
     title: "SeamlessAndUserFriendly",
-    text: {
-      label: "SeamlessAndUserFriendlyDesc",
-      links: [
-        {
-          href: "/document-editor",
-        },
-        {
-          href: "/spreadsheet-editor",
-        },
-        {
-          href: "/presentation-editor",
-        },
-        {
-          href: "/pdf-editor",
-        },
-      ],
-    },
+    text: "SeamlessAndUserFriendlyDesc",
+    textLinks: [
+      {
+        href: "/document-editor",
+      },
+      {
+        href: "/spreadsheet-editor",
+      },
+      {
+        href: "/presentation-editor",
+      },
+      {
+        href: "/pdf-editor",
+      },
+    ],
     image: {
       url: "SeamlessAndUserFriendlyImgUrl",
       url2x: "SeamlessAndUserFriendlyImgUrl2x",
@@ -28,14 +30,12 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "TailoredToCreate",
-    text: {
-      label: "TailoredToCreateDesc",
-      links: [
-        {
-          href: "/ai-assistants",
-        },
-      ],
-    },
+    text: "TailoredToCreateDesc",
+    textLinks: [
+      {
+        href: "/ai-assistants",
+      },
+    ],
     image: {
       url: "TailoredToCreateImgUrl",
       url2x: "TailoredToCreateImgUrl2x",
@@ -44,7 +44,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "RatingYourStudentsEssays",
-    text: { label: "RatingYourStudentsEssaysDesc" },
+    text: "RatingYourStudentsEssaysDesc",
     image: {
       url: "RatingYourStudentsEssaysImgUrl",
       url2x: "RatingYourStudentsEssaysImgUrl2x",
@@ -53,18 +53,16 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "YourOnlineLibrarysBestFriend",
-    text: {
-      label: [
-        "YourOnlineLibrarysBestFriendDesc1",
-        "YourOnlineLibrarysBestFriendDesc2",
-        "YourOnlineLibrarysBestFriendDesc3",
-      ],
-      links: [
-        {
-          href: "/document-templates",
-        },
-      ],
-    },
+    text: [
+      "YourOnlineLibrarysBestFriendDesc1",
+      "YourOnlineLibrarysBestFriendDesc2",
+      "YourOnlineLibrarysBestFriendDesc3",
+    ],
+    textLinks: [
+      {
+        href: "/document-templates",
+      },
+    ],
     image: {
       url: "YourOnlineLibrarysBestFriendImgUrl",
       url2x: "YourOnlineLibrarysBestFriendImgUrl2x",

@@ -1,9 +1,13 @@
 import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
-export const items: IFeatureImageItem[] = [
+interface IFeatureImageItemExtended extends IFeatureImageItem {
+  textLinks?: { href: string; isExternal?: boolean }[];
+}
+
+export const items: IFeatureImageItemExtended[] = [
   {
     title: "TeamworkHasNeverBeenEasier",
-    text: { label: "TeamworkHasNeverBeenEasierDesc" },
+    text: "TeamworkHasNeverBeenEasierDesc",
     image: {
       url: "TeamworkHasNeverBeenEasierUrl",
       url2x: "TeamworkHasNeverBeenEasierUrl2x",
@@ -12,26 +16,24 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "FitToAnyScenario",
-    text: {
-      label: "FitToAnyScenarioDesc",
-      links: [
-        {
-          href: "/form-filling-rooms",
-        },
-        {
-          href: "/collaboration-rooms",
-        },
-        {
-          href: "/custom-rooms",
-        },
-        {
-          href: "/public-rooms",
-        },
-        {
-          href: "/office-for-zoom",
-        },
-      ],
-    },
+    text: "FitToAnyScenarioDesc",
+    textLinks: [
+      {
+        href: "/form-filling-rooms",
+      },
+      {
+        href: "/collaboration-rooms",
+      },
+      {
+        href: "/custom-rooms",
+      },
+      {
+        href: "/public-rooms",
+      },
+      {
+        href: "/office-for-zoom",
+      },
+    ],
     image: {
       url: "FitToAnyScenarioUrl",
       url2x: "FitToAnyScenarioUrl2x",
@@ -40,7 +42,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "StressFreeCoEditing",
-    text: { label: "StressFreeCoEditingDesc" },
+    text: "StressFreeCoEditingDesc",
     image: {
       url: "StressFreeCoEditingUrl",
       url2x: "StressFreeCoEditingUrl2x",

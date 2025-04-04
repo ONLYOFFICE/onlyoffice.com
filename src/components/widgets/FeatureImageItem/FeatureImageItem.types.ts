@@ -6,10 +6,7 @@ export interface IFeatureImageItem {
   /** The title. */
   title: string;
   /** The text. */
-  text: {
-    label: React.ReactNode;
-    links?: { href: string; isExternal?: boolean }[];
-  };
+  text: React.ReactNode;
   /** The links. */
   links?: { href: string; label: string; isExternal?: boolean }[];
   /** The image.  */

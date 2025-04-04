@@ -10,7 +10,7 @@ const Features = () => {
       items={items.map((items) => ({
         ...items,
         title: t(items.title),
-        text: { label: t(String(String(items.text.label))) },
+        text: t(String(String(items.text))),
         links: items.links?.map((link) => ({
           ...link,
           label: t(String(link.label)),

@@ -36,29 +36,27 @@ const DesktopEditors = () => {
         <StyledDesktopEditorsText label={t("OODesktopEditorsText")} />
 
         <StyledDesktopEditorsFeatures>
-          {items.map(({ title, text, image }, index) => (
+          {items.map(({ title, text, textLinks, image }, index) => (
             <FeatureImageItem
               key={index}
               position={index % 2 === 1 ? "right" : "left"}
               title={t(title)}
-              text={{
-                label: (
-                  <Trans
-                    t={t}
-                    i18nKey={String(text.label)}
-                    components={text.links?.map((link, index) => (
-                      <Link
-                        key={index}
-                        href={link.href}
-                        target={link.isExternal ? "_blank" : undefined}
-                        color="main"
-                        textUnderline
-                        hover="underline-none"
-                      />
-                    ))}
-                  />
-                ),
-              }}
+              text={
+                <Trans
+                  t={t}
+                  i18nKey={String(text)}
+                  components={textLinks?.map((link, index) => (
+                    <Link
+                      key={index}
+                      href={link.href}
+                      target={link.isExternal ? "_blank" : undefined}
+                      color="main"
+                      textUnderline
+                      hover="underline-none"
+                    />
+                  ))}
+                />
+              }
               image={{
                 url: t(image.url),
                 url2x: image.url2x && t(image.url2x),

@@ -23,7 +23,7 @@ const FeatureImageItem = ({
       <StyleFeatureImageItemContent>
         <Heading level={3} label={title} />
         <StyledFeatureImageItemText color="#666666" lineHeight="150%">
-          {text.label}
+          {text}
         </StyledFeatureImageItemText>
         {links?.map(({ href, label, isExternal }, index) => (
           <StyledFeatureImageItemLink

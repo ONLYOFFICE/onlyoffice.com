@@ -24,7 +24,7 @@ export default {
       control: "text",
     },
     text: {
-      control: "object",
+      control: "text",
     },
     links: {
       control: "object",
@@ -46,10 +46,7 @@ const Template: StoryFn<IFeatureImageItem> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   title: "Secure for sensitive documents",
-  text: {
-    label:
-      "Protect your files by setting access level to define which actions will be available to the invited people: Room managers with access management rights, Content creators with access to manage room files/folders, Editors with full access to the room files, or Viewers with read-only access.",
-  },
+  text: "Protect your files by setting access level to define which actions will be available to the invited people: Room managers with access management rights, Content creators with access to manage room files/folders, Editors with full access to the room files, or Viewers with read-only access.",
   links: [{ href: "#", label: "Learn More" }],
   image: {
     url: "/images/storybook/widgets/feature-image-item/secure-for-sensitive-documents.png",

@@ -25,10 +25,7 @@ Default.args = {
   items: [
     {
       title: "Secure for sensitive documents",
-      text: {
-        label:
-          "Protect your files by setting access level to define which actions will be available to the invited people: Room managers with access management rights, Content creators with access to manage room files/folders, Editors with full access to the room files, or Viewers with read-only access.",
-      },
+      text: "Protect your files by setting access level to define which actions will be available to the invited people: Room managers with access management rights, Content creators with access to manage room files/folders, Editors with full access to the room files, or Viewers with read-only access.",
       image: {
         url: "/images/storybook/modules/room/room-features/secure-for-sensitive-documents.png",
         url2x:
@@ -38,7 +35,7 @@ Default.args = {
     },
     {
       title: "Convenient for multiple co-authors",
-      text: { label: "Collaborate effectively to get work done faster." },
+      text: "Collaborate effectively to get work done faster.",
       links: [{ href: "#", label: "Learn more" }],
       image: {
         url: "/images/storybook/modules/room/room-features/cost-effective-for-any-budget.png",
