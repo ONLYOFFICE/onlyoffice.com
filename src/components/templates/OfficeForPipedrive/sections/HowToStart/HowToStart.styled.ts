@@ -17,10 +17,6 @@ const StyledHowToStart = styled(Section)`
       margin-bottom: 32px;
     }
   }
-
-  .how-to-start-switcher {
-    
-  }
 `;
 
 const StyledHowToStartInfo = styled.div`
