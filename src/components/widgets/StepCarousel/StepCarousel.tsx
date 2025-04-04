@@ -22,8 +22,8 @@ const StepCarousel = ({ id, className, items }: IStepCarousel) => {
         modules={[Navigation, Pagination]}
         pagination={{ clickable: true }}
         navigation={{
-          prevEl: ".swiper-button-prev",
-          nextEl: ".swiper-button-next",
+          prevEl: `.swiper-button-prev.swiper-button-prev-${id}`,
+          nextEl: `.swiper-button-next.swiper-button-next-${id}`,
         }}
       >
         {items.map((item, index) => (
@@ -40,8 +40,8 @@ const StepCarousel = ({ id, className, items }: IStepCarousel) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <CarouselButton className="swiper-button-prev" />
-      <CarouselButton className="swiper-button-next" direction="right" />
+      <CarouselButton className={`swiper-button-prev swiper-button-prev-${id}`} />
+      <CarouselButton className={`swiper-button-next swiper-button-next-${id}`} direction="right" />
     </StyledStepCarousel>
   );
 };
