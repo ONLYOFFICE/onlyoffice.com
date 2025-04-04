@@ -5,21 +5,21 @@ export const items: IFeatureItem[] = [
     icon: {
       url: "/images/templates/office-for-students/features/its-free.svg",
     },
-    title: "ItSFree",
+    heading: "ItSFree",
     text: "ItSFreeDesc",
   },
   {
     icon: {
       url: "/images/templates/office-for-students/features/collaboration.svg",
     },
-    title: "ItSCompatible",
+    heading: "ItSCompatible",
     text: "ItSCompatibleDesc",
   },
   {
     icon: {
       url: "/images/templates/office-for-students/features/customizable.svg",
     },
-    title: "ItSHighlyCustomizable",
+    heading: "ItSHighlyCustomizable",
     text: "ItSHighlyCustomizableDesc",
     links: [{ href: "/app-directory" }],
   },
@@ -27,7 +27,7 @@ export const items: IFeatureItem[] = [
     icon: {
       url: "/images/templates/office-for-students/features/compatible.svg",
     },
-    title: "ItSBuilt",
+    heading: "ItSBuilt",
     text: "ItSBuiltDesc",
   },
 ];

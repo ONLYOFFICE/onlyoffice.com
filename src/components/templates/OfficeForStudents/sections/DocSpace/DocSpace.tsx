@@ -34,28 +34,29 @@ const DocSpace = () => {
         <StyledDesktopEditorsText label={t("OODocSpaceDesc")} />
 
         <StyledDesktopEditorsFeatures>
-          {items.map(({ title, text, links, image, ...items }, index) => (
+          {items.map(({ title, text, image }, index) => (
             <FeatureImageItem
               key={index}
-              {...items}
               title={t(title)}
               position={index % 2 === 1 ? "right" : "left"}
-              text={
-                <Trans
-                  t={t}
-                  i18nKey={String(text)}
-                  components={links?.map((link, index) => (
-                    <Link
-                      key={index}
-                      href={link.href}
-                      target={link.isExternal ? "_blank" : undefined}
-                      color="main"
-                      textUnderline
-                      hover="underline-none"
-                    />
-                  ))}
-                />
-              }
+              text={{
+                label: (
+                  <Trans
+                    t={t}
+                    i18nKey={String(text.label)}
+                    components={text.links?.map((link, index) => (
+                      <Link
+                        key={index}
+                        href={link.href}
+                        target={link.isExternal ? "_blank" : undefined}
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                      />
+                    ))}
+                  />
+                ),
+              }}
               image={{
                 url: t(image.url),
                 url2x: image.url2x && t(image.url2x),

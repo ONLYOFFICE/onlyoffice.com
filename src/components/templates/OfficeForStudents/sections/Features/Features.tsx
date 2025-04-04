@@ -28,12 +28,12 @@ const Features = () => {
         </StyledFeaturesHeading>
         <StyledFeaturesText label={t("WhyOODesc")} />
         <StyledFeatures>
-          {items.map(({ icon, title, text, links }, index) => (
+          {items.map(({ icon, heading, text, links }, index) => (
             <FeatureItem
               key={index}
               variant="horizontal"
               icon={icon}
-              title={t(title ?? "")}
+              heading={t(heading ?? "")}
               text={
                 <Trans
                   t={t}

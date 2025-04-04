@@ -1,5 +1,4 @@
-import { Container } from "@src/components/ui/Container";
-import { Section } from "@src/components/ui/Section";
+import { Trans, useTranslation } from "next-i18next";
 import {
   StyledButtonWrapper,
   StyledDocsFeatures,
@@ -7,8 +6,9 @@ import {
   StyledDocsText,
   StyledFeatureItemText,
 } from "./Docs.styled";
+import { Section } from "@src/components/ui/Section";
+import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
-import { Trans, useTranslation } from "next-i18next";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
@@ -34,22 +34,40 @@ const Docs = () => {
         <StyledDocsText label={t("OODocsDesc")} />
         <Fit />
         <StyledDocsFeatures>
-          {items.map(({ title, text, links, image, ...props }, index) => (
+          {items.map(({ title, text, image }, index) => (
             <FeatureImageItem
               key={index}
-              {...props}
               title={t(title)}
               position={index % 2 === 1 ? "left" : "right"}
               text={
-                Array.isArray(text) ? (
-                  text.map((item, index) => (
-                    <StyledFeatureItemText key={index}>
-                      {
+                Array.isArray(text.label)
+                  ? {
+                      label: text.label.map((item, index) => (
+                        <StyledFeatureItemText key={index}>
+                          <Trans
+                            key={index}
+                            t={t}
+                            i18nKey={String(item)}
+                            components={text.links?.map((link, index) => (
+                              <Link
+                                key={index}
+                                href={link.href}
+                                target={link.isExternal ? "_blank" : undefined}
+                                color="main"
+                                textUnderline
+                                hover="underline-none"
+                              />
+                            ))}
+                          />
+                        </StyledFeatureItemText>
+                      )),
+                    }
+                  : {
+                      label: (
                         <Trans
-                          key={index}
                           t={t}
-                          i18nKey={String(item)}
-                          components={links?.map((link, index) => (
+                          i18nKey={String(text.label)}
+                          components={text.links?.map((link, index) => (
                             <Link
                               key={index}
                               href={link.href}
@@ -60,25 +78,8 @@ const Docs = () => {
                             />
                           ))}
                         />
-                      }
-                    </StyledFeatureItemText>
-                  ))
-                ) : (
-                  <Trans
-                    t={t}
-                    i18nKey={String(text)}
-                    components={links?.map((link, index) => (
-                      <Link
-                        key={index}
-                        href={link.href}
-                        target={link.isExternal ? "_blank" : undefined}
-                        color="main"
-                        textUnderline
-                        hover="underline-none"
-                      />
-                    ))}
-                  />
-                )
+                      ),
+                    }
               }
               image={{
                 url: t(image.url),

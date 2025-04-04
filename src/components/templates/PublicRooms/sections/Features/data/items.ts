@@ -3,7 +3,7 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 export const items: IFeatureImageItem[] = [
   {
     title: "IdealForPublicSharing",
-    text: "PublicSharingDesc",
+    text: { label: "PublicSharingDesc" },
     image: {
       url: "PublicSharingImgUrl",
       url2x: "PublicSharingImgUrl2x",
@@ -12,7 +12,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "AbsolutelySafe",
-    text: "AbsolutelySafeDesc",
+    text: { label: "AbsolutelySafeDesc" },
     image: {
       url: "AbsolutelySafeImgUrl",
       url2x: "AbsolutelySafeImgUrl2x",
@@ -21,7 +21,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "EasyToStore",
-    text: "EasyToStoreDesc",
+    text: { label: "EasyToStoreDesc" },
     image: {
       url: "EasyToStoreImgUrl",
       url2x: "EasyToStoreImgUrl2x",
@@ -30,7 +30,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "SeamlesslyEmbeddable",
-    text: "SeamlesslyEmbeddableDesc",
+    text: { label: "SeamlesslyEmbeddableDesc" },
     image: {
       url: "SeamlesslyEmbeddableImgUrl",
       url2x: "SeamlesslyEmbeddableImgUrl2x",
@@ -39,7 +39,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "CostEffectiveForAnyBudget",
-    text: "CostEffectiveDesc",
+    text: { label: "CostEffectiveDesc" },
     image: {
       url: "CostEffectiveImgUrl",
       url2x: "CostEffectiveImgUrl2x",

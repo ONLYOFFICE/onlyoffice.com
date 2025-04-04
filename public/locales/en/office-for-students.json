@@ -10,8 +10,8 @@
 
   "SmoothAndIntuitiveOfficeExperience": "Smooth & intuitive office experience",
   "SmoothAndIntuitiveOfficeExperienceDesc": "Your assignments might be complicated – your office suite should not. ONLYOFFICE Desktop Editors offers you an intuitive user experience with one interface for <0>text documents</0>, <1>spreadsheets</1>, <2>presentations</2>, and <3>PDF files</3>.",
-  "SmoothAndIntuitiveOfficeExperienceUrl": "/images/templates/office-for-students/desktop-editors/smooth-intuitive-office-experience.png",
-  "SmoothAndIntuitiveOfficeExperienceUrl2x": "/images/templates/office-for-students/desktop-editors/smooth-intuitive-office-experience@2x.png",
+  "SmoothAndIntuitiveOfficeExperienceUrl": "/images/templates/office-for-students/desktop-editors/en/smooth-intuitive-office-experience.png",
+  "SmoothAndIntuitiveOfficeExperienceUrl2x": "/images/templates/office-for-students/desktop-editors/en/smooth-intuitive-office-experience@2x.png",
 
   "SuitedForAllOperatingSystems": "Suited for all operating systems",
   "SuitedForAllOperatingSystemsDesc": "Choose the operating system that best matches your style – we don’t mind! ONLYOFFICE Desktop Editors gets along great with Windows, macOS and Linux as well!",
@@ -41,7 +41,7 @@
   "TeamworkHasNeverBeenEasier": "Teamwork has never been easier",
   "TeamworkHasNeverBeenEasierDesc": "By creating virtual rooms, you get to control who gets to view, collaborate on and share any project files within your room. And you will never miss important files again by keeping all docs related to your project neatly stored within rooms.",
   "TeamworkHasNeverBeenEasierUrl": "/images/templates/office-for-students/docspace/en/teamwork-has-never-been-easier.png",
-  "TeamworkHasNeverBeenEasierUrl2x": "/images/templates/office-for-students/docspace/teamwork-has-never-been-easier@2x.png",
+  "TeamworkHasNeverBeenEasierUrl2x": "/images/templates/office-for-students/docspace/en/teamwork-has-never-been-easier@2x.png",
 
   "FitToAnyScenario": "Fit to any scenario",
   "FitToAnyScenarioDesc": "Collect responses for your projects and fill out assignments in <0>Form filling rooms</0>, prepare group presentations in <1>Collaboration rooms</1>, write essays and let your educators review them in <2>Custom rooms</2>. Allow group mates and teachers to view contents without registration in <3>Public rooms</3>. Discuss group projects in <4>Meeting rooms</4>.",

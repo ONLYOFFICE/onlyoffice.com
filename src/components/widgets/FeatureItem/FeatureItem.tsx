@@ -1,14 +1,12 @@
-import {
-  StyledFeatureItem,
-  StyledFeatureItemTitle,
-  StyledFeatureItemText,
-} from "./FeatureItem.styled";
+import { StyledFeatureItem } from "./FeatureItem.styled";
 import { IFeatureItem } from "./FeatureItem.types";
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 
 const FeatureItem = ({
   variant = "vertical",
   icon,
-  title,
+  heading,
   text,
 }: IFeatureItem) => {
   return (
@@ -18,12 +16,12 @@ const FeatureItem = ({
       $iconPositionX={icon.positionX}
       $iconPositionY={icon.positionY}
     >
-      {title && (
-        <StyledFeatureItemTitle $variant={variant} level={5}>
-          {title}
-        </StyledFeatureItemTitle>
+      {heading && (
+        <Heading level={5} size={5}>
+          {heading}
+        </Heading>
       )}
-      <StyledFeatureItemText $variant={variant}>{text}</StyledFeatureItemText>
+      <Text size={2}>{text}</Text>
     </StyledFeatureItem>
   );
 };

@@ -3,7 +3,7 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 export const items: IFeatureImageItem[] = [
   {
     title: "IdealForDueDiligence",
-    text: "IdealForDueDiligenceDesc",
+    text: { label: "IdealForDueDiligenceDesc" },
     image: {
       url: "IdealForDueDiligenceImgUrl",
       url2x: "IdealForDueDiligenceImgUrl2x",
@@ -12,7 +12,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "CompletelyOrganized",
-    text: "CompletelyOrganizedDesc",
+    text: { label: "CompletelyOrganizedDesc" },
     image: {
       url: "CompletelyOrganizedImgUrl",
       url2x: "CompletelyOrganizedImgUrl2x",
@@ -21,7 +21,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "HighLevelOfDataSecurity",
-    text: "HighLevelOfDataSecurityDesc",
+    text: { label: "HighLevelOfDataSecurityDesc" },
     image: {
       url: "HighLevelOfDataSecurityImgUrl",
       url2x: "HighLevelOfDataSecurityImgUrl2x",
@@ -30,7 +30,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "CostEffectiveForAnyBudget",
-    text: "CostEffectiveForAnyBudgetDesc",
+    text: { label: "CostEffectiveForAnyBudgetDesc" },
     image: {
       url: "CostEffectiveForAnyBudgetImgUrl",
       url2x: "CostEffectiveForAnyBudgetImgUrl2x",

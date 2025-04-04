@@ -3,21 +3,23 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 export const items: IFeatureImageItem[] = [
   {
     title: "SeamlessAndUserFriendly",
-    text: "SeamlessAndUserFriendlyDesc",
-    links: [
-      {
-        href: "/document-editor",
-      },
-      {
-        href: "/spreadsheet-editor",
-      },
-      {
-        href: "/presentation-editor",
-      },
-      {
-        href: "/pdf-editor",
-      },
-    ],
+    text: {
+      label: "SeamlessAndUserFriendlyDesc",
+      links: [
+        {
+          href: "/document-editor",
+        },
+        {
+          href: "/spreadsheet-editor",
+        },
+        {
+          href: "/presentation-editor",
+        },
+        {
+          href: "/pdf-editor",
+        },
+      ],
+    },
     image: {
       url: "SeamlessAndUserFriendlyImgUrl",
       url2x: "SeamlessAndUserFriendlyImgUrl2x",
@@ -26,12 +28,14 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "TailoredToCreate",
-    text: "TailoredToCreateDesc",
-    links: [
-      {
-        href: "/ai-assistants",
-      },
-    ],
+    text: {
+      label: "TailoredToCreateDesc",
+      links: [
+        {
+          href: "/ai-assistants",
+        },
+      ],
+    },
     image: {
       url: "TailoredToCreateImgUrl",
       url2x: "TailoredToCreateImgUrl2x",
@@ -40,7 +44,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "RatingYourStudentsEssays",
-    text: "RatingYourStudentsEssaysDesc",
+    text: { label: "RatingYourStudentsEssaysDesc" },
     image: {
       url: "RatingYourStudentsEssaysImgUrl",
       url2x: "RatingYourStudentsEssaysImgUrl2x",
@@ -49,16 +53,18 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "YourOnlineLibrarysBestFriend",
-    text: [
-      "YourOnlineLibrarysBestFriendDesc1",
-      "YourOnlineLibrarysBestFriendDesc2",
-      "YourOnlineLibrarysBestFriendDesc3",
-    ],
-    links: [
-      {
-        href: "/document-templates",
-      },
-    ],
+    text: {
+      label: [
+        "YourOnlineLibrarysBestFriendDesc1",
+        "YourOnlineLibrarysBestFriendDesc2",
+        "YourOnlineLibrarysBestFriendDesc3",
+      ],
+      links: [
+        {
+          href: "/document-templates",
+        },
+      ],
+    },
     image: {
       url: "YourOnlineLibrarysBestFriendImgUrl",
       url2x: "YourOnlineLibrarysBestFriendImgUrl2x",

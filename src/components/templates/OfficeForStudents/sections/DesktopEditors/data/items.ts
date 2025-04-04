@@ -3,25 +3,23 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 export const items: IFeatureImageItem[] = [
   {
     title: "SmoothAndIntuitiveOfficeExperience",
-    text: "SmoothAndIntuitiveOfficeExperienceDesc",
-    links: [
-      {
-        href: "/document-editor",
-        isExternal: false,
-      },
-      {
-        href: "/spreadsheet-editor",
-        isExternal: false,
-      },
-      {
-        href: "/presentation-editor",
-        isExternal: false,
-      },
-      {
-        href: "/pdf-editor",
-        isExternal: false,
-      },
-    ],
+    text: {
+      label: "SmoothAndIntuitiveOfficeExperienceDesc",
+      links: [
+        {
+          href: "/document-editor",
+        },
+        {
+          href: "/spreadsheet-editor",
+        },
+        {
+          href: "/presentation-editor",
+        },
+        {
+          href: "/pdf-editor",
+        },
+      ],
+    },
     image: {
       url: "SmoothAndIntuitiveOfficeExperienceUrl",
       url2x: "SmoothAndIntuitiveOfficeExperienceUrl2x",
@@ -30,7 +28,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "SuitedForAllOperatingSystems",
-    text: "SuitedForAllOperatingSystemsDesc",
+    text: { label: "SuitedForAllOperatingSystemsDesc" },
     image: {
       url: "SuitedForAllOperatingSystemsUrl",
       url2x: "SuitedForAllOperatingSystemsUrl2x",
@@ -39,7 +37,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "FreeAndOpenSource",
-    text: "FreeAndOpenSourceDesc",
+    text: { label: "FreeAndOpenSourceDesc" },
     image: {
       url: "FreeAndOpenSourceUrl",
       url2x: "FreeAndOpenSourceUrl2x",
@@ -48,17 +46,18 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "BothOfflineAndOnline",
-    text: "BothOfflineAndOnlineDesc",
-    links: [
-      {
-        href: "/office-for-ios",
-        isExternal: false,
-      },
-      {
-        href: "/office-for-android",
-        isExternal: false,
-      },
-    ],
+    text: {
+      label: "BothOfflineAndOnlineDesc",
+      links: [
+        {
+          href: "/office-for-ios",
+        },
+        {
+          href: "/office-for-android",
+        },
+      ],
+    },
+
     image: {
       url: "BothOfflineAndOnlineUrl",
       url2x: "BothOfflineAndOnlineUrl2x",
@@ -67,13 +66,14 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "DigitalLibraryAtHand",
-    text: "DigitalLibraryAtHandDesc",
-    links: [
-      {
-        href: "/e-book",
-        isExternal: false,
-      },
-    ],
+    text: {
+      label: "DigitalLibraryAtHandDesc",
+      links: [
+        {
+          href: "/e-book",
+        },
+      ],
+    },
     image: {
       url: "DigitalLibraryAtHandUrl",
       url2x: "DigitalLibraryAtHandUrl2x",

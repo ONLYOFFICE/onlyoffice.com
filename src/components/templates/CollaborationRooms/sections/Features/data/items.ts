@@ -3,7 +3,7 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 export const items: IFeatureImageItem[] = [
   {
     title: "SecureForSensitiveDocuments",
-    text: "ProtectYourFiles",
+    text: { label: "ProtectYourFiles" },
     image: {
       url: "SecureImgUrl",
       url2x: "SecureImgUrl2x",
@@ -12,7 +12,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "ConvenientForMultipleCoAuthors",
-    text: "CollaborateEffectively",
+    text: { label: "CollaborateEffectively" },
     links: [{ label: "LearnMore", href: "/seamless-collaboration" }],
     image: {
       url: "ConvenientImgUrl",
@@ -22,7 +22,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "CostEffectiveForAnyBudget",
-    text: "PayForAdminsOnlyAndAdd",
+    text: { label: "PayForAdminsOnlyAndAdd" },
     image: {
       url: "BudgetImgUrl",
       url2x: "BudgetImgUrl2x",
