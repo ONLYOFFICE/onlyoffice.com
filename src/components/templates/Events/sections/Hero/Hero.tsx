@@ -12,7 +12,6 @@ const Hero = () => {
       desktopSpacing={["0", "0"]}
       tabletSpacing={["112px", "21px"]}
       tabletSmallSpacing={["96px", "80px"]}
-      mobileSpacing={["96px", "54px"]}
       bgColor="#F5F5F5"
       $imgUrl="/images/templates/events/hero/bg_map-01.png"
     >

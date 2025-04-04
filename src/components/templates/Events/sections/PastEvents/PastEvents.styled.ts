@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
+import { Heading } from "@src/components/ui/Heading";
+import { Link } from "@src/components/ui/Link";
 
-const StyledMoreLink = styled.a<{ imageUrl?: string }>`
+const StyledMoreLink = styled(Link)<{ $imageUrl?: string }>`
   position: relative;
   display: block;
   padding: 210px 0 0;
@@ -21,7 +23,7 @@ const StyledMoreLink = styled.a<{ imageUrl?: string }>`
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 380px 190px;
-    background-image: ${props => props.imageUrl ? `url(${props.imageUrl})` : 'url(/images/templates/events/play-icon.svg)'};    
+    background-image: ${props => props.$imageUrl ? `url(${props.$imageUrl})` : 'url(/images/templates/events/play-icon.svg)'};    
   }
 
   &:hover {
@@ -45,7 +47,7 @@ const StyledPastEvents = styled(Section)`
   background-color: #F9F9F9;
 `;
 
-const PastEventsWrapper = styled.div`
+const StyledPastEventsWrapper = styled.div`
   width: 1120px;
   margin: auto;
   
@@ -54,7 +56,7 @@ const PastEventsWrapper = styled.div`
   }
 `;
 
-const EmtPastEventsTitle = styled.div`
+const StyledPastEventsTitle = styled.div`
   font-size: 12px;
   font-weight: 600;   
   line-height: 133%;
@@ -62,7 +64,7 @@ const EmtPastEventsTitle = styled.div`
   letter-spacing: 0.08em;
 `;
 
-const EmtPastEvents = styled.div`
+const StyledPastEventsList = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 380px);
   padding: 40px 0 0;
@@ -73,7 +75,7 @@ const EmtPastEvents = styled.div`
   }
 `;
 
-const EmtEventBlock = styled.div`
+const StyledEventBlock = styled.div`
   width: 380px;
 
   @media ${device.tablet} {
@@ -81,7 +83,7 @@ const EmtEventBlock = styled.div`
   }
 `;
 
-const EmtEventTitle = styled.div`
+const StyledEventTitle = styled(Heading)`
   font-size: 18px;
   font-weight: 600;
   line-height: 1.3em;
@@ -92,24 +94,24 @@ const EmtEventTitle = styled.div`
   vertical-align: bottom;
 `;
 
-const EmtDate = styled.div`
+const StyledEventDate = styled.div`
   font-size: 13px;
   color: #808080;
   padding: 0 0 0 25px;
   margin: 10px 0;
   min-height: 16px;
   line-height: 16px;
-  background: url(/images/templates/events/СurrentEvents/time-01.png) 0 50% no-repeat;
+  background: url("/images/templates/events/СurrentEvents/time-01.png") 0 50% no-repeat;
 `;
 
-const EmtPlace = styled.div`
+const StyledEventPlace = styled.div`
   font-size: 13px;
   color: #333333;
   padding: 0;
   margin: 0 0 20px;
 `;
 
-const EmtPastLink = styled.div`
+const StyledPastLink = styled.div`
   .emt_more_link {
     color: #FF6F3D;
     font-size: 14px;
@@ -124,7 +126,7 @@ const EmtPastLink = styled.div`
   }
 `;
 
-const EmtImg = styled.div`
+const StyledEventImage = styled.div`
   margin: 24px 0 20px 0;
   position: relative;
   width: 100%;
@@ -139,13 +141,13 @@ const EmtImg = styled.div`
 export { 
   StyledPastEvents, 
   StyledMoreLink,
-  PastEventsWrapper,
-  EmtPastEventsTitle,
-  EmtPastEvents,
-  EmtEventBlock,
-  EmtEventTitle,
-  EmtDate,
-  EmtPlace,
-  EmtPastLink,
-  EmtImg
+  StyledPastEventsWrapper,
+  StyledPastEventsTitle,
+  StyledPastEventsList,
+  StyledEventBlock,
+  StyledEventTitle,
+  StyledEventDate,
+  StyledEventPlace,
+  StyledPastLink,
+  StyledEventImage
 };

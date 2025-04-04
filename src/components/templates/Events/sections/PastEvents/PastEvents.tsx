@@ -1,18 +1,17 @@
 import { useTranslation, TFunction } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
-import { 
-  StyledPastEvents, 
+import {
+  StyledPastEvents,
   StyledMoreLink,
-  PastEventsWrapper,
-  EmtPastEventsTitle,
-  EmtPastEvents,
-  EmtEventBlock,
-  EmtEventTitle,
-  EmtDate,
-  EmtPlace,
-  EmtPastLink
+  StyledPastEventsWrapper,
+  StyledPastEventsTitle,
+  StyledPastEventsList,
+  StyledEventBlock,
+  StyledEventTitle,
+  StyledEventDate,
+  StyledEventPlace,
+  StyledPastLink
 } from "./PastEvents.styled";
-import { Heading } from "@src/components/ui/Heading";
 
 const getMonthKey = (date: Date): string => {
   const months = [
@@ -25,11 +24,11 @@ const getMonthKey = (date: Date): string => {
 const formatEventDate = (startDate: string, t: TFunction, endDate?: string) => {
   const start = new Date(startDate);
   const end = endDate ? new Date(endDate) : null;
-  
+
   const month = t(`events:months.${getMonthKey(start)}`);
   const startDay = start.getDate();
   const year = start.getFullYear();
-  
+
   if (!end) {
     return t("events:dateTemplates.singleDay", {
       day: startDay,
@@ -107,10 +106,10 @@ const PastEvents = ({ events }: PastEventsProps) => {
   }
 
   const pastEvents = events.filter(event => {
-    if (!event.end_date) return false; 
+    if (!event.end_date) return false;
     const endDate = new Date(event.end_date);
     const today = new Date();
-    today.setHours(0, 0, 0, 0); 
+    today.setHours(0, 0, 0, 0);
     return endDate < today;
   });
 
@@ -124,42 +123,40 @@ const PastEvents = ({ events }: PastEventsProps) => {
 
   return (
     <StyledPastEvents>
-      <PastEventsWrapper>
-        <EmtPastEventsTitle>
+      <StyledPastEventsWrapper>
+        <StyledPastEventsTitle>
           <Text label={t("events:pastEvents")} color="#666666" />
-        </EmtPastEventsTitle>
-        <EmtPastEvents>
+        </StyledPastEventsTitle>
+        <StyledPastEventsList>
           {pastEvents.map((event) => (
-            <EmtEventBlock key={event.id}>
-              <EmtEventTitle>
-                <Heading
-                  level={2}
-                  label={event.name}
-                />
-              </EmtEventTitle>
-              <EmtDate>
+            <StyledEventBlock key={event.id}>
+              <StyledEventTitle
+                level={2}
+                label={event.name}
+              />
+              <StyledEventDate>
                 {formatEventDate(event.start_date, t, event.end_date)}
                 {event.start_time && ` ${event.start_time}`}
                 {event.end_time && ` ${event.end_time}`}
-              </EmtDate>
-              <EmtPlace>{event.place}</EmtPlace> 
+              </StyledEventDate>
+              <StyledEventPlace>{event.place}</StyledEventPlace>
               {event.pastlink && (
-                <EmtPastLink>
-                  <StyledMoreLink                   
-                    href={event.pastlink} 
-                    target="_blank" 
+                <StyledPastLink>
+                  <StyledMoreLink
+                    href={event.pastlink}
+                    target="_blank"
                     rel="noopener noreferrer"
-                    imageUrl={event.image?.[0]?.url}
+                    $imageUrl={event.image?.[0]?.url}
                     color="main"
                   >
                     {t("events:moreInfo")}
                   </StyledMoreLink>
-                </EmtPastLink>
+                </StyledPastLink>
               )}
-            </EmtEventBlock>
+            </StyledEventBlock>
           ))}
-        </EmtPastEvents>
-      </PastEventsWrapper>
+        </StyledPastEventsList>
+      </StyledPastEventsWrapper>
     </StyledPastEvents>
   );
 };

@@ -2,18 +2,19 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
-const StyledHero = styled(Section)<{ $imgUrl?: string }>`  
+const StyledHero = styled(Section) <{ $imgUrl?: string }>`  
+  margin-top: -72px;
+  padding-top: 72px;
   min-height: 400px;
-  background-color: ${props => props.bgColor};
   background-image: ${props => props.$imgUrl ? `url(${props.$imgUrl})` : 'none'};
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center 90px;
   background-size: 1040px;
 
   .container {
     margin: auto;
     padding: 182px 0 322px;
-    background-image: url(/images/templates/events/hero/bg_events-01.png);
+    background-image: url("/images/templates/events/hero/bg_events-01.png");
     background-repeat: no-repeat;
     background-position: 100% 45%;
     background-size: 60%;
@@ -48,9 +49,8 @@ const StyledHero = styled(Section)<{ $imgUrl?: string }>`
   }
 
   @media screen and (max-width: 989px) {
-    background-position: center 85%;
+    background-position: center 68%;
     background-size: 100%;
-    padding: 0;
 
   .container {
       background-position: 50% 65%;
@@ -64,9 +64,11 @@ const StyledHero = styled(Section)<{ $imgUrl?: string }>`
           max-width: 470px;
       }
   }
+  @media ${device.mobile}{
+  padding: 48px 0 0;
+  background-position: center 95%;
+  }
   @media screen and (max-width: 425px) {
-    background-position: center 85%;
-        background-color: #F2F2F2;
   .container {
       padding: 48px 0 235px;
 
@@ -76,8 +78,6 @@ const StyledHero = styled(Section)<{ $imgUrl?: string }>`
           padding: 0 16px;
       }
   }
-}
-}
 }
 
 
@@ -90,7 +90,6 @@ const StyledHeroWrapper = styled.div`
   margin: 0 auto;
   max-width: 928px;
   text-align: center;
-  padding: 48px 0;
 
   
   @media ${device.tabletS} {

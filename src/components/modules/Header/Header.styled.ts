@@ -28,10 +28,9 @@ const GlobalStyle = createGlobalStyle<{ $isOpenMenuMobile?: boolean }>`
   }
 `;
 
-const StyledHeader = styled.div<{ $bgColor?: string }>`
+const StyledHeader = styled.div`
   display: flex;
   align-items: center;
-  background-color: ${props => props.$bgColor || 'transparent'};
 
   .oo-hm {
     margin-right: 16px;

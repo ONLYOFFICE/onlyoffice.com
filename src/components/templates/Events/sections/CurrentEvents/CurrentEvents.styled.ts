@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
+import { Heading } from "@src/components/ui/Heading";
+import { Link } from "@src/components/ui/Link";
 
 const StyledCurrentEvents = styled(Section)`
   padding: 0;
@@ -10,7 +12,7 @@ const StyledCurrentEvents = styled(Section)`
   }
 `;
 
-const EmtEvents = styled.div`
+const StyledEventsWrapper = styled.div`
   padding: 80px 0;
   max-width: 1120px;
   margin: auto;
@@ -20,11 +22,15 @@ const EmtEvents = styled.div`
   }
 
   @media ${device.tablet} {
-    
+    padding: 80px 48px;
+  }
+  @media ${device.tabletS} {
+    padding: 80px 16px;
+    width: calc(100% - 32px);
   }
 `;
 
-const EmtUpcomingHeading = styled.div`
+const StyledUpcomingHeading = styled.div`
   font-size: 12px;
   font-weight: 600;
   line-height: 133%;
@@ -32,12 +38,12 @@ const EmtUpcomingHeading = styled.div`
   letter-spacing: 0.08em;
 `;
 
-const EmtUpcomingEvents = styled.div`
+const StyledUpcomingEvents = styled.div`
   max-width: 928px;
   padding-bottom: 50px;
 `;
 
-const EmtEventBlock = styled.div`
+const StyledEventBlock = styled.div`
   padding: 0 0 20px;
 
   @media ${device.tablet} {
@@ -46,7 +52,7 @@ const EmtEventBlock = styled.div`
   }
 `;
 
-const EmtEventTitle = styled.div`
+const StyledEventTitle = styled(Heading)`
   padding: 30px 0 20px;
   line-height: 1.3em;
 
@@ -55,36 +61,26 @@ const EmtEventTitle = styled.div`
   }
 `;
 
-const EmtDate = styled.div`
+const StyledEventDate = styled.div`
   font-size: 13px;
   color: #808080;
   padding: 0 0 0 25px;
   margin: 10px 0;
   min-height: 16px;
   line-height: 16px;
-  background: url(/images/templates/events/СurrentEvents/time-01.png) 0 50% no-repeat;
+  background: url("/images/templates/events/СurrentEvents/time-01.png") 0 50% no-repeat;
 `;
 
-const EmtPlace = styled.div`
+const StyledEventPlace = styled.div`
   font-size: 13px;
   color: #333333;
   padding: 0;
   margin: 0 0 20px;
 `;
 
-const EmtImg = styled.div`
-  margin: 24px 0 20px 0;
-  position: relative;
-  width: 100%;
-  
-  img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-`;
 
-const EmtDescription = styled.div`
+
+const StyledEventDescription = styled.div`
   line-height: 1.6em;
   font-size: 14px;
   color: #333333;
@@ -94,52 +90,49 @@ const EmtDescription = styled.div`
   padding: 0 0 505px;
 
   @media ${device.tablet} {
-    background-size: 100% auto !important;
-    padding-bottom: 55vw !important;
+    background-size: 100% auto ;
+    padding-bottom: 55vw ;
   }
 `;
 
-const EmtLinks = styled.div`
+const StyledEventLinks = styled.div`
   padding: 20px 0 0;
   display: flex;
   flex-direction: row;
 `;
 
-const EmtLink = styled.div`
+const StyledEventLink = styled(Link)`
   color: #FF6F3D;
   font-size: 14px;
   line-height: 133%;
   cursor: pointer;
   margin-right: 35px;
-  text-decoration: underline;
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 `;
 
-const EmtPastLink = styled.div`
+const StyledPastLink = styled(Link)`
   color: #FF6F3D;
   font-size: 14px;
   line-height: 133%;
   cursor: pointer;
-  text-decoration: underline;
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 `;
 
-export { 
+export {
   StyledCurrentEvents,
-  EmtEvents,
-  EmtUpcomingHeading,
-  EmtUpcomingEvents,
-  EmtEventBlock,
-  EmtEventTitle,
-  EmtDate,
-  EmtPlace,
-  EmtImg,
-  EmtDescription,
-  EmtLinks,
-  EmtLink,
-  EmtPastLink
+  StyledEventsWrapper,
+  StyledUpcomingHeading,
+  StyledUpcomingEvents,
+  StyledEventBlock,
+  StyledEventTitle,
+  StyledEventDate,
+  StyledEventPlace,
+  StyledEventDescription,
+  StyledEventLinks,
+  StyledEventLink,
+  StyledPastLink
 };

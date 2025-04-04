@@ -51,7 +51,7 @@ const EventsPage = ({ locale, events }: EventsPageProps) => {
         />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} bgColor="#F5F5F5"/>
+        <Header locale={locale}/>
       </Layout.Header>
       <Layout.Main>
         <EventsTemplate events={events} />
