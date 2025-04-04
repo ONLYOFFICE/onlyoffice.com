@@ -3,7 +3,6 @@ import {
   StyledBlogCardImg,
   StyledBlogCardBody,
   StyledBlogCardWrapper,
-  StyledHeadingLink,
 } from "./BlogCard.styled";
 import { IBlogCard } from "./BlogCard.types";
 import { Link } from "@src/components/ui/Link";
@@ -18,7 +17,6 @@ const BlogCard = ({
   text,
   links,
   isLarge,
-  headingLink,
 }: IBlogCard) => {
   return (
     <StyledBlogCard id={id} className={className} $isLarge={isLarge}>
@@ -26,15 +24,18 @@ const BlogCard = ({
 
       <StyledBlogCardBody>
         <StyledBlogCardWrapper $isLarge={isLarge}>
-          {heading && <Heading level={3} size={5} label={heading} />}
+          <Heading level={3} size={5}>
+            {heading?.href ? (
+              <Link
+                href={heading.href}
+                label={heading.label}
+                target={heading.isExternal ? "_blank" : undefined}
+              />
+            ) : (
+              heading?.label
+            )}
+          </Heading>
           {text && <Text size={3} color="#666666" label={text} />}
-          {headingLink && (
-            <StyledHeadingLink
-              href={headingLink.href}
-              label={headingLink.label}
-              target={headingLink.isExternal ? "_blank" : undefined}
-            />
-          )}
         </StyledBlogCardWrapper>
 
         {links && (

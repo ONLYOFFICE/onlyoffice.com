@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { IBlogCard } from "./BlogCard.types";
-import { Link } from "@src/components/ui/Link";
 
 const StyledBlogCard = styled.div<{ $isLarge: IBlogCard["isLarge"] }>`
   display: flex;
@@ -54,22 +53,9 @@ const StyledBlogCardWrapper = styled.div<{ $isLarge: IBlogCard["isLarge"] }>`
   }
 `;
 
-const StyledHeadingLink = styled(Link)`
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 133%;
-  letter-spacing: -0.02em;
-  color: #333;
-
-  @media ${device.mobile} {
-    font-size: 16px;
-  }
-`;
-
 export {
   StyledBlogCard,
   StyledBlogCardImg,
   StyledBlogCardBody,
   StyledBlogCardWrapper,
-  StyledHeadingLink,
 };

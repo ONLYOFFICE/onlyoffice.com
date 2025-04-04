@@ -3,28 +3,28 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 export const items: IBlogCard[] = [
   {
     imgUrl: "DigitalTransformationImgUrl",
-    headingLink: {
+    heading: {
       href: "DigitalTransformationLink",
       label: "DigitalTransformation",
     },
   },
   {
     imgUrl: "HowOOFacilitatesCollaborationImgUrl",
-    headingLink: {
+    heading: {
       href: "HowOOFacilitatesCollaborationLink",
       label: "HowOOFacilitatesCollaboration",
     },
   },
   {
     imgUrl: "HowCollegeLyceeSacreCoeurImgUrl",
-    headingLink: {
+    heading: {
       href: "HowCollegeLyceeSacreCoeurLink",
       label: "HowCollegeLyceeSacreCoeur",
     },
   },
   {
     imgUrl: "HowKinderhausBerlinSharesAndCollaboratesImgUrl",
-    headingLink: {
+    heading: {
       href: "HowKinderhausBerlinSharesAndCollaboratesLink",
       label: "HowKinderhausBerlinSharesAndCollaborates",
     },

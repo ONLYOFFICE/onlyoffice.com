@@ -27,12 +27,10 @@ const SuccessStories = () => {
               className="blog-card"
               key={index}
               imgUrl={t(item.imgUrl)}
-              headingLink={
-                item.headingLink && {
-                  href: t(item.headingLink.href),
-                  label: t(item.headingLink.label),
-                }
-              }
+              heading={{
+                href: t(item.heading.href ?? ""),
+                label: t(item.heading.label),
+              }}
             />
           ))}
         </StyledSuccessStoriesItems>

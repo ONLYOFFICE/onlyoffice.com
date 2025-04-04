@@ -3,7 +3,7 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/custom-rooms/learn-more/helpcenter.png",
-    heading: "HelpCenter",
+    heading: { label: "HelpCenter" },
     text: "HelpCenterDesc",
     links: [
       {
@@ -15,7 +15,7 @@ export const items: IBlogCard[] = [
   },
   {
     imgUrl: "/images/templates/custom-rooms/learn-more/docspace.png",
-    heading: "YouTube",
+    heading: { label: "YouTube" },
     text: "MasterONLYOFFICEDocSpace",
     links: [
       {
@@ -27,7 +27,7 @@ export const items: IBlogCard[] = [
   },
   {
     imgUrl: "/images/templates/custom-rooms/learn-more/customers.png",
-    heading: "CustomerTestimonial",
+    heading: { label: "CustomerTestimonial" },
     text: "HowKinderhausBerlinSharesAndCollaborates",
     links: [
       {
