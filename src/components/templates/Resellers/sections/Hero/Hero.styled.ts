@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { IHero } from "./Hero.types";
 import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
@@ -69,9 +68,9 @@ const StyledHeroContent = styled.div`
 `;
 
 const StyledHeroImage = styled.div<{
-  $imgUrl: IHero["imgUrl"];
-  $imgWidth: IHero["imgWidth"];
-  $imgHeight: IHero["imgHeight"];
+  $imgUrl: string;
+  $imgWidth: number;
+  $imgHeight: number;
 }>`
   padding-bottom: ${({ $imgHeight, $imgWidth }) =>
     $imgHeight && $imgWidth

@@ -6,7 +6,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "0",
     },
-    title: "ResellerDiscount",
+    heading: "ResellerDiscount",
     text: "ResellerDiscountText",
   },
   {
@@ -14,7 +14,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "-384px",
     },
-    title: "GetHelp",
+    heading: "GetHelp",
     text: "GetHelpText",
   },
   {
@@ -22,7 +22,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "-98px",
     },
-    title: "Startup",
+    heading: "Startup",
     text: "StartupText",
   },
   {
@@ -30,7 +30,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "-480px",
     },
-    title: "TrainingAndConsulting",
+    heading: "TrainingAndConsulting",
     text: "TrainingAndConsultingText",
   },
   {
@@ -38,7 +38,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "-192px",
     },
-    title: "Updates",
+    heading: "Updates",
     text: "UpdatesText",
   },
   {
@@ -46,7 +46,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "-576px",
     },
-    title: "DealRegistration",
+    heading: "DealRegistration",
     text: "DealRegistrationText",
   },
   {
@@ -54,7 +54,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "-672px",
     },
-    title: "BringsRewards",
+    heading: "BringsRewards",
     text: "BringsRewardsText",
   },
   {
@@ -62,7 +62,7 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "-288px",
     },
-    title: "NFRLicense",
+    heading: "NFRLicense",
     text: "NFRLicenseText",
   },
 ];

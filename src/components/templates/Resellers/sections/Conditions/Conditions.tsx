@@ -19,12 +19,12 @@ const Conditions = () => {
           size={3}
         />
         <StyledConditions>
-          {items.map(({ icon, title, text }, index) => (
+          {items.map(({ icon, heading, text }, index) => (
             <FeatureItem
               key={index}
               variant="horizontal"
               icon={icon}
-              title={t(title ?? "")}
+              heading={t(heading ?? "")}
               text={t(String(text))}
             />
           ))}
