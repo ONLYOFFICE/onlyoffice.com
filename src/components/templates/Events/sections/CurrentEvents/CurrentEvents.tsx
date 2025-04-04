@@ -15,7 +15,7 @@ import {
   StyledEventLink,
   StyledPastLink
 } from "./CurrentEvents.styled";
-import { Heading } from "@src/components/ui/Heading";
+import { ICurrentEvents } from "./types";
 
 const getMonthKey = (date: Date): string => {
   const months = [
@@ -74,31 +74,7 @@ const formatEventDate = (startDate: string, t: TFunction, endDate?: string) => {
   });
 };
 
-interface EventImage {
-  id: number;
-  url: string;
-}
-
-interface Event {
-  id: number;
-  name: string;
-  start_date: string;
-  end_date: string;
-  start_time: string | null;
-  end_time: string | null;
-  place: string;
-  description: string;
-  link: string;
-  pastlink: string;
-  image: EventImage[];
-  image_2X: EventImage[];
-}
-
-interface CurrentEventsProps {
-  events: Event[] | null;
-}
-
-const CurrentEvents = ({ events }: CurrentEventsProps) => {
+const CurrentEvents = ({ events }: ICurrentEvents) => {
   const { t } = useTranslation(["events", "months"]);
 
   if (!events) {
@@ -144,7 +120,7 @@ const CurrentEvents = ({ events }: CurrentEventsProps) => {
                 {event.end_time && ` ${event.end_time}`}
               </StyledEventDate>
               <StyledEventPlace>{event.place}</StyledEventPlace>
-              
+
               {event.description && (
                 <StyledEventDescription
                   style={{ backgroundImage: `url(${event.image[0].url})` }}

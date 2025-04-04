@@ -90,8 +90,8 @@ const StyledEventDescription = styled.div`
   padding: 0 0 505px;
 
   @media ${device.tablet} {
-    background-size: 100% auto ;
-    padding-bottom: 55vw ;
+    background-size: 100% auto;
+    padding-bottom: 55vw;
   }
 `;
 

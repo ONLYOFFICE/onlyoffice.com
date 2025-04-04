@@ -44,14 +44,14 @@ const EventsPage = ({ locale, events }: EventsPageProps) => {
         <AdventAnnounceBanner locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head 
-          title={t("pageTitle")} 
+        <Head
+          title={t("pageTitle")}
           description={t("pageDescription")}
           titleOG={t("pageTitleOG")}
         />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale}/>
+        <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
         <EventsTemplate events={events} />
@@ -68,7 +68,7 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
 
   try {
     const response = await getEventsApi(locale);
-    
+
     if (!response.data) {
       console.error('No data in API response');
       throw new Error('No data in API response');
