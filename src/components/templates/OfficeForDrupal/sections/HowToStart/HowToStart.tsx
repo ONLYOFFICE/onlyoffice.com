@@ -2,9 +2,9 @@ import { useTranslation, Trans } from "next-i18next";
 import { StyledHowToStart, StyledHowToStartInfo } from "./HowToStart.styled";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
-import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
+import { HowToStartSwitcher } from "@src/components/widgets/HowToStartSwitcher";
 import { items } from "./data/items";
 
 const HowToStart = () => {
@@ -15,28 +15,11 @@ const HowToStart = () => {
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 
-        <StepCarousel
-          items={items.map((item) => ({
-            imgUrl: t(item.imgUrl),
-            heading: item.headingLinks ? (
-              <Trans
-                t={t}
-                i18nKey={String(item.heading)}
-                components={item.headingLinks.map((link, index) => (
-                  <Link
-                    key={index}
-                    href={link.url}
-                    target={link.isExternal ? "_blank" : undefined}
-                    color="main"
-                    textUnderline
-                    hover="underline-none"
-                  />
-                ))}
-              />
-            ) : (
-              t(String(item.heading))
-            ),
-          }))}
+        <HowToStartSwitcher
+          id="how-to-start-switcher"
+          className="how-to-start-switcher"
+          namespace="office-for-drupal"
+          items={items}
         />
 
         <StyledHowToStartInfo>
