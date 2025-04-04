@@ -8,10 +8,17 @@ export interface IToggleButtons {
     /** Unique identifier for the item. */
     id: string;
     /** Display label for the item. */
-    label: string;
+    label: {
+      /** Content to display on the left side of the label. */
+      leftSide?: React.ReactNode;
+      /** The main label text that will be displayed in the middle. */
+      name: string;
+      /** Content to display on the right side of the label. */
+      rightSide?: React.ReactNode;
+    };
   }[];
   /** The currently selected item. */
-  selected: string;
+  selected?: string;
   /** Function to call when an item is selected. */
-  onChange: (value: string) => void;
+  onChange?: (value: string) => void;
 }

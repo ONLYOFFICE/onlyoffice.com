@@ -22,7 +22,8 @@ const StyledBusinessModalInputWrapper = styled.div`
 const StyledBusinessModalItems = styled.div`
   display: grid;
   row-gap: 8px;
-  padding: 16px 0;
+  border-bottom: 1px solid #cccccc;
+  padding: 16px 0 24px;
   margin-top: 9px;
 `;
 
@@ -55,8 +56,7 @@ const StyledBusinessModalTotal = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #cccccc;
-  padding: 16px 0 3px;
+  padding: 12px 0 3px;
 `;
 
 const StyledBusinessModalTotalCurrency = styled(Text)`

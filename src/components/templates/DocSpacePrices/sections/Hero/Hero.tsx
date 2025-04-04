@@ -12,6 +12,7 @@ import { PlanCard } from "./sub-components/PlanCard";
 import { FeaturesTable } from "./sub-components/FeaturesTable";
 import { BusinessModal } from "./sub-components/BusinessModal";
 import { EnterpriseModal } from "./sub-components/EnterpriseModal";
+import { enterpriseCurrentPrice, businessCurrentPrice } from "./data/plans";
 
 const Hero = () => {
   const { t } = useTranslation("docspace-prices");
@@ -54,7 +55,7 @@ const Hero = () => {
             subHeading={t("Cloud")}
             price={{
               prev: "30",
-              current: "20",
+              current: businessCurrentPrice,
               label: t("PerAdminMonth"),
             }}
             isActive={true}
@@ -69,7 +70,7 @@ const Hero = () => {
             subHeading={t("OnPremises")}
             price={{
               from: true,
-              current: "6550",
+              current: enterpriseCurrentPrice,
               label: t("PerServer"),
             }}
             btn={{

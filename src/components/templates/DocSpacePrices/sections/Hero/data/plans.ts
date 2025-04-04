@@ -2,7 +2,10 @@ import { ICounterSelector } from "@src/components/widgets/CounterSelector";
 import { IToggleButtons } from "@src/components/widgets/ToggleButtons";
 import { ITabs } from "@src/components/widgets/Tabs";
 
-export const numberOfUsers: ICounterSelector["items"] = [
+const businessCurrentPrice = "20";
+const enterpriseCurrentPrice = "6550";
+
+const numberOfUsers: ICounterSelector["items"] = [
   {
     id: "100",
     label: "100",
@@ -25,17 +28,24 @@ export const numberOfUsers: ICounterSelector["items"] = [
   },
 ];
 
-export const licenseDurations: IToggleButtons["items"] = [
-  { id: "license-1-year", label: "1Year" },
-  { id: "license-lifetime", label: "Lifetime" },
+const numberOfUsersTotal = {
+  "100": enterpriseCurrentPrice,
+  "250": 14100,
+  "500": 28200,
+  "1000": 56400,
+};
+
+const licenseDurations: IToggleButtons["items"] = [
+  { id: "license-1-year", label: { name: "1Year" } },
+  { id: "license-lifetime", label: { name: "Lifetime" } },
 ];
 
-export const supportUpdates: IToggleButtons["items"] = [
-  { id: "support-1-year", label: "1Year" },
-  { id: "support-3-years", label: "3Years" },
+const supportUpdates: IToggleButtons["items"] = [
+  { id: "support-1-year", label: { name: "1Year" } },
+  { id: "support-3-years", label: { name: "3Years" } },
 ];
 
-export const supportLevel: ITabs["items"] = [
+const supportLevel: ITabs["items"] = [
   {
     id: "support-level-standard",
     label: "Standard",
@@ -79,3 +89,13 @@ export const supportLevel: ITabs["items"] = [
     ],
   },
 ];
+
+export {
+  businessCurrentPrice,
+  enterpriseCurrentPrice,
+  numberOfUsers,
+  numberOfUsersTotal,
+  licenseDurations,
+  supportUpdates,
+  supportLevel,
+};

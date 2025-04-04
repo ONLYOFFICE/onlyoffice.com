@@ -11,7 +11,7 @@ export interface ICounterSelector {
     label: string;
   }[];
   /** Currently selected item ID */
-  selected: string;
+  selected?: string;
   /** Function to call when an item is selected. */
-  onChange: (value: string) => void;
+  onChange?: (value: string) => void;
 }

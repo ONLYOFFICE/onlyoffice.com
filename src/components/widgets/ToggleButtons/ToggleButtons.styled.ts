@@ -10,18 +10,30 @@ const StyledToggleButtons = styled.div`
 `;
 
 const StyledToggleButton = styled.button<{ $selected: boolean }>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid ${(props) => (props.$selected ? "#ff6f3d" : "#aaaaaa")};
-  padding: 10px 12px;
+  padding: 7px 12px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: ${(props) => (props.$selected ? "600" : "400")};
   line-height: 20px;
   color: ${(props) => (props.$selected ? "#ff6f3d" : "#444444")};
   width: 100%;
+  min-height: 40px;
   text-align: center;
   text-transform: capitalize;
   background-color: transparent;
   transition: border-color 0.2s, color 0.2s, background-color 0.2s;
   cursor: pointer;
+
+  > span {
+    display: inline-flex;
+
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+  }
 
   &:first-child {
     border-radius: 3px 0 0 3px;
@@ -61,9 +73,13 @@ const StyledToggleButton = styled.button<{ $selected: boolean }>`
     }
   }
 
-  &:hover {
+  &:not(:disabled):hover {
     background-color: ${(props) =>
       props.$selected ? "transparent" : "#ebebeb"};
+  }
+
+  &:disabled {
+    cursor: initial;
   }
 
   @media ${device.mobile} {

@@ -2,11 +2,11 @@ import { useTranslation } from "next-i18next";
 import {
   StyledFaqCollapseHeader,
   StyledFaqCollapseHeading,
-  StyledFaqCollapseText,
 } from "./FaqCollapse.styled";
 import { IFaqCollapse } from "./FaqCollapse.types";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { Text } from "@src/components/ui/Text";
 import { CollapseGroup } from "@src/components/ui/CollapseGroup";
 
 const FaqCollapse = ({
@@ -32,12 +32,16 @@ const FaqCollapse = ({
       mobileSpacing={mobileSpacing}
     >
       <Container>
-        <StyledFaqCollapseHeader>
+        <StyledFaqCollapseHeader $text={text ? true : false}>
           <StyledFaqCollapseHeading
             label={t("Frequently Asked Questions")}
             level={2}
           />
-          {text && <StyledFaqCollapseText>{text}</StyledFaqCollapseText>}
+          {text && (
+            <Text size={1} color="#333333">
+              {text}
+            </Text>
+          )}
         </StyledFaqCollapseHeader>
 
         <CollapseGroup items={items} isAccordion={isAccordion} divider />

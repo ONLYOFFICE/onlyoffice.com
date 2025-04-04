@@ -5,8 +5,6 @@ export interface IInput {
   className?: string;
   /** Label text associated with the input field. */
   label?: string;
-  /** Position of the label relative to the input field. Default: "default". */
-  labelPosition?: "default" | "top";
   /** Placeholder text displayed inside the input field. */
   placeholder?: string;
   /** Specifies the tab order of the input field. */
@@ -23,10 +21,10 @@ export interface IInput {
   required?: boolean;
   /** The controlled value of the input field. */
   value: string;
-  /** The default value of the input field (used for uncontrolled inputs). */
-  defaultValue?: string;
   /** The name attribute for the input field. */
   name?: string;
+  /** The maximum number of characters allowed in the input field. */
+  maxLength?: number;
   /** Automatically focuses the input field when the component mounts. */
   autoFocus?: boolean;
   /** Caption text displayed below the input field for error messages. */
@@ -46,5 +44,5 @@ export interface IInput {
   /** Callback function triggered when the input field loses focus. */
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
   /** Callback function triggered when a key is pressed in the input field. */
-  onKeyDown?: () => void;
+  onKeyDown?: (e: React.KeyboardEvent<HTMLInputElement>) => void;
 }
