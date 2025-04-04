@@ -3,7 +3,7 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 export const items: IFeatureImageItem[] = [
   {
     title: "Tailored",
-    text: "TailoredDesc",
+    text: { label: "TailoredDesc" },
     image: {
       url: "TailoredImgUrl",
       url2x: "TailoredImgUrl2x",
@@ -12,7 +12,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "Sophisticated",
-    text: "SophisticatedDesc",
+    text: { label: "SophisticatedDesc" },
     links: [
       {
         href: "https://www.youtube.com/watch?v=5tzRL9Kxj1Y&feature=youtu.be",
@@ -28,7 +28,7 @@ export const items: IFeatureImageItem[] = [
   },
   {
     title: "CostEfectiveForAnyBudget",
-    text: "CostEfectiveForAnyBudgetDesc",
+    text: { label: "CostEfectiveForAnyBudgetDesc" },
     image: {
       url: "CostEfectiveForAnyBudgetImgUrl",
       url2x: "CostEfectiveForAnyBudgetImgUrl2x",

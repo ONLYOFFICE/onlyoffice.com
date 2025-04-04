@@ -5,42 +5,42 @@ export const items: IFeatureItem[] = [
     icon: {
       url: "/images/templates/office-for-dropbox/features/robust-set.svg",
     },
-    heading: "FeaturesRobustSet",
+    text: "FeaturesRobustSet",
   },
   {
     icon: {
       url: "/images/templates/office-for-dropbox/features/familiar-interface.svg",
     },
-    heading: "FeaturesFamiliarInterface",
+    text: "FeaturesFamiliarInterface",
   },
   {
     icon: {
       url: "/images/templates/office-for-dropbox/features/ai-helper.svg",
     },
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
   {
     icon: {
       url: "/images/templates/office-for-dropbox/features/formats.svg",
     },
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: {
       url: "/images/templates/office-for-dropbox/features/highest-compatibility.svg",
     },
-    heading: "FeaturesHighestCompatibility",
+    text: "FeaturesHighestCompatibility",
   },
   {
     icon: {
       url: "/images/templates/office-for-dropbox/features/open-source-code.svg",
     },
-    heading: "FeaturesOpenSourceCode",
+    text: "FeaturesOpenSourceCode",
   },
   {
     icon: {
       url: "/images/templates/office-for-dropbox/features/free-app.svg",
     },
-    heading: "FeaturesFreeApp",
+    text: "FeaturesFreeApp",
   },
 ];

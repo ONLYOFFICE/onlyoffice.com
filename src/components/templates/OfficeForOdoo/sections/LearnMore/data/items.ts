@@ -3,7 +3,7 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/office-for-odoo/learn-more/blog-1.png",
-    heading: "Guide",
+    heading: { label: "Guide" },
     text: "WorkingOnDocuments",
     links: [
       {
@@ -15,7 +15,7 @@ export const items: IBlogCard[] = [
   },
   {
     imgUrl: "/images/templates/office-for-odoo/learn-more/blog-2.png",
-    heading: "Blog",
+    heading: { label: "Blog" },
     text: "WorkWithFillableTemplates",
     links: [
       {
@@ -26,7 +26,7 @@ export const items: IBlogCard[] = [
   },
   {
     imgUrl: "/images/templates/office-for-odoo/learn-more/blog-3.png",
-    heading: "Blog",
+    heading: { label: "Blog" },
     text: "ADetailedGuideOnCreating",
     links: [
       {

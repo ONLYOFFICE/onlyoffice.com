@@ -3,7 +3,7 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/office-for-moodle/learn-more/story-1.jpg",
-    heading: "HowEnsuresDigitalEquality",
+    heading: { label: "HowEnsuresDigitalEquality" },
     links: [
       {
         href: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
@@ -18,7 +18,7 @@ export const items: IBlogCard[] = [
   },
   {
     imgUrl: "/images/templates/office-for-moodle/learn-more/story-2.png",
-    heading: "WhyWeChoseMoodle",
+    heading: { label: "WhyWeChoseMoodle" },
     links: [
       {
         href: "https://www.onlyoffice.com/blog/2024/08/why-moodle-onlyoffice-training-center",
@@ -28,7 +28,7 @@ export const items: IBlogCard[] = [
   },
   {
     imgUrl: "/images/templates/office-for-moodle/learn-more/story-3.png",
-    heading: "NewUpdatesOfOOPlugins",
+    heading: { label: "NewUpdatesOfOOPlugins" },
     links: [
       {
         href: "https://www.onlyoffice.com/blog/2024/07/updates-of-onlyoffice-plugins-for-moodle",

@@ -3,6 +3,8 @@ export interface IFeatureItem {
   id?: string;
   /** Additional CSS class names. */
   className?: string;
+  /** The variant. Default: "vertical". */
+  variant?: "horizontal" | "vertical";
   /** The icon. */
   icon: {
     /** The icon url. */
@@ -13,5 +15,9 @@ export interface IFeatureItem {
     positionY?: string;
   };
   /** The heading. */
-  heading: React.ReactNode;
+  heading?: string;
+  /** The text */
+  text: React.ReactNode;
+  /** The links */
+  links?: { href: string; isExternal?: boolean }[];
 }

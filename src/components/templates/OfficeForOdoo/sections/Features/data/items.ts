@@ -6,34 +6,34 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-odoo/features/features.svg",
       positionX: "0",
     },
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
   {
     icon: {
       url: "/images/templates/office-for-odoo/features/features.svg",
       positionX: "-160px",
     },
-    heading: "FeaturesCollaboration",
+    text: "FeaturesCollaboration",
   },
   {
     icon: {
       url: "/images/templates/office-for-odoo/features/features.svg",
       positionX: "-320px",
     },
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: {
       url: "/images/templates/office-for-odoo/features/features.svg",
       positionX: "-80px",
     },
-    heading: "FeaturesOpenSourceCode",
+    text: "FeaturesOpenSourceCode",
   },
   {
     icon: {
       url: "/images/templates/office-for-odoo/features/features.svg",
       positionX: "-240px",
     },
-    heading: "FeaturesFreeTrial",
+    text: "FeaturesFreeTrial",
   },
 ];

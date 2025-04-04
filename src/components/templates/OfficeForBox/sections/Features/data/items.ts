@@ -5,30 +5,30 @@ export const items: IFeatureItem[] = [
     icon: {
       url: "/images/templates/office-for-box/features/working.svg",
     },
-    heading: "FeaturesWorking",
+    text: "FeaturesWorking",
   },
   {
     icon: {
       url: "/images/templates/office-for-box/features/formats.svg",
     },
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: {
       url: "/images/templates/office-for-box/features/ai-helper.svg",
     },
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
   {
     icon: {
       url: "/images/templates/office-for-box/features/co-editing.svg",
     },
-    heading: "FeaturesWorkingCoEditing",
+    text: "FeaturesWorkingCoEditing",
   },
   {
     icon: {
       url: "/images/templates/office-for-box/features/free-app.svg",
     },
-    heading: "FeaturesFreeApp",
+    text: "FeaturesFreeApp",
   },
 ];

@@ -3,7 +3,7 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/office-for-alfresco/learn-more/help-center.jpg",
-    heading: "HelpCenter",
+    heading: { label: "HelpCenter" },
     text: "UsefulGuides",
     links: [
       {
@@ -16,7 +16,7 @@ export const items: IBlogCard[] = [
   {
     imgUrl:
       "/images/templates/office-for-alfresco/learn-more/success-story.jpg",
-    heading: "SuccessStory",
+    heading: { label: "SuccessStory" },
     text: "AtolCDReinforcesOnlineCollaboration",
     links: [
       {

@@ -24,7 +24,17 @@ const BlogCard = ({
 
       <StyledBlogCardBody>
         <StyledBlogCardWrapper $isLarge={isLarge}>
-          <Heading level={3} size={5} label={heading} />
+          <Heading level={3} size={5}>
+            {heading?.href ? (
+              <Link
+                href={heading.href}
+                label={heading.label}
+                target={heading.isExternal ? "_blank" : undefined}
+              />
+            ) : (
+              heading?.label
+            )}
+          </Heading>
           {text && <Text size={3} color="#666666" label={text} />}
         </StyledBlogCardWrapper>
 
