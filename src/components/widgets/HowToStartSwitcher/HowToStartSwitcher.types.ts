@@ -20,4 +20,6 @@ export interface IHowToStartSwitcher {
   defaultSelected?: string;
   /** Translation namespace */
   namespace: string;
+  /** Callback when tab changes */
+  onTabChange?: (tabId: string) => void;
 }

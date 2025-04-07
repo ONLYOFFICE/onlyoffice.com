@@ -11,9 +11,15 @@ export const HowToStartSwitcher = ({
   items,
   defaultSelected,
   namespace,
+  onTabChange,
 }: IHowToStartSwitcher) => {
   const { t } = useTranslation(namespace);
   const [selectedTab, setSelectedTab] = useState(defaultSelected || items[0].id);
+
+  const handleTabChange = (tabId: string) => {
+    setSelectedTab(tabId);
+    onTabChange?.(tabId);
+  };
 
   const tabItems = items.map((item) => ({
     id: item.id,
@@ -53,7 +59,7 @@ export const HowToStartSwitcher = ({
         className={className}
         items={tabItems}
         selected={selectedTab}
-        onChange={setSelectedTab}
+        onChange={handleTabChange}
       />
   );
 };
