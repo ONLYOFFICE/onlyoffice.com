@@ -1,10 +1,10 @@
 import { Hero } from "./sections/Hero";
 import { Teamwork } from "./sections/Teamwork";
 import { Features } from "./sections/Features";
-import { RoomGetStarted } from "@src/components/modules/room/RoomGetStarted";
+import { RoomsGetStarted } from "@src/components/modules/rooms/RoomsGetStarted";
 import { LearnMore } from "./sections/LearnMore";
-import { RoomFaq } from "@src/components/modules/room/RoomFaq";
-import { RoomTabs } from "@src/components/modules/room/RoomTabs";
+import { RoomsFaq } from "@src/components/modules/rooms/RoomsFaq";
+import { RoomsTabs } from "@src/components/modules/rooms/RoomsTabs";
 
 const CollaborationRoomsTemplate = () => {
   return (
@@ -12,10 +12,10 @@ const CollaborationRoomsTemplate = () => {
       <Hero />
       <Teamwork />
       <Features />
-      <RoomGetStarted />
+      <RoomsGetStarted />
       <LearnMore />
-      <RoomFaq />
-      <RoomTabs />
+      <RoomsFaq />
+      <RoomsTabs />
     </>
   );
 };

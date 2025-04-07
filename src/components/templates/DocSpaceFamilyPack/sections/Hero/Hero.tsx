@@ -1,5 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
-import { PricingHero } from "@src/components/modules/pricing/PricingHero";
+import { PricingHero } from "@src/components/modules/pricing/for-home-use/PricingHero";
 import { Text } from "@src/components/ui/Text";
 import { Tooltip } from "@src/components/ui/Tooltip";
 

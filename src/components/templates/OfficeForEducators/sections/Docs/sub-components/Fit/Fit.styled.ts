@@ -11,7 +11,7 @@ const StyledFitWrapper = styled.div`
 
   @media ${device.mobile} {
     padding: 56px 0;
-    text-align: start;
+    text-align: initial;
 
     a {
       font-size: 14px;
@@ -20,11 +20,10 @@ const StyledFitWrapper = styled.div`
 `;
 
 const StyledFitTitle = styled(Heading)`
-  line-height: 133%;
+  position: relative;
   padding-top: 80px;
   margin-bottom: 16px;
   color: #444;
-  position: relative;
 
   &::before {
     content: "";
@@ -46,11 +45,12 @@ const StyledFitTitle = styled(Heading)`
 
   @media ${device.tabletS} {
     font-size: 22px;
+    line-height: 29px;
   }
 
   @media ${device.mobile} {
-    font-size: 18px;
     margin-bottom: 8px;
+    line-height: 24px;
   }
 `;
 
@@ -67,6 +67,7 @@ const StyledFitText = styled(Text)`
 
   @media ${device.mobile} {
     margin-bottom: 16px;
+    font-size: 13px;
   }
 `;
 
@@ -102,7 +103,6 @@ const StyledConnector = styled(Link)<{
   $desktopPositionX: IFit["desktopPositionX"];
   $mobilePositionX: IFit["mobilePositionX"];
 }>`
-  display: block;
   min-width: ${({ $desktopWidth }) => $desktopWidth};
   max-width: ${({ $desktopWidth }) => $desktopWidth};
   height: 48px;
@@ -110,7 +110,7 @@ const StyledConnector = styled(Link)<{
   background-repeat: no-repeat;
   background-position: ${({ $desktopPositionX }) => $desktopPositionX} center;
   filter: grayscale(1);
-  transition: filter 0.3s;
+  transition: filter 0.2s;
 
   &:hover {
     filter: grayscale(0);

@@ -38,7 +38,7 @@ gap: 32px;
   }
 `;
 
-const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
+const StyledFeatureSwitcherBtn = styled.div<{ $active?: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -115,10 +115,13 @@ const StyledFeatureSwitcherImage = styled.div<{
       }
     `}
 
-  @media ${device.retina} {
-    background-image: ${({ $imageUrl, $imageUrl2x }) =>
-      `url(${$imageUrl2x || $imageUrl})`};
-  }
+  ${(props) =>
+    props.$imageUrl2x &&
+    css`
+      @media ${device.retina} {
+        background-image: url(${props.$imageUrl2x});
+      }
+    `}
 
   @media ${device.tablet} {
     margin: 24px 0;

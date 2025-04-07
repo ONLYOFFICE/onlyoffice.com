@@ -34,52 +34,48 @@ const Docs = () => {
         <StyledDocsText label={t("OODocsDesc")} />
         <Fit />
         <StyledDocsFeatures>
-          {items.map(({ title, text, image }, index) => (
+          {items.map(({ heading, text, textLinks, image }, index) => (
             <FeatureImageItem
               key={index}
-              title={t(title)}
-              position={index % 2 === 1 ? "left" : "right"}
+              heading={t(heading)}
+              position={{ desktop: index % 2 === 1 ? "right" : "left" }}
               text={
-                Array.isArray(text.label)
-                  ? {
-                      label: text.label.map((item, index) => (
-                        <StyledFeatureItemText key={index}>
-                          <Trans
+                Array.isArray(text) ? (
+                  text.map((item, index) => (
+                    <StyledFeatureItemText key={index}>
+                      <Trans
+                        key={index}
+                        t={t}
+                        i18nKey={String(item)}
+                        components={textLinks?.map((link, index) => (
+                          <Link
                             key={index}
-                            t={t}
-                            i18nKey={String(item)}
-                            components={text.links?.map((link, index) => (
-                              <Link
-                                key={index}
-                                href={link.href}
-                                target={link.isExternal ? "_blank" : undefined}
-                                color="main"
-                                textUnderline
-                                hover="underline-none"
-                              />
-                            ))}
+                            href={link.href}
+                            target={link.isExternal ? "_blank" : undefined}
+                            color="main"
+                            textUnderline
+                            hover="underline-none"
                           />
-                        </StyledFeatureItemText>
-                      )),
-                    }
-                  : {
-                      label: (
-                        <Trans
-                          t={t}
-                          i18nKey={String(text.label)}
-                          components={text.links?.map((link, index) => (
-                            <Link
-                              key={index}
-                              href={link.href}
-                              target={link.isExternal ? "_blank" : undefined}
-                              color="main"
-                              textUnderline
-                              hover="underline-none"
-                            />
-                          ))}
-                        />
-                      ),
-                    }
+                        ))}
+                      />
+                    </StyledFeatureItemText>
+                  ))
+                ) : (
+                  <Trans
+                    t={t}
+                    i18nKey={String(text)}
+                    components={textLinks?.map((link, index) => (
+                      <Link
+                        key={index}
+                        href={link.href}
+                        target={link.isExternal ? "_blank" : undefined}
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                      />
+                    ))}
+                  />
+                )
               }
               image={{
                 url: t(image.url),

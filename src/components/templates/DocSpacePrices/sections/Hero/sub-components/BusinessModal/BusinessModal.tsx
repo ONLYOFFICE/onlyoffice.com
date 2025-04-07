@@ -102,7 +102,7 @@ const BusinessModal = ({ isOpen, onClose }: IBusinessModal) => {
         {value !== "999+" && (
           <StyledBusinessModalTotal>
             <Heading level={4} label={t("Total")} />
-            <Heading level={5} size={2} color="#ff6f3d">
+            <Heading level={5} size={2} color="main">
               <StyledBusinessModalTotalCurrency
                 forwardedAs="span"
                 color="main"
