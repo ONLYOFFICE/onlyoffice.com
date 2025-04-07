@@ -71,5 +71,8 @@
 
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?",
+
+  "Docs": "Docs",
+  "Docspace": "DocSpace"
 }

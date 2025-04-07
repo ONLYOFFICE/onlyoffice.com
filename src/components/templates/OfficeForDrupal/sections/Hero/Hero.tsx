@@ -52,7 +52,7 @@ const Hero = () => {
               as="a"
               variant="secondary"
               id="hero-request-free-demo"
-              href="/demo-order?from=officeforchamilo"
+              href="/demo-order?from=officefordrupal"
               label={t("RequestFreeDemo")}
             />
           </StyledHeroHeaderBtns>
