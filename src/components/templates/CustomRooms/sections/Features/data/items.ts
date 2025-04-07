@@ -2,7 +2,7 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
 export const items: IFeatureImageItem[] = [
   {
-    title: "Tailored",
+    heading: "Tailored",
     text: "TailoredDesc",
     image: {
       url: "TailoredImgUrl",
@@ -11,7 +11,7 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "Sophisticated",
+    heading: "Sophisticated",
     text: "SophisticatedDesc",
     links: [
       {
@@ -27,7 +27,7 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "CostEfectiveForAnyBudget",
+    heading: "CostEfectiveForAnyBudget",
     text: "CostEfectiveForAnyBudgetDesc",
     image: {
       url: "CostEfectiveForAnyBudgetImgUrl",

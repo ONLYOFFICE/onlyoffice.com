@@ -2,7 +2,7 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
 export const items: IFeatureImageItem[] = [
   {
-    title: "IdealForPublicSharing",
+    heading: "IdealForPublicSharing",
     text: "PublicSharingDesc",
     image: {
       url: "PublicSharingImgUrl",
@@ -11,7 +11,7 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "AbsolutelySafe",
+    heading: "AbsolutelySafe",
     text: "AbsolutelySafeDesc",
     image: {
       url: "AbsolutelySafeImgUrl",
@@ -20,7 +20,7 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "EasyToStore",
+    heading: "EasyToStore",
     text: "EasyToStoreDesc",
     image: {
       url: "EasyToStoreImgUrl",
@@ -29,7 +29,7 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "SeamlesslyEmbeddable",
+    heading: "SeamlesslyEmbeddable",
     text: "SeamlesslyEmbeddableDesc",
     image: {
       url: "SeamlesslyEmbeddableImgUrl",
@@ -38,7 +38,7 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "CostEffectiveForAnyBudget",
+    heading: "CostEffectiveForAnyBudget",
     text: "CostEffectiveDesc",
     image: {
       url: "CostEffectiveImgUrl",

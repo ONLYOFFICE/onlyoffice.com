@@ -6,7 +6,7 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
 
 export const items: IFeatureImageItemExtended[] = [
   {
-    title: "SeamlessAndUserFriendly",
+    heading: "SeamlessAndUserFriendly",
     text: "SeamlessAndUserFriendlyDesc",
     textLinks: [
       {
@@ -29,7 +29,7 @@ export const items: IFeatureImageItemExtended[] = [
     },
   },
   {
-    title: "TailoredToCreate",
+    heading: "TailoredToCreate",
     text: "TailoredToCreateDesc",
     textLinks: [
       {
@@ -43,7 +43,7 @@ export const items: IFeatureImageItemExtended[] = [
     },
   },
   {
-    title: "RatingYourStudentsEssays",
+    heading: "RatingYourStudentsEssays",
     text: "RatingYourStudentsEssaysDesc",
     image: {
       url: "RatingYourStudentsEssaysImgUrl",
@@ -52,7 +52,7 @@ export const items: IFeatureImageItemExtended[] = [
     },
   },
   {
-    title: "YourOnlineLibrarysBestFriend",
+    heading: "YourOnlineLibrarysBestFriend",
     text: [
       "YourOnlineLibrarysBestFriendDesc1",
       "YourOnlineLibrarysBestFriendDesc2",

@@ -6,7 +6,7 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
 
 export const items: IFeatureImageItemExtended[] = [
   {
-    title: "TeamworkHasNeverBeenEasier",
+    heading: "TeamworkHasNeverBeenEasier",
     text: "TeamworkHasNeverBeenEasierDesc",
     image: {
       url: "TeamworkHasNeverBeenEasierUrl",
@@ -15,7 +15,7 @@ export const items: IFeatureImageItemExtended[] = [
     },
   },
   {
-    title: "FitToAnyScenario",
+    heading: "FitToAnyScenario",
     text: "FitToAnyScenarioDesc",
     textLinks: [
       {
@@ -41,7 +41,7 @@ export const items: IFeatureImageItemExtended[] = [
     },
   },
   {
-    title: "StressFreeCoEditing",
+    heading: "StressFreeCoEditing",
     text: "StressFreeCoEditingDesc",
     image: {
       url: "StressFreeCoEditingUrl",

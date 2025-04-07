@@ -173,11 +173,7 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
           <StyledEnterpriseModalTotal>
             <Heading level={4} label={t("Total")} />
 
-            <Heading
-              level={5}
-              size={isUponRequestOrEmpty ? 4 : 2}
-              color="#ff6f3d"
-            >
+            <Heading level={5} size={isUponRequestOrEmpty ? 4 : 2} color="main">
               {isUponRequestOrEmpty ? (
                 t("UponRequest")
               ) : (

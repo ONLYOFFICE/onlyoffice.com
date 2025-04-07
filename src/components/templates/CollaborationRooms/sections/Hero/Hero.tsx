@@ -1,5 +1,5 @@
 import { Trans, useTranslation } from "next-i18next";
-import { RoomHero } from "@src/components/modules/room/RoomHero";
+import { RoomsHero } from "@src/components/modules/rooms/RoomsHero";
 import { Text } from "@src/components/ui/Text";
 import { hero } from "./data/hero";
 
@@ -7,11 +7,11 @@ const Hero = () => {
   const { t } = useTranslation("collaboration-rooms");
 
   return (
-    <RoomHero
-      title={
+    <RoomsHero
+      heading={
         <Trans
           t={t}
-          i18nKey={String(hero.title)}
+          i18nKey={String(hero.heading)}
           components={[<Text as="span" color="#FF6F3D" key="0" />]}
         />
       }

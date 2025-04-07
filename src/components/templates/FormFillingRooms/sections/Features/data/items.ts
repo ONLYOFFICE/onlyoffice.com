@@ -2,7 +2,7 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
 export const items: IFeatureImageItem[] = [
   {
-    title: "EasyFormUploading",
+    heading: "EasyFormUploading",
     text: "EasyFormUploadingDesc",
     image: {
       url: "EasyFormUploadingUrl",
@@ -11,7 +11,7 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "QuickSharing",
+    heading: "QuickSharing",
     text: "QuickSharingDesc",
     image: {
       url: "QuickSharingUrl",
@@ -20,7 +20,7 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "IntuitiveProcess",
+    heading: "IntuitiveProcess",
     text: "IntuitiveProcessDesc",
     image: {
       url: "IntuitiveProcessUrl",
@@ -29,7 +29,7 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "ConvenientAnalyzing",
+    heading: "ConvenientAnalyzing",
     text: "ConvenientAnalyzingDesc",
     image: {
       url: "ConvenientAnalyzingUrl",
@@ -38,7 +38,7 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "CostEffectiveForAnyBudget",
+    heading: "CostEffectiveForAnyBudget",
     text: "CostEffectiveForAnyBudgetDesc",
     image: {
       url: "CostEffectiveForAnyBudgetUrl",

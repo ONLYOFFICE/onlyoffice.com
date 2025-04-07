@@ -36,11 +36,11 @@ const DesktopEditors = () => {
         <StyledDesktopEditorsText label={t("OODesktopEditorsText")} />
 
         <StyledDesktopEditorsFeatures>
-          {items.map(({ title, text, textLinks, image }, index) => (
+          {items.map(({ heading, text, textLinks, image }, index) => (
             <FeatureImageItem
               key={index}
-              position={index % 2 === 1 ? "right" : "left"}
-              title={t(title)}
+              position={{ desktop: index % 2 === 1 ? "right" : "left" }}
+              heading={t(heading)}
               text={
                 <Trans
                   t={t}

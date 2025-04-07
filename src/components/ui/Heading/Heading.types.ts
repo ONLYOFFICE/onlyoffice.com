@@ -8,7 +8,7 @@ export interface IHeading {
   /** Content to be rendered inside. If both `children` and `label` are provided, `children` will take precedence. */
   children?: React.ReactNode;
   /** The color used for styling. */
-  color?: string;
+  color?: "main" | string;
   /** The heading level, ranging from 1 to 6. Default: 1. */
   level?: 1 | 2 | 3 | 4 | 5 | 6;
   /** The font size level, ranging from 1 to 7. */

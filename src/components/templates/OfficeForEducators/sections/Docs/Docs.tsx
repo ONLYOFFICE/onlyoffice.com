@@ -34,11 +34,11 @@ const Docs = () => {
         <StyledDocsText label={t("OODocsDesc")} />
         <Fit />
         <StyledDocsFeatures>
-          {items.map(({ title, text, textLinks, image }, index) => (
+          {items.map(({ heading, text, textLinks, image }, index) => (
             <FeatureImageItem
               key={index}
-              title={t(title)}
-              position={index % 2 === 1 ? "left" : "right"}
+              heading={t(heading)}
+              position={{ desktop: index % 2 === 1 ? "right" : "left" }}
               text={
                 Array.isArray(text) ? (
                   text.map((item, index) => (

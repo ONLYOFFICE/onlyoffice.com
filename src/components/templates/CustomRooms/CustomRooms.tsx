@@ -1,19 +1,19 @@
 import { Hero } from "./sections/Hero";
 import { Features } from "./sections/Features";
-import { RoomGetStarted } from "@src/components/modules/room/RoomGetStarted";
+import { RoomsGetStarted } from "@src/components/modules/rooms/RoomsGetStarted";
 import { LearnMore } from "./sections/LearnMore";
-import { RoomFaq } from "@src/components/modules/room/RoomFaq";
-import { RoomTabs } from "@src/components/modules/room/RoomTabs";
+import { RoomsFaq } from "@src/components/modules/rooms/RoomsFaq";
+import { RoomsTabs } from "@src/components/modules/rooms/RoomsTabs";
 
 const CustomRoomsTemplate = () => {
   return (
     <>
       <Hero />
       <Features />
-      <RoomGetStarted />
+      <RoomsGetStarted />
       <LearnMore />
-      <RoomFaq />
-      <RoomTabs />
+      <RoomsFaq />
+      <RoomsTabs />
     </>
   );
 };

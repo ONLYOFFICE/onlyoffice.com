@@ -6,7 +6,7 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
 
 export const items: IFeatureImageItemExtended[] = [
   {
-    title: "FillableAssignments",
+    heading: "FillableAssignments",
     text: "FillableAssignmentsDesc",
     textLinks: [
       {
@@ -20,7 +20,7 @@ export const items: IFeatureImageItemExtended[] = [
     },
   },
   {
-    title: "EasySharing",
+    heading: "EasySharing",
     text: "EasySharingDesc",
     textLinks: [
       {
@@ -34,7 +34,7 @@ export const items: IFeatureImageItemExtended[] = [
     },
   },
   {
-    title: "AnotherTaskInMind",
+    heading: "AnotherTaskInMind",
     text: "AnotherTaskInMindDesc",
     textLinks: [
       {
@@ -54,7 +54,7 @@ export const items: IFeatureImageItemExtended[] = [
     },
   },
   {
-    title: "FlexiblePermissionsAndRoles",
+    heading: "FlexiblePermissionsAndRoles",
     text: "FlexiblePermissionsAndRolesDesc",
     image: {
       url: "FlexiblePermissionsAndRolesImgUrl",
