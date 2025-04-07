@@ -13,6 +13,7 @@ import {
   StyledPastLink
 } from "./PastEvents.styled";
 import { IPastEvents } from "./types";
+import { IEvent } from "../../types";
 
 const getMonthKey = (date: Date): string => {
   const months = [

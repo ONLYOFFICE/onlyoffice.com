@@ -58,6 +58,7 @@ const StyledPastEventsWrapper = styled.div`
 
 const StyledPastEventsTitle = styled.div`
   font-size: 12px;
+  text-transform: uppercase;
   font-weight: 600;   
   line-height: 133%;
   text-transform: uppercase;
@@ -126,20 +127,8 @@ const StyledPastLink = styled.div`
   }
 `;
 
-const StyledEventImage = styled.div`
-  margin: 24px 0 20px 0;
-  position: relative;
-  width: 100%;
-  
-  img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-`;
-
-export { 
-  StyledPastEvents, 
+export {
+  StyledPastEvents,
   StyledMoreLink,
   StyledPastEventsWrapper,
   StyledPastEventsTitle,
@@ -148,6 +137,5 @@ export {
   StyledEventTitle,
   StyledEventDate,
   StyledEventPlace,
-  StyledPastLink,
-  StyledEventImage
+  StyledPastLink
 };

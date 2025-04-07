@@ -16,6 +16,7 @@ import {
   StyledPastLink
 } from "./CurrentEvents.styled";
 import { ICurrentEvents } from "./types";
+import { IEvent } from "../../types";
 
 const getMonthKey = (date: Date): string => {
   const months = [
@@ -85,13 +86,13 @@ const CurrentEvents = ({ events }: ICurrentEvents) => {
     );
   }
 
-  const currentEvents = events.filter(event => {
+  const currentEvents = events?.filter((event: IEvent) => {
     if (!event.end_date) return true;
     const endDate = new Date(event.end_date);
     const today = new Date();
     today.setHours(0, 0, 0, 0);
     return endDate >= today;
-  });
+  }) || [];
 
   if (currentEvents.length === 0) {
     return (
@@ -108,7 +109,7 @@ const CurrentEvents = ({ events }: ICurrentEvents) => {
           <Text label={t("events:currentEvents")} color="#FF6F3D" />
         </StyledUpcomingHeading>
         <StyledUpcomingEvents>
-          {currentEvents.map((event) => (
+          {currentEvents.map((event: IEvent) => (
             <StyledEventBlock key={event.id}>
               <StyledEventTitle
                 level={2}
