@@ -1,68 +1,72 @@
-export const partners = [
+interface IPartner {
+  name: string;
+}
+
+export const partners: IPartner[] = [
   {
-    title: "agorum",
+    name: "agorum",
   },
   {
-    title: "CommuniGate",
+    name: "CommuniGate",
   },
   {
-    title: "enaio",
+    name: "enaio",
   },
   {
-    title: "eXo Platform",
+    name: "eXo Platform",
   },
   {
-    title: "FlinkISO",
+    name: "FlinkISO",
   },
   {
-    title: "Jalios",
+    name: "Jalios",
   },
   {
-    title: "Liferay",
+    name: "Liferay",
   },
   {
-    title: "Maarch Courrier",
+    name: "Maarch Courrier",
   },
   {
-    title: "NEO",
+    name: "NEO",
   },
   {
-    title: "ONE",
+    name: "ONE",
   },
   {
-    title: "OpenOlat",
+    name: "OpenOlat",
   },
   {
-    title: "Pintexx",
+    name: "Pintexx",
   },
   {
-    title: "PowerFolder",
+    name: "PowerFolder",
   },
   {
-    title: "Pydio",
+    name: "Pydio",
   },
   {
-    title: "Quasaro",
+    name: "Quasaro",
   },
   {
-    title: "Seafile",
+    name: "Seafile",
   },
   {
-    title: "Talkspirit",
+    name: "Talkspirit",
   },
   {
-    title: "WebWeaver",
+    name: "WebWeaver",
   },
   {
-    title: "WeDoc",
+    name: "WeDoc",
   },
   {
-    title: "XWiki",
+    name: "XWiki",
   },
   {
-    title: "FileCloud",
+    name: "FileCloud",
   },
   {
-    title: "OpenKM",
+    name: "OpenKM",
   },
 ];

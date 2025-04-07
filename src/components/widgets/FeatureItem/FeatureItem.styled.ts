@@ -1,32 +1,56 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { IFeatureItem } from "./FeatureItem.types";
 import { device } from "@src/utils/device";
 
-const StyledFeatureItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+const StyledFeatureItem = styled.div<{
+  $variant: IFeatureItem["variant"];
+  $icon: IFeatureItem["icon"]["url"];
+  $iconPositionX: IFeatureItem["icon"]["positionX"];
+  $iconPositionY: IFeatureItem["icon"]["positionY"];
+}>`
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 12px;
   width: 100%;
-  max-width: 352px;
-  text-align: center;
-`;
+  ${(props) =>
+    props.$variant === "horizontal"
+      ? css`
+          padding-left: 88px;
+        `
+      : css`
+          padding-top: 80px;
+          max-width: 352px;
+          text-align: center;
+        `}
 
-const StyledFeatureItemIcon = styled.div<{ $icon: string }>`
-  margin-bottom: 16px;
-  width: 64px;
-  height: 64px;
-  background-image: ${(props) => `url(${props.$icon})`};
-  background-repeat: no-repeat;
-  background-size: contain;
-`;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 64px;
+    height: 64px;
+    background-image: url(${({ $icon }) => $icon});
+    background-repeat: no-repeat;
+    background-position: ${({
+      $iconPositionX = "0px",
+      $iconPositionY = "center",
+    }) => `${$iconPositionX} ${$iconPositionY}`};
 
-const StyledFeatureItemText = styled.p`
-  font-size: 16px;
-  line-height: 26px;
+    ${(props) =>
+      props.$variant === "horizontal"
+        ? css`
+            left: 0;
+          `
+        : css`
+            left: 50%;
+            transform: translateX(-50%);
+          `}
+  }
 
   @media ${device.mobile} {
-    font-size: 14px;
-    line-height: 21px;
+    padding: 80px 0 0 0;
   }
 `;
 
-export { StyledFeatureItem, StyledFeatureItemIcon, StyledFeatureItemText };
+export { StyledFeatureItem };

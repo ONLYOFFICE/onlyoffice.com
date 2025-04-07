@@ -1,58 +1,74 @@
-export const starsRatingItems = [
+import { IStarsRatingLogo } from "@src/components/widgets/StarsRatingLogo";
+
+export const starsRatingItems: IStarsRatingLogo[] = [
   {
     url: "https://sourceforge.net/projects/teamlab/",
-    imgUrl: "/images/templates/main/rating/stars-rating/sourceforge.svg",
-    imgAlt: "SourceForge",
-    imgWidth: 150,
-    imgHeight: 22,
+    image: {
+      url: "/images/templates/main/rating/stars-rating/sourceforge.svg",
+      alt: "SourceForge",
+      width: 150,
+      height: 22,
+    },
     value: 4.5,
   },
   {
     url: "https://www.getapp.com/operations-management-software/a/onlyoffice/",
-    imgUrl: "/images/templates/main/rating/stars-rating/getapp.svg",
-    imgAlt: "GetApp",
-    imgWidth: 150,
-    imgHeight: 22,
+    image: {
+      url: "/images/templates/main/rating/stars-rating/getapp.svg",
+      alt: "GetApp",
+      width: 150,
+      height: 22,
+    },
     value: 4.5,
   },
   {
     url: "https://www.softwareadvice.com/project-management/onlyoffice-profile/",
-    imgUrl: "/images/templates/main/rating/stars-rating/software-advice.svg",
-    imgAlt: "Software Advice",
-    imgWidth: 150,
-    imgHeight: 22,
+    image: {
+      url: "/images/templates/main/rating/stars-rating/software-advice.svg",
+      alt: "Software Advice",
+      width: 150,
+      height: 22,
+    },
     value: 4.5,
   },
   {
     url: "https://linux.softpedia.com/get/Office/Office-Suites/ONLYOFFICE-Desktop-Editors-103956.shtml",
-    imgUrl: "/images/templates/main/rating/stars-rating/softpedia.svg",
-    imgAlt: "Softpedia",
-    imgWidth: 150,
-    imgHeight: 22,
+    image: {
+      url: "/images/templates/main/rating/stars-rating/softpedia.svg",
+      alt: "Softpedia",
+      width: 150,
+      height: 22,
+    },
     value: 5,
   },
   {
     url: "https://www.capterra.com/p/141243/ONLYOFFICE/",
-    imgUrl: "/images/templates/main/rating/stars-rating/capterra.svg",
-    imgAlt: "Capterra",
-    imgWidth: 150,
-    imgHeight: 23,
+    image: {
+      url: "/images/templates/main/rating/stars-rating/capterra.svg",
+      alt: "Capterra",
+      width: 150,
+      height: 23,
+    },
     value: 4.5,
   },
   {
     url: "https://www.pcmag.com/reviews/ascensio-system-onlyoffice",
-    imgUrl: "/images/templates/main/rating/stars-rating/editors-choice.png",
-    imgAlt: "Editors Choice",
-    imgWidth: 150,
-    imgHeight: 33,
+    image: {
+      url: "/images/templates/main/rating/stars-rating/editors-choice.png",
+      alt: "Editors Choice",
+      width: 150,
+      height: 33,
+    },
     value: 4.0,
   },
   {
     url: "https://crozdesk.com/software/onlyoffice-docs",
-    imgUrl: "/images/templates/main/rating/stars-rating/crozdesk.svg",
-    imgAlt: "Crozdesk",
-    imgWidth: 150,
-    imgHeight: 22,
+    image: {
+      url: "/images/templates/main/rating/stars-rating/crozdesk.svg",
+      alt: "Crozdesk",
+      width: 150,
+      height: 22,
+    },
     value: 4.4,
   },
 ];

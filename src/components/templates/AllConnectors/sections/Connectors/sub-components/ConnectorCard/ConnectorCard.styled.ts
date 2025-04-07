@@ -19,7 +19,7 @@ const StyledConnectorCard = styled.div`
 `;
 
 const StyledConnectorCardImgWrapper = styled.div<{
-  $imgBgColor: IConnectorCard["imgBgColor"];
+  $imgBgColor: IConnectorCard["image"]["bgColor"];
 }>`
   border-radius: 5px;
   padding: 40px;
@@ -35,7 +35,7 @@ const StyledConnectorCardImgWrapper = styled.div<{
 `;
 
 const StyledConnectorCardImg = styled.div<{
-  $imgUrl: IConnectorCard["imgUrl"];
+  $imgUrl: IConnectorCard["image"]["url"];
 }>`
   width: 100%;
   height: 80px;

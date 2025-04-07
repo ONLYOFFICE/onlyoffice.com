@@ -61,6 +61,21 @@ export default {
       control: { type: "select" },
       options: ["uppercase", "lowercase", "capitalize"],
     },
+    verticalAlign: {
+      control: { type: "select" },
+      options: [
+        "top",
+        "middle",
+        "bottom",
+        "text-top",
+        "text-bottom",
+        "sub",
+        "super",
+      ],
+    },
+    truncate: {
+      control: { type: "boolean" },
+    },
   },
 } as Meta<typeof Text>;
 

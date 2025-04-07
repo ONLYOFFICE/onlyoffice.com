@@ -5,14 +5,17 @@ export interface IStarsRatingLogo {
   className?: string;
   /** The link URL. */
   url: string;
-  /** The image URL. */
-  imgUrl: string;
-  /** The image alternative text. */
-  imgAlt: string;
-  /** The image width. */
-  imgWidth: number;
-  /** The image height. */
-  imgHeight: number;
+  /** The image. */
+  image: {
+    /** The image URL. */
+    url: string;
+    /** The image alternative text. */
+    alt: string;
+    /** The image width. */
+    width: number;
+    /** The image height. */
+    height: number;
+  };
   /** The rating value. */
   value: number;
   /** The maximum value. */

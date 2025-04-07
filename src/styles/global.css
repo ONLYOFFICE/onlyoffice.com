@@ -100,6 +100,30 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Medium.woff") format("woff"),
+    url("/fonts/Roboto/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Bold.woff") format("woff"),
+    url("/fonts/Roboto/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-ExtraBold.woff") format("woff"),
+    url("/fonts/Roboto/Roboto-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

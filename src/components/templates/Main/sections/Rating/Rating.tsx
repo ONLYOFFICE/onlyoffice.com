@@ -43,10 +43,12 @@ const Rating = () => {
               <li key={index}>
                 <StarsRatingLogo
                   url={item.url}
-                  imgUrl={item.imgUrl}
-                  imgAlt={item.imgAlt}
-                  imgWidth={item.imgWidth}
-                  imgHeight={item.imgHeight}
+                  image={{
+                    url: item.image.url,
+                    alt: item.image.alt,
+                    width: item.image.width,
+                    height: item.image.height,
+                  }}
                   value={item.value}
                 />
               </li>

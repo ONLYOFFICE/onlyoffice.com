@@ -1,22 +1,39 @@
-export const items = [
+import { IFeatureItem } from "@src/components/widgets/FeatureItem";
+
+export const items: IFeatureItem[] = [
   {
-    icon: "/images/templates/office-for-odoo/features/ai-helper.svg",
-    heading: "FeaturesAIHelper",
+    icon: {
+      url: "/images/templates/office-for-odoo/features/features.svg",
+      positionX: "0",
+    },
+    text: "FeaturesAIHelper",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/collaboration.svg",
-    heading: "FeaturesCollaboration",
+    icon: {
+      url: "/images/templates/office-for-odoo/features/features.svg",
+      positionX: "-160px",
+    },
+    text: "FeaturesCollaboration",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/formats.svg",
-    heading: "FeaturesFormats",
+    icon: {
+      url: "/images/templates/office-for-odoo/features/features.svg",
+      positionX: "-320px",
+    },
+    text: "FeaturesFormats",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/open-source-code.svg",
-    heading: "FeaturesOpenSourceCode",
+    icon: {
+      url: "/images/templates/office-for-odoo/features/features.svg",
+      positionX: "-80px",
+    },
+    text: "FeaturesOpenSourceCode",
   },
   {
-    icon: "/images/templates/office-for-odoo/features/free-trial.svg",
-    heading: "FeaturesFreeTrial",
+    icon: {
+      url: "/images/templates/office-for-odoo/features/features.svg",
+      positionX: "-240px",
+    },
+    text: "FeaturesFreeTrial",
   },
 ];

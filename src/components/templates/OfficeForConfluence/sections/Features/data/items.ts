@@ -1,26 +1,46 @@
-export const items = [
+import { IFeatureItem } from "@src/components/widgets/FeatureItem";
+
+export const items: IFeatureItem[] = [
   {
-    icon: "/images/templates/office-for-confluence/features/formats.svg",
-    heading: "FeaturesFormats",
+    icon: {
+      url: "/images/templates/office-for-confluence/features/features.svg",
+      positionX: "0",
+    },
+    text: "FeaturesFormats",
   },
   {
-    icon: "/images/templates/office-for-confluence/features/ai-helper.svg",
-    heading: "FeaturesAIHelper",
+    icon: {
+      url: "/images/templates/office-for-confluence/features/features.svg",
+      positionX: "-80px",
+    },
+    text: "FeaturesAIHelper",
   },
   {
-    icon: "/images/templates/office-for-confluence/features/co-editing.svg",
-    heading: "FeatureCoEditing",
+    icon: {
+      url: "/images/templates/office-for-confluence/features/features.svg",
+      positionX: "-160px",
+    },
+    text: "FeatureCoEditing",
   },
   {
-    icon: "/images/templates/office-for-confluence/features/enhanced-security.svg",
-    heading: "FeaturesEnhancedSecurity",
+    icon: {
+      url: "/images/templates/office-for-confluence/features/features.svg",
+      positionX: "-240px",
+    },
+    text: "FeaturesEnhancedSecurity",
   },
   {
-    icon: "/images/templates/office-for-confluence/features/easy-configuration.svg",
-    heading: "FeaturesEasyConfiguration",
+    icon: {
+      url: "/images/templates/office-for-confluence/features/features.svg",
+      positionX: "-320px",
+    },
+    text: "FeaturesEasyConfiguration",
   },
   {
-    icon: "/images/templates/office-for-confluence/features/free.svg",
-    heading: "FeaturesFreeTrial",
+    icon: {
+      url: "/images/templates/office-for-confluence/features/features.svg",
+      positionX: "-400px",
+    },
+    text: "FeaturesFreeTrial",
   },
 ];

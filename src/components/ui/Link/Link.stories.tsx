@@ -63,6 +63,10 @@ export default {
       control: { type: "color" },
       options: ["main"],
     },
+    textTransform: {
+      control: { type: "select" },
+      options: ["uppercase", "lowercase", "capitalize"],
+    },
     textUnderline: {
       control: { type: "boolean" },
       options: [true, false],

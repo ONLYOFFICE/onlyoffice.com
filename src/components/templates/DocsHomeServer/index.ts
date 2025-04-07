@@ -1,0 +1,1 @@
+export { DocsHomeServerTemplate } from "./DocsHomeServer";

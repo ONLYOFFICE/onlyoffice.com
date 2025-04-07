@@ -29,11 +29,11 @@ const Docs = () => {
           position="right"
           imageWidth={776}
           imageHeight={576}
-          items={items.map(({ label, links, images }) => ({
+          items={items.map(({ label, links, image }) => ({
             label: links ? (
               <Trans
                 t={t}
-                i18nKey={label}
+                i18nKey={String(label)}
                 components={links.map(({ id, url }, index) => (
                   <Link
                     id={id}
@@ -46,9 +46,9 @@ const Docs = () => {
                 ))}
               />
             ) : (
-              t(label)
+              t(String(label))
             ),
-            images,
+            image,
           }))}
         />
 

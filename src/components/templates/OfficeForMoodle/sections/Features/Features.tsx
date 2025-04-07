@@ -25,11 +25,14 @@ const Features = () => {
           <StyledFeaturesItems>
             {items.map((item, index) => (
               <FeatureItem
-                icon={item.icon}
-                heading={
+                icon={{
+                  url: item.icon.url,
+                  positionX: item.icon.positionX,
+                }}
+                text={
                   <Trans
                     t={t}
-                    i18nKey={item.heading}
+                    i18nKey={String(item.text)}
                     components={[
                       <b key="0" />,
                       <Link

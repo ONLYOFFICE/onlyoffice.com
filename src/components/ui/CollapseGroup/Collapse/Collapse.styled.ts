@@ -18,7 +18,7 @@ const StyledCollapse = styled.div<{
   }
 `;
 
-const StyledCollapseLabel = styled.button<{ $isOpen: boolean }>`
+const StyledCollapseLabel = styled.button<{ $isOpen: ICollapse["isOpen"] }>`
   position: relative;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ const StyledCollapseLabel = styled.button<{ $isOpen: boolean }>`
     ${(props) =>
       props.$isOpen
         ? css`
-            background-image: url("/images/icons/minus.svg");
+            background-image: url("/images/icons/dash.svg");
           `
         : css`
             background-image: url("/images/icons/plus.svg");
@@ -56,10 +56,11 @@ const StyledCollapseLabel = styled.button<{ $isOpen: boolean }>`
 
   @media ${device.tabletS} {
     padding-left: 32px;
+    font-size: 16px;
   }
 `;
 
-const StyledCollapseContent = styled.div<{ $isOpen: boolean }>`
+const StyledCollapseContent = styled.div<{ $isOpen: ICollapse["isOpen"] }>`
   box-sizing: content-box;
   padding-left: 40px;
   font-size: 14px;

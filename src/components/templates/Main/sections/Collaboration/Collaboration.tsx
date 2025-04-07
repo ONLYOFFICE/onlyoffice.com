@@ -27,9 +27,12 @@ const Collaboration = () => {
         <FeatureSwitcher
           imageWidth={776}
           imageHeight={576}
-          items={items.map(({ label, images }) => ({
-            label: t(label),
-            images,
+          items={items.map(({ label, image }) => ({
+            label: t(String(label)),
+            image: {
+              url: t(image.url),
+              url2x: image.url2x ? t(image.url2x) : undefined,
+            },
           }))}
         />
 

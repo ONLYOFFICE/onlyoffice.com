@@ -8,14 +8,13 @@ const Faq = () => {
 
   return (
     <FaqCollapse
-      desktopSpacing={["112px", "111px"]}
       text={t("GetAnswersToTheMostPopularQuestions")}
-      items={items.map(({ label, text, links }) => ({
+      items={items.map(({ label, children, links }) => ({
         label: t(label),
         content: links ? (
           <Trans
             t={t}
-            i18nKey={text}
+            i18nKey={String(children)}
             components={links?.map(({ href, isExternal }, index) => (
               <Link
                 href={href}
@@ -25,7 +24,7 @@ const Faq = () => {
             ))}
           />
         ) : (
-          t(text)
+          t(String(children))
         ),
       }))}
     />

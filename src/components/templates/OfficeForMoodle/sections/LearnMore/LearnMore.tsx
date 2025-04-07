@@ -24,12 +24,12 @@ const LearnMore = () => {
             <BlogCard
               className="blog-card"
               key={index}
-              url={item.url}
               imgUrl={item.imgUrl}
-              heading={t(item.heading)}
-              links={item.links.map((item) => ({
+              heading={{ label: t(item.heading.label) }}
+              links={item.links?.map((item) => ({
                 href: item.href,
                 label: t(item.label),
+                isExternal: item.isExternal,
               }))}
             />
           ))}

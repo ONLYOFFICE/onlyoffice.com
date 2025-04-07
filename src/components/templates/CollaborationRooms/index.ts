@@ -1,0 +1,1 @@
+export { CollaborationRoomsTemplate } from "./CollaborationRooms";

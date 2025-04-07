@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { IStepCarouselItem } from "./StepCarousel.types";
 import { device } from "@src/utils/device";
 
 const StyledStepCarousel = styled.div`
@@ -40,34 +41,8 @@ const StyledStepCarousel = styled.div`
   .swiper-button-next {
     position: absolute;
     top: calc(50% - 25px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 50%;
-    width: 56px;
-    height: 56px;
-    background-color: #ffffff;
     transform: translateY(-50%);
-    transition: box-shadow 0.2s;
     z-index: 10;
-    cursor: pointer;
-
-    svg {
-      path {
-        transition: fill 0.2s;
-      }
-    }
-
-    &:hover {
-      box-shadow: 0px 20px 50px 0px rgba(85, 85, 85, 0.15);
-
-      svg {
-        path {
-          fill: #ff6f3d;
-        }
-      }
-    }
 
     @media ${device.mobile} {
       display: none;
@@ -98,7 +73,9 @@ const StyledStepCarouselWrapper = styled.div`
   }
 `;
 
-const StyledStepCarouselImg = styled.div<{ $imgUrl: string }>`
+const StyledStepCarouselImg = styled.div<{
+  $imgUrl: IStepCarouselItem["imgUrl"];
+}>`
   padding-bottom: 57.59%;
   background-image: url(${(props) => props.$imgUrl});
   background-repeat: no-repeat;

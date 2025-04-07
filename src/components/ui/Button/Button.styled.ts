@@ -16,6 +16,7 @@ const StyledButton = styled.button<{
   line-height: 18px;
   letter-spacing: 0.04em;
   width: ${(props) => props.$fullWidth && "100%"};
+  min-height: 56px;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -23,16 +24,20 @@ const StyledButton = styled.button<{
   ${(props) =>
     props.$size === "small" &&
     css`
-      padding: 15px 24px;
+      padding: 16px 24px;
     `}
 
   ${(props) =>
     props.$size === "medium" &&
     css`
-      padding: 19px 24px;
+      padding: ${props.$variant === "tertiary" || props.$variant === "quinary"
+        ? "18px 24px"
+        : "19px 24px"};
 
       @media ${device.mobile} {
-        padding: 15px 24px;
+        padding: ${props.$variant === "tertiary" || props.$variant === "quinary"
+          ? "15px 24px"
+          : "16px 24px"};
       }
     `}
 
@@ -136,7 +141,10 @@ const StyledButton = styled.button<{
   }
 
   @media ${device.mobile} {
+    font-size: 12px;
+    line-height: 16px;
     width: 100%;
+    min-height: 48px;
   }
 `;
 

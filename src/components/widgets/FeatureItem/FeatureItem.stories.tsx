@@ -1,6 +1,6 @@
-import { Meta, StoryFn } from "@storybook/react";
 import { FeatureItem } from "./FeatureItem";
 import { IFeatureItem } from "./FeatureItem.types";
+import { Meta, StoryFn } from "@storybook/react";
 
 export default {
   title: "Widgets/FeatureItem",
@@ -19,11 +19,16 @@ export default {
     className: {
       control: { type: "text" },
     },
-    icon: {
-      control: { type: "text" },
+    variant: {
+      control: { type: "select", options: ["horizontal", "vertical"] },
     },
-    heading: {
-      control: { type: "text" },
+    icon: {
+      control: { type: "object" },
+    },
+    heading: { control: "text" },
+    text: { control: "text" },
+    links: {
+      control: { type: "object" },
     },
   },
 } as Meta<typeof FeatureItem>;
@@ -34,6 +39,21 @@ const Template: StoryFn<IFeatureItem> = (args: IFeatureItem) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  icon: "/images/storybook/widgets/feature-item/working.svg",
-  heading: "Working with office files directly within the Box frontend",
+  icon: { url: "/images/storybook/widgets/feature-item/working.svg" },
+  text: "Working with office files directly within the Box frontend",
+};
+
+export const Vertical = Template.bind({});
+Vertical.args = {
+  variant: "vertical",
+  icon: { url: "/images/storybook/widgets/feature-item/working.svg" },
+  text: "Working with office files directly within the Box frontend",
+};
+
+export const Horizontal = Template.bind({});
+Horizontal.args = {
+  variant: "horizontal",
+  icon: { url: "/images/storybook/widgets/feature-item/working.svg" },
+  heading: "It’s free",
+  text: "No need to save on food or drinks just to be able to work on your assignment with a potent office suite. We’ve got your back – for students, ONLYOFFICE is completely free.",
 };

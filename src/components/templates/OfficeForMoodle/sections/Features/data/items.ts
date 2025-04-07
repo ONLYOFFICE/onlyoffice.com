@@ -1,26 +1,46 @@
-export const items = [
+import { IFeatureItem } from "@src/components/widgets/FeatureItem";
+
+export const items: IFeatureItem[] = [
   {
-    icon: "/images/templates/office-for-moodle/features/ai-helper.svg",
-    heading: "FeaturesAIHelper",
+    icon: {
+      url: "/images/templates/office-for-moodle/features/features.svg",
+      positionX: "0",
+    },
+    text: "FeaturesAIHelper",
   },
   {
-    icon: "/images/templates/office-for-moodle/features/co-editing.svg",
-    heading: "FeaturesCoEditing",
+    icon: {
+      url: "/images/templates/office-for-moodle/features/features.svg",
+      positionX: "-76px",
+    },
+    text: "FeaturesCoEditing",
   },
   {
-    icon: "/images/templates/office-for-moodle/features/formats.svg",
-    heading: "FeaturesFormats",
+    icon: {
+      url: "/images/templates/office-for-moodle/features/features.svg",
+      positionX: "-152px",
+    },
+    text: "FeaturesFormats",
   },
   {
-    icon: "/images/templates/office-for-moodle/features/desktop-editors.svg",
-    heading: "FeaturesDesktopEditors",
+    icon: {
+      url: "/images/templates/office-for-moodle/features/features.svg",
+      positionX: "-230px",
+    },
+    text: "FeaturesDesktopEditors",
   },
   {
-    icon: "/images/templates/office-for-moodle/features/open-source-code.svg",
-    heading: "FeaturesOpenSourceCode",
+    icon: {
+      url: "/images/templates/office-for-moodle/features/features.svg",
+      positionX: "-306px",
+    },
+    text: "FeaturesOpenSourceCode",
   },
   {
-    icon: "/images/templates/office-for-moodle/features/free-trial.svg",
-    heading: "FeaturesFreeTrial",
+    icon: {
+      url: "/images/templates/office-for-moodle/features/features.svg",
+      positionX: "-380px",
+    },
+    text: "FeaturesFreeTrial",
   },
 ];

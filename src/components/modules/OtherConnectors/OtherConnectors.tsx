@@ -37,7 +37,7 @@ const OtherConnectors = ({ id, className }: IOtherConnectors) => {
                   id={`connector-${item.id}`}
                   forwardedAs="a"
                   href={item.url}
-                  title={item.title}
+                  title={item.name}
                   variant="quaternary"
                   $active={router.pathname === item.url}
                 >
@@ -84,8 +84,8 @@ const OtherConnectors = ({ id, className }: IOtherConnectors) => {
                 <li key={index}>
                   <StyledOtherConnectorsButton
                     forwardedAs="span"
-                    label={item.title}
-                    title={item.title}
+                    label={item.name}
+                    title={item.name}
                     variant="tertiary"
                     $disabled={true}
                   />

@@ -10,7 +10,7 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-dropbox");
 
   return (
-    <StyledHowToStart bgColor="#f9f9f9">
+    <StyledHowToStart background="#f9f9f9">
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 
@@ -20,7 +20,7 @@ const HowToStart = () => {
             heading: item.headingLinks ? (
               <Trans
                 t={t}
-                i18nKey={item.heading}
+                i18nKey={String(item.heading)}
                 components={item.headingLinks.map((link, index) => (
                   <Link
                     key={index}
@@ -33,7 +33,7 @@ const HowToStart = () => {
                 ))}
               />
             ) : (
-              t(item.heading)
+              t(String(item.heading))
             ),
           }))}
         />

@@ -15,8 +15,8 @@ export interface ILoaderButton {
   type?: "button" | "submit";
   /** If true, it will stretch to fill the container's width. */
   fullWidth?: boolean;
-  /** The visual style variant. Default: "default". */
-  variant?: "default" | "loading" | "success" | "error";
+  /** The visual style status. Default: "default". */
+  status?: "default" | "loading" | "success" | "error";
   /** The size. Default: "medium". */
   size?: "small" | "medium";
   /** Callback function triggered on click. */
