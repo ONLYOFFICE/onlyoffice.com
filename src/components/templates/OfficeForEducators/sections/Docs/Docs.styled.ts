@@ -7,10 +7,9 @@ const StyledDocsHeading = styled(Heading)`
   max-width: 876px;
   margin: 0 auto 24px;
   text-align: center;
-  line-height: 133%;
 
   @media ${device.tabletS} {
-    text-align: start;
+    text-align: initial;
   }
 
   @media ${device.mobile} {
@@ -20,14 +19,14 @@ const StyledDocsHeading = styled(Heading)`
 `;
 
 const StyledDocsText = styled(Text)`
-  max-width: 788px;
+  max-width: 778px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 150%;
   text-align: center;
 
   @media ${device.tabletS} {
-    text-align: start;
+    text-align: initial;
   }
 
   @media ${device.mobile} {
@@ -37,12 +36,12 @@ const StyledDocsText = styled(Text)`
 
 const StyledDocsFeatures = styled.div`
   display: grid;
-  gap: 72px;
-  padding-bottom: 72px;
+  row-gap: 72px;
+  margin-bottom: 72px;
 
   @media ${device.mobile} {
-    padding-bottom: 56px;
-    gap: 56px;
+    row-gap: 56px;
+    margin-bottom: 56px;
   }
 `;
 
@@ -59,10 +58,9 @@ const StyledButtonWrapper = styled.div`
 
 const StyledFeatureItemText = styled.span`
   display: inline-block;
-  margin-bottom: 8px;
 
-  &:last-child {
-    margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 8px;
   }
 `;
 

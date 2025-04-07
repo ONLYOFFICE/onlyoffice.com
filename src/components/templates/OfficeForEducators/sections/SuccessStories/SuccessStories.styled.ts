@@ -4,22 +4,28 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
 const StyledSuccessStoriesHeading = styled(Heading)`
-  margin: 0 auto 24px;
-  font-size: 32px;
-  line-height: 133%;
+  margin-bottom: 24px;
+
+  @media ${device.tabletS} {
+    text-align: initial;
+  }
 
   @media ${device.mobile} {
-    text-align: start;
-    margin: 0 0 16px;
+    margin-bottom: 16px;
     font-size: 24px;
+    line-height: 32px;
   }
 `;
 
 const StyledSuccessStoriesDesc = styled(Text)`
-  max-width: 736px;
-  margin: 0 auto 56px;
+  margin-bottom: 56px;
   font-size: 18px;
   line-height: 150%;
+  text-align: center;
+
+  @media ${device.tabletS} {
+    text-align: initial;
+  }
 
   @media ${device.mobile} {
     font-size: 14px;
@@ -28,8 +34,6 @@ const StyledSuccessStoriesDesc = styled(Text)`
 `;
 
 const StyledSuccessStoriesItems = styled.div`
-  max-width: 928px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;

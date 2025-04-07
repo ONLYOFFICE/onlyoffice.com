@@ -60,7 +60,7 @@ export const items: IFeatureImageItemExtended[] = [
     ],
     textLinks: [
       {
-        href: "/document-templates",
+        href: "/e-book",
       },
     ],
     image: {

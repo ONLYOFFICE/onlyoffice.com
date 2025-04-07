@@ -46,6 +46,10 @@ const StyledBlogCardWrapper = styled.div<{ $isLarge: IBlogCard["isLarge"] }>`
     &:not(:last-child) {
       margin-bottom: ${(props) => (props.$isLarge ? "16px" : "8px")};
     }
+
+    a {
+      display: block;
+    }
   }
 
   &:not(:last-child) {

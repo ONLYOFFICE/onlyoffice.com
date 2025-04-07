@@ -7,10 +7,9 @@ const StyledDocSpaceHeading = styled(Heading)`
   max-width: 928px;
   margin: 0 auto 24px;
   text-align: center;
-  line-height: 133%;
 
   @media ${device.tabletS} {
-    text-align: start;
+    text-align: initial;
   }
 
   @media ${device.mobile} {
@@ -21,28 +20,29 @@ const StyledDocSpaceHeading = styled(Heading)`
 
 const StyledDocSpaceText = styled(Text)`
   max-width: 928px;
-  margin: 0 auto;
+  margin: 0 auto 72px;
   font-size: 18px;
   line-height: 150%;
   text-align: center;
 
   @media ${device.tabletS} {
-    text-align: start;
+    text-align: initial;
   }
 
   @media ${device.mobile} {
+    margin: 0 auto 56px;
     font-size: 14px;
   }
 `;
 
 const StyledDocSpaceFeatures = styled.div`
   display: grid;
-  gap: 72px;
-  padding: 72px 0;
+  row-gap: 72px;
+  margin-bottom: 72px;
 
   @media ${device.mobile} {
-    padding: 48px 0 56px;
-    gap: 56px;
+    margin-bottom: 56px;
+    row-gap: 56px;
   }
 `;
 

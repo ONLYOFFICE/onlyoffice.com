@@ -3,7 +3,6 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { IHero } from "./Hero.types";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
@@ -18,11 +17,11 @@ const StyledHero = styled(Section)`
 
   @media ${device.tabletS} {
     margin-top: -48px;
-    background-position: 26% -564px;
+    background-position: calc(50% + 140px) -564px;
   }
 
   @media ${device.mobile} {
-    background-position: 24% -690px;
+    background-position: calc(50% + 360px) -660px;
   }
 `;
 
@@ -44,7 +43,7 @@ const StyledHeroWrapper = styled.div`
 
   @media ${device.mobile} {
     row-gap: 48px;
-    text-align: start;
+    text-align: initial;
   }
 `;
 
@@ -79,7 +78,6 @@ const StyledHeroHeading = styled(Heading)`
 const StyledHeroText = styled(Text)`
   font-size: 22px;
   line-height: 150%;
-  color: #444;
 
   @media ${device.tabletS} {
     font-size: 18px;
@@ -90,22 +88,15 @@ const StyledHeroText = styled(Text)`
   }
 `;
 
-const StyledHeroImage = styled.div<{
-  $imgUrl: IHero["imgUrl"];
-  $imgWidth: IHero["imgWidth"];
-  $imgHeight: IHero["imgHeight"];
-}>`
-  padding-bottom: ${({ $imgHeight, $imgWidth }) =>
-    $imgHeight && $imgWidth
-      ? (($imgHeight / $imgWidth) * 100).toFixed(4) + "%"
-      : "0%"};
-  background-image: url(${({ $imgUrl }) => $imgUrl});
+const StyledHeroImage = styled.div`
+  padding-bottom: 110.938%;
+  background-image: url("/images/templates/office-for-educators/hero/hero-image.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   @media ${device.tabletS} {
-    width: 488px;
-    height: 526px;
+    width: 448px;
+    height: 496px;
     margin: 0 auto;
     padding-bottom: 0;
   }

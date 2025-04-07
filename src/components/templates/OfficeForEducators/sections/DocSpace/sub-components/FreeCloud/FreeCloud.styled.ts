@@ -1,12 +1,10 @@
+import styled from "styled-components";
+import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { device } from "@src/utils/device";
-import styled from "styled-components";
+import { Link } from "@src/components/ui/Link";
 
-const StyledFreeCloudWrapper = styled.div`
-  display: grid;
-  justify-content: center;
-  gap: 16px;
+const StyledFreeCloud = styled.div`
   padding: 64px;
   border: 1px solid #e2e2e2;
   border-radius: 12px;
@@ -19,10 +17,18 @@ const StyledFreeCloudWrapper = styled.div`
 
   @media ${device.mobile} {
     padding: 32px 0;
+  }
+`;
 
-    a {
-      font-size: 14px;
-    }
+const StyledFreeCloudWrapper = styled.div`
+  display: grid;
+  row-gap: 16px;
+  margin: 0 auto 16px;
+  width: 100%;
+  max-width: 544px;
+
+  @media ${device.mobile} {
+    padding: 0 16px;
   }
 `;
 
@@ -45,17 +51,18 @@ const StyledFreeCloudTitle = styled(Heading)`
 `;
 
 const StyledFreeCloudText = styled(Text)`
-  max-width: 544px;
   font-size: 18px;
   line-height: 150%;
   color: #666;
 
-  @media ${device.tabletS} {
-    padding: 0 16px;
-  }
-
   @media ${device.mobile} {
     font-size: 13px;
+  }
+`;
+
+const StyledFreeCloudLink = styled(Link)`
+  @media ${device.mobile} {
+    font-size: 14px;
   }
 `;
 
@@ -63,6 +70,7 @@ const StyledFreeCloudImage = styled.div<{
   $image: string;
   $image2x: string;
 }>`
+  margin: 0 auto;
   max-width: 640px;
   width: 100%;
   height: 504px;
@@ -82,8 +90,10 @@ const StyledFreeCloudImage = styled.div<{
 `;
 
 export {
+  StyledFreeCloud,
   StyledFreeCloudWrapper,
   StyledFreeCloudTitle,
   StyledFreeCloudText,
+  StyledFreeCloudLink,
   StyledFreeCloudImage,
 };
