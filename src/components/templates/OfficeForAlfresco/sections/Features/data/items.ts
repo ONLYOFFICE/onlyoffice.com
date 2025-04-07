@@ -6,41 +6,41 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-alfresco/features/features.svg",
       positionX: "-20px",
     },
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: {
       url: "/images/templates/office-for-alfresco/features/features.svg",
       positionX: "-108px",
     },
-    heading: "FeaturesCoEditing",
+    text: "FeaturesCoEditing",
   },
   {
     icon: {
       url: "/images/templates/office-for-alfresco/features/features.svg",
       positionX: "-196px",
     },
-    heading: "FeaturesFree",
+    text: "FeaturesFree",
   },
   {
     icon: {
       url: "/images/templates/office-for-alfresco/features/features.svg",
       positionX: "-284px",
     },
-    heading: "FeaturesSecurity",
+    text: "FeaturesSecurity",
   },
   {
     icon: {
       url: "/images/templates/office-for-alfresco/features/features.svg",
       positionX: "-372px",
     },
-    heading: "FeaturesConfiguration",
+    text: "FeaturesConfiguration",
   },
   {
     icon: {
       url: "/images/templates/office-for-alfresco/features/features.svg",
       positionX: "-460px",
     },
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
 ];

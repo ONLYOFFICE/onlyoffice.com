@@ -24,7 +24,7 @@ export default {
       control: { type: "text" },
     },
     heading: {
-      control: { type: "text" },
+      control: { type: "object" },
     },
     text: {
       control: { type: "text" },
@@ -45,8 +45,10 @@ const Template: StoryFn<IBlogCard> = (args: IBlogCard) => (
 export const Default = Template.bind({});
 Default.args = {
   imgUrl: "/images/storybook/widgets/blog-card/story.jpg",
-  heading:
-    "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
+  heading: {
+    label:
+      "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
+  },
   links: [
     {
       href: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
@@ -62,8 +64,10 @@ Default.args = {
 export const Large = Template.bind({});
 Large.args = {
   imgUrl: "/images/storybook/widgets/blog-card/story.jpg",
-  heading:
-    "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
+  heading: {
+    label:
+      "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
+  },
   links: [
     {
       href: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
@@ -75,4 +79,14 @@ Large.args = {
     },
   ],
   isLarge: true,
+};
+
+export const WithBlogLink = Template.bind({});
+WithBlogLink.args = {
+  imgUrl: "/images/storybook/widgets/blog-card/story.jpg",
+  heading: {
+    href: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
+    label:
+      "Digital transformation in higher education: how Jambi University implemented ONLYOFFICE Docs",
+  },
 };

@@ -22,11 +22,9 @@ const FeatureImageItem = ({
     <StyledFeatureImageItem id={id} className={className} $position={position}>
       <StyleFeatureImageItemContent>
         <Heading level={3} label={title} />
-        <StyledFeatureImageItemText
-          label={text}
-          color="#666666"
-          lineHeight="150%"
-        />
+        <StyledFeatureImageItemText color="#666666" lineHeight="150%">
+          {text}
+        </StyledFeatureImageItemText>
         {links?.map(({ href, label, isExternal }, index) => (
           <StyledFeatureImageItemLink
             key={index}

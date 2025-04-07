@@ -5,48 +5,48 @@ export const items: IFeatureItem[] = [
     icon: {
       url: "/images/templates/office-for-nextcloud/features/formats.svg",
     },
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: {
       url: "/images/templates/office-for-nextcloud/features/ai-helper.svg",
     },
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
   {
     icon: {
       url: "/images/templates/office-for-nextcloud/features/co-editing.svg",
     },
-    heading: "FeaturesCoEditing",
+    text: "FeaturesCoEditing",
   },
   {
     icon: {
       url: "/images/templates/office-for-nextcloud/features/support.svg",
     },
-    heading: "FeaturesSupport",
+    text: "FeaturesSupport",
   },
   {
     icon: {
       url: "/images/templates/office-for-nextcloud/features/security.svg",
     },
-    heading: "FeaturesSecurity",
+    text: "FeaturesSecurity",
   },
   {
     icon: {
       url: "/images/templates/office-for-nextcloud/features/configuration.svg",
     },
-    heading: "FeaturesConfiguration",
+    text: "FeaturesConfiguration",
   },
   {
     icon: {
       url: "/images/templates/office-for-nextcloud/features/free.svg",
     },
-    heading: "FeaturesFree",
+    text: "FeaturesFree",
   },
   {
     icon: {
       url: "/images/templates/office-for-nextcloud/features/integration.svg",
     },
-    heading: "FeaturesIntegration",
+    text: "FeaturesIntegration",
   },
 ];

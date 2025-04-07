@@ -1,0 +1,126 @@
+{
+  "PageTitle": "ONLYOFFICE for educators",
+  "PageDescription": "Bring your lectures to life with a flexible office suite. Work together with students and colleagues.",
+
+  "OfficeForEducators": "ONLYOFFICE for <0>educators</0>",
+  "BringYourLecturesToLife": "Bring your lectures to life with an easy-to-use and flexible office suite. Work together with your students and colleagues to create, share and team up to make sure everyone has the best access to your teachings.",
+
+  "OODocsTitle": "<0>ONLYOFFICE Docs:</0> Collaborative online editors for your eLearning platform",
+  "OODocsDesc": "Create and co-author your teaching materials effortlessly – the only limit to how you want to teach is your imagination.",
+
+  "FitToAnyLMSOrDMS": "Fit to any LMS or DMS",
+  "FitToAnyLMSOrDMSDesc": "No matter if you’re using your standard tread-of-the-mill school computer, or you’re one of those clever tinkering types — create the learning environment that meets your needs and those of your students. ONLYOFFICE can be easily integrated into common educational and content management platforms to work with documents directly within the course structure.",
+
+  "ExploreAllIntegrations": "Explore all integrations",
+
+  "SeamlessAndUserFriendly": "Seamless and user-friendly office experience",
+  "SeamlessAndUserFriendlyDesc": "Making your student’s head spin should be reserved to your learning material, not to the office suite you’re using. ONLYOFFICE provides you (and your class) with a user-friendly interface for editing <0>text documents</0>, <1>spreadsheets</1>, <2>presentations</2>, and <3>PDFs</3>. If you already have experience with other office suites, you will quickly find your way around.",
+  "SeamlessAndUserFriendlyImgUrl": "/images/templates/office-for-educators/docs/en/seamless-and-user-friendly.png",
+  "SeamlessAndUserFriendlyImgUrl2x": "/images/templates/office-for-educators/docs/en/seamless-and-user-friendly@2x.png",
+
+  "TailoredToCreate": "Tailored to create educational content",
+  "TailoredToCreateDesc": "Easily create informative contents for your students: lively worksheets, colorful slides, and comprehensive multi-page guides with diagrams, images, equations, and even embedded YouTube videos. Apply academic formatting, including headers and footers, page numbers, footnotes, tables of contents, etc. Use the <0>integrated AI helpers</0> to quickly find the necessary info, rewrite or translate your lectures, and more.",
+  "TailoredToCreateImgUrl": "/images/templates/office-for-educators/docs/en/tailored-to-create-educational-content.png",
+  "TailoredToCreateImgUrl2x": "/images/templates/office-for-educators/docs/en/tailored-to-create-educational-content@2x.png",
+
+  "RatingYourStudentsEssays": "Rating your students' essays",
+  "RatingYourStudentsEssaysDesc": "Enable the review mode to grade submitted assignments. Correct grammar, punctuation and spelling, and leave comments and notes without actually editing the document. All your suggested changes are recorded and displayed to students.",
+  "RatingYourStudentsEssaysImgUrl": "/images/templates/office-for-educators/docs/en/rating-your-students-essays.png",
+  "RatingYourStudentsEssaysImgUrl2x": "/images/templates/office-for-educators/docs/en/rating-your-students-essays@2x.png",
+
+  "YourOnlineLibrarysBestFriend": "Your online library’s best friend",
+  "YourOnlineLibrarysBestFriendDesc1": "It's a hard truth for the generation of teachers, but printed books are no longer as popular as they used to be. The nostalgics among you might still shed a tear or two, but from a practical standpoint, it’s great news.",
+  "YourOnlineLibrarysBestFriendDesc2": "With ONLYOFFICE Docs, it's possible to read EPUB, FB2 or PDF files, as well as <0>create your own e-books</0> from your documents. Knowledge is therefore available more quickly and students always have their literature to hand.",
+  "YourOnlineLibrarysBestFriendDesc3": "And let's be honest: if you have all your books in the cloud, you can't forget them at home either.",
+  "YourOnlineLibrarysBestFriendImgUrl": "/images/templates/office-for-educators/docs/en/your-online-library-best-friend.png",
+  "YourOnlineLibrarysBestFriendImgUrl2x": "/images/templates/office-for-educators/docs/en/your-online-library-best-friend@2x.png",
+
+  "StartFreeTrial": "START FREE TRIAL",
+  "RequestFreeDemo": "REQUEST FREE DEMO",
+
+  "OODocSpaceTitle": "<0>ONLYOFFICE DocSpace:</0> Connect learning materials and students in customizable rooms",
+  "OODocSpaceTitleDesc": "If you need even more flexibility when setting your students off on group assignments (or just don't have any suitable LMS at hand), then ONLYOFFICE DocSpace is the right solution for you. Here, you get to control who gets to view, collaborate on and share any project files within your virtual rooms.",
+
+  "FillableAssignments": "Fillable assignments? A piece of cake!",
+  "FillableAssignmentsDesc": "Create customized PDF tests with various input fields such as text areas, images, combo boxes, drop-down lists, dates, checkboxes, radio buttons, etc. Collect and analyze test responses in a convenient way in <0>Form filling rooms</0>.",
+  "FillableAssignmentsImgUrl": "/images/templates/office-for-educators/docspace/en/fillable-assignments.png",
+  "FillableAssignmentsImgUrl2x": "/images/templates/office-for-educators/docspace/en/fillable-assignments@2x.png",
+
+  "EasySharing": "Easy sharing of your materials",
+  "EasySharingDesc": "Focus on the essentials: teaching and sharing knowledge – we’ll handle the rest! In <0>Public rooms</0> of ONLYOFFICE DocSpace, your students and colleagues are able to view the stored workbooks, handouts, course presentations, and other materials without registration.",
+  "EasySharingImgUrl": "/images/templates/office-for-educators/docspace/en/easy-sharing-of-your-materials.png",
+  "EasySharingImgUrl2x": "/images/templates/office-for-educators/docspace/en/easy-sharing-of-your-materials@2x.png",
+
+  "AnotherTaskInMind": "Another task in mind for the next lesson?",
+  "AnotherTaskInMindDesc": "Don't worry! In DocSpace, you can efficiently work together with built-in communication tools such as chat and comments to discuss project details, share ideas, and provide feedback in <0>Collaboration rooms</0>. Or create <1>Custom rooms</1> with flexible settings for any task and purpose. And even more: make use of <2>Meeting rooms</2> to demonstrate and co-edit course files and didactic materials during Zoom-held lessons directly within the video session.",
+  "AnotherTaskInMindImgUrl": "/images/templates/office-for-educators/docspace/en/another-task-in-mind.png",
+  "AnotherTaskInMindImgUrl2x": "/images/templates/office-for-educators/docspace/en/another-task-in-mind@2x.png",
+
+  "FlexiblePermissionsAndRoles": "Flexible permissions and roles",
+  "FlexiblePermissionsAndRolesDesc": "Fine-tune room access with a wide range of flexible permissions: Room admins with managing rights, Power users with extended user rights, Editors with full access to the room files, Reviewers, Commenters and Form fillers with the corresponding rights, Viewers with read-only access. This way, you can assign roles of the invited people by task types and also protect sensitive files such as student personal info, grades, or academic papers.",
+  "FlexiblePermissionsAndRolesImgUrl": "/images/templates/office-for-educators/docspace/en/flexible-permissions-and-roles.png",
+  "FlexiblePermissionsAndRolesImgUrl2x": "/images/templates/office-for-educators/docspace/en/flexible-permissions-and-roles@2x.png",
+
+  "GetStarted": "Get started",
+
+  "FreeCloud": "<0>Free cloud</0> for schools",
+  "FreeCloudText": "Create a free DocSpace Cloud for your school – get 2 GB of storage and up to 20 admin accounts.",
+  "FreeCloudImgUrl": "/images/templates/office-for-educators/docspace/free-cloud/en/free-cloud-for-schools.png",
+  "FreeCloudImgUrl2x": "/images/templates/office-for-educators/docspace/free-cloud/en/free-cloud-for-schools@2x.png",
+  "SubmitRequest": "Submit request",
+
+  "WhyOOTitle": "<0>Why</0> ONLYOFFICE?",
+  "WhyOODesc": "So many options, so many solutions, each claiming they’re the real deal – we know how it is. But we’re truly the real deal, trust us! Or don’t, because we can show you how perfect ONLYOFFICE and education go together:",
+
+  "ItProvidesFreeApps": "It provides free desktop and mobile apps",
+  "ItProvidesFreeAppsDesc": "ONLYOFFICE is designed to work with documents online, however everyone is welcomed to complement their experience with absolutely <0>free desktop apps</0> for Windows, macOS, and Linux, as well as free mobile apps for <1>iOS</1> and <2>Android</2>. So, it's up to you to decide how, where and from which device to work and edit your educational materials.",
+
+  "ItsAffordable": "It’s affordable",
+  "ItsAffordableDesc": "Sometimes, it’s all about the money. Tight budget for schools and institutions can make it difficult to find a suitable solution that works for all the teaching and learning needs. But ONLYOFFICE is extra affordable for schools and universities with the educational discounts provided. And completely free for your students, by the way.",
+
+  "ItsHighlyCustomizable": "It’s highly customizable with our built-in plugin marketplace",
+  "ItsHighlyCustomizableDesc": "Personalize your ONLYOFFICE experience with <0>numerous plugins</0> that enhance its functionality. Whether it’s boosting your document work with the ChatGPT plugin, simplifying research with bibliography plugins for Mendeley or Zotero, or improving writing and proofreading with LanguageTool & OCR, we’ve got you covered.",
+
+  "ItsFullyCompatible": "It’s fully compatible with MS Office files and PDFs (and almost all other office file formats)",
+  "ItsFullyCompatibleDesc": "You won’t have to worry about your students or colleagues struggling to read your documents. ONLYOFFICE works seamlessly with MS Office files (like DOCX, XLSX, PPTS, etc.), Adobe PDF files and most other file formats.",
+
+  "YouWontFindABetterPlaceToCollaborate": "You won’t find a better place to collaborate",
+  "YouWontFindABetterPlaceToCollaborateDesc": "ONLYOFFICE was built with one major goal: to make collaboration seamless, easy, and efficient. And it shows. Countless features you won’t find anywhere allow you to bring your students, your colleagues and yourself together in a new way.",
+
+  "GetItNow": "GET IT NOW",
+  "TryInTheCloud": "TRY IN THE CLOUD",
+
+  "SuccessStoriesTitle": "Success stories that show you how it’s done",
+  "SuccessStoriesText": "We could go on and on about how well ONLYOFFICE and education go together. But we’d rather show you – by demonstrating stories of success by other users.",
+
+  "DigitalTransformation": "Digital transformation in higher education: how Jambi University implemented ONLYOFFICE Docs",
+  "DigitalTransformationLink": "https://www.onlyoffice.com/blog/2022/11/how-jambi-university-implemented-onlyoffice-docs",
+  "DigitalTransformationImgUrl": "/images/templates/office-for-educators/success-stories/transformation.png",
+
+  "HowOOFacilitatesCollaboration": "How ONLYOFFICE facilitates collaboration for schools in Donaueschingen",
+  "HowOOFacilitatesCollaborationLink": "https://www.onlyoffice.com/blog/2023/10/onlyoffice-in-donaueschingen-schools",
+  "HowOOFacilitatesCollaborationImgUrl": "/images/templates/office-for-educators/success-stories/collaboration.png",
+
+  "HowCollegeLyceeSacreCoeur": "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
+  "HowCollegeLyceeSacreCoeurLink": "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
+  "HowCollegeLyceeSacreCoeurImgUrl": "/images/templates/office-for-educators/success-stories/digital-equality.png",
+
+  "HowKinderhausBerlinSharesAndCollaborates": "How Kinderhaus Berlin shares and collaborates on sensitive files with ONLYOFFICE DocSpace",
+  "HowKinderhausBerlinSharesAndCollaboratesLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "HowKinderhausBerlinSharesAndCollaboratesImgUrl": "/images/templates/office-for-educators/success-stories/sensitive.png",
+
+  "HowCanOOAssist": "How can ONLYOFFICE assist with assignments I provide for my students?",
+  "HowCanOOAssistAnswer": "ONLYOFFICE provides a range of tools for creating and editing documents, spreadsheets, presentations, and PDFs which are essential for your assignments. Additionally, our <0>collaboration features</0> enable you to work with your class in real time, greatly enhancing the efficiency of group projects and peer reviews.",
+
+  "CanIUseOOForCollaborative": "Can I use ONLYOFFICE for collaborative projects within my class?",
+  "CanIUseOOForCollaborativeAnswer": "Absolutely! ONLYOFFICE is designed with collaboration in mind. Features such as real-time co-editing, commenting, and DocSpace collaboration rooms make it easy for you to let your students work together on group assignments and projects. You and your class can edit documents simultaneously, simplifying teamwork.",
+
+  "DoesOOOfferTemplates": "Does ONLYOFFICE offer templates for academic documents?",
+  "DoesOOOfferTemplatesAnswer": "Yes, we do! Our <0>template library</0> includes a variety of templates tailored for academic use, such as report templates, research paper formats, and presentation layouts. This means you can focus more on the content and less on formatting.",
+
+  "IsOOSecure": "Is ONLYOFFICE secure for storing and sharing sensitive academic information?",
+  "IsOOSecureAnswer": "Yes, we <0>prioritize security</0> with robust measures. ONLYOFFICE is open-source and GDPR compliant – which means it fits all the legal criteria for data protection and privacy for educational establishments. ONLYOFFICE includes file encryption and multiple options for secure sharing and access control. Besides, our solutions can be deployed on private servers.",
+
+  "IsOOFree": "Is ONLYOFFICE free?",
+  "IsOOFreeAnswer": "We provide a free DocSpace Cloud for schools. For ONLYOFFICE Docs, there may be discounted or subsidized plans available through educational institutions or student programs."
+}

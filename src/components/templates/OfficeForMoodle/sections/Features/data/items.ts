@@ -6,41 +6,41 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-moodle/features/features.svg",
       positionX: "0",
     },
-    heading: "FeaturesAIHelper",
+    text: "FeaturesAIHelper",
   },
   {
     icon: {
       url: "/images/templates/office-for-moodle/features/features.svg",
       positionX: "-76px",
     },
-    heading: "FeaturesCoEditing",
+    text: "FeaturesCoEditing",
   },
   {
     icon: {
       url: "/images/templates/office-for-moodle/features/features.svg",
       positionX: "-152px",
     },
-    heading: "FeaturesFormats",
+    text: "FeaturesFormats",
   },
   {
     icon: {
       url: "/images/templates/office-for-moodle/features/features.svg",
       positionX: "-230px",
     },
-    heading: "FeaturesDesktopEditors",
+    text: "FeaturesDesktopEditors",
   },
   {
     icon: {
       url: "/images/templates/office-for-moodle/features/features.svg",
       positionX: "-306px",
     },
-    heading: "FeaturesOpenSourceCode",
+    text: "FeaturesOpenSourceCode",
   },
   {
     icon: {
       url: "/images/templates/office-for-moodle/features/features.svg",
       positionX: "-380px",
     },
-    heading: "FeaturesFreeTrial",
+    text: "FeaturesFreeTrial",
   },
 ];
