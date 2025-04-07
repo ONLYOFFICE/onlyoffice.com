@@ -6,41 +6,41 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-jira/features/features.svg",
       positionX: "0px",
     },
-    heading: "Reason1",
+    text: "Reason1",
   },
   {
     icon: {
       url: "/images/templates/office-for-jira/features/features.svg",
       positionX: "-80px",
     },
-    heading: "Reason2",
+    text: "Reason2",
   },
   {
     icon: {
       url: "/images/templates/office-for-jira/features/features.svg",
       positionX: "-160px",
     },
-    heading: "Reason3",
+    text: "Reason3",
   },
   {
     icon: {
       url: "/images/templates/office-for-jira/features/features.svg",
       positionX: "-240px",
     },
-    heading: "Reason4",
+    text: "Reason4",
   },
   {
     icon: {
       url: "/images/templates/office-for-jira/features/features.svg",
       positionX: "-320px",
     },
-    heading: "Reason5",
+    text: "Reason5",
   },
   {
     icon: {
       url: "/images/templates/office-for-jira/features/features.svg",
       positionX: "-400px",
     },
-    heading: "Reason6",
+    text: "Reason6",
   },
 ];

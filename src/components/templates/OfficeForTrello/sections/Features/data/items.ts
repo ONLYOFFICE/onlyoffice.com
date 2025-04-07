@@ -6,41 +6,41 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-trello/features/features.svg",
       positionX: "0px",
     },
-    heading: "Reason1",
+    text: "Reason1",
   },
   {
     icon: {
       url: "/images/templates/office-for-trello/features/features.svg",
       positionX: "-74px",
     },
-    heading: "Reason2",
+    text: "Reason2",
   },
   {
     icon: {
       url: "/images/templates/office-for-trello/features/features.svg",
       positionX: "-148px",
     },
-    heading: "Reason3",
+    text: "Reason3",
   },
   {
     icon: {
       url: "/images/templates/office-for-trello/features/features.svg",
       positionX: "-222px",
     },
-    heading: "Reason4",
+    text: "Reason4",
   },
   {
     icon: {
       url: "/images/templates/office-for-trello/features/features.svg",
       positionX: "-296px",
     },
-    heading: "Reason5",
+    text: "Reason5",
   },
   {
     icon: {
       url: "/images/templates/office-for-trello/features/features.svg",
       positionX: "-370px",
     },
-    heading: "Reason6",
+    text: "Reason6",
   },
 ];

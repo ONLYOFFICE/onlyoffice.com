@@ -6,62 +6,62 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-sharepoint/features/features.svg",
       positionX: "0",
     },
-    heading: "Reason1",
+    text: "Reason1",
   },
   {
     icon: {
       url: "/images/templates/office-for-sharepoint/features/features.svg",
       positionX: "-95px",
     },
-    heading: "Reason2",
+    text: "Reason2",
   },
   {
     icon: {
       url: "/images/templates/office-for-sharepoint/features/features.svg",
       positionX: "-188px",
     },
-    heading: "Reason3",
+    text: "Reason3",
   },
   {
     icon: {
       url: "/images/templates/office-for-sharepoint/features/features.svg",
       positionX: "-285px",
     },
-    heading: "Reason4",
+    text: "Reason4",
   },
   {
     icon: {
       url: "/images/templates/office-for-sharepoint/features/features.svg",
       positionX: "-377px",
     },
-    heading: "Reason5",
+    text: "Reason5",
   },
   {
     icon: {
       url: "/images/templates/office-for-sharepoint/features/features.svg",
       positionX: "-475px",
     },
-    heading: "Reason6",
+    text: "Reason6",
   },
   {
     icon: {
       url: "/images/templates/office-for-sharepoint/features/features.svg",
       positionX: "-570px",
     },
-    heading: "Reason7",
+    text: "Reason7",
   },
   {
     icon: {
       url: "/images/templates/office-for-sharepoint/features/features.svg",
       positionX: "-665px",
     },
-    heading: "Reason8",
+    text: "Reason8",
   },
   {
     icon: {
       url: "/images/templates/office-for-sharepoint/features/features.svg",
       positionX: "-762px",
     },
-    heading: "Reason9",
+    text: "Reason9",
   },
 ];

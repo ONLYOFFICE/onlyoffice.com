@@ -6,55 +6,55 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-redmine/features/features.svg",
       positionX: "0",
     },
-    heading: "Reason1",
+    text: "Reason1",
   },
   {
     icon: {
       url: "/images/templates/office-for-redmine/features/features.svg",
       positionX: "-74px",
     },
-    heading: "Reason2",
+    text: "Reason2",
   },
   {
     icon: {
       url: "/images/templates/office-for-redmine/features/features.svg",
       positionX: "-152px",
     },
-    heading: "Reason3",
+    text: "Reason3",
   },
   {
     icon: {
       url: "/images/templates/office-for-redmine/features/features.svg",
       positionX: "-228px",
     },
-    heading: "Reason4",
+    text: "Reason4",
   },
   {
     icon: {
       url: "/images/templates/office-for-redmine/features/features.svg",
       positionX: "-303px",
     },
-    heading: "Reason5",
+    text: "Reason5",
   },
   {
     icon: {
       url: "/images/templates/office-for-redmine/features/features.svg",
       positionX: "-380px",
     },
-    heading: "Reason6",
+    text: "Reason6",
   },
   {
     icon: {
       url: "/images/templates/office-for-redmine/features/features.svg",
       positionX: "-452px",
     },
-    heading: "Reason7",
+    text: "Reason7",
   },
   {
     icon: {
       url: "/images/templates/office-for-redmine/features/features.svg",
       positionX: "-531px",
     },
-    heading: "Reason8",
+    text: "Reason8",
   },
 ];

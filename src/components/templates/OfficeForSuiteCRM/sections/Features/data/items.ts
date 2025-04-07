@@ -6,55 +6,55 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-suitecrm/features/features.svg",
       positionX: "0",
     },
-    heading: "Reason1",
+    text: "Reason1",
   },
   {
     icon: {
       url: "/images/templates/office-for-suitecrm/features/features.svg",
       positionX: "-82px",
     },
-    heading: "Reason2",
+    text: "Reason2",
   },
   {
     icon: {
       url: "/images/templates/office-for-suitecrm/features/features.svg",
       positionX: "-166px",
     },
-    heading: "Reason3",
+    text: "Reason3",
   },
   {
     icon: {
       url: "/images/templates/office-for-suitecrm/features/features.svg",
       positionX: "-248px",
     },
-    heading: "Reason4",
+    text: "Reason4",
   },
   {
     icon: {
       url: "/images/templates/office-for-suitecrm/features/features.svg",
       positionX: "-330px",
     },
-    heading: "Reason5",
+    text: "Reason5",
   },
   {
     icon: {
       url: "/images/templates/office-for-suitecrm/features/features.svg",
       positionX: "-414px",
     },
-    heading: "Reason6",
+    text: "Reason6",
   },
   {
     icon: {
       url: "/images/templates/office-for-suitecrm/features/features.svg",
       positionX: "-498px",
     },
-    heading: "Reason7",
+    text: "Reason7",
   },
   {
     icon: {
       url: "/images/templates/office-for-suitecrm/features/features.svg",
       positionX: "-580px",
     },
-    heading: "Reason8",
+    text: "Reason8",
   },
 ];

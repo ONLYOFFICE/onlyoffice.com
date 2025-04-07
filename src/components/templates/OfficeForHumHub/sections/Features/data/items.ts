@@ -6,41 +6,41 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-humhub/features/features.svg",
       positionX: "0px",
     },
-    heading: "Reason1",
+    text: "Reason1",
   },
   {
     icon: {
       url: "/images/templates/office-for-humhub/features/features.svg",
       positionX: "-104px",
     },
-    heading: "Reason2",
+    text: "Reason2",
   },
   {
     icon: {
       url: "/images/templates/office-for-humhub/features/features.svg",
       positionX: "-208px",
     },
-    heading: "Reason3",
+    text: "Reason3",
   },
   {
     icon: {
       url: "/images/templates/office-for-humhub/features/features.svg",
       positionX: "-312px",
     },
-    heading: "Reason4",
+    text: "Reason4",
   },
   {
     icon: {
       url: "/images/templates/office-for-humhub/features/features.svg",
       positionX: "-416px",
     },
-    heading: "Reason5",
+    text: "Reason5",
   },
   {
     icon: {
       url: "/images/templates/office-for-humhub/features/features.svg",
       positionX: "-516px",
     },
-    heading: "Reason6",
+    text: "Reason6",
   },
 ];

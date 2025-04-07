@@ -6,41 +6,41 @@ export const items: IFeatureItem[] = [
       url: "/images/templates/office-for-liferay/features/features.svg",
       positionX: "0px",
     },
-    heading: "Reason1",
+    text: "Reason1",
   },
   {
     icon: {
       url: "/images/templates/office-for-liferay/features/features.svg",
       positionX: "-94px",
     },
-    heading: "Reason2",
+    text: "Reason2",
   },
   {
     icon: {
       url: "/images/templates/office-for-liferay/features/features.svg",
       positionX: "-188px",
     },
-    heading: "Reason3",
+    text: "Reason3",
   },
   {
     icon: {
       url: "/images/templates/office-for-liferay/features/features.svg",
       positionX: "-281px",
     },
-    heading: "Reason4",
+    text: "Reason4",
   },
   {
     icon: {
       url: "/images/templates/office-for-liferay/features/features.svg",
       positionX: "-375px",
     },
-    heading: "Reason5",
+    text: "Reason5",
   },
   {
     icon: {
       url: "/images/templates/office-for-liferay/features/features.svg",
       positionX: "-467px",
     },
-    heading: "Reason6",
+    text: "Reason6",
   },
 ];
