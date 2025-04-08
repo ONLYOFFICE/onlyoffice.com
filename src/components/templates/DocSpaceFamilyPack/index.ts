@@ -1,0 +1,1 @@
+export { DocSpaceFamilyPackTemplate } from "./DocSpaceFamilyPack";

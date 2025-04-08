@@ -2,7 +2,7 @@ import { ITeamworkCard } from "../sub-components/TeamworkCard";
 
 export const teamworkItems: ITeamworkCard[] = [
   {
-    title: "Education",
+    heading: "Education",
     text: "EducationDesc",
     image: {
       url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",
@@ -10,7 +10,7 @@ export const teamworkItems: ITeamworkCard[] = [
     },
   },
   {
-    title: "Business",
+    heading: "Business",
     text: "BusinessDesc",
     image: {
       url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",
@@ -20,7 +20,7 @@ export const teamworkItems: ITeamworkCard[] = [
     bgColor: "linear-gradient(136.1deg, #FF8E3D -1.99%, #FF6F3D 100%)",
   },
   {
-    title: "Individuals",
+    heading: "Individuals",
     text: "IndividualsDesc",
     image: {
       url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",
@@ -30,7 +30,7 @@ export const teamworkItems: ITeamworkCard[] = [
     bgColor: "#f9feef",
   },
   {
-    title: "Legal",
+    heading: "Legal",
     text: "LegalDesc",
     image: {
       url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",

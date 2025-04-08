@@ -20,7 +20,7 @@ const StyledTeamworkCard = styled.div<{
   }
 `;
 
-const StyledCardTitle = styled(Heading)<{
+const StyledTeamworkCardHeading = styled(Heading)<{
   $image: ITeamworkCard["image"];
   $color: ITeamworkCard["color"];
 }>`
@@ -48,7 +48,7 @@ const StyledCardTitle = styled(Heading)<{
   }
 `;
 
-const StyledCardText = styled(Text)<{ $color: ITeamworkCard["color"] }>`
+const StyledTeamworkCardText = styled(Text)<{ $color: ITeamworkCard["color"] }>`
   font-size: 18px;
   line-height: 1.5em;
   color: ${(props) => (props.$color ? props.$color : "#666666")};
@@ -62,4 +62,8 @@ const StyledCardText = styled(Text)<{ $color: ITeamworkCard["color"] }>`
   }
 `;
 
-export { StyledTeamworkCard, StyledCardTitle, StyledCardText };
+export {
+  StyledTeamworkCard,
+  StyledTeamworkCardHeading,
+  StyledTeamworkCardText,
+};

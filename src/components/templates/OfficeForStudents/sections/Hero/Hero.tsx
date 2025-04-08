@@ -9,7 +9,6 @@ import {
   StyledHeroWrapper,
 } from "./Hero.styled";
 import { Text } from "@src/components/ui/Text";
-import { hero } from "./data/hero";
 
 const Hero = () => {
   const { t } = useTranslation("office-for-students");
@@ -21,23 +20,19 @@ const Hero = () => {
       tabletSmallSpacing={["136px", "32px"]}
       mobileSpacing={["96px", "48px"]}
     >
-      <Container>
+      <Container maxWidth="1240px">
         <StyledHeroWrapper>
           <StyledHeroContent>
             <StyledHeroHeading>
               <Trans
                 t={t}
-                i18nKey={String(hero.title)}
+                i18nKey="OfficeForStudents"
                 components={[<Text as="span" color="#FF6F3D" key="0" />]}
               />
             </StyledHeroHeading>
-            <StyledHeroText label={t(hero.text)} />
+            <StyledHeroText label={t("SuperchargeYourEducation")} />
           </StyledHeroContent>
-          <StyledHeroImage
-            $imgUrl={hero.imgUrl}
-            $imgHeight={hero.imgHeight}
-            $imgWidth={hero.imgWidth}
-          />
+          <StyledHeroImage />
         </StyledHeroWrapper>
       </Container>
     </StyledHero>

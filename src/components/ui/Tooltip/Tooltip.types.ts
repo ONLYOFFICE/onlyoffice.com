@@ -6,7 +6,9 @@ export interface ITooltip {
   /** The text or content to be displayed inside the tooltip. */
   content: string;
   /** The element that triggers the tooltip on hover or focus. */
-  children: React.ReactNode;
+  children?: React.ReactNode;
+  /** Enable info icon */
+  infoIcon?: boolean;
   /** Enable floating position */
   float?: boolean;
   /** Tooltip offset */

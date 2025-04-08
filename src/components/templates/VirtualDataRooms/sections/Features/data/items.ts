@@ -2,8 +2,8 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
 export const items: IFeatureImageItem[] = [
   {
-    title: "IdealForDueDiligence",
-    text: { label: "IdealForDueDiligenceDesc" },
+    heading: "IdealForDueDiligence",
+    text: "IdealForDueDiligenceDesc",
     image: {
       url: "IdealForDueDiligenceImgUrl",
       url2x: "IdealForDueDiligenceImgUrl2x",
@@ -11,8 +11,8 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "CompletelyOrganized",
-    text: { label: "CompletelyOrganizedDesc" },
+    heading: "CompletelyOrganized",
+    text: "CompletelyOrganizedDesc",
     image: {
       url: "CompletelyOrganizedImgUrl",
       url2x: "CompletelyOrganizedImgUrl2x",
@@ -20,8 +20,8 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "HighLevelOfDataSecurity",
-    text: { label: "HighLevelOfDataSecurityDesc" },
+    heading: "HighLevelOfDataSecurity",
+    text: "HighLevelOfDataSecurityDesc",
     image: {
       url: "HighLevelOfDataSecurityImgUrl",
       url2x: "HighLevelOfDataSecurityImgUrl2x",
@@ -29,8 +29,8 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
-    title: "CostEffectiveForAnyBudget",
-    text: { label: "CostEffectiveForAnyBudgetDesc" },
+    heading: "CostEffectiveForAnyBudget",
+    text: "CostEffectiveForAnyBudgetDesc",
     image: {
       url: "CostEffectiveForAnyBudgetImgUrl",
       url2x: "CostEffectiveForAnyBudgetImgUrl2x",

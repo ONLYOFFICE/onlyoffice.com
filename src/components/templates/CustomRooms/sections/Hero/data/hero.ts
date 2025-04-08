@@ -1,7 +1,7 @@
-import { IRoomHero } from "@src/components/modules/room/RoomHero";
+import { IRoomsHero } from "@src/components/modules/rooms/RoomsHero";
 
-export const hero: IRoomHero = {
-  title: "WorkTogetherAccording",
+export const hero: IRoomsHero = {
+  heading: "WorkTogetherAccording",
   text: "EditAndCollaborate",
   items: [
     { label: "Tailored" },

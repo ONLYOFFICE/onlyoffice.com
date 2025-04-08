@@ -14,7 +14,7 @@ const SuccessStories = () => {
 
   return (
     <Section tabletSmallSpacing={["72px", "72px"]} background="#F9F9F9">
-      <Container>
+      <Container maxWidth="1008px">
         <StyledSuccessStoriesHeading
           level={2}
           textAlign="center"

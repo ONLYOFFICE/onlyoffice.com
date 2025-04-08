@@ -110,7 +110,9 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
             <ToggleButtons
               items={licenseDurations.map((item) => ({
                 id: item.id,
-                label: t(item.label),
+                label: {
+                  name: t(item.label.name),
+                },
               }))}
               selected={selectedOption.licenseDuration}
               onChange={handleLicenseChange}
@@ -121,7 +123,9 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
             <ToggleButtons
               items={supportUpdates.map((item) => ({
                 id: item.id,
-                label: t(item.label),
+                label: {
+                  name: t(item.label.name),
+                },
               }))}
               selected={selectedOption.supportUpdates}
               onChange={handleSupportChange}
@@ -169,11 +173,7 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
           <StyledEnterpriseModalTotal>
             <Heading level={4} label={t("Total")} />
 
-            <Heading
-              level={5}
-              size={isUponRequestOrEmpty ? 4 : 2}
-              color="#ff6f3d"
-            >
+            <Heading level={5} size={isUponRequestOrEmpty ? 4 : 2} color="main">
               {isUponRequestOrEmpty ? (
                 t("UponRequest")
               ) : (

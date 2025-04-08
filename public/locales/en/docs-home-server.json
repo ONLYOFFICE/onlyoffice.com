@@ -1,0 +1,28 @@
+{
+  "PageTitle": "Prices for ONLYOFFICE Docs Home Server",
+  "PageDescription": "Buy ONLYOFFICE Docs for home use",
+
+  "BuyOODocsHomeServer": "Buy ONLYOFFICE <0>Docs Home Server</0>",
+  "DocsHomeServer": "Docs Home Server",
+  "OnlineEditors": "Online editors for text documents, spreadsheets, presentations, forms, and PDFs",
+  "MobileWebEditors": "Mobile web editors",
+  "ReadyToUseConnectors": "Ready-to-use connectors",
+  "DesktopAndMobileApps": "Desktop and mobile apps",
+  "EnhancedSecurityFeatures": "Enhanced security features",
+  "AllMinorUpdatesAndMajorUpgrades": "All minor updates and major upgrades",
+
+  "NumberOfUsers": "Number of users",
+  "NumberOfUsersTooltip": "Specified number of users defines how many people can have access to editing documents, spreadsheets, and presentations. The number of documents that can be edited at the same time is not limited. Other users will be able to open documents for viewing only.",
+  "LicenseDuration": "License duration",
+  "Lifetime": "Lifetime",
+  "LifetimeTooltip": "You can use all the ONLYOFFICE Docs Home Server features available at the moment of the purchase for an unlimited period of time, but one year after the purchase date you will no longer be able to get free updates.",
+  "Updates": "Updates",
+  "1Year": "1 year",
+
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesLabel": "What do the 'lifetime license' and '1-year updates' mean?",
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesText": "You can use all the features of ONLYOFFICE Docs Home Server available upon purchase for an unlimited period of time, but you will no longer be able to get free updates one year after the purchase date. If you want to update your version of ONLYOFFICE Docs Home Server later, you will need to purchase a new license key.",
+  "WhatDoesTheNumberOfUsersLabel": "What does the 'number of users' mean?",
+  "WhatDoesTheNumberOfUsersText": "Specified number of users defines how many people can have access to editing documents, spreadsheets, and presentations. The number of documents that can be edited at the same time is not limited.<br/>Other users will be able to open documents for viewing only.<br/><br/>Please note: ONLYOFFICE keeps a user ID for a period of 30 days. After that, you will be able to replace the user with a new one if necessary. If you share a document with external users, each of them receives a named user ID for a period of 30 days.",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "Where can I find answers to other questions?",
+  "WhereCanIFindAnswersToOtherQuestionsText": "Please, visit our <0>FAQ center</0> or <1>submit your request</1> and we'll help you shortly."
+}

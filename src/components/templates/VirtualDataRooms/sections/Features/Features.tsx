@@ -1,16 +1,16 @@
 import { useTranslation } from "next-i18next";
-import { RoomFeatures } from "@src/components/modules/room/RoomFeatures";
+import { RoomsFeatures } from "@src/components/modules/rooms/RoomsFeatures";
 import { items } from "./data/items";
 
 const Features = () => {
   const { t } = useTranslation("virtual-data-rooms");
 
   return (
-    <RoomFeatures
+    <RoomsFeatures
       items={items.map((items) => ({
         ...items,
-        title: t(items.title),
-        text: { label: t(String(String(items.text.label))) },
+        heading: t(items.heading),
+        text: t(String(String(items.text))),
         links: items.links?.map((link) => ({
           ...link,
           label: t(String(link.label)),

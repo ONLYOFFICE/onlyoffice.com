@@ -1,12 +1,12 @@
 import {
-  StyledCardText,
-  StyledCardTitle,
   StyledTeamworkCard,
+  StyledTeamworkCardHeading,
+  StyledTeamworkCardText,
 } from "./TeamworkCard.styled";
 import { ITeamworkCard } from "./TeamworkCard.types";
 
 const TeamworkCard = ({
-  title,
+  heading,
   text,
   image,
   color,
@@ -15,8 +15,13 @@ const TeamworkCard = ({
 }: ITeamworkCard) => {
   return (
     <StyledTeamworkCard $bgColor={bgColor} $borderColor={borderColor}>
-      <StyledCardTitle $image={image} $color={color} level={3} label={title} />
-      <StyledCardText $color={color} label={text} />
+      <StyledTeamworkCardHeading
+        $image={image}
+        $color={color}
+        level={3}
+        label={heading}
+      />
+      <StyledTeamworkCardText $color={color} label={text} />
     </StyledTeamworkCard>
   );
 };
