@@ -10,6 +10,7 @@ const StyledHero = styled(Section) <{ $imgUrl?: string }>`
   background-repeat: no-repeat;
   background-position: center 90px;
   background-size: 1040px;
+  background-color: #F9F9F9;
 
   .container {
     margin: auto;

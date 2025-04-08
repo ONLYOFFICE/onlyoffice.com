@@ -3,28 +3,15 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
+import { LazyBackgroundImage } from "@src/components/ui/LazyBackgroundImage";
 
-const StyledMoreLink = styled(Link)<{ $imageUrl?: string }>`
+const StyledMoreLink = styled(Link)`
   position: relative;
   display: block;
   padding: 210px 0 0;
   font-size: 14px;
   color: ${props => props.color === "main" ? "#FF6F3D" : "#333333"};
   text-decoration: underline;
-
-  &::before {    
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    display: block;
-    width: 380px;
-    height: 190px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 380px 190px;
-    background-image: ${props => props.$imageUrl ? `url(${props.$imageUrl})` : 'url(/images/templates/events/play-icon.svg)'};    
-  }
 
   &:hover {
     text-decoration: none;
@@ -37,6 +24,19 @@ const StyledMoreLink = styled(Link)<{ $imageUrl?: string }>`
       width: 100%;
       height: 50vw;
     }
+  }
+`;
+const StyledEventImage = styled(LazyBackgroundImage)<{ $imageUrl?: string }>`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 190px;
+
+  @media ${device.tablet} {
+    width: 100%;
+    height: 50vw;
+    background-size: 100% auto;
   }
 `;
 
@@ -58,7 +58,6 @@ const StyledPastEventsWrapper = styled.div`
 
 const StyledPastEventsTitle = styled.div`
   font-size: 12px;
-  text-transform: uppercase;
   font-weight: 600;   
   line-height: 133%;
   text-transform: uppercase;
@@ -127,8 +126,9 @@ const StyledPastLink = styled.div`
   }
 `;
 
-export {
-  StyledPastEvents,
+
+export { 
+  StyledPastEvents, 
   StyledMoreLink,
   StyledPastEventsWrapper,
   StyledPastEventsTitle,
@@ -137,5 +137,6 @@ export {
   StyledEventTitle,
   StyledEventDate,
   StyledEventPlace,
-  StyledPastLink
+  StyledPastLink,
+  StyledEventImage
 };

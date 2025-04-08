@@ -78,6 +78,8 @@ const StyledEventPlace = styled.div`
   margin: 0 0 20px;
 `;
 
+
+
 const StyledEventDescription = styled.div`
   line-height: 1.6em;
   font-size: 14px;

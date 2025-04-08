@@ -10,10 +10,10 @@ import {
   StyledEventTitle,
   StyledEventDate,
   StyledEventPlace,
+  StyledEventImage,
   StyledPastLink
 } from "./PastEvents.styled";
 import { IPastEvents } from "./types";
-import { IEvent } from "../../types";
 
 const getMonthKey = (date: Date): string => {
   const months = [
@@ -124,9 +124,12 @@ const PastEvents = ({ events }: IPastEvents) => {
                     href={event.pastlink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    $imageUrl={event.image?.[0]?.url}
                     color="main"
                   >
+                    <StyledEventImage
+                      imageUrl={event.image?.[0]?.url}
+                      placeholder="/images/templates/events/play-icon.svg"
+                    />
                     {t("events:moreInfo")}
                   </StyledMoreLink>
                 </StyledPastLink>
