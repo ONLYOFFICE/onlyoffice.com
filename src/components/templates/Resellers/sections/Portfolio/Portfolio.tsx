@@ -1,8 +1,11 @@
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
-import { StyledPortfolio, StyledPortfolioText } from "./Portfolio.styled";
+import {
+  StyledPortfolio,
+  StyledPortfolioHeading,
+  StyledPortfolioText,
+} from "./Portfolio.styled";
 import { portfolio } from "./data/items";
 import { Product } from "./sub-components/Product";
 
@@ -12,7 +15,7 @@ const Portfolio = () => {
   return (
     <Section tabletSmallSpacing={["80px", "0"]} mobileSpacing={["48px", "0"]}>
       <Container>
-        <Heading
+        <StyledPortfolioHeading
           label={t("PortfolioTitle")}
           level={2}
           size={3}

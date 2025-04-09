@@ -43,10 +43,9 @@ const StyledPortfolioContent = styled.div`
   }
 
   p {
-    line-height: 150%;
-
     @media ${device.mobile} {
       font-size: 13px;
+      line-height: 19.5px;
     }
   }
 
