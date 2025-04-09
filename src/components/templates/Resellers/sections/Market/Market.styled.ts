@@ -66,7 +66,7 @@ const StyledOOLanguages = styled.div`
   }
 `;
 
-const StyledOOLanguage = styled(Text)<{
+const StyledOOLanguage = styled.span<{
   $positionX: string;
   $positionY: string;
   $mobPositionX: string;
@@ -103,11 +103,11 @@ const StyledOOLanguage = styled(Text)<{
   }
 
   @media ${device.tabletS} {
-    font-size: 13px;
     padding-left: 46px;
   }
 
   @media ${device.mobile} {
+    font-size: 13px;
     padding-left: 42px;
   }
 `;

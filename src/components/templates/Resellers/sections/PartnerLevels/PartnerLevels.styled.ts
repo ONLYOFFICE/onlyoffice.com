@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
+import { Heading } from "@src/components/ui/Heading";
+
+const StyledPartnerLevelsHeading = styled(Heading)`
+  max-width: 737px;
+  margin: 0 auto;
+`;
 
 const StyledPartnerLevelsText = styled(Text)`
   padding: 24px 0 32px;
@@ -173,6 +179,7 @@ const StyledSupportLevelsIcon = styled.span<{ $icon: string }>`
 `;
 
 export {
+  StyledPartnerLevelsHeading,
   StyledPartnerLevelsText,
   StyledSupportLevelsTable,
   StyledSupportLevelsIcon,

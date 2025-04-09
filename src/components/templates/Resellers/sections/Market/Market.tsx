@@ -65,12 +65,13 @@ const Market = () => {
               ) => (
                 <StyledOOLanguage
                   key={index}
-                  label={t(country)}
                   $positionX={positionX}
                   $positionY={positionY}
                   $mobPositionX={mobPositionX}
                   $mobPositionY={mobPositionY}
-                />
+                >
+                  {t(country)}
+                </StyledOOLanguage>
               ),
             )}
           </StyledOOLanguages>
