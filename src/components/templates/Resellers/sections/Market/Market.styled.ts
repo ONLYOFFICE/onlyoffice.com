@@ -1,7 +1,12 @@
+import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
+
+const StyledMarketContainer = styled(Container)`
+  max-width: 1277px;
+`;
 
 const StyledMarketWrapper = styled.div`
   text-align: center;
@@ -123,6 +128,7 @@ const StyledOOLanguageText = styled(Text)`
 `;
 
 export {
+  StyledMarketContainer,
   StyledMarketWrapper,
   StyledMarketSubTitle,
   StyledMarketText,
