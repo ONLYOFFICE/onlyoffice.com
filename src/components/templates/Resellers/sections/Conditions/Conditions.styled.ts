@@ -10,6 +10,16 @@ const StyledConditions = styled.div`
   @media ${device.mobile} {
     grid-template-columns: 1fr;
     padding-top: 32px;
+
+    > div {
+      padding: 0 0 0 64px;
+
+      &::before {
+        width: 48px;
+        height: 48px;
+        background-size: auto 48px;
+      }
+    }
   }
 `;
 

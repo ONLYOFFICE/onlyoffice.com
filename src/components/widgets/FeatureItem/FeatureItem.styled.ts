@@ -7,6 +7,7 @@ const StyledFeatureItem = styled.div<{
   $icon: IFeatureItem["icon"]["url"];
   $iconPositionX: IFeatureItem["icon"]["positionX"];
   $iconPositionY: IFeatureItem["icon"]["positionY"];
+  $mobilePositionX: IFeatureItem["icon"]["mobilePositionX"];
 }>`
   position: relative;
   display: grid;
@@ -46,6 +47,11 @@ const StyledFeatureItem = styled.div<{
             left: 50%;
             transform: translateX(-50%);
           `}
+
+    @media ${device.mobile} {
+      background-position-x: ${({ $mobilePositionX, $iconPositionX }) =>
+        $mobilePositionX || $iconPositionX};
+    }
   }
 
   @media ${device.mobile} {

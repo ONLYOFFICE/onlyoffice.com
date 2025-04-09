@@ -29,7 +29,7 @@ const StyledPortfolioContent = styled.div`
   display: grid;
   gap: 24px;
 
-  h4 {
+  h3 {
     line-height: 133%;
     letter-spacing: -0.01em;
 
@@ -45,7 +45,7 @@ const StyledPortfolioContent = styled.div`
   p {
     @media ${device.mobile} {
       font-size: 13px;
-      line-height: 19.5px;
+      line-height: 20px;
     }
   }
 

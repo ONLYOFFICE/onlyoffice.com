@@ -15,6 +15,7 @@ const FeatureItem = ({
       $icon={icon.url}
       $iconPositionX={icon.positionX}
       $iconPositionY={icon.positionY}
+      $mobilePositionX={icon.mobilePositionX}
     >
       {heading && (
         <Heading level={5} size={5}>

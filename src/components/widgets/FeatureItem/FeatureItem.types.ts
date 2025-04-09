@@ -13,6 +13,8 @@ export interface IFeatureItem {
     positionX?: string;
     /** Vertical positioning of the icon. Default: "center". */
     positionY?: string;
+    /** Horizontal mobile positioning of the icon. Default: "0px". */
+    mobilePositionX?: string;
   };
   /** The heading. */
   heading?: string;
