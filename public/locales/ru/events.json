@@ -1,0 +1,29 @@
+{
+  "PageTitle": "События",
+  "PageTitleOG": "События, в которых мы участвовали",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> участвует в интересных событиях по всему миру",
+  "CurrentEvents": "Встречайте ONLYOFFICE на одном из событий в 2025 году",
+  "PastEvents": "Читайте о событиях, в которых участвовал ONLYOFFICE",
+  "MoreInfo": "Подробнее",
+  "ScheduleMeeting": "Запланировать встречу",
+  "dateTemplates": {
+    "singleDay": "{{day}} {{month}} {{year}} года",
+    "sameMonth": "{{dayStart}}–{{dayEnd}} {{month}} {{year}} года",
+    "differentMonths": "{{dayStart}} {{monthStart}} – {{dayEnd}} {{monthEnd}} {{year}} года",
+    "differentYears": "{{dayStart}} {{monthStart}} {{yearStart}} года – {{dayEnd}} {{monthEnd}} {{year}} года"
+  },
+  "months": {
+    "January": "января",
+    "February": "февраля",
+    "March": "марта",
+    "April": "апреля",
+    "May": "мая",
+    "June": "июня",
+    "July": "июля",
+    "August": "августа",
+    "September": "сентября",
+    "October": "октября",
+    "November": "ноября",
+    "December": "декабря"
+  }
+}
