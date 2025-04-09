@@ -77,7 +77,7 @@ const StyledHeroImage = styled.div`
 
   @media ${device.tabletS} {
     width: 480px;
-    height: 348px;
+    height: 322px;
     margin: 0 auto;
     padding-bottom: 0;
   }
