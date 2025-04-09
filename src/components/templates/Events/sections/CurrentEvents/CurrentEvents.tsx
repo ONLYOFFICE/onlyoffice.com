@@ -1,157 +1,48 @@
-import { useTranslation, TFunction } from "next-i18next";
-import { Text } from "@src/components/ui/Text";
-import parse from 'html-react-parser';
+import { useTranslation } from "next-i18next";
 import {
-  StyledCurrentEvents,
-  StyledEventsWrapper,
-  StyledUpcomingHeading,
-  StyledUpcomingEvents,
-  StyledEventBlock,
-  StyledEventTitle,
-  StyledEventDate,
-  StyledEventPlace,
-  StyledEventDescription,
-  StyledEventLinks,
-  StyledEventLink,
-  StyledPastLink
+  StyledCurrentEventsHeading,
+  StyledCurrentEventsItems,
 } from "./CurrentEvents.styled";
-import { ICurrentEvents } from "./types";
+import { IEvents } from "../../Events.types";
+import { Section } from "@src/components/ui/Section";
+import { Container } from "@src/components/ui/Container";
+import { Event } from "./sub-components/Event";
 
-const getMonthKey = (date: Date): string => {
-  const months = [
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December'
-  ];
-  return months[date.getMonth()];
-};
-
-const formatEventDate = (startDate: string, t: TFunction, endDate?: string) => {
-  const start = new Date(startDate);
-  const end = endDate ? new Date(endDate) : null;
-
-  const month = t(`events:months.${getMonthKey(start)}`);
-  const startDay = start.getDate();
-  const year = start.getFullYear();
-
-  if (!end) {
-    return t("events:dateTemplates.singleDay", {
-      day: startDay,
-      month: month,
-      year: year
-    });
-  }
-
-  const endMonth = t(`events:months.${getMonthKey(end)}`);
-  const endDay = end.getDate();
-  const endYear = end.getFullYear();
-
-  if (year !== endYear) {
-    return t("events:dateTemplates.differentYears", {
-      dayStart: startDay,
-      monthStart: month,
-      yearStart: year,
-      dayEnd: endDay,
-      monthEnd: endMonth,
-      year: endYear
-    });
-  }
-
-  if (start.getMonth() !== end.getMonth()) {
-    return t("events:dateTemplates.differentMonths", {
-      dayStart: startDay,
-      monthStart: month,
-      dayEnd: endDay,
-      monthEnd: endMonth,
-      year: year
-    });
-  }
-
-  return t("events:dateTemplates.sameMonth", {
-    dayStart: startDay,
-    dayEnd: endDay,
-    month: month,
-    year: year
-  });
-};
-
-const CurrentEvents = ({ events }: ICurrentEvents) => {
-  const { t } = useTranslation(["events", "months"]);
-
-  if (!events) {
-    return (
-      <StyledCurrentEvents>
-        <Text label={t("events:noEvents")} color="main" />
-      </StyledCurrentEvents>
-    );
-  }
-
-  const currentEvents = events.filter(event => {
-    if (!event.end_date) return true;
-    const endDate = new Date(event.end_date);
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    return endDate >= today;
-  });
-
-  if (currentEvents.length === 0) {
-    return (
-      <StyledCurrentEvents>
-        <Text label={t("events:noEvents")} color="main" />
-      </StyledCurrentEvents>
-    );
-  }
+const CurrentEvents = ({ events }: IEvents) => {
+  const { t } = useTranslation("events");
 
   return (
-    <StyledCurrentEvents>
-      <StyledEventsWrapper>
-        <StyledUpcomingHeading>
-          <Text label={t("events:currentEvents")} color="#FF6F3D" />
-        </StyledUpcomingHeading>
-        <StyledUpcomingEvents>
-          {currentEvents.map((event) => (
-            <StyledEventBlock key={event.id}>
-              <StyledEventTitle
-                level={2}
-                label={event.name}
-              />
-              <StyledEventDate>
-                {formatEventDate(event.start_date, t, event.end_date)}
-                {event.start_time && ` ${event.start_time}`}
-                {event.end_time && ` ${event.end_time}`}
-              </StyledEventDate>
-              <StyledEventPlace>{event.place}</StyledEventPlace>
+    <Section
+      desktopSpacing={["80px", "112px"]}
+      mobileSpacing={["72px", "72px"]}
+    >
+      <Container maxWidth="1008px">
+        <StyledCurrentEventsHeading
+          level={2}
+          label={t("CurrentEvents")}
+          color="main"
+          textTransform="uppercase"
+        />
 
-              {event.description && (
-                <StyledEventDescription
-                  style={{ backgroundImage: `url(${event.image[0].url})` }}
-                >
-                  {parse(event.description)}
-                </StyledEventDescription>
-              )}
-              <StyledEventLinks>
-                {event.link && (
-                  <StyledEventLink
-                    href={event.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {t("events:moreInfo")}
-                  </StyledEventLink>
-                )}
-                {event.pastlink && (
-                  <StyledPastLink
-                    href={event.pastlink}
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    {t("events:scheduleMeeting")}
-                  </StyledPastLink>
-                )}
-              </StyledEventLinks>
-            </StyledEventBlock>
+        <StyledCurrentEventsItems>
+          {events.upcoming.data.map((event) => (
+            <Event
+              key={event.id}
+              id={event.id}
+              name={event.name}
+              start_date={event.start_date}
+              end_date={event.end_date}
+              place={event.place}
+              description={event.description}
+              link={event.link}
+              pastlink={event.pastlink}
+              image={event.image}
+              image_2X={event.image_2X}
+            />
           ))}
-        </StyledUpcomingEvents>
-      </StyledEventsWrapper>
-    </StyledCurrentEvents>
+        </StyledCurrentEventsItems>
+      </Container>
+    </Section>
   );
 };
 

@@ -1,142 +1,28 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Section } from "@src/components/ui/Section";
-import { Heading } from "@src/components/ui/Heading";
-import { Link } from "@src/components/ui/Link";
-import { LazyBackgroundImage } from "@src/components/ui/LazyBackgroundImage";
+import { Text } from "@src/components/ui/Text";
 
-const StyledMoreLink = styled(Link)`
-  position: relative;
-  display: block;
-  padding: 210px 0 0;
-  font-size: 14px;
-  color: ${props => props.color === "main" ? "#FF6F3D" : "#333333"};
-  text-decoration: underline;
-
-  &:hover {
-    text-decoration: none;
-  }
-  
-  @media ${device.tablet} {
-    padding-top: 50vw;
-    &::before {
-      background-size: 100% auto;
-      width: 100%;
-      height: 50vw;
-    }
-  }
-`;
-const StyledEventImage = styled(LazyBackgroundImage)<{ $imageUrl?: string }>`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 380px;
-  height: 190px;
-
-  @media ${device.tablet} {
-    width: 100%;
-    height: 50vw;
-    background-size: 100% auto;
-  }
-`;
-
-const StyledPastEvents = styled(Section)`  
-  padding: 80px 0;
-  width: 100%;
-  margin: auto;
-  background-color: #F9F9F9;
-`;
-
-const StyledPastEventsWrapper = styled.div`
-  width: 1120px;
-  margin: auto;
-  
-  @media ${device.desktop} {
-    width: calc(100% - 10vw);
-  }
-`;
-
-const StyledPastEventsTitle = styled.div`
+const StyledPastEventsHeading = styled(Text)`
+  margin-bottom: 32px;
   font-size: 12px;
-  font-weight: 600;   
-  line-height: 133%;
-  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 15px;
   letter-spacing: 0.08em;
 `;
 
 const StyledPastEventsList = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 380px);
-  padding: 40px 0 0;
-  gap: 50px 100px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px 100px;
 
-  @media ${device.tablet} {
-    grid-template-columns: 1fr;
+  @media ${device.tabletS} {
+    gap: 64px 32px;
+  }
+
+  @media ${device.mobile} {
+    grid-template-columns: initial;
+    gap: 56px;
   }
 `;
 
-const StyledEventBlock = styled.div`
-  width: 380px;
-
-  @media ${device.tablet} {
-    width: 100%;
-  }
-`;
-
-const StyledEventTitle = styled(Heading)`
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.3em;
-  margin: 0;
-  padding: 0 0 5px;
-  height: 52px;
-  display: table-cell;
-  vertical-align: bottom;
-`;
-
-const StyledEventDate = styled.div`
-  font-size: 13px;
-  color: #808080;
-  padding: 0 0 0 25px;
-  margin: 10px 0;
-  min-height: 16px;
-  line-height: 16px;
-  background: url("/images/templates/events/СurrentEvents/time-01.png") 0 50% no-repeat;
-`;
-
-const StyledEventPlace = styled.div`
-  font-size: 13px;
-  color: #333333;
-  padding: 0;
-  margin: 0 0 20px;
-`;
-
-const StyledPastLink = styled.div`
-  .emt_more_link {
-    color: #FF6F3D;
-    font-size: 14px;
-    line-height: 133%;
-    cursor: pointer;
-    margin-right: 35px;
-    text-decoration: underline;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-`;
-
-
-export { 
-  StyledPastEvents, 
-  StyledMoreLink,
-  StyledPastEventsWrapper,
-  StyledPastEventsTitle,
-  StyledPastEventsList,
-  StyledEventBlock,
-  StyledEventTitle,
-  StyledEventDate,
-  StyledEventPlace,
-  StyledPastLink,
-  StyledEventImage
-};
+export { StyledPastEventsHeading, StyledPastEventsList };

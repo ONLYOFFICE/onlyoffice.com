@@ -1,9 +1,9 @@
 import { Hero } from "./sections/Hero";
 import { CurrentEvents } from "./sections/CurrentEvents";
 import { PastEvents } from "./sections/PastEvents";
-import { IEventsTemplate } from "./types";
+import { IEvents } from "./Events.types";
 
-const EventsTemplate = ({ events }: IEventsTemplate) => {
+const EventsTemplate = ({ events }: IEvents) => {
   return (
     <>
       <Hero />

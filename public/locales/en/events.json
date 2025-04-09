@@ -1,15 +1,13 @@
 {
-  "noEvents": "No events",
-  "pageTitle": "Events",
-  "pageDescription": "Read about the events around the world ONLYOFFICE participated or will participate in.",
-  "pageTitleOG": "Events we attended",
+  "PageTitle": "ONLYOFFICE events",
+  "PageDescription": "Read about the events around the world ONLYOFFICE participated or will participate in.",
+  "PageTitleOG": "Events we have participated in",
+
   "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> attends interesting events around the world",
-  "currentEvents": "Meet ONLYOFFICE at one of the events in 2025",
-  "pastEvents": "Read about the events ONLYOFFICE participated in",
-  "moreInfo": "More info",
-  "pastEventRecording": "Past event recording",
-  "scheduleMeeting": "Schedule meeting",
-  "noPastEvents": "No past events",
+  "CurrentEvents": "Meet ONLYOFFICE at one of the events in 2025",
+  "PastEvents": "Read about the events ONLYOFFICE participated in",
+  "MoreInfo": "More info",
+  "ScheduleMeeting": "Schedule meeting",
   "dateTemplates": {
     "singleDay": "{{month}} {{day}}, {{year}}",
     "sameMonth": "{{month}} {{dayStart}}–{{dayEnd}}, {{year}}",

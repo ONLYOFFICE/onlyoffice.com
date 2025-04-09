@@ -1,4 +1,4 @@
-export interface IEventImage {
+interface IEventImage {
   id: number;
   url: string;
 }
@@ -8,8 +8,6 @@ export interface IEvent {
   name: string;
   start_date: string;
   end_date: string;
-  start_time: string | null;
-  end_time: string | null;
   place: string;
   description: string;
   link: string;
@@ -18,6 +16,6 @@ export interface IEvent {
   image_2X: IEventImage[];
 }
 
-export interface IEventsTemplate {
-  events: IEvent[] | null;
+export interface IEvents {
+  events: { upcoming: { data: IEvent[] }; past: { data: IEvent[] } };
 }
