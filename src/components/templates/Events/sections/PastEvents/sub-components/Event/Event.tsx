@@ -17,7 +17,7 @@ const Event = ({
   link,
   image,
   image_2X,
-}: Omit<IEvent, "id" | "description" | "pastlink">) => {
+}: Omit<IEvent, "id" | "description">) => {
   const { t } = useTranslation("events");
 
   return (

@@ -11,7 +11,6 @@ export interface IEvent {
   place: string;
   description: string;
   link: string;
-  pastlink: string;
   image: IEventImage[];
   image_2X: IEventImage[];
 }

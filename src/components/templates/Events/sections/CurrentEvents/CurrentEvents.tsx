@@ -35,7 +35,6 @@ const CurrentEvents = ({ events }: IEvents) => {
               place={event.place}
               description={event.description}
               link={event.link}
-              pastlink={event.pastlink}
               image={event.image}
               image_2X={event.image_2X}
             />

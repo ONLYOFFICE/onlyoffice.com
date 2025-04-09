@@ -13,7 +13,6 @@ export const getEvents = async (locale: string) => {
     &fields=place
     &fields=description
     &fields=link
-    &fields=pastlink
     &populate[image][fields]=url
     &populate[image_2X][fields]=url
     &filters[$or][0][end_date][$gte]=${currentDateISO}

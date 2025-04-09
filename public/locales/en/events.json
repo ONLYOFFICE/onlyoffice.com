@@ -8,6 +8,7 @@
   "PastEvents": "Read about the events ONLYOFFICE participated in",
   "MoreInfo": "More info",
   "ScheduleMeeting": "Schedule meeting",
+  "Schedule%20meeting%20at%20": "Schedule%20meeting%20at%20",
   "dateTemplates": {
     "singleDay": "{{month}} {{day}}, {{year}}",
     "sameMonth": "{{month}} {{dayStart}}–{{dayEnd}}, {{year}}",

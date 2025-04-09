@@ -19,7 +19,6 @@ const Event = ({
   place,
   description,
   link,
-  pastlink,
   image,
   image_2X,
 }: IEvent) => {
@@ -46,7 +45,9 @@ const Event = ({
         </StyledEventLink>
         <StyledEventLink
           color="main"
-          href={pastlink}
+          href={`mailto:webinars@onlyoffice.com?subject=${t(
+            "Schedule%20meeting%20at%20",
+          )}${encodeURIComponent(name)}`}
           textUnderline
           hover="underline-none"
         >
