@@ -9,7 +9,6 @@ import {
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
-import { hero } from "./data/hero";
 
 const Hero = () => {
   const { t } = useTranslation("resellers");
@@ -22,29 +21,25 @@ const Hero = () => {
       mobileSpacing={["96px", "48px"]}
       background="#F9F9F9"
     >
-      <Container>
+      <Container maxWidth="1277px">
         <StyledHeroWrapper>
           <StyledHeroContent>
             <Heading size={2}>
               <Trans
                 t={t}
-                i18nKey={String(hero.title)}
+                i18nKey={"HeroTitle"}
                 components={[<Text as="span" color="#FF6F3D" key="0" />]}
               />
             </Heading>
-            <Text label={t(hero.text)} />
+            <Text label={t("HeroText")} />
             <Button
-              id={hero.button.id}
+              id="hero-become-partner"
               as="a"
-              href={hero.button.href}
-              label={t(hero.button.label)}
+              href="/partnership-request?requestType=0&from=resellers"
+              label={t("BecomePartner")}
             />
           </StyledHeroContent>
-          <StyledHeroImage
-            $imgUrl={hero.imgUrl}
-            $imgHeight={hero.imgHeight}
-            $imgWidth={hero.imgWidth}
-          />
+          <StyledHeroImage />
         </StyledHeroWrapper>
       </Container>
     </StyledHero>
