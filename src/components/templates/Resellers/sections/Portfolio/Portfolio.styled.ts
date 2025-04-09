@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
+import { Heading } from "@src/components/ui/Heading";
+
+const StyledPortfolioHeading = styled(Heading)`
+  max-width: 736px;
+  margin: 0 auto;
+`;
 
 const StyledPortfolioText = styled(Text)`
   max-width: 736px;
@@ -33,4 +39,4 @@ const StyledPortfolio = styled.div`
   }
 `;
 
-export { StyledPortfolioText, StyledPortfolio };
+export { StyledPortfolioHeading, StyledPortfolioText, StyledPortfolio };

@@ -69,22 +69,15 @@ const StyledHeroContent = styled.div`
   }
 `;
 
-const StyledHeroImage = styled.div<{
-  $imgUrl: string;
-  $imgWidth: number;
-  $imgHeight: number;
-}>`
-  padding-bottom: ${({ $imgHeight, $imgWidth }) =>
-    $imgHeight && $imgWidth
-      ? (($imgHeight / $imgWidth) * 100).toFixed(4) + "%"
-      : "0%"};
-  background-image: url(${({ $imgUrl }) => $imgUrl});
+const StyledHeroImage = styled.div`
+  padding-bottom: 75%;
+  background-image: url("/images/templates/resellers/hero/hero-image.svg");
   background-repeat: no-repeat;
   background-size: contain;
 
   @media ${device.tabletS} {
     width: 480px;
-    height: 348px;
+    height: 322px;
     margin: 0 auto;
     padding-bottom: 0;
   }

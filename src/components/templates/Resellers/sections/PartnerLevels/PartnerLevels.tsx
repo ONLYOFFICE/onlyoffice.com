@@ -1,8 +1,8 @@
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 import {
+  StyledPartnerLevelsHeading,
   StyledPartnerLevelsText,
   StyledSupportLevelsIcon,
   StyledSupportLevelsTable,
@@ -16,7 +16,7 @@ const PartnerLevels = () => {
   return (
     <Section tabletSmallSpacing={["88px", "88px"]}>
       <Container>
-        <Heading
+        <StyledPartnerLevelsHeading
           label={t("PartnerLevelsTitle")}
           level={2}
           size={3}

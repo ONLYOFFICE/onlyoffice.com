@@ -29,7 +29,12 @@ const ReadyToShip = () => {
             </Heading>
             <Text label={t("SubmitYourPartnership")} size={2} />
           </StyledReadyToShipContent>
-          <Button label={t("SubmitRequest")} variant="tertiary" />
+          <Button
+            label={t("SubmitRequest")}
+            as="a"
+            href="/partnership-request?requestType=0&from=resellers"
+            variant="tertiary"
+          />
           <Text size={3} textAlign="center">
             <Trans
               t={t}
