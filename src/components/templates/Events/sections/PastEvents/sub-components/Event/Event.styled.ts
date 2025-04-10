@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
@@ -44,21 +44,12 @@ const StyledEventPlace = styled.div`
   }
 `;
 
-const StyledEventImg = styled(Link)<{ $imgUrl: string; $img2xUrl: string }>`
+const StyledEventImg = styled(Link)`
   display: block;
   margin-bottom: 24px;
   padding-bottom: 50.134%;
-  background-image: url(${(props) => props.$imgUrl});
   background-repeat: no-repeat;
   background-size: contain;
-
-  ${(props) =>
-    props.$img2xUrl &&
-    css`
-      @media ${device.retina} {
-        background-image: url(${props.$img2xUrl});
-      }
-    `}
 
   @media ${device.tabletS} {
     margin-bottom: 16px;

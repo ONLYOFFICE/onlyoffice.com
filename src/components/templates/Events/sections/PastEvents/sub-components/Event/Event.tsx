@@ -16,8 +16,7 @@ const Event = ({
   place,
   link,
   image,
-  image_2X,
-}: Omit<IEvent, "id" | "description">) => {
+}: Omit<IEvent, "id" | "description" | "image_2X">) => {
   const { t } = useTranslation("events");
 
   return (
@@ -28,11 +27,10 @@ const Event = ({
       </StyledEventDate>
       <StyledEventPlace>{place}</StyledEventPlace>
       <StyledEventImg
+        style={{ backgroundImage: `url(${image[0].url})` }}
         href={link}
         target="_blank"
         tabIndex={-1}
-        $imgUrl={image[0].url}
-        $img2xUrl={image_2X[0].url}
       />
       <StyledEventLink
         href={link}

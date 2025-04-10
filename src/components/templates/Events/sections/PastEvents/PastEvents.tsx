@@ -34,7 +34,6 @@ const PastEvents = ({ events }: IEvents) => {
               place={event.place}
               link={event.link}
               image={event.image}
-              image_2X={event.image_2X}
             />
           ))}
         </StyledPastEventsList>
