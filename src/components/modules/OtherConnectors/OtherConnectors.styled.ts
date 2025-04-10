@@ -117,8 +117,9 @@ const StyledOtherConnectorsButton = styled(Button)<{
   $active?: boolean;
   $disabled?: boolean;
 }>`
-  padding: 11px 18px;
+  padding: 10px 18px;
   font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   text-transform: initial;
 

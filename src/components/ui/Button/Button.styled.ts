@@ -17,7 +17,6 @@ const StyledButton = styled.button<{
   line-height: 18px;
   letter-spacing: 0.04em;
   width: ${(props) => props.$fullWidth && "100%"};
-  min-height: 56px;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
