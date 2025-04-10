@@ -49,6 +49,11 @@ const StyledBlogCardWrapper = styled.div<{ $isLarge: IBlogCard["isLarge"] }>`
 
     a {
       display: block;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #ff6f3d;
+      }
     }
   }
 

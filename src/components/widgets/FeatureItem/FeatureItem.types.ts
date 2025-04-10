@@ -15,6 +15,8 @@ export interface IFeatureItem {
     positionY?: string;
     /** Horizontal mobile positioning of the icon. Default: "0px". */
     mobilePositionX?: string;
+    /** The mobile variant position. Default: "vertical". */
+    mobileHorizontalVariant?: "horizontal" | "vertical";
   };
   /** The heading. */
   heading?: string;

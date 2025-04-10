@@ -1,20 +1,20 @@
-import { Heading } from "@src/components/ui/Heading";
 import {
+  StyledPortfolio,
   StyledPortfolioContent,
+  StyledPortfolioHeading,
+  StyledPortfolioText,
+  StyledPortfolioLink,
   StyledPortfolioImage,
-  StyledPortfolioWrapper,
 } from "./Product.styled";
-import { Text } from "@src/components/ui/Text";
-import { IPortfolio } from "../../Portfolio.types";
-import { Link } from "@src/components/ui/Link";
+import { IProduct } from "./Product.types";
 
-const Product = ({ title, text, link, image }: IPortfolio) => {
+const Product = ({ title, text, link, image }: IProduct) => {
   return (
-    <StyledPortfolioWrapper>
+    <StyledPortfolio>
       <StyledPortfolioContent>
-        <Heading label={title} level={3} />
-        <Text label={text} size={3} />
-        <Link
+        <StyledPortfolioHeading label={title} level={3} />
+        <StyledPortfolioText label={text} size={3} />
+        <StyledPortfolioLink
           href={link.href}
           label={link.label}
           color="main"
@@ -28,7 +28,7 @@ const Product = ({ title, text, link, image }: IPortfolio) => {
         $imgWidth={image.imgWidth}
         $imgHeight={image.imgHeight}
       />
-    </StyledPortfolioWrapper>
+    </StyledPortfolio>
   );
 };
 

@@ -1,12 +1,13 @@
 import { Trans, useTranslation } from "next-i18next";
-import { Container } from "@src/components/ui/Container";
 import {
   StyledHero,
   StyledHeroWrapper,
   StyledHeroContent,
+  StyledHeroHeading,
+  StyledHeroText,
   StyledHeroImage,
 } from "./Hero.styled";
-import { Heading } from "@src/components/ui/Heading";
+import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 
@@ -24,14 +25,14 @@ const Hero = () => {
       <Container maxWidth="1277px">
         <StyledHeroWrapper>
           <StyledHeroContent>
-            <Heading size={2}>
+            <StyledHeroHeading size={2}>
               <Trans
                 t={t}
-                i18nKey={"HeroTitle"}
+                i18nKey="HeroTitle"
                 components={[<Text as="span" color="#FF6F3D" key="0" />]}
               />
-            </Heading>
-            <Text label={t("HeroText")} />
+            </StyledHeroHeading>
+            <StyledHeroText size={1} label={t("HeroText")} />
             <Button
               id="hero-become-partner"
               as="a"

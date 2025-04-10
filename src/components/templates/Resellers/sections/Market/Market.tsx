@@ -1,18 +1,20 @@
 import { Trans, useTranslation } from "next-i18next";
-import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
-import { Section } from "@src/components/ui/Section";
 import {
   StyledMarketWrapper,
-  StyledMarketSubTitle,
+  StyledMarketHeading,
+  StyledMarketSubHeading,
   StyledMarketText,
   StyledMarketImage,
-  StyledOOLanguages,
-  StyledOOLanguage,
-  StyledOOLanguageText,
+  StyledMarketLangugesWrapper,
+  StyledMarketLangugesText,
+  StyledMarketLanguagesList,
+  StyledMarketLanguagesItem,
 } from "./Market.styled";
-import { laguages } from "./data/items";
+import { Section } from "@src/components/ui/Section";
+import { Container } from "@src/components/ui/Container";
+import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
+import { languages } from "./data/items";
 
 const Market = () => {
   const { t } = useTranslation("resellers");
@@ -21,61 +23,51 @@ const Market = () => {
     <Section background="#f5f5f5" tabletSmallSpacing={["88px", "88px"]}>
       <Container>
         <StyledMarketWrapper>
-          <Heading label={t("LocalMarket")} level={2} size={3} />
-          <StyledMarketSubTitle
+          <StyledMarketHeading label={t("LocalMarket")} level={2} size={3} />
+          <StyledMarketSubHeading
             label={t("GetHelpPromotingOO")}
             level={4}
             size={5}
           />
-          <StyledMarketText label={t("CollaborateWithUs")} lineHeight="150%" />
+          <StyledMarketText size={2} label={t("CollaborateWithUs")} />
           <StyledMarketImage />
+        </StyledMarketWrapper>
 
-          <StyledMarketSubTitle
-            label={t("GetOOInYourLanguage")}
-            level={4}
-            size={5}
-          />
-          <StyledMarketText lineHeight="150%">
-            <Trans
-              t={t}
-              i18nKey={t("FullyTranslated")}
-              components={[
-                <Link
-                  href="https://helpcenter.onlyoffice.com/workspace/administration/available-languages.aspx"
-                  color="main"
-                  lineHeight="160%"
-                  textUnderline
-                  hover="underline-none"
-                  key="0"
-                />,
-              ]}
+        <div>
+          <StyledMarketLangugesWrapper>
+            <StyledMarketSubHeading
+              label={t("GetOOInYourLanguage")}
+              level={4}
+              size={5}
             />
-          </StyledMarketText>
-          <StyledOOLanguages>
-            {laguages.map(
-              (
-                {
-                  country,
-                  positionX = "0px",
-                  positionY = "0px",
-                  mobPositionX = "0px",
-                  mobPositionY = "0px",
-                },
-                index,
-              ) => (
-                <StyledOOLanguage
-                  key={index}
-                  $positionX={positionX}
-                  $positionY={positionY}
-                  $mobPositionX={mobPositionX}
-                  $mobPositionY={mobPositionY}
-                >
-                  {t(country)}
-                </StyledOOLanguage>
-              ),
-            )}
-          </StyledOOLanguages>
-          <StyledOOLanguageText lineHeight="150%">
+            <Text size={2} label={t("CollaborateWithUs")}>
+              <Trans
+                t={t}
+                i18nKey={t("FullyTranslated")}
+                components={[
+                  <Link
+                    href="https://helpcenter.onlyoffice.com/workspace/administration/available-languages.aspx"
+                    color="main"
+                    textUnderline
+                    hover="underline-none"
+                    key="0"
+                  />,
+                ]}
+              />
+            </Text>
+          </StyledMarketLangugesWrapper>
+
+          <StyledMarketLanguagesList>
+            {languages.map((item, index) => (
+              <li key={index}>
+                <StyledMarketLanguagesItem className={item.id}>
+                  {t(item.country)}
+                </StyledMarketLanguagesItem>
+              </li>
+            ))}
+          </StyledMarketLanguagesList>
+
+          <StyledMarketLangugesText size={3}>
             <Trans
               t={t}
               i18nKey={t("TheLanguageYouNeed")}
@@ -83,15 +75,14 @@ const Market = () => {
                 <Link
                   href="mailto:sales@onlyoffice.com"
                   color="main"
-                  lineHeight="160%"
                   textUnderline
                   hover="underline-none"
                   key="0"
                 />,
               ]}
             />
-          </StyledOOLanguageText>
-        </StyledMarketWrapper>
+          </StyledMarketLangugesText>
+        </div>
       </Container>
     </Section>
   );

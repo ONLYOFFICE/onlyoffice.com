@@ -1,39 +1,13 @@
 import styled from "styled-components";
-import { Section } from "@src/components/ui/Section";
-import { Container } from "@src/components/ui/Container";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 
-const StyledSection = styled(Section)`
-  padding: 0;
-  background-color: #f5f5f5;
-`;
-
-const StyledContainer = styled(Container)`
-  padding: 112px 40px;
-  border-top: 1px solid #e2e2e2;
-
-  @media ${device.tabletS} {
-    padding: 80px 40px 112px;
-  }
-
-  @media ${device.mobile} {
-    padding: 48px 16px 48px;
-  }
-`;
-
-const StyledBlogItems = styled.div`
+const StyledLearnMoreItems = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 32px;
 
   .blog-card {
-    transition: box-shadow 0.2s, hover 0.2s;
-
-    a:hover {
-      color: #ff6f3d;
-    }
-
     @media ${device.tablet} {
       max-width: 352px;
       min-width: 352px;
@@ -58,9 +32,10 @@ const StyledBlogItems = styled.div`
   }
 `;
 
-const StyledLogos = styled.div`
+const StyledLearnMoreLogos = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 0 16px;
   margin-top: 96px;
 
   @media ${device.tablet} {
@@ -68,6 +43,7 @@ const StyledLogos = styled.div`
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: 39px 32px;
+    padding: 0;
   }
 
   @media ${device.mobile} {
@@ -76,19 +52,30 @@ const StyledLogos = styled.div`
   }
 `;
 
-const StyledLogo = styled(Link)<{ $width: string; $position: string }>`
-  display: block;
-  width: ${({ $width }) => $width};
+const StyledLearnMoreLogo = styled(Link)`
   height: 110px;
-  background-image: url("/images/templates/resellers/blogs/logos.jpg");
+  background-image: url("/images/templates/resellers/learn-more/logos.jpg");
   background-repeat: no-repeat;
-  background-position-x: ${({ $position }) => $position};
+
+  &.converged-open-systems {
+    width: 110px;
+    background-position-x: -24px;
+  }
+
+  &.edissyum {
+    width: 220px;
+    background-position-x: -240px;
+  }
+
+  &.shanghai-xuanyi {
+    width: 220px;
+    background-position-x: -556px;
+  }
+
+  &.kayreach-system {
+    width: 220px;
+    background-position-x: -877px;
+  }
 `;
 
-export {
-  StyledSection,
-  StyledContainer,
-  StyledBlogItems,
-  StyledLogos,
-  StyledLogo,
-};
+export { StyledLearnMoreItems, StyledLearnMoreLogos, StyledLearnMoreLogo };

@@ -1,8 +1,10 @@
-import { device } from "@src/utils/device";
 import styled from "styled-components";
+import { device } from "@src/utils/device";
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
+import { Link } from "@src/components/ui/Link";
 
-const StyledPortfolioWrapper = styled.div`
-  width: 100%;
+const StyledPortfolio = styled.div`
   background-color: #f9f9f9;
   padding: 32px 0 0 56px;
   display: grid;
@@ -12,55 +14,56 @@ const StyledPortfolioWrapper = styled.div`
 
   @media ${device.tablet} {
     grid-template-columns: 280px auto;
+    padding: 24px 0 0 48px;
   }
 
   @media ${device.tabletS} {
     grid-template-columns: 1fr;
-    padding: 56px 32px 0 32px;
-  }
-
-  @media ${device.mobile} {
-    padding: 48px 0 0;
+    padding: 0;
   }
 `;
 
 const StyledPortfolioContent = styled.div`
-  padding: 20px 0 32px;
   display: grid;
   gap: 24px;
-
-  h3 {
-    line-height: 133%;
-    letter-spacing: -0.01em;
-
-    @media ${device.tabletS} {
-      font-size: 22px;
-    }
-
-    @media ${device.mobile} {
-      font-size: 16px;
-    }
-  }
-
-  p {
-    @media ${device.mobile} {
-      font-size: 13px;
-      line-height: 20px;
-    }
-  }
-
-  a {
-    font-size: 14px;
-    line-height: 160%;
-
-    @media ${device.mobile} {
-      font-size: 13px;
-    }
-  }
+  padding: 20px 0 32px;
 
   @media ${device.tabletS} {
-    padding: 0 16px;
+    padding: 56px 32px 0;
+  }
+
+  @media ${device.mobile} {
     gap: 16px;
+    padding: 48px 16px 0;
+  }
+`;
+
+const StyledPortfolioHeading = styled(Heading)`
+  @media ${device.tabletS} {
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  @media ${device.mobile} {
+    font-size: 16px;
+    line-height: 21px;
+  }
+`;
+
+const StyledPortfolioText = styled(Text)`
+  @media ${device.mobile} {
+    font-size: 13px;
+    line-height: 20px;
+  }
+`;
+
+const StyledPortfolioLink = styled(Link)`
+  font-size: 14px;
+  line-height: 22px;
+
+  @media ${device.mobile} {
+    font-size: 13px;
+    line-height: 20px;
   }
 `;
 
@@ -85,4 +88,11 @@ const StyledPortfolioImage = styled.div<{
   }
 `;
 
-export { StyledPortfolioWrapper, StyledPortfolioContent, StyledPortfolioImage };
+export {
+  StyledPortfolio,
+  StyledPortfolioContent,
+  StyledPortfolioHeading,
+  StyledPortfolioText,
+  StyledPortfolioLink,
+  StyledPortfolioImage,
+};

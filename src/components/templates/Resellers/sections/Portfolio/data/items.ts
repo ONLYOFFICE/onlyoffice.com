@@ -1,6 +1,6 @@
-import { IPortfolio } from "../Portfolio.types";
+import { IProduct } from "../sub-components/Product";
 
-export const portfolio: IPortfolio[] = [
+export const products: IProduct[] = [
   {
     title: "PortfolioDocSpaceTitle",
     text: "PortfolioDocSpaceText",

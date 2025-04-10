@@ -5,7 +5,7 @@ export const items: IFeatureItem[] = [
     icon: {
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "0",
-      mobilePositionX: "0px",
+      mobilePositionX: "0",
     },
     heading: "ResellerDiscount",
     text: "ResellerDiscountText",
@@ -14,7 +14,7 @@ export const items: IFeatureItem[] = [
     icon: {
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "-384px",
-      mobilePositionX: "-287px",
+      mobilePositionX: "-288px",
     },
     heading: "GetHelp",
     text: "GetHelpText",
@@ -23,7 +23,7 @@ export const items: IFeatureItem[] = [
     icon: {
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "-98px",
-      mobilePositionX: "-72px",
+      mobilePositionX: "-74px",
     },
     heading: "Startup",
     text: "StartupText",
@@ -68,7 +68,7 @@ export const items: IFeatureItem[] = [
     icon: {
       url: "/images/templates/resellers/conditions/resellers_conditions.svg",
       positionX: "-288px",
-      mobilePositionX: "-217px",
+      mobilePositionX: "-216px",
     },
     heading: "NFRLicense",
     text: "NFRLicenseText",

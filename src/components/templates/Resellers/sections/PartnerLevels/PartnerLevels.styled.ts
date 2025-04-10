@@ -1,15 +1,12 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Text } from "@src/components/ui/Text";
-import { Heading } from "@src/components/ui/Heading";
 
-const StyledPartnerLevelsHeading = styled(Heading)`
+const StyledPartnerLevelsHeader = styled.div`
+  display: grid;
+  row-gap: 24px;
+  margin: 0 auto 32px;
   max-width: 737px;
-  margin: 0 auto;
-`;
-
-const StyledPartnerLevelsText = styled(Text)`
-  padding: 24px 0 32px;
+  text-align: center;
 `;
 
 const StyledSupportLevelsTable = styled.table`
@@ -140,6 +137,7 @@ const StyledSupportLevelsTable = styled.table`
         flex: 0 1 100%;
         width: initial;
         text-align: center;
+        background-color: #f9f9f9;
       }
     }
 
@@ -179,8 +177,7 @@ const StyledSupportLevelsIcon = styled.span<{ $icon: string }>`
 `;
 
 export {
-  StyledPartnerLevelsHeading,
-  StyledPartnerLevelsText,
+  StyledPartnerLevelsHeader,
   StyledSupportLevelsTable,
   StyledSupportLevelsIcon,
 };

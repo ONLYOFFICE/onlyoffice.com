@@ -8,7 +8,6 @@ import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { ResellersTemplate } from "@src/components/templates/Resellers";
 
-
 const ResellersPage = ({ locale }: ILocale) => {
   const { t } = useTranslation("resellers");
 
@@ -36,10 +35,7 @@ const ResellersPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        "common",
-        "resellers",
-      ])),
+      ...(await serverSideTranslations(locale, ["common", "resellers"])),
       locale,
     },
   };

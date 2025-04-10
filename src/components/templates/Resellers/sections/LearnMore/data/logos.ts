@@ -1,26 +1,28 @@
-export const logos = [
+interface ILogo {
+  id: string;
+  title: string;
+  href: string;
+}
+
+export const logos: ILogo[] = [
   {
+    id: "converged-open-systems",
     title: "ConvergedOpenSystems",
     href: "ConvergedOpenSystemsLink",
-    width: "110px",
-    position: "-24px",
   },
   {
+    id: "edissyum",
     title: "Edissyum",
     href: "EdissyumLink",
-    width: "220px",
-    position: "-240px",
   },
   {
+    id: "shanghai-xuanyi",
     title: "ShanghaiXuanyiInformationTechnology",
     href: "ShanghaiXuanyiInformationTechnologyLink",
-    width: "220px",
-    position: "-556px",
   },
   {
+    id: "kayreach-system",
     title: "KayreachSystem",
     href: "KayreachSystemLink",
-    width: "220px",
-    position: "-877px",
   },
 ];

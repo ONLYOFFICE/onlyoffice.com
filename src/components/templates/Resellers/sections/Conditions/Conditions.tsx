@@ -1,10 +1,10 @@
+import { useTranslation } from "next-i18next";
+import { StyledConditions } from "./Conditions.styled";
+import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
-import { Section } from "@src/components/ui/Section";
-import { StyledConditions } from "./Conditions.styled";
-import { items } from "./data/items";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
-import { useTranslation } from "next-i18next";
+import { items } from "./data/items";
 
 const Conditions = () => {
   const { t } = useTranslation("resellers");
@@ -23,7 +23,10 @@ const Conditions = () => {
             <FeatureItem
               key={index}
               variant="horizontal"
-              icon={icon}
+              icon={{
+                ...icon,
+                mobileHorizontalVariant: "vertical",
+              }}
               heading={t(heading ?? "")}
               text={t(String(text))}
             />
