@@ -29,6 +29,8 @@ export interface IButton {
   variant?: "primary" | "secondary" | "tertiary" | "quaternary" | "quinary";
   /** The size. Default: "medium". */
   size?: "small" | "medium";
+  /** The border radius. Default: "9px". */
+  borderRadius?: string;
   /** Callback function triggered on click. */
   onClick?: () => void;
 }

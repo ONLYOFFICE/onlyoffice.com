@@ -21,6 +21,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
       fullWidth,
       variant = "primary",
       size = "medium",
+      borderRadius = "9px",
       onClick,
     },
     ref,
@@ -48,6 +49,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
         $fullWidth={fullWidth ?? undefined}
         $variant={variant}
         $size={size}
+        $borderRadius={borderRadius}
       >
         {children || label}
       </StyledButton>
