@@ -7,12 +7,14 @@ const StyledFeatureItem = styled.div<{
   $icon: IFeatureItem["icon"]["url"];
   $iconPositionX: IFeatureItem["icon"]["positionX"];
   $iconPositionY: IFeatureItem["icon"]["positionY"];
+  $iconMobilePositionX: IFeatureItem["icon"]["mobilePositionX"];
+  $iconMobileHorizontalVariant: IFeatureItem["icon"]["mobileHorizontalVariant"];
 }>`
   position: relative;
   display: grid;
   align-content: start;
   gap: 12px;
-  width: 100%;
+
   ${(props) =>
     props.$variant === "horizontal"
       ? css`
@@ -30,12 +32,8 @@ const StyledFeatureItem = styled.div<{
     top: 0;
     width: 64px;
     height: 64px;
-    background-image: url(${({ $icon }) => $icon});
+    background-image: url(${(props) => props.$icon});
     background-repeat: no-repeat;
-    background-position: ${({
-      $iconPositionX = "0px",
-      $iconPositionY = "center",
-    }) => `${$iconPositionX} ${$iconPositionY}`};
 
     ${(props) =>
       props.$variant === "horizontal"
@@ -46,10 +44,40 @@ const StyledFeatureItem = styled.div<{
             left: 50%;
             transform: translateX(-50%);
           `}
+
+    ${(props) =>
+      props.$iconPositionX &&
+      css`
+        background-position-x: ${props.$iconPositionX};
+      `}
+
+    ${(props) =>
+      props.$iconPositionY &&
+      css`
+        background-position-y: ${props.$iconPositionY};
+      `}
+
+    ${(props) =>
+      props.$iconMobilePositionX &&
+      css`
+        @media ${device.mobile} {
+          width: 48px;
+          height: 48px;
+          background-position-x: ${props.$iconMobilePositionX};
+          background-size: auto 48px;
+        }
+      `}
   }
 
   @media ${device.mobile} {
-    padding: 80px 0 0 0;
+    ${(props) =>
+      props.$iconMobileHorizontalVariant
+        ? css`
+            padding: 0 0 0 64px;
+          `
+        : css`
+            padding: 80px 0 0 0;
+          `}
   }
 `;
 
