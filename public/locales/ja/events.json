@@ -1,0 +1,29 @@
+{
+  "PageTitle": "イベント",
+  "PageTitleOG": "参加したイベント",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0>は世界中の興味深いイベントに参加しています",
+  "CurrentEvents": "2025年のイベントでONLYOFFICEにお会いください",
+  "PastEvents": "ONLYOFFICEが参加したイベントについて読む",
+  "MoreInfo": "詳細情報",
+  "ScheduleMeeting": "ミーティングをスケジュール",
+  "dateTemplates": {
+    "singleDay": "{{year}}年{{month}}{{day}}日",
+    "sameMonth": "{{year}}年{{month}}{{dayStart}}日–{{dayEnd}}日",
+    "differentMonths": "{{year}}年{{monthStart}}{{dayStart}}日–{{monthEnd}}{{dayEnd}}日",
+    "differentYears": "{{yearStart}}年{{monthStart}}{{dayStart}}日–{{year}}年{{monthEnd}}{{dayEnd}}日"
+  },
+  "months": {
+    "January": "1月",
+    "February": "2月",
+    "March": "3月",
+    "April": "4月",
+    "May": "5月",
+    "June": "6月",
+    "July": "7月",
+    "August": "8月",
+    "September": "9月",
+    "October": "10月",
+    "November": "11月",
+    "December": "12月"
+  }
+}

@@ -6,17 +6,17 @@ const StyledButton = styled.button<{
   $variant: IButton["variant"];
   $size: IButton["size"];
   $fullWidth: IButton["fullWidth"];
+  $borderRadius: IButton["borderRadius"];
 }>`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 9px;
+  border-radius: ${(props) => props.$borderRadius};
   font-size: 13px;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: 0.04em;
   width: ${(props) => props.$fullWidth && "100%"};
-  min-height: 56px;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
