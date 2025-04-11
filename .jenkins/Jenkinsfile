@@ -41,9 +41,13 @@ pipeline {
         public_static_url = "${public_static_url}"
       }
       steps {
-        withCredentials([string(credentialsId: 'blog_revalidate_token', variable: 'revalidate_token')]) {
+        withCredentials([string(credentialsId: 'onlyoffice_com_next_public_site_url', variable: 'NEXT_PUBLIC_SITE_URL'),
+                         string(credentialsId: 'onlyoffice_com_var_strapi_api_url', variable: 'VAR_STRAPI_API_URL')]) {
         sh '''
           cp .jenkins/build.sh .jenkins/site_build.sh
+
+          sed -i "s^var_next_public_site_url^$NEXT_PUBLIC_SITE_URL^" .env
+          sed -i "s^var_strapi_api_url^$VAR_STRAPI_API_URL^" .env
           
           if [ "${region}" = "info" ]; then
             cp .jenkins/robots.txt ./
