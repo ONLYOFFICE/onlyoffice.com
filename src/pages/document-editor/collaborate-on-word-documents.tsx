@@ -8,7 +8,7 @@ import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { CollaborateOnWordDocumentsTemplate } from "@src/components/templates/CollaborateOnWordDocuments";
 
-const DocumentEditorPage = ({ locale }: ILocale) => {
+const CollaborateOnWordDocumentsPage = ({ locale }: ILocale) => {
   const { t } = useTranslation("collaborate-on-word-documents");
 
   return (
@@ -46,4 +46,4 @@ export async function getStaticProps({ locale }: ILocale) {
   };
 }
 
-export default DocumentEditorPage;
+export default CollaborateOnWordDocumentsPage;
