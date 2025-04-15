@@ -48,7 +48,7 @@ const EditorsFeatures = ({ items, buttons }: IEditorsFeatures) => {
               <Button
                 id="features-run-on-your-own-server"
                 as="a"
-                href="/download?from=document-editor#docs-enterprise"
+                href="/download#docs-enterprise"
                 label={t("RunOnYourOwnServer")}
               />
               <Button
