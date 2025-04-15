@@ -9,213 +9,70 @@ const StyledInput = styled.div`
 const StyledInputLabel = styled.label<{
   $value: IInput["value"];
   $leftSide: IInput["leftSide"];
-  $variant: IInput["variant"];
+  $disabled: IInput["disabled"];
+  $active: IInput["active"];
   $isFocused: boolean;
 }>`
   position: absolute;
-  top: ${(props) => (props.$value || props.$isFocused ? "8px" : "16px")};
-  left: ${(props) =>
-    props.$leftSide || props.$variant === "search" ? "48px" : "16px"};
-  font-size: ${(props) => (props.$value || props.$isFocused ? "12px" : "16px")};
+  top: ${(props) =>
+    props.$value || props.$isFocused || props.$active ? "7px" : "15px"};
+  left: ${(props) => (props.$leftSide ? "8px" : "16px")};
+  font-size: ${(props) =>
+    props.$value || props.$isFocused || props.$active ? "12px" : "16px"};
   line-height: ${(props) =>
-    props.$value || props.$isFocused ? "16px" : "24px"};
-  color: ${(props) => (props.$isFocused ? "#666666" : "#aaaaaa")};
+    props.$value || props.$isFocused || props.$active ? "16px" : "24px"};
+  color: ${(props) =>
+    props.$isFocused ? "#666666" : props.$disabled ? "#cccccc" : "#aaaaaa"};
   transition: top 0.2s, font-size 0.2s, color 0.2s;
   pointer-events: none;
   z-index: 1;
 
   @media ${device.mobile} {
-    top: ${(props) => (props.$value || props.$isFocused ? "6px" : "12px")};
-    left: ${(props) =>
-      props.$leftSide || props.$variant === "search" ? "44px" : "12px"};
+    top: ${(props) =>
+      props.$value || props.$isFocused || props.$active ? "6px" : "11px"};
+    left: ${(props) => (props.$leftSide ? "8px" : "12px")};
     font-size: ${(props) =>
-      props.$value || props.$isFocused ? "11px" : "14px"};
+      props.$value || props.$isFocused || props.$active ? "11px" : "14px"};
     line-height: ${(props) =>
-      props.$value || props.$isFocused ? "15px" : "24px"};
+      props.$value || props.$isFocused || props.$active ? "15px" : "24px"};
   }
 `;
 
-const StyledInputIcon = styled.span<{
-  $leftSide?: IInput["leftSide"];
-  $rightSide?: IInput["rightSide"];
-  $variant?: IInput["variant"];
-}>`
-  position: absolute;
-  top: 50%;
-  width: 24px;
-  height: 24px;
-  transform: translateY(-50%);
-
-  ${(props) =>
-    props.$leftSide || props.$variant === "search"
-      ? css`
-          left: 16px;
-
-          @media ${device.mobile} {
-            left: 12px;
-          }
-        `
-      : props.$rightSide || props.$variant === "password"
-      ? css`
-          right: 16px;
-
-          @media ${device.mobile} {
-            right: 12px;
-          }
-        `
-      : null}
-
-  ${(props) =>
-    props.$variant === "search" &&
-    css`
-      svg {
-        path {
-          fill: #808080;
-          transition: fill 0.2s;
-        }
-      }
-    `}
-
-    ${(props) =>
-    props.$variant === "password"
-      ? css`
-          cursor: pointer;
-
-          &:not(:disabled):hover {
-            svg {
-              path {
-                fill: #666666;
-              }
-            }
-          }
-        `
-      : css`
-          pointer-events: none;
-        `}
-`;
-
-const StyledInputField = styled.input<{
-  $value: IInput["value"];
-  $label: IInput["label"];
+const StyledInputWrapper = styled.div<{
   $status: IInput["status"];
-  $withClearButton: IInput["withClearButton"];
-  $leftSide: IInput["leftSide"];
-  $rightSide: IInput["rightSide"];
-  $variant: IInput["variant"];
+  $disabled: IInput["disabled"];
   $isFocused: boolean;
 }>`
+  display: flex;
+  align-items: center;
   border: 1px solid;
-  border-radius: 9px;
-  padding: ${(props) =>
-    props.$label && props.$leftSide && props.$rightSide
-      ? "24px 48px 8px"
-      : props.$leftSide && props.$rightSide
-      ? "16px 48px"
-      : props.$label && props.$leftSide
-      ? "24px 16px 8px 48px"
-      : props.$label && props.$rightSide
-      ? "24px 48px 8px 16px"
-      : props.$label
-      ? "24px 16px 8px"
-      : props.$leftSide
-      ? "16px 16px 16px 48px"
-      : props.$rightSide
-      ? "16px 48px 16px 16px"
-      : "16px"};
-  padding-right: ${(props) =>
-    props.$withClearButton && props.$rightSide
-      ? "88px"
-      : props.$withClearButton ||
-        props.$variant === "search" ||
-        props.$variant === "password"
-      ? "48px"
-      : null};
-  padding-left: ${(props) => props.$variant === "search" && "48px"};
-  font-size: 16px;
-  line-height: 24px;
+  border-color: ${(props) =>
+    props.$status === "success"
+      ? "#8bb825"
+      : props.$status === "error"
+      ? "#cb0000"
+      : "#aaaaaa"};
+  border-radius: 3px;
   width: 100%;
   height: 56px;
-  color: #333333;
-  background-color: #f9f9f9;
-  outline: none;
+  background-color: ${(props) =>
+    props.$status === "success"
+      ? "#f9feef"
+      : props.$status === "error"
+      ? "#fff7f7"
+      : props.$disabled
+      ? " rgba(249, 249, 249, 0.4)"
+      : "#f9f9f9"};
   transition: border-color 0.2s, background-color 0.2s;
+  overflow: hidden;
 
   ${(props) =>
-    props.$status === "success"
-      ? css`
-          border-color: #8bb825;
-          background-color: #f9feef;
-        `
-      : props.$status === "error"
-      ? css`
-          border-color: #cb0000;
-          background-color: #fff7f7;
-
-          ~ ${StyledInputLabel} {
-            color: #cb0000;
-          }
-        `
-      : css`
-          border-color: #aaaaaa;
-
-          &:not(:disabled):hover {
-            border-color: #666666;
-          }
-
-          ${props.$variant === "search"
-            ? css`
-                ~ ${StyledInputIcon} {
-                  svg {
-                    path {
-                      fill: ${props.$isFocused && "#444444"};
-                    }
-                  }
-                }
-
-                &:not(:disabled):hover {
-                  ~ ${StyledInputIcon} {
-                    svg {
-                      path {
-                        fill: ${props.$variant === "search" && "#444444"};
-                      }
-                    }
-                  }
-                }
-              `
-            : props.$variant === "password"
-            ? css`
-                ~ ${StyledInputIcon} {
-                  svg {
-                    path {
-                      fill: #aaaaaa;
-                      transition: fill 0.2s;
-                    }
-                  }
-                }
-
-                ${props.$isFocused &&
-                css`
-                  ~ ${StyledInputIcon} {
-                    svg {
-                      path {
-                        fill: #666666;
-                      }
-                    }
-                  }
-                `}
-
-                &:not(:disabled):hover {
-                  ~ ${StyledInputIcon} {
-                    svg {
-                      path {
-                        fill: #666666;
-                      }
-                    }
-                  }
-                }
-              `
-            : null}
-        `}
+    props.$status === "error" &&
+    css`
+      ~ ${StyledInputLabel} {
+        color: #cb0000;
+      }
+    `}
 
   ${(props) =>
     props.$isFocused &&
@@ -223,6 +80,64 @@ const StyledInputField = styled.input<{
       border-color: #666666;
       background-color: #ffffff;
     `}
+
+  ${(props) =>
+    props.$disabled &&
+    css`
+      pointer-events: none;
+    `}
+
+  ${(props) =>
+    !props.$disabled &&
+    !(props.$status === "success" || props.$status === "error") &&
+    css`
+      &:hover {
+        border-color: #666666;
+      }
+    `}
+
+  @media ${device.mobile} {
+    height: 48px;
+  }
+`;
+
+const StyledInputBody = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+`;
+
+const StyledInputField = styled.input<{
+  $isFocused: boolean;
+  $label: IInput["label"];
+  $leftSide: IInput["leftSide"];
+  $rightSide: IInput["rightSide"];
+}>`
+  border: none;
+  border-radius: inherit;
+  padding: ${(props) =>
+    props.$label && props.$leftSide && props.$rightSide
+      ? "24px 8px 8px"
+      : props.$label && props.$leftSide
+      ? "24px 16px 8px 8px"
+      : props.$label && props.$rightSide
+      ? "24px 8px 8px 16px"
+      : props.$label
+      ? "24px 16px 8px"
+      : props.$leftSide && props.$rightSide
+      ? "16px 8px"
+      : props.$leftSide
+      ? "16px 16px 16px 8px"
+      : props.$rightSide
+      ? "16px 8px 16px 16px"
+      : "16px"};
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  height: 100%;
+  color: #333333;
+  outline: none;
+  background: transparent;
 
   &::placeholder {
     font-size: 16px;
@@ -235,73 +150,25 @@ const StyledInputField = styled.input<{
     }
   }
 
-  &:disabled {
-    background-color: rgba(249, 249, 249, 0.4);
-  }
-
   @media ${device.mobile} {
     padding: ${(props) =>
       props.$label && props.$leftSide && props.$rightSide
-        ? "22px 44px 6px"
-        : props.$leftSide && props.$rightSide
-        ? "12px 44px"
+        ? "22px 8px 6px"
         : props.$label && props.$leftSide
-        ? "22px 12px 6px 44px"
+        ? "22px 12px 6px 8px"
         : props.$label && props.$rightSide
-        ? "22px 44px 6px 12px"
+        ? "22px 8px 6px 12px"
         : props.$label
         ? "22px 12px 6px"
+        : props.$leftSide && props.$rightSide
+        ? "12px 8px"
         : props.$leftSide
-        ? "12px 12px 12px 44px"
+        ? "12px 12px 12px 8px"
         : props.$rightSide
-        ? "12px 44px 12px 12px"
+        ? "12px 8px 12px 12px"
         : "12px"};
-    padding-right: ${(props) =>
-      props.$withClearButton && props.$rightSide
-        ? "84px"
-        : props.$withClearButton ||
-          props.$variant === "search" ||
-          props.$variant === "password"
-        ? "44px"
-        : null};
-    padding-left: ${(props) => props.$variant === "search" && "44px"};
     font-size: 14px;
     line-height: 20px;
-    height: 48px;
-  }
-`;
-
-const StyledInputClearButton = styled.button<{
-  $rightSide: IInput["rightSide"];
-  $withClearButton: IInput["withClearButton"];
-  $variant: IInput["variant"];
-}>`
-  position: absolute;
-  top: 50%;
-  right: ${(props) =>
-    (props.$rightSide || props.$variant === "password") &&
-    props.$withClearButton
-      ? "48px"
-      : "16px"};
-  border: none;
-  width: 24px;
-  height: 24px;
-  background-color: transparent;
-  transform: translateY(-50%);
-  cursor: pointer;
-
-  svg {
-    path {
-      fill: #666666;
-    }
-  }
-
-  @media ${device.mobile} {
-    right: ${(props) =>
-      (props.$rightSide || props.$variant === "password") &&
-      props.$withClearButton
-        ? "44px"
-        : "12px"};
   }
 `;
 
@@ -321,8 +188,8 @@ const StyledInputCaption = styled.div`
 export {
   StyledInput,
   StyledInputLabel,
-  StyledInputIcon,
+  StyledInputWrapper,
+  StyledInputBody,
   StyledInputField,
-  StyledInputClearButton,
   StyledInputCaption,
 };

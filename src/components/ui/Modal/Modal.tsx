@@ -11,17 +11,13 @@ const Modal = ({
   id,
   className,
   children,
-  showCloseIcon,
+  withCloseBtn,
+  positionCloseBtn,
   maxWidth = "736px",
   isOpen,
   onClose,
 }: IModal) => {
   const modalRef = useRef<HTMLDivElement>(null);
-
-  const onCloseModal = useCallback(() => {
-    onClose();
-    stopAllVideos();
-  }, [onClose]);
 
   const stopAllVideos = () => {
     if (!modalRef.current) return;
@@ -42,49 +38,69 @@ const Modal = ({
       });
   };
 
+  const onCloseModal = useCallback(() => {
+    onClose();
+    stopAllVideos();
+  }, [onClose]);
+
   useEffect(() => {
     if (!isOpen) return;
 
-    const focusableElements = Array.from(
-      modalRef.current?.querySelectorAll<HTMLElement>(
-        "button, [href], input, select, textarea, iframe, [tabindex]:not([tabindex='-1'])",
-      ) || [],
-    ).filter((el) => !el.hasAttribute("disabled") && el.tabIndex >= 0);
-
-    if (focusableElements.length > 0) {
-      focusableElements[0].focus();
-    }
+    const focusableSelectors = [
+      "a[href]",
+      "area[href]",
+      "input:not([disabled])",
+      "select:not([disabled])",
+      "textarea:not([disabled])",
+      "button:not([disabled])",
+      "iframe",
+      "object",
+      "embed",
+      "[contenteditable]",
+      '[tabindex]:not([tabindex="-1"])',
+    ];
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         onCloseModal();
-      } else if (e.key === "Tab") {
+      } else if (e.key === "Tab" && modalRef.current) {
+        const focusableElements = Array.from(
+          modalRef.current.querySelectorAll<HTMLElement>(
+            focusableSelectors.join(","),
+          ),
+        ).filter((el) => el.offsetParent !== null);
+
+        if (focusableElements.length === 0) return;
+
         const firstElement = focusableElements[0];
         const lastElement = focusableElements[focusableElements.length - 1];
 
-        if (e.shiftKey && document.activeElement === firstElement) {
-          e.preventDefault();
-          lastElement.focus();
-        } else if (!e.shiftKey && document.activeElement === lastElement) {
-          e.preventDefault();
-          firstElement.focus();
+        const activeElement = document.activeElement as HTMLElement;
+
+        if (e.shiftKey) {
+          if (
+            activeElement === firstElement ||
+            !modalRef.current.contains(activeElement)
+          ) {
+            e.preventDefault();
+            lastElement.focus();
+          }
+        } else {
+          if (
+            activeElement === lastElement ||
+            !modalRef.current.contains(activeElement)
+          ) {
+            e.preventDefault();
+            firstElement.focus();
+          }
         }
       }
     };
 
-    const handleFocusIn = (e: FocusEvent) => {
-      if (!modalRef.current?.contains(e.target as Node)) {
-        e.preventDefault();
-        focusableElements[0]?.focus();
-      }
-    };
-
     document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("focusin", handleFocusIn);
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("focusin", handleFocusIn);
     };
   }, [isOpen, onCloseModal]);
 
@@ -119,7 +135,12 @@ const Modal = ({
           onClick={(e) => e.stopPropagation()}
           $maxWidth={maxWidth}
         >
-          {showCloseIcon && <StyledModalCloseBtn onClick={onCloseModal} />}
+          {withCloseBtn && (
+            <StyledModalCloseBtn
+              $positionCloseBtn={positionCloseBtn}
+              onClick={onCloseModal}
+            />
+          )}
           {children}
         </StyledModalWrapper>
       </StyledModalContainer>
