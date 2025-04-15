@@ -5,18 +5,19 @@ import { Container } from "@src/components/ui/Container";
 import { ChooseSolution } from "@src/components/widgets/ChooseSolution";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
+import { IGetStarted } from "./GetStarted.types";
 
-const GetStarted = () => {
-  const { t } = useTranslation("main");
+const GetStarted = ({ background, header }: IGetStarted) => {
+  const { t } = useTranslation("GetStarted");
 
   return (
-    <Section tabletSpacing={["88px", "80px"]}>
+    <Section tabletSpacing={["88px", "80px"]} background={background}>
       <Container>
         <StyledGetStartedHeading
           level={2}
           size={2}
           textAlign="center"
-          label={t("GetStartedAndChooseWhereToWork")}
+          label={header ? header : t("GetStartedAndChooseWhereToWork")}
         />
 
         <ChooseSolution
