@@ -8,7 +8,7 @@ import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { CompareDocumentsTemplate } from "@src/components/templates/CompareDocuments";
 
-const DocumentEditorPage = ({ locale }: ILocale) => {
+const CompareDocumentsPage = ({ locale }: ILocale) => {
   const { t } = useTranslation("compare-documents");
 
   return (
@@ -46,4 +46,4 @@ export async function getStaticProps({ locale }: ILocale) {
   };
 }
 
-export default DocumentEditorPage;
+export default CompareDocumentsPage;
