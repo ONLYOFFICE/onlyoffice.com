@@ -1,0 +1,30 @@
+{
+    "PageTitle": "Text analysis and word count",
+    "PageDescription": "Display word, character, and paragraph count in ONLYOFFICE Document Editor. Optimize text size for your docs, visual materials, newsletters, and media.",
+    "Header": "Text analysis and correction",
+    "SubHeader": "Create rich, perfectly clean content",
+
+    "HeroImgUrl": "/images/templates/text-analysis-and-word-count/hero/hero.png",
+    "HeroImgUrl2x": "/images/templates/text-analysis-and-word-count/hero/hero@2x.png",
+
+    "Feature1Title": "Count documents with Word Counter",
+    "Feature1Desc": "Display word, character, and paragraph count to optimize text size for your documents, visual materials, newsletters, and media.",
+
+    "Feature2Title": "Write in any language",
+    "Feature2Desc": "Apply over 250 language parameters to documents, paragraphs, and words. Find spelling mistakes and typos with the built-in spellchecker, LanguageTool, or Grammalecte. Correct words with smart suggestions. Translate documents with Google Translate, DeepL, or Apertium.",
+
+    "Feature3Title": "Search, replace, and autocorrect",
+    "Feature3Desc": "Find any word in your document instantaneously and replace your searched word in large texts quickly. Enable automatic autocorrection of texts, symbols, and equations. Use Typograph to automatically correct punctuation and typography.",
+
+    "Feature4Title": "Find synonyms and antonyms",
+    "Feature4Desc": "Find perfect words for your writing with the Thesaurus. Search for synonyms and antonyms for words and quickly replace them in your texts to effectively compose rich, unique content.",
+   
+    "Feature1ImgUrl": "/images/templates/text-analysis-and-word-count/features/pic1.png",
+    "Feature1ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/pic1@2x.png",
+    "Feature2ImgUrl": "/images/templates/text-analysis-and-word-count/features/pic2.png",
+    "Feature2ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/pic2@2x.png",
+    "Feature3ImgUrl": "/images/templates/text-analysis-and-word-count/features/pic3.png",
+    "Feature3ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/pic3@2x.png",
+    "Feature4ImgUrl": "/images/templates/text-analysis-and-word-count/features/pic4.png",
+    "Feature4ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/pic4@2x.png"
+}
