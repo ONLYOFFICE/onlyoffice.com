@@ -15,6 +15,4 @@ export interface ISolutionCard {
   customLinks?: React.ReactNode;
   /** The large size. */
   large?: boolean;
-  /** The full width. */
-  fullWidth?: boolean;
 }

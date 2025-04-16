@@ -19,7 +19,6 @@ const SolutionCard = ({
   links,
   customLinks,
   large,
-  fullWidth,
 }: ISolutionCard) => {
   function renderCustomLinks(link: React.ReactNode) {
     const links = link ? [...(Array.isArray(link) ? link : [link])] : [];
@@ -28,9 +27,9 @@ const SolutionCard = ({
   }
 
   return (
-    <StyledSolutionCard id={id} className={className} $large={large} $fullWidth={fullWidth}>
+    <StyledSolutionCard id={id} className={className} $large={large}>
       <StyledSolutionCardImgWrapper $large={large}>
-        <StyledSolutionCardImg $imgUrl={imgUrl} $large={large} $fullWidth={fullWidth} />
+        <StyledSolutionCardImg $imgUrl={imgUrl} $large={large} />
       </StyledSolutionCardImgWrapper>
 
       <StyledSolutionCardBody $customLinks={customLinks}>

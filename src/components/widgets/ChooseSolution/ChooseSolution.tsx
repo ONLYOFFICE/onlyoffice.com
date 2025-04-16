@@ -11,7 +11,6 @@ const ChooseSolution = ({
   className,
   items,
   largeItems,
-  fullWidth,
 }: IChooseSolution) => {
   return (
     <StyledChooseSolution id={id} className={className}>
@@ -31,7 +30,7 @@ const ChooseSolution = ({
       )}
 
       {largeItems && largeItems.length > 0 && (
-        <StyledChooseSolutionLargeItems $fullWidth={fullWidth}>
+        <StyledChooseSolutionLargeItems>
           {largeItems.map((item, index) => (
             <SolutionCard
               imgUrl={item.imgUrl}
@@ -41,7 +40,6 @@ const ChooseSolution = ({
               customLinks={item.customLinks}
               large={true}
               key={index}
-              fullWidth={fullWidth}
             />
           ))}
         </StyledChooseSolutionLargeItems>

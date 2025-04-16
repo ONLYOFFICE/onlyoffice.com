@@ -4,11 +4,9 @@ import { device } from "@src/utils/device";
 
 const StyledSolutionCard = styled.div<{
   $large?: ISolutionCard["large"];
-  $fullWidth?: ISolutionCard["fullWidth"];
 }>`
   width: 100%;
-  max-width: ${(props) =>
-    props.$fullWidth ? "100%" : props.$large ? "544px" : "352px"};
+  max-width: ${(props) => (props.$large ? "544px" : "352px")};
   text-align: center;
 
   @media ${device.tabletS} {
@@ -47,7 +45,6 @@ const StyledSolutionCardImgWrapper = styled.div<{
 const StyledSolutionCardImg = styled.div<{
   $large?: ISolutionCard["large"];
   $imgUrl: ISolutionCard["imgUrl"];
-  $fullWidth?: ISolutionCard["fullWidth"];
 }>`
   margin: 0 auto;
   width: 100%;
@@ -57,21 +54,7 @@ const StyledSolutionCardImg = styled.div<{
   background-repeat: no-repeat;
 
   ${(props) =>
-    props.$fullWidth
-      ? css`
-          max-width: 360px;
-          height: 200px;
-
-          @media ${device.tabletS} {
-            max-width: 330px;
-            height: 180px;
-          }
-
-          @media ${device.mobile} {
-            height: 115px;
-          }
-        `
-      : props.$large
+    props.$large
       ? css`
           max-width: 360px;
           height: 200px;

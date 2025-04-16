@@ -1,6 +1,5 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { IChooseSolution } from "./ChooseSolution.types";
 
 const StyledChooseSolution = styled.div`
   display: grid;
@@ -22,19 +21,10 @@ const StyledChooseSolutionItems = styled.div`
   }
 `;
 
-const StyledChooseSolutionLargeItems = styled.div<{
-  $fullWidth: IChooseSolution["fullWidth"];
-}>`
+const StyledChooseSolutionLargeItems = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
-
-  ${(props) =>
-    props.$fullWidth &&
-    css`
-      grid-template-columns: 1fr;
-      width: 100%;
-    `}
 
   @media ${device.tabletS} {
     grid-template-columns: repeat(1, 1fr);

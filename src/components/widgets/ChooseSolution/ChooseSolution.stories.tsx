@@ -30,9 +30,6 @@ export default {
         type: "object",
       },
     },
-    fullWidth: {
-      control: { type: "boolean" },
-    },
   },
 } as Meta<typeof ChooseSolution>;
 
