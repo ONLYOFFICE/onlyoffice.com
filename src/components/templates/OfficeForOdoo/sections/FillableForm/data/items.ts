@@ -1,28 +1,30 @@
-export const items = [
+import { IFeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
+
+export const items: IFeatureSwitcher["items"] = [
   {
     label: "FillableFormTab1Label",
-    images: {
+    image: {
       url: "FillableFormTab1ImgUrl",
       url2x: "FillableFormTab1ImgUrl2x",
     },
   },
   {
     label: "FillableFormTab2Label",
-    images: {
+    image: {
       url: "FillableFormTab2ImgUrl",
       url2x: "FillableFormTab2ImgUrl2x",
     },
   },
   {
     label: "FillableFormTab3Label",
-    images: {
+    image: {
       url: "FillableFormTab3ImgUrl",
       url2x: "FillableFormTab3ImgUrl2x",
     },
   },
   {
     label: "FillableFormTab4Label",
-    images: {
+    image: {
       url: "FillableFormTab4ImgUrl",
       url2x: "FillableFormTab4ImgUrl2x",
     },

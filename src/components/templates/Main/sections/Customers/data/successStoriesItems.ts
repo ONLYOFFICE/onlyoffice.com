@@ -1,4 +1,6 @@
-export const successStoriesItems = [
+import { IStoryCard } from "@src/components/widgets/StoryCard";
+
+export const successStoriesItems: IStoryCard[] = [
   {
     imgUrl: "/images/templates/main/customers/success-stories/kinderhaus.jpg",
     linkUrl: "HowKinderhausBerlinSharesLink",

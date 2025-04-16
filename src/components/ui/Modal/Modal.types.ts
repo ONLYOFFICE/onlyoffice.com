@@ -8,7 +8,9 @@ export interface IModal {
   /** The maximum width of the modal. Default: "736px". */
   maxWidth?: string;
   /** Whether to show the close icon inside the modal. */
-  showCloseIcon?: boolean;
+  withCloseBtn?: boolean;
+  /** Specifies whether the close button is positioned inside or outside the modal. */
+  positionCloseBtn?: "inside" | "outside";
   /** Controls whether the modal is open or closed. */
   isOpen: boolean;
   /** Callback function triggered when the modal is requested to close. */

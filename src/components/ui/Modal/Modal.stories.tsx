@@ -27,8 +27,12 @@ export default {
     maxWidth: {
       control: { type: "text" },
     },
-    showCloseIcon: {
+    withCloseBtn: {
       control: { type: "boolean" },
+    },
+    positionCloseBtn: {
+      control: { type: "select" },
+      options: ["inside", "outside"],
     },
   },
 } as Meta<typeof Modal>;

@@ -10,7 +10,7 @@ import {
   StyledStepCarouselHeading,
 } from "./StepCarousel.styled";
 import { IStepCarousel } from "./StepCarousel.types";
-import { ChevronLeftIcon, ChevronRightIcon } from "@src/components/icons";
+import { CarouselButton } from "@src/components/ui/CarouselButton";
 
 const StepCarousel = ({ id, className, items }: IStepCarousel) => {
   return (
@@ -40,12 +40,8 @@ const StepCarousel = ({ id, className, items }: IStepCarousel) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className="swiper-button-prev">
-        <ChevronLeftIcon />
-      </button>
-      <button className="swiper-button-next">
-        <ChevronRightIcon />
-      </button>
+      <CarouselButton className="swiper-button-prev" />
+      <CarouselButton className="swiper-button-next" direction="right" />
     </StyledStepCarousel>
   );
 };

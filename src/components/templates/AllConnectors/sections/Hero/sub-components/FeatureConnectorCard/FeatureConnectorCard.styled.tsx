@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { IFeatureConnectorCard } from "./FeatureConenctorCard.types";
+import { IFeatureConnectorCard } from "./FeatureConnectorCard.types";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 
@@ -33,7 +33,7 @@ const StyledFeatureConnectorCard = styled(Link)`
 `;
 
 const StyledFeatureConnectorCardImgWrapper = styled.div<{
-  $imgBgColor: IFeatureConnectorCard["imgBgColor"];
+  $imgBgColor: IFeatureConnectorCard["image"]["bgColor"];
 }>`
   border-radius: 5px;
   padding: 24px 32px;
@@ -41,7 +41,7 @@ const StyledFeatureConnectorCardImgWrapper = styled.div<{
 `;
 
 const StyledFeatureConnectorCardImg = styled.div<{
-  $imgUrl: IFeatureConnectorCard["imgUrl"];
+  $imgUrl: IFeatureConnectorCard["image"]["url"];
 }>`
   width: 100%;
   height: 40px;

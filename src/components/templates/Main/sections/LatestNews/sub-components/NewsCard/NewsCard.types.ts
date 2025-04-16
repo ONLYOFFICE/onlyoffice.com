@@ -12,7 +12,7 @@ export interface INewsCard {
   /** The image URL. */
   imgUrl: string;
   /** The date icon. */
-  date: string;
+  date?: string;
   /** The start date. */
   startDate?: string;
   /** The end date. */

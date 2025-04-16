@@ -14,7 +14,7 @@ const Assignments = () => {
 
   return (
     <Section
-      bgColor="#f9f9f9"
+      background="#f9f9f9"
       desktopSpacing={["90px", "112px"]}
       mobileSpacing={["0", "48px"]}
     >
@@ -28,11 +28,11 @@ const Assignments = () => {
         <FeatureSwitcher
           imageHeight={550}
           position="right"
-          items={items.map(({ label, images }) => ({
-            label: t(label),
-            images: {
-              url: t(images.url),
-              url2x: t(images.url2x),
+          items={items.map(({ label, image }) => ({
+            label: t(String(label)),
+            image: {
+              url: t(image.url),
+              url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
         />

@@ -14,6 +14,7 @@ const StyledText = styled.p<{
   $textAlign: IText["textAlign"];
   $textTransform: IText["textTransform"];
   $textDecoration: IText["textDecoration"];
+  $verticalAlign: IText["verticalAlign"];
   $truncate: IText["truncate"];
 }>`
   display: ${(props) => props.$display};
@@ -26,6 +27,7 @@ const StyledText = styled.p<{
   text-align: ${(props) => props.$textAlign};
   text-transform: ${(props) => props.$textTransform};
   text-decoration: ${(props) => props.$textDecoration};
+  vertical-align: ${(props) => props.$verticalAlign};
 
   ${(props) =>
     props.$size === 1 &&

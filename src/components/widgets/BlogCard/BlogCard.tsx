@@ -12,33 +12,30 @@ import { Text } from "@src/components/ui/Text";
 const BlogCard = ({
   id,
   className,
-  url,
   imgUrl,
   heading,
   text,
   links,
+  isLarge,
 }: IBlogCard) => {
   return (
-    <StyledBlogCard id={id} className={className}>
-      <StyledBlogCardImg
-        href={url}
-        $imgUrl={imgUrl}
-        tabIndex={-1}
-        target="_blank"
-      />
+    <StyledBlogCard id={id} className={className} $isLarge={isLarge}>
+      <StyledBlogCardImg $imgUrl={imgUrl} $isLarge={isLarge} />
 
       <StyledBlogCardBody>
-        <StyledBlogCardWrapper>
+        <StyledBlogCardWrapper $isLarge={isLarge}>
           <Heading level={3} size={5}>
-            <Link
-              href={url}
-              label={heading}
-              display="block"
-              hover="color"
-              target="_blank"
-            />
+            {heading?.href ? (
+              <Link
+                href={heading.href}
+                label={heading.label}
+                target={heading.isExternal ? "_blank" : undefined}
+              />
+            ) : (
+              heading?.label
+            )}
           </Heading>
-          <Text size={3} color="#666666" label={text} />
+          {text && <Text size={3} color="#666666" label={text} />}
         </StyledBlogCardWrapper>
 
         {links && (
@@ -48,7 +45,8 @@ const BlogCard = ({
                 <Link
                   href={link.href}
                   label={link.label}
-                  target="_blank"
+                  target={link.isExternal ? "_blank" : undefined}
+                  display="inline-block"
                   fontSize="14px"
                   lineHeight="21px"
                   color="main"

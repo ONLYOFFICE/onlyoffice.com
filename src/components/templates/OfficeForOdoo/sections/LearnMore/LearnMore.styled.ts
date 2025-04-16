@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
+
+const StyledLearnMore = styled(Section)`
+  border-top: 1px solid #e2e2e2;
+`;
 
 const StyledLearnMoreHeading = styled(Heading)`
   margin: 0 auto 56px;
@@ -45,4 +50,4 @@ const StyledLearnMoreItems = styled.div`
   }
 `;
 
-export { StyledLearnMoreHeading, StyledLearnMoreItems };
+export { StyledLearnMore, StyledLearnMoreHeading, StyledLearnMoreItems };

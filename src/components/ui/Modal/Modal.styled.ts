@@ -1,6 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { IModal } from "./Modal.types";
+import { device } from "@src/utils/device";
 
-const StyledModal = styled.div<{ $isOpen: boolean }>`
+const StyledModal = styled.div<{ $isOpen: IModal["isOpen"] }>`
   position: fixed;
   top: 0;
   left: 0;
@@ -20,24 +22,40 @@ const StyledModalContainer = styled.div`
   justify-content: center;
   padding: 24px;
   min-height: 100%;
+
+  @media ${device.mobile} {
+    padding: 16px;
+  }
 `;
 
-const StyledModalWrapper = styled.div<{ $maxWidth: string }>`
+const StyledModalWrapper = styled.div<{ $maxWidth: IModal["maxWidth"] }>`
   position: relative;
   width: 100%;
   max-width: ${(props) => props.$maxWidth};
 `;
 
-const StyledModalCloseBtn = styled.button`
+const StyledModalCloseBtn = styled.button<{
+  $positionCloseBtn: IModal["positionCloseBtn"];
+}>`
   position: absolute;
-  top: -24px;
-  right: -24px;
   border: none;
   width: 24px;
   height: 24px;
-  background-image: url("/images/icons/cross-white.svg");
   background-color: transparent;
   cursor: pointer;
+
+  ${(props) =>
+    props.$positionCloseBtn === "inside"
+      ? css`
+          top: 24px;
+          right: 24px;
+          background-image: url("/images/icons/cross.svg");
+        `
+      : css`
+          top: -24px;
+          right: -24px;
+          background-image: url("/images/icons/cross-white.svg");
+        `}
 `;
 
 export {

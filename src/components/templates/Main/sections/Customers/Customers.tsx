@@ -1,5 +1,4 @@
 import { useTranslation } from "next-i18next";
-import Image from "next/image";
 import {
   StyledCustomers,
   StyledCustomersHeading,
@@ -19,7 +18,7 @@ const Customers = () => {
 
   return (
     <Section
-      bgColor="#f5f5f5"
+      background="#f5f5f5"
       tabletSpacing={["80px", "112px"]}
       tabletSmallSpacing={["88px", "88px"]}
     >
@@ -33,11 +32,11 @@ const Customers = () => {
           <StyledCustomersItems>
             {customersItems.map((item, index) => (
               <li key={index}>
-                <Image
-                  src={item.imgUrl}
-                  alt={item.heading}
-                  width={item.width}
-                  height={item.height}
+                <img
+                  src={item.image.url}
+                  alt={item.image.alt ?? item.heading}
+                  width={item.image.width}
+                  height={item.image.height}
                 />
               </li>
             ))}
@@ -67,7 +66,7 @@ const Customers = () => {
           </StyledSuccessStoriesItems>
           <StyledSuccessStoriesLinkWrapper>
             <Link
-              id="more-success stories"
+              id="more-success-stories"
               href="/customers?from=default"
               label={t("MoreSuccessStories")}
               fontSize="14px"

@@ -39,8 +39,10 @@ const Hero = ({}: ILocale) => {
             <FeatureConnectorCard
               key={index}
               url={connector.url}
-              imgBgColor={connector.imgBgColor}
-              imgUrl={connector.imgUrl}
+              image={{
+                url: connector.image.url,
+                bgColor: connector.image.bgColor,
+              }}
               heading={connector.heading}
               text={t(connector.text)}
               isNew={connector.isNew}

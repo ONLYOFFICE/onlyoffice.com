@@ -41,6 +41,7 @@ const StyledPartnershipProgramButton = styled(Button)`
 
   @media ${device.mobile} {
     margin-right: 0;
+    max-width: 100%;
   }
 `;
 

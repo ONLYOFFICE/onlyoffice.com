@@ -14,7 +14,7 @@ const Enterprise = () => {
 
   return (
     <Section
-      bgColor="#f9f9f9"
+      background="#f9f9f9"
       desktopSpacing={["112px", "16px"]}
       tabletSpacing={["88px", "16px"]}
       tabletSmallSpacing={["80px", "16px"]}
@@ -31,11 +31,11 @@ const Enterprise = () => {
 
         <FeatureSwitcher
           position="right"
-          items={items.map(({ label, images }) => ({
-            label: t(label),
-            images: {
-              url: t(images.url),
-              url2x: t(images.url2x),
+          items={items.map(({ label, image }) => ({
+            label: t(String(label)),
+            image: {
+              url: t(image.url),
+              url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
           customButton={

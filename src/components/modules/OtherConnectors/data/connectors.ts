@@ -1,37 +1,43 @@
-export const connectors = [
+interface IConnector {
+  id: string;
+  name: string;
+  url: string;
+}
+
+export const connectors: IConnector[] = [
   {
     id: "box",
-    title: "Box",
+    name: "Box",
     url: "/office-for-box",
   },
   {
     id: "confluence",
-    title: "Confluence",
+    name: "Confluence",
     url: "/office-for-confluence",
   },
   {
     id: "dropbox",
-    title: "Dropbox",
+    name: "Dropbox",
     url: "/office-for-dropbox",
   },
   {
     id: "moodle",
-    title: "Moodle",
+    name: "Moodle",
     url: "/office-for-moodle",
   },
   {
     id: "nextcloud",
-    title: "Nextcloud",
+    name: "Nextcloud",
     url: "/office-for-nextcloud",
   },
   {
     id: "odoo",
-    title: "Odoo",
+    name: "Odoo",
     url: "/office-for-odoo",
   },
   {
     id: "owncloud",
-    title: "ownCloud",
+    name: "ownCloud",
     url: "/office-for-owncloud",
   },
 ];

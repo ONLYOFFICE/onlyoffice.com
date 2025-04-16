@@ -51,7 +51,7 @@ const StyledMarketplaceConnectorBody = styled.div`
   display: grid;
   row-gap: 24px;
   justify-items: start;
-  padding: 56px 0;
+  padding: 24px 0;
   z-index: 1;
 
   @media ${device.mobile} {
@@ -72,6 +72,7 @@ const StyledMarketplaceConnectorImg = styled.div`
     display: none;
   }
 `;
+
 export {
   StyledMarketplaceConnector,
   StyledMarketplaceConnectorWrapper,

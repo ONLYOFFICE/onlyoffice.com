@@ -9,7 +9,7 @@ const Documents = () => {
   const { t } = useTranslation("office-for-dropbox");
 
   return (
-    <Section bgColor="#f9f9f9">
+    <Section background="#f9f9f9">
       <Container>
         <StyledDocumentsHeading
           level={2}
@@ -18,11 +18,11 @@ const Documents = () => {
         />
 
         <FeatureSwitcher
-          items={items.map(({ label, images }) => ({
-            label: t(label),
-            images: {
-              url: t(images.url),
-              url2x: t(images.url2x),
+          items={items.map(({ label, image }) => ({
+            label: t(String(label)),
+            image: {
+              url: t(image.url),
+              url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
         />

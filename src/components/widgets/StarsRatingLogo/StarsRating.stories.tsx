@@ -23,17 +23,8 @@ export default {
     url: {
       control: { type: "text" },
     },
-    imgUrl: {
-      control: { type: "text" },
-    },
-    imgAlt: {
-      control: { type: "text" },
-    },
-    imgWidth: {
-      control: { type: "number" },
-    },
-    imgHeight: {
-      control: { type: "number" },
+    image: {
+      control: { type: "object" },
     },
     value: {
       control: { type: "number" },
@@ -53,9 +44,11 @@ const Template: StoryFn<IStarsRatingLogo> = (args: IStarsRatingLogo) => (
 export const Default = Template.bind({});
 Default.args = {
   url: "https://sourceforge.net/projects/teamlab/",
-  imgUrl: "/images/storybook/widgets/stars-rating-logo/sourceforge.svg",
-  imgAlt: "SourceForge",
-  imgWidth: 150,
-  imgHeight: 22,
+  image: {
+    url: "/images/storybook/widgets/stars-rating-logo/sourceforge.svg",
+    alt: "SourceForge",
+    width: 150,
+    height: 22,
+  },
   value: 4.5,
 };

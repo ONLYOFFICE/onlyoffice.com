@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Image from "next/image";
 import {
   GlobalStyle,
   StyledHeader,
@@ -31,12 +30,11 @@ const Header = ({ locale }: ILocale) => {
               id="hamburger-button"
             />
             <StyledHeaderLogo id="header-logo" href="/">
-              <Image
+              <img
                 src="/images/logo/logo.svg"
                 alt="logo"
                 width={130}
                 height={24}
-                priority
               />
             </StyledHeaderLogo>
             <HeaderMenu locale={locale} isOpen={isOpenMenuMobile} />

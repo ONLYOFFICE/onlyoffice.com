@@ -28,7 +28,7 @@ const SecurityFirst = ({ id, className }: ISecurityFirst) => {
     <Section
       id={id}
       className={className}
-      bgColor="#333333"
+      background="#333333"
       desktopSpacing={["55px", "55px"]}
       tabletSpacing={["80px", "80px"]}
     >

@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "dayjs": "^1.11.13",
+    "html-react-parser": "^5.2.3",
     "i18next": "^24.2.2",
     "i18next-http-backend": "^3.0.2",
     "next": "15.1.7",
@@ -20,7 +21,9 @@
     "onlyoffice-react-ui-kit": "ONLYOFFICE/onlyoffice-react-ui-kit#1.9.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-google-recaptcha": "^3.1.0",
     "react-i18next": "^15.4.0",
+    "react-tooltip": "^5.28.0",
     "styled-components": "^6.1.15",
     "swiper": "^11.2.4"
   },
@@ -37,6 +40,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-google-recaptcha": "^2.1.9",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "eslint-plugin-storybook": "^0.11.2",
