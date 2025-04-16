@@ -74,8 +74,6 @@ const StyledInfoCardContent = styled.div`
 `;
 
 const StyledInfoCardHeading = styled(Heading)`
-  line-height: 24px;
-
   @media ${device.mobile} {
     line-height: 22px;
   }

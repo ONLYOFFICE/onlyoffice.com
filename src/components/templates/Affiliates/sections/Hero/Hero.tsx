@@ -1,4 +1,3 @@
-import { Container } from "@src/components/ui/Container";
 import {
   StyledHeroSection,
   StyledHeroWrapper,
@@ -12,6 +11,7 @@ import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { items } from "./data/items";
 import { Trans, useTranslation } from "next-i18next";
+import { Container } from "@src/components/ui/Container";
 
 const Hero = () => {
   const { t } = useTranslation("affiliates");
@@ -23,7 +23,7 @@ const Hero = () => {
       tabletSmallSpacing={["128px", "63px"]}
       mobileSpacing={["96px", "56px"]}
     >
-      <Container maxWidth="1354px">
+      <Container maxWidth="1419px">
         <StyledHeroWrapper>
           <StyledHeroContent>
             <StyledHeroHeading level={1} label={t("HeroTitle")} />

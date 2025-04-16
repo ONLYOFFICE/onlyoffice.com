@@ -31,6 +31,7 @@ const StyledHeroSection = styled(Section)`
 `;
 
 const StyledHeroWrapper = styled.div`
+  margin-left: 65px;
   display: grid;
   grid-template-columns: 600px auto;
   align-items: center;
@@ -39,6 +40,7 @@ const StyledHeroWrapper = styled.div`
   @media ${device.desktop} {
     grid-template-columns: 1fr;
     text-align: center;
+    margin-left: 0;
   }
 
   @media ${device.mobile} {
