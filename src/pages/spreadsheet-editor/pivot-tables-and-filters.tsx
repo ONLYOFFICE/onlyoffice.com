@@ -9,7 +9,7 @@ import { Footer } from "@src/components/modules/Footer";
 import { PivotTablesAndFiltersTemplate } from "@src/components/templates/PivotTablesAndFilters";
 
 const PivotTablesAndFiltersPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("formulas-and-functions");
+  const { t } = useTranslation("pivot-tables-and-filters");
 
   return (
     <Layout>
