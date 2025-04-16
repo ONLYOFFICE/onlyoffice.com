@@ -1,0 +1,35 @@
+{
+    "PageTitle": "Spreadsheet charts and graphs",
+    "PageDescription": "Make your spreadsheet graphs and charts look unique by designing every element in ONLYOFFICE. Make use of the chart data manager to make easy adjustments.",
+    "Header": "Illustrate data with visuals",
+    "SubHeader": "Let the numbers speak with charts, graphs, images, and shapes",
+
+    "HeroImgUrl": "/images/templates/charts-and-graphs/hero/hero.png",
+    "HeroImgUrl2x": "/images/templates/charts-and-graphs/hero/hero@2x.png",
+
+    "Feature1Title": "Add spreadsheet charts and graphs",
+    "Feature1Desc": "Choose from multiple styles and types to illustrate your data. Make use of the chart data manager to make easy adjustments: manage the data range, legends, and cell snapping, change the axis and layouts.",
+
+    "Feature2Title": "Customize your charts look",
+    "Feature2Desc": "Make your spreadsheet graphs and charts look unique by designing every element. Apply colors, gradients, and borders, and accurately place visual elements on your illustrations. Position, wrap, and resize to fit your worksheet.",
+
+    "Feature3Title": "Add shapes, images, videos, Text Art and SmartArt",
+    "Feature3Desc": "Insert any objects into your spreadsheet to support your findings. Add and edit pictures and photos, create and customize autoshapes, and use Text Art to apply headlines. Insert SmartArt elements to create a visual representation of your information. Use custom images as bullets in bulleted lists. Insert YouTube videos and play them on the spreadsheet.",
+
+    "Feature4Title": "Highlight rows and columns with sparklines",
+    "Feature4Desc": "Create miniature spreadsheet graphs to display trends on your table rows or columns. Customize their position and appearance. Choose from a selection of sparkline types and styles.",
+   
+    "Feature5Title": "Apply templates and conditional formatting",
+    "Feature5Desc": "Choose from multiple style templates to visually organize and polish your spreadsheets. View sheets with conditional formatting to browse data types, spot issues, and identify trends.",
+
+    "Feature1ImgUrl": "/images/templates/charts-and-graphs/features/pic1.png",
+    "Feature1ImgUrl2x": "/images/templates/charts-and-graphs/features/pic1@2x.png",
+    "Feature2ImgUrl": "/images/templates/charts-and-graphs/features/pic2.png",
+    "Feature2ImgUrl2x": "/images/templates/charts-and-graphs/features/pic2@2x.png",
+    "Feature3ImgUrl": "/images/templates/charts-and-graphs/features/pic3.png",
+    "Feature3ImgUrl2x": "/images/templates/charts-and-graphs/features/pic3@2x.png",
+    "Feature4ImgUrl": "/images/templates/charts-and-graphs/features/pic4.png",
+    "Feature4ImgUrl2x": "/images/templates/charts-and-graphs/features/pic4@2x.png",
+    "Feature5ImgUrl": "/images/templates/charts-and-graphs/features/pic5.png",
+    "Feature5ImgUrl2x": "/images/templates/charts-and-graphs/features/pic5@2x.png"
+}
