@@ -1,0 +1,1 @@
+export { QuoteModal } from "./QuoteModal";

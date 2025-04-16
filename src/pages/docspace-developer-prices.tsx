@@ -5,11 +5,11 @@ import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
 import { Head } from "@src/components/modules/Head";
 import { Header } from "@src/components/modules/Header";
-import { DeveloperEditionPricesTemplate } from "@src/components/templates/DeveloperEditionPrices";
+import { DocSpaceDeveloperPricesTemplate } from "@src/components/templates/DocSpaceDeveloperPrices";
 import { Footer } from "@src/components/modules/Footer";
 
-const DeveloperEditionPricesPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("developer-edition-prices");
+const DocSpaceDeveloperPricesPage = ({ locale }: ILocale) => {
+  const { t } = useTranslation("docspace-developer-prices");
 
   return (
     <Layout>
@@ -23,7 +23,7 @@ const DeveloperEditionPricesPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <DeveloperEditionPricesTemplate locale={locale} />
+        <DocSpaceDeveloperPricesTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -37,7 +37,7 @@ export async function getStaticProps({ locale }: ILocale) {
     props: {
       ...(await serverSideTranslations(locale, [
         "common",
-        "developer-edition-prices",
+        "docspace-developer-prices",
         "PricingForDevelopersFaq",
         "PricingQuoteModal",
         "PhoneInput",
@@ -47,4 +47,4 @@ export async function getStaticProps({ locale }: ILocale) {
   };
 }
 
-export default DeveloperEditionPricesPage;
+export default DocSpaceDeveloperPricesPage;

@@ -10,7 +10,7 @@ import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
 const SupportLevels = () => {
-  const { t } = useTranslation("developer-edition-prices");
+  const { t } = useTranslation("PricingForDevelopersFaq");
 
   return (
     <>

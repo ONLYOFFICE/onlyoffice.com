@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Text } from "@src/components/ui/Text";
 
 const StyledCounterSelectorWrapper = styled.div`
   display: grid;
@@ -14,4 +15,16 @@ const StyledCounterSelectorWrapper = styled.div`
   }
 `;
 
-export { StyledCounterSelectorWrapper };
+const StyledCounterSelectorHeading = styled.div`
+  display: flex;
+`;
+
+const StyledCounterSelectorHeadingText = styled(Text)`
+  margin-right: 8px;
+`;
+
+export {
+  StyledCounterSelectorWrapper,
+  StyledCounterSelectorHeading,
+  StyledCounterSelectorHeadingText,
+};

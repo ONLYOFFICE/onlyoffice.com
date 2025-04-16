@@ -1,22 +1,28 @@
 import { useState } from "react";
-import { Trans, useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import {
-  StyledHeroModal,
-  StyledHeroGetItNow,
-  StyledHeroRecaptcha,
-} from "./HeroModal.styled";
-import { IHeroModal } from "./HeroModal.types";
+  StyledQuoteModal,
+  StyledQuoteModalGetItNow,
+  StyledQuoteModalRecaptcha,
+} from "./QuoteModal.styled";
+import { IQuoteModal } from "./QuoteModal.types";
 import { Modal } from "@src/components/ui/Modal";
 import { Heading } from "@src/components/ui/Heading";
 import { Input } from "@src/components/ui/Input";
 import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
-import { Link } from "@src/components/ui/Link";
 import { PhoneInput } from "@src/components/widgets/PhoneInput";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 
-const HeroModal = ({ locale, isOpen, onClose, isOrderNow }: IHeroModal) => {
-  const { t } = useTranslation("developer-edition-prices");
+const QuoteModal = ({
+  locale,
+  isOpen,
+  onClose,
+  heading,
+  byClickedText,
+  buttonLabel,
+}: IQuoteModal) => {
+  const { t } = useTranslation("PricingQuoteModal");
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -101,16 +107,8 @@ const HeroModal = ({ locale, isOpen, onClose, isOrderNow }: IHeroModal) => {
       withCloseBtn
       positionCloseBtn="inside"
     >
-      <StyledHeroModal>
-        <Heading
-          level={4}
-          textAlign="center"
-          label={
-            isOrderNow
-              ? t("FillInTheFormToReceive")
-              : t("FillInTheFormToGetAQuote")
-          }
-        />
+      <StyledQuoteModal>
+        <Heading level={4} textAlign="center" label={heading} />
 
         <Input
           onChange={(e) => handleInputChange("fullName", e.target.value)}
@@ -211,8 +209,8 @@ const HeroModal = ({ locale, isOpen, onClose, isOrderNow }: IHeroModal) => {
           }
         />
 
-        <StyledHeroGetItNow>
-          <StyledHeroRecaptcha
+        <StyledQuoteModalGetItNow>
+          <StyledQuoteModalRecaptcha
             hl={locale}
             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
             onChange={handleRecaptchaChange}
@@ -220,37 +218,13 @@ const HeroModal = ({ locale, isOpen, onClose, isOrderNow }: IHeroModal) => {
           />
 
           <Text fontSize="12px" lineHeight="20px">
-            <Trans
-              t={t}
-              i18nKey="GetItNowText"
-              components={[
-                <Link
-                  key="0"
-                  href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5522566&doc=RVVQOEgvM2pOK0QvNzJ0Q25xSzRlVGZRUHdvYmgxUzIwNFRUUFhxbFpNWT0_IjU1MjI1NjYi0"
-                  target="_blank"
-                  color="main"
-                  textUnderline
-                  hover="underline-none"
-                />,
-                <Link
-                  key="1"
-                  href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261"
-                  target="_blank"
-                  color="main"
-                  textUnderline
-                  hover="underline-none"
-                />,
-              ]}
-            />
+            {byClickedText}
           </Text>
-        </StyledHeroGetItNow>
-        <Button
-          label={isOrderNow ? t("OrderNow") : t("GetAQuote")}
-          disabled={!isFormValid}
-        />
-      </StyledHeroModal>
+        </StyledQuoteModalGetItNow>
+        <Button label={buttonLabel} disabled={!isFormValid} />
+      </StyledQuoteModal>
     </Modal>
   );
 };
 
-export { HeroModal };
+export { QuoteModal };

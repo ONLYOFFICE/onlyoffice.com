@@ -5,7 +5,7 @@ import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
 const Faq = () => {
-  const { t } = useTranslation("developer-edition-prices");
+  const { t } = useTranslation("PricingForDevelopersFaq");
 
   return (
     <FaqCollapse

@@ -65,40 +65,11 @@ const StyledHeroItem = styled.div<{ $info?: boolean }>`
   }
 `;
 
-const StyledHeroPriceWrapper = styled.div`
-  font-size: 16px;
-  line-height: 24px;
+const StyledHeroPrice = styled.div`
+  font-size: 14px;
+  line-height: 20px;
+  color: #666666;
   text-align: center;
-
-  @media ${device.mobile} {
-    padding: 5px 0;
-    font-size: 14px;
-    line-height: 21px;
-  }
-`;
-
-const StyledHeroPrice = styled.span`
-  margin: 0 5px;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 42px;
-  letter-spacing: -0.02em;
-  color: #ff6f3d;
-
-  span {
-    font-size: 18px;
-    line-height: 24px;
-
-    @media ${device.mobile} {
-      font-size: 16px;
-      line-height: 24px;
-    }
-  }
-
-  @media ${device.mobile} {
-    font-size: 24px;
-    line-height: 32px;
-  }
 `;
 
 const StyledHeroLink = styled(Link)`
@@ -111,57 +82,6 @@ const StyledHeroLink = styled(Link)`
     padding: 6px 0;
     font-size: 14px;
     line-height: 23px;
-  }
-`;
-
-const StyledHeroCheckboxWrapper = styled.div`
-  display: flex;
-  column-gap: 8px;
-`;
-
-const StyledHeroTotal = styled.div`
-  border-top: 1px solid #cccccc;
-`;
-
-const StyledHeroTotalWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0 3px;
-
-  @media ${device.mobile} {
-    padding: 20px 0 8px;
-  }
-`;
-
-const StyledHeroTotalPrice = styled.div`
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 52px;
-  letter-spacing: -0.02em;
-  color: #ff6f3d;
-
-  span {
-    font-size: 24px;
-    line-height: 32px;
-
-    @media ${device.mobile} {
-      font-size: 18px;
-      line-height: 24px;
-    }
-  }
-
-  @media ${device.mobile} {
-    font-size: 24px;
-    line-height: 38px;
-  }
-`;
-
-const StyledHeroBtnWrapper = styled.div`
-  padding-top: 40px;
-
-  @media ${device.mobile} {
-    padding-top: 32px;
   }
 `;
 
@@ -178,13 +98,7 @@ export {
   StyledHeroText,
   StyledHeroWrapper,
   StyledHeroItem,
-  StyledHeroPriceWrapper,
   StyledHeroPrice,
   StyledHeroLink,
-  StyledHeroCheckboxWrapper,
-  StyledHeroBtnWrapper,
-  StyledHeroTotal,
-  StyledHeroTotalWrapper,
-  StyledHeroTotalPrice,
   StyledHeroCaption,
 };

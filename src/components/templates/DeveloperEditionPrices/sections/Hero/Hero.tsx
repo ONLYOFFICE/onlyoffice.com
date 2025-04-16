@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, Trans } from "next-i18next";
 import {
   StyledHero,
   StyledHeroHeader,
@@ -8,13 +8,8 @@ import {
   StyledHeroItem,
   StyledHeroPriceWrapper,
   StyledHeroPrice,
-  StyledHeroList,
   StyledHeroLink,
-  StyledHeroTabsList,
-  StyledHeroCheckboxes,
   StyledHeroCheckboxWrapper,
-  StyledHeroBox,
-  StyledHeroBoxItem,
   StyledHeroBtnWrapper,
   StyledHeroTotal,
   StyledHeroTotalWrapper,
@@ -27,61 +22,66 @@ import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
 import { Button } from "@src/components/ui/Button";
 import { Tooltip } from "@src/components/ui/Tooltip";
+import { Link } from "@src/components/ui/Link";
 import { LabeledWrapper } from "@src/components/widgets/LabeledWrapper";
 import { ToggleButtons } from "@src/components/widgets/ToggleButtons";
 import { Tabs } from "@src/components/widgets/Tabs";
-import { CounterSelectorWrapper } from "./sub-components/CounterSelectorWrapper";
 import { CounterSelector } from "@src/components/widgets/CounterSelector";
 import { Text } from "@src/components/ui/Text";
-import { HeroModal } from "./sub-components/HeroModal";
+import { List } from "@src/components/widgets/pricing/List";
+import { CounterSelectorWrapper } from "@src/components/widgets/pricing/CounterSelectorWrapper";
+import { SelectorsWrapper } from "@src/components/widgets/pricing/SelectorsWrapper";
+import { SelectorItemWrapper } from "@src/components/widgets/pricing/SelectorItemWrapper";
+import { QuoteModal } from "@src/components/widgets/pricing/QuoteModal";
 
 const Hero = ({ locale }: ILocale) => {
   const { t } = useTranslation("developer-edition-prices");
 
-  const [hosting, setHosting] = useState("on-premises");
-  const [supportLevel, setSupportLevel] = useState("plus");
-  const [accessAutomationApi, setAccessAutomationApi] = useState(false);
-  const [liveViewer, setLiveViewer] = useState(false);
-  const [nativeMobileApps, setNativeMobileApps] = useState(false);
-  const [desktopApps, setDesktopApps] = useState(false);
-  const [trainingCourses, setTrainingCourses] = useState(false);
-  const [development, setDevelopment] = useState(true);
-  const [developmentServers, setDevelopmentServers] = useState("1");
-  const [production, setProduction] = useState(false);
-  const [productionServers, setProductionServers] = useState("1");
-  const [productionConnectors, setProductionConnectors] = useState("250");
-  const [branding, setBranding] = useState("standard");
-  const [multiTenancy, setMultiTenancy] = useState(false);
-  const [disasterRecovery, setDisasterRecovery] = useState(false);
-  const [multiServerDeployment, setMultiServerDeployment] = useState(false);
-  const [nonProduction, setNonProduction] = useState(false);
-  const [nonProductionServers, setNonProductionServers] = useState("1");
-
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    hosting: "On-premises",
+    development: true,
+    devServersNumber: "1",
+    production: false,
+    prodServerNumber: "1",
+    connectionsNumber: "250",
+    nonProduction: false,
+    nonProdServerNumber: "1",
+    supportLevel: "Plus",
+    branding: "Standard branding",
+    multiTenancy: false,
+    disasterRecovery: false,
+    multiServerDeployment: false,
+    accessToAPI: false,
+    liveViewer: false,
+    nativeMobileApps: false,
+    desktopApps: false,
+    trainingCourses: false,
+  });
 
-  const hostingIsCloud = hosting === "cloud";
-  const hostingIsOnPremises = hosting === "on-premises";
+  const hostingIsCloud = formData.hosting === "Cloud";
+  const hostingIsOnPremises = formData.hosting === "On-premises";
 
   const isGetIsQuote = [
-    hosting === "cloud",
-    !development,
-    production,
-    branding !== "standard",
-    multiTenancy,
-    multiServerDeployment,
-    accessAutomationApi,
-    liveViewer,
-    nativeMobileApps,
-    desktopApps,
-    trainingCourses,
-    developmentServers !== "1",
+    formData.hosting === "Cloud",
+    !formData.development,
+    formData.production,
+    formData.branding !== "Standard branding",
+    formData.multiTenancy,
+    formData.multiServerDeployment,
+    formData.accessToAPI,
+    formData.liveViewer,
+    formData.nativeMobileApps,
+    formData.desktopApps,
+    formData.trainingCourses,
+    formData.devServersNumber !== "1",
   ].some(Boolean);
 
   const isOrderNow = [
-    hosting === "on-premises",
-    development,
-    developmentServers === "1",
-    disasterRecovery,
+    formData.hosting === "On-premises",
+    formData.development,
+    formData.devServersNumber === "1",
+    formData.disasterRecovery,
   ].every(Boolean);
 
   return (
@@ -102,32 +102,28 @@ const Hero = ({ locale }: ILocale) => {
           <StyledHeroItem $info={true}>
             <Heading level={3} textAlign="center" label={t("DocsDeveloper")} />
 
-            <StyledHeroPriceWrapper>
-              {t("From")}
-              <StyledHeroPrice>
-                <span>$</span>
-                {hostingIsCloud ? "12" : "1950"}
-              </StyledHeroPrice>
-              {hostingIsCloud ? t("user/month") : t("PerYear")}
-            </StyledHeroPriceWrapper>
+            {hostingIsCloud && (
+              <StyledHeroPriceWrapper>
+                {t("From")}
+                <StyledHeroPrice>
+                  <span>$</span>
+                  12
+                </StyledHeroPrice>
+                {t("user/month")}
+              </StyledHeroPriceWrapper>
+            )}
 
-            <StyledHeroList>
-              <li>{t("OnlineEditors")}</li>
-              <li>{t("MobileWebEditors")}</li>
-              {hostingIsCloud ? (
-                <>
-                  <li>{t("ConversionService")}</li>
-                  <li>{t("BrandingOptions")}</li>
-                </>
-              ) : (
-                <>
-                  <li>{t("DocumentBuilder")}</li>
-                  <li>{t("ConversionService")}</li>
-                </>
-              )}
-              <li>{t("AllMinorAndMajorUpgrades")}</li>
-              <li>{t("ProfessionalAssistance")}</li>
-            </StyledHeroList>
+            <List
+              items={[
+                t("OnlineEditors"),
+                t("MobileWebEditors"),
+                ...(hostingIsCloud
+                  ? [t("ConversionService"), t("BrandingOptions")]
+                  : [t("DocumentBuilder"), t("ConversionService")]),
+                t("AllMinorAndMajorUpgrades"),
+                t("ProfessionalAssistance"),
+              ]}
+            />
 
             {hostingIsOnPremises && (
               <StyledHeroLink
@@ -144,30 +140,37 @@ const Hero = ({ locale }: ILocale) => {
             <LabeledWrapper label={t("Hosting")}>
               <ToggleButtons
                 items={[
-                  { id: "cloud", label: { name: t("Cloud") } },
-                  { id: "on-premises", label: { name: t("OnPremises") } },
+                  { id: "Cloud", label: { name: t("Cloud") } },
+                  { id: "On-premises", label: { name: t("OnPremises") } },
                 ]}
-                selected={hosting}
-                onChange={(value) => setHosting(value)}
+                selected={formData.hosting}
+                onChange={(value) =>
+                  setFormData((prev) => ({ ...prev, hosting: value }))
+                }
               />
             </LabeledWrapper>
 
             {hostingIsOnPremises && (
               <>
                 <LabeledWrapper label={t("LicensingPurpose")}>
-                  <StyledHeroBox>
+                  <SelectorsWrapper>
                     <div>
-                      <StyledHeroBoxItem>
+                      <SelectorItemWrapper>
                         <Checkbox
-                          checked={development}
-                          onChange={() => setDevelopment(!development)}
+                          checked={formData.development}
+                          onChange={() =>
+                            setFormData((prev) => ({
+                              ...prev,
+                              development: !prev.development,
+                            }))
+                          }
                           label={t("Development")}
                           size="small"
                         />
-                      </StyledHeroBoxItem>
+                      </SelectorItemWrapper>
 
-                      {development && (
-                        <StyledHeroBoxItem>
+                      {formData.development && (
+                        <SelectorItemWrapper>
                           <CounterSelectorWrapper
                             heading={t("NumberOfServers")}
                             subHeading={t("20ConnectionsPerEachServer")}
@@ -175,46 +178,63 @@ const Hero = ({ locale }: ILocale) => {
                             <CounterSelector
                               size="small"
                               variant="input"
-                              autoFocus={development}
-                              value={developmentServers}
-                              onChange={(value) => setDevelopmentServers(value)}
+                              autoFocus={formData.development}
+                              value={formData.devServersNumber}
+                              onChange={(value) =>
+                                setFormData((prev) => ({
+                                  ...prev,
+                                  devServersNumber: value,
+                                }))
+                              }
                             />
                           </CounterSelectorWrapper>
-                        </StyledHeroBoxItem>
+                        </SelectorItemWrapper>
                       )}
                     </div>
 
                     <div>
-                      <StyledHeroBoxItem>
+                      <SelectorItemWrapper>
                         <Checkbox
-                          checked={production}
-                          onChange={() => setProduction(!production)}
+                          checked={formData.production}
+                          onChange={() =>
+                            setFormData((prev) => ({
+                              ...prev,
+                              production: !prev.production,
+                            }))
+                          }
                           label={t("Production")}
                           size="small"
                         />
-                      </StyledHeroBoxItem>
+                      </SelectorItemWrapper>
 
-                      {production && (
+                      {formData.production && (
                         <>
-                          <StyledHeroBoxItem>
+                          <SelectorItemWrapper>
                             <CounterSelectorWrapper
                               heading={t("NumberOfServers")}
                             >
                               <CounterSelector
                                 size="small"
                                 variant="input"
-                                autoFocus={production}
-                                value={productionServers}
+                                autoFocus={formData.production}
+                                value={formData.prodServerNumber}
                                 onChange={(value) =>
-                                  setProductionServers(value)
+                                  setFormData((prev) => ({
+                                    ...prev,
+                                    prodServerNumber: value,
+                                  }))
                                 }
                               />
                             </CounterSelectorWrapper>
-                          </StyledHeroBoxItem>
+                          </SelectorItemWrapper>
 
-                          <StyledHeroBoxItem>
+                          <SelectorItemWrapper>
                             <CounterSelectorWrapper
                               heading={t("NumberOfConnectors")}
+                              tooltip={{
+                                id: "number-of-connectors",
+                                content: t("NumberOfConnectorsTooltip"),
+                              }}
                             >
                               <CounterSelector
                                 size="small"
@@ -224,86 +244,126 @@ const Hero = ({ locale }: ILocale) => {
                                   { id: "1000", label: "1000" },
                                   { id: "more", label: t("More") },
                                 ]}
-                                selected={productionConnectors}
-                                onChange={(newValue) =>
-                                  setProductionConnectors(newValue)
+                                selected={formData.connectionsNumber}
+                                onChange={(value) =>
+                                  setFormData((prev) => ({
+                                    ...prev,
+                                    connectionsNumber: value,
+                                  }))
                                 }
                               />
                             </CounterSelectorWrapper>
-                          </StyledHeroBoxItem>
+                          </SelectorItemWrapper>
                         </>
                       )}
                     </div>
 
-                    {production && (
+                    {formData.production && (
                       <div>
-                        <StyledHeroBoxItem>
-                          <Checkbox
-                            checked={nonProduction}
-                            onChange={() => setNonProduction(!nonProduction)}
-                            label={t("NonProduction")}
-                            size="small"
-                          />
-                        </StyledHeroBoxItem>
+                        <SelectorItemWrapper>
+                          <StyledHeroCheckboxWrapper>
+                            <Checkbox
+                              checked={formData.nonProduction}
+                              onChange={() =>
+                                setFormData((prev) => ({
+                                  ...prev,
+                                  nonProduction: !prev.nonProduction,
+                                }))
+                              }
+                              label={t("NonProduction")}
+                              size="small"
+                            />
+                            <Tooltip
+                              id="non-production"
+                              content={t("NonProductionTooltip")}
+                              infoIcon
+                              place="bottom-start"
+                            ></Tooltip>
+                          </StyledHeroCheckboxWrapper>
+                        </SelectorItemWrapper>
 
-                        {nonProduction && (
-                          <StyledHeroBoxItem>
+                        {formData.nonProduction && (
+                          <SelectorItemWrapper>
                             <CounterSelectorWrapper
                               heading={t("NumberOfServers")}
                             >
                               <CounterSelector
                                 size="small"
                                 variant="input"
-                                autoFocus={nonProduction}
-                                value={nonProductionServers}
+                                autoFocus={formData.nonProduction}
+                                value={formData.nonProdServerNumber}
                                 onChange={(value) =>
-                                  setNonProductionServers(value)
+                                  setFormData((prev) => ({
+                                    ...prev,
+                                    nonProdServerNumber: value,
+                                  }))
                                 }
                               />
                             </CounterSelectorWrapper>
-                          </StyledHeroBoxItem>
+                          </SelectorItemWrapper>
                         )}
                       </div>
                     )}
-                  </StyledHeroBox>
+                  </SelectorsWrapper>
                 </LabeledWrapper>
 
                 <LabeledWrapper label={t("Branding")}>
                   <ToggleButtons
                     items={[
-                      { id: "standard", label: { name: t("Standard") } },
-                      { id: "white-label", label: { name: t("WhiteLabel") } },
+                      {
+                        id: "Standard branding",
+                        label: { name: t("Standard") },
+                      },
+                      { id: "White Label", label: { name: t("WhiteLabel") } },
                     ]}
-                    selected={branding}
-                    onChange={(value) => setBranding(value)}
+                    selected={formData.branding}
+                    onChange={(value) =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        branding: value,
+                      }))
+                    }
                   />
                 </LabeledWrapper>
 
                 <LabeledWrapper label={t("Scalability")}>
-                  <StyledHeroCheckboxes>
+                  <SelectorsWrapper>
                     <Checkbox
-                      checked={multiTenancy}
-                      onChange={() => setMultiTenancy(!multiTenancy)}
+                      checked={formData.multiTenancy}
+                      onChange={() =>
+                        setFormData((prev) => ({
+                          ...prev,
+                          multiTenancy: !prev.multiTenancy,
+                        }))
+                      }
                       label={t("SupportForMultiTenancy")}
                       size="small"
                     />
 
                     <Checkbox
-                      checked={disasterRecovery}
-                      onChange={() => setDisasterRecovery(!disasterRecovery)}
+                      checked={formData.disasterRecovery}
+                      onChange={() =>
+                        setFormData((prev) => ({
+                          ...prev,
+                          disasterRecovery: !prev.disasterRecovery,
+                        }))
+                      }
                       label={t("SupportForDisasterRecovery")}
                       size="small"
                     />
 
                     <Checkbox
-                      checked={multiServerDeployment}
+                      checked={formData.multiServerDeployment}
                       onChange={() =>
-                        setMultiServerDeployment(!multiServerDeployment)
+                        setFormData((prev) => ({
+                          ...prev,
+                          multiServerDeployment: !prev.multiServerDeployment,
+                        }))
                       }
                       label={t("SupportForMultiServerDeployment")}
                       size="small"
                     />
-                  </StyledHeroCheckboxes>
+                  </SelectorsWrapper>
                 </LabeledWrapper>
               </>
             )}
@@ -312,64 +372,78 @@ const Hero = ({ locale }: ILocale) => {
               <Tabs
                 items={[
                   {
-                    id: "basic",
+                    id: "Basic",
                     label: t("Basic"),
                     content: (
-                      <StyledHeroTabsList>
-                        <li>{t("NumberOfRequestsIncluded5")}</li>
-                        <li>{t("FirstResponseTime48")}</li>
-                        <li>{t("Migration")}</li>
-                        <li>{t("UpdatesInstallation")}</li>
-                        <li>{t("IntegrationOfEditors")}</li>
-                        <li>{t("Consulting")}</li>
-                      </StyledHeroTabsList>
+                      <List
+                        variant="small"
+                        items={[
+                          t("NumberOfRequestsIncluded5"),
+                          t("FirstResponseTime48"),
+                          t("Migration"),
+                          t("UpdatesInstallation"),
+                          t("IntegrationOfEditors"),
+                          t("Consulting"),
+                        ]}
+                      />
                     ),
                   },
                   {
-                    id: "plus",
+                    id: "Plus",
                     label: t("Plus"),
                     content: (
-                      <StyledHeroTabsList>
-                        <li>{t("NumberOfRequestsIncluded10")}</li>
-                        <li>{t("FirstResponseTime24")}</li>
-                        <li>{t("Migration")}</li>
-                        <li>{t("UpdatesInstallation")}</li>
-                        <li>{t("IntegrationOfEditors")}</li>
-                        <li>{t("Consulting")}</li>
-                      </StyledHeroTabsList>
+                      <List
+                        variant="small"
+                        items={[
+                          t("NumberOfRequestsIncluded10"),
+                          t("FirstResponseTime24"),
+                          t("Migration"),
+                          t("UpdatesInstallation"),
+                          t("IntegrationOfEditors"),
+                          t("Consulting"),
+                        ]}
+                      />
                     ),
                   },
                   {
-                    id: "premium",
+                    id: "Premium",
                     label: t("Premium"),
                     content: (
-                      <StyledHeroTabsList>
-                        <li>{t("NumberOfRequestsIncluded20")}</li>
-                        <li>{t("FirstResponseTime12")}</li>
-                        <li>{t("Migration")}</li>
-                        <li>{t("UpdatesInstallation")}</li>
-                        <li>{t("IntegrationOfEditors")}</li>
-                        <li>{t("Consulting")}</li>
-                        <li>{t("BrandingAssistance")}</li>
-                        <li>{t("MonitoringSystem")}</li>
-                      </StyledHeroTabsList>
+                      <List
+                        variant="small"
+                        items={[
+                          t("NumberOfRequestsIncluded20"),
+                          t("FirstResponseTime12"),
+                          t("Migration"),
+                          t("UpdatesInstallation"),
+                          t("IntegrationOfEditors"),
+                          t("Consulting"),
+                          t("BrandingAssistance"),
+                          t("MonitoringSystem"),
+                        ]}
+                      />
                     ),
                   },
                 ]}
-                selected={supportLevel}
+                selected={formData.supportLevel}
                 bgColor="#f5f5f5"
                 collapsible
-                onChange={(value) => setSupportLevel(value)}
+                onChange={(value) =>
+                  setFormData({ ...formData, supportLevel: value })
+                }
               />
             </LabeledWrapper>
 
             <LabeledWrapper label={t("AdditionalToolsAndServices")}>
-              <StyledHeroCheckboxes>
+              <SelectorsWrapper>
                 <StyledHeroCheckboxWrapper>
                   <Checkbox
-                    checked={accessAutomationApi}
+                    checked={formData.accessToAPI}
                     onChange={() =>
-                      setAccessAutomationApi(!accessAutomationApi)
+                      setFormData((prev) => ({
+                        ...prev,
+                        accessToAPI: !prev.accessToAPI,
+                      }))
                     }
                     label={t("AccessToAutomationAPI")}
                     size="small"
@@ -383,33 +457,53 @@ const Hero = ({ locale }: ILocale) => {
                 </StyledHeroCheckboxWrapper>
 
                 <Checkbox
-                  checked={liveViewer}
-                  onChange={() => setLiveViewer(!liveViewer)}
+                  checked={formData.liveViewer}
+                  onChange={() =>
+                    setFormData((prev) => ({
+                      ...prev,
+                      liveViewer: !prev.liveViewer,
+                    }))
+                  }
                   label={t("LiveViewer")}
                   size="small"
                 />
 
                 <Checkbox
-                  checked={nativeMobileApps}
-                  onChange={() => setNativeMobileApps(!nativeMobileApps)}
+                  checked={formData.nativeMobileApps}
+                  onChange={() =>
+                    setFormData((prev) => ({
+                      ...prev,
+                      nativeMobileApps: !prev.nativeMobileApps,
+                    }))
+                  }
                   label={t("NativeMobileApps")}
                   size="small"
                 />
 
                 <Checkbox
-                  checked={desktopApps}
-                  onChange={() => setDesktopApps(!desktopApps)}
+                  checked={formData.desktopApps}
+                  onChange={() =>
+                    setFormData((prev) => ({
+                      ...prev,
+                      desktopApps: !prev.desktopApps,
+                    }))
+                  }
                   label={t("DesktopApps")}
                   size="small"
                 />
 
                 <Checkbox
-                  checked={trainingCourses}
-                  onChange={() => setTrainingCourses(!trainingCourses)}
+                  checked={formData.trainingCourses}
+                  onChange={() =>
+                    setFormData((prev) => ({
+                      ...prev,
+                      trainingCourses: !prev.trainingCourses,
+                    }))
+                  }
                   label={t("TrainingCourses")}
                   size="small"
                 />
-              </StyledHeroCheckboxes>
+              </SelectorsWrapper>
             </LabeledWrapper>
 
             <StyledHeroTotal>
@@ -418,9 +512,9 @@ const Hero = ({ locale }: ILocale) => {
                   <Heading level={4} color="#444444" label={t("Total")} />
                   <StyledHeroTotalPrice>
                     <span>$</span>
-                    {supportLevel === "basic"
+                    {formData.supportLevel === "Basic"
                       ? "1950"
-                      : supportLevel === "plus"
+                      : formData.supportLevel === "Plus"
                       ? "3500"
                       : "4500"}
                   </StyledHeroTotalPrice>
@@ -448,7 +542,7 @@ const Hero = ({ locale }: ILocale) => {
           </StyledHeroItem>
         </StyledHeroWrapper>
 
-        {supportLevel === "premium" && (
+        {formData.supportLevel === "Premium" && (
           <StyledHeroCaption>
             <Text as="div" size={3}>
               <Text as="span" color="main" label="*" />{" "}
@@ -464,11 +558,40 @@ const Hero = ({ locale }: ILocale) => {
           </StyledHeroCaption>
         )}
 
-        <HeroModal
+        <QuoteModal
           locale={locale}
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
-          isOrderNow={isOrderNow}
+          heading={
+            isOrderNow
+              ? t("FillInTheFormToReceive")
+              : t("FillInTheFormToGetAQuote")
+          }
+          byClickedText={
+            <Trans
+              t={t}
+              i18nKey="GetItNowText"
+              components={[
+                <Link
+                  key="0"
+                  href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5522566&doc=RVVQOEgvM2pOK0QvNzJ0Q25xSzRlVGZRUHdvYmgxUzIwNFRUUFhxbFpNWT0_IjU1MjI1NjYi0"
+                  target="_blank"
+                  color="main"
+                  textUnderline
+                  hover="underline-none"
+                />,
+                <Link
+                  key="1"
+                  href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261"
+                  target="_blank"
+                  color="main"
+                  textUnderline
+                  hover="underline-none"
+                />,
+              ]}
+            />
+          }
+          buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
         />
       </Container>
     </StyledHero>

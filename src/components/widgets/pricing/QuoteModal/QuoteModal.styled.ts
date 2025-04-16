@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import ReCAPTCHA from "react-google-recaptcha";
 
-const StyledHeroModal = styled.div`
+const StyledQuoteModal = styled.div`
   display: grid;
   row-gap: 32px;
   border-radius: 5px;
@@ -15,7 +15,7 @@ const StyledHeroModal = styled.div`
   }
 `;
 
-const StyledHeroGetItNow = styled.div`
+const StyledQuoteModalGetItNow = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   gap: 16px;
@@ -25,11 +25,15 @@ const StyledHeroGetItNow = styled.div`
   }
 `;
 
-const StyledHeroRecaptcha = styled(ReCAPTCHA)`
+const StyledQuoteModalRecaptcha = styled(ReCAPTCHA)`
   @media ${device.mobile} {
     overflow-x: auto;
     overflow-y: hidden;
   }
 `;
 
-export { StyledHeroModal, StyledHeroGetItNow, StyledHeroRecaptcha };
+export {
+  StyledQuoteModal,
+  StyledQuoteModalGetItNow,
+  StyledQuoteModalRecaptcha,
+};

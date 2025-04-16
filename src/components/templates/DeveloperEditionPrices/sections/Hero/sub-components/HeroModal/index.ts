@@ -1,1 +1,0 @@
-export { HeroModal } from "./HeroModal";
