@@ -1,6 +1,9 @@
 interface ISocialIcon {
+  /** Social icon position */
   iconPosition: string;
+  /** Social icon link */
   link?: string;
+  /** Social icon title */
   title: string;
 }
 

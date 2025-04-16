@@ -1,3 +1,4 @@
+import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
@@ -45,12 +46,19 @@ const StyledSocialMediaIcons = styled.ul`
   }
 `;
 
+const StyledSocialMediaIconButton = styled.button`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+`;
+
 const StyledSocialMediaIcon = styled.li<{ $iconPosition: string }>`
   background-image: url("/images/templates/contribute/improve/social-icons.svg");
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
-  cursor: pointer;
   background-position-x: ${({ $iconPosition }) => $iconPosition};
   filter: grayscale(1);
   transition: filter 0.2s;
@@ -58,17 +66,19 @@ const StyledSocialMediaIcon = styled.li<{ $iconPosition: string }>`
   &:hover {
     filter: grayscale(0);
   }
+`;
 
-  a {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-  }
+const StyledSocialMediaIconLink = styled(Link)`
+  display: inline-block;
+  width: 24px;
+  height: 24px;
 `;
 
 export {
   ImproveItems,
   StyledSocialMeadiaText,
   StyledSocialMediaIcons,
+  StyledSocialMediaIconButton,
   StyledSocialMediaIcon,
+  StyledSocialMediaIconLink,
 };

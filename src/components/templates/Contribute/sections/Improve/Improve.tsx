@@ -6,6 +6,8 @@ import {
   ImproveItems,
   StyledSocialMeadiaText,
   StyledSocialMediaIcon,
+  StyledSocialMediaIconButton,
+  StyledSocialMediaIconLink,
   StyledSocialMediaIcons,
 } from "./Improve.styled";
 import { items } from "./data/items";
@@ -55,7 +57,14 @@ const Improve = () => {
               $iconPosition={item.iconPosition}
               onClick={!item.link ? () => setIsMailModalOpen(true) : undefined}
             >
-              {item.link && <Link href={t(item.link)} target="_blank" />}
+              {item.link ? (
+                <StyledSocialMediaIconLink
+                  href={t(item.link)}
+                  target="_blank"
+                />
+              ) : (
+                <StyledSocialMediaIconButton />
+              )}
             </StyledSocialMediaIcon>
           ))}
         </StyledSocialMediaIcons>

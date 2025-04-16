@@ -1,6 +1,9 @@
 export interface ILogo {
+  /** URL of the logo */
   href: string;
+  /** Position-y of the logo */
   positionY: string;
+  /** Position-y of the logo on mobile */
   mobilePositionY: string;
 }
 

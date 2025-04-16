@@ -1,3 +1,4 @@
+import { Link } from "@src/components/ui/Link";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
@@ -25,7 +26,8 @@ const StyledImproveItem = styled.div<{
       width: 87px;
       height: 87px;
       background-size: auto 87px;
-      background-position: ${({ $mobilePositionX }) => `${$mobilePositionX} center`};
+      background-position: ${({ $mobilePositionX }) =>
+        `${$mobilePositionX} center`};
     }
   }
 
@@ -45,14 +47,14 @@ const StyledImproveContent = styled.div`
   display: grid;
   gap: 16px;
   align-self: center;
+`;
 
-  a {
-    line-height: 24px;
+const StyledImproveLink = styled(Link)`
+  line-height: 24px;
 
-    @media ${device.mobile} {
-      font-size: 13px;
-    }
+  @media ${device.mobile} {
+    font-size: 13px;
   }
 `;
 
-export { StyledImproveItem, StyledImproveContent };
+export { StyledImproveItem, StyledImproveContent, StyledImproveLink };

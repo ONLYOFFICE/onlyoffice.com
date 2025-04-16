@@ -5,8 +5,9 @@ import {
   StyledHeroImage,
   StyledHeroImages,
   StyledScroll,
+  StyledHeroHeading,
+  StyledHeroText,
 } from "./Hero.styled";
-import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { images } from "./data/images";
 import { getPreparedImages } from "./helper/random";
@@ -28,7 +29,7 @@ const Hero = () => {
     <StyledHeroSection>
       <Container>
         <StyledHeroContent>
-          <Heading>
+          <StyledHeroHeading>
             <Trans
               t={t}
               i18nKey="HeroTitle"
@@ -37,8 +38,8 @@ const Hero = () => {
                 span: <Text as="span" color="#FF6F3D" />,
               }}
             />
-          </Heading>
-          <Text size={1}>{t("HeroText")}</Text>
+          </StyledHeroHeading>
+          <StyledHeroText size={1}>{t("HeroText")}</StyledHeroText>
           <StyledScroll>
             <StyledHeroImages>
               {heroImages.map(({ image, ...item }, index) => {

@@ -2,6 +2,8 @@ import styled, { keyframes } from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { IHeroImage } from "./Hero.types";
+import { Text } from "@src/components/ui/Text";
+import { Heading } from "@src/components/ui/Heading";
 
 const fadeIn = keyframes`
   from {
@@ -78,35 +80,35 @@ const StyledHeroContent = styled.div`
     text-align: center;
     padding-top: 57px;
   }
+`;
 
-  h1 {
-    font-size: 48px;
-    line-height: 133%;
-    margin-bottom: 16px;
+const StyledHeroHeading = styled(Heading)`
+  font-size: 48px;
+  line-height: 133%;
+  margin-bottom: 16px;
 
-    @media ${device.tablet} {
-      font-size: 36px;
-      margin-bottom: 24px;
-    }
-
-    @media ${device.mobile} {
-      font-size: 30px;
-      margin-bottom: 16px;
-    }
+  @media ${device.tablet} {
+    font-size: 36px;
+    margin-bottom: 24px;
   }
 
-  p {
-    max-width: 461px;
+  @media ${device.mobile} {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+`;
 
-    @media ${device.tablet} {
-      max-width: 409px;
-    }
+const StyledHeroText = styled(Text)`
+  max-width: 461px;
 
-    @media ${device.mobile} {
-      max-width: 100%;
-      font-size: 14px;
-      line-height: 21px;
-    }
+  @media ${device.tablet} {
+    max-width: 409px;
+  }
+
+  @media ${device.mobile} {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 21px;
   }
 `;
 
@@ -164,6 +166,8 @@ export {
   StyledHeroSection,
   StyledHeroImages,
   StyledHeroContent,
+  StyledHeroHeading,
+  StyledHeroText,
   StyledHeroImage,
   StyledScroll,
 };
