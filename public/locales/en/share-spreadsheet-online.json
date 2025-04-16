@@ -1,0 +1,35 @@
+{
+    "PageTitle": "Share spreadsheets online",
+    "PageDescription": "Share your worksheets with Full Access, or View Only, and let guests leave comments. Set permission for custom filtering, copying and printing of spreadsheets.",
+    "Header": "Bring team efforts together",
+    "SubHeader": "Make Collaborative editing of worksheets seamless and efficient",
+
+    "HeroImgUrl": "/images/templates/share-spreadsheet-online/hero/hero.png",
+    "HeroImgUrl2x": "/images/templates/share-spreadsheet-online/hero/hero@2x.png",
+
+    "Feature1Title": "Share spreadsheets online",
+    "Feature1Desc": "Share your worksheets with Full Access, or View Only, and let guests leave comments. Set permission for custom filtering to hide irrelevant data and let colleagues apply filters independently. Get and share links to the selected range so that other co-authors can quickly find necessary data even in large workbooks. Restrict the copying and printing of spreadsheets.",
+
+    "Feature2Title": "Create personal Sheet Views",
+    "Feature2Desc": "Filter and sort sheets in individual Sheet Views, and save them as presets, so you can get back to your preferred sorting and filtering parameters at any time. Saved Sheet Views are available to your team so you can quickly show them your findings.",
+
+    "Feature3Title": "Collaborate on Excel spreadsheets in real-time",
+    "Feature3Desc": "Co-edit in real-time using Fast mode to show your input immediately to collaborators and see where other users work with color indicators for selected cells. Activate Strict mode to privately edit cells and tables in shared spreadsheets without distractions.",
+
+    "Feature4Title": "Track your spreadsheet versions",
+    "Feature4Desc": "View all the changes made to a spreadsheet, their authors and dates. Browse the version history and restore any previous version if necessary.",
+   
+    "Feature5Title": "Comment, mention, chat",
+    "Feature5Desc": "Add comments to cells to ask questions and raise issues. Mention users in comments to invite them to the conversation. Use the built-in live chat, connect Telegram or Jitsi via plugins to communicate right in the editor.",
+
+    "Feature1ImgUrl": "/images/templates/share-spreadsheet-online/features/pic1.png",
+    "Feature1ImgUrl2x": "/images/templates/share-spreadsheet-online/features/pic1@2x.png",
+    "Feature2ImgUrl": "/images/templates/share-spreadsheet-online/features/pic2.png",
+    "Feature2ImgUrl2x": "/images/templates/share-spreadsheet-online/features/pic2@2x.png",
+    "Feature3ImgUrl": "/images/templates/share-spreadsheet-online/features/pic3.png",
+    "Feature3ImgUrl2x": "/images/templates/share-spreadsheet-online/features/pic3@2x.png",
+    "Feature4ImgUrl": "/images/templates/share-spreadsheet-online/features/pic4.png",
+    "Feature4ImgUrl2x": "/images/templates/share-spreadsheet-online/features/pic4@2x.png",
+    "Feature5ImgUrl": "/images/templates/share-spreadsheet-online/features/pic5.png",
+    "Feature5ImgUrl2x": "/images/templates/share-spreadsheet-online/features/pic5@2x.png"
+}
