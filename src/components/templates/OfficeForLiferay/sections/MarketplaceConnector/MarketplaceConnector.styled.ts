@@ -15,7 +15,7 @@ const StyledMarketplaceConnector = styled.section`
     width: 100%;
     background-image: url("/images/templates/office-for-liferay/marketplace-connector/bg.svg"), url("/images/templates/office-for-liferay/marketplace-connector/bg.svg");
     background-position-y: 100px, -235px;
-    background-position-x: 5%, 119%;
+    background-position-x: calc(50% - 588px), calc(50% + 891px);
     background-size: 600px, 600px;
     background-repeat: no-repeat;
     transform: translateY(-50%);
@@ -23,21 +23,24 @@ const StyledMarketplaceConnector = styled.section`
 
     @media ${device.desktop} {
       background-image: url("/images/templates/office-for-liferay/marketplace-connector/bg.svg");
-      background-position-y: 47px;
-      background-position-x: -220px;
-      background-size: 600px;
+      background-size: contain;
+      background-position: center;
+      left: calc(50% - 888px);
+      top: calc(50% + 167px);
+      width: 600px;
+      height: 600px;
     }
 
     @media ${device.tabletS} {
-      left: calc(50% - 141px);
+      top: calc(50% + 113px);
+      left: calc(50% - 557px);
     }
 
     @media ${device.mobile} {
-      top: calc(50% + 56px);
-      right: 0;
-      width: 250px;
-      height: 250px;
-      left: initial;
+      top: calc(50% + 120px);
+      width: 300px;
+      height: 300px;
+      left: calc(50% - 44px);
     }
   }
 `;

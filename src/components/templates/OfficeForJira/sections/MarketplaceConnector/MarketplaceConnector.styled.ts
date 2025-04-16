@@ -62,7 +62,7 @@ const StyledMarketplaceConnectorBody = styled.div`
 `;
 
 const StyledMarketplaceConnectorImg = styled.div`
-  width: 544px;
+  width: 552px;
   height: 100%;
   background-image: url("/images/templates/office-for-jira/marketplace-connector/big-apps.svg");
   background-repeat: no-repeat;
