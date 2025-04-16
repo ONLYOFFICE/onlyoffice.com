@@ -25,11 +25,12 @@ const Features = () => {
                 icon={{
                   url: item.icon.url,
                   positionX: item.icon.positionX,
+                  positionY: "center",
                 }}
-                heading={
+                text={
                   <Trans
                     t={t}
-                    i18nKey={String(item.heading)}
+                    i18nKey={String(item.text)}
                     components={[<b key="0" />]}
                   />
                 }

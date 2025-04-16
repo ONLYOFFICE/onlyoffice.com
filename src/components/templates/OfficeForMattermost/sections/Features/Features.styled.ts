@@ -14,10 +14,11 @@ const StyledFeaturesWrapper = styled.div`
 const StyledFeaturesItems = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 32px;
 
   > div {
+    width: 100%;
     @media ${device.desktop} {
       width: calc(33.333% - 24px);
       max-width: 100%;
