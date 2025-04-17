@@ -105,7 +105,7 @@ const StyledSubscribeForm = styled.div`
   > div {
     position: relative;
 
-    > div {
+    .input-caption {
       position: absolute;
     }
   }

@@ -118,7 +118,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
         </StyledInputWrapper>
 
         {status === "error" && caption && !isFocused && (
-          <StyledInputCaption>{caption}</StyledInputCaption>
+          <StyledInputCaption className="input-caption">{caption}</StyledInputCaption>
         )}
       </StyledInput>
     );
