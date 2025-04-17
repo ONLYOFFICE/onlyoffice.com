@@ -32,7 +32,7 @@ const Website = () => {
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
-          header={t("DocspaceAppHeader")}
+          heading={t("DocspaceAppHeader")}
         />
       </Container>
     </Section>

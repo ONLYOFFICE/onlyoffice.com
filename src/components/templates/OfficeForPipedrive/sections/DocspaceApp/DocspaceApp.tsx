@@ -50,7 +50,7 @@ const DocspaceApp = () => {
               onClick={() => scrollToBlock()}
             />
           }
-          header={t("DocspaceAppHeader")}
+          heading={t("DocspaceAppHeader")}
         />
       </Container>
     </Section>

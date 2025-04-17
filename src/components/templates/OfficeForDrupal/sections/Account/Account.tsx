@@ -19,7 +19,7 @@ const Account = () => {
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
-          header={t("DocumentsScreen2Header")}
+          heading={t("DocumentsScreen2Header")}
         />
       </Container>
     </Section>

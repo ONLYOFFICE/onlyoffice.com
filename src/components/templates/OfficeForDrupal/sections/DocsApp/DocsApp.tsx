@@ -37,7 +37,7 @@ const DocsApp = () => {
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
-          header={t("DocsAppHeader")}
+          heading={t("DocsAppHeader")}
         />
 
         <StyledDocsAppBtnWrapper>

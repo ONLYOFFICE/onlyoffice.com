@@ -20,7 +20,7 @@ const Account = () => {
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
-          header={t("DocspaceAppScreen2Header")}
+          heading={t("DocspaceAppScreen2Header")}
         />
       </Container>
     </Section>

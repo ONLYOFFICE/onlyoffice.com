@@ -31,7 +31,7 @@ const Website = () => {
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
-          header={t("DocumentsScreen1Header")}
+          heading={t("DocumentsScreen1Header")}
         />
       </Container>
     </Section>

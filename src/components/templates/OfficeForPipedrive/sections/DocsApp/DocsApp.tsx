@@ -45,7 +45,7 @@ const DocsApp = () => {
               onClick={() => scrollToBlock()}
             />
           }
-          header={t("DocsAppHeader")}
+          heading={t("DocsAppHeader")}
         />
       </Container>
     </Section>
