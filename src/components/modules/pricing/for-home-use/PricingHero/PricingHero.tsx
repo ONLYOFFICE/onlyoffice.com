@@ -80,7 +80,11 @@ const PricingHero = ({
                 label={item.label}
                 rightSide={item.rightSide}
               >
-                <CounterSelector items={item.items} selected={item.selected} />
+                <CounterSelector
+                  items={item.items}
+                  selected={item.selected}
+                  bgColor="#f5f5f5"
+                />
               </LabeledWrapper>
             ))}
 

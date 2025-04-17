@@ -22,7 +22,6 @@ const StyledToggleButton = styled.button<{ $selected: boolean }>`
   width: 100%;
   min-height: 40px;
   text-align: center;
-  text-transform: capitalize;
   background-color: transparent;
   transition: border-color 0.2s, color 0.2s, background-color 0.2s;
   cursor: pointer;

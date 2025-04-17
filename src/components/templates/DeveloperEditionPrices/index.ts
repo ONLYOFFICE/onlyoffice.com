@@ -1,0 +1,1 @@
+export { DeveloperEditionPricesTemplate } from "./DeveloperEditionPrices";
