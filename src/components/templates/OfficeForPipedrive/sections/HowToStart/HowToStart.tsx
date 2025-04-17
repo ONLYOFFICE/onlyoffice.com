@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
+import { useState } from "react";
 import {
   StyledHowToStart,
   StyledHowToStartInfo,
@@ -6,12 +7,13 @@ import {
 } from "./HowToStart.styled";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
-import { HowToStartSwitcher } from "@src/components/widgets/HowToStartSwitcher";
+import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 
 const HowToStart = () => {
   const { t } = useTranslation("office-for-pipedrive");
+    const [activeTab, setActiveTab] = useState(items[0].id);
 
   return (
     <StyledHowToStart
@@ -21,11 +23,14 @@ const HowToStart = () => {
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 
-        <HowToStartSwitcher
-          id="how-to-start-switcher"
-          className="how-to-start-switcher"
+        <StepCarousel
+          id="how-to-start-carousel"
+          className="how-to-start-carousel"
           namespace="office-for-pipedrive"
           items={items}
+          defaultSelected={activeTab}
+          onTabChange={setActiveTab}
+          useTabs
         />
 
         <StyledHowToStartInfo>

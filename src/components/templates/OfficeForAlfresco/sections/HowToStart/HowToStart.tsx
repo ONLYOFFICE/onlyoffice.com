@@ -1,10 +1,9 @@
-import { useTranslation, Trans } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import { StyledHowToStart, StyledHowToStartInfo } from "./HowToStart.styled";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { WatchVideo } from "@src/components/widgets/WatchVideo";
-import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
 const HowToStart = () => {
@@ -16,27 +15,10 @@ const HowToStart = () => {
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 
         <StepCarousel
-          items={items.map((item) => ({
-            imgUrl: item.imgUrl,
-            heading: item.headingLinks ? (
-              <Trans
-                t={t}
-                i18nKey={String(item.heading)}
-                components={item.headingLinks.map((link, index) => (
-                  <Link
-                    key={index}
-                    href={link.url}
-                    target={link.isExternal ? "_blank" : undefined}
-                    color="main"
-                    textUnderline
-                    hover="underline-none"
-                  />
-                ))}
-              />
-            ) : (
-              t(String(item.heading))
-            ),
-          }))}
+          id="how-to-start-carousel"
+          className="how-to-start-carousel"
+          namespace="office-for-alfresco"
+          items={items}
         />
 
         <StyledHowToStartInfo>

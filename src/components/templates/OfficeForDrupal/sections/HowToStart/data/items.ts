@@ -1,7 +1,7 @@
-import { IHowToStartSwitcherItem } from "@src/components/widgets/HowToStartSwitcher";
 import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
+import { IStepCarouselTab } from "@src/components/widgets/StepCarousel/StepCarousel.types";
 
-const firstTabItems: IStepCarouselItem[] = [
+const docsItems: IStepCarouselItem[] = [
   {
     imgUrl: "/images/templates/office-for-drupal/how-to-start/step1-dc.svg",
     heading: "HowToStartStep1Docs",
@@ -32,7 +32,7 @@ const firstTabItems: IStepCarouselItem[] = [
   },
 ];
 
-const secondTabItems: IStepCarouselItem[] = [
+const cloudItems: IStepCarouselItem[] = [
   {
     imgUrl: "/images/templates/office-for-drupal/how-to-start/step1-ds.svg",
     heading: "HowToStartStep1Docspace",
@@ -59,15 +59,15 @@ const secondTabItems: IStepCarouselItem[] = [
   },
 ];
 
-export const items: IHowToStartSwitcherItem[] = [
+export const items: IStepCarouselTab[] = [
   {
     id: "docs-tab",
     label: "Docs",
-    items: firstTabItems,
+    items: docsItems,
   },
   {
     id: "docspace-tab",
     label: "Docspace",
-    items: secondTabItems,
+    items: cloudItems,
   },
 ];

@@ -4,7 +4,7 @@ import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
-import { HowToStartSwitcher } from "@src/components/widgets/HowToStartSwitcher";
+import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
 
 const HowToStart = () => {
@@ -15,11 +15,12 @@ const HowToStart = () => {
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 
-        <HowToStartSwitcher
-          id="how-to-start-switcher"
-          className="how-to-start-switcher"
+        <StepCarousel
+          id="how-to-start-carousel"
+          className="how-to-start-carousel"
           namespace="office-for-drupal"
           items={items}
+          useTabs
         />
 
         <StyledHowToStartInfo>

@@ -1,4 +1,4 @@
-import { IHowToStartSwitcherItem } from "@src/components/widgets/HowToStartSwitcher";
+import { IStepCarouselItem, IStepCarouselTab } from "@src/components/widgets/StepCarousel";
 import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
 
 const firstTabItems: IStepCarouselItem[] = [
@@ -59,7 +59,7 @@ const secondTabItems: IStepCarouselItem[] = [
   },
 ];
 
-export const items: IHowToStartSwitcherItem[] = [
+export const items: IStepCarouselTab[] = [
   {
     id: "docs-tab",
     label: "Docs",
