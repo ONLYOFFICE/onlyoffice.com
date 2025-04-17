@@ -27,7 +27,7 @@ const Conditions = () => {
                 ...icon,
                 mobileHorizontalVariant: "vertical",
               }}
-              heading={t(heading ?? "")}
+              heading={t(String(heading))}
               text={t(String(text))}
             />
           ))}
