@@ -71,11 +71,11 @@ const MailModal = ({ isOpen, onClose }: IMailModal) => {
   };
 
   return (
-    <StyledModal maxWidth="649px" isOpen={isOpen} onClose={onClose}>
+    <StyledModal maxWidth="649px" isOpen={isOpen} onClose={onCloseModal}>
       <StyledMailModal>
         <StyledMailModalHead>
           <StyledMailModalHeading level={5} label={t("ModalTitle")} />
-          <StyledMailModalCloseIcon onClick={onClose}>
+          <StyledMailModalCloseIcon onClick={onCloseModal}>
             <CrossIcon />
           </StyledMailModalCloseIcon>
         </StyledMailModalHead>
@@ -97,7 +97,8 @@ const MailModal = ({ isOpen, onClose }: IMailModal) => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              //   placeholder={{ text: t("FirstName"), isVisible: true }}
+              placeholder={t("FirstName")}
+              autoFocus
               status={errors.name ? "error" : "default"}
               caption={errors.name ? t("FirstNameIsEmpty") : ""}
             />
@@ -105,7 +106,7 @@ const MailModal = ({ isOpen, onClose }: IMailModal) => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              //   placeholder={{ text: t("YourEmail"), isVisible: true }}
+              placeholder={t("YourEmail")}
               status={
                 errors.email === "empty" || errors.email === "invalid"
                   ? "error"

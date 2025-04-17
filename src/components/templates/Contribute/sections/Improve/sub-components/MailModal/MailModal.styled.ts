@@ -49,6 +49,10 @@ const StyledMailModalHead = styled.div`
     padding-top: 130px;
     margin-bottom: 10px;
   }
+
+  @media ${device.mobileS} {
+    max-width: 75%;
+  }
 `;
 
 const StyledMailModalHeading = styled(Heading)`
@@ -74,14 +78,23 @@ const StyledMailModalWrapper = styled.div`
     max-width: 273px;
   }
 
+  @media ${device.mobileS} {
+    max-width: 75%;
+  }
+
   > div {
     margin-bottom: 26px;
     position: relative;
 
-    > div {
+    :first-child {
+      height: 34px;
+      background-color: #fff;
+      border-radius: 4px;
+    }
+
+    .input-caption {
       position: absolute;
-      top: 37px;
-      margin: 0;
+      margin-top: 0;
     }
 
     @media ${device.mobile} {
@@ -101,9 +114,7 @@ const StyledMailModalText = styled(Text)`
 `;
 
 const StyledMailModalInput = styled(Input)`
-  height: 36px;
   padding: 0 16px;
-  background-color: #fff;
   font-size: 16px;
   line-height: 34px;
   color: #000;
