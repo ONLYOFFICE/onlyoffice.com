@@ -1,0 +1,20 @@
+{
+  "PageTitle": "App Server",
+
+  "HeroTitle": "<0>ONLYOFFICE</0> App Server",
+  "HeroText": "Build a business platform tailored to your needs using ONLYOFFICE app",
+  "Feature1": "Selected components only",
+  "Feature2": "Easy customization & clustering",
+  "Feature3": "Open-source development",
+
+  "WorkInProgress": "It’s a work in progress!",
+  "SubscribeToGetNews": "Subscribe to get news about the development process and releases",
+  "YourEmail": "Your e-mail*",
+  "Placeholder": "name@email.com",
+  "Subscribe": "Subscribe",
+  "EmailIsEmpty": "Email is empty",
+  "EmailIsIncorrect": "Email is incorrect",
+
+  "ReadAboutTheConcept": "Read about the concept of ONLYOFFICE App Server",
+  "LearnMore": "Learn more"
+}
