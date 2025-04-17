@@ -32,7 +32,7 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
   const { t } = useTranslation("docspace-prices");
 
   const [numberOfUsersValue, setNumberOfUsersValue] = useState(
-    numberOfUsers[0].id,
+    numberOfUsers?.[0]?.id || "",
   );
   const [selectedOption, setSelectedOption] = useState({
     licenseDuration: licenseDurations[0].id,
@@ -97,11 +97,16 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
             }
           >
             <CounterSelector
-              items={numberOfUsers.map((item) => ({
-                id: item.id,
-                label: t(item.label),
-              }))}
+              items={
+                Array.isArray(numberOfUsers)
+                  ? numberOfUsers.map((item) => ({
+                      id: item.id,
+                      label: t(item.label),
+                    }))
+                  : []
+              }
               selected={numberOfUsersValue}
+              bgColor="#f5f5f5"
               onChange={setNumberOfUsersValue}
             />
           </LabeledWrapper>
@@ -158,6 +163,7 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
             <Checkbox
               label="Support for multi-server deployment"
               checked={supportMultiServer}
+              size="small"
               onChange={() => setSuppoerMultiServer(!supportMultiServer)}
             />
           </LabeledWrapper>
@@ -166,6 +172,7 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
             <Checkbox
               label="Training courses"
               checked={trainingCourses}
+              size="small"
               onChange={() => setTrainingCourses(!trainingCourses)}
             />
           </LabeledWrapper>

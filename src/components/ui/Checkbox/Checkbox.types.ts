@@ -17,6 +17,8 @@ export interface ICheckbox {
   value?: string;
   /** The alignment of the label. Default: "top". */
   align?: "top" | "center";
+  /** The font-size of the label. Default: "medium". */
+  size?: "small" | "medium";
   /** A callback function for the input change event. */
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
