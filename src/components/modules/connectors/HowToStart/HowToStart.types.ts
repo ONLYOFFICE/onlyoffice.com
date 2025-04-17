@@ -1,4 +1,4 @@
-export interface ISimpleHowToStartItem {
+export interface IHowToStartItem {
   /** The heading for the block item. */
   heading: React.ReactNode;
   /** The links for the heading. */
@@ -10,13 +10,13 @@ export interface ISimpleHowToStartItem {
   }[];
 }
 
-export interface ISimpleHowToStart {
+export interface IHowToStart {
   /** The unique identifier. */
   id?: string;
   /** Additional CSS class names. */
   className?: string;
   /** The items to display in the block. */
-  items: ISimpleHowToStartItem[];
+  items: IHowToStartItem[];
   /** The header for the block. */
   header: string;  
   /** The text for the block. */

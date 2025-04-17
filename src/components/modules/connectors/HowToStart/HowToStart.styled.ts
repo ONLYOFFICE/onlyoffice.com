@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
-const StyledSimpleHowToStart = styled.div`
+const StyledHowToStart = styled.div`
   position: relative;
   text-align: left;
   display: grid;
@@ -21,7 +21,7 @@ const StyledSimpleHowToStart = styled.div`
   }
 `;
 
-const StyledSimpleHowToStartWrapper = styled.div`
+const StyledHowToStartWrapper = styled.div`
   padding: 32px 0;
 
   @media ${device.mobile} {
@@ -29,7 +29,7 @@ const StyledSimpleHowToStartWrapper = styled.div`
   }
 `;
 
-const StyledSimpleHowToStartBody = styled.div`
+const StyledHowToStartBody = styled.div`
   display: flex;
   gap: 4px;
   &:not(:last-child) {
@@ -42,7 +42,7 @@ const StyledSimpleHowToStartBody = styled.div`
   }
 `;
 
-const StyledSimpleHowToStartNumber = styled.span`
+const StyledHowToStartNumber = styled.span`
   font-size: 16px;
   line-height: 1.6em;
   font-weight: 700;
@@ -52,7 +52,7 @@ const StyledSimpleHowToStartNumber = styled.span`
   }
 `;
 
-const StyledSimpleHowToStartHeading = styled.div`
+const StyledHowToStartHeading = styled.div`
   font-size: 16px;
   line-height: 1.6em;
   text-align: left;
@@ -85,7 +85,7 @@ const StyledHowToStartInfo = styled.p`
   }
 `;
 
-const StyledSimpleHowToStartContainer = styled.div`
+const StyledHowToStartContainer = styled.div`
   padding: 0;
 `;
 
@@ -106,12 +106,12 @@ const StyledHowToStartImg = styled.div<{
 `;
 
 export {
-  StyledSimpleHowToStart,
-  StyledSimpleHowToStartBody,
-  StyledSimpleHowToStartNumber,
-  StyledSimpleHowToStartHeading,
-  StyledSimpleHowToStartWrapper,
+  StyledHowToStart,
+  StyledHowToStartBody,
+  StyledHowToStartNumber,
+  StyledHowToStartHeading,
+  StyledHowToStartWrapper,
   StyledHowToStartInfo,
   StyledHowToStartImg,
-  StyledSimpleHowToStartContainer,
+  StyledHowToStartContainer,
 };

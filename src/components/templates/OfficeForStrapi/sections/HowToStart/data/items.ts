@@ -1,6 +1,6 @@
-import { ISimpleHowToStartItem } from "@src/components/widgets/SimpleHowToStart";
+import { IHowToStartItem } from "@src/components/modules/connectors/HowToStart";
 
-export const items: ISimpleHowToStartItem[] = [
+export const items: IHowToStartItem[] = [
   {
     heading: "HowToStartStep1",
     headingLinks: [

@@ -1,16 +1,15 @@
 import { Meta, StoryFn } from "@storybook/react";
-import { SimpleHowToStart } from "./SimpleHowToStart";
-import { ISimpleHowToStart } from "./SimpleHowToStart.types";
+import { ConnectorHowToStart } from "./HowToStart";
+import { IHowToStart } from "./HowToStart.types";
 import { Container } from "@src/components/ui/Container";
 
 export default {
-  title: "Widgets/SimpleHowToStart",
-  component: SimpleHowToStart,
+  title: "Modules/HowToStart",
+  component: ConnectorHowToStart,
   parameters: {
     docs: {
       description: {
-        component:
-          "The SimpleHowToStart component displays a list of steps.",
+        component: "The HowToStart component displays a list of steps.",
       },
     },
     argTypes: {
@@ -27,11 +26,11 @@ export default {
       },
     },
   },
-} as Meta<typeof SimpleHowToStart>;
+} as Meta<typeof ConnectorHowToStart>;
 
-const Template: StoryFn<ISimpleHowToStart> = (args: ISimpleHowToStart) => (
+const Template: StoryFn<IHowToStart> = (args: IHowToStart) => (
   <Container>
-    <SimpleHowToStart {...args} />
+    <ConnectorHowToStart {...args} />
   </Container>
 );
 

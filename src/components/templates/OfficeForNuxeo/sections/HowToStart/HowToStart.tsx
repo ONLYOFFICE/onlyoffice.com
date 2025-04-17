@@ -1,7 +1,7 @@
 import { useTranslation, Trans } from "next-i18next";
 import { StyledHowToStart } from "./HowToStart.styled";
 import { Container } from "@src/components/ui/Container";
-import { SimpleHowToStart } from "@src/components/widgets/SimpleHowToStart";
+import { ConnectorHowToStart } from "@src/components/modules/connectors/HowToStart";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
@@ -11,7 +11,7 @@ const HowToStart = () => {
   return (
     <StyledHowToStart id="how-to-start">
       <Container>
-        <SimpleHowToStart
+        <ConnectorHowToStart
           text={
             <Trans
               t={t}
