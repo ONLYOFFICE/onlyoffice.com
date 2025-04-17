@@ -2,6 +2,57 @@ import styled from "styled-components";
 import { IStepCarouselItem } from "./StepCarousel.types";
 import { device } from "@src/utils/device";
 
+export const StyledStepCarouselTabs = styled.div`
+  border-bottom: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 96px;
+
+  @media ${device.tabletS} {
+    margin-bottom: 56px;
+  }
+
+  @media ${device.mobile} {
+    margin-bottom: 32px;
+    gap: 8px;
+  }
+`;
+
+export const StyledStepCarouselTab = styled.button<{ $active?: boolean }>`
+  border: none;
+  background: transparent;
+  color: ${({ $active }) => ($active ? "#ff6f3d" : "#33333")};
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  line-height: 1.33em;
+  padding: 0px 0 16px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 205px;
+  cursor: pointer;
+      position: relative;
+  transition: all 0.2s ease;
+
+  ${({ $active }) =>
+    $active &&
+    `&:after { 
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ff6f3d;
+    position: absolute;
+    top: 32px;
+    left: 0;
+  }`}
+
+  @media ${device.mobile} {
+    width: calc(50% - 40px);
+  }
+`;
+
 const StyledStepCarousel = styled.div`
   position: relative;
   padding: 0 80px;
