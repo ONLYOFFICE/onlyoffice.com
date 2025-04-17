@@ -30,7 +30,7 @@ const Features = () => {
           <StyledTabs
             items={items.map(tab => ({
               id: tab.id,
-              label: <StyledTabLabel $positionX={tab.positionHeader} parent={{ $active: selectedTab === tab.id }}>{t(tab.title)}</StyledTabLabel>,
+              label: <StyledTabLabel $positionX={tab.positionHeader} $parent={{ $active: selectedTab === tab.id }}>{t(tab.title)}</StyledTabLabel>,
               content: (
                 <StyledColumnsContainer>
                   {tab.items.map((column, columnIndex) => (
@@ -38,7 +38,7 @@ const Features = () => {
                       {column.groups.map((group, groupIndex) => (
                         <div key={groupIndex}>
                           <StyledColumnHeader>
-                            <StyledIcon positionX={group.positionX} />
+                            <StyledIcon $positionX={group.positionX} />
                             <h4>{t(group.title)}</h4>
                           </StyledColumnHeader>
                           <ul>

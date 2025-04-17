@@ -3,7 +3,7 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Tabs } from "@src/components/widgets/Tabs/Tabs";
 
-const StyledTabLabel = styled.span<{ $positionX: number, parent?: { $active?: boolean } }>`
+const StyledTabLabel = styled.span<{ $positionX: number, $parent?: { $active?: boolean } }>`
   display: inline-flex;
   align-items: center;
   line-height: 24px;
@@ -19,7 +19,7 @@ const StyledTabLabel = styled.span<{ $positionX: number, parent?: { $active?: bo
     background-size: 456px auto;
   }
 
-  ${props => props.parent?.$active && css`
+  ${props => props.$parent?.$active && css`
     &::before {
       background-position-x: -48px;
     }
@@ -167,9 +167,9 @@ const StyledColumn = styled.div`
   }
 `;
 
-const StyledIcon = styled.div<{ positionX: number }>`
+const StyledIcon = styled.div<{ $positionX: number }>`
   background: url("/images/templates/office-for-zapier/features/features.svg")
-    ${(props) => props.positionX}px 0 no-repeat;
+    ${(props) => props.$positionX}px 0 no-repeat;
   background-size: auto 72px;
   background-position-y: center;
 `;
