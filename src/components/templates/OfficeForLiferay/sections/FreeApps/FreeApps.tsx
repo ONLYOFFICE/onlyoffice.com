@@ -2,9 +2,9 @@ import { useTranslation, Trans } from "next-i18next";
 import {
   StyledFreeAppsHeading,
   StyledSection,
+  StyledChooseSolution,
 } from "./FreeApps.styled";
 import { Container } from "@src/components/ui/Container";
-import { ChooseSolution } from "@src/components/widgets/ChooseSolution";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
 import { Button } from "@src/components/ui/Button";
@@ -23,8 +23,7 @@ const FreeApps = () => {
           />
         </StyledFreeAppsHeading>
 
-        <ChooseSolution
-          fullWidth={true}
+        <StyledChooseSolution
           largeItems={items.map((item) => ({
             imgUrl: item.imgUrl,
             text: (

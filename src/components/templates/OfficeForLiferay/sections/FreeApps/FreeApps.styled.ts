@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
+import { ChooseSolution } from "@src/components/widgets/ChooseSolution";
 
 const StyledSection = styled(Section)`
   border: 1px solid #e2e2e2;
@@ -21,4 +22,14 @@ const StyledFreeAppsHeading = styled(Heading)`
   }
 `;
 
-export { StyledFreeAppsHeading, StyledSection };
+const StyledChooseSolution = styled(ChooseSolution)`
+  > div {
+    grid-template-columns: 1fr;
+
+    > div {
+      max-width: 100%;
+    }
+  }
+`;
+
+export { StyledFreeAppsHeading, StyledSection, StyledChooseSolution };
