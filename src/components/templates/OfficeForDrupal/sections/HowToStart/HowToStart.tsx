@@ -1,0 +1,49 @@
+import { useTranslation, Trans } from "next-i18next";
+import { StyledHowToStart, StyledHowToStartInfo } from "./HowToStart.styled";
+import { Container } from "@src/components/ui/Container";
+import { Heading } from "@src/components/ui/Heading";
+import { Link } from "@src/components/ui/Link";
+import { Text } from "@src/components/ui/Text";
+import { HowToStartSwitcher } from "@src/components/widgets/HowToStartSwitcher";
+import { items } from "./data/items";
+
+const HowToStart = () => {
+  const { t } = useTranslation("office-for-drupal");
+
+  return (
+    <StyledHowToStart id="how-to-start" background="#f9f9f9">
+      <Container>
+        <Heading level={2} textAlign="center" label={t("HowToStart")} />
+
+        <HowToStartSwitcher
+          id="how-to-start-switcher"
+          className="how-to-start-switcher"
+          namespace="office-for-drupal"
+          items={items}
+        />
+
+        <StyledHowToStartInfo>
+          <Text size={2} textAlign="center">
+            <Trans
+              t={t}
+              i18nKey="ReadDetailedInstructions"
+              components={[
+                <Link
+                  key={0}
+                  id="how-to-start-instructions-help"
+                  href="https://helpcenter.onlyoffice.com/integration/drupal.aspx"
+                  target="_blank"
+                  color="main"
+                  textUnderline
+                  hover="underline-none"
+                />,
+              ]}
+            />
+          </Text>
+        </StyledHowToStartInfo>
+      </Container>
+    </StyledHowToStart>
+  );
+};
+
+export { HowToStart };

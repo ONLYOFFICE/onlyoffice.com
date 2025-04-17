@@ -1,0 +1,1 @@
+export { OfficeForStrapiTemplate } from "./OfficeForStrapi";

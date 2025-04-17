@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { IFeatureSwitcher } from "./FeatureSwitcher.types";
+import { Heading } from "@src/components/ui/Heading";
 import { device } from "@src/utils/device";
 
 const StyledFeatureSwitcher = styled.div<{
@@ -21,12 +22,24 @@ const StyledFeatureSwitcher = styled.div<{
 
 const StyledFeatureSwitcherWrapper = styled.div<{
   $position?: IFeatureSwitcher["position"];
+  $withHeader?: boolean;
 }>`
+  ${(props) =>
+    props.$withHeader &&
+    css`
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  `}
   padding: 40px 0;
   order: ${(props) => props.$position === "right" && 2};
 
   @media ${device.tablet} {
     padding: 0;
+  }
+
+  @media ${device.mobile} {
+    gap: 16px;
   }
 `;
 
@@ -124,10 +137,20 @@ const StyledFeatureSwitcherCustomBtn = styled.div`
   margin-top: 16px;
 `;
 
+const StyledHeading = styled(Heading)`
+  font-size: 20px;
+  line-height: 1.33em;
+
+  @media ${device.mobile} {
+    font-size: 16px;
+  }
+`;
+
 export {
   StyledFeatureSwitcher,
   StyledFeatureSwitcherWrapper,
   StyledFeatureSwitcherBtn,
   StyledFeatureSwitcherImage,
   StyledFeatureSwitcherCustomBtn,
+  StyledHeading,
 };

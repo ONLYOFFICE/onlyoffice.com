@@ -1,0 +1,1 @@
+export { OfficeForPipedriveTemplate } from "./OfficeForPipedrive";

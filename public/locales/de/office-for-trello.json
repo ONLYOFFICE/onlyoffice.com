@@ -1,0 +1,13 @@
+{
+  "HeroImgUrl": "/images/templates/office-for-trello/hero/de/main.png",
+  "HeroImgUrl2x": "/images/templates/office-for-trello/hero/de/main@2x.png",
+
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-trello/documents/de/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-trello/documents/de/screen1@2x.png",
+  
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-trello/documents/de/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-trello/documents/de/screen2@2x.png",
+  
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-trello/documents/de/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-trello/documents/de/screen3@2x.png"
+}

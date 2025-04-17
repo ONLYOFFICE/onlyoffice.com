@@ -1,0 +1,1 @@
+export { DocspaceApp } from "./DocspaceApp";
