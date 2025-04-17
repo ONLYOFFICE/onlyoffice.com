@@ -5,10 +5,10 @@ import {
   StyledFeatureSwitcherBtn,
   StyledFeatureSwitcherImage,
   StyledFeatureSwitcherCustomBtn,
+  StyledHeading,
 } from "./FeatureSwitcher.styled";
 import { IFeatureSwitcher } from "./FeatureSwitcher.types";
 import { ChevronDownIcon } from "@src/components/icons";
-import { Heading } from "@src/components/ui/Heading";
 
 const FeatureSwitcher = ({
   id,
@@ -25,7 +25,7 @@ const FeatureSwitcher = ({
   return (
     <StyledFeatureSwitcher id={id} className={className} $position={position}>
       <StyledFeatureSwitcherWrapper $position={position} $withHeader={heading?.toString() !== null && true}>
-        {heading && <Heading level={5} size={5}>{heading}</Heading>}
+        {heading && <StyledHeading level={5}>{heading}</StyledHeading>}
         <ul>
           {items.map((item, index) => (
             <li key={index}>
