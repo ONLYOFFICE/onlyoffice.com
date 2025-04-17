@@ -1,10 +1,15 @@
-import { Heading } from "@src/components/ui/Heading";
-import { device } from "@src/utils/device";
 import styled from "styled-components";
+import { device } from "@src/utils/device";
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
+import { Link } from "@src/components/ui/Link";
 
 const StyledInfoCard = styled.div`
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e2e2e2;
   border-radius: 5px;
+  width: 100%;
   transition: box-shadow 0.2s;
 
   &:hover {
@@ -13,10 +18,10 @@ const StyledInfoCard = styled.div`
 `;
 
 const StyledInfoCardImage = styled.div`
-  width: 100%;
-  height: 144px;
-  background-color: #f9f9f9;
   position: relative;
+  width: 100%;
+  min-height: 144px;
+  background-color: #f9f9f9;
 
   &:before {
     content: "";
@@ -25,9 +30,9 @@ const StyledInfoCardImage = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-image: url("/images/templates/affiliates/useful-info/icons.svg");
     background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
   }
 
   &.marketing-kit:before {
@@ -48,9 +53,10 @@ const StyledInfoCardImage = styled.div`
 `;
 
 const StyledInfoCardContent = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 31px;
-  display: grid;
-  row-gap: 16px;
+  height: 100%;
   text-align: center;
 
   @media ${device.tablet} {
@@ -59,34 +65,26 @@ const StyledInfoCardContent = styled.div`
 
   @media ${device.mobile} {
     padding: 15px;
-    gap: 12px;
-
-    p {
-      font-size: 13px;
-      line-height: 20px;
-    }
-
-    a {
-      font-size: 14px;
-      line-height: 22px;
-    }
   }
 `;
 
 const StyledInfoCardHeading = styled(Heading)`
+  margin-bottom: 16px;
+`;
+
+const StyledInfoCardText = styled(Text)`
+  margin-bottom: 16px;
+
   @media ${device.mobile} {
-    line-height: 22px;
+    font-size: 13px;
+    line-height: 20px;
   }
 `;
 
-const StyledInfoCardLink = styled.a`
-  color: #ff6f3d;
+const StyledInfoCardLink = styled(Link)`
+  margin-top: auto;
+  font-size: 16px;
   line-height: 24px;
-  text-decoration: underline;
-
-  &:hover {
-    text-decoration: none;
-  }
 
   @media ${device.mobile} {
     font-size: 14px;
@@ -100,4 +98,5 @@ export {
   StyledInfoCardContent,
   StyledInfoCardHeading,
   StyledInfoCardLink,
+  StyledInfoCardText,
 };

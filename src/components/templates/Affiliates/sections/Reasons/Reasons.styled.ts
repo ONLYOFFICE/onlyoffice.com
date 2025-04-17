@@ -1,29 +1,47 @@
+import styled from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
-import styled from "styled-components";
 
-const StyledReasonsContent = styled.div`
-  margin: 32px 0;
+const StyledReasonsWrapper = styled.div`
   display: grid;
-  text-align: center;
+  row-gap: 32px;
 
   @media ${device.tablet} {
-    margin: 48px 0;
+    row-gap: 48px;
   }
 
   @media ${device.mobile} {
-    margin: 32px 0;
-    text-align: start;
+    row-gap: 32px;
+  }
+`;
+
+const StyledReasonsContent = styled.div`
+  @media ${device.mobile} {
+    display: grid;
+    row-gap: 24px;
+  }
+`;
+
+const StyledReasonsBox = styled.div`
+  display: grid;
+  row-gap: 16px;
+  margin: 0 auto 32px;
+  max-width: 720px;
+  text-align: center;
+
+  @media ${device.tablet} {
+    row-gap: 8px;
+    max-width: 100%;
+  }
+
+  @media ${device.mobile} {
+    margin: 0 auto;
   }
 `;
 
 const StyledReasonsSubtitle = styled(Heading)`
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 16px;
-
   @media ${device.tablet} {
     font-size: 22px;
     line-height: 29px;
@@ -32,39 +50,27 @@ const StyledReasonsSubtitle = styled(Heading)`
   @media ${device.mobile} {
     font-size: 16px;
     line-height: 21px;
-    margin-bottom: 8px;
   }
 `;
 
 const StyledReasonsText = styled(Text)`
-  max-width: 720px;
-  margin: 0 auto 16px;
   font-size: 18px;
   line-height: 27px;
 
   @media ${device.tablet} {
-    max-width: 100%;
     font-size: 16px;
     line-height: 24px;
   }
+`;
 
-  @media ${device.mobile} {
-    margin-bottom: 8px;
-  }
+const StyledReasonsLinks = styled.div`
+  display: grid;
+  row-gap: 8px;
 `;
 
 const StyledReasonsLink = styled(Link)`
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 8px;
-
-  &.second-link {
-    margin-bottom: 32px;
-
-    @media ${device.mobile} {
-      margin-bottom: 0;
-    }
-  }
 
   @media ${device.mobile} {
     font-size: 14px;
@@ -78,7 +84,7 @@ const StyledReasonsImage = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 65.8%;
+  padding-bottom: 65.804%;
 
   @media ${device.retina} {
     background-image: url("/images/templates/affiliates/reasons/reasons_image@2x.png");
@@ -99,11 +105,10 @@ const StyledReasonsImage = styled.div`
 
   @media ${device.mobile} {
     grid-row-start: 1;
-    margin-bottom: 24px;
   }
 `;
 
-const StyledReasonsWrapper = styled.div`
+const StyledReasonsItems = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
@@ -114,10 +119,13 @@ const StyledReasonsWrapper = styled.div`
 `;
 
 export {
+  StyledReasonsItems,
   StyledReasonsWrapper,
   StyledReasonsContent,
+  StyledReasonsBox,
   StyledReasonsSubtitle,
   StyledReasonsText,
+  StyledReasonsLinks,
   StyledReasonsLink,
   StyledReasonsImage,
 };

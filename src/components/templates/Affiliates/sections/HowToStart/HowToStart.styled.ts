@@ -1,26 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
-
-const StyledHowToStart = styled(Section)`
-  background-color: #f9f9f9;
-
-  .register-button {
-    display: block;
-    width: 248px;
-    margin: 72px auto 16px;
-
-    @media ${device.tablet} {
-      margin-top: 56px;
-    }
-
-    @media ${device.mobile} {
-      margin-top: 32px;
-      width: 100%;
-    }
-  }
-`;
+import { Button } from "@src/components/ui/Button";
 
 const StyledHowToStartHeading = styled(Heading)`
   margin-bottom: 72px;
@@ -34,4 +15,27 @@ const StyledHowToStartHeading = styled(Heading)`
   }
 `;
 
-export { StyledHowToStart, StyledHowToStartHeading };
+const StyledHowToStartButton = styled(Button)`
+  min-width: 248px;
+`;
+
+const StyledHowToStartRegister = styled.div`
+  display: grid;
+  justify-content: center;
+  row-gap: 16px;
+  margin-top: 72px;
+
+  @media ${device.tablet} {
+    margin-top: 56px;
+  }
+
+  @media ${device.mobile} {
+    margin-top: 32px;
+  }
+`;
+
+export {
+  StyledHowToStartHeading,
+  StyledHowToStartButton,
+  StyledHowToStartRegister,
+};

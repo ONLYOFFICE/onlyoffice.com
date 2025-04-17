@@ -1,3 +1,4 @@
+import { Trans, useTranslation } from "next-i18next";
 import {
   StyledHeroSection,
   StyledHeroWrapper,
@@ -7,11 +8,10 @@ import {
   StyledHeroImage,
   StyledHeroHeading,
 } from "./Hero.styled";
+import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { items } from "./data/items";
-import { Trans, useTranslation } from "next-i18next";
-import { Container } from "@src/components/ui/Container";
 
 const Hero = () => {
   const { t } = useTranslation("affiliates");
@@ -26,14 +26,22 @@ const Hero = () => {
       <Container maxWidth="1419px">
         <StyledHeroWrapper>
           <StyledHeroContent>
-            <StyledHeroHeading level={1} label={t("HeroTitle")} />
+            <StyledHeroHeading level={1} size={1} label={t("HeroTitle")} />
             <StyledHeroList>
               {items.map((item, index) => (
                 <StyledHeroListItem key={index}>
                   <Trans
                     t={t}
                     i18nKey={String(item.label)}
-                    components={[<Text as="span" color="#FF6F3D" key="0" />]}
+                    components={[
+                      <Text
+                        as="span"
+                        fontStyle="italic"
+                        fontWeight={700}
+                        color="#FF6F3D"
+                        key="0"
+                      />,
+                    ]}
                   />
                 </StyledHeroListItem>
               ))}

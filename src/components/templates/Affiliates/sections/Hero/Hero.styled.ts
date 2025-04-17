@@ -49,35 +49,35 @@ const StyledHeroWrapper = styled.div`
 `;
 
 const StyledHeroContent = styled.div`
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  gap: 32px;
+  display: grid;
+  justify-items: start;
+  row-gap: 32px;
 
   @media ${device.desktop} {
-    align-items: center;
+    justify-items: center;
     text-align: center;
   }
 
   @media ${device.tabletS} {
-    text-align: start;
-    align-items: start;
+    justify-items: start;
+    text-align: initial;
   }
 
   @media ${device.mobile} {
-    align-items: start;
-    gap: 24px;
+    row-gap: 24px;
   }
 `;
 
 const StyledHeroHeading = styled(Heading)`
-  max-width: 795px;
-  font-size: 48px;
-  line-height: 64px;
   letter-spacing: -0.03em;
+
+  @media ${device.desktop} {
+    max-width: 795px;
+  }
 
   @media ${device.tablet} {
     font-size: 44px;
+    line-height: 59px;
     letter-spacing: -0.02em;
   }
 
@@ -90,46 +90,27 @@ const StyledHeroHeading = styled(Heading)`
 const StyledHeroList = styled.ul`
   display: grid;
   align-items: start;
-  row-gap: 8px;
+  gap: 8px;
   font-size: 22px;
   line-height: 33px;
   width: 100%;
 
-  span {
-    font-weight: 700;
-    font-style: italic;
-  }
-
   @media ${device.desktop} {
     display: flex;
-    gap: 8px;
     justify-content: center;
     font-size: 18px;
-
-    span {
-      font-size: 22px;
-    }
+    line-height: 27px;
   }
 
   @media ${device.tabletS} {
     display: grid;
-    grid-template-columns: initial;
     justify-content: start;
-    text-align: start;
     line-height: 24px;
-
-    span {
-      font-size: 18px;
-    }
   }
 
   @media ${device.mobile} {
     font-size: 16px;
     line-height: 24px;
-
-    span {
-      font-size: 16px;
-    }
   }
 `;
 
