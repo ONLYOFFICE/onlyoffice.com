@@ -22,9 +22,12 @@ const Link = ({
   hover,
   style,
 }: ILink) => {
+  const asProp = download ? "a" : undefined;
+
   return (
     <StyledLink
       id={id}
+      {...(asProp && { as: asProp })}
       className={className}
       href={href ?? ""}
       rel={!rel && target === "_blank" ? "noopener noreferrer" : rel}
