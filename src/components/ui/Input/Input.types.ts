@@ -11,8 +11,6 @@ export interface IInput {
   tabIndex?: number;
   /** Defines the status of the input field (default, success, or error). */
   status?: "default" | "success" | "error";
-  /** Defines the variant of the input field (search or password). */
-  variant?: "search" | "password";
   /** Specifies the type of the input field. */
   type?: "text" | "number" | "password" | "tel" | "email" | "search";
   /** Disables the input field when set to true. */
@@ -20,21 +18,23 @@ export interface IInput {
   /** Marks the input field as required when set to true. */
   required?: boolean;
   /** The controlled value of the input field. */
-  value: string;
+  value: string | number;
   /** The name attribute for the input field. */
   name?: string;
   /** The maximum number of characters allowed in the input field. */
   maxLength?: number;
+  /** The pattern attribute specifies a regular expression to match the value against. */
+  pattern?: string;
   /** Automatically focuses the input field when the component mounts. */
   autoFocus?: boolean;
+  /** Marks the input as active or focused. */
+  active?: boolean;
   /** Caption text displayed below the input field for error messages. */
   caption?: string;
   /** Left-side icon inside the input field. */
   leftSide?: React.ReactNode;
   /** Right-side icon inside the input field. */
   rightSide?: React.ReactNode;
-  /** Displays a clear button inside the input field. */
-  withClearButton?: boolean;
   /** Callback function triggered when the input field is clicked. */
   onClick?: () => void;
   /** Callback function triggered when the input value changes. */
