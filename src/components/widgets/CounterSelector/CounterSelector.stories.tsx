@@ -21,6 +21,24 @@ export default {
     className: {
       control: { type: "text" },
     },
+    variant: {
+      control: { type: "select" },
+      options: ["small", "medium"],
+    },
+    size: {
+      control: { type: "select" },
+      options: ["small", "medium"],
+    },
+    bgColor: {
+      control: { type: "text" },
+    },
+    autoFocus: {
+      control: { type: "boolean" },
+      options: [true, false],
+    },
+    value: {
+      control: { type: "text" },
+    },
     items: {
       control: { type: "object" },
     },
@@ -34,7 +52,11 @@ const Template: StoryFn<ICounterSelector> = (args: ICounterSelector) => {
   const [selected, setSelected] = useState(args.selected);
 
   return (
-    <CounterSelector {...args} selected={selected} onChange={setSelected} />
+    <CounterSelector
+      {...args}
+      selected={selected}
+      onChange={() => setSelected(selected)}
+    />
   );
 };
 
