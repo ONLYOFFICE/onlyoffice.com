@@ -54,6 +54,11 @@
   "NumberOfConnectionsTooltip": "We specified how many browser tabs with documents can be opened for editing at the same time. Note that one document opened by two users means two simultaneous connections as it is opened in two tabs. When you reach the limit, each next document opens in read-only mode.",
   "More": "More",
   "TryItFree": "Try it free",
+  "BuyNow": "Buy now",
+  "FillInTheFormToReceive": "Fill in the form to receive a contract and invoice",
+  "FillInTheFormToGetAQuote": "Fill in the form to get a quote for ONLYOFFICE Docs Enterprise",
+  "GetItNowText": "By clicking Get it now, you understand and agree to our <0>License agreement</0> and <0>Privacy statement</0>.",
+  "OrderNow": "Order now",
 
   "WhatDoTheLifetimeLicenseAnd3YearUpdatesLabel": "What do the 'lifetime license' and '3-year updates' mean?",
   "WhatDoTheLifetimeLicenseAnd3YearUpdatesText": "You can use all the ONLYOFFICE Docs Enterprise features available at the moment of the purchase for an unlimited period of time, but three years after the purchase date you will no longer be able to get free updates. If you want to update your ONLYOFFICE Docs Enterprise version later, you will need to purchase a new license key.",

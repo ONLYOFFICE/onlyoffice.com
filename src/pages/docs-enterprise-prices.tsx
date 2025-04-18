@@ -23,7 +23,7 @@ const DocsEnterprisePricesPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <DocsEnterprisePricesTemplate />
+        <DocsEnterprisePricesTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -39,6 +39,8 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "docs-enterprise-prices",
         "PricingReseller",
+        "PricingQuoteModal",
+        "PhoneInput",
       ])),
       locale,
     },

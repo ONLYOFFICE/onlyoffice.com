@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, Trans } from "next-i18next";
 import {
   StyledHero,
   StyledHeroHeader,
@@ -16,22 +16,26 @@ import {
   StyledHeroTotalPrice,
   StyledHeroBtnWrapper,
 } from "./Hero.styled";
+import { ILocale } from "@src/types/locale";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
 import { Tooltip } from "@src/components/ui/Tooltip";
 import { Button } from "@src/components/ui/Button";
+import { Link } from "@src/components/ui/Link";
 import { LabeledWrapper } from "@src/components/widgets/LabeledWrapper";
 import { ToggleButtons } from "@src/components/widgets/ToggleButtons";
 import { Tabs } from "@src/components/widgets/Tabs";
 import { CounterSelector } from "@src/components/widgets/CounterSelector";
 import { List } from "@src/components/widgets/pricing/List";
 import { SelectorsWrapper } from "@src/components/widgets/pricing/SelectorsWrapper";
+import { QuoteModal } from "@src/components/widgets/pricing/QuoteModal";
 import { Reseller } from "@src/components/modules/pricing/Reseller";
 
-const Hero = () => {
+const Hero = ({ locale }: ILocale) => {
   const { t } = useTranslation("docs-enterprise-prices");
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
     hosting: "On-premises",
     connectionsNumber: "50",
@@ -46,6 +50,15 @@ const Hero = () => {
 
   const hostingIsCloud = formData.hosting === "Cloud";
   const hostingIsOnPremises = formData.hosting === "On-premises";
+
+  const isGetIsQuote = [
+    formData.hosting === "Cloud",
+    formData.connectionsNumber === "more",
+    formData.trainingCourses,
+    formData.multiTenancy,
+  ].some(Boolean);
+
+  const isOrderNow = [formData.disasterRecovery].every(Boolean);
 
   return (
     <StyledHero
@@ -343,19 +356,71 @@ const Hero = () => {
             </LabeledWrapper>
 
             <StyledHeroTotal>
-              <StyledHeroTotalWrapper>
-                <Heading level={4} color="#444444" label={t("Total")} />
-                <StyledHeroTotalPrice>
-                  <span>$</span>
-                  2100
-                </StyledHeroTotalPrice>
-              </StyledHeroTotalWrapper>
+              {!(isGetIsQuote || isOrderNow) && (
+                <StyledHeroTotalWrapper>
+                  <Heading level={4} color="#444444" label={t("Total")} />
+                  <StyledHeroTotalPrice>
+                    <span>$</span>
+                    2100
+                  </StyledHeroTotalPrice>
+                </StyledHeroTotalWrapper>
+              )}
 
               <StyledHeroBtnWrapper>
-                <Button fullWidth label={t("GetAQuote")} />
+                {isGetIsQuote ? (
+                  <Button
+                    onClick={() => setIsModalOpen(true)}
+                    fullWidth
+                    label={t("GetAQuote")}
+                  />
+                ) : isOrderNow ? (
+                  <Button
+                    onClick={() => setIsModalOpen(true)}
+                    fullWidth
+                    label={t("OrderNow")}
+                  />
+                ) : (
+                  <Button as="a" fullWidth href="" label={t("BuyNow")} />
+                )}
               </StyledHeroBtnWrapper>
             </StyledHeroTotal>
           </StyledHeroItem>
+
+          <QuoteModal
+            locale={locale}
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+            heading={
+              isOrderNow
+                ? t("FillInTheFormToReceive")
+                : t("FillInTheFormToGetAQuote")
+            }
+            byClickedText={
+              <Trans
+                t={t}
+                i18nKey="GetItNowText"
+                components={[
+                  <Link
+                    key="0"
+                    href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=4995927&doc=bTNVWUNPTm1yMzBlRW9Eb3o1MityMWJRNGlzcTFCZFlxdFRLbEFLdmVOcz0_IjQ5OTU5Mjci0"
+                    target="_blank"
+                    color="main"
+                    textUnderline
+                    hover="underline-none"
+                  />,
+                  <Link
+                    key="1"
+                    href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261"
+                    target="_blank"
+                    color="main"
+                    textUnderline
+                    hover="underline-none"
+                  />,
+                ]}
+              />
+            }
+            buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
+          />
         </StyledHeroWrapper>
 
         <Reseller />
