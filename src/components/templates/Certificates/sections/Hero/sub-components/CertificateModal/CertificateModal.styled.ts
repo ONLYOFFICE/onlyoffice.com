@@ -11,16 +11,9 @@ const StyledCertificateModal = styled.div`
 const StyledCertificateModalImageWrapper = styled.div`
   position: relative;
   transition: visibility 0.2s;
-
-  &:hover {
-    .image-icon {
-      visibility: visible;
-    }
-  }
 `;
 
 const StyledCertificateModalIconWrapper = styled.div`
-  visibility: hidden;
   position: absolute;
   bottom: 70px;
   height: 48px;

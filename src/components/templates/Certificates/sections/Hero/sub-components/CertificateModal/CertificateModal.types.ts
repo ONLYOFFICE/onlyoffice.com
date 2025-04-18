@@ -1,4 +1,4 @@
-export interface ICertificate {
+export interface ICertificateModal {
   /** Whether the modal is open or not */
   isOpen: boolean;
   /** Function to close the modal */

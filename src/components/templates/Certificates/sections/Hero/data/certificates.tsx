@@ -1,6 +1,6 @@
-import { ICertificate } from "../Certificate.types";
+import { ICertificate } from "../Hero.types";
 
-export const items: ICertificate[] = [
+export const Certificates: ICertificate[] = [
   {
     date: "KylinOSDate",
     heading: {

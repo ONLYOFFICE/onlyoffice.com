@@ -1,6 +1,5 @@
 import { useTranslation } from "next-i18next";
 import { Modal } from "@src/components/ui/Modal";
-import { ICertificate } from "./CertificateModal.types";
 import {
   StyledCertificateCardImageIcon,
   StyledCertificateModal,
@@ -9,8 +8,9 @@ import {
   StyledCertificateModalImageWrapper,
 } from "./CertificateModal.styled";
 import { Tooltip } from "@src/components/ui/Tooltip";
+import { ICertificateModal } from "./CertificateModal.types";
 
-const CertificateModal = ({ isOpen, onClose, image }: ICertificate) => {
+const CertificateModal = ({ isOpen, onClose, image }: ICertificateModal) => {
   const { t } = useTranslation("certificates");
 
   return (
@@ -24,8 +24,9 @@ const CertificateModal = ({ isOpen, onClose, image }: ICertificate) => {
           <StyledCertificateModalIconWrapper className="image-icon">
             <Tooltip
               id="modal-download-tooltip"
+              float
               content={t("Download")}
-              place="bottom"
+              place="bottom-start"
             >
               <StyledCertificateCardImageIcon
                 className="download"

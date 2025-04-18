@@ -12,10 +12,10 @@ import {
   StyledCertificateCardImageIconWrapper,
   StyledCertificateCardImageIcon,
 } from "./CertificateCard.styled";
-import { ICertificate } from "@src/components/templates/Certificates/sections/Certificate/Certificate.types";
 import { Tooltip } from "@src/components/ui/Tooltip";
 import { CertificateModal } from "../CertificateModal";
 import { useState } from "react";
+import { ICertificate } from "../../Hero.types";
 
 const CertificateCard = ({ image, date, heading, product }: ICertificate) => {
   const { t } = useTranslation("certificates");
@@ -39,7 +39,12 @@ const CertificateCard = ({ image, date, heading, product }: ICertificate) => {
             $imgHeight={image.height}
           />
           <StyledCertificateCardImageIconWrapper className="image-icons">
-            <Tooltip id="view-tooltip" content={t("View")} place="bottom-end">
+            <Tooltip
+              id="view-tooltip"
+              float
+              content={t("View")}
+              place="bottom-start"
+            >
               <StyledCertificateCardImageIcon
                 className="view"
                 onClick={handleCertificateView}
@@ -47,6 +52,7 @@ const CertificateCard = ({ image, date, heading, product }: ICertificate) => {
             </Tooltip>
             <Tooltip
               id="download-tooltip"
+              float
               content={t("Download")}
               place="bottom-start"
             >
@@ -59,7 +65,7 @@ const CertificateCard = ({ image, date, heading, product }: ICertificate) => {
           </StyledCertificateCardImageIconWrapper>
         </StyledCertificateCardImageWrapper>
         <StyledCertificateCardContent>
-          <StyledCertificateCardDate label={date} size={4} />
+          <StyledCertificateCardDate>{date}</StyledCertificateCardDate>
           <StyledCertificateCardHeading level={3} size={5}>
             {heading.label}{" "}
             <StyledCertificateCardLearnMore
@@ -70,7 +76,9 @@ const CertificateCard = ({ image, date, heading, product }: ICertificate) => {
               hover="underline-none"
             />
           </StyledCertificateCardHeading>
-          <StyledCertificateCardProduct label={t("ProductSolution")} />
+          <StyledCertificateCardProduct>
+            {t("ProductSolution")}
+          </StyledCertificateCardProduct>
           <StyledCertificateCardProductLink
             href={product.link}
             label={product.label}

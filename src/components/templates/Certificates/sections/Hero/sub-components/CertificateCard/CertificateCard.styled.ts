@@ -1,6 +1,5 @@
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
-import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
@@ -21,7 +20,8 @@ const StyledCertificateCardImageWrapper = styled.div`
   position: relative;
   transition: visibility 0.2s;
 
-  &:hover {
+  &:hover,
+  &:focus-within {
     > div {
       visibility: visible;
     }
@@ -103,14 +103,17 @@ const StyledCertificateCardContent = styled.div`
   padding: 24px;
 
   @media ${device.mobile} {
-    padding: 16px;
+    padding: 24px 16px 16px;
   }
 `;
 
-const StyledCertificateCardDate = styled(Text)`
+const StyledCertificateCardDate = styled.span`
+  display: inline-block;
+  font-size: 13px;
   line-height: 20px;
   color: #666666;
   margin-bottom: 8px;
+  letter-spacing: -0.01em;
 `;
 
 const StyledCertificateCardHeading = styled(Heading)`
@@ -128,7 +131,8 @@ const StyledCertificateCardLearnMore = styled(Link)`
   font-weight: 400;
 `;
 
-const StyledCertificateCardProduct = styled(Text)`
+const StyledCertificateCardProduct = styled.span`
+  display: block;
   font-size: 13px;
   font-weight: 600;
   line-height: 18px;
