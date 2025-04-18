@@ -12,7 +12,7 @@ export interface IToggleButtons {
       /** Content to display on the left side of the label. */
       leftSide?: React.ReactNode;
       /** The main label text that will be displayed in the middle. */
-      name: string;
+      name: React.ReactNode;
       /** Content to display on the right side of the label. */
       rightSide?: React.ReactNode;
     };
