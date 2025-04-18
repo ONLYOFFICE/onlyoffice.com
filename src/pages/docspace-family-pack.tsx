@@ -38,7 +38,7 @@ export async function getStaticProps({ locale }: ILocale) {
       ...(await serverSideTranslations(locale, [
         "common",
         "docspace-family-pack",
-        "PricingHero",
+        "PricingReseller",
       ])),
       locale,
     },
