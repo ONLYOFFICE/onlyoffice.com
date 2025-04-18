@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { IHeroImage } from "./Hero.types";
 import { Text } from "@src/components/ui/Text";
 import { Heading } from "@src/components/ui/Heading";
+import { Link } from "@src/components/ui/Link";
 
 const fadeIn = keyframes`
   from {
@@ -162,6 +163,17 @@ const StyledHeroImage = styled.div<{
   }
 `;
 
+const StyledHeroImageLink = styled(Link)`
+  display: inline-block;
+  width: 133px;
+  height: 133px;
+
+  @media ${device.mobile} {
+    width: 107px;
+    height: 107px;
+  }
+`;
+
 export {
   StyledHeroSection,
   StyledHeroImages,
@@ -170,4 +182,5 @@ export {
   StyledHeroText,
   StyledHeroImage,
   StyledScroll,
+  StyledHeroImageLink,
 };

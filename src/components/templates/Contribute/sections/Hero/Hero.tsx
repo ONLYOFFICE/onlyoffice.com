@@ -7,12 +7,12 @@ import {
   StyledScroll,
   StyledHeroHeading,
   StyledHeroText,
+  StyledHeroImageLink,
 } from "./Hero.styled";
 import { Text } from "@src/components/ui/Text";
 import { images } from "./data/images";
 import { getPreparedImages } from "./helper/random";
 import { Container } from "@src/components/ui/Container";
-import { Link } from "@src/components/ui/Link";
 import { useEffect, useState } from "react";
 import { IHeroImage } from "./Hero.types";
 
@@ -62,11 +62,11 @@ const Hero = () => {
                 };
 
                 return item.link ? (
-                  <Link key={`${item.link}-${index}`} href={item.link}>
-                    <StyledHeroImage {...imageProps} />
-                  </Link>
+                  <StyledHeroImage key={index} {...imageProps}>
+                    <StyledHeroImageLink href={item.link} />
+                  </StyledHeroImage>
                 ) : (
-                  <StyledHeroImage key={`img-${index}`} {...imageProps} />
+                  <StyledHeroImage key={index} {...imageProps} />
                 );
               })}
             </StyledHeroImages>

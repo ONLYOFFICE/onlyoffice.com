@@ -60,8 +60,12 @@ const StyledMailModalHeading = styled(Heading)`
   font-weight: 600;
 `;
 
-const StyledMailModalCloseIcon = styled.div`
+const StyledMailModalCloseIcon = styled.button`
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+  width: 20px;
+  height: 20px;
 `;
 
 const StyledMailModalWrapper = styled.div`

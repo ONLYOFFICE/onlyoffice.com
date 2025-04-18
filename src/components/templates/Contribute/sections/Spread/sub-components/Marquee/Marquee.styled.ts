@@ -41,10 +41,8 @@ const LogoContainer = styled.div`
   transition: opacity 0.2s ease;
   margin: 0 12px;
 
-  &:hover {
-    span {
-      opacity: 1;
-    }
+  &:hover span {
+    opacity: 1;
   }
 
   @media ${device.mobile} {
@@ -56,6 +54,10 @@ const StyledLogoLink = styled(Link)<{
   $positionY: ILogo["positionY"];
   $mobilePositionY: ILogo["mobilePositionY"];
 }>`
+  &:focus-visible span {
+    opacity: 1;
+  }
+
   &::before {
     content: "";
     display: block;
