@@ -1,5 +1,5 @@
 {
-  "PageTitle": "Prices for ONLYOFFICE Docs Home Server",
+  "PageTitle": "Prices for ONLYOFFICE Docs Home Server | ONLYOFFICE",
   "PageDescription": "Buy ONLYOFFICE Docs for home use",
 
   "BuyOODocsHomeServer": "Buy ONLYOFFICE <0>Docs Home Server</0>",
@@ -10,6 +10,7 @@
   "DesktopAndMobileApps": "Desktop and mobile apps",
   "EnhancedSecurityFeatures": "Enhanced security features",
   "AllMinorUpdatesAndMajorUpgrades": "All minor updates and major upgrades",
+  "TryItFree": "Try it free",
 
   "NumberOfUsers": "Number of users",
   "NumberOfUsersTooltip": "Specified number of users defines how many people can have access to editing documents, spreadsheets, and presentations. The number of documents that can be edited at the same time is not limited. Other users will be able to open documents for viewing only.",
@@ -18,6 +19,8 @@
   "LifetimeTooltip": "You can use all the ONLYOFFICE Docs Home Server features available at the moment of the purchase for an unlimited period of time, but one year after the purchase date you will no longer be able to get free updates.",
   "Updates": "Updates",
   "1Year": "1 year",
+  "Total": "Total:",
+  "BuyNow": "Buy now",
 
   "WhatDoTheLifetimeLicenseAnd1YearUpdatesLabel": "What do the 'lifetime license' and '1-year updates' mean?",
   "WhatDoTheLifetimeLicenseAnd1YearUpdatesText": "You can use all the features of ONLYOFFICE Docs Home Server available upon purchase for an unlimited period of time, but you will no longer be able to get free updates one year after the purchase date. If you want to update your version of ONLYOFFICE Docs Home Server later, you will need to purchase a new license key.",

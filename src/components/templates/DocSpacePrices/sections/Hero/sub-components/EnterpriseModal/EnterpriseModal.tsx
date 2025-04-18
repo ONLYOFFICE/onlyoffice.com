@@ -116,7 +116,7 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
               items={licenseDurations.map((item) => ({
                 id: item.id,
                 label: {
-                  name: t(item.label.name),
+                  name: t(String(item.label.name)),
                 },
               }))}
               selected={selectedOption.licenseDuration}
@@ -129,7 +129,7 @@ const EnterpriseModal = ({ isOpen, onClose }: IEnterpriseModal) => {
               items={supportUpdates.map((item) => ({
                 id: item.id,
                 label: {
-                  name: t(item.label.name),
+                  name: t(String(item.label.name)),
                 },
               }))}
               selected={selectedOption.supportUpdates}

@@ -4,16 +4,15 @@ import { IHead } from "./Head.types";
 
 const Head = ({ title, description, titleOG, descriptionOG }: IHead) => {
   const { locales, locale, pathname } = useRouter();
-  const titleString = `${title} | ONLYOFFICE`;
   const pathnameString = pathname === "/" ? "" : pathname;
 
   return (
     <NextHead>
-      <title>{titleString}</title>
+      <title>{title}</title>
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {description && <meta name="description" content={description} />}
-      <meta property="og:title" content={titleOG || titleString} />
+      <meta property="og:title" content={titleOG || title} />
       {(descriptionOG || description) && (
         <meta
           property="og:description"
