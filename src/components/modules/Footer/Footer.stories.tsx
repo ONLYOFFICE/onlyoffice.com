@@ -1,7 +1,7 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { Footer } from "./Footer";
 import { ILocale } from "@src/types/locale";
-import languages from "@src/config/languages.json";
+import { languages } from "@src/config/languages";
 
 export default {
   title: "Modules/Footer",
