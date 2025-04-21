@@ -1,3 +1,5 @@
+import { languages } from "@src/config/languages";
+
 export interface ILocale {
-  locale: string;
+  locale: (typeof languages)[number]["shortKey"];
 }
