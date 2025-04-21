@@ -8,6 +8,7 @@ const Tooltip = ({
   className,
   content,
   children,
+  tabIndex = 0,
   infoIcon,
   float,
   offset,
@@ -21,7 +22,7 @@ const Tooltip = ({
         data-tooltip-id={id}
         $width={width}
         $infoIcon={infoIcon}
-        tabIndex={0}
+        tabIndex={tabIndex}
         role="button"
       >
         {infoIcon ? <InfoIcon /> : children}

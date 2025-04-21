@@ -25,6 +25,9 @@ export default {
     children: {
       control: { type: "text" },
     },
+    tabIndex: {
+      control: { type: "number" },
+    },
     float: {
       control: { type: "boolean" },
       options: [true, false],
