@@ -5,9 +5,7 @@ export interface ICertificateModal {
   onClose: () => void;
   /** Certificate image */
   image: {
-    /** Certificate image url */
     url: string;
-    /** Certificate image height */
-    height: number;
+    alt: string;
   };
 }

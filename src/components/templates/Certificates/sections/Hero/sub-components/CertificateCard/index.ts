@@ -1,1 +1,0 @@
-export { CertificateCard } from "./CertificateCard";

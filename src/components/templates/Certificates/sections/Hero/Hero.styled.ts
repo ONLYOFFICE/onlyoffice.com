@@ -1,9 +1,9 @@
+import styled from "styled-components";
+import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
-import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
-import { device } from "@src/utils/device";
-import styled from "styled-components";
 
 const StyledHeroSection = styled(Section)`
   background-image: url("/images/templates/certificates/hero/orange-line.svg");
@@ -16,35 +16,41 @@ const StyledHeroSection = styled(Section)`
 `;
 
 const StyledHeroContainer = styled(Container)`
-  max-width: 1280px;
   padding: 0;
 `;
 
 const StyledHeroWrapper = styled.div`
+  display: grid;
+  align-items: center;
+  grid-template-columns: 448px auto;
+  column-gap: 32px;
+  border-radius: 6px;
+  padding: 24px 80px 30px;
+  min-height: 480px;
   background-color: #f5f5f5;
   background-image: url("/images/templates/certificates/hero/gray-line.svg");
   background-repeat: no-repeat;
   background-position: center calc(50% - 7px);
-  display: grid;
-  grid-template-columns: 448px auto;
-  gap: 32px;
-  align-items: center;
-  padding: 24px 80px 30px;
 
   @media ${device.desktop} {
+    padding: 24px 48px 30px;
+  }
+
+  @media ${device.tablet} {
     grid-template-columns: 304px auto;
-    padding: 24px 0 30px 48px;
+    padding: 24px 0 24px 48px;
   }
 
   @media ${device.tabletS} {
+    grid-template-columns: initial;
+    padding: 84px 0 0;
+    min-height: initial;
     background-size: auto 223px;
     background-position-y: 65px;
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding: 0;
   }
 
   @media ${device.mobile} {
+    padding: 48px 0 37px;
     background-size: auto 153px;
     background-position-y: 112.5px;
   }
@@ -52,20 +58,30 @@ const StyledHeroWrapper = styled.div`
 
 const StyledHeroContent = styled.div`
   display: grid;
-  gap: 24px;
-  text-align: start;
-
-  @media ${device.tablet} {
-    padding: 84.5px 0;
-  }
+  row-gap: 24px;
 
   @media ${device.tabletS} {
+    row-gap: 16px;
+    margin-bottom: 62px;
+    padding: 0 40px;
     text-align: center;
   }
 
   @media ${device.mobile} {
-    gap: 16px;
-    padding: 48px 16px 24px;
+    margin-bottom: 24px;
+    padding: 0 16px;
+  }
+`;
+
+const StyledHeroHeading = styled(Heading)`
+  line-height: 53px;
+
+  @media ${device.tabletS} {
+    line-height: 60px;
+  }
+
+  @media ${device.mobile} {
+    line-height: 32px;
   }
 `;
 
@@ -90,14 +106,14 @@ const StyledHeroText = styled(Text)`
 `;
 
 const StyledHeroImage = styled.div`
+  padding-bottom: 66.5625%;
   background-image: url("/images/templates/certificates/hero/hero-image.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  padding-bottom: 66.5625%;
+  background-position: center;
 
   @media ${device.tabletS} {
-    margin: 0 51px;
-    background-position: center;
+    padding-bottom: 62.5%;
   }
 
   @media ${device.mobile} {
@@ -108,114 +124,12 @@ const StyledHeroImage = styled.div`
   }
 `;
 
-const  StyledCertificateCardsWrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 56px 32px;
-  margin: 140px 0 112px;
-
-  @media ${device.tablet} {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    margin: 110px 0 112px;
-  }
-
-  @media ${device.tabletS} {
-    padding: 16px;
-    margin: 80px 0;
-  }
-
-  @media ${device.mobile} {
-    gap: 48px;
-    padding: 8px;
-    margin: 48px 0;
-  }
-`;
-
-const  StyledUsersWorldwideWrapper = styled.div`
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 39px;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 24px;
-  align-items: center;
-
-  &::before {
-    content: "";
-    width: 143px;
-    height: 25px;
-    position: absolute;
-    right: 30px;
-    bottom: -12.5px;
-    background-image: url("/images/templates/certificates/users/line.svg");
-    background-repeat: no-repeat;
-    background-size: 143px 25px;
-  }
-
-  @media ${device.tabletS} {
-    grid-template-columns: 1fr;
-    padding-bottom: 56px;
-    justify-items: center;
-
-    &::before {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  @media ${device.mobile} {
-    padding: 32px 24px 40px;
-  }
-`;
-
-const  StyledUsersWorldwideContent = styled.div`
-  display: grid;
-  grid-template-columns: 74px auto;
-  gap: 32px;
-
-  @media ${device.tabletS} {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: center;
-  }
-
-  @media ${device.mobile} {
-    gap: 24px;
-  }
-`;
-
-const  StyledUsersWorldwideImage = styled.div`
-  width: 74px;
-  height: 74px;
-  background-image: url("/images/templates/certificates/users/world.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-`;
-
-const  StyledUsersWorldwideText = styled(Heading)`
-  max-width: 533px;
-  font-size: 28px;
-  line-height: 31px;
-
-  @media ${device.mobile} {
-    font-size: 20px;
-    line-height: 27px;
-  }
-`;
-
 export {
   StyledHeroSection,
   StyledHeroContainer,
   StyledHeroWrapper,
   StyledHeroContent,
+  StyledHeroHeading,
   StyledHeroText,
   StyledHeroImage,
-  StyledCertificateCardsWrapper,
-  StyledUsersWorldwideWrapper,
-  StyledUsersWorldwideContent,
-  StyledUsersWorldwideImage,
-  StyledUsersWorldwideText,
 };
