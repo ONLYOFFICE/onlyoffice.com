@@ -1,48 +1,47 @@
-import { Link } from "@src/components/ui/Link";
 import styled, { keyframes } from "styled-components";
-import { ILogo } from "../../data/logos";
 import { device } from "@src/utils/device";
+import { Link } from "@src/components/ui/Link";
+import { Text } from "@src/components/ui/Text";
 
 const scroll = keyframes`
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
 `;
 
-const MarqueeWrapper = styled.div`
+const StyledMarquee = styled.div`
+  width: 100%;
   overflow: hidden;
-  height: 76px;
-  position: relative;
-  margin: 0 auto;
+`;
 
-  &:hover .marquee-inner,
-  &:has(.marquee-inner:active) .marquee-inner {
+const StyledMarqueeWrapper = styled.div`
+  display: flex;
+  width: fit-content;
+  animation: ${scroll} 60s linear infinite;
+
+  &:hover {
     animation-play-state: paused;
   }
-
-  @media ${device.mobile} {
-    height: 64px;
-  }
 `;
 
-const MarqueeInner = styled.div`
-  display: flex;
-  min-width: max-content;
-  animation: ${scroll} 60s linear infinite;
+const StyledMarqueeText = styled(Text)`
+  opacity: 0;
+  transition: opacity 0.2s;
 `;
 
-const LogoContainer = styled.div`
+const StyledMarqueeItem = styled(Link)`
   position: relative;
-  display: grid;
-  text-align: center;
-  transition: opacity 0.2s ease;
   margin: 0 12px;
 
-  &:hover span {
-    opacity: 1;
+  &:hover,
+  &:focus-visible {
+    ${StyledMarqueeText} {
+      opacity: 1;
+    }
   }
 
   @media ${device.mobile} {
@@ -50,48 +49,21 @@ const LogoContainer = styled.div`
   }
 `;
 
-const StyledLogoLink = styled(Link)<{
-  $positionY: ILogo["positionY"];
-  $mobilePositionY: ILogo["mobilePositionY"];
-}>`
-  &:focus-visible span {
-    opacity: 1;
+const StyledMarqueeImg = styled.img`
+  width: 168px;
+  height: 48px;
+  object-fit: contain;
+
+  @media ${device.mobile} {
+    width: 126px;
+    height: 36px;
   }
-
-  &::before {
-    content: "";
-    display: block;
-    width: 168px;
-    height: 48px;
-    background-image: url("/images/templates/contribute/spread/connectors.svg");
-    background-size: 168px auto;
-    background-position: center ${({ $positionY }) => $positionY || "0px"};
-    margin-bottom: 8px;
-
-    @media ${device.mobile} {
-      width: 126px;
-      height: 36px;
-      background-size: 126px auto;
-      background-position-y: ${({ $mobilePositionY, $positionY }) =>
-        $mobilePositionY || $positionY};
-    }
-  }
-`;
-
-const StyledLogoText = styled.span`
-  display: block;
-  opacity: 0;
-  font-size: 14px;
-  line-height: 20px;
-  color: #ff6f3d;
-  text-decoration: underline;
-  transition: opacity 0.2s ease;
 `;
 
 export {
-  MarqueeWrapper,
-  MarqueeInner,
-  LogoContainer,
-  StyledLogoLink,
-  StyledLogoText,
+  StyledMarquee,
+  StyledMarqueeWrapper,
+  StyledMarqueeItem,
+  StyledMarqueeText,
+  StyledMarqueeImg,
 };

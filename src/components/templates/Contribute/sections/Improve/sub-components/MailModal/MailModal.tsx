@@ -1,133 +1,174 @@
+import { useState } from "react";
 import { useTranslation } from "next-i18next";
-import { useState, useCallback, useRef } from "react";
-import { Errors, IMailModal } from "./MailModal.types";
+import { IMailModal } from "./MailModal.types";
 import {
   StyledMailModal,
-  StyledMailModalButton,
-  StyledMailModalCloseIcon,
-  StyledMailModalHead,
-  StyledMailModalHeading,
-  StyledMailModalInput,
-  StyledMailModalText,
   StyledMailModalWrapper,
-  StyledModal,
+  StyledMailModalHeader,
+  StyledMailModalHeading,
+  StyledMailModalCloseBtn,
+  StyledMailModalText,
+  StyledMailModalForm,
+  StyledMailModalInput,
+  StyledMailModalBtnWrapper,
+  StyledMailModalConfirmText,
+  StyledMailModalBtn,
 } from "./MailModal.styled";
+import { Modal } from "@src/components/ui/Modal";
 import { CrossIcon } from "@src/components/icons";
+import { validateEmail } from "@src/utils/validators";
 
 const MailModal = ({ isOpen, onClose }: IMailModal) => {
   const { t } = useTranslation("contribute");
-  const [formData, setFormData] = useState({ name: "", email: "" });
-  const [errors, setErrors] = useState<Errors>({ name: false, email: "" });
-  const [subscribed, setSubscribed] = useState(false);
-  const ref = useRef<HTMLInputElement>(null);
 
-  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-    setErrors((prevErrors) => ({
-      ...prevErrors,
-      [name]: value.trim() ? "" : prevErrors[name],
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+  });
+  const [isEmpty, setIsEmpty] = useState({
+    name: false,
+    email: false,
+  });
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [field]: value,
     }));
-  }, []);
-
-  const validateForm = () => {
-    let valid = true;
-    let nameError: boolean = false;
-    let emailError: "empty" | "invalid" | "" = "";
-
-    if (!formData.name.trim()) {
-      nameError = true;
-      valid = false;
-    }
-
-    if (!formData.email.trim()) {
-      emailError = "empty";
-      valid = false;
-    } else {
-      const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-      if (!emailRegex.test(formData.email)) {
-        emailError = "invalid";
-        valid = false;
-      } else {
-        emailError = "";
-      }
-    }
-
-    setErrors({ name: nameError, email: emailError });
-    return valid;
+    setIsEmpty((prevState) => ({
+      ...prevState,
+      [`${field}`]: value.length === 0,
+    }));
   };
-  const handleSubscribe = () => {
-    if (validateForm()) {
-      setSubscribed(true);
-      console.log("data => ", formData);
-    }
+
+  const checkFormValid = () => {
+    const nameIsValid = formData.name.trim().length > 0;
+    const emailIsValid =
+      formData.email.trim().length > 0 && validateEmail(formData.email);
+    setIsFormValid(nameIsValid && emailIsValid);
+  };
+
+  const onSubmit = () => {
+    const nameIsEmpty = formData.name.trim().length === 0;
+    const emailIsEmpty = formData.email.trim().length === 0;
+    const emailIsValid = validateEmail(formData.email);
+
+    setIsEmpty({
+      name: nameIsEmpty,
+      email: emailIsEmpty,
+    });
+
+    const isValid = !nameIsEmpty && !emailIsEmpty && emailIsValid;
+    setIsFormValid(isValid);
+
+    if (!isValid) return;
   };
 
   const onCloseModal = () => {
     onClose();
-    setFormData({ name: "", email: "" });
-    setErrors({ name: false, email: "" });
-    setSubscribed(false);
+    setFormData({
+      name: "",
+      email: "",
+    });
+    setIsEmpty({
+      name: false,
+      email: false,
+    });
+    setIsFormValid(false);
   };
 
   return (
-    <StyledModal maxWidth="649px" isOpen={isOpen} onClose={onCloseModal}>
+    <Modal
+      maxWidth="649px"
+      bgColor="rgba(255, 255, 255, 0.5)"
+      isOpen={isOpen}
+      onClose={onCloseModal}
+    >
       <StyledMailModal>
-        <StyledMailModalHead>
-          <StyledMailModalHeading level={5} label={t("ModalTitle")} />
-          <StyledMailModalCloseIcon onClick={onCloseModal}>
-            <CrossIcon />
-          </StyledMailModalCloseIcon>
-        </StyledMailModalHead>
-        {subscribed ? (
-          <StyledMailModalWrapper>
-            <StyledMailModalText label={t("GetTheLatestOONews")} />
-            <StyledMailModalButton
-              variant="secondary"
-              className="secondary"
-              label={t("OK")}
-              onClick={onCloseModal}
-            />
-          </StyledMailModalWrapper>
-        ) : (
-          <StyledMailModalWrapper>
-            <StyledMailModalText label={t("GetTheLatestOONews")} />
-            <StyledMailModalInput
-              ref={ref}
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder={t("FirstName")}
-              autoFocus
-              status={errors.name ? "error" : "default"}
-              caption={errors.name ? t("FirstNameIsEmpty") : ""}
-            />
-            <StyledMailModalInput
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder={t("YourEmail")}
-              status={
-                errors.email === "empty" || errors.email === "invalid"
-                  ? "error"
-                  : "default"
-              }
-              caption={
-                errors.email === "empty"
-                  ? t("EmailIsEmpty")
-                  : errors.email === "invalid"
-                  ? t("EmailIsIncorrect")
-                  : ""
-              }
-            />
-            <StyledMailModalButton
-              label={t("Subscribe")}
-              onClick={handleSubscribe}
-            />
-          </StyledMailModalWrapper>
-        )}
+        <StyledMailModalWrapper>
+          <StyledMailModalHeader>
+            <StyledMailModalHeading level={4} label={t("ModalTitle")} />
+
+            <StyledMailModalCloseBtn onClick={onCloseModal}>
+              <CrossIcon />
+            </StyledMailModalCloseBtn>
+          </StyledMailModalHeader>
+
+          {isFormValid ? (
+            <>
+              <StyledMailModalConfirmText
+                color="#666666"
+                label={t("MessageWithConfirmation")}
+              />
+              <StyledMailModalBtn
+                variant="secondary"
+                label={t("OK")}
+                onClick={onCloseModal}
+              />
+            </>
+          ) : (
+            <>
+              <StyledMailModalText label={t("GetTheLatestOONews")} />
+              <StyledMailModalForm>
+                <StyledMailModalInput
+                  value={formData.name}
+                  onChange={(e) => handleInputChange("name", e.target.value)}
+                  onBlur={() => {
+                    setIsEmpty((prev) => ({
+                      ...prev,
+                      name: formData.name.length === 0,
+                    }));
+                    checkFormValid();
+                  }}
+                  name="name"
+                  placeholder={t("FirstName")}
+                  caption={
+                    formData.name.length === 0 ? t("FirstNameIsEmpty") : ""
+                  }
+                  status={isEmpty.name ? "error" : "default"}
+                />
+
+                <StyledMailModalInput
+                  value={formData.email}
+                  onChange={(e) => handleInputChange("email", e.target.value)}
+                  onBlur={() => {
+                    setIsEmpty((prev) => ({
+                      ...prev,
+                      email: formData.email.length === 0,
+                    }));
+                    checkFormValid();
+                  }}
+                  name="email"
+                  placeholder={t("YourEmail")}
+                  caption={
+                    formData.email.length === 0
+                      ? t("EmailIsEmpty")
+                      : !validateEmail(formData.email)
+                      ? t("EmailIsIncorrect")
+                      : ""
+                  }
+                  status={
+                    isEmpty.email ||
+                    (formData.email.length > 0 &&
+                      !validateEmail(formData.email))
+                      ? "error"
+                      : "default"
+                  }
+                />
+
+                <StyledMailModalBtnWrapper>
+                  <StyledMailModalBtn
+                    onClick={onSubmit}
+                    label={t("Subscribe")}
+                  />
+                </StyledMailModalBtnWrapper>
+              </StyledMailModalForm>
+            </>
+          )}
+        </StyledMailModalWrapper>
       </StyledMailModal>
-    </StyledModal>
+    </Modal>
   );
 };
 

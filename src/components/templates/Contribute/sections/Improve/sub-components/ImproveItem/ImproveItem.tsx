@@ -1,12 +1,12 @@
-import { Trans, useTranslation } from "next-i18next";
-import { Link } from "@src/components/ui/Link";
-import { StyledImproveContent, StyledImproveItem, StyledImproveLink } from "./ImproveItem.styled";
+import {
+  StyledImproveContent,
+  StyledImproveItem,
+  StyledImproveLink,
+} from "./ImproveItem.styled";
+import { IImproveItem } from "./ImproveItem.types";
 import { Text } from "@src/components/ui/Text";
-import { IFeatureItemExtended } from "../../data/items";
 
-const ImproveItem = ({ icon, text, links, itemLink }: IFeatureItemExtended) => {
-  const { t } = useTranslation("contribute");
-
+const ImproveItem = ({ icon, text, link }: IImproveItem) => {
   return (
     <StyledImproveItem
       $icon={icon.url}
@@ -14,25 +14,11 @@ const ImproveItem = ({ icon, text, links, itemLink }: IFeatureItemExtended) => {
       $mobilePositionX={icon.mobilePositionX}
     >
       <StyledImproveContent>
-        <Text size={2}>
-          <Trans
-            t={t}
-            i18nKey={String(text)}
-            components={links?.map((link, index) => (
-              <Link
-                key={index}
-                href={link.href}
-                target="_blank"
-                color="main"
-                textUnderline
-                hover="underline-none"
-              />
-            ))}
-          />
-        </Text>
+        <Text size={2}>{text}</Text>
+
         <StyledImproveLink
-          href={itemLink.href}
-          label={t(itemLink.label)}
+          href={link.href}
+          label={link.label}
           target="_blank"
           color="main"
           textUnderline

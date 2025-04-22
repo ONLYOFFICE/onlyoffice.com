@@ -1,40 +1,69 @@
-import { Trans, useTranslation } from "next-i18next";
-import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
-import { Section } from "@src/components/ui/Section";
-import {
-  ImproveItems,
-  StyledSocialMeadiaText,
-  StyledSocialMediaIcon,
-  StyledSocialMediaIconButton,
-  StyledSocialMediaIconLink,
-  StyledSocialMediaIcons,
-} from "./Improve.styled";
-import { items } from "./data/items";
-import { ImproveItem } from "./sub-components/ImproveItem";
-import { Link } from "@src/components/ui/Link";
-import { socialIcons } from "./data/social-icons";
 import { useState } from "react";
+import { Trans, useTranslation } from "next-i18next";
+import {
+  StyledImproveHeading,
+  StyledImproveItems,
+  StyledImproveText,
+  StyledImproveSocialIcons,
+  StyledImproveSocialIcon,
+  StyledImproveSocialButton,
+  StyledImproveSocialIconLink,
+} from "./Improve.styled";
+import { Section } from "@src/components/ui/Section";
+import { Container } from "@src/components/ui/Container";
+import { Link } from "@src/components/ui/Link";
+import { ImproveItem } from "./sub-components/ImproveItem";
+import { socialIcons } from "./data/social-icons";
 import { MailModal } from "./sub-components/MailModal";
+import { items } from "./data/items";
 
 const Improve = () => {
   const { t } = useTranslation("contribute");
   const [isMailModalOpen, setIsMailModalOpen] = useState(false);
 
   return (
-    <Section
-      desktopSpacing={["131px", "160px"]}
-      tabletSmallSpacing={["88px", "91px"]}
-      mobileSpacing={["48px", "50px"]}
-    >
+    <Section desktopSpacing={["136px", "136px"]}>
       <Container>
-        <Heading level={2} size={3} label={t("ImproveOO")} textAlign="center" />
-        <ImproveItems>
+        <StyledImproveHeading
+          level={2}
+          label={t("ImproveOO")}
+          textAlign="center"
+        />
+
+        <StyledImproveItems>
           {items.map((item, index) => (
-            <ImproveItem key={index} {...item} />
+            <ImproveItem
+              key={index}
+              icon={item.icon}
+              text={
+                item.text.links ? (
+                  <Trans
+                    t={t}
+                    i18nKey={String(item.text.label)}
+                    components={item.text.links?.map((item, index) => (
+                      <Link
+                        key={index}
+                        href={item.href}
+                        target={item.isExternal ? "_blank" : undefined}
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                      />
+                    ))}
+                  />
+                ) : (
+                  t(item.text.label)
+                )
+              }
+              link={{
+                label: t(item.link.label),
+                href: item.link.href,
+              }}
+            />
           ))}
-        </ImproveItems>
-        <StyledSocialMeadiaText size={2}>
+        </StyledImproveItems>
+
+        <StyledImproveText size={2} textAlign="center">
           <Trans
             t={t}
             i18nKey="SocialMediaText"
@@ -48,26 +77,27 @@ const Improve = () => {
               />,
             ]}
           />
-        </StyledSocialMeadiaText>
-        <StyledSocialMediaIcons>
+        </StyledImproveText>
+
+        <StyledImproveSocialIcons>
           {socialIcons.map((item, index) => (
-            <StyledSocialMediaIcon
+            <StyledImproveSocialIcon
               key={index}
               title={t(item.title)}
-              $iconPosition={item.iconPosition}
               onClick={!item.link ? () => setIsMailModalOpen(true) : undefined}
             >
               {item.link ? (
-                <StyledSocialMediaIconLink
+                <StyledImproveSocialIconLink
+                  $iconPosition={item.iconPosition}
                   href={t(item.link)}
                   target="_blank"
                 />
               ) : (
-                <StyledSocialMediaIconButton />
+                <StyledImproveSocialButton $iconPosition={item.iconPosition} />
               )}
-            </StyledSocialMediaIcon>
+            </StyledImproveSocialIcon>
           ))}
-        </StyledSocialMediaIcons>
+        </StyledImproveSocialIcons>
 
         <MailModal
           isOpen={isMailModalOpen}

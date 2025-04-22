@@ -1,109 +1,61 @@
-import { Button } from "@src/components/ui/Button";
-import { Heading } from "@src/components/ui/Heading";
-import { Input } from "@src/components/ui/Input";
-import { Modal } from "@src/components/ui/Modal";
-import { Text } from "@src/components/ui/Text";
-import { device } from "@src/utils/device";
 import styled from "styled-components";
-
-const StyledModal = styled(Modal)`
-  > div {
-    padding: 0;
-  }
-`;
+import { device } from "@src/utils/device";
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
+import { Input } from "@src/components/ui/Input";
+import { Button } from "@src/components/ui/Button";
 
 const StyledMailModal = styled.div`
-  width: 649px;
+  margin: 0 -16px;
   height: 633px;
   background-image: url("/images/templates/contribute/improve/mail-modal.png");
+  background-repeat: no-repeat;
   background-position: center;
 
-  @media ${device.tabletS} {
-    width: 100%;
-  }
-
   @media ${device.mobile} {
+    height: 566px;
     background-size: 500px 566px;
   }
 `;
 
-const StyledMailModalHead = styled.div`
-  padding: 110px 140px 0;
-  margin-bottom: 17px;
-  display: flex;
-  justify-content: space-between;
-
-  svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  @media ${device.tabletS} {
-    max-width: 370px;
-    margin: 0 auto 17px;
-    padding: 110px 0 0;
-  }
+const StyledMailModalWrapper = styled.div`
+  padding-top: 110px;
+  margin: 0 auto;
+  max-width: 370px;
 
   @media ${device.mobile} {
-    max-width: 273px;
-    padding-top: 130px;
-    margin-bottom: 10px;
+    padding-top: 94px;
+    max-width: 274px;
   }
+`;
 
-  @media ${device.mobileS} {
-    max-width: 75%;
+const StyledMailModalHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+
+  @media ${device.mobile} {
+    margin-bottom: 10px;
   }
 `;
 
 const StyledMailModalHeading = styled(Heading)`
+  margin-right: 24px;
   font-size: 18px;
   font-weight: 600;
+  line-height: 24px;
 `;
 
-const StyledMailModalCloseIcon = styled.button`
-  background-color: transparent;
+const StyledMailModalCloseBtn = styled.button`
   border: none;
-  cursor: pointer;
   width: 20px;
   height: 20px;
-`;
+  background-color: transparent;
+  cursor: pointer;
 
-const StyledMailModalWrapper = styled.div`
-  padding: 0 140px;
-  display: grid;
-
-  @media ${device.tabletS} {
-    max-width: 370px;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  @media ${device.mobile} {
-    max-width: 273px;
-  }
-
-  @media ${device.mobileS} {
-    max-width: 75%;
-  }
-
-  > div {
-    margin-bottom: 26px;
-    position: relative;
-
-    :first-child {
-      height: 34px;
-      background-color: #fff;
-      border-radius: 4px;
-    }
-
-    .input-caption {
-      position: absolute;
-      margin-top: 0;
-    }
-
-    @media ${device.mobile} {
-      margin-bottom: 22px;
-    }
+  svg {
+    width: 20px;
+    height: 20px;
   }
 `;
 
@@ -117,44 +69,65 @@ const StyledMailModalText = styled(Text)`
   }
 `;
 
-const StyledMailModalInput = styled(Input)`
-  padding: 0 16px;
-  font-size: 16px;
-  line-height: 34px;
-  color: #000;
+const StyledMailModalForm = styled.div`
+  display: grid;
+  row-gap: 26px;
 
-  &::placeholder {
-    color: #666666;
+  @media ${device.mobile} {
+    row-gap: 22px;
   }
 `;
 
-const StyledMailModalButton = styled(Button)`
-  padding: 22px 25px;
-  margin: 0 auto;
-  border: none;
-  width: initial;
+const StyledMailModalInput = styled(Input)`
+  height: 36px;
+  background-color: #ffffff;
+
+  input {
+    padding: 0 16px;
+
+    &::placeholder {
+      color: #666666;
+    }
+
+    @media ${device.mobile} {
+      padding: 0 12px;
+    }
+  }
+
+  ~ .input-caption {
+    position: absolute;
+    margin-top: 0;
+  }
+`;
+
+const StyledMailModalBtnWrapper = styled.div`
+  text-align: center;
+`;
+
+const StyledMailModalConfirmText = styled(Text)`
+  margin: 21px 0;
+  font-size: 14px;
+  line-height: 18px;
 
   @media ${device.mobile} {
-    padding: 16px 25px;
+    font-size: 13px;
   }
+`;
 
-  &:focus-visible {
-    outline: none;
-  }
-
-  &.secondary {
-    margin: 0 auto 0 0;
-  }
+const StyledMailModalBtn = styled(Button)`
+  width: initial;
 `;
 
 export {
-  StyledModal,
   StyledMailModal,
-  StyledMailModalHead,
-  StyledMailModalHeading,
-  StyledMailModalCloseIcon,
   StyledMailModalWrapper,
+  StyledMailModalHeader,
+  StyledMailModalHeading,
+  StyledMailModalCloseBtn,
   StyledMailModalText,
+  StyledMailModalForm,
   StyledMailModalInput,
-  StyledMailModalButton,
+  StyledMailModalBtnWrapper,
+  StyledMailModalConfirmText,
+  StyledMailModalBtn,
 };

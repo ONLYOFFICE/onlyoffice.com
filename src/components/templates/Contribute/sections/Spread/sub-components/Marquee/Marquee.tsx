@@ -1,33 +1,35 @@
 import { useTranslation } from "next-i18next";
-import { logos } from "../../data/logos";
 import {
-  MarqueeWrapper,
-  MarqueeInner,
-  LogoContainer,
-  StyledLogoLink,
-  StyledLogoText,
+  StyledMarquee,
+  StyledMarqueeWrapper,
+  StyledMarqueeImg,
+  StyledMarqueeItem,
+  StyledMarqueeText,
 } from "./Marquee.styled";
+import { logos } from "../../data/logos";
 
 const Marquee = () => {
   const { t } = useTranslation("contribute");
+
   return (
-    <MarqueeWrapper>
-      <MarqueeInner className="marquee-inner">
-        {[...logos, ...logos].map(
-          ({ href, positionY, mobilePositionY }, index) => (
-            <LogoContainer key={index}>
-              <StyledLogoLink
-                href={href}
-                $positionY={positionY}
-                $mobilePositionY={mobilePositionY}
-              >
-                <StyledLogoText>{t("More")}</StyledLogoText>
-              </StyledLogoLink>
-            </LogoContainer>
-          ),
-        )}
-      </MarqueeInner>
-    </MarqueeWrapper>
+    <StyledMarquee>
+      <StyledMarqueeWrapper>
+        {[...logos, ...logos].map((item, index) => (
+          <StyledMarqueeItem key={index} href={item.href}>
+            <StyledMarqueeImg src={item.url} alt={item.id} />
+            <StyledMarqueeText
+              forwardedAs="div"
+              fontSize="14px"
+              lineHeight="20px"
+              color="main"
+              textAlign="center"
+              textDecoration="underline"
+              label={t("More")}
+            />
+          </StyledMarqueeItem>
+        ))}
+      </StyledMarqueeWrapper>
+    </StyledMarquee>
   );
 };
 

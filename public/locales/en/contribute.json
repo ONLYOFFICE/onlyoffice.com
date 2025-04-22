@@ -1,5 +1,5 @@
 {
-  "PageTitle": "Help us make ONLYOFFICE better",
+  "PageTitle": "Help us make ONLYOFFICE better | ONLYOFFICE",
   "PageDescription": "Contribute to the ONLYOFFICE project: develop, translate, test, or document and spread the word.",
 
   "HeroTitle": "Become part of<br> the <span>ONLYOFFICE</span> family",
@@ -49,30 +49,22 @@
   "More": "More",
 
   "TranslateOO": "<0>Translate</0> ONLYOFFICE",
-  "TranslateOOText1": "Do you want to help us translate the ONLYOFFICE interface into your mother tongue to make it accessible anywhere in the world?",
-  "TranslateOOText2": "Join our volunteer translator community writing to us at <0>documentation@onlyoffice.com</0> and get access to our <1>online translation system</1>.",
-  "TranslateOOText3": "<2>More info<2>",
+  "TranslateOOText": "<p>Do you want to help us translate the ONLYOFFICE interface into your mother tongue to make it accessible anywhere in the world?</p><p>Join our volunteer translator community writing to us at <0>documentation@onlyoffice.com</0> and get access to our <1>online translation system</1>.</p>",
 
   "TestOO": "<0>Test</0> ONLYOFFICE",
-  "TestOOText1": "Become an ONLYOFFICE beta-tester to help us test the upcoming features and solutions.",
-  "TestOOText2": "Contact us at <0>press@onlyoffice.com</0>.",
-  "TestOOText3": "<1>More info</1>",
+  "TestOOText": "<p>Become an ONLYOFFICE beta-tester to help us test the upcoming features and solutions.</p><p>Contact us at <0>press@onlyoffice.com</0>.</p>",
 
   "DocumentOO": "<0>Document</0> ONLYOFFICE",
-  "DocumentOOText1": "Have you some tips or tricks to work with ONLYOFFICE more efficiently?",
-  "DocumentOOText2": "Did not find information on how to use some features?",
-  "DocumentOOText3": "Do you want to translate the available documentation to your mother tongue?",
-  "DocumentOOText4": "Contact us at <0>documentation@onlyoffice.com</0> to share your thoughts.",
-  "DocumentOOText5": "<1>More info</1>",
+  "DocumentOOText": "<p>Have you some tips or tricks to work with ONLYOFFICE more efficiently?</p><p>Did not find information on how to use some features?</p><p>Do you want to translate the available documentation to your mother tongue?</p><p>Contact us at <0>documentation@onlyoffice.com</0> to share your thoughts.</p>",
 
   "ContactsImgUrl": "/images/templates/contribute/contacts/en/contacts-bg.png",
   "ContactsImgUrl2x": "/images/templates/contribute/contacts/en/contacts-bg@2x.png",
 
   "ModalTitle": "Don't Miss an Update!",
   "GetTheLatestOONews": "Get the latest ONLYOFFICE news delivered to your inbox",
-  "FirstName": "First name:",
+  "FirstName": "First name",
   "FirstNameIsEmpty": "First name is empty",
-  "YourEmail": "Your email:",
+  "YourEmail": "Your email",
   "EmailIsEmpty": "Email is empty",
   "EmailIsIncorrect": "Email is incorrect",
   "Subscribe": "Subscribe",

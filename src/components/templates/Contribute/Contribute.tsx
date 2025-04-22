@@ -1,17 +1,17 @@
-import { StyledContributeWrapper } from "./Contribute.styled";
-import { Contacts } from "./sections/Contacts";
+import { StyledContributeTemplate } from "./Contribute.styled";
 import { Hero } from "./sections/Hero";
 import { Improve } from "./sections/Improve";
 import { Spread } from "./sections/Spread";
+import { Features } from "./sections/Features";
 
 const ContributeTemplate = () => {
   return (
-    <StyledContributeWrapper>
+    <StyledContributeTemplate>
       <Hero />
       <Improve />
       <Spread />
-      <Contacts />
-    </StyledContributeWrapper>
+      <Features />
+    </StyledContributeTemplate>
   );
 };
 

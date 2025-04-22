@@ -1,27 +1,35 @@
+import styled, { css } from "styled-components";
+import { device } from "@src/utils/device";
+import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
-import { device } from "@src/utils/device";
-import styled from "styled-components";
 
-const ImproveItems = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px 32px;
-  padding: 56px 0;
-
-  @media ${device.tabletS} {
-    row-gap: 56px;
-  }
+const StyledImproveHeading = styled(Heading)`
+  margin-bottom: 56px;
 
   @media ${device.mobile} {
-    padding: 24px 0 48px;
-    grid-template-columns: 1fr;
-    row-gap: 24px;
+    margin-bottom: 24px;
   }
 `;
 
-const StyledSocialMeadiaText = styled(Text)`
-  text-align: center;
+const StyledImproveItems = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 32px;
+  margin-bottom: 56px;
+
+  @media ${device.tabletS} {
+    gap: 56px 32px;
+  }
+
+  @media ${device.mobile} {
+    grid-template-columns: initial;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+`;
+
+const StyledImproveText = styled(Text)`
   margin-bottom: 16px;
 
   @media ${device.tabletS} {
@@ -33,33 +41,29 @@ const StyledSocialMeadiaText = styled(Text)`
   }
 `;
 
-const StyledSocialMediaIcons = styled.ul`
-  max-width: 600px;
-  margin: 0 auto;
+const StyledImproveSocialIcons = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  margin: 0 auto;
+  max-width: 600px;
 
   @media ${device.mobile} {
-    row-gap: 10px;
+    gap: 16px 24px;
   }
 `;
 
-const StyledSocialMediaIconButton = styled.button`
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
+const StyledImproveSocialIcon = styled.li`
+  display: inline-flex;
 `;
 
-const StyledSocialMediaIcon = styled.li<{ $iconPosition: string }>`
-  background-image: url("/images/templates/contribute/improve/social-icons.svg");
-  background-repeat: no-repeat;
+const BaseSocialIcon = css<{ $iconPosition: string }>`
   width: 24px;
   height: 24px;
-  background-position-x: ${({ $iconPosition }) => $iconPosition};
+  background-image: url("/images/templates/contribute/improve/social-icons.svg");
+  background-repeat: no-repeat;
+  background-position-x: ${(props) => props.$iconPosition};
   filter: grayscale(1);
   transition: filter 0.2s;
 
@@ -68,17 +72,24 @@ const StyledSocialMediaIcon = styled.li<{ $iconPosition: string }>`
   }
 `;
 
-const StyledSocialMediaIconLink = styled(Link)`
+const StyledImproveSocialButton = styled.button<{ $iconPosition: string }>`
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  ${BaseSocialIcon};
+`;
+
+const StyledImproveSocialIconLink = styled(Link)<{ $iconPosition: string }>`
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  ${BaseSocialIcon};
 `;
 
 export {
-  ImproveItems,
-  StyledSocialMeadiaText,
-  StyledSocialMediaIcons,
-  StyledSocialMediaIconButton,
-  StyledSocialMediaIcon,
-  StyledSocialMediaIconLink,
+  StyledImproveHeading,
+  StyledImproveItems,
+  StyledImproveText,
+  StyledImproveSocialIcons,
+  StyledImproveSocialIcon,
+  StyledImproveSocialButton,
+  StyledImproveSocialIconLink,
 };

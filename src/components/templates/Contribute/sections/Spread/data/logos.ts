@@ -1,126 +1,119 @@
-export interface ILogo {
-  /** URL of the logo */
-  href: string;
-  /** Position-y of the logo */
-  positionY: string;
-  /** Position-y of the logo on mobile */
-  mobilePositionY: string;
-}
+import { IMarqueeItem } from "../sub-components/Marquee";
 
-export const logos: ILogo[] = [
+export const logos: IMarqueeItem[] = [
   {
+    id: "owncloud",
     href: "/office-for-owncloud",
-    positionY: "-238px",
-    mobilePositionY: "-178px",
+    url: "/images/templates/contribute/spread/owncloud.svg",
   },
   {
+    id: "alfresco",
     href: "/office-for-alfresco",
-    positionY: "-1370px",
-    mobilePositionY: "-1026px",
+    url: "/images/templates/contribute/spread/alfresco.svg",
   },
   {
+    id: "sharepoint",
     href: "/office-for-sharepoint",
-    positionY: "-1548px",
-    mobilePositionY: "-1162px",
+    url: "/images/templates/contribute/spread/sharepoint.svg",
   },
   {
+    id: "confluence",
     href: "/office-for-confluence",
-    positionY: "-834px",
-    mobilePositionY: "-626px",
+    url: "/images/templates/contribute/spread/confluence.svg",
   },
   {
+    id: "nextcloud",
     href: "/office-for-nextcloud",
-    positionY: "-179px",
-    mobilePositionY: "-134px",
+    url: "/images/templates/contribute/spread/nextcloud.svg",
   },
   {
+    id: "communigate",
     href: "/all-connectors#communigate",
-    positionY: "-894px",
-    mobilePositionY: "-672px",
+    url: "/images/templates/contribute/spread/communigate.svg",
   },
   {
+    id: "xwiki",
     href: "/all-connectors#xwiki",
-    positionY: "-2322px",
-    mobilePositionY: "-1742px",
+    url: "/images/templates/contribute/spread/xwiki.svg",
   },
   {
+    id: "liferay",
     href: "/all-connectors#liferay",
-    positionY: "-1010px",
-    mobilePositionY: "-760px",
+    url: "/images/templates/contribute/spread/liferay.svg",
   },
   {
+    id: "humhub",
     href: "/office-for-humhub",
-    positionY: "-1191px",
-    mobilePositionY: "-894px",
+    url: "/images/templates/contribute/spread/humhub.svg",
   },
   {
+    id: "powerfolder",
     href: "/all-connectors#powerfolder",
-    positionY: "-2562px",
-    mobilePositionY: "-1920px",
+    url: "/images/templates/contribute/spread/powerfolder.svg",
   },
   {
+    id: "moodle",
     href: "/all-connectors#moodle",
-    positionY: "-120px",
-    mobilePositionY: "-90px",
+    url: "/images/templates/contribute/spread/moodle.svg",
   },
   {
+    id: "pydio",
     href: "/all-connectors#pydio",
-    positionY: "-2144px",
-    mobilePositionY: "-1608px",
+    url: "/images/templates/contribute/spread/pydio.svg",
   },
   {
+    id: "seafile",
     href: "/all-connectors#seafile",
-    positionY: "-1430px",
-    mobilePositionY: "-1072px",
+    url: "/images/templates/contribute/spread/seafile.svg",
   },
   {
+    id: "plone",
     href: "/office-for-plone",
-    positionY: "-1608px",
-    mobilePositionY: "-1206px",
+    url: "/images/templates/contribute/spread/plone.svg",
   },
   {
+    id: "nuxeo",
     href: "/office-for-nuxeo",
-    positionY: "-2204px",
-    mobilePositionY: "-1652px",
+    url: "/images/templates/contribute/spread/nuxeo.svg",
   },
   {
+    id: "chamilo",
     href: "/office-for-chamilo",
-    positionY: "-298px",
-    mobilePositionY: "-224px",
+    url: "/images/templates/contribute/spread/chamilo.svg",
   },
   {
+    id: "exo",
     href: "/all-connectors#exo",
-    positionY: "-2264px",
-    mobilePositionY: "-1698px",
+    url: "/images/templates/contribute/spread/exo.svg",
   },
   {
+    id: "redmine",
     href: "/office-for-redmine",
-    positionY: "-774px",
-    mobilePositionY: "-580px",
+    url: "/images/templates/contribute/spread/redmine.svg",
   },
   {
+    id: "jira",
     href: "/office-for-jira",
-    positionY: "-2382px",
-    mobilePositionY: "-1788px",
+    url: "/images/templates/contribute/spread/jira.svg",
   },
   {
+    id: "strapi",
     href: "/office-for-strapi",
-    positionY: "-2440px",
-    mobilePositionY: "-1830px",
+    url: "/images/templates/contribute/spread/strapi.svg",
   },
   {
+    id: "wordpress",
     href: "/office-for-wordpress",
-    positionY: "-2620px",
-    mobilePositionY: "-1966px",
+    url: "/images/templates/contribute/spread/wordpress.svg",
   },
   {
+    id: "drupal",
     href: "/office-for-drupal",
-    positionY: "-2086px",
-    mobilePositionY: "-1564px",
+    url: "/images/templates/contribute/spread/drupal.svg",
   },
   {
+    id: "mattermost",
     href: "/office-for-mattermost",
-    positionY: "-2502px",
-    mobilePositionY: "-1876px",
+    url: "/images/templates/contribute/spread/mattermost.svg",
   },
 ];

@@ -1,19 +1,20 @@
+import { useEffect, useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import {
   StyledHeroSection,
+  StyledHeroWrapper,
   StyledHeroContent,
-  StyledHeroImage,
-  StyledHeroImages,
-  StyledScroll,
   StyledHeroHeading,
   StyledHeroText,
-  StyledHeroImageLink,
+  StyledHeroIcons,
+  StyledHeroIconsWrapper,
+  StyledHeroIcon,
+  StyledHeroIconLink,
 } from "./Hero.styled";
+import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { images } from "./data/images";
 import { getPreparedImages } from "./helper/random";
-import { Container } from "@src/components/ui/Container";
-import { useEffect, useState } from "react";
 import { IHeroImage } from "./Hero.types";
 
 const Hero = () => {
@@ -26,22 +27,26 @@ const Hero = () => {
   }, []);
 
   return (
-    <StyledHeroSection>
+    <StyledHeroSection background="#f5f5f5">
       <Container>
-        <StyledHeroContent>
-          <StyledHeroHeading>
-            <Trans
-              t={t}
-              i18nKey="HeroTitle"
-              components={{
-                br: <br />,
-                span: <Text as="span" color="#FF6F3D" />,
-              }}
-            />
-          </StyledHeroHeading>
-          <StyledHeroText size={1}>{t("HeroText")}</StyledHeroText>
-          <StyledScroll>
-            <StyledHeroImages>
+        <StyledHeroWrapper>
+          <StyledHeroContent>
+            <StyledHeroHeading>
+              <Trans
+                t={t}
+                i18nKey="HeroTitle"
+                components={{
+                  br: <br />,
+                  span: <Text as="span" color="#FF6F3D" />,
+                }}
+              />
+            </StyledHeroHeading>
+
+            <StyledHeroText size={1}>{t("HeroText")}</StyledHeroText>
+          </StyledHeroContent>
+
+          <StyledHeroIcons>
+            <StyledHeroIconsWrapper>
               {heroImages.map(({ image, ...item }, index) => {
                 const {
                   isVisible = true,
@@ -50,28 +55,25 @@ const Hero = () => {
                   type = "image",
                 } = image;
 
-                const imageProps = {
-                  $image: url,
-                  $positionX: positionX,
-                  $type: type,
-                  $isVisible: isVisible,
-                  $top: item.top,
-                  $left: item.left,
-                  $right: item.right,
-                  $animationDelay: item.animationDelay,
-                };
-
-                return item.link ? (
-                  <StyledHeroImage key={index} {...imageProps}>
-                    <StyledHeroImageLink href={item.link} />
-                  </StyledHeroImage>
-                ) : (
-                  <StyledHeroImage key={index} {...imageProps} />
+                return (
+                  <StyledHeroIcon
+                    key={index}
+                    $image={url}
+                    $positionX={positionX}
+                    $type={type}
+                    $isVisible={isVisible}
+                    $top={item.top}
+                    $left={item.left}
+                    $right={item.right}
+                    $animationDelay={item.animationDelay}
+                  >
+                    {item.link ? <StyledHeroIconLink href={item.link} /> : null}
+                  </StyledHeroIcon>
                 );
               })}
-            </StyledHeroImages>
-          </StyledScroll>
-        </StyledHeroContent>
+            </StyledHeroIconsWrapper>
+          </StyledHeroIcons>
+        </StyledHeroWrapper>
       </Container>
     </StyledHeroSection>
   );
