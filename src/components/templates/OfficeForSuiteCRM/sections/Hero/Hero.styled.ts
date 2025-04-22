@@ -10,6 +10,11 @@ export const StyledHero = styled(Section)`
   background-position: top;
   background-size: cover;
 
+  @media (max-width: 1680px) {
+    background-size: 1680px 1360px;
+    background-position: center top;
+  }
+
   @media ${device.tablet} {
     margin-top: -64px;
   }
@@ -25,8 +30,17 @@ export const StyledHeroWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-bottom: 32px;
   position: relative;
   z-index: 1;
+
+  @media ${device.tabletS} {
+    padding-bottom: 0px;
+  }
+
+  @media ${device.mobile} {
+    row-gap: 21px;
+  }
 `;
 
 export const StyledHeroLogo = styled.div`

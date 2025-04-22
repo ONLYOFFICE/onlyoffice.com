@@ -12,14 +12,14 @@ const StyledHero = styled(Section)`
   }
 
   @media ${device.tabletS} {
-    background-position: calc(50% - 46px) -162px;
-    background-size: 1450px auto;
+    background-position: calc(50% + 12px) -229px;
+    background-size: 1442px 1303px;
     margin-top: -48px;
   }
 
   @media ${device.mobile} {
-    background-position: calc(50% + 84px) -86px;
-    background-size: 907px auto;
+    background-position: calc(50% - 10px) -141px;
+    background-size: 927px 837px;
   }
 `;
 

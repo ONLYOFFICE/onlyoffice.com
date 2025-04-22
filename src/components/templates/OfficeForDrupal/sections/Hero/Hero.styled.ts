@@ -11,7 +11,6 @@ const StyledHero = styled(Section)`
 
   @media ${device.tablet} {
     margin-top: -64px;
-    background-position: center -477px;
   }
 
   @media ${device.tabletS} {
@@ -19,7 +18,7 @@ const StyledHero = styled(Section)`
   }
 
   @media ${device.mobile} {
-    background-position: calc(50% + 334px) -627px;
+    background-position: 54% -60px;
   }
 `;
 

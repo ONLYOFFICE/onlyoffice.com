@@ -7,21 +7,21 @@ export const StyledHero = styled(Section)`
   background-color: #F9F9F9;
   background-image: url("/images/templates/office-for-mattermost/hero/bg.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: calc(50% - 115px) -374px;
+  background-size: 2652px 2084px;
 
   @media ${device.tablet} {
     margin-top: -64px;
   }
 
   @media ${device.tabletS} {
-    background-position: calc(50% - 46px) -162px;
-    background-size: 1450px auto;
+    background-position: calc(50% - 130px) -394px;
     margin-top: -48px;
   }
 
   @media ${device.mobile} {
-    background-position: calc(50% + 84px) -86px;
-    background-size: 907px auto;
+    background-position: calc(50% - 94px) -183px;
+    background-size: 1353px 1063px;
   }
 `;
 
@@ -33,6 +33,15 @@ export const StyledHeroWrapper = styled.div`
   text-align: center;
   position: relative;
   z-index: 1;
+  padding-bottom: 80px;
+
+  @media ${device.tabletS} {
+    padding-bottom: 12px;
+  }
+  @media ${device.mobile} {
+    padding-bottom: 16px;
+    row-gap: 24px;
+  }
 `;
 
 export const StyledHeroLogo = styled.div`
@@ -41,10 +50,9 @@ export const StyledHeroLogo = styled.div`
   background: url("/images/templates/office-for-mattermost/hero/logo.svg") no-repeat center;
   background-size: contain;
 
-  @media ${device.tablet} {
+  @media ${device.mobile} {
     width: 40px;
     height: 40px;
-    margin-bottom: 20px;
   }
 `;
 

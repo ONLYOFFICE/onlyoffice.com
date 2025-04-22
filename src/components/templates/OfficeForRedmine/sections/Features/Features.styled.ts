@@ -19,28 +19,38 @@ const StyledFeaturesItems = styled.div`
 
   > div {
     max-width: 256px;
-    @media ${device.desktop} {
-      display: grid;
-      grid-template-columns: 64px auto;
-      gap: 24px;
-      text-align: left;
-      width: calc(50% - 24px);
-      max-width: 100%;
+    width: 100%;
 
-      > div {
-        margin-bottom: 0;
+    @media ${device.tabletS} {
+      max-width: calc(50% - 16px);
+      padding: 0 0 0 88px;
+
+      &:before {
+        left: 32px;
       }
 
       > p {
         font-size: 14px;
+        padding: 8px 0px;
+        text-align: left;
       }
     }
 
     @media ${device.mobile} {
-      display: flex;
+      max-width: unset;
+      padding: 64px 0 0;
       gap: 8px;
       text-align: center;
       width: 100%;
+
+      &:before {
+        left: 50%;
+      }
+
+      > p {
+        padding: 8px 0px 0px;
+        text-align: center;
+      }
     }
   }
 

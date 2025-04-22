@@ -6,7 +6,7 @@ const StyledHero = styled(Section)`
   margin-top: -72px;
   background-image: url("/images/templates/office-for-pipedrive/hero/bg.svg");
   background-repeat: no-repeat;
-  background-position: 22% 0;
+  background-position: calc(50% + 245px) 0;
   background-size: cover;
 
   @media ${device.tablet} {
@@ -23,13 +23,17 @@ const StyledHeroWrapper = styled.div`
   display: grid;
   justify-items: center;
   row-gap: 32px;
-  margin: 0 auto 64px;
+  margin: 0 auto 48px;
   max-width: 928px;
   color: #ffffff;
   text-align: center;
 
   @media ${device.tabletS} {
-    margin: 0 auto 48px;
+    margin: 0 auto 32px;
+  }
+    
+  @media ${device.mobile} {
+    margin: 0 auto 36px;
   }
 `;
 

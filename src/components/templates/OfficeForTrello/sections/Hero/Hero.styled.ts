@@ -6,22 +6,22 @@ const StyledHero = styled(Section)`
   margin-top: -72px;
   background: url(/images/templates/office-for-trello/hero/bg.svg) no-repeat,
     linear-gradient(to left, #00b8d9, #0065ff);
-  background-position: 0 -202px, center;
-  background-size: 2213px auto, cover;
+  background-position: 0 -215px, center;
+  background-size: 2213px 1579px, cover;
 
   @media ${device.tablet} {
     margin-top: -64px;
   }
 
   @media ${device.tabletS} {
-    background-position: calc(50% + 145px) -203px, center;
-    background-size: 1495px auto, cover;
+    background-position: calc(50% + 137px) -150px, center;
+    background-size: 1495px 1195px, cover;
     margin-top: -48px;
   }
 
   @media ${device.mobile} {
-    background-position: calc(50% - 30px) -150px, center;
-    background-size: 1007px auto, cover;
+    background-position: calc(50% - 30px) -80px, center;
+    background-size: 1007px 805px, cover;
   }
 `;
 
@@ -30,11 +30,11 @@ const StyledHeroWrapper = styled.div`
   display: grid;
   justify-items: center;
   row-gap: 32px;
-  margin: 0 auto 48px;
+  margin: 0 auto 64px;
   max-width: 928px;
   text-align: center;
 
-  @media ${device.mobile} {
+  @media ${device.tabletS} {
     margin: 0 auto 32px;
   }
 `;

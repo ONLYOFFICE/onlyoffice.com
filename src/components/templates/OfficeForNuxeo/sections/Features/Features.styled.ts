@@ -23,7 +23,12 @@ const StyledFeaturesItems = styled.div`
     }
 
     @media ${device.mobile} {
+      text-align: center;
       width: 100%;
+
+      &::before {
+      left: calc(50% - 32px);
+      }
     }
   }
 

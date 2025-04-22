@@ -1,5 +1,9 @@
 import { useTranslation, Trans } from "next-i18next";
-import { StyledFeaturesWrapper, StyledFeaturesItems, StyledHeaderWrapper } from "./Features.styled";
+import {
+  StyledFeaturesWrapper,
+  StyledFeaturesItems,
+  StyledHeaderWrapper,
+} from "./Features.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
@@ -17,7 +21,7 @@ const Features = () => {
   };
 
   return (
-    <Section>
+    <Section tabletSmallSpacing={["88px", "88px"]}>
       <Container>
         <StyledFeaturesWrapper>
           <StyledHeaderWrapper>

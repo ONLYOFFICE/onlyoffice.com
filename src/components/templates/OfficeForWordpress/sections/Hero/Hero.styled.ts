@@ -4,10 +4,15 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #E8F8FF;
-  background-image: url("/images/templates/office-for-drupal/hero/bg.svg");
+  background-color: #F6F7F7;
+  background-image: url("/images/templates/office-for-wordpress/hero/bg.svg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: center -250px;
+  background-size: cover;
+
+  @media (max-width: 2144px) {
+    background-size: 2144px 1485px;
+  }
 
   @media ${device.tablet} {
     margin-top: -64px;
@@ -19,7 +24,8 @@ const StyledHero = styled(Section)`
   }
 
   @media ${device.mobile} {
-    background-position: calc(50% + 334px) -627px;
+    background-size: 1326px 1032px;
+    background-position: calc(50% + 38px) -350px;
   }
 `;
 
@@ -27,22 +33,31 @@ const StyledHeroWrapper = styled.div`
   display: grid;
   justify-items: center;
   row-gap: 32px;
-  margin: 0 auto 48px;
+  margin: 0 auto 42px;
   max-width: 928px;
   text-align: center;
 
-  @media ${device.mobile} {
+  @media ${device.tabletS} {
     margin: 0 auto 32px;
+  }
+
+  @media ${device.mobile} {
+    row-gap: 24px;
   }
 `;
 
 const StyledHeroLogo = styled.div`
   margin: 0 auto;
-  width:42px;
-  height: 56px;
-  background-image: url("/images/templates/office-for-drupal/hero/logo.svg");
+  width: 55px;
+  height: 55px;
+  background-image: url("/images/templates/office-for-wordpress/hero/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media ${device.mobile} {
+    width: 48px;
+    height: 48px;
+  }
 `;
 
 const StyledHeroHeader = styled.div`

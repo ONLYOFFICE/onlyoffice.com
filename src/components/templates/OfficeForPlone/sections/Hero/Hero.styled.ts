@@ -7,7 +7,8 @@ export const StyledHero = styled(Section)`
   background-color: #F5F5F5;
   background-image: url("/images/templates/office-for-plone/hero/bg.svg");
   background-repeat: no-repeat;
-  background-position: 40% -310px;
+  background-position: calc(50% - 40px) -321px;
+  background-size: 2053px 1853px;
 
   @media ${device.tablet} {
     margin-top: -64px;
@@ -15,6 +16,12 @@ export const StyledHero = styled(Section)`
 
   @media ${device.tabletS} {
     margin-top: -48px;
+    background-position: calc(50% - 9px) -143px;
+    background-size: 1002px 907px;
+  }
+  @media ${device.mobile} {
+    background-position: calc(50% + 106px) -106px;
+    background-size: 729px 658px;
   }
 `;
 

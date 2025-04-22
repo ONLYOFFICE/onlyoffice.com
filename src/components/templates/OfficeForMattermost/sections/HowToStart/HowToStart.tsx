@@ -9,7 +9,7 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-mattermost");
 
   return (
-    <StyledHowToStart id="how-to-start" background="#f9f9f9">
+    <StyledHowToStart id="how-to-start" background="#f9f9f9" tabletSmallSpacing={["88px", "88px"]}>
       <Container>
         <ConnectorHowToStart
           text={

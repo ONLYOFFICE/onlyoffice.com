@@ -9,7 +9,7 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-redmine");
 
   return (
-    <StyledHowToStart id="how-to-start">
+    <StyledHowToStart id="how-to-start" tabletSmallSpacing={["88px", "88px"]}>
       <Container>
         <ConnectorHowToStart
           text={

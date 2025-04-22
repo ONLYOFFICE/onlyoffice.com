@@ -22,10 +22,10 @@ const Hero = () => {
 
   return (
     <StyledHero
-      desktopSpacing={["156px", "50px"]}
-      tabletSpacing={["156px", "0px"]}
-      tabletSmallSpacing={["136px", "0px"]}
-      mobileSpacing={["96px", "24px"]}
+      desktopSpacing={["134px", "24px"]}
+      tabletSpacing={["134px", "24px"]}
+      tabletSmallSpacing={["104px", "0px"]}
+      mobileSpacing={["88px", "30px"]}
     >
       <Container>
         <StyledHeroWrapper>

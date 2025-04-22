@@ -7,21 +7,19 @@ export const StyledHero = styled(Section)`
   background-color: #EDF4FF;
   background-image: url("/images/templates/office-for-strapi/hero/bg.svg");
   background-repeat: no-repeat;
-  background-position: 70% -195px;
+  background-position: calc(50% - 153px) -245px;
+  background-size: 2644px 1352px;
 
   @media ${device.tablet} {
     margin-top: -64px;
   }
 
   @media ${device.tabletS} {
-    background-position: calc(50% - 46px) -162px;
-    background-size: 1450px auto;
     margin-top: -48px;
   }
 
   @media ${device.mobile} {
-    background-position: calc(50% + 84px) -86px;
-    background-size: 907px auto;
+    background-position: calc(50% - 253px) -315px;
   }
 `;
 
@@ -31,20 +29,28 @@ export const StyledHeroWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-bottom: 62px;
   position: relative;
   z-index: 1;
+  @media ${device.tabletS} {
+    padding-bottom: 7px;
+  }
+
+  @media ${device.mobile} {
+    row-gap: 21px;
+    padding-bottom: 0px;
+  }
 `;
 
 export const StyledHeroLogo = styled.div`
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   background: url("/images/templates/office-for-strapi/hero/logo.svg") no-repeat center;
   background-size: contain;
 
-  @media ${device.tablet} {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 20px;
+  @media ${device.mobile} {
+    width: 48px;
+    height: 48px;
   }
 `;
 

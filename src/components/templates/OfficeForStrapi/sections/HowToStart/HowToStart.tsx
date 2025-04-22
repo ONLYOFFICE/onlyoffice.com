@@ -1,7 +1,6 @@
 import { useTranslation, Trans } from "next-i18next";
-import { StyledHowToStart } from "./HowToStart.styled";
+import { StyledHowToStart, StyledConnectorHowToStart } from "./HowToStart.styled";
 import { Container } from "@src/components/ui/Container";
-import { ConnectorHowToStart } from "@src/components/modules/connectors/HowToStart";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
@@ -9,9 +8,9 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-strapi");
 
   return (
-    <StyledHowToStart id="how-to-start">
+    <StyledHowToStart id="how-to-start" tabletSmallSpacing={["40px", "40px"]} mobileSpacing={["48px", "48px"]}>
       <Container>
-        <ConnectorHowToStart
+        <StyledConnectorHowToStart
           text={
             <Trans
               t={t}

@@ -17,7 +17,7 @@ const Features = () => {
   };
 
   return (
-    <Section>
+    <Section tabletSmallSpacing={["88px", "88px"]}>
       <Container>
         <StyledFeaturesWrapper>
           <StyledHeaderWrapper>

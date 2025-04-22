@@ -10,6 +10,11 @@ export const StyledHero = styled(Section)`
   background-position: top;
   background-size: cover;
 
+  @media (max-width: 1680px) {
+    background-size: 1680px 1257px;
+    background-position: center top;
+  }
+
   @media ${device.tablet} {
     margin-top: -64px;
   }
@@ -21,12 +26,17 @@ export const StyledHero = styled(Section)`
 
 export const StyledHeroWrapper = styled.div`
   display: flex;
-  row-gap: 32px;
+  row-gap: 24px;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-bottom: 16px;
   position: relative;
   z-index: 1;
+
+  @media ${device.mobile} {
+    padding-bottom: 0px;
+  }
 `;
 
 export const StyledHeroLogo = styled.div`
@@ -38,7 +48,6 @@ export const StyledHeroLogo = styled.div`
   @media ${device.mobile} {
     width: 48px;
     height: 48px;
-    margin-bottom: 20px;
   }
 `;
 

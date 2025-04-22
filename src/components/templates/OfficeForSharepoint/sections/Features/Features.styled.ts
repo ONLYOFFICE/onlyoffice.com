@@ -32,13 +32,15 @@ const StyledFeaturesItems = styled.div`
     }
 
     @media ${device.mobile} {
-      display: grid;
-      grid-template-columns: 64px auto;
-      gap: 16px;
+      padding: 0 0 0 80px;
       text-align: left;
       width: 100%;
-      > div {
-        margin-bottom: 0;
+      &:before {
+        left: 32px;
+      }
+      > p {
+        height: 64px;
+        padding: 11px 0px;
       }
     }
   }

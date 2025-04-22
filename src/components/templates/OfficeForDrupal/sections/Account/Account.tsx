@@ -8,7 +8,12 @@ const Account = () => {
   const { t } = useTranslation("office-for-drupal");
 
   return (
-    <Section desktopSpacing={["40px", "112px"]}>
+    <Section
+      desktopSpacing={["40px", "112px"]}
+      tabletSpacing={["40px", "88px"]}
+      tabletSmallSpacing={["0px", "80px"]}
+      mobileSpacing={["0px", "48px"]}
+    >
       <Container>
         <FeatureSwitcher
           position="right"

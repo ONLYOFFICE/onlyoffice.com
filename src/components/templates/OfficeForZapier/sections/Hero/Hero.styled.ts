@@ -4,10 +4,11 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #f5f5f5;
+  background-color: #EFEFEF;
   background-image: url("/images/templates/office-for-zapier/hero/bg.svg");
   background-repeat: no-repeat;
-  background-position: 56.75% 81.25%;
+  background-size: 2430px 666px;
+  background-position: center top;
 
   @media ${device.tablet} {
     margin-top: -64px;
@@ -15,6 +16,7 @@ const StyledHero = styled(Section)`
 
   @media ${device.tabletS} {
     margin-top: -48px;
+    background-position: calc(50% - 191px) top;
   }
 `;
 
@@ -26,7 +28,7 @@ const StyledHeroWrapper = styled.div`
   max-width: 928px;
   text-align: center;
 
-  @media ${device.mobile} {
+  @media ${device.tabletS} {
     margin: 0 auto 32px;
   }
 `;

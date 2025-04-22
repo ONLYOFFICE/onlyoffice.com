@@ -25,7 +25,7 @@ const StyledHero = styled(Section)`
   }
 
   @media ${device.mobile} {
-    background-position: calc(50% + 84px) -342px;
+    background-position: calc(50% + 190px) -342px;
   }
 `;
 
@@ -50,6 +50,11 @@ const StyledHeroLogo = styled.div`
   background-image: url("/images/templates/office-for-jira/hero/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media ${device.mobile} {
+    width: 56px;
+    height: 56px;
+  }
 `;
 
 const StyledHeroHeader = styled.div`

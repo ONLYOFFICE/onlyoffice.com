@@ -15,6 +15,11 @@ export const StyledHero = styled(Section)`
 
   @media ${device.tabletS} {
     margin-top: -48px;
+    background-position: calc(50% - 128px) top;
+  }
+    
+  @media ${device.mobile} {
+    background-position: calc(50% - 158px) top;
   }
 `;
 
@@ -37,6 +42,7 @@ export const StyledHeroLogo = styled.div`
   @media ${device.mobile} {
     width: 108px;
     height: 20px;
+    margin-bottom: -16px;
   }
 `;
 
