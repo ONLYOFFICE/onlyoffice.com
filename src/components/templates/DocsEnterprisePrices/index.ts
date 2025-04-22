@@ -1,0 +1,1 @@
+export { DocsEnterprisePricesTemplate } from "./DocsEnterprisePrices";

@@ -6,7 +6,7 @@ import { ConnectApp } from "./sections/ConnectApp";
 const AllConnectorsTemplate = ({ locale }: ILocale) => {
   return (
     <>
-      <Hero locale={locale} />
+      <Hero />
       <Connectors locale={locale} />
       <ConnectApp />
     </>

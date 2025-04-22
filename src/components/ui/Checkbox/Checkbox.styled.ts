@@ -20,14 +20,24 @@ const StyledCheckboxInput = styled.input<{ $checked: ICheckbox["checked"] }>`
   }
 `;
 
-const StyledCheckboxLabel = styled.span`
-  font-size: 16px;
-  line-height: 24px;
+const StyledCheckboxLabel = styled.span<{ $size: ICheckbox["size"] }>`
+  display: inline-flex;
+  align-items: center;
   color: #666666;
+  ${(props) =>
+    props.$size === "small"
+      ? css`
+          font-size: 14px;
+          line-height: 21px;
+        `
+      : css`
+          font-size: 16px;
+          line-height: 24px;
 
-  @media ${device.mobile} {
-    font-size: 14px;
-  }
+          @media ${device.mobile} {
+            font-size: 14px;
+          }
+        `}
 `;
 
 const StyledCheckboxIcon = styled.span<{ $checked: ICheckbox["checked"] }>`

@@ -19,7 +19,7 @@ export interface IFeatureItem {
     mobileHorizontalVariant?: "horizontal" | "vertical";
   };
   /** The heading. */
-  heading?: string;
+  heading?: React.ReactNode;
   /** The text */
   text: React.ReactNode;
   /** The links */

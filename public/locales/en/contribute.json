@@ -1,0 +1,74 @@
+{
+  "PageTitle": "Help us make ONLYOFFICE better | ONLYOFFICE",
+  "PageDescription": "Contribute to the ONLYOFFICE project: develop, translate, test, or document and spread the word.",
+
+  "HeroTitle": "Become part of<br> the <span>ONLYOFFICE</span> family",
+  "HeroText": "Contribute to the ONLYOFFICE open source project and make it even better!",
+
+  "ImproveOO": "Improve ONLYOFFICE",
+  "DevelopYourOwnPluginOrMacros": "Develop your own plugin or macros for ONLYOFFICE Docs.",
+  "ReadAPIDocumentation": "Read API documentation",
+  "CreateYourOwnForm": "Create your own form templates and share them with others.",
+  "OpenOurFormLibrary": "Open our form library",
+  "CreateAnExtensionOrModule": "Create an extension or module for ONLYOFFICE DocSpace.",
+  "DidYouFindABug": "Did you find a bug? Report issues on <0>GitHub</0> or <1>Forum</1>.",
+  "MoreInfo": "More info",
+
+  "SocialMediaText": "Interact with us on <0>blog</0> or social media channels",
+
+  "Icon1Title": "Subscribe to our newsletters",
+  "Icon2Title": "Blog",
+  "Icon3Title": "Twitter",
+  "Icon4Title": "Discord",
+  "Icon5Title": "YouTube",
+  "Icon6Title": "TikTok",
+  "Icon7Title": "GitHub",
+  "Icon8Title": "LinkedIn",
+  "Icon9Title": "Facebook",
+  "Icon10Title": "Medium",
+  "Icon11Title": "Fosstodon",
+  "Icon12Title": "Telegram",
+  "Icon13Title": "Instagram",
+
+  "Icon2Link": "https://www.onlyoffice.com/blog",
+  "Icon3Link": "https://x.com/ONLY_OFFICE",
+  "Icon4Link": "https://discord.com/invite/Hcgtf5n4uF",
+  "Icon5Link": "https://www.youtube.com/user/onlyofficeTV",
+  "Icon6Link": "https://www.tiktok.com/@only_office",
+  "Icon7Link": "https://github.com/ONLYOFFICE/",
+  "Icon8Link": "https://www.linkedin.com/company/ascensio-system-sia/",
+  "Icon9Link": "https://www.facebook.com/people/ONLYOFFICE/100064155187996/#",
+  "Icon10Link": "https://medium.com/onlyoffice",
+  "Icon11Link": "https://fosstodon.org/@ONLYOFFICE",
+  "Icon12Link": "https://t.me/onlyofficeofficial",
+  "Icon13Link": "https://www.instagram.com/the_onlyoffice/",
+
+  "SpreadTitle": "Spread the ONLYOFFICE technology",
+  "SpreadText": "Build a connector for your own platform to bring ONLYOFFICE to everyone.",
+  "SpreadLink": "Read API documentation",
+  "More": "More",
+
+  "TranslateOO": "<0>Translate</0> ONLYOFFICE",
+  "TranslateOOText": "<p>Do you want to help us translate the ONLYOFFICE interface into your mother tongue to make it accessible anywhere in the world?</p><p>Join our volunteer translator community writing to us at <0>documentation@onlyoffice.com</0> and get access to our <1>online translation system</1>.</p>",
+
+  "TestOO": "<0>Test</0> ONLYOFFICE",
+  "TestOOText": "<p>Become an ONLYOFFICE beta-tester to help us test the upcoming features and solutions.</p><p>Contact us at <0>press@onlyoffice.com</0>.</p>",
+
+  "DocumentOO": "<0>Document</0> ONLYOFFICE",
+  "DocumentOOText": "<p>Have you some tips or tricks to work with ONLYOFFICE more efficiently?</p><p>Did not find information on how to use some features?</p><p>Do you want to translate the available documentation to your mother tongue?</p><p>Contact us at <0>documentation@onlyoffice.com</0> to share your thoughts.</p>",
+
+  "ContactsImgUrl": "/images/templates/contribute/contacts/en/contacts-bg.png",
+  "ContactsImgUrl2x": "/images/templates/contribute/contacts/en/contacts-bg@2x.png",
+
+  "ModalTitle": "Don't Miss an Update!",
+  "GetTheLatestOONews": "Get the latest ONLYOFFICE news delivered to your inbox",
+  "FirstName": "First name",
+  "FirstNameIsEmpty": "First name is empty",
+  "YourEmail": "Your email",
+  "EmailIsEmpty": "Email is empty",
+  "EmailIsIncorrect": "Email is incorrect",
+  "Subscribe": "Subscribe",
+
+  "MessageWithConfirmation": "We sent an email message with confirmation to your email address.",
+  "OK": "OK"
+}
