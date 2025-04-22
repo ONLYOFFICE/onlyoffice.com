@@ -11,9 +11,10 @@ const Modal = ({
   id,
   className,
   children,
+  maxWidth = "736px",
+  bgColor = "rgba(0, 0, 0, 0.4)",
   withCloseBtn,
   positionCloseBtn,
-  maxWidth = "736px",
   isOpen,
   onClose,
 }: IModal) => {
@@ -126,6 +127,7 @@ const Modal = ({
     <StyledModal
       onClick={onCloseModal}
       $isOpen={isOpen}
+      $bgColor={bgColor}
       id={id}
       className={className}
     >

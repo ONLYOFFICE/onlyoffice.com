@@ -2,13 +2,16 @@ import styled, { css } from "styled-components";
 import { IModal } from "./Modal.types";
 import { device } from "@src/utils/device";
 
-const StyledModal = styled.div<{ $isOpen: IModal["isOpen"] }>`
+const StyledModal = styled.div<{
+  $isOpen: IModal["isOpen"];
+  $bgColor: IModal["bgColor"];
+}>`
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: ${(props) => props.$bgColor};
   overflow-y: auto;
   z-index: 101;
   opacity: ${(props) => (props.$isOpen ? 1 : 0)};
