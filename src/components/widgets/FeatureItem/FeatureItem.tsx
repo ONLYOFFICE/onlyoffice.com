@@ -4,6 +4,8 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
 const FeatureItem = ({
+  id,
+  className,
   variant = "vertical",
   icon,
   heading,
@@ -11,6 +13,8 @@ const FeatureItem = ({
 }: IFeatureItem) => {
   return (
     <StyledFeatureItem
+      id={id}
+      className={className}
       $variant={variant}
       $icon={icon.url}
       $iconPositionX={icon.positionX}

@@ -37,7 +37,7 @@ const Features = () => {
               key={index}
               variant="horizontal"
               icon={icon}
-              heading={t(heading ?? "")}
+              heading={t(String(heading))}
               text={
                 <Trans
                   t={t}
