@@ -1,0 +1,1 @@
+export { CertificatesTemplate } from "./Certificates";

@@ -4,7 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 
-const StyledPricingHero = styled(Section)`
+const StyledHero = styled(Section)`
   margin-top: -72px;
 
   @media ${device.tablet} {
@@ -16,7 +16,7 @@ const StyledPricingHero = styled(Section)`
   }
 `;
 
-const StyledPricingHeroHeading = styled(Heading)`
+const StyledHeroHeading = styled(Heading)`
   margin-bottom: 56px;
 
   @media ${device.tabletS} {
@@ -28,7 +28,7 @@ const StyledPricingHeroHeading = styled(Heading)`
   }
 `;
 
-const StyledPricingHeroWrapper = styled.div`
+const StyledHeroWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: start;
@@ -43,7 +43,7 @@ const StyledPricingHeroWrapper = styled.div`
   }
 `;
 
-const StyledPricingHeroItem = styled.div<{ $info?: boolean }>`
+const StyledHeroItem = styled.div<{ $info?: boolean }>`
   display: grid;
   row-gap: ${(props) => (props.$info ? "24px" : "32px")};
   padding: 48px;
@@ -58,7 +58,7 @@ const StyledPricingHeroItem = styled.div<{ $info?: boolean }>`
   }
 `;
 
-const StyledPricingHeroPrice = styled.div`
+const StyledHeroPrice = styled.div`
   font-size: 32px;
   font-weight: 700;
   line-height: 43px;
@@ -72,38 +72,7 @@ const StyledPricingHeroPrice = styled.div`
   }
 `;
 
-const StyledPricingHeroList = styled.ul`
-  padding: 8px 0;
-  font-size: 16px;
-  line-height: 24px;
-
-  li {
-    position: relative;
-    padding-left: 32px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 24px;
-      height: 24px;
-      background-image: url("/images/icons/check-gray.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 8px;
-    }
-  }
-
-  @media ${device.mobile} {
-    font-size: 14px;
-  }
-`;
-
-const StyledPricingHeroLinkWrapper = styled.div`
+const StyledHeroLinkWrapper = styled.div`
   padding: 4px 0;
   text-align: center;
 
@@ -112,7 +81,7 @@ const StyledPricingHeroLinkWrapper = styled.div`
   }
 `;
 
-const StyledPricingHeroLink = styled(Link)`
+const StyledHeroLink = styled(Link)`
   display: block;
   font-size: 16px;
   line-height: 27px;
@@ -123,7 +92,7 @@ const StyledPricingHeroLink = styled(Link)`
   }
 `;
 
-const StyledPricingWrapperTotal = styled.div`
+const StyledHeroTotal = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -139,7 +108,7 @@ const StyledPricingWrapperTotal = styled.div`
   }
 `;
 
-const StyledPricingWrapperTotalPrice = styled.div`
+const StyledHeroTotalPrice = styled.div`
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -162,46 +131,14 @@ const StyledPricingWrapperTotalPrice = styled.div`
   }
 `;
 
-const StyledPricingHeroPartners = styled.div`
-  position: relative;
-  display: grid;
-  row-gap: 8px;
-  padding-top: 56px;
-  text-align: center;
-  background-image: url("/images/modules/pricing/pricing-hero/map.svg");
-  background-repeat: no-repeat;
-  background-size: 58px 32px;
-  background-position: top center;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 16px;
-    width: calc(50% - 39px);
-    height: 1px;
-    background-color: #cccccc;
-  }
-
-  &::before {
-    left: 0;
-  }
-
-  &::after {
-    right: 0;
-  }
-`;
-
 export {
-  StyledPricingHero,
-  StyledPricingHeroHeading,
-  StyledPricingHeroWrapper,
-  StyledPricingHeroItem,
-  StyledPricingHeroPrice,
-  StyledPricingHeroList,
-  StyledPricingHeroLinkWrapper,
-  StyledPricingHeroLink,
-  StyledPricingWrapperTotal,
-  StyledPricingWrapperTotalPrice,
-  StyledPricingHeroPartners,
+  StyledHero,
+  StyledHeroHeading,
+  StyledHeroWrapper,
+  StyledHeroItem,
+  StyledHeroPrice,
+  StyledHeroLinkWrapper,
+  StyledHeroLink,
+  StyledHeroTotal,
+  StyledHeroTotalPrice,
 };
