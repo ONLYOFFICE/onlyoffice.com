@@ -57,7 +57,7 @@ const Reasons = () => {
                 key={index}
                 variant="horizontal"
                 icon={item.icon}
-                heading={t(item.heading ?? "")}
+                heading={t(String(item.heading))}
                 text={t(String(item.text))}
               />
             ))}
