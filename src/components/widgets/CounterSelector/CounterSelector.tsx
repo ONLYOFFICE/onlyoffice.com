@@ -2,8 +2,8 @@ import { useState } from "react";
 import {
   StyledCounterSelector,
   StyledCounterSelectorBtn,
-  StyledCounterSelectorInputWrapper,
   StyledCounterSelectorInput,
+  StyledCounterSelectorLabel,
   StyledCounterSelectorValue,
 } from "./CounterSelector.styled";
 import { ICounterSelector } from "./CounterSelector.types";
@@ -13,10 +13,12 @@ const CounterSelector = ({
   id,
   className,
   variant = "default",
-  size = "medium",
+  buttonSize = "large",
+  valueSize = "medium",
+  label,
   bgColor,
-  value,
   autoFocus,
+  value,
   items,
   selected,
   onChange,
@@ -79,38 +81,39 @@ const CounterSelector = ({
     <StyledCounterSelector
       id={id}
       className={className}
-      $variant={variant}
-      $size={size}
+      $label={label}
       $bgColor={bgColor}
     >
       <StyledCounterSelectorBtn
         onClick={decrement}
         disabled={hasItems ? currentIndex <= 0 : parseInt(inputValue, 10) <= 1}
-        $size={size}
+        $buttonSize={buttonSize}
       >
         <DashIcon />
       </StyledCounterSelectorBtn>
 
       {variant === "input" ? (
-        <StyledCounterSelectorInputWrapper>
-          <StyledCounterSelectorInput
-            status="success"
-            value={hasItems ? items[currentIndex]?.label || "" : inputValue}
-            onChange={handleInputChange}
-            autoFocus={autoFocus}
-            maxLength={4}
-          />
-        </StyledCounterSelectorInputWrapper>
+        <StyledCounterSelectorInput
+          $valueSize={valueSize}
+          status="success"
+          value={hasItems ? items[currentIndex]?.label || "" : inputValue}
+          onChange={handleInputChange}
+          autoFocus={autoFocus}
+          maxLength={4}
+        />
       ) : (
-        <StyledCounterSelectorValue>
-          {hasItems ? items[currentIndex]?.label : inputValue}
-        </StyledCounterSelectorValue>
+        <div>
+          <StyledCounterSelectorLabel>{label}</StyledCounterSelectorLabel>
+          <StyledCounterSelectorValue $valueSize={valueSize}>
+            {hasItems ? items[currentIndex]?.label : inputValue}
+          </StyledCounterSelectorValue>
+        </div>
       )}
 
       <StyledCounterSelectorBtn
         onClick={increment}
         disabled={hasItems ? currentIndex >= items.length - 1 : false}
-        $size={size}
+        $buttonSize={buttonSize}
       >
         <PlusIcon />
       </StyledCounterSelectorBtn>

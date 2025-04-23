@@ -3,9 +3,40 @@ import { ICounterSelector } from "./CounterSelector.types";
 import { device } from "@src/utils/device";
 import { Input } from "@src/components/ui/Input";
 
+export const getValueSizeStyles = (
+  $valueSize: ICounterSelector["valueSize"],
+) => {
+  return css`
+    text-align: center;
+    font-weight: 700;
+    color: #333333;
+
+    ${$valueSize === "small"
+      ? css`
+          font-size: 16px;
+          line-height: 24px;
+
+          @media ${device.mobile} {
+            font-size: 14px;
+            line-height: 21px;
+          }
+        `
+      : $valueSize === "medium"
+      ? css`
+          font-size: 18px;
+          line-height: 28px;
+
+          @media ${device.mobile} {
+            font-size: 16px;
+            line-height: 26px;
+          }
+        `
+      : null}
+  `;
+};
+
 const StyledCounterSelector = styled.div<{
-  $variant: ICounterSelector["variant"];
-  $size: ICounterSelector["size"];
+  $label: ICounterSelector["label"];
   $bgColor: ICounterSelector["bgColor"];
 }>`
   display: flex;
@@ -14,18 +45,18 @@ const StyledCounterSelector = styled.div<{
   background-color: ${(props) => props.$bgColor};
 
   ${(props) =>
-    props.$size === "small" &&
+    props.$label &&
     css`
-      max-width: 140px;
+      padding: 16px 0;
 
       @media ${device.mobile} {
-        max-width: 100%;
+        padding: 8px 0;
       }
     `}
 `;
 
 const StyledCounterSelectorBtn = styled.button<{
-  $size: ICounterSelector["size"];
+  $buttonSize: ICounterSelector["buttonSize"];
 }>`
   display: inline-flex;
   justify-content: center;
@@ -38,13 +69,19 @@ const StyledCounterSelectorBtn = styled.button<{
   cursor: pointer;
 
   ${(props) =>
-    props.$size === "small"
+    props.$buttonSize === "small"
       ? css`
           height: 40px;
         `
-      : css`
+      : props.$buttonSize === "medium"
+      ? css`
+          height: 48px;
+        `
+      : props.$buttonSize === "large"
+      ? css`
           height: 56px;
-        `}
+        `
+      : null}
 
   svg {
     width: 24px;
@@ -71,43 +108,36 @@ const StyledCounterSelectorBtn = styled.button<{
   }
 `;
 
-const StyledCounterSelectorInputWrapper = styled.div`
-  .input-wrapper {
-    height: 40px;
+const StyledCounterSelectorInput = styled(Input)<{
+  $valueSize: ICounterSelector["valueSize"];
+}>`
+  height: 40px;
+
+  input {
+    padding: 6px;
+    ${(props) => getValueSizeStyles(props.$valueSize)}
   }
 `;
 
-const StyledCounterSelectorInput = styled(Input)`
-  padding: 6px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: center;
+const StyledCounterSelectorLabel = styled.div`
+  font-size: 13px;
+  line-height: 20px;
 
   @media ${device.mobile} {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 12px;
   }
 `;
 
-const StyledCounterSelectorValue = styled.span`
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #333333;
-  width: 100%;
-  text-align: center;
-
-  @media ${device.mobile} {
-    font-size: 16px;
-    line-height: 26px;
-  }
+const StyledCounterSelectorValue = styled.div<{
+  $valueSize: ICounterSelector["valueSize"];
+}>`
+  ${(props) => getValueSizeStyles(props.$valueSize)}
 `;
 
 export {
   StyledCounterSelector,
   StyledCounterSelectorBtn,
-  StyledCounterSelectorInputWrapper,
   StyledCounterSelectorInput,
+  StyledCounterSelectorLabel,
   StyledCounterSelectorValue,
 };

@@ -3,10 +3,14 @@ export interface ICounterSelector {
   id?: string;
   /** Additional CSS class names. */
   className?: string;
-  /** The variant. */
+  /** The variant. Default: "default". */
   variant?: "default" | "input";
-  /** The size of the counter selector. Default: "medium". */
-  size?: "small" | "medium";
+  /** The size of the increment/decrement buttons. Default: "large". */
+  buttonSize?: "small" | "medium" | "large";
+  /** The size of the value text. Default: "medium". */
+  valueSize?: "small" | "medium";
+  /** Label displayed above the counter. */
+  label?: string;
   /** Background color. */
   bgColor?: string;
   /** Automatically focuses the counter selector when the component mounts. */

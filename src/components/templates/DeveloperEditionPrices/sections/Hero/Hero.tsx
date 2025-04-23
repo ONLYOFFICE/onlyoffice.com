@@ -176,7 +176,7 @@ const Hero = ({ locale }: ILocale) => {
                             subHeading={t("20ConnectionsPerEachServer")}
                           >
                             <CounterSelector
-                              size="small"
+                              buttonSize="small"
                               variant="input"
                               autoFocus={formData.development}
                               value={formData.devServersNumber}
@@ -214,7 +214,7 @@ const Hero = ({ locale }: ILocale) => {
                               heading={t("NumberOfServers")}
                             >
                               <CounterSelector
-                                size="small"
+                                buttonSize="small"
                                 variant="input"
                                 autoFocus={formData.production}
                                 value={formData.prodServerNumber}
@@ -237,7 +237,7 @@ const Hero = ({ locale }: ILocale) => {
                               }}
                             >
                               <CounterSelector
-                                size="small"
+                                buttonSize="small"
                                 items={[
                                   { id: "250", label: "250" },
                                   { id: "500", label: "500" },
@@ -288,7 +288,7 @@ const Hero = ({ locale }: ILocale) => {
                               heading={t("NumberOfServers")}
                             >
                               <CounterSelector
-                                size="small"
+                                buttonSize="small"
                                 variant="input"
                                 autoFocus={formData.nonProduction}
                                 value={formData.nonProdServerNumber}

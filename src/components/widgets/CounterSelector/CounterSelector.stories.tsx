@@ -23,11 +23,18 @@ export default {
     },
     variant: {
       control: { type: "select" },
-      options: ["small", "medium"],
+      options: ["default", "input"],
     },
-    size: {
+    buttonSize: {
+      control: { type: "select" },
+      options: ["small", "medium", "large"],
+    },
+    valueSize: {
       control: { type: "select" },
       options: ["small", "medium"],
+    },
+    label: {
+      control: { type: "text" },
     },
     bgColor: {
       control: { type: "text" },
@@ -48,14 +55,25 @@ export default {
   },
 } as Meta<typeof CounterSelector>;
 
-const Template: StoryFn<ICounterSelector> = (args: ICounterSelector) => {
+const Template: StoryFn<ICounterSelector> = (args) => {
+  const hasItems = Array.isArray(args.items) && args.items.length > 0;
   const [selected, setSelected] = useState(args.selected);
+  const [value, setValue] = useState(args.value);
+
+  const handleChange = (val: string) => {
+    if (hasItems) {
+      setSelected(val);
+    } else {
+      setValue(val);
+    }
+  };
 
   return (
     <CounterSelector
       {...args}
-      selected={selected}
-      onChange={() => setSelected(selected)}
+      selected={hasItems ? selected : undefined}
+      value={!hasItems ? value : undefined}
+      onChange={handleChange}
     />
   );
 };
@@ -63,9 +81,15 @@ const Template: StoryFn<ICounterSelector> = (args: ICounterSelector) => {
 export const Default = Template.bind({});
 Default.args = {
   items: [
-    { id: "counter-selector-100", label: "100" },
-    { id: "counter-selector-250", label: "250" },
-    { id: "counter-selector-500", label: "500" },
+    { id: "100", label: "100" },
+    { id: "250", label: "250" },
+    { id: "500", label: "500" },
   ],
-  selected: "counter-selector-100",
+  selected: "100",
+};
+
+export const InputVariant = Template.bind({});
+InputVariant.args = {
+  variant: "input",
+  value: "1",
 };
