@@ -17,7 +17,7 @@ interface TabItem {
 
 export const items: TabItem[] = [
   {
-    id: "triggers",
+    id: "1",
     title: "Triggers",
     items: [
       {
@@ -71,7 +71,7 @@ export const items: TabItem[] = [
     positionHeader: -15,
   },
   {
-    id: "actions",
+    id: "2",
     title: "Actions",
     items: [
       {

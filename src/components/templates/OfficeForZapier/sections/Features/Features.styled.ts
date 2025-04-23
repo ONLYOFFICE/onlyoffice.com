@@ -2,35 +2,34 @@ import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Tabs } from "@src/components/widgets/Tabs/Tabs";
+import { StyledTabsItem } from "@src/components/widgets/Tabs/Tabs.styled";
 
-const StyledTabLabel = styled.span<{ $positionX: number, $parent?: { $active?: boolean } }>`
-  display: inline-flex;
-  align-items: center;
-  line-height: 24px;
-  gap: 16px;
+const StyledTabs = styled(Tabs)<{ $selected: string }>`
+  ${StyledTabsItem} {
+    font-size: 14px;
+    gap: 16px;
+    align-items: center;
 
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    vertical-align: text-bottom;
-    background: url("/images/templates/office-for-zapier/features/features.svg") ${props => props.$positionX}px -15px no-repeat;
-    background-size: 456px auto;
-  }
-
-  ${props => props.$parent?.$active && css`
-    &::before {
-      background-position-x: -48px;
-    }
-  `}
-
-  @media ${device.mobile} {
+    @media ${device.mobile} {
     font-size: 12px;
   }
-`;
 
-const StyledTabs = styled(Tabs)`
+    &::before {
+      content: '';
+      position: relative;
+      width: 18px;
+      height: 18px;
+      background: url("/images/templates/office-for-zapier/features/features.svg") no-repeat;
+      background-size: 456px auto;
+    }
+
+    &:nth-child(1)::before { background-position: -15px -15px; }
+    &:nth-child(2)::before { background-position: -15px -15px; }
+
+    ${props => props.$selected && css`
+      &:nth-child(${props.$selected})::before { background-position: -48px -15px; }
+    `}
+  }
   padding: 0;
 
   > div:not(:first-child) {
@@ -181,7 +180,6 @@ export {
   StyledColumn,
   StyledDocumentsHeading,
   StyledTabs,
-  StyledTabLabel,
   StyledColumnHeader,
   StyledIcon,
 };

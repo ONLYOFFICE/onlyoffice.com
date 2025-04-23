@@ -3,7 +3,7 @@ import { useTranslation, Trans } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
-import { StyledFeaturesWrapper, StyledColumnsContainer, StyledColumn, StyledDocumentsHeading, StyledTabs, StyledTabLabel, StyledColumnHeader, StyledIcon } from "./Features.styled";
+import { StyledFeaturesWrapper, StyledColumnsContainer, StyledColumn, StyledDocumentsHeading, StyledTabs, StyledColumnHeader, StyledIcon } from "./Features.styled";
 import { items } from "./data/items";
 
 
@@ -28,9 +28,10 @@ const Features = () => {
           </StyledDocumentsHeading>
 
           <StyledTabs
-            items={items.map(tab => ({
+            $selected={selectedTab}
+            items={items.map((tab) => ({
               id: tab.id,
-              label: <StyledTabLabel $positionX={tab.positionHeader} $parent={{ $active: selectedTab === tab.id }}>{t(tab.title)}</StyledTabLabel>,
+              label: t(tab.title),
               content: (
                 <StyledColumnsContainer>
                   {tab.items.map((column, columnIndex) => (
@@ -57,7 +58,7 @@ const Features = () => {
                     </StyledColumn>
                   ))}
                 </StyledColumnsContainer>
-              )
+              ),
             }))}
             selected={selectedTab}
             onChange={handleTabChange}

@@ -49,7 +49,7 @@ const Features = () => {
                     ))}
                   />
                 }
-                heading={t(item.heading ? item.heading : "")}
+                heading={t(String(item.heading))}
                 variant="horizontal"
               />
             ))}

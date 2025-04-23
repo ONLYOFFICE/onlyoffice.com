@@ -1,5 +1,4 @@
 import { IStepCarouselItem, IStepCarouselTab } from "@src/components/widgets/StepCarousel";
-import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
 
 const firstTabItems: IStepCarouselItem[] = [
   {

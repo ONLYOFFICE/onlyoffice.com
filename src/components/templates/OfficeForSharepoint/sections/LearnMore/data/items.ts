@@ -3,7 +3,7 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/office-for-sharepoint/learn-more/card1.png",
-    heading: "Video",
+    heading: { label: "Video" },
     text: "VideoDesc",
     links: [
       {
@@ -15,7 +15,7 @@ export const items: IBlogCard[] = [
   },
   {
     imgUrl: "/images/templates/office-for-sharepoint/learn-more/card2.png",
-    heading: "Compare",
+    heading: { label: "Compare" },
     text: "CompareDesc",
     links: [
       {
@@ -28,7 +28,7 @@ export const items: IBlogCard[] = [
   {
     imgUrl:
       "/images/templates/office-for-sharepoint/learn-more/card3.png",
-    heading: "HelpCenter",
+    heading: { label: "HelpCenter" },
     text: "HelpCenterDesc",
     links: [
       {

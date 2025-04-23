@@ -8,7 +8,7 @@ export interface ITabs {
     /** Unique identifier for the tab. */
     id: string;
     /** Label displayed in the tab. */
-    label: React.ReactNode;
+    label: string;
     /** Content rendered when the tab is active. */
     content: React.ReactNode;
   }[];
