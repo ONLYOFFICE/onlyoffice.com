@@ -12,6 +12,7 @@
     "clean-cache": "rimraf .next/cache"
   },
   "dependencies": {
+    "@onlyoffice/document-editor-react": "^1.6.0",
     "dayjs": "^1.11.13",
     "html-react-parser": "^5.2.3",
     "i18next": "^24.2.2",
@@ -25,7 +26,8 @@
     "react-i18next": "^15.4.0",
     "react-tooltip": "^5.28.0",
     "styled-components": "^6.1.15",
-    "swiper": "^11.2.4"
+    "swiper": "^11.2.4",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "3.2.4",
