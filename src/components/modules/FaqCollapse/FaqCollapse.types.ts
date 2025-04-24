@@ -5,6 +5,8 @@ export interface IFaqCollapse {
   id?: string;
   /** Additional CSS class names. */
   className?: string;
+  /** The background color. */
+  background?: string;
   /** The text. */
   text?: string;
   /** An array of collapse items. */
