@@ -1,0 +1,1 @@
+export { WorkspacePricesTemplate } from "./WorkspacePrices";
