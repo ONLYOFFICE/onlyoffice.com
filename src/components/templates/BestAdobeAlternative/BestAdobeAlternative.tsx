@@ -1,6 +1,6 @@
 // import { Hero } from "./sections/Hero";
 import { StyledBestAdobeAlternativeTemplate } from "./BestAdobeAlternative.styled";
-import OnlyOfficeEditor from "./sections/Editors/OnlyofficeEditor";
+import OnlyOfficeEditor from "./sections/Editors/DocumentEditor";
 // import { Reasons } from "./sections/Reasons";
 // import { Presentation } from "./sections/Presentation";
 // import { LearnMore } from "./sections/LearnMore";
