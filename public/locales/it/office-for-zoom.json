@@ -1,0 +1,39 @@
+{
+  "PageTitle": "Ufficio online sicuro per Zoom",
+  "PageDescription": "Lavora sui documenti d'ufficio dal tuo account Zoom utilizzando un robusto set di funzionalità di ONLYOFFICE",
+
+  "OnlineOfficeForZoom": "Ufficio online sicuro per <0>Zoom</0>",
+  "EnableCollaborativeDocumentEditing": "Lavora sui documenti d'ufficio dal tuo account Zoom utilizzando un robusto set di funzionalità di ONLYOFFICE",
+  "AddToZoom": "AGGIUNGI A",
+
+  "CollaborateOfficeDocuments": "Collabora sui documenti d'ufficio durante le riunioni Zoom",
+  "DocumentsTab1Label": "Crea, carica e condividi documenti fornendo autorizzazioni di modifica o visualizzazione dal vivo.",
+  "DocumentsTab2Label": "Crea in collaborazione documenti, fogli di calcolo e diapositive in tempo reale con altri partecipanti.",
+  "DocumentsTab3Label": "Discuti e compila moduli complessi online, ad esempio accordi o contratti di vendita.",
+  "DocumentsTab4Label": "Naviga tra documenti PDF, aggiungi commenti, annotazioni, disegni.",
+  "DocumentsTab5Label": "Archivia i file modificati durante la riunione Zoom all'interno di una stanza di collaborazione e ottieni accesso costante ad essi da qualsiasi parte e in qualsiasi momento.",
+
+  "EfficientlyManageYourDocuments": "Gestisci in modo efficiente i tuoi documenti tra una riunione e l'altra",
+  "ManageTab1Label": "Crea uno spazio sicuro per tutti i tuoi documenti. Accesso facile direttamente dal tuo account Zoom.",
+  "ManageTab2Label": "Organizza i tuoi file personali e crea stanze per i tuoi documenti aziendali.",
+  "ManageTab3Label": "Fornisci autorizzazioni di accesso flessibili: modifica, commento, revisione o solo visualizzazione.",
+  "ManageTab4Label": "Utilizza le stanze pubbliche per consentire l'accesso ai tuoi documenti a persone al di fuori del proprio spazio.",
+
+  "MarketplaceConnectorTitle": "Creato per funzionare perfettamente con Zoom",
+  "MarketplaceConnectorDescription": "Installa l'app ONLYOFFICE per Zoom dal Marketplace delle app Zoom oggi stesso.",
+
+  "WhyOO": "Perché ONLYOFFICE?",
+  "Reason1": "Un robusto set di strumenti di modifica, formattazione e styling. <0>Assistente AI integrato</0> (ChatGPT o ZhiPu Copilot).",
+  "Reason2": "Co-editing, revisione, cronologia delle versioni, confronto di documenti, commenti e menzioni in <0>tempo reale</0> e con blocco paragrafi.",
+  "Reason3": "Supporto per più di <0>50 formati di file</0>. Pienamente compatibile con i formati MS Office: DOCX, XLSX, PPTX.",
+  "Reason4": "<0>Maggiore sicurezza</0>. Diritti di accesso flessibili, utilizzo di JWT. Monitoraggio delle attività e reporting di controllo. Crittografia dei dati inattivi e in transito. Codice open source.",
+  "Reason5": "<0>Piano gratuito per iniziare</0>. Piano aziendale per più amministratori, spazio di archiviazione più grande, maggiore sicurezza e supporto professionale.",
+
+  "HowToStart": "Come iniziare",
+  "HowToStartStep1": "Accedi al tuo account Zoom.",
+  "HowToStartStep2": "Installa ONLYOFFICE DocSpace dal <0>Zoom App Marketplace</0> e consenti le autorizzazioni dell'app richieste.",
+  "HowToStartStep3": "Avvia una riunione, passa alla scheda App e avvia l'app ONLYOFFICE DocSpace.",
+  "HowToStartStep4": "Avvia una sessione di collaborazione selezionando il file necessario dall'elenco.",
+
+  "ExploreMoreDetailsIn": "Scopri maggiori dettagli in <0>questa guida</0>"
+}
