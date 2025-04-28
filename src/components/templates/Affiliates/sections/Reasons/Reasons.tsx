@@ -22,6 +22,27 @@ const Reasons = () => {
   return (
     <Section tabletSpacing={["80px", "80px"]}>
       <Container>
+        <Heading label={t("ReasonsToJoin")} level={2} textAlign="center" />
+        <StyledReasonsContent>
+          <StyledReasonsSubtitle label={t("InnovativeProduct")} level={3} />
+          <StyledReasonsText label={t("CollaborativeOnline")} />
+          <StyledReasonsLink
+            label={t("LearnMoreAboutOODocSpace")}
+            href="/docspace"
+            color="main"
+            textUnderline
+            hover="underline-none"
+          />
+          <StyledReasonsLink
+            className="second-link"
+            href="/office-suite"
+            label={t("LearnMoreAboutOODocs")}
+            color="main"
+            textUnderline
+            hover="underline-none"
+          />
+          <StyledReasonsImage />
+        </StyledReasonsContent>
         <StyledReasonsWrapper>
           <Heading label={t("ReasonsToJoin")} level={2} textAlign="center" />
 
