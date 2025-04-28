@@ -29,7 +29,7 @@ const Hero = () => {
               <Button
                 id="hero-run-on-your-own-server"
                 as="a"
-                href="/download?from=document-editor#docs-enterprise"
+                href="/download#docs-enterprise"
                 label={t2("RunOnYourOwnServer")}
               />
               <Button

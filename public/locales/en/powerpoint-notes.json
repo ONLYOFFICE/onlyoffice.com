@@ -1,0 +1,30 @@
+{
+    "PageTitle": "Add notes to PowerPoint | ONLYOFFICE",
+    "PageDescription": "Add speaker notes to your PowerPoint presentations with ONLYOFFICE. Browse your notes when presenting with two monitors, so only you can see your notes.",
+    "Header": "Present with comfort",
+    "SubHeader": "Public speaking is made easy with Presenter Mode features",
+
+    "HeroImgUrl": "/images/templates/powerpoint-notes/hero/hero.png",
+    "HeroImgUrl2x": "/images/templates/powerpoint-notes/hero/hero@2x.png",
+
+    "Feature1Title": "Add helpful notes",
+    "Feature1Desc": "Add speaker notes to your PowerPoint presentations, so you have help hints or the whole script in your hand. Browse your notes when presenting with two monitors, so only you can see your notes.",
+
+    "Feature2Title": "Run seamless slide shows",
+    "Feature2Desc": "Navigate between slides easily with compact slide show controls when you are presenting. Preview your slides at any point to estimate the overall look of your presentation.",
+
+    "Feature3Title": "Track your time",
+    "Feature3Desc": "The timer will help you estimate your presentation length in hours, minutes, and seconds, so you can rehearse your speech and time it exactly how long you need. Start, pause, resume, and reset the timer to get an accurate idea of how long your presentation is.",
+
+    "Feature4Title": "Interact with your presentation",
+    "Feature4Desc": "Use the pointer feature to guide the audience through your slides and highlight important text and figures.",
+   
+    "Feature1ImgUrl": "/images/templates/powerpoint-notes/features/pic1.png",
+    "Feature1ImgUrl2x": "/images/templates/powerpoint-notes/features/pic1@2x.png",
+    "Feature2ImgUrl": "/images/templates/powerpoint-notes/features/pic2.png",
+    "Feature2ImgUrl2x": "/images/templates/powerpoint-notes/features/pic2@2x.png",
+    "Feature3ImgUrl": "/images/templates/powerpoint-notes/features/pic3.png",
+    "Feature3ImgUrl2x": "/images/templates/powerpoint-notes/features/pic3@2x.png",
+    "Feature4ImgUrl": "/images/templates/powerpoint-notes/features/pic4.png",
+    "Feature4ImgUrl2x": "/images/templates/powerpoint-notes/features/pic4@2x.png"
+}
