@@ -1,20 +1,20 @@
-// import { Hero } from "./sections/Hero";
+import { Hero } from "./sections/Hero";
 import { StyledBestAdobeAlternativeTemplate } from "./BestAdobeAlternative.styled";
-import OnlyOfficeEditor from "./sections/Editors/DocumentEditor";
-// import { Reasons } from "./sections/Reasons";
-// import { Presentation } from "./sections/Presentation";
-// import { LearnMore } from "./sections/LearnMore";
-// import { GetStarted } from "./sections/GetStarted";
+import { Editors } from "./sections/Editors";
+import { Reasons } from "./sections/Reasons";
+import { Presentation } from "./sections/Presentation";
+import { LearnMore } from "./sections/LearnMore";
+import { GetStarted } from "./sections/GetStarted";
 
 const BestAdobeAlternativeTemplate = () => {
   return (
     <StyledBestAdobeAlternativeTemplate>
-      {/* <Hero />
+      <Hero />
       <Reasons />
       <Presentation />
-      <LearnMore /> */}
-      <OnlyOfficeEditor />
-      {/* <GetStarted /> */}
+      <LearnMore />
+      <Editors />
+      <GetStarted />
     </StyledBestAdobeAlternativeTemplate>
   );
 };

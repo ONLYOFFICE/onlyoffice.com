@@ -29,6 +29,14 @@
   "OOConnectorText": "The official ONLYOFFICE connector for ownCloud comes in version 9.3.1 with the possibility to create and edit forms in PDF format. Keep on reading to learn more.",
   "VisitFreeFormsLibrary": "VISIT FREE FORMS LIBRARY",
 
+  "TryItYourself": "Try it yourself!",
+  "CreateForm": "Create form",
+  "FillOutForm": "Fill out form",
+  "DemoPreview": "Demo preview",
+  "DemoPreviewTitle": "View source code",
+  "DocxForEditing": "Open DOCXF for editing",
+  "Close": "Close",
+
   "GetStartedAndChooseWhereToWork": "Get started and choose where to work",
   "InOODocSpace": "In ONLYOFFICE DocSpace",
   "CreateRoomsWithinYourSecureDocSpace": "Create rooms within your secure DocSpace, invite people, view, edit, and collaborate on all kinds of documents from any desktop or mobile device.",

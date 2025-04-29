@@ -11,7 +11,7 @@ export const comparisonLogos: IComparisonLogo[] = [
     className: "onlyoffice",
   },
   {
-    src: "/images/templates/best-adobe-alternative/hero/comparison.svg",
+    src: "/images/templates/best-adobe-alternative/hero/versus.svg",
     alt: "Versus",
     className: "comparison",
   },

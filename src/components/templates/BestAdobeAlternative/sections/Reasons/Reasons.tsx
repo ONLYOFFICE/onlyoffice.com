@@ -23,7 +23,7 @@ const Reasons = () => {
           {items.map((item, index) => (
             <FeatureItem
               key={index}
-              variant={item.variant}
+              variant={item.variant || "horizontal"}
               icon={item.icon}
               heading={t(item.heading ?? "")}
               text={t(String(item.text))}

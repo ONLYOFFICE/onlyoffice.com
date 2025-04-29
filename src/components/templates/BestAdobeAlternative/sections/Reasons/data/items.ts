@@ -8,7 +8,6 @@ export const items: IFeatureItem[] = [
     },
     heading: "FreeAndOpenSource",
     text: "OOProvidesUsers",
-    variant: "horizontal",
   },
   {
     icon: {
@@ -17,7 +16,6 @@ export const items: IFeatureItem[] = [
     },
     heading: "WebDesktopMobile",
     text: "WithOOUouCanCreate",
-    variant: "horizontal",
   },
   {
     icon: {
@@ -26,7 +24,6 @@ export const items: IFeatureItem[] = [
     },
     heading: "SeamlessOnlineCollaboration",
     text: "YouAreAbleToCreateForms",
-    variant: "horizontal",
   },
   {
     icon: {
@@ -35,7 +32,6 @@ export const items: IFeatureItem[] = [
     },
     heading: "CompleteFunctionality",
     text: "OOUsesItsNativeDocumentEditor",
-    variant: "horizontal",
   },
   {
     icon: {

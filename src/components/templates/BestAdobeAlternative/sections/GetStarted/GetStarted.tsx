@@ -10,7 +10,10 @@ const GetStarted = () => {
   const { t } = useTranslation("best-adobe-alternative");
 
   return (
-    <Section tabletSpacing={["88px", "80px"]}>
+    <Section
+      tabletSpacing={["88px", "80px"]}
+      background="linear-gradient(180deg, #F8F9F9 43.75%, rgba(248, 249, 249, 0) 100%), #FFFFFF"
+    >
       <Container>
         <StyledGetStartedHeading
           level={2}
