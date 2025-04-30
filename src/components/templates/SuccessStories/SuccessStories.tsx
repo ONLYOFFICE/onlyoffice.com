@@ -1,15 +1,15 @@
-import { useRouter } from "next/router";
-
 import { Hero } from "./sections/Hero";
 import { Others } from "./sections/Others";
+import { ISuccessStoriesTemplateProps } from "./SuccessStories.types";
 
-const SuccessStoriesTemplate = () => {
-  const router = useRouter();
-  const { slug } = router.query;
+const SuccessStoriesTemplate = ({
+  userPreview,
+  allOtherUsers,
+}: ISuccessStoriesTemplateProps) => {
   return (
     <>
-      <Hero slug={slug} />
-      <Others slug={slug} />
+      <Hero userPreview={userPreview} />
+      <Others allOtherUsers={allOtherUsers} />
     </>
   );
 };

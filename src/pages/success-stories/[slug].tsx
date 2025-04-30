@@ -7,10 +7,16 @@ import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { SuccessStoriesTemplate } from "@src/components/templates/SuccessStories";
 import { data as successStories } from "@src/components/templates/SuccessStories/data/success-stories";
-import { GetStaticPropsContext } from "next/types";
+import { GetStaticPropsContext, InferGetStaticPropsType } from "next/types";
 import { languages } from "@src/config/languages";
+import { ISuccessStoriesData } from "@src/components/templates/SuccessStories/SuccessStories.types";
 
-const SuccessStoriesPage = ({ locale, params }: GetStaticPropsContext) => {
+const SuccessStoriesPage = ({
+  locale,
+  params,
+  userPreview,
+  allOtherUsers,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { t } = useTranslation("success-stories");
   const slug = params?.slug ?? "astu";
 
@@ -31,7 +37,10 @@ const SuccessStoriesPage = ({ locale, params }: GetStaticPropsContext) => {
         <Header locale={locale ?? "en"} />
       </Layout.Header>
       <Layout.Main>
-        <SuccessStoriesTemplate />
+        <SuccessStoriesTemplate
+          userPreview={userPreview}
+          allOtherUsers={allOtherUsers}
+        />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale ?? "en"} />
@@ -51,6 +60,20 @@ export async function getStaticProps({
   locale,
   params,
 }: GetStaticPropsContext) {
+  const slug = params?.slug ?? "astu";
+  const userPreview: ISuccessStoriesData | undefined = successStories.find(
+    (story) => story.slug === slug,
+  );
+  const allOtherUsers: ISuccessStoriesData[] = successStories.filter(
+    (story) => story.slug !== slug,
+  );
+
+  if (!userPreview) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
       ...(await serverSideTranslations(locale ?? "en", [
@@ -59,6 +82,8 @@ export async function getStaticProps({
       ])),
       locale,
       params,
+      userPreview,
+      allOtherUsers,
     },
   };
 }

@@ -3,13 +3,8 @@ import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { data } from "@src/components/templates/SuccessStories/data/success-stories";
 import { transKeysLink } from "./data/transKeysLink";
-
-import {
-  ISlugProps,
-  ISuccessStoriesData,
-} from "@src/components/templates/SuccessStories/SuccessStories.types";
+import { ISuccessStoriesUserPreview } from "@src/components/templates/SuccessStories/SuccessStories.types";
 
 import {
   StyledStoriesHeroWrapper,
@@ -22,11 +17,8 @@ import {
   StyledStoriesHeroDescription,
 } from "./Hero.styled";
 
-const Hero = ({ slug }: ISlugProps) => {
+const Hero = ({ userPreview }: ISuccessStoriesUserPreview) => {
   const { t } = useTranslation("success-stories");
-  const userPreview: ISuccessStoriesData | undefined = data.find(
-    (story) => story.slug === slug,
-  );
 
   // 1) приводим к строке  2) приводим к массиву
   const rawIndustry = t(userPreview?.profile.industry || "", {

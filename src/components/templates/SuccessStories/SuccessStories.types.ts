@@ -30,3 +30,16 @@ export interface ITransKeysLink {
   fontWeight: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
   color: string;
 }
+
+export interface ISuccessStoriesTemplateProps {
+  userPreview: ISuccessStoriesData;
+  allOtherUsers: ISuccessStoriesData[];
+}
+
+export interface ISuccessStoriesUserPreview {
+  userPreview: ISuccessStoriesData;
+}
+
+export interface ISuccessStoriesAllOtherUsers {
+  allOtherUsers: ISuccessStoriesData[];
+}

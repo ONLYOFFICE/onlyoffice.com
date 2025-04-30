@@ -5,12 +5,7 @@ import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
-import { data } from "@src/components/templates/SuccessStories/data/success-stories";
-
-import {
-  ISlugProps,
-  ISuccessStoriesData,
-} from "@src/components/templates/SuccessStories/SuccessStories.types";
+import { ISuccessStoriesAllOtherUsers } from "@src/components/templates/SuccessStories/SuccessStories.types";
 
 import {
   StyledStoriesOthersWrapper,
@@ -22,11 +17,8 @@ import {
   StyledStoriesOthersCardItemRight,
 } from "./Others.styled";
 
-const Others = ({ slug }: ISlugProps) => {
+const Others = ({ allOtherUsers }: ISuccessStoriesAllOtherUsers) => {
   const { t } = useTranslation("success-stories");
-  const allOtherUsers: ISuccessStoriesData[] = data.filter(
-    (story) => story.slug !== slug,
-  );
 
   const [visibleUserCount, setVisibleUserCount] = useState<number>(2);
   const [visibleButton, setVisibleButton] = useState<boolean>(true);
