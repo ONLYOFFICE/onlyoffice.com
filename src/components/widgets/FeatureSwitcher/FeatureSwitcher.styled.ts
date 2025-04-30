@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { IFeatureSwitcher } from "./FeatureSwitcher.types";
+import { Heading } from "@src/components/ui/Heading";
 import { device } from "@src/utils/device";
 
 const StyledFeatureSwitcher = styled.div<{
@@ -124,10 +125,23 @@ const StyledFeatureSwitcherCustomBtn = styled.div`
   margin-top: 16px;
 `;
 
+const StyledFeatureSwitcherHeading = styled(Heading)`
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 27px;
+
+  @media ${device.mobile} {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+`;
+
 export {
   StyledFeatureSwitcher,
   StyledFeatureSwitcherWrapper,
   StyledFeatureSwitcherBtn,
   StyledFeatureSwitcherImage,
   StyledFeatureSwitcherCustomBtn,
+  StyledFeatureSwitcherHeading,
 };

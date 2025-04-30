@@ -1,0 +1,38 @@
+{
+  "PageTitle": "Collaborative document editing for Plone | ONLYOFFICE Docs",
+  "PageDescription": "Edit and co-author your documents, create and fill out forms within Plone",
+
+  "OnlineOfficeForConnector": "Online office for <0>Plone</0>",
+  "Subheader": "Work on all kinds of office documents within Plone CMS",
+
+  "HeroTab1ImgUrl": "/images/templates/office-for-plone/hero/screen1.png",
+  "HeroTab1ImgUrl2x": "/images/templates/office-for-plone/hero/screen1@2x.png",
+  "HeroTab2ImgUrl": "/images/templates/office-for-plone/hero/screen2.png",
+  "HeroTab2ImgUrl2x": "/images/templates/office-for-plone/hero/screen2@2x.png",
+  "HeroTab3ImgUrl": "/images/templates/office-for-plone/hero/screen3.png",
+  "HeroTab3ImgUrl2x": "/images/templates/office-for-plone/hero/screen3@2x.png",
+  "HeroTab4ImgUrl": "/images/templates/office-for-plone/hero/screen4.png",
+  "HeroTab4ImgUrl2x": "/images/templates/office-for-plone/hero/screen4@2x.png",
+
+  "GetStarted": "Get started",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Plone",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for Plone now from <0>PyPi.org</0> and the ONLYOFFICE <1>GitHub page</1>.",
+
+  "WhyOO": "Why ONLYOFFICE?",
+  "Reason1": "Full support for <0>all popular formats</0>, including OOXML and ODF.",
+  "Reason2": "Complete set of formatting and styling tools organized into an <0>intuitive tabbed interface</0>.",
+  "Reason3": "<0>Real-time co-editing</0>, chat and comments, track changes and version history, document comparison.",
+  "Reason4": "<0>Flawless display of content</0> regardless of browser and operating system.",
+  "Reason5": "<0>Easy configuration</0> from the Plone admin console.",
+  "Reason6": "<0>Open source code</0> available on GitHub.",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Download the latest connector version from <0>PyPi.org</0> and the ONLYOFFICE <1>GitHub page</1>.",
+  "HowToStartStep3": "Configure the connector and enable JWT.",
+
+  "ReadDetailedInstructions": "Check <0>useful guides</0> on Plone integration.",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}

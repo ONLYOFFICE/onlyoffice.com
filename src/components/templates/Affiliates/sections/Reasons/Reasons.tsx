@@ -77,7 +77,11 @@ const Reasons = () => {
               <FeatureItem
                 key={index}
                 variant="horizontal"
-                icon={item.icon}
+                mobileVariant="horizontal-icon-top"
+                icon={{
+                  ...item.icon,
+                  isSprite: true,
+                }}
                 heading={t(String(item.heading))}
                 text={t(String(item.text))}
               />

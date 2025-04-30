@@ -1,0 +1,50 @@
+{
+  "PageTitle": "Online office suite for Chamilo | ONLYOFFICE Docs",
+  "PageDescription": "Collaborate on documents, spreadsheets, presentations, and forms in Chamilo using ONLYOFFICE Docs",
+
+  "OnlineOfficeForChamilo": "Online office for Chamilo",
+  "Subheader": "Collaborate on documents, spreadsheets, presentations, and forms in Chamilo with ONLYOFFICE Docs",
+  "GetItNow": "Get it now",
+  "RequestFreeDemo": "Request free demo",
+  "HeroImgUrl": "/images/templates/office-for-chamilo/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-chamilo/hero/hero@2x.png",
+
+  "WorkWithinChamilo": "Work on office documents within the Chamilo structure",
+  "DocumentsTab1Label": "View and edit text documents, spreadsheets, presentations and fillable forms.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-chamilo/documents/screenshot1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-chamilo/documents/screenshot1@2x.png",
+  "DocumentsTab2Label": "Share providing Edit or Read Only permissions.",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-chamilo/documents/screenshot2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-chamilo/documents/screenshot2@2x.png",
+  "DocumentsTab3Label": "Co-author documents in real time, track changes and leave comments.",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-chamilo/documents/screenshot3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-chamilo/documents/screenshot3@2x.png",
+  "DocumentsTab4Label": "Communicate using built-in chat or video conferencing tools, like Jisti or Rainbow.",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-chamilo/documents/screenshot4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-chamilo/documents/screenshot4@2x.png",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Chamilo",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Chamilo now on GitHub.",
+  "GetStarted": "Get started",
+
+  "WhyOO": "Why ONLYOFFICE?",
+  "Reason1": "A robust set of editing, formatting, and styling tools. Integrated <0>AI helper.</0>",
+  "Reason2": "<0>Enhanced security.</0> Flexible access rights and JWT. Open source code available on GitHub.",
+  "Reason3": "Integration with <0>ONLYOFFICE Docs Cloud</0> solution with no installation required.",
+  "Reason4": "Support for more than <0>50 file formats</0>, fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
+  "Reason5": "Real-time and paragraph-locking <0>co-editing</0>, review, version history, document comparison, comments & chat. Audio and video calls.",
+  "Reason6": "Self-hosted solution. Scalable Enterprise versions. <0>Free 30-day trial.</0> Educational discounts.",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Get the integration app from <0>GitHub</0>.",
+  "HowToStartStep3": "Upload the plugin to Chamilo.",
+  "HowToStartStep4": "Configure the plugin by specifying ONLYOFFICE Docs address.",
+  "HowToStartStep3ImgUrl": "/images/templates/office-for-chamilo/how-to-start/step3.svg",
+  "HowToStartStep4ImgUrl": "/images/templates/office-for-chamilo/how-to-start/step4.svg",
+  "HowToConnect": "Connecting ONLYOFFICE Docs to Chamilo",
+
+  "ReadDetailedInstructions": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}

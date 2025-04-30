@@ -1,0 +1,41 @@
+{
+
+  "DocspaceAppTab1ImgUrl": "/images/templates/office-for-wordpress/docspace-app/fr/screen1.png",
+  "DocspaceAppTab1ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/fr/screen1@2x.png",
+  
+  "DocspaceAppTab2ImgUrl": "/images/templates/office-for-wordpress/docspace-app/fr/screen2.png",
+  "DocspaceAppTab2ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/fr/screen2@2x.png",
+  
+  "DocspaceAppTab3ImgUrl": "/images/templates/office-for-wordpress/docspace-app/fr/screen3.png",
+  "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/fr/screen3@2x.png",
+  
+  "DocspaceAppTab4ImgUrl": "/images/templates/office-for-wordpress/docspace-app/fr/screen4.png",
+  "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/fr/screen4@2x.png",
+
+
+  "DocspaceAppScreen2Tab1ImgUrl": "/images/templates/office-for-wordpress/account/fr/screen1.png",
+  "DocspaceAppScreen2Tab1ImgUrl2x": "/images/templates/office-for-wordpress/account/fr/screen1@2x.png",
+  
+  "DocspaceAppScreen2Tab2ImgUrl": "/images/templates/office-for-wordpress/account/fr/screen2.png",
+  "DocspaceAppScreen2Tab2ImgUrl2x": "/images/templates/office-for-wordpress/account/fr/screen2@2x.png",
+  
+  "DocspaceAppScreen2Tab3ImgUrl": "/images/templates/office-for-wordpress/account/fr/screen3.png",
+  "DocspaceAppScreen2Tab3ImgUrl2x": "/images/templates/office-for-wordpress/account/fr/screen3@2x.png",
+  
+  "DocspaceAppScreen2Tab4ImgUrl": "/images/templates/office-for-wordpress/account/fr/screen4.png",
+  "DocspaceAppScreen2Tab4ImgUrl2x": "/images/templates/office-for-wordpress/account/fr/screen4@2x.png",
+
+
+  "DocsAppTab1ImgUrl": "/images/templates/office-for-wordpress/docs-app/fr/screen1.png",
+  "DocsAppTab1ImgUrl2x": "/images/templates/office-for-wordpress/docs-app/fr/screen1@2x.png",
+  
+  "DocsAppTab2ImgUrl": "/images/templates/office-for-wordpress/docs-app/fr/screen2.png",
+  "DocsAppTab2ImgUrl2x": "/images/templates/office-for-wordpress/docs-app/fr/screen2@2x.png",
+  
+  "DocsAppTab3ImgUrl": "/images/templates/office-for-wordpress/docs-app/fr/screen3.png",
+  "DocsAppTab3ImgUrl2x": "/images/templates/office-for-wordpress/docs-app/fr/screen3@2x.png",
+
+
+  "HowToStartStep3DocsImgUrl": "/images/templates/office-for-wordpress/how-to-start/fr/step3-dc.svg",
+  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/fr/step3-ds.svg"
+}
