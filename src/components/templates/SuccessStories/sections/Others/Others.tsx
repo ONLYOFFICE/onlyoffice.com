@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";

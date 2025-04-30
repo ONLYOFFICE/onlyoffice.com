@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
