@@ -32,17 +32,18 @@ const Features = () => {
         </StyledFeaturesHeader>
 
         <StyledFeatures>
-          {items.map(({ icon, heading, text, links }, index) => (
+          {items.map(({ icon, heading, text, textLinks }, index) => (
             <FeatureItem
               key={index}
               variant="horizontal"
+              mobileVariant="horizontal-icon-top"
               icon={icon}
               heading={t(String(heading))}
               text={
                 <Trans
                   t={t}
                   i18nKey={String(text)}
-                  components={links?.map((link, index) => (
+                  components={textLinks?.map((link, index) => (
                     <Link
                       key={index}
                       href={link.href}

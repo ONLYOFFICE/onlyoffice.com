@@ -13,7 +13,7 @@ const StyledModal = styled.div<{
   height: 100%;
   background-color: ${(props) => props.$bgColor};
   overflow-y: auto;
-  z-index: 101;
+  z-index: 1001;
   opacity: ${(props) => (props.$isOpen ? 1 : 0)};
   visibility: ${(props) => (props.$isOpen ? "visible" : "hidden")};
   transition: opacity 0.2s, visibility 0.2s;

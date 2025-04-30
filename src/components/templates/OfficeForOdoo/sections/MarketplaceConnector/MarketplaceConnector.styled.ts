@@ -68,6 +68,10 @@ const StyledMarketplaceConnectorImg = styled.div`
   background-size: 328px 560px;
   z-index: 1;
 
+  @media ${device.tabletS} {
+    background-size: contain;
+  }
+
   @media ${device.mobile} {
     display: none;
   }

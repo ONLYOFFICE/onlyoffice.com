@@ -1,0 +1,1 @@
+export { OfficeForRedmineTemplate } from "./OfficeForRedmine";

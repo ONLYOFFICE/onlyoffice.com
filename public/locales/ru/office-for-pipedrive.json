@@ -1,0 +1,35 @@
+{
+  "HeroImgUrl": "/images/templates/office-for-pipedrive/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-pipedrive/hero/ru/hero@2x.png",
+
+  "DocspaceAppTab1ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/ru/screen1.png",
+  "DocspaceAppTab1ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/ru/screen1@2x.png",
+  
+  "DocspaceAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/ru/screen2.png",
+  "DocspaceAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/ru/screen2@2x.png",
+  
+  "DocspaceAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/ru/screen3.png",
+  "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/ru/screen3@2x.png",
+  
+  "DocspaceAppTab4ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/ru/screen4.png",
+  "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/ru/screen4@2x.png",
+
+  "DocsAppTab1ImgUrl": "/images/templates/office-for-pipedrive/docs-app/ru/screen1.png",
+  "DocsAppTab1ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/ru/screen1@2x.png",
+  
+  "DocsAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docs-app/ru/screen2.png",
+  "DocsAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/ru/screen2@2x.png",
+  
+  "DocsAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docs-app/ru/screen3.png",
+  "DocsAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/ru/screen3@2x.png",
+
+
+  "HowToStartStep2DocsImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step2-dc.svg",
+  "HowToStartStep3DocsImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step3-dc.svg",
+
+
+  "HowToStartStep1DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step1-ds.svg",
+  "HowToStartStep2DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step2-ds.svg",
+  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step3-ds.svg"
+
+}
