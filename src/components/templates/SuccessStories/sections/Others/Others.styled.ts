@@ -25,6 +25,11 @@ const StyledStoriesOthersCardList = styled.ul`
   gap: 32px;
   width: 100%;
   height: fit-content;
+
+  .show-more-button {
+    width: fit-content;
+    margin: 0 auto;
+  }
 `;
 
 const StyledStoriesOthersCardItem = styled.li`
@@ -132,30 +137,6 @@ const StyledStoriesOthersCardItemRight = styled.div`
   }
 `;
 
-const StyledStoriesOthersShowMoreButton = styled.button`
-  width: fit-content;
-  height: fit-content;
-  margin: 0 auto;
-  border: 1px solid #aaaaaa;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 600;
-  text-align: center;
-  line-height: 12px;
-  letter-spacing: 0.04em;
-  color: #444444;
-  background-color: #fff;
-  padding: 21px 26px;
-  cursor: pointer;
-
-  @media ${device.mobile} {
-    padding: 15px 26px;
-    font-size: 12px;
-    line-height: 16px;
-  }
-`;
-
 export {
   StyledStoriesOthersWrapper,
   StyledStoriesOthersTitle,
@@ -164,5 +145,4 @@ export {
   StyledStoriesOthersCardContent,
   StyledStoriesOthersCardItemLeft,
   StyledStoriesOthersCardItemRight,
-  StyledStoriesOthersShowMoreButton,
 };

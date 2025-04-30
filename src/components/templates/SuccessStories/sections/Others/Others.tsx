@@ -4,6 +4,7 @@ import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { Button } from "@src/components/ui/Button";
 import { data } from "@src/components/templates/SuccessStories/data/success-stories";
 
 import {
@@ -19,7 +20,6 @@ import {
   StyledStoriesOthersCardContent,
   StyledStoriesOthersCardItemLeft,
   StyledStoriesOthersCardItemRight,
-  StyledStoriesOthersShowMoreButton,
 } from "./Others.styled";
 
 const Others = ({ slug }: ISlugProps) => {
@@ -75,12 +75,13 @@ const Others = ({ slug }: ISlugProps) => {
               ),
           )}
           {visibleButton && (
-            <StyledStoriesOthersShowMoreButton
+            <Button
+              className="show-more-button"
+              variant="tertiary"
+              borderRadius="3px"
               onClick={() => handleShowMore()}
-              type="button"
-            >
-              {t("showMoreButton")}
-            </StyledStoriesOthersShowMoreButton>
+              label={t("showMoreButton")}
+            />
           )}
         </StyledStoriesOthersCardList>
       </Container>
