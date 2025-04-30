@@ -1,0 +1,104 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace pro vaši firmu",
+  "PageDescription": "Nasaďte ONLYOFFICE DocSpace on-premises a získejte plnou kontrolu nad svými daty",
+
+  "HeroMainPictureAltText": "hlavní obrázek",
+
+  "OnlyOfficeDocSpaceEnterprise": "ONLYOFFICE DocSpace Enterprise",
+  "TheEnterpriseScaledSpace": "Prostor podnikové úrovně pro vaše firemní dokumenty",
+  "GetItNow": "Získat nyní",
+  "TryItFree": "Vyzkoušet zdarma v cloudu",
+
+  "HeroWorldIconAltText": "ikona světa",
+
+  "TrustedBy": "Důvěřují nám",
+  "CountOfUsers": "15 000 000 uživatelů",
+  "Worldwide": "po celém světě",
+
+  "FeaturesEfficient": "Efektivní spolupráce na dokumentech ve vaší firmě",
+  "FeaturesOnlyOffice": "ONLYOFFICE DocSpace Enterprise přichází s kompletní sadou nástrojů pro ukládání, sdílení a spolupráci na dokumentech",
+  "FeaturesLearn": "Zjistit více o funkcích DocSpace",
+
+  "FeaturesItemTextWork": "Spolupracujte na smlouvách v místnostech pro spolupráci",
+  "FeaturesItemTextInvite": "Pozvěte partnery k prohlížení dokumentů bez registrace ve veřejných místnostech",
+  "FeaturesItemTextCollect": "Sbírejte odpovědi v místnostech pro vyplňování formulářů",
+  "FeaturesItemTextCreate": "Vytvářejte vlastní místnosti s flexibilním nastavením pro jakýkoli úkol a účel",
+  "FeaturesItemTextShare": "Sdílejte a zpřístupňujte firemní dokumentaci během procesu due diligence pomocí virtuálních datových místností",
+
+  "ExperienceFlawless": "Bezchybný uživatelský zážitek na různých zařízeních",
+  "ExperienceWithONLYOFFICE": "S ONLYOFFICE DocSpace Enterprise můžete snadno spravovat, upravovat a spolupracovat na dokumentech na cestách pomocí jakéhokoli chytrého telefonu nebo tabletu přepnutím na mobilní webovou verzi.",
+  "ExperienceFreeDesktopApps": "K dispozici jsou také bezplatné <0>desktopové aplikace</0> pro offline úpravy a nativní <1>mobilní aplikace</1> pro iOS a Android.",
+
+  "EnvironmentEnterpriseReady": "Pracovní prostředí připravené pro podniky",
+
+  "EnvironmentItemTitleSecurity": "Zabezpečení",
+  "EnvironmentItemTextSecurity": "Udržujte svá data v bezpečí na všech frontách: nastavení zabezpečení podnikové úrovně, soulad s oborovými standardy, prioritní přístup k opravám zabezpečení a stability.",
+  "EnvironmentItemLinkSecurity": "Zjistit více o zabezpečení ONLYOFFICE",
+
+  "EnvironmentItemTitleAccessibility": "Přístupnost",
+  "EnvironmentItemTextAccessibility": "Udělejte proces úprav jednoduchým a pohodlným pro každého: přepínejte mezi dostupnými barevnými režimy, povolte potřebné doplňky, skryjte nebo zobrazte panely a pravítka atd.",
+  "EnvironmentItemLinkAccessibility": "Zjistit více o přístupnosti ONLYOFFICE",
+
+  "EnvironmentItemTitleCustomization": "Přizpůsobení",
+  "EnvironmentItemTextCustomization": "Aplikujte různé barevné styly, nahraďte loga, názvy a odkazy tak, aby odpovídaly vaší firemní značce.",
+
+  "EnvironmentItemTitleAdministration": "Správa",
+  "EnvironmentItemTextAdministration": "Spravujte svůj DocSpace pomocí intuitivního ovládacího panelu. Připojte externí služby pro protokolování, podepisování, úložiště atd.",
+
+  "EnvironmentItemTitleMultitenancy": "Multitenancy",
+  "EnvironmentItemTextMultitenancy": "Vytvořte více prostorů pro různé pobočky a spravujte je všechny najednou.",
+
+  "ScalableTitleForBusinesses": "Škálovatelné pro firmy všech velikostí",
+  "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterprise roste s vaší společností. ",
+  "ScalableYouCanCustomize": "Počet uživatelů můžete kdykoli přizpůsobit tak rychle, jak se váš tým rozšiřuje. ",
+  "ScalableForLargeEnterprises": "Pro velké podniky je k dispozici podpora nasazení na více serverech. ",
+  "ScalableImageAltText": "Škálovatelný hlavní obrázek",
+
+  "SupportTitleForEveryStep": "Podpora pro každý krok",
+  "SupportTextTheTeam": "Tým odborníků je zde, aby vám pomohl na každém kroku",
+
+  "SupportItemTitleFreeDemo": "Bezplatná ukázka",
+  "SupportItemTextWatch": "Podívejte se na ukázku hlavních funkcí a výhod DocSpace pro vaše podnikání.",
+  "SupportItemBtnRequest": "Požádat o ukázku",
+
+  "SupportItemTitleTraining": "Školicí kurzy",
+  "SupportItemTextMaster": "Ovládněte ONLYOFFICE DocSpace pod vedením lektora. Pro podnikové uživatele jsou poskytovány slevy.",
+  "SupportItemBtnBook": "Objednat školení",
+
+  "SupportItemTitleViaEmail": "Podpora e-mailem",
+  "SupportItemTextJustContact": "Stačí nás kontaktovat na <0>support@onlyoffice.com</0> – náš zkušený tým podpory vám pomůže vyřešit jakoukoli otázku nebo technický problém.",
+  "SupportItemBtnViaContactUs": "Kontaktujte nás",
+
+  "SupportItemTitlePreSale": "Máte dotaz před nákupem?",
+  "SupportItemTextContact": "Kontaktujte nás na <1>sales@onlyoffice.com</1> nebo si naplánujte čas, kdy vám náš tým zavolá.",
+  "SupportItemBtnPreSaleContactUs": "Kontaktujte nás",
+
+  "CostTitle": "<0>Cenově výhodné</0> podnikové řešení",
+
+  "CostItemFree": "Bezplatná 30denní zkušební verze",
+  "CostItemLifetime": "Doživotní licence",
+  "CostItemYear": "1 rok aktualizací a podpory",
+  "CostItemUnlimited": "Neomezený počet místností a správců",
+
+  "CostButtonPickYourPrice": "Vyberte si cenu",
+
+  "CostFooterIfYouRepresent":"Pokud zastupujete vzdělávací instituci nebo neziskovou organizaci, <0>kontaktujte náš prodejní tým</0> a získejte individuální slevu.",
+  "CostFooterTheFamilyPack": "K dispozici je také <1>Rodinný balíček</1> pro nekomerční použití.",
+
+  "GettingStarted": "Začít je snadné",
+  "GettingDeploy": "Nasaďte ONLYOFFICE DocSpace Enterprise pomocí jedné z dostupných možností.",
+
+  "GettingItemCloudTitle": "Cloud",
+  "GettingItemCloudText": "Vyzkoušejte jako službu. Hostujeme, udržujeme a aktualizujeme DocSpace za vás.",
+  "GettingItemCloudSubtitle": "Vytvořit nyní",
+
+  "GettingItemLinuxTitle": "Linux",
+  "GettingItemLinuxText": "Hostujte na svém serveru Linux (balíčky Docker, deb nebo rpm)",
+  "GettingItemLinuxSubtitle": "Získat nyní",
+
+  "GettingItemWindowsTitle": "Windows",
+  "GettingItemWindowsText": "Hostujte na svém serveru Windows (balíčky exe)",
+  "GettingItemWindowsSubtitle": "Získat nyní",
+
+  "GettingFooterText": "Komunitní verze pro domácí použití je k dispozici ke stažení <0>zde</0>."
+}
