@@ -1,4 +1,4 @@
-import { ITransKeysLink } from "../../SuccessStories.types";
+import { ITransKeysLink } from "../../../SuccessStories.types";
 
 export const transKeysLink: ITransKeysLink[] = [
   {
