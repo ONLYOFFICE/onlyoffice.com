@@ -8,6 +8,7 @@ import { Footer } from "@src/components/modules/Footer";
 import { SuccessStoriesTemplate } from "@src/components/templates/SuccessStories";
 import { data as successStories } from "@src/components/templates/SuccessStories/data/success-stories";
 import { GetStaticPropsContext } from "next/types";
+import { languages } from "@src/config/languages";
 
 const SuccessStoriesPage = ({ locale, params }: GetStaticPropsContext) => {
   const { t } = useTranslation("success-stories");
@@ -40,24 +41,10 @@ const SuccessStoriesPage = ({ locale, params }: GetStaticPropsContext) => {
 };
 
 export async function getStaticPaths() {
-  const locales = [
-    "cs",
-    "de",
-    "en",
-    "es",
-    "fr",
-    "it",
-    "ja",
-    "nl",
-    "pt",
-    "ru",
-    // "sr",
-    "zh",
-  ]; // Языки, которые мы поддерживаем
   const paths = successStories.flatMap(({ slug }) =>
-    locales.map((locale) => ({ params: { slug }, locale })),
+    languages.map(({ shortKey }) => ({ params: { slug }, locale: shortKey })),
   );
-  return { paths, fallback: false }; // указываем fallback false, чтобы не рендерить недоступные страницы
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps({
