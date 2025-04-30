@@ -1,10 +1,10 @@
 {
-  "PageTitle": "Collaborative document editing for Plone",
+  "PageTitle": "Collaborative document editing for Plone | ONLYOFFICE Docs",
   "PageDescription": "Edit and co-author your documents, create and fill out forms within Plone",
 
   "OnlineOfficeForConnector": "Online office for <0>Plone</0>",
   "Subheader": "Work on all kinds of office documents within Plone CMS",
-  
+
   "HeroTab1ImgUrl": "/images/templates/office-for-plone/hero/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-plone/hero/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-plone/hero/screen2.png",

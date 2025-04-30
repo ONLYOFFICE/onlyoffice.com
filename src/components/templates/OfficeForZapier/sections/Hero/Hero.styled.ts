@@ -4,7 +4,7 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   background-image: url("/images/templates/office-for-zapier/hero/bg.svg");
   background-repeat: no-repeat;
   background-size: 2430px 666px;
@@ -31,15 +31,24 @@ const StyledHeroWrapper = styled.div`
   @media ${device.tabletS} {
     margin: 0 auto 32px;
   }
+
+  @media ${device.mobile} {
+    row-gap: 24px;
+  }
 `;
 
 const StyledHeroLogo = styled.div`
   margin: 0 auto;
-  width: 181px;
-  height: 49px;
+  width: 208px;
+  height: 56px;
   background-image: url("/images/templates/office-for-zapier/hero/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media ${device.mobile} {
+    width: 128px;
+    height: 32px;
+  }
 `;
 
 const StyledHeroHeader = styled.div`

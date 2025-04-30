@@ -24,6 +24,15 @@ export default {
           type: "object",
         },
       },
+      text: {
+        control: { type: "text" },
+      },
+      contentWidth: {
+        control: { type: "number" },
+      },
+      image: {
+        control: { type: "object" },
+      },
     },
   },
 } as Meta<typeof ConnectorHowToStart>;
@@ -38,13 +47,13 @@ export const Default = Template.bind({});
 Default.args = {
   items: [
     {
-      heading: "Log into your Box account",
+      text: "Log into your Box account",
     },
     {
-      heading: "Go to the Box App Center",
+      text: "Go to the Box App Center",
     },
     {
-      heading: "Add the ONLYOFFICE app*",
+      text: "Add the ONLYOFFICE app*",
     },
   ],
 };

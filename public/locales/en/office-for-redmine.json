@@ -1,12 +1,12 @@
 {
-  "PageTitle": "Online office suite for Redmine",
+  "PageTitle": "Online office suite for Redmine | ONLYOFFICE Docs",
   "PageDescription": "Edit and co-edit documents, create and fill out forms within Redmine",
 
   "OnlineOfficeForConnector": "Online office for <0>Redmine</0>",
   "Subheader": "View, edit and collaborate on office documents within Redmine using ONLYOFFICE Docs",
   "GetItNow": "Get it now",
   "FullyCompatibleWithDocxXlsxAndPptx": "Fully compatible with docx, xlsx, and pptx",
-  
+
   "HeroTab1ImgUrl": "/images/templates/office-for-redmine/hero/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-redmine/hero/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-redmine/hero/screen2.png",

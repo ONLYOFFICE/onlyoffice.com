@@ -1,12 +1,11 @@
 import {
   StyledHowToStart,
-  StyledHowToStartBody,
-  StyledHowToStartNumber,
-  StyledHowToStartHeading,
   StyledHowToStartWrapper,
+  StyledHowToStartList,
+  StyledHowToStartItem,
   StyledHowToStartInfo,
+  StyledHowToStartImgWrapper,
   StyledHowToStartImg,
-  StyledHowToStartContainer,
 } from "./HowToStart.styled";
 import { IHowToStart } from "./HowToStart.types";
 import { Heading } from "@src/components/ui/Heading";
@@ -14,36 +13,33 @@ import { Heading } from "@src/components/ui/Heading";
 const ConnectorHowToStart = ({
   id,
   className,
+  heading,
   items,
-  header,
   text,
-  imageUrl,
-  imageHeight = 378,
+  contentWidth = 448,
+  image,
 }: IHowToStart) => {
   return (
     <StyledHowToStart id={id} className={className}>
-      <StyledHowToStartContainer>
-        <Heading level={2} textAlign="left" label={header} />
-        <StyledHowToStartWrapper>
+      <StyledHowToStartWrapper $contentWidth={contentWidth}>
+        <Heading level={2} label={heading} />
+
+        <StyledHowToStartList>
           {items.map((item, index) => (
-            <StyledHowToStartBody key={index}>
-              <StyledHowToStartNumber>
-                {index + 1}.
-              </StyledHowToStartNumber>
-              <StyledHowToStartHeading>
-                {item.heading}
-              </StyledHowToStartHeading>
-            </StyledHowToStartBody>
+            <StyledHowToStartItem key={index}>{item.text}</StyledHowToStartItem>
           ))}
-        </StyledHowToStartWrapper>
+        </StyledHowToStartList>
 
         <StyledHowToStartInfo>{text}</StyledHowToStartInfo>
-      </StyledHowToStartContainer>
+      </StyledHowToStartWrapper>
 
-      <StyledHowToStartImg
-        $imgUrl={imageUrl ?? ""}
-        $imageHeight={imageHeight}
-      />
+      <StyledHowToStartImgWrapper $imageWidth={image.width ?? 640}>
+        <StyledHowToStartImg
+          $imageUrl={image.url ?? ""}
+          $imageWidth={image.width ?? 640}
+          $imageHeight={image.height ?? 378}
+        />
+      </StyledHowToStartImgWrapper>
     </StyledHowToStart>
   );
 };

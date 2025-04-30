@@ -7,7 +7,6 @@ const StyledHero = styled(Section)`
   background-image: url("/images/templates/office-for-pipedrive/hero/bg.svg");
   background-repeat: no-repeat;
   background-position: calc(50% + 245px) 0;
-  background-size: cover;
 
   @media ${device.tablet} {
     margin-top: -64px;
@@ -31,7 +30,7 @@ const StyledHeroWrapper = styled.div`
   @media ${device.tabletS} {
     margin: 0 auto 32px;
   }
-    
+
   @media ${device.mobile} {
     margin: 0 auto 36px;
   }
@@ -44,6 +43,11 @@ const StyledHeroLogo = styled.div`
   background-image: url("/images/templates/office-for-pipedrive/hero/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media ${device.mobile} {
+    width: 150px;
+    height: 34px;
+  }
 `;
 
 const StyledHeroHeader = styled.div`

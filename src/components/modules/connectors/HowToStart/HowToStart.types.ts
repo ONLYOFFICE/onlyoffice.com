@@ -1,8 +1,8 @@
 export interface IHowToStartItem {
   /** The heading for the block item. */
-  heading: React.ReactNode;
+  text: React.ReactNode;
   /** The links for the heading. */
-  headingLinks?: {
+  textLinks?: {
     /** The URL of the link. */
     url: string;
     /** Whether the link is external. */
@@ -15,14 +15,21 @@ export interface IHowToStart {
   id?: string;
   /** Additional CSS class names. */
   className?: string;
+  /** The heading for the block. */
+  heading: string;
   /** The items to display in the block. */
   items: IHowToStartItem[];
-  /** The header for the block. */
-  header: string;  
   /** The text for the block. */
   text?: React.ReactNode;
-  /** The image URL for the block. */
-  imageUrl?: string;
-  /** The height of the image. */
-  imageHeight?: number;
+  /** The maximum width (in pixels) for the text content area. Default: 448 */
+  contentWidth?: number;
+  /** The image configuration. */
+  image: {
+    /** The image URL for the block. */
+    url: string;
+    /** The width of the image. */
+    width?: number;
+    /** The height of the image. */
+    height?: number;
+  };
 }

@@ -26,8 +26,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl:
-      "/images/templates/office-for-sharepoint/learn-more/card3.png",
+    imgUrl: "/images/templates/office-for-sharepoint/learn-more/card3.png",
     heading: { label: "HelpCenter" },
     text: "HelpCenterDesc",
     links: [

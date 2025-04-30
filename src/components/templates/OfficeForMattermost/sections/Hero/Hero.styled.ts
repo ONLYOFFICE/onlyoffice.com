@@ -4,11 +4,12 @@ import { device } from "@src/utils/device";
 
 export const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   background-image: url("/images/templates/office-for-mattermost/hero/bg.svg");
   background-repeat: no-repeat;
   background-position: calc(50% - 115px) -374px;
   background-size: 2652px 2084px;
+  overflow: hidden;
 
   @media ${device.tablet} {
     margin-top: -64px;
@@ -26,20 +27,15 @@ export const StyledHero = styled(Section)`
 `;
 
 export const StyledHeroWrapper = styled.div`
-  display: flex;
-  row-gap: 32px;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   position: relative;
-  z-index: 1;
-  padding-bottom: 80px;
+  display: grid;
+  justify-items: center;
+  row-gap: 32px;
+  margin-bottom: 48px;
+  text-align: center;
 
-  @media ${device.tabletS} {
-    padding-bottom: 12px;
-  }
   @media ${device.mobile} {
-    padding-bottom: 16px;
+    margin-bottom: 32px;
     row-gap: 24px;
   }
 `;
@@ -47,7 +43,8 @@ export const StyledHeroWrapper = styled.div`
 export const StyledHeroLogo = styled.div`
   width: 48px;
   height: 48px;
-  background: url("/images/templates/office-for-mattermost/hero/logo.svg") no-repeat center;
+  background: url("/images/templates/office-for-mattermost/hero/logo.svg")
+    no-repeat center;
   background-size: contain;
 
   @media ${device.mobile} {
@@ -57,7 +54,7 @@ export const StyledHeroLogo = styled.div`
 `;
 
 export const StyledHeroHeader = styled.div`
-  max-width: 800px;
+  max-width: 716px;
 
   h1 {
     margin-bottom: 16px;

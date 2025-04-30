@@ -4,7 +4,6 @@ import {
   StyledLearnMore,
   StyledLearnMoreItems,
 } from "./LearnMore.styled";
-
 import { Container } from "@src/components/ui/Container";
 import { BlogCard } from "@src/components/widgets/BlogCard";
 import { items } from "./data/items";
@@ -13,10 +12,10 @@ const LearnMore = () => {
   const { t } = useTranslation("office-for-sharepoint");
 
   return (
-    <StyledLearnMore>
+    <StyledLearnMore background="#f9f9f9">
       <Container>
         <StyledLearnMoreHeading
-          level={3}
+          level={2}
           textAlign="center"
           label={t("LearnMoreHeading")}
         />

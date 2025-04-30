@@ -9,7 +9,6 @@
   "HeroImgUrl2x": "/images/templates/office-for-zapier/hero/hero@2x.png",
 
   "ZapTemplates": "Automate your workflow with more than <0>70+ ready Zap templates</0>",
-  
 
   "BuildZaps": "<0>Build Zaps</0> specific to your business needs with a set of useful triggers and actions",
   "Triggers": "Triggers",
@@ -54,7 +53,6 @@
   "ArchiveRoom": "Archive Room",
   "DownloadFile": "Download File",
   "GetExternalLink": "Get External Link",
-  
 
   "MarketplaceConnectorTitle": "Connect with 3,000+ apps",
   "MarketplaceConnectorDescription": "Find your favorite app in Zapier’s marketplace and connect it with ONLYOFFICE DocSpace. No more switching between apps.",

@@ -4,7 +4,7 @@ import { device } from "@src/utils/device";
 
 export const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   background-image: url("/images/templates/office-for-suitecrm/hero/bg.svg");
   background-repeat: no-repeat;
   background-position: top;
@@ -25,20 +25,15 @@ export const StyledHero = styled(Section)`
 `;
 
 export const StyledHeroWrapper = styled.div`
-  display: flex;
-  row-gap: 32px;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 32px;
   position: relative;
-  z-index: 1;
-
-  @media ${device.tabletS} {
-    padding-bottom: 0px;
-  }
+  display: grid;
+  justify-items: center;
+  row-gap: 32px;
+  margin-bottom: 48px;
+  text-align: center;
 
   @media ${device.mobile} {
+    margin-bottom: 32px;
     row-gap: 21px;
   }
 `;
@@ -46,7 +41,8 @@ export const StyledHeroWrapper = styled.div`
 export const StyledHeroLogo = styled.div`
   width: 264px;
   height: 60px;
-  background: url("/images/templates/office-for-suitecrm/hero/logo.svg") no-repeat center;
+  background: url("/images/templates/office-for-suitecrm/hero/logo.svg")
+    no-repeat center;
   background-size: contain;
 
   @media ${device.mobile} {

@@ -1,6 +1,10 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
-export const items: IFeatureItem[] = [
+interface IFeatureItemExtended extends IFeatureItem {
+  textLinks?: { href: string; isExternal?: boolean }[];
+}
+
+export const items: IFeatureItemExtended[] = [
   {
     icon: {
       url: "/images/templates/office-for-educators/sprites/icons.svg",
@@ -8,7 +12,7 @@ export const items: IFeatureItem[] = [
     },
     heading: "ItProvidesFreeApps",
     text: "ItProvidesFreeAppsDesc",
-    links: [
+    textLinks: [
       {
         href: "/desktop",
       },
@@ -35,7 +39,7 @@ export const items: IFeatureItem[] = [
     },
     heading: "ItsHighlyCustomizable",
     text: "ItsHighlyCustomizableDesc",
-    links: [
+    textLinks: [
       {
         href: "/app-directory",
       },

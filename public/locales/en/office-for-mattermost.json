@@ -1,12 +1,12 @@
 {
-  "PageTitle": "Online office suite for Mattermost",
+  "PageTitle": "Online office suite for Mattermost | ONLYOFFICE Docs",
   "PageDescription": "Edit and co-edit documents within Mattermost",
 
   "OnlineOfficeForConnector": "Online office for <0>Mattermost</0>",
   "Subheader": "Open, edit, and co-author office documents in your Mattermost chat using ONLYOFFICE Docs",
   "GetItNow": "Get it now",
   "FullyCompatibleWithDocxXlsxAndPptx": "Fully compatible with docx, xlsx, and pptx",
-  
+
   "HeroTab1ImgUrl": "/images/templates/office-for-mattermost/hero/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-mattermost/hero/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-mattermost/hero/screen2.png",

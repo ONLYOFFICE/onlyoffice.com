@@ -18,14 +18,8 @@ const MarketplaceConnector = () => {
       <Container>
         <StyledMarketplaceConnectorWrapper>
           <StyledMarketplaceConnectorBody>
-            <Heading
-              level={2}
-              label={t("MarketplaceConnectorTitle")}
-            />
-            <Text
-              size={1}
-              label={t("MarketplaceConnectorDescription")}
-            />
+            <Heading level={2} label={t("MarketplaceConnectorTitle")} />
+            <Text size={1} label={t("MarketplaceConnectorDescription")} />
             <Button
               id="marketplace-connector-get-started"
               as="a"

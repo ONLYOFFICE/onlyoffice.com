@@ -1,8 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
-import {
-  StyledFeaturesWrapper,
-  StyledFeaturesItems,
-} from "./Features.styled";
+import { StyledFeaturesWrapper, StyledFeaturesItems } from "./Features.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
@@ -28,10 +25,11 @@ const Features = () => {
             {items.map((item, index) => (
               <FeatureItem
                 key={index}
+                maxWidth="352px"
                 icon={{
                   url: item.icon.url,
                   positionX: item.icon.positionX,
-                  positionY: "center",
+                  isSprite: true,
                 }}
                 text={
                   <Trans

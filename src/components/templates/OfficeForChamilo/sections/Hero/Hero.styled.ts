@@ -4,7 +4,7 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #397CA8;
+  background-color: #397ca8;
   background-image: url("/images/templates/office-for-chamilo/hero/bg.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -29,7 +29,7 @@ const StyledHeroWrapper = styled.div`
   justify-items: center;
   row-gap: 32px;
   margin: 0 auto 48px;
-  max-width: 928px;
+  max-width: 768px;
   text-align: center;
 
   @media ${device.mobile} {
@@ -39,7 +39,7 @@ const StyledHeroWrapper = styled.div`
 
 const StyledHeroLogo = styled.div`
   margin: 0 auto;
-  width: 56px;
+  width: 62px;
   height: 56px;
   background-image: url("/images/templates/office-for-chamilo/hero/logo.svg");
   background-repeat: no-repeat;
@@ -54,8 +54,8 @@ const StyledHeroHeader = styled.div`
 
 const StyledHeroVideo = styled.div`
   position: relative;
-  padding-bottom: 56.25%;
-  border: 6px solid #FFFFFF;
+  border: 6px solid #ffffff;
+  padding-bottom: calc(56.25% - 6px);
   box-shadow: 0px 7px 25px rgba(85, 85, 85, 0.15);
 
   iframe {
@@ -70,19 +70,12 @@ const StyledHeroVideo = styled.div`
 `;
 
 const StyledHeroHeaderBtns = styled.div`
-  display: flex;
-
-  button {
-    margin-right: 16px;
-
-    @media ${device.mobile} {
-      margin-right: 0;
-      margin-bottom: 16px;
-    }
-  }
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 16px;
 
   @media ${device.mobile} {
-    flex-direction: column;
+    grid-template-columns: initial;
     width: 100%;
   }
 `;

@@ -1,6 +1,10 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
-export const items: IFeatureItem[] = [
+interface IFeatureItemExtended extends IFeatureItem {
+  textLinks?: { href: string; isExternal?: boolean }[];
+}
+
+export const items: IFeatureItemExtended[] = [
   {
     icon: {
       url: "/images/templates/office-for-nuxeo/features/features.svg",
@@ -24,7 +28,7 @@ export const items: IFeatureItem[] = [
     },
     text: "Reason3Description",
     heading: "Reason3Header",
-    links: [
+    textLinks: [
       {
         href: "/app-directory",
         isExternal: false,
@@ -62,7 +66,7 @@ export const items: IFeatureItem[] = [
     },
     text: "Reason7Description",
     heading: "Reason7Header",
-    links: [
+    textLinks: [
       {
         href: "https://connect.nuxeo.com/nuxeo/site/marketplace/package/onlyoffice-nuxeo?version=1.0.0",
         isExternal: true,

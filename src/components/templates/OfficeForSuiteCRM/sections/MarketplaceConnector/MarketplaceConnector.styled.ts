@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 
 const StyledMarketplaceConnector = styled.section`
-  background-color: #333333;
+  background-color: #26292e;
   overflow: hidden;
   position: relative;
 
   &::after {
-  content: "";
+    content: "";
     position: absolute;
     top: calc(50% - 23px);
     right: calc(50% - 623px);
@@ -40,8 +40,9 @@ const StyledMarketplaceConnectorWrapper = styled.div`
   min-height: 468px;
 
   @media ${device.tabletS} {
-    grid-template-columns: auto 306px;
+    grid-template-columns: 1fr 1fr;
   }
+
   @media ${device.mobile} {
     grid-template-columns: initial;
     min-height: initial;
@@ -61,17 +62,14 @@ const StyledMarketplaceConnectorBody = styled.div`
 `;
 
 const StyledMarketplaceConnectorImg = styled.div`
-  width: 328px;
+  width: 100%;
+  max-width: 328px;
   height: 100%;
   background-image: url("/images/templates/office-for-suitecrm/marketplace-connector/apps.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   z-index: 1;
-
-  @media ${device.tabletS} {
-    width: 306px;
-  }
 
   @media ${device.mobile} {
     display: none;

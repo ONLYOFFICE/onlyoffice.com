@@ -25,6 +25,12 @@ export default {
           type: "object",
         },
       },
+      imageWidth: {
+        control: { type: "number" },
+      },
+      imageHeight: {
+        control: { type: "number" },
+      },
     },
   },
 } as Meta<typeof ImageCarousel>;

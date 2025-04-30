@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
-const StyledWebsiteHeading = styled(Heading)`
+const StyledDocSpaceHeading = styled(Heading)`
   margin: 0 auto 56px;
   max-width: 720px;
 
@@ -15,4 +15,4 @@ const StyledWebsiteHeading = styled(Heading)`
   }
 `;
 
-export { StyledWebsiteHeading };
+export { StyledDocSpaceHeading };

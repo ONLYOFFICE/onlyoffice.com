@@ -1,117 +1,114 @@
 import styled from "styled-components";
+import { IHowToStart } from "./HowToStart.types";
 import { device } from "@src/utils/device";
+import { Text } from "@src/components/ui/Text";
 
 const StyledHowToStart = styled.div`
   position: relative;
-  text-align: left;
-  display: grid;
-  grid-template-columns: 475px auto;
-  gap: 4px;
-
-  @media ${device.tablet} {
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media ${device.mobile} {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 0;
-  }
-`;
-
-const StyledHowToStartWrapper = styled.div`
-  padding: 32px 0;
-
-  @media ${device.mobile} {
-    padding: 16px 0;
-  }
-`;
-
-const StyledHowToStartBody = styled.div`
   display: flex;
-  gap: 4px;
+  align-items: center;
+
+  @media ${device.mobile} {
+    display: block;
+  }
+`;
+
+const StyledHowToStartWrapper = styled.div<{
+  $contentWidth: IHowToStart["contentWidth"];
+}>`
+  display: grid;
+  flex: 0 1 ${(props) => props.$contentWidth}px;
+  row-gap: 32px;
+  margin-right: 32px;
+
+  @media ${device.tabletS} {
+    flex: 0 1 50%;
+  }
+
+  @media ${device.mobile} {
+    margin-right: initial;
+    margin-bottom: 24px;
+    row-gap: 16px;
+  }
+`;
+
+const StyledHowToStartList = styled.ol`
+  list-style: none;
+  counter-reset: counter;
+`;
+
+const StyledHowToStartItem = styled.li`
+  counter-increment: counter;
+  font-size: 16px;
+  line-height: 26px;
+
+  &::before {
+    content: counter(counter) ". ";
+    font-weight: 700;
+  }
+
   &:not(:last-child) {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
-
-  @media ${device.tablet} {
-    text-align: center;
-    order: 1;
-  }
-`;
-
-const StyledHowToStartNumber = styled.span`
-  font-size: 16px;
-  line-height: 1.6em;
-  font-weight: 700;
 
   @media ${device.tabletS} {
     font-size: 14px;
+    line-height: 22px;
   }
 `;
 
-const StyledHowToStartHeading = styled.div`
-  font-size: 16px;
-  line-height: 1.6em;
-  text-align: left;
-
-  @media ${device.tabletS} {
-    font-size: 14px;
-  }
-`;
-
-const StyledHowToStartInfo = styled.p`
-  font-size: 16px;
-  line-height: 1.6em;
-  text-align: left;
+const StyledHowToStartInfo = styled(Text)`
   position: relative;
   padding-left: 32px;
+  font-size: 14px;
+  line-height: 22px;
 
   &:before {
     content: "";
     position: absolute;
+    top: 50%;
+    left: 0;
     width: 22px;
     height: 22px;
-    left: 0;
+    transform: translateY(-50%);
     background: url("/images/templates/office-for-mattermost/how-to-start/github-icon.svg")
       no-repeat center;
     background-size: contain;
   }
-
-  @media ${device.tabletS} {
-    font-size: 14px;
-  }
 `;
 
-const StyledHowToStartContainer = styled.div`
-  padding: 0;
+const StyledHowToStartImgWrapper = styled.div<{
+  $imageWidth: IHowToStart["image"]["width"];
+}>`
+  flex: 0 1 ${(props) => props.$imageWidth}px;
+  width: 100%;
+
+  @media ${device.tabletS} {
+    flex: 0 1 50%;
+  }
 `;
 
 const StyledHowToStartImg = styled.div<{
-  $imgUrl: string;
-  $imageHeight: number;
+  $imageUrl: IHowToStart["image"]["url"];
+  $imageWidth: IHowToStart["image"]["width"];
+  $imageHeight: IHowToStart["image"]["height"];
 }>`
-  background-image: url(${(props) => props.$imgUrl});
+  padding-bottom: ${(props) =>
+    props.$imageHeight && props.$imageWidth
+      ? `${((props.$imageHeight / props.$imageWidth) * 100).toFixed(4)}%`
+      : "0%"};
+  background-image: url(${(props) => props.$imageUrl});
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
-  height: ${(props) => props.$imageHeight}px;
-
-  @media ${device.tabletS} {
-    height: ${(props) => props.$imageHeight / 2}px;
-  }
 `;
 
 export {
   StyledHowToStart,
-  StyledHowToStartBody,
-  StyledHowToStartNumber,
-  StyledHowToStartHeading,
   StyledHowToStartWrapper,
+  StyledHowToStartItem,
+  StyledHowToStartList,
   StyledHowToStartInfo,
+  StyledHowToStartImgWrapper,
   StyledHowToStartImg,
-  StyledHowToStartContainer,
 };

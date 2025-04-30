@@ -40,8 +40,8 @@ const StyledHeroWrapper = styled.div`
 
 const StyledHeroLogo = styled.div`
   margin: 0 auto;
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 59px;
   background-image: url("/images/templates/office-for-humhub/hero/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;

@@ -44,10 +44,14 @@ const StyledMarketplaceConnectorWrapper = styled.div`
   column-gap: 32px;
   min-height: 468px;
 
-  @media ${device.tabletS} {
+  @media ${device.tablet} {
     grid-template-columns: 400px auto;
-    column-gap: 0;
   }
+
+  @media ${device.tabletS} {
+    grid-template-columns: 360px auto;
+  }
+
   @media ${device.mobile} {
     grid-template-columns: initial;
     min-height: initial;

@@ -4,11 +4,10 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #1868DB;
+  background-color: #1868db;
   background-image: url("/images/templates/office-for-jira/hero/bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 27% -431px;
+  background-position: center -431px;
 
   @media (max-width: 1920px) {
     background-size: 2108px auto;

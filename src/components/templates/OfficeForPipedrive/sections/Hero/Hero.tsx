@@ -5,7 +5,7 @@ import {
   StyledHeroLogo,
   StyledHeroHeader,
   StyledHeroHeaderBtns,
-  StyledHeroImg
+  StyledHeroImg,
 } from "./Hero.styled";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
@@ -22,8 +22,9 @@ const Hero = () => {
 
   return (
     <StyledHero
+      background="#017737"
       desktopSpacing={["120px", "56px"]}
-      tabletSpacing={["120px", "56px"]}
+      tabletSpacing={["112px", "56px"]}
       tabletSmallSpacing={["119px", "74px"]}
       mobileSpacing={["99px", "48px"]}
     >
@@ -61,7 +62,6 @@ const Hero = () => {
           $imgUrl={t("HeroImgUrl")}
           $imgUrl2x={t("HeroImgUrl2x")}
         />
-
       </Container>
     </StyledHero>
   );

@@ -1,5 +1,5 @@
 {
-  "PageTitle": "Online office for Pipedrive",
+  "PageTitle": "Online office for Pipedrive | ONLYOFFICE",
   "PageDescription": "Edit and collaborate on office documents within Odoo Documents using ONLYOFFICE Docs",
 
   "OnlineOfficeForConnector": "Online office for Pipedrive",
@@ -51,7 +51,7 @@
   "HowToStart": "How to start",
 
   "Docs": "Docs",
-  "Docspace": "DocSpace",
+  "DocSpace": "DocSpace",
 
   "HowToStartStep1Docs": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2Docs": "Install the integration app from the <0>Pipedrive Marketplace</0>.",
@@ -71,5 +71,5 @@
   "PartnerHeading": "Are you a Pipedrive partner? How about improving your Pipedrive user experience and increasing your revenue?",
   "PartnerText": "Join the ONLYOFFICE partnership program right now.",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"
 }

@@ -3,8 +3,9 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import {
   StyledImageCarousel,
-  StyledStepCarouselImg,
-  StyledStepCarouselWrapper,
+  StyledImageCarouselImgWrapper,
+  StyledImageCarouselImg,
+  StyledImageCarouselBtns,
 } from "./ImageCarousel.styled";
 import { IImageCarousel } from "./ImageCarousel.types";
 import { CarouselButton } from "@src/components/ui/CarouselButton";
@@ -19,9 +20,7 @@ const ImageCarousel = ({
   return (
     <StyledImageCarousel id={id} className={className}>
       <Swiper
-        spaceBetween={32}
         loop
-        autoHeight
         modules={[Navigation, Pagination]}
         pagination={{ clickable: true }}
         navigation={{
@@ -31,19 +30,21 @@ const ImageCarousel = ({
       >
         {items.map((item, index) => (
           <SwiperSlide key={index}>
-            <StyledStepCarouselWrapper>
-              <StyledStepCarouselImg
+            <StyledImageCarouselImgWrapper $imageWidth={imageWidth}>
+              <StyledImageCarouselImg
                 $imageUrl={item.image.url}
                 $imageUrl2x={item.image.url2x || ""}
                 $imageWidth={imageWidth}
                 $imageHeight={imageHeight}
-            />
-            </StyledStepCarouselWrapper>
+              />
+            </StyledImageCarouselImgWrapper>
           </SwiperSlide>
         ))}
       </Swiper>
-      <CarouselButton className="swiper-button-prev" />
-      <CarouselButton className="swiper-button-next" direction="right" />
+      <StyledImageCarouselBtns $imageWidth={imageWidth}>
+        <CarouselButton className="swiper-button-prev" />
+        <CarouselButton className="swiper-button-next" direction="right" />
+      </StyledImageCarouselBtns>
     </StyledImageCarousel>
   );
 };

@@ -1,142 +1,80 @@
-interface ItemGroup {
-  title: string;
-  positionX: number;
-  items: Array<{ text: string }>;
-}
-
-interface Column {
-  groups: ItemGroup[];
-}
-
-interface TabItem {
-  id: string;
-  title: string;
-  items: Column[];
-  positionHeader: number;
-}
-
-export const items: TabItem[] = [
+export const items = [
   {
-    id: "1",
-    title: "Triggers",
+    heading: "Triggers",
     items: [
       {
-        groups: [
-          {
-            title: "File",
-            positionX: -125,
-            items: [
-              { text: "FileCreated" },
-              { text: "FileDeleted" },
-              { text: "FileCreatedInMyDocuments" },
-              { text: "FileDeletedFromMyDocuments" },
-            ],
-          },
-        ],
-
-      },
-      {
-        groups: [
-          {
-            title: "Folder",
-            positionX: -181,
-            items: [
-              { text: "FolderCreated" },
-              { text: "FolderDeleted" },
-              { text: "FolderCreatedInMyDocuments" },
-              { text: "FolderDeletedFromMyDocuments" },
-            ],
-          },
+        heading: "File",
+        iconPositionX: -125,
+        items: [
+          "FileCreated",
+          "FileDeleted",
+          "FileCreatedInMyDocuments",
+          "FileDeletedFromMyDocuments",
         ],
       },
       {
-        groups: [
-          {
-            title: "Room",
-            positionX: -236,
-            items: [{ text: "RoomCreated" }, { text: "RoomArchived" }],
-          },
+        heading: "Folder",
+        iconPositionX: -181,
+        items: [
+          "FolderCreated",
+          "FolderDeleted",
+          "FolderCreatedInMyDocuments",
+          "FolderDeletedFromMyDocuments",
         ],
       },
       {
-        groups: [
-          {
-            title: "User",
-            positionX: -348,
-            items: [{ text: "UserAdded" }, { text: "UserJoined" }],
-          },
-        ],
+        heading: "Room",
+        iconPositionX: -236,
+        items: ["RoomCreated", "RoomArchived"],
+      },
+      {
+        heading: "User",
+        iconPositionX: -348,
+        items: ["UserAdded", "UserJoined"],
       },
     ],
-    positionHeader: -15,
   },
   {
-    id: "2",
-    title: "Actions",
+    heading: "Actions",
     items: [
       {
-        groups: [
-          {
-            title: "Upload",
-            positionX: -294,
-            items: [
-              { text: "UploadFileToMyDocuments" },
-              { text: "UploadFile" },
-            ],
-          },
-          {
-            title: "Create",
-            positionX: -572,
-            items: [
-              { text: "CreateFileInMyDocuments" },
-              { text: "CreateFolderInMyDocuments" },
-              { text: "CreateFile" },
-              { text: "CreateFolder" },
-              { text: "CreateRoom" },
-            ],
-          },
-        ],
+        heading: "Upload",
+        iconPositionX: -294,
+        items: ["UploadFileToMyDocuments", "UploadFile"],
       },
       {
-        groups: [
-          {
-            title: "Delete",
-            positionX: -404,
-            items: [
-              { text: "DeleteFolderFromMyDocuments" },
-              { text: "DeleteFolder" },
-            ],
-          },
-          {
-            title: "Share",
-            positionX: -628,
-            items: [{ text: "InviteUser" }, { text: "ShareRoom" }],
-          },
-        ],
+        heading: "Delete",
+        iconPositionX: -404,
+        items: ["DeleteFolderFromMyDocuments", "DeleteFolder"],
       },
       {
-        groups: [
-          {
-            title: "Search",
-            positionX: -518,
-            items: [
-              { text: "SearchFile" },
-              { text: "SearchFolder" },
-              { text: "SearchRoom" },
-            ],
-          },
-          {
-            title: "Other",
-            positionX: -460,
-            items: [
-              { text: "ArchiveRoom" },
-              { text: "DownloadFile" },
-              { text: "GetExternalLink" },
-            ],
-          },
+        heading: "Search",
+        iconPositionX: -518,
+        items: ["SearchFile", "SearchFolder", "SearchRoom"],
+      },
+      {
+        heading: "Create",
+        iconPositionX: -572,
+        items: [
+          "CreateFileInMyDocuments",
+          "CreateFolderInMyDocuments",
+          "CreateFile",
+          "CreateFolder",
+          "CreateRoom",
         ],
+      },
+
+      {
+        heading: "Share",
+        iconPositionX: -628,
+        items: ["InviteUser", "ShareRoom"],
+      },
+
+      {
+        heading: "Other",
+        iconPositionX: -460,
+        items: ["ArchiveRoom", "DownloadFile", "GetExternalLink"],
       },
     ],
-    positionHeader: -15,
   },
 ];

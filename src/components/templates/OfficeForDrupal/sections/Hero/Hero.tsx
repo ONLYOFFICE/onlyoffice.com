@@ -23,7 +23,7 @@ const Hero = () => {
   return (
     <StyledHero
       desktopSpacing={["133px", "84px"]}
-      tabletSpacing={["133px", "84px"]}
+      tabletSpacing={["125px", "84px"]}
       tabletSmallSpacing={["128px", "89px"]}
       mobileSpacing={["96px", "64px"]}
     >
@@ -58,7 +58,6 @@ const Hero = () => {
           </StyledHeroHeaderBtns>
         </StyledHeroWrapper>
 
-        
         <StyledHeroImg
           $imgUrl={t("HeroImgUrl")}
           $imgUrl2x={t("HeroImgUrl2x")}

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { StyledFeatureItem } from "@src/components/widgets/FeatureItem";
 
 const StyledFeaturesItems = styled.div`
   display: flex;
@@ -7,7 +8,7 @@ const StyledFeaturesItems = styled.div`
   justify-content: center;
   gap: 32px;
 
-  > div {
+  > ${StyledFeatureItem} {
     @media ${device.desktop} {
       width: calc(33.333% - 24px);
       max-width: 100%;

@@ -22,24 +22,12 @@ const StyledFeatureSwitcher = styled.div<{
 
 const StyledFeatureSwitcherWrapper = styled.div<{
   $position?: IFeatureSwitcher["position"];
-  $withHeader?: boolean;
 }>`
-  ${(props) =>
-    props.$withHeader &&
-    css`
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  `}
   padding: 40px 0;
   order: ${(props) => props.$position === "right" && 2};
 
   @media ${device.tablet} {
     padding: 0;
-  }
-
-  @media ${device.mobile} {
-    gap: 16px;
   }
 `;
 
@@ -137,12 +125,15 @@ const StyledFeatureSwitcherCustomBtn = styled.div`
   margin-top: 16px;
 `;
 
-const StyledHeading = styled(Heading)`
+const StyledFeatureSwitcherHeading = styled(Heading)`
+  margin-bottom: 32px;
   font-size: 20px;
-  line-height: 1.33em;
+  line-height: 27px;
 
   @media ${device.mobile} {
+    margin-bottom: 16px;
     font-size: 16px;
+    line-height: 21px;
   }
 `;
 
@@ -152,5 +143,5 @@ export {
   StyledFeatureSwitcherBtn,
   StyledFeatureSwitcherImage,
   StyledFeatureSwitcherCustomBtn,
-  StyledHeading,
+  StyledFeatureSwitcherHeading,
 };

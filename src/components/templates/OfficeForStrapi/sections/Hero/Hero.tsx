@@ -9,7 +9,7 @@ import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
-import { ImageCarousel } from "@src/components/widgets/ImageCarousel";
+import { ImageCarousel } from "@src/components/modules/connectors/ImageCarousel";
 import { items } from "./data/items";
 
 const Hero = () => {
@@ -22,10 +22,10 @@ const Hero = () => {
 
   return (
     <StyledHero
-      desktopSpacing={["184px", "0px"]}
-      tabletSpacing={["184px", "0px"]}
-      tabletSmallSpacing={["129px", "0px"]}
-      mobileSpacing={["96px", "24px"]}
+      desktopSpacing={["184px", "112px"]}
+      tabletSpacing={["176px", "112px"]}
+      tabletSmallSpacing={["128px", "112px"]}
+      mobileSpacing={["112px", "48px"]}
     >
       <Container>
         <StyledHeroWrapper>
@@ -54,17 +54,17 @@ const Hero = () => {
             label={t("FullyCompatibleWithDocxXlsxAndPptx")}
           />
         </StyledHeroWrapper>
-
-        <ImageCarousel
-          imageHeight={575}
-          items={items.map((item) => ({
-            image: {
-              url: t(item.image.url),
-              url2x: item.image.url2x ? t(item.image.url2x) : undefined
-            }
-          }))}
-        />
       </Container>
+
+      <ImageCarousel
+        imageHeight={575}
+        items={items.map((item) => ({
+          image: {
+            url: t(item.image.url),
+            url2x: item.image.url2x ? t(item.image.url2x) : undefined,
+          },
+        }))}
+      />
     </StyledHero>
   );
 };

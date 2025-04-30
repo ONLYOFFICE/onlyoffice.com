@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
+import { StyledFeatureItem } from "@src/components/widgets/FeatureItem";
 import { device } from "@src/utils/device";
 
 const StyledReasonsWrapper = styled.div`
@@ -109,12 +110,17 @@ const StyledReasonsImage = styled.div`
 `;
 
 const StyledReasonsItems = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 32px;
 
-  @media ${device.mobile} {
-    grid-template-columns: 1fr;
+  > ${StyledFeatureItem} {
+    width: calc(50% - 16px);
+
+    @media ${device.mobile} {
+      width: 100%;
+    }
   }
 `;
 

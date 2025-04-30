@@ -1,8 +1,9 @@
 import { useTranslation, Trans } from "next-i18next";
 import {
-  StyledDocspaceAppHeader,
-  StyledDocspaceAppHeading,
-} from "./DocspaceApp.styled";
+  StyledDocSpaceAppHeader,
+  StyledDocSpaceAppHeading,
+} from "./DocSpaceApp.styled";
+import { IDocSpaceApp } from "./DocSpaceApp.types";
 import { FeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -11,29 +12,31 @@ import { Badge } from "@src/components/ui/Badge";
 import { items } from "./data/items";
 import { Button } from "@src/components/ui/Button";
 
-const DocspaceApp = () => {
+const DocSpaceApp = ({ setActiveTab }: IDocSpaceApp) => {
   const { t } = useTranslation("office-for-pipedrive");
 
   const scrollToBlock = () => {
     const element = document.getElementById("how-to-start");
-    if (element) element.scrollIntoView({ behavior: "smooth" });
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setActiveTab(0);
+    }
   };
 
   return (
-    <Section
-      background="#f9f9f9"
-    >
+    <Section background="#f9f9f9">
       <Container>
-        <StyledDocspaceAppHeader>
-          <StyledDocspaceAppHeading level={2}>
+        <StyledDocSpaceAppHeader>
+          <StyledDocSpaceAppHeading level={2}>
             <Trans
               t={t}
               i18nKey="DocspaceAppTitle"
               components={[<Text as="span" color="main" key="0" />]}
             />
-          </StyledDocspaceAppHeading>
+          </StyledDocSpaceAppHeading>
           <Badge label={t("New")} verticalAlign="super" />
-        </StyledDocspaceAppHeader>
+        </StyledDocSpaceAppHeader>
 
         <FeatureSwitcher
           items={items.map(({ label, image }) => ({
@@ -57,4 +60,4 @@ const DocspaceApp = () => {
   );
 };
 
-export { DocspaceApp };
+export { DocSpaceApp };

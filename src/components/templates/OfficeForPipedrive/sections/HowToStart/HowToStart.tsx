@@ -1,36 +1,50 @@
 import { useTranslation, Trans } from "next-i18next";
-import { useState } from "react";
 import {
   StyledHowToStart,
   StyledHowToStartInfo,
   StyledHowToStartText,
 } from "./HowToStart.styled";
+import { IHowToStart } from "./HowToStart.types";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 
-const HowToStart = () => {
+const HowToStart = ({ activeTab }: IHowToStart) => {
   const { t } = useTranslation("office-for-pipedrive");
-    const [activeTab, setActiveTab] = useState(items[0].id);
 
   return (
-    <StyledHowToStart
-      id="how-to-start"
-      tabletSmallSpacing={["80px", "80px"]}
-    >
+    <StyledHowToStart id="how-to-start" tabletSmallSpacing={["80px", "80px"]}>
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 
         <StepCarousel
-          id="how-to-start-carousel"
-          className="how-to-start-carousel"
-          namespace="office-for-pipedrive"
-          items={items}
-          defaultSelected={activeTab}
-          onTabChange={setActiveTab}
-          useTabs
+          defaultActiveTab={activeTab}
+          tabs={items.map((tab) => ({
+            label: t(tab.label),
+            items: tab.items.map((item) => ({
+              imgUrl: t(item.imgUrl),
+              heading: item.headingLinks ? (
+                <Trans
+                  t={t}
+                  i18nKey={String(item.heading)}
+                  components={item.headingLinks.map((link, index) => (
+                    <Link
+                      key={index}
+                      href={link.url}
+                      target={link.isExternal ? "_blank" : undefined}
+                      color="main"
+                      textUnderline
+                      hover="underline-none"
+                    />
+                  ))}
+                />
+              ) : (
+                t(String(item.heading))
+              ),
+            })),
+          }))}
         />
 
         <StyledHowToStartInfo>
@@ -58,7 +72,6 @@ const HowToStart = () => {
               ]}
             />
           </StyledHowToStartText>
-
         </StyledHowToStartInfo>
       </Container>
     </StyledHowToStart>

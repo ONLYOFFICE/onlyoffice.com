@@ -26,28 +26,17 @@ const StyledHowToStart = styled(Section)`
     scroll-margin-top: 48px;
   }
 `;
+
 const StyledHowToStartInfo = styled.div`
-  display: grid;
-  row-gap: 72px;
   margin-top: 72px;
 
-  @media ${device.tablet} {
-    row-gap: 48px;
-    margin-top: 48px;
-  }
-
   @media ${device.tabletS} {
-    row-gap: 40px;
-    margin-top: 40px;
+    margin-top: 56px;
   }
 
   @media ${device.mobile} {
-    row-gap: 32px;
     margin-top: 32px;
   }
 `;
 
-export {
-  StyledHowToStart,
-  StyledHowToStartInfo,
-};
+export { StyledHowToStart, StyledHowToStartInfo };
