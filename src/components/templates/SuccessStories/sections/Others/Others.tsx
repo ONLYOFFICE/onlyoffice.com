@@ -22,7 +22,7 @@ import {
   StyledStoriesOthersShowMoreButton,
 } from "./Others.styled";
 
-const Others: FC<ISlugProps> = ({ slug }) => {
+const Others = ({ slug }: ISlugProps) => {
   const { t } = useTranslation("success-stories");
   const allOtherUsers: ISuccessStoriesData[] = data.filter(
     (story) => story.slug !== slug,

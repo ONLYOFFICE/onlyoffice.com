@@ -18,6 +18,7 @@ const StyledStoriesHeroContent = styled.div`
     text-align: left;
     font-family: "Open Sans", sans-serif, Arial;
     padding-left: 15px;
+    max-width: 415px;
   }
 
   @media ${device.tablet} {

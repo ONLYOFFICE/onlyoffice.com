@@ -23,7 +23,7 @@ import {
   StyledStoriesHeroDescription,
 } from "./Hero.styled";
 
-const Hero: FC<ISlugProps> = ({ slug }) => {
+const Hero = ({ slug }: ISlugProps) => {
   const { t } = useTranslation("success-stories");
   const userPreview: ISuccessStoriesData | undefined = data.find(
     (story) => story.slug === slug,
