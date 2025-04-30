@@ -54,7 +54,7 @@ const Hero: FC<ISlugProps> = ({ slug }) => {
       <Container maxWidth="1050px" tabletSpacing="16px">
         <StyledStoriesHeroContent>
           <StyledStoriesHeroLeft>
-            <Heading level={2}>{t(userPreview?.title || "")}</Heading>
+            <Heading level={1}>{t(userPreview?.title || "")}</Heading>
             <StyledStoriesHeroList>
               <StyledStoriesHeroItem>
                 <Heading level={3}>{t("subTitleProfile")}</Heading>

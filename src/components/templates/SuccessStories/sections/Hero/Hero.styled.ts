@@ -10,7 +10,7 @@ const StyledStoriesHeroContent = styled.div`
   justify-content: space-between;
   padding: 80px 0 60px;
 
-  & h2 {
+  & h1 {
     font-size: 36px;
     font-weight: 400;
     color: #333333;
