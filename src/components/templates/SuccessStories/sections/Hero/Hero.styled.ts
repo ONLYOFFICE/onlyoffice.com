@@ -19,6 +19,7 @@ const StyledStoriesHeroContent = styled.div`
     font-family: "Open Sans", sans-serif, Arial;
     padding-left: 15px;
     max-width: 415px;
+    letter-spacing: normal;
   }
 
   @media ${device.tablet} {
@@ -63,7 +64,7 @@ const StyledStoriesHeroList = styled.ul`
 const StyledStoriesHeroItem = styled.li`
   padding-left: 15px;
   border-left: solid 1px #e0e0e0;
-  margin: 40px 0;
+  margin-top: 33px;
   display: flex;
   flex-direction: column;
   gap: 15px;
