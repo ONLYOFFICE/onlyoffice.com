@@ -3,12 +3,22 @@ import styled from "styled-components";
 
 const StyledStoriesHeroWrapper = styled.div`
   background-color: #f6f6f6;
+
+  .container {
+    @media ${device.tablet} {
+      padding-bottom: 80px;
+    }
+  }
 `;
 
 const StyledStoriesHeroContent = styled.div`
   display: flex;
-  justify-content: space-between;
   padding: 80px 0 60px;
+  gap: 25px;
+
+  @media ${device.tablet} {
+    gap: 0;
+  }
 
   & h1 {
     font-size: 36px;
@@ -30,9 +40,14 @@ const StyledStoriesHeroContent = styled.div`
 
 const StyledStoriesHeroLeft = styled.div`
   flex-basis: 50%;
+  max-width: 485px;
 
   h2 {
     max-width: 415px;
+  }
+
+  @media ${device.tablet} {
+    max-width: 100%;
   }
 `;
 
@@ -40,19 +55,17 @@ const StyledStoriesHeroRight = styled.div`
   flex-basis: 50%;
   height: fit-content;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 50px;
   transform: translate(0, -20px);
+  max-width: 460px;
 
   @media ${device.tablet} {
     flex-direction: column;
     margin-bottom: 100px;
     transform: translate(0, 0);
-  }
-
-  @media ${device.tablet} {
     gap: 20px;
+    max-width: 100%;
   }
 `;
 
@@ -69,6 +82,18 @@ const StyledStoriesHeroItem = styled.li`
   flex-direction: column;
   gap: 15px;
   white-space: pre-line;
+
+  @media ${device.tablet} {
+    margin-top: 38px;
+  }
+
+  @media ${device.tabletS} {
+    margin-top: 35px;
+  }
+
+  @media ${device.tabletS} {
+    margin-top: 40px;
+  }
 
   h3 {
     color: #ff6f3d;
@@ -117,6 +142,8 @@ const StyledStoriesHeroDescription = styled.div`
   color: #666666;
   font-size: 12px;
   transform: translate(-9px, 2px);
+  width: 200px;
+  flex-shrink: 0;
 
   @media ${device.tablet} {
     transform: translate(0, 0);

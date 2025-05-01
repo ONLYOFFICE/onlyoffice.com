@@ -42,7 +42,7 @@ const Hero = ({ userPreview }: ISuccessStoriesUserPreview) => {
 
   return (
     <StyledStoriesHeroWrapper>
-      <Container maxWidth="1050px" tabletSpacing="16px">
+      <Container className="container" maxWidth="1050px" tabletSpacing="16px">
         <StyledStoriesHeroContent>
           <StyledStoriesHeroLeft>
             <Heading level={1}>{t(userPreview?.title || "")}</Heading>
