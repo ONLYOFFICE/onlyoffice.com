@@ -9,14 +9,14 @@ export const items: IGettingItems[] = [
     bgUrl: "/images/icons/onlyoffice.svg",
   },
   {
-    href: "/download.aspx#docspace-enterprise",
+    href: "/download#docspace-enterprise",
     title: "GettingItemLinuxTitle",
     text: "GettingItemLinuxText",
     subtitle: "GettingItemLinuxSubtitle",
     bgUrl: "/images/icons/linux.svg",
   },
   {
-    href: "/download.aspx#docspace-enterprise",
+    href: "/download#docspace-enterprise",
     title: "GettingItemWindowsTitle",
     text: "GettingItemWindowsText",
     subtitle: "GettingItemWindowsSubtitle",

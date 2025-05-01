@@ -45,7 +45,7 @@ const Getting = () => {
             components={[
               <Link
                 key={0}
-                href="/download-community.aspx#docspace-community"
+                href="/download-community#docspace-community"
                 color="main"
                 textUnderline={true}
                 hover="underline-none"

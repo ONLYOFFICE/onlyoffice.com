@@ -20,13 +20,13 @@ const Hero = () => {
         <StyledHeroBtnWrapper>
           <Button
             as="a"
-            href="/download.aspx#docspace-enterprise"
+            href="/download#docspace-enterprise"
             label={t("GetItNow")}
             variant="primary"
           />
           <Button
             as="a"
-            href="/docspace-registration.aspx?from=docspace_enterprise"
+            href="/docspace-registration?from=docspace_enterprise"
             label={t("TryItFree")}
             variant="secondary"
           />

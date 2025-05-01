@@ -57,7 +57,7 @@ const Cost = () => {
                     color="main"
                     textUnderline={true}
                     hover="underline-none"
-                    href="/docspace-family-pack.aspx"
+                    href="/docspace-family-pack"
                   />,
                 ]}
               />

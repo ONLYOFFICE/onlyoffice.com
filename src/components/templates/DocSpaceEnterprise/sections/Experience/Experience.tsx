@@ -41,13 +41,13 @@ const Experience = () => {
                   i18nKey={t("ExperienceFreeDesktopApps")}
                   components={[
                     <Link
-                      href="/download-desktop.aspx#desktop"
+                      href="/download-desktop#desktop"
                       color="main"
                       textUnderline={true}
                       key={0}
                     />,
                     <Link
-                      href="/download-desktop.aspx#mobile"
+                      href="/download-desktop#mobile"
                       color="main"
                       textUnderline={true}
                       key={1}

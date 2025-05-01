@@ -9,7 +9,7 @@ export const items: IEnvironmentItems[] = [
     },
     links: [
       {
-        href: "/security.aspx",
+        href: "/security",
         label: "EnvironmentItemLinkSecurity",
       },
     ],
@@ -22,7 +22,7 @@ export const items: IEnvironmentItems[] = [
     },
     links: [
       {
-        href: "/accessibility.aspx",
+        href: "/accessibility",
         label: "EnvironmentItemLinkAccessibility",
       },
     ],

@@ -38,7 +38,7 @@ const Features = () => {
       </StyledFeaturesList>
       <StyledFeatureLink>
         <Link
-          href="/docspace.aspx"
+          href="/docspace"
           rel="noreferrer noopener"
           target="_blank"
           label={t("FeaturesLearn")}
