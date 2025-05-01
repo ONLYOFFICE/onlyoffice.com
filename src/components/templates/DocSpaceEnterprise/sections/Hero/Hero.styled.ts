@@ -52,7 +52,7 @@ const StyledHeroWrapper = styled.div`
     }
   }
 
-  .subtitle {
+  p {
     font-size: 18px;
     line-height: 160%;
     padding: 24px 0 32px;
@@ -133,7 +133,7 @@ const StyledHeroWorldwide = styled.div`
     padding: 45px 0 38px;
   }
 
-  .orangetext {
+  p:nth-of-type(2) {
     color: #ff6f3d;
     font-size: 40px;
     line-height: 150%;

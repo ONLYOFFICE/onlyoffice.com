@@ -18,7 +18,7 @@ const Hero = () => {
     <StyledHero $imgUrl="/images/templates/docspace-enterprise/hero/bg.svg">
       <StyledHeroWrapper>
         <Heading level={1} label={t("OnlyOfficeDocSpaceEnterprise")} />
-        <Text label={t("TheEnterpriseScaledSpace")} className="subtitle" />
+        <Text label={t("TheEnterpriseScaledSpace")} />
         <StyledHeroBtnWrapper>
           <Button
             as="a"
@@ -50,7 +50,7 @@ const Hero = () => {
           />
         </StyledHeroWorldwideImgWrapper>
         <Text label={t("TrustedBy")} />
-        <Text label={t("CountOfUsers")} className="orangetext" />
+        <Text label={t("CountOfUsers")} />
         <Text label={t("Worldwide")} />
       </StyledHeroWorldwide>
     </StyledHero>
