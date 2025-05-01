@@ -1,4 +1,6 @@
-export const items = [
+import type { IGettingItems } from "@src/components/templates/DocSpaceEnterprise/DocSpaceEnterprise.types";
+
+export const items: IGettingItems[] = [
   {
     href: "/docspace-registration",
     title: "GettingItemCloudTitle",

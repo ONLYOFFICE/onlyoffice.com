@@ -1,4 +1,6 @@
-export const items = [
+import type { IFeaturesItems } from "@src/components/templates/DocSpaceEnterprise/DocSpaceEnterprise.types";
+
+export const items: IFeaturesItems[] = [
   {
     icon: {
       url: "/images/templates/docspace-enterprise/features/feature_icon_1.svg",

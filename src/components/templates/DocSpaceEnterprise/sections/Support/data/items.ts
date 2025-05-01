@@ -1,4 +1,6 @@
-export const items = [
+import type { ISupportItems } from "@src/components/templates/DocSpaceEnterprise/DocSpaceEnterprise.types";
+
+export const items: ISupportItems[] = [
   {
     heading: "SupportItemTitleFreeDemo",
     desc: "SupportItemTextWatch",

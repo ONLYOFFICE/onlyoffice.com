@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import type { IStyledGettingItemTopProps } from "@src/components/templates/DocSpaceEnterprise/DocSpaceEnterprise.types";
 
-import type { StyledGettingItemTopProps } from "./Getting.types";
+const getBgUrl = (props: IStyledGettingItemTopProps) => `url(${props.$bgUrl})`;
 
 const StyledGetting = styled.section`
   padding: 112px 0;
@@ -183,7 +184,7 @@ const StyledGettingList = styled.div`
   }
 `;
 
-const StyledGettingItemTop = styled.div<StyledGettingItemTopProps>`
+const StyledGettingItemTop = styled.div<IStyledGettingItemTopProps>`
   background: #f5f5f5;
   border-radius: 5px;
   height: 160px;
@@ -197,7 +198,7 @@ const StyledGettingItemTop = styled.div<StyledGettingItemTopProps>`
     width: 72px;
     height: 72px;
     display: block;
-    background-image: url(${(props: StyledGettingItemTopProps) => props.$bgUrl});
+    background-image: ${getBgUrl};
     background-position: 0 0;
     background-size: contain;
     background-position-x: 50%;

@@ -1,4 +1,6 @@
-export const items = [
+import type { IEnvironmentItems } from "@src/components/templates/DocSpaceEnterprise/DocSpaceEnterprise.types";
+
+export const items: IEnvironmentItems[] = [
   {
     heading: "EnvironmentItemTitleSecurity",
     text: "EnvironmentItemTextSecurity",
