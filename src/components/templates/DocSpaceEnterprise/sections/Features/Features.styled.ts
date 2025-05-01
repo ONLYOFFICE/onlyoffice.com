@@ -1,40 +1,27 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 
-const StyledFeature = styled.section`
+const StyledFeaturesHeading = styled(Heading)`
+  letter-spacing: -0.02em;
+  line-height: 1.33em;
+  max-width: 778px;
+  margin: 0 auto;
+
   @media ${device.tabletS} {
-    width: 90vw;
+    letter-spacing: -0.01em;
   }
+`;
 
-  .title {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.33em;
+const StyledFeaturesText = styled(Text)`
+  line-height: 160%;
+  padding: 24px 0 0;
+  max-width: 778px;
+  margin: 0 auto;
 
-    @media ${device.tabletS} {
-      font-size: 30px;
-      letter-spacing: -0.01em;
-    }
-
-    @media ${device.mobile} {
-      font-size: 20px;
-    }
-  }
-
-  .subtitle {
-    font-size: 18px;
-    line-height: 160%;
-    padding: 24px 0 0;
-
-    @media ${device.tabletS} {
-      font-size: 16px;
-    }
-
-    @media ${device.mobile} {
-      font-size: 14px;
-      padding: 16px 0 0;
-    }
+  @media ${device.mobile} {
+    padding: 16px 0 0;
   }
 `;
 
@@ -97,10 +84,8 @@ const StyledFeaturesList = styled.div`
 
 const StyledFeatureLink = styled.div`
   text-align: center;
-  margin-bottom: 112px;
 
   @media ${device.mobile} {
-    margin-bottom: 48px;
     font-size: 14px;
   }
 
@@ -114,4 +99,9 @@ const StyledFeatureLink = styled.div`
   }
 `;
 
-export { StyledFeature, StyledFeaturesList, StyledFeatureLink };
+export {
+  StyledFeaturesHeading,
+  StyledFeaturesText,
+  StyledFeaturesList,
+  StyledFeatureLink,
+};

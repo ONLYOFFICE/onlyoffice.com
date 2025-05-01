@@ -1,13 +1,13 @@
 import { Trans, useTranslation } from "next-i18next";
+import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
-import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
 import { items } from "./data/items";
 
 import {
-  StyledFeature,
+  StyledFeaturesHeading,
+  StyledFeaturesText,
   StyledFeatureLink,
   StyledFeaturesList,
 } from "./Features.styled";
@@ -15,10 +15,19 @@ import {
 const Features = () => {
   const { t } = useTranslation("docspace-enterprise");
   return (
-    <StyledFeature>
+    <Section tabletSmallSpacing={["88px", "88px"]}>
       <Container>
-        <Heading level={2} className="title" label={t("FeaturesEfficient")} />
-        <Text className="subtitle" label={t("FeaturesOnlyOffice")} />
+        <StyledFeaturesHeading
+          level={2}
+          size={2}
+          label={t("FeaturesEfficient")}
+          textAlign="center"
+        />
+        <StyledFeaturesText
+          label={t("FeaturesOnlyOffice")}
+          size={1}
+          textAlign="center"
+        />
         <StyledFeaturesList>
           {items.map((item) => (
             <FeatureItem
@@ -44,7 +53,7 @@ const Features = () => {
           />
         </StyledFeatureLink>
       </Container>
-    </StyledFeature>
+    </Section>
   );
 };
 
