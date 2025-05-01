@@ -4,8 +4,6 @@ import { device } from "@src/utils/device";
 import type { StyledGettingItemTopProps } from "./Getting.types";
 
 const StyledGetting = styled.section`
-  width: 100%;
-  height: fit-content;
   padding: 112px 0;
 
   @media ${device.tabletS} {
@@ -37,7 +35,6 @@ const StyledGetting = styled.section`
 
   .text {
     font-size: 18px;
-    font-weight: normal;
     line-height: 160%;
     text-align: center;
     padding-top: 24px;
@@ -57,7 +54,6 @@ const StyledGetting = styled.section`
   .footer__text {
     color: #333333;
     font-size: 16px;
-    font-weight: 400;
     line-height: 150%;
     text-align: center;
     padding: 24px 16px;
@@ -159,8 +155,6 @@ const StyledGettingList = styled.div`
     }
 
     &__subtitle {
-      width: fit-content;
-      margin: 0 auto;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -192,7 +186,6 @@ const StyledGettingList = styled.div`
 const StyledGettingItemTop = styled.div<StyledGettingItemTopProps>`
   background: #f5f5f5;
   border-radius: 5px;
-  width: 100%;
   height: 160px;
 
   @media ${device.tabletS} {

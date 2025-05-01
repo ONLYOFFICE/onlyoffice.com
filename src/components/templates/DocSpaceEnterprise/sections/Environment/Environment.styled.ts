@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 
 const StyledEnvironment = styled.section`
-  width: 100%;
-  height: fit-content;
   background: #f8f9f9;
 
   @media ${device.tabletS} {
@@ -63,7 +61,6 @@ const StyledEnvironmentList = styled.div`
   }
 
   .item {
-    width: 100%;
     justify-content: center;
 
     &:nth-child(2n) {

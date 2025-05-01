@@ -2,13 +2,10 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 
 const StyledSupport = styled.section`
-  width: 100%;
-  height: fit-content;
   background: linear-gradient(136deg, #ffc671 0%, #ff7541 59.38%, #ff6f3d 100%);
 `;
 
 const StyledSupportBg = styled.div`
-  width: 100%;
   background-image: url("/images/templates/docspace-enterprise/support/bg.svg");
   background-position-x: 50%;
   background-repeat: no-repeat;
@@ -66,7 +63,6 @@ const StyledSupportBg = styled.div`
 
   .text {
     font-size: 22px;
-    font-weight: normal;
     line-height: 160%;
     color: #fff;
     padding: 24px 0 56px;
@@ -86,8 +82,6 @@ const StyledSupportBg = styled.div`
 `;
 
 const StyledSupportList = styled.div`
-  width: 100%;
-  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -46,7 +46,6 @@ const StyledExperienceLeft = styled.div`
 
   .text {
     font-size: 16px;
-    font-weight: 400;
     line-height: 150%;
     padding-bottom: 40px;
 
@@ -68,7 +67,6 @@ const StyledExperienceLeft = styled.div`
 `;
 
 const StyledExperienceSubtitleWrapper = styled.div`
-  height: fit-content;
   display: flex;
   gap: 16px;
   border-top: 1px solid #666666;

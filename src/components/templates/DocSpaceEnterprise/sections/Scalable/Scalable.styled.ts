@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 
 const StyledScalable = styled.section`
-  width: 100%;
-  height: fit-content;
   padding: 112px 0;
   text-align: center;
 
@@ -38,9 +36,7 @@ const StyledScalable = styled.section`
 `;
 
 const StyledScalableTextWrapper = styled.div`
-  width: 100%;
   max-width: 926px;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -59,7 +55,6 @@ const StyledScalableTextWrapper = styled.div`
 
   .text {
     font-size: 18px;
-    font-weight: normal;
     line-height: 160%;
 
     @media ${device.tabletS} {
@@ -74,10 +69,8 @@ const StyledScalableTextWrapper = styled.div`
 `;
 
 const StyledScalableImgWrapper = styled.div`
-  width: 100%;
   max-width: 736px;
   margin: 0 auto;
-  height: fit-content;
 
   @media ${device.tablet} {
     width: 90vw;

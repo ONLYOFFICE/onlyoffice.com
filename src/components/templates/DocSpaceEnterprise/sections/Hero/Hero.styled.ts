@@ -2,8 +2,6 @@ import { device } from "@src/utils/device";
 import styled from "styled-components";
 
 const StyledHero = styled.section<{ $imgUrl: string }>`
-  width: 100%;
-  height: fit-content;
   position: relative;
   z-index: 1;
   background-image: url(${(props) => props.$imgUrl});
@@ -24,8 +22,6 @@ const StyledHero = styled.section<{ $imgUrl: string }>`
 `;
 
 const StyledHeroWrapper = styled.div`
-  width: 100%;
-  height: fit-content;
 
   @media ${device.mobile} {
     width: 90vw;
@@ -58,7 +54,6 @@ const StyledHeroWrapper = styled.div`
 
   .subtitle {
     font-size: 18px;
-    font-weight: normal;
     line-height: 160%;
     padding: 24px 0 32px;
     text-align: center;

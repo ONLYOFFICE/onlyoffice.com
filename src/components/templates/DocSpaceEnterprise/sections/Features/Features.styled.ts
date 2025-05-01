@@ -2,9 +2,6 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 
 const StyledFeature = styled.section`
-  width: 100%;
-  height: fit-content;
-
   .container {
     max-width: 928px;
     padding: 0;
@@ -34,7 +31,6 @@ const StyledFeature = styled.section`
 
     &__subtitle {
       font-size: 18px;
-      font-weight: normal;
       line-height: 160%;
       padding: 24px 0 0;
 

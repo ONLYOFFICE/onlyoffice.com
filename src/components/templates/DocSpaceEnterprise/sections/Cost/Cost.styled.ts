@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 
 const StyledCost = styled.section`
-  width: 100%;
-  height: fit-content;
   background: #f9f9f9;
 
   .container {
@@ -20,8 +18,6 @@ const StyledCost = styled.section`
 `;
 
 const StyledCostContent = styled.div`
-  width: 100%;
-  height: fit-content;
   background: #ffffff;
   border: 1px solid #cccccc;
   box-shadow: 0 7px 25px rgba(85, 85, 85, 0.15);
@@ -80,14 +76,11 @@ const StyledCostContentLeft = styled.div`
 `;
 
 const StyledCostList = styled.ul`
-  width: 100%;
-  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 16px;
   line-height: 1.6em;
-  list-style-type: none;
   margin: 24px 0;
 
   @media ${device.mobile} {
@@ -115,8 +108,6 @@ const StyledCostItem = styled.li`
 `;
 
 const StyledCostFooter = styled.div`
-  width: 100%;
-  height: fit-content;
   background: #ffffff;
   margin: 56px 0 0;
   padding: 24px;
