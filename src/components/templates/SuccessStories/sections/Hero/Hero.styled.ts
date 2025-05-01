@@ -62,7 +62,7 @@ const StyledStoriesHeroRight = styled.div`
 
   @media ${device.tablet} {
     flex-direction: column;
-    margin-bottom: 100px;
+    margin-bottom: 115px;
     transform: translate(0, 0);
     gap: 20px;
     max-width: 100%;
@@ -89,10 +89,6 @@ const StyledStoriesHeroItem = styled.li`
 
   @media ${device.tabletS} {
     margin-top: 35px;
-  }
-
-  @media ${device.tabletS} {
-    margin-top: 40px;
   }
 
   h3 {
