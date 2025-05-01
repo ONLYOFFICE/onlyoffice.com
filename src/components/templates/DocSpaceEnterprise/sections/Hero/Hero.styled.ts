@@ -1,28 +1,27 @@
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
-const StyledHero = styled.section<{ $imgUrl: string }>`
+const StyledHero = styled.section`
   position: relative;
   z-index: 1;
-  background-image: url(${(props) => props.$imgUrl});
+  background-image: url("/images/templates/docspace-enterprise/hero/bg.svg");
   background-repeat: no-repeat;
   background-size: 3574px auto;
   background-position: 65% 0px;
   background-color: #f8f9f9;
-  transform: translateY(-72px);
+  margin-top: -72px;
 
   @media ${device.tablet} {
-    transform: translateY(-64px);
+    margin-top: -64px;
     background-position: 65% -50px;
   }
 
   @media ${device.tabletS} {
-    transform: translateY(-48px);
+    margin-top: -48px;
   }
 `;
 
 const StyledHeroWrapper = styled.div`
-
   @media ${device.mobile} {
     width: 90vw;
     margin: 0 auto;
@@ -50,6 +49,11 @@ const StyledHeroWrapper = styled.div`
       font-size: 28px;
       padding-top: 96px;
     }
+
+    @media ${device.mobileS} {
+      max-width: 300px;
+      margin: 0 auto;
+    }
   }
 
   p {
@@ -60,12 +64,11 @@ const StyledHeroWrapper = styled.div`
 
     @media ${device.tabletS} {
       font-size: 16px;
-      padding: 24px 0 48px;
     }
 
     @media ${device.mobile} {
       font-size: 14px;
-      padding: 16px 0;
+      padding: 24px 0;
     }
   }
 `;
@@ -83,7 +86,7 @@ const StyledHeroBtnWrapper = styled.div`
 
 const StyledHeroImgWrapper = styled.div`
   width: 93.75vw;
-  margin: 0px auto 56px;
+  margin: 0px auto;
   overflow: hidden;
 
   @media screen and (max-width: 1680px) {
@@ -98,7 +101,7 @@ const StyledHeroImgWrapper = styled.div`
   }
 
   @media ${device.mobile} {
-    margin: 48px auto 24px;
+    margin: 0 auto;
   }
 
   img {
@@ -115,60 +118,9 @@ const StyledHeroImgWrapper = styled.div`
   }
 `;
 
-const StyledHeroWorldwide = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  padding: 56px 0 112px;
-
-  @media ${device.mobile} {
-    font-size: 14px;
-    padding: 50px 0 40px;
-    padding: 45px 0 40px;
-  }
-
-  @media ${device.mobileS} {
-    padding: 45px 0 38px;
-  }
-
-  p:nth-of-type(2) {
-    color: #ff6f3d;
-    font-size: 40px;
-    line-height: 150%;
-    letter-spacing: -0.8px;
-    font-weight: 800;
-
-    @media ${device.mobile} {
-      font-size: 20px;
-    }
-  }
-`;
-
-const StyledHeroWorldwideImgWrapper = styled.div`
-  width: 64px;
-  height: 52px;
-  margin-bottom: 24px;
-
-  @media ${device.mobile} {
-    width: 49px;
-    height: 40px;
-    margin-bottom: 16px;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-`;
-
 export {
   StyledHero,
   StyledHeroWrapper,
   StyledHeroBtnWrapper,
   StyledHeroImgWrapper,
-  StyledHeroWorldwide,
-  StyledHeroWorldwideImgWrapper,
 };
