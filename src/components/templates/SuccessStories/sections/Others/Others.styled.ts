@@ -90,6 +90,12 @@ const StyledStoriesOthersCardItemRight = styled.div`
     display: block;
     color: #333333;
     position: relative;
+    line-height: 1.1em;
+    letter-spacing: normal;
+
+    @media ${device.mobile} {
+      line-height: 1.3em;
+    }
 
     &::after {
       content: "";
