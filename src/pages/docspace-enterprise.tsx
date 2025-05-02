@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import { ILocale } from "@src/types/locale";
 import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
-import { Head } from "@src/components/modules/Head/Head";
+import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { DocSpaceEnterpriseTemplate } from "@src/components/templates/DocSpaceEnterprise";
 import { Footer } from "@src/components/modules/Footer";
