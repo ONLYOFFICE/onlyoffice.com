@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useTranslation, Trans } from "next-i18next";
 import {
   StyledHowToStart,
@@ -14,13 +15,20 @@ import { Link } from "@src/components/ui/Link";
 const HowToStart = ({ activeTab }: IHowToStart) => {
   const { t } = useTranslation("office-for-pipedrive");
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    setActiveIndex(activeTab);
+  }, [activeTab]);
+
   return (
     <StyledHowToStart id="how-to-start" tabletSmallSpacing={["80px", "80px"]}>
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 
         <StepCarousel
-          defaultActiveTab={activeTab}
+          activeTab={activeIndex}
+          onChange={setActiveIndex}
           tabs={items.map((tab) => ({
             label: t(tab.label),
             items: tab.items.map((item) => ({

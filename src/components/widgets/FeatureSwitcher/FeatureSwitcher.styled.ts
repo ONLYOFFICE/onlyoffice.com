@@ -31,7 +31,7 @@ const StyledFeatureSwitcherWrapper = styled.div<{
   }
 `;
 
-const StyledFeatureSwitcherBtn = styled.div<{ $active?: boolean }>`
+const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
