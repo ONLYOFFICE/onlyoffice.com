@@ -1,20 +1,11 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 import type { IStyledGettingItemTopProps } from "@src/components/templates/DocSpaceEnterprise/DocSpaceEnterprise.types";
 
 const getBgUrl = (props: IStyledGettingItemTopProps) => `url(${props.$bgUrl})`;
 
-const StyledGetting = styled.section`
-  padding: 112px 0;
-
-  @media ${device.tabletS} {
-    padding: 64px 0;
-  }
-
-  @media ${device.mobile} {
-    padding: 32px 0;
-  }
-
+const StyledGetting = styled(Section)`
   .title {
     font-size: 40px;
     font-weight: 700;

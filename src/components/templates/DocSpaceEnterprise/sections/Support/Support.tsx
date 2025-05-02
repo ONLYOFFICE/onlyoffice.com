@@ -17,7 +17,12 @@ const Support = () => {
   const { t } = useTranslation("docspace-enterprise");
 
   return (
-    <StyledSupport>
+    <StyledSupport
+      desktopSpacing={["0", "0"]}
+      tabletSpacing={["0", "0"]}
+      tabletSmallSpacing={["0", "0"]}
+      mobileSpacing={["0", "0"]}
+    >
       <StyledSupportBg>
         <Container className="container">
           <Heading

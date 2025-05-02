@@ -1,27 +1,12 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 
-const StyledEnvironment = styled.section`
+const StyledEnvironment = styled(Section)`
   background: #f8f9f9;
 
   @media ${device.tabletS} {
     background: #ffffff;
-  }
-
-  .container {
-    padding: 112px 0;
-
-    @media screen and (max-width: 1200px) {
-      width: 90vw;
-    }
-
-    @media ${device.tabletS} {
-      padding: 64px 0;
-    }
-
-    @media ${device.mobile} {
-      padding: 48px 0;
-    }
   }
 
   .title {

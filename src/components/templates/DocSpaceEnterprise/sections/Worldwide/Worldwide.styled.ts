@@ -1,22 +1,18 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 
-const StyledWorldwide = styled.section`
+const StyledWorldwide = styled(Section)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  padding: 160px 0 112px;
   background-color: #f8f9f9;
-
-  @media ${device.tablet} {
-    padding: 56px 0 88px;
-  }
+  padding-top: 0;
 
   @media ${device.mobile} {
     font-size: 14px;
-    padding: 32px 0;
   }
 
   h2 {

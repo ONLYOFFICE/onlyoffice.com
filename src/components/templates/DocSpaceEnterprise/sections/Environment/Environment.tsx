@@ -11,7 +11,7 @@ const Environment = () => {
 
   return (
     <StyledEnvironment>
-      <Container className="container">
+      <Container>
         <Heading
           label={t("EnvironmentEnterpriseReady")}
           level={2}

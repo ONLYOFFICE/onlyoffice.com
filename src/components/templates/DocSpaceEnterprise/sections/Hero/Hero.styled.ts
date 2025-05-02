@@ -1,7 +1,8 @@
 import { device } from "@src/utils/device";
 import styled from "styled-components";
+import { Section } from "@src/components/ui/Section";
 
-const StyledHero = styled.section`
+const StyledHero = styled(Section)`
   position: relative;
   z-index: 1;
   background-image: url("/images/templates/docspace-enterprise/hero/bg.svg");
@@ -33,21 +34,14 @@ const StyledHeroWrapper = styled.div`
     letter-spacing: -0.02em;
     line-height: 1.33em;
     text-align: center;
-    padding-top: 140px;
-
-    @media ${device.tablet} {
-      padding-top: 118px;
-    }
 
     @media ${device.tabletS} {
       font-size: 36px;
       letter-spacing: -0.02em;
-      padding-top: 135px;
     }
 
     @media ${device.mobile} {
       font-size: 28px;
-      padding-top: 96px;
     }
 
     @media ${device.mobileS} {

@@ -1,21 +1,13 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 
-const StyledScalable = styled.section`
-  padding: 112px 0;
+const StyledScalable = styled(Section)`
   text-align: center;
 
   @media ${device.tablet} {
     width: 90vw;
     margin: 0 auto;
-  }
-
-  @media ${device.tabletS} {
-    padding: 80px 0;
-  }
-
-  @media ${device.mobile} {
-    padding: 48px 0;
   }
 
   .title {

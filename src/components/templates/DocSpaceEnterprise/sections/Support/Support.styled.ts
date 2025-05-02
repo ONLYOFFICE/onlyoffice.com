@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 
-const StyledSupport = styled.section`
+const StyledSupport = styled(Section)`
   background: linear-gradient(136deg, #ffc671 0%, #ff7541 59.38%, #ff6f3d 100%);
 `;
 

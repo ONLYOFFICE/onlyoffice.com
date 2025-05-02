@@ -1,18 +1,13 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 
-const StyledCost = styled.section`
+const StyledCost = styled(Section)`
   background: #f9f9f9;
 
   .container {
-    padding: 112px 0;
-
     @media screen and (max-width: 1200px) {
       width: 90vw;
-    }
-
-    @media ${device.mobile} {
-      padding: 48px 0;
     }
   }
 `;
