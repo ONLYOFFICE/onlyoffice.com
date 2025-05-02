@@ -26,7 +26,7 @@ const StyledHero = styled(Section)`
 
 const StyledHeroContainer = styled(Container)`
   h1 {
-    @media ${device.tabletS} {
+    @media ${device.tablet} {
       font-size: 36px;
       line-height: 133%;
     }
@@ -45,7 +45,7 @@ const StyledHeroContainer = styled(Container)`
   p {
     font-size: 18px;
     line-height: 160%;
-    padding: 24px 0 32px;
+    margin: 24px 0 32px;
     text-align: center;
 
     @media ${device.tabletS} {
@@ -54,7 +54,7 @@ const StyledHeroContainer = styled(Container)`
 
     @media ${device.mobile} {
       font-size: 14px;
-      padding: 24px 0;
+      margin: 24px 0;
     }
   }
 `;

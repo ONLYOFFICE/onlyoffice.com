@@ -6,17 +6,16 @@ const StyledScalableTextWrapper = styled.div`
   flex-direction: column;
   gap: 16px;
   max-width: 926px;
-  margin: 0 auto;
-  padding: 32px 0 84px;
+  margin: 32px auto 84px;
 
   @media ${device.tabletS} {
-    padding-bottom: 58px;
+    margin-bottom: 58px;
   }
 
   @media ${device.mobile} {
     display: inline-block;
     text-align: center;
-    padding: 16px 0 32px;
+    margin: 16px auto 32px;
 
     p {
       display: inline;

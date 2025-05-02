@@ -49,18 +49,18 @@ const StyledSupportHeading = styled(Heading)`
 const StyledSupportText = styled(Text)`
   font-size: 22px;
   line-height: 160%;
-  padding: 24px 0 56px;
+  margin: 24px 0 56px;
 
   @media screen and (max-width: 1024px) {
     font-size: 18px;
     line-height: 27px;
-    padding: 12px 0 56px;
+    margin: 12px 0 56px;
   }
 
   @media ${device.mobile} {
     font-size: 14px;
     line-height: 21px;
-    padding: 16px 0 28px;
+    margin: 16px 0 28px;
   }
 `;
 
@@ -78,7 +78,6 @@ const StyledSupportList = styled.div`
 
 const StyledSupportItem = styled.div`
   max-width: 544px;
-  padding-bottom: 9px;
 
   @media screen and (max-width: 1024px) {
     max-width: 328px;
@@ -100,14 +99,14 @@ const StyledSupportItem = styled.div`
 `;
 
 const StyledSupportItemHeading = styled(Heading)`
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 `;
 
 const StyledSupportItemText = styled(Text)`
-  padding-bottom: 28px;
+  margin-bottom: 28px;
 
   @media ${device.mobile} {
-    padding: 0 0 20px;
+    margin: 0 0 20px;
   }
 `;
 

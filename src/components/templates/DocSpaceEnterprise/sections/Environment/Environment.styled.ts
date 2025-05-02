@@ -3,18 +3,18 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
 const StyledEnvironmentHeading = styled(Heading)`
-  padding-bottom: 112px;
+  margin-bottom: 112px;
 
   @media ${device.tablet} {
-    padding-bottom: 64px;
+    margin-bottom: 64px;
   }
 
   @media ${device.tabletS} {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
   }
 
   @media ${device.mobile} {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
 `;
 

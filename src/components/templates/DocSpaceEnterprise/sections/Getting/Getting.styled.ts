@@ -8,12 +8,11 @@ import type { IStyledGettingItemTopProps } from "@src/components/templates/DocSp
 const getBgUrl = (props: IStyledGettingItemTopProps) => `url(${props.$bgUrl})`;
 
 const StyledGettingText = styled(Text)`
-  padding-top: 24px;
+  margin-top: 24px;
 
   @media ${device.mobile} {
     width: 90vw;
-    margin: 0 auto;
-    padding: 16px 0 0;
+    margin: 16px auto 0;
   }
 `;
 

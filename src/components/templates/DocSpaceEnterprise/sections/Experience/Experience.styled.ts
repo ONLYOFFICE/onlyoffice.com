@@ -18,14 +18,14 @@ const StyledExperienceWrapper = styled.div`
 const StyledExperienceLeft = styled.div``;
 
 const StyledExperienceHeading = styled(Heading)`
-  padding: 0 0 24px;
+  margin-bottom: 24px;
 `;
 
 const StyledExperienceText = styled(Text)`
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 
   @media ${device.tabletS} {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 `;
 

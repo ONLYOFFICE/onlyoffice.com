@@ -17,12 +17,11 @@ const StyledFeaturesHeading = styled(Heading)`
 
 const StyledFeaturesText = styled(Text)`
   line-height: 160%;
-  padding: 24px 0 0;
   max-width: 778px;
-  margin: 0 auto;
+  margin: 24px auto 0;
 
   @media ${device.mobile} {
-    padding: 16px 0 0;
+    margin: 16px auto 0;
   }
 `;
 
@@ -30,8 +29,6 @@ const StyledFeaturesList = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1120px;
-  margin: 0 auto;
   row-gap: 48px;
   column-gap: 32px;
   padding: 48px 0;
