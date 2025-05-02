@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
+import { Heading } from "@src/components/ui/Heading";
 
 const StyledScalable = styled(Section)`
   text-align: center;
@@ -9,21 +10,14 @@ const StyledScalable = styled(Section)`
     width: 90vw;
     margin: 0 auto;
   }
+`;
 
-  .title {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.33em;
+const StyledScalableHeading = styled(Heading)`
+  letter-spacing: -0.02em;
+  line-height: 1.33em;
 
-    @media ${device.tabletS} {
-      font-size: 30px;
-      letter-spacing: -0.01em;
-    }
-
-    @media ${device.mobile} {
-      font-size: 20px;
-    }
+  @media ${device.tabletS} {
+    letter-spacing: -0.01em;
   }
 `;
 
@@ -44,20 +38,6 @@ const StyledScalableTextWrapper = styled.div`
     display: block;
     padding: 16px 0 32px;
   }
-
-  .text {
-    font-size: 18px;
-    line-height: 160%;
-
-    @media ${device.tabletS} {
-      font-size: 16px;
-    }
-
-    @media ${device.mobile} {
-      display: inline;
-      font-size: 14px;
-    }
-  }
 `;
 
 const StyledScalableImgWrapper = styled.div`
@@ -75,4 +55,9 @@ const StyledScalableImgWrapper = styled.div`
   }
 `;
 
-export { StyledScalable, StyledScalableTextWrapper, StyledScalableImgWrapper };
+export {
+  StyledScalable,
+  StyledScalableHeading,
+  StyledScalableTextWrapper,
+  StyledScalableImgWrapper,
+};

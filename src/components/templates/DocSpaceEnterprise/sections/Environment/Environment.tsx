@@ -1,10 +1,13 @@
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 import { items } from "./data/items";
 
-import { StyledEnvironment, StyledEnvironmentList } from "./Environment.styled";
+import {
+  StyledEnvironment,
+  StyledEnvironmentHeading,
+  StyledEnvironmentList,
+} from "./Environment.styled";
 
 const Environment = () => {
   const { t } = useTranslation("docspace-enterprise");
@@ -12,10 +15,11 @@ const Environment = () => {
   return (
     <StyledEnvironment>
       <Container>
-        <Heading
+        <StyledEnvironmentHeading
           label={t("EnvironmentEnterpriseReady")}
           level={2}
-          className="title"
+          size={2}
+          textAlign="center"
         />
         <StyledEnvironmentList>
           {items.map((item, index) => (

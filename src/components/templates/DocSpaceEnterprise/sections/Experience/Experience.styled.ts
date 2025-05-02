@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 
 const StyledExperienceWrapper = styled.div`
   display: flex;
@@ -25,45 +27,34 @@ const StyledExperienceLeft = styled.div`
   @media ${device.mobile} {
     width: 90vw;
   }
+`;
 
-  .title {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.33em;
-    padding: 0 0 24px;
+const StyledExperienceHeading = styled(Heading)`
+  letter-spacing: -0.02em;
+  line-height: 1.33em;
+  padding: 0 0 24px;
 
-    @media ${device.tabletS} {
-      font-size: 20px;
-      letter-spacing: -0.01em;
-    }
-
-    @media ${device.mobile} {
-      text-align: center;
-      font-size: 18px;
-    }
+  @media ${device.tabletS} {
+    letter-spacing: -0.01em;
   }
 
-  .text {
-    font-size: 16px;
-    line-height: 150%;
-    padding-bottom: 40px;
-
-    @media ${device.tabletS} {
-      font-size: 14px;
-      padding-bottom: 24px;
-    }
+  @media ${device.mobile} {
+    text-align: center;
   }
+`;
 
-  .subtitle {
-    font-size: 14px;
-    line-height: 150%;
-    position: relative;
+const StyledExperienceText = styled(Text)`
+  line-height: 150%;
+  padding-bottom: 40px;
 
-    @media ${device.tabletS} {
-      font-size: 12px;
-    }
+  @media ${device.tabletS} {
+    padding-bottom: 24px;
   }
+`;
+
+const StyledExperienceSubtitle = styled(Text)`
+  line-height: 150%;
+  position: relative;
 `;
 
 const StyledExperienceSubtitleWrapper = styled.div`
@@ -108,6 +99,9 @@ const StyledExperienceRight = styled.div`
 export {
   StyledExperienceWrapper,
   StyledExperienceLeft,
+  StyledExperienceHeading,
+  StyledExperienceText,
+  StyledExperienceSubtitle,
   StyledExperienceSubtitleWrapper,
   StyledExperienceRight,
 };

@@ -1,6 +1,5 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";
@@ -13,6 +12,7 @@ import {
   StyledCostItem,
   StyledCostList,
   StyledCostFooter,
+  StyledCostHeading,
 } from "./Cost.styled";
 
 const Cost = () => {
@@ -20,16 +20,16 @@ const Cost = () => {
 
   return (
     <StyledCost>
-      <Container className="container" maxWidth="1120px">
+      <Container>
         <StyledCostContent>
           <StyledCostContentLeft>
-            <Heading className="title" level={2} label={t("CostTitle")}>
+            <StyledCostHeading level={2} size={2} label={t("CostTitle")}>
               <Trans
                 t={t}
                 i18nKey="CostTitle"
                 components={[<Text as="span" color="main" key={0} />]}
               />
-            </Heading>
+            </StyledCostHeading>
             <StyledCostList>
               {listItems.map((item) => (
                 <StyledCostItem key={item.text}>{t(item.text)}</StyledCostItem>
@@ -40,7 +40,7 @@ const Cost = () => {
         </StyledCostContent>
         <StyledCostFooter>
           {footerTexts.map((item) => (
-            <Text key={item.text} className="text">
+            <Text key={item.text} size={2} textAlign="center">
               <Trans
                 t={t}
                 i18nKey={item.text}

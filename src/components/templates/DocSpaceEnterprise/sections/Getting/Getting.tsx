@@ -1,60 +1,84 @@
 import { Trans, useTranslation } from "next-i18next";
+import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
 import {
-  StyledGetting,
+  StyledGettingHeading,
+  StyledGettingItemHeading,
+  StyledGettingItemLink,
+  StyledGettingItemText,
+  StyledGettingItemSubtitle,
   StyledGettingItemTop,
   StyledGettingList,
+  StyledGettingText,
+  StyledGettingFooter,
 } from "./Getting.styled";
 
 const Getting = () => {
   const { t } = useTranslation("docspace-enterprise");
 
   return (
-    <StyledGetting>
-      <Container className="container" mobileSpacing="0">
-        <Heading className="title" level={2} label={t("GettingStarted")} />
-        <Text className="text" label={t("GettingDeploy")} />
+    <Section>
+      <Container mobileSpacing="0">
+        <StyledGettingHeading
+          size={2}
+          level={2}
+          label={t("GettingStarted")}
+          textAlign="center"
+        />
+        <StyledGettingText
+          size={1}
+          label={t("GettingDeploy")}
+          textAlign="center"
+        />
         <StyledGettingList>
           {items.map((item) => (
-            <Link className="item" href={item.href} key={item.href}>
+            <StyledGettingItemLink href={item.href} key={item.href}>
               <StyledGettingItemTop $bgUrl={item.bgUrl} />
-              <Heading
-                className="item__title"
+              <StyledGettingItemHeading
                 level={4}
                 label={t(item.title)}
+                color="#333333"
+                size={4}
+                textAlign="center"
               />
-              <Text className="item__text" label={t(item.text)} />
-              <Text
-                className="item__subtitle"
+              <StyledGettingItemText
+                label={t(item.text)}
+                color="#666666"
+                size={2}
+                textAlign="center"
+              />
+              <StyledGettingItemSubtitle
                 color="main"
                 textDecoration="underline"
+                size={2}
                 label={t(item.subtitle)}
               />
-            </Link>
+            </StyledGettingItemLink>
           ))}
         </StyledGettingList>
-        <Text className="footer__text">
-          <Trans
-            t={t}
-            i18nKey="GettingFooterText"
-            components={[
-              <Link
-                key={0}
-                href="/download-community#docspace-community"
-                color="main"
-                textUnderline={true}
-                hover="underline-none"
-              />,
-            ]}
-          />
-        </Text>
+        <StyledGettingFooter>
+          <Text size={2} textAlign="center" color="#333333">
+            <Trans
+              t={t}
+              i18nKey="GettingFooterText"
+              components={[
+                <Link
+                  key={0}
+                  href="/download-community#docspace-community"
+                  color="main"
+                  textUnderline={true}
+                  hover="underline-none"
+                />,
+              ]}
+            />
+          </Text>
+        </StyledGettingFooter>
       </Container>
-    </StyledGetting>
+    </Section>
   );
 };
 

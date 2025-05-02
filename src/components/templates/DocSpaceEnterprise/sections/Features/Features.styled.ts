@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { FeatureItem } from "@src/components/widgets/FeatureItem";
 
 const StyledFeaturesHeading = styled(Heading)`
   letter-spacing: -0.02em;
@@ -41,43 +42,43 @@ const StyledFeaturesList = styled.div`
     flex-wrap: nowrap;
     align-items: center;
   }
+`;
 
-  .item {
-    max-width: 352px;
+const StyledFeaturesItem = styled(FeatureItem)`
+  max-width: 352px;
 
-    @media ${device.tabletS} {
-      &:nth-child(n + 3) {
-        max-width: 328px;
-
-        @media ${device.mobile} {
-          & {
-            max-width: 288px;
-          }
-        }
-      }
-    }
-
-    @media screen and (max-width: 1070px) {
-      &:nth-child(-n + 3) {
-        max-width: 208px;
-
-        @media ${device.mobile} {
-          & {
-            max-width: 288px;
-          }
-        }
-      }
-    }
-
-    p {
-      width: 100%;
-      font-size: 18px;
-      color: #333333;
-      line-height: 150%;
+  @media ${device.tabletS} {
+    &:nth-child(n + 3) {
+      max-width: 328px;
 
       @media ${device.mobile} {
-        font-size: 16px;
+        & {
+          max-width: 288px;
+        }
       }
+    }
+  }
+
+  @media screen and (max-width: 1070px) {
+    &:nth-child(-n + 3) {
+      max-width: 208px;
+
+      @media ${device.mobile} {
+        & {
+          max-width: 288px;
+        }
+      }
+    }
+  }
+
+  p {
+    width: 100%;
+    font-size: 18px;
+    color: #333333;
+    line-height: 150%;
+
+    @media ${device.mobile} {
+      font-size: 16px;
     }
   }
 `;
@@ -103,5 +104,6 @@ export {
   StyledFeaturesHeading,
   StyledFeaturesText,
   StyledFeaturesList,
+  StyledFeaturesItem,
   StyledFeatureLink,
 };

@@ -1,7 +1,4 @@
 import { Trans, useTranslation } from "next-i18next";
-import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
-import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
@@ -9,8 +6,13 @@ import { items } from "./data/items";
 import {
   StyledSupport,
   StyledSupportBg,
+  StyledSupportContainer,
+  StyledSupportHeading,
   StyledSupportItem,
+  StyledSupportItemHeading,
+  StyledSupportItemText,
   StyledSupportList,
+  StyledSupportText,
 } from "./Support.styled";
 
 const Support = () => {
@@ -24,27 +26,29 @@ const Support = () => {
       mobileSpacing={["0", "0"]}
     >
       <StyledSupportBg>
-        <Container className="container">
-          <Heading
-            className="title"
+        <StyledSupportContainer>
+          <StyledSupportHeading
             level={2}
             label={t("SupportTitleForEveryStep")}
+            color="#fff"
+            size={2}
           />
-          <Text className="text" label={t("SupportTextTheTeam")} />
+          <StyledSupportText label={t("SupportTextTheTeam")} color="#fff" />
           <StyledSupportList>
             {items.map((item) => (
               <StyledSupportItem key={item.heading}>
-                <img
-                  src={item.imageUrl}
-                  alt={item.heading}
-                  className="item__image"
-                />
-                <Heading
+                <img src={item.imageUrl} alt={item.heading} />
+                <StyledSupportItemHeading
                   level={5}
                   label={t(item.heading)}
-                  className="item__title"
+                  size={4}
+                  color="#fff"
                 />
-                <Text label={t(item.desc)} className="item__text">
+                <StyledSupportItemText
+                  label={t(item.desc)}
+                  size={1}
+                  color="#fff"
+                >
                   <Trans
                     t={t}
                     i18nKey={item.desc}
@@ -65,7 +69,7 @@ const Support = () => {
                       />,
                     ]}
                   />
-                </Text>
+                </StyledSupportItemText>
                 <Button
                   href={item.btn.href}
                   variant="quaternary"
@@ -76,7 +80,7 @@ const Support = () => {
               </StyledSupportItem>
             ))}
           </StyledSupportList>
-        </Container>
+        </StyledSupportContainer>
       </StyledSupportBg>
     </StyledSupport>
   );

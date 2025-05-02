@@ -1,15 +1,10 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
+import { Heading } from "@src/components/ui/Heading";
 
 const StyledCost = styled(Section)`
   background: #f9f9f9;
-
-  .container {
-    @media screen and (max-width: 1200px) {
-      width: 90vw;
-    }
-  }
 `;
 
 const StyledCostContent = styled.div`
@@ -52,21 +47,14 @@ const StyledCostContentLeft = styled.div`
     width: 100%;
     padding: 245px 16px 16px;
   }
+`;
 
-  .title {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.33em;
+const StyledCostHeading = styled(Heading)`
+  letter-spacing: -0.02em;
+  line-height: 1.33em;
 
-    @media ${device.tabletS} {
-      font-size: 30px;
-      letter-spacing: -0.01em;
-    }
-
-    @media ${device.mobile} {
-      font-size: 20px;
-    }
+  @media ${device.tabletS} {
+    letter-spacing: -0.01em;
   }
 `;
 
@@ -132,22 +120,12 @@ const StyledCostFooter = styled.div`
     height: 40px;
     margin: 0 auto 12px;
   }
-
-  .text {
-    font-weight: normal;
-    line-height: 160%;
-    font-size: 16px;
-    text-align: center;
-
-    @media ${device.tabletS} {
-      font-size: 14px;
-    }
-  }
 `;
 
 export {
   StyledCost,
   StyledCostContent,
+  StyledCostHeading,
   StyledCostContentLeft,
   StyledCostList,
   StyledCostItem,

@@ -1,11 +1,11 @@
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
 
 import {
   StyledScalable,
+  StyledScalableHeading,
   StyledScalableImgWrapper,
   StyledScalableTextWrapper,
 } from "./Scalable.styled";
@@ -16,14 +16,14 @@ const Scalable = () => {
   return (
     <StyledScalable>
       <Container desktopSpacing="0" tabletSpacing="0" mobileSpacing="0">
-        <Heading
+        <StyledScalableHeading
           label={t("ScalableTitleForBusinesses")}
           level={2}
-          className="title"
+          size={2}
         />
         <StyledScalableTextWrapper>
           {items.map((item) => (
-            <Text key={item.label} className="text" label={t(item.label)} />
+            <Text key={item.label} size={1} label={t(item.label)} />
           ))}
         </StyledScalableTextWrapper>
         <StyledScalableImgWrapper>

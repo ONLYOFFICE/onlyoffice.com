@@ -1,14 +1,15 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
-import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
 import {
+  StyledExperienceHeading,
   StyledExperienceLeft,
   StyledExperienceRight,
+  StyledExperienceSubtitle,
   StyledExperienceSubtitleWrapper,
+  StyledExperienceText,
   StyledExperienceWrapper,
 } from "./Experience.styled";
 
@@ -23,19 +24,19 @@ const Experience = () => {
       <Container maxWidth="1180px" tabletSpacing="0" mobileSpacing="0">
         <StyledExperienceWrapper>
           <StyledExperienceLeft>
-            <Heading
+            <StyledExperienceHeading
               level={2}
-              className="title"
+              size={2}
               color="#ffffff"
               label={t("ExperienceFlawless")}
             />
-            <Text
-              className="text"
+            <StyledExperienceText
               color="#ffffff"
+              size={2}
               label={t("ExperienceWithONLYOFFICE")}
             />
             <StyledExperienceSubtitleWrapper>
-              <Text className="subtitle" color="#ffffff">
+              <StyledExperienceSubtitle color="#ffffff" size={3}>
                 <Trans
                   t={t}
                   i18nKey={t("ExperienceFreeDesktopApps")}
@@ -54,7 +55,7 @@ const Experience = () => {
                     />,
                   ]}
                 />
-              </Text>
+              </StyledExperienceSubtitle>
             </StyledExperienceSubtitleWrapper>
           </StyledExperienceLeft>
           <StyledExperienceRight>

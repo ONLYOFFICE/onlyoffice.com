@@ -2,7 +2,6 @@ import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
-import { FeatureItem } from "@src/components/widgets/FeatureItem";
 import { items } from "./data/items";
 
 import {
@@ -10,6 +9,7 @@ import {
   StyledFeaturesText,
   StyledFeatureLink,
   StyledFeaturesList,
+  StyledFeaturesItem,
 } from "./Features.styled";
 
 const Features = () => {
@@ -30,8 +30,7 @@ const Features = () => {
         />
         <StyledFeaturesList>
           {items.map((item) => (
-            <FeatureItem
-              className="item"
+            <StyledFeaturesItem
               key={item.text}
               icon={{
                 url: item.icon.url,

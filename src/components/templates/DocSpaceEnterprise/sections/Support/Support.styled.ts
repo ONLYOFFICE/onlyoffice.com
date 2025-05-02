@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
+import { Container } from "@src/components/ui/Container";
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 
 const StyledSupport = styled(Section)`
   background: linear-gradient(136deg, #ffc671 0%, #ff7541 59.38%, #ff6f3d 100%);
@@ -15,70 +18,64 @@ const StyledSupportBg = styled.div`
   @media ${device.mobile} {
     background-size: 640px auto;
   }
+`;
 
-  .container {
-    padding: 112px 0 192px;
+const StyledSupportContainer = styled(Container)`
+  text-align: center;
+  padding: 112px 0 192px;
+
+  @media screen and (max-width: 1200px) {
+    width: 90vw;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 80px 0 88px;
+  }
+
+  @media ${device.mobile} {
+    padding: 48px 0 64px;
+  }
+`;
+
+const StyledSupportHeading = styled(Heading)`
+  line-height: 53px;
+  letter-spacing: -0.02em;
+
+  @media screen and (max-width: 1024px) {
+    line-height: 48px;
+  }
+
+  @media ${device.mobile} {
+    line-height: 32px;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("/images/templates/docspace-enterprise/support/logo.svg");
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto 24px;
     text-align: center;
+    width: 68px;
+    height: 64px;
+  }
+`;
 
-    @media screen and (max-width: 1200px) {
-      width: 90vw;
-    }
+const StyledSupportText = styled(Text)`
+  font-size: 22px;
+  line-height: 160%;
+  padding: 24px 0 56px;
 
-    @media screen and (max-width: 1024px) {
-      padding: 80px 0 88px;
-    }
-
-    @media ${device.mobile} {
-      padding: 48px 0 64px;
-    }
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 12px 0 56px;
   }
 
-  .title {
-    font-size: 40px;
-    line-height: 53px;
-    letter-spacing: -0.02em;
-    font-weight: 700;
-    color: #fff;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 36px;
-      line-height: 48px;
-    }
-
-    @media ${device.mobile} {
-      font-size: 24px;
-      line-height: 32px;
-    }
-
-    &::before {
-      content: "";
-      background-image: url("/images/templates/docspace-enterprise/support/logo.svg");
-      background-repeat: no-repeat;
-      display: block;
-      margin: 0 auto 24px;
-      text-align: center;
-      width: 68px;
-      height: 64px;
-    }
-  }
-
-  .text {
-    font-size: 22px;
-    line-height: 160%;
-    color: #fff;
-    padding: 24px 0 56px;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 18px;
-      line-height: 27px;
-      padding: 12px 0 56px;
-    }
-
-    @media ${device.mobile} {
-      font-size: 14px;
-      line-height: 21px;
-      padding: 16px 0 28px;
-    }
+  @media ${device.mobile} {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 16px 0 28px;
   }
 `;
 
@@ -102,47 +99,11 @@ const StyledSupportItem = styled.div`
     width: 328px;
   }
 
-  .item__image {
+  img {
     display: block;
     width: 64px;
     height: 64px;
     margin: 0 auto 12px;
-  }
-
-  .item__title {
-    padding-bottom: 12px;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.02em;
-    color: #fff;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 22px;
-      line-height: 30px;
-    }
-
-    @media ${device.mobile} {
-      font-size: 20px;
-      line-height: 27px;
-    }
-  }
-
-  .item__text {
-    font-size: 18px;
-    line-height: 27px;
-    padding-bottom: 28px;
-    color: #fff;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    @media ${device.mobile} {
-      font-size: 14px;
-      line-height: 21px;
-      padding: 0 0 20px;
-    }
   }
 
   .item__btn {
@@ -153,4 +114,27 @@ const StyledSupportItem = styled.div`
   }
 `;
 
-export { StyledSupport, StyledSupportBg, StyledSupportList, StyledSupportItem };
+const StyledSupportItemHeading = styled(Heading)`
+  padding-bottom: 12px;
+  letter-spacing: -0.02em;
+`;
+
+const StyledSupportItemText = styled(Text)`
+  padding-bottom: 28px;
+
+  @media ${device.mobile} {
+    padding: 0 0 20px;
+  }
+`;
+
+export {
+  StyledSupport,
+  StyledSupportBg,
+  StyledSupportContainer,
+  StyledSupportHeading,
+  StyledSupportText,
+  StyledSupportList,
+  StyledSupportItem,
+  StyledSupportItemHeading,
+  StyledSupportItemText,
+};
