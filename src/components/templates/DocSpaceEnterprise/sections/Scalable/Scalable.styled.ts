@@ -1,42 +1,26 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Section } from "@src/components/ui/Section";
-import { Heading } from "@src/components/ui/Heading";
-
-const StyledScalable = styled(Section)`
-  text-align: center;
-
-  @media ${device.tablet} {
-    width: 90vw;
-    margin: 0 auto;
-  }
-`;
-
-const StyledScalableHeading = styled(Heading)`
-  letter-spacing: -0.02em;
-  line-height: 1.33em;
-
-  @media ${device.tabletS} {
-    letter-spacing: -0.01em;
-  }
-`;
 
 const StyledScalableTextWrapper = styled.div`
-  max-width: 926px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 926px;
   margin: 0 auto;
   padding: 32px 0 84px;
-  text-align: center;
 
   @media ${device.tabletS} {
     padding-bottom: 58px;
   }
 
   @media ${device.mobile} {
-    display: block;
+    display: inline-block;
+    text-align: center;
     padding: 16px 0 32px;
+
+    p {
+      display: inline;
+    }
   }
 `;
 
@@ -55,9 +39,4 @@ const StyledScalableImgWrapper = styled.div`
   }
 `;
 
-export {
-  StyledScalable,
-  StyledScalableHeading,
-  StyledScalableTextWrapper,
-  StyledScalableImgWrapper,
-};
+export { StyledScalableTextWrapper, StyledScalableImgWrapper };

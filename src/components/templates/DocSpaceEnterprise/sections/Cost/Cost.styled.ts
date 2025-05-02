@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
-
-const StyledCost = styled(Section)`
-  background: #f9f9f9;
-`;
 
 const StyledCostContent = styled.div`
   background: #ffffff;
@@ -50,11 +45,14 @@ const StyledCostContentLeft = styled.div`
 `;
 
 const StyledCostHeading = styled(Heading)`
-  letter-spacing: -0.02em;
-  line-height: 1.33em;
-
   @media ${device.tabletS} {
-    letter-spacing: -0.01em;
+    font-size: 24px;
+    line-height: 133%;
+  }
+
+  @media ${device.mobile} {
+    font-size: 18px;
+    line-height: 133%;
   }
 `;
 
@@ -66,9 +64,13 @@ const StyledCostList = styled.ul`
   line-height: 1.6em;
   margin: 24px 0;
 
-  @media ${device.mobile} {
+  @media ${device.tabletS} {
     font-size: 14px;
     margin: 20px 0 12px;
+  }
+
+  @media ${device.mobile} {
+    font-size: 18px;
   }
 `;
 
@@ -123,7 +125,6 @@ const StyledCostFooter = styled.div`
 `;
 
 export {
-  StyledCost,
   StyledCostContent,
   StyledCostHeading,
   StyledCostContentLeft,

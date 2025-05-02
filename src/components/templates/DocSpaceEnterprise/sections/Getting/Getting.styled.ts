@@ -7,15 +7,6 @@ import type { IStyledGettingItemTopProps } from "@src/components/templates/DocSp
 
 const getBgUrl = (props: IStyledGettingItemTopProps) => `url(${props.$bgUrl})`;
 
-const StyledGettingHeading = styled(Heading)`
-  line-height: 1.33em;
-
-  @media ${device.mobile} {
-    width: 90vw;
-    margin: 0 auto;
-  }
-`;
-
 const StyledGettingText = styled(Text)`
   padding-top: 24px;
 
@@ -173,7 +164,6 @@ const StyledGettingFooter = styled.div`
 `;
 
 export {
-  StyledGettingHeading,
   StyledGettingText,
   StyledGettingList,
   StyledGettingItemLink,

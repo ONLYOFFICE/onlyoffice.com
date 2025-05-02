@@ -7,15 +7,25 @@ import {
   StyledHero,
   StyledHeroBtnWrapper,
   StyledHeroImgWrapper,
-  StyledHeroWrapper,
+  StyledHeroContainer,
 } from "./Hero.styled";
 
 const Hero = () => {
   const { t } = useTranslation("docspace-enterprise");
   return (
-    <StyledHero>
-      <StyledHeroWrapper>
-        <Heading level={1} label={t("OnlyOfficeDocSpaceEnterprise")} />
+    <StyledHero
+      desktopSpacing={["142px", "0"]}
+      tabletSpacing={["136px", "0"]}
+      tabletSmallSpacing={["136px", "0"]}
+      mobileSpacing={["96px", "0"]}
+    >
+      <StyledHeroContainer>
+        <Heading
+          level={1}
+          label={t("OnlyOfficeDocSpaceEnterprise")}
+          size={1}
+          textAlign="center"
+        />
         <Text label={t("TheEnterpriseScaledSpace")} />
         <StyledHeroBtnWrapper>
           <Button
@@ -31,7 +41,7 @@ const Hero = () => {
             variant="secondary"
           />
         </StyledHeroBtnWrapper>
-      </StyledHeroWrapper>
+      </StyledHeroContainer>
       <StyledHeroImgWrapper>
         <img
           src="/images/templates/docspace-enterprise/hero/main_picture.svg"

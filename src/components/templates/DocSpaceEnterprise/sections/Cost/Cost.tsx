@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from "next-i18next";
+import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
@@ -6,7 +7,6 @@ import { Link } from "@src/components/ui/Link";
 import { listItems, footerTexts } from "./data/items";
 
 import {
-  StyledCost,
   StyledCostContent,
   StyledCostContentLeft,
   StyledCostItem,
@@ -19,7 +19,7 @@ const Cost = () => {
   const { t } = useTranslation("docspace-enterprise");
 
   return (
-    <StyledCost>
+    <Section background="#F8F9F9">
       <Container>
         <StyledCostContent>
           <StyledCostContentLeft>
@@ -35,7 +35,12 @@ const Cost = () => {
                 <StyledCostItem key={item.text}>{t(item.text)}</StyledCostItem>
               ))}
             </StyledCostList>
-            <Button label={t("CostButtonPickYourPrice")} borderRadius="3px" />
+            <Button
+              as="a"
+              href="/download?from=docspace-enterprise-prices#docspace-enterprise"
+              label={t("CostButtonPickYourPrice")}
+              borderRadius="3px"
+            />
           </StyledCostContentLeft>
         </StyledCostContent>
         <StyledCostFooter>
@@ -65,7 +70,7 @@ const Cost = () => {
           ))}
         </StyledCostFooter>
       </Container>
-    </StyledCost>
+    </Section>
   );
 };
 

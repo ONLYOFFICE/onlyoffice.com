@@ -10,41 +10,18 @@ const StyledExperienceWrapper = styled.div`
   gap: 56px;
 
   @media ${device.tablet} {
-    width: 90vw;
-    margin: 0 auto;
-    gap: 3vw;
-  }
-
-  @media ${device.mobile} {
     flex-direction: column;
     gap: 32px;
   }
 `;
 
-const StyledExperienceLeft = styled.div`
-  width: 544px;
-
-  @media ${device.mobile} {
-    width: 90vw;
-  }
-`;
+const StyledExperienceLeft = styled.div``;
 
 const StyledExperienceHeading = styled(Heading)`
-  letter-spacing: -0.02em;
-  line-height: 1.33em;
   padding: 0 0 24px;
-
-  @media ${device.tabletS} {
-    letter-spacing: -0.01em;
-  }
-
-  @media ${device.mobile} {
-    text-align: center;
-  }
 `;
 
 const StyledExperienceText = styled(Text)`
-  line-height: 150%;
   padding-bottom: 40px;
 
   @media ${device.tabletS} {
@@ -53,7 +30,6 @@ const StyledExperienceText = styled(Text)`
 `;
 
 const StyledExperienceSubtitle = styled(Text)`
-  line-height: 150%;
   position: relative;
 `;
 
@@ -63,6 +39,7 @@ const StyledExperienceSubtitleWrapper = styled.div`
   border-top: 1px solid #666666;
   padding-top: 24px;
   position: relative;
+  align-items: center;
 
   @media ${device.tabletS} {
     padding-top: 12px;
@@ -77,18 +54,25 @@ const StyledExperienceSubtitleWrapper = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    flex-shrink: 0;
 
-    @media ${device.tablet} {
-      transform: translateY(-7px);
-    }
-
-    @media ${device.mobileS} {
-      transform: translateY(-9px);
+    @media ${device.mobile} {
+      width: 37px;
+      height: 37px;
     }
   }
 `;
 
 const StyledExperienceRight = styled.div`
+  width: 504px;
+  height: 290px;
+  flex-shrink: 0;
+
+  @media ${device.mobile} {
+    width: 288px;
+    height: 170px;
+  }
+
   img {
     width: 100%;
     height: 100%;

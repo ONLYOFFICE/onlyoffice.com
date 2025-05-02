@@ -1,30 +1,14 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Section } from "@src/components/ui/Section";
 
-const StyledWorldwide = styled(Section)`
+const StyledWorldwideWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  background-color: #f8f9f9;
-  padding-top: 0;
-
-  @media ${device.mobile} {
-    font-size: 14px;
-  }
 
   h2 {
-    color: #ff6f3d;
-    font-size: 40px;
-    line-height: 150%;
-    letter-spacing: -0.8px;
     font-weight: 800;
-
-    @media ${device.mobile} {
-      font-size: 24px;
-    }
   }
 `;
 
@@ -46,4 +30,4 @@ const StyledWorldwideImgWrapper = styled.div`
   }
 `;
 
-export { StyledWorldwide, StyledWorldwideImgWrapper };
+export { StyledWorldwideWrapper, StyledWorldwideImgWrapper };

@@ -1,12 +1,12 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
 import {
-  StyledGettingHeading,
   StyledGettingItemHeading,
   StyledGettingItemLink,
   StyledGettingItemText,
@@ -23,7 +23,7 @@ const Getting = () => {
   return (
     <Section>
       <Container mobileSpacing="0">
-        <StyledGettingHeading
+        <Heading
           size={2}
           level={2}
           label={t("GettingStarted")}
@@ -36,7 +36,7 @@ const Getting = () => {
         />
         <StyledGettingList>
           {items.map((item) => (
-            <StyledGettingItemLink href={item.href} key={item.href}>
+            <StyledGettingItemLink href={item.href} key={item.title}>
               <StyledGettingItemTop $bgUrl={item.bgUrl} />
               <StyledGettingItemHeading
                 level={4}

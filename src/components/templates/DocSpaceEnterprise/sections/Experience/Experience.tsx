@@ -16,17 +16,13 @@ import {
 const Experience = () => {
   const { t } = useTranslation("docspace-enterprise");
   return (
-    <Section
-      background="#333333"
-      tabletSpacing={["112px", "112px"]}
-      mobileSpacing={["64px", "64px"]}
-    >
-      <Container maxWidth="1180px" tabletSpacing="0" mobileSpacing="0">
+    <Section background="#333333">
+      <Container maxWidth="1180px">
         <StyledExperienceWrapper>
           <StyledExperienceLeft>
             <StyledExperienceHeading
               level={2}
-              size={2}
+              size={3}
               color="#ffffff"
               label={t("ExperienceFlawless")}
             />

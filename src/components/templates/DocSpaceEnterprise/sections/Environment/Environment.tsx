@@ -1,10 +1,10 @@
 import { useTranslation } from "next-i18next";
+import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 import { items } from "./data/items";
 
 import {
-  StyledEnvironment,
   StyledEnvironmentHeading,
   StyledEnvironmentList,
 } from "./Environment.styled";
@@ -13,7 +13,7 @@ const Environment = () => {
   const { t } = useTranslation("docspace-enterprise");
 
   return (
-    <StyledEnvironment>
+    <Section background="#f8f9f9">
       <Container>
         <StyledEnvironmentHeading
           label={t("EnvironmentEnterpriseReady")}
@@ -33,12 +33,15 @@ const Environment = () => {
                 href: link.href,
                 label: t(link.label),
               }))}
-              position={{ desktop: index % 2 === 0 ? "right" : "left" }}
+              position={{
+                desktop: index % 2 === 0 ? "right" : "left",
+                mobile: "top",
+              }}
             />
           ))}
         </StyledEnvironmentList>
       </Container>
-    </StyledEnvironment>
+    </Section>
   );
 };
 

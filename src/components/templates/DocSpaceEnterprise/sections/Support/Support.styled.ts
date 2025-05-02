@@ -24,10 +24,6 @@ const StyledSupportContainer = styled(Container)`
   text-align: center;
   padding: 112px 0 192px;
 
-  @media screen and (max-width: 1200px) {
-    width: 90vw;
-  }
-
   @media screen and (max-width: 1024px) {
     padding: 80px 0 88px;
   }
@@ -38,17 +34,6 @@ const StyledSupportContainer = styled(Container)`
 `;
 
 const StyledSupportHeading = styled(Heading)`
-  line-height: 53px;
-  letter-spacing: -0.02em;
-
-  @media screen and (max-width: 1024px) {
-    line-height: 48px;
-  }
-
-  @media ${device.mobile} {
-    line-height: 32px;
-  }
-
   &::before {
     content: "";
     background-image: url("/images/templates/docspace-enterprise/support/logo.svg");
@@ -92,11 +77,11 @@ const StyledSupportList = styled.div`
 `;
 
 const StyledSupportItem = styled.div`
-  width: 544px;
+  max-width: 544px;
   padding-bottom: 9px;
 
   @media screen and (max-width: 1024px) {
-    width: 328px;
+    max-width: 328px;
   }
 
   img {
@@ -116,7 +101,6 @@ const StyledSupportItem = styled.div`
 
 const StyledSupportItemHeading = styled(Heading)`
   padding-bottom: 12px;
-  letter-spacing: -0.02em;
 `;
 
 const StyledSupportItemText = styled(Text)`

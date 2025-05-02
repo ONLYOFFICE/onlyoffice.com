@@ -15,7 +15,10 @@ import {
 const Features = () => {
   const { t } = useTranslation("docspace-enterprise");
   return (
-    <Section tabletSmallSpacing={["88px", "88px"]}>
+    <Section
+      tabletSmallSpacing={["88px", "88px"]}
+      mobileSpacing={["48px", "52px"]}
+    >
       <Container>
         <StyledFeaturesHeading
           level={2}

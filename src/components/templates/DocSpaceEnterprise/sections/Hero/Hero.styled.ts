@@ -1,6 +1,7 @@
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 import { Section } from "@src/components/ui/Section";
+import { Container } from "@src/components/ui/Container";
 
 const StyledHero = styled(Section)`
   position: relative;
@@ -11,6 +12,7 @@ const StyledHero = styled(Section)`
   background-position: 65% 0px;
   background-color: #f8f9f9;
   margin-top: -72px;
+  padding-bottom: 0;
 
   @media ${device.tablet} {
     margin-top: -64px;
@@ -22,26 +24,16 @@ const StyledHero = styled(Section)`
   }
 `;
 
-const StyledHeroWrapper = styled.div`
-  @media ${device.mobile} {
-    width: 90vw;
-    margin: 0 auto;
-  }
-
+const StyledHeroContainer = styled(Container)`
   h1 {
-    font-size: 48px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.33em;
-    text-align: center;
-
     @media ${device.tabletS} {
       font-size: 36px;
-      letter-spacing: -0.02em;
+      line-height: 133%;
     }
 
-    @media ${device.mobile} {
+    @media ${device.tabletS} {
       font-size: 28px;
+      line-height: 133%;
     }
 
     @media ${device.mobileS} {
@@ -114,7 +106,7 @@ const StyledHeroImgWrapper = styled.div`
 
 export {
   StyledHero,
-  StyledHeroWrapper,
+  StyledHeroContainer,
   StyledHeroBtnWrapper,
   StyledHeroImgWrapper,
 };
