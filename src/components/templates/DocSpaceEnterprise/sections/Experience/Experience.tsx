@@ -54,12 +54,7 @@ const Experience = () => {
               </StyledExperienceSubtitle>
             </StyledExperienceSubtitleWrapper>
           </StyledExperienceLeft>
-          <StyledExperienceRight>
-            <img
-              src="/images/templates/docspace-enterprise/experience/experience-image.svg"
-              alt="experience image"
-            />
-          </StyledExperienceRight>
+          <StyledExperienceRight />
         </StyledExperienceWrapper>
       </Container>
     </Section>

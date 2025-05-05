@@ -67,16 +67,13 @@ const StyledExperienceRight = styled.div`
   width: 504px;
   height: 290px;
   flex-shrink: 0;
+  background-image: url("/images/templates/docspace-enterprise/experience/experience-image.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media ${device.mobile} {
     width: 288px;
     height: 170px;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
   }
 `;
 
