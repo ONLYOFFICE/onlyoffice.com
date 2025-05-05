@@ -71,23 +71,17 @@ const StyledSupportList = styled.div`
   column-gap: 32px;
   row-gap: 40px;
 
+  .item {
+    &__btn {
+      background-color: transparent;
+      border: 1px solid #ffffff;
+      color: #fff;
+      border-radius: 3px;
+    }
+  }
+
   @media ${device.mobile} {
     row-gap: 20px;
-  }
-`;
-
-const StyledSupportItem = styled.div`
-  max-width: 544px;
-
-  @media ${device.tablet} {
-    max-width: 328px;
-  }
-
-  .item__btn {
-    background-color: transparent;
-    border: 1px solid #ffffff;
-    color: #fff;
-    border-radius: 3px;
   }
 `;
 
@@ -100,18 +94,6 @@ const StyledSupportItemIcon = styled.div<{ $iconUrl: string }>`
   background-repeat: no-repeat;
 `;
 
-const StyledSupportItemHeading = styled(Heading)`
-  margin-bottom: 12px;
-`;
-
-const StyledSupportItemText = styled(Text)`
-  margin-bottom: 28px;
-
-  @media ${device.mobile} {
-    margin: 0 0 20px;
-  }
-`;
-
 export {
   StyledSupport,
   StyledSupportBg,
@@ -120,7 +102,4 @@ export {
   StyledSupportHeading,
   StyledSupportText,
   StyledSupportList,
-  StyledSupportItem,
-  StyledSupportItemHeading,
-  StyledSupportItemText,
 };

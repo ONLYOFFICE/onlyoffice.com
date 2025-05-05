@@ -3,6 +3,8 @@ import { IFeatureButtonItem } from "./FeatureButtonItem.types";
 import {
   StyledFeatureButtonItem,
   StyledFeatureButtonItemIcon,
+  StyledFeatureButtonItemHeading,
+  StyledFeatureButtonItemText,
 } from "./FeatureButtonItem.styled";
 
 const FeatureButtonItem = ({
@@ -16,8 +18,12 @@ const FeatureButtonItem = ({
   return (
     <StyledFeatureButtonItem id={id} className={className}>
       <StyledFeatureButtonItemIcon $iconUrl={iconUrl} />
-      {heading}
-      {text}
+      <StyledFeatureButtonItemHeading level={5} size={4} color="#fff">
+        {heading}
+      </StyledFeatureButtonItemHeading>
+      <StyledFeatureButtonItemText size={1} color="#fff">
+        {text}
+      </StyledFeatureButtonItemText>
       {button}
     </StyledFeatureButtonItem>
   );
