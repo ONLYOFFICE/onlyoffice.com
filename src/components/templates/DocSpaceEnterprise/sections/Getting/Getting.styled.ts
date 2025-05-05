@@ -4,12 +4,30 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
+const StyledGettingHeading = styled(Heading)`
+  @media ${device.tabletS} {
+    font-size: 30px;
+    line-height: 133%;
+  }
+
+  @media ${device.mobile} {
+    font-size: 24px;
+    line-height: 133%;
+  }
+`;
+
 const StyledGettingText = styled(Text)`
   margin-top: 24px;
+
+  @media ${device.tabletS} {
+    font-size: 16px;
+    line-height: 150%;
+  }
 
   @media ${device.mobile} {
     width: 90vw;
     margin: 16px auto 0;
+    font-size: 14px;
   }
 `;
 
@@ -46,6 +64,10 @@ const StyledGettingItemLink = styled(Link)`
   flex-shrink: 0;
 
   @media ${device.tablet} {
+    width: 284px;
+  }
+
+  @media ${device.tabletS} {
     width: 208px;
   }
 
@@ -68,6 +90,8 @@ const StyledGettingItemHeading = styled(Heading)`
 
   @media ${device.tabletS} {
     padding: 16px 16px 12px;
+    font-size: 18px;
+    line-height: 133%;
   }
 `;
 
@@ -76,6 +100,8 @@ const StyledGettingItemText = styled(Text)`
 
   @media ${device.tabletS} {
     padding: 0 16px 12px;
+    font-size: 13px;
+    line-height: 150%;
   }
 `;
 
@@ -86,6 +112,11 @@ const StyledGettingItemSubtitle = styled(Text)`
 
   @media ${device.tablet} {
     margin: 0 auto 16px;
+  }
+
+  @media ${device.tabletS} {
+    font-size: 13px;
+    line-height: 160%;
   }
 
   &::after {
@@ -135,10 +166,28 @@ const StyledGettingItemTop = styled.div<{ $bgUrl: string }>`
   }
 `;
 
+const StyledGettingItemContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 160px);
+
+  @media ${device.tabletS} {
+    height: calc(100% - 98px);
+  }
+`;
+
 const StyledGettingFooter = styled.div`
   padding: 24px 16px;
   border: 1px solid #e2e2e2;
   border-radius: 3px;
+
+  p {
+    @media ${device.tabletS} {
+      font-size: 14px;
+      line-height: 160%;
+    }
+  }
 
   @media ${device.mobile} {
     width: calc(100vw - 33px);
@@ -149,6 +198,7 @@ const StyledGettingFooter = styled.div`
 `;
 
 export {
+  StyledGettingHeading,
   StyledGettingText,
   StyledGettingList,
   StyledGettingItemLink,
@@ -156,5 +206,6 @@ export {
   StyledGettingItemText,
   StyledGettingItemSubtitle,
   StyledGettingItemTop,
+  StyledGettingItemContent,
   StyledGettingFooter,
 };

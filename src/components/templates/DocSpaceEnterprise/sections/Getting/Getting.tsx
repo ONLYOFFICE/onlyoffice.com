@@ -7,6 +7,7 @@ import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
 import {
+  StyledGettingHeading,
   StyledGettingItemHeading,
   StyledGettingItemLink,
   StyledGettingItemText,
@@ -15,6 +16,7 @@ import {
   StyledGettingList,
   StyledGettingText,
   StyledGettingFooter,
+  StyledGettingItemContent,
 } from "./Getting.styled";
 
 const Getting = () => {
@@ -23,7 +25,7 @@ const Getting = () => {
   return (
     <Section>
       <Container mobileSpacing="0">
-        <Heading
+        <StyledGettingHeading
           size={2}
           level={2}
           label={t("GettingStarted")}
@@ -38,25 +40,29 @@ const Getting = () => {
           {items.map((item) => (
             <StyledGettingItemLink href={item.href} key={item.title}>
               <StyledGettingItemTop $bgUrl={item.bgUrl} />
-              <StyledGettingItemHeading
-                level={4}
-                label={t(item.title)}
-                color="#333333"
-                size={4}
-                textAlign="center"
-              />
-              <StyledGettingItemText
-                label={t(item.text)}
-                color="#666666"
-                size={2}
-                textAlign="center"
-              />
-              <StyledGettingItemSubtitle
-                color="main"
-                textDecoration="underline"
-                size={2}
-                label={t(item.subtitle)}
-              />
+              <StyledGettingItemContent>
+                <div>
+                  <StyledGettingItemHeading
+                    level={4}
+                    label={t(item.title)}
+                    color="#333333"
+                    size={4}
+                    textAlign="center"
+                  />
+                  <StyledGettingItemText
+                    label={t(item.text)}
+                    color="#666666"
+                    size={2}
+                    textAlign="center"
+                  />
+                </div>
+                <StyledGettingItemSubtitle
+                  color="main"
+                  textDecoration="underline"
+                  size={2}
+                  label={t(item.subtitle)}
+                />
+              </StyledGettingItemContent>
             </StyledGettingItemLink>
           ))}
         </StyledGettingList>
