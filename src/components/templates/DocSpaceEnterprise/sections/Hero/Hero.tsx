@@ -42,12 +42,7 @@ const Hero = () => {
           />
         </StyledHeroBtnWrapper>
       </StyledHeroContainer>
-      <StyledHeroImgWrapper>
-        <img
-          src="/images/templates/docspace-enterprise/hero/main_picture.svg"
-          alt={t("HeroMainPictureAltText")}
-        />
-      </StyledHeroImgWrapper>
+      <StyledHeroImgWrapper $imageUrl={t("HeroImageUrl")} />
     </StyledHero>
   );
 };

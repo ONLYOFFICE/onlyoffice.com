@@ -70,37 +70,20 @@ const StyledHeroBtnWrapper = styled.div`
   }
 `;
 
-const StyledHeroImgWrapper = styled.div`
-  width: 93.75vw;
-  margin: 0px auto;
-  overflow: hidden;
+const StyledHeroImgWrapper = styled.div<{ $imageUrl: string }>`
+  background-image: ${(props) => `url(${props.$imageUrl})`};
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  height: 576px;
 
-  @media screen and (max-width: 1680px) {
-    width: 100%;
+  @media ${device.tablet} {
+    height: 380px;
+    background-position-x: 56%;
   }
 
   @media ${device.tabletS} {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media ${device.mobile} {
-    margin: 0 auto;
-  }
-
-  img {
-    width: 100%;
-    height: fit-content;
-
-    @media ${device.tabletS} {
-      width: 140%;
-    }
-
-    @media ${device.mobile} {
-      width: 145%;
-    }
+    height: 50vw;
   }
 `;
 
