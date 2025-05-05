@@ -1,2 +1,2 @@
 export { FeatureButtonItem } from "./FeatureButtonItem";
-// export type { IFeatureItemButton } from "./FeatureItemButton.types";
+export type { IFeatureButtonItem } from "./FeatureButtonItem.types";
