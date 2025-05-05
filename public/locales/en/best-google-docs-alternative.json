@@ -24,8 +24,12 @@
   "AIHelper": "AI helper",
   "AIHelperText": "Make use of the AI assistant plugin to boost work with your texts: run word analysis and explore the meaning of unknown words, generate passages, images and keywords, summarize and translate stories, find synonyms.",
 
+  "PresentationTitle": "Watch <0>this presentation</0> to see the difference between office suites:",
+
   "ReadTheseArticles": "Read this article to compare Google Docs and ONLYOFFICE Docs",
   "OOAndGoogleDocs": "ONLYOFFICE and Google Docs: four main differences",
   "OOAndGoogleDocsLink": "https://www.onlyoffice.com/blog/2019/01/onlyoffice-and-google-docs-four-main-differences",
-  "OOAndGoogleDocsText": "Both us and Google have great online editors, but we have a very different approach to making them great. Spoiler: we will talk about privacy, cross-browser compatibility, and really big files."
+  "OOAndGoogleDocsText": "Both us and Google have great online editors, but we have a very different approach to making them great. Spoiler: we will talk about privacy, cross-browser compatibility, and really big files.",
+
+  "WhatWentWrong": "What went wrong in Google Docs? <0>Click here</0> to see details"
 }

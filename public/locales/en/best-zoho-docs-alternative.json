@@ -20,5 +20,8 @@
   "AIHelper": "AI helper",
   "AIHelperText": "Make use of the AI assistant plugin to boost work with your texts: run word analysis and explore the meaning of unknown words, generate passages, images and keywords, summarize and translate stories, find synonyms.",
   "Security": "Security",
-  "SecurityText": "ONLYOFFICE can be deployed on your own server what gives you full control over your data. Multiple security tools and services let you protect yourself from any threats. Private Rooms allow storing, editing, and co-authoring your docs in always-encrypted form."
+  "SecurityText": "ONLYOFFICE can be deployed on your own server what gives you full control over your data. Multiple security tools and services let you protect yourself from any threats. Private Rooms allow storing, editing, and co-authoring your docs in always-encrypted form.",
+
+  "PresentationTitle": "Watch <0>this presentation</0> to see the difference between office suites:",
+  "WhatWentWrong": "What went wrong in Zoho Docs? <0>Click here</0> to see details"
 }
