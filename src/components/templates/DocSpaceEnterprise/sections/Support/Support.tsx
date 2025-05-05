@@ -10,6 +10,7 @@ import {
   StyledSupportHeading,
   StyledSupportItem,
   StyledSupportItemHeading,
+  StyledSupportItemIcon,
   StyledSupportItemText,
   StyledSupportList,
   StyledSupportText,
@@ -37,7 +38,7 @@ const Support = () => {
           <StyledSupportList>
             {items.map((item) => (
               <StyledSupportItem key={item.heading}>
-                <img src={item.imageUrl} alt={item.heading} />
+                <StyledSupportItemIcon $iconUrl={item.imageUrl} />
                 <StyledSupportItemHeading
                   level={5}
                   label={t(item.heading)}

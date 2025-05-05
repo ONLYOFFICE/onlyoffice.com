@@ -24,7 +24,7 @@ const StyledSupportContainer = styled(Container)`
   text-align: center;
   padding: 112px 0 192px;
 
-  @media screen and (max-width: 1024px) {
+  @media ${device.tablet} {
     padding: 80px 0 88px;
   }
 
@@ -51,7 +51,7 @@ const StyledSupportText = styled(Text)`
   line-height: 160%;
   margin: 24px 0 56px;
 
-  @media screen and (max-width: 1024px) {
+  @media ${device.tablet} {
     font-size: 18px;
     line-height: 27px;
     margin: 12px 0 56px;
@@ -79,15 +79,8 @@ const StyledSupportList = styled.div`
 const StyledSupportItem = styled.div`
   max-width: 544px;
 
-  @media screen and (max-width: 1024px) {
+  @media ${device.tablet} {
     max-width: 328px;
-  }
-
-  img {
-    display: block;
-    width: 64px;
-    height: 64px;
-    margin: 0 auto 12px;
   }
 
   .item__btn {
@@ -96,6 +89,15 @@ const StyledSupportItem = styled.div`
     color: #fff;
     border-radius: 3px;
   }
+`;
+
+const StyledSupportItemIcon = styled.div<{ $iconUrl: string }>`
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 12px;
+  background-image: ${(props) => `url(${props.$iconUrl})`};
+  background-size: contain;
+  background-repeat: no-repeat;
 `;
 
 const StyledSupportItemHeading = styled(Heading)`
@@ -114,6 +116,7 @@ export {
   StyledSupport,
   StyledSupportBg,
   StyledSupportContainer,
+  StyledSupportItemIcon,
   StyledSupportHeading,
   StyledSupportText,
   StyledSupportList,
