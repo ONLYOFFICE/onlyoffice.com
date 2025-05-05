@@ -24,17 +24,18 @@ const StyledScalableTextWrapper = styled.div`
 `;
 
 const StyledScalableImgWrapper = styled.div`
-  max-width: 736px;
-  margin: 0 auto;
+  height: 460px;
+  background-image: url("/images/templates/docspace-enterprise/scalable/main_picture.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 
   @media ${device.tablet} {
-    width: 90vw;
+    height: 440px;
   }
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  @media ${device.mobileS} {
+    height: 205px;
   }
 `;
 

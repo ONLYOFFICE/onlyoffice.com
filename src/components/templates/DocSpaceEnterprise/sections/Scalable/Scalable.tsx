@@ -32,12 +32,7 @@ const Scalable = () => {
             />
           ))}
         </StyledScalableTextWrapper>
-        <StyledScalableImgWrapper>
-          <img
-            src="/images/templates/docspace-enterprise/scalable/main_picture.svg"
-            alt={t("ScalableImageAltText")}
-          />
-        </StyledScalableImgWrapper>
+        <StyledScalableImgWrapper />
       </Container>
     </Section>
   );
