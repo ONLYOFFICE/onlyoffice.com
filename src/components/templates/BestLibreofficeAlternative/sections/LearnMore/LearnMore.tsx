@@ -4,10 +4,10 @@ import { Section } from "@src/components/ui/Section";
 import {
   StyledBlogCardImg,
   StyledBlogCardLink,
-  StyledBlogCardText,
   StyledBlogCardWrapper,
 } from "./LearnMore.styled";
 import { items } from "./data/items";
+import { Text } from "@src/components/ui/Text";
 
 const LearnMore = () => {
   const { t } = useTranslation("best-libreoffice-alternative");
@@ -27,7 +27,7 @@ const LearnMore = () => {
                 textUnderline
                 hover="underline-none"
               />
-              <StyledBlogCardText label={t(String(item.text))} />
+              <Text size={2} label={t(String(item.text))} />
             </div>
           ))}
         </StyledBlogCardWrapper>

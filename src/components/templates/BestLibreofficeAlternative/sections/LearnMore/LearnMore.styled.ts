@@ -1,5 +1,4 @@
 import { Link } from "@src/components/ui/Link";
-import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
@@ -21,7 +20,11 @@ const StyledBlogCardWrapper = styled.div`
 
 const StyledBlogCardImg = styled.img`
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+
+  @media ${device.mobile} {
+    margin-bottom: 24px;
+  }
 `;
 
 const StyledBlogCardLink = styled(Link)`
@@ -29,18 +32,11 @@ const StyledBlogCardLink = styled(Link)`
   font-size: 18px;
   line-height: 29px;
   margin-bottom: 16px;
-`;
 
-const StyledBlogCardText = styled(Text)`
   @media ${device.tabletS} {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 22px;
   }
 `;
 
-export {
-  StyledBlogCardWrapper,
-  StyledBlogCardImg,
-  StyledBlogCardLink,
-  StyledBlogCardText,
-};
+export { StyledBlogCardWrapper, StyledBlogCardImg, StyledBlogCardLink };

@@ -1,23 +1,19 @@
-interface IComparisonLogo {
-  src: string;
-  alt: string;
-  className?: string;
-}
+import { IComparisonLogo } from "../Hero.types";
 
 export const comparisonLogos: IComparisonLogo[] = [
   {
     src: "/images/templates/best-libreoffice-alternative/hero/onlyoffice.svg",
     alt: "ONLYOFFICE",
-    className: "onlyoffice",
+    type: "onlyoffice",
   },
   {
     src: "/images/templates/best-libreoffice-alternative/hero/versus.svg",
     alt: "Versus",
-    className: "versus",
+    type: "versus",
   },
   {
     src: "/images/templates/best-libreoffice-alternative/hero/libreoffice.svg",
     alt: "Adobe",
-    className: "google-docs",
+    type: "libreoffice",
   },
 ];

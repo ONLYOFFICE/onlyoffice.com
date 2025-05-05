@@ -38,6 +38,9 @@ export async function getStaticProps({ locale }: ILocale) {
       ...(await serverSideTranslations(locale, [
         "common",
         "best-google-docs-alternative",
+        "BestAlternativeCompatibility",
+        "BestAlternativeCompare",
+        "BestAlternativeGetStarted"
       ])),
       locale,
     },

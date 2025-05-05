@@ -24,38 +24,8 @@
   "AIHelper": "AI helper",
   "AIHelperText": "Make use of the AI assistant plugin to boost work with your texts: run word analysis and explore the meaning of unknown words, generate passages, images and keywords, summarize and translate stories, find synonyms.",
 
-  "PresentationTitle": "<0>Watch this presentation</0> to see the difference between office suites:",
-
   "ReadTheseArticles": "Read this article to compare Google Docs and ONLYOFFICE Docs",
   "OOAndGoogleDocs": "ONLYOFFICE and Google Docs: four main differences",
   "OOAndGoogleDocsLink": "https://www.onlyoffice.com/blog/2019/01/onlyoffice-and-google-docs-four-main-differences",
-  "OOAndGoogleDocsText": "Both us and Google have great online editors, but we have a very different approach to making them great. Spoiler: we will talk about privacy, cross-browser compatibility, and really big files.",
-
-  "CheckOutTheCompatibility": "Check out the compatibility with MS Office formats",
-  "CheckOutTheCompatibilityText": "We saved the <0>docx file</0> and <1>xlsx file</1> created by Microsoft in PDF using other suites. Here's the result.",
-  "Documents": "Documents (.docx)",
-  "Spreadsheets": "Spreadsheets (.xlsx)",
-  "WhatWentWrong": "What went wrong in Google Docs? <0>Click here</0> to see details",
-
-  "StillNotConvinced": "Still not convinced? Compare the editors yourself!",
-  "StillNotConvincedText": "Download the <0>docx</0> and <1>xlsx</1> files and try to edit them using Google Docs and ONLYOFFICE Docs.",
-  "StillNotConvincedLink": "Read instruction how to compare editors",
-  "TryItInTheCloud": "TRY IT IN THE CLOUD",
-
-  "GetStartedAndChooseWhereToWork": "Get started and choose where to work",
-  "InOODocSpace": "In ONLYOFFICE DocSpace",
-  "CreateRoomsWithinYourSecureDocSpace": "Create rooms within your secure DocSpace, invite people, view, edit, and collaborate on all kinds of documents from any desktop or mobile device.",
-  "StartWithYourFreeAccount": "Start with your free account",
-  "InThePlatformYouUse": "In the platform you use",
-  "ConnectDocsToEditDocuments": "Connect Docs to edit documents directly from your app. <0>40+ ready integrations</0>: Box, Moodle, Nextcloud, Odoo, Wordpress, etc.",
-  "GetDocsNow": "Get Docs now",
-  "InThePlatformYouBuild": "In the platform you build",
-  "IntegrateDocsIntoYourService": "Integrate Docs into your service to provide powerful document-editing and building capabilities to your customers under your brand.",
-  "LearnMore": "Learn more",
-  "FromYourPC": "From your PC",
-  "EditDocsOfflineWithFreeOfficeApps": "Edit docs offline with free office apps for Windows, Linux, and macOS",
-  "DownloadNow": "Download now",
-  "FromYourMobileDevices": "From your mobile devices",
-  "WorkOnDocumentsOnTheGoWithFreeApps": "Work on documents on the go with free apps for iOS and Android devices",
-  "InstallNow": "Install now"
+  "OOAndGoogleDocsText": "Both us and Google have great online editors, but we have a very different approach to making them great. Spoiler: we will talk about privacy, cross-browser compatibility, and really big files."
 }

@@ -20,40 +20,10 @@
   "AIHelper": "AI helper",
   "AIHelperText": "Make use of the AI assistant plugin to boost work with your texts: run word analysis and explore the meaning of unknown words, generate passages, images and keywords, summarize and translate stories, find synonyms.",
 
-  "PresentationTitle": "Watch <0>this presentation</0> to see the difference between office suites:",
-
   "OODocsVsLibreOfficeVsOpenOffice": "ONLYOFFICE vs LibreOffice vs OpenOffice [Tested Side By Side]",
   "OODocsVsLibreOfficeVsOpenOfficeLink": "https://windowsreport.com/onlyoffice-libreoffice-openoffice-comparison/?from=comparison",
   "OODocsVsLibreOfficeVsOpenOfficeText": "Windows Report presents Microsoft Office alternatives compared side by side - including ONLYOFFICE, LibreOffice and OpenOffice. Windows Report is a highly trusted web resource for windows-related products & services, including news and tips for tech users.",
   "OODocsVsLibreOffice": "ONLYOFFICE vs LibreOffice: what to choose when you decide to ditch Microsoft",
   "OODocsVsLibreOfficeLink": "https://www.onlyoffice.com/blog/2018/08/onlyoffice-vs-libreoffice-what-to-choose-when-you-decide-to-ditch-microsoft?from=comparison",
-  "OODocsVsLibreOfficeText": "Yes, Microsoft Office is cool but one day it will become burdensome for your budget. Or you may want to give it up following your rebellious open source spirit. No matter what your reasoning is, you’ll need a good replacement. So… ONLYOFFICE or LibreOffice?",
-
-  "CheckOutTheCompatibility": "Check out the compatibility with MS Office formats",
-  "CheckOutTheCompatibilityText": "We saved the <0>docx file</0> and <1>xlsx file</1> created by Microsoft in PDF using other suites. Here's the result.",
-  "Documents": "Documents (.docx)",
-  "Spreadsheets": "Spreadsheets (.xlsx)",
-  "WhatWentWrong": "What went wrong in LibreOffice? <0>Click here</0> to see details",
-
-  "StillNotConvinced": "Still not convinced? Compare the editors yourself!",
-  "StillNotConvincedText": "Download the <0>docx</0> and <1>xlsx</1> files and try to edit them using LibreOffice/OpenOffice and ONLYOFFICE Docs.",
-  "StillNotConvincedLink": "Read instruction how to compare editors",
-  "TryItInTheCloud": "TRY IT IN THE CLOUD",
-
-  "GetStartedAndChooseWhereToWork": "Get started and choose where to work",
-  "InOODocSpace": "In ONLYOFFICE DocSpace",
-  "CreateRoomsWithinYourSecureDocSpace": "Create rooms within your secure DocSpace, invite people, view, edit, and collaborate on all kinds of documents from any desktop or mobile device.",
-  "StartWithYourFreeAccount": "Start with your free account",
-  "InThePlatformYouUse": "In the platform you use",
-  "ConnectDocsToEditDocuments": "Connect Docs to edit documents directly from your app. <0>40+ ready integrations</0>: Box, Moodle, Nextcloud, Odoo, Wordpress, etc.",
-  "GetDocsNow": "Get Docs now",
-  "InThePlatformYouBuild": "In the platform you build",
-  "IntegrateDocsIntoYourService": "Integrate Docs into your service to provide powerful document-editing and building capabilities to your customers under your brand.",
-  "LearnMore": "Learn more",
-  "FromYourPC": "From your PC",
-  "EditDocsOfflineWithFreeOfficeApps": "Edit docs offline with free office apps for Windows, Linux, and macOS",
-  "DownloadNow": "Download now",
-  "FromYourMobileDevices": "From your mobile devices",
-  "WorkOnDocumentsOnTheGoWithFreeApps": "Work on documents on the go with free apps for iOS and Android devices",
-  "InstallNow": "Install now"
+  "OODocsVsLibreOfficeText": "Yes, Microsoft Office is cool but one day it will become burdensome for your budget. Or you may want to give it up following your rebellious open source spirit. No matter what your reasoning is, you’ll need a good replacement. So… ONLYOFFICE or LibreOffice?"
 }

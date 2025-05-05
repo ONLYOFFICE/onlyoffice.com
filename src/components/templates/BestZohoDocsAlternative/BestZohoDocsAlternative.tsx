@@ -3,8 +3,8 @@ import { Hero } from "./sections/Hero";
 import { Reasons } from "./sections/Reasons";
 import { Presentation } from "./sections/Presentation";
 import { Compatibility } from "./sections/Compatibility";
-import { Compare } from "./sections/Compare";
-import { GetStarted } from "./sections/GetStarted";
+import { BestAlternativeGetStarted } from "@src/components/modules/best-alternative/BestAlternativeGetStarted";
+import { BestAlternativeCompare } from "@src/components/modules/best-alternative/BestAlternativeCompare";
 
 const BestZohoDocsAlternativeTemplate = () => {
   return (
@@ -13,8 +13,8 @@ const BestZohoDocsAlternativeTemplate = () => {
       <Reasons />
       <Presentation />
       <Compatibility />
-      <Compare />
-      <GetStarted />
+      <BestAlternativeCompare alternative="Zoho Docs" />
+      <BestAlternativeGetStarted />
     </StyledBestZohoDocsAlternativeTemplate>
   );
 };

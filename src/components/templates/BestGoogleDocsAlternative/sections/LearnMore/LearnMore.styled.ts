@@ -1,6 +1,5 @@
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
-import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
@@ -26,6 +25,7 @@ const StyledBlogCard = styled.div`
 
   @media ${device.tabletS} {
     grid-template-columns: 328px 1fr;
+    align-items: start;
   }
 
   @media ${device.mobile} {
@@ -46,17 +46,9 @@ const StyledBlogCardLink = styled(Link)`
   }
 `;
 
-const StyledBlogCardText = styled(Text)`
-  @media ${device.mobile} {
-    font-size: 14px;
-    line-height: 21px;
-  }
-`;
-
 export {
   StyledLearnMoreWrapper,
   StyledLearnMoreHeading,
   StyledBlogCard,
   StyledBlogCardLink,
-  StyledBlogCardText,
 };

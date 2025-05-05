@@ -1,13 +1,6 @@
-export interface IItems {
-  type:
-    | "onlyOfficeDocx"
-    | "onlyOfficeXlsx"
-    | "googleDocsDocx"
-    | "googleDocsXlsx";
-  src: string;
-}
+import { ICompatibilityItem } from "@src/components/modules/best-alternative/BestAlternativeCompatibility/BestAlternativeCompatibility.types";
 
-export const items: IItems[] = [
+export const items: ICompatibilityItem[] = [
   {
     type: "onlyOfficeDocx",
     src: "/images/templates/best-libreoffice-alternative/compatibility/pdf/onlyoffice_docx.pdf",
@@ -17,11 +10,11 @@ export const items: IItems[] = [
     src: "/images/templates/best-libreoffice-alternative/compatibility/pdf/onlyoffice_xlsx.pdf",
   },
   {
-    type: "googleDocsDocx",
+    type: "alternativeDocx",
     src: "/images/templates/best-libreoffice-alternative/compatibility/pdf/libreoffice_docx.pdf",
   },
   {
-    type: "googleDocsXlsx",
+    type: "alternativeXlsx",
     src: "/images/templates/best-libreoffice-alternative/compatibility/pdf/libreoffice_xlsx.pdf",
   },
 ];

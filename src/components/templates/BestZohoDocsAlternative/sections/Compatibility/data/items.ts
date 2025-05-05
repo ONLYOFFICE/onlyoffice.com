@@ -1,13 +1,6 @@
-export interface IItems {
-  type:
-    | "onlyOfficeDocx"
-    | "onlyOfficeXlsx"
-    | "zohoDocsDocx"
-    | "zohoDocsXlsx";
-  src: string;
-}
+import { ICompatibilityItem } from "@src/components/modules/best-alternative/BestAlternativeCompatibility/BestAlternativeCompatibility.types";
 
-export const items: IItems[] = [
+export const items: ICompatibilityItem[] = [
   {
     type: "onlyOfficeDocx",
     src: "/images/templates/best-zoho-docs-alternative/compatibility/pdf/onlyoffice_docx.pdf",
@@ -17,11 +10,11 @@ export const items: IItems[] = [
     src: "/images/templates/best-zoho-docs-alternative/compatibility/pdf/onlyoffice_xlsx.pdf",
   },
   {
-    type: "zohoDocsDocx",
+    type: "alternativeDocx",
     src: "/images/templates/best-zoho-docs-alternative/compatibility/pdf/zoho_docs_docx.pdf",
   },
   {
-    type: "zohoDocsXlsx",
+    type: "alternativeXlsx",
     src: "/images/templates/best-zoho-docs-alternative/compatibility/pdf/zoho_docs_xlsx.pdf",
   },
 ];

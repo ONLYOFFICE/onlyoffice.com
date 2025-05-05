@@ -1,11 +1,11 @@
+import { BestAlternativeGetStarted } from "@src/components/modules/best-alternative/BestAlternativeGetStarted";
 import { StyledLibreofficeAlternativeTemplate } from "./BestLibreofficeAlternative.styled";
-import { Compare } from "./sections/Compare";
 import { Compatibility } from "./sections/Compatibility";
-import { GetStarted } from "./sections/GetStarted";
 import { Hero } from "./sections/Hero";
 import { LearnMore } from "./sections/LearnMore";
 import { Presentation } from "./sections/Presentation";
 import { Reasons } from "./sections/Reasons";
+import { BestAlternativeCompare } from "@src/components/modules/best-alternative/BestAlternativeCompare";
 
 const BestLibreofficeAlternativeTemplate = () => {
   return (
@@ -15,8 +15,8 @@ const BestLibreofficeAlternativeTemplate = () => {
       <Presentation />
       <LearnMore />
       <Compatibility />
-      <Compare />
-      <GetStarted />
+      <BestAlternativeCompare alternative="LibreOffice/OpenOffice" />
+      <BestAlternativeGetStarted />
     </StyledLibreofficeAlternativeTemplate>
   );
 };

@@ -4,10 +4,10 @@ import { Section } from "@src/components/ui/Section";
 import {
   StyledBlogCard,
   StyledBlogCardLink,
-  StyledBlogCardText,
   StyledLearnMoreHeading,
   StyledLearnMoreWrapper,
 } from "./LearnMore.styled";
+import { Text } from "@src/components/ui/Text";
 
 const LearnMore = () => {
   const { t } = useTranslation("best-google-docs-alternative");
@@ -35,7 +35,7 @@ const LearnMore = () => {
                 textUnderline
                 hover="underline-none"
               />
-              <StyledBlogCardText label={t("OOAndGoogleDocsText")} />
+              <Text size={2} label={t("OOAndGoogleDocsText")} />
             </div>
           </StyledBlogCard>
         </StyledLearnMoreWrapper>

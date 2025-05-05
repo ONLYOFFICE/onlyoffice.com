@@ -31,12 +31,12 @@ const Hero = () => {
           />
         </StyledHeroHeading>
         <StyledHeroСomparison>
-          {comparisonLogos.map(({ src, alt, className }, index) => (
+          {comparisonLogos.map(({ src, alt, type }, index) => (
             <StyledHeroСomparisonItem
               key={index}
               src={src}
               alt={alt}
-              className={className}
+              $type={type}
             />
           ))}
         </StyledHeroСomparison>

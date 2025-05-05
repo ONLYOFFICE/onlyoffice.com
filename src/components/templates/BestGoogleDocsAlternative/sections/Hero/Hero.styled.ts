@@ -3,6 +3,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
+import { IComparisonLogo } from "./Hero.types";
 
 const StyledHeroSection = styled(Section)`
   position: relative;
@@ -37,8 +38,7 @@ const StyledHeroContainer = styled(Container)`
 
 const StyledHeroHeading = styled(Heading)`
   max-width: 682px;
-  margin: 0 auto;
-  margin-bottom: 88px;
+  margin: 0 auto 88px;
   text-align: center;
 
   @media ${device.tabletS} {
@@ -75,37 +75,43 @@ const StyledHeroСomparison = styled.div`
   }
 `;
 
-const StyledHeroСomparisonItem = styled.img`
-  &.onlyoffice {
+const StyledHeroСomparisonItem = styled.img<{
+  $type: IComparisonLogo["type"];
+}>`
+  ${({ $type }) =>
+    $type === "onlyoffice" &&
+    `
     @media ${device.tabletS} {
       width: 217.5px;
       height: 40px;
     }
-
     @media ${device.mobile} {
       width: 174px;
       height: 32px;
     }
-  }
+  `}
 
-  &.versus {
-    @media ${device.mobile} {
-      width: 48px;
-      height: 48px;
-    }
-  }
-
-  &.google-docs {
+  ${({ $type }) =>
+    $type === "google-docs" &&
+    `
     @media ${device.tabletS} {
       width: 206px;
       height: 40px;
     }
-
     @media ${device.mobile} {
       width: 165px;
       height: 32px;
     }
-  }
+  `}
+
+  ${({ $type }) =>
+    $type === "versus" &&
+    `
+    @media ${device.mobile} {
+      width: 48px;
+      height: 48px;
+    }
+  `}
 `;
 
 const StyledHeroText = styled.span`
