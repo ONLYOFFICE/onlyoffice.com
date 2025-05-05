@@ -75,7 +75,7 @@ const StyledHeroImgWrapper = styled.div<{ $imageUrl: string }>`
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  height: 576px;
+  height: 628px;
 
   @media ${device.tablet} {
     height: 380px;
