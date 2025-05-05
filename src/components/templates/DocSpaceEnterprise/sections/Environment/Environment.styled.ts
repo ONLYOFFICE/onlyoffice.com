@@ -41,17 +41,8 @@ const StyledEnvironmentList = styled.div`
       }
 
       @media ${device.tabletS} {
-        width: 688px;
-        height: 516px;
-      }
-
-      @media ${device.mobile} {
-        width: 560px;
-      }
-
-      @media ${device.mobileS} {
-        width: 337px;
-        height: 234px;
+        width: 90vw;
+        height: 67vw;
       }
     }
 
