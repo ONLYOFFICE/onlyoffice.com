@@ -36,9 +36,9 @@ const StyledCompatibilityTopTextLink = styled(Link)<{ $type: "docx" | "xlsx" }>`
     margin: 0 5px;
     background-image: ${({ $type }) =>
       $type === "docx"
-        ? "url('/images/storybook/modules/best-alternative/best-alternative-compatibility/file_docx.svg')"
+        ? "url('/images/modules/best-alternative/best-alternative-compatibility/file_docx.svg')"
         : $type === "xlsx"
-        ? "url('/images/storybook/modules/best-alternative/best-alternative-compatibility/file_xlsx.svg')"
+        ? "url('/images/modules/best-alternative/best-alternative-compatibility/file_xlsx.svg')"
         : undefined};
   }
 `;

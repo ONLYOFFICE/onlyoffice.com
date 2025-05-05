@@ -14,7 +14,7 @@ const StyledPresentationHeading = styled(Heading)`
 const StyledPresentationLink = styled.a`
   display: block;
   max-width: 650px;
-  height: auto;
+  height: 370px;
   margin: 0 auto;
   position: relative;
 

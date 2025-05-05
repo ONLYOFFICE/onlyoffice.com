@@ -12,7 +12,7 @@ export interface IGetStartedItems {
 export const items: IGetStartedItems = {
   items: [
     {
-      imgUrl: "/images/storybook/modules/best-alternative/best-alternative-get-started/docspace.svg",
+      imgUrl: "/images/modules/best-alternative/best-alternative-get-started/docspace.svg",
       heading: "InOODocSpace",
       text: "CreateRoomsWithinYourSecureDocSpace",
       links: [
@@ -24,7 +24,7 @@ export const items: IGetStartedItems = {
       ],
     },
     {
-      imgUrl: "/images/storybook/modules/best-alternative/best-alternative-get-started/connectors.svg",
+      imgUrl: "/images/modules/best-alternative/best-alternative-get-started/connectors.svg",
       heading: "InThePlatformYouUse",
       text: {
         label: "ConnectDocsToEditDocuments",
@@ -43,7 +43,7 @@ export const items: IGetStartedItems = {
       ],
     },
     {
-      imgUrl: "/images/storybook/modules/best-alternative/best-alternative-get-started/developers.svg",
+      imgUrl: "/images/modules/best-alternative/best-alternative-get-started/developers.svg",
       heading: "InThePlatformYouBuild",
       text: "IntegrateDocsIntoYourService",
       links: [
@@ -57,7 +57,7 @@ export const items: IGetStartedItems = {
   ],
   largeItems: [
     {
-      imgUrl: "/images/storybook/modules/best-alternative/best-alternative-get-started/from-pc.svg",
+      imgUrl: "/images/modules/best-alternative/best-alternative-get-started/from-pc.svg",
       heading: "FromYourPC",
       text: "EditDocsOfflineWithFreeOfficeApps",
       links: [
@@ -69,7 +69,7 @@ export const items: IGetStartedItems = {
       ],
     },
     {
-      imgUrl: "/images/storybook/modules/best-alternative/best-alternative-get-started/from-mobile.svg",
+      imgUrl: "/images/modules/best-alternative/best-alternative-get-started/from-mobile.svg",
       heading: "FromYourMobileDevices",
       text: "WorkOnDocumentsOnTheGoWithFreeApps",
       links: [

@@ -83,7 +83,7 @@ const BestAlternativeCompatibility = ({
           <StyledCompatibilityCompanySwitcherItem
             $isOO={isOnlyOffice}
             $type="onlyOffice"
-            $logo="/images/storybook/modules/best-alternative/best-alternative-compatibility/logo_onlyoffice.svg"
+            $logo="/images/modules/best-alternative/best-alternative-compatibility/logo_onlyoffice.svg"
             onClick={() => setIsOnlyOffice(true)}
           >
             ONLYOFFICE
