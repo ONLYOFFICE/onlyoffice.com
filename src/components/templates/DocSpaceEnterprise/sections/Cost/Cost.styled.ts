@@ -16,16 +16,21 @@ const StyledCostContent = styled.div`
     position: absolute;
     top: -1px;
     right: -1px;
-    width: 50%;
-    height: 100%;
+    width: 509px;
+    height: 463px;
     background-image: url("/images/templates/docspace-enterprise/cost/cost_picture.svg");
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size: contain;
 
+    @media ${device.tablet} {
+      width: 51vw;
+      height: 42vw;
+    }
+
     @media ${device.mobile} {
-      width: 100%;
-      height: 50%;
+      width: 90vw;
+      height: 68.75vw;
     }
   }
 `;
@@ -40,7 +45,7 @@ const StyledCostContentLeft = styled.div`
 
   @media ${device.mobile} {
     width: 100%;
-    padding: 245px 16px 16px;
+    padding: 68.75vw 16px 16px;
   }
 `;
 

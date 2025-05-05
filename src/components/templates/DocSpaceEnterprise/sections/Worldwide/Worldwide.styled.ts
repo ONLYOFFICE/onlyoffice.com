@@ -10,23 +10,27 @@ const StyledWorldwideWrapper = styled.div`
   h2 {
     font-weight: 800;
   }
+
+  p {
+    @media ${device.mobile} {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
 `;
 
 const StyledWorldwideImgWrapper = styled.div`
   width: 64px;
   height: 52px;
   margin-bottom: 24px;
+  background-image: url("/images/templates/docspace-enterprise/hero/world_icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media ${device.mobile} {
     width: 49px;
     height: 40px;
     margin-bottom: 16px;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
   }
 `;
 

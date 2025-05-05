@@ -26,7 +26,11 @@ const Hero = () => {
           size={1}
           textAlign="center"
         />
-        <Text label={t("TheEnterpriseScaledSpace")} />
+        <Text
+          size={1}
+          label={t("TheEnterpriseScaledSpace")}
+          textAlign="center"
+        />
         <StyledHeroBtnWrapper>
           <Button
             as="a"

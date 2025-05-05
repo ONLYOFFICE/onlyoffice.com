@@ -43,17 +43,9 @@ const StyledHeroContainer = styled(Container)`
   }
 
   p {
-    font-size: 18px;
-    line-height: 160%;
     margin: 24px 0 32px;
-    text-align: center;
-
-    @media ${device.tabletS} {
-      font-size: 16px;
-    }
 
     @media ${device.mobile} {
-      font-size: 14px;
       margin: 24px 0;
     }
   }

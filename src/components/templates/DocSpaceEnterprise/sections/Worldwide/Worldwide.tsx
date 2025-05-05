@@ -16,15 +16,10 @@ const Worldwide = () => {
     <Section background="#f8f9f9">
       <Container>
         <StyledWorldwideWrapper>
-          <StyledWorldwideImgWrapper>
-            <img
-              src="/images/templates/docspace-enterprise/hero/world_icon.svg"
-              alt={t("HeroWorldIconAltText")}
-            />
-          </StyledWorldwideImgWrapper>
+          <StyledWorldwideImgWrapper />
           <Text label={t("TrustedBy")} size={1} />
           <Heading level={2} label={t("CountOfUsers")} size={2} color="main" />
-          <Text label={t("Worldwide")} />
+          <Text label={t("Worldwide")} size={1} />
         </StyledWorldwideWrapper>
       </Container>
     </Section>
