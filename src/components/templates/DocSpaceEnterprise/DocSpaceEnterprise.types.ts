@@ -42,10 +42,6 @@ interface ISupportItems {
   imageUrl: string;
 }
 
-interface IStyledGettingItemTopProps {
-  $bgUrl: string;
-}
-
 export type {
   ICostItems,
   IEnvironmentItems,
@@ -53,5 +49,4 @@ export type {
   IGettingItems,
   IScalable,
   ISupportItems,
-  IStyledGettingItemTopProps,
 };

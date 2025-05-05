@@ -3,9 +3,6 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
-import type { IStyledGettingItemTopProps } from "@src/components/templates/DocSpaceEnterprise/DocSpaceEnterprise.types";
-
-const getBgUrl = (props: IStyledGettingItemTopProps) => `url(${props.$bgUrl})`;
 
 const StyledGettingText = styled(Text)`
   margin-top: 24px;
@@ -19,7 +16,6 @@ const StyledGettingText = styled(Text)`
 const StyledGettingList = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 32px;
   padding: 56px 0;
 
@@ -49,21 +45,12 @@ const StyledGettingItemLink = styled(Link)`
   transition: box-shadow 0.3s;
   flex-shrink: 0;
 
-  @media screen and (max-width: 1200px) {
-    width: 28vw;
-  }
-
   @media ${device.tablet} {
-    height: 376px;
-  }
-
-  @media ${device.tabletS} {
-    height: 264px;
+    width: 208px;
   }
 
   @media ${device.mobile} {
-    width: 237px;
-    height: 263px;
+    width: 238px;
   }
 
   &:hover {
@@ -85,21 +72,20 @@ const StyledGettingItemHeading = styled(Heading)`
 `;
 
 const StyledGettingItemText = styled(Text)`
-  padding: 0 32px 64px;
+  padding: 0 32px 16px;
 
   @media ${device.tabletS} {
-    padding: 0 16px 56px;
+    padding: 0 16px 12px;
   }
 `;
 
 const StyledGettingItemSubtitle = styled(Text)`
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 32px;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 32px;
 
-  @media ${device.tabletS} {
-    bottom: 20px;
+  @media ${device.tablet} {
+    margin: 0 auto 16px;
   }
 
   &::after {
@@ -118,7 +104,7 @@ const StyledGettingItemSubtitle = styled(Text)`
   }
 `;
 
-const StyledGettingItemTop = styled.div<IStyledGettingItemTopProps>`
+const StyledGettingItemTop = styled.div<{ $bgUrl: string }>`
   background: #f5f5f5;
   border-radius: 5px;
   height: 160px;
@@ -132,7 +118,7 @@ const StyledGettingItemTop = styled.div<IStyledGettingItemTopProps>`
     width: 72px;
     height: 72px;
     display: block;
-    background-image: ${getBgUrl};
+    background-image: ${(props) => `url(${props.$bgUrl})`};
     background-position: 0 0;
     background-size: contain;
     background-position-x: 50%;
