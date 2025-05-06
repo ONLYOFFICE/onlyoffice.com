@@ -35,7 +35,7 @@ const Getting = () => {
             <CardLink
               key={item.title}
               href={item.href}
-              bgUrl={item.bgUrl}
+              icon={{ iconUrl: item.bgUrl }}
               title={t(item.title)}
               text={t(item.text)}
               subtitle={t(item.subtitle)}
