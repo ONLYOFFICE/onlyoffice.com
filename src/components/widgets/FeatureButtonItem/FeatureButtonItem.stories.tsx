@@ -22,7 +22,7 @@ export default {
     icon: { control: { type: "object" } },
     heading: { control: { type: "text" } },
     text: { control: { type: "text" } },
-    button: { control: { type: "text" } },
+    button: { control: { type: "object" } },
   },
 } as Meta<typeof FeatureButtonItem>;
 
@@ -37,5 +37,5 @@ Default.args = {
   },
   heading: "Heading",
   text: "Working with office files directly within the Box frontend",
-  button: <Button label="Get it now" as="a" />,
+  button: [<Button label="Get it now" as="a" />],
 };
