@@ -29,4 +29,6 @@ export interface IFeatureButtonItem {
   button?: React.ReactNode;
   /** The color of Heading and Text*/
   color?: string;
+  /** The position all of the content */
+  position?: "center" | "left" | "right";
 }

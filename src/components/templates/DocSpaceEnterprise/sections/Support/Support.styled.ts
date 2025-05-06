@@ -21,7 +21,6 @@ const StyledSupportBg = styled.div`
 `;
 
 const StyledSupportContainer = styled(Container)`
-  text-align: center;
   padding: 112px 0 192px;
 
   @media ${device.tablet} {

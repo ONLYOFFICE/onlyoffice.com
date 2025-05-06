@@ -8,9 +8,11 @@ const StyledFeatureButtonItem = styled.div<{
   $desktopMaxWidth: IFeatureButtonItem["desktopMaxWidth"];
   $tabletMaxWidth: IFeatureButtonItem["tabletMaxWidth"];
   $mobileMaxWidth: IFeatureButtonItem["mobileMaxWidth"];
+  $position: IFeatureButtonItem["position"];
 }>`
   max-width: ${(props) => props.$desktopMaxWidth};
   margin: 0 auto 24px;
+  text-align: ${(props) => props.$position};
 
   @media ${device.tablet} {
     max-width: ${(props) => props.$tabletMaxWidth};
@@ -27,13 +29,19 @@ const StyledFeatureButtonItemIcon = styled.div<{
   $iconHeight: IFeatureButtonItem["icon"]["height"];
   $iconMobileWidth: IFeatureButtonItem["icon"]["mobileWidth"];
   $iconMobileHeight: IFeatureButtonItem["icon"]["mobileHeight"];
+  $position: IFeatureButtonItem["position"];
 }>`
   width: ${(props) => props.$iconWidth};
   height: ${(props) => props.$iconWidth};
-  margin: 0 auto 12px;
   background-image: ${(props) => `url(${props.$iconUrl})`};
   background-size: contain;
   background-repeat: no-repeat;
+  margin: ${(props) =>
+    props.$position === "left"
+      ? "0 auto 12px 0"
+      : props.$position === "right"
+      ? "0 0 12px auto"
+      : "0 auto 12px"};
 
   @media ${device.mobile} {
     width: ${(props) => props.$iconMobileWidth};

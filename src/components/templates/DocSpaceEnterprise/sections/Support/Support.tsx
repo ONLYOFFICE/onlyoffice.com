@@ -31,8 +31,13 @@ const Support = () => {
             label={t("SupportTitleForEveryStep")}
             color="#fff"
             size={2}
+            textAlign="center"
           />
-          <StyledSupportText label={t("SupportTextTheTeam")} color="#fff" />
+          <StyledSupportText
+            label={t("SupportTextTheTeam")}
+            color="#fff"
+            textAlign="center"
+          />
           <StyledSupportList>
             {items.map((item) => (
               <FeatureButtonItem
@@ -40,6 +45,7 @@ const Support = () => {
                 className="item"
                 icon={{ url: item.imageUrl }}
                 heading={t(item.heading)}
+                position="center"
                 text={
                   <Trans
                     t={t}

@@ -18,6 +18,7 @@ const FeatureButtonItem = ({
   text,
   button,
   color,
+  position = "center",
 }: IFeatureButtonItem) => {
   return (
     <StyledFeatureButtonItem
@@ -26,6 +27,7 @@ const FeatureButtonItem = ({
       $desktopMaxWidth={desktopMaxWidth}
       $tabletMaxWidth={tabletMaxWidth}
       $mobileMaxWidth={mobileMaxWidth}
+      $position={position}
     >
       <StyledFeatureButtonItemIcon
         $iconUrl={url}
@@ -33,11 +35,17 @@ const FeatureButtonItem = ({
         $iconHeight={height}
         $iconMobileWidth={mobileWidth}
         $iconMobileHeight={mobileHeight}
+        $position={position}
       />
-      <StyledFeatureButtonItemHeading level={5} size={4} color={color}>
+      <StyledFeatureButtonItemHeading
+        level={5}
+        size={4}
+        color={color}
+        textAlign={position}
+      >
         {heading}
       </StyledFeatureButtonItemHeading>
-      <StyledFeatureButtonItemText size={1} color={color}>
+      <StyledFeatureButtonItemText size={1} color={color} textAlign={position}>
         {text}
       </StyledFeatureButtonItemText>
       {button}
