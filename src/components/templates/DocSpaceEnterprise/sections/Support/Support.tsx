@@ -38,7 +38,7 @@ const Support = () => {
               <FeatureButtonItem
                 key={item.heading}
                 className="item"
-                iconUrl={item.imageUrl}
+                icon={{ url: item.imageUrl }}
                 heading={t(item.heading)}
                 text={
                   <Trans
@@ -71,6 +71,7 @@ const Support = () => {
                     className="item__btn"
                   />
                 }
+                color="#fff"
               />
             ))}
           </StyledSupportList>
