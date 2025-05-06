@@ -22,11 +22,11 @@ export interface IFeatureButtonItem {
     mobileHeight?: string;
   };
   /** The heading. */
-  heading: React.ReactNode;
+  heading?: React.ReactNode;
   /** The text */
-  text: React.ReactNode;
+  text?: React.ReactNode;
   /** The button */
-  button: React.ReactNode;
+  button?: React.ReactNode;
   /** The color of Heading and Text*/
   color?: string;
 }
