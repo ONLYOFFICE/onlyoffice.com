@@ -18,6 +18,7 @@ import {
   StyledGettingFooter,
   StyledGettingItemContent,
 } from "./Getting.styled";
+import { CardLink } from "@src/components/widgets/CardLink";
 
 const Getting = () => {
   const { t } = useTranslation("docspace-enterprise");
@@ -38,32 +39,14 @@ const Getting = () => {
         />
         <StyledGettingList>
           {items.map((item) => (
-            <StyledGettingItemLink href={item.href} key={item.title}>
-              <StyledGettingItemTop $bgUrl={item.bgUrl} />
-              <StyledGettingItemContent>
-                <div>
-                  <StyledGettingItemHeading
-                    level={4}
-                    label={t(item.title)}
-                    color="#333333"
-                    size={4}
-                    textAlign="center"
-                  />
-                  <StyledGettingItemText
-                    label={t(item.text)}
-                    color="#666666"
-                    size={2}
-                    textAlign="center"
-                  />
-                </div>
-                <StyledGettingItemSubtitle
-                  color="main"
-                  textDecoration="underline"
-                  size={2}
-                  label={t(item.subtitle)}
-                />
-              </StyledGettingItemContent>
-            </StyledGettingItemLink>
+            <CardLink
+              key={item.title}
+              href={item.href}
+              bgUrl={item.bgUrl}
+              title={t(item.title)}
+              text={t(item.text)}
+              subtitle={t(item.subtitle)}
+            />
           ))}
         </StyledGettingList>
         <StyledGettingFooter>
@@ -89,3 +72,30 @@ const Getting = () => {
 };
 
 export { Getting };
+
+// <StyledGettingItemLink href={item.href} key={item.title}>
+//   <StyledGettingItemTop $bgUrl={item.bgUrl} />
+//   <StyledGettingItemContent>
+//     <div>
+//       <StyledGettingItemHeading
+//         level={4}
+//         label={t(item.title)}
+//         color="#333333"
+//         size={4}
+//         textAlign="center"
+//       />
+//       <StyledGettingItemText
+//         label={t(item.text)}
+//         color="#666666"
+//         size={2}
+//         textAlign="center"
+//       />
+//     </div>
+//     <StyledGettingItemSubtitle
+//       color="main"
+//       textDecoration="underline"
+//       size={2}
+//       label={t(item.subtitle)}
+//     />
+//   </StyledGettingItemContent>
+// </StyledGettingItemLink>
