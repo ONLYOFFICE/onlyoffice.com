@@ -37,5 +37,5 @@ Default.args = {
   },
   heading: "Heading",
   text: "Working with office files directly within the Box frontend",
-  button: [<Button label="Get it now" as="a" />],
+  button: [<Button key={0} label="Get it now" as="a" />],
 };
