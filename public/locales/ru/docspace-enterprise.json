@@ -36,19 +36,24 @@
   "EnvironmentItemTitleSecurity": "Безопасность",
   "EnvironmentItemTextSecurity": "Обеспечьте безопасность ваших данных по всем направлениям: настройки безопасности корпоративного уровня, соответствие отраслевым стандартам, приоритетный доступ к исправлениям безопасности и стабильности.",
   "EnvironmentItemLinkSecurity": "Узнайте больше о безопасности ONLYOFFICE",
+  "EnvironmentItemImageSecurity":"/images/templates/docspace-enterprise/environment/ru/Security.svg",
 
   "EnvironmentItemTitleAccessibility": "Доступность",
   "EnvironmentItemTextAccessibility": "Сделайте процесс редактирования простым и удобным для всех: переключайтесь между доступными цветовыми режимами, включайте необходимые плагины, скрывайте или показывайте панели и линейки и т. д.",
   "EnvironmentItemLinkAccessibility": "Узнайте больше о доступности ONLYOFFICE",
+  "EnvironmentItemImageAccessibility": "/images/templates/docspace-enterprise/environment/ru/Accessibility.svg",
 
   "EnvironmentItemTitleCustomization": "Кастомизация",
   "EnvironmentItemTextCustomization": "Применяйте различные цветовые стили, заменяйте логотипы, заголовки и ссылки в соответствии с вашим корпоративным брендом.",
+  "EnvironmentItemImageCustomization": "/images/templates/docspace-enterprise/environment/ru/Customization.svg",
 
   "EnvironmentItemTitleAdministration": "Администрирование",
   "EnvironmentItemTextAdministration": "Управляйте своим DocSpace с помощью интуитивно понятной панели управления. Подключайте внешние сервисы для логирования, подписи, хранения и т. д.",
+  "EnvironmentItemImageAdministration": "/images/templates/docspace-enterprise/environment/ru/Collaboration.svg",
 
   "EnvironmentItemTitleMultitenancy": "Мультитенантность",
   "EnvironmentItemTextMultitenancy": "Создавайте несколько пространств для разных филиалов и управляйте ими всеми одновременно.",
+  "EnvironmentItemImageMultitenancy": "/images/templates/docspace-enterprise/environment/ru/Multitenancys.svg",
 
   "ScalableTitleForBusinesses": "Масштабируемость для бизнеса любого размера",
   "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterprise растет вместе с вашей компанией. ",

@@ -36,19 +36,24 @@
   "EnvironmentItemTitleSecurity": "Security",
   "EnvironmentItemTextSecurity": "Keep your data safe on all fronts: enterprise-ready security settings, compliance with industry-specific standards, priority access to security and stability fixes.",
   "EnvironmentItemLinkSecurity": "Learn more about ONLYOFFICE security",
+  "EnvironmentItemImageSecurity":"/images/templates/docspace-enterprise/environment/en/Security.svg",
 
   "EnvironmentItemTitleAccessibility": "Accessibility",
   "EnvironmentItemTextAccessibility": "Make the editing process simple and comfortable for everyone: switch between available color modes, enable necessary plugins, hide or show bars and rulers, etc.",
   "EnvironmentItemLinkAccessibility": "Learn more about ONLYOFFICE accessibility",
+  "EnvironmentItemImageAccessibility": "/images/templates/docspace-enterprise/environment/en/Accessibility.svg",
 
   "EnvironmentItemTitleCustomization": "Customization",
   "EnvironmentItemTextCustomization": "Apply different color styles, replace logos, titles and links to fit your corporate brand.",
+  "EnvironmentItemImageCustomization": "/images/templates/docspace-enterprise/environment/en/Customization.svg",
 
   "EnvironmentItemTitleAdministration": "Administration",
   "EnvironmentItemTextAdministration": "Manage your docspace using an intuitive control panel. Connect external services for logging, signing, storage, etc.",
+  "EnvironmentItemImageAdministration": "/images/templates/docspace-enterprise/environment/en/Collaboration.svg",
 
   "EnvironmentItemTitleMultitenancy": "Multitenancy",
   "EnvironmentItemTextMultitenancy": "Create multiple spaces for different branches and manage them all at once.",
+  "EnvironmentItemImageMultitenancy": "/images/templates/docspace-enterprise/environment/en/Multitenancys.svg",
 
   "ScalableTitleForBusinesses": "Scalable for businesses of any size",
   "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterprise is growing with your company. ",

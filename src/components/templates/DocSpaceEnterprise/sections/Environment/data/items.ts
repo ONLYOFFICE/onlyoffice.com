@@ -5,7 +5,7 @@ export const items: IEnvironmentItems[] = [
     heading: "EnvironmentItemTitleSecurity",
     text: "EnvironmentItemTextSecurity",
     image: {
-      url: "/images/templates/docspace-enterprise/environment/environment-img_1.svg",
+      url: "EnvironmentItemImageSecurity",
     },
     links: [
       {
@@ -18,7 +18,7 @@ export const items: IEnvironmentItems[] = [
     heading: "EnvironmentItemTitleAccessibility",
     text: "EnvironmentItemTextAccessibility",
     image: {
-      url: "/images/templates/docspace-enterprise/environment/environment-img_2.svg",
+      url: "EnvironmentItemImageAccessibility",
     },
     links: [
       {
@@ -31,21 +31,21 @@ export const items: IEnvironmentItems[] = [
     heading: "EnvironmentItemTitleCustomization",
     text: "EnvironmentItemTextCustomization",
     image: {
-      url: "/images/templates/docspace-enterprise/environment/environment-img_3.svg",
+      url: "EnvironmentItemImageCustomization",
     },
   },
   {
     heading: "EnvironmentItemTitleAdministration",
     text: "EnvironmentItemTextAdministration",
     image: {
-      url: "/images/templates/docspace-enterprise/environment/environment-img_4.svg",
+      url: "EnvironmentItemImageAdministration",
     },
   },
   {
     heading: "EnvironmentItemTitleMultitenancy",
     text: "EnvironmentItemTextMultitenancy",
     image: {
-      url: "/images/templates/docspace-enterprise/environment/environment-img_5.svg",
+      url: "EnvironmentItemImageMultitenancy",
     },
   },
 ];

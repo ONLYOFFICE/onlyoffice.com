@@ -36,19 +36,24 @@
   "EnvironmentItemTitleSecurity": "安全性",
   "EnvironmentItemTextSecurity": "全方位保护您的数据安全：企业级安全设置、符合行业特定标准、优先获取安全性和稳定性修复程序。",
   "EnvironmentItemLinkSecurity": "了解有关 ONLYOFFICE 安全性的更多信息",
+  "EnvironmentItemImageSecurity":"/images/templates/docspace-enterprise/environment/zh/Security.svg",
 
   "EnvironmentItemTitleAccessibility": "辅助功能",
   "EnvironmentItemTextAccessibility": "让每个人的编辑过程都简单舒适：切换可用颜色模式、启用必要插件、隐藏或显示工具栏和标尺等。",
   "EnvironmentItemLinkAccessibility": "了解有关 ONLYOFFICE 辅助功能的更多信息",
+  "EnvironmentItemImageAccessibility": "/images/templates/docspace-enterprise/environment/zh/Accessibility.svg",
 
   "EnvironmentItemTitleCustomization": "自定义",
   "EnvironmentItemTextCustomization": "应用不同的颜色样式，替换徽标、标题和链接以符合您的企业品牌形象。",
+  "EnvironmentItemImageCustomization": "/images/templates/docspace-enterprise/environment/zh/Customization.svg",
 
   "EnvironmentItemTitleAdministration": "管理",
   "EnvironmentItemTextAdministration": "使用直观的控制面板管理您的 DocSpace。连接外部服务以进行日志记录、签名、存储等。",
+  "EnvironmentItemImageAdministration": "/images/templates/docspace-enterprise/environment/zh/Collaboration.svg",
 
   "EnvironmentItemTitleMultitenancy": "多租户",
   "EnvironmentItemTextMultitenancy": "为不同分支机构创建多个空间并同时管理它们。",
+  "EnvironmentItemImageMultitenancy": "/images/templates/docspace-enterprise/environment/zh/Multitenancys.svg",
 
   "ScalableTitleForBusinesses": "可扩展，适用于任何规模的企业",
   "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace 企业版与您的公司共同成长。 ",

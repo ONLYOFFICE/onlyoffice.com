@@ -36,19 +36,24 @@
   "EnvironmentItemTitleSecurity": "Sicherheit",
   "EnvironmentItemTextSecurity": "Schützen Sie Ihre Daten an allen Fronten: unternehmensgerechte Sicherheitseinstellungen, Einhaltung branchenspezifischer Standards, priorisierter Zugang zu Sicherheits- und Stabilitätskorrekturen.",
   "EnvironmentItemLinkSecurity": "Erfahren Sie mehr über die Sicherheit von ONLYOFFICE",
+  "EnvironmentItemImageSecurity":"/images/templates/docspace-enterprise/environment/de/Security.svg",
 
   "EnvironmentItemTitleAccessibility": "Barrierefreiheit",
   "EnvironmentItemTextAccessibility": "Gestalten Sie den Bearbeitungsprozess für alle einfach und komfortabel: wechseln Sie zwischen verfügbaren Farbmodi, aktivieren Sie notwendige Plugins, blenden Sie Leisten und Lineale ein oder aus, etc.",
   "EnvironmentItemLinkAccessibility": "Erfahren Sie mehr über die Barrierefreiheit von ONLYOFFICE",
+  "EnvironmentItemImageAccessibility": "/images/templates/docspace-enterprise/environment/de/Accessibility.svg",
 
   "EnvironmentItemTitleCustomization": "Anpassung",
   "EnvironmentItemTextCustomization": "Wenden Sie verschiedene Farbstile an, ersetzen Sie Logos, Titel und Links, um sie an Ihre Unternehmensmarke anzupassen.",
+  "EnvironmentItemImageCustomization": "/images/templates/docspace-enterprise/environment/de/Customization.svg",
 
   "EnvironmentItemTitleAdministration": "Verwaltung",
   "EnvironmentItemTextAdministration": "Verwalten Sie Ihren DocSpace über ein intuitives Control Panel. Verbinden Sie externe Dienste für Protokollierung, Signierung, Speicherung usw.",
+  "EnvironmentItemImageAdministration": "/images/templates/docspace-enterprise/environment/de/Collaboration.svg",
 
   "EnvironmentItemTitleMultitenancy": "Mandantenfähigkeit",
   "EnvironmentItemTextMultitenancy": "Erstellen Sie mehrere Bereiche für verschiedene Niederlassungen und verwalten Sie sie alle gleichzeitig.",
+  "EnvironmentItemImageMultitenancy": "/images/templates/docspace-enterprise/environment/de/Multitenancys.svg",
 
   "ScalableTitleForBusinesses": "Skalierbar für Unternehmen jeder Größe",
   "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterprise wächst mit Ihrem Unternehmen. ",

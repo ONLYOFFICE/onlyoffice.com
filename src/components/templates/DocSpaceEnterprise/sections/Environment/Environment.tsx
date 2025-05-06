@@ -28,7 +28,7 @@ const Environment = () => {
               className="item"
               heading={t(item.heading)}
               text={t(item.text)}
-              image={{ url: item.image.url }}
+              image={{ url: t(item.image.url) }}
               links={item.links?.map((link) => ({
                 href: link.href,
                 label: t(link.label),
