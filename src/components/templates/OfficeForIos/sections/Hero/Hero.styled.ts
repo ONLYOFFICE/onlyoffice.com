@@ -9,13 +9,21 @@ import { device } from "@src/utils/device";
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
   overflow: hidden;
+
+  @media ${device.tablet} {
+    margin-top: -64px;
+  }
+
+  @media ${device.tabletS} {
+    margin-top: -48px;
+  }
 `;
 
 const StyledHeroContainer = styled(Container)`
-  padding-top: 50px;
+  margin-top: 50px;
 
-  @media ${device.tabletS} {
-    padding-top: 88px;
+  @media ${device.mobile} {
+    margin-top: 68px;
   }
 `;
 
@@ -46,6 +54,10 @@ const StyledHeroLeftHeading = styled(Heading)`
     margin-top: 0;
     font-size: 40px;
     line-height: 133%;
+  }
+
+  @media ${device.mobile} {
+    font-size: 24px;
   }
 
   &::before {
@@ -89,6 +101,10 @@ const StyledHeroLeftText = styled(Text)`
     text-align: center;
     margin-bottom: 40px;
   }
+
+  @media ${device.mobile} {
+    font-size: 12px;
+  }
 `;
 
 const StyledHeroLeftImgWrapper = styled.div`
@@ -96,7 +112,7 @@ const StyledHeroLeftImgWrapper = styled.div`
   height: 498px;
   position: relative;
 
-  @media ${device.tablet} {
+  @media ${device.tabletS} {
     display: none;
   }
 `;
@@ -110,6 +126,10 @@ const StyledHeroLeftImg = styled.div`
   position: absolute;
   z-index: 1;
   margin-left: -15.625vw;
+
+  @media ${device.tablet} {
+    margin-left: 0;
+  }
 
   &::before {
     content: "";
@@ -152,6 +172,7 @@ const StyledHeroRight = styled.div`
     position: static;
     width: 90vw;
     height: 83vw;
+    margin: 0 auto;
   }
 `;
 
@@ -169,6 +190,11 @@ const StyledHeroPhoneImgMob = styled.div`
 
   @media ${device.tabletS} {
     display: block;
+  }
+
+  @media ${device.mobileS} {
+    transform: scale(0.5) translate(-35%, 0);
+    margin: -150px auto 0;
   }
 
   &::before {
