@@ -1,4 +1,3 @@
-import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Trans, useTranslation } from "next-i18next";
 
@@ -12,13 +11,14 @@ import {
   StyledHeroLeftText,
   StyledHeroLeftImgWrapper,
   StyledHeroLeftImg,
+  StyledHeroContainer,
 } from "./Hero.styled";
 
 const Hero = () => {
   const { t } = useTranslation("office-for-ios");
   return (
     <StyledHeroSection background="#fafafa">
-      <Container>
+      <StyledHeroContainer>
         <StyledHeroWrapper>
           <StyledHeroLeft>
             <StyledHeroLeftHeading size={2}>
@@ -46,7 +46,7 @@ const Hero = () => {
           </StyledHeroLeft>
           <StyledHeroRight />
         </StyledHeroWrapper>
-      </Container>
+      </StyledHeroContainer>
     </StyledHeroSection>
   );
 };

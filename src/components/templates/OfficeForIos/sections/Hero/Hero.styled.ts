@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
 import { Button } from "@src/components/ui/Button";
@@ -6,6 +7,11 @@ import { Text } from "@src/components/ui/Text";
 
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
+  overflow: hidden;
+`;
+
+const StyledHeroContainer = styled(Container)`
+  padding-top: 50px;
 `;
 
 const StyledHeroWrapper = styled.div`
@@ -61,11 +67,10 @@ const StyledHeroLeftImg = styled.div`
   height: 498px;
   background-image: url("/images/templates/office-for-ios/hero/hero_phone.webp");
   background-repeat: no-repeat;
-  background-size: 498px auto;
+  background-size: contain;
   position: absolute;
-  top: 0;
-  left: -300px;
   z-index: 1;
+  margin-left: -15.625vw;
 
   &::before {
     content: "";
@@ -97,17 +102,17 @@ const StyledHeroLeftImg = styled.div`
 const StyledHeroRight = styled.div`
   background-image: url("/images/templates/office-for-ios/hero/hero_laptop.webp");
   background-repeat: no-repeat;
-  background-size: 786px auto;
+  background-size: contain;
   width: 800px;
-  height: 640px;
+  height: 735px;
   position: absolute;
-  top: -115px;
-  right: calc(-50% - 130px);
-  transform: translateX(-50%);
+  top: -135px;
+  left: 55%;
 `;
 
 export {
   StyledHeroSection,
+  StyledHeroContainer,
   StyledHeroWrapper,
   StyledHeroLeft,
   StyledHeroLeftHeading,
