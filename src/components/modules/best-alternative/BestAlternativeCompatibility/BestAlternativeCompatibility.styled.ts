@@ -5,6 +5,7 @@ import {
   ICompatibilityAlternative,
   ICompatibilityItem,
 } from "./BestAlternativeCompatibility.types";
+import { Text } from "@src/components/ui/Text";
 
 const StyledCompatibilityTop = styled.div`
   max-width: 817px;
@@ -144,17 +145,15 @@ const StyledCompatibilityCompanySwitcherItem = styled.button<{
 
 const StyledCompatibilityExamplesWrapper = styled.div`
   max-width: 1000px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
   height: 594px;
   position: relative;
 
   @media ${device.tabletS} {
-    margin-bottom: 32px;
     height: 394px;
   }
 
   @media ${device.mobile} {
-    margin-bottom: 24px;
     height: 162px;
   }
 `;
@@ -183,6 +182,18 @@ const StyledCompatibilityExample = styled.div<{
   }}
 `;
 
+const StyledCompatibilityDetails = styled(Text)`
+  margin-top: 40px;
+
+  @media ${device.tabletS} {
+    margin-top: 32px;
+  }
+
+  @media ${device.mobile} {
+    margin-top: 24px;
+  }
+`;
+
 export {
   StyledCompatibilityTop,
   StyledCompatibilityTopTextLink,
@@ -192,4 +203,5 @@ export {
   StyledCompatibilityCompanySwitcherItem,
   StyledCompatibilityExamplesWrapper,
   StyledCompatibilityExample,
+  StyledCompatibilityDetails,
 };

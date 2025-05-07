@@ -15,5 +15,5 @@ export interface ICompatibilityAlternative {
 export interface IBestAlternativeCompatibility {
   alternative: ICompatibilityAlternative;
   items: ICompatibilityItem[];
-  details: React.ReactNode;
+  details?: React.ReactNode;
 }

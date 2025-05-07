@@ -72,6 +72,10 @@ const StyledPresentationLink = styled.a`
       left: calc(50% - 40px);
     }
   }
+
+  @media ${device.tabletS} {
+    height: 51vw;
+  }
 `;
 
 export { StyledPresentationHeading, StyledPresentationLink };

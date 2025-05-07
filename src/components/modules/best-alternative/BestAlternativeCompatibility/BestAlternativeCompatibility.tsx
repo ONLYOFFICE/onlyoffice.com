@@ -10,6 +10,7 @@ import {
   StyledCompatibilitySwitcherItem,
   StyledCompatibilityTop,
   StyledCompatibilityTopTextLink,
+  StyledCompatibilityDetails,
 } from "./BestAlternativeCompatibility.styled";
 import { useState } from "react";
 import { Heading } from "@src/components/ui/Heading";
@@ -113,9 +114,11 @@ const BestAlternativeCompatibility = ({
             );
           })}
         </StyledCompatibilityExamplesWrapper>
-        <Text size={2} textAlign="center">
-          {details}
-        </Text>
+        {details && (
+          <StyledCompatibilityDetails size={2} textAlign="center">
+            {details}
+          </StyledCompatibilityDetails>
+        )}
       </Container>
     </Section>
   );
