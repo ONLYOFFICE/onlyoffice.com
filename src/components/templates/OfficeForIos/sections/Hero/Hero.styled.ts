@@ -20,10 +20,10 @@ const StyledHeroSection = styled(Section)`
 `;
 
 const StyledHeroContainer = styled(Container)`
-  margin-top: 50px;
+  padding-top: 50px;
 
   @media ${device.mobile} {
-    margin-top: 68px;
+    padding-top: 68px;
   }
 `;
 
