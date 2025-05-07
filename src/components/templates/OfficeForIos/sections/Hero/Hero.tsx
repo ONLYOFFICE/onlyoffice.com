@@ -3,15 +3,16 @@ import { Trans, useTranslation } from "next-i18next";
 
 import {
   StyledHeroSection,
+  StyledHeroContainer,
   StyledHeroWrapper,
   StyledHeroLeft,
   StyledHeroLeftButton,
   StyledHeroLeftHeading,
-  StyledHeroRight,
   StyledHeroLeftText,
   StyledHeroLeftImgWrapper,
   StyledHeroLeftImg,
-  StyledHeroContainer,
+  StyledHeroRight,
+  StyledHeroPhoneImgMob,
 } from "./Hero.styled";
 
 const Hero = () => {
@@ -45,6 +46,7 @@ const Hero = () => {
             </StyledHeroLeftImgWrapper>
           </StyledHeroLeft>
           <StyledHeroRight />
+          <StyledHeroPhoneImgMob />
         </StyledHeroWrapper>
       </StyledHeroContainer>
     </StyledHeroSection>
