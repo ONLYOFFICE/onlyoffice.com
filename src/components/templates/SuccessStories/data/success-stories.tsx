@@ -1,4 +1,4 @@
-// текст в значениях ключей — это путь в json файлы по переводам (success-stories.json)
+// the text in the key values ​​is the path to the json files for translations (success-stories.json)
 export const data = [
   {
     id: 1,
