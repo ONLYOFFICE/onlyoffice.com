@@ -46,7 +46,7 @@ const StyledHeroLeft = styled.div`
 
 const StyledHeroLeftHeading = styled(Heading)`
   position: relative;
-  z-index: 10;
+  z-index: 1;
   margin-top: 90px;
 
   @media ${device.tabletS} {
@@ -88,6 +88,8 @@ const StyledHeroLeftButton = styled(Button)`
   background-image: url("/images/templates/office-for-ios/hero/app-store_btn.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
+  z-index: 2;
 
   @media ${device.tabletS} {
     margin: 40px auto 0;
