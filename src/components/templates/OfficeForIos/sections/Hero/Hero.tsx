@@ -13,18 +13,16 @@ import {
   StyledHeroLeftImg,
   StyledHeroRight,
   StyledHeroPhoneImgMob,
+  StyledHeroFooterHeading,
+  StyledHeroFooterImgLink,
+  StyledHeroFooterText,
+  StyledHeroFooter,
 } from "./Hero.styled";
 
 const Hero = () => {
   const { t } = useTranslation("office-for-ios");
   return (
-    <StyledHeroSection
-      background="#fafafa"
-      desktopSpacing={["112px", "0"]}
-      tabletSpacing={["88px", "0"]}
-      tabletSmallSpacing={["80px", "0"]}
-      mobileSpacing={["48px", "0"]}
-    >
+    <StyledHeroSection background="#fafafa">
       <StyledHeroContainer>
         <StyledHeroWrapper>
           <StyledHeroLeft>
@@ -53,6 +51,24 @@ const Hero = () => {
           </StyledHeroLeft>
           <StyledHeroRight />
           <StyledHeroPhoneImgMob />
+          <StyledHeroFooter>
+            <StyledHeroFooterImgLink
+              href="https://www.educationalappstore.com/app/onlyoffice-documents"
+              target="_blank"
+            />
+            <StyledHeroFooterHeading size={3} textAlign="center">
+              <Trans
+                t={t}
+                i18nKey="OneAppThreeEditors"
+                components={[<Text key="0" as="span" color="main" label="0" />]}
+              />
+            </StyledHeroFooterHeading>
+            <StyledHeroFooterText
+              size={1}
+              label={t("CompatibleWithMSOffice")}
+              textAlign="center"
+            />
+          </StyledHeroFooter>
         </StyledHeroWrapper>
       </StyledHeroContainer>
     </StyledHeroSection>

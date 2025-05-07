@@ -5,6 +5,7 @@ import { Section } from "@src/components/ui/Section";
 import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
+import { Link } from "@src/components/ui/Link";
 
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
@@ -110,7 +111,7 @@ const StyledHeroLeftText = styled(Text)`
 `;
 
 const StyledHeroLeftImgWrapper = styled.div`
-  width: 498px;
+  width: 0;
   height: 498px;
   position: relative;
 
@@ -226,6 +227,28 @@ const StyledHeroPhoneImgMob = styled.div`
   }
 `;
 
+const StyledHeroFooter = styled.div`
+  margin-top: -195px;
+`;
+
+const StyledHeroFooterImgLink = styled(Link)`
+  display: block;
+  width: 172px;
+  height: 172px;
+  margin: 0 auto;
+  background-image: url("/images/templates/office-for-ios/hero/award.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+`;
+
+const StyledHeroFooterHeading = styled(Heading)`
+  margin-top: 30px;
+`;
+
+const StyledHeroFooterText = styled(Text)`
+  margin-top: 20px;
+`;
+
 export {
   StyledHeroSection,
   StyledHeroContainer,
@@ -238,4 +261,8 @@ export {
   StyledHeroLeftImg,
   StyledHeroRight,
   StyledHeroPhoneImgMob,
+  StyledHeroFooter,
+  StyledHeroFooterImgLink,
+  StyledHeroFooterHeading,
+  StyledHeroFooterText,
 };
