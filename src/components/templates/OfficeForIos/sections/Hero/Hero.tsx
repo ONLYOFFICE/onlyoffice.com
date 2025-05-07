@@ -23,7 +23,7 @@ const Hero = () => {
   const { t } = useTranslation("office-for-ios");
   return (
     <StyledHeroSection background="#fafafa">
-      <StyledHeroContainer>
+      <StyledHeroContainer tabletSpacing="16px">
         <StyledHeroWrapper>
           <StyledHeroLeft>
             <StyledHeroLeftHeading size={2}>

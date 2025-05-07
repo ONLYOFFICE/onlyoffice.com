@@ -111,9 +111,10 @@ const StyledHeroLeftText = styled(Text)`
 `;
 
 const StyledHeroLeftImgWrapper = styled.div`
-  width: 0;
+  width: 498px;
   height: 498px;
   position: relative;
+  pointer-events: none;
 
   @media ${device.tabletS} {
     display: none;
@@ -190,6 +191,7 @@ const StyledHeroPhoneImgMob = styled.div`
   z-index: 1;
   transform: scale(0.75);
   margin: -40px auto 0;
+  pointer-events: none;
 
   @media ${device.tabletS} {
     display: block;
@@ -229,6 +231,14 @@ const StyledHeroPhoneImgMob = styled.div`
 
 const StyledHeroFooter = styled.div`
   margin-top: -195px;
+
+  @media ${device.tabletS} {
+    margin-top: 25px;
+  }
+
+  @media ${device.mobileS} {
+    margin-top: -110px;
+  }
 `;
 
 const StyledHeroFooterImgLink = styled(Link)`
@@ -243,10 +253,22 @@ const StyledHeroFooterImgLink = styled(Link)`
 
 const StyledHeroFooterHeading = styled(Heading)`
   margin-top: 30px;
+
+  @media ${device.tabletS} {
+    font-size: 32px;
+  }
+
+  @media ${device.mobile} {
+    font-size: 24px;
+  }
 `;
 
 const StyledHeroFooterText = styled(Text)`
   margin-top: 20px;
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
 `;
 
 export {
