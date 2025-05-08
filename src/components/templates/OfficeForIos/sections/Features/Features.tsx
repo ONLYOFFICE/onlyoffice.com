@@ -1,9 +1,10 @@
-import { useRef } from 'react';
+import { useRef } from "react";
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
 import { featuresAnimation } from "./lib/featuresAnimation";
+import { items } from "./data/items";
 
 import {
   StyledFeaturesAside,
@@ -16,9 +17,10 @@ import {
 } from "./Features.styled";
 
 const Features = () => {
+  const { t } = useTranslation("office-for-ios");
   const containerRef = useRef<HTMLDivElement>(null);
   featuresAnimation(containerRef);
-  const { t } = useTranslation("office-for-ios");
+  const len = items.length;
 
   return (
     <Section background="#FAFAFA" desktopSpacing={["0", "112px"]}>
@@ -26,107 +28,47 @@ const Features = () => {
         <StyledFeaturesWrapper ref={containerRef}>
           <StyledFeaturesAside>
             <StyledFeaturesAsideTablet>
-              <StyledFeaturesAsideTabletImg
-                className="tabletImage"
-                $zIndex="5"
-                $bgUrlTablet="/images/templates/office-for-ios/features/img-tablet_1.webp"
-              />
-              <StyledFeaturesAsideTabletImg
-                className="tabletImage"
-                $zIndex="4"
-                $bgUrlTablet="/images/templates/office-for-ios/features/img-tablet_2.webp"
-              />
-              <StyledFeaturesAsideTabletImg
-                className="tabletImage"
-                $zIndex="3"
-                $bgUrlTablet="/images/templates/office-for-ios/features/img-tablet_3.webp"
-              />
-              <StyledFeaturesAsideTabletImg
-                className="tabletImage"
-                $zIndex="2"
-                $bgUrlTablet="/images/templates/office-for-ios/features/img-tablet_4.webp"
-              />
-              <StyledFeaturesAsideTabletImg
-                className="tabletImage"
-                $zIndex="1"
-                $bgUrlTablet="/images/templates/office-for-ios/features/img-tablet_5.webp"
-              />
+              {items.map((item, i) => {
+                const reverseIndex = len - i;
+                return (
+                  <StyledFeaturesAsideTabletImg
+                    key={item.heading}
+                    className="tabletImage"
+                    $zIndex={String(reverseIndex)}
+                    $bgUrlTablet={item.bgUrlTablet}
+                  />
+                );
+              })}
             </StyledFeaturesAsideTablet>
             <StyledFeaturesAsideMobile>
-              <StyledFeaturesAsideMobileImg
-                className="mobileImage"
-                $zIndex="5"
-                $bgUrlMobile="/images/templates/office-for-ios/features/img-mobile_1.webp"
-              />
-              <StyledFeaturesAsideMobileImg
-                className="mobileImage"
-                $zIndex="4"
-                $bgUrlMobile="/images/templates/office-for-ios/features/img-mobile_2.webp"
-              />
-              <StyledFeaturesAsideMobileImg
-                className="mobileImage"
-                $zIndex="3"
-                $bgUrlMobile="/images/templates/office-for-ios/features/img-mobile_3.webp"
-              />
-              <StyledFeaturesAsideMobileImg
-                className="mobileImage"
-                $zIndex="2"
-                $bgUrlMobile="/images/templates/office-for-ios/features/img-mobile_4.webp"
-              />
-              <StyledFeaturesAsideMobileImg
-                className="mobileImage"
-                $zIndex="1"
-                $bgUrlMobile="/images/templates/office-for-ios/features/img-mobile_5.webp"
-              />
+              {items.map((item, i) => {
+                const reverseIndex = len - i;
+                return (
+                  <StyledFeaturesAsideMobileImg
+                    key={item.heading}
+                    className="mobileImage"
+                    $zIndex={String(reverseIndex)}
+                    $bgUrlMobile={item.bgUrlMobile}
+                  />
+                );
+              })}
             </StyledFeaturesAsideMobile>
           </StyledFeaturesAside>
           <StyledFeaturesContentList>
-            <FeatureItem
-              className="item"
-              maxWidth="280px"
-              icon={{
-                url: "/images/storybook/widgets/feature-item/working.svg",
-                positionX: "left",
-              }}
-              heading="Full-featured text processor"
-              text="Make use of multiple text processing tools : page, paragraph and text formatting, tables, autoshapes, charts, etc. Create text documents of any size and complexity. Print them via AirPrint."
-            />
-            <FeatureItem
-              className="item"
-              maxWidth="280px"
-              icon={{
-                url: "/images/storybook/widgets/feature-item/working.svg",
-              }}
-              heading="Heading"
-              text="Working with office files directly within the Box frontend"
-            />
-            <FeatureItem
-              className="item"
-              maxWidth="280px"
-              icon={{
-                url: "/images/storybook/widgets/feature-item/working.svg",
-              }}
-              heading="Heading"
-              text="Working with office files directly within the Box frontend"
-            />
-            <FeatureItem
-              className="item"
-              maxWidth="280px"
-              icon={{
-                url: "/images/storybook/widgets/feature-item/working.svg",
-              }}
-              heading="Heading"
-              text="Working with office files directly within the Box frontend"
-            />
-            <FeatureItem
-              className="item"
-              maxWidth="280px"
-              icon={{
-                url: "/images/storybook/widgets/feature-item/working.svg",
-              }}
-              heading="Heading"
-              text="Working with office files directly within the Box frontend"
-            />
+            {items.map((item, i) => {
+              return (
+                <FeatureItem
+                  key={item.heading}
+                  className="item"
+                  maxWidth="280px"
+                  icon={{
+                    url: item.iconUrl,
+                  }}
+                  heading={item.heading}
+                  text={item.text}
+                />
+              );
+            })}
           </StyledFeaturesContentList>
         </StyledFeaturesWrapper>
       </Container>
