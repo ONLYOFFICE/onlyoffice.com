@@ -1,45 +1,75 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { IFeaturesItem } from "./Features.types";
 
 const StyledFeaturesWrapper = styled.div`
   display: flex;
   position: relative;
-  gap: 75px;
 `;
 
 const StyledFeaturesAside = styled.aside`
   width: 1090px;
   height: 80vh;
   box-sizing: content-box;
-  background-color: gray;
   position: sticky;
   top: calc(10vh + 36px);
   left: 0;
 `;
 
 const StyledFeaturesAsideTablet = styled.div`
-  background-image: url("/images/templates/office-for-ios/features/aside_tablet.webp");
+  background-image: url("/images/templates/office-for-ios/features/tablet.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: blue;
   width: 100%;
-  height: 80%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
 `;
-const StyledFeaturesAsideMobile = styled.div`
-  background-image: url("/images/templates/office-for-ios/features/aside_tablet.webp");
+
+const StyledFeaturesAsideTabletImg = styled.div<{
+  $bgUrlTablet: IFeaturesItem["bgUrlTablet"];
+  $zIndex: IFeaturesItem["zIndex"];
+}>`
+  background-image: ${(props) => `url(${props.$bgUrlTablet})`};
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: pink;
-  width: 40%;
-  height: 30%;
+  width: 80%;
+  height: 65%;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 48%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  z-index: ${(props) => props.$zIndex};
+`;
+
+const StyledFeaturesAsideMobile = styled.div`
+  background-image: url("/images/templates/office-for-ios/features/mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40%;
+  height: 75%;
+  position: absolute;
+  top: 16%;
+  right: 0;
   z-index: 11;
+`;
+
+const StyledFeaturesAsideMobileImg = styled.div<{
+  $bgUrlMobile: IFeaturesItem["bgUrlMobile"];
+  $zIndex: IFeaturesItem["zIndex"];
+}>`
+  background-image: ${(props) => `url(${props.$bgUrlMobile})`};
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 78%;
+  position: absolute;
+  top: 47%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  z-index: ${(props) => props.$zIndex};
 `;
 
 const StyledFeaturesContentList = styled.div`
@@ -55,6 +85,8 @@ export {
   StyledFeaturesWrapper,
   StyledFeaturesAside,
   StyledFeaturesAsideTablet,
+  StyledFeaturesAsideTabletImg,
   StyledFeaturesAsideMobile,
+  StyledFeaturesAsideMobileImg,
   StyledFeaturesContentList,
 };
