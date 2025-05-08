@@ -40,7 +40,7 @@ const StyledCostContentLeft = styled.div`
   width: 50%;
 
   @media ${device.tabletS} {
-    padding: 32px 0 32px 32px;
+    padding: 32px 21px 32px 32px;
   }
 
   @media ${device.mobile} {
@@ -72,10 +72,6 @@ const StyledCostList = styled.ul`
   @media ${device.tabletS} {
     font-size: 14px;
     margin: 20px 0 12px;
-  }
-
-  @media ${device.mobile} {
-    font-size: 18px;
   }
 `;
 

@@ -15,9 +15,10 @@ const CardLink = ({
   href,
   title,
   text,
+  textAlign = "center",
   subtitle,
   widthDesktop = "352px",
-  widthTablet = "284px",
+  widthDesktopSmall = "29.33vw",
   widthTabletSmall = "208px",
   widthMobile = "238px",
   icon: {
@@ -36,9 +37,10 @@ const CardLink = ({
       className={className}
       href={href}
       $widthDesktop={widthDesktop}
-      $widthTablet={widthTablet}
+      $widthDesktopSmall={widthDesktopSmall}
       $widthTabletSmall={widthTabletSmall}
       $widthMobile={widthMobile}
+      $textAlign={textAlign}
     >
       <StyledCardLinkTop
         $iconUrl={iconUrl}
@@ -59,13 +61,13 @@ const CardLink = ({
             label={title}
             color="#333333"
             size={4}
-            textAlign="center"
+            textAlign={textAlign}
           />
           <StyledCardLinkText
             label={text}
             color="#666666"
             size={2}
-            textAlign="center"
+            textAlign={textAlign}
           />
         </div>
         {subtitle && (
@@ -74,6 +76,7 @@ const CardLink = ({
             textDecoration="underline"
             size={2}
             label={subtitle}
+            $textAlign={textAlign}
           />
         )}
       </StyledCardLinkContent>

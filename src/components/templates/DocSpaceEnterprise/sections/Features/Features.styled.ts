@@ -56,9 +56,15 @@ const StyledFeaturesItem = styled(FeatureItem)`
     }
   }
 
-  @media screen and (max-width: 1070px) {
+  @media ${device.tablet} {
     &:nth-child(-n + 3) {
       max-width: 208px;
+
+      @media ${device.tabletS} {
+        & {
+          max-width: 328px;
+        }
+      }
 
       @media ${device.mobile} {
         & {

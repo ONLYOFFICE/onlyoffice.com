@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -7,9 +7,10 @@ import type { ICardLink } from "./CardLink.types";
 
 const StyledCardLink = styled(Link)<{
   $widthDesktop: ICardLink["widthDesktop"];
-  $widthTablet: ICardLink["widthTablet"];
+  $widthDesktopSmall: ICardLink["widthDesktopSmall"];
   $widthTabletSmall: ICardLink["widthTabletSmall"];
   $widthMobile: ICardLink["widthMobile"];
+  $textAlign: ICardLink["textAlign"];
 }>`
   background: #ffffff;
   border-radius: 5px;
@@ -20,8 +21,8 @@ const StyledCardLink = styled(Link)<{
   transition: box-shadow 0.3s;
   flex-shrink: 0;
 
-  @media ${device.tablet} {
-    width: ${(props) => props.$widthTablet};
+  @media ${device.desktop} {
+    width: ${(props) => props.$widthDesktopSmall};
   }
 
   @media ${device.tabletS} {
@@ -36,7 +37,10 @@ const StyledCardLink = styled(Link)<{
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
 
     & > div:last-child > p::after {
-      transform: translate(8px, -50%);
+      transform: ${(props) =>
+        props.$textAlign === "right"
+          ? "translate(-8px, -50%)"
+          : "translate(8px, -50%)"};
       opacity: 1;
     }
   }
@@ -115,13 +119,25 @@ const StyledCardLinkText = styled(Text)`
   }
 `;
 
-const StyledCardLinkSubtitle = styled(Text)`
+const StyledCardLinkSubtitle = styled(Text)<{
+  $textAlign: ICardLink["textAlign"];
+}>`
   position: relative;
   width: fit-content;
-  margin: 0 auto 32px;
+  margin: ${(props) =>
+    props.$textAlign === "left"
+      ? "0 auto 32px 32px"
+      : props.$textAlign === "right"
+      ? "0 32px 32px auto"
+      : "0 auto 32px"};
 
   @media ${device.tablet} {
-    margin: 0 auto 16px;
+    margin: ${(props) =>
+      props.$textAlign === "left"
+        ? "0 auto 16px 16px"
+        : props.$textAlign === "right"
+        ? "0 16px 16px auto"
+        : "0 auto 16px"};
   }
 
   @media ${device.tabletS} {
@@ -135,7 +151,14 @@ const StyledCardLinkSubtitle = styled(Text)`
     height: 20px;
     position: absolute;
     top: 50%;
-    right: -21px;
+    ${(props) =>
+      props.$textAlign === "right"
+        ? css`
+            left: -21px;
+          `
+        : css`
+            right: -21px;
+          `}
     transform: translate(0, -50%);
     background-image: url("/images/icons/arrow-in-circle.svg");
     background-repeat: no-repeat;

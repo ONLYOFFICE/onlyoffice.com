@@ -7,7 +7,9 @@ import type { IFeatureButtonItem } from "./FeatureButtonItem.types";
 const StyledFeatureButtonItem = styled.div<{
   $desktopMaxWidth: IFeatureButtonItem["desktopMaxWidth"];
   $tabletMaxWidth: IFeatureButtonItem["tabletMaxWidth"];
+  $tabletSmallMaxWidth: IFeatureButtonItem["tabletSmallMaxWidth"];
   $mobileMaxWidth: IFeatureButtonItem["mobileMaxWidth"];
+  $mobileSmallMaxWidth: IFeatureButtonItem["mobileSmallMaxWidth"];
   $position: IFeatureButtonItem["position"];
 }>`
   max-width: ${(props) => props.$desktopMaxWidth};
@@ -18,8 +20,16 @@ const StyledFeatureButtonItem = styled.div<{
     max-width: ${(props) => props.$tabletMaxWidth};
   }
 
+  @media ${device.tabletS} {
+    max-width: ${(props) => props.$tabletSmallMaxWidth};
+  }
+
   @media ${device.mobile} {
     max-width: ${(props) => props.$mobileMaxWidth};
+  }
+
+  @media ${device.mobileS} {
+    max-width: ${(props) => props.$mobileSmallMaxWidth};
   }
 `;
 

@@ -7,8 +7,12 @@ export interface IFeatureButtonItem {
   desktopMaxWidth?: string;
   /** Maximum width of the component on Tablet. Default: "328px"  */
   tabletMaxWidth?: string;
+  /** Maximum width of the component on Tablet. Default: "328px"  */
+  tabletSmallMaxWidth?: string;
   /** Maximum width of the component on Mobile. Default: "328px" */
   mobileMaxWidth?: string;
+  /** Maximum width of the component on Mobile. Default: "288px" */
+  mobileSmallMaxWidth?: string;
   icon: {
     /** The icon url. */
     url: string;

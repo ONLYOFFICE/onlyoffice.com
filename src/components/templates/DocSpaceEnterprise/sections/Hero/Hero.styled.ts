@@ -16,11 +16,17 @@ const StyledHero = styled(Section)`
 
   @media ${device.tablet} {
     margin-top: -64px;
-    background-position: 65% -50px;
+    background-image: url("/images/templates/docspace-enterprise/hero/bg_mob.svg");
+    background-size: 3030px auto;
+    background-position: 53% 97%;
   }
 
   @media ${device.tabletS} {
     margin-top: -48px;
+  }
+
+  @media ${device.mobileS} {
+    background-position: 54.3% 86%;
   }
 `;
 
@@ -64,10 +70,14 @@ const StyledHeroBtnWrapper = styled.div`
 
 const StyledHeroImgWrapper = styled.div<{ $imageUrl: string }>`
   background-image: ${(props) => `url(${props.$imageUrl})`};
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position-x: center;
   height: 628px;
+
+  @media screen and (max-width: 1920px) {
+    background-size: cover;
+  }
 
   @media ${device.tablet} {
     height: 380px;

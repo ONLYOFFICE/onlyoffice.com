@@ -12,7 +12,9 @@ const FeatureButtonItem = ({
   className,
   desktopMaxWidth = "544px",
   tabletMaxWidth = "328px",
+  tabletSmallMaxWidth = "328px",
   mobileMaxWidth = "328px",
+  mobileSmallMaxWidth = "288px",
   icon: { url, width = "64px", height = "64px", mobileWidth, mobileHeight },
   heading,
   text,
@@ -26,7 +28,9 @@ const FeatureButtonItem = ({
       className={className}
       $desktopMaxWidth={desktopMaxWidth}
       $tabletMaxWidth={tabletMaxWidth}
+      $tabletSmallMaxWidth={tabletSmallMaxWidth}
       $mobileMaxWidth={mobileMaxWidth}
+      $mobileSmallMaxWidth={mobileSmallMaxWidth}
       $position={position}
     >
       <StyledFeatureButtonItemIcon

@@ -9,12 +9,14 @@ interface ICardLink {
   title: string;
   /** Text */
   text: string;
+  /** Text align */
+  textAlign?: "left" | "center" | "right";
   /** Subtitle. Have link-hover effect */
   subtitle?: string;
   /** The width on Desktop. Default: "352px" */
   widthDesktop?: string;
-  /** The width on Tablet. Default: "284px" */
-  widthTablet?: string;
+  /** The width on Desktop Small. Default: "29.33vw" */
+  widthDesktopSmall?: string;
   /** The width on Tablet Small. Default: "208px" */
   widthTabletSmall?: string;
   /** The width on Mobile. Default: "238px" */

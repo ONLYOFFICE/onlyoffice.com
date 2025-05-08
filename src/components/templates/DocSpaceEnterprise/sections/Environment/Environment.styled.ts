@@ -29,6 +29,14 @@ const StyledEnvironmentList = styled.div`
     gap: 0;
   }
 
+  @media ${device.tabletS} {
+    gap: 64px;
+  }
+
+  @media ${device.mobile} {
+    gap: 41px;
+  }
+
   .item {
     justify-content: center;
 
