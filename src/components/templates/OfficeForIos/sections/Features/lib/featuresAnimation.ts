@@ -6,7 +6,7 @@ import { RefObject } from "react";
 const outerFeaturesAnimation = () => {
   gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-  return function innerFeaturesAnimation(
+  return function useInnerFeaturesAnimation(
     containerRef: RefObject<HTMLDivElement | null>,
   ) {
     useGSAP(

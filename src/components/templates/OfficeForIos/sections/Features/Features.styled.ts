@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "@src/utils/device";
+// import { device } from "@src/utils/device";
 import { IFeaturesItem } from "./Features.types";
 
 const StyledFeaturesWrapper = styled.div`

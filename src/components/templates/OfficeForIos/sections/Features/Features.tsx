@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
@@ -17,7 +17,7 @@ import {
 } from "./Features.styled";
 
 const Features = () => {
-  const { t } = useTranslation("office-for-ios");
+  // const { t } = useTranslation("office-for-ios");
   const containerRef = useRef<HTMLDivElement>(null);
   featuresAnimation(containerRef);
   const len = items.length;
@@ -32,7 +32,7 @@ const Features = () => {
                 const reverseIndex = len - i;
                 return (
                   <StyledFeaturesAsideTabletImg
-                    key={item.heading}
+                    key={`${item.heading} TabletImg`}
                     className="tabletImage"
                     $zIndex={String(reverseIndex)}
                     $bgUrlTablet={item.bgUrlTablet}
@@ -45,7 +45,7 @@ const Features = () => {
                 const reverseIndex = len - i;
                 return (
                   <StyledFeaturesAsideMobileImg
-                    key={item.heading}
+                    key={`${item.heading} MobileImg`}
                     className="mobileImage"
                     $zIndex={String(reverseIndex)}
                     $bgUrlMobile={item.bgUrlMobile}
@@ -55,7 +55,7 @@ const Features = () => {
             </StyledFeaturesAsideMobile>
           </StyledFeaturesAside>
           <StyledFeaturesContentList>
-            {items.map((item, i) => {
+            {items.map((item) => {
               return (
                 <FeatureItem
                   key={item.heading}
