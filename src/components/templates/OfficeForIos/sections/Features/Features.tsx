@@ -1,11 +1,9 @@
-import { useRef } from "react";
-import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from 'react';
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
+import { featuresAnimation } from "./lib/featuresAnimation";
 
 import {
   StyledFeaturesAside,
@@ -17,44 +15,9 @@ import {
   StyledFeaturesWrapper,
 } from "./Features.styled";
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
-
 const Features = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-
-  useGSAP(
-    () => {
-      const items = gsap.utils.toArray(".item");
-      const tabletImages = gsap.utils.toArray(".tabletImage");
-      const mobileImages = gsap.utils.toArray(".mobileImage");
-
-      for (let i = 0; i < items.length - 1; i += 1) {
-        gsap.to(tabletImages[i] as HTMLElement, {
-          opacity: 0,
-          scrollTrigger: {
-            trigger: items[i] as HTMLElement,
-            start: "bottom center+=30%",
-            end: "bottom center-=30%",
-            scrub: true,
-            // markers: true,
-          },
-        });
-
-        gsap.to(mobileImages[i] as HTMLElement, {
-          opacity: 0,
-          scrollTrigger: {
-            trigger: items[i] as HTMLElement,
-            start: "bottom center+=30%",
-            end: "bottom center-=30%",
-            scrub: true,
-            // markers: true,
-          },
-        });
-      }
-    },
-    { scope: containerRef },
-  );
-
+  featuresAnimation(containerRef);
   const { t } = useTranslation("office-for-ios");
 
   return (
@@ -171,4 +134,4 @@ const Features = () => {
   );
 };
 
-export { Features };
+export { Features, featuresAnimation };
