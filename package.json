@@ -12,7 +12,9 @@
     "clean-cache": "rimraf .next/cache"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "dayjs": "^1.11.13",
+    "gsap": "^3.13.0",
     "html-react-parser": "^5.2.3",
     "i18next": "^24.2.2",
     "i18next-http-backend": "^3.0.2",
