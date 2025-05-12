@@ -6,5 +6,20 @@
   "AbsolutelyFree": "Absolutely <0>free</0>. No ads. No in-app purchases.",
 
   "OneAppThreeEditors": "One app - <0>Three editors</0> - Multiple features",
-  "CompatibleWithMSOffice": "100% compatible with MS Office formats"
+  "CompatibleWithMSOffice": "100% compatible with MS Office formats",
+
+  "FeaturesItemHeadingFull": "Full-featured text processor",
+  "FeaturesItemTextMakeUse": "Make use of multiple text processing tools : page, paragraph and text formatting, tables, autoshapes, charts, etc. Create text documents of any size and complexity. Print them via AirPrint.",
+
+  "FeaturesItemHeadingComplete": "Complete spreadsheet editor",
+  "FeaturesItemTextManage": "Manage your spreadsheet data: work with rows and columns, adjust cell parameters, use more than 450 formulas, sort and filter data.",
+
+  "FeaturesItemHeadingCollaborative": "Collaborative presentation editor",
+  "FeaturesItemTextMakeWork": "Work with all popular objects on your slides: insert images, add and edit autoshapes, charts and graphs, texts and other Featuresitems.",
+
+  "FeaturesItemHeadingOnline": "Online form filler",
+  "FeaturesItemTextMakeView": "View and fill out forms. Easily navigate from field to field. Save the result as a PDF or DOCX file.",
+
+  "FeaturesItemHeadingPDF": "PDF viewer and media player",
+  "FeaturesItemTextMakeViewPDF": "View PDF documents and images, play audio and video files. Open .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc."
 }

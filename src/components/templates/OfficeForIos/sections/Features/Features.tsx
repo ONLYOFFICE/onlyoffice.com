@@ -1,5 +1,5 @@
 import { useRef } from "react";
-// import { useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -24,7 +24,7 @@ import {
 } from "./Features.styled";
 
 const Features = () => {
-  // const { t } = useTranslation("office-for-ios");
+  const { t } = useTranslation("office-for-ios");
   const containerRef = useRef<HTMLDivElement>(null);
   featuresAnimation(containerRef);
   const len = items.length;
@@ -41,8 +41,8 @@ const Features = () => {
         <StyledFeaturesWrapper ref={containerRef}>
           <StyledFeaturesAside>
             <StyledFeaturesAsideTablet>
-              {items.map((item, i) => {
-                const reverseIndex = len - i;
+              {items.map((item, index) => {
+                const reverseIndex = len - index;
                 return (
                   <StyledFeaturesAsideTabletImg
                     key={`${item.heading} TabletImg`}
@@ -54,8 +54,8 @@ const Features = () => {
               })}
             </StyledFeaturesAsideTablet>
             <StyledFeaturesAsideMobile>
-              {items.map((item, i) => {
-                const reverseIndex = len - i;
+              {items.map((item, index) => {
+                const reverseIndex = len - index;
                 return (
                   <StyledFeaturesAsideMobileImg
                     key={`${item.heading} MobileImg`}
@@ -77,8 +77,8 @@ const Features = () => {
                   icon={{
                     url: item.iconUrl,
                   }}
-                  heading={item.heading}
-                  text={item.text}
+                  heading={t(item.heading)}
+                  text={t(item.text)}
                 />
               );
             })}
@@ -94,7 +94,7 @@ const Features = () => {
           >
             {items.map((item, index) => {
               return (
-                <SwiperSlide className="slide" key={item.heading}>
+                <SwiperSlide className="slide" key={`${item.heading} Slide`}>
                   <StyledFeaturesAside>
                     <StyledFeaturesAsideTablet>
                       <StyledFeaturesAsideTabletImg
@@ -115,8 +115,8 @@ const Features = () => {
                     icon={{
                       url: item.iconUrl,
                     }}
-                    heading={item.heading}
-                    text={item.text}
+                    heading={t(item.heading)}
+                    text={t(item.text)}
                   />
                 </SwiperSlide>
               );
