@@ -1,10 +1,14 @@
 import styled from "styled-components";
-// import { device } from "@src/utils/device";
+import { device } from "@src/utils/device";
 import { IFeaturesItem } from "./Features.types";
 
 const StyledFeaturesWrapper = styled.div`
   display: flex;
   position: relative;
+
+  @media ${device.tablet} {
+    display: none;
+  }
 `;
 
 const StyledFeaturesAside = styled.aside`
@@ -14,6 +18,13 @@ const StyledFeaturesAside = styled.aside`
   position: sticky;
   top: calc(10vh + 36px);
   left: 0;
+
+  @media ${device.tablet} {
+    position: relative;
+    width: 100%;
+    height: 48.82vw;
+    top: 0;
+  }
 `;
 
 const StyledFeaturesAsideTablet = styled.div`
@@ -26,6 +37,11 @@ const StyledFeaturesAsideTablet = styled.div`
   top: 0;
   left: 0;
   z-index: 10;
+
+  @media ${device.tablet} {
+    width: 65vw;
+    height: 50vw;
+  }
 `;
 
 const StyledFeaturesAsideTabletImg = styled.div<{
@@ -42,6 +58,14 @@ const StyledFeaturesAsideTabletImg = styled.div<{
   left: 45%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
+
+  @media ${device.tablet} {
+    width: 100%;
+    height: 100%;
+    left: 47%;
+    top: 48%;
+    transform: translate(-50%, -50%) scale(0.65);
+  }
 `;
 
 const StyledFeaturesAsideMobile = styled.div`
@@ -54,6 +78,12 @@ const StyledFeaturesAsideMobile = styled.div`
   top: 16%;
   right: 0;
   z-index: 11;
+
+  @media ${device.tablet} {
+    width: 40vw;
+    height: 50vw;
+    top: 0;
+  }
 `;
 
 const StyledFeaturesAsideMobileImg = styled.div<{
@@ -70,6 +100,14 @@ const StyledFeaturesAsideMobileImg = styled.div<{
   left: 40%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
+
+  @media ${device.tablet} {
+    width: 100%;
+    height: 100%;
+    left: 53%;
+    top: 47%;
+    transform: translate(-50%, -50%) scale(0.78);
+  }
 `;
 
 const StyledFeaturesContentList = styled.div`
@@ -81,6 +119,42 @@ const StyledFeaturesContentList = styled.div`
   }
 `;
 
+const StyledFeaturesCarousel = styled.div`
+  display: none;
+
+  @media ${device.tablet} {
+    display: block;
+  }
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      background-color: #666666;
+      opacity: 1;
+      transition-duration: 200ms;
+
+      &.swiper-pagination-bullet-active {
+        background-color: #ff6f3d;
+        transform: scale(1.2);
+      }
+    }
+
+    @media ${device.mobile} {
+      margin-top: 32px;
+    }
+  }
+
+  .item {
+    margin: 0 auto;
+  }
+`;
+
 export {
   StyledFeaturesWrapper,
   StyledFeaturesAside,
@@ -89,4 +163,5 @@ export {
   StyledFeaturesAsideMobile,
   StyledFeaturesAsideMobileImg,
   StyledFeaturesContentList,
+  StyledFeaturesCarousel,
 };
