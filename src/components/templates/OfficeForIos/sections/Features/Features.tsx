@@ -32,10 +32,10 @@ const Features = () => {
   return (
     <Section
       background="#FAFAFA"
-      desktopSpacing={["0", "112px"]}
-      tabletSpacing={["0", "88px"]}
-      tabletSmallSpacing={["0", "80px"]}
-      mobileSpacing={["0", "48px"]}
+      desktopSpacing={["0", "0"]}
+      tabletSpacing={["0", "0"]}
+      tabletSmallSpacing={["0", "0"]}
+      mobileSpacing={["0", "0"]}
     >
       <Container maxWidth="1920px">
         <StyledFeaturesWrapper ref={containerRef}>
