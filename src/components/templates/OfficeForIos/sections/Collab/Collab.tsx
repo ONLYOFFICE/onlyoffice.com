@@ -1,5 +1,4 @@
 import { Section } from "@src/components/ui/Section";
-import { Container } from "@src/components/ui/Container";
 
 import {
   StyledCollabWrapper,
@@ -8,8 +7,11 @@ import {
   StyledCollabRight,
   StyledCollabText,
 } from "./Collab.styled";
+import { useTranslation } from "next-i18next";
 
 const Collab = () => {
+  const { t } = useTranslation("office-for-ios");
+
   return (
     <Section
       desktopSpacing={["88px", "0"]}
@@ -23,12 +25,9 @@ const Collab = () => {
           <StyledCollabHeading
             level={2}
             size={3}
-            label="Real-time collaboration"
+            label={t("RealTimeCollaboration")}
           />
-          <StyledCollabText
-            size={1}
-            label="Be more productive. Connect your app to the ONLYOFFICE cloud. Share docs to co-edit them with your teammates in real time. Comment and track changes. Add graphic annotations."
-          />
+          <StyledCollabText size={1} label={t("BeMoreProductive")} />
         </StyledCollabLeft>
         <StyledCollabRight />
       </StyledCollabWrapper>
