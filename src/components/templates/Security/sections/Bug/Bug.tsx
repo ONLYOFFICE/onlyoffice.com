@@ -28,7 +28,7 @@ const Bug = () => {
                 </StyledHeading>
                 {Array.isArray(text.label)
                 ? text.label.map((labelKey, idx) => (
-                    <StyledText as="p" textAlign="center" key={idx}>
+                    <StyledText as="p" key={idx}>
                       <Trans
                         t={t}
                         i18nKey={labelKey}
