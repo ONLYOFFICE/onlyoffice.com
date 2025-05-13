@@ -5,6 +5,7 @@ import { Collab } from "./sections/Collab";
 import { VideoCard } from "./sections/VideoCard";
 import { Choose } from "./sections/Choose";
 import { GetMore } from "./sections/GetMore";
+import { Learn } from "./sections/Learn";
 
 const OfficeForIosTemplate = () => {
   return (
@@ -16,6 +17,7 @@ const OfficeForIosTemplate = () => {
       <VideoCard />
       <Choose />
       <GetMore />
+      <Learn />
     </>
   );
 };

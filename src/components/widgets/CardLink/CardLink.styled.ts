@@ -131,7 +131,7 @@ const StyledCardLinkSubtitle = styled(Text)<{
       ? "0 32px 32px auto"
       : "0 auto 32px"};
 
-  @media ${device.tablet} {
+  @media ${device.tabletS} {
     margin: ${(props) =>
       props.$textAlign === "left"
         ? "0 auto 16px 16px"
