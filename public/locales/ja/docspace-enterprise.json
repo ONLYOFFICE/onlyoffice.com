@@ -1,0 +1,104 @@
+{
+  "PageTitle": "企業向けONLYOFFICE DocSpace | ONLYOFFICE",
+  "PageDescription": "オンプレミスでONLYOFFICE DocSpaceを導入し、データを完全に管理しましょう",
+
+  "HeroMainPictureAltText": "メイン画像",
+
+  "OnlyOfficeDocSpaceEnterprise": "ONLYOFFICE DocSpace Enterprise",
+  "TheEnterpriseScaledSpace": "ビジネス文書のためのエンタープライズ規模のスペース",
+  "GetItNow": "今すぐ入手",
+  "TryItFree": "クラウドで無料トライアル",
+
+  "HeroWorldIconAltText": "ワールドアイコン",
+
+  "TrustedBy": "信頼されています",
+  "CountOfUsers": "15,000,000ユーザー",
+  "Worldwide": "世界中で",
+
+  "FeaturesEfficient": "企業内での効率的な文書コラボレーション",
+  "FeaturesOnlyOffice": "ONLYOFFICE DocSpace Enterpriseは、文書の保管、共有、コラボレーションのための完全なツールセットを提供します。",
+  "FeaturesLearn": "Docspaceの機能についてさらに詳しく",
+
+  "FeaturesItemTextWork": "コラボレーションルームで契約書を共同作業",
+  "FeaturesItemTextInvite": "パブリックルームで登録なしでパートナーを文書閲覧に招待",
+  "FeaturesItemTextCollect": "フォーム入力ルームで回答を収集",
+  "FeaturesItemTextCreate": "あらゆるタスクや目的に合わせて柔軟な設定が可能なカスタムルームを作成",
+  "FeaturesItemTextShare": "仮想データルームを使用して、デューデリジェンスプロセス中に会社の文書を共有・開示",
+
+  "ExperienceFlawless": "様々なデバイスで完璧なユーザー体験",
+  "ExperienceWithONLYOFFICE": "ONLYOFFICE DocSpace Enterpriseを使用すると、モバイルWeb版に切り替えることで、スマートフォンやタブレットからいつでもどこでも簡単にドキュメントを管理、編集、共同作業できます。",
+  "ExperienceFreeDesktopApps": "オフライン編集用の無料<0>デスクトップアプリ</0>と、iOSおよびAndroid用のネイティブ<1>モバイルアプリ</1>も利用可能です。",
+
+  "EnvironmentEnterpriseReady": "エンタープライズ対応の作業環境",
+
+  "EnvironmentItemTitleSecurity": "セキュリティ",
+  "EnvironmentItemTextSecurity": "あらゆる面でデータを安全に保ちます：エンタープライズ対応のセキュリティ設定、業界固有の基準への準拠、セキュリティと安定性の修正への優先アクセス。",
+  "EnvironmentItemLinkSecurity": "ONLYOFFICEのセキュリティについて詳しく知る",
+
+  "EnvironmentItemTitleAccessibility": "アクセシビリティ",
+  "EnvironmentItemTextAccessibility": "編集プロセスを誰にとってもシンプルで快適に：利用可能なカラーモードの切り替え、必要なプラグインの有効化、バーやルーラーの表示/非表示など。",
+  "EnvironmentItemLinkAccessibility": "ONLYOFFICEのアクセシビリティについて詳しく知る",
+
+  "EnvironmentItemTitleCustomization": "カスタマイズ",
+  "EnvironmentItemTextCustomization": "さまざまなカラースタイルを適用し、ロゴ、タイトル、リンクを置き換えて、企業のブランドに合わせます。",
+
+  "EnvironmentItemTitleAdministration": "管理",
+  "EnvironmentItemTextAdministration": "直感的なコントロールパネルを使用してDocSpaceを管理します。ログ記録、署名、ストレージなどの外部サービスを接続します。",
+
+  "EnvironmentItemTitleMultitenancy": "マルチテナンシー",
+  "EnvironmentItemTextMultitenancy": "異なる支店用に複数のスペースを作成し、それらすべてを一度に管理します。",
+
+  "ScalableTitleForBusinesses": "あらゆる規模のビジネスに対応するスケーラビリティ",
+  "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterpriseは、あなたの会社と共に成長します。",
+  "ScalableYouCanCustomize": "チームの拡大に合わせて、いつでもユーザー数をカスタマイズできます。",
+  "ScalableForLargeEnterprises": "大企業向けには、マルチサーバー展開のサポートが利用可能です。",
+  "ScalableImageAltText": "スケーラブルなメイン画像",
+
+  "SupportTitleForEveryStep": "あらゆるステップでのサポート",
+  "SupportTextTheTeam": "専門家チームが、あらゆるステップでお手伝いします",
+
+  "SupportItemTitleFreeDemo": "無料デモ",
+  "SupportItemTextWatch": "ビジネス向けの主なDocSpaceの機能と利点のデモンストレーションをご覧ください。",
+  "SupportItemBtnRequest": "デモをリクエスト",
+
+  "SupportItemTitleTraining": "トレーニングコース",
+  "SupportItemTextMaster": "チューターの指導の下でONLYOFFICE DocSpaceをマスターしましょう。エンタープライズユーザー向けの割引が提供されます。",
+  "SupportItemBtnBook": "トレーニングを予約",
+
+  "SupportItemTitleViaEmail": "メールによるサポート",
+  "SupportItemTextJustContact": "<0>support@onlyoffice.com</0> までご連絡ください – 経験豊富なサポートチームが、あらゆる質問や技術的な問題の解決をお手伝いします。",
+  "SupportItemBtnViaContactUs": "お問い合わせ",
+
+  "SupportItemTitlePreSale": "購入前のご質問はありますか？",
+  "SupportItemTextContact": "<1>sales@onlyoffice.com</1> までお問い合わせいただくか、チームからの電話を受ける時間をスケジュールしてください。",
+  "SupportItemBtnPreSaleContactUs": "お問い合わせ",
+
+  "CostTitle": "<0>費用対効果の高い</0>エンタープライズソリューション",
+
+  "CostItemFree": "30日間無料トライアル",
+  "CostItemLifetime": "永久ライセンス",
+  "CostItemYear": "1年間のアップデートとサポート",
+  "CostItemUnlimited": "無制限のルーム数と管理者数",
+
+  "CostButtonPickYourPrice": "価格を選択",
+
+  "CostFooterIfYouRepresent":"教育機関または非営利団体を代表する場合は、<0>弊社の営業チームにお問い合わせ</0>の上、個別割引を受けてください。",
+  "CostFooterTheFamilyPack": "非商用利用向けの<1>ファミリーパック</1>も利用可能です。",
+
+  "GettingStarted": "始めるのは簡単です",
+  "GettingDeploy": "利用可能なオプションのいずれかを使用して、ONLYOFFICE DocSpace Enterpriseを導入します。",
+
+  "GettingItemCloudTitle": "クラウド",
+  "GettingItemCloudText": "サービスとして試す。DocSpaceのホスティング、保守、更新は弊社が行います",
+  "GettingItemCloudSubtitle": "今すぐ作成",
+
+  "GettingItemLinuxTitle": "Linux",
+  "GettingItemLinuxText": "Linuxサーバーでホスト（Docker、deb、またはrpmパッケージ）",
+  "GettingItemLinuxSubtitle": "今すぐ入手",
+
+  "GettingItemWindowsTitle": "Windows",
+  "GettingItemWindowsText": "Windowsサーバーでホスト（exeパッケージ）",
+  "GettingItemWindowsSubtitle": "今すぐ入手",
+
+  "GettingFooterText": "家庭用のCommunityバージョンは<0>こちら</0>からダウンロードできます。"
+}
