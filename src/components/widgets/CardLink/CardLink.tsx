@@ -18,8 +18,8 @@ const CardLink = ({
   textAlign = "center",
   subtitle,
   widthDesktop = "352px",
-  widthDesktopSmall = "29.33vw",
-  widthTabletSmall = "208px",
+  widthDesktopSmall = "calc(33% - 19px)",
+  widthTabletSmall = "calc(33% - 19px)",
   widthMobile = "238px",
   icon: {
     iconUrl,

@@ -36,19 +36,12 @@ const StyledGettingList = styled.div`
   gap: 32px;
   padding: 56px 0;
 
-  @media ${device.tablet} {
-    gap: 3vw;
-  }
-
-  @media ${device.mobile} {
-    gap: 32px;
-  }
-
   @media ${device.mobile} {
     justify-content: flex-start;
     overflow-x: auto;
     scrollbar-width: none;
     padding: 32px 16px;
+    gap: 24px;
   }
 `;
 

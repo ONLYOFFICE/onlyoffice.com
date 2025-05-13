@@ -71,6 +71,7 @@ const StyledSupportList = styled.div`
   row-gap: 40px;
 
   .item {
+    margin: 0;
     &__btn {
       background-color: transparent;
       border: 1px solid #ffffff;
