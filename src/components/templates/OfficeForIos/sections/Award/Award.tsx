@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 
@@ -11,6 +12,8 @@ import {
 } from "./Award.styled";
 
 const Award = () => {
+  const { t } = useTranslation("office-for-ios");
+
   return (
     <Section
       background="#FAFAFA"
@@ -25,11 +28,11 @@ const Award = () => {
           <StyledAwardHeading
             level={4}
             size={4}
-            label={`"ONLYOFFICE Documents is an outstanding product and was given the 'Very Good' award by its users."`}
+            label={t("OnlyOfficeDocumentsIs")}
             textAlign="center"
           />
           <StyledAwardText
-            label="Michael Ganss,"
+            label={t("MichaelGanss")}
             textAlign="center"
             size={4}
             fontWeight={700}
