@@ -6,7 +6,7 @@ import { Text } from "@src/components/ui/Text";
 const StyledCollabWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 45px;
+  gap: 65px;
 
   @media ${device.tablet} {
     flex-direction: column;
@@ -19,7 +19,7 @@ const StyledCollabWrapper = styled.div`
 const StyledCollabLeft = styled.div`
   flex-grow: 1;
   justify-items: flex-end;
-  margin-top: 120px;
+  margin-top: 110px;
   padding-left: 16px;
 
   @media ${device.tablet} {
@@ -31,7 +31,8 @@ const StyledCollabLeft = styled.div`
 
 const StyledCollabHeading = styled(Heading)`
   max-width: 270px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  line-height: 43px;
 
   @media ${device.tablet} {
     text-align: center;
@@ -44,7 +45,7 @@ const StyledCollabHeading = styled(Heading)`
 
   @media ${device.mobile} {
     font-size: 24px;
-    margin-bottom: 20px;
+    line-height: 1.5em;
   }
 `;
 const StyledCollabText = styled(Text)`
@@ -55,25 +56,19 @@ const StyledCollabText = styled(Text)`
     max-width: 600px;
   }
 
-  @media ${device.mobile} {
-    font-size: 20px;
-  }
-
   @media ${device.mobileS} {
     font-size: 14px;
   }
 `;
 
 const StyledCollabRight = styled.div`
-  width: 1150px;
+  width: 1175px;
   height: 650px;
   background-image: url("/images/templates/office-for-ios/collab/collab.webp");
   background-size: auto 830px;
   background-repeat: no-repeat;
 
   @media ${device.tablet} {
-    /* width: 100vw;
-    height: 48.82vw; */
     width: 108vw;
     height: 54.82vw;
     background-size: cover;
