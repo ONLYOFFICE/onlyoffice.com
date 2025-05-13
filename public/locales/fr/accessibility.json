@@ -1,0 +1,27 @@
+{
+  "ScreenReadersImgUrl": "/images/templates/accessibility/features/vision/fr/screen-readers.png",
+  "ScreenReadersImgUrl2x": "/images/templates/accessibility/features/vision/fr/screen-readers@2x.png",
+  "UITweaksImgUrl": "/images/templates/accessibility/features/vision/fr/ui-tweaks.png",
+  "UITweaksImgUrl2x": "/images/templates/accessibility/features/vision/fr/ui-tweaks@2x.png",
+  "ColorModesImgUrl": "/images/templates/accessibility/features/vision/fr/color-modes.png",
+  "ColorModesImgUrl2x": "/images/templates/accessibility/features/vision/fr/color-modes@2x.png",
+  "MobileWebViewImgUrl": "/images/templates/accessibility/features/vision/fr/mobilewebview.png",
+  "MobileWebViewImgUrl2x": "/images/templates/accessibility/features/vision/fr/mobilewebview@2x.png",
+
+
+  "HotkeysImgUrl": "/images/templates/accessibility/features/mobility/fr/hotkey.png",
+  "HotkeysImgUrl2x": "/images/templates/accessibility/features/mobility/fr/hotkey@2x.png",
+  "SpeechInputImgUrl": "/images/templates/accessibility/features/mobility/fr/speech-input.png",
+  "SpeechInputImgUrl2x": "/images/templates/accessibility/features/mobility/fr/speech-input@2x.png",
+
+  "AlternativeTextImgUrl": "/images/templates/accessibility/features/neurodiversity/fr/alternative-text.png",
+  "AlternativeTextImgUrl2x": "/images/templates/accessibility/features/neurodiversity/fr/alternative-text@2x.png",
+  "AutoCorrectFeaturesImgUrl": "/images/templates/accessibility/features/neurodiversity/fr/autocorrect-features.png",
+  "AutoCorrectFeaturesImgUrl2x": "/images/templates/accessibility/features/neurodiversity/fr/autocorrect-features@2x.png",
+  "SpeechImgUrl": "/images/templates/accessibility/features/neurodiversity/fr/speech.png",
+  "SpeechImgUrl2x": "/images/templates/accessibility/features/neurodiversity/fr/speech@2x.png",
+  "TypographyImgUrl": "/images/templates/accessibility/features/neurodiversity/fr/typograf.png",
+  "TypographyImgUrl2x": "/images/templates/accessibility/features/neurodiversity/fr/typograf@2x.png",
+  "TranslatorImgUrl": "/images/templates/accessibility/features/neurodiversity/fr/translator.png",
+  "TranslatorImgUrl2x": "/images/templates/accessibility/features/neurodiversity/fr/translator@2x.png"
+}
