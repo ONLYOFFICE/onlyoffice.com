@@ -29,5 +29,19 @@
   "RealTimeCollaboration": "Real-time collaboration",
   "BeMoreProductive": "Be more productive. Connect your app to the ONLYOFFICE cloud. Share docs to co-edit them with your teammates in real time. Comment and track changes. Add graphic annotations.",
 
-  "VideoCardHeading": "Discover ONLYOFFICE Documents, a solid mobile office suite"
+  "VideoCardHeading": "Discover ONLYOFFICE Documents, a solid mobile office suite",
+
+  "GetStartedAndChoose": "Get started and choose where to work",
+
+  "ChooseItemOnDevice": "On device",
+  "ChooseItemManageDocuments": "Manage documents on device and edit them offline.",
+
+  "ChooseItemInOnlyOffice": "In ONLYOFFICE cloud",
+  "ChooseItemAccessDocs": "Access docs from ONLYOFFICE cloud and the storages (Dropbox, Google Drive, etc.) connected to it and work collaboratively.",
+
+  "ChooseItemInYourCloud": "In your cloud",
+  "ChooseItemConnectNextcloud": "Connect Nextcloud, ownCloud, or any other cloud working via WebDAV and edit documents directly from the app.",
+
+  "ChooseItemFromOther": "From other apps",
+  "ChooseItemImportDocuments": "Import documents from applications like iTunes, Files and others."
 }

@@ -23,7 +23,7 @@ const Choose = () => {
           size={3}
           color="#fff"
           textAlign="center"
-          label="Get started and choose where to work"
+          label={t("GetStartedAndChoose")}
         />
         <StyledChooseList>
           {items.map((item) => (
@@ -33,8 +33,8 @@ const Choose = () => {
                 url: item.iconUrl,
                 height: "48px",
               }}
-              heading={item.heading}
-              text={item.text}
+              heading={t(item.heading)}
+              text={t(item.text)}
             />
           ))}
         </StyledChooseList>
