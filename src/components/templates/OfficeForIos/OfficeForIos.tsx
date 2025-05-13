@@ -3,6 +3,7 @@ import { Features } from "./sections/Features";
 import { Award } from "./sections/Award";
 import { Collab } from "./sections/Collab";
 import { VideoCard } from "./sections/VideoCard";
+import { Choose } from "./sections/Choose";
 
 const OfficeForIosTemplate = () => {
   return (
@@ -12,6 +13,7 @@ const OfficeForIosTemplate = () => {
       <Award />
       <Collab />
       <VideoCard />
+      <Choose />
     </>
   );
 };
