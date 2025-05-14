@@ -1,11 +1,14 @@
-import { ILocale } from "@src/types/locale";
+import { IDeveloperEditionPricesTemplate } from "@src/components/templates/DeveloperEditionPrices";
 import { Hero } from "./sections/Hero";
 import { Faq } from "@src/components/modules/pricing/for-developers/Faq";
 
-const DeveloperEditionPricesTemplate = ({ locale }: ILocale) => {
+const DeveloperEditionPricesTemplate = ({
+  locale,
+  productsData,
+}: IDeveloperEditionPricesTemplate) => {
   return (
     <>
-      <Hero locale={locale} />
+      <Hero locale={locale} productsData={productsData} />
       <Faq />
     </>
   );

@@ -12,11 +12,13 @@ import {
   StyledPlanCardBtns,
 } from "./PlanCard.styled";
 import { IPlanCard } from "./PlanCard.types";
+import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";
 
 const PlanCard = ({
+  locale,
   heading,
   subHeading,
   headingLabel,
@@ -26,6 +28,8 @@ const PlanCard = ({
   link,
 }: IPlanCard) => {
   const { t } = useTranslation("docspace-prices");
+
+  const currency = getCurrencyByLocale(locale);
 
   return (
     <StyledPlanCard $isActive={isActive}>
@@ -44,7 +48,8 @@ const PlanCard = ({
 
           {price.prev && (
             <StyledPlanCardPricePrev>
-              ${price.prev && price.prev}
+              {currency.symbol}
+              {price.prev && price.prev}
             </StyledPlanCardPricePrev>
           )}
 
@@ -52,7 +57,7 @@ const PlanCard = ({
             <StyledPlanCardPriceFree>{t("Free")}</StyledPlanCardPriceFree>
           ) : (
             <StyledPlanCardPriceCurrent>
-              <span>$</span>
+              <span>{currency.symbol}</span>
               {price.current}
             </StyledPlanCardPriceCurrent>
           )}

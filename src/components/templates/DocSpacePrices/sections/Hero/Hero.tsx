@@ -7,14 +7,14 @@ import {
   StyledHeroPlans,
   StyledHeroFeaturesHeading,
 } from "./Hero.styled";
+import { IDocSpacePricesTemplate } from "@src/components/templates/DocSpacePrices";
 import { Container } from "@src/components/ui/Container";
 import { PlanCard } from "./sub-components/PlanCard";
 import { FeaturesTable } from "./sub-components/FeaturesTable";
 import { BusinessModal } from "./sub-components/BusinessModal";
 import { EnterpriseModal } from "./sub-components/EnterpriseModal";
-import { enterpriseCurrentPrice, businessCurrentPrice } from "./data/plans";
 
-const Hero = () => {
+const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
   const { t } = useTranslation("docspace-prices");
   const [isBusinessModalOpen, setIsBusinessModalOpen] = useState(false);
   const [isEnterpriseModalOpen, setIsEnterpriseModalOpen] = useState(false);
@@ -38,6 +38,7 @@ const Hero = () => {
 
         <StyledHeroPlans>
           <PlanCard
+            locale={locale}
             heading={t("Startup")}
             subHeading={t("Cloud")}
             headingLabel={t("LimitedTimeOffer")}
@@ -51,11 +52,12 @@ const Hero = () => {
           />
 
           <PlanCard
+            locale={locale}
             heading={t("Business")}
             subHeading={t("Cloud")}
             price={{
-              prev: "30",
-              current: businessCurrentPrice,
+              prev: locale === "zh" ? 227 : 30,
+              current: productsData.business.price,
               label: t("PerAdminMonth"),
             }}
             isActive={true}
@@ -66,15 +68,16 @@ const Hero = () => {
           />
 
           <PlanCard
+            locale={locale}
             heading={t("Enterprise")}
             subHeading={t("OnPremises")}
             price={{
               from: true,
-              current: enterpriseCurrentPrice,
+              current: productsData.enterpriseUsers100.price,
               label: t("PerServer"),
             }}
             btn={{
-              label: t("TryItFree"),
+              label: t("GetAQuote"),
               onClick: () => setIsEnterpriseModalOpen(true),
             }}
             link={{
@@ -98,10 +101,14 @@ const Hero = () => {
         <BusinessModal
           isOpen={isBusinessModalOpen}
           onClose={() => setIsBusinessModalOpen(false)}
+          locale={locale}
+          productsData={productsData}
         />
         <EnterpriseModal
           isOpen={isEnterpriseModalOpen}
           onClose={() => setIsEnterpriseModalOpen(false)}
+          locale={locale}
+          productsData={productsData}
         />
       </Container>
     </StyledHero>

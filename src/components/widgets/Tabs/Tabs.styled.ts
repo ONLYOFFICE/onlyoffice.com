@@ -3,7 +3,7 @@ import { ITabs } from "./Tabs.types";
 import { device } from "@src/utils/device";
 
 const StyledTabs = styled.div<{
-  $bgColor: ITabs["bgColor"];
+  $bgColor: ITabs<string>["bgColor"];
 }>`
   padding: 24px;
 
@@ -59,7 +59,7 @@ const StyledTabsCollapsibleBtnWrapper = styled.div`
 `;
 
 const StyledTabsCollapsibleBtn = styled.button<{
-  $collapsible: ITabs["collapsible"];
+  $collapsible: ITabs<string>["collapsible"];
 }>`
   border: none;
   width: 24px;

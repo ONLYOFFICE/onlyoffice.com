@@ -12,6 +12,7 @@
     "clean-cache": "rimraf .next/cache"
   },
   "dependencies": {
+    "crypto": "^1.0.1",
     "dayjs": "^1.11.13",
     "html-react-parser": "^5.2.3",
     "i18next": "^24.2.2",
