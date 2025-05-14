@@ -8,7 +8,7 @@ import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { OfficeForIosTemplate } from "@src/components/templates/OfficeForIos";
 
-const OfficeForHumHubPage = ({ locale }: ILocale) => {
+const OfficeForIosPage = ({ locale }: ILocale) => {
   const { t } = useTranslation("office-for-ios");
 
   return (
@@ -41,4 +41,4 @@ export async function getStaticProps({ locale }: ILocale) {
   };
 }
 
-export default OfficeForHumHubPage;
+export default OfficeForIosPage;
