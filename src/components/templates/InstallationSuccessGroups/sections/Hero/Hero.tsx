@@ -9,7 +9,7 @@ import {
   StyledUpgradeListItem,
   StyledUpgradeAreaImage,
   StyledCouponHeading,
-  StyledHeading
+  StyledHeading,
 } from "./Hero.styled";
 import { Button } from "@src/components/ui/Button";
 import { Container } from "@src/components/ui/Container";

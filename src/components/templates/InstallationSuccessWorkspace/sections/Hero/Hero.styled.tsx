@@ -29,12 +29,16 @@ const StyledInstallationSuccessWorkspaceHero = styled(Section)`
   }
 
   @media ${device.tabletS} {
-    background-position: -440px -20px, center;
+    background-position:
+      -440px -20px,
+      center;
     margin-top: -48px;
   }
 
   @media ${device.mobile} {
-    background-position: -520px -20px, center;
+    background-position:
+      -520px -20px,
+      center;
   }
 `;
 

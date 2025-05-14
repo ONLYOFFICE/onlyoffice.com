@@ -21,7 +21,7 @@ const StyledResourceListItemLink = styled(Link)`
     background-image: url(/images/templates/installation-success-workspace/resources/arrow-red.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    content: ' ';
+    content: " ";
     display: inline-block;
     height: 12px;
     margin: 0px 0 -1px 9px;
@@ -29,8 +29,4 @@ const StyledResourceListItemLink = styled(Link)`
   }
 `;
 
-export {
-  StyledResourceList,
-  StyledResourceItem,
-  StyledResourceListItemLink
-};
+export { StyledResourceList, StyledResourceItem, StyledResourceListItemLink };
