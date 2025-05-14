@@ -50,8 +50,8 @@ const StyledFeatureButtonItemIcon = styled.div<{
     props.$position === "left"
       ? "0 auto 12px 0"
       : props.$position === "right"
-      ? "0 0 12px auto"
-      : "0 auto 12px"};
+        ? "0 0 12px auto"
+        : "0 auto 12px"};
 
   @media ${device.mobile} {
     width: ${(props) => props.$iconMobileWidth};

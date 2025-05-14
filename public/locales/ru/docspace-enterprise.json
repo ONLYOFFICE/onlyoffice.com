@@ -36,7 +36,7 @@
   "EnvironmentItemTitleSecurity": "Безопасность",
   "EnvironmentItemTextSecurity": "Обеспечьте безопасность ваших данных по всем направлениям: настройки безопасности корпоративного уровня, соответствие отраслевым стандартам, приоритетный доступ к исправлениям безопасности и стабильности.",
   "EnvironmentItemLinkSecurity": "Узнайте больше о безопасности ONLYOFFICE",
-  "EnvironmentItemImageSecurity":"/images/templates/docspace-enterprise/environment/ru/Security.svg",
+  "EnvironmentItemImageSecurity": "/images/templates/docspace-enterprise/environment/ru/Security.svg",
 
   "EnvironmentItemTitleAccessibility": "Доступность",
   "EnvironmentItemTextAccessibility": "Сделайте процесс редактирования простым и удобным для всех: переключайтесь между доступными цветовыми режимами, включайте необходимые плагины, скрывайте или показывайте панели и линейки и т. д.",
@@ -89,7 +89,7 @@
 
   "CostButtonPickYourPrice": "Выбрать тариф",
 
-  "CostFooterIfYouRepresent":"Если вы представляете учебное заведение или некоммерческую организацию, <0>свяжитесь с нашим отделом продаж</0>, чтобы получить индивидуальную скидку.",
+  "CostFooterIfYouRepresent": "Если вы представляете учебное заведение или некоммерческую организацию, <0>свяжитесь с нашим отделом продаж</0>, чтобы получить индивидуальную скидку.",
   "CostFooterTheFamilyPack": "Также доступен <1>семейный пакет</1> для некоммерческого использования.",
 
   "GettingStarted": "Начать легко",

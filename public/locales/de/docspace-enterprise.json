@@ -36,7 +36,7 @@
   "EnvironmentItemTitleSecurity": "Sicherheit",
   "EnvironmentItemTextSecurity": "Schützen Sie Ihre Daten an allen Fronten: unternehmensgerechte Sicherheitseinstellungen, Einhaltung branchenspezifischer Standards, priorisierter Zugang zu Sicherheits- und Stabilitätskorrekturen.",
   "EnvironmentItemLinkSecurity": "Erfahren Sie mehr über die Sicherheit von ONLYOFFICE",
-  "EnvironmentItemImageSecurity":"/images/templates/docspace-enterprise/environment/de/Security.svg",
+  "EnvironmentItemImageSecurity": "/images/templates/docspace-enterprise/environment/de/Security.svg",
 
   "EnvironmentItemTitleAccessibility": "Barrierefreiheit",
   "EnvironmentItemTextAccessibility": "Gestalten Sie den Bearbeitungsprozess für alle einfach und komfortabel: wechseln Sie zwischen verfügbaren Farbmodi, aktivieren Sie notwendige Plugins, blenden Sie Leisten und Lineale ein oder aus, etc.",
@@ -89,7 +89,7 @@
 
   "CostButtonPickYourPrice": "Wählen Sie Ihren Preis",
 
-  "CostFooterIfYouRepresent":"Wenn Sie eine Bildungseinrichtung oder eine gemeinnützige Organisation vertreten, <0>kontaktieren Sie unser Vertriebsteam</0>, um einen individuellen Rabatt zu erhalten.",
+  "CostFooterIfYouRepresent": "Wenn Sie eine Bildungseinrichtung oder eine gemeinnützige Organisation vertreten, <0>kontaktieren Sie unser Vertriebsteam</0>, um einen individuellen Rabatt zu erhalten.",
   "CostFooterTheFamilyPack": "Das <1>Family Pack</1> für die nicht-kommerzielle Nutzung ist ebenfalls verfügbar.",
 
   "GettingStarted": "Der Einstieg ist einfach",

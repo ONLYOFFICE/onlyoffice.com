@@ -145,8 +145,8 @@ const MailModal = ({ isOpen, onClose }: IMailModal) => {
                     formData.email.length === 0
                       ? t("EmailIsEmpty")
                       : !validateEmail(formData.email)
-                      ? t("EmailIsIncorrect")
-                      : ""
+                        ? t("EmailIsIncorrect")
+                        : ""
                   }
                   status={
                     isEmpty.email ||

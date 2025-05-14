@@ -36,7 +36,7 @@
   "EnvironmentItemTitleSecurity": "安全性",
   "EnvironmentItemTextSecurity": "全方位保护您的数据安全：企业级安全设置、符合行业特定标准、优先获取安全性和稳定性修复程序。",
   "EnvironmentItemLinkSecurity": "了解有关 ONLYOFFICE 安全性的更多信息",
-  "EnvironmentItemImageSecurity":"/images/templates/docspace-enterprise/environment/zh/Security.svg",
+  "EnvironmentItemImageSecurity": "/images/templates/docspace-enterprise/environment/zh/Security.svg",
 
   "EnvironmentItemTitleAccessibility": "辅助功能",
   "EnvironmentItemTextAccessibility": "让每个人的编辑过程都简单舒适：切换可用颜色模式、启用必要插件、隐藏或显示工具栏和标尺等。",
@@ -89,7 +89,7 @@
 
   "CostButtonPickYourPrice": "选择您的价格",
 
-  "CostFooterIfYouRepresent":"如果您代表教育机构或非营利组织，请<0>联系我们的销售团队</0>以获取专属折扣。",
+  "CostFooterIfYouRepresent": "如果您代表教育机构或非营利组织，请<0>联系我们的销售团队</0>以获取专属折扣。",
   "CostFooterTheFamilyPack": "另有适用于非商业用途的<1>家庭包</1>可供选择。",
 
   "GettingStarted": "轻松入门",

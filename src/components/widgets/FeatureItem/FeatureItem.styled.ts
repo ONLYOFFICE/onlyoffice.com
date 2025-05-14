@@ -22,13 +22,13 @@ const StyledFeatureItem = styled.div<{
           column-gap: 24px;
         `
       : props.$variant === "vertical"
-      ? css`
-          justify-items: center;
-          align-content: start;
-          row-gap: 16px;
-          text-align: center;
-        `
-      : null}
+        ? css`
+            justify-items: center;
+            align-content: start;
+            row-gap: 16px;
+            text-align: center;
+          `
+        : null}
 
   @media ${device.mobile} {
     max-width: 100%;
@@ -40,32 +40,32 @@ const StyledFeatureItem = styled.div<{
             row-gap: 8px;
           `
         : props.$mobileVariant === "horizontal-icon-left"
-        ? css`
-            grid-template-columns: ${props.$iconMobileWidth
-              ? `${props.$iconMobileWidth} auto`
-              : `${props.$iconWidth} auto`};
-            justify-items: initial;
-            column-gap: 16px;
-            text-align: initial;
-          `
-        : props.$mobileVariant === "horizontal-icon-center"
-        ? css`
-            grid-template-columns: ${props.$iconMobileWidth
-              ? `${props.$iconMobileWidth} auto`
-              : `${props.$iconWidth} auto`};
-            justify-items: initial;
-            align-items: center;
-            column-gap: 16px;
-            text-align: initial;
-          `
-        : props.$mobileVariant === "vertical"
-        ? css`
-            justify-items: center;
-            grid-template-columns: initial;
-            row-gap: 8px;
-            text-align: center;
-          `
-        : null}
+          ? css`
+              grid-template-columns: ${props.$iconMobileWidth
+                ? `${props.$iconMobileWidth} auto`
+                : `${props.$iconWidth} auto`};
+              justify-items: initial;
+              column-gap: 16px;
+              text-align: initial;
+            `
+          : props.$mobileVariant === "horizontal-icon-center"
+            ? css`
+                grid-template-columns: ${props.$iconMobileWidth
+                  ? `${props.$iconMobileWidth} auto`
+                  : `${props.$iconWidth} auto`};
+                justify-items: initial;
+                align-items: center;
+                column-gap: 16px;
+                text-align: initial;
+              `
+            : props.$mobileVariant === "vertical"
+              ? css`
+                  justify-items: center;
+                  grid-template-columns: initial;
+                  row-gap: 8px;
+                  text-align: center;
+                `
+              : null}
   }
 `;
 

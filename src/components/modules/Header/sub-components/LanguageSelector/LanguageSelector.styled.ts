@@ -42,7 +42,9 @@ const StyledLanguageSelectorButton = styled.button<{ $isOpen: boolean }>`
   .flag-icon {
     circle,
     path {
-      transition: stroke 0.2s, fill 0.2s;
+      transition:
+        stroke 0.2s,
+        fill 0.2s;
     }
   }
 
