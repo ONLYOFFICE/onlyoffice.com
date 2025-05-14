@@ -1,0 +1,64 @@
+{
+  "PageTitle": "Suite bureautique mobile gratuite pour iPhone et iPad | ONLYOFFICE Documents",
+  "PageDescription": "Modifiez et coéditez des documents, des feuilles de calcul et des présentations, remplissez des formulaires depuis vos appareils iOS.",
+
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, une <0>suite bureautique mobile</0> solide pour votre iPhone et iPad",
+  "AbsolutelyFree": "Absolument <0>gratuit</0>. Sans publicité. Sans achats intégrés.",
+
+  "OneAppThreeEditors": "Une application - <0>Trois éditeurs</0> - Plusieurs fonctionnalités",
+  "CompatibleWithMSOffice": "100 % compatible avec les formats MS Office",
+
+  "FeaturesItemHeadingFull": "Processeur de texte complet",
+  "FeaturesItemTextMakeUse": "Utilisez de multiples outils de traitement de texte : formatage de page, de paragraphe et de texte, tableaux, formes automatiques, graphiques, etc. Créez des documents texte de toute taille et complexité. Imprimez-les via AirPrint.",
+
+  "FeaturesItemHeadingComplete": "Éditeur complet de feuilles de calcul",
+  "FeaturesItemTextManage": "Gérez les données de vos feuilles de calcul : travaillez avec des lignes et des colonnes, ajustez les paramètres des cellules, utilisez plus de 450 formules, triez et filtrez les données.",
+
+  "FeaturesItemHeadingCollaborative": "Éditeur de présentations collaboratif",
+  "FeaturesItemTextMakeWork": "Travaillez avec tous les objets populaires sur vos diapositives : insérez des images, ajoutez et modifiez des formes automatiques, des graphiques, du texte et d'autres éléments.",
+
+  "FeaturesItemHeadingOnline": "Remplisseur de formulaires en ligne",
+  "FeaturesItemTextMakeView": "Affichez et remplissez des formulaires. Naviguez facilement d'un champ à l'autre. Enregistrez le résultat au format PDF ou DOCX.",
+
+  "FeaturesItemHeadingPDF": "Visionneuse PDF et lecteur multimédia",
+  "FeaturesItemTextMakeViewPDF": "Visualisez des documents et images PDF, lisez des fichiers audio et vidéo. Ouvrez .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
+
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents est un produit exceptionnel et a reçu la distinction 'Très bien' de la part de ses utilisateurs.\"",
+  "MichaelGanss": "Michael Ganss,",
+
+  "RealTimeCollaboration": "Collaboration en temps réel",
+  "BeMoreProductive": "Soyez plus productif. Connectez votre application au cloud ONLYOFFICE. Partagez des documents pour les coéditer avec vos coéquipiers en temps réel. Commentez et suivez les modifications. Ajoutez des annotations graphiques.",
+
+  "VideoCardHeading": "Découvrez ONLYOFFICE Documents, une suite bureautique mobile solide",
+
+  "GetStartedAndChoose": "Commencez et choisissez où travailler",
+
+  "ChooseItemOnDevice": "Sur l'appareil",
+  "ChooseItemManageDocuments": "Gérez les documents sur l'appareil et modifiez-les hors ligne.",
+
+  "ChooseItemInOnlyOffice": "Dans le cloud ONLYOFFICE",
+  "ChooseItemAccessDocs": "Accédez aux documents depuis le cloud ONLYOFFICE et les stockages (Dropbox, Google Drive, etc.) qui y sont connectés et travaillez en collaboration.",
+
+  "ChooseItemInYourCloud": "Dans votre cloud",
+  "ChooseItemConnectNextcloud": "Connectez Nextcloud, ownCloud ou tout autre cloud fonctionnant via WebDAV et modifiez des documents directement depuis l'application.",
+
+  "ChooseItemFromOther": "Depuis d'autres applications",
+  "ChooseItemImportDocuments": "Importez des documents depuis des applications telles qu'iTunes, Fichiers et autres.",
+
+  "GetMoreWithComplete": "Obtenez plus avec la version web mobile complète",
+  "WorkOnDocumentsWithin": "Travaillez sur des documents dans votre navigateur mobile. Allez sur votre portail web ONLYOFFICE et accédez à plus d'outils pour l'édition de documents et la collaboration.",
+
+  "LearnMoreHeading": "En savoir plus sur ONLYOFFICE Documents pour iOS",
+
+  "LearnCardTitleRelease": "Notes de publication",
+  "LearnMoreTextMeet": "Découvrez ONLYOFFICE Documents v7.2 pour iOS",
+  "LearnMoreSubtitleRead": "Lire l'histoire",
+
+  "LearnCardTitleHints": "Astuces",
+  "LearnMoreTextHandwriting": "Écriture manuscrite dans ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "En savoir plus",
+
+  "LearnCardTitleDeveloper": "Guide du développeur",
+  "LearnMoreTextHowMobile": "Comment fonctionne l'intégration mobile",
+  "LearnMoreSubtitleLearn2": "En savoir plus"
+}

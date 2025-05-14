@@ -1,11 +1,13 @@
+import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
-import { Heading } from "@src/components/ui/Heading";
 import { CardLink } from "@src/components/widgets/CardLink";
 import { items } from "./data/items";
 
 import { StyledLearnHeading, StyledLearnList } from "./Learn.styled";
 
 const Learn = () => {
+  const { t } = useTranslation("office-for-ios");
+
   return (
     <Section
       background="#F9F9F9"
@@ -13,7 +15,7 @@ const Learn = () => {
       tabletSpacing={["112px", "56px"]}
     >
       <StyledLearnHeading
-        label="Learn more about ONLYOFFICE Documents for iOS"
+        label={t("LearnMoreHeading")}
         level={2}
         size={3}
         textAlign="center"
@@ -33,9 +35,9 @@ const Learn = () => {
               iconBlockHeightTabletSmall: "180px",
               iconBlockHeightMobile: "137px",
             }}
-            title={item.title}
-            text={item.text}
-            subtitle={item.subtitle}
+            title={t(item.title)}
+            text={t(item.text)}
+            subtitle={t(item.subtitle)}
             textAlign="left"
             widthDesktopSmall="352px"
             widthTabletSmall="352px"

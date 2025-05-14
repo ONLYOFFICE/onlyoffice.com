@@ -1,0 +1,64 @@
+{
+  "PageTitle": "Бесплатный мобильный офисный пакет для iPhone и iPad | ONLYOFFICE Documents",
+  "PageDescription": "Редактируйте и совместно редактируйте документы, электронные таблицы и презентации, заполняйте формы с ваших устройств iOS.",
+
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, надежный <0>мобильный офисный пакет</0> для вашего iPhone и iPad",
+  "AbsolutelyFree": "Абсолютно <0>бесплатно</0>. Без рекламы. Без встроенных покупок.",
+
+  "OneAppThreeEditors": "Одно приложение - <0>Три редактора</0> - Множество функций",
+  "CompatibleWithMSOffice": "100% совместимость с форматами MS Office",
+
+  "FeaturesItemHeadingFull": "Полнофункциональный текстовый редактор",
+  "FeaturesItemTextMakeUse": "Используйте множество инструментов для обработки текста: форматирование страниц, абзацев и текста, таблицы, автофигуры, диаграммы и т. д. Создавайте текстовые документы любого размера и сложности. Печатайте их с помощью AirPrint.",
+
+  "FeaturesItemHeadingComplete": "Полноценный редактор электронных таблиц",
+  "FeaturesItemTextManage": "Управляйте данными в таблицах: работайте со строками и столбцами, настраивайте параметры ячеек, используйте более 450 формул, сортируйте и фильтруйте данные.",
+
+  "FeaturesItemHeadingCollaborative": "Редактор презентаций с возможностью совместной работы",
+  "FeaturesItemTextMakeWork": "Работайте со всеми популярными объектами на ваших слайдах: вставляйте изображения, добавляйте и редактируйте автофигуры, графики и диаграммы, тексты и другие элементы.",
+
+  "FeaturesItemHeadingOnline": "Заполнение онлайн-форм",
+  "FeaturesItemTextMakeView": "Просматривайте и заполняйте формы. Легко переходите от поля к полю. Сохраняйте результат как файл PDF или DOCX.",
+
+  "FeaturesItemHeadingPDF": "Просмотр PDF и медиаплеер",
+  "FeaturesItemTextMakeViewPDF": "Просматривайте PDF-документы и изображения, воспроизводите аудио- и видеофайлы. Открывайте .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf и др.",
+
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents — выдающийся продукт, получивший от пользователей оценку 'Очень хорошо'.\"",
+  "MichaelGanss": "Михаэль Ганс,",
+
+  "RealTimeCollaboration": "Совместная работа в режиме реального времени",
+  "BeMoreProductive": "Будьте продуктивнее. Подключите приложение к облаку ONLYOFFICE. Делитесь документами для совместного редактирования с коллегами в режиме реального времени. Комментируйте и отслеживайте изменения. Добавляйте графические аннотации.",
+
+  "VideoCardHeading": "Откройте для себя ONLYOFFICE Documents, надежный мобильный офисный пакет",
+
+  "GetStartedAndChoose": "Начните работу и выберите, где работать",
+
+  "ChooseItemOnDevice": "На устройстве",
+  "ChooseItemManageDocuments": "Управляйте документами на устройстве и редактируйте их офлайн.",
+
+  "ChooseItemInOnlyOffice": "В облаке ONLYOFFICE",
+  "ChooseItemAccessDocs": "Получайте доступ к документам из облака ONLYOFFICE и подключенных к нему хранилищ (Dropbox, Google Drive и др.) и работайте совместно.",
+
+  "ChooseItemInYourCloud": "В вашем облаке",
+  "ChooseItemConnectNextcloud": "Подключайте Nextcloud, ownCloud или любое другое облако, работающее по WebDAV, и редактируйте документы прямо из приложения.",
+
+  "ChooseItemFromOther": "Из других приложений",
+  "ChooseItemImportDocuments": "Импортируйте документы из таких приложений, как iTunes, Файлы и других.",
+
+  "GetMoreWithComplete": "Получите больше с полной мобильной веб-версией",
+  "WorkOnDocumentsWithin": "Работайте с документами в мобильном браузере. Перейдите на веб-портал ONLYOFFICE и получите доступ к большему количеству инструментов для редактирования и совместной работы над документами.",
+
+  "LearnMoreHeading": "Узнать больше о ONLYOFFICE Documents для iOS",
+
+  "LearnCardTitleRelease": "Примечания к выпуску",
+  "LearnMoreTextMeet": "Встречайте ONLYOFFICE Documents v7.2 для iOS",
+  "LearnMoreSubtitleRead": "Прочитать историю",
+
+  "LearnCardTitleHints": "Подсказки",
+  "LearnMoreTextHandwriting": "Рукописный ввод в ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "Узнать больше",
+
+  "LearnCardTitleDeveloper": "Руководство для разработчиков",
+  "LearnMoreTextHowMobile": "Как работает мобильная интеграция",
+  "LearnMoreSubtitleLearn2": "Узнать больше"
+}

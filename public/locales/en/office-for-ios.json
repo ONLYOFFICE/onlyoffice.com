@@ -46,5 +46,19 @@
   "ChooseItemImportDocuments": "Import documents from applications like iTunes, Files and others.",
 
   "GetMoreWithComplete": "Get more with complete mobile web version",
-  "WorkOnDocumentsWithin": "Work on documents within your mobile browser. Go to your ONLYOFFICE web portal and get access to more instruments for document editing and collaboration."
+  "WorkOnDocumentsWithin": "Work on documents within your mobile browser. Go to your ONLYOFFICE web portal and get access to more instruments for document editing and collaboration.",
+
+  "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for iOS",
+
+  "LearnCardTitleRelease": "Release notes",
+  "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v7.2 for iOS",
+  "LearnMoreSubtitleRead": "Read story",
+
+  "LearnCardTitleHints": "Hints",
+  "LearnMoreTextHandwriting": "Handwriting in ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "Learn more",
+
+  "LearnCardTitleDeveloper": "Developer guide",
+  "LearnMoreTextHowMobile": "How mobile integration works",
+  "LearnMoreSubtitleLearn2": "Learn more"
 }
