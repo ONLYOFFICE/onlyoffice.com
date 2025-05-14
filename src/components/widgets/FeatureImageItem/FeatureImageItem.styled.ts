@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { IFeatureImageItem } from "./FeatureImageItem.types";
 import { device } from "@src/utils/device";
-import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
 const StyledFeatureImageItemContent = styled.div<{
@@ -16,7 +15,7 @@ const StyledFeatureImageItemContent = styled.div<{
   }
 `;
 
-const StyledFeatureImageItemText = styled(Text)`
+const StyledFeatureImageItemText = styled.div`
   font-size: 16px;
   line-height: 24px;
 

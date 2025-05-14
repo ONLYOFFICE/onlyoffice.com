@@ -1,0 +1,25 @@
+{
+  "ScreenReadersImgUrl": "/images/templates/accessibility/features/vision/zh/screen-readers.png",
+  "ScreenReadersImgUrl2x": "/images/templates/accessibility/features/vision/zh/screen-readers@2x.png",
+  "UITweaksImgUrl": "/images/templates/accessibility/features/vision/zh/ui-tweaks.png",
+  "UITweaksImgUrl2x": "/images/templates/accessibility/features/vision/zh/ui-tweaks@2x.png",
+  "ColorModesImgUrl": "/images/templates/accessibility/features/vision/zh/color-modes.png",
+  "ColorModesImgUrl2x": "/images/templates/accessibility/features/vision/zh/color-modes@2x.png",
+  "MobileWebViewImgUrl": "/images/templates/accessibility/features/vision/zh/mobilewebview.png",
+  "MobileWebViewImgUrl2x": "/images/templates/accessibility/features/vision/zh/mobilewebview@2x.png",
+
+
+  "HotkeysImgUrl": "/images/templates/accessibility/features/mobility/zh/hotkey.png",
+  "HotkeysImgUrl2x": "/images/templates/accessibility/features/mobility/zh/hotkey@2x.png",
+  "SpeechInputImgUrl": "/images/templates/accessibility/features/mobility/zh/speech-input.png",
+  "SpeechInputImgUrl2x": "/images/templates/accessibility/features/mobility/zh/speech-input@2x.png",
+
+  "AlternativeTextImgUrl": "/images/templates/accessibility/features/neurodiversity/zh/alternative-text.png",
+  "AlternativeTextImgUrl2x": "/images/templates/accessibility/features/neurodiversity/zh/alternative-text@2x.png",
+  "SpeechImgUrl": "/images/templates/accessibility/features/neurodiversity/zh/speech.png",
+  "SpeechImgUrl2x": "/images/templates/accessibility/features/neurodiversity/zh/speech@2x.png",
+  "TypographyImgUrl": "/images/templates/accessibility/features/neurodiversity/zh/typograf.png",
+  "TypographyImgUrl2x": "/images/templates/accessibility/features/neurodiversity/zh/typograf@2x.png",
+  "TranslatorImgUrl": "/images/templates/accessibility/features/neurodiversity/zh/translator.png",
+  "TranslatorImgUrl2x": "/images/templates/accessibility/features/neurodiversity/zh/translator@2x.png"
+}
