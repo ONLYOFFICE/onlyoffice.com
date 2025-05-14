@@ -42,28 +42,28 @@ const StyledListItem = styled.li<{ $variant: IList["variant"] }>`
           }
         `
       : props.$variant === "small"
-      ? css`
-          padding-left: 20px;
-          font-size: 13px;
-          line-height: 18px;
+        ? css`
+            padding-left: 20px;
+            font-size: 13px;
+            line-height: 18px;
 
-          &::before {
-            content: "";
-            position: absolute;
-            top: 4px;
-            left: 0;
-            width: 12px;
-            height: 12px;
-            background-image: url("/images/icons/check-small.svg");
-            background-repeat: no-repeat;
-            background-size: contain;
-          }
+            &::before {
+              content: "";
+              position: absolute;
+              top: 4px;
+              left: 0;
+              width: 12px;
+              height: 12px;
+              background-image: url("/images/icons/check-small.svg");
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
 
-          &:not(:last-child) {
-            margin-bottom: 10px;
-          }
-        `
-      : null}
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+          `
+        : null}
 `;
 
 export { StyledList, StyledListItem };

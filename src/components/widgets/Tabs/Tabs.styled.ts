@@ -31,7 +31,9 @@ const StyledTabsItem = styled.button<{ $active: boolean }>`
   width: 100%;
   text-transform: uppercase;
   background-color: transparent;
-  transition: border-color 0.2s, color 0.2s;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
   cursor: pointer;
 
   ${(props) => css`

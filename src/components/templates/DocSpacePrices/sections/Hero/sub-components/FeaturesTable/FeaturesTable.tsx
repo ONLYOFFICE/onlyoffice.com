@@ -114,8 +114,8 @@ const FeaturesTable = ({
                       index === 2
                         ? setIsBusinessModalOpen(true)
                         : index === 3
-                        ? setIsEnterpriseModalOpen(true)
-                        : null
+                          ? setIsEnterpriseModalOpen(true)
+                          : null
                     }
                     label={t(item.name)}
                   />

@@ -14,7 +14,9 @@ const StyledTextArea = styled.div<{
   border-radius: 9px;
   width: ${(props) => (props.$fullWidth ? "100%" : "fit-content")};
   background-color: ${(props) => (props.$isFocused ? "#ffffff" : "#f9f9f9")};
-  transition: border-color 0.2s, background-color 0.2s;
+  transition:
+    border-color 0.2s,
+    background-color 0.2s;
 
   &:hover {
     border-color: #666666;
@@ -41,9 +43,11 @@ const StyledTextAreaLabel = styled.label<{
     props.$isFloating
       ? "#666666"
       : props.$status === "success"
-      ? "#8BB825"
-      : "#AAAAAA"};
-  transition: top 0.2s, font-size 0.2s;
+        ? "#8BB825"
+        : "#AAAAAA"};
+  transition:
+    top 0.2s,
+    font-size 0.2s;
   pointer-events: none;
 
   @media ${device.mobile} {

@@ -91,7 +91,9 @@ const StyledStepCarouselTab = styled.button<{ $active: boolean }>`
   color: ${(props) => (props.$active ? "#ff6f3d" : "#444444")};
   min-width: 168px;
   background-color: transparent;
-  transition: border-color 0.2s, color 0.2s;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
   cursor: pointer;
 
   @media ${device.mobile} {

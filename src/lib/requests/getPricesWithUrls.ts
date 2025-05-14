@@ -43,7 +43,7 @@ export const getPricesWithUrls = async ({
     return [
       key,
       {
-        price: totalPrice > 0 ? totalPrice : defaultPrice ?? null,
+        price: totalPrice > 0 ? totalPrice : (defaultPrice ?? null),
         url: urlData ?? null,
       },
     ];

@@ -49,47 +49,53 @@ const Features = () => {
 
         <StyledFeaturesContent>
           {items[activeTab].items
-          .filter((group) => !(locale?.startsWith("zh") && group.heading === "AutoCorrectFeatures"))
-          .map((group, groupIndex) => (
-            <FeatureImageItem
-              links={group.links?.map((link) => ({
-                ...link,
-                label: t(String(link.label)),
-              }))}
-              key={groupIndex}
-              image={{
-                url: t(group.image.url),
-                url2x: group.image.url2x ? t(group.image.url2x) : undefined,
-                height: 520,
-              }}
-              heading={t(group.heading)}
-              text={
-                group.items.length === 1 ? (
-                  <StyledFeaturesListDescription>
-                    {t(group.items[0])}
-                  </StyledFeaturesListDescription>
-                ) : (
-                  <ul>
-                    {group.items.map((el, i) => (
-                      <StyledFeaturesListItem key={i}>
-                        {t(el)}
-                      </StyledFeaturesListItem>
-                    ))}
-                  </ul>
-                )
-              }
-              position={{
-                desktop:
-                  activeTab !== 0
-                    ? groupIndex % 2 === 1
-                      ? "right"
-                      : "left"
-                    : groupIndex % 2 === 1
-                    ? "left"
-                    : "right",
-              }}
-            />
-          ))}
+            .filter(
+              (group) =>
+                !(
+                  locale?.startsWith("zh") &&
+                  group.heading === "AutoCorrectFeatures"
+                ),
+            )
+            .map((group, groupIndex) => (
+              <FeatureImageItem
+                links={group.links?.map((link) => ({
+                  ...link,
+                  label: t(String(link.label)),
+                }))}
+                key={groupIndex}
+                image={{
+                  url: t(group.image.url),
+                  url2x: group.image.url2x ? t(group.image.url2x) : undefined,
+                  height: 520,
+                }}
+                heading={t(group.heading)}
+                text={
+                  group.items.length === 1 ? (
+                    <StyledFeaturesListDescription>
+                      {t(group.items[0])}
+                    </StyledFeaturesListDescription>
+                  ) : (
+                    <ul>
+                      {group.items.map((el, i) => (
+                        <StyledFeaturesListItem key={i}>
+                          {t(el)}
+                        </StyledFeaturesListItem>
+                      ))}
+                    </ul>
+                  )
+                }
+                position={{
+                  desktop:
+                    activeTab !== 0
+                      ? groupIndex % 2 === 1
+                        ? "right"
+                        : "left"
+                      : groupIndex % 2 === 1
+                        ? "left"
+                        : "right",
+                }}
+              />
+            ))}
         </StyledFeaturesContent>
       </Container>
     </Section>

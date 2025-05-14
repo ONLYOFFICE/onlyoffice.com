@@ -37,7 +37,7 @@ export async function getStaticProps({ locale }: ILocale) {
     props: {
       ...(await serverSideTranslations(locale, [
         "common",
-        "installation-success-workspace"
+        "installation-success-workspace",
       ])),
       locale,
     },

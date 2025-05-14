@@ -22,16 +22,16 @@ export const getValueSizeStyles = (
           }
         `
       : $valueSize === "medium"
-      ? css`
-          font-size: 18px;
-          line-height: 28px;
+        ? css`
+            font-size: 18px;
+            line-height: 28px;
 
-          @media ${device.mobile} {
-            font-size: 16px;
-            line-height: 26px;
-          }
-        `
-      : null}
+            @media ${device.mobile} {
+              font-size: 16px;
+              line-height: 26px;
+            }
+          `
+        : null}
   `;
 };
 
@@ -74,14 +74,14 @@ const StyledCounterSelectorBtn = styled.button<{
           height: 40px;
         `
       : props.$buttonSize === "medium"
-      ? css`
-          height: 48px;
-        `
-      : props.$buttonSize === "large"
-      ? css`
-          height: 56px;
-        `
-      : null}
+        ? css`
+            height: 48px;
+          `
+        : props.$buttonSize === "large"
+          ? css`
+              height: 56px;
+            `
+          : null}
 
   svg {
     width: 24px;

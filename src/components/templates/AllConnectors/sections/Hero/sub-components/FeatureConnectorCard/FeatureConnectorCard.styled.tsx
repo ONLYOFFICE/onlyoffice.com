@@ -13,7 +13,9 @@ const StyledFeatureConnectorCard = styled(Link)`
   .feature-connector-card-more-info {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.2s, visibility 0.2s;
+    transition:
+      opacity 0.2s,
+      visibility 0.2s;
 
     @media ${device.mobile} {
       opacity: 1;

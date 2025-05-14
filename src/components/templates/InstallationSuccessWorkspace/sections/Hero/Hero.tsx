@@ -10,7 +10,7 @@ import {
   StyledUpgradeListItem,
   StyledHeading,
   StyledUpgradeAreaImage,
-  StyledCouponHeading
+  StyledCouponHeading,
 } from "./Hero.styled";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
