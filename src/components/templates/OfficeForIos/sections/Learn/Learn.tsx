@@ -3,12 +3,16 @@ import { Heading } from "@src/components/ui/Heading";
 import { CardLink } from "@src/components/widgets/CardLink";
 import { items } from "./data/items";
 
-import { StyledLearnList } from "./Learn.styled";
+import { StyledLearnHeading, StyledLearnList } from "./Learn.styled";
 
 const Learn = () => {
   return (
-    <Section background="#F9F9F9">
-      <Heading
+    <Section
+      background="#F9F9F9"
+      desktopSpacing={["112px", "56px"]}
+      tabletSpacing={["112px", "56px"]}
+    >
+      <StyledLearnHeading
         label="Learn more about ONLYOFFICE Documents for iOS"
         level={2}
         size={3}
@@ -26,12 +30,16 @@ const Learn = () => {
               iconWidthTabletSmall: "100%",
               iconHeightTabletSmall: "100%",
               iconBlockHeightDesktop: "180px",
-              iconBlockHeightTabletSmall: "120px",
+              iconBlockHeightTabletSmall: "180px",
+              iconBlockHeightMobile: "137px",
             }}
             title={item.title}
             text={item.text}
             subtitle={item.subtitle}
             textAlign="left"
+            widthDesktopSmall="352px"
+            widthTabletSmall="352px"
+            widthMobile="272px"
           />
         ))}
       </StyledLearnList>
