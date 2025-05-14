@@ -22,7 +22,13 @@ import {
 const Hero = () => {
   const { t } = useTranslation("office-for-ios");
   return (
-    <StyledHeroSection background="#fafafa">
+    <StyledHeroSection
+      background="#fafafa"
+      desktopSpacing={["112px", "0"]}
+      tabletSpacing={["88px", "0"]}
+      tabletSmallSpacing={["80px", "0"]}
+      mobileSpacing={["48px", "0"]}
+    >
       <StyledHeroContainer tabletSpacing="16px">
         <StyledHeroWrapper>
           <StyledHeroLeft>

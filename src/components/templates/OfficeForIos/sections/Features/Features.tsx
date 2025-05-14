@@ -37,7 +37,7 @@ const Features = () => {
       tabletSmallSpacing={["0", "0"]}
       mobileSpacing={["0", "0"]}
     >
-      <Container maxWidth="1920px">
+      <Container maxWidth="1920px" tabletSpacing="0" mobileSpacing="0">
         <StyledFeaturesWrapper ref={containerRef}>
           <StyledFeaturesAside>
             <StyledFeaturesAsideTablet>

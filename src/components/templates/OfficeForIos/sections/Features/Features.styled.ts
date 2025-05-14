@@ -22,7 +22,7 @@ const StyledFeaturesAside = styled.aside`
   @media ${device.tablet} {
     position: relative;
     width: 100%;
-    height: 48.82vw;
+    height: 77vw;
     top: 0;
   }
 `;
@@ -39,8 +39,8 @@ const StyledFeaturesAsideTablet = styled.div`
   z-index: 10;
 
   @media ${device.tablet} {
-    width: 65vw;
-    height: 50vw;
+    width: 106.44vw;
+    height: 81.05vw;
   }
 `;
 
@@ -80,9 +80,10 @@ const StyledFeaturesAsideMobile = styled.div`
   z-index: 11;
 
   @media ${device.tablet} {
-    width: 40vw;
-    height: 50vw;
-    top: 0;
+    width: 48vw;
+    height: 62vw;
+    top: 12vw;
+    right: -13vw;
   }
 `;
 
@@ -152,6 +153,10 @@ const StyledFeaturesCarousel = styled.div`
 
   .item {
     margin: 0 auto;
+
+    @media ${device.mobile} {
+      padding: 0 40px;
+    }
   }
 `;
 
