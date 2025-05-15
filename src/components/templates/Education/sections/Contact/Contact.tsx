@@ -1,23 +1,25 @@
 import { Trans, useTranslation } from "next-i18next";
-import * as S from "./Contact.styled";
 import { Link } from "@src/components/ui/Link";
+import {
+  StyledContactContainer,
+  StyledContactContect,
+  StyledContactHeading,
+  StyledContactSection,
+  StyledContactText,
+} from "./Contact.styled";
 
 const Contact = () => {
   const { t } = useTranslation("education");
 
   return (
-    <S.StyledContactSection
+    <StyledContactSection
       background="#333333"
       tabletSmallSpacing={["88px", "88px"]}
     >
-      <S.StyledContactContainer>
-        <S.StyledContactContect>
-          <S.StyledContactHeading
-            level={4}
-            size={4}
-            label={t("NeedToDiscuss")}
-          />
-          <S.StyledContactText size={2}>
+      <StyledContactContainer>
+        <StyledContactContect>
+          <StyledContactHeading level={4} size={4} label={t("NeedToDiscuss")} />
+          <StyledContactText size={2}>
             <Trans
               t={t}
               i18nKey="PleaseContact"
@@ -31,10 +33,10 @@ const Contact = () => {
                 />,
               ]}
             />
-          </S.StyledContactText>
-        </S.StyledContactContect>
-      </S.StyledContactContainer>
-    </S.StyledContactSection>
+          </StyledContactText>
+        </StyledContactContect>
+      </StyledContactContainer>
+    </StyledContactSection>
   );
 };
 
