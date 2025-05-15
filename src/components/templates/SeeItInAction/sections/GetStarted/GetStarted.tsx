@@ -1,5 +1,7 @@
+import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { Link } from "@src/components/ui/Link";
 import { SolutionCard } from "@src/components/widgets/SolutionCard";
 import { smallItems, largeItems } from "./data/items";
 
@@ -10,6 +12,8 @@ import {
 } from "./GetStarted.styled";
 
 const GetStarted = () => {
+  const { t } = useTranslation("see-it-in-action");
+
   return (
     <Section
       background="linear-gradient(180deg,#F8F9F9 43.75%,rgba(248,249,249,0) 100%),#FFFFFF"
@@ -27,12 +31,27 @@ const GetStarted = () => {
             <SolutionCard
               key={item.heading}
               imgUrl={item.imgUrl}
-              heading={item.heading}
-              text={item.text}
+              heading={t(item.heading)}
+              text={[
+                <Trans
+                  key={item.linkName}
+                  t={t}
+                  i18nKey={item.text}
+                  components={[
+                    <Link
+                      key={0}
+                      href={"/all-connectors"}
+                      color="main"
+                      textUnderline
+                      hover="underline-none"
+                    />,
+                  ]}
+                />,
+              ]}
               links={[
                 {
-                  name: item.linkName,
-                  url: item.linkUrl,
+                  name: t(item.linkName),
+                  url: t(item.linkUrl),
                 },
               ]}
             />
@@ -43,12 +62,12 @@ const GetStarted = () => {
             <SolutionCard
               key={item.heading}
               imgUrl={item.imgUrl}
-              heading={item.heading}
+              heading={t(item.heading)}
               text={item.text}
               links={[
                 {
-                  name: item.linkName,
-                  url: item.linkUrl,
+                  name: t(item.linkName),
+                  url: t(item.linkUrl),
                 },
               ]}
               large={true}
