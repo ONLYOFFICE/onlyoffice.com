@@ -1,77 +1,72 @@
-import { IHowToStartSwitcherItem } from "@src/components/widgets/HowToStartSwitcher";
-import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
+import { IStepCarouselTab } from "@src/components/widgets/StepCarousel";
 
-const firstTabItems: IStepCarouselItem[] = [
+export const items: IStepCarouselTab[] = [
   {
-    imgUrl: "/images/templates/office-for-wordpress/how-to-start/step1-dc.svg",
-    heading: "HowToStartStep1Docs",
-    headingLinks: [
+    label: "DocSpace",
+    items: [
       {
-        url: "/download#docs-enterprise",
-        isExternal: false,
+        imgUrl:
+          "/images/templates/office-for-wordpress/how-to-start/step1-ds.svg",
+        heading: "HowToStartStep1Docspace",
+        headingLinks: [
+          {
+            url: "/docspace-registration",
+            isExternal: false,
+          },
+        ],
       },
       {
-        url: "/docs-registration",
-        isExternal: false,
-      },
-    ],
-  },
-  {
-    imgUrl: "HowToStartStep2DocsImgUrl",
-    heading: "HowToStartStep2Docs",
-    headingLinks: [
-      {
-        url: "https://github.com/ONLYOFFICE/onlyoffice-wordpress",
-        isExternal: true,
+        imgUrl: "HowToStartStep2DocspaceImgUrl",
+        heading: "HowToStartStep2Docspace",
+        headingLinks: [
+          {
+            url: "https://wordpress.org/plugins/onlyoffice-docspace",
+            isExternal: true,
+          },
+        ],
       },
       {
-        url: "https://wordpress.org/plugins/onlyoffice",
-        isExternal: true,
-      },
-    ],
-  },
-  {
-    imgUrl: "HowToStartStep3DocsImgUrl",
-    heading: "HowToStartStep3",
-  },
-];
-
-const secondTabItems: IStepCarouselItem[] = [
-  {
-    imgUrl: "/images/templates/office-for-wordpress/how-to-start/step1-ds.svg",
-    heading: "HowToStartStep1Docspace",
-    headingLinks: [
-      {
-        url: "/docspace-registration",
-        isExternal: false,
+        imgUrl: "HowToStartStep3DocspaceImgUrl",
+        heading: "HowToStartStep3",
       },
     ],
   },
   {
-    imgUrl: "HowToStartStep2DocspaceImgUrl",
-    heading: "HowToStartStep2Docspace",
-    headingLinks: [
-      {
-        url: "https://wordpress.org/plugins/onlyoffice-docspace",
-        isExternal: true,
-      },
-    ],
-  },
-  {
-    imgUrl: "HowToStartStep3DocspaceImgUrl",
-    heading: "HowToStartStep3",
-  },
-];
-
-export const items: IHowToStartSwitcherItem[] = [
-  {
-    id: "docs",
     label: "Docs",
-    items: firstTabItems,
-  },
-  {
-    id: "docspace",
-    label: "Docspace",
-    items: secondTabItems,
+    items: [
+      {
+        imgUrl:
+          "/images/templates/office-for-wordpress/how-to-start/step1-dc.svg",
+        heading: "HowToStartStep1Docs",
+        headingLinks: [
+          {
+            url: "/download#docs-enterprise",
+            isExternal: false,
+          },
+          {
+            url: "/docs-registration",
+            isExternal: false,
+          },
+        ],
+      },
+      {
+        imgUrl: "HowToStartStep2DocsImgUrl",
+        heading: "HowToStartStep2Docs",
+        headingLinks: [
+          {
+            url: "https://github.com/ONLYOFFICE/onlyoffice-wordpress",
+            isExternal: true,
+          },
+          {
+            url: "https://wordpress.org/plugins/onlyoffice",
+            isExternal: true,
+          },
+        ],
+      },
+      {
+        imgUrl: "HowToStartStep3DocsImgUrl",
+        heading: "HowToStartStep3",
+      },
+    ],
   },
 ];

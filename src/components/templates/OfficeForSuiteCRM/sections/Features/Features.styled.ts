@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { StyledFeatureItem } from "@src/components/widgets/FeatureItem";
 
 const StyledFeaturesWrapper = styled.div`
   display: grid;
@@ -17,8 +18,11 @@ const StyledFeaturesItems = styled.div`
   justify-content: center;
   gap: 32px;
 
-  > div {
-    max-width: 256px;
+  > ${StyledFeatureItem} {
+    @media ${device.desktop} {
+      width: calc(33.333% - 24px);
+    }
+
     @media ${device.desktop} {
       width: calc(33.333% - 24px);
       max-width: 100%;
@@ -35,9 +39,9 @@ const StyledFeaturesItems = styled.div`
 `;
 
 const StyledHeaderWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 24px;
+  max-width: 750px;
 `;
 
 export { StyledFeaturesWrapper, StyledFeaturesItems, StyledHeaderWrapper };

@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 import { useTranslation, Trans } from "next-i18next";
-import { StyledDocumentsHeading } from "./Documents.styled";
+import {
+  StyledDocumentsHeading,
+  StyledDocumentsWrapper,
+} from "./Documents.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
@@ -26,10 +29,11 @@ const Documents = () => {
       document.head.removeChild(link);
     };
   }, []);
+
   return (
     <Section background="#f9f9f9">
       <Container>
-      <StyledDocumentsHeading level={2} textAlign="center">
+        <StyledDocumentsHeading level={2} size={2} textAlign="center">
           <Trans
             t={t}
             i18nKey="ZapTemplates"
@@ -37,7 +41,7 @@ const Documents = () => {
           />
         </StyledDocumentsHeading>
 
-        <div>
+        <StyledDocumentsWrapper>
           {/* @ts-expect-error Custom Zapier web component not included in JSX types */}
           <zapier-workflow
             client-id="DlXoq9VPMUe1Z8PyHtDDyVgROoq7YcONFrgaaAHL"
@@ -49,7 +53,7 @@ const Documents = () => {
             template-style="row"
             zap-create-from-scratch-display="hide"
           />
-        </div>
+        </StyledDocumentsWrapper>
       </Container>
     </Section>
   );

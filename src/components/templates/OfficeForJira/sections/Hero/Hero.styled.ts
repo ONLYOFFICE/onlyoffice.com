@@ -4,11 +4,10 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #1868DB;
+  background-color: #1868db;
   background-image: url("/images/templates/office-for-jira/hero/bg.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 27% -431px;
+  background-position: center -431px;
 
   @media (max-width: 1920px) {
     background-size: 2108px auto;
@@ -25,7 +24,7 @@ const StyledHero = styled(Section)`
   }
 
   @media ${device.mobile} {
-    background-position: calc(50% + 84px) -342px;
+    background-position: calc(50% + 190px) -342px;
   }
 `;
 
@@ -50,6 +49,11 @@ const StyledHeroLogo = styled.div`
   background-image: url("/images/templates/office-for-jira/hero/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media ${device.mobile} {
+    width: 56px;
+    height: 56px;
+  }
 `;
 
 const StyledHeroHeader = styled.div`

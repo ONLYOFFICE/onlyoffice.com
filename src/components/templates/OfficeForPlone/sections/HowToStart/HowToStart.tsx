@@ -17,7 +17,7 @@ const HowToStart = () => {
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: t(item.imgUrl),
+            imgUrl: item.imgUrl,
             heading: item.headingLinks ? (
               <Trans
                 t={t}

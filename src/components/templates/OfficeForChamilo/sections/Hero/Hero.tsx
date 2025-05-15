@@ -22,10 +22,10 @@ const Hero = () => {
 
   return (
     <StyledHero
-      desktopSpacing={["126px", "50px"]}
-      tabletSpacing={["126px", "50px"]}
-      tabletSmallSpacing={["119px", "72px"]}
-      mobileSpacing={["99px", "24px"]}
+      desktopSpacing={["120px", "88px"]}
+      tabletSpacing={["120px", "88px"]}
+      tabletSmallSpacing={["119px", "74px"]}
+      mobileSpacing={["99px", "61px"]}
     >
       <Container>
         <StyledHeroWrapper>
@@ -61,7 +61,6 @@ const Hero = () => {
           <iframe
             width="100%"
             height="auto"
-            style={{ aspectRatio: "64/36" }}
             src="https://www.youtube.com/embed/ZDKAY-ZWTb0?si=tOGQHNOErvbjBo-z&autoplay=1&mute=1&loop=1"
             title="YouTube"
             frameBorder="0"

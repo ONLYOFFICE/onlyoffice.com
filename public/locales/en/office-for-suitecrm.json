@@ -1,12 +1,12 @@
 {
-  "PageTitle": "Online editors for SuiteCRM",
+  "PageTitle": "Online editors for SuiteCRM | ONLYOFFICE",
   "PageDescription": "Work with office files in the SuiteCRM Documents module using ONLYOFFICE Docs",
 
   "OnlineOfficeForConnector": "Online office for <0>SuiteCRM</0>",
   "Subheader": "Work with office files in the SuiteCRM Documents module using ONLYOFFICE Docs",
   "GetItNow": "Get it now",
   "FullyCompatibleWithDocxXlsxAndPptx": "Fully compatible with docx, xlsx, and pptx",
-  
+
   "HeroTab1ImgUrl": "/images/templates/office-for-suitecrm/hero/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-suitecrm/hero/screen2.png",

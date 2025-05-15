@@ -36,8 +36,4 @@ const StyledHowToStartText = styled(Text)`
   margin-bottom: 16px;
 `;
 
-export {
-  StyledHowToStart,
-  StyledHowToStartInfo,
-  StyledHowToStartText,
-};
+export { StyledHowToStart, StyledHowToStartInfo, StyledHowToStartText };

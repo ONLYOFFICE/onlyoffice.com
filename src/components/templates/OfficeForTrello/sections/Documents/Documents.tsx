@@ -9,7 +9,7 @@ const Documents = () => {
   const { t } = useTranslation("office-for-trello");
 
   return (
-    <Section background="#ffffff">
+    <Section background="#f9f9f9">
       <Container>
         <StyledDocumentsHeading
           level={2}

@@ -11,13 +11,18 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-liferay");
 
   return (
-    <StyledHowToStart id="how-to-start" background="#f9f9f9">
+    <StyledHowToStart
+      id="how-to-start"
+      background="#f9f9f9"
+      tabletSmallSpacing={["48px", "48px"]}
+      mobileSpacing={["21px", "21px"]}
+    >
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: t(item.imgUrl),
+            imgUrl: item.imgUrl,
             heading: item.headingLinks ? (
               <Trans
                 t={t}

@@ -21,17 +21,17 @@ const Hero = () => {
 
   return (
     <StyledHero
-      desktopSpacing={["126px", "50px"]}
-      tabletSpacing={["126px", "50px"]}
-      tabletSmallSpacing={["119px", "72px"]}
-      mobileSpacing={["99px", "24px"]}
+      desktopSpacing={["134px", "93px"]}
+      tabletSpacing={["126px", "93px"]}
+      tabletSmallSpacing={["128px", "80px"]}
+      mobileSpacing={["96px", "48px"]}
     >
       <Container>
         <StyledHeroWrapper>
           <StyledHeroLogo />
 
           <StyledHeroHeader>
-          <Heading
+            <Heading
               level={1}
               size={1}
               label={t("OnlineOfficeForConnector")}
@@ -41,11 +41,11 @@ const Hero = () => {
           </StyledHeroHeader>
 
           <Button
-          variant="quaternary"
-              onClick={() => scrollToBlock()}
-              id="hero-get-started"
-              label={t("GetStarted")}
-            />
+            variant="quaternary"
+            onClick={() => scrollToBlock()}
+            id="hero-get-started"
+            label={t("GetStarted")}
+          />
         </StyledHeroWrapper>
 
         <StyledHeroImg

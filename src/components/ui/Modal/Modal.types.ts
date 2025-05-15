@@ -7,6 +7,8 @@ export interface IModal {
   children: React.ReactNode;
   /** The maximum width of the modal. Default: "736px". */
   maxWidth?: string;
+  /** The background color of the modal. Default: "rgba(0, 0, 0, 0.4)". */
+  bgColor?: string;
   /** Whether to show the close icon inside the modal. */
   withCloseBtn?: boolean;
   /** Specifies whether the close button is positioned inside or outside the modal. */

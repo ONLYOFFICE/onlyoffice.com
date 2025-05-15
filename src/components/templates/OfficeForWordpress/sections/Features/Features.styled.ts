@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
+import { StyledFeatureItem } from "@src/components/widgets/FeatureItem";
 
 const StyledFeaturesWrapper = styled.div`
   display: grid;
@@ -13,7 +14,7 @@ const StyledFeaturesWrapper = styled.div`
 `;
 
 const StyledSection = styled(Section)`
-  border-top: 1px solid #E2E2E2;
+  border-top: 1px solid #e2e2e2;
 `;
 
 const StyledFeaturesItems = styled.div`
@@ -22,7 +23,7 @@ const StyledFeaturesItems = styled.div`
   justify-content: center;
   gap: 32px;
 
-  > div {
+  > ${StyledFeatureItem} {
     @media ${device.desktop} {
       width: calc(33.333% - 24px);
       max-width: 100%;

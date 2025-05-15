@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
-const StyledDocspaceAppHeader = styled.div`
+const StyledDocSpaceAppHeader = styled.div`
   margin: 0 auto 56px;
   max-width: 700px;
   text-align: center;
@@ -16,7 +16,7 @@ const StyledDocspaceAppHeader = styled.div`
   }
 `;
 
-const StyledDocspaceAppHeading = styled(Heading)`
+const StyledDocSpaceAppHeading = styled(Heading)`
   display: inline;
 
   &:not(:last-child) {
@@ -33,8 +33,4 @@ const StyledDocspaceAppHeading = styled(Heading)`
   }
 `;
 
-
-export {
-  StyledDocspaceAppHeader,
-  StyledDocspaceAppHeading,
-};
+export { StyledDocSpaceAppHeader, StyledDocSpaceAppHeading };

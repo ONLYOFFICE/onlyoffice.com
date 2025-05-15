@@ -1,4 +1,4 @@
-import { IImageCarouselItem } from "@src/components/widgets/ImageCarousel";
+import { IImageCarouselItem } from "@src/components/modules/connectors/ImageCarousel";
 
 export const items: IImageCarouselItem[] = [
   {

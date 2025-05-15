@@ -4,22 +4,25 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background: url("/images/templates/office-for-liferay/hero/bg.svg") no-repeat, linear-gradient(#FFFFFF,#E1EAF7);
+  background:
+    url("/images/templates/office-for-liferay/hero/bg.svg") no-repeat,
+    linear-gradient(#ffffff, #e1eaf7);
   background-position-y: -230px, center;
+  background-position-x: center;
 
   @media ${device.tablet} {
     margin-top: -64px;
   }
 
   @media ${device.tabletS} {
-    background-position: calc(50% - 46px) -162px;
-    background-size: 1450px auto;
+    background-position: calc(50% + 12px) -229px;
+    background-size: 1442px 1303px;
     margin-top: -48px;
   }
 
   @media ${device.mobile} {
-    background-position: calc(50% + 84px) -86px;
-    background-size: 907px auto;
+    background-position: calc(50% - 10px) -141px;
+    background-size: 927px 837px;
   }
 `;
 
@@ -43,6 +46,7 @@ const StyledHeroLogo = styled.div`
   background-image: url("/images/templates/office-for-liferay/hero/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
+
   @media ${device.tabletS} {
     width: 48px;
     height: 48px;
@@ -57,7 +61,7 @@ const StyledHeroHeader = styled.div`
 
 const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
   border-radius: 5px;
-  padding-bottom: 53.572%;
+  padding-bottom: 55%;
   background-image: url(${(props) => props.$imgUrl});
   background-position: center;
   background-repeat: no-repeat;

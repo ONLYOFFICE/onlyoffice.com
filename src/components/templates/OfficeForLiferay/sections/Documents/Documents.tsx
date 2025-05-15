@@ -10,7 +10,7 @@ const Documents = () => {
   const { t } = useTranslation("office-for-liferay");
 
   return (
-    <Section background="#ffffff">
+    <Section background="#f9f9f9">
       <Container>
         <StyledDocumentsHeading
           level={2}

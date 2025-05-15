@@ -16,7 +16,9 @@ import {
   StyledHeroTotalPrice,
   StyledHeroCaption,
 } from "./Hero.styled";
-import { ILocale } from "@src/types/locale";
+import { IDeveloperEditionFormData } from "./Hero.types";
+import { IDeveloperEditionPricesTemplate } from "@src/components/templates/DeveloperEditionPrices";
+import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
@@ -34,11 +36,12 @@ import { SelectorsWrapper } from "@src/components/widgets/pricing/SelectorsWrapp
 import { SelectorItemWrapper } from "@src/components/widgets/pricing/SelectorItemWrapper";
 import { QuoteModal } from "@src/components/widgets/pricing/QuoteModal";
 
-const Hero = ({ locale }: ILocale) => {
+const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
   const { t } = useTranslation("developer-edition-prices");
+  const currency = getCurrencyByLocale(locale);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<IDeveloperEditionFormData>({
     hosting: "On-premises",
     development: true,
     devServersNumber: "1",
@@ -84,6 +87,13 @@ const Hero = ({ locale }: ILocale) => {
     formData.disasterRecovery,
   ].every(Boolean);
 
+  const product =
+    {
+      Basic: productsData.basicOnPremises,
+      Plus: productsData.plusOnPremises,
+      Premium: productsData.premiumOnPremises,
+    }[formData.supportLevel] || null;
+
   return (
     <StyledHero
       background="#f5f5f5"
@@ -106,8 +116,8 @@ const Hero = ({ locale }: ILocale) => {
               <StyledHeroPriceWrapper>
                 {t("From")}
                 <StyledHeroPrice>
-                  <span>$</span>
-                  12
+                  <span>{currency.symbol}</span>
+                  {productsData.basicCloud.price}
                 </StyledHeroPrice>
                 {t("user/month")}
               </StyledHeroPriceWrapper>
@@ -144,7 +154,7 @@ const Hero = ({ locale }: ILocale) => {
                   { id: "On-premises", label: { name: t("OnPremises") } },
                 ]}
                 selected={formData.hosting}
-                onChange={(value) =>
+                onChange={(value: IDeveloperEditionFormData["hosting"]) =>
                   setFormData((prev) => ({ ...prev, hosting: value }))
                 }
               />
@@ -176,7 +186,7 @@ const Hero = ({ locale }: ILocale) => {
                             subHeading={t("20ConnectionsPerEachServer")}
                           >
                             <CounterSelector
-                              size="small"
+                              buttonSize="small"
                               variant="input"
                               autoFocus={formData.development}
                               value={formData.devServersNumber}
@@ -214,7 +224,7 @@ const Hero = ({ locale }: ILocale) => {
                               heading={t("NumberOfServers")}
                             >
                               <CounterSelector
-                                size="small"
+                                buttonSize="small"
                                 variant="input"
                                 autoFocus={formData.production}
                                 value={formData.prodServerNumber}
@@ -237,7 +247,7 @@ const Hero = ({ locale }: ILocale) => {
                               }}
                             >
                               <CounterSelector
-                                size="small"
+                                buttonSize="small"
                                 items={[
                                   { id: "250", label: "250" },
                                   { id: "500", label: "500" },
@@ -288,7 +298,7 @@ const Hero = ({ locale }: ILocale) => {
                               heading={t("NumberOfServers")}
                             >
                               <CounterSelector
-                                size="small"
+                                buttonSize="small"
                                 variant="input"
                                 autoFocus={formData.nonProduction}
                                 value={formData.nonProdServerNumber}
@@ -317,7 +327,7 @@ const Hero = ({ locale }: ILocale) => {
                       { id: "White Label", label: { name: t("WhiteLabel") } },
                     ]}
                     selected={formData.branding}
-                    onChange={(value) =>
+                    onChange={(value: IDeveloperEditionFormData["branding"]) =>
                       setFormData((prev) => ({
                         ...prev,
                         branding: value,
@@ -428,7 +438,7 @@ const Hero = ({ locale }: ILocale) => {
                 selected={formData.supportLevel}
                 bgColor="#f5f5f5"
                 collapsible
-                onChange={(value) =>
+                onChange={(value: IDeveloperEditionFormData["supportLevel"]) =>
                   setFormData({ ...formData, supportLevel: value })
                 }
               />
@@ -511,12 +521,8 @@ const Hero = ({ locale }: ILocale) => {
                 <StyledHeroTotalWrapper>
                   <Heading level={4} color="#444444" label={t("Total")} />
                   <StyledHeroTotalPrice>
-                    <span>$</span>
-                    {formData.supportLevel === "Basic"
-                      ? "1950"
-                      : formData.supportLevel === "Plus"
-                      ? "3500"
-                      : "4500"}
+                    <span>{currency.symbol}</span>
+                    {product?.price}
                   </StyledHeroTotalPrice>
                 </StyledHeroTotalWrapper>
               )}
@@ -535,7 +541,13 @@ const Hero = ({ locale }: ILocale) => {
                     label={t("OrderNow")}
                   />
                 ) : (
-                  <Button as="a" fullWidth href="" label={t("BuyNow")} />
+                  <Button
+                    as="a"
+                    fullWidth
+                    href={product?.url}
+                    target="_blank"
+                    label={t("BuyNow")}
+                  />
                 )}
               </StyledHeroBtnWrapper>
             </StyledHeroTotal>

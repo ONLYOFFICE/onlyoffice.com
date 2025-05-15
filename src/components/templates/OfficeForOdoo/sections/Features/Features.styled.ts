@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
+import { StyledFeatureItem } from "@src/components/widgets/FeatureItem";
 
 const StyledFeaturesHeading = styled(Heading)`
   margin-bottom: 56px;
@@ -16,7 +17,7 @@ const StyledFeaturesItems = styled.div`
   justify-content: center;
   gap: 32px;
 
-  > div {
+  > ${StyledFeatureItem} {
     @media ${device.desktop} {
       width: calc(33.333% - 24px);
       max-width: 100%;

@@ -41,7 +41,7 @@ const HowToStart = () => {
         />
 
         <StyledHowToStartInfo>
-        <WatchVideo
+          <WatchVideo
             heading={t("HowToConnect")}
             videoImgUrl="/images/templates/office-for-jira/how-to-start/video-preview.png"
             videoUrl="https://www.youtube.com/embed/mQgpkMwwbLE"

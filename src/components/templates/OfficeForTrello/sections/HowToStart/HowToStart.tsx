@@ -2,8 +2,8 @@ import { useTranslation, Trans } from "next-i18next";
 import { StyledHowToStart } from "./HowToStart.styled";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
-import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { Link } from "@src/components/ui/Link";
+import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
 
 const HowToStart = () => {
@@ -16,7 +16,7 @@ const HowToStart = () => {
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: t(item.imgUrl),
+            imgUrl: item.imgUrl,
             heading: item.headingLinks ? (
               <Trans
                 t={t}

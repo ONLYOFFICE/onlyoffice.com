@@ -3,6 +3,7 @@ import {
   StyledDocsAppHeading,
   StyledDocsAppBtnWrapper,
 } from "./DocsApp.styled";
+import { IDocsApp } from "./DocsApp.types";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
@@ -10,14 +11,18 @@ import { Button } from "@src/components/ui/Button";
 import { FeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
 import { items } from "./data/items";
 
-const DocsApp = () => {
+const DocsApp = ({ setActiveTab }: IDocsApp) => {
   const { t } = useTranslation("office-for-wordpress");
 
   const scrollToBlock = () => {
     const element = document.getElementById("how-to-start");
-    if (element) element.scrollIntoView({ behavior: "smooth" });
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setActiveTab(1);
+    }
   };
-  
+
   return (
     <Section>
       <Container>

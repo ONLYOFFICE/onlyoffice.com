@@ -4,14 +4,13 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #E8F8FF;
+  background-color: #e8f8ff;
   background-image: url("/images/templates/office-for-drupal/hero/bg.svg");
   background-repeat: no-repeat;
   background-position: 50% 0;
 
   @media ${device.tablet} {
     margin-top: -64px;
-    background-position: center -477px;
   }
 
   @media ${device.tabletS} {
@@ -19,7 +18,7 @@ const StyledHero = styled(Section)`
   }
 
   @media ${device.mobile} {
-    background-position: calc(50% + 334px) -627px;
+    background-position: 54% -60px;
   }
 `;
 
@@ -38,7 +37,7 @@ const StyledHeroWrapper = styled.div`
 
 const StyledHeroLogo = styled.div`
   margin: 0 auto;
-  width:42px;
+  width: 42px;
   height: 56px;
   background-image: url("/images/templates/office-for-drupal/hero/logo.svg");
   background-repeat: no-repeat;

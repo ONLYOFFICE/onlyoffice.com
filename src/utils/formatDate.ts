@@ -1,4 +1,4 @@
-import { languages } from "@src/config/languages";
+import { ILocale } from "@src/types/locale";
 import dayjs from "dayjs";
 import "dayjs/locale/fr";
 import "dayjs/locale/de";
@@ -9,9 +9,7 @@ import "dayjs/locale/cs";
 import "dayjs/locale/nl";
 import "dayjs/locale/ru";
 
-type TLanguageShortKey = (typeof languages)[number]["shortKey"];
-
-const formatMap: Record<TLanguageShortKey, string> = {
+const formatMap: Record<ILocale["locale"], string> = {
   en: "D MMMM YYYY",
   ja: "YYYY日M月D日",
   zh: "YYYY年M月D日",
@@ -19,7 +17,7 @@ const formatMap: Record<TLanguageShortKey, string> = {
 
 export const formatDate = (
   date: string | Date,
-  locale: TLanguageShortKey = "en",
+  locale: ILocale["locale"] = "en",
 ) => {
   return dayjs(date)
     .locale(locale)

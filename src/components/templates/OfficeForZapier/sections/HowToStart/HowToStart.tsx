@@ -17,27 +17,30 @@ const HowToStart = () => {
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: t(item.imgUrl),
-            heading: (
+            imgUrl: item.imgUrl,
+            heading: item.headingLinks ? (
               <Trans
                 t={t}
                 i18nKey={String(item.heading)}
-                components={item.headingLinks ? 
-                  item.headingLinks.map((link, index) => (
-                    <Link
-                      key={index}
-                      href={link.url}
-                      target={link.isExternal ? "_blank" : undefined}
-                      color="main"
-                      textUnderline
-                      hover="underline-none"
-                    />
-                  )) : 
-                  [<Text as="span" fontWeight={600} key="0" />]
-                }
+                components={item.headingLinks.map((link, index) => (
+                  <Link
+                    key={index}
+                    href={link.url}
+                    target={link.isExternal ? "_blank" : undefined}
+                    color="main"
+                    textUnderline
+                    hover="underline-none"
+                  />
+                ))}
+              />
+            ) : (
+              <Trans
+                t={t}
+                i18nKey={String(item.heading)}
+                components={[<Text as="b" key={0} />]}
               />
             ),
-          }))} 
+          }))}
         />
 
         <StyledHowToStartInfo>

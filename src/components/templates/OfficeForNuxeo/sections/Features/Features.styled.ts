@@ -16,17 +16,6 @@ const StyledFeaturesItems = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 
-  > div {
-    max-width: 447px;
-    @media ${device.desktop} {
-      max-width: 100%;
-    }
-
-    @media ${device.mobile} {
-      width: 100%;
-    }
-  }
-
   @media ${device.mobile} {
     grid-template-columns: 1fr;
     gap: 16px;

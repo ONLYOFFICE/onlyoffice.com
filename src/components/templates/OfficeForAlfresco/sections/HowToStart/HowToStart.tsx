@@ -2,9 +2,9 @@ import { useTranslation, Trans } from "next-i18next";
 import { StyledHowToStart, StyledHowToStartInfo } from "./HowToStart.styled";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
+import { Link } from "@src/components/ui/Link";
 import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { WatchVideo } from "@src/components/widgets/WatchVideo";
-import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
 const HowToStart = () => {

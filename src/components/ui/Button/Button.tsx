@@ -36,7 +36,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
         type={as === "button" ? type : undefined}
         title={title}
         as={as === "a" ? Link : as}
-        href={as === "a" ? href ?? "" : undefined}
+        href={as === "a" ? (href ?? "") : undefined}
         target={as === "a" ? target : undefined}
         rel={
           as === "a"

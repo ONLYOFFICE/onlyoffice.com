@@ -15,5 +15,4 @@ const StyledDocsAppHeading = styled(Heading)`
   }
 `;
 
-
 export { StyledDocsAppHeading };

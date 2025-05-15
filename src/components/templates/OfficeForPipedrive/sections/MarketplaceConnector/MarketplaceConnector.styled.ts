@@ -10,7 +10,7 @@ const StyledMarketplaceConnectorWrapper = styled.div`
   position: relative;
   display: grid;
   align-items: center;
-  grid-template-columns: auto 328px;
+  grid-template-columns: auto 352px;
   column-gap: 32px;
   min-height: 440px;
 

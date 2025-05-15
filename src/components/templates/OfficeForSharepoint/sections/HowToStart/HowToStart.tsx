@@ -40,7 +40,7 @@ const HowToStart = () => {
         />
 
         <StyledHowToStartInfo>
-        <Text size={2} textAlign="center">
+          <Text size={2} textAlign="center">
             <Trans
               t={t}
               i18nKey="ReadDetailedInstructions"

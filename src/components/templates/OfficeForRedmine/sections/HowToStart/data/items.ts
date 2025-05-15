@@ -1,9 +1,9 @@
-import { ISimpleHowToStartItem } from "@src/components/widgets/SimpleHowToStart";
+import { IHowToStartItem } from "@src/components/modules/connectors/HowToStart";
 
-export const items: ISimpleHowToStartItem[] = [
+export const items: IHowToStartItem[] = [
   {
-    heading: "HowToStartStep1",
-    headingLinks: [
+    text: "HowToStartStep1",
+    textLinks: [
       {
         url: "/download-docs",
         isExternal: false,
@@ -15,8 +15,8 @@ export const items: ISimpleHowToStartItem[] = [
     ],
   },
   {
-    heading: "HowToStartStep2",
-    headingLinks: [
+    text: "HowToStartStep2",
+    textLinks: [
       {
         url: "https://www.redmine.org/plugins/onlyoffice_redmine",
         isExternal: true,
@@ -24,6 +24,6 @@ export const items: ISimpleHowToStartItem[] = [
     ],
   },
   {
-    heading: "HowToStartStep3",
+    text: "HowToStartStep3",
   },
 ];

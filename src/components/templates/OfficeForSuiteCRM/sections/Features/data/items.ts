@@ -18,7 +18,7 @@ export const items: IFeatureItem[] = [
   {
     icon: {
       url: "/images/templates/office-for-suitecrm/features/features.svg",
-      positionX: "-166px",
+      positionX: "-498px",
     },
     text: "Reason3",
   },
@@ -46,7 +46,7 @@ export const items: IFeatureItem[] = [
   {
     icon: {
       url: "/images/templates/office-for-suitecrm/features/features.svg",
-      positionX: "-498px",
+      positionX: "-166px",
     },
     text: "Reason7",
   },

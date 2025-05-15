@@ -63,11 +63,13 @@ const StyledMarketplaceConnectorBody = styled.div`
 `;
 
 const StyledMarketplaceConnectorImg = styled.div`
-  width: 328px;
+  width: 100%;
+  max-width: 328px;
   height: 100%;
   background-image: url("/images/templates/office-for-chamilo/marketplace-connector/connector-img.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   z-index: 1;
 
   @media ${device.mobile} {

@@ -4,7 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 
 const StyledDocumentsHeading = styled(Heading)`
   margin: 0 auto 56px;
-  max-width: 720px;
+  max-width: 828px;
 
   @media ${device.tablet} {
     margin: 0 auto 40px;
@@ -15,4 +15,9 @@ const StyledDocumentsHeading = styled(Heading)`
   }
 `;
 
-export { StyledDocumentsHeading };
+const StyledDocumentsWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 860px;
+`;
+
+export { StyledDocumentsHeading, StyledDocumentsWrapper };

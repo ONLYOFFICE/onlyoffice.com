@@ -7,7 +7,7 @@ import { HowToStart } from "./sections/HowToStart";
 import { Partner } from "./sections/Partner";
 import { LearnMore } from "./sections/LearnMore";
 import { ConnectApp } from "./sections/ConnectApp";
-import { OtherConnectors } from "@src/components/modules/OtherConnectors";
+import { OtherConnectors } from "@src/components/modules/connectors/OtherConnectors";
 
 const OfficeForNextcloudTemplate = () => {
   return (

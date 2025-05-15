@@ -1,18 +1,16 @@
 {
   "DocumentsTab1ImgUrl": "/images/templates/office-for-chamilo/documents/de/screenshot1.png",
   "DocumentsTab1ImgUrl2x": "/images/templates/office-for-chamilo/documents/de/screenshot1@2x.png",
-  
+
   "DocumentsTab2ImgUrl": "/images/templates/office-for-chamilo/documents/de/screenshot2.png",
   "DocumentsTab2ImgUrl2x": "/images/templates/office-for-chamilo/documents/de/screenshot2@2x.png",
-  
+
   "DocumentsTab3ImgUrl": "/images/templates/office-for-chamilo/documents/de/screenshot3.png",
   "DocumentsTab3ImgUrl2x": "/images/templates/office-for-chamilo/documents/de/screenshot3@2x.png",
-  
+
   "DocumentsTab4ImgUrl": "/images/templates/office-for-chamilo/documents/de/screenshot4.png",
   "DocumentsTab4ImgUrl2x": "/images/templates/office-for-chamilo/documents/de/screenshot4@2x.png",
 
-
   "HowToStartStep3ImgUrl": "/images/templates/office-for-chamilo/how-to-start/de/step3.svg",
   "HowToStartStep4ImgUrl": "/images/templates/office-for-chamilo/how-to-start/de/step4.svg"
-
 }

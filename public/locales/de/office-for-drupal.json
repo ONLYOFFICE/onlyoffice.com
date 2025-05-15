@@ -1,45 +1,41 @@
 {
-    "HeroImgUrl": "/images/templates/office-for-drupal/hero/de/hero.png",
-    "HeroImgUrl2x": "/images/templates/office-for-drupal/hero/de/hero@2x.png",
-  
-    "DocumentsScreen1Tab1ImgUrl": "/images/templates/office-for-drupal/website/de/screen1.png",
-    "DocumentsScreen1Tab1ImgUrl2x": "/images/templates/office-for-drupal/website/de/screen1@2x.png",
-    
-    "DocumentsScreen1Tab2ImgUrl": "/images/templates/office-for-drupal/website/de/screen2.png",
-    "DocumentsScreen1Tab2ImgUrl2x": "/images/templates/office-for-drupal/website/de/screen2@2x.png",
-    
-    "DocumentsScreen1Tab3ImgUrl": "/images/templates/office-for-drupal/website/de/screen3.png",
-    "DocumentsScreen1Tab3ImgUrl2x": "/images/templates/office-for-drupal/website/de/screen3@2x.png",
-    
-    "DocumentsScreen1Tab4ImgUrl": "/images/templates/office-for-drupal/website/de/screen4.png",
-    "DocumentsScreen1Tab4ImgUrl2x": "/images/templates/office-for-drupal/website/de/screen4@2x.png",
-  
-    
-    "DocumentsScreen2Tab1ImgUrl": "/images/templates/office-for-drupal/account/de/screen1.png",
-    "DocumentsScreen2Tab1ImgUrl2x": "/images/templates/office-for-drupal/account/de/screen1@2x.png",
-    
-    "DocumentsScreen2Tab2ImgUrl": "/images/templates/office-for-drupal/account/de/screen2.png",
-    "DocumentsScreen2Tab2ImgUrl2x": "/images/templates/office-for-drupal/account/de/screen2@2x.png",
-    
-    "DocumentsScreen2Tab3ImgUrl": "/images/templates/office-for-drupal/account/de/screen3.png",
-    "DocumentsScreen2Tab3ImgUrl2x": "/images/templates/office-for-drupal/account/de/screen3@2x.png",
-    
-    "DocumentsScreen2Tab4ImgUrl": "/images/templates/office-for-drupal/account/de/screen4.png",
-    "DocumentsScreen2Tab4ImgUrl2x": "/images/templates/office-for-drupal/account/de/screen4@2x.png",
-    
-  
-    "DocsAppTab1ImgUrl": "/images/templates/office-for-drupal/docs-app/de/screen1.png",
-    "DocsAppTab1ImgUrl2x": "/images/templates/office-for-drupal/docs-app/de/screen1@2x.png",
-    
-    "DocsAppTab2ImgUrl": "/images/templates/office-for-drupal/docs-app/de/screen2.png",
-    "DocsAppTab2ImgUrl2x": "/images/templates/office-for-drupal/docs-app/de/screen2@2x.png",
-    
-    "DocsAppTab3ImgUrl": "/images/templates/office-for-drupal/docs-app/de/screen3.png",
-    "DocsAppTab3ImgUrl2x": "/images/templates/office-for-drupal/docs-app/de/screen3@2x.png",
-  
+  "HeroImgUrl": "/images/templates/office-for-drupal/hero/de/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-drupal/hero/de/hero@2x.png",
 
-    "HowToStartStep3DocsImgUrl": "/images/templates/office-for-drupal/how-to-start/de/step3-dc.svg",
-    
-    "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-drupal/how-to-start/de/step3-ds.svg"
-  }
-  
+  "DocumentsScreen1Tab1ImgUrl": "/images/templates/office-for-drupal/website/de/screen1.png",
+  "DocumentsScreen1Tab1ImgUrl2x": "/images/templates/office-for-drupal/website/de/screen1@2x.png",
+
+  "DocumentsScreen1Tab2ImgUrl": "/images/templates/office-for-drupal/website/de/screen2.png",
+  "DocumentsScreen1Tab2ImgUrl2x": "/images/templates/office-for-drupal/website/de/screen2@2x.png",
+
+  "DocumentsScreen1Tab3ImgUrl": "/images/templates/office-for-drupal/website/de/screen3.png",
+  "DocumentsScreen1Tab3ImgUrl2x": "/images/templates/office-for-drupal/website/de/screen3@2x.png",
+
+  "DocumentsScreen1Tab4ImgUrl": "/images/templates/office-for-drupal/website/de/screen4.png",
+  "DocumentsScreen1Tab4ImgUrl2x": "/images/templates/office-for-drupal/website/de/screen4@2x.png",
+
+  "DocumentsScreen2Tab1ImgUrl": "/images/templates/office-for-drupal/account/de/screen1.png",
+  "DocumentsScreen2Tab1ImgUrl2x": "/images/templates/office-for-drupal/account/de/screen1@2x.png",
+
+  "DocumentsScreen2Tab2ImgUrl": "/images/templates/office-for-drupal/account/de/screen2.png",
+  "DocumentsScreen2Tab2ImgUrl2x": "/images/templates/office-for-drupal/account/de/screen2@2x.png",
+
+  "DocumentsScreen2Tab3ImgUrl": "/images/templates/office-for-drupal/account/de/screen3.png",
+  "DocumentsScreen2Tab3ImgUrl2x": "/images/templates/office-for-drupal/account/de/screen3@2x.png",
+
+  "DocumentsScreen2Tab4ImgUrl": "/images/templates/office-for-drupal/account/de/screen4.png",
+  "DocumentsScreen2Tab4ImgUrl2x": "/images/templates/office-for-drupal/account/de/screen4@2x.png",
+
+  "DocsAppTab1ImgUrl": "/images/templates/office-for-drupal/docs-app/de/screen1.png",
+  "DocsAppTab1ImgUrl2x": "/images/templates/office-for-drupal/docs-app/de/screen1@2x.png",
+
+  "DocsAppTab2ImgUrl": "/images/templates/office-for-drupal/docs-app/de/screen2.png",
+  "DocsAppTab2ImgUrl2x": "/images/templates/office-for-drupal/docs-app/de/screen2@2x.png",
+
+  "DocsAppTab3ImgUrl": "/images/templates/office-for-drupal/docs-app/de/screen3.png",
+  "DocsAppTab3ImgUrl2x": "/images/templates/office-for-drupal/docs-app/de/screen3@2x.png",
+
+  "HowToStartStep3DocsImgUrl": "/images/templates/office-for-drupal/how-to-start/de/step3-dc.svg",
+
+  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-drupal/how-to-start/de/step3-ds.svg"
+}

@@ -1,0 +1,1 @@
+export { SuccessStoriesTemplate } from "./SuccessStories";

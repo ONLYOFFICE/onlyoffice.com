@@ -1,10 +1,11 @@
 {
-  "PageTitle": "Online Office for WordPress",
+  "PageTitle": "Online Office for WordPress | ONLYOFFICE",
   "PageDescription": "Work on office files from your WordPress account",
 
   "OnlineOfficeForConnector": "Online Office for WordPress",
   "Subheader": "Work on office files from your WordPress account",
   "GetItNow": "Get it now",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Fully compatible with docx, xlsx, and pptx",
   "RequestFreeDemo": "Request free demo",
 
   "DocspaceAppTitle": "ONLYOFFICE <0>DocSpace app</0> for WordPress",
@@ -21,6 +22,7 @@
   "DocspaceAppTab4Label": "Prevent downloading, printing and copying documents from your website.",
   "DocspaceAppTab4ImgUrl": "/images/templates/office-for-wordpress/docspace-app/screen4.png",
   "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/screen4@2x.png",
+  "soon": "soon",
 
   "DocspaceAppScreen2Header": "Efficiently manage documents from your WordPress account",
   "DocspaceAppScreen2Tab1Label": "Create a secure space for all your docs. Easily access it anytime anywhere",
@@ -54,14 +56,14 @@
 
   "WhyOO": "Why ONLYOFFICE?",
   "Reason1": "A robust set of editing, formatting, and styling tools. <0>Integrated AI helper</0> (ChatGPT or ZhiPu Copilot).",
-  "Reason2": "<0>Real-time</0> and paragraph-locking co-editing, review, version history, document comparison, comments &amp; mentions.",
+  "Reason2": "<0>Real-time</0> and paragraph-locking co-editing, review, version history, document comparison, comments & mentions.",
   "Reason3": "<0>Built-in chat</0> and Telegram integration. Jitsi and Rainbow plugins for real-time communication.",
   "Reason4": "Support for more than <0>50 file formats</0>. Fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
   "Reason5": "<0>Enhanced security.</0> Flexible access rights and JWT. Activity tracking and audit reporting. Encryption at rest and in transit. Open source code.",
   "Reason6": "<0>Free plan to start</0>. Business plan for more admins, bigger storage, enhanced security and professional support. Self-hosted solution for total control over your data.",
 
   "Docs": "Docs",
-  "Docspace": "DocSpace",
+  "DocSpace": "DocSpace",
 
   "HowToStart": "How to start",
   "HowToStartStep1Docs": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
@@ -75,11 +77,11 @@
   "HowToStartStep1DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/step1-ds.svg",
   "HowToStartStep2DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/step2-ds.svg",
   "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/step3-ds.svg",
-  
+
   "HowToStartStep3": "Upload and configure the integration app.",
 
   "ReadDetailedInstructionsDocs": "Read detailed instructions in the <0>Help Center</0>.",
-  "ReadDetailedInstructionsDocspace": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",
+  "ReadDetailedInstructionsDocSpace": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
 }
