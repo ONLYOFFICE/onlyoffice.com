@@ -1,19 +1,19 @@
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
-import { Section } from "@src/components/ui/Section";
 import { FeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
 import { switcher } from "./data/switcher";
 import {
   StyledExamplesHeading,
   StyledExamplesLogo,
   StyledExamplesLogosWrapper,
+  StyledExamplesSection,
 } from "./Examples.styled";
 import { logos } from "./data/logos";
 
 const Examples = () => {
   const { t } = useTranslation("conversion-api");
   return (
-    <Section tabletSmallSpacing={["88px", "88px"]}>
+    <StyledExamplesSection tabletSmallSpacing={["88px", "88px"]}>
       <Container>
         <StyledExamplesHeading
           level={2}
@@ -40,10 +40,10 @@ const Examples = () => {
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
-          heading={t("OOConversionApuTitle")}
+          heading={t("OOConversionApiTitle")}
         />
       </Container>
-    </Section>
+    </StyledExamplesSection>
   );
 };
 

@@ -1,19 +1,28 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
-export const items: IFeatureItem[] = [
+interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
+  text: {
+    label: React.ReactNode;
+    links?: { href: string; isExternal?: boolean }[];
+  };
+}
+
+export const items: IFeatureItemExtended[] = [
   {
     icon: {
       url: "/images/templates/conversion-api/features/icons.svg",
       positionX: "0",
     },
     heading: "SupportForAllPopularFormats",
-    text: "CreatePdfs",
-    links: [
-      {
-        href: "/https://api.onlyoffice.com/docs/docs-api/additional-api/conversion-api/conversion-tables/#text-document-file-formats",
-        isExternal: true,
-      },
-    ],
+    text: {
+      label: "CreatePdfs",
+      links: [
+        {
+          href: "https://api.onlyoffice.com/docs/docs-api/additional-api/conversion-api/conversion-tables/#text-document-file-formats",
+          isExternal: true,
+        },
+      ],
+    },
   },
   {
     icon: {
@@ -21,12 +30,14 @@ export const items: IFeatureItem[] = [
       positionX: "-288px",
     },
     heading: "Security",
-    text: "TheOpenSourceCode",
-    links: [
-      {
-        href: "/security",
-      },
-    ],
+    text: {
+      label: "TheOpenSourceCode",
+      links: [
+        {
+          href: "/security",
+        },
+      ],
+    },
   },
   {
     icon: {
@@ -34,7 +45,7 @@ export const items: IFeatureItem[] = [
       positionX: "-96px",
     },
     heading: "AdvancedSettings",
-    text: "AddConversionSettings",
+    text: { label: "AddConversionSettings" },
   },
   {
     icon: {
@@ -42,11 +53,13 @@ export const items: IFeatureItem[] = [
       positionX: "-192px",
     },
     heading: "HighQualityConversion",
-    text: "OOConstantlyImproveTheService",
-    links: [
-      {
-        href: "/online-document-converter",
-      },
-    ],
+    text: {
+      label: "OOConstantlyImproveTheService",
+      links: [
+        {
+          href: "/online-document-converter",
+        },
+      ],
+    },
   },
 ];
