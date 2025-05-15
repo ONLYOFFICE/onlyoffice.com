@@ -16,6 +16,7 @@ const DocumentEditor = dynamic(
 const Actions = () => {
   const [token, setToken] = useState("");
   const [config, setConfig] = useState<ITokenResponse["config"] | null>(null);
+
   console.log("token", token);
   console.log("config", config);
 
@@ -75,6 +76,21 @@ const Actions = () => {
             onLoadComponentError={onLoadComponentError}
           />
         )}
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://site.docs.onlyoffice.com/8.3.3-0d10b80972d36ff5a943a921d724982a/web-apps/apps/pdfeditor/main/index.html?_dc=8.3.3-18&lang=en&customer=ONLYOFFICE&type=desktop&frameEditorId=editorPlaceholder&parentOrigin=https://www.onlyoffice.com&fileType=pdf&isForm=false"
+        />
+        {/* <iframe
+          width="100%"
+          height="100%"
+          src="https://site.docs.onlyoffice.com/8.3.3-0d10b80972d36ff5a943a921d724982a/web-apps/apps/common/index.html?_dc=8.3.3-18&lang=en&customer=ONLYOFFICE&type=desktop&frameEditorId=editorPlaceholder&parentOrigin=https://www.onlyoffice.com&fileType=pdf"
+        /> */}
+        {/* <iframe
+          width="100%"
+          height="100%"
+          src="https://static.onlyoffice.com/assets/docs/samples/oform.pdf"
+        /> */}
       </StyledActionsContent>
     </Container>
   );
