@@ -23,7 +23,10 @@ const StyledInputLabel = styled.label<{
     props.$value || props.$isFocused || props.$active ? "16px" : "24px"};
   color: ${(props) =>
     props.$isFocused ? "#666666" : props.$disabled ? "#cccccc" : "#aaaaaa"};
-  transition: top 0.2s, font-size 0.2s, color 0.2s;
+  transition:
+    top 0.2s,
+    font-size 0.2s,
+    color 0.2s;
   pointer-events: none;
   z-index: 1;
 
@@ -50,8 +53,8 @@ const StyledInputWrapper = styled.div<{
     props.$status === "success"
       ? "#8bb825"
       : props.$status === "error"
-      ? "#cb0000"
-      : "#aaaaaa"};
+        ? "#cb0000"
+        : "#aaaaaa"};
   border-radius: 3px;
   width: 100%;
   height: 56px;
@@ -59,11 +62,13 @@ const StyledInputWrapper = styled.div<{
     props.$status === "success"
       ? "#f9feef"
       : props.$status === "error"
-      ? "#fff7f7"
-      : props.$disabled
-      ? " rgba(249, 249, 249, 0.4)"
-      : "#f9f9f9"};
-  transition: border-color 0.2s, background-color 0.2s;
+        ? "#fff7f7"
+        : props.$disabled
+          ? " rgba(249, 249, 249, 0.4)"
+          : "#f9f9f9"};
+  transition:
+    border-color 0.2s,
+    background-color 0.2s;
   overflow: hidden;
 
   ${(props) =>
@@ -119,18 +124,18 @@ const StyledInputField = styled.input<{
     props.$label && props.$leftSide && props.$rightSide
       ? "24px 8px 8px"
       : props.$label && props.$leftSide
-      ? "24px 16px 8px 8px"
-      : props.$label && props.$rightSide
-      ? "24px 8px 8px 16px"
-      : props.$label
-      ? "24px 16px 8px"
-      : props.$leftSide && props.$rightSide
-      ? "16px 8px"
-      : props.$leftSide
-      ? "16px 16px 16px 8px"
-      : props.$rightSide
-      ? "16px 8px 16px 16px"
-      : "16px"};
+        ? "24px 16px 8px 8px"
+        : props.$label && props.$rightSide
+          ? "24px 8px 8px 16px"
+          : props.$label
+            ? "24px 16px 8px"
+            : props.$leftSide && props.$rightSide
+              ? "16px 8px"
+              : props.$leftSide
+                ? "16px 16px 16px 8px"
+                : props.$rightSide
+                  ? "16px 8px 16px 16px"
+                  : "16px"};
   font-size: 16px;
   line-height: 24px;
   width: 100%;
@@ -155,18 +160,18 @@ const StyledInputField = styled.input<{
       props.$label && props.$leftSide && props.$rightSide
         ? "22px 8px 6px"
         : props.$label && props.$leftSide
-        ? "22px 12px 6px 8px"
-        : props.$label && props.$rightSide
-        ? "22px 8px 6px 12px"
-        : props.$label
-        ? "22px 12px 6px"
-        : props.$leftSide && props.$rightSide
-        ? "12px 8px"
-        : props.$leftSide
-        ? "12px 12px 12px 8px"
-        : props.$rightSide
-        ? "12px 8px 12px 12px"
-        : "12px"};
+          ? "22px 12px 6px 8px"
+          : props.$label && props.$rightSide
+            ? "22px 8px 6px 12px"
+            : props.$label
+              ? "22px 12px 6px"
+              : props.$leftSide && props.$rightSide
+                ? "12px 8px"
+                : props.$leftSide
+                  ? "12px 12px 12px 8px"
+                  : props.$rightSide
+                    ? "12px 8px 12px 12px"
+                    : "12px"};
     font-size: 14px;
     line-height: 20px;
   }

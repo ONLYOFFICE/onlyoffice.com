@@ -14,7 +14,9 @@ const StyledWatchVideo = styled.div`
   margin: 0 auto;
   max-width: 560px;
   box-shadow: 0px 7px 15px 0px rgba(85, 85, 85, 0.1);
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 
   &:hover {
     border: 1px solid #666666;

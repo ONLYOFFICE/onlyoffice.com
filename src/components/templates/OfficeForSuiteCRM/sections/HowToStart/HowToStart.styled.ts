@@ -5,7 +5,7 @@ import { Section } from "@src/components/ui/Section";
 const StyledHowToStart = styled(Section)`
   border-top: 1px solid #e2e2e2;
   scroll-margin-top: 72px;
-  
+
   @media ${device.tablet} {
     scroll-margin-top: 64px;
   }
@@ -14,7 +14,5 @@ const StyledHowToStart = styled(Section)`
     scroll-margin-top: 48px;
   }
 `;
-
-
 
 export { StyledHowToStart };

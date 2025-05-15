@@ -10,6 +10,8 @@ import {
   StyledHeroTotal,
   StyledHeroTotalPrice,
 } from "./Hero.styled";
+import { IDocsHomeServerTemplate } from "@src/components/templates/DocsHomeServer";
+import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -21,9 +23,9 @@ import { ToggleButtons } from "@src/components/widgets/ToggleButtons";
 import { Reseller } from "@src/components/modules/pricing/Reseller";
 import { List } from "@src/components/widgets/pricing/List";
 
-const Hero = () => {
+const Hero = ({ locale, productsData }: IDocsHomeServerTemplate) => {
   const { t } = useTranslation("docs-home-server");
-  const price = "149";
+  const currency = getCurrencyByLocale(locale);
 
   return (
     <StyledHero
@@ -47,8 +49,8 @@ const Hero = () => {
             <Heading level={3} textAlign="center" label={t("DocsHomeServer")} />
 
             <StyledHeroPrice>
-              <Text as="span" size={1} label="$" />
-              {price}
+              <Text as="span" size={1} label={currency.symbol} />
+              {productsData.basic.price}
             </StyledHeroPrice>
 
             <List
@@ -122,11 +124,17 @@ const Hero = () => {
             <StyledHeroTotal>
               <Heading level={4} color="#444444" label={t("Total")} />
               <StyledHeroTotalPrice>
-                $<span>{price}</span>
+                {currency.symbol}
+                <span>{productsData.basic.price}</span>
               </StyledHeroTotalPrice>
             </StyledHeroTotal>
 
-            <Button as="a" href="" label={t("BuyNow")} />
+            <Button
+              as="a"
+              href={productsData.basic.url}
+              target="_blank"
+              label={t("BuyNow")}
+            />
           </StyledHeroItem>
         </StyledHeroWrapper>
 

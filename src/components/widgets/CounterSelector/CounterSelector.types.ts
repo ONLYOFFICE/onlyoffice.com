@@ -1,4 +1,4 @@
-export interface ICounterSelector {
+export interface ICounterSelector<T extends string> {
   /** The unique identifier. */
   id?: string;
   /** Additional CSS class names. */
@@ -27,5 +27,5 @@ export interface ICounterSelector {
   /** Currently selected item ID */
   selected?: string;
   /** Function to call when an item is selected. */
-  onChange?: (value: string) => void;
+  onChange?: (value: T) => void;
 }

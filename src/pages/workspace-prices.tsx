@@ -1,14 +1,23 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { ILocale } from "@src/types/locale";
+import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
+import { getPricesWithUrls } from "@src/lib/requests/getPricesWithUrls";
+import { WorkspacePricesEntries } from "@src/components/templates/WorkspacePrices/data/productEntries";
 import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
-import { WorkspacePricesTemplate } from "@src/components/templates/WorkspacePrices";
+import {
+  WorkspacePricesTemplate,
+  IWorkspacePricesTemplate,
+} from "@src/components/templates/WorkspacePrices";
 import { Footer } from "@src/components/modules/Footer";
 
-const WorkspacePricesPage = ({ locale }: ILocale) => {
+const WorkspacePricesPage = ({
+  locale,
+  productsData,
+}: IWorkspacePricesTemplate) => {
   const { t } = useTranslation("workspace-prices");
 
   return (
@@ -23,7 +32,7 @@ const WorkspacePricesPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <WorkspacePricesTemplate />
+        <WorkspacePricesTemplate locale={locale} productsData={productsData} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -33,6 +42,15 @@ const WorkspacePricesPage = ({ locale }: ILocale) => {
 };
 
 export async function getStaticProps({ locale }: ILocale) {
+  const currency = getCurrencyByLocale(locale);
+
+  const productsData = await getPricesWithUrls({
+    locale,
+    currency: currency.code,
+    entries: WorkspacePricesEntries({ locale }),
+    PaymentSystemId: "9",
+  });
+
   return {
     props: {
       ...(await serverSideTranslations(locale, [
@@ -41,6 +59,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "PricingReseller",
       ])),
       locale,
+      productsData,
     },
   };
 }

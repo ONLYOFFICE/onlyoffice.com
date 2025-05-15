@@ -1,4 +1,4 @@
-export interface IToggleButtons {
+export interface IToggleButtons<T extends string> {
   /** The unique identifier. */
   id?: string;
   /** Additional CSS class names. */
@@ -20,5 +20,5 @@ export interface IToggleButtons {
   /** The currently selected item. */
   selected?: string;
   /** Function to call when an item is selected. */
-  onChange?: (value: string) => void;
+  onChange?: (value: T) => void;
 }

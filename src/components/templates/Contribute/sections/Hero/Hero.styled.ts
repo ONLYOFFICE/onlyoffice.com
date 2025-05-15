@@ -135,7 +135,9 @@ const StyledHeroIcon = styled.div<{
   visibility: ${({ $isVisible }) => ($isVisible ? "visible" : "hidden")};
   animation: ${fadeIn} 0.5s ${({ $animationDelay }) => $animationDelay || "0s"}
     both;
-  transition: visibility 0.2s ease, opacity 0.2s ease;
+  transition:
+    visibility 0.2s ease,
+    opacity 0.2s ease;
 
   &::before {
     content: "";

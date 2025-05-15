@@ -55,12 +55,14 @@ export default {
   },
 } as Meta<typeof CounterSelector>;
 
-const Template: StoryFn<ICounterSelector> = (args) => {
+type IICounterSelectorItems = "100" | "250" | "500";
+
+const Template: StoryFn<ICounterSelector<IICounterSelectorItems>> = (args) => {
   const hasItems = Array.isArray(args.items) && args.items.length > 0;
   const [selected, setSelected] = useState(args.selected);
   const [value, setValue] = useState(args.value);
 
-  const handleChange = (val: string) => {
+  const handleChange = (val: IICounterSelectorItems) => {
     if (hasItems) {
       setSelected(val);
     } else {
