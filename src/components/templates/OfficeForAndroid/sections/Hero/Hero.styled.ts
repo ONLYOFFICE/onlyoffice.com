@@ -86,7 +86,7 @@ const StyledHeroLeftButtonsWrapper = styled.div`
   align-items: center;
   gap: 9px;
   margin-top: 40px;
-`
+`;
 
 const StyledHeroLeftButtonGoogle = styled(Button)`
   display: block;
@@ -115,19 +115,6 @@ const StyledHeroLeftButtonAppGallery = styled(Button)`
 
   @media ${device.tabletS} {
     margin: 40px auto 0;
-  }
-`;
-
-const StyledHeroLeftText = styled(Text)`
-  margin-top: 30px;
-
-  @media ${device.tabletS} {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  @media ${device.mobile} {
-    font-size: 12px;
   }
 `;
 
@@ -164,8 +151,8 @@ const StyledHeroLeftImg = styled.div`
     background-image: url("/images/templates/office-for-android/hero/triangle_top.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 81px;
-    right: 126px;
+    top: 79px;
+    right: 57px;
     z-index: 0;
   }
 
@@ -177,8 +164,8 @@ const StyledHeroLeftImg = styled.div`
     background-image: url("/images/templates/office-for-android/hero/triangle_bottom.svg");
     background-repeat: no-repeat;
     position: absolute;
-    left: 41px;
-    bottom: 92px;
+    left: 75px;
+    bottom: 69px;
     z-index: 0;
   }
 `;
@@ -251,29 +238,57 @@ const StyledHeroPhoneImgMob = styled.div`
 `;
 
 const StyledHeroFooter = styled.div`
-  margin-top: -195px;
+  max-width: 484px;
+  margin: -195px auto 0;
 
   @media ${device.tabletS} {
     margin-top: 25px;
+    margin: 25px auto 0;
   }
 
   @media ${device.mobileS} {
-    margin-top: -110px;
+    margin: -110px auto 0;
   }
 `;
 
-const StyledHeroFooterImgLink = styled(Link)`
-  display: block;
+const StyledHeroFooterImg = styled.div`
   width: 172px;
   height: 172px;
   margin: 0 auto;
-  background-image: url("/images/templates/office-for-android/hero/award.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 196px;
+    height: 161px;
+    background-image: url("/images/templates/office-for-android/hero/quotes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    width: 104px;
+    height: 64px;
+    background-image: url("/images/templates/office-for-android/hero/malavida.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
 `;
 
 const StyledHeroFooterHeading = styled(Heading)`
-  margin-top: 30px;
+  position: relative;
+  z-index: 3;
 
   @media ${device.tabletS} {
     font-size: 32px;
@@ -284,8 +299,24 @@ const StyledHeroFooterHeading = styled(Heading)`
   }
 `;
 
+const StyledHeroFooterLink = styled(Link)`
+  display: block;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 160%;
+  position: relative;
+  z-index: 3;
+  margin: 20px auto 0;
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
+`;
+
 const StyledHeroFooterText = styled(Text)`
-  margin-top: 20px;
+  position: relative;
+  z-index: 3;
 
   @media ${device.mobile} {
     font-size: 14px;
@@ -301,13 +332,13 @@ export {
   StyledHeroLeftButtonsWrapper,
   StyledHeroLeftButtonGoogle,
   StyledHeroLeftButtonAppGallery,
-  StyledHeroLeftText,
   StyledHeroLeftImgWrapper,
   StyledHeroLeftImg,
   StyledHeroRight,
   StyledHeroPhoneImgMob,
   StyledHeroFooter,
-  StyledHeroFooterImgLink,
+  StyledHeroFooterImg,
   StyledHeroFooterHeading,
+  StyledHeroFooterLink,
   StyledHeroFooterText,
 };

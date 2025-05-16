@@ -3,10 +3,13 @@
   "PageDescription": "Edit and co-edit documents, spreadsheets and presentations. Fill out forms on your Android device.",
 
   "OnlyOfficeDocuments": "ONLYOFFICE Documents, <0>free office app</0> for Android",
-  "AbsolutelyFree": "Absolutely <0>free</0>. No ads. No in-app purchases.",
 
-  "OneAppThreeEditors": "One app for your text documents, spreadsheets, presentations, forms and media files",
+  "OneAppForYourText": "One app for your text documents, spreadsheets, presentations, forms and media files",
   "CompatibleWithMSOffice": "100% compatible with MS Office formats",
+
+  "AnOptionToConsider": "An option to consider if you want alternatives to Office or Google Docs.",
+  "EliesGuzman": "Elies Guzmán",
+  "Malavida": "Malavida",
 
   "FeaturesItemHeadingFull": "Full-featured text processor",
   "FeaturesItemTextMakeUse": "Make use of multiple text processing tools : page, paragraph and text formatting, tables, autoshapes, charts, etc. Create text documents of any size and complexity. Print them via AirPrint.",
@@ -22,9 +25,6 @@
 
   "FeaturesItemHeadingPDF": "PDF viewer and media player",
   "FeaturesItemTextMakeViewPDF": "View PDF documents and images, play audio and video files. Open .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
-
-  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents is an outstanding product and was given the 'Very Good' award by its users.\"",
-  "MichaelGanss": "Michael Ganss,",
 
   "RealTimeCollaboration": "Real-time collaboration",
   "BeMoreProductive": "Be more productive. Connect your app to the ONLYOFFICE cloud. Share docs to co-edit them with your teammates in real time. Comment and track changes. Add graphic annotations.",

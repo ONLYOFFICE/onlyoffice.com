@@ -9,16 +9,16 @@ import {
   StyledHeroLeftButtonGoogle,
   StyledHeroLeftButtonAppGallery,
   StyledHeroLeftHeading,
-  StyledHeroLeftText,
   StyledHeroLeftImgWrapper,
   StyledHeroLeftImg,
   StyledHeroRight,
   StyledHeroPhoneImgMob,
   StyledHeroFooterHeading,
-  StyledHeroFooterImgLink,
+  StyledHeroFooterImg,
   StyledHeroFooterText,
   StyledHeroFooter,
   StyledHeroLeftButtonsWrapper,
+  StyledHeroFooterLink,
 } from "./Hero.styled";
 
 const Hero = () => {
@@ -60,15 +60,26 @@ const Hero = () => {
           <StyledHeroRight />
           <StyledHeroPhoneImgMob />
           <StyledHeroFooter>
-            <StyledHeroFooterImgLink
-              href="https://www.educationalappstore.com/app/onlyoffice-documents"
-              target="_blank"
-            />
-            <StyledHeroFooterHeading size={3} textAlign="center" label='OneAppThreeEditors' />
-            <StyledHeroFooterText
-              size={1}
-              label={t("CompatibleWithMSOffice")}
+            <StyledHeroFooterImg />
+            <StyledHeroFooterHeading
+              level={3}
+              size={5}
               textAlign="center"
+              label={t("AnOptionToConsider")}
+            />
+            <StyledHeroFooterLink
+              label={t("EliesGuzman")}
+              href="https://www.malavida.com/en/soft/onlyoffice-documents/android/#gref"
+              target="_blank"
+              color="main"
+              textUnderline={true}
+              hover="underline-none"
+            />
+            <StyledHeroFooterText
+              size={4}
+              label={t("Malavida")}
+              textAlign="center"
+              color="#aaaaaa"
             />
           </StyledHeroFooter>
         </StyledHeroWrapper>
