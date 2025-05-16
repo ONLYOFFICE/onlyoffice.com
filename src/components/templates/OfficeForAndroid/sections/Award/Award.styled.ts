@@ -4,17 +4,7 @@ import { Link } from "@src/components/ui/Link";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
-const StyledAwardFooter = styled.div`
-  /* margin-top: -195px;
-
-  @media ${device.tabletS} {
-    margin-top: 25px;
-  }
-
-  @media ${device.mobileS} {
-    margin-top: -110px;
-  } */
-`;
+const StyledAwardFooter = styled.div``;
 
 const StyledAwardFooterImgLink = styled(Link)`
   display: block;
