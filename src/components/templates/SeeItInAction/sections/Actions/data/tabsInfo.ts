@@ -1,0 +1,60 @@
+import { IButtonInfo } from "../sub-components/ActionsContent/ActionsContent.types";
+
+export const tabsInfo: IButtonInfo[] = [
+  {
+    url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
+    title: "Example Document Title.docx",
+    fileType: "pdf",
+    mode: "view",
+    uiTheme: "theme-dark",
+    text: "Edit DOCX",
+  },
+  {
+    url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
+    title: "Example Document Title.xlsx",
+    fileType: "pdf",
+    mode: "view",
+    uiTheme: "theme-dark",
+    text: "Edit XLSX",
+  },
+  {
+    url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
+    title: "Example Document Title.pdf",
+    fileType: "pdf",
+    mode: "view",
+    uiTheme: "theme-dark",
+    text: "Edit PPTX",
+  },
+  {
+    url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
+    title: "Example Document Title.pdf",
+    fileType: "pdf",
+    mode: "view",
+    uiTheme: "theme-dark",
+    text: "Edit PDF",
+  },
+  {
+    url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
+    title: "Example Document Title.pdf",
+    fileType: "pdf",
+    mode: "view",
+    uiTheme: "theme-dark",
+    text: "Create Form",
+  },
+  {
+    url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
+    title: "Example Document Title.pdf",
+    fileType: "pdf",
+    mode: "view",
+    uiTheme: "theme-dark",
+    text: "Fill in PDF form",
+  },
+  {
+    url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
+    title: "Example Document Title.pdf",
+    fileType: "pdf",
+    mode: "view",
+    uiTheme: "theme-dark",
+    text: "Collaborate",
+  },
+];

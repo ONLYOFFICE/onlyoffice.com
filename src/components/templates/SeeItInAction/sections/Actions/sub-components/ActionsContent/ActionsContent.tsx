@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-import { ITokenResponse } from "./ActionsContent.types";
+import { IActionsContentProps, ITokenResponse } from "./ActionsContent.types";
 
 import { StyledActionsContent } from "./ActionsContent.styled";
 
@@ -12,18 +12,15 @@ const DocumentEditor = dynamic(
   { ssr: false },
 );
 
-const ActionsContent = () => {
+const ActionsContent = ({
+  url,
+  title,
+  fileType,
+  mode,
+  uiTheme,
+}: IActionsContentProps) => {
   const [token, setToken] = useState("");
   const [config, setConfig] = useState<ITokenResponse["config"] | null>(null);
-
-  const mode = "edit";
-  const title = "Example Document Title.pdf";
-  const uiTheme = "theme-dark";
-  const fileType = "pdf";
-  const url = "https://static.onlyoffice.com/assets/docs/samples/oform.pdf";
-  // const title = "Example Document Title.docx";
-  // const fileType = "docx";
-  // const url = "https://static.onlyoffice.com/assets/docs/samples/oform.docx";
 
   useEffect(() => {
     const apiUrl = `/api/document-editor?fileType=${fileType}&title=${encodeURIComponent(

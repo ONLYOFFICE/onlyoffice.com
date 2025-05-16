@@ -18,4 +18,22 @@ interface ITokenResponse {
   };
 }
 
-export type { ITokenResponse };
+interface IActionsContentProps {
+  url: string;
+  title: string;
+  fileType: string;
+  mode: "view" | "edit";
+  uiTheme:
+    | "theme-light"
+    | "theme-classic-light"
+    | "theme-dark"
+    | "theme-contrast-dark"
+    | "default-dark"
+    | "default-light";
+}
+
+interface IButtonInfo extends IActionsContentProps {
+  text: string;
+}
+
+export type { ITokenResponse, IActionsContentProps, IButtonInfo };
