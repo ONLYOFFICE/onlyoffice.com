@@ -12,8 +12,8 @@ import {
 } from "./Actions.styled";
 
 const Actions = () => {
-  const [tabInfo, setTabInfo] = useState<IButtonInfo>(tabsInfo[0]);
-  const [tabActive, setTabActive] = useState<number>(1);
+  const [tabInfo, setTabInfo] = useState<IButtonInfo>(tabsInfo[5]);
+  const [tabActive, setTabActive] = useState<number>(6);
 
   const handleTabClick = (tab: IButtonInfo) => {
     setTabActive(tab.id);
