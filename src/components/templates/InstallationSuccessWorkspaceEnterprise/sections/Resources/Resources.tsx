@@ -1,16 +1,18 @@
+import { useTranslation } from "next-i18next";
+import { Trans } from "next-i18next";
+import {
+  StyledResourceList,
+  StyledResourceItem,
+  StyledResourceListItemLink,
+} from "./Resources.styled";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Section } from "@src/components/ui/Section";
+import { Link } from "@src/components/ui/Link";
 import { Container } from "@src/components/ui/Container";
-import {
-  StyledResourcesContent,
-  StyledResourcesListItem,
-  StyledResourcesListItemLink,
-} from "./Resources.styled";
-import { Trans, useTranslation } from "next-i18next";
 
 const Resources = () => {
-  const { t } = useTranslation("installation-success-workspace");
+  const { t } = useTranslation("installation-success-workspace-enterprise");
 
   return (
     <Section>
@@ -22,15 +24,15 @@ const Resources = () => {
             components={[<Text as="span" color="#FF6F3D" key={0} />]}
           />
         </Heading>
-        <StyledResourcesContent>
-          <StyledResourcesListItem>
+        <StyledResourceList>
+          <StyledResourceItem>
             <Trans
               t={t}
               i18nKey="HelpfulResourcesItem1"
               components={[
-                <StyledResourcesListItemLink
+                <StyledResourceListItemLink
                   key={0}
-                  href="https://helpcenter.onlyoffice.com/workspace/userguides"
+                  href="https://helpcenter.onlyoffice.com/workspace"
                   target="_blank"
                   rel="noreferrer noopener"
                   textUnderline
@@ -39,15 +41,15 @@ const Resources = () => {
                 />,
               ]}
             />
-          </StyledResourcesListItem>
-          <StyledResourcesListItem>
+          </StyledResourceItem>
+          <StyledResourceItem>
             <Trans
               t={t}
               i18nKey="HelpfulResourcesItem2"
               components={[
-                <StyledResourcesListItemLink
+                <StyledResourceListItemLink
                   key={0}
-                  href="https://helpcenter.onlyoffice.com/workspace/installation/community"
+                  href="https://helpcenter.onlyoffice.com/workspace/installation/enterprise"
                   target="_blank"
                   rel="noreferrer noopener"
                   textUnderline
@@ -56,42 +58,59 @@ const Resources = () => {
                 />,
               ]}
             />
-          </StyledResourcesListItem>
-          <StyledResourcesListItem>
+          </StyledResourceItem>
+          <StyledResourceItem>
             <Trans
               t={t}
               i18nKey="HelpfulResourcesItem3"
               components={[
-                <StyledResourcesListItemLink
+                <StyledResourceListItemLink
                   key={0}
                   href="https://helpcenter.onlyoffice.com/workspace/administration"
                   target="_blank"
-                  rel="noreferrer noopener"
+                  rel="noopener noreferrer"
                   textUnderline
                   color="main"
                   hover="underline-none"
                 />,
               ]}
             />
-          </StyledResourcesListItem>
-          <StyledResourcesListItem>
+          </StyledResourceItem>
+          <StyledResourceItem>
             <Trans
               t={t}
               i18nKey="HelpfulResourcesItem4"
               components={[
-                <StyledResourcesListItemLink
+                <Link
                   key={0}
-                  href="https://forum.onlyoffice.com/"
+                  href="https://www.onlyoffice.com/blog/"
                   target="_blank"
-                  rel="noreferrer noopener"
+                  rel="noopener noreferrer"
                   textUnderline
                   color="main"
                   hover="underline-none"
                 />,
               ]}
             />
-          </StyledResourcesListItem>
-        </StyledResourcesContent>
+          </StyledResourceItem>
+          <StyledResourceItem>
+            <Trans
+              t={t}
+              i18nKey="HelpfulResourcesItem5"
+              components={[
+                <StyledResourceListItemLink
+                  key={0}
+                  href="https://helpdesk.onlyoffice.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  textUnderline
+                  color="main"
+                  hover="underline-none"
+                />,
+              ]}
+            />
+          </StyledResourceItem>
+        </StyledResourceList>
       </Container>
     </Section>
   );

@@ -3,7 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 
-const StyledInstallationSuccessWorkspaceHero = styled(Section)`
+const StyledHero = styled(Section)`
   background-image:
     url("/images/templates/installation-success-workspace/hero/bg.svg"),
     linear-gradient(180deg, #ff8e3d 0%, #ff6f3d 100%);
@@ -42,7 +42,7 @@ const StyledInstallationSuccessWorkspaceHero = styled(Section)`
   }
 `;
 
-const StyledInstallationSuccessWorkspaceHeroImage = styled.div`
+const StyledHeroImage = styled.div`
   background-image: url("/images/templates/installation-success-workspace/hero/logo.svg");
   background-repeat: no-repeat;
   background-size: 56px;
@@ -79,8 +79,6 @@ const StyledUpgradeAreaImage = styled.div`
 
 const StyledUpgradeArea = styled.div`
   background-color: #ffffff;
-  background-position: 64px center;
-  background-repeat: no-repeat;
   border-radius: 6px;
   display: grid;
   grid-template-columns: 347px auto;
@@ -197,14 +195,14 @@ const StyledCouponHeading = styled(Heading)`
 `;
 
 export {
-  StyledInstallationSuccessWorkspaceHero,
-  StyledInstallationSuccessWorkspaceHeroImage,
+  StyledHero,
+  StyledHeroImage,
   StyledUpgradeArea,
   StyledUpgradeAreaRight,
   StyledUpgradeList,
   StyledUpgradeListItem,
   StyledButtonsArea,
-  StyledHeading,
   StyledUpgradeAreaImage,
   StyledCouponHeading,
+  StyledHeading,
 };
