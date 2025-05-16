@@ -2,6 +2,7 @@ import { IButtonInfo } from "../sub-components/ActionsContent/ActionsContent.typ
 
 export const tabsInfo: IButtonInfo[] = [
   {
+    id: 1,
     url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
     title: "Example Document Title.docx",
     fileType: "pdf",
@@ -10,6 +11,7 @@ export const tabsInfo: IButtonInfo[] = [
     text: "Edit DOCX",
   },
   {
+    id: 2,
     url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
     title: "Example Document Title.xlsx",
     fileType: "pdf",
@@ -18,6 +20,7 @@ export const tabsInfo: IButtonInfo[] = [
     text: "Edit XLSX",
   },
   {
+    id: 3,
     url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
     title: "Example Document Title.pdf",
     fileType: "pdf",
@@ -26,6 +29,7 @@ export const tabsInfo: IButtonInfo[] = [
     text: "Edit PPTX",
   },
   {
+    id: 4,
     url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
     title: "Example Document Title.pdf",
     fileType: "pdf",
@@ -34,6 +38,7 @@ export const tabsInfo: IButtonInfo[] = [
     text: "Edit PDF",
   },
   {
+    id: 5,
     url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
     title: "Example Document Title.pdf",
     fileType: "pdf",
@@ -42,6 +47,7 @@ export const tabsInfo: IButtonInfo[] = [
     text: "Create Form",
   },
   {
+    id: 6,
     url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
     title: "Example Document Title.pdf",
     fileType: "pdf",
@@ -50,6 +56,7 @@ export const tabsInfo: IButtonInfo[] = [
     text: "Fill in PDF form",
   },
   {
+    id: 7,
     url: "https://static.onlyoffice.com/assets/docs/samples/oform.pdf",
     title: "Example Document Title.pdf",
     fileType: "pdf",

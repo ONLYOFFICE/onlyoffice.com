@@ -13,6 +13,12 @@ import {
 
 const Actions = () => {
   const [tabInfo, setTabInfo] = useState<IButtonInfo>(tabsInfo[0]);
+  const [tabActive, setTabActive] = useState<number>(1);
+
+  const handleTabClick = (tab: IButtonInfo) => {
+    setTabActive(tab.id);
+    setTabInfo(tab);
+  };
 
   return (
     <>
@@ -25,13 +31,20 @@ const Actions = () => {
       >
         <Container>
           <StyledActionsTabList>
-            {tabsInfo.map((tab) => (
+            {tabsInfo.map((tab, index) => (
               <StyledActionsTabButton
+                $isActive={index + 1 === tabActive}
+                key={tab.id}
                 variant="tertiary"
                 borderRadius="0"
-                onClick={() => setTabInfo(tab)}
+                onClick={() => handleTabClick(tab)}
               >
-                <StyledActionsTabHeading label={tab.text} size={5} level={5} />
+                <StyledActionsTabHeading
+                  $isActive={index + 1 === tabActive}
+                  label={tab.text}
+                  size={5}
+                  level={5}
+                />
               </StyledActionsTabButton>
             ))}
           </StyledActionsTabList>

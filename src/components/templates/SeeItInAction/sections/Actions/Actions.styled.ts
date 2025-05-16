@@ -11,9 +11,15 @@ const StyledActionsTabList = styled.ul`
   list-style: none;
 `;
 
-const StyledActionsTabButton = styled(Button)``;
+const StyledActionsTabButton = styled(Button)<{
+  $isActive: boolean;
+}>``;
 
-const StyledActionsTabHeading = styled(Heading)``;
+const StyledActionsTabHeading = styled(Heading)<{
+  $isActive: boolean;
+}>`
+  color: ${(props) => (props.$isActive ? "#ff6f3d" : "#333333")};
+`;
 
 export {
   StyledActionsTabList,

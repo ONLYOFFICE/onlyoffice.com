@@ -33,6 +33,7 @@ interface IActionsContentProps {
 }
 
 interface IButtonInfo extends IActionsContentProps {
+  id: number;
   text: string;
 }
 
