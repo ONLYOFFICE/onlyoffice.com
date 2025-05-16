@@ -1,0 +1,64 @@
+{
+  "PageTitle": "Free office suite for Android | ONLYOFFICE Documents",
+  "PageDescription": "Edit and co-edit documents, spreadsheets and presentations. Fill out forms on your Android device.",
+
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, <0>free office app</0> for Android",
+  "AbsolutelyFree": "Absolutely <0>free</0>. No ads. No in-app purchases.",
+
+  "OneAppThreeEditors": "One app for your text documents, spreadsheets, presentations, forms and media files",
+  "CompatibleWithMSOffice": "100% compatible with MS Office formats",
+
+  "FeaturesItemHeadingFull": "Full-featured text processor",
+  "FeaturesItemTextMakeUse": "Make use of multiple text processing tools : page, paragraph and text formatting, tables, autoshapes, charts, etc. Create text documents of any size and complexity. Print them via AirPrint.",
+
+  "FeaturesItemHeadingComplete": "Complete spreadsheet editor",
+  "FeaturesItemTextManage": "Manage your spreadsheet data: work with rows and columns, adjust cell parameters, use more than 450 formulas, sort and filter data.",
+
+  "FeaturesItemHeadingCollaborative": "Collaborative presentation editor",
+  "FeaturesItemTextMakeWork": "Work with all popular objects on your slides: insert images, add and edit autoshapes, charts and graphs, texts and other Featuresitems.",
+
+  "FeaturesItemHeadingOnline": "Online form filler",
+  "FeaturesItemTextMakeView": "View and fill out forms. Easily navigate from field to field. Save the result as a PDF or DOCX file.",
+
+  "FeaturesItemHeadingPDF": "PDF viewer and media player",
+  "FeaturesItemTextMakeViewPDF": "View PDF documents and images, play audio and video files. Open .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
+
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents is an outstanding product and was given the 'Very Good' award by its users.\"",
+  "MichaelGanss": "Michael Ganss,",
+
+  "RealTimeCollaboration": "Real-time collaboration",
+  "BeMoreProductive": "Be more productive. Connect your app to the ONLYOFFICE cloud. Share docs to co-edit them with your teammates in real time. Comment and track changes. Add graphic annotations.",
+
+  "VideoCardHeading": "Discover ONLYOFFICE Documents, a solid mobile office suite",
+
+  "GetStartedAndChoose": "Get started and choose where to work",
+
+  "ChooseItemOnDevice": "On device",
+  "ChooseItemManageDocuments": "Manage documents on device and edit them offline.",
+
+  "ChooseItemInOnlyOffice": "In ONLYOFFICE cloud",
+  "ChooseItemAccessDocs": "Access docs from ONLYOFFICE cloud and the storages (Dropbox, Google Drive, etc.) connected to it and work collaboratively.",
+
+  "ChooseItemInYourCloud": "In your cloud",
+  "ChooseItemConnectNextcloud": "Connect Nextcloud, ownCloud, or any other cloud working via WebDAV and edit documents directly from the app.",
+
+  "ChooseItemFromOther": "From other apps",
+  "ChooseItemImportDocuments": "Import documents from applications like iTunes, Files and others.",
+
+  "GetMoreWithComplete": "Get more with complete mobile web version",
+  "WorkOnDocumentsWithin": "Work on documents within your mobile browser. Go to your ONLYOFFICE web portal and get access to more instruments for document editing and collaboration.",
+
+  "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for iOS",
+
+  "LearnCardTitleRelease": "Release notes",
+  "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v7.2 for iOS",
+  "LearnMoreSubtitleRead": "Read story",
+
+  "LearnCardTitleHints": "Hints",
+  "LearnMoreTextHandwriting": "Handwriting in ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "Learn more",
+
+  "LearnCardTitleDeveloper": "Developer guide",
+  "LearnMoreTextHowMobile": "How mobile integration works",
+  "LearnMoreSubtitleLearn2": "Learn more"
+}
