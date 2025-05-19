@@ -12,11 +12,11 @@ const StyledFeaturesWrapper = styled.div`
 `;
 
 const StyledFeaturesAside = styled.aside`
-  width: 56.77vw;
-  height: 40.83vw;
+  width: 60.77vw;
+  height: 50.83vw;
   box-sizing: content-box;
   position: sticky;
-  top: calc(10vh + 36px);
+  top: 36px;
   left: 0;
 
   @media ${device.tablet} {
@@ -39,8 +39,10 @@ const StyledFeaturesAsideTablet = styled.div`
   z-index: 10;
 
   @media ${device.tablet} {
-    width: 106.44vw;
-    height: 81.05vw;
+    width: 126.44vw;
+    height: 100.05vw;
+    top: -10vw;
+    left: -10vw;
   }
 `;
 
@@ -55,13 +57,13 @@ const StyledFeaturesAsideTabletImg = styled.div<{
   height: 26.56vw;
   position: absolute;
   top: 48%;
-  left: 45%;
+  left: 44.5%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
 
   @media ${device.tablet} {
     width: 100%;
-    height: 100%;
+    height: 80%;
     left: 47%;
     top: 48%;
     transform: translate(-50%, -50%) scale(0.65);
@@ -72,10 +74,10 @@ const StyledFeaturesAsideMobile = styled.div`
   background-image: url("/images/templates/office-for-android/features/mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 40%;
-  height: 75%;
+  width: 37%;
+  height: 62%;
   position: absolute;
-  top: 16%;
+  top: 22%;
   right: 0;
   z-index: 11;
 
@@ -94,18 +96,18 @@ const StyledFeaturesAsideMobileImg = styled.div<{
   background-image: ${(props) => `url(${props.$bgUrlMobile})`};
   background-repeat: no-repeat;
   background-size: contain;
-  width: 11.46vw;
-  height: 24vw;
+  width: 12.46vw;
+  height: 25vw;
   position: absolute;
   top: 47%;
-  left: 40%;
+  left: 41%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
 
   @media ${device.tablet} {
     width: 100%;
     height: 100%;
-    left: 53%;
+    left: 51.5%;
     top: 47%;
     transform: translate(-50%, -50%) scale(0.78);
   }
@@ -113,7 +115,7 @@ const StyledFeaturesAsideMobileImg = styled.div<{
 
 const StyledFeaturesContentList = styled.div`
   & > div {
-    height: 80vh;
+    height: 100vh;
     align-content: center;
     justify-items: flex-start;
     text-align: left;
