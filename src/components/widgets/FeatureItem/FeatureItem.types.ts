@@ -1,27 +1,45 @@
+interface IFeatureItemIcon {
+  /** The icon url. */
+  url: string;
+  /** Icon width. Default: "64px". */
+  width?: string;
+  /** Icon height. Default: "64px". */
+  height?: string;
+  /** Horizontal positioning of the icon. */
+  positionX?: string;
+  /** Vertical positioning of the icon. */
+  positionY?: string;
+  /** Icon width on mobile device. */
+  mobileWidth?: string;
+  /** Icon height on mobile device. */
+  mobileHeight?: string;
+  /** Horizontal positioning of the icon on mobile device. */
+  mobilePositionX?: string;
+  /** Vertical positioning of the icon on mobile device. */
+  mobilePositionY?: string;
+  /** Indicates if the icon is part of a sprite image. */
+  isSprite?: boolean;
+}
+
 export interface IFeatureItem {
   /** The unique identifier. */
   id?: string;
   /** Additional CSS class names. */
   className?: string;
-  /** The variant. Default: "vertical". */
+  /** The variant layout for desktop. Default: "vertical". */
   variant?: "horizontal" | "vertical";
+  /** The variant layout for mobile devices. Default: "vertical". */
+  mobileVariant?:
+    | "horizontal-icon-top"
+    | "horizontal-icon-left"
+    | "horizontal-icon-center"
+    | "vertical";
   /** The icon. */
-  icon: {
-    /** The icon url. */
-    url: string;
-    /** Horizontal positioning of the icon. Default: "0px". */
-    positionX?: string;
-    /** Vertical positioning of the icon. Default: "center". */
-    positionY?: string;
-    /** Horizontal mobile positioning of the icon. Default: "0px". */
-    mobilePositionX?: string;
-    /** The mobile variant position. Default: "vertical". */
-    mobileHorizontalVariant?: "horizontal" | "vertical";
-  };
+  icon: IFeatureItemIcon;
+  /** Maximum width of the component. */
+  maxWidth?: string;
   /** The heading. */
-  heading?: string;
+  heading?: React.ReactNode;
   /** The text */
   text: React.ReactNode;
-  /** The links */
-  links?: { href: string; isExternal?: boolean }[];
 }

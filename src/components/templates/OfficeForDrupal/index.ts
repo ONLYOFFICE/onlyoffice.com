@@ -1,0 +1,1 @@
+export { OfficeForDrupalTemplate } from "./OfficeForDrupal";

@@ -46,6 +46,7 @@ const HowToStart = () => {
             ),
           }))}
         />
+
         <StyledHowToStartInfo>
           <StyledHowToStartText size={2}>
             <Trans

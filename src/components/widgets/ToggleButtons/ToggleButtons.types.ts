@@ -1,4 +1,4 @@
-export interface IToggleButtons {
+export interface IToggleButtons<T extends string> {
   /** The unique identifier. */
   id?: string;
   /** Additional CSS class names. */
@@ -12,7 +12,7 @@ export interface IToggleButtons {
       /** Content to display on the left side of the label. */
       leftSide?: React.ReactNode;
       /** The main label text that will be displayed in the middle. */
-      name: string;
+      name: React.ReactNode;
       /** Content to display on the right side of the label. */
       rightSide?: React.ReactNode;
     };
@@ -20,5 +20,5 @@ export interface IToggleButtons {
   /** The currently selected item. */
   selected?: string;
   /** Function to call when an item is selected. */
-  onChange?: (value: string) => void;
+  onChange?: (value: T) => void;
 }

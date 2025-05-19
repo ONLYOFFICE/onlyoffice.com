@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { IFeatureSwitcher } from "./FeatureSwitcher.types";
+import { Heading } from "@src/components/ui/Heading";
 import { device } from "@src/utils/device";
 
 const StyledFeatureSwitcher = styled.div<{
@@ -30,7 +31,7 @@ const StyledFeatureSwitcherWrapper = styled.div<{
   }
 `;
 
-const StyledFeatureSwitcherBtn = styled.div<{ $active?: boolean }>`
+const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,7 +42,9 @@ const StyledFeatureSwitcherBtn = styled.div<{ $active?: boolean }>`
   color: ${(props) => (props.$active ? "#ff6f3d" : "#333333")};
   width: 100%;
   background-color: transparent;
-  transition: color 0.2s, box-shadow 0.2s;
+  transition:
+    color 0.2s,
+    box-shadow 0.2s;
   cursor: pointer;
 
   ${(props) =>
@@ -124,10 +127,23 @@ const StyledFeatureSwitcherCustomBtn = styled.div`
   margin-top: 16px;
 `;
 
+const StyledFeatureSwitcherHeading = styled(Heading)`
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 27px;
+
+  @media ${device.mobile} {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+`;
+
 export {
   StyledFeatureSwitcher,
   StyledFeatureSwitcherWrapper,
   StyledFeatureSwitcherBtn,
   StyledFeatureSwitcherImage,
   StyledFeatureSwitcherCustomBtn,
+  StyledFeatureSwitcherHeading,
 };

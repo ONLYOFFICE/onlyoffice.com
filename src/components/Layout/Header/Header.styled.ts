@@ -8,7 +8,7 @@ const StyledHeader = styled.header<{ $scrolled: boolean }>`
   border-bottom: 1px solid transparent;
   width: 100%;
   height: 72px;
-  z-index: 100;
+  z-index: 1000;
 
   ${(props) =>
     props.$scrolled &&

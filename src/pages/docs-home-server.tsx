@@ -1,14 +1,23 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { ILocale } from "@src/types/locale";
+import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
+import { getPricesWithUrls } from "@src/lib/requests/getPricesWithUrls";
+import { DocsHomeServerEntries } from "@src/components/templates/DocsHomeServer/data/productEntries";
 import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
-import { Head } from "@src/components/modules/Head";
+import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
-import { DocsHomeServerTemplate } from "@src/components/templates/DocsHomeServer";
+import {
+  DocsHomeServerTemplate,
+  IDocsHomeServerTemplate,
+} from "@src/components/templates/DocsHomeServer";
 import { Footer } from "@src/components/modules/Footer";
 
-const DocsHomeServerPage = ({ locale }: ILocale) => {
+const DocsHomeServerPage = ({
+  locale,
+  productsData,
+}: IDocsHomeServerTemplate) => {
   const { t } = useTranslation("docs-home-server");
 
   return (
@@ -23,7 +32,7 @@ const DocsHomeServerPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <DocsHomeServerTemplate />
+        <DocsHomeServerTemplate locale={locale} productsData={productsData} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -33,14 +42,24 @@ const DocsHomeServerPage = ({ locale }: ILocale) => {
 };
 
 export async function getStaticProps({ locale }: ILocale) {
+  const currency = getCurrencyByLocale(locale);
+
+  const productsData = await getPricesWithUrls({
+    locale,
+    currency: currency.code,
+    entries: DocsHomeServerEntries({ locale }),
+    PaymentSystemId: "9",
+  });
+
   return {
     props: {
       ...(await serverSideTranslations(locale, [
         "common",
         "docs-home-server",
-        "PricingHero",
+        "PricingReseller",
       ])),
       locale,
+      productsData,
     },
   };
 }

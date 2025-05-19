@@ -1,0 +1,61 @@
+{
+  "PageTitle": "Collaborative online office for Nuxeo | ONLYOFFICE Docs",
+  "PageDescription": "Edit and collaborate on docx, pptx, xlsx, create fillable forms within Nuxeo",
+
+  "OnlineOfficeForConnector": "Online office for <0>Nuxeo</0>",
+  "Subheader": "Edit and co-author office documents online within Nuxeo",
+  "GetItNow": "Get it now",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Work with text documents, spreadsheets, presentations, and forms",
+
+  "HeroTab1ImgUrl": "/images/templates/office-for-nuxeo/hero/screen1.png",
+  "HeroTab1ImgUrl2x": "/images/templates/office-for-nuxeo/hero/screen1@2x.png",
+  "HeroTab2ImgUrl": "/images/templates/office-for-nuxeo/hero/screen2.png",
+  "HeroTab2ImgUrl2x": "/images/templates/office-for-nuxeo/hero/screen2@2x.png",
+  "HeroTab3ImgUrl": "/images/templates/office-for-nuxeo/hero/screen3.png",
+  "HeroTab3ImgUrl2x": "/images/templates/office-for-nuxeo/hero/screen3@2x.png",
+  "HeroTab4ImgUrl": "/images/templates/office-for-nuxeo/hero/screen4.png",
+  "HeroTab4ImgUrl2x": "/images/templates/office-for-nuxeo/hero/screen4@2x.png",
+  "HeroTab5ImgUrl": "/images/templates/office-for-nuxeo/hero/screen5.png",
+  "HeroTab5ImgUrl2x": "/images/templates/office-for-nuxeo/hero/screen5@2x.png",
+  "HeroTab6ImgUrl": "/images/templates/office-for-nuxeo/hero/screen6.png",
+  "HeroTab6ImgUrl2x": "/images/templates/office-for-nuxeo/hero/screen6@2x.png",
+  "HeroTab7ImgUrl": "/images/templates/office-for-nuxeo/hero/screen7.png",
+  "HeroTab7ImgUrl2x": "/images/templates/office-for-nuxeo/hero/screen7@2x.png",
+  "HeroTab8ImgUrl": "/images/templates/office-for-nuxeo/hero/screen8.png",
+  "HeroTab8ImgUrl2x": "/images/templates/office-for-nuxeo/hero/screen8@2x.png",
+  "HeroTab9ImgUrl": "/images/templates/office-for-nuxeo/hero/screen9.png",
+  "HeroTab9ImgUrl2x": "/images/templates/office-for-nuxeo/hero/screen9@2x.png",
+
+  "GetStarted": "Get started",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Nuxeo",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for Nuxeo now from the <0>Nuxeo Marketplace</0>.",
+
+  "WhyOO": "Why ONLYOFFICE Docs",
+  "Reason1Header": "Perfect compatibility",
+  "Reason1Description": "Work with all major documents formats. Highest compatibility with MS Office guaranteed.",
+  "Reason2Header": "High quality formatting",
+  "Reason2Description": "Utilize hundreds of formatting and styling tools to create beautiful and persuasive documents.",
+  "Reason3Header": "Customization",
+  "Reason3Description": "Extend editor functionality with ready-to-use plugins. Write your own app to add features you miss or ask our developers to do so. Visit our <0>App Directory</0>.",
+  "Reason4Header": "Accuracy",
+  "Reason4Description": "Documents keep the same formatting and style in any browser on any OS as well as while importing or printing.",
+  "Reason5Header": "Collaboration tools",
+  "Reason5Description": "Use two co-editing modes (real-time and paragraph-locking), review and track changes, compare documents, comment or chat.",
+  "Reason6Header": "Security",
+  "Reason6Description": "Check the source code out on GitHub. Protect your documents from unauthorized access with JWT.",
+  "Reason7Header": "Easy integration",
+  "Reason7Description": "Choose between multiple deployment options. Easily connect ONLYOFFICE Docs with ready-to-use connector available on the <0>Nuxeo Marketplace</0>.",
+  "Reason8Header": "Scalability",
+  "Reason8Description": "ONLYOFFICE Docs can be scaled for team of any size. Even if you have thousands of users!",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>Nuxeo Marketplace</0>.",
+  "HowToStartStep3": "Configure the connector and enable JWT.",
+  "HowToStartImgUrl": "/images/templates/office-for-nuxeo/how-to-start/how-to-start.svg",
+
+  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}

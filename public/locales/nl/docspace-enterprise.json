@@ -1,0 +1,104 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace voor uw bedrijf | ONLYOFFICE",
+  "PageDescription": "Implementeer ONLYOFFICE DocSpace on-premises en krijg volledige controle over uw gegevens",
+
+  "HeroMainPictureAltText": "hoofdafbeelding",
+
+  "OnlyOfficeDocSpaceEnterprise": "ONLYOFFICE DocSpace Enterprise",
+  "TheEnterpriseScaledSpace": "De op ondernemingsschaal ingerichte ruimte voor uw zakelijke documenten",
+  "GetItNow": "Nu verkrijgen",
+  "TryItFree": "Gratis proberen in de cloud",
+
+  "HeroWorldIconAltText": "wereld icoon",
+
+  "TrustedBy": "Vertrouwd door",
+  "CountOfUsers": "15.000.000 gebruikers",
+  "Worldwide": "wereldwijd",
+
+  "FeaturesEfficient": "Efficiënte documentsamenwerking binnen uw onderneming",
+  "FeaturesOnlyOffice": "ONLYOFFICE DocSpace Enterprise biedt de complete set tools voor het opslaan, delen van en samenwerken aan documenten",
+  "FeaturesLearn": "Meer informatie over de functies van Docspace",
+
+  "FeaturesItemTextWork": "Werk samen aan contracten in Samenwerkingsruimtes",
+  "FeaturesItemTextInvite": "Nodig partners uit om documenten te bekijken zonder registratie in Openbare ruimtes",
+  "FeaturesItemTextCollect": "Verzamel reacties in Ruimtes voor het invullen van formulieren",
+  "FeaturesItemTextCreate": "Creëer Aangepaste ruimtes met flexibele instellingen voor elke taak en elk doel",
+  "FeaturesItemTextShare": "Deel en onthul bedrijfsdocumentatie tijdens het due diligence-proces met behulp van Virtuele dataroom",
+
+  "ExperienceFlawless": "Vlekkeloze gebruikerservaring op verschillende apparaten",
+  "ExperienceWithONLYOFFICE": "Met ONLYOFFICE DocSpace Enterprise kunt u eenvoudig uw documenten beheren, bewerken en eraan samenwerken onderweg met elke smartphone of tablet door over te schakelen naar de mobiele webversie.",
+  "ExperienceFreeDesktopApps": "Gratis <0>desktop-apps</0> voor offline bewerken en native <1>mobiele apps</1> voor iOS en Android zijn ook beschikbaar.",
+
+  "EnvironmentEnterpriseReady": "Bedrijfsklare werkomgeving",
+
+  "EnvironmentItemTitleSecurity": "Beveiliging",
+  "EnvironmentItemTextSecurity": "Houd uw gegevens veilig op alle fronten: bedrijfsklare beveiligingsinstellingen, naleving van branchespecifieke normen, prioritaire toegang tot beveiligings- en stabiliteitsoplossingen.",
+  "EnvironmentItemLinkSecurity": "Meer informatie over ONLYOFFICE-beveiliging",
+
+  "EnvironmentItemTitleAccessibility": "Toegankelijkheid",
+  "EnvironmentItemTextAccessibility": "Maak het bewerkingsproces eenvoudig en comfortabel voor iedereen: schakel tussen beschikbare kleurmodi, schakel benodigde plug-ins in, verberg of toon balken en linialen, enz.",
+  "EnvironmentItemLinkAccessibility": "Meer informatie over ONLYOFFICE-toegankelijkheid",
+
+  "EnvironmentItemTitleCustomization": "Aanpassing",
+  "EnvironmentItemTextCustomization": "Pas verschillende kleurstijlen toe, vervang logo's, titels en links om aan te sluiten bij uw huisstijl.",
+
+  "EnvironmentItemTitleAdministration": "Administratie",
+  "EnvironmentItemTextAdministration": "Beheer uw DocSpace met een intuïtief controlepaneel. Verbind externe services voor logging, ondertekening, opslag, enz.",
+
+  "EnvironmentItemTitleMultitenancy": "Multitenancy",
+  "EnvironmentItemTextMultitenancy": "Creëer meerdere ruimtes voor verschillende vestigingen en beheer ze allemaal tegelijk.",
+
+  "ScalableTitleForBusinesses": "Schaalbaar voor bedrijven van elke omvang",
+  "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterprise groeit met uw bedrijf mee. ",
+  "ScalableYouCanCustomize": "U kunt het aantal gebruikers op elk moment aanpassen, zo snel als uw team groeit. ",
+  "ScalableForLargeEnterprises": "Voor grote ondernemingen is ondersteuning voor implementatie op meerdere servers beschikbaar. ",
+  "ScalableImageAltText": "Schaalbare hoofdafbeelding",
+
+  "SupportTitleForEveryStep": "Ondersteuning bij elke stap",
+  "SupportTextTheTeam": "Het team van experts staat klaar om u bij elke stap te helpen",
+
+  "SupportItemTitleFreeDemo": "Gratis demo",
+  "SupportItemTextWatch": "Bekijk een demonstratie van de belangrijkste DocSpace-functies en voordelen voor uw bedrijf.",
+  "SupportItemBtnRequest": "Demo aanvragen",
+
+  "SupportItemTitleTraining": "Trainingen",
+  "SupportItemTextMaster": "Beheers ONLYOFFICE DocSpace onder begeleiding van een tutor. Er worden kortingen aangeboden voor zakelijke gebruikers.",
+  "SupportItemBtnBook": "Training boeken",
+
+  "SupportItemTitleViaEmail": "Ondersteuning via e-mail",
+  "SupportItemTextJustContact": "Neem eenvoudig contact met ons op via <0>support@onlyoffice.com</0> – ons ervaren ondersteuningsteam helpt u bij het oplossen van vragen of technische problemen.",
+  "SupportItemBtnViaContactUs": "Neem contact op",
+
+  "SupportItemTitlePreSale": "Heeft u een pre-sale vraag?",
+  "SupportItemTextContact": "Neem contact met ons op via <1>sales@onlyoffice.com</1> of plan een tijdstip waarop ons team u kan bellen.",
+  "SupportItemBtnPreSaleContactUs": "Neem contact op",
+
+  "CostTitle": "<0>Kostenefficiënte</0> bedrijfsoplossing",
+
+  "CostItemFree": "Gratis proefperiode van 30 dagen",
+  "CostItemLifetime": "Levenslange licentie",
+  "CostItemYear": "1 jaar updates en ondersteuning",
+  "CostItemUnlimited": "Onbeperkt aantal ruimtes en beheerders",
+
+  "CostButtonPickYourPrice": "Kies uw prijs",
+
+  "CostFooterIfYouRepresent": "Als u een onderwijsinstelling of een non-profitorganisatie vertegenwoordigt, <0>neem dan contact op met ons verkoopteam</0> voor een individuele korting.",
+  "CostFooterTheFamilyPack": "Het <1>Family Pack</1> voor niet-commercieel gebruik is ook beschikbaar.",
+
+  "GettingStarted": "Aan de slag gaan is eenvoudig",
+  "GettingDeploy": "Implementeer ONLYOFFICE DocSpace Enterprise met een van de beschikbare opties.",
+
+  "GettingItemCloudTitle": "Cloud",
+  "GettingItemCloudText": "Probeer als een service. Wij hosten, onderhouden en updaten DocSpace voor u",
+  "GettingItemCloudSubtitle": "Nu aanmaken",
+
+  "GettingItemLinuxTitle": "Linux",
+  "GettingItemLinuxText": "Host op uw Linux-server (Docker-, deb- of rpm-pakketten)",
+  "GettingItemLinuxSubtitle": "Nu verkrijgen",
+
+  "GettingItemWindowsTitle": "Windows",
+  "GettingItemWindowsText": "Host op uw Windows-server (exe-pakketten)",
+  "GettingItemWindowsSubtitle": "Nu verkrijgen",
+
+  "GettingFooterText": "De Community-versie voor thuisgebruik is <0>hier</0> te downloaden."
+}

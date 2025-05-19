@@ -39,7 +39,7 @@ const WatchVideo = ({
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
         maxWidth="1100px"
-        showCloseIcon
+        withCloseBtn
       >
         <StyledWatchVideoModal>
           <iframe

@@ -7,6 +7,8 @@ export interface ITooltip {
   content: string;
   /** The element that triggers the tooltip on hover or focus. */
   children?: React.ReactNode;
+  /** The tab index of the tooltip, which controls its keyboard navigation order. */
+  tabIndex?: number;
   /** Enable info icon */
   infoIcon?: boolean;
   /** Enable floating position */

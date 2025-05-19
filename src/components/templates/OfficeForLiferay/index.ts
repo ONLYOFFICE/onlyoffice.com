@@ -1,0 +1,1 @@
+export { OfficeForLiferayTemplate } from "./OfficeForLiferay";
