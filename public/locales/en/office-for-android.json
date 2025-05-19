@@ -31,19 +31,21 @@
 
   "VideoCardHeading": "Discover ONLYOFFICE Documents, a solid mobile office suite",
 
-  "GetStartedAndChoose": "Get started and choose where to work",
+  "ChooseWhereToWork": "Choose where to work",
 
   "ChooseItemOnDevice": "On device",
-  "ChooseItemManageDocuments": "Manage documents on device and edit them offline.",
+  "ChooseItemViewAndEdit": "View and edit text documents, spreadsheets and presentations. Manage PDFs, images and video files on your Android device.",
 
   "ChooseItemInOnlyOffice": "In ONLYOFFICE cloud",
-  "ChooseItemAccessDocs": "Access docs from ONLYOFFICE cloud and the storages (Dropbox, Google Drive, etc.) connected to it and work collaboratively.",
+  "ChooseItemLogInTo": "Log in to ONLYOFFICE cloud to share and collaborate on docs with your team in real time. Connect Dropbox, Google Drive, Box, and other cloud services to co-edit docs stored there.",
 
   "ChooseItemInYourCloud": "In your cloud",
-  "ChooseItemConnectNextcloud": "Connect Nextcloud, ownCloud, or any other cloud working via WebDAV and edit documents directly from the app.",
+  "ChooseItemConnectNextcloud": "Connect Nextcloud, ownCloud, or any other cloud working via WebDAV. Manage, view and edit documents directly from the app.",
 
   "ChooseItemFromOther": "From other apps",
   "ChooseItemImportDocuments": "Import documents from applications like iTunes, Files and others.",
+
+  "HaveQuestions": "Have questions about functionality? Visit our <0>Help Center</0>.",
 
   "GetMoreWithComplete": "Get more with complete mobile web version",
   "WorkOnDocumentsWithin": "Work on documents within your mobile browser. Go to your ONLYOFFICE web portal and get access to more instruments for document editing and collaboration.",
