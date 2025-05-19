@@ -38,7 +38,11 @@ const StyledHeroWrapper = styled.div`
 `;
 
 const StyledHeroLeft = styled.div`
-  max-width: 500px;
+  max-width: 470px;
+
+  @media ${device.desktop} {
+    max-width: 54vw;
+  }
 
   @media ${device.tabletS} {
     max-width: 100%;
@@ -86,6 +90,10 @@ const StyledHeroLeftButtonsWrapper = styled.div`
   align-items: center;
   gap: 9px;
   margin-top: 40px;
+
+  @media ${device.tabletS} {
+    justify-content: center;
+  }
 `;
 
 const StyledHeroLeftButtonGoogle = styled(Button)`
@@ -97,10 +105,6 @@ const StyledHeroLeftButtonGoogle = styled(Button)`
   background-size: contain;
   position: relative;
   z-index: 2;
-
-  @media ${device.tabletS} {
-    margin: 40px auto 0;
-  }
 `;
 
 const StyledHeroLeftButtonAppGallery = styled(Button)`
@@ -112,10 +116,6 @@ const StyledHeroLeftButtonAppGallery = styled(Button)`
   background-size: contain;
   position: relative;
   z-index: 2;
-
-  @media ${device.tabletS} {
-    margin: 40px auto 0;
-  }
 `;
 
 const StyledHeroLeftImgWrapper = styled.div`
@@ -137,10 +137,11 @@ const StyledHeroLeftImg = styled.div`
   background-size: contain;
   position: absolute;
   z-index: 1;
-  margin-left: -15.625vw;
+  margin-left: -13.625vw;
+  margin-top: 2vw;
 
-  @media ${device.tablet} {
-    margin-left: 0;
+  @media ${device.desktop} {
+    margin-left: -7vw;
   }
 
   &::before {
@@ -174,11 +175,11 @@ const StyledHeroRight = styled.div`
   background-image: url("/images/templates/office-for-android/hero/hero_laptop.webp");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 800px;
+  width: 840px;
   height: 735px;
   position: absolute;
-  top: -135px;
-  left: 55%;
+  top: -160px;
+  left: 50%;
 
   @media ${device.tabletS} {
     position: static;
@@ -190,14 +191,13 @@ const StyledHeroRight = styled.div`
 
 const StyledHeroPhoneImgMob = styled.div`
   display: none;
-  width: 498px;
-  height: 498px;
+  width: 90vw;
+  height: 83vw;
   background-image: url("/images/templates/office-for-android/hero/hero_phone.webp");
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
   z-index: 1;
-  transform: scale(0.75);
   margin: -40px auto 0;
   pointer-events: none;
 
@@ -205,34 +205,31 @@ const StyledHeroPhoneImgMob = styled.div`
     display: block;
   }
 
-  @media ${device.mobileS} {
-    transform: scale(0.5) translate(-35%, 0);
-    margin: -150px auto 0;
-  }
-
   &::before {
     content: "";
     display: block;
-    width: 131px;
-    height: 131px;
+    width: 17.06vw;
+    height: 17.06vw;
     background-image: url("/images/templates/office-for-android/hero/triangle_top.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
-    top: 81px;
-    right: 126px;
+    right: 20.83vw;
+    top: 14.32vw;
     z-index: 0;
   }
 
   &::after {
     content: "";
     display: block;
-    width: 131px;
-    height: 131px;
+    width: 17.06vw;
+    height: 17.06vw;
     background-image: url("/images/templates/office-for-android/hero/triangle_bottom.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
-    left: 41px;
-    bottom: 92px;
+    left: 13.02vw;
+    bottom: 13.02vw;
     z-index: 0;
   }
 `;
@@ -241,13 +238,13 @@ const StyledHeroFooter = styled.div`
   max-width: 484px;
   margin: -195px auto 0;
 
+  @media ${device.tablet} {
+    margin: 0 auto 0;
+  }
+
   @media ${device.tabletS} {
     margin-top: 25px;
     margin: 25px auto 0;
-  }
-
-  @media ${device.mobileS} {
-    margin: -110px auto 0;
   }
 `;
 
