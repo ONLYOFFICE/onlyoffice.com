@@ -236,7 +236,7 @@ const StyledHeroPhoneImgMob = styled.div`
 
 const StyledHeroFooter = styled.div`
   max-width: 484px;
-  margin: -195px auto 0;
+  margin: -160px auto 0;
 
   @media ${device.tablet} {
     margin: 0 auto 0;
