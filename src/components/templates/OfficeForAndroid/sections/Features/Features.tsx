@@ -24,7 +24,7 @@ import {
 } from "./Features.styled";
 
 const Features = () => {
-  const { t } = useTranslation("office-for-ios");
+  const { t } = useTranslation("office-for-android");
   const containerRef = useRef<HTMLDivElement>(null);
   featuresAnimation(containerRef);
   const len = items.length;

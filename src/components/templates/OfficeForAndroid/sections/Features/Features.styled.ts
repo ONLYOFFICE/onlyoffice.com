@@ -28,7 +28,7 @@ const StyledFeaturesAside = styled.aside`
 `;
 
 const StyledFeaturesAsideTablet = styled.div`
-  background-image: url("/images/templates/office-for-ios/features/tablet.svg");
+  background-image: url("/images/templates/office-for-android/features/tablet.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -69,7 +69,7 @@ const StyledFeaturesAsideTabletImg = styled.div<{
 `;
 
 const StyledFeaturesAsideMobile = styled.div`
-  background-image: url("/images/templates/office-for-ios/features/mobile.svg");
+  background-image: url("/images/templates/office-for-android/features/mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 40%;
