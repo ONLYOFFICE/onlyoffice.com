@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
-import { featuresAnimation } from "./lib/featuresAnimation";
+import { useFeaturesAnimation } from "./lib/featuresAnimation";
 import { items } from "./data/items";
 
 import {
@@ -26,7 +26,7 @@ import {
 const Features = () => {
   const { t } = useTranslation("office-for-ios");
   const containerRef = useRef<HTMLDivElement>(null);
-  featuresAnimation(containerRef);
+  useFeaturesAnimation(containerRef);
   const len = items.length;
 
   return (

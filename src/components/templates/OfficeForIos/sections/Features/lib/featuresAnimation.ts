@@ -1,16 +1,16 @@
 import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { RefObject } from "react";
+import { RefObject, useEffect } from "react";
 
-const outerFeaturesAnimation = () => {
-  gsap.registerPlugin(useGSAP, ScrollTrigger);
+const useFeaturesAnimation = (
+  containerRef: RefObject<HTMLDivElement | null>,
+) => {
+  useEffect(() => {
+    if (typeof window === "undefined") return;
 
-  return function useInnerFeaturesAnimation(
-    containerRef: RefObject<HTMLDivElement | null>,
-  ) {
-    useGSAP(
-      () => {
+      (async () => {
+        const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+        gsap.registerPlugin(ScrollTrigger);
+
         const items = gsap.utils.toArray(".item");
         const tabletImages: HTMLElement[] = gsap.utils.toArray(".tabletImage");
         const mobileImages: HTMLElement[] = gsap.utils.toArray(".mobileImage");
@@ -38,11 +38,8 @@ const outerFeaturesAnimation = () => {
             },
           });
         }
-      },
-      { scope: containerRef },
-    );
+      })();
+    }, [containerRef]);
   };
-};
 
-const featuresAnimation = outerFeaturesAnimation();
-export { featuresAnimation };
+export { useFeaturesAnimation };
