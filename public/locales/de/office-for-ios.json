@@ -10,18 +10,38 @@
 
   "FeaturesItemHeadingFull": "Voll ausgestatteter Textprozessor",
   "FeaturesItemTextMakeUse": "Nutzen Sie verschiedene Textverarbeitungstools: Seiten-, Absatz- und Textformatierung, Tabellen, AutoFormen, Diagramme usw. Erstellen Sie Textdokumente jeder Größe und Komplexität. Drucken Sie sie via AirPrint.",
+  "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/de/img-tablet-1.png",
+  "FeaturesItemTablet1Bg2x": "/images/templates/office-for-ios/features/de/img-tablet2x-1.png",
+  "FeaturesItemMobile1Bg": "/images/templates/office-for-ios/features/de/img-mobile-1.png",
+  "FeaturesItemMobile1Bg2x": "/images/templates/office-for-ios/features/de/img-mobile2x-1.png",
 
   "FeaturesItemHeadingComplete": "Vollständiger Tabellenkalkulationseditor",
   "FeaturesItemTextManage": "Verwalten Sie Ihre Tabellendaten: Arbeiten Sie mit Zeilen und Spalten, passen Sie Zellparameter an, verwenden Sie mehr als 450 Formeln, sortieren und filtern Sie Daten.",
+  "FeaturesItemTablet2Bg": "/images/templates/office-for-ios/features/de/img-tablet-2.png",
+  "FeaturesItemTablet2Bg2x": "/images/templates/office-for-ios/features/de/img-tablet2x-2.png",
+  "FeaturesItemMobile2Bg": "/images/templates/office-for-ios/features/de/img-mobile-2.png",
+  "FeaturesItemMobile2Bg2x": "/images/templates/office-for-ios/features/de/img-mobile2x-2.png",
 
   "FeaturesItemHeadingCollaborative": "Kollaborativer Präsentationseditor",
   "FeaturesItemTextMakeWork": "Arbeiten Sie mit allen gängigen Objekten in Ihren Folien: Fügen Sie Bilder ein, fügen Sie AutoFormen, Diagramme, Texte und andere Elemente hinzu und bearbeiten Sie diese.",
+  "FeaturesItemTablet3Bg": "/images/templates/office-for-ios/features/de/img-tablet-3.png",
+  "FeaturesItemTablet3Bg2x": "/images/templates/office-for-ios/features/de/img-tablet2x-3.png",
+  "FeaturesItemMobile3Bg": "/images/templates/office-for-ios/features/de/img-mobile-3.png",
+  "FeaturesItemMobile3Bg2x": "/images/templates/office-for-ios/features/de/img-mobile2x-3.png",
 
   "FeaturesItemHeadingOnline": "Online Formularausfüller",
   "FeaturesItemTextMakeView": "Formulare anzeigen und ausfüllen. Navigieren Sie einfach von Feld zu Feld. Speichern Sie das Ergebnis als PDF- oder DOCX-Datei.",
+  "FeaturesItemTablet4Bg": "/images/templates/office-for-ios/features/de/img-tablet-4.png",
+  "FeaturesItemTablet4Bg2x": "/images/templates/office-for-ios/features/de/img-tablet2x-4.png",
+  "FeaturesItemMobile4Bg": "/images/templates/office-for-ios/features/de/img-mobile-4.png",
+  "FeaturesItemMobile4Bg2x": "/images/templates/office-for-ios/features/de/img-mobile2x-4.png",
 
   "FeaturesItemHeadingPDF": "PDF-Viewer und Mediaplayer",
   "FeaturesItemTextMakeViewPDF": "PDF-Dokumente und Bilder anzeigen, Audio- und Videodateien abspielen. Öffnen Sie .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf usw.",
+  "FeaturesItemTablet5Bg": "/images/templates/office-for-ios/features/de/img-tablet-5.png",
+  "FeaturesItemTablet5Bg2x": "/images/templates/office-for-ios/features/de/img-tablet2x-5.png",
+  "FeaturesItemMobile5Bg": "/images/templates/office-for-ios/features/de/img-mobile-5.png",
+  "FeaturesItemMobile5Bg2x": "/images/templates/office-for-ios/features/de/img-mobile2x-5.png",
 
   "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents ist ein herausragendes Produkt und wurde von seinen Nutzern mit 'Sehr gut' ausgezeichnet.\"",
   "MichaelGanss": "Michael Ganss,",
