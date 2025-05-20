@@ -48,7 +48,8 @@ const Features = () => {
                     key={`${item.heading} TabletImg`}
                     className="tabletImage"
                     $zIndex={String(reverseIndex)}
-                    $bgUrlTablet={item.bgUrlTablet}
+                    $bgUrlTablet={t(item.image.tablet.url)}
+                    $bgUrlTablet2x={t(item.image.tablet.url2x)}
                   />
                 );
               })}
@@ -61,7 +62,8 @@ const Features = () => {
                     key={`${item.heading} MobileImg`}
                     className="mobileImage"
                     $zIndex={String(reverseIndex)}
-                    $bgUrlMobile={item.bgUrlMobile}
+                    $bgUrlMobile={t(item.image.mobile.url)}
+                    $bgUrlMobile2x={t(item.image.mobile.url2x)}
                   />
                 );
               })}
@@ -99,13 +101,15 @@ const Features = () => {
                     <StyledFeaturesAsideTablet>
                       <StyledFeaturesAsideTabletImg
                         $zIndex={String(index + 1)}
-                        $bgUrlTablet={item.bgUrlTablet}
+                        $bgUrlTablet={item.image.mobile.url}
+                        $bgUrlTablet2x={item.image.mobile.url2x}
                       />
                     </StyledFeaturesAsideTablet>
                     <StyledFeaturesAsideMobile>
                       <StyledFeaturesAsideMobileImg
                         $zIndex={String(index + 1)}
-                        $bgUrlMobile={item.bgUrlMobile}
+                        $bgUrlMobile={item.image.mobile.url}
+                        $bgUrlMobile2x={item.image.mobile.url2x}
                       />
                     </StyledFeaturesAsideMobile>
                   </StyledFeaturesAside>

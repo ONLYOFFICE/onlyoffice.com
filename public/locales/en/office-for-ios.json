@@ -10,18 +10,38 @@
 
   "FeaturesItemHeadingFull": "Full-featured text processor",
   "FeaturesItemTextMakeUse": "Make use of multiple text processing tools : page, paragraph and text formatting, tables, autoshapes, charts, etc. Create text documents of any size and complexity. Print them via AirPrint.",
+  "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/en/img-tablet-1.png",
+  "FeaturesItemTablet1Bg2x": "/images/templates/office-for-ios/features/en/img-tablet2x-1.png",
+  "FeaturesItemMobile1Bg": "/images/templates/office-for-ios/features/en/img-mobile-1.png",
+  "FeaturesItemMobile1Bg2x": "/images/templates/office-for-ios/features/en/img-mobile2x-1.png",
 
   "FeaturesItemHeadingComplete": "Complete spreadsheet editor",
   "FeaturesItemTextManage": "Manage your spreadsheet data: work with rows and columns, adjust cell parameters, use more than 450 formulas, sort and filter data.",
+  "FeaturesItemTablet2Bg": "/images/templates/office-for-ios/features/en/img-tablet-2.png",
+  "FeaturesItemTablet2Bg2x": "/images/templates/office-for-ios/features/en/img-tablet2x-2.png",
+  "FeaturesItemMobile2Bg": "/images/templates/office-for-ios/features/en/img-mobile-2.png",
+  "FeaturesItemMobile2Bg2x": "/images/templates/office-for-ios/features/en/img-mobile2x-2.png",
 
   "FeaturesItemHeadingCollaborative": "Collaborative presentation editor",
   "FeaturesItemTextMakeWork": "Work with all popular objects on your slides: insert images, add and edit autoshapes, charts and graphs, texts and other Featuresitems.",
+  "FeaturesItemTablet3Bg": "/images/templates/office-for-ios/features/en/img-tablet-3.png",
+  "FeaturesItemTablet3Bg2x": "/images/templates/office-for-ios/features/en/img-tablet2x-3.png",
+  "FeaturesItemMobile3Bg": "/images/templates/office-for-ios/features/en/img-mobile-3.png",
+  "FeaturesItemMobile3Bg2x": "/images/templates/office-for-ios/features/en/img-mobile2x-3.png",
 
   "FeaturesItemHeadingOnline": "Online form filler",
   "FeaturesItemTextMakeView": "View and fill out forms. Easily navigate from field to field. Save the result as a PDF or DOCX file.",
+  "FeaturesItemTablet4Bg": "/images/templates/office-for-ios/features/en/img-tablet-4.png",
+  "FeaturesItemTablet4Bg2x": "/images/templates/office-for-ios/features/en/img-tablet2x-4.png",
+  "FeaturesItemMobile4Bg": "/images/templates/office-for-ios/features/en/img-mobile-4.png",
+  "FeaturesItemMobile4Bg2x": "/images/templates/office-for-ios/features/en/img-mobile2x-4.png",
 
   "FeaturesItemHeadingPDF": "PDF viewer and media player",
   "FeaturesItemTextMakeViewPDF": "View PDF documents and images, play audio and video files. Open .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
+  "FeaturesItemTablet5Bg": "/images/templates/office-for-ios/features/en/img-tablet-5.png",
+  "FeaturesItemTablet5Bg2x": "/images/templates/office-for-ios/features/en/img-tablet2x-5.png",
+  "FeaturesItemMobile5Bg": "/images/templates/office-for-ios/features/en/img-mobile-5.png",
+  "FeaturesItemMobile5Bg2x": "/images/templates/office-for-ios/features/en/img-mobile2x-5.png",
 
   "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents is an outstanding product and was given the 'Very Good' award by its users.\"",
   "MichaelGanss": "Michael Ganss,",
