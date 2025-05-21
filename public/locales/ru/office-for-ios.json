@@ -10,18 +10,38 @@
 
   "FeaturesItemHeadingFull": "Полнофункциональный текстовый редактор",
   "FeaturesItemTextMakeUse": "Используйте множество инструментов для обработки текста: форматирование страниц, абзацев и текста, таблицы, автофигуры, диаграммы и т. д. Создавайте текстовые документы любого размера и сложности. Печатайте их с помощью AirPrint.",
+  "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/ru/img-tablet-1.png",
+  "FeaturesItemTablet1Bg2x": "/images/templates/office-for-ios/features/ru/img-tablet2x-1.png",
+  "FeaturesItemMobile1Bg": "/images/templates/office-for-ios/features/ru/img-mobile-1.png",
+  "FeaturesItemMobile1Bg2x": "/images/templates/office-for-ios/features/ru/img-mobile2x-1.png",
 
   "FeaturesItemHeadingComplete": "Полноценный редактор электронных таблиц",
   "FeaturesItemTextManage": "Управляйте данными в таблицах: работайте со строками и столбцами, настраивайте параметры ячеек, используйте более 450 формул, сортируйте и фильтруйте данные.",
+  "FeaturesItemTablet2Bg": "/images/templates/office-for-ios/features/ru/img-tablet-2.png",
+  "FeaturesItemTablet2Bg2x": "/images/templates/office-for-ios/features/ru/img-tablet2x-2.png",
+  "FeaturesItemMobile2Bg": "/images/templates/office-for-ios/features/ru/img-mobile-2.png",
+  "FeaturesItemMobile2Bg2x": "/images/templates/office-for-ios/features/ru/img-mobile2x-2.png",
 
   "FeaturesItemHeadingCollaborative": "Редактор презентаций с возможностью совместной работы",
   "FeaturesItemTextMakeWork": "Работайте со всеми популярными объектами на ваших слайдах: вставляйте изображения, добавляйте и редактируйте автофигуры, графики и диаграммы, тексты и другие элементы.",
+  "FeaturesItemTablet3Bg": "/images/templates/office-for-ios/features/ru/img-tablet-3.png",
+  "FeaturesItemTablet3Bg2x": "/images/templates/office-for-ios/features/ru/img-tablet2x-3.png",
+  "FeaturesItemMobile3Bg": "/images/templates/office-for-ios/features/ru/img-mobile-3.png",
+  "FeaturesItemMobile3Bg2x": "/images/templates/office-for-ios/features/ru/img-mobile2x-3.png",
 
   "FeaturesItemHeadingOnline": "Заполнение онлайн-форм",
   "FeaturesItemTextMakeView": "Просматривайте и заполняйте формы. Легко переходите от поля к полю. Сохраняйте результат как файл PDF или DOCX.",
+  "FeaturesItemTablet4Bg": "/images/templates/office-for-ios/features/ru/img-tablet-4.png",
+  "FeaturesItemTablet4Bg2x": "/images/templates/office-for-ios/features/ru/img-tablet2x-4.png",
+  "FeaturesItemMobile4Bg": "/images/templates/office-for-ios/features/ru/img-mobile-4.png",
+  "FeaturesItemMobile4Bg2x": "/images/templates/office-for-ios/features/ru/img-mobile2x-4.png",
 
   "FeaturesItemHeadingPDF": "Просмотр PDF и медиаплеер",
   "FeaturesItemTextMakeViewPDF": "Просматривайте PDF-документы и изображения, воспроизводите аудио- и видеофайлы. Открывайте .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf и др.",
+  "FeaturesItemTablet5Bg": "/images/templates/office-for-ios/features/ru/img-tablet-5.png",
+  "FeaturesItemTablet5Bg2x": "/images/templates/office-for-ios/features/ru/img-tablet2x-5.png",
+  "FeaturesItemMobile5Bg": "/images/templates/office-for-ios/features/ru/img-mobile-5.png",
+  "FeaturesItemMobile5Bg2x": "/images/templates/office-for-ios/features/ru/img-mobile2x-5.png",
 
   "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents — выдающийся продукт, получивший от пользователей оценку 'Очень хорошо'.\"",
   "MichaelGanss": "Михаэль Ганс,",
