@@ -1,0 +1,1 @@
+export { DocspaceRegistrationTemplate } from "./DocspaceRegistration";
