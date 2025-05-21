@@ -10,18 +10,38 @@
 
   "FeaturesItemHeadingFull": "功能齐全的文本处理器",
   "FeaturesItemTextMakeUse": "利用多种文本处理工具：页面、段落和文本格式设置，表格，自动形状，图表等。创建任何大小和复杂度的文本文档。通过AirPrint打印。",
+  "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/zh/img-tablet-1.png",
+  "FeaturesItemTablet1Bg2x": "/images/templates/office-for-ios/features/zh/img-tablet2x-1.png",
+  "FeaturesItemMobile1Bg": "/images/templates/office-for-ios/features/zh/img-mobile-1.png",
+  "FeaturesItemMobile1Bg2x": "/images/templates/office-for-ios/features/zh/img-mobile2x-1.png",
 
   "FeaturesItemHeadingComplete": "完整的电子表格编辑器",
   "FeaturesItemTextManage": "管理您的电子表格数据：使用行和列，调整单元格参数，使用超过450个公式，对数据进行排序和过滤。",
+  "FeaturesItemTablet2Bg": "/images/templates/office-for-ios/features/zh/img-tablet-2.png",
+  "FeaturesItemTablet2Bg2x": "/images/templates/office-for-ios/features/zh/img-tablet2x-2.png",
+  "FeaturesItemMobile2Bg": "/images/templates/office-for-ios/features/zh/img-mobile-2.png",
+  "FeaturesItemMobile2Bg2x": "/images/templates/office-for-ios/features/zh/img-mobile2x-2.png",
 
   "FeaturesItemHeadingCollaborative": "协同演示文稿编辑器",
   "FeaturesItemTextMakeWork": "处理幻灯片上的所有常用对象：插入图片，添加和编辑自动形状、图表、文本及其他项目。",
+  "FeaturesItemTablet3Bg": "/images/templates/office-for-ios/features/zh/img-tablet-3.png",
+  "FeaturesItemTablet3Bg2x": "/images/templates/office-for-ios/features/zh/img-tablet2x-3.png",
+  "FeaturesItemMobile3Bg": "/images/templates/office-for-ios/features/zh/img-mobile-3.png",
+  "FeaturesItemMobile3Bg2x": "/images/templates/office-for-ios/features/zh/img-mobile2x-3.png",
 
   "FeaturesItemHeadingOnline": "在线表单填写器",
   "FeaturesItemTextMakeView": "查看并填写表单。轻松地在不同字段之间导航。将结果保存为PDF或DOCX文件。",
+  "FeaturesItemTablet4Bg": "/images/templates/office-for-ios/features/zh/img-tablet-4.png",
+  "FeaturesItemTablet4Bg2x": "/images/templates/office-for-ios/features/zh/img-tablet2x-4.png",
+  "FeaturesItemMobile4Bg": "/images/templates/office-for-ios/features/zh/img-mobile-4.png",
+  "FeaturesItemMobile4Bg2x": "/images/templates/office-for-ios/features/zh/img-mobile2x-4.png",
 
   "FeaturesItemHeadingPDF": "PDF查看器和媒体播放器",
   "FeaturesItemTextMakeViewPDF": "查看PDF文档和图片，播放音频和视频文件。打开 .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf 等格式文件。",
+  "FeaturesItemTablet5Bg": "/images/templates/office-for-ios/features/zh/img-tablet-5.png",
+  "FeaturesItemTablet5Bg2x": "/images/templates/office-for-ios/features/zh/img-tablet2x-5.png",
+  "FeaturesItemMobile5Bg": "/images/templates/office-for-ios/features/zh/img-mobile-5.png",
+  "FeaturesItemMobile5Bg2x": "/images/templates/office-for-ios/features/zh/img-mobile2x-5.png",
 
   "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents 是一款出色的产品，用户给出了'非常好'的评价。\"",
   "MichaelGanss": "Michael Ganss,",
