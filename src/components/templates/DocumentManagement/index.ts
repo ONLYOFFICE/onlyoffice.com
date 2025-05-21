@@ -1,0 +1,1 @@
+export { DocumentManagementTemplate } from "./DocumentManagement";
