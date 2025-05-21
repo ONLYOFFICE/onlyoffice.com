@@ -101,15 +101,15 @@ const Features = () => {
                     <StyledFeaturesAsideTablet>
                       <StyledFeaturesAsideTabletImg
                         $zIndex={String(index + 1)}
-                        $bgUrlTablet={item.image.mobile.url}
-                        $bgUrlTablet2x={item.image.mobile.url2x}
+                        $bgUrlTablet={t(item.image.tablet.url)}
+                        $bgUrlTablet2x={t(item.image.tablet.url2x)}
                       />
                     </StyledFeaturesAsideTablet>
                     <StyledFeaturesAsideMobile>
                       <StyledFeaturesAsideMobileImg
                         $zIndex={String(index + 1)}
-                        $bgUrlMobile={item.image.mobile.url}
-                        $bgUrlMobile2x={item.image.mobile.url2x}
+                        $bgUrlMobile={t(item.image.mobile.url)}
+                        $bgUrlMobile2x={t(item.image.mobile.url2x)}
                       />
                     </StyledFeaturesAsideMobile>
                   </StyledFeaturesAside>
