@@ -56,6 +56,8 @@
 
   "RealTimeCollaboration": "Real-time collaboration",
   "BeMoreProductive": "Be more productive. Connect your app to the ONLYOFFICE cloud. Share docs to co-edit them with your teammates in real time. Comment and track changes. Add graphic annotations.",
+  "CollabBackgroundUrl": "/images/templates/office-for-ios/collab/collaboration.png",
+  "CollabBackgroundUrl2x": "/images/templates/office-for-ios/collab/collaboration@2x.png",
 
   "VideoCardHeading": "Discover ONLYOFFICE Documents, a solid mobile office suite",
 

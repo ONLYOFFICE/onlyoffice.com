@@ -56,6 +56,8 @@
 
   "RealTimeCollaboration": "实时协作",
   "BeMoreProductive": "提高效率。将您的应用连接到ONLYOFFICE云。分享文档以便与您的团队成员实时共同编辑。评论并跟踪更改。添加图形注释。",
+  "CollabBackgroundUrl": "/images/templates/office-for-ios/collab/collaboration.zh.png",
+  "CollabBackgroundUrl2x": "/images/templates/office-for-ios/collab/collaboration.zh@2x.png",
 
   "VideoCardHeading": "探索 ONLYOFFICE Documents，一款强大的移动办公套件",
 

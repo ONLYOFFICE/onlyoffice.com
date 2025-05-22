@@ -29,7 +29,7 @@ const Collab = () => {
           />
           <StyledCollabText size={1} label={t("BeMoreProductive")} />
         </StyledCollabLeft>
-        <StyledCollabRight />
+        <StyledCollabRight $backgroundUrl={t("CollabBackgroundUrl")} $backgroundUrl2x={t("CollabBackgroundUrl2x")} />
       </StyledCollabWrapper>
     </Section>
   );

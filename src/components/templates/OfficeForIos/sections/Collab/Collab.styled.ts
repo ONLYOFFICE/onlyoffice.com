@@ -61,12 +61,19 @@ const StyledCollabText = styled(Text)`
   }
 `;
 
-const StyledCollabRight = styled.div`
+const StyledCollabRight = styled.div<{
+  $backgroundUrl: string;
+  $backgroundUrl2x: string;
+}>`
   width: 1175px;
   height: 650px;
-  background-image: url("/images/templates/office-for-ios/collab/collab.webp");
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-size: auto 830px;
   background-repeat: no-repeat;
+
+  @media ${device.retina} {
+    background-image: ${(props) => `url(${props.$backgroundUrl2x})`};
+  }
 
   @media ${device.tablet} {
     width: 108vw;
