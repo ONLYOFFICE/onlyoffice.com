@@ -8,16 +8,12 @@ export const items: ICollapseExtended[] = [
   {
     label: "Q1",
     children: "A1",
-    links: [
-      { href: "/download-desktop" },
-    ],
+    links: [{ href: "/download-desktop" }],
   },
   {
     label: "Q2",
     children: "A2",
-    links: [
-      { href: "/download-desktop" },
-    ],
+    links: [{ href: "/download-desktop" }],
   },
   {
     label: "Q3",

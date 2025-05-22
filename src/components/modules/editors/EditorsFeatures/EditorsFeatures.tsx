@@ -3,14 +3,18 @@ import {
   StyledRoomsFeaturesWrapper,
   StyledRoomsFeatureButtons,
 } from "@src/components/modules/rooms/RoomsFeatures/RoomsFeatures.styled";
-import { IEditorsFeatures } from "./EdtorsFeatures.types";
+import { IEditorsFeatures } from "./EditorsFeatures.types";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Button } from "@src/components/ui/Button";
-import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
+import { EditorsImageItem } from "./sub-components/EditorsImageItem/EditorsImageItem";
+import { VideoModal } from "@src/components/modules/editors/EditorsFeatures/sub-components/VideoModal";
+import { useState } from "react";
 
 const EditorsFeatures = ({ items, buttons }: IEditorsFeatures) => {
   const { t } = useTranslation("Editors");
+  const [isOpen, setIsOpen] = useState(false);
+  const [videoUrl, setVideoUrl] = useState("");
 
   return (
     <Section
@@ -20,26 +24,26 @@ const EditorsFeatures = ({ items, buttons }: IEditorsFeatures) => {
       <Container>
         <StyledRoomsFeaturesWrapper>
           {items.map((item, index) => (
-            <FeatureImageItem
+            <EditorsImageItem
               key={index}
-              heading={item.heading}
-              text={
-                <Trans
-                  t={t}
-                  components={[<span key={0} style={{ fontWeight: "bold" }} />, <span key={1} style={{ fontWeight: "bold" }} />]}
-                >
-                  {item.text}
-                </Trans>
-              }
-              position={{ desktop: index % 2 === 1 ? "left" : "right" }}
-              links={item.links?.map((link) => ({
-                ...link,
-                label: link.label,
-              }))}
-              image={{
-                url: item.image.url,
-                url2x: item.image.url2x,
-                height: item.image.height,
+              item={{
+                ...item,
+                position: { desktop: index % 2 === 1 ? "left" : "right" },
+                text: (
+                  <Trans
+                    t={t}
+                    components={[
+                      <span key={0} style={{ fontWeight: "bold" }} />,
+                      <span key={1} style={{ fontWeight: "bold" }} />,
+                    ]}
+                  >
+                    {item.text}
+                  </Trans>
+                ),
+              }}
+              openVideo={(url) => {
+                setVideoUrl(url);
+                setIsOpen(true);
               }}
             />
           ))}
@@ -60,6 +64,11 @@ const EditorsFeatures = ({ items, buttons }: IEditorsFeatures) => {
               />
             </StyledRoomsFeatureButtons>
           )}
+          <VideoModal
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            videoUrl={videoUrl}
+          />
         </StyledRoomsFeaturesWrapper>
       </Container>
     </Section>

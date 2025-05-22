@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import { ILocale } from "@src/types/locale";
 import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
-import { Head } from "@src/components/modules/Head";
+import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { SpreadsheetEditorTemplate } from "@src/components/templates/SpreadsheetEditor";
@@ -39,7 +39,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "spreadsheet-editor",
         "GetStarted",
-        "Editors"
+        "Editors",
       ])),
       locale,
     },

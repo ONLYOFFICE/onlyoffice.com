@@ -1,30 +1,30 @@
 {
-    "PageTitle": "Insert customizable charts and autoshapes to Word | ONLYOFFICE",
-    "PageDescription": "Add autoshapes to Word documents with ONLYOFFICE: choose from multiple styles and adjust their appearance. Insert customizable charts, tables, and images.",
-    "Header": "Make your documents look exceptional",
-    "SubHeader": "Add and edit complex objects to create informative, visually rich texts",
+  "PageTitle": "Insert customizable charts and autoshapes to Word | ONLYOFFICE",
+  "PageDescription": "Add autoshapes to Word documents with ONLYOFFICE: choose from multiple styles and adjust their appearance. Insert customizable charts, tables, and images.",
+  "Header": "Make your documents look exceptional",
+  "SubHeader": "Add and edit complex objects to create informative, visually rich texts",
 
-    "HeroImgUrl": "/images/templates/customizable-charts-and-autoshapes/hero/hero.png",
-    "HeroImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/hero/hero@2x.png",
+  "HeroImgUrl": "/images/templates/customizable-charts-and-autoshapes/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/hero/hero@2x.png",
 
-    "Feature1Title": "Structure and format texts",
-    "Feature1Desc": "Modify fonts, styles, and text formatting presets. Structure and format paragraphs, and adjust margins, breaks, page orientation, columns, and other layout elements.",
+  "Feature1Title": "Structure and format texts",
+  "Feature1Desc": "Modify fonts, styles, and text formatting presets. Structure and format paragraphs, and adjust margins, breaks, page orientation, columns, and other layout elements.",
 
-    "Feature2Title": "Create complex objects",
-    "Feature2Desc": "Add autoshapes to word documents: choose from multiple styles and adjust their appearance. Insert customizable charts, images, tables and OLE spreadsheets. Use the equation editor to insert formulas in the Unicode and LaTeX format so you can illustrate math. Add text boxes and Text Art. Insert SmartArt elements to create a visual representation of your ideas.",
+  "Feature2Title": "Create complex objects",
+  "Feature2Desc": "Add autoshapes to word documents: choose from multiple styles and adjust their appearance. Insert customizable charts, images, tables and OLE spreadsheets. Use the equation editor to insert formulas in the Unicode and LaTeX format so you can illustrate math. Add text boxes and Text Art. Insert SmartArt elements to create a visual representation of your ideas.",
 
-    "Feature3Title": "Apply academic formatting",
-    "Feature3Desc": "Create tables of contents and figures to structure papers and books. Insert and systematize captions for any object. Add footnotes, endnotes, cross-references, bookmarks, and hyperlinks. Build bibliographies with Mendeley, and Zotero.",
+  "Feature3Title": "Apply academic formatting",
+  "Feature3Desc": "Create tables of contents and figures to structure papers and books. Insert and systematize captions for any object. Add footnotes, endnotes, cross-references, bookmarks, and hyperlinks. Build bibliographies with Mendeley, and Zotero.",
 
-    "Feature4Title": "Do even more with plugins",
-    "Feature4Desc": "Insert and play YouTube videos. Edit pictures with Photo Editor right inside your documents. Format code in any programming language with Highlight Code.",
-   
-    "Feature1ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/pic1.png",
-    "Feature1ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/pic1@2x.png",
-    "Feature2ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/pic2.png",
-    "Feature2ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/pic2@2x.png",
-    "Feature3ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/pic3.png",
-    "Feature3ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/pic3@2x.png",
-    "Feature4ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/pic4.png",
-    "Feature4ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/pic4@2x.png"
+  "Feature4Title": "Do even more with plugins",
+  "Feature4Desc": "Insert and play YouTube videos. Edit pictures with Photo Editor right inside your documents. Format code in any programming language with Highlight Code.",
+
+  "Feature1ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/pic4@2x.png"
 }

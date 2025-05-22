@@ -1,6 +1,6 @@
-import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
+import { IEditorsItem } from "@src/components/modules/editors/EditorsFeatures/sub-components/EditorsImageItem/EditorsImageItem.types";
 
-export const items: IFeatureImageItem[] = [
+export const items: IEditorsItem[] = [
   {
     heading: "Feature1Title",
     text: "Feature1Desc",
@@ -53,7 +53,7 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature6Title",
     text: "Feature6Desc",
-    links: [{ label: "WatchHowItWorks", href: "#" }],
+    links: [{ label: "WatchHowItWorks", href: "https://www.youtube.com/embed/zrnJE-EwjFw", isVideo: true }],
     image: {
       url: "Feature6ImgUrl",
       url2x: "Feature6ImgUrl2x",

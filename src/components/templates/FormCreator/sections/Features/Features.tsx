@@ -17,7 +17,7 @@ const Features = () => {
         })),
         image: {
           url: t(items.image.url),
-          url2x: items.image.url2x && (t(items.image.url2x)),
+          url2x: items.image.url2x && t(items.image.url2x),
           height: items.image.height,
         },
       }))}

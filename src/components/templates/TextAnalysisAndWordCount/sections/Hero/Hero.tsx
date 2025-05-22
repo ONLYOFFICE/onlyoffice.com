@@ -26,20 +26,20 @@ const Hero = () => {
           <Heading level={1} color="#ffffff" label={t1("Header")} />
           <Text size={1} label={t1("SubHeader")} />
           <StyledHeroButtons>
-              <Button
-                id="hero-run-on-your-own-server"
-                as="a"
-                href="/download#docs-enterprise"
-                label={t2("RunOnYourOwnServer")}
-              />
-              <Button
-                id="hero-see-it-in-action"
-                as="a"
-                href="/see-it-in-action"
-                variant="quaternary"
-                label={t2("SeeItInAction")}
-              />
-            </StyledHeroButtons>
+            <Button
+              id="hero-run-on-your-own-server"
+              as="a"
+              href="/download#docs-enterprise"
+              label={t2("RunOnYourOwnServer")}
+            />
+            <Button
+              id="hero-see-it-in-action"
+              as="a"
+              href="/see-it-in-action"
+              variant="quaternary"
+              label={t2("SeeItInAction")}
+            />
+          </StyledHeroButtons>
         </StyledHeroWrapper>
 
         <StyledHeroImg

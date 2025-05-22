@@ -13,7 +13,9 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature2Title",
     text: "Feature2Desc",
-    links: [{ label: "LearnMore", href: "/presentation-editor/transition-effects" }],
+    links: [
+      { label: "LearnMore", href: "/presentation-editor/transition-effects" },
+    ],
     image: {
       url: "Feature2ImgUrl",
       url2x: "Feature2ImgUrl2x",
@@ -23,7 +25,13 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature3Title",
     text: "Feature3Desc",
-    links: [{ label: "GoToTheTemplateLibrary", href: "https://templates.onlyoffice.com/presentation-templates", isExternal: true }],
+    links: [
+      {
+        label: "GoToTheTemplateLibrary",
+        href: "https://templates.onlyoffice.com/presentation-templates",
+        isExternal: true,
+      },
+    ],
     image: {
       url: "Feature3ImgUrl",
       url2x: "Feature3ImgUrl2x",
@@ -33,6 +41,9 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature4Title",
     text: "Feature4Desc",
+    links: [
+      { label: "LearnMore", href: "/presentation-editor/powerpoint-notes" },
+    ],
     image: {
       url: "Feature4ImgUrl",
       url2x: "Feature4ImgUrl2x",
@@ -42,7 +53,12 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature5Title",
     text: "Feature5Desc",
-    links: [{ label: "LearnMore", href: "/document-editor/text-analysis-and-word-count" }],
+    links: [
+      {
+        label: "LearnMore",
+        href: "/presentation-editor/share-powerpoint-presentations",
+      },
+    ],
     image: {
       url: "Feature5ImgUrl",
       url2x: "Feature5ImgUrl2x",
@@ -52,7 +68,6 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature6Title",
     text: "Feature6Desc",
-    links: [{ label: "WatchHowItWorks", href: "#" }, { label: "LearnMore", href: "/document-editor/collaborate-on-word-documents" }],
     image: {
       url: "Feature6ImgUrl",
       url2x: "Feature6ImgUrl2x",
@@ -62,7 +77,12 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature7Title",
     text: "Feature7Desc",
-    links: [{ label: "WatchHowItWorks", href: "#" }, { label: "LearnMore", href: "https://helpcenter.onlyoffice.com/docs/userguides/presentation_editor", isExternal: true }],
+    links: [
+      {
+        label: "FindTheAppsYouNeedForOnlinePowerPointEditor",
+        href: "/app-directory",
+      },
+    ],
     image: {
       url: "Feature7ImgUrl",
       url2x: "Feature7ImgUrl2x",

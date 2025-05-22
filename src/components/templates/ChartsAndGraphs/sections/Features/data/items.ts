@@ -43,7 +43,7 @@ export const items: IFeatureImageItem[] = [
     image: {
       url: "Feature5ImgUrl",
       url2x: "Feature5ImgUrl2x",
-      height: 440,
+      height: 500,
     },
   },
 ];

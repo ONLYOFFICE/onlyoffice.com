@@ -1,6 +1,6 @@
-import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
+import { IEditorsItem } from "@src/components/modules/editors/EditorsFeatures/sub-components/EditorsImageItem/EditorsImageItem.types";
 
-export const items: IFeatureImageItem[] = [
+export const items: IEditorsItem[] = [
   {
     heading: "Feature1Title",
     text: "Feature1Desc",
@@ -13,7 +13,12 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature2Title",
     text: "Feature2Desc",
-    links: [{ label: "ReadWhyOnlineWordProcessorIsMoreComprehensive", href: "/best-microsoft-office-alternative?from=document-editor" }],
+    links: [
+      {
+        label: "ReadWhyOnlineWordProcessorIsMoreComprehensive",
+        href: "/best-microsoft-office-alternative?from=document-editor",
+      },
+    ],
     image: {
       url: "Feature2ImgUrl",
       url2x: "Feature2ImgUrl2x",
@@ -32,7 +37,12 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature4Title",
     text: "Feature4Desc",
-    links: [{ label: "LearnMore", href: "/document-editor/customizable-charts-and-autoshapes" }],
+    links: [
+      {
+        label: "LearnMore",
+        href: "/document-editor/customizable-charts-and-autoshapes",
+      },
+    ],
     image: {
       url: "Feature4ImgUrl",
       url2x: "Feature4ImgUrl2x",
@@ -42,7 +52,12 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature5Title",
     text: "Feature5Desc",
-    links: [{ label: "LearnMore", href: "/document-editor/text-analysis-and-word-count" }],
+    links: [
+      {
+        label: "LearnMore",
+        href: "/document-editor/text-analysis-and-word-count",
+      },
+    ],
     image: {
       url: "Feature5ImgUrl",
       url2x: "Feature5ImgUrl2x",
@@ -52,7 +67,17 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature6Title",
     text: "Feature6Desc",
-    links: [{ label: "WatchHowItWorks", href: "#" }, { label: "LearnMore", href: "/document-editor/collaborate-on-word-documents" }],
+    links: [
+      {
+        label: "WatchHowItWorks",
+        href: "https://www.youtube.com/embed/8z1iLv32J2M",
+        isVideo: true,
+      },
+      {
+        label: "LearnMore",
+        href: "/document-editor/collaborate-on-word-documents",
+      },
+    ],
     image: {
       url: "Feature6ImgUrl",
       url2x: "Feature6ImgUrl2x",
@@ -62,7 +87,14 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature7Title",
     text: "Feature7Desc",
-    links: [{ label: "WatchHowItWorks", href: "#" }, { label: "LearnMore", href: "/document-editor/compare-documents" }],
+    links: [
+      {
+        label: "WatchHowItWorks",
+        href: "https://www.youtube.com/embed/ivAUwljBJS8",
+        isVideo: true,
+      },
+      { label: "LearnMore", href: "/document-editor/compare-documents" },
+    ],
     image: {
       url: "Feature7ImgUrl",
       url2x: "Feature7ImgUrl2x",
@@ -72,7 +104,9 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature8Title",
     text: "Feature8Desc",
-    links: [{ label: "FindAppsYouNeedForDocumentEditor", href: "/app-directory" }],
+    links: [
+      { label: "FindAppsYouNeedForDocumentEditor", href: "/app-directory" },
+    ],
     image: {
       url: "Feature8ImgUrl",
       url2x: "Feature8ImgUrl2x",

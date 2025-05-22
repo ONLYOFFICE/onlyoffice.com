@@ -25,7 +25,7 @@ export const items: IFeatureImageItem[] = [
     image: {
       url: "Feature3ImgUrl",
       url2x: "Feature3ImgUrl2x",
-      height: 440,
+      height: 500,
     },
   },
   {
@@ -34,7 +34,7 @@ export const items: IFeatureImageItem[] = [
     image: {
       url: "Feature4ImgUrl",
       url2x: "Feature4ImgUrl2x",
-      height: 440,
+      height: 506,
     },
   },
   {

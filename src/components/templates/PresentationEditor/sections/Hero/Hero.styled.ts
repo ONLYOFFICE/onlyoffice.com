@@ -4,7 +4,7 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #B05F4B;
+  background-color: #b05f4b;
 
   @media ${device.tablet} {
     margin-top: -64px;
@@ -69,4 +69,52 @@ const StyledHeroVideo = styled.div`
   }
 `;
 
-export { StyledHero, StyledHeroWrapper, StyledHeroImg, StyledHeroVideo};
+const StyledHeroInput = styled.div`
+  background-color: #ffffff;
+  box-shadow: 0px 7px 15px rgba(85, 85, 85, 0.1);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 370px auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 702px;
+  padding: 32px 96px;
+  width: 100%;
+
+  .input-wrapper {
+    border-radius: 9px 0px 0px 9px;
+  }
+  > a {
+    border-radius: 0px 9px 9px 0px;
+  }
+
+  @media ${device.tabletS} {
+    grid-template-columns: auto auto;
+    padding: 32px 64px;
+  }
+
+  @media ${device.mobile} {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+
+    > div {
+      width: 100%;
+    }
+    .input-wrapper {
+      border-radius: 9px;
+    }
+    > a {
+      border-radius: 9px;
+    }
+  }
+`;
+
+export {
+  StyledHero,
+  StyledHeroWrapper,
+  StyledHeroImg,
+  StyledHeroVideo,
+  StyledHeroInput,
+};
