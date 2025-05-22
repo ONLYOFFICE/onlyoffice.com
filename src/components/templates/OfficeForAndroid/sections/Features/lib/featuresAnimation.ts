@@ -1,48 +1,50 @@
 import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { RefObject } from "react";
+import { RefObject, useEffect } from "react";
 
-const outerFeaturesAnimation = () => {
-  gsap.registerPlugin(useGSAP, ScrollTrigger);
+const useFeaturesAnimation = (
+  containerRef: RefObject<HTMLDivElement | null>,
+) => {
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    let ctx: gsap.Context;
 
-  return function useInnerFeaturesAnimation(
-    containerRef: RefObject<HTMLDivElement | null>,
-  ) {
-    useGSAP(
-      () => {
-        const items = gsap.utils.toArray(".item");
-        const tabletImages: HTMLElement[] = gsap.utils.toArray(".tabletImage");
-        const mobileImages: HTMLElement[] = gsap.utils.toArray(".mobileImage");
+      (async () => {
+        const { ScrollTrigger } = await import("gsap/ScrollTrigger");
+        gsap.registerPlugin(ScrollTrigger);
 
-        for (let i = 0; i < items.length - 1; i += 1) {
-          gsap.to(tabletImages[i], {
-            opacity: 0,
-            scrollTrigger: {
-              trigger: items[i] as HTMLElement,
-              start: "bottom center+=30%",
-              end: "bottom center-=30%",
-              scrub: true,
-              // markers: true,
-            },
-          });
+        ctx = gsap.context(() => {
+          const items = gsap.utils.toArray(".item");
+          const tabletImages: HTMLElement[] = gsap.utils.toArray(".tabletImage");
+          const mobileImages: HTMLElement[] = gsap.utils.toArray(".mobileImage");
 
-          gsap.to(mobileImages[i], {
-            opacity: 0,
-            scrollTrigger: {
-              trigger: items[i] as HTMLElement,
-              start: "bottom center+=30%",
-              end: "bottom center-=30%",
-              scrub: true,
-              // markers: true,
-            },
-          });
-        }
-      },
-      { scope: containerRef },
-    );
+          for (let i = 0; i < items.length - 1; i += 1) {
+            gsap.to(tabletImages[i], {
+              opacity: 0,
+              scrollTrigger: {
+                trigger: items[i] as HTMLElement,
+                start: "bottom center+=30%",
+                end: "bottom center-=30%",
+                scrub: true,
+                // markers: true,
+              },
+            });
+
+            gsap.to(mobileImages[i], {
+              opacity: 0,
+              scrollTrigger: {
+                trigger: items[i] as HTMLElement,
+                start: "bottom center+=30%",
+                end: "bottom center-=30%",
+                scrub: true,
+                // markers: true,
+              },
+            });
+          }
+        }, containerRef);
+      })();
+
+      return () => ctx?.revert()
+    }, [containerRef]);
   };
-};
 
-const featuresAnimation = outerFeaturesAnimation();
-export { featuresAnimation };
+export { useFeaturesAnimation };
