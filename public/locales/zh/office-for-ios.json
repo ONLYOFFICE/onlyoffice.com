@@ -8,6 +8,14 @@
   "OneAppThreeEditors": "一款应用 - <0>三个编辑器</0> - 多种功能",
   "CompatibleWithMSOffice": "与MS Office格式100%兼容",
 
+  "HeroImageRightUrl": "/images/templates/office-for-ios/hero/zh/hero-laptop.png",
+  "HeroImageRightUrl2x": "/images/templates/office-for-ios/hero/zh/hero-laptop-2x.png",
+
+  "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/zh/hero-phone.png",
+  "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/zh/hero-phone-2x.png",
+
+  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/hero/buttons/appstore.zh.svg",
+
   "FeaturesItemHeadingFull": "功能齐全的文本处理器",
   "FeaturesItemTextMakeUse": "利用多种文本处理工具：页面、段落和文本格式设置，表格，自动形状，图表等。创建任何大小和复杂度的文本文档。通过AirPrint打印。",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/zh/img-tablet-1.png",

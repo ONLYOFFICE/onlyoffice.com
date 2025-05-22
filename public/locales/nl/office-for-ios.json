@@ -8,6 +8,8 @@
   "OneAppThreeEditors": "Eén app - <0>Drie editors</0> - Meerdere functies",
   "CompatibleWithMSOffice": "100% compatibel met MS Office formaten",
 
+  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/hero/buttons/appstore.nl.svg",
+
   "FeaturesItemHeadingFull": "Volledige tekstverwerker",
   "FeaturesItemTextMakeUse": "Maak gebruik van meerdere tekstverwerkingstools: pagina-, paragraaf- en tekstformattering, tabellen, autovormen, grafieken, enz. Maak tekstdocumenten van elke grootte en complexiteit. Print ze via AirPrint.",
 

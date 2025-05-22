@@ -8,6 +8,8 @@
   "OneAppThreeEditors": "1つのアプリ - <0>3つのエディター</0> - 複数の機能",
   "CompatibleWithMSOffice": "MS Office フォーマットと100%互換",
 
+  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/hero/buttons/appstore.ja.svg",
+
   "FeaturesItemHeadingFull": "フル機能のテキストプロセッサー",
   "FeaturesItemTextMakeUse": "複数のテキスト処理ツールを活用：ページ、段落、テキストの書式設定、表、オートシェイプ、グラフなど。あらゆるサイズと複雑さのテキスト文書を作成。AirPrint経由で印刷可能。",
 

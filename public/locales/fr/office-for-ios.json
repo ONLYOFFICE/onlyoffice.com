@@ -8,6 +8,11 @@
   "OneAppThreeEditors": "Une application - <0>Trois éditeurs</0> - Plusieurs fonctionnalités",
   "CompatibleWithMSOffice": "100 % compatible avec les formats MS Office",
 
+  "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/fr/hero-phone.png",
+  "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/fr/hero-phone-2x.png",
+
+  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/hero/buttons/appstore.fr.svg",
+
   "FeaturesItemHeadingFull": "Processeur de texte complet",
   "FeaturesItemTextMakeUse": "Utilisez de multiples outils de traitement de texte : formatage de page, de paragraphe et de texte, tableaux, formes automatiques, graphiques, etc. Créez des documents texte de toute taille et complexité. Imprimez-les via AirPrint.",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/fr/img-tablet-1.png",

@@ -8,6 +8,8 @@
   "OneAppThreeEditors": "Jedna aplikace - <0>Tři editory</0> - Mnoho funkcí",
   "CompatibleWithMSOffice": "100% kompatibilní s formáty MS Office",
 
+  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/hero/buttons/appstore.cs.svg",
+
   "FeaturesItemHeadingFull": "Plně vybavený textový procesor",
   "FeaturesItemTextMakeUse": "Využijte mnoho nástrojů pro zpracování textu: formátování stránky, odstavců a textu, tabulky, automatické tvary, grafy atd. Vytvářejte textové dokumenty jakékoli velikosti a složitosti. Tiskněte je pomocí AirPrint.",
 

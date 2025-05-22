@@ -81,12 +81,14 @@ const StyledHeroLeftHeading = styled(Heading)`
   }
 `;
 
-const StyledHeroLeftButton = styled(Button)`
+const StyledHeroLeftButton = styled(Button)<{
+  $backgroundUrl: string;
+}>`
   display: block;
   width: 170px;
   height: 58px;
   margin-top: 40px;
-  background-image: url("/images/templates/office-for-ios/hero/app-store_btn.svg");
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
@@ -121,15 +123,22 @@ const StyledHeroLeftImgWrapper = styled.div`
   }
 `;
 
-const StyledHeroLeftImg = styled.div`
+const StyledHeroLeftImg = styled.div<{
+  $backgroundUrl: string;
+  $backgroundUrl2x: string;
+}>`
   width: 498px;
   height: 498px;
-  background-image: url("/images/templates/office-for-ios/hero/hero_phone.webp");
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
   z-index: 1;
   margin-left: -15.625vw;
+
+  @media ${device.retina} {
+    background-image: ${(props) => `url(${props.$backgroundUrl2x})`};
+  }
 
   @media ${device.tablet} {
     margin-left: 0;
@@ -162,8 +171,11 @@ const StyledHeroLeftImg = styled.div`
   }
 `;
 
-const StyledHeroRight = styled.div`
-  background-image: url("/images/templates/office-for-ios/hero/hero_laptop.webp");
+const StyledHeroRight = styled.div<{
+  $backgroundUrl: string;
+  $backgroundUrl2x: string;
+}>`
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
   width: 800px;
@@ -171,6 +183,10 @@ const StyledHeroRight = styled.div`
   position: absolute;
   top: -135px;
   left: 55%;
+
+  @media ${device.retina} {
+    background-image: ${(props) => `url(${props.$backgroundUrl2x})`};
+  }
 
   @media ${device.tabletS} {
     position: static;
@@ -180,11 +196,14 @@ const StyledHeroRight = styled.div`
   }
 `;
 
-const StyledHeroPhoneImgMob = styled.div`
+const StyledHeroPhoneImgMob = styled.div<{
+  $backgroundUrl: string;
+  $backgroundUrl2x: string;
+}>`
   display: none;
   width: 498px;
   height: 498px;
-  background-image: url("/images/templates/office-for-ios/hero/hero_phone.webp");
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
@@ -192,6 +211,10 @@ const StyledHeroPhoneImgMob = styled.div`
   transform: scale(0.75);
   margin: -40px auto 0;
   pointer-events: none;
+
+  @media ${device.retina} {
+    background-image: ${(props) => `url(${props.$backgroundUrl2x})`};
+  }
 
   @media ${device.tabletS} {
     display: block;
@@ -246,7 +269,7 @@ const StyledHeroFooterImgLink = styled(Link)`
   width: 172px;
   height: 172px;
   margin: 0 auto;
-  background-image: url("/images/templates/office-for-ios/hero/award.webp");
+  background-image: url("/images/templates/office-for-ios/hero/award.png");
   background-repeat: no-repeat;
   background-size: contain;
 `;

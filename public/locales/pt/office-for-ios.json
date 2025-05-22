@@ -8,6 +8,8 @@
   "OneAppThreeEditors": "Um aplicativo - <0>Três editores</0> - Vários recursos",
   "CompatibleWithMSOffice": "100% compatível com formatos MS Office",
 
+  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/hero/buttons/appstore.pt.svg",
+
   "FeaturesItemHeadingFull": "Processador de texto completo",
   "FeaturesItemTextMakeUse": "Faça uso de várias ferramentas de processamento de texto: formatação de página, parágrafo e texto, tabelas, autoformas, gráficos, etc. Crie documentos de texto de qualquer tamanho e complexidade. Imprima-os via AirPrint.",
 

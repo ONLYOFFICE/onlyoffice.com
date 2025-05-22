@@ -13,7 +13,7 @@ const StyledAwardContent = styled.div`
 `;
 
 const StyledAwardLogo = styled.div`
-  background-image: url("/images/templates/office-for-ios/award/award.webp");
+  background-image: url("/images/templates/office-for-ios/award/award.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 172px;
