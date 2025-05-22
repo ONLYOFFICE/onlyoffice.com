@@ -10,7 +10,7 @@ import {
   StyledUpgradeListItem,
   StyledHeading,
   StyledUpgradeAreaImage,
-  StyledCouponHeading
+  StyledCouponHeading,
 } from "./Hero.styled";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
@@ -29,13 +29,7 @@ const Hero = () => {
     >
       <Container>
         <StyledInstallationSuccessWorkspaceHeroImage />
-        <StyledHeading level={1}>
-          <Trans
-            t={t}
-            i18nKey={String(t("Header"))}
-            components={[<Text as="span" color="#FF6F3D" key="0" />]}
-          />
-        </StyledHeading>
+        <StyledHeading level={1}>{t("Header")}</StyledHeading>
         <StyledUpgradeArea>
           <StyledUpgradeAreaImage />
           <StyledUpgradeAreaRight>

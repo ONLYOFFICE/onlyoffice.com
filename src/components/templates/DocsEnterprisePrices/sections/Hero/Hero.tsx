@@ -16,7 +16,9 @@ import {
   StyledHeroTotalPrice,
   StyledHeroBtnWrapper,
 } from "./Hero.styled";
-import { ILocale } from "@src/types/locale";
+import { IDocsEnterprisePricesFormData } from "./Hero.types";
+import { IDocsEnterprisePricesTemplate } from "@src/components/templates/DocsEnterprisePrices";
+import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
@@ -32,11 +34,12 @@ import { SelectorsWrapper } from "@src/components/widgets/pricing/SelectorsWrapp
 import { QuoteModal } from "@src/components/widgets/pricing/QuoteModal";
 import { Reseller } from "@src/components/modules/pricing/Reseller";
 
-const Hero = ({ locale }: ILocale) => {
+const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
   const { t } = useTranslation("docs-enterprise-prices");
+  const currency = getCurrencyByLocale(locale);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<IDocsEnterprisePricesFormData>({
     hosting: "On-premises",
     connectionsNumber: "50",
     licenseDuration: "1-year",
@@ -60,6 +63,82 @@ const Hero = ({ locale }: ILocale) => {
 
   const isOrderNow = [formData.disasterRecovery].every(Boolean);
 
+  const product =
+    formData.connectionsNumber === "more"
+      ? null
+      : ((formData.supportUpdates === "3-year" && formData.disasterRecovery
+          ? {
+              Basic: {
+                "50": productsData.basic3YearsSupport1,
+                "100": productsData.basic3YearsSupport2,
+                "200": productsData.basic3YearsSupport3,
+              },
+              Plus: {
+                "50": productsData.plus3YearsSupport1,
+                "100": productsData.plus3YearsSupport2,
+                "200": productsData.plus3YearsSupport3,
+              },
+              Premium: {
+                "50": productsData.premium3YearsSupport1,
+                "100": productsData.premium3YearsSupport2,
+                "200": productsData.premium3YearsSupport3,
+              },
+            }
+          : formData.supportUpdates === "3-year"
+            ? {
+                Basic: {
+                  "50": productsData.basic3Years1,
+                  "100": productsData.basic3Years2,
+                  "200": productsData.basic3Years3,
+                },
+                Plus: {
+                  "50": productsData.plus3Years1,
+                  "100": productsData.plus3Years2,
+                  "200": productsData.plus3Years3,
+                },
+                Premium: {
+                  "50": productsData.premium3Years1,
+                  "100": productsData.premium3Years2,
+                  "200": productsData.premium3Years3,
+                },
+              }
+            : formData.disasterRecovery
+              ? {
+                  Basic: {
+                    "50": productsData.basicSupport1,
+                    "100": productsData.basicSupport2,
+                    "200": productsData.basicSupport3,
+                  },
+                  Plus: {
+                    "50": productsData.plusSupport1,
+                    "100": productsData.plusSupport2,
+                    "200": productsData.plusSupport3,
+                  },
+                  Premium: {
+                    "50": productsData.premiumSupport1,
+                    "100": productsData.premiumSupport2,
+                    "200": productsData.premiumSupport3,
+                  },
+                }
+              : {
+                  Basic: {
+                    "50": productsData.basic1,
+                    "100": productsData.basic2,
+                    "200": productsData.basic3,
+                  },
+                  Plus: {
+                    "50": productsData.plus1,
+                    "100": productsData.plus2,
+                    "200": productsData.plus3,
+                  },
+                  Premium: {
+                    "50": productsData.premium1,
+                    "100": productsData.premium2,
+                    "200": productsData.premium3,
+                  },
+                })[formData.supportLevel]?.[formData.connectionsNumber] ??
+        null);
+
   return (
     <StyledHero
       background="#f5f5f5"
@@ -81,8 +160,8 @@ const Hero = ({ locale }: ILocale) => {
             <StyledHeroPriceWrapper>
               {t("From")}
               <StyledHeroPrice>
-                <span>$</span>
-                {hostingIsCloud ? 8 : 1500}
+                <span>{currency.symbol}</span>
+                {hostingIsCloud ? 8 : productsData.basic1.price}
               </StyledHeroPrice>
               {hostingIsCloud && t("user/month")}
             </StyledHeroPriceWrapper>
@@ -122,7 +201,7 @@ const Hero = ({ locale }: ILocale) => {
                   { id: "On-premises", label: { name: t("OnPremises") } },
                 ]}
                 selected={formData.hosting}
-                onChange={(value) =>
+                onChange={(value: IDocsEnterprisePricesFormData["hosting"]) =>
                   setFormData((prev) => ({ ...prev, hosting: value }))
                 }
               />
@@ -150,7 +229,9 @@ const Hero = ({ locale }: ILocale) => {
                     ]}
                     selected={formData.connectionsNumber}
                     bgColor="#f5f5f5"
-                    onChange={(value) =>
+                    onChange={(
+                      value: IDocsEnterprisePricesFormData["connectionsNumber"],
+                    ) =>
                       setFormData((prev) => ({
                         ...prev,
                         connectionsNumber: value,
@@ -166,7 +247,9 @@ const Hero = ({ locale }: ILocale) => {
                       { id: "Lifetime", label: { name: t("Lifetime") } },
                     ]}
                     selected={formData.licenseDuration}
-                    onChange={(value) =>
+                    onChange={(
+                      value: IDocsEnterprisePricesFormData["licenseDuration"],
+                    ) =>
                       setFormData((prev) => ({
                         ...prev,
                         licenseDuration: value,
@@ -184,7 +267,9 @@ const Hero = ({ locale }: ILocale) => {
                       { id: "3-year", label: { name: t("3 year") } },
                     ]}
                     selected={formData.supportUpdates}
-                    onChange={(value) =>
+                    onChange={(
+                      value: IDocsEnterprisePricesFormData["supportUpdates"],
+                    ) =>
                       setFormData((prev) => ({
                         ...prev,
                         supportUpdates: value,
@@ -229,9 +314,9 @@ const Hero = ({ locale }: ILocale) => {
                     },
                   ]}
                   selected={formData.cloudType}
-                  onChange={(value) =>
-                    setFormData((prev) => ({ ...prev, cloudType: value }))
-                  }
+                  onChange={(
+                    value: IDocsEnterprisePricesFormData["cloudType"],
+                  ) => setFormData((prev) => ({ ...prev, cloudType: value }))}
                 />
               </LabeledWrapper>
             )}
@@ -305,9 +390,9 @@ const Hero = ({ locale }: ILocale) => {
                 selected={formData.supportLevel}
                 bgColor="#f5f5f5"
                 collapsible
-                onChange={(value) =>
-                  setFormData({ ...formData, supportLevel: value })
-                }
+                onChange={(
+                  value: IDocsEnterprisePricesFormData["supportLevel"],
+                ) => setFormData({ ...formData, supportLevel: value })}
               />
             </LabeledWrapper>
 
@@ -356,12 +441,12 @@ const Hero = ({ locale }: ILocale) => {
             </LabeledWrapper>
 
             <StyledHeroTotal>
-              {!(isGetIsQuote || isOrderNow) && (
+              {!isGetIsQuote && (
                 <StyledHeroTotalWrapper>
                   <Heading level={4} color="#444444" label={t("Total")} />
                   <StyledHeroTotalPrice>
-                    <span>$</span>
-                    2100
+                    <span>{currency.symbol}</span>
+                    {product?.price}
                   </StyledHeroTotalPrice>
                 </StyledHeroTotalWrapper>
               )}
@@ -380,7 +465,13 @@ const Hero = ({ locale }: ILocale) => {
                     label={t("OrderNow")}
                   />
                 ) : (
-                  <Button as="a" fullWidth href="" label={t("BuyNow")} />
+                  <Button
+                    as="a"
+                    fullWidth
+                    href={product?.url}
+                    target="_blank"
+                    label={t("BuyNow")}
+                  />
                 )}
               </StyledHeroBtnWrapper>
             </StyledHeroTotal>

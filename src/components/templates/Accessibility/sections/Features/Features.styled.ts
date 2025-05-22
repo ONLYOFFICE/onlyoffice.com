@@ -150,5 +150,5 @@ export {
   StyledFeaturesContent,
   StyledFeaturesDescription,
   StyledFeaturesListItem,
-  StyledFeaturesListDescription
+  StyledFeaturesListDescription,
 };

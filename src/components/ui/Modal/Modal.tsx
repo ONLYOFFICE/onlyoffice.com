@@ -7,6 +7,37 @@ import {
 } from "./Modal.styled";
 import { IModal } from "./Modal.types";
 
+let openModalCount = 0;
+let cleanupTimeout: ReturnType<typeof setTimeout> | null = null;
+
+const modalManager = {
+  addModal() {
+    if (cleanupTimeout) {
+      clearTimeout(cleanupTimeout);
+      cleanupTimeout = null;
+    }
+
+    openModalCount += 1;
+    if (openModalCount === 1) {
+      const scrollbarWidth =
+        window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
+  },
+
+  removeModal() {
+    openModalCount = Math.max(openModalCount - 1, 0);
+    if (openModalCount === 0) {
+      cleanupTimeout = setTimeout(() => {
+        document.body.style.overflow = "";
+        document.body.style.paddingRight = "";
+        cleanupTimeout = null;
+      }, 200);
+    }
+  },
+};
+
 const Modal = ({
   id,
   className,
@@ -19,6 +50,7 @@ const Modal = ({
   onClose,
 }: IModal) => {
   const modalRef = useRef<HTMLDivElement>(null);
+  const wasOpen = useRef(false);
 
   const stopAllVideos = () => {
     if (!modalRef.current) return;
@@ -106,21 +138,20 @@ const Modal = ({
   }, [isOpen, onCloseModal]);
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout;
-
-    if (isOpen) {
-      const scrollbarWidth =
-        window.innerWidth - document.documentElement.clientWidth;
-      document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = `${scrollbarWidth}px`;
-    } else {
-      timeout = setTimeout(() => {
-        document.body.style.paddingRight = "";
-        document.body.style.overflow = "";
-      }, 200);
+    if (isOpen && !wasOpen.current) {
+      modalManager.addModal();
+      wasOpen.current = true;
+    } else if (!isOpen && wasOpen.current) {
+      modalManager.removeModal();
+      wasOpen.current = false;
     }
 
-    return () => clearTimeout(timeout);
+    return () => {
+      if (wasOpen.current) {
+        modalManager.removeModal();
+        wasOpen.current = false;
+      }
+    };
   }, [isOpen]);
 
   return (

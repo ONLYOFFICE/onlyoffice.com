@@ -1,7 +1,6 @@
 export interface PricingPlanData {
   key: "basic" | "plus" | "premium";
   headingKey: string;
-  price: string;
   availableKeys: string[];
   firstResponseTime: string;
   supportKeys: string[];
@@ -11,7 +10,6 @@ export interface PricingPlanData {
 export const pricingPlans: PricingPlanData[] = [
   {
     key: "basic",
-    price: "2200",
     headingKey: "Enterprise",
     availableKeys: [
       "OODocsWithMobileWebEditors",
@@ -33,7 +31,6 @@ export const pricingPlans: PricingPlanData[] = [
   },
   {
     key: "plus",
-    price: "3300",
     headingKey: "EnterprisePlus",
     availableKeys: [
       "OODocsWithMobileWebEditors",
@@ -55,7 +52,6 @@ export const pricingPlans: PricingPlanData[] = [
   },
   {
     key: "premium",
-    price: "4450",
     headingKey: "EnterprisePremium",
     availableKeys: [
       "OODocsWithMobileWebEditors",

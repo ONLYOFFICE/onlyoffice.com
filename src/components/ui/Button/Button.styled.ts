@@ -83,7 +83,9 @@ const StyledButton = styled.button<{
       border: 1px solid #aaaaaa;
       color: #444444;
       background-color: transparent;
-      transition: border-color 0.2s, color 0.2s;
+      transition:
+        border-color 0.2s,
+        color 0.2s;
 
       &:hover,
       &:active {
@@ -121,7 +123,9 @@ const StyledButton = styled.button<{
       border: 1px solid #aaaaaa;
       color: #ffffff;
       background-color: transparent;
-      transition: border-color 0.2s, color 0.2s;
+      transition:
+        border-color 0.2s,
+        color 0.2s;
 
       &:hover,
       &:active {

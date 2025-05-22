@@ -126,18 +126,18 @@ const QuoteModal = ({
             formData.fullName.length === 0
               ? t("FullNameIsEmpty")
               : !validateFullName(formData.fullName)
-              ? t("FullNameIsIncorrect")
-              : ""
+                ? t("FullNameIsIncorrect")
+                : ""
           }
           required
           status={
             isEmpty.fullName
               ? "error"
               : formData.fullName.length > 0
-              ? validateFullName(formData.fullName)
-                ? "success"
-                : "error"
-              : "default"
+                ? validateFullName(formData.fullName)
+                  ? "success"
+                  : "error"
+                : "default"
           }
         />
 
@@ -157,18 +157,18 @@ const QuoteModal = ({
             formData.email.length === 0
               ? t("EmailIsEmpty")
               : !validateEmail(formData.email)
-              ? t("EmailIsIncorrect")
-              : ""
+                ? t("EmailIsIncorrect")
+                : ""
           }
           required
           status={
             isEmpty.email
               ? "error"
               : formData.email.length > 0
-              ? validateEmail(formData.email)
-                ? "success"
-                : "error"
-              : "default"
+                ? validateEmail(formData.email)
+                  ? "success"
+                  : "error"
+                : "default"
           }
         />
 
@@ -204,8 +204,8 @@ const QuoteModal = ({
             isEmpty.companyName
               ? "error"
               : formData.companyName
-              ? "success"
-              : "default"
+                ? "success"
+                : "default"
           }
         />
 

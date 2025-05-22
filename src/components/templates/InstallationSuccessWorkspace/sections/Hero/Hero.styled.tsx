@@ -4,9 +4,12 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 
 const StyledInstallationSuccessWorkspaceHero = styled(Section)`
-  background-image: url("/images/templates/installation-success-workspace/hero/bg.svg"),
+  background-image:
+    url("/images/templates/installation-success-workspace/hero/bg.svg"),
     linear-gradient(180deg, #ff8e3d 0%, #ff6f3d 100%);
-  background-position: center 0, center;
+  background-position:
+    center 0,
+    center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 100%;
   position: relative;
@@ -16,7 +19,9 @@ const StyledInstallationSuccessWorkspaceHero = styled(Section)`
   overflow-y: hidden;
 
   @media (max-width: 1680px) {
-    background-size: 1680px auto, 100%;
+    background-size:
+      1680px auto,
+      100%;
   }
 
   @media ${device.tablet} {
@@ -24,8 +29,16 @@ const StyledInstallationSuccessWorkspaceHero = styled(Section)`
   }
 
   @media ${device.tabletS} {
-    background-position: -340px -20px, center;
+    background-position:
+      -440px -20px,
+      center;
     margin-top: -48px;
+  }
+
+  @media ${device.mobile} {
+    background-position:
+      -520px -20px,
+      center;
   }
 `;
 
@@ -172,6 +185,7 @@ const StyledHeading = styled(Heading)`
 
 const StyledCouponHeading = styled(Heading)`
   font-size: 24px;
+  line-height: 1.33em;
 
   @media ${device.tabletS} {
     font-size: 18px;
@@ -192,5 +206,5 @@ export {
   StyledButtonsArea,
   StyledHeading,
   StyledUpgradeAreaImage,
-  StyledCouponHeading
+  StyledCouponHeading,
 };

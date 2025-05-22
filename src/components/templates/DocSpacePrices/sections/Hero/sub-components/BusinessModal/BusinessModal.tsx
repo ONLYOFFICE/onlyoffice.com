@@ -13,15 +13,23 @@ import {
   StyledBusinessModalBtn,
 } from "./BusinessModal.styled";
 import { IBusinessModal } from "./BusinessModal.types";
+import { IDocSpacePricesTemplate } from "@src/components/templates/DocSpacePrices";
+import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
 import { Heading } from "@src/components/ui/Heading";
 import { Modal } from "@src/components/ui/Modal";
 import { Input } from "@src/components/ui/Input";
 import { LabeledWrapper } from "@src/components/widgets/LabeledWrapper";
-import { businessCurrentPrice } from "../../data/plans";
 
-const BusinessModal = ({ isOpen, onClose }: IBusinessModal) => {
+const BusinessModal = ({
+  isOpen,
+  onClose,
+  locale,
+  productsData,
+}: IBusinessModal & IDocSpacePricesTemplate) => {
   const { t } = useTranslation("docspace-prices");
   const [value, setValue] = useState("");
+
+  const currency = getCurrencyByLocale(locale);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = e.target.value;
@@ -54,7 +62,7 @@ const BusinessModal = ({ isOpen, onClose }: IBusinessModal) => {
 
   const getTotalPrice = () => {
     const numOfAdmins = parseInt(value) || 1;
-    const pricePerAdmin = Number(businessCurrentPrice);
+    const pricePerAdmin = productsData.business.price;
     return numOfAdmins * pricePerAdmin;
   };
 
@@ -80,7 +88,8 @@ const BusinessModal = ({ isOpen, onClose }: IBusinessModal) => {
               {t("PricePerAdmin")}
             </StyledBusinessModalLabel>
             <StyledBusinessModalValue>
-              ${businessCurrentPrice} {t("ValuePerMonth")}
+              {currency.symbol}
+              {productsData.business.price} {t("ValuePerMonth")}
             </StyledBusinessModalValue>
           </StyledBusinessModalItem>
 
