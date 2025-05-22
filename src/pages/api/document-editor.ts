@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import jwt from "jsonwebtoken";
 import { v4 as uuidv4 } from "uuid";
 
-const secret = process.env.ONLYOFFICE_DOCUMENT_SERVER_TOKEN || "MYSECRET";
+const secret = process.env.ONLYOFFICE_DOCUMENT_SERVER_TOKEN;
 
 interface DocumentConfig {
   fileType?: string;
@@ -78,6 +78,10 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
           },
         },
       };
+    }
+
+    if (!secret) {
+      throw new Error("Missing ONLYOFFICE_DOCUMENT_SERVER_TOKEN environment variable");
     }
 
     const token = jwt.sign(payload, secret);
