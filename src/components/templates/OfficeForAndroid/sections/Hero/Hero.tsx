@@ -54,11 +54,11 @@ const Hero = () => {
               />
             </StyledHeroLeftButtonsWrapper>
             <StyledHeroLeftImgWrapper>
-              <StyledHeroLeftImg />
+              <StyledHeroLeftImg $backgroundUrl={t("HeroLeftImageUrl")} $backgroundUrl2x={t("HeroLeftImageUrl2x")} />
             </StyledHeroLeftImgWrapper>
           </StyledHeroLeft>
-          <StyledHeroRight />
-          <StyledHeroPhoneImgMob />
+          <StyledHeroRight $backgroundUrl={t("HeroRightImageUrl")} $backgroundUrl2x={t("HeroRightImageUrl2x")} />
+          <StyledHeroPhoneImgMob $backgroundUrl={t("HeroLeftImageUrl")} $backgroundUrl2x={t("HeroLeftImageUrl2x")} />
           <StyledHeroFooter>
             <StyledHeroFooterImg />
             <StyledHeroFooterHeading

@@ -4,6 +4,12 @@
 
   "OnlyOfficeDocuments": "ONLYOFFICE Documents, <0>free office app</0> for Android",
 
+  "HeroRightImageUrl": "/images/templates/office-for-android/hero/en/header.png",
+  "HeroRightImageUrl2x": "/images/templates/office-for-android/hero/en/header@2x.png",
+
+  "HeroLeftImageUrl": "/images/templates/office-for-android/hero/en/header-phone.png",
+  "HeroLeftImageUrl2x": "/images/templates/office-for-android/hero/en/header-phone@2x.png",
+
   "OneAppForYourText": "One app for your text documents, spreadsheets, presentations, forms and media files",
   "CompatibleWithMSOffice": "100% compatible with MS Office formats",
 

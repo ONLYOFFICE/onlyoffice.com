@@ -129,16 +129,23 @@ const StyledHeroLeftImgWrapper = styled.div`
   }
 `;
 
-const StyledHeroLeftImg = styled.div`
+const StyledHeroLeftImg = styled.div<{
+  $backgroundUrl: string;
+  $backgroundUrl2x: string;
+}>`
   width: 498px;
   height: 498px;
-  background-image: url("/images/templates/office-for-android/hero/hero_phone.webp");
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
   z-index: 1;
   margin-left: -13.625vw;
   margin-top: 2vw;
+
+  @media ${device.retina} {
+    background-image: ${(props) => `url(${props.$backgroundUrl2x})`};
+  }
 
   @media ${device.desktop} {
     margin-left: -7vw;
@@ -171,8 +178,11 @@ const StyledHeroLeftImg = styled.div`
   }
 `;
 
-const StyledHeroRight = styled.div`
-  background-image: url("/images/templates/office-for-android/hero/hero_laptop.webp");
+const StyledHeroRight = styled.div<{
+  $backgroundUrl: string;
+  $backgroundUrl2x: string;
+}>`
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
   width: 840px;
@@ -180,6 +190,10 @@ const StyledHeroRight = styled.div`
   position: absolute;
   top: -160px;
   left: 50%;
+
+  @media ${device.retina} {
+    background-image: ${(props) => `url(${props.$backgroundUrl2x})`};
+  }
 
   @media ${device.tabletS} {
     position: static;
@@ -189,17 +203,24 @@ const StyledHeroRight = styled.div`
   }
 `;
 
-const StyledHeroPhoneImgMob = styled.div`
+const StyledHeroPhoneImgMob = styled.div<{
+  $backgroundUrl: string;
+  $backgroundUrl2x: string;
+}>`
   display: none;
   width: 90vw;
   height: 83vw;
-  background-image: url("/images/templates/office-for-android/hero/hero_phone.webp");
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
   z-index: 1;
   margin: -40px auto 0;
   pointer-events: none;
+
+  @media ${device.retina} {
+    background-image: ${(props) => `url(${props.$backgroundUrl2x})`};
+  }
 
   @media ${device.tabletS} {
     display: block;

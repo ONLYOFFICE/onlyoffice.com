@@ -4,6 +4,12 @@
 
   "OnlyOfficeDocuments": "ONLYOFFICE 文档，安卓版<0>免费办公应用</0>",
 
+  "HeroRightImageUrl": "/images/templates/office-for-android/hero/zh/header.zh.png",
+  "HeroRightImageUrl2x": "/images/templates/office-for-android/hero/zh/header.zh@2x.png",
+
+  "HeroLeftImageUrl": "/images/templates/office-for-android/hero/zh/header-phone.zh.png",
+  "HeroLeftImageUrl2x": "/images/templates/office-for-android/hero/zh/header-phone.zh@2x.png",
+
   "OneAppForYourText": "一款应用，满足您对文本文档、电子表格、演示文稿、表单和媒体文件的所有需求",
   "CompatibleWithMSOffice": "100% 兼容 MS Office 格式",
 

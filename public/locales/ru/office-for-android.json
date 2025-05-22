@@ -4,6 +4,12 @@
 
   "OnlyOfficeDocuments": "ONLYOFFICE Documents, <0>бесплатное офисное приложение</0> для Android",
 
+  "HeroRightImageUrl": "/images/templates/office-for-android/hero/ru/header.ru.png",
+  "HeroRightImageUrl2x": "/images/templates/office-for-android/hero/ru/header.ru@2x.png",
+
+  "HeroLeftImageUrl": "/images/templates/office-for-android/hero/ru/header-phone.ru.png",
+  "HeroLeftImageUrl2x": "/images/templates/office-for-android/hero/ru/header-phone.ru@2x.png",
+
   "OneAppForYourText": "Одно приложение для ваших текстовых документов, электронных таблиц, презентаций, форм и медиафайлов",
   "CompatibleWithMSOffice": "100% совместимость с форматами MS Office",
 
