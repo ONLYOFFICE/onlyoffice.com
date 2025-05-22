@@ -12,13 +12,20 @@ const StyledGetMoreText = styled(Text)`
   margin: 0 auto 44px;
 `;
 
-const StyledGetMoreImage = styled.div`
+const StyledGetMoreImage = styled.div<{
+  $backgroundUrl: string;
+  $backgroundUrl2x: string;
+}>`
   width: 994px;
   aspect-ratio: 1.64;
-  background-image: url("/images/templates/office-for-ios/getMore/image.webp");
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
+
+  @media ${device.retina} {
+    background-image: ${(props) => `url(${props.$backgroundUrl2x})`};
+  }
 
   @media ${device.desktop} {
     width: 90vw;

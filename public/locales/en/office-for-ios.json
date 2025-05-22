@@ -77,6 +77,8 @@
 
   "GetMoreWithComplete": "Get more with complete mobile web version",
   "WorkOnDocumentsWithin": "Work on documents within your mobile browser. Go to your ONLYOFFICE web portal and get access to more instruments for document editing and collaboration.",
+  "GetMoreImage": "/images/templates/office-for-ios/getMore/webversion.png",
+  "GetMoreImage2x": "/images/templates/office-for-ios/getMore/webversion@2x.png",
 
   "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for iOS",
 

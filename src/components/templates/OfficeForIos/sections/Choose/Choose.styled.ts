@@ -50,12 +50,14 @@ const StyledChooseList = styled.div`
   }
 `;
 
-const StyledChooseButton = styled(Button)`
+const StyledChooseButton = styled(Button)<{
+  $backgroundUrl: string;
+}>`
   display: block;
   width: 170px;
   height: 58px;
   margin: 0 auto;
-  background-image: url("/images/templates/office-for-ios/hero/app-store_btn.svg");
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;

@@ -39,6 +39,7 @@ const Choose = () => {
           ))}
         </StyledChooseList>
         <StyledChooseButton
+          $backgroundUrl={t("HeroButtonBackgroundUrl")}
           as={"a"}
           target="_blank"
           href="https://itunes.apple.com/us/app/onlyoffice-documents/id944896972"
