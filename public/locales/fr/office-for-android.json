@@ -22,18 +22,38 @@
 
   "FeaturesItemHeadingFull": "Traitement de texte complet",
   "FeaturesItemTextMakeUse": "Utilisez de multiples outils de traitement de texte : mise en forme de page, de paragraphe et de texte, tableaux, formes automatiques, graphiques, etc. Créez des documents texte de toute taille et complexité. Imprimez-les via AirPrint.",
+  "FeaturesItemTablet1Bg": "/images/templates/office-for-android/features/fr/img-tablet-1.png",
+  "FeaturesItemTablet1Bg2x": "/images/templates/office-for-android/features/fr/img-tablet2x-1.png",
+  "FeaturesItemMobile1Bg": "/images/templates/office-for-android/features/fr/img-mobile-1.png",
+  "FeaturesItemMobile1Bg2x": "/images/templates/office-for-android/features/fr/img-mobile2x-1.png",
 
   "FeaturesItemHeadingComplete": "Éditeur de feuilles de calcul complet",
   "FeaturesItemTextManage": "Gérez les données de vos feuilles de calcul : travaillez avec les lignes et les colonnes, ajustez les paramètres des cellules, utilisez plus de 450 formules, triez et filtrez les données.",
+  "FeaturesItemTablet2Bg": "/images/templates/office-for-android/features/fr/img-tablet-2.png",
+  "FeaturesItemTablet2Bg2x": "/images/templates/office-for-android/features/fr/img-tablet2x-2.png",
+  "FeaturesItemMobile2Bg": "/images/templates/office-for-android/features/fr/img-mobile-2.png",
+  "FeaturesItemMobile2Bg2x": "/images/templates/office-for-android/features/fr/img-mobile2x-2.png",
 
   "FeaturesItemHeadingCollaborative": "Éditeur de présentations collaboratif",
   "FeaturesItemTextMakeWork": "Travaillez avec tous les objets courants sur vos diapositives : insérez des images, ajoutez et modifiez des formes automatiques, des diagrammes et des graphiques, des textes et d'autres éléments.",
+  "FeaturesItemTablet3Bg": "/images/templates/office-for-android/features/fr/img-tablet-3.png",
+  "FeaturesItemTablet3Bg2x": "/images/templates/office-for-android/features/fr/img-tablet2x-3.png",
+  "FeaturesItemMobile3Bg": "/images/templates/office-for-android/features/fr/img-mobile-3.png",
+  "FeaturesItemMobile3Bg2x": "/images/templates/office-for-android/features/fr/img-mobile2x-3.png",
 
   "FeaturesItemHeadingOnline": "Remplissage de formulaires en ligne",
   "FeaturesItemTextMakeView": "Visualisez et remplissez des formulaires. Naviguez facilement d'un champ à l'autre. Enregistrez le résultat en tant que fichier PDF ou DOCX.",
+  "FeaturesItemTablet4Bg": "/images/templates/office-for-android/features/fr/img-tablet-4.png",
+  "FeaturesItemTablet4Bg2x": "/images/templates/office-for-android/features/fr/img-tablet2x-4.png",
+  "FeaturesItemMobile4Bg": "/images/templates/office-for-android/features/fr/img-mobile-4.png",
+  "FeaturesItemMobile4Bg2x": "/images/templates/office-for-android/features/fr/img-mobile2x-4.png",
 
   "FeaturesItemHeadingPDF": "Visionneuse PDF et lecteur multimédia",
   "FeaturesItemTextMakeViewPDF": "Visualisez des documents PDF et des images, lisez des fichiers audio et vidéo. Ouvrez les fichiers .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
+  "FeaturesItemTablet5Bg": "/images/templates/office-for-android/features/fr/img-tablet-5.png",
+  "FeaturesItemTablet5Bg2x": "/images/templates/office-for-android/features/fr/img-tablet2x-5.png",
+  "FeaturesItemMobile5Bg": "/images/templates/office-for-android/features/fr/img-mobile-5.png",
+  "FeaturesItemMobile5Bg2x": "/images/templates/office-for-android/features/fr/img-mobile2x-5.png",
 
   "RealTimeCollaboration": "Collaboration en temps réel",
   "BeMoreProductive": "Soyez plus productif. Connectez votre application au cloud ONLYOFFICE. Partagez des documents pour les coéditer avec vos coéquipiers en temps réel. Commentez et suivez les modifications. Ajoutez des annotations graphiques.",

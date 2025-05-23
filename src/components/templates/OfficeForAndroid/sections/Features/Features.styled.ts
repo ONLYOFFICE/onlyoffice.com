@@ -47,7 +47,8 @@ const StyledFeaturesAsideTablet = styled.div`
 `;
 
 const StyledFeaturesAsideTabletImg = styled.div<{
-  $bgUrlTablet: IFeaturesItem["bgUrlTablet"];
+  $bgUrlTablet: IFeaturesItem["image"]["tablet"]["url"];
+  $bgUrlTablet2x: IFeaturesItem["image"]["tablet"]["url2x"];
   $zIndex: IFeaturesItem["zIndex"];
 }>`
   background-image: ${(props) => `url(${props.$bgUrlTablet})`};
@@ -60,6 +61,10 @@ const StyledFeaturesAsideTabletImg = styled.div<{
   left: 44.5%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
+
+  @media ${device.retina} {
+    background-image: ${(props) => `url(${props.$bgUrlTablet2x})`};
+  }
 
   @media ${device.tablet} {
     width: 100%;
@@ -90,7 +95,8 @@ const StyledFeaturesAsideMobile = styled.div`
 `;
 
 const StyledFeaturesAsideMobileImg = styled.div<{
-  $bgUrlMobile: IFeaturesItem["bgUrlMobile"];
+  $bgUrlMobile: IFeaturesItem["image"]["mobile"]["url"];
+  $bgUrlMobile2x: IFeaturesItem["image"]["mobile"]["url2x"];
   $zIndex: IFeaturesItem["zIndex"];
 }>`
   background-image: ${(props) => `url(${props.$bgUrlMobile})`};
@@ -103,6 +109,10 @@ const StyledFeaturesAsideMobileImg = styled.div<{
   left: 41%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
+
+  @media ${device.retina} {
+    background-image: ${(props) => `url(${props.$bgUrlMobile2x})`};
+  }
 
   @media ${device.tablet} {
     width: 100%;
