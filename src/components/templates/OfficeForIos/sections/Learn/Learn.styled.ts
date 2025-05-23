@@ -26,33 +26,15 @@ const StyledLearnList = styled.div`
     padding: 24px 16px 16px;
   }
 
-  & > a > div:last-child > div h4 {
-    padding: 20px 32px 16px;
-    font-size: 18px;
-
-    @media ${device.mobile} {
-      padding: 24px 16px 12px;
-      font-size: 16px;
+  .blog-card {
+    @media ${device.tablet} {
+      max-width: 352px;
+      min-width: 352px;
     }
-  }
-
-  & > a > div:last-child > div p {
-    padding: 0 32px 16px;
-    font-size: 14px;
 
     @media ${device.mobile} {
-      padding: 0 16px 12px;
-      font-size: 13px;
-    }
-  }
-
-  & > a > div:last-child > p {
-    margin: 0 auto 32px 32px;
-    font-size: 14px;
-
-    @media ${device.mobile} {
-      margin: 0 auto 24px 16px;
-      font-size: 13px;
+      max-width: 272px;
+      min-width: 272px;
     }
   }
 `;

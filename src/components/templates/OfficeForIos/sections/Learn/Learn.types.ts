@@ -1,9 +1,8 @@
 interface ILearnItem {
-  href: string;
   image: string;
   title: string;
   text: string;
-  subtitle: string;
+  links?: { href: string; label: string; isExternal?: boolean }[];
 }
 
 export type { ILearnItem };
