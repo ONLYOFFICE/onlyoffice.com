@@ -11,6 +11,9 @@
   "EliesGuzman": "Elies Guzmán",
   "Malavida": "Malavida",
 
+  "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.pt.png",
+  "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-pt.svg",
+
   "FeaturesItemHeadingFull": "Processador de texto com todos os recursos",
   "FeaturesItemTextMakeUse": "Utilize múltiplas ferramentas de processamento de texto: formatação de página, parágrafo e texto, tabelas, autoformas, gráficos, etc. Crie documentos de texto de qualquer tamanho e complexidade. Imprima-os via AirPrint.",
 

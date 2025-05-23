@@ -85,7 +85,9 @@ const StyledHeroLeftHeading = styled(Heading)`
   }
 `;
 
-const StyledHeroLeftButtonsWrapper = styled.div`
+const StyledHeroLeftButtonsWrapper = styled.div<{
+  $isZhLocale: boolean;
+}>`
   display: flex;
   align-items: center;
   gap: 9px;
@@ -94,26 +96,37 @@ const StyledHeroLeftButtonsWrapper = styled.div`
   @media ${device.tabletS} {
     justify-content: center;
   }
+
+  @media ${device.mobile} {
+    flex-direction: ${(props) => (props.$isZhLocale ? "column" : "row")};
+  }
 `;
 
-const StyledHeroLeftButtonGoogle = styled(Button)`
+const StyledHeroLeftButtonGoogle = styled(Button)<{
+  $backgroundUrl: string;
+  $isZhLocale: boolean;
+}>`
   display: block;
-  width: 170px;
-  height: 58px;
-  background-image: url("/images/templates/office-for-android/hero/google-play_btn.webp");
+  width: ${(props) => (props.$isZhLocale ? "170px" : "188px")};
+  height: ${(props) => (props.$isZhLocale ? "58px" : "80px")};
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   position: relative;
   z-index: 2;
 `;
 
-const StyledHeroLeftButtonAppGallery = styled(Button)`
+const StyledHeroLeftButtonAppGallery = styled(Button)<{
+  $backgroundUrl: string;
+}>`
   display: block;
   width: 170px;
   height: 58px;
-  background-image: url("/images/templates/office-for-android/hero/app-gallery_btn.svg");
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   position: relative;
   z-index: 2;
 `;

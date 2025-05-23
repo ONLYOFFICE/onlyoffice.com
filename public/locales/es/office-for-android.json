@@ -7,6 +7,9 @@
   "OneAppForYourText": "Una aplicación para tus documentos de texto, hojas de cálculo, presentaciones, formularios y archivos multimedia",
   "CompatibleWithMSOffice": "100% compatible con los formatos de MS Office",
 
+  "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.es.png",
+  "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-es.svg",
+
   "AnOptionToConsider": "Una opción a considerar si buscas alternativas a Office o Google Docs.",
   "EliesGuzman": "Elies Guzmán",
   "Malavida": "Malavida",

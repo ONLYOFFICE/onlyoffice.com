@@ -11,6 +11,9 @@
   "EliesGuzman": "エリエス・グスマン",
   "Malavida": "Malavida",
 
+  "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.ja.png",
+  "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-ja.svg",
+
   "FeaturesItemHeadingFull": "多機能テキストプロセッサ",
   "FeaturesItemTextMakeUse": "ページ、段落、テキストの書式設定、表、オートシェイプ、グラフなど、複数のテキスト処理ツールを活用。あらゆるサイズと複雑さのテキスト文書を作成し、AirPrint経由で印刷。",
 

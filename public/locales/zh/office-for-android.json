@@ -10,6 +10,9 @@
   "HeroLeftImageUrl": "/images/templates/office-for-android/hero/zh/header-phone.zh.png",
   "HeroLeftImageUrl2x": "/images/templates/office-for-android/hero/zh/header-phone.zh@2x.png",
 
+  "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.zh.svg",
+  "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-zh.svg",
+
   "OneAppForYourText": "一款应用，满足您对文本文档、电子表格、演示文稿、表单和媒体文件的所有需求",
   "CompatibleWithMSOffice": "100% 兼容 MS Office 格式",
 
