@@ -79,6 +79,9 @@
   "GetMoreWithComplete": "Get more with complete mobile web version",
   "WorkOnDocumentsWithin": "Work on documents within your mobile browser. Go to your ONLYOFFICE web portal and get access to more instruments for document editing and collaboration. Easily switch from mobile view and edit documents in desktop mode.",
 
+  "GetMoreImage": "/images/templates/office-for-android/getMore/webversion.png",
+  "GetMoreImage2x": "/images/templates/office-for-android/getMore/webversion@2x.png",
+
   "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for Android",
 
   "LearnCardTitleRelease": "Release notes",

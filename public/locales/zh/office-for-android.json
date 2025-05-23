@@ -79,6 +79,9 @@
   "GetMoreWithComplete": "通过完整的移动网页版获取更多功能",
   "WorkOnDocumentsWithin": "在您的移动浏览器中处理文档。前往您的 ONLYOFFICE 门户网站，获取更多用于文档编辑和协作的工具。轻松从移动视图切换并在桌面模式下编辑文档。",
 
+  "GetMoreImage": "/images/templates/office-for-android/getMore/webversion.zh.png",
+  "GetMoreImage2x": "/images/templates/office-for-android/getMore/webversion.zh@2x.png",
+
   "LearnMoreHeading": "了解更多关于安卓版 ONLYOFFICE 文档的信息",
 
   "LearnCardTitleRelease": "发行说明",

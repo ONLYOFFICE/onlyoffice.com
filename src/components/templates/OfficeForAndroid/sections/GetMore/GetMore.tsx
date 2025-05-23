@@ -24,7 +24,7 @@ const GetMore = () => {
           textAlign="center"
           size={1}
         />
-        <StyledGetMoreImage />
+        <StyledGetMoreImage $backgroundUrl={t("GetMoreImage")} $backgroundUrl2x={t("GetMoreImage2x")} />
       </Container>
     </Section>
   );

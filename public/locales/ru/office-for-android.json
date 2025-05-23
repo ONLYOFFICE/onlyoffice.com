@@ -79,6 +79,9 @@
   "GetMoreWithComplete": "Получите больше с полной мобильной веб-версией",
   "WorkOnDocumentsWithin": "Работайте с документами в мобильном браузере. Перейдите на свой веб-портал ONLYOFFICE и получите доступ к большему количеству инструментов для редактирования документов и совместной работы. Легко переключайтесь с мобильного вида и редактируйте документы в десктопном режиме.",
 
+  "GetMoreImage": "/images/templates/office-for-android/getMore/webversion.ru.png",
+  "GetMoreImage2x": "/images/templates/office-for-android/getMore/webversion.ru@2x.png",
+
   "LearnMoreHeading": "Узнайте больше о ONLYOFFICE Documents для Android",
 
   "LearnCardTitleRelease": "Примечания к выпуску",
