@@ -50,29 +50,40 @@ const StyledChooseList = styled.div`
   }
 `;
 
-const StyledChooseButtonsWrapper = styled.div`
+const StyledChooseButtonsWrapper = styled.div<{
+  $isZhLocale: boolean;
+}>`
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 9px;
+
+  @media ${device.mobile} {
+    flex-direction: ${(props) => (props.$isZhLocale ? "column" : "row")};
+  }
 `;
 
-const StyledChooseButtonGoogle = styled(Button)`
+const StyledChooseButtonGoogle = styled(Button)<{
+  $backgroundUrl: string;
+  $isZhLocale: boolean;
+}>`
   display: block;
-  width: 170px;
-  height: 58px;
-  background-image: url("/images/templates/office-for-android/hero/google-play_btn.webp");
+  width: ${(props) => (props.$isZhLocale ? "170px" : "188px")};
+  height: ${(props) => (props.$isZhLocale ? "58px" : "80px")};
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
   z-index: 2;
 `;
 
-const StyledChooseButtonAppGallery = styled(Button)`
+const StyledChooseButtonAppGallery = styled(Button)<{
+  $backgroundUrl: string;
+}>`
   display: block;
   width: 170px;
   height: 58px;
-  background-image: url("/images/templates/office-for-android/hero/app-gallery_btn.svg");
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;

@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -15,6 +16,7 @@ import {
 } from "./Choose.styled";
 
 const Choose = () => {
+  const { locale } = useRouter();
   const { t } = useTranslation("office-for-android");
 
   return (
@@ -40,17 +42,28 @@ const Choose = () => {
             />
           ))}
         </StyledChooseList>
-        <StyledChooseButtonsWrapper>
+        <StyledChooseButtonsWrapper $isZhLocale={locale === "zh"}>
               <StyledChooseButtonGoogle
+                $backgroundUrl={t("ButtonGoogleUrl")}
+                $isZhLocale={locale === "zh"}
                 as={"a"}
                 target="_blank"
-                href="https://play.google.com/store/apps/details?id=com.onlyoffice.documents"
+                href={locale === "zh" ? "/zh/download-desktop#mobile" : "https://play.google.com/store/apps/details?id=com.onlyoffice.documents"}
               />
               <StyledChooseButtonAppGallery
+                $backgroundUrl={t("ButtonAppGalleryUrl")}
                 as={"a"}
                 target="_blank"
                 href="https://appgallery.huawei.com/#/app/C102942717"
               />
+              {locale === "zh" && (
+                <StyledChooseButtonAppGallery
+                  $backgroundUrl="/images/templates/office-for-android/buttons/black-apk.svg"
+                  as={"a"}
+                  target="_blank"
+                  href="https://download.onlyoffice.com/install/mobile/android/onlyoffice-documents.apk"
+                />
+              )}
             </StyledChooseButtonsWrapper>
         <StyledChooseSubtitle textAlign="center" size={3} color="#fff">
           <Trans
