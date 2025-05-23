@@ -39,8 +39,8 @@ const StyledFeaturesAsideTablet = styled.div`
   z-index: 10;
 
   @media ${device.tablet} {
-    width: 106.44vw;
-    height: 81.05vw;
+    width: 100vw;
+    height: 80vw;
   }
 `;
 
@@ -88,7 +88,7 @@ const StyledFeaturesAsideMobile = styled.div`
     width: 48vw;
     height: 62vw;
     top: 12vw;
-    right: -13vw;
+    right: -9vw;
   }
 `;
 

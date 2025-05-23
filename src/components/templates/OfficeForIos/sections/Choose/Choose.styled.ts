@@ -1,8 +1,21 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
+
+const StyledChooseSection = styled(Section)`
+  background-color: #333333;
+
+  @media ${device.tabletS} {
+    background: linear-gradient(0deg, #333333, #333333), linear-gradient(101.84deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 72.13%);
+  }
+
+  @media ${device.mobile} {
+    background-color: #333333;
+  }
+`
 
 const StyledChooseHeading = styled(Heading)`
   @media ${device.mobile} {
@@ -16,7 +29,7 @@ const StyledChooseList = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 60px 0;
-  gap: 30px;
+  gap: 32px;
 
   @media ${device.tablet} {
     grid-template-columns: repeat(2, 1fr);
@@ -73,6 +86,7 @@ const StyledChooseSubtitle = styled(Text)`
 `;
 
 export {
+  StyledChooseSection,
   StyledChooseHeading,
   StyledChooseList,
   StyledChooseButton,

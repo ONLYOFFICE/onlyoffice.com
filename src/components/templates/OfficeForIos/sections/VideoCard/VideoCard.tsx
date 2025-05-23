@@ -7,7 +7,7 @@ const VideoCard = () => {
   const { t } = useTranslation("office-for-ios");
 
   return (
-    <Section>
+    <Section background="#F2F2F2">
       <Container>
         <WatchVideo
           videoUrl="https://www.youtube.com/embed/0ZLg4PGRxOc"

@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <StyledHeroSection
       background="#fafafa"
-      desktopSpacing={["112px", "0"]}
+      desktopSpacing={["72px", "0"]}
       tabletSpacing={["88px", "0"]}
       tabletSmallSpacing={["80px", "0"]}
       mobileSpacing={["48px", "0"]}

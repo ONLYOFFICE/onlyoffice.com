@@ -53,7 +53,7 @@ const StyledHeroLeftHeading = styled(Heading)`
   @media ${device.tabletS} {
     text-align: center;
     margin-top: 0;
-    font-size: 40px;
+    font-size: 36px;
     line-height: 133%;
   }
 
@@ -75,8 +75,9 @@ const StyledHeroLeftHeading = styled(Heading)`
     background-size: contain;
 
     @media ${device.tabletS} {
-      left: 0;
-      top: 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 `;

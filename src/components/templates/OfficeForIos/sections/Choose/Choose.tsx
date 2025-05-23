@@ -1,10 +1,10 @@
-import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
 import { items } from "./data/items";
 
 import {
+  StyledChooseSection,
   StyledChooseButton,
   StyledChooseHeading,
   StyledChooseList,
@@ -16,8 +16,8 @@ const Choose = () => {
   const { t } = useTranslation("office-for-ios");
 
   return (
-    <Section background="linear-gradient(to right, #212121 0%, #333 100%);">
-      <Container tabletSpacing="16px">
+    <StyledChooseSection>
+      <Container>
         <StyledChooseHeading
           level={2}
           size={3}
@@ -52,7 +52,7 @@ const Choose = () => {
           />
         </StyledChooseSubtitle>
       </Container>
-    </Section>
+    </StyledChooseSection>
   );
 };
 
