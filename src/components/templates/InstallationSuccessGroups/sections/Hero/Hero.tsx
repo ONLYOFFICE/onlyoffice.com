@@ -1,34 +1,35 @@
-import { Trans, useTranslation } from "next-i18next";
-import { Text } from "@src/components/ui/Text";
+import { useTranslation } from "next-i18next";
 import {
+  StyledHero,
+  StyledHeroImage,
   StyledButtonsArea,
-  StyledInstallationSuccessWorkspaceHero,
-  StyledInstallationSuccessWorkspaceHeroImage,
   StyledUpgradeArea,
   StyledUpgradeAreaRight,
   StyledUpgradeList,
   StyledUpgradeListItem,
-  StyledHeading,
   StyledUpgradeAreaImage,
   StyledCouponHeading,
+  StyledHeading,
 } from "./Hero.styled";
-import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
 import { Container } from "@src/components/ui/Container";
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
+import { Trans } from "next-i18next";
 import { items } from "./data/items";
 
 const Hero = () => {
-  const { t } = useTranslation("installation-success-workspace");
+  const { t } = useTranslation("installation-success-groups");
 
   return (
-    <StyledInstallationSuccessWorkspaceHero
+    <StyledHero
       desktopSpacing={["158px", "111px"]}
       tabletSpacing={["158px", "111px"]}
       tabletSmallSpacing={["120px", "40px"]}
       mobileSpacing={["96px", "20px"]}
     >
       <Container>
-        <StyledInstallationSuccessWorkspaceHeroImage />
+        <StyledHeroImage />
         <StyledHeading level={1}>{t("Header")}</StyledHeading>
         <StyledUpgradeArea>
           <StyledUpgradeAreaImage />
@@ -76,7 +77,7 @@ const Hero = () => {
           </StyledUpgradeAreaRight>
         </StyledUpgradeArea>
       </Container>
-    </StyledInstallationSuccessWorkspaceHero>
+    </StyledHero>
   );
 };
 
