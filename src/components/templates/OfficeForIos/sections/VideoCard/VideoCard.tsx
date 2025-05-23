@@ -11,7 +11,7 @@ const VideoCard = () => {
       <Container>
         <WatchVideo
           videoUrl="https://www.youtube.com/embed/0ZLg4PGRxOc"
-          videoImgUrl="/images/templates/office-for-ios/videoCard/video_bg.webp"
+          videoImgUrl="/images/templates/office-for-ios/videoCard/video_bg.png"
           heading={t("VideoCardHeading")}
         />
       </Container>
