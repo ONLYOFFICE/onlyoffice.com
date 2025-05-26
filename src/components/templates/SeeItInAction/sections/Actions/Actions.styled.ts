@@ -7,10 +7,6 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledActionsSection = styled(Section)`
   border-bottom: 1px solid #C4C4C4;
-
-  & ~ section:last-of-type {
-    background: linear-gradient(180deg, #F8F9F9 43.75%, rgba(248, 249, 249, 0) 100%), #FFFFFF;
-  }
 `
 
 const StyledActionsContainer = styled(Container)`
