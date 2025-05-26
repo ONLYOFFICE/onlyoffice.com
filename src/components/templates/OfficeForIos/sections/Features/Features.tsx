@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
-import { useFeaturesAnimation } from "./lib/featuresAnimation";
+import { useFeaturesAnimation } from "@src/utils/useFeaturesAnimation";
 import { items } from "./data/items";
 
 import {
