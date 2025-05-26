@@ -1,14 +1,29 @@
-import { Section } from "@src/components/ui/Section";
+import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
+
+import { StyledHeroButtonsWrapper, StyledHeroHeading, StyledHeroSection } from "./Hero.styled";
+import { Button } from "@src/components/ui/Button";
 
 const Hero = () => {
+  const { t } = useTranslation("customers");
+
   return (
-    <Section>
+    <StyledHeroSection background="#F5F5F5">
       <Container>
-        <Heading label="Hero Customers" size={1} level={1} />
+        <StyledHeroHeading size={2} level={1} textAlign="center">
+          <Trans key={0} t={t} i18nKey={"HeroHeading"} components={[
+              <Text as="span" color="main" key={0} />
+            ]}
+          />
+        </StyledHeroHeading>
+        <StyledHeroButtonsWrapper>
+          <Button label="Tell your story" />
+          <Text as={"span"} label="or" size={3} />
+          <Button label="Start your story here" variant="tertiary" />
+        </StyledHeroButtonsWrapper>
       </Container>
-    </Section>
+    </StyledHeroSection>
   );
 };
 
