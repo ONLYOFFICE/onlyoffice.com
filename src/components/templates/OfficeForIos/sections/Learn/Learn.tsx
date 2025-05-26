@@ -29,9 +29,8 @@ const Learn = () => {
             heading={{ label: t(item.title) }}
             text={t(item.text ?? "")}
             links={item.links?.map((item) => ({
-              href: t(item.href),
+              href: item.href,
               label: t(item.label),
-              isExternal: item.isExternal,
             }))}
           />
         ))}

@@ -24,7 +24,7 @@ const StyledHeroContainer = styled(Container)`
   padding-top: 50px;
 
   @media ${device.mobile} {
-    padding-top: 68px;
+    padding-top: 48px;
   }
 `;
 
@@ -79,6 +79,12 @@ const StyledHeroLeftHeading = styled(Heading)`
       top: 50%;
       transform: translate(-50%, -50%);
     }
+
+    @media ${device.mobileS} {
+      left: 0;
+      top: 50%;
+      transform: translate(-40%, -50%);
+    }
   }
 `;
 
@@ -98,6 +104,10 @@ const StyledHeroLeftButton = styled(Button)<{
   @media ${device.tabletS} {
     margin: 40px auto 0;
   }
+
+  @media ${device.mobileS} {
+    margin: 32px auto 0;
+  }
 `;
 
 const StyledHeroLeftText = styled(Text)`
@@ -105,11 +115,15 @@ const StyledHeroLeftText = styled(Text)`
 
   @media ${device.tabletS} {
     text-align: center;
-    margin-bottom: 40px;
+    margin: 48px 0;
   }
 
   @media ${device.mobile} {
     font-size: 12px;
+  }
+
+  @media ${device.mobileS} {
+    margin: 32px 0 40px;
   }
 `;
 
@@ -285,6 +299,10 @@ const StyledHeroFooterHeading = styled(Heading)`
   @media ${device.mobile} {
     font-size: 24px;
   }
+
+  @media ${device.mobileS} {
+    margin-top: 48px;
+  }
 `;
 
 const StyledHeroFooterText = styled(Text)`
@@ -292,6 +310,10 @@ const StyledHeroFooterText = styled(Text)`
 
   @media ${device.mobile} {
     font-size: 14px;
+  }
+
+  @media ${device.mobileS} {
+    margin-top: 16px;
   }
 `;
 

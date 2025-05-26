@@ -41,6 +41,7 @@ const StyledCollabHeading = styled(Heading)`
 
   @media ${device.tabletS} {
     font-size: 32px;
+    margin-bottom: 16px;
   }
 
   @media ${device.mobile} {
@@ -55,6 +56,10 @@ const StyledCollabText = styled(Text)`
     width: auto;
     text-align: center;
     max-width: 600px;
+  }
+
+  @media ${device.tabletS} {
+    margin-bottom: 56px;
   }
 
   @media ${device.mobileS} {

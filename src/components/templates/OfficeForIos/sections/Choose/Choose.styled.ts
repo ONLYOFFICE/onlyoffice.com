@@ -20,15 +20,21 @@ const StyledChooseSection = styled(Section)`
 const StyledChooseHeading = styled(Heading)`
   @media ${device.mobile} {
     font-size: 24px;
-    font-weight: 400;
     line-height: 1.5em;
+  }
+
+  @media ${device.mobileS} {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 133%;
+    letter-spacing: -2%;
   }
 `;
 
 const StyledChooseList = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 60px 0;
+  margin: 60px 0 32px;
   gap: 32px;
 
   @media ${device.tablet} {
@@ -42,6 +48,11 @@ const StyledChooseList = styled.div`
     grid-template-rows: repeat(4, 1fr);
   }
 
+  @media ${device.mobileS} {
+    gap: 24px;
+    margin: 24px 0 40px;
+  }
+
   & > div {
     text-align: left;
     justify-items: flex-start;
@@ -52,7 +63,8 @@ const StyledChooseList = styled.div`
 
     & > div:first-child {
       @media ${device.mobile} {
-        transform: scale(0.75);
+        width: 48px;
+        height: 36px;
       }
     }
 
@@ -78,10 +90,14 @@ const StyledChooseButton = styled(Button)<{
 `;
 
 const StyledChooseSubtitle = styled(Text)`
-  margin-top: 30px;
+  margin-top: 32px;
 
   @media ${device.mobile} {
     font-size: 12px;
+  }
+
+  @media ${device.mobileS} {
+   margin-top: 16px;
   }
 `;
 

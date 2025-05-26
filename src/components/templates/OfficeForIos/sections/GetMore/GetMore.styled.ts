@@ -5,11 +5,19 @@ import { Text } from "@src/components/ui/Text";
 
 const StyledGetMoreHeading = styled(Heading)`
   margin-bottom: 20px;
+
+  @media ${device.tabletS} {
+    margin-bottom: 16px;
+  }
 `;
 
 const StyledGetMoreText = styled(Text)`
   max-width: 830px;
   margin: 0 auto 44px;
+
+  @media ${device.tabletS} {
+    margin-bottom: 32px;
+  }
 `;
 
 const StyledGetMoreImage = styled.div<{
