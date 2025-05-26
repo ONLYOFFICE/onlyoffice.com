@@ -7,6 +7,10 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledActionsSection = styled(Section)`
   border-bottom: 1px solid #C4C4C4;
+
+  & ~ section:last-of-type {
+    background: linear-gradient(180deg, #F8F9F9 43.75%, rgba(248, 249, 249, 0) 100%), #FFFFFF;
+  }
 `
 
 const StyledActionsContainer = styled(Container)`
@@ -61,7 +65,7 @@ const StyledActionsTabButton = styled(Button)<{
   box-shadow: ${(props) => (props.$isActive ? "0px 7px 15px 0px rgba(85, 85, 85, 0.1)" : "none")};
 
   &:hover {
-    background-color: #ebebeb;
+    background-color: ${(props) => (props.$isActive ? "#fff" : "#ebebeb")};
   }
 `;
 
