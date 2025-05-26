@@ -300,6 +300,11 @@ const StyledHeroFooterImg = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+
+    @media ${device.mobileS} {
+      width: 137px;
+      height: 112px;
+    }
   }
 
   &::after {
@@ -322,11 +327,12 @@ const StyledHeroFooterHeading = styled(Heading)`
   z-index: 3;
 
   @media ${device.tabletS} {
-    font-size: 32px;
+    font-size: 18px;
+    line-height: 133%;
   }
 
   @media ${device.mobile} {
-    font-size: 24px;
+    font-size: 16px;
   }
 `;
 
@@ -340,18 +346,14 @@ const StyledHeroFooterLink = styled(Link)`
   z-index: 3;
   margin: 20px auto 0;
 
-  @media ${device.mobile} {
-    font-size: 14px;
+  @media ${device.mobileS} {
+    margin-top: 16px;
   }
 `;
 
 const StyledHeroFooterText = styled(Text)`
   position: relative;
   z-index: 3;
-
-  @media ${device.mobile} {
-    font-size: 14px;
-  }
 `;
 
 export {

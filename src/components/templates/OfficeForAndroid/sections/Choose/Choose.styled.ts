@@ -7,7 +7,6 @@ import { Text } from "@src/components/ui/Text";
 const StyledChooseHeading = styled(Heading)`
   @media ${device.mobile} {
     font-size: 24px;
-    font-weight: 400;
     line-height: 1.5em;
   }
 `;
@@ -16,17 +15,21 @@ const StyledChooseList = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 60px 0;
-  gap: 30px;
+  gap: 32px;
 
   @media ${device.tabletS} {
+    margin: 40px 0;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 
   @media ${device.mobile} {
-    margin: 24px 0 60px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+
+  @media ${device.mobileS} {
+    gap: 24px;
   }
 
   & > div {
@@ -39,7 +42,8 @@ const StyledChooseList = styled.div`
 
     & > div:first-child {
       @media ${device.mobile} {
-        transform: scale(0.75);
+        width: 48px;
+        height: 36px;
       }
     }
 
@@ -91,8 +95,6 @@ const StyledChooseButtonAppGallery = styled(Button)<{
 `;
 
 const StyledChooseSubtitle = styled(Text)`
-  margin-top: 30px;
-
   @media ${device.mobile} {
     font-size: 12px;
   }

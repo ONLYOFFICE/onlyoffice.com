@@ -16,7 +16,7 @@ const StyledGetMoreImage = styled.div<{
   $backgroundUrl: string;
   $backgroundUrl2x: string;
 }>`
-  width: 994px;
+  width: 1135px;
   aspect-ratio: 1.43;
   background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-size: contain;

@@ -12,8 +12,8 @@ const StyledFeaturesWrapper = styled.div`
 `;
 
 const StyledFeaturesAside = styled.aside`
-  width: 60.77vw;
-  height: 50.83vw;
+  width: 978px;
+  height: 854px;
   box-sizing: content-box;
   position: sticky;
   top: 36px;
@@ -54,11 +54,11 @@ const StyledFeaturesAsideTabletImg = styled.div<{
   background-image: ${(props) => `url(${props.$bgUrlTablet})`};
   background-repeat: no-repeat;
   background-size: contain;
-  width: 35.41vw;
-  height: 26.56vw;
+  width: 58%;
+  height: 52%;
   position: absolute;
-  top: 48%;
-  left: 44.5%;
+  top: 48.5%;
+  left: 45.5%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
 
@@ -102,11 +102,11 @@ const StyledFeaturesAsideMobileImg = styled.div<{
   background-image: ${(props) => `url(${props.$bgUrlMobile})`};
   background-repeat: no-repeat;
   background-size: contain;
-  width: 12.46vw;
-  height: 25vw;
+  width: 58%;
+  height: 79%;
   position: absolute;
   top: 47%;
-  left: 41%;
+  left: 43%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
 
@@ -125,7 +125,7 @@ const StyledFeaturesAsideMobileImg = styled.div<{
 
 const StyledFeaturesContentList = styled.div`
   & > div {
-    height: 100vh;
+    height: 80vh;
     align-content: center;
     justify-items: flex-start;
     text-align: left;
