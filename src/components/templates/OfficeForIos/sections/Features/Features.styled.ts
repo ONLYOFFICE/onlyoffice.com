@@ -12,8 +12,8 @@ const StyledFeaturesWrapper = styled.div`
 `;
 
 const StyledFeaturesAside = styled.aside`
-  width: 56.77vw;
-  height: 40.83vw;
+  width: 978px;
+  height: 685px;
   box-sizing: content-box;
   position: sticky;
   top: calc(10vh + 36px);
@@ -31,7 +31,7 @@ const StyledFeaturesAsideTablet = styled.div`
   background-image: url("/images/templates/office-for-ios/features/tablet.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  width: 92%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -52,11 +52,11 @@ const StyledFeaturesAsideTabletImg = styled.div<{
   background-image: ${(props) => `url(${props.$bgUrlTablet})`};
   background-repeat: no-repeat;
   background-size: contain;
-  width: 35.41vw;
-  height: 26.56vw;
+  width: 70%;
+  height: 65%;
   position: absolute;
   top: 48%;
-  left: 45%;
+  left: 49%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
 
@@ -77,11 +77,11 @@ const StyledFeaturesAsideMobile = styled.div`
   background-image: url("/images/templates/office-for-ios/features/mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 40%;
+  width: 31%;
   height: 75%;
   position: absolute;
   top: 16%;
-  right: 0;
+  right: 1%;
   z-index: 11;
 
   @media ${device.tablet} {
@@ -100,11 +100,11 @@ const StyledFeaturesAsideMobileImg = styled.div<{
   background-image: ${(props) => `url(${props.$bgUrlMobile})`};
   background-repeat: no-repeat;
   background-size: contain;
-  width: 11.46vw;
-  height: 24vw;
+  width: 62%;
+  height: 78%;
   position: absolute;
   top: 47%;
-  left: 40%;
+  left: 51%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
 
