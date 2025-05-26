@@ -104,7 +104,7 @@ const StyledFeaturesAsideMobileImg = styled.div<{
   height: 78%;
   position: absolute;
   top: 47%;
-  left: 51%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
 
