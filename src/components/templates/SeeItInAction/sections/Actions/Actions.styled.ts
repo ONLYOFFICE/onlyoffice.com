@@ -56,6 +56,9 @@ const StyledActionsTabButton = styled(Button)<{
   border: none;
   padding: 24px 16px;
   flex-grow: 1;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: ${(props) => (props.$isActive ? "0px 7px 15px 0px rgba(85, 85, 85, 0.1)" : "none")};
 
   &:hover {
     background-color: #ebebeb;
