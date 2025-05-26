@@ -6,7 +6,6 @@ import { Text } from "@src/components/ui/Text";
 const StyledCollabWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 65px;
 
   @media ${device.tablet} {
     flex-direction: column;
@@ -30,11 +29,12 @@ const StyledCollabLeft = styled.div`
 `;
 
 const StyledCollabHeading = styled(Heading)`
-  max-width: 270px;
+  width: 352px;
   margin-bottom: 20px;
   line-height: 43px;
 
   @media ${device.tablet} {
+    width: auto;
     text-align: center;
     max-width: 600px;
   }
@@ -49,9 +49,10 @@ const StyledCollabHeading = styled(Heading)`
   }
 `;
 const StyledCollabText = styled(Text)`
-  max-width: 270px;
+  width: 352px;
 
   @media ${device.tablet} {
+    width: auto;
     text-align: center;
     max-width: 600px;
   }
@@ -65,10 +66,10 @@ const StyledCollabRight = styled.div<{
   $backgroundUrl: string;
   $backgroundUrl2x: string;
 }>`
-  width: 1175px;
-  height: 650px;
+  width: 62.20vw;
+  height: 41.66vw;
   background-image: ${(props) => `url(${props.$backgroundUrl})`};
-  background-size: auto 830px;
+  background-size: auto 51.78vw;
   background-repeat: no-repeat;
 
   @media ${device.retina} {
@@ -80,7 +81,7 @@ const StyledCollabRight = styled.div<{
     height: 54.82vw;
     background-size: cover;
     flex-grow: 1;
-    background-position-x: calc(50% + 6vw);
+    background-position-x: calc(50% + 2vw);
     background-position-y: calc(100% + 17vw);
   }
 `;
