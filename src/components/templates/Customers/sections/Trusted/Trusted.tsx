@@ -6,11 +6,19 @@ import { Text } from "@src/components/ui/Text";
 import { tabsInfo } from "./data/tabsInfo";
 import { IButtonInfo } from "./Trusted.types";
 
-import { StyledTrustedHeading, StyledTrustedTabItem, StyledTrustedTabList } from "./Trusted.styled";
+import {
+  StyledTrustedButton,
+  StyledTrustedHeading,
+  StyledTrustedIconItem,
+  StyledTrustedIconList,
+  StyledTrustedTabItem,
+  StyledTrustedTabList
+} from "./Trusted.styled";
 
 const Trusted = () => {
   const { t } = useTranslation("customers");
   const [activeTab, setActiveTab] = useState<IButtonInfo>(tabsInfo[0]);
+  const [showMore, setShowMore] = useState<boolean>(true);
 
   return (
     <Section>
@@ -32,6 +40,23 @@ const Trusted = () => {
             </StyledTrustedTabItem>
           ))}
         </StyledTrustedTabList>
+        <StyledTrustedIconList>
+          {showMore ? activeTab.iconsUrl.slice(0, 4).map((icon, index) => (
+              <StyledTrustedIconItem key={`${index} ${icon}`} $backgroundUrl={icon} />
+            )) :
+            activeTab.iconsUrl.map((icon, index) => (
+              <StyledTrustedIconItem key={`${index} ${icon}`} $backgroundUrl={icon} />
+            ))
+          }
+        </StyledTrustedIconList>
+        {activeTab.iconsUrl.length > 4 && (
+          <StyledTrustedButton
+            label={showMore ? t("TrustedButtonShowMore") : t("TrustedButtonShowLess")}
+            variant="tertiary"
+            borderRadius="3px"
+            onClick={() => setShowMore(!showMore)}
+          />
+        )}
       </Container>
     </Section>
   );

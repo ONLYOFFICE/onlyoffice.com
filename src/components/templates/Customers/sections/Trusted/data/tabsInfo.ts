@@ -44,7 +44,7 @@ export const tabsInfo: IButtonInfo[] = [
     title: "Education",
     iconsUrl: [
       "images/templates/customers/trusted/education/academie-lille.svg",
-      "images/templates/customers/trusted/education/BSC-blue logo.svg",
+      "images/templates/customers/trusted/education/BSC-blue-logo.svg",
       "images/templates/customers/trusted/education/Calque-1.svg",
       "images/templates/customers/trusted/education/CNKI.png",
       "images/templates/customers/trusted/education/IMT-Atlantique.svg",

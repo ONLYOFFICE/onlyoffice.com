@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
+import { Button } from "@src/components/ui/Button";
 
 const StyledTrustedHeading = styled(Heading)`
   margin-bottom: 56px;
@@ -19,7 +20,14 @@ const StyledTrustedTabItem = styled.span<{
 }>`
   position: relative;
   white-space: nowrap;
+  padding-bottom: 24px;
+  color: ${(props) => (props.$isActive ? "#ff6f3d" : "#444444")};
+  transition-duration: 300ms;
   cursor: pointer;
+
+  &:hover {
+    color: #ff6f3d;
+  }
 
   &::after {
     content: "";
@@ -33,4 +41,41 @@ const StyledTrustedTabItem = styled.span<{
   }
 `;
 
-export { StyledTrustedHeading, StyledTrustedTabList, StyledTrustedTabItem };
+const StyledTrustedIconList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 64px;
+`;
+
+const StyledTrustedIconItem = styled.div<{
+  $backgroundUrl: string;
+}>`
+  width: 224px;
+  height: 120px;
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition-duration: 300ms;
+  filter: grayscale(1);
+  cursor: pointer;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+`;
+
+const StyledTrustedButton = styled(Button)`
+  display: block;
+  margin: 75px auto 0;
+`;
+
+export {
+  StyledTrustedHeading,
+  StyledTrustedTabList,
+  StyledTrustedTabItem,
+  StyledTrustedIconList,
+  StyledTrustedIconItem,
+  StyledTrustedButton
+};

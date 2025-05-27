@@ -5,7 +5,7 @@ const StyledCustomersBgWrapper = styled.div`
   height: 100%;
   min-height: 100vh;
   background-image: url("/images/templates/customers/hero/map.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   background-color: #F5F5F5;
