@@ -12,15 +12,15 @@ const Hero = () => {
     <StyledHeroSection background="#F5F5F5">
       <Container>
         <StyledHeroHeading size={2} level={1} textAlign="center">
-          <Trans key={0} t={t} i18nKey={"HeroHeading"} components={[
+          <Trans key={0} t={t} i18nKey={"HeroHeadingOnlyOffice"} components={[
               <Text as="span" color="main" key={0} />
             ]}
           />
         </StyledHeroHeading>
         <StyledHeroButtonsWrapper>
-          <Button label="Tell your story" />
+          <Button label={t("HeroButtonTellYour")} />
           <Text as={"span"} label="or" size={3} />
-          <Button label="Start your story here" variant="tertiary" />
+          <Button label={t("HeroButtonStartYour")} variant="tertiary" />
         </StyledHeroButtonsWrapper>
       </Container>
     </StyledHeroSection>

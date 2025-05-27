@@ -5,8 +5,8 @@ import { Heading } from "@src/components/ui/Heading";
 const StyledHeroSection = styled(Section)`
   height: 100vh;
   background-image: url("/images/templates/customers/hero/map.svg");
-  background-size: 107vw 105vh;
-  background-position: -5vw -25vh;
+  background-size: 100vw 100vh;
+  background-position: top;
   background-repeat: no-repeat;
   margin-top: -72px;
 `;
