@@ -1,15 +1,16 @@
 import { Trans, useTranslation } from "next-i18next";
+import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
-
-import { StyledHeroButtonsWrapper, StyledHeroHeading, StyledHeroSection } from "./Hero.styled";
 import { Button } from "@src/components/ui/Button";
+
+import { StyledHeroButtonsWrapper, StyledHeroHeading } from "./Hero.styled";
 
 const Hero = () => {
   const { t } = useTranslation("customers");
 
   return (
-    <StyledHeroSection background="#F5F5F5">
+    <Section>
       <Container>
         <StyledHeroHeading size={2} level={1} textAlign="center">
           <Trans key={0} t={t} i18nKey={"HeroHeadingOnlyOffice"} components={[
@@ -18,12 +19,12 @@ const Hero = () => {
           />
         </StyledHeroHeading>
         <StyledHeroButtonsWrapper>
-          <Button label={t("HeroButtonTellYour")} />
+          <Button label={t("HeroButtonTellYour")} borderRadius="3px" />
           <Text as={"span"} label="or" size={3} />
-          <Button label={t("HeroButtonStartYour")} variant="tertiary" />
+          <Button label={t("HeroButtonStartYour")} borderRadius="3px" variant="tertiary" />
         </StyledHeroButtonsWrapper>
       </Container>
-    </StyledHeroSection>
+    </Section>
   );
 };
 
