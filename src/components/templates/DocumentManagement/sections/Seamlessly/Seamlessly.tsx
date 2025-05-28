@@ -8,9 +8,16 @@ import {
   StyledSeamlesslySwitcherItemTextWrapper,
   StyledSeamlesslySwitcherItemTitle,
   StyledSeamlesslyWrapper,
+  StyledSeamlesslyCarousel,
+  StyledSeamlesslyCarouselItem,
 } from "./Seamlessly.styled";
 import { useRef, useState, useEffect } from "react";
 import { items } from "./data/items";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 
 const Seamlessly = () => {
   const { t } = useTranslation("document-management");
@@ -69,6 +76,28 @@ const Seamlessly = () => {
             $image2x={t(items[activeIndex].image2x)}
           />
         </StyledSeamlesslyWrapper>
+
+        <StyledSeamlesslyCarousel>
+          <Swiper
+            loop
+            autoHeight
+            modules={[Navigation, Pagination]}
+            pagination={{ clickable: true }}
+          >
+            {items.map((item, index) => (
+              <SwiperSlide key={index}>
+                <StyledSeamlesslyCarouselItem>
+                  <StyledSeamlesslyImage
+                    $image={t(item.image)}
+                    $image2x={t(item.image2x)}
+                  />
+                  <Heading level={5} size={5} label={t(item.title)} />
+                  <Text size={4} label={t(item.text)} />
+                </StyledSeamlesslyCarouselItem>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </StyledSeamlesslyCarousel>
       </Container>
     </Section>
   );

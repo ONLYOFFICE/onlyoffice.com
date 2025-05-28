@@ -25,6 +25,10 @@ const StyledSeamlesslyWrapper = styled.div`
     row-gap: 32px;
     justify-items: center;
   }
+
+  @media ${device.mobile} {
+    display: none;
+  }
 `;
 
 const StyledSeamlesslySwitcherItem = styled.div`
@@ -82,6 +86,52 @@ const StyledSeamlesslyImage = styled.div<{ $image: string; $image2x: string }>`
   }
 `;
 
+const StyledSeamlesslyCarousel = styled.div`
+  margin: 0 -16px;
+  display: none;
+
+  @media ${device.mobile} {
+    display: block;
+  }
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    .swiper-pagination-bullet {
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background-color: #cccccc;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      &.swiper-pagination-bullet-active {
+        background: linear-gradient(
+          136.1deg,
+          #ffc671 -1.99%,
+          #ff7541 58.57%,
+          #ff6f3d 100%
+        );
+      }
+    }
+
+    @media ${device.mobile} {
+      margin-top: 32px;
+    }
+  }
+`;
+
+const StyledSeamlesslyCarouselItem = styled.div`
+  display: grid;
+  gap: 16px;
+  padding: 0 16px;
+`;
+
 export {
   StyledSeamlesslyHeading,
   StyledSeamlesslyWrapper,
@@ -89,4 +139,6 @@ export {
   StyledSeamlesslySwitcherItemTitle,
   StyledSeamlesslySwitcherItemTextWrapper,
   StyledSeamlesslyImage,
+  StyledSeamlesslyCarousel,
+  StyledSeamlesslyCarouselItem,
 };
