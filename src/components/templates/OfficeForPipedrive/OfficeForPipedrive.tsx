@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Hero } from "./sections/Hero";
-import { DocSpaceApp } from "./sections/DocSpaceApp";
+import { DocSpaceApp } from "./sections/DocspaceApp";
 import { DocsApp } from "./sections/DocsApp";
 import { MarketplaceConnector } from "./sections/MarketplaceConnector";
 import { Features } from "./sections/Features";
