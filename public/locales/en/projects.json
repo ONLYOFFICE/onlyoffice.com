@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Efficient project management tool | ONLYOFFICE",
+  "PageDescription": "Plan, manage and track tasks, deadlines and projects. Improve your team productivity.",
+
+  "HeroTitle": "Project management software for excellent team performance",
+  "HeroText": "It's a perfect tool for fast or medium-sized projects. No more complicated than shopping on Amazon.<br/><1>By CMSWire</1>",
+  "HeroImage": "/images/templates/projects/hero/en/hero_image.png",
+  "HeroImage2x": "/images/templates/projects/hero/en/hero_image@2x.png",
+  "GetItNow": "Get it now",
+
+  "ProjectHierarchy": "Project hierarchy",
+  "ProjectHierarchyText": "Use milestones, tasks, and subtasks to prioritize your primary objectives and day-to-day activities. Add custom task statuses.",
+  "ProjectHierarchyImage": "/images/templates/projects/features/en/project_hierarchy.png",
+  "GanttChart": "Gantt Chart",
+  "GanttChartText": "Analyse project progress and task dependencies. Update scheduled events and deadlines in a couple clicks.",
+  "GanttChartImage": "/images/templates/projects/features/en/gantt_chart.png",
+  "AccessRights": "Access rights management",
+  "AccessRightsText": "Set individual access permissions for different module elements and create private projects. You have full control of what everyone can see and what actions they can perform.",
+  "AccessRightsImage": "/images/templates/projects/features/en/access_rights.png",
+  "TimeManagement": "Time management",
+  "TimeManagementText": "Assess team performance and project status using time-tracking features and automatically generated reports.",
+  "TimeManagementImage": "/images/templates/projects/features/en/time_management.png",
+
+  "MobileApps": "Mobile apps",
+  "StayMobile": "Stay mobile!",
+  "WorkWithProjects": "Work with projects from your <0>iOS</0> and <1>Android</1> devices. Manage your team activites even on-the-go.",
+  "MobileImage": "/images/templates/projects/mobile-apps/en/mobile.png",
+
+  "ItsAPerfectTool": "It's a perfect tool for fast or medium-sized projects. No more complicated than shopping on Amazon.",
+  "CmsWire": "CMSWire"
+}
