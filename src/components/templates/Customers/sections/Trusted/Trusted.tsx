@@ -11,6 +11,7 @@ import {
   StyledTrustedHeading,
   StyledTrustedIconItem,
   StyledTrustedIconList,
+  StyledTrustedTabBtn,
   StyledTrustedTabItem,
   StyledTrustedTabList
 } from "./Trusted.styled";
@@ -32,11 +33,15 @@ const Trusted = () => {
         <StyledTrustedTabList>
           {tabsInfo.map((tab) => (
             <StyledTrustedTabItem
-            key={tab.id}
-            $isActive={activeTab.id === tab.id}
-            onClick={() => setActiveTab(tab)}
+              key={tab.id}
+              $isActive={activeTab.id === tab.id}
+              onClick={() => setActiveTab(tab)}
             >
-              {tab.title}
+              <StyledTrustedTabBtn
+                $isActive={activeTab.id === tab.id}
+                variant="tertiary"
+                label={tab.title}
+              />
             </StyledTrustedTabItem>
           ))}
         </StyledTrustedTabList>
