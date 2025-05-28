@@ -4,7 +4,7 @@ import { Link } from "@src/components/ui/Link";
 
 const StyledCollaborationsTabs = styled.ul`
   display: flex;
-  border-top: 1px solid #e2e2e2;
+  border-top: 1px solid #cccccc;
   overflow-x: auto;
 `;
 
@@ -61,4 +61,8 @@ const StyledCollaborationsTabLink = styled(Link)<{
   }
 `;
 
-export { StyledCollaborationsTabs, StyledCollaborationsTab, StyledCollaborationsTabLink };
+export {
+  StyledCollaborationsTabs,
+  StyledCollaborationsTab,
+  StyledCollaborationsTabLink,
+};

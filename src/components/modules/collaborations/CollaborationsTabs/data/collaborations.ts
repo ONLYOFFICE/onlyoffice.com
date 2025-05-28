@@ -33,4 +33,9 @@ export const collaborations: ICollaborationsTab[] = [
     url: "/calendar",
     label: "Calendar",
   },
+    {
+    id: "community-link",
+    url: "/community",
+    label: "Community",
+  },
 ];
