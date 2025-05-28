@@ -16,22 +16,14 @@ const Card = ({ customers }: ICustomers) => {
   return (
     <Section background="#F9F9F9">
       <Container maxWidth="1007px">
-        <StyledCardList>
-          {showMore ? fixUrlData.slice(0, 8).map((item) => (
+        <StyledCardList $showMore={showMore}>
+          {fixUrlData.map((item) => (
             <StoryCard
               key={item.id}
               linkUrl={item.url}
               heading={item.title}
               imgUrl={item.img?.[0]?.url}
             />
-          )) :
-            fixUrlData.map((item) => (
-              <StoryCard
-                key={item.id}
-                linkUrl={item.url}
-                heading={item.title}
-                imgUrl={item.img?.[0]?.url}
-              />
           ))}
         </StyledCardList>
         {fixUrlData.length > 8 && (
