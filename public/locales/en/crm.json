@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Easy-to-use CRM system | ONLYOFFICE",
+  "PageDescription": "Online client management software. Manage customers, track sales, send invoices with a complete set of business tools.",
+
+  "HeroTitle": "Simple CRM for sales management and productivity improvement",
+  "HeroText": "It's a pretty nice and easy-to-use CRM system<br/><1>By Live Enterprise</1>",
+  "HeroImage": "/images/templates/crm/hero/en/hero_image.png",
+  "HeroImage2x": "/images/templates/crm/hero/en/hero_image@2x.png",
+  "GetItNow": "Get it now",
+
+  "CustomerRelations": "Customer relations management",
+  "CustomerRelationsText": "Build your customer database, manage business processes, analyse potential deal success rate, and track sales with the essential features of CRM software: Contacts, Deal Opportunities, Tasks, Web-to-Lead Form, and Communication history.",
+  "CustomerRelationsImage": "/images/templates/crm/features/en/customer_relations.png",
+  "Customization": "Customization",
+  "CustomizationText": "Adjust ONLYOFFICE CRM software to your needs: add new contacts types, tasks, categories, and special user fields. Describe your business process using customizable opportunity stages.",
+  "CustomizationImage": "/images/templates/crm/features/en/customization.png",
+  "RapidEntry": "Rapid entry of potential customers",
+  "RapidEntryText": "Embed ONLYOFFICE web-to-lead form in your website and information on new leads will automatically transfer to your CRM software database.",
+  "RapidEntryImage": "/images/templates/crm/features/en/rapid_entry.png",
+  "Invoicing": "Invoicing system",
+  "InvoicingText": "Create an invoice right in ONLYOFFICE by selecting required consignees from your CRM database and linking it with a required deal opportunity.",
+  "InvoicingImage": "/images/templates/crm/features/en/invoicing.png",
+  "CloseIntegration": "Close integration with Mail",
+  "CloseIntegrationText": "Add email contacts to your database, send messages and invoices, and view all correspondence with clients in CRM. Organize mass mailing directly in ONLYOFFICE CRM.",
+  "CloseIntegrationImage": "/images/templates/crm/features/en/close_integration.png",
+  "CustomerCall": "Customer call management system",
+  "CustomerCallText": "Make and answer customer calls directly from CRM thanks to the ONLYOFFICE Twilio integration.",
+  "CustomerCallImage": "/images/templates/crm/features/en/customer_call.png",
+  "SalesReporting": "Sales reporting",
+  "SalesReportingText": "Generate reports to identify strengths and weaknesses in your sales and know what's going on in your business.",
+  "SalesReportingImage": "/images/templates/crm/features/en/sales_reporting.png",
+
+  "ItIsPrettyNice": "It's a pretty nice and easy-to-use CRM system.",
+  "LiveEnterprise": "Live Enterprise"
+}
