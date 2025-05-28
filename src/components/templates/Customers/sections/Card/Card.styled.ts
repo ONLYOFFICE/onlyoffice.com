@@ -3,6 +3,9 @@ import styled from "styled-components";
 
 const StyledCardContainer = styled(Container)`
   display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 32px;
   grid-template-columns: repeat(2, 1fr);
 
   & > div {
@@ -16,6 +19,8 @@ const StyledCardContainer = styled(Container)`
       & > div {
         width: 448px;
         height: 224px;
+        background-size: contain;
+        background-position: center;
       }
     }
 

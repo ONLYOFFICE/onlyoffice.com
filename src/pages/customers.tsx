@@ -7,8 +7,10 @@ import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { CustomersTemplate } from "@src/components/templates/Customers";
 import { Footer } from "@src/components/modules/Footer";
+import { getCustomers } from "@src/lib/requests/getCustomers";
+import { ICustomers } from "@src/components/templates/Customers/Customers.types";
 
-const CustomersPage = ({ locale }: ILocale) => {
+const CustomersPage = ({ locale, customers }: ILocale & ICustomers) => {
   const { t } = useTranslation("customers");
 
   return (
@@ -23,7 +25,7 @@ const CustomersPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <CustomersTemplate />
+        <CustomersTemplate customers={customers} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -33,6 +35,8 @@ const CustomersPage = ({ locale }: ILocale) => {
 };
 
 export async function getStaticProps({ locale }: ILocale) {
+  const { customers } = await getCustomers(locale);
+
   return {
     props: {
       ...(await serverSideTranslations(locale, [
@@ -40,6 +44,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "customers",
       ])),
       locale,
+      customers
     },
   };
 }
