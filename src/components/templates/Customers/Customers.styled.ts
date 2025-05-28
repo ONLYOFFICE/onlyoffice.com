@@ -2,8 +2,6 @@ import { device } from "@src/utils/device";
 import styled from "styled-components";
 
 const StyledCustomersBgWrapper = styled.div`
-  height: 100%;
-  min-height: 100vh;
   background-image: url("/images/templates/customers/hero/map.svg");
   background-size: auto 930px;
   background-repeat: no-repeat;

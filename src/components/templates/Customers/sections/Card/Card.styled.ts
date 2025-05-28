@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "@src/utils/device";
 import { Button } from "@src/components/ui/Button";
 
 const StyledCardList = styled.div<{
@@ -11,8 +12,8 @@ const StyledCardList = styled.div<{
   grid-template-columns: repeat(2, 1fr);
 
   & > div {
+    height: 100%;
     flex-direction: column;
-    width: 448px;
     background-color: #fff;
     border: 1px solid #E5E5E5;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
@@ -36,11 +37,13 @@ const StyledCardList = styled.div<{
       margin-right: 0;
 
       & > div {
-        width: 448px;
-        height: 224px;
         background-size: contain;
         background-position: center;
         background-color: #F9F9F9;
+
+        @media ${device.tablet} {
+          margin: 0 auto;
+        }
       }
     }
 
