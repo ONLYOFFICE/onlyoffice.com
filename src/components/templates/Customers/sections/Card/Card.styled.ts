@@ -1,7 +1,7 @@
-import { Container } from "@src/components/ui/Container";
 import styled from "styled-components";
+import { Button } from "@src/components/ui/Button";
 
-const StyledCardContainer = styled(Container)`
+const StyledCardList = styled.div`
   display: grid;
   justify-items: center;
   align-items: center;
@@ -30,4 +30,9 @@ const StyledCardContainer = styled(Container)`
   }
 `;
 
-export { StyledCardContainer };
+const StyledCardButton = styled(Button)`
+  display: block;
+  margin: 48px auto 0;
+`;
+
+export { StyledCardList, StyledCardButton };
