@@ -1,11 +1,4 @@
-interface IMedals {
-  image: string;
-  href: string;
-  width: string;
-  height: string;
-  mobileWidth: string;
-  mobileHeight: string;
-}
+import { IMedals } from "@src/components/modules/collaborations/CollaborationsHero";
 
 export const medals: IMedals[] = [
   {
