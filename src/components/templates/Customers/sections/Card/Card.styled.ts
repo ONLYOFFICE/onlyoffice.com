@@ -16,17 +16,16 @@ const StyledCardList = styled.div<{
     background-color: #fff;
     border: 1px solid #E5E5E5;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s;
+    transition: opacity 0.5s ease-in-out, box-shadow 0.3s ease, display 0s linear 0.5s;
+    transition-behavior: allow-discrete;
 
     &:hover {
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     }
 
     &:nth-child(n + 9) {
-      display: ${(props) => (props.$showMore ? "none" : "block")};
+      display: ${(props) => (props.$showMore ? "none" : "flex")};
       opacity: ${(props) => (props.$showMore ? "0" : "1")};
-      transition-duration: 500ms;
-      transition-behavior: allow-discrete;
 
       @starting-style {
         opacity: 0;
