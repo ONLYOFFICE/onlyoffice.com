@@ -1,0 +1,1 @@
+export { CommunityTemplate } from "./Community";
