@@ -1,0 +1,1 @@
+export { InstallationSuccessWorkspaceEnterpriseTemplate } from "./InstallationSuccessWorkspaceEnterprise";

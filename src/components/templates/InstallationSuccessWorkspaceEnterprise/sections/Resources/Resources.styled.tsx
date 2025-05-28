@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { Link } from "@src/components/ui/Link";
 
-const StyledResourcesContent = styled.ul`
+const StyledResourceList = styled.ul`
   list-style: none;
   margin: 0;
   padding: 12px 0 0;
 `;
 
-const StyledResourcesListItem = styled.li`
+const StyledResourceItem = styled.li`
   border-bottom: 1px solid rgba(204, 204, 204, 0.6);
   color: #333333;
   font-size: 14px;
@@ -15,7 +15,7 @@ const StyledResourcesListItem = styled.li`
   padding: 20px 0;
 `;
 
-const StyledResourcesListItemLink = styled(Link)`
+const StyledResourceListItemLink = styled(Link)`
   white-space: nowrap;
   &:after {
     background-image: url(/images/templates/installation-success-workspace/resources/arrow-red.svg);
@@ -29,8 +29,4 @@ const StyledResourcesListItemLink = styled(Link)`
   }
 `;
 
-export {
-  StyledResourcesContent,
-  StyledResourcesListItem,
-  StyledResourcesListItemLink,
-};
+export { StyledResourceList, StyledResourceItem, StyledResourceListItemLink };
