@@ -6,5 +6,7 @@
   "EmailIsEmpty": "Email is empty",
   "EmailIsIncorrect": "Email is incorrect",
   "CompanyName": "Company name",
-  "CompanyNameIsEmpty": "Company name is empty"
+  "CompanyNameIsEmpty": "Company name is empty",
+  "successfullyRequestText": "Your request has been sent successfully",
+  "errorRequestText": "We are sorry, but an error occurred, try again later"
 }

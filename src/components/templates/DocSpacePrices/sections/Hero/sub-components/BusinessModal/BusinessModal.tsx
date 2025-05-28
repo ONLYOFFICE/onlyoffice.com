@@ -25,6 +25,7 @@ const BusinessModal = ({
   onClose,
   locale,
   productsData,
+  affiliate,
 }: IBusinessModal & IDocSpacePricesTemplate) => {
   const { t } = useTranslation("docspace-prices");
   const [value, setValue] = useState("");
@@ -125,7 +126,7 @@ const BusinessModal = ({
         <StyledBusinessModalBtns>
           <StyledBusinessModalBtn
             forwardedAs="a"
-            href="mailto:sales@onlyoffice.com?subject=Request%20a%20quote%20for%20ONLYOFFICE%20DocSpace%20Business%20Cloud"
+            href={`mailto:sales@onlyoffice.com?subject=Request%20a%20quote%20for%20ONLYOFFICE%20DocSpace%20Business%20Cloud${affiliate.id ? "&body=(Ticket%20" + affiliate.id + ")" : ""}`}
             label={t("GetAQuote")}
           />
           <StyledBusinessModalBtn
