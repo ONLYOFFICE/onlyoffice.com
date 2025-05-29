@@ -51,15 +51,22 @@ const StyledTrustedTabBtn = styled(Button)<{
   color: ${(props) => (props.$isActive ? "#ff6f3d" : "#444444")};
 `;
 
-const StyledTrustedIconList = styled.div`
+const StyledTrustedIconList = styled.div<{
+  $showMore: boolean;
+}>`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 64px;
+  column-gap: 64px;
+
+  @media ${device.tabletS} {
+    column-gap: 32px;
+  }
 `;
 
 const StyledTrustedIconItem = styled.div<{
   $backgroundUrl: string;
+  $showMore: boolean;
 }>`
   width: 224px;
   height: 120px;
@@ -73,6 +80,36 @@ const StyledTrustedIconItem = styled.div<{
 
   &:hover {
     filter: grayscale(0);
+  }
+
+  @media (min-width: 1200px) {
+    &:nth-child(n + 9) {
+      height: ${({ $showMore }) => $showMore ? "0" : "120px"};
+    }
+  }
+
+  @media ${device.tablet} {
+    &:nth-child(n + 10) {
+      height: ${({ $showMore }) => $showMore ? "0" : "120px"};
+    }
+  }
+
+  @media ${device.mobile} {
+    width: 145px;
+    height: 77px;
+
+    &:nth-child(n + 10) {
+      height: ${({ $showMore }) => $showMore ? "0" : "77px"};
+    }
+  }
+
+  @media ${device.mobileS} {
+    width: 145px;
+    height: 77px;
+
+    &:nth-child(n + 9) {
+      height: ${({ $showMore }) => $showMore ? "0" : "77px"};
+    }
   }
 `;
 

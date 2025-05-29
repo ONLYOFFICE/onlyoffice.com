@@ -23,7 +23,7 @@ const Trusted = () => {
 
   return (
     <Section>
-      <Container>
+      <Container tabletSpacing="16px">
         <StyledTrustedHeading size={4} level={2} textAlign="center">
           <Trans t={t} i18nKey={"TrustedHeadingTrustedAndLove"} components={[
             <Text as={"span"} color="main" key={0} />
@@ -45,16 +45,12 @@ const Trusted = () => {
             </StyledTrustedTabItem>
           ))}
         </StyledTrustedTabList>
-        <StyledTrustedIconList>
-          {showMore ? activeTab.iconsUrl.slice(0, 4).map((icon, index) => (
-              <StyledTrustedIconItem key={`${index} ${icon}`} $backgroundUrl={icon} />
-            )) :
-            activeTab.iconsUrl.map((icon, index) => (
-              <StyledTrustedIconItem key={`${index} ${icon}`} $backgroundUrl={icon} />
-            ))
-          }
+        <StyledTrustedIconList $showMore={showMore}>
+          {activeTab.iconsUrl.map((icon, index) => (
+            <StyledTrustedIconItem key={`${index} ${icon}`} $backgroundUrl={icon} $showMore={showMore} />
+          ))}
         </StyledTrustedIconList>
-        {activeTab.iconsUrl.length > 4 && (
+        {activeTab.iconsUrl.length > 8 && (
           <StyledTrustedButton
             label={showMore ? t("TrustedButtonShowMore") : t("TrustedButtonShowLess")}
             variant="tertiary"

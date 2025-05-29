@@ -122,6 +122,7 @@ export const tabsInfo: IButtonInfo[] = [
     iconsUrl: [
       "/images/templates/customers/trusted/business/augustus-medical.png",
       "/images/templates/customers/trusted/business/budweiser-china.png",
+      "/images/templates/customers/trusted/business/evozon.svg",
       "/images/templates/customers/trusted/business/fracht-com.png",
       "/images/templates/customers/trusted/business/s-and-e.png",
     ]
