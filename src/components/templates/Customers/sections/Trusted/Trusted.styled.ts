@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
@@ -7,7 +7,9 @@ const StyledTrustedHeading = styled(Heading)`
   margin-bottom: 56px;
 `;
 
-const StyledTrustedTabList = styled.ul`
+const StyledTrustedTabList = styled.ul<{
+  $locale: string;
+}>`
   display: flex;
   align-items: center;
   overflow-x: scroll;
@@ -16,6 +18,11 @@ const StyledTrustedTabList = styled.ul`
   margin-bottom: 56px;
   position: relative;
   scrollbar-width: none;
+
+  ${({ $locale }) => ($locale === "zh" || $locale === "ja") && css`
+    justify-content: center;
+    overflow-x: auto;
+  `}
 `;
 
 const StyledTrustedTabItem = styled.li<{
@@ -45,6 +52,46 @@ const StyledTrustedTabBtn = styled(Button)<{
   background-color: transparent;
   padding: 0 0 24px;
   color: ${(props) => (props.$isActive ? "#ff6f3d" : "#444444")};
+`;
+
+const StyledTrustedTabBtnWrapper = styled.div`
+  position: relative;
+`;
+
+const ArrowBase = styled.button`
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: calc(50% - 26px);
+  z-index: 1;
+  background:
+    url("/images/templates/customers/trusted/arrow.svg") no-repeat center/24px 24px,
+    radial-gradient(
+      circle at center,
+      rgba(245,245,245,1) 10%,
+      rgba(245,245,245,0) 70%
+    );
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-duration: 300ms;
+`;
+
+const ScrollButtonLeft = styled(ArrowBase)<{
+  $atStart: boolean;
+}>`
+  left: -10px;
+  visibility: ${({ $atStart }) => ($atStart ? "visible" : "hidden")};
+  opacity: ${({ $atStart }) => ($atStart ? 1 : 0)};
+  transform: rotate(180deg);
+`;
+
+const ScrollButtonRight = styled(ArrowBase)<{
+  $atEnd: boolean;
+}>`
+  right: 0;
+  visibility: ${({ $atEnd }) => ($atEnd ? "visible" : "hidden")};
+  opacity: ${({ $atEnd }) => ($atEnd ? 1 : 0)};
 `;
 
 const StyledTrustedIconList = styled.div<{
@@ -104,6 +151,9 @@ export {
   StyledTrustedHeading,
   StyledTrustedTabList,
   StyledTrustedTabItem,
+  StyledTrustedTabBtnWrapper,
+  ScrollButtonLeft,
+  ScrollButtonRight,
   StyledTrustedTabBtn,
   StyledTrustedIconList,
   StyledTrustedIconItem,
