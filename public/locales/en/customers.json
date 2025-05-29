@@ -11,5 +11,19 @@
   "TrustedButtonShowMore": "Show more",
   "TrustedButtonShowLess": "Show less",
 
+  "TabsInfoTitleInternational": "International organizations",
+  "TabsInfoTitleTechnology": "Technology",
+  "TabsInfoTitleEducation": "Education",
+  "TabsInfoTitleScience": "Science & Research",
+  "TabsInfoTitleGovernment": "Government",
+  "TabsInfoTitleFinance": "Finance",
+  "TabsInfoTitleManufactural": "Manufactural",
+  "TabsInfoTitleBusiness": "Business",
+  "TabsInfoTitleNPO": "NPO",
+  "TabsInfoTitleTelecoms": "Telecoms",
+
+  "IntegrationHowOnlyofficeAndOwnCloud": "How ONLYOFFICE and ownCloud Integration in Sciebo Helps Facilitate Research Workflow in Münster University",
+  "IntegrationReadBlog": "Read blog",
+
   "StartYourStory": "Start your story"
 }

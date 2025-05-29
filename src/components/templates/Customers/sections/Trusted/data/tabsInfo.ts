@@ -3,7 +3,7 @@ import { IButtonInfo } from "../Trusted.types";
 export const tabsInfo: IButtonInfo[] = [
   {
     id: 1,
-    title: "International organizations",
+    title: "TabsInfoTitleInternational",
     iconsUrl: [
       "/images/templates/customers/trusted/international-organizations/croix-rouge.svg",
       "/images/templates/customers/trusted/international-organizations/unesco.svg",
@@ -11,7 +11,7 @@ export const tabsInfo: IButtonInfo[] = [
   },
   {
     id: 2,
-    title: "Technology",
+    title: "TabsInfoTitleTechnology",
     iconsUrl: [
       "/images/templates/customers/trusted/technology/art-where.svg",
       "/images/templates/customers/trusted/technology/atrics.svg",
@@ -41,7 +41,7 @@ export const tabsInfo: IButtonInfo[] = [
   },
   {
     id: 3,
-    title: "Education",
+    title: "TabsInfoTitleEducation",
     iconsUrl: [
       "/images/templates/customers/trusted/education/academie-lille.svg",
       "/images/templates/customers/trusted/education/BSC-blue-logo.svg",
@@ -68,7 +68,7 @@ export const tabsInfo: IButtonInfo[] = [
   },
   {
     id: 4,
-    title: "Science & Research",
+    title: "TabsInfoTitleScience",
     iconsUrl: [
       "/images/templates/customers/trusted/science-and-research/aarnet.svg",
       "/images/templates/customers/trusted/science-and-research/CBG.svg",
@@ -89,7 +89,7 @@ export const tabsInfo: IButtonInfo[] = [
   },
   {
     id: 5,
-    title: "Government",
+    title: "TabsInfoTitleGovernment",
     iconsUrl: [
       "/images/templates/customers/trusted/government/GIZ.svg",
       "/images/templates/customers/trusted/government/government-of-the-Czech-Republic.svg",
@@ -101,7 +101,7 @@ export const tabsInfo: IButtonInfo[] = [
   },
   {
     id: 6,
-    title: "Finance",
+    title: "TabsInfoTitleFinance",
     iconsUrl: [
       "/images/templates/customers/trusted/finance/deloitte.svg",
       "/images/templates/customers/trusted/finance/thomson-reuters.svg",
@@ -109,7 +109,7 @@ export const tabsInfo: IButtonInfo[] = [
   },
   {
     id: 7,
-    title: "Manufactural",
+    title: "TabsInfoTitleManufactural",
     iconsUrl: [
       "/images/templates/customers/trusted/manufactural/EnBW.svg",
       "/images/templates/customers/trusted/manufactural/skinest-grupp.svg",
@@ -118,7 +118,7 @@ export const tabsInfo: IButtonInfo[] = [
   },
   {
     id: 8,
-    title: "Business",
+    title: "TabsInfoTitleBusiness",
     iconsUrl: [
       "/images/templates/customers/trusted/business/augustus-medical.png",
       "/images/templates/customers/trusted/business/budweiser-china.png",
@@ -129,7 +129,7 @@ export const tabsInfo: IButtonInfo[] = [
   },
   {
     id: 9,
-    title: "NPO",
+    title: "TabsInfoTitleNPO",
     iconsUrl: [
       "/images/templates/customers/trusted/npo/accoord.svg",
       "/images/templates/customers/trusted/npo/ACLU.svg",
@@ -151,7 +151,7 @@ export const tabsInfo: IButtonInfo[] = [
   },
   {
     id: 10,
-    title: "Telecoms",
+    title: "TabsInfoTitleTelecoms",
     iconsUrl: [
       "/images/templates/customers/trusted/telecoms/KT.svg",
       "/images/templates/customers/trusted/telecoms/rostelecom.svg",

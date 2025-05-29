@@ -40,7 +40,7 @@ const Trusted = () => {
               <StyledTrustedTabBtn
                 $isActive={activeTab.id === tab.id}
                 variant="tertiary"
-                label={tab.title}
+                label={t(tab.title)}
               />
             </StyledTrustedTabItem>
           ))}

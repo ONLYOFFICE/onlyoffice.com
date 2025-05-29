@@ -6,7 +6,7 @@ import { Heading } from "@src/components/ui/Heading";
 
 const StyledIntegrationSection = styled(Section)`
   background-color: #3A6870;
-  background-image: url("images/templates/customers/integration/sciebo.svg");
+  background-image: url("/images/templates/customers/integration/sciebo.svg");
   background-repeat: no-repeat;
   background-position: -8vw center;
   background-size: auto 51vw;
@@ -95,5 +95,11 @@ const StyledIntegrationIcon = styled.div<{
   }
 `;
 
-
-export { StyledIntegrationSection, StyledIntegrationContainer, StyledIntegrationLeft, StyledIntegrationHeading, StyledIntegrationRight, StyledIntegrationIcon };
+export {
+  StyledIntegrationSection,
+  StyledIntegrationContainer,
+  StyledIntegrationLeft,
+  StyledIntegrationHeading,
+  StyledIntegrationRight,
+  StyledIntegrationIcon
+};
