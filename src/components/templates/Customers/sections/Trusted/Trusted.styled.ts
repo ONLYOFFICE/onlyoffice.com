@@ -58,9 +58,15 @@ const StyledTrustedIconList = styled.div<{
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 64px;
+  opacity: 1;
+  transition-duration: 500ms;
 
   @media ${device.tabletS} {
     column-gap: 32px;
+  }
+
+  @starting-style {
+    opacity: 0;
   }
 `;
 

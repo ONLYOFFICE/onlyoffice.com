@@ -45,7 +45,7 @@ const Trusted = () => {
             </StyledTrustedTabItem>
           ))}
         </StyledTrustedTabList>
-        <StyledTrustedIconList $showMore={showMore}>
+        <StyledTrustedIconList $showMore={showMore} key={activeTab.id}>
           {activeTab.iconsUrl.map((icon, index) => (
             <StyledTrustedIconItem key={`${index} ${icon}`} $backgroundUrl={icon} $showMore={showMore} />
           ))}

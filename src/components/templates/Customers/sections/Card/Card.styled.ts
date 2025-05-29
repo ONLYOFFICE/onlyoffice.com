@@ -29,8 +29,7 @@ const StyledCardItem = styled(Link)<{
   background-color: #fff;
   border: 1px solid #e5e5e5;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
-  transition: opacity 0.5s ease-in-out, box-shadow 0.3s ease, display 0s linear 0.5s;
-  transition-behavior: allow-discrete;
+  transition: opacity 0.5s ease-in-out, box-shadow 0.3s ease, display 0s linear 0.5s allow-discrete;
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
