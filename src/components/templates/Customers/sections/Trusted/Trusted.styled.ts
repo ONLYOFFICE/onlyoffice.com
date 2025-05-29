@@ -14,6 +14,7 @@ const StyledTrustedTabList = styled.ul`
   gap: clamp(16px, 2vw, 32px);
   border-bottom: 1px solid #e2e2e2;
   margin-bottom: 56px;
+  position: relative;
 
   @media ${device.desktop} {
     justify-content: flex-start;
@@ -57,9 +58,12 @@ const StyledTrustedIconList = styled.div<{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  row-gap: 8px;
   column-gap: 64px;
   opacity: 1;
-  transition-duration: 500ms;
+  transition: opacity 500ms, max-height 800ms cubic-bezier(0.25, 0.1, 0.25, 1.0);
+  max-height: ${({ $showMore }) => $showMore ? "250px" : "1500px"};
+  overflow: hidden;
 
   @media ${device.tabletS} {
     column-gap: 32px;
@@ -72,7 +76,6 @@ const StyledTrustedIconList = styled.div<{
 
 const StyledTrustedIconItem = styled.div<{
   $backgroundUrl: string;
-  $showMore: boolean;
 }>`
   width: 224px;
   height: 120px;
@@ -87,41 +90,19 @@ const StyledTrustedIconItem = styled.div<{
   &:hover {
     filter: grayscale(0);
   }
-
-  @media (min-width: 1200px) {
-    &:nth-child(n + 9) {
-      height: ${({ $showMore }) => $showMore ? "0" : "120px"};
-    }
-  }
-
-  @media ${device.tablet} {
-    &:nth-child(n + 10) {
-      height: ${({ $showMore }) => $showMore ? "0" : "120px"};
-    }
-  }
-
-  @media ${device.mobile} {
-    width: 145px;
-    height: 77px;
-
-    &:nth-child(n + 10) {
-      height: ${({ $showMore }) => $showMore ? "0" : "77px"};
-    }
-  }
-
-  @media ${device.mobileS} {
-    width: 145px;
-    height: 77px;
-
-    &:nth-child(n + 9) {
-      height: ${({ $showMore }) => $showMore ? "0" : "77px"};
-    }
-  }
 `;
 
 const StyledTrustedButton = styled(Button)`
   display: block;
   margin: 75px auto 0;
+
+  @media ${device.tablet} {
+    margin: 48px auto 0;
+  }
+
+  @media ${device.mobile} {
+    margin: 32px auto 0;
+  }
 `;
 
 export {
