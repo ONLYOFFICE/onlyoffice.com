@@ -16,7 +16,7 @@ const Story = () => {
           label={t("HeroButtonTellYour")}
           borderRadius="3px"
         />
-        <Text as={"span"} label="or" size={3} />
+        <Text as={"span"} label={t("HeroOr")} size={3} />
         <Button
           as="a"
           href="/registration?from=customers"
