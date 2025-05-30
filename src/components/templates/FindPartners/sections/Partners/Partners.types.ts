@@ -1,6 +1,8 @@
 interface IDataItems {
   id: number;
-  title: string;
+  name: string;
+  country: string;
+  sponsor?: "gold" | "silver" | "autorized";
   url: string;
   img: {
     url: string;

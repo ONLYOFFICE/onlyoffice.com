@@ -3,34 +3,57 @@ import { useEffect, useState } from "react";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Button } from "@src/components/ui/Button";
+import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
 
-import { StyledPartnersKeyItem, StyledPartnersKeyList } from "./Partners.styled";
+import { StyledPartnersCountryInner, StyledPartnersCountryOption, StyledPartnersCountryOptions, StyledPartnersCountrySelect, StyledPartnersCountryText, StyledPartnersCountryWrapper, StyledPartnersKeyItem, StyledPartnersKeyList } from "./Partners.styled";
 
 const Partners = () => {
   const { t } = useTranslation("find-partners");
   const [activeTab, setActiveTab] = useState<number>(0);
   const [uniqueKeys, setUniqueKeys] = useState<string[]>([]);
+  const [uniqueCountrys, setUniqueCountrys] = useState<string[]>([]);
+  const [selectOpen, setSelectOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    const unique = new Set(items.map((item) => item.title[0]));
-    setUniqueKeys([t("PartnersAll"), ...unique]);
+    const uniqueKey = new Set(items.map((item) => item.name[0]));
+    setUniqueKeys([t("PartnersAll"), ...uniqueKey]);
   }, [t]);
 
+  useEffect(() => {
+    const uniqueCountry = new Set(items.map((item) => item.country));
+    setUniqueCountrys([...uniqueCountry]);
+  }, []);
+
   return (
-    <Section>
+    <Section desktopSpacing={["80px", "112px"]}>
       <Container>
         <StyledPartnersKeyList>
-          {uniqueKeys.map((title, index) => (
-            <StyledPartnersKeyItem key={title}>
+          {uniqueKeys.map((name, index) => (
+            <StyledPartnersKeyItem key={name}>
               <Button
-                label={title}
+                label={name}
                 onClick={() => setActiveTab(index)}
                 variant={activeTab === index ? "secondary" : "tertiary"}
               />
             </StyledPartnersKeyItem>
           ))}
         </StyledPartnersKeyList>
+        <StyledPartnersCountryWrapper>
+          <StyledPartnersCountrySelect onClick={() => setSelectOpen(!selectOpen)}>
+            <StyledPartnersCountryInner $isSelectOpen={selectOpen}>
+              <StyledPartnersCountryText $isSelectOpen={selectOpen} label={t("PartnersSelectCountry")} size={2} />
+              <StyledPartnersCountryText $isSelectOpen={selectOpen} label={t("PartnersCountry")} size={2} />
+            </StyledPartnersCountryInner>
+          </StyledPartnersCountrySelect>
+          <StyledPartnersCountryOptions $isSelectOpen={selectOpen}>
+            {uniqueCountrys.map((country) => (
+              <StyledPartnersCountryOption key={country} onClick={() => setSelectOpen(false)}>
+                <Text label={country} as={"span"} size={2} />
+              </StyledPartnersCountryOption>
+            ))}
+          </StyledPartnersCountryOptions>
+        </StyledPartnersCountryWrapper>
       </Container>
     </Section>
   );
