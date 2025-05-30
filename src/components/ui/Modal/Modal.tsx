@@ -9,6 +9,7 @@ import { IModal } from "./Modal.types";
 
 let openModalCount = 0;
 let cleanupTimeout: ReturnType<typeof setTimeout> | null = null;
+const openModals: HTMLDivElement[] = [];
 
 const modalManager = {
   addModal() {
@@ -79,6 +80,12 @@ const Modal = ({
   useEffect(() => {
     if (!isOpen) return;
 
+    if (modalRef.current && !openModals.includes(modalRef.current)) {
+      openModals.push(modalRef.current);
+    }
+
+    const currentModal = modalRef.current;
+
     const focusableSelectors = [
       "a[href]",
       "area[href]",
@@ -94,11 +101,13 @@ const Modal = ({
     ];
 
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (openModals[openModals.length - 1] !== currentModal) return;
+
       if (e.key === "Escape") {
         onCloseModal();
-      } else if (e.key === "Tab" && modalRef.current) {
+      } else if (e.key === "Tab" && currentModal) {
         const focusableElements = Array.from(
-          modalRef.current.querySelectorAll<HTMLElement>(
+          currentModal.querySelectorAll<HTMLElement>(
             focusableSelectors.join(","),
           ),
         ).filter((el) => el.offsetParent !== null);
@@ -113,7 +122,7 @@ const Modal = ({
         if (e.shiftKey) {
           if (
             activeElement === firstElement ||
-            !modalRef.current.contains(activeElement)
+            !currentModal.contains(activeElement)
           ) {
             e.preventDefault();
             lastElement.focus();
@@ -121,7 +130,7 @@ const Modal = ({
         } else {
           if (
             activeElement === lastElement ||
-            !modalRef.current.contains(activeElement)
+            !currentModal.contains(activeElement)
           ) {
             e.preventDefault();
             firstElement.focus();
@@ -134,6 +143,13 @@ const Modal = ({
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
+
+      if (currentModal) {
+        const index = openModals.indexOf(currentModal);
+        if (index > -1) {
+          openModals.splice(index, 1);
+        }
+      }
     };
   }, [isOpen, onCloseModal]);
 

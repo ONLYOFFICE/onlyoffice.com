@@ -1,4 +1,4 @@
-import { forwardRef, useState } from "react";
+import { forwardRef } from "react";
 import {
   StyledCheckbox,
   StyledCheckboxInput,
@@ -24,16 +24,6 @@ const Checkbox = forwardRef<HTMLInputElement, ICheckbox>(
     },
     ref,
   ) => {
-    const [isChecked, setIsChecked] = useState(checked || false);
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      setIsChecked(e.target.checked);
-
-      if (onChange) {
-        onChange(e);
-      }
-    };
-
     return (
       <StyledCheckbox $align={align}>
         <StyledCheckboxInput
@@ -42,14 +32,14 @@ const Checkbox = forwardRef<HTMLInputElement, ICheckbox>(
           className={className}
           type="checkbox"
           tabIndex={tabIndex}
-          checked={isChecked}
+          checked={checked}
           required={required}
           name={name}
           value={value}
-          onChange={handleChange}
-          $checked={isChecked}
+          onChange={onChange}
+          $checked={checked}
         />
-        <StyledCheckboxIcon $checked={isChecked} />
+        <StyledCheckboxIcon $checked={checked} />
         <StyledCheckboxLabel $size={size}>{label}</StyledCheckboxLabel>
       </StyledCheckbox>
     );

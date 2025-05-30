@@ -1,0 +1,46 @@
+{
+  "PageTitle": "Check ONLYOFFICE Docs main functionality | ONLYOFFICE",
+  "PageDescription": "Edit docx, xlsx, pptx files, view PDFs, create fillable forms, collaborate in real-time to check the ONLYOFFICE main features. No downloads or registration required.",
+
+  "HeroHeadingSeeIt": "See it in action",
+  "HeroTextCurious": "Curious to know what the interface looks like and try the main functionality without registration?",
+
+  "ActionsOpen": "Open",
+  "ActionsEditDocx": "Edit DOCX",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
+  "ActionsEditXlsx": "Edit XLSX",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
+  "ActionsEditPptx": "Edit PPTX",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
+  "ActionsEditPdf": "Edit PDF",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
+  "ActionsCreateForm": "Create Form",
+  "ActionsFillInPdfForm": "Fill in PDF form",
+  "ActionsCollaborate": "Collaborate",
+
+  "ActionsDemoPreview": "Demo preview",
+  "ActionsDemoModalHeadingOpen": "Open DOCX for editing",
+  "ActionsDemoModalButtonClose": "Close",
+
+  "GetStartedHeading": "Get started and choose where to work",
+
+  "GetStartedItemTitleInOnlyOffice": "In ONLYOFFICE DocSpace",
+  "GetStartedItemTextCreate": "Create rooms within your secure DocSpace, invite people, view, edit, and collaborate on all kinds of documents from any desktop or mobile device.",
+  "GetStartedItemLinkStart": "Start with your free account",
+
+  "GetStartedItemTitleYouUse": "In the platform you use",
+  "GetStartedItemTextConnect": "Connect Docs to edit documents directly from your app. <0>40+ ready integrations</0>: Box, Moodle, Nextcloud, Odoo, Wordpress, etc.",
+  "GetStartedItemLink": "Get Docs now",
+
+  "GetStartedItemTitleYouBuild": "In the platform you build",
+  "GetStartedItemTextIntegrate": "Integrate Docs into your service to provide powerful document-editing and building capabilities to your customers under your brand.",
+  "GetStartedItemLinkLearn": "Learn more",
+
+  "GetStartedItemTitleYourPc": "From your PC",
+  "GetStartedItemTextEdit": "Edit docs offline with free office apps for Windows, Linux, and macOS",
+  "GetStartedItemLinkDownload": "Download now",
+
+  "GetStartedItemTitleMobile": "From your mobile devices",
+  "GetStartedItemTextWork": "Work on documents on the go with free apps for iOS and Android devices",
+  "GetStartedItemLinkInstall": "Install now"
+}
