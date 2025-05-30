@@ -1,14 +1,38 @@
-import { Section } from "@src/components/ui/Section";
+import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
+
+import {
+  StyledHeroButton,
+  StyledHeroHeading,
+  StyledHeroSection,
+  StyledHeroText
+} from "./Hero.styled";
 
 const Hero = () => {
+  const { t } = useTranslation("find-partners");
+
   return (
-    <Section>
-      <Container>
-        <Heading level={1} size={1} label="Heading" />
+    <StyledHeroSection
+      desktopSpacing={["152px", "0"]}
+      tabletSpacing={["144px", "0"]}
+      tabletSmallSpacing={["112px", "0"]}
+      mobileSpacing={["96px", "0"]}
+    >
+      <Container maxWidth="1008px">
+        <StyledHeroHeading
+          level={1}
+          size={2}
+          label={t("HeroHeadingOnlyOffice")}
+          textAlign="center"
+        />
+        <StyledHeroText
+          label={t("HeroTextOnlyOffice")}
+          size={1}
+          textAlign="center"
+        />
+        <StyledHeroButton label={t("HeroButtonBecome")} borderRadius="3px"  />
       </Container>
-    </Section>
+    </StyledHeroSection>
   );
 };
 
