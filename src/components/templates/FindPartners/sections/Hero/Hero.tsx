@@ -7,6 +7,7 @@ import {
   StyledHeroSection,
   StyledHeroText
 } from "./Hero.styled";
+import { Button } from "@src/components/ui/Button";
 
 const Hero = () => {
   const { t } = useTranslation("find-partners");
@@ -30,7 +31,14 @@ const Hero = () => {
           size={1}
           textAlign="center"
         />
-        <StyledHeroButton label={t("HeroButtonBecome")} borderRadius="3px"  />
+        <StyledHeroButton>
+          <Button
+            as="a"
+            label={t("HeroButtonBecome")}
+            href="/partnership-request?requestType=1"
+            borderRadius="3px"
+          />
+        </StyledHeroButton>
       </Container>
     </StyledHeroSection>
   );

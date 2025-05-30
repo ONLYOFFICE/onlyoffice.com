@@ -3,7 +3,6 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { Button } from "@src/components/ui/Button";
 
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
@@ -26,13 +25,9 @@ const StyledHeroText = styled(Text)`
   margin: 0 auto 40px;
 `;
 
-const StyledHeroButton = styled(Button)`
-  display: block;
+const StyledHeroButton = styled.div`
+  width: fit-content;
   margin: 0 auto;
-
-  @media ${device.mobile} {
-    width: fit-content;
-  }
 `;
 
 export { StyledHeroSection, StyledHeroHeading, StyledHeroText, StyledHeroButton }
