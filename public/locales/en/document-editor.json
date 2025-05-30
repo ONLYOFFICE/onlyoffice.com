@@ -28,7 +28,7 @@
   "Feature5ImgUrl": "/images/templates/document-editor/features/screen5.png",
   "Feature5ImgUrl2x": "/images/templates/document-editor/features/screen5@2x.png",
   "Feature6Title": "Improve your team's workflow",
-  "Feature6Desc": "Collaborate with your team within online document editor: choose the appropriate co-editing mode - <0>real-time</0> or <1>paragraph-locking</1>. Leave and sort comments and discuss the process in the built-in chat or Telegram. Use the Track Changes mode with the Preview in Review feature.",
+  "Feature6Desc": "Collaborate with your team within online document editor: choose the appropriate co-editing mode - <0>real-time</0> or <0>paragraph-locking</0>. Leave and sort comments and discuss the process in the built-in chat or Telegram. Use the Track Changes mode with the Preview in Review feature.",
   "Feature6ImgUrl": "/images/templates/document-editor/features/screen6.png",
   "Feature6ImgUrl2x": "/images/templates/document-editor/features/screen6@2x.png",
   "Feature7Title": "Compare files with ease",

@@ -58,7 +58,7 @@ const StyledHeroInput = styled.div`
   box-shadow: 0px 7px 15px rgba(85, 85, 85, 0.1);
   border-radius: 5px;
   display: grid;
-  grid-template-columns: 370px auto;
+  grid-template-columns: 1fr auto;
   justify-content: center;
   align-items: center;
   max-width: 702px;
@@ -73,15 +73,13 @@ const StyledHeroInput = styled.div`
   }
 
   @media ${device.tabletS} {
-    grid-template-columns: auto auto;
-    padding: 32px 64px;
+    padding: 32px;
   }
 
   @media ${device.mobile} {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 32px;
 
     > div {
       width: 100%;
