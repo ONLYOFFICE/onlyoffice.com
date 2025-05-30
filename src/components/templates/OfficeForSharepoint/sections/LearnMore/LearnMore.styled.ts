@@ -4,20 +4,18 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 
 const StyledLearnMore = styled(Section)`
-  background-color: #f9f9f9;
   border-top: 1px solid #e2e2e2;
 `;
 
 const StyledLearnMoreHeading = styled(Heading)`
-  margin: 0 auto 56px;
-  max-width: 720px;
+  margin-bottom: 56px;
 
   @media ${device.tabletS} {
-    margin: 0 auto 40px;
+    margin-bottom: 40px;
   }
 
   @media ${device.mobile} {
-    margin: 0 auto 24px;
+    margin-bottom: 24px;
   }
 `;
 

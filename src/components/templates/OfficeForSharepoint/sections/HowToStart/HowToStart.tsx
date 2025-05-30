@@ -16,14 +16,31 @@ const HowToStart = () => {
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 
         <StepCarousel
-          id="how-to-start-carousel"
-          className="how-to-start-carousel"
-          namespace="office-for-sharepoint"
-          items={items}
+          items={items.map((item) => ({
+            imgUrl: item.imgUrl,
+            heading: item.headingLinks ? (
+              <Trans
+                t={t}
+                i18nKey={String(item.heading)}
+                components={item.headingLinks.map((link, index) => (
+                  <Link
+                    key={index}
+                    href={link.url}
+                    target={link.isExternal ? "_blank" : undefined}
+                    color="main"
+                    textUnderline
+                    hover="underline-none"
+                  />
+                ))}
+              />
+            ) : (
+              t(String(item.heading))
+            ),
+          }))}
         />
 
         <StyledHowToStartInfo>
-        <Text size={2} textAlign="center">
+          <Text size={2} textAlign="center">
             <Trans
               t={t}
               i18nKey="ReadDetailedInstructions"

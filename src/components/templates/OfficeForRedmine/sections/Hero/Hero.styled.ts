@@ -4,7 +4,7 @@ import { device } from "@src/utils/device";
 
 export const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #F4F8FD;
+  background-color: #f4f8fd;
   background-image: url("/images/templates/office-for-redmine/hero/bg.svg");
   background-repeat: no-repeat;
   background-position: calc(50% - 96px) -380px;
@@ -27,35 +27,35 @@ export const StyledHero = styled(Section)`
 `;
 
 export const StyledHeroWrapper = styled.div`
-  display: flex;
-  row-gap: 40px;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   position: relative;
-  padding-bottom: 12px;
-  z-index: 1;
+  display: grid;
+  justify-items: center;
+  row-gap: 40px;
+  margin-bottom: 62px;
+  text-align: center;
 
   @media ${device.tabletS} {
     row-gap: 24px;
-    padding-bottom: 5px;
+    margin-bottom: 53px;
   }
 
   @media ${device.mobile} {
-    padding-bottom: 0px;
+    margin-bottom: 48px;
   }
 `;
 
 export const StyledHeroLogo = styled.div`
-  width: 48px;
-  height: 48px;
-  background: url("/images/templates/office-for-redmine/hero/logo.svg") no-repeat center;
-  background-size: contain;
   margin-bottom: 6px;
+  width: 70px;
+  height: 48px;
+  background: url("/images/templates/office-for-redmine/hero/logo.svg")
+    no-repeat center;
+  background-size: contain;
 
-  @media ${device.tablet} {
-    width: 40px;
-    height: 40px;
+  @media ${device.tabletS} {
+    margin-bottom: 0;
+    width: 48px;
+    height: 32px;
   }
 `;
 

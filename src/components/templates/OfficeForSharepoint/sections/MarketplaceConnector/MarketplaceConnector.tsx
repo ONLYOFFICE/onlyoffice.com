@@ -9,6 +9,7 @@ import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
+import { Link } from "@src/components/ui/Link";
 
 const MarketplaceConnector = () => {
   const { t } = useTranslation("office-for-sharepoint");
@@ -27,7 +28,16 @@ const MarketplaceConnector = () => {
               <Trans
                 t={t}
                 i18nKey="MarketplaceConnectorDescription"
-                components={[<a key="0" href="https://github.com/ONLYOFFICE/onlyoffice-sharepoint" target="_blank" style={{ color: '#ff6f3d', textDecoration: 'underline' }} />]}
+                components={[
+                  <Link
+                    key="0"
+                    href="https://github.com/ONLYOFFICE/onlyoffice-sharepoint"
+                    target="_blank"
+                    color="main"
+                    textUnderline
+                    hover="underline-none"
+                  />,
+                ]}
               />
             </Text>
             <Button

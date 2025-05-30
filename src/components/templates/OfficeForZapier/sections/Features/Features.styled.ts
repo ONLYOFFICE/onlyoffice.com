@@ -1,187 +1,159 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
-import { Tabs } from "@src/components/widgets/Tabs/Tabs";
 
-const StyledTabLabel = styled.span<{ $positionX: number, $parent?: { $active?: boolean } }>`
+const StyledFeaturesHeading = styled(Heading)`
+  margin-bottom: 56px;
+
+  @media ${device.tablet} {
+    margin-bottom: 40px;
+  }
+
+  @media ${device.mobile} {
+    margin-bottom: 32px;
+  }
+`;
+
+const StyledFeaturesTabs = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  column-gap: 16px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 40px;
+
+  @media ${device.mobile} {
+    margin-bottom: 32px;
+  }
+`;
+
+const StyledFeaturesTab = styled.button<{
+  $active: boolean;
+}>`
+  position: relative;
   display: inline-flex;
   align-items: center;
-  line-height: 24px;
-  gap: 16px;
+  border: none;
+  padding: 8px 32px;
+  margin-bottom: -1px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  color: ${(props) => (props.$active ? "#ff6f3d" : "#444444")};
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 162px;
+  background-color: transparent;
+  transition: color 0.2s;
+  cursor: pointer;
 
   &::before {
-    content: '';
+    content: "";
     display: inline-block;
+    margin-right: 16px;
     width: 18px;
+    min-width: 18px;
     height: 18px;
-    vertical-align: text-bottom;
-    background: url("/images/templates/office-for-zapier/features/features.svg") ${props => props.$positionX}px -15px no-repeat;
-    background-size: 456px auto;
-  }
-
-  ${props => props.$parent?.$active && css`
-    &::before {
-      background-position-x: -48px;
-    }
-  `}
-
-  @media ${device.mobile} {
-    font-size: 12px;
-  }
-`;
-
-const StyledTabs = styled(Tabs)`
-  padding: 0;
-
-  > div:not(:first-child) {
-    padding: 48px 0 0;
-
-    @media ${device.tabletS} {
-      padding: 32px 0 0;
-    }
+    background-image: url("/images/templates/office-for-zapier/features/features.svg");
+    background-position-x: ${(props) => (props.$active ? "-48px" : "-15px")};
+    background-position-y: -13px;
+    background-size: 456px;
 
     @media ${device.mobile} {
-      padding: 24px 0 0;
+      margin-right: 8px;
     }
   }
-`;
 
-const StyledDocumentsHeading = styled(Heading)`
-  margin: 0 auto 56px;
-  max-width: 720px;
-
-  @media ${device.tablet} {
-    margin: 0 auto 40px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid
+      ${(props) => (props.$active ? "#ff6f3d" : "transparent")};
+    transition: border-color 0.2s;
   }
 
   @media ${device.mobile} {
-    margin: 0 auto 24px;
+    padding: 8px 28px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    min-width: 136px;
   }
 `;
 
-const StyledFeaturesWrapper = styled.div`
+const StyledFeaturesContent = styled.div<{ $isFirstTab: boolean }>`
   display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 48px;
-
-  @media ${device.tablet} {
-    row-gap: 40px;
-  }
+  grid-template-columns: ${(props) =>
+    props.$isFirstTab ? "repeat(4, 1fr)" : "repeat(3, 1fr)"};
+  gap: 32px 16px;
 
   @media ${device.mobile} {
-    row-gap: 32px;
+    grid-template-columns: initial;
+    gap: 24px;
   }
 `;
 
-const StyledColumnsContainer = styled.div`
+const StyledFeaturesList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 32px;
-
-  @media ${device.desktop} {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  @media ${device.tablet} {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 16px;
-  }
-
-  @media ${device.mobile} {
-    grid-template-columns: 1fr;
-  }
+  row-gap: 16px;
 `;
 
-const StyledColumnHeader = styled.div`
+const StyledFeaturesListHeading = styled(Heading)<{ $iconPositionX: number }>`
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 12px;
   margin-bottom: 24px;
 
-  h4 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
-    color: #333333;
-  }
-
-  > div {
-    flex-shrink: 0;
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
     width: 32px;
+    min-width: 32px;
     height: 32px;
+    background-image: url("/images/templates/office-for-zapier/features/features.svg");
+    background-position-x: ${(props) => props.$iconPositionX}px;
+    background-position-y: center;
   }
 
   @media ${device.mobile} {
     margin-bottom: 16px;
-
-    h4 {
-      font-size: 16px;
-    }
   }
 `;
 
-const StyledColumn = styled.div`
-  > div:not(:first-child) {
-    margin-top: 32px;
+const StyledFeaturesListItem = styled.li`
+  position: relative;
+  padding-left: 32px;
+  font-size: 16px;
+  line-height: 24px;
 
-    @media ${device.tablet} {
-      margin-top: 24px;
-    }
-
-    @media ${device.mobile} {
-      margin-top: 16px;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    background: #ff6f3d;
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    position: relative;
-    padding-left: 24px;
-    margin-bottom: 16px;
-    color: #333333;
-    font-size: 16px;
-    line-height: 1.5;
-
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 8px;
-      width: 6px;
-      height: 6px;
-      transform: rotate(45deg);
-      background-color: #ff6f3d;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-    @media ${device.mobile} {
-      font-size: 14px;
-    }
+  @media ${device.mobile} {
+    font-size: 14px;
+    line-height: 21px;
   }
 `;
-
-const StyledIcon = styled.div<{ $positionX: number }>`
-  background: url("/images/templates/office-for-zapier/features/features.svg")
-    ${(props) => props.$positionX}px 0 no-repeat;
-  background-size: auto 72px;
-  background-position-y: center;
-`;
-
 
 export {
-  StyledFeaturesWrapper,
-  StyledColumnsContainer,
-  StyledColumn,
-  StyledDocumentsHeading,
-  StyledTabs,
-  StyledTabLabel,
-  StyledColumnHeader,
-  StyledIcon,
+  StyledFeaturesHeading,
+  StyledFeaturesTabs,
+  StyledFeaturesTab,
+  StyledFeaturesContent,
+  StyledFeaturesList,
+  StyledFeaturesListHeading,
+  StyledFeaturesListItem,
 };

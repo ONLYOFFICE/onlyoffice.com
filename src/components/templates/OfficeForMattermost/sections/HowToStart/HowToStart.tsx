@@ -9,9 +9,14 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-mattermost");
 
   return (
-    <StyledHowToStart id="how-to-start" background="#f9f9f9" tabletSmallSpacing={["88px", "88px"]}>
+    <StyledHowToStart
+      id="how-to-start"
+      background="#f9f9f9"
+      tabletSmallSpacing={["88px", "88px"]}
+    >
       <Container>
         <ConnectorHowToStart
+          heading={t("HowToStart")}
           text={
             <Trans
               t={t}
@@ -28,15 +33,17 @@ const HowToStart = () => {
               ]}
             />
           }
-          header={t("HowToStart")}
-          imageHeight={378}
-          imageUrl={t("HowToStartImgUrl")}
+          image={{
+            url: t("HowToStartImgUrl"),
+            width: 640,
+            height: 378,
+          }}
           items={items.map((item) => ({
-            heading: item.headingLinks ? (
+            text: item.textLinks ? (
               <Trans
                 t={t}
-                i18nKey={String(item.heading)}
-                components={item.headingLinks.map((link, index) => (
+                i18nKey={String(item.text)}
+                components={item.textLinks.map((link, index) => (
                   <Link
                     key={index}
                     href={link.url}
@@ -48,7 +55,7 @@ const HowToStart = () => {
                 ))}
               />
             ) : (
-              t(String(item.heading))
+              t(String(item.text))
             ),
           }))}
         />

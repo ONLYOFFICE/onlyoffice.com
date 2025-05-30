@@ -1,9 +1,6 @@
 import { useTranslation, Trans } from "next-i18next";
 import { Heading } from "@src/components/ui/Heading";
-import {
-  StyledFeaturesItems,
-  StyledFeaturesWrapper,
-} from "./Features.styled";
+import { StyledFeaturesItems, StyledFeaturesWrapper } from "./Features.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { items } from "./data/items";
@@ -22,19 +19,16 @@ const Features = () => {
     <Section>
       <Container>
         <StyledFeaturesWrapper>
-          <Heading
-            level={2}
-            textAlign="center"
-            label={t("WhyOO")}
-          />
+          <Heading level={2} textAlign="center" label={t("WhyOO")} />
 
           <StyledFeaturesItems>
             {items.map((item, index) => (
               <FeatureItem
+                maxWidth="352px"
                 icon={{
                   url: item.icon.url,
                   positionX: item.icon.positionX,
-                  positionY: "center",
+                  isSprite: true,
                 }}
                 text={
                   <Trans

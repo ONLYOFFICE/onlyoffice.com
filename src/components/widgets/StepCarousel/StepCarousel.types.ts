@@ -13,11 +13,9 @@ export interface IStepCarouselItem {
 }
 
 export interface IStepCarouselTab {
-  /** Unique identifier for the tab */
-  id: string;
-  /** Label displayed in the tab */
+  /** The label for the tab. */
   label: string;
-  /** Items for the carousel */
+  /** The items to display under this tab. */
   items: IStepCarouselItem[];
 }
 
@@ -26,14 +24,12 @@ export interface IStepCarousel {
   id?: string;
   /** Additional CSS class names. */
   className?: string;
-  /** Items for the carousel. Can be either a simple array of items or an array of tab items */
-  items: IStepCarouselItem[] | IStepCarouselTab[];
-  /** Initially selected tab ID (only used when items is IStepCarouselTab[]) */
-  defaultSelected?: string;
-  /** Translation namespace */
-  namespace?: string;
-  /** Callback when tab changes (only used when items is IStepCarouselTab[]) */
-  onTabChange?: (tabId: string) => void;
-  /** Whether to use tabs or not */
-  useTabs?: boolean;
+  /** The tabs data if the carousel is tabbed. */
+  tabs?: IStepCarouselTab[];
+  /** The items to display if the carousel is not tabbed. */
+  items?: IStepCarouselItem[];
+  /** The index of the tab that should be active by default. */
+  activeTab?: number;
+  /** Callback fired when the active tab changes. */
+  onChange?: (value: number) => void;
 }

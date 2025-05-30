@@ -30,7 +30,9 @@ const StyledSocialButton = styled(Link)<{
   background: ${({ $platform }) =>
     `url(${socialStyles[$platform].icon}) no-repeat 7px center / 24px 24px`};
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.2s, border 0.2s;
+  transition:
+    box-shadow 0.2s,
+    border 0.2s;
 
   &:hover {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);

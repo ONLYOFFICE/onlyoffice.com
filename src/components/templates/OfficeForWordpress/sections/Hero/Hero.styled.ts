@@ -4,11 +4,10 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #F6F7F7;
+  background-color: #f6f7f7;
   background-image: url("/images/templates/office-for-wordpress/hero/bg.svg");
   background-repeat: no-repeat;
   background-position: center -250px;
-  background-size: cover;
 
   @media (max-width: 2144px) {
     background-size: 2144px 1485px;

@@ -31,7 +31,7 @@ const Hero = () => {
           <StyledHeroLogo />
 
           <StyledHeroHeader>
-          <Heading
+            <Heading
               level={1}
               size={1}
               label={t("OnlineOfficeForConnector")}
@@ -41,10 +41,10 @@ const Hero = () => {
           </StyledHeroHeader>
 
           <Button
-              onClick={() => scrollToBlock()}
-              id="hero-get-started"
-              label={t("GetStarted")}
-            />
+            onClick={() => scrollToBlock()}
+            id="hero-get-started"
+            label={t("GetStarted")}
+          />
         </StyledHeroWrapper>
 
         <StyledHeroImg

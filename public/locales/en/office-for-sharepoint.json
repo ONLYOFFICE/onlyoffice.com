@@ -1,11 +1,11 @@
 {
-  "PageTitle": "Online office suite for SharePoint",
+  "PageTitle": "Online office suite for SharePoint | ONLYOFFICE Docs",
   "PageDescription": "Edit and co-author office documents within SharePoint",
 
   "OnlineOfficeForConnector": "Online office for SharePoint",
   "Subheader": "With ONLYOFFICE Docs, you get a full-featured replacement for desktop Office application within your browser",
   "GetItNow": "Get it now",
-  
+
   "HeroTab1ImgUrl": "/images/templates/office-for-sharepoint/hero/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-sharepoint/hero/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-sharepoint/hero/screen2.png",
@@ -20,7 +20,7 @@
   "GetStarted": "Get started",
 
   "MarketplaceConnectorTitle": "Designed for seamless integration with SharePoint",
-  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for SharePoint now from the <0>GitHub</0>.",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for SharePoint now from <0>GitHub</0>.",
 
   "WhyOO": "Why more than 15 million people already use ONLYOFFICE Docs",
   "Reason1": "Highest compatibility with MS Office formats",

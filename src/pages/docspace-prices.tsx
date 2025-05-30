@@ -1,14 +1,23 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { ILocale } from "@src/types/locale";
+import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
+import { getPricesWithUrls } from "@src/lib/requests/getPricesWithUrls";
+import { DocSpacePricesEntries } from "@src/components/templates/DocSpacePrices/data/productEntries";
 import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
-import { Head } from "@src/components/modules/Head";
+import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
-import { DocSpacePricesTemplate } from "@src/components/templates/DocSpacePrices";
+import {
+  DocSpacePricesTemplate,
+  IDocSpacePricesTemplate,
+} from "@src/components/templates/DocSpacePrices";
 import { Footer } from "@src/components/modules/Footer";
 
-const DocSpacePricesPage = ({ locale }: ILocale) => {
+const DocSpacePricesPage = ({
+  locale,
+  productsData,
+}: IDocSpacePricesTemplate) => {
   const { t } = useTranslation("docspace-prices");
 
   return (
@@ -23,7 +32,7 @@ const DocSpacePricesPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <DocSpacePricesTemplate />
+        <DocSpacePricesTemplate locale={locale} productsData={productsData} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -33,10 +42,25 @@ const DocSpacePricesPage = ({ locale }: ILocale) => {
 };
 
 export async function getStaticProps({ locale }: ILocale) {
+  const currency = getCurrencyByLocale(locale);
+
+  const productsData = await getPricesWithUrls({
+    locale,
+    currency: currency.code,
+    entries: DocSpacePricesEntries({ locale }),
+    PaymentSystemId: "9",
+  });
+
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "docspace-prices"])),
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "docspace-prices",
+        "PricingQuoteModal",
+        "PhoneInput",
+      ])),
       locale,
+      productsData,
     },
   };
 }

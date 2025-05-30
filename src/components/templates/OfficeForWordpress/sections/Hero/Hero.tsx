@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <StyledHero
       desktopSpacing={["118px", "60px"]}
-      tabletSpacing={["118px", "60px"]}
+      tabletSpacing={["110px", "60px"]}
       tabletSmallSpacing={["128px", "101px"]}
       mobileSpacing={["96px", "66px"]}
     >
@@ -59,10 +59,15 @@ const Hero = () => {
               label={t("RequestFreeDemo")}
             />
           </StyledHeroHeaderBtns>
+
+          <Text
+            fontSize="14px"
+            lineHeight="19px"
+            label={t("FullyCompatibleWithDocxXlsxAndPptx")}
+          />
         </StyledHeroWrapper>
 
-        
-        {locale === 'zh' ? (
+        {locale === "zh" ? (
           <StyledHeroImg
             $imgUrl="/images/templates/office-for-wordpress/hero/zh/hero.png"
             $imgUrl2x="/images/templates/office-for-wordpress/hero/zh/hero@2x.png"

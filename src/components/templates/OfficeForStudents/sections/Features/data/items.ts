@@ -1,6 +1,10 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
-export const items: IFeatureItem[] = [
+interface IFeatureItemExtended extends IFeatureItem {
+  textLinks?: { href: string; isExternal?: boolean }[];
+}
+
+export const items: IFeatureItemExtended[] = [
   {
     icon: {
       url: "/images/templates/office-for-students/features/its-free.svg",
@@ -21,7 +25,7 @@ export const items: IFeatureItem[] = [
     },
     heading: "ItSHighlyCustomizable",
     text: "ItSHighlyCustomizableDesc",
-    links: [{ href: "/app-directory" }],
+    textLinks: [{ href: "/app-directory" }],
   },
   {
     icon: {

@@ -10,7 +10,7 @@ const StyledMarketplaceConnector = styled.section`
     content: "";
     position: absolute;
     top: calc(50% + 15px);
-    right: calc(100% - 460px);
+    right: calc(50% + 400px);
     width: 700px;
     height: 700px;
     background-image: url("/images/templates/office-for-jira/marketplace-connector/logo.svg");
@@ -18,6 +18,10 @@ const StyledMarketplaceConnector = styled.section`
     background-size: contain;
     transform: translateY(-50%);
     pointer-events: none;
+
+    @media ${device.desktop} {
+      right: calc(100% - 400px);
+    }
 
     @media ${device.tabletS} {
       right: calc(100% - 300px);
@@ -41,7 +45,7 @@ const StyledMarketplaceConnectorWrapper = styled.div`
   }
 
   @media ${device.tabletS} {
-  grid-template-columns: auto 260px;
+    grid-template-columns: auto 260px;
   }
   @media ${device.mobile} {
     grid-template-columns: initial;
@@ -70,8 +74,8 @@ const StyledMarketplaceConnectorImg = styled.div`
   z-index: 1;
 
   @media ${device.tabletS} {
-  background-image: url("/images/templates/office-for-jira/marketplace-connector/small-apps.svg");
-  width: 260px;
+    background-image: url("/images/templates/office-for-jira/marketplace-connector/small-apps.svg");
+    width: 260px;
   }
   @media ${device.mobile} {
     display: none;

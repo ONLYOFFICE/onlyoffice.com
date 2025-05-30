@@ -2,8 +2,8 @@ import { IHowToStartItem } from "@src/components/modules/connectors/HowToStart";
 
 export const items: IHowToStartItem[] = [
   {
-    heading: "HowToStartStep1",
-    headingLinks: [
+    text: "HowToStartStep1",
+    textLinks: [
       {
         url: "/download-docs",
         isExternal: false,
@@ -15,8 +15,8 @@ export const items: IHowToStartItem[] = [
     ],
   },
   {
-    heading: "HowToStartStep2",
-    headingLinks: [
+    text: "HowToStartStep2",
+    textLinks: [
       {
         url: "https://connect.nuxeo.com/nuxeo/site/marketplace/package/onlyoffice-nuxeo?version=1.0.0",
         isExternal: true,
@@ -24,6 +24,6 @@ export const items: IHowToStartItem[] = [
     ],
   },
   {
-    heading: "HowToStartStep3",
+    text: "HowToStartStep3",
   },
 ];

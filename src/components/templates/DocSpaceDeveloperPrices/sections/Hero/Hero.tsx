@@ -10,7 +10,9 @@ import {
   StyledHeroLink,
   StyledHeroCaption,
 } from "./Hero.styled";
+import { IDocSpaceDeveloperPricesFormData } from "./Hero.types";
 import { ILocale } from "@src/types/locale";
+import { useRewardful } from "@src/utils/useRewardful";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -23,15 +25,21 @@ import { Tabs } from "@src/components/widgets/Tabs";
 import { CounterSelector } from "@src/components/widgets/CounterSelector";
 import { CounterSelectorWrapper } from "@src/components/widgets/pricing/CounterSelectorWrapper";
 import { List } from "@src/components/widgets/pricing/List";
-import { QuoteModal } from "@src/components/widgets/pricing/QuoteModal";
+import {
+  QuoteModal,
+  IQuoteModalApiRequest,
+  IQuoteModalSendEmailRequest,
+  IQuoteModalPipedriveRequest,
+  IQuoteModalFormData,
+} from "@src/components/widgets/pricing/QuoteModal";
 import { SelectorsWrapper } from "@src/components/widgets/pricing/SelectorsWrapper";
 import { SelectorItemWrapper } from "@src/components/widgets/pricing/SelectorItemWrapper";
+import { DocSpaceDeveloperPricesEmail } from "@src/components/emails/DocSpaceDeveloperPricesEmail";
 
 const Hero = ({ locale }: ILocale) => {
   const { t } = useTranslation("docspace-developer-prices");
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState({
+  const initialFormData: IDocSpaceDeveloperPricesFormData = {
     development: true,
     devServersNumber: "1",
     production: false,
@@ -45,7 +53,172 @@ const Hero = ({ locale }: ILocale) => {
     nativeMobileApps: false,
     desktopApps: false,
     trainingCourses: false,
+  };
+  const initialQuoteFormData: IQuoteModalFormData = {
+    fullName: "",
+    email: "",
+    phone: "",
+    companyName: "",
+    hCaptcha: null,
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState(initialFormData);
+  const [quoteFormData, setQuoteFormData] = useState(initialQuoteFormData);
+  const [affiliate, setAffiliate] = useState<{
+    id?: string;
+    token?: string;
+    params?: string;
+  }>({
+    id: "",
+    token: "",
+    params: "",
   });
+
+  const { getClientReferenceId, getAffiliateToken, getClientReferenceParam } =
+    useRewardful({
+      onReady: () => {
+        const id = getClientReferenceId();
+        const token = getAffiliateToken();
+        const params = getClientReferenceParam();
+
+        setAffiliate((prev) =>
+          prev.id === id && prev.token === token && prev.params === params
+            ? prev
+            : { id, token, params },
+        );
+      },
+    });
+
+  const apiRequest = async ({
+    from,
+    utmSource,
+    utmCampaign,
+    utmContent,
+    utmTerm,
+  }: IQuoteModalApiRequest) => {
+    const response = await fetch("/api/docspace-developer-prices", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        fullName: quoteFormData.fullName,
+        email: quoteFormData.email,
+        phone: quoteFormData.phone,
+        companyName: quoteFormData.companyName,
+        development: formData.development,
+        devServerNumber: formData.devServersNumber,
+        production: formData.production,
+        prodServerNumber: formData.prodServerNumber,
+        connectionsNumber: formData.connectionsNumber,
+        supportLevel: formData.supportLevel,
+        branding: formData.branding,
+        multiTenancy: formData.multiTenancy,
+        disasterRecovery: formData.disasterRecovery,
+        multiServerDeployment: formData.multiServerDeployment,
+        nativeMobileApps: formData.nativeMobileApps,
+        desktopApps: formData.desktopApps,
+        trainingCourses: formData.trainingCourses,
+        from,
+        utmSource,
+        utmCampaign,
+        utmContent,
+        utmTerm,
+      }),
+    });
+
+    return response.json();
+  };
+
+  const sendEmailRequest = async ({
+    from,
+    errorFlag,
+    utmCampaignFlag,
+    errorText,
+    isSelected,
+  }: IQuoteModalSendEmailRequest) => {
+    const response = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        from,
+        to: [process.env.NEXT_PUBLIC_SALES_EMAIL],
+        subject: `${errorFlag} - DocSpace Developer prices Request ${utmCampaignFlag}[from: ${from}]`,
+        html: DocSpaceDeveloperPricesEmail({
+          fullName: quoteFormData.fullName,
+          email: quoteFormData.email,
+          phone: quoteFormData.phone,
+          companyName: quoteFormData.companyName,
+          development: isSelected(formData.development),
+          devServersNumber: formData.devServersNumber,
+          production: isSelected(formData.production),
+          prodServerNumber: formData.prodServerNumber,
+          connectionsNumber: formData.connectionsNumber,
+          supportLevel: formData.supportLevel,
+          branding: formData.branding,
+          multiTenancy: isSelected(formData.multiTenancy),
+          disasterRecovery: isSelected(formData.disasterRecovery),
+          multiServerDeployment: isSelected(formData.multiServerDeployment),
+          nativeMobileApps: isSelected(formData.nativeMobileApps),
+          desktopApps: isSelected(formData.desktopApps),
+          trainingCourses: isSelected(formData.trainingCourses),
+          language: locale,
+          affiliateId: affiliate.id || "",
+          affiliateToken: affiliate.token || "",
+          errorText,
+        }),
+      }),
+    });
+
+    return response.json();
+  };
+
+  const pipedriveRequest = async ({
+    _ga,
+    utmSource,
+    utmCampaign,
+    title,
+    region,
+    from,
+  }: IQuoteModalPipedriveRequest) => {
+    const response = await fetch("/api/pipedrive", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        owner_id: 12769244,
+        person_id: 131,
+        visible_to: "3",
+        "08f603bf9e0032d5a9f9e5cd39ca8c7a4374ac82": _ga,
+        was_seen: false,
+        title: `devep Docs Developer - ${title} - ${quoteFormData.email} - ${region}`,
+        "6654a8f8686bdba60bbcdf6e69313c150f40b088": JSON.stringify({
+          fullName: quoteFormData.fullName,
+          email: quoteFormData.email,
+          phone: quoteFormData.phone,
+          companyName: quoteFormData.companyName,
+          development: formData.development,
+          devServerNumber: formData.devServersNumber,
+          production: formData.production,
+          prodServerNumber: formData.prodServerNumber,
+          connectionsNumber: formData.connectionsNumber,
+          supportLevel: formData.supportLevel,
+          branding: formData.branding,
+          multiTenancy: formData.multiTenancy,
+          disasterRecovery: formData.disasterRecovery,
+          multiServerDeployment: formData.multiServerDeployment,
+          nativeMobileApps: formData.nativeMobileApps,
+          desktopApps: formData.desktopApps,
+          trainingCourses: formData.trainingCourses,
+          from,
+          type: "docspacedeveloperrequest",
+          langOfPage: locale,
+          ...(utmSource && { utmSource }),
+          ...(utmCampaign && { utmCampaign }),
+        }),
+      }),
+    });
+
+    return response.json();
+  };
 
   return (
     <StyledHero
@@ -116,7 +289,7 @@ const Hero = ({ locale }: ILocale) => {
                         subHeading={t("20ConnectionsPerEachServer")}
                       >
                         <CounterSelector
-                          size="small"
+                          buttonSize="small"
                           variant="input"
                           autoFocus={formData.development}
                           value={formData.devServersNumber}
@@ -152,7 +325,7 @@ const Hero = ({ locale }: ILocale) => {
                       <SelectorItemWrapper>
                         <CounterSelectorWrapper heading={t("NumberOfServers")}>
                           <CounterSelector
-                            size="small"
+                            buttonSize="small"
                             variant="input"
                             autoFocus={formData.production}
                             value={formData.prodServerNumber}
@@ -175,7 +348,7 @@ const Hero = ({ locale }: ILocale) => {
                           }}
                         >
                           <CounterSelector
-                            size="small"
+                            buttonSize="small"
                             items={[
                               { id: "250", label: "250" },
                               { id: "500", label: "500" },
@@ -205,9 +378,9 @@ const Hero = ({ locale }: ILocale) => {
                   { id: "White Label", label: { name: t("WhiteLabel") } },
                 ]}
                 selected={formData.branding}
-                onChange={(value) =>
-                  setFormData((prev) => ({ ...prev, branding: value }))
-                }
+                onChange={(
+                  value: IDocSpaceDeveloperPricesFormData["branding"],
+                ) => setFormData((prev) => ({ ...prev, branding: value }))}
               />
             </LabeledWrapper>
 
@@ -321,9 +494,9 @@ const Hero = ({ locale }: ILocale) => {
                 selected={formData.supportLevel}
                 bgColor="#f5f5f5"
                 collapsible
-                onChange={(value) =>
-                  setFormData((prev) => ({ ...prev, supportLevel: value }))
-                }
+                onChange={(
+                  value: IDocSpaceDeveloperPricesFormData["supportLevel"],
+                ) => setFormData((prev) => ({ ...prev, supportLevel: value }))}
               />
             </LabeledWrapper>
 
@@ -389,9 +562,7 @@ const Hero = ({ locale }: ILocale) => {
         )}
 
         <QuoteModal
-          locale={locale}
           isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
           heading={t("FillInTheFormToGetAQuote")}
           byClickedText={
             <Trans
@@ -409,7 +580,16 @@ const Hero = ({ locale }: ILocale) => {
               ]}
             />
           }
+          initialFormData={initialFormData}
+          initialQuoteFormData={initialQuoteFormData}
+          setFormData={setFormData}
+          quoteFormData={quoteFormData}
+          setQuoteFormData={setQuoteFormData}
           buttonLabel={t("GetAQuote")}
+          apiRequest={apiRequest}
+          sendEmailRequest={sendEmailRequest}
+          pipedriveRequest={pipedriveRequest}
+          onClose={() => setIsModalOpen(false)}
         />
       </Container>
     </StyledHero>

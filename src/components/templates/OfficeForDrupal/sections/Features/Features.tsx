@@ -1,5 +1,9 @@
 import { useTranslation, Trans } from "next-i18next";
-import { StyledFeaturesWrapper, StyledFeaturesItems, StyledSection } from "./Features.styled";
+import {
+  StyledFeaturesWrapper,
+  StyledFeaturesItems,
+  StyledSection,
+} from "./Features.styled";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
@@ -24,10 +28,11 @@ const Features = () => {
             {items.map((item, index) => (
               <FeatureItem
                 key={index}
+                maxWidth="352px"
                 icon={{
                   url: item.icon.url,
                   positionX: item.icon.positionX,
-                  positionY: "center",
+                  isSprite: true,
                 }}
                 text={
                   <Trans
@@ -41,7 +46,7 @@ const Features = () => {
           </StyledFeaturesItems>
 
           <Button
-              variant="secondary"
+            variant="secondary"
             onClick={scrollToBlock}
             id="features-get-started"
             label={t("GetStarted")}

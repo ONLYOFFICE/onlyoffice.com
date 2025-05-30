@@ -1,5 +1,5 @@
 {
-  "PageTitle": "Online office for Trello",
+  "PageTitle": "Online office for Trello | ONLYOFFICE",
   "PageDescription": "Work on all kinds of office documents within Trello using ONLYOFFICE Docs",
 
   "OnlineOfficeForConnector": "Online office for Trello",
@@ -36,5 +36,5 @@
   "HowToStartStep2": "Get the power-up from the <0>Atlassian Marketplace</0>.",
   "HowToStartStep3": "Configure the power-up and enable JWT.",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"
 }

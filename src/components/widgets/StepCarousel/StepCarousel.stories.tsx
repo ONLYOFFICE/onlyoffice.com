@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Meta, StoryFn } from "@storybook/react";
 import { StepCarousel } from "./StepCarousel";
 import { IStepCarousel } from "./StepCarousel.types";
@@ -20,22 +21,40 @@ export default {
       className: {
         control: { type: "text" },
       },
+      tabs: {
+        control: {
+          type: "object",
+        },
+      },
       items: {
         control: {
           type: "object",
         },
       },
+      activeTab: {
+        control: { type: "number" },
+      },
     },
   },
 } as Meta<typeof StepCarousel>;
 
-const Template: StoryFn<IStepCarousel> = (args: IStepCarousel) => (
+const DefaultTemplate: StoryFn<IStepCarousel> = (args: IStepCarousel) => (
   <Container>
     <StepCarousel {...args} />
   </Container>
 );
 
-export const Default = Template.bind({});
+const TabsTemplate: StoryFn<IStepCarousel> = (args: IStepCarousel) => {
+  const [activeTab, setActiveTab] = useState(0);
+
+  return (
+    <Container>
+      <StepCarousel activeTab={activeTab} onChange={setActiveTab} {...args} />
+    </Container>
+  );
+};
+
+export const Default = DefaultTemplate.bind({});
 Default.args = {
   items: [
     {
@@ -49,6 +68,47 @@ Default.args = {
     {
       imgUrl: "/images/storybook/widgets/step-carousel/step-3.svg",
       heading: "Add the ONLYOFFICE app*",
+    },
+  ],
+};
+
+export const Tabs = TabsTemplate.bind({});
+Tabs.args = {
+  tabs: [
+    {
+      label: "DocSpace",
+      items: [
+        {
+          imgUrl: "/images/storybook/widgets/step-carousel/docspace-step-1.svg",
+          heading: "Create your free DocSpace account.",
+        },
+        {
+          imgUrl: "/images/storybook/widgets/step-carousel/docspace-step-2.svg",
+          heading: "Get the integration app from Drupal Marketplace.",
+        },
+        {
+          imgUrl: "/images/storybook/widgets/step-carousel/docspace-step-3.svg",
+          heading: "Upload and configure the integration app.",
+        },
+      ],
+    },
+    {
+      label: "Docs",
+      items: [
+        {
+          imgUrl: "/images/storybook/widgets/step-carousel/docs-step-1.svg",
+          heading:
+            "Deploy ONLYOFFICE Docs on your own server or sign up for ONLYOFFICE Docs Cloud.",
+        },
+        {
+          imgUrl: "/images/storybook/widgets/step-carousel/docs-step-2.svg",
+          heading: "Get the integration app from Drupal Marketplace.",
+        },
+        {
+          imgUrl: "/images/storybook/widgets/step-carousel/docs-step-3.svg",
+          heading: "Upload and configure the integration app.",
+        },
+      ],
     },
   ],
 };

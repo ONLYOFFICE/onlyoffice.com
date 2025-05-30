@@ -1,122 +1,91 @@
-import { useState } from "react";
-import { useTranslation, Trans } from "next-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import {
-  StyledStepCarousel,
   StyledStepCarouselWrapper,
+  StyledStepCarouselTabs,
+  StyledStepCarouselTab,
+  StyledStepCarouselBox,
+  StyledStepCarouselSlide,
   StyledStepCarouselImg,
   StyledStepCarouselBody,
   StyledStepCarouselNumber,
   StyledStepCarouselHeading,
-  StyledStepCarouselTabs,
-  StyledStepCarouselTab,
 } from "./StepCarousel.styled";
-import {
-  IStepCarousel,
-  IStepCarouselItem,
-  IStepCarouselTab,
-} from "./StepCarousel.types";
+import { IStepCarousel } from "./StepCarousel.types";
 import { CarouselButton } from "@src/components/ui/CarouselButton";
-import { Link } from "@src/components/ui/Link";
 
 const StepCarousel = ({
   id,
   className,
+  tabs,
   items,
-  defaultSelected,
-  namespace,
-  onTabChange,
-  useTabs = false,
+  activeTab,
+  onChange,
 }: IStepCarousel) => {
-  const { t } = useTranslation(namespace);
-  const isTabbed = useTabs && Array.isArray(items) && "id" in items[0];
-  const [selectedTab, setSelectedTab] = useState(
-    isTabbed ? defaultSelected || (items as IStepCarouselTab[])[0].id : "",
-  );
-
-  const handleTabChange = (tabId: string) => {
-    setSelectedTab(tabId);
-    onTabChange?.(tabId);
-  };
-
-  const displayItems = isTabbed
-    ? (items as IStepCarouselTab[]).find((item) => item.id === selectedTab)
-        ?.items || []
-    : (items as IStepCarouselItem[]);
+  const isTabbed = Array.isArray(tabs) && tabs.length > 0;
 
   return (
-    <StyledStepCarousel id={id} className={className}>
+    <div id={id} className={className}>
       {isTabbed && (
         <StyledStepCarouselTabs>
-          {(items as IStepCarouselTab[]).map((item) => (
+          {tabs!.map((tab, i) => (
             <StyledStepCarouselTab
-              key={item.id}
-              $active={item.id === selectedTab}
-              onClick={() => handleTabChange(item.id)}
+              key={i}
+              onClick={() => onChange?.(i)}
+              $active={i === activeTab}
             >
-              {t(item.label)}
+              {tab.label}
             </StyledStepCarouselTab>
           ))}
         </StyledStepCarouselTabs>
       )}
 
-      <Swiper
-        key={isTabbed ? selectedTab : "default"}
-        spaceBetween={32}
-        loop
-        autoHeight
-        modules={[Navigation, Pagination]}
-        pagination={{ clickable: true }}
-        navigation={{
-          prevEl: `.swiper-button-prev.swiper-button-prev-${id}`,
-          nextEl: `.swiper-button-next.swiper-button-next-${id}`,
-        }}
-      >
-        {displayItems.map((item: IStepCarouselItem, index: number) => (
-          <SwiperSlide key={index}>
-            <StyledStepCarouselWrapper>
-              <StyledStepCarouselImg $imgUrl={t(item.imgUrl)} />
-              <StyledStepCarouselBody>
-                <StyledStepCarouselNumber>{index + 1}</StyledStepCarouselNumber>
-                <StyledStepCarouselHeading>
-                  {item.headingLinks ? (
-                    <Trans
-                      t={t}
-                      i18nKey={String(item.heading)}
-                      components={item.headingLinks.map((link, index) => (
-                        <Link
-                          key={index}
-                          href={link.url}
-                          target={link.isExternal ? "_blank" : undefined}
-                          color="main"
-                          textUnderline
-                          hover="underline-none"
-                        />
-                      ))}
-                    />
-                  ) : (
-                    <Trans
-                      t={t}
-                      i18nKey={String(item.heading)}
-                      components={[<strong key={0} />]}
-                    />
-                  )}
-                </StyledStepCarouselHeading>
-              </StyledStepCarouselBody>
-            </StyledStepCarouselWrapper>
-          </SwiperSlide>
+      <StyledStepCarouselWrapper>
+        {(isTabbed ? tabs! : [{ items }]).map((tab, i) => (
+          <StyledStepCarouselBox
+            key={i}
+            $activeTab={i === (typeof activeTab === "number" ? activeTab : 0)}
+          >
+            <Swiper
+              spaceBetween={32}
+              loop
+              autoHeight
+              modules={[Navigation, Pagination]}
+              pagination={{ clickable: true }}
+              navigation={{
+                prevEl: `.swiper-button-prev.swiper-button-prev-${i}`,
+                nextEl: `.swiper-button-next.swiper-button-next-${i}`,
+              }}
+            >
+              {(tab.items ?? []).map((item, index) => (
+                <SwiperSlide key={index}>
+                  <StyledStepCarouselSlide>
+                    <StyledStepCarouselImg $imgUrl={item.imgUrl} />
+                    <StyledStepCarouselBody>
+                      <StyledStepCarouselNumber>
+                        {index + 1}
+                      </StyledStepCarouselNumber>
+                      <StyledStepCarouselHeading>
+                        {item.heading}
+                      </StyledStepCarouselHeading>
+                    </StyledStepCarouselBody>
+                  </StyledStepCarouselSlide>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            <CarouselButton
+              className={`swiper-button-prev swiper-button-prev-${i}`}
+            />
+            <CarouselButton
+              className={`swiper-button-next swiper-button-next-${i}`}
+              direction="right"
+            />
+          </StyledStepCarouselBox>
         ))}
-      </Swiper>
-      <CarouselButton
-        className={`swiper-button-prev swiper-button-prev-${id}`}
-      />
-      <CarouselButton
-        className={`swiper-button-next swiper-button-next-${id}`}
-        direction="right"
-      />
-    </StyledStepCarousel>
+      </StyledStepCarouselWrapper>
+    </div>
   );
 };
 

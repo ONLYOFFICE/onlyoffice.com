@@ -1,6 +1,11 @@
 import { Heading } from "@src/components/ui/Heading";
+import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
+
+const StyledExamplesSection = styled(Section)`
+  border-bottom: 1px solid #e2e2e2;
+`;
 
 const StyledExamplesHeading = styled(Heading)`
   max-width: 736px;
@@ -151,6 +156,7 @@ const StyledExamplesLogo = styled.a`
 `;
 
 export {
+  StyledExamplesSection,
   StyledExamplesHeading,
   StyledExamplesLogosWrapper,
   StyledExamplesLogo,

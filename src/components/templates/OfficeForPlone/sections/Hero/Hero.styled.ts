@@ -4,7 +4,7 @@ import { device } from "@src/utils/device";
 
 export const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   background-image: url("/images/templates/office-for-plone/hero/bg.svg");
   background-repeat: no-repeat;
   background-position: calc(50% - 40px) -321px;
@@ -26,19 +26,19 @@ export const StyledHero = styled(Section)`
 `;
 
 export const StyledHeroWrapper = styled.div`
-  display: flex;
-  row-gap: 32px;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   position: relative;
-  z-index: 1;
+  display: grid;
+  justify-items: center;
+  row-gap: 32px;
+  margin-bottom: 32px;
+  text-align: center;
 `;
 
 export const StyledHeroLogo = styled.div`
   width: 58px;
   height: 58px;
-  background: url("/images/templates/office-for-plone/hero/logo.svg") no-repeat center;
+  background: url("/images/templates/office-for-plone/hero/logo.svg") no-repeat
+    center;
   background-size: contain;
 `;
 

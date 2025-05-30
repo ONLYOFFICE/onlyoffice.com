@@ -7,16 +7,8 @@ import styled from "styled-components";
 const StyledHeroSection = styled(Section)`
   background-image: url("/images/templates/conversion-api/hero/bg.svg");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-
-  @media ${device.tabletS} {
-    background-position: 38% -155px;
-  }
-
-  @media ${device.mobile} {
-    background-position: 45% top;
-  }
+  background-position: calc(50% + 327px) -488px;
+  background-repeat: no-repeat;
 `;
 
 const StyledHeroWrapper = styled.div`
@@ -88,7 +80,7 @@ const StyledHeroText = styled(Text)`
 
 const StyledHeroImage = styled.img`
   max-width: 100%;
-  
+
   @media ${device.tabletS} {
     max-width: 621px;
     width: 100%;

@@ -2,58 +2,7 @@ import styled from "styled-components";
 import { IStepCarouselItem } from "./StepCarousel.types";
 import { device } from "@src/utils/device";
 
-export const StyledStepCarouselTabs = styled.div`
-  border-bottom: 1px solid #e2e2e2;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 96px;
-
-  @media ${device.tabletS} {
-    margin-bottom: 56px;
-  }
-
-  @media ${device.mobile} {
-    margin-bottom: 32px;
-    gap: 8px;
-  }
-`;
-
-export const StyledStepCarouselTab = styled.button<{ $active?: boolean }>`
-  border: none;
-  background: transparent;
-  color: ${({ $active }) => ($active ? "#ff6f3d" : "#33333")};
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  line-height: 1.33em;
-  padding: 0px 0 16px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 205px;
-  cursor: pointer;
-      position: relative;
-  transition: all 0.2s ease;
-
-  ${({ $active }) =>
-    $active &&
-    `&:after { 
-    display: block;
-    content: " ";
-    width: 100%;
-    height: 1px;
-    background-color: #ff6f3d;
-    position: absolute;
-    top: 32px;
-    left: 0;
-  }`}
-
-  @media ${device.mobile} {
-    width: calc(50% - 40px);
-  }
-`;
-
-const StyledStepCarousel = styled.div`
+const StyledStepCarouselWrapper = styled.div`
   position: relative;
   padding: 0 80px;
 
@@ -113,7 +62,50 @@ const StyledStepCarousel = styled.div`
   }
 `;
 
-const StyledStepCarouselWrapper = styled.div`
+const StyledStepCarouselTabs = styled.div`
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 96px;
+
+  @media ${device.tabletS} {
+    margin-bottom: 56px;
+  }
+
+  @media ${device.mobile} {
+    margin-bottom: 32px;
+  }
+`;
+
+const StyledStepCarouselTab = styled.button<{ $active: boolean }>`
+  border: none;
+  border-bottom: 1px solid
+    ${(props) => (props.$active ? "#ff6f3d" : "transparent")};
+  padding: 8px 32px 7px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: ${(props) => (props.$active ? "#ff6f3d" : "#444444")};
+  min-width: 168px;
+  background-color: transparent;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+  cursor: pointer;
+
+  @media ${device.mobile} {
+    min-width: 136px;
+  }
+`;
+
+const StyledStepCarouselBox = styled.div<{ $activeTab?: boolean }>`
+  display: ${(props) => (props.$activeTab ? "block" : "none")};
+`;
+
+const StyledStepCarouselSlide = styled.div`
   display: grid;
   grid-template-columns: minmax(200px, 448px) minmax(200px, 480px);
   column-gap: 32px;
@@ -131,6 +123,7 @@ const StyledStepCarouselImg = styled.div<{
   background-image: url(${(props) => props.$imgUrl});
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 
   @media ${device.tablet} {
     margin: 0 auto;
@@ -182,8 +175,11 @@ const StyledStepCarouselHeading = styled.div`
 `;
 
 export {
-  StyledStepCarousel,
   StyledStepCarouselWrapper,
+  StyledStepCarouselTabs,
+  StyledStepCarouselTab,
+  StyledStepCarouselBox,
+  StyledStepCarouselSlide,
   StyledStepCarouselImg,
   StyledStepCarouselBody,
   StyledStepCarouselNumber,

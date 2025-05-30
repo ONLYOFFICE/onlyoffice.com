@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 
 const StyledMarketplaceConnector = styled.section`
-  background-color: #F9F9F9;
-  border-top: 1px solid #E2E2E2;
-  border-bottom: 1px solid #E2E2E2;;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
   overflow: hidden;
 `;
 
@@ -65,11 +65,13 @@ const StyledMarketplaceConnectorBody = styled.div`
 `;
 
 const StyledMarketplaceConnectorImg = styled.div`
-  width: 328px;
+  width: 100%;
+  max-width: 328px;
   height: 100%;
   background-image: url("/images/templates/office-for-drupal/marketplace-connector/oo-plugins.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   z-index: 1;
 
   @media ${device.mobile} {

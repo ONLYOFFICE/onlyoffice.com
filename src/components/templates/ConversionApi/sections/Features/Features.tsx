@@ -33,7 +33,7 @@ const Features = () => {
                 <Trans
                   t={t}
                   i18nKey={String(item.text)}
-                  components={item.links?.map((link, index) => (
+                  components={item.text.links?.map((link, index) => (
                     <Link
                       key={index}
                       href={link.href}
@@ -45,7 +45,7 @@ const Features = () => {
                   ))}
                 />
               }
-              heading={t(item.heading ? item.heading : "")}
+              heading={t(String(item.heading || ""))}
               variant="horizontal"
             />
           ))}

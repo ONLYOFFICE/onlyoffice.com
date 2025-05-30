@@ -61,7 +61,6 @@ const Hero = () => {
           <iframe
             width="100%"
             height="auto"
-            style={{ aspectRatio: "64/36" }}
             src="https://www.youtube.com/embed/ZDKAY-ZWTb0?si=tOGQHNOErvbjBo-z&autoplay=1&mute=1&loop=1"
             title="YouTube"
             frameBorder="0"

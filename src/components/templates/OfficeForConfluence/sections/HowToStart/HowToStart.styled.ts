@@ -26,6 +26,7 @@ const StyledHowToStart = styled(Section)`
     scroll-margin-top: 48px;
   }
 `;
+
 const StyledHowToStartInfo = styled.div`
   display: grid;
   row-gap: 72px;

@@ -23,9 +23,14 @@ const Conditions = () => {
             <FeatureItem
               key={index}
               variant="horizontal"
+              mobileVariant="horizontal-icon-left"
               icon={{
-                ...icon,
-                mobileHorizontalVariant: "vertical",
+                url: icon.url,
+                positionX: icon.positionX,
+                mobileWidth: "48px",
+                mobileHeight: "48px",
+                mobilePositionX: icon.mobilePositionX,
+                isSprite: true,
               }}
               heading={t(String(heading))}
               text={t(String(text))}

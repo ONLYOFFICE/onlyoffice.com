@@ -16,7 +16,9 @@ const StyledModal = styled.div<{
   z-index: 1001;
   opacity: ${(props) => (props.$isOpen ? 1 : 0)};
   visibility: ${(props) => (props.$isOpen ? "visible" : "hidden")};
-  transition: opacity 0.2s, visibility 0.2s;
+  transition:
+    opacity 0.2s,
+    visibility 0.2s;
 `;
 
 const StyledModalContainer = styled.div`

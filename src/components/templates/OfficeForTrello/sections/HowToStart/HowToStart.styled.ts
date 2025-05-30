@@ -26,5 +26,4 @@ const StyledHowToStart = styled(Section)`
   }
 `;
 
-
 export { StyledHowToStart };

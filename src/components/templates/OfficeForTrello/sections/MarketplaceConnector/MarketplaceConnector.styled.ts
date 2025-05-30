@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 
 const StyledMarketplaceConnector = styled.section`
-  background: linear-gradient(to left,#00B8D9,#0065FF);
+  background: linear-gradient(to left, #00b8d9, #0065ff);
   overflow: hidden;
   position: relative;
 

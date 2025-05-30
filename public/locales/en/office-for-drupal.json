@@ -1,5 +1,5 @@
 {
-  "PageTitle": "Online Office for Drupal",
+  "PageTitle": "Online Office for Drupal | ONLYOFFICE",
   "PageDescription": "Work on office files within Drupal",
 
   "OnlineOfficeForConnector": "Online Office for <0>Drupal</0>",
@@ -23,7 +23,9 @@
   "DocumentsScreen1Tab4Label": "Prevent downloading, printing and copying documents from your website.",
   "DocumentsScreen1Tab4ImgUrl": "/images/templates/office-for-drupal/website/screen4.png",
   "DocumentsScreen1Tab4ImgUrl2x": "/images/templates/office-for-drupal/website/screen4@2x.png",
+  "soon": "soon",
 
+  "DocsAppHeading": "ONLYOFFICE <0>Docs app</0> for Drupal",
   "DocumentsScreen2Header": "Efficiently manage documents from your Drupal account",
   "DocumentsScreen2Tab1Label": "Create a secure space for all your docs. Easily access it anytime anywhere.",
   "DocumentsScreen2Tab1ImgUrl": "/images/templates/office-for-drupal/account/screen1.png",
@@ -54,12 +56,12 @@
   "DocsAppTab3ImgUrl2x": "/images/templates/office-for-drupal/docs-app/screen3@2x.png",
 
   "WhyOO": "Why ONLYOFFICE?",
-  "Reason1": "A robust set of editing, formatting, and styling tools. Integrated <0>AI helper.</0>",
-  "Reason2": "<0>Enhanced security.</0> Flexible access rights and JWT. Open source code available on GitHub.",
-  "Reason3": "Integration with <0>ONLYOFFICE Docs Cloud</0> solution with no installation required.",
-  "Reason4": "Support for more than <0>50 file formats</0>, fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
-  "Reason5": "Real-time and paragraph-locking <0>co-editing</0>, review, version history, document comparison, comments &amp; chat. Audio and video calls.",
-  "Reason6": "Self-hosted solution. Scalable Enterprise versions. <0>Free 30-day trial.</0> Educational discounts.",
+  "Reason1": "A robust set of editing, formatting, and styling tools. <0>Integrated AI helper</0> (ChatGPT or ZhiPu Copilot).",
+  "Reason2": "<0>Real-time</0> and paragraph-locking co-editing, review, version history, document comparison, comments & mentions.",
+  "Reason3": "<0>Built-in chat</0> and Telegram integration. Jitsi and Rainbow plugins for real-time communication.",
+  "Reason4": "Support for more than <0>50 file formats</0>. Fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Enhanced security.</0> Flexible access rights and JWT. Activity tracking and audit reporting. Encryption at rest and in transit. Open source code.",
+  "Reason6": "<0>Free plan to start.</0> Business plan for more admins, bigger storage, enhanced security and professional support. Self-hosted solution for total control over your data.",
 
   "HowToStart": "How to start",
   "HowToStartStep1Docs": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
@@ -71,8 +73,8 @@
 
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?",
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?",
 
   "Docs": "Docs",
-  "Docspace": "DocSpace"
+  "DocSpace": "DocSpace"
 }

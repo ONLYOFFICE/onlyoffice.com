@@ -1,8 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
-import {
-  StyledFeaturesWrapper,
-  StyledFeaturesItems,
-} from "./Features.styled";
+import { StyledFeaturesWrapper, StyledFeaturesItems } from "./Features.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
@@ -29,15 +26,17 @@ const Features = () => {
             {items.map((item, index) => (
               <FeatureItem
                 key={index}
+                mobileVariant="vertical"
                 icon={{
                   url: item.icon.url,
                   positionX: item.icon.positionX,
+                  isSprite: true,
                 }}
                 text={
                   <Trans
                     t={t}
                     i18nKey={String(item.text)}
-                    components={item.links?.map((link, index) => (
+                    components={item.textLinks?.map((link, index) => (
                       <Link
                         key={index}
                         href={link.href}
@@ -49,7 +48,7 @@ const Features = () => {
                     ))}
                   />
                 }
-                heading={t(item.heading ? item.heading : "")}
+                heading={t(String(item.heading))}
                 variant="horizontal"
               />
             ))}

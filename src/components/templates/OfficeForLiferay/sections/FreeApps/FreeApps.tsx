@@ -2,18 +2,17 @@ import { useTranslation, Trans } from "next-i18next";
 import {
   StyledFreeAppsHeading,
   StyledSection,
-  StyledChooseSolution,
+  StyledSolutionCard,
 } from "./FreeApps.styled";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
-import { items } from "./data/items";
 import { Button } from "@src/components/ui/Button";
 
 const FreeApps = () => {
   const { t } = useTranslation("office-for-liferay");
 
   return (
-    <StyledSection>
+    <StyledSection background="#f9f9f9">
       <Container>
         <StyledFreeAppsHeading level={2} textAlign="center">
           <Trans
@@ -23,28 +22,26 @@ const FreeApps = () => {
           />
         </StyledFreeAppsHeading>
 
-        <StyledChooseSolution
-          largeItems={items.map((item) => ({
-            imgUrl: item.imgUrl,
-            text: (
-              <Trans
-                t={t}
-                i18nKey={String(item.text)}
-                components={[<b key={0} />]}
-              />
-            ),
-            customLinks: item.customLinks?.map((link, index) =>
-              <Button
-                  key={index}
-                  id={link.id}
-                  as="a"
-                  href={link.url}
-                  target={link.isExternal ? "_blank" : undefined}
-                >
-                  {t(link.label ?? "")}
-                </Button>
-            ),
-          }))}
+        <StyledSolutionCard
+          large
+          imgUrl="/images/templates/office-for-liferay/free-apps/desktop.svg"
+          text={
+            <Trans
+              t={t}
+              i18nKey="FreeAppsDesktopText"
+              components={[<b key={0} />]}
+            />
+          }
+          customLinks={[
+            <Button
+              key={0}
+              id="free-apps-free-desktop-apps"
+              as="a"
+              href="/download-desktop?from=officeforliferay"
+            >
+              {t("GetFreeDesktopApps")}
+            </Button>,
+          ]}
         />
       </Container>
     </StyledSection>

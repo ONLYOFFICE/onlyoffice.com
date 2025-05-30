@@ -188,7 +188,9 @@ const StyledCategoryFilterDropdownBtn = styled.button<{ $isActive?: boolean }>`
   width: 100%;
   color: ${(props) => (props.$isActive ? "#ff6f3d" : "#333333")};
   background-color: ${(props) => (props.$isActive ? "#f5f5f5" : "transparent")};
-  transition: color 0.2s, background-color 0.2s;
+  transition:
+    color 0.2s,
+    background-color 0.2s;
   cursor: pointer;
 
   span {

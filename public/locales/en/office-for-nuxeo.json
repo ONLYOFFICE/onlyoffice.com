@@ -1,12 +1,12 @@
 {
-  "PageTitle": "Collaborative online office for Nuxeo",
+  "PageTitle": "Collaborative online office for Nuxeo | ONLYOFFICE Docs",
   "PageDescription": "Edit and collaborate on docx, pptx, xlsx, create fillable forms within Nuxeo",
 
   "OnlineOfficeForConnector": "Online office for <0>Nuxeo</0>",
   "Subheader": "Edit and co-author office documents online within Nuxeo",
   "GetItNow": "Get it now",
   "FullyCompatibleWithDocxXlsxAndPptx": "Work with text documents, spreadsheets, presentations, and forms",
-  
+
   "HeroTab1ImgUrl": "/images/templates/office-for-nuxeo/hero/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-nuxeo/hero/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-nuxeo/hero/screen2.png",

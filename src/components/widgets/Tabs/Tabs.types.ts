@@ -1,4 +1,4 @@
-export interface ITabs {
+export interface ITabs<T extends string> {
   /** The unique identifier. */
   id?: string;
   /** Additional CSS class names. */
@@ -8,7 +8,7 @@ export interface ITabs {
     /** Unique identifier for the tab. */
     id: string;
     /** Label displayed in the tab. */
-    label: React.ReactNode;
+    label: string;
     /** Content rendered when the tab is active. */
     content: React.ReactNode;
   }[];
@@ -19,5 +19,5 @@ export interface ITabs {
   /** Background color for the tab container. */
   bgColor?: string;
   /** Callback function triggered when a tab is selected. */
-  onChange: (value: string) => void;
+  onChange: (value: T) => void;
 }

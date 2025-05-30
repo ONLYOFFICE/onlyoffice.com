@@ -1,5 +1,5 @@
 {
-  "PageTitle": "Online office suite for Jira",
+  "PageTitle": "Online office suite for Jira | ONLYOFFICE",
   "PageDescription": "Edit and co-edit documents, create fillable forms within Jira",
 
   "OnlineOfficeForConnector": "Online office for Jira",
@@ -36,9 +36,8 @@
   "HowToStartStep3": "Configure the connector and enable JWT.",
   "HowToStartStep3Url": "/images/templates/office-for-jira/how-to-start/step3.svg",
 
-
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
   "HowToConnect": "How to integrate ONLYOFFICE Docs and Jira Software",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"
 }
