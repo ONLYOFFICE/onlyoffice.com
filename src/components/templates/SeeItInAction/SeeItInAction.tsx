@@ -1,6 +1,6 @@
 import { Hero } from "./sections/Hero";
 import { Actions } from "./sections/Actions";
-import { GetStarted } from "../Main/sections/GetStarted";
+import { GetStarted } from "@src/components/modules/GetStarted";
 
 const SeeItInActionTemplate = () => {
   return (
