@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
+import { Button } from "@src/components/ui/Button";
 
 import {
   StyledHeroButton,
@@ -7,7 +8,6 @@ import {
   StyledHeroSection,
   StyledHeroText
 } from "./Hero.styled";
-import { Button } from "@src/components/ui/Button";
 
 const Hero = () => {
   const { t } = useTranslation("find-partners");
