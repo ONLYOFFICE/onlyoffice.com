@@ -109,6 +109,11 @@ const StyledTrustedIconList = styled.div<{
 
   @media ${device.tabletS} {
     column-gap: 32px;
+    max-height: ${({ $showMore }) => $showMore ? "250px" : "2500px"};
+  }
+
+  @media ${device.mobile} {
+    column-gap: 0;
   }
 
   @starting-style {
@@ -131,6 +136,11 @@ const StyledTrustedIconItem = styled.div<{
 
   &:hover {
     filter: grayscale(0);
+  }
+
+  @media ${device.mobile} {
+    width: 144px;
+    height: 77px;
   }
 `;
 
