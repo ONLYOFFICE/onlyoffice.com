@@ -18,7 +18,7 @@ const useOnScroll = (containerRef: RefObject<HTMLUListElement | null>) => {
     onScroll();
 
     return () => el.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [containerRef]);
 
   return { atStart, atEnd };
 }
