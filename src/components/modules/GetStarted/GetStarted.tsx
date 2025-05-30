@@ -4,14 +4,14 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { ChooseSolution } from "@src/components/widgets/ChooseSolution";
 import { Link } from "@src/components/ui/Link";
+import { IGetStartedProps } from "./GetStarted.types";
 import { items } from "./data/items";
-import { IGetStarted } from "./GetStarted.types";
 
-const GetStarted = ({ background, header }: IGetStarted) => {
-  const { t } = useTranslation("GetStarted");
+const GetStarted = ({ background, header }: IGetStartedProps) => {
+  const { t } = useTranslation("main");
 
   return (
-    <Section tabletSpacing={["88px", "80px"]} background={background}>
+    <Section background={background} tabletSpacing={["88px", "80px"]}>
       <Container>
         <StyledGetStartedHeading
           level={2}

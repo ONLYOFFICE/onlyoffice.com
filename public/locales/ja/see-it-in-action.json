@@ -1,0 +1,46 @@
+{
+  "PageTitle": "ONLYOFFICE Docs の主な機能を確認 | ONLYOFFICE",
+  "PageDescription": "docx、xlsx、pptx ファイルの編集、PDF の表示、入力可能なフォームの作成、リアルタイムでの共同作業を通じて、ONLYOFFICE の主要機能をご確認ください。ダウンロードや登録は不要です。",
+
+  "HeroHeadingSeeIt": "実際に使ってみる",
+  "HeroTextCurious": "インターフェースがどのようなものか、登録なしで主要機能を試してみたいですか？",
+
+  "ActionsOpen": "開く",
+  "ActionsEditDocx": "DOCX を編集",
+  "ActionsExampleDocumentTitleDocx": "例のドキュメントタイトル.docx",
+  "ActionsEditXlsx": "XLSX を編集",
+  "ActionsExampleDocumentTitleXlsx": "例のドキュメントタイトル.xlsx",
+  "ActionsEditPptx": "PPTX を編集",
+  "ActionsExampleDocumentTitlePptx": "例のドキュメントタイトル.pptx",
+  "ActionsEditPdf": "PDF を編集",
+  "ActionsExampleDocumentTitlePdf": "例のドキュメントタイトル.pdf",
+  "ActionsCreateForm": "フォームを作成",
+  "ActionsFillInPdfForm": "PDF フォームに記入",
+  "ActionsCollaborate": "共同作業",
+
+  "ActionsDemoPreview": "デモプレビュー",
+  "ActionsDemoModalHeadingOpen": "DOCX を編集用に開く",
+  "ActionsDemoModalButtonClose": "閉じる",
+
+  "GetStartedHeading": "利用開始と作業場所の選択",
+
+  "GetStartedItemTitleInOnlyOffice": "ONLYOFFICE DocSpace で",
+  "GetStartedItemTextCreate": "安全な DocSpace 内でルームを作成し、人を招待し、あらゆる種類のドキュメントをデスクトップやモバイルデバイスから表示、編集、共同作業できます。",
+  "GetStartedItemLinkStart": "無料アカウントで開始",
+
+  "GetStartedItemTitleYouUse": "お使いのプラットフォームで",
+  "GetStartedItemTextConnect": "アプリから直接ドキュメントを編集するために Docs を接続します。<0>40 以上のすぐに使える統合</0>：Box、Moodle、Nextcloud、Odoo、Wordpress など。",
+  "GetStartedItemLink": "今すぐ Docs を入手",
+
+  "GetStartedItemTitleYouBuild": "構築中のプラットフォームで",
+  "GetStartedItemTextIntegrate": "Docs をサービスに統合し、自社ブランドでお客様に強力なドキュメント編集および作成機能を提供します。",
+  "GetStartedItemLinkLearn": "詳細を見る",
+
+  "GetStartedItemTitleYourPc": "お使いの PC から",
+  "GetStartedItemTextEdit": "Windows、Linux、macOS 用の無料オフィスアプリで、オフラインでドキュメントを編集できます。",
+  "GetStartedItemLinkDownload": "今すぐダウンロード",
+
+  "GetStartedItemTitleMobile": "モバイルデバイスから",
+  "GetStartedItemTextWork": "iOS および Android デバイス用の無料アプリで、外出先でもドキュメントを操作できます。",
+  "GetStartedItemLinkInstall": "今すぐインストール"
+}

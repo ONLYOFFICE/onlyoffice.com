@@ -1,4 +1,4 @@
-export interface IDeveloperEditionFormData {
+export interface IDeveloperEditionPricesFormData {
   hosting: "Cloud" | "On-premises";
   development: boolean;
   devServersNumber: string;
