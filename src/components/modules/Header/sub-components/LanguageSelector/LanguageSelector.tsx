@@ -6,7 +6,7 @@ import {
   StyledLanguageSelectorButton,
   StyledLanguageSelectorList,
 } from "./LanguageSelector.styled";
-import { languages } from "@src/config/languages";
+import { languages } from "@src/config/data/languages";
 import { ArrowDownIcon, FlagIcon } from "@src/components/icons";
 
 const LanguageSelector = () => {

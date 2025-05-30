@@ -16,32 +16,40 @@ import {
   StyledHeroTotalPrice,
   StyledHeroCaption,
 } from "./Hero.styled";
-import { IDeveloperEditionFormData } from "./Hero.types";
+import { IDeveloperEditionPricesFormData } from "./Hero.types";
 import { IDeveloperEditionPricesTemplate } from "@src/components/templates/DeveloperEditionPrices";
 import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
+import { useRewardful } from "@src/utils/useRewardful";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
 import { Button } from "@src/components/ui/Button";
 import { Tooltip } from "@src/components/ui/Tooltip";
 import { Link } from "@src/components/ui/Link";
+import { Text } from "@src/components/ui/Text";
 import { LabeledWrapper } from "@src/components/widgets/LabeledWrapper";
 import { ToggleButtons } from "@src/components/widgets/ToggleButtons";
 import { Tabs } from "@src/components/widgets/Tabs";
 import { CounterSelector } from "@src/components/widgets/CounterSelector";
-import { Text } from "@src/components/ui/Text";
 import { List } from "@src/components/widgets/pricing/List";
 import { CounterSelectorWrapper } from "@src/components/widgets/pricing/CounterSelectorWrapper";
 import { SelectorsWrapper } from "@src/components/widgets/pricing/SelectorsWrapper";
 import { SelectorItemWrapper } from "@src/components/widgets/pricing/SelectorItemWrapper";
-import { QuoteModal } from "@src/components/widgets/pricing/QuoteModal";
+import {
+  QuoteModal,
+  IQuoteModalApiRequest,
+  IQuoteModalSendEmailRequest,
+  IQuoteModalPipedriveRequest,
+  IQuoteModalFormData,
+} from "@src/components/widgets/pricing/QuoteModal";
+import { DeveloperEditionPricesCloudEmail } from "@src/components/emails/DeveloperEditionPricesCloudEmail";
+import { DeveloperEditionPricesOnPremisesEmail } from "@src/components/emails/DeveloperEditionPricesOnPremisesEmail";
 
 const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
   const { t } = useTranslation("developer-edition-prices");
   const currency = getCurrencyByLocale(locale);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState<IDeveloperEditionFormData>({
+  const initialFormData: IDeveloperEditionPricesFormData = {
     hosting: "On-premises",
     development: true,
     devServersNumber: "1",
@@ -60,7 +68,42 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
     nativeMobileApps: false,
     desktopApps: false,
     trainingCourses: false,
+  };
+  const initialQuoteFormData: IQuoteModalFormData = {
+    fullName: "",
+    email: "",
+    phone: "",
+    companyName: "",
+    hCaptcha: null,
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState(initialFormData);
+  const [quoteFormData, setQuoteFormData] = useState(initialQuoteFormData);
+  const [affiliate, setAffiliate] = useState<{
+    id?: string;
+    token?: string;
+    params?: string;
+  }>({
+    id: "",
+    token: "",
+    params: "",
   });
+
+  const { getClientReferenceId, getAffiliateToken, getClientReferenceParam } =
+    useRewardful({
+      onReady: () => {
+        const id = getClientReferenceId();
+        const token = getAffiliateToken();
+        const params = getClientReferenceParam();
+
+        setAffiliate((prev) =>
+          prev.id === id && prev.token === token && prev.params === params
+            ? prev
+            : { id, token, params },
+        );
+      },
+    });
 
   const hostingIsCloud = formData.hosting === "Cloud";
   const hostingIsOnPremises = formData.hosting === "On-premises";
@@ -93,6 +136,174 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
       Plus: productsData.plusOnPremises,
       Premium: productsData.premiumOnPremises,
     }[formData.supportLevel] || null;
+
+  const apiRequest = async ({
+    from,
+    utmSource,
+    utmCampaign,
+    utmContent,
+    utmTerm,
+  }: IQuoteModalApiRequest) => {
+    const response = await fetch("/api/developer-edition-prices", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        fullName: quoteFormData.fullName,
+        email: quoteFormData.email,
+        phone: quoteFormData.phone,
+        companyName: quoteFormData.companyName,
+        hosting: formData.hosting,
+        development: formData.development,
+        devServerNumber: formData.devServersNumber,
+        production: formData.production,
+        prodServerNumber: formData.prodServerNumber,
+        connectionsNumber: formData.connectionsNumber,
+        nonProduction: formData.nonProduction,
+        nonProdServerNumber: formData.nonProdServerNumber,
+        supportLevel: formData.supportLevel,
+        branding: formData.branding,
+        multiTenancy: formData.multiTenancy,
+        disasterRecovery: formData.disasterRecovery,
+        multiServerDeployment: formData.multiServerDeployment,
+        accessToAPI: formData.accessToAPI,
+        liveViewer: formData.liveViewer,
+        nativeMobileApps: formData.nativeMobileApps,
+        desktopApps: formData.desktopApps,
+        trainingCourses: formData.trainingCourses,
+        devPricesPart: "-",
+        from,
+        utmSource,
+        utmCampaign,
+        utmContent,
+        utmTerm,
+      }),
+    });
+
+    return response.json();
+  };
+
+  const sendEmailRequest = async ({
+    from,
+    errorFlag,
+    utmCampaignFlag,
+    errorText,
+    isSelected,
+  }: IQuoteModalSendEmailRequest) => {
+    const response = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        from,
+        to: [process.env.NEXT_PUBLIC_SALES_EMAIL],
+        subject: `${errorFlag} - Docs Developer Request (${formData.hosting}) ${utmCampaignFlag}[from: ${from}]`,
+        html:
+          formData.hosting === "Cloud"
+            ? DeveloperEditionPricesCloudEmail({
+                fullName: quoteFormData.fullName,
+                email: quoteFormData.email,
+                phone: quoteFormData.phone,
+                companyName: quoteFormData.companyName,
+                supportLevel: formData.supportLevel,
+                accessToAPI: isSelected(formData.accessToAPI),
+                liveViewer: isSelected(formData.liveViewer),
+                nativeMobileApps: isSelected(formData.nativeMobileApps),
+                desktopApps: isSelected(formData.desktopApps),
+                trainingCourses: isSelected(formData.trainingCourses),
+                language: locale,
+                affiliateId: affiliate.id || "",
+                affiliateToken: affiliate.token || "",
+                errorText,
+              })
+            : formData.hosting === "On-premises"
+              ? DeveloperEditionPricesOnPremisesEmail({
+                  fullName: quoteFormData.fullName,
+                  email: quoteFormData.email,
+                  phone: quoteFormData.phone,
+                  companyName: quoteFormData.companyName,
+                  development: isSelected(formData.development),
+                  devServersNumber: formData.devServersNumber,
+                  production: isSelected(formData.production),
+                  prodServerNumber: formData.prodServerNumber,
+                  connectionsNumber: formData.connectionsNumber,
+                  nonProduction: isSelected(formData.nonProduction),
+                  nonProdServerNumber: formData.nonProdServerNumber,
+                  branding: formData.branding,
+                  multiTenancy: isSelected(formData.multiTenancy),
+                  disasterRecovery: isSelected(formData.disasterRecovery),
+                  multiServerDeployment: isSelected(
+                    formData.multiServerDeployment,
+                  ),
+                  supportLevel: formData.supportLevel,
+                  accessToAPI: isSelected(formData.accessToAPI),
+                  liveViewer: isSelected(formData.liveViewer),
+                  nativeMobileApps: isSelected(formData.nativeMobileApps),
+                  desktopApps: isSelected(formData.desktopApps),
+                  trainingCourses: isSelected(formData.trainingCourses),
+                  language: locale,
+                  affiliateId: affiliate.id || "",
+                  affiliateToken: affiliate.token || "",
+                  errorText,
+                })
+              : null,
+      }),
+    });
+
+    return response.json();
+  };
+
+  const pipedriveRequest = async ({
+    _ga,
+    utmSource,
+    utmCampaign,
+    title,
+    region,
+    from,
+  }: IQuoteModalPipedriveRequest) => {
+    const response = await fetch("/api/pipedrive", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        owner_id: 12769244,
+        person_id: 131,
+        visible_to: "3",
+        "08f603bf9e0032d5a9f9e5cd39ca8c7a4374ac82": _ga,
+        was_seen: false,
+        title: `devep Docs Developer - ${title} - ${quoteFormData.email} - ${region}`,
+        "6654a8f8686bdba60bbcdf6e69313c150f40b088": JSON.stringify({
+          fullName: quoteFormData.fullName,
+          email: quoteFormData.email,
+          phone: quoteFormData.phone,
+          companyName: quoteFormData.companyName,
+          hosting: formData.hosting,
+          development: formData.development,
+          devServerNumber: formData.devServersNumber,
+          production: formData.production,
+          prodServerNumber: formData.prodServerNumber,
+          connectionsNumber: formData.connectionsNumber,
+          nonProduction: formData.nonProduction,
+          nonProdServerNumber: formData.nonProdServerNumber,
+          supportLevel: formData.supportLevel,
+          branding: formData.branding,
+          multiTenancy: formData.multiTenancy,
+          disasterRecovery: formData.disasterRecovery,
+          multiServerDeployment: formData.multiServerDeployment,
+          accessToAPI: formData.accessToAPI,
+          liveViewer: formData.liveViewer,
+          nativeMobileApps: formData.nativeMobileApps,
+          desktopApps: formData.desktopApps,
+          trainingCourses: formData.trainingCourses,
+          from,
+          devPricesPart: "-",
+          type: "docsdeveloperrequest",
+          langOfPage: locale,
+          ...(utmSource && { utmSource }),
+          ...(utmCampaign && { utmCampaign }),
+        }),
+      }),
+    });
+
+    return response.json();
+  };
 
   return (
     <StyledHero
@@ -154,7 +365,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                   { id: "On-premises", label: { name: t("OnPremises") } },
                 ]}
                 selected={formData.hosting}
-                onChange={(value: IDeveloperEditionFormData["hosting"]) =>
+                onChange={(value: IDeveloperEditionPricesFormData["hosting"]) =>
                   setFormData((prev) => ({ ...prev, hosting: value }))
                 }
               />
@@ -327,7 +538,9 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                       { id: "White Label", label: { name: t("WhiteLabel") } },
                     ]}
                     selected={formData.branding}
-                    onChange={(value: IDeveloperEditionFormData["branding"]) =>
+                    onChange={(
+                      value: IDeveloperEditionPricesFormData["branding"],
+                    ) =>
                       setFormData((prev) => ({
                         ...prev,
                         branding: value,
@@ -438,9 +651,9 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                 selected={formData.supportLevel}
                 bgColor="#f5f5f5"
                 collapsible
-                onChange={(value: IDeveloperEditionFormData["supportLevel"]) =>
-                  setFormData({ ...formData, supportLevel: value })
-                }
+                onChange={(
+                  value: IDeveloperEditionPricesFormData["supportLevel"],
+                ) => setFormData({ ...formData, supportLevel: value })}
               />
             </LabeledWrapper>
 
@@ -571,9 +784,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
         )}
 
         <QuoteModal
-          locale={locale}
           isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
           heading={
             isOrderNow
               ? t("FillInTheFormToReceive")
@@ -603,7 +814,16 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
               ]}
             />
           }
+          initialFormData={initialFormData}
+          initialQuoteFormData={initialQuoteFormData}
+          setFormData={setFormData}
+          quoteFormData={quoteFormData}
+          setQuoteFormData={setQuoteFormData}
           buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
+          apiRequest={apiRequest}
+          sendEmailRequest={sendEmailRequest}
+          pipedriveRequest={pipedriveRequest}
+          onClose={() => setIsModalOpen(false)}
         />
       </Container>
     </StyledHero>
