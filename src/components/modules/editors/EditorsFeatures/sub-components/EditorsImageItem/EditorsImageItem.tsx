@@ -1,6 +1,7 @@
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 import { IEditorsImageItemProps } from "./EditorsImageItem.types";
 import { useRef } from "react";
+import { StyledWrapper } from "./EditorsImageItem.styled";
 
 export const EditorsImageItem = ({
   item,
@@ -36,14 +37,15 @@ export const EditorsImageItem = ({
   });
 
   return (
-    <div ref={wrapperRef} onClick={handleClick}>
+    <StyledWrapper ref={wrapperRef} onClick={handleClick}>
       <FeatureImageItem
+        id={item.id}
         heading={item.heading}
         text={item.text}
         position={item.position}
         image={item.image}
         links={links}
       />
-    </div>
+    </StyledWrapper>
   );
 };

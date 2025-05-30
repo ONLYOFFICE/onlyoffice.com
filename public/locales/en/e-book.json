@@ -4,6 +4,8 @@
 
   "Header": "Online <0>e-book</0> reader, creator and converter for your web app",
   "SubHeader": "Open and view e-books online, convert DOCX to EPUB and FB2",
+  "HeroImgUrl": "/images/templates/e-book/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/e-book/hero/hero@2x.png",
   "GetItNow": "Get it now",
 
   "SwitcherTitle1": "Read",
@@ -16,7 +18,7 @@
   "Feature1ImgUrl": "/images/templates/e-book/features/screen1.png",
   "Feature1ImgUrl2x": "/images/templates/e-book/features/screen1@2x.png",
   "Feature2Title": "Create interactive e-books",
-  "Feature2Desc": "Writing your own book? Make use of multiple styling and formatting tools. Insert a table of contents, refer to images, objects, and charts with a table of figures, explain certain points in footnotes or endnotes, add bookmarks and clickable links to useful resources.<0> Apply watermarks to protect intellectual property. Give your document a professional layout by setting mirror & gutter margins for pages that will be bound together.",
+  "Feature2Desc": "Writing your own book? Make use of multiple styling and formatting tools. Insert a table of contents, refer to images, objects, and charts with a table of figures, explain certain points in footnotes or endnotes, add bookmarks and clickable links to useful resources.<2> Apply watermarks to protect intellectual property. Give your document a professional layout by setting mirror & gutter margins for pages that will be bound together.",
   "Feature2ImgUrl": "/images/templates/e-book/features/screen2.png",
   "Feature2ImgUrl2x": "/images/templates/e-book/features/screen2@2x.png",
   "Feature3Title": "Co-author effectively",
@@ -38,6 +40,7 @@
   "BlogLink": "https://www.onlyoffice.com/blog/2023/09/how-to-write-a-book",
   "TutorialsDesc": "How to create a bibliography",
   "TutorialsLink": "https://www.onlyoffice.com/blog/2024/01/bibliography",
+  "TutorialsImgUrl": "/images/templates/e-book/learn-more/tutorial.svg",
   "HintsDesc": "Guide to academic writing",
   "HintsLink": "https://www.onlyoffice.com/blog/2022/08/what-is-academic-writing",
 

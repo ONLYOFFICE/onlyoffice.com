@@ -34,7 +34,8 @@ const EditorsFeatures = ({ items, buttons }: IEditorsFeatures) => {
                     t={t}
                     components={[
                       <span key={0} style={{ fontWeight: "bold" }} />,
-                      <span key={1} style={{ fontWeight: "bold" }} />,
+                      <span key={1} style={{ fontWeight: "bold", fontStyle: "italic" }} />,
+                      <span key={2} style={{ display: "block" }} />,
                     ]}
                   >
                     {item.text}
