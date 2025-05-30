@@ -19,8 +19,7 @@ import {
 
 const Hero = ({ userPreview }: ISuccessStoriesUserPreview) => {
   const { t } = useTranslation("success-stories");
-
-  // 1) приводим к строке  2) приводим к массиву
+  
   const rawIndustry = t(userPreview?.profile.industry || "", {
     returnObjects: true,
   }) as string | string[];

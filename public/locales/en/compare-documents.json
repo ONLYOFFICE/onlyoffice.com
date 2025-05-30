@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Compare documents | ONLYOFFICE",
+  "PageDescription": "Compare two docs for differences with ONLYOFFICE. Pick any doc from your computer, cloud storage, or a URL to see differences from the current file’s perspective.",
+  "Header": "Compare documents",
+  "SubHeader": "Find differences, apply corrections, and finalize texts with the Document Comparison feature",
+
+  "HeroImgUrl": "/images/templates/compare-documents/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/compare-documents/hero/hero@2x.png",
+
+  "Feature1Title": "Compare two documents for differences",
+  "Feature1Desc": "Pick any document from your computer, cloud storage, or a URL to see differences from the current file’s perspective.",
+
+  "Feature2Title": "Navigate through highlighted changes",
+  "Feature2Desc": "Document comparison allows you to compare two Word documents and highlight differences with Track Changes mode applied. Navigate between them and quickly see the document with all corrections accepted or rejected.",
+
+  "Feature3Title": "Merge file versions",
+  "Feature3Desc": "Accept or reject changes individually or in bulk, thus merging the documents and finalizing the version of the compared file.",
+
+  "Feature4Title": "Browse version history",
+  "Feature4Desc": "Compare current and previous document versions, restore a document at any point of its history, and find accidentally-lost content. See the dates, times, and authors of document revisions.",
+
+  "Feature5Title": "Combine documents",
+  "Feature5Desc": "Combining documents is similar to comparison. However, when combining two documents, the initial unsolved tracked changes after someone's review will remain in the merged file, and you will be able to accept or reject them if needed.",
+
+  "Feature1ImgUrl": "/images/templates/compare-documents/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/compare-documents/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/compare-documents/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/compare-documents/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/compare-documents/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/compare-documents/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/compare-documents/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/compare-documents/features/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/compare-documents/features/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/compare-documents/features/pic5@2x.png"
+}
