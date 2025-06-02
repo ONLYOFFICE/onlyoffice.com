@@ -13,8 +13,8 @@ const StyledFeaturesHeader = styled.div`
   position: relative;
 
     &::before {
-        background-image: url("./images/templates/technology-partners/heading-icons/tech-h-icons.svg");
-        background-position: 0 0;
+        background-image: url("/images/templates/technology-partners/heading-icons/tech-h-icons.svg");
+        background-position: -4px -4px;
         content: "";
         height: 56px;
         left: 50%;
@@ -61,7 +61,7 @@ const StyledFeatureItem = styled.div`
   &::before {
     content: "";
     position: absolute;
-    background-image: url("./images/templates/technology-partners/features/tech-in-icons.svg");
+    background-image: url("/images/templates/technology-partners/features/tech-in-icons.svg");
     background-position: 0 0;
     top: 0;
     left: 0;

@@ -22,10 +22,11 @@ const Features = () => {
   return (
     <Section
     background="#f5f5f5"
-    desktopSpacing={["112px", "0px"]}
-    tabletSpacing={["88px", "0px"]}
+    desktopSpacing={["168px", "0px"]}
+    tabletSpacing={["136px", "0px"]}
     tabletSmallSpacing={["136px", "0"]}
     mobileSpacing={["112px", "0"]}
+    id="part-software"
     >
       <Container>
         <StyledFeaturesHeader>

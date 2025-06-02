@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <Section
-      desktopSpacing={["42px", "124px"]}
+      desktopSpacing={["42px", "44px"]}
       tabletSpacing={["65px", "65px"]}
       tabletSmallSpacing={["85px", "85px"]}
     >
