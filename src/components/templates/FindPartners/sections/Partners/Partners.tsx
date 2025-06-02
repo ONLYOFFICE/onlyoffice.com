@@ -11,6 +11,7 @@ import {
   StyledPartnersCardItemCountry,
   StyledPartnersCardItemDesc,
   StyledPartnersCardItemHead,
+  StyledPartnersCardItemImg,
   StyledPartnersCardItemLeft,
   StyledPartnersCardItemLink,
   StyledPartnersCardItemName,
@@ -33,7 +34,7 @@ const Partners = () => {
   const [uniqueCountrys, setUniqueCountrys] = useState<string[]>([]);
   const [selectOpen, setSelectOpen] = useState<boolean>(false);
   const [selectCountry, setSelectCountry] = useState<string>("");
-  const [isItemOpen, setIsItemOpen] = useState<boolean>(false);
+  const [itemOpen, setItemOpen] = useState<number[]>([]);
 
   useEffect(() => {
     const uniqueKey = new Set(items.map((item) => item.name[0]));
@@ -49,6 +50,14 @@ const Partners = () => {
     setSelectOpen(false);
     setSelectCountry(country);
   }
+
+  const handleToggleCard = (id: number) => {
+    if (itemOpen.includes(id)) {
+      setItemOpen(itemOpen.filter((item) => item !== id));
+    } else {
+      setItemOpen([...itemOpen, id]);
+    }
+  };
 
   return (
     <Section desktopSpacing={["80px", "112px"]}>
@@ -80,17 +89,23 @@ const Partners = () => {
           </StyledPartnersCountryOptions>
         </StyledPartnersCountryWrapper>
         <StyledPartnersCardList>
-          <StyledPartnersCardItem $isItemOpen={isItemOpen} onClick={() => setIsItemOpen(!isItemOpen)}>
-            <StyledPartnersCardItemLeft />
-            <StyledPartnersCardItemRight>
-              <StyledPartnersCardItemHead>
-                <StyledPartnersCardItemName level={4} size={5} label="blablabla" />
-                <StyledPartnersCardItemCountry size={3} label="bugaga" />
-                <StyledPartnersCardItemLink href="" />
-              </StyledPartnersCardItemHead>
-              <StyledPartnersCardItemDesc label="01River Limited is a comprehensive Business Solutions provider reselling software solutions in various areas (Database Management, CRM, Web Design for business), assisting the businesses in customization, migration and development of workflow solutions, and handling digital transformation quickly and professionally. As one of the official partners for ONLYOFFICE in Asia, they provide a wide range of IT services that cater to businesses, retain customers and drive new markets." />
-            </StyledPartnersCardItemRight>
-          </StyledPartnersCardItem>
+          {items.map((item) => (
+            <StyledPartnersCardItem key={item.id} $isItemOpen={itemOpen.includes(item.id)} onClick={() => handleToggleCard(item.id)}>
+              <StyledPartnersCardItemLeft>
+                <StyledPartnersCardItemImg $imgUrl={item.img.url} />
+              </StyledPartnersCardItemLeft>
+              <StyledPartnersCardItemRight>
+                <StyledPartnersCardItemHead>
+                  <StyledPartnersCardItemName level={4} size={5} label={item.name ?? ""} />
+                  <StyledPartnersCardItemCountry size={3} label={item.country ?? ""} />
+                  <StyledPartnersCardItemLink href={item.url} />
+                </StyledPartnersCardItemHead>
+                {item.description &&
+                  <StyledPartnersCardItemDesc label={item.description} />
+                }
+              </StyledPartnersCardItemRight>
+            </StyledPartnersCardItem>
+          ))}
         </StyledPartnersCardList>
       </Container>
     </Section>

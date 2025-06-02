@@ -153,6 +153,18 @@ const StyledPartnersCardItemLeft = styled.div`
   flex-shrink: 0;
 `;
 
+const StyledPartnersCardItemImg = styled.div<{
+  $imgUrl: string;
+}>`
+  width: 168px;
+  height: 104px;
+  justify-self: center;
+  background-image: ${({$imgUrl}) => `url(${$imgUrl})`};
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+`;
+
 const StyledPartnersCardItemRight = styled.div`
   border-left: 1px solid #E5E5E5;
   padding-left: 32px;
@@ -203,6 +215,7 @@ export {
   StyledPartnersCardList,
   StyledPartnersCardItem,
   StyledPartnersCardItemLeft,
+  StyledPartnersCardItemImg,
   StyledPartnersCardItemRight,
   StyledPartnersCardItemHead,
   StyledPartnersCardItemName,
