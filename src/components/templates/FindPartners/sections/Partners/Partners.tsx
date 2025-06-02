@@ -4,7 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
-import { items } from "./data/items";
+import { IPartners } from "../../FindPartners.types";
 
 import {
   StyledPartnersCardItem,
@@ -27,7 +27,8 @@ import {
   StyledPartnersKeyList
 } from "./Partners.styled";
 
-const Partners = () => {
+const Partners = ({ partners }: IPartners) => {
+  const items = partners.data;
   const { t } = useTranslation("find-partners");
   const [activeTab, setActiveTab] = useState<number>(0);
   const [uniqueKeys, setUniqueKeys] = useState<string[]>([]);
@@ -37,9 +38,9 @@ const Partners = () => {
   const [itemOpen, setItemOpen] = useState<number[]>([]);
 
   useEffect(() => {
-    const uniqueKey = new Set(items.map((item) => item.name[0]));
-    setUniqueKeys([t("PartnersAll"), ...uniqueKey]);
-  }, [t]);
+    const uniqueKey = new Set(items.map((item) => item.name[0].toLowerCase()).sort((a, b) => a.localeCompare(b)));
+    setUniqueKeys([...uniqueKey]);
+  }, []);
 
   useEffect(() => {
     const uniqueCountry = new Set(items.map((item) => item.country));
@@ -89,16 +90,18 @@ const Partners = () => {
           </StyledPartnersCountryOptions>
         </StyledPartnersCountryWrapper>
         <StyledPartnersCardList>
-          {items.map((item) => (
+          {items && items.map((item) => (
             <StyledPartnersCardItem key={item.id} $isItemOpen={itemOpen.includes(item.id)} onClick={() => handleToggleCard(item.id)}>
               <StyledPartnersCardItemLeft>
-                <StyledPartnersCardItemImg $imgUrl={item.img.url} />
+                <StyledPartnersCardItemImg $imgUrl={""} />
               </StyledPartnersCardItemLeft>
               <StyledPartnersCardItemRight>
                 <StyledPartnersCardItemHead>
                   <StyledPartnersCardItemName level={4} size={5} label={item.name ?? ""} />
                   <StyledPartnersCardItemCountry size={3} label={item.country ?? ""} />
-                  <StyledPartnersCardItemLink href={item.url} />
+                  {item.link &&
+                    <StyledPartnersCardItemLink href={item.link.endsWith("/") ? item.link.slice(0, -1) : item.link} />
+                  }
                 </StyledPartnersCardItemHead>
                 {item.description &&
                   <StyledPartnersCardItemDesc label={item.description} />

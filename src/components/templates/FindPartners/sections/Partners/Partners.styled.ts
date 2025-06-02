@@ -94,6 +94,7 @@ const StyledPartnersCountryOptions = styled.ul<{
 }>`
   width: 100%;
   max-height: 200px;
+  overflow-y: scroll;
   background-color: #FFFFFF;
   border: 1px solid #666666;
   border-radius: 4px;
