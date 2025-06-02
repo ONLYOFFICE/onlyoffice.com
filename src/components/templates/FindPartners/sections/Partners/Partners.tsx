@@ -14,6 +14,7 @@ const Partners = () => {
   const [uniqueKeys, setUniqueKeys] = useState<string[]>([]);
   const [uniqueCountrys, setUniqueCountrys] = useState<string[]>([]);
   const [selectOpen, setSelectOpen] = useState<boolean>(false);
+  const [selectCountry, setSelectCountry] = useState<string>("");
 
   useEffect(() => {
     const uniqueKey = new Set(items.map((item) => item.name[0]));
@@ -24,6 +25,11 @@ const Partners = () => {
     const uniqueCountry = new Set(items.map((item) => item.country));
     setUniqueCountrys([...uniqueCountry]);
   }, []);
+
+  const handleClickOption = (country: string) => {
+    setSelectOpen(false);
+    setSelectCountry(country);
+  }
 
   return (
     <Section desktopSpacing={["80px", "112px"]}>
@@ -40,15 +46,15 @@ const Partners = () => {
           ))}
         </StyledPartnersKeyList>
         <StyledPartnersCountryWrapper>
-          <StyledPartnersCountrySelect onClick={() => setSelectOpen(!selectOpen)}>
+          <StyledPartnersCountrySelect $isSelectOpen={selectOpen} onClick={() => setSelectOpen(!selectOpen)}>
             <StyledPartnersCountryInner $isSelectOpen={selectOpen}>
-              <StyledPartnersCountryText $isSelectOpen={selectOpen} label={t("PartnersSelectCountry")} size={2} />
-              <StyledPartnersCountryText $isSelectOpen={selectOpen} label={t("PartnersCountry")} size={2} />
+              <StyledPartnersCountryText $isSelectCountry={selectCountry} $isSelectOpen={selectOpen} label={t("PartnersSelectCountry")} size={2} />
+              <StyledPartnersCountryText $isSelectCountry={selectCountry} $isSelectOpen={selectOpen} label={selectCountry} size={2} />
             </StyledPartnersCountryInner>
           </StyledPartnersCountrySelect>
           <StyledPartnersCountryOptions $isSelectOpen={selectOpen}>
             {uniqueCountrys.map((country) => (
-              <StyledPartnersCountryOption key={country} onClick={() => setSelectOpen(false)}>
+              <StyledPartnersCountryOption key={country} onClick={() => handleClickOption(country)}>
                 <Text label={country} as={"span"} size={2} />
               </StyledPartnersCountryOption>
             ))}

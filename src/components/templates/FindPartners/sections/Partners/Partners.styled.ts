@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Text } from "@src/components/ui/Text";
 
 const StyledPartnersKeyList = styled.ul`
@@ -17,10 +17,12 @@ const StyledPartnersCountryWrapper = styled.div`
   margin: 0 auto;
 `;
 
-const StyledPartnersCountrySelect = styled.div`
+const StyledPartnersCountrySelect = styled.div<{
+  $isSelectOpen: boolean;
+}>`
   height: 60px;
   background-color: #F9F9F9;
-  border: 1px solid #AAAAAA;
+  border: ${({$isSelectOpen}) => $isSelectOpen ? "1px solid #666666" : "1px solid #AAAAAA"};
   border-radius: 3px;
   cursor: pointer;
   transition-duration: 300ms;
@@ -56,6 +58,7 @@ const StyledPartnersCountryInner = styled.div<{
 
 const StyledPartnersCountryText = styled(Text)<{
   $isSelectOpen: boolean;
+  $isSelectCountry: string;
 }>`
   &:first-child {
     position: absolute;
@@ -64,9 +67,12 @@ const StyledPartnersCountryText = styled(Text)<{
     transition-duration: 300ms;
     transform: translate(0, -50%);
 
-    ${({$isSelectOpen}) => $isSelectOpen && `
-      transform: translate(-25%, -125%) scale(0.8);
-    `}
+    ${({$isSelectOpen, $isSelectCountry}) => ($isSelectOpen || $isSelectCountry) &&
+      css`
+        transform: translate(-25%, -125%) scale(0.8);
+        opacity: 0.5;
+      `
+    }
   }
 
   &:last-child {
@@ -74,8 +80,8 @@ const StyledPartnersCountryText = styled(Text)<{
     top: 50%;
     left: 0;
     transition-duration: 300ms;
-    opacity: ${({$isSelectOpen}) => $isSelectOpen ? 1 : 0};
-    visibility: ${({$isSelectOpen}) => $isSelectOpen ? "visible" : "hidden"};
+    opacity: ${({$isSelectOpen, $isSelectCountry}) => ($isSelectOpen || $isSelectCountry) ? 1 : 0};
+    visibility: ${({$isSelectOpen, $isSelectCountry}) => ($isSelectOpen || $isSelectCountry) ? "visible" : "hidden"};
     transform: translateY(-50%);
   }
 `;
@@ -85,6 +91,8 @@ const StyledPartnersCountryOptions = styled.ul<{
 }>`
   max-height: 200px;
   background-color: #FFFFFF;
+  border: 1px solid #666666;
+  border-radius: 4px;
   visibility: ${({$isSelectOpen}) => $isSelectOpen ? "visible" : "hidden"};
   opacity: ${({$isSelectOpen}) => $isSelectOpen ? 1 : 0};
   transition-duration: 300ms;
