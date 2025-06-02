@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
 import { IPartners } from "../../FindPartners.types";
@@ -27,8 +28,7 @@ import {
   StyledPartnersKeyList
 } from "./Partners.styled";
 
-const Partners = ({ partners }: IPartners) => {
-  const items = partners.data;
+const Partners = () => {
   const { t } = useTranslation("find-partners");
   const [activeTab, setActiveTab] = useState<number>(0);
   const [uniqueKeys, setUniqueKeys] = useState<string[]>([]);
@@ -36,16 +36,59 @@ const Partners = ({ partners }: IPartners) => {
   const [selectOpen, setSelectOpen] = useState<boolean>(false);
   const [selectCountry, setSelectCountry] = useState<string>("");
   const [itemOpen, setItemOpen] = useState<number[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [allItems, setAllItems] = useState<IPartners[]>([]);
+  const [items, setItems] = useState<IPartners[]>([]);
 
   useEffect(() => {
-    const uniqueKey = new Set(items.map((item) => item.name[0].toLowerCase()).sort((a, b) => a.localeCompare(b)));
-    setUniqueKeys([...uniqueKey]);
+    const fetchAllPartners = async () => {
+      try {
+        setLoading(true);
+        const res = await fetch("/api/find-partners")
+        const { data } = await res.json();
+        setAllItems(data)
+        setItems(data);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchAllPartners();
   }, []);
 
   useEffect(() => {
-    const uniqueCountry = new Set(items.map((item) => item.country));
+    const fetchFilteredPartners = async () => {
+      const params = new URLSearchParams();
+      if (selectCountry) {
+        params.append("country", selectCountry);
+      }
+
+      try {
+        setLoading(true);
+        const res = await fetch(`/api/find-partners?${params.toString()}`)
+        const { data } = await res.json();
+        setItems(data);
+      } catch(error) {
+        console.log(error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    if (selectCountry) {
+      fetchFilteredPartners();
+    }
+  }, [selectCountry]);
+
+
+  useEffect(() => {
+    const uniqueKey = new Set(allItems.map((item) => item.name[0].toUpperCase()).sort((a, b) => a.localeCompare(b)));
+    setUniqueKeys([ t("PartnersAll"), ...uniqueKey]);
+    const uniqueCountry = new Set(allItems.map((item) => item.country).sort((a, b) => a.localeCompare(b)));
     setUniqueCountrys([...uniqueCountry]);
-  }, []);
+  }, [allItems, t]);
 
   const handleClickOption = (country: string) => {
     setSelectOpen(false);
@@ -59,6 +102,10 @@ const Partners = ({ partners }: IPartners) => {
       setItemOpen([...itemOpen, id]);
     }
   };
+
+  if (loading) {
+    return <Heading label="Loading..." textAlign="center" />;
+  }
 
   return (
     <Section desktopSpacing={["80px", "112px"]}>
