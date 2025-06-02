@@ -4,6 +4,7 @@ interface IDataItems {
   country: string;
   sponsor?: "gold" | "silver" | "autorized";
   url: string;
+  description?: string;
   img: {
     url: string;
   };

@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 import { Text } from "@src/components/ui/Text";
+import { Heading } from "@src/components/ui/Heading";
+import { Link } from "@src/components/ui/Link";
 
 const StyledPartnersKeyList = styled.ul`
   display: flex;
@@ -15,6 +17,7 @@ const StyledPartnersKeyItem = styled.li``;
 const StyledPartnersCountryWrapper = styled.div`
   width: 454px;
   margin: 0 auto;
+  position: relative;
 `;
 
 const StyledPartnersCountrySelect = styled.div<{
@@ -26,7 +29,7 @@ const StyledPartnersCountrySelect = styled.div<{
   border-radius: 3px;
   cursor: pointer;
   transition-duration: 300ms;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 
   &:hover {
     border-color: #666666;
@@ -89,6 +92,7 @@ const StyledPartnersCountryText = styled(Text)<{
 const StyledPartnersCountryOptions = styled.ul<{
   $isSelectOpen: boolean;
 }>`
+  width: 100%;
   max-height: 200px;
   background-color: #FFFFFF;
   border: 1px solid #666666;
@@ -96,6 +100,10 @@ const StyledPartnersCountryOptions = styled.ul<{
   visibility: ${({$isSelectOpen}) => $isSelectOpen ? "visible" : "hidden"};
   opacity: ${({$isSelectOpen}) => $isSelectOpen ? 1 : 0};
   transition-duration: 300ms;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  z-index: 3;
 `;
 
 const StyledPartnersCountryOption = styled.li`
@@ -108,6 +116,81 @@ const StyledPartnersCountryOption = styled.li`
   }
 `;
 
+const StyledPartnersCardList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+`;
+
+const StyledPartnersCardItem = styled.li<{
+  $isItemOpen: boolean;
+}>`
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  padding: 32px 0;
+  box-shadow: 0px 7px 15px rgba(85, 85, 85, 0.1);
+  border-radius: 5px;
+  transition: box-shadow 0.3s, max-height 0.6s ease;
+  max-height: ${({$isItemOpen}) => $isItemOpen ? "970px" : "170px"};
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 20px 50px rgba(85, 85, 85, 0.15);
+
+    h4 {
+      color: #ff6f3d;
+    }
+  }
+`;
+
+const StyledPartnersCardItemLeft = styled.div`
+  width: 287px;
+  height: 106px;
+  flex-shrink: 0;
+`;
+
+const StyledPartnersCardItemRight = styled.div`
+  border-left: 1px solid #E5E5E5;
+  padding-left: 32px;
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: 106px auto;
+`;
+
+const StyledPartnersCardItemHead = styled.div`
+  display: grid;
+  grid-template-columns: auto 183px 107px;
+  align-items: center;
+`;
+
+const StyledPartnersCardItemName = styled(Heading)`
+  transition-duration: 300ms;
+`;
+
+const StyledPartnersCardItemCountry = styled(Text)`
+  text-align: right;
+`;
+
+const StyledPartnersCardItemLink = styled(Link)`
+  display: block;
+  background-image: url("/images/templates/find-partners/partners/external-link-symbol.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  justify-self: center;
+`;
+
+const StyledPartnersCardItemDesc = styled(Text)`
+  color: #666;
+  padding-right: 30px;
+  margin-top: 32px;
+`;
+
 export {
   StyledPartnersKeyList,
   StyledPartnersKeyItem,
@@ -117,4 +200,13 @@ export {
   StyledPartnersCountryText,
   StyledPartnersCountryOptions,
   StyledPartnersCountryOption,
+  StyledPartnersCardList,
+  StyledPartnersCardItem,
+  StyledPartnersCardItemLeft,
+  StyledPartnersCardItemRight,
+  StyledPartnersCardItemHead,
+  StyledPartnersCardItemName,
+  StyledPartnersCardItemCountry,
+  StyledPartnersCardItemLink,
+  StyledPartnersCardItemDesc,
 };
