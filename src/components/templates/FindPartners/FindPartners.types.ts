@@ -5,6 +5,7 @@ interface IPartners {
   description?: string;
   link?: string;
   level?: "Gold partner" | "Silver partner" | "Autorized";
+  url_type?: "site" | "email";
 }
 
 export type { IPartners };

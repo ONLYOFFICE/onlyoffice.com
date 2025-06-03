@@ -190,14 +190,57 @@ const StyledPartnersCardItemCountry = styled(Text)`
   text-align: right;
 `;
 
-const StyledPartnersCardItemLink = styled(Link)`
+const StyledPartnersCardItemLink = styled(Link)<{
+  $urlType: IPartners["url_type"];
+  $siteText: string;
+  $emailText: string;
+}>`
   display: block;
-  background-image: url("/images/templates/find-partners/partners/external-link-symbol.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 24px;
   height: 24px;
   justify-self: center;
+  position: relative;
+
+  ${({$urlType}) => $urlType === "site" && css`
+    background-image: url("/images/templates/find-partners/partners/external-link-symbol.svg");
+  `}
+
+  ${({$urlType}) => $urlType === "email" && css`
+    background-image: url("/images/templates/find-partners/partners/email-link-symbol.svg");
+  `}
+
+  &::after {
+    ${({$urlType, $siteText}) => $urlType === "site" && css`
+      content: "${$siteText}";
+    `}
+
+    ${({$urlType, $emailText}) => $urlType === "email" && css`
+      content: "${$emailText}";
+    `}
+
+    position: absolute;
+    top: -125%;
+    right: 5px;
+    width: max-content;
+    padding: 5px 8px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 300ms;
+  }
+
+  &:hover {
+    &::after {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 `;
 
 const StyledPartnersCardItemDesc = styled(Text)`

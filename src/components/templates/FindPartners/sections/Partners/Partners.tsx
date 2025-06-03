@@ -88,10 +88,10 @@ const Partners = () => {
       }
     }
 
-    if (selectCountry || choosedKey) {
+    if (selectCountry || choosedKey || locale) {
       fetchFilteredPartners();
     }
-  }, [selectCountry, choosedKey]);
+  }, [selectCountry, locale, choosedKey]);
 
 
   useEffect(() => {
@@ -169,7 +169,12 @@ const Partners = () => {
                   <StyledPartnersCardItemName level={4} size={5} label={item.name ?? ""} />
                   <StyledPartnersCardItemCountry size={3} label={item.country ?? ""} />
                   {item.link &&
-                    <StyledPartnersCardItemLink href={item.link.endsWith("/") ? item.link.slice(0, -1) : item.link} />
+                    <StyledPartnersCardItemLink
+                      $siteText={t("PartnersVisitSite")}
+                      $emailText={t("PartnersSendEmail")}
+                      $urlType={item.url_type}
+                      href={item.link.endsWith("/") ? item.link.slice(0, -1) : item.link}
+                    />
                   }
                 </StyledPartnersCardItemHead>
                 {item.description &&
