@@ -177,7 +177,7 @@ useEffect(() => {
                   <StyledPartnersCardItemDesc label={item.description} />
                 }
               </StyledPartnersCardItemRight>
-              {item.level && (
+              {item.level && item.level !== "No level" && (
                 <StyledPartnersLevel $level={item.level} />
               )}
             </StyledPartnersCardItem>

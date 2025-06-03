@@ -4,7 +4,7 @@ interface IPartner {
   country: string;
   description?: string;
   link?: string;
-  level?: "Gold partner" | "Silver partner" | "Autorized";
+  level?: "Gold partner" | "Silver partner" | "Autorized" | "No level";
   url_type?: "site" | "email";
   logo: {
     url: string;
