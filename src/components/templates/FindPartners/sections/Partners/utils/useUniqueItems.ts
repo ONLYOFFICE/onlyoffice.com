@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { IPartners } from "../../../FindPartners.types";
+import { IPartner } from "../../../FindPartners.types";
 
-const useUniqueItems = (allItems: IPartners[], allBtnText: string) => {
+const useUniqueItems = (allItems: IPartner[], allBtnText: string, allOptionText: string) => {
   const [uniqueKeys, setUniqueKeys] = useState<string[]>([]);
   const [uniqueCountries, setUniqueCountries] = useState<string[]>([]);
 
@@ -17,8 +17,8 @@ const useUniqueItems = (allItems: IPartners[], allBtnText: string) => {
       .map((item) => item.country)
       .sort((a, b) => a.localeCompare(b))
     );
-    setUniqueCountries([...uniqueCountry]);
-  }, [allItems, allBtnText]);
+    setUniqueCountries([allOptionText, ...uniqueCountry]);
+  }, [allItems, allBtnText, allOptionText]);
 
   return {uniqueKeys, uniqueCountries};
 }

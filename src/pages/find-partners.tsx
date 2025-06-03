@@ -7,8 +7,10 @@ import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { FindPartnersTemplate } from "@src/components/templates/FindPartners";
+import { getPartners } from "@src/lib/requests/getPartners";
+import { IPartners } from "@src/components/templates/FindPartners/FindPartners.types";
 
-const FindPartnersPage = ({ locale }: ILocale) => {
+const FindPartnersPage = ({ locale, partners }: ILocale & IPartners) => {
   const { t } = useTranslation("find-partners");
 
   return (
@@ -23,7 +25,7 @@ const FindPartnersPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <FindPartnersTemplate />
+        <FindPartnersTemplate partners={partners} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -33,6 +35,7 @@ const FindPartnersPage = ({ locale }: ILocale) => {
 };
 
 export async function getStaticProps({ locale }: ILocale) {
+  const partners = await getPartners(locale);
   return {
     props: {
       ...(await serverSideTranslations(locale, [
@@ -40,6 +43,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "find-partners",
       ])),
       locale,
+      partners,
     },
   };
 }

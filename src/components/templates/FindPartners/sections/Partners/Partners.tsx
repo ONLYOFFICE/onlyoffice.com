@@ -1,13 +1,11 @@
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
 import { useUniqueItems } from "./utils/useUniqueItems";
-import { IPartners } from "../../FindPartners.types";
+import { IPartner, IPartners } from "../../FindPartners.types";
 
 import {
   StyledPartnersCardItem,
@@ -31,83 +29,62 @@ import {
   StyledPartnersLevel
 } from "./Partners.styled";
 
-const Partners = () => {
+const Partners = ({ partners }: IPartners) => {
   const { t } = useTranslation("find-partners");
   const [activeTab, setActiveTab] = useState<number>(0);
   const [selectOpen, setSelectOpen] = useState<boolean>(false);
   const [selectCountry, setSelectCountry] = useState<string>("");
-  const [itemOpen, setItemOpen] = useState<number[]>([]);
-  const [loading, setLoading] = useState<boolean>(false);
-  const [allItems, setAllItems] = useState<IPartners[]>([]);
-  const [items, setItems] = useState<IPartners[]>([]);
   const [choosedKey, setChoosedKey] = useState<string>("");
-
-  const { locale } = useRouter();
-
-  useEffect(() => {
-    const fetchAllPartners = async () => {
-      const params = new URLSearchParams();
-      params.append("locale", locale as string);
-      params.append("maxLimit", "300");
-      try {
-        setLoading(true);
-        const res = await fetch(`/api/find-partners?${params.toString()}`);
-        const { data } = await res.json();
-        setAllItems(data)
-        setItems(data);
-      } catch (error) {
-        console.log(error);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    fetchAllPartners();
-  }, [locale]);
+  const [itemOpen, setItemOpen] = useState<number[]>([]);
+  const [allItems, setAllItems] = useState<IPartner[]>([]);
+  const [items, setItems] = useState<IPartner[]>([]);
 
   useEffect(() => {
-    const fetchFilteredPartners = async () => {
-      const params = new URLSearchParams();
-      if (selectCountry) {
-        params.append("country", selectCountry);
-      }
-      params.append("maxLimit", "300");
-      params.append("locale", locale as string);
-      params.append("key", choosedKey);
+    const data = partners.partners.data;
+    setAllItems(data);
+    setItems(data);
+    setChoosedKey("");
+  }, [partners]);
 
-      try {
-        setLoading(true);
-        const res = await fetch(`/api/find-partners?${params.toString()}`)
-        const { data } = await res.json();
-        setItems(data);
-      } catch(error) {
-        console.log(error);
-      } finally {
-        setLoading(false);
-      }
+  const {uniqueKeys, uniqueCountries} = useUniqueItems(allItems, t("PartnersAll"), t("PartnersAllCountries"));
+
+  useEffect(() => {
+    if (choosedKey === "") {
+      setItems(allItems);
+    } else {
+      setItems(allItems.filter((item) => item.name[0].toUpperCase() === choosedKey));
     }
+  }, [choosedKey, allItems]);
 
-    if (selectCountry || choosedKey || locale) {
-      fetchFilteredPartners();
+  useEffect(() => {
+    if (selectCountry === "") {
+      setItems(allItems);
+    } else {
+      setItems(allItems.filter((item) => item.country === selectCountry));
     }
-  }, [selectCountry, locale, choosedKey]);
-
-  const {uniqueKeys, uniqueCountries} = useUniqueItems(allItems, t("PartnersAll"));
+  }, [selectCountry, allItems])
 
   const handleClickKey = (key: string, index: number) => {
     setActiveTab(index);
     if (key === t("PartnersAll")) {
       setItems(allItems);
       setChoosedKey("");
-      setSelectCountry("");
     } else {
       setChoosedKey(key);
     }
+    setSelectCountry("");
   }
 
   const handleClickOption = (country: string) => {
+    if (country === t("PartnersAllCountries")) {
+      setItems(allItems);
+      setSelectCountry("");
+    } else {
+      setSelectCountry(country);
+    }
     setSelectOpen(false);
-    setSelectCountry(country);
+    setChoosedKey("");
+    setActiveTab(0);
   }
 
   const handleToggleCard = (id: number) => {
@@ -117,10 +94,6 @@ const Partners = () => {
       setItemOpen([...itemOpen, id]);
     }
   };
-
-  if (loading) {
-    return <Heading label="Loading..." textAlign="center" />;
-  }
 
   return (
     <Section desktopSpacing={["80px", "112px"]}>
@@ -157,7 +130,7 @@ const Partners = () => {
             </StyledPartnersCountryInner>
           </StyledPartnersCountrySelect>
           <StyledPartnersCountryOptions $isSelectOpen={selectOpen}>
-            {uniqueCountries.map((country) => (
+            {uniqueCountries.map((country, index) => (
               <StyledPartnersCountryOption
                 key={country}
                 onClick={() => handleClickOption(country)}
@@ -166,7 +139,7 @@ const Partners = () => {
                   label={country}
                   as={"span"}
                   size={2}
-                  color={selectCountry === country ? "#FF6F3D" : undefined}
+                  color={(selectCountry === country) || (selectCountry === "" && index === 0) ? "#FF6F3D" : undefined}
                 />
               </StyledPartnersCountryOption>
             ))}

@@ -1,4 +1,4 @@
-interface IPartners {
+interface IPartner {
   id: number;
   name: string;
   country: string;
@@ -8,4 +8,12 @@ interface IPartners {
   url_type?: "site" | "email";
 }
 
-export type { IPartners };
+interface IPartners {
+  partners: {
+    partners: {
+      data: IPartner[];
+    };
+  }
+}
+
+export type { IPartners, IPartner };

@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { Text } from "@src/components/ui/Text";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
-import { IPartners } from "../../FindPartners.types";
+import { IPartner } from "../../FindPartners.types";
 
 const StyledPartnersKeyList = styled.ul`
   display: flex;
@@ -191,7 +191,7 @@ const StyledPartnersCardItemCountry = styled(Text)`
 `;
 
 const StyledPartnersCardItemLink = styled(Link)<{
-  $urlType: IPartners["url_type"];
+  $urlType: IPartner["url_type"];
   $siteText: string;
   $emailText: string;
 }>`
@@ -250,7 +250,7 @@ const StyledPartnersCardItemDesc = styled(Text)`
 `;
 
 const StyledPartnersLevel = styled.div<{
-  $level: IPartners["level"];
+  $level: IPartner["level"];
 }>`
   width: 36px;
   height: 39px;
