@@ -6,6 +6,7 @@ import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
+import { useUniqueItems } from "./utils/useUniqueItems";
 import { IPartners } from "../../FindPartners.types";
 
 import {
@@ -33,8 +34,6 @@ import {
 const Partners = () => {
   const { t } = useTranslation("find-partners");
   const [activeTab, setActiveTab] = useState<number>(0);
-  const [uniqueKeys, setUniqueKeys] = useState<string[]>([]);
-  const [uniqueCountries, setUniqueCountries] = useState<string[]>([]);
   const [selectOpen, setSelectOpen] = useState<boolean>(false);
   const [selectCountry, setSelectCountry] = useState<string>("");
   const [itemOpen, setItemOpen] = useState<number[]>([]);
@@ -93,21 +92,7 @@ const Partners = () => {
     }
   }, [selectCountry, locale, choosedKey]);
 
-
-  useEffect(() => {
-    const uniqueKey = new Set(allItems
-      .map((item) => item.name[0]
-      .toUpperCase())
-      .sort((a, b) => a.localeCompare(b))
-    );
-    setUniqueKeys([ t("PartnersAll"), ...uniqueKey]);
-
-    const uniqueCountry = new Set(allItems
-      .map((item) => item.country)
-      .sort((a, b) => a.localeCompare(b))
-    );
-    setUniqueCountries([...uniqueCountry]);
-  }, [allItems, t]);
+  const {uniqueKeys, uniqueCountries} = useUniqueItems(allItems, t("PartnersAll"));
 
   const handleClickKey = (key: string, index: number) => {
     setActiveTab(index);
