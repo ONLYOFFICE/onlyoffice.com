@@ -26,7 +26,8 @@ import {
   StyledPartnersCountryText,
   StyledPartnersCountryWrapper,
   StyledPartnersKeyItem,
-  StyledPartnersKeyList
+  StyledPartnersKeyList,
+  StyledPartnersLevel
 } from "./Partners.styled";
 
 const Partners = () => {
@@ -175,6 +176,9 @@ const Partners = () => {
                   <StyledPartnersCardItemDesc label={item.description} />
                 }
               </StyledPartnersCardItemRight>
+              {item.level && (
+                <StyledPartnersLevel $level={item.level} />
+              )}
             </StyledPartnersCardItem>
           ))}
         </StyledPartnersCardList>

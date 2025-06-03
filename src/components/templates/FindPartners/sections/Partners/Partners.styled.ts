@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { Text } from "@src/components/ui/Text";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
+import { IPartners } from "../../FindPartners.types";
 
 const StyledPartnersKeyList = styled.ul`
   display: flex;
@@ -130,6 +131,7 @@ const StyledPartnersCardItem = styled.li<{
 }>`
   width: 100%;
   display: flex;
+  position: relative;
   background-color: #fff;
   padding: 32px 0;
   box-shadow: 0px 7px 15px rgba(85, 85, 85, 0.1);
@@ -204,6 +206,62 @@ const StyledPartnersCardItemDesc = styled(Text)`
   margin-top: 32px;
 `;
 
+const StyledPartnersLevel = styled.div<{
+  $level: IPartners["level"];
+}>`
+  width: 36px;
+  height: 39px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 15px;
+
+  ${({$level}) => {
+    if ($level === "Gold partner") {
+      return css`
+        background-image: url("/images/templates/find-partners/partners/gold-partner.svg");
+      `;
+    }
+    if ($level === "Silver partner") {
+      return css`
+        background-image: url("/images/templates/find-partners/partners/silver-partner.svg");
+      `;
+    }
+    if ($level === "Autorized") {
+      return css`
+        background-image: url("/images/templates/find-partners/partners/autorized.svg");
+      `;
+    }
+  }}
+
+  &::after {
+    content: "${({$level}) => $level}";
+    position: absolute;
+    top: 50%;
+    left: 125%;
+    width: max-content;
+    padding: 5px 8px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 300ms;
+    transform: translateY(-50%);
+  }
+
+  &:hover {
+    &::after {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+`;
+
 export {
   StyledPartnersKeyList,
   StyledPartnersKeyItem,
@@ -223,4 +281,5 @@ export {
   StyledPartnersCardItemCountry,
   StyledPartnersCardItemLink,
   StyledPartnersCardItemDesc,
+  StyledPartnersLevel,
 };
