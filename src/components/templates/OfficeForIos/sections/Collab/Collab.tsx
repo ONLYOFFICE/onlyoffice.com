@@ -1,4 +1,4 @@
-import { Section } from "@src/components/ui/Section";
+import { useTranslation } from "next-i18next";
 
 import {
   StyledCollabWrapper,
@@ -6,21 +6,23 @@ import {
   StyledCollabHeading,
   StyledCollabRight,
   StyledCollabText,
+  StyledCollabSection,
 } from "./Collab.styled";
-import { useTranslation } from "next-i18next";
 
 const Collab = () => {
   const { t } = useTranslation("office-for-ios");
 
   return (
-    <Section
+    <StyledCollabSection
       desktopSpacing={["88px", "0"]}
       tabletSpacing={["112px", "0"]}
       tabletSmallSpacing={["112px", "0"]}
       mobileSpacing={["48px", "0"]}
       background="#f5f5f5"
+      $backgroundUrl={t("CollabBackgroundUrl")}
+      $backgroundUrl2x={t("CollabBackgroundUrl2x")}
     >
-      <StyledCollabWrapper>
+      <StyledCollabWrapper maxWidth="1200px">
         <StyledCollabLeft>
           <StyledCollabHeading
             level={2}
@@ -31,7 +33,7 @@ const Collab = () => {
         </StyledCollabLeft>
         <StyledCollabRight $backgroundUrl={t("CollabBackgroundUrl")} $backgroundUrl2x={t("CollabBackgroundUrl2x")} />
       </StyledCollabWrapper>
-    </Section>
+    </StyledCollabSection>
   );
 };
 

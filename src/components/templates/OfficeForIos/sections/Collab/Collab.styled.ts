@@ -1,9 +1,33 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { Container } from "@src/components/ui/Container";
 
-const StyledCollabWrapper = styled.div`
+const StyledCollabSection = styled(Section)<{
+  $backgroundUrl: string;
+  $backgroundUrl2x: string;
+}>`
+  background-image: ${(props) => `url(${props.$backgroundUrl})`};
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position-y: calc(100% + 175px);
+  background-position-x: calc(50% + 365px);
+  background-size: auto 830px;
+  min-height: 750px;
+
+  @media ${device.retina} {
+    background-image: ${(props) => `url(${props.$backgroundUrl2x})`};
+  }
+
+  @media ${device.tablet} {
+    background-image: none;
+    min-height: auto;
+  }
+`;
+
+const StyledCollabWrapper = styled(Container)`
   display: flex;
   justify-content: space-between;
 
@@ -16,27 +40,23 @@ const StyledCollabWrapper = styled.div`
 `;
 
 const StyledCollabLeft = styled.div`
-  flex-grow: 1;
-  justify-items: flex-end;
   margin-top: 110px;
-  padding-left: 16px;
+  width: 270px;
 
   @media ${device.tablet} {
+    width: auto;
+    max-width: 600px;
     justify-items: center;
     margin-top: 0;
-    padding: 0 16px;
   }
 `;
 
 const StyledCollabHeading = styled(Heading)`
-  width: 352px;
   margin-bottom: 20px;
   line-height: 43px;
 
   @media ${device.tablet} {
-    width: auto;
     text-align: center;
-    max-width: 600px;
   }
 
   @media ${device.tabletS} {
@@ -50,12 +70,9 @@ const StyledCollabHeading = styled(Heading)`
   }
 `;
 const StyledCollabText = styled(Text)`
-  width: 352px;
 
   @media ${device.tablet} {
-    width: auto;
     text-align: center;
-    max-width: 600px;
   }
 
   @media ${device.tabletS} {
@@ -71,8 +88,7 @@ const StyledCollabRight = styled.div<{
   $backgroundUrl: string;
   $backgroundUrl2x: string;
 }>`
-  width: 62.20vw;
-  height: 41.66vw;
+  display: none;
   background-image: ${(props) => `url(${props.$backgroundUrl})`};
   background-size: auto 51.78vw;
   background-repeat: no-repeat;
@@ -82,6 +98,7 @@ const StyledCollabRight = styled.div<{
   }
 
   @media ${device.tablet} {
+    display: block;
     width: 108vw;
     height: 54.82vw;
     background-size: cover;
@@ -97,4 +114,5 @@ export {
   StyledCollabHeading,
   StyledCollabText,
   StyledCollabRight,
+  StyledCollabSection,
 };
