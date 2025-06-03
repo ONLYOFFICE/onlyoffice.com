@@ -12,10 +12,26 @@ export default async function handler(
       return res.status(405).json({ error: "Method Not Allowed" });
     }
 
-    const { country } = req.query;
-    const filters = `filters[country][$eq]=${encodeURIComponent(String(country))}`;
-    const params = country ? filters : null;
-    const strapiResponse = await fetch(`${STRAPI_API_URL}/api/partners/?${params}`,
+    const { locale, key, country, maxLimit } = req.query;
+    const searchParams = new URLSearchParams();
+
+    if (locale) {
+      searchParams.append('locale', locale as string);
+    }
+
+    if (key) {
+      searchParams.append('filters[name][$startsWithi]', key as string);
+    }
+
+    if (country) {
+      searchParams.append('filters[country][$eq]', country as string);
+    }
+
+    if (maxLimit) {
+      searchParams.append('pagination[limit]', maxLimit as string);
+    }
+
+    const strapiResponse = await fetch(`${STRAPI_API_URL}/api/partners/?${searchParams.toString()}`,
       {
         headers: {
           "Content-Type": "application/json",
