@@ -6,7 +6,6 @@ export const getPartners = async (locale: string) => {
     &fields=name
     &fields=country
     &fields=description
-    &fields=order
     &fields=link
     &fields=level
     &fields=url_type

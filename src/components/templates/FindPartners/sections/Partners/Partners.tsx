@@ -48,40 +48,38 @@ const Partners = ({ partners }: IPartners) => {
 
   const {uniqueKeys, uniqueCountries} = useUniqueItems(allItems, t("PartnersAll"), t("PartnersAllCountries"));
 
-  useEffect(() => {
-    if (choosedKey === "") {
-      setItems(allItems);
-    } else {
-      setItems(allItems.filter((item) => item.name[0].toUpperCase() === choosedKey));
-    }
-  }, [choosedKey, allItems]);
+useEffect(() => {
+  if (selectCountry !== "") {
+    setItems(allItems.filter(item => item.country === selectCountry));
+    return;
+  }
 
-  useEffect(() => {
-    if (selectCountry === "") {
-      setItems(allItems);
-    } else {
-      setItems(allItems.filter((item) => item.country === selectCountry));
-    }
-  }, [selectCountry, allItems])
+  if (choosedKey !== "") {
+    setItems(allItems.filter(item => item.name[0].toUpperCase() === choosedKey));
+    return;
+  }
+
+  setItems(allItems);
+}, [choosedKey, selectCountry, allItems]);
 
   const handleClickKey = (key: string, index: number) => {
-    setActiveTab(index);
     if (key === t("PartnersAll")) {
-      setItems(allItems);
       setChoosedKey("");
     } else {
       setChoosedKey(key);
     }
+
+    setActiveTab(index);
     setSelectCountry("");
   }
 
   const handleClickOption = (country: string) => {
     if (country === t("PartnersAllCountries")) {
-      setItems(allItems);
       setSelectCountry("");
     } else {
       setSelectCountry(country);
     }
+
     setSelectOpen(false);
     setChoosedKey("");
     setActiveTab(0);
@@ -153,7 +151,7 @@ const Partners = ({ partners }: IPartners) => {
               onClick={() => handleToggleCard(item.id)}
             >
               <StyledPartnersCardItemLeft>
-                <StyledPartnersCardItemImg $imgUrl={""} />
+                <StyledPartnersCardItemImg $imgUrl={item.logo.length > 1 ? item?.logo[1]?.url : item?.logo[0]?.url} />
               </StyledPartnersCardItemLeft>
               <StyledPartnersCardItemRight>
                 <StyledPartnersCardItemHead>

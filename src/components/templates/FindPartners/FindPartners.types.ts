@@ -6,6 +6,9 @@ interface IPartner {
   link?: string;
   level?: "Gold partner" | "Silver partner" | "Autorized";
   url_type?: "site" | "email";
+  logo: {
+    url: string;
+  }[]
 }
 
 interface IPartners {
