@@ -19,4 +19,11 @@ interface IPartners {
   }
 }
 
-export type { IPartners, IPartner };
+interface IPartnerCardProps {
+  item: IPartner;
+  isItemOpen: boolean;
+  onToggleCard: (id: number) => void;
+  t: (key: string) => string;
+}
+
+export type { IPartners, IPartner, IPartnerCardProps };

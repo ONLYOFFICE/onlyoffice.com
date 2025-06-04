@@ -1,25 +1,14 @@
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "next-i18next";
-import { useEffect, useState } from "react";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
+import { PartnersCardItem } from "./sub-components";
 import { useUniqueItems } from "./utils/useUniqueItems";
 import { IPartner, IPartners } from "../../FindPartners.types";
 
 import {
-  StyledPartnersCardItem,
-  StyledPartnersCardItemCountry,
-  StyledPartnersCardItemCountryMob,
-  StyledPartnersCardItemDesc,
-  StyledPartnersCardItemHead,
-  StyledPartnersCardItemImg,
-  StyledPartnersCardItemInfoWrapperMob,
-  StyledPartnersCardItemLeft,
-  StyledPartnersCardItemLink,
-  StyledPartnersCardItemLinkMob,
-  StyledPartnersCardItemName,
-  StyledPartnersCardItemRight,
   StyledPartnersCardList,
   StyledPartnersCountryInner,
   StyledPartnersCountryOption,
@@ -29,7 +18,6 @@ import {
   StyledPartnersCountryWrapper,
   StyledPartnersKeyItem,
   StyledPartnersKeyList,
-  StyledPartnersLevel
 } from "./Partners.styled";
 
 const Partners = ({ partners }: IPartners) => {
@@ -40,30 +28,40 @@ const Partners = ({ partners }: IPartners) => {
   const [choosedKey, setChoosedKey] = useState<string>("");
   const [itemOpen, setItemOpen] = useState<number[]>([]);
   const [allItems, setAllItems] = useState<IPartner[]>([]);
-  const [items, setItems] = useState<IPartner[]>([]);
 
   useEffect(() => {
     const data = partners.partners.data;
     setAllItems(data);
-    setItems(data);
     setChoosedKey("");
   }, [partners]);
 
-  const {uniqueKeys, uniqueCountries} = useUniqueItems(allItems, t("PartnersAll"), t("PartnersAllCountries"));
+  const { uniqueKeys, uniqueCountries } = useUniqueItems(
+    allItems,
+    t("PartnersAll"),
+    t("PartnersAllCountries")
+  );
 
-useEffect(() => {
-  if (selectCountry !== "") {
-    setItems(allItems.filter(item => item.country === selectCountry));
-    return;
-  }
+  const filteredItems = useMemo(() => {
+    let currentItems = allItems;
 
-  if (choosedKey !== "") {
-    setItems(allItems.filter(item => item.name[0].toUpperCase() === choosedKey));
-    return;
-  }
+    if (selectCountry !== "") {
+      currentItems = currentItems.filter((item) => item.country === selectCountry);
+    } else if (choosedKey !== "") {
+      currentItems = currentItems.filter((item) => item.name[0].toUpperCase() === choosedKey);
+    }
 
-  setItems(allItems);
-}, [choosedKey, selectCountry, allItems]);
+    return currentItems;
+  }, [choosedKey, selectCountry, allItems]);
+
+  const handleToggleCard = useCallback((id: number) => {
+    setItemOpen((prevItemOpen) => {
+      if (prevItemOpen.includes(id)) {
+        return prevItemOpen.filter((item) => item !== id);
+      } else {
+        return [...prevItemOpen, id];
+      }
+    });
+  }, []);
 
   const handleClickKey = (key: string, index: number) => {
     if (key === t("PartnersAll")) {
@@ -74,7 +72,7 @@ useEffect(() => {
 
     setActiveTab(index);
     setSelectCountry("");
-  }
+  };
 
   const handleClickOption = (country: string) => {
     if (country === t("PartnersAllCountries")) {
@@ -86,14 +84,6 @@ useEffect(() => {
     setSelectOpen(false);
     setChoosedKey("");
     setActiveTab(0);
-  }
-
-  const handleToggleCard = (id: number) => {
-    if (itemOpen.includes(id)) {
-      setItemOpen(itemOpen.filter((item) => item !== id));
-    } else {
-      setItemOpen([...itemOpen, id]);
-    }
   };
 
   return (
@@ -148,59 +138,14 @@ useEffect(() => {
           </StyledPartnersCountryOptions>
         </StyledPartnersCountryWrapper>
         <StyledPartnersCardList>
-          {items.length > 0 && items.map((item) => (
-            <StyledPartnersCardItem
+          {filteredItems.length > 0 && filteredItems.map((item) => (
+            <PartnersCardItem
               key={item.id}
-              $isItemOpen={itemOpen.includes(item.id)}
-              onClick={() => handleToggleCard(item.id)}
-            >
-              <StyledPartnersCardItemLeft>
-                <StyledPartnersCardItemImg $imgUrl={item.logo.length > 1 ? item?.logo[1]?.url : item?.logo[0]?.url} />
-              </StyledPartnersCardItemLeft>
-              <StyledPartnersCardItemRight>
-                <StyledPartnersCardItemHead>
-                  <StyledPartnersCardItemName
-                    level={4}
-                    size={5}
-                    label={item.name ?? ""}
-                  />
-                  <StyledPartnersCardItemCountry
-                    size={3}
-                    label={item.country ?? ""}
-                  />
-                  {item.link &&
-                    <StyledPartnersCardItemLink
-                      target="_blank"
-                      $siteText={t("PartnersVisitSite")}
-                      $emailText={t("PartnersSendEmail")}
-                      $urlType={item.url_type}
-                      href={item.link.endsWith("/") ? item.link.slice(0, -1) : item.link}
-                    />
-                  }
-                </StyledPartnersCardItemHead>
-                {item.description &&
-                  <StyledPartnersCardItemDesc $isItemOpen={itemOpen.includes(item.id)} label={item.description} />
-                }
-              </StyledPartnersCardItemRight>
-              <StyledPartnersCardItemInfoWrapperMob>
-                <StyledPartnersCardItemCountryMob
-                  size={3}
-                  label={item.country ?? ""}
-                />
-                {item.link &&
-                  <StyledPartnersCardItemLinkMob
-                    target="_blank"
-                    $siteText={t("PartnersVisitSite")}
-                    $emailText={t("PartnersSendEmail")}
-                    $urlType={item.url_type}
-                    href={item.link.endsWith("/") ? item.link.slice(0, -1) : item.link}
-                  />
-                }
-              </StyledPartnersCardItemInfoWrapperMob>
-              {item.level && item.level !== "No level" && (
-                <StyledPartnersLevel $level={item.level} />
-              )}
-            </StyledPartnersCardItem>
+              item={item}
+              isItemOpen={itemOpen.includes(item.id)}
+              onToggleCard={handleToggleCard}
+              t={t}
+            />
           ))}
         </StyledPartnersCardList>
       </Container>
