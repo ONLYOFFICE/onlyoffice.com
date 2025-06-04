@@ -174,16 +174,16 @@ const StyledCardLinkSubtitle = styled(Text)<{
     props.$textAlign === "left"
       ? "0 auto 32px 32px"
       : props.$textAlign === "right"
-        ? "0 32px 32px auto"
-        : "0 auto 32px"};
+      ? "0 32px 32px auto"
+      : "0 auto 32px"};
 
   @media ${device.tabletS} {
     margin: ${(props) =>
       props.$textAlign === "left"
         ? "0 auto 16px 16px"
         : props.$textAlign === "right"
-          ? "0 16px 16px auto"
-          : "0 auto 16px"};
+        ? "0 16px 16px auto"
+        : "0 auto 16px"};
   }
 
   @media ${device.tabletS} {
