@@ -7,6 +7,7 @@ export const getCustomers = async (locale: string) => {
     &fields=url
     &populate[img][fields]=url
     &fields=order
+    &sort=order:desc
   `.replace(/\s+/g, "");
 
   try {
