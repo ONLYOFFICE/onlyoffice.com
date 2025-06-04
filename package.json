@@ -15,8 +15,11 @@
   "dependencies": {
     "@onlyoffice/document-editor-react": "^2.0.0",
     "@hcaptcha/react-hcaptcha": "^1.12.0",
+    "@gsap/react": "^2.1.2",
     "crypto": "^1.0.1",
+    "@gsap/react": "^2.1.2",
     "dayjs": "^1.11.13",
+    "gsap": "^3.13.0",
     "html-react-parser": "^5.2.3",
     "i18next": "^24.2.2",
     "i18next-http-backend": "^3.0.2",
