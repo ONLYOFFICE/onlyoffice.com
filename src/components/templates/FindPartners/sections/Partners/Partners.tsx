@@ -10,11 +10,14 @@ import { IPartner, IPartners } from "../../FindPartners.types";
 import {
   StyledPartnersCardItem,
   StyledPartnersCardItemCountry,
+  StyledPartnersCardItemCountryMob,
   StyledPartnersCardItemDesc,
   StyledPartnersCardItemHead,
   StyledPartnersCardItemImg,
+  StyledPartnersCardItemInfoWrapperMob,
   StyledPartnersCardItemLeft,
   StyledPartnersCardItemLink,
+  StyledPartnersCardItemLinkMob,
   StyledPartnersCardItemName,
   StyledPartnersCardItemRight,
   StyledPartnersCardList,
@@ -95,11 +98,12 @@ useEffect(() => {
 
   return (
     <Section desktopSpacing={["80px", "112px"]}>
-      <Container maxWidth="1008px">
+      <Container maxWidth="1008px" desktopSpacing="40px">
         <StyledPartnersKeyList>
           {uniqueKeys.map((name, index) => (
             <StyledPartnersKeyItem key={name}>
               <Button
+                borderRadius="3px"
                 label={name}
                 onClick={() => handleClickKey(name, index)}
                 variant={activeTab === index ? "secondary" : "tertiary"}
@@ -166,6 +170,7 @@ useEffect(() => {
                   />
                   {item.link &&
                     <StyledPartnersCardItemLink
+                      target="_blank"
                       $siteText={t("PartnersVisitSite")}
                       $emailText={t("PartnersSendEmail")}
                       $urlType={item.url_type}
@@ -174,9 +179,24 @@ useEffect(() => {
                   }
                 </StyledPartnersCardItemHead>
                 {item.description &&
-                  <StyledPartnersCardItemDesc label={item.description} />
+                  <StyledPartnersCardItemDesc $isItemOpen={itemOpen.includes(item.id)} label={item.description} />
                 }
               </StyledPartnersCardItemRight>
+              <StyledPartnersCardItemInfoWrapperMob>
+                <StyledPartnersCardItemCountryMob
+                  size={3}
+                  label={item.country ?? ""}
+                />
+                {item.link &&
+                  <StyledPartnersCardItemLinkMob
+                    target="_blank"
+                    $siteText={t("PartnersVisitSite")}
+                    $emailText={t("PartnersSendEmail")}
+                    $urlType={item.url_type}
+                    href={item.link.endsWith("/") ? item.link.slice(0, -1) : item.link}
+                  />
+                }
+              </StyledPartnersCardItemInfoWrapperMob>
               {item.level && item.level !== "No level" && (
                 <StyledPartnersLevel $level={item.level} />
               )}

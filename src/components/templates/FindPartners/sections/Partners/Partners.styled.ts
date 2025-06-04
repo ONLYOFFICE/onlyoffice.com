@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
@@ -13,12 +14,27 @@ const StyledPartnersKeyList = styled.ul`
   margin-bottom: 32px;
 `;
 
-const StyledPartnersKeyItem = styled.li``;
+const StyledPartnersKeyItem = styled.li`
+  & > button {
+    padding: 8px 7.9px;
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px solid #ebebeb;
+
+    &:first-child {
+      text-transform: none;
+    }
+  }
+`;
 
 const StyledPartnersCountryWrapper = styled.div`
   width: 454px;
   margin: 0 auto;
   position: relative;
+
+  @media ${device.mobile} {
+    width: 100%;
+  }
 `;
 
 const StyledPartnersCountrySelect = styled.div<{
@@ -31,6 +47,10 @@ const StyledPartnersCountrySelect = styled.div<{
   cursor: pointer;
   transition-duration: 300ms;
   margin-bottom: 48px;
+
+  @media ${device.mobile} {
+    height: 50px;
+  }
 
   &:hover {
     border-color: #666666;
@@ -141,6 +161,11 @@ const StyledPartnersCardItem = styled.li<{
   overflow: hidden;
   cursor: pointer;
 
+  @media ${device.tabletS} {
+    flex-direction: column;
+    max-height: unset;
+  }
+
   &:hover {
     box-shadow: 0px 20px 50px rgba(85, 85, 85, 0.15);
 
@@ -154,6 +179,11 @@ const StyledPartnersCardItemLeft = styled.div`
   width: 287px;
   height: 106px;
   flex-shrink: 0;
+
+  @media ${device.tabletS} {
+    height: 104px;
+    padding-left: 25px;
+  }
 `;
 
 const StyledPartnersCardItemImg = styled.div<{
@@ -166,6 +196,12 @@ const StyledPartnersCardItemImg = styled.div<{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  @media ${device.tabletS} {
+    width: 126px;
+    height: 78px;
+    justify-self: flex-start;
+  }
 `;
 
 const StyledPartnersCardItemRight = styled.div`
@@ -174,12 +210,21 @@ const StyledPartnersCardItemRight = styled.div`
   flex-grow: 1;
   display: grid;
   grid-template-rows: 106px auto;
+
+  @media ${device.tabletS} {
+    padding-left: 25px;
+    display: block;
+  }
 `;
 
 const StyledPartnersCardItemHead = styled.div`
   display: grid;
   grid-template-columns: auto 183px 107px;
   align-items: center;
+
+  @media ${device.tabletS} {
+    display: block;
+  }
 `;
 
 const StyledPartnersCardItemName = styled(Heading)`
@@ -188,6 +233,10 @@ const StyledPartnersCardItemName = styled(Heading)`
 
 const StyledPartnersCardItemCountry = styled(Text)`
   text-align: right;
+
+  @media ${device.tabletS} {
+    display: none;
+  }
 `;
 
 const StyledPartnersCardItemLink = styled(Link)<{
@@ -210,6 +259,10 @@ const StyledPartnersCardItemLink = styled(Link)<{
   ${({$urlType}) => $urlType === "email" && css`
     background-image: url("/images/templates/find-partners/partners/email-link-symbol.svg");
   `}
+
+  @media ${device.tabletS} {
+    display: none;
+  }
 
   &::after {
     ${({$urlType, $siteText}) => $urlType === "site" && css`
@@ -243,10 +296,40 @@ const StyledPartnersCardItemLink = styled(Link)<{
   }
 `;
 
-const StyledPartnersCardItemDesc = styled(Text)`
+const StyledPartnersCardItemInfoWrapperMob = styled.div`
+  display: none;
+
+  @media ${device.tabletS} {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin-top: 30px;
+  }
+`;
+
+const StyledPartnersCardItemCountryMob = styled(StyledPartnersCardItemCountry)`
+  display: block;
+  text-align: left;
+`;
+
+const StyledPartnersCardItemLinkMob = styled(StyledPartnersCardItemLink)`
+  display: block;
+`;
+
+const StyledPartnersCardItemDesc = styled(Text)<{
+  $isItemOpen: boolean;
+}>`
   color: #666;
   padding-right: 30px;
   margin-top: 32px;
+
+  @media ${device.tabletS} {
+    overflow: hidden;
+    transition-duration: 300ms;
+    margin-top: 0;
+    padding-top: ${({$isItemOpen}) => $isItemOpen ? "32px" : "0"};
+    max-height: ${({$isItemOpen}) => $isItemOpen ? "970px" : "0"};
+  }
 `;
 
 const StyledPartnersLevel = styled.div<{
@@ -278,6 +361,11 @@ const StyledPartnersLevel = styled.div<{
       `;
     }
   }}
+
+  @media ${device.tabletS} {
+    left: auto;
+    right: 10px;
+  }
 
   &::after {
     content: "${({$level}) => $level}";
@@ -323,6 +411,9 @@ export {
   StyledPartnersCardItemName,
   StyledPartnersCardItemCountry,
   StyledPartnersCardItemLink,
+  StyledPartnersCardItemInfoWrapperMob,
+  StyledPartnersCardItemCountryMob,
+  StyledPartnersCardItemLinkMob,
   StyledPartnersCardItemDesc,
   StyledPartnersLevel,
 };
