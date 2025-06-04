@@ -66,6 +66,12 @@ const StyledFeaturesAsideTabletImg = styled.div<{
     background-image: ${(props) => `url(${props.$bgUrlTablet2x})`};
   }
 
+  @media (max-width: 1350px) {
+    top: 14.68vw;
+    left: 11.96vw;
+    transform: translate(0, 0);
+  }
+
   @media ${device.tablet} {
     width: 100%;
     height: 80%;
@@ -112,6 +118,22 @@ const StyledFeaturesAsideMobileImg = styled.div<{
 
   @media ${device.retina} {
     background-image: ${(props) => `url(${props.$bgUrlMobile2x})`};
+  }
+
+  @media ${device.desktop} {
+    width: 100%;
+    height: 78%;
+    top: 8%;
+    left: 15%;
+    transform: translate(0, 0);
+  }
+
+  @media (max-width: 1100px) {
+    width: 67%;
+    height: 79%;
+    top: 3.8vw;
+    left: 4.525vw;
+    transform: translate(0, 0);
   }
 
   @media ${device.tablet} {
