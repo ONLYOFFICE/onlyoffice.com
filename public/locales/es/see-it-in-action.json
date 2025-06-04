@@ -1,0 +1,46 @@
+{
+  "PageTitle": "Comprobar la funcionalidad principal de ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Edite archivos docx, xlsx, pptx, vea PDFs, cree formularios rellenables, colabore en tiempo real para comprobar las características principales de ONLYOFFICE. No se requieren descargas ni registro.",
+
+  "HeroHeadingSeeIt": "Véalo en acción",
+  "HeroTextCurious": "¿Tiene curiosidad por saber cómo es la interfaz y probar la funcionalidad principal sin registrarse?",
+
+  "ActionsOpen": "Abrir",
+  "ActionsEditDocx": "Editar DOCX",
+  "ActionsExampleDocumentTitleDocx": "Título del documento de ejemplo.docx",
+  "ActionsEditXlsx": "Editar XLSX",
+  "ActionsExampleDocumentTitleXlsx": "Título del documento de ejemplo.xlsx",
+  "ActionsEditPptx": "Editar PPTX",
+  "ActionsExampleDocumentTitlePptx": "Título del documento de ejemplo.pptx",
+  "ActionsEditPdf": "Editar PDF",
+  "ActionsExampleDocumentTitlePdf": "Título del documento de ejemplo.pdf",
+  "ActionsCreateForm": "Crear formulario",
+  "ActionsFillInPdfForm": "Rellenar formulario PDF",
+  "ActionsCollaborate": "Colaborar",
+
+  "ActionsDemoPreview": "Vista previa de demostración",
+  "ActionsDemoModalHeadingOpen": "Abrir DOCX para editar",
+  "ActionsDemoModalButtonClose": "Cerrar",
+
+  "GetStartedHeading": "Empiece y elija dónde trabajar",
+
+  "GetStartedItemTitleInOnlyOffice": "En ONLYOFFICE DocSpace",
+  "GetStartedItemTextCreate": "Cree salas dentro de su DocSpace seguro, invite a personas, vea, edite y colabore en todo tipo de documentos desde cualquier dispositivo de escritorio o móvil.",
+  "GetStartedItemLinkStart": "Comience con su cuenta gratuita",
+
+  "GetStartedItemTitleYouUse": "En la plataforma que usa",
+  "GetStartedItemTextConnect": "Conecte Docs para editar documentos directamente desde su aplicación. <0>Más de 40 integraciones listas</0>: Box, Moodle, Nextcloud, Odoo, Wordpress, etc.",
+  "GetStartedItemLink": "Obtener Docs ahora",
+
+  "GetStartedItemTitleYouBuild": "En la plataforma que construye",
+  "GetStartedItemTextIntegrate": "Integre Docs en su servicio para proporcionar potentes capacidades de edición y creación de documentos a sus clientes bajo su marca.",
+  "GetStartedItemLinkLearn": "Saber más",
+
+  "GetStartedItemTitleYourPc": "Desde su PC",
+  "GetStartedItemTextEdit": "Edite documentos sin conexión con aplicaciones de oficina gratuitas para Windows, Linux y macOS.",
+  "GetStartedItemLinkDownload": "Descargar ahora",
+
+  "GetStartedItemTitleMobile": "Desde sus dispositivos móviles",
+  "GetStartedItemTextWork": "Trabaje en documentos sobre la marcha con aplicaciones gratuitas para dispositivos iOS y Android.",
+  "GetStartedItemLinkInstall": "Instalar ahora"
+}
