@@ -5,7 +5,7 @@ import { Container } from "@src/components/ui/Container";
 import { ICustomers } from "../../Customers.types";
 import { useFixUrl } from "./utils/useFixUrl";
 
-import { StyledCardButton, StyledCardHeading, StyledCardImg, StyledCardItem, StyledCardList } from "./Card.styled";
+import { StyledCardButton, StyledCardHeading, StyledCardImg, StyledCardItem, StyledCardItemWrapper, StyledCardLink, StyledCardList } from "./Card.styled";
 
 const Card = ({ customers }: ICustomers) => {
   const { t } = useTranslation("customers");
@@ -17,10 +17,23 @@ const Card = ({ customers }: ICustomers) => {
       <Container maxWidth="1007px">
         <StyledCardList>
           {fixUrlData.map((item) => (
-            <StyledCardItem key={item.id} href={item.url} target="_blank" $showMore={showMore}>
-              <StyledCardImg $imgUrl={item.img?.[0]?.url} />
-              <StyledCardHeading label={item.title} level={4} size={5} />
-            </StyledCardItem>
+            <StyledCardItemWrapper key={item.id}>
+              <StyledCardItem href={item.url} target="_blank" $showMore={showMore}>
+                <StyledCardImg $imgUrl={item.img?.[0]?.url} />
+                <StyledCardHeading label={item.title} level={4} size={5} />
+              </StyledCardItem>
+              {item.url_pdf &&
+                <StyledCardLink
+                  href={item.url_pdf?.[0]?.url}
+                  target="_blank"
+                  download
+                  label={t("DownloadPDF")}
+                  color="main"
+                  textUnderline={true}
+                  hover="underline-none"
+                />
+              }
+            </StyledCardItemWrapper>
           ))}
         </StyledCardList>
         {fixUrlData.length > 6 && (

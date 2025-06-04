@@ -20,20 +20,26 @@ const StyledCardList = styled.div`
   }
 `;
 
-const StyledCardItem = styled(Link)<{
-  $showMore: boolean;
-}>`
+const StyledCardItemWrapper = styled.div`
   height: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: #fff;
   border: 1px solid #e5e5e5;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
   transition: opacity 0.5s ease-in-out, box-shadow 0.3s ease, display 0s linear 0.5s allow-discrete;
+  position: relative;
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+`;
 
+const StyledCardItem = styled(Link)<{
+  $showMore: boolean;
+}>`
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
     & > h4 {
       color: #FF6F3D;
     }
@@ -74,11 +80,32 @@ const StyledCardImg = styled.div<{
 `;
 
 const StyledCardHeading = styled(Heading)`
-  padding: 32px 32px 36px;
+  padding: 32px 32px 72px;
   transition-duration: 300ms;
 
   @media ${device.mobile} {
     padding: 25px 20px 36px;
+  }
+`;
+
+const StyledCardLink = styled(Link)`
+  display: block;
+  padding-left: 24px;
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("/images/icons/arrow-down-orange.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-50%);
   }
 `;
 
@@ -87,4 +114,12 @@ const StyledCardButton = styled(Button)`
   margin: 48px auto 0;
 `;
 
-export { StyledCardList, StyledCardItem, StyledCardImg, StyledCardHeading, StyledCardButton };
+export {
+  StyledCardList,
+  StyledCardItemWrapper,
+  StyledCardItem,
+  StyledCardImg,
+  StyledCardHeading,
+  StyledCardLink,
+  StyledCardButton
+};

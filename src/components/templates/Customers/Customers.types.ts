@@ -8,6 +8,10 @@ interface ICustomers {
         id: number;
         url: string;
       }[];
+      url_pdf?: {
+        id: number;
+        url: string;
+      }[];
     }[];
   }
 }
