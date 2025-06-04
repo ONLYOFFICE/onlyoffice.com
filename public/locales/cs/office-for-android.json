@@ -14,20 +14,20 @@
   "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.cs.png",
   "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-cs.svg",
 
-  "FeaturesItemHeadingFull": "Plně vybavený textový editor",
-  "FeaturesItemTextMakeUse": "Využijte širokou škálu nástrojů pro zpracování textu: formátování stránky, odstavce a textu, tabulky, automatické tvary, grafy atd. Vytvářejte textové dokumenty jakékoli velikosti a složitosti. Tiskněte je přes AirPrint.",
+  "FeaturesItemHeadingFull": "Editor dokumentů",
+  "FeaturesItemTextMakeUse": "Pracujte s textovými dokumenty všech populárních formátů. Formátujte text a nastavte rozvržení stránky. Vkládejte odkazy, obrázky, grafy. Dokumenty můžete tisknout přímo z aplikace.",
 
-  "FeaturesItemHeadingComplete": "Kompletní tabulkový editor",
-  "FeaturesItemTextManage": "Spravujte svá data v tabulkách: pracujte s řádky a sloupci, upravujte parametry buněk, používejte více než 450 vzorců, řaďte a filtrujte data.",
+  "FeaturesItemHeadingComplete": "Editor tabulek",
+  "FeaturesItemTextManage": "Vytvářejte, prohlížejte a upravujte tabulky na svém zařízení. Pracujte s řádky a sloupci, upravujte parametry buněk, používejte více než 450 vzorců, řaďte a filtrujte data.",
 
-  "FeaturesItemHeadingCollaborative": "Editor prezentací pro spolupráci",
-  "FeaturesItemTextMakeWork": "Pracujte se všemi populárními objekty na svých snímcích: vkládejte obrázky, přidávejte a upravujte automatické tvary, grafy, texty a další prvky.",
+  "FeaturesItemHeadingCollaborative": "Editor prezentací",
+  "FeaturesItemTextMakeWork": "Vytvářejte a upravujte působivé prezentace v systému Android. Spravujte snímky, vkládejte obrázky, přidávejte a upravujte tvary, diagramy a grafy, texty a další položky.",
 
-  "FeaturesItemHeadingOnline": "Online vyplňování formulářů",
-  "FeaturesItemTextMakeView": "Prohlížejte a vyplňujte formuláře. Snadno přecházejte z pole na pole. Uložte výsledek jako soubor PDF nebo DOCX.",
+  "FeaturesItemHeadingOnline": "Vyplňovač formulářů",
+  "FeaturesItemTextMakeView": "Prohlížejte a vyplňujte online formuláře. Snadno se pohybujte z pole do pole. Výsledek uložte jako soubor PDF nebo DOCX.",
 
   "FeaturesItemHeadingPDF": "Prohlížeč PDF a přehrávač médií",
-  "FeaturesItemTextMakeViewPDF": "Prohlížejte dokumenty PDF a obrázky, přehrávejte zvukové a video soubory. Otevírejte soubory .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf atd.",
+  "FeaturesItemTextMakeViewPDF": "Prohlížejte soubory PDF, fotografie a videa. Řaďte, přejmenovávejte, přesouvejte a kopírujte soubory, vytvářejte složky na zařízení nebo v cloudu.",
 
   "RealTimeCollaboration": "Spolupráce v reálném čase",
   "BeMoreProductive": "Buďte produktivnější. Připojte svou aplikaci ke cloudu ONLYOFFICE. Sdílejte dokumenty pro společné úpravy se svými kolegy v reálném čase. Komentujte a sledujte změny. Přidávejte grafické anotace.",

@@ -14,20 +14,20 @@
   "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.nl.png",
   "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-nl.svg",
 
-  "FeaturesItemHeadingFull": "Volledig uitgeruste tekstverwerker",
-  "FeaturesItemTextMakeUse": "Maak gebruik van meerdere tekstverwerkingshulpmiddelen: pagina-, alinea- en tekstopmaak, tabellen, autovormen, grafieken, enz. Creëer tekstdocumenten van elke grootte en complexiteit. Druk ze af via AirPrint.",
+  "FeaturesItemHeadingFull": "Documenteditor",
+  "FeaturesItemTextMakeUse": "Werk met tekstdocumenten van alle populaire formaten. Formatteer uw tekst en stel de paginalay-out in. Voeg koppelingen, afbeeldingen en grafieken in. Print uw documenten rechtstreeks vanuit de app.",
 
-  "FeaturesItemHeadingComplete": "Complete spreadsheet-editor",
-  "FeaturesItemTextManage": "Beheer uw spreadsheetgegevens: werk met rijen en kolommen, pas celparameters aan, gebruik meer dan 450 formules, sorteer en filter gegevens.",
+  "FeaturesItemHeadingComplete": "Spreadsheet-editor",
+  "FeaturesItemTextManage": "Creëer, bekijk en bewerk spreadsheets op uw apparaat. Werk met rijen en kolommen, pas celparameters aan, gebruik meer dan 450 formules, sorteer en filter gegevens.",
 
-  "FeaturesItemHeadingCollaborative": "Collaboratieve presentatie-editor",
-  "FeaturesItemTextMakeWork": "Werk met alle populaire objecten op uw dia's: voeg afbeeldingen in, voeg autovormen, diagrammen en grafieken, teksten en andere elementen toe en bewerk ze.",
+  "FeaturesItemHeadingCollaborative": "Presentatie-editor",
+  "FeaturesItemTextMakeWork": "Creëer en bewerk impactvolle presentaties op Android. Beheer dia's, voeg afbeeldingen in, voeg vormen, diagrammen en grafieken, teksten en andere items toe en bewerk deze.",
 
-  "FeaturesItemHeadingOnline": "Online formuliereninvuller",
-  "FeaturesItemTextMakeView": "Bekijk en vul formulieren in. Navigeer eenvoudig van veld naar veld. Sla het resultaat op als een PDF- of DOCX-bestand.",
+  "FeaturesItemHeadingOnline": "Formuliereninvuller",
+  "FeaturesItemTextMakeView": "Bekijk en vul online formulieren in. Navigeer eenvoudig van veld naar veld. Sla het resultaat op als een PDF- of DOCX-bestand.",
 
-  "FeaturesItemHeadingPDF": "PDF-viewer en mediaspeler",
-  "FeaturesItemTextMakeViewPDF": "Bekijk PDF-documenten en afbeeldingen, speel audio- en videobestanden af. Open .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, enz.",
+  "FeaturesItemHeadingPDF": "PDF-viewer & mediaspeler",
+  "FeaturesItemTextMakeViewPDF": "Bekijk pdf-, foto- en videobestanden. Sorteer, hernoem, verplaats en kopieer bestanden, maak mappen aan op het apparaat of in de cloud.",
 
   "RealTimeCollaboration": "Realtime samenwerking",
   "BeMoreProductive": "Wees productiever. Verbind uw app met de ONLYOFFICE-cloud. Deel documenten om ze in realtime samen met uw teamgenoten te bewerken. Reageer en volg wijzigingen. Voeg grafische annotaties toe.",

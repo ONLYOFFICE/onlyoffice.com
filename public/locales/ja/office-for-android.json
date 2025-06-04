@@ -14,20 +14,20 @@
   "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.ja.png",
   "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-ja.svg",
 
-  "FeaturesItemHeadingFull": "多機能テキストプロセッサ",
-  "FeaturesItemTextMakeUse": "ページ、段落、テキストの書式設定、表、オートシェイプ、グラフなど、複数のテキスト処理ツールを活用。あらゆるサイズと複雑さのテキスト文書を作成し、AirPrint経由で印刷。",
+  "FeaturesItemHeadingFull": "ドキュメントエディター",
+  "FeaturesItemTextMakeUse": "すべての一般的な形式のテキストドキュメントを操作できます。テキストをフォーマットし、ページレイアウトを設定します。リンク、画像、グラフを挿入できます。アプリから直接ドキュメントを印刷できます。",
 
-  "FeaturesItemHeadingComplete": "完全なスプレッドシートエディタ",
-  "FeaturesItemTextManage": "スプレッドシートデータを管理：行と列の操作、セルパラメータの調整、450以上の数式の使用、データの並べ替えとフィルタリング。",
+  "FeaturesItemHeadingComplete": "スプレッドシートエディター",
+  "FeaturesItemTextManage": "デバイス上でスプレッドシートを作成、表示、編集できます。行と列を操作し、セルのパラメータを調整し、450以上の関数を使用し、データを並べ替えたりフィルターしたりできます。",
 
-  "FeaturesItemHeadingCollaborative": "共同編集プレゼンテーションエディタ",
-  "FeaturesItemTextMakeWork": "スライド上の一般的なオブジェクトをすべて操作：画像の挿入、オートシェイプ、グラフ、テキスト、その他のアイテムの追加と編集。",
+  "FeaturesItemHeadingCollaborative": "プレゼンテーションエディター",
+  "FeaturesItemTextMakeWork": "Androidで印象的なプレゼンテーションを作成および編集できます。スライドを管理し、画像を挿入し、図形、チャート、グラフ、テキスト、その他のアイテムを追加および編集できます。",
 
-  "FeaturesItemHeadingOnline": "オンラインフォーム入力",
-  "FeaturesItemTextMakeView": "フォームの表示と入力。フィールド間を簡単に移動。結果をPDFまたはDOCXファイルとして保存。",
+  "FeaturesItemHeadingOnline": "フォーム入力",
+  "FeaturesItemTextMakeView": "オンラインフォームを表示して入力できます。フィールド間を簡単に移動できます。結果をPDFまたはDOCXファイルとして保存できます。",
 
-  "FeaturesItemHeadingPDF": "PDFビューアとメディアプレーヤー",
-  "FeaturesItemTextMakeViewPDF": "PDFドキュメントや画像の表示、音声・動画ファイルの再生。.bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdfなどを開く。",
+  "FeaturesItemHeadingPDF": "PDFビューアー＆メディアプレーヤー",
+  "FeaturesItemTextMakeViewPDF": "PDF、写真、ビデオファイルを表示できます。ファイルの並べ替え、名前変更、移動、コピー、デバイス上またはクラウドでのフォルダ作成が可能です。",
 
   "RealTimeCollaboration": "リアルタイム共同編集",
   "BeMoreProductive": "生産性を向上。アプリをONLYOFFICEクラウドに接続。ドキュメントを共有してチームメイトとリアルタイムで共同編集。コメントや変更履歴の追跡。グラフィック注釈の追加。",

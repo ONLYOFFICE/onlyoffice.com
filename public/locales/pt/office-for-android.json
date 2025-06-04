@@ -14,20 +14,20 @@
   "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.pt.png",
   "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-pt.svg",
 
-  "FeaturesItemHeadingFull": "Processador de texto com todos os recursos",
-  "FeaturesItemTextMakeUse": "Utilize múltiplas ferramentas de processamento de texto: formatação de página, parágrafo e texto, tabelas, autoformas, gráficos, etc. Crie documentos de texto de qualquer tamanho e complexidade. Imprima-os via AirPrint.",
+  "FeaturesItemHeadingFull": "Editor de documentos",
+  "FeaturesItemTextMakeUse": "Trabalhe com documentos de texto de todos os formatos populares. Formate seu texto e defina o layout da página. Insira links, imagens, gráficos. Imprima seus documentos diretamente do aplicativo.",
 
-  "FeaturesItemHeadingComplete": "Editor de planilhas completo",
-  "FeaturesItemTextManage": "Gerencie os dados da sua planilha: trabalhe com linhas e colunas, ajuste os parâmetros das células, use mais de 450 fórmulas, classifique e filtre dados.",
+  "FeaturesItemHeadingComplete": "Editor de planilhas",
+  "FeaturesItemTextManage": "Crie, visualize e edite planilhas em seu dispositivo. Trabalhe com linhas e colunas, ajuste os parâmetros das células, use mais de 450 fórmulas, classifique e filtre dados.",
 
-  "FeaturesItemHeadingCollaborative": "Editor de apresentações colaborativo",
-  "FeaturesItemTextMakeWork": "Trabalhe com todos os objetos populares em seus slides: insira imagens, adicione e edite autoformas, diagramas e gráficos, textos e outros itens.",
+  "FeaturesItemHeadingCollaborative": "Editor de apresentações",
+  "FeaturesItemTextMakeWork": "Crie e edite apresentações impactantes no Android. Gerencie slides, insira imagens, adicione e edite formas, tabelas e gráficos, textos e outros itens.",
 
-  "FeaturesItemHeadingOnline": "Preenchedor de formulários online",
-  "FeaturesItemTextMakeView": "Visualize e preencha formulários. Navegue facilmente de campo em campo. Salve o resultado como um arquivo PDF ou DOCX.",
+  "FeaturesItemHeadingOnline": "Preenchedor de formulários",
+  "FeaturesItemTextMakeView": "Visualize e preencha formulários online. Navegue facilmente de campo em campo. Salve o resultado como um arquivo PDF ou DOCX.",
 
   "FeaturesItemHeadingPDF": "Visualizador de PDF e reprodutor de mídia",
-  "FeaturesItemTextMakeViewPDF": "Visualize documentos PDF e imagens, reproduza arquivos de áudio e vídeo. Abra arquivos .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
+  "FeaturesItemTextMakeViewPDF": "Visualize arquivos PDF, fotos e vídeos. Classifique, renomeie, mova e copie arquivos, crie pastas no dispositivo ou na nuvem.",
 
   "RealTimeCollaboration": "Colaboração em tempo real",
   "BeMoreProductive": "Seja mais produtivo. Conecte seu aplicativo à nuvem ONLYOFFICE. Compartilhe documentos para coeditá-los com seus colegas de equipe em tempo real. Comente e acompanhe as alterações. Adicione anotações gráficas.",
