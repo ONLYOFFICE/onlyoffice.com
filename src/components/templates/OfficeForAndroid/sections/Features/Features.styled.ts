@@ -25,6 +25,16 @@ const StyledFeaturesAside = styled.aside`
     height: 77vw;
     top: 0;
   }
+
+  @media ${device.mobile} {
+    & ~ div {
+      gap: 20px;
+
+      & > div {
+        gap: 30px;
+      }
+    }
+  }
 `;
 
 const StyledFeaturesAsideTablet = styled.div`
