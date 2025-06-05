@@ -16,6 +16,7 @@ import {
   StyledPartnersCountryText,
   StyledPartnersCountryWrapper,
   StyledPartnersKeyList,
+  StyledPartnersButtonShowMore,
 } from "./Partners.styled";
 
 const Partners = ({ partners }: IPartners) => {
@@ -26,11 +27,13 @@ const Partners = ({ partners }: IPartners) => {
   const [choosedKey, setChoosedKey] = useState<string>("");
   const [itemOpen, setItemOpen] = useState<number[]>([]);
   const [allItems, setAllItems] = useState<IPartner[]>([]);
+  const [showAllCards, setShowAllCards] = useState<boolean>(false);
 
   useEffect(() => {
     const data = partners.partners.data;
     setAllItems(data);
     setChoosedKey("");
+    setShowAllCards(false);
   }, [partners]);
 
   const { uniqueKeys, uniqueCountries } = useUniqueItems(
@@ -50,6 +53,14 @@ const Partners = ({ partners }: IPartners) => {
 
     return currentItems;
   }, [choosedKey, selectCountry, allItems]);
+
+  const displayedItems = useMemo(() => {
+    if (showAllCards) {
+      return filteredItems;
+    } else {
+      return filteredItems.slice(0, 3);
+    }
+  }, [filteredItems, showAllCards]);
 
   const handleToggleCard = useCallback((id: number) => {
     setItemOpen((prevItemOpen) => {
@@ -124,7 +135,7 @@ const Partners = ({ partners }: IPartners) => {
           </StyledPartnersCountryOptions>
         </StyledPartnersCountryWrapper>
         <StyledPartnersCardList>
-          {filteredItems.length > 0 && filteredItems.map((item) => (
+          {filteredItems.length > 0 && displayedItems.map((item) => (
             <PartnersCardItem
               key={item.id}
               item={item}
@@ -133,6 +144,14 @@ const Partners = ({ partners }: IPartners) => {
               t={t}
             />
           ))}
+          {filteredItems.length > 3 && (
+            <StyledPartnersButtonShowMore
+              label={showAllCards ? t("ShowLessBtnText") : t("ShowMoreBtnText")}
+              onClick={() => setShowAllCards(!showAllCards)}
+              variant="tertiary"
+              borderRadius="3px"
+            />
+          )}
         </StyledPartnersCardList>
       </Container>
     </Section>

@@ -15,10 +15,15 @@ const StyledPartnersCardItem = styled.li<{
   padding: 32px 0;
   box-shadow: 0px 7px 15px rgba(85, 85, 85, 0.1);
   border-radius: 5px;
-  transition: box-shadow 0.3s, max-height 0.6s ease;
+  transition: box-shadow 0.3s, max-height 0.6s ease, opacity 0.3s;
   max-height: ${({$isItemOpen}) => $isItemOpen ? "970px" : "170px"};
   overflow: hidden;
   cursor: pointer;
+  opacity: 1;
+
+  @starting-style {
+    opacity: 0;
+  }
 
   @media ${device.tabletS} {
     flex-direction: column;

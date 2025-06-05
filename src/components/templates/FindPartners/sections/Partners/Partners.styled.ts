@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
+import { Button } from "@src/components/ui/Button";
 
 const StyledPartnersKeyList = styled.ul`
   display: flex;
@@ -120,6 +121,10 @@ const StyledPartnersCardList = styled.ul`
   gap: 32px;
 `;
 
+const StyledPartnersButtonShowMore = styled(Button)`
+  background-color: #fff;
+`;
+
 export {
   StyledPartnersKeyList,
   StyledPartnersCountryWrapper,
@@ -128,4 +133,5 @@ export {
   StyledPartnersCountryText,
   StyledPartnersCountryOptions,
   StyledPartnersCardList,
+  StyledPartnersButtonShowMore,
 };
