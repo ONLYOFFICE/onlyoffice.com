@@ -23,12 +23,15 @@ const StyledCardList = styled.div`
 const StyledCardItemWrapper = styled.div<{
   $showMore: boolean;
 }>`
+  width: 100%;
+  max-width: 100%;
   height: 100%;
   background-color: #fff;
   border: 1px solid #e5e5e5;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
   transition: opacity 0.5s ease-in-out, box-shadow 0.3s ease, display 0s linear 0.5s allow-discrete;
   position: relative;
+  overflow: hidden;
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -36,7 +39,7 @@ const StyledCardItemWrapper = styled.div<{
 
   @media (min-width: 593px) {
     &:nth-child(n + 9) {
-      display: ${(props) => (props.$showMore ? "none" : "flex")};
+      display: ${(props) => (props.$showMore ? "none" : "block")};
       opacity: ${(props) => (props.$showMore ? "0" : "1")};
 
       @starting-style {
@@ -47,7 +50,7 @@ const StyledCardItemWrapper = styled.div<{
 
   @media ${device.mobile} {
     &:nth-child(n + 7) {
-      display: ${(props) => (props.$showMore ? "none" : "flex")};
+      display: ${(props) => (props.$showMore ? "none" : "block")};
       opacity: ${(props) => (props.$showMore ? "0" : "1")};
 
       @starting-style {
@@ -60,6 +63,7 @@ const StyledCardItemWrapper = styled.div<{
 const StyledCardItem = styled(Link)`
   display: flex;
   flex-direction: column;
+  min-width: 0;
 
   &:hover {
     & > h4 {
