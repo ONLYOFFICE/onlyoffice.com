@@ -20,7 +20,9 @@ const StyledCardList = styled.div`
   }
 `;
 
-const StyledCardItemWrapper = styled.div`
+const StyledCardItemWrapper = styled.div<{
+  $showMore: boolean;
+}>`
   height: 100%;
   background-color: #fff;
   border: 1px solid #e5e5e5;
@@ -30,19 +32,6 @@ const StyledCardItemWrapper = styled.div`
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  }
-`;
-
-const StyledCardItem = styled(Link)<{
-  $showMore: boolean;
-}>`
-  display: flex;
-  flex-direction: column;
-
-  &:hover {
-    & > h4 {
-      color: #FF6F3D;
-    }
   }
 
   @media (min-width: 593px) {
@@ -64,6 +53,17 @@ const StyledCardItem = styled(Link)<{
       @starting-style {
         opacity: 0;
       }
+    }
+  }
+`;
+
+const StyledCardItem = styled(Link)`
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    & > h4 {
+      color: #FF6F3D;
     }
   }
 `;

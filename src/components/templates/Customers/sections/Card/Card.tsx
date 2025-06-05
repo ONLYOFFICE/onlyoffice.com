@@ -17,8 +17,8 @@ const Card = ({ customers }: ICustomers) => {
       <Container maxWidth="1007px">
         <StyledCardList>
           {fixUrlData.map((item) => (
-            <StyledCardItemWrapper key={item.id}>
-              <StyledCardItem href={item.url} target="_blank" $showMore={showMore}>
+            <StyledCardItemWrapper key={item.id} $showMore={showMore}>
+              <StyledCardItem href={item.url} target="_blank">
                 <StyledCardImg $imgUrl={item.img?.[0]?.url} />
                 <StyledCardHeading label={item.title} level={4} size={5} />
               </StyledCardItem>
