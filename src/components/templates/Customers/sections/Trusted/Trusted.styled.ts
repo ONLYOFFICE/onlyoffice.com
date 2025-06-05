@@ -5,6 +5,10 @@ import { Button } from "@src/components/ui/Button";
 
 const StyledTrustedHeading = styled(Heading)`
   margin-bottom: 56px;
+
+  @media ${device.mobileS} {
+    margin-bottom: 32px;
+  }
 `;
 
 const StyledTrustedTabList = styled.ul<{
@@ -23,6 +27,10 @@ const StyledTrustedTabList = styled.ul<{
     justify-content: center;
     overflow-x: auto;
   `}
+
+  @media ${device.mobileS} {
+    margin-bottom: 32px;
+  }
 `;
 
 const StyledTrustedTabItem = styled.li<{
@@ -52,6 +60,11 @@ const StyledTrustedTabBtn = styled(Button)<{
   background-color: transparent;
   padding: 0 0 24px;
   color: ${(props) => (props.$isActive ? "#ff6f3d" : "#444444")};
+
+  @media ${device.mobileS} {
+    padding: 0 0 9px;
+    min-height: auto;
+  }
 `;
 
 const StyledTrustedTabBtnWrapper = styled.div`
@@ -114,6 +127,11 @@ const StyledTrustedIconList = styled.div<{
 
   @media ${device.mobile} {
     column-gap: 0;
+  }
+
+  @media ${device.mobileS} {
+    row-gap: 0;
+    max-height: ${({ $showMore }) => $showMore ? "232px" : "2500px"};
   }
 
   @starting-style {

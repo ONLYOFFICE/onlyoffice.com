@@ -15,6 +15,10 @@ const StyledIntegrationSection = styled(Section)`
     background-position: -70vw center;
     background-size: auto 115vw;
   }
+
+  @media ${device.mobileS} {
+    background-position: -54vw center;
+  }
 `;
 
 const StyledIntegrationContainer = styled(Container)`
@@ -24,6 +28,10 @@ const StyledIntegrationContainer = styled(Container)`
 
   @media ${device.mobile} {
     flex-direction: column;
+  }
+
+  @media ${device.mobileS} {
+    padding-right: 25px;
   }
 `;
 

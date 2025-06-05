@@ -31,7 +31,7 @@ const Trusted = () => {
   const { atStart, atEnd } = useOnScroll(containerRef);
 
   return (
-    <Section>
+    <Section mobileSpacing={["0", "48px"]}>
       <Container tabletSpacing="16px">
         <StyledTrustedHeading size={4} level={2} textAlign="center">
           <Trans t={t} i18nKey={"TrustedHeadingTrustedAndLove"} components={[

@@ -14,8 +14,8 @@ const Integration = () => {
   const { t } = useTranslation("customers");
 
   return (
-    <StyledIntegrationSection desktopSpacing={["99px", "99px"]}>
-      <StyledIntegrationContainer maxWidth="1000px">
+    <StyledIntegrationSection desktopSpacing={["99px", "99px"]} mobileSpacing={["20px", "16px"]}>
+      <StyledIntegrationContainer maxWidth="1000px" mobileSpacing="20px">
         <StyledIntegrationLeft>
           <StyledIntegrationHeading
             color="#fff"

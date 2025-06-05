@@ -84,7 +84,7 @@ const StyledCardHeading = styled(Heading)`
   transition-duration: 300ms;
 
   @media ${device.mobile} {
-    padding: 25px 20px 36px;
+    padding: 25px 20px 64px;
   }
 `;
 
@@ -94,6 +94,11 @@ const StyledCardLink = styled(Link)`
   position: absolute;
   bottom: 32px;
   left: 32px;
+
+  @media ${device.mobile} {
+    bottom: 25px;
+    left: 20px;
+  }
 
   &::before {
     content: "";
@@ -112,6 +117,10 @@ const StyledCardLink = styled(Link)`
 const StyledCardButton = styled(Button)`
   display: block;
   margin: 48px auto 0;
+
+  @media ${device.mobileS} {
+    margin: 40px auto 0;
+  }
 `;
 
 export {
