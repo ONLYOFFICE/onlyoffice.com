@@ -26,4 +26,23 @@ interface IPartnerCardProps {
   t: (key: string) => string;
 }
 
-export type { IPartners, IPartner, IPartnerCardProps };
+interface IPartnersKeyItemProps {
+  name: string;
+  index: number;
+  isActiveTab: boolean;
+  onClick: (key: string, index: number) => void;
+}
+
+interface IPartnersCountryOption {
+  country: string;
+  isSelectCountry: boolean;
+  onClick: (country: string) => void;
+}
+
+export type {
+  IPartners,
+  IPartner,
+  IPartnerCardProps,
+  IPartnersKeyItemProps,
+  IPartnersCountryOption,
+};

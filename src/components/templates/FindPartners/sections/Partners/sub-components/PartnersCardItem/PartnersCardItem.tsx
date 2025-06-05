@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { IPartnerCardProps } from "../../../FindPartners.types";
+import { IPartnerCardProps } from "@src/components/templates/FindPartners/FindPartners.types";
 
 import {
   StyledPartnersCardItem,
@@ -21,7 +21,6 @@ import {
 const PartnersCardItemComponent = ({ item, isItemOpen, onToggleCard, t }: IPartnerCardProps) => {
   return (
     <StyledPartnersCardItem
-      key={item.id}
       $isItemOpen={isItemOpen}
       onClick={() => onToggleCard(item.id)}
     >

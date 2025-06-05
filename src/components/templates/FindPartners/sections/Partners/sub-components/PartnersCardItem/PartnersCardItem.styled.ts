@@ -3,7 +3,7 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
-import { IPartner } from "../../../FindPartners.types";
+import { IPartner } from "../../../../FindPartners.types";
 
 const StyledPartnersCardItem = styled.li<{
   $isItemOpen: boolean;

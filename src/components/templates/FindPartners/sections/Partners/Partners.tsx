@@ -2,21 +2,19 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-import { Button } from "@src/components/ui/Button";
-import { Text } from "@src/components/ui/Text";
-import { PartnersCardItem } from "./sub-components";
+import { PartnersCardItem } from "./sub-components/PartnersCardItem";
+import { PartnersKeyItem } from "./sub-components/PartnersKeyItem";
+import { PartnersCountryOption } from "./sub-components/PartnersCountryOption";
 import { useUniqueItems } from "./utils/useUniqueItems";
 import { IPartner, IPartners } from "../../FindPartners.types";
 
 import {
   StyledPartnersCardList,
   StyledPartnersCountryInner,
-  StyledPartnersCountryOption,
   StyledPartnersCountryOptions,
   StyledPartnersCountrySelect,
   StyledPartnersCountryText,
   StyledPartnersCountryWrapper,
-  StyledPartnersKeyItem,
   StyledPartnersKeyList,
 } from "./Partners.styled";
 
@@ -63,42 +61,35 @@ const Partners = ({ partners }: IPartners) => {
     });
   }, []);
 
-  const handleClickKey = (key: string, index: number) => {
-    if (key === t("PartnersAll")) {
-      setChoosedKey("");
-    } else {
-      setChoosedKey(key);
-    }
-
-    setActiveTab(index);
-    setSelectCountry("");
-  };
-
-  const handleClickOption = (country: string) => {
-    if (country === t("PartnersAllCountries")) {
+  const handleClickKey = useCallback(
+    (key: string, index: number) => {
+      setChoosedKey(key === t("PartnersAll") ? "" : key);
+      setActiveTab(index);
       setSelectCountry("");
-    } else {
-      setSelectCountry(country);
-    }
+    },
+    [t]
+  );
 
+  const handleClickOption = useCallback(
+    (country: string) => {
+    setSelectCountry(country === t("PartnersAllCountries") ? "" : country);
     setSelectOpen(false);
     setChoosedKey("");
     setActiveTab(0);
-  };
+  }, [t]);
 
   return (
     <Section desktopSpacing={["80px", "112px"]}>
       <Container maxWidth="1008px" desktopSpacing="40px">
         <StyledPartnersKeyList>
           {uniqueKeys.map((name, index) => (
-            <StyledPartnersKeyItem key={name}>
-              <Button
-                borderRadius="3px"
-                label={name}
-                onClick={() => handleClickKey(name, index)}
-                variant={activeTab === index ? "secondary" : "tertiary"}
-              />
-            </StyledPartnersKeyItem>
+            <PartnersKeyItem
+              key={name}
+              name={name}
+              index={index}
+              isActiveTab={activeTab === index}
+              onClick={handleClickKey}
+            />
           ))}
         </StyledPartnersKeyList>
         <StyledPartnersCountryWrapper>
@@ -123,17 +114,12 @@ const Partners = ({ partners }: IPartners) => {
           </StyledPartnersCountrySelect>
           <StyledPartnersCountryOptions $isSelectOpen={selectOpen}>
             {uniqueCountries.map((country, index) => (
-              <StyledPartnersCountryOption
+              <PartnersCountryOption
                 key={country}
-                onClick={() => handleClickOption(country)}
-              >
-                <Text
-                  label={country}
-                  as={"span"}
-                  size={2}
-                  color={(selectCountry === country) || (selectCountry === "" && index === 0) ? "#FF6F3D" : undefined}
-                />
-              </StyledPartnersCountryOption>
+                country={country}
+                isSelectCountry={(selectCountry === country) || (selectCountry === "" && index === 0)}
+                onClick={handleClickOption}
+              />
             ))}
           </StyledPartnersCountryOptions>
         </StyledPartnersCountryWrapper>

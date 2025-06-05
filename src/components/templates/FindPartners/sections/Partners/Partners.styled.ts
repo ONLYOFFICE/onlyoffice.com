@@ -11,19 +11,6 @@ const StyledPartnersKeyList = styled.ul`
   margin-bottom: 32px;
 `;
 
-const StyledPartnersKeyItem = styled.li`
-  & > button {
-    padding: 8px 7.9px;
-    font-size: 16px;
-    line-height: 22px;
-    border: 1px solid #ebebeb;
-
-    &:first-child {
-      text-transform: none;
-    }
-  }
-`;
-
 const StyledPartnersCountryWrapper = styled.div`
   width: 454px;
   margin: 0 auto;
@@ -125,16 +112,6 @@ const StyledPartnersCountryOptions = styled.ul<{
   z-index: 3;
 `;
 
-const StyledPartnersCountryOption = styled.li`
-  padding: 8px 16px;
-  transition-duration: 300ms;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #F9F9F9;
-  }
-`;
-
 const StyledPartnersCardList = styled.ul`
   display: flex;
   flex-direction: column;
@@ -145,12 +122,10 @@ const StyledPartnersCardList = styled.ul`
 
 export {
   StyledPartnersKeyList,
-  StyledPartnersKeyItem,
   StyledPartnersCountryWrapper,
   StyledPartnersCountrySelect,
   StyledPartnersCountryInner,
   StyledPartnersCountryText,
   StyledPartnersCountryOptions,
-  StyledPartnersCountryOption,
   StyledPartnersCardList,
 };
