@@ -61,9 +61,13 @@ const StyledTrustedTabBtn = styled(Button)<{
   padding: 0 0 24px;
   color: ${(props) => (props.$isActive ? "#ff6f3d" : "#444444")};
 
+  @media ${device.tabletS} {
+    padding: 0 0 16px;
+    min-height: auto;
+  }
+
   @media ${device.mobileS} {
     padding: 0 0 9px;
-    min-height: auto;
   }
 `;
 
@@ -88,6 +92,10 @@ const ArrowBase = styled.button`
   border-radius: 50%;
   cursor: pointer;
   transition-duration: 300ms;
+
+  @media ${device.tabletS} {
+    top: calc(50% - 22px);
+  }
 `;
 
 const ScrollButtonLeft = styled(ArrowBase)<{
