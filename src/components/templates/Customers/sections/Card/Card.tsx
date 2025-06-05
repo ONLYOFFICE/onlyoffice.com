@@ -26,7 +26,7 @@ const Card = ({ customers }: ICustomers) => {
                 <StyledCardLink
                   href={item.url_pdf?.[0]?.url}
                   target="_blank"
-                  download
+                  download={true}
                   label={t("DownloadPDF")}
                   color="main"
                   textUnderline={true}
