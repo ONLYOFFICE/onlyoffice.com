@@ -34,6 +34,7 @@ const Partners = ({ partners }: IPartners) => {
     setAllItems(data);
     setChoosedKey("");
     setShowAllCards(false);
+    setActiveTab(0);
   }, [partners]);
 
   const { uniqueKeys, uniqueCountries } = useUniqueItems(
