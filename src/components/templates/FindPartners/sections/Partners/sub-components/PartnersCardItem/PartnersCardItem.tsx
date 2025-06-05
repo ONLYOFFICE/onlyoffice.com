@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { Trans } from "next-i18next";
 import { IPartnerCardProps } from "@src/components/templates/FindPartners/FindPartners.types";
 
 import {
@@ -16,7 +17,6 @@ import {
   StyledPartnersCardItemCountryMob,
   StyledPartnersCardItemLinkMob
 } from "./PartnersCardItem.styled";
-
 
 const PartnersCardItemComponent = ({ item, isItemOpen, onToggleCard, t }: IPartnerCardProps) => {
   return (
@@ -49,7 +49,11 @@ const PartnersCardItemComponent = ({ item, isItemOpen, onToggleCard, t }: IPartn
           }
         </StyledPartnersCardItemHead>
         {item.description &&
-          <StyledPartnersCardItemDesc $isItemOpen={isItemOpen} label={item.description} />
+          <StyledPartnersCardItemDesc $isItemOpen={isItemOpen}>
+            <Trans components={{br: <br />}}>
+              {item.description}
+            </Trans>
+          </StyledPartnersCardItemDesc>
         }
       </StyledPartnersCardItemRight>
       <StyledPartnersCardItemInfoWrapperMob>
