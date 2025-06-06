@@ -11,7 +11,7 @@ import { InfoCard } from "./sub-components/InfoCard";
 import { items } from "./data/items";
 
 const UsefulInfo = () => {
-  const { t } = useTranslation("affiliates");
+  const { t } = useTranslation("for-developers");
 
   const renderItems = (itemsSubset: typeof items) =>
     itemsSubset.map((item) => (

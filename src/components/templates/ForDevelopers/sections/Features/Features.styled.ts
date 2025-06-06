@@ -1,17 +1,54 @@
 import styled from "styled-components";
-import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
-const StyledDocumentWrapper = styled.div`
-`;
-
-const StyledDocumentContent = styled.div`
-    display: grid;
+const StyledFeaturesContent = styled.div`
   grid-template-columns: 545px auto;
   gap: 32px;
   align-items: center;
+
+  > div {
+    border-bottom: 1px solid #E2E2E2;
+    padding: 112px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border: none;
+      padding-bottom: 0;
+    }
+
+    &:nth-child(2n) {
+      text-align: right;
+
+      .featureList {
+      padding-right: 40px;
+
+        &::before {
+          content: "";
+          width: 6px;
+          height: 6px;
+          right: 0;
+          margin-right: 20px;
+          left: auto;
+          position: absolute;
+          background: #ff6f3d;
+          transform: rotate(45deg) translateY(-50%);
+
+        @media ${device.mobile} {
+          top: 8px;
+        }
+      }
+    }
+
+      @media ${device.tabletS} {
+        text-align: left;
+      }
+    }
+  }
 
   @media ${device.tablet} {
     grid-template-columns: 1fr 1fr;
@@ -22,26 +59,8 @@ const StyledDocumentContent = styled.div`
   }
 `;
 
-const StyledDocumentBox = styled.div`
-  display: grid;
-  row-gap: 16px;
-  margin: 0 auto 32px;
-  max-width: 720px;
-  text-align: center;
-
-  @media ${device.tablet} {
-    row-gap: 8px;
-    max-width: 100%;
-  }
-
-  @media ${device.mobile} {
-    margin: 0 auto;
-  }
-`;
-
-const StyledDocumentText = styled(Text)`
+const StyledFeaturesListItem = styled(Text)`
   margin-bottom: 32px;
-  color: #fff;
   font-size: 16px;
   line-height: 24px;
 
@@ -52,7 +71,7 @@ const StyledDocumentText = styled(Text)`
   }
 `;
 
-const StyledDocumentImage = styled.div`
+const StyledFeaturesListDescription = styled.div`
   background-image: url("/images/templates/conversion-api/conversion/conversion.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -71,16 +90,8 @@ const StyledDocumentImage = styled.div`
   }
 `;
 
-const StyledDocumentHeading  = styled(Heading)`
-margin-bottom: 16px;
-color: #fff;
-`;
-
 export {
-  StyledDocumentWrapper,
-  StyledDocumentContent,
-  StyledDocumentBox,
-  StyledDocumentText,
-  StyledDocumentImage,
-  StyledDocumentHeading
+  StyledFeaturesContent,
+  StyledFeaturesListItem,
+  StyledFeaturesListDescription
 };

@@ -1,11 +1,11 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import {
-  StyledConversionHeading,
-  StyledConversionImage,
-  StyledConversionSection,
-  StyledConversionText,
-  StyledConversionWrapper,
+  StyledLeftTextImgHeading,
+  StyledLeftTextImgImage,
+  StyledLeftTextImgSection,
+  StyledLeftTextImgText,
+  StyledLeftTextImgWrapper,
 } from "./LeftTextImg.styled";
 import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";
@@ -14,39 +14,48 @@ const LeftTextImg = () => {
   const { t } = useTranslation("for-developers");
 
   return (
-    <StyledConversionSection tabletSmallSpacing={["88px", "88px"]}>
+    <StyledLeftTextImgSection tabletSmallSpacing={["88px", "88px"]}>
       <Container>
-        <StyledConversionWrapper>
+        <StyledLeftTextImgWrapper>
           <div>
-            <StyledConversionHeading
+            <StyledLeftTextImgHeading
               level={2}
-              label={t("PartOfOODocsDeveloper")}
+              label={t("AddYourServiceAsAPlugin")}
             />
-            <StyledConversionText>
+            <StyledLeftTextImgText>
               <Trans
                 t={t}
-                i18nKey="BringAdvancedDocument"
+                i18nKey="ThinkYourWebServiceCanBeUseful"
                 components={[
                   <Link
-                    href="/developer-edition"
+                    href="https://api.onlyoffice.com/docspace/plugins-sdk/get-started/"
                     color="main"
                     textUnderline
                     hover="underline-none"
                     key="0"
+                    target="_blank"
+                  />,
+                  <Link
+                    href="https://api.onlyoffice.com/docs/plugin-and-macros/get-started/getting-started/"
+                    color="main"
+                    textUnderline
+                    hover="underline-none"
+                    key="1"
+                    target="_blank"
                   />,
                 ]}
               />
-            </StyledConversionText>
+            </StyledLeftTextImgText>
             <Button
               as="a"
-              href="mailto:sales@onlyoffice.com?subject=ONLYOFFICE%20Conversion%20API%20request"
-              label={t("GetInTouch")}
+              href="/app-directory"
+              label={t("AvailablePlugins")}
             />
           </div>
-          <StyledConversionImage />
-        </StyledConversionWrapper>
+          <StyledLeftTextImgImage />
+        </StyledLeftTextImgWrapper>
       </Container>
-    </StyledConversionSection>
+    </StyledLeftTextImgSection>
   );
 };
 

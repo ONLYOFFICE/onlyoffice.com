@@ -4,11 +4,11 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
-const StyledConversionSection = styled(Section)`
-  background-color: #444444;
+const StyledLeftTextImgSection = styled(Section)`
+  background-color: #333333;
 `;
 
-const StyledConversionWrapper = styled.div`
+const StyledLeftTextImgWrapper = styled.div`
   display: grid;
   grid-template-columns: 545px auto;
   gap: 32px;
@@ -23,12 +23,12 @@ const StyledConversionWrapper = styled.div`
   }
 `;
 
-const StyledConversionHeading = styled(Heading)`
+const StyledLeftTextImgHeading = styled(Heading)`
   margin-bottom: 16px;
   color: #fff;
 `;
 
-const StyledConversionText = styled(Text)`
+const StyledLeftTextImgText = styled(Text)`
   margin-bottom: 32px;
   color: #fff;
   font-size: 16px;
@@ -41,8 +41,8 @@ const StyledConversionText = styled(Text)`
   }
 `;
 
-const StyledConversionImage = styled.div`
-  background-image: url("/images/templates/conversion-api/conversion/conversion.svg");
+const StyledLeftTextImgImage = styled.div`
+  background-image: url("/images/templates/for-developers/lefttextimg/add_your_service.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -61,9 +61,9 @@ const StyledConversionImage = styled.div`
 `;
 
 export {
-  StyledConversionSection,
-  StyledConversionWrapper,
-  StyledConversionHeading,
-  StyledConversionText,
-  StyledConversionImage,
+  StyledLeftTextImgSection,
+  StyledLeftTextImgWrapper,
+  StyledLeftTextImgHeading,
+  StyledLeftTextImgText,
+  StyledLeftTextImgImage,
 };
