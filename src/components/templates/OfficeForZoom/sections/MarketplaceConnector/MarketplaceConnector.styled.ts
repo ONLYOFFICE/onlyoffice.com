@@ -51,11 +51,11 @@ const StyledMarketplaceConnectorBody = styled.div`
 
 const StyledMarketplaceConnectorImg = styled.div`
   width: 100%;
+  min-width: 328px;
   height: 100%;
   background-image: url("/images/templates/office-for-zoom/marketplace-connector/apps.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
   z-index: 1;
 
   @media ${device.mobile} {
