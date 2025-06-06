@@ -55,6 +55,7 @@ const StyledLoaderButton = styled.button<{
 
       &:disabled {
         background-color: #ffd4c5;
+        cursor: initial;
       }
     `}
 

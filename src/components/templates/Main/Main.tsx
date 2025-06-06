@@ -4,7 +4,7 @@ import { Hero } from "./sections/Hero";
 import { Docs } from "./sections/Docs";
 import { Collaboration } from "./sections/Collaboration";
 import { SecurityFirst } from "@src/components/modules/SecurityFirst";
-import { GetStarted } from "./sections/GetStarted";
+import { GetStarted } from "@src/components/modules/GetStarted";
 import { Customers } from "./sections/Customers";
 import { Rating } from "./sections/Rating";
 import { LatestNews } from "./sections/LatestNews";

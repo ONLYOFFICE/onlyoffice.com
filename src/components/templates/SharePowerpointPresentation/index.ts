@@ -1,0 +1,1 @@
+export { SharePowerpointPresentationTemplate } from "./SharePowerpointPresentation";

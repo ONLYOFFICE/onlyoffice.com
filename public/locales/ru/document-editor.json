@@ -1,0 +1,22 @@
+{
+
+    "HeroImgUrl": "/images/templates/document-editor/hero/ru/hero.png",
+    "HeroImgUrl2x": "/images/templates/document-editor/hero/ru/hero@2x.png",
+
+    "Feature1ImgUrl": "/images/templates/document-editor/features/ru/screen1.png",
+    "Feature1ImgUrl2x": "/images/templates/document-editor/features/ru/screen1@2x.png",
+    "Feature2ImgUrl": "/images/templates/document-editor/features/ru/screen2.png",
+    "Feature2ImgUrl2x": "/images/templates/document-editor/features/ru/screen2@2x.png",
+    "Feature3ImgUrl": "/images/templates/document-editor/features/ru/screen3.png",
+    "Feature3ImgUrl2x": "/images/templates/document-editor/features/ru/screen3@2x.png",
+    "Feature4ImgUrl": "/images/templates/document-editor/features/ru/screen4.png",
+    "Feature4ImgUrl2x": "/images/templates/document-editor/features/ru/screen4@2x.png",
+    "Feature5ImgUrl": "/images/templates/document-editor/features/ru/screen5.png",
+    "Feature5ImgUrl2x": "/images/templates/document-editor/features/ru/screen5@2x.png",
+    "Feature6ImgUrl": "/images/templates/document-editor/features/ru/screen6.png",
+    "Feature6ImgUrl2x": "/images/templates/document-editor/features/ru/screen6@2x.png",
+    "Feature7ImgUrl": "/images/templates/document-editor/features/ru/screen7.png",
+    "Feature7ImgUrl2x": "/images/templates/document-editor/features/ru/screen7@2x.png",
+    "Feature8ImgUrl": "/images/templates/document-editor/features/ru/screen8.png",
+    "Feature8ImgUrl2x": "/images/templates/document-editor/features/ru/screen8@2x.png"
+}

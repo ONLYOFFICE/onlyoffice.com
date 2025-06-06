@@ -1,0 +1,96 @@
+{
+  "PageTitle": "Free mobile office suite for iPhone and iPad | ONLYOFFICE Documents",
+  "PageDescription": "Edit and co-edit documents, spreadsheets and presentations, fill out forms from your iOS devices.",
+
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, a solid <0>mobile office suite</0> for your iPhone and iPad",
+  "AbsolutelyFree": "Absolutely <0>free</0>. No ads. No in-app purchases.",
+
+  "OneAppThreeEditors": "One app - <0>Three editors</0> - Multiple features",
+  "CompatibleWithMSOffice": "100% compatible with MS Office formats",
+
+  "HeroImageRightUrl": "/images/templates/office-for-ios/hero/en/hero-laptop.png",
+  "HeroImageRightUrl2x": "/images/templates/office-for-ios/hero/en/hero-laptop-2x.png",
+
+  "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/en/hero-phone.png",
+  "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/en/hero-phone-2x.png",
+
+  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.svg",
+
+  "FeaturesItemHeadingFull": "Full-featured text processor",
+  "FeaturesItemTextMakeUse": "Make use of multiple text processing tools : page, paragraph and text formatting, tables, autoshapes, charts, etc. Create text documents of any size and complexity. Print them via AirPrint.",
+  "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/en/img-tablet-1.png",
+  "FeaturesItemTablet1Bg2x": "/images/templates/office-for-ios/features/en/img-tablet2x-1.png",
+  "FeaturesItemMobile1Bg": "/images/templates/office-for-ios/features/en/img-mobile-1.png",
+  "FeaturesItemMobile1Bg2x": "/images/templates/office-for-ios/features/en/img-mobile2x-1.png",
+
+  "FeaturesItemHeadingComplete": "Complete spreadsheet editor",
+  "FeaturesItemTextManage": "Manage your spreadsheet data: work with rows and columns, adjust cell parameters, use more than 450 formulas, sort and filter data.",
+  "FeaturesItemTablet2Bg": "/images/templates/office-for-ios/features/en/img-tablet-2.png",
+  "FeaturesItemTablet2Bg2x": "/images/templates/office-for-ios/features/en/img-tablet2x-2.png",
+  "FeaturesItemMobile2Bg": "/images/templates/office-for-ios/features/en/img-mobile-2.png",
+  "FeaturesItemMobile2Bg2x": "/images/templates/office-for-ios/features/en/img-mobile2x-2.png",
+
+  "FeaturesItemHeadingCollaborative": "Collaborative presentation editor",
+  "FeaturesItemTextMakeWork": "Work with all popular objects on your slides: insert images, add and edit autoshapes, charts and graphs, texts and other Featuresitems.",
+  "FeaturesItemTablet3Bg": "/images/templates/office-for-ios/features/en/img-tablet-3.png",
+  "FeaturesItemTablet3Bg2x": "/images/templates/office-for-ios/features/en/img-tablet2x-3.png",
+  "FeaturesItemMobile3Bg": "/images/templates/office-for-ios/features/en/img-mobile-3.png",
+  "FeaturesItemMobile3Bg2x": "/images/templates/office-for-ios/features/en/img-mobile2x-3.png",
+
+  "FeaturesItemHeadingOnline": "Online form filler",
+  "FeaturesItemTextMakeView": "View and fill out forms. Easily navigate from field to field. Save the result as a PDF or DOCX file.",
+  "FeaturesItemTablet4Bg": "/images/templates/office-for-ios/features/en/img-tablet-4.png",
+  "FeaturesItemTablet4Bg2x": "/images/templates/office-for-ios/features/en/img-tablet2x-4.png",
+  "FeaturesItemMobile4Bg": "/images/templates/office-for-ios/features/en/img-mobile-4.png",
+  "FeaturesItemMobile4Bg2x": "/images/templates/office-for-ios/features/en/img-mobile2x-4.png",
+
+  "FeaturesItemHeadingPDF": "PDF viewer and media player",
+  "FeaturesItemTextMakeViewPDF": "View PDF documents and images, play audio and video files. Open .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
+  "FeaturesItemTablet5Bg": "/images/templates/office-for-ios/features/en/img-tablet-5.png",
+  "FeaturesItemTablet5Bg2x": "/images/templates/office-for-ios/features/en/img-tablet2x-5.png",
+  "FeaturesItemMobile5Bg": "/images/templates/office-for-ios/features/en/img-mobile-5.png",
+  "FeaturesItemMobile5Bg2x": "/images/templates/office-for-ios/features/en/img-mobile2x-5.png",
+
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents is an outstanding product and was given the 'Very Good' award by its users.\"",
+  "MichaelGanss": "Michael Ganss,",
+
+  "RealTimeCollaboration": "Real-time collaboration",
+  "BeMoreProductive": "Be more productive. Connect your app to the ONLYOFFICE cloud. Share docs to co-edit them with your teammates in real time. Comment and track changes. Add graphic annotations.",
+  "CollabBackgroundUrl": "/images/templates/office-for-ios/collab/collaboration.png",
+  "CollabBackgroundUrl2x": "/images/templates/office-for-ios/collab/collaboration@2x.png",
+
+  "VideoCardHeading": "Discover ONLYOFFICE Documents, a solid mobile office suite",
+
+  "GetStartedAndChoose": "Get started and choose where to work",
+
+  "ChooseItemOnDevice": "On device",
+  "ChooseItemManageDocuments": "Manage documents on device and edit them offline.",
+
+  "ChooseItemInOnlyOffice": "In ONLYOFFICE cloud",
+  "ChooseItemAccessDocs": "Access docs from ONLYOFFICE cloud and the storages (Dropbox, Google Drive, etc.) connected to it and work collaboratively.",
+
+  "ChooseItemInYourCloud": "In your cloud",
+  "ChooseItemConnectNextcloud": "Connect Nextcloud, ownCloud, or any other cloud working via WebDAV and edit documents directly from the app.",
+
+  "ChooseItemFromOther": "From other apps",
+  "ChooseItemImportDocuments": "Import documents from applications like iTunes, Files and others.",
+
+  "GetMoreWithComplete": "Get more with complete mobile web version",
+  "WorkOnDocumentsWithin": "Work on documents within your mobile browser. Go to your ONLYOFFICE web portal and get access to more instruments for document editing and collaboration.",
+  "GetMoreImage": "/images/templates/office-for-ios/getMore/webversion.png",
+  "GetMoreImage2x": "/images/templates/office-for-ios/getMore/webversion@2x.png",
+
+  "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for iOS",
+
+  "LearnCardTitleRelease": "Release notes",
+  "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v7.2 for iOS",
+  "LearnMoreSubtitleRead": "Read story",
+
+  "LearnCardTitleHints": "Hints",
+  "LearnMoreTextHandwriting": "Handwriting in ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "Learn more",
+
+  "LearnCardTitleDeveloper": "Developer guide",
+  "LearnMoreTextHowMobile": "How mobile integration works",
+  "LearnMoreSubtitleLearn2": "Learn more"
+}

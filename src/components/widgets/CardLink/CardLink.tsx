@@ -19,16 +19,27 @@ const CardLink = ({
   subtitle,
   widthDesktop = "352px",
   widthDesktopSmall = "calc(33% - 19px)",
-  widthTabletSmall = "calc(33% - 19px)",
+  widthTablet,
+  widthTabletSmall,
   widthMobile = "238px",
+  widthMobileSmall,
   icon: {
     iconUrl,
     iconBlockHeightDesktop = "160px",
+    iconBlockHeightTablet,
     iconBlockHeightTabletSmall = "98px",
+    iconBlockHeightMobile,
+    iconBlockHeightMobileSmall,
     iconWidthDesktop = "72px",
     iconHeightDesktop = "72px",
+    iconWidthTablet,
+    iconHeightTablet,
     iconWidthTabletSmall = "43px",
     iconHeightTabletSmall = "43px",
+    iconWidthMobile,
+    iconHeightMobile,
+    iconWidthMobileSmall,
+    iconHeightMobileSmall,
   },
 }: ICardLink) => {
   return (
@@ -38,18 +49,29 @@ const CardLink = ({
       href={href}
       $widthDesktop={widthDesktop}
       $widthDesktopSmall={widthDesktopSmall}
+      $widthTablet={widthTablet}
       $widthTabletSmall={widthTabletSmall}
       $widthMobile={widthMobile}
+      $widthMobileSmall={widthMobileSmall}
       $textAlign={textAlign}
     >
       <StyledCardLinkTop
         $iconUrl={iconUrl}
         $iconBlockHeightDesktop={iconBlockHeightDesktop}
+        $iconBlockHeightTablet={iconBlockHeightTablet}
         $iconBlockHeightTabletSmall={iconBlockHeightTabletSmall}
+        $iconBlockHeightMobile={iconBlockHeightMobile}
+        $iconBlockHeightMobileSmall={iconBlockHeightMobileSmall}
         $iconWidthDesktop={iconWidthDesktop}
         $iconHeightDesktop={iconHeightDesktop}
+        $iconWidthTablet={iconWidthTablet}
+        $iconHeightTablet={iconHeightTablet}
         $iconWidthTabletSmall={iconWidthTabletSmall}
         $iconHeightTabletSmall={iconHeightTabletSmall}
+        $iconWidthMobile={iconWidthMobile}
+        $iconHeightMobile={iconHeightMobile}
+        $iconWidthMobileSmall={iconWidthMobileSmall}
+        $iconHeightMobileSmall={iconHeightMobileSmall}
       />
       <StyledCardLinkContent
         $iconBlockHeightDesktop={iconBlockHeightDesktop}
