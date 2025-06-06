@@ -40,8 +40,6 @@ export async function getStaticProps({ locale }: ILocale) {
         "docspace",
         "RoomsGetStarted",
         "RoomsFaq",
-        "PartnershipProgram",
-        "RoomsCollaborate",
       ])),
       locale,
     },
