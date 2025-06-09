@@ -10,4 +10,11 @@ interface ICardItemProps {
   isUpcomingWebinar: boolean;
 }
 
-export type { ICardItemProps };
+interface IFormData {
+  fullName: string,
+  companyName: string,
+  email: string,
+  textArea: string,
+}
+
+export type { ICardItemProps, IFormData };

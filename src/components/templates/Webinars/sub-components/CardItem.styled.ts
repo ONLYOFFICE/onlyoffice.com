@@ -121,6 +121,7 @@ const StyledCardItemModal = styled.div`
   overflow-y: scroll;
   opacity: 1;
   transition-duration: 300ms;
+  cursor: pointer;
 
   @starting-style {
     opacity: 0;
@@ -130,11 +131,12 @@ const StyledCardItemModal = styled.div`
 const StyledCardItemModalContent = styled.div`
   width: 100%;
   max-width: 600px;
-  padding: 64px 32px;
+  padding: 64px 0;
   background-color: #fff;
   border-radius: 10px;
   margin: auto;
   position: relative;
+  cursor: auto;
 `;
 
 const StyledCardItemModalClose = styled.div`
@@ -150,6 +152,10 @@ const StyledCardItemModalClose = styled.div`
   cursor: pointer;
 `;
 
+const StyledCardItemModalDesc = styled.div`
+  padding: 0 32px;
+`;
+
 const StyledCardItemModalHeading = styled(Heading)`
   margin-bottom: 32px;
 `;
@@ -160,6 +166,38 @@ const StyledCardItemModalText = styled(Text)`
 
 const StyledCardItemModalProduct = styled(Text)`
   margin-bottom: 28px;
+`;
+
+const StyledCardItemModalInfo = styled.div`
+  display: flex;
+  gap: 24px;
+`;
+const StyledCardItemModalBy = styled.div`
+
+  & p:first-child {
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+`;
+const StyledCardItemModalLang = styled.div`
+
+  & p:first-child {
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+`;
+
+const StyledCardItemModalForm = styled.form`
+  margin-top: 32px;
+  padding: 32px 32px 0;
+  border-top: 1px solid #dbdbdb;
+`;
+
+const StyledCardItemModalPlease = styled(Text)`
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 20px;
+  color: #666;
 `;
 
 export {
@@ -173,8 +211,14 @@ export {
   StyledCardItemSubtitle,
   StyledCardItemModal,
   StyledCardItemModalContent,
+  StyledCardItemModalDesc,
   StyledCardItemModalClose,
   StyledCardItemModalHeading,
   StyledCardItemModalText,
   StyledCardItemModalProduct,
+  StyledCardItemModalInfo,
+  StyledCardItemModalBy,
+  StyledCardItemModalLang,
+  StyledCardItemModalForm,
+  StyledCardItemModalPlease,
  };

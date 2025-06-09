@@ -6,5 +6,9 @@
   "HeroTextTune": "Tune into our live webinars and learn the best ways to work with ONLYOFFICE",
 
   "UpcomingHeading": "Upcoming live webinars",
-  "UpcomingModalProduct": "Product"
+
+  "UpcomingModalProduct": "Product",
+  "UpcomingModalBy": "By",
+  "UpcomingModalLanguage": "Language",
+  "UpcomingModalPlease": "Please complete all the fields with asterisks (*). You will receive an email message with the link to the selected webinar."
 }
