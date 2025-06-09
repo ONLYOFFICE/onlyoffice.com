@@ -1,0 +1,14 @@
+{
+  "PageTitle": "ONLYOFFICE Server Community Version | ONLYOFFICE",
+  "PageDescription": "Open source version of ONLYOFFICE",
+  "Q1": "Wat is de GNU Affero General Public License v.3 (AGPL v.3) en waar kan ik deze lezen?",
+  "A1": "De GNU Affero General Public License v.3 is een gratis, copyleft-licentie voor software en andere soorten werken, specifiek ontworpen om samenwerking met de gemeenschap te waarborgen in het geval van netwerkserversoftware. De volledige tekst is hier beschikbaar – <0>https://www.gnu.org/licenses/agpl.html</0>",
+  "Q2": "Kunnen we ONLYOFFICE gebruiken voor intern gebruik in onze commerciële organisatie?",
+  "A2": "Als uw bedrijf een gewone commerciële organisatie is, kunt u ONLYOFFICE for Open Source Community vrijelijk gebruiken voor uw eigen doeleinden zonder bijkomende beperkingen. U kunt ONLYOFFICE voor Open Source Community zowel op internet als op intranet-gebaseerde servers vrij gebruiken. Als u problemen ondervindt bij de installatie of configuratie van ONLYOFFICE, neem dan gerust contact op met onze <0>technische</0> ondersteuning.",
+  "Q3": "Kunnen we ONLYOFFICE-broncode gebruiken in onze eigen applicatie of website?",
+  "A3": "Ja, alle ontwikkelaars kunnen ONLYOFFICE-broncode gebruiken in hun eigen applicatie of website, hoewel volgens <0>GNU Affero General Public License v.3</0> deze applicatie/website ook moet worden vrijgegeven onder de GNU AGPL v.3-licentie. Let er in het bijzonder op dat volgens <1>sectie 13</1> van de GNU AGPL v.3 de applicatie/website broncodes waarvan ONLYOFFICE-broncodes deel uitmaken ook moeten worden geopend en gepubliceerd onder de GNU AGPL v.3-licentie.",
+  "Q4": "De AGPL is niet geschikt voor ons bedrijf. Zijn er andere licentietypen voor ONLYOFFICE?",
+  "A4": "Neem contact op met ons <0>verkoopteam</0> om vragen over licentiekwesties te bespreken.",
+  "Q5": "Kan ik het ONLYOFFICE-logo verwijderen of het wijzigen in mijn eigen logo?",
+  "A5": "Volgens <0>sectie 7</0> van de GNU Affero General Public License v.3 (AGPL v.3) is het ons toegestaan om de voorwaarden van deze licentie, die het behoud van gespecificeerde redelijke juridische kennisgevingen vereisen, aan te vullen. Met behulp van deze toestemming staan we u niet toe om het originele ONLYOFFICE-logo van ONLYOFFICE-producten en componenten te verwijderen of te wijzigen in uw eigen logo. De interactieve gebruikersinterfaces in aangepaste bron- en objectcodeversies van het programma moeten de juiste juridische kennisgevingen weergeven, zoals vereist onder <1>sectie 5</1> van de GNU AGPL-versie 3. Als u problemen met co-branding wilt bespreken, kunt u contact opnemen met onze verkoopafdeling via <2>sales@onlyoffice.com</2>."
+}
