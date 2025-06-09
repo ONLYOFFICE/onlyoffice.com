@@ -46,7 +46,7 @@ const StyledWebinarsText = styled(Text)`
   padding-bottom: 493px;
 
   @media ${device.tablet} {
-    padding-bottom: 40vw;
+    padding-bottom: 47vw;
   }
 
   @media ${device.mobile} {
