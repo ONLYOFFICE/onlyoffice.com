@@ -4,7 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
-const StyledWebinarsSection = styled(Section)`
+const StyledHeroSection = styled(Section)`
   margin-top: -72px;
   background-image: url("/images/templates/webinars/hero/bg.svg");
   background-repeat: no-repeat;
@@ -24,7 +24,7 @@ const StyledWebinarsSection = styled(Section)`
   }
 `;
 
-const StyledWebinarsHeading = styled(Heading)`
+const StyledHeroHeading = styled(Heading)`
   margin-top: 60px;
 
   @media ${device.tablet} {
@@ -41,7 +41,7 @@ const StyledWebinarsHeading = styled(Heading)`
   }
 `;
 
-const StyledWebinarsText = styled(Text)`
+const StyledHeroText = styled(Text)`
   margin-top: 24px;
   padding-bottom: 493px;
 
@@ -55,7 +55,7 @@ const StyledWebinarsText = styled(Text)`
 `;
 
 export {
-  StyledWebinarsSection,
-  StyledWebinarsHeading,
-  StyledWebinarsText,
+  StyledHeroSection,
+  StyledHeroHeading,
+  StyledHeroText,
 };
