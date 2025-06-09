@@ -29,6 +29,7 @@ const Upcoming = () => {
             playText={"Watch now"}
             speaker={"ONLYOFFICE team & Medienstürmer"}
             image={"https://static-www.onlyoffice.com/v9.5.0/images/webinars/mediensturmer.png"}
+            product={"ONLYOFFICE Docs"}
             isUpcomingWebinar={true}
           />
           <CardItem
@@ -39,6 +40,7 @@ const Upcoming = () => {
             playText={"Watch now"}
             speaker={"ONLYOFFICE team & Medienstürmer"}
             image={"https://static-www.onlyoffice.com/v9.5.0/images/webinars/mediensturmer.png"}
+            product={"ONLYOFFICE Docs"}
             isUpcomingWebinar={true}
           />
           <CardItem
@@ -49,6 +51,7 @@ const Upcoming = () => {
             playText={"Watch now"}
             speaker={"ONLYOFFICE team & Medienstürmer"}
             image={"https://static-www.onlyoffice.com/v9.5.0/images/webinars/mediensturmer.png"}
+            product={"ONLYOFFICE Docs"}
             isUpcomingWebinar={false}
           />
         </StyledUpcomingList>

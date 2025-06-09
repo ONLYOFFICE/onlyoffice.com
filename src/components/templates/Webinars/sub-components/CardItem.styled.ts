@@ -1,6 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
+import { Text } from "@src/components/ui/Text";
 
 const StyledCardItemHeading = styled(Heading)`
   margin-bottom: 16px;
@@ -46,7 +47,9 @@ const StyledCardItemLink = styled(Link)`
   }
 `;
 
-const StyledCardItem = styled.li`
+const StyledCardItem = styled.li<{
+  $isUpcomingWebinar: boolean;
+}>`
   width: 100%;
   max-width: 544px;
   display: flex;
@@ -55,7 +58,10 @@ const StyledCardItem = styled.li`
   box-shadow: 0 7px 25px rgba(0,0,0,0.1);
   transition-duration: 300ms;
   padding: 32px 32px 0;
-  cursor: pointer;
+
+  ${({$isUpcomingWebinar}) => $isUpcomingWebinar && css`
+    cursor: pointer;
+  `}
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
@@ -100,6 +106,62 @@ const StyledCardItemSubtitle = styled(Heading)`
   font-weight: 400;
 `;
 
+const StyledCardItemModal = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.25);
+  overflow-y: scroll;
+  opacity: 1;
+  transition-duration: 300ms;
+
+  @starting-style {
+    opacity: 0;
+  }
+`;
+
+const StyledCardItemModalContent = styled.div`
+  width: 100%;
+  max-width: 600px;
+  padding: 64px 32px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+`;
+
+const StyledCardItemModalClose = styled.div`
+  background-image: url("/images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  cursor: pointer;
+`;
+
+const StyledCardItemModalHeading = styled(Heading)`
+  margin-bottom: 32px;
+`;
+
+const StyledCardItemModalText = styled(Text)`
+  margin-bottom: 16px;
+`;
+
+const StyledCardItemModalProduct = styled(Text)`
+  margin-bottom: 28px;
+`;
+
 export {
   StyledCardItem,
   StyledCardItemTop,
@@ -109,4 +171,10 @@ export {
   StyledCardItemBottom,
   StyledCardItemImg,
   StyledCardItemSubtitle,
+  StyledCardItemModal,
+  StyledCardItemModalContent,
+  StyledCardItemModalClose,
+  StyledCardItemModalHeading,
+  StyledCardItemModalText,
+  StyledCardItemModalProduct,
  };

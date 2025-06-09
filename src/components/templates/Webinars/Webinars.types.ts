@@ -6,6 +6,7 @@ interface ICardItemProps {
   playText: string;
   speaker: string;
   image: string;
+  product: string;
   isUpcomingWebinar: boolean;
 }
 
