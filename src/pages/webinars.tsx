@@ -7,8 +7,10 @@ import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { WebinarsTemplate } from "@src/components/templates/Webinars";
+import { getWebinars } from "@src/lib/requests/getWebinars";
+import { IWebinars } from "@src/components/templates/Webinars/Webinars.types";
 
-const WebinarsPage = ({ locale }: ILocale) => {
+const WebinarsPage = ({ locale, webinars }: ILocale & IWebinars) => {
   const { t } = useTranslation("webinars");
 
   return (
@@ -23,7 +25,7 @@ const WebinarsPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <WebinarsTemplate />
+        <WebinarsTemplate webinars={webinars} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -33,6 +35,8 @@ const WebinarsPage = ({ locale }: ILocale) => {
 };
 
 export async function getStaticProps({ locale }: ILocale) {
+  const webinars = await getWebinars(locale);
+
   return {
     props: {
       ...(await serverSideTranslations(locale, [
@@ -40,6 +44,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "webinars",
       ])),
       locale,
+      webinars
     },
   };
 }

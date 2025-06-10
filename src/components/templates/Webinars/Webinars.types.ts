@@ -3,7 +3,7 @@ interface ICardItemProps {
   language: string;
   title: string;
   description: string;
-  playText: string;
+  link?: string;
   speaker: string;
   image: string;
   product: string;
@@ -24,4 +24,29 @@ interface ICheckStatus {
   textArea: "default" | "success" | undefined;
 }
 
-export type { ICardItemProps, IFormData, ICheckStatus };
+interface IWebinar {
+  id: number;
+  title: string;
+  date: string;
+  description: string;
+  language: string;
+  product: string;
+  watch_link: string;
+  speaker: string;
+  speaker_image: {
+    url: string;
+  }[];
+}
+
+interface IWebinars {
+  webinars: {
+    upcoming: {
+      data: IWebinar[];
+    };
+    past: {
+      data: IWebinar[];
+    };
+  }
+}
+
+export type { ICardItemProps, IFormData, ICheckStatus, IWebinars };

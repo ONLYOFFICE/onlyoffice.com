@@ -30,5 +30,6 @@
   "ModalCloseButton": "Cancel",
 
   "WatchHeading": "Watch on-demand",
-  "WatchText": "Missed a webinar? Watch a replay at any time."
+  "WatchText": "Missed a webinar? Watch a replay at any time.",
+  "WatchNow": "Watch now"
 }

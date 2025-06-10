@@ -40,7 +40,7 @@ const CardItem = ({
   language,
   title,
   description,
-  playText,
+  link,
   speaker,
   image,
   product,
@@ -155,11 +155,13 @@ const CardItem = ({
           />
         </StyledCardItemContent>
         <StyledCardItemBottom>
-          {!isUpcomingWebinar && (
+          {!isUpcomingWebinar && link && (
             <StyledCardItemLink
               fontSize="14px"
-              label={playText}
+              label={t("WatchNow")}
               color="main"
+              href={link}
+              target="_blank"
             />
           )}
           <StyledCardItemImg $image={image} />
