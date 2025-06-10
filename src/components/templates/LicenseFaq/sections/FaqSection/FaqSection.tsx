@@ -1,5 +1,10 @@
 import { useTranslation, Trans } from "next-i18next";
-import { StyledSection, StyledQuestion, StyledAnswer, StyledFaq } from "./FaqSection.styled";
+import {
+  StyledSection,
+  StyledQuestion,
+  StyledAnswer,
+  StyledFaq,
+} from "./FaqSection.styled";
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 
@@ -14,18 +19,20 @@ const FaqSection = () => {
     >
       {items.map((item, idx) => {
         const linkComponents = item.links.map((link, index) => (
-          <Link color="main" textUnderline href={link.href} key={index} target={link.isExternal ? "_blank" : undefined} />
+          <Link
+            color="main"
+            textUnderline
+            href={link.href}
+            key={index}
+            target={link.isExternal ? "_blank" : undefined}
+          />
         ));
 
         return (
           <StyledFaq key={idx}>
             <StyledQuestion level={2} label={t(item.question)} />
             <StyledAnswer>
-              <Trans
-                t={t}
-                i18nKey={item.answer}
-                components={linkComponents}
-              />
+              <Trans t={t} i18nKey={item.answer} components={linkComponents} />
             </StyledAnswer>
           </StyledFaq>
         );
