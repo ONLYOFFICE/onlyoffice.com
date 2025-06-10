@@ -27,5 +27,8 @@
   "AgreementByClicking": "By clicking Watch webinar, you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>.",
 
   "ModalSendButton": "Watch webinar",
-  "ModalCloseButton": "Cancel"
+  "ModalCloseButton": "Cancel",
+
+  "WatchHeading": "Watch on-demand",
+  "WatchText": "Missed a webinar? Watch a replay at any time."
 }

@@ -2,7 +2,10 @@ import { useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
+import { Link } from "@src/components/ui/Link";
+import { Button } from "@src/components/ui/Button";
 import { TextArea } from "@src/components/ui/TextArea";
+import { HCaptcha } from "@src/components/widgets/HCaptcha";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { ICardItemProps, IFormData, ICheckStatus } from "../Webinars.types";
 
@@ -31,9 +34,6 @@ import {
   StyledCardItemSubtitle,
   StyledCardItemTop,
 } from "./CardItem.styled";
-import { HCaptcha } from "@src/components/widgets/HCaptcha";
-import { Link } from "@src/components/ui/Link";
-import { Button } from "@src/components/ui/Button";
 
 const CardItem = ({
   date,

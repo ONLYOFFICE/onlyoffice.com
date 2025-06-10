@@ -1,31 +1,25 @@
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { Text } from "@src/components/ui/Text";
 import { CardItem } from "../../sub-components";
 
-import {
-  StyledUpcomingHeading,
-  StyledUpcomingList
-} from "./Upcoming.styled";
+import { StyledWatchHeading, StyledWatchList } from "./Watch.styled";
 
-const Upcoming = () => {
+const Watch = () => {
   const { t } = useTranslation("webinars");
 
   return (
-    <Section
-      desktopSpacing={["112px", "0"]}
-      tabletSpacing={["88px", "0"]}
-      tabletSmallSpacing={["80px", "0"]}
-      mobileSpacing={["48px", "0"]}
-    >
+    <Section>
       <Container>
-        <StyledUpcomingHeading
-          label={t("UpcomingHeading")}
+        <StyledWatchHeading
+          label={t("WatchHeading")}
           textAlign="center"
           level={2}
           size={2}
         />
-        <StyledUpcomingList>
+        <Text label={t("WatchText")} size={2} textAlign="center" />
+        <StyledWatchList>
           <CardItem
             date={"June 18, 2025"}
             language={"In English"}
@@ -35,12 +29,12 @@ const Upcoming = () => {
             speaker={"ONLYOFFICE team & Medienstürmer"}
             image={"https://static-www.onlyoffice.com/v9.5.0/images/webinars/mediensturmer.png"}
             product={"ONLYOFFICE Docs"}
-            isUpcomingWebinar={true}
+            isUpcomingWebinar={false}
           />
-        </StyledUpcomingList>
+        </StyledWatchList>
       </Container>
     </Section>
   );
 };
 
-export { Upcoming };
+export { Watch };
