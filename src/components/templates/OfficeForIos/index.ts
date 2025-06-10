@@ -1,0 +1,1 @@
+export { OfficeForIosTemplate } from "./OfficeForIos";

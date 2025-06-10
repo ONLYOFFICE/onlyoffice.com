@@ -6,13 +6,18 @@ import { Link } from "@src/components/ui/Link";
 import { ChooseSolution } from "@src/components/widgets/ChooseSolution";
 import { items } from "./data/items";
 
-const RoomsGetStarted = () => {
+interface IGetStartedProps {
+  /** The background color of the section. */
+  background?: string;
+}
+
+const RoomsGetStarted = ({ background }: IGetStartedProps) => {
   const { t } = useTranslation("RoomsGetStarted");
 
   return (
     <Section
       tabletSmallSpacing={["72px", "72px"]}
-      background="linear-gradient(#F8F9F9,#F8F9F900)"
+      background={background ? background : "linear-gradient(#F8F9F9,#F8F9F900)"}
     >
       <Container>
         <StyledRoomsGetStartedHeading

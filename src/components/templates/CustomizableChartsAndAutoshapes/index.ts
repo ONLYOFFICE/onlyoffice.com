@@ -1,0 +1,1 @@
+export { CustomizableChartsAndAutoshapesTemplate } from "./CustomizableChartsAndAutoshapes";

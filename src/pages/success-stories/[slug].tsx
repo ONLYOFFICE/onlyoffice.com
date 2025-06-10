@@ -8,7 +8,7 @@ import { Footer } from "@src/components/modules/Footer";
 import { SuccessStoriesTemplate } from "@src/components/templates/SuccessStories";
 import { data as successStories } from "@src/components/templates/SuccessStories/data/success-stories";
 import { GetStaticPropsContext, InferGetStaticPropsType } from "next/types";
-import { languages } from "@src/config/languages";
+import { languages } from "@src/config/data/languages";
 import { ISuccessStoriesData } from "@src/components/templates/SuccessStories/SuccessStories.types";
 
 const SuccessStoriesPage = ({

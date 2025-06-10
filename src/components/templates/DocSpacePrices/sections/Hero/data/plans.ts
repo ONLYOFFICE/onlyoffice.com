@@ -46,8 +46,8 @@ export const supportLevel: ITabs<
   IEnterpriseModalFormData["supportLevel"]
 >["items"] = [
   {
-    id: "Standard",
-    label: "Standard",
+    id: "Basic",
+    label: "Basic",
     content: [
       "FirstResponseTime48",
       "StandardInstallation",
