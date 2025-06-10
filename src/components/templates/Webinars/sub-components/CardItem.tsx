@@ -2,7 +2,9 @@ import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
-import { ICardItemProps, IFormData } from "../Webinars.types";
+import { TextArea } from "@src/components/ui/TextArea";
+import { validateFullName, validateEmail } from "@src/utils/validators";
+import { ICardItemProps, IFormData, ICheckStatus } from "../Webinars.types";
 
 import {
   StyledCardItem,
@@ -26,7 +28,6 @@ import {
   StyledCardItemSubtitle,
   StyledCardItemTop,
 } from "./CardItem.styled";
-import { TextArea } from "@src/components/ui/TextArea";
 
 const CardItem = ({
   date,
@@ -41,11 +42,19 @@ const CardItem = ({
  }: ICardItemProps) => {
   const { t } = useTranslation("webinars");
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
     companyName: "",
     email: "",
     textArea: "",
+  });
+
+  const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
+    fullName: "default",
+    companyName: "default",
+    email: "default",
+    textArea: "default",
   });
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -54,6 +63,62 @@ const CardItem = ({
       ...formData,
       [name]: value,
     });
+  }
+
+  const handleCheckStatusFullName = () => {
+    if (validateFullName(formData.fullName)) {
+      setCheckStatus((prev) => ({
+        ...prev,
+        fullName: "success",
+      }));
+    } else {
+      setCheckStatus((prev) => ({
+        ...prev,
+        fullName: "error",
+      }));
+    }
+  }
+
+  const handleCheckStatusCompanyName = () => {
+    if (formData.companyName.length > 0) {
+      setCheckStatus((prev) => ({
+        ...prev,
+        companyName: "success",
+      }));
+    } else {
+      setCheckStatus((prev) => ({
+        ...prev,
+        companyName: "error",
+      }));
+    }
+  }
+
+  const handleCheckStatusEmail = () => {
+    if (validateEmail(formData.email)) {
+      setCheckStatus((prev) => ({
+        ...prev,
+        email: "success",
+      }));
+    } else {
+      setCheckStatus((prev) => ({
+        ...prev,
+        email: "error",
+      }));
+    }
+  }
+
+  const handleCheckStatusTextArea = () => {
+    if (formData.textArea.length > 0) {
+      setCheckStatus((prev) => ({
+        ...prev,
+        textArea: "success",
+      }));
+    } else {
+      setCheckStatus((prev) => ({
+        ...prev,
+        textArea: "default",
+      }));
+    }
   }
 
   return (
@@ -122,6 +187,7 @@ const CardItem = ({
             </StyledCardItemModalDesc>
             <StyledCardItemModalForm>
               <Input
+                label={t("UpcomingModalFullName")}
                 type="text"
                 placeholder="First name Last name*"
                 name="fullName"
@@ -129,16 +195,22 @@ const CardItem = ({
                 onChange={(event) => handleChangeInput(event)}
                 required
                 maxLength={100}
-               />
+                onBlur={handleCheckStatusFullName}
+                status={checkStatus.fullName}
+              />
               <Input
+                label={t("UpcomingModalCompanyName")}
                 type="text"
                 name="companyName"
                 value={formData.companyName}
                 onChange={(event) => handleChangeInput(event)}
                 required
                 maxLength={100}
+                onBlur={handleCheckStatusCompanyName}
+                status={checkStatus.companyName}
                />
               <Input
+                label={t("UpcomingModalEmail")}
                 type="email"
                 placeholder="name@domain.com"
                 name="email"
@@ -146,14 +218,19 @@ const CardItem = ({
                 onChange={(event) => handleChangeInput(event)}
                 required
                 maxLength={50}
+                onBlur={handleCheckStatusEmail}
+                status={checkStatus.email}
                />
                <TextArea
+                label={t("UpcomingModalSendQuestions")}
                 placeholder="&nbsp;"
                 name="textArea"
                 value={formData.textArea}
                 onChange={(event) => handleChangeInput(event)}
                 fullWidth={true}
                 maxLength={600}
+                onBlur={handleCheckStatusTextArea}
+                status={checkStatus.textArea}
                />
                <StyledCardItemModalPlease size={4} label={t("UpcomingModalPlease")} />
             </StyledCardItemModalForm>

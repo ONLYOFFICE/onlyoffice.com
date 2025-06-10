@@ -10,5 +10,9 @@
   "UpcomingModalProduct": "Product",
   "UpcomingModalBy": "By",
   "UpcomingModalLanguage": "Language",
-  "UpcomingModalPlease": "Please complete all the fields with asterisks (*). You will receive an email message with the link to the selected webinar."
+  "UpcomingModalPlease": "Please complete all the fields with asterisks (*). You will receive an email message with the link to the selected webinar.",
+  "UpcomingModalFullName": "Full name*",
+  "UpcomingModalCompanyName": "Company name*",
+  "UpcomingModalEmail": "Email*",
+  "UpcomingModalSendQuestions": "Send questions for the webinar"
 }

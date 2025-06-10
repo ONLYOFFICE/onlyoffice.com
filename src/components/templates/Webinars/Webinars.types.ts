@@ -11,10 +11,17 @@ interface ICardItemProps {
 }
 
 interface IFormData {
-  fullName: string,
-  companyName: string,
-  email: string,
-  textArea: string,
+  fullName: string;
+  companyName: string;
+  email: string;
+  textArea: string;
 }
 
-export type { ICardItemProps, IFormData };
+interface ICheckStatus {
+  fullName: "default" | "success" | "error";
+  companyName: "default" | "success" | "error";
+  email: "default" | "success" | "error";
+  textArea: "default" | "success" | undefined;
+}
+
+export type { ICardItemProps, IFormData, ICheckStatus };
