@@ -200,8 +200,24 @@ const StyledCardItemModalInputWrapper = styled.div`
 const StyledCardItemModalPlease = styled(Text)`
   font-size: 12px;
   line-height: 16px;
-  margin-top: 20px;
+  margin: 20px 0 16px;
   color: #666;
+`;
+
+const StyledCardItemModalAgreement = styled(Text)`
+  margin-top: 16px;
+`;
+
+const StyledCardItemModalButtons = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+
+  & > button {
+    width: 50%;
+  }
 `;
 
 export {
@@ -226,4 +242,6 @@ export {
   StyledCardItemModalForm,
   StyledCardItemModalInputWrapper,
   StyledCardItemModalPlease,
+  StyledCardItemModalAgreement,
+  StyledCardItemModalButtons,
  };

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTranslation } from "next-i18next";
+import { Trans, useTranslation } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { TextArea } from "@src/components/ui/TextArea";
@@ -14,6 +14,8 @@ import {
   StyledCardItemImg,
   StyledCardItemLink,
   StyledCardItemModal,
+  StyledCardItemModalAgreement,
+  StyledCardItemModalButtons,
   StyledCardItemModalBy,
   StyledCardItemModalClose,
   StyledCardItemModalContent,
@@ -29,6 +31,9 @@ import {
   StyledCardItemSubtitle,
   StyledCardItemTop,
 } from "./CardItem.styled";
+import { HCaptcha } from "@src/components/widgets/HCaptcha";
+import { Link } from "@src/components/ui/Link";
+import { Button } from "@src/components/ui/Button";
 
 const CardItem = ({
   date,
@@ -191,7 +196,7 @@ const CardItem = ({
                 <Input
                   label={t("UpcomingModalFullName")}
                   type="text"
-                  placeholder="First name Last name*"
+                  placeholder="First name Last name"
                   name="fullName"
                   value={formData.fullName}
                   onChange={(event) => handleChangeInput(event)}
@@ -260,6 +265,53 @@ const CardItem = ({
                 />
               </StyledCardItemModalInputWrapper>
               <StyledCardItemModalPlease size={4} label={t("UpcomingModalPlease")} />
+              <HCaptcha />
+              <StyledCardItemModalAgreement size={4}>
+                <Trans
+                  t={t}
+                  i18nKey={"AgreementByClicking"}
+                  components={[
+                    <Link
+                      key={0}
+                      target="_blank"
+                      color="main"
+                      textUnderline={true}
+                      hover="underline-none"
+                      href="https://help.onlyoffice.co/Products/Files/doceditor.aspx?fileid=6615734&doc=cy9XcGc5TXNONjVTMkNrR2NZUEVTT2E1Y1FDZGVRQ1YvOTJYTnpkZ3JEWT0_IjY2MTU3MzQi0"
+                    />,
+                    <Link
+                      key={1}
+                      target="_blank"
+                      color="main"
+                      textUnderline={true}
+                      hover="underline-none"
+                      href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261"
+                    />
+                  ]}
+                />
+              </StyledCardItemModalAgreement>
+              <StyledCardItemModalButtons>
+                <Button
+                  label={t("ModalSendButton")}
+                  type="submit"
+                  borderRadius="3px"
+                  disabled={
+                    checkStatus.fullName === "error" ||
+                    checkStatus.companyName === "error" ||
+                    checkStatus.email === "error" ||
+                    checkStatus.fullName === "default" ||
+                    checkStatus.companyName === "default" ||
+                    checkStatus.email === "default"
+                  }
+                />
+                <Button
+                  label={t("ModalCloseButton")}
+                  type="button"
+                  borderRadius="3px"
+                  variant="secondary"
+                  onClick={() => setIsModalOpen(false)}
+                />
+              </StyledCardItemModalButtons>
             </StyledCardItemModalForm>
           </StyledCardItemModalContent>
         </StyledCardItemModal>
