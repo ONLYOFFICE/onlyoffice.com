@@ -14,5 +14,13 @@
   "UpcomingModalFullName": "Full name*",
   "UpcomingModalCompanyName": "Company name*",
   "UpcomingModalEmail": "Email*",
-  "UpcomingModalSendQuestions": "Send questions for the webinar"
+  "UpcomingModalSendQuestions": "Send questions for the webinar",
+
+  "FullNameIsIncorrect": "Full name is incorrect",
+  "FullNameIsEmpty": "Full name is empty",
+
+  "CompanyNameIsEmpty": "Company name is empty",
+
+  "EmailIsEmpty": "Email is empty",
+  "EmailIsIncorrect": "Email is incorrect"
 }

@@ -193,6 +193,10 @@ const StyledCardItemModalForm = styled.form`
   border-top: 1px solid #dbdbdb;
 `;
 
+const StyledCardItemModalInputWrapper = styled.div`
+  margin-bottom: 16px;
+`;
+
 const StyledCardItemModalPlease = styled(Text)`
   font-size: 12px;
   line-height: 16px;
@@ -220,5 +224,6 @@ export {
   StyledCardItemModalBy,
   StyledCardItemModalLang,
   StyledCardItemModalForm,
+  StyledCardItemModalInputWrapper,
   StyledCardItemModalPlease,
  };

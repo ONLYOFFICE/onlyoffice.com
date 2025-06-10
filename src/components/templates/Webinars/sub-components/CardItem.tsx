@@ -21,6 +21,7 @@ import {
   StyledCardItemModalForm,
   StyledCardItemModalHeading,
   StyledCardItemModalInfo,
+  StyledCardItemModalInputWrapper,
   StyledCardItemModalLang,
   StyledCardItemModalPlease,
   StyledCardItemModalProduct,
@@ -186,53 +187,79 @@ const CardItem = ({
               </StyledCardItemModalInfo>
             </StyledCardItemModalDesc>
             <StyledCardItemModalForm>
-              <Input
-                label={t("UpcomingModalFullName")}
-                type="text"
-                placeholder="First name Last name*"
-                name="fullName"
-                value={formData.fullName}
-                onChange={(event) => handleChangeInput(event)}
-                required
-                maxLength={100}
-                onBlur={handleCheckStatusFullName}
-                status={checkStatus.fullName}
-              />
-              <Input
-                label={t("UpcomingModalCompanyName")}
-                type="text"
-                name="companyName"
-                value={formData.companyName}
-                onChange={(event) => handleChangeInput(event)}
-                required
-                maxLength={100}
-                onBlur={handleCheckStatusCompanyName}
-                status={checkStatus.companyName}
-               />
-              <Input
-                label={t("UpcomingModalEmail")}
-                type="email"
-                placeholder="name@domain.com"
-                name="email"
-                value={formData.email}
-                onChange={(event) => handleChangeInput(event)}
-                required
-                maxLength={50}
-                onBlur={handleCheckStatusEmail}
-                status={checkStatus.email}
-               />
-               <TextArea
-                label={t("UpcomingModalSendQuestions")}
-                placeholder="&nbsp;"
-                name="textArea"
-                value={formData.textArea}
-                onChange={(event) => handleChangeInput(event)}
-                fullWidth={true}
-                maxLength={600}
-                onBlur={handleCheckStatusTextArea}
-                status={checkStatus.textArea}
-               />
-               <StyledCardItemModalPlease size={4} label={t("UpcomingModalPlease")} />
+              <StyledCardItemModalInputWrapper>
+                <Input
+                  label={t("UpcomingModalFullName")}
+                  type="text"
+                  placeholder="First name Last name*"
+                  name="fullName"
+                  value={formData.fullName}
+                  onChange={(event) => handleChangeInput(event)}
+                  required
+                  maxLength={100}
+                  onBlur={handleCheckStatusFullName}
+                  status={checkStatus.fullName}
+                  onFocus={() => setCheckStatus((prev) => ({ ...prev, fullName: "default" }))}
+                />
+                {checkStatus.fullName === "error" && formData.fullName.length === 0 && (
+                  <Text size={4} label={t("FullNameIsEmpty")} color="#CB0000" />
+                )}
+                {checkStatus.fullName === "error" && formData.fullName.length > 0 && (
+                  <Text size={4} label={t("FullNameIsIncorrect")} color="#CB0000" />
+                )}
+              </StyledCardItemModalInputWrapper>
+              <StyledCardItemModalInputWrapper>
+                <Input
+                  label={t("UpcomingModalCompanyName")}
+                  type="text"
+                  name="companyName"
+                  value={formData.companyName}
+                  onChange={(event) => handleChangeInput(event)}
+                  required
+                  maxLength={100}
+                  onBlur={handleCheckStatusCompanyName}
+                  status={checkStatus.companyName}
+                  onFocus={() => setCheckStatus((prev) => ({ ...prev, companyName: "default" }))}
+                />
+                {checkStatus.companyName === "error" && formData.companyName.length === 0 && (
+                  <Text size={4} label={t("CompanyNameIsEmpty")} color="#CB0000" />
+                )}
+              </StyledCardItemModalInputWrapper>
+              <StyledCardItemModalInputWrapper>
+                <Input
+                  label={t("UpcomingModalEmail")}
+                  type="email"
+                  placeholder="name@domain.com"
+                  name="email"
+                  value={formData.email}
+                  onChange={(event) => handleChangeInput(event)}
+                  required
+                  maxLength={50}
+                  onBlur={handleCheckStatusEmail}
+                  status={checkStatus.email}
+                  onFocus={() => setCheckStatus((prev) => ({ ...prev, email: "default" }))}
+                />
+                {checkStatus.email === "error" && formData.email.length === 0 && (
+                  <Text size={4} label={t("EmailIsEmpty")} color="#CB0000" />
+                )}
+                {checkStatus.email === "error" && formData.email.length > 0 && (
+                  <Text size={4} label={t("EmailIsIncorrect")} color="#CB0000" />
+                )}
+              </StyledCardItemModalInputWrapper>
+              <StyledCardItemModalInputWrapper>
+                <TextArea
+                  label={t("UpcomingModalSendQuestions")}
+                  placeholder="&nbsp;"
+                  name="textArea"
+                  value={formData.textArea}
+                  onChange={(event) => handleChangeInput(event)}
+                  fullWidth={true}
+                  maxLength={600}
+                  onBlur={handleCheckStatusTextArea}
+                  status={checkStatus.textArea}
+                />
+              </StyledCardItemModalInputWrapper>
+              <StyledCardItemModalPlease size={4} label={t("UpcomingModalPlease")} />
             </StyledCardItemModalForm>
           </StyledCardItemModalContent>
         </StyledCardItemModal>
