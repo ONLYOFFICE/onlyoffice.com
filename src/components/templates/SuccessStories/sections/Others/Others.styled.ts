@@ -32,9 +32,12 @@ const StyledStoriesOthersCardList = styled.ul`
   }
 `;
 
-const StyledStoriesOthersCardItem = styled.li`
+const StyledStoriesOthersCardItem = styled.li<{
+  $isDisplay: boolean;
+}>`
   width: 100%;
   height: fit-content;
+  display: ${({ $isDisplay }) => ($isDisplay ? "block" : "none")};
 `;
 
 const StyledStoriesOthersCardContent = styled.div`

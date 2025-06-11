@@ -16,9 +16,11 @@ import {
   StyledStoriesOthersCardItemLeft,
   StyledStoriesOthersCardItemRight,
 } from "./Others.styled";
+import { useRouter } from "next/router";
 
 const Others = ({ allOtherUsers }: ISuccessStoriesAllOtherUsers) => {
   const { t } = useTranslation("success-stories");
+  const { locale } = useRouter();
 
   const [visibleUserCount, setVisibleUserCount] = useState<number>(2);
   const [visibleButton, setVisibleButton] = useState<boolean>(true);
@@ -41,7 +43,16 @@ const Others = ({ allOtherUsers }: ISuccessStoriesAllOtherUsers) => {
           {allOtherUsers.map(
             (story, index) =>
               index < visibleUserCount && (
-                <StyledStoriesOthersCardItem key={story.id}>
+                <StyledStoriesOthersCardItem
+                  key={story.id}
+                  $isDisplay={
+                    locale === "fr" &&
+                      story.slug === "rostov-club" ||
+                      story.slug === "stammtisch" ||
+                      story.slug === "skatepark-zuidlaren" ||
+                      story.slug === "icgeurope" ? false : true
+                  }
+                >
                   <Link
                     href={`/success-stories/${story.slug}`}
                     onClick={() => handleLinkClick()}
