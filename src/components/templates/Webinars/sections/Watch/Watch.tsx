@@ -3,11 +3,13 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { CardItem } from "../../sub-components";
+import { formatWebinarsDate, formatWebinarsDateWithHours } from "../../utils/formaWebinarsDate"
 import { IWebinars } from "../../Webinars.types";
+import { ILocale } from "@src/types/locale";
 
 import { StyledWatchHeading, StyledWatchList } from "./Watch.styled";
 
-const Watch = ({ webinars }: IWebinars) => {
+const Watch = ({ webinars, locale }: ILocale & IWebinars) => {
   const { t } = useTranslation("webinars");
   const { data } = webinars.past;
 
@@ -25,7 +27,8 @@ const Watch = ({ webinars }: IWebinars) => {
           {data && data.map((item) => (
             <CardItem
               key={item.id}
-              date={item.date}
+              date={formatWebinarsDate(item.date, locale)}
+              dateWithHours={formatWebinarsDateWithHours(item.date, locale)}
               language={item.language}
               title={item.title}
               description={item.description}

@@ -25,7 +25,7 @@ const WebinarsPage = ({ locale, webinars }: ILocale & IWebinars) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <WebinarsTemplate webinars={webinars} />
+        <WebinarsTemplate webinars={webinars} locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

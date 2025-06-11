@@ -37,6 +37,7 @@ import {
 
 const CardItem = ({
   date,
+  dateWithHours,
   language,
   title,
   description,
@@ -178,7 +179,7 @@ const CardItem = ({
           <StyledCardItemModalContent>
             <StyledCardItemModalDesc>
               <StyledCardItemModalClose onClick={() => setIsModalOpen(false)} />
-              <Text label={date} size={3} />
+              <Text label={dateWithHours} size={3} />
               <StyledCardItemModalHeading level={4} size={4} label={title} />
               <StyledCardItemModalText size={3} label={description} />
               <StyledCardItemModalProduct size={3} label={`${t("UpcomingModalProduct")}: ${product}`} />

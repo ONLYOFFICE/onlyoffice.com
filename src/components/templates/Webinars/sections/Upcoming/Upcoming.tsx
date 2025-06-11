@@ -2,14 +2,16 @@ import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { CardItem } from "../../sub-components";
+import { formatWebinarsDate, formatWebinarsDateWithHours } from "../../utils/formaWebinarsDate";
 import { IWebinars } from "../../Webinars.types";
+import { ILocale } from "@src/types/locale";
 
 import {
   StyledUpcomingHeading,
   StyledUpcomingList
 } from "./Upcoming.styled";
 
-const Upcoming = ({ webinars }: IWebinars) => {
+const Upcoming = ({ webinars, locale }: ILocale & IWebinars) => {
   const { t } = useTranslation("webinars");
   const { data } = webinars.upcoming;
 
@@ -31,7 +33,8 @@ const Upcoming = ({ webinars }: IWebinars) => {
           {data && data.map((item) => (
             <CardItem
               key={item.id}
-              date={item.date}
+              date={formatWebinarsDate(item.date, locale)}
+              dateWithHours={formatWebinarsDateWithHours(item.date, locale)}
               language={item.language}
               title={item.title}
               description={item.description}

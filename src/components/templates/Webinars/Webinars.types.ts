@@ -1,5 +1,6 @@
 interface ICardItemProps {
   date: string;
+  dateWithHours: string;
   language: string;
   title: string;
   description: string;
