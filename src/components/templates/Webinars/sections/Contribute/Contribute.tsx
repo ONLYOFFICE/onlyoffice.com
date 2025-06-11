@@ -1,10 +1,10 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-
-import { StyledContributeHeading } from "./Contribute.styled";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
+
+import { StyledContributeHeading } from "./Contribute.styled";
 
 const Contribute = () => {
   const { t } = useTranslation("webinars");
