@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
+import { hideCard } from "../../utils/hideCard";
 import { ISuccessStoriesAllOtherUsers } from "@src/components/templates/SuccessStories/SuccessStories.types";
 
 import {
@@ -16,11 +18,11 @@ import {
   StyledStoriesOthersCardItemLeft,
   StyledStoriesOthersCardItemRight,
 } from "./Others.styled";
-import { useRouter } from "next/router";
 
 const Others = ({ allOtherUsers }: ISuccessStoriesAllOtherUsers) => {
   const { t } = useTranslation("success-stories");
   const { locale } = useRouter();
+  const cardsToHide = hideCard[locale ?? "en"] || [];
 
   const [visibleUserCount, setVisibleUserCount] = useState<number>(2);
   const [visibleButton, setVisibleButton] = useState<boolean>(true);
@@ -46,11 +48,7 @@ const Others = ({ allOtherUsers }: ISuccessStoriesAllOtherUsers) => {
                 <StyledStoriesOthersCardItem
                   key={story.id}
                   $isDisplay={
-                    locale === "fr" &&
-                      story.slug === "rostov-club" ||
-                      story.slug === "stammtisch" ||
-                      story.slug === "skatepark-zuidlaren" ||
-                      story.slug === "icgeurope" ? false : true
+                    cardsToHide.includes(story.slug) ? false : true
                   }
                 >
                   <Link
