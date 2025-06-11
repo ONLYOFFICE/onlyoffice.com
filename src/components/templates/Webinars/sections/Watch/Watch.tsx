@@ -14,7 +14,12 @@ const Watch = ({ webinars, locale }: ILocale & IWebinars) => {
   const { data } = webinars.past;
 
   return (
-    <Section>
+    <Section
+      desktopSpacing={["112px", "0"]}
+      tabletSpacing={["88px", "0"]}
+      tabletSmallSpacing={["80px", "0"]}
+      mobileSpacing={["48px", "0"]}
+    >
       <Container>
         <StyledWatchHeading
           label={t("WatchHeading")}

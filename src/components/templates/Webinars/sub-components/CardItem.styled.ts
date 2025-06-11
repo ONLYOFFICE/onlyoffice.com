@@ -58,6 +58,7 @@ const StyledCardItem = styled.li<{
   box-shadow: 0 7px 25px rgba(0,0,0,0.1);
   transition-duration: 300ms;
   padding: 32px 32px 0;
+  overflow: hidden;
 
   ${({$isUpcomingWebinar}) => $isUpcomingWebinar && css`
     cursor: pointer;
