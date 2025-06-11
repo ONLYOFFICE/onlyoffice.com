@@ -31,5 +31,18 @@
 
   "WatchHeading": "Watch on-demand",
   "WatchText": "Missed a webinar? Watch a replay at any time.",
-  "WatchNow": "Watch now"
+  "WatchNow": "Watch now",
+
+  "en": "In English",
+  "ja": "In Japanese",
+  "zh": "In Chinese",
+  "fr": "In French",
+  "de": "In German",
+  "es": "In Spanish",
+  "pt": "In Portuguese",
+  "it": "In Italian",
+  "cs": "In Czech",
+  "nl": "In Dutch",
+  "ru": "In Russian",
+  "sr": "In Serbian"
 }

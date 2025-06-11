@@ -141,7 +141,7 @@ const CardItem = ({
           />
           <Text
             size={1}
-            label={language}
+            label={t(language)}
           />
         </StyledCardItemTop>
         <StyledCardItemContent>
@@ -190,7 +190,7 @@ const CardItem = ({
                 </StyledCardItemModalBy>
                 <StyledCardItemModalLang>
                   <Text size={3} label={t("UpcomingModalLanguage")} />
-                  <Text size={3} label={language} />
+                  <Text size={3} label={t(language)} />
                 </StyledCardItemModalLang>
               </StyledCardItemModalInfo>
             </StyledCardItemModalDesc>
