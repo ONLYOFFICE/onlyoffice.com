@@ -330,13 +330,13 @@
   "muenster-university": {
     "id": 12,
     "slug": "muenster-university",
-    "title": "Wie die Integration von ONLYOFFICE und ownCloud in sciebo hilft, den Forschungsablauf an der Universität Münster zu erleichtern",
-    "intro": "Interne Tests zeigten, dass ONLYOFFICE und ownCloud ideal für das Anwendungsszenario von sciebo geeignet waren und anderen Lösungen überlegen waren. Sehr wichtig war auch, dass beide Lösungen Open-Source-Produkte sind, die eine große Nachfrage der sciebo-Nutzer bedienen und eine skalierbare, robuste Architektur aufweisen.",
+    "title": "Die Integration von ONLYOFFICE und ownCloud in sciebo erleichtert nachweislich den Forschungsfluss an der Universität Münster",
+    "intro": "Interne Tests haben gezeigt, dass ONLYOFFICE und ownCloud sich ideal für Sciebo-Anwendungsszenarien eignen und anderen Lösungen haushoch überlegen sind. Es hat sich außerdem als sehr wichtig erwiesen, dass beide Lösungen bei Sciebo-Anwendern gefragte Open Source-Produkte sind und eine skalierbare, robuste Architektur haben.",
     "user": {
-      "name": "Münster University",
+      "name": "Universität Münster",
       "role": "",
-      "portal": "",
-      "location": "Standort: Deutschland",
+      "portal": "ONLYOFFICE-Portalbenutzer: n/a",
+      "location": "Land: Deutschland",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/wumunster-01.svg"
     },
     "profile": {
