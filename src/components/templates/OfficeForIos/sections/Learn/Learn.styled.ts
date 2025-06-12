@@ -27,6 +27,8 @@ const StyledLearnList = styled.div`
   }
 
   .blog-card {
+    height: auto;
+
     @media ${device.tablet} {
       max-width: 352px;
       min-width: 352px;
