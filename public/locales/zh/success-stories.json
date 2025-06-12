@@ -2,361 +2,367 @@
   "astu": {
     "id": 1,
     "slug": "astu",
-    "title": "如何使用 ONLYOFFICE 按时完成项目",
-    "intro": "团队合作变得更加透明，可互换性得到了提高。我们减少了未能遵守项目截止日期的情况，并获得了收集开支数据的可能性。",
+    "title": "如何借助ONLYOFFICE按时完成项目",
+    "intro": "团队合作变得更加透明，互换性也得到了提升。我们降低了项目逾期的风险，并能够收集费用数据。",
     "user": {
       "name": "Ivan N. Sheremet",
-      "role": "NPO ASTU 执行官",
-      "portal": "ONLYOFFICE 门户用户：不适用",
-      "location": "地点：俄罗斯",
+      "role": "NPO ASTU执行官",
+      "portal": "ONLYOFFICE门户用户：不适用",
+      "location": "所在地：俄罗斯",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/ivan_sheremet.png"
     },
     "profile": {
-      "company": "<0>ASTU - 现代管理技术机构</0>",
-      "industry": ["管理咨询"]
+      "company": "<0>ASTU - agency of modern management technologies</0>",
+      "industry": ["Management consulting"]
     },
-    "challenges": ["团队内部的有效协作、操作规划和项目管理。"],
-    "achievements": [
-      "执行官 Ivan N. Sheremet 表示：“我们改进了项目管理技术，同时考虑了 ONLYOFFICE 中使用的功能和术语。团队成员之间的职责交接变得更加容易（例如，在休假期间）。操作规划现在完全使用 ONLYOFFICE 执行。”",
-      "ONLYOFFICE 和云文件存储的结合使我们能够放弃使用自己的服务器。团队合作变得更加透明，可互换性得到了提高。我们减少了未能遵守项目截止日期的情况，并获得了收集开支数据的可能性。"
+    "challenges": [
+      "Effective collaboration within a team, operative planning and project management."
     ],
-    "PageTitle": "ASTU 成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读 ASTU 如何使用 ONLYOFFICE 按时完成项目",
-    "PageTitleOG": "ASTU 成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读 ASTU 如何使用 ONLYOFFICE 按时完成项目"
+    "achievements": [
+      "Ivan N. Sheremet, Executive Officer says, \"We've improved our project management technology taking into account the features and terminology used in ONLYOFFICE. A handover of duties between teammates became easier (for example, during vacations). Operative planning is now fully being executed with ONLYOFFICE.",
+      "The combination of ONLYOFFICE and a cloud filestore allows us to abandon the use of our own server. Teamwork became more transparent, interchangeability has been increased. We've reduced failures to comply with project deadlines and obtained a possibility to collect data on our expenses."
+    ],
+    "PageTitle": "ASTU Success Story | ONLYOFFICE",
+    "PageDescription": "Read how ASTU completed a project on time with ONLYOFFICE",
+    "PageTitleOG": "ASTU Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how ASTU completed a project on time with ONLYOFFICE"
   },
   "igv-austria": {
     "id": 2,
     "slug": "igv-austria",
-    "title": "IGV 奥地利如何使用 ONLYOFFICE 节省时间和金钱",
-    "intro": "我们实现了减少办公室电话呼叫的目标。这为我们的会员节省了时间，为我们的社区节省了金钱。",
+    "title": "ONLYOFFICE如何帮助IGV Austria节约时间和金钱",
+    "intro": "我们实现了减少办公室电话的目标。这节省了我们会员的时间和社区资金。",
     "user": {
       "name": "Mag. Matthias Kienzl",
-      "role": "IGV 奥地利总经理",
-      "portal": "ONLYOFFICE 门户用户：423",
-      "location": "地点：奥地利",
+      "role": "IGV Austria总经理",
+      "portal": "ONLYOFFICE门户用户：423",
+      "location": "所在地：奥地利",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/matthias_kienzl.png"
     },
     "profile": {
-      "company": "<0>IGV 奥地利。</0> 领先的保险经纪人。",
+      "company": "<0>IGV Austria.</0> Leading insurance brokers.",
       "industry": [
-        "奥地利最大的保险经纪人私人联合体，这使我们能够向客户展示有用且具有竞争力的保险产品，并为他们提供多个保险集团的最佳报价。我们的会员遍布奥地利各地。因此，奥地利的每位客户都有机会在自己附近使用我们的产品。我们有 423 名团队成员每天使用 Teamlab——我们会员的员工也使用该门户。"
+        "The biggest private consolidation of insurance brokers in Austria which gives us the benefit to present our clients useful and keen insurance products and provide them also the best offer of several insurance groups. Our members are located all over Austria. So every client in Austria has the chance to use our products nearby himself. We are 423 teammates who use teamlab every day – also the employees of our members use the portal."
       ]
     },
     "challenges": [
-      "我们寻找一种可行且具有成本效益的解决方案，以有效地向我们的会员提供有用且重要的信息。在建立我们的社区时，我们寻找一个有用的平台来交换信息、共享文档、存档文档、进行良好且简单的会员管理并与他们保持联系。"
+      "We searched for a viable and cost effective solution to provide our members effectively with useful and important information. By building our community, we search for a useful platform to exchange information, share documents, archive documents, having a good and easy members administration and stay in touch with them."
     ],
     "achievements": [
-      "自从有了 ONLYOFFICE，工作变得容易多了。我们不必向 500 个邮件地址发送文档。我们只需要 1 分钟和 4 次点击，文档就放在了正确的位置。需要它的人可以立即访问，而我们的会员只需要互联网接入，无论他们使用手机还是个人电脑。",
-      "一年前，我们为会员集成了“IGV-Wiki”。它像内部维基百科一样工作，因此我们有可能拥有一个放置章程、指南的平台。特别是新会员使用此功能，我们实现了减少办公室电话呼叫的目标。这为我们的会员节省了时间，为我们的社区节省了金钱。"
+      "Work since having ONLYOFFICE is much easier. We don’t have to send documents to 500 mail adresses. We need 1 minute and 4 clicks and the document is on the right place. Those who need it, can access it immediatley, and our members only need internet access, indifferent if they use their mobile phones or their personal computers.",
+      "One year ago we integrated a „IGV-Wiki“ for our members. It works like an internal wikipedia and so it`s possible for us to have a platform where bylaws, guides are placed. Specially new members use this feature and we reached the goal to reduce the calls at our office. That saves our members time and our community money."
     ],
-    "PageTitle": "IGV 成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读 IGV 奥地利如何使用 ONLYOFFICE 节省时间和金钱",
-    "PageTitleOG": "IGV 成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读 IGV 奥地利如何使用 ONLYOFFICE 节省时间和金钱"
+    "PageTitle": "IGV Success Story | ONLYOFFICE",
+    "PageDescription": "Read how IGV Austria saves time and money with ONLYOFFICE",
+    "PageTitleOG": "IGV Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how IGV Austria saves time and money with ONLYOFFICE"
   },
   "maisto-banko": {
     "id": 3,
     "slug": "maisto-banko",
-    "title": "一个慈善项目如何收集价值 30 万欧元的食物",
-    "intro": "在两天内，我们收集了价值近 30 万欧元的食物。所有这些食物都分发给了有需要的人。",
+    "title": "一个慈善项目如何募集价值30万欧元的食物",
+    "intro": "在两天内，我们募集了价值近30万欧元的食物。所有食物都已分发给有需要的人士。",
     "user": {
       "name": "Modestas Bastys",
-      "role": "慈善基金会食物银行 \"Maisto bankas\"",
-      "portal": "ONLYOFFICE 门户用户：24",
-      "location": "地点：立陶宛",
+      "role": "慈善基金会食品银行“Maisto bankas”",
+      "portal": "ONLYOFFICE门户用户：24",
+      "location": "所在地：立陶宛",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/modestas_bastys.png"
     },
     "profile": {
-      "company": "慈善基金会食物银行 <1>\"Maisto bankas\"</1>",
+      "company": "Charitable foundation Food Bank <1>\"Maisto bankas\"</1>",
       "industry": [
-        "我们致力于消除贫困和食物浪费。我们的活动在整个立陶宛进行。作为食品行业的参与者，我们是捐赠食物的公司或个人与需要食物援助的组织和个人之间的中介。目前我们雇佣了 24 名员工，并拥有 350 多名志愿者，项目经理 Modestas Bastys 说。"
+        "We are working to fight poverty and food waste. Our activities are carried out in whole Lithuania. As an actor in food industry we are intermediary between companies or people, who donate food and organisations and people who are in need of food aid. Currently we employ 24 people and have more than 350 volunteers, says Modestas Bastys, Projects Manager."
       ]
     },
     "challenges": [
-      "我们需要一个系统来协调整个立陶宛的食物筹集活动（从公司获取食物）。"
+      "We needed one system to coordinate activities of food raising (getting food from companies) in whole Lithuania."
     ],
     "achievements": [
-      "委派任务和存储信息变得更加容易。我们也开始使用项目模块来规划大型项目。",
-      "2014 年春季食物收集项目是使用 ONLYOFFICE 项目管理工具规划的。与合作伙伴和捐助者的沟通是通过 CRM 协调的。结果——在两天内，我们收集了价值近 30 万欧元的食物。所有这些食物都分发给了有需要的人。项目的所有费用都由我们的捐助者承担。"
+      "Delegating tasks and store the information became much easier. We also started to use the project module to plan big projects.",
+      "The 2014 spring food collection project was planned using ONLYOFFICE project management tool. The communication with partners and donors was coordinated using CRM. The result - during two days we collected food worth almost 300 000 EUR. All of this food was distributed to the people in need. All the costs of the project were covered by our donors."
     ],
-    "PageTitle": "Maisto bankas 成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读慈善项目 Maisto bankas 如何收集价值 30 万欧元的食物",
-    "PageTitleOG": "Maisto bankas 成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读慈善项目 Maisto bankas 如何收集价值 30 万欧元的食物"
+    "PageTitle": "Maisto bankas Success Story | ONLYOFFICE",
+    "PageDescription": "Read how a сharitable project Maisto bankas collected food worth 300,000 EUR",
+    "PageTitleOG": "Maisto bankas Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how a сharitable project Maisto bankas collected food worth 300,000 EUR"
   },
   "robo-ru": {
     "id": 4,
     "slug": "robo-ru",
-    "title": "我们如何使用 ONLYOFFICE 按时实施生态计划",
-    "intro": "在圣彼得堡废旧电池收集和回收的生态计划中，我们在 20 多个教育机构安装了生态箱，并计划在全市范围内再安装 300 个。",
+    "title": "我们如何借助ONLYOFFICE准时完成生态项目的实施",
+    "intro": "在圣彼得堡废旧电池收集和回收的生态项目中，我们在20多个教育机构内安装了生态箱，并计划在全城范围内再安装300多个生态箱。",
     "user": {
       "name": "Yaroslav Baronov",
-      "role": "Ro-bo.ru 项目经理",
-      "portal": "ONLYOFFICE 门户用户：不适用",
-      "location": "地点：俄罗斯",
+      "role": "Ro-bo.ru项目经理",
+      "portal": "ONLYOFFICE门户用户：不适用",
+      "location": "所在地：俄罗斯",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/yaroslav_baronov.png"
     },
     "profile": {
-      "company": "<0>ro-bo.ru</0> - 面向自然的智能设备。",
-      "industry": ["现代电子产品在线商店 - 机器人、互动玩具和遥控模型。"]
+      "company": "<0>ro-bo.ru</0> - nature-oriented gadgets.",
+      "industry": [
+        "Online store of modern electronics - robots, interactive toys and radio controlled models."
+      ]
     },
     "challenges": [
-      "营销活动规划，有效的时间管理。将整体工作量划分为模块、将职责组织到单独的项目中并确定任务优先级的可能性。"
+      "Planning of marketing activities, effective time management. The possibility to divide the overall amount of work into blocks, organize duties into separate projects and prioritize tasks."
     ],
     "achievements": [
-      "项目经理 Yaroslav Baronov 评论道：“现在我们能够完成更多的事情，我们的公司正处于快速发展阶段。由于确定了任务优先级，我们不会错过截止日期，并努力提前完成所有事情，这最大限度地降低了项目失败的风险并提高了质量。”",
-      "我们使用 ONLYOFFICE 实现的成功项目之一是在圣彼得堡实施废旧电池收集和回收的生态计划。该计划是与圣彼得堡市长领导下的青年协会合作进行的。结果，在 20 多个教育机构安装了生态箱，我们计划在全市范围内再安装 300 个。没有这个清晰的规划和调度系统，这项倡议就无法按时实现。”"
+      "Yaroslav Baronov, Project Manager comments, \"Now we are able to get more things done, and our company is on the fast track. Due to prioritizing tasks we don't miss deadlines and try to accomplish everything in advance, that minimizes the risk of project failure and increases quality.",
+      "One of the successful projects that we've realized with ONLYOFFICE is the implementation of an ecological program on the used batteries collection and recycling in St. Petersburg. This program has been carried out in cooperation with the Youth Association under the Governor of St. Petersburg. As a result, eco-boxes have been installed in more than 20 educational institutions, and we are planning to install 300 units more all over the city. Without this clear planning and scheduling system this initiative would not have been realized on time.\""
     ],
-    "PageTitle": "Ro-bo.ru 成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读 Ro-bo.ru 如何使用 ONLYOFFICE 按时实施生态计划",
-    "PageTitleOG": "Ro-bo.ru 成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读 Ro-bo.ru 如何使用 ONLYOFFICE 按时实施生态计划"
+    "PageTitle": "Ro-bo.ru Success Story | ONLYOFFICE",
+    "PageDescription": "Read how Ro-bo.ru implemented an ecological program on time with ONLYOFFICE",
+    "PageTitleOG": "Ro-bo.ru Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how Ro-bo.ru implemented an ecological program on time with ONLYOFFICE"
   },
   "spd-kreisverband": {
     "id": 5,
     "slug": "spd-kreisverband",
-    "title": "如何在政治协会内部组织有效合作",
-    "intro": "我们现在能够完美地做好准备，并在会议之外进行合作，这在以前是不可能的。",
+    "title": "如何在政治协会中组织开展有效的合作",
+    "intro": "我们现在已经完全准备好在会议之外一起工作，这在以前是不可能的。",
     "user": {
       "name": "Stephan Muster",
-      "role": "社民党瓦尔茨胡特地区协会评估员",
-      "portal": "ONLYOFFICE 门户用户：15",
-      "location": "地点：德国",
+      "role": "SPD Waldshut regional association顾问",
+      "portal": "ONLYOFFICE门户用户：15",
+      "location": "所在地：德国",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/stephan_muster.png"
     },
     "profile": {
-      "company": "<2>社民党巴特萨金根地方协会</2>",
-      "industry": ["德国最成功的政党之一的地方协会。"],
+      "company": "<2>SPD Bad Säckingen local association</2>",
+      "industry": [
+        "One of the most successful German political parties local association."
+      ],
       "link": "https://www.spd-kreisverband.de/"
     },
     "challenges": [
-      "“作为一个地方政治协会，我们希望优化由 15 人组成的执行委员会内部的工作流程”——代理主席 Stephan Muster 说——“最佳合作方式、通过社区项目进行的共享沟通以及会议规划和文档协作对我们来说尤为重要。一份在线报告引起了我们对 ONLYOFFICE 的注意。”"
+      "\"As a local political association we want to optimize the working process within our executive board consisting of 15 people\" - says Stephan Muster, Acting Chairman, - \"Optimal way of cooperation, shared communicating through community projects and planning of meetings and collaborative work on documents were particularly important for us. An online report has drawn our attention to ONLYOFFICE.\""
     ],
     "achievements": [
-      "通过 ONLYOFFICE，我们现在能够完美地做好准备，并在会议之外进行合作，这在以前是不可能的。任务和文档主要在 ONLYOFFICE 中使用。我们感谢 ONLYOFFICE 支持协作工作。"
+      "By ONLYOFICE we are now able to prepare ourselves perfectly and work together outside of meetings, that was not possible before. Tasks and documents are used primarily in ONLYOFICE. We thank ONLYOFFICE for supporting collaborative work."
     ],
-    "PageTitle": "社民党成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读 ONLYOFFICE 如何帮助在政治协会内部组织有效合作",
-    "PageTitleOG": "社民党成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读 ONLYOFFICE 如何帮助在政治协会内部组织有效合作"
+    "PageTitle": "SPD Success Story | ONLYOFFICE",
+    "PageDescription": "Read how ONLYOFFICE helps organize effective cooperation within a political association",
+    "PageTitleOG": "SPD Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how ONLYOFFICE helps organize effective cooperation within a political association"
   },
   "pcrubriekdemonitor": {
     "id": 6,
     "slug": "pcrubriekdemonitor",
-    "title": "我如何使用 ONLYOFFICE 维护我的博客",
-    "intro": "ONLYOFFICE Personal 对我来说是一份珍贵的礼物，它看起来非常适合发布，我使用该服务将评论嵌入到我的博客中，看起来很棒而且对读者友好。",
+    "title": "我如何在博客中使用ONLYOFFICE",
+    "intro": "ONLYOFFICE个人版是发布博客的超棒工具，我通过它在博客中嵌入评论，看起来很棒并且对读者友好。",
     "user": {
       "name": "Frans van Beers",
       "role": "独立评论员",
-      "portal": "",
-      "location": "地点：荷兰",
+      "portal": "ONLYOFFICE门户用户：不适用",
+      "location": "所在地：荷兰",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/frans_van_beers.png"
     },
     "profile": {
-      "company": "<0>Frans van Beers.</0> 超过 10 年的独立评论员和博主。",
+      "company": "<0>Frans van Beers.</0> Independent Reviewer and Blogger for more than 10 years.",
       "industry": [
-        "博客 <3>PC-RUBRIEK DE MONITOR</3>（荷兰）：新闻、技巧、软件、免费软件、硬件评论、开源和互联网。"
+        "Blog <3>PC-RUBRIEK DE MONITOR</3> (Netherlands): news, tips, software, freeware, hardware reviews, Open Source & Internet."
       ]
     },
     "challenges": [
-      "为了在我的博客上发布内容，我经常使用一个名为 Scribd 的免费服务，我可以在那里上传文档并使用 HTML 代码嵌入到我的博客中。但他们未经通知或无缘无故地删除了我的帐户。我当然对此以及我的博客部分内容变得无用这一事实敲响了警钟。经过很多麻烦和邮件往来，原来我因为是垃圾邮件发送者而被禁止，这是他们方面的错误，他们恢复了我的帐户。但是不，谢谢！哎呀，从来没有意识到会发生这样的事情，所以<0>人们总是要问自己“我信任我正在使用的数字服务吗？我能和他们沟通吗？他们对客户友好并且反应迅速吗？”</0>"
+      "For publishing on my blog I often used a free service called Scribd where I could upload documents and use HTML code to embed on my blog. But without notice or reason they deleted my account. Of course I ran a bell about that and the fact that a part of my blog was useless. After a lot of trouble and mail it turned out that I was banned because I was a spammer, mistake from there side and they restored my account. But no, thanks! Oeps, never realized that something like this can happen, so <0>one always has to ask oneself \"Do i trust the digital service I'm using and can I communicate with them and are they customer friendly and responsive?\"</0>"
     ],
     "achievements": [
-      "对于博主和社交媒体用户来说，ONLYOFFICE 的好处在于内容可以通过链接、鼠标点击或可嵌入的代码轻松发布和共享。当然，也有其他可以做到这一点的免费服务，但用户首先必须上传他们的材料和/或将其转换为 PDF 才能将其发布到社交媒体或博客上。在 ONLYOFFICE 中，您可以在任何可以访问互联网的地方在线编写和创建您的创意内容，它将被加密保存，您可以轻松地发布和共享它，甚至可以在一个项目上一起工作和写作。我的评论以一种吸引人的方式呈现，读者可以放大、保存副本以及共享和嵌入我的作品。看看吧，在 ONLYOFFICE 中创建和发布：\n \u2002\u2002评论 <4>CorelDraw Home & Student</4>\n \u2002\u2002关于 <5>G Data</5> 的文章和评论",
-      "轻松完成，因为该套件充满了有用的工具和功能，而且供个人使用的免费版本提供无限的存储空间！"
+      "ONLYOFFICE for a blogger and social media user has the benefit that content can be easily published and shared with a link, mouse click or code that can be embedded. Of course there are other free services that can do that, but a user first has to upload his material and/or convert to PDF to get it it to social media or a blog. In ONLYOFFICE you write and create your creative content online everywhere where you get access to the Internet, it will be saved encrypted and you can publish and share it easily and even work and write together on a project. My reviews are presented in an attractive way and readers can zoom in, save a copy and share and embed my work. Take a look, created and published in ONLYOFFICE: \n \u2002\u2002review <4>CorelDraw Home & Student</4> \n \u2002\u2002article & review on <5>G Data</5>",
+      "Easily done because the suite is filled with useful tools and features and the free version for private use offers unlimited storage space!"
     ],
-    "PageTitle": "Frans van Beers 成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读 Frans van Beers 如何使用 ONLYOFFICE 维护他的博客",
-    "PageTitleOG": "Frans van Beers 成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读 Frans van Beers 如何使用 ONLYOFFICE 维护他的博客"
+    "PageTitle": "Frans van Beers Success Story | ONLYOFFICE",
+    "PageDescription": "Read how Frank van Beers keeps his blog using ONLYOFFICE",
+    "PageTitleOG": "Frans van Beers Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how Frank van Beers keeps his blog using ONLYOFFICE"
   },
   "rostov-club": {
     "id": 7,
     "slug": "rostov-club",
-    "title": "ONLYOFFICE 如何帮助发展国家的智力潜力",
-    "intro": "自从部署 ONLYOFFICE 以来，工作流程变得更加舒适。我们不再错过任务，对程序有了完全的理解。",
+    "title": "ONLYOFFICE如何帮助促进一个地区智力潜能的发展",
+    "intro": "自从部署ONLYOFFICE后，工作流程变得更加流畅。我们再也不会错过任务，并且能够充分了解流程。",
     "user": {
       "name": "Andrey Pastushenko",
-      "role": "罗斯托夫地区智力游戏俱乐部",
-      "portal": "",
-      "location": "地点：俄罗斯",
+      "role": "Rostov Regional Intellectual Game Club",
+      "portal": "ONLYOFFICE门户用户：6",
+      "location": "所在地：俄罗斯",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/andrey_pastushenko.png"
     },
     "profile": {
-      "company": "<0>Andrey Pastushenko。</0> 罗斯托夫地区智力游戏俱乐部。",
+      "company": "<0>Andrey Pastushenko.</0> Rostov Regional Intellectual Game Club.",
       "industry": [
-        "我们在智力娱乐领域工作，召集人们在罗斯托夫地区玩“什么？哪里？何时？”。我们的游戏俱乐部拥有 30 多个游戏团队。去年，我们启动了一个游戏表格制作和分发项目，并开始向全球的游戏俱乐部免费提供印刷材料，从加拿大到捷克共和国。"
+        "We work in the intellectual entertainment sphere, gathering people to play What? Where? When? in the Rostov region. Our game club accounts for more than 30 playing teams. Last year we launched a project for game form production and distribution, and started to provide printed materials to the game clubs free of charge, globally, from Canada to Czech Republic."
       ]
     },
     "challenges": [
-      "几年来，我们一直在寻找能够自动化我们所有流程的简单有效的在线解决方案。我们尝试了许多选项，最后选择了 ONLYOFFICE。我们的团队分布在不同的城市，因此获得一个用于任务分配、信息交换和流程控制的通用平台至关重要。项目和 CRM 似乎成为我们的关键模块。书面规划立即构建了活动并揭示了可以及时检测和消除的差距。在线沟通促进了团队成员之间的互动。第三方云集成简化了关键文档的存储和管理。"
+      "For several years we had been looking for simple and effective online solution that could automate all our processes. We went through many options, and at last, we stopped at ONLYOFFICE. Our team is spread among the cities, so it was vital to obtain a common platform for task assignment, information exchange and process control. Projects and CRM appeared to become the key modules for us. Written planning immediately structures the activities and reveals the gaps that can be detected and eliminated in time. Online communication boosted interaction between the team members. Third-party cloud integration eased storage and management of key documents."
     ],
     "achievements": [
-      "自从部署 ONLYOFFICE 以来，工作流程变得更加舒适。我们不再错过任务，对程序有了完全的理解。现在每个项目都存储着它的整个历史，无论它是什么时候启动的。"
+      "Since the moment ONLYOFFICE was deployed, the work process became much more comfortable. We stopped missing tasks, gained complete understanding of the procedures. Each projects now stores its whole history, no matter how long ago it was launched."
     ],
-    "PageTitle": "智力游戏俱乐部成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读 ONLYOFFICE 如何帮助罗斯托夫俱乐部发展国家的智力潜力",
-    "PageTitleOG": "智力游戏俱乐部成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读 ONLYOFFICE 如何帮助罗斯托夫俱乐部发展国家的智力潜力"
+    "PageTitle": "Intellectual Game Club Success Story | ONLYOFFICE",
+    "PageDescription": "Read how ONLYOFFICE helps Rostov Club develop the intellectual potential of the country",
+    "PageTitleOG": "Intellectual Game Club Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how ONLYOFFICE helps Rostov Club develop the intellectual potential of the country"
   },
   "stammtisch": {
     "id": 8,
     "slug": "stammtisch",
     "title": "年轻玩家如何改善他们在网络上的工作流程",
-    "intro": "我们会推荐 ONLYOFFICE，因为该平台的可靠性和清晰度简直太棒了。就像文档编辑器非常易于使用和清晰一样，即使从罗斯托克到法兰克福，协作也能完美进行。",
+    "intro": "我们推荐使用ONLYOFFICE，因为这个平台具备超棒的可靠和清晰度。文档编辑软件使用起来非常简单清晰，即使从罗斯托克到法兰克福也能很好的完成协作。",
     "user": {
       "name": "Lukas Bothur",
-      "role": "Stammtisch 项目负责人",
-      "portal": "",
-      "location": "地点：德国",
+      "role": "Project lead of Stammtisch",
+      "portal": "ONLYOFFICE门户用户：6",
+      "location": "所在地：德国",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/stammtisch.png"
     },
     "profile": {
       "company": "<0>Der Stammtisch</0>",
       "industry": [
-        "我们会推荐 ONLYOFFICE，因为该平台的可靠性和清晰度简直太棒了。就像文档编辑器非常易于使用和清晰一样，即使从罗斯托克到法兰克福，协作也能完美进行。"
+        "We would recommend ONLYOFFICE, as the reliability and clarity of the platform is simply fantastic. Just as the Document Editor is very easy and clear to use, collaboration works perfectly even from Rostock to Frankfurt."
       ]
     },
     "challenges": [
-      "“Der Stammtisch”是一个面向儿童和年轻人以及促进交流和社会团结的成年人的独立网络平台。"
+      "\"Der Stammtisch\" is an independent web platform for children and young people, as well as for adults who promote exchange and social togetherness."
     ],
     "achievements": [
-      "Stammtisch 项目负责人 Lukas Bothur：“我们使用 ONLYOFFICE 软件还不到三个月。该平台涵盖了我们需要的一切，而且还是免费的。为此，我们非常感谢能够使用该平台。目前，我们只处理文档，重点是中央文档存储库。由于集成到我们的团队门户中，我们在德国各地辛勤工作的团队可以更好地相互联系，并将重要信息和文档存储在一个中央位置。在线办公套件的其他功能我们将来某个时候会使用。除了云版本，我们还使用 iOS 应用程序，这简化了您在旅途中的协作过程。顺便说一句，我们认为该平台没有任何问题。”"
+      "Lukas Bothur, Project lead of Stammtisch: \"For less than three months we have been working with the ONLYOFFICE software. The platform covers everything we need and is also free of charge. For this we are really very grateful to use the platform.  At the moment, we only work with documents, the main point is the central document repository. Thanks to the integration into our team portal, our nationwide hard-working team in Germany can better connect with each other and store important information and documents in a central location. Other functions of the online office suite we're going to use sometime in the future. In addition to the Cloud version, we use the app for IOS, which simplifies the process of collaboration when you're on the way. Incidentally we see no problems with the platform.\""
     ],
-    "PageTitle": "Stammtisch 成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读 ONLYOFFICE 如何帮助年轻玩家改善他们在网络上的工作流程",
-    "PageTitleOG": "Stammtisch 成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读 ONLYOFFICE 如何帮助年轻玩家改善他们在网络上的工作流程"
+    "PageTitle": "Stammtisch Success Story | ONLYOFFICE",
+    "PageDescription": "Read how ONLYOFFICE helps young gamers improve their workflow on the network",
+    "PageTitleOG": "Stammtisch Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how ONLYOFFICE helps young gamers improve their workflow on the network"
   },
   "skatepark-zuidlaren": {
     "id": 9,
     "slug": "skatepark-zuidlaren",
-    "title": "如何使用 ONLYOFFICE 组织一个很棒的当地体育活动场所",
-    "intro": "ONLYOFFICE 编辑器在共享文件和共同编辑方面非常好。我们选择 ONLYOFFICE 作为我们的业务工具，并且很可能会向其他人推荐它。",
+    "title": "如何使用ONLYOFFICE组织当地的体育活动",
+    "intro": "ONLYOFFICE编辑器非常适合共享和共同编辑文件。我们选择ONLYOFFICE作为我们的业务工具，并且很乐意推荐给其他人。",
     "user": {
       "name": "St. Skatepark Zuidlaren",
       "role": "",
-      "portal": "",
-      "location": "地点：荷兰",
+      "portal": "ONLYOFFICE门户用户：n/a",
+      "location": "所在地：荷兰",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/skatepark_zuidlaren.png"
     },
     "profile": {
       "company": "<0>St. Skatepark Zuidlaren</0>",
       "industry": [
-        "该基金会的主要思想是推广各种户外运动，并支持涉及直接或间接与体育及其发展相关的每个人的活动。"
+        "The main idea of the foundation is to promote different kinds of open-air sports and support activities that involve everyone directly or indirectly related to sport and its development."
       ]
     },
     "challenges": [
-      "我们的使命是为我们村里的年轻人实现一个滑板公园，这样他们就有一个放松、运动和互相闲逛的地方。"
+      "Our mission is to realize a Skatepark for the young people in our village so they have a place for relaxing, sporting and chilling with each other."
     ],
     "achievements": [
-      "Marco Nieborg：“很多年前，我出于个人需要使用了 TeamLab，然后我开始将 ONLYOFFICE 用于一些学校项目。过了一段时间，我对名为“Stichting Skatepark Zuidlaren”的项目产生了浓厚的兴趣，我又转向了 ONLYOFFICE，这是一个用于文档管理、企业沟通、邮件和项目管理工具的平台。部署非常简单快捷。半小时内，我们就把所有部分都准备好了。它满足了我们在项目组内使用项目管理工具协同工作的需求。在项目期间（大约几年），我们取得了良好的成果。它易于使用。ONLYOFFICE 编辑器在共享文件和共同编辑方面非常好。我们选择 ONLYOFFICE 作为我们的业务工具，并且很可能会向其他人推荐它。”"
+      "Marco Nieborg: \"Many years ago I used TeamLab for my personal needs and then I started using ONLYOFFICE for some school projects. After a while I gained a great interest in the project named \"Stichting Skatepark Zuidlaren\" and I turned again to ONLYOFFICE, platform for document management, corporate communication, mail and project management tools. Deployment was very easy and fast. Within half an hour we have all parts in place. It fulfills our needs in working together within a project group using project management tools. During the project (for around a few years) we have had good results. It is easy to use. The ONLYOFFICE Editor is very good regarding sharing files and co-editing them. We chose ONLYOFFICE as our business instrument and would very likely recommend it to others.\""
     ],
-    "PageTitle": "St. Skatepark Zuidlaren 成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读 ONLYOFFICE 如何帮助组织一个很棒的当地体育活动场所",
-    "PageTitleOG": "St. Skatepark Zuidlaren 成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读 ONLYOFFICE 如何帮助组织一个很棒的当地体育活动场所"
+    "PageTitle": "St. Skatepark Zuidlaren Success Story | ONLYOFFICE",
+    "PageDescription": "Read how ONLYOFFICE helps organize а great local spot for sport activities",
+    "PageTitleOG": "St. Skatepark Zuidlaren Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how ONLYOFFICE helps organize а great local spot for sport activities"
   },
   "icgeurope": {
     "id": 10,
     "slug": "icgeurope",
-    "title": "如何使用 ONLYOFFICE 让您的业务增长",
-    "intro": "特别感谢 ONLYOFFICE 文档编辑器。由于可以直接在浏览器中使用编辑器，复杂文档的编辑变得更加方便。",
+    "title": "如何借助ONLYOFFICE实现业务增长",
+    "intro": "特别感谢ONLYOFFICE文档编辑软件。在浏览器中直接使用编辑软件让复杂文档的编辑变得更加方便。",
     "user": {
       "name": "InCapital Group",
       "role": "",
-      "portal": "",
-      "location": "地点：拉脱维亚",
+      "portal": "ONLYOFFICE门户用户：n/a",
+      "location": "所在地：拉脱维亚",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/icgeurope.png"
     },
     "profile": {
       "company": "<0>InCapital Group</0>",
       "industry": [
-        "InCapital Group 是一家在 B2B 领域工作的 IT 公司，提供全方位的电子商务服务：平台开发、营销和 SEO、IT 集成服务、物流、支付处理和咨询。"
+        "InCapital Group is IT company working in B2B sector, that provides full-range eCom services: platform development, marketing & SEO, IT integration services, logistics, payment processing and consulting."
       ]
     },
     "challenges": [
-      "随着业务的增长，我们需要一个能够满足我们在项目和文档管理、CRM 方面标准的工具。经过 8 次测试运行后，我们选择了 ONLYOFFICE。老实说，我们非常兴奋，并决定与这家公司建立合作伙伴关系。"
+      "With the growth of business we needed a tool that would satisfy our standards in project and document management, CRM. After having 8 test-drives we chose ONLYOFFICE. To be honest we were really excited and made a decision to run into a partnership with this company."
     ],
     "achievements": [
-      "我们使用“项目”模块来管理复杂的合同，在规划、营销、服务器相关工作之间划分周期和任务，在团队成员之间切换它们，并告知我们的员工项目或任务内的所有流程和更新。此外，还有一个甘特图，可以直观地评估项目的进展情况。",
-      "特别感谢 ONLYOFFICE 文档编辑器。由于可以直接在浏览器中使用编辑器，复杂文档的编辑变得更加方便。",
-      "感谢 CRM，我们通过实施标签系统简化了与客户的沟通。"
+      "We use the \"Projects\" module to manage complex contracts, to splitt period and tasks between the planning, marketing, server-related work, to switch them between team members and inform our employees about all the processes and updates within the project or task. Additionally, there is a Gantt Chart, which allows visually estimating its progress of project.",
+      "Special thanks for ONLYOFFICE Document Editors. Editing of complex documents has become much more convenient due to the direct work with editors in the browser.",
+      "Thanks to CRM, we were able to simplify communication with our customers by implementing a tag system."
     ],
-    "PageTitle": "ICG 成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读 ICG 如何使用 ONLYOFFICE 让其业务增长",
-    "PageTitleOG": "ICG 成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读 ICG 如何使用 ONLYOFFICE 让其业务增长"
+    "PageTitle": "ICG Success Story | ONLYOFFICE",
+    "PageDescription": "Read how ICG made its business grow with ONLYOFFICE",
+    "PageTitleOG": "ICG Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how ICG made its business grow with ONLYOFFICE"
   },
   "gwdg": {
     "id": 11,
     "slug": "gwdg",
-    "title": "部署在 GWDG 的 ONLYOFFICE 和 ownCloud 如何帮助研究人员和教育工作者",
-    "intro": "研究和教育依赖于高效和创新的 IT 基础设施。借助 ownCloud 和 ONLYOFFICE 之间新创建的接口，用户现在可以在 Web 浏览器中同时处理一个文件。",
+    "title": "ONLYOFFICE与ownCloud在GWDG的实施如何帮助研究与教育人员",
+    "intro": "高效创新IT架构上的研究与教育工作。借助最新推出的ownCloud与ONLYOFFICE接口，用户得以在网页浏览器中就同一文件进行协作。",
     "user": {
       "name": "GWDG",
       "role": "",
-      "portal": "",
-      "location": "地点：德国",
+      "portal": "ONLYOFFICE门户用户：n/a",
+      "location": "所在地：德国",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/gwdg.svg"
     },
     "profile": {
       "company": "<6>GWDG</6>",
       "industry": [
-        "哥廷根科学数据处理有限公司 (GWDG) 是哥廷根大学的大学计算中心，也是马克斯·普朗克学会的计算和 IT 能力中心。它为科学界提供广泛的信息和通信服务。该解决方案由国家资金资助，也将作为 Academic Cloud 项目的一部分提供给下萨克森州的所有大学。"
+        "The Gesellschaft für Wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG) is a university computing centre for the Georg-August-Universität in Göttingen and a computing and IT competence centre for the Max Planck Society. It offers a wide range of information and communication services for science. Financed by state funds, the solution will also be offered to all universities in Lower Saxony as part of the Academic Cloud project."
       ]
     },
     "challenges": [
-      "ownCloud 用于文件的生产性交换和协作编辑。但特别是如果两个用户同时处理同一个文档，则无法始终避免同步冲突。在这种情况下，ownCloud 的安全机制会生成所谓的“冲突文件”：现有文件的第二个版本，旨在防止在共同更改过程中丢失内容。因此，GWDG 认为将 ONLYOFFICE 集成到 ownCloud 中是长期解决同步冲突问题的大好机会，因为像 ONLYOFFICE 这样的协作软件有针对性地解决了同步问题：ONLYOFFICE 允许通过通用用户界面编辑文档，其中更改会实时更新并立即可供其他用户查看。",
-      "GWDG 的 Ralph Krimmel：“研究和教育依赖于高效和创新的 IT 基础设施。借助我们 ownCloud 和 ONLYOFFICE 之间新创建的接口，用户现在可以在 Web 浏览器中同时处理一个文件。冲突文件得以避免，工作在文件所在的地方进行——在我们的 ownCloud 中。”"
+      "ownCloud is used for the productive exchange and collaborative editing of files. But especially if two users work on the same document at the same time, synchronization conflicts cannot always be prevented. In such a case, a security mechanism of ownCloud generates so-called „conflict files“: a second version of an existing file that is intended to prevent content from being lost as part of joint changes. The GWDG therefore sees the integration of ONLYOFFICE in ownCloud as a great opportunity to solve the problem of synchronization conflicts in the long term, since collaboration software such as ONLYOFFICE addresses the problem of synchronization in a targeted manner: ONLYOFFICE enables a document to be edited via a common user interface, whereby changes are updated in real time and are immediately visible to other users.",
+      "Ralph Krimmel, GWDG: “Research and education depend on an efficient and innovative IT infrastructure. With the newly created interface between our ownCloud and ONLYOFFICE, users can now simultaneously work on a file in a web browser. Conflict files are prevented and the work takes place where the files are - in our ownCloud.”"
     ],
     "achievements": [
-      "GWDG 的 ownCloud 目前每月约有 4,000 名活跃用户，每天约有 1,500 名用户。其中包括大学，也包括下萨克森州内以及全国各地的各种科学机构的个别工作组，他们使用 ownCloud 和 ONLYOFFICE 功能。使用 ownCloud 和 ONLYOFFICE 开发的接口处理文件可以顺利进行；即使使用 Microsoft Office 以外的文件格式，服务器也能在没有兼容性问题的情况下显示文件和格式。",
-      "ownCloud 和 ONLYOFFICE 之间的合作不仅使 GWDG 和 Academic Cloud 的用户受益；通过技术合作，ownCloud 管理员只需点击几下即可安装 ONLYOFFICE 集成应用程序，并通过 ownCloud Marketplace 将该应用程序添加到他们的云中。",
-      "<7>阅读完整的成功故事</7>"
+      "The GWDG‘s ownCloud currently registers around 4,000 active users per month and 1,500 users per day. These include universities, but also individual working groups from various scientific institutions within Lower Saxony as well as nationwide, which use ownCloud and the ONLYOFFICE functions. The processing of files works smoothly with the interface developed by ownCloud and ONLYOFFICE; even with file formats other than Microsoft Office, files and formatting are displayed by the server without compatibility problems.",
+      "The cooperation between ownCloud and ONLYOFFICE does not only benefit the users of the GWDG and the Academic Cloud; through the technical cooperation, ownCloud administrators can install the ONLYOFFICE Integration App with just a few clicks and add the app to their cloud via the ownCloud Marketplace.",
+      "<7>Read the full success story</7>"
     ],
-    "PageTitle": "GWDG 成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读部署在 GWDG 的 ONLYOFFICE 和 ownCloud 如何帮助研究人员和教育工作者",
-    "PageTitleOG": "GWDG 成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读部署在 GWDG 的 ONLYOFFICE 和 ownCloud 如何帮助研究人员和教育工作者"
+    "PageTitle": "GWDG Success Story | ONLYOFFICE",
+    "PageDescription": "Read how ONLYOFFICE and ownCloud implemented in GWDG help researchers and educators",
+    "PageTitleOG": "GWDG Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how ONLYOFFICE and ownCloud implemented in GWDG help researchers and educators"
   },
   "muenster-university": {
     "id": 12,
     "slug": "muenster-university",
-    "title": "ONLYOFFICE 和 ownCloud 在 sciebo 中的集成如何帮助促进明斯特大学的研究工作流程",
-    "intro": "内部测试表明，ONLYOFFICE 和 ownCloud 非常适合 sciebo 应用场景，并且优于其他解决方案。同样重要的是，这两种解决方案都是开源产品，可以满足 sciebo 用户的大量需求，并具有可扩展的稳健架构。",
+    "title": "ONLYOFFICE 与 ownCloud 在 sciebo 的集成如何帮助明斯特大学加速研究工作流",
+    "intro": "内部测试显示，ONLYOFFICE与ownCloud是sciebo应用场景的绝佳之选，其性能要优于其他解决方案。此外还有一点十分重要，那就是这两项解决方案均是开源产品，能够进一步满足sciebo用户需求，并提供可伸缩的可靠架构。",
     "user": {
       "name": "Münster University",
       "role": "",
-      "portal": "",
-      "location": "地点：德国",
+      "portal": "ONLYOFFICE门户用户：n/a",
+      "location": "所在地：德国",
       "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/wumunster-01.svg"
     },
     "profile": {
-      "company": "<8>明斯特大学和 sciebo</8>",
+      "company": "<8>Münster University and sciebo</8>",
       "industry": [
-        "明斯特大学拥有超过 40,000 名学生和 5,000 名员工，是德国第三大大学。它提供广泛的学科，并保持多样化的研究概况。",
-        "该大学的 IT 中心（信息处理中心，ZIV）提供名为 sciebo（“科学盒子”的缩写）的同步和共享服务——不仅适用于明斯特大学，还适用于德国人口最多的联邦州北莱茵-威斯特法伦州的几乎所有大学和一个研究中心。目前，已有超过 100,000 名用户注册了 sciebo。"
+        "With more than 40,000 students and 5,000 employees, Münster University is Germany’s 3rd biggest university. It offers a wide variety of subjects and maintains a diversified research profile.",
+        "The university’s IT center (Zentrum für Informationsverarbeitung, ZIV) offers a sync & share service called sciebo (short for “science box”) – not just for Münster University, but for almost all universities and a research center in North Rhine-Westphalia, the most populous federal state in Germany. Currently, more than 100,000 users are registered for sciebo."
       ]
     },
     "challenges": [
-      "组织 sciebo 是一项复杂的任务，因为该服务必须扩展以适应比通常大得多的用户数量。法律挑战也必须克服，并且在此背景下，必须根据 GDPR 创建最终用户合同。更重要的是，服务必须根据用户需求量身定制。明斯特大学 IT 中心的 sciebo 项目负责人 Holger Angenent：“根据我们的调查，我们很好地实现了这个目标，用户证明我们的质量甚至优于云业务中的大牌”。",
-      "在 sciebo 用户中，还有处理敏感且通常是机密数据的研究人员，因此对数据保护和防止数据丢失的要求非常高。"
+      "Organizing sciebo was a complex task because the service has to scale for user numbers much larger than the usual one. Legal challenges have to be mastered as well and, in this context, end user contracts, according to GDPR, had to be created. Even more important is that the service has to be tailored to users needs. Holger Angenent, sciebo project leader from Münster University’s IT center: “We match this target quite well according to our surveys, where the users attest us an even better quality than of the big names in cloud business”.",
+      "Amongst sciebo users, there are also researchers who deal with sensitive and often confidential data, and therefore have very high demands on data protection and protection against data loss."
     ],
     "achievements": [
-      "ONLYOFFICE 和 ownCloud 已在众多大学和组织中成功使用。内部测试表明，这两种解决方案都非常适合 sciebo 应用场景，并且优于其他解决方案。同样重要的是，它们都是开源产品，可以满足 sciebo 用户的大量需求，并具有可扩展的稳健架构。",
-      "Holger Angenent：“希望 ownCloud-ONLYOFFICE 的组合简化了数据交换，并本身就促进了更多的协作工作。为了揭示我们员工日常工作生活中的具体变化，我们将不得不进行进一步的研究。”",
-      "<9>阅读完整的成功故事</9>"
+      "ONLYOFFICE and ownCloud are already successfully in use at numerous universities and organizations. Internal testing demonstrated that both solutions were ideally suited to sciebo application scenario, and were superior to other solutions. It was also very important that both are Open Source products that serve a great demand of sciebo users and have a scalable robust architecture.",
+      "Holger Angenent: “Hopefully, the ownCloud-ONLYOFFICE combination has simplified the exchange of data and fostered more collaborative work per se. To reveal concrete changes in the everyday working lives of our employees, we will have to conduct further studies.”",
+      "<9>Read the full success story</9>"
     ],
-    "PageTitle": "明斯特大学成功故事 | ONLYOFFICE",
-    "PageDescription": "阅读 ONLYOFFICE 和 ownCloud 在 sciebo 中的集成如何帮助促进明斯特大学的研究工作流程",
-    "PageTitleOG": "明斯特大学成功故事 | ONLYOFFICE",
-    "PageDescriptionOG": "阅读 ONLYOFFICE 和 ownCloud 在 sciebo 中的集成如何帮助促进明斯特大学的研究工作流程"
+    "PageTitle": "Münster University Success Story | ONLYOFFICE",
+    "PageDescription": "Read how ONLYOFFICE and ownCloud integration in sciebo helps facilitate research workflow in Münster University",
+    "PageTitleOG": "Münster University Success Story | ONLYOFFICE",
+    "PageDescriptionOG": "Read how ONLYOFFICE and ownCloud integration in sciebo helps facilitate research workflow in Münster University"
   },
-  "subTitleProfile": "简介",
-  "subTitleChallenges": "挑战",
-  "subTitleAchievements": "成就",
-  "titleOthers": "查看其他成功故事",
+  "subTitleProfile": "Profile",
+  "subTitleChallenges": "Challenges",
+  "subTitleAchievements": "Achievements",
+  "titleOthers": "See other success stories",
   "showMoreButton": "更多"
 }
