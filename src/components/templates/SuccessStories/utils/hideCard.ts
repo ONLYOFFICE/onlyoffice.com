@@ -3,4 +3,5 @@ export const hideCard: Record<string, string[]> = {
   de: ["rostov-club", "skatepark-zuidlaren", "icgeurope"],
   es: ["rostov-club", "stammtisch", "skatepark-zuidlaren", "icgeurope"],
   pt: ["rostov-club", "stammtisch", "skatepark-zuidlaren", "icgeurope"],
+  it: ["rostov-club", "stammtisch", "skatepark-zuidlaren", "icgeurope"],
 };
