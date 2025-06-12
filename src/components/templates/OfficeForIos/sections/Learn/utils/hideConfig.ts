@@ -1,1 +1,1 @@
-export const hideConfig = ["pt", "it"];
+export const hideConfig = ["pt", "it", "cs"];
