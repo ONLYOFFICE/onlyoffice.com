@@ -1,54 +1,54 @@
 {
-  "PageTitle": "Suite de escritório móvel gratuita para iPhone e iPad | ONLYOFFICE Documents",
+  "PageTitle": "Pacote office móvel gratuito para iPhone e iPad | ONLYOFFICE Documents",
   "PageDescription": "Edite e coedite documentos, planilhas e apresentações, preencha formulários a partir de seus dispositivos iOS.",
 
-  "OnlyOfficeDocuments": "ONLYOFFICE Documents, uma sólida <0>suite de escritório móvel</0> para seu iPhone e iPad",
-  "AbsolutelyFree": "Absolutamente <0>gratuito</0>. Sem anúncios. Sem compras no aplicativo.",
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, um <0>pacote office móvel</0> forte para seu iPhone e iPad",
+  "AbsolutelyFree": "Totalmente <0>gratuito</0>. Sem anúncios. Sem compras no aplicativo.",
 
-  "OneAppThreeEditors": "Um aplicativo - <0>Três editores</0> - Vários recursos",
-  "CompatibleWithMSOffice": "100% compatível com formatos MS Office",
+  "OneAppThreeEditors": "Um aplicativo - <0>três editores</0> - vários recursos",
+  "CompatibleWithMSOffice": "Totalmente compatível com os formatos do MS Office",
 
   "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.pt.svg",
 
   "FeaturesItemHeadingFull": "Processador de texto completo",
-  "FeaturesItemTextMakeUse": "Faça uso de várias ferramentas de processamento de texto: formatação de página, parágrafo e texto, tabelas, autoformas, gráficos, etc. Crie documentos de texto de qualquer tamanho e complexidade. Imprima-os via AirPrint.",
+  "FeaturesItemTextMakeUse": "Utilize várias ferramentas de processamento de texto: página, parágrafo e formatação de texto, tabelas, formas automáticas, gráficos, etc. Crie documentos de texto de qualquer tamanho e complexidade. Imprima-os pelo AirPrint.",
 
-  "FeaturesItemHeadingComplete": "Editor completo de planilhas",
-  "FeaturesItemTextManage": "Gerencie seus dados de planilha: trabalhe com linhas e colunas, ajuste parâmetros de célula, use mais de 450 fórmulas, classifique e filtre dados.",
+  "FeaturesItemHeadingComplete": "Editor de planilha completo",
+  "FeaturesItemTextManage": "Gerencie os dados da planilha: trabalhe com linhas e colunas, ajuste os parâmetros das células, use mais de 450 fórmulas, classifique e filtre os dados.",
 
-  "FeaturesItemHeadingCollaborative": "Editor colaborativo de apresentações",
-  "FeaturesItemTextMakeWork": "Trabalhe com todos os objetos populares em seus slides: insira imagens, adicione e edite autoformas, gráficos, textos e outros itens.",
+  "FeaturesItemHeadingCollaborative": "Editor de apresentação colaborativo",
+  "FeaturesItemTextMakeWork": "Trabalhe com todos os objetos populares em seus slides: insira imagens, adicione e edite formas automáticas, tabelas e gráficos, textos e outros itens.",
 
   "FeaturesItemHeadingOnline": "Preenchedor de formulários online",
-  "FeaturesItemTextMakeView": "Visualize e preencha formulários. Navegue facilmente de campo em campo. Salve o resultado como um arquivo PDF ou DOCX.",
+  "FeaturesItemTextMakeView": "Visualize e preencha formulários. Navegue facilmente de campo para campo. Salve o resultado como um arquivo PDF ou DOCX.",
 
-  "FeaturesItemHeadingPDF": "Visualizador de PDF e reprodutor de mídia",
-  "FeaturesItemTextMakeViewPDF": "Visualize documentos e imagens PDF, reproduza arquivos de áudio e vídeo. Abra .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
+  "FeaturesItemHeadingPDF": "Visualizador de PDF e media player",
+  "FeaturesItemTextMakeViewPDF": "Ver documentos PDF e imagens, reproduzir arquivos de áudio e vídeo. Open .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
 
-  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents é um produto excepcional e recebeu a avaliação 'Muito Bom' de seus usuários.\"",
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents é um produto excelente e recebeu o prêmio 'Muito Bom' de seus usuários.\"",
   "MichaelGanss": "Michael Ganss,",
 
   "RealTimeCollaboration": "Colaboração em tempo real",
-  "BeMoreProductive": "Seja mais produtivo. Conecte seu aplicativo ao cloud ONLYOFFICE. Compartilhe documentos para coeditá-los com seus colegas de equipe em tempo real. Comente e rastreie alterações. Adicione anotações gráficas.",
+  "BeMoreProductive": "Seja mais produtivo. Conecte seu aplicativo à nuvem do ONLYOFFICE. Compartilhe documentos para coeditá-los com seus colegas de equipe em tempo real. Comente e acompanhe as alterações. Adicione anotações gráficas.",
 
-  "VideoCardHeading": "Descubra o ONLYOFFICE Documents, uma sólida suite de escritório móvel",
+  "VideoCardHeading": "Descubra o ONLYOFFICE Documents, um sólido pacote office móvel",
 
   "GetStartedAndChoose": "Comece e escolha onde trabalhar",
 
   "ChooseItemOnDevice": "No dispositivo",
-  "ChooseItemManageDocuments": "Gerencie documentos no dispositivo e edite-os offline.",
+  "ChooseItemManageDocuments": "Gerencie documentos no dispositivo e os edite offline.",
 
-  "ChooseItemInOnlyOffice": "No cloud ONLYOFFICE",
-  "ChooseItemAccessDocs": "Acesse documentos do cloud ONLYOFFICE e dos armazenamentos (Dropbox, Google Drive, etc.) a ele conectados e trabalhe colaborativamente.",
+  "ChooseItemInOnlyOffice": "Na nuvem do ONLYOFFICE",
+  "ChooseItemAccessDocs": "Acesse documentos da nuvem do ONLYOFFICE e os armazenamentos (Dropbox, Google Drive, etc.) conectados a ela, e trabalhe em colaboração.",
 
-  "ChooseItemInYourCloud": "Em seu cloud",
-  "ChooseItemConnectNextcloud": "Conecte Nextcloud, ownCloud, ou qualquer outro cloud que funcione via WebDAV e edite documentos diretamente do aplicativo.",
+  "ChooseItemInYourCloud": "Na sua nuvem",
+  "ChooseItemConnectNextcloud": "Conecte o Nextcloud, ownCloud ou qualquer outra nuvem que funcione via WebDAV e edite documentos diretamente no aplicativo.",
 
   "ChooseItemFromOther": "De outros aplicativos",
-  "ChooseItemImportDocuments": "Importe documentos de aplicativos como iTunes, Arquivos e outros.",
+  "ChooseItemImportDocuments": "Importe documentos de aplicativos como iTunes, Files e outros.",
 
-  "GetMoreWithComplete": "Obtenha mais com a versão web móvel completa",
-  "WorkOnDocumentsWithin": "Trabalhe em documentos dentro do seu navegador móvel. Vá para o seu portal web ONLYOFFICE e obtenha acesso a mais instrumentos para edição de documentos e colaboração.",
+  "GetMoreWithComplete": "Obtenha mais com a versão Web móvel completa",
+  "WorkOnDocumentsWithin": "Trabalhe em documentos no seu navegador móvel. Acesse o portal da Web do ONLYOFFICE e obtenha acesso a mais instrumentos para edição e colaboração de documentos.",
 
   "LearnMoreHeading": "Saiba mais sobre o ONLYOFFICE Documents para iOS",
 
