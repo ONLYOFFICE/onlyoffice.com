@@ -35,7 +35,7 @@ const SeeItInActionPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "see-it-in-action", "main"])),
+      ...(await serverSideTranslations(locale, ["common", "see-it-in-action", "main", "GetStarted"])),
       locale,
     },
   };

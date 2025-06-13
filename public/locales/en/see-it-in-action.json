@@ -20,27 +20,5 @@
 
   "ActionsDemoPreview": "Demo preview",
   "ActionsDemoModalHeadingOpen": "Open DOCX for editing",
-  "ActionsDemoModalButtonClose": "Close",
-
-  "GetStartedHeading": "Get started and choose where to work",
-
-  "GetStartedItemTitleInOnlyOffice": "In ONLYOFFICE DocSpace",
-  "GetStartedItemTextCreate": "Create rooms within your secure DocSpace, invite people, view, edit, and collaborate on all kinds of documents from any desktop or mobile device.",
-  "GetStartedItemLinkStart": "Start with your free account",
-
-  "GetStartedItemTitleYouUse": "In the platform you use",
-  "GetStartedItemTextConnect": "Connect Docs to edit documents directly from your app. <0>40+ ready integrations</0>: Box, Moodle, Nextcloud, Odoo, Wordpress, etc.",
-  "GetStartedItemLink": "Get Docs now",
-
-  "GetStartedItemTitleYouBuild": "In the platform you build",
-  "GetStartedItemTextIntegrate": "Integrate Docs into your service to provide powerful document-editing and building capabilities to your customers under your brand.",
-  "GetStartedItemLinkLearn": "Learn more",
-
-  "GetStartedItemTitleYourPc": "From your PC",
-  "GetStartedItemTextEdit": "Edit docs offline with free office apps for Windows, Linux, and macOS",
-  "GetStartedItemLinkDownload": "Download now",
-
-  "GetStartedItemTitleMobile": "From your mobile devices",
-  "GetStartedItemTextWork": "Work on documents on the go with free apps for iOS and Android devices",
-  "GetStartedItemLinkInstall": "Install now"
+  "ActionsDemoModalButtonClose": "Close"
 }
