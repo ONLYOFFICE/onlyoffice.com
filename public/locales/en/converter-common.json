@@ -1,0 +1,42 @@
+{
+  "FormatsSupported": "50+ most popular formats <0>supported</0>",
+  "MaxFileSize": "Maximum file size 5 MB or <0>sign up</0>",
+  "SelectFile": "Select file",
+  "DragAndDrop": "or drag & drop it here",
+  "LearnMore": "Learn more",
+
+  "Error": "Error",
+  "FormatNotSupported": "The file format is not supported. <br/><1>supported files</1>",
+  "UploadSizeError": "The uploaded file likely exceeded the maximum file size <0>5 Mb</0>",
+  "UploadEmptyError": "The uploaded file has zero size and therefore cannot be converted.",
+  "Close": "Close",
+  "SubmitIssue": "Submit an issue",
+
+  "": "",
+  "": "",
+  "": "",
+  "": "",
+  "": "",
+
+  "SupportedFormats": "<0>50+</0> supported formats",
+  "Spreadsheets": "Spreadsheets",
+  "TextDocuments": "Text documents",
+  "Presentations": "Presentations",
+  "WeCare": "We care about <0>your data</0>",
+  "AllDocuments": "All documents you upload are encrypted to make sure they are completely safe online.",
+  "WeDoNotTrack": "We do not track or request any of your personal information to convert the files.",
+  "YouDoNotStore": "Your documents are not stored on the server after conversion is completed.",
+  "WeGuarantee": "We guarantee transparency of file processing by providing <0>open source code</0> of our software.",
+  "NeedToMake": "Need to make some edits?",
+  "CreateAndEdit": "Create, edit, and collaborate on your text documents, spreadsheets, presentations and PDFs online with ONLYOFFICE DocSpace",
+  "CreateFreeAccount": "Create free account",
+  "EditsImage": "/images/modules/converter/en/convert.png",
+  "EditsImage2x": "/images/modules/converter/en/convert@2x.png",
+  "PowerfulAPI": "Powerful conversion <0>API</0>",
+  "OOAPI": "ONLYOFFICE provides one API to convert all kinds of Office documents: texts, sheets, slides, forms, PDFs, eBooks and more within your app.",
+  "CheckAPI": "Check our <0>API documentation</0>.",
+
+  "WorkFaster": "Work faster on your documents using any <0>AI assistants</0> in ONLYOFFICE",
+  "DownloadTemplates": "Download DOCX, XLSX, PPTX, PDF <0>templates</0>, easy editable online in just a few clicks",
+  "GetFreeApps": "Get free <0>office apps</0> for Windows, Linux, macOS, Android, iOS"
+}

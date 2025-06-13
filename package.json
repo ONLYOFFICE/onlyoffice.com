@@ -13,10 +13,12 @@
     "prettier": "prettier --write ."
   },
   "dependencies": {
-    "@onlyoffice/document-editor-react": "^2.0.0",
     "@hcaptcha/react-hcaptcha": "^1.12.0",
+    "@onlyoffice/document-editor-react": "^2.0.0",
     "crypto": "^1.0.1",
     "dayjs": "^1.11.13",
+    "form-data": "^4.0.3",
+    "formidable": "^3.5.4",
     "html-react-parser": "^5.2.3",
     "i18next": "^24.2.2",
     "i18next-http-backend": "^3.0.2",
@@ -44,6 +46,7 @@
     "@storybook/nextjs": "8.5.4",
     "@storybook/react": "8.5.4",
     "@storybook/test": "8.5.4",
+    "@types/formidable": "^3.4.5",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^20.17.47",
     "@types/nodemailer": "^6.4.17",

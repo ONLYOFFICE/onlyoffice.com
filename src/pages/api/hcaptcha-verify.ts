@@ -27,7 +27,7 @@ export default async function handler(
     } else {
       console.error("hCaptcha api returns errors:", data);
       res
-        .status(400)
+        .status(400) 
         .json({ status: "errorHCaptchaInvalid", error: data["error-codes"] });
     }
   } catch (error) {
