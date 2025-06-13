@@ -1,15 +1,18 @@
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
-import { Section } from "@src/components/ui/Section";
 import { CardLink } from "@src/components/widgets/CardLink";
 import { items } from "./data/items";
+import { hideConfig } from "./utils/hideConfig";
 
-import { StyledLearnHeading, StyledLearnList } from "./Learn.styled";
+import { StyledLearnHeading, StyledLearnList, StyledLearnSection } from "./Learn.styled";
 
 const Learn = () => {
   const { t } = useTranslation("office-for-android");
+  const { locale } = useRouter();
 
   return (
-    <Section
+    <StyledLearnSection
+      $isDisplay={hideConfig.includes(locale ?? "en") ? false : true}
       background="#F9F9F9"
       desktopSpacing={["112px", "56px"]}
       tabletSpacing={["112px", "56px"]}
@@ -45,7 +48,7 @@ const Learn = () => {
           />
         ))}
       </StyledLearnList>
-    </Section>
+    </StyledLearnSection>
   );
 };
 
