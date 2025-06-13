@@ -20,27 +20,5 @@
 
   "ActionsDemoPreview": "Aperçu démo",
   "ActionsDemoModalHeadingOpen": "Ouvrir DOCX pour modification",
-  "ActionsDemoModalButtonClose": "Fermer",
-
-  "GetStartedHeading": "Commencez et choisissez où travailler",
-
-  "GetStartedItemTitleInOnlyOffice": "Dans ONLYOFFICE DocSpace",
-  "GetStartedItemTextCreate": "Créez des salles au sein de votre DocSpace sécurisé, invitez des personnes, visualisez, modifiez et collaborez sur toutes sortes de documents depuis n'importe quel appareil de bureau ou mobile.",
-  "GetStartedItemLinkStart": "Commencer avec votre compte gratuit",
-
-  "GetStartedItemTitleYouUse": "Sur la plateforme que vous utilisez",
-  "GetStartedItemTextConnect": "Connectez Docs pour modifier des documents directement depuis votre application. <0>Plus de 40 intégrations prêtes à l'emploi</0> : Box, Moodle, Nextcloud, Odoo, Wordpress, etc.",
-  "GetStartedItemLink": "Obtenir Docs maintenant",
-
-  "GetStartedItemTitleYouBuild": "Sur la plateforme que vous créez",
-  "GetStartedItemTextIntegrate": "Intégrez Docs dans votre service pour offrir à vos clients de puissantes capacités d'édition et de création de documents sous votre marque.",
-  "GetStartedItemLinkLearn": "En savoir plus",
-
-  "GetStartedItemTitleYourPc": "Depuis votre PC",
-  "GetStartedItemTextEdit": "Modifiez des documents hors ligne avec les applications bureautiques gratuites pour Windows, Linux et macOS.",
-  "GetStartedItemLinkDownload": "Télécharger maintenant",
-
-  "GetStartedItemTitleMobile": "Depuis vos appareils mobiles",
-  "GetStartedItemTextWork": "Travaillez sur des documents en déplacement avec les applications gratuites pour appareils iOS et Android.",
-  "GetStartedItemLinkInstall": "Installer maintenant"
+  "ActionsDemoModalButtonClose": "Fermer"
 }
