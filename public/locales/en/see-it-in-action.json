@@ -18,6 +18,12 @@
   "ActionsCollaborate": "Collaborate",
 
   "ActionsDemoPreview": "Demo preview",
-  "ActionsDemoModalHeadingOpen": "Open DOCX for editing",
+  "ActionsDemoModalHeadingOpenDocx": "Open DOCX for editing",
+  "ActionsDemoModalHeadingOpenXlsx": "Open XLSX for editing",
+  "ActionsDemoModalHeadingOpenPptx": "Open PPTX for editing",
+  "ActionsDemoModalHeadingOpenPdf": "Edit PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Create form",
+  "ActionsDemoModalHeadingOpenFill": "Fill in PDF form",
+  "ActionsDemoModalHeadingOpenCollaborate": "Collaborate",
   "ActionsDemoModalButtonClose": "Close"
 }
