@@ -1,21 +1,25 @@
 {
-  "PageTitle": "ONLYOFFICE partners wereldwijd | ONLYOFFICE",
+  "PageTitle": "ONLYOFFICE Partners wereldwijd | ONLYOFFICE",
   "PageTitleOG": "Partners wereldwijd",
-  "PageDescription": "Vind een ONLYOFFICE partner in uw land om de meest innovatieve kantoortoepassingen te krijgen.",
+  "PageDescription": "Zoek een ONLYOFFICE-partner in uw land voor de meest innovatieve kantoor-apps.",
 
   "HeroHeadingOnlyOffice": "ONLYOFFICE Partners",
-  "HeroTextOnlyOffice": "ONLYOFFICE blijft wereldwijd bedrijven en particulieren bereiken om de meest innovatieve kantoortoepassingen aan te bieden, aangepast aan alle werkbehoeften en zakelijke omgevingen.",
-  "HeroButtonBecome": "Word een partner",
+  "HeroTextOnlyOffice": "ONLYOFFICE blijft wereldwijd bedrijven en particulieren bereiken om de meest innovatieve kantoorapps te leveren die aangepast zijn aan alle werkbehoeftes en bedrijfsomgevingen.",
+  "HeroButtonBecome": "Word partner",
 
-  "PartnersAll": "Alle",
+  "PartnersAll": "Allemaal",
   "PartnersAllCountries": "Alle landen",
-  "PartnersSelectCountry": "Land selecteren",
-  "PartnersVisitSite": "Website bezoeken",
-  "PartnersSendEmail": "E-mail verzenden",
+  "PartnersSelectCountry": "Selecteer land",
+  "PartnersVisitSite": "Bezoek website",
+  "PartnersSendEmail": "Send email",
+
+  "PartnersLevelGold": "Gold Partner",
+  "PartnersLevelSilver": "Silver Partner",
+  "PartnersLevelAutorized": "Autorized",
 
   "ShowMoreBtnText": "Meer tonen",
   "ShowLessBtnText": "Minder tonen",
 
-  "JoinHeading": "Word vandaag nog lid van het <0>ONLYOFFICE</0> partnernetwerk!",
-  "JoinButton": "Verzoek verzenden"
+  "JoinHeading": "Word vandaag nog lid van het <0>ONLYOFFICE</0>-partnernetwerk!",
+  "JoinButton": "Aanvraag versturen"
 }
