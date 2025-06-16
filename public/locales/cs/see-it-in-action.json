@@ -1,45 +1,29 @@
 {
   "PageTitle": "Zkontrolujte hlavní funkce ONLYOFFICE Docs | ONLYOFFICE",
-  "PageDescription": "Upravujte soubory docx, xlsx, pptx, prohlížejte PDF, vytvářejte vyplnitelné formuláře, spolupracujte v reálném čase a vyzkoušejte hlavní funkce ONLYOFFICE. Nevyžaduje se stahování ani registrace.",
+  "PageDescription": "Upravujte soubory docx, xlsx, pptx, prohlížejte PDF, vytvářejte vyplnitelné formuláře, spolupracujte v reálném čase a zkontrolujte hlavní funkce ONLYOFFICE. Není nutné stahovat ani se registrovat.",
 
-  "HeroHeadingSeeIt": "Vyzkoušejte si to v akci",
-  "HeroTextCurious": "Zajímá vás, jak vypadá rozhraní a chcete si bez registrace vyzkoušet hlavní funkce?",
+  "HeroHeadingSeeIt": "Podívejte se na formulář v akci!",
+  "HeroTextCurious": "Zajímá vás, jak vypadá rozhraní a jak si vyzkoušet hlavní funkce?",
 
   "ActionsEditDocx": "Upravit DOCX",
-  "ActionsExampleDocumentTitleDocx": "Příklad dokumentu Název.docx",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
   "ActionsEditXlsx": "Upravit XLSX",
-  "ActionsExampleDocumentTitleXlsx": "Příklad dokumentu Název.xlsx",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
   "ActionsEditPptx": "Upravit PPTX",
-  "ActionsExampleDocumentTitlePptx": "Příklad dokumentu Název.pptx",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
   "ActionsEditPdf": "Upravit PDF",
-  "ActionsExampleDocumentTitlePdf": "Příklad dokumentu Název.pdf",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
   "ActionsCreateForm": "Vytvořit formulář",
-  "ActionsFillInPdfForm": "Vyplnit PDF formulář",
-  "ActionsCollaborate": "Spolupracovat",
+  "ActionsFillInPdfForm": "Fill in PDF form",
+  "ActionsCollaborate": "Spolupracujte",
 
-  "ActionsDemoPreview": "Demo náhled",
-  "ActionsDemoModalHeadingOpen": "Otevřít DOCX pro úpravy",
-  "ActionsDemoModalButtonClose": "Zavřít",
-
-  "GetStartedHeading": "Začněte a vyberte si, kde budete pracovat",
-
-  "GetStartedItemTitleInOnlyOffice": "V ONLYOFFICE DocSpace",
-  "GetStartedItemTextCreate": "Vytvářejte místnosti ve svém zabezpečeném DocSpace, zvěte lidi, prohlížejte, upravujte a spolupracujte na všech typech dokumentů z jakéhokoli stolního nebo mobilního zařízení.",
-  "GetStartedItemLinkStart": "Začněte s bezplatným účtem",
-
-  "GetStartedItemTitleYouUse": "Na platformě, kterou používáte",
-  "GetStartedItemTextConnect": "Připojte Docs pro úpravu dokumentů přímo z vaší aplikace. <0>40+ hotových integrací</0>: Box, Moodle, Nextcloud, Odoo, Wordpress atd.",
-  "GetStartedItemLink": "Získejte Docs nyní",
-
-  "GetStartedItemTitleYouBuild": "Na platformě, kterou vytváříte",
-  "GetStartedItemTextIntegrate": "Integrujte Docs do své služby a poskytněte svým zákazníkům výkonné funkce pro úpravu a tvorbu dokumentů pod vaší značkou.",
-  "GetStartedItemLinkLearn": "Zjistit více",
-
-  "GetStartedItemTitleYourPc": "Z vašeho PC",
-  "GetStartedItemTextEdit": "Upravujte dokumenty offline s bezplatnými kancelářskými aplikacemi pro Windows, Linux a macOS.",
-  "GetStartedItemLinkDownload": "Stáhnout nyní",
-
-  "GetStartedItemTitleMobile": "Z vašich mobilních zařízení",
-  "GetStartedItemTextWork": "Pracujte s dokumenty na cestách s bezplatnými aplikacemi pro zařízení iOS a Android.",
-  "GetStartedItemLinkInstall": "Nainstalovat nyní"
+  "ActionsDemoPreview": "Náhled dema",
+  "ActionsDemoModalHeadingOpenDocx": "Pro úpravy otevřete soubor DOCX",
+  "ActionsDemoModalHeadingOpenXlsx": "Pro úpravy otevřete soubor XLSX",
+  "ActionsDemoModalHeadingOpenPptx": "Pro úpravy otevřete soubor PPTX",
+  "ActionsDemoModalHeadingOpenPdf": "Edit PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Vytvořit formulář",
+  "ActionsDemoModalHeadingOpenFill": "Fill in PDF form",
+  "ActionsDemoModalHeadingOpenCollaborate": "Spolupracujte",
+  "ActionsDemoModalButtonClose": "Zavřít"
 }
