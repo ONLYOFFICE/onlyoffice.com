@@ -1,32 +1,32 @@
 {
   "PageTitle": "お客様 | ONLYOFFICE",
   "PageTitleOG": "お客様",
-  "PageDescription": "世界中のONLYOFFICEのお客様の成功事例をご覧ください。",
+  "PageDescription": "ONLYOFFICE の世界中からのお客様",
 
-  "HeroHeadingOnlyOffice": "<0>ONLYOFFICE</0> は、あらゆる規模と形態のチームがオンラインでドキュメントを安全に共同編集するのに役立ちます",
-  "HeroButtonTellYour": "あなたのストーリーを教えてください",
-  "HeroButtonStartYour": "ここからあなたのストーリーを始めましょう",
+  "HeroHeadingOnlyOffice": "<0>ONLYOFFICE</0> はあらゆる規模形態のチームが安全にオンラインで共同編集できるようにします",
+  "HeroButtonTellYour": "体験談をする",
+  "HeroButtonStartYour": "ここから体験談を開始",
   "HeroOr": "または",
 
-  "TrustedHeadingTrustedAndLove": "世界中で <0>10,000,000</0> 人以上のユーザーに信頼され、愛されています",
-  "TrustedButtonShowMore": "もっと見る",
+  "TrustedHeadingTrustedAndLove": "世界中  <0>1000 万 </0> 以上のユーザーが信頼",
+  "TrustedButtonShowMore": "もっと見せる",
   "TrustedButtonShowLess": "少なく表示",
 
   "TabsInfoTitleInternational": "国際機関",
-  "TabsInfoTitleTechnology": "テクノロジー",
+  "TabsInfoTitleTechnology": "技術",
   "TabsInfoTitleEducation": "教育",
-  "TabsInfoTitleScience": "科学・研究",
-  "TabsInfoTitleGovernment": "政府",
-  "TabsInfoTitleFinance": "金融",
+  "TabsInfoTitleScience": "科学研究",
+  "TabsInfoTitleGovernment": "政府機関",
+  "TabsInfoTitleFinance": "財務",
   "TabsInfoTitleManufactural": "製造業",
-  "TabsInfoTitleBusiness": "ビジネス",
-  "TabsInfoTitleNPO": "NPO",
-  "TabsInfoTitleTelecoms": "通信",
+  "TabsInfoTitleBusiness": "業務",
+  "TabsInfoTitleNPO": "非営利団体",
+  "TabsInfoTitleTelecoms": "テレコム",
 
-  "IntegrationHowOnlyofficeAndOwnCloud": "ONLYOFFICEとownCloudのSciebo連携がミュンスター大学の研究ワークフローをいかに円滑にするか",
+  "IntegrationHowOnlyofficeAndOwnCloud": "Sciebo の ONLYOFFICE と ownCloud 統合で、ミュンスター大学での研究ワークフローが円滑化する様子",
   "IntegrationReadBlog": "ブログを読む",
 
-  "DownloadPDF": "PDFをダウンロード",
+  "DownloadPDF": "ダウンロードPDF",
 
-  "StartYourStory": "あなたのストーリーを始めましょう"
+  "StartYourStory": "ここから体験談を開始"
 }
