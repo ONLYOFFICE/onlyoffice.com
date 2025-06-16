@@ -1,32 +1,32 @@
 {
   "PageTitle": "Clients | ONLYOFFICE",
   "PageTitleOG": "Clients",
-  "PageDescription": "Découvrez les témoignages de réussite des clients ONLYOFFICE dans le monde entier.",
+  "PageDescription": "Lisez les témoignage des clients ONLYOFFICE du monde entier.",
 
-  "HeroHeadingOnlyOffice": "<0>ONLYOFFICE</0> aide les équipes de toutes tailles et de tous horizons à collaborer en toute sécurité sur des documents en ligne",
-  "HeroButtonTellYour": "Racontez votre histoire",
+  "HeroHeadingOnlyOffice": "<0>ONLYOFFICE</0> aide les équipes de toutes tailles et de tous les domaines à collaborer en toute sécurité sur des documents en ligne",
+  "HeroButtonTellYour": "Racontez-nous votre histoire",
   "HeroButtonStartYour": "Commencez votre histoire ici",
   "HeroOr": "ou",
 
-  "TrustedHeadingTrustedAndLove": "Approuvé et apprécié par plus de <0>10 000 000</0> d'utilisateurs dans le monde entier",
-  "TrustedButtonShowMore": "Afficher plus",
-  "TrustedButtonShowLess": "Afficher moins",
+  "TrustedHeadingTrustedAndLove": "Apprécié et respecté par plus de <0>10 000 000</0> d’utilisateurs dans le monde entier",
+  "TrustedButtonShowMore": "Montre plus",
+  "TrustedButtonShowLess": "Montrer moins",
 
   "TabsInfoTitleInternational": "Organisations internationales",
   "TabsInfoTitleTechnology": "Technologie",
   "TabsInfoTitleEducation": "Éducation",
-  "TabsInfoTitleScience": "Science & Recherche",
+  "TabsInfoTitleScience": "Science et recherche",
   "TabsInfoTitleGovernment": "Gouvernement",
   "TabsInfoTitleFinance": "Finance",
-  "TabsInfoTitleManufactural": "Fabrication",
-  "TabsInfoTitleBusiness": "Entreprises",
-  "TabsInfoTitleNPO": "Associations à but non lucratif",
+  "TabsInfoTitleManufactural": "Industrie",
+  "TabsInfoTitleBusiness": "Affaires",
+  "TabsInfoTitleNPO": "NPO",
   "TabsInfoTitleTelecoms": "Télécommunications",
 
-  "IntegrationHowOnlyofficeAndOwnCloud": "Comment l'intégration d'ONLYOFFICE et ownCloud dans Sciebo facilite le flux de travail de recherche à l'Université de Münster",
+  "IntegrationHowOnlyofficeAndOwnCloud": "Comment l’intégration ONLYOFFICE et ownCloud dans Sciebo permet de faciliter le processus de recherche à l’Université de Münster",
   "IntegrationReadBlog": "Lire le blog",
 
   "DownloadPDF": "Télécharger le PDF",
 
-  "StartYourStory": "Commencez votre histoire"
+  "StartYourStory": "Commencez votre histoire ici"
 }
