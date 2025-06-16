@@ -1,32 +1,32 @@
 {
   "PageTitle": "Clientes | ONLYOFFICE",
   "PageTitleOG": "Clientes",
-  "PageDescription": "Leia as histórias de sucesso dos clientes ONLYOFFICE em todo o mundo.",
+  "PageDescription": "Clientes do ONLYOFFICE em todo o mundo.",
 
-  "HeroHeadingOnlyOffice": "<0>ONLYOFFICE</0> ajuda equipas de todos os tamanhos e tipos a colaborar de forma segura em documentos online",
-  "HeroButtonTellYour": "Conte a sua história",
-  "HeroButtonStartYour": "Comece a sua história aqui",
+  "HeroHeadingOnlyOffice": "O <0>ONLYOFFICE</0> ajuda equipes de todos os tamanhos e formas a colaborar com segurança em documentos online",
+  "HeroButtonTellYour": "Conte sua história",
+  "HeroButtonStartYour": "Comece sua história aqui",
   "HeroOr": "ou",
 
-  "TrustedHeadingTrustedAndLove": "Confiado e amado por mais de <0>10 000 000</0> de utilizadores em todo o mundo",
-  "TrustedButtonShowMore": "Mostrar mais",
-  "TrustedButtonShowLess": "Mostrar menos",
+  "TrustedHeadingTrustedAndLove": "Comprovado e adorado por mais de <0>10 milhões</0> de usuários em todo o mundo",
+  "TrustedButtonShowMore": "Mostre mais",
+  "TrustedButtonShowLess": "Mostre menos",
 
   "TabsInfoTitleInternational": "Organizações internacionais",
   "TabsInfoTitleTechnology": "Tecnologia",
   "TabsInfoTitleEducation": "Educação",
-  "TabsInfoTitleScience": "Ciência e Pesquisa",
+  "TabsInfoTitleScience": "Ciência e pesquisa",
   "TabsInfoTitleGovernment": "Governo",
   "TabsInfoTitleFinance": "Finanças",
   "TabsInfoTitleManufactural": "Fabricação",
   "TabsInfoTitleBusiness": "Negócios",
-  "TabsInfoTitleNPO": "ONGs",
-  "TabsInfoTitleTelecoms": "Telecomunicações",
+  "TabsInfoTitleNPO": "Sem fins lucrativos",
+  "TabsInfoTitleTelecoms": "Telecom",
 
-  "IntegrationHowOnlyofficeAndOwnCloud": "Como a integração do ONLYOFFICE e ownCloud no Sciebo ajuda a facilitar o fluxo de trabalho de pesquisa na Universidade de Münster",
-  "IntegrationReadBlog": "Ler blog",
+  "IntegrationHowOnlyofficeAndOwnCloud": "Como a integração do ONLYOFFICE e do ownCloud no Sciebo ajuda a facilitar o fluxo de trabalho de pesquisa na Universidade de Münster",
+  "IntegrationReadBlog": "Ler o blog",
 
-  "DownloadPDF": "Baixar PDF",
+  "DownloadPDF": "BAIXAR PDF",
 
-  "StartYourStory": "Comece a sua história"
+  "StartYourStory": "Comece sua história aqui"
 }
