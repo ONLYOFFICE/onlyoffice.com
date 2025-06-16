@@ -1,45 +1,29 @@
 {
-  "PageTitle": "Проверьте основную функциональность ONLYOFFICE Docs | ONLYOFFICE",
-  "PageDescription": "Редактируйте файлы docx, xlsx, pptx, просматривайте PDF, создавайте заполняемые формы, сотрудничайте в реальном времени, чтобы проверить основные функции ONLYOFFICE. Загрузка или регистрация не требуются.",
+  "PageTitle": "Протестируйте основные функциональные возможности ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Редактируйте документы в форматах docx, xlsx, pptx, просматривайте PDF-файлы, создавайте заполняемые формы, работайте совместно в режиме реального времени, чтобы протестировать основные функциональные возможности ONLYOFFICE. Скачивать и регистрироваться не нужно.",
 
-  "HeroHeadingSeeIt": "Посмотрите в действии",
-  "HeroTextCurious": "Хотите узнать, как выглядит интерфейс, и попробовать основные функции без регистрации?",
+  "HeroHeadingSeeIt": "Как это работает?",
+  "HeroTextCurious": "Хотите узнать, как выглядит интерфейс, и протестировать основные функциональные возможности без регистрации?",
 
   "ActionsEditDocx": "Редактировать DOCX",
-  "ActionsExampleDocumentTitleDocx": "Пример документа.docx",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
   "ActionsEditXlsx": "Редактировать XLSX",
-  "ActionsExampleDocumentTitleXlsx": "Пример документа.xlsx",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
   "ActionsEditPptx": "Редактировать PPTX",
-  "ActionsExampleDocumentTitlePptx": "Пример документа.pptx",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
   "ActionsEditPdf": "Редактировать PDF",
-  "ActionsExampleDocumentTitlePdf": "Пример документа.pdf",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
   "ActionsCreateForm": "Создать форму",
   "ActionsFillInPdfForm": "Заполнить PDF-форму",
-  "ActionsCollaborate": "Совместная работа",
+  "ActionsCollaborate": "Работать совместно",
 
-  "ActionsDemoPreview": "Предварительный просмотр демо",
-  "ActionsDemoModalHeadingOpen": "Открыть DOCX для редактирования",
-  "ActionsDemoModalButtonClose": "Закрыть",
-
-  "GetStartedHeading": "Начните и выберите, где работать",
-
-  "GetStartedItemTitleInOnlyOffice": "В ONLYOFFICE DocSpace",
-  "GetStartedItemTextCreate": "Создавайте комнаты в своем защищенном DocSpace, приглашайте людей, просматривайте, редактируйте и работайте совместно над всеми видами документов с любого настольного или мобильного устройства.",
-  "GetStartedItemLinkStart": "Начать с бесплатного аккаунта",
-
-  "GetStartedItemTitleYouUse": "На платформе, которую вы используете",
-  "GetStartedItemTextConnect": "Подключите Docs для редактирования документов прямо из вашего приложения. <0>Более 40 готовых интеграций</0>: Box, Moodle, Nextcloud, Odoo, Wordpress и т.д.",
-  "GetStartedItemLink": "Получить Docs сейчас",
-
-  "GetStartedItemTitleYouBuild": "На платформе, которую вы создаете",
-  "GetStartedItemTextIntegrate": "Интегрируйте Docs в свой сервис, чтобы предоставить вашим клиентам мощные возможности редактирования и создания документов под вашим брендом.",
-  "GetStartedItemLinkLearn": "Узнать больше",
-
-  "GetStartedItemTitleYourPc": "С вашего ПК",
-  "GetStartedItemTextEdit": "Редактируйте документы офлайн с помощью бесплатных офисных приложений для Windows, Linux и macOS.",
-  "GetStartedItemLinkDownload": "Скачать сейчас",
-
-  "GetStartedItemTitleMobile": "С ваших мобильных устройств",
-  "GetStartedItemTextWork": "Работайте с документами в дороге с помощью бесплатных приложений для устройств iOS и Android.",
-  "GetStartedItemLinkInstall": "Установить сейчас"
+  "ActionsDemoPreview": "Демонстрационный просмотр",
+  "ActionsDemoModalHeadingOpenDocx": "Открыть файл DOCX в режиме редактирования",
+  "ActionsDemoModalHeadingOpenXlsx": "Открыть файл XLSX в режиме редактирования",
+  "ActionsDemoModalHeadingOpenPptx": "Открыть файл PPTX в режиме редактирования",
+  "ActionsDemoModalHeadingOpenPdf": "Редактировать PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Создать форму",
+  "ActionsDemoModalHeadingOpenFill": "Заполнить PDF-форму",
+  "ActionsDemoModalHeadingOpenCollaborate": "Работать совместно",
+  "ActionsDemoModalButtonClose": "Закрыть"
 }
