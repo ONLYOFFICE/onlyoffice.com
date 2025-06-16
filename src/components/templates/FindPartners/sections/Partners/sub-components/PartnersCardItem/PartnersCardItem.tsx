@@ -25,7 +25,10 @@ const PartnersCardItemComponent = ({ item, isItemOpen, onToggleCard, t }: IPartn
       onClick={() => onToggleCard(item.id)}
     >
       <StyledPartnersCardItemLeft>
-        <StyledPartnersCardItemImg $imgUrl={item.logo.length > 1 ? item?.logo[1]?.url : item?.logo[0]?.url} />
+        <StyledPartnersCardItemImg $imgUrl={
+          item.logo && item.logo.length > 1
+            ? item.logo && item?.logo[1]?.url
+            : item.logo && item?.logo[0]?.url} />
       </StyledPartnersCardItemLeft>
       <StyledPartnersCardItemRight>
         <StyledPartnersCardItemHead>
