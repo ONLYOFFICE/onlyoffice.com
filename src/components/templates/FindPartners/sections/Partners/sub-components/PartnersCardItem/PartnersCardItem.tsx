@@ -75,7 +75,16 @@ const PartnersCardItemComponent = ({ item, isItemOpen, onToggleCard, t }: IPartn
         }
       </StyledPartnersCardItemInfoWrapperMob>
       {item.level && item.level !== "No level" && (
-        <StyledPartnersLevel $level={item.level} />
+        <StyledPartnersLevel
+          $level={
+            item.level === "Gold partner" ? t("PartnersLevelGold") :
+            item.level === "Silver partner" ? t("PartnersLevelSilver") : t("PartnersLevelAutorized")
+          }
+          $icon={
+            item.level === "Gold partner" ? "/images/templates/find-partners/partners/gold-partner.svg" :
+            item.level === "Silver partner" ? "/images/templates/find-partners/partners/silver-partner.svg" : "/images/templates/find-partners/partners/autorized.svg"
+          }
+        />
       )}
     </StyledPartnersCardItem>
   );

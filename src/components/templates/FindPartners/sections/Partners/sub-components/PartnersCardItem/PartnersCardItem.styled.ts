@@ -200,7 +200,8 @@ const StyledPartnersCardItemDesc = styled(Text)<{
 `;
 
 const StyledPartnersLevel = styled.div<{
-  $level: IPartner["level"];
+  $level: string;
+  $icon: string;
 }>`
   width: 36px;
   height: 39px;
@@ -210,24 +211,7 @@ const StyledPartnersLevel = styled.div<{
   position: absolute;
   top: 0;
   left: 15px;
-
-  ${({$level}) => {
-    if ($level === "Gold partner") {
-      return css`
-        background-image: url("/images/templates/find-partners/partners/gold-partner.svg");
-      `;
-    }
-    if ($level === "Silver partner") {
-      return css`
-        background-image: url("/images/templates/find-partners/partners/silver-partner.svg");
-      `;
-    }
-    if ($level === "Autorized") {
-      return css`
-        background-image: url("/images/templates/find-partners/partners/autorized.svg");
-      `;
-    }
-  }}
+  background-image: ${({ $icon }) => `url(${$icon})`};
 
   @media ${device.tabletS} {
     left: auto;
