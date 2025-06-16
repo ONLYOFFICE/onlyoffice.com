@@ -1,45 +1,29 @@
 {
-  "PageTitle": "Überprüfen Sie die Hauptfunktionen von ONLYOFFICE Docs | ONLYOFFICE",
-  "PageDescription": "Bearbeiten Sie docx, xlsx, pptx Dateien, sehen Sie sich PDFs an, erstellen Sie ausfüllbare Formulare, arbeiten Sie in Echtzeit zusammen, um die Hauptfunktionen von ONLYOFFICE zu prüfen. Kein Download oder Registrierung erforderlich.",
+  "PageTitle": "Entdecken Sie die Hauptfunktionen von ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Bearbeiten Sie DOCX-, XLSX- und PPTX-Dateien, lesen Sie PDF, erstellen Sie ausfüllbare Formulare, arbeiten Sie in Echtzeit zusammen, um die Hauptfunktionen von ONLYOFFICE zu überprüfen. Keine Downloads oder Registrierung erforderlich.",
 
-  "HeroHeadingSeeIt": "In Aktion sehen",
-  "HeroTextCurious": "Neugierig, wie die Oberfläche aussieht und die Hauptfunktionen ohne Registrierung auszuprobieren?",
+  "HeroHeadingSeeIt": "Sehen Sie es in Aktion!",
+  "HeroTextCurious": "Sind Sie neugierig, wie die Benutzeroberfläche aussieht, und möchten die wichtigsten Funktionen ohne Registrierung ausprobieren?",
 
   "ActionsEditDocx": "DOCX bearbeiten",
-  "ActionsExampleDocumentTitleDocx": "Beispieldokument Titel.docx",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
   "ActionsEditXlsx": "XLSX bearbeiten",
-  "ActionsExampleDocumentTitleXlsx": "Beispieldokument Titel.xlsx",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
   "ActionsEditPptx": "PPTX bearbeiten",
-  "ActionsExampleDocumentTitlePptx": "Beispieldokument Titel.pptx",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
   "ActionsEditPdf": "PDF bearbeiten",
-  "ActionsExampleDocumentTitlePdf": "Beispieldokument Titel.pdf",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
   "ActionsCreateForm": "Formular erstellen",
   "ActionsFillInPdfForm": "PDF-Formular ausfüllen",
   "ActionsCollaborate": "Zusammenarbeiten",
 
   "ActionsDemoPreview": "Demo-Vorschau",
-  "ActionsDemoModalHeadingOpen": "DOCX zum Bearbeiten öffnen",
-  "ActionsDemoModalButtonClose": "Schließen",
-
-  "GetStartedHeading": "Starten Sie und wählen Sie, wo Sie arbeiten möchten",
-
-  "GetStartedItemTitleInOnlyOffice": "In ONLYOFFICE DocSpace",
-  "GetStartedItemTextCreate": "Erstellen Sie Räume in Ihrem sicheren DocSpace, laden Sie Personen ein, sehen Sie sich alle Arten von Dokumenten an, bearbeiten und arbeiten Sie gemeinsam daran – von jedem Desktop- oder Mobilgerät aus.",
-  "GetStartedItemLinkStart": "Mit Ihrem kostenlosen Konto starten",
-
-  "GetStartedItemTitleYouUse": "Auf der Plattform, die Sie nutzen",
-  "GetStartedItemTextConnect": "Verbinden Sie Docs, um Dokumente direkt aus Ihrer App zu bearbeiten. <0>Über 40 fertige Integrationen</0>: Box, Moodle, Nextcloud, Odoo, Wordpress usw.",
-  "GetStartedItemLink": "Docs jetzt erhalten",
-
-  "GetStartedItemTitleYouBuild": "Auf der Plattform, die Sie erstellen",
-  "GetStartedItemTextIntegrate": "Integrieren Sie Docs in Ihren Dienst, um Ihren Kunden leistungsstarke Funktionen zum Bearbeiten und Erstellen von Dokumenten unter Ihrer Marke anzubieten.",
-  "GetStartedItemLinkLearn": "Mehr erfahren",
-
-  "GetStartedItemTitleYourPc": "Von Ihrem PC",
-  "GetStartedItemTextEdit": "Bearbeiten Sie Dokumente offline mit kostenlosen Office-Apps für Windows, Linux und macOS.",
-  "GetStartedItemLinkDownload": "Jetzt herunterladen",
-
-  "GetStartedItemTitleMobile": "Von Ihren Mobilgeräten",
-  "GetStartedItemTextWork": "Arbeiten Sie unterwegs an Dokumenten mit kostenlosen Apps für iOS- und Android-Geräte.",
-  "GetStartedItemLinkInstall": "Jetzt installieren"
+  "ActionsDemoModalHeadingOpenDocx": "Öffnen Sie DOCX zur Bearbeitung",
+  "ActionsDemoModalHeadingOpenXlsx": "Öffnen Sie XLSX zur Bearbeitung",
+  "ActionsDemoModalHeadingOpenPptx": "Öffnen Sie PPTX zur Bearbeitung",
+  "ActionsDemoModalHeadingOpenPdf": "PDF bearbeiten",
+  "ActionsDemoModalHeadingOpenCreateForm": "Formular erstellen",
+  "ActionsDemoModalHeadingOpenFill": "PDF-Formular ausfüllen",
+  "ActionsDemoModalHeadingOpenCollaborate": "Zusammenarbeiten",
+  "ActionsDemoModalButtonClose": "Schließen"
 }
