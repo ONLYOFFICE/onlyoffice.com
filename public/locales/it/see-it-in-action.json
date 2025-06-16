@@ -1,45 +1,29 @@
 {
-  "PageTitle": "Verifica le funzionalità principali di ONLYOFFICE Docs | ONLYOFFICE",
-  "PageDescription": "Modifica file docx, xlsx, pptx, visualizza PDF, crea moduli compilabili, collabora in tempo reale per verificare le funzionalità principali di ONLYOFFICE. Nessun download o registrazione richiesta.",
+  "PageTitle": "Esplora le funzionalità principali di ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Modifica file docx, xlsx, pptx, visualizza PDF, crea moduli compilabili, collabora in tempo reale per esplorare le caratteristiche principali di ONLYOFFICE. Nessun download o registrazione necessari.",
 
-  "HeroHeadingSeeIt": "Guardalo in azione",
-  "HeroTextCurious": "Curioso di sapere com'è l'interfaccia e provare le funzionalità principali senza registrazione?",
+  "HeroHeadingSeeIt": "Vedilo in azione!",
+  "HeroTextCurious": "Curioso di sapere come si presenta l'interfaccia e provare le funzionalità principali senza registrazione?",
 
-  "ActionsEditDocx": "Modifica DOCX",
-  "ActionsExampleDocumentTitleDocx": "Esempio titolo documento.docx",
-  "ActionsEditXlsx": "Modifica XLSX",
-  "ActionsExampleDocumentTitleXlsx": "Esempio titolo documento.xlsx",
-  "ActionsEditPptx": "Modifica PPTX",
-  "ActionsExampleDocumentTitlePptx": "Esempio titolo documento.pptx",
+  "ActionsEditDocx": "Edita DOCX",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
+  "ActionsEditXlsx": "Edita XLSX",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
+  "ActionsEditPptx": "Edita PPTX",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
   "ActionsEditPdf": "Modifica PDF",
-  "ActionsExampleDocumentTitlePdf": "Esempio titolo documento.pdf",
-  "ActionsCreateForm": "Crea modulo",
-  "ActionsFillInPdfForm": "Compila modulo PDF",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
+  "ActionsCreateForm": "Crea un modulo",
+  "ActionsFillInPdfForm": "Riempire modulo PDF",
   "ActionsCollaborate": "Collabora",
 
-  "ActionsDemoPreview": "Anteprima demo",
-  "ActionsDemoModalHeadingOpen": "Apri DOCX per la modifica",
-  "ActionsDemoModalButtonClose": "Chiudi",
-
-  "GetStartedHeading": "Inizia e scegli dove lavorare",
-
-  "GetStartedItemTitleInOnlyOffice": "In ONLYOFFICE DocSpace",
-  "GetStartedItemTextCreate": "Crea stanze all'interno del tuo DocSpace sicuro, invita persone, visualizza, modifica e collabora su ogni tipo di documento da qualsiasi dispositivo desktop o mobile.",
-  "GetStartedItemLinkStart": "Inizia con il tuo account gratuito",
-
-  "GetStartedItemTitleYouUse": "Sulla piattaforma che utilizzi",
-  "GetStartedItemTextConnect": "Connetti Docs per modificare i documenti direttamente dalla tua app. <0>Oltre 40 integrazioni pronte</0>: Box, Moodle, Nextcloud, Odoo, Wordpress, ecc.",
-  "GetStartedItemLink": "Ottieni Docs ora",
-
-  "GetStartedItemTitleYouBuild": "Sulla piattaforma che costruisci",
-  "GetStartedItemTextIntegrate": "Integra Docs nel tuo servizio per fornire potenti funzionalità di modifica e creazione di documenti ai tuoi clienti con il tuo marchio.",
-  "GetStartedItemLinkLearn": "Scopri di più",
-
-  "GetStartedItemTitleYourPc": "Dal tuo PC",
-  "GetStartedItemTextEdit": "Modifica i documenti offline con le app gratuite per ufficio per Windows, Linux e macOS.",
-  "GetStartedItemLinkDownload": "Scarica ora",
-
-  "GetStartedItemTitleMobile": "Dai tuoi dispositivi mobili",
-  "GetStartedItemTextWork": "Lavora sui documenti in movimento con le app gratuite per dispositivi iOS e Android.",
-  "GetStartedItemLinkInstall": "Installa ora"
+  "ActionsDemoPreview": "Anteprima Demo",
+  "ActionsDemoModalHeadingOpenDocx": "Apri DOCX per editing",
+  "ActionsDemoModalHeadingOpenXlsx": "Apri XLSX per editing",
+  "ActionsDemoModalHeadingOpenPptx": "Apri PPTX per editing",
+  "ActionsDemoModalHeadingOpenPdf": "Modifica PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Crea un modulo",
+  "ActionsDemoModalHeadingOpenFill": "Riempire modulo PDF",
+  "ActionsDemoModalHeadingOpenCollaborate": "Collabora",
+  "ActionsDemoModalButtonClose": "Chiudi"
 }
