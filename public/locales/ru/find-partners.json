@@ -1,21 +1,25 @@
 {
   "PageTitle": "Партнеры ONLYOFFICE по всему миру | ONLYOFFICE",
   "PageTitleOG": "Партнеры по всему миру",
-  "PageDescription": "Найдите партнера ONLYOFFICE в вашей стране, чтобы получить самые инновационные офисные приложения.",
+  "PageDescription": "Найдите партнера ONLYOFFICE в вашей стране, чтобы получить инновационные офисные приложения.",
 
   "HeroHeadingOnlyOffice": "Партнеры ONLYOFFICE",
-  "HeroTextOnlyOffice": "ONLYOFFICE продолжает налаживать связи с компаниями и частными лицами по всему миру, чтобы предоставлять самые инновационные офисные приложения, адаптированные к любым рабочим потребностям и бизнес-среде.",
+  "HeroTextOnlyOffice": "ONLYOFFICE продолжает расширять границы и делать самые инновационные офисные приложения доступными для пользователей по всему миру.",
   "HeroButtonBecome": "Стать партнером",
 
   "PartnersAll": "Все",
   "PartnersAllCountries": "Все страны",
   "PartnersSelectCountry": "Выбрать страну",
-  "PartnersVisitSite": "Посетить сайт",
-  "PartnersSendEmail": "Отправить письмо",
+  "PartnersVisitSite": "Перейти на домашний сайт",
+  "PartnersSendEmail": "Отправить письмо по электронной почте",
 
-  "ShowMoreBtnText": "Показать еще",
+  "PartnersLevelGold": "Золотой партнер",
+  "PartnersLevelSilver": "Серебряный партнер",
+  "PartnersLevelAutorized": "Autorized",
+
+  "ShowMoreBtnText": "Показать ещё",
   "ShowLessBtnText": "Показать меньше",
 
-  "JoinHeading": "Присоединяйтесь к партнерской сети <0>ONLYOFFICE</0> сегодня!",
+  "JoinHeading": "Присоединяйтесь к партнерской сети <0>ONLYOFFICE</0>!",
   "JoinButton": "Отправить запрос"
 }
