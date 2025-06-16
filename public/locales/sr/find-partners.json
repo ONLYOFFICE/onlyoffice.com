@@ -3,19 +3,23 @@
   "PageTitleOG": "Partneri širom sveta",
   "PageDescription": "Pronađite ONLYOFFICE partnera u svojoj zemlji da biste dobili najinovativnije kancelarijske aplikacije.",
 
-  "HeroHeadingOnlyOffice": "ONLYOFFICE partneri",
-  "HeroTextOnlyOffice": "ONLYOFFICE nastavlja da se obraća kompanijama i pojedincima širom sveta kako bi doneo najinovativnije kancelarijske aplikacije prilagođene svim radnim potrebama i poslovnom okruženju.",
+  "HeroHeadingOnlyOffice": "ONLYOFFICE partneri širom sveta",
+  "HeroTextOnlyOffice": "ONLYOFFICE nastavlja da dopire do kompanija i pojedinaca širom sveta kako bi doneo najinovativnije kancelarijske aplikacije prilagođene svim radnim potrebama i poslovnom okruženju.",
   "HeroButtonBecome": "Postanite partner",
 
-  "PartnersAll": "Sve",
-  "PartnersAllCountries": "Sve zemlje",
-  "PartnersSelectCountry": "Izaberite zemlju",
-  "PartnersVisitSite": "Posetite veb-sajt",
-  "PartnersSendEmail": "Pošaljite e-poruku",
+  "PartnersAll": "Svi",
+  "PartnersAllCountries": "All countries",
+  "PartnersSelectCountry": "Izaberi zemlju",
+  "PartnersVisitSite": "Visit home site",
+  "PartnersSendEmail": "Send email",
+
+  "PartnersLevelGold": "Gold partner",
+  "PartnersLevelSilver": "Silver partner",
+  "PartnersLevelAutorized": "Autorized",
 
   "ShowMoreBtnText": "Prikaži više",
   "ShowLessBtnText": "Prikaži manje",
 
-  "JoinHeading": "Pridružite se partnerskoj mreži <0>ONLYOFFICE</0> već danas!",
+  "JoinHeading": "Pridružite se mreži partnera <0>ONLYOFFICE</0> već danas!",
   "JoinButton": "Pošaljite zahtev"
 }
