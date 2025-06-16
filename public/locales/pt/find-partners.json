@@ -1,21 +1,25 @@
 {
   "PageTitle": "Parceiros ONLYOFFICE em todo o mundo | ONLYOFFICE",
   "PageTitleOG": "Parceiros em todo o mundo",
-  "PageDescription": "Encontre um parceiro ONLYOFFICE em seu país para obter os aplicativos de escritório mais inovadores.",
+  "PageDescription": "Encontre um parceiro ONLYOFFICE no seu país para obter os aplicativos office mais inovadores.",
 
   "HeroHeadingOnlyOffice": "Parceiros ONLYOFFICE",
-  "HeroTextOnlyOffice": "A ONLYOFFICE continua a se expandir para empresas e indivíduos em todo o mundo para trazer os aplicativos de escritório mais inovadores, adaptados a quaisquer necessidades de trabalho e ambiente de negócios.",
+  "HeroTextOnlyOffice": "O ONLYOFFICE mantém contato com empresas e indivíduos em todo o mundo para oferecer os aplicativos office mais inovadores, adaptados a qualquer necessidade de trabalho e ambiente de negócios.",
   "HeroButtonBecome": "Torne-se um parceiro",
 
-  "PartnersAll": "Todos",
+  "PartnersAll": "Tudo",
   "PartnersAllCountries": "Todos os países",
-  "PartnersSelectCountry": "Selecionar país",
-  "PartnersVisitSite": "Visitar site",
+  "PartnersSelectCountry": "Selecionar o país",
+  "PartnersVisitSite": "Visitar a página inicial",
   "PartnersSendEmail": "Enviar e-mail",
 
-  "ShowMoreBtnText": "Mostrar mais",
-  "ShowLessBtnText": "Mostrar menos",
+  "PartnersLevelGold": "Parceiro Ouro",
+  "PartnersLevelSilver": "Parceiro Prata",
+  "PartnersLevelAutorized": "Autorized",
 
-  "JoinHeading": "Junte-se à rede de parceiros <0>ONLYOFFICE</0> hoje mesmo!",
+  "ShowMoreBtnText": "Exibir mais",
+  "ShowLessBtnText": "Exibir menos",
+
+  "JoinHeading": "Junte-se à rede de parceiros do <0>ONLYOFFICE</0> hoje mesmo!",
   "JoinButton": "Enviar solicitação"
 }
