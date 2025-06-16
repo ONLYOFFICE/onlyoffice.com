@@ -1,32 +1,32 @@
 {
   "PageTitle": "Клиенты | ONLYOFFICE",
   "PageTitleOG": "Клиенты",
-  "PageDescription": "Прочитайте истории успеха клиентов ONLYOFFICE по всему миру.",
+  "PageDescription": "Читайте истории успеха от пользователей ONLYOFFICE по всему миру.",
 
-  "HeroHeadingOnlyOffice": "<0>ONLYOFFICE</0> помогает командам любого размера и типа безопасно совместно работать над документами онлайн",
+  "HeroHeadingOnlyOffice": "<0>ONLYOFFICE</0> помогает компаниям любого размера вести безопасную совместную работу над документами онлайн",
   "HeroButtonTellYour": "Расскажите свою историю",
-  "HeroButtonStartYour": "Начните свою историю здесь",
+  "HeroButtonStartYour": "Начните свою историю сейчас",
   "HeroOr": "или",
 
-  "TrustedHeadingTrustedAndLove": "Доверяют и любят более <0>10 000 000</0> пользователей по всему миру",
+  "TrustedHeadingTrustedAndLove": "Нам доверяют более <0>10 миллионов </0> пользователей по всему миру",
   "TrustedButtonShowMore": "Показать больше",
   "TrustedButtonShowLess": "Показать меньше",
 
   "TabsInfoTitleInternational": "Международные организации",
   "TabsInfoTitleTechnology": "Технологии",
   "TabsInfoTitleEducation": "Образование",
-  "TabsInfoTitleScience": "Наука и исследования",
-  "TabsInfoTitleGovernment": "Государство",
+  "TabsInfoTitleScience": "Наука",
+  "TabsInfoTitleGovernment": "Госучреждения",
   "TabsInfoTitleFinance": "Финансы",
   "TabsInfoTitleManufactural": "Производство",
   "TabsInfoTitleBusiness": "Бизнес",
-  "TabsInfoTitleNPO": "Некоммерческие организации",
+  "TabsInfoTitleNPO": "НКО",
   "TabsInfoTitleTelecoms": "Телекоммуникации",
 
-  "IntegrationHowOnlyofficeAndOwnCloud": "Как интеграция ONLYOFFICE и ownCloud в Sciebo помогает упростить рабочий процесс исследований в Мюнстерском университете",
-  "IntegrationReadBlog": "Читать блог",
+  "IntegrationHowOnlyofficeAndOwnCloud": "Как интеграция ONLYOFFICE с ownCloud в sciebo облегчила научную работу в Мюнстерском университете",
+  "IntegrationReadBlog": "Читать запись в блоге",
 
   "DownloadPDF": "Скачать PDF",
 
-  "StartYourStory": "Начните свою историю"
+  "StartYourStory": "Начните свою историю сейчас"
 }
