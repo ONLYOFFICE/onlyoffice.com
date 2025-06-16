@@ -1,21 +1,25 @@
 {
-  "PageTitle": "ONLYOFFICEのグローバルパートナー | ONLYOFFICE",
-  "PageTitleOG": "グローバルパートナー",
-  "PageDescription": "お住まいの国のONLYOFFICEパートナーを見つけて、最も革新的なオフィスアプリを入手しましょう。",
+  "PageTitle": "世界中からの ONLYOFFICE パートナー | ONLYOFFICE",
+  "PageTitleOG": "世界中からの パートナー",
+  "PageDescription": "ONLYOFFICE パートナーを自社で見つけて、一番画期的なオフィス アプリを入手しましょう。",
 
-  "HeroHeadingOnlyOffice": "ONLYOFFICEパートナー",
-  "HeroTextOnlyOffice": "ONLYOFFICEは、あらゆる仕事のニーズやビジネス環境に適応した、最も革新的なオフィスアプリを提供するために、世界中の企業や個人にリーチし続けています。",
+  "HeroHeadingOnlyOffice": "ONLYOFFICE パートナー",
+  "HeroTextOnlyOffice": "ONLYOFFICE では、世界中の企業や個人に呼びかけて、どんな業務要綱、ビジネス環境でも使える一番画期的なオフィス アプリを作り上げようとしています。",
   "HeroButtonBecome": "パートナーになる",
 
   "PartnersAll": "すべて",
-  "PartnersAllCountries": "すべての国",
-  "PartnersSelectCountry": "国を選択",
-  "PartnersVisitSite": "ホームサイトにアクセス",
-  "PartnersSendEmail": "メールを送信",
+  "PartnersAllCountries": "全ての国",
+  "PartnersSelectCountry": "国を選択する",
+  "PartnersVisitSite": "ホームページへ移動",
+  "PartnersSendEmail": "メールを送信する",
 
-  "ShowMoreBtnText": "もっと見る",
-  "ShowLessBtnText": "一部を表示",
+  "PartnersLevelGold": "ゴールドパートナー",
+  "PartnersLevelSilver": "シルバーパートナー",
+  "PartnersLevelAutorized": "Autorized",
 
-  "JoinHeading": "今すぐ<0>ONLYOFFICE</0>パートナーネットワークに参加しましょう！",
+  "ShowMoreBtnText": "もっと表示",
+  "ShowLessBtnText": "表示を減らす",
+
+  "JoinHeading": "今すぐ <0>ONLYOFFICE</0>パートナー ネットワークに参加してください!",
   "JoinButton": "リクエストを送信"
 }
