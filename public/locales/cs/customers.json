@@ -1,32 +1,32 @@
 {
   "PageTitle": "Zákazníci | ONLYOFFICE",
   "PageTitleOG": "Zákazníci",
-  "PageDescription": "Přečtěte si úspěšné příběhy zákazníků ONLYOFFICE z celého světa.",
+  "PageDescription": "ONLYOFFICE zákazníky po celém světě.",
 
-  "HeroHeadingOnlyOffice": "<0>ONLYOFFICE</0> pomáhá týmům všech velikostí a zaměření bezpečně spolupracovat na dokumentech online",
-  "HeroButtonTellYour": "Povězte svůj příběh",
-  "HeroButtonStartYour": "Začněte svůj příběh zde",
+  "HeroHeadingOnlyOffice": "<0>ONLYOFFICE</0> pomáhá týmům všech velikostí a složení bezpečně spolupracovat na online dokumentech",
+  "HeroButtonTellYour": "Vyprávějte svůj příběh",
+  "HeroButtonStartYour": "Zahajte svůj příběh zde",
   "HeroOr": "nebo",
 
-  "TrustedHeadingTrustedAndLove": "Důvěřuje mu a oblíbilo si ho více než <0>10 000 000</0> uživatelů z celého světa",
+  "TrustedHeadingTrustedAndLove": "Důvěřuje mu více než <0>10 000 000</0> uživatelů po celém světě",
   "TrustedButtonShowMore": "Zobrazit více",
   "TrustedButtonShowLess": "Zobrazit méně",
 
   "TabsInfoTitleInternational": "Mezinárodní organizace",
   "TabsInfoTitleTechnology": "Technologie",
-  "TabsInfoTitleEducation": "Vzdělávání",
+  "TabsInfoTitleEducation": "Vzdělání",
   "TabsInfoTitleScience": "Věda a výzkum",
-  "TabsInfoTitleGovernment": "Státní správa",
+  "TabsInfoTitleGovernment": "Státní úřady",
   "TabsInfoTitleFinance": "Finance",
   "TabsInfoTitleManufactural": "Výroba",
-  "TabsInfoTitleBusiness": "Firmy",
-  "TabsInfoTitleNPO": "Neziskové organizace",
+  "TabsInfoTitleBusiness": "Byznys",
+  "TabsInfoTitleNPO": "Neziskový sektor",
   "TabsInfoTitleTelecoms": "Telekomunikace",
 
-  "IntegrationHowOnlyofficeAndOwnCloud": "Jak integrace ONLYOFFICE a ownCloud ve Sciebo pomáhá usnadnit výzkumný pracovní postup na univerzitě v Münsteru",
-  "IntegrationReadBlog": "Číst blog",
+  "IntegrationHowOnlyofficeAndOwnCloud": "Jak integrace ONLYOFFICE a ownCloud v univerzitním zabezpečeném systému pro sdílení souborů sciebo pomáhá usnadnit pracovní tok ve výzkumu na Münsterské univerzitě",
+  "IntegrationReadBlog": "Přečtěte si blog",
 
   "DownloadPDF": "Stáhnout PDF",
 
-  "StartYourStory": "Začněte svůj příběh"
+  "StartYourStory": "Zahajte svůj příběh zde"
 }
