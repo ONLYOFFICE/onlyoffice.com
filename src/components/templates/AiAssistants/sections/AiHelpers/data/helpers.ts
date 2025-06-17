@@ -114,4 +114,56 @@ export const helpers: IFeatureSwitcher[] = [
       },
     ],
   },
+  {
+    heading: "WorkWithVisuals",
+    items: [
+      {
+        label: "MakeUseOfOCR",
+        image: {
+          url: "MakeUseOfOCRImg",
+          url2x: "MakeUseOfOCRImg2x",
+        },
+      },
+      {
+        label: "ExtractText",
+        image: {
+          url: "ExtractTextImg",
+          url2x: "ExtractTextImg2x",
+        },
+      },
+      {
+        label: "DigitizeImages",
+        image: {
+          url: "DigitizeImagesImg",
+          url2x: "DigitizeImagesImg2x",
+        },
+      },
+    ],
+  },
+  {
+    heading: "CalculateWithAI",
+    items: [
+      {
+        label: "GetTheRightFunction",
+        image: {
+          url: "GetTheRightFunctionImg",
+          url2x: "GetTheRightFunctionImg2x",
+        },
+      },
+      {
+        label: "CreateNewMacros",
+        image: {
+          url: "CreateNewMacrosImg",
+          url2x: "CreateNewMacrosImg2x",
+        },
+      },
+      {
+        label: "ConvertMacros",
+        image: {
+          url: "ConvertMacrosImg",
+          url2x: "ConvertMacrosImg2x",
+        },
+      },
+    ],
+  },
 ];

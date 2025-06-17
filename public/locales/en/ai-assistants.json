@@ -34,7 +34,7 @@
   "TranslateImg2x": "/images/templates/ai-assistants/ai-helpers/en/wwt_7@2x.png",
 
   "GenerateElements": "Generate elements for docs, sheets, slides",
-  "GenerateImages": "Generate images",
+  "GenerateImages": "Generate images from text",
   "GenerateImagesImg": "/images/templates/ai-assistants/ai-helpers/en/gen_el_1.png",
   "GenerateImagesImg2x": "/images/templates/ai-assistants/ai-helpers/en/gen_el_1@2x.png",
   "GetCode": "Get code built",
@@ -58,11 +58,33 @@
   "EntertainImg": "/images/templates/ai-assistants/ai-helpers/en/cwa_4.png",
   "EntertainImg2x": "/images/templates/ai-assistants/ai-helpers/en/cwa_4@2x.png",
 
+  "WorkWithVisuals": "Work with visuals",
+  "MakeUseOfOCR": "Make use of OCR",
+  "MakeUseOfOCRImg": "/images/templates/ai-assistants/ai-helpers/en/mwv_1.png",
+  "MakeUseOfOCRImg2x": "/images/templates/ai-assistants/ai-helpers/en/mwv_1@2x.png",
+  "ExtractText": "Extract text from scanned PDFs",
+  "ExtractTextImg": "/images/templates/ai-assistants/ai-helpers/en/mwv_2.png",
+  "ExtractTextImg2x": "/images/templates/ai-assistants/ai-helpers/en/mwv_2@2x.png",
+  "DigitizeImages": "Digitize images with embedded text",
+  "DigitizeImagesImg": "/images/templates/ai-assistants/ai-helpers/en/mwv_3.png",
+  "DigitizeImagesImg2x": "/images/templates/ai-assistants/ai-helpers/en/mwv_3@2x.png",
+
+  "CalculateWithAI": "Calculate with AI",
+  "GetTheRightFunction": "Get the right function in seconds",
+  "GetTheRightFunctionImg": "/images/templates/ai-assistants/ai-helpers/en/calwa_1.png",
+  "GetTheRightFunctionImg2x": "/images/templates/ai-assistants/ai-helpers/en/calwa_1@2x.png",
+  "CreateNewMacros": "Create new macros",
+  "CreateNewMacrosImg": "/images/templates/ai-assistants/ai-helpers/en/calwa_2.png",
+  "CreateNewMacrosImg2x": "/images/templates/ai-assistants/ai-helpers/en/calwa_2@2x.png",
+  "ConvertMacros": "Convert VBA macros",
+  "ConvertMacrosImg": "/images/templates/ai-assistants/ai-helpers/en/calwa_3.png",
+  "ConvertMacrosImg2x": "/images/templates/ai-assistants/ai-helpers/en/calwa_3@2x.png",
+
   "TryInCloud": "TRY IN CLOUD",
   "TryInDesktop": "TRY IN DESKTOP",
 
   "ConnectAnyAI": "Connect any AI assistant",
-  "ConnectAnyAIText": "Connect any AI model, including a local one. Select a pre-installed provider from the list (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama) or connect your own.",
+  "ConnectAnyAIText": "Connect any AI model, including a local one. Select a pre-installed provider from the list (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI) or connect your own.",
 
   "DifferentAI": "Different AI models – for different tasks",
   "AdjustAI": "Adjust the AI usage as you need it. Apply different AI models to perform various actions such as chatbot requests, translation, OCR, etc.",
@@ -78,12 +100,12 @@
 
   "LearnMoreHeading": "Learn more about using AI in ONLYOFFICE",
   "Blog": "Blog",
-  "GenerateEssay": "Generate an essay with ChatGPT using a macro",
-  "GenerateEssayLink": "https://www.onlyoffice.com/blog/2023/02/chatgpt-essay",
-  "MakeUseOf": "Make use of the ZhiPu Copilot plugin",
-  "MakeUseOfLink": "https://www.onlyoffice.com/blog/2024/12/meet-the-enhanced-version-of-the-zhipu-plugin",
-  "ExploreAI": "Explore the updated AI functionality",
-  "ExploreAILink": "https://www.onlyoffice.com/blog/2024/12/new-ai-onlyoffice",
+  "FAQ": "FAQ: how to use AI in ONLYOFFICE",
+  "FAQLink": "https://www.onlyoffice.com/blog/2025/03/faq-how-to-use-ai-in-onlyoffice",
+  "TopAITools": "Top AI tools for Office suites",
+  "TopAIToolsLink": "https://www.onlyoffice.com/blog/2025/01/ai-tools-for-office-suites",
+  "HowToAdd": "How to add a custom provider to the AI plugin",
+  "HowToAddLink": "https://www.onlyoffice.com/blog/2025/03/how-to-add-a-custom-provider-to-the-onlyoffice-ai-plugin",
 
   "LearnMore": "Learn more"
 }

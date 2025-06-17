@@ -4,10 +4,10 @@ export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/ai-assistants/learn-more/ai_blog_1.png",
     heading: { label: "Blog" },
-    text: "GenerateEssay",
+    text: "FAQ",
     links: [
       {
-        href: "GenerateEssayLink",
+        href: "FAQLink",
         label: "LearnMore",
       },
     ],
@@ -15,10 +15,10 @@ export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/ai-assistants/learn-more/ai_blog_2.png",
     heading: { label: "Blog" },
-    text: "MakeUseOf",
+    text: "TopAITools",
     links: [
       {
-        href: "MakeUseOfLink",
+        href: "TopAIToolsLink",
         label: "LearnMore",
       },
     ],
@@ -26,10 +26,10 @@ export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/ai-assistants/learn-more/ai_blog_3.png",
     heading: { label: "Blog" },
-    text: "ExploreAI",
+    text: "HowToAdd",
     links: [
       {
-        href: "ExploreAILink",
+        href: "HowToAddLink",
         label: "LearnMore",
       },
     ],
