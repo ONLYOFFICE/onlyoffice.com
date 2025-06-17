@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Ve los seminarios web de ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "Regístrese en nuestros seminarios web para aprender a trabajar de una manera eficaz con ONLYOFFICE",
+
+  "HeroHeadingWatch": "Ve los <0>webinars</0> de ONLYOFFICE",
+  "HeroTextTune": "Conéctate a nuestros webinars en directo y aprende las mejores formas de trabajar con ONLYOFFICE",
+
+  "UpcomingHeading": "Próximos webinars en directo",
+
+  "UpcomingModalProduct": "Producto",
+  "UpcomingModalBy": "Por",
+  "UpcomingModalLanguage": "Idioma",
+  "UpcomingModalPlease": "Por favor, complete todos los campos con asteriscos (*). Recibirá un correo electrónico con el enlace al seminario web seleccionado.",
+  "UpcomingModalFullName": "Nombre completo",
+  "UpcomingModalCompanyName": "Nombre de empresa",
+  "UpcomingModalEmail": "Correo electrónico",
+  "UpcomingModalSendQuestions": "Envíe preguntas para el webinar",
+
+  "FullNameIsIncorrect": "Nombre completo no es correcto",
+  "FullNameIsEmpty": "El campo Nombre completo está vacío",
+
+  "CompanyNameIsEmpty": "El campo Nombre de empresa está vacío",
+
+  "EmailIsEmpty": "El campo Email está vacío.",
+  "EmailIsIncorrect": "Correo electrónico es incorrecta",
+
+  "AgreementByClicking": "Al hacer clic en Ver seminario web, comprendes y aceptas nuestro <0>SLA</0> y nuestra <1>Declaración de privacidad</1>.",
+
+  "ModalSendButton": "Ver seminario web",
+  "ModalCloseButton": "Cancelar",
+
+  "WatchHeading": "Ver bajo demanda",
+  "WatchText": "¿Te has perdido un webinar? Ve la grabación en cualquier momento.",
+  "WatchNow": "Ver ahora",
+
+  "en": "En inglés",
+  "ja": "En japonés",
+  "zh": "En chino",
+  "fr": "En francés",
+  "de": "En alemán",
+  "es": "En español",
+  "pt": "En portugués",
+  "it": "En italiano",
+  "cs": "En checo",
+  "nl": "En neerlandés",
+  "ru": "En ruso",
+  "sr": "En serbio",
+
+  "ContributeHeading": "Aporta tus ideas",
+  "ContributeTextHave": "¿Tienes una buena idea de qué webinar podríamos hacer?",
+  "ContributeTextGet": "Contacta con nuestro equipo escribiendo un correo electrónico a <0>press@onlyoffice.com</0> o envíanos un mensaje directo en <1>Twitter</1>."
+}
