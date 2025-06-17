@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Schauen Sie sich die Webinare von ONLYOFFICE an | ONLYOFFICE",
+  "PageDescription": "Registrieren Sie sich für unsere Webinare, um zu erfahren, wie Sie mit ONLYOFFICE effektiv arbeiten können",
+
+  "HeroHeadingWatch": "Schauen Sie sich die <0>Webinare</0> von ONLYOFFICE an",
+  "HeroTextTune": "Nehmen Sie an unseren Live-Webinaren teil und lernen Sie, wie Sie ONLYOFFICE optimal nutzen",
+
+  "UpcomingHeading": "Kommende Live-Webinare",
+
+  "UpcomingModalProduct": "Produkt",
+  "UpcomingModalBy": "Von",
+  "UpcomingModalLanguage": "Sprache",
+  "UpcomingModalPlease": "Bitte füllen Sie alle Felder aus, die mit einem Sternchen (*) gekennzeichent sind. Sie erhalten eine E-Mail mit dem Link zum ausgewählten Webinar.",
+  "UpcomingModalFullName": "Vollständiger Name",
+  "UpcomingModalCompanyName": "Unternehmen",
+  "UpcomingModalEmail": "E-Mail",
+  "UpcomingModalSendQuestions": "Senden Sie Fragen für das Webinar",
+
+  "FullNameIsIncorrect": "Vollständiger Name ist nicht korrekt",
+  "FullNameIsEmpty": "Das Feld Vollständiger Name ist leer",
+
+  "CompanyNameIsEmpty": "Das Feld Unternehmen ist leer",
+
+  "EmailIsEmpty": "E-Mail-Adresse ist leer",
+  "EmailIsIncorrect": "E-Mail-Adresse ist nicht korrekt",
+
+  "AgreementByClicking": "Indem Sie auf Webinar ansehen clicken, stimmen Sie unserem <0>SLA</0> und <1>Datenschutzerklärung</1> zu.",
+
+  "ModalSendButton": "Webinar ansehen",
+  "ModalCloseButton": "Abbrechen",
+
+  "WatchHeading": "On-Demand ansehen",
+  "WatchText": "Webinar verpasst? Schauen Sie sich den Mitschnitt an, wann immer Sie Zeit und Lust haben.",
+  "WatchNow": "Jetzt ansehen",
+
+  "en": "Auf Englisch",
+  "ja": "Auf Japanisch",
+  "zh": "Auf Chinesisch",
+  "fr": "Auf Französisch",
+  "de": "Auf Deutsch",
+  "es": "Auf Spanisch",
+  "pt": "Auf Portugiesisch",
+  "it": "Auf Italienisch",
+  "cs": "Auf Tschechisch",
+  "nl": "Auf Niederländisch",
+  "ru": "Auf Russisch",
+  "sr": "Auf Serbisch",
+
+  "ContributeHeading": "Bringen Sie Ihre Ideen ein",
+  "ContributeTextHave": "Haben Sie einen Vorschlag zu welchem Thema wir unbedingt ein Webinar halten sollten?",
+  "ContributeTextGet": "Wenden Sie sich an unser Team unter <0>press@onlyoffice.com</0> oder über eine Direktnachricht auf <1>Twitter</1>."
+}
