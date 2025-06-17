@@ -37,15 +37,19 @@
   "EnvironmentItemTitleAccessibility": "无障碍",
   "EnvironmentItemTextAccessibility": "让每个人的编辑过程都简单舒适：在颜色模式之间切换、使用需要的插件、隐藏或显示条形图和标尺等。",
   "EnvironmentItemLinkAccessibility": "了解更多 ONLYOFFICE 的无障碍性",
+  "EnvironmentItemImageAccessibility": "/images/templates/docspace-enterprise/environment/zh/Accessibility.svg",
 
   "EnvironmentItemTitleCustomization": "定制化",
   "EnvironmentItemTextCustomization": "选择不同的颜色样式，更换logo、标题和域名，打造更适合您的公司品牌。",
+  "EnvironmentItemImageCustomization": "/images/templates/docspace-enterprise/environment/zh/Customization.svg",
 
   "EnvironmentItemTitleAdministration": "管理",
   "EnvironmentItemTextAdministration": "使用直观的控制面板管理文档空间。连接外部服务实现日志记录、签名、存储等。",
+  "EnvironmentItemImageAdministration": "/images/templates/docspace-enterprise/environment/zh/Collaboration.svg",
 
   "EnvironmentItemTitleMultitenancy": "多租户",
   "EnvironmentItemTextMultitenancy": "为不同的分支机构创建多个空间并同时进行管理。",
+  "EnvironmentItemImageMultitenancy": "/images/templates/docspace-enterprise/environment/zh/Multitenancys.svg",
 
   "ScalableTitleForBusinesses": "可根据企业规模进行扩展",
   "ScalableOnlyofficeDocSpace": "ONLYOFFICE 协作空间企业版，与您的企业共同成长。",
