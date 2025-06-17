@@ -1,102 +1,102 @@
 {
-  "PageTitle": "ONLYOFFICE DocSpace pro vaši firmu | ONLYOFFICE",
-  "PageDescription": "Nasaďte ONLYOFFICE DocSpace on-premises a získejte plnou kontrolu nad svými daty",
+  "PageTitle": "ONLYOFFICE DocSpace for your enterprise | ONLYOFFICE",
+  "PageDescription": "Deploy ONLYOFFICE DocSpace on-premises and get a full control over your data",
 
   "OnlyOfficeDocSpaceEnterprise": "ONLYOFFICE DocSpace Enterprise",
-  "TheEnterpriseScaledSpace": "Prostor podnikové úrovně pro vaše firemní dokumenty",
-  "GetItNow": "Získat nyní",
-  "TryItFree": "Vyzkoušet zdarma v cloudu",
+  "TheEnterpriseScaledSpace": "Podnikový prostor pro vaše obchodní dokumenty",
+  "GetItNow": "Pořídit hned teď",
+  "TryItFree": "Vyzkoušejte si jej v cloudu",
 
   "HeroWorldIconAltText": "ikona světa",
 
-  "TrustedBy": "Důvěřují nám",
+  "TrustedBy": "Důvěřuje mu",
   "CountOfUsers": "15 000 000 uživatelů",
   "Worldwide": "po celém světě",
 
-  "FeaturesEfficient": "Efektivní spolupráce na dokumentech ve vaší firmě",
-  "FeaturesOnlyOffice": "ONLYOFFICE DocSpace Enterprise přichází s kompletní sadou nástrojů pro ukládání, sdílení a spolupráci na dokumentech",
-  "FeaturesLearn": "Zjistit více o funkcích DocSpace",
+  "FeaturesEfficient": "Efektivní spolupráce na dokumentech v rámci podniku",
+  "FeaturesOnlyOffice": "ONLYOFFICE DocSpace Enterprise nabízí kompletní sadu nástrojů pro ukládání, sdílení a spolupráci na dokumentech",
+  "FeaturesLearn": "Learn more about Docspace features",
 
-  "FeaturesItemTextWork": "Spolupracujte na smlouvách v místnostech pro spolupráci",
-  "FeaturesItemTextInvite": "Pozvěte partnery k prohlížení dokumentů bez registrace ve veřejných místnostech",
-  "FeaturesItemTextCollect": "Sbírejte odpovědi v místnostech pro vyplňování formulářů",
-  "FeaturesItemTextCreate": "Vytvářejte vlastní místnosti s flexibilním nastavením pro jakýkoli úkol a účel",
-  "FeaturesItemTextShare": "Sdílejte a zpřístupňujte firemní dokumentaci během procesu due diligence pomocí virtuálních datových místností",
+  "FeaturesItemTextWork": "Work together on contracts in Collaboration rooms",
+  "FeaturesItemTextInvite": "Invite partners to view documents without registration in Public rooms",
+  "FeaturesItemTextCollect": "Collect responses in Form filling rooms",
+  "FeaturesItemTextCreate": "Create Custom rooms with flexible settings for any task and purpose",
+  "FeaturesItemTextShare": "Share and disclose company documentation during the due diligence process using Virtual data rooms",
 
-  "ExperienceFlawless": "Bezchybný uživatelský zážitek na různých zařízeních",
-  "ExperienceWithONLYOFFICE": "S ONLYOFFICE DocSpace Enterprise můžete snadno spravovat, upravovat a spolupracovat na dokumentech na cestách pomocí jakéhokoli chytrého telefonu nebo tabletu přepnutím na mobilní webovou verzi.",
+  "ExperienceFlawless": "Bezchybné uživatelské prostředí na různých zařízeních",
+  "ExperienceWithONLYOFFICE": "S aplikací ONLYOFFICE DocSpace Enterprise můžete snadno spravovat, upravovat a spolupracovat na svých dokumentech na cestách pomocí jakéhokoli chytrého telefonu nebo tabletu přepnutím na mobilní webovou verzi.",
   "ExperienceFreeDesktopApps": "K dispozici jsou také bezplatné <0>desktopové aplikace</0> pro offline úpravy a nativní <1>mobilní aplikace</1> pro iOS a Android.",
 
   "EnvironmentEnterpriseReady": "Pracovní prostředí připravené pro podniky",
 
   "EnvironmentItemTitleSecurity": "Zabezpečení",
-  "EnvironmentItemTextSecurity": "Udržujte svá data v bezpečí na všech frontách: nastavení zabezpečení podnikové úrovně, soulad s oborovými standardy, prioritní přístup k opravám zabezpečení a stability.",
-  "EnvironmentItemLinkSecurity": "Zjistit více o zabezpečení ONLYOFFICE",
+  "EnvironmentItemTextSecurity": "Zajistěte bezpečnost svých dat na všech frontách: nastavení zabezpečení připravené pro podniky, soulad s oborovými standardy, přednostní přístup k opravám zabezpečení a stability.",
+  "EnvironmentItemLinkSecurity": "Další informace o zabezpečení ONLYOFFICE",
 
   "EnvironmentItemTitleAccessibility": "Přístupnost",
-  "EnvironmentItemTextAccessibility": "Udělejte proces úprav jednoduchým a pohodlným pro každého: přepínejte mezi dostupnými barevnými režimy, povolte potřebné doplňky, skryjte nebo zobrazte panely a pravítka atd.",
-  "EnvironmentItemLinkAccessibility": "Zjistit více o přístupnosti ONLYOFFICE",
+  "EnvironmentItemTextAccessibility": "Zjednodušte a zpříjemněte proces úprav všem: přepínejte mezi dostupnými barevnými režimy, povolte potřebné zásuvné moduly, skrývejte nebo zobrazujte pruhy a pravítka atd. {0}{1}Create multiple spaces for different branches and manage them all at once.",
+  "EnvironmentItemLinkAccessibility": "Další informace o dostupnosti ONLYOFFICE",
 
   "EnvironmentItemTitleCustomization": "Přizpůsobení",
-  "EnvironmentItemTextCustomization": "Aplikujte různé barevné styly, nahraďte loga, názvy a odkazy tak, aby odpovídaly vaší firemní značce.",
+  "EnvironmentItemTextCustomization": "Použijte různé barevné styly, nahraďte loga, nadpisy a odkazy tak, aby odpovídaly vaší firemní značce.",
 
   "EnvironmentItemTitleAdministration": "Správa",
-  "EnvironmentItemTextAdministration": "Spravujte svůj DocSpace pomocí intuitivního ovládacího panelu. Připojte externí služby pro protokolování, podepisování, úložiště atd.",
+  "EnvironmentItemTextAdministration": "Spravujte svůj docspace pomocí intuitivního ovládacího panelu. Připojte externí služby pro protokolování, podepisování, ukládání atd.",
 
   "EnvironmentItemTitleMultitenancy": "Multitenancy",
-  "EnvironmentItemTextMultitenancy": "Vytvořte více prostorů pro různé pobočky a spravujte je všechny najednou.",
+  "EnvironmentItemTextMultitenancy": "Create multiple spaces for different branches and manage them all at once.",
 
-  "ScalableTitleForBusinesses": "Škálovatelné pro firmy všech velikostí",
-  "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterprise roste s vaší společností. ",
-  "ScalableYouCanCustomize": "Počet uživatelů můžete kdykoli přizpůsobit tak rychle, jak se váš tým rozšiřuje. ",
-  "ScalableForLargeEnterprises": "Pro velké podniky je k dispozici podpora nasazení na více serverech. ",
+  "ScalableTitleForBusinesses": "Scalable for businesses of any size",
+  "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterprise is growing with your company.",
+  "ScalableYouCanCustomize": "You can customize the number of users anytime, as fast as your team is expanding.",
+  "ScalableForLargeEnterprises": "For large enterprises, support for multi-server deployment is available.",
   "ScalableImageAltText": "Škálovatelný hlavní obrázek",
 
-  "SupportTitleForEveryStep": "Podpora pro každý krok",
-  "SupportTextTheTeam": "Tým odborníků je zde, aby vám pomohl na každém kroku",
+  "SupportTitleForEveryStep": "Podpora na každém kroku",
+  "SupportTextTheTeam": "Tým odborníků vám pomůže na každém kroku.",
 
-  "SupportItemTitleFreeDemo": "Bezplatná ukázka",
-  "SupportItemTextWatch": "Podívejte se na ukázku hlavních funkcí a výhod DocSpace pro vaše podnikání.",
-  "SupportItemBtnRequest": "Požádat o ukázku",
+  "SupportItemTitleFreeDemo": "Free demo",
+  "SupportItemTextWatch": "Watch a demonstration of the main DocSpace features and benefits for your business.",
+  "SupportItemBtnRequest": "Request demo",
 
-  "SupportItemTitleTraining": "Školicí kurzy",
-  "SupportItemTextMaster": "Ovládněte ONLYOFFICE DocSpace pod vedením lektora. Pro podnikové uživatele jsou poskytovány slevy.",
-  "SupportItemBtnBook": "Objednat školení",
+  "SupportItemTitleTraining": "Training courses",
+  "SupportItemTextMaster": "Master ONLYOFFICE DocSpace under tutor’s control. Discounts for enterprise users are provided.",
+  "SupportItemBtnBook": "Book training",
 
-  "SupportItemTitleViaEmail": "Podpora e-mailem",
-  "SupportItemTextJustContact": "Stačí nás kontaktovat na <0>support@onlyoffice.com</0> – náš zkušený tým podpory vám pomůže vyřešit jakoukoli otázku nebo technický problém.",
+  "SupportItemTitleViaEmail": "Support via email",
+  "SupportItemTextJustContact": "Just contact us via <0>support@onlyoffice.com</0> – our experienced support team will help you solve any question or technicalissue.",
   "SupportItemBtnViaContactUs": "Kontaktujte nás",
 
-  "SupportItemTitlePreSale": "Máte dotaz před nákupem?",
-  "SupportItemTextContact": "Kontaktujte nás na <1>sales@onlyoffice.com</1> nebo si naplánujte čas, kdy vám náš tým zavolá.",
+  "SupportItemTitlePreSale": "Máte dotaz před prodejem?",
+  "SupportItemTextContact": "Kontaktujte nás na adrese <0>sales@onlyoffice.com</0> nebo si domluvte čas, kdy vám náš tým zavolá.",
   "SupportItemBtnPreSaleContactUs": "Kontaktujte nás",
 
-  "CostTitle": "<0>Cenově výhodné</0> podnikové řešení",
+  "CostTitle": "<0>Cost-efficient</0> enterprise solution",
 
-  "CostItemFree": "Bezplatná 30denní zkušební verze",
-  "CostItemLifetime": "Doživotní licence",
-  "CostItemYear": "1 rok aktualizací a podpory",
-  "CostItemUnlimited": "Neomezený počet místností a správců",
+  "CostItemFree": "Free 30-day trial",
+  "CostItemLifetime": "Lifetime license",
+  "CostItemYear": "1 year of updates and support",
+  "CostItemUnlimited": "Unlimited number of rooms and admins",
 
   "CostButtonPickYourPrice": "Vyberte si cenu",
 
-  "CostFooterIfYouRepresent": "Pokud zastupujete vzdělávací instituci nebo neziskovou organizaci, <0>kontaktujte náš prodejní tým</0> a získejte individuální slevu.",
-  "CostFooterTheFamilyPack": "K dispozici je také <1>Rodinný balíček</1> pro nekomerční použití.",
+  "CostFooterIfYouRepresent": "Pokud zastupujete vzdělávací instituci nebo neziskovou organizaci, <0>kontaktujte náš obchodní tým</0> a získejte individuální slevu.",
+  "CostFooterTheFamilyPack": "K dispozici je také balíček <1>Family Pack</1> pro nekomerční použití.",
 
   "GettingStarted": "Začít je snadné",
-  "GettingDeploy": "Nasaďte ONLYOFFICE DocSpace Enterprise pomocí jedné z dostupných možností.",
+  "GettingDeploy": "Nasazení aplikace ONLYOFFICE DocSpace Enterprise pomocí jedné z dostupných možností.",
 
   "GettingItemCloudTitle": "Cloud",
   "GettingItemCloudText": "Vyzkoušejte jako službu. Hostujeme, udržujeme a aktualizujeme DocSpace za vás.",
   "GettingItemCloudSubtitle": "Vytvořit nyní",
 
   "GettingItemLinuxTitle": "Linux",
-  "GettingItemLinuxText": "Hostujte na svém serveru Linux (balíčky Docker, deb nebo rpm)",
-  "GettingItemLinuxSubtitle": "Získat nyní",
+  "GettingItemLinuxText": "Hostování na serveru Linux (balíčky Docker, deb nebo rpm)",
+  "GettingItemLinuxSubtitle": "Pořídit hned teď",
 
   "GettingItemWindowsTitle": "Windows",
-  "GettingItemWindowsText": "Hostujte na svém serveru Windows (balíčky exe)",
-  "GettingItemWindowsSubtitle": "Získat nyní",
+  "GettingItemWindowsText": "Hostitel na serveru Windows (balíčky exe)",
+  "GettingItemWindowsSubtitle": "Pořídit hned teď",
 
-  "GettingFooterText": "Komunitní verze pro domácí použití je k dispozici ke stažení <0>zde</0>."
+  "GettingFooterText": "Ke stažení je k dispozici komunitní verze pro domácí použití <0>zde</0>."
 }
