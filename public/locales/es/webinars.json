@@ -15,6 +15,7 @@
   "UpcomingModalCompanyName": "Nombre de empresa",
   "UpcomingModalEmail": "Correo electrónico",
   "UpcomingModalSendQuestions": "Envíe preguntas para el webinar",
+  "UpcomingModalPlaceholderName": "Nombre Apellido",
 
   "FullNameIsIncorrect": "Nombre completo no es correcto",
   "FullNameIsEmpty": "El campo Nombre completo está vacío",

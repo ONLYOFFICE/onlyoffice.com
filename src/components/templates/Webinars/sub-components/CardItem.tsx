@@ -199,7 +199,7 @@ const CardItem = ({
                 <Input
                   label={t("UpcomingModalFullName")}
                   type="text"
-                  placeholder="First name Last name"
+                  placeholder={t("UpcomingModalPlaceholderName")}
                   name="fullName"
                   value={formData.fullName}
                   onChange={(event) => handleChangeInput(event)}
