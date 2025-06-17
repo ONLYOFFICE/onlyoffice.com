@@ -1,100 +1,100 @@
 {
-  "PageTitle": "企業向けONLYOFFICE DocSpace | ONLYOFFICE",
-  "PageDescription": "オンプレミスでONLYOFFICE DocSpaceを導入し、データを完全に管理しましょう",
+  "PageTitle": "ONLYOFFICE DocSpaceを御社に | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE DocSpaceをオンプレミスに導入し、データを完全にコントロールします。",
 
-  "OnlyOfficeDocSpaceEnterprise": "ONLYOFFICE DocSpace Enterprise",
-  "TheEnterpriseScaledSpace": "ビジネス文書のためのエンタープライズ規模のスペース",
+  "OnlyOfficeDocSpaceEnterprise": "ONLYOFFICE DocSpace エンタープライズ版",
+  "TheEnterpriseScaledSpace": "ビジネス文書のための企業規模のスペース",
   "GetItNow": "今すぐ入手",
-  "TryItFree": "クラウドで無料トライアル",
+  "TryItFree": "クラウドで無料お試し",
 
-  "TrustedBy": "信頼されています",
-  "CountOfUsers": "15,000,000ユーザー",
-  "Worldwide": "世界中で",
+  "TrustedBy": "世界中で",
+  "CountOfUsers": "1,500",
+  "Worldwide": "万人のユーザーに信頼されています",
 
-  "FeaturesEfficient": "企業内での効率的な文書コラボレーション",
-  "FeaturesOnlyOffice": "ONLYOFFICE DocSpace Enterpriseは、文書の保管、共有、コラボレーションのための完全なツールセットを提供します。",
-  "FeaturesLearn": "Docspaceの機能についてさらに詳しく",
+  "FeaturesEfficient": "社内外での効率的なドキュメントコラボレーション",
+  "FeaturesOnlyOffice": "ONLYOFFICE DocSpace Enterpriseは、ドキュメントの保存、共有、コラボレーションのためのツール一式を備えています",
+  "FeaturesLearn": "Docspaceの機能について詳しく見る",
 
-  "FeaturesItemTextWork": "コラボレーションルームで契約書を共同作業",
-  "FeaturesItemTextInvite": "パブリックルームで登録なしでパートナーを文書閲覧に招待",
-  "FeaturesItemTextCollect": "フォーム入力ルームで回答を収集",
-  "FeaturesItemTextCreate": "あらゆるタスクや目的に合わせて柔軟な設定が可能なカスタムルームを作成",
-  "FeaturesItemTextShare": "仮想データルームを使用して、デューデリジェンスプロセス中に会社の文書を共有・開示",
+  "FeaturesItemTextWork": "コラボレーションルーム",
+  "FeaturesItemTextInvite": "パブリックルームでパートナーを招待して登録なしでドキュメントを閲覧する",
+  "FeaturesItemTextCollect": "フォーム入力ルーム",
+  "FeaturesItemTextCreate": "あらゆるタスクや目的に合わせた柔軟な設定でカスタムルームを作成",
+  "FeaturesItemTextShare": "デューデリジェンスプロセス中に、バーチャルデータルームを使用して会社の書類を共有および開示する",
 
-  "ExperienceFlawless": "様々なデバイスで完璧なユーザー体験",
-  "ExperienceWithONLYOFFICE": "ONLYOFFICE DocSpace Enterpriseを使用すると、モバイルWeb版に切り替えることで、スマートフォンやタブレットからいつでもどこでも簡単にドキュメントを管理、編集、共同作業できます。",
-  "ExperienceFreeDesktopApps": "オフライン編集用の無料<0>デスクトップアプリ</0>と、iOSおよびAndroid用のネイティブ<1>モバイルアプリ</1>も利用可能です。",
+  "ExperienceFlawless": "様々なデバイスで完璧なユーザーエクスペリエンス",
+  "ExperienceWithONLYOFFICE": "ONLYOFFICE DocSpaceのエンタープライズ版では、モバイルWeb版に切り替えることで、外出先でもスマートフォンやタブレットで簡単にドキュメントを管理、編集、コラボレーションすることができます。",
+  "ExperienceFreeDesktopApps": "オフライン編集用の無料<0>デスクトップアプリ</0>や、iOSとAndroid用のネイティブ<1>モバイルアプリ</1>も利用可能です。",
 
   "EnvironmentEnterpriseReady": "エンタープライズ対応の作業環境",
 
   "EnvironmentItemTitleSecurity": "セキュリティ",
-  "EnvironmentItemTextSecurity": "あらゆる面でデータを安全に保ちます：エンタープライズ対応のセキュリティ設定、業界固有の基準への準拠、セキュリティと安定性の修正への優先アクセス。",
-  "EnvironmentItemLinkSecurity": "ONLYOFFICEのセキュリティについて詳しく知る",
+  "EnvironmentItemTextSecurity": "エンタープライズ対応のセキュリティ設定、業界固有の基準への準拠、セキュリティおよび安定性修正への優先アクセスなど、あらゆる面でデータの安全を保ちます。",
+  "EnvironmentItemLinkSecurity": "ONLYOFFICEセキュリティの詳細",
 
   "EnvironmentItemTitleAccessibility": "アクセシビリティ",
-  "EnvironmentItemTextAccessibility": "編集プロセスを誰にとってもシンプルで快適に：利用可能なカラーモードの切り替え、必要なプラグインの有効化、バーやルーラーの表示/非表示など。",
-  "EnvironmentItemLinkAccessibility": "ONLYOFFICEのアクセシビリティについて詳しく知る",
+  "EnvironmentItemTextAccessibility": "利用可能なカラーモードの切り替え、必要なプラグインの有効化、バーやルーラの非表示/表示など、編集プロセスをシンプルで快適なものにしましょう。",
+  "EnvironmentItemLinkAccessibility": "ONLYOFFICEアクセシビリティの詳細",
 
   "EnvironmentItemTitleCustomization": "カスタマイズ",
   "EnvironmentItemTextCustomization": "さまざまなカラースタイルを適用し、ロゴ、タイトル、リンクを置き換えて、企業のブランドに合わせます。",
 
   "EnvironmentItemTitleAdministration": "管理",
-  "EnvironmentItemTextAdministration": "直感的なコントロールパネルを使用してDocSpaceを管理します。ログ記録、署名、ストレージなどの外部サービスを接続します。",
+  "EnvironmentItemTextAdministration": "直感的なコントロールパネルでドキュメントスペースを管理できます。ロギング、署名、ストレージなどのために外部サービスを接続します。",
 
   "EnvironmentItemTitleMultitenancy": "マルチテナンシー",
-  "EnvironmentItemTextMultitenancy": "異なる支店用に複数のスペースを作成し、それらすべてを一度に管理します。",
+  "EnvironmentItemTextMultitenancy": "支店ごとに複数のスペースを作成し、一括管理できる。",
 
-  "ScalableTitleForBusinesses": "あらゆる規模のビジネスに対応するスケーラビリティ",
-  "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterpriseは、あなたの会社と共に成長します。",
+  "ScalableTitleForBusinesses": "どのような規模のビジネスでも拡張可能",
+  "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterpriseは、御社と共に成長します。",
   "ScalableYouCanCustomize": "チームの拡大に合わせて、いつでもユーザー数をカスタマイズできます。",
-  "ScalableForLargeEnterprises": "大企業向けには、マルチサーバー展開のサポートが利用可能です。",
+  "ScalableForLargeEnterprises": "大企業向けには、マルチサーバーデプロイメントをサポートしています。",
   "ScalableImageAltText": "スケーラブルなメイン画像",
 
-  "SupportTitleForEveryStep": "あらゆるステップでのサポート",
-  "SupportTextTheTeam": "専門家チームが、あらゆるステップでお手伝いします",
+  "SupportTitleForEveryStep": "あらゆるステップをサポート",
+  "SupportTextTheTeam": "専門家チームがあらゆる段階でお客様をサポートします",
 
   "SupportItemTitleFreeDemo": "無料デモ",
-  "SupportItemTextWatch": "ビジネス向けの主なDocSpaceの機能と利点のデモンストレーションをご覧ください。",
+  "SupportItemTextWatch": "DocSpaceの主な機能と、あなたのビジネスに役立つ利点をデモでご覧ください。",
   "SupportItemBtnRequest": "デモをリクエスト",
 
   "SupportItemTitleTraining": "トレーニングコース",
-  "SupportItemTextMaster": "チューターの指導の下でONLYOFFICE DocSpaceをマスターしましょう。エンタープライズユーザー向けの割引が提供されます。",
-  "SupportItemBtnBook": "トレーニングを予約",
+  "SupportItemTextMaster": "ONLYOFFICE DocSpaceを講師の管理下でマスターできます。企業ユーザーには割引があります。",
+  "SupportItemBtnBook": "トレーニングの予約",
 
-  "SupportItemTitleViaEmail": "メールによるサポート",
-  "SupportItemTextJustContact": "<0>support@onlyoffice.com</0> までご連絡ください – 経験豊富なサポートチームが、あらゆる質問や技術的な問題の解決をお手伝いします。",
-  "SupportItemBtnViaContactUs": "お問い合わせ",
+  "SupportItemTitleViaEmail": "メールでのサポート",
+  "SupportItemTextJustContact": "<0>support@onlyoffice.com</0> までご連絡ください。経験豊富なサポートチームが、どのようなご質問や技術的な問題も解決いたします。",
+  "SupportItemBtnViaContactUs": "当社に連絡",
 
-  "SupportItemTitlePreSale": "購入前のご質問はありますか？",
-  "SupportItemTextContact": "<1>sales@onlyoffice.com</1> までお問い合わせいただくか、チームからの電話を受ける時間をスケジュールしてください。",
-  "SupportItemBtnPreSaleContactUs": "お問い合わせ",
+  "SupportItemTitlePreSale": "販売前のご質問ですか？",
+  "SupportItemTextContact": "<0>sales@onlyoffice.com</0> までご連絡いただくか、当社チームからお電話を差し上げる日時をご予約ください。",
+  "SupportItemBtnPreSaleContactUs": "当社に連絡",
 
-  "CostTitle": "<0>費用対効果の高い</0>エンタープライズソリューション",
+  "CostTitle": "<0>費用対効果の高い</0>企業向けソリューション",
 
-  "CostItemFree": "30日間無料トライアル",
+  "CostItemFree": "30日間の無料トライアル",
   "CostItemLifetime": "永久ライセンス",
   "CostItemYear": "1年間のアップデートとサポート",
-  "CostItemUnlimited": "無制限のルーム数と管理者数",
+  "CostItemUnlimited": "ルーム数と管理者数は無制限",
 
-  "CostButtonPickYourPrice": "価格を選択",
+  "CostButtonPickYourPrice": "料金プランを選ぶ",
 
-  "CostFooterIfYouRepresent": "教育機関または非営利団体を代表する場合は、<0>弊社の営業チームにお問い合わせ</0>の上、個別割引を受けてください。",
-  "CostFooterTheFamilyPack": "非商用利用向けの<1>ファミリーパック</1>も利用可能です。",
+  "CostFooterIfYouRepresent": "教育機関または非営利団体の代表者の方は、<0>弊社営業チームまでご連絡</0>いただければ、個人割引をご利用いただけます。",
+  "CostFooterTheFamilyPack": "非営利目的の<1>ファミリーパック</1>もご利用いただけます。",
 
-  "GettingStarted": "始めるのは簡単です",
-  "GettingDeploy": "利用可能なオプションのいずれかを使用して、ONLYOFFICE DocSpace Enterpriseを導入します。",
+  "GettingStarted": "簡単な導入",
+  "GettingDeploy": "ONLYOFFICE DocSpaceのエンタープライズ版を利用可能なオプションの1つを使って導入します。",
 
   "GettingItemCloudTitle": "クラウド",
-  "GettingItemCloudText": "サービスとして試す。DocSpaceのホスティング、保守、更新は弊社が行います",
-  "GettingItemCloudSubtitle": "今すぐ作成",
+  "GettingItemCloudText": "サービスとしてお試しください。DocSpaceのホスティング、メンテナンス、更新を代行します",
+  "GettingItemCloudSubtitle": "今すぐ登録",
 
   "GettingItemLinuxTitle": "Linux",
-  "GettingItemLinuxText": "Linuxサーバーでホスト（Docker、deb、またはrpmパッケージ）",
+  "GettingItemLinuxText": "Linuxサーバーでホストする（Docker、debまたはrpmパッケージ）",
   "GettingItemLinuxSubtitle": "今すぐ入手",
 
   "GettingItemWindowsTitle": "Windows",
-  "GettingItemWindowsText": "Windowsサーバーでホスト（exeパッケージ）",
+  "GettingItemWindowsText": "Windowsサーバーでホストする（exeパッケージ）",
   "GettingItemWindowsSubtitle": "今すぐ入手",
 
-  "GettingFooterText": "家庭用のCommunityバージョンは<0>こちら</0>からダウンロードできます。"
+  "GettingFooterText": "家庭用のコミュニティ版は<0>こちら</0>からダウンロードできます。"
 }
