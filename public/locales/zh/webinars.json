@@ -1,0 +1,53 @@
+{
+  "PageTitle": "观看ONLYOFFICE网络研讨会 | ONLYOFFICE",
+  "PageDescription": "注册我们的网络研讨会，了解如何更加有效地使用ONLYOFFICE",
+
+  "HeroHeadingWatch": "观看ONLYOFFICE网络研讨会",
+  "HeroTextTune": "参加我们的在线网络研讨会，了解如何更有效地使用ONLYOFFICE",
+
+  "UpcomingHeading": "即将举行的在线网络研讨会",
+
+  "UpcomingModalProduct": "产品",
+  "UpcomingModalBy": "演讲者",
+  "UpcomingModalLanguage": "语言",
+  "UpcomingModalPlease": "请完整填写所有带星号（*）的字段。您将收到一封带有所选网络研讨会链接的电子邮件。",
+  "UpcomingModalFullName": "全名",
+  "UpcomingModalCompanyName": "公司名称",
+  "UpcomingModalEmail": "电子邮箱",
+  "UpcomingModalSendQuestions": "发送在线研讨问题",
+  "UpcomingModalPlaceholderName": "名姓",
+
+  "FullNameIsIncorrect": "全名不正确",
+  "FullNameIsEmpty": "全名为空",
+
+  "CompanyNameIsEmpty": "公司名称为空",
+
+  "EmailIsEmpty": "电子邮箱为空。",
+  "EmailIsIncorrect": "电子邮箱格式不正确",
+
+  "AgreementByClicking": "点击“观看网络研讨会”即表示您了解并同意我们的<0>SLA</0>以及<1>隐私声明</1>。",
+
+  "ModalSendButton": "观看网络研讨会",
+  "ModalCloseButton": "取消",
+
+  "WatchHeading": "点播观看",
+  "WatchText": "错过了一场研讨会？随时观看重放。",
+  "WatchNow": "立即观看",
+
+  "en": "英语",
+  "ja": "日语",
+  "zh": "中文",
+  "fr": "法语",
+  "de": "德语",
+  "es": "西班牙语",
+  "pt": "葡萄牙语",
+  "it": "意大利语",
+  "cs": "捷克语",
+  "nl": "荷兰语",
+  "ru": "俄语",
+  "sr": "塞尔维亚语",
+
+  "ContributeHeading": "分享您的想法",
+  "ContributeTextHave": "希望召开特定内容的网络研讨会？",
+  "ContributeTextGet": "通过<0>press@onlyoffice.com</0>联系我们，或者在<1>Twitter</1>上直接给我们发信息。"
+}
