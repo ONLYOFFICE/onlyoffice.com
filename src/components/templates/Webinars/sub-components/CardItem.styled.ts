@@ -172,6 +172,7 @@ const StyledCardItemModalProduct = styled(Text)`
 const StyledCardItemModalInfo = styled.div`
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 `;
 const StyledCardItemModalBy = styled.div`
 
