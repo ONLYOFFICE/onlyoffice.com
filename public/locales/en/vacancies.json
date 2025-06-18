@@ -4,6 +4,15 @@
   "HeroHeadingWeAreHiring": "We are hiring",
   "HeroTextJoin": "Join the <0>ONLYOFFICE team</0> today",
 
+  "JobHeading": "Job openings",
+
+  "JobCardDepartmentSales": "Sales",
+  "JobCardDepartmentCustomerCare": "Customer care",
+  "JobCardDepartmentMarketing": "Marketing",
+
+  "JobCard1Title": "",
+  "JobCard1Description": "",
+
   "AboutContentHeading": "About Ascensio System Sia",
   "AboutContentText": [
     "We are an international, open source company with the mission to bring the most innovative web office apps to everyone.",
