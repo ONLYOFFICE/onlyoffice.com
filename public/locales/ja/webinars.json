@@ -1,0 +1,53 @@
+{
+  "PageTitle": "ONLYOFFICE ウェビナーをご覧ください | ONLYOFFICE",
+  "PageDescription": "当社のライブ ウェビナーに登録して、ONLYOFFICE で効果的に編集する方法を学習しましょう",
+
+  "HeroHeadingWatch": "ONLYOFFICE ウェビナーをご覧ください",
+  "HeroTextTune": "当社のライブ ウェビナーに参加して、ONLYOFFICE での作業に一番的確な方法を学習しましょう",
+
+  "UpcomingHeading": "近日到来ライブ ウェビナー",
+
+  "UpcomingModalProduct": "製品",
+  "UpcomingModalBy": "講師",
+  "UpcomingModalLanguage": "言語",
+  "UpcomingModalPlease": "すべての必須事項を記入してください。選択したウェビナーへのリンクをメールで受け取ることになります。",
+  "UpcomingModalFullName": "氏名",
+  "UpcomingModalCompanyName": "会社名",
+  "UpcomingModalEmail": "メール",
+  "UpcomingModalSendQuestions": "ウェビナーに質問を送信",
+  "UpcomingModalPlaceholderName": "名姓",
+
+  "FullNameIsIncorrect": "氏名が正しくありません",
+  "FullNameIsEmpty": "氏名が入力されていません",
+
+  "CompanyNameIsEmpty": "会社名が入力されていません",
+
+  "EmailIsEmpty": "メールアドレスが入力されていません。",
+  "EmailIsIncorrect": "メールアドレスが正しくありません",
+
+  "AgreementByClicking": "[ウェビナーを見る]をクリックすると、<0>当社のサービス水準合意</0>および <1>個人情報保護方針</1>を理解し、同意したことになります。",
+
+  "ModalSendButton": "ウェビナーを見る",
+  "ModalCloseButton": "キャンセル",
+
+  "WatchHeading": "オンデマンドでご覧ください",
+  "WatchText": "ウェビナーを見逃しましたか? いつでもリプレイをご覧ください。",
+  "WatchNow": "今すぐチェックする",
+
+  "en": "英語",
+  "ja": "日本語",
+  "zh": "中国語",
+  "fr": "フランス語で",
+  "de": "ドイツ語",
+  "es": "スペイン語",
+  "pt": "ポルトガル語",
+  "it": "イタリア語",
+  "cs": "チェコ語",
+  "nl": "オランダ語",
+  "ru": "ロシア語",
+  "sr": "セルビア語",
+
+  "ContributeHeading": "ご意見をお寄せください",
+  "ContributeTextHave": "当社が保持すべきウェビナーについて、ご意見がありますか?",
+  "ContributeTextGet": "当社のチーム ( <0>press@onlyoffice.com</0> ) にお問い合わせいただくか、 <1>Twitter</1> でダイレクトメッセージをご利用ください。"
+}
