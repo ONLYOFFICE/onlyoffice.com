@@ -2,5 +2,14 @@
   "PageTitle": "ONLYOFFICE - Cloud Office Applications",
 
   "HeroHeadingWeAreHiring": "We are hiring",
-  "HeroTextJoin": "Join the <0>ONLYOFFICE team</0> today"
+  "HeroTextJoin": "Join the <0>ONLYOFFICE team</0> today",
+
+  "AboutContentHeading": "About Ascensio System Sia",
+  "AboutContentText": [
+    "We are an international, open source company with the mission to bring the most innovative web office apps to everyone.",
+    "Our work life in company is based on mutual trust and our common goal that unites us, keeps us motivated and updated, and gives inspiration to be innovative. We stick to the strategy when everybody is engaged with what they like, what they are really good at. This allows us to create and promote a high-quality and useful product which already has a solid customer base.",
+    "As a company with employees in <0>more than 30 countries</0> and a wide community of contributors all over the world, our corporate language is English. Lots of us work from home office with a flexible schedule, so it’s no matter where are you from.",
+    "At <0>Ascensio System Sia</0>, we provide equal treatment of all staff members and all applicants without regard to race, color, religion, sex, sexual orientation, gender perception or identity, national origin, age, marital status, veteran status, or disability status. Only your qualifications, experience, and enthusiasm are important to us.",
+    "<0>Join our big open source family and apply for a job! Contact us at</0> <1>jobs@onlyoffice.com</1>"
+  ]
 }
