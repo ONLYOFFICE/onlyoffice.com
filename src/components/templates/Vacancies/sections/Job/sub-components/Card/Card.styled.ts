@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { ICardProps } from "@src/components/templates/Vacancies/Vacancies.types";
+import { Button } from "@src/components/ui/Button";
 
 const CardItem = styled.li`
   background-color: #fff;
@@ -52,13 +53,167 @@ const CardHeading = styled(Heading)`
   margin-bottom: 28px;
 `;
 
-const CardDescription = styled(Text)`
-  margin-bottom: 24px;
+const CardInfoWrapper = styled.div`
+  margin-bottom: 28px;
+  display: flex;
+  gap: 34px;
+`;
+
+const CardInfoLocation = styled(Text)`
+  padding-left: 20px;
+  position: relative;
+  font-size: 12px;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("/images/icons/location.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+`;
+
+const CardInfoTime = styled(Text)`
+  padding-left: 20px;
+  position: relative;
+  font-size: 12px;
+
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("/images/icons/clock.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+`;
+
+const CardInfoLanguageWrapper = styled.div`
+  display: flex;
+  gap: 4px;
+  align-items: center;
+`;
+
+const CardInfoLanguageIcon = styled.div<{
+  $iconUrl: string;
+}>`
+  width: 18px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: ${({ $iconUrl }) => `url(${$iconUrl})`};
+`;
+
+const CardInfoLanguageLabel = styled(Text)`
+  font-size: 12px;
+`;
+
+const CardRequirementsHeading = styled(Heading)`
+  margin: 24px 0;
+`;
+
+const CardRequirementsList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+const CardRequirementsItem = styled.li`
+  list-style-type: auto;
+  list-style-image: url("/images/icons/rectangle-orange.svg");
+  list-style-position: inside;
+  line-height: 1.6em;
+
+  &:last-child {
+    padding-bottom: 8px;
+  }
+`;
+
+const CardSkillsHeading = styled(Heading)`
+  margin: 24px 0;
+`;
+
+const CardSkillsList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+const CardSkillsItem = styled.li`
+  list-style-type: auto;
+  list-style-image: url("/images/icons/rectangle-orange.svg");
+  list-style-position: inside;
+  line-height: 1.6em;
+
+  &:last-child {
+    padding-bottom: 8px;
+  }
+`;
+
+
+const CardBenefitsHeading = styled(Heading)`
+  margin: 24px 0;
+`;
+
+const CardBenefitsList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+const CardBenefitsItem = styled.li`
+  list-style-type: auto;
+  list-style-image: url("/images/icons/rectangle-dark.svg");
+  list-style-position: inside;
+  line-height: 1.6em;
+
+  &:last-child {
+    padding-bottom: 8px;
+  }
+`;
+
+const CardInterestedText = styled(Text)`
+  margin: 16px 0;
+`;
+
+const CardOpenButton = styled(Button)`
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-image: url("/images/icons/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 `;
 
 export {
   CardItem,
   CardDepartment,
   CardHeading,
-  CardDescription,
+  CardInfoWrapper,
+  CardInfoLocation,
+  CardInfoTime,
+  CardInfoLanguageWrapper,
+  CardInfoLanguageIcon,
+  CardInfoLanguageLabel,
+  CardRequirementsHeading,
+  CardRequirementsList,
+  CardRequirementsItem,
+  CardSkillsHeading,
+  CardSkillsList,
+  CardSkillsItem,
+  CardBenefitsHeading,
+  CardBenefitsList,
+  CardBenefitsItem,
+  CardInterestedText,
+  CardOpenButton
 };

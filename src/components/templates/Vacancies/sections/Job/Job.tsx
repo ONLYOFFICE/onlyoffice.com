@@ -48,7 +48,13 @@ const Job = () => {
               key={item.id}
               department={item.department}
               title={item.title}
+              location={item.location}
+              time={item.time}
+              language={item.language}
               description={item.description}
+              requirements={item.requirements}
+              skills={item.skills}
+              benefits={item.benefits}
             />
           ))}
         </StyledJobList>
