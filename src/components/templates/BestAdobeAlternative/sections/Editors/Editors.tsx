@@ -58,7 +58,8 @@ const Editors = () => {
                   ? "Example Document Title.pdf"
                   : "Example Form Title.pdf"
               }
-              mode={activeTab === 0 ? "edit" : "view"}
+              edit={activeTab === 0 ? "true" : "false"}
+              fillForms={activeTab === 0 ? "false" : "true"}
             />
           </StyledEditorsItem>
         </Container>

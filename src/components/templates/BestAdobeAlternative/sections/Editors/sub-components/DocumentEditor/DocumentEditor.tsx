@@ -12,10 +12,12 @@ const DocumentEditor = dynamic(
 
 const OnlyOfficeEditor = ({
   title,
-  mode,
+  edit,
+  fillForms,
 }: {
   title: string;
-  mode: "view" | "edit";
+  edit: string;
+  fillForms: string;
 }) => {
   const [token, setToken] = useState("");
   const [config, setConfig] = useState<TokenResponse["config"] | null>(null);
@@ -27,7 +29,7 @@ const OnlyOfficeEditor = ({
   useEffect(() => {
     const apiUrl = `/api/document-editor?fileType=${fileType}&title=${encodeURIComponent(
       title,
-    )}&url=${encodeURIComponent(url)}&mode=${mode}&uiTheme=${uiTheme}`;
+    )}&url=${encodeURIComponent(url)}&mode="view"&edit=${edit}&fillForms=${fillForms}&uiTheme=${uiTheme}`;
 
     fetch(apiUrl, {
       method: "POST",
@@ -46,7 +48,7 @@ const OnlyOfficeEditor = ({
       .catch((err) => {
         console.error(err);
       });
-  }, [fileType, title, url, mode, uiTheme]);
+  }, [fileType, title, url, edit, fillForms, uiTheme]);
 
   const onLoadComponentError = (
     errorCode: number,

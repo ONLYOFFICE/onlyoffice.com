@@ -4,42 +4,49 @@ import { v4 as uuidv4 } from "uuid";
 
 const secret = process.env.ONLYOFFICE_DOCUMENT_SERVER_TOKEN;
 
+type DocumentType =
+  | "word"
+  | "cell"
+  | "slide"
+  | "pdf"
+  | "text"
+  | "spreadsheet"
+  | "presentation";
+
+type UiTheme = "default-dark" | "default-light";
+
 interface DocumentConfig {
   fileType?: string;
   key?: string;
   title?: string;
   url?: string;
   permissions?: {
-    edit?: boolean;
-    fillForms?: boolean;
+    edit: boolean;
+    fillForms: boolean;
     comment?: boolean;
     download?: boolean;
     print?: boolean;
-    review?: boolean;
+    review: boolean;
   };
 }
 
 interface EditorConfig {
-  mode?: "view" | "edit" | "fillForms" | "embedded" | "review";
+  mode: "view" | "edit";
   lang?: string;
   callbackUrl?: string;
   customization?: {
-    uiTheme?: "theme-light" | "theme-classic-light" | "theme-dark" | "theme-contrast-dark" | "default-dark" | "default-light";
+    uiTheme?: UiTheme;
     anonymous?: {
       request: boolean;
       label?: string;
     };
-    logo?: {
-      image?: string;
-      url?: string;
-    };
-    zoom?: number;
   };
 }
 
 interface TokenPayload {
+  type?: "desktop" | "mobile" | "embedded";
   document?: DocumentConfig;
-  documentType?: string;
+  documentType: DocumentType;
   editorConfig?: EditorConfig;
 }
 
@@ -49,27 +56,51 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   }
 
   try {
-    let payload: TokenPayload = req.body;
+    const bodyPayload = req.body as TokenPayload;
 
-    if (!payload || Object.keys(payload).length === 0) {
-      const documentKey = uuidv4();
-      const fileType = req.query.fileType as string || "pdf";
-      const title = req.query.title as string || "Example Document.pdf";
-      const url = req.query.url as string || "https://static.onlyoffice.com/assets/docs/samples/oform.pdf";
-      const mode = req.query.mode as "view" | "edit" || "view";
-      const uiTheme = (req.query.uiTheme as "theme-light" | "theme-classic-light" | "theme-dark" | "theme-contrast-dark" | "default-dark" | "default-light") || "theme-dark";
+    let payload: TokenPayload;
+
+    if (bodyPayload && Object.keys(bodyPayload).length > 0) {
+      payload = bodyPayload;
+    } else {
+      const {
+        type,
+        fileType,
+        title,
+        url,
+        documentType,
+        mode,
+        uiTheme = "default-dark",
+      } = req.query as {
+        type: "desktop" | "mobile" | "embedded";
+        fileType: string;
+        title: string;
+        url: string;
+        documentType: DocumentType;
+        mode: EditorConfig["mode"];
+        uiTheme?: UiTheme;
+      };
+
+      const edit = req.query.edit === "true";
+      const fillForms = req.query.fillForms === "true";
+      const review = req.query.review === "true";
+
+      const permissions: DocumentConfig["permissions"] | undefined =
+        edit || fillForms || review ? { edit, fillForms, review } : undefined;
 
       payload = {
+        ...(type ? { type } : { type: "desktop" }),
         document: {
           fileType,
-          key: documentKey,
+          key: uuidv4(),
           title,
           url,
+          ...(permissions ? { permissions } : {}),
         },
-        documentType: fileType,
+        documentType,
         editorConfig: {
           mode,
-          callbackUrl: `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/api/onlyoffice-callback`,
+          callbackUrl: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/api/onlyoffice-callback`,
           customization: {
             uiTheme,
             anonymous: {
@@ -81,14 +112,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     }
 
     if (!secret) {
-      throw new Error("Missing ONLYOFFICE_DOCUMENT_SERVER_TOKEN environment variable");
+      throw new Error("Missing ONLYOFFICE_DOCUMENT_SERVER_TOKEN in env");
     }
 
     const token = jwt.sign(payload, secret);
-    res.status(200).json({ 
-      token,
-      config: payload 
-    });
+    res.status(200).json({ token, config: payload });
   } catch (error) {
     console.error("Token generation error:", error);
     res.status(500).json({ error: "Token generation failed" });
