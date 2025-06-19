@@ -3,31 +3,29 @@ import { useTranslation } from "next-i18next";
 import { ILocale } from "@src/types/locale";
 import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
-import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
-import { MainTemplate } from "@src/components/templates/Main";
 import { Footer } from "@src/components/modules/Footer";
+import { Head } from "@src/components/modules/head/Head";
+import { AccessibilityTemplate } from "@src/components/templates/Accessibility/Accessibility";
 
-const MainPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("main");
-
+const AccessibilityPage = ({ locale }: ILocale) => {
+  const { t } = useTranslation("accessibility");
   return (
     <Layout>
       <Layout.AdventAnnounce>
         <AdventAnnounceBanner locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head
-          title={t("PageTitle")}
-          description={t("PageDescription")}
-          titleOG={t("PageTitleOG")}
-        />
+        <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{ buttonId: "oo-menu-item-btn-products" }}
+        />
       </Layout.Header>
       <Layout.Main>
-        <MainTemplate locale={locale} />
+        <AccessibilityTemplate />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -36,18 +34,13 @@ const MainPage = ({ locale }: ILocale) => {
   );
 };
 
-export async function getStaticProps({ locale }: ILocale) {
+export const getStaticProps = async ({ locale }: ILocale) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        "common",
-        "main",
-        "SecurityFirst",
-        "GetStarted",
-      ])),
+      ...(await serverSideTranslations(locale, ["common", "accessibility"])),
       locale,
     },
   };
-}
+};
 
-export default MainPage;
+export default AccessibilityPage;

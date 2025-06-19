@@ -5,11 +5,11 @@ import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
-import { MainTemplate } from "@src/components/templates/Main";
 import { Footer } from "@src/components/modules/Footer";
+import { DocumentEditorTemplate } from "@src/components/templates/DocumentEditor";
 
-const MainPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("main");
+const DocumentEditorPage = ({ locale }: ILocale) => {
+  const { t } = useTranslation("document-editor");
 
   return (
     <Layout>
@@ -17,17 +17,20 @@ const MainPage = ({ locale }: ILocale) => {
         <AdventAnnounceBanner locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head
-          title={t("PageTitle")}
-          description={t("PageDescription")}
-          titleOG={t("PageTitleOG")}
-        />
+        <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          theme="white"
+          highlight={{
+            buttonId: "oo-menu-item-btn-products",
+            linkId: "oo-menu-link-docspace-document-editors",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
-        <MainTemplate locale={locale} />
+        <DocumentEditorTemplate />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -41,13 +44,13 @@ export async function getStaticProps({ locale }: ILocale) {
     props: {
       ...(await serverSideTranslations(locale, [
         "common",
-        "main",
-        "SecurityFirst",
+        "document-editor",
         "GetStarted",
+        "Editors",
       ])),
       locale,
     },
   };
 }
 
-export default MainPage;
+export default DocumentEditorPage;

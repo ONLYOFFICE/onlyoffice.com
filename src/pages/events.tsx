@@ -5,11 +5,13 @@ import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
-import { MainTemplate } from "@src/components/templates/Main";
+import { EventsTemplate } from "@src/components/templates/Events";
 import { Footer } from "@src/components/modules/Footer";
+import { getEvents } from "@src/lib/requests/getEvents";
+import { IEvents } from "@src/components/templates/Events";
 
-const MainPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("main");
+const EventsPage = ({ locale, events }: ILocale & IEvents) => {
+  const { t } = useTranslation("events");
 
   return (
     <Layout>
@@ -24,10 +26,16 @@ const MainPage = ({ locale }: ILocale) => {
         />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            buttonId: "oo-menu-item-btn-resources",
+            linkId: "oo-menu-link-resources-events",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
-        <MainTemplate locale={locale} />
+        <EventsTemplate events={events} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -37,17 +45,15 @@ const MainPage = ({ locale }: ILocale) => {
 };
 
 export async function getStaticProps({ locale }: ILocale) {
+  const events = await getEvents(locale);
+
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        "common",
-        "main",
-        "SecurityFirst",
-        "GetStarted",
-      ])),
+      ...(await serverSideTranslations(locale, ["common", "events"])),
       locale,
+      events,
     },
   };
 }
 
-export default MainPage;
+export default EventsPage;

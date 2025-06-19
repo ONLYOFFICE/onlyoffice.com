@@ -5,11 +5,11 @@ import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
-import { MainTemplate } from "@src/components/templates/Main";
+import { LicenseFaqTemplate } from "@src/components/templates/LicenseFaq";
 import { Footer } from "@src/components/modules/Footer";
 
-const MainPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("main");
+const LicenseFaqPage = ({ locale }: ILocale) => {
+  const { t } = useTranslation("license-faq");
 
   return (
     <Layout>
@@ -17,17 +17,13 @@ const MainPage = ({ locale }: ILocale) => {
         <AdventAnnounceBanner locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head
-          title={t("PageTitle")}
-          description={t("PageDescription")}
-          titleOG={t("PageTitleOG")}
-        />
+        <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <MainTemplate locale={locale} />
+        <LicenseFaqTemplate />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -39,15 +35,9 @@ const MainPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        "common",
-        "main",
-        "SecurityFirst",
-        "GetStarted",
-      ])),
+      ...(await serverSideTranslations(locale, ["common", "license-faq"])),
       locale,
     },
   };
 }
-
-export default MainPage;
+export default LicenseFaqPage;

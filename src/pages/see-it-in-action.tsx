@@ -5,11 +5,11 @@ import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
-import { MainTemplate } from "@src/components/templates/Main";
 import { Footer } from "@src/components/modules/Footer";
+import { SeeItInActionTemplate } from "@src/components/templates/SeeItInAction";
 
-const MainPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("main");
+const SeeItInActionPage = ({ locale }: ILocale) => {
+  const { t } = useTranslation("see-it-in-action");
 
   return (
     <Layout>
@@ -17,17 +17,19 @@ const MainPage = ({ locale }: ILocale) => {
         <AdventAnnounceBanner locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head
-          title={t("PageTitle")}
-          description={t("PageDescription")}
-          titleOG={t("PageTitleOG")}
-        />
+        <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            buttonId: "oo-menu-item-btn-developers",
+            linkId: "oo-menu-link-launch-demo",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
-        <MainTemplate locale={locale} />
+        <SeeItInActionTemplate />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -41,13 +43,12 @@ export async function getStaticProps({ locale }: ILocale) {
     props: {
       ...(await serverSideTranslations(locale, [
         "common",
+        "see-it-in-action",
         "main",
-        "SecurityFirst",
-        "GetStarted",
       ])),
       locale,
     },
   };
 }
 
-export default MainPage;
+export default SeeItInActionPage;

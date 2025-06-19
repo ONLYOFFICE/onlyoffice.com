@@ -5,11 +5,11 @@ import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
-import { MainTemplate } from "@src/components/templates/Main";
+import { OfficeForPipedriveTemplate } from "@src/components/templates/OfficeForPipedrive";
 import { Footer } from "@src/components/modules/Footer";
 
-const MainPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("main");
+const OfficeForPipedrivePage = ({ locale }: ILocale) => {
+  const { t } = useTranslation("office-for-pipedrive");
 
   return (
     <Layout>
@@ -17,17 +17,19 @@ const MainPage = ({ locale }: ILocale) => {
         <AdventAnnounceBanner locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head
-          title={t("PageTitle")}
-          description={t("PageDescription")}
-          titleOG={t("PageTitleOG")}
-        />
+        <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          theme="white"
+          highlight={{
+            buttonId: "oo-menu-item-btn-products",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
-        <MainTemplate locale={locale} />
+        <OfficeForPipedriveTemplate />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -41,13 +43,13 @@ export async function getStaticProps({ locale }: ILocale) {
     props: {
       ...(await serverSideTranslations(locale, [
         "common",
-        "main",
-        "SecurityFirst",
-        "GetStarted",
+        "office-for-pipedrive",
+        "Connectors",
+        "PartnershipProgram",
       ])),
       locale,
     },
   };
 }
 
-export default MainPage;
+export default OfficeForPipedrivePage;
