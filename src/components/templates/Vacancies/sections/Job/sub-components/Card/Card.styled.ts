@@ -3,6 +3,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { ICardProps } from "@src/components/templates/Vacancies/Vacancies.types";
 import { Button } from "@src/components/ui/Button";
+import { device } from "@src/utils/device";
 
 const CardItem = styled.li`
   background-color: #fff;
@@ -56,7 +57,9 @@ const CardHeading = styled(Heading)`
 const CardInfoWrapper = styled.div`
   margin-bottom: 28px;
   display: flex;
-  gap: 34px;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 34px;
 `;
 
 const CardInfoLocation = styled(Text)`
@@ -115,6 +118,18 @@ const CardInfoLanguageIcon = styled.div<{
 
 const CardInfoLanguageLabel = styled(Text)`
   font-size: 12px;
+`;
+
+const CardContent = styled.div<{
+  $isCardOpen: boolean;
+}>`
+  display: ${({ $isCardOpen }) => ($isCardOpen ? "block" : "none")};
+  opacity: ${({ $isCardOpen }) => ($isCardOpen ? 1 : 0)};
+  transition: opacity 400ms ease-out, display 400ms allow-discrete;
+
+  @starting-style {
+    opacity: 0;
+  }
 `;
 
 const CardRequirementsHeading = styled(Heading)`
@@ -185,14 +200,24 @@ const CardInterestedText = styled(Text)`
   margin: 16px 0;
 `;
 
-const CardOpenButton = styled(Button)`
+const CardOpenButton = styled(Button)<{
+  $isCardOpen: boolean;
+}>`
+  display: block;
   width: 24px;
   height: 24px;
+  min-height: auto;
   padding: 0;
   background-image: url("/images/icons/chevron-down.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  transform: rotate(${({ $isCardOpen }) => ($isCardOpen ? "180deg" : "0deg")});
+  transition: transform 400ms ease;
+
+  @media ${device.mobile} {
+    margin: 0 auto;
+  }
 `;
 
 export {
@@ -205,6 +230,7 @@ export {
   CardInfoLanguageWrapper,
   CardInfoLanguageIcon,
   CardInfoLanguageLabel,
+  CardContent,
   CardRequirementsHeading,
   CardRequirementsList,
   CardRequirementsItem,

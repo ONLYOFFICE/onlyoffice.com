@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
@@ -24,6 +25,7 @@ import {
   CardBenefitsItem,
   CardInterestedText,
   CardOpenButton,
+  CardContent,
 } from "./Card.styled";
 
 const Card = ({
@@ -38,6 +40,7 @@ const Card = ({
   benefits
 }: ICardProps) => {
   const { t } = useTranslation("vacancies");
+  const [toggleCard, setToggleCard] = useState(false);
 
   const rawRequirements = t(requirements, { returnObjects: true });
   const requirementsList = Array.isArray(rawRequirements) ? rawRequirements : [rawRequirements];
@@ -79,50 +82,56 @@ const Card = ({
           />
         </CardInfoLanguageWrapper>
       </CardInfoWrapper>
-      <Text
-        label={t(description)}
-        size={2}
-      />
-      <CardRequirementsHeading size={5} level={3} label={t("JobCardHeadingRequirements")} />
-      <CardRequirementsList>
-        {requirementsList.map((requirement, index) => (
-          <CardRequirementsItem key={requirement + index}>
-            {requirement}
-          </CardRequirementsItem>
-        ))}
-      </CardRequirementsList>
-      <CardSkillsHeading size={5} level={3} label={t("JobCardHeadingSkills")} />
-      <CardSkillsList>
-        {skillsList.map((skill, index) => (
-          <CardSkillsItem key={skill + index}>
-            {skill}
-          </CardSkillsItem>
-        ))}
-      </CardSkillsList>
-      <CardBenefitsHeading size={5} level={3} label={t("Benefits")} />
-      <CardBenefitsList>
-        {benefitsList.map((benefit, index) => (
-          <CardBenefitsItem key={benefit + index}>
-            {benefit}
-          </CardBenefitsItem>
-        ))}
-      </CardBenefitsList>
-      <CardInterestedText size={2}>
-        <Trans
-          t={t}
-          i18nKey={"JobCardAreYouInterested"}
-          components={[
-            <Link
-              key={0}
-              href="mailto:jobs@onlyoffice.com"
-              color="main"
-              textUnderline={true}
-              hover="underline-none"
-            />
-          ]}
+      <CardContent $isCardOpen={toggleCard}>
+        <Text
+          label={t(description)}
+          size={2}
         />
-      </CardInterestedText>
-      <CardOpenButton variant="quaternary" />
+        <CardRequirementsHeading size={5} level={3} label={t("JobCardHeadingRequirements")} />
+        <CardRequirementsList>
+          {requirementsList.map((requirement, index) => (
+            <CardRequirementsItem key={requirement + index}>
+              {requirement}
+            </CardRequirementsItem>
+          ))}
+        </CardRequirementsList>
+        <CardSkillsHeading size={5} level={3} label={t("JobCardHeadingSkills")} />
+        <CardSkillsList>
+          {skillsList.map((skill, index) => (
+            <CardSkillsItem key={skill + index}>
+              {skill}
+            </CardSkillsItem>
+          ))}
+        </CardSkillsList>
+        <CardBenefitsHeading size={5} level={3} label={t("Benefits")} />
+        <CardBenefitsList>
+          {benefitsList.map((benefit, index) => (
+            <CardBenefitsItem key={benefit + index}>
+              {benefit}
+            </CardBenefitsItem>
+          ))}
+        </CardBenefitsList>
+        <CardInterestedText size={2}>
+          <Trans
+            t={t}
+            i18nKey={"JobCardAreYouInterested"}
+            components={[
+              <Link
+                key={0}
+                href="mailto:jobs@onlyoffice.com"
+                color="main"
+                textUnderline={true}
+                hover="underline-none"
+              />
+            ]}
+          />
+        </CardInterestedText>
+      </CardContent>
+      <CardOpenButton
+        variant="quaternary"
+        onClick={() => setToggleCard(!toggleCard)}
+        $isCardOpen={toggleCard}
+      />
     </CardItem>
   );
 };

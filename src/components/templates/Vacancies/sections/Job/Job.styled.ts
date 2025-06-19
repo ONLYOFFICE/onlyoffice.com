@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "@src/utils/device";
 import { Button } from "@src/components/ui/Button";
 
 const StyledJobHeadingWrapper = styled.div`
@@ -6,11 +7,22 @@ const StyledJobHeadingWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+
+  @media ${device.mobile} {
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 16px;
+  }
 `;
 
 const StyledJobSelectorsWrapper = styled.div`
   display: flex;
   gap: 16px;
+
+  @media ${device.mobile} {
+    width: 100%;
+    justify-content: space-between;
+  }
 `;
 
 const StyledJobSelector = styled.div``;
