@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import { ILocale } from "@src/types/locale";
 import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
-import { Head } from "@src/components/modules/Head";
+import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { OfficeForBoxTemplate } from "@src/components/templates/OfficeForBox";
 import { Footer } from "@src/components/modules/Footer";
@@ -20,7 +20,13 @@ const OfficeForBoxPage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          theme="white"
+          highlight={{
+            buttonId: "oo-menu-item-btn-products",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <OfficeForBoxTemplate />

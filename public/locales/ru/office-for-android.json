@@ -1,0 +1,98 @@
+{
+  "PageTitle": "Бесплатный офисный пакет для Android | ONLYOFFICE Documents",
+  "PageDescription": "Редактируйте и совместно работайте над документами, таблицами и презентациями. Заполняйте формы на вашем Android-устройстве.",
+
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, <0>бесплатное офисное приложение</0> для Android",
+
+  "HeroRightImageUrl": "/images/templates/office-for-android/hero/ru/header.ru.png",
+  "HeroRightImageUrl2x": "/images/templates/office-for-android/hero/ru/header.ru@2x.png",
+
+  "HeroLeftImageUrl": "/images/templates/office-for-android/hero/ru/header-phone.ru.png",
+  "HeroLeftImageUrl2x": "/images/templates/office-for-android/hero/ru/header-phone.ru@2x.png",
+
+  "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.ru.png",
+  "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-ru.svg",
+
+  "OneAppForYourText": "Одно приложение для ваших текстовых документов, электронных таблиц, презентаций, форм и медиафайлов",
+  "CompatibleWithMSOffice": "100% совместимость с форматами MS Office",
+
+  "AnOptionToConsider": "Вариант, который стоит рассмотреть, если вы ищете альтернативы Office или Google Docs.",
+  "EliesGuzman": "Элис Гусман",
+  "Malavida": "Malavida",
+
+  "FeaturesItemHeadingFull": "Редактор документов",
+  "FeaturesItemTextMakeUse": "Работайте с текстовыми документами всех популярных форматов. Форматируйте текст и настраивайте макет страницы. Вставляйте ссылки, изображения, диаграммы. Печатайте документы прямо из приложения.",
+  "FeaturesItemTablet1Bg": "/images/templates/office-for-android/features/ru/img-tablet-1.png",
+  "FeaturesItemTablet1Bg2x": "/images/templates/office-for-android/features/ru/img-tablet2x-1.png",
+  "FeaturesItemMobile1Bg": "/images/templates/office-for-android/features/ru/img-mobile-1.png",
+  "FeaturesItemMobile1Bg2x": "/images/templates/office-for-android/features/ru/img-mobile2x-1.png",
+
+  "FeaturesItemHeadingComplete": "Редактор таблиц",
+  "FeaturesItemTextManage": "Создавайте, просматривайте и редактируйте электронные таблицы на своем устройстве. Работайте со строками и столбцами, настраивайте параметры ячеек, используйте более 450 формул, сортируйте и фильтруйте данные.",
+  "FeaturesItemTablet2Bg": "/images/templates/office-for-android/features/ru/img-tablet-2.png",
+  "FeaturesItemTablet2Bg2x": "/images/templates/office-for-android/features/ru/img-tablet2x-2.png",
+  "FeaturesItemMobile2Bg": "/images/templates/office-for-android/features/ru/img-mobile-2.png",
+  "FeaturesItemMobile2Bg2x": "/images/templates/office-for-android/features/ru/img-mobile2x-2.png",
+
+  "FeaturesItemHeadingCollaborative": "Редактор презентаций",
+  "FeaturesItemTextMakeWork": "Создавайте и редактируйте эффектные презентации на Android. Управляйте слайдами, вставляйте изображения, добавляйте и редактируйте фигуры, диаграммы и графики, тексты и другие элементы.",
+  "FeaturesItemTablet3Bg": "/images/templates/office-for-android/features/ru/img-tablet-3.png",
+  "FeaturesItemTablet3Bg2x": "/images/templates/office-for-android/features/ru/img-tablet2x-3.png",
+  "FeaturesItemMobile3Bg": "/images/templates/office-for-android/features/ru/img-mobile-3.png",
+  "FeaturesItemMobile3Bg2x": "/images/templates/office-for-android/features/ru/img-mobile2x-3.png",
+
+  "FeaturesItemHeadingOnline": "Заполнитель форм",
+  "FeaturesItemTextMakeView": "Просматривайте и заполняйте онлайн-формы. Легко переходите от поля к полю. Сохраните результат в виде файла PDF или DOCX.",
+  "FeaturesItemTablet4Bg": "/images/templates/office-for-android/features/ru/img-tablet-4.png",
+  "FeaturesItemTablet4Bg2x": "/images/templates/office-for-android/features/ru/img-tablet2x-4.png",
+  "FeaturesItemMobile4Bg": "/images/templates/office-for-android/features/ru/img-mobile-4.png",
+  "FeaturesItemMobile4Bg2x": "/images/templates/office-for-android/features/ru/img-mobile2x-4.png",
+
+  "FeaturesItemHeadingPDF": "Просмотрщик PDF и медиаплеер",
+  "FeaturesItemTextMakeViewPDF": "Просматривайте файлы PDF, фото и видео. Сортируйте, переименовывайте, перемещайте и копируйте файлы, создавайте папки на устройстве или в облаке.",
+  "FeaturesItemTablet5Bg": "/images/templates/office-for-android/features/ru/img-tablet-5.png",
+  "FeaturesItemTablet5Bg2x": "/images/templates/office-for-android/features/ru/img-tablet2x-5.png",
+  "FeaturesItemMobile5Bg": "/images/templates/office-for-android/features/ru/img-mobile-5.png",
+  "FeaturesItemMobile5Bg2x": "/images/templates/office-for-android/features/ru/img-mobile2x-5.png",
+
+  "RealTimeCollaboration": "Совместная работа в реальном времени",
+  "BeMoreProductive": "Будьте продуктивнее. Подключите приложение к облаку ONLYOFFICE. Делитесь документами для совместного редактирования с коллегами в реальном времени. Комментируйте и отслеживайте изменения. Добавляйте графические аннотации.",
+
+  "VideoCardHeading": "Откройте для себя ONLYOFFICE Documents, надежный мобильный офисный пакет",
+
+  "ChooseWhereToWork": "Выберите, где работать",
+
+  "ChooseItemOnDevice": "На устройстве",
+  "ChooseItemViewAndEdit": "Просматривайте и редактируйте текстовые документы, электронные таблицы и презентации. Управляйте PDF-файлами, изображениями и видеофайлами на вашем Android-устройстве.",
+
+  "ChooseItemInOnlyOffice": "В облаке ONLYOFFICE",
+  "ChooseItemLogInTo": "Войдите в облако ONLYOFFICE, чтобы делиться документами и совместно работать над ними с вашей командой в реальном времени. Подключайте Dropbox, Google Drive, Box и другие облачные сервисы для совместного редактирования хранящихся там документов.",
+
+  "ChooseItemInYourCloud": "В вашем облаке",
+  "ChooseItemConnectNextcloud": "Подключите Nextcloud, ownCloud или любое другое облако, работающее через WebDAV. Управляйте, просматривайте и редактируйте документы прямо из приложения.",
+
+  "ChooseItemFromOther": "Из других приложений",
+  "ChooseItemImportDocuments": "Импортируйте документы из таких приложений, как iTunes, Файлы и других.",
+
+  "HaveQuestions": "Есть вопросы по функциональности? Посетите наш <0>Центр помощи</0>.",
+
+  "GetMoreWithComplete": "Получите больше с полной мобильной веб-версией",
+  "WorkOnDocumentsWithin": "Работайте с документами в мобильном браузере. Перейдите на свой веб-портал ONLYOFFICE и получите доступ к большему количеству инструментов для редактирования документов и совместной работы. Легко переключайтесь с мобильного вида и редактируйте документы в десктопном режиме.",
+
+  "GetMoreImage": "/images/templates/office-for-android/getMore/webversion.ru.png",
+  "GetMoreImage2x": "/images/templates/office-for-android/getMore/webversion.ru@2x.png",
+
+  "LearnMoreHeading": "Узнайте больше о ONLYOFFICE Documents для Android",
+
+  "LearnCardTitleRelease": "Примечания к выпуску",
+  "LearnMoreTextOnlyOfficeDocuments": "ONLYOFFICE Documents 5.5 с паролями, заливкой фигур и улучшениями интерфейса",
+  "LearnMoreSubtitleRead": "Читать статью",
+
+  "LearnCardTitleTutorials": "Руководства",
+  "LearnMoreTextCollaborative": "Совместное редактирование документов на вашем Android-устройстве",
+  "LearnMoreSubtitleLearn1": "Узнать больше",
+
+  "LearnCardTitleDeveloper": "Руководство разработчика",
+  "LearnMoreTextHowMobile": "Как работает мобильная интеграция",
+  "LearnMoreSubtitleLearn2": "Узнать больше"
+}

@@ -1,0 +1,1 @@
+export { OfficeForPloneTemplate } from "./OfficeForPlone";

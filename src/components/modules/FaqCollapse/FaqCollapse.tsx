@@ -12,6 +12,7 @@ import { CollapseGroup } from "@src/components/ui/CollapseGroup";
 const FaqCollapse = ({
   id,
   className,
+  background,
   text,
   items,
   isAccordion,
@@ -26,6 +27,7 @@ const FaqCollapse = ({
     <Section
       id={id}
       className={className}
+      background={background}
       desktopSpacing={desktopSpacing}
       tabletSpacing={tabletSpacing}
       tabletSmallSpacing={tabletSmallSpacing}

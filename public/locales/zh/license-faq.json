@@ -1,0 +1,14 @@
+{
+  "PageTitle": "ONLYOFFICE服务器社区版 | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE开源版",
+  "Q1": "什么是GNU Affero通用公共许可证v.3（AGPL v.3）以及我可以从哪里了解完整内容？",
+  "A1": "GNU Affero通用公共许可证v.3是一个免费的copyleft许可证，用于软件和其他类型的工作，旨在确保网络服务器软件与社区的合作。您可在此处阅读完整内容 - <0>https://www.gnu.org/licenses/agpl.html</0>",
+  "Q2": "ONLYOFFICE是否可供商业组织内部使用？",
+  "A2": "如果您的公司是普通商业组织，则可自由不受任何限制地将ONLYOFFICE用于开源社区。您可以在Internet和基于Intranet的服务器上自由将ONLYOFFICE用于开源社区。如果您在安装或设置ONLYOFFICE时遇到任何困难，请联系我们的<0>技术支持</0>。",
+  "Q3": "我可以在自己的应用程序或网站中使用ONLYOFFICE源代码吗？",
+  "A3": "可以，任何开发人员都可以在他们自己的应用程序或网站中使用ONLYOFFICE源代码，但是根据<0>GNU Affero通用公共许可证v.3</0>，此应用程序/网站也必须在GNU AGPL v.3许可证之下发布。请特别注意，根据GNU AGPLv.3 <1>第13章节</1>，ONLYOFFICE源代码所用于的应用程序/网站源代码也必须在GNU AGPL v.3许可证之下打开和发布。",
+  "Q4": "AGPL不适用于我们公司，ONLYOFFICE是否接受其他许可证类型？",
+  "A4": "请联系我们的<0>销售团队</0>讨论许可证相关问题。",
+  "Q5": "我可以删除ONLYOFFICE商标或将其更改为自己的商标吗？",
+  "A5": "根据GNU Affero通用公共许可证v.3（AGPL v.3）<0>第7章节</0>，我们允许补充本许可证的条款，要求保留指定的合理法律通知。鉴于此权限，我们不允许您从ONLYOFFICE产品和组件中删除原始ONLYOFFICE商标或将其更改为自己的商标。根据GNU AGPL v.3<1>第5章节</1>的要求，本程序的修改源代码和目标代码版本中的交互式用户界面必须显示适当的法律声明。如需讨论联合品牌问题，欢迎通过<2>sales@onlyoffice.com</2>联系我们的销售部门。"
+}

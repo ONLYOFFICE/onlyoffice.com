@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Online office suite for SharePoint | ONLYOFFICE Docs",
+  "PageDescription": "Edit and co-author office documents within SharePoint",
+
+  "OnlineOfficeForConnector": "Online office for SharePoint",
+  "Subheader": "With ONLYOFFICE Docs, you get a full-featured replacement for desktop Office application within your browser",
+  "GetItNow": "Get it now",
+
+  "HeroTab1ImgUrl": "/images/templates/office-for-sharepoint/hero/screen1.png",
+  "HeroTab1ImgUrl2x": "/images/templates/office-for-sharepoint/hero/screen1@2x.png",
+  "HeroTab2ImgUrl": "/images/templates/office-for-sharepoint/hero/screen2.png",
+  "HeroTab2ImgUrl2x": "/images/templates/office-for-sharepoint/hero/screen2@2x.png",
+  "HeroTab3ImgUrl": "/images/templates/office-for-sharepoint/hero/screen3.png",
+  "HeroTab3ImgUrl2x": "/images/templates/office-for-sharepoint/hero/screen3@2x.png",
+  "HeroTab4ImgUrl": "/images/templates/office-for-sharepoint/hero/screen4.png",
+  "HeroTab4ImgUrl2x": "/images/templates/office-for-sharepoint/hero/screen4@2x.png",
+  "HeroTab5ImgUrl": "/images/templates/office-for-sharepoint/hero/screen5.png",
+  "HeroTab5ImgUrl2x": "/images/templates/office-for-sharepoint/hero/screen5@2x.png",
+
+  "GetStarted": "Get started",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with SharePoint",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for SharePoint now from <0>GitHub</0>.",
+
+  "WhyOO": "Why more than 15 million people already use ONLYOFFICE Docs",
+  "Reason1": "Highest compatibility with MS Office formats",
+  "Reason2": "Abundance of styling and formatting tools",
+  "Reason3": "100% view, conversion, print, and pagination fidelity",
+  "Reason4": "Broad collaboration capabilities",
+  "Reason5": "Collection of third-party add-ons",
+  "Reason6": "Flexible access-rights management",
+  "Reason7": "Open source code available on GitHub",
+  "Reason8": "High security",
+  "Reason9": "Easy integration using WOPI",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>GitHub</0>.",
+  "HowToStartStep3": "Configure the connector and enable JWT.",
+
+  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+
+  "LearnMoreHeading": "Learn more about SharePoint ONLYOFFICE integration",
+  "Video": "Video",
+  "VideoDesc": "How to integrate ONLYOFFICE Docs with SharePoint.",
+  "VideoLink": "Watch now",
+  "Compare": "Compare",
+  "CompareDesc": "Why ONLYOFFICE Docs is the best MS Office alternative.",
+  "CompareLink": "Learn more",
+  "HelpCenter": "Help Center",
+  "HelpCenterDesc": "How to connect ONLYOFFICE Docs with SharePoint over WOPI.",
+  "HelpCenterLink": "Read now",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}

@@ -1,0 +1,1 @@
+export { InstallationSuccessGroupsTemplate } from "./InstallationSuccessGroups";

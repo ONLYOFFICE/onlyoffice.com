@@ -1,0 +1,1 @@
+export { CompareFeatures } from "./CompareFeatures";

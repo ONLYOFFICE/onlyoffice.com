@@ -101,38 +101,6 @@ const StyledHeroPrice = styled.span`
   }
 `;
 
-const StyledHeroList = styled.ul`
-  padding: 8px 0;
-  font-size: 16px;
-  line-height: 24px;
-
-  li {
-    position: relative;
-    padding-left: 32px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 24px;
-      height: 24px;
-      background-image: url("/images/icons/check-gray.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 8px;
-    }
-  }
-
-  @media ${device.mobile} {
-    font-size: 14px;
-    line-height: 21px;
-  }
-`;
-
 const StyledHeroLink = styled(Link)`
   padding: 4px 0;
   font-size: 16px;
@@ -146,68 +114,9 @@ const StyledHeroLink = styled(Link)`
   }
 `;
 
-const StyledHeroTabsList = styled.ul`
-  li {
-    position: relative;
-    padding-left: 20px;
-    font-size: 13px;
-    line-height: 18px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 4px;
-      left: 0;
-      width: 12px;
-      height: 12px;
-      background-image: url("/images/icons/check-small.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-`;
-
-const StyledHeroCheckboxes = styled.div`
-  display: grid;
-  row-gap: 8px;
-`;
-
 const StyledHeroCheckboxWrapper = styled.div`
   display: flex;
   column-gap: 8px;
-`;
-
-const StyledHeroBox = styled.div`
-  display: grid;
-  row-gap: 8px;
-`;
-
-const StyledHeroBoxItem = styled.div`
-  padding: 16px;
-  background-color: #f9f9f9;
-
-  &:not(:last-child) {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      border-bottom: 1px solid #e2e2e2;
-
-      @media ${device.mobile} {
-        left: 50%;
-        width: calc(100% - 32px);
-        transform: translateX(-50%);
-      }
-    }
-  }
 `;
 
 const StyledHeroTotal = styled.div`
@@ -271,13 +180,8 @@ export {
   StyledHeroItem,
   StyledHeroPriceWrapper,
   StyledHeroPrice,
-  StyledHeroList,
   StyledHeroLink,
-  StyledHeroTabsList,
-  StyledHeroCheckboxes,
   StyledHeroCheckboxWrapper,
-  StyledHeroBox,
-  StyledHeroBoxItem,
   StyledHeroBtnWrapper,
   StyledHeroTotal,
   StyledHeroTotalWrapper,

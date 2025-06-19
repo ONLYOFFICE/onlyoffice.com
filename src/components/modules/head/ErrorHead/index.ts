@@ -1,0 +1,1 @@
+export { ErrorHead } from "./ErrorHead";

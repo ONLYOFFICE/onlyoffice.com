@@ -4,14 +4,13 @@ import {
   StyledHeroSubHeading,
   StyledHeroItems,
 } from "./Hero.styled";
-import { ILocale } from "@src/types/locale";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { FeatureConnectorCard } from "./sub-components/FeatureConnectorCard";
 import { featuredConnectors } from "./data/featuredConnectors";
 
-const Hero = ({}: ILocale) => {
+const Hero = () => {
   const { t } = useTranslation("all-connectors");
 
   return (

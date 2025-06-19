@@ -66,7 +66,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
     return (
       <StyledInput>
         <StyledInputWrapper
-          className="input-wrapper"
+          className={`input-wrapper ${className ? className : ""}`}
           ref={ref}
           $status={status}
           $isFocused={isFocused}
@@ -92,7 +92,6 @@ const Input = forwardRef<HTMLInputElement, IInput>(
             <StyledInputField
               ref={localRef}
               id={id}
-              className={className}
               placeholder={!label || isFocused ? placeholder : undefined}
               tabIndex={tabIndex}
               value={value}
@@ -118,7 +117,9 @@ const Input = forwardRef<HTMLInputElement, IInput>(
         </StyledInputWrapper>
 
         {status === "error" && caption && !isFocused && (
-          <StyledInputCaption>{caption}</StyledInputCaption>
+          <StyledInputCaption className="input-caption">
+            {caption}
+          </StyledInputCaption>
         )}
       </StyledInput>
     );

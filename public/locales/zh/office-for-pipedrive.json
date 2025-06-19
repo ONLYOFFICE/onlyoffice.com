@@ -1,0 +1,22 @@
+{
+  "HeroImgUrl": "/images/templates/office-for-pipedrive/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-pipedrive/hero/zh/hero@2x.png",
+
+  "DocspaceAppTab1ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/zh/screen1.png",
+  "DocspaceAppTab1ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/zh/screen1@2x.png",
+
+  "DocspaceAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/zh/screen2.png",
+  "DocspaceAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/zh/screen2@2x.png",
+
+  "DocspaceAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/zh/screen3.png",
+  "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/zh/screen3@2x.png",
+
+  "DocspaceAppTab4ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/zh/screen4.png",
+  "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/zh/screen4@2x.png",
+
+  "DocsAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docs-app/zh/screen2.png",
+  "DocsAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/zh/screen2@2x.png",
+
+  "DocsAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docs-app/zh/screen3.png",
+  "DocsAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/zh/screen3@2x.png"
+}

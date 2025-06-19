@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import { ILocale } from "@src/types/locale";
 import { Layout } from "@src/components/Layout";
 import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
-import { Head } from "@src/components/modules/Head";
+import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { ResellersTemplate } from "@src/components/templates/Resellers";
@@ -20,7 +20,13 @@ const ResellersPage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            buttonId: "oo-menu-item-btn-partners",
+            linkId: "oo-menu-link-resellers",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <ResellersTemplate />

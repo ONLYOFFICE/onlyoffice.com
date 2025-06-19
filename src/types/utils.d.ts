@@ -5,7 +5,7 @@ declare module "onlyoffice-react-ui-kit/advent-announce" {
     locale?: string;
   }
 
-  export const AdventAnnounce: React.FC<IAdventAnnounce>;
+  export const OOAdventAnnounce: React.FC<IAdventAnnounce>;
 }
 
 declare module "onlyoffice-react-ui-kit/footer-menu" {
@@ -18,13 +18,32 @@ declare module "onlyoffice-react-ui-kit/footer-menu" {
   export const FooterMenu: React.FC<IFooterMenu>;
 }
 
-declare module "onlyoffice-react-ui-kit/header-menu" {
+declare module "onlyoffice-react-ui-kit/header" {
   import React from "react";
 
-  interface IHeaderMenu {
+  interface IHeader {
     locale?: string;
-    isOpen?: boolean;
+    languageSelector: {
+      languages: {
+        shortKey: string;
+        name: string;
+      }[];
+      href: string;
+    };
+    search: {
+      show: boolean;
+      onSubmit: () => void;
+      onChange: () => void;
+      value: string;
+      variant: "main" | "secondary";
+    };
+    hasPhone: boolean;
+    theme?: "white";
+    highlight?: {
+      buttonId?: string;
+      linkId?: string;
+    };
   }
 
-  export const HeaderMenu: React.FC<IHeaderMenu>;
+  export const OOHeader: React.FC<IHeader>;
 }

@@ -1,5 +1,6 @@
 import { StyledHeader } from "./Header.styled";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
+import { useHeaderStore } from "@src/store/useHeaderStore";
 
 interface IHeader {
   children: React.ReactNode;
@@ -7,7 +8,8 @@ interface IHeader {
 
 const Header = ({ children }: IHeader) => {
   const headerRef = useRef<HTMLDivElement | null>(null);
-  const [scrolled, setScrolled] = useState(false);
+  const scrolled = useHeaderStore((state) => state.scrolled);
+  const setScrolled = useHeaderStore((state) => state.setScrolled);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +26,7 @@ const Header = ({ children }: IHeader) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [setScrolled]);
 
   return (
     <>

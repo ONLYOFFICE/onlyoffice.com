@@ -1,0 +1,1 @@
+export { OfficeForSharepointTemplate } from "./OfficeForSharepoint";
