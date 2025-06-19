@@ -34,7 +34,12 @@ const SuccessStoriesPage = ({
         />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale ?? "en"} />
+        <Header
+          locale={locale ?? "en"}
+          highlight={{
+            buttonId: "oo-menu-item-btn-resources",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <SuccessStoriesTemplate
