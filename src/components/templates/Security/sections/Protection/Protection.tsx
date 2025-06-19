@@ -26,6 +26,7 @@ const Protection = () => {
             <StyledProtectionBlocks>
                 {items.map((item, index) => (
                     <FeatureLinkItem
+                    ns="security"
                     variant="horizontal"
                     customPadding="70px 0 0 0"
                     key={index}

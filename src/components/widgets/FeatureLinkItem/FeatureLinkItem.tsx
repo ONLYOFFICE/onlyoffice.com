@@ -7,7 +7,7 @@ import {
   StyledRoomHeroListNew, 
   StyledHeading } from "./FeatureLinkItem.styled";
 import { IFeatureLinkItem } from "./FeatureLinkItem.types";
-import { Trans, useTranslation } from "next-i18next";
+import { Trans } from "react-i18next";
 
 const FeatureLinkItem = ({
   variant = "vertical",
@@ -18,9 +18,9 @@ const FeatureLinkItem = ({
   linkUrl = "#",
   linkText = "",
   target,
-  textList
+  textList,
+  ns = "common"
 }: IFeatureLinkItem) => {
-  const { t } = useTranslation("security");
   return (
     <StyledFeatureLinkItem
       $variant={variant}
@@ -47,8 +47,8 @@ const FeatureLinkItem = ({
           {items.map((item, index) => (
             <StyledRoomHeroListItem key={index}>
               <Trans
-                t={t}
                 i18nKey={item.label}
+                ns={ns}
                 components={[<strong key="strong"/>]}
               />
             </StyledRoomHeroListItem>

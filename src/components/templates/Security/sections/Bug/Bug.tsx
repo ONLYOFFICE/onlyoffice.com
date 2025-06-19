@@ -1,14 +1,18 @@
 import { Container } from "@src/components/ui/Container";
 import { Section } from "@src/components/ui/Section";
 import { Trans, useTranslation } from "next-i18next"
-import { StyledBugBlock, StyledHeading, StyledText } from "./Bug.styled";
+import { 
+  StyledBugBlock, 
+  StyledHeading, 
+  StyledText, 
+  StyledTextBlock 
+} from "./Bug.styled";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 
 const Bug = () => {
     const { t } = useTranslation("security");
-    const { text } = items;
 
     return(
         <Section
@@ -26,47 +30,25 @@ const Bug = () => {
                     components={[<Text as="span" color="main" key="0"/>]}
                     />
                 </StyledHeading>
-                {Array.isArray(text.label)
-                ? text.label.map((labelKey, idx) => (
+                <StyledTextBlock>
+                  {items.text.map((item, idx) => (
                     <StyledText as="p" key={idx}>
                       <Trans
                         t={t}
-                        i18nKey={labelKey}
-                        components={
-                          text.links?.map((link, linkIdx) => (
+                        i18nKey={t(String(item.label))}
+                        components={[
                             <Link
-                              key={linkIdx}
-                              href={link.href}
-                              target={link.isExternal ? "_blank" : undefined}
+                              href={item.links?.href}
+                              target={item.links?.isExternal ? "_blank" : undefined}
                               color="main"
                               textUnderline
                               hover="underline-none"
                             />
-                          ))
-                        }
+                        ]}
                       />
                     </StyledText>
-                  ))
-                : text.label && (
-                    <StyledText as="p" textAlign="center">
-                      <Trans
-                        t={t}
-                        i18nKey={String(text.label)}
-                        components={
-                          text.links?.map((link, linkIdx) => (
-                            <Link
-                              key={linkIdx}
-                              href={link.href}
-                              target={link.isExternal ? "_blank" : undefined}
-                              color="main"
-                              textUnderline
-                              hover="underline-none"
-                            />
-                          ))
-                        }
-                      />
-                    </StyledText>
-                  )}
+                  ))}
+                </StyledTextBlock>
             </StyledBugBlock>
         </Container>
         </Section>

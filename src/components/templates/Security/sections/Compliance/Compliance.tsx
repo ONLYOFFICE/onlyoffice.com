@@ -7,7 +7,6 @@ import {
 } from "./Compliance.styled";
 import { items } from "./data/items";
 import { FeatureLinkItem } from "@src/components/widgets/FeatureLinkItem";
-import { Text } from "@src/components/ui/Text";
 
 const Compliance = () => {
     const { t } = useTranslation("security");

@@ -32,4 +32,6 @@ export interface IFeatureLinkItem {
   target?: "_self" | "_blank" | "_parent" | "_top";
   /** The text link */
   linkText?: string;
+  /** NameSpace */
+  ns?: string;
 }

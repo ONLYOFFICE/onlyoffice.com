@@ -52,6 +52,10 @@ const StyledHeading = styled(Heading)`
     }
 `;
 
+const StyledTextBlock = styled.div`
+    display: block;
+`;
+
 const StyledText = styled(Text)`
     font-size: 14px;
     line-height: 1.6em;
@@ -64,6 +68,7 @@ const StyledText = styled(Text)`
 
 export {
     StyledBugBlock,
+    StyledTextBlock,
     StyledHeading,
     StyledText
 }

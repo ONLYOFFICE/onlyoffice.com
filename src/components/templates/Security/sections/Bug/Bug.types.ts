@@ -3,9 +3,9 @@ export interface IBug {
     title: string;
     /**The text */
     text: {
-        label: React.ReactNode;
-        links?: {href: string; isExternal?: boolean} [];
-    };
+        label: string[];
+        links?: {href: string, isExternal: boolean};
+    }[];
     /**The image */
     image: { url: string; url2x?: string; height?: number };
 }
