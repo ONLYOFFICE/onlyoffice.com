@@ -20,7 +20,14 @@ const DocumentEditorPage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          theme="white"
+          highlight={{
+            buttonId: "oo-menu-item-btn-products",
+            linkId: "oo-menu-link-docspace-document-editors",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <DocumentEditorTemplate />

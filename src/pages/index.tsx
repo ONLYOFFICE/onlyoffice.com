@@ -43,7 +43,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "main",
         "SecurityFirst",
-        "GetStarted"
+        "GetStarted",
       ])),
       locale,
     },

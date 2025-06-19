@@ -29,7 +29,13 @@ const DocSpaceFamilyPackPage = ({
         <Head title={t("PageTitle")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            buttonId: "oo-menu-item-btn-pricing",
+            linkId: "oo-menu-link-pricing-docspace-family-pack",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <DocSpaceFamilyPackTemplate

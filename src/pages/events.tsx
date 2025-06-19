@@ -26,7 +26,13 @@ const EventsPage = ({ locale, events }: ILocale & IEvents) => {
         />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            buttonId: "oo-menu-item-btn-resources",
+            linkId: "oo-menu-link-resources-events",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <EventsTemplate events={events} />

@@ -20,7 +20,13 @@ const ConversionApiPage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            buttonId: "oo-menu-item-btn-developers",
+            linkId: "oo-menu-link-conversion-api",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <ConversionApiTemplate />

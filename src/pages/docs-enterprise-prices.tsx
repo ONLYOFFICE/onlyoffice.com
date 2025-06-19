@@ -32,7 +32,13 @@ const DocsEnterprisePricesPage = ({
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            buttonId: "oo-menu-item-btn-pricing",
+            linkId: "oo-menu-link-pricing-docs-enterprise",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <DocsEnterprisePricesTemplate

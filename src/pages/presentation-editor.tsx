@@ -20,7 +20,13 @@ const PresentationEditorPage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          theme="white"
+          highlight={{
+            buttonId: "oo-menu-item-btn-products",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <PresentationEditorTemplate />

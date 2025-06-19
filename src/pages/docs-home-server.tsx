@@ -29,7 +29,13 @@ const DocsHomeServerPage = ({
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            buttonId: "oo-menu-item-btn-pricing",
+            linkId: "oo-menu-link-pricing-docs-home-server",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <DocsHomeServerTemplate locale={locale} productsData={productsData} />

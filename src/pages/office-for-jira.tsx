@@ -20,7 +20,7 @@ const OfficeForJiraPage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header locale={locale} theme="white" />
       </Layout.Header>
       <Layout.Main>
         <OfficeForJiraTemplate />

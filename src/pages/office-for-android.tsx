@@ -20,7 +20,12 @@ const OfficeForAndroidPage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            buttonId: "oo-menu-item-btn-products",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <OfficeForAndroidTemplate />
@@ -35,7 +40,10 @@ const OfficeForAndroidPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "office-for-android"])),
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "office-for-android",
+      ])),
       locale,
     },
   };

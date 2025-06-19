@@ -20,7 +20,13 @@ const VirtualDataRoomsPage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            buttonId: "oo-menu-item-btn-products",
+            linkId: "oo-menu-link-docspace-virtual-data-rooms",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <VirtualDataRoomsTemplate />

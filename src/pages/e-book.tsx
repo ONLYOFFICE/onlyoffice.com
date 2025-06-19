@@ -20,7 +20,14 @@ const EBookPage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          theme="white"
+          highlight={{
+            buttonId: "oo-menu-item-btn-products",
+            linkId: "oo-menu-link-docs-e-book-creator",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <EBookTemplate />
