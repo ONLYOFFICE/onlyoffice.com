@@ -57,6 +57,7 @@ const Card = ({
         $departmentColor={department.color}
         label={t(department.label)}
         size={3}
+        fontWeight={600}
       />
       <CardHeading
         label={t(title)}

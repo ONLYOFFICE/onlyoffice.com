@@ -149,7 +149,7 @@ const items: IJobItem[] = [
     id: 9,
     department: {
       color: "green",
-      label: "JobCardDepartmentCustomerCare"
+      label: "JobCardDepartmentTechnicalSupport"
     },
     title: "JobCard9Title",
     location: "JobCardLocationRemote",
