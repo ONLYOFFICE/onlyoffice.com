@@ -105,6 +105,7 @@ const Job = () => {
           <StyledJobSelectorsWrapper>
             <StyledJobSelector>
               <StyledJobSelectorButton
+                $isOpen={isDepartmentFiltersOpen}
                 onClick={toggleFiltersDepartment}
                 label={selectedDepartment === "" ? t("JobFiltersDepartment") : selectedDepartment}
                 variant="quaternary"
@@ -123,6 +124,7 @@ const Job = () => {
             </StyledJobSelector>
             <StyledJobSelector>
               <StyledJobSelectorButton
+                $isOpen={isCountryFiltersOpen}
                 onClick={toggleFiltersCountry}
                 label={selectedCountry === "" ? t("JobFiltersCountry") : selectedCountry}
                 variant="quaternary"
