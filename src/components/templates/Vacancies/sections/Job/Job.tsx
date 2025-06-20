@@ -20,18 +20,28 @@ const Job = () => {
   const { t } = useTranslation("vacancies");
   const [isDepartmentFiltersOpen, setIsDepartmentFiltersOpen] = useState<boolean>(false);
   const [isCountryFiltersOpen, setIsCountryFiltersOpen] = useState<boolean>(false);
+  const [selectedDepartment, setSelectedDepartment] = useState<string>("");
+  const [selectedCountry, setSelectedCountry] = useState<string>("");
+  const [activeDepartment, setActiveDepartment] = useState<number>(0);
+  const [activeCountry, setActiveCountry] = useState<number>(0);
 
-  const uniqueDepartments = useMemo(() => Array.from(
-    new Set(
-      items.map((item) => t(item.department.label))
+  const uniqueDepartments = useMemo(() => [
+    t("JobFiltersReset"),
+    ...new Set(
+      items
+      .map((item) => t(item.department.label))
+      .sort((a, b) => a.localeCompare(b))
     )
-  ), [t]);
+  ], [t]);
 
-  const uniqueCountries = useMemo(() => Array.from(
-    new Set(
-      items.map((item) => t(item.country))
+  const uniqueCountries = useMemo(() => [
+    t("JobFiltersReset"),
+    ...new Set(
+      items
+      .map((item) => t(item.country))
+      .sort((a, b) => a.localeCompare(b))
     )
-  ), [t]);
+  ], [t]);
 
   const toggleFiltersDepartment = () => {
     setIsDepartmentFiltersOpen(!isDepartmentFiltersOpen);
@@ -42,6 +52,44 @@ const Job = () => {
     setIsCountryFiltersOpen(!isCountryFiltersOpen);
     setIsDepartmentFiltersOpen(false);
   }
+
+  const handleDepartmentOptionClick = (event: React.MouseEvent<HTMLElement>, index: number) => {
+    const button = event.currentTarget;
+    const text = button.textContent;
+    if (text === t("JobFiltersReset")) {
+      setSelectedDepartment("");
+    } else {
+      setSelectedDepartment(text ?? "");
+    }
+    setIsDepartmentFiltersOpen(false);
+    setActiveDepartment(index);
+  }
+
+  const handleCountryOptionClick = (event: React.MouseEvent<HTMLElement>, index: number) => {
+    const button = event.currentTarget;
+    const text = button.textContent;
+    if (text === t("JobFiltersReset")) {
+      setSelectedCountry("");
+    } else {
+      setSelectedCountry(text ?? "");
+    }
+    setIsCountryFiltersOpen(false);
+    setActiveCountry(index);
+  }
+
+  const filteredItems = useMemo(() => {
+    let filterItems = items;
+
+    if (selectedDepartment) {
+      filterItems = filterItems.filter((item) => selectedDepartment === t(item.department.label));
+    }
+
+    if (selectedCountry) {
+      filterItems = filterItems.filter((item) => selectedCountry === t(item.country));
+    }
+
+    return filterItems;
+  }, [selectedDepartment, selectedCountry, t])
 
   return (
     <Section
@@ -58,15 +106,16 @@ const Job = () => {
             <StyledJobSelector>
               <StyledJobSelectorButton
                 onClick={toggleFiltersDepartment}
-                label={t("JobFiltersDepartment")}
+                label={selectedDepartment === "" ? t("JobFiltersDepartment") : selectedDepartment}
                 variant="quaternary"
                />
                <StyledJobSelectorOptions $isOpen={isDepartmentFiltersOpen}>
-                <StyledJobSelectorOption onClick={() => setIsDepartmentFiltersOpen(false)}>
-                  {t("JobFiltersReset")}
-                </StyledJobSelectorOption>
-                {uniqueDepartments.map((department) => (
-                  <StyledJobSelectorOption key={department} onClick={() => setIsDepartmentFiltersOpen(false)}>
+                {uniqueDepartments.map((department, index) => (
+                  <StyledJobSelectorOption
+                    key={department}
+                    onClick={(event) => handleDepartmentOptionClick(event, index)}
+                    $isActive={activeDepartment === index}
+                  >
                     {department}
                   </StyledJobSelectorOption>
                 ))}
@@ -75,15 +124,16 @@ const Job = () => {
             <StyledJobSelector>
               <StyledJobSelectorButton
                 onClick={toggleFiltersCountry}
-                label={t("JobFiltersCountry")}
+                label={selectedCountry === "" ? t("JobFiltersCountry") : selectedCountry}
                 variant="quaternary"
                />
                <StyledJobSelectorOptions $isOpen={isCountryFiltersOpen}>
-                <StyledJobSelectorOption onClick={() => setIsCountryFiltersOpen(false)}>
-                  {t("JobFiltersReset")}
-                </StyledJobSelectorOption>
-                {uniqueCountries.map((country) => (
-                  <StyledJobSelectorOption key={country} onClick={() => setIsCountryFiltersOpen(false)}>
+                {uniqueCountries.map((country, index) => (
+                  <StyledJobSelectorOption
+                    key={country}
+                    onClick={(event) => handleCountryOptionClick(event, index)}
+                    $isActive={activeCountry === index}
+                  >
                     {country}
                   </StyledJobSelectorOption>
                 ))}
@@ -92,7 +142,7 @@ const Job = () => {
           </StyledJobSelectorsWrapper>
         </StyledJobHeadingWrapper>
         <StyledJobList>
-          {items.map((item) => (
+          {filteredItems.map((item) => (
             <Card
               key={item.id}
               department={item.department}

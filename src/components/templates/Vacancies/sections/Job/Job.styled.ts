@@ -45,8 +45,11 @@ const StyledJobSelectorOptions = styled.ul<{
   transition-duration: 300ms;
 `;
 
-const StyledJobSelectorOption = styled.li`
-  color: #444444;
+const StyledJobSelectorOption = styled.li<{
+  $isActive: boolean;
+}>`
+  color: ${({ $isActive }) => ($isActive ? "#FF6F3D" : "#444444")};
+  background-color: ${({ $isActive }) => ($isActive ? "#F5F5F5" : "#fff")};
   padding: 16px 32px 16px 50px;
   font-size: 16px;
   line-height: 1.4em;
