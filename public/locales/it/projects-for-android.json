@@ -1,0 +1,35 @@
+{
+    "PageTitle": "App gratuita su Android per gestire attività | ONLYOFFICE",
+    "PageDescription": "Gestisci le prestazioni del tuo team in movimento. Monitora i tuoi progetti dal tuo dispositivo Android ovunque tu sia.",
+
+    "ONLYOFFICEProjects": "<0>ONLYOFFICE Projects,</0> app per organizzare lavoro gratuita per Android",
+    "PocketProject": "Set di strumenti per la gestione dei progetti",
+    "HeroImgUrl": "/images/templates/projects-for-android/hero/it/googleplay.png",
+
+    "ManageYourTeam": "Gestisci le prestazioni del tuo team in movimento",
+    "TrackCurrentWorkload": "Monitora il carico di lavoro attuale",
+    "QuicklyBrowseSortAndFilter": "Sfoglia, ordina e filtra dei progetti e le attività presenti, modifica, cambia lo stato, i responsabili e le date di scadenza. Accedi i documenti di lavoro allegati a ogni progetto.",
+    "ManageNewProjects": "Gestisci i progetti nuovi",
+    "CreateNewProjects": "Crea i nuovi progetti e varie attività, definisci le responsabilità tra i membri del team. Imposta le priorità e aggiungi le attività secondarie. Unisci le attività creando le pietre miliari per programmare meglio il carico di lavoro.",
+    "Communicate": "Comunica",
+    "StartProjectDiscussions": "Inizia a discutere i progetti per raccogliere le idee, risolvi i problemi, fai le domande e fai gli annunci. Lascia i commenti per prendere parte alle discussioni.",
+    "KeepYourProjectsSafe": "Mantieni i tuoi progetti al sicuro",
+    "MakeSureNoUnauthorized": "Nessun utente non autorizzato può accedere ai tuoi progetti. Proteggi l'applicazione con un codice, attiva la 2FA o autenticazione con un'impronta digitale.",
+    "WorkComfortably": "Lavora comodamente",
+    "EnjoyAnIntuitiveInterface": "Approfitta di un'interfaccia intuitiva per navigare perfettamente tra tutti i tuoi progetti e le attività. Proteggi la vista in ambiente poco illuminato attivando la Modalità scura.",
+
+    "HowToStart": "Come iniziare",
+    "CreateYourONLYOFFICEWorkspace": "<0>1.</0> Crea il tuo account <1>ONLYOFFICE Workspace</1> se non ce l'hai.",
+    "LaunchInTheCloud": "Esegui nel cloud",
+    "RunOnYourOwnServer": "o sul server proprio",
+    "ConnectTheApp": "<0>2.</0> Collega l'app con il tuo portale ONLYOFFICE Workspace.",
+    "CreateAndTrack": "<0>3.</0> Crea e segui progetti e attività in movimento.",
+
+    "YourBenefits": "I tuoi vantaggi",
+    "QuickAccessToYourWorkflows": "Accesso rapido ai tuoi flussi di lavoro in ONLYOFFICE",
+    "CleanAndIntuitiveUI": "Interfaccia utente pulita e intuitiva",
+    "NoAds": "Nessuna pubblicità o acquisti In-app",
+    "RegularUpdates": "Aggiornamenti regolari",
+    "TechnicalSupport": "Supporto tecnico",
+    "OnlineDocumentation": "Documentazione online"
+}
