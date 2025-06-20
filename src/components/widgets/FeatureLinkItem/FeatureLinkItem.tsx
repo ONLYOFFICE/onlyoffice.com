@@ -7,7 +7,7 @@ import {
   StyledRoomHeroListNew, 
   StyledHeading } from "./FeatureLinkItem.styled";
 import { IFeatureLinkItem } from "./FeatureLinkItem.types";
-import { Trans } from "react-i18next";
+import { Trans } from "next-i18next";
 
 const FeatureLinkItem = ({
   variant = "vertical",
@@ -49,7 +49,7 @@ const FeatureLinkItem = ({
               <Trans
                 i18nKey={item.label}
                 ns={ns}
-                components={[<strong key="strong"/>]}
+                components={[<strong key="0"/>]}
               />
             </StyledRoomHeroListItem>
           ))}

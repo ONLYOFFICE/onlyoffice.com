@@ -42,17 +42,19 @@ const Authentication = () => {
                                     key={index}
                                     t={t}
                                     i18nKey={String(item)}
-                                    components={
-                                        text.links?.map((link, index) => (
-                                        <Link
-                                        key={index}
-                                        href={link.href}
-                                        target={link.isExternal ? "_blank" : undefined}
-                                        color="main"
-                                        textUnderline
-                                        hover="underline-none"
-                                        />
-                                    ))}
+                                    components={[
+                                        <strong key="0" />,
+                                        ...(text.links?.map((link, linkIdx) => (
+                                            <Link
+                                            key={linkIdx + 1}
+                                            href={link.href}
+                                            target={link.isExternal ? "_blank" : undefined}
+                                            color="main"
+                                            textUnderline
+                                            hover="underline-none"
+                                            />
+                                        )) ?? []),
+                                        ]}
                                 />
                                 </StyledFeatureItemText>
                             )),
