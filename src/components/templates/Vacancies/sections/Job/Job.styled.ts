@@ -25,7 +25,40 @@ const StyledJobSelectorsWrapper = styled.div`
   }
 `;
 
-const StyledJobSelector = styled.div``;
+const StyledJobSelector = styled.div`
+  position: relative;
+`;
+
+const StyledJobSelectorOptions = styled.ul<{
+  $isOpen: boolean;
+}>`
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 8px 0;
+  box-shadow: 0px 7px 25px rgba(85, 85, 85, 0.15);
+  border-radius: 3px;
+  z-index: 2;
+  opacity: ${({ $isOpen }) => ($isOpen ? 1 : 0)};
+  visibility: ${({ $isOpen }) => ($isOpen ? "visible" : "hidden")};
+  transition-duration: 300ms;
+`;
+
+const StyledJobSelectorOption = styled.li`
+  color: #444444;
+  padding: 16px 32px 16px 50px;
+  font-size: 16px;
+  line-height: 1.4em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition-duration: 300ms;
+
+  &:hover {
+    color: #FF6F3D;
+    background-color: #F5F5F5;
+  }
+`;
 
 const StyledJobSelectorButton = styled(Button)`
   padding: 12px 32px 12px 16px;
@@ -57,6 +90,8 @@ export {
   StyledJobHeadingWrapper,
   StyledJobSelectorsWrapper,
   StyledJobSelector,
+  StyledJobSelectorOptions,
+  StyledJobSelectorOption,
   StyledJobSelectorButton,
   StyledJobList,
 }

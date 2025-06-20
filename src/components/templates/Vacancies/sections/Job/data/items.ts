@@ -3,6 +3,7 @@ import { IJobItem } from "../../../Vacancies.types";
 const items: IJobItem[] = [
   {
     id: 1,
+    country: "JobCard1Country",
     department: {
       color: "red",
       label: "JobCardDepartmentSales"
@@ -21,6 +22,7 @@ const items: IJobItem[] = [
   },
   {
     id: 2,
+    country: "JobCard2Country",
     department: {
       color: "red",
       label: "JobCardDepartmentSales"
@@ -39,6 +41,7 @@ const items: IJobItem[] = [
   },
   {
     id: 3,
+    country: "JobCard3Country",
     department: {
       color: "red",
       label: "JobCardDepartmentSales"
@@ -57,6 +60,7 @@ const items: IJobItem[] = [
   },
   {
     id: 4,
+    country: "JobCard4Country",
     department: {
       color: "red",
       label: "JobCardDepartmentSales"
@@ -75,6 +79,7 @@ const items: IJobItem[] = [
   },
   {
     id: 5,
+    country: "JobCard5Country",
     department: {
       color: "red",
       label: "JobCardDepartmentSales"
@@ -93,6 +98,7 @@ const items: IJobItem[] = [
   },
   {
     id: 6,
+    country: "JobCard6Country",
     department: {
       color: "red",
       label: "JobCardDepartmentSales"
@@ -111,6 +117,7 @@ const items: IJobItem[] = [
   },
   {
     id: 7,
+    country: "JobCard7Country",
     department: {
       color: "green",
       label: "JobCardDepartmentCustomerCare"
@@ -129,6 +136,7 @@ const items: IJobItem[] = [
   },
   {
     id: 8,
+    country: "JobCard8Country",
     department: {
       color: "blue",
       label: "JobCardDepartmentMarketing"
@@ -147,6 +155,7 @@ const items: IJobItem[] = [
   },
   {
     id: 9,
+    country: "JobCard9Country",
     department: {
       color: "green",
       label: "JobCardDepartmentTechnicalSupport"

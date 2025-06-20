@@ -6,6 +6,10 @@
 
   "JobHeading": "Job openings",
 
+  "JobFiltersDepartment": "Department",
+  "JobFiltersCountry": "Country",
+  "JobFiltersReset": "Reset",
+
   "JobCardDepartmentSales": "Sales",
   "JobCardDepartmentCustomerCare": "Customer care",
   "JobCardDepartmentMarketing": "Marketing",
@@ -24,6 +28,7 @@
   "JobCardHeadingSkills": "Skills",
   "JobCardHeadingBenefits": "Benefits",
 
+  "JobCard1Country": "Germany",
   "JobCard1Title": "Account manager Germany",
   "JobCard1Description": "We are looking for a customer-focused, revenue-driven Account Manager to create long-term, trusting relationships with our customers in Germany.",
   "JobCard1Requirements": [
@@ -52,6 +57,7 @@
     "Competitive salary plus commission"
   ],
 
+  "JobCard2Country": "France",
   "JobCard2Title": "Account manager France",
   "JobCard2Description": "We are looking for a customer-focused, revenue-driven Account Manager to create long-term, trusting relationships with our customers in France.",
   "JobCard2Requirements": [
@@ -80,6 +86,7 @@
     "Competitive salary plus commission"
   ],
 
+  "JobCard3Country": "Japan",
   "JobCard3Title": "Account manager Japan",
   "JobCard3Description": "We are looking for a customer-focused, revenue-driven Account Manager to create long-term, trusting relationships with our customers in Japan.",
   "JobCard3Requirements": [
@@ -108,6 +115,7 @@
     "Competitive salary plus commission"
   ],
 
+  "JobCard4Country": "Germany",
   "JobCard4Title": "Sales Representative Germany",
   "JobCard4Description": "We are looking for a revenue-driven Sales Representative to actively seek out and engage customer prospects.",
   "JobCard4Requirements": [
@@ -135,6 +143,7 @@
     "Competitive salary plus commission"
   ],
 
+  "JobCard5Country": "France",
   "JobCard5Title": "Sales Representative France",
   "JobCard5Description": "We are looking for a revenue-driven Sales Representative to actively seek out and engage customer prospects.",
   "JobCard5Requirements": [
@@ -162,6 +171,7 @@
     "Competitive salary plus commission"
   ],
 
+  "JobCard6Country": "Japan",
   "JobCard6Title": "Sales Representative Japan",
   "JobCard6Description": "We are looking for a revenue-driven Sales Representative to actively seek out and engage customer prospects.",
   "JobCard6Requirements": [
@@ -189,6 +199,7 @@
     "Competitive salary plus commission"
   ],
 
+  "JobCard7Country": "Armenia",
   "JobCard7Title": "Customer care manager Armenia",
   "JobCard7Description": "We are looking for an experienced Customer Care Manager to join our international team. You will be responsible for customer onboarding processes as well as managing relationship with ONLYOFFICE customers.",
   "JobCard7Requirements": [
@@ -213,6 +224,7 @@
     "Motivated and creative teammates"
   ],
 
+  "JobCard8Country": "Serbia",
   "JobCard8Title": "Technical writer Serbia",
   "JobCard8Description": "We are looking for a technical writer to contribute to the main company product.",
   "JobCard8Requirements": [
@@ -239,6 +251,7 @@
     "Decent salary"
   ],
 
+  "JobCard9Country": "China",
   "JobCard9Title": "Technical support specialist China",
   "JobCard9Description": "We are looking for a technical support specialist to assist our customers with technical questions and issues when using our products.",
   "JobCard9Requirements": [

@@ -18,6 +18,7 @@ interface ICardProps {
 
 interface IJobItem extends ICardProps {
   id: number;
+  country: string;
 }
 
 export type { ICardProps, IJobItem };

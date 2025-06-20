@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
@@ -28,7 +28,7 @@ import {
   CardContent,
 } from "./Card.styled";
 
-const Card = ({
+const CardComponent = ({
   department,
   title,
   location,
@@ -136,5 +136,7 @@ const Card = ({
     </CardItem>
   );
 };
+
+const Card = memo(CardComponent);
 
 export { Card };
