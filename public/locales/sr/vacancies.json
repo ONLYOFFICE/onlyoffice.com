@@ -1,0 +1,288 @@
+{
+  "PageTitle": "ONLYOFFICE - Офисные приложения в облаке",
+
+  "HeroHeadingWeAreHiring": "Zapošljavamo",
+  "HeroTextJoin": "Pridružite se <0>ONLYOFFICE timu</0> danas",
+
+  "JobHeading": "Otvorena radna mesta",
+
+  "JobFiltersDepartment": "Odeljenje",
+  "JobFiltersCountry": "Zemlja",
+  "JobFiltersReset": "Poništi",
+
+  "JobCardDepartmentSales": "Prodaja",
+  "JobCardDepartmentCustomerCare": "Briga o kupcima",
+  "JobCardDepartmentMarketing": "Marketing",
+  "JobCardDepartmentTechnicalSupport": "Tehnička podrška",
+
+  "JobCardLocationRemote": "Remote",
+  "JobCardTimeFullTime": "Full time",
+  "JobCardLanguageEnDe": "English and German",
+  "JobCardLanguageEnFr": "English and French",
+  "JobCardLanguageEnJa": "English and Japanese",
+  "JobCardLanguageEnAr": "English and Armenian",
+  "JobCardLanguageEnSr": "English and Serbian",
+  "JobCardLanguageEnCn": "English and Chineese",
+
+  "JobCardHeadingRequirements": "Requirements",
+  "JobCardHeadingSkills": "Skills",
+  "JobCardHeadingBenefits": "Benefits",
+
+  "JobCard1Country": "Nemačka",
+  "JobCard1Title": "Account manager, Germany (m/w/d)",
+  "JobCard1Description": "We are looking for a customer-focused, revenue-driven Account Manager to create long-term, trusting relationships with our customers in Germany.",
+  "JobCard1Requirements": [
+    "Build and maintain strong, long-lasting client relationships based on trust and respect",
+    "Work with Professional Service and Customer Care teams to better understand and respond to the customers needs and challenges",
+    "Assist customers with technical questions",
+    "Identify clients who would benefit from Enterprise functionality and other services",
+    "Consult with the customer on how to improve ONLYOFFICE to better meet their needs",
+    "Manage and negotiate renewals",
+    "Help customers with billing queries and payment"
+  ],
+  "JobCard1Skills": [
+    "2+ years of experience with customer service or sales account management",
+    "Comfortable working with remote teams",
+    "Reliable, smart, honest, organized, positive, personable, self-motivated",
+    "Excellent written and spoken English and German communication skills",
+    "Comfortable with CRM, office and video communication tools",
+    "Quick learner and eager to use new tools",
+    "Proven ability to juggle multiple account management projects at a time, while maintaining sharp attention to detail"
+  ],
+  "JobCard1Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Competitive salary plus commission"
+  ],
+
+  "JobCard2Country": "Francuska",
+  "JobCard2Title": "Account manager, France (m/w/d)",
+  "JobCard2Description": "We are looking for a customer-focused, revenue-driven Account Manager to create long-term, trusting relationships with our customers in France.",
+  "JobCard2Requirements": [
+    "Build and maintain strong, long-lasting client relationships based on trust and respect",
+    "Work with Professional Service and Customer Care teams to better understand and respond to the customers needs and challenges",
+    "Assist customers with technical questions",
+    "Identify clients who would benefit from Enterprise functionality and other services",
+    "Consult with the customer on how to improve ONLYOFFICE to better meet their needs",
+    "Manage and negotiate renewals",
+    "Help customers with billing queries and payment"
+  ],
+  "JobCard2Skills": [
+    "2+ years of experience with customer service or sales account management",
+    "Comfortable working with remote teams",
+    "Reliable, smart, honest, organized, positive, personable, self-motivated",
+    "Excellent written and spoken English and French communication skills",
+    "Comfortable with CRM, office and video communication tools",
+    "Quick learner and eager to use new tools",
+    "Proven ability to juggle multiple account management projects at a time, while maintaining sharp attention to detail"
+  ],
+  "JobCard2Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Competitive salary plus commission"
+  ],
+
+  "JobCard3Country": "Japan",
+  "JobCard3Title": "Account manager, Japan (m/w/d)",
+  "JobCard3Description": "We are looking for a customer-focused, revenue-driven Account Manager to create long-term, trusting relationships with our customers in Japan.",
+  "JobCard3Requirements": [
+    "Build and maintain strong, long-lasting client relationships based on trust and respect",
+    "Work with Professional Service and Customer Care teams to better understand and respond to the customers needs and challenges",
+    "Assist customers with technical questions",
+    "Identify clients who would benefit from Enterprise functionality and other services",
+    "Consult with the customer on how to improve ONLYOFFICE to better meet their needs",
+    "Manage and negotiate renewals",
+    "Help customers with billing queries and payment"
+  ],
+  "JobCard3Skills": [
+    "2+ years of experience with customer service or sales account management",
+    "Comfortable working with remote teams",
+    "Reliable, smart, honest, organized, positive, personable, self-motivated",
+    "Excellent written and spoken English and Japanese communication skills",
+    "Comfortable with CRM, office and video communication tools",
+    "Quick learner and eager to use new tools",
+    "Proven ability to juggle multiple account management projects at a time, while maintaining sharp attention to detail"
+  ],
+  "JobCard3Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Competitive salary plus commission"
+  ],
+
+  "JobCard4Country": "Nemačka",
+  "JobCard4Title": "Sales Representative, Germany (m/w/d)",
+  "JobCard4Description": "We are looking for a revenue-driven Sales Representative to actively seek out and engage customer prospects.",
+  "JobCard4Requirements": [
+    "Manage opportunities through the entire cycle",
+    "Present, promote and sell ONLYOFFICE products/services to existing and prospective customers",
+    "Establish, develop and maintain positive business and customer relationships",
+    "Coordinate sales effort with team members, other departments, and partners",
+    "Analyze the territory/market’s potential, track sales",
+    "Provide reports on customer needs, problems, interests, competitive activities, and potential for new services"
+  ],
+  "JobCard4Skills": [
+    "Excellent selling, negotiation and communication skills",
+    "Comfortable working with remote teams",
+    "Reliable, smart, honest, organized, positive, personable, self-motivated",
+    "Excellent written and spoken English and German communication skills",
+    "Comfortable with CRM, office and video communication tools",
+    "Quick learner and eager to use new tools",
+    "Proven ability to juggle multiple account management projects at a time, while maintaining sharp attention to detail"
+  ],
+  "JobCard4Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Competitive salary plus commission"
+  ],
+
+  "JobCard5Country": "Francuska",
+  "JobCard5Title": "Sales Representative, France (m/w/d)",
+  "JobCard5Description": "We are looking for a revenue-driven Sales Representative to actively seek out and engage customer prospects.",
+  "JobCard5Requirements": [
+    "Manage opportunities through the entire cycle",
+    "Present, promote and sell ONLYOFFICE products/services to existing and prospective customers",
+    "Establish, develop and maintain positive business and customer relationships",
+    "Coordinate sales effort with team members, other departments, and partners",
+    "Analyze the territory/market’s potential, track sales",
+    "Provide reports on customer needs, problems, interests, competitive activities, and potential for new services"
+  ],
+  "JobCard5Skills": [
+    "Excellent selling, negotiation and communication skills",
+    "Comfortable working with remote teams",
+    "Reliable, smart, honest, organized, positive, personable, self-motivated",
+    "Excellent written and spoken English and French communication skills",
+    "Comfortable with CRM, office and video communication tools",
+    "Quick learner and eager to use new tools",
+    "Proven ability to juggle multiple account management projects at a time, while maintaining sharp attention to detail"
+  ],
+  "JobCard5Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Competitive salary plus commission"
+  ],
+
+  "JobCard6Country": "Japan",
+  "JobCard6Title": "Sales Representative, Japan (m/w/d)",
+  "JobCard6Description": "We are looking for a revenue-driven Sales Representative to actively seek out and engage customer prospects.",
+  "JobCard6Requirements": [
+    "Manage opportunities through the entire cycle",
+    "Present, promote and sell ONLYOFFICE products/services to existing and prospective customers",
+    "Establish, develop and maintain positive business and customer relationships",
+    "Coordinate sales effort with team members, other departments, and partners",
+    "Analyze the territory/market’s potential, track sales",
+    "Provide reports on customer needs, problems, interests, competitive activities, and potential for new services"
+  ],
+  "JobCard6Skills": [
+    "Excellent selling, negotiation and communication skills",
+    "Comfortable working with remote teams",
+    "Reliable, smart, honest, organized, positive, personable, self-motivated",
+    "Excellent written and spoken English and Japanese communication skills",
+    "Comfortable with CRM, office and video communication tools",
+    "Quick learner and eager to use new tools",
+    "Proven ability to juggle multiple account management projects at a time, while maintaining sharp attention to detail"
+  ],
+  "JobCard6Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Competitive salary plus commission"
+  ],
+
+  "JobCard7Country": "Jermenija",
+  "JobCard7Title": "Customer care manager, Armenia (m/w/d)",
+  "JobCard7Description": "We are looking for an experienced Customer Care Manager to join our international team. You will be responsible for customer onboarding processes as well as managing relationship with ONLYOFFICE customers.",
+  "JobCard7Requirements": [
+    "Provide professional demonstrations, product consultancy and functional support",
+    "Ensure high levels of customer satisfaction through effective support and excellent customer service",
+    "Work closely with QA team and developers to provide an effective timely support",
+    "Consult with the customer on how to improve ONLYOFFICE to better meet their needs",
+    "Gather customer feedback, analyze and pass along to the product team in order to help build a better product",
+    "Utilize reporting to analyze questions and issues"
+  ],
+  "JobCard7Skills": [
+    "Comfortable working with remote teams",
+    "Reliable, smart, honest, organized, positive, personable, self-motivated",
+    "Excellent written and spoken English and Armenian communication skills",
+    "Comfortable with CRM, office and video communication tools",
+    "Quick learner and eager to use new tools"
+  ],
+  "JobCard7Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates"
+  ],
+
+  "JobCard8Country": "Srbija",
+  "JobCard8Title": "Technical writer, Serbia (m/w/d)",
+  "JobCard8Description": "We are looking for a technical writer to contribute to the main company product.",
+  "JobCard8Requirements": [
+    "Work with API documentation",
+    "Improve and maintain the existing product API",
+    "Draw up tech assignments for developers to write new test cases"
+  ],
+  "JobCard8Skills": [
+    "Higher specialized education in the field of IT",
+    "Programming experience, ability to understand API documentation at the level of a software developer",
+    "Ability to evaluate the product API from the position of a third-party developer",
+    "Analytical mindset and ability to quickly process information",
+    "Readiness for discussions in a team and adequate attitude to constructive feedback",
+    "Ability to justify your own suggestions",
+    "Understanding that in addition to the interests of users, there is a commercial interest of the company",
+    "English proficiency level enough for reading and writing technical documentation, including API",
+    "Experience in writing and maintaining API documentation will be a huge advantage"
+  ],
+  "JobCard8Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Decent salary"
+  ],
+
+  "JobCard9Country": "Kina",
+  "JobCard9Title": "Technical support specialist, China (m/w/d)",
+  "JobCard9Description": "We are looking for a technical support specialist to assist our customers with technical questions and issues when using our products.",
+  "JobCard9Requirements": [
+    "Provide customer tech support (remote access, client-side product administration, preparing necessary instructions)",
+    "Respond to customer queries in a timely and accurate way",
+    "Interact with the development and testing departments",
+    "Directly participate in the processes of software testing and design"
+  ],
+  "JobCard9Skills": [
+    "Proficiency in English, starting from the B2 level and higher",
+    "Fluent Chinese",
+    "Confident knowledge of client and server operating systems",
+    "Experience in customer support or similar field as well as experience in Linux administration will be a huge advantage",
+    "Motivation, the desire to improve, the willingness to strive to make changes"
+  ],
+  "JobCard9Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Decent salary"
+  ],
+
+  "JobCardAreYouInterested": "Da li ste zainteresovani za ovu poziciju? Prijavite se odmah. Kontaktirajte nas na <0>jobs@onlyoffice.com</0> sa svojim rezimeom.",
+
+  "AboutContentHeading": "O Ascensio System Sia",
+  "AboutContentText": [
+    "Mi smo međunarodna kompanija otvorenog koda sa misijom da svima pružimo najinovativnije web aplikacije za kancelariju.",
+    "Naš radni život u kompaniji zasniva se na uzajamnom poverenju i našem zajedničkom cilju koji nas ujedinjuje, održava motivisanim i informisanim, i pruža inspiraciju za inovacije. Držimo se strategije kada su svi angažovani u onome što vole, u čemu su zaista dobri. To nam omogućava da kreiramo i promovišemo visokokvalitetan i koristan proizvod koji već ima solidnu bazu kupaca.",
+    "Kao kompanija sa zaposlenima u <0>više od 30 zemalja</0> i širokom zajednicom saradnika širom sveta, naš korporativni jezik je engleski. Mnogi od nas rade iz kućnih kancelarija sa fleksibilnim rasporedom, tako da nije važno odakle dolazite.",
+    "U <0>Ascensio System Sia</0>, pružamo jednake uslove za sve članove osoblja i sve kandidate bez obzira na rasu, boju, religiju, pol, seksualnu orijentaciju, percepciju ili identitet pola, nacionalno poreklo, starosnu dob, bračni status, status veterana ili status invaliditeta. Samo su vaše kvalifikacije, iskustvo i entuzijazam važni za nas.",
+    "<0>Pridružite se našoj velikoj porodici otvorenog koda i prijavite se za posao! Kontaktirajte nas na</0> <1>jobs@onlyoffice.com</1>"
+  ]
+}
