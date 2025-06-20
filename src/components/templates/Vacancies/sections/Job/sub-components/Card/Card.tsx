@@ -104,7 +104,7 @@ const CardComponent = ({
             </CardSkillsItem>
           ))}
         </CardSkillsList>
-        <CardBenefitsHeading size={5} level={3} label={t("Benefits")} />
+        <CardBenefitsHeading size={5} level={3} label={t("JobCardHeadingBenefits")} />
         <CardBenefitsList>
           {benefitsList.map((benefit, index) => (
             <CardBenefitsItem key={benefit + index}>
