@@ -8,14 +8,20 @@ declare module "onlyoffice-react-ui-kit/advent-announce" {
   export const OOAdventAnnounce: React.FC<IAdventAnnounce>;
 }
 
-declare module "onlyoffice-react-ui-kit/footer-menu" {
+declare module "onlyoffice-react-ui-kit/footer" {
   import React from "react";
 
-  interface IFooterMenu {
+  interface IFooter {
     locale?: string;
+    languages: {
+      key: string;
+      shortKey: string;
+      name: string;
+      href: string
+    }[];
   }
 
-  export const FooterMenu: React.FC<IFooterMenu>;
+  export const OOFooter: React.FC<IFooter>;
 }
 
 declare module "onlyoffice-react-ui-kit/header" {
@@ -23,13 +29,14 @@ declare module "onlyoffice-react-ui-kit/header" {
 
   interface IHeader {
     locale?: string;
-    languageSelector: {
-      languages: {
-        shortKey: string;
-        name: string;
-      }[];
-      href: string;
-    };
+    borderColor?: string;
+    backgroundColor?: string;
+    languages: {
+      key: string;
+      shortKey: string;
+      name: string;
+      href: string
+    }[];
     search: {
       show: boolean;
       onSubmit: () => void;
