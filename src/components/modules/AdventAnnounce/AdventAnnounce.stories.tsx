@@ -1,11 +1,11 @@
 import { Meta, StoryFn } from "@storybook/react";
-import { AdventAnnounceBanner } from "./AdventAnnounceBanner";
+import { AdventAnnounce } from "./AdventAnnounce";
 import { ILocale } from "@src/types/locale";
 import { languages } from "@src/config/data/languages";
 
 export default {
-  title: "Modules/AdventAnnounceBanner",
-  component: AdventAnnounceBanner,
+  title: "Modules/AdventAnnounce",
+  component: AdventAnnounce,
   parameters: {
     docs: {
       description: {
@@ -20,10 +20,10 @@ export default {
       options: languages.map((lang) => lang.shortKey),
     },
   },
-} as Meta<typeof AdventAnnounceBanner>;
+} as Meta<typeof AdventAnnounce>;
 
 const Template: StoryFn<ILocale> = (args: ILocale) => (
-  <AdventAnnounceBanner {...args} />
+  <AdventAnnounce {...args} />
 );
 
 export const Default = Template.bind({});
