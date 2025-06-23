@@ -1,0 +1,1 @@
+export { AwardsBanner } from "./AwardsBanner";
