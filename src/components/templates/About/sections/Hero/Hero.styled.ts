@@ -7,7 +7,7 @@ import { Text } from "@src/components/ui/Text";
 const StyledHeroSection = styled(Section)`
   background-image: url("/images/templates/about/hero/hero-img.svg");
   background-repeat: no-repeat;
-  background-position-y: 30%;
+  background-position-y: 47%;
   background-position-x: calc(50% + 260px);
   margin-top: -72px;
 
