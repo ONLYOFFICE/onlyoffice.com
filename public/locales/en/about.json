@@ -7,5 +7,12 @@
   "HeroTextOurMission": "Our mission is to bring the most innovative web office apps to everyone",
   "HeroQuotesTextWeWant": "We want our online editors to be ideal, like a Swiss watch",
   "HeroQuotesTitleLevBannov": "Lev Bannov",
-  "HeroQuotesSubtitleFounder": "Founder and CEO"
+  "HeroQuotesSubtitleFounder": "Founder and CEO",
+
+  "AscensioSystem": "Ascensio System SIA - home of the <0>ONLYOFFICE</0>",
+  "AscensioDescriptions": [
+    "ONLYOFFICE is a project developed by experienced IT experts from Ascensio System SIA, leading IT company with headquarters in Riga, Latvia. Originally ONLYOFFICE was designed for internal team collaboration.",
+    "An attempt to introduce it to a wider audience proved to be successful: ONLYOFFICE received very positive feedback from the Internet community. As a result, its functionality was considerably revised and expanded that brought about a high and stable growth of users from different countries.",
+    "Nowadays, ONLYOFFICE is an international, open source project with employees and contributors in more than 30 countries. <0>The holding company</0> in Singapore unites our offices around the world under the ONLYOFFICE brand. For now, we have departments in Riga, Singapore, London, Dallas, Belgrade, Yerevan, Tashkent and Shanghai. Would like to join our big open source family? Check how to <1>become a contributor</1> or discover <2>job openings</2>."
+  ]
 }
