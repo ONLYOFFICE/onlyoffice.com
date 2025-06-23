@@ -14,5 +14,10 @@
     "ONLYOFFICE is a project developed by experienced IT experts from Ascensio System SIA, leading IT company with headquarters in Riga, Latvia. Originally ONLYOFFICE was designed for internal team collaboration.",
     "An attempt to introduce it to a wider audience proved to be successful: ONLYOFFICE received very positive feedback from the Internet community. As a result, its functionality was considerably revised and expanded that brought about a high and stable growth of users from different countries.",
     "Nowadays, ONLYOFFICE is an international, open source project with employees and contributors in more than 30 countries. <0>The holding company</0> in Singapore unites our offices around the world under the ONLYOFFICE brand. For now, we have departments in Riga, Singapore, London, Dallas, Belgrade, Yerevan, Tashkent and Shanghai. Would like to join our big open source family? Check how to <1>become a contributor</1> or discover <2>job openings</2>."
-  ]
+  ],
+
+  "PeopleTextOnlyOffice": "ONLYOFFICE is now used by more than",
+  "PeopleTextCount": "15 000 000 people",
+  "PeopleTextAllOver": "all over the world",
+  "PeopleTextCustomer": "Customer stories"
 }
