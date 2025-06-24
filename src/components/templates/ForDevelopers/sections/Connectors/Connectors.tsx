@@ -13,8 +13,9 @@ const Connectors = () => {
   return (
     <Section
       background="#f9f9f9"
-      tabletSpacing={["80px", "112px"]}
-      tabletSmallSpacing={["88px", "88px"]}
+      desktopSpacing={["88px", "88px"]}
+      tabletSpacing={["56px", "56px"]}
+      tabletSmallSpacing={["56px", "56px"]}
     >
       <Container>
         <StyledConnectors>

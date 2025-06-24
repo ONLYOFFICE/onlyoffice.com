@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
@@ -12,6 +11,10 @@ const StyledFeaturesContent = styled.div`
     border-bottom: 1px solid #E2E2E2;
     padding: 112px 0;
 
+    @media ${device.mobile} {
+      padding: 48px 0;
+    }
+
     &:first-child {
       padding-top: 0;
     }
@@ -21,11 +24,11 @@ const StyledFeaturesContent = styled.div`
       padding-bottom: 0;
     }
 
-    &:nth-child(2n) {
-      text-align: right;
+      &:nth-child(2n) {
+        text-align: right;
 
       .featureList {
-      padding-right: 40px;
+        padding-right: 40px;
 
         &::before {
           content: "";
@@ -38,14 +41,29 @@ const StyledFeaturesContent = styled.div`
           background: #ff6f3d;
           transform: rotate(45deg) translateY(-50%);
 
-        @media ${device.mobile} {
-          top: 8px;
+          @media ${device.mobile} {
+            top: 8px;
+          }
         }
       }
-    }
 
-      @media ${device.tabletS} {
+      @media ${device.tablet} {
         text-align: left;
+
+        .featureList {
+          padding-left: 32px;
+
+          &::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            left: 0;
+            margin-right: 20px;
+            position: absolute;
+            background: #ff6f3d;
+            transform: rotate(45deg) translateY(-50%);
+          }
+        }
       }
     }
   }

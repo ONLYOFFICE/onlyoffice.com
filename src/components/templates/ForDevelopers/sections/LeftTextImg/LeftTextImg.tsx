@@ -6,6 +6,7 @@ import {
   StyledLeftTextImgSection,
   StyledLeftTextImgText,
   StyledLeftTextImgWrapper,
+  StyledLeftTextImgTextAfter,
 } from "./LeftTextImg.styled";
 import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";
@@ -48,9 +49,27 @@ const LeftTextImg = () => {
             </StyledLeftTextImgText>
             <Button
               as="a"
+              variant="quaternary"
+              id="app-directory-for-developers"
               href="/app-directory"
               label={t("AvailablePlugins")}
             />
+            <StyledLeftTextImgTextAfter>
+              <Trans
+                t={t}
+                i18nKey="WantToDiscussOrSubmitAPlugin"
+                components={[
+                  <Link
+                    href="marketing@onlyoffice.com"
+                    color="main"
+                    textUnderline
+                    hover="underline-none"
+                    key="0"
+                    target="_blank"
+                  />,
+                ]}
+              />
+            </StyledLeftTextImgTextAfter>
           </div>
           <StyledLeftTextImgImage />
         </StyledLeftTextImgWrapper>

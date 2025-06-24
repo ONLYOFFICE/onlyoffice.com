@@ -6,19 +6,20 @@ import { device } from "@src/utils/device";
 
 const StyledQuestionsContainer = styled(Container)`
   position: relative;
+  z-index: 0;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -137px;
+    bottom: -112px;
     right: 39px;
     width: 246px;
-    height: 246px;
+    height: 215px;
     background-image: url("/images/templates/conversion-api/questions/letter.svg");
     background-repeat: no-repeat;
 
-    @media ${device.tabletS} {
-      bottom: -130px;
+    @media ${device.tablet} {
+      bottom: -88px;
       right: 18px;
     }
 
@@ -49,6 +50,16 @@ const StyledQuestionsWrapper = styled.div`
   }
 `;
 
+const StyledQuestionsButtons = styled.div`
+  position: relative;
+  display: flex;
+  gap: 16px;
+
+  @media ${device.mobile} {
+    flex-direction: column;
+  }
+`;
+
 const StyledQuestionsTitle = styled(Heading)`
   margin-bottom: 16px;
 
@@ -67,6 +78,7 @@ const StyledQuestionsText = styled(Text)`
   margin-bottom: 32px;
   font-size: 16px;
   line-height: 24px;
+  max-width: 750px;
 
   @media ${device.mobile} {
     font-size: 13px;
@@ -79,4 +91,5 @@ export {
   StyledQuestionsWrapper,
   StyledQuestionsTitle,
   StyledQuestionsText,
+  StyledQuestionsButtons,
 };

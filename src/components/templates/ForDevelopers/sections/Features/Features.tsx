@@ -3,8 +3,6 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import {
   StyledFeaturesContent,
-  StyledFeaturesListItem,
-  StyledFeaturesListDescription,
 } from "./Features.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -20,7 +18,7 @@ return (
     <Section
       desktopSpacing={["112px", "112px"]}
       mobileSpacing={["48px", "48px"]}
-      tabletSpacing={["88px", "88px"]}
+      tabletSpacing={["48px", "48px"]}
     >
       <Container>
         <StyledFeaturesContent>

@@ -60,10 +60,23 @@ const StyledLeftTextImgImage = styled.div`
   }
 `;
 
+const StyledLeftTextImgTextAfter = styled(Text)`
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 40px;
+    color: #FFFFFF;
+
+  @media ${device.mobile} {
+    font-size: 13px;
+    line-height: 21px;
+  }
+`;
+
 export {
   StyledLeftTextImgSection,
   StyledLeftTextImgWrapper,
   StyledLeftTextImgHeading,
   StyledLeftTextImgText,
   StyledLeftTextImgImage,
+  StyledLeftTextImgTextAfter,
 };

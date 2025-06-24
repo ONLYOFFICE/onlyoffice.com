@@ -26,6 +26,7 @@ const StyledFeatureIconsText = styled.div`
   @media ${device.mobile} {
     font-size: 13px;
     line-height: 20px;
+    padding: 24px 40px 16px;
   }
 `;
 
@@ -48,6 +49,11 @@ const StyledFeatureItemsWrapper = styled.ul`
   padding: 0;
   list-style: none;
   justify-content: center;
+
+  @media ${device.tablet} {
+    overflow-x: scroll;
+    justify-content: flex-start;
+  } 
 `;
 
 const StyledFeatureItem = styled.li`
@@ -66,13 +72,27 @@ const StyledFeatureItem = styled.li`
     text-align: left;
     font-size: 16px;
     line-height: 21px;
-    word-break: keep-all;
+    white-space: nowrap;
     font-weight: 700;
+
+    @media ${device.desktop} {
+      white-space: normal;
+    }
+
+    @media ${device.desktop} {
+      white-space: nowrap;
+      font-size: 14px;
+    } 
   }
 `;
 
 const StyledFeatureIconsItemText = styled.li`
   list-style-type: none;
+  font-size: 16px;
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
 
   .featureList {
     position: relative;
@@ -108,6 +128,11 @@ const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean }>`
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 600;
+
+  @media ${device.mobile} {
+    display: block;
+    width: 100%;
+  }
 
   color: ${({ isPrimary }) => (isPrimary ? "#ffffff" : "#ffffff")};
   background-color: ${({ isPrimary }) => (isPrimary ? "#ff6f3d" : "#444444")};

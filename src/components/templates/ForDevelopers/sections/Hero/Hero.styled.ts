@@ -12,7 +12,7 @@ const StyledHeroSection = styled(Section)`
 const StyledHeroWrapper = styled.div`
   margin-left: 65px;
   display: grid;
-  grid-template-columns: 600px auto;
+  grid-template-columns: 400px auto;
   align-items: center;
   gap: 40px;
 
@@ -32,15 +32,12 @@ const StyledHeroContent = styled.div`
   justify-items: start;
   row-gap: 32px;
   color: #ffffff;
+  max-width: 400px;
 
   @media ${device.desktop} {
     justify-items: center;
     text-align: center;
-  }
-
-  @media ${device.tabletS} {
-    justify-items: start;
-    text-align: initial;
+    max-width: 100%;
   }
 
   @media ${device.mobile} {
@@ -68,50 +65,14 @@ const StyledHeroHeading = styled(Heading)`
   }
 `;
 
-const StyledHeroList = styled.ul`
-  display: grid;
-  align-items: start;
-  gap: 8px;
-  font-size: 22px;
-  line-height: 33px;
-  width: 100%;
-
-  @media ${device.desktop} {
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    line-height: 27px;
-  }
-
-  @media ${device.tabletS} {
-    display: grid;
-    justify-content: start;
-    line-height: 24px;
-  }
+const StyledHeroSubheading = styled(Heading)`
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 27px;
 
   @media ${device.mobile} {
-    font-size: 16px;
-    line-height: 24px;
-  }
-`;
-
-const StyledHeroListItem = styled.li`
-  position: relative;
-  padding-left: 32px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 8px;
-    width: 6px;
-    height: 6px;
-    background: #ff6f3d;
-    transform: rotate(45deg) translateY(-50%);
-
-    @media ${device.mobile} {
-      top: 8px;
-    }
+    font-size: 14px;
+    line-height: 21px;
   }
 `;
 
@@ -121,11 +82,11 @@ const StyledHeroImage = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  max-width: 723px;
 
   @media ${device.desktop} {
     margin: 0 auto;
     padding-bottom: 0;
-    max-width: 634px;
     width: 100%;
     height: 480px;
   }
@@ -148,6 +109,5 @@ export {
   StyledHeroContent,
   StyledHeroHeading,
   StyledHeroImage,
-  StyledHeroList,
-  StyledHeroListItem,
+  StyledHeroSubheading
 };

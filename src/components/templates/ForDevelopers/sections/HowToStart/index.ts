@@ -1,1 +1,0 @@
-export { HowToStart } from "./HowToStart";

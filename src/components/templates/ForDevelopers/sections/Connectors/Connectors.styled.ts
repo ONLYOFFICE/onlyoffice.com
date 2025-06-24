@@ -4,12 +4,8 @@ import { device } from "@src/utils/device";
 const StyledConnectors = styled.div`
   text-align: center;
 
-  @media ${device.tablet} {
-    margin-bottom: 56px;
-  }
-
-  @media ${device.mobile} {
-    margin-bottom: 48px;
+    @media ${device.tablet} {
+    overflow-x: scroll;
   }
 `;
 
@@ -17,8 +13,11 @@ const StyledConnectorsItems = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 32px;
   justify-content: space-between;
+
+  @media ${device.tablet} {
+    width: 1120px;
+  }
 
   li {
     filter: grayscale(100%);
