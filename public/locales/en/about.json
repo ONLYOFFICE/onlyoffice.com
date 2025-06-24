@@ -19,5 +19,28 @@
   "PeopleTextOnlyOffice": "ONLYOFFICE is now used by more than",
   "PeopleTextCount": "15 000 000 people",
   "PeopleTextAllOver": "all over the world",
-  "PeopleTextCustomer": "Customer stories"
+  "PeopleTextCustomer": "Customer stories",
+
+  "FeaturesItemHeading1": "<0>ONLYOFFICE Docs</0> - the future of document processing",
+  "FeaturesItemText1": [
+    "At Ascensio System SIA, we always keep up to date with latest technology trends and try to make an effective use of them in our work.",
+    "We were the first to build online document editors using HTML5 Canvas element. That allows us to keep ahead of our competitors providing customers with the most complete and feature-rich online office suite highly compatible with Microsoft Office and OpenDocument file formats, among others.",
+    "Introduced for the first time at <0>CeBit</0>, ONLYOFFICE Docs have become our pride and joy. Now you can use it as a part of our productivity suite or easily integrate into your own SaaS or on-premises solutions."
+  ],
+  "FeaturesItemLink1": "Learn more about ONLYOFFICE Docs",
+
+  "FeaturesItemHeading2": "<0>ONLYOFFICE Workspace</0> - the ONLY thing you need to make your business grow",
+  "FeaturesItemText2": [
+    "ONONLYOFFICE offers a complete productivity suite with document management, project management, CRM, calendar, mail, and corporate network.",
+    "In this way you don't need to switch back and forth between multiple applications to perform different tasks.",
+    "Here you obtain a single multi-featured system to organize every step of your work improving your productivity and optimizing efforts for success."
+  ],
+  "FeaturesItemLink2": "Learn more about ONLYOFFICE Workspace",
+
+  "FeaturesItemHeading3": "<0>ONLYOFFICE DocSpace</0> - document collaboration made simpler",
+  "FeaturesItemText3": [
+    "ONLYOFFICE DocSpace is intended to improve collaboration on office documents and other content with various people you need to interact such as your colleagues, teammates, customers, partners, contractors, sponsors, etc.",
+    "The platform provides a room-based environment for organizing a clear file structure depending on your needs or project goals. Flexible access permissions and user roles allow you to fine-tune the access to the whole space or separate rooms."
+  ],
+  "FeaturesItemLink3": "Learn more about ONLYOFFICE DocSpace"
 }
