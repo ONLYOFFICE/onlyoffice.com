@@ -52,6 +52,7 @@ const Features = () => {
                     color="main"
                     href={item.link.href}
                     label={t(item.link.label)}
+                    fontSize="14px"
                   />
                 </StyledFeatruesTextWrapper>
               </StyledFeaturesItem>
