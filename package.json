@@ -28,7 +28,7 @@
     "next": "15.1.7",
     "next-i18next": "^15.4.2",
     "nodemailer": "^7.0.3",
-    "onlyoffice-react-ui-kit": "ONLYOFFICE/onlyoffice-react-ui-kit#05b8200cc616249e27d7f743bb8d0b56862abff6",
+    "onlyoffice-react-ui-kit": "ONLYOFFICE/onlyoffice-react-ui-kit#911fb29a250932fe841699212ce5934554dbc986",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.0",
