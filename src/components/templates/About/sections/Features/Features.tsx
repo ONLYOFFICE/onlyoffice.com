@@ -65,25 +65,3 @@ const Features = () => {
 };
 
 export { Features };
-
-
-// {items.map((item, index) => (
-//           <FeatureImageItem
-//             key={item.title}
-//             heading={<Trans t={t} i18nKey={item.title} components={[<Text as="span" color="main" key="0" />]} />}
-//             text={<Trans t={t} i18nKey={item.text} components={{ br: <br /> }} />}
-//             links={[
-//               {
-//                 href: item.link.href,
-//                 label: t(item.link.label),
-//               }
-//             ]}
-//             image={{
-//               url: item.image,
-//             }}
-//             position={{
-//               desktop: index % 2 === 0 ? "left" : "right",
-//               mobile: "bottom",
-//             }}
-//           />
-//         ))}
