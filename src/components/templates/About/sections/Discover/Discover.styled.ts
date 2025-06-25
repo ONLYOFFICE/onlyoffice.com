@@ -1,8 +1,12 @@
 import styled from "styled-components";
+import { Heading } from "@src/components/ui/Heading";
+
+const StyledDiscoverHeading = styled(Heading)`
+  margin-bottom: 40px;
+`;
 
 const StyledDiscoverWrapper = styled.div`
   max-width: 100%;
-  margin: 50px auto;
   padding: 0 20px;
   user-select: none;
 
@@ -12,15 +16,54 @@ const StyledDiscoverWrapper = styled.div`
 `;
 
 const StyledDiscoverSlide = styled.div`
-  background: #f4f4f4;
-  height: 150px;
+  height: 250px;
   width: 300px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   font-size: 24px;
   border-radius: 8px;
+  position: relative;
+  cursor: pointer;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #afafaf;
+    z-index: 1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #dadada;
+    z-index: 0;
+  }
+`;
+
+const StyledDiscoverSlideHeading = styled(Heading)`
+  margin-top: 60px;
+  padding-right: 25px;
+`;
+
+const StyledDiscoverSlideText = styled.div`
+  margin-top: 32px;
+  padding-right: 50px;
+  color: #424242;
+  font-size: 15px;
+  line-height: 20px;
+
+  & > p {
+    padding: 10px 0;
+  }
 `;
 
 const StyledDiscoverProgressWrapper = styled.div`
@@ -58,8 +101,11 @@ const StyledDiscoverProgressBarHandle = styled.div`
 `;
 
 export {
+  StyledDiscoverHeading,
   StyledDiscoverWrapper,
   StyledDiscoverSlide,
+  StyledDiscoverSlideHeading,
+  StyledDiscoverSlideText,
   StyledDiscoverProgressWrapper,
   StyledDiscoverProgressBar,
   StyledDiscoverProgressBarHandle

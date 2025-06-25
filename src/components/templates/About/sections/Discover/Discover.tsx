@@ -1,20 +1,27 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Section } from '@src/components/ui/Section';
+import { Trans, useTranslation } from 'next-i18next';
 import { IAbout, IAbouts } from '../../About.types';
 
 import 'swiper/css';
 import {
+  StyledDiscoverHeading,
   StyledDiscoverProgressBar,
   StyledDiscoverProgressBarHandle,
   StyledDiscoverProgressWrapper,
   StyledDiscoverSlide,
+  StyledDiscoverSlideHeading,
+  StyledDiscoverSlideText,
   StyledDiscoverWrapper
 } from './Discover.styled';
 
 const SWIPER_SPEED = 300;
 
 const Discover = ({ abouts }: IAbouts) => {
+  const { t } = useTranslation("about");
+
   const progressRef = useRef<HTMLDivElement>(null);
   const barRef = useRef<HTMLDivElement>(null);
   const barHandle = useRef<HTMLDivElement>(null);
@@ -121,36 +128,49 @@ const Discover = ({ abouts }: IAbouts) => {
   }, [isDragging, handleMouseMove, handleMouseUp]);
 
   return (
-    <StyledDiscoverWrapper>
-      <Swiper
-        spaceBetween={20}
-        slidesPerView="auto"
-        centeredSlides={true}
-        slideToClickedSlide={true}
-        speed={SWIPER_SPEED}
-        onSwiper={(swiper) => {
-          swiperRef.current = swiper;
-          swiper.on('progress', updateProgress);
-          swiper.on('init', updateProgress);
-          swiper.on('slideChangeTransitionStart', () => {
-            if (barHandle.current) {
-              barHandle.current.style.transition = `transform ${SWIPER_SPEED}ms ease`;
-            }
-          });
-        }}
-      >
-        {items.map((item, i) => (
-          <SwiperSlide key={i}>
-            <StyledDiscoverSlide>Slide {i + 1}</StyledDiscoverSlide>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+    <Section background='#F5F5F5'>
+      <StyledDiscoverHeading label={t("DiscoverHeading")} level={2} size={3} textAlign='center' />
+      <StyledDiscoverWrapper>
+        <Swiper
+          slidesPerView="auto"
+          centeredSlides={true}
+          slideToClickedSlide={true}
+          speed={SWIPER_SPEED}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+            swiper.on('progress', updateProgress);
+            swiper.on('init', updateProgress);
+            swiper.on('slideChangeTransitionStart', () => {
+              if (barHandle.current) {
+                barHandle.current.style.transition = `transform ${SWIPER_SPEED}ms ease`;
+              }
+            });
+          }}
+        >
+          {items.map((item) => (
+            <SwiperSlide key={item.id}>
+              <StyledDiscoverSlide>
+                <StyledDiscoverSlideHeading label={item.date} level={3} size={5} color='#424242' />
+                <StyledDiscoverSlideText>
+                  <Trans
+                    t={t}
+                    i18nKey={item.description}
+                    components={{
+                      p: <p />
+                    }}
+                  />
+                </StyledDiscoverSlideText>
+              </StyledDiscoverSlide>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-      <StyledDiscoverProgressWrapper ref={progressRef} onMouseDown={handleMouseDown}>
-        <StyledDiscoverProgressBar ref={barRef} />
-        <StyledDiscoverProgressBarHandle ref={barHandle} />
-      </StyledDiscoverProgressWrapper>
-    </StyledDiscoverWrapper>
+        <StyledDiscoverProgressWrapper ref={progressRef} onMouseDown={handleMouseDown}>
+          <StyledDiscoverProgressBar ref={barRef} />
+          <StyledDiscoverProgressBarHandle ref={barHandle} />
+        </StyledDiscoverProgressWrapper>
+      </StyledDiscoverWrapper>
+    </Section>
   );
 };
 
