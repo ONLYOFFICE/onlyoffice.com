@@ -30,7 +30,7 @@ const StyledDiscoverProgressWrapper = styled.div`
   background: #ddd;
   border-radius: 4px;
   position: relative;
-  cursor: pointer;
+  pointer-events: none;
 `;
 
 const StyledDiscoverProgressBar = styled.div`
@@ -54,6 +54,7 @@ const StyledDiscoverProgressBarHandle = styled.div`
   position: absolute;
   top: -10px;
   left: -10px;
+  pointer-events: visible;
 `;
 
 export {
