@@ -1,4 +1,14 @@
 {
     "KeepYourDocuments": "Keep your documents encrypted, always",
-    "MeetONLYOFFICEPrivateRooms": "Meet ONLYOFFICE Private Rooms where every symbol you type is encrypted end-to-end"
+    "MeetONLYOFFICEPrivateRooms": "Meet ONLYOFFICE Private Rooms where every symbol you type is encrypted end-to-end",
+
+    "WhyONLYOFFICEIsTheSafest": "Why ONLYOFFICE is the <0>safest way</0> to work on docs",
+    "UnbreakableDocumentEncryption": "Unbreakable document encryption",
+    "ONLYOFFICEUsesTheAES": "ONLYOFFICE uses the AES-256 algorithm to encrypt documents with brute force-resistant keys. To exhaust this encryption, 50 supercomputers would need around 3×1051 years.",
+    "EncryptedRealTime": "Encrypted real-time co-editing",
+    "ONLYOFFICEEncryptsTheData": "ONLYOFFICE encrypts the data transfer while collaborating on documents online. This prevents outsiders from being able to read or understand the changes you or your co-authors make.",
+    "NoManualActions": "No manual actions with passwords",
+    "YouDontNeedToInvent": "You don’t need to invent, send or enter any passwords: they are generated automatically on-device and transferred in encrypted form when sharing the document.",
+    "EntirelyPrivateStorage": "Entirely private storage",
+    "EveryBitOfInformation": "Every bit of information in a Private Room is encrypted. Copying, moving, versioning, and re-writing are not possible to keep data safe under all circumstances."
 }
