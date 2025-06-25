@@ -6,6 +6,7 @@ import { IAbout, IAbouts } from '../../About.types';
 import 'swiper/css';
 import {
   StyledDiscoverProgressBar,
+  StyledDiscoverProgressBarHandle,
   StyledDiscoverProgressWrapper,
   StyledDiscoverSlide,
   StyledDiscoverWrapper
@@ -14,36 +15,67 @@ import {
 const Discover = ({ abouts }: IAbouts) => {
   const progressRef = useRef<HTMLDivElement>(null);
   const barRef = useRef<HTMLDivElement>(null);
+  const barHandle = useRef<HTMLDivElement>(null);
   const swiperRef = useRef<SwiperCore | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [items, setItems] = useState<IAbout[]>([]);
+  const [progressBarWidth, setProgressBarWidth] = useState(0);
 
   useEffect(() => {
     setItems(abouts.data);
   }, [abouts]);
 
   useEffect(() => {
-    if (!swiperRef.current || !barRef.current) return;
-    barRef.current.style.transform = 'scaleX(0)';
-    swiperRef.current.setProgress(0);
+    const progressEl = progressRef.current;
+    if (progressEl) {
+      const updateWidth = () => {
+        setProgressBarWidth(progressEl.getBoundingClientRect().width);
+      };
+
+      updateWidth();
+      window.addEventListener('resize', updateWidth);
+
+      return () => {
+        window.removeEventListener('resize', updateWidth);
+      };
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!swiperRef.current) return;
+    swiperRef.current.slideTo(0, 0);
   }, [items]);
 
   const updateProgress = useCallback(() => {
-    if (!swiperRef.current || !barRef.current) return;
+    if (!swiperRef.current || !barRef.current || !barHandle.current) return;
+
     const progress = swiperRef.current.progress;
     barRef.current.style.transform = `scaleX(${progress})`;
-  }, []);
+
+    if (progressBarWidth === 0) return;
+
+    const pixelOffset = progress * progressBarWidth;
+    barHandle.current.style.transform = `translateX(${pixelOffset}px)`;
+
+  }, [progressBarWidth]);
+
+  useEffect(() => {
+    if (progressBarWidth > 0) {
+      updateProgress();
+    }
+  }, [progressBarWidth, updateProgress]);
 
   const handleSeek = useCallback((clientX: number) => {
     const progressEl = progressRef.current;
     const swiper = swiperRef.current;
-    if (!progressEl || !swiper) return;
+    if (!progressEl || !swiper || progressBarWidth === 0) return;
 
     const { left, width } = progressEl.getBoundingClientRect();
     const percent = Math.min(Math.max((clientX - left) / width, 0), 1);
+
     swiper.setProgress(percent, 0);
     updateProgress();
-  }, [updateProgress]);
+  }, [updateProgress, progressBarWidth]);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     setIsDragging(true);
@@ -57,14 +89,13 @@ const Discover = ({ abouts }: IAbouts) => {
 
   const handleMouseUp = useCallback(() => {
     if (!isDragging) return;
+    setIsDragging(false);
 
     const swiper = swiperRef.current;
     if (swiper && swiper.slides.length > 0) {
       const targetIndex = Math.round(swiper.progress * (swiper.slides.length - 1));
       swiper.slideTo(targetIndex);
     }
-
-    setIsDragging(false);
   }, [isDragging]);
 
   useEffect(() => {
@@ -86,7 +117,6 @@ const Discover = ({ abouts }: IAbouts) => {
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
           swiper.on('progress', updateProgress);
-          swiper.on('slideChange', updateProgress);
           swiper.on('init', updateProgress);
         }}
       >
@@ -99,6 +129,7 @@ const Discover = ({ abouts }: IAbouts) => {
 
       <StyledDiscoverProgressWrapper ref={progressRef} onMouseDown={handleMouseDown}>
         <StyledDiscoverProgressBar ref={barRef} />
+        <StyledDiscoverProgressBarHandle ref={barHandle} />
       </StyledDiscoverProgressWrapper>
     </StyledDiscoverWrapper>
   );

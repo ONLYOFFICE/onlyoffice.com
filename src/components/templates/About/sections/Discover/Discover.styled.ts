@@ -24,8 +24,9 @@ const StyledDiscoverSlide = styled.div`
 `;
 
 const StyledDiscoverProgressWrapper = styled.div`
-  margin-top: 20px;
-  height: 8px;
+  margin: 25px auto;
+  width: 200px;
+  height: 1px;
   background: #ddd;
   border-radius: 4px;
   position: relative;
@@ -41,9 +42,24 @@ const StyledDiscoverProgressBar = styled.div`
   pointer-events: none;
 `;
 
+const StyledDiscoverProgressBarHandle = styled.div`
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: url("/images/templates/about/discover/runner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+`;
+
 export {
   StyledDiscoverWrapper,
   StyledDiscoverSlide,
   StyledDiscoverProgressWrapper,
-  StyledDiscoverProgressBar
+  StyledDiscoverProgressBar,
+  StyledDiscoverProgressBarHandle
 };
