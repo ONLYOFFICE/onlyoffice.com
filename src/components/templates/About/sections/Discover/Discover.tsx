@@ -12,11 +12,15 @@ import {
   StyledDiscoverWrapper
 } from './Discover.styled';
 
+const SWIPER_SPEED = 300;
+
 const Discover = ({ abouts }: IAbouts) => {
   const progressRef = useRef<HTMLDivElement>(null);
   const barRef = useRef<HTMLDivElement>(null);
   const barHandle = useRef<HTMLDivElement>(null);
   const swiperRef = useRef<SwiperCore | null>(null);
+  const widthRef = useRef(0);
+
   const [isDragging, setIsDragging] = useState(false);
   const [items, setItems] = useState<IAbout[]>([]);
   const [progressBarWidth, setProgressBarWidth] = useState(0);
@@ -29,7 +33,9 @@ const Discover = ({ abouts }: IAbouts) => {
     const progressEl = progressRef.current;
     if (progressEl) {
       const updateWidth = () => {
-        setProgressBarWidth(progressEl.getBoundingClientRect().width);
+        const newWidth = progressEl.getBoundingClientRect().width;
+        setProgressBarWidth(newWidth);
+        widthRef.current = newWidth;
       };
 
       updateWidth();
@@ -52,12 +58,12 @@ const Discover = ({ abouts }: IAbouts) => {
     const progress = swiperRef.current.progress;
     barRef.current.style.transform = `scaleX(${progress})`;
 
-    if (progressBarWidth === 0) return;
+    const currentWidth = widthRef.current;
+    if (currentWidth === 0) return;
 
-    const pixelOffset = progress * progressBarWidth;
+    const pixelOffset = progress * currentWidth;
     barHandle.current.style.transform = `translateX(${pixelOffset}px)`;
-
-  }, [progressBarWidth]);
+  }, []);
 
   useEffect(() => {
     if (progressBarWidth > 0) {
@@ -68,16 +74,20 @@ const Discover = ({ abouts }: IAbouts) => {
   const handleSeek = useCallback((clientX: number) => {
     const progressEl = progressRef.current;
     const swiper = swiperRef.current;
-    if (!progressEl || !swiper || progressBarWidth === 0) return;
+    if (!progressEl || !swiper) return;
 
     const { left, width } = progressEl.getBoundingClientRect();
     const percent = Math.min(Math.max((clientX - left) / width, 0), 1);
 
     swiper.setProgress(percent, 0);
     updateProgress();
-  }, [updateProgress, progressBarWidth]);
+  }, [updateProgress]);
 
   const handleMouseDown = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (barHandle.current) {
+      barHandle.current.style.transition = 'none';
+    }
     setIsDragging(true);
     handleSeek(e.clientX);
   };
@@ -89,21 +99,24 @@ const Discover = ({ abouts }: IAbouts) => {
 
   const handleMouseUp = useCallback(() => {
     if (!isDragging) return;
+    if (barHandle.current) {
+      barHandle.current.style.transition = `transform ${SWIPER_SPEED}ms ease`;
+    }
     setIsDragging(false);
 
     const swiper = swiperRef.current;
     if (swiper && swiper.slides.length > 0) {
       const targetIndex = Math.round(swiper.progress * (swiper.slides.length - 1));
-      swiper.slideTo(targetIndex);
+      swiper.slideTo(targetIndex, SWIPER_SPEED);
     }
   }, [isDragging]);
 
   useEffect(() => {
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseup", handleMouseUp);
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseup", handleMouseUp);
     return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseup", handleMouseUp);
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseup", handleMouseUp);
     };
   }, [isDragging, handleMouseMove, handleMouseUp]);
 
@@ -114,10 +127,16 @@ const Discover = ({ abouts }: IAbouts) => {
         slidesPerView="auto"
         centeredSlides={true}
         slideToClickedSlide={true}
+        speed={SWIPER_SPEED}
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
           swiper.on('progress', updateProgress);
           swiper.on('init', updateProgress);
+          swiper.on('slideChangeTransitionStart', () => {
+            if (barHandle.current) {
+              barHandle.current.style.transition = `transform ${SWIPER_SPEED}ms ease`;
+            }
+          });
         }}
       >
         {items.map((item, i) => (
