@@ -1,10 +1,10 @@
-import { useRef, useEffect, useState, useCallback } from 'react';
+import { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import { Trans, useTranslation } from 'next-i18next';
 import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Section } from '@src/components/ui/Section';
 import { discoverFormatDate } from './utils/discoverFormatDate';
-// import { discoverFormatYear } from './utils/discoverFormatYear';
+import { discoverFormatYear } from './utils/discoverFormatYear';
 import { IAbout, IAbouts } from '../../About.types';
 import { ILocale } from "@src/types/locale";
 
@@ -17,7 +17,9 @@ import {
   StyledDiscoverSlide,
   StyledDiscoverSlideHeading,
   StyledDiscoverSlideText,
-  StyledDiscoverWrapper
+  StyledDiscoverWrapper,
+  StyledDiscoverYearItem,
+  StyledDiscoverYearList,
 } from './Discover.styled';
 
 const SWIPER_SPEED = 300;
@@ -130,10 +132,26 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
     };
   }, [isDragging, handleMouseMove, handleMouseUp]);
 
+  const uniqueYears = useMemo(() =>Array.from(new Set(
+    items.map((item) => discoverFormatYear(item.date))
+  )), [items]);
+
+  console.log(uniqueYears)
+
   return (
     <Section background='#F5F5F5'>
       <StyledDiscoverHeading label={t("DiscoverHeading")} level={2} size={3} textAlign='center' />
       <StyledDiscoverWrapper>
+        <StyledDiscoverYearList>
+          {uniqueYears.map((year) => (
+            <StyledDiscoverYearItem
+              key={year}
+              label={year}
+              size={2}
+              color='main'
+            />
+          ))}
+        </StyledDiscoverYearList>
         <Swiper
           slidesPerView="auto"
           centeredSlides={true}

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 
 const StyledDiscoverHeading = styled(Heading)`
   margin-bottom: 40px;
@@ -100,6 +101,14 @@ const StyledDiscoverProgressBarHandle = styled.div`
   pointer-events: visible;
 `;
 
+const StyledDiscoverYearList = styled.div`
+  display: flex;
+`;
+
+const StyledDiscoverYearItem = styled(Text)`
+
+`;
+
 export {
   StyledDiscoverHeading,
   StyledDiscoverWrapper,
@@ -108,5 +117,7 @@ export {
   StyledDiscoverSlideText,
   StyledDiscoverProgressWrapper,
   StyledDiscoverProgressBar,
-  StyledDiscoverProgressBarHandle
+  StyledDiscoverProgressBarHandle,
+  StyledDiscoverYearList,
+  StyledDiscoverYearItem
 };
