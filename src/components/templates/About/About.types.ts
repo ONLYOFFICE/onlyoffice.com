@@ -8,4 +8,16 @@ interface IFeaturesItem {
   image: string;
 }
 
-export type { IFeaturesItem };
+interface IAbout {
+  id: number;
+  date: string;
+  description: string;
+}
+
+interface IAbouts {
+  abouts: {
+    data: IAbout[]
+  }
+}
+
+export type { IFeaturesItem, IAbouts, IAbout };

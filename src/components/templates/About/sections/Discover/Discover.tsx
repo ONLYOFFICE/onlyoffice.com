@@ -2,6 +2,7 @@ import { useRef, useEffect, useState, useCallback } from 'react';
 import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper/modules';
+import { IAbout, IAbouts } from '../../About.types';
 
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -12,11 +13,16 @@ import {
   StyledDiscoverWrapper
 } from './Discover.styled';
 
-const Discover = () => {
+const Discover = ({ abouts }: IAbouts) => {
   const progressRef = useRef<HTMLDivElement>(null);
   const barRef = useRef<HTMLDivElement>(null);
   const swiperRef = useRef<SwiperCore>(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [items, setItems] = useState<IAbout[]>([])
+
+  useEffect(() => {
+    setItems(abouts.data)
+  }, [abouts])
 
   const updateProgress = () => {
     if (!swiperRef.current || !barRef.current) return;
@@ -73,7 +79,7 @@ const Discover = () => {
           swiper.on('init', updateProgress);
         }}
       >
-        {Array.from({ length: 10 }).map((_, i) => (
+        {items.map((item, i) => (
           <SwiperSlide key={i}>
             <StyledDiscoverSlide>Slide {i + 1}</StyledDiscoverSlide>
           </SwiperSlide>
