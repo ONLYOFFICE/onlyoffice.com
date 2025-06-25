@@ -1,9 +1,12 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
+import { Trans, useTranslation } from 'next-i18next';
 import SwiperCore from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Section } from '@src/components/ui/Section';
-import { Trans, useTranslation } from 'next-i18next';
+import { discoverFormatDate } from './utils/discoverFormatDate';
+// import { discoverFormatYear } from './utils/discoverFormatYear';
 import { IAbout, IAbouts } from '../../About.types';
+import { ILocale } from "@src/types/locale";
 
 import 'swiper/css';
 import {
@@ -19,7 +22,7 @@ import {
 
 const SWIPER_SPEED = 300;
 
-const Discover = ({ abouts }: IAbouts) => {
+const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
   const { t } = useTranslation("about");
 
   const progressRef = useRef<HTMLDivElement>(null);
@@ -150,7 +153,12 @@ const Discover = ({ abouts }: IAbouts) => {
           {items.map((item) => (
             <SwiperSlide key={item.id}>
               <StyledDiscoverSlide>
-                <StyledDiscoverSlideHeading label={item.date} level={3} size={5} color='#424242' />
+                <StyledDiscoverSlideHeading
+                  label={discoverFormatDate(item.date, locale)}
+                  level={3}
+                  size={5}
+                  color='#424242'
+                />
                 <StyledDiscoverSlideText>
                   <Trans
                     t={t}

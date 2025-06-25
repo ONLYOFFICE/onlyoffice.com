@@ -27,7 +27,7 @@ const AboutPage = ({ locale, abouts }: ILocale & IAbouts) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <AboutTemplate abouts={abouts} />
+        <AboutTemplate abouts={abouts} locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
