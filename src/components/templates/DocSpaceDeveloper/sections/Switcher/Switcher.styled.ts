@@ -66,6 +66,18 @@ const StyledSwitcherTitle = styled.h3<{
   cursor: pointer;
 `;
 
+const StyledSwitcherHiderWrapper = styled.div<{
+  $isActive: boolean;
+}>`
+  display: ${({ $isActive }) => $isActive ? "block" : "none"};
+  opacity: ${({ $isActive }) => $isActive ? "1" : "0"};
+  transition-duration: 800ms;
+
+  @starting-style {
+    opacity: 0;
+  }
+`;
+
 const StyledSwitcherText = styled(Text)`
   margin-bottom: 16px;
 `;
@@ -128,6 +140,7 @@ export {
   StyledSwitcherInfo,
   StyledSwitcherInfoWrapper,
   StyledSwitcherTitle,
+  StyledSwitcherHiderWrapper,
   StyledSwitcherText,
   StyledSwitcherLink,
   StyledSwitcherImageWrapper,

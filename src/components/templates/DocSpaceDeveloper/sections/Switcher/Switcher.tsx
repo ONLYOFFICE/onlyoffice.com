@@ -18,7 +18,8 @@ import {
   StyledSwitcherLink,
   StyledSwitcherImageWrapper,
   StyledSwitcherImage,
-  StyledSwitcherInfoWrapper
+  StyledSwitcherInfoWrapper,
+  StyledSwitcherHiderWrapper
 } from "./Switcher.styled";
 
 const Switcher = () => {
@@ -43,10 +44,10 @@ const Switcher = () => {
       ))
 
       setHeadingItemOffsets(offsets);
-      setProgressBarHeight(offsets[0].offsetHeight);
-      setProgressBarPosition(offsets[0].offsetTop);
+      setProgressBarHeight(offsets[activeSwitcher].offsetHeight);
+      setProgressBarPosition(offsets[activeSwitcher].offsetTop);
     }
-  }, []);
+  }, [activeSwitcher]);
 
   const switchHandleClick = (index: number) => {
     setActiveSwitcher(index);
@@ -67,7 +68,11 @@ const Switcher = () => {
         <StyledSwitcherWrapper>
           <StyledSwitcherDescription>
             <StyledSwitcherScroll>
-              <StyledSwitcherProgressBar ref={progressBarRef} $height={progressBarHeight} $translateY={progressBarPosition} />
+              <StyledSwitcherProgressBar
+                ref={progressBarRef}
+                $height={progressBarHeight}
+                $translateY={progressBarPosition}
+              />
             </StyledSwitcherScroll>
             <StyledSwitcherInfoWrapper>
               {items.map((item, index) => (
@@ -83,24 +88,26 @@ const Switcher = () => {
                   >
                     {t(item.title)}
                   </StyledSwitcherTitle>
-                  <StyledSwitcherText
-                    color="#fff"
-                  >
-                    <Trans
-                      t={t}
-                      i18nKey={item.text}
-                      components={[<Text as={"span"} key={0} fontWeight={600} />]}
-                    />
-                  </StyledSwitcherText>
-                  {item.link && (
-                    <StyledSwitcherLink
-                      color="main"
-                      label={t(item.link.label)}
-                      href={item.link.href}
-                      textUnderline={true}
-                      hover="underline-none"
-                    />
-                  )}
+                  <StyledSwitcherHiderWrapper $isActive={activeSwitcher === index}>
+                    <StyledSwitcherText
+                      color="#fff"
+                    >
+                      <Trans
+                        t={t}
+                        i18nKey={item.text}
+                        components={[<Text as={"span"} key={0} fontWeight={600} />]}
+                      />
+                    </StyledSwitcherText>
+                    {item.link && (
+                      <StyledSwitcherLink
+                        color="main"
+                        label={t(item.link.label)}
+                        href={item.link.href}
+                        textUnderline={true}
+                        hover="underline-none"
+                      />
+                    )}
+                  </StyledSwitcherHiderWrapper>
                 </StyledSwitcherInfo>
               ))}
             </StyledSwitcherInfoWrapper>
