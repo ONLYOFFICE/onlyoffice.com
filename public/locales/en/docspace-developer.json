@@ -5,5 +5,32 @@
   "HeroHeading": "ONLYOFFICE DocSpace<br><0>secure document storing and collaboration for your web app users</0>",
   "HeroButtonGet": "Get it now",
   "HeroButtonSchedule": "Schedule demo",
-  "HeroYoutubeTitle": "YouTube video player"
+  "HeroYoutubeTitle": "YouTube video player",
+
+  "SwitcherHeadingBringYour": "Bring your web app users a secure space for content storing and online document collaboration",
+
+  "SwitcherItemTitle1": "Integrate the whole ONLYOFFICE DocSpace, a single room, or just a simple document ...",
+  "SwitcherItemText1": " ONLYOFFICE provides <0>JavaScript SDK</0> allowing you to use all the DocSpace possibilities with api.js.",
+  "SwitcherItemLink1": "Read documentation",
+  "SwitcherItemImgUrl1": "",
+  "SwitcherItemImgUrl2x1": "",
+
+  "SwitcherItemTitle2": "",
+  "SwitcherItemText2": "",
+  "SwitcherItemLink2": "",
+  "SwitcherItemImgUrl2": "",
+  "SwitcherItemImgUrl2x2": "",
+
+  "SwitcherItemTitle3": "",
+  "SwitcherItemText3": "",
+  "SwitcherItemLink3": "",
+  "SwitcherItemImgUrl3": "",
+  "SwitcherItemImgUrl2x3": "",
+
+  "SwitcherItemTitle4": "",
+  "SwitcherItemText4": "",
+  "SwitcherItemLink4": "",
+  "SwitcherItemImgUrl4": "",
+  "SwitcherItemImgUrl2x4": ""
+
 }
