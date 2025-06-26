@@ -32,7 +32,6 @@ const Switcher = () => {
 
   useEffect(() => {
     if (headingItemRefs.current) {
-      console.log(headingItemRefs.current)
       const offsets = headingItemRefs.current.map((item) => (
         item ? {
           offsetHeight: item.offsetHeight,
