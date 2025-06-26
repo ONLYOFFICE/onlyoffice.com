@@ -1,5 +1,4 @@
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 import {
   StyledFeaturesContent,
 } from "./Features.styled";
@@ -9,8 +8,7 @@ import { FeatureIconsItem } from "@src/components/widgets/FeatureIconsItem";
 import { items } from "./data/items";
 
 const Features = () => {
-  const { t } = useTranslation("for-developers");
-  const { locale } = useRouter();
+  const { t } = useTranslation("for-enterprises");
 
   return (
     <Section
@@ -20,13 +18,12 @@ const Features = () => {
     >
       <Container>
         <StyledFeaturesContent>
-          {items.flatMap((itemGroup, groupSetIndex) =>
-            itemGroup.items.map((group, groupIndex) => {
+          {items.flatMap((groupSet, groupSetIndex) =>
+            groupSet.items.map((group, groupIndex) => {
               const buttons =
-                group.links?.slice(0, 2).map((link, index) => ({
+                group.links?.map((link) => ({
                   ...link,
                   label: t(String(link.label)),
-                  isPrimary: index === 0,
                 })) ?? [];
 
               return (
@@ -38,7 +35,7 @@ const Features = () => {
                   image={{
                     url: t(group.image.url),
                     url2x: group.image.url2x ? t(group.image.url2x) : undefined,
-                    height: 520,
+                    width: 544,
                   }}
                   text={group.items.map((key) => {
                     const entry = group.textWithLinks?.find((item) => item.label === key);
@@ -48,7 +45,7 @@ const Features = () => {
                     };
                   })}
                   position={{
-                    desktop: groupIndex % 2 === 1 ? "left" : "right",
+                    desktop: groupIndex % 2 === 1 ? "right" : "left",
                   }}
                   connectorsItems={
                     group.connectorsItems?.map((item) => ({

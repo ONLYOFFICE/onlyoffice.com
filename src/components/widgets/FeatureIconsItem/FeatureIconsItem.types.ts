@@ -5,6 +5,7 @@ export interface IFeatureIconsItemButton {
   href: string;
   isExternal?: boolean;
   isPrimary?: boolean;
+  isLink?: boolean;
 }
 
 export interface IFeatureIconsItemTextItem {

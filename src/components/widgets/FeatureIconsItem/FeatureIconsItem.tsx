@@ -10,7 +10,8 @@ import {
 import { IFeatureIconsItem } from "./FeatureIconsItem.types";
 import { ContentImage } from "../ContentImage";
 import { Heading } from "@src/components/ui/Heading";
-import { Trans, useTranslation } from "next-i18next";
+import { Trans } from "next-i18next";
+import { Text } from "@src/components/ui/Text";
 
 const FeatureIconsItem = ({
   id,
@@ -29,12 +30,17 @@ const FeatureIconsItem = ({
   return (
     <div>
       {connectorsHeading && (
-        <Heading level={2} label={connectorsHeading} textAlign="center" />
+        <Heading level={2} label={connectorsHeading} textAlign="center">
+          <Trans
+            i18nKey={connectorsHeading}
+            components={[<Text as="span" color="#FF6F3D" key="0" />]}
+            />
+        </Heading>
       )}
       {connectorsSubheading && (
-        <StyledFeatureIconsText style={{ textAlign: "center", marginBottom: "16px" }}>
+        <Text>
             {connectorsSubheading}
-        </StyledFeatureIconsText>
+        </Text>
       )}
       {connectorsItems?.length ? (
         <>
@@ -114,14 +120,15 @@ const FeatureIconsItem = ({
         </StyledFeatureIconsItemContent>
       </ContentImage>
       {Array.isArray(buttons) && buttons.length > 0 && (
-          <div style={{ display: "flex", gap: "16px", marginTop: "24px", flexWrap: "wrap", justifyContent: "center" }}>
-          {buttons.map(({ label, href, isExternal, isPrimary }, index) => (
+        <div style={{ display: "flex", gap: "16px", marginTop: "24px", flexWrap: "wrap", justifyContent: "center" }}>
+        {buttons.map(({ label, href, isExternal, isPrimary, isLink }, index) => (
           <StyledFeatureIconsButton
             key={index}
             href={href}
             target={isExternal ? "_blank" : undefined}
             rel={isExternal ? "noopener noreferrer" : undefined}
             isPrimary={isPrimary}
+            isLink={isLink}
           >
             {label}
           </StyledFeatureIconsButton>

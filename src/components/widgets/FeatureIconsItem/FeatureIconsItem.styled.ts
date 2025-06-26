@@ -115,7 +115,7 @@ const StyledFeatureIconsItemText = styled.li`
   }
 `;
 
-const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean }>`
+const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean, isLink?: boolean }>`
   padding: 12px 24px;
   font-size: 12px;
   line-height: 26px;
@@ -134,8 +134,8 @@ const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean }>`
     width: 100%;
   }
 
-  color: ${({ isPrimary }) => (isPrimary ? "#ffffff" : "#ffffff")};
-  background-color: ${({ isPrimary }) => (isPrimary ? "#ff6f3d" : "#444444")};
+  color: ${({ isPrimary, isLink }) => (isLink ? "#ff6f3d" : (isPrimary ? "#ffffff" : "#ffffff"))};
+  background-color: ${({ isPrimary, isLink }) => (isLink ? "" : (isPrimary ? "#ff6f3d" : "#444444"))};
 
   &:hover {
     opacity: 0.9;
