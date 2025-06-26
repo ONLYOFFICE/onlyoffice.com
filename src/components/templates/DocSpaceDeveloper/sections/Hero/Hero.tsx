@@ -2,9 +2,14 @@ import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-
-import { StyledHeroButtonsWrapper, StyledHeroSection } from "./Hero.styled";
 import { Button } from "@src/components/ui/Button";
+
+import {
+  StyledHeroButtonsWrapper,
+  StyledHeroSection,
+  StyledHeroVideoIframe,
+  StyledHeroVideoWrapper
+} from "./Hero.styled";
 
 const Hero = () => {
   const { t } = useTranslation("docspace-developer");
@@ -38,6 +43,16 @@ const Hero = () => {
             borderRadius="3px"
           />
         </StyledHeroButtonsWrapper>
+        <StyledHeroVideoWrapper>
+          <StyledHeroVideoIframe
+            src="https://www.youtube.com/embed/snOBl5Ru6lc?si=Tt4C4r4OaUVVCHBs?autoplay=1&amp;mute=1"
+            title={t("HeroVideoTitle")}
+            name="youtube embed"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          />
+        </StyledHeroVideoWrapper>
       </Container>
     </StyledHeroSection>
   );

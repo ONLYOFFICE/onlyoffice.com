@@ -16,7 +16,20 @@ const StyledHeroButtonsWrapper = styled.div`
   margin-top: 56px;
 `;
 
+const StyledHeroVideoWrapper = styled.div`
+  width: 100%;
+  height: 522px;
+  margin-top: 56px;
+`;
+
+const StyledHeroVideoIframe = styled.iframe`
+  width: 100%;
+  height: 100%;
+`;
+
 export {
   StyledHeroSection,
   StyledHeroButtonsWrapper,
+  StyledHeroVideoWrapper,
+  StyledHeroVideoIframe,
 };
