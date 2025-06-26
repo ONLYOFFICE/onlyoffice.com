@@ -1,6 +1,5 @@
 import {
   StyledFeatureIconsItemContent,
-  StyledFeatureIconsText,
   StyledFeatureIconsItemText,
   StyledFeatureIconsItemLink,
   StyledFeatureItemsWrapper,
@@ -26,6 +25,7 @@ const FeatureIconsItem = ({
   connectorsItems,
   connectorsHeading,
   connectorsSubheading,
+  showButtonsOutside,
 }: IFeatureIconsItem) => {
   return (
     <div>
@@ -50,10 +50,10 @@ const FeatureIconsItem = ({
                 <img
                   src={image.url}
                   style={{
-                    height: "56px",
-                    width: "56px",
+                    height: image.height, 
+                    width: image.width,
                     objectFit: "none",
-                    objectPosition: `${image.positionX ?? "0px"} center`,
+                    objectPosition: `${image.positionX ?? "0px"} ${image.positionY ?? "0px"}`,
                     display: "block",
                   }}
                   alt={label}
@@ -117,24 +117,53 @@ const FeatureIconsItem = ({
               {label}
             </StyledFeatureIconsItemLink>
           ))}
+          {!showButtonsOutside && Array.isArray(buttons) && buttons.length > 0 && (
+            <div
+              style={{
+                display: "flex",
+                gap: "16px",
+                marginTop: "24px",
+                flexWrap: "wrap",
+                justifyContent: "left",
+                alignItems: "center",
+              }}
+            >
+              {buttons.map(({ label, href, isExternal, isPrimary, isLink }, index) =>
+                isLink ? (
+                  <Text as="div" key={index}>
+                    <Trans
+                      i18nKey={label}
+                      components={[
+                        <a
+                          key="0"
+                          href={href}
+                          style={{ color: "#ff6f3d", textDecoration: "underline" }}
+                        />,
+                        <a
+                          key="1"
+                          href={href}
+                          style={{ color: "#ff6f3d", textDecoration: "underline" }}
+                        />,
+                      ]}
+                    />
+                  </Text>
+                ) : (
+                  <StyledFeatureIconsButton
+                    key={index}
+                    href={href}
+                    target={isExternal ? "_blank" : undefined}
+                    rel={isExternal ? "noopener noreferrer" : undefined}
+                    isPrimary={isPrimary}
+                    isLink={isLink}
+                  >
+                    {label}
+                  </StyledFeatureIconsButton>
+                )
+              )}
+            </div>
+          )}
         </StyledFeatureIconsItemContent>
       </ContentImage>
-      {Array.isArray(buttons) && buttons.length > 0 && (
-        <div style={{ display: "flex", gap: "16px", marginTop: "24px", flexWrap: "wrap", justifyContent: "center" }}>
-        {buttons.map(({ label, href, isExternal, isPrimary, isLink }, index) => (
-          <StyledFeatureIconsButton
-            key={index}
-            href={href}
-            target={isExternal ? "_blank" : undefined}
-            rel={isExternal ? "noopener noreferrer" : undefined}
-            isPrimary={isPrimary}
-            isLink={isLink}
-          >
-            {label}
-          </StyledFeatureIconsButton>
-        ))}
-      </div>
-    )}
     </div>
   );
 };

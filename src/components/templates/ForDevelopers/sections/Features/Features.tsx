@@ -1,7 +1,7 @@
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 import {
   StyledFeaturesContent,
+  StyledFeatureIconsButton
 } from "./Features.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -10,7 +10,6 @@ import { items } from "./data/items";
 
 const Features = () => {
   const { t } = useTranslation("for-developers");
-  const { locale } = useRouter();
 
   return (
     <Section
@@ -30,33 +29,57 @@ const Features = () => {
                 })) ?? [];
 
               return (
-                <FeatureIconsItem
-                  key={`${groupSetIndex}-${groupIndex}`}
-                  connectorsHeading={t(group.connectorsHeading ?? "")}
-                  connectorsSubheading={t(group.connectorsSubheading ?? "")}
-                  buttons={buttons}
-                  image={{
-                    url: t(group.image.url),
-                    url2x: group.image.url2x ? t(group.image.url2x) : undefined,
-                    height: 520,
-                  }}
-                  text={group.items.map((key) => {
-                    const entry = group.textWithLinks?.find((item) => item.label === key);
-                    return {
-                      label: t(key),
-                      links: entry?.links ?? [],
-                    };
-                  })}
-                  position={{
-                    desktop: groupIndex % 2 === 1 ? "left" : "right",
-                  }}
-                  connectorsItems={
-                    group.connectorsItems?.map((item) => ({
-                      ...item,
-                      label: t(item.label),
-                    }))
-                  }
-                />
+                <div key={`wrapper-${groupSetIndex}-${groupIndex}`}>
+                  <FeatureIconsItem
+                    connectorsHeading={t(group.connectorsHeading ?? "")}
+                    connectorsSubheading={t(group.connectorsSubheading ?? "")}
+                    showButtonsOutside={true}
+                    image={{
+                      url: t(group.image.url),
+                      url2x: group.image.url2x ? t(group.image.url2x) : undefined,
+                      height: 520,
+                    }}
+                    text={group.items.map((key) => {
+                      const entry = group.textWithLinks?.find((item) => item.label === key);
+                      return {
+                        label: t(key),
+                        links: entry?.links ?? [],
+                      };
+                    })}
+                    position={{
+                      desktop: groupIndex % 2 === 1 ? "left" : "right",
+                    }}
+                    connectorsItems={
+                      group.connectorsItems?.map((item) => ({
+                        ...item,
+                        label: t(item.label),
+                      }))
+                    }
+                  />
+                  {Array.isArray(buttons) && buttons.length > 0 && (
+                    <div
+                      style={{
+                        display: "flex",
+                        gap: "16px",
+                        marginTop: "32px",
+                        flexWrap: "wrap",
+                        justifyContent: "center",
+                      }}
+                    >
+                      {buttons.map(({ label, href, isExternal, isPrimary }, index) => (
+                        <StyledFeatureIconsButton
+                          key={index}
+                          href={href}
+                          target={isExternal ? "_blank" : undefined}
+                          rel={isExternal ? "noopener noreferrer" : undefined}
+                          isPrimary={isPrimary}
+                        >
+                          {label}
+                        </StyledFeatureIconsButton>
+                      ))}
+                    </div>
+                  )}
+                </div>
               );
             })
           )}

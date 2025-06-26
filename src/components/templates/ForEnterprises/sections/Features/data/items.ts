@@ -85,36 +85,36 @@ export const items = [
           {
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
-              width: 56,
-              height: 56,
-              positionX: "-360px",
-            },
-            label: "",
-          },
-          {
-            image: {
-              url: "/images/templates/for-enterprises/features/icon_sheets.svg",
-              width: 56,
-              height: 56,
-              positionX: "0px",
+              width: 156,
+              height: 40,
+              positionY: "0px",
             },
             label: "",
           },
           {
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
-              width: 56,
-              height: 56,
-              positionX: "-433px",
+              width: 96,
+              height:40,
+              positionY: "-458px",
             },
             label: "",
           },
           {
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
-              width: 56,
-              height: 56,
-              positionX: "-506px",
+              width: 162,
+              height: 30,
+              positionY: "-50px",
+            },
+            label: "",
+          },
+          {
+            image: {
+              url: "/images/templates/for-enterprises/features/icons.svg",
+              width: 141,
+              height: 40,
+              positionY: "-545px",
             },
             label: "",
           },
@@ -154,27 +154,27 @@ export const items = [
           {
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
-              width: 56,
-              height: 56,
-              positionX: "-360px",
-            },
-            label: "",
-          },
-          {
-            image: {
-              url: "/images/templates/for-enterprises/features/icon_sheets.svg",
-              width: 56,
-              height: 56,
-              positionX: "0px",
+              width: 235,
+              height: 40,
+              positionY: "-269px",
             },
             label: "",
           },
           {
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
-              width: 56,
-              height: 56,
-              positionX: "-433px",
+              width: 173,
+              height: 40,
+              positionY: "-315px",
+            },
+            label: "",
+          },
+          {
+            image: {
+              url: "/images/templates/for-enterprises/features/icons.svg",
+              width: 215,
+              height: 40,
+              positionY: "-363px",
             },
             label: "",
           },
@@ -207,27 +207,27 @@ export const items = [
           {
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
-              width: 56,
-              height: 56,
-              positionX: "-360px",
-            },
-            label: "",
-          },
-          {
-            image: {
-              url: "/images/templates/for-enterprises/features/icon_sheets.svg",
-              width: 56,
-              height: 56,
-              positionX: "0px",
+              width: 96,
+              height:40,
+              positionY: "-458px",
             },
             label: "",
           },
           {
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
-              width: 56,
-              height: 56,
-              positionX: "-433px",
+              width: 111,
+              height: 40,
+              positionY: "-180px",
+            },
+            label: "",
+          },
+          {
+            image: {
+              url: "/images/templates/for-enterprises/features/icons.svg",
+              width: 98,
+              height: 40,
+              positionY: "-225px",
             },
             label: "",
           },
@@ -268,45 +268,45 @@ export const items = [
           {
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
-              width: 56,
-              height: 56,
-              positionX: "-360px",
+              width: 96,
+              height:40,
+              positionY: "-458px",
             },
             label: "",
           },
           {
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
-              width: 56,
-              height: 56,
-              positionX: "-360px",
+              width: 156,
+              height: 40,
+              positionY: "0px",
             },
             label: "",
           },
           {
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
-              width: 56,
-              height: 56,
-              positionX: "-360px",
-            },
-            label: "",
-          },
-          {
-            image: {
-              url: "/images/templates/for-enterprises/features/icon_sheets.svg",
-              width: 56,
-              height: 56,
-              positionX: "0px",
+              width: 162,
+              height: 30,
+              positionY: "-50px",
             },
             label: "",
           },
           {
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
-              width: 56,
-              height: 56,
-              positionX: "-433px",
+              width: 115,
+              height: 40,
+              positionY: "-85px",
+            },
+            label: "",
+          },
+          {
+            image: {
+              url: "/images/templates/for-enterprises/features/icons.svg",
+              width: 72,
+              height: 40,
+              positionY: "-132px",
             },
             label: "",
           },

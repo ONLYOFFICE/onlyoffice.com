@@ -14,6 +14,7 @@
   "CustomRooms" : "Custom rooms",
   "ReadDocumentation" : "Read documentation",
   "SubmitRequest" : "Submit request",
+  "LearnMore": "Learn more",
   "EmbeddingFeature1": "<0>Embedding</0> presets and custom mode",
   "EmbeddingFeature2": "<0>API</0> and webhook support",
   "EmbeddingFeature3": "<0>Ready-to-use</0> integration examples",

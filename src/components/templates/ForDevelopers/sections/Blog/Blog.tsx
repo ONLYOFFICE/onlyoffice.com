@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
 import {
-  StyledSuccessStoriesItems,
+  StyledBlogItems,
 } from "./Blog.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -13,7 +13,7 @@ const Blog = () => {
   return (
     <Section tabletSmallSpacing={["72px", "72px"]} background="#F5F5F5" borderTop>
       <Container>
-        <StyledSuccessStoriesItems>
+        <StyledBlogItems>
           {items.map((item, index) => (
             <BlogCard
               className="blog-card"
@@ -33,7 +33,7 @@ const Blog = () => {
               }))}
             />
           ))}
-        </StyledSuccessStoriesItems>
+        </StyledBlogItems>
       </Container>
     </Section>
   );

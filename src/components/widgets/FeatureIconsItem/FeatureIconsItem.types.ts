@@ -31,6 +31,7 @@ export interface IFeatureIconsItem extends IContentImage {
       width: number;
       height: number;
       positionX?: string;
+      positionY?: string;
     };
     label: string;
   }[];
@@ -39,4 +40,5 @@ export interface IFeatureIconsItem extends IContentImage {
   connectorsSubheading?: string;
 
   buttons?: IFeatureIconsItemButton[];
+  showButtonsOutside?: boolean; 
 }

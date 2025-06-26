@@ -11,6 +11,15 @@ const StyledFeaturesContent = styled.div`
     border-bottom: 1px solid #E2E2E2;
     padding: 112px 0;
 
+    p {
+      margin: 0 auto;
+      padding: 24px 0 56px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 736px;
+    }
+
     @media ${device.mobile} {
       padding: 48px 0;
     }
@@ -77,39 +86,35 @@ const StyledFeaturesContent = styled.div`
   }
 `;
 
-const StyledFeaturesListItem = styled(Text)`
-  margin-bottom: 32px;
-  font-size: 16px;
-  line-height: 24px;
+const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean, isLink?: boolean }>`
+  padding: 12px 24px;
+  font-size: 12px;
+  line-height: 26px;
+  border-radius: 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
 
   @media ${device.mobile} {
-    margin-bottom: 24px;
-    font-size: 14px;
-    line-height: 21px;
-  }
-`;
-
-const StyledFeaturesListDescription = styled.div`
-  background-image: url("/images/templates/conversion-api/conversion/conversion.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  padding-bottom: 70.6%;
-
-  @media ${device.tabletS} {
-    max-width: 544px;
+    display: block;
     width: 100%;
-    margin: 0 auto;
-    padding-bottom: 55.815%;
   }
 
-  @media ${device.mobile} {
-    padding-bottom: 70.6%;
+  color: ${({ isPrimary, isLink }) => (isLink ? "#ff6f3d" : (isPrimary ? "#ffffff" : "#ffffff"))};
+  background-color: ${({ isPrimary, isLink }) => (isLink ? "" : (isPrimary ? "#ff6f3d" : "#444444"))};
+
+  &:hover {
+    opacity: 0.9;
+    text-decoration: none;
   }
 `;
 
 export {
   StyledFeaturesContent,
-  StyledFeaturesListItem,
-  StyledFeaturesListDescription
+  StyledFeatureIconsButton
 };

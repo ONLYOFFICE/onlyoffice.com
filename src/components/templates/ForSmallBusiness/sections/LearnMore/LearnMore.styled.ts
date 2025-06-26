@@ -1,18 +1,30 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Heading } from "@src/components/ui/Heading";
 
-const StyledBlogItems = styled.div`
+const StyledLearnMoreHeading = styled(Heading)`
+  margin: 0 auto 56px;
+  text-align: center;
+
+  @media ${device.tabletS} {
+    text-align: initial;
+  }
+
+  @media ${device.mobile} {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+`;
+
+const StyledLearnMoreItems = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 
   .blog-card {
     max-width: 100%;
     min-width: 100%;
-
-    > div {
-      display: block; 
-    }
 
     @media ${device.tablet} {
       max-width: 352px;
@@ -41,5 +53,6 @@ const StyledBlogItems = styled.div`
 `;
 
 export {
-  StyledBlogItems,
+  StyledLearnMoreHeading,
+  StyledLearnMoreItems,
 };

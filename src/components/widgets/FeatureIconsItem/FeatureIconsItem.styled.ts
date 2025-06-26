@@ -116,18 +116,18 @@ const StyledFeatureIconsItemText = styled.li`
 `;
 
 const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean, isLink?: boolean }>`
-  padding: 12px 24px;
-  font-size: 12px;
+  padding: ${({ isLink }) => (isLink ? "12px 0" : "12px 24px")};
+  font-size: ${({ isLink }) => (isLink ? "16px" : "12px")};
   line-height: 26px;
   border-radius: 9px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: ${({ isLink }) => (isLink ? "underline" : "none")};
   display: inline-block;
   transition: 0.2s ease;
   cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-weight: 600;
+  text-transform: ${({ isLink }) => (isLink ? "" : "uppercase")};
+  letter-spacing: ${({ isLink }) => (isLink ? "0" : "0.08em")};
+  font-weight: ${({ isLink }) => (isLink ? "400" : "600")};
 
   @media ${device.mobile} {
     display: block;
