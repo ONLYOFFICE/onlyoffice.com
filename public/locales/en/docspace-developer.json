@@ -31,5 +31,16 @@
   "SwitcherItemText4": "ONLYOFFICE provides simple integration tools that require minimal time and effort for developers to set up a full functional DocSpace integration.",
   "SwitcherItemLink4": "",
   "SwitcherItemImgUrl4": "/images/templates/docspace-developer/switcher/in-minutes.png",
-  "SwitcherItemImgUrl2x4": "/images/templates/docspace-developer/switcher/in-minutes@2x.png"
+  "SwitcherItemImgUrl2x4": "/images/templates/docspace-developer/switcher/in-minutes@2x.png",
+
+  "CardsHeading": "ONLYOFFICE DocSpace is built to seamlessly fit your app or website",
+
+  "CardsItemTitle1": "No matter what language your app is written in",
+  "CardsItemText1": "ONLYOFFICE DocSpace can be integrated into any app or website regardless of its technology stack, programming language, and framework.",
+
+  "CardsItemTitle2": "No matter what deployment model you use",
+  "CardsItemText2": "You can integrate ONLYOFFICE DocSpace into your SaaS or on-premise solution.",
+
+  "CardsItemTitle3": "For multiple uses",
+  "CardsItemText3": "Including: CMS, CRM, eLearning platforms, mail, messaging apps and project management software, and more."
 }

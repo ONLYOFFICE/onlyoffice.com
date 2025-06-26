@@ -1,7 +1,8 @@
 import { Hero } from "./sections/Hero";
+import { Switcher } from "./sections/Switcher";
+import { Cards } from "./sections/Cards";
 
 import { StyledDocSpaceDeveloperColorWrapper } from "./DocSpaceDeveloper.styled";
-import { Switcher } from "./sections/Switcher";
 
 const DocSpaceDeveloperTemplate = () => {
   return (
@@ -9,6 +10,7 @@ const DocSpaceDeveloperTemplate = () => {
       <StyledDocSpaceDeveloperColorWrapper>
         <Hero />
         <Switcher />
+        <Cards />
       </StyledDocSpaceDeveloperColorWrapper>
     </>
   );

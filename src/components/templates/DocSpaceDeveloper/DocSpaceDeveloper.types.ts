@@ -16,4 +16,13 @@ interface IHeadingItemOffsets {
   offsetTop: number;
 }
 
-export type { ISwitcherItems, IHeadingItemOffsets };
+interface ICardsItems {
+  title: string;
+  text: string;
+  iconUrl: {
+    default: string;
+    active: string;
+  }
+}
+
+export type { ISwitcherItems, IHeadingItemOffsets, ICardsItems };
