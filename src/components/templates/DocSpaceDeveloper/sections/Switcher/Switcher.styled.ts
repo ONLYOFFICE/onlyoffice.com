@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
+import { device } from "@src/utils/device";
 
 const StyledSwitcherHeading = styled(Heading)`
   margin-bottom: 40px;
@@ -28,6 +29,7 @@ const StyledSwitcherScroll = styled.div`
 
 const StyledSwitcherProgressBar = styled.div<{
   $height: number;
+  $translateY: number;
 }>`
   width: 4px;
   height: ${({ $height }) => `${$height}px`};
@@ -35,10 +37,16 @@ const StyledSwitcherProgressBar = styled.div<{
   border-radius: 2px;
   position: absolute;
   top: 0;
+  transform: translateY(${({ $translateY }) => `${$translateY}px`});
   transition: all 1s;
 `;
 
-const StyledSwitcherInfoWrapper = styled.div``;
+const StyledSwitcherInfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  position: relative;
+`;
 
 const StyledSwitcherInfo = styled.div`
   max-width: 420px;
@@ -54,7 +62,7 @@ const StyledSwitcherTitle = styled.h3<{
   letter-spacing: -0.02em;
   color: ${({ $isActive }) => $isActive ? "#ff6f3d" : "#fff"};
   margin-bottom: 16px;
-  transition-duration: 200ms;
+  transition-duration: 300ms;
   cursor: pointer;
 `;
 
@@ -87,6 +95,7 @@ const StyledSwitcherImageWrapper = styled.div`
 `;
 
 const StyledSwitcherImage = styled.div<{
+  $isActive: boolean;
   $imageUrl: string;
   $imageUrl2x: string;
 }>`
@@ -99,6 +108,13 @@ const StyledSwitcherImage = styled.div<{
   background-size: 640px auto;
   background-repeat: no-repeat;
   background-position: 0 0;
+  visibility: ${({ $isActive }) => $isActive ? "visible" : "hidden"};
+  opacity: ${({ $isActive }) => $isActive ? "1" : "0"};
+  transition-duration: 300ms;
+
+  @media ${device.retina} {
+    background-image: url(${({ $imageUrl2x }) => $imageUrl2x});
+  }
 `;
 
 

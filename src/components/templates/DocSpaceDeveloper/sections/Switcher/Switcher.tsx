@@ -3,6 +3,8 @@ import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
+import { items } from "./data/items";
+import { IHeadingItemOffsets } from "../../DocSpaceDeveloper.types";
 
 import {
   StyledSwitcherHeading,
@@ -21,16 +23,37 @@ import {
 
 const Switcher = () => {
   const { t } = useTranslation("docspace-developer");
-  const [progressBarHeight, setProgressBarHeight] = useState(0);
-  const headingItemRef = useRef<HTMLHeadingElement>(null);
+  const [activeSwitcher, setActiveSwitcher] = useState(0);
+  const headingItemRefs = useRef<(HTMLHeadElement | null)[]>([]);
+  const [headingItemOffsets, setHeadingItemOffsets] = useState<IHeadingItemOffsets[]>([]);
   const progressBarRef = useRef<HTMLDivElement>(null);
+  const [progressBarHeight, setProgressBarHeight] = useState(0);
+  const [progressBarPosition, setProgressBarPosition] = useState(0);
 
   useEffect(() => {
-    if (headingItemRef.current) {
-      setProgressBarHeight(headingItemRef.current.clientHeight);
+    if (headingItemRefs.current) {
+      console.log(headingItemRefs.current)
+      const offsets = headingItemRefs.current.map((item) => (
+        item ? {
+          offsetHeight: item.offsetHeight,
+          offsetTop: item.offsetTop,
+        } : {
+          offsetHeight: 0,
+          offsetTop: 0,
+        }
+      ))
+
+      setHeadingItemOffsets(offsets);
+      setProgressBarHeight(offsets[0].offsetHeight);
+      setProgressBarPosition(offsets[0].offsetTop);
     }
   }, []);
 
+  const switchHandleClick = (index: number) => {
+    setActiveSwitcher(index);
+    setProgressBarHeight(headingItemOffsets[index].offsetHeight);
+    setProgressBarPosition(headingItemOffsets[index].offsetTop);
+  };
 
   return (
     <Section>
@@ -45,66 +68,53 @@ const Switcher = () => {
         <StyledSwitcherWrapper>
           <StyledSwitcherDescription>
             <StyledSwitcherScroll>
-              <StyledSwitcherProgressBar ref={progressBarRef} $height={progressBarHeight} />
+              <StyledSwitcherProgressBar ref={progressBarRef} $height={progressBarHeight} $translateY={progressBarPosition} />
             </StyledSwitcherScroll>
             <StyledSwitcherInfoWrapper>
-              <StyledSwitcherInfo>
-                <StyledSwitcherTitle
-                  ref={headingItemRef}
-                  $isActive={true}
-                  color="#fff"
-                >
-                  Integrate the whole ONLYOFFICE DocSpace, a single room, or just a simple document ...
-                </StyledSwitcherTitle>
-                <StyledSwitcherText
-                  color="#fff"
-                >
-                  <Trans
-                    t={t}
-                    i18nKey={"ONLYOFFICE provides <0>JavaScript SDK</0> allowing you to use all the DocSpace possibilities with api.js."}
-                    components={[<Text as={"span"} key={0} fontWeight={600} />]}
-                  />
-                </StyledSwitcherText>
-                <StyledSwitcherLink
-                  color="main"
-                  label="Read documentation"
-                  href="https://api.onlyoffice.com/docspace/javascript-sdk/get-started/basic-concepts/"
-                  textUnderline={true}
-                  hover="underline-none"
-                />
-              </StyledSwitcherInfo>
-              <StyledSwitcherInfo>
-                <StyledSwitcherTitle
-                  ref={headingItemRef}
-                  $isActive={true}
-                  color="#fff"
-                >
-                  Integrate the whole ONLYOFFICE DocSpace, a single room, or just a simple document ...
-                </StyledSwitcherTitle>
-                <StyledSwitcherText
-                  color="#fff"
-                >
-                  <Trans
-                    t={t}
-                    i18nKey={"ONLYOFFICE provides <0>JavaScript SDK</0> allowing you to use all the DocSpace possibilities with api.js."}
-                    components={[<Text as={"span"} key={0} fontWeight={600} />]}
-                  />
-                </StyledSwitcherText>
-                <StyledSwitcherLink
-                  color="main"
-                  label="Read documentation"
-                  href="https://api.onlyoffice.com/docspace/javascript-sdk/get-started/basic-concepts/"
-                  textUnderline={true}
-                  hover="underline-none"
-                />
-              </StyledSwitcherInfo>
+              {items.map((item, index) => (
+                <StyledSwitcherInfo key={item.title}>
+                  <StyledSwitcherTitle
+                    $isActive={activeSwitcher === index}
+                    color="#fff"
+                    onClick={() => switchHandleClick(index)}
+                    ref={(elem) => {
+                      headingItemRefs.current[index] = elem;
+                      return void 0;
+                    }}
+                  >
+                    {t(item.title)}
+                  </StyledSwitcherTitle>
+                  <StyledSwitcherText
+                    color="#fff"
+                  >
+                    <Trans
+                      t={t}
+                      i18nKey={item.text}
+                      components={[<Text as={"span"} key={0} fontWeight={600} />]}
+                    />
+                  </StyledSwitcherText>
+                  {item.link && (
+                    <StyledSwitcherLink
+                      color="main"
+                      label={t(item.link.label)}
+                      href={item.link.href}
+                      textUnderline={true}
+                      hover="underline-none"
+                    />
+                  )}
+                </StyledSwitcherInfo>
+              ))}
             </StyledSwitcherInfoWrapper>
           </StyledSwitcherDescription>
           <StyledSwitcherImageWrapper>
-            <StyledSwitcherImage
-              $imageUrl="/images/templates/docspace-developer/switcher/integrate.png"
-              $imageUrl2x="/images/templates/docspace-developer/switcher/integrate@2x.png"
-            />
+            {items.map((item, index) => (
+              <StyledSwitcherImage
+                $isActive={activeSwitcher === index}
+                key={item.img.url}
+                $imageUrl={t(item.img.url)}
+                $imageUrl2x={t(item.img.url2x)}
+              />
+            ))}
           </StyledSwitcherImageWrapper>
         </StyledSwitcherWrapper>
       </Container>

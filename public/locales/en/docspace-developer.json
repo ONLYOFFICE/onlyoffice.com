@@ -12,25 +12,24 @@
   "SwitcherItemTitle1": "Integrate the whole ONLYOFFICE DocSpace, a single room, or just a simple document ...",
   "SwitcherItemText1": " ONLYOFFICE provides <0>JavaScript SDK</0> allowing you to use all the DocSpace possibilities with api.js.",
   "SwitcherItemLink1": "Read documentation",
-  "SwitcherItemImgUrl1": "",
-  "SwitcherItemImgUrl2x1": "",
+  "SwitcherItemImgUrl1": "/images/templates/docspace-developer/switcher/integrate.png",
+  "SwitcherItemImgUrl2x1": "/images/templates/docspace-developer/switcher/integrate@2x.png",
 
-  "SwitcherItemTitle2": "",
-  "SwitcherItemText2": "",
-  "SwitcherItemLink2": "",
-  "SwitcherItemImgUrl2": "",
-  "SwitcherItemImgUrl2x2": "",
+  "SwitcherItemTitle2": "... under your brand ...",
+  "SwitcherItemText2": "Make use of standard branding options or opt for White Label to customise the interface and match the branding of your website or app. Adjust colours, change titles, logos and links, hide the About section, and much more.",
+  "SwitcherItemLink2": "Contact our sales team for details.",
+  "SwitcherItemImgUrl2": "/images/templates/docspace-developer/switcher/branding.png",
+  "SwitcherItemImgUrl2x2": "/images/templates/docspace-developer/switcher/branding@2x.png",
 
-  "SwitcherItemTitle3": "",
-  "SwitcherItemText3": "",
-  "SwitcherItemLink3": "",
-  "SwitcherItemImgUrl3": "",
-  "SwitcherItemImgUrl2x3": "",
+  "SwitcherItemTitle3": "... on your own servers ...",
+  "SwitcherItemText3": "ONLYOFFICE DocSpace Developer can be deployed on-premises as a private or hybrid cloud solution, so your user data always stay within your infrastructure: no hand-off to public clouds.",
+  "SwitcherItemLink3": "Try it now",
+  "SwitcherItemImgUrl3": "/images/templates/docspace-developer/switcher/server.png",
+  "SwitcherItemImgUrl2x3": "/images/templates/docspace-developer/switcher/server@2x.png",
 
-  "SwitcherItemTitle4": "",
-  "SwitcherItemText4": "",
+  "SwitcherItemTitle4": "... in minutes.",
+  "SwitcherItemText4": "ONLYOFFICE provides simple integration tools that require minimal time and effort for developers to set up a full functional DocSpace integration.",
   "SwitcherItemLink4": "",
-  "SwitcherItemImgUrl4": "",
-  "SwitcherItemImgUrl2x4": ""
-
+  "SwitcherItemImgUrl4": "/images/templates/docspace-developer/switcher/in-minutes.png",
+  "SwitcherItemImgUrl2x4": "/images/templates/docspace-developer/switcher/in-minutes@2x.png"
 }

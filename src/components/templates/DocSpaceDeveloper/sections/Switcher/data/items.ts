@@ -1,38 +1,48 @@
-const items = [
+import { ISwitcherItems } from "../../../DocSpaceDeveloper.types";
+
+const items: ISwitcherItems[] = [
   {
-    title: "",
-    text: "",
-    link: "",
+    title: "SwitcherItemTitle1",
+    text: "SwitcherItemText1",
+    link: {
+      label: "SwitcherItemLink1",
+      href: "https://api.onlyoffice.com/docspace/javascript-sdk/get-started/basic-concepts/"
+    },
     img: {
-      url: "",
-      url2x: ""
+      url: "SwitcherItemImgUrl1",
+      url2x: "SwitcherItemImgUrl2x1"
     }
   },
   {
-    title: "",
-    text: "",
-    link: "",
+    title: "SwitcherItemTitle2",
+    text: "SwitcherItemText2",
+    link: {
+      label: "SwitcherItemLink2",
+      href: "mailto:sales@onlyoffice.com"
+    },
     img: {
-      url: "",
-      url2x: ""
+      url: "SwitcherItemImgUrl2",
+      url2x: "SwitcherItemImgUrl2x2"
     }
   },
   {
-    title: "",
-    text: "",
-    link: "",
+    title: "SwitcherItemTitle3",
+    text: "SwitcherItemText3",
+    link: {
+      label: "SwitcherItemLink3",
+      href: "/download-developer#docspace-developer"
+    },
     img: {
-      url: "",
-      url2x: ""
+      url: "SwitcherItemImgUrl3",
+      url2x: "SwitcherItemImgUrl2x3"
     }
   },
   {
-    title: "",
-    text: "",
-    link: "",
+    title: "SwitcherItemTitle4",
+    text: "SwitcherItemText4",
     img: {
-      url: "",
-      url2x: ""
+      url: "SwitcherItemImgUrl4",
+      url2x: "SwitcherItemImgUrl2x4"
     }
   },
 ]
