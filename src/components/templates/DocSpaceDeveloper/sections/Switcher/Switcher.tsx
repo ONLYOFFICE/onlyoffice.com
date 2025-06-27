@@ -62,7 +62,7 @@ const Switcher = () => {
       tabletSmallSpacing={["48px", "48px"]}
       mobileSpacing={["32px", "32px"]}
     >
-      <Container mobileSpacing="32px">
+      <Container>
         <StyledSwitcherHeading
           label={t("SwitcherHeadingBringYour")}
           level={2}

@@ -25,7 +25,7 @@ const Cards = () => {
       tabletSmallSpacing={["48px", "64px"]}
       mobileSpacing={["32px", "32px"]}
     >
-      <Container mobileSpacing="32px">
+      <Container>
         <StyledCardsHeading
           label={t("CardsHeading")}
           color="#f5f5f5"
