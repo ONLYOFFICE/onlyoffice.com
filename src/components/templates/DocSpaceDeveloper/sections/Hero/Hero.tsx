@@ -1,12 +1,12 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
-import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 
 import {
   StyledHeroButtonsWrapper,
+  StyledHeroHeading,
   StyledHeroSection,
+  StyledHeroSpan,
   StyledHeroVideoIframe,
   StyledHeroVideoWrapper
 } from "./Hero.styled";
@@ -17,18 +17,21 @@ const Hero = () => {
   return (
     <StyledHeroSection
       desktopSpacing={["184px", "56px"]}
+      tabletSpacing={["184px", "56px"]}
+      tabletSmallSpacing={["152px", "48px"]}
+      mobileSpacing={["102px", "0"]}
     >
       <Container maxWidth="1007px">
-        <Heading level={1} size={1} textAlign="center" color="#fff">
+        <StyledHeroHeading level={1} size={1} textAlign="center" color="#fff">
           <Trans
             t={t}
             i18nKey={"HeroHeading"}
             components={[
-              <Text as="span" color="#fff" fontSize="40px" key={0} />,
+              <StyledHeroSpan as="span" color="#fff" fontSize="40px" key={0} />,
               <br key={1} />
             ]}
           />
-        </Heading>
+        </StyledHeroHeading>
         <StyledHeroButtonsWrapper>
           <Button
             as="a"
