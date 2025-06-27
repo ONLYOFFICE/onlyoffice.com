@@ -14,6 +14,8 @@ const ContentImage = ({
   image: { width = 640, height = 504, ...image },
   gap,
   position: { desktop = "left", mobile = "top" } = {},
+  rowGap,
+  marginTop
 }: IContentImage) => {
   return (
     <StyledContentImage
@@ -21,8 +23,10 @@ const ContentImage = ({
       className={className}
       $gap={gap}
       $position={{ desktop, mobile }}
+      $rowGap={rowGap}
     >
       <StyledContentImageContent
+        $marginTop={marginTop}
         $contentWidth={contentWidth}
         $position={{ desktop }}
         $gap={gap}

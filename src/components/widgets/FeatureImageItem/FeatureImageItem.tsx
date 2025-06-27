@@ -16,6 +16,10 @@ const FeatureImageItem = ({
   contentWidth = 448,
   image,
   position,
+  fontSize,
+  rowGap,
+  gap,
+  marginTop
 }: IFeatureImageItem) => {
   return (
     <ContentImage
@@ -23,6 +27,9 @@ const FeatureImageItem = ({
       className={className}
       contentWidth={contentWidth}
       position={position}
+      rowGap={rowGap}
+      gap={gap}
+      marginTop={marginTop}
       image={{
         url: image.url,
         url2x: image.url2x,
@@ -32,7 +39,7 @@ const FeatureImageItem = ({
     >
       <StyledFeatureImageItemContent>
         <Heading level={3} label={heading} />
-        <StyledFeatureImageItemText color="#666666">
+        <StyledFeatureImageItemText color="#666666" $fontSize={fontSize}>
           {text}
         </StyledFeatureImageItemText>
         {links?.map(({ href, label, isExternal }, index) => (
