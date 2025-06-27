@@ -42,5 +42,30 @@
   "CardsItemText2": "You can integrate ONLYOFFICE DocSpace into your SaaS or on-premise solution.",
 
   "CardsItemTitle3": "For multiple uses",
-  "CardsItemText3": "Including: CMS, CRM, eLearning platforms, mail, messaging apps and project management software, and more."
+  "CardsItemText3": "Including: CMS, CRM, eLearning platforms, mail, messaging apps and project management software, and more.",
+
+  "WorthHeading": "ONLYOFFICE DocSpace is highly appriciated both",
+
+  "WorthByUsersTitle": "By users",
+  "WorthByUsersList": [
+    "Customizable rooms for different purposes: collaboration, meeting, form filling, due diligence, public",
+    "Flexible access permissions",
+    "Integrated online document editors for docs, sheets, slides, forms, PDFs",
+    "Enhanced security features",
+    "Flawless user experience on different devices"
+  ],
+
+  "WorthByDevelopersTitle": "By developers",
+  "WorthByDevelopersList": [
+    "Embedding presets and custom mode",
+    "API and webhook support",
+    "Plugin SDK to extend functionality",
+    "High availability and performance",
+    "Flexible, scalable pricing",
+    "Ready to use integration examples",
+    "Support for every step from the ONLYOFFICE experts"
+  ],
+
+  "WorthButtonTry": "Try it now",
+  "WorthButtonRead": "Read documentation"
 }

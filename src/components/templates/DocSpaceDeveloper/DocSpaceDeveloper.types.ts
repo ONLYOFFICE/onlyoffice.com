@@ -25,4 +25,14 @@ interface ICardsItems {
   }
 }
 
-export type { ISwitcherItems, IHeadingItemOffsets, ICardsItems };
+interface IWorthCardsItems {
+  title: string;
+  list: string;
+}
+
+export type {
+  ISwitcherItems,
+  IHeadingItemOffsets,
+  ICardsItems,
+  IWorthCardsItems
+};
