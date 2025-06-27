@@ -50,25 +50,40 @@ const StyledCardsItem = styled.div`
   width: 352px;
   padding: 32px 24px;
   background: #2D2D2D;
-  border: 1px solid #444444;
   transition-duration: 300ms;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: radial-gradient(117.35% 209.57% at 116.62% -14.39%,rgba(143,67,0,0.53) 0%,rgba(45,45,45,0.49) 63.5%);
     z-index: 0;
     opacity: 0;
     transition-duration: 300ms;
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    background: linear-gradient(265.66deg, var(--smooth-gradient-color-1) -17.42%, var(--smooth-gradient-color-2) 92.74%);
+    z-index: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    transition-property: --smooth-gradient-color-1;
+    transition-duration: 300ms
+  }
+
   &:hover {
     box-shadow: 0px 12px 40px 0px #00000066;
+  }
+
+  &:hover::after {
+    --smooth-gradient-color-1: #ff6f3d;
   }
 
   &:hover::before {
@@ -106,7 +121,8 @@ const StyledCardsIconWrapper = styled.div`
 `;
 
 const StyledCardsText = styled(Text)`
-
+  position: relative;
+  z-index: 2;
 `;
 
 export {
