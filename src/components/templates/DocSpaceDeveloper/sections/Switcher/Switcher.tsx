@@ -56,8 +56,13 @@ const Switcher = () => {
   };
 
   return (
-    <Section>
-      <Container>
+    <Section
+      desktopSpacing={["56px", "56px"]}
+      tabletSpacing={["56x", "56px"]}
+      tabletSmallSpacing={["48px", "48px"]}
+      mobileSpacing={["32px", "32px"]}
+    >
+      <Container mobileSpacing="32px">
         <StyledSwitcherHeading
           label={t("SwitcherHeadingBringYour")}
           level={2}
@@ -105,6 +110,7 @@ const Switcher = () => {
                         href={item.link.href}
                         textUnderline={true}
                         hover="underline-none"
+                        fontSize="14px"
                       />
                     )}
                   </StyledSwitcherHiderWrapper>

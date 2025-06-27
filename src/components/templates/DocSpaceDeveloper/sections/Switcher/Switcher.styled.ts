@@ -5,18 +5,42 @@ import { Link } from "@src/components/ui/Link";
 import { device } from "@src/utils/device";
 
 const StyledSwitcherHeading = styled(Heading)`
-  margin-bottom: 40px;
+  margin-bottom: 64px;
+
+  @media ${device.tabletS} {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+
+  @media ${device.mobile} {
+    font-size: 20px;
+    line-height: 26px;
+  }
 `;
 
 const StyledSwitcherWrapper = styled.div`
   display: flex;
   gap: 32px;
+  align-items: center;
+
+  @media ${device.tabletS} {
+    flex-direction: column-reverse;
+  }
 `;
 
 const StyledSwitcherDescription = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 24px;
+
+  @media ${device.tablet} {
+    max-width: 35vw;
+  }
+
+  @media ${device.tabletS} {
+    max-width: 100%;
+  }
 `;
 
 const StyledSwitcherScroll = styled.div`
@@ -46,10 +70,18 @@ const StyledSwitcherInfoWrapper = styled.div`
   flex-direction: column;
   gap: 44px;
   position: relative;
+
+  @media ${device.tabletS} {
+    gap: 24px;
+  }
 `;
 
 const StyledSwitcherInfo = styled.div`
   max-width: 420px;
+
+  @media ${device.tabletS} {
+    max-width: 100%;
+  }
 `;
 
 
@@ -64,6 +96,10 @@ const StyledSwitcherTitle = styled.h3<{
   margin-bottom: 16px;
   transition-duration: 300ms;
   cursor: pointer;
+
+  &:hover {
+    color: #ff6f3d;
+  }
 `;
 
 const StyledSwitcherHiderWrapper = styled.div<{
@@ -80,11 +116,19 @@ const StyledSwitcherHiderWrapper = styled.div<{
 
 const StyledSwitcherText = styled(Text)`
   margin-bottom: 16px;
+
+  @media ${device.tabletS} {
+    font-size: 14px;
+  }
 `;
 
 const StyledSwitcherLink = styled(Link)`
   position: relative;
   padding-left: 24px;
+
+  @media ${device.tabletS} {
+    font-size: 13px;
+  }
 
   &::before {
     content: "";
@@ -104,6 +148,14 @@ const StyledSwitcherImageWrapper = styled.div`
   position: relative;
   width: 640px;
   aspect-ratio: 1.29;
+
+  @media ${device.tablet} {
+    width: 53vw;
+  }
+
+  @media ${device.tabletS} {
+    width: 100%;
+  }
 `;
 
 const StyledSwitcherImage = styled.div<{
@@ -123,6 +175,14 @@ const StyledSwitcherImage = styled.div<{
   visibility: ${({ $isActive }) => $isActive ? "visible" : "hidden"};
   opacity: ${({ $isActive }) => $isActive ? "1" : "0"};
   transition-duration: 300ms;
+
+  @media ${device.tablet} {
+    background-size: 53vw auto;
+  }
+
+  @media ${device.tabletS} {
+    background-size: cover;
+  }
 
   @media ${device.retina} {
     background-image: url(${({ $imageUrl2x }) => $imageUrl2x});
