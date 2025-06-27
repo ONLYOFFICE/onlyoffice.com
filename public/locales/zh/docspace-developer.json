@@ -6,8 +6,8 @@
   "HeroButtonGet": "Get it now",
   "HeroButtonSchedule": "Schedule demo",
   "HeroYoutubeTitle": "YouTube video player",
-  "HeroYoutubeUrl": "https://www.youtube.com/embed/snOBl5Ru6lc?si=Tt4C4r4OaUVVCHBs?autoplay=1&amp;mute=1",
-  "HeroYouTubeAttributeName": "youtube embed",
+  "HeroYoutubeUrl": "//player.bilibili.com/player.html?isOutside=true&aid=BV1XNwjehEP7&bvid=BV1XNwjehEP7&cid=BV1XNwjehEP7",
+  "HeroYouTubeAttributeName": "bilibili",
 
   "SwitcherHeadingBringYour": "Bring your web app users a secure space for content storing and online document collaboration",
 

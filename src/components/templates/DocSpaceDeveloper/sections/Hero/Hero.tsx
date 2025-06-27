@@ -48,9 +48,9 @@ const Hero = () => {
         </StyledHeroButtonsWrapper>
         <StyledHeroVideoWrapper>
           <StyledHeroVideoIframe
-            src="https://www.youtube.com/embed/snOBl5Ru6lc?si=Tt4C4r4OaUVVCHBs?autoplay=1&amp;mute=1"
+            src={t("HeroYoutubeUrl")}
             title={t("HeroVideoTitle")}
-            name="youtube embed"
+            name={t("HeroYouTubeAttributeName")}
             frameBorder="0"
             allow="autoplay; encrypted-media"
             allowFullScreen
