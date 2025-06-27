@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { Button } from "@src/components/ui/Button";
 import { items } from "./data/items";
 
 import {
@@ -12,7 +13,6 @@ import {
   StyledWorthList,
   StyledWorthTitle
 } from "./Worth.styled";
-import { Button } from "@src/components/ui/Button";
 
 const Worth = () => {
   const { t } = useTranslation("docspace-developer");
@@ -25,7 +25,13 @@ const Worth = () => {
   ));
 
   return (
-    <Section background="#f5f5f5">
+    <Section
+      background="#f5f5f5"
+      desktopSpacing={["112px", "112px"]}
+      tabletSpacing={["112px", "112px"]}
+      tabletSmallSpacing={["64px", "64px"]}
+      mobileSpacing={["32px", "64px"]}
+    >
       <Container>
         <StyledWorthHeading
           label={t("WorthHeading")}
