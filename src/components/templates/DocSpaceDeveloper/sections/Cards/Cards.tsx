@@ -19,12 +19,19 @@ const Cards = () => {
   const { t } = useTranslation("docspace-developer");
 
   return (
-    <Section>
-      <Container>
+    <Section
+      desktopSpacing={["72px", "112px"]}
+      tabletSpacing={["72px", "112px"]}
+      tabletSmallSpacing={["48px", "64px"]}
+      mobileSpacing={["32px", "32px"]}
+    >
+      <Container mobileSpacing="32px">
         <StyledCardsHeading
           label={t("CardsHeading")}
           color="#f5f5f5"
           textAlign="center"
+          level={2}
+          size={3}
         />
         <StyledCardsList>
           {items.map((item) => (

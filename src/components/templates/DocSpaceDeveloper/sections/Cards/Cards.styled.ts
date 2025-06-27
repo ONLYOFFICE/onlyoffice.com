@@ -1,15 +1,26 @@
 import styled from "styled-components";
+import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { ICardsItems } from "../../DocSpaceDeveloper.types";
 
 const StyledCardsHeading = styled(Heading)`
   margin-bottom: 64px;
+
+  @media ${device.tabletS} {
+    margin-bottom: 24px;
+  }
 `;
 
 const StyledCardsList = styled.div`
   display: flex;
   gap: 32px;
+  justify-content: center;
+
+  @media ${device.tabletS} {
+    flex-direction: column;
+    gap: 24px;
+  }
 `;
 
 const StyledCardsIconDefault = styled.div<{
@@ -49,9 +60,21 @@ const StyledCardsIconActive = styled.div<{
 const StyledCardsItem = styled.div`
   width: 352px;
   padding: 32px 24px;
-  background: #2D2D2D;
+  background-color: #2D2D2D;
   transition-duration: 300ms;
   position: relative;
+
+  @media ${device.tablet} {
+    width: 27vw;
+  }
+
+  @media ${device.tabletS} {
+    width: 100%;
+  }
+
+  @media ${device.mobile} {
+    padding: 16px;
+  }
 
   &::before {
     content: "";
@@ -80,6 +103,7 @@ const StyledCardsItem = styled.div`
 
   &:hover {
     box-shadow: 0px 12px 40px 0px #00000066;
+    background-color: transparent;
   }
 
   &:hover::after {
@@ -110,7 +134,13 @@ const StyledCardsWrapper = styled.div`
 `;
 
 const StyledCardsTitle = styled(Heading)`
+  @media ${device.tablet} {
+    max-width: calc(100% - 64px);
+  }
 
+  @media ${device.mobile} {
+    font-size: 16px;
+  }
 `;
 
 const StyledCardsIconWrapper = styled.div`
@@ -123,6 +153,10 @@ const StyledCardsIconWrapper = styled.div`
 const StyledCardsText = styled(Text)`
   position: relative;
   z-index: 2;
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
 `;
 
 export {
