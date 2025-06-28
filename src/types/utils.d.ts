@@ -14,7 +14,6 @@ declare module "onlyoffice-react-ui-kit/footer" {
   interface IFooter {
     locale?: string;
     languages: {
-      key: string;
       shortKey: string;
       name: string;
       href: string
