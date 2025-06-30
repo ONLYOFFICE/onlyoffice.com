@@ -1,73 +1,73 @@
 {
-  "PageTitle": "ONLYOFFICE DocSpace secure document storing and collaboration for your web app users | ONLYOFFICE",
-  "PageDescription": "ONLYOFFICE is an online office suite integrated with a collaboration platform to manage documents, projects, team and customer relations in one place.",
+  "PageTitle": "ONLYOFFICE 协作空间，让您的 Web 应用用户获得安全的文档存储和协作 | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE是一个在线办公套件，是集合管理文档、项目、团队和客户关系等多种功能为一体的协作平台。",
 
-  "HeroHeading": "ONLYOFFICE DocSpace<br><0>secure document storing and collaboration for your web app users</0>",
-  "HeroButtonGet": "Get it now",
-  "HeroButtonSchedule": "Schedule demo",
+  "HeroHeading": "ONLYOFFICE 协作空间， <br><0>让您的 Web 应用用户获得安全的文档存储和协作</0>",
+  "HeroButtonGet": "立即获取",
+  "HeroButtonSchedule": "预约演示",
   "HeroYoutubeTitle": "YouTube video player",
   "HeroYoutubeUrl": "//player.bilibili.com/player.html?isOutside=true&aid=BV1XNwjehEP7&bvid=BV1XNwjehEP7&cid=BV1XNwjehEP7",
   "HeroYouTubeAttributeName": "bilibili",
 
-  "SwitcherHeadingBringYour": "Bring your web app users a secure space for content storing and online document collaboration",
+  "SwitcherHeadingBringYour": "为您的 Web 应用程序用户提供一个安全的内容存储和在线文档协作空间",
 
-  "SwitcherItemTitle1": "Integrate the whole ONLYOFFICE DocSpace, a single room, or just a simple document ...",
-  "SwitcherItemText1": " ONLYOFFICE provides <0>JavaScript SDK</0> allowing you to use all the DocSpace possibilities with api.js.",
-  "SwitcherItemLink1": "Read documentation",
+  "SwitcherItemTitle1": "集成整个 ONLYOFFICE 协作空间、单个房间或者一个单独的文档 ...",
+  "SwitcherItemText1": " ONLYOFFICE 提供 <b>JavaScript SDK</b>，让您可以通过 api.js 使用协作空间的所有功能。",
+  "SwitcherItemLink1": "阅读文档",
   "SwitcherItemImgUrl1": "/images/templates/docspace-developer/switcher/integrate.png",
   "SwitcherItemImgUrl2x1": "/images/templates/docspace-developer/switcher/integrate@2x.png",
 
-  "SwitcherItemTitle2": "... under your brand ...",
-  "SwitcherItemText2": "Make use of standard branding options or opt for White Label to customise the interface and match the branding of your website or app. Adjust colours, change titles, logos and links, hide the About section, and much more.",
-  "SwitcherItemLink2": "Contact our sales team for details.",
+  "SwitcherItemTitle2": "... 以您的品牌名义 ...",
+  "SwitcherItemText2": "通过标准品牌选项或选择白标，来定制界面并匹配您的网站或应用的品牌。调整颜色、更改标题、logo和链接、隐藏“关于”板块等等。",
+  "SwitcherItemLink2": "请联系我们的销售团队了解详情。",
   "SwitcherItemImgUrl2": "/images/templates/docspace-developer/switcher/branding.png",
   "SwitcherItemImgUrl2x2": "/images/templates/docspace-developer/switcher/branding@2x.png",
 
-  "SwitcherItemTitle3": "... on your own servers ...",
-  "SwitcherItemText3": "ONLYOFFICE DocSpace Developer can be deployed on-premises as a private or hybrid cloud solution, so your user data always stay within your infrastructure: no hand-off to public clouds.",
-  "SwitcherItemLink3": "Try it now",
+  "SwitcherItemTitle3": "... 在您自己的服务器上 ...",
+  "SwitcherItemText3": "开发者版 ONLYOFFICE 协作空间可以作为私有云或混合云解决方案在本地部署，因此您的用户数据始终保留在您的基础架构内：无需移交给公共云。",
+  "SwitcherItemLink3": "立即试用",
   "SwitcherItemImgUrl3": "/images/templates/docspace-developer/switcher/server.png",
   "SwitcherItemImgUrl2x3": "/images/templates/docspace-developer/switcher/server@2x.png",
 
-  "SwitcherItemTitle4": "... in minutes.",
-  "SwitcherItemText4": "ONLYOFFICE provides simple integration tools that require minimal time and effort for developers to set up a full functional DocSpace integration.",
+  "SwitcherItemTitle4": "... 几分钟内.",
+  "SwitcherItemText4": "ONLYOFFICE 提供集成简单的工具，开发人员只需花费最少的时间和精力即可设置功能齐全的协作空间集成。",
   "SwitcherItemLink4": "",
   "SwitcherItemImgUrl4": "/images/templates/docspace-developer/switcher/in-minutes.png",
   "SwitcherItemImgUrl2x4": "/images/templates/docspace-developer/switcher/in-minutes@2x.png",
 
-  "CardsHeading": "ONLYOFFICE DocSpace is built to seamlessly fit your app or website",
+  "CardsHeading": "ONLYOFFICE 协作空间旨在无缝适配您的应用或网站",
 
-  "CardsItemTitle1": "No matter what language your app is written in",
-  "CardsItemText1": "ONLYOFFICE DocSpace can be integrated into any app or website regardless of its technology stack, programming language, and framework.",
+  "CardsItemTitle1": "无论您的应用程序使用什么语言编写",
+  "CardsItemText1": "ONLYOFFICE 协作空间可以集成到任何应用程序或网站中，无论其技术堆栈、编程语言和框架如何。",
 
-  "CardsItemTitle2": "No matter what deployment model you use",
-  "CardsItemText2": "You can integrate ONLYOFFICE DocSpace into your SaaS or on-premise solution.",
+  "CardsItemTitle2": "无论您使用哪种部署模型",
+  "CardsItemText2": "可将 ONLYOFFICE 协作空间集成到您的 SaaS 或本地解决方案中。",
 
-  "CardsItemTitle3": "For multiple uses",
-  "CardsItemText3": "Including: CMS, CRM, eLearning platforms, mail, messaging apps and project management software, and more.",
+  "CardsItemTitle3": "多种用途",
+  "CardsItemText3": "包括：内容管理系统、客户关系管理、电子学习平台、邮件、消息应用程序和项目管理软件等。",
 
-  "WorthHeading": "ONLYOFFICE DocSpace is highly appriciated both",
+  "WorthHeading": "ONLYOFFICE 协作空间受到广泛的高度赞赏",
 
-  "WorthByUsersTitle": "By users",
+  "WorthByUsersTitle": "来自用户",
   "WorthByUsersList": [
-    "Customizable rooms for different purposes: collaboration, meeting, form filling, due diligence, public",
-    "Flexible access permissions",
-    "Integrated online document editors for docs, sheets, slides, forms, PDFs",
-    "Enhanced security features",
-    "Flawless user experience on different devices"
+    "可根据不同目的定制房间：协作、会议、填写表单、尽职调查、与第三方协作",
+    "灵活的访问权限",
+    "集成在线文档编辑器，处理文档、表格、幻灯片、表单、PDF",
+    "高度的安全功能",
+    "不同设备上的完美用户体验"
   ],
 
-  "WorthByDevelopersTitle": "By developers",
+  "WorthByDevelopersTitle": "来自开发人员",
   "WorthByDevelopersList": [
-    "Embedding presets and custom mode",
-    "API and webhook support",
-    "Plugin SDK to extend functionality",
-    "High availability and performance",
-    "Flexible, scalable pricing",
-    "Ready to use integration examples",
-    "Support for every step from the ONLYOFFICE experts"
+    "嵌入预设和自定义模式",
+    "API 和 webhook 支持",
+    "用插件 SDK 扩展功能",
+    "高度可用性和性能",
+    "灵活、可扩展的定价",
+    "现成可用的集成例子",
+    "每个步骤都有 ONLYOFFICE 专家提供支持"
   ],
 
-  "WorthButtonTry": "Try it now",
-  "WorthButtonRead": "Read documentation"
+  "WorthButtonTry": "立即试用",
+  "WorthButtonRead": "阅读文档"
 }
