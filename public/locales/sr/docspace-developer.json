@@ -1,0 +1,73 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace sigurno čuvanje dokumenata i saradnja za korisnike vaših veb aplikacija | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE is an online office suite integrated with a collaboration platform to manage documents, projects, team and customer relations in one place.",
+
+  "HeroHeading": "ONLYOFFICE DocSpace <br><0>bezbedno čuvanje dokumenata i saradnja za korisnike vaših veb aplikacija</0>",
+  "HeroButtonGet": "Nabavite ga odmah",
+  "HeroButtonSchedule": "Zakažite demo",
+  "HeroYoutubeTitle": "YouTube video player",
+  "HeroYoutubeUrl": "https://www.youtube.com/embed/snOBl5Ru6lc?si=Tt4C4r4OaUVVCHBs?autoplay=1&mute=1",
+  "HeroYouTubeAttributeName": "youtube embed",
+
+  "SwitcherHeadingBringYour": "Pružite korisnicima vaše veb aplikacije sigurno mesto za čuvanje sadržaja i online saradnju na dokumentima.",
+
+  "SwitcherItemTitle1": "Integrišite ceo ONLYOFFICE DocSpace, jednu sobu ili samo jednostavan dokument ...",
+  "SwitcherItemText1": " ONLYOFFICE obezbeđuje <0>JavaScript SDK</0> omogućavajući vam da koristite sve mogućnosti DocSpace-a sa api.js.",
+  "SwitcherItemLink1": "Pročitajte dokumentaciju",
+  "SwitcherItemImgUrl1": "/images/templates/docspace-developer/switcher/integrate.png",
+  "SwitcherItemImgUrl2x1": "/images/templates/docspace-developer/switcher/integrate@2x.png",
+
+  "SwitcherItemTitle2": "... pod vašim brendom ...",
+  "SwitcherItemText2": "Iskoristite standardne opcije brendiranja ili se odlučite za White Label kako biste prilagodili interfejs i uskladili brendiranje vaše veb stranice ili aplikacije. Prilagodite boje, promenite naslove, logotipe i linkove, sakrijte odeljak O nama i još mnogo toga.",
+  "SwitcherItemLink2": "Kontaktirajte naš prodajni tim za detalje.",
+  "SwitcherItemImgUrl2": "/images/templates/docspace-developer/switcher/branding.png",
+  "SwitcherItemImgUrl2x2": "/images/templates/docspace-developer/switcher/branding@2x.png",
+
+  "SwitcherItemTitle3": "... na sopstvenim serverima ...",
+  "SwitcherItemText3": "ONLYOFFICE DocSpace Developer može biti raspoređen lokalno kao privatno ili hibridno rešenje u oblaku, tako da vaši korisnički podaci uvek ostaju u vašoj infrastrukturi: bez predaje javnim oblacima.",
+  "SwitcherItemLink3": "Isprobajte sada",
+  "SwitcherItemImgUrl3": "/images/templates/docspace-developer/switcher/server.png",
+  "SwitcherItemImgUrl2x3": "/images/templates/docspace-developer/switcher/server@2x.png",
+
+  "SwitcherItemTitle4": "... za nekoliko minuta.",
+  "SwitcherItemText4": "ONLYOFFICE pruža jednostavne alate za integraciju koji zahtevaju minimalno vreme i trud od programera da postave potpuno funkcionalnu integraciju DocSpace-a.",
+  "SwitcherItemLink4": "",
+  "SwitcherItemImgUrl4": "/images/templates/docspace-developer/switcher/in-minutes.png",
+  "SwitcherItemImgUrl2x4": "/images/templates/docspace-developer/switcher/in-minutes@2x.png",
+
+  "CardsHeading": "ONLYOFFICE DocSpace je napravljen da se besprekorno uklopi u vašu aplikaciju ili veb sajt",
+
+  "CardsItemTitle1": "Bez obzira na kom jeziku je vaša aplikacija napisana",
+  "CardsItemText1": "ONLYOFFICE DocSpace se može integrisati u bilo koju aplikaciju ili veb lokaciju bez obzira na tehnologiju, programski jezik i okvir.",
+
+  "CardsItemTitle2": "Bez obzira na to koji model implementacije koristite.",
+  "CardsItemText2": "Možete integrisati ONLYOFFICE DocSpace u svoje SaaS ili on-premise rešenje.",
+
+  "CardsItemTitle3": "Za višestruku upotrebu",
+  "CardsItemText3": "Uključujući: CMS, CRM, platforme za e-učenje, poštu, aplikacije za razmenu poruka i softver za upravljanje projektima i još mnogo toga.",
+
+  "WorthHeading": "ONLYOFFICE DocSpace je veoma cenjen i",
+
+  "WorthByUsersTitle": "Od strane korisnika",
+  "WorthByUsersList": [
+    "Prilagodljive prostorije za različite namene: saradnja, sastanak, popunjavanje obrazaca, due diligence, javnost",
+    "Fleksibilne dozvole za pristup",
+    "Integrisani online urednici dokumenata za dokumente, listove, slajdove, obrasce, PDF-ove",
+    "Poboljšane bezbednosne funkcije",
+    "Besprekorno korisničko iskustvo na različitim uređajima"
+  ],
+
+  "WorthByDevelopersTitle": "Od strane programera",
+  "WorthByDevelopersList": [
+    "Ugrađivanje preseta i prilagođeni režim",
+    "API i webhook podrška",
+    "Plugin SDK za proširenje funkcionalnosti",
+    "Visoka dostupnost i performanse",
+    "Fleksibilne, skalabilne cene",
+    "Spremni za upotrebu primeri integracije",
+    "Podrška za svaki korak od ONLYOFFICE stručnjaka"
+  ],
+
+  "WorthButtonTry": "Isprobajte sada",
+  "WorthButtonRead": "Pročitajte dokumentaciju"
+}
