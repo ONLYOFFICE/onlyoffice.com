@@ -31,7 +31,12 @@ const DownloadPage = ({
         <Head title={t("PageTitle")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            linkId: "oo-menu-link-enterprise-prices",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <DownloadTemplate

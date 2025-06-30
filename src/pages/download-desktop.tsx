@@ -35,7 +35,12 @@ const DownloadDesktopPage = ({
         />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            linkId: "oo-menu-link-desktop-mobile-apps",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <DownloadDesktopTemplate

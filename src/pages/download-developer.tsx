@@ -31,7 +31,12 @@ const DownloadDeveloperPage = ({
         <Head title={t("PageTitle")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            linkId: "oo-menu-link-developer-servers",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <DownloadDeveloperTemplate
