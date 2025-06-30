@@ -5,6 +5,8 @@ import { device } from "@src/utils/device";
 const StyledContentImage = styled.div<{
   $gap: IContentImage["gap"];
   $position: IContentImage["position"];
+  $rowGap?: IContentImage["rowGap"];
+  $marginTop?: IContentImage["marginTop"];
 }>`
   display: flex;
   align-items: center;
@@ -13,6 +15,7 @@ const StyledContentImage = styled.div<{
     flex-direction: ${(props) =>
       props.$position?.mobile === "bottom" ? "column-reverse" : "column"};
     align-items: initial;
+    row-gap: ${(props) => props.$rowGap ?? 0}px;
   }
 `;
 
@@ -67,10 +70,10 @@ const StyledContentImageContent = styled.div<{
         `
       : css`
           @media ${device.tabletS} {
-            margin-top: ${(props.$gap?.tabletS ?? 24) + "px"};
+            margin-top: ${(props.$marginTop?.tabletS ?? 24) + "px"};
 
             @media ${device.mobile} {
-              margin-top: ${(props.$gap?.mobile ?? 16) + "px"};
+              margin-top: ${(props.$marginTop?.mobile ?? 16) + "px"};
             }
           }
         `}
