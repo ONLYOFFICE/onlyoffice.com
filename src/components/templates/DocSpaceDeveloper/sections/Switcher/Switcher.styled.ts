@@ -125,6 +125,7 @@ const StyledSwitcherText = styled(Text)`
 const StyledSwitcherLink = styled(Link)`
   position: relative;
   padding-left: 24px;
+  display: inline-block;
 
   @media ${device.tabletS} {
     font-size: 13px;

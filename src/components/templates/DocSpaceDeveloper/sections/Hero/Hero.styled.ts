@@ -36,6 +36,8 @@ const StyledHeroHeading = styled(Heading)`
 `;
 
 const StyledHeroSpan = styled(Text)`
+  font-size: 40px;
+
   @media ${device.tabletS} {
     font-size: 36px;
   }

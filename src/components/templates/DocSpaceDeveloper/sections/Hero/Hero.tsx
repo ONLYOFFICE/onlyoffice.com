@@ -27,7 +27,7 @@ const Hero = () => {
             t={t}
             i18nKey={"HeroHeading"}
             components={[
-              <StyledHeroSpan as="span" color="#fff" fontSize="40px" key={0} />,
+              <StyledHeroSpan as="span" color="#fff" key={0} />,
               <br key={1} />
             ]}
           />
