@@ -1,0 +1,17 @@
+{
+    "SliderScreen1Url": "/images/templates/docspace/collaborate/de/collaboration_rooms.png",
+    "SliderScreen1Url2x": "/images/templates/docspace/collaborate/de/collaboration_rooms_2x.png",
+    "SliderScreen2Url": "/images/templates/docspace/collaborate/de/meeting_rooms.png",
+    "SliderScreen2Url2x": "/images/templates/docspace/collaborate/de/meeting_rooms_2x.png",
+    "SliderScreen3Url": "/images/templates/docspace/collaborate/de/public_rooms.png",
+    "SliderScreen3Url2x": "/images/templates/docspace/collaborate/de/public_rooms_2x.png",
+    "SliderScreen4Url": "/images/templates/docspace/collaborate/de/custom_rooms.png",
+    "SliderScreen4Url2x": "/images/templates/docspace/collaborate/de/custom_rooms_2x.png",
+    "SliderScreen5Url": "/images/templates/docspace/collaborate/de/form_fill_rooms.png",
+    "SliderScreen5Url2x": "/images/templates/docspace/collaborate/de/form_fill_rooms_2x.png",
+    "SliderScreen6Url": "/images/templates/docspace/collaborate/de/virtual_data_rooms.png",
+    "SliderScreen6Url2x": "/images/templates/docspace/collaborate/de/virtual_data_rooms_2x.png",
+    "SliderScreen7Url": "/images/templates/docspace/collaborate/de/private_rooms.png",
+    "SliderScreen7Url2x": "/images/templates/docspace/collaborate/de/private_rooms_2x.png",
+    "AICardImageUrl": "/images/templates/docspace/ai/de/ai-plugins.svg"
+}

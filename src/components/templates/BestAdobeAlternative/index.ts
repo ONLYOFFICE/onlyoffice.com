@@ -1,0 +1,1 @@
+export { BestAdobeAlternativeTemplate } from "./BestAdobeAlternative";

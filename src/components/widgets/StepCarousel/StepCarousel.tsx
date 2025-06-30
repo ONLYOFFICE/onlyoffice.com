@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -21,25 +20,10 @@ const StepCarousel = ({
   className,
   tabs,
   items,
-  defaultActiveTab = 0,
+  activeTab,
   onChange,
 }: IStepCarousel) => {
-  const [activeTab, setActiveTab] = useState(defaultActiveTab);
   const isTabbed = Array.isArray(tabs) && tabs.length > 0;
-
-  useEffect(() => {
-    if (!tabs) return;
-
-    setActiveTab(defaultActiveTab);
-  }, [defaultActiveTab, tabs]);
-
-  const handleTabClick = (index: number) => {
-    setActiveTab(index);
-
-    if (onChange) {
-      onChange(index);
-    }
-  };
 
   return (
     <div id={id} className={className}>
@@ -48,7 +32,7 @@ const StepCarousel = ({
           {tabs!.map((tab, i) => (
             <StyledStepCarouselTab
               key={i}
-              onClick={() => handleTabClick(i)}
+              onClick={() => onChange?.(i)}
               $active={i === activeTab}
             >
               {tab.label}
@@ -59,7 +43,10 @@ const StepCarousel = ({
 
       <StyledStepCarouselWrapper>
         {(isTabbed ? tabs! : [{ items }]).map((tab, i) => (
-          <StyledStepCarouselBox key={i} $activeTab={i === activeTab}>
+          <StyledStepCarouselBox
+            key={i}
+            $activeTab={i === (typeof activeTab === "number" ? activeTab : 0)}
+          >
             <Swiper
               spaceBetween={32}
               loop

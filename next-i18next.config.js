@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const { languages } = require("./src/config/languages");
+const { languages } = require("./src/config/data/languages");
 
 module.exports = {
   i18n: {

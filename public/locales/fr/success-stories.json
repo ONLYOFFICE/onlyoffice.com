@@ -1,0 +1,368 @@
+{
+  "astu": {
+    "id": 1,
+    "slug": "astu",
+    "title": "Comment terminer un projet à temps avec ONLYOFFICE",
+    "intro": "Le travail d'équipe est devenu plus transparent, l'interchangeabilité a été accrue. Nous avons réduit les manquements aux délais des projets et obtenu la possibilité de collecter des données sur nos dépenses.",
+    "user": {
+      "name": "Ivan N. Sheremet",
+      "role": "Directeur exécutif de NPO ASTU",
+      "portal": "Utilisateurs du portail ONLYOFFICE : n/a",
+      "location": "Lieu : Russie",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/ivan_sheremet.png"
+    },
+    "profile": {
+      "company": "<0>ASTU - agence des technologies de gestion modernes</0>",
+      "industry": ["Conseil en management"]
+    },
+    "challenges": [
+      "Collaboration efficace au sein d'une équipe, planification opérationnelle et gestion de projet."
+    ],
+    "achievements": [
+      "Ivan N. Sheremet, Directeur exécutif, déclare : \"Nous avons amélioré notre technologie de gestion de projet en tenant compte des fonctionnalités et de la terminologie utilisées dans ONLYOFFICE. La passation des tâches entre coéquipiers est devenue plus facile (par exemple, pendant les vacances). La planification opérationnelle est désormais entièrement exécutée avec ONLYOFFICE.\"",
+      "La combinaison d'ONLYOFFICE et d'un stockage de fichiers cloud nous permet d'abandonner l'utilisation de notre propre serveur. Le travail d'équipe est devenu plus transparent, l'interchangeabilité a été accrue. Nous avons réduit les manquements aux délais des projets et obtenu la possibilité de collecter des données sur nos dépenses."
+    ],
+    "PageTitle": "Success Story d'ASTU | ONLYOFFICE",
+    "PageDescription": "Découvrez comment ASTU a terminé un projet à temps avec ONLYOFFICE",
+    "PageTitleOG": "Success Story d'ASTU | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment ASTU a terminé un projet à temps avec ONLYOFFICE"
+  },
+  "igv-austria": {
+    "id": 2,
+    "slug": "igv-austria",
+    "title": "Comment IGV Austria économise du temps et de l'argent avec ONLYOFFICE",
+    "intro": "Nous avons atteint l'objectif de réduire les appels à notre bureau. Cela fait gagner du temps à nos membres et de l'argent à notre communauté.",
+    "user": {
+      "name": "Mag. Matthias Kienzl",
+      "role": "Directeur général d'IGV Austria",
+      "portal": "Utilisateurs du portail ONLYOFFICE : 423",
+      "location": "Lieu : Autriche",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/matthias_kienzl.png"
+    },
+    "profile": {
+      "company": "<0>IGV Austria.</0> Courtiers d'assurance de premier plan.",
+      "industry": [
+        "La plus grande consolidation privée de courtiers d'assurance en Autriche, ce qui nous donne l'avantage de présenter à nos clients des produits d'assurance utiles et compétitifs et de leur fournir également la meilleure offre de plusieurs groupes d'assurance. Nos membres sont situés dans toute l'Autriche. Ainsi, chaque client en Autriche a la possibilité d'utiliser nos produits près de chez lui. Nous sommes 423 coéquipiers qui utilisons Teamlab tous les jours – les employés de nos membres utilisent également le portail."
+      ]
+    },
+    "challenges": [
+      "Nous recherchions une solution viable et rentable pour fournir efficacement à nos membres des informations utiles et importantes. En construisant notre communauté, nous recherchions une plateforme utile pour échanger des informations, partager des documents, archiver des documents, avoir une administration des membres simple et efficace et rester en contact avec eux."
+    ],
+    "achievements": [
+      "Le travail depuis l'adoption d'ONLYOFFICE est beaucoup plus facile. Nous n'avons pas à envoyer de documents à 500 adresses e-mail. Il nous faut 1 minute et 4 clics pour que le document soit au bon endroit. Ceux qui en ont besoin peuvent y accéder immédiatement, et nos membres n'ont besoin que d'un accès Internet, qu'ils utilisent leur téléphone portable ou leur ordinateur personnel.",
+      "Il y a un an, nous avons intégré un « IGV-Wiki » pour nos membres. Il fonctionne comme un wikipedia interne et nous permet ainsi d'avoir une plateforme où sont placés les règlements et les guides. Les nouveaux membres utilisent particulièrement cette fonctionnalité et nous avons atteint l'objectif de réduire les appels à notre bureau. Cela fait gagner du temps à nos membres et de l'argent à notre communauté."
+    ],
+    "PageTitle": "Success Story d'IGV | ONLYOFFICE",
+    "PageDescription": "Découvrez comment IGV Austria économise du temps et de l'argent avec ONLYOFFICE",
+    "PageTitleOG": "Success Story d'IGV | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment IGV Austria économise du temps et de l'argent avec ONLYOFFICE"
+  },
+  "maisto-banko": {
+    "id": 3,
+    "slug": "maisto-banko",
+    "title": "Comment un projet caritatif a collecté des denrées alimentaires d'une valeur de 300 000 EUR",
+    "intro": "En deux jours, nous avons collecté des denrées alimentaires d'une valeur de près de 300 000 EUR. Toutes ces denrées ont été distribuées aux personnes dans le besoin.",
+    "user": {
+      "name": "Modestas Bastys",
+      "role": "Fondation caritative Banque Alimentaire \"Maisto bankas\"",
+      "portal": "Utilisateurs du portail ONLYOFFICE : 24",
+      "location": "Lieu : Lituanie",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/modestas_bastys.png"
+    },
+    "profile": {
+      "company": "Fondation caritative Banque Alimentaire <1>\"Maisto bankas\"</1>",
+      "industry": [
+        "Nous travaillons à lutter contre la pauvreté et le gaspillage alimentaire. Nos activités sont menées dans toute la Lituanie. En tant qu'acteur de l'industrie alimentaire, nous sommes un intermédiaire entre les entreprises ou les personnes qui donnent de la nourriture et les organisations et les personnes qui ont besoin d'aide alimentaire. Nous employons actuellement 24 personnes et comptons plus de 350 bénévoles, déclare Modestas Bastys, chef de projet."
+      ]
+    },
+    "challenges": [
+      "Nous avions besoin d'un système unique pour coordonner les activités de collecte de nourriture (obtention de nourriture auprès des entreprises) dans toute la Lituanie."
+    ],
+    "achievements": [
+      "La délégation des tâches et le stockage des informations sont devenus beaucoup plus faciles. Nous avons également commencé à utiliser le module de projet pour planifier de grands projets.",
+      "Le projet de collecte de nourriture du printemps 2014 a été planifié à l'aide de l'outil de gestion de projet ONLYOFFICE. La communication avec les partenaires et les donateurs a été coordonnée à l'aide du CRM. Le résultat - en deux jours, nous avons collecté des denrées alimentaires d'une valeur de près de 300 000 EUR. Toutes ces denrées ont été distribuées aux personnes dans le besoin. Tous les coûts du projet ont été couverts par nos donateurs."
+    ],
+    "PageTitle": "Success Story de Maisto bankas | ONLYOFFICE",
+    "PageDescription": "Découvrez comment le projet caritatif Maisto bankas a collecté des denrées alimentaires d'une valeur de 300 000 EUR",
+    "PageTitleOG": "Success Story de Maisto bankas | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment le projet caritatif Maisto bankas a collecté des denrées alimentaires d'une valeur de 300 000 EUR"
+  },
+  "robo-ru": {
+    "id": 4,
+    "slug": "robo-ru",
+    "title": "Comment nous avons mis en œuvre un programme écologique à temps avec ONLYOFFICE",
+    "intro": "Dans le cadre du programme écologique de collecte et de recyclage des piles usagées à Saint-Pétersbourg, nous avons installé des éco-boîtes dans plus de 20 établissements d'enseignement, et nous prévoyons d'en installer 300 de plus dans toute la ville.",
+    "user": {
+      "name": "Yaroslav Baronov",
+      "role": "Chef de projet Ro-bo.ru",
+      "portal": "Utilisateurs du portail ONLYOFFICE : n/a",
+      "location": "Lieu : Russie",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/yaroslav_baronov.png"
+    },
+    "profile": {
+      "company": "<0>ro-bo.ru</0> - gadgets orientés nature.",
+      "industry": [
+        "Boutique en ligne d'électronique moderne - robots, jouets interactifs et modèles radiocommandés."
+      ]
+    },
+    "challenges": [
+      "Planification des activités marketing, gestion efficace du temps. La possibilité de diviser la charge de travail globale en blocs, d'organiser les tâches en projets distincts et de prioriser les tâches."
+    ],
+    "achievements": [
+      "Yaroslav Baronov, chef de projet, commente : \"Maintenant, nous sommes capables de faire plus de choses, et notre entreprise est sur la bonne voie. Grâce à la priorisation des tâches, nous ne manquons pas les délais et essayons de tout accomplir à l'avance, ce qui minimise le risque d'échec du projet et augmente la qualité.\"",
+      "L'un des projets réussis que nous avons réalisés avec ONLYOFFICE est la mise en œuvre d'un programme écologique sur la collecte et le recyclage des piles usagées à Saint-Pétersbourg. Ce programme a été mené en coopération avec l'Association de la Jeunesse sous l'égide du Gouverneur de Saint-Pétersbourg. En conséquence, des éco-boîtes ont été installées dans plus de 20 établissements d'enseignement, et nous prévoyons d'en installer 300 de plus dans toute la ville. Sans ce système clair de planification et d'ordonnancement, cette initiative n'aurait pas été réalisée à temps.\""
+    ],
+    "PageTitle": "Success Story de Ro-bo.ru | ONLYOFFICE",
+    "PageDescription": "Découvrez comment Ro-bo.ru a mis en œuvre un programme écologique à temps avec ONLYOFFICE",
+    "PageTitleOG": "Success Story de Ro-bo.ru | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment Ro-bo.ru a mis en œuvre un programme écologique à temps avec ONLYOFFICE"
+  },
+  "spd-kreisverband": {
+    "id": 5,
+    "slug": "spd-kreisverband",
+    "title": "Comment organiser une coopération efficace au sein d'une association politique",
+    "intro": "Nous sommes maintenant capables de nous préparer parfaitement et de travailler ensemble en dehors des réunions, ce qui n'était pas possible auparavant.",
+    "user": {
+      "name": "Stephan Muster",
+      "role": "Assesseur de l'association régionale SPD Waldshut",
+      "portal": "Utilisateurs du portail ONLYOFFICE : 15",
+      "location": "Lieu : Allemagne",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/stephan_muster.png"
+    },
+    "profile": {
+      "company": "<2>Association locale SPD Bad Säckingen</2>",
+      "industry": [
+        "Association locale d'un des partis politiques allemands les plus prospères."
+      ],
+      "link": "https://www.spd-kreisverband.de/"
+    },
+    "challenges": [
+      "\"En tant qu'association politique locale, nous voulons optimiser le processus de travail au sein de notre comité exécutif composé de 15 personnes\" - déclare Stephan Muster, président par intérim, - \"Une coopération optimale, une communication partagée à travers des projets communautaires et la planification de réunions ainsi que le travail collaboratif sur des documents étaient particulièrement importants pour nous. Un rapport en ligne a attiré notre attention sur ONLYOFFICE.\""
+    ],
+    "achievements": [
+      "Grâce à ONLYOFFICE, nous sommes maintenant capables de nous préparer parfaitement et de travailler ensemble en dehors des réunions, ce qui n'était pas possible auparavant. Les tâches et les documents sont principalement utilisés dans ONLYOFFICE. Nous remercions ONLYOFFICE de soutenir le travail collaboratif."
+    ],
+    "PageTitle": "Success Story du SPD | ONLYOFFICE",
+    "PageDescription": "Découvrez comment ONLYOFFICE aide à organiser une coopération efficace au sein d'une association politique",
+    "PageTitleOG": "Success Story du SPD | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment ONLYOFFICE aide à organiser une coopération efficace au sein d'une association politique"
+  },
+  "pcrubriekdemonitor": {
+    "id": 6,
+    "slug": "pcrubriekdemonitor",
+    "title": "Comment je tiens mon blog en utilisant ONLYOFFICE",
+    "intro": "ONLYOFFICE Personal est un cadeau précieux pour moi qui est parfait pour publier, j'utilise le service pour intégrer des critiques dans mon blog, ça rend très bien et c'est convivial pour le lecteur.",
+    "user": {
+      "name": "Frans van Beers",
+      "role": "Critique indépendant",
+      "portal": "",
+      "location": "Lieu : Pays-Bas",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/frans_van_beers.png"
+    },
+    "profile": {
+      "company": "<0>Frans van Beers.</0> Critique indépendant et blogueur depuis plus de 10 ans.",
+      "industry": [
+        "Blog <3>PC-RUBRIEK DE MONITOR</3> (Pays-Bas) : actualités, astuces, logiciels, freewares, critiques de matériel, Open Source & Internet."
+      ]
+    },
+    "challenges": [
+      "Pour publier sur mon blog, j'utilisais souvent un service gratuit appelé Scribd où je pouvais télécharger des documents et utiliser du code HTML pour les intégrer sur mon blog. Mais sans préavis ni raison, ils ont supprimé mon compte. Bien sûr, j'ai sonné l'alarme à ce sujet et sur le fait qu'une partie de mon blog était inutilisable. Après beaucoup de problèmes et d'e-mails, il s'est avéré que j'avais été banni parce que j'étais un spammeur, une erreur de leur part et ils ont restauré mon compte. Mais non, merci ! Oups, je n'avais jamais réalisé que quelque chose comme ça pouvait arriver, alors <0>on doit toujours se demander \"Est-ce que je fais confiance au service numérique que j'utilise, puis-je communiquer avec eux et sont-ils conviviaux et réactifs envers les clients ?\"</0>"
+    ],
+    "achievements": [
+      "Pour un blogueur et utilisateur des médias sociaux, ONLYOFFICE a l'avantage que le contenu peut être facilement publié et partagé avec un lien, un clic de souris ou un code qui peut être intégré. Bien sûr, il existe d'autres services gratuits qui peuvent faire cela, mais un utilisateur doit d'abord télécharger son matériel et/ou le convertir en PDF pour le mettre sur les médias sociaux ou un blog. Dans ONLYOFFICE, vous écrivez et créez votre contenu créatif en ligne partout où vous avez accès à Internet, il sera enregistré de manière cryptée et vous pourrez le publier et le partager facilement, et même travailler et écrire ensemble sur un projet. Mes critiques sont présentées de manière attrayante et les lecteurs peuvent zoomer, enregistrer une copie et partager et intégrer mon travail. Jetez un œil, créé et publié dans ONLYOFFICE : \n \u2002\u2002critique <4>CorelDraw Home & Student</4> \n \u2002\u2002article & critique sur <5>G Data</5>",
+      "Facilement réalisé car la suite regorge d'outils et de fonctionnalités utiles et la version gratuite pour un usage privé offre un espace de stockage illimité !"
+    ],
+    "PageTitle": "Success Story de Frans van Beers | ONLYOFFICE",
+    "PageDescription": "Découvrez comment Frans van Beers tient son blog en utilisant ONLYOFFICE",
+    "PageTitleOG": "Success Story de Frans van Beers | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment Frans van Beers tient son blog en utilisant ONLYOFFICE"
+  },
+  "rostov-club": {
+    "id": 7,
+    "slug": "rostov-club",
+    "title": "Comment ONLYOFFICE aide à développer le potentiel intellectuel du pays",
+    "intro": "Depuis le déploiement d'ONLYOFFICE, le processus de travail est devenu beaucoup plus confortable. Nous avons cessé de manquer des tâches, acquis une compréhension complète des procédures.",
+    "user": {
+      "name": "Andrey Pastushenko",
+      "role": "Club régional de jeux intellectuels de Rostov",
+      "portal": "",
+      "location": "Lieu : Russie",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/andrey_pastushenko.png"
+    },
+    "profile": {
+      "company": "<0>Andrey Pastushenko.</0> Club régional de jeux intellectuels de Rostov.",
+      "industry": [
+        "Nous travaillons dans le domaine du divertissement intellectuel, rassemblant des personnes pour jouer à Quoi ? Où ? Quand ? dans la région de Rostov. Notre club de jeu compte plus de 30 équipes de joueurs. L'année dernière, nous avons lancé un projet de production et de distribution de formulaires de jeu, et avons commencé à fournir gratuitement du matériel imprimé aux clubs de jeu, dans le monde entier, du Canada à la République tchèque."
+      ]
+    },
+    "challenges": [
+      "Pendant plusieurs années, nous avions cherché une solution en ligne simple et efficace capable d'automatiser tous nos processus. Nous avons examiné de nombreuses options et, finalement, nous nous sommes arrêtés sur ONLYOFFICE. Notre équipe est répartie dans plusieurs villes, il était donc essentiel d'obtenir une plateforme commune pour l'attribution des tâches, l'échange d'informations et le contrôle des processus. Les modules Projets et CRM se sont avérés essentiels pour nous. La planification écrite structure immédiatement les activités et révèle les lacunes qui peuvent être détectées et éliminées à temps. La communication en ligne a stimulé l'interaction entre les membres de l'équipe. L'intégration de clouds tiers a facilité le stockage et la gestion des documents clés."
+    ],
+    "achievements": [
+      "Depuis le déploiement d'ONLYOFFICE, le processus de travail est devenu beaucoup plus confortable. Nous avons cessé de manquer des tâches, acquis une compréhension complète des procédures. Chaque projet stocke désormais tout son historique, peu importe quand il a été lancé."
+    ],
+    "PageTitle": "Success Story du Club de Jeux Intellectuels | ONLYOFFICE",
+    "PageDescription": "Découvrez comment ONLYOFFICE aide le Club de Rostov à développer le potentiel intellectuel du pays",
+    "PageTitleOG": "Success Story du Club de Jeux Intellectuels | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment ONLYOFFICE aide le Club de Rostov à développer le potentiel intellectuel du pays"
+  },
+  "stammtisch": {
+    "id": 8,
+    "slug": "stammtisch",
+    "title": "Comment de jeunes joueurs améliorent leur flux de travail sur le réseau",
+    "intro": "Nous recommanderions ONLYOFFICE, car la fiabilité et la clarté de la plateforme sont tout simplement fantastiques. Tout comme l'éditeur de documents est très facile et clair à utiliser, la collaboration fonctionne parfaitement même de Rostock à Francfort.",
+    "user": {
+      "name": "Lukas Bothur",
+      "role": "Chef de projet de Stammtisch",
+      "portal": "",
+      "location": "Lieu : Allemagne",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/stammtisch.png"
+    },
+    "profile": {
+      "company": "<0>Der Stammtisch</0>",
+      "industry": [
+        "Nous recommanderions ONLYOFFICE, car la fiabilité et la clarté de la plateforme sont tout simplement fantastiques. Tout comme l'éditeur de documents est très facile et clair à utiliser, la collaboration fonctionne parfaitement même de Rostock à Francfort."
+      ]
+    },
+    "challenges": [
+      "\"Der Stammtisch\" est une plateforme web indépendante pour les enfants et les jeunes, ainsi que pour les adultes qui favorisent l'échange et la convivialité sociale."
+    ],
+    "achievements": [
+      "Lukas Bothur, chef de projet de Stammtisch : \"Depuis moins de trois mois, nous travaillons avec le logiciel ONLYOFFICE. La plateforme couvre tout ce dont nous avons besoin et est également gratuite. Pour cela, nous sommes vraiment très reconnaissants d'utiliser la plateforme. Pour le moment, nous ne travaillons qu'avec des documents, le point principal est le référentiel central de documents. Grâce à l'intégration dans notre portail d'équipe, notre équipe qui travaille dur dans toute l'Allemagne peut mieux se connecter et stocker des informations et des documents importants dans un emplacement central. D'autres fonctions de la suite bureautique en ligne, nous allons les utiliser à l'avenir. En plus de la version Cloud, nous utilisons l'application pour iOS, qui simplifie le processus de collaboration lorsque vous êtes en déplacement. Incidemment, nous ne voyons aucun problème avec la plateforme.\""
+    ],
+    "PageTitle": "Success Story de Stammtisch | ONLYOFFICE",
+    "PageDescription": "Découvrez comment ONLYOFFICE aide les jeunes joueurs à améliorer leur flux de travail sur le réseau",
+    "PageTitleOG": "Success Story de Stammtisch | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment ONLYOFFICE aide les jeunes joueurs à améliorer leur flux de travail sur le réseau"
+  },
+  "skatepark-zuidlaren": {
+    "id": 9,
+    "slug": "skatepark-zuidlaren",
+    "title": "Comment organiser un super spot local pour les activités sportives avec ONLYOFFICE",
+    "intro": "L'éditeur ONLYOFFICE est très bon en ce qui concerne le partage de fichiers et leur co-édition. Nous avons choisi ONLYOFFICE comme instrument commercial et le recommanderions très probablement à d'autres.",
+    "user": {
+      "name": "St. Skatepark Zuidlaren",
+      "role": "",
+      "portal": "",
+      "location": "Lieu : Pays-Bas",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/skatepark_zuidlaren.png"
+    },
+    "profile": {
+      "company": "<0>St. Skatepark Zuidlaren</0>",
+      "industry": [
+        "L'idée principale de la fondation est de promouvoir différents types de sports de plein air et de soutenir les activités qui impliquent toute personne directement ou indirectement liée au sport et à son développement."
+      ]
+    },
+    "challenges": [
+      "Notre mission est de réaliser un Skatepark pour les jeunes de notre village afin qu'ils aient un endroit pour se détendre, faire du sport et passer du temps ensemble."
+    ],
+    "achievements": [
+      "Marco Nieborg : \"Il y a de nombreuses années, j'ai utilisé TeamLab pour mes besoins personnels, puis j'ai commencé à utiliser ONLYOFFICE pour certains projets scolaires. Après un certain temps, j'ai développé un grand intérêt pour le projet nommé \"Stichting Skatepark Zuidlaren\" et je me suis de nouveau tourné vers ONLYOFFICE, plateforme pour la gestion de documents, la communication d'entreprise, la messagerie et les outils de gestion de projet. Le déploiement a été très facile et rapide. En une demi-heure, nous avions toutes les pièces en place. Il répond à nos besoins de travailler ensemble au sein d'un groupe de projet en utilisant des outils de gestion de projet. Pendant le projet (pendant quelques années), nous avons eu de bons résultats. Il est facile à utiliser. L'éditeur ONLYOFFICE est très bon en ce qui concerne le partage de fichiers et leur co-édition. Nous avons choisi ONLYOFFICE comme instrument commercial et le recommanderions très probablement à d'autres.\""
+    ],
+    "PageTitle": "Success Story de St. Skatepark Zuidlaren | ONLYOFFICE",
+    "PageDescription": "Découvrez comment ONLYOFFICE aide à organiser un super spot local pour les activités sportives",
+    "PageTitleOG": "Success Story de St. Skatepark Zuidlaren | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment ONLYOFFICE aide à organiser un super spot local pour les activités sportives"
+  },
+  "icgeurope": {
+    "id": 10,
+    "slug": "icgeurope",
+    "title": "Comment faire croître votre entreprise avec ONLYOFFICE",
+    "intro": "Un merci spécial aux éditeurs de documents ONLYOFFICE. L'édition de documents complexes est devenue beaucoup plus pratique grâce au travail direct avec les éditeurs dans le navigateur.",
+    "user": {
+      "name": "InCapital Group",
+      "role": "",
+      "portal": "",
+      "location": "Lieu : Lettonie",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/icgeurope.png"
+    },
+    "profile": {
+      "company": "<0>InCapital Group</0>",
+      "industry": [
+        "InCapital Group est une société informatique travaillant dans le secteur B2B, qui fournit une gamme complète de services eCom : développement de plateformes, marketing & SEO, services d'intégration informatique, logistique, traitement des paiements et conseil."
+      ]
+    },
+    "challenges": [
+      "Avec la croissance de l'entreprise, nous avions besoin d'un outil qui satisferait nos normes en matière de gestion de projets et de documents, CRM. Après avoir effectué 8 tests, nous avons choisi ONLYOFFICE. Pour être honnête, nous étions vraiment enthousiastes et avons pris la décision de nous associer à cette entreprise."
+    ],
+    "achievements": [
+      "Nous utilisons le module \"Projets\" pour gérer des contrats complexes, pour répartir les périodes et les tâches entre la planification, le marketing, le travail lié au serveur, pour les basculer entre les membres de l'équipe et informer nos employés de tous les processus et mises à jour au sein du projet ou de la tâche. De plus, il y a un diagramme de Gantt, qui permet d'estimer visuellement la progression du projet.",
+      "Un merci spécial aux éditeurs de documents ONLYOFFICE. L'édition de documents complexes est devenue beaucoup plus pratique grâce au travail direct avec les éditeurs dans le navigateur.",
+      "Grâce au CRM, nous avons pu simplifier la communication avec nos clients en mettant en œuvre un système de tags."
+    ],
+    "PageTitle": "Success Story d'ICG | ONLYOFFICE",
+    "PageDescription": "Découvrez comment ICG a fait croître son entreprise avec ONLYOFFICE",
+    "PageTitleOG": "Success Story d'ICG | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment ICG a fait croître son entreprise avec ONLYOFFICE"
+  },
+  "gwdg": {
+    "id": 11,
+    "slug": "gwdg",
+    "title": "Comment ONLYOFFICE et ownCloud implémentés à la GWDG aident les chercheurs et les éducateurs",
+    "intro": "La recherche et l'éducation dépendent d'une infrastructure informatique efficace et innovante. Avec l'interface nouvellement créée entre ownCloud et ONLYOFFICE, les utilisateurs peuvent désormais travailler simultanément sur un fichier dans un navigateur web.",
+    "user": {
+      "name": "GWDG",
+      "role": "",
+      "portal": "",
+      "location": "Lieu : Allemagne",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/gwdg.svg"
+    },
+    "profile": {
+      "company": "<6>GWDG</6>",
+      "industry": [
+        "La Gesellschaft für Wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG) est un centre de calcul universitaire pour l'Université Georg-August de Göttingen et un centre de compétence en calcul et informatique pour la Société Max Planck. Elle offre une large gamme de services d'information et de communication pour la science. Financée par des fonds publics, la solution sera également proposée à toutes les universités de Basse-Saxe dans le cadre du projet Academic Cloud."
+      ]
+    },
+    "challenges": [
+      "ownCloud est utilisé pour l'échange productif et l'édition collaborative de fichiers. Mais surtout si deux utilisateurs travaillent sur le même document en même temps, les conflits de synchronisation ne peuvent pas toujours être évités. Dans un tel cas, un mécanisme de sécurité d'ownCloud génère des fichiers dits « de conflit » : une deuxième version d'un fichier existant destinée à empêcher la perte de contenu lors de modifications conjointes. La GWDG voit donc l'intégration d'ONLYOFFICE dans ownCloud comme une excellente opportunité de résoudre le problème des conflits de synchronisation à long terme, car les logiciels de collaboration comme ONLYOFFICE abordent le problème de la synchronisation de manière ciblée : ONLYOFFICE permet d'éditer un document via une interface utilisateur commune, où les modifications sont mises à jour en temps réel et sont immédiatement visibles par les autres utilisateurs.",
+      "Ralph Krimmel, GWDG : « La recherche et l'éducation dépendent d'une infrastructure informatique efficace et innovante. Avec l'interface nouvellement créée entre notre ownCloud et ONLYOFFICE, les utilisateurs peuvent désormais travailler simultanément sur un fichier dans un navigateur web. Les fichiers de conflit sont évités et le travail a lieu là où se trouvent les fichiers - dans notre ownCloud. »"
+    ],
+    "achievements": [
+      "L'ownCloud de la GWDG enregistre actuellement environ 4 000 utilisateurs actifs par mois et 1 500 utilisateurs par jour. Cela inclut des universités, mais aussi des groupes de travail individuels de diverses institutions scientifiques de Basse-Saxe ainsi qu'à l'échelle nationale, qui utilisent ownCloud et les fonctionnalités d'ONLYOFFICE. Le traitement des fichiers fonctionne sans problème avec l'interface développée par ownCloud et ONLYOFFICE ; même avec des formats de fichiers autres que Microsoft Office, les fichiers et la mise en forme sont affichés par le serveur sans problèmes de compatibilité.",
+      "La coopération entre ownCloud et ONLYOFFICE ne profite pas seulement aux utilisateurs de la GWDG et de l'Academic Cloud ; grâce à la coopération technique, les administrateurs ownCloud peuvent installer l'application d'intégration ONLYOFFICE en quelques clics et ajouter l'application à leur cloud via le Marketplace ownCloud.",
+      "<7>Lire la success story complète</7>"
+    ],
+    "PageTitle": "Success Story de la GWDG | ONLYOFFICE",
+    "PageDescription": "Découvrez comment ONLYOFFICE et ownCloud implémentés à la GWDG aident les chercheurs et les éducateurs",
+    "PageTitleOG": "Success Story de la GWDG | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment ONLYOFFICE et ownCloud implémentés à la GWDG aident les chercheurs et les éducateurs"
+  },
+  "muenster-university": {
+    "id": 12,
+    "slug": "muenster-university",
+    "title": "Comment l'intégration d'ONLYOFFICE et d'ownCloud dans sciebo aide à faciliter le flux de travail de recherche à l'Université de Münster",
+    "intro": "Les tests internes ont démontré qu'ONLYOFFICE et ownCloud étaient parfaitement adaptés au scénario d'application de sciebo et étaient supérieurs aux autres solutions. Il était également très important que les deux solutions soient des produits Open Source qui répondent à une grande demande des utilisateurs de sciebo et disposent d'une architecture robuste et évolutive.",
+    "user": {
+      "name": "Münster University",
+      "role": "",
+      "portal": "",
+      "location": "Lieu : Allemagne",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/wumunster-01.svg"
+    },
+    "profile": {
+      "company": "<8>Université de Münster et sciebo</8>",
+      "industry": [
+        "Avec plus de 40 000 étudiants et 5 000 employés, l'Université de Münster est la 3e plus grande université d'Allemagne. Elle offre une grande variété de matières et maintient un profil de recherche diversifié.",
+        "Le centre informatique de l'université (Zentrum für Informationsverarbeitung, ZIV) propose un service de synchronisation et de partage appelé sciebo (abréviation de « science box ») – non seulement pour l'Université de Münster, mais pour presque toutes les universités et un centre de recherche en Rhénanie-du-Nord-Westphalie, l'État fédéré le plus peuplé d'Allemagne. Actuellement, plus de 100 000 utilisateurs sont enregistrés pour sciebo."
+      ]
+    },
+    "challenges": [
+      "L'organisation de sciebo était une tâche complexe car le service doit s'adapter à des nombres d'utilisateurs beaucoup plus importants que d'habitude. Des défis juridiques doivent également être maîtrisés et, dans ce contexte, des contrats d'utilisateur final, conformément au RGPD, ont dû être créés. Encore plus important, le service doit être adapté aux besoins des utilisateurs. Holger Angenent, chef de projet sciebo du centre informatique de l'Université de Münster : « Nous atteignons assez bien cet objectif selon nos enquêtes, où les utilisateurs nous attestent une qualité encore meilleure que celle des grands noms du secteur du cloud ».",
+      "Parmi les utilisateurs de sciebo, il y a aussi des chercheurs qui traitent des données sensibles et souvent confidentielles, et qui ont donc des exigences très élevées en matière de protection des données et de protection contre la perte de données."
+    ],
+    "achievements": [
+      "ONLYOFFICE et ownCloud sont déjà utilisés avec succès dans de nombreuses universités et organisations. Les tests internes ont démontré que les deux solutions étaient parfaitement adaptées au scénario d'application de sciebo et étaient supérieures aux autres solutions. Il était également très important qu'il s'agisse de produits Open Source qui répondent à une grande demande des utilisateurs de sciebo et disposent d'une architecture robuste et évolutive.",
+      "Holger Angenent : « Espérons que la combinaison ownCloud-ONLYOFFICE a simplifié l'échange de données et favorisé davantage le travail collaboratif en soi. Pour révéler les changements concrets dans la vie professionnelle quotidienne de nos employés, nous devrons mener d'autres études. »",
+      "<9>Lire la success story complète</9>"
+    ],
+    "PageTitle": "Success Story de l'Université de Münster | ONLYOFFICE",
+    "PageDescription": "Découvrez comment l'intégration d'ONLYOFFICE et d'ownCloud dans sciebo aide à faciliter le flux de travail de recherche à l'Université de Münster",
+    "PageTitleOG": "Success Story de l'Université de Münster | ONLYOFFICE",
+    "PageDescriptionOG": "Découvrez comment l'intégration d'ONLYOFFICE et d'ownCloud dans sciebo aide à faciliter le flux de travail de recherche à l'Université de Münster"
+  },
+  "subTitleProfile": "Profil",
+  "subTitleChallenges": "Défis",
+  "subTitleAchievements": "Réalisations",
+  "titleOthers": "Voir d'autres success stories",
+  "showMoreButton": "Plus"
+}

@@ -29,7 +29,7 @@ export interface IStepCarousel {
   /** The items to display if the carousel is not tabbed. */
   items?: IStepCarouselItem[];
   /** The index of the tab that should be active by default. */
-  defaultActiveTab?: number;
+  activeTab?: number;
   /** Callback fired when the active tab changes. */
   onChange?: (value: number) => void;
 }

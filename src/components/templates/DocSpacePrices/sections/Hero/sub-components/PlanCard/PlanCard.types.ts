@@ -1,4 +1,7 @@
+import { ILocale } from "@src/types/locale";
+
 export interface IPlanCard {
+  locale: ILocale["locale"];
   heading: string;
   subHeading: string;
   headingLabel?: string;
@@ -6,9 +9,8 @@ export interface IPlanCard {
   price: {
     from?: boolean;
     free?: boolean;
-    currency?: string;
-    prev?: string;
-    current?: string;
+    prev?: number;
+    current?: number;
     label?: string;
   };
   btn: {

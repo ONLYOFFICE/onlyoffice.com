@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Meta, StoryFn } from "@storybook/react";
 import { StepCarousel } from "./StepCarousel";
 import { IStepCarousel } from "./StepCarousel.types";
@@ -30,20 +31,30 @@ export default {
           type: "object",
         },
       },
-      defaultActiveTab: {
+      activeTab: {
         control: { type: "number" },
       },
     },
   },
 } as Meta<typeof StepCarousel>;
 
-const Template: StoryFn<IStepCarousel> = (args: IStepCarousel) => (
+const DefaultTemplate: StoryFn<IStepCarousel> = (args: IStepCarousel) => (
   <Container>
     <StepCarousel {...args} />
   </Container>
 );
 
-export const Default = Template.bind({});
+const TabsTemplate: StoryFn<IStepCarousel> = (args: IStepCarousel) => {
+  const [activeTab, setActiveTab] = useState(0);
+
+  return (
+    <Container>
+      <StepCarousel activeTab={activeTab} onChange={setActiveTab} {...args} />
+    </Container>
+  );
+};
+
+export const Default = DefaultTemplate.bind({});
 Default.args = {
   items: [
     {
@@ -61,7 +72,7 @@ Default.args = {
   ],
 };
 
-export const Tabs = Template.bind({});
+export const Tabs = TabsTemplate.bind({});
 Tabs.args = {
   tabs: [
     {

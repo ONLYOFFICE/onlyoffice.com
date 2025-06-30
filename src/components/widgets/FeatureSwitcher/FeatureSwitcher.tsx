@@ -35,15 +35,7 @@ const FeatureSwitcher = ({
             <li key={index}>
               <StyledFeatureSwitcherBtn
                 onClick={() => setActiveTab(index)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    e.preventDefault();
-                    setActiveTab(index);
-                  }
-                }}
                 $active={activeTab === index}
-                tabIndex={0}
-                role="button"
               >
                 <span>{item.label}</span>
                 <ChevronDownIcon />

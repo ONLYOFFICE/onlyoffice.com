@@ -1,0 +1,111 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace für Ihr Unternehmen | ONLYOFFICE",
+  "PageDescription": "Stellen Sie ONLYOFFICE DocSpace lokal bereit und erhalten Sie die volle Kontrolle über Ihre Daten",
+
+  "HeroMainPictureAltText": "Hauptbild",
+
+  "OnlyOfficeDocSpaceEnterprise": "ONLYOFFICE DocSpace Enterprise",
+  "TheEnterpriseScaledSpace": "Der unternehmensgerechte Raum für Ihre Geschäftsdokumente",
+  "GetItNow": "Jetzt holen",
+  "TryItFree": "Kostenlos in der Cloud testen",
+
+  "HeroImageUrl": "/images/templates/docspace-enterprise/hero/main-img_de.svg",
+
+  "HeroWorldIconAltText": "Welt-Symbol",
+
+  "TrustedBy": "Vertraut von",
+  "CountOfUsers": "15.000.000 Nutzern",
+  "Worldwide": "weltweit",
+
+  "FeaturesEfficient": "Effiziente Zusammenarbeit an Dokumenten in Ihrem Unternehmen",
+  "FeaturesOnlyOffice": "ONLYOFFICE DocSpace Enterprise bietet das komplette Toolset für die Speicherung, Freigabe und Zusammenarbeit an Dokumenten",
+  "FeaturesLearn": "Erfahren Sie mehr über die Funktionen von Docspace",
+
+  "FeaturesItemTextWork": "Arbeiten Sie gemeinsam an Verträgen in Kollaborationsräumen",
+  "FeaturesItemTextInvite": "Laden Sie Partner ein, Dokumente ohne Registrierung in öffentlichen Räumen anzusehen",
+  "FeaturesItemTextCollect": "Sammeln Sie Antworten in Räumen zum Ausfüllen von Formularen",
+  "FeaturesItemTextCreate": "Erstellen Sie benutzerdefinierte Räume mit flexiblen Einstellungen für jede Aufgabe und jeden Zweck",
+  "FeaturesItemTextShare": "Teilen und legen Sie Unternehmensdokumentationen während des Due-Diligence-Prozesses mithilfe von virtuellen Datenräumen offen",
+
+  "ExperienceFlawless": "Makellose Benutzererfahrung auf verschiedenen Geräten",
+  "ExperienceWithONLYOFFICE": "Mit ONLYOFFICE DocSpace Enterprise können Sie Ihre Dokumente unterwegs mit jedem Smartphone oder Tablet einfach verwalten, bearbeiten und gemeinsam daran arbeiten, indem Sie zur mobilen Webversion wechseln.",
+  "ExperienceFreeDesktopApps": "Kostenlose <0>Desktop-Apps</0> für die Offline-Bearbeitung und native <1>mobile Apps</1> für iOS und Android sind ebenfalls verfügbar.",
+
+  "EnvironmentEnterpriseReady": "Unternehmensgerechte Arbeitsumgebung",
+
+  "EnvironmentItemTitleSecurity": "Sicherheit",
+  "EnvironmentItemTextSecurity": "Schützen Sie Ihre Daten an allen Fronten: unternehmensgerechte Sicherheitseinstellungen, Einhaltung branchenspezifischer Standards, priorisierter Zugang zu Sicherheits- und Stabilitätskorrekturen.",
+  "EnvironmentItemLinkSecurity": "Erfahren Sie mehr über die Sicherheit von ONLYOFFICE",
+  "EnvironmentItemImageSecurity": "/images/templates/docspace-enterprise/environment/de/Security.svg",
+
+  "EnvironmentItemTitleAccessibility": "Barrierefreiheit",
+  "EnvironmentItemTextAccessibility": "Gestalten Sie den Bearbeitungsprozess für alle einfach und komfortabel: wechseln Sie zwischen verfügbaren Farbmodi, aktivieren Sie notwendige Plugins, blenden Sie Leisten und Lineale ein oder aus, etc.",
+  "EnvironmentItemLinkAccessibility": "Erfahren Sie mehr über die Barrierefreiheit von ONLYOFFICE",
+  "EnvironmentItemImageAccessibility": "/images/templates/docspace-enterprise/environment/de/Accessibility.svg",
+
+  "EnvironmentItemTitleCustomization": "Anpassung",
+  "EnvironmentItemTextCustomization": "Wenden Sie verschiedene Farbstile an, ersetzen Sie Logos, Titel und Links, um sie an Ihre Unternehmensmarke anzupassen.",
+  "EnvironmentItemImageCustomization": "/images/templates/docspace-enterprise/environment/de/Customization.svg",
+
+  "EnvironmentItemTitleAdministration": "Verwaltung",
+  "EnvironmentItemTextAdministration": "Verwalten Sie Ihren DocSpace über ein intuitives Control Panel. Verbinden Sie externe Dienste für Protokollierung, Signierung, Speicherung usw.",
+  "EnvironmentItemImageAdministration": "/images/templates/docspace-enterprise/environment/de/Collaboration.svg",
+
+  "EnvironmentItemTitleMultitenancy": "Mandantenfähigkeit",
+  "EnvironmentItemTextMultitenancy": "Erstellen Sie mehrere Bereiche für verschiedene Niederlassungen und verwalten Sie sie alle gleichzeitig.",
+  "EnvironmentItemImageMultitenancy": "/images/templates/docspace-enterprise/environment/de/Multitenancys.svg",
+
+  "ScalableTitleForBusinesses": "Skalierbar für Unternehmen jeder Größe",
+  "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterprise wächst mit Ihrem Unternehmen. ",
+  "ScalableYouCanCustomize": "Sie können die Anzahl der Benutzer jederzeit anpassen, so schnell wie Ihr Team wächst. ",
+  "ScalableForLargeEnterprises": "Für große Unternehmen ist Unterstützung für die Bereitstellung auf mehreren Servern verfügbar. ",
+  "ScalableImageAltText": "Skalierbares Hauptbild",
+
+  "SupportTitleForEveryStep": "Unterstützung bei jedem Schritt",
+  "SupportTextTheTeam": "Das Expertenteam ist hier, um Ihnen bei jedem Schritt zu helfen",
+
+  "SupportItemTitleFreeDemo": "Kostenlose Demo",
+  "SupportItemTextWatch": "Sehen Sie sich eine Demonstration der wichtigsten DocSpace-Funktionen und Vorteile für Ihr Unternehmen an.",
+  "SupportItemBtnRequest": "Demo anfordern",
+
+  "SupportItemTitleTraining": "Schulungskurse",
+  "SupportItemTextMaster": "Meistern Sie ONLYOFFICE DocSpace unter Anleitung eines Tutors. Rabatte für Unternehmenskunden werden angeboten.",
+  "SupportItemBtnBook": "Schulung buchen",
+
+  "SupportItemTitleViaEmail": "Support per E-Mail",
+  "SupportItemTextJustContact": "Kontaktieren Sie uns einfach über <0>support@onlyoffice.com</0> – unser erfahrenes Support-Team hilft Ihnen bei der Lösung von Fragen oder technischen Problemen.",
+  "SupportItemBtnViaContactUs": "Kontaktieren Sie uns",
+
+  "SupportItemTitlePreSale": "Haben Sie eine Frage vor dem Kauf?",
+  "SupportItemTextContact": "Kontaktieren Sie uns unter <1>sales@onlyoffice.com</1> oder vereinbaren Sie einen Termin für einen Anruf unseres Teams.",
+  "SupportItemBtnPreSaleContactUs": "Kontaktieren Sie uns",
+
+  "CostTitle": "<0>Kosteneffiziente</0> Unternehmenslösung",
+
+  "CostItemFree": "Kostenlose 30-Tage-Testversion",
+  "CostItemLifetime": "Lebenslange Lizenz",
+  "CostItemYear": "1 Jahr Updates und Support",
+  "CostItemUnlimited": "Unbegrenzte Anzahl von Räumen und Admins",
+
+  "CostButtonPickYourPrice": "Wählen Sie Ihren Preis",
+
+  "CostFooterIfYouRepresent": "Wenn Sie eine Bildungseinrichtung oder eine gemeinnützige Organisation vertreten, <0>kontaktieren Sie unser Vertriebsteam</0>, um einen individuellen Rabatt zu erhalten.",
+  "CostFooterTheFamilyPack": "Das <1>Family Pack</1> für die nicht-kommerzielle Nutzung ist ebenfalls verfügbar.",
+
+  "GettingStarted": "Der Einstieg ist einfach",
+  "GettingDeploy": "Stellen Sie ONLYOFFICE DocSpace Enterprise mithilfe einer der verfügbaren Optionen bereit.",
+
+  "GettingItemCloudTitle": "Cloud",
+  "GettingItemCloudText": "Als Service testen. Wir hosten, warten und aktualisieren DocSpace für Sie",
+  "GettingItemCloudSubtitle": "Jetzt erstellen",
+
+  "GettingItemLinuxTitle": "Linux",
+  "GettingItemLinuxText": "Hosten Sie auf Ihrem Linux-Server (Docker-, Deb- oder RPM-Pakete)",
+  "GettingItemLinuxSubtitle": "Jetzt holen",
+
+  "GettingItemWindowsTitle": "Windows",
+  "GettingItemWindowsText": "Hosten Sie auf Ihrem Windows-Server (EXE-Pakete)",
+  "GettingItemWindowsSubtitle": "Jetzt holen",
+
+  "GettingFooterText": "Die Community-Version für den Heimgebrauch steht <0>hier</0> zum Download bereit."
+}

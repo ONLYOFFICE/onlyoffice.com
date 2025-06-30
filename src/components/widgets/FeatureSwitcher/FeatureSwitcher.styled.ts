@@ -31,7 +31,7 @@ const StyledFeatureSwitcherWrapper = styled.div<{
   }
 `;
 
-const StyledFeatureSwitcherBtn = styled.div<{ $active?: boolean }>`
+const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,7 +42,9 @@ const StyledFeatureSwitcherBtn = styled.div<{ $active?: boolean }>`
   color: ${(props) => (props.$active ? "#ff6f3d" : "#333333")};
   width: 100%;
   background-color: transparent;
-  transition: color 0.2s, box-shadow 0.2s;
+  transition:
+    color 0.2s,
+    box-shadow 0.2s;
   cursor: pointer;
 
   ${(props) =>

@@ -1,0 +1,20 @@
+{
+  "PageTitle": "ONLYOFFICE Projects, a mobile app for iOS | ONLYOFFICE",
+  "PageDescription": "Manage and track tasks and milestones, discuss progress with your team, get quick access to project documents even on the go with ONLYOFFICE Projects for iOS.",
+
+  "HeroTitle": "Manage your team performance on the go",
+  "HeroSubtitle": "Pocket project management tool",
+  "iTunesButtonImg": "/images/templates/mobile-projects/buttons/appstore.svg",
+  "iTunesLink": "https://itunes.apple.com/us/app/onlyoffice-projects/id1353395928",
+
+  "FeaturesTitle": "<0>ONLYOFFICE Projects</0> for iOS devices",
+  "Item1": "Task and milestone management",
+  "Item2": "Various filters for easy navigation",
+  "Item3": "Quick access to project documentation",
+  "Item4": "Discussions and comments for team communication",
+  "Item5": "Regular updates",
+  "Item6": "Technical support",
+  "Item7": "Online documentation",
+  "imageUrl": "/images/templates/mobile-projects/features/mobile_screens.png",
+  "imageUrl2x": "/images/templates/mobile-projects/features/mobile_screens_2x.png"
+}

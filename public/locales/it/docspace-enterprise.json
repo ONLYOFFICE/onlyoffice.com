@@ -1,0 +1,104 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace per la tua azienda | ONLYOFFICE",
+  "PageDescription": "Distribuisci ONLYOFFICE DocSpace on-premise e ottieni il pieno controllo sui tuoi dati",
+
+  "HeroMainPictureAltText": "immagine principale",
+
+  "OnlyOfficeDocSpaceEnterprise": "ONLYOFFICE DocSpace Enterprise",
+  "TheEnterpriseScaledSpace": "Lo spazio su scala aziendale per i tuoi documenti aziendali",
+  "GetItNow": "Ottienilo ora",
+  "TryItFree": "Provalo gratis nel cloud",
+
+  "HeroWorldIconAltText": "icona mondo",
+
+  "TrustedBy": "Scelto da",
+  "CountOfUsers": "15.000.000 di utenti",
+  "Worldwide": "in tutto il mondo",
+
+  "FeaturesEfficient": "Collaborazione efficiente sui documenti all'interno della tua azienda",
+  "FeaturesOnlyOffice": "ONLYOFFICE DocSpace Enterprise include il set completo di strumenti per l'archiviazione, la condivisione e la collaborazione sui documenti",
+  "FeaturesLearn": "Scopri di più sulle funzionalità di Docspace",
+
+  "FeaturesItemTextWork": "Lavora insieme sui contratti nelle stanze di Collaborazione",
+  "FeaturesItemTextInvite": "Invita i partner a visualizzare i documenti senza registrazione nelle stanze Pubbliche",
+  "FeaturesItemTextCollect": "Raccogli le risposte nelle stanze di Compilazione moduli",
+  "FeaturesItemTextCreate": "Crea stanze Personalizzate con impostazioni flessibili per qualsiasi attività e scopo",
+  "FeaturesItemTextShare": "Condividi e divulga la documentazione aziendale durante il processo di due diligence utilizzando le stanze Dati virtuali",
+
+  "ExperienceFlawless": "Esperienza utente impeccabile su diversi dispositivi",
+  "ExperienceWithONLYOFFICE": "Con ONLYOFFICE DocSpace Enterprise, puoi gestire, modificare e collaborare facilmente sui tuoi documenti in movimento con qualsiasi smartphone o tablet passando alla versione web mobile.",
+  "ExperienceFreeDesktopApps": "Sono disponibili anche <0>app desktop</0> gratuite per la modifica offline e <1>app mobili</1> native per iOS e Android.",
+
+  "EnvironmentEnterpriseReady": "Ambiente di lavoro pronto per l'azienda",
+
+  "EnvironmentItemTitleSecurity": "Sicurezza",
+  "EnvironmentItemTextSecurity": "Mantieni i tuoi dati al sicuro su tutti i fronti: impostazioni di sicurezza pronte per l'azienda, conformità agli standard specifici del settore, accesso prioritario alle correzioni di sicurezza e stabilità.",
+  "EnvironmentItemLinkSecurity": "Scopri di più sulla sicurezza di ONLYOFFICE",
+
+  "EnvironmentItemTitleAccessibility": "Accessibilità",
+  "EnvironmentItemTextAccessibility": "Rendi il processo di modifica semplice e comodo per tutti: passa da una modalità colore all'altra, abilita i plugin necessari, nascondi o mostra barre e righelli, ecc.",
+  "EnvironmentItemLinkAccessibility": "Scopri di più sull'accessibilità di ONLYOFFICE",
+
+  "EnvironmentItemTitleCustomization": "Personalizzazione",
+  "EnvironmentItemTextCustomization": "Applica diversi stili di colore, sostituisci loghi, titoli e link per adattarli al tuo marchio aziendale.",
+
+  "EnvironmentItemTitleAdministration": "Amministrazione",
+  "EnvironmentItemTextAdministration": "Gestisci il tuo DocSpace utilizzando un pannello di controllo intuitivo. Connetti servizi esterni per la registrazione, la firma, l'archiviazione, ecc.",
+
+  "EnvironmentItemTitleMultitenancy": "Multi-tenancy",
+  "EnvironmentItemTextMultitenancy": "Crea più spazi per diverse filiali e gestiscili tutti contemporaneamente.",
+
+  "ScalableTitleForBusinesses": "Scalabile per aziende di qualsiasi dimensione",
+  "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace Enterprise cresce con la tua azienda. ",
+  "ScalableYouCanCustomize": "Puoi personalizzare il numero di utenti in qualsiasi momento, alla stessa velocità con cui il tuo team si espande. ",
+  "ScalableForLargeEnterprises": "Per le grandi aziende, è disponibile il supporto per l'implementazione multi-server. ",
+  "ScalableImageAltText": "Immagine principale scalabile",
+
+  "SupportTitleForEveryStep": "Supporto per ogni passo",
+  "SupportTextTheTeam": "Il team di esperti è qui per aiutarti in ogni passo",
+
+  "SupportItemTitleFreeDemo": "Demo gratuita",
+  "SupportItemTextWatch": "Guarda una dimostrazione delle principali funzionalità e vantaggi di DocSpace per la tua azienda.",
+  "SupportItemBtnRequest": "Richiedi demo",
+
+  "SupportItemTitleTraining": "Corsi di formazione",
+  "SupportItemTextMaster": "Padroneggia ONLYOFFICE DocSpace sotto la guida di un tutor. Sono previsti sconti per gli utenti aziendali.",
+  "SupportItemBtnBook": "Prenota formazione",
+
+  "SupportItemTitleViaEmail": "Supporto via email",
+  "SupportItemTextJustContact": "Contattaci semplicemente via <0>support@onlyoffice.com</0> – il nostro team di supporto esperto ti aiuterà a risolvere qualsiasi domanda o problema tecnico.",
+  "SupportItemBtnViaContactUs": "Contattaci",
+
+  "SupportItemTitlePreSale": "Hai una domanda pre-vendita?",
+  "SupportItemTextContact": "Contattaci a <1>sales@onlyoffice.com</1> o programma un orario per farti chiamare dal nostro team.",
+  "SupportItemBtnPreSaleContactUs": "Contattaci",
+
+  "CostTitle": "Soluzione aziendale <0>conveniente</0>",
+
+  "CostItemFree": "Prova gratuita di 30 giorni",
+  "CostItemLifetime": "Licenza a vita",
+  "CostItemYear": "1 anno di aggiornamenti e supporto",
+  "CostItemUnlimited": "Numero illimitato di stanze e amministratori",
+
+  "CostButtonPickYourPrice": "Scegli il tuo prezzo",
+
+  "CostFooterIfYouRepresent": "Se rappresenti un istituto scolastico o un'organizzazione no-profit, <0>contatta il nostro team di vendita</0> per ottenere uno sconto individuale.",
+  "CostFooterTheFamilyPack": "È disponibile anche il <1>Pacchetto Famiglia</1> per uso non commerciale.",
+
+  "GettingStarted": "Iniziare è facile",
+  "GettingDeploy": "Distribuisci ONLYOFFICE DocSpace Enterprise utilizzando una delle opzioni disponibili.",
+
+  "GettingItemCloudTitle": "Cloud",
+  "GettingItemCloudText": "Provalo come servizio. Ospitiamo, manteniamo e aggiorniamo DocSpace per te",
+  "GettingItemCloudSubtitle": "Crea ora",
+
+  "GettingItemLinuxTitle": "Linux",
+  "GettingItemLinuxText": "Ospita sul tuo server Linux (pacchetti Docker, deb o rpm)",
+  "GettingItemLinuxSubtitle": "Ottienilo ora",
+
+  "GettingItemWindowsTitle": "Windows",
+  "GettingItemWindowsText": "Ospita sul tuo server Windows (pacchetti exe)",
+  "GettingItemWindowsSubtitle": "Ottienilo ora",
+
+  "GettingFooterText": "La versione Community per uso domestico è disponibile per il download <0>qui</0>."
+}

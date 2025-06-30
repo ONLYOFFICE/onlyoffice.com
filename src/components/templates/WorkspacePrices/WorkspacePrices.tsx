@@ -1,10 +1,14 @@
+import { IWorkspacePricesTemplate } from "./WorkspacePrices.types";
 import { Hero } from "./sections/Hero";
 import { Faq } from "./sections/Faq";
 
-const WorkspacePricesTemplate = () => {
+const WorkspacePricesTemplate = ({
+  locale,
+  productsData,
+}: IWorkspacePricesTemplate) => {
   return (
     <>
-      <Hero />
+      <Hero locale={locale} productsData={productsData} />
       <Faq />
     </>
   );

@@ -10,6 +10,8 @@ import {
   StyledHeroTotal,
   StyledHeroTotalPrice,
 } from "./Hero.styled";
+import { IDocSpaceFamilyPackTemplate } from "@src/components/templates/DocSpaceFamilyPack";
+import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -21,9 +23,9 @@ import { ToggleButtons } from "@src/components/widgets/ToggleButtons";
 import { List } from "@src/components/widgets/pricing/List";
 import { Reseller } from "@src/components/modules/pricing/Reseller";
 
-const Hero = () => {
+const Hero = ({ locale, productsData }: IDocSpaceFamilyPackTemplate) => {
   const { t } = useTranslation("docspace-family-pack");
-  const price = "330";
+  const currency = getCurrencyByLocale(locale);
 
   return (
     <StyledHero
@@ -52,7 +54,7 @@ const Hero = () => {
 
             <StyledHeroPrice>
               <Text as="span" size={1} label="$" />
-              {price}
+              {productsData.basic.price}
             </StyledHeroPrice>
 
             <List
@@ -125,11 +127,17 @@ const Hero = () => {
             <StyledHeroTotal>
               <Heading level={4} color="#444444" label={t("Total")} />
               <StyledHeroTotalPrice>
-                $<span>{price}</span>
+                {currency.symbol}
+                <span>{productsData.basic.price}</span>
               </StyledHeroTotalPrice>
             </StyledHeroTotal>
 
-            <Button as="a" href="" label={t("BuyNow")} />
+            <Button
+              as="a"
+              href={productsData.basic.url}
+              target="_blank"
+              label={t("BuyNow")}
+            />
           </StyledHeroItem>
         </StyledHeroWrapper>
 

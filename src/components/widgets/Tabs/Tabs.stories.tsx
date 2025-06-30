@@ -35,10 +35,12 @@ export default {
   },
 } as Meta<typeof Tabs>;
 
-const Template: StoryFn<ITabs> = (args: ITabs) => {
+type ITabsItems = "tab-1" | "tab-2";
+
+const Template: StoryFn<ITabs<ITabsItems>> = (args: ITabs<ITabsItems>) => {
   const [selected, setSelected] = useState(args.selected);
 
-  const handleChange = (value: string) => {
+  const handleChange = (value: ITabsItems) => {
     setSelected(value);
   };
 

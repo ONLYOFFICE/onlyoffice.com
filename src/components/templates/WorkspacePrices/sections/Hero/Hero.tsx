@@ -12,6 +12,8 @@ import {
   StyledHeroPricingPlanPlaceholder,
   StyledHeroPricingPlanText,
 } from "./Hero.styled";
+import { IWorkspacePricesTemplate } from "../../WorkspacePrices.types";
+import { IPricingPlan } from "./sub-components/PricingPlan";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -20,14 +22,39 @@ import { PricingPlan } from "./sub-components/PricingPlan";
 import { CompareFeatures } from "./sub-components/CompareFeatures";
 import { pricingPlans } from "./data/pricing-plans";
 
-const Hero = () => {
+const Hero = ({ locale, productsData }: IWorkspacePricesTemplate) => {
   const { t } = useTranslation("workspace-prices");
 
-  const [numberOfUsers, setNumberOfUsers] = useState({
+  const [numberOfUsers, setNumberOfUsers] = useState<{
+    basic: IPricingPlan["numberOfUsers"];
+    plus: IPricingPlan["numberOfUsers"];
+    premium: IPricingPlan["numberOfUsers"];
+  }>({
     basic: "50",
     plus: "50",
     premium: "50",
   });
+
+  const productMap = {
+    basic: {
+      50: productsData.basic50,
+      100: productsData.basic100,
+      200: productsData.basic200,
+      more: { price: null, url: "" },
+    },
+    plus: {
+      50: productsData.plus50,
+      100: productsData.plus100,
+      200: productsData.plus200,
+      more: { price: null, url: "" },
+    },
+    premium: {
+      50: productsData.premium50,
+      100: productsData.premium100,
+      200: productsData.premium200,
+      more: { price: null, url: "" },
+    },
+  };
 
   return (
     <StyledHero
@@ -71,22 +98,31 @@ const Hero = () => {
             </StyledHeroHeader>
 
             <StyledHeroPricingPlans>
-              {pricingPlans.map((plan) => (
-                <PricingPlan
-                  key={plan.key}
-                  active={plan.key === "plus"}
-                  heading={t(plan.headingKey)}
-                  price={plan.price}
-                  numberOfUsers={numberOfUsers[plan.key]}
-                  setNumberOfUsers={(value) =>
-                    setNumberOfUsers((prev) => ({ ...prev, [plan.key]: value }))
-                  }
-                  availableList={plan.availableKeys.map((item) => t(item))}
-                  firstResponseTime={plan.firstResponseTime}
-                  supportList={plan.supportKeys.map((item) => t(item))}
-                  casesList={plan.casesKeys.map((item) => t(item))}
-                />
-              ))}
+              {pricingPlans.map((plan) => {
+                const product = productMap[plan.key]?.[numberOfUsers[plan.key]];
+
+                return (
+                  <PricingPlan
+                    key={plan.key}
+                    locale={locale}
+                    active={plan.key === "plus"}
+                    heading={t(plan.headingKey)}
+                    price={product.price}
+                    url={product.url}
+                    numberOfUsers={numberOfUsers[plan.key]}
+                    setNumberOfUsers={(value) =>
+                      setNumberOfUsers((prev) => ({
+                        ...prev,
+                        [plan.key]: value,
+                      }))
+                    }
+                    availableList={plan.availableKeys.map((item) => t(item))}
+                    firstResponseTime={plan.firstResponseTime}
+                    supportList={plan.supportKeys.map((item) => t(item))}
+                    casesList={plan.casesKeys.map((item) => t(item))}
+                  />
+                );
+              })}
 
               <CompareFeatures />
 
