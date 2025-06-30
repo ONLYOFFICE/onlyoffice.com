@@ -9,7 +9,7 @@ import { Footer } from "@src/components/modules/Footer";
 import { WhitepapersTemplate } from "@src/components/templates/Whitepapers";
 
 const VirtualDataRoomsPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("virtual-data-rooms");
+  const { t } = useTranslation("whitepapers");
 
   return (
     <Layout>
@@ -23,8 +23,7 @@ const VirtualDataRoomsPage = ({ locale }: ILocale) => {
         <Header
           locale={locale}
           highlight={{
-            buttonId: "oo-menu-item-btn-products",
-            linkId: "oo-menu-link-docspace-virtual-data-rooms",
+            buttonId: "oo-menu-item-btn-resources",
           }}
         />
       </Layout.Header>
