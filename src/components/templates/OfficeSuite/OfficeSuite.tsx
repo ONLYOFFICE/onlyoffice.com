@@ -1,4 +1,4 @@
-import { GetStarted } from "@src/components/templates/Main/sections/GetStarted";
+import { GetStarted } from "@src/components/modules/GetStarted";
 import { Hero } from "./sections/Hero";
 import { Partners } from "./sections/Partners";
 import { SecurityFirst } from "@src/components/modules/SecurityFirst";
