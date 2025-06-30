@@ -109,6 +109,7 @@ const QuoteModal = <T,>({
     setFormData(initialFormData);
     setQuoteFormData(initialQuoteFormData);
     setFormStatus("default");
+    setIsFormValid(false);
     hCaptchaRef.current?.resetCaptcha();
     phoneInputRef.current?.reset();
   };
