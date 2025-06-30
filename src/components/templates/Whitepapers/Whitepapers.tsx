@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import { SearchIcon } from "@src/components/icons";
 
 import { Hero } from "./sections/Hero";
+import { Join } from "./sections/Join";
 
 import {
   StyledWhitepapersInput,
@@ -50,6 +51,7 @@ const WhitepapersTemplate = () => {
         </StyledWhitepapersInputContainer>
       </StyledWhitepapersInputWrapper>
       <Hero />
+      <Join />
     </>
   );
 };
