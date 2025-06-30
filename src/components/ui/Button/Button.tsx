@@ -17,6 +17,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
       as = "button",
       href,
       target,
+      download,
       rel,
       fullWidth,
       variant = "primary",
@@ -35,9 +36,10 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
         tabIndex={tabIndex}
         type={as === "button" ? type : undefined}
         title={title}
-        as={as === "a" ? Link : as}
+        as={download ? "a" : as === "a" ? Link : as}
         href={as === "a" ? (href ?? "") : undefined}
         target={as === "a" ? target : undefined}
+        download={download}
         rel={
           as === "a"
             ? !rel && target === "_blank"
