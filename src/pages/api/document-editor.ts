@@ -100,7 +100,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         documentType,
         editorConfig: {
           mode,
-          callbackUrl: `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/api/onlyoffice-callback`,
           customization: {
             uiTheme,
             anonymous: {
