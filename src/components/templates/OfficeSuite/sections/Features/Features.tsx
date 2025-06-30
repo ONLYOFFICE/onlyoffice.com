@@ -2,15 +2,15 @@ import { useTranslation, Trans } from "next-i18next";
 import { items } from "./data/items";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-import { StyledFeaturesWrapper, StyledSubHeading, StyledHeading } from "./Features.styled";
+import { StyledFeaturesWrapper, StyledSubHeading } from "./Features.styled";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 import { useRouter } from "next/router";
 import { Heading } from "@src/components/ui/Heading";
-import {Link} from "@src/components/ui/Link";
+import { Link } from "@src/components/ui/Link";
 
 const Features = () => {
   const { t } = useTranslation("office-suite");
-  const {locale } = useRouter();
+  const { locale } = useRouter();
 
   return (
     <Section
@@ -18,27 +18,24 @@ const Features = () => {
       tabletSmallSpacing={["88px", "88px"]}
     >
       <Container>
-      <StyledHeading level={1} color="#333333" textAlign="center">
-            <Trans
-              t={t}
-              i18nKey="NumberOne"
-            />
-        </StyledHeading>
+        <Heading level={1} color="#333333" textAlign="center">
+          <Trans t={t} i18nKey="NumberOne" />
+        </Heading>
         <StyledSubHeading size={2} textAlign="center">
-            <Trans
-              t={t}
-              i18nKey="Designed"
-              components={[
-                <Link
-                  key={0}
-                  href={`${locale === "en" ? "" : `/${locale}`}/app-directory`}
-                  target="_blank"
-                  color="main"
-                  textUnderline
-                  hover="underline-none"
-                />,
-              ]}
-            />
+          <Trans
+            t={t}
+            i18nKey="Designed"
+            components={[
+              <Link
+                key={0}
+                href="/accessibility"
+                target="_blank"
+                color="main"
+                textUnderline
+                hover="underline-none"
+              />,
+            ]}
+          />
         </StyledSubHeading>
         <StyledFeaturesWrapper>
           {items.map((item, index) => (
@@ -56,13 +53,55 @@ const Features = () => {
                     t={t}
                     i18nKey="CreateText"
                     components={[
-                      <Link key={0} href={`${locale === "en" ? "" : `/${locale}`}/document-editor.aspx`} target="_blank" color="main" textUnderline hover="underline-none" />,
-                      <Link key={1} href={`${locale === "en" ? "" : `/${locale}`}/spreadsheet-editor.aspx`} target="_blank" color="main" textUnderline hover="underline-none" />,
-                      <Link key={2} href={`${locale === "en" ? "" : `/${locale}`}/presentation-editor.aspx`} target="_blank" color="main" textUnderline hover="underline-none" />,
-                      <Link key={3} href={`${locale === "en" ? "" : `/${locale}`}/form-creator.aspx`} target="_blank" color="main" textUnderline hover="underline-none" />,
-                      <Link key={4} href={`${locale === "en" ? "" : `/${locale}`}/pdf-editor.aspx`} target="_blank" color="main" textUnderline hover="underline-none" />,
-                      <Link key={5} href={`${locale === "en" ? "" : `/${locale}`}/ebooks.aspx`} target="_blank" color="main" textUnderline hover="underline-none" />,
-                      <Link key={6} href={`${locale === "en" ? "" : `/${locale}`}/diagrams.aspx`} target="_blank" color="main" textUnderline hover="underline-none" />
+                      <Link
+                        key={0}
+                        href="/document-editor"
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                      />,
+                      <Link
+                        key={1}
+                        href="/spreadsheet-editor"
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                      />,
+                      <Link
+                        key={2}
+                        href="/presentation-editor"
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                      />,
+                      <Link
+                        key={3}
+                        href="/form-creator"
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                      />,
+                      <Link
+                        key={4}
+                        href="/pdf-editor"
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                      />,
+                      <Link
+                        key={5}
+                        href="/e-book"
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                      />,
+                      <Link
+                        key={6}
+                        href="/diagram-viewer"
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                      />,
                     ]}
                   />
                 ) : (
@@ -78,11 +117,10 @@ const Features = () => {
                   </>
                 )
               }
-              gap={item.gap}
               position={{ desktop: index % 2 === 1 ? "right" : "left" }}
               links={item.links?.map((link) => ({
                 ...link,
-                href: `${locale === "en" ? "" : `/${locale}`}${link.href}`,                 
+                href: `${locale === "en" ? "" : `/${locale}`}${link.href}`,
                 label: t(String(link.label)),
               }))}
               image={{
@@ -93,12 +131,10 @@ const Features = () => {
               }}
             />
           ))}
-          
         </StyledFeaturesWrapper>
       </Container>
     </Section>
   );
-}
-
+};
 
 export { Features };

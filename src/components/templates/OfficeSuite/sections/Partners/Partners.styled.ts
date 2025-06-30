@@ -35,73 +35,18 @@ const StyledPartnersInner = styled.div`
   }
 `;
 
-const StyledPartnerLogo = styled.div`
+const StyledPartnerLogo = styled.div<{
+  $positionX: { desktop: string; mobile: string };
+  $width: { desktop: string; mobile: string };
+}>`
   background-image: url("/images/templates/office-suite/customers.svg");
   background-repeat: no-repeat;
   height: 90px;
   background-position-y: center;
   filter: grayscale(1);
   transition: filter 0.2s;
-
-  &.suzuki {
-    width: 130px;
-    background-position-x: 20px;
-
-    @media ${device.mobile} {
-      width: 51.7px;
-      background-position-x: 2px;
-    }
-  }
-
-  &.one_happy_family {
-    width: 150px;
-    background-position-x: -140px;
-
-    @media ${device.mobile} {
-      width: 71px;
-      background-position-x: -81px;
-    }
-  }
-
-  &.unesco {
-    background-position-x: -310px;
-    width: 190px;
-
-    @media ${device.mobile} {
-      width: 94px;
-      background-position-x: -180px;
-    }
-  }
-
-  &.aarrnet {
-    width: 150px;
-    background-position-x: -530px;
-
-    @media ${device.mobile} {
-      width: 87px;
-      background-position-x: -296px;
-    }
-  }
-
-  &.gwdg {
-    width: 84px;
-    background-position-x: -720px;
-
-    @media ${device.mobile} {
-      width: 65px;
-      background-position-x: -404px;
-    }
-  }
-
-  &.ministry {
-    background-position-x: -900px;
-    width: 200px;
-
-    @media ${device.mobile} {
-      width: 96px;
-      background-position-x: -500px;
-    }
-  }
+  background-position-x: ${(props) => props.$positionX.desktop};
+  width: ${(props) => props.$width.desktop};
 
   &:hover {
     filter: grayscale(0);
@@ -110,6 +55,8 @@ const StyledPartnerLogo = styled.div`
   @media ${device.mobile} {
     height: 44px;
     background-size: 607px;
+    width: ${(props) => props.$width.mobile};
+    background-position-x: ${(props) => props.$positionX.mobile};
   }
 `;
 

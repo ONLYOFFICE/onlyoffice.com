@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
-import { Heading } from "@src/components/ui/Heading";
 
 const StyledFeaturesWrapper = styled.div`
   display: grid;
@@ -16,19 +15,14 @@ const StyledFeaturesWrapper = styled.div`
   }
 `;
 
-const StyledHeading = styled(Heading)`
-  
-`;
-
 const StyledSubHeading = styled(Text)`
-margin-top: 24px;
-margin-bottom: 80px;
+  margin-top: 24px;
+  margin-bottom: 80px;
 
-@media ${device.tabletS} {
+  @media ${device.tabletS} {
     row-gap: 48px;
     margin-bottom: 56px;
   }
-  
 `;
 
-export { StyledFeaturesWrapper, StyledSubHeading, StyledHeading };
+export { StyledFeaturesWrapper, StyledSubHeading };

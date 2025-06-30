@@ -5,12 +5,12 @@ export const items: IFeatureImageItem[] = [
     heading: "Create",
     text: "CreateText",
     contentWidth: 320,
-    gap:{desktop:16,tablet:16,tabletS:16,mobile:16},
-    marginTop:{
-      desktop:32,
-      tablet:32,
-      tabletS:0,
-      mobile:16
+    gap: { desktop: 16, tablet: 16, tabletS: 16, mobile: 16 },
+    marginTop: {
+      desktop: 32,
+      tablet: 32,
+      tabletS: 0,
+      mobile: 16,
     },
     image: {
       url: "CreateImgUrl",
@@ -23,16 +23,16 @@ export const items: IFeatureImageItem[] = [
     heading: "Edit",
     text: "EditText",
     contentWidth: 320,
-    gap:{desktop:16,tablet:16,tabletS:16,mobile:16},
-    marginTop:{
-      desktop:32,
-      tablet:32,
-      tabletS:0,
-      mobile:16
+    gap: { desktop: 16, tablet: 16, tabletS: 16, mobile: 16 },
+    marginTop: {
+      desktop: 32,
+      tablet: 32,
+      tabletS: 0,
+      mobile: 16,
     },
     links: [
       {
-        href:"/app-directory",
+        href: "/app-directory",
         label: "FindPlugins",
         isExternal: true,
       },
@@ -48,18 +48,17 @@ export const items: IFeatureImageItem[] = [
     heading: "Work",
     text: "WorkText",
     contentWidth: 320,
-    gap:{desktop:16,tablet:16,tabletS:16,mobile:16},
-    marginTop:{
-      desktop:32,
-      tablet:32,
-      tabletS:0,
-      mobile:16
+    gap: { desktop: 16, tablet: 16, tabletS: 16, mobile: 16 },
+    marginTop: {
+      desktop: 32,
+      tablet: 32,
+      tabletS: 0,
+      mobile: 16,
     },
     links: [
       {
-        href:"/ai-assistants.aspx",
+        href: "/ai-assistants",
         label: "LearnMore",
-        isExternal: true,
       },
     ],
     image: {
@@ -73,18 +72,17 @@ export const items: IFeatureImageItem[] = [
     heading: "Collaborate",
     text: "CollaborateText",
     contentWidth: 320,
-    gap:{desktop:16,tablet:16,tabletS:16,mobile:16},
-    marginTop:{
-      desktop:32,
-      tablet:32,
-      tabletS:0,
-      mobile:16
+    gap: { desktop: 16, tablet: 16, tabletS: 16, mobile: 16 },
+    marginTop: {
+      desktop: 32,
+      tablet: 32,
+      tabletS: 0,
+      mobile: 16,
     },
     links: [
       {
-        href:"/seamless-collaboration.aspx",
+        href: "/seamless-collaboration",
         label: "LearnMore",
-        isExternal: true,
       },
     ],
     image: {
@@ -98,12 +96,12 @@ export const items: IFeatureImageItem[] = [
     heading: "Customize",
     text: "CustomizeText",
     contentWidth: 320,
-    gap:{desktop:16,tablet:0,tabletS:0,mobile:0},
-    marginTop:{
-      desktop:32,
-      tablet:32,
-      tabletS:0,
-      mobile:16
+    gap: { desktop: 16, tablet: 0, tabletS: 0, mobile: 0 },
+    marginTop: {
+      desktop: 32,
+      tablet: 32,
+      tabletS: 0,
+      mobile: 16,
     },
     image: {
       url: "CustomizeImgUrl",

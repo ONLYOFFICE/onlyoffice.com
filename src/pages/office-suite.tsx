@@ -17,7 +17,7 @@ const OffiseSuitePage = ({ locale }: ILocale) => {
         <AdventAnnounceBanner locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head title={t("PageTitle")} description={t("PageDescription")} />
+        <Head title={t("Title")} description={t("Description")} />
       </Layout.Head>
       <Layout.Header>
         <Header locale={locale} />
@@ -39,10 +39,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "office-suite",
         "main",
-        "office-for-wordpress",
         "SecurityFirst",
-        "virtual-data-rooms",
-        "OfficeSuite"
       ])),
       locale,
     },

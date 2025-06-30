@@ -1,73 +1,92 @@
-import { useTranslation, Trans } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { useState } from "react";
 import {
   StyledHero,
   StyledHeroWrapper,
-  StyledHeroHeader,
   StyledHeroHeaderBtns,
   StyledHeroVideo,
-  StyledHeroImg,
+  StyledHeading,
+  StyledHeroInput,
 } from "./Hero.styled";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
+import { Input } from "@src/components/ui/Input";
 
 const Hero = () => {
   const { t } = useTranslation("office-suite");
-  const { locale } = useRouter();
+  const { locale, query } = useRouter();
+  const hasDocSpaceRegistration = query.docspace === "registration";
+  const [email, setEmail] = useState("");
 
   const scrollToBlock = () => {
     const element = document.getElementById("how-to-start");
     if (element) element.scrollIntoView({ behavior: "smooth" });
   };
 
+  const saveEmail = () => {
+    if (email) {
+      localStorage.setItem("email", email);
+    }
+  };
+
   return (
     <StyledHero
-      desktopSpacing={["118px", "60px"]}
-      tabletSpacing={["110px", "60px"]}
-      tabletSmallSpacing={["128px", "101px"]}
-      mobileSpacing={["96px", "66px"]}
+      desktopSpacing={["136px", "162px"]}
+      tabletSpacing={["136px", "162px"]}
+      tabletSmallSpacing={["112px", "58px"]}
+      mobileSpacing={["96px", "48px"]}
     >
       <Container>
         <StyledHeroWrapper>
-
-          <StyledHeroHeader>
-            <Heading level={1} size={2}>
-              <Trans
-                t={t}
-                i18nKey="Header"
-                components={[<Text as="span" color="#009CDE" key="0" />]}
+          <StyledHeading level={1} size={2} label={t("Header")} />
+          <Text size={1} label={t("Subheader")} />
+          {!hasDocSpaceRegistration ? (
+            <StyledHeroHeaderBtns>
+              <Button
+                onClick={() => scrollToBlock()}
+                id="hero-get-started"
+                label={t("GetItNow")}
               />
-            </Heading>
-            <Text size={1} label={t("Subheader")} />
-          </StyledHeroHeader>
-
-          <StyledHeroHeaderBtns>
-            <Button
-              onClick={() => scrollToBlock()}
-              id="hero-get-started"
-              label={t("GetItNow")}
-            />
-            <Button
-              as="a"
-              variant="tertiary"
-              id="hero-request-free-demo"
-              href="/demo-order?from=officeforwordpress"
-              label={t("SeeItInAction")}
-            />
-          </StyledHeroHeaderBtns>
-
-          
+              <Button
+                as="a"
+                variant="tertiary"
+                id="hero-request-free-demo"
+                href="/demo-order?from=officeforwordpress"
+                label={t("SeeItInAction")}
+              />
+            </StyledHeroHeaderBtns>
+          ) : (
+            <StyledHeroInput>
+              <Input
+                placeholder={t("EnterYourEmail")}
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <Button
+                id="hero-get-it-now"
+                as="a"
+                href="/docspace-registration"
+                label={t("CreateNow")}
+                onClick={saveEmail}
+              />
+            </StyledHeroInput>
+          )}
         </StyledHeroWrapper>
-
-        {locale === "zh" ? (
-          <StyledHeroImg
-            $imgUrl="/images/templates/office-for-wordpress/hero/zh/hero.png"
-            $imgUrl2x="/images/templates/office-for-wordpress/hero/zh/hero@2x.png"
-          />
-        ) : (
-          <StyledHeroVideo>
+        <StyledHeroVideo>
+          {locale === "zh" ? (
+            <iframe
+              width="100%"
+              height="auto"
+              src="//player.bilibili.com/player.html?isOutside=true&aid=BV1ZFKHzWE5g&bvid=BV1ZFKHzWE5g&cid=BV1ZFKHzWE5g"
+              title="BiliBili"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          ) : (
             <iframe
               width="100%"
               height="auto"
@@ -77,8 +96,8 @@ const Hero = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
-          </StyledHeroVideo>
-        )}
+          )}
+        </StyledHeroVideo>
       </Container>
     </StyledHero>
   );

@@ -1,55 +1,43 @@
-import { styled, css } from "styled-components";
+import { styled } from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
+import { Heading } from "@src/components/ui/Heading";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   background-image: url(/images/templates/office-suite/cloud-bg.svg);
-  background-position: 555px 81%;
+  background-position: calc(50% + 364px) 219px;
   background-repeat: no-repeat;
-
-  @media (max-width: 2144px) {
-  }
 
   @media ${device.tablet} {
     margin-top: -64px;
-    background-position: center -477px;
   }
 
   @media ${device.tabletS} {
     margin-top: -48px;
-    background-position: -30px 150%;
+    background-position: -100px 219px;
   }
-  
+
   @media ${device.mobile} {
+    background-position: -140px 64px;
+    background-size: 1235px 709px;
   }
 `;
 
 const StyledHeroWrapper = styled.div`
-  display: grid;
-  justify-items: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   margin: 0 auto 64px;
   max-width: 1120px;
   text-align: center;
-
-  @media ${device.tabletS} {
-    margin: 0 auto 32px;
-  }
+  flex-direction: column;
+  gap: 32px;
 
   @media ${device.mobile} {
-    row-gap: 24px;
-  }
-`;
-
-
-const StyledHeroHeader = styled.div`
-  h1 {    
-   max-width: 998px;
-  }
-
-  p {
-    padding: 40px 0;
+    gap: 24px;
+    margin: 0 auto 48px;
   }
 `;
 
@@ -71,15 +59,8 @@ const StyledHeroVideo = styled.div`
 
 const StyledHeroHeaderBtns = styled.div`
   display: flex;
-
-  button {
-    margin-right: 16px;
-
-    @media ${device.mobile} {
-      margin-right: 0;
-      margin-bottom: 16px;
-    }
-  }
+  justify-content: center;
+  gap: 16px;
 
   @media ${device.mobile} {
     flex-direction: column;
@@ -87,29 +68,56 @@ const StyledHeroHeaderBtns = styled.div`
   }
 `;
 
-const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
-  border-radius: 5px;
-  padding-bottom: 53.572%;
-  background-image: url(${(props) => props.$imgUrl});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  box-shadow: 0px 20px 50px 0px rgba(85, 85, 85, 0.15);
+const StyledHeading = styled(Heading)`
+  max-width: 928px;
+  margin: 0 auto;
+`;
 
-  ${(props) =>
-    props.$imgUrl2x &&
-    css`
-      @media ${device.retina} {
-        background-image: url(${props.$imgUrl2x});
-      }
-    `}
+const StyledHeroInput = styled.div`
+  background-color: #ffffff;
+  box-shadow: 0px 7px 15px rgba(85, 85, 85, 0.1);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 702px;
+  padding: 32px 96px;
+  width: 100%;
+
+  .input-wrapper {
+    border-radius: 9px 0px 0px 9px;
+  }
+  > a {
+    border-radius: 0px 9px 9px 0px;
+  }
+
+  @media ${device.tabletS} {
+    padding: 32px;
+  }
+
+  @media ${device.mobile} {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    > div {
+      width: 100%;
+    }
+    .input-wrapper {
+      border-radius: 9px;
+    }
+    > a {
+      border-radius: 9px;
+    }
+  }
 `;
 
 export {
   StyledHero,
   StyledHeroWrapper,
-  StyledHeroHeader,
   StyledHeroHeaderBtns,
   StyledHeroVideo,
-  StyledHeroImg,
+  StyledHeading,
+  StyledHeroInput,
 };

@@ -10,7 +10,11 @@ const Partners = () => {
     <StyledPartnersWrapper>
       <StyledPartnersInner>
         {items.map((item) => (
-          <StyledPartnerLogo key={item.name} className={item.name} />
+          <StyledPartnerLogo
+            key={item.name}
+            $positionX={item.positionX}
+            $width={item.width}
+          />
         ))}
       </StyledPartnersInner>
     </StyledPartnersWrapper>
