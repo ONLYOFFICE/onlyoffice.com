@@ -1,0 +1,1 @@
+export { OfficeForNuxeoTemplate } from "./OfficeForNuxeo";

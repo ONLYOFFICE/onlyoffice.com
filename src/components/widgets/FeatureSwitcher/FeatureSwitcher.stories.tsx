@@ -21,6 +21,9 @@ export default {
     className: {
       control: { type: "text" },
     },
+    heading: {
+      control: { type: "text" },
+    },
     items: {
       control: {
         type: "object",

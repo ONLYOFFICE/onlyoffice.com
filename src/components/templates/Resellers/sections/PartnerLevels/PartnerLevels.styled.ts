@@ -170,8 +170,8 @@ const StyledSupportLevelsIcon = styled.span<{ $icon: string }>`
     $icon === "check"
       ? "url('/images/icons/check.svg')"
       : $icon === "dash"
-      ? "url('/images/icons/dash.svg')"
-      : "none"};
+        ? "url('/images/icons/dash.svg')"
+        : "none"};
   background-repeat: no-repeat;
   background-size: contain;
 `;

@@ -16,7 +16,7 @@ const LearnMore = () => {
     <StyledLearnMore>
       <Container>
         <StyledLearnMoreHeading
-          level={3}
+          level={2}
           textAlign="center"
           label={t("LearnMoreHeading")}
         />

@@ -1,0 +1,1 @@
+export { OfficeForHumHubTemplate } from "./OfficeForHumHub";

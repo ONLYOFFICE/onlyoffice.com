@@ -4,19 +4,19 @@ import {
 } from "./ToggleButtons.styled";
 import { IToggleButtons } from "./ToggleButtons.types";
 
-const ToggleButtons = ({
+const ToggleButtons = <T extends string>({
   id,
   className,
   items,
   selected,
   onChange,
-}: IToggleButtons) => {
+}: IToggleButtons<T>) => {
   return (
     <StyledToggleButtons id={id} className={className}>
       {items.map((item) => (
         <StyledToggleButton
           key={item.id}
-          onClick={() => onChange?.(item.id)}
+          onClick={() => onChange?.(item.id as T)}
           $selected={selected === item.id}
           disabled={items.length === 1}
         >

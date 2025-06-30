@@ -1,2 +1,2 @@
 export { StepCarousel } from "./StepCarousel";
-export type { IStepCarouselItem } from "./StepCarousel.types";
+export type { IStepCarouselItem, IStepCarouselTab } from "./StepCarousel.types";

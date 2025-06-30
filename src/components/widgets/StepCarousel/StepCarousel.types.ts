@@ -12,11 +12,24 @@ export interface IStepCarouselItem {
   }[];
 }
 
+export interface IStepCarouselTab {
+  /** The label for the tab. */
+  label: string;
+  /** The items to display under this tab. */
+  items: IStepCarouselItem[];
+}
+
 export interface IStepCarousel {
   /** The unique identifier. */
   id?: string;
   /** Additional CSS class names. */
   className?: string;
-  /** The items to display in the carousel. */
-  items: IStepCarouselItem[];
+  /** The tabs data if the carousel is tabbed. */
+  tabs?: IStepCarouselTab[];
+  /** The items to display if the carousel is not tabbed. */
+  items?: IStepCarouselItem[];
+  /** The index of the tab that should be active by default. */
+  activeTab?: number;
+  /** Callback fired when the active tab changes. */
+  onChange?: (value: number) => void;
 }

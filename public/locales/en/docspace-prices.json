@@ -142,5 +142,8 @@
   "SupportForMultiServerDeployment": "Support for multi-server deployment",
   "AdditionalToolsAndServices": "Additional tools and services",
   "TrainingCourses": "Training courses",
-  "UponRequest": "Upon request"
+  "UponRequest": "Upon request",
+
+  "FillInTheFormToGetAQuoteForOODocSpace": "Fill in the form to get a quote for ONLYOFFICE DocSpace",
+  "GetItNowText": "By clicking Get a quote, you understand and agree to our <0>License agreement</0> and <1>Privacy statement</1>."
 }

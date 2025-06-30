@@ -30,10 +30,14 @@ export default {
   },
 } as Meta<typeof ToggleButtons>;
 
-const Template: StoryFn<IToggleButtons> = (args: IToggleButtons) => {
+type IToggleButtonsItems = "toggle-button-1" | "toggle-button-2";
+
+const Template: StoryFn<IToggleButtons<IToggleButtonsItems>> = (
+  args: IToggleButtons<IToggleButtonsItems>,
+) => {
   const [selected, setSelected] = useState(args.selected);
 
-  const handleChange = (value: string) => {
+  const handleChange = (value: IToggleButtonsItems) => {
     setSelected(value);
   };
 

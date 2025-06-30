@@ -1,0 +1,111 @@
+{
+  "PageTitle": "为您的企业打造的 ONLYOFFICE DocSpace | ONLYOFFICE",
+  "PageDescription": "在本地部署 ONLYOFFICE DocSpace，完全掌控您的数据",
+
+  "HeroMainPictureAltText": "主图",
+
+  "OnlyOfficeDocSpaceEnterprise": "ONLYOFFICE DocSpace 企业版",
+  "TheEnterpriseScaledSpace": "为您的业务文档打造的企业级协作空间",
+  "GetItNow": "立即获取",
+  "TryItFree": "免费试用云版本",
+
+  "HeroImageUrl": "/images/templates/docspace-enterprise/hero/main-img_zh.svg",
+
+  "HeroWorldIconAltText": "世界图标",
+
+  "TrustedBy": "深受用户信赖",
+  "CountOfUsers": "15,000,000 用户",
+  "Worldwide": "遍布全球",
+
+  "FeaturesEfficient": "企业内部的高效文档协作",
+  "FeaturesOnlyOffice": "ONLYOFFICE DocSpace Enterprise 提供一整套用于文档存储、共享和协作的工具。",
+  "FeaturesLearn": "了解更多关于 Docspace 的功能",
+
+  "FeaturesItemTextWork": "在协作房间中共同处理合同",
+  "FeaturesItemTextInvite": "在公共房间中邀请合作伙伴免注册查看文档",
+  "FeaturesItemTextCollect": "在表单填写房间中收集回复",
+  "FeaturesItemTextCreate": "创建具有灵活设置的自定义房间，满足任何任务和目的",
+  "FeaturesItemTextShare": "使用虚拟数据房间，在尽职调查过程中共享和披露公司文档",
+
+  "ExperienceFlawless": "跨设备提供无缝用户体验",
+  "ExperienceWithONLYOFFICE": "借助 ONLYOFFICE DocSpace 企业版，您可以通过切换到移动网页版，随时随地使用任何智能手机或平板电脑轻松管理、编辑和协作处理文档。",
+  "ExperienceFreeDesktopApps": "还提供用于离线编辑的免费<0>桌面应用程序</0>以及适用于 iOS 和 Android 的原生<1>移动应用程序</1>。",
+
+  "EnvironmentEnterpriseReady": "企业级工作环境",
+
+  "EnvironmentItemTitleSecurity": "安全性",
+  "EnvironmentItemTextSecurity": "全方位保护您的数据安全：企业级安全设置、符合行业特定标准、优先获取安全性和稳定性修复程序。",
+  "EnvironmentItemLinkSecurity": "了解有关 ONLYOFFICE 安全性的更多信息",
+  "EnvironmentItemImageSecurity": "/images/templates/docspace-enterprise/environment/zh/Security.svg",
+
+  "EnvironmentItemTitleAccessibility": "辅助功能",
+  "EnvironmentItemTextAccessibility": "让每个人的编辑过程都简单舒适：切换可用颜色模式、启用必要插件、隐藏或显示工具栏和标尺等。",
+  "EnvironmentItemLinkAccessibility": "了解有关 ONLYOFFICE 辅助功能的更多信息",
+  "EnvironmentItemImageAccessibility": "/images/templates/docspace-enterprise/environment/zh/Accessibility.svg",
+
+  "EnvironmentItemTitleCustomization": "自定义",
+  "EnvironmentItemTextCustomization": "应用不同的颜色样式，替换徽标、标题和链接以符合您的企业品牌形象。",
+  "EnvironmentItemImageCustomization": "/images/templates/docspace-enterprise/environment/zh/Customization.svg",
+
+  "EnvironmentItemTitleAdministration": "管理",
+  "EnvironmentItemTextAdministration": "使用直观的控制面板管理您的 DocSpace。连接外部服务以进行日志记录、签名、存储等。",
+  "EnvironmentItemImageAdministration": "/images/templates/docspace-enterprise/environment/zh/Collaboration.svg",
+
+  "EnvironmentItemTitleMultitenancy": "多租户",
+  "EnvironmentItemTextMultitenancy": "为不同分支机构创建多个空间并同时管理它们。",
+  "EnvironmentItemImageMultitenancy": "/images/templates/docspace-enterprise/environment/zh/Multitenancys.svg",
+
+  "ScalableTitleForBusinesses": "可扩展，适用于任何规模的企业",
+  "ScalableOnlyofficeDocSpace": "ONLYOFFICE DocSpace 企业版与您的公司共同成长。 ",
+  "ScalableYouCanCustomize": "您可以随时自定义用户数量，与团队扩张速度保持同步。 ",
+  "ScalableForLargeEnterprises": "对于大型企业，支持多服务器部署。 ",
+  "ScalableImageAltText": "可扩展主图",
+
+  "SupportTitleForEveryStep": "全程支持",
+  "SupportTextTheTeam": "专家团队随时为您提供帮助",
+
+  "SupportItemTitleFreeDemo": "免费演示",
+  "SupportItemTextWatch": "观看 DocSpace 主要功能及其为您的业务带来的优势的演示。",
+  "SupportItemBtnRequest": "请求演示",
+
+  "SupportItemTitleTraining": "培训课程",
+  "SupportItemTextMaster": "在导师指导下掌握 ONLYOFFICE DocSpace。为企业用户提供折扣。",
+  "SupportItemBtnBook": "预约培训",
+
+  "SupportItemTitleViaEmail": "通过电子邮件支持",
+  "SupportItemTextJustContact": "只需通过 <0>support@onlyoffice.com</0> 联系我们 – 我们经验丰富的支持团队将帮助您解决任何问题或技术难题。",
+  "SupportItemBtnViaContactUs": "联系我们",
+
+  "SupportItemTitlePreSale": "有售前问题？",
+  "SupportItemTextContact": "请通过 <1>sales@onlyoffice.com</1> 联系我们，或安排时间让我们的团队给您回电。",
+  "SupportItemBtnPreSaleContactUs": "联系我们",
+
+  "CostTitle": "<0>高性价比</0>的企业解决方案",
+
+  "CostItemFree": "30 天免费试用",
+  "CostItemLifetime": "终身许可证",
+  "CostItemYear": "1 年更新和支持",
+  "CostItemUnlimited": "无限房间和管理员数量",
+
+  "CostButtonPickYourPrice": "选择您的价格",
+
+  "CostFooterIfYouRepresent": "如果您代表教育机构或非营利组织，请<0>联系我们的销售团队</0>以获取专属折扣。",
+  "CostFooterTheFamilyPack": "另有适用于非商业用途的<1>家庭包</1>可供选择。",
+
+  "GettingStarted": "轻松入门",
+  "GettingDeploy": "使用以下任一可用选项部署 ONLYOFFICE DocSpace 企业版。",
+
+  "GettingItemCloudTitle": "云版本",
+  "GettingItemCloudText": "作为服务试用。我们为您托管、维护和更新 DocSpace",
+  "GettingItemCloudSubtitle": "立即创建",
+
+  "GettingItemLinuxTitle": "Linux",
+  "GettingItemLinuxText": "在您的 Linux 服务器上托管（Docker、deb 或 rpm 软件包）",
+  "GettingItemLinuxSubtitle": "立即获取",
+
+  "GettingItemWindowsTitle": "Windows",
+  "GettingItemWindowsText": "在您的 Windows 服务器上托管（exe 软件包）",
+  "GettingItemWindowsSubtitle": "立即获取",
+
+  "GettingFooterText": "供家庭使用的社区版可<0>在此处</0>下载。"
+}

@@ -1,0 +1,1 @@
+export { OfficeForSuiteCRMTemplate } from "./OfficeForSuiteCRM";

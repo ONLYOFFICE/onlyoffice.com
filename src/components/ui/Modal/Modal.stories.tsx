@@ -27,6 +27,9 @@ export default {
     maxWidth: {
       control: { type: "text" },
     },
+    bgColor: {
+      control: { type: "color" },
+    },
     withCloseBtn: {
       control: { type: "boolean" },
     },

@@ -1,0 +1,45 @@
+{
+  "PageTitle": "Collaborative document editing for HumHub | ONLYOFFICE Docs",
+  "PageDescription": "Edit and co-author your documents within HumHub",
+
+  "OnlineOfficeForConnector": "Online office for <0>HumHub</0>",
+  "Subheader": "Work on all kinds of office documents within HumHub using ONLYOFFICE",
+  "GetItNow": "Get it now",
+  "HeroImgUrl": "/images/templates/office-for-humhub/hero/main.png",
+  "HeroImgUrl2x": "/images/templates/office-for-humhub/hero/main@2x.png",
+
+  "WorkWithinConnector": "Edit and collaborate on office documents within the HumHub digital space",
+  "DocumentsTab1Label": "View, create and edit text documents, spreadsheets, and presentations.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-humhub/documents/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-humhub/documents/screen1@2x.png",
+  "DocumentsTab2Label": "Build fillable PDF forms and fill them out online.",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-humhub/documents/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-humhub/documents/screen2@2x.png",
+  "DocumentsTab3Label": "Share and co-author documents with other people of your organization.",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-humhub/documents/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-humhub/documents/screen3@2x.png",
+  "DocumentsTab4Label": "Protect your documents from unauthorized access with JWT.",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-humhub/documents/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-humhub/documents/screen4@2x.png",
+  "GetStarted": "Get started",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with HumHub",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for HumHub now from the HumHub Marketplace.",
+
+  "WhyOO": "Why ONLYOFFICE?",
+  "Reason1": "Support for more than <0>50 file formats</0>, fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
+  "Reason2": "A robust set of editing, formatting, and styling tools. Integrated <0>AI helper.</0>",
+  "Reason3": "Real-time and paragraph-locking <0>co-editing</0>, review, document comparison, comments & chat.",
+  "Reason4": "<0>Enhanced security.</0> Flexible access rights and JWT. Watermarking and password protection. Open source code.",
+  "Reason5": "<0>Easy configuration</0>. Seamless integration with ready-to-use connector from the HumHub Marketplace.",
+  "Reason6": "Scalable Enterprise versions. <0>Free 30-day trial</0>. Cloud and self-hosted version for total control over your data.",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Download the latest connector version from the <0>official Humhub Marketplace</0>.",
+  "HowToStartStep3": "Configure the connector and enable JWT.",
+
+  "ReadDetailedInstructions": "Check <0>useful guides</0> on HumHub integration",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}

@@ -111,8 +111,8 @@ const CategoryFilter = ({
                 openCategoryId === "by-products"
                   ? t("ByProducts")
                   : openCategoryId === "by-developers"
-                  ? t("ByDevelopers")
-                  : t("CategoryFilter")
+                    ? t("ByDevelopers")
+                    : t("CategoryFilter")
               }
             />
             <StyledCategoryFilterDropdownHeaderBtn

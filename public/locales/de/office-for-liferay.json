@@ -1,0 +1,19 @@
+{
+  "HeroImgUrl": "/images/templates/office-for-liferay/hero/de/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-liferay/hero/de/hero@2x.png",
+
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-liferay/documents/de/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-liferay/documents/de/screen1@2x.png",
+
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-liferay/documents/de/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-liferay/documents/de/screen2@2x.png",
+
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-liferay/documents/de/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-liferay/documents/de/screen3@2x.png",
+
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-liferay/documents/de/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-liferay/documents/de/screen4@2x.png",
+
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-liferay/documents/de/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-liferay/documents/de/screen5@2x.png"
+}

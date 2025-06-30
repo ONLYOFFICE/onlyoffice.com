@@ -7,17 +7,51 @@ import {
 } from "./Modal.styled";
 import { IModal } from "./Modal.types";
 
+let openModalCount = 0;
+let cleanupTimeout: ReturnType<typeof setTimeout> | null = null;
+const openModals: HTMLDivElement[] = [];
+
+const modalManager = {
+  addModal() {
+    if (cleanupTimeout) {
+      clearTimeout(cleanupTimeout);
+      cleanupTimeout = null;
+    }
+
+    openModalCount += 1;
+    if (openModalCount === 1) {
+      const scrollbarWidth =
+        window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
+  },
+
+  removeModal() {
+    openModalCount = Math.max(openModalCount - 1, 0);
+    if (openModalCount === 0) {
+      cleanupTimeout = setTimeout(() => {
+        document.body.style.overflow = "";
+        document.body.style.paddingRight = "";
+        cleanupTimeout = null;
+      }, 200);
+    }
+  },
+};
+
 const Modal = ({
   id,
   className,
   children,
+  maxWidth = "736px",
+  bgColor = "rgba(0, 0, 0, 0.4)",
   withCloseBtn,
   positionCloseBtn,
-  maxWidth = "736px",
   isOpen,
   onClose,
 }: IModal) => {
   const modalRef = useRef<HTMLDivElement>(null);
+  const wasOpen = useRef(false);
 
   const stopAllVideos = () => {
     if (!modalRef.current) return;
@@ -46,6 +80,12 @@ const Modal = ({
   useEffect(() => {
     if (!isOpen) return;
 
+    if (modalRef.current && !openModals.includes(modalRef.current)) {
+      openModals.push(modalRef.current);
+    }
+
+    const currentModal = modalRef.current;
+
     const focusableSelectors = [
       "a[href]",
       "area[href]",
@@ -61,11 +101,13 @@ const Modal = ({
     ];
 
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (openModals[openModals.length - 1] !== currentModal) return;
+
       if (e.key === "Escape") {
         onCloseModal();
-      } else if (e.key === "Tab" && modalRef.current) {
+      } else if (e.key === "Tab" && currentModal) {
         const focusableElements = Array.from(
-          modalRef.current.querySelectorAll<HTMLElement>(
+          currentModal.querySelectorAll<HTMLElement>(
             focusableSelectors.join(","),
           ),
         ).filter((el) => el.offsetParent !== null);
@@ -80,7 +122,7 @@ const Modal = ({
         if (e.shiftKey) {
           if (
             activeElement === firstElement ||
-            !modalRef.current.contains(activeElement)
+            !currentModal.contains(activeElement)
           ) {
             e.preventDefault();
             lastElement.focus();
@@ -88,7 +130,7 @@ const Modal = ({
         } else {
           if (
             activeElement === lastElement ||
-            !modalRef.current.contains(activeElement)
+            !currentModal.contains(activeElement)
           ) {
             e.preventDefault();
             firstElement.focus();
@@ -101,31 +143,38 @@ const Modal = ({
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
+
+      if (currentModal) {
+        const index = openModals.indexOf(currentModal);
+        if (index > -1) {
+          openModals.splice(index, 1);
+        }
+      }
     };
   }, [isOpen, onCloseModal]);
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout;
-
-    if (isOpen) {
-      const scrollbarWidth =
-        window.innerWidth - document.documentElement.clientWidth;
-      document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = `${scrollbarWidth}px`;
-    } else {
-      timeout = setTimeout(() => {
-        document.body.style.paddingRight = "";
-        document.body.style.overflow = "";
-      }, 200);
+    if (isOpen && !wasOpen.current) {
+      modalManager.addModal();
+      wasOpen.current = true;
+    } else if (!isOpen && wasOpen.current) {
+      modalManager.removeModal();
+      wasOpen.current = false;
     }
 
-    return () => clearTimeout(timeout);
+    return () => {
+      if (wasOpen.current) {
+        modalManager.removeModal();
+        wasOpen.current = false;
+      }
+    };
   }, [isOpen]);
 
   return (
     <StyledModal
       onClick={onCloseModal}
       $isOpen={isOpen}
+      $bgColor={bgColor}
       id={id}
       className={className}
     >
