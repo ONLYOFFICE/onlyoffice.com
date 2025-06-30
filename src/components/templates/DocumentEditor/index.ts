@@ -1,0 +1,1 @@
+export { DocumentEditorTemplate } from "./DocumentEditor";

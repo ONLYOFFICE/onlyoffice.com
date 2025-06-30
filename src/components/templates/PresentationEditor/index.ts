@@ -1,0 +1,1 @@
+export { PresentationEditorTemplate } from "./PresentationEditor";

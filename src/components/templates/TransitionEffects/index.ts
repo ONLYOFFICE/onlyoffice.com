@@ -1,0 +1,1 @@
+export { TransitionEffectsTemplate } from "./TransitionEffects";

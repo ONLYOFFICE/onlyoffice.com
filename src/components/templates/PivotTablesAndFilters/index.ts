@@ -1,0 +1,1 @@
+export { PivotTablesAndFiltersTemplate } from "./PivotTablesAndFilters";
