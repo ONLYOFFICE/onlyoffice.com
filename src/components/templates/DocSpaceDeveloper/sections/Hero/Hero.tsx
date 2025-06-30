@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Button } from "@src/components/ui/Button";
@@ -13,6 +14,7 @@ import {
 
 const Hero = () => {
   const { t } = useTranslation("docspace-developer");
+  const { locale } = useRouter();
 
   return (
     <StyledHeroSection
@@ -49,7 +51,7 @@ const Hero = () => {
         <StyledHeroVideoWrapper>
           <StyledHeroVideoIframe
             src={t("HeroYoutubeUrl")}
-            title={t("HeroVideoTitle")}
+            title={locale !== "zh" ? t("HeroYoutubeTitle") : ""}
             name={t("HeroYouTubeAttributeName")}
             frameBorder="0"
             allow="autoplay; encrypted-media"
