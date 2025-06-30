@@ -1,0 +1,73 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace secure document storing and collaboration for your web app users | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE je online kancelářská sada integrovaná s platformou pro spolupráci, která spravuje dokumenty, projekty, týmové a zákaznické vztahy a to vše na jednom místě.",
+
+  "HeroHeading": "ONLYOFFICE DocSpace <br><0>secure document storing and collaboration for your web app users</0>",
+  "HeroButtonGet": "Get it now",
+  "HeroButtonSchedule": "Schedule demo",
+  "HeroYoutubeTitle": "YouTube video player",
+  "HeroYoutubeUrl": "https://www.youtube.com/embed/snOBl5Ru6lc?si=Tt4C4r4OaUVVCHBs?autoplay=1&mute=1",
+  "HeroYouTubeAttributeName": "youtube embed",
+
+  "SwitcherHeadingBringYour": "Bring your web app users a secure space for content storing and online document collaboration",
+
+  "SwitcherItemTitle1": "Integrate the whole ONLYOFFICE DocSpace, a single room, or just a simple document ...",
+  "SwitcherItemText1": " ONLYOFFICE provides <0>JavaScript SDK</0> allowing you to use all the DocSpace possibilities with api.js.",
+  "SwitcherItemLink1": "Přečtěte si dokumentaci",
+  "SwitcherItemImgUrl1": "/images/templates/docspace-developer/switcher/integrate.png",
+  "SwitcherItemImgUrl2x1": "/images/templates/docspace-developer/switcher/integrate@2x.png",
+
+  "SwitcherItemTitle2": "... under your brand ...",
+  "SwitcherItemText2": "Make use of standard branding options or opt for White Label to customise the interface and match the branding of your website or app. Adjust colours, change titles, logos and links, hide the About section, and much more.",
+  "SwitcherItemLink2": "Contact our sales team for details.",
+  "SwitcherItemImgUrl2": "/images/templates/docspace-developer/switcher/branding.png",
+  "SwitcherItemImgUrl2x2": "/images/templates/docspace-developer/switcher/branding@2x.png",
+
+  "SwitcherItemTitle3": "... on your own servers ...",
+  "SwitcherItemText3": "ONLYOFFICE DocSpace Developer can be deployed on-premises as a private or hybrid cloud solution, so your user data always stay within your infrastructure: no hand-off to public clouds.",
+  "SwitcherItemLink3": "Try it now",
+  "SwitcherItemImgUrl3": "/images/templates/docspace-developer/switcher/server.png",
+  "SwitcherItemImgUrl2x3": "/images/templates/docspace-developer/switcher/server@2x.png",
+
+  "SwitcherItemTitle4": "... in minutes.",
+  "SwitcherItemText4": "ONLYOFFICE provides simple integration tools that require minimal time and effort for developers to set up a full functional DocSpace integration.",
+  "SwitcherItemLink4": "",
+  "SwitcherItemImgUrl4": "/images/templates/docspace-developer/switcher/in-minutes.png",
+  "SwitcherItemImgUrl2x4": "/images/templates/docspace-developer/switcher/in-minutes@2x.png",
+
+  "CardsHeading": "ONLYOFFICE DocSpace is built to seamlessly fit your app or website",
+
+  "CardsItemTitle1": "No matter what language your app is written in",
+  "CardsItemText1": "ONLYOFFICE DocSpace can be integrated into any app or website regardless of its technology stack, programming language, and framework.",
+
+  "CardsItemTitle2": "No matter what deployment model you use",
+  "CardsItemText2": "You can integrate ONLYOFFICE DocSpace into your SaaS or on-premise solution.",
+
+  "CardsItemTitle3": "For multiple uses",
+  "CardsItemText3": "Including: CMS, CRM, eLearning platforms, mail, messaging apps and project management software, and more.",
+
+  "WorthHeading": "ONLYOFFICE DocSpace is highly appriciated both",
+
+  "WorthByUsersTitle": "By users",
+  "WorthByUsersList": [
+    "Customizable rooms for different purposes: collaboration, meeting, form filling, due diligence, public",
+    "Flexible access permissions",
+    "Integrated online document editors for docs, sheets, slides, forms, PDFs",
+    "Enhanced security features",
+    "Flawless user experience on different devices"
+  ],
+
+  "WorthByDevelopersTitle": "By developers",
+  "WorthByDevelopersList": [
+    "Embedding presets and custom mode",
+    "API and webhook support",
+    "Plugin SDK to extend functionality",
+    "High availability and performance",
+    "Flexible, scalable pricing",
+    "Ready to use integration examples",
+    "Support for every step from the ONLYOFFICE experts"
+  ],
+
+  "WorthButtonTry": "Try it now",
+  "WorthButtonRead": "Přečtěte si dokumentaci"
+}
