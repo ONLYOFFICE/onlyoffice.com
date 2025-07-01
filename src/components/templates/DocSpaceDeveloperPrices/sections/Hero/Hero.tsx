@@ -100,7 +100,8 @@ const Hero = ({ locale }: ILocale) => {
         referer: document.referrer,
         fullName: quoteFormData.fullName,
         email: quoteFormData.email,
-        phone: quoteFormData.phone,
+        phone:
+          locale === "zh" && !quoteFormData.phone ? "+86" : quoteFormData.phone,
         companyName: quoteFormData.companyName,
         development: formData.development,
         devServersNumber: formData.devServersNumber,
@@ -120,6 +121,7 @@ const Hero = ({ locale }: ILocale) => {
         region,
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
+        type: "docspacedeveloperrequest",
       }),
     }).then((res) => res.json());
   };

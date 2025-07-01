@@ -64,7 +64,7 @@ const QuoteModal = <T,>({
     setIsFormValid(
       isFullNameValid &&
         isEmailValid &&
-        isPhoneValid &&
+        (locale === "zh" ? true : isPhoneValid) &&
         isCompanyValid &&
         !!quoteFormData.hCaptcha,
     );
@@ -78,7 +78,7 @@ const QuoteModal = <T,>({
     setIsFormValid(
       isFullNameValid &&
         isEmailValid &&
-        isPhoneValid &&
+        (locale === "zh" ? true : isPhoneValid) &&
         isCompanyValid &&
         !!token,
     );
@@ -250,8 +250,22 @@ const QuoteModal = <T,>({
           {locale === "zh" ? (
             <Input
               onChange={(e) => handleInputChange("phone", e.target.value)}
+              onBlur={() => {
+                setIsEmpty((prev) => ({
+                  ...prev,
+                  phone: false,
+                }));
+                checkFormValid();
+              }}
               value={quoteFormData.phone}
               label="微信号"
+              status={
+                isEmpty.phone
+                  ? "error"
+                  : quoteFormData.phone
+                    ? "success"
+                    : "default"
+              }
             />
           ) : (
             <PhoneInput

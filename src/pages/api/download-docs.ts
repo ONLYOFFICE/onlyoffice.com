@@ -120,17 +120,17 @@ export default async function handler(
         };
 
         await fetch(
-          type === "docsEnterpriseDownloadRequest"
+          type === "docsenterprisedownloadrequest"
             ? process.env.WEB_PAYMENT_DE_TRIAL_URL!
-            : type === "docsDeveloperDownloadRequest"
+            : type === "docsdeveloperdownloadrequest"
               ? process.env.WEB_PAYMENT_DD_TRIAL_URL!
               : "",
           {
             method: "POST",
             body:
-              type === "docsEnterpriseDownloadRequest"
+              type === "docsenterprisedownloadrequest"
                 ? new URLSearchParams(Object.entries(webPaymentEnterpiseData))
-                : type === "docsDeveloperDownloadRequest"
+                : type === "docsdeveloperdownloadrequest"
                   ? new URLSearchParams(Object.entries(webPaymentDeveloperData))
                   : "",
           },
@@ -227,7 +227,7 @@ export default async function handler(
               visible_to: "3",
               "08f603bf9e0032d5a9f9e5cd39ca8c7a4374ac82": cookies._ga,
               was_seen: false,
-              title: `dwndocs ${type === "docsEnterpriseDownloadRequest" ? "Docs Enterprise" : type === "docsDeveloperDownloadRequest" ? "DocSpace Enterprise" : ""} - ${country} - ${email} - ${region}`,
+              title: `dwndocs ${type === "docsenterprisedownloadrequest" ? "Docs Enterprise" : type === "docsdeveloperdownloadrequest" ? "DocSpace Enterprise" : ""} - ${country} - ${email} - ${region}`,
               "6654a8f8686bdba60bbcdf6e69313c150f40b088":
                 JSON.stringify(pipedriveData),
             }),
@@ -264,9 +264,9 @@ export default async function handler(
       from,
       to: [process.env.NEXT_PUBLIC_SALES_EMAIL!],
       subject: `${errorMessages.length ? "[Error] " : ""}${companyName} - ${
-        type === "docsEnterpriseDownloadRequest"
+        type === "docsenterprisedownloadrequest"
           ? "Docs Enterprise Download Request"
-          : type === "docsDeveloperDownloadRequest"
+          : type === "docsdeveloperdownloadrequest"
             ? "Docs Developer Download Request"
             : ""
       } ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
@@ -290,7 +290,7 @@ export default async function handler(
               platform: "",
               errorText: errorMessages.join("<br/><br/>"),
             })
-          : type === "docsDeveloperDownloadRequest"
+          : type === "docsdeveloperdownloadrequest"
             ? DownloadDocsDeveloperEmail({
                 firstName: fullName,
                 lastName: "",

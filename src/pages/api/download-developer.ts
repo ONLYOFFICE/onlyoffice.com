@@ -76,9 +76,9 @@ export default async function handler(
         };
 
         await fetch(
-          type === "docsDeveloperDownloadRequest"
+          type === "docsdeveloperdownloadrequest"
             ? process.env.WEB_PAYMENT_DD_TRIAL_URL!
-            : type === "docSpaceDeveloperDownloadRequest"
+            : type === "docspacedeveloperdownloadrequest"
               ? process.env.WEB_PAYMENT_DSPD_TRIAL_URL!
               : "",
           {
@@ -178,7 +178,7 @@ export default async function handler(
               visible_to: "3",
               "08f603bf9e0032d5a9f9e5cd39ca8c7a4374ac82": cookies._ga,
               was_seen: false,
-              title: `dwndev ${type === "docsDeveloperDownloadRequest" ? "Docs Developer" : type === "docSpaceDeveloperDownloadRequest" ? "DocSpace Developer" : ""} - ${country} - ${email} - ${region}`,
+              title: `dwndev ${type === "docsdeveloperdownloadrequest" ? "Docs Developer" : type === "docspacedeveloperdownloadrequest" ? "DocSpace Developer" : ""} - ${country} - ${email} - ${region}`,
               "6654a8f8686bdba60bbcdf6e69313c150f40b088":
                 JSON.stringify(pipedriveData),
             }),
@@ -215,14 +215,14 @@ export default async function handler(
       from,
       to: [process.env.NEXT_PUBLIC_SALES_EMAIL!],
       subject: `${errorMessages.length ? "[Error] " : ""}${companyName} - ${
-        type === "docsDeveloperDownloadRequest"
+        type === "docsdeveloperdownloadrequest"
           ? "Docs Developer Download Request"
-          : type === "docSpaceDeveloperDownloadRequest"
+          : type === "docspacedeveloperdownloadrequest"
             ? "DocSpace Developer Download Request"
             : ""
       } ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
       html:
-        type === "docsDeveloperDownloadRequest"
+        type === "docsdeveloperdownloadrequest"
           ? DownloadDocsDeveloperEmail({
               firstName: fullName,
               lastName: "",
@@ -238,7 +238,7 @@ export default async function handler(
               language: locale,
               errorText: errorMessages.join("<br/><br/>"),
             })
-          : type === "docSpaceDeveloperDownloadRequest"
+          : type === "docspacedeveloperdownloadrequest"
             ? DownloadDocSpaceDeveloperEmail({
                 fullName: fullName,
                 email,

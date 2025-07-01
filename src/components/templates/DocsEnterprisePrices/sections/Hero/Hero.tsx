@@ -138,6 +138,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
         region,
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
+        type: "docsenterpriserequest",
       }),
     }).then((res) => res.json());
   };

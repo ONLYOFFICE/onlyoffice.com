@@ -172,7 +172,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "docsDeveloperDownloadRequest",
+                              type: "docsdeveloperdownloadrequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,
@@ -252,7 +252,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "docSpaceDeveloperDownloadRequest",
+                              type: "docspacedeveloperdownloadrequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,

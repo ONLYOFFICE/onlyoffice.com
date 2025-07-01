@@ -70,6 +70,7 @@ export default async function handler(
     region,
     affiliateId,
     affiliateToken,
+    type,
   } = req.body;
 
   try {
@@ -148,7 +149,7 @@ export default async function handler(
           multiServerDeployment,
           trainingCourses,
           from,
-          type: "docspaceenterpriserequest",
+          type,
           langOfPage: locale,
           ...(cookies.utmSource && { utmSource: cookies.utm_source }),
           ...(cookies.utmCampaign && { utmCampaig: cookies.utm_campaign }),

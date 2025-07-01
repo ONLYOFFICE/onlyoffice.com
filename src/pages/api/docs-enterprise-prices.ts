@@ -80,6 +80,7 @@ export default async function handler(
     region,
     affiliateId,
     affiliateToken,
+    type,
   } = req.body;
 
   try {
@@ -164,7 +165,7 @@ export default async function handler(
           disasterRecovery,
           multiTenancy,
           from,
-          type: "docsenterpriserequest",
+          type,
           langOfPage: locale,
           ...(cookies.utmSource && { utmSource: cookies.utm_source }),
           ...(cookies.utmCampaign && {

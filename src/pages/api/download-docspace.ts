@@ -3,7 +3,7 @@ import { parse } from "cookie";
 import { getDisplayNameWithoutParentheses } from "@src/utils/getDisplayNameWithoutParentheses";
 import { addLandingRequest } from "@src/lib/requests/addLandingRequest";
 import { emailTransporter } from "@src/config/email/transporter";
-import { DownloadDocsEnterpriseEmail } from "@src/components/emails/DownloadDocsEnterpriseEmail";
+import { DownloadDocSpaceEnterpriseEmail } from "@src/components/emails/DownloadDocSpaceEnterpriseEmail";
 import { IDownloadModalData } from "@src/components/widgets/download/DownloadModal";
 
 interface IWebPaymentData {
@@ -206,22 +206,15 @@ export default async function handler(
     await transporter.sendMail({
       from,
       to: [process.env.NEXT_PUBLIC_SALES_EMAIL!],
-      subject: `${errorMessages.length ? "[Error] " : ""}${companyName} - Docs Enterprise Download Request ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
-      html: DownloadDocsEnterpriseEmail({
-        firstName: fullName,
-        lastName: "",
+      subject: `${errorMessages.length ? "[Error] " : ""}${companyName} - DocSpace Enterprise Download Request ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
+      html: DownloadDocSpaceEnterpriseEmail({
+        fullName,
         email,
         phone,
         companyName,
         website,
         comment,
         buttonId,
-        position: "",
-        operatingSystem: "",
-        communicationLanguage: "",
-        companySize: "",
-        firstHeard: "",
-        platform: "",
         language: locale,
         errorText: errorMessages.join("<br/><br/>"),
       }),

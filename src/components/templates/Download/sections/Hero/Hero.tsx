@@ -272,7 +272,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "docsDeveloperDownloadRequest",
+                              type: "docspaceenterprisedownloadrequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,

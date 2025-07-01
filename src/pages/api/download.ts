@@ -78,7 +78,7 @@ export default async function handler(
         await fetch(
           type === "docsenterprisedownloadrequest"
             ? process.env.WEB_PAYMENT_DE_TRIAL_URL!
-            : type === "docsDeveloperDownloadRequest"
+            : type === "docspaceenterprisedownloadrequest"
               ? process.env.WEB_PAYMENT_DSE_TRIAL_URL!
               : "",
           {
@@ -178,7 +178,7 @@ export default async function handler(
               visible_to: "3",
               "08f603bf9e0032d5a9f9e5cd39ca8c7a4374ac82": cookies._ga,
               was_seen: false,
-              title: `dwn_ ${type === "docsenterprisedownloadrequest" ? "Docs Enterprise" : type === "docsDeveloperDownloadRequest" ? "DocSpace Enterprise" : ""} - ${country} - ${email} - ${region}`,
+              title: `dwn_ ${type === "docsenterprisedownloadrequest" ? "Docs Enterprise" : type === "docspaceenterprisedownloadrequest" ? "DocSpace Enterprise" : ""} - ${country} - ${email} - ${region}`,
               "6654a8f8686bdba60bbcdf6e69313c150f40b088":
                 JSON.stringify(pipedriveData),
             }),
@@ -217,7 +217,7 @@ export default async function handler(
       subject: `${errorMessages.length ? "[Error] " : ""}${companyName} - ${
         type === "docsenterprisedownloadrequest"
           ? "Docs Enterprise Download Request"
-          : type === "docsDeveloperDownloadRequest"
+          : type === "docspaceenterprisedownloadrequest"
             ? "DocSpace Enterprise Download Request"
             : ""
       } ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
@@ -241,7 +241,7 @@ export default async function handler(
               platform: "",
               errorText: errorMessages.join("<br/><br/>"),
             })
-          : type === "docsDeveloperDownloadRequest"
+          : type === "docspaceenterprisedownloadrequest"
             ? DownloadDocSpaceEnterpriseEmail({
                 fullName,
                 email,

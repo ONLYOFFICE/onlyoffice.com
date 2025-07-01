@@ -273,6 +273,9 @@ const DownloadModal = ({
               }}
               value={formData.phone}
               label="微信号"
+              status={
+                isEmpty.phone ? "error" : formData.phone ? "success" : "default"
+              }
             />
           ) : (
             <PhoneInput

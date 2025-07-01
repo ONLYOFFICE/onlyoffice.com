@@ -123,7 +123,7 @@ const Hero = ({ locale }: ILocale) => {
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "workspaceEnterpriseDownloadRequest",
+                              type: "workspaceenterprisedownloadrequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,

@@ -53,7 +53,7 @@ const Hero = ({
     download: false,
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const isDocsEnterprise = formData.type === "docsEnterpriseDownloadRequest";
+  const isDocsEnterprise = formData.type === "docsenterprisedownloadrequest";
   const isDocsDeveloper = formData.type === "docsDeveloperDownloadRequest";
 
   const onSubmitRequest = async ({
@@ -140,7 +140,7 @@ const Hero = ({
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "docsEnterpriseDownloadRequest",
+                              type: "docsenterprisedownloadrequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,
@@ -216,7 +216,7 @@ const Hero = ({
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "docsDeveloperDownloadRequest",
+                              type: "docsdeveloperdownloadrequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,

@@ -116,7 +116,7 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "docSpaceEnterpriseDownloadRequest",
+                              type: "docspaceenterprisedownloadrequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,

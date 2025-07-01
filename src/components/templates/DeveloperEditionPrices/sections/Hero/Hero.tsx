@@ -170,9 +170,9 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
         from,
         country,
         region,
-        type: "docsdeveloperrequest",
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
+        type: "docsdeveloperrequest",
       }),
     }).then((res) => res.json());
   };

@@ -100,7 +100,8 @@ const EnterpriseModal = ({
         referer: document.referrer,
         fullName: quoteFormData.fullName,
         email: quoteFormData.email,
-        phone: quoteFormData.phone,
+        phone:
+          locale === "zh" && !quoteFormData.phone ? "+86" : quoteFormData.phone,
         companyName: quoteFormData.companyName,
         usersNumber: formData.usersNumber,
         licenseDuration: formData.licenseDuration,
@@ -113,6 +114,7 @@ const EnterpriseModal = ({
         region,
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
+        type: "docspaceenterpriserequest",
       }),
     }).then((res) => res.json());
   };
