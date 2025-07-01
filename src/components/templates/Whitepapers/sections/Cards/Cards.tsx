@@ -1,6 +1,9 @@
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { CardWhitepapers } from "./sub-components/CardWhitepapers";
+import { cardWhitepapersItems } from "./data/cardWhitepapersItems";
+// import { cardDatasheetsItems } from "./data/cardDatasheetsItems";
 
 import {
   StyledCardsFiltersWrapper,
@@ -9,7 +12,8 @@ import {
   StyledCardsSortModules,
   StyledCardsSortDate,
   StyledCardsContent,
-  StyledCardsHeading
+  StyledCardsHeading,
+  StyledCardsList
 } from "./Cards.styled";
 
 const Cards = () => {
@@ -41,6 +45,17 @@ const Cards = () => {
             level={2}
             size={4}
           />
+          <StyledCardsList>
+            {cardWhitepapersItems.map((item) => (
+              <CardWhitepapers
+                key={item.id}
+                head={item.head}
+                title={item.title}
+                date={item.date}
+                description={item.description}
+              />
+            ))}
+          </StyledCardsList>
         </StyledCardsContent>
         <StyledCardsContent>
           <StyledCardsHeading

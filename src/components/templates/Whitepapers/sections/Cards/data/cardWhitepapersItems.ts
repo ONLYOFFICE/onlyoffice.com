@@ -1,4 +1,6 @@
-const cardWhitepapersItems = [
+import { ICardWhitepapersItems } from "../../../Whitepapers.types";
+
+const cardWhitepapersItems: ICardWhitepapersItems[] = [
    {
     id: 8,
     head: "ONLYOFFICE Docs 7.2.2. stress test report",

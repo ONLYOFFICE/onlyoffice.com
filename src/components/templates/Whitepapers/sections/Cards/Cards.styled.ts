@@ -21,6 +21,13 @@ const StyledCardsContent = styled.div`
 
 const StyledCardsHeading = styled(Heading)``;
 
+const StyledCardsList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+`;
+
 export {
   StyledCardsFiltersWrapper,
   StyledCardsFilterSelect,
@@ -28,5 +35,6 @@ export {
   StyledCardsSortModules,
   StyledCardsSortDate,
   StyledCardsContent,
-  StyledCardsHeading
+  StyledCardsHeading,
+  StyledCardsList
 }
