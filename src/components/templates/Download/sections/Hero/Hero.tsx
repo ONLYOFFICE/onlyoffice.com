@@ -11,7 +11,7 @@ import { IHero } from "./Hero.types";
 import {
   DownloadModal,
   IDownloadModalData,
-  IDownloadModalSendEmailRequest,
+  IDownloadModalOnSubmitRequest,
 } from "@src/components/widgets/download/DownloadModal";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
@@ -50,7 +50,11 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isDocsEnterprise = formData.type === "docsenterprisedownloadrequest";
 
-  const onSubmitRequest = async ({ from }: IDownloadModalSendEmailRequest) => {
+  const onSubmitRequest = async ({
+    from,
+    country,
+    region,
+  }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -66,6 +70,8 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
         comment: formData.comment,
         buttonId: formData.buttonId,
         from,
+        country,
+        region,
       }),
     }).then((res) => res.json());
   };

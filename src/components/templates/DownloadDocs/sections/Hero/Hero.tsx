@@ -14,7 +14,7 @@ import { HeroTabs } from "@src/components/modules/download/HeroTabs";
 import {
   DownloadModal,
   IDownloadModalData,
-  IDownloadModalSendEmailRequest,
+  IDownloadModalOnSubmitRequest,
 } from "@src/components/widgets/download/DownloadModal";
 import {
   DownloadBlock,
@@ -56,7 +56,11 @@ const Hero = ({
   const isDocsEnterprise = formData.type === "docsEnterpriseDownloadRequest";
   const isDocsDeveloper = formData.type === "docsDeveloperDownloadRequest";
 
-  const onSubmitRequest = async ({ from }: IDownloadModalSendEmailRequest) => {
+  const onSubmitRequest = async ({
+    from,
+    country,
+    region,
+  }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-docs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -72,6 +76,8 @@ const Hero = ({
         comment: formData.comment,
         buttonId: formData.buttonId,
         from,
+        country,
+        region,
       }),
     }).then((res) => res.json());
   };

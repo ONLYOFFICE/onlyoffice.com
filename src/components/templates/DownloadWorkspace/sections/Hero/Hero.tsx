@@ -13,7 +13,7 @@ import { HeroTabs } from "@src/components/modules/download/HeroTabs";
 import {
   DownloadModal,
   IDownloadModalData,
-  IDownloadModalSendEmailRequest,
+  IDownloadModalOnSubmitRequest,
 } from "@src/components/widgets/download/DownloadModal";
 import { DownloadBanner } from "@src/components/widgets/download/DownloadBanner";
 import {
@@ -47,7 +47,11 @@ const Hero = ({ locale }: ILocale) => {
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const onSubmitRequest = async ({ from }: IDownloadModalSendEmailRequest) => {
+  const onSubmitRequest = async ({
+    from,
+    country,
+    region,
+  }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-workspace", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -63,6 +67,8 @@ const Hero = ({ locale }: ILocale) => {
         comment: formData.comment,
         buttonId: formData.buttonId,
         from,
+        country,
+        region,
       }),
     }).then((res) => res.json());
   };

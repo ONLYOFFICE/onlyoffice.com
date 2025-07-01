@@ -27,14 +27,11 @@ import { CounterSelectorWrapper } from "@src/components/widgets/pricing/CounterS
 import { List } from "@src/components/widgets/pricing/List";
 import {
   QuoteModal,
-  IQuoteModalApiRequest,
-  IQuoteModalSendEmailRequest,
-  IQuoteModalPipedriveRequest,
+  IQuoteModalOnSubmitRequest,
   IQuoteModalFormData,
 } from "@src/components/widgets/pricing/QuoteModal";
 import { SelectorsWrapper } from "@src/components/widgets/pricing/SelectorsWrapper";
 import { SelectorItemWrapper } from "@src/components/widgets/pricing/SelectorItemWrapper";
-import { DocSpaceDeveloperPricesEmail } from "@src/components/emails/DocSpaceDeveloperPricesEmail";
 
 const Hero = ({ locale }: ILocale) => {
   const { t } = useTranslation("docspace-developer-prices");
@@ -90,23 +87,23 @@ const Hero = ({ locale }: ILocale) => {
       },
     });
 
-  const apiRequest = async ({
+  const onSubmitRequest = async ({
     from,
-    utmSource,
-    utmCampaign,
-    utmContent,
-    utmTerm,
-  }: IQuoteModalApiRequest) => {
-    const response = await fetch("/api/docspace-developer-prices", {
+    country,
+    region,
+  }: IQuoteModalOnSubmitRequest) => {
+    return fetch("/api/docspace-developer-prices", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
+        locale,
+        referer: document.referrer,
         fullName: quoteFormData.fullName,
         email: quoteFormData.email,
         phone: quoteFormData.phone,
         companyName: quoteFormData.companyName,
         development: formData.development,
-        devServerNumber: formData.devServersNumber,
+        devServersNumber: formData.devServersNumber,
         production: formData.production,
         prodServerNumber: formData.prodServerNumber,
         connectionsNumber: formData.connectionsNumber,
@@ -119,105 +116,12 @@ const Hero = ({ locale }: ILocale) => {
         desktopApps: formData.desktopApps,
         trainingCourses: formData.trainingCourses,
         from,
-        utmSource,
-        utmCampaign,
-        utmContent,
-        utmTerm,
+        country,
+        region,
+        affiliateId: affiliate.id || "",
+        affiliateToken: affiliate.token || "",
       }),
-    });
-
-    return response.json();
-  };
-
-  const sendEmailRequest = async ({
-    from,
-    errorFlag,
-    utmCampaignFlag,
-    errorText,
-    isSelected,
-  }: IQuoteModalSendEmailRequest) => {
-    const response = await fetch("/api/send-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        from,
-        to: [process.env.NEXT_PUBLIC_SALES_EMAIL],
-        subject: `${errorFlag} - DocSpace Developer prices Request ${utmCampaignFlag}[from: ${from}]`,
-        html: DocSpaceDeveloperPricesEmail({
-          fullName: quoteFormData.fullName,
-          email: quoteFormData.email,
-          phone: quoteFormData.phone,
-          companyName: quoteFormData.companyName,
-          development: isSelected(formData.development),
-          devServersNumber: formData.devServersNumber,
-          production: isSelected(formData.production),
-          prodServerNumber: formData.prodServerNumber,
-          connectionsNumber: formData.connectionsNumber,
-          supportLevel: formData.supportLevel,
-          branding: formData.branding,
-          multiTenancy: isSelected(formData.multiTenancy),
-          disasterRecovery: isSelected(formData.disasterRecovery),
-          multiServerDeployment: isSelected(formData.multiServerDeployment),
-          nativeMobileApps: isSelected(formData.nativeMobileApps),
-          desktopApps: isSelected(formData.desktopApps),
-          trainingCourses: isSelected(formData.trainingCourses),
-          language: locale,
-          affiliateId: affiliate.id || "",
-          affiliateToken: affiliate.token || "",
-          errorText,
-        }),
-      }),
-    });
-
-    return response.json();
-  };
-
-  const pipedriveRequest = async ({
-    _ga,
-    utmSource,
-    utmCampaign,
-    title,
-    region,
-    from,
-  }: IQuoteModalPipedriveRequest) => {
-    const response = await fetch("/api/pipedrive", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        owner_id: 12769244,
-        person_id: 131,
-        visible_to: "3",
-        "08f603bf9e0032d5a9f9e5cd39ca8c7a4374ac82": _ga,
-        was_seen: false,
-        title: `devep Docs Developer - ${title} - ${quoteFormData.email} - ${region}`,
-        "6654a8f8686bdba60bbcdf6e69313c150f40b088": JSON.stringify({
-          fullName: quoteFormData.fullName,
-          email: quoteFormData.email,
-          phone: quoteFormData.phone,
-          companyName: quoteFormData.companyName,
-          development: formData.development,
-          devServerNumber: formData.devServersNumber,
-          production: formData.production,
-          prodServerNumber: formData.prodServerNumber,
-          connectionsNumber: formData.connectionsNumber,
-          supportLevel: formData.supportLevel,
-          branding: formData.branding,
-          multiTenancy: formData.multiTenancy,
-          disasterRecovery: formData.disasterRecovery,
-          multiServerDeployment: formData.multiServerDeployment,
-          nativeMobileApps: formData.nativeMobileApps,
-          desktopApps: formData.desktopApps,
-          trainingCourses: formData.trainingCourses,
-          from,
-          type: "docspacedeveloperrequest",
-          langOfPage: locale,
-          ...(utmSource && { utmSource }),
-          ...(utmCampaign && { utmCampaign }),
-        }),
-      }),
-    });
-
-    return response.json();
+    }).then((res) => res.json());
   };
 
   return (
@@ -586,9 +490,7 @@ const Hero = ({ locale }: ILocale) => {
           quoteFormData={quoteFormData}
           setQuoteFormData={setQuoteFormData}
           buttonLabel={t("GetAQuote")}
-          apiRequest={apiRequest}
-          sendEmailRequest={sendEmailRequest}
-          pipedriveRequest={pipedriveRequest}
+          onSubmitRequest={onSubmitRequest}
           onClose={() => setIsModalOpen(false)}
         />
       </Container>
