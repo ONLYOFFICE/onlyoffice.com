@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
@@ -9,7 +10,7 @@ import {
   StyledJoinSection
 } from "./Join.styled";
 
-const Join = () => {
+const JoinComponent = () => {
   const { t } = useTranslation("whitepapers");
 
   return (
@@ -31,8 +32,6 @@ const Join = () => {
           />
         </StyledJoinHeading>
         <StyledJoinButton
-          variant="quaternary"
-          borderRadius="3px"
           as={"a"}
           href="/registration?from=whitepapers"
         >
@@ -42,5 +41,7 @@ const Join = () => {
     </StyledJoinSection>
   );
 };
+
+const Join = memo(JoinComponent);
 
 export { Join };
