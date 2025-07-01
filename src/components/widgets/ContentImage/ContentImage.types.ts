@@ -35,4 +35,8 @@ export interface IContentImage {
     /** Default: "top". */
     mobile?: "top" | "bottom";
   };
+  /** The alignment of the text content. Default: "" */
+  justifyContent?: "space-between" | "space-around" | "space-evenly" | "center" | "flex-start" | "flex-end" | "";
+  /** The alignment of the text content. Default: "" */
+  alignItems?: string | "flex-start" | "flex-end" | "center" | "";
 }
