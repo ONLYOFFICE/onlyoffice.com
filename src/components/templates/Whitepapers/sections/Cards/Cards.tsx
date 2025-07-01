@@ -3,7 +3,7 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { CardWhitepapers } from "./sub-components/CardWhitepapers";
 import { cardWhitepapersItems } from "./data/cardWhitepapersItems";
-// import { cardDatasheetsItems } from "./data/cardDatasheetsItems";
+import { cardDatasheetsItems } from "./data/cardDatasheetsItems";
 
 import {
   StyledCardsFiltersWrapper,
@@ -15,6 +15,7 @@ import {
   StyledCardsHeading,
   StyledCardsList
 } from "./Cards.styled";
+import { CardDatasheets } from "./sub-components/CardDatasheets";
 
 const Cards = () => {
   const { t } = useTranslation("whitepapers");
@@ -64,6 +65,17 @@ const Cards = () => {
             level={2}
             size={4}
           />
+          <StyledCardsList>
+            {cardDatasheetsItems.map((item) => (
+              <CardDatasheets
+                key={item.id}
+                title={item.title}
+                product={item.product}
+                image_url={item.image_url}
+                date={item.date}
+              />
+            ))}
+          </StyledCardsList>
         </StyledCardsContent>
       </Container>
     </Section>

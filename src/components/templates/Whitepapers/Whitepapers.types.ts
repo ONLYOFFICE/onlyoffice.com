@@ -9,7 +9,20 @@ interface ICardWhitepapersItems extends ICardWhitepapersItemsProps {
   id: number;
 }
 
+interface ICardDatasheetsItemsProps {
+  title: string;
+  date: string;
+  product: string;
+  image_url: string;
+}
+
+interface ICardDatasheetsItems extends ICardDatasheetsItemsProps {
+  id: number;
+}
+
 export type {
   ICardWhitepapersItems,
-  ICardWhitepapersItemsProps
+  ICardWhitepapersItemsProps,
+  ICardDatasheetsItems,
+  ICardDatasheetsItemsProps
 };

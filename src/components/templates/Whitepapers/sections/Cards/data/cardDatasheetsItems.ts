@@ -1,4 +1,6 @@
-const cardDatasheetsItems = [
+import { ICardDatasheetsItems } from "../../../Whitepapers.types";
+
+const cardDatasheetsItems: ICardDatasheetsItems[] = [
   {
     id: 14,
     title: "Secure cloud space for your team and beyond",

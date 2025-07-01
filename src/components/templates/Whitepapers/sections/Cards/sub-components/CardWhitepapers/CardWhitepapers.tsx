@@ -52,7 +52,7 @@ const CardWhitepapers = ({ head, title, date, description }: ICardWhitepapersIte
       </StyledCardWhitepapersMain>
       <StyledCardWhitepapersFooter>
         <StyledCardWhitepapersButton
-          label={t("Download")}
+          label={t("CardsButtonDownload")}
           variant='quinary'
           borderRadius='3px'
         />
