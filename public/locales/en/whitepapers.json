@@ -8,6 +8,22 @@
   "HeroHeading": "White papers and datasheets",
   "HeroText": "Get deeper insights into collaborative technologies and ONLYOFFICE solutions from technical and industry-specific perspectives and learn useful facts about our products for a variety of applications.",
 
+  "CardsFiltersAll": "All",
+  "CardsSortModules:": "Modules:",
+  "CardsSortBy": "Sort by:",
+  "CardsSortNewestOldest": "Newest - Oldest",
+  "CardsSortOldestNewest": "Oldest - Newest",
+
+  "CardsWhitepaper": "White Paper",
+  "CardsDatasheet": "Datasheet",
+
+  "CardsDatasheetProductOd": "ONLYOFFICE Docs",
+  "CardsDatasheetProductOw": "ONLYOFFICE Workspace",
+  "CardsDatasheetProductOds": "ONLYOFFICE DocSpace",
+
+  "CardsHeadingWhitepapers": "White papers",
+  "CardsHeadingDatasheets": "Datasheets",
+
   "JoinHeading": "Join over <0>15 000 000</0> ONLYOFFICE users worldwide",
   "JoinButton": "Use in the cloud"
 }

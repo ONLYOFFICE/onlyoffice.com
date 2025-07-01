@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
@@ -21,6 +22,11 @@ const StyledJoinIcon = styled.div`
 const StyledJoinHeading = styled(Heading)`
   margin: 48px auto;
   max-width: 458px;
+
+  @media ${device.mobile} {
+    font-size: 16px;
+    margin: 32px auto;
+  }
 `;
 
 const StyledJoinButton = styled(Button)`
@@ -39,6 +45,12 @@ const StyledJoinButton = styled(Button)`
   &:hover {
     background-color: #fff;
     color: #000;
+  }
+
+  @media ${device.mobile} {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
   }
 `;
 

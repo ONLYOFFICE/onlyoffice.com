@@ -1,0 +1,102 @@
+const cardDatasheetsItems = [
+  {
+    id: 14,
+    title: "Secure cloud space for your team and beyond",
+    date: "2020-10-20T14:00Z",
+    product: "ONLYOFFICE DocSpace",
+    image_url: "/images/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
+  },
+  {
+    id: 13,
+    title: "Powerful and Secure Document Processing for Banking",
+    date: "2020-10-19T14:00Z",
+    product: "ONLYOFFICE Docs",
+    image_url: "/images/whitepapers/pdf/onlyoffice_for_banking.pdf",
+  },
+  {
+    id: 12,
+    title: "ONLYOFFICE Workspace for health institutions",
+    date: "2020-02-05T14:00Z",
+    product: "ONLYOFFICE Workspace",
+    image_url: "/images/whitepapers/pdf/onlyoffice_workspace_for_health_institutions.pdf",
+  },
+  {
+    id: 11,
+    title: "Powerful document collaboration in your cluster",
+    date: "2020-02-05T14:00Z",
+    product: "ONLYOFFICE Docs",
+    image_url: "/images/whitepapers/pdf/onlyoffice_docs_in_your_cluster.pdf",
+  },
+  {
+    id: 10,
+    title: "Document collaboration in education",
+    date: "2020-02-05T14:00Z",
+    product: "ONLYOFFICE Docs",
+    image_url: "/images/whitepapers/pdf/onlyoffice_docs_datasheet_education.pdf",
+  },
+  {
+    id:  9,
+    title: "ONLYOFFICE for ownCloud",
+    date: "2020-02-05T14:00Z",
+    product: "ONLYOFFICE Docs",
+    image_url: "/images/whitepapers/pdf/onlyoffice_docs_for_owncloud.pdf",
+  },
+  {
+    id:  8,
+    title: "ONLYOFFICE for Nextcloud",
+    date: "2020-02-05T14:00Z",
+    product: "ONLYOFFICE Docs",
+    image_url: "/images/whitepapers/pdf/onlyoffice_docs_for_nextcloud.pdf",
+  },
+  {
+    id:  7,
+    title: "ONLYOFFICE Docs",
+    date: "2020-02-04T14:00Z",
+    product: "ONLYOFFICE Docs",
+    image_url: "/images/whitepapers/pdf/onlyoffice_docs.pdf",
+  },
+  {
+    id:  6,
+    title:"ONLYOFFICE for Non-profit Organizations",
+    date: "2020-02-03T14:00Z",
+    product: "ONLYOFFICE Docs",
+    image_url: "/images/whitepapers/pdf/onlyoffice_datasheet_for_non-profits.pdf",
+  },
+  {
+    id:  5,
+    title:"ONLYOFFICE for Pharmaceutical Companies",
+    date: "2020-02-03T14:00Z",
+    product: "ONLYOFFICE Docs",
+    image_url: "/images/whitepapers/pdf/onlyoffice_datasheet__for_pharmaceutical_industry.pdf",
+  },
+  {
+    id:  4,
+    title:"ONLYOFFICE for Medical Industry",
+    date: "2020-02-03T14:00Z",
+    product: "ONLYOFFICE Docs",
+    image_url: "/images/whitepapers/pdf/docs_datasheet_medical_3.pdf",
+  },
+  {
+    id:  3,
+    title:"ONLYOFFICE for Law Firms",
+    date: "2020-02-03T14:00Z",
+    product: "ONLYOFFICE Workspace",
+    image_url: "/images/whitepapers/pdf/onlyoffice_datasheet_for_law_firms.pdf",
+  },
+  {
+    id:  2,
+    title:"ONLYOFFICE Private Rooms",
+    date: "2020-02-03T14:00Z",
+    product: "ONLYOFFICE Docs",
+    image_url: "/images/whitepapers/pdf/onlyoffice_workspace_private_rooms.pdf",
+  },
+  {
+    id:  1,
+    title:"ONLYOFFICE Workspace",
+    date: "2020-02-03T14:00Z",
+    product: "ONLYOFFICE Workspace",
+    image_url: "/images/whitepapers/pdf/onlyoffice_workspace.pdf",
+  }
+];
+
+export { cardDatasheetsItems };
