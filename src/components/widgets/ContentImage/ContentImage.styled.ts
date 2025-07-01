@@ -20,6 +20,7 @@ const StyledContentImage = styled.div<{
 `;
 
 const StyledContentImageContent = styled.div<{
+  $marginTop?: IContentImage["marginTop"];
   $contentWidth?: IContentImage["contentWidth"];
   $position?: IContentImage["position"];
   $gap?: IContentImage["gap"];
