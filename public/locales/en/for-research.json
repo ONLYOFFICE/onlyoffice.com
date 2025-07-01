@@ -1,0 +1,43 @@
+{
+  "PageTitle": "Online office for science and research | ONLYOFFICE",
+  "PageDescription": "Create manuscripts, manage references, collaborate on docs privately with ONLYOFFICE Docs within your existing research platform or ONLYOFFICE Workspace.",
+
+  "HeroTitle": "The ONLYOFFICE for <0>science and research</0>",
+  "HeroSubitle": "A secure infrastructure for knowledge generation",
+  "HeadingUsers" : "Trusted by 15 000 000 users worldwide",
+
+  "ResearchHead1": "Connect research papers, scientists and consortium partners in customizable rooms with <0>ONLYOFFICE DocSpace</0>",
+  "ResearchFeature1" : "Create <0>collaboration rooms</0> to work on discourses, monographs, research specifications, etc. together, <0>form filling rooms</0> to collect data and responses, or <0>form filling rooms</0> with flexible settings for any other purpose. Allow others to view documents without registration in <0>Public rooms</0>.",
+  "ResearchFeature12" : "<0>Easily share the created rooms</0> with your colleagues from other institutions and organizations, consortium partners and subcontractors.",
+  "ResearchFeature13" : "<0>Protect access to the confidential research data</0> using available security settings.",
+  "ResearchImgUrl" : "/images/templates/for-research/features/research_docspace.svg",
+  "UseItForFree": "Use it for free",
+  "LearnMore": "<0>Learn more</0>",
+
+  "FeaturesIconsHeading": "<0>Create, edit, and collaborate</0> on your ideas online with ONLYOFFICE Docs",
+  "FeatureHead1": "Create manuscripts",
+  "FeatureText1" : "Use multiple styling and formatting tools, tables of symbols, objects, table of contents, bookmarks, and equations.",
+  "FeatureHead2": "Correct texts and edit images",
+  "FeatureText2" : "Check spelling mistakes, easily find synonyms and antonyms, automatically translate a chosen paragraph, and apply various effects to your images with a set of plugins.",
+  "FeatureHead3": "Manage references",
+  "FeatureText3" : "Create and manage your research project’s references list with integrated Zotero or Mendeley plugins.",
+  "FeatureHead4": "Analyze and visualize data",
+  "FeatureText4" : "Use 400+ functions and formulas including mathematical, logical, and statistical, equations, and a variety of chart types. Automate repetitive tasks with macros.",
+  "FeatureHead5": "Make research presentations",
+  "FeatureText5" : "Use a wide selection of formatting tools, style options, objects, audio, and video. Enable presenter mode to keep your speaker notes.",
+  "FeatureHead6": "Collaborate and track changes",
+  "FeatureText6" : "Share your work with co-authors, providing various access levels. Switch between real-time and paragraph-locking co-editing modes. Leave comments and chat in documents, review and easily compare two documents, track co-authors’ edits and restore any previous version.",
+
+  "Blog1ImgUrl": "/images/templates/for-research/success_stories/medical-research.png",
+  "Blog1Link": "https://www.onlyoffice.com/blog/2022/06/how-calar-alto-observatory-implements-onlyoffice/",
+  "Blog1": "Medical research at IBE: how ONLYOFFICE helps the institute",
+  "Blog2ImgUrl": "/images/templates/for-research/success_stories/space-research.png",
+  "Blog2Link": "https://www.onlyoffice.com/blog/2022/08/space-research-activities-at-the-centre-for-energy-research-supported-by-onlyoffice/",
+  "Blog2": "Space Research Activities at the Centre for Energy Research supported by ONLYOFFICE",
+  "Blog3ImgUrl": "/images/templates/for-research/success_stories/calar-alto-observatory.png",
+  "Blog3Link": "https://www.onlyoffice.com/blog/2022/06/how-calar-alto-observatory-implements-onlyoffice/",
+  "Blog3": "Calar Alto Observatory implements ONLYOFFICE for secure & location-independent collaboration",
+
+  "QuestionHead": "Need to discuss details?",
+  "QuestionSub": "Please contact our sales team at <0>sales@onlyoffice.com</0> to request a quote."
+}
