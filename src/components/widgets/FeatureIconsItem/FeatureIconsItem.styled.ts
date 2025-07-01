@@ -115,7 +115,7 @@ const StyledFeatureIconsItemText = styled.li`
   }
 `;
 
-const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean, isLink?: boolean }>`
+const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean, isLink?: boolean, isServer?: boolean }>`
   padding: ${({ isLink }) => (isLink ? "12px 0" : "12px 24px")};
   font-size: ${({ isLink }) => (isLink ? "16px" : "12px")};
   line-height: 26px;
@@ -134,14 +134,77 @@ const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean, isLink?: boolea
     width: 100%;
   }
 
-  color: ${({ isPrimary, isLink }) => (isLink ? "#ff6f3d" : (isPrimary ? "#ffffff" : "#ffffff"))};
-  background-color: ${({ isPrimary, isLink }) => (isLink ? "" : (isPrimary ? "#ff6f3d" : "#444444"))};
+  color: ${({ isPrimary, isLink, isServer }) => (isServer ? "#444444" : (isLink ? "#ff6f3d" : (isPrimary ? "#ffffff" : "#ffffff")))};
+  background-color: ${({ isPrimary, isLink, isServer }) => (isServer ? "#ffffff" : (isLink ? "" : (isPrimary ? "#ff6f3d" : "#444444")))};
+  border: ${({ isServer }) => (isServer ? "1px solid #AAAAAA" : "transparent")};
 
   &:hover {
     opacity: 0.9;
     text-decoration: none;
+
+    border: ${({ isServer }) => (isServer ? "1px solid #ff6f3d" : "transparent")};
+    color: ${({ isServer }) => (isServer ? "#ff6f3d" : "")};
   }
 `;
+
+
+const StyledQuoteText = styled.i`
+  position: relative;
+  display: block;
+  margin-bottom: 16px;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: center;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: inline-flex;
+    top: 0;
+    left: 50%;
+    width: 196px;
+    height: 160px;
+    background-image: url("/images/templates/for-small-business/features/quotes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-50%);
+    z-index: -1;
+    top: -80px;
+
+    @media ${device.mobile} {
+      width: 135px;
+      height: 110px;
+    }
+  }
+
+  @media ${device.mobile} {
+    padding-top: 55px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+`;
+
+const StyledQuote = styled.div`
+    padding-top: 80px;
+    text-align: center;
+    max-width: 768px;
+    margin: auto;
+
+    a, p, img {
+      z-index: 2;
+      position: relative;
+    }
+
+    p {
+      margin: 8px 0 16px;
+      max-width: 100%;
+    }
+
+    img {
+      margint-top: 24px;
+    }
+`
 
 export {
   StyledFeatureIconsItemContent,
@@ -150,5 +213,7 @@ export {
   StyledFeatureIconsItemLink,
   StyledFeatureItemsWrapper,
   StyledFeatureIconsButton,
-  StyledFeatureItem
+  StyledFeatureItem,
+  StyledQuoteText,
+  StyledQuote
 };

@@ -4,13 +4,17 @@ import {
   StyledFeatureIconsItemLink,
   StyledFeatureItemsWrapper,
   StyledFeatureIconsButton,
-  StyledFeatureItem
+  StyledFeatureItem,
+  StyledQuote,
+  StyledQuoteText
 } from "./FeatureIconsItem.styled";
 import { IFeatureIconsItem } from "./FeatureIconsItem.types";
 import { ContentImage } from "../ContentImage";
 import { Heading } from "@src/components/ui/Heading";
 import { Trans } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
+import { Link } from "@src/components/ui/Link";
+import { useTranslation } from "next-i18next";
 
 const FeatureIconsItem = ({
   id,
@@ -26,7 +30,10 @@ const FeatureIconsItem = ({
   connectorsHeading,
   connectorsSubheading,
   showButtonsOutside,
+  quote
 }: IFeatureIconsItem) => {
+  const { t } = useTranslation();
+
   return (
     <div>
       {connectorsHeading && (
@@ -38,9 +45,7 @@ const FeatureIconsItem = ({
         </Heading>
       )}
       {connectorsSubheading && (
-        <Text>
-            {connectorsSubheading}
-        </Text>
+        <Text>{connectorsSubheading}</Text>
       )}
       {connectorsItems?.length ? (
         <>
@@ -128,7 +133,7 @@ const FeatureIconsItem = ({
                 alignItems: "center",
               }}
             >
-              {buttons.map(({ label, href, isExternal, isPrimary, isLink }, index) =>
+              {buttons.map(({ label, href, isExternal, isPrimary, isLink, isServer }, index) =>
                 isLink ? (
                   <Text as="div" key={index}>
                     <Trans
@@ -155,6 +160,7 @@ const FeatureIconsItem = ({
                     rel={isExternal ? "noopener noreferrer" : undefined}
                     isPrimary={isPrimary}
                     isLink={isLink}
+                    isServer={isServer}
                   >
                     {label}
                   </StyledFeatureIconsButton>
@@ -164,6 +170,51 @@ const FeatureIconsItem = ({
           )}
         </StyledFeatureIconsItemContent>
       </ContentImage>
+      {quote && (
+        <StyledQuote>
+          {quote.icon && (
+            <img
+              src={quote.icon}
+              alt="Quote Icon"
+              style={{ width: "120px", height: "62px" }}
+            />
+          )}
+          <StyledQuoteText>{t(quote.text)}</StyledQuoteText>
+          {quote.link ? (
+            <Link
+              href={quote.link.href}
+              target={quote.link.isExternal ? "_blank" : undefined}
+              rel={quote.link.isExternal ? "noopener noreferrer" : undefined}
+              fontSize="16px"
+              fontWeight={600}
+              lineHeight="26px"
+              color="#666666"
+              style={{ textDecoration: "none" }}
+            >
+              {t(quote.author)}
+            </Link>
+          ) : (
+            <Text
+              fontSize="16px"
+              fontWeight={600}
+              lineHeight="26px"
+              color="#666666"
+              textAlign="center"
+            >
+              {t(quote.author)}
+            </Text>
+          )}
+
+          <Text
+            fontSize="12px"
+            lineHeight="19px"
+            color="#aaaaaa"
+            textAlign="center"
+          >
+            {t(quote.info)}
+          </Text>
+        </StyledQuote>
+      )}
     </div>
   );
 };

@@ -53,6 +53,22 @@ const Features = () => {
                       label: t(item.label),
                     }))
                   }
+                  quote={
+                    group.quote
+                      ? {
+                          icon: t(group.quote.icon ?? ""),
+                          text: t(group.quote.text ?? ""),
+                          author: t(group.quote.author ?? ""),
+                          info: t(group.quote.info ?? ""),
+                          link: group.quote.link
+                            ? {
+                                ...group.quote.link,
+                                label: t(group.quote.link.label),
+                              }
+                            : undefined,
+                        }
+                      : undefined
+                  }
                 />
               );
             })

@@ -6,6 +6,7 @@ export interface IFeatureIconsItemButton {
   isExternal?: boolean;
   isPrimary?: boolean;
   isLink?: boolean;
+  isServer?: boolean;
 }
 
 export interface IFeatureIconsItemTextItem {
@@ -15,6 +16,18 @@ export interface IFeatureIconsItemTextItem {
     label: string;
     isExternal?: boolean;
   }[];
+}
+
+export interface IFeatureIconsItemQuote {
+  icon?: string;
+  text: string;
+  author: string;
+  info: string;
+  link?: {
+    href: string;
+    label: string;
+    isExternal?: boolean;
+  };
 }
 
 export interface IFeatureIconsItem extends IContentImage {
@@ -41,4 +54,5 @@ export interface IFeatureIconsItem extends IContentImage {
 
   buttons?: IFeatureIconsItemButton[];
   showButtonsOutside?: boolean; 
+  quote?: IFeatureIconsItemQuote;
 }

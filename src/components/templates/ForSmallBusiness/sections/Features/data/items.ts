@@ -51,6 +51,7 @@ export const items = [
             isExternal: false,
             isPrimary: false,
             isLink: false,
+            isServer: true
           },
         ],
         connectorsItems: [
@@ -82,6 +83,17 @@ export const items = [
             label: "",
           },
         ],
+        quote: {
+          icon: "/images/templates/for-small-business/features/quote-icon.svg",
+          text: "Quote2",
+          author: "Quote2Author",
+          info: "Quote2Info",
+          link: {
+            href: "https://www.capterra.com/p/141243/ONLYOFFICE/reviews/1055353/",
+            label: "Quote2Link",
+            isExternal: true
+          }
+      }
       },
       {
         connectorsHeading: "SMBsHead3",
@@ -133,6 +145,7 @@ export const items = [
             isExternal: false,
             isPrimary: false,
             isLink: false,
+            isServer: true
           },
         ],
         connectorsItems: [
@@ -173,6 +186,17 @@ export const items = [
             label: "",
           },
         ],
+        quote: {
+          icon: "/images/templates/for-small-business/features/quote-icon.svg",
+          text: "Quote3",
+          author: "Quote3Author",
+          info: "Quote3Info",
+          link: {
+            href: "https://www.capterra.com/p/141243/ONLYOFFICE/reviews/1723725/",
+            label: "Quote3Link",
+            isExternal: true
+          }
+        }
       },
       {
         connectorsHeading: "SMBsHead4",
@@ -305,6 +329,17 @@ export const items = [
             label: "",
           },
         ],
+        quote: {
+          icon: "/images/templates/for-small-business/features/quote-icon.svg",
+          text: "Quote5",
+          author: "Quote5Author",
+          info: "Quote5Info",
+          link: {
+            href: "https://www.capterra.com/p/141243/ONLYOFFICE/reviews/1081997/",
+            label: "Quote5Link",
+            isExternal: true
+          }
+        }
       },
     ],
 },
