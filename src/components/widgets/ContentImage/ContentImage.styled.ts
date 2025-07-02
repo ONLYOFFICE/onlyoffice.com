@@ -7,6 +7,8 @@ const StyledContentImage = styled.div<{
   $position: IContentImage["position"];
   $justifyContent?: string;
   $alignItems?: string;
+  $rowGap?: IContentImage["rowGap"];
+  $marginTop?: IContentImage["marginTop"];
 }>`
   display: flex;
   align-items: ${(props) => props.$alignItems ?? 'center'};
@@ -16,10 +18,12 @@ const StyledContentImage = styled.div<{
     flex-direction: ${(props) =>
       props.$position?.mobile === "bottom" ? "column-reverse" : "column"};
     align-items: initial;
+    row-gap: ${(props) => props.$rowGap ?? 0}px;
   }
 `;
 
 const StyledContentImageContent = styled.div<{
+  $marginTop?: IContentImage["marginTop"];
   $contentWidth?: IContentImage["contentWidth"];
   $position?: IContentImage["position"];
   $gap?: IContentImage["gap"];
@@ -70,10 +74,10 @@ const StyledContentImageContent = styled.div<{
         `
       : css`
           @media ${device.tabletS} {
-            margin-top: ${(props.$gap?.tabletS ?? 24) + "px"};
+            margin-top: ${(props.$marginTop?.tabletS ?? 24) + "px"};
 
             @media ${device.mobile} {
-              margin-top: ${(props.$gap?.mobile ?? 16) + "px"};
+              margin-top: ${(props.$marginTop?.mobile ?? 16) + "px"};
             }
           }
         `}
@@ -86,11 +90,9 @@ const StyledContentImageContent = styled.div<{
 const StyledContentImageImgWrapper = styled.div<{
   $image: IContentImage["image"];
   $position?: IContentImage["position"];
-  $marginTop?: string;
-  displaytabletS?: string;
+  $displaytabletS?: string;
 }>`
   flex: 0 1 ${(props) => `${props.$image.width}px`};
-  margin-top: ${(props) => props.$marginTop || ""};
 
   ${(props) =>
     props.$position?.desktop === "right" &&
@@ -103,7 +105,7 @@ const StyledContentImageImgWrapper = styled.div<{
     `}
 
   @media ${device.tabletS} {
-    display: ${(props) => props.displaytabletS || ""};
+    display: ${(props) => props.$displaytabletS || ""};
   }
 `;
 
