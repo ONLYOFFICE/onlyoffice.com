@@ -63,8 +63,7 @@ const OnlyOfficeEditor = ({
         <DocumentEditor
           id="pdfEditor"
           documentServerUrl={
-            process.env.ONLYOFFICE_DOCUMENT_SERVER_URL ||
-            "https://asc.docs.teamlab.info"
+            process.env.NEXT_PUBLIC_ONLYOFFICE_DOCUMENT_SERVER_URL || ""
           }
           config={{
             documentType: config.documentType,
