@@ -10,9 +10,10 @@ import {
   StyledCardDatasheetsTitle
 } from "./CardDatasheets.styled";
 
-const CardDatasheets = ({ title, date, product, image_url }: ICardDatasheetsItemsProps) => {
+const CardDatasheets = ({ title, date, product, image_url, download_url }: ICardDatasheetsItemsProps) => {
   const { t } = useTranslation("whitepapers");
   console.log(date);
+  console.log(download_url);
 
   return (
     <StyledCardDatasheets>

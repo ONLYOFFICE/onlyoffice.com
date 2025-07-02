@@ -2,6 +2,7 @@ interface ICardWhitepapersItemsProps {
   head: string;
   title: string;
   date: string;
+  download_url: string,
   description: string;
 }
 
@@ -14,6 +15,7 @@ interface ICardDatasheetsItemsProps {
   date: string;
   product: string;
   image_url: string;
+  download_url: string;
 }
 
 interface ICardDatasheetsItems extends ICardDatasheetsItemsProps {

@@ -53,6 +53,7 @@ const Cards = () => {
                 head={item.head}
                 title={item.title}
                 date={item.date}
+                download_url={item.download_url}
                 description={item.description}
               />
             ))}
@@ -72,6 +73,7 @@ const Cards = () => {
                 title={item.title}
                 product={item.product}
                 image_url={item.image_url}
+                download_url={item.download_url}
                 date={item.date}
               />
             ))}
