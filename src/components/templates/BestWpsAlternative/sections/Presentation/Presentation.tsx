@@ -1,12 +1,12 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
-import { BestAlternativePresentation } from "@src/components/modules/best-alternative/BestAlternativePresentation";
+import { BestAlternativePresentationSlide } from "@src/components/modules/best-alternative/BestAlternativePresentationSlide";
 
 const Presentation = () => {
-  const { t } = useTranslation("best-wps-alternative");
+  const { t } = useTranslation("best-adobe-alternative");
 
   return (
-    <BestAlternativePresentation
+    <BestAlternativePresentationSlide
       heading={
         <Trans
           t={t}
@@ -14,14 +14,8 @@ const Presentation = () => {
           components={[<Text as="span" color="#FF6F3D" key="0" />]}
         />
       }
-      link={{
-        href: "https://help.onlyoffice.co/Products/Files/DocEditor.aspx?fileid=8096736&doc=VUV1NGlMT0ZKUzVPWStOSFVuWTNIRXpSajFFQjQxTG12bVlHRWRGRmhQVT0_IjgwOTY3MzYi0",
-        ariaLabel: "Presentation ONLYOFFICE vs Hancom Office",
-      }}
-      image={{
-        src: "/images/templates/best-hancom-alternative/presentation/presentation.jpg",
-        alt: "ONLYOFFICE vs Hancom Office",
-      }}
+      title="ONLYOFFICE vs WPS"
+      url="https://static.onlyoffice.com/assets/docs/samples/oo-wps-international.ppsx"
     />
   );
 };
