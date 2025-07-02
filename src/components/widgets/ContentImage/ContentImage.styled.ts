@@ -5,11 +5,14 @@ import { device } from "@src/utils/device";
 const StyledContentImage = styled.div<{
   $gap: IContentImage["gap"];
   $position: IContentImage["position"];
+  $justifyContent?: string;
+  $alignItems?: string;
   $rowGap?: IContentImage["rowGap"];
   $marginTop?: IContentImage["marginTop"];
 }>`
   display: flex;
-  align-items: center;
+  align-items: ${(props) => props.$alignItems ?? 'center'};
+  justify-content: ${(props) => props.$justifyContent ?? ''};
 
   @media ${device.tabletS} {
     flex-direction: ${(props) =>
@@ -87,6 +90,7 @@ const StyledContentImageContent = styled.div<{
 const StyledContentImageImgWrapper = styled.div<{
   $image: IContentImage["image"];
   $position?: IContentImage["position"];
+  $displaytabletS?: string;
 }>`
   flex: 0 1 ${(props) => `${props.$image.width}px`};
 
@@ -101,7 +105,7 @@ const StyledContentImageImgWrapper = styled.div<{
     `}
 
   @media ${device.tabletS} {
-    flex: initial;
+    display: ${(props) => props.$displaytabletS || ""};
   }
 `;
 

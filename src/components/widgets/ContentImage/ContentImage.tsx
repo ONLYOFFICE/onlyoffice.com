@@ -14,8 +14,11 @@ const ContentImage = ({
   image: { width = 640, height = 504, ...image },
   gap,
   position: { desktop = "left", mobile = "top" } = {},
+  justifyContent,
+  alignItems,
+  marginTop,
+  displaytabletS,
   rowGap,
-  marginTop
 }: IContentImage) => {
   return (
     <StyledContentImage
@@ -23,6 +26,8 @@ const ContentImage = ({
       className={className}
       $gap={gap}
       $position={{ desktop, mobile }}
+      $justifyContent={justifyContent}
+      $alignItems={alignItems}
       $rowGap={rowGap}
     >
       <StyledContentImageContent
@@ -37,6 +42,7 @@ const ContentImage = ({
       <StyledContentImageImgWrapper
         $image={{ width, ...image }}
         $position={{ desktop }}
+        $displaytabletS={displaytabletS}
       >
         <StyledContentImageImg $image={{ width, height, ...image }} />
       </StyledContentImageImgWrapper>
