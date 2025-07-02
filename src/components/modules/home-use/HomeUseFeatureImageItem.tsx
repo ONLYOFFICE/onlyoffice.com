@@ -53,9 +53,9 @@ const HomeUseFeatureImageItem = ({
         <Heading level={2}>{heading}</Heading>
         <StyledFeatureImageItemText>{text}</StyledFeatureImageItemText>
         {logos && (
-          <StyledClientLogos logos={logos}>
+          <StyledClientLogos>
             {logos.map((logo, index) => (
-              <StyledClientLogosItem key={index} logo={logo} />
+              <StyledClientLogosItem key={index} $logo={logo} />
             ))}
           </StyledClientLogos>
         )}

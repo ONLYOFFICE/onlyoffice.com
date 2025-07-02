@@ -89,9 +89,7 @@ const StyledFeatureListItem = styled.li`
     }
   }
 `;
-const StyledClientLogos = styled.div<{
-  logos: { url: string; width: number; height: number }[];
-}>`
+const StyledClientLogos = styled.div`
   display: flex;
   flex-direction: row;
   column-gap: 56px;
@@ -109,16 +107,16 @@ const StyledClientLogos = styled.div<{
 `;
 
 const StyledClientLogosItem = styled.div<{
-  logo: { url: string; width: number; height: number };
+  $logo: { url: string; width: number; height: number };
 }>`
-  width: ${(props) => props.logo.width}px;
-  height: ${(props) => props.logo.height}px;
-  background-image: url("${(props) => props.logo.url}");
+  width: ${(props) => props.$logo.width}px;
+  height: ${(props) => props.$logo.height}px;
+  background-image: url("${(props) => props.$logo.url}");
   background-repeat: no-repeat;
 
   @media ${device.mobile} {
-    width: ${(props) => props.logo.width / 1.7}px;
-    height: ${(props) => props.logo.height / 1.7}px;
+    width: ${(props) => props.$logo.width / 1.7}px;
+    height: ${(props) => props.$logo.height / 1.7}px;
     background-size: contain;
   }
 `;

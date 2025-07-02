@@ -23,8 +23,6 @@ export interface IHomeUseFeatureImageItem extends IContentImage {
   }[];
   /** The alignment. */
   alignItems?: string;
-  /** The margin top. */
-  marginTop?: string;
   /** The display tablet S. */
   displaytabletS?: string;
 }

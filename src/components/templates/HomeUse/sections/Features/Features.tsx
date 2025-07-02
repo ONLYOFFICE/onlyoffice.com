@@ -67,9 +67,9 @@ const Features = () => {
               justifyContent={"space-between"}
               position={item.position}
               alignItems={"flex-start"}
-              marginTop={"7%"}
+              marginTop={{ desktop: 0, tabletS: 0, mobile: 0 }}
               displaytabletS={"none"}
-            ></HomeUseFeatureImageItem>
+            />
           ))}
         </HomeUseFeatureImageItemWrapper>
       </Container>
