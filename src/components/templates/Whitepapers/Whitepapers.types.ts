@@ -22,9 +22,15 @@ interface ICardDatasheetsItems extends ICardDatasheetsItemsProps {
   id: number;
 }
 
+interface ICardFormProp {
+  download_url: string;
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
+}
+
 export type {
   ICardWhitepapersItems,
   ICardWhitepapersItemsProps,
   ICardDatasheetsItems,
-  ICardDatasheetsItemsProps
+  ICardDatasheetsItemsProps,
+  ICardFormProp
 };

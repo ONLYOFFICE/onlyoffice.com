@@ -22,6 +22,8 @@
   "CardsDatasheetProductOds": "ONLYOFFICE DocSpace",
 
   "CardsButtonDownload": "Download",
+  "CardFormHeading": "Fill out this form to request a quote",
+  "CardFormAgreement": "By clicking Download, you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>.",
 
   "CardsHeadingWhitepapers": "White papers",
   "CardsHeadingDatasheets": "Datasheets",
