@@ -42,10 +42,15 @@ const StyledCardFormHeading = styled(Heading)`
 
 const StyledCardFormForm = styled.form``;
 
+const StyledCardFormInputWrapper = styled.div`
+  margin-bottom: 16px;
+`;
+
 const StyledCardFormAgreementWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-bottom: 32px;
 `;
 
 const StyledCardFormButton = styled(Button)`
@@ -58,6 +63,7 @@ export {
   StyledCardFormCloseBtn,
   StyledCardFormHeading,
   StyledCardFormForm,
+  StyledCardFormInputWrapper,
   StyledCardFormAgreementWrapper,
   StyledCardFormButton
 };

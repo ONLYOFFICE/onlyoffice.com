@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { SearchIcon } from "@src/components/icons";
@@ -9,7 +8,6 @@ import {
   StyledWhitepapersInputRight,
   StyledWhitepapersInputSubtitle,
   StyledWhitepapersInputWrapper,
-  StyledWhitepapersLabel,
   StyledWhitepapersSection,
 } from "./WhitepapersInput.styled";
 
@@ -18,7 +16,6 @@ const WhitepapersInput = ({ value, setValue }: {
   setValue: (value: string) => void
 }) => {
   const { t } = useTranslation("whitepapers");
-  const [isInputFocused, setIsInputFocused] = useState(false);
 
   return (
     <StyledWhitepapersSection
@@ -35,19 +32,12 @@ const WhitepapersInput = ({ value, setValue }: {
             />
           </StyledWhitepapersInputLeft>
           <StyledWhitepapersInputRight>
-            <StyledWhitepapersLabel
-              htmlFor="#whitepapers-input"
-              $isActive={value.length > 0 || isInputFocused}
-            >
-              {t("WhitepapersInputLabel")}
-            </StyledWhitepapersLabel>
             <StyledWhitepapersInput
+              label={t("WhitepapersInputLabel")}
               id="#whitepapers-input"
               rightSide={<SearchIcon />}
               value={value}
               onChange={(event) => setValue(event.target.value)}
-              onFocus={() => setIsInputFocused(true)}
-              onBlur={() => setIsInputFocused(false)}
             />
           </StyledWhitepapersInputRight>
         </StyledWhitepapersInputWrapper>

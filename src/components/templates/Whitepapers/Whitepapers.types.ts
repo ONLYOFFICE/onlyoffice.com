@@ -1,3 +1,7 @@
+interface ICardsProp {
+  sortValue: string;
+}
+
 interface ICardWhitepapersItemsProps {
   head: string;
   title: string;
@@ -27,10 +31,25 @@ interface ICardFormProp {
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
 }
 
+interface IFormData {
+  fullName: string;
+  companyName: string;
+  email: string;
+}
+
+interface ICheckStatus {
+  fullName: "default" | "success" | "error";
+  companyName: "default" | "success" | "error";
+  email: "default" | "success" | "error";
+}
+
 export type {
+  ICardsProp,
   ICardWhitepapersItems,
   ICardWhitepapersItemsProps,
   ICardDatasheetsItems,
   ICardDatasheetsItemsProps,
-  ICardFormProp
+  ICardFormProp,
+  IFormData,
+  ICheckStatus
 };

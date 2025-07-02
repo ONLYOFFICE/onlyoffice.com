@@ -11,7 +11,7 @@ const WhitepapersTemplate = () => {
     <>
       <WhitepapersInput value={value} setValue={setValue} />
       <Hero />
-      <Cards />
+      <Cards sortValue={value} />
       <Join />
     </>
   );

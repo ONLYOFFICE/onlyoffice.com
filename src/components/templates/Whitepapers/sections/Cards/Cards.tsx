@@ -2,8 +2,10 @@ import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { CardWhitepapers } from "./sub-components/CardWhitepapers";
+import { CardDatasheets } from "./sub-components/CardDatasheets";
 import { cardWhitepapersItems } from "./data/cardWhitepapersItems";
 import { cardDatasheetsItems } from "./data/cardDatasheetsItems";
+import { ICardsProp } from "../../Whitepapers.types";
 
 import {
   StyledCardsFiltersWrapper,
@@ -15,10 +17,10 @@ import {
   StyledCardsHeading,
   StyledCardsList
 } from "./Cards.styled";
-import { CardDatasheets } from "./sub-components/CardDatasheets";
 
-const Cards = () => {
+const Cards = ({ sortValue }: ICardsProp ) => {
   const { t } = useTranslation("whitepapers");
+  console.log(sortValue);
 
   return (
     <Section

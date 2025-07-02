@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
@@ -53,22 +53,6 @@ const StyledWhitepapersInputRight = styled.div`
   }
 `;
 
-const StyledWhitepapersLabel = styled.label<{
-  $isActive: boolean
-}>`
-  color: #666;
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transition-duration: 300ms;
-
-  transform: ${({ $isActive }) =>
-    $isActive
-      ? css`translate(-10%, -125%) scale(0.8)`
-      : css`translate(0, -50%)`
-  };
-`;
-
 const StyledWhitepapersInput = styled(Input)`
   background-color: transparent;
   border: none;
@@ -88,6 +72,5 @@ export {
   StyledWhitepapersInputLeft,
   StyledWhitepapersInputSubtitle,
   StyledWhitepapersInputRight,
-  StyledWhitepapersLabel,
   StyledWhitepapersInput,
 };

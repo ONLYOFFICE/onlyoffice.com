@@ -25,6 +25,17 @@
   "CardFormHeading": "Fill out this form to request a quote",
   "CardFormAgreement": "By clicking Download, you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>.",
 
+  "CardFormFullName": "Full name",
+  "CardFormFullNameIsEmpty": "Full name is empty",
+  "CardFormFullNameIsIncorrect": "Full name is incorrect",
+  "CardFormPlaceholderName": "First name Last name",
+  "CardFormCompanyName": "Company name",
+  "CardFormCompanyNameIsEmpty": "Company name is empty",
+  "CardFormEmail": "Email",
+  "CardFormPlaceholderEmail": "name@domain.com",
+  "CardFormEmailIsEmpty": "Email is empty",
+  "CardFormEmailIsIncorrect": "Email is incorrect",
+
   "CardsHeadingWhitepapers": "White papers",
   "CardsHeadingDatasheets": "Datasheets",
 

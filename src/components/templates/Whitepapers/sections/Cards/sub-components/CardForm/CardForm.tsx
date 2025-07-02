@@ -1,9 +1,16 @@
+import { useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Input } from "@src/components/ui/Input";
 import { Text } from "@src/components/ui/Text";
 import { HCaptcha } from "@src/components/widgets/HCaptcha";
 import { Link } from "@src/components/ui/Link";
-import { ICardFormProp } from "@src/components/templates/Whitepapers/Whitepapers.types";
+import { validateFullName, validateEmail } from "@src/utils/validators";
+
+import {
+  ICardFormProp,
+  ICheckStatus,
+  IFormData }
+from "@src/components/templates/Whitepapers/Whitepapers.types";
 
 import {
   StyledCardFormAgreementWrapper,
@@ -11,12 +18,75 @@ import {
   StyledCardFormCloseBtn,
   StyledCardFormForm,
   StyledCardFormHeading,
+  StyledCardFormInputWrapper,
   StyledCardFormModal,
   StyledCardFormOverlay,
 } from "./CardForm.styled";
 
 const CardForm = ({ download_url, setOpenModal }: ICardFormProp ) => {
   const { t } = useTranslation("whitepapers");
+
+  const [formData, setFormData] = useState<IFormData>({
+    fullName: "",
+    companyName: "",
+    email: "",
+  });
+
+  const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
+    fullName: "default",
+    companyName: "default",
+    email: "default",
+  });
+
+  const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  }
+
+  const handleCheckStatusFullName = () => {
+    if (validateFullName(formData.fullName)) {
+      setCheckStatus((prev) => ({
+        ...prev,
+        fullName: "success",
+      }));
+    } else {
+      setCheckStatus((prev) => ({
+        ...prev,
+        fullName: "error",
+      }));
+    }
+  }
+
+  const handleCheckStatusCompanyName = () => {
+    if (formData.companyName.length > 0) {
+      setCheckStatus((prev) => ({
+        ...prev,
+        companyName: "success",
+      }));
+    } else {
+      setCheckStatus((prev) => ({
+        ...prev,
+        companyName: "error",
+      }));
+    }
+  }
+
+  const handleCheckStatusEmail = () => {
+    if (validateEmail(formData.email)) {
+      setCheckStatus((prev) => ({
+        ...prev,
+        email: "success",
+      }));
+    } else {
+      setCheckStatus((prev) => ({
+        ...prev,
+        email: "error",
+      }));
+    }
+  }
 
   return (
     <StyledCardFormOverlay
@@ -32,9 +102,65 @@ const CardForm = ({ download_url, setOpenModal }: ICardFormProp ) => {
           label={t("CardFormHeading")}
         />
         <StyledCardFormForm>
-          <Input value={""} onChange={() => {}} />
-          <Input value={""} onChange={() => {}} />
-          <Input value={""} onChange={() => {}} />
+          <StyledCardFormInputWrapper>
+            <Input
+              label={t("CardFormFullName")}
+              type="text"
+              placeholder={t("CardFormPlaceholderName")}
+              name="fullName"
+              value={formData.fullName}
+              onChange={(event) => handleChangeInput(event)}
+              required
+              maxLength={100}
+              onBlur={handleCheckStatusFullName}
+              status={checkStatus.fullName}
+              onFocus={() => setCheckStatus((prev) => ({ ...prev, fullName: "default" }))}
+            />
+            {checkStatus.fullName === "error" && formData.fullName.length === 0 && (
+              <Text size={4} label={t("CardFormFullNameIsEmpty")} color="#CB0000" />
+            )}
+            {checkStatus.fullName === "error" && formData.fullName.length > 0 && (
+              <Text size={4} label={t("CardFormFullNameIsIncorrect")} color="#CB0000" />
+            )}
+          </StyledCardFormInputWrapper>
+          <StyledCardFormInputWrapper>
+            <Input
+              label={t("CardFormCompanyName")}
+              type="text"
+              name="companyName"
+              value={formData.companyName}
+              onChange={(event) => handleChangeInput(event)}
+              required
+              maxLength={100}
+              onBlur={handleCheckStatusCompanyName}
+              status={checkStatus.companyName}
+              onFocus={() => setCheckStatus((prev) => ({ ...prev, companyName: "default" }))}
+            />
+            {checkStatus.companyName === "error" && formData.companyName.length === 0 && (
+              <Text size={4} label={t("CardFormCompanyNameIsEmpty")} color="#CB0000" />
+            )}
+          </StyledCardFormInputWrapper>
+          <StyledCardFormInputWrapper>
+            <Input
+              label={t("CardFormEmail")}
+              type="email"
+              placeholder={t("CardFormPlaceholderEmail")}
+              name="email"
+              value={formData.email}
+              onChange={(event) => handleChangeInput(event)}
+              required
+              maxLength={50}
+              onBlur={handleCheckStatusEmail}
+              status={checkStatus.email}
+              onFocus={() => setCheckStatus((prev) => ({ ...prev, email: "default" }))}
+            />
+            {checkStatus.email === "error" && formData.email.length === 0 && (
+              <Text size={4} label={t("CardFormEmailIsEmpty")} color="#CB0000" />
+            )}
+            {checkStatus.email === "error" && formData.email.length > 0 && (
+              <Text size={4} label={t("CardFormEmailIsIncorrect")} color="#CB0000" />
+            )}
+          </StyledCardFormInputWrapper>
           <StyledCardFormAgreementWrapper>
             <HCaptcha />
             <Text color="#808080" fontSize="12px">
@@ -62,11 +188,18 @@ const CardForm = ({ download_url, setOpenModal }: ICardFormProp ) => {
           </StyledCardFormAgreementWrapper>
           <StyledCardFormButton
             label={t("CardsButtonDownload")}
-            download
-            href={download_url}
             type="submit"
-            disabled={true}
+            href={download_url}
+            download
             borderRadius="3px"
+            disabled={
+              checkStatus.fullName === "error" ||
+              checkStatus.companyName === "error" ||
+              checkStatus.email === "error" ||
+              checkStatus.fullName === "default" ||
+              checkStatus.companyName === "default" ||
+              checkStatus.email === "default"
+            }
           />
         </StyledCardFormForm>
       </StyledCardFormModal>
