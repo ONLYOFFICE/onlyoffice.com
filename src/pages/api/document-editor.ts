@@ -21,12 +21,12 @@ interface DocumentConfig {
   title?: string;
   url?: string;
   permissions?: {
-    edit: boolean;
-    fillForms: boolean;
+    edit?: boolean;
+    fillForms?: boolean;
     comment?: boolean;
     download?: boolean;
     print?: boolean;
-    review: boolean;
+    review?: boolean;
   };
 }
 
@@ -44,7 +44,6 @@ interface EditorConfig {
 }
 
 interface TokenPayload {
-  type?: "desktop" | "mobile" | "embedded";
   document?: DocumentConfig;
   documentType: DocumentType;
   editorConfig?: EditorConfig;
@@ -81,21 +80,12 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         uiTheme?: UiTheme;
       };
 
-      const edit = req.query.edit === "true";
-      const fillForms = req.query.fillForms === "true";
-      const review = req.query.review === "true";
-
-      const permissions: DocumentConfig["permissions"] | undefined =
-        edit || fillForms || review ? { edit, fillForms, review } : undefined;
-
       payload = {
-        ...(type ? { type } : { type: "desktop" }),
         document: {
           fileType,
           key: uuidv4(),
           title,
           url,
-          ...(permissions ? { permissions } : {}),
         },
         documentType,
         editorConfig: {
