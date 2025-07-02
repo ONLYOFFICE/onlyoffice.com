@@ -5,6 +5,7 @@ import { CardWhitepapers } from "./sub-components/CardWhitepapers";
 import { CardDatasheets } from "./sub-components/CardDatasheets";
 import { cardWhitepapersItems } from "./data/cardWhitepapersItems";
 import { cardDatasheetsItems } from "./data/cardDatasheetsItems";
+import { useFilterInputICardsItems } from "./utils/useFilterInputICardsItems";
 import { ICardsProp } from "../../Whitepapers.types";
 
 import {
@@ -20,7 +21,10 @@ import {
 
 const Cards = ({ sortValue }: ICardsProp ) => {
   const { t } = useTranslation("whitepapers");
-  console.log(sortValue);
+  const {
+    inputFilterWhitepaperItems,
+    inputFilterDatasheetsItems
+  } = useFilterInputICardsItems(cardWhitepapersItems, cardDatasheetsItems, sortValue);
 
   return (
     <Section
@@ -41,46 +45,50 @@ const Cards = ({ sortValue }: ICardsProp ) => {
             </StyledCardsSortDate>
           </StyledCardsSortSelect>
         </StyledCardsFiltersWrapper>
-        <StyledCardsContent>
-          <StyledCardsHeading
-            label={t("CardsHeadingWhitepapers")}
-            textAlign="center"
-            level={2}
-            size={4}
-          />
-          <StyledCardsList>
-            {cardWhitepapersItems.map((item) => (
-              <CardWhitepapers
-                key={item.id}
-                head={item.head}
-                title={item.title}
-                date={item.date}
-                download_url={item.download_url}
-                description={item.description}
-              />
-            ))}
-          </StyledCardsList>
-        </StyledCardsContent>
-        <StyledCardsContent>
-          <StyledCardsHeading
-            label={t("CardsHeadingDatasheets")}
-            textAlign="center"
-            level={2}
-            size={4}
-          />
-          <StyledCardsList>
-            {cardDatasheetsItems.map((item) => (
-              <CardDatasheets
-                key={item.id}
-                title={item.title}
-                product={item.product}
-                image_url={item.image_url}
-                download_url={item.download_url}
-                date={item.date}
-              />
-            ))}
-          </StyledCardsList>
-        </StyledCardsContent>
+        {inputFilterWhitepaperItems.length > 0 && (
+          <StyledCardsContent>
+            <StyledCardsHeading
+              label={t("CardsHeadingWhitepapers")}
+              textAlign="center"
+              level={2}
+              size={4}
+            />
+            <StyledCardsList>
+              {inputFilterWhitepaperItems.map((item) => (
+                <CardWhitepapers
+                  key={item.id}
+                  head={item.head}
+                  title={item.title}
+                  date={item.date}
+                  download_url={item.download_url}
+                  description={item.description}
+                />
+              ))}
+            </StyledCardsList>
+          </StyledCardsContent>
+        )}
+        {inputFilterDatasheetsItems.length > 0 && (
+          <StyledCardsContent>
+            <StyledCardsHeading
+              label={t("CardsHeadingDatasheets")}
+              textAlign="center"
+              level={2}
+              size={4}
+            />
+            <StyledCardsList>
+              {inputFilterDatasheetsItems.map((item) => (
+                <CardDatasheets
+                  key={item.id}
+                  title={item.title}
+                  product={item.product}
+                  image_url={item.image_url}
+                  download_url={item.download_url}
+                  date={item.date}
+                />
+              ))}
+            </StyledCardsList>
+          </StyledCardsContent>
+        )}
       </Container>
     </Section>
   );
