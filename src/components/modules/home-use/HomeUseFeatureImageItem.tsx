@@ -6,9 +6,9 @@ import {
   StyledFeatureListItem,
   StyledClientLogos,
   StyledClientLogosItem,
-  StyledFeatureImageItemBtns
+  StyledFeatureImageItemBtns,
 } from "./HomeUseFeatureImageItem.styled";
-import { IFeatureImageItem } from "./HomeUseFeatureImageItem.types";
+import { IHomeUseFeatureImageItem } from "./HomeUseFeatureImageItem.types";
 import { ContentImage } from "../../widgets/ContentImage";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
@@ -30,8 +30,8 @@ const HomeUseFeatureImageItem = ({
   downloadButtons,
   alignItems,
   marginTop,
-  displaytabletS
-}: IFeatureImageItem) => {
+  displaytabletS,
+}: IHomeUseFeatureImageItem) => {
   return (
     <ContentImage
       id={id}
@@ -45,17 +45,13 @@ const HomeUseFeatureImageItem = ({
       image={{
         url: image.url,
         url2x: image.url2x,
-        width: image.width,
         height: image.height,
         width: image.width,
       }}
     >
       <StyledFeatureImageItemContent>
-        <Heading level={2} label={heading}>
-        </Heading>
-        <StyledFeatureImageItemText color="#666666">
-          {text}
-        </StyledFeatureImageItemText>
+        <Heading level={2}>{heading}</Heading>
+        <StyledFeatureImageItemText>{text}</StyledFeatureImageItemText>
         {logos && (
           <StyledClientLogos logos={logos}>
             {logos.map((logo, index) => (
@@ -70,40 +66,39 @@ const HomeUseFeatureImageItem = ({
             </StyledFeatureListItem>
           ))}
         </StyledFeatureList>
-       <StyledFeatureImageItemBtns>
-        {buttons?.map(({ href, label }, index) => (
-          <Button
-            as="a"
-            key={index}
-            href={href}
-            variant="secondary"
-            className={className}
-          >
-            {label}
-          </Button>
-        ))}
-        {downloadButtons?.map(({ href, platform, variant }, index) => (
-          <DownloadButton
-            key={index}
-            href={href}
-            platform={platform}
-            variant={variant}
-          />
-        ))}
-        {links?.map(({ href, label, isExternal }, index) => (
-          <StyledFeatureImageItemLink
-            key={index}
-            href={href}
-            fontSize="16px"
-            lineHeight="26px"
-            color="#444444"
-            textUnderline
-            hover="underline-none"
-            target={isExternal ? "_blank" : undefined}
-          >
-            {label}
-          </StyledFeatureImageItemLink>
-        ))}
+        <StyledFeatureImageItemBtns>
+          {buttons?.map(({ href, label }, index) => (
+            <Button
+              as="a"
+              key={index}
+              href={href}
+              variant="secondary"
+              className={className}
+            >
+              {label}
+            </Button>
+          ))}
+          {downloadButtons?.map(({ href, platform, variant }, index) => (
+            <DownloadButton
+              key={index}
+              href={href}
+              platform={platform}
+              variant={variant}
+            />
+          ))}
+          {links?.map(({ href, label, isExternal }, index) => (
+            <StyledFeatureImageItemLink
+              key={index}
+              href={href}
+              fontSize="16px"
+              lineHeight="26px"
+              color="#444444"
+              textUnderline
+              target={isExternal ? "_blank" : undefined}
+            >
+              {label}
+            </StyledFeatureImageItemLink>
+          ))}
         </StyledFeatureImageItemBtns>
       </StyledFeatureImageItemContent>
     </ContentImage>

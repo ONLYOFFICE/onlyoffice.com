@@ -1,6 +1,6 @@
-import { IFeatureImageItem } from "@src/components/modules/home-use/HomeUseFeatureImageItem.types";
+import { IHomeUseFeatureImageItem } from "@src/components/modules/home-use/HomeUseFeatureImageItem.types";
 
-export const items: IFeatureImageItem[] = [
+export const items: IHomeUseFeatureImageItem[] = [
   {
     heading: "SafePersonalSpace",
     text: "ReplacementForGoogleDocsSheetsSlides",
@@ -10,42 +10,43 @@ export const items: IFeatureImageItem[] = [
       height: 346,
       width: 412,
     },
-    logos:[
+    logos: [
       {
         url: "/images/templates/home-use/features/google_docs.svg",
-        width: "125",
-        height: "31"
+        width: 125,
+        height: 31,
       },
       {
         url: "/images/templates/home-use/features/office.svg",
-        width: "88",
-        height: "31"
+        width: 88,
+        height: 31,
       },
       {
         url: "/images/templates/home-use/features/zoho_docs.svg",
-        width: "87",
-        height: "31"
+        width: 87,
+        height: 31,
       },
     ],
     items: [
-      { label: "SafeStorage" }, 
-      { label: "WorkingWithAnyContent" }, 
+      { label: "SafeStorage" },
+      { label: "WorkingWithAnyContent" },
       { label: "ProfessionalEditing" },
       { label: "PerfectForStudentsBloggersFreelancers" },
       { label: "FreePlanForIndividuals" },
-      { label: "InvitingUsersViaExternalLinks" }
+      { label: "InvitingUsersViaExternalLinks" },
     ],
     links: [{ href: "/docspace", label: "LearnMore" }],
-    buttons: [{
-      href: "/docspace-registration",
-      label: "GetStarted",
-    }],
+    buttons: [
+      {
+        href: "/docspace-registration",
+        label: "GetStarted",
+      },
+    ],
     contentWidth: 544,
     position: {
       desktop: "left",
-      mobile: "top"
-    }
-
+      mobile: "top",
+    },
   },
   {
     heading: "DesktopEditorsForWorkStudyCreativeProjects",
@@ -56,39 +57,41 @@ export const items: IFeatureImageItem[] = [
       height: 390,
       width: 340,
     },
-    logos:[
+    logos: [
       {
         url: "/images/templates/home-use/features/office.svg",
-        width: "88",
-        height: "31"
+        width: 88,
+        height: 31,
       },
       {
         url: "/images/templates/home-use/features/wps.svg",
-        width: "111",
-        height: "31"
+        width: 111,
+        height: 31,
       },
       {
         url: "/images/templates/home-use/features/aliata.svg",
-        width: "67",
-        height: "41"
+        width: 67,
+        height: 41,
       },
     ],
     items: [
-      { label: "OneAppForDocumentsSpreadsheetsPresentationsFormsPdfs" }, 
-      { label: "MaximumCompatibilityWithDocxXlsxPptx" }, 
+      { label: "OneAppForDocumentsSpreadsheetsPresentationsFormsPdfs" },
+      { label: "MaximumCompatibilityWithDocxXlsxPptx" },
       { label: "WorksOnWindowsLinuxAndMacOS" },
-      { label: "FreeAndOpenSource" }
+      { label: "FreeAndOpenSource" },
     ],
-    links: [{ href: "/desktop.aspx?from=home-use", label: "LearnMore" }],
-    buttons: [{
-      href: "/download-desktop.aspx?from=home-use",
-      label: "DownloadNow",
-    }],
+    links: [{ href: "/desktop?from=home-use", label: "LearnMore" }],
+    buttons: [
+      {
+        href: "/download-desktop?from=home-use",
+        label: "DownloadNow",
+      },
+    ],
     contentWidth: 544,
     position: {
       desktop: "right",
-      mobile: "top"
-    }
+      mobile: "top",
+    },
   },
   {
     heading: "SelfHostedEditorsToWorkOnDocsPrivately",
@@ -99,34 +102,39 @@ export const items: IFeatureImageItem[] = [
       height: 384,
       width: 340,
     },
-    logos:[
+    logos: [
       {
         url: "/images/templates/home-use/features/google_docs.svg",
-        width: "125",
-        height: "31"
+        width: 125,
+        height: 31,
       },
       {
         url: "/images/templates/home-use/features/office.svg",
-        width: "88",
-        height: "31"
+        width: 88,
+        height: 31,
       },
       {
         url: "/images/templates/home-use/features/zoho_docs.svg",
-        width: "87",
-        height: "31"
+        width: 87,
+        height: 31,
       },
     ],
     items: [
-      { label: "OnlineDocumentEditorsWithCollaborationTools" }, 
-      { label: "HostedLocallySoYouWonTSharePersonalDataWithAnyone" }, 
-      { label: "EasyIntegrationWithOwnCloudNextcloudSeafileAndOtherPopularPlatforms" },
-      { label: "LifetimeLicenseFor10Users1YearOfUpdatesIncludedInPriceOf149" }
+      { label: "OnlineDocumentEditorsWithCollaborationTools" },
+      { label: "HostedLocallySoYouWonTSharePersonalDataWithAnyone" },
+      {
+        label:
+          "EasyIntegrationWithOwnCloudNextcloudSeafileAndOtherPopularPlatforms",
+      },
+      { label: "LifetimeLicenseFor10Users1YearOfUpdatesIncludedInPriceOf149" },
     ],
-    links: [{ href: "/home-use#", label: "SeeAllIntegrations" }],
-    buttons: [{
-      href: "/download.aspx#docs-enterprise",
-      label: "GetItNow",
-    }],
+    links: [{ href: "/all-connectors", label: "SeeAllIntegrations" }],
+    buttons: [
+      {
+        href: "/download#docs-enterprise",
+        label: "GetItNow",
+      },
+    ],
     contentWidth: 544,
   },
   {
@@ -138,34 +146,39 @@ export const items: IFeatureImageItem[] = [
       height: 419,
       width: 359,
     },
-    logos:[
+    logos: [
       {
         url: "/images/templates/home-use/features/gsuite.svg",
-        width: "81",
-        height: "21"
+        width: 81,
+        height: 21,
       },
       {
         url: "/images/templates/home-use/features/office365.svg",
-        width: "110",
-        height: "31"
-      }
+        width: 110,
+        height: 31,
+      },
     ],
     items: [
-      { label: "OnlineDocumentEditorsForDocsSheetsSlidesFormsPdfs" }, 
-      { label: "ToolsToManageYourDocumentsAndProjects" }, 
-      { label: "SharedCalendarsWithToDoListsForYourFamilyMailServerToConnectYourOwnDomain" },
-      { label: "FreeAndOpenSource" }
+      { label: "OnlineDocumentEditorsForDocsSheetsSlidesFormsPdfs" },
+      { label: "ToolsToManageYourDocumentsAndProjects" },
+      {
+        label:
+          "SharedCalendarsWithToDoListsForYourFamilyMailServerToConnectYourOwnDomain",
+      },
+      { label: "FreeAndOpenSource" },
     ],
-    links: [{ href: "/home-use#", label: "LearnMore" }],
-    buttons: [{
-      href: "/docspace-registration",
-      label: "Download",
-    }],
+    links: [{ href: "/workspace", label: "LearnMore" }],
+    buttons: [
+      {
+        href: "/download-workspace",
+        label: "Download",
+      },
+    ],
     contentWidth: 544,
     position: {
       desktop: "right",
-      mobile: "top"
-    }
+      mobile: "top",
+    },
   },
   {
     heading: "FreeAppsToWorkWithDocsOnDevices",
@@ -176,33 +189,36 @@ export const items: IFeatureImageItem[] = [
       height: 386,
       width: 357,
     },
-    logos:[
+    logos: [
       {
         url: "/images/templates/home-use/features/office.svg",
-        width: "88",
-        height: "31"
+        width: 88,
+        height: 31,
       },
       {
         url: "/images/templates/home-use/features/google_docs.svg",
-        width: "125",
-        height: "31"
+        width: 125,
+        height: 31,
       },
       {
         url: "/images/templates/home-use/features/quickoffice.svg",
-        width: "114",
-        height: "31"
+        width: 114,
+        height: 31,
       },
       {
         url: "/images/templates/home-use/features/pages.svg",
-        width: "72",
-        height: "31"
+        width: 72,
+        height: 31,
       },
     ],
     items: [
-      { label: "OneAppToWorkWithDocsSheetsSlidesAndFormsOnDevices" }, 
-      { label: "AccessFilesStoredOnYourHomeServerInOnlyofficeCloudNextcloudOwncloudSeafileLiferayAndKdrive" }, 
+      { label: "OneAppToWorkWithDocsSheetsSlidesAndFormsOnDevices" },
+      {
+        label:
+          "AccessFilesStoredOnYourHomeServerInOnlyofficeCloudNextcloudOwncloudSeafileLiferayAndKdrive",
+      },
       { label: "EditAndCollaborateInRealTime" },
-      { label: "TotallyFree" }
+      { label: "TotallyFree" },
     ],
     downloadButtons: [
       {
@@ -219,7 +235,7 @@ export const items: IFeatureImageItem[] = [
         variant: "secondary",
         imageSrc: "/images/ui/download-button/google-play.svg",
       },
-  ],
+    ],
     contentWidth: 544,
   },
 ];

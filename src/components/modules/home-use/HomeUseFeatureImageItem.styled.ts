@@ -1,13 +1,9 @@
 import styled from "styled-components";
-import { IFeatureImageItem } from "./HomeUseFeatureImageItem.types";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
-import { Button } from "@src/components/ui/Button";
+import { Text } from "@src/components/ui/Text";
 
-const StyledFeatureImageItemContent = styled.div<{
-  $contentWidth?: IFeatureImageItem["contentWidth"];
-  $position?: IFeatureImageItem["position"];
-}>`
+const StyledFeatureImageItemContent = styled.div`
   display: grid;
   row-gap: 24px;
 
@@ -16,7 +12,8 @@ const StyledFeatureImageItemContent = styled.div<{
   }
 `;
 
-const StyledFeatureImageItemText = styled.div`
+const StyledFeatureImageItemText = styled(Text)`
+  color: #808080;
   font-size: 16px;
   line-height: 24px;
 
@@ -40,13 +37,16 @@ const StyledFeatureImageItemBtns = styled.div`
 
 const StyledFeatureImageItemLink = styled(Link)`
   display: inline;
+  font-size: 14px;
+
+  &:hover {
+    color: #ff6f3d;
+  }
   @media ${device.mobile} {
     font-size: 13px;
     line-height: 20px;
   }
 `;
-
-
 
 const StyledFeatureList = styled.ul`
   display: grid;
@@ -89,36 +89,38 @@ const StyledFeatureListItem = styled.li`
     }
   }
 `;
-const StyledClientLogos = styled.div<{ logos: { url: string, width: string | number, height: string | number }[] }>`
-display: flex;
-flex-direction: row;
-column-gap: 56px;
-filter: grayscale(1);
-align-items: center;
+const StyledClientLogos = styled.div<{
+  logos: { url: string; width: number; height: number }[];
+}>`
+  display: flex;
+  flex-direction: row;
+  column-gap: 56px;
+  filter: grayscale(1);
+  align-items: center;
 
-@media ${device.mobile} {
-  width: 100%;
-  column-gap: 36px;
-}
+  @media ${device.mobile} {
+    width: 100%;
+    column-gap: 36px;
+  }
   @media ${device.mobileS} {
-  column-gap: 18px;
-  margin: 16px 0;
-}
-
+    column-gap: 18px;
+    margin: 16px 0;
+  }
 `;
 
-const StyledClientLogosItem = styled.div<{ logo: { url: string, width: string | number, height: string | number } }>`
-width: ${(props) => props.logo.width}px;
-height: ${(props) => props.logo.height}px;
-background-image: url("${(props) => props.logo.url}");
-background-repeat: no-repeat;
+const StyledClientLogosItem = styled.div<{
+  logo: { url: string; width: number; height: number };
+}>`
+  width: ${(props) => props.logo.width}px;
+  height: ${(props) => props.logo.height}px;
+  background-image: url("${(props) => props.logo.url}");
+  background-repeat: no-repeat;
 
-@media ${device.mobile} {
-  width: ${(props) => props.logo.width / 1.7}px;
-  height: ${(props) => props.logo.height / 1.7}px;
-  background-size: contain;
-}
- 
+  @media ${device.mobile} {
+    width: ${(props) => props.logo.width / 1.7}px;
+    height: ${(props) => props.logo.height / 1.7}px;
+    background-size: contain;
+  }
 `;
 
 export {
@@ -129,5 +131,5 @@ export {
   StyledFeatureListItem,
   StyledClientLogos,
   StyledClientLogosItem,
-  StyledFeatureImageItemBtns
+  StyledFeatureImageItemBtns,
 };

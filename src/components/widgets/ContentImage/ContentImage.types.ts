@@ -39,4 +39,8 @@ export interface IContentImage {
   justifyContent?: "space-between" | "space-around" | "space-evenly" | "center" | "flex-start" | "flex-end" | "";
   /** The alignment of the text content. Default: "" */
   alignItems?: string | "flex-start" | "flex-end" | "center" | "";
+  /** The margin-top of the text content. Default: "" */
+  marginTop?: string;
+  /** The display tablet S. Default: "" */
+  displaytabletS?: string;
 }

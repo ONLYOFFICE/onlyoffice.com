@@ -1,2 +1,2 @@
 export { HomeUseFeatureImageItem } from "./HomeUseFeatureImageItem";
-export type { IFeatureImageItem } from "./HomeUseFeatureImageItem.types";
+export type { IHomeUseFeatureImageItem } from "./HomeUseFeatureImageItem.types";

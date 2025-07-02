@@ -20,9 +20,7 @@ const MainPage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header
-          locale={locale}
-        />
+        <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
         <HomeUseTemplate />
@@ -40,7 +38,7 @@ export async function getStaticProps({ locale }: ILocale) {
       ...(await serverSideTranslations(locale, [
         "common",
         "home-use",
-        "DownloadButton"
+        "DownloadButton",
       ])),
       locale,
     },

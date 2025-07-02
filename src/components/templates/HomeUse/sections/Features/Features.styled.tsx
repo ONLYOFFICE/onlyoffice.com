@@ -9,6 +9,10 @@ const HomeUseFeatureImageItemWrapper = styled.div`
   @media ${device.tabletS} {
     gap: 88px;
   }
+
+  @media ${device.mobile} {
+    gap: 48px;
+  }
 `;
 
 export { HomeUseFeatureImageItemWrapper };

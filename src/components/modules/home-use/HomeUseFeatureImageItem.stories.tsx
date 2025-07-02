@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from "@storybook/react";
-import { IFeatureImageItem } from "./HomeUseFeatureImageItem.types";
+import { IHomeUseFeatureImageItem } from "./HomeUseFeatureImageItem.types";
 import { HomeUseFeatureImageItem } from "./HomeUseFeatureImageItem";
 
 export default {
@@ -39,7 +39,7 @@ export default {
   },
 } as Meta;
 
-const Template: StoryFn<IFeatureImageItem> = (args) => (
+const Template: StoryFn<IHomeUseFeatureImageItem> = (args) => (
   <HomeUseFeatureImageItem {...args} />
 );
 
