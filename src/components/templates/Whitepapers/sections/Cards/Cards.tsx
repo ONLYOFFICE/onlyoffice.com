@@ -6,7 +6,7 @@ import { CardWhitepapers } from "./sub-components/CardWhitepapers";
 import { CardDatasheets } from "./sub-components/CardDatasheets";
 import { cardWhitepapersItems } from "./data/cardWhitepapersItems";
 import { cardDatasheetsItems } from "./data/cardDatasheetsItems";
-import { useFilterInputICardsItems } from "./utils/useFilterInputICardsItems";
+import { useRefineCardsItems } from "./utils/useRefineCardsItems";
 import { ICardsProp } from "../../Whitepapers.types";
 
 import {
@@ -50,13 +50,20 @@ const Cards = ({ sortValue }: ICardsProp ) => {
     ];
   }, [t]);
 
-  const { inputFilterWhitepaperItems, inputFilterDatasheetsItems} = useFilterInputICardsItems(
-    cardWhitepapersItems, cardDatasheetsItems, sortValue
-  );
-
   const sortModules = useMemo(() => {
-    return cardDatasheetsItems.sort((a, b) => a.title.localeCompare(b.title));
-  }, []);
+    return [
+      {title: t("CardsFiltersAll")},
+      ...cardDatasheetsItems.sort((a, b) => a.title.localeCompare(b.title))
+    ];
+  }, [t]);
+
+  const { refineWhitepaperItems, refineDatasheetsItems} = useRefineCardsItems(
+    cardWhitepapersItems,
+    cardDatasheetsItems,
+    sortValue,
+    choosedModule,
+    choosedDate
+  );
 
   return (
     <Section
@@ -148,7 +155,7 @@ const Cards = ({ sortValue }: ICardsProp ) => {
             </StyledCardsSortDate>
           </StyledCardsSortSelect>
         </StyledCardsFiltersWrapper>
-        {inputFilterWhitepaperItems.length > 0 &&
+        {refineWhitepaperItems.length > 0 &&
           (choosedFilter === t("CardsHeadingWhitepapers") ||
           choosedFilter === t("CardsFiltersAll")) && (
           <StyledCardsContent>
@@ -159,7 +166,7 @@ const Cards = ({ sortValue }: ICardsProp ) => {
               size={4}
             />
             <StyledCardsList>
-              {inputFilterWhitepaperItems.map((item) => (
+              {refineWhitepaperItems.map((item) => (
                 <CardWhitepapers
                   key={item.id}
                   head={item.head}
@@ -172,7 +179,7 @@ const Cards = ({ sortValue }: ICardsProp ) => {
             </StyledCardsList>
           </StyledCardsContent>
         )}
-        {inputFilterDatasheetsItems.length > 0 &&
+        {refineDatasheetsItems.length > 0 &&
         (choosedFilter === t("CardsHeadingDatasheets") ||
         choosedFilter === t("CardsFiltersAll")) && (
           <StyledCardsContent>
@@ -183,7 +190,7 @@ const Cards = ({ sortValue }: ICardsProp ) => {
               size={4}
             />
             <StyledCardsList>
-              {inputFilterDatasheetsItems.map((item) => (
+              {refineDatasheetsItems.map((item) => (
                 <CardDatasheets
                   key={item.id}
                   title={item.title}
