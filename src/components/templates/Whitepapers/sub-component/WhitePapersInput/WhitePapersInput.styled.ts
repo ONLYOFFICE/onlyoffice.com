@@ -8,6 +8,7 @@ const StyledWhitepapersSection = styled(Section)`
   padding: 16px 0 0 0;
   position: sticky;
   top: 54px;
+  z-index: 1;
 
   @media ${device.tablet} {
     top: 32px;
