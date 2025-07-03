@@ -21,6 +21,8 @@ export interface IButton {
   href?: string;
   /** Specifies where to open the linked document. `target` is not allowed if `as` is "button". If `as` is `"a"` and `target` is `"_blank"`, and `rel` is not provided, it will default to `"noopener noreferrer"`. */
   target?: "_self" | "_blank" | "_parent" | "_top";
+  /** If `true`, the link will be treated as a downloadable file. */
+  download?: boolean;
   /** Specifies the relationship between the current page and the linked page. `rel` is not allowed if `as` is "button" */
   rel?: string;
   /** If true, it will stretch to fill the container's width. */

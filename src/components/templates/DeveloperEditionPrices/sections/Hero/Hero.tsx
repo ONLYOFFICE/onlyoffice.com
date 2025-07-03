@@ -37,13 +37,9 @@ import { SelectorsWrapper } from "@src/components/widgets/pricing/SelectorsWrapp
 import { SelectorItemWrapper } from "@src/components/widgets/pricing/SelectorItemWrapper";
 import {
   QuoteModal,
-  IQuoteModalApiRequest,
-  IQuoteModalSendEmailRequest,
-  IQuoteModalPipedriveRequest,
+  IQuoteModalOnSubmitRequest,
   IQuoteModalFormData,
 } from "@src/components/widgets/pricing/QuoteModal";
-import { DeveloperEditionPricesCloudEmail } from "@src/components/emails/DeveloperEditionPricesCloudEmail";
-import { DeveloperEditionPricesOnPremisesEmail } from "@src/components/emails/DeveloperEditionPricesOnPremisesEmail";
 
 const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
   const { t } = useTranslation("developer-edition-prices");
@@ -137,24 +133,24 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
       Premium: productsData.premiumOnPremises,
     }[formData.supportLevel] || null;
 
-  const apiRequest = async ({
+  const onSubmitRequest = async ({
     from,
-    utmSource,
-    utmCampaign,
-    utmContent,
-    utmTerm,
-  }: IQuoteModalApiRequest) => {
-    const response = await fetch("/api/developer-edition-prices", {
+    country,
+    region,
+  }: IQuoteModalOnSubmitRequest) => {
+    return fetch("/api/developer-edition-prices", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
+        locale,
+        referer: document.referrer,
         fullName: quoteFormData.fullName,
         email: quoteFormData.email,
         phone: quoteFormData.phone,
         companyName: quoteFormData.companyName,
         hosting: formData.hosting,
         development: formData.development,
-        devServerNumber: formData.devServersNumber,
+        devServersNumber: formData.devServersNumber,
         production: formData.production,
         prodServerNumber: formData.prodServerNumber,
         connectionsNumber: formData.connectionsNumber,
@@ -172,137 +168,13 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
         trainingCourses: formData.trainingCourses,
         devPricesPart: "-",
         from,
-        utmSource,
-        utmCampaign,
-        utmContent,
-        utmTerm,
+        country,
+        region,
+        affiliateId: affiliate.id || "",
+        affiliateToken: affiliate.token || "",
+        type: "docsdeveloperrequest",
       }),
-    });
-
-    return response.json();
-  };
-
-  const sendEmailRequest = async ({
-    from,
-    errorFlag,
-    utmCampaignFlag,
-    errorText,
-    isSelected,
-  }: IQuoteModalSendEmailRequest) => {
-    const response = await fetch("/api/send-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        from,
-        to: [process.env.NEXT_PUBLIC_SALES_EMAIL],
-        subject: `${errorFlag} - Docs Developer Request (${formData.hosting}) ${utmCampaignFlag}[from: ${from}]`,
-        html:
-          formData.hosting === "Cloud"
-            ? DeveloperEditionPricesCloudEmail({
-                fullName: quoteFormData.fullName,
-                email: quoteFormData.email,
-                phone: quoteFormData.phone,
-                companyName: quoteFormData.companyName,
-                supportLevel: formData.supportLevel,
-                accessToAPI: isSelected(formData.accessToAPI),
-                liveViewer: isSelected(formData.liveViewer),
-                nativeMobileApps: isSelected(formData.nativeMobileApps),
-                desktopApps: isSelected(formData.desktopApps),
-                trainingCourses: isSelected(formData.trainingCourses),
-                language: locale,
-                affiliateId: affiliate.id || "",
-                affiliateToken: affiliate.token || "",
-                errorText,
-              })
-            : formData.hosting === "On-premises"
-              ? DeveloperEditionPricesOnPremisesEmail({
-                  fullName: quoteFormData.fullName,
-                  email: quoteFormData.email,
-                  phone: quoteFormData.phone,
-                  companyName: quoteFormData.companyName,
-                  development: isSelected(formData.development),
-                  devServersNumber: formData.devServersNumber,
-                  production: isSelected(formData.production),
-                  prodServerNumber: formData.prodServerNumber,
-                  connectionsNumber: formData.connectionsNumber,
-                  nonProduction: isSelected(formData.nonProduction),
-                  nonProdServerNumber: formData.nonProdServerNumber,
-                  branding: formData.branding,
-                  multiTenancy: isSelected(formData.multiTenancy),
-                  disasterRecovery: isSelected(formData.disasterRecovery),
-                  multiServerDeployment: isSelected(
-                    formData.multiServerDeployment,
-                  ),
-                  supportLevel: formData.supportLevel,
-                  accessToAPI: isSelected(formData.accessToAPI),
-                  liveViewer: isSelected(formData.liveViewer),
-                  nativeMobileApps: isSelected(formData.nativeMobileApps),
-                  desktopApps: isSelected(formData.desktopApps),
-                  trainingCourses: isSelected(formData.trainingCourses),
-                  language: locale,
-                  affiliateId: affiliate.id || "",
-                  affiliateToken: affiliate.token || "",
-                  errorText,
-                })
-              : null,
-      }),
-    });
-
-    return response.json();
-  };
-
-  const pipedriveRequest = async ({
-    _ga,
-    utmSource,
-    utmCampaign,
-    title,
-    region,
-    from,
-  }: IQuoteModalPipedriveRequest) => {
-    const response = await fetch("/api/pipedrive", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        owner_id: 12769244,
-        person_id: 131,
-        visible_to: "3",
-        "08f603bf9e0032d5a9f9e5cd39ca8c7a4374ac82": _ga,
-        was_seen: false,
-        title: `devep Docs Developer - ${title} - ${quoteFormData.email} - ${region}`,
-        "6654a8f8686bdba60bbcdf6e69313c150f40b088": JSON.stringify({
-          fullName: quoteFormData.fullName,
-          email: quoteFormData.email,
-          phone: quoteFormData.phone,
-          companyName: quoteFormData.companyName,
-          hosting: formData.hosting,
-          development: formData.development,
-          devServerNumber: formData.devServersNumber,
-          production: formData.production,
-          prodServerNumber: formData.prodServerNumber,
-          connectionsNumber: formData.connectionsNumber,
-          nonProduction: formData.nonProduction,
-          nonProdServerNumber: formData.nonProdServerNumber,
-          supportLevel: formData.supportLevel,
-          branding: formData.branding,
-          multiTenancy: formData.multiTenancy,
-          disasterRecovery: formData.disasterRecovery,
-          multiServerDeployment: formData.multiServerDeployment,
-          accessToAPI: formData.accessToAPI,
-          liveViewer: formData.liveViewer,
-          nativeMobileApps: formData.nativeMobileApps,
-          desktopApps: formData.desktopApps,
-          trainingCourses: formData.trainingCourses,
-          from,
-          devPricesPart: "-",
-          type: "docsdeveloperrequest",
-          langOfPage: locale,
-          ...(utmSource && { utmSource }),
-          ...(utmCampaign && { utmCampaign }),
-        }),
-      }),
-    });
-
-    return response.json();
+    }).then((res) => res.json());
   };
 
   return (
@@ -820,9 +692,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
           quoteFormData={quoteFormData}
           setQuoteFormData={setQuoteFormData}
           buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
-          apiRequest={apiRequest}
-          sendEmailRequest={sendEmailRequest}
-          pipedriveRequest={pipedriveRequest}
+          onSubmitRequest={onSubmitRequest}
           onClose={() => setIsModalOpen(false)}
         />
       </Container>
