@@ -106,6 +106,11 @@ const StyledCardsSortDate = styled.div`
     font-weight: 400;
     padding-right: 32px;
   }
+
+  & ${StyledCardsRefineList} {
+    left: auto;
+    right: 0;
+  }
 `;
 
 const StyledCardsSortDateText = styled(Text)`
