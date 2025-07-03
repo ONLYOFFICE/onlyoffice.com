@@ -115,35 +115,35 @@ const StyledFeatureIconsItemText = styled.li`
   }
 `;
 
-const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean, isLink?: boolean, isServer?: boolean }>`
-  padding: ${({ isLink }) => (isLink ? "12px 0" : "12px 24px")};
-  font-size: ${({ isLink }) => (isLink ? "16px" : "12px")};
+const StyledFeatureIconsButton = styled.a<{ $isPrimary?: boolean, $isLink?: boolean, $isServer?: boolean }>`
+  padding: ${({ $isLink }) => ($isLink ? "12px 0" : "12px 24px")};
+  font-size: ${({ $isLink }) => ($isLink ? "16px" : "12px")};
   line-height: 26px;
   border-radius: 9px;
   text-align: center;
-  text-decoration: ${({ isLink }) => (isLink ? "underline" : "none")};
+  text-decoration: ${({ $isLink }) => ($isLink ? "underline" : "none")};
   display: inline-block;
   transition: 0.2s ease;
   cursor: pointer;
-  text-transform: ${({ isLink }) => (isLink ? "" : "uppercase")};
-  letter-spacing: ${({ isLink }) => (isLink ? "0" : "0.08em")};
-  font-weight: ${({ isLink }) => (isLink ? "400" : "600")};
+  text-transform: ${({ $isLink }) => ($isLink ? "" : "uppercase")};
+  letter-spacing: ${({ $isLink }) => ($isLink ? "0" : "0.08em")};
+  font-weight: ${({ $isLink }) => ($isLink ? "400" : "600")};
 
   @media ${device.mobile} {
     display: block;
     width: 100%;
   }
 
-  color: ${({ isPrimary, isLink, isServer }) => (isServer ? "#444444" : (isLink ? "#ff6f3d" : (isPrimary ? "#ffffff" : "#ffffff")))};
-  background-color: ${({ isPrimary, isLink, isServer }) => (isServer ? "#ffffff" : (isLink ? "" : (isPrimary ? "#ff6f3d" : "#444444")))};
-  border: ${({ isServer }) => (isServer ? "1px solid #AAAAAA" : "transparent")};
+  color: ${({ $isPrimary, $isLink, $isServer }) => ($isServer ? "#444444" : ($isLink ? "#ff6f3d" : ($isPrimary ? "#ffffff" : "#ffffff")))};
+  background-color: ${({ $isPrimary, $isLink, $isServer }) => ($isServer ? "#ffffff" : ($isLink ? "" : ($isPrimary ? "#ff6f3d" : "#444444")))};
+  border: ${({ $isServer }) => ($isServer ? "1px solid #AAAAAA" : "transparent")};
 
   &:hover {
     opacity: 0.9;
     text-decoration: none;
 
-    border: ${({ isServer }) => (isServer ? "1px solid #ff6f3d" : "transparent")};
-    color: ${({ isServer }) => (isServer ? "#ff6f3d" : "")};
+    border: ${({ $isServer }) => ($isServer ? "1px solid #ff6f3d" : "transparent")};
+    color: ${({ $isServer }) => ($isServer ? "#ff6f3d" : "")};
   }
 `;
 

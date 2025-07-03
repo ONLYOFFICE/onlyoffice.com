@@ -158,9 +158,9 @@ const FeatureIconsItem = ({
                     href={href}
                     target={isExternal ? "_blank" : undefined}
                     rel={isExternal ? "noopener noreferrer" : undefined}
-                    isPrimary={isPrimary}
-                    isLink={isLink}
-                    isServer={isServer}
+                    $isPrimary={isPrimary}
+                    $isLink={isLink}
+                    $isServer={isServer}
                   >
                     {label}
                   </StyledFeatureIconsButton>

@@ -23,7 +23,7 @@ const Hero = () => {
       <Container maxWidth="1419px">
         <StyledHeroWrapper>
           <StyledHeroContent>
-            <StyledHeroHeading level={1} size={1}> 
+            <StyledHeroHeading level={1} size={2}> 
               <Trans
                 t={t}
                 i18nKey="HeroTitle"

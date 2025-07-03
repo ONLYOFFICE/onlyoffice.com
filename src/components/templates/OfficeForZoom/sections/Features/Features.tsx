@@ -12,8 +12,8 @@ const Features = () => {
   const { t } = useTranslation("office-for-zoom");
   const { locale } = useRouter();
   
-    const imageSrc1 = '/images/templates/office-for-zoom/button.svg'; 
-    const imageSrc2 = '/images/templates/office-for-zoom/icon.svg'; 
+  const imageSrc1 = '/images/templates/office-for-zoom/button.svg'; 
+  const imageSrc2 = '/images/templates/office-for-zoom/icon.svg'; 
 
   return (
     <Section>
