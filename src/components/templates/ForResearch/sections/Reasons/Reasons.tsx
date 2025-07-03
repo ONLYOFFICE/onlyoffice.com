@@ -63,11 +63,11 @@ const Reasons = () => {
             <StyledReasonsButtons>
               <Button
                 as="a"
-                href="/download.aspx?from=for-research#docs-enterprise"
+                href="/download?from=for-research#docs-enterprise"
                 label={t("GetItNow")}
               />
               <Link
-                href="/success-stories/gwdg.aspx?from=for-research"
+                href="/success-stories/gwdg?from=for-research"
                 label={t("SeeAllIntegrations")}
                 color="main"
                 hover="underline-none"
@@ -102,7 +102,7 @@ const Reasons = () => {
               label={t("QuoteAuthorInfo1")}
             />
             <Link
-                href="/success-stories/gwdg.aspx?from=for-research"
+                href="/success-stories/gwdg?from=for-research"
                 label={t("QuoteLink")}
                 color="main"
                 textUnderline
@@ -121,11 +121,11 @@ const Reasons = () => {
             <StyledReasonsButtons>
               <Button
                 as="a"
-                href="/download-workspace.aspx?from=for-research"
+                href="/download-workspace?from=for-research"
                 label={t("GetItNow")}
               />
               <Link
-                href="/workspace.aspx?from=for-research"
+                href="/workspace?from=for-research"
                 label={t("LearnMoreReasons")}
                 color="main"
                 hover="underline-none"

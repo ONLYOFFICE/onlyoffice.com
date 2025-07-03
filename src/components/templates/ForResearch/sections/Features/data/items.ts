@@ -14,14 +14,14 @@ export const items = [
         },
         links: [
           {
-            href: "/docspace-registration.aspx?from=for-research",
+            href: "/docspace-registration?from=for-research",
             label: "UseItForFree",
             isExternal: false,
             isPrimary: false,
             isLink: false,
           },
           {
-            href: "/docspace.aspx?from=for-research",
+            href: "/docspace?from=for-research",
             label: "LearnMore",
             isExternal: false,
             isPrimary: false,

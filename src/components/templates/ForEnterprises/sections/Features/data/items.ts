@@ -17,21 +17,21 @@ export const items = [
         },
         links: [
           {
-            href: "/docspace-registration.aspx?from=for-enterprises",
+            href: "/docspace-registration?from=for-enterprises",
             label: "UseItForFree",
             isExternal: false,
             isPrimary: false,
             isLink: false,
           },
           {
-            href: "/download.aspx#docspace-enterprise",
+            href: "/download#docspace-enterprise",
             label: "RunOnYourOwnServer",
             isExternal: false,
             isPrimary: true,
             isLink: false,
           },
           {
-            href: "/docspace.aspx?from=for-enterprises",
+            href: "/docspace?from=for-enterprises",
             label: "LearnMore",
             isExternal: false,
             isPrimary: false,
@@ -51,7 +51,7 @@ export const items = [
             label: "EnterpriseFeature23",
             links: [
               {
-                href: "/all-connectors.aspx?from=for-enterprises",
+                href: "/all-connectors?from=for-enterprises",
                 label: "SeeAllAvailableOptions",
                 isExternal: false,
               },
@@ -60,21 +60,21 @@ export const items = [
         ],
         links: [
           {
-            href: "/download.aspx#docs-enterprise",
+            href: "/download#docs-enterprise",
             label: "TryNow",
             isExternal: false,
             isPrimary: false,
             isLink: false,
           },
           {
-            href: "/docs-enterprise.aspx?from=for-enterprises",
+            href: "/docs-enterprise?from=for-enterprises",
             label: "LearnMore",
             isExternal: true,
             isPrimary: false,
             isLink: true,
           },
           {
-            href: "/docs-enterprise-prices.aspx?from=for-enterprises",
+            href: "/docs-enterprise-prices?from=for-enterprises",
             label: "SeePrices",
             isExternal: true,
             isPrimary: false,
@@ -129,21 +129,21 @@ export const items = [
         },
        links: [
           {
-            href: "/download-workspace.aspx#workspace-enterprise",
+            href: "/download-workspace#workspace-enterprise",
             label: "TryNow",
             isExternal: false,
             isPrimary: false,
             isLink: false,
           },
           {
-            href: "/workspace-prices.aspx?from=for-enterprises",
+            href: "/workspace-prices?from=for-enterprises",
             label: "SeePrices",
             isExternal: false,
             isPrimary: false,
             isLink: true,
           },
           {
-            href: "/workspace-enterprise.aspx?from=for-enterprises",
+            href: "/workspace-enterprise?from=for-enterprises",
             label: "LearnMore",
             isExternal: false,
             isPrimary: false,
@@ -189,14 +189,14 @@ export const items = [
         },
         links: [
           {
-            href: "/download-desktop.aspx#desktop",
+            href: "/download-desktop#desktop",
             label: "DownloadNow",
             isExternal: false,
             isPrimary: true,
             isLink: false,
           },
           {
-            href: "/desktop.aspx?from=for-enterprises",
+            href: "/desktop?from=for-enterprises",
             label: "LearnMore",
             isExternal: false,
             isPrimary: false,
@@ -243,21 +243,21 @@ export const items = [
         },
         links: [
           {
-            href: "/download-desktop.aspx#mobile",
+            href: "/download-desktop#mobile",
             label: "DownloadNow",
             isExternal: false,
             isPrimary: true,
             isLink: false,
           },
           {
-            href: "/office-for-ios.aspx?from=for-enterprises",
+            href: "/office-for-ios?from=for-enterprises",
             label: "iOS",
             isExternal: false,
             isPrimary: false,
             isLink: true,
           },
           {
-            href: "/office-for-android.aspx?from=for-enterprises",
+            href: "/office-for-android?from=for-enterprises",
             label: "Android",
             isExternal: false,
             isPrimary: false,

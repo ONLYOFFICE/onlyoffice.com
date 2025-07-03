@@ -15,14 +15,14 @@ export const items = [
         },
         links: [
           {
-            href: "/docspace.aspx?from=for-small-business",
+            href: "/docspace?from=for-small-business",
             label: "LearnMore",
             isExternal: false,
             isPrimary: false,
             isLink: true,
           },
           {
-            href: "/docspace-registration.aspx?from=for-small-business",
+            href: "/docspace-registration?from=for-small-business",
             label: "UseItForFree",
             isExternal: false,
             isPrimary: false,
@@ -39,14 +39,14 @@ export const items = [
         },
         links: [
           {
-            href: "/workspace.aspx?from=for-small-business",
+            href: "/workspace?from=for-small-business",
             label: "LearnMore",
             isExternal: false,
             isPrimary: false,
             isLink: true,
           },
           {
-            href: "/download-workspace.aspx?from=for-small-business",
+            href: "/download-workspace?from=for-small-business",
             label: "RunOnYourOwnServer",
             isExternal: false,
             isPrimary: false,
@@ -107,7 +107,7 @@ export const items = [
             label: "SMBsFeature34",
             links: [
               {
-                href: "/all-connectors.aspx?from=for-small-business",
+                href: "/all-connectors?from=for-small-business",
                 label: "SeeAllAvailableOptions",
                 isExternal: false,
               },
@@ -126,21 +126,21 @@ export const items = [
         ],
        links: [
           {
-            href: "/office-suite.aspx?from=for-small-business",
+            href: "/office-suite?from=for-small-business",
             label: "LearnMore",
             isExternal: false,
             isPrimary: false,
             isLink: true,
           },
           {
-            href: "/docs-registration.aspx?from=for-small-business",
+            href: "/docs-registration?from=for-small-business",
             label: "UseInTheCloud",
             isExternal: false,
             isPrimary: false,
             isLink: false,
           },
           {
-            href: "/download.aspx#docs-enterprise",
+            href: "/download#docs-enterprise",
             label: "RunOnYourOwnServer",
             isExternal: false,
             isPrimary: false,
@@ -207,14 +207,14 @@ export const items = [
         },
         links: [
           {
-            href: "/desktop.aspx?from=for-small-business",
+            href: "/desktop?from=for-small-business",
             label: "LearnMore",
             isExternal: false,
             isPrimary: true,
             isLink: true,
           },
           {
-            href: "/download-desktop.aspx#desktop",
+            href: "/download-desktop#desktop",
             label: "DownloadNow",
             isExternal: false,
             isPrimary: true,
@@ -261,21 +261,21 @@ export const items = [
         },
         links: [
           {
-            href: "/office-for-ios.aspx?from=for-small-business",
+            href: "/office-for-ios?from=for-small-business",
             label: "iOS",
             isExternal: false,
             isPrimary: false,
             isLink: true,
           },
           {
-            href: "/office-for-android.aspx?from=for-small-business",
+            href: "/office-for-android?from=for-small-business",
             label: "Android",
             isExternal: false,
             isPrimary: false,
             isLink: true,
           },
           {
-            href: "/download-desktop.aspx#mobile",
+            href: "/download-desktop#mobile",
             label: "DownloadNow",
             isExternal: false,
             isPrimary: true,

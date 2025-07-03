@@ -23,7 +23,7 @@ export const items: IFeatureItemExtended[] = [
     heading: "FeatureToolsHead2",
     text: "FeatureToolsText2",
     link: {
-      href: "/security.aspx#data_encryption",
+      href: "/security#data_encryption",
       label: "LearnMoreTools",
       isExternal: false
     },
@@ -37,7 +37,7 @@ export const items: IFeatureItemExtended[] = [
     heading: "FeatureHead3",
     text: "FeatureToolsText3",
     link: {
-      href: "/private-rooms.aspx?from=for-research",
+      href: "/private-rooms?from=for-research",
       label: "LearnMoreTools",
       isExternal: false
     },
@@ -51,7 +51,7 @@ export const items: IFeatureItemExtended[] = [
     heading: "FeatureToolsHead4",
     text: "FeatureToolsText4",
     link: {
-      href: "/security.aspx#access_control",
+      href: "/security#access_control",
       label: "LearnMoreTools",
       isExternal: false
     },

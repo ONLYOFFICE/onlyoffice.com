@@ -118,7 +118,7 @@ export const items = [
             label: "OnlineDocumentFeature2",
             links: [
               {
-                href: "/all-connectors.aspx",
+                href: "/all-connectors",
                 label: "connectors",
                 isExternal: false,
               },
