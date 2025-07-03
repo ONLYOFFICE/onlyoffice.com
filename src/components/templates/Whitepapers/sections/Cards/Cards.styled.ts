@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 
 const StyledCardsFiltersWrapper = styled.div`
   display: flex;
@@ -7,7 +8,71 @@ const StyledCardsFiltersWrapper = styled.div`
   justify-content: space-between;
 `;
 
-const StyledCardsFilterSelect = styled.div``;
+const StyledCardsFilterSelect = styled.div`
+  position: relative;
+  padding-right: 32px;
+  cursor: pointer;
+`;
+
+const StyledCardsFilterHeading = styled(Heading)<{
+  $isOpen: boolean;
+}>`
+  &::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("/images/icons/chevron-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: ${({ $isOpen }) => ($isOpen ? "translateY(-50%) rotate(180deg)" : "translateY(-50%)")};
+    transition-duration: 300ms;
+  }
+`;
+
+const StyledCardsRefineList = styled.ul<{
+  $isOpen: boolean;
+}>`
+  min-width: 220px;
+  padding-top: 14px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  visibility: ${({ $isOpen }) => ($isOpen ? "visible" : "hidden")};
+  opacity: ${({ $isOpen }) => ($isOpen ? "1" : "0")};
+  transition-duration: 300ms;
+`;
+
+const StyledCardsRefineText = styled(Text)<{
+  $isActive: boolean;
+}>`
+  color: ${({ $isActive }) => ($isActive ? "#ff6f3d" : "#333333")};
+  transition-duration: 300ms;
+`;
+
+const StyledCardsRefineItems = styled.li<{
+  $isActive: boolean;
+}>`
+  padding: 16px;
+  background-color: ${({ $isActive }) => ($isActive ? "#f5f5f5" : "#fff")};
+  transition-duration: 300ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+
+  &:hover ${StyledCardsRefineText} {
+    color: #ff6f3d;
+  }
+`;
+
 
 const StyledCardsSortSelect = styled.div``;
 
@@ -31,6 +96,10 @@ const StyledCardsList = styled.div`
 export {
   StyledCardsFiltersWrapper,
   StyledCardsFilterSelect,
+  StyledCardsFilterHeading,
+  StyledCardsRefineList,
+  StyledCardsRefineItems,
+  StyledCardsRefineText,
   StyledCardsSortSelect,
   StyledCardsSortModules,
   StyledCardsSortDate,

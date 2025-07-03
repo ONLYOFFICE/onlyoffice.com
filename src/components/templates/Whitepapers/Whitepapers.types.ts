@@ -16,7 +16,6 @@ interface ICardWhitepapersItems extends ICardWhitepapersItemsProps {
 
 interface ICardDatasheetsItemsProps {
   title: string;
-  date: string;
   product: string;
   image_url: string;
   download_url: string;

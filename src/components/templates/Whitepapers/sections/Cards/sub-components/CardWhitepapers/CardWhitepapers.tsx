@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { Text } from '@src/components/ui/Text';
 import { CardForm } from '../CardForm';
+import { formatDateCards } from '../../utils/formatDateCards';
 import { ICardWhitepapersItemsProps } from '@src/components/templates/Whitepapers/Whitepapers.types';
 
 import {
@@ -18,6 +20,7 @@ import {
 
 
 const CardWhitepapers = ({ head, title, date, download_url, description }: ICardWhitepapersItemsProps) => {
+  const { locale } = useRouter();
   const { t } = useTranslation("whitepapers");
   const [openModal, setOpenModal] = useState(false);
 
@@ -44,7 +47,7 @@ const CardWhitepapers = ({ head, title, date, download_url, description }: ICard
             label={title}
           />
           <StyledCardWhitepapersDate
-            label={date}
+            label={formatDateCards(date, locale)}
             color='#808080'
             fontStyle='italic'
             size={4}

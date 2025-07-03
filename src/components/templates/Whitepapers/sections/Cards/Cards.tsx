@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -16,15 +17,29 @@ import {
   StyledCardsSortDate,
   StyledCardsContent,
   StyledCardsHeading,
-  StyledCardsList
+  StyledCardsList,
+  StyledCardsFilterHeading,
+  StyledCardsRefineList,
+  StyledCardsRefineItems,
+  StyledCardsRefineText
 } from "./Cards.styled";
 
 const Cards = ({ sortValue }: ICardsProp ) => {
   const { t } = useTranslation("whitepapers");
-  const {
-    inputFilterWhitepaperItems,
-    inputFilterDatasheetsItems
-  } = useFilterInputICardsItems(cardWhitepapersItems, cardDatasheetsItems, sortValue);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [choosedFilter, setChoosedFilter] = useState(t("CardsFiltersAll"));
+
+  const cardsContentList = useMemo(() => {
+    return [
+      t("CardsFiltersAll"),
+      t("CardsHeadingWhitepapers"),
+      t("CardsHeadingDatasheets")
+    ];
+  }, [t]);
+
+  const { inputFilterWhitepaperItems, inputFilterDatasheetsItems} = useFilterInputICardsItems(
+    cardWhitepapersItems, cardDatasheetsItems, sortValue
+  );
 
   return (
     <Section
@@ -33,8 +48,29 @@ const Cards = ({ sortValue }: ICardsProp ) => {
     >
       <Container>
         <StyledCardsFiltersWrapper>
-          <StyledCardsFilterSelect>
-            {t("CardsFiltersAll")}
+          <StyledCardsFilterSelect onClick={() => setIsFilterOpen(!isFilterOpen)}>
+            <StyledCardsFilterHeading
+              level={5}
+              size={4}
+              label={choosedFilter}
+              $isOpen={isFilterOpen}
+            />
+            <StyledCardsRefineList
+              $isOpen={isFilterOpen}
+            >
+              {cardsContentList.map((label) => (
+                <StyledCardsRefineItems
+                  key={label}
+                  onClick={() => setChoosedFilter(label)}
+                  $isActive={choosedFilter === label}
+                >
+                  <StyledCardsRefineText
+                    $isActive={choosedFilter === label}
+                    label={label}
+                  />
+                </StyledCardsRefineItems>
+              ))}
+            </StyledCardsRefineList>
           </StyledCardsFilterSelect>
           <StyledCardsSortSelect>
             <StyledCardsSortModules>
@@ -45,7 +81,9 @@ const Cards = ({ sortValue }: ICardsProp ) => {
             </StyledCardsSortDate>
           </StyledCardsSortSelect>
         </StyledCardsFiltersWrapper>
-        {inputFilterWhitepaperItems.length > 0 && (
+        {inputFilterWhitepaperItems.length > 0 &&
+          (choosedFilter === t("CardsHeadingWhitepapers") ||
+          choosedFilter === t("CardsFiltersAll")) && (
           <StyledCardsContent>
             <StyledCardsHeading
               label={t("CardsHeadingWhitepapers")}
@@ -67,7 +105,9 @@ const Cards = ({ sortValue }: ICardsProp ) => {
             </StyledCardsList>
           </StyledCardsContent>
         )}
-        {inputFilterDatasheetsItems.length > 0 && (
+        {inputFilterDatasheetsItems.length > 0 &&
+        (choosedFilter === t("CardsHeadingDatasheets") ||
+        choosedFilter === t("CardsFiltersAll")) && (
           <StyledCardsContent>
             <StyledCardsHeading
               label={t("CardsHeadingDatasheets")}
@@ -83,7 +123,6 @@ const Cards = ({ sortValue }: ICardsProp ) => {
                   product={item.product}
                   image_url={item.image_url}
                   download_url={item.download_url}
-                  date={item.date}
                 />
               ))}
             </StyledCardsList>
