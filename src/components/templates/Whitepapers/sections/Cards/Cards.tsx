@@ -18,16 +18,22 @@ import {
   StyledCardsContent,
   StyledCardsHeading,
   StyledCardsList,
-  StyledCardsFilterHeading,
+  StyledCardsRefineHeading,
   StyledCardsRefineList,
   StyledCardsRefineItems,
-  StyledCardsRefineText
+  StyledCardsRefineText,
+  StyledCardsSortModuleText,
+  StyledCardsSortDateText
 } from "./Cards.styled";
 
 const Cards = ({ sortValue }: ICardsProp ) => {
   const { t } = useTranslation("whitepapers");
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [choosedFilter, setChoosedFilter] = useState(t("CardsFiltersAll"));
+  const [isModuleOpen, setIsModuleOpen] = useState(false);
+  const [choosedModule, setChoosedModule] = useState(t("CardsFiltersAll"));
+  const [isDateOpen, setIsDateOpen] = useState(false);
+  const [choosedDate, setChoosedDate] = useState(t("CardsSortNewestOldest"));
 
   const cardsContentList = useMemo(() => {
     return [
@@ -37,9 +43,20 @@ const Cards = ({ sortValue }: ICardsProp ) => {
     ];
   }, [t]);
 
+  const cardsSortDateList = useMemo(() => {
+    return [
+      t("CardsSortNewestOldest"),
+      t("CardsSortOldestNewest")
+    ];
+  }, [t]);
+
   const { inputFilterWhitepaperItems, inputFilterDatasheetsItems} = useFilterInputICardsItems(
     cardWhitepapersItems, cardDatasheetsItems, sortValue
   );
+
+  const sortModules = useMemo(() => {
+    return cardDatasheetsItems.sort((a, b) => a.title.localeCompare(b.title));
+  }, []);
 
   return (
     <Section
@@ -49,7 +66,7 @@ const Cards = ({ sortValue }: ICardsProp ) => {
       <Container>
         <StyledCardsFiltersWrapper>
           <StyledCardsFilterSelect onClick={() => setIsFilterOpen(!isFilterOpen)}>
-            <StyledCardsFilterHeading
+            <StyledCardsRefineHeading
               level={5}
               size={4}
               label={choosedFilter}
@@ -73,11 +90,61 @@ const Cards = ({ sortValue }: ICardsProp ) => {
             </StyledCardsRefineList>
           </StyledCardsFilterSelect>
           <StyledCardsSortSelect>
-            <StyledCardsSortModules>
-              {t("CardsSortModules")}
+            <StyledCardsSortModules onClick={() => setIsModuleOpen(!isModuleOpen)}>
+              <StyledCardsSortModuleText
+                fontSize="11px"
+                textTransform="uppercase"
+                color="#808080"
+                label={t("CardsSortModules")}
+              />
+              <StyledCardsRefineHeading
+                $isOpen={isModuleOpen}
+                label={choosedModule}
+                level={5}
+                size={6}
+              />
+              <StyledCardsRefineList $isOpen={isModuleOpen}>
+                {sortModules.map((item) => (
+                  <StyledCardsRefineItems
+                    key={item.title}
+                    onClick={() => setChoosedModule(item.title)}
+                    $isActive={choosedModule === item.title}
+                  >
+                    <StyledCardsRefineText
+                      $isActive={choosedModule === item.title}
+                      label={item.title}
+                    />
+                  </StyledCardsRefineItems>
+                ))}
+              </StyledCardsRefineList>
             </StyledCardsSortModules>
-            <StyledCardsSortDate>
-              {t("CardsSortBy")}
+            <StyledCardsSortDate onClick={() => setIsDateOpen(!isDateOpen)}>
+              <StyledCardsSortDateText
+                label={t("CardsSortBy")}
+                fontSize="11px"
+                textTransform="uppercase"
+                color="#808080"
+              />
+              <StyledCardsRefineHeading
+                $isOpen={isDateOpen}
+                label={choosedDate}
+                level={5}
+                size={6}
+              />
+              <StyledCardsRefineList $isOpen={isDateOpen}>
+                {cardsSortDateList.map((date) => (
+                  <StyledCardsRefineItems
+                    key={date}
+                    onClick={() => setChoosedDate(date)}
+                    $isActive={choosedDate === date}
+                  >
+                    <StyledCardsRefineText
+                      $isActive={choosedDate === date}
+                      label={date}
+                    />
+                  </StyledCardsRefineItems>
+                ))}
+              </StyledCardsRefineList>
             </StyledCardsSortDate>
           </StyledCardsSortSelect>
         </StyledCardsFiltersWrapper>

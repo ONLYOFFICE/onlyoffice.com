@@ -14,13 +14,13 @@ const StyledCardsFilterSelect = styled.div`
   cursor: pointer;
 `;
 
-const StyledCardsFilterHeading = styled(Heading)<{
+const StyledCardsRefineHeading = styled(Heading)<{
   $isOpen: boolean;
 }>`
   &::after {
     content: "";
     width: 24px;
-    height: 24px;
+    height: 100%;
     background-image: url("/images/icons/chevron-down.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -74,11 +74,43 @@ const StyledCardsRefineItems = styled.li<{
 `;
 
 
-const StyledCardsSortSelect = styled.div``;
+const StyledCardsSortSelect = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+`;
 
-const StyledCardsSortModules = styled.div``;
+const StyledCardsSortModules = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 
-const StyledCardsSortDate = styled.div``;
+  & ${StyledCardsRefineHeading} {
+    font-weight: 400;
+    padding-right: 32px;
+  }
+`;
+
+const StyledCardsSortModuleText = styled(Text)`
+  padding-right: 8px;
+`;
+
+const StyledCardsSortDate = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  & ${StyledCardsRefineHeading} {
+    font-weight: 400;
+    padding-right: 32px;
+  }
+`;
+
+const StyledCardsSortDateText = styled(Text)`
+  padding-right: 8px;
+`;
 
 const StyledCardsContent = styled.div`
   margin-top: 56px;
@@ -96,13 +128,15 @@ const StyledCardsList = styled.div`
 export {
   StyledCardsFiltersWrapper,
   StyledCardsFilterSelect,
-  StyledCardsFilterHeading,
+  StyledCardsRefineHeading,
   StyledCardsRefineList,
   StyledCardsRefineItems,
   StyledCardsRefineText,
   StyledCardsSortSelect,
   StyledCardsSortModules,
+  StyledCardsSortModuleText,
   StyledCardsSortDate,
+  StyledCardsSortDateText,
   StyledCardsContent,
   StyledCardsHeading,
   StyledCardsList

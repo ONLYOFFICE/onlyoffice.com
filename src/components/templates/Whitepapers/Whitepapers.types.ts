@@ -23,6 +23,7 @@ interface ICardDatasheetsItemsProps {
 
 interface ICardDatasheetsItems extends ICardDatasheetsItemsProps {
   id: number;
+  date: string;
 }
 
 interface ICardFormProp {
