@@ -203,7 +203,7 @@ export default async function handler(
     const transporter = emailTransporter();
     await transporter.sendMail({
       from,
-      to: [process.env.NEXT_PUBLIC_SALES_EMAIL!],
+      to: [process.env.SALES_EMAIL!],
       subject: `${errorMessages.length ? "[Error] " : ""}${companyName} - DocSpace Developer prices Request ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
       html: DocSpacePricesEmail({
         fullName,
