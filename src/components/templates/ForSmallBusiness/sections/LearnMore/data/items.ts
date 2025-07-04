@@ -2,7 +2,8 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 
 export const items: IBlogCard[] = [
   {
-    imgUrl: "/images/templates/for-small-business/learn-more/onlyoffice_moderatorenschule.jpg",
+    imgUrl:
+      "/images/templates/for-small-business/learn-more/onlyoffice_moderatorenschule.jpg",
     heading: { label: "UseCase" },
     text: "HowONLYOFFICEWorkspace",
     links: [
@@ -14,7 +15,8 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/for-small-business/learn-more/onlyoffice_guide.jpg",
+    imgUrl:
+      "/images/templates/for-small-business/learn-more/onlyoffice_guide.jpg",
     heading: { label: "Guide" },
     text: "HowToMigrate",
     links: [
@@ -26,7 +28,8 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/for-small-business/learn-more/onlyoffice_pt_todico_use_case.jpg",
+    imgUrl:
+      "/images/templates/for-small-business/learn-more/onlyoffice_pt_todico_use_case.jpg",
     heading: { label: "UseCase" },
     text: "HowPTTODICO",
     links: [

@@ -1,6 +1,6 @@
 export const items = [
-{
-    items: [ 
+  {
+    items: [
       {
         connectorsHeading: "SMBsHead1",
         items: [
@@ -12,6 +12,8 @@ export const items = [
         ],
         image: {
           url: "SMBsImgUrl",
+          width: 544,
+          height: 367,
         },
         links: [
           {
@@ -33,9 +35,17 @@ export const items = [
       {
         connectorsHeading: "SMBsHead2",
         connectorsSubheading: "SMBsSub2",
-        items: ["SMBsFeature2", "SMBsFeature22", "SMBsFeature23", "SMBsFeature24", "SMBsFeature25"],
+        items: [
+          "SMBsFeature2",
+          "SMBsFeature22",
+          "SMBsFeature23",
+          "SMBsFeature24",
+          "SMBsFeature25",
+        ],
         image: {
           url: "SMBsImgUrl2",
+          width: 448,
+          height: 360,
         },
         links: [
           {
@@ -51,7 +61,7 @@ export const items = [
             isExternal: false,
             isPrimary: false,
             isLink: false,
-            isServer: true
+            isServer: true,
           },
         ],
         connectorsItems: [
@@ -91,16 +101,25 @@ export const items = [
           link: {
             href: "https://www.capterra.com/p/141243/ONLYOFFICE/reviews/1055353/",
             label: "Quote2Link",
-            isExternal: true
-          }
-      }
+            isExternal: true,
+          },
+        },
       },
       {
         connectorsHeading: "SMBsHead3",
         connectorsSubheading: "SMBsSub3",
-        items: ["SMBsFeature3", "SMBsFeature32", "SMBsFeature33", "SMBsFeature34", "SMBsFeature35", "SMBsFeature36"],
+        items: [
+          "SMBsFeature3",
+          "SMBsFeature32",
+          "SMBsFeature33",
+          "SMBsFeature34",
+          "SMBsFeature35",
+          "SMBsFeature36",
+        ],
         image: {
           url: "SMBsImgUrl3",
+          width: 448,
+          height: 361,
         },
         textWithLinks: [
           {
@@ -124,7 +143,7 @@ export const items = [
             ],
           },
         ],
-       links: [
+        links: [
           {
             href: "/office-suite?from=for-small-business",
             label: "LearnMore",
@@ -145,7 +164,7 @@ export const items = [
             isExternal: false,
             isPrimary: false,
             isLink: false,
-            isServer: true
+            isServer: true,
           },
         ],
         connectorsItems: [
@@ -162,7 +181,7 @@ export const items = [
             image: {
               url: "/images/templates/for-small-business/features/icons.svg",
               width: 96,
-              height:40,
+              height: 40,
               positionY: "-458px",
             },
             label: "",
@@ -194,16 +213,24 @@ export const items = [
           link: {
             href: "https://www.capterra.com/p/141243/ONLYOFFICE/reviews/1723725/",
             label: "Quote3Link",
-            isExternal: true
-          }
-        }
+            isExternal: true,
+          },
+        },
       },
       {
         connectorsHeading: "SMBsHead4",
         connectorsSubheading: "SMBsSub4",
-        items: ["SMBsFeature4", "SMBsFeature42", "SMBsFeature43", "SMBsFeature44", "SMBsFeature45"],
+        items: [
+          "SMBsFeature4",
+          "SMBsFeature42",
+          "SMBsFeature43",
+          "SMBsFeature44",
+          "SMBsFeature45",
+        ],
         image: {
           url: "SMBsImgUrl4",
+          width: 544,
+          height: 280,
         },
         links: [
           {
@@ -226,7 +253,7 @@ export const items = [
             image: {
               url: "/images/templates/for-small-business/features/icons.svg",
               width: 96,
-              height:40,
+              height: 40,
               positionY: "-458px",
             },
             label: "",
@@ -254,10 +281,16 @@ export const items = [
       {
         connectorsHeading: "SMBsHead5",
         connectorsSubheading: "SMBsSub5",
-        items: ["SMBsFeature5", "SMBsFeature52", "SMBsFeature53", "SMBsFeature54"],
+        items: [
+          "SMBsFeature5",
+          "SMBsFeature52",
+          "SMBsFeature53",
+          "SMBsFeature54",
+        ],
         image: {
           url: "SMBsImgUrl5",
-          url2x: "SMBsImgUrl5",
+          width: 544,
+          height: 280,
         },
         links: [
           {
@@ -287,7 +320,7 @@ export const items = [
             image: {
               url: "/images/templates/for-small-business/features/icons.svg",
               width: 96,
-              height:40,
+              height: 40,
               positionY: "-458px",
             },
             label: "",
@@ -337,10 +370,10 @@ export const items = [
           link: {
             href: "https://www.capterra.com/p/141243/ONLYOFFICE/reviews/1081997/",
             label: "Quote5Link",
-            isExternal: true
-          }
-        }
+            isExternal: true,
+          },
+        },
       },
     ],
-},
-]
+  },
+];

@@ -15,14 +15,14 @@ const LearnMore = () => {
   return (
     <Section tabletSmallSpacing={["72px", "72px"]} background="#F5F5F5">
       <Container>
-          <StyledLearnMoreHeading level={1} size={3}> 
-              <Trans
-                t={t}
-                i18nKey="LearnMoreTitle"
-                components={[<Text as="span" color="#FF6F3D" key="0" />]}
-              />
-          </StyledLearnMoreHeading>
-          <StyledLearnMoreItems>
+        <StyledLearnMoreHeading level={1} size={3}>
+          <Trans
+            t={t}
+            i18nKey="LearnMoreTitle"
+            components={[<Text as="span" color="#FF6F3D" key="0" />]}
+          />
+        </StyledLearnMoreHeading>
+        <StyledLearnMoreItems>
           {items.map((item, index) => (
             <BlogCard
               className="blog-card"

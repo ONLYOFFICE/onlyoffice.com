@@ -6,7 +6,7 @@ const StyledConnectors = styled.div`
   max-width: 1120px;
   margin: auto;
 
-    @media ${device.tablet} {
+  @media ${device.tablet} {
     overflow-x: scroll;
   }
 `;
@@ -20,33 +20,26 @@ const StyledConnectorsItems = styled.ul`
     margin: 0 40px;
     width: 1120px;
   }
+`;
 
-  li {
-    filter: grayscale(100%);
-    transition: filter 0.5s;
+const StyledItem = styled.li<{
+  $width: number;
+  $height: number;
+  $backgroundImage: string;
+  $backgroundPosition: string;
+}>`
+  width: ${(props) => props.$width}px;
+  height: ${(props) => props.$height}px;
+  background-image: ${(props) => props.$backgroundImage};
+  background-position: ${(props) => props.$backgroundPosition};
+  background-size: 1074px auto;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
 
-      &:hover {
-        filter: grayscale(0);
-      }
-  }
-
-  > div {
-    @media ${device.desktop} {
-      width: calc(33.333% - 24px);
-      max-width: 100%;
-    }
-
-    @media ${device.tablet} {
-      width: calc(50% - 16px);
-    }
-
-    @media ${device.mobile} {
-      width: 100%;
-    }
+  &:hover {
+    filter: grayscale(0);
   }
 `;
 
-export {
-  StyledConnectors,
-  StyledConnectorsItems
-};
+export { StyledConnectors, StyledConnectorsItems, StyledItem };

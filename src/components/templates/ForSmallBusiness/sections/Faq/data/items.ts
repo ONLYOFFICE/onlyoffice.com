@@ -9,14 +9,20 @@ export const items: ICollapseExtended[] = [
     label: "QuestionSMBs1",
     children: "AnswerSMBs1",
     links: [
-      { href: "https://helpcenter.onlyoffice.com/administration/external-services.aspx", isExternal: true },
+      {
+        href: "https://helpcenter.onlyoffice.com/workspace/administration/connecting-external-services",
+        isExternal: true,
+      },
     ],
   },
   {
     label: "QuestionSMBs2",
     children: "AnswerSMBs2",
     links: [
-      { href: "https://www.onlyoffice.com/blog/2018/05/how-onlyoffice-complies-with-gdpr/", isExternal: true },
+      {
+        href: "https://www.onlyoffice.com/blog/2018/05/how-onlyoffice-complies-with-gdpr/",
+        isExternal: true,
+      },
     ],
   },
   {

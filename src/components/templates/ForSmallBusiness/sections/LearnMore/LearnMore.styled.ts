@@ -48,7 +48,4 @@ const StyledLearnMoreItems = styled.div`
   }
 `;
 
-export {
-  StyledLearnMoreHeading,
-  StyledLearnMoreItems,
-};
+export { StyledLearnMoreHeading, StyledLearnMoreItems };

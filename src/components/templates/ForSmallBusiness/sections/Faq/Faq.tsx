@@ -7,7 +7,8 @@ const Faq = () => {
   const { t } = useTranslation("for-small-business");
 
   return (
-    <FaqCollapse borderTop
+    <FaqCollapse
+      borderTop
       items={items.map(({ label, children, links }) => ({
         label: t(label),
         content: links ? (

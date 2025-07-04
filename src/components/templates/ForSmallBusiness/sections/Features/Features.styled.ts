@@ -6,6 +6,17 @@ const StyledFeaturesContent = styled.div`
   gap: 32px;
   align-items: center;
 
+  > div:first-child h2 {
+    padding: 0 0 72px;
+
+    @media ${device.tabletS} {
+      padding: 0 0 48px;
+    }
+    @media ${device.mobile} {
+      padding: 0 0 24px;
+    }
+  }
+
   h2 {
     max-width: 740px;
     margin: auto;
@@ -32,17 +43,8 @@ const StyledFeaturesContent = styled.div`
   > div {
     padding: 112px 0;
 
-    > div {
-      gap: 32px; 
-
-      > div {
-        flex: 0 1 544px;
-        margin-right: 0;
-      }
-    }
-
     @media ${device.mobile} {
-     padding: 48px 0;
+      padding: 48px 0;
     }
 
     &:first-child {
@@ -90,10 +92,10 @@ const StyledFeaturesContent = styled.div`
 
       > div {
         flex: 0;
-      } 
+      }
     }
   }
-    
+
   @media ${device.mobile} {
     div {
       font-size: 14px;
@@ -106,7 +108,4 @@ const StyledFeaturesContent = styled.div`
   }
 `;
 
-
-export {
-  StyledFeaturesContent
-};
+export { StyledFeaturesContent };
