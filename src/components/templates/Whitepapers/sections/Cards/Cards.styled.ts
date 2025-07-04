@@ -14,6 +14,10 @@ const StyledCardsFilterSelect = styled.div`
   position: relative;
   padding-right: 32px;
   cursor: pointer;
+
+  @media ${device.mobile} {
+    display: none;
+  }
 `;
 
 const StyledCardsRefineHeading = styled(Heading)<{
@@ -168,6 +172,7 @@ const StyledCardsFilterMobIcon = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
   display: none;
   cursor: pointer;
 
@@ -175,6 +180,21 @@ const StyledCardsFilterMobIcon = styled.div`
     display: block;
   }
 `;
+
+
+const StyledCardsRefineCounter = styled(Text)`
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -16px;
+  bottom: -7px;
+  background-color: #ff6f3d;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+`
 
 const StyledCardsFilterMob = styled.div<{
   $display: boolean;
@@ -290,6 +310,14 @@ const StyledCardsFilterMobApplyBtn = styled(Button)`
   width: 100%;
 `;
 
+const StyledCardsRefineMobHeading = styled(Heading)`
+  display: none;
+
+  @media ${device.mobile} {
+    display: block;
+  }
+`;
+
 export {
   StyledCardsFiltersWrapper,
   StyledCardsFilterSelect,
@@ -323,4 +351,6 @@ export {
   StyledCardsSortMobOption,
   StyledCardsFilterMobFooter,
   StyledCardsFilterMobApplyBtn,
+  StyledCardsRefineCounter,
+  StyledCardsRefineMobHeading
 }

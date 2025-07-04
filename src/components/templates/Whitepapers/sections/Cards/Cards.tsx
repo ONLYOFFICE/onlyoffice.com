@@ -41,7 +41,9 @@ import {
   StyledCardsSortMobHeading,
   StyledCardsSortMobSelect,
   StyledCardsSortMobOption,
-  StyledCardsMobDateHeading
+  StyledCardsMobDateHeading,
+  StyledCardsRefineCounter,
+  StyledCardsRefineMobHeading
 } from "./Cards.styled";
 
 const Cards = ({ sortValue }: ICardsProp ) => {
@@ -61,6 +63,8 @@ const Cards = ({ sortValue }: ICardsProp ) => {
 
   const [activeDropdown, setActiveDropdown] = useState<"filter" | "module" | "date" | null>(null);
 
+  const [filterMobDisplay, setFilterMobDisplay] = useState(false);
+
   const handleModuleSetDefault = () => {
     if (choosedFilter !== t("CardsHeadingDatasheets")) {
       setChoosedModule(t("CardsFiltersAll"));
@@ -71,6 +75,16 @@ const Cards = ({ sortValue }: ICardsProp ) => {
     setChoosedFilter(label);
     handleModuleSetDefault();
   }
+
+  const filterCounter = useMemo(() => {
+    const defaultFilter = t("CardsFiltersAll");
+    const defaultDate = t("CardsSortNewestOldest");
+    let count = 0;
+    if (choosedFilter !== defaultFilter) count++;
+    if (choosedModule !== defaultFilter) count++;
+    if (choosedDate !== defaultDate) count++;
+    return count;
+  }, [choosedFilter, choosedModule, choosedDate, t]);
 
   const handleDropdownClick = (dropdown: "filter" | "module" | "date") => {
     setActiveDropdown((prev) => (prev === dropdown ? null : dropdown));
@@ -130,7 +144,6 @@ const Cards = ({ sortValue }: ICardsProp ) => {
     choosedDate
   );
 
-  const [filterMobDisplay, setFilterMobDisplay] = useState(false);
   const handleMobResetFilters = () => {
     setChoosedFilter(t("CardsFiltersAll"));
     setChoosedModule(t("CardsFiltersAll"));
@@ -169,6 +182,11 @@ const Cards = ({ sortValue }: ICardsProp ) => {
                 ))}
               </StyledCardsRefineList>
             </StyledCardsFilterSelect>
+            <StyledCardsRefineMobHeading
+              level={5}
+              size={4}
+              label={choosedFilter}
+            />
             <StyledCardsSortSelect ref={moduleBtnRef}>
               {choosedFilter === t("CardsHeadingDatasheets") && (
                 <StyledCardsSortModules onClick={() => handleDropdownClick("module")}>
@@ -231,7 +249,15 @@ const Cards = ({ sortValue }: ICardsProp ) => {
             </StyledCardsSortSelect>
             <StyledCardsFilterMobIcon
               onClick={() => setFilterMobDisplay(true)}
-            />
+            >
+              {filterCounter > 0 && (
+                <StyledCardsRefineCounter
+                  label={filterCounter.toString()}
+                  color="#fff"
+                  size={3}
+                />
+              )}
+            </StyledCardsFilterMobIcon>
           </StyledCardsFiltersWrapper>
           {refineWhitepaperItems.length > 0 &&
             (choosedFilter === t("CardsHeadingWhitepapers") ||
