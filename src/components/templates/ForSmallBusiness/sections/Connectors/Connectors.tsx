@@ -4,7 +4,6 @@ import {
   StyledConnectorsItems,
 } from "./Connectors.styled";
 import { Section } from "@src/components/ui/Section";
-import { Container } from "@src/components/ui/Container";
 import { connectorsItems } from "./data/connectorsItems";
 
 const Connectors = () => {
@@ -16,9 +15,8 @@ const Connectors = () => {
       tabletSpacing={["56px", "56px"]}
       tabletSmallSpacing={["56px", "56px"]}
     >
-      <Container>
-        <StyledConnectors>
-          <StyledConnectorsItems>
+     <StyledConnectors>
+        <StyledConnectorsItems>
             {connectorsItems.map((item, index) => (
               <li key={index}>
                 <div
@@ -35,7 +33,6 @@ const Connectors = () => {
             ))}
           </StyledConnectorsItems>
         </StyledConnectors>
-      </Container>
     </Section>
   );
 };

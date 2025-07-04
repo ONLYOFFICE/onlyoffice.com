@@ -16,14 +16,14 @@ export const items = [
         },
         links: [
           {
-            href: "/docspace-registration?from=for-Organizes",
+            href: "/docspace?from=for-government",
             label: "UseItForFree",
             isExternal: false,
             isPrimary: false,
             isLink: false,
           },
           {
-            href: "/docspace?from=for-Organizes",
+            href: "/docspace-registration?from=for-government",
             label: "LearnMoreAbout",
             isExternal: false,
             isPrimary: false,
@@ -51,14 +51,14 @@ export const items = [
         ],
         links: [
           {
-            href: "/download#docs-Organize",
+            href: "/download-workspace",
             label: "TryNow",
             isExternal: false,
             isPrimary: false,
             isLink: false,
           },
           {
-            href: "/docs-Organize-prices?from=for-Organizes",
+            href: "/workspace?from=for-government",
             label: "MoreInfo",
             isExternal: true,
             isPrimary: false,

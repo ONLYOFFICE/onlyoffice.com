@@ -9,7 +9,7 @@ import { Footer } from "@src/components/modules/Footer";
 import { ForGovernmentTemplate } from "@src/components/templates/ForGovernment";
 
 const ForResearchPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("for-research");
+  const { t } = useTranslation("for-government");
 
   return (
     <Layout>

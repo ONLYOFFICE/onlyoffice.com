@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
 const StyledFeaturesContent = styled.div`
@@ -18,6 +17,10 @@ const StyledFeaturesContent = styled.div`
       font-size: 16px;
       line-height: 24px;
       max-width: 736px;
+
+      @media ${device.mobile} {
+        font-size: 14px;
+      }
     }
 
     @media ${device.mobile} {
@@ -83,6 +86,10 @@ const StyledFeaturesContent = styled.div`
 
   @media ${device.tabletS} {
     grid-template-columns: 1fr;
+
+    .item > div {
+      flex: 0;
+    }
   }
 `;
 

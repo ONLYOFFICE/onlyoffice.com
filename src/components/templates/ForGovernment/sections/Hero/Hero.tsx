@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import {
   StyledHeroSection,
   StyledHeroWrapper,
@@ -15,9 +15,9 @@ const Hero = () => {
   return (
     <StyledHeroSection
       desktopSpacing={["72px", "0px"]}
-      tabletSpacing={["128px", "121px"]}
-      tabletSmallSpacing={["128px", "63px"]}
-      mobileSpacing={["96px", "56px"]}
+      tabletSpacing={["128px", "0px"]}
+      tabletSmallSpacing={["128px", "0px"]}
+      mobileSpacing={["96px", "0px"]}
     >
       <Container maxWidth="1419px">
         <StyledHeroWrapper>

@@ -20,6 +20,7 @@ const StyledHeroWrapper = styled.div`
     grid-template-columns: 1fr;
     text-align: center;
     margin-left: 0;
+    row-gap: 0;
   }
 
   @media ${device.mobile} {
@@ -38,6 +39,10 @@ const StyledHeroContent = styled.div`
     justify-items: center;
     text-align: center;
     max-width: 100%;
+
+    h2 {
+      width: 70vw;
+    }
   }
 
   @media ${device.mobile} {
@@ -47,15 +52,11 @@ const StyledHeroContent = styled.div`
 
 const StyledHeroHeading = styled(Heading)`
   letter-spacing: -0.03em;
+  line-height: 1.33em;
+  max-width: 350px;
 
   @media ${device.desktop} {
     max-width: 795px;
-  }
-
-  @media ${device.tablet} {
-    font-size: 44px;
-    line-height: 59px;
-    letter-spacing: -0.02em;
   }
 
   @media ${device.mobile} {
@@ -67,6 +68,7 @@ const StyledHeroHeading = styled(Heading)`
 const StyledHeroSubheading = styled(Heading)`
   font-weight: 400;
   line-height: 27px;
+  letter-spacing: 0;
 
   @media ${device.mobile} {
     font-size: 14px;
@@ -80,7 +82,7 @@ const StyledHeroImage = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  max-width: 647px;
+  max-width: 800px;
 
   @media ${device.desktop} {
     margin: 0 auto;

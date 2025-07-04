@@ -5,7 +5,6 @@ import {
   StyledUsersHeading
 } from "./Users.styled";
 import { Section } from "@src/components/ui/Section";
-import { Container } from "@src/components/ui/Container";
 import { usersItems } from "./data/usersItems";
 
 const Users = () => {
@@ -17,9 +16,8 @@ const Users = () => {
       tabletSpacing={["56px", "56px"]}
       tabletSmallSpacing={["56px", "56px"]}
     >
-      <Container>
+      <StyledUsersHeading level={4} label={t("HeadingUsers")}></StyledUsersHeading>
         <StyledUsers>
-          <StyledUsersHeading level={4} label={t("HeadingUsers")}></StyledUsersHeading>
           <StyledUsersItems>
             {usersItems.map((item, index) => (
               <li key={index}>
@@ -37,7 +35,6 @@ const Users = () => {
             ))}
           </StyledUsersItems>
         </StyledUsers>
-      </Container>
     </Section>
   );
 };

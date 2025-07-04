@@ -10,7 +10,7 @@ const StyledFeaturesHeader = styled.div`
   text-align: center;
 
   @media ${device.tabletS} {
-    text-align: initial;
+    text-align: center;
   }
 
   @media ${device.mobile} {

@@ -3,8 +3,10 @@ import { device } from "@src/utils/device";
 
 const StyledConnectors = styled.div`
   text-align: center;
+  max-width: 1120px;
+  margin: auto;
 
-    @media ${device.tablet} {
+  @media ${device.tablet} {
     overflow-x: scroll;
   }
 `;
@@ -14,6 +16,7 @@ const StyledConnectorsItems = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-between;
+  margin: 0 40px;
 
   @media ${device.tablet} {
     width: 1120px;

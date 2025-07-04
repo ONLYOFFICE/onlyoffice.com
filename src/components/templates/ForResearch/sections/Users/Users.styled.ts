@@ -4,19 +4,17 @@ import { device } from "@src/utils/device";
 
 const StyledUsers = styled.div`
   text-align: center;
+  max-width: 1120px;
+  margin: auto;
 
-    @media ${device.tablet} {
+  @media ${device.tablet} {
     overflow-x: scroll;
   }
 `;
 
 const StyledUsersHeading = styled(Heading)`
   text-align: center;
-      padding: 0 0 60px;
-
-    @media ${device.tablet} {
-    overflow-x: scroll;
-  }
+  padding: 0 0 60px;
 `;
 
 const StyledUsersItems = styled.ul`
@@ -24,24 +22,11 @@ const StyledUsersItems = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-between;
+  margin: 0 40px;
 
   @media ${device.tablet} {
+    margin-left: 40px;
     width: 1120px;
-  }
-
-  > div {
-    @media ${device.desktop} {
-      width: calc(33.333% - 24px);
-      max-width: 100%;
-    }
-
-    @media ${device.tablet} {
-      width: calc(50% - 16px);
-    }
-
-    @media ${device.mobile} {
-      width: 100%;
-    }
   }
 `;
 

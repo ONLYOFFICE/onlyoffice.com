@@ -7,6 +7,10 @@ const StyledEnterpriseWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   column-gap: 32px;
 
+  img {
+    width: 100%;
+  }
+
   @media ${device.tablet} {
     grid-template-columns: initial;
     column-gap: initial;
@@ -113,7 +117,8 @@ const StyledEnterpriseImage = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   height: 356px;
-  width: 612px;
+  max-width: 612px;
+  width: 100%;
 `;
 
 const StyledEnterpriseList = styled.ul`
@@ -174,7 +179,6 @@ const StyledQuoteWrapper = styled.div`
   @media ${device.tablet} {
     grid-template-columns: initial;
     column-gap: initial;
-    row-gap: 32px;
   }
 `;
 
@@ -211,7 +215,7 @@ const StyledQuoteText = styled.i`
   }
 
   @media ${device.mobile} {
-    padding-top: 55px;
+    padding-top: 32px;
     font-size: 16px;
     line-height: 25px;
   }

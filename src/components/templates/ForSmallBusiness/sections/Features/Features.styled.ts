@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
 const StyledFeaturesContent = styled.div`
@@ -43,7 +42,7 @@ const StyledFeaturesContent = styled.div`
     }
 
     @media ${device.mobile} {
-      padding: 48px 0;
+     padding: 48px 0;
     }
 
     &:first-child {
@@ -55,22 +54,21 @@ const StyledFeaturesContent = styled.div`
       padding-bottom: 0;
     }
 
-      @media ${device.tablet} {
-        text-align: left;
+    @media ${device.tablet} {
+      text-align: left;
 
-        .featureList {
-          padding-left: 32px;
+      .featureList {
+        padding-left: 32px;
 
-          &::before {
-            content: "";
-            width: 6px;
-            height: 6px;
-            left: 0;
-            margin-right: 20px;
-            position: absolute;
-            background: #ff6f3d;
-            transform: rotate(45deg) translateY(-50%);
-          }
+        &::before {
+          content: "";
+          width: 6px;
+          height: 6px;
+          left: 0;
+          margin-right: 20px;
+          position: absolute;
+          background: #ff6f3d;
+          transform: rotate(45deg) translateY(-50%);
         }
       }
     }
@@ -82,8 +80,32 @@ const StyledFeaturesContent = styled.div`
 
   @media ${device.tabletS} {
     grid-template-columns: 1fr;
+
+    p {
+      font-size: 14px;
+    }
+
+    .item {
+      flex-direction: column-reverse !important;
+
+      > div {
+        flex: 0;
+      } 
+    }
+  }
+    
+  @media ${device.mobile} {
+    div {
+      font-size: 14px;
+    }
+
+    .buttons {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
   }
 `;
+
 
 export {
   StyledFeaturesContent

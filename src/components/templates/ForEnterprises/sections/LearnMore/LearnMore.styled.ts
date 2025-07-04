@@ -8,7 +8,7 @@ const StyledLearnMoreHeading = styled(Heading)`
   max-width: 504px;
 
   @media ${device.tabletS} {
-    text-align: initial;
+    text-align: center;
   }
 
   @media ${device.mobile} {

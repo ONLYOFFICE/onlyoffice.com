@@ -50,7 +50,7 @@ const Enterprise = () => {
               ))}
             </StyledEnterpriseList>
           </StyledEnterpriseContent>
-          <StyledEnterpriseImage />
+          <img src="/images/templates/for-research/enterprise/enterprise.svg" alt="Icon" />
         </StyledEnterpriseWrapper>
         <StyledQuoteWrapper>
           <img src={logo} alt="Icon" />

@@ -85,10 +85,11 @@ const FeaturesTools = () => {
           <Heading level={2} size={1} label="3" />
           <Heading level={3} size={4} label={t("FeaturesToolsHead3")} />
         </StyledFeaturesHeader>
-        <StyledFeaturesText textAlign="center" label={t("FeaturesToolsTitle")} />
+        <StyledFeaturesText textAlign="center" label={t("FeaturesToolsTitle")} className="desktop" />
         <StyledReasonsWrapper>
           <img src='/images/templates/for-government/features_tools/ui_enterprise.svg' alt="Image" />
           <StyledReasonsContent>
+            <StyledFeaturesText textAlign="center" label={t("FeaturesToolsTitle")} className="mobile" />
             <StyledReasonsList>
               {items.map((item, index) => (
                 <li key={index}>{t(item.label)}</li>

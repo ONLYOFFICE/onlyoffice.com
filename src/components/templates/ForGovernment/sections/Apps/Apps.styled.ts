@@ -5,10 +5,11 @@ const StyledAppsWrapper = styled.div`
   background-image: url(../images/templates/for-research/apps/bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 112px 0 0;
+  padding: 112px 40px 0;
 
   img {
     max-width: 1120px;
+    width: 100vw;
     background-size: contain;
   }
 
@@ -16,6 +17,11 @@ const StyledAppsWrapper = styled.div`
     grid-template-columns: initial;
     column-gap: initial;
     row-gap: 32px;
+    padding: 0 40px 0;
+  }
+
+  @media ${device.mobile} {
+    padding: 0 16px 0;
   }
 `;
 
@@ -31,6 +37,12 @@ const StyledAppsText = styled.div`
     max-width: 930px;
     line-height: 1.6em;
   }
+
+  @media ${device.mobile} {
+    p {
+      font-size: 13px;
+    }
+  }
 `;
 
 const StyledAppsList = styled.div`
@@ -38,6 +50,8 @@ const StyledAppsList = styled.div`
   align-items: center;
   gap: 16px;
   padding-top: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
 
   a {
     background-color: #f6f6f6;

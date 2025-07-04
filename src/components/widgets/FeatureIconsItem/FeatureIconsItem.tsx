@@ -86,7 +86,7 @@ const FeatureIconsItem = ({
           <Heading level={3} label={heading} />
           <StyledFeatureIconsItemText color="#666666">
             {text?.length > 0 && (
-              <ul style={{ paddingLeft: "20px", marginBottom: "24px" }}>
+              <ul style={{ marginBottom: "24px" }}>
                 {text.map((item, index) => (
                   <li className="featureList" key={index} style={{ marginBottom: "12px" }}>
                     <Trans
@@ -123,11 +123,10 @@ const FeatureIconsItem = ({
             </StyledFeatureIconsItemLink>
           ))}
           {!showButtonsOutside && Array.isArray(buttons) && buttons.length > 0 && (
-            <div
+            <div className="buttons"
               style={{
                 display: "flex",
                 gap: "16px",
-                marginTop: "24px",
                 flexWrap: "wrap",
                 justifyContent: "left",
                 alignItems: "center",
@@ -175,7 +174,7 @@ const FeatureIconsItem = ({
           {quote.icon && (
             <img
               src={quote.icon}
-              alt="Quote Icon"
+              alt="Icon"
               style={{ width: "120px", height: "62px" }}
             />
           )}

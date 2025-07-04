@@ -12,36 +12,17 @@ const StyledUsers = styled.div`
 
 const StyledUsersHeading = styled(Heading)`
   text-align: center;
-      padding: 0 0 60px;
-
-    @media ${device.tablet} {
-    overflow-x: scroll;
-  }
+  padding: 0 0 60px;
 `;
 
 const StyledUsersItems = styled.ul`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  max-width: 1120px;
+  margin: auto;
 
   @media ${device.tablet} {
-    width: 1120px;
-  }
-
-  > div {
-    @media ${device.desktop} {
-      width: calc(33.333% - 24px);
-      max-width: 100%;
-    }
-
-    @media ${device.tablet} {
-      width: calc(50% - 16px);
-    }
-
-    @media ${device.mobile} {
-      width: 100%;
-    }
+    margin-left: 40px;
   }
 `;
 

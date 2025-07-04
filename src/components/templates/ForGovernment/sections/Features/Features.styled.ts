@@ -9,12 +9,21 @@ const StyledFeaturesContent = styled.div`
   h2 {
     max-width: 900px;
     margin: auto;
+    line-height: 1.33em;
+
+    @media ${device.mobile} {
+      font-size: 20px;
+    }
   }
 
   h3 {
     line-height: 1.5em;
     font-size: 18px;
     padding: 0 0 16px;
+
+    @media ${device.mobile} {
+      font-size: 16px;
+    }
   }
 
   p {
@@ -27,7 +36,7 @@ const StyledFeaturesContent = styled.div`
     text-align: center;
   }
 
-  .featureList{
+  .featureList {
     line-height: 1.6em;
     color: #666666;
     font-size: 14px;
@@ -41,78 +50,92 @@ const StyledFeaturesContent = styled.div`
       height: 6px;
       background: #ff6f3d;
       transform: rotate(45deg) translateY(-50%);
+    }
   }
-}
+
+  @media ${device.tablet} {
+    text-align: left;
+
+    .featureList {
+      padding-left: 16px;
+
+      &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        left: 0;
+        margin-right: 24px;
+        position: absolute;
+        background: #ff6f3d;
+        transform: rotate(45deg) translateY(-50%);
+      }
+    }
+  }
 
   > div {
     padding: 112px 0;
+
+    @media ${device.tabletS} {
+      padding: 48px 0 0;
+    }
 
     > div {
       gap: 32px; 
       padding-top: 32px;
 
+      @media ${device.tabletS} {
+        flex-direction: row-reverse;
+
+        > div > div > div > div {
+          a {
+            font-size: 14px;
+          }
+        } 
+      }
+
+      @media ${device.mobile} {
+        flex-direction: column-reverse;
+      }
+
       > div {
         flex: 0 1 544px;
         margin-right: 0;
-      }
-    }
+        position: relative;
 
-    @media ${device.mobile} {
-      padding: 48px 0;
-    }
+        @media ${device.mobile} {
+          flex: 0;
+        }
 
-    &:first-child {
-      padding-top: 0;
-    }
-
-    &:last-child {
-      border: none;
-      padding-bottom: 0;
-    }
-
-      @media ${device.tablet} {
-        text-align: left;
-
-        .featureList {
-          padding-left: 32px;
-
-          &::before {
-            content: "";
-            width: 6px;
-            height: 6px;
-            left: 0;
-            margin-right: 20px;
-            position: absolute;
-            background: #ff6f3d;
-            transform: rotate(45deg) translateY(-50%);
-          }
+        > div {
+          height: 100%;
+          background-position-y: 50%;
         }
       }
     }
   }
 
-  @media ${device.tablet} {
-    grid-template-columns: 1fr 1fr;
+  &:first-child {
+    padding-top: 0;
   }
 
-  @media ${device.tabletS} {
-    grid-template-columns: 1fr;
-  }
-`;
-
-const StyledFeatures = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  margin-bottom: 72px;
-
-  @media ${device.tabletS} {
-    grid-template-columns: 1fr;
+  &:last-child {
+    border: none;
+    padding-bottom: 0;
   }
 
   @media ${device.mobile} {
-    margin-bottom: 56px;
+    text-align: left;
+    padding: 48px 0;
+    
+    .buttons {
+      align-items: flex-start !important;
+    }
+
+    .featureList {
+      padding-left: 16px;
+    }
   }
+}
 `;
 
 export {

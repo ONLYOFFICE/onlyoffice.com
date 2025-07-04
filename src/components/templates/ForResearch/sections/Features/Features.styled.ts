@@ -7,7 +7,7 @@ const StyledFeaturesContent = styled.div`
   align-items: center;
 
   h2 {
-    max-width: 900px;
+    max-width: 740px;
     margin: auto;
   }
 
@@ -21,20 +21,13 @@ const StyledFeaturesContent = styled.div`
     text-align: center;
   }
 
-  .featureList{
-    line-height: 1.6em;
-    
-    &:before {
-      content: "";
-      position: absolute;
-      top: 10px;
-      left: 8px;
-      width: 6px;
-      height: 6px;
-      background: #ff6f3d;
-      transform: rotate(45deg) translateY(-50%);
+  li {
+    line-height: 26px;
+
+    img {
+      filter: grayscale(1);
+    }
   }
-}
 
   > div {
     padding: 112px 0;
@@ -49,7 +42,7 @@ const StyledFeaturesContent = styled.div`
     }
 
     @media ${device.mobile} {
-      padding: 48px 0;
+     padding: 48px 0;
     }
 
     &:first-child {
@@ -61,22 +54,21 @@ const StyledFeaturesContent = styled.div`
       padding-bottom: 0;
     }
 
-      @media ${device.tablet} {
-        text-align: left;
+    @media ${device.tablet} {
+      text-align: left;
 
-        .featureList {
-          padding-left: 32px;
+      .featureList {
+        padding-left: 32px;
 
-          &::before {
-            content: "";
-            width: 6px;
-            height: 6px;
-            left: 0;
-            margin-right: 20px;
-            position: absolute;
-            background: #ff6f3d;
-            transform: rotate(45deg) translateY(-50%);
-          }
+        &::before {
+          content: "";
+          width: 6px;
+          height: 6px;
+          left: 0;
+          margin-right: 20px;
+          position: absolute;
+          background: #ff6f3d;
+          transform: rotate(45deg) translateY(-50%);
         }
       }
     }
@@ -88,21 +80,24 @@ const StyledFeaturesContent = styled.div`
 
   @media ${device.tabletS} {
     grid-template-columns: 1fr;
+
+    p {
+      font-size: 14px;
+    }
+
+    .item {
+      flex-direction: column-reverse !important;
+
+      > div {
+        flex: 0;
+      } 
+    }
   }
-`;
-
-const StyledFeatures = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  margin-bottom: 72px;
-
-  @media ${device.tabletS} {
-    grid-template-columns: 1fr;
-  }
-
+    
   @media ${device.mobile} {
-    margin-bottom: 56px;
+    div {
+      font-size: 14px;
+    }
   }
 `;
 

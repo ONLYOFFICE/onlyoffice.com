@@ -12,6 +12,16 @@ const StyledFeatureIconsItemContent = styled.div<{
 
   @media ${device.mobile} {
     row-gap: 8px;
+
+    .buttons {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin-top: 0;
+
+      > div a {
+        font-size: 14px;
+      }
+    }
   }
 `;
 
@@ -186,7 +196,7 @@ const StyledQuoteText = styled.i`
 `;
 
 const StyledQuote = styled.div`
-    padding-top: 80px;
+    padding-top: 112px;
     text-align: center;
     max-width: 768px;
     margin: auto;

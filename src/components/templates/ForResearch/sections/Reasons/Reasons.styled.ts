@@ -12,12 +12,17 @@ const StyledReasonsWrapper = styled.div`
   img {
     background-size: contain;
     max-width: 736px;
+    width: 100%;
   }
 
   @media ${device.tablet} {
     grid-template-columns: initial;
     column-gap: initial;
-    row-gap: 32px;
+    row-gap: 56px;
+  }
+
+  @media ${device.mobile} {
+    padding-top: 48px;
   }
 `;
 
@@ -39,46 +44,41 @@ const StyledReasonsContent = styled.div`
     text-align: left;
   }
 
-    @media ${device.mobile} {
-      padding: 48px 0;
-    }
+  @media ${device.mobile} {
+    padding: 48px 0;
+  }
 
-    &:first-child {
-      padding-top: 0;
-    }
+  &:first-child {
+    padding-top: 0;
+  }
 
-    &:last-child {
-      border: none;
-      padding-bottom: 0;
-    }
+  &:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
 
-    @media ${device.tablet} {
-        text-align: left;
+  @media ${device.tablet} {
+    text-align: left;
 
-        .featureList {
-          padding-left: 32px;
+    .featureList {
+      padding-left: 32px;
 
-          &::before {
-            content: "";
-            width: 6px;
-            height: 6px;
-            left: 0;
-            margin-right: 20px;
-            position: absolute;
-            background: #ff6f3d;
-            transform: rotate(45deg) translateY(-50%);
-          }
-        }
+      &::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        left: 0;
+        margin-right: 20px;
+        position: absolute;
+        background: #ff6f3d;
+        transform: rotate(45deg) translateY(-50%);
       }
     }
   }
 
   @media ${device.tablet} {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media ${device.tabletS} {
     grid-template-columns: 1fr;
+    max-width: 100%;
   }
 `;
 
@@ -100,6 +100,22 @@ const StyledImageContent = styled.div`
       transition: filter 0.3s ease;
     }
   }
+
+  @media ${device.tablet} {
+    max-width: 100%;
+  }
+
+  @media ${device.tabletS} {
+    gap: 24px 24px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media ${device.mobile} {
+    gap: 24px 24px;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
 `;
 
 const StyledReasonsButtons = styled.div`
@@ -107,6 +123,10 @@ const StyledReasonsButtons = styled.div`
   display: flex;
   gap: 32px;
   padding-top: 32px;
+
+  @media ${device.mobile} {
+    flex-direction: column;
+  }
 `;
 
 const StyledHeadingText = styled.div`
@@ -117,6 +137,10 @@ const StyledHeadingText = styled.div`
   width: max-content;
   margin: auto;
   padding-top: 64px;
+
+  @media ${device.mobile} {
+    width: 100%;
+  }
 
   h2 {
     color: #808080;
@@ -131,6 +155,7 @@ const StyledHeadingText = styled.div`
 
   h3 {
     z-index: 1;
+    text-align: center;
   }
 `;
 
@@ -169,6 +194,10 @@ const StyledQuoteWrapper = styled.div`
   flex-direction: column;
   padding-top: 112px;
 
+  @media ${device.mobile} {
+    padding-top: 72px;
+  }
+
   p, a {
     position: relative;
     z-index: 1;
@@ -190,7 +219,6 @@ const StyledQuoteWrapper = styled.div`
   @media ${device.tablet} {
     grid-template-columns: initial;
     column-gap: initial;
-    row-gap: 32px;
   }
 `;
 
@@ -231,8 +259,6 @@ const StyledQuoteText = styled.i`
     line-height: 25px;
   }
 `;
-
-
 
 export {
   StyledReasonsWrapper,

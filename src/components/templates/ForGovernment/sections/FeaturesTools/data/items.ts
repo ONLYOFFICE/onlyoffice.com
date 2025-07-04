@@ -34,7 +34,7 @@ export const featureItems: IFeatureItemExtended[] = [
       positionX: "-247px",
       isSprite: true
     },
-    heading: "FeatureHead3",
+    heading: "FeatureToolsHead3",
     text: "FeatureToolsText3",
     link: {
       href: "/security#data_encryption",

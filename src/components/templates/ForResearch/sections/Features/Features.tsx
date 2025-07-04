@@ -28,6 +28,7 @@ const Features = () => {
 
               return (
                 <FeatureIconsItem
+                  className="item"
                   key={`${groupSetIndex}-${groupIndex}`}
                   connectorsHeading={t(group.connectorsHeading ?? "")}
                   buttons={buttons}

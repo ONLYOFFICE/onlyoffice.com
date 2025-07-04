@@ -6,10 +6,6 @@ const StyledLearnMoreHeading = styled(Heading)`
   margin: 0 auto 56px;
   text-align: center;
 
-  @media ${device.tabletS} {
-    text-align: initial;
-  }
-
   @media ${device.mobile} {
     margin-bottom: 16px;
     font-size: 24px;

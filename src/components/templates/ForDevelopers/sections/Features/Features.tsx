@@ -31,6 +31,7 @@ const Features = () => {
               return (
                 <div key={`wrapper-${groupSetIndex}-${groupIndex}`}>
                   <FeatureIconsItem
+                    className="item"
                     connectorsHeading={t(group.connectorsHeading ?? "")}
                     connectorsSubheading={t(group.connectorsSubheading ?? "")}
                     showButtonsOutside={true}

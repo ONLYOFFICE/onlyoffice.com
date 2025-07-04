@@ -27,6 +27,10 @@ const StyledQuestionsContainer = styled(Container)`
       display: none;
     }
   }
+
+  @media ${device.mobile} {
+    text-align: center;
+  }
 `;
 
 const StyledQuestionsWrapper = styled.div`
@@ -43,6 +47,12 @@ const StyledQuestionsWrapper = styled.div`
     height: 64px;
     background-image: url("/images/templates/for-research/questions/contact_us.svg");
     background-repeat: no-repeat;
+    
+    @media ${device.mobile} {
+      width: 100%;    
+      background-position-x: 50%;
+      background-size: 50px;
+    }
   }
 
   @media ${device.mobile} {

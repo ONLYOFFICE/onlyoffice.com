@@ -13,7 +13,7 @@ const Features = () => {
   return (
     <Section
       desktopSpacing={["112px", "112px"]}
-      mobileSpacing={["48px", "48px"]}
+      mobileSpacing={["0", "48px"]}
       tabletSpacing={["48px", "48px"]}
     >
       <Container>

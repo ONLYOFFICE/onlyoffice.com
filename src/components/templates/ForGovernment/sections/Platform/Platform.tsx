@@ -7,7 +7,6 @@ import {
   StyledContent,
 } from "./Platform.styled";
 import { Section } from "@src/components/ui/Section";
-import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
@@ -19,12 +18,11 @@ const Platform = () => {
   return (
     <Section
       desktopSpacing={["112px", "112px"]}
-      mobileSpacing={["48px", "48px"]}
+      mobileSpacing={["0", "0"]}
       tabletSpacing={["48px", "48px"]}
     >
-      <Container>
         <StyledWrapperDark>
-          <img src='/images/templates/for-government/platform/hopewell.svg' alt="Image" />
+          <img src='/images/templates/for-government/platform/hopewell.svg' alt="Image" className="desktop" />
           <StyledContent>
             <Heading level={3} size={5} label={t("HopewellHead")} />
             <Text label={t("HopewellText")} />
@@ -81,7 +79,7 @@ const Platform = () => {
         </StyledPlatformWrapper>
 
         <StyledWrapper>
-          <img src='/images/templates/for-government/platform/spd.svg' alt="Image" />
+          <img src='/images/templates/for-government/platform/spd.svg' alt="Image" className="desktop" />
           <StyledContent>
             <Heading level={3} size={5} label={t("SpdHead")} />
             <Text label={t("SpdText")} />
@@ -109,7 +107,6 @@ const Platform = () => {
           />
           </StyledContent>
         </StyledWrapper>
-      </Container>
     </Section>
   );
 };
