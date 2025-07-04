@@ -1,5 +1,17 @@
 println("Branch name: ${BRANCH_NAME}")
 
+def aws_region = ""
+def region = ""
+def cloud_front_distribution_id = ""
+def src_domain = ""
+def public_static_url = ""
+def onlyoffice_site_mysql_host = ""
+def onlyoffice_site_mysql_database = ""
+def onlyoffice_com_strapi_api_url = ""
+def onlyoffice_com_next_public_site_url = ""
+def transporter_email_host = ""
+def transporter_email_port = ""
+
 switch(BRANCH_NAME) {
   case "test_deploy":
     aws_region="us-east-1"
