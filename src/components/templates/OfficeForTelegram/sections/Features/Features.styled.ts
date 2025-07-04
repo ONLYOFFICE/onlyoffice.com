@@ -3,7 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
 const StyledSection = styled(Section)`
-  border-top: 1px solid #CCCCCC;
+  border-top: 1px solid #cccccc;
 `;
 
 const StyledFeaturesWrapper = styled.div`

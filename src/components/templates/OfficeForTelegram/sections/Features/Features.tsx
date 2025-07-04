@@ -1,5 +1,9 @@
 import { useTranslation, Trans } from "next-i18next";
-import { StyledFeaturesWrapper, StyledFeaturesItems, StyledSection } from "./Features.styled";
+import {
+  StyledFeaturesWrapper,
+  StyledFeaturesItems,
+  StyledSection,
+} from "./Features.styled";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";

@@ -9,10 +9,12 @@ const StyledHero = styled(Section)`
   background-repeat: no-repeat;
   background-position: 35% 0;
   position: relative;
-    overflow: hidden;
+  overflow: hidden;
 
   &:before {
-    background-image: url("/images/templates/office-for-telegram/hero/left.svg"), url("/images/templates/office-for-telegram/hero/right.svg");
+    background-image:
+      url("/images/templates/office-for-telegram/hero/left.svg"),
+      url("/images/templates/office-for-telegram/hero/right.svg");
     content: "";
     display: block;
     background-position-x: 0%, 100%;
@@ -27,19 +29,19 @@ const StyledHero = styled(Section)`
     height: 600px;
     max-width: 1500px;
 
-      @media ${device.tablet} {
-        background-size: 335px;
-        background-position-x: -125px, 77vw;
-        background-position-y: 100%;
-        height: 500px;
-      }
+    @media ${device.tablet} {
+      background-size: 335px;
+      background-position-x: -125px, 77vw;
+      background-position-y: 100%;
+      height: 500px;
+    }
 
-      @media ${device.mobile} {
-        background-size: 150px;
-        background-position-x: -25%, 77vw;
-        background-position-y: 100%;
-        height: 500px;
-      }
+    @media ${device.mobile} {
+      background-size: 150px;
+      background-position-x: -25%, 77vw;
+      background-position-y: 100%;
+      height: 500px;
+    }
   }
 
   @media ${device.tablet} {
@@ -110,13 +112,14 @@ const StyledHeroHeaderBtns = styled.div`
 
 const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
   @keyframes bob {
-      0%, 100% {
-          transform: translateY(0); 
-      }
+    0%,
+    100% {
+      transform: translateY(0);
+    }
 
-      50% {
-          transform: translateY(-10px); 
-      }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 
   border-radius: 5px;
@@ -139,17 +142,17 @@ const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
     right: -12%;
     animation: bob 2s ease-in-out infinite;
 
-      @media ${device.tablet} {
-        width: 176px;
-        height: 169px;
-        background-size: 176px;
-      }
+    @media ${device.tablet} {
+      width: 176px;
+      height: 169px;
+      background-size: 176px;
+    }
 
-      @media ${device.mobile} {
-        width: 100px;
-        height: 97px;
-        background-size: 100px;
-      }
+    @media ${device.mobile} {
+      width: 100px;
+      height: 97px;
+      background-size: 100px;
+    }
   }
 
   ${(props) =>

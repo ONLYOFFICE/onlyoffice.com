@@ -27,7 +27,7 @@ const Documents = () => {
               href="https://t.me/ONLYOFFICE_bot"
             />
           }
-          />
+        />
       </Container>
     </Section>
   );
