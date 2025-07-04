@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { Button } from "@src/components/ui/Button";
 
 const StyledCardsFiltersWrapper = styled.div`
   display: flex;
@@ -78,6 +80,10 @@ const StyledCardsSortSelect = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
+
+  @media ${device.mobile} {
+    display: none;
+  }
 `;
 
 const StyledCardsSortModules = styled.div`
@@ -128,6 +134,14 @@ const StyledCardsList = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   margin-top: 48px;
+
+  @media ${device.tablet} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ${device.mobile} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const StyledCardsDatasheetsShowBtn = styled.button<{
@@ -147,6 +161,87 @@ const StyledCardsDatasheetsShowBtn = styled.button<{
   }
 `;
 
+const StyledCardsFilterMobIcon = styled.div`
+  width: 24px;
+  height: 24px;
+  background-image: url("/images/icons/filter.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+  cursor: pointer;
+
+  @media ${device.mobile} {
+    display: block;
+  }
+`;
+
+const StyledCardsFilterMob = styled.div<{
+  $display: boolean;
+}>`
+  display: ${({ $display }) => ($display ? "flex" : "none")};
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  z-index: 1001;
+  background-color: #f5f5f5;
+`;
+
+const StyledCardsFilterMobHeader = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  background-color: #fff;
+  margin-bottom: 8px;
+`;
+
+const StyledCardsFilterMobReset = styled(StyledCardsDatasheetsShowBtn)`
+  display: block;
+  margin: 0;
+`;
+
+const StyledCardsFilterMobHeading = styled(Heading)`
+  font-size: 14px;
+`;
+
+const StyledCardsFilterMobCloseBtn = styled.div`
+  width: 24px;
+  height: 24px;
+  background-image: url("/images/icons/cross.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+`;
+
+const StyledCardsFilterMobMain = styled.main`
+  flex: 1 0 auto;
+`;
+
+const StyledCardsFilterMobSelect = styled.div`
+  display: grid;
+  grid-template-columns: 3fr 4fr 3fr;
+`;
+
+const StyledCardsFilterMobOption = styled.div<{
+  $isActive: boolean
+}>`
+  color: ${({ $isActive }) => ($isActive ? "#fff" : "#333")};
+  background-color: ${({ $isActive }) => ($isActive ? "#444" : "#fff")};
+  text-align: center;
+  padding: 12px;
+  cursor: pointer;
+`;
+
+const StyledCardsFilterMobFooter = styled.footer`
+  padding: 15px 30px;
+`;
+
+const StyledCardsFilterMobApplyBtn = styled(Button)`
+  width: 100%;
+`;
+
 export {
   StyledCardsFiltersWrapper,
   StyledCardsFilterSelect,
@@ -162,5 +257,16 @@ export {
   StyledCardsContent,
   StyledCardsHeading,
   StyledCardsList,
-  StyledCardsDatasheetsShowBtn
+  StyledCardsDatasheetsShowBtn,
+  StyledCardsFilterMobIcon,
+  StyledCardsFilterMob,
+  StyledCardsFilterMobHeader,
+  StyledCardsFilterMobReset,
+  StyledCardsFilterMobHeading,
+  StyledCardsFilterMobCloseBtn,
+  StyledCardsFilterMobMain,
+  StyledCardsFilterMobSelect,
+  StyledCardsFilterMobOption,
+  StyledCardsFilterMobFooter,
+  StyledCardsFilterMobApplyBtn,
 }

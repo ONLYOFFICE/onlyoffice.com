@@ -24,7 +24,18 @@ import {
   StyledCardsRefineText,
   StyledCardsSortModuleText,
   StyledCardsSortDateText,
-  StyledCardsDatasheetsShowBtn
+  StyledCardsDatasheetsShowBtn,
+  StyledCardsFilterMobIcon,
+  StyledCardsFilterMob,
+  StyledCardsFilterMobHeader,
+  StyledCardsFilterMobMain,
+  StyledCardsFilterMobFooter,
+  StyledCardsFilterMobCloseBtn,
+  StyledCardsFilterMobReset,
+  StyledCardsFilterMobHeading,
+  StyledCardsFilterMobSelect,
+  StyledCardsFilterMobOption,
+  StyledCardsFilterMobApplyBtn
 } from "./Cards.styled";
 
 const Cards = ({ sortValue }: ICardsProp ) => {
@@ -113,154 +124,204 @@ const Cards = ({ sortValue }: ICardsProp ) => {
     choosedDate
   );
 
+  const [filterMobDisplay, setFilterMobDisplay] = useState(false);
+  const handleMobResetFilters = () => {
+    setChoosedFilter(t("CardsFiltersAll"));
+    setChoosedModule(t("CardsFiltersAll"));
+    setChoosedDate(t("CardsSortNewestOldest"));
+  }
+
   return (
-    <Section
-      background="#EFEFEF"
-      desktopSpacing={["32px", "112px"]}
-    >
-      <Container>
-        <StyledCardsFiltersWrapper>
-          <StyledCardsFilterSelect onClick={() => handleDropdownClick("filter")} ref={filterBtnRef}>
-            <StyledCardsRefineHeading
-              level={5}
-              size={4}
-              label={choosedFilter}
-              $isOpen={activeDropdown === "filter"}
-            />
-            <StyledCardsRefineList
-              $isOpen={activeDropdown === "filter"}
-            >
-              {cardsContentList.map((label) => (
-                <StyledCardsRefineItems
-                  key={label}
-                  onClick={() => handleChooseFilter(label)}
-                  $isActive={choosedFilter === label}
-                >
-                  <StyledCardsRefineText
-                    $isActive={choosedFilter === label}
-                    label={label}
-                  />
-                </StyledCardsRefineItems>
-              ))}
-            </StyledCardsRefineList>
-          </StyledCardsFilterSelect>
-          <StyledCardsSortSelect ref={moduleBtnRef}>
-            {choosedFilter === t("CardsHeadingDatasheets") && (
-              <StyledCardsSortModules onClick={() => handleDropdownClick("module")}>
-                <StyledCardsSortModuleText
-                  fontSize="11px"
-                  textTransform="uppercase"
-                  color="#808080"
-                  label={t("CardsSortModules")}
-                />
-                <StyledCardsRefineHeading
-                  $isOpen={activeDropdown === "module"}
-                  label={choosedModule}
-                  level={5}
-                  size={6}
-                />
-                <StyledCardsRefineList $isOpen={activeDropdown === "module"}>
-                  {sortModules.map((item) => (
-                    <StyledCardsRefineItems
-                      key={item.title}
-                      onClick={() => setChoosedModule(item.title)}
-                      $isActive={choosedModule === item.title}
-                    >
-                      <StyledCardsRefineText
-                        $isActive={choosedModule === item.title}
-                        label={item.title}
-                      />
-                    </StyledCardsRefineItems>
-                  ))}
-                </StyledCardsRefineList>
-              </StyledCardsSortModules>
-            )}
-            <StyledCardsSortDate onClick={() => handleDropdownClick("date")} ref={dateBtnRef}>
-              <StyledCardsSortDateText
-                label={t("CardsSortBy")}
-                fontSize="11px"
-                textTransform="uppercase"
-                color="#808080"
-              />
+    <>
+      <Section
+        background="#EFEFEF"
+        desktopSpacing={["32px", "112px"]}
+      >
+        <Container>
+          <StyledCardsFiltersWrapper>
+            <StyledCardsFilterSelect onClick={() => handleDropdownClick("filter")} ref={filterBtnRef}>
               <StyledCardsRefineHeading
-                $isOpen={activeDropdown === "date"}
-                label={choosedDate}
                 level={5}
-                size={6}
+                size={4}
+                label={choosedFilter}
+                $isOpen={activeDropdown === "filter"}
               />
-              <StyledCardsRefineList $isOpen={activeDropdown === "date"}>
-                {cardsSortDateList.map((date) => (
+              <StyledCardsRefineList
+                $isOpen={activeDropdown === "filter"}
+              >
+                {cardsContentList.map((label) => (
                   <StyledCardsRefineItems
-                    key={date}
-                    onClick={() => setChoosedDate(date)}
-                    $isActive={choosedDate === date}
+                    key={label}
+                    onClick={() => handleChooseFilter(label)}
+                    $isActive={choosedFilter === label}
                   >
                     <StyledCardsRefineText
-                      $isActive={choosedDate === date}
-                      label={date}
+                      $isActive={choosedFilter === label}
+                      label={label}
                     />
                   </StyledCardsRefineItems>
                 ))}
               </StyledCardsRefineList>
-            </StyledCardsSortDate>
-          </StyledCardsSortSelect>
-        </StyledCardsFiltersWrapper>
-        {refineWhitepaperItems.length > 0 &&
-          (choosedFilter === t("CardsHeadingWhitepapers") ||
+            </StyledCardsFilterSelect>
+            <StyledCardsSortSelect ref={moduleBtnRef}>
+              {choosedFilter === t("CardsHeadingDatasheets") && (
+                <StyledCardsSortModules onClick={() => handleDropdownClick("module")}>
+                  <StyledCardsSortModuleText
+                    fontSize="11px"
+                    textTransform="uppercase"
+                    color="#808080"
+                    label={t("CardsSortModules")}
+                  />
+                  <StyledCardsRefineHeading
+                    $isOpen={activeDropdown === "module"}
+                    label={choosedModule}
+                    level={5}
+                    size={6}
+                  />
+                  <StyledCardsRefineList $isOpen={activeDropdown === "module"}>
+                    {sortModules.map((item) => (
+                      <StyledCardsRefineItems
+                        key={item.title}
+                        onClick={() => setChoosedModule(item.title)}
+                        $isActive={choosedModule === item.title}
+                      >
+                        <StyledCardsRefineText
+                          $isActive={choosedModule === item.title}
+                          label={item.title}
+                        />
+                      </StyledCardsRefineItems>
+                    ))}
+                  </StyledCardsRefineList>
+                </StyledCardsSortModules>
+              )}
+              <StyledCardsSortDate onClick={() => handleDropdownClick("date")} ref={dateBtnRef}>
+                <StyledCardsSortDateText
+                  label={t("CardsSortBy")}
+                  fontSize="11px"
+                  textTransform="uppercase"
+                  color="#808080"
+                />
+                <StyledCardsRefineHeading
+                  $isOpen={activeDropdown === "date"}
+                  label={choosedDate}
+                  level={5}
+                  size={6}
+                />
+                <StyledCardsRefineList $isOpen={activeDropdown === "date"}>
+                  {cardsSortDateList.map((date) => (
+                    <StyledCardsRefineItems
+                      key={date}
+                      onClick={() => setChoosedDate(date)}
+                      $isActive={choosedDate === date}
+                    >
+                      <StyledCardsRefineText
+                        $isActive={choosedDate === date}
+                        label={date}
+                      />
+                    </StyledCardsRefineItems>
+                  ))}
+                </StyledCardsRefineList>
+              </StyledCardsSortDate>
+            </StyledCardsSortSelect>
+            <StyledCardsFilterMobIcon
+              onClick={() => setFilterMobDisplay(true)}
+            />
+          </StyledCardsFiltersWrapper>
+          {refineWhitepaperItems.length > 0 &&
+            (choosedFilter === t("CardsHeadingWhitepapers") ||
+            choosedFilter === t("CardsFiltersAll")) && (
+            <StyledCardsContent>
+              <StyledCardsHeading
+                label={t("CardsHeadingWhitepapers")}
+                textAlign="center"
+                level={2}
+                size={4}
+              />
+              <StyledCardsList>
+                {refineWhitepaperItems.map((item) => (
+                  <CardWhitepapers
+                    key={item.id}
+                    head={item.head}
+                    title={item.title}
+                    date={item.date}
+                    download_url={item.download_url}
+                    description={item.description}
+                  />
+                ))}
+              </StyledCardsList>
+            </StyledCardsContent>
+          )}
+          {refineDatasheetsItems.length > 0 &&
+          (choosedFilter === t("CardsHeadingDatasheets") ||
           choosedFilter === t("CardsFiltersAll")) && (
-          <StyledCardsContent>
-            <StyledCardsHeading
-              label={t("CardsHeadingWhitepapers")}
-              textAlign="center"
-              level={2}
-              size={4}
-            />
-            <StyledCardsList>
-              {refineWhitepaperItems.map((item) => (
-                <CardWhitepapers
-                  key={item.id}
-                  head={item.head}
-                  title={item.title}
-                  date={item.date}
-                  download_url={item.download_url}
-                  description={item.description}
-                />
-              ))}
-            </StyledCardsList>
-          </StyledCardsContent>
-        )}
-        {refineDatasheetsItems.length > 0 &&
-        (choosedFilter === t("CardsHeadingDatasheets") ||
-        choosedFilter === t("CardsFiltersAll")) && (
-          <StyledCardsContent>
-            <StyledCardsHeading
-              label={t("CardsHeadingDatasheets")}
-              textAlign="center"
-              level={2}
-              size={4}
-            />
-            <StyledCardsList>
-              {refineDatasheetsItems.map((item, index) => (
-                <CardDatasheets
-                  key={item.id}
-                  title={item.title}
-                  product={item.product}
-                  image_url={item.image_url}
-                  download_url={item.download_url}
-                  displayOther={index < dataSheetsDisplayCount}
-                />
-              ))}
-            </StyledCardsList>
-            <StyledCardsDatasheetsShowBtn
-              $display={dataSheetsShowButton}
-              onClick={handleShowMore}
-            >
-              {t("CardsButtonShowMore")}
-            </StyledCardsDatasheetsShowBtn>
-          </StyledCardsContent>
-        )}
-      </Container>
-    </Section>
+            <StyledCardsContent>
+              <StyledCardsHeading
+                label={t("CardsHeadingDatasheets")}
+                textAlign="center"
+                level={2}
+                size={4}
+              />
+              <StyledCardsList>
+                {refineDatasheetsItems.map((item, index) => (
+                  <CardDatasheets
+                    key={item.id}
+                    title={item.title}
+                    product={item.product}
+                    image_url={item.image_url}
+                    download_url={item.download_url}
+                    displayOther={index < dataSheetsDisplayCount}
+                  />
+                ))}
+              </StyledCardsList>
+              <StyledCardsDatasheetsShowBtn
+                $display={dataSheetsShowButton}
+                onClick={handleShowMore}
+              >
+                {t("CardsButtonShowMore")}
+              </StyledCardsDatasheetsShowBtn>
+            </StyledCardsContent>
+          )}
+        </Container>
+      </Section>
+
+      <StyledCardsFilterMob $display={filterMobDisplay}>
+        <StyledCardsFilterMobHeader>
+          <StyledCardsFilterMobReset
+            $display={true}
+            onClick={handleMobResetFilters}
+          >
+            {t("CardsMobFiltersReset")}
+          </StyledCardsFilterMobReset>
+          <StyledCardsFilterMobHeading
+            label={t("CardsMobFiltersHeading")}
+            level={5}
+          />
+          <StyledCardsFilterMobCloseBtn
+            onClick={() => setFilterMobDisplay(false)}
+          />
+        </StyledCardsFilterMobHeader>
+        <StyledCardsFilterMobMain>
+          <StyledCardsFilterMobSelect>
+            {cardsContentList.map((label) => (
+              <StyledCardsFilterMobOption
+                key={label}
+                onClick={() => handleChooseFilter(label)}
+                $isActive={choosedFilter === label}
+              >
+                {label}
+              </StyledCardsFilterMobOption>
+            ))}
+          </StyledCardsFilterMobSelect>
+        </StyledCardsFilterMobMain>
+        <StyledCardsFilterMobFooter>
+          <StyledCardsFilterMobApplyBtn
+            label={t("CardsMobFiltersApply")}
+            borderRadius="3px"
+            onClick={() => setFilterMobDisplay(false)}
+          />
+        </StyledCardsFilterMobFooter>
+      </StyledCardsFilterMob>
+    </>
   );
 };
 

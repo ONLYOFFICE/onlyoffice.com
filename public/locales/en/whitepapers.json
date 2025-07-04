@@ -18,6 +18,10 @@
   "CardsWhitepaper": "White Paper",
   "CardsDatasheet": "Datasheet",
 
+  "CardsMobFiltersHeading": "Filters",
+  "CardsMobFiltersReset": "Reset",
+  "CardsMobFiltersApply": "Apply filter",
+
   "CardsDatasheetProductOd": "ONLYOFFICE Docs",
   "CardsDatasheetProductOw": "ONLYOFFICE Workspace",
   "CardsDatasheetProductOds": "ONLYOFFICE DocSpace",
