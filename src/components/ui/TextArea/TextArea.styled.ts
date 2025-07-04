@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { ITextArea } from "./TextArea.types";
 import { device } from "@src/utils/device";
 
@@ -10,10 +10,21 @@ const StyledTextArea = styled.div<{
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid ${(props) => (props.$isFocused ? "#666666" : "#aaaaaa")};
-  border-radius: 9px;
+  border: 1px solid
+    ${(props) =>
+      props.$isFocused
+        ? "#666666"
+        : props.$status === "success"
+          ? "#8bb825"
+          : "#aaaaaa"};
+  border-radius: 4px;
   width: ${(props) => (props.$fullWidth ? "100%" : "fit-content")};
-  background-color: ${(props) => (props.$isFocused ? "#ffffff" : "#f9f9f9")};
+  background-color: ${(props) =>
+    props.$isFocused
+      ? "#ffffff"
+      : props.$status === "success"
+        ? "#f9feef"
+        : "#f9f9f9"};
   transition:
     border-color 0.2s,
     background-color 0.2s;
@@ -21,13 +32,6 @@ const StyledTextArea = styled.div<{
   &:hover {
     border-color: #666666;
   }
-
-  ${(props) =>
-    props.$status === "success" &&
-    css`
-      border-color: #8bb825;
-      background-color: #f9feef;
-    `}
 `;
 
 const StyledTextAreaLabel = styled.label<{
