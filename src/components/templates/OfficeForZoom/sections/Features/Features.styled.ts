@@ -18,7 +18,7 @@ const StyledFeaturesItems = styled.div`
   gap: 32px;
 
   > div {
-   backgrounf-size: 840px;
+    backgrounf-size: 840px;
     @media ${device.desktop} {
       width: calc(33.333% - 24px);
       max-width: 100%;
@@ -37,13 +37,15 @@ const StyledFeaturesItems = styled.div`
 const StyledFeaturesBtn = styled.div`
   a {
     margin-right: 16px;
-    background: #0E71EB;
+    background: #0e71eb;
     border-radius: 30px;
     padding: 7px 24px;
     font-weight: 700;
 
     &:hover {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #0E71EB;
+      background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        #0e71eb;
     }
 
     @media ${device.mobile} {

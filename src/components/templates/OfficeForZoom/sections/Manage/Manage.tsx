@@ -9,9 +9,14 @@ const Manage = () => {
   const { t } = useTranslation("office-for-zoom");
 
   return (
-    <Section desktopSpacing={["0px", "112px"]} tabletSpacing={["0px", "112px"]} tabletSmallSpacing={["0px", "80px"]} mobileSpacing={["0px", "48px"]}>
+    <Section
+      desktopSpacing={["0px", "112px"]}
+      tabletSpacing={["0px", "112px"]}
+      tabletSmallSpacing={["0px", "80px"]}
+      mobileSpacing={["0px", "48px"]}
+    >
       <Container>
-      <StyledManageHeading
+        <StyledManageHeading
           level={2}
           label={t("EfficientlyManageYourDocuments")}
           textAlign="center"

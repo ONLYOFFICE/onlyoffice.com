@@ -1,6 +1,11 @@
 import { useTranslation, Trans } from "next-i18next";
 import { useRouter } from "next/router";
-import { StyledHowToStart, StyledHowToStartText, StyledHeroHeaderBtns, StyledHowToStartInfo } from "./HowToStart.styled";
+import {
+  StyledHowToStart,
+  StyledHowToStartText,
+  StyledHeroHeaderBtns,
+  StyledHowToStartInfo,
+} from "./HowToStart.styled";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { StepCarousel } from "@src/components/widgets/StepCarousel";
@@ -12,15 +17,15 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-zoom");
   const { locale } = useRouter();
 
-  const imageSrc1 = '/images/templates/office-for-zoom/button.svg'; 
-  const imageSrc2 = '/images/templates/office-for-zoom/icon.svg';
+  const imageSrc1 = "/images/templates/office-for-zoom/button.svg";
+  const imageSrc2 = "/images/templates/office-for-zoom/icon.svg";
 
   return (
     <StyledHowToStart id="how-to-start" background="#f9f9f9">
       <Container>
         <Heading level={2} textAlign="center" label={t("HowToStart")} />
 
-      <StepCarousel
+        <StepCarousel
           items={items.map((item) => ({
             imgUrl: item.imgUrl,
             heading: item.headingLinks ? (
@@ -45,19 +50,25 @@ const HowToStart = () => {
         />
 
         <StyledHowToStartInfo>
-        <StyledHeroHeaderBtns>
+          <StyledHeroHeaderBtns>
             <Button
               as="a"
               variant="secondary"
               id="hero-request-free-demo"
               href="https://marketplace.zoom.us/apps/OW6rOq-nRgCihG5eps_p-g"
-              >
-              <img src={imageSrc1} alt="Icon" style={{ marginRight: '4px' }} />
+            >
+              <img src={imageSrc1} alt="Icon" style={{ marginRight: "4px" }} />
               {t("AddToZoom")}
-              {locale !== 'zh' ? (
-              <img src={imageSrc2} alt="Icon" style={{ marginRight: '4px', marginLeft: '4px', marginTop: '2px' }} />
-              ) : (
-              <div></div>
+              {locale !== "zh" && (
+                <img
+                  src={imageSrc2}
+                  alt="Icon"
+                  style={{
+                    marginRight: "4px",
+                    marginLeft: "4px",
+                    marginTop: "2px",
+                  }}
+                />
               )}
               {t("AddToZoomAfter")}
             </Button>

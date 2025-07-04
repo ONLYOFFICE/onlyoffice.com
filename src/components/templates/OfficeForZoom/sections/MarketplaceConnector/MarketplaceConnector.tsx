@@ -16,9 +16,10 @@ const MarketplaceConnector = () => {
   const { t } = useTranslation("office-for-zoom");
   const { locale } = useRouter();
 
-  const imageSrc = '/images/templates/office-for-zoom/marketplace-connector/zoom.svg';
-  const imageSrc1 = '/images/templates/office-for-zoom/button.svg'; 
-  const imageSrc2 = '/images/templates/office-for-zoom/icon.svg'; 
+  const imageSrc =
+    "/images/templates/office-for-zoom/marketplace-connector/zoom.svg";
+  const imageSrc1 = "/images/templates/office-for-zoom/button.svg";
+  const imageSrc2 = "/images/templates/office-for-zoom/icon.svg";
 
   return (
     <StyledMarketplaceConnector>
@@ -26,30 +27,34 @@ const MarketplaceConnector = () => {
         <StyledMarketplaceConnectorWrapper>
           <StyledMarketplaceConnectorBody>
             <img src={imageSrc} alt="Zoom" />
-            <Heading
-              level={2}
-              label={t("MarketplaceConnectorTitle")}
-            />
-            <Text
-              size={1}
-              label={t("MarketplaceConnectorDescription")}
-            />
+            <Heading level={2} label={t("MarketplaceConnectorTitle")} />
+            <Text size={1} label={t("MarketplaceConnectorDescription")} />
             <StyledMarketplaceConnectorBtn>
-            <Button
-              as="a"
-              id="marketplace-add-to-zoom"
-              href="https://marketplace.zoom.us/apps/OW6rOq-nRgCihG5eps_p-g"
+              <Button
+                as="a"
+                id="marketplace-add-to-zoom"
+                href="https://marketplace.zoom.us/apps/OW6rOq-nRgCihG5eps_p-g"
               >
-              <img src={imageSrc1} alt="Icon" style={{ marginRight: '4px' }} />
-              {t("AddToZoom")}
-              {locale !== 'zh' ? (
-              <img src={imageSrc2} alt="Icon" style={{ marginRight: '4px', marginLeft: '4px', marginTop: '2px' }} />
-              ) : (
-              <div></div>
-              )}
-              {t("AddToZoomAfter")}
-            </Button>
-          </StyledMarketplaceConnectorBtn>
+                <img
+                  src={imageSrc1}
+                  alt="Icon"
+                  style={{ marginRight: "4px" }}
+                />
+                {t("AddToZoom")}
+                {locale !== "zh" && (
+                  <img
+                    src={imageSrc2}
+                    alt="Icon"
+                    style={{
+                      marginRight: "4px",
+                      marginLeft: "4px",
+                      marginTop: "2px",
+                    }}
+                  />
+                )}
+                {t("AddToZoomAfter")}
+              </Button>
+            </StyledMarketplaceConnectorBtn>
           </StyledMarketplaceConnectorBody>
           <StyledMarketplaceConnectorImg />
         </StyledMarketplaceConnectorWrapper>

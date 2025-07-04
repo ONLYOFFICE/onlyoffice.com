@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 
 const StyledMarketplaceConnector = styled.section`
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   background-image: url("/images/templates/office-for-zoom/marketplace-connector/bg.svg");
   background-size: 1416px 755px;
   overflow: hidden;
@@ -10,7 +10,7 @@ const StyledMarketplaceConnector = styled.section`
   background-position: 100% 50%;
 
   @media ${device.mobile} {
-    background-size: 700px 100%;;
+    background-size: 700px 100%;
 
     p {
       font-size: 14px;
@@ -66,13 +66,15 @@ const StyledMarketplaceConnectorImg = styled.div`
 const StyledMarketplaceConnectorBtn = styled.div`
   a {
     margin-right: 16px;
-    background: #0E71EB;
+    background: #0e71eb;
     border-radius: 30px;
     padding: 7px 24px;
     font-weight: 700;
 
     &:hover {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #0E71EB;
+      background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        #0e71eb;
     }
 
     @media ${device.mobile} {

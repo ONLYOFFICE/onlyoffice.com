@@ -52,13 +52,15 @@ const StyledHowToStartInfo = styled.div`
 const StyledHeroHeaderBtns = styled.div`
   a {
     margin-right: 16px;
-    background: #0E71EB;
+    background: #0e71eb;
     border-radius: 30px;
     padding: 7px 24px;
     font-weight: 700;
 
     &:hover {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #0E71EB;
+      background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        #0e71eb;
     }
 
     @media ${device.mobile} {
@@ -73,4 +75,9 @@ const StyledHowToStartText = styled(Text)`
   text-align: center;
 `;
 
-export { StyledHowToStart, StyledHowToStartText, StyledHeroHeaderBtns, StyledHowToStartInfo };
+export {
+  StyledHowToStart,
+  StyledHowToStartText,
+  StyledHeroHeaderBtns,
+  StyledHowToStartInfo,
+};

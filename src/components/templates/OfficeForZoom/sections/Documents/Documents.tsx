@@ -25,7 +25,7 @@ const Documents = () => {
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}
-          imageHeight = {550}
+          imageHeight={550}
         />
       </Container>
     </Section>

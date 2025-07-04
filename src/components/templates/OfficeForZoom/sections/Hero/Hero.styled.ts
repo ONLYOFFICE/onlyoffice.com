@@ -1,10 +1,10 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   background-image: url("/images/templates/office-for-zoom/hero/bg.svg");
   background-repeat: no-repeat;
   background-position: center -228px;
@@ -61,13 +61,15 @@ const StyledHeroHeader = styled.div`
 const StyledHeroHeaderBtns = styled.div`
   a {
     margin-right: 16px;
-    background: #0E71EB;
+    background: #0e71eb;
     border-radius: 30px;
     padding: 7px 24px;
     font-weight: 700;
 
     &:hover {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), #0E71EB;
+      background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        #0e71eb;
     }
 
     @media ${device.mobile} {
@@ -79,19 +81,19 @@ const StyledHeroHeaderBtns = styled.div`
 `;
 
 const StyledHeroVideo = styled.div`
-position: relative;
-padding-bottom: 56.25%;
-box-shadow: 0px 7px 25px rgba(85, 85, 85, 0.15);
+  position: relative;
+  padding-bottom: 56.25%;
+  box-shadow: 0px 7px 25px rgba(85, 85, 85, 0.15);
 
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: none;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 export {

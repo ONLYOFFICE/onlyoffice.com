@@ -51,10 +51,8 @@ const Hero = () => {
               >
               <img src={imageSrc1} alt="Icon" style={{ marginRight: '4px' }} />
               {t("AddToZoom")}
-              {locale !== 'zh' ? (
+              {locale !== 'zh' && (
               <img src={imageSrc2} alt="Icon" style={{ marginRight: '4px', marginLeft: '4px', marginTop: '2px' }} />
-              ) : (
-              <div></div>
               )}
               {t("AddToZoomAfter")}
             </Button>
