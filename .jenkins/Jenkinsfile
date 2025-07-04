@@ -105,7 +105,7 @@ pipeline {
           sed -i "s^var_next_public_hcaptcha_site_key^$onlyoffice_site_test_hcaptcha_site_key^" .env
           sed -i "s^var_hcaptcha_secret_key^$onlyoffice_site_test_hcaptcha_secret_key^" .env
 
-          sed -i "s^var_billing_domain^${env.billing_domain}^" .env
+          sed -i "s^var_billing_domain^${billing_domain}^" .env
           sed -i "s^var_billing_key^${billing_key}^" .env
           sed -i "s^var_billing_secret^$onlyoffice_site_test_billing_secret^" .env
 
