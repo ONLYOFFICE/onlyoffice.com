@@ -185,6 +185,7 @@ const StyledCardsFilterMob = styled.div<{
   inset: 0;
   z-index: 1001;
   background-color: #f5f5f5;
+  overflow: auto;
 `;
 
 const StyledCardsFilterMobHeader = styled.header`
@@ -234,6 +235,53 @@ const StyledCardsFilterMobOption = styled.div<{
   cursor: pointer;
 `;
 
+const StyledCardsMobDateHeading = styled(Heading)`
+  font-size: 12px;
+  padding: 20px 18px 10px;
+  font-weight: 600;
+
+  & ${StyledCardsRefineHeading} {
+    color: #333;
+  }
+`;
+
+const StyledCardsMobDateSelect = styled.div`
+  display: grid;
+`;
+
+const StyledCardsMobDateOption = styled.div<{
+  $isActive: boolean
+}>`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  background-color: #fff;
+  border-bottom: 1px solid #E2E2E2;
+  padding: 18px;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: ${({ $isActive }) => ($isActive ? "#8BB825" : "#E2E2E2")};
+    background-image: ${({ $isActive }) => ($isActive ? "url(/images/icons/check-white.svg)" : "")};
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid #CCCCCC;
+  }
+`;
+
+const StyledCardsSortMobHeading = styled(StyledCardsMobDateHeading)``;
+
+const StyledCardsSortMobSelect = styled(StyledCardsMobDateSelect)``;
+
+const StyledCardsSortMobOption = styled(StyledCardsMobDateOption)``;
+
 const StyledCardsFilterMobFooter = styled.footer`
   padding: 15px 30px;
 `;
@@ -267,6 +315,12 @@ export {
   StyledCardsFilterMobMain,
   StyledCardsFilterMobSelect,
   StyledCardsFilterMobOption,
+  StyledCardsMobDateHeading,
+  StyledCardsSortMobHeading,
+  StyledCardsMobDateSelect,
+  StyledCardsMobDateOption,
+  StyledCardsSortMobSelect,
+  StyledCardsSortMobOption,
   StyledCardsFilterMobFooter,
   StyledCardsFilterMobApplyBtn,
 }

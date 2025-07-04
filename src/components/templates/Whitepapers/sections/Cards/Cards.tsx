@@ -35,7 +35,13 @@ import {
   StyledCardsFilterMobHeading,
   StyledCardsFilterMobSelect,
   StyledCardsFilterMobOption,
-  StyledCardsFilterMobApplyBtn
+  StyledCardsFilterMobApplyBtn,
+  StyledCardsMobDateSelect,
+  StyledCardsMobDateOption,
+  StyledCardsSortMobHeading,
+  StyledCardsSortMobSelect,
+  StyledCardsSortMobOption,
+  StyledCardsMobDateHeading
 } from "./Cards.styled";
 
 const Cards = ({ sortValue }: ICardsProp ) => {
@@ -273,12 +279,14 @@ const Cards = ({ sortValue }: ICardsProp ) => {
                   />
                 ))}
               </StyledCardsList>
-              <StyledCardsDatasheetsShowBtn
-                $display={dataSheetsShowButton}
-                onClick={handleShowMore}
-              >
-                {t("CardsButtonShowMore")}
-              </StyledCardsDatasheetsShowBtn>
+              {choosedModule === t("CardsFiltersAll") && (
+                <StyledCardsDatasheetsShowBtn
+                  $display={dataSheetsShowButton}
+                  onClick={handleShowMore}
+                >
+                  {t("CardsButtonShowMore")}
+                </StyledCardsDatasheetsShowBtn>
+              )}
             </StyledCardsContent>
           )}
         </Container>
@@ -312,6 +320,46 @@ const Cards = ({ sortValue }: ICardsProp ) => {
               </StyledCardsFilterMobOption>
             ))}
           </StyledCardsFilterMobSelect>
+          <StyledCardsMobDateHeading
+            label={t("CardsSortBy")}
+            level={5}
+            size={6}
+            textTransform="uppercase"
+            color="#808080"
+          />
+          <StyledCardsMobDateSelect>
+            {cardsSortDateList.map((date) => (
+              <StyledCardsMobDateOption
+                key={date}
+                onClick={() => setChoosedDate(date)}
+                $isActive={choosedDate === date}
+              >
+                {date}
+              </StyledCardsMobDateOption>
+            ))}
+          </StyledCardsMobDateSelect>
+          {choosedFilter === t("CardsHeadingDatasheets") && (
+            <>
+              <StyledCardsSortMobHeading
+                label={t("CardsMobFiltersModules")}
+                level={5}
+                size={6}
+                textTransform="uppercase"
+                color="#808080"
+              />
+              <StyledCardsSortMobSelect>
+                {sortModules.map((item) => (
+                  <StyledCardsSortMobOption
+                    key={item.title}
+                    onClick={() => setChoosedModule(item.title)}
+                    $isActive={choosedModule === item.title}
+                  >
+                    {item.title}
+                  </StyledCardsSortMobOption>
+                ))}
+              </StyledCardsSortMobSelect>
+            </>
+          )}
         </StyledCardsFilterMobMain>
         <StyledCardsFilterMobFooter>
           <StyledCardsFilterMobApplyBtn
