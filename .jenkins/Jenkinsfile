@@ -84,6 +84,16 @@ pipeline {
         onlyoffice_com_next_public_site_url="${onlyoffice_com_next_public_site_url}"
         transporter_email_host="${transporter_email_host}"
         transporter_email_port="${transporter_email_port}"
+        billing_domain="${billing_domain}"
+        billing_key="${billing_key}"
+        pipedrive_api_url="${pipedrive_api_url}"
+        sales_email="${sales_email}"
+        web_payment_we_trial_url="${web_payment_we_trial_url}"
+        web_payment_dd_trial_url="${web_payment_dd_trial_url}"
+        web_payment_de_trial_url="${web_payment_de_trial_url}"
+        web_payment_dse_trial_url="${web_payment_dse_trial_url}"
+        web_payment_dspd_trial_url="${web_payment_dspd_trial_url}"
+        web_payment_dc_trial_url="${web_payment_dc_trial_url}"
       }
       steps {
         withCredentials([usernamePassword(credentialsId: 'onlyoffice_site_test_mysql_credentials', 
@@ -105,8 +115,8 @@ pipeline {
           sed -i "s^var_next_public_hcaptcha_site_key^$onlyoffice_site_test_hcaptcha_site_key^" .env
           sed -i "s^var_hcaptcha_secret_key^$onlyoffice_site_test_hcaptcha_secret_key^" .env
 
-          sed -i "s^var_billing_domain^${billing_domain}^" .env
-          sed -i "s^var_billing_key^${billing_key}^" .env
+          sed -i "s^var_billing_domain^$billing_domain^" .env
+          sed -i "s^var_billing_key^$billing_key^" .env
           sed -i "s^var_billing_secret^$onlyoffice_site_test_billing_secret^" .env
 
           sed -i "s^var_onlyoffice_site_mysql_host^$onlyoffice_site_mysql_host^" .env
