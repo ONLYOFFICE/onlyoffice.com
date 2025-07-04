@@ -15,6 +15,10 @@ const StyledReasonsWrapper = styled.div`
     width: 100%;
   }
 
+  .mobileLink {
+    display: none;
+  }
+
   @media ${device.tablet} {
     grid-template-columns: initial;
     column-gap: initial;
@@ -23,6 +27,15 @@ const StyledReasonsWrapper = styled.div`
 
   @media ${device.mobile} {
     padding-top: 48px;
+    row-gap: 32px;
+
+    .mobileLink {
+      display: block;
+    }
+
+    .desktopLink {
+      display: none;
+    }
   }
 `;
 
@@ -108,14 +121,18 @@ const StyledImageContent = styled.div`
   @media ${device.tabletS} {
     gap: 24px 24px;
     margin: auto;
-    grid-template-columns: 1fr 1fr;
   }
 
   @media ${device.mobile} {
     gap: 24px 24px;
     margin: auto;
-    grid-template-columns: 1fr;
-  }
+      
+    .reason-image {
+      max-width: 76px;
+      height: 20px;
+      background-size: auto 26px;
+    }
+   }
 `;
 
 const StyledReasonsButtons = styled.div`
@@ -260,12 +277,31 @@ const StyledQuoteText = styled.i`
   }
 `;
 
+const StyledReasonLink = styled.a<{
+  $width: string;
+  $mobileWidth?: string;
+  $backgroundPositionX?: string;
+  $mobileBackgroundPositionX?: string;
+}>`
+  display: block;
+  width: ${({ $width }) => $width};
+  background-position-x: ${({ $backgroundPositionX }) => $backgroundPositionX};
+
+  @media ${device.mobile} {
+    background-size: auto 34px;
+    width: ${({ $mobileWidth }) => $mobileWidth || "100px"};
+    background-position-x: ${({ $mobileBackgroundPositionX, $backgroundPositionX }) =>
+    $mobileBackgroundPositionX || $backgroundPositionX || "center"};
+  }
+`;
+
 export {
   StyledReasonsWrapper,
   StyledReasonsContent,
   StyledHeadingText,
   StyledReasonsList,
   StyledReasonsButtons,
+  StyledReasonLink,
   StyledImageContent,
   StyledQuoteWrapper,
   StyledQuoteText

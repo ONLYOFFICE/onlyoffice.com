@@ -5,6 +5,7 @@ import {
   StyledHeadingText,
   StyledReasonsList,
   StyledReasonsButtons,
+  StyledReasonLink,
   StyledImageContent,
   StyledQuoteWrapper,
   StyledQuoteText
@@ -67,6 +68,7 @@ const Reasons = () => {
                 label={t("GetItNow")}
               />
               <Link
+                className="desktopLink"
                 href="/all-connectors?from=for-research"
                 label={t("SeeAllIntegrations")}
                 color="main"
@@ -76,14 +78,25 @@ const Reasons = () => {
             </StyledReasonsButtons>
           </StyledReasonsContent>
           <StyledImageContent>
-            {reasonsItems.map((item, index) => (
-              <a
+              {reasonsItems.map((item, index) => (
+                <StyledReasonLink
                 key={index}
                 href={item.href}
-                style={{ backgroundImage: `url(${item.imageUrl})`, width: `${item.width}`, backgroundPositionX: `${item.backgroundPositionX}` }}
+                $width={item.width}
+                $mobileWidth={item.mobileWidth}
+                $backgroundPositionX={item.backgroundPositionX}
+                $mobileBackgroundPositionX={item.mobileBackgroundPositionX}
+                style={{ backgroundImage: `url(${item.imageUrl})` }}
               />
-          ))}
+            ))}
           </StyledImageContent>
+            <Button
+              className="mobileLink"
+              as="a"
+              href="/all-connectors?from=for-research"
+              label={t("SeeAllIntegrations")}
+              variant="tertiary"
+            />
           </StyledReasonsWrapper>
           <StyledQuoteWrapper>
             <img src={logo1} alt="Icon" />
