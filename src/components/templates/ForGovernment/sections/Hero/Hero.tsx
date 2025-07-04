@@ -14,12 +14,12 @@ const Hero = () => {
 
   return (
     <StyledHeroSection
-      desktopSpacing={["72px", "0px"]}
-      tabletSpacing={["128px", "0px"]}
-      tabletSmallSpacing={["128px", "0px"]}
+      desktopSpacing={["175px", "157px"]}
+      tabletSpacing={["175px", "157px"]}
+      tabletSmallSpacing={["136px", "88px"]}
       mobileSpacing={["96px", "0px"]}
     >
-      <Container maxWidth="1419px">
+      <Container>
         <StyledHeroWrapper>
           <StyledHeroContent>
             <StyledHeroHeading level={1} size={2} label={t("HeroTitle")} /> 

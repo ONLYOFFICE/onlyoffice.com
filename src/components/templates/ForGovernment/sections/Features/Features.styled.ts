@@ -138,6 +138,4 @@ const StyledFeaturesContent = styled.div`
 }
 `;
 
-export {
-  StyledFeaturesContent
-};
+export { StyledFeaturesContent };

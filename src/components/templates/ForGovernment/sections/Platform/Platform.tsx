@@ -21,12 +21,16 @@ const Platform = () => {
       mobileSpacing={["0", "0"]}
       tabletSpacing={["48px", "48px"]}
     >
-        <StyledWrapperDark>
-          <img src='/images/templates/for-government/platform/hopewell.svg' alt="Image" className="desktop" />
-          <StyledContent>
-            <Heading level={3} size={5} label={t("HopewellHead")} />
-            <Text label={t("HopewellText")} />
-            <Text
+      <StyledWrapperDark>
+        <img
+          src="/images/templates/for-government/platform/hopewell.svg"
+          alt="Image"
+          className="desktop"
+        />
+        <StyledContent>
+          <Heading level={3} size={5} label={t("HopewellHead")} />
+          <Text label={t("HopewellText")} />
+          <Text
             fontSize="13px"
             fontWeight={700}
             lineHeight="21px"
@@ -34,56 +38,69 @@ const Platform = () => {
             label={t("HopewellAuthor")}
           />
           <Link
-            href="/success-stories/gwdg?from=for-research"
+            href="https://www.onlyoffice.com/blog/2020/06/onlyoffice-in-the-city-of-hopewell/"
             label={t("ReadTheStory")}
             color="main"
             textUnderline
             hover="underline-none"
             fontSize="14px"
           />
-          </StyledContent>
-        </StyledWrapperDark>
+        </StyledContent>
+      </StyledWrapperDark>
 
-        <StyledPlatformWrapper>
-            <Heading level={2} size={3} textAlign="center" label={t("PlatformTitle")} />
-            <Text textAlign="center">
-              <Trans
-                t={t}
-                i18nKey="PlatformSubtitle"
-                components={[
-                  <a
-                    href="/all-connectors?from=for-government"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#ff6f3d", textDecoration: "underline" }}
-                    key="0"
-                  />,
-                ]}
-              />
-            </Text>
-            <StyledButtons>
-              <Button
-                as="a"
-                href="/office-suite?from=for-government"
-                label={t("LearnMore")}
-                variant="tertiary"
-              />
-              <Button
-                as="a"
-                href="/download#docs-enterprise"
-                label={t("GetItNowPlatform")}
-                variant="secondary"
-              />
-            </StyledButtons>
-            <img src={t("ImagePlatform")} srcSet={t("ImagePlatform2x")} alt="Screenshot" />
-        </StyledPlatformWrapper>
+      <StyledPlatformWrapper>
+        <Heading
+          level={2}
+          size={3}
+          textAlign="center"
+          label={t("PlatformTitle")}
+        />
+        <Text textAlign="center">
+          <Trans
+            t={t}
+            i18nKey="PlatformSubtitle"
+            components={[
+              <a
+                href="/all-connectors?from=for-government"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#ff6f3d", textDecoration: "underline" }}
+                key="0"
+              />,
+            ]}
+          />
+        </Text>
+        <StyledButtons>
+          <Button
+            as="a"
+            href="/office-suite?from=for-government"
+            label={t("LearnMore")}
+            variant="tertiary"
+          />
+          <Button
+            as="a"
+            href="/download#docs-enterprise"
+            label={t("GetItNowPlatform")}
+            variant="secondary"
+          />
+        </StyledButtons>
+        <img
+          src={t("ImagePlatform")}
+          srcSet={t("ImagePlatform2x")}
+          alt="Screenshot"
+        />
+      </StyledPlatformWrapper>
 
-        <StyledWrapper>
-          <img src='/images/templates/for-government/platform/spd.svg' alt="Image" className="desktop" />
-          <StyledContent>
-            <Heading level={3} size={5} label={t("SpdHead")} />
-            <Text label={t("SpdText")} />
-            <Text
+      <StyledWrapper>
+        <img
+          src="/images/templates/for-government/platform/spd.svg"
+          alt="Image"
+          className="desktop"
+        />
+        <StyledContent>
+          <Heading level={3} size={5} label={t("SpdHead")} />
+          <Text label={t("SpdText")} />
+          <Text
             fontSize="13px"
             fontWeight={700}
             lineHeight="21px"
@@ -98,15 +115,15 @@ const Platform = () => {
             label={t("SpdAuthorInfo")}
           />
           <Link
-            href="/success-stories/gwdg?from=for-research"
+            href="/success-stories/spd-kreisverband"
             label={t("ReadTheStory")}
             color="main"
             textUnderline
             hover="underline-none"
             fontSize="14px"
           />
-          </StyledContent>
-        </StyledWrapper>
+        </StyledContent>
+      </StyledWrapper>
     </Section>
   );
 };

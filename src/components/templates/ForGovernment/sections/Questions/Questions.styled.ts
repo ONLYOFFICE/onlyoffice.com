@@ -50,7 +50,7 @@ const StyledQuestionsWrapper = styled.div`
     background-repeat: no-repeat;
 
     @media ${device.mobile} {
-      width: 100%;    
+      width: 100%;
       background-position-x: 50%;
       background-size: 50px;
     }

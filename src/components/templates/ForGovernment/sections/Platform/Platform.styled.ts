@@ -27,7 +27,7 @@ const StyledWrapper = styled.div`
     grid-template-columns: initial;
     column-gap: initial;
     row-gap: 32px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     background-image: url("/images/templates/for-government/platform/spd_mobile.svg");
     background-repeat: no-repeat;
     background-position-x: 50%;
@@ -50,7 +50,7 @@ const StyledWrapper = styled.div`
 const StyledWrapperDark = styled.div`
   max-width: 1120px;
   height: 390px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   margin: auto;
 
   @media ${device.desktop} {
@@ -99,7 +99,7 @@ const StyledWrapperDark = styled.div`
     grid-template-columns: initial;
     column-gap: initial;
     row-gap: 32px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     background-image: url("/images/templates/for-government/platform/hopewell_mobile.svg");
     background-repeat: no-repeat;
     background-position-x: 50%;
@@ -180,7 +180,7 @@ const StyledContent = styled.div`
 }
 `;
 
-const StyledPlatformWrapper= styled.div`
+const StyledPlatformWrapper = styled.div`
   padding: 200px 40px 0;
   margin: auto;
 
@@ -218,7 +218,7 @@ const StyledPlatformWrapper= styled.div`
   }
 
   @media ${device.mobile} {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     padding: 56px 16px 72px;
 
     h2 {
@@ -229,9 +229,9 @@ const StyledPlatformWrapper= styled.div`
       font-size: 14px;
     }
   }
-`
+`;
 
-const StyledButtons= styled.div`
+const StyledButtons = styled.div`
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -241,12 +241,12 @@ const StyledButtons= styled.div`
     flex-direction: column;
     padding: 0 0 48px;
   }
-`
+`;
 
 export {
   StyledPlatformWrapper,
   StyledWrapperDark,
   StyledWrapper,
   StyledContent,
-  StyledButtons
+  StyledButtons,
 };

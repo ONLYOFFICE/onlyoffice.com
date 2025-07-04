@@ -60,18 +60,18 @@ const StyledAppsList = styled.div`
     column-gap: 8px;
     min-width: 170px;
     justify-content: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      box-shadow 0.3s ease;
 
     &:hover {
       box-shadow: 0 7px 25px rgba(85, 85, 85, 0.15);
       background-color: #ffffff;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
     }
   }
 `;
 
-export {
-  StyledAppsWrapper,
-  StyledAppsList,
-  StyledAppsText
-};
+export { StyledAppsWrapper, StyledAppsList, StyledAppsText };

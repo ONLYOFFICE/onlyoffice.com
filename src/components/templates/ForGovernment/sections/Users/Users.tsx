@@ -2,7 +2,8 @@ import { useTranslation } from "next-i18next";
 import {
   StyledUsers,
   StyledUsersItems,
-  StyledUsersHeading
+  StyledUsersHeading,
+  StyledItem,
 } from "./Users.styled";
 import { Section } from "@src/components/ui/Section";
 import { usersItems } from "./data/usersItems";
@@ -17,22 +18,20 @@ const Users = () => {
       tabletSmallSpacing={["0", "56px"]}
       background="#F5F5F5"
     >
-    <StyledUsersHeading level={4} label={t("HeadingUsers")}></StyledUsersHeading>
+      <StyledUsersHeading
+        level={4}
+        label={t("HeadingUsers")}
+      ></StyledUsersHeading>
       <StyledUsers>
         <StyledUsersItems>
           {usersItems.map((item, index) => (
-            <li key={index}>
-              <div
-                style={{
-                  width: item.image.width, 
-                  height: item.image.height, 
-                  backgroundImage: `url(${item.image.url})`, 
-                  backgroundPosition: item.image.positionX, 
-                  backgroundSize: 'auto', 
-                  backgroundRepeat: 'no-repeat', 
-                }}
-              />
-            </li>
+            <StyledItem
+              key={index}
+              $width={item.image.width}
+              $height={item.image.height}
+              $backgroundImage={`url(${item.image.url})`}
+              $backgroundPosition={item.image.positionX}
+            />
           ))}
         </StyledUsersItems>
       </StyledUsers>

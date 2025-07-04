@@ -10,21 +10,19 @@ const StyledHeroSection = styled(Section)`
 `;
 
 const StyledHeroWrapper = styled.div`
-  margin-left: 120px;
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 352px auto;
   align-items: center;
-  gap: 40px;
+  gap: 16px;
 
-  @media ${device.desktop} {
+  @media ${device.tabletS} {
     grid-template-columns: 1fr;
     text-align: center;
-    margin-left: 0;
-    row-gap: 0;
+    row-gap: 48px;
   }
 
   @media ${device.mobile} {
-    text-align: start;
+    row-gap: 28px;
   }
 `;
 
@@ -33,9 +31,9 @@ const StyledHeroContent = styled.div`
   justify-items: start;
   row-gap: 32px;
   color: #ffffff;
-  max-width: 400px;
+  max-width: 352px;
 
-  @media ${device.desktop} {
+  @media ${device.tabletS} {
     justify-items: center;
     text-align: center;
     max-width: 100%;
@@ -53,9 +51,8 @@ const StyledHeroContent = styled.div`
 const StyledHeroHeading = styled(Heading)`
   letter-spacing: -0.03em;
   line-height: 1.33em;
-  max-width: 350px;
 
-  @media ${device.desktop} {
+  @media ${device.tabletS} {
     max-width: 795px;
   }
 
@@ -77,30 +74,11 @@ const StyledHeroSubheading = styled(Heading)`
 `;
 
 const StyledHeroImage = styled.div`
-  padding-bottom: 75.71%;
+  aspect-ratio: 2.07;
   background-image: url("/images/templates/for-government/hero/hero_image.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  max-width: 800px;
-
-  @media ${device.desktop} {
-    margin: 0 auto;
-    padding-bottom: 0;
-    width: 100%;
-    height: 480px;
-  }
-
-  @media ${device.tabletS} {
-    padding-bottom: 75.71%;
-    height: initial;
-  }
-
-  @media ${device.mobile} {
-    padding-bottom: 0;
-    width: 288px;
-    height: 218px;
-  }
 `;
 
 export {
