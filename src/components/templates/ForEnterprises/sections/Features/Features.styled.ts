@@ -33,7 +33,7 @@ const StyledFeaturesContent = styled.div`
     padding: 112px 0;
 
     > div {
-      gap: 32px; 
+      gap: 32px;
 
       > div {
         flex: 0 1 544px;
@@ -42,7 +42,7 @@ const StyledFeaturesContent = styled.div`
     }
 
     @media ${device.mobile} {
-     padding: 48px 0;
+      padding: 48px 0;
     }
 
     &:first-child {
@@ -90,10 +90,10 @@ const StyledFeaturesContent = styled.div`
 
       > div {
         flex: 0;
-      } 
+      }
     }
   }
-    
+
   @media ${device.mobile} {
     div {
       font-size: 14px;
@@ -101,6 +101,4 @@ const StyledFeaturesContent = styled.div`
   }
 `;
 
-export {
-  StyledFeaturesContent
-};
+export { StyledFeaturesContent };

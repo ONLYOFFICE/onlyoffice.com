@@ -1,7 +1,5 @@
 import { useTranslation } from "next-i18next";
-import {
-  StyledFeaturesContent,
-} from "./Features.styled";
+import { StyledFeaturesContent } from "./Features.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { FeatureIconsItem } from "@src/components/widgets/FeatureIconsItem";
@@ -39,7 +37,9 @@ const Features = () => {
                     width: 544,
                   }}
                   text={group.items.map((key) => {
-                    const entry = group.textWithLinks?.find((item) => item.label === key);
+                    const entry = group.textWithLinks?.find(
+                      (item) => item.label === key,
+                    );
                     return {
                       label: t(key),
                       links: entry?.links ?? [],
@@ -48,15 +48,13 @@ const Features = () => {
                   position={{
                     desktop: groupIndex % 2 === 1 ? "right" : "left",
                   }}
-                  connectorsItems={
-                    group.connectorsItems?.map((item) => ({
-                      ...item,
-                      label: t(item.label),
-                    }))
-                  }
+                  connectorsItems={group.connectorsItems?.map((item) => ({
+                    ...item,
+                    label: t(item.label),
+                  }))}
                 />
               );
-            })
+            }),
           )}
         </StyledFeaturesContent>
       </Container>

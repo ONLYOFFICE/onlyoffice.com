@@ -1,6 +1,6 @@
 export const items = [
-{
-    items: [ 
+  {
+    items: [
       {
         connectorsHeading: "EnterpriseHead1",
         connectorsSubheading: "EnterpriseSub1",
@@ -42,7 +42,16 @@ export const items = [
       {
         connectorsHeading: "EnterpriseHead2",
         connectorsSubheading: "EnterpriseSub2",
-        items: ["EnterpriseFeature2", "EnterpriseFeature22", "EnterpriseFeature23", "EnterpriseFeature24", "EnterpriseFeature25", "EnterpriseFeature26", "EnterpriseFeature27", "EnterpriseFeature28"],
+        items: [
+          "EnterpriseFeature2",
+          "EnterpriseFeature22",
+          "EnterpriseFeature23",
+          "EnterpriseFeature24",
+          "EnterpriseFeature25",
+          "EnterpriseFeature26",
+          "EnterpriseFeature27",
+          "EnterpriseFeature28",
+        ],
         image: {
           url: "EnterpriseImgUrl2",
         },
@@ -95,7 +104,7 @@ export const items = [
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
               width: 96,
-              height:40,
+              height: 40,
               positionY: "-458px",
             },
             label: "",
@@ -123,11 +132,20 @@ export const items = [
       {
         connectorsHeading: "EnterpriseHead3",
         connectorsSubheading: "EnterpriseSub3",
-        items: ["EnterpriseFeature3", "EnterpriseFeature32", "EnterpriseFeature33", "EnterpriseFeature34", "EnterpriseFeature35", "EnterpriseFeature36", "EnterpriseFeature37", "EnterpriseFeature38"],
+        items: [
+          "EnterpriseFeature3",
+          "EnterpriseFeature32",
+          "EnterpriseFeature33",
+          "EnterpriseFeature34",
+          "EnterpriseFeature35",
+          "EnterpriseFeature36",
+          "EnterpriseFeature37",
+          "EnterpriseFeature38",
+        ],
         image: {
           url: "EnterpriseImgUrl3",
         },
-       links: [
+        links: [
           {
             href: "/download-workspace#workspace-enterprise",
             label: "TryNow",
@@ -183,7 +201,13 @@ export const items = [
       {
         connectorsHeading: "EnterpriseHead4",
         connectorsSubheading: "EnterpriseSub4",
-        items: ["EnterpriseFeature4", "EnterpriseFeature42", "EnterpriseFeature43", "EnterpriseFeature44", "EnterpriseFeature45"],
+        items: [
+          "EnterpriseFeature4",
+          "EnterpriseFeature42",
+          "EnterpriseFeature43",
+          "EnterpriseFeature44",
+          "EnterpriseFeature45",
+        ],
         image: {
           url: "EnterpriseImgUrl4",
         },
@@ -208,7 +232,7 @@ export const items = [
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
               width: 96,
-              height:40,
+              height: 40,
               positionY: "-458px",
             },
             label: "",
@@ -236,7 +260,13 @@ export const items = [
       {
         connectorsHeading: "EnterpriseHead5",
         connectorsSubheading: "EnterpriseSub5",
-        items: ["EnterpriseFeature5", "EnterpriseFeature52", "EnterpriseFeature53", "EnterpriseFeature54", "EnterpriseFeature55"],
+        items: [
+          "EnterpriseFeature5",
+          "EnterpriseFeature52",
+          "EnterpriseFeature53",
+          "EnterpriseFeature54",
+          "EnterpriseFeature55",
+        ],
         image: {
           url: "EnterpriseImgUrl5",
           url2x: "EnterpriseImgUrl5",
@@ -269,7 +299,7 @@ export const items = [
             image: {
               url: "/images/templates/for-enterprises/features/icons.svg",
               width: 96,
-              height:40,
+              height: 40,
               positionY: "-458px",
             },
             label: "",
@@ -313,5 +343,5 @@ export const items = [
         ],
       },
     ],
-},
-]
+  },
+];
