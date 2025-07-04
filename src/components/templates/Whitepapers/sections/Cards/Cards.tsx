@@ -44,6 +44,17 @@ const Cards = ({ sortValue }: ICardsProp ) => {
 
   const [activeDropdown, setActiveDropdown] = useState<"filter" | "module" | "date" | null>(null);
 
+  const handleModuleSetDefault = () => {
+    if (choosedFilter !== t("CardsHeadingDatasheets")) {
+      setChoosedModule(t("CardsFiltersAll"));
+    }
+  }
+
+  const handleChooseFilter = (label: string) => {
+    setChoosedFilter(label);
+    handleModuleSetDefault();
+  }
+
   const handleDropdownClick = (dropdown: "filter" | "module" | "date") => {
     setActiveDropdown((prev) => (prev === dropdown ? null : dropdown));
   }
@@ -122,7 +133,7 @@ const Cards = ({ sortValue }: ICardsProp ) => {
               {cardsContentList.map((label) => (
                 <StyledCardsRefineItems
                   key={label}
-                  onClick={() => setChoosedFilter(label)}
+                  onClick={() => handleChooseFilter(label)}
                   $isActive={choosedFilter === label}
                 >
                   <StyledCardsRefineText
