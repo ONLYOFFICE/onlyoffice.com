@@ -60,7 +60,7 @@ pipeline {
                         usernamePassword(credentialsId: 'onlyoffice_site_test_email_credentials', 
                         passwordVariable: 'transporter_email_auth_password', 
                         usernameVariable: 'transporter_email_auth_user')]) {
-
+        script {
         def escaped_password = sh(
                         script: """printf '%s\\n' "${transporter_email_auth_password}" | sed 's/[&/\\\\]/\\\\&/g'""",
                         returnStdout: true
@@ -95,7 +95,7 @@ pipeline {
           
           echo "Deploy from ${BRANCH_NAME} is starting."
         '''
-        }
+        }}
         
         sshPublisher(failOnError: true, publishers: [sshPublisherDesc(configName: "strapi_oforms@${region}", 
           transfers: [sshTransfer(cleanRemote: false, 
