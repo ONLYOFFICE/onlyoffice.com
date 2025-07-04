@@ -6,6 +6,7 @@ import {
 import { IFeatureItem } from "./FeatureItem.types";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { Link } from "@src/components/ui/Link";
 
 const FeatureItem = ({
   id,
@@ -27,6 +28,7 @@ const FeatureItem = ({
   maxWidth,
   heading,
   text,
+  link
 }: IFeatureItem) => {
   return (
     <StyledFeatureItem
@@ -60,6 +62,13 @@ const FeatureItem = ({
           </Heading>
         )}
         <Text size={2}>{text}</Text>
+        {link && (
+          <Link
+            href={link.href}
+            label={link.label}
+            target={link.isExternal ? "_blank" : undefined}
+          />
+        )}
       </StyledFeatureItemWrapper>
     </StyledFeatureItem>
   );
