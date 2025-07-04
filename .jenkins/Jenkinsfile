@@ -74,7 +74,7 @@ pipeline {
           sed -i "s^var_transporter_email_host^$transporter_email_host^" .env
           sed -i "s^var_transporter_email_port^$transporter_email_port^" .env
           sed -i "s^var_transporter_email_auth_user^$transporter_email_auth_user^" .env
-          sed -i "s^var_transporter_email_auth_password^$transporter_email_auth_password^" .env
+          #sed -i "s^var_transporter_email_auth_password^$transporter_email_auth_password^" .env
           
           if [ "${region}" = "info" ]; then
             cp .jenkins/robots.txt ./
