@@ -60,6 +60,12 @@ pipeline {
                         usernamePassword(credentialsId: 'onlyoffice_site_test_email_credentials', 
                         passwordVariable: 'transporter_email_auth_password', 
                         usernameVariable: 'transporter_email_auth_user')]) {
+
+        def escaped_password = sh(
+                        script: """printf '%s\\n' "${transporter_email_auth_password}" | sed 's/[&/\\\\]/\\\\&/g'""",
+                        returnStdout: true
+                    ).trim()
+                  
         sh '''
           cp .jenkins/build.sh .jenkins/site_build.sh
 
@@ -75,8 +81,7 @@ pipeline {
           sed -i "s^var_transporter_email_port^$transporter_email_port^" .env
           sed -i "s^var_transporter_email_auth_user^$transporter_email_auth_user^" .env
           
-          escaped_password=$(printf '%s\n' "$transporter_email_auth_password" | sed 's/[&/\]/\\&/g')
-          sed -i "s|var_transporter_email_auth_password|$escaped_password|" .env
+          sed -i "s|var_transporter_email_auth_password|${escaped_password}|" .env
           
           if [ "${region}" = "info" ]; then
             cp .jenkins/robots.txt ./
