@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -86,9 +86,9 @@ const Cards = ({ sortValue }: ICardsProp ) => {
     return count;
   }, [choosedFilter, choosedModule, choosedDate, t]);
 
-  const handleDropdownClick = (dropdown: "filter" | "module" | "date") => {
+  const handleDropdownClick = useCallback((dropdown: "filter" | "module" | "date") => {
     setActiveDropdown((prev) => (prev === dropdown ? null : dropdown));
-  }
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -110,7 +110,7 @@ const Cards = ({ sortValue }: ICardsProp ) => {
   }, []);
 
   const handleShowMore = () => {
-    setDataSheetsDisplayCount(refineDatasheetsItems.length);
+    setDataSheetsDisplayCount(cardDatasheetsItems.length);
     setDataSheetsShowButton(false);
   }
 
@@ -130,10 +130,10 @@ const Cards = ({ sortValue }: ICardsProp ) => {
   }, [t]);
 
   const sortModules = useMemo(() => {
-    return [
-      {title: t("CardsFiltersAll")},
-      ...cardDatasheetsItems.sort((a, b) => a.title.localeCompare(b.title))
-    ];
+    const sorted = [...cardDatasheetsItems].sort((a, b) =>
+      a.title.localeCompare(b.title)
+    );
+    return [{ title: t("CardsFiltersAll") }, ...sorted];
   }, [t]);
 
   const { refineWhitepaperItems, refineDatasheetsItems} = useRefineCardsItems(
@@ -144,11 +144,11 @@ const Cards = ({ sortValue }: ICardsProp ) => {
     choosedDate
   );
 
-  const handleMobResetFilters = () => {
+  const handleMobResetFilters = useCallback(() => {
     setChoosedFilter(t("CardsFiltersAll"));
     setChoosedModule(t("CardsFiltersAll"));
     setChoosedDate(t("CardsSortNewestOldest"));
-  }
+  }, [t]);
 
   return (
     <>
