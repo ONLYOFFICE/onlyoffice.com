@@ -1,14 +1,9 @@
-
 export const items = [
-{
-    items: [ 
+  {
+    items: [
       {
         connectorsHeading: "ResearchHead1",
-        items: [
-          "ResearchFeature1",
-          "ResearchFeature12",
-          "ResearchFeature13",
-        ],
+        items: ["ResearchFeature1", "ResearchFeature12", "ResearchFeature13"],
         image: {
           url: "ResearchImgUrl",
         },
@@ -28,18 +23,7 @@ export const items = [
             isLink: true,
           },
         ],
-        textWithLinks: [
-          {
-            label: "ResearchFeature1",
-            links: [
-              {
-                href: "",
-                label: "SeeAllAvailableOptions",
-              },
-            ],
-          },
-        ],
       },
     ],
-},
-]
+  },
+];

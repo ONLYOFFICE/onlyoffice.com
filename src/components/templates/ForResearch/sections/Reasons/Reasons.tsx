@@ -67,7 +67,7 @@ const Reasons = () => {
                 label={t("GetItNow")}
               />
               <Link
-                href="/success-stories/gwdg?from=for-research"
+                href="/all-connectors?from=for-research"
                 label={t("SeeAllIntegrations")}
                 color="main"
                 hover="underline-none"

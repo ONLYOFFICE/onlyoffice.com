@@ -2,10 +2,9 @@ import { Trans, useTranslation } from "next-i18next";
 import {
   StyledEnterpriseWrapper,
   StyledEnterpriseContent,
-  StyledEnterpriseImage,
   StyledEnterpriseList,
   StyledQuoteWrapper,
-  StyledQuoteText
+  StyledQuoteText,
 } from "./Enterprise.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -23,7 +22,7 @@ const items = [
 
 const Enterprise = () => {
   const { t } = useTranslation("for-research");
-  const logo = '/images/templates/for-research/enterprise/logo_comment.svg'; 
+  const logo = "/images/templates/for-research/enterprise/logo_comment.svg";
 
   return (
     <Section
@@ -50,7 +49,10 @@ const Enterprise = () => {
               ))}
             </StyledEnterpriseList>
           </StyledEnterpriseContent>
-          <img src="/images/templates/for-research/enterprise/enterprise.svg" alt="Icon" />
+          <img
+            src="/images/templates/for-research/enterprise/enterprise.svg"
+            alt="Icon"
+          />
         </StyledEnterpriseWrapper>
         <StyledQuoteWrapper>
           <img src={logo} alt="Icon" />
@@ -71,13 +73,13 @@ const Enterprise = () => {
             label={t("QuoteAuthorInfo3")}
           />
           <Link
-              href={t("QuoteBlogLink3")}
-              label={t("QuoteLink")}
-              color="main"
-              textUnderline
-              hover="underline-none"
-              target="_blank"
-            />
+            href={t("QuoteBlogLink3")}
+            label={t("QuoteLink")}
+            color="main"
+            textUnderline
+            hover="underline-none"
+            target="_blank"
+          />
         </StyledQuoteWrapper>
       </Container>
     </Section>

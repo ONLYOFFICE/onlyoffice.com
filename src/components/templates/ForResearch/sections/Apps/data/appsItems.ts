@@ -29,13 +29,13 @@ export const appsItems: IAppsItems[] = [
     label: "ForMacOS", 
   },
   {
-    href: "/download-desktop",
+    href: "https://itunes.apple.com/us/app/onlyoffice-documents/id944896972",
     imageUrl: "/images/templates/for-research/apps/download.svg",
     width: "125px",
     backgroundPositionX: "-97px"
   },
   {
-    href: "/download-desktop",
+    href: "https://play.google.com/store/apps/details?id=com.onlyoffice.documents",
     imageUrl: "/images/templates/for-research/apps/download.svg",
     width: "130px",
     backgroundPositionX: "-223px"

@@ -37,10 +37,8 @@ const Features = () => {
                     width: 544,
                   }}
                   text={group.items.map((key) => {
-                    const entry = group.textWithLinks?.find((item) => item.label === key);
                     return {
                       label: t(key),
-                      links: entry?.links ?? [],
                     };
                   })}
                   position={{
