@@ -17,9 +17,11 @@ const Protect = () => {
                     <StyledHeading 
                     label={t("ProtectYourSensitive")}
                     />
-                    <StyledButton 
-                    label={t("TryNow")}
+                    <StyledButton
+                    as="a"
+                    children={t("TryNow")}
                     variant="quaternary"
+                    href="/download-desktop.aspx"
                     />
                 </ProtectBlock>
             </Container>

@@ -38,11 +38,17 @@ const StyledHeading = styled(Heading)`
 `;
 
 const StyledButton = styled(Button)`
+    display: block;
     background-color: #ffffff;
     border-radius: 3px;
+    color: #444444;
     font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
     padding: 19px 35px;
-
+    margin: 0 auto;
+    width: 138px;
+    
     @media ${device.mobile} {
         font-size: 12px;
         padding: 16px 35px;
