@@ -20,10 +20,7 @@ const getSortedItems = (locale?: string) => {
 
   if (locale === "zh") {
     langKey = "zh";
-  // !!! add condition for british english later
-  // } else if (locale === "en") {
-  //   langKey = "en";
-  } else if (!locale || locale === "") {
+  } else if (locale === "en") {
     langKey = "default";
   } else {
     langKey = "eu";

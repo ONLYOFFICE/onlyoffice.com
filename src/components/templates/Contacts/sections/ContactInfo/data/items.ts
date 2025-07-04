@@ -81,7 +81,6 @@ export const officeOrderByLang: Record<string, string[]> = {
   default: ["sg", "usa", "lv", "uk", "arm", "sg", "uz", "ser", "zh"],
   eu: ["sg", "lv", "uk", "usa", "arm", "sg", "uz", "ser", "zh"],
   zh: ["zh", "sg", "lv", "uk", "arm", "sg", "uz", "ser"],
-  en: ["sg", "uk", "lv", "usa", "arm", "sg", "uz", "ser", "zh"],
 };
 
 
