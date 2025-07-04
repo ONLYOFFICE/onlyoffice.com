@@ -5,7 +5,7 @@ import { StyledHCaptcha } from "./HCaptcha.styled";
 import { IHCaptcha } from "./HCaptcha.types";
 
 const HCaptcha = forwardRef<ReactHCaptcha, IHCaptcha>(
-  ({ onVerify, onExpire }: IHCaptcha, ref) => {
+  ({ size = "normal", onVerify, onExpire }: IHCaptcha, ref) => {
     const router = useRouter();
 
     return (
@@ -14,6 +14,7 @@ const HCaptcha = forwardRef<ReactHCaptcha, IHCaptcha>(
           ref={ref}
           sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY!}
           languageOverride={router.locale}
+          size={size}
           onVerify={onVerify}
           onExpire={onExpire}
         />
