@@ -26,7 +26,7 @@ const Questions = () => {
             />
             <Button
               as="a"
-              href="mailto:sales@onlyoffice.com"
+              href="/call-back-form"
               label={t("ScheduleATime")}
               variant="secondary"
             />

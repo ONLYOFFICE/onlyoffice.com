@@ -60,7 +60,7 @@ const LeftTextImg = () => {
                 i18nKey="WantToDiscussOrSubmitAPlugin"
                 components={[
                   <Link
-                    href="marketing@onlyoffice.com"
+                    href="mailto:marketing@onlyoffice.com"
                     color="main"
                     textUnderline
                     hover="underline-none"

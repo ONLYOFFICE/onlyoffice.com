@@ -61,10 +61,10 @@ const StyledLeftTextImgImage = styled.div`
 `;
 
 const StyledLeftTextImgTextAfter = styled(Text)`
-    font-size: 14px;
-    line-height: 22px;
-    padding-top: 40px;
-    color: #FFFFFF;
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 40px;
+  color: #ffffff;
 
   @media ${device.mobile} {
     font-size: 13px;

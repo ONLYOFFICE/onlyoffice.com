@@ -109,5 +109,5 @@ export {
   StyledHeroContent,
   StyledHeroHeading,
   StyledHeroImage,
-  StyledHeroSubheading
+  StyledHeroSubheading,
 };

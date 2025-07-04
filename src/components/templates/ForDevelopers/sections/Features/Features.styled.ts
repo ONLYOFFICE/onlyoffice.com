@@ -7,7 +7,7 @@ const StyledFeaturesContent = styled.div`
   align-items: center;
 
   > div {
-    border-bottom: 1px solid #E2E2E2;
+    border-bottom: 1px solid #e2e2e2;
     padding: 112px 0;
 
     p {
@@ -36,8 +36,8 @@ const StyledFeaturesContent = styled.div`
       padding-bottom: 0;
     }
 
-      &:nth-child(2n) {
-        text-align: right;
+    &:nth-child(2n) {
+      text-align: right;
 
       .featureList {
         padding-right: 40px;
@@ -93,7 +93,10 @@ const StyledFeaturesContent = styled.div`
   }
 `;
 
-const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean, isLink?: boolean }>`
+const StyledFeatureIconsButton = styled.a<{
+  isPrimary?: boolean;
+  isLink?: boolean;
+}>`
   padding: 12px 24px;
   font-size: 12px;
   line-height: 26px;
@@ -112,8 +115,10 @@ const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean, isLink?: boolea
     width: 100%;
   }
 
-  color: ${({ isPrimary, isLink }) => (isLink ? "#ff6f3d" : (isPrimary ? "#ffffff" : "#ffffff"))};
-  background-color: ${({ isPrimary, isLink }) => (isLink ? "" : (isPrimary ? "#ff6f3d" : "#444444"))};
+  color: ${({ isPrimary, isLink }) =>
+    isLink ? "#ff6f3d" : isPrimary ? "#ffffff" : "#ffffff"};
+  background-color: ${({ isPrimary, isLink }) =>
+    isLink ? "" : isPrimary ? "#ff6f3d" : "#444444"};
 
   &:hover {
     opacity: 0.9;
@@ -121,7 +126,4 @@ const StyledFeatureIconsButton = styled.a<{ isPrimary?: boolean, isLink?: boolea
   }
 `;
 
-export {
-  StyledFeaturesContent,
-  StyledFeatureIconsButton
-};
+export { StyledFeaturesContent, StyledFeatureIconsButton };

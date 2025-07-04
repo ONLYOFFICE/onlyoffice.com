@@ -1,14 +1,12 @@
-import { useTranslation } from "next-i18next";
 import {
   StyledConnectors,
   StyledConnectorsItems,
+  StyledItem,
 } from "./Connectors.styled";
 import { Section } from "@src/components/ui/Section";
 import { connectorsItems } from "./data/connectorsItems";
 
 const Connectors = () => {
-  const { t } = useTranslation("for-developers");
-
   return (
     <Section
       background="#f9f9f9"
@@ -19,18 +17,13 @@ const Connectors = () => {
       <StyledConnectors>
         <StyledConnectorsItems>
           {connectorsItems.map((item, index) => (
-            <li key={index}>
-              <div
-                style={{
-                  width: item.image.width, 
-                  height: item.image.height, 
-                  backgroundImage: `url(${item.image.url})`, 
-                  backgroundPosition: item.image.positionX, 
-                  backgroundSize: '840px auto', 
-                  backgroundRepeat: 'no-repeat', 
-                }}
-              />
-            </li>
+            <StyledItem
+              key={index}
+              $width={item.image.width}
+              $height={item.image.height}
+              $backgroundImage={`url(${item.image.url})`}
+              $backgroundPosition={item.image.positionX}
+            />
           ))}
         </StyledConnectorsItems>
       </StyledConnectors>

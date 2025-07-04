@@ -10,11 +10,13 @@ export const items: IBlogCard[] = [
     heading: {
       label: "BlogDevelopersLabel",
     },
-    links: [{
-      href: "BlogDevelopersLinks",
-      label: "BlogDevelopersLinksLabel",
-      isExternal: true,
-    }],
+    links: [
+      {
+        href: "BlogDevelopersLinks",
+        label: "BlogDevelopersLinksLabel",
+        isExternal: true,
+      },
+    ],
   },
   {
     imgUrl: "BlogDevelopersImgUrl2",
@@ -25,10 +27,12 @@ export const items: IBlogCard[] = [
     heading: {
       label: "BlogDevelopersLabel2",
     },
-    links: [{
-      href: "BlogDevelopersLinks2",
-      label: "BlogDevelopersLinksLabel2",
-      isExternal: true,
-    }],
+    links: [
+      {
+        href: "BlogDevelopersLinks2",
+        label: "BlogDevelopersLinksLabel2",
+        isExternal: true,
+      },
+    ],
   },
 ];

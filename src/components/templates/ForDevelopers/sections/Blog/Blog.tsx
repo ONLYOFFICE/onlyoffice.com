@@ -1,7 +1,5 @@
 import { useTranslation } from "next-i18next";
-import {
-  StyledBlogItems,
-} from "./Blog.styled";
+import { StyledBlogItems } from "./Blog.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { BlogCard } from "@src/components/widgets/BlogCard";
@@ -11,7 +9,11 @@ const Blog = () => {
   const { t } = useTranslation("for-developers");
 
   return (
-    <Section tabletSmallSpacing={["72px", "72px"]} background="#F5F5F5" borderTop>
+    <Section
+      tabletSmallSpacing={["72px", "72px"]}
+      background="#F5F5F5"
+      borderTop
+    >
       <Container>
         <StyledBlogItems>
           {items.map((item, index) => (
@@ -26,7 +28,7 @@ const Blog = () => {
               italicText={t(item.italicText ?? "")}
               quotesAfter={t(item.quotesAfter ?? "")}
               author={t(item.author ?? "")}
-              links={item.links?.map(link => ({
+              links={item.links?.map((link) => ({
                 href: t(link.href ?? ""),
                 label: t(link.label ?? ""),
                 isExternal: link.isExternal,

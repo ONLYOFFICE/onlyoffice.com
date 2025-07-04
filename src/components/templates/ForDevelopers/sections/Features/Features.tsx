@@ -1,7 +1,7 @@
 import { useTranslation } from "next-i18next";
 import {
   StyledFeaturesContent,
-  StyledFeatureIconsButton
+  StyledFeatureIconsButton,
 } from "./Features.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -37,11 +37,15 @@ const Features = () => {
                     showButtonsOutside={true}
                     image={{
                       url: t(group.image.url),
-                      url2x: group.image.url2x ? t(group.image.url2x) : undefined,
+                      url2x: group.image.url2x
+                        ? t(group.image.url2x)
+                        : undefined,
                       height: 520,
                     }}
                     text={group.items.map((key) => {
-                      const entry = group.textWithLinks?.find((item) => item.label === key);
+                      const entry = group.textWithLinks?.find(
+                        (item) => item.label === key,
+                      );
                       return {
                         label: t(key),
                         links: entry?.links ?? [],
@@ -50,12 +54,10 @@ const Features = () => {
                     position={{
                       desktop: groupIndex % 2 === 1 ? "left" : "right",
                     }}
-                    connectorsItems={
-                      group.connectorsItems?.map((item) => ({
-                        ...item,
-                        label: t(item.label),
-                      }))
-                    }
+                    connectorsItems={group.connectorsItems?.map((item) => ({
+                      ...item,
+                      label: t(item.label),
+                    }))}
                   />
                   {Array.isArray(buttons) && buttons.length > 0 && (
                     <div
@@ -67,22 +69,24 @@ const Features = () => {
                         justifyContent: "center",
                       }}
                     >
-                      {buttons.map(({ label, href, isExternal, isPrimary }, index) => (
-                        <StyledFeatureIconsButton
-                          key={index}
-                          href={href}
-                          target={isExternal ? "_blank" : undefined}
-                          rel={isExternal ? "noopener noreferrer" : undefined}
-                          isPrimary={isPrimary}
-                        >
-                          {label}
-                        </StyledFeatureIconsButton>
-                      ))}
+                      {buttons.map(
+                        ({ label, href, isExternal, isPrimary }, index) => (
+                          <StyledFeatureIconsButton
+                            key={index}
+                            href={href}
+                            target={isExternal ? "_blank" : undefined}
+                            rel={isExternal ? "noopener noreferrer" : undefined}
+                            isPrimary={isPrimary}
+                          >
+                            {label}
+                          </StyledFeatureIconsButton>
+                        ),
+                      )}
                     </div>
                   )}
                 </div>
               );
-            })
+            }),
           )}
         </StyledFeaturesContent>
       </Container>

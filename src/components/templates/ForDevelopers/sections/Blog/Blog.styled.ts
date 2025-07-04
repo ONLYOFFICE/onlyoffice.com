@@ -11,7 +11,7 @@ const StyledBlogItems = styled.div`
     min-width: 100%;
 
     > div {
-      display: block; 
+      display: block;
     }
 
     @media ${device.tablet} {
@@ -40,6 +40,4 @@ const StyledBlogItems = styled.div`
   }
 `;
 
-export {
-  StyledBlogItems,
-};
+export { StyledBlogItems };

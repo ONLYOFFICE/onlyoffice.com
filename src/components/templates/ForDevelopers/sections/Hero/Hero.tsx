@@ -23,14 +23,14 @@ const Hero = () => {
       <Container maxWidth="1419px">
         <StyledHeroWrapper>
           <StyledHeroContent>
-            <StyledHeroHeading level={1} size={1}> 
+            <StyledHeroHeading level={1} size={1}>
               <Trans
                 t={t}
                 i18nKey="HeroTitle"
                 components={[<Text as="span" color="#FF6F3D" key="0" />]}
               />
             </StyledHeroHeading>
-            <StyledHeroSubheading level={2} size={5} label={t("HeroSubitle")} /> 
+            <StyledHeroSubheading level={2} size={5} label={t("HeroSubitle")} />
           </StyledHeroContent>
           <StyledHeroImage />
         </StyledHeroWrapper>

@@ -1,14 +1,10 @@
 export const items = [
-{
-    items: [ 
+  {
+    items: [
       {
         connectorsHeading: "Embedding",
         connectorsSubheading: "EmbeddingSub",
-        items: [
-          "EmbeddingFeature1",
-          "EmbeddingFeature2",
-          "EmbeddingFeature3",
-        ],
+        items: ["EmbeddingFeature1", "EmbeddingFeature2", "EmbeddingFeature3"],
         textWithLinks: [
           {
             label: "EmbeddingFeature3",
@@ -89,7 +85,11 @@ export const items = [
       {
         connectorsHeading: "OnlineDocument",
         connectorsSubheading: "OnlineDocumentSub",
-        items: ["OnlineDocumentFeature1", "OnlineDocumentFeature2", "OnlineDocumentFeature3"],
+        items: [
+          "OnlineDocumentFeature1",
+          "OnlineDocumentFeature2",
+          "OnlineDocumentFeature3",
+        ],
         image: {
           url: "OnlineDocumentImgUrl",
         },
@@ -127,14 +127,14 @@ export const items = [
         ],
         links: [
           {
-            href: "https://api.onlyoffice.com/docspace/",
+            href: "/developer-edition",
             label: "LearnMore",
             isExternal: false,
             isPrimary: true,
           },
           {
             href: "https://api.onlyoffice.com/docs/docs-api/get-started/basic-concepts/",
-            label: "SubmitRequest",
+            label: "ReadDocumentation",
             isExternal: true,
             isPrimary: true,
           },
@@ -197,13 +197,13 @@ export const items = [
         },
         links: [
           {
-            href: "https://api.onlyoffice.com/docspace/",
+            href: "/document-builder",
             label: "LearnMore",
             isExternal: false,
             isPrimary: true,
           },
           {
-            href: "https://api.onlyoffice.com/docs/docs-api/get-started/basic-concepts/",
+            href: "https://api.onlyoffice.com/docs/document-builder/get-started/overview/",
             label: "ReadDocumentation",
             isExternal: true,
             isPrimary: true,
@@ -211,5 +211,5 @@ export const items = [
         ],
       },
     ],
-},
-]
+  },
+];
