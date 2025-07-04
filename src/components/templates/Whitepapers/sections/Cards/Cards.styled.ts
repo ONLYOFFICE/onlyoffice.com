@@ -130,6 +130,23 @@ const StyledCardsList = styled.div`
   margin-top: 48px;
 `;
 
+const StyledCardsDatasheetsShowBtn = styled.button<{
+  $display: boolean;
+}>`
+  display: ${({ $display }) => ($display ? "block" : "none")};
+  color: #ff6f3d;
+  text-decoration: underline;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  margin: 32px auto 0;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
 export {
   StyledCardsFiltersWrapper,
   StyledCardsFilterSelect,
@@ -144,5 +161,6 @@ export {
   StyledCardsSortDateText,
   StyledCardsContent,
   StyledCardsHeading,
-  StyledCardsList
+  StyledCardsList,
+  StyledCardsDatasheetsShowBtn
 }

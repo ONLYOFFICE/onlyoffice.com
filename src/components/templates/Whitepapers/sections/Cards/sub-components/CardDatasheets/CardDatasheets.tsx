@@ -12,13 +12,13 @@ import {
   StyledCardDatasheetsTitle
 } from "./CardDatasheets.styled";
 
-const CardDatasheets = ({ title, product, image_url, download_url }: ICardDatasheetsItemsProps) => {
+const CardDatasheets = ({ title, product, image_url, download_url, displayOther }: ICardDatasheetsItemsProps) => {
   const { t } = useTranslation("whitepapers");
   const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
-      <StyledCardDatasheets>
+      <StyledCardDatasheets $displayOther={displayOther}>
         <StyledCardDatasheetsImage
           $image_url={image_url}
         />

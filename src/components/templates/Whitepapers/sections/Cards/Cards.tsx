@@ -23,11 +23,15 @@ import {
   StyledCardsRefineItems,
   StyledCardsRefineText,
   StyledCardsSortModuleText,
-  StyledCardsSortDateText
+  StyledCardsSortDateText,
+  StyledCardsDatasheetsShowBtn
 } from "./Cards.styled";
 
 const Cards = ({ sortValue }: ICardsProp ) => {
   const { t } = useTranslation("whitepapers");
+
+  const [dataSheetsDisplayCount, setDataSheetsDisplayCount] = useState<number>(6);
+  const [dataSheetsShowButton, setDataSheetsShowButton] = useState<boolean>(true);
 
   const [choosedFilter, setChoosedFilter] = useState<string>(t("CardsFiltersAll"));
   const filterBtnRef = useRef<HTMLDivElement>(null);
@@ -62,6 +66,11 @@ const Cards = ({ sortValue }: ICardsProp ) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const handleShowMore = () => {
+    setDataSheetsDisplayCount(refineDatasheetsItems.length);
+    setDataSheetsShowButton(false);
+  }
 
   const cardsContentList = useMemo(() => {
     return [
@@ -125,34 +134,36 @@ const Cards = ({ sortValue }: ICardsProp ) => {
             </StyledCardsRefineList>
           </StyledCardsFilterSelect>
           <StyledCardsSortSelect ref={moduleBtnRef}>
-            <StyledCardsSortModules onClick={() => handleDropdownClick("module")}>
-              <StyledCardsSortModuleText
-                fontSize="11px"
-                textTransform="uppercase"
-                color="#808080"
-                label={t("CardsSortModules")}
-              />
-              <StyledCardsRefineHeading
-                $isOpen={activeDropdown === "module"}
-                label={choosedModule}
-                level={5}
-                size={6}
-              />
-              <StyledCardsRefineList $isOpen={activeDropdown === "module"}>
-                {sortModules.map((item) => (
-                  <StyledCardsRefineItems
-                    key={item.title}
-                    onClick={() => setChoosedModule(item.title)}
-                    $isActive={choosedModule === item.title}
-                  >
-                    <StyledCardsRefineText
+            {choosedFilter === t("CardsHeadingDatasheets") && (
+              <StyledCardsSortModules onClick={() => handleDropdownClick("module")}>
+                <StyledCardsSortModuleText
+                  fontSize="11px"
+                  textTransform="uppercase"
+                  color="#808080"
+                  label={t("CardsSortModules")}
+                />
+                <StyledCardsRefineHeading
+                  $isOpen={activeDropdown === "module"}
+                  label={choosedModule}
+                  level={5}
+                  size={6}
+                />
+                <StyledCardsRefineList $isOpen={activeDropdown === "module"}>
+                  {sortModules.map((item) => (
+                    <StyledCardsRefineItems
+                      key={item.title}
+                      onClick={() => setChoosedModule(item.title)}
                       $isActive={choosedModule === item.title}
-                      label={item.title}
-                    />
-                  </StyledCardsRefineItems>
-                ))}
-              </StyledCardsRefineList>
-            </StyledCardsSortModules>
+                    >
+                      <StyledCardsRefineText
+                        $isActive={choosedModule === item.title}
+                        label={item.title}
+                      />
+                    </StyledCardsRefineItems>
+                  ))}
+                </StyledCardsRefineList>
+              </StyledCardsSortModules>
+            )}
             <StyledCardsSortDate onClick={() => handleDropdownClick("date")} ref={dateBtnRef}>
               <StyledCardsSortDateText
                 label={t("CardsSortBy")}
@@ -218,16 +229,23 @@ const Cards = ({ sortValue }: ICardsProp ) => {
               size={4}
             />
             <StyledCardsList>
-              {refineDatasheetsItems.map((item) => (
+              {refineDatasheetsItems.map((item, index) => (
                 <CardDatasheets
                   key={item.id}
                   title={item.title}
                   product={item.product}
                   image_url={item.image_url}
                   download_url={item.download_url}
+                  displayOther={index < dataSheetsDisplayCount}
                 />
               ))}
             </StyledCardsList>
+            <StyledCardsDatasheetsShowBtn
+              $display={dataSheetsShowButton}
+              onClick={handleShowMore}
+            >
+              {t("CardsButtonShowMore")}
+            </StyledCardsDatasheetsShowBtn>
           </StyledCardsContent>
         )}
       </Container>

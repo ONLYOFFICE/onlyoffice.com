@@ -4,8 +4,10 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 
-const StyledCardDatasheets = styled.div`
-  display: flex;
+const StyledCardDatasheets = styled.div<{
+  $displayOther: boolean
+}>`
+  display: ${({ $displayOther }) => $displayOther ? "flex" : "none"};
   flex-direction: column;
   background-color: #fff;
   padding: 32px;
