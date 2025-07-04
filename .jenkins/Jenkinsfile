@@ -8,7 +8,7 @@ switch(BRANCH_NAME) {
     src_domain="test-new.teamlab.info"
     public_static_url="https://test-new.teamlab.info"
     onlyoffice_site_mysql_host="teamlab-4testing.cyxlgbdbuyvm.us-east-1.rds.amazonaws.com"
-    onlyoffice_site_mysql_datebase="teamlab_site_test"
+    onlyoffice_site_mysql_database="teamlab_site_test"
     onlyoffice_com_strapi_api_url="https://cms.teamlab.info"
     onlyoffice_com_next_public_site_url="https://www.onlyoffice.com"
     transporter_email_host="notify.teamlab.guru"
@@ -47,7 +47,7 @@ pipeline {
         src_domain="${src_domain}"
         public_static_url = "${public_static_url}"
         onlyoffice_site_mysql_host="${onlyoffice_site_mysql_host}"
-        onlyoffice_site_mysql_datebase="${onlyoffice_site_mysql_datebase}"
+        onlyoffice_site_mysql_database="${onlyoffice_site_mysql_database}"
         onlyoffice_com_strapi_api_url="${onlyoffice_com_strapi_api_url}"
         onlyoffice_com_next_public_site_url="${onlyoffice_com_next_public_site_url}"
         transporter_email_host="${transporter_email_host}"
@@ -67,7 +67,7 @@ pipeline {
           sed -i "s^var_strapi_api_url^$onlyoffice_com_strapi_api_url^" .env
 
           sed -i "s^var_onlyoffice_site_mysql_host^$onlyoffice_site_mysql_host^" .env
-          sed -i "s^var_onlyoffice_site_mysql_datebase^$onlyoffice_site_mysql_datebase^" .env
+          sed -i "s^var_onlyoffice_site_mysql_database^$onlyoffice_site_mysql_database^" .env
           sed -i "s^var_onlyoffice_site_mysql_user^$onlyoffice_site_mysql_user^" .env
           sed -i "s^var_onlyoffice_site_mysql_password^$onlyoffice_site_mysql_password^" .env
 
