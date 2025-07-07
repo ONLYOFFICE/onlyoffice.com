@@ -245,7 +245,14 @@ const Cards = ({ sortValue }: ICardsProp) => {
                 <StyledCardsHeading label={t("CardsHeadingWhitepapers")} textAlign="center" level={2} size={4} />
                 <StyledCardsList>
                   {refineWhitepaperItems.map(item => (
-                    <CardWhitepapers key={item.id} {...item} />
+                    <CardWhitepapers
+                      key={item.id}
+                      head={item.head}
+                      title={item.title}
+                      date={item.date}
+                      download_url={item.download_url}
+                      description={item.description}
+                    />
                   ))}
                 </StyledCardsList>
               </StyledCardsContent>
@@ -256,7 +263,14 @@ const Cards = ({ sortValue }: ICardsProp) => {
                 <StyledCardsHeading label={t("CardsHeadingDatasheets")} textAlign="center" level={2} size={4} />
                 <StyledCardsList>
                   {refineDatasheetsItems.map((item, index) => (
-                    <CardDatasheets key={item.id} {...item} displayOther={index < dataSheetsDisplayCount} />
+                    <CardDatasheets
+                      key={item.id}
+                      title={item.title}
+                      product={item.product}
+                      image_url={item.image_url}
+                      download_url={item.download_url}
+                      displayOther={index < dataSheetsDisplayCount}
+                    />
                   ))}
                 </StyledCardsList>
                 {choosedModule === t("CardsFiltersAll") && (

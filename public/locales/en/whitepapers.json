@@ -45,6 +45,21 @@
   "CardsHeadingWhitepapers": "White papers",
   "CardsHeadingDatasheets": "Datasheets",
 
+  "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
+  "CardsDatasheetsPdfForBanking": "/images/templates/whitepapers/pdf/onlyoffice_for_banking.pdf",
+  "CardsDatasheetsPdfWorkspaceForHealthInstitutions": "/images/templates/whitepapers/pdf/onlyoffice_workspace_for_health_institutions.pdf",
+  "CardsDatasheetsPdfDocsInYourCluster": "/images/templates/whitepapers/pdf/onlyoffice_docs_in_your_cluster.pdf",
+  "CardsDatasheetsPdfDocsDatasheetEducation": "/images/templates/whitepapers/pdf/onlyoffice_docs_datasheet_education.pdf",
+  "CardsDatasheetsPdfDocsForOwncloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_owncloud.pdf",
+  "CardsDatasheetsPdfDocsForNextcloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_nextcloud.pdf",
+  "CardsDatasheetsPdfDocs": "/images/templates/whitepapers/pdf/onlyoffice_docs.pdf",
+  "CardsDatasheetsPdfDocsForNonprofit": "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_non-profits.pdf",
+  "CardsDatasheetsPdfDocsForPharmaceutical": "/images/templates/whitepapers/pdf/onlyoffice_datasheet__for_pharmaceutical_industry.pdf",
+  "CardsDatasheetsPdfDocsForMedical": "/images/templates/whitepapers/pdf/docs_datasheet_medical_3.pdf",
+  "CardsDatasheetsPdfDocsForLawFirms": "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_law_firms.pdf",
+  "CardsDatasheetsPdfWorkspacePrivateRooms": "/images/templates/whitepapers/pdf/onlyoffice_workspace_private_rooms.pdf",
+  "CardsDatasheetsPdfWorkspace": "/images/templates/whitepapers/pdf/onlyoffice_workspace.pdf",
+
   "JoinHeading": "Join over <0>15 000 000</0> ONLYOFFICE users worldwide",
   "JoinButton": "Use in the cloud"
 }

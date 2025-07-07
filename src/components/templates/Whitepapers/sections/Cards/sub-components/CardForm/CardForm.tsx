@@ -90,7 +90,7 @@ const CardForm = ({ download_url, setOpenModal }: ICardFormProp ) => {
 
   const handleSubmit = () => {
     const link = document.createElement("a");
-    link.href = download_url;
+    link.href = t(download_url);
     link.download = "";
     document.body.appendChild(link);
     link.click();
