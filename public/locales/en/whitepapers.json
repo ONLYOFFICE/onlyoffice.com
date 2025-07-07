@@ -45,6 +45,15 @@
   "CardsHeadingWhitepapers": "White papers",
   "CardsHeadingDatasheets": "Datasheets",
 
+  "CardsWhitepapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
+  "CardsWhitepapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
+  "CardsWhitepapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
+  "CardsWhitepapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
+  "CardsWhitepapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
+  "CardsWhitepapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
+  "CardsWhitepapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
+  "CardsWhitepapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
+
   "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
   "CardsDatasheetsPdfForBanking": "/images/templates/whitepapers/pdf/onlyoffice_for_banking.pdf",
   "CardsDatasheetsPdfWorkspaceForHealthInstitutions": "/images/templates/whitepapers/pdf/onlyoffice_workspace_for_health_institutions.pdf",

@@ -6,7 +6,7 @@ const cardWhitepapersItems: ICardWhitepapersItems[] = [
     head: "ONLYOFFICE Docs 7.2.2. stress test report",
     title: "ONLYOFFICE Docs 7.2.2. stress test report",
     date: "2023-02-01T12:37Z",
-    download_url: "/images/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
+    download_url: "CardsWhitepapersPdfStressTest",
     description: "This document describes a stress test we conducted on ONLYOFFICE Docs 7.2.2 and the results of the test. The main goal was to test the server load equal to 10,000 requests to ONLYOFFICE Docs."
   },
   {
@@ -14,7 +14,7 @@ const cardWhitepapersItems: ICardWhitepapersItems[] = [
     head: "ONLYOFFICE Docs for developers: architecture, integration, and deployment",
     title: "ONLYOFFICE Docs for developers: architecture, integration, and deployment",
     date: "2022-09-01T12:37Z",
-    download_url: "/images/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
+    download_url: "CardsWhitepapersPdfForDevelopers",
     description: "In this paper, we explore the functionality, integration, and deployment methods of the ONLYOFFICE Docs online office suite."
   },
   {
@@ -22,7 +22,7 @@ const cardWhitepapersItems: ICardWhitepapersItems[] = [
     head: "ONLYOFFICE Docs load test report",
     title: "ONLYOFFICE Docs load test report",
     date: "2021-09-28T12:37Z",
-    download_url: "/images/whitepapers/pdf/load_test_report.pdf",
+    download_url: "CardsWhitepapersPdfLoadTestReport",
     description: "This document describes a load test we conducted on ONLYOFFICE Docs and the results of the test. The main goal was to determine the number of simultaneous connections that ONLYOFFICE Docs can support."
   },
   {
@@ -30,7 +30,7 @@ const cardWhitepapersItems: ICardWhitepapersItems[] = [
     head: "ONLYOFFICE Private Rooms: 9 security principles",
     title: "ONLYOFFICE Private Rooms: 9 security principles",
     date: "2021-09-06T15:01Z",
-    download_url: "/images/whitepapers/pdf/private_rooms_9_security_principles.pdf",
+    download_url: "CardsWhitepapersPdfPrivateRooms",
     description: "In this white paper, we describe the principles used in ONLYOFFICE Private Rooms to ensure security on every step of working with documents."
   },
   {
@@ -38,7 +38,7 @@ const cardWhitepapersItems: ICardWhitepapersItems[] = [
     head: "ONLYOFFICE Docs integration example",
     title: "ONLYOFFICE Docs integration example",
     date: "2021-09-06T15:00Z",
-    download_url: "/images/whitepapers/pdf/integration_example.pdf",
+    download_url: "CardsWhitepapersPdfIntegrationExample",
     description: "In this white paper, we will look at ONLYOFFICE integration capabilities provided by its open API."
   },
   {
@@ -46,7 +46,7 @@ const cardWhitepapersItems: ICardWhitepapersItems[] = [
     head: "Sovereign collaborative infrastructures for government offices",
     title:"For government offices",
     date: "2021-02-04T14:00Z",
-    download_url: "/images/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
+    download_url: "CardsWhitepapersPdfForGovernmentOffices",
     description: "We review the common challenges public sector faces when building an IT environment within its network to support collaborative processes and assume an effective model based on open, sovereign, and secure technologies."
   },
   {
@@ -54,7 +54,7 @@ const cardWhitepapersItems: ICardWhitepapersItems[] = [
     head: "End-to-end document encryption",
     title:"End-to-end document encryption",
     date: "2021-02-03T14:00Z",
-    download_url: "/images/whitepapers/pdf/end-to-end_document_encryption.pdf",
+    download_url: "CardsWhitepapersPdfEndToEndDocumentEncryption",
     description: "This White Paper describes the components and mechanics of end-to-end document encryption in ONLYOFFICE Workspace."
   },
   {
@@ -62,7 +62,7 @@ const cardWhitepapersItems: ICardWhitepapersItems[] = [
     head: "Data encryption at rest 1.0",
     title:"Data encryption at rest 1.0",
     date: "2020-08-03T14:00Z",
-    download_url: "/images/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
+    download_url: "CardsWhitepapersPdfDataEncryptionAtRest",
     description: "This White Paper describes the components and mechanics of the version 1.0 of encryption at rest in ONLYOFFICE Workspace."
   }
 ];
