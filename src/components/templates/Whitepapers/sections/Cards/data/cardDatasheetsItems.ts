@@ -7,7 +7,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-10-20T14:00Z",
     product: "ONLYOFFICE DocSpace",
     image_url: "/images/templates/whitepapers/cards/secure.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
   },
   {
     id: 13,
@@ -15,7 +15,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-10-19T14:00Z",
     product: "ONLYOFFICE Docs",
     image_url: "/images/templates/whitepapers/cards/banking.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_for_banking.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_for_banking.pdf",
   },
   {
     id: 12,
@@ -23,7 +23,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICE Workspace",
     image_url: "/images/templates/whitepapers/cards/health.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_workspace_for_health_institutions.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_workspace_for_health_institutions.pdf",
   },
   {
     id: 11,
@@ -31,7 +31,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICE Docs",
     image_url: "/images/templates/whitepapers/cards/powerful.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_docs_in_your_cluster.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_docs_in_your_cluster.pdf",
   },
   {
     id: 10,
@@ -39,7 +39,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICE Docs",
     image_url: "/images/templates/whitepapers/cards/education.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_docs_datasheet_education.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_docs_datasheet_education.pdf",
   },
   {
     id:  9,
@@ -47,7 +47,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICE Docs",
     image_url: "/images/templates/whitepapers/cards/ownCloud.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_docs_for_owncloud.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_docs_for_owncloud.pdf",
   },
   {
     id:  8,
@@ -55,7 +55,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICE Docs",
     image_url: "/images/templates/whitepapers/cards/nextCloud.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_docs_for_nextcloud.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_docs_for_nextcloud.pdf",
   },
   {
     id:  7,
@@ -63,7 +63,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-04T14:00Z",
     product: "ONLYOFFICE Docs",
     image_url: "/images/templates/whitepapers/cards/docs.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_docs.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_docs.pdf",
   },
   {
     id:  6,
@@ -71,7 +71,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICE Docs",
     image_url: "/images/templates/whitepapers/cards/npo.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_datasheet_for_non-profits.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_non-profits.pdf",
   },
   {
     id:  5,
@@ -79,7 +79,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICE Docs",
     image_url: "/images/templates/whitepapers/cards/pharmaceutical.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_datasheet__for_pharmaceutical_industry.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_datasheet__for_pharmaceutical_industry.pdf",
   },
   {
     id:  4,
@@ -87,7 +87,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICE Docs",
     image_url: "/images/templates/whitepapers/cards/medical.svg",
-    download_url: "/images/whitepapers/pdf/docs_datasheet_medical_3.pdf",
+    download_url: "/images/templates/whitepapers/pdf/docs_datasheet_medical_3.pdf",
   },
   {
     id:  3,
@@ -95,7 +95,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICE Workspace",
     image_url: "/images/templates/whitepapers/cards/law.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_datasheet_for_law_firms.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_law_firms.pdf",
   },
   {
     id:  2,
@@ -103,7 +103,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICE Docs",
     image_url: "/images/templates/whitepapers/cards/private.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_workspace_private_rooms.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_workspace_private_rooms.pdf",
   },
   {
     id:  1,
@@ -111,7 +111,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICE Workspace",
     image_url: "/images/templates/whitepapers/cards/workspace.svg",
-    download_url: "/images/whitepapers/pdf/onlyoffice_workspace.pdf",
+    download_url: "/images/templates/whitepapers/pdf/onlyoffice_workspace.pdf",
   }
 ];
 

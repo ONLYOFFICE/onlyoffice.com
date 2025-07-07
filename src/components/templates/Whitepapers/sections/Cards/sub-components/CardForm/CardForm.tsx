@@ -88,6 +88,16 @@ const CardForm = ({ download_url, setOpenModal }: ICardFormProp ) => {
     }
   }
 
+  const handleSubmit = () => {
+    const link = document.createElement("a");
+    link.href = download_url;
+    link.download = "";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setOpenModal(false);
+  };
+
   return (
     <StyledCardFormOverlay
       onClick={(event) => event.target === event.currentTarget && setOpenModal(false)}
@@ -189,17 +199,13 @@ const CardForm = ({ download_url, setOpenModal }: ICardFormProp ) => {
           <StyledCardFormButton
             label={t("CardsButtonDownload")}
             type="submit"
-            href={download_url}
-            download
             borderRadius="3px"
             disabled={
-              checkStatus.fullName === "error" ||
-              checkStatus.companyName === "error" ||
-              checkStatus.email === "error" ||
-              checkStatus.fullName === "default" ||
-              checkStatus.companyName === "default" ||
-              checkStatus.email === "default"
+              checkStatus.fullName !== "success" ||
+              checkStatus.companyName !== "success" ||
+              checkStatus.email !== "success"
             }
+            onClick={handleSubmit}
           />
         </StyledCardFormForm>
       </StyledCardFormModal>
