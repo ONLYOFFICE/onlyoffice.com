@@ -5,7 +5,7 @@ import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 
 const StyledCardDatasheets = styled.div<{
-  $displayOther: boolean
+  $displayOther?: boolean
 }>`
   display: ${({ $displayOther }) => $displayOther ? "flex" : "none"};
   flex-direction: column;

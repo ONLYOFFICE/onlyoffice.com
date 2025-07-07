@@ -19,7 +19,7 @@ interface ICardDatasheetsItemsProps {
   product: string;
   image_url: string;
   download_url: string;
-  displayOther: boolean;
+  displayOther?: boolean;
 }
 
 interface ICardDatasheetsItems extends ICardDatasheetsItemsProps {
