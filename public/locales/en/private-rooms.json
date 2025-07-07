@@ -72,5 +72,8 @@
     "HowAreTheEncryption": "How are the encryption keys distributed between the users when a file is shared?",
     "WhenYouShareAFile": "When you share a file in the Private Rooms, the encryption key is encrypted using the recipient’s public key. The received file is then decrypted on their machine with their private key when the user opens it.",
     "IsThereAMaster": "Is there a master key for all the encrypted files?",
-    "WeDoNotUseMaster": "We do not use master keys in document encryption. The asymmetric encryption with personal RSA key pairs used in ONLYOFFICE is a more reliable method that also enables encrypted collaboration."
+    "WeDoNotUseMaster": "We do not use master keys in document encryption. The asymmetric encryption with personal RSA key pairs used in ONLYOFFICE is a more reliable method that also enables encrypted collaboration.",
+
+    "FillOutThisForm": "Fill out this form to get your download",
+    "GetItNowText": "By clicking Download, you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>."
 }

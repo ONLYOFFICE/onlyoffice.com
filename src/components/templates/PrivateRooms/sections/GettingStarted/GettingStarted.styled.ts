@@ -2,6 +2,7 @@ import { Button } from "@src/components/ui/Button";
 import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
+import { QuoteModal } from "@src/components/widgets/pricing/QuoteModal";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
@@ -217,6 +218,37 @@ const StyledButton = styled(Button)`
     }
 `;
 
+const StyledQuoteModal = styled.div`
+
+[class*="StyledQuoteModal"] {
+    padding: 40px;
+  }
+
+[class*="StyledModalWrapper"] {
+    max-width: 624px;
+}
+
+[class*="StyledQuoteModalWrapper"] {
+    padding: 0;
+}
+
+[class*="StyledQuoteModalGetItNow"] {
+    padding: 0;
+}
+
+[class*="StyledHeading"] {
+    text-align: left;
+}
+
+[class*="StyledText"] {
+    color: #808080;
+}
+
+[class*="StyledPhoneInput"] {
+    display: none;
+}
+`;
+
 export {
     StyledSection,
     StyledGettingStartedHeading,
@@ -227,5 +259,6 @@ export {
     StyledWrapperRightBlock,
     StyledWrapperRightBlockHeading,
     StyledWrapperRightBlockText,
-    StyledButton
+    StyledButton,
+    StyledQuoteModal
 }
