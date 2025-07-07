@@ -9,7 +9,7 @@ import { HeroTabs } from "@src/components/modules/download/HeroTabs";
 import {
   DownloadModal,
   IDownloadModalData,
-  IDownloadModalSendEmailRequest,
+  IDownloadModalOnSubmitRequest,
 } from "@src/components/widgets/download/DownloadModal";
 import {
   DownloadBlock,
@@ -40,7 +40,11 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const onSubmitRequest = async ({ from }: IDownloadModalSendEmailRequest) => {
+  const onSubmitRequest = async ({
+    from,
+    country,
+    region,
+  }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-docspace", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -56,6 +60,8 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
         comment: formData.comment,
         buttonId: formData.buttonId,
         from,
+        country,
+        region,
       }),
     }).then((res) => res.json());
   };
@@ -110,7 +116,7 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "docSpaceEnterpriseDownloadRequest",
+                              type: "docspaceenterprisedownloadrequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,

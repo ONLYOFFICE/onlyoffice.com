@@ -79,7 +79,7 @@ const DownloadDocsDeveloperEmail = ({
                     ${email}
                   </p>
                   <p style="margin-top:5px;">
-                    <b>Phone</b>
+                    <b>Phone / WeChat</b>
                     <br />
                     ${phone}
                   </p>

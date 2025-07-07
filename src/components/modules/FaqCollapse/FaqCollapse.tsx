@@ -20,6 +20,7 @@ const FaqCollapse = ({
   tabletSpacing,
   tabletSmallSpacing,
   mobileSpacing,
+  borderTop,
 }: IFaqCollapse) => {
   const { t } = useTranslation("common");
 
@@ -32,6 +33,7 @@ const FaqCollapse = ({
       tabletSpacing={tabletSpacing}
       tabletSmallSpacing={tabletSmallSpacing}
       mobileSpacing={mobileSpacing}
+      borderTop={borderTop}
     >
       <Container>
         <StyledFaqCollapseHeader $text={text ? true : false}>
