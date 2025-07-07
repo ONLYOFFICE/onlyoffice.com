@@ -44,6 +44,8 @@ interface ICheckStatus {
   email: "default" | "success" | "error";
 }
 
+type TDropdownType = "filter" | "module" | "date" | null;
+
 export type {
   ICardsProp,
   ICardWhitepapersItems,
@@ -52,5 +54,6 @@ export type {
   ICardDatasheetsItemsProps,
   ICardFormProp,
   IFormData,
-  ICheckStatus
+  ICheckStatus,
+  TDropdownType
 };

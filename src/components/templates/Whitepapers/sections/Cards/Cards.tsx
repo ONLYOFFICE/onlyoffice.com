@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -7,6 +7,8 @@ import { CardDatasheets } from "./sub-components/CardDatasheets";
 import { cardWhitepapersItems } from "./data/cardWhitepapersItems";
 import { cardDatasheetsItems } from "./data/cardDatasheetsItems";
 import { useRefineCardsItems } from "./utils/useRefineCardsItems";
+import { useHandleClickOutside } from "./utils/useHandleClickOutside";
+import { useFilterCounter } from "./utils/useFilterCounter";
 import { ICardsProp } from "../../Whitepapers.types";
 
 import {
@@ -46,88 +48,53 @@ import {
   StyledCardsRefineMobHeading
 } from "./Cards.styled";
 
+const CARDS_CONTENT_LIST = [
+  "CardsFiltersAll",
+  "CardsHeadingWhitepapers",
+  "CardsHeadingDatasheets"
+];
+
+const CARDS_SORT_DATE_LIST = [
+  "CardsSortNewestOldest",
+  "CardsSortOldestNewest"
+];
+
 const Cards = ({ sortValue }: ICardsProp ) => {
   const { t } = useTranslation("whitepapers");
-
   const [dataSheetsDisplayCount, setDataSheetsDisplayCount] = useState<number>(6);
   const [dataSheetsShowButton, setDataSheetsShowButton] = useState<boolean>(true);
-
   const [choosedFilter, setChoosedFilter] = useState<string>(t("CardsFiltersAll"));
   const filterBtnRef = useRef<HTMLDivElement>(null);
-
   const [choosedModule, setChoosedModule] = useState<string>(t("CardsFiltersAll"));
   const moduleBtnRef = useRef<HTMLDivElement>(null);
-
   const [choosedDate, setChoosedDate] = useState<string>(t("CardsSortNewestOldest"));
   const dateBtnRef = useRef<HTMLDivElement>(null);
-
   const [activeDropdown, setActiveDropdown] = useState<"filter" | "module" | "date" | null>(null);
-
   const [filterMobDisplay, setFilterMobDisplay] = useState(false);
 
-  const handleModuleSetDefault = () => {
+  const handleModuleSetDefault = useCallback(() => {
     if (choosedFilter !== t("CardsHeadingDatasheets")) {
       setChoosedModule(t("CardsFiltersAll"));
     }
-  }
+  }, [choosedFilter, t]);
 
-  const handleChooseFilter = (label: string) => {
+  const handleChooseFilter = useCallback((label: string) => {
     setChoosedFilter(label);
     handleModuleSetDefault();
-  }
+  }, [handleModuleSetDefault]);
 
-  const filterCounter = useMemo(() => {
-    const defaultFilter = t("CardsFiltersAll");
-    const defaultDate = t("CardsSortNewestOldest");
-    let count = 0;
-    if (choosedFilter !== defaultFilter) count++;
-    if (choosedModule !== defaultFilter) count++;
-    if (choosedDate !== defaultDate) count++;
-    return count;
-  }, [choosedFilter, choosedModule, choosedDate, t]);
+  const { filterCounter } = useFilterCounter(choosedFilter, choosedModule, choosedDate, t);
 
   const handleDropdownClick = useCallback((dropdown: "filter" | "module" | "date") => {
     setActiveDropdown((prev) => (prev === dropdown ? null : dropdown));
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as Node;
-
-      const isClickInside =
-        filterBtnRef.current?.contains(target) ||
-        moduleBtnRef.current?.contains(target) ||
-        dateBtnRef.current?.contains(target);
-      if (!isClickInside) {
-        setActiveDropdown(null);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  useHandleClickOutside(setActiveDropdown, filterBtnRef, moduleBtnRef, dateBtnRef);
 
   const handleShowMore = () => {
     setDataSheetsDisplayCount(cardDatasheetsItems.length);
     setDataSheetsShowButton(false);
   }
-
-  const cardsContentList = useMemo(() => {
-    return [
-      t("CardsFiltersAll"),
-      t("CardsHeadingWhitepapers"),
-      t("CardsHeadingDatasheets")
-    ];
-  }, [t]);
-
-  const cardsSortDateList = useMemo(() => {
-    return [
-      t("CardsSortNewestOldest"),
-      t("CardsSortOldestNewest")
-    ];
-  }, [t]);
 
   const sortModules = useMemo(() => {
     const sorted = [...cardDatasheetsItems].sort((a, b) =>
@@ -168,15 +135,15 @@ const Cards = ({ sortValue }: ICardsProp ) => {
               <StyledCardsRefineList
                 $isOpen={activeDropdown === "filter"}
               >
-                {cardsContentList.map((label) => (
+                {CARDS_CONTENT_LIST.map((label) => (
                   <StyledCardsRefineItems
-                    key={label}
-                    onClick={() => handleChooseFilter(label)}
-                    $isActive={choosedFilter === label}
+                    key={t(label)}
+                    onClick={() => handleChooseFilter(t(label))}
+                    $isActive={choosedFilter === t(label)}
                   >
                     <StyledCardsRefineText
-                      $isActive={choosedFilter === label}
-                      label={label}
+                      $isActive={choosedFilter === t(label)}
+                      label={t(label)}
                     />
                   </StyledCardsRefineItems>
                 ))}
@@ -232,15 +199,15 @@ const Cards = ({ sortValue }: ICardsProp ) => {
                   size={6}
                 />
                 <StyledCardsRefineList $isOpen={activeDropdown === "date"}>
-                  {cardsSortDateList.map((date) => (
+                  {CARDS_SORT_DATE_LIST.map((date) => (
                     <StyledCardsRefineItems
-                      key={date}
-                      onClick={() => setChoosedDate(date)}
-                      $isActive={choosedDate === date}
+                      key={t(date)}
+                      onClick={() => setChoosedDate(t(date))}
+                      $isActive={choosedDate === t(date)}
                     >
                       <StyledCardsRefineText
-                        $isActive={choosedDate === date}
-                        label={date}
+                        $isActive={choosedDate === t(date)}
+                        label={t(date)}
                       />
                     </StyledCardsRefineItems>
                   ))}
@@ -336,13 +303,13 @@ const Cards = ({ sortValue }: ICardsProp ) => {
         </StyledCardsFilterMobHeader>
         <StyledCardsFilterMobMain>
           <StyledCardsFilterMobSelect>
-            {cardsContentList.map((label) => (
+            {CARDS_CONTENT_LIST.map((label) => (
               <StyledCardsFilterMobOption
-                key={label}
-                onClick={() => handleChooseFilter(label)}
-                $isActive={choosedFilter === label}
+                key={t(label)}
+                onClick={() => handleChooseFilter(t(label))}
+                $isActive={choosedFilter === t(label)}
               >
-                {label}
+                {t(label)}
               </StyledCardsFilterMobOption>
             ))}
           </StyledCardsFilterMobSelect>
@@ -354,13 +321,13 @@ const Cards = ({ sortValue }: ICardsProp ) => {
             color="#808080"
           />
           <StyledCardsMobDateSelect>
-            {cardsSortDateList.map((date) => (
+            {CARDS_SORT_DATE_LIST.map((date) => (
               <StyledCardsMobDateOption
-                key={date}
-                onClick={() => setChoosedDate(date)}
-                $isActive={choosedDate === date}
+                key={t(date)}
+                onClick={() => setChoosedDate(t(date))}
+                $isActive={choosedDate === t(date)}
               >
-                {date}
+                {t(date)}
               </StyledCardsMobDateOption>
             ))}
           </StyledCardsMobDateSelect>
