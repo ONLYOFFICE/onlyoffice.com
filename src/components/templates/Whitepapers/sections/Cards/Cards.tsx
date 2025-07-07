@@ -59,18 +59,64 @@ const CARDS_SORT_DATE_LIST = [
   "CardsSortOldestNewest"
 ];
 
-const Cards = ({ sortValue }: ICardsProp ) => {
+const Cards = ({ sortValue }: ICardsProp) => {
   const { t } = useTranslation("whitepapers");
+
   const [dataSheetsDisplayCount, setDataSheetsDisplayCount] = useState<number>(6);
   const [dataSheetsShowButton, setDataSheetsShowButton] = useState<boolean>(true);
   const [choosedFilter, setChoosedFilter] = useState<string>(t("CardsFiltersAll"));
-  const filterBtnRef = useRef<HTMLDivElement>(null);
   const [choosedModule, setChoosedModule] = useState<string>(t("CardsFiltersAll"));
-  const moduleBtnRef = useRef<HTMLDivElement>(null);
   const [choosedDate, setChoosedDate] = useState<string>(t("CardsSortNewestOldest"));
+
+  const [tempFilter, setTempFilter] = useState<string>(choosedFilter);
+  const [tempModule, setTempModule] = useState<string>(choosedModule);
+  const [tempDate, setTempDate] = useState<string>(choosedDate);
+
+  const filterBtnRef = useRef<HTMLDivElement>(null);
+  const moduleBtnRef = useRef<HTMLDivElement>(null);
   const dateBtnRef = useRef<HTMLDivElement>(null);
   const [activeDropdown, setActiveDropdown] = useState<"filter" | "module" | "date" | null>(null);
   const [filterMobDisplay, setFilterMobDisplay] = useState(false);
+  const { filterCounter } = useFilterCounter(choosedFilter, choosedModule, choosedDate, t);
+
+  useHandleClickOutside(setActiveDropdown, filterBtnRef, moduleBtnRef, dateBtnRef);
+
+  const sortModules = useMemo(() => {
+    const sorted = [...cardDatasheetsItems].sort((a, b) =>
+      a.title.localeCompare(b.title)
+    );
+    return [{ title: t("CardsFiltersAll") }, ...sorted];
+  }, [t]);
+
+  const { refineWhitepaperItems, refineDatasheetsItems } = useRefineCardsItems(
+    cardWhitepapersItems,
+    cardDatasheetsItems,
+    sortValue,
+    choosedModule,
+    choosedDate
+  );
+
+  const openMobileFilters = () => {
+    setFilterMobDisplay(true);
+  };
+
+  const applyMobileFilters = () => {
+    setChoosedFilter(tempFilter);
+    setChoosedModule(tempModule);
+    setChoosedDate(tempDate);
+    setFilterMobDisplay(false);
+  };
+
+  const handleMobResetFilters = useCallback(() => {
+    const defaultFilter = t("CardsFiltersAll");
+    const defaultDate = t("CardsSortNewestOldest");
+    setChoosedFilter(defaultFilter);
+    setChoosedModule(defaultFilter);
+    setChoosedDate(defaultDate);
+    setTempFilter(defaultFilter);
+    setTempModule(defaultFilter);
+    setTempDate(defaultDate);
+  }, [t]);
 
   const handleModuleSetDefault = useCallback(() => {
     if (choosedFilter !== t("CardsHeadingDatasheets")) {
@@ -83,46 +129,18 @@ const Cards = ({ sortValue }: ICardsProp ) => {
     handleModuleSetDefault();
   }, [handleModuleSetDefault]);
 
-  const { filterCounter } = useFilterCounter(choosedFilter, choosedModule, choosedDate, t);
-
   const handleDropdownClick = useCallback((dropdown: "filter" | "module" | "date") => {
-    setActiveDropdown((prev) => (prev === dropdown ? null : dropdown));
+    setActiveDropdown(prev => prev === dropdown ? null : dropdown);
   }, []);
-
-  useHandleClickOutside(setActiveDropdown, filterBtnRef, moduleBtnRef, dateBtnRef);
 
   const handleShowMore = () => {
     setDataSheetsDisplayCount(cardDatasheetsItems.length);
     setDataSheetsShowButton(false);
-  }
-
-  const sortModules = useMemo(() => {
-    const sorted = [...cardDatasheetsItems].sort((a, b) =>
-      a.title.localeCompare(b.title)
-    );
-    return [{ title: t("CardsFiltersAll") }, ...sorted];
-  }, [t]);
-
-  const { refineWhitepaperItems, refineDatasheetsItems} = useRefineCardsItems(
-    cardWhitepapersItems,
-    cardDatasheetsItems,
-    sortValue,
-    choosedModule,
-    choosedDate
-  );
-
-  const handleMobResetFilters = useCallback(() => {
-    setChoosedFilter(t("CardsFiltersAll"));
-    setChoosedModule(t("CardsFiltersAll"));
-    setChoosedDate(t("CardsSortNewestOldest"));
-  }, [t]);
+  };
 
   return (
     <>
-      <Section
-        background="#EFEFEF"
-        desktopSpacing={["32px", "112px"]}
-      >
+      <Section background="#EFEFEF" desktopSpacing={["32px", "112px"]}>
         <Container>
           <StyledCardsFiltersWrapper>
             <StyledCardsFilterSelect onClick={() => handleDropdownClick("filter")} ref={filterBtnRef}>
@@ -132,10 +150,8 @@ const Cards = ({ sortValue }: ICardsProp ) => {
                 label={choosedFilter}
                 $isOpen={activeDropdown === "filter"}
               />
-              <StyledCardsRefineList
-                $isOpen={activeDropdown === "filter"}
-              >
-                {CARDS_CONTENT_LIST.map((label) => (
+              <StyledCardsRefineList $isOpen={activeDropdown === "filter"}>
+                {CARDS_CONTENT_LIST.map(label => (
                   <StyledCardsRefineItems
                     key={t(label)}
                     onClick={() => handleChooseFilter(t(label))}
@@ -149,11 +165,7 @@ const Cards = ({ sortValue }: ICardsProp ) => {
                 ))}
               </StyledCardsRefineList>
             </StyledCardsFilterSelect>
-            <StyledCardsRefineMobHeading
-              level={5}
-              size={4}
-              label={choosedFilter}
-            />
+
             <StyledCardsSortSelect ref={moduleBtnRef}>
               {choosedFilter === t("CardsHeadingDatasheets") && (
                 <StyledCardsSortModules onClick={() => handleDropdownClick("module")}>
@@ -170,7 +182,7 @@ const Cards = ({ sortValue }: ICardsProp ) => {
                     size={6}
                   />
                   <StyledCardsRefineList $isOpen={activeDropdown === "module"}>
-                    {sortModules.map((item) => (
+                    {sortModules.map(item => (
                       <StyledCardsRefineItems
                         key={item.title}
                         onClick={() => setChoosedModule(item.title)}
@@ -199,7 +211,7 @@ const Cards = ({ sortValue }: ICardsProp ) => {
                   size={6}
                 />
                 <StyledCardsRefineList $isOpen={activeDropdown === "date"}>
-                  {CARDS_SORT_DATE_LIST.map((date) => (
+                  {CARDS_SORT_DATE_LIST.map(date => (
                     <StyledCardsRefineItems
                       key={t(date)}
                       onClick={() => setChoosedDate(t(date))}
@@ -214,100 +226,64 @@ const Cards = ({ sortValue }: ICardsProp ) => {
                 </StyledCardsRefineList>
               </StyledCardsSortDate>
             </StyledCardsSortSelect>
-            <StyledCardsFilterMobIcon
-              onClick={() => setFilterMobDisplay(true)}
-            >
+
+            <StyledCardsRefineMobHeading
+              level={5}
+              size={4}
+              label={choosedFilter}
+            />
+            <StyledCardsFilterMobIcon onClick={openMobileFilters}>
               {filterCounter > 0 && (
-                <StyledCardsRefineCounter
-                  label={filterCounter.toString()}
-                  color="#fff"
-                  size={3}
-                />
+                <StyledCardsRefineCounter label={filterCounter.toString()} color="#fff" size={3} />
               )}
             </StyledCardsFilterMobIcon>
           </StyledCardsFiltersWrapper>
+
           {refineWhitepaperItems.length > 0 &&
-            (choosedFilter === t("CardsHeadingWhitepapers") ||
-            choosedFilter === t("CardsFiltersAll")) && (
-            <StyledCardsContent>
-              <StyledCardsHeading
-                label={t("CardsHeadingWhitepapers")}
-                textAlign="center"
-                level={2}
-                size={4}
-              />
-              <StyledCardsList>
-                {refineWhitepaperItems.map((item) => (
-                  <CardWhitepapers
-                    key={item.id}
-                    head={item.head}
-                    title={item.title}
-                    date={item.date}
-                    download_url={item.download_url}
-                    description={item.description}
-                  />
-                ))}
-              </StyledCardsList>
-            </StyledCardsContent>
-          )}
+            (choosedFilter === t("CardsHeadingWhitepapers") || choosedFilter === t("CardsFiltersAll")) && (
+              <StyledCardsContent>
+                <StyledCardsHeading label={t("CardsHeadingWhitepapers")} textAlign="center" level={2} size={4} />
+                <StyledCardsList>
+                  {refineWhitepaperItems.map(item => (
+                    <CardWhitepapers key={item.id} {...item} />
+                  ))}
+                </StyledCardsList>
+              </StyledCardsContent>
+            )}
           {refineDatasheetsItems.length > 0 &&
-          (choosedFilter === t("CardsHeadingDatasheets") ||
-          choosedFilter === t("CardsFiltersAll")) && (
-            <StyledCardsContent>
-              <StyledCardsHeading
-                label={t("CardsHeadingDatasheets")}
-                textAlign="center"
-                level={2}
-                size={4}
-              />
-              <StyledCardsList>
-                {refineDatasheetsItems.map((item, index) => (
-                  <CardDatasheets
-                    key={item.id}
-                    title={item.title}
-                    product={item.product}
-                    image_url={item.image_url}
-                    download_url={item.download_url}
-                    displayOther={index < dataSheetsDisplayCount}
-                  />
-                ))}
-              </StyledCardsList>
-              {choosedModule === t("CardsFiltersAll") && (
-                <StyledCardsDatasheetsShowBtn
-                  $display={dataSheetsShowButton}
-                  onClick={handleShowMore}
-                >
-                  {t("CardsButtonShowMore")}
-                </StyledCardsDatasheetsShowBtn>
-              )}
-            </StyledCardsContent>
-          )}
+            (choosedFilter === t("CardsHeadingDatasheets") || choosedFilter === t("CardsFiltersAll")) && (
+              <StyledCardsContent>
+                <StyledCardsHeading label={t("CardsHeadingDatasheets")} textAlign="center" level={2} size={4} />
+                <StyledCardsList>
+                  {refineDatasheetsItems.map((item, index) => (
+                    <CardDatasheets key={item.id} {...item} displayOther={index < dataSheetsDisplayCount} />
+                  ))}
+                </StyledCardsList>
+                {choosedModule === t("CardsFiltersAll") && (
+                  <StyledCardsDatasheetsShowBtn $display={dataSheetsShowButton} onClick={handleShowMore}>
+                    {t("CardsButtonShowMore")}
+                  </StyledCardsDatasheetsShowBtn>
+                )}
+              </StyledCardsContent>
+            )}
         </Container>
       </Section>
 
       <StyledCardsFilterMob $display={filterMobDisplay}>
         <StyledCardsFilterMobHeader>
-          <StyledCardsFilterMobReset
-            $display={true}
-            onClick={handleMobResetFilters}
-          >
+          <StyledCardsFilterMobReset $display={true} onClick={handleMobResetFilters}>
             {t("CardsMobFiltersReset")}
           </StyledCardsFilterMobReset>
-          <StyledCardsFilterMobHeading
-            label={t("CardsMobFiltersHeading")}
-            level={5}
-          />
-          <StyledCardsFilterMobCloseBtn
-            onClick={() => setFilterMobDisplay(false)}
-          />
+          <StyledCardsFilterMobHeading label={t("CardsMobFiltersHeading")} level={5} />
+          <StyledCardsFilterMobCloseBtn onClick={() => setFilterMobDisplay(false)} />
         </StyledCardsFilterMobHeader>
         <StyledCardsFilterMobMain>
           <StyledCardsFilterMobSelect>
-            {CARDS_CONTENT_LIST.map((label) => (
+            {CARDS_CONTENT_LIST.map(label => (
               <StyledCardsFilterMobOption
                 key={t(label)}
-                onClick={() => handleChooseFilter(t(label))}
-                $isActive={choosedFilter === t(label)}
+                onClick={() => setTempFilter(t(label))}
+                $isActive={tempFilter === t(label)}
               >
                 {t(label)}
               </StyledCardsFilterMobOption>
@@ -321,17 +297,17 @@ const Cards = ({ sortValue }: ICardsProp ) => {
             color="#808080"
           />
           <StyledCardsMobDateSelect>
-            {CARDS_SORT_DATE_LIST.map((date) => (
+            {CARDS_SORT_DATE_LIST.map(date => (
               <StyledCardsMobDateOption
                 key={t(date)}
-                onClick={() => setChoosedDate(t(date))}
-                $isActive={choosedDate === t(date)}
+                onClick={() => setTempDate(t(date))}
+                $isActive={tempDate === t(date)}
               >
                 {t(date)}
               </StyledCardsMobDateOption>
             ))}
           </StyledCardsMobDateSelect>
-          {choosedFilter === t("CardsHeadingDatasheets") && (
+          {tempFilter === t("CardsHeadingDatasheets") && (
             <>
               <StyledCardsSortMobHeading
                 label={t("CardsMobFiltersModules")}
@@ -341,11 +317,11 @@ const Cards = ({ sortValue }: ICardsProp ) => {
                 color="#808080"
               />
               <StyledCardsSortMobSelect>
-                {sortModules.map((item) => (
+                {sortModules.map(item => (
                   <StyledCardsSortMobOption
                     key={item.title}
-                    onClick={() => setChoosedModule(item.title)}
-                    $isActive={choosedModule === item.title}
+                    onClick={() => setTempModule(item.title)}
+                    $isActive={tempModule === item.title}
                   >
                     {item.title}
                   </StyledCardsSortMobOption>
@@ -356,9 +332,9 @@ const Cards = ({ sortValue }: ICardsProp ) => {
         </StyledCardsFilterMobMain>
         <StyledCardsFilterMobFooter>
           <StyledCardsFilterMobApplyBtn
+            onClick={applyMobileFilters}
             label={t("CardsMobFiltersApply")}
             borderRadius="3px"
-            onClick={() => setFilterMobDisplay(false)}
           />
         </StyledCardsFilterMobFooter>
       </StyledCardsFilterMob>
