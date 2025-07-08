@@ -23,9 +23,8 @@ import {
     QuoteModal
 } from "@src/components/widgets/pricing/QuoteModal";
 import { useState } from "react";
-import { ILocale } from "@src/types/locale";
 
-const GettingStarted = ( {locale}: ILocale) => {
+const GettingStarted = () => {
     const { t } = useTranslation("private-rooms");
 
     const initialQuoteFormData: IQuoteModalFormData = {
@@ -152,7 +151,6 @@ const GettingStarted = ( {locale}: ILocale) => {
                 </StyledGettingStartedWrapper>
                 <StyledQuoteModal>
                 <QuoteModal
-                locale={locale}
                 isOpen={isModalOpen}
                 heading={t("FillOutThisForm")}
                 byClickedText={

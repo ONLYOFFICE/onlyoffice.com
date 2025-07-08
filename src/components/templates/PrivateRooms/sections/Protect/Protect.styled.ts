@@ -9,7 +9,7 @@ const StyledSection = styled(Section)`
     `;
 
 const ProtectBlock = styled.div`
-    background-image: url("images/templates/private-rooms/protect/try-bg.svg");
+    background-image: url("/images/templates/private-rooms/protect/try-bg.svg");
     background-repeat: no-repeat;
     background-position: 50% 70%;
     margin: 0 auto;
@@ -47,7 +47,7 @@ const StyledButton = styled(Button)`
     text-transform: uppercase;
     padding: 19px 35px;
     margin: 0 auto;
-    width: 138px;
+    width: fit-content;
     
     @media ${device.mobile} {
         font-size: 12px;

@@ -24,7 +24,7 @@ const HowItWorks = () => {
         <StyledHowItWorksHeading level={2} size={2}>
           <Trans
             t={t}
-            i18nKey={"HowItWorks"}
+            i18nKey="HowItWorks"
             components={{
               span: <Text as="span" color="#FF6F3D" key="0" />,
               br: <br key="1" />,
@@ -34,7 +34,7 @@ const HowItWorks = () => {
         <StyledHowItWorksText>
             <Trans
             t={t}
-            i18nKey={"PrivateRoomWorks"}
+            i18nKey="PrivateRoomWorks"
             components={[
               <Link
               key="0"

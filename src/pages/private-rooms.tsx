@@ -37,6 +37,7 @@ export async function getStaticProps({ locale }: ILocale) {
     props: {
       ...(await serverSideTranslations(locale, [
         "common",
+        "PricingQuoteModal",
         "private-rooms",
       ])),
       locale,
