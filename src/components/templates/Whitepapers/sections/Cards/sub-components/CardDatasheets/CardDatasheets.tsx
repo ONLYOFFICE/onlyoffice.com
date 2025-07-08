@@ -48,6 +48,7 @@ const CardDatasheets = ({ title, product, image_url, download_url, displayOther,
 
       {openModal && (
         <CardForm
+          openModal={openModal}
           setOpenModal={setOpenModal}
           download_url={download_url}
           locale={locale}

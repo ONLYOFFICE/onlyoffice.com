@@ -69,6 +69,7 @@ const CardWhitepapers = ({ head, title, date, download_url, description, locale 
       {openModal &&
         <CardForm
           download_url={download_url}
+          openModal={openModal}
           setOpenModal={setOpenModal}
           locale={locale}
         />

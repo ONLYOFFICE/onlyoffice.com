@@ -6,6 +6,8 @@ import { HCaptcha } from "@src/components/widgets/HCaptcha";
 import { Link } from "@src/components/ui/Link";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";
+import { downloadUrl } from "../../utils/downloadUrl";
+import { ILoaderButton } from "@src/components/ui/LoaderButton";
 import { ILocale } from "@src/types/locale";
 
 import {
@@ -23,10 +25,12 @@ import {
   StyledCardFormInputWrapper,
   StyledCardFormModal,
   StyledCardFormOverlay,
+  StyledCardFormStatusText,
 } from "./CardForm.styled";
 
-const CardForm = ({ download_url, setOpenModal, locale, product }: ICardFormProp & ILocale ) => {
+const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: ICardFormProp & ILocale ) => {
   const { t } = useTranslation("whitepapers");
+  const [status, setStatus] = useState<ILoaderButton["status"]>("default");
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
@@ -91,17 +95,10 @@ const CardForm = ({ download_url, setOpenModal, locale, product }: ICardFormProp
   }
 
   const handleSubmit = async () => {
-    const link = document.createElement("a");
-    link.href = t(download_url);
-    link.download = "";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    setOpenModal(false);
-
     const from = getFromParam();
 
     try {
+      setStatus("loading");
       const response = await fetch("/api/whitepapers", {
         method: "POST",
         headers: {
@@ -117,8 +114,24 @@ const CardForm = ({ download_url, setOpenModal, locale, product }: ICardFormProp
         }),
       })
       const data = await response.json();
-      console.log(data);
+
+      if (data.status === "success") {
+        setStatus("success");
+        downloadUrl(t(download_url));
+      }
+
+      if (data.status === "error") {
+        setStatus("error");
+      }
+
+      if (openModal && data.status === "success") {
+        setTimeout(() => {
+          setOpenModal(false);
+        }, 5000);
+      }
+
     } catch (error) {
+      setStatus("error")
       console.error(error);
     }
   };
@@ -223,13 +236,19 @@ const CardForm = ({ download_url, setOpenModal, locale, product }: ICardFormProp
           </StyledCardFormAgreementWrapper>
           <StyledCardFormButton
             label={t("CardsButtonDownload")}
-            borderRadius="3px"
             disabled={
               checkStatus.fullName !== "success" ||
               checkStatus.companyName !== "success" ||
               checkStatus.email !== "success"
             }
             onClick={handleSubmit}
+            status={status}
+          />
+          <StyledCardFormStatusText
+            label={status === "success" ? t("CardsFormSuccess") : t("CardsFormError")}
+            textAlign="center"
+            $status={status}
+            color={status === "error" ? "#CB0000" : "#333333"}
           />
         </StyledCardFormForm>
       </StyledCardFormModal>

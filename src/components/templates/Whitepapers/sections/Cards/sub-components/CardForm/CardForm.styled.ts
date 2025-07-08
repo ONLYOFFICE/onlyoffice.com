@@ -1,6 +1,7 @@
-import { Button } from "@src/components/ui/Button";
-import { Heading } from "@src/components/ui/Heading";
 import styled from "styled-components";
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
+import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 
 const StyledCardFormOverlay = styled.div`
   display: flex;
@@ -53,8 +54,15 @@ const StyledCardFormAgreementWrapper = styled.div`
   margin-bottom: 32px;
 `;
 
-const StyledCardFormButton = styled(Button)`
+const StyledCardFormButton = styled(LoaderButton)`
   width: 100%;
+`;
+
+const StyledCardFormStatusText = styled(Text)<{
+  $status: ILoaderButton["status"];
+}>`
+  display: ${({ $status }) => $status === "success" || $status === "error" ? "block" : "none"};
+  margin-top: 16px;
 `;
 
 export {
@@ -65,5 +73,6 @@ export {
   StyledCardFormForm,
   StyledCardFormInputWrapper,
   StyledCardFormAgreementWrapper,
-  StyledCardFormButton
+  StyledCardFormButton,
+  StyledCardFormStatusText
 };

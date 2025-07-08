@@ -29,6 +29,7 @@ interface ICardDatasheetsItems extends ICardDatasheetsItemsProps {
 
 interface ICardFormProp {
   download_url: string;
+  openModal: boolean;
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
   product?: string;
 }
