@@ -39,31 +39,70 @@ const GettingStarted = ( {locale}: ILocale) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [quoteFormData, setQuoteFormData] = useState(initialQuoteFormData);
 
-    const apiRequest = async (params: IQuoteModalApiRequest) => {
+    const apiRequest = async ({
+        from,
+        utmSource,
+        utmCampaign,
+        utmContent,
+        utmTerm,
+    }: IQuoteModalApiRequest) => {
         const response = await fetch("/api/private-rooms", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(params),
+          body: JSON.stringify({
+            fullName: quoteFormData.fullName,
+            email: quoteFormData.email,
+            companyName: quoteFormData.companyName,
+            from,
+            utmSource,
+            utmCampaign,
+            utmContent,
+            utmTerm,
+          }),
         });
     
         return response.json();
       };
 
-    const sendEmailRequest = async (params: IQuoteModalSendEmailRequest) => {
+    const sendEmailRequest = async ({
+        from,
+        errorFlag,
+        utmCampaignFlag,
+        errorText
+    }: IQuoteModalSendEmailRequest) => {
         const response = await fetch("/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(params),
+        body: JSON.stringify({
+            from,
+            errorFlag,
+            utmCampaignFlag,
+            errorText
+        }),
         });
 
         return response.json();
     };
 
-    const pipedriveRequest = async (params : IQuoteModalPipedriveRequest) => {
+    const pipedriveRequest = async ({
+        _ga,
+        utmSource,
+        utmCampaign,
+        title,
+        region,
+        from
+    } : IQuoteModalPipedriveRequest) => {
         const response = await fetch("/api/pipedrive", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(params),
+          body: JSON.stringify({
+            _ga,
+            title,
+            region,
+            from,
+            ...(utmSource && { utmSource }),
+            ...(utmCampaign && { utmCampaign })
+        }),
         });
     
         return response.json();
