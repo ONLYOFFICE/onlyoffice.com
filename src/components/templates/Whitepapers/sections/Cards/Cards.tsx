@@ -10,6 +10,7 @@ import { useRefineCardsItems } from "./utils/useRefineCardsItems";
 import { useHandleClickOutside } from "./utils/useHandleClickOutside";
 import { useFilterCounter } from "./utils/useFilterCounter";
 import { ICardsProp } from "../../Whitepapers.types";
+import { ILocale } from "@src/types/locale";
 
 import {
   StyledCardsFiltersWrapper,
@@ -59,7 +60,7 @@ const CARDS_SORT_DATE_LIST = [
   "CardsSortOldestNewest"
 ];
 
-const Cards = ({ sortValue }: ICardsProp) => {
+const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
   const { t } = useTranslation("whitepapers");
 
   const [dataSheetsDisplayCount, setDataSheetsDisplayCount] = useState<number>(6);
@@ -252,6 +253,7 @@ const Cards = ({ sortValue }: ICardsProp) => {
                       date={item.date}
                       download_url={item.download_url}
                       description={item.description}
+                      locale={locale}
                     />
                   ))}
                 </StyledCardsList>
@@ -270,6 +272,7 @@ const Cards = ({ sortValue }: ICardsProp) => {
                       image_url={item.image_url}
                       download_url={item.download_url}
                       displayOther={index < dataSheetsDisplayCount}
+                      locale={locale}
                     />
                   ))}
                 </StyledCardsList>

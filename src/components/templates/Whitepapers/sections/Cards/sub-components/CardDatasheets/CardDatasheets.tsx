@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { CardForm } from "../CardForm";
 import { ICardDatasheetsItemsProps } from "@src/components/templates/Whitepapers/Whitepapers.types";
+import { ILocale } from "@src/types/locale";
 
 import {
   StyledCardDatasheets,
@@ -12,7 +13,7 @@ import {
   StyledCardDatasheetsTitle
 } from "./CardDatasheets.styled";
 
-const CardDatasheets = ({ title, product, image_url, download_url, displayOther }: ICardDatasheetsItemsProps) => {
+const CardDatasheets = ({ title, product, image_url, download_url, displayOther, locale }: ICardDatasheetsItemsProps & ILocale) => {
   const { t } = useTranslation("whitepapers");
   const [openModal, setOpenModal] = useState(false);
 
@@ -46,7 +47,12 @@ const CardDatasheets = ({ title, product, image_url, download_url, displayOther 
       </StyledCardDatasheets>
 
       {openModal && (
-        <CardForm setOpenModal={setOpenModal} download_url={download_url} />
+        <CardForm
+          setOpenModal={setOpenModal}
+          download_url={download_url}
+          locale={locale}
+          product={product}
+        />
       )}
     </>
   );

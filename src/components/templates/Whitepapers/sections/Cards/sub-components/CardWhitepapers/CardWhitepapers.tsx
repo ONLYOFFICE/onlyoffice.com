@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { Text } from '@src/components/ui/Text';
 import { CardForm } from '../CardForm';
 import { formatDateCards } from '../../utils/formatDateCards';
 import { ICardWhitepapersItemsProps } from '@src/components/templates/Whitepapers/Whitepapers.types';
+import { ILocale } from '@src/types/locale';
 
 import {
   StyledCardWhitepapers,
@@ -19,8 +19,7 @@ import {
 } from './CardWhitepapers.styled';
 
 
-const CardWhitepapers = ({ head, title, date, download_url, description }: ICardWhitepapersItemsProps) => {
-  const { locale } = useRouter();
+const CardWhitepapers = ({ head, title, date, download_url, description, locale }: ICardWhitepapersItemsProps & ILocale) => {
   const { t } = useTranslation("whitepapers");
   const [openModal, setOpenModal] = useState(false);
 
@@ -71,6 +70,7 @@ const CardWhitepapers = ({ head, title, date, download_url, description }: ICard
         <CardForm
           download_url={download_url}
           setOpenModal={setOpenModal}
+          locale={locale}
         />
       }
     </>

@@ -6,7 +6,7 @@ import { WhitepapersEmail } from "@src/components/emails/WhitepapersEmail";
 
 interface IAddWhitepapersData {
   fromPage: string;
-  firstName: string;
+  fullName: string;
   email: string;
   company: string;
   product: string;
@@ -27,7 +27,7 @@ export default async function handler(
   }
 
   const {
-    firstName,
+    fullName,
     email,
     company,
     product,
@@ -42,7 +42,7 @@ export default async function handler(
     const addWhitepapersDataRequest = async () => {
       try {
         const addWhitepapersData: IAddWhitepapersData = {
-          firstName,
+          fullName,
           email,
           company,
           product,
@@ -93,7 +93,7 @@ export default async function handler(
       subject: `${errorMessages.length ? "[Error] " : ""}${company} - Whitepapers Request ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
       html: WhitepapersEmail({
         fromPage: from,
-        firstName,
+        fullName,
         email,
         company,
         product,

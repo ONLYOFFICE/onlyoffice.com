@@ -28,7 +28,7 @@ const VirtualDataRoomsPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <WhitepapersTemplate />
+        <WhitepapersTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

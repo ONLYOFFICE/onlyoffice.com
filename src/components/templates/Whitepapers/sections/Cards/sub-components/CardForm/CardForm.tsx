@@ -5,6 +5,8 @@ import { Text } from "@src/components/ui/Text";
 import { HCaptcha } from "@src/components/widgets/HCaptcha";
 import { Link } from "@src/components/ui/Link";
 import { validateFullName, validateEmail } from "@src/utils/validators";
+import { getFromParam } from "@src/utils/getParams";
+import { ILocale } from "@src/types/locale";
 
 import {
   ICardFormProp,
@@ -23,7 +25,7 @@ import {
   StyledCardFormOverlay,
 } from "./CardForm.styled";
 
-const CardForm = ({ download_url, setOpenModal }: ICardFormProp ) => {
+const CardForm = ({ download_url, setOpenModal, locale, product }: ICardFormProp & ILocale ) => {
   const { t } = useTranslation("whitepapers");
 
   const [formData, setFormData] = useState<IFormData>({
@@ -88,7 +90,7 @@ const CardForm = ({ download_url, setOpenModal }: ICardFormProp ) => {
     }
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const link = document.createElement("a");
     link.href = t(download_url);
     link.download = "";
@@ -96,6 +98,29 @@ const CardForm = ({ download_url, setOpenModal }: ICardFormProp ) => {
     link.click();
     document.body.removeChild(link);
     setOpenModal(false);
+
+    const from = getFromParam();
+
+    try {
+      const response = await fetch("/api/whitepapers", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: formData.fullName ?? "",
+          company: formData.companyName ?? "",
+          email: formData.email ?? "",
+          from: from ?? "",
+          product: product ?? "",
+          languageCode: locale ?? "",
+        }),
+      })
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -198,7 +223,6 @@ const CardForm = ({ download_url, setOpenModal }: ICardFormProp ) => {
           </StyledCardFormAgreementWrapper>
           <StyledCardFormButton
             label={t("CardsButtonDownload")}
-            type="submit"
             borderRadius="3px"
             disabled={
               checkStatus.fullName !== "success" ||

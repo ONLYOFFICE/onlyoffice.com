@@ -1,6 +1,6 @@
 interface IWhitepapersEmail {
   fromPage: string;
-  firstName: string;
+  fullName: string;
   email: string;
   company: string;
   product: string;
@@ -9,7 +9,7 @@ interface IWhitepapersEmail {
 
 const WhitepapersEmail = ({
   fromPage,
-  firstName,
+  fullName,
   email,
   company,
   product,
@@ -37,7 +37,7 @@ const WhitepapersEmail = ({
                   </p>
                   <p style="margin-top:20px;">
                     <b>Full Name</b><br/>
-                    ${firstName}
+                    ${fullName}
                   </p>
                   <p style="margin-top:20px;">
                     <b>E-mail</b><br/>
