@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
-// import { emailTransporter } from "@src/config/email/transporter";
-// import { WhitepapersEmail } from "@src/components/emails/WhitepapersEmail";
+import { emailTransporter } from "@src/config/email/transporter";
+import { WhitepapersEmail } from "@src/components/emails/WhitepapersEmail";
 
 interface IAddWhitepapersData {
   fromPage: string;
@@ -27,14 +27,13 @@ export default async function handler(
   }
 
   const {
-    fromPage,
     firstName,
     email,
     company,
     product,
     languageCode,
+    from,
   } = req.body;
-
 
   try {
     const errorMessages = [];
@@ -43,12 +42,12 @@ export default async function handler(
     const addWhitepapersDataRequest = async () => {
       try {
         const addWhitepapersData: IAddWhitepapersData = {
-          fromPage,
           firstName,
           email,
           company,
           product,
           languageCode,
+          fromPage: from,
           ip:
             req.headers["x-forwarded-for"] ||
             req.socket.remoteAddress ||
@@ -86,6 +85,21 @@ export default async function handler(
         `whitepapersRequest: ${addWhitepapersDataResult.message}`,
       )
     }
+
+    const transporter = emailTransporter();
+    await transporter.sendMail({
+      from,
+      to: [process.env.SALES_EMAIL!],
+      subject: `${errorMessages.length ? "[Error] " : ""}${company} - Whitepapers Request ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
+      html: WhitepapersEmail({
+        fromPage: from,
+        firstName,
+        email,
+        company,
+        product,
+        languageCode,
+      })
+    })
 
     res.status(200).json({
       status: "success",
