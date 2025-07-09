@@ -173,7 +173,7 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
 
         if (dataWhitepapers.status === "success") {
           setStatus("success");
-          downloadUrl(t(download_url));
+          downloadUrl(download_url);
         }
 
         if (dataWhitepapers.status === "error") {

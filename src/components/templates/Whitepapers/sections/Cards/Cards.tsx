@@ -248,11 +248,11 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                   {refineWhitepaperItems.map(item => (
                     <CardWhitepapers
                       key={item.id}
-                      head={item.head}
-                      title={item.title}
+                      head={t(item.head)}
+                      title={t(item.title)}
                       date={item.date}
-                      download_url={item.download_url}
-                      description={item.description}
+                      download_url={t(item.download_url)}
+                      description={t(item.description)}
                       locale={locale}
                     />
                   ))}
@@ -267,10 +267,10 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                   {refineDatasheetsItems.map((item, index) => (
                     <CardDatasheets
                       key={item.id}
-                      title={item.title}
-                      product={item.product}
+                      title={t(item.title)}
+                      product={t(item.product)}
                       image_url={item.image_url}
-                      download_url={item.download_url}
+                      download_url={t(item.download_url)}
                       displayOther={index < dataSheetsDisplayCount}
                       locale={locale}
                     />
