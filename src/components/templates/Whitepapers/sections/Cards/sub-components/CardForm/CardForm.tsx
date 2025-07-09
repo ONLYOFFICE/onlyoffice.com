@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Input } from "@src/components/ui/Input";
 import { Text } from "@src/components/ui/Text";
@@ -9,7 +9,7 @@ import { getFromParam } from "@src/utils/getParams";
 import { downloadUrl } from "../../utils/downloadUrl";
 import { ILoaderButton } from "@src/components/ui/LoaderButton";
 import { ILocale } from "@src/types/locale";
-
+import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import {
   ICardFormProp,
   ICheckStatus,
@@ -31,18 +31,28 @@ import {
 const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: ICardFormProp & ILocale ) => {
   const { t } = useTranslation("whitepapers");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
+  const refHCaptcha = useRef<ReactCaptcha | null>(null);
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
     companyName: "",
     email: "",
+    hCaptcha: null,
   });
 
   const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
     fullName: "default",
     companyName: "default",
     email: "default",
+    hCaptcha: "default",
   });
+
+  const handleHCaptchaChange = (token: string | null) => {
+    setFormData({
+      ...formData,
+      hCaptcha: token,
+    })
+  }
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -94,42 +104,88 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
     }
   }
 
-  const handleSubmit = async () => {
-    const from = getFromParam();
+  const clearData = () => {
+    setFormData({
+      fullName: "",
+      companyName: "",
+      email: "",
+      hCaptcha: null,
+    })
+    setCheckStatus({
+      fullName: "default",
+      companyName: "default",
+      email: "default",
+      hCaptcha: "default",
+    })
+    refHCaptcha.current?.resetCaptcha();
+  }
 
+  const handleSubmit = async () => {
+    if (status === "loading") return;
+    if (status === "success") {
+      setStatus("default");
+      clearData();
+      setOpenModal(false);
+      return;
+    }
+    if (status === "error") {
+      setStatus("default");
+      clearData();
+      return;
+    }
+
+    const from = getFromParam();
     try {
       setStatus("loading");
-      const response = await fetch("/api/whitepapers", {
+
+      const responceHCaptcha = await fetch("/api/hcaptcha-verify", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          fullName: formData.fullName ?? "",
-          company: formData.companyName ?? "",
-          email: formData.email ?? "",
-          from: from ?? "",
-          product: product ?? "",
-          languageCode: locale ?? "",
-        }),
+          token: formData.hCaptcha ?? "",
+        })
       })
-      const data = await response.json();
+      const dataHCaptcha = await responceHCaptcha.json();
 
-      if (data.status === "success") {
-        setStatus("success");
-        downloadUrl(t(download_url));
-      }
-
-      if (data.status === "error") {
+      if (dataHCaptcha.status === "errorHCaptchaInvalid") {
         setStatus("error");
+        return;
       }
 
-      if (openModal && data.status === "success") {
-        setTimeout(() => {
-          setOpenModal(false);
-        }, 5000);
-      }
+      if (dataHCaptcha.status === "success") {
+        const responseWhitepapers = await fetch("/api/whitepapers", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullName: formData.fullName ?? "",
+            company: formData.companyName ?? "",
+            email: formData.email ?? "",
+            from: from ?? "",
+            product: product ?? "",
+            languageCode: locale ?? "",
+          }),
+        })
+        const dataWhitepapers = await responseWhitepapers.json();
 
+        if (dataWhitepapers.status === "success") {
+          setStatus("success");
+          downloadUrl(t(download_url));
+        }
+
+        if (dataWhitepapers.status === "error") {
+          setStatus("error");
+        }
+
+        if (openModal && dataWhitepapers.status === "success") {
+          setTimeout(() => {
+            setOpenModal(false);
+          }, 5000);
+        }
+      }
     } catch (error) {
       setStatus("error")
       console.error(error);
@@ -210,7 +266,11 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
             )}
           </StyledCardFormInputWrapper>
           <StyledCardFormAgreementWrapper>
-            <HCaptcha />
+            <HCaptcha
+              ref={refHCaptcha}
+              onVerify={handleHCaptchaChange}
+              onExpire={() => handleHCaptchaChange(null)}
+            />
             <Text color="#808080" fontSize="12px">
               <Trans
                 t={t}
@@ -239,7 +299,8 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
             disabled={
               checkStatus.fullName !== "success" ||
               checkStatus.companyName !== "success" ||
-              checkStatus.email !== "success"
+              checkStatus.email !== "success" ||
+              formData.hCaptcha === null
             }
             onClick={handleSubmit}
             status={status}

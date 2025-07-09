@@ -38,12 +38,14 @@ interface IFormData {
   fullName: string;
   companyName: string;
   email: string;
+  hCaptcha: string | null;
 }
 
 interface ICheckStatus {
   fullName: "default" | "success" | "error";
   companyName: "default" | "success" | "error";
   email: "default" | "success" | "error";
+  hCaptcha: "default" | "success" | "error";
 }
 
 type TDropdownType = "filter" | "module" | "date" | null;
