@@ -203,7 +203,7 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
         <StyledCardFormHeading
           level={3}
           size={5}
-          label={t("CardFormHeading")}
+          label={t("FillOutThisFormToRequestAQuote")}
         />
         <StyledCardFormForm>
           <StyledCardFormInputWrapper>
@@ -274,7 +274,7 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
             <Text color="#808080" fontSize="12px">
               <Trans
                 t={t}
-                i18nKey={"CardFormAgreement"}
+                i18nKey={"ByClickingDownload"}
                 components={[
                   <Link
                     key="0"

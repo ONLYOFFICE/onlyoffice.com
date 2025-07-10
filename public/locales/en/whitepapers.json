@@ -1,12 +1,27 @@
 {
-  "PageTitle": "White papers and datasheets | ONLYOFFICE",
-  "PageDescription": "Find out more about collaborative technologies and ONLYOFFICE solutions.",
-
-  "WhitepapersInputSubtitle": "Technical Content",
-  "WhitepapersInputLabel": "Search white paper, datasheet",
-
-  "HeroHeading": "White papers and datasheets",
-  "HeroText": "Get deeper insights into collaborative technologies and ONLYOFFICE solutions from technical and industry-specific perspectives and learn useful facts about our products for a variety of applications.",
+  "WhitepapersPageTitle": "White papers and datasheets | ONLYOFFICE",
+  "WhitepapersMetaDescription": "Find out more about collaborative technologies and ONLYOFFICE solutions.",
+  "TechnicalContent": "Technical Content",
+  "SearchWhitePaper": "Search white paper, datasheet",
+  "WhitePapersAndDatasheets": "White papers and datasheets",
+  "GetDeeperInsights": "Get deeper insights into collaborative technologies and ONLYOFFICE solutions from technical and industry-specific perspectives and learn useful facts about our products for a variety of applications.",
+  "WhitePapers": "White papers",
+  "Datasheets": "Datasheets",
+  "ONLYOFFICEDocs": "ONLYOFFICE Docs",
+  "ONLYOFFICEWorkspace": "ONLYOFFICE Workspace",
+  "ONLYOFFICEPrivateRooms": "ONLYOFFICE Private Rooms",
+  "ONLYOFFICELawFirms": "ONLYOFFICE for Law Firms",
+  "ONLYOFFICEMedical": "ONLYOFFICE for Medical Industry",
+  "ONLYOFFICEPharmaceutical": "ONLYOFFICE for Pharmaceutical Companies",
+  "ONLYOFFICENon_Profit": "ONLYOFFICE for Non-profit Organizations",
+  "ONLYOFFICENextcloud": "ONLYOFFICE for Nextcloud",
+  "ONLYOFFICEOwnCloud": "ONLYOFFICE for ownCloud",
+  "DocumentCollaboration": "Document collaboration in education",
+  "JoinOver": "Join over <0>15 000 000</0> ONLYOFFICE users worldwide",
+  "UseInTheCloud": "Use in the cloud",
+  "FillOutThisForm": "Fill out this form",
+  "FillOutThisFormToRequestAQuote": "Fill out this form to request a quote",
+  "ByClickingDownload": "By clicking Download, you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>.",
 
   "CardsFiltersAll": "All",
   "CardsSortModules": "Modules:",
@@ -23,13 +38,7 @@
   "CardsMobFiltersApply": "Apply filter",
   "CardsMobFiltersModules": "Module",
 
-  "CardsDatasheetProductOd": "ONLYOFFICE Docs",
-  "CardsDatasheetProductOw": "ONLYOFFICE Workspace",
-  "CardsDatasheetProductOds": "ONLYOFFICE DocSpace",
-
   "CardsButtonDownload": "Download",
-  "CardFormHeading": "Fill out this form to request a quote",
-  "CardFormAgreement": "By clicking Download, you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>.",
 
   "CardFormFullName": "Full name",
   "CardFormFullNameIsEmpty": "Full name is empty",
@@ -41,9 +50,6 @@
   "CardFormPlaceholderEmail": "name@domain.com",
   "CardFormEmailIsEmpty": "Email is empty",
   "CardFormEmailIsIncorrect": "Email is incorrect",
-
-  "CardsHeadingWhitepapers": "White papers",
-  "CardsHeadingDatasheets": "Datasheets",
 
   "CardsWhitepapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
   "CardsWhitepapersHeadStressTest": "ONLYOFFICE Docs 7.2.2. stress test report",
@@ -92,59 +98,22 @@
 
   "CardsDatasheetsPdfForBanking": "/images/templates/whitepapers/pdf/onlyoffice_for_banking.pdf",
   "CardsDatasheetsTitleForBanking": "Powerful and Secure Document Processing for Banking",
-  "CardsDatasheetsProductForBanking": "ONLYOFFICE Docs",
 
   "CardsDatasheetsPdfWorkspaceForHealthInstitutions": "/images/templates/whitepapers/pdf/onlyoffice_workspace_for_health_institutions.pdf",
   "CardsDatasheetsTitleWorkspaceForHealthInstitutions": "ONLYOFFICE Workspace for health institutions",
-  "CardsDatasheetsProductWorkspaceForHealthInstitutions": "ONLYOFFICE Workspace",
-
   "CardsDatasheetsPdfDocsInYourCluster": "/images/templates/whitepapers/pdf/onlyoffice_docs_in_your_cluster.pdf",
   "CardsDatasheetsTitleDocsInYourCluster": "Powerful document collaboration in your cluster",
-  "CardsDatasheetsProductDocsInYourCluster": "ONLYOFFICE Docs",
-
   "CardsDatasheetsPdfDocsDatasheetEducation": "/images/templates/whitepapers/pdf/onlyoffice_docs_datasheet_education.pdf",
-  "CardsDatasheetsTitleDocsDatasheetEducation": "Document collaboration in education",
-  "CardsDatasheetsProductDocsDatasheetEducation": "ONLYOFFICE Docs",
-
   "CardsDatasheetsPdfDocsForOwncloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_owncloud.pdf",
-  "CardsDatasheetsTitleDocsForOwncloud": "ONLYOFFICE for ownCloud",
-  "CardsDatasheetsProductDocsForOwncloud": "ONLYOFFICE Docs",
-
   "CardsDatasheetsPdfDocsForNextcloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_nextcloud.pdf",
-  "CardsDatasheetsTitleDocsForNextcloud": "ONLYOFFICE for Nextcloud",
-  "CardsDatasheetsProductDocsForNextcloud": "ONLYOFFICE Docs",
-
   "CardsDatasheetsPdfDocs": "/images/templates/whitepapers/pdf/onlyoffice_docs.pdf",
-  "CardsDatasheetsTitleDocs": "ONLYOFFICE Docs",
-  "CardsDatasheetsProductDocs": "ONLYOFFICE Docs",
-
   "CardsDatasheetsPdfDocsForNonprofit": "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_non-profits.pdf",
-  "CardsDatasheetsTitleDocsForNonprofit": "ONLYOFFICE for Non-profit Organizations",
-  "CardsDatasheetsProductDocsForNonprofit": "ONLYOFFICE Docs",
-
   "CardsDatasheetsPdfDocsForPharmaceutical": "/images/templates/whitepapers/pdf/onlyoffice_datasheet__for_pharmaceutical_industry.pdf",
-  "CardsDatasheetsTitleDocsForPharmaceutical": "ONLYOFFICE for Pharmaceutical Companies",
-  "CardsDatasheetsProductDocsForPharmaceutical": "ONLYOFFICE Docs",
-
   "CardsDatasheetsPdfDocsForMedical": "/images/templates/whitepapers/pdf/docs_datasheet_medical_3.pdf",
-  "CardsDatasheetsTitleDocsForMedical": "ONLYOFFICE for Medical Industry",
-  "CardsDatasheetsProductDocsForMedical": "ONLYOFFICE Docs",
-
   "CardsDatasheetsPdfDocsForLawFirms": "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_law_firms.pdf",
-  "CardsDatasheetsTitleDocsForLawFirms": "ONLYOFFICE for Law Firms",
-  "CardsDatasheetsProductDocsForLawFirms": "ONLYOFFICE Workspace",
-
   "CardsDatasheetsPdfWorkspacePrivateRooms": "/images/templates/whitepapers/pdf/onlyoffice_workspace_private_rooms.pdf",
-  "CardsDatasheetsTitleWorkspacePrivateRooms": "ONLYOFFICE Private Rooms",
-  "CardsDatasheetsProductWorkspacePrivateRooms": "ONLYOFFICE Docs",
-
   "CardsDatasheetsPdfWorkspace": "/images/templates/whitepapers/pdf/onlyoffice_workspace.pdf",
-  "CardsDatasheetsTitleWorkspace": "ONLYOFFICE Workspace",
-  "CardsDatasheetsProductWorkspace": "ONLYOFFICE Workspace",
 
   "CardsFormSuccess": "Your request has been sent successfully",
-  "CardsFormError": "We are sorry, but an error occurred, try again later",
-
-  "JoinHeading": "Join over <0>15 000 000</0> ONLYOFFICE users worldwide",
-  "JoinButton": "Use in the cloud"
+  "CardsFormError": "We are sorry, but an error occurred, try again later"
 }

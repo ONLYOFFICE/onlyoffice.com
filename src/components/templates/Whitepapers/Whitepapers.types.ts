@@ -49,7 +49,7 @@ interface ICheckStatus {
 }
 
 type TDropdownType = "filter" | "module" | "date" | null;
-type TFilterKey  = "CardsFiltersAll" | "CardsHeadingWhitepapers" | "CardsHeadingDatasheets" | string;
+type TFilterKey  = "CardsFiltersAll" | "WhitePapers" | "Datasheets" | string;
 type TSortDateKey = "CardsSortNewestOldest" | "CardsSortOldestNewest" | string;
 
 export type {

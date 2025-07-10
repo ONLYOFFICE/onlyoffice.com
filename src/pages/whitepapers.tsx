@@ -17,7 +17,7 @@ const VirtualDataRoomsPage = ({ locale }: ILocale) => {
         <AdventAnnounce locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head title={t("PageTitle")} description={t("PageDescription")} />
+        <Head title={t("WhitepapersPageTitle")} description={t("WhitepapersMetaDescription")} />
       </Layout.Head>
       <Layout.Header>
         <Header

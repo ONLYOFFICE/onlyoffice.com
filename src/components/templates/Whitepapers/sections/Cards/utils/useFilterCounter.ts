@@ -1,17 +1,17 @@
-import { TFunction } from "i18next";
 import { useMemo } from "react";
+import { TFilterKey, TSortDateKey } from "../../../Whitepapers.types";
 
-const useFilterCounter = (choosedFilter: string, choosedModule: string, choosedDate: string, t: TFunction) => {
+const useFilterCounter = (choosedFilter: TFilterKey, choosedModule: TFilterKey, choosedDate: TSortDateKey) => {
 
   const filterCounter = useMemo(() => {
-    const defaultFilter = t("CardsFiltersAll");
-    const defaultDate = t("CardsSortNewestOldest");
+    const defaultFilter = "CardsFiltersAll";
+    const defaultDate = "CardsSortNewestOldest";
     let count = 0;
     if (choosedFilter !== defaultFilter) count++;
     if (choosedModule !== defaultFilter) count++;
     if (choosedDate !== defaultDate) count++;
     return count;
-  }, [choosedFilter, choosedModule, choosedDate, t]);
+  }, [choosedFilter, choosedModule, choosedDate]);
 
   return { filterCounter };
 }

@@ -51,8 +51,8 @@ import {
 
 const CARDS_CONTENT_LIST: TFilterKey[] = [
   "CardsFiltersAll",
-  "CardsHeadingWhitepapers",
-  "CardsHeadingDatasheets"
+  "WhitePapers",
+  "Datasheets"
 ];
 
 const CARDS_SORT_DATE_LIST: TSortDateKey[] = [
@@ -78,7 +78,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
   const dateBtnRef = useRef<HTMLDivElement>(null);
   const [activeDropdown, setActiveDropdown] = useState<"filter" | "module" | "date" | null>(null);
   const [filterMobDisplay, setFilterMobDisplay] = useState(false);
-  const { filterCounter } = useFilterCounter(choosedFilter, choosedModule, choosedDate, t);
+  const { filterCounter } = useFilterCounter(choosedFilter, choosedModule, choosedDate);
 
   useHandleClickOutside(setActiveDropdown, filterBtnRef, moduleBtnRef, dateBtnRef);
 
@@ -120,15 +120,24 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
   }, []);
 
   const handleModuleSetDefault = useCallback(() => {
-    if (choosedFilter !== "CardsHeadingDatasheets") {
+    if (choosedFilter !== "Datasheets") {
       setChoosedModule("CardsFiltersAll");
+      setTempModule("CardsFiltersAll");
     }
   }, [choosedFilter]);
 
   const handleChooseFilter = useCallback((label: TFilterKey) => {
     setChoosedFilter(label);
+    setTempFilter(label);
     handleModuleSetDefault();
   }, [handleModuleSetDefault]);
+
+  const handleChooseMobFilter = useCallback((label: TFilterKey) => {
+    setTempFilter(label);
+    if (label !== "Datasheets") {
+      setTempModule("CardsFiltersAll");
+    }
+  }, []);
 
   const handleDropdownClick = useCallback((dropdown: "filter" | "module" | "date") => {
     setActiveDropdown(prev => prev === dropdown ? null : dropdown);
@@ -168,7 +177,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
             </StyledCardsFilterSelect>
 
             <StyledCardsSortSelect ref={moduleBtnRef}>
-              {t(choosedFilter) === t("CardsHeadingDatasheets") && (
+              {t(choosedFilter) === t("Datasheets") && (
                 <StyledCardsSortModules onClick={() => handleDropdownClick("module")}>
                   <StyledCardsSortModuleText
                     fontSize="11px"
@@ -241,9 +250,9 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
           </StyledCardsFiltersWrapper>
 
           {refineWhitepaperItems.length > 0 &&
-            (t(choosedFilter) === t("CardsHeadingWhitepapers") || t(choosedFilter) === t("CardsFiltersAll")) && (
+            (t(choosedFilter) === t("WhitePapers") || t(choosedFilter) === t("CardsFiltersAll")) && (
               <StyledCardsContent>
-                <StyledCardsHeading label={t("CardsHeadingWhitepapers")} textAlign="center" level={2} size={4} />
+                <StyledCardsHeading label={t("WhitePapers")} textAlign="center" level={2} size={4} />
                 <StyledCardsList>
                   {refineWhitepaperItems.map(item => (
                     <CardWhitepapers
@@ -260,9 +269,9 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
               </StyledCardsContent>
             )}
           {refineDatasheetsItems.length > 0 &&
-            (t(choosedFilter) === t("CardsHeadingDatasheets") || t(choosedFilter) === t("CardsFiltersAll")) && (
+            (t(choosedFilter) === t("Datasheets") || t(choosedFilter) === t("CardsFiltersAll")) && (
               <StyledCardsContent>
-                <StyledCardsHeading label={t("CardsHeadingDatasheets")} textAlign="center" level={2} size={4} />
+                <StyledCardsHeading label={t("Datasheets")} textAlign="center" level={2} size={4} />
                 <StyledCardsList>
                   {refineDatasheetsItems.map((item, index) => (
                     <CardDatasheets
@@ -276,7 +285,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                     />
                   ))}
                 </StyledCardsList>
-                {choosedModule === t("CardsFiltersAll") && (
+                {choosedModule === "CardsFiltersAll" && (
                   <StyledCardsDatasheetsShowBtn $display={dataSheetsShowButton} onClick={handleShowMore}>
                     {t("CardsButtonShowMore")}
                   </StyledCardsDatasheetsShowBtn>
@@ -299,7 +308,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
             {CARDS_CONTENT_LIST.map(label => (
               <StyledCardsFilterMobOption
                 key={label}
-                onClick={() => setTempFilter(label)}
+                onClick={() => handleChooseMobFilter(label)}
                 $isActive={tempFilter === label}
               >
                 {t(label)}
@@ -324,7 +333,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
               </StyledCardsMobDateOption>
             ))}
           </StyledCardsMobDateSelect>
-          {tempFilter === t("CardsHeadingDatasheets") && (
+          {tempFilter === t("Datasheets") && (
             <>
               <StyledCardsSortMobHeading
                 label={t("CardsMobFiltersModules")}

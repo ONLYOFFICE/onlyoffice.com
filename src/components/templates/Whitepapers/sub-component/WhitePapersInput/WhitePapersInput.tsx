@@ -28,12 +28,12 @@ const WhitepapersInput = ({ value, setValue }: {
               color="#fff"
               level={6}
               size={6}
-              label={t("WhitepapersInputSubtitle")}
+              label={t("TechnicalContent")}
             />
           </StyledWhitepapersInputLeft>
           <StyledWhitepapersInputRight>
             <StyledWhitepapersInput
-              label={t("WhitepapersInputLabel")}
+              label={t("SearchWhitePaper")}
               id="#whitepapers-input"
               rightSide={<SearchIcon />}
               value={value}

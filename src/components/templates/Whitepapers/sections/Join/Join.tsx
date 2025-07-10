@@ -25,7 +25,7 @@ const JoinComponent = () => {
         >
           <Trans
             t={t}
-            i18nKey={"JoinHeading"}
+            i18nKey={"JoinOver"}
             components={[
               <Text key={0} as={"span"} fontWeight={600} label="" />
             ]}
@@ -35,7 +35,7 @@ const JoinComponent = () => {
           as={"a"}
           href="/registration?from=whitepapers"
         >
-          {t("JoinButton")}
+          {t("UseInTheCloud")}
         </StyledJoinButton>
       </Container>
     </StyledJoinSection>

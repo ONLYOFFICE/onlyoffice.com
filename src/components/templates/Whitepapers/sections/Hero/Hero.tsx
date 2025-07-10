@@ -18,14 +18,14 @@ const HeroComponent = () => {
     >
       <Container>
         <StyledHeroHeading
-          label={t("HeroHeading")}
+          label={t("WhitePapersAndDatasheets")}
           size={2}
           level={1}
           textAlign="center"
           color='#fff'
         />
         <StyledHeroText
-          label={t("HeroText")}
+          label={t("GetDeeperInsights")}
           textAlign='center'
           color='#fff'
         />
