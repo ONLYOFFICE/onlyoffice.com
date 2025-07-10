@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { ICardDatasheetsItems, ICardWhitepapersItems } from "../../../Whitepapers.types";
+import { useTranslation } from "next-i18next";
 
 const useRefineCardsItems = (
   cardWhitepapersItems: ICardWhitepapersItems[],
@@ -8,10 +9,11 @@ const useRefineCardsItems = (
   choosedModule: string,
   choosedDate: string
 ) => {
+  const { t } = useTranslation("whitepapers");
 
   const refineWhitepaperItems = useMemo(() => {
     const filteredWhitepapers = cardWhitepapersItems.filter((item) => {
-      return item.title.toLowerCase().includes(sortValue.toLowerCase());
+      return t(item.title).toLowerCase().includes(sortValue.toLowerCase());
     });
 
     const filteredSortedWhitepapers = filteredWhitepapers.sort((a, b) => {
@@ -22,11 +24,11 @@ const useRefineCardsItems = (
     });
 
     return filteredSortedWhitepapers;
-  }, [sortValue, cardWhitepapersItems, choosedDate]);
+  }, [t, sortValue, cardWhitepapersItems, choosedDate]);
 
   const refineDatasheetsItems = useMemo(() => {
     const filteredDatasheets = cardDatasheetsItems.filter((item) => {
-      return item.title.toLowerCase().includes(sortValue.toLowerCase());
+      return t(item.title).toLowerCase().includes(sortValue.toLowerCase());
     })
 
     const filteredModuleDatasheets = filteredDatasheets.filter((item) => {
@@ -44,7 +46,7 @@ const useRefineCardsItems = (
     });
 
     return filteredSortedDatasheets;
-  }, [sortValue, cardDatasheetsItems, choosedModule, choosedDate]);
+  }, [t, sortValue, cardDatasheetsItems, choosedModule, choosedDate]);
 
   return { refineWhitepaperItems, refineDatasheetsItems };
 }
