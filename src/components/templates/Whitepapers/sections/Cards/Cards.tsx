@@ -9,7 +9,7 @@ import { cardDatasheetsItems } from "./data/cardDatasheetsItems";
 import { useRefineCardsItems } from "./utils/useRefineCardsItems";
 import { useHandleClickOutside } from "./utils/useHandleClickOutside";
 import { useFilterCounter } from "./utils/useFilterCounter";
-import { ICardsProp } from "../../Whitepapers.types";
+import { ICardsProp, TFilterKey, TSortDateKey } from "../../Whitepapers.types";
 import { ILocale } from "@src/types/locale";
 
 import {
@@ -49,13 +49,13 @@ import {
   StyledCardsRefineMobHeading
 } from "./Cards.styled";
 
-const CARDS_CONTENT_LIST = [
+const CARDS_CONTENT_LIST: TFilterKey[] = [
   "CardsFiltersAll",
   "CardsHeadingWhitepapers",
   "CardsHeadingDatasheets"
 ];
 
-const CARDS_SORT_DATE_LIST = [
+const CARDS_SORT_DATE_LIST: TSortDateKey[] = [
   "CardsSortNewestOldest",
   "CardsSortOldestNewest"
 ];
@@ -65,13 +65,13 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
 
   const [dataSheetsDisplayCount, setDataSheetsDisplayCount] = useState<number>(6);
   const [dataSheetsShowButton, setDataSheetsShowButton] = useState<boolean>(true);
-  const [choosedFilter, setChoosedFilter] = useState<string>(t("CardsFiltersAll"));
-  const [choosedModule, setChoosedModule] = useState<string>(t("CardsFiltersAll"));
-  const [choosedDate, setChoosedDate] = useState<string>(t("CardsSortNewestOldest"));
+  const [choosedFilter, setChoosedFilter] = useState<TFilterKey>("CardsFiltersAll");
+  const [choosedModule, setChoosedModule] = useState<TFilterKey>("CardsFiltersAll");
+  const [choosedDate, setChoosedDate] = useState<TSortDateKey>("CardsSortNewestOldest");
 
-  const [tempFilter, setTempFilter] = useState<string>(choosedFilter);
-  const [tempModule, setTempModule] = useState<string>(choosedModule);
-  const [tempDate, setTempDate] = useState<string>(choosedDate);
+  const [tempFilter, setTempFilter] = useState<TFilterKey>(choosedFilter);
+  const [tempModule, setTempModule] = useState<TFilterKey>(choosedModule);
+  const [tempDate, setTempDate] = useState<TSortDateKey>(choosedDate);
 
   const filterBtnRef = useRef<HTMLDivElement>(null);
   const moduleBtnRef = useRef<HTMLDivElement>(null);
@@ -86,8 +86,8 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
     const sorted = [...cardDatasheetsItems].sort((a, b) =>
       a.title.localeCompare(b.title)
     );
-    return [{ title: t("CardsFiltersAll") }, ...sorted];
-  }, [t]);
+    return [{ title: "CardsFiltersAll" as TFilterKey }, ...sorted];
+  }, []);
 
   const { refineWhitepaperItems, refineDatasheetsItems } = useRefineCardsItems(
     cardWhitepapersItems,
@@ -109,23 +109,23 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
   };
 
   const handleMobResetFilters = useCallback(() => {
-    const defaultFilter = t("CardsFiltersAll");
-    const defaultDate = t("CardsSortNewestOldest");
+    const defaultFilter = "CardsFiltersAll";
+    const defaultDate = "CardsSortNewestOldest";
     setChoosedFilter(defaultFilter);
     setChoosedModule(defaultFilter);
     setChoosedDate(defaultDate);
     setTempFilter(defaultFilter);
     setTempModule(defaultFilter);
     setTempDate(defaultDate);
-  }, [t]);
+  }, []);
 
   const handleModuleSetDefault = useCallback(() => {
-    if (choosedFilter !== t("CardsHeadingDatasheets")) {
-      setChoosedModule(t("CardsFiltersAll"));
+    if (choosedFilter !== "CardsHeadingDatasheets") {
+      setChoosedModule("CardsFiltersAll");
     }
-  }, [choosedFilter, t]);
+  }, [choosedFilter]);
 
-  const handleChooseFilter = useCallback((label: string) => {
+  const handleChooseFilter = useCallback((label: TFilterKey) => {
     setChoosedFilter(label);
     handleModuleSetDefault();
   }, [handleModuleSetDefault]);
@@ -148,18 +148,18 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
               <StyledCardsRefineHeading
                 level={5}
                 size={4}
-                label={choosedFilter}
+                label={t(choosedFilter)}
                 $isOpen={activeDropdown === "filter"}
               />
               <StyledCardsRefineList $isOpen={activeDropdown === "filter"}>
                 {CARDS_CONTENT_LIST.map(label => (
                   <StyledCardsRefineItems
-                    key={t(label)}
-                    onClick={() => handleChooseFilter(t(label))}
-                    $isActive={choosedFilter === t(label)}
+                    key={label}
+                    onClick={() => handleChooseFilter(label)}
+                    $isActive={choosedFilter === label}
                   >
                     <StyledCardsRefineText
-                      $isActive={choosedFilter === t(label)}
+                      $isActive={choosedFilter === label}
                       label={t(label)}
                     />
                   </StyledCardsRefineItems>
@@ -168,7 +168,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
             </StyledCardsFilterSelect>
 
             <StyledCardsSortSelect ref={moduleBtnRef}>
-              {choosedFilter === t("CardsHeadingDatasheets") && (
+              {t(choosedFilter) === t("CardsHeadingDatasheets") && (
                 <StyledCardsSortModules onClick={() => handleDropdownClick("module")}>
                   <StyledCardsSortModuleText
                     fontSize="11px"
@@ -178,7 +178,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                   />
                   <StyledCardsRefineHeading
                     $isOpen={activeDropdown === "module"}
-                    label={choosedModule}
+                    label={t(choosedModule)}
                     level={5}
                     size={6}
                   />
@@ -191,7 +191,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                       >
                         <StyledCardsRefineText
                           $isActive={choosedModule === item.title}
-                          label={item.title}
+                          label={t(item.title)}
                         />
                       </StyledCardsRefineItems>
                     ))}
@@ -207,19 +207,19 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                 />
                 <StyledCardsRefineHeading
                   $isOpen={activeDropdown === "date"}
-                  label={choosedDate}
+                  label={t(choosedDate)}
                   level={5}
                   size={6}
                 />
                 <StyledCardsRefineList $isOpen={activeDropdown === "date"}>
                   {CARDS_SORT_DATE_LIST.map(date => (
                     <StyledCardsRefineItems
-                      key={t(date)}
-                      onClick={() => setChoosedDate(t(date))}
-                      $isActive={choosedDate === t(date)}
+                      key={date}
+                      onClick={() => setChoosedDate(date)}
+                      $isActive={choosedDate === date}
                     >
                       <StyledCardsRefineText
-                        $isActive={choosedDate === t(date)}
+                        $isActive={choosedDate === date}
                         label={t(date)}
                       />
                     </StyledCardsRefineItems>
@@ -231,7 +231,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
             <StyledCardsRefineMobHeading
               level={5}
               size={4}
-              label={choosedFilter}
+              label={t(choosedFilter)}
             />
             <StyledCardsFilterMobIcon onClick={openMobileFilters}>
               {filterCounter > 0 && (
@@ -241,7 +241,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
           </StyledCardsFiltersWrapper>
 
           {refineWhitepaperItems.length > 0 &&
-            (choosedFilter === t("CardsHeadingWhitepapers") || choosedFilter === t("CardsFiltersAll")) && (
+            (t(choosedFilter) === t("CardsHeadingWhitepapers") || t(choosedFilter) === t("CardsFiltersAll")) && (
               <StyledCardsContent>
                 <StyledCardsHeading label={t("CardsHeadingWhitepapers")} textAlign="center" level={2} size={4} />
                 <StyledCardsList>
@@ -260,7 +260,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
               </StyledCardsContent>
             )}
           {refineDatasheetsItems.length > 0 &&
-            (choosedFilter === t("CardsHeadingDatasheets") || choosedFilter === t("CardsFiltersAll")) && (
+            (t(choosedFilter) === t("CardsHeadingDatasheets") || t(choosedFilter) === t("CardsFiltersAll")) && (
               <StyledCardsContent>
                 <StyledCardsHeading label={t("CardsHeadingDatasheets")} textAlign="center" level={2} size={4} />
                 <StyledCardsList>
@@ -298,9 +298,9 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
           <StyledCardsFilterMobSelect>
             {CARDS_CONTENT_LIST.map(label => (
               <StyledCardsFilterMobOption
-                key={t(label)}
-                onClick={() => setTempFilter(t(label))}
-                $isActive={tempFilter === t(label)}
+                key={label}
+                onClick={() => setTempFilter(label)}
+                $isActive={tempFilter === label}
               >
                 {t(label)}
               </StyledCardsFilterMobOption>
@@ -316,9 +316,9 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
           <StyledCardsMobDateSelect>
             {CARDS_SORT_DATE_LIST.map(date => (
               <StyledCardsMobDateOption
-                key={t(date)}
-                onClick={() => setTempDate(t(date))}
-                $isActive={tempDate === t(date)}
+                key={date}
+                onClick={() => setTempDate(date)}
+                $isActive={tempDate === date}
               >
                 {t(date)}
               </StyledCardsMobDateOption>
@@ -340,7 +340,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                     onClick={() => setTempModule(item.title)}
                     $isActive={tempModule === item.title}
                   >
-                    {item.title}
+                    {t(item.title)}
                   </StyledCardsSortMobOption>
                 ))}
               </StyledCardsSortMobSelect>

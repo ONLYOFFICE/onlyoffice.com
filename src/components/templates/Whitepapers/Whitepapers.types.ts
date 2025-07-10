@@ -49,6 +49,8 @@ interface ICheckStatus {
 }
 
 type TDropdownType = "filter" | "module" | "date" | null;
+type TFilterKey  = "CardsFiltersAll" | "CardsHeadingWhitepapers" | "CardsHeadingDatasheets" | string;
+type TSortDateKey = "CardsSortNewestOldest" | "CardsSortOldestNewest" | string;
 
 export type {
   ICardsProp,
@@ -59,5 +61,7 @@ export type {
   ICardFormProp,
   IFormData,
   ICheckStatus,
-  TDropdownType
+  TDropdownType,
+  TFilterKey,
+  TSortDateKey
 };
