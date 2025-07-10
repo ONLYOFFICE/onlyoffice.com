@@ -31,7 +31,6 @@
   "CardsButtonShowMore": "load more",
 
   "CardsWhitepaper": "White Paper",
-  "CardsDatasheet": "Datasheet",
 
   "CardsMobFiltersHeading": "Filters",
   "CardsMobFiltersReset": "Reset",
@@ -101,8 +100,10 @@
 
   "CardsDatasheetsPdfWorkspaceForHealthInstitutions": "/images/templates/whitepapers/pdf/onlyoffice_workspace_for_health_institutions.pdf",
   "CardsDatasheetsTitleWorkspaceForHealthInstitutions": "ONLYOFFICE Workspace for health institutions",
+
   "CardsDatasheetsPdfDocsInYourCluster": "/images/templates/whitepapers/pdf/onlyoffice_docs_in_your_cluster.pdf",
   "CardsDatasheetsTitleDocsInYourCluster": "Powerful document collaboration in your cluster",
+
   "CardsDatasheetsPdfDocsDatasheetEducation": "/images/templates/whitepapers/pdf/onlyoffice_docs_datasheet_education.pdf",
   "CardsDatasheetsPdfDocsForOwncloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_owncloud.pdf",
   "CardsDatasheetsPdfDocsForNextcloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_nextcloud.pdf",
