@@ -1,0 +1,120 @@
+{
+  "WhitepapersPageTitle": "White papers en datasheets",
+  "WhitepapersMetaDescription": "Meer informatie over samenwerktechnologieën en ONLYOFFICE oplossingen.",
+  "TechnicalContent": "Technische Inhoud",
+  "SearchWhitePaper": "Zoeken in whitepaper, datasheet",
+  "WhitePapersAndDatasheets": "White papers en datasheets",
+  "GetDeeperInsights": "Krijg meer inzicht in samenwerkingstechnologieën en ONLYOFFICE oplossingen vanuit technische en industrie-specifieke perspectieven en leer nuttige feiten over onze producten voor een verscheidenheid aan toepassingen.",
+  "WhitePapers": "White papers",
+  "Datasheets": "Datasheets",
+  "ONLYOFFICEDocs": "ONLYOFFICE Docs",
+  "ONLYOFFICEWorkspace": "ONLYOFFICE Workspace",
+  "ONLYOFFICEPrivateRooms": "ONLYOFFICE Privé kamers",
+  "ONLYOFFICELawFirms": "ONLYOFFICE voor advocatenkantoren",
+  "ONLYOFFICEMedical": "ONLYOFFICE voor de medische industrie",
+  "ONLYOFFICEPharmaceutical": "ONLYOFFICE voor farmaceutische bedrijven",
+  "ONLYOFFICENon_Profit": "ONLYOFFICE voor non-profitorganisaties",
+  "ONLYOFFICENextcloud": "ONLYOFFICE voor Nextcloud",
+  "ONLYOFFICEOwnCloud": "ONLYOFFICE voor ownCloud",
+  "DocumentCollaboration": "Samenwerken aan documenten in het onderwijs",
+  "JoinOver": "Sluit u aan bij meer dan <0>15 000 000</0> ONLYOFFICE gebruikers over de hele wereld",
+  "UseInTheCloud": "Gebruik in de cloud",
+  "FillOutThisForm": "Vul dit formulier in",
+  "FillOutThisFormToRequestAQuote": "Vul dit formulier in om een offerte",
+  "ByClickingDownload": "Door te klikken op \"Download\", begrijpt u en gaat u akkoord met onze <0>SLA</0> en <1>privacyverklaring</1>.",
+
+  "CardsFiltersAll": "Alles",
+  "CardsSortModules": "Modules:",
+  "CardsSortBy": "Sorteren op:",
+  "CardsSortNewestOldest": "Nieuwste - Oudste",
+  "CardsSortOldestNewest": "Oudste - Nieuwste",
+  "CardsButtonShowMore": "meer laden",
+
+  "CardsWhitepaper": "White Paper",
+
+  "CardsMobFiltersHeading": "Filters",
+  "CardsMobFiltersReset": "Resetten",
+  "CardsMobFiltersApply": "Filter toepassen",
+  "CardsMobFiltersModules": "Module",
+
+  "CardsButtonDownload": "Download",
+
+  "CardFormFullName": "Volledige naam",
+  "CardFormFullNameIsEmpty": "Volledige naam is leeg",
+  "CardFormFullNameIsIncorrect": "Volledige naam is onjuist",
+  "CardFormPlaceholderName": "Voornaam Achternaam",
+  "CardFormCompanyName": "Bedrijfsnaam",
+  "CardFormCompanyNameIsEmpty": "Bedrijfsnaam is leeg",
+  "CardFormEmail": "E-mail",
+  "CardFormPlaceholderEmail": "name@domain.com",
+  "CardFormEmailIsEmpty": "E-mail is leeg",
+  "CardFormEmailIsIncorrect": "E-mailadres is onjuist",
+
+  "CardsWhitepapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
+  "CardsWhitepapersHeadStressTest": "ONLYOFFICE Docs 7.2.2. stresstest verslag",
+  "CardsWhitepapersTitleStressTest": "ONLYOFFICE Docs 7.2.2. stresstest verslag",
+  "CardsWhitepapersDescriptionStressTest": "Dit document beschrijft een stresstest die wij hebben uitgevoerd op ONLYOFFICE Docs 7.2.2 en de resultaten van de test. Het hoofddoel was het testen van de serverbelasting gelijk aan 10.000 verzoeken aan ONLYOFFICE Docs.",
+
+  "CardsWhitepapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
+  "CardsWhitepapersHeadForDevelopers": "ONLYOFFICE Documenten voor ontwikkelaars: architectuur, integratie en implementatie",
+  "CardsWhitepapersTitleForDevelopers": "ONLYOFFICE Documenten voor ontwikkelaars: architectuur, integratie en implementatie",
+  "CardsWhitepapersDescriptionForDevelopers": "In this paper, we explore the functionality, integration, and deployment methods of the ONLYOFFICE Docs online office suite.",
+
+  "CardsWhitepapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
+  "CardsWhitepapersHeadLoadTestReport": "ONLYOFFICE Docs load test verslag",
+  "CardsWhitepapersTitleLoadTestReport": "ONLYOFFICE Docs load test verslag",
+  "CardsWhitepapersDescriptionLoadTestReport": "Dit document beschrijft een load test die we hebben uitgevoerd op ONLYOFFICE Docs en de resultaten van de test. Het belangrijkste doel was om het aantal gelijktijdige verbindingen te bepalen dat ONLYOFFICE Docs kan ondersteunen.",
+
+  "CardsWhitepapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
+  "CardsWhitepapersHeadPrivateRooms": "ONLYOFFICE Privékamers: 9 beveiligingsprincipes",
+  "CardsWhitepapersTitlePrivateRooms": "ONLYOFFICE Privékamers: 9 beveiligingsprincipes",
+  "CardsWhitepapersDescriptionPrivateRooms": "In deze white paper beschrijven wij de principes die in ONLYOFFICE Privékamers worden gebruikt om veiligheid te garanderen bij iedere stap van het werken met documenten.",
+
+  "CardsWhitepapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
+  "CardsWhitepapersHeadIntegrationExample": "ONLYOFFICE Docs integratie voorbeeld",
+  "CardsWhitepapersTitleIntegrationExample": "ONLYOFFICE Docs integratie voorbeeld",
+  "CardsWhitepapersDescriptionIntegrationExample": "In deze whitepaper bekijken we de integratiemogelijkheden van ONLYOFFICE die worden geboden door zijn open API.",
+
+  "CardsWhitepapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
+  "CardsWhitepapersHeadForGovernmentOffices": "Soevereine samenwerking infrastructuren voor overheidskantoren",
+  "CardsWhitepapersTitleForGovernmentOffices": "Soevereine samenwerking infrastructuren voor overheidskantoren",
+  "CardsWhitepapersDescriptionForGovernmentOffices": "Wij bekijken de veelvoorkomende uitdagingen waarmee de overheidssector wordt geconfronteerd bij het opbouwen van een IT-omgeving binnen zijn netwerk ter ondersteuning van samenwerkingsprocessen en gaan uit van een doeltreffend model op basis van open, soevereine en veilige technologieën.",
+
+  "CardsWhitepapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
+  "CardsWhitepapersHeadEndToEndDocumentEncryption": "End-to-end document versleuteling",
+  "CardsWhitepapersTitleEndToEndDocumentEncryption": "End-to-end document versleuteling",
+  "CardsWhitepapersDescriptionEndToEndDocumentEncryption": "Deze White Paper beschrijft de componenten en mechanismen van end-to-end documentenversleuteling in ONLYOFFICE Workspace.",
+
+  "CardsWhitepapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
+  "CardsWhitepapersHeadDataEncryptionAtRest": "Gegevensversleuteling at rest 1.0",
+  "CardsWhitepapersTitleDataEncryptionAtRest": "Gegevensversleuteling at rest 1.0",
+  "CardsWhitepapersDescriptionDataEncryptionAtRest": "Deze White Paper beschrijft de componenten en mechanismen van de versie 1.0 van versleuteling at rest in ONLYOFFICE Workspace.",
+
+
+  "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
+  "CardsDatasheetsTitleSecureCloudSpace": "Veilige cloudruimte voor uw team en daarbuiten",
+  "CardsDatasheetsProductSecureCloudSpace": "ONLYOFFICE DocSpace",
+
+  "CardsDatasheetsPdfForBanking": "/images/templates/whitepapers/pdf/onlyoffice_for_banking.pdf",
+  "CardsDatasheetsTitleForBanking": "Krachtige en Veilige Documentverwerking voor het Bankwezen",
+
+  "CardsDatasheetsPdfWorkspaceForHealthInstitutions": "/images/templates/whitepapers/pdf/onlyoffice_workspace_for_health_institutions.pdf",
+  "CardsDatasheetsTitleWorkspaceForHealthInstitutions": "ONLYOFFICE Workspace for health institutions",
+
+  "CardsDatasheetsPdfDocsInYourCluster": "/images/templates/whitepapers/pdf/onlyoffice_docs_in_your_cluster.pdf",
+  "CardsDatasheetsTitleDocsInYourCluster": "Krachtige samenwerking aan documenten in uw cluster in een handomdraai",
+
+  "CardsDatasheetsPdfDocsDatasheetEducation": "/images/templates/whitepapers/pdf/onlyoffice_docs_datasheet_education.pdf",
+  "CardsDatasheetsPdfDocsForOwncloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_owncloud.pdf",
+  "CardsDatasheetsPdfDocsForNextcloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_nextcloud.pdf",
+  "CardsDatasheetsPdfDocs": "/images/templates/whitepapers/pdf/onlyoffice_docs.pdf",
+  "CardsDatasheetsPdfDocsForNonprofit": "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_non-profits.pdf",
+  "CardsDatasheetsPdfDocsForPharmaceutical": "/images/templates/whitepapers/pdf/onlyoffice_datasheet__for_pharmaceutical_industry.pdf",
+  "CardsDatasheetsPdfDocsForMedical": "/images/templates/whitepapers/pdf/docs_datasheet_medical_3.pdf",
+  "CardsDatasheetsPdfDocsForLawFirms": "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_law_firms.pdf",
+  "CardsDatasheetsPdfWorkspacePrivateRooms": "/images/templates/whitepapers/pdf/onlyoffice_workspace_private_rooms.pdf",
+  "CardsDatasheetsPdfWorkspace": "/images/templates/whitepapers/pdf/onlyoffice_workspace.pdf",
+
+  "CardsFormSuccess": "Uw verzoek is succesvol verzonden",
+  "CardsFormError": "Excuses, maar er is een fout gemaakt, probeer het later nog eens"
+}
