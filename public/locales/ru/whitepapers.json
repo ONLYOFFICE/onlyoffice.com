@@ -1,0 +1,120 @@
+{
+  "WhitepapersPageTitle": "White papers и брошюры",
+  "WhitepapersMetaDescription": "Узнайте больше о технологиях совместной работы и решениях ONLYOFFICE",
+  "TechnicalContent": "Техническое содержание",
+  "SearchWhitePaper": "Искать white papers и брошюры",
+  "WhitePapersAndDatasheets": "White papers и брошюры",
+  "GetDeeperInsights": "В этих документах мы описали, как ONLYOFFICE решает задачи по организации совместной работы в разных отраслях, например, в правительственных учреждениях.",
+  "WhitePapers": "White papers",
+  "Datasheets": "Брошюры",
+  "ONLYOFFICEDocs": "ONLYOFFICE Docs",
+  "ONLYOFFICEWorkspace": "ONLYOFFICE Workspace",
+  "ONLYOFFICEPrivateRooms": "Приватные комнаты ONLYOFFICE",
+  "ONLYOFFICELawFirms": "ONLYOFFICE для юридических фирм",
+  "ONLYOFFICEMedical": "ONLYOFFICE для медицины",
+  "ONLYOFFICEPharmaceutical": "ONLYOFFICE для фармацевтических компаний",
+  "ONLYOFFICENon_Profit": "ONLYOFFICE для нон-профитов",
+  "ONLYOFFICENextcloud": "ONLYOFFICE для Nextcloud",
+  "ONLYOFFICEOwnCloud": "ONLYOFFICE для ownCloud",
+  "DocumentCollaboration": "Совместная работа над документами в образовании",
+  "JoinOver": "Присоединяйтесь к более чем <0>15 000 000</0> пользователей ONLYOFFICE по всему миру",
+  "UseInTheCloud": "Используйте в облаке",
+  "FillOutThisForm": "Заполните форму",
+  "FillOutThisFormToRequestAQuote": "Заполните форму, чтобы узнать цену",
+  "ByClickingDownload": "Нажав кнопку “Скачать”, вы принимаете наше <0>Соглашение об уровне обслуживания</0> и <1>Положение о конфиденциальности</1>.",
+
+  "CardsFiltersAll": "Все",
+  "CardsSortModules": "Модули:",
+  "CardsSortBy": "Сортировать по:",
+  "CardsSortNewestOldest": "От новых к старым",
+  "CardsSortOldestNewest": "От старых к новым",
+  "CardsButtonShowMore": "больше",
+
+  "CardsWhitepaper": "White Paper",
+
+  "CardsMobFiltersHeading": "Фильтры",
+  "CardsMobFiltersReset": "Сбросить",
+  "CardsMobFiltersApply": "Применить фильтр",
+  "CardsMobFiltersModules": "Модули",
+
+  "CardsButtonDownload": "Скачать",
+
+  "CardFormFullName": "Имя и фамилия",
+  "CardFormFullNameIsEmpty": "Полное имя не указано",
+  "CardFormFullNameIsIncorrect": "Неверное полное имя",
+  "CardFormPlaceholderName": "Имя Фамилия",
+  "CardFormCompanyName": "Компания",
+  "CardFormCompanyNameIsEmpty": "Название компании не указано",
+  "CardFormEmail": "Email",
+  "CardFormPlaceholderEmail": "name@domain.com",
+  "CardFormEmailIsEmpty": "Поле Email не заполнено",
+  "CardFormEmailIsIncorrect": "Неверный Email",
+
+  "CardsWhitepapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
+  "CardsWhitepapersHeadStressTest": "Отчет о нагрузочном тесте ONLYOFFICE Docs 7.2.2.",
+  "CardsWhitepapersTitleStressTest": "Отчет о нагрузочном тесте ONLYOFFICE Docs 7.2.2.",
+  "CardsWhitepapersDescriptionStressTest": "В настоящем документе описывается нагрузочный тест, который мы провели для ONLYOFFICE Docs 7.2.2, и его результаты. Его основная цель состояла в проверке нагрузки на сервер, равной 10 000 запросов к ONLYOFFICE Docs.",
+
+  "CardsWhitepapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
+  "CardsWhitepapersHeadForDevelopers": "ONLYOFFICE Docs для разработчиков: архитектура, интеграция и развертывание",
+  "CardsWhitepapersTitleForDevelopers": "ONLYOFFICE Docs для разработчиков: архитектура, интеграция и развертывание",
+  "CardsWhitepapersDescriptionForDevelopers": "В данной статье мы рассматриваем функциональные возможности, интеграцию и методы развертывания онлайн офисного пакета ONLYOFFICE Docs.",
+
+  "CardsWhitepapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
+  "CardsWhitepapersHeadLoadTestReport": "Отчет по нагрузочному тестированию ONLYOFFICE Docs",
+  "CardsWhitepapersTitleLoadTestReport": "Отчет по нагрузочному тестированию ONLYOFFICE Docs",
+  "CardsWhitepapersDescriptionLoadTestReport": "Этот документ описывает нагрузочное тестирование, которое мы провели с ONLYOFFICE Docs, и его результаты. Основной целью было определить количество одновременных подключений, которое может поддерживать ONLYOFFICE Docs.",
+
+  "CardsWhitepapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
+  "CardsWhitepapersHeadPrivateRooms": "Приватные комнаты ONLYOFFICE: 9 принципов безопасности",
+  "CardsWhitepapersTitlePrivateRooms": "Приватные комнаты ONLYOFFICE: 9 принципов безопасности",
+  "CardsWhitepapersDescriptionPrivateRooms": "В этом техническом документе описаны принципы, используемые в Приватных комнатах ONLYOFFICE для обеспечения безопасности на каждом этапе работы с документами.",
+
+  "CardsWhitepapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
+  "CardsWhitepapersHeadIntegrationExample": "Пример интеграции ONLYOFFICE Docs",
+  "CardsWhitepapersTitleIntegrationExample": "Пример интеграции ONLYOFFICE Docs",
+  "CardsWhitepapersDescriptionIntegrationExample": "В этом техническом документе рассматриваются возможности интеграции ONLYOFFICE, предоставляемые открытым API.",
+
+  "CardsWhitepapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
+  "CardsWhitepapersHeadForGovernmentOffices": "Безопасная инфраструктура для совместной работы в госучреждениях",
+  "CardsWhitepapersTitleForGovernmentOffices": "Безопасная инфраструктура для совместной работы в госучреждениях",
+  "CardsWhitepapersDescriptionForGovernmentOffices": "В этом документе рассмотрели проблемы, с которыми сталкивается госсектор при создании ИТ-среды в приватной сети, и предложили эффектное решение, основанное на открытых и безопасных технологиях.",
+
+  "CardsWhitepapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
+  "CardsWhitepapersHeadEndToEndDocumentEncryption": "Сквозное шифрование документов",
+  "CardsWhitepapersTitleEndToEndDocumentEncryption": "Сквозное шифрование документов",
+  "CardsWhitepapersDescriptionEndToEndDocumentEncryption": "В этом техническом документе описаны компоненты и механизмы сквозного шифрования в ONLYOFFICE Workspace.",
+
+  "CardsWhitepapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
+  "CardsWhitepapersHeadDataEncryptionAtRest": "Шифрование в состоянии покоя 1.0",
+  "CardsWhitepapersTitleDataEncryptionAtRest": "Шифрование в состоянии покоя 1.0",
+  "CardsWhitepapersDescriptionDataEncryptionAtRest": "В этом техническом документе описываются компоненты и механизмы шифрования данных в состоянии покоя в ONLYOFFICE Workspace.",
+
+
+  "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
+  "CardsDatasheetsTitleSecureCloudSpace": "Безопасное облачное пространство для вашей команды и не только",
+  "CardsDatasheetsProductSecureCloudSpace": "ONLYOFFICE DocSpace",
+
+  "CardsDatasheetsPdfForBanking": "/images/templates/whitepapers/pdf/onlyoffice_for_banking.pdf",
+  "CardsDatasheetsTitleForBanking": "Эффективная и безопасная работа с документами для банковского сектора",
+
+  "CardsDatasheetsPdfWorkspaceForHealthInstitutions": "/images/templates/whitepapers/pdf/onlyoffice_workspace_for_health_institutions.pdf",
+  "CardsDatasheetsTitleWorkspaceForHealthInstitutions": "ONLYOFFICE Workspace для медицинских учреждений",
+
+  "CardsDatasheetsPdfDocsInYourCluster": "/images/templates/whitepapers/pdf/onlyoffice_docs_in_your_cluster.pdf",
+  "CardsDatasheetsTitleDocsInYourCluster": "Эффективная совместная работа над документами в вашем кластере",
+
+  "CardsDatasheetsPdfDocsDatasheetEducation": "/images/templates/whitepapers/pdf/onlyoffice_docs_datasheet_education.pdf",
+  "CardsDatasheetsPdfDocsForOwncloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_owncloud.pdf",
+  "CardsDatasheetsPdfDocsForNextcloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_nextcloud.pdf",
+  "CardsDatasheetsPdfDocs": "/images/templates/whitepapers/pdf/onlyoffice_docs.pdf",
+  "CardsDatasheetsPdfDocsForNonprofit": "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_non-profits.pdf",
+  "CardsDatasheetsPdfDocsForPharmaceutical": "/images/templates/whitepapers/pdf/onlyoffice_datasheet__for_pharmaceutical_industry.pdf",
+  "CardsDatasheetsPdfDocsForMedical": "/images/templates/whitepapers/pdf/docs_datasheet_medical_3.pdf",
+  "CardsDatasheetsPdfDocsForLawFirms": "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_law_firms.pdf",
+  "CardsDatasheetsPdfWorkspacePrivateRooms": "/images/templates/whitepapers/pdf/onlyoffice_workspace_private_rooms.pdf",
+  "CardsDatasheetsPdfWorkspace": "/images/templates/whitepapers/pdf/onlyoffice_workspace.pdf",
+
+  "CardsFormSuccess": "Запрос успешно отправлен",
+  "CardsFormError": "К сожалению, произошла ошибка, повторите попытку позже"
+}
