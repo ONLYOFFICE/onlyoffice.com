@@ -1,0 +1,120 @@
+{
+  "WhitepapersPageTitle": "白皮书",
+  "WhitepapersMetaDescription": "了解更多关于协作技术和ONLYOFFICE解决方案。",
+  "TechnicalContent": "技术内容",
+  "SearchWhitePaper": "搜索白皮书、数据表",
+  "WhitePapersAndDatasheets": "白皮书",
+  "GetDeeperInsights": "从技术和行业特定的角度深入了解协作技术和ONLYOFFICE解决方案，并了解有关我们的产品在各种应用中的有用信息。",
+  "WhitePapers": "白皮书",
+  "Datasheets": "数据表",
+  "ONLYOFFICEDocs": "ONLYOFFICE 文档",
+  "ONLYOFFICEWorkspace": "ONLYOFFICE 工作区",
+  "ONLYOFFICEPrivateRooms": "ONLYOFFICE的私密房间",
+  "ONLYOFFICELawFirms": "对于法律事务所的ONLYOFFICE",
+  "ONLYOFFICEMedical": "对于医药品产业的ONLYOFFICE",
+  "ONLYOFFICEPharmaceutical": "对于制药公司的ONLYOFFICE",
+  "ONLYOFFICENon_Profit": "对于非营利组织的ONLYOFFICE",
+  "ONLYOFFICENextcloud": "ONLYOFFICE为Nextcloud服务",
+  "ONLYOFFICEOwnCloud": "ONLYOFFICE为ownCloud服务",
+  "DocumentCollaboration": "教育领域中的文档协作",
+  "JoinOver": "加入全球超过<0>15,000,000</0>名ONLYOFFICE用户的行列。",
+  "UseInTheCloud": "在云端使用",
+  "FillOutThisForm": "请填写此表",
+  "FillOutThisFormToRequestAQuote": "请填写此表申请报价",
+  "ByClickingDownload": "点击“下载”即表示您了解并同意我们的 <0>SLA</0> 以及 <1>隐私声明</1>。",
+
+  "CardsFiltersAll": "全部",
+  "CardsSortModules": "模块:",
+  "CardsSortBy": "排序方式。",
+  "CardsSortNewestOldest": "最新 - 最旧",
+  "CardsSortOldestNewest": "最旧 - 最新",
+  "CardsButtonShowMore": "加载",
+
+  "CardsWhitepaper": "白皮书",
+
+  "CardsMobFiltersHeading": "过滤器",
+  "CardsMobFiltersReset": "重启",
+  "CardsMobFiltersApply": "应用过滤器",
+  "CardsMobFiltersModules": "模块",
+
+  "CardsButtonDownload": "下载",
+
+  "CardFormFullName": "全名",
+  "CardFormFullNameIsEmpty": "全名为空",
+  "CardFormFullNameIsIncorrect": "全名错误",
+  "CardFormPlaceholderName": "姓名",
+  "CardFormCompanyName": "公司名称",
+  "CardFormCompanyNameIsEmpty": "公司名称为空",
+  "CardFormEmail": "电子邮件",
+  "CardFormPlaceholderEmail": "name@domain.com",
+  "CardFormEmailIsEmpty": "电子邮箱为空",
+  "CardFormEmailIsIncorrect": "电子邮箱错误",
+
+  "CardsWhitepapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
+  "CardsWhitepapersHeadStressTest": "ONLYOFFICE 文档 7.2.2. 压力测试报告",
+  "CardsWhitepapersTitleStressTest": "ONLYOFFICE 文档 7.2.2. 压力测试报告",
+  "CardsWhitepapersDescriptionStressTest": "本文档描述了我们对ONLYOFFICE 文档 7.2.2 进行的压力测试过程以及测试结果。主要目标是测试相当于10,000个ONLYOFFICE 文档请求的服务器负载。",
+
+  "CardsWhitepapersPdfForDevelopers": "/images/templates/whitepapers/pdf/zh/onlyoffice_docs_for_developers.pdf",
+  "CardsWhitepapersHeadForDevelopers": "适合开发人员的ONLYOFFICE文档：架构、集成和部署",
+  "CardsWhitepapersTitleForDevelopers": "适合开发人员的ONLYOFFICE文档：架构、集成和部署",
+  "CardsWhitepapersDescriptionForDevelopers": "在本论文中，我们探讨了ONLYOFFICE文档在线办公套件的功能、集成和部署方法。",
+
+  "CardsWhitepapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
+  "CardsWhitepapersHeadLoadTestReport": "ONLYOFFICE文档负载测试报告",
+  "CardsWhitepapersTitleLoadTestReport": "ONLYOFFICE文档负载测试报告",
+  "CardsWhitepapersDescriptionLoadTestReport": "文档说明了我们针对ONLYOFFICE文档进行的负载测试及其结果。主要目标是确定ONLYOFFICE文档所支持的并发连接数。",
+
+  "CardsWhitepapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
+  "CardsWhitepapersHeadPrivateRooms": "ONLYOFFICE私密房间：9个安全原则",
+  "CardsWhitepapersTitlePrivateRooms": "ONLYOFFICE私密房间：9个安全原则",
+  "CardsWhitepapersDescriptionPrivateRooms": "在这份白皮书中，我们描述了ONLYOFFICE 私密房间所遵循的原则，以确保在处理文件的每一个步骤中的安全。",
+
+  "CardsWhitepapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
+  "CardsWhitepapersHeadIntegrationExample": "ONLYOFFICE 文档集成案例",
+  "CardsWhitepapersTitleIntegrationExample": "ONLYOFFICE 文档集成案例",
+  "CardsWhitepapersDescriptionIntegrationExample": "在本白皮书中，我们将探讨ONLYOFFICE的开放API所提供的集成能力。",
+
+  "CardsWhitepapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
+  "CardsWhitepapersHeadForGovernmentOffices": "政府办公室的主权协作基础设施",
+  "CardsWhitepapersTitleForGovernmentOffices": "政府办公室的主权协作基础设施",
+  "CardsWhitepapersDescriptionForGovernmentOffices": "我们回顾了公共部门在其网络内建立IT环境以支持协作流程时面临的共同挑战，并假设一个基于开放、主权和安全技术的有效模式。",
+
+  "CardsWhitepapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
+  "CardsWhitepapersHeadEndToEndDocumentEncryption": "端到端文件加密",
+  "CardsWhitepapersTitleEndToEndDocumentEncryption": "端到端文件加密",
+  "CardsWhitepapersDescriptionEndToEndDocumentEncryption": "本白皮书介绍了ONLYOFFICE Workspace中端到端文档加密的组件和机制。",
+
+  "CardsWhitepapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
+  "CardsWhitepapersHeadDataEncryptionAtRest": "静态数据加密 1.0",
+  "CardsWhitepapersTitleDataEncryptionAtRest": "静态数据加密 1.0",
+  "CardsWhitepapersDescriptionDataEncryptionAtRest": "本白皮书描述了ONLYOFFICE工作区1.0版静态加密的组件和机制。",
+
+
+  "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/zh/onlyoffice_secure_cloud_space.pdf",
+  "CardsDatasheetsTitleSecureCloudSpace": "适合您团队的安全云空间",
+  "CardsDatasheetsProductSecureCloudSpace": "ONLYOFFICE 协作空间",
+
+  "CardsDatasheetsPdfForBanking": "/images/templates/whitepapers/pdf/onlyoffice_for_banking.pdf",
+  "CardsDatasheetsTitleForBanking": "强大并安全的文件处理 - 银行文件",
+
+  "CardsDatasheetsPdfWorkspaceForHealthInstitutions": "/images/templates/whitepapers/pdf/zh/onlyoffice_workspace_for_health_institutions.pdf",
+  "CardsDatasheetsTitleWorkspaceForHealthInstitutions": "面向卫生机构的 ONLYOFFICE 工作区",
+
+  "CardsDatasheetsPdfDocsInYourCluster": "/images/templates/whitepapers/pdf/zh/onlyoffice_docs_in_your_cluster.pdf",
+  "CardsDatasheetsTitleDocsInYourCluster": "在您的集群中进行强大的文档协作",
+
+  "CardsDatasheetsPdfDocsDatasheetEducation": "/images/templates/whitepapers/pdf/zh/onlyoffice_docs_datasheet_education.pdf",
+  "CardsDatasheetsPdfDocsForOwncloud": "/images/templates/whitepapers/pdf/zh/onlyoffice_docs_for_owncloud.pdf",
+  "CardsDatasheetsPdfDocsForNextcloud": "/images/templates/whitepapers/pdf/zh/onlyoffice_docs_for_nextcloud.pdf",
+  "CardsDatasheetsPdfDocs": "/images/templates/whitepapers/pdf/onlyoffice_docs.pdf",
+  "CardsDatasheetsPdfDocsForNonprofit": "/images/templates/whitepapers/pdf/zh/onlyoffice_datasheet_for_non-profits.pdf",
+  "CardsDatasheetsPdfDocsForPharmaceutical": "/images/templates/whitepapers/pdf/onlyoffice_datasheet__for_pharmaceutical_industry.pdf",
+  "CardsDatasheetsPdfDocsForMedical": "/images/templates/whitepapers/pdf/zh/docs_datasheet_medical_3.pdf",
+  "CardsDatasheetsPdfDocsForLawFirms": "/images/templates/whitepapers/pdf/zh/onlyoffice_datasheet_for_law_firms.pdf",
+  "CardsDatasheetsPdfWorkspacePrivateRooms": "/images/templates/whitepapers/pdf/onlyoffice_workspace_private_rooms.pdf",
+  "CardsDatasheetsPdfWorkspace": "/images/templates/whitepapers/pdf/zh/onlyoffice_workspace.pdf",
+
+  "CardsFormSuccess": "您的请求已成功发送！",
+  "CardsFormError": "很抱歉，发生错误，请稍后重试"
+}
