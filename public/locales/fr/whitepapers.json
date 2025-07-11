@@ -114,6 +114,7 @@
   "CardsDatasheetsPdfDocsForLawFirms": "/images/templates/whitepapers/pdf/fr/onlyoffice_datasheet_for_law_firms.pdf",
   "CardsDatasheetsPdfWorkspacePrivateRooms": "/images/templates/whitepapers/pdf/onlyoffice_workspace_private_rooms.pdf",
   "CardsDatasheetsPdfWorkspace": "/images/templates/whitepapers/pdf/fr/onlyoffice_workspace_fr.pdf",
+  "CardsDatasheetsPdfGroups": "/images/templates/whitepapers/pdf/fr/onlyoffice_groups_fr.pdf",
 
   "CardsFormSuccess": "Votre demande a été envoyée avec succès",
   "CardsFormError": "Désolé, une erreur est survenue. Veuillez réessayer plus tard."
