@@ -83,11 +83,18 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
   useHandleClickOutside(setActiveDropdown, filterBtnRef, moduleBtnRef, dateBtnRef);
 
   const sortModules = useMemo(() => {
-    const sorted = [...cardDatasheetsItems].sort((a, b) =>
-      a.title.localeCompare(b.title)
-    );
-    return [{ title: "CardsFiltersAll" as TFilterKey }, ...sorted];
-  }, []);
+    if (locale !== "fr") {
+      const sorted = [...cardDatasheetsItems].filter((item) => item.id !== 15).sort((a, b) =>
+        a.title.localeCompare(b.title)
+      );
+      return [{ title: "CardsFiltersAll" as TFilterKey }, ...sorted];
+    } else {
+      const sorted = [...cardDatasheetsItems].sort((a, b) =>
+        a.title.localeCompare(b.title)
+      );
+      return [{ title: "CardsFiltersAll" as TFilterKey }, ...sorted];
+    }
+  }, [locale]);
 
   const { refineWhitepaperItems, refineDatasheetsItems } = useRefineCardsItems(
     cardWhitepapersItems,
@@ -267,13 +274,28 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                   ))}
                 </StyledCardsList>
               </StyledCardsContent>
-            )}
+            )
+          }
           {refineDatasheetsItems.length > 0 &&
             (t(choosedFilter) === t("Datasheets") || t(choosedFilter) === t("CardsFiltersAll")) && (
               <StyledCardsContent>
                 <StyledCardsHeading label={t("Datasheets")} textAlign="center" level={2} size={4} />
                 <StyledCardsList>
-                  {refineDatasheetsItems.map((item, index) => (
+                  {locale !== "fr" && refineDatasheetsItems.map((item, index) => (
+                    item.id !== 15 && (
+                      <CardDatasheets
+                        key={item.id}
+                        title={t(item.title)}
+                        product={t(item.product)}
+                        image_url={item.image_url}
+                        download_url={t(item.download_url)}
+                        displayOther={index < dataSheetsDisplayCount}
+                        locale={locale}
+                      />
+                    )
+                  ))}
+
+                  {locale === "fr" && refineDatasheetsItems.map((item, index) => (
                     <CardDatasheets
                       key={item.id}
                       title={t(item.title)}
@@ -291,7 +313,8 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                   </StyledCardsDatasheetsShowBtn>
                 )}
               </StyledCardsContent>
-            )}
+            )
+          }
         </Container>
       </Section>
 

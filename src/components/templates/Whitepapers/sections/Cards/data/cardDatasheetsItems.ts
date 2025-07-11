@@ -112,6 +112,14 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     product: "ONLYOFFICEWorkspace",
     image_url: "/images/templates/whitepapers/cards/workspace.svg",
     download_url: "CardsDatasheetsPdfWorkspace",
+  },
+  {
+    id: 15,
+    title: "ONLYOFFICE Groups",
+    date: "2020-02-05T14:00Z",
+    product: "ONLYOFFICE Groups",
+    image_url: "/images/templates/whitepapers/cards/groups.svg",
+    download_url: "CardsDatasheetsPdfGroups"
   }
 ];
 
