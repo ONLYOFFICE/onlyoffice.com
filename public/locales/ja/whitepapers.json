@@ -1,0 +1,120 @@
+{
+  "WhitepapersPageTitle": "ホワイトペーパーとデータシート",
+  "WhitepapersMetaDescription": "コラボレーション技術とONLYOFFICEソリューションの詳細をご覧ください。",
+  "TechnicalContent": "技術コンテンツ",
+  "SearchWhitePaper": "ホワイトペーパー、データシートを検索する",
+  "WhitePapersAndDatasheets": "ホワイト ペーパーとデータシート",
+  "GetDeeperInsights": "この文章では、技術的および業界固有の観点から、コラボレーション技術とONLYOFFICEソリューションについてより詳しく説明しました。さまざまなアプリ向けの当社製品に関するお読みください。",
+  "WhitePapers": "ホワイト ペーパー",
+  "Datasheets": "データシート",
+  "ONLYOFFICEDocs": "ONLYOFFICE Docs",
+  "ONLYOFFICEWorkspace": "ONLYOFFICE Workspace",
+  "ONLYOFFICEPrivateRooms": "ONLYOFFICE プライベートルーム",
+  "ONLYOFFICELawFirms": "法律事務所向けの ONLYOFFICE",
+  "ONLYOFFICEMedical": "医薬品産業向けの ONLYOFFICE",
+  "ONLYOFFICEPharmaceutical": "製薬会社向けの ONLYOFFICE",
+  "ONLYOFFICENon_Profit": "非営利組織向けの ONLYOFFICE",
+  "ONLYOFFICENextcloud": "Nextcloud ための ONLYOFFICE",
+  "ONLYOFFICEOwnCloud": "ownCloud ための ONLYOFFICE",
+  "DocumentCollaboration": "教育向けの文書コラボレーション",
+  "JoinOver": "世界中の<0>1500 0000</0>上の ONLYOFFICEユーザーにぜひご参加ください",
+  "UseInTheCloud": "クラウドで使用",
+  "FillOutThisForm": "このフォームをご記入ください",
+  "FillOutThisFormToRequestAQuote": "このフォームに記入して見積もりを依頼する",
+  "ByClickingDownload": "[ダウンロード]をクリックすると、<0>当社のサービス水準合意</0>および<1>個人情報保護方針</1>を理解し、同意したことになります。",
+
+  "CardsFiltersAll": "すべて表示",
+  "CardsSortModules": "モジュール:",
+  "CardsSortBy": "並べ替え:",
+  "CardsSortNewestOldest": "新しい順",
+  "CardsSortOldestNewest": "古い順",
+  "CardsButtonShowMore": "さらに読み込む",
+
+  "CardsWhitepaper": "ホワイト ペーパー",
+
+  "CardsMobFiltersHeading": "フィルタ",
+  "CardsMobFiltersReset": "リセット",
+  "CardsMobFiltersApply": "フィルターの適用",
+  "CardsMobFiltersModules": "モジュール",
+
+  "CardsButtonDownload": "ダウンロード",
+
+  "CardFormFullName": "フルネーム",
+  "CardFormFullNameIsEmpty": "フルネームが入力されていません",
+  "CardFormFullNameIsIncorrect": "フルネームが正しくありません",
+  "CardFormPlaceholderName": "苗字 下の名前",
+  "CardFormCompanyName": "会社名",
+  "CardFormCompanyNameIsEmpty": "会社名が入力されていません",
+  "CardFormEmail": "メールアドレス",
+  "CardFormPlaceholderEmail": "name@domain.com",
+  "CardFormEmailIsEmpty": "メールが入力されていません",
+  "CardFormEmailIsIncorrect": "メールが正しくありません",
+
+  "CardsWhitepapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
+  "CardsWhitepapersHeadStressTest": "ONLYOFFICE Docs 7.2.2.ストレステストレポート",
+  "CardsWhitepapersTitleStressTest": "ONLYOFFICE Docs 7.2.2.ストレステストレポート",
+  "CardsWhitepapersDescriptionStressTest": "本資料は、ONLYOFFICE Docs 7.2.2にて実施したストレステストとその結果について記載したものです。主な目的は、ONLYOFFICE Docsへの1万リクエストに相当するサーバー負荷をテストすることでした。",
+
+  "CardsWhitepapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
+  "CardsWhitepapersHeadForDevelopers": "開発者向けのONLYOFFICE Docs：アーキテクチャ、統合、デプロイメント",
+  "CardsWhitepapersTitleForDevelopers": "開発者向けのONLYOFFICE Docs：アーキテクチャ、統合、デプロイメント",
+  "CardsWhitepapersDescriptionForDevelopers": "本稿では、オンラインオフィススイート「ONLYOFFICE Docs」の機能、統合、導入方法をご紹介します。",
+
+  "CardsWhitepapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
+  "CardsWhitepapersHeadLoadTestReport": "【ONLYOFFICE Docs 】負荷テストレポート",
+  "CardsWhitepapersTitleLoadTestReport": "【ONLYOFFICE Docs 】負荷テストレポート",
+  "CardsWhitepapersDescriptionLoadTestReport": "このドキュメントでは、ONLYOFFICE Docsで行った負荷テストとその結果をご紹介します。主な目的は、ONLYOFFICE Docsがサポートできる同時接続数を調べることでした。",
+
+  "CardsWhitepapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
+  "CardsWhitepapersHeadPrivateRooms": "ONLYOFFICE プライベート・ルーム：9つのセキュリティ原則",
+  "CardsWhitepapersTitlePrivateRooms": "ONLYOFFICE プライベート・ルーム：9つのセキュリティ原則",
+  "CardsWhitepapersDescriptionPrivateRooms": "このホワイトペーパーでは、ドキュメントを使用するすべてのステップでセキュリティを確保するためにONLYOFFICEプライベート・ルームで使用される原則について説明します。",
+
+  "CardsWhitepapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
+  "CardsWhitepapersHeadIntegrationExample": "ONLYOFFICE Docs 統合の例",
+  "CardsWhitepapersTitleIntegrationExample": "ONLYOFFICE Docs 統合の例",
+  "CardsWhitepapersDescriptionIntegrationExample": "このホワイトペーパーでは、オープンAPIによって提供されるONLYOFFICE統合機能について説明します。",
+
+  "CardsWhitepapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
+  "CardsWhitepapersHeadForGovernmentOffices": "政府機関向けの独立なコラボレーション環境",
+  "CardsWhitepapersTitleForGovernmentOffices": "政府機関向けの独立なコラボレーション環境",
+  "CardsWhitepapersDescriptionForGovernmentOffices": "この文章では、プライベートネットワークでIT環境を作成する際に公共部門が直面する課題を検討し、オープンで安全な技術に基づく効果的なソリューションを提案しました。",
+
+  "CardsWhitepapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
+  "CardsWhitepapersHeadEndToEndDocumentEncryption": "エンド ツー エンドのドキュメント暗号化",
+  "CardsWhitepapersTitleEndToEndDocumentEncryption": "エンド ツー エンドのドキュメント暗号化",
+  "CardsWhitepapersDescriptionEndToEndDocumentEncryption": "このホワイト ペーパーでは、ONLYOFFICE Workspaceでのエンド ツー エンドのドキュメント暗号化のコンポーネントと機構について説明します。",
+
+  "CardsWhitepapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
+  "CardsWhitepapersHeadDataEncryptionAtRest": "休眠データの暗号化 1.0",
+  "CardsWhitepapersTitleDataEncryptionAtRest": "休眠データの暗号化 1.0",
+  "CardsWhitepapersDescriptionDataEncryptionAtRest": "このホワイト ペーパーでは、ONLYOFFICE Workspaceの休眠データの暗号化のバージョン1.0のコンポーネントと機構について説明します。",
+
+
+  "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
+  "CardsDatasheetsTitleSecureCloudSpace": "チーム内外に安全なクラウドスペースを",
+  "CardsDatasheetsProductSecureCloudSpace": "ONLYOFFICE DocSpace",
+
+  "CardsDatasheetsPdfForBanking": "/images/templates/whitepapers/pdf/onlyoffice_for_banking.pdf",
+  "CardsDatasheetsTitleForBanking": "銀行業務における強力で安全なドキュメント処理",
+
+  "CardsDatasheetsPdfWorkspaceForHealthInstitutions": "/images/templates/whitepapers/pdf/ja/onlyoffice_workspace_for_health_institutions.pdf",
+  "CardsDatasheetsTitleWorkspaceForHealthInstitutions": "ONLYOFFICE Workspace for health institutions",
+
+  "CardsDatasheetsPdfDocsInYourCluster": "/images/templates/whitepapers/pdf/ja/onlyoffice_docs_in_your_cluster.pdf",
+  "CardsDatasheetsTitleDocsInYourCluster": "クラスタ内で強力なドキュメント・コラボレーションを実現",
+
+  "CardsDatasheetsPdfDocsDatasheetEducation": "/images/templates/whitepapers/pdf/ja/onlyoffice_docs_datasheet_education.pdf",
+  "CardsDatasheetsPdfDocsForOwncloud": "/images/templates/whitepapers/pdf/ja/onlyoffice_docs_for_owncloud.pdf",
+  "CardsDatasheetsPdfDocsForNextcloud": "/images/templates/whitepapers/pdf/ja/onlyoffice_docs_for_nextcloud.pdf",
+  "CardsDatasheetsPdfDocs": "/images/templates/whitepapers/pdf/ja/onlyoffice_docs.pdf",
+  "CardsDatasheetsPdfDocsForNonprofit": "/images/templates/whitepapers/pdf/ja/onlyoffice_datasheet_for_non-profits.pdf",
+  "CardsDatasheetsPdfDocsForPharmaceutical": "/images/templates/whitepapers/pdf/onlyoffice_datasheet__for_pharmaceutical_industry.pdf",
+  "CardsDatasheetsPdfDocsForMedical": "/images/templates/whitepapers/pdf/ja/docs_datasheet_medical_3.pdf",
+  "CardsDatasheetsPdfDocsForLawFirms": "/images/templates/whitepapers/pdf/ja/onlyoffice_datasheet_for_law_firms.pdf",
+  "CardsDatasheetsPdfWorkspacePrivateRooms": "/images/templates/whitepapers/pdf/onlyoffice_workspace_private_rooms.pdf",
+  "CardsDatasheetsPdfWorkspace": "/images/templates/whitepapers/pdf/ja/onlyoffice_workspace.pdf",
+
+  "CardsFormSuccess": "リクエストが正常に送信されました",
+  "CardsFormError": "申し訳ありません。エラーが発生しましたので、後でもう一度お試しください"
+}
