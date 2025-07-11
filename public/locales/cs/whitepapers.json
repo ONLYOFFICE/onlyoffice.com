@@ -1,0 +1,120 @@
+{
+  "WhitepapersPageTitle": "Bílé knihy a datové listy",
+  "WhitepapersMetaDescription": "Zjistěte více o technologiích pro spolupráci a řešení ONLYOFFICE",
+  "TechnicalContent": "Technický obsah",
+  "SearchWhitePaper": "Prohledat bílou knihu, datový list",
+  "WhitePapersAndDatasheets": "Bílé knihy a datové listy",
+  "GetDeeperInsights": "Získejte hlubší vhled do technologií pro spolupráci a řešení ONLYOFFICE z technických a průmyslových hledisek a dozvíte se užitečná fakta o našich produktech pro různé použití.",
+  "WhitePapers": "Bílé knihy",
+  "Datasheets": "Datové listy",
+  "ONLYOFFICEDocs": "ONLYOFFICE Docs",
+  "ONLYOFFICEWorkspace": "Pracovní prostor ONLYOFFICE Workspace",
+  "ONLYOFFICEPrivateRooms": "Soukromé místnosti ONLYOFFICE Private Rooms",
+  "ONLYOFFICELawFirms": "ONLYOFFICE pro právní kanceláře",
+  "ONLYOFFICEMedical": "ONLYOFFICE pro zdravotnictví",
+  "ONLYOFFICEPharmaceutical": "ONLYOFFICE pro farmaceutické společnosti",
+  "ONLYOFFICENon_Profit": "ONLYOFFICE pro neziskové organizace",
+  "ONLYOFFICENextcloud": "ONLYOFFICE pro Nextcloud",
+  "ONLYOFFICEOwnCloud": "ONLYOFFICE pro ownCloud",
+  "DocumentCollaboration": "Spolupráce na dokumentech ve vzdělávání",
+  "JoinOver": "Přidejte se k více než <0>15 000 000</0> uživatelů ONLYOFFICE po celém světě",
+  "UseInTheCloud": "Použití v cloudu",
+  "FillOutThisForm": "Vyplňte tento formulář",
+  "FillOutThisFormToRequestAQuote": "Vyplňte tento formulář a vyžádejte si nabídku",
+  "ByClickingDownload": "Kliknutím na Stáhnout potvrzujete porozumění a souhlas s naší <0>SLA</0> a <1>Prohlášením o ochraně osobních údajů</1>.",
+
+  "CardsFiltersAll": "Vše",
+  "CardsSortModules": "Moduly:",
+  "CardsSortBy": "Seřadit podle:",
+  "CardsSortNewestOldest": "Nejnovější - nejstarší",
+  "CardsSortOldestNewest": "Nejstarší - nejnovější",
+  "CardsButtonShowMore": "načíst další",
+
+  "CardsWhitepaper": "Bílé knihy",
+
+  "CardsMobFiltersHeading": "Filtry",
+  "CardsMobFiltersReset": "Resetovat",
+  "CardsMobFiltersApply": "Použít filtr",
+  "CardsMobFiltersModules": "Moduly",
+
+  "CardsButtonDownload": "Stáhnout",
+
+  "CardFormFullName": "Celé jméno",
+  "CardFormFullNameIsEmpty": "Pole pro celé jméno je prázdné",
+  "CardFormFullNameIsIncorrect": "Pole pro celé jméno nesprávný",
+  "CardFormPlaceholderName": "Jméno Příjmení",
+  "CardFormCompanyName": "Název společnosti",
+  "CardFormCompanyNameIsEmpty": "Pole pro název společnosti je prázdné",
+  "CardFormEmail": "E-mail",
+  "CardFormPlaceholderEmail": "name@domain.com",
+  "CardFormEmailIsEmpty": "Pole pro e-mail je prázdné",
+  "CardFormEmailIsIncorrect": "Nesprávný e-mail",
+
+  "CardsWhitepapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
+  "CardsWhitepapersHeadStressTest": "Zpráva o zátěžovém testu ONLYOFFICE Docs 7.2.2.",
+  "CardsWhitepapersTitleStressTest": "Zpráva o zátěžovém testu ONLYOFFICE Docs 7.2.2.",
+  "CardsWhitepapersDescriptionStressTest": "Tento dokument popisuje zátěžový test, který jsme provedli na ONLYOFFICE Docs 7.2.2, a jeho výsledky. Hlavním cílem bylo otestovat zátěž serveru rovnající se 10 000 požadavkům na ONLYOFFICE Docs.",
+
+  "CardsWhitepapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
+  "CardsWhitepapersHeadForDevelopers": "ONLYOFFICE Docs pro vývojáře: architektura, integrace a nasazení",
+  "CardsWhitepapersTitleForDevelopers": "ONLYOFFICE Docs pro vývojáře: architektura, integrace a nasazení",
+  "CardsWhitepapersDescriptionForDevelopers": "In this paper, we explore the functionality, integration, and deployment methods of the ONLYOFFICE Docs online office suite.",
+
+  "CardsWhitepapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
+  "CardsWhitepapersHeadLoadTestReport": "Zpráva o zátěžovém testu ONLYOFFICE Docs",
+  "CardsWhitepapersTitleLoadTestReport": "Zpráva o zátěžovém testu ONLYOFFICE Docs",
+  "CardsWhitepapersDescriptionLoadTestReport": "Tento dokument popisuje zátěžový test, který jsme provedli na ONLYOFFICE Docs, a jeho výsledky. Hlavním cílem bylo zjistit počet současných připojení, která dokáže ONLYOFFICE Docs podporovat.",
+
+  "CardsWhitepapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
+  "CardsWhitepapersHeadPrivateRooms": "Soukromé místnosti ONLYOFFICE: 9 bezpečnostních zásad",
+  "CardsWhitepapersTitlePrivateRooms": "Soukromé místnosti ONLYOFFICE: 9 bezpečnostních zásad",
+  "CardsWhitepapersDescriptionPrivateRooms": "V této bílé knize popisujeme zásady používané v ONLYOFFICE Private Rooms k zajištění bezpečnosti na každém kroku práce s dokumenty.",
+
+  "CardsWhitepapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
+  "CardsWhitepapersHeadIntegrationExample": "Příklad integrace ONLYOFFICE Docs",
+  "CardsWhitepapersTitleIntegrationExample": "Příklad integrace ONLYOFFICE Docs",
+  "CardsWhitepapersDescriptionIntegrationExample": "V této bílé knize se podíváme na možnosti integrace ONLYOFFICE, které poskytuje její otevřené rozhraní API.",
+
+  "CardsWhitepapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
+  "CardsWhitepapersHeadForGovernmentOffices": "Suverénní infrastruktura pro spolupráci pro vládní úřady",
+  "CardsWhitepapersTitleForGovernmentOffices": "Suverénní infrastruktura pro spolupráci pro vládní úřady",
+  "CardsWhitepapersDescriptionForGovernmentOffices": "Analyzujeme časté výzvy, kterým veřejný sektor čelí při budování prostředí IT v rámci své sítě, abychom podpořili procesy spolupráce a převzali efektivní model založený na otevřených, svrchovaných a bezpečných technologiích.",
+
+  "CardsWhitepapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
+  "CardsWhitepapersHeadEndToEndDocumentEncryption": "End-to-end šifrování dokumentů encryption",
+  "CardsWhitepapersTitleEndToEndDocumentEncryption": "End-to-end šifrování dokumentů encryption",
+  "CardsWhitepapersDescriptionEndToEndDocumentEncryption": "Tato bílá kniha popisuje komponenty a mechaniku šifrování dokumentů typu end-to-end v pracovním prostoru ONLYOFFICE Workspace.",
+
+  "CardsWhitepapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
+  "CardsWhitepapersHeadDataEncryptionAtRest": "Šifrování dat v klidu 1.0",
+  "CardsWhitepapersTitleDataEncryptionAtRest": "Šifrování dat v klidu 1.0",
+  "CardsWhitepapersDescriptionDataEncryptionAtRest": "Tato bílá kniha popisuje komponenty a mechaniku šifrování verze 1.0 v klidu v pracovním prostoru ONLYOFFICE Workspace.",
+
+
+  "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
+  "CardsDatasheetsTitleSecureCloudSpace": "Bezpečný cloudový prostor pro váš tým i další uživatele",
+  "CardsDatasheetsProductSecureCloudSpace": "ONLYOFFICE DocSpace",
+
+  "CardsDatasheetsPdfForBanking": "/images/templates/whitepapers/pdf/onlyoffice_for_banking.pdf",
+  "CardsDatasheetsTitleForBanking": "Výkonné a bezpečné zpracování dokumentů pro bankovnictví",
+
+  "CardsDatasheetsPdfWorkspaceForHealthInstitutions": "/images/templates/whitepapers/pdf/onlyoffice_workspace_for_health_institutions.pdf",
+  "CardsDatasheetsTitleWorkspaceForHealthInstitutions": "ONLYOFFICE Workspace for health institutions",
+
+  "CardsDatasheetsPdfDocsInYourCluster": "/images/templates/whitepapers/pdf/onlyoffice_docs_in_your_cluster.pdf",
+  "CardsDatasheetsTitleDocsInYourCluster": "Výkonná spolupráce na dokumentech ve vašem clusteru",
+
+  "CardsDatasheetsPdfDocsDatasheetEducation": "/images/templates/whitepapers/pdf/onlyoffice_docs_datasheet_education.pdf",
+  "CardsDatasheetsPdfDocsForOwncloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_owncloud.pdf",
+  "CardsDatasheetsPdfDocsForNextcloud": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_nextcloud.pdf",
+  "CardsDatasheetsPdfDocs": "/images/templates/whitepapers/pdf/onlyoffice_docs.pdf",
+  "CardsDatasheetsPdfDocsForNonprofit": "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_non-profits.pdf",
+  "CardsDatasheetsPdfDocsForPharmaceutical": "/images/templates/whitepapers/pdf/onlyoffice_datasheet__for_pharmaceutical_industry.pdf",
+  "CardsDatasheetsPdfDocsForMedical": "/images/templates/whitepapers/pdf/docs_datasheet_medical_3.pdf",
+  "CardsDatasheetsPdfDocsForLawFirms": "/images/templates/whitepapers/pdf/onlyoffice_datasheet_for_law_firms.pdf",
+  "CardsDatasheetsPdfWorkspacePrivateRooms": "/images/templates/whitepapers/pdf/onlyoffice_workspace_private_rooms.pdf",
+  "CardsDatasheetsPdfWorkspace": "/images/templates/whitepapers/pdf/onlyoffice_workspace.pdf",
+
+  "CardsFormSuccess": "Vaše žádost byla úspěšně odeslána",
+  "CardsFormError": "Je nám líto, ale došlo k chybě, zkuste to znovu později"
+}
