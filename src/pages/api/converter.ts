@@ -206,7 +206,7 @@ export default async function handler(
         .json({ status: "error", message: "No file uploaded" });
     }
 
-    const fileName = `converter-upload/${Date.now()}_${uploadedFile.originalFilename}`;
+    const fileName = `converter_upload/${Date.now()}_${uploadedFile.originalFilename}`;
     const fileType =
       uploadedFile?.originalFilename?.split(".").pop()?.toLowerCase() || "";
     const filePath = uploadedFile.filepath;
