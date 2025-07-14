@@ -14,8 +14,13 @@ const StyledTrainingCoursesInputSection = styled(Section)`
     top: 32px;
   }
 
+  @media ${device.tabletS} {
+    padding: 48px 0 0 0;
+    top: 8px;
+  }
+
   @media ${device.mobile} {
-    padding: 32px 0 0 0;
+    padding: 24px 0 0 0;
     top: 16px;
   }
 `;
@@ -32,7 +37,11 @@ const StyledTrainingCoursesInputWrapper = styled.div`
   }
 `;
 
-const StyledTrainingCoursesInputLeft = styled.div``;
+const StyledTrainingCoursesInputLeft = styled.div`
+  @media ${device.mobile} {
+    display: none;
+  }
+`;
 
 const StyledTrainingCoursesInputSubtitle = styled(Heading)`
   padding-right: 8px;
