@@ -11,10 +11,10 @@ import {
 import { IFeatureIconsItem } from "./FeatureIconsItem.types";
 import { ContentImage } from "../ContentImage";
 import { Heading } from "@src/components/ui/Heading";
-import { Trans } from "next-i18next";
+import { Trans, useTranslation } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
-import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 const FeatureIconsItem = ({
   id,
@@ -33,6 +33,7 @@ const FeatureIconsItem = ({
   quote
 }: IFeatureIconsItem) => {
   const { t } = useTranslation();
+  const { locale = "en" } = useRouter();
 
   return (
     <div>
@@ -51,7 +52,7 @@ const FeatureIconsItem = ({
         <>
           <StyledFeatureItemsWrapper>
             {connectorsItems.map(({ image, label }, index) => (
-              <StyledFeatureItem key={index}>
+              <StyledFeatureItem $locale={locale} key={index}>
                 <img
                   src={image.url}
                   style={{

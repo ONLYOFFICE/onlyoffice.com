@@ -66,7 +66,7 @@ const StyledFeatureItemsWrapper = styled.ul`
   } 
 `;
 
-const StyledFeatureItem = styled.li`
+const StyledFeatureItem = styled.li<{ $locale: string }>`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -82,7 +82,7 @@ const StyledFeatureItem = styled.li`
     text-align: left;
     font-size: 16px;
     line-height: 21px;
-    white-space: nowrap;
+    white-space: ${({ $locale }) => ($locale === "en" ? "nowrap" : "normal")};
     font-weight: 700;
 
     @media ${device.desktop} {
