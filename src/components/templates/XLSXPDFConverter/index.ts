@@ -1,0 +1,1 @@
+export { XLSXPDFConverterTemplate } from "./XLSXPDFConverter";
