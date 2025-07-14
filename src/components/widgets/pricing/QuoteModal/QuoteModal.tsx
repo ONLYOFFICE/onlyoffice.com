@@ -18,7 +18,7 @@ import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { Text } from "@src/components/ui/Text";
 import { IPhoneInputRef } from "@src/components/widgets/PhoneInput";
 import { PhoneInput } from "@src/components/widgets/PhoneInput";
-import { HCaptcha } from "@src/components/widgets/HCaptcha";
+import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 
 const QuoteModal = <T,>({
@@ -131,7 +131,7 @@ const QuoteModal = <T,>({
 
       const hCaptchaData = await hCaptchaResponse.json();
 
-      if (hCaptchaData.status === "errorhCaptchaInvalid") {
+      if (hCaptchaData.status === "errorHCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");
