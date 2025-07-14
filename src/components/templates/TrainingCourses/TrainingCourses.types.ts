@@ -1,7 +1,7 @@
 interface ITrainingCoursesInputProps {
   filterValue: string;
   onFilterChange: (value: string) => void;
-}
+};
 
 interface ICardsDataItem {
   id: number;
@@ -15,9 +15,16 @@ interface ICardsDataItem {
   price: string;
   description: string;
   new?: "new",
-}
+};
+
+interface IFaqDataItem {
+  id: number;
+  title: string;
+  description: string;
+};
 
 export type {
   ITrainingCoursesInputProps,
   ICardsDataItem,
+  IFaqDataItem,
 }
