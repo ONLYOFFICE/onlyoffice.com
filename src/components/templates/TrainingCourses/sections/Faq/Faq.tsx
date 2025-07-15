@@ -5,32 +5,27 @@ import { FaqCollapse } from "@src/components/modules/FaqCollapse";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
-import {
-  StyledFaqHeading,
-  StyledFaqList
-} from "./Faq.styled";
-
 const Faq = () => {
   const { t } = useTranslation("training-courses");
 
   return (
-    <Section>
+    <Section
+      desktopSpacing={["0", "0"]}
+      tabletSpacing={["0", "0"]}
+      tabletSmallSpacing={["0", "0"]}
+      mobileSpacing={["0", "0"]}
+    >
       <Container>
-        <StyledFaqHeading
-          level={2}
-          size={3}
-          label={t("FAQ")}
-        />
-        <StyledFaqList>
-          <FaqCollapse items={items.map(item => ({
+        <FaqCollapse
+          items={items.map(item => ({
             label: t(item.title),
             content: (
               <Trans t={t} i18nKey={item.description} components={[
                 <Link key={0} href="mailto:sales@onlyoffice.com" />
               ]} />
             ),
-          }))}/>
-        </StyledFaqList>
+          }))}
+        />
       </Container>
     </Section>
   );
