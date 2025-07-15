@@ -54,6 +54,10 @@ const StyledFeaturesContent = styled.div`
       padding-bottom: 0;
     }
 
+    .featureList::before {
+      top: 12px;
+    }
+
     @media ${device.tablet} {
       text-align: left;
 

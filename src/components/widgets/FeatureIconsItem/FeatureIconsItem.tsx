@@ -133,36 +133,33 @@ const FeatureIconsItem = ({
                 alignItems: "center",
               }}
             >
-              {buttons.map(({ label, href, isExternal, isPrimary, isLink, isServer }, index) =>
-                isLink ? (
-                  <Text as="div" key={index}>
-                    <Trans
-                      i18nKey={label}
-                      components={[
-                        <a
-                          key="0"
-                          href={href}
-                          style={{ color: "#ff6f3d", textDecoration: "underline" }}
-                        />,
-                        <a
-                          key="1"
-                          href={href}
-                          style={{ color: "#ff6f3d", textDecoration: "underline" }}
-                        />,
-                      ]}
-                    />
-                  </Text>
-                ) : (
-                  <StyledFeatureIconsButton
-                    key={index}
-                    href={href}
-                    target={isExternal ? "_blank" : undefined}
-                    rel={isExternal ? "noopener noreferrer" : undefined}
-                    $isPrimary={isPrimary}
-                    $isLink={isLink}
-                    $isServer={isServer}
-                  >
-                    {label}
+              {buttons.map(({ label, href, isExternal, isPrimary, isLink, isServer, links }, index) =>
+                isLink && Array.isArray(links) ? (
+                   <Text as="div" key={index}>
+                      <Trans
+                        i18nKey={label}
+                        components={links.map((link, i) => (
+                          <a
+                            key={i}
+                            href={link.href}
+                            target={link.isExternal ? "_blank" : undefined}
+                            rel={link.isExternal ? "noopener noreferrer" : undefined}
+                            style={{ color: "#ff6f3d", textDecoration: "underline" }}
+                          />
+                        ))}
+                      />
+                    </Text>
+                  ) : (
+                    <StyledFeatureIconsButton
+                      key={index}
+                      href={href}
+                      target={isExternal ? "_blank" : undefined}
+                      rel={isExternal ? "noopener noreferrer" : undefined}
+                      $isPrimary={isPrimary}
+                      $isLink={isLink}
+                      $isServer={isServer}
+                    >
+                      {label}
                   </StyledFeatureIconsButton>
                 )
               )}
