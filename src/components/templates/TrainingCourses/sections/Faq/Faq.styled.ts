@@ -31,10 +31,6 @@ const StyledFaqList = styled.ul`
 const StyledFaqItem = styled.li`
   padding: 19px 0 19px 40px;
   border-top: 1px solid #e5e5e5;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
-  overflow: hidden;
-  cursor: pointer;
 
   @media ${device.mobile} {
     padding: 16px 0 16px 40px;
@@ -45,10 +41,12 @@ const StyledFaqItem = styled.li`
   }
 `;
 
-const StyledFaqItemHeading = styled(Heading)<{
+const StyledFaqItemHeading = styled.h3<{
   $isOpen: boolean;
 }>`
   position: relative;
+  font-size: 18px;
+  cursor: pointer;
 
   @media ${device.mobile} {
     font-size: 14px;

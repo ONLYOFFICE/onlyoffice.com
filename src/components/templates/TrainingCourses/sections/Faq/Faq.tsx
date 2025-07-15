@@ -55,14 +55,13 @@ const Faq = () => {
             return (
               <StyledFaqItem
                 key={item.id}
-                onClick={() => toggleItem(item.id)}
               >
                 <StyledFaqItemHeading
                   $isOpen={isOpen}
-                  level={3}
-                  size={5}
-                  label={t(item.title)}
-                />
+                  onClick={() => toggleItem(item.id)}
+                >
+                  {t(item.title)}
+                </StyledFaqItemHeading>
                 <StyledFaqItemTextWrapper
                   ref={(el) => {
                     textContentRefs.current[item.id] = el
