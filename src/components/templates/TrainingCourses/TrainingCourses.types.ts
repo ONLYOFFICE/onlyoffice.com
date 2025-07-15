@@ -23,8 +23,19 @@ interface IFaqDataItem {
   description: string;
 };
 
+interface ITestimonialsItem {
+  id: number;
+  logo_url: string;
+  text: string;
+  author: string;
+  company_name: string;
+  company_link: string;
+  country: string;
+}
+
 export type {
   ITrainingCoursesInputProps,
   ICardsDataItem,
   IFaqDataItem,
+  ITestimonialsItem,
 }
