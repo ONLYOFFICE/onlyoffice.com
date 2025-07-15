@@ -155,6 +155,7 @@ const ConvertFile = ({
     } catch (err) {
       console.error("Error during conversion:", err);
     } finally {
+      currentUUIDRef.current = null;
       hcaptchaRef.current?.resetCaptcha();
       setCaptchaError(false);
       setCaptchaToken(null);
