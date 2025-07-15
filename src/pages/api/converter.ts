@@ -10,7 +10,7 @@ import {
 import formidable, { Files, Fields, File } from "formidable";
 import fs from "fs";
 import jwt from "jsonwebtoken";
-import crypto from "crypto";
+import crypto, { randomUUID } from "crypto";
 
 interface ICustomFields extends Fields {
   action?: string[];
@@ -206,7 +206,7 @@ export default async function handler(
         .json({ status: "error", message: "No file uploaded" });
     }
 
-    const fileName = `converter_upload/${Date.now()}_${uploadedFile.originalFilename}`;
+    const fileName = `converter-upload/${randomUUID()}_${uploadedFile.originalFilename}`;
     const fileType =
       uploadedFile?.originalFilename?.split(".").pop()?.toLowerCase() || "";
     const filePath = uploadedFile.filepath;
