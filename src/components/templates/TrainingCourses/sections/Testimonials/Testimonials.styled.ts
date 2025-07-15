@@ -9,6 +9,7 @@ import { ITestimonialsItem } from "../../TrainingCourses.types";
 
 const StyledTestimonialsContainer = styled(Container)`
   position: relative;
+  z-index: 0;
 
   .swiper-pagination {
     position: relative;
