@@ -91,6 +91,7 @@ const Hero = ({ theme, heading, subHeading, learnMore, ratingData }: IHero) => {
         isOpen={isOpenCancelConvertModal}
         setIsOpenCancelConvertModal={setIsOpenCancelConvertModal}
         setSelectedFile={setSelectedFile}
+        step={step}
         setStep={setStep}
         theme={theme}
         currentUUIDRef={currentUUIDRef}

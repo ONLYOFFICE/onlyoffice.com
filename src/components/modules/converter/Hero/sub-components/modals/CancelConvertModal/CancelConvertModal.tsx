@@ -13,6 +13,7 @@ const CancelConvertModal = ({
   isOpen,
   setIsOpenCancelConvertModal,
   setSelectedFile,
+  step,
   setStep,
   theme,
   currentUUIDRef,
@@ -20,7 +21,7 @@ const CancelConvertModal = ({
   const { t } = useTranslation("converter");
 
   const handleCancelConvert = async () => {
-    if (currentUUIDRef.current) {
+    if (step === "loading" && currentUUIDRef.current) {
       try {
         const formData = new FormData();
         formData.append("action", "cancel");
@@ -35,6 +36,7 @@ const CancelConvertModal = ({
       }
     }
 
+    currentUUIDRef.current = null;
     setSelectedFile(null);
     setStep("select");
     setIsOpenCancelConvertModal(false);
