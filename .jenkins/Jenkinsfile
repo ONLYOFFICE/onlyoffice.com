@@ -132,9 +132,6 @@ pipeline {
           sed -i "s^var_billing_key^$billing_key^" .env
           sed -i "s^var_billing_secret^$onlyoffice_site_test_billing_secret^" .env
 
-          sed -i "s^var_onlyoffice_document_server_token^$billing_key^" .env
-          sed -i "s^var_billing_secret^$onlyoffice_site_test_billing_secret^" .env
-
           sed -i "s^var_onlyoffice_document_server_token^$onlyoffice_site_test_document_server_token^" .env
           sed -i "s^var_next_public_onlyoffice_document_server_url^$next_public_onlyoffice_document_server_url^" .env
 
