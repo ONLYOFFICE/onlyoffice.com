@@ -21,6 +21,9 @@ def web_payment_dse_trial_url = ""
 def web_payment_dspd_trial_url = ""
 def web_payment_dc_trial_url = ""
 def sales_email = ""
+def next_public_onlyoffice_document_server_url = ""
+def aws_s3_bucket = ""
+def aws_s3_region = ""
 
 switch(BRANCH_NAME) {
   case "test_deploy":
@@ -45,6 +48,9 @@ switch(BRANCH_NAME) {
     web_payment_dse_trial_url="https://payments.teamlab.info/api/license/getdsetrial"
     web_payment_dspd_trial_url="https://payments.teamlab.info/api/license/getdspdtrial"
     web_payment_dc_trial_url="https://payments.teamlab.info/api/license/getdctrial"
+    next_public_onlyoffice_document_server_url="https://asc.docs.teamlab.info"
+    aws_s3_bucket="static-test-new.teamlab.info"
+    aws_s3_region="us-west-2"
     break
   case "production_deploy":
     aws_region="us-east-1"
@@ -94,6 +100,9 @@ pipeline {
         web_payment_dse_trial_url="${web_payment_dse_trial_url}"
         web_payment_dspd_trial_url="${web_payment_dspd_trial_url}"
         web_payment_dc_trial_url="${web_payment_dc_trial_url}"
+        next_public_onlyoffice_document_server_url="${next_public_onlyoffice_document_server_url}"
+        aws_s3_bucket = "${aws_s3_bucket}"
+        aws_s3_region = "${aws_s3_region}"
       }
       steps {
         withCredentials([usernamePassword(credentialsId: 'onlyoffice_site_test_mysql_credentials', 
@@ -102,10 +111,14 @@ pipeline {
                         usernamePassword(credentialsId: 'onlyoffice_site_test_email_credentials', 
                         passwordVariable: 'transporter_email_auth_password', 
                         usernameVariable: 'transporter_email_auth_user'),
+                        usernamePassword(credentialsId: 'cmsoforms-user', 
+                        passwordVariable: 'cmsoforms_password', 
+                        usernameVariable: 'cmsoforms_user'),
                         string(credentialsId: 'onlyoffice_site_test_hcaptcha_site_key', variable: 'onlyoffice_site_test_hcaptcha_site_key'),
                         string(credentialsId: 'onlyoffice_site_test_hcaptcha_secret_key', variable: 'onlyoffice_site_test_hcaptcha_secret_key'),
                         string(credentialsId: 'onlyoffice_site_test_billing_secret', variable: 'onlyoffice_site_test_billing_secret'),
-                        string(credentialsId: 'onlyoffice_site_test_pipedrive_api_token', variable: 'onlyoffice_site_test_pipedrive_api_token')]) {          
+                        string(credentialsId: 'onlyoffice_site_test_pipedrive_api_token', variable: 'onlyoffice_site_test_pipedrive_api_token'),
+                        string(credentialsId: 'onlyoffice_site_test_document_server_token', variable: 'onlyoffice_site_test_document_server_token')]) {          
         sh '''
           cp .jenkins/build.sh .jenkins/site_build.sh
 
@@ -118,6 +131,12 @@ pipeline {
           sed -i "s^var_billing_domain^$billing_domain^" .env
           sed -i "s^var_billing_key^$billing_key^" .env
           sed -i "s^var_billing_secret^$onlyoffice_site_test_billing_secret^" .env
+
+          sed -i "s^var_onlyoffice_document_server_token^$billing_key^" .env
+          sed -i "s^var_billing_secret^$onlyoffice_site_test_billing_secret^" .env
+
+          sed -i "s^var_onlyoffice_document_server_token^$onlyoffice_site_test_document_server_token^" .env
+          sed -i "s^var_next_public_onlyoffice_document_server_url^$next_public_onlyoffice_document_server_url^" .env
 
           sed -i "s^var_onlyoffice_site_mysql_host^$onlyoffice_site_mysql_host^" .env
           sed -i "s^var_onlyoffice_site_mysql_database^$onlyoffice_site_mysql_database^" .env
@@ -140,6 +159,11 @@ pipeline {
           sed -i "s^var_web_payment_dse_trial_url^$web_payment_dse_trial_url^" .env
           sed -i "s^var_web_payment_dspd_trial_url^$web_payment_dspd_trial_url^" .env
           sed -i "s^var_web_payment_dc_trial_url^$web_payment_dc_trial_url^" .env
+
+          sed -i "s^var_aws_s3_bucket^$aws_s3_bucket^" .env
+          sed -i "s^var_aws_s3_access_key^$cmsoforms_user^" .env
+          sed -i "s^var_aws_s3_secret_access_key^$cmsoforms_password^" .env
+          sed -i "s^var_aws_s3_region^$aws_s3_region^" .env
           
           if [ "${region}" = "info" ]; then
             cp .jenkins/robots.txt ./
