@@ -11,36 +11,33 @@ const StyledHeroSection = styled(Section)`
   background-repeat: no-repeat;
   background-position: calc(50% + 190px) 50%;
 
-  @media ${device.tablet} {
-    margin-top: -64px;
-  }
-
   @media ${device.tabletS} {
     margin-top: -48px;
-    background-position-x: center;
+    background-position: 50% 40%;
   }
 
   @media ${device.mobile} {
-    background-position: 55% 35%;
+    background-size: auto 211px;
   }
 
-  @media ${device.mobileS} {
-    background-position-y: 60%;
+  @media ${device.mobile} {
+    background-position: 47% 62%
   }
 `;
 
 const StyledHeroWrapper = styled.div`
   display: grid;
-  grid-template-columns: 458px auto;
+  grid-template-columns: 448px auto;
   align-items: center;
-
-  @media ${device.tablet} {
-    grid-template-columns: 1fr 1fr;
-  }
+  column-gap: 14px;
 
   @media ${device.tabletS} {
     grid-template-columns: 1fr;
     gap: 56px;
+  }
+
+  @media ${device.mobile} {
+    gap: 80px;
   }
 `;
 
@@ -58,26 +55,35 @@ const StyledHeroContent = styled.div`
 `;
 
 const StyledHeroHeading = styled(Heading)`
-  font-size: 48px;
-  line-height: 64px;
-  letter-spacing: -0.03em;
+  line-height: 1.33em;
 
   @media ${device.mobile} {
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
   }
 `;
 
-const StyledHeroText = styled(Text)``;
+const StyledHeroText = styled(Text)`
+  font-size: 18px;
+  line-height: 1.6em;
+  
+  @media ${device.mobile} {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+`;
 
 const StyledHeroImage = styled.div`
-  padding-bottom: 64.55%;
+  padding-bottom: 400px;
   background-image: url("/images/templates/healthcare/hero/hero-image.svg");
   background-repeat: no-repeat;
   background-size: contain;
 
-  @media ${device.tabletS} {
+  
+  @media ${device.desktop} {
+    padding-bottom: 32.5vw;
+  }
+
+  @media ${device.tablet} {
     max-width: 674px;
     width: 100%;
     margin: 0 auto;
