@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { SearchIcon } from "@src/components/icons";
@@ -13,7 +14,6 @@ import {
   StyledTrainingCoursesInputBtnWrapper,
   StyledTrainingCoursesInputClearBtn,
 } from "./TrainingCoursesInput.styled";
-import { memo } from "react";
 
 const TrainingCoursesInputComponent = ({ filterValue, onFilterChange }: ITrainingCoursesInputProps) => {
   const { t } = useTranslation("training-courses");
@@ -22,7 +22,7 @@ const TrainingCoursesInputComponent = ({ filterValue, onFilterChange }: ITrainin
     <StyledTrainingCoursesInputSection
         background="#F5F5F5"
       >
-      <Container maxWidth="1038px">
+      <Container>
         <StyledTrainingCoursesInputWrapper>
           <StyledTrainingCoursesInputLeft>
             <StyledTrainingCoursesInputSubtitle

@@ -1,7 +1,8 @@
-import { useCallback, useState } from "react";
-import { useTranslation } from "next-i18next";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
 import {
@@ -9,12 +10,14 @@ import {
   StyledFaqItem,
   StyledFaqItemHeading,
   StyledFaqItemText,
+  StyledFaqItemTextWrapper,
   StyledFaqList
 } from "./Faq.styled";
 
 const Faq = () => {
   const { t } = useTranslation("training-courses");
   const [openItems, setOpenItems] = useState<Record<number, boolean>>({});
+  const textContentRefs = useRef<Record<number, HTMLParagraphElement | null>>({});
 
   const toggleItem = useCallback((id: number) => {
     setOpenItems((prev) => ({
@@ -23,12 +26,26 @@ const Faq = () => {
     }))
   }, [])
 
+  useEffect(() => {
+    Object.entries(openItems).forEach(([id, isOpen]) => {
+      const ref = textContentRefs.current[+id];
+      if (ref) {
+        if (isOpen) {
+          const scrollHeight = ref.scrollHeight;
+          ref.style.maxHeight = scrollHeight + "px";
+        } else {
+          ref.style.maxHeight = "0px";
+        }
+      }
+    });
+  }, [openItems]);
+
   return (
     <Section>
       <Container>
         <StyledFaqHeading
           level={2}
-          size={2}
+          size={3}
           label={t("FAQ")}
         />
         <StyledFaqList>
@@ -39,7 +56,6 @@ const Faq = () => {
               <StyledFaqItem
                 key={item.id}
                 onClick={() => toggleItem(item.id)}
-                $isOpen={isOpen}
               >
                 <StyledFaqItemHeading
                   $isOpen={isOpen}
@@ -47,10 +63,24 @@ const Faq = () => {
                   size={5}
                   label={t(item.title)}
                 />
-                <StyledFaqItemText
-                  size={3}
-                  label={t(item.description)}
-                />
+                <StyledFaqItemTextWrapper
+                  ref={(el) => {
+                    textContentRefs.current[item.id] = el
+                  }}
+                >
+                  <StyledFaqItemText>
+                    <Trans t={t} i18nKey={item.description} components={[
+                      <Link
+                        key={0}
+                        href="mailto:sales@onlyoffice.com"
+                        textUnderline={true}
+                        hover="underline-none"
+                        color="main"
+                      />
+                    ]}
+                  />
+                  </StyledFaqItemText>
+                </StyledFaqItemTextWrapper>
               </StyledFaqItem>
             )
           })}

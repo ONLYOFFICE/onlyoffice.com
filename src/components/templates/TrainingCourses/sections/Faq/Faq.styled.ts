@@ -1,23 +1,44 @@
 import styled from "styled-components";
+import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
-import { Text } from "@src/components/ui/Text";
 
 const StyledFaqHeading = styled(Heading)`
   margin-bottom: 56px;
+
+  @media ${device.tabletS} {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  @media ${device.mobile} {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
 `;
 
-const StyledFaqList = styled.ul``;
+const StyledFaqList = styled.ul`
+  padding-bottom: 112px;
 
-const StyledFaqItem = styled.li<{
-  $isOpen: boolean;
-}>`
-  max-height: ${({ $isOpen }) => ($isOpen ? "200px" : "63px")};
+  @media ${device.tablet} {
+    padding-bottom: 80px;
+  }
+
+  @media ${device.mobile} {
+    padding-bottom: 48px;
+  }
+`;
+
+const StyledFaqItem = styled.li`
   padding: 19px 0 19px 40px;
   border-top: 1px solid #e5e5e5;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
   overflow: hidden;
   cursor: pointer;
+
+  @media ${device.mobile} {
+    padding: 16px 0 16px 40px;
+  }
 
   &:last-child {
     border-bottom: 1px solid #e5e5e5;
@@ -28,6 +49,10 @@ const StyledFaqItemHeading = styled(Heading)<{
   $isOpen: boolean;
 }>`
   position: relative;
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
 
   &::before {
     content: "";
@@ -44,8 +69,21 @@ const StyledFaqItemHeading = styled(Heading)<{
   }
 `;
 
-const StyledFaqItemText = styled(Text)`
+const StyledFaqItemTextWrapper = styled.div`
+  overflow: hidden;
+  max-height: 0;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+`;
+
+const StyledFaqItemText = styled.p`
+  font-size: 14px;
   padding-top: 16px;
+
+  @media ${device.mobile} {
+    font-size: 13px;
+    padding-top: 8px;
+  }
 `;
 
 export {
@@ -53,5 +91,6 @@ export {
   StyledFaqList,
   StyledFaqItem,
   StyledFaqItemHeading,
+  StyledFaqItemTextWrapper,
   StyledFaqItemText
 }

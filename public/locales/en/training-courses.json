@@ -30,7 +30,7 @@
   "QuestionGetMaterials": "Will I get any materials after the training course is over?",
   "AnswerGetMaterials": "You will get a presentation with a short description of the course, its record as well as a document with tasks for your individual training.",
   "QuestionFindMaterials": "Where can I find answers to other questions?",
-  "AnswerFindMaterials": "If you have any questions about the training courses, please contact us at {0}sales@onlyoffice.com{1}.",
+  "AnswerFindMaterials": "If you have any questions about the training courses, please contact us at <0>sales@onlyoffice.com</0>.",
   "Reset": "{0}Reset{1} Filters",
   "Module": "Module",
   "ONLYOFFICEDocs": "ONLYOFFICE Docs",
