@@ -64,6 +64,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "docspace-prices",
         "PricingQuoteModal",
         "PhoneInput",
+        "FaqCollapse",
       ])),
       locale,
       productsData,

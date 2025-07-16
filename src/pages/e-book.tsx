@@ -47,6 +47,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "e-book",
         "GetStarted",
         "Editors",
+        "FaqCollapse",
       ])),
       locale,
     },

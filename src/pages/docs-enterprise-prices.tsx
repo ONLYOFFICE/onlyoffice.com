@@ -79,6 +79,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "PricingReseller",
         "PricingQuoteModal",
         "PhoneInput",
+        "FaqCollapse",
       ])),
       locale,
       productsData,

@@ -47,6 +47,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "Connectors",
         "PartnershipProgram",
         "DownloadButton",
+        "WatchVideo",
       ])),
       locale,
     },

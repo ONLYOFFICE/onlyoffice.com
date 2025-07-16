@@ -23,6 +23,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
       variant = "primary",
       size = "medium",
       borderRadius = "9px",
+      backgroundColor,
       onClick,
     },
     ref,
@@ -52,6 +53,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
         $variant={variant}
         $size={size}
         $borderRadius={borderRadius}
+        $backgroundColor={backgroundColor}
       >
         {children || label}
       </StyledButton>
