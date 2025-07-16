@@ -76,6 +76,15 @@ const StyledFeaturesContent = styled.div`
     }
   }
 
+  .featureList::before {
+    top: 12px;
+  }
+
+  .buttons > *:first-child {
+    width: 100%;
+    text-align: left;
+  }
+
   @media ${device.tablet} {
     grid-template-columns: 1fr 1fr;
   }
@@ -103,7 +112,6 @@ const StyledFeaturesContent = styled.div`
 
     .buttons {
       flex-direction: column !important;
-      align-items: flex-start !important;
     }
   }
 `;
