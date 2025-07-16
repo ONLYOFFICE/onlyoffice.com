@@ -208,7 +208,7 @@ const StyledCardsFilterMob = styled.div<{
   overflow: auto;
 `;
 
-const StyledCardsFilterMobHeader = styled.header`
+const StyledCardsFilterMobHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -236,7 +236,7 @@ const StyledCardsFilterMobCloseBtn = styled.div`
   cursor: pointer;
 `;
 
-const StyledCardsFilterMobMain = styled.main`
+const StyledCardsFilterMobMain = styled.div`
   flex: 1 0 auto;
 `;
 
@@ -302,7 +302,7 @@ const StyledCardsSortMobSelect = styled(StyledCardsMobDateSelect)``;
 
 const StyledCardsSortMobOption = styled(StyledCardsMobDateOption)``;
 
-const StyledCardsFilterMobFooter = styled.footer`
+const StyledCardsFilterMobFooter = styled.div`
   padding: 15px 30px;
 `;
 

@@ -14,7 +14,7 @@ const StyledCardWhitepapers = styled.div`
   }
 `;
 
-const StyledCardWhitepapersHeader = styled.header`
+const StyledCardWhitepapersHeader = styled.div`
   min-height: 178px;
   background-color: #0F4071;
   border-radius: 5px;
@@ -25,7 +25,7 @@ const StyledCardWhitepapersHeading = styled(Heading)`
   margin-bottom: 16px;
 `;
 
-const StyledCardWhitepapersMain = styled.main`
+const StyledCardWhitepapersMain = styled.div`
   min-height: 300px;
   background-color: #fff;
   padding: 32px;
@@ -44,7 +44,7 @@ const StyledCardWhitepapersDescription = styled(Text)`
 
 `;
 
-const StyledCardWhitepapersFooter = styled.footer`
+const StyledCardWhitepapersFooter = styled.div`
   background-color: #fff;
   padding: 0 32px 32px;
 `;
