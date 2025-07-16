@@ -59,7 +59,7 @@ const StyledTestimonialsSlideWrapper = styled.div`
 const StyledTestimonialsSlideQuotes = styled.div`
   width: 196px;
   height: 160px;
-  background-image: url("/images/templates/trainingCourses/testimonials/quotes.svg");
+  background-image: url("/images/templates/training-courses/testimonials/quotes.svg");
   background-repeat: no-repeat;
   background-position: center top;
   position: absolute;

@@ -7,7 +7,7 @@ const StyledHeroWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("/images/templates/trainingCourses/hero/cloud.svg");
+  background-image: url("/images/templates/training-courses/hero/cloud.svg");
   background-size: 917px 294px;
   background-repeat: no-repeat;
   background-position: 200px 10px;

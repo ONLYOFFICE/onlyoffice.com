@@ -47,6 +47,7 @@ const StyledCardsRefineList = styled.ul<{
   position: absolute;
   top: 50px;
   left: 0;
+  z-index: 1;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
@@ -127,6 +128,12 @@ const StyledCardsSortDateText = styled(Text)`
   padding-right: 8px;
 `;
 
+const StyledCardsList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+`;
+
 const StyledCardsFilterMobIcon = styled.div`
   width: 24px;
   height: 24px;
@@ -177,7 +184,7 @@ const StyledCardsFilterMob = styled.div<{
   overflow: auto;
 `;
 
-const StyledCardsFilterMobHeader = styled.header`
+const StyledCardsFilterMobHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -222,7 +229,7 @@ const StyledCardsFilterMobCloseBtn = styled.div`
   cursor: pointer;
 `;
 
-const StyledCardsFilterMobMain = styled.main`
+const StyledCardsFilterMobMain = styled.div`
   flex: 1 0 auto;
 `;
 
@@ -288,7 +295,7 @@ const StyledCardsSortMobSelect = styled(StyledCardsMobDateSelect)``;
 
 const StyledCardsSortMobOption = styled(StyledCardsMobDateOption)``;
 
-const StyledCardsFilterMobFooter = styled.footer`
+const StyledCardsFilterMobFooter = styled.div`
   padding: 15px 30px;
 `;
 
@@ -308,6 +315,7 @@ export {
   StyledCardsSortModuleText,
   StyledCardsSortDate,
   StyledCardsSortDateText,
+  StyledCardsList,
   StyledCardsFilterMobIcon,
   StyledCardsRefineCounter,
   StyledCardsRefineMobHeading,

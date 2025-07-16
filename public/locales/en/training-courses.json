@@ -57,5 +57,10 @@
   "PleaseWait": "Please wait...",
   "SubmitRequest": "Submit request",
   "RequestSuccessfully": "Your request has been sent successfully",
-  "RequestError": "We are sorry, but an error occurred, try again later"
+  "RequestError": "We are sorry, but an error occurred, try again later",
+
+  "NewSign": "New",
+  "Sessions": "Sessions: ",
+  "Hours": "Hours: ",
+  "Price": "Price: "
 }

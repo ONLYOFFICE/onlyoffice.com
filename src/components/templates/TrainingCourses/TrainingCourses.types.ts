@@ -3,18 +3,21 @@ interface ITrainingCoursesInputProps {
   onFilterChange: (value: string) => void;
 };
 
-interface ICardsDataItem {
-  id: number;
+interface ICardsDataItemProp {
   title: string;
-  date: string;
-  img_class: string;
+  icon_url: string;
   type: string;
   module: string | string[];
   sessions: string;
   hours: string;
   price: string;
   description: string;
-  new?: "new",
+  new?: boolean,
+};
+
+interface ICardsDataItem extends ICardsDataItemProp {
+  id: number;
+  date: string;
 };
 
 interface IFaqDataItem {
@@ -39,6 +42,7 @@ type TSortDateKey = "CardsSortNewestOldest" | "CardsSortOldestNewest" | string;
 
 export type {
   ITrainingCoursesInputProps,
+  ICardsDataItemProp,
   ICardsDataItem,
   IFaqDataItem,
   ITestimonialsItem,

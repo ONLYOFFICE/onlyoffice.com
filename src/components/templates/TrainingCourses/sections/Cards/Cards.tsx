@@ -2,6 +2,7 @@ import { useCallback, useMemo, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { Card } from "./sub-components/Card";
 import { useFilterCounter } from "../../utils/useFilterCounter";
 import { items } from "./data/items";
 import { ILocale } from "@src/types/locale";
@@ -37,7 +38,8 @@ import {
   StyledCardsSortMobSelect,
   StyledCardsSortMobOption,
   StyledCardsFilterMobFooter,
-  StyledCardsFilterMobApplyBtn
+  StyledCardsFilterMobApplyBtn,
+  StyledCardsList
 } from "./Cards.styled"
 
 const CARDS_CONTENT_LIST: TFilterKey[] = [
@@ -225,7 +227,22 @@ const Cards = ({ locale }: ILocale) => {
             </StyledCardsFilterMobIcon>
           </StyledCardsFiltersWrapper>
 
-          
+          <StyledCardsList>
+            {items.map((item) => (
+              <Card
+                key={item.id}
+                icon_url={item.icon_url}
+                title={item.title}
+                type={item.type}
+                module={item.module}
+                sessions={item.sessions}
+                hours={item.hours}
+                price={item.price}
+                description={item.description}
+                new={item.new}
+              />
+            ))}
+          </StyledCardsList>
 
         </Container>
       </Section>
