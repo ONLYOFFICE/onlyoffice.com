@@ -1,0 +1,1 @@
+export { PDFTXTConverterTemplate } from "./PDFTXTConverter";

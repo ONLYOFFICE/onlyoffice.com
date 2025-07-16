@@ -1,0 +1,19 @@
+{
+  "PageTitle": "Bot ONLYOFFICE para Telegram",
+  "PageDescription": "Abra, crie, converta, edite e colabore em documentos do Office no Telegram",
+
+  "OnlineOfficeForTelegram": "Bot ONLYOFFICE para Telegram",
+  "OpenCreateConvertEdit": "Abra, crie, converta, edite e colabore em documentos do Office no Telegram",
+  "StartNow": "Comece agora. É grátis",
+
+  "DocumentsTab1Label": "Crie novos documentos DOCX, XLSX e PPTX; abra documentos locais",
+  "DocumentsTab2Label": "Edite e colabore em seus documentos do Office com outros usuários do Telegram",
+  "DocumentsTab3Label": "Leia e edite PDFs, exporte/importe de/para PDF",
+  "DocumentsTab4Label": "Converta documentos on-line facilmente. Mais de 50 formatos são suportados",
+  "DocumentsTab5Label": "Suporte para bate-papo em grupo disponível!",
+
+  "WhyOO": "Por que ONLYOFFICE ?",
+  "FeaturesAIHelper": "Um conjunto robusto de ferramentas de edição, formatação e estilo. Segurança aprimorada.",
+  "FeaturesCoEditing": "Coedição em <0>tempo real</0> e <0>bloqueio de parágrafo</0>, revisão, histórico de versões, comparação de documentos, comentários e menções.",
+  "FeaturesFormats": "Suporte para mais de <0>50 formatos de arquivo</0>. Totalmente compatível com os formatos do MS Office: DOCX, XLSX, PPTX."
+}
