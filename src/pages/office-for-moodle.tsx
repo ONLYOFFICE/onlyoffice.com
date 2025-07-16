@@ -44,6 +44,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "office-for-moodle",
         "Connectors",
+        "WatchVideo",
       ])),
       locale,
     },
