@@ -1,0 +1,63 @@
+{
+  "AccountCanceledPageTitle": "Osobní účet ONLYOFFICE smazán | ONLYOFFICE",
+  "AccountCanceledPageDescription": "Proč jste se rozhodli smazat svůj osobní účet ONLYOFFICE Personal",
+
+  "InstallCanceledPageTitle": "ONLYOFFICE on-premises odinstalován | ONLYOFFICE",
+  "InstallCanceledPageDescription": "Proč jste se rozhodli odinstalovat ONLYOFFICE ze svého serveru",
+
+  "RegistrationCanceledPageTitle": "Registrace cloudové kanceláře zrušena | ONLYOFFICE",
+  "RegistrationCanceledPageDescription": "Proč jste se rozhodli zrušit registraci cloudové kanceláře ONLYOFFICE",
+
+  "DesktopUninstalledPageTitle": "ONLYOFFICE Desktop Editors odinstalovány | ONLYOFFICE",
+  "DesktopUninstalledPageDescription": "Proč jste se rozhodli odinstalovat ONLYOFFICE Desktop Editors",
+
+  "CanceledHeroTitle": "Je nám líto, že odcházíte!",
+
+  "WhyDidYouDecideToUninstallOnlyoffice": "Proč jste se rozhodli odinstalovat ONLYOFFICE?",
+  "SelectAllThatApply": "Vyberte všechny vhodné možnosti",
+  "ExperiencedTechnicalProblems": "Technické problémy",
+  "NeedMoreStorageSpace": "Potřebuji větší úložiště",
+  "DidntFindNecessaryFeatures": "Nenabízí potřebné funkce",
+  "PrivacyConcernsLegalViolation": "Obavy týkající se ochrany osobních údajů / Porušení právních předpisů",
+  "IRarelyWorkInBrowser": "Zřídka pracuji v prohlížeči",
+  "Other": "Jiný důvod",
+
+  "SwitchedToTheCloudVersion": "Přechod na cloudovou verzi",
+  "IRarelyUseOnlyoffice": "ONLYOFFICE používám jen zřídka",
+
+  "IWillUseAnotherDesktopSoftware": "Budu používat jiný desktopový software",
+  "IRarelyUseOnlyofficeDesktopEditors": "ONLYOFFICE používám jen zřídka",
+
+  "SwitchedToOnPremises": "Přechod na on-premises řešení",
+
+  "WhatShouldWeImproveInOnlyofficePersonal": "Co bychom měli vylepšit v ONLYOFFICE Personal?",
+  "WhatShouldWeImproveInOnlyoffice": "Co bychom měli v ONLYOFFICE vylepšit?",
+  "WhatShouldWeImproveInOnlyofficeDesktopEditors": "Co bychom měli vylepšit v ONLYOFFICE Desktop Editors?",
+  "YourMessageHere": "Vaše zpráva zde",
+  "Email": "Email",
+  "EmailIsEmpty": "Pole pro e-mail je prázdné",
+  "EmailIsIncorrect": "Nesprávný e-mail",
+  "ByClickingSendFeedback": "Kliknutím na \"Odeslat zpětnou vazbu\" potvrzujete porozumění a souhlas s naší <0>smlouvou SLA</0> a <1>Prohlášením o ochraně osobních údajů</1>.",
+  "SendFeedback": "ODESLAT ZPĚTNOU VAZBU",
+
+  "ThanksForYourMessage": "Děkujeme za vaši zprávu.",
+  "IfYouDecideToGetBack": "Pokud se rozhodnete vrátit, použijte tento kuponový kód pro <0>10% slevu</0> na cloudovou službu ONLYOFFICE nebo jej jednoduše sdílejte se svými přáteli/známými!",
+  "WhyTakeBusinessToOnlyofficeCloudToday": "Proč převést své podnikání na o ONLYOFFICE cloud",
+  "FullyGDPRCompliantCloudOffice": "Cloudová kancelář plně kompatibilní s GDPR",
+  "ReducedMaintenanceCosts": "Snížené náklady na údržbu",
+  "SecureAndReliableHosting": "Bezpečný a spolehlivý hosting",
+  "AutomaticUpdates": "Automatické aktualizace a profesionální technická podpora",
+  "ScalableCostEffectiveSolution": "Škálovatelné nákladově efektivní řešení",
+  "EntirelyFree": "100% slevy pro nevládní organizace a vzdělávání",
+  "TheCoupon": "*Kupón platí 12 měsíců.",
+  
+  "DontLeave": "Neodcházejte s prázdnýma rukama – jako dárek dostanete zdarma osobní cloud s editory pro domácí použití a <0>10% slevu</0> na naše online editory pro podnikání!",
+  "WhyChooseFreePersonalOnlyofficeCloudToday": "Proč si zvolit osobní ONLYOFFICE cloud",
+  "FreeAndSecureCloudStorage": "Bezplatné a bezpečné cloudové úložiště",
+  "HighestCompatibility": "Nejvyšší kompatibilita s formáty MS Office",
+  "DocumentEditing": "Úpravy dokumentů a spolupráce v prohlížeči",
+  "ConnectionOfPopular": "Připojení oblíbených úložišť třetích stran: Dropbox, OneDrive a další",
+  "PleaseNote": "* Upozorňujeme, že kód kupónu platí pouze 12 měsíců.",
+
+  "HopeToSeeYouAgain": "Děkujeme vám za vaši zprávu. Doufáme, že se s vámi opět setkáme!"
+}

@@ -1,0 +1,63 @@
+{
+  "AccountCanceledPageTitle": "ONLYOFFICE Personal アカウントが削除されました | ONLYOFFICE",
+  "AccountCanceledPageDescription": "ONLYOFFICE Personal アカウントを削除することにした理由は何ですか",
+
+  "InstallCanceledPageTitle": "ONLYOFFICE オンプレミスがアンインストールされました | ONLYOFFICE",
+  "InstallCanceledPageDescription": "サーバーから ONLYOFFICE をアンインストールすることにした理由は何ですか",
+
+  "RegistrationCanceledPageTitle": "クラウドオフィスの登録がキャンセルされました | ONLYOFFICE",
+  "RegistrationCanceledPageDescription": "ONLYOFFICE クラウド登録をキャンセルすることにした理由は何ですか",
+
+  "DesktopUninstalledPageTitle": "ONLYOFFICE デスクトップ・エディター がアンインストールされました | ONLYOFFICE",
+  "DesktopUninstalledPageDescription": "ONLYOFFICE デスクトップ・エディター をアンインストールすることにした理由は何ですか",
+
+  "CanceledHeroTitle": "ご利用いただきありがとうございました。",
+
+  "WhyDidYouDecideToUninstallOnlyoffice": "ONLYOFFICEをアンインストールすることにしたのはなぜでしょうか？",
+  "SelectAllThatApply": "技術的な問題が発生しました",
+  "ExperiencedTechnicalProblems": "技術的な問題が発生しました",
+  "NeedMoreStorageSpace": "より多くのストレージスペースが必要です",
+  "DidntFindNecessaryFeatures": "必要な機能を見つけませんでした",
+  "PrivacyConcernsLegalViolation": "プライバシーの問題・法的違反",
+  "IRarelyWorkInBrowser": "めったにブラウザで作業しません",
+  "Other": "その他",
+
+  "SwitchedToTheCloudVersion": "クラウド版に切り替えました",
+  "IRarelyUseOnlyoffice": "ONLYOFFICEをめったに使用しません",
+
+  "IWillUseAnotherDesktopSoftware": "別のデスクトップソフトウェアを使用するつもりです",
+  "IRarelyUseOnlyofficeDesktopEditors": "ONLYOFFICEデスクトップエディターをめったに使用しません",
+
+  "SwitchedToOnPremises": "オンプレミスに切り替えました",
+
+  "WhatShouldWeImproveInOnlyofficePersonal": "ONLYOFFICE Personalでどのような点を改善すべきと思われますか?",
+  "WhatShouldWeImproveInOnlyoffice": "ONLYOFFICEでどのような点を改善すべきと思われますか?",
+  "WhatShouldWeImproveInOnlyofficeDesktopEditors": "ONLYOFFICEデスクトップエディターでどのような点を改善すべきと思われますか?",
+  "YourMessageHere": "ここにメッセージをご入力ください",
+  "Email": "メールアドレス",
+  "EmailIsEmpty": "メールが入力されていません",
+  "EmailIsIncorrect": "メールが正しくありません",
+  "ByClickingSendFeedback": "[フィードバックを送信]をクリックすると、<0>当社のサービス水準合意</0>および<1>個人情報保護方針</1>を理解し、同意したことになります。",
+  "SendFeedback": "フィードバックを送信",
+
+  "ThanksForYourMessage": "メッセージありがとうございます。",
+  "IfYouDecideToGetBack": "ご復元にする場合は、このクーポンコードを使用してONLYOFFICEクラウドサービスの10％割引になります。また、クーポンコードを友達とご共有ください！※",
+  "WhyTakeBusinessToOnlyofficeCloudToday": "今日、ビジネスをONLYOFFICEクラウドに移行する理由",
+  "FullyGDPRCompliantCloudOffice": "EU一般データ保護規則 (GDPR)に準拠したクラウドオフィス",
+  "ReducedMaintenanceCosts": "保守コストの削減",
+  "SecureAndReliableHosting": "安全で信頼性の高いホスティング",
+  "AutomaticUpdates": "自動更新と専門的な技術サポート",
+  "ScalableCostEffectiveSolution": "スケーラブルで費用効果の高いソリューション",
+  "EntirelyFree": "NGO (非政府組織)と教育組織の100％割引",
+  "TheCoupon": "※クーポンコードは12ヶ月間有効です。",
+
+  "DontLeave": "家庭用のエディターを備えた無料のパーソナルクラウドと、ビジネス用のオンラインエディターを10％オフでご利用ください！※",
+  "WhyChooseFreePersonalOnlyofficeCloudToday": "今日、無料のパーソナルONLYOFFICEクラウドを選択する理由",
+  "FreeAndSecureCloudStorage": "無料で安全なクラウドストレージ",
+  "HighestCompatibility": "MS Officeフォーマットとの最高の互換性",
+  "DocumentEditing": "ブラウザでのドキュメントの編集とコラボレーション",
+  "ConnectionOfPopular": "人気のあるサードパーティ・ストレージの接続：Dropbox、OneDriveなど",
+  "PleaseNote": "※クーポンコードは12ヶ月間のみ有効ですのでご注意ください。",
+
+  "HopeToSeeYouAgain": "メッセージありがとうございます。またすぐにお会いしましょう！"
+}
