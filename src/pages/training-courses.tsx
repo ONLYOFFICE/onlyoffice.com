@@ -29,7 +29,7 @@ const TrainingCoursesPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <TrainingCoursesTemplate />
+        <TrainingCoursesTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

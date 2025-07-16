@@ -33,9 +33,16 @@ interface ITestimonialsItem {
   country: string;
 }
 
+type TDropdownType = "filter" | "module" | "date" | null;
+type TFilterKey  = "CardsFiltersAll" | "WhitePapers" | "Datasheets" | string;
+type TSortDateKey = "CardsSortNewestOldest" | "CardsSortOldestNewest" | string;
+
 export type {
   ITrainingCoursesInputProps,
   ICardsDataItem,
   IFaqDataItem,
   ITestimonialsItem,
+  TDropdownType,
+  TFilterKey,
+  TSortDateKey,
 }
