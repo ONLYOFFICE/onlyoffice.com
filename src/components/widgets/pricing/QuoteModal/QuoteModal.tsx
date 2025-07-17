@@ -181,7 +181,7 @@ const QuoteModal = <T,>({
       withCloseBtn
       positionCloseBtn="inside"
     >
-      <StyledQuoteModal>
+      <StyledQuoteModal data-testid="pricing-modal-form">
         <StyledQuoteModalWrapper>
           <Heading level={4} textAlign="center" label={heading} />
 
@@ -324,6 +324,7 @@ const QuoteModal = <T,>({
 
           <LoaderButton
             onClick={onSubmit}
+            data-testid="pricing-modal-get-a-quote-button"
             status={formStatus}
             label={buttonLabel}
             disabled={!isFormValid}
