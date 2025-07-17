@@ -54,7 +54,6 @@ const CARDS_SORT_DATE_LIST: TSortDateKey[] = [
 ];
 
 const Cards = ({ locale }: ILocale) => {
-  console.log(locale);
   const { t } = useTranslation("training-courses");
 
   const [choosedFilter, setChoosedFilter] = useState<TFilterKey>("All");
@@ -231,6 +230,7 @@ const Cards = ({ locale }: ILocale) => {
             {items.map((item) => (
               <Card
                 key={item.id}
+                locale={locale}
                 icon_url={item.icon_url}
                 title={item.title}
                 type={item.type}

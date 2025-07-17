@@ -20,6 +20,26 @@ interface ICardsDataItem extends ICardsDataItemProp {
   date: string;
 };
 
+interface ICardFormProp {
+  openModal: boolean;
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
+  product?: string;
+}
+
+interface IFormData {
+  fullName: string;
+  companyName: string;
+  email: string;
+  hCaptcha: string | null;
+}
+
+interface ICheckStatus {
+  fullName: "default" | "success" | "error";
+  companyName: "default" | "success" | "error";
+  email: "default" | "success" | "error";
+  hCaptcha: "default" | "success" | "error";
+}
+
 interface IFaqDataItem {
   id: number;
   title: string;
@@ -44,6 +64,9 @@ export type {
   ITrainingCoursesInputProps,
   ICardsDataItemProp,
   ICardsDataItem,
+  ICardFormProp,
+  IFormData,
+  ICheckStatus,
   IFaqDataItem,
   ITestimonialsItem,
   TDropdownType,

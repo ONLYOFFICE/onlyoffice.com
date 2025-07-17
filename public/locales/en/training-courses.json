@@ -36,12 +36,12 @@
   "ONLYOFFICEDocs": "ONLYOFFICE Docs",
   "ApplyFilter": "Apply filter",
   "FillOutThisForm": "Fill out this form to request a quote for the training courses",
-  "FullName": "Full name*",
+  "FullName": "Full name",
   "FullNamePlaceholder": "First name Last name",
   "FullNameEmpty": "Full name is empty",
-  "CompanyName": "Company name*",
+  "CompanyName": "Company name",
   "CompanyNameEmpty": "Company name is empty",
-  "Email": "Email*",
+  "Email": "Email",
   "EmailPlaceholder": "name@domain.com",
   "PreferredLanguage": "Preferred language*",
   "English": "English",
@@ -62,5 +62,7 @@
   "NewSign": "New",
   "Sessions": "Sessions: ",
   "Hours": "Hours: ",
-  "Price": "Price: "
+  "Price": "Price: ",
+
+  "ReadMore": "read more"
 }

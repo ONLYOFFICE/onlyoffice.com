@@ -12,7 +12,7 @@ const items: ICardsDataItem[] = [
     hours: "2",
     price: "On demand",
     new: true,
-    description: "Would like to digitally boost the learning process? Take this comprehensive course and learn how to use ONLYOFFICE Docs to create lesson plans and learning materials, including presentations and interactive forms, collaborate in real time with students and educators, establish a grading system, etc. Find out how to manage access rights to the educational contents and keep sensitive data secure."
+    description: "Would like to digitally boost the learning process? Take this comprehensive course and learn how to use ONLYOFFICE Docs to create lesson plans and learning materials, including presentations and interactive forms, collaborate in real <0>time with students and educators, establish a grading system, etc. Find out how to manage access rights to the educational contents and keep sensitive data secure.</0>"
   },
   {
     id: 20,
@@ -38,7 +38,7 @@ const items: ICardsDataItem[] = [
     hours: "1,5",
     price: "On demand",
     new: true,
-    description: "Discover how to work with office files within ONLYOFFICE DocSpace, a room-based environment for effective collaboration. Learn how to create, edit, and co-auhtor documents, spreadsheets, presentations, and forms in real time or using a paragraph-locking co-editing mode and other collaborative features."
+    description: "Discover how to work with office files within ONLYOFFICE DocSpace, a room-based environment for effective collaboration. Learn how to create, edit, and co-auhtor documents, spreadsheets, presentations, and forms in real time or using <0>a paragraph-locking co-editing mode and other collaborative features.</0>"
   },
   {
     id: 18,
@@ -151,7 +151,7 @@ const items: ICardsDataItem[] = [
     sessions: "7",
     hours: "9",
     price: "On demand",
-    description: "VIP package allows you to get a complete set of training courses to master all ONLYOFFICE modules and tools: working with documents, projects, CRM, mail and calendar, using social communication features, managing users and guests, administrating the portal."
+    description: "VIP package allows you to get a complete set of training courses to master all ONLYOFFICE modules and tools: working with documents, projects, CRM, mail and calendar, using social communication features, managing users and guests, <0>administrating the portal.</0>"
   },
   {
     id: 9,
@@ -175,7 +175,7 @@ const items: ICardsDataItem[] = [
     sessions: "2",
     hours: "2",
     price: "On demand",
-    description: "Learn how to use ONLYOFFICE Projects to enhance your team’s productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features. Find out how to add and manage users, guests and administrators, chat with your teammates, use social communication tools like blogs, forums, news, polls, wiki, etc."
+    description: "Learn how to use ONLYOFFICE Projects to enhance your team’s productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features. Find out how to add and manage users, guests and administrators, chat with <0>your teammates, use social communication tools like blogs, forums, news, polls, wiki, etc.</0>"
   },
   {
     id: 7,
@@ -187,7 +187,7 @@ const items: ICardsDataItem[] = [
     sessions: "2",
     hours: "2,5",
     price: "On demand",
-    description: "Discover ONLYOFFICE CRM, Mail and Calendar to manage business processes, track sales and simplify your communication with customers. Learn how to organize a client database, create a web-to-lead form, build reports, manage correspondence and create corporate mailboxes, schedule meetings and send invitations."
+    description: "Discover ONLYOFFICE CRM, Mail and Calendar to manage business processes, track sales and simplify your communication with customers. Learn how to organize a client database, create a web-to-lead form, build reports, manage correspondence <0>and create corporate mailboxes, schedule meetings and send invitations.</0>"
   },
   {
     id: 6,
@@ -223,7 +223,7 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1,5",
     price: "On demand",
-    description: "Learn how to manage your correspondence in ONLYOFFICE Mail, create corporate mailboxes, structure Inbox, add email signatures. Discover ONLYOFFICE Calendar and learn how to create timetables, schedule group meetings, add to-dos and sync your calendar with third-party applications."
+    description: "Learn how to manage your correspondence in ONLYOFFICE Mail, create corporate mailboxes, structure Inbox, add email signatures. Discover ONLYOFFICE Calendar and learn how to create timetables, schedule group meetings, add to-dos and <0>sync your calendar with third-party applications.</0>"
   },
   {
     id: 3,

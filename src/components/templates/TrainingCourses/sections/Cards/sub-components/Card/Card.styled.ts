@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { Button } from "@src/components/ui/Button";
+import { Badge } from "@src/components/ui/Badge";
 
 const StyledCard = styled.div`
-  display: flex;
-  flex-direction: column;
   border: 1px solid #E5E5E5;
   border-radius: 5px;
   box-shadow: 0px 7px 15px rgba(85, 85, 85, 0.1);
@@ -26,7 +26,7 @@ const StyledCardTop = styled.div`
   position: relative;
 `;
 
-const StyledCardNew = styled(Text)`
+const StyledCardNew = styled(Badge)`
   position: absolute;
   top: 28px;
   left: 32px;
@@ -46,10 +46,16 @@ const StyledCardIcon = styled.div<{
   background-position: center;
 `;
 
-const StyledCardDescription = styled.div`
-  flex-grow: 1;
+const StyledCardContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   padding: 24px 32px 32px;
+`;
+
+const StyledCardDescription = styled.div`
+  min-height: 350px;
+  flex-grow: 1;
 `;
 
 const StyledCardTitle = styled(Heading)`
@@ -70,18 +76,37 @@ const StyledCardText = styled(Text)`
   margin-top: 16px;
 `;
 
-const StyledCardBottom = styled.div``;
+const StyledCardReadMore = styled.span`
+  color: #FF6F3D;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
+const StyledCardBottom = styled.div`
+  margin-top: 16px;
+`;
+
+const StyledCardButton = styled(Button)`
+  width: 100%;
+`;
 
 export {
   StyledCard,
   StyledCardTop,
   StyledCardNew,
   StyledCardIcon,
+  StyledCardContentWrapper,
   StyledCardDescription,
   StyledCardTitle,
   StyledCardSessions,
   StyledCardHours,
   StyledCardPrice,
   StyledCardText,
+  StyledCardReadMore,
   StyledCardBottom,
+  StyledCardButton,
 };
