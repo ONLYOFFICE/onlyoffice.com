@@ -1,0 +1,31 @@
+{
+  "PageTitle": "适用于 Telegram 的 ONLYOFFICE 机器人",
+  "PageDescription": "在 Telegram 中打开、创建、转换、编辑和协作处理办公文档",
+
+  "OnlineOfficeForTelegram": "适用于 Telegram 的 ONLYOFFICE 机器人",
+  "OpenCreateConvertEdit": "在 Telegram 中打开、创建、转换、编辑和协作处理办公文档",
+  "StartNow": "免费开始使用",
+  "HeroImgUrl": "/images/templates/office-for-telegram/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-telegram/hero/zh/hero@2x.png",
+
+  "DocumentsTab1Label": "新建 DOCX、XLSX 和 PPTX 文档；打开本地文档",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-telegram/documents/zh/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-telegram/documents/zh/screen1@2x.png",
+  "DocumentsTab2Label": "与其他 Telegram 用户共同编辑和协作处理办公文档",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-telegram/documents/zh/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-telegram/documents/zh/screen2@2x.png",
+  "DocumentsTab3Label": "阅读和编辑 PDF，导出/导入 PDF",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-telegram/documents/zh/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-telegram/documents/zh/screen3@2x.png",
+  "DocumentsTab4Label": "在线转换文档，支持 50 多种文件格式",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-telegram/documents/zh/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-telegram/documents/zh/screen4@2x.png",
+  "DocumentsTab5Label": "支持群组协作！",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-telegram/documents/zh/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-telegram/documents/zh/screen5@2x.png",
+
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "FeaturesAIHelper": "一套强大的编辑、格式和样式工具。高度安全性。",
+  "FeaturesCoEditing": "<0>实时</0>和<0>段落锁定</0>共同编辑模式、审阅、版本历史、文档比较、批注 & 提及他人。",
+  "FeaturesFormats": "支持超过 <0>50 种文件格式</0>，高度兼容微软 Office 格式：DOCX、XLSX、PPTX。"
+}

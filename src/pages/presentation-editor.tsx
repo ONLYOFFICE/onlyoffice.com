@@ -46,6 +46,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "presentation-editor",
         "GetStarted",
         "Editors",
+        "FaqCollapse",
       ])),
       locale,
     },

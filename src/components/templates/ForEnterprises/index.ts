@@ -1,0 +1,1 @@
+export { ForEnterprisesTemplate } from "./ForEnterprises";

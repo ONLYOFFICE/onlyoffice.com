@@ -39,6 +39,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "office-for-chamilo",
         "Connectors",
+        "WatchVideo",
       ])),
       locale,
     },
