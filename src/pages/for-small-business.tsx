@@ -35,7 +35,11 @@ const ForSmallBusinessPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "for-small-business"])),
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "for-small-business",
+        "FaqCollapse",
+      ])),
       locale,
     },
   };
