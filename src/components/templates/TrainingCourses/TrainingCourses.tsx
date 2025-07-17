@@ -13,7 +13,7 @@ const TrainingCoursesTemplate = ({ locale }: ILocale) => {
     <>
       <TrainingCoursesInput filterValue={filterValue} onFilterChange={setFilterValue} />
       <Hero />
-      <Cards locale={locale} />
+      <Cards locale={locale} filterValue={filterValue} />
       <Testimonials />
       <Faq />
     </>

@@ -3,10 +3,18 @@ import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Card } from "./sub-components/Card";
-import { useFilterCounter } from "../../utils/useFilterCounter";
 import { items } from "./data/items";
+import { useRefineCardsItems } from "../../utils/useRefineCardsItems";
+import { useFilterCounter } from "../../utils/useFilterCounter";
+
 import { ILocale } from "@src/types/locale";
-import { TDropdownType, TFilterKey, TSortDateKey } from "../../TrainingCourses.types";
+import {
+  TDropdownType,
+  TFilterKey,
+  TSortDateKey,
+  ICardsDataItem,
+  ICardsProp
+} from "../../TrainingCourses.types";
 
 import {
   StyledCardsFiltersWrapper,
@@ -39,7 +47,8 @@ import {
   StyledCardsSortMobOption,
   StyledCardsFilterMobFooter,
   StyledCardsFilterMobApplyBtn,
-  StyledCardsList
+  StyledCardsList,
+  StyledCardsHeading
 } from "./Cards.styled"
 
 const CARDS_CONTENT_LIST: TFilterKey[] = [
@@ -53,7 +62,10 @@ const CARDS_SORT_DATE_LIST: TSortDateKey[] = [
   "OldestNewest"
 ];
 
-const Cards = ({ locale }: ILocale) => {
+const MODULES_LIST: ICardsDataItem[] = items.filter(item => item.type === "1");
+const PURPOSE_LIST: ICardsDataItem[] = items.filter(item => item.type === "2");
+
+const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
   const { t } = useTranslation("training-courses");
 
   const [choosedFilter, setChoosedFilter] = useState<TFilterKey>("All");
@@ -72,8 +84,16 @@ const Cards = ({ locale }: ILocale) => {
   const [filterMobDisplay, setFilterMobDisplay] = useState(false);
   const { filterCounter } = useFilterCounter(choosedFilter, choosedModule, choosedDate);
 
+  const { refineModulesItems, refinePurposeItems } = useRefineCardsItems(
+    MODULES_LIST,
+    PURPOSE_LIST,
+    filterValue,
+    choosedModule,
+    choosedDate
+  );
+
   const sortModules = useMemo(() => {
-    const sorted = [...items].sort((a, b) =>
+    const sorted = [...MODULES_LIST].sort((a, b) =>
       a.title.localeCompare(b.title)
     );
     return [{ title: "All" as TFilterKey }, ...sorted];
@@ -83,17 +103,17 @@ const Cards = ({ locale }: ILocale) => {
     setActiveDropdown(prev => prev === dropdown ? null : dropdown);
   }, []);
 
-  const handleModuleSetDefault = useCallback(() => {
-    if (choosedFilter !== "Modules") {
+  const handleModuleSetDefault = useCallback((label: TFilterKey) => {
+    if (label !== "Modules") {
       setChoosedModule("All");
       setTempModule("All");
     }
-  }, [choosedFilter]);
+  }, []);
 
   const handleChooseFilter = useCallback((label: TFilterKey) => {
     setChoosedFilter(label);
     setTempFilter(label);
-    handleModuleSetDefault();
+    handleModuleSetDefault(label);
   }, [handleModuleSetDefault]);
 
   const openMobileFilters = () => {
@@ -226,23 +246,61 @@ const Cards = ({ locale }: ILocale) => {
             </StyledCardsFilterMobIcon>
           </StyledCardsFiltersWrapper>
 
-          <StyledCardsList>
-            {items.map((item) => (
-              <Card
-                key={item.id}
-                locale={locale}
-                icon_url={item.icon_url}
-                title={item.title}
-                type={item.type}
-                module={item.module}
-                sessions={item.sessions}
-                hours={item.hours}
-                price={item.price}
-                description={item.description}
-                new={item.new}
+          {refineModulesItems.length > 0 && (choosedFilter === "Modules" || choosedFilter === "All") && (
+            <>
+              <StyledCardsHeading
+                level={2}
+                size={4}
+                textAlign="center"
+                label={t("Modules")}
               />
-            ))}
-          </StyledCardsList>
+              <StyledCardsList>
+                {refineModulesItems.map((moduleCard) => (
+                  <Card
+                    key={moduleCard.id}
+                    locale={locale}
+                    icon_url={moduleCard.icon_url}
+                    title={moduleCard.title}
+                    type={moduleCard.type}
+                    module={moduleCard.module}
+                    sessions={moduleCard.sessions}
+                    hours={moduleCard.hours}
+                    price={moduleCard.price}
+                    description={moduleCard.description}
+                    new={moduleCard.new}
+                  />
+                ))}
+              </StyledCardsList>
+            </>
+          )}
+
+          {refinePurposeItems.length > 0 && (choosedFilter === "Purpose" || choosedFilter === "All") && (
+            <>
+              <StyledCardsHeading
+                level={2}
+                size={4}
+                textAlign="center"
+                label={t("Purpose")}
+              />
+              <StyledCardsList>
+                {refinePurposeItems.map((purposeCard) => (
+                  <Card
+                    key={purposeCard.id}
+                    locale={locale}
+                    icon_url={purposeCard.icon_url}
+                    title={purposeCard.title}
+                    type={purposeCard.type}
+                    module={purposeCard.module}
+                    sessions={purposeCard.sessions}
+                    hours={purposeCard.hours}
+                    price={purposeCard.price}
+                    description={purposeCard.description}
+                    new={purposeCard.new}
+                  />
+                ))}
+              </StyledCardsList>
+            </>
+          )}
 
         </Container>
       </Section>

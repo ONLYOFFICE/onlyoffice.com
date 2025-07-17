@@ -3,6 +3,10 @@ interface ITrainingCoursesInputProps {
   onFilterChange: (value: string) => void;
 };
 
+interface ICardsProp {
+  filterValue: ITrainingCoursesInputProps["filterValue"];
+};
+
 interface ICardsDataItemProp {
   title: string;
   icon_url: string;
@@ -62,6 +66,7 @@ type TSortDateKey = "CardsSortNewestOldest" | "CardsSortOldestNewest" | string;
 
 export type {
   ITrainingCoursesInputProps,
+  ICardsProp,
   ICardsDataItemProp,
   ICardsDataItem,
   ICardFormProp,

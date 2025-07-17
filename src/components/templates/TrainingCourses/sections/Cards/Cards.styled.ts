@@ -84,7 +84,7 @@ const StyledCardsRefineItems = styled.li<{
 const StyledCardsSortSelect = styled.div`
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 40px;
 
   @media ${device.mobile} {
     display: none;
@@ -132,6 +132,10 @@ const StyledCardsList = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+`;
+
+const StyledCardsHeading = styled(Heading)`
+  margin: 56px 0 48px;
 `;
 
 const StyledCardsFilterMobIcon = styled.div`
@@ -316,6 +320,7 @@ export {
   StyledCardsSortDate,
   StyledCardsSortDateText,
   StyledCardsList,
+  StyledCardsHeading,
   StyledCardsFilterMobIcon,
   StyledCardsRefineCounter,
   StyledCardsRefineMobHeading,
