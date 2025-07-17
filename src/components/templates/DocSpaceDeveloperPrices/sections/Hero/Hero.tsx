@@ -448,6 +448,7 @@ const Hero = ({ locale }: ILocale) => {
 
             <Button
               onClick={() => setIsModalOpen(true)}
+              data-testid="get-a-quote-button"
               fullWidth
               label={t("GetAQuote")}
             />
