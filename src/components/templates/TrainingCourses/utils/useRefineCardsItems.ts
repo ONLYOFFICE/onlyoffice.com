@@ -20,7 +20,12 @@ const useRefineCardsItems = (
       if (choosedModule === "All") {
         return true;
       }
-      return item.title.toLowerCase().includes(choosedModule.toLowerCase());
+      const lowerCased =
+        Array.isArray(item.module) ?
+        item.module.map((str) => str.toLowerCase()) :
+        item.module.toLowerCase();
+
+      return lowerCased.includes(choosedModule.toLowerCase());
     })
 
     const filteredSortedModules = filteredChoosedModule.sort((a, b) => {

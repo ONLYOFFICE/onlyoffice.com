@@ -3,7 +3,7 @@ import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { Trans, useTranslation } from "next-i18next";
 import { Input } from "@src/components/ui/Input";
 import { Text } from "@src/components/ui/Text";
-import { HCaptcha } from "@src/components/widgets/HCaptcha";
+import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Link } from "@src/components/ui/Link";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";

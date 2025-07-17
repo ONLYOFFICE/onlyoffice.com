@@ -93,10 +93,8 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
   );
 
   const sortModules = useMemo(() => {
-    const sorted = [...MODULES_LIST].sort((a, b) =>
-      a.title.localeCompare(b.title)
-    );
-    return [{ title: "All" as TFilterKey }, ...sorted];
+    const uniqueModule = [...new Set(MODULES_LIST.flatMap(item => item.module))];
+    return ["All", ...uniqueModule];
   }, []);
 
   const handleDropdownClick = useCallback((dropdown: TDropdownType) => {
@@ -187,17 +185,19 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
                     label={t(choosedModule)}
                     level={5}
                     size={6}
+                    textTransform="capitalize"
                   />
                   <StyledCardsRefineList $isOpen={activeDropdown === "module"}>
-                    {sortModules.map(item => (
+                    {sortModules.map((item) => (
                       <StyledCardsRefineItems
-                        key={item.title}
-                        onClick={() => setChoosedModule(item.title)}
-                        $isActive={choosedModule === item.title}
+                        key={item}
+                        onClick={() => setChoosedModule(item)}
+                        $isActive={choosedModule === item}
                       >
                         <StyledCardsRefineText
-                          $isActive={choosedModule === item.title}
-                          label={t(item.title)}
+                          textTransform="capitalize"
+                          $isActive={choosedModule === item}
+                          label={t(item)}
                         />
                       </StyledCardsRefineItems>
                     ))}
@@ -356,11 +356,11 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
               <StyledCardsSortMobSelect>
                 {sortModules.map(item => (
                   <StyledCardsSortMobOption
-                    key={item.title}
-                    onClick={() => setTempModule(item.title)}
-                    $isActive={tempModule === item.title}
+                    key={item}
+                    onClick={() => setTempModule(item)}
+                    $isActive={tempModule === item}
                   >
-                    {t(item.title)}
+                    {t(item)}
                   </StyledCardsSortMobOption>
                 ))}
               </StyledCardsSortMobSelect>
