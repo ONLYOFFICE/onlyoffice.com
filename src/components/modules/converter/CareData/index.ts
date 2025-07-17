@@ -1,0 +1,1 @@
+export { CareData } from "./CareData";

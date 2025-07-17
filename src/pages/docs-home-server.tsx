@@ -63,6 +63,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "docs-home-server",
         "PricingReseller",
+        "FaqCollapse",
       ])),
       locale,
       productsData,
