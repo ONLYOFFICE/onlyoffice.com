@@ -1,0 +1,46 @@
+{
+  "PageTitle": "Online kancelarija za Confluence | ONLYOFFICE",
+  "PageDescription": "Radite na svim vrstama kancelarijskih dokumenata unutar Confluence-a koristeći ONLYOFFICE Docs",
+
+  "OnlineOfficeForConfluence": "Online kancelarija za Confluence",
+  "WorkOnAllKindsOfOfficeDocuments": "Radite na svim vrstama kancelarijskih dokumenata unutar Confluence-a koristeći ONLYOFFICE Docs",
+  "GetStarted": "POČNITE",
+  "RequestFreeDemo": "Request free demo",
+  "HeroImgUrl": "/images/templates/office-for-confluence/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-confluence/hero/hero@2x.png",
+
+  "EditAndCoAuthorOfficeDocuments": "Uredite i zajedno kreirajte dokumente unutar Confluence interfejsa",
+  "DocumentsTab1Label": "Radite sa otpremljenim kancelarijskim datotekama na listi priloga",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-confluence/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "Kreirajte i uređujte tekstualne dokumente, tabele i prezentacije",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-confluence/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "Kreirajte, označite i popunite PDF obrasce",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-confluence/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "Sarađujte na dokumentima sa svojim kolegama u realnom vremenu",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-confluence/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Dizajniran za besprekornu integraciju sa Confluence-om",
+  "MarketplaceConnectorDescription": "Preuzmite aplikaciju ONLYOFFICE za Confluence sada sa Atlassian Marketplace-a.",
+
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "FeaturesFormats": "Podrška za više od <0>50 formata datoteka</0>, potpuno kompatibilan sa MS Office formatima: DOCX, XLSX, PPTX.",
+  "FeaturesAIHelper": "Robustan skup alata za uređivanje, formatiranje i stilizovanje. Integrisani <0>AI pomoćnik</0>.",
+  "FeatureCoEditing": "Zaključavanje u realnom vremenu i zaključavanje paragrafa <0>ko-uređivanje</0>, pregled, istorija verzija, poređenje dokumenata, komentari i ćaskanje. Audio i video pozivi.",
+  "FeaturesEnhancedSecurity": "<0>Poboljšana bezbednost</0>. Fleksibilna prava pristupa i JWT. Praćenje aktivnosti i izveštavanje o reviziji. Enkripcija u mirovanju i u tranzitu. Vodeni žig i zaštita lozinkom. Otvoreni izvorni kod.",
+  "FeaturesEasyConfiguration": "<0>Jednostavna konfiguracija</0>. Besprekorna integracija sa konektorom spremnim za upotrebu sa Atlassian Marketplace-a. Dostupno za Confluence Server, Data Center i Cloud.",
+  "FeaturesFreeTrial": "Skalabilne verzije preduzeća. <0>Besplatna probna verzija od 30 dana</0>. Self-hosted rešenje za potpunu kontrolu nad vašim podacima. Docs Cloud verzija za Confluence Cloud.",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Instalirajte <0>ONLYOFFICE Docs</0> na sopstveni server ili se registrujte za <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Preuzmite aplikaciju za integraciju sa <0>Atlassian Marketplace</0>. Izaberite odgovarajuću opciju prebacivanjem između hosting kartica (Server / Data Center / Cloud).",
+  "HowToStartStep3": "Konfigurišite aplikaciju za integraciju.",
+
+  "HowToConnect": "Kako povezati ONLYOFFICE Docs sa Confluence",
+  "ReadDetailedInstructions": "Pročitajte detaljna uputstva u <0>Centru za pomoć</0>.",
+
+  "NeedAnAppToConnect": "Potrebna vam je aplikacija za povezivanje ONLYOFFICE Docs sa vašom omiljenom veb uslugom? Ili ste je razvili?"
+}

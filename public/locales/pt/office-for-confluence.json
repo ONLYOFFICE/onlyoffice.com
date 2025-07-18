@@ -1,0 +1,46 @@
+{
+  "PageTitle": "Escritório online para Confluence | ONLYOFFICE",
+  "PageDescription": "Trabalhe em todos os tipos de documentos de escritório no Confluence usando o ONLYOFFICE Docs",
+
+  "OnlineOfficeForConfluence": "Escritório online para Confluence",
+  "WorkOnAllKindsOfOfficeDocuments": "Trabalhe em todos os tipos de documentos de escritório no Confluence usando o ONLYOFFICE Docs",
+  "GetStarted": "COMEÇAR",
+  "RequestFreeDemo": "Request free demo",
+  "HeroImgUrl": "/images/templates/office-for-confluence/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-confluence/hero/hero@2x.png",
+
+  "EditAndCoAuthorOfficeDocuments": "Edite e crie documentos de escritório em conjunto na interface do Confluence",
+  "DocumentsTab1Label": "Trabalhe com arquivos de escritório carregados na lista de Anexos",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-confluence/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "Crie e edite documentos de texto, planilhas e apresentações",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-confluence/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "Crie, anote e preencha formulários PDF",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-confluence/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "Colabore em documentos com seus colegas em tempo real",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-confluence/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Projetado para integração perfeita com o Confluence",
+  "MarketplaceConnectorDescription": "Obtenha o aplicativo ONLYOFFICE para Confluence agora no Atlassian Marketplace.",
+
+  "WhyOO": "Por que ONLYOFFICE?",
+  "FeaturesFormats": "Suporte para mais de <0>50 formatos de arquivo</0>, totalmente compatível com formatos do MS Office: DOCX, XLSX, PPTX.",
+  "FeaturesAIHelper": "Um conjunto robusto de ferramentas de edição, formatação e estilo. <0>Assistente de IA</0> integrado.",
+  "FeatureCoEditing": "<0>Coedição</0> em tempo real e com bloqueio de parágrafos, revisão, histórico de versões, comparação de documentos, comentários e chat. Chamadas de áudio e vídeo.",
+  "FeaturesEnhancedSecurity": "<0>Segurança aprimorada.</0> Direitos de acesso flexíveis e JWT. Rastreamento de atividades e relatórios de auditoria. Criptografia em repouso e em trânsito. Marca d'água e proteção por senha. Código aberto.",
+  "FeaturesEasyConfiguration": "<0>Configuração fácil.</0> Integração perfeita com conector pronto para uso do Atlassian Marketplace. Disponível para Confluence Server, Data Center e Cloud.",
+  "FeaturesFreeTrial": "Versões Enterprise escaláveis. <0>Teste gratuito de 30 dias.</0> Solução auto-hospedada para controle total sobre seus dados. Versão Docs Cloud para Confluence Cloud.",
+
+  "HowToStart": "Como começar",
+  "HowToStartStep1": "Implante o <0>ONLYOFFICE Docs</0> em seu próprio servidor ou inscreva-se no <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenha o aplicativo de integração no <0>Atlassian Marketplace</0>. Selecione a opção correspondente alternando as abas de hospedagem (Servidor / Data Center / Cloud).",
+  "HowToStartStep3": "Configure o aplicativo de integração.",
+
+  "HowToConnect": "Como conectar o ONLYOFFICE Docs ao Confluence",
+  "ReadDetailedInstructions": "Leia instruções detalhadas no <0>Centro de Ajuda</0>.",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço web favorito? Ou você desenvolveu um?"
+}

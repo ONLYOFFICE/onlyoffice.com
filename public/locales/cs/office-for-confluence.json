@@ -1,0 +1,46 @@
+{
+  "PageTitle": "Online kancelář pro Confluence | ONLYOFFICE",
+  "PageDescription": "Pracujte se všemi druhy kancelářských dokumentů v Confluence pomocí ONLYOFFICE Docs",
+
+  "OnlineOfficeForConfluence": "Online kancelář pro Confluence",
+  "WorkOnAllKindsOfOfficeDocuments": "Pracujte se všemi druhy kancelářských dokumentů v Confluence pomocí ONLYOFFICE Docs",
+  "GetStarted": "ZAČÍT",
+  "RequestFreeDemo": "Request free demo",
+  "HeroImgUrl": "/images/templates/office-for-confluence/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-confluence/hero/hero@2x.png",
+
+  "EditAndCoAuthorOfficeDocuments": "Upravujte a spoluvytvářejte kancelářské dokumenty v rozhraní Confluence",
+  "DocumentsTab1Label": "Pracujte s nahranými kancelářskými soubory v seznamu příloh",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-confluence/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "Vytvářejte a upravujte textové dokumenty, tabulky a prezentace",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-confluence/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "Vytvářejte, anotujte a vyplňujte PDF formuláře",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-confluence/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "Spolupracujte na dokumentech s kolegy v reálném čase",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-confluence/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Navrženo pro bezproblémovou integraci s Confluence",
+  "MarketplaceConnectorDescription": "Získejte aplikaci ONLYOFFICE pro Confluence nyní z Atlassian Marketplace.",
+
+  "WhyOO": "Proč ONLYOFFICE?",
+  "FeaturesFormats": "Podpora více než <0>50 formátů souborů</0>, plně kompatibilní s formáty MS Office: DOCX, XLSX, PPTX.",
+  "FeaturesAIHelper": "Robustní sada nástrojů pro úpravy, formátování a stylování. Integrovaný <0>AI pomocník</0>.",
+  "FeatureCoEditing": "<0>Spolupráce</0> v reálném čase a uzamykání odstavců, revize, historie verzí, porovnání dokumentů, komentáře a chat. Audio a video hovory.",
+  "FeaturesEnhancedSecurity": "<0>Vylepšené zabezpečení.</0> Flexibilní přístupová práva a JWT. Sledování aktivit a auditní výkaznictví. Šifrování v klidu a při přenosu. Vodoznaky a ochrana heslem. Otevřený zdrojový kód.",
+  "FeaturesEasyConfiguration": "<0>Snadná konfigurace.</0> Bezproblémová integrace s konektorem připraveným k použití z Atlassian Marketplace. Dostupné pro Confluence Server, Data Center a Cloud.",
+  "FeaturesFreeTrial": "Škálovatelné podnikové verze. <0>Bezplatná 30denní zkušební verze.</0> Self-hosted řešení pro úplnou kontrolu nad vašimi daty. Verze Docs Cloud pro Confluence Cloud.",
+
+  "HowToStart": "Jak začít",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na vlastní server nebo se zaregistrujte pro <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Získejte integrační aplikaci z <0>Atlassian Marketplace</0>. Vyberte odpovídající možnost přepínáním karet hostingu (Server / Data Center / Cloud).",
+  "HowToStartStep3": "Nakonfigurujte integrační aplikaci.",
+
+  "HowToConnect": "Jak připojit ONLYOFFICE Docs ke Confluence",
+  "ReadDetailedInstructions": "Přečtěte si podrobné pokyny v <0>Centru nápovědy</0>.",
+
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro připojení ONLYOFFICE Docs k vaší oblíbené webové službě? Nebo jste nějakou vyvinuli?"
+}

@@ -1,0 +1,46 @@
+{
+  "PageTitle": "Confluence用オンラインオフィス | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE Docsを使ってConfluence内であらゆるオフィス文書に対応",
+
+  "OnlineOfficeForConfluence": "Confluence用オンラインオフィス",
+  "WorkOnAllKindsOfOfficeDocuments": "ONLYOFFICE Docsを使ってConfluence内であらゆるオフィス文書に対応",
+  "GetStarted": "始める",
+  "RequestFreeDemo": "Request free demo",
+  "HeroImgUrl": "/images/templates/office-for-confluence/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-confluence/hero/hero@2x.png",
+
+  "EditAndCoAuthorOfficeDocuments": "Confluenceインターフェース内でのオフィスドキュメントの編集と共著",
+  "DocumentsTab1Label": "添付ファイルリストにアップロードされたオフィスファイルの操作",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-confluence/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "テキスト文書、スプレッドシート、プレゼンテーションの作成と編集",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-confluence/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "PDFフォームの作成、注釈、記入",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-confluence/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "同僚とリアルタイムでドキュメントを共同編集",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-confluence/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Confluenceとのシームレスな統合",
+  "MarketplaceConnectorDescription": "Atlassian MarketplaceからConfluence用ONLYOFFICEアプリを今すぐ入手してください。",
+
+  "WhyOO": "なぜONLYOFFICE？",
+  "FeaturesFormats": "{0}50以上のファイル形式{1}をサポートし、MS Office形式と完全互換： docx、xlsx、pptx。",
+  "FeaturesAIHelper": "編集、フォーマット、スタイリングツールの強力なセット。統合された {0}AIヘルパー{1}。",
+  "FeatureCoEditing": "リアルタイムで段落ロックされた{0}共同編集{1}、レビュー、バージョン履歴、ドキュメント比較、コメント＆チャット。音声通話とビデオ通話。",
+  "FeaturesEnhancedSecurity": "{0}セキュリティ強化{1}。柔軟なアクセス権とJWT アクティビティ追跡と監査レポート 保存時および転送時の暗号化 電子透かしとパスワード保護 オープンソースコード",
+  "FeaturesEasyConfiguration": "{0}簡単な設定{1}。アトラシアンマーケットプレイスのすぐに使えるコネクターとのシームレスな統合。Confluence サーバー、データセンター、クラウドで利用可能。",
+  "FeaturesFreeTrial": "スケーラブルなエンタープライズバージョン{0}30 日間の無料トライアル{1}。データを完全にコントロールするセルフホストソリューション。Confluence Cloud 用の Docs Cloud バージョン。",
+
+  "HowToStart": "始め方",
+  "HowToStartStep1": "{0}ONLYOFFICE Docs{1}をデプロイするか、{1}ONLYOFFICE Docs Cloud{1}にサインアップします。",
+  "HowToStartStep2": "{0}Atlassian Marketplace{1} から統合アプリを入手します。ホスティングタブ（サーバー / データセンター / クラウド）を切り替えて、対応するオプションを選択します。",
+  "HowToStartStep3": "統合アプリを設定します。",
+
+  "HowToConnect": "ONLYOFFICE DocsとConfluenceの連携方法",
+  "ReadDetailedInstructions": "<0>ヘルプセンター</0>で詳細な手順を読む。",
+
+  "NeedAnAppToConnect": "ONLYOFFICE Docsをお気に入りのウェブサービスに接続するアプリが必要ですか？または、すでに開発されましたか？"
+}
