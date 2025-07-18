@@ -260,15 +260,15 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
                     key={moduleCard.id}
                     locale={locale}
                     icon_url={moduleCard.icon_url}
-                    title={moduleCard.title}
+                    title={t(moduleCard.title)}
                     type={moduleCard.type}
                     module={moduleCard.module}
                     sessions={moduleCard.sessions}
                     hours={moduleCard.hours}
                     price={moduleCard.price}
-                    description={moduleCard.description}
+                    description={t(moduleCard.description)}
                     new={moduleCard.new}
-                    course={moduleCard.title}
+                    course={t(moduleCard.title)}
                   />
                 ))}
               </StyledCardsList>
@@ -289,15 +289,15 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
                     key={purposeCard.id}
                     locale={locale}
                     icon_url={purposeCard.icon_url}
-                    title={purposeCard.title}
+                    title={t(purposeCard.title)}
                     type={purposeCard.type}
                     module={purposeCard.module}
                     sessions={purposeCard.sessions}
                     hours={purposeCard.hours}
                     price={purposeCard.price}
-                    description={purposeCard.description}
+                    description={t(purposeCard.description)}
                     new={purposeCard.new}
-                    course={purposeCard.title}
+                    course={t(purposeCard.title)}
                   />
                 ))}
               </StyledCardsList>

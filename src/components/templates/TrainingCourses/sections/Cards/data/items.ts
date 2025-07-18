@@ -3,7 +3,7 @@ import { ICardsDataItem } from "../../../TrainingCourses.types";
 const items: ICardsDataItem[] = [
   {
     id: 21,
-    title: "Using ONLYOFFICE Docs in educational organizations",
+    title: "CardDataTitle21",
     date: "2023-12-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/education.svg",
     type: "2",
@@ -12,11 +12,11 @@ const items: ICardsDataItem[] = [
     hours: "2",
     price: "On demand",
     new: true,
-    description: "Would like to digitally boost the learning process? Take this comprehensive course and learn how to use ONLYOFFICE Docs to create lesson plans and learning materials, including presentations and interactive forms, collaborate in real <0>time with students and educators, establish a grading system, etc. Find out how to manage access rights to the educational contents and keep sensitive data secure.</0>"
+    description: "CardDataDescription21"
   },
   {
     id: 20,
-    title: "Custom tech-focused training",
+    title: "CardDataTitle20",
     date: "2023-08-21T14:00Z",
     icon_url: "/images/templates/training-courses/cards/focused-training.svg",
     type: "2",
@@ -25,11 +25,11 @@ const items: ICardsDataItem[] = [
     hours: "Custom",
     price: "On demand",
     new: true,
-    description: "Discover the technical side of working with ONLYOFFICE Docs. Dive into its installation and maintenance, learn how to do backups, configure the editors, add plugins and macros, get an overview of the advanced features and parameters."
+    description: "CardDataDescription20"
   },
   {
     id: 19,
-    title: "Editing documents in ONLYOFFICE DocSpace",
+    title: "CardDataTitle19",
     date: "2023-08-21T14:00Z",
     icon_url: "/images/templates/training-courses/cards/editing.svg",
     type: "2",
@@ -38,11 +38,11 @@ const items: ICardsDataItem[] = [
     hours: "1,5",
     price: "On demand",
     new: true,
-    description: "Discover how to work with office files within ONLYOFFICE DocSpace, a room-based environment for effective collaboration. Learn how to create, edit, and co-auhtor documents, spreadsheets, presentations, and forms in real time or using <0>a paragraph-locking co-editing mode and other collaborative features.</0>"
+    description: "CardDataDescription19"
   },
   {
     id: 18,
-    title: "Administrating ONLYOFFICE DocSpace",
+    title: "CardDataTitle18",
     date: "2023-08-21T14:00Z",
     icon_url: "/images/templates/training-courses/cards/docSpace.svg",
     type: "2",
@@ -51,11 +51,11 @@ const items: ICardsDataItem[] = [
     hours: "1",
     price: "On demand",
     new: true,
-    description: "Discover how to administer ONLYOFFICE DocSpace, a room-based environment for effective document collaboration. Learn how to set up your team and invite users with various roles, create and manage rooms, customize and secure your space."
+    description: "CardDataDescription18"
   },
   {
     id: 17,
-    title: "Working with docs in WordPress",
+    title: "CardDataTitle17",
     date: "2022-05-19T14:00Z",
     icon_url: "/images/templates/training-courses/cards/wordPress.svg",
     type: "2",
@@ -64,11 +64,11 @@ const items: ICardsDataItem[] = [
     hours: "1,5",
     price: "On demand",
     new: true,
-    description: "Learn how to work on office documents within WordPress : edit docs uploaded to WordPress using ONLYOFFICE Docs, add ONLYOFFICE blocks when creating a post to insert documents in the embedded mode, etc."
+    description: "CardDataDescription17"
   },
   {
     id: 16,
-    title: "Integration (WordPress)",
+    title: "CardDataTitle16",
     date: "2022-05-19T14:00Z",
     icon_url: "/images/templates/training-courses/cards/wordPress.svg",
     type: "1",
@@ -77,11 +77,11 @@ const items: ICardsDataItem[] = [
     hours: "1,5",
     price: "On demand",
     new: true,
-    description: "Learn how to work on office documents within WordPress : edit docs uploaded to WordPress using ONLYOFFICE Docs, add ONLYOFFICE blocks when creating a post to insert documents in the embedded mode, etc."
+    description: "CardDataDescription16"
   },
   {
     id: 15,
-    title: "Working with docs in Nextcloud",
+    title: "CardDataTitle15",
     date: "2022-05-19T14:00Z",
     icon_url: "/images/templates/training-courses/cards/nextCloud.svg",
     type: "2",
@@ -90,11 +90,11 @@ const items: ICardsDataItem[] = [
     hours: "1,5",
     price: "On demand",
     new: true,
-    description: "Learn how to connect ONLYOFFICE Docs to Nextcloud, configure it and edit and collaborate on text documents, spreadsheets, presentations, and forms within Nextcloud."
+    description: "CardDataDescription15"
   },
   {
     id: 14,
-    title: "Integration (Nextcloud)",
+    title: "CardDataTitle14",
     date: "2022-05-19T14:00Z",
     icon_url: "/images/templates/training-courses/cards/nextCloud.svg",
     type: "1",
@@ -103,11 +103,11 @@ const items: ICardsDataItem[] = [
     hours: "1,5",
     price: "On demand",
     new: true,
-    description: "Learn how to connect ONLYOFFICE Docs to Nextcloud, configure it and edit and collaborate on text documents, spreadsheets, presentations, and forms within Nextcloud."
+    description: "CardDataDescription14"
   },
   {
     id: 13,
-    title: "Working with forms",
+    title: "CardDataTitle13",
     date: "2020-12-27T14:00Z",
     icon_url: "/images/templates/training-courses/cards/working-forms.svg",
     type: "2",
@@ -115,11 +115,11 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1,5",
     price: "On demand",
-    description: "Learn how to create ready-to-fill-out forms, incl. adding various form fields and changing field properties, share forms with other users, fill them out and save as DOCX or PDF files."
+    description: "CardDataDescription13"
   },
   {
     id: 12,
-    title: "Forms",
+    title: "CardDataTitle12",
     date: "2020-12-27T14:00Z",
     icon_url: "/images/templates/training-courses/cards/forms.svg",
     type: "1",
@@ -127,11 +127,11 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1,5",
     price: "On demand",
-    description: "Learn how to create ready-to-fill-out forms, incl. adding various form fields and changing field properties, share forms with other users, fill them out and save as DOCX or PDF files."
+    description: "CardDataDescription12"
   },
   {
     id: 11,
-    title: "Custom package",
+    title: "CardDataTitle11",
     date: "2020-01-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/custom.svg",
     type: "2",
@@ -139,11 +139,11 @@ const items: ICardsDataItem[] = [
     sessions: "Custom",
     hours: "Custom",
     price: "On demand",
-    description: "Pick up any courses you would like to master and compose your own training package. Contact us to discuss all the details."
+    description: "CardDataDescription11"
   },
   {
     id: 10,
-    title: "VIP package",
+    title: "CardDataTitle10",
     date: "2020-02-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/vip.svg",
     type: "2",
@@ -151,11 +151,11 @@ const items: ICardsDataItem[] = [
     sessions: "7",
     hours: "9",
     price: "On demand",
-    description: "VIP package allows you to get a complete set of training courses to master all ONLYOFFICE modules and tools: working with documents, projects, CRM, mail and calendar, using social communication features, managing users and guests, <0>administrating the portal.</0>"
+    description: "CardDataDescription10"
   },
   {
     id: 9,
-    title: "Administrating the portal",
+    title: "CardDataTitle9",
     date: "2020-03-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/admin.svg",
     type: "2",
@@ -163,11 +163,11 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1",
     price: "On demand",
-    description: "Learn how to administer your ONLYOFFICE and configure portal settings, including language and time zone, DNS, color themes, two-factor authentication, backups, integration with third-party services, etc."
+    description: "CardDataDescription9"
   },
   {
     id: 8,
-    title: "Working in a team",
+    title: "CardDataTitle8",
     date: "2020-04-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/team.svg",
     type: "2",
@@ -175,11 +175,11 @@ const items: ICardsDataItem[] = [
     sessions: "2",
     hours: "2",
     price: "On demand",
-    description: "Learn how to use ONLYOFFICE Projects to enhance your team’s productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features. Find out how to add and manage users, guests and administrators, chat with <0>your teammates, use social communication tools like blogs, forums, news, polls, wiki, etc.</0>"
+    description: "CardDataDescription8"
   },
   {
     id: 7,
-    title: "Working with customers",
+    title: "CardDataTitle7",
     date: "2020-05-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/customers.svg",
     type: "2",
@@ -187,11 +187,11 @@ const items: ICardsDataItem[] = [
     sessions: "2",
     hours: "2,5",
     price: "On demand",
-    description: "Discover ONLYOFFICE CRM, Mail and Calendar to manage business processes, track sales and simplify your communication with customers. Learn how to organize a client database, create a web-to-lead form, build reports, manage correspondence <0>and create corporate mailboxes, schedule meetings and send invitations.</0>"
+    description: "CardDataDescription7"
   },
   {
     id: 6,
-    title: "Office suite",
+    title: "CardDataTitle6",
     date: "2020-06-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/suite.svg",
     type: "2",
@@ -199,11 +199,11 @@ const items: ICardsDataItem[] = [
     sessions: "3",
     hours: "4,5",
     price: "On demand",
-    description: "Discover effective file management and organize document workflow according to your needs. Learn how to create, edit, share and collaborate on text documents, spreadsheets, and presentations on the ONLYOFFICE portal or within integrated solutions."
+    description: "CardDataDescription6"
   },
   {
     id: 5,
-    title: "People, Chat, Community",
+    title: "CardDataTitle5",
     date: "2020-01-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/chat.svg",
     type: "1",
@@ -211,11 +211,11 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1",
     price: "On demand",
-    description: "Learn how to add and manage users, guests and administrators on the portal, chat with your teammates in real time via the instant messaging application, use social communication tools such as blogs, forums, news, polls, wiki, etc."
+    description: "CardDataDescription5"
   },
   {
     id: 4,
-    title: "Mail & Calendar",
+    title: "CardDataTitle4",
     date: "2020-02-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/mail.svg",
     type: "1",
@@ -223,11 +223,11 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1,5",
     price: "On demand",
-    description: "Learn how to manage your correspondence in ONLYOFFICE Mail, create corporate mailboxes, structure Inbox, add email signatures. Discover ONLYOFFICE Calendar and learn how to create timetables, schedule group meetings, add to-dos and <0>sync your calendar with third-party applications.</0>"
+    description: "CardDataDescription4"
   },
   {
     id: 3,
-    title: "CRM",
+    title: "CardDataTitle3",
     date: "2020-03-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/crm.svg",
     type: "1",
@@ -235,11 +235,11 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1",
     price: "On demand",
-    description: "Learn how to use ONLYOFFICE CRM to organize your customer database, track sales, create a web-to-lead form, opportunities, invoices, and build reports."
+    description: "CardDataDescription3"
   },
   {
     id: 2,
-    title: "Projects",
+    title: "CardDataTitle2",
     date: "2020-04-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/projects.svg",
     type: "1",
@@ -247,11 +247,11 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1",
     price: "On demand",
-    description: "Learn how to use ONLYOFFICE Projects to enhance your team’s productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features."
+    description: "CardDataDescription2"
   },
   {
     id: 1,
-    title: "Documents",
+    title: "CardDataTitle1",
     date: "2020-05-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/documents.svg",
     type: "1",
@@ -259,7 +259,7 @@ const items: ICardsDataItem[] = [
     sessions: "3",
     hours: "4,5",
     price: "On demand",
-    description: "Discover effective file management and organize document workflow according to your needs. Learn how to create, edit, share and collaborate on text documents, spreadsheets, and presentations on the ONLYOFFICE portal or within integrated solutions."
+    description: "CardDataDescription1"
   }
 ]
 

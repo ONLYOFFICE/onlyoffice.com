@@ -17,7 +17,7 @@ interface ICardsDataItemProp {
   price: string;
   description: string;
   new?: boolean;
-  course: string;
+  course?: string;
 };
 
 interface ICardsDataItem extends ICardsDataItemProp {
