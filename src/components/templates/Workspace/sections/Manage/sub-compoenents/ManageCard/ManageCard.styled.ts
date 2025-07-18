@@ -1,7 +1,7 @@
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
-const StyledManageCard = styled.div`
+const StyledManageCard = styled.div<{ $isActive: boolean }>`
   max-width: 928px;
   width: 100%;
   margin: 0 auto;

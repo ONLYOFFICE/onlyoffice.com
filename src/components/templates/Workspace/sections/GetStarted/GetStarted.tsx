@@ -11,7 +11,6 @@ import {
 } from "./GetStarted.styled";
 import { Heading } from "@src/components/ui/Heading";
 import { items } from "./data/items";
-import Head from "next/head";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";

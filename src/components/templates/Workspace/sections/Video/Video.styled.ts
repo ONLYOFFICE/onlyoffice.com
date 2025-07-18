@@ -25,7 +25,7 @@ const StyledVideoWrapper = styled.div`
   }
 
   @media ${device.mobile} {
-    width: 286px;
+    width: 280px;
     grid-template-columns: 120px auto;
     padding: 16px;
   }

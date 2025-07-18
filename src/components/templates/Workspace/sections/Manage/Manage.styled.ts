@@ -9,19 +9,14 @@ const StyledManageTabs = styled.ul`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 767px) {
-    justify-content: center;
-    gap: 16px;
-  }
-
   @media ${device.mobile} {
-    justify-content: flex-start;
     overflow-x: auto;
     overflow-y: hidden;
     width: 100%;
     max-width: 100%;
     padding-bottom: 8px;
     gap: 16px;
+    margin: 32px auto;
   }
 `;
 
@@ -40,6 +35,7 @@ const StyledManageTabsItem = styled.li<{ $icon: string; $isActive: boolean }>`
   transition:
     color 0.2s ease,
     border-color 0.2s ease;
+  text-transform: uppercase;
 
   &::before {
     content: "";
@@ -52,10 +48,20 @@ const StyledManageTabsItem = styled.li<{ $icon: string; $isActive: boolean }>`
     background-image: url(${({ $icon }) => $icon});
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+
+    @media ${device.mobile} {
+      width: 48px;
+      height: 48px;
+    }
   }
 
-  @media (max-width: 767px) {
+  @media ${device.tabletS} {
     min-width: 84px;
+  }
+
+  @media ${device.mobile} {
+    padding: 64px 0 3px;
   }
 `;
 

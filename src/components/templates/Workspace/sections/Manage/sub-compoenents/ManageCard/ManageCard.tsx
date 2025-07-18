@@ -9,7 +9,6 @@ import {
 import { Text } from "@src/components/ui/Text";
 
 interface IManageCard {
-  id: string;
   title: string;
   text: React.ReactNode;
   textList: string[];
@@ -18,21 +17,18 @@ interface IManageCard {
     url2x: string;
     hight: number;
   };
-  links: { label: string; href: string; isVideo?: boolean }[];
   isActive: boolean;
 }
 
 const ManageCard = ({
-  id,
   title,
   text,
   textList,
   image,
-  links,
   isActive,
 }: IManageCard) => {
   return (
-    <StyledManageCard>
+    <StyledManageCard $isActive={isActive}>
       <StyledManageCardContent>
         <Heading level={4} size={5} label={title} />
         <Text size={3}>{text}</Text>
