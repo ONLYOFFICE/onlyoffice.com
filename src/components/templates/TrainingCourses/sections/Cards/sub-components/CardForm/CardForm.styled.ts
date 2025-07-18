@@ -5,7 +5,8 @@ import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { Modal } from "@src/components/ui/Modal";
 
 const StyledCardFormOverlay = styled(Modal)`
-  overscroll-behavior: contain;
+
+overscroll-behavior: contain;
   cursor: pointer;
 `;
 
@@ -49,6 +50,75 @@ const StyledCardFormAgreementWrapper = styled.div`
   margin-bottom: 32px;
 `;
 
+const StyledCardFormSelectWrapper = styled(StyledCardFormInputWrapper)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+`;
+
+const StyledCardFormSelect = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  border: 1px solid #aaa;
+  border-color: #aaa;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s, background-color 0.2s;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #666;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-image: url("/images/icons/chevron-down-gray.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+`;
+
+const StyledCardFormOptions = styled.ul`
+  width: 100%;
+  max-height: 232px;
+  padding: 16px 0;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #666;
+  overflow-y: auto;
+`;
+
+const StyledCardFormOption = styled.li`
+  padding: 8px 16px;
+  transition-duration: 300ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #F2F2F2;
+  }
+
+  &:first-child {
+    pointer-events: none;
+    cursor: default;
+  }
+`;
+
 const StyledCardFormButton = styled(LoaderButton)`
   width: 100%;
 `;
@@ -67,6 +137,10 @@ export {
   StyledCardFormHeading,
   StyledCardFormForm,
   StyledCardFormInputWrapper,
+  StyledCardFormSelectWrapper,
+  StyledCardFormSelect,
+  StyledCardFormOptions,
+  StyledCardFormOption,
   StyledCardFormAgreementWrapper,
   StyledCardFormButton,
   StyledCardFormStatusText

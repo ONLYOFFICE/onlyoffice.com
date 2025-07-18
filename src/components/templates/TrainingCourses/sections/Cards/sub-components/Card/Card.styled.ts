@@ -5,6 +5,8 @@ import { Button } from "@src/components/ui/Button";
 import { Badge } from "@src/components/ui/Badge";
 
 const StyledCard = styled.div`
+  display: flex;
+  flex-direction: column;
   border: 1px solid #E5E5E5;
   border-radius: 5px;
   box-shadow: 0px 7px 15px rgba(85, 85, 85, 0.1);
@@ -51,6 +53,7 @@ const StyledCardContentWrapper = styled.div`
   flex-direction: column;
   background-color: #fff;
   padding: 24px 32px 32px;
+  flex-grow: 1;
 `;
 
 const StyledCardDescription = styled.div`

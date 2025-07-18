@@ -23,7 +23,11 @@ import {
   StyledCardFormHeading,
   StyledCardFormInputWrapper,
   StyledCardFormModal,
+  StyledCardFormOption,
+  StyledCardFormOptions,
   StyledCardFormOverlay,
+  StyledCardFormSelect,
+  StyledCardFormSelectWrapper,
   StyledCardFormStatusText,
 } from "./CardForm.styled";
 
@@ -264,6 +268,26 @@ const CardForm = ({ openModal, setOpenModal, locale, product }: ICardFormProp & 
               <Text size={4} label={t("CardFormEmailIsIncorrect")} color="#CB0000" />
             )}
           </StyledCardFormInputWrapper>
+          <StyledCardFormSelectWrapper>
+            <StyledCardFormSelect>
+              <Text size={4} label={t("PreferredLanguage")} />
+              <Text size={4} label={t("PreferredLanguage")} />
+            </StyledCardFormSelect>
+            <StyledCardFormOptions>
+              <StyledCardFormOption title="Preferred language*">Preferred language*</StyledCardFormOption>
+              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
+              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
+              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
+              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
+              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
+              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
+              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
+              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
+              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
+              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
+            </StyledCardFormOptions>
+          </StyledCardFormSelectWrapper>
+
           <StyledCardFormAgreementWrapper>
             <HCaptcha
               ref={refHCaptcha}

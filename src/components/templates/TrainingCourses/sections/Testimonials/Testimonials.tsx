@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { Trans, useTranslation } from 'next-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -20,7 +21,7 @@ import {
   StyledTestimonialsContainer
 } from './Testimonials.styled';
 
-const Testimonials = () => {
+const TestimonialsComponent = () => {
   const { t } = useTranslation("training-courses")
 
   return (
@@ -82,5 +83,7 @@ const Testimonials = () => {
     </Section>
   );
 };
+
+const Testimonials = memo(TestimonialsComponent)
 
 export { Testimonials };

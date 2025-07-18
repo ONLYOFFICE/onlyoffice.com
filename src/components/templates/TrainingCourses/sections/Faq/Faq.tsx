@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -5,7 +6,7 @@ import { FaqCollapse } from "@src/components/modules/FaqCollapse";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
-const Faq = () => {
+const FaqComponent = () => {
   const { t } = useTranslation("training-courses");
 
   return (
@@ -30,5 +31,7 @@ const Faq = () => {
     </Section>
   );
 };
+
+const Faq = memo(FaqComponent);
 
 export { Faq };

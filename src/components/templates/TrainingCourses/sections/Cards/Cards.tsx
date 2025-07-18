@@ -309,9 +309,9 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
       <StyledCardsFilterMob $display={filterMobDisplay}>
         <StyledCardsFilterMobHeader>
           <StyledCardsFilterMobReset $display={true} onClick={handleMobResetFilters}>
-            {t("CardsMobFiltersReset")}
+            {t("Reset")}
           </StyledCardsFilterMobReset>
-          <StyledCardsFilterMobHeading label={t("CardsMobFiltersHeading")} level={5} />
+          <StyledCardsFilterMobHeading label={t("Filters")} level={5} />
           <StyledCardsFilterMobCloseBtn onClick={() => setFilterMobDisplay(false)} />
         </StyledCardsFilterMobHeader>
         <StyledCardsFilterMobMain>
@@ -327,7 +327,7 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
             ))}
           </StyledCardsFilterMobSelect>
           <StyledCardsMobDateHeading
-            label={t("CardsSortBy")}
+            label={t("SortBy")}
             level={5}
             size={6}
             textTransform="uppercase"
@@ -347,7 +347,7 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
           {tempFilter === t("Modules") && (
             <>
               <StyledCardsSortMobHeading
-                label={t("CardsMobFiltersModules")}
+                label={t("Module")}
                 level={5}
                 size={6}
                 textTransform="uppercase"
@@ -370,7 +370,7 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
         <StyledCardsFilterMobFooter>
           <StyledCardsFilterMobApplyBtn
             onClick={applyMobileFilters}
-            label={t("CardsMobFiltersApply")}
+            label={t("ApplyFilter")}
             borderRadius="3px"
           />
         </StyledCardsFilterMobFooter>

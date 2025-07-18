@@ -132,6 +132,14 @@ const StyledCardsList = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
+
+  @media ${device.desktop} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ${device.mobile} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const StyledCardsHeading = styled(Heading)`
@@ -273,6 +281,7 @@ const StyledCardsMobDateOption = styled.div<{
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
+  text-transform: capitalize;
   background-color: #fff;
   border-bottom: 1px solid #E2E2E2;
   padding: 18px;

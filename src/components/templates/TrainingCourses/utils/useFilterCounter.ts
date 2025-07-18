@@ -4,8 +4,8 @@ import { TFilterKey, TSortDateKey } from "../TrainingCourses.types";
 const useFilterCounter = (choosedFilter: TFilterKey, choosedModule: TFilterKey, choosedDate: TSortDateKey) => {
 
   const filterCounter = useMemo(() => {
-    const defaultFilter = "CardsFiltersAll";
-    const defaultDate = "CardsSortNewestOldest";
+    const defaultFilter = "All";
+    const defaultDate = "NewestOldest";
     let count = 0;
     if (choosedFilter !== defaultFilter) count++;
     if (choosedModule !== defaultFilter) count++;
