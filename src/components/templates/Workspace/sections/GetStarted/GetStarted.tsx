@@ -32,7 +32,7 @@ const GetStarted = () => {
             {items.map((item, index) => (
               <StyledGetStartedItem key={index}>
                 <StyledGetStartedItemIcon
-                  $src={item.icon.src}
+                  $src={t(item.icon.src)}
                   $width={item.icon.width}
                 />
                 <StyledGetStartedItemContent>
@@ -41,7 +41,7 @@ const GetStarted = () => {
                 </StyledGetStartedItemContent>
                 <Button
                   as="a"
-                  href={item.link.href}
+                  href={t(item.link.href)}
                   variant="secondary"
                   target={item.link.isExternal ? "_blank" : undefined}
                   rel="noopener noreferrer"

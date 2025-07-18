@@ -36,12 +36,12 @@ export const items: IGetStartedItems[] = [
     },
   },
   {
-    icon: { src: "/images/templates/workspace/get-started/marketplace.svg" },
+    icon: { src: "AwsMarketplaceImage" },
     title: "AwsMarketplace",
     text: "OneClickInstall",
     link: {
       label: "GetStarted",
-      href: "https://aws.amazon.com/marketplace/seller-profile?id=b2557f65-4b3a-4b0e-a96a-d9a9d3b45b60",
+      href: "AwsMarketplaceLink",
       isExternal: true,
     },
   },

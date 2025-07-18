@@ -31,10 +31,10 @@ const StyledVideoWrapper = styled.div`
   }
 `;
 
-const StyledVideo = styled.div`
+const StyledVideo = styled.div<{ $image: string }>`
   width: 100%;
   height: 90px;
-  background-image: url("./images/templates/workspace/video/workspace.png");
+  background-image: url(${({ $image }) => $image});
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
@@ -136,5 +136,5 @@ export {
   StyledVideoContent,
   StyledVideoTitle,
   StyledVideoDescription,
-  StyledWatchVideoModal
+  StyledWatchVideoModal,
 };

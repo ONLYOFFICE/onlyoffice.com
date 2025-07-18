@@ -79,6 +79,10 @@
   "Host": "Host on your premises",
 
   "AwsMarketplace": "AWS Marketplace",
+  "AwsMarketplaceImage": "/images/templates/workspace/get-started/marketplace.svg",
+  "AwsMarketplaceLink": "https://aws.amazon.com/marketplace/seller-profile?id=b2557f65-4b3a-4b0e-a96a-d9a9d3b45b60",
 
-  "CommunityFooterText": "Community version for home use is available for download <0>here</0>."
+  "CommunityFooterText": "Community version for home use is available for download <0>here</0>.",
+
+  "VideoImageUrl": "/images/templates/workspace/video/workspace.png"
 }

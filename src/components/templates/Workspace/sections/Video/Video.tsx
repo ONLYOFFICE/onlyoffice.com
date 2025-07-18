@@ -11,9 +11,11 @@ import {
 } from "./Video.styled";
 import { Modal } from "@src/components/ui/Modal";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const Video = () => {
   const { t } = useTranslation("workspace");
+  const { locale } = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -25,7 +27,7 @@ const Video = () => {
     >
       <Container>
         <StyledVideoWrapper>
-          <StyledVideo onClick={() => setIsOpen(true)} />
+          <StyledVideo $image={t("VideoImageUrl")} onClick={() => setIsOpen(true)} />
           <StyledVideoContent>
             <StyledVideoTitle level={5}>
               <span>{t("OOWorkspace")}</span>
@@ -43,7 +45,7 @@ const Video = () => {
         >
           <StyledWatchVideoModal>
             <iframe
-              src="https://www.youtube.com/embed/tTuH1HrxupA?si=TYxrArY6kaleXdJW"
+              src={locale !== "zh" ? "https://www.youtube.com/embed/tTuH1HrxupA?si=TYxrArY6kaleXdJW" : "https://player.bilibili.com/player.html?aid=BV14B4y137LB&bvid=BV14B4y137LB&cid=BV14B4y137LB"}
               allow="encrypted-media"
               allowFullScreen={true}
             ></iframe>
