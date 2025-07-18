@@ -1,0 +1,45 @@
+{
+  "PageTitle": "Radite na kancelarijskim dokumentima direktno unutar vašeg Dropbox naloga | ONLYOFFICE",
+  "PageDescription": "Pregledajte i uređujte kancelarijske dokumente, tabele, prezentacije i obrasce u Dropboxu koristeći ONLYOFFICE Docs",
+
+  "FreeOnlineOfficeForDropbox": "Online kancelarija za <0>Dropbox</0>",
+  "EditOfficeFilesRightInDropbox": "Uredite datoteke u Dropboxu koristeći potpuni skup funkcija ONLYOFFICE Docs-a",
+  "GetFreeApp": "Nabavite besplatnu aplikaciju",
+
+  "WorkOnOfficeDocumentsStored": "Radite na kancelarijskim dokumentima koji su smešteni na Dropbox-u.",
+  "DocumentsTab1Label": "Pregledajte i uređujte tekstualne dokumente, tabele i prezentacije.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-dropbox/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "Izgradite i popunite složene online obrasce",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-dropbox/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "Izvoz/uvoz u/iz PDF-a",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-dropbox/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "Pretvorite svoje udžbenike u e-knjige",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-dropbox/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Napravljen da radi besprekorno u Dropboxu",
+  "MarketplaceConnectorDescription": "Instalirajte ONLYOFFICE aplikaciju za Dropbox danas sa Dropbox Marketplace-a",
+
+  "WhyOO": "Why ONLYOFFICE?",
+  "FeaturesRobustSet": "<0>Robustan set</0> alata za uređivanje",
+  "FeaturesFamiliarInterface": "<0>Poznati interfejs</0> sa karticama",
+  "FeaturesAIHelper": "<0>AI pomoćnik</0> i kolekcija besplatnih dodataka",
+  "FeaturesFormats": "Podrška za više od <0>50 formata datoteka</0>",
+  "FeaturesHighestCompatibility": "<0>Najveća kompatibilnost</0> sa docx, xlsx, i pptx",
+  "FeaturesOpenSourceCode": "Vodeni žig, zaštita lozinkom, <0>otvoreni izvorni kod</0>",
+  "FeaturesFreeApp": "<0>Besplatna aplikacija</0>, nije potrebna instalacija i registracija",
+  "GetStarted": "Get started",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Prijavite se na svoj Dropbox nalog.",
+  "HowToStartStep2": "Pratite <0>link</0>",
+  "HowToStartStep3": "Odobrite potrebne dozvole za aplikaciju ONLYOFFICE.",
+  "HowToStartStep4": "Pristupite kontekst meniju potrebnog fajla.",
+  "HowToStartStep5": "Kliknite na dugme Otvori u -> ONLYOFFICE Docs.",
+  "ExploreMoreDetails": "Istražite više detalja u <0>ovom vodiču</0>.",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}

@@ -1,0 +1,45 @@
+{
+  "PageTitle": "Dropbox内でオフィスファイルを直接作業",
+  "PageDescription": "ONLYOFFICE Docsを使って、テキスト文書、スプレッドシート、スライド、フォームをDropboxで閲覧・編集できます",
+
+  "FreeOnlineOfficeForDropbox": "<0>Dropbox</0>向けの無料オンラインオフィス",
+  "EditOfficeFilesRightInDropbox": "ONLYOFFICE Docsの完全な機能セットを使って、Dropbox上でオフィスファイルを編集できます",
+  "GetFreeApp": "無料アプリのダウンロード",
+
+  "WorkOnOfficeDocumentsStored": "Dropboxに保存されたオフィス文書で作業",
+  "DocumentsTab1Label": "テキスト文書、スプレッドシート、プレゼンテーションの表示と編集",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-dropbox/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "複雑なオンラインフォームの作成と入力",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-dropbox/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "PDFへ/からのエクスポート/インポート",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-dropbox/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "教科書を電子書籍にする",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-dropbox/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Dropboxでシームレスに動作するように設計されている",
+  "MarketplaceConnectorDescription": "DropboxマーケットプレイスからONLYOFFICEアプリをインストールしましょう",
+
+  "WhyOO": "Why ONLYOFFICE?",
+  "FeaturesRobustSet": "強力な編集ツールセット",
+  "FeaturesFamiliarInterface": "タブを使った使い慣れたインターフェイス",
+  "FeaturesAIHelper": "AIヘルパーと無料プラグインのコレクション",
+  "FeaturesFormats": "50以上のファイル形式をサポート",
+  "FeaturesHighestCompatibility": "docx、xlsx、pptxとの高い互換性",
+  "FeaturesOpenSourceCode": "透かし、パスワード保護、オープンソースコード",
+  "FeaturesFreeApp": "無料アプリ、インストールと登録不要",
+  "GetStarted": "Get started",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Dropboxアカウントにログインします。",
+  "HowToStartStep2": "<0>次のリンクを</0>開きます",
+  "HowToStartStep3": "ONLYOFFICEアプリに必要な権限を与えます。",
+  "HowToStartStep4": "必要なファイルのコンテキストメニューにアクセスします。",
+  "HowToStartStep5": "「アプリでで開く」->「ONLYOFFICE Docs」をクリックします。",
+  "ExploreMoreDetails": "詳しくは<0>こちらのガイド</0>をご覧ください。",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}
