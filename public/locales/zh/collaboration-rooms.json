@@ -1,0 +1,50 @@
+{
+  "PageTitle": "在协作房间中更高效地合作",
+  "PageDescription": "在 ONLYOFFICE 协作空间中轻松进行文档协同编辑与合作。",
+
+  "WorkTogetherBetterInCollaborationRooms": "在<0>协作房间</0>中更高效地合作",
+  "EnjoyStressFreeCoEditing": "在 ONLYOFFICE 协作空间中轻松进行文档协同编辑与合作",
+
+  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header@2x.png",
+
+  "CreateFreeAccount": "创建免费账户",
+  "IdealForTeamwork": "团队合作的理想选择",
+  "EasilyGetAnyGroupWorkOrProject": "与同事、合作伙伴和其他人一起轻松完成小组工作或项目",
+  "Education": "教育",
+  "EducationDesc": "撰写论文、进行长篇阅读、完成作业、编辑 Excel 表格、准备小组 presentation、制作和阅读电子书。",
+  "Business": "商业",
+  "BusinessDesc": "在业务的每个阶段，协作处理合同、报告、产品幻灯片等文件，并通过图表和图形进行可视化。",
+  "Individuals": "个人",
+  "IndividualsDesc": "创建和编辑文本文档、演示文稿，生成和填写常用表单。",
+  "Legal": "法律",
+  "LegalDesc": "创建并协同编辑声明、证书、许可证申请，批注并填写协议及其他法律文件。",
+
+  "SecureForSensitiveDocuments": "安全保护敏感文档",
+  "ProtectYourFiles": "通过设置访问权限来保护您的文件，自定义受邀人员可以执行哪些操作：具有访问管理权限的房间管理员、具有管理房间文件/文件夹权限的内容创作者、具有房间文件完全访问权限的编辑者或具有只读访问权限的查看者。",
+  "SecureImgUrl": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents.png",
+  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents@2x.png",
+  "ConvenientForMultipleCoAuthors": "方便多人协同编辑",
+  "CollaborateEffectively": "高效协作更快地完成工作",
+  "CostEffectiveForAnyBudget": "适合各种预算",
+  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors.png",
+  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors@2x.png",
+  "PayForAdminsOnlyAndAdd": "仅为管理员付费，免费添加任意数量的普通用户和访客。小型团队可以使用免费的初创计划。ONLYOFFICE 协作空间适用于所有企业，无论是中小企业还是大型企业。想要完全控制您的企业数据？在您的私有服务器上部署协作空间。",
+  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget.png",
+  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMore": "了解更多",
+
+  "LearnMoreHeading": "了解更多有关 ONLYOFFICE 协作空间的信息",
+  "CustomerTestimonial": "客户见证",
+  "HowKinderhausBerlinSharesAndCollaborates": "柏林儿童之家如何使用 ONLYOFFICE 协作空间共享和协作处理敏感文件",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/zh-hans/2023/12/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "阅读案例",
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "通过视频指南掌握 ONLYOFFICE 协作空间",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "立即观看",
+  "HelpCenter": "帮助中心",
+  "ExploreTheToolsetAndCollaborativeFeatures": "探索编辑器中的工具集和协作功能",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/userguides/docs-index.aspx"
+}

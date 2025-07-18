@@ -1,0 +1,50 @@
+{
+  "PageTitle": "Work together better in collaboration rooms | ONLYOFFICE",
+  "PageDescription": "Enjoy stress-free co-editing in ONLYOFFICE DocSpace. Easily get any group work or project done.",
+
+  "WorkTogetherBetterInCollaborationRooms": "Work together better in <0>collaboration rooms</0>",
+  "EnjoyStressFreeCoEditing": "Enjoy stress-free co-editing in ONLYOFFICE DocSpace",
+
+  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header@2x.png",
+
+  "CreateFreeAccount": "Create free account",
+  "IdealForTeamwork": "Ideal for teamwork",
+  "EasilyGetAnyGroupWorkOrProject": "Easily get any group work or project done together with your colleagues, team members, partners, and others",
+  "Education": "Education",
+  "EducationDesc": "Write essays, work on longreads, fill out assignments, edit Excel grids, prepare group presentations, create and read e-books.",
+  "Business": "Business",
+  "BusinessDesc": "Collaborate on contracts, reports, product slides, etc. for every stage of your business, supercharge with diagrams, charts and graphics.",
+  "Individuals": "Individuals",
+  "IndividualsDesc": "Create and edit text documents and presentations, generate and fill out forms in daily-life scenarios.",
+  "Legal": "Legal",
+  "LegalDesc": "Build and co-author statements, certificates, license applications, annotate and fill out agreements and other legal documents.",
+
+  "SecureForSensitiveDocuments": "Secure for sensitive documents",
+  "ProtectYourFiles": "Protect your files by setting access level to define which actions will be available to the invited people: Room managers with access management rights, Content creators with access to manage room files/folders, Editors with full access to the room files, or Viewers with read-only access.",
+  "SecureImgUrl": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents.png",
+  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents@2x.png",
+  "ConvenientForMultipleCoAuthors": "Convenient for multiple co-authors",
+  "CollaborateEffectively": "Collaborate effectively to get work done faster",
+  "CostEffectiveForAnyBudget": "Cost-effective for any budget",
+  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors.png",
+  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors@2x.png",
+  "PayForAdminsOnlyAndAdd": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses regardless of whether it's an SMB or a large enterprise. Want to have full control over your corporate data? Deploy DocSpace on your private server.",
+  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget.png",
+  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMore": "Learn more",
+
+  "LearnMoreHeading": "Learn more about DocSpace Collaboration rooms",
+  "CustomerTestimonial": "Customer testimonial",
+  "HowKinderhausBerlinSharesAndCollaborates": "How Kinderhaus Berlin shares and collaborates on sensitive files with ONLYOFFICE DocSpace",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Read story",
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Master ONLYOFFICE DocSpace with video guides",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Watch now",
+  "HelpCenter": "Help Center",
+  "ExploreTheToolsetAndCollaborativeFeatures": "Explore the toolset and collaborative features available in the editors",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/userguides/docs-index.aspx"
+}

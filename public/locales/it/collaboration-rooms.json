@@ -1,0 +1,50 @@
+{
+  "PageTitle": "Lavorate meglio insieme nelle stanze di collaborazione",
+  "PageDescription": "Approfittate del co-editing senza stress in ONLYOFFICE DocSpace. Ottenete qualsiasi lavoro o progetto di gruppo fatti senza fatica.",
+
+  "WorkTogetherBetterInCollaborationRooms": "Lavorate meglio insieme nelle <0>stanze di collaborazione</0>",
+  "EnjoyStressFreeCoEditing": "Approfittate del co-editing senza stress in ONLYOFFICE DocSpace",
+
+  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header@2x.png",
+
+  "CreateFreeAccount": "Crea account gratuito",
+  "IdealForTeamwork": "Ideale per il lavoro di squadra",
+  "EasilyGetAnyGroupWorkOrProject": "Ottieni qualsiasi lavoro o progetto di gruppo fatti insieme ai tuoi colleghi, membri del team, partner e altri",
+  "Education": "Istruzione",
+  "EducationDesc": "Scrivi saggi, lavora su scritture, fai i compiti, modifica le tabelle Excel, prepara presentazioni di gruppo, crea e leggi e-book.",
+  "Business": "Affari",
+  "BusinessDesc": "Collabora su contratti, report, presentazioni di prodotti, ecc. su ogni tappa del tuo lavoro, aggiungi diagrammi, grafici e grafica.",
+  "Individuals": "Privati",
+  "IndividualsDesc": "Crea e modifica documenti di testo e presentazioni, genera e compila i moduli di scenari di vita quotidiana.",
+  "Legal": "Studi legali",
+  "LegalDesc": "Crea e condividi dichiarazioni, certificati, richieste di licenza, annota e compila accordi e altri documenti legali.",
+
+  "SecureForSensitiveDocuments": "Sicuro per i documenti sensibili",
+  "ProtectYourFiles": "Proteggi i tuoi file impostando un livello di accesso per definire quali azioni saranno disponibili per le persone invitate: gestori delle stanze con diritti di gestione, content creator con accesso alla gestione dei file e delle cartelle della stanza, editor con accesso completo ai file della stanza, o visualizzatori con accesso di sola lettura.",
+  "SecureImgUrl": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents.png",
+  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents@2x.png",
+  "ConvenientForMultipleCoAuthors": "Comodo per più coautori",
+  "CollaborateEffectively": "Collabora in modo efficace per ottenere il tuo lavoro fatto più velocemente",
+  "CostEffectiveForAnyBudget": "Conveniente per qualsiasi budget",
+  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors.png",
+  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors@2x.png",
+  "PayForAdminsOnlyAndAdd": "Paga solo per gli amministratori e aggiungi gratuitamente qualsiasi numero di utenti regolari e ospiti. Approfitta di un piano Startup gratuito per piccoli team. ONLYOFFICE DocSpace è adatto a tutte le aziende, indipendentemente dal fatto che si tratti di PMI o di grandi imprese. Vuoi avere il controllo completo sui tuoi dati aziendali? Distribuisci DocSpace sul tuo server privato.",
+  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget.png",
+  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMore": "Ulteriori informazioni",
+
+  "LearnMoreHeading": "Ulteriori informazioni sulle stanze di collaborazione di DocSpace",
+  "CustomerTestimonial": "Testimonianza del cliente",
+  "HowKinderhausBerlinSharesAndCollaborates": "Kinderhaus Berlin utilizza ONLYOFFICE DocSpace per la condivisione e la collaborazione sui file sensibili",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/it/2023/11/onlyoffice-doscspace-per-la-casa-dei-bambini",
+  "ReadStory": "Leggi la storia",
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Padroneggia ONLYOFFICE DocSpace con guide video",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Guarda ora",
+  "HelpCenter": "Centro assistenza",
+  "ExploreTheToolsetAndCollaborativeFeatures": "Esplora il set di strumenti e le funzionalità di collaborazione disponibili negli editor",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/userguides/docs-index.aspx"
+}

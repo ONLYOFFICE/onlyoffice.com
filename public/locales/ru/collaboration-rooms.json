@@ -1,0 +1,50 @@
+{
+  "PageTitle": "Работайте вместе еще эффективнее в комнатах для совместной работы",
+  "PageDescription": "Легко редактируйте документы совместно в ONLYOFFICE DocSpace. Легко выполняйте работу в группе и реализуйте проекты.",
+
+  "WorkTogetherBetterInCollaborationRooms": "Работайте вместе еще эффективнее в <0>комнатах для совместной работы</0>",
+  "EnjoyStressFreeCoEditing": "Легко редактируйте документы совместно в ONLYOFFICE DocSpace",
+
+  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header@2x.png",
+
+  "CreateFreeAccount": "Создать бесплатный аккаунт",
+  "IdealForTeamwork": "Идеальны для командной работы",
+  "EasilyGetAnyGroupWorkOrProject": "Легко выполняйте работу в группе и реализуйте проекты вместе с коллегами, участниками команды, партнерами и другими пользователями",
+  "Education": "Обучение",
+  "EducationDesc": "Пишите статьи, работайте над объемными текстами, выполняйте задания, редактируйте таблицы Excel, готовьте групповые презентации, создавайте и читайте электронные книги.",
+  "Business": "Бизнес",
+  "BusinessDesc": "Работайте совместно над контрактами, отчетами, презентациями продуктов на каждом этапе вашего бизнеса, создавайте диаграммы, схемы и графики.",
+  "Individuals": "Личные документы",
+  "IndividualsDesc": "Создавайте и редактируйте текстовые документы и презентации, создавайте и заполняйте формы для решения повседневных задач.",
+  "Legal": "Право",
+  "LegalDesc": "Создавайте и совместно редактируйте заявления, сертификаты, заявки на получение лицензий, комментируйте и заполняйте соглашения и другие юридические документы.",
+
+  "SecureForSensitiveDocuments": "Безопасны для конфиденциальных документов",
+  "ProtectYourFiles": "Для защиты файлов установите уровень доступа и определите действия, доступные приглашенным пользователям: Менеджеры комнат с правами управления доступом, Создатели контента с правами управления файлами и папками в комнате, Редакторы с полным доступом к файлам в комнате или Зрители с доступом только для чтения.",
+  "SecureImgUrl": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents.png",
+  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents@2x.png",
+  "ConvenientForMultipleCoAuthors": "Удобны для нескольких соавторов",
+  "CollaborateEffectively": "Работайте совместно быстрее и эффективнее",
+  "CostEffectiveForAnyBudget": "Экономичны для любого бюджета",
+  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors.png",
+  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors@2x.png",
+  "PayForAdminsOnlyAndAdd": "Платите только за администраторов и добавляйте любое количество обычных пользователей и гостей бесплатно. Воспользуйтесь бесплатным тарифом Startup для небольших команд. ONLYOFFICE DocSpace подходит для всех предприятий, независимо от того, это малый и средний бизнес или крупная корпорация. Хотите получить полный контроль над корпоративными данными? Разверните DocSpace на своем сервере.",
+  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget.png",
+  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMore": "Узнать больше",
+
+  "LearnMoreHeading": "Узнать больше о комнатах для совместной работы DocSpace",
+  "CustomerTestimonial": "Отзывы клиентов",
+  "HowKinderhausBerlinSharesAndCollaborates": "Как Дом ребенка в Берлине организует совместную работу и предоставление доступа к конфиденциальным файлам с помощью ONLYOFFICE DocSpace",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Прочитать историю",
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Освойте ONLYOFFICE DocSpace с помощью видеоуроков",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Смотреть сейчас",
+  "HelpCenter": "Центр помощи",
+  "ExploreTheToolsetAndCollaborativeFeatures": "Откройте для себя инструменты и функциональные возможности для совместной работы, доступные в редакторах",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docs/userguides"
+}
