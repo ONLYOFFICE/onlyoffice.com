@@ -1,0 +1,73 @@
+{
+  "PageTitle": "Office para Moodle | ONLYOFFICE Docs",
+  "PageDescription": "Edite e crie documentos de escritório em conjunto no Moodle, uma plataforma de aprendizagem de código aberto e sistema de gerenciamento de cursos.",
+
+  "OnlineOfficeForMoodle": "Escritório online para Moodle",
+  "WorkWithOfficeDocuments": "Trabalhe com documentos de escritório no Moodle usando o ONLYOFFICE",
+  "GetStarted": "Get started",
+
+  "EditAndCollaborateOnOfficeDocuments": "Edite e colabore em documentos de escritório online diretamente na estrutura do curso do Moodle",
+  "DocumentsTab1Label": "Carregue, crie e edite documentos, planilhas, apresentações, formulários",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-moodle/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "Navegue por documentos PDF, adicione comentários, anotações, desenhos",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-moodle/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "Compartilhe documentos para visualização ou coedição em tempo real",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-moodle/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "Impeça que os alunos baixem e imprimam documentos",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-moodle/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-4@2x.png",
+  "DocumentsTab5Label": "Proteja documentos com senha",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-moodle/documents/documents-5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-5@2x.png",
+
+  "ScheduleYourFreeDemo": "Agende sua demonstração gratuita",
+
+  "QuoteText": "\"Recomendamos absolutamente o ONLYOFFICE para escolas. Talvez haja software dedicado para empresas, mas se você deseja controlar seus dados e ter um sistema colaborativo e simples para trabalhar com seus alunos, essa é uma ótima solução.\"",
+  "QuoteAuthor": "Dr. Colin Jonathan",
+  "QuoteAuthorInfo": "Professor de Física e Química, Robótica, Ciência e Tecnologia",
+
+  "CreateShareAndGradeStudentsAssignments": "Crie, compartilhe e avalie as tarefas dos alunos",
+  "AssignmentsTab1Label": "Construa formulários PDF complexos adicionando diferentes tipos de campos",
+  "AssignmentsTab1ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-1.png",
+  "AssignmentsTab1ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-1@2x.png",
+  "AssignmentsTab2Label": "Use documentos, planilhas, apresentações para preparar tarefas",
+  "AssignmentsTab2ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-2.png",
+  "AssignmentsTab2ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-2@2x.png",
+  "AssignmentsTab3Label": "Compartilhe-os com os alunos para que possam preenchê-los facilmente online e devolvê-los",
+  "AssignmentsTab3ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-3.png",
+  "AssignmentsTab3ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-3@2x.png",
+  "AssignmentsTab4Label": "Visualize e avalie as submissões de seus alunos",
+  "AssignmentsTab4ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-4.png",
+  "AssignmentsTab4ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Construído para funcionar no Moodle sem problemas",
+  "MarketplaceConnectorDescription": "Instale o aplicativo ONLYOFFICE para Moodle hoje no Moodle App Marketplace",
+
+  "WhyOO": "Por que ONLYOFFICE?",
+  "FeaturesAIHelper": "Um conjunto robusto de ferramentas de edição, formatação e estilo. Integração com Mendeley e Zotero. <0>Assistente de IA.</0>",
+  "FeaturesCoEditing": "<0>Coedição</0> em tempo real e bloqueio de parágrafos, revisão, comparação de documentos, comentários e chat. Chamadas de áudio e vídeo.",
+  "FeaturesFormats": "Suporte para mais de <0>50 formatos de arquivo</0>. Totalmente compatível com formatos do MS Office.",
+  "FeaturesDesktopEditors": "Acesso online de qualquer dispositivo. Edite seus documentos do Moodle no ambiente de desktop com <1>ONLYOFFICE Desktop Editors</1>.",
+  "FeaturesOpenSourceCode": "JWT. Marca d'água e proteção por senha. <0>Código de código aberto</0> disponível no GitHub.",
+  "FeaturesFreeTrial": "Versões Enterprise escaláveis. <0>Teste gratuito de 30 dias.</0> Descontos educacionais.",
+
+  "HowToStart": "Como começar?",
+  "HowToStartStep1": "Implante o <0>ONLYOFFICE Docs</0> em seu próprio servidor ou inscreva-se no <1>ONLYOFFICE Docs Cloud</1>",
+  "HowToStartStep2": "Obtenha os plugins do diretório Moodle: <0>plugin de integração principal</0> / <1>plugin de envio de tarefas</1>.",
+  "HowToStartStep3": "Siga as etapas habituais de instalação de plugins do Moodle.",
+  "HowToStartStep4": "Configure o plugin instalado.",
+  "HowToConnect": "Conectando o ONLYOFFICE Docs ao Moodle",
+  "ReadDetailedInstructions": "Leia instruções detalhadas na <0>Central de Ajuda</0>",
+
+  "LearnMoreHeading": "Saiba mais sobre a integração do Moodle com o ONLYOFFICE",
+  "HowEnsuresDigitalEquality": "Como o Collège-Lycée Sacré Cœur de Taravao garante igualdade digital para todos os alunos usando ONLYOFFICE e Moodle",
+  "ReadTheFullStory": "Leia a história completa",
+  "WatchAVideoVersion": "Assista a uma versão em vídeo",
+  "WhyWeChoseMoodle": "Por que escolhemos o Moodle para criar um centro de treinamento ONLYOFFICE",
+  "NewUpdatesOfOOPlugins": "Novas atualizações dos plugins ONLYOFFICE para Moodle: criação e edição de formulários PDF, conexão com Docs Cloud, verificação de certificado",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço web favorito? Ou você desenvolveu um?"
+}

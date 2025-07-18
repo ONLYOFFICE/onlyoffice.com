@@ -1,0 +1,73 @@
+{
+  "PageTitle": "Office para Moodle | ONLYOFFICE Docs",
+  "PageDescription": "Edite y cree documentos de oficina de forma colaborativa en Moodle, una plataforma de aprendizaje de código abierto y un sistema de gestión de cursos.",
+
+  "OnlineOfficeForMoodle": "Oficina en línea para Moodle",
+  "WorkWithOfficeDocuments": "Trabaje con documentos de oficina en Moodle usando ONLYOFFICE",
+  "GetStarted": "Get started",
+
+  "EditAndCollaborateOnOfficeDocuments": "Edite y colabore en documentos de oficina en línea directamente dentro de la estructura del curso de Moodle",
+  "DocumentsTab1Label": "Suba, cree y edite documentos, hojas de cálculo, presentaciones, formularios",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-moodle/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "Navegue por documentos PDF, agregue comentarios, anotaciones, dibujos",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-moodle/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "Comparta documentos para visualización o coedición en tiempo real",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-moodle/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "Evite que los estudiantes descarguen e impriman documentos",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-moodle/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-4@2x.png",
+  "DocumentsTab5Label": "Proteja documentos con contraseña",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-moodle/documents/documents-5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-5@2x.png",
+
+  "ScheduleYourFreeDemo": "Programe su demostración gratuita",
+
+  "QuoteText": "\"Recomendamos absolutamente ONLYOFFICE a las escuelas. Tal vez hay software dedicado para empresas, pero si quiere controlar sus datos y tener un sistema colaborativo y simple para trabajar con sus estudiantes, es una gran solución.\"",
+  "QuoteAuthor": "Dr. Colin Jonathan",
+  "QuoteAuthorInfo": "Profesor de Física y Química, Robótica, Ciencia y Tecnología",
+
+  "CreateShareAndGradeStudentsAssignments": "Cree, comparta y califique las tareas de los estudiantes",
+  "AssignmentsTab1Label": "Construya formularios PDF complejos añadiendo diferentes tipos de campos",
+  "AssignmentsTab1ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-1.png",
+  "AssignmentsTab1ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-1@2x.png",
+  "AssignmentsTab2Label": "Use documentos, hojas de cálculo, presentaciones para preparar tareas",
+  "AssignmentsTab2ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-2.png",
+  "AssignmentsTab2ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-2@2x.png",
+  "AssignmentsTab3Label": "Compártalos con los estudiantes para que puedan completarlos fácilmente en línea y devolvérselos",
+  "AssignmentsTab3ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-3.png",
+  "AssignmentsTab3ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-3@2x.png",
+  "AssignmentsTab4Label": "Vea y califique las entregas de sus estudiantes",
+  "AssignmentsTab4ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-4.png",
+  "AssignmentsTab4ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Diseñado para trabajar en Moodle sin problemas",
+  "MarketplaceConnectorDescription": "Instale la aplicación ONLYOFFICE para Moodle hoy desde el Moodle App Marketplace",
+
+  "WhyOO": "¿Por qué ONLYOFFICE?",
+  "FeaturesAIHelper": "Un conjunto sólido de herramientas de edición, formato y estilo. Integración con Mendeley y Zotero. <0>Asistente de IA.</0>",
+  "FeaturesCoEditing": "<0>Coedición</0> en tiempo real y bloqueo de párrafos, revisión, comparación de documentos, comentarios y chat. Llamadas de audio y video.",
+  "FeaturesFormats": "Soporte para más de <0>50 formatos de archivo</0>. Totalmente compatible con formatos de MS Office.",
+  "FeaturesDesktopEditors": "Acceso en línea desde cualquier dispositivo. Edite sus documentos de Moodle en el entorno de escritorio con <1>ONLYOFFICE Desktop Editors</1>.",
+  "FeaturesOpenSourceCode": "JWT. Marca de agua y protección con contraseña. <0>Código de fuente abierta</0> disponible en GitHub.",
+  "FeaturesFreeTrial": "Versiones Enterprise escalables. <0>Prueba gratuita de 30 días.</0> Descuentos educativos.",
+
+  "HowToStart": "¿Cómo empezar?",
+  "HowToStartStep1": "Implemente <0>ONLYOFFICE Docs</0> en su propio servidor o regístrese en <1>ONLYOFFICE Docs Cloud</1>",
+  "HowToStartStep2": "Obtenga los plugins del directorio de Moodle: <0>plugin de integración principal</0> / <1>plugin de envío de tareas</1>.",
+  "HowToStartStep3": "Siga los pasos habituales de instalación de plugins de Moodle.",
+  "HowToStartStep4": "Configure el plugin instalado.",
+  "HowToConnect": "Conectando ONLYOFFICE Docs con Moodle",
+  "ReadDetailedInstructions": "Lea instrucciones detalladas en el <0>Centro de Ayuda</0>",
+
+  "LearnMoreHeading": "Aprenda más sobre la integración de Moodle con ONLYOFFICE",
+  "HowEnsuresDigitalEquality": "Cómo el Collège-Lycée Sacré Cœur de Taravao garantiza la igualdad digital para todos los estudiantes utilizando ONLYOFFICE y Moodle",
+  "ReadTheFullStory": "Lea la historia completa",
+  "WatchAVideoVersion": "Vea una versión en video",
+  "WhyWeChoseMoodle": "Por qué elegimos Moodle para crear un centro de formación ONLYOFFICE",
+  "NewUpdatesOfOOPlugins": "Nuevas actualizaciones de los plugins de ONLYOFFICE para Moodle: creación y edición de formularios PDF, conexión a Docs Cloud, verificación de certificados",
+
+  "NeedAnAppToConnect": "¿Necesita una aplicación para conectar ONLYOFFICE Docs a su servicio web favorito? ¿O ha desarrollado una?"
+}
