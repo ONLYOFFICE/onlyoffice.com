@@ -32,7 +32,7 @@
   "MakingCalls": "Making calls with Twilio",
   "CloseIntegration": "Close integration with Mail, Projects, and Calendar",
   "CrmImgUrl": "/images/templates/workspace/manage/en/crm.png",
-  "CrmImgUrl2x": "images/templates/workspace/manage/en/crm@2x.png",
+  "CrmImgUrl2x": "/images/templates/workspace/manage/en/crm@2x.png",
 
   "Projects": "Projects",
   "OrganizeYourTeam": "Organize your team for success. Create projects, prioritize tasks, and set deadlines. Track time and generate reports to analize your team’s productivity.",

@@ -41,7 +41,10 @@ const GetStarted = () => {
                 </StyledGetStartedItemContent>
                 <Button
                   as="a"
-                  href={t(item.link.href)}
+                  href={item.link.isExternal && item.link.href.startsWith("http")
+                    ? item.link.href
+                    : t(item.link.href)
+                  }
                   variant="secondary"
                   target={item.link.isExternal ? "_blank" : undefined}
                   rel="noopener noreferrer"
