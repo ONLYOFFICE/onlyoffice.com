@@ -10,6 +10,12 @@ const StyledFeatureIconsItemContent = styled.div<{
   display: grid;
   row-gap: 16px;
 
+  .buttons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
   @media ${device.mobile} {
     row-gap: 8px;
 

@@ -29,6 +29,11 @@ const StyledFeaturesContent = styled.div`
     }
   }
 
+  .buttons {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
   > div {
     padding: 112px 0;
 

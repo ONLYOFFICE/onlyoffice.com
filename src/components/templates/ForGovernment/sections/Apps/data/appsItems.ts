@@ -1,9 +1,10 @@
-interface IAppsItems {
+export interface IAppsItems {
   href: string;
   imageUrl: string;
   width: string;
   backgroundPositionX: string;
   label?: string;
+  platform?: "ios" | "android";
 }
 
 export const appsItems: IAppsItems[] = [
@@ -31,13 +32,15 @@ export const appsItems: IAppsItems[] = [
   {
     href: "https://itunes.apple.com/us/app/onlyoffice-documents/id944896972",
     imageUrl: "/images/templates/for-research/apps/download.svg",
-    width: "125px",
-    backgroundPositionX: "-97px",
+    width: "135px",
+    backgroundPositionX: "50%",
+    platform: "ios",
   },
   {
     href: "https://play.google.com/store/apps/details?id=com.onlyoffice.documents",
     imageUrl: "/images/templates/for-research/apps/download.svg",
     width: "130px",
-    backgroundPositionX: "-223px",
+    backgroundPositionX: "50%",
+    platform: "android",
   },
 ];

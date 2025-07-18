@@ -124,15 +124,7 @@ const FeatureIconsItem = ({
             </StyledFeatureIconsItemLink>
           ))}
           {!showButtonsOutside && Array.isArray(buttons) && buttons.length > 0 && (
-            <div className="buttons"
-              style={{
-                display: "flex",
-                gap: "16px",
-                flexWrap: "wrap",
-                justifyContent: "left",
-                alignItems: "center",
-              }}
-            >
+            <div className="buttons">
               {buttons.map(({ label, href, isExternal, isPrimary, isLink, isServer, links }, index) =>
                 isLink && Array.isArray(links) ? (
                    <Text as="div" key={index}>

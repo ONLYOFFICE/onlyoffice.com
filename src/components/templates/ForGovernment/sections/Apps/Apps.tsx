@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import {
   StyledAppsWrapper,
   StyledAppsList,
@@ -7,10 +8,36 @@ import {
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { appsItems } from "./data/appsItems";
+import { appsItems, IAppsItems } from "./data/appsItems";
 
 const Apps = () => {
   const { t } = useTranslation("for-government");
+  const { locale } = useRouter();
+
+  const imageUrl = t("AppsImage");
+  const imageUrlIOS = t("AppsImageIOS");
+  const imageUrlAndroid = t("AppsImageAndroid");
+
+  const filteredApps = appsItems.map((item) => {
+    const isTargetMobileApp =
+      item.href === "https://play.google.com/store/apps/details?id=com.onlyoffice.documents";
+
+    if (locale === "zh" && isTargetMobileApp) {
+      return {
+        ...item,
+        href: "/zh/download-desktop#mobile",
+      };
+    }
+
+    return item;
+  });
+    
+  const getImageUrl = (item: IAppsItems): string => {
+    if (imageUrl && imageUrl !== "AppsImage") return imageUrl;
+    if (item.platform === "ios") return imageUrlIOS;
+    if (item.platform === "android") return imageUrlAndroid;
+    return "/images/templates/for-research/apps/download.svg";
+  };
 
   return (
     <Section
@@ -30,7 +57,7 @@ const Apps = () => {
           />
           <Text label={t("AppsSubtitle")} color="#FFFFFF" textAlign="center" />
           <StyledAppsList>
-            {appsItems.map((item, index) => (
+            {filteredApps.map((item, index) => (
               <a
                 key={index}
                 href={item.href}
@@ -42,7 +69,7 @@ const Apps = () => {
               >
                 <div
                   style={{
-                    backgroundImage: `url(/images/templates/for-research/apps/download.svg)`,
+                    backgroundImage: `url(${getImageUrl(item)})`,
                     backgroundPosition: `${item.backgroundPositionX ?? "0px"} 50%`,
                     backgroundRepeat: "no-repeat",
                     width: item.width ?? "64px",

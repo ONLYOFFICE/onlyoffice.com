@@ -44,12 +44,12 @@ const StyledFeaturesContent = styled.div`
     &:before {
       content: "";
       position: absolute;
-      top: 10px;
+      top: 8px;
       left: 8px;
       width: 6px;
       height: 6px;
       background: #ff6f3d;
-      transform: rotate(45deg) translateY(-50%);
+      transform: rotate(45deg);
     }
   }
 
@@ -63,6 +63,7 @@ const StyledFeaturesContent = styled.div`
         content: "";
         width: 6px;
         height: 6px;
+        top: 10px;
         left: 0;
         margin-right: 24px;
         position: absolute;
@@ -121,6 +122,20 @@ const StyledFeaturesContent = styled.div`
   &:last-child {
     border: none;
     padding-bottom: 0;
+  }
+
+  .buttons {
+    gap: 32px !important;
+    flex-wrap: nowrap;
+
+    a {
+      line-height: 1.6em;
+    }
+
+    a:nth-child(2) {
+      font-size: 14px;
+      text-align: left;
+    }
   }
 
   @media ${device.mobile} {

@@ -34,7 +34,7 @@ const StyledAppsText = styled.div`
   margin: auto;
 
   p {
-    max-width: 930px;
+    max-width: 900px;
     line-height: 1.6em;
   }
 
