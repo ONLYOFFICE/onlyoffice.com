@@ -46,6 +46,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "spreadsheet-editor",
         "GetStarted",
         "Editors",
+        "FaqCollapse",
       ])),
       locale,
     },

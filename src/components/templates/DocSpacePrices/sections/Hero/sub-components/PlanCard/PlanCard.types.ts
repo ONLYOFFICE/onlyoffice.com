@@ -14,6 +14,7 @@ export interface IPlanCard {
     label?: string;
   };
   btn: {
+    dataTestId?: string;
     label: string;
     url?: string;
     onClick?: () => void;
