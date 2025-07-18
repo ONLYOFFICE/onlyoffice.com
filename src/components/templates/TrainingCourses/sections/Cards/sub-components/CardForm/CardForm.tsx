@@ -8,11 +8,16 @@ import { Link } from "@src/components/ui/Link";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";
 import { ILoaderButton } from "@src/components/ui/LoaderButton";
+import { preferredLang } from "./data/preferredLang";
+import { timeZone } from "./data/timeZone";
+
 import { ILocale } from "@src/types/locale";
 import {
   ICardFormProp,
   ICheckStatus,
-  IFormData }
+  IFormData,
+  IPreferredLang,
+  ITimeZone}
 from "@src/components/templates/TrainingCourses/TrainingCourses.types";
 
 import {
@@ -27,21 +32,32 @@ import {
   StyledCardFormOptions,
   StyledCardFormOverlay,
   StyledCardFormSelect,
+  StyledCardFormSelectText,
   StyledCardFormSelectWrapper,
   StyledCardFormStatusText,
+  StyledCardFormTextAgree,
+  StyledCardFormTextArea,
 } from "./CardForm.styled";
 
-const CardForm = ({ openModal, setOpenModal, locale, product }: ICardFormProp & ILocale ) => {
+const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & ILocale ) => {
   const { t } = useTranslation("training-courses");
+
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
+  const [isPreferredOpen, setIsPreferredOpen] = useState<boolean>(false);
+  const [isTimeZoneOpen, setIsTimeZoneOpen] = useState<boolean>(false);
   const refHCaptcha = useRef<ReactCaptcha | null>(null);
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
     companyName: "",
     email: "",
+    preferredLang: "",
+    timeZone: "",
+    commentArea: "",
     hCaptcha: null,
   });
+
+  console.log(formData.hCaptcha)
 
   const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
     fullName: "default",
@@ -58,6 +74,30 @@ const CardForm = ({ openModal, setOpenModal, locale, product }: ICardFormProp & 
   }
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  }
+
+  const handleChangeSelectLang = (lang: IPreferredLang["lang"]) => {
+    setFormData({
+      ...formData,
+      preferredLang: lang,
+    })
+    setIsPreferredOpen(false);
+  }
+
+  const handleChangeSelectTime = (time: ITimeZone["time"]) => {
+    setFormData({
+      ...formData,
+      timeZone: time,
+    })
+    setIsTimeZoneOpen(false);
+  }
+
+  const handleChangeTextArea = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     const { name, value } = event.target;
     setFormData({
       ...formData,
@@ -112,6 +152,9 @@ const CardForm = ({ openModal, setOpenModal, locale, product }: ICardFormProp & 
       fullName: "",
       companyName: "",
       email: "",
+      preferredLang: "",
+      timeZone: "",
+      commentArea: "",
       hCaptcha: null,
     })
     setCheckStatus({
@@ -167,8 +210,11 @@ const CardForm = ({ openModal, setOpenModal, locale, product }: ICardFormProp & 
             fullName: formData.fullName ?? "",
             company: formData.companyName ?? "",
             email: formData.email ?? "",
+            lang: formData.preferredLang ?? "",
+            timezone: formData.timeZone ?? "",
+            message: formData.commentArea ?? "",
+            course: course ?? "",
             from: from ?? "",
-            product: product ?? "",
             languageCode: locale ?? "",
           }),
         })
@@ -262,31 +308,75 @@ const CardForm = ({ openModal, setOpenModal, locale, product }: ICardFormProp & 
               onFocus={() => setCheckStatus((prev) => ({ ...prev, email: "default" }))}
             />
             {checkStatus.email === "error" && formData.email.length === 0 && (
-              <Text size={4} label={t("CardFormEmailIsEmpty")} color="#CB0000" />
+              <Text size={4} label={t("EmailIsEmpty")} color="#CB0000" />
             )}
             {checkStatus.email === "error" && formData.email.length > 0 && (
-              <Text size={4} label={t("CardFormEmailIsIncorrect")} color="#CB0000" />
+              <Text size={4} label={t("EmailIsIncorrect")} color="#CB0000" />
             )}
           </StyledCardFormInputWrapper>
           <StyledCardFormSelectWrapper>
-            <StyledCardFormSelect>
-              <Text size={4} label={t("PreferredLanguage")} />
-              <Text size={4} label={t("PreferredLanguage")} />
+            <StyledCardFormSelect
+              onClick={() => setIsPreferredOpen(!isPreferredOpen)}
+              $isOptionChoosed={formData.preferredLang.length > 0}
+            >
+              <StyledCardFormSelectText
+                size={4}
+                label={t("PreferredLanguage")}
+                $isActive={isPreferredOpen || formData.preferredLang.length > 0}
+              />
+              <Text size={4} label={t(formData.preferredLang)} />
             </StyledCardFormSelect>
-            <StyledCardFormOptions>
-              <StyledCardFormOption title="Preferred language*">Preferred language*</StyledCardFormOption>
-              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
-              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
-              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
-              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
-              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
-              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
-              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
-              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
-              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
-              <StyledCardFormOption title="blablabla">blablabla</StyledCardFormOption>
+            <StyledCardFormOptions $isOpen={isPreferredOpen}>
+              <StyledCardFormOption title={t("PreferredLanguage")}>
+                {t("PreferredLanguage")}
+              </StyledCardFormOption>
+              {preferredLang.map((item) => (
+                <StyledCardFormOption
+                  key={item.id}
+                  title={t(item.lang)}
+                  onClick={() => handleChangeSelectLang(item.lang)}
+                >
+                  {t(item.lang)}
+                </StyledCardFormOption>
+              ))}
             </StyledCardFormOptions>
           </StyledCardFormSelectWrapper>
+
+          <StyledCardFormSelectWrapper>
+            <StyledCardFormSelect
+              onClick={() => setIsTimeZoneOpen(!isTimeZoneOpen)}
+              $isOptionChoosed={formData.timeZone.length > 0}
+            >
+              <StyledCardFormSelectText
+                size={4}
+                label={t("TimeZone")}
+                $isActive={isTimeZoneOpen || formData.timeZone.length > 0}
+              />
+              <Text size={4} label={formData.timeZone} />
+            </StyledCardFormSelect>
+            <StyledCardFormOptions $isOpen={isTimeZoneOpen}>
+              <StyledCardFormOption title={t("TimeZone")}>
+                {t("TimeZone")}
+              </StyledCardFormOption>
+              {timeZone.map((item) => (
+                <StyledCardFormOption
+                  key={item.id}
+                  title={item.time}
+                  onClick={() => handleChangeSelectTime(item.time)}
+                >
+                  {item.time}
+                </StyledCardFormOption>
+              ))}
+            </StyledCardFormOptions>
+          </StyledCardFormSelectWrapper>
+
+          <StyledCardFormTextArea
+            fullWidth={true}
+            label={t("Comment")}
+            name="commentArea"
+            value={formData.commentArea}
+            onChange={(event) => handleChangeTextArea(event)}
+          />
 
           <StyledCardFormAgreementWrapper>
             <HCaptcha
@@ -294,10 +384,10 @@ const CardForm = ({ openModal, setOpenModal, locale, product }: ICardFormProp & 
               onVerify={handleHCaptchaChange}
               onExpire={() => handleHCaptchaChange(null)}
             />
-            <Text color="#808080" fontSize="12px">
+            <StyledCardFormTextAgree color="#808080" fontSize="12px">
               <Trans
                 t={t}
-                i18nKey={"ByClickingDownload"}
+                i18nKey={"ByClickingSubmit"}
                 components={[
                   <Link
                     key="0"
@@ -315,21 +405,23 @@ const CardForm = ({ openModal, setOpenModal, locale, product }: ICardFormProp & 
                     href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261" />
                 ]}
               />
-            </Text>
+            </StyledCardFormTextAgree>
           </StyledCardFormAgreementWrapper>
           <StyledCardFormButton
-            label={t("CardsButtonDownload")}
+            label={t("SubmitRequest")}
             disabled={
               checkStatus.fullName !== "success" ||
               checkStatus.companyName !== "success" ||
               checkStatus.email !== "success" ||
-              formData.hCaptcha === null
+              formData.hCaptcha === null ||
+              formData.preferredLang.length === 0 ||
+              formData.timeZone.length === 0
             }
             onClick={handleSubmit}
             status={status}
           />
           <StyledCardFormStatusText
-            label={status === "success" ? t("CardsFormSuccess") : t("CardsFormError")}
+            label={status === "success" ? t("RequestSuccessfully") : t("RequestError")}
             textAlign="center"
             $status={status}
             color={status === "error" ? "#CB0000" : "#333333"}

@@ -268,6 +268,7 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
                     price={moduleCard.price}
                     description={moduleCard.description}
                     new={moduleCard.new}
+                    course={moduleCard.title}
                   />
                 ))}
               </StyledCardsList>
@@ -296,6 +297,7 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
                     price={purposeCard.price}
                     description={purposeCard.description}
                     new={purposeCard.new}
+                    course={purposeCard.title}
                   />
                 ))}
               </StyledCardsList>

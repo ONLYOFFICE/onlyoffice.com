@@ -29,7 +29,8 @@ const Card = ({
   sessions,
   hours,
   price,
-  description }: ICardsDataItemProp & ILocale) => {
+  description,
+  course }: ICardsDataItemProp & ILocale) => {
   const { t } = useTranslation("training-courses");
   const [openModal, setOpenModal] = useState(false);
 
@@ -100,6 +101,7 @@ const Card = ({
           openModal={openModal}
           setOpenModal={setOpenModal}
           locale={locale}
+          course={course}
         />
       }
     </>

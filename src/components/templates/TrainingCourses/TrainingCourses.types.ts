@@ -16,7 +16,8 @@ interface ICardsDataItemProp {
   hours: string;
   price: string;
   description: string;
-  new?: boolean,
+  new?: boolean;
+  course: string;
 };
 
 interface ICardsDataItem extends ICardsDataItemProp {
@@ -26,14 +27,17 @@ interface ICardsDataItem extends ICardsDataItemProp {
 
 interface ICardFormProp {
   openModal: boolean;
-  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
-  product?: string;
+  setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
+  course?: string;
 }
 
 interface IFormData {
   fullName: string;
   companyName: string;
   email: string;
+  preferredLang: string;
+  timeZone: string;
+  commentArea: string;
   hCaptcha: string | null;
 }
 
@@ -42,6 +46,16 @@ interface ICheckStatus {
   companyName: "default" | "success" | "error";
   email: "default" | "success" | "error";
   hCaptcha: "default" | "success" | "error";
+}
+
+interface IPreferredLang {
+  id: number;
+  lang: string;
+}
+
+interface ITimeZone {
+  id: number;
+  time: string;
 }
 
 interface IFaqDataItem {
@@ -72,6 +86,8 @@ export type {
   ICardFormProp,
   IFormData,
   ICheckStatus,
+  IPreferredLang,
+  ITimeZone,
   IFaqDataItem,
   ITestimonialsItem,
   TDropdownType,
