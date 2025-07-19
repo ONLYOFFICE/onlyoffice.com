@@ -32,7 +32,8 @@ const StyledHeroHeading = styled(Heading)<{ $locale?: string }>`
   margin-bottom: 48px;
 
   span {
-    display: ${({ $locale }) => ($locale === "de" ? "inline-block" : "inline")};
+    display: ${({ $locale }) =>
+      $locale === "en" || $locale === "de" ? "inline-block" : "inline"};
   }
 
   @media ${device.tabletS} {
