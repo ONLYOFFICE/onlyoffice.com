@@ -1,8 +1,13 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
-export const items: IBlogCard[] = [
+interface IBlogCardItem extends IBlogCard {
+  zhImgUrl?: string;
+}
+
+export const items: IBlogCardItem[] = [
   {
     imgUrl: "/images/templates/ai-assistants/learn-more/ai_blog_1.png",
+    zhImgUrl: "/images/templates/ai-assistants/learn-more/ai_blog_1_zh.png",
     heading: { label: "Blog" },
     text: "FAQ",
     links: [

@@ -11,9 +11,11 @@ import { Input } from "@src/components/ui/Input";
 import { Button } from "@src/components/ui/Button";
 import { useState } from "react";
 import { Text } from "@src/components/ui/Text";
+import { useRouter } from "next/router";
 
 const Hero = () => {
   const { t } = useTranslation("ai-assistants");
+  const locale = useRouter();
   const [email, setEmail] = useState<string>("");
 
   const saveEmail = () => {
@@ -32,7 +34,11 @@ const Hero = () => {
     >
       <Container maxWidth="1280px">
         <StyledHeroWrapper>
-          <StyledHeroHeading size={1} textAlign="center">
+          <StyledHeroHeading
+            size={1}
+            textAlign="center"
+            $locale={locale.locale}
+          >
             <Trans
               t={t}
               i18nKey="HeroTitle"

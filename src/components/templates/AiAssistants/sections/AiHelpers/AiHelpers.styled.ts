@@ -1,3 +1,4 @@
+import { Heading } from "@src/components/ui/Heading";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
@@ -14,6 +15,12 @@ const StyledAiHelpersWrapper = styled.div`
   }
 `;
 
+const StyledAiHelpersHeading = styled(Heading)<{ $locale?: string }>`
+  span {
+    display: ${({ $locale }) => ($locale === "ru" ? "inline-block" : "inline")};
+  }
+`;
+
 const StyledAiHelpersBtnsWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -25,4 +32,8 @@ const StyledAiHelpersBtnsWrapper = styled.div`
   }
 `;
 
-export { StyledAiHelpersWrapper, StyledAiHelpersBtnsWrapper };
+export {
+  StyledAiHelpersWrapper,
+  StyledAiHelpersHeading,
+  StyledAiHelpersBtnsWrapper,
+};

@@ -7,24 +7,32 @@ import { FeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
 import { helpers } from "./data/helpers";
 import {
   StyledAiHelpersBtnsWrapper,
+  StyledAiHelpersHeading,
   StyledAiHelpersWrapper,
 } from "./AiHelpers.styled";
 import { Button } from "@src/components/ui/Button";
+import { useRouter } from "next/router";
 
 const AiHelpers = () => {
   const { t } = useTranslation("ai-assistants");
+  const locale = useRouter();
 
   return (
     <Section>
       <Container>
         <StyledAiHelpersWrapper>
-          <Heading level={2} size={2} textAlign="center">
+          <StyledAiHelpersHeading
+            level={2}
+            size={2}
+            textAlign="center"
+            $locale={locale.locale}
+          >
             <Trans
               t={t}
               i18nKey="MakeTheMost"
               components={[<Text as="span" color="#FF6F3D" key={0} />]}
             />
-          </Heading>
+          </StyledAiHelpersHeading>
           {helpers.map((helper, index) => (
             <FeatureSwitcher
               key={index}

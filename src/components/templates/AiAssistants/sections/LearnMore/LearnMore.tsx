@@ -7,9 +7,11 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { BlogCard } from "@src/components/widgets/BlogCard";
 import { items } from "./data/items";
+import { useRouter } from "next/router";
 
 const LearnMore = () => {
   const { t } = useTranslation("ai-assistants");
+  const locale = useRouter();
 
   return (
     <Section tabletSmallSpacing={["72px", "72px"]} background="#F9F9F9">
@@ -24,7 +26,7 @@ const LearnMore = () => {
             <BlogCard
               className="blog-card"
               key={index}
-              imgUrl={item.imgUrl}
+              imgUrl={locale.locale === "zh" ? (item.zhImgUrl || item.imgUrl) : item.imgUrl}
               heading={{ label: t(item.heading.label) }}
               text={t(item.text ?? "")}
               links={item.links?.map((item) => ({
