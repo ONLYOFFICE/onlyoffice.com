@@ -3,18 +3,18 @@ import { Container } from "@src/components/ui/Container";
 import {
   StyledConversionHeading,
   StyledConversionImage,
-  StyledConversionSection,
   StyledConversionText,
   StyledConversionWrapper,
 } from "./Conversion.styled";
 import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";
+import { Section } from "@src/components/ui/Section";
 
 const Conversion = () => {
   const { t } = useTranslation("conversion-api");
 
   return (
-    <StyledConversionSection tabletSmallSpacing={["88px", "88px"]}>
+    <Section tabletSmallSpacing={["88px", "88px"]} background="#333333">
       <Container>
         <StyledConversionWrapper>
           <div>
@@ -39,14 +39,14 @@ const Conversion = () => {
             </StyledConversionText>
             <Button
               as="a"
-              href="mailto:sales@onlyoffice.com?subject=ONLYOFFICE%20Conversion%20API%20request"
+              href={`mailto:sales@onlyoffice.com?subject=${t("ConversionApiLinkSubject")}`}
               label={t("GetInTouch")}
             />
           </div>
           <StyledConversionImage />
         </StyledConversionWrapper>
       </Container>
-    </StyledConversionSection>
+    </Section>
   );
 };
 
