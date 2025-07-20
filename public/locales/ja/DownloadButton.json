@@ -1,7 +1,7 @@
 {
-  "windows": "For Windows",
-  "macos": "For macOS",
-  "linux": "For Linux",
+  "windows": "Windows",
+  "macos": "Mac OS",
+  "linux": "Linux",
   "app-store": {
     "light": "/images/ui/download-button/ja/app-store.svg",
     "dark": "/images/ui/download-button/ja/app-store.svg"

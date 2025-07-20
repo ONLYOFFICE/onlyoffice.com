@@ -18,7 +18,6 @@ const StyledSeamlesslyWrapper = styled.div`
   display: grid;
   grid-template-columns: 352px auto;
   column-gap: 32px;
-  align-items: center;
 
   @media ${device.tablet} {
     grid-template-columns: 1fr;
