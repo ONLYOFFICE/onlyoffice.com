@@ -4,11 +4,13 @@ import { ITooltip } from "./Tooltip.types";
 const StyledTooltipBtn = styled.div<{
   $width: ITooltip["width"];
   $infoIcon?: ITooltip["infoIcon"];
+  $verticalAlign?: ITooltip["verticalAlign"];
 }>`
   display: inline-flex;
   border: none;
   padding: 0;
   background-color: transparent;
+  vertical-align: ${(props) => props.$verticalAlign};
   cursor: pointer;
 
   ${(props) =>

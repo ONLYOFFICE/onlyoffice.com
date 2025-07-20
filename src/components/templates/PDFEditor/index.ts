@@ -1,0 +1,1 @@
+export { PDFEditorTemplate } from "./PDFEditor";

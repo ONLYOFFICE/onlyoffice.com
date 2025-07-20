@@ -106,6 +106,7 @@ const FeaturesTable = ({
                 {item.name ? (
                   <StyledFeaturesTableButton
                     key={index}
+                    data-testid={item.dataTestId}
                     forwardedAs={item.url ? "a" : "button"}
                     variant={item.variant}
                     href={item.url ? item.url : undefined}

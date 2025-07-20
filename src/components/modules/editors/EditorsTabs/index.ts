@@ -1,0 +1,1 @@
+export { EditorsTabs } from "./EditorsTabs";

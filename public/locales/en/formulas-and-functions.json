@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Spreadsheet formulas and functions | ONLYOFFICE",
+  "PageDescription": "Insert functions, access categories and recently applied formulas, work with named ranges, and calculate your sheets and entire workbooks, all in one place.",
+  "Header": "Carry out precise calculations with minimal effort",
+  "SubHeader": "Use over 450 Excel spreadsheet formulas to process data for any task",
+
+  "HeroImgUrl": "/images/templates/formulas-and-functions/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/formulas-and-functions/hero/hero@2x.png",
+
+  "Feature1Title": "Easily calculate with over 450 spreadsheet functions",
+  "Feature1Desc": "Insert functions, access categories and recently applied formulas, work with named ranges, and calculate your sheets and entire workbooks, all in one place. Inspect results in large spreadsheets using Watch Window. Use Trace Precedents and Trace Dependents to display the relationships between formulas and cells. Insert equations and symbols to describe applied calculations.",
+
+  "Feature2Title": "Define cell ranges to quickly apply Excel formulas",
+  "Feature2Desc": "Define and name cell ranges and use them as arguments, name whole formatted tables, and manage ranges so you can use them as internal hyperlinks.",
+
+  "Feature3Title": "Validate data entry",
+  "Feature3Desc": "Define data validation rules to ensure only relevant data is filled in your sheets for correct calculations. Apply validation to numbers and texts and set detailed conditions to precisely filter out errors.",
+
+  "Feature4Title": "Protect the structure and content of a spreadsheet",
+  "Feature4Desc": "Set a password on the entire spreadsheet, workbook, and even a separate sheet. Hide formulas to keep them private. Lock cells, shapes, and text. Enable editing only in specified ranges.",
+
+  "Feature5Title": "Automate your work with macros",
+  "Feature5Desc": "Using a special plugin and our API, create your own JavaScript macros or use existing ones to automate calculations and standardize spreadsheets. Run macros automatically or disable them and receive notifications about macros in the editor.",
+
+  "Feature1ImgUrl": "/images/templates/formulas-and-functions/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/formulas-and-functions/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/formulas-and-functions/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/formulas-and-functions/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/formulas-and-functions/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/formulas-and-functions/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/formulas-and-functions/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/formulas-and-functions/features/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/formulas-and-functions/features/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/formulas-and-functions/features/pic5@2x.png"
+}

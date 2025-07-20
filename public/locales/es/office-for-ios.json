@@ -1,0 +1,66 @@
+{
+  "PageTitle": "Suite de oficina móvil gratuita para iPhone y iPad | ONLYOFFICE Documents",
+  "PageDescription": "Edita y coedita documentos, hojas de cálculo y presentaciones, rellena formularios desde tus dispositivos iOS.",
+
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, una sólida <0>suite de oficina móvil</0> para tu iPhone y iPad",
+  "AbsolutelyFree": "Absolutamente <0>gratis</0>. Sin anuncios. Sin compras dentro de la aplicación.",
+
+  "OneAppThreeEditors": "Una app - <0>Tres editores</0> - Múltiples funciones",
+  "CompatibleWithMSOffice": "100% compatible con formatos MS Office",
+
+  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.es.svg",
+
+  "FeaturesItemHeadingFull": "Procesador de texto con todas las funciones",
+  "FeaturesItemTextMakeUse": "Utiliza múltiples herramientas de procesamiento de texto: formato de página, párrafo y texto, tablas, autoformas, gráficos, etc. Crea documentos de texto de cualquier tamaño y complejidad. Imprímelos a través de AirPrint.",
+
+  "FeaturesItemHeadingComplete": "Editor completo de hojas de cálculo",
+  "FeaturesItemTextManage": "Gestiona tus datos de hoja de cálculo: trabaja con filas y columnas, ajusta parámetros de celda, usa más de 450 fórmulas, ordena y filtra datos.",
+
+  "FeaturesItemHeadingCollaborative": "Editor colaborativo de presentaciones",
+  "FeaturesItemTextMakeWork": "Trabaja con todos los objetos populares en tus diapositivas: inserta imágenes, añade y edita autoformas, gráficos, textos y otros elementos.",
+
+  "FeaturesItemHeadingOnline": "Rellenador de formularios online",
+  "FeaturesItemTextMakeView": "Visualiza y rellena formularios. Navega fácilmente de un campo a otro. Guarda el resultado como archivo PDF o DOCX.",
+
+  "FeaturesItemHeadingPDF": "Visor de PDF y reproductor multimedia",
+  "FeaturesItemTextMakeViewPDF": "Visualiza documentos e imágenes PDF, reproduce archivos de audio y video. Abre .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
+
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents es un producto sobresaliente y recibió la calificación de 'Muy bueno' por parte de sus usuarios.\"",
+  "MichaelGanss": "Michael Ganss,",
+
+  "RealTimeCollaboration": "Colaboración en tiempo real",
+  "BeMoreProductive": "Sé más productivo. Conecta tu app a la nube ONLYOFFICE. Comparte documentos para coeditarlos con tus compañeros de equipo en tiempo real. Comenta y rastrea cambios. Añade anotaciones gráficas.",
+
+  "VideoCardHeading": "Descubre ONLYOFFICE Documents, una sólida suite de oficina móvil",
+
+  "GetStartedAndChoose": "Empieza y elige dónde trabajar",
+
+  "ChooseItemOnDevice": "En el dispositivo",
+  "ChooseItemManageDocuments": "Gestiona documentos en el dispositivo y edítalos sin conexión.",
+
+  "ChooseItemInOnlyOffice": "En la nube ONLYOFFICE",
+  "ChooseItemAccessDocs": "Accede a documentos desde la nube ONLYOFFICE y los almacenamientos (Dropbox, Google Drive, etc.) conectados a ella y trabaja de forma colaborativa.",
+
+  "ChooseItemInYourCloud": "En tu nube",
+  "ChooseItemConnectNextcloud": "Conecta Nextcloud, ownCloud o cualquier otra nube que funcione a través de WebDAV y edita documentos directamente desde la app.",
+
+  "ChooseItemFromOther": "Desde otras apps",
+  "ChooseItemImportDocuments": "Importa documentos desde aplicaciones como iTunes, Archivos y otras.",
+
+  "GetMoreWithComplete": "Consigue más con la versión web móvil completa",
+  "WorkOnDocumentsWithin": "Trabaja en documentos desde tu navegador móvil. Ve a tu portal web ONLYOFFICE y obtén acceso a más herramientas para la edición y colaboración en documentos.",
+
+  "LearnMoreHeading": "Más información sobre ONLYOFFICE Documents para iOS",
+
+  "LearnCardTitleRelease": "Notas de la versión",
+  "LearnMoreTextMeet": "Conoce ONLYOFFICE Documents v7.2 para iOS",
+  "LearnMoreSubtitleRead": "Leer historia",
+
+  "LearnCardTitleHints": "Sugerencias",
+  "LearnMoreTextHandwriting": "Escritura a mano en ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "Más información",
+
+  "LearnCardTitleDeveloper": "Guía del desarrollador",
+  "LearnMoreTextHowMobile": "Cómo funciona la integración móvil",
+  "LearnMoreSubtitleLearn2": "Más información"
+}
