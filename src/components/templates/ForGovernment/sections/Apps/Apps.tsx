@@ -36,7 +36,7 @@ const Apps = () => {
     if (imageUrl && imageUrl !== "AppsImage") return imageUrl;
     if (item.platform === "ios") return imageUrlIOS;
     if (item.platform === "android") return imageUrlAndroid;
-    return "/images/templates/for-research/apps/download.svg";
+    return "/images/templates/for-government/apps/download.svg";
   };
 
   return (

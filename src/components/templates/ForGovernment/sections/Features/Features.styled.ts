@@ -125,7 +125,7 @@ const StyledFeaturesContent = styled.div`
   }
 
   .buttons {
-    gap: 32px !important;
+    gap: 32px;
     flex-wrap: nowrap;
 
     a {
