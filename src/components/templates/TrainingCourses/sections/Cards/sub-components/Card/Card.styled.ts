@@ -82,6 +82,8 @@ const StyledCardText = styled(Text)`
 const StyledCardReadMore = styled.span`
   color: #FF6F3D;
   text-decoration: underline;
+  text-transform: lowercase;
+  white-space: nowrap;
   cursor: pointer;
 
   &:hover {
