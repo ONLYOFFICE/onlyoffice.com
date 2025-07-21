@@ -64,6 +64,70 @@
   "Sessions": "Séances: ",
   "Hours": "Heures: ",
   "Price": "Prix: ",
+  "ReadMore": "en savoir plus",
+  "OnDemand": "Sur demande",
+  "Custom": "Personnalisé",
 
-  "ReadMore": "en savoir plus"
+  "CardDataTitle21": "Utilisez ONLYOFFICE Docs dans les établissements d'enseignement",
+  "CardDataDescription21": "Souhaitez-vous dynamiser numériquement le processus d'apprentissage ? Suivez ce cours complet et apprenez à utiliser ONLYOFFICE Docs pour créer des plans de cours et du matériel pédagogique, y compris des présentations et des <0>formulaires interactifs, collaborer en temps réel avec les étudiants et les éducateurs, établir un système de notation, etc. Découvrez comment gérer les droits d'accès aux contenus pédagogiques et sécuriser les données sensibles.</0>",
+
+  "CardDataTitle20": "Formation personnalisée axée sur la technologie",
+  "CardDataDescription20": "Découvrez l'aspect technique du travail avec ONLYOFFICE Docs. Plongez dans son installation et sa maintenance, apprenez à faire des sauvegardes, à configurer les éditeurs, à ajouter des plugins et des macros, à avoir une vue d'ensemble <0>des fonctions et paramètres avancés.</0>",
+
+  "CardDataTitle19": "Édition de documents dans ONLYOFFICE DocSpace",
+  "CardDataDescription19": "Découvrez comment travailler avec des fichiers bureautiques dans ONLYOFFICE DocSpace, un environnement en salle pour une collaboration efficace. Apprenez à créer, modifier et coéditer des documents texte, des feuilles de calcul, <0>des présentations et des formulaires en temps réel ou en utilisant un mode de coédition avec verrouillage des paragraphes et d'autres fonctionnalités collaboratives.</0>",
+
+  "CardDataTitle18": "Administration d'ONLYOFFICE DocSpace",
+  "CardDataDescription18": "Découvrez comment administrer ONLYOFFICE DocSpace, un environnement basé sur des salles pour une collaboration documentaire efficace. Apprenez à constituer votre équipe et à inviter des utilisateurs avec différents rôles, à créer <0>et gérer des salles, à personnaliser et sécuriser votre espace.</0>",
+
+  "CardDataTitle17": "Travail avec les documents dans WordPress",
+  "CardDataDescription17": "Apprenez à travailler sur des documents bureautiques au sein de WordPress : éditez des documents chargés sur WordPress en utilisant ONLYOFFICE Docs, ajoutez des blocs ONLYOFFICE lors de la création d'un article pour insérer des <0>documents en mode intégré, etc.</0>",
+
+  "CardDataTitle16": "Intégration (WordPress)",
+  "CardDataDescription16": "Apprenez à travailler sur des documents bureautiques au sein de WordPress : éditez des documents chargés sur WordPress en utilisant ONLYOFFICE Docs, ajoutez des blocs ONLYOFFICE lors de la création d'un article pour insérer des <0>documents en mode intégré, etc.</0>",
+
+  "CardDataTitle15": "Travail avec les documents dans Nextcloud",
+  "CardDataDescription15": "Découvrez comment connecter ONLYOFFICE Docs à Nextcloud, le configurer et éditer et collaborer sur des documents texte, des feuilles de calcul, des présentations et des formulaires au sein de Nextcloud.",
+
+  "CardDataTitle14": "Intégration (Nextcloud)",
+  "CardDataDescription14": "Découvrez comment connecter ONLYOFFICE Docs à Nextcloud, le configurer et éditer et collaborer sur des documents texte, des feuilles de calcul, des présentations et des formulaires au sein de Nextcloud.",
+
+  "CardDataTitle13": "Travail avec les formulaires",
+  "CardDataDescription13": "Apprenez à créer des formulaires prêts à être remplis, y compris l'ajout de divers champs de formulaire et la modification des propriétés des champs, à partager des formulaires avec d'autres utilisateurs, à les remplir et à <0>les enregistrer au format DOCX ou PDF.</0>",
+
+  "CardDataTitle12": "Formulaires",
+  "CardDataDescription12": "Apprenez à créer des formulaires prêts à être remplis, y compris l'ajout de divers champs de formulaire et la modification des propriétés des champs, à partager des formulaires avec d'autres utilisateurs, à les remplir et à <0>les enregistrer au format DOCX ou PDF.</0>",
+
+  "CardDataTitle11": "Forfait personnalisé",
+  "CardDataDescription11": "Prenez les cours que vous souhaitez maîtriser et composez votre propre dossier de formation. Contactez-nous pour en discuter en détail.",
+
+  "CardDataTitle10": "Forfait VIP",
+  "CardDataDescription10": "Le forfait VIP vous permet d’obtenir un ensemble complet de cours de formation pour maîtriser tous les modules et outils d’ONLYOFFICE : travailler avec les documents, les projets, le CRM, le courrier et le calendrier, utiliser <0>les fonctions de communication sociale, gérer les utilisateurs et les invités, administrer le portail.</0>",
+
+  "CardDataTitle9": "Administration du portail",
+  "CardDataDescription9": "Apprenez à administrer votre ONLYOFFICE et à configurer les paramètres du portail, notamment la langue et le fuseau horaire, le DNS, les thèmes de couleurs, l’authentification à deux facteurs, les sauvegardes, l’intégration avec <0>des services tiers, etc.</0>",
+
+  "CardDataTitle8": "Travailler en équipe",
+  "CardDataDescription8": "Apprenez à utiliser ONLYOFFICE Projets pour améliorer la productivité de votre équipe. Découvrez les tâches, les sous-tâches, les jalons, le diagramme de Gantt, le suivi du temps et d’autres fonctionnalités. Découvrez comment <0>ajouter et gérer des utilisateurs, des invités et des administrateurs, discuter avec vos coéquipiers, utiliser des outils de communication sociale tels que les blogs, les forums, les actualités, les sondages, le wiki, etc.</0>",
+
+  "CardDataTitle7": "Travailler avec les clients",
+  "CardDataDescription7": "Découvrez ONLYOFFICE CRM, Mail et Calendrier pour gérer les processus commerciaux, suivre les ventes et simplifier votre communication avec les clients. Apprenez à organiser une base de données clients, à créer un formulaire de <0>demande d'informations, à élaborer des rapports, à gérer la correspondance et à créer des boîtes aux lettres d'entreprise, à planifier des réunions et à envoyer des invitations.</0>",
+
+  "CardDataTitle6": "Suite bureautique",
+  "CardDataDescription6": "Découvrez une gestion efficace des fichiers et organisez le flux de documents en fonction de vos besoins. Apprenez à créer, modifier, partager et collaborer sur des documents texte, des feuilles de calcul et des présentations <0>sur le portail ONLYOFFICE ou dans des solutions intégrées.</0>",
+
+  "CardDataTitle5": "Personnes, Chat, Communauté",
+  "CardDataDescription5": "Apprenez à ajouter et à gérer des utilisateurs, des invités et des administrateurs sur le portail, à discuter avec vos coéquipiers en temps réel via l'application de messagerie instantanée, à utiliser les outils de communication <0>sociale tels que les blogs, les forums, les actualités, les sondages, le wiki, etc.</0>",
+
+  "CardDataTitle4": "Mail et Calendrier",
+  "CardDataDescription4": "Apprenez à gérer votre correspondance dans ONLYOFFICE Mail, à créer des boîtes aux lettres d'entreprise, à structurer la boîte de réception, à ajouter des signatures de courriel. Découvrez ONLYOFFICE Calendrier et apprenez à créer <0>des calendriers, à planifier des réunions de groupe, à ajouter des tâches à faire et à synchroniser votre calendrier avec des applications tierces.</0>",
+
+  "CardDataTitle3": "CRM",
+  "CardDataDescription3": "Apprenez à utiliser ONLYOFFICE CRM pour organiser votre base de données clients, suivre les ventes, créer un formulaire web-to-lead, des opportunités, des factures et élaborer des rapports.",
+
+  "CardDataTitle2": "Projets",
+  "CardDataDescription2": "Apprenez à utiliser ONLYOFFICE Projets pour améliorer la productivité de votre équipe. Découvrez les tâches, les sous-tâches, les jalons, le diagramme de Gantt, le suivi du temps et d'autres fonctionnalités.",
+
+  "CardDataTitle1": "Documents",
+  "CardDataDescription1": "Découvrez une gestion efficace des fichiers et organisez le flux de documents en fonction de vos besoins. Apprenez à créer, modifier, partager et collaborer sur des documents texte, des feuilles de calcul et des présentations <0>sur le portail ONLYOFFICE ou dans des solutions intégrées.</0>"
 }

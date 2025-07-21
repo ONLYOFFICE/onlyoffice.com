@@ -263,12 +263,12 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
                     title={t(moduleCard.title)}
                     type={moduleCard.type}
                     module={moduleCard.module}
-                    sessions={moduleCard.sessions}
-                    hours={moduleCard.hours}
-                    price={moduleCard.price}
+                    sessions={t(moduleCard.sessions)}
+                    hours={t(moduleCard.hours)}
+                    price={t(moduleCard.price)}
                     description={t(moduleCard.description)}
                     new={moduleCard.new}
-                    course={t(moduleCard.title)}
+                    course={t(moduleCard.title, {lng: "en"})}
                   />
                 ))}
               </StyledCardsList>
@@ -291,10 +291,10 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
                     icon_url={purposeCard.icon_url}
                     title={t(purposeCard.title)}
                     type={purposeCard.type}
-                    module={purposeCard.module}
-                    sessions={purposeCard.sessions}
-                    hours={purposeCard.hours}
-                    price={purposeCard.price}
+                    module={t(purposeCard.module)}
+                    sessions={t(purposeCard.sessions)}
+                    hours={t(purposeCard.hours)}
+                    price={t(purposeCard.price)}
                     description={t(purposeCard.description)}
                     new={purposeCard.new}
                     course={t(purposeCard.title, {lng: "en"})}

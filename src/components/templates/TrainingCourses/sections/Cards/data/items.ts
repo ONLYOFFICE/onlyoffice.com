@@ -10,7 +10,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "1",
     hours: "2",
-    price: "On demand",
+    price: "OnDemand",
     new: true,
     description: "CardDataDescription21"
   },
@@ -23,7 +23,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "Custom",
     hours: "Custom",
-    price: "On demand",
+    price: "OnDemand",
     new: true,
     description: "CardDataDescription20"
   },
@@ -36,7 +36,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "1",
     hours: "1,5",
-    price: "On demand",
+    price: "OnDemand",
     new: true,
     description: "CardDataDescription19"
   },
@@ -49,7 +49,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "1",
     hours: "1",
-    price: "On demand",
+    price: "OnDemand",
     new: true,
     description: "CardDataDescription18"
   },
@@ -62,7 +62,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "1",
     hours: "1,5",
-    price: "On demand",
+    price: "OnDemand",
     new: true,
     description: "CardDataDescription17"
   },
@@ -72,10 +72,10 @@ const items: ICardsDataItem[] = [
     date: "2022-05-19T14:00Z",
     icon_url: "/images/templates/training-courses/cards/wordPress.svg",
     type: "1",
-    module: ["integration"],
+    module: ["Integration"],
     sessions: "1",
     hours: "1,5",
-    price: "On demand",
+    price: "OnDemand",
     new: true,
     description: "CardDataDescription16"
   },
@@ -88,7 +88,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "1",
     hours: "1,5",
-    price: "On demand",
+    price: "OnDemand",
     new: true,
     description: "CardDataDescription15"
   },
@@ -98,10 +98,10 @@ const items: ICardsDataItem[] = [
     date: "2022-05-19T14:00Z",
     icon_url: "/images/templates/training-courses/cards/nextCloud.svg",
     type: "1",
-    module: ["integration"],
+    module: ["Integration"],
     sessions: "1",
     hours: "1,5",
-    price: "On demand",
+    price: "OnDemand",
     new: true,
     description: "CardDataDescription14"
   },
@@ -114,7 +114,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "1",
     hours: "1,5",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription13"
   },
   {
@@ -123,10 +123,10 @@ const items: ICardsDataItem[] = [
     date: "2020-12-27T14:00Z",
     icon_url: "/images/templates/training-courses/cards/forms.svg",
     type: "1",
-    module: ["ONLYOFFICE documents"],
+    module: ["ONLYOFFICEDocuments"],
     sessions: "1",
     hours: "1,5",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription12"
   },
   {
@@ -138,7 +138,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "Custom",
     hours: "Custom",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription11"
   },
   {
@@ -150,7 +150,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "7",
     hours: "9",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription10"
   },
   {
@@ -162,7 +162,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "1",
     hours: "1",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription9"
   },
   {
@@ -174,7 +174,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "2",
     hours: "2",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription8"
   },
   {
@@ -186,7 +186,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "2",
     hours: "2,5",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription7"
   },
   {
@@ -198,7 +198,7 @@ const items: ICardsDataItem[] = [
     module: "",
     sessions: "3",
     hours: "4,5",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription6"
   },
   {
@@ -207,10 +207,10 @@ const items: ICardsDataItem[] = [
     date: "2020-01-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/chat.svg",
     type: "1",
-    module: ["ONLYOFFICE people", "ONLYOFFICE community"],
+    module: ["ONLYOFFICEPeople", "ONLYOFFICECommunity"],
     sessions: "1",
     hours: "1",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription5"
   },
   {
@@ -219,10 +219,10 @@ const items: ICardsDataItem[] = [
     date: "2020-02-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/mail.svg",
     type: "1",
-    module: ["ONLYOFFICE mail", "ONLYOFFICE calendar"],
+    module: ["ONLYOFFICEMail", "ONLYOFFICECalendar"],
     sessions: "1",
     hours: "1,5",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription4"
   },
   {
@@ -231,10 +231,10 @@ const items: ICardsDataItem[] = [
     date: "2020-03-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/crm.svg",
     type: "1",
-    module: ["ONLYOFFICE CRM"],
+    module: ["ONLYOFFICECRM"],
     sessions: "1",
     hours: "1",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription3"
   },
   {
@@ -243,10 +243,10 @@ const items: ICardsDataItem[] = [
     date: "2020-04-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/projects.svg",
     type: "1",
-    module: ["ONLYOFFICE projects"],
+    module: ["ONLYOFFICEProjects"],
     sessions: "1",
     hours: "1",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription2"
   },
   {
@@ -255,10 +255,10 @@ const items: ICardsDataItem[] = [
     date: "2020-05-03T14:00Z",
     icon_url: "/images/templates/training-courses/cards/documents.svg",
     type: "1",
-    module: ["ONLYOFFICE documents"],
+    module: ["ONLYOFFICEDocuments"],
     sessions: "3",
     hours: "4,5",
-    price: "On demand",
+    price: "OnDemand",
     description: "CardDataDescription1"
   }
 ]
