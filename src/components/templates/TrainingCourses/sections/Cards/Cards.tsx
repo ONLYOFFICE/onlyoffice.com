@@ -297,7 +297,7 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
                     price={purposeCard.price}
                     description={t(purposeCard.description)}
                     new={purposeCard.new}
-                    course={t(purposeCard.title)}
+                    course={t(purposeCard.title, {lng: "en"})}
                   />
                 ))}
               </StyledCardsList>

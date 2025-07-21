@@ -94,23 +94,23 @@
   "CardDataTitle14": "Integration (Nextcloud)",
   "CardDataDescription14": "Learn how to connect ONLYOFFICE Docs to Nextcloud, configure it and edit and collaborate on text documents, spreadsheets, presentations, and forms within Nextcloud.",
 
-  "CardDataTitle13": "Forms",
+  "CardDataTitle13": "Working with forms",
   "CardDataDescription13": "Learn how to create ready-to-fill-out forms, incl. adding various form fields and changing field properties, share forms with other users, fill them out and save as DOCX or PDF files.",
 
   "CardDataTitle12": "Forms",
   "CardDataDescription12": "Learn how to create ready-to-fill-out forms, incl. adding various form fields and changing field properties, share forms with other users, fill them out and save as DOCX or PDF files.",
 
-  "CardDataTitle11": "Projects",
-  "CardDataDescription11": "Learn how to use ONLYOFFICE Projects to enhance your team's productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features. Find out how to add and manage users, guests and administrators, chat with <0>your teammates, use social communication tools like blogs, forums, news, polls, wiki, etc.</0>",
+  "CardDataTitle11": "Custom package",
+  "CardDataDescription11": "Pick up any courses you would like to master and compose your own training package. Contact us to discuss all the details.",
 
-  "CardDataTitle10": "Projects",
-  "CardDataDescription10": "Learn how to use ONLYOFFICE Projects to enhance your team's productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features.",
+  "CardDataTitle10": "VIP package",
+  "CardDataDescription10": "VIP package allows you to get a complete set of training courses to master all ONLYOFFICE modules and tools: working with documents, projects, CRM, mail and calendar, using social communication features, managing users and guests, <0>administrating the portal.</0>",
 
   "CardDataTitle9": "Administrating the portal",
-  "CardDataDescription9": "Learn how to administrate the ONLYOFFICE portal, configure it according to your needs, manage users and their access rights, customize the interface, set up security and backup settings.",
+  "CardDataDescription9": "Learn how to administer your ONLYOFFICE and configure portal settings, including language and time zone, DNS, color themes, two-factor authentication, backups, integration with third-party services, etc.",
 
-  "CardDataTitle8": "Projects",
-  "CardDataDescription8": "Learn how to use ONLYOFFICE Projects to enhance your team's productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features. Find out how to add and manage users, guests and administrators, chat with <0>your teammates, use social communication tools like blogs, forums, news, polls, wiki, etc.</0>",
+  "CardDataTitle8": "Working in a team",
+  "CardDataDescription8": "Learn how to use ONLYOFFICE Projects to enhance your team’s productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features. Find out how to add and manage users, guests and administrators, chat with <0>your teammates, use social communication tools like blogs, forums, news, polls, wiki, etc.</0>",
 
   "CardDataTitle7": "Working with customers",
   "CardDataDescription7": "Discover ONLYOFFICE CRM, Mail and Calendar to manage business processes, track sales and simplify your communication with customers. Learn how to organize a client database, create a web-to-lead form, build reports, manage correspondence <0>and create corporate mailboxes, schedule meetings and send invitations.</0>",
@@ -128,7 +128,7 @@
   "CardDataDescription3": "Learn how to use ONLYOFFICE CRM to organize your customer database, track sales, create a web-to-lead form, opportunities, invoices, and build reports.",
 
   "CardDataTitle2": "Projects",
-  "CardDataDescription2": "Learn how to use ONLYOFFICE Projects to enhance your team's productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features.",
+  "CardDataDescription2": "Learn how to use ONLYOFFICE Projects to enhance your team’s productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features.",
 
   "CardDataTitle1": "Documents",
   "CardDataDescription1": "Discover effective file management and organize document workflow according to your needs. Learn how to create, edit, share and collaborate on text documents, spreadsheets, and presentations on the ONLYOFFICE portal or within integrated solutions."
