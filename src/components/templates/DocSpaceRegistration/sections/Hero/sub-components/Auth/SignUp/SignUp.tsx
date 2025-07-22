@@ -133,7 +133,7 @@ const SignUp = ({ setEmail }: ISignUp) => {
       );
 
       if (modalDialog.current) {
-        modalDialog.current.location.href = `${location.href}/login?p=${token}&code=${code}`;
+        modalDialog.current.location.href = `${location.origin}/login?p=${token}&code=${code}`;
       }
     }
   };
@@ -142,7 +142,7 @@ const SignUp = ({ setEmail }: ISignUp) => {
     if (intervalId.current) clearInterval(intervalId.current);
 
     modalDialog.current = window.open(
-      `${location.href}/login?auth=google&mode=popup&callback=SignInByGoogle`,
+      `${location.origin}/login?auth=google&mode=popup&callback=SignInByGoogle`,
       "signup",
       "width=800,height=500,status=no,toolbar=no,menubar=no,resizable=yes,scrollbars=no",
     );
