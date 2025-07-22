@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -144,6 +144,14 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
       setTempModule("All");
     }
   }, []);
+
+  useEffect(() => {
+    if (filterMobDisplay) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [filterMobDisplay]);
 
   return (
     <>
