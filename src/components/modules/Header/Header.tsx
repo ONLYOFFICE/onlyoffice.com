@@ -32,9 +32,7 @@ const Header = ({ locale, theme, highlight, borderColor }: IHeader) => {
       <div ref={headerRef}></div>
       <OOHeader
         locale={locale}
-        borderColor={
-          borderColor ?? (scrolled ? "#cccccc" : "transparent")
-        }
+        borderColor={borderColor ?? (scrolled ? "#cccccc" : "transparent")}
         backgroundColor={scrolled ? "#ffffff" : "transparent"}
         languages={languages.map((language) => ({
           key: language.shortKey,

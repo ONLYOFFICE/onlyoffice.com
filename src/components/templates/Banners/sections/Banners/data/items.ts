@@ -11,7 +11,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/125-x-125-1.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Document collaboration made simpler" title="Document collaboration made simpler" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-1.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Document collaboration made simpler" title="Document collaboration made simpler" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-1.gif' /></a>`,
     format: "square",
     tabKey: "125x125",
     dimensions: "125 x 125",
@@ -19,7 +19,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/125-x-125-2.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF editors powered by AI" title="Docs, sheets, slides, forms, PDF editors powered by AI" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-2.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF editors powered by AI" title="Docs, sheets, slides, forms, PDF editors powered by AI" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-2.gif' /></a>`,
     format: "square",
     tabKey: "125x125",
     dimensions: "125 x 125",
@@ -27,7 +27,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/125-x-125-3.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-3.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-3.gif' /></a>`,
     format: "square",
     tabKey: "125x125",
     dimensions: "125 x 125",
@@ -35,7 +35,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/125-x-125-4.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Easily collaborate on office documents with customizable rooms" title="Easily collaborate on office documents with customizable rooms" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-4.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Easily collaborate on office documents with customizable rooms" title="Easily collaborate on office documents with customizable rooms" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-4.gif' /></a>`,
     format: "square",
     tabKey: "125x125",
     dimensions: "125 x 125",
@@ -43,7 +43,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/125-x-125-5.gif",
-    code: `<a href="http://www.onlyoffice.com/download.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit#docs-enterprise" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" title="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-5.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/download.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit#docs-enterprise" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" title="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-5.gif' /></a>`,
     format: "square",
     tabKey: "125x125",
     dimensions: "125 x 125",
@@ -51,7 +51,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/125-x-125-6.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" title="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-6.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" title="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-6.gif' /></a>`,
     format: "square",
     tabKey: "125x125",
     dimensions: "125 x 125",
@@ -59,7 +59,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/125-x-125-7.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Collaborate on office documents during Zoom meetings" title="Collaborate on office documents during Zoom meetings" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-7.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Collaborate on office documents during Zoom meetings" title="Collaborate on office documents during Zoom meetings" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-7.gif' /></a>`,
     format: "square",
     tabKey: "125x125",
     dimensions: "125 x 125",
@@ -67,7 +67,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/125-x-125-8.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-8.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-8.gif' /></a>`,
     format: "square",
     tabKey: "125x125",
     dimensions: "125 x 125",
@@ -75,7 +75,7 @@ export const items: IBannerItem[] = [
   {
     title: "Static",
     image: "/images/templates/banners/en/125-x-125-1.png",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF in the cloud" title="Docs, sheets, slides, forms, PDF in the cloud" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-1.png' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF in the cloud" title="Docs, sheets, slides, forms, PDF in the cloud" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-1.png' /></a>`,
     format: "square",
     tabKey: "125x125",
     dimensions: "125 x 125",
@@ -83,7 +83,7 @@ export const items: IBannerItem[] = [
   {
     title: "Static",
     image: "/images/templates/banners/en/125-x-125-2.png",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-2.png' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/125-x-125-2.png' /></a>`,
     format: "square",
     tabKey: "125x125",
     dimensions: "125 x 125",
@@ -91,7 +91,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/250-x-250-1.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Document collaboration made simpler" title="Document collaboration made simpler" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-1.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Document collaboration made simpler" title="Document collaboration made simpler" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-1.gif' /></a>`,
     format: "square",
     tabKey: "250x250",
     dimensions: "250 x 250",
@@ -99,7 +99,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/250-x-250-2.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF editors powered by AI" title="Docs, sheets, slides, forms, PDF editors powered by AI" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-2.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF editors powered by AI" title="Docs, sheets, slides, forms, PDF editors powered by AI" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-2.gif' /></a>`,
     format: "square",
     tabKey: "250x250",
     dimensions: "250 x 250",
@@ -107,7 +107,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/250-x-250-3.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-3.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-3.gif' /></a>`,
     format: "square",
     tabKey: "250x250",
     dimensions: "250 x 250",
@@ -115,7 +115,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/250-x-250-4.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Easily collaborate on office documents with customizable rooms" title="Easily collaborate on office documents with customizable rooms" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-4.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Easily collaborate on office documents with customizable rooms" title="Easily collaborate on office documents with customizable rooms" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-4.gif' /></a>`,
     format: "square",
     tabKey: "250x250",
     dimensions: "250 x 250",
@@ -123,7 +123,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/250-x-250-5.gif",
-    code: `<a href="http://www.onlyoffice.com/download.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit#docs-enterprise" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" title="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-5.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/download.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit#docs-enterprise" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" title="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-5.gif' /></a>`,
     format: "square",
     tabKey: "250x250",
     dimensions: "250 x 250",
@@ -131,7 +131,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/250-x-250-6.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" title="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-6.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" title="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-6.gif' /></a>`,
     format: "square",
     tabKey: "250x250",
     dimensions: "250 x 250",
@@ -139,7 +139,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/250-x-250-7.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Collaborate on office documents during Zoom meetings" title="Collaborate on office documents during Zoom meetings" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-7.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Collaborate on office documents during Zoom meetings" title="Collaborate on office documents during Zoom meetings" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-7.gif' /></a>`,
     format: "square",
     tabKey: "250x250",
     dimensions: "250 x 250",
@@ -147,7 +147,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/250-x-250-8.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-8.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/250-x-250-8.gif' /></a>`,
     format: "square",
     tabKey: "250x250",
     dimensions: "250 x 250",
@@ -155,7 +155,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/468-x-60-1.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/468-x-60-1.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/468-x-60-1.gif' /></a>`,
     format: "horizontal",
     tabKey: "468x60",
     dimensions: "468 x 60",
@@ -163,7 +163,7 @@ export const items: IBannerItem[] = [
   {
     title: "Static",
     image: "/images/templates/banners/en/468-x-60-1.png",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF in the cloud" title="Docs, sheets, slides, forms, PDF in the cloud" src='http://www.onlyoffice.com/images/banners/en-us/468-x-60-1.png' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF in the cloud" title="Docs, sheets, slides, forms, PDF in the cloud" src='http://www.onlyoffice.com/images/banners/en-us/468-x-60-1.png' /></a>`,
     format: "horizontal",
     tabKey: "468x60",
     dimensions: "468 x 60",
@@ -171,7 +171,7 @@ export const items: IBannerItem[] = [
   {
     title: "Static",
     image: "/images/templates/banners/en/468-x-60-2.png",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/468-x-60-2.png' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/468-x-60-2.png' /></a>`,
     format: "horizontal",
     tabKey: "468x60",
     dimensions: "468 x 60",
@@ -179,7 +179,7 @@ export const items: IBannerItem[] = [
   {
     title: "Static",
     image: "/images/templates/banners/en/468-x-60-3.png",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/468-x-60-3.png' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/468-x-60-3.png' /></a>`,
     format: "horizontal",
     tabKey: "468x60",
     dimensions: "468 x 60",
@@ -187,7 +187,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/728-x-90-1.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/728-x-90-1.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/728-x-90-1.gif' /></a>`,
     format: "horizontal",
     tabKey: "728x90",
     dimensions: "728 x 90",
@@ -195,7 +195,7 @@ export const items: IBannerItem[] = [
   {
     title: "Static",
     image: "/images/templates/banners/en/728-x-90-1.png",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF in the cloud" title="Docs, sheets, slides, forms, PDF in the cloud" src='http://www.onlyoffice.com/images/banners/en-us/728-x-90-1.png' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF in the cloud" title="Docs, sheets, slides, forms, PDF in the cloud" src='http://www.onlyoffice.com/images/banners/en-us/728-x-90-1.png' /></a>`,
     format: "horizontal",
     tabKey: "728x90",
     dimensions: "728 x 90",
@@ -203,7 +203,7 @@ export const items: IBannerItem[] = [
   {
     title: "Static",
     image: "/images/templates/banners/en/728-x-90-2.png",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/728-x-90-2.png' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/728-x-90-2.png' /></a>`,
     format: "horizontal",
     tabKey: "728x90",
     dimensions: "728 x 90",
@@ -211,7 +211,7 @@ export const items: IBannerItem[] = [
   {
     title: "Static",
     image: "/images/templates/banners/en/728-x-90-3.png",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/728-x-90-3.png' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/728-x-90-3.png' /></a>`,
     format: "horizontal",
     tabKey: "728x90",
     dimensions: "728 x 90",
@@ -219,7 +219,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/160-x-600-1.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Document collaboration made simpler" title="Document collaboration made simpler" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-1.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Document collaboration made simpler" title="Document collaboration made simpler" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-1.gif' /></a>`,
     format: "vertical",
     tabKey: "160x600",
     dimensions: "160 x 600",
@@ -227,7 +227,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/160-x-600-2.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF editors powered by AI" title="Docs, sheets, slides, forms, PDF editors powered by AI" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-2.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF editors powered by AI" title="Docs, sheets, slides, forms, PDF editors powered by AI" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-2.gif' /></a>`,
     format: "vertical",
     tabKey: "160x600",
     dimensions: "160 x 600",
@@ -235,7 +235,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/160-x-600-3.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-3.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-3.gif' /></a>`,
     format: "vertical",
     tabKey: "160x600",
     dimensions: "160 x 600",
@@ -243,7 +243,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/160-x-600-4.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Easily collaborate on office documents with customizable rooms" title="Easily collaborate on office documents with customizable rooms" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-4.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Easily collaborate on office documents with customizable rooms" title="Easily collaborate on office documents with customizable rooms" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-4.gif' /></a>`,
     format: "vertical",
     tabKey: "160x600",
     dimensions: "160 x 600",
@@ -251,7 +251,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/160-x-600-5.gif",
-    code: `<a href="http://www.onlyoffice.com/download.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit#docs-enterprise" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" title="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-5.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/download.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit#docs-enterprise" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" title="Edit and collaborate on docs within your platform: Moodle, ownCloud, Confluence, Box, Odoo, Nextcloud, Dropbox" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-5.gif' /></a>`,
     format: "vertical",
     tabKey: "160x600",
     dimensions: "160 x 600",
@@ -259,7 +259,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/160-x-600-6.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" title="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-6.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" title="Synchronize your docs and projects via: Zapier, Trello, Slack, Pipedrive, Discord, Asana, HubSpot" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-6.gif' /></a>`,
     format: "vertical",
     tabKey: "160x600",
     dimensions: "160 x 600",
@@ -267,7 +267,7 @@ export const items: IBannerItem[] = [
   {
     title: "Animated",
     image: "/images/templates/banners/en/160-x-600-7.gif",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-7.gif' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Work smarter with ONLYOFFICE Docs 9.0" title="Work smarter with ONLYOFFICE Docs 9.0" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-7.gif' /></a>`,
     format: "vertical",
     tabKey: "160x600",
     dimensions: "160 x 600",
@@ -275,7 +275,7 @@ export const items: IBannerItem[] = [
   {
     title: "Static",
     image: "/images/templates/banners/en/160-x-600-1.png",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF in the cloud" title="Docs, sheets, slides, forms, PDF in the cloud" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-1.png' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Docs, sheets, slides, forms, PDF in the cloud" title="Docs, sheets, slides, forms, PDF in the cloud" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-1.png' /></a>`,
     format: "vertical",
     tabKey: "160x600",
     dimensions: "160 x 600",
@@ -283,7 +283,7 @@ export const items: IBannerItem[] = [
   {
     title: "Static",
     image: "/images/templates/banners/en/160-x-600-2.png",
-    code: `<a href="http://www.onlyoffice.com/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-2.png' /></a>`,
+    code: `<a href="http://www.onlyoffice.com{{locale}}/docspace-registration.aspx?utm_source=source&utm_medium=banner&utm_campaign=nonprofit" target="_blank" rel="noreferrer noopener" style="cursor: pointer;" rel="me dofollow"><img alt="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" title="Online alternative to MS Office: DOCX, XLSX, PPTX, PDF" src='http://www.onlyoffice.com/images/banners/en-us/160-x-600-2.png' /></a>`,
     format: "vertical",
     tabKey: "160x600",
     dimensions: "160 x 600",

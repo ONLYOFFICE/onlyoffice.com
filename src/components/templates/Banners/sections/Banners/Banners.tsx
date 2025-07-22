@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import {
   StyledTabs,
@@ -15,6 +16,7 @@ import { items } from "./data/items";
 
 const Banners = () => {
   const { t } = useTranslation("banners");
+  const { locale = "en" } = useRouter();
 
   const tabGroups = Array.from(
     new Map(
@@ -31,8 +33,8 @@ const Banners = () => {
   );
 
   const [activeTab, setActiveTab] = useState(tabGroups[0]?.key || "");
-
   const selectedItems = items.filter((item) => item.tabKey === activeTab);
+  const localePath = locale === "en" ? "" : `/${locale}`;
 
   return (
     <Section
@@ -62,7 +64,7 @@ const Banners = () => {
             </StyledBannerTitle>
             <StyledBannerImage src={banner.image} alt={t(banner.title)} />
             <StyledBannerNote>{t("CopyBannerCode")}</StyledBannerNote>
-            <StyledTextarea rows={3} readOnly value={banner.code} />
+            <StyledTextarea rows={3} readOnly value={banner.code.replace("{{locale}}", localePath)} />
           </StyledBannerBlock>
         ))}
       </Container>

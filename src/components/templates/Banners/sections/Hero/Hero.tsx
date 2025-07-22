@@ -1,15 +1,15 @@
 import { useTranslation } from "next-i18next";
 import {
-  StyledHeroSection,
   StyledHeroHeading,
 } from "./Hero.styled";
+import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 
 const Hero = () => {
   const { t } = useTranslation("banners");
 
   return (
-    <StyledHeroSection
+    <Section
       desktopSpacing={["80px", "0px"]}
       tabletSpacing={["80px", "0px"]}
       tabletSmallSpacing={["80px", "0px"]}
@@ -18,7 +18,7 @@ const Hero = () => {
       <Container maxWidth="1050px">
         <StyledHeroHeading level={1} size={2} label={t("HeroTitle")} />
       </Container>
-    </StyledHeroSection>
+    </Section>
   );
 };
 
