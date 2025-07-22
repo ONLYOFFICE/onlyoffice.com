@@ -5,8 +5,8 @@
   "WorkTogetherBetterInCollaborationRooms": "在<0>协作房间</0>中更高效地合作",
   "EnjoyStressFreeCoEditing": "在 ONLYOFFICE 协作空间中轻松进行文档协同编辑与合作",
 
-  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header.png",
-  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header@2x.png",
+  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/zh/header_main.png",
+  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/zh/header_main@2x.png",
 
   "CreateFreeAccount": "创建免费账户",
   "IdealForTeamwork": "团队合作的理想选择",
@@ -22,16 +22,16 @@
 
   "SecureForSensitiveDocuments": "安全保护敏感文档",
   "ProtectYourFiles": "通过设置访问权限来保护您的文件，自定义受邀人员可以执行哪些操作：具有访问管理权限的房间管理员、具有管理房间文件/文件夹权限的内容创作者、具有房间文件完全访问权限的编辑者或具有只读访问权限的查看者。",
-  "SecureImgUrl": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents.png",
-  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents@2x.png",
+  "SecureImgUrl": "/images/templates/collaboration-rooms/features/zh/secure-for-sensitive-documents.png",
+  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/zh/secure-for-sensitive-documents@2x.png",
   "ConvenientForMultipleCoAuthors": "方便多人协同编辑",
   "CollaborateEffectively": "高效协作更快地完成工作",
   "CostEffectiveForAnyBudget": "适合各种预算",
-  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors.png",
-  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors@2x.png",
+  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/zh/convenient-for-multiple-co-authors.png",
+  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/zh/convenient-for-multiple-co-authors@2x.png",
   "PayForAdminsOnlyAndAdd": "仅为管理员付费，免费添加任意数量的普通用户和访客。小型团队可以使用免费的初创计划。ONLYOFFICE 协作空间适用于所有企业，无论是中小企业还是大型企业。想要完全控制您的企业数据？在您的私有服务器上部署协作空间。",
-  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget.png",
-  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget@2x.png",
+  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/zh/cost-effective-for-any-budget.png",
+  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/zh/cost-effective-for-any-budget@2x.png",
 
   "LearnMore": "了解更多",
 

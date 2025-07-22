@@ -5,8 +5,8 @@
   "WorkTogetherBetterInCollaborationRooms": "Работайте вместе еще эффективнее в <0>комнатах для совместной работы</0>",
   "EnjoyStressFreeCoEditing": "Легко редактируйте документы совместно в ONLYOFFICE DocSpace",
 
-  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header.png",
-  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header@2x.png",
+  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/ru/header_main.png",
+  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/ru/header_main@2x.png",
 
   "CreateFreeAccount": "Создать бесплатный аккаунт",
   "IdealForTeamwork": "Идеальны для командной работы",
@@ -22,16 +22,16 @@
 
   "SecureForSensitiveDocuments": "Безопасны для конфиденциальных документов",
   "ProtectYourFiles": "Для защиты файлов установите уровень доступа и определите действия, доступные приглашенным пользователям: Менеджеры комнат с правами управления доступом, Создатели контента с правами управления файлами и папками в комнате, Редакторы с полным доступом к файлам в комнате или Зрители с доступом только для чтения.",
-  "SecureImgUrl": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents.png",
-  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents@2x.png",
+  "SecureImgUrl": "/images/templates/collaboration-rooms/features/ru/secure-for-sensitive-documents.png",
+  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/ru/secure-for-sensitive-documents@2x.png",
   "ConvenientForMultipleCoAuthors": "Удобны для нескольких соавторов",
   "CollaborateEffectively": "Работайте совместно быстрее и эффективнее",
   "CostEffectiveForAnyBudget": "Экономичны для любого бюджета",
-  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors.png",
-  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors@2x.png",
+  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/ru/convenient-for-multiple-co-authors.png",
+  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/ru/convenient-for-multiple-co-authors@2x.png",
   "PayForAdminsOnlyAndAdd": "Платите только за администраторов и добавляйте любое количество обычных пользователей и гостей бесплатно. Воспользуйтесь бесплатным тарифом Startup для небольших команд. ONLYOFFICE DocSpace подходит для всех предприятий, независимо от того, это малый и средний бизнес или крупная корпорация. Хотите получить полный контроль над корпоративными данными? Разверните DocSpace на своем сервере.",
-  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget.png",
-  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget@2x.png",
+  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/ru/cost-effective-for-any-budget.png",
+  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/ru/cost-effective-for-any-budget@2x.png",
 
   "LearnMore": "Узнать больше",
 

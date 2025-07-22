@@ -5,8 +5,8 @@
   "WorkTogetherBetterInCollaborationRooms": "Travaillez mieux ensemble dans les <0>salles de collaboration</0>",
   "EnjoyStressFreeCoEditing": "Collaborez sans stress avec ONLYOFFICE DocSpace",
 
-  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header.png",
-  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/collaboration-rooms-header@2x.png",
+  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/fr/header_main.png",
+  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/fr/header_main@2x.png",
 
   "CreateFreeAccount": "Créer un compte gratuit",
   "IdealForTeamwork": "Idéales pour le travail en équipe",
@@ -22,16 +22,16 @@
 
   "SecureForSensitiveDocuments": "Sécurisées pour les documents sensibles",
   "ProtectYourFiles": "Protégez vos fichiers en définissant un niveau d'accès pour définir quelles actions seront disponibles pour les personnes invitées : les responsables de salle avec des droits de gestion d'accès, les créateurs de contenu avec un accès à la gestion des fichiers/dossiers de la salle, les éditeurs avec un accès complet aux fichiers de la salle ou les lecteurs avec un accès en lecture seule.",
-  "SecureImgUrl": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents.png",
-  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents@2x.png",
+  "SecureImgUrl": "/images/templates/collaboration-rooms/features/fr/secure-for-sensitive-documents.png",
+  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/fr/secure-for-sensitive-documents@2x.png",
   "ConvenientForMultipleCoAuthors": "Pratiques pour les multiples coauteurs",
   "CollaborateEffectively": "Collaborez efficacement pour accélérer le travail",
   "CostEffectiveForAnyBudget": "Économiques pour tous les budgets",
-  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors.png",
-  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors@2x.png",
+  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/fr/convenient-for-multiple-co-authors.png",
+  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/fr/convenient-for-multiple-co-authors@2x.png",
   "PayForAdminsOnlyAndAdd": "Ne payez que pour les administrateurs et ajoutez gratuitement autant d'utilisateurs réguliers et d'invités que vous le souhaitez. Bénéficiez d'un plan Startup gratuit pour les petites équipes. ONLYOFFICE DocSpace convient à toutes les entreprises, qu'il s'agisse de PME ou de grandes entreprises. Vous voulez avoir un contrôle total sur vos données d'entreprise ? Déployez DocSpace sur votre serveur privé.",
-  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget.png",
-  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget@2x.png",
+  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/fr/cost-effective-for-any-budget.png",
+  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/fr/cost-effective-for-any-budget@2x.png",
 
   "LearnMore": "En savoir plus",
 
