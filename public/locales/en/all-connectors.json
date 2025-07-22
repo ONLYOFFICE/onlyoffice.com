@@ -4,8 +4,9 @@
 
   "IntegrateOODocsOrDocSpace": "Integrate <0>ONLYOFFICE Docs</0> or <1>DocSpace</1> into your favorite business platform with ready-to-use connectors",
   "FeaturedConnectors": "Featured connectors",
-  "ConnectorFor": "Connector for",
-  "WOPIConnectorFor": "WOPI connector for",
+  "ConnectorFor": "Connector",
+  "For": "for",
+  "WOPIConnectorFor": "WOPI connector",
   "New": "New",
   "MoreInfo": "More info",
   "Connectors": "Connectors",
@@ -14,7 +15,7 @@
   "Price": "Price:",
   "Free": "Free",
   "Paid": "Paid",
-  "GetItOn": "Get it on",
+  "GetItOn": "Get it now",
 
   "FeatureConnectorTrelloText": "View, edit and collaborate on office documents in real-time within Trello, the ultimate teamwork project management tool.",
   "FeatureConnectorOdooText": "Edit and collaborate on office files within Odoo Documents, a suite of open-source business apps.",

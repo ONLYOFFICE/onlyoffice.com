@@ -4,16 +4,18 @@ import {
   StyledConnectorCardImgWrapper,
   StyledConnectorCardImg,
   StyledConnectorCardBody,
-  StyledConnectorCardHeading,
+  StyledConnectorCardHeadingFor,
   StyledConnectorCardText,
   StyledConnectorCardInfo,
   StyledConnectorCardButton,
+  StyledConnectorCardHeadingName,
+  StyledBadge
 } from "./ConnectorCard.styled";
 import { IConnectorCard } from "./ConnectorCard.types";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
-import { Badge } from "@src/components/ui/Badge";
+
 
 const ConnectorCard = ({
   id,
@@ -29,6 +31,7 @@ const ConnectorCard = ({
   isPaid,
   getItNowUrl,
   isNew,
+  isWopi,
 }: IConnectorCard) => {
   const { t } = useTranslation("all-connectors");
 
@@ -36,13 +39,24 @@ const ConnectorCard = ({
     <StyledConnectorCard id={id} className={className}>
       <StyledConnectorCardImgWrapper $imgBgColor={imgBgColor}>
         <StyledConnectorCardImg $imgUrl={imgUrl} />
+        <StyledConnectorCardHeadingFor>
+          {isWopi ? (
+            <StyledConnectorCardHeadingName level={4} color="#444444" >
+              {t("WOPIConnectorFor")}
+            </StyledConnectorCardHeadingName>
+          ) : (
+            <StyledConnectorCardHeadingName level={4} color="#444444" >
+              {t("ConnectorFor")}
+            </StyledConnectorCardHeadingName>
+          )}
+          <Heading level={4} color="#444444" >
+            {name}
+          </Heading>
+        </StyledConnectorCardHeadingFor>
+        {isNew && <StyledBadge label={t("New")} />}
       </StyledConnectorCardImgWrapper>
 
       <StyledConnectorCardBody>
-        <StyledConnectorCardHeading>
-          <Heading level={4} label={name} color="#444444" />
-          {isNew && <Badge label={t("New")} />}
-        </StyledConnectorCardHeading>
 
         <StyledConnectorCardText>
           <Text fontSize="13px" lineHeight="21px" label={text} />

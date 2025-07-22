@@ -4,7 +4,8 @@
 
   "IntegrateOODocsOrDocSpace": "Интегрируйте <0>ONLYOFFICE Docs</0> или <1>DocSpace</1> в вашу бизнес-платформу с помощью готовых к использованию коннекторов",
   "FeaturedConnectors": "Популярные коннекторы",
-  "ConnectorFor": "Коннектор для",
+  "ConnectorFor": "Коннектор",
+  "For": "для",
   "WOPIConnectorFor": "WOPI коннектор для",
   "New": "Новый",
   "MoreInfo": "Узнать больше",
