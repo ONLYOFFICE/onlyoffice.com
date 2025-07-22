@@ -24,6 +24,8 @@ def sales_email = ""
 def next_public_onlyoffice_document_server_url = ""
 def aws_s3_bucket = ""
 def aws_s3_region = ""
+def docspace_domain = ""
+def docspace_registration_api = ""
 
 switch(BRANCH_NAME) {
   case "test_deploy":
@@ -51,6 +53,8 @@ switch(BRANCH_NAME) {
     next_public_onlyoffice_document_server_url="https://asc.docs.teamlab.info"
     aws_s3_bucket="static-test-new.teamlab.info"
     aws_s3_region="us-west-2"
+    docspace_domain = "onlyoffice.io"
+    docspace_registration_api = "https://onlyoffice"
     break
   case "production_deploy":
     aws_region="us-east-1"
@@ -103,6 +107,8 @@ pipeline {
         next_public_onlyoffice_document_server_url="${next_public_onlyoffice_document_server_url}"
         aws_s3_bucket = "${aws_s3_bucket}"
         aws_s3_region = "${aws_s3_region}"
+        docspace_domain = "${docspace_domain}"
+        docspace_registration_api = "${docspace_registration_api}"
       }
       steps {
         withCredentials([usernamePassword(credentialsId: 'onlyoffice_site_test_mysql_credentials', 
@@ -161,6 +167,9 @@ pipeline {
           sed -i "s^var_aws_s3_access_key^$cmsoforms_user^" .env
           sed -i "s^var_aws_s3_secret_access_key^$cmsoforms_password^" .env
           sed -i "s^var_aws_s3_region^$aws_s3_region^" .env
+
+          sed -i "s^var_docspace_domain^$docspace_domain^" .env
+          sed -i "s^var_docspace_registration_api^$docspace_registration_api^" .env
           
           if [ "${region}" = "info" ]; then
             cp .jenkins/robots.txt ./
