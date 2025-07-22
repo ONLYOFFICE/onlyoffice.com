@@ -9,8 +9,11 @@ const Header = ({
   locale,
   theme,
   highlight,
-  borderColor = "#cccccc",
-  backgroundColor = "#ffffff"
+  borderColor = "transparent",
+  backgroundColor = "transparent",
+  onScrollBorderColor = "#cccccc",
+  onScrollBackgroundColor = "#ffffff",
+  onScrollChangeTheme = true,
 }: IHeader) => {
   const [scrolled, setScrolled] = useState(false);
   const headerRef = useRef<HTMLDivElement | null>(null);
@@ -38,8 +41,8 @@ const Header = ({
       <div ref={headerRef}></div>
       <OOHeader
         locale={locale}
-        borderColor={scrolled ? borderColor : "transparent"}
-        backgroundColor={scrolled ? backgroundColor : "transparent"}
+        borderColor={scrolled ? onScrollBorderColor : borderColor}
+        backgroundColor={scrolled ? onScrollBackgroundColor : backgroundColor}
         languages={languages.map((language) => ({
           key: language.shortKey,
           shortKey: language.shortKey,
@@ -54,7 +57,7 @@ const Header = ({
           variant: "main",
         }}
         hasPhone={true}
-        theme={theme === "white" ? (scrolled ? undefined : "white") : undefined}
+        theme={theme === "white" ? ((scrolled && onScrollChangeTheme) ? undefined : "white") : undefined}
         highlight={{
           buttonId: highlight?.buttonId,
           linkId: highlight?.linkId,

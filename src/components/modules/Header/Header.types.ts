@@ -6,4 +6,7 @@ export interface IHeader {
   highlight?: { buttonId?: string; linkId?: string };
   borderColor?: string;
   backgroundColor?: string;
+  onScrollBorderColor?: string;
+  onScrollBackgroundColor?: string;
+  onScrollChangeTheme?: boolean;
 }

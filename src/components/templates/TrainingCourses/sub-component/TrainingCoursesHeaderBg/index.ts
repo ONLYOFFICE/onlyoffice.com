@@ -1,1 +1,0 @@
-export { TrainingCoursesHeaderBg } from "./TrainingCoursesHeaderBg";

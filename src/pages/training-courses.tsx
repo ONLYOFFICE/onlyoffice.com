@@ -28,6 +28,8 @@ const TrainingCoursesPage = ({ locale }: ILocale) => {
           }}
           backgroundColor="#f5f5f5"
           borderColor="#f5f5f5"
+          onScrollBackgroundColor="#f5f5f5"
+          onScrollBorderColor="#f5f5f5"
         />
       </Layout.Header>
       <Layout.Main>
