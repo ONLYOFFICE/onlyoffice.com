@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import { useEffect, useState } from "react";
 import { Modal } from "@src/components/ui/Modal";
 import {
@@ -17,6 +18,7 @@ const CollaborationFeatureModal = ({
   currentImageIndex,
 }: ICollaborationFeatureModal) => {
   const [currentImage, setCurrentImage] = useState<number>(currentImageIndex);
+  const { t } = useTranslation("CollaborationsFeatures");
 
   useEffect(() => {
     if (isOpen) {
@@ -58,7 +60,7 @@ const CollaborationFeatureModal = ({
             </StyledCollaborationFeatureModalPage>
           ))}
           <StyledCollaborationFeatureModalClose onClick={onClose}>
-            Close
+            {t("Close")}
           </StyledCollaborationFeatureModalClose>
         </StyledCollaborationFeatureModalPages>
         <StyledCollaborationFeatureModalArrow

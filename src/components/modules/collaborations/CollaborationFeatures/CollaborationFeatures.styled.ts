@@ -45,11 +45,12 @@ const StyledCollaborationsFeaturesImage = styled.div<{
 }>`
   max-width: 620px;
   width: 100%;
-  order: ${({ $isEven }) => ($isEven ? 2 : 1)};
-  position: relative;
-  cursor: pointer;
   display: flex;
   align-items: center;
+  order: ${({ $isEven }) => ($isEven ? 2 : 1)};
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -81,13 +82,13 @@ const StyledCollaborationsFeaturesImageOverlay = styled.span`
   left: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.55);
   font-size: 24px;
   text-align: center;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   opacity: 0;
   transition: opacity 0.3s;
 
