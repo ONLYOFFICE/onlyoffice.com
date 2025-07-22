@@ -16,7 +16,7 @@ import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { TextArea } from "@src/components/ui/TextArea";
 import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
-import { HCaptcha } from "@src/components/widgets/HCaptcha";
+import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { IPhoneInputRef } from "@src/components/widgets/PhoneInput";
 import { PhoneInput } from "@src/components/widgets/PhoneInput";
 import {
@@ -135,7 +135,7 @@ const DownloadModal = ({
 
       const hCaptchaData = await hCaptchaResponse.json();
 
-      if (hCaptchaData.status === "errorhCaptchaInvalid") {
+      if (hCaptchaData.status === "errorHCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");
@@ -273,6 +273,9 @@ const DownloadModal = ({
               }}
               value={formData.phone}
               label="微信号"
+              status={
+                isEmpty.phone ? "error" : formData.phone ? "success" : "default"
+              }
             />
           ) : (
             <PhoneInput

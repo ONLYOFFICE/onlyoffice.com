@@ -1,27 +1,9 @@
 import { IDownloadBlockButton } from "../DownloadBlock";
 
-export interface IDownloadModalWebPaymentRequest {
-  LanguageCode: string;
-  Language: string;
-}
-
-export interface IDownloadModalAddLandingRequest {
-  from?: string;
-}
-
-export interface IDownloadModalSendEmailRequest {
+export interface IDownloadModalOnSubmitRequest {
   from?: string;
   country: string;
   region: string;
-}
-
-export interface IDownloadModalPipedriveRequest {
-  _ga?: string;
-  utmSource?: string;
-  utmCampaign?: string;
-  title: string;
-  region: string;
-  from?: string;
 }
 
 export interface IDownloadModalData {
@@ -50,7 +32,7 @@ export interface IDownloadModal {
   isOpen: boolean;
   onClose: () => void;
   onSubmitRequest: (
-    params: IDownloadModalSendEmailRequest,
+    params: IDownloadModalOnSubmitRequest,
   ) => Promise<IApiResponse>;
   buttonAction: IDownloadBlockButton["withModal"];
 }

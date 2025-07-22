@@ -2,10 +2,36 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { parse } from "cookie";
 import { getDisplayNameWithoutParentheses } from "@src/utils/getDisplayNameWithoutParentheses";
 import { addLandingRequest } from "@src/lib/requests/addLandingRequest";
-import { pipedriveRequest } from "@src/lib/requests/pipedriveRequest";
 import { emailTransporter } from "@src/config/email/transporter";
 import { DownloadDocsDeveloperEmail } from "@src/components/emails/DownloadDocsDeveloperEmail";
 import { DownloadDocSpaceDeveloperEmail } from "@src/components/emails/DownloadDocSpaceDeveloperEmail";
+import { IDownloadModalData } from "@src/components/widgets/download/DownloadModal";
+
+interface IWebPaymentData {
+  FName: IDownloadModalData["fullName"];
+  Email: IDownloadModalData["email"];
+  Phone: IDownloadModalData["phone"];
+  CompanyName: IDownloadModalData["companyName"];
+  Host: IDownloadModalData["website"];
+  Comments: IDownloadModalData["comment"];
+  ButtonId: IDownloadModalData["buttonId"];
+  LanguageCode: string;
+  Language: string;
+}
+
+interface IPipedriveData {
+  firstName: IDownloadModalData["fullName"];
+  email: IDownloadModalData["email"];
+  phone: IDownloadModalData["phone"];
+  companyName: IDownloadModalData["companyName"];
+  website?: IDownloadModalData["website"];
+  from: string;
+  buttonId: IDownloadModalData["buttonId"];
+  type: IDownloadModalData["type"];
+  langOfPage: string;
+  utmSource?: string;
+  utmCampaig?: string;
+}
 
 export default async function handler(
   req: NextApiRequest,
@@ -35,15 +61,9 @@ export default async function handler(
     const errorMessages = [];
     const cookies = parse(req.headers.cookie || "");
 
-    const webPaymentResponse = await fetch(
-      type === "docsDeveloperDownloadRequest"
-        ? process.env.WEB_PAYMENT_DD_TRIAL_URL!
-        : type === "docSpaceDeveloperDownloadRequest"
-          ? process.env.WEB_PAYMENT_DSPD_TRIAL_URL!
-          : "",
-      {
-        method: "POST",
-        body: new URLSearchParams({
+    const webPaymentRequest = async () => {
+      try {
+        const webPaymentData: IWebPaymentData = {
           FName: fullName,
           Email: email,
           Phone: phone,
@@ -53,21 +73,47 @@ export default async function handler(
           ButtonId: buttonId,
           LanguageCode: getDisplayNameWithoutParentheses(locale),
           Language: locale,
-        }),
-      },
-    );
+        };
 
-    const webPaymentData = await webPaymentResponse.json();
-    if (!webPaymentResponse.ok) {
-      console.error(
-        "Web Payment Trial returns errors:",
-        webPaymentData?.Message,
+        await fetch(
+          type === "docsdeveloperdownloadrequest"
+            ? process.env.WEB_PAYMENT_DD_TRIAL_URL!
+            : type === "docspacedeveloperdownloadrequest"
+              ? process.env.WEB_PAYMENT_DSPD_TRIAL_URL!
+              : "",
+          {
+            method: "POST",
+            body: new URLSearchParams(Object.entries(webPaymentData)),
+          },
+        );
+
+        return {
+          status: "success",
+          message: "webPaymentTrialRequestSuccessful",
+        };
+      } catch (error: unknown) {
+        console.error(
+          "Web Payment Trial returns errors:",
+          error instanceof Error ? error.message : error,
+        );
+
+        return {
+          status: "error",
+          message:
+            error instanceof Error ? error.message : "Unknown error occurred",
+        };
+      }
+    };
+
+    const webPaymentResult = await webPaymentRequest();
+    if (webPaymentResult?.status === "error") {
+      errorMessages.push(
+        `webPaymentTrialRequest: ${webPaymentResult?.message}`,
       );
-      errorMessages.push(`web-payment-trial: ${webPaymentData?.Message}`);
     }
 
     if (referer) {
-      const addLandingData = await addLandingRequest({
+      const addLandingResult = await addLandingRequest({
         first_name: fullName,
         last_name: "",
         email,
@@ -94,44 +140,89 @@ export default async function handler(
         website,
       });
 
-      if (addLandingData?.status === "error") {
-        errorMessages.push(`add-landing: ${addLandingData?.message}`);
+      if (addLandingResult?.status === "error") {
+        errorMessages.push(`landingRequest: ${addLandingResult?.message}`);
       }
     }
 
-    const pipedriveData = await pipedriveRequest({
-      _ga: cookies._ga!,
-      title: `dwndev ${type === "docsDeveloperDownloadRequest" ? "Docs Developer" : type === "docSpaceDeveloperDownloadRequest" ? "DocSpace Developer" : ""} - ${country} - ${email} - ${region}`,
-      firstName: fullName,
-      email,
-      phone,
-      companyName,
-      website,
-      from,
-      buttonId,
-      type,
-      langOfPage: locale,
-      utmSource: cookies.utm_source,
-      utmCampaign: cookies.utm_campaign,
-    });
+    const pipedriveRequest = async () => {
+      try {
+        const pipedriveData: IPipedriveData = {
+          firstName: fullName,
+          email,
+          phone,
+          companyName,
+          ...(website && { website }),
+          from,
+          buttonId,
+          type,
+          langOfPage: locale,
+          ...(cookies.utmSource && { utmSource: cookies.utm_source }),
+          ...(cookies.utmCampaign && {
+            utmCampaig: cookies.utm_campaign,
+          }),
+        };
 
-    if (pipedriveData?.status === "error") {
-      errorMessages.push(`pipedrive: ${pipedriveData?.message}`);
+        await fetch(
+          `${process.env.PIPEDRIVE_API_URL}${process.env.PIPEDRIVE_API_TOKEN}`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${process.env.PIPEDRIVE_API_TOKEN}`,
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              owner_id: 12769244,
+              person_id: 131,
+              visible_to: "3",
+              "08f603bf9e0032d5a9f9e5cd39ca8c7a4374ac82": cookies._ga,
+              was_seen: false,
+              title: `dwndev ${type === "docsdeveloperdownloadrequest" ? "Docs Developer" : type === "docspacedeveloperdownloadrequest" ? "DocSpace Developer" : ""} - ${country} - ${email} - ${region}`,
+              "6654a8f8686bdba60bbcdf6e69313c150f40b088":
+                JSON.stringify(pipedriveData),
+            }),
+          },
+        );
+
+        return {
+          status: "success",
+          message: "postApiPipedriveRequestSuccessful",
+        };
+      } catch (error: unknown) {
+        console.error(
+          "Pipedrive api returns errors:",
+          error instanceof Error ? error.message : error,
+        );
+
+        return {
+          status: "error",
+          message:
+            error instanceof Error ? error.message : "Unknown error occurred",
+        };
+      }
+    };
+
+    const pipedriveResult = await pipedriveRequest();
+    if (pipedriveResult?.status === "error") {
+      errorMessages.push(
+        `postApiPipedriveRequest: ${pipedriveResult?.message}`,
+      );
     }
 
     const transporter = emailTransporter();
     await transporter.sendMail({
       from,
-      to: [process.env.NEXT_PUBLIC_SALES_EMAIL!],
+      to: [process.env.SALES_EMAIL!],
       subject: `${errorMessages.length ? "[Error] " : ""}${companyName} - ${
-        type === "docsDeveloperDownloadRequest"
+        type === "docsdeveloperdownloadrequest"
           ? "Docs Developer Download Request"
-          : type === "docSpaceDeveloperDownloadRequest"
+          : type === "docspacedeveloperdownloadrequest"
             ? "DocSpace Developer Download Request"
             : ""
       } ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
       html:
-        type === "docsDeveloperDownloadRequest"
+        type === "docsdeveloperdownloadrequest"
           ? DownloadDocsDeveloperEmail({
               firstName: fullName,
               lastName: "",
@@ -147,7 +238,7 @@ export default async function handler(
               language: locale,
               errorText: errorMessages.join("<br/><br/>"),
             })
-          : type === "docSpaceDeveloperDownloadRequest"
+          : type === "docspacedeveloperdownloadrequest"
             ? DownloadDocSpaceDeveloperEmail({
                 fullName: fullName,
                 email,

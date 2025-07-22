@@ -53,7 +53,7 @@ const DownloadDocSpaceEnterpriseEmail = ({
               <td style="margin: 0; padding: 15px 30px 15px; background-color: #f6f6f6; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;">
                 <div style="font-family: Arial; font-size: 14px; line-height: 18px; color: #333; margin: 0; padding: 0; width: 540px; height: auto; overflow: hidden; word-wrap: break-word; vertical-align: top; text-align: left; border: 0 none;">
                   <p style="margin-top:10px;">
-                    Docs Enterprise Download Request
+                    DocSpace Enterprise Download Request
                   </p>
                   <p style="margin-top:20px;">
                     <b>Full name</b>
@@ -66,7 +66,7 @@ const DownloadDocSpaceEnterpriseEmail = ({
                     ${email}
                   </p>
                   <p style="margin-top:5px;">
-                    <b>Phone</b>
+                    <b>Phone / WeChat</b>
                     <br />
                     ${phone}
                   </p>

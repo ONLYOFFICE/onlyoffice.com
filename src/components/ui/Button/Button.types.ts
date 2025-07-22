@@ -33,6 +33,8 @@ export interface IButton {
   size?: "small" | "medium";
   /** The border radius. Default: "9px". */
   borderRadius?: string;
+  /** The background color. */
+  backgroundColor?: string;
   /** Callback function triggered on click. */
   onClick?: () => void;
 }

@@ -21,4 +21,5 @@ export interface IFaqCollapse {
   tabletSmallSpacing?: ISection["tabletSmallSpacing"];
   /** Top and bottom spacing value for mobile screens. Default: ["48px", "48px"]. */
   mobileSpacing?: ISection["mobileSpacing"];
+  borderTop?: boolean;
 }

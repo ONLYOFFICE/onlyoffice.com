@@ -14,7 +14,7 @@ import { HeroTabs } from "@src/components/modules/download/HeroTabs";
 import {
   DownloadModal,
   IDownloadModalData,
-  IDownloadModalSendEmailRequest,
+  IDownloadModalOnSubmitRequest,
 } from "@src/components/widgets/download/DownloadModal";
 import {
   DownloadBlock,
@@ -53,10 +53,14 @@ const Hero = ({
     download: false,
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const isDocsEnterprise = formData.type === "docsEnterpriseDownloadRequest";
+  const isDocsEnterprise = formData.type === "docsenterprisedownloadrequest";
   const isDocsDeveloper = formData.type === "docsDeveloperDownloadRequest";
 
-  const onSubmitRequest = async ({ from }: IDownloadModalSendEmailRequest) => {
+  const onSubmitRequest = async ({
+    from,
+    country,
+    region,
+  }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-docs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -72,6 +76,8 @@ const Hero = ({
         comment: formData.comment,
         buttonId: formData.buttonId,
         from,
+        country,
+        region,
       }),
     }).then((res) => res.json());
   };
@@ -134,7 +140,7 @@ const Hero = ({
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "docsEnterpriseDownloadRequest",
+                              type: "docsenterprisedownloadrequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,
@@ -210,7 +216,7 @@ const Hero = ({
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "docsDeveloperDownloadRequest",
+                              type: "docsdeveloperdownloadrequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,
