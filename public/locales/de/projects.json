@@ -1,0 +1,28 @@
+{
+  "PageTitle": "Das leistungsstarke Projektmanagement-Tool | ONLYOFFICE",
+  "PageDescription": "Planen, verwalten und verfolgen Sie Aufgaben, Termine und Projekte. Verbessern Sie Ihre Teamproduktivität.",
+
+  "HeroTitle": "Projektmanagement-Software für eine effiziente Teamleistung",
+  "HeroText": "Das perfekte Projektemanagement-Tool für kleine und mittlere Projekte. So einfach wie Shoppen bei Amazon.<br/><1>Von CMSWire</1>",
+  "GetItNow": "Jetzt erhalten",
+
+  "ProjectHierarchy": "Projekthierarchie",
+  "ProjectHierarchyText": "Nutzen Sie die Meilensteine, Aufgaben und Teilaufgaben, um Prioritäten zwischen Ihren Hauptzielen und täglichen Aktivitäten festzulegen. Fügen Sie benuzterdefinierte Aufgabenstände hinzu.",
+  "ProjectHierarchyImage": "/images/templates/projects/features/de/project_hierarchy.png",
+  "GanttChart": "Gantt-Diagramm",
+  "GanttChartText": "Analysieren Sie Projektfortschritt und die Abhängigkeiten von Aufgaben und aktualisieren Sie geplante Ereignisse und Fristen mit wenigen Klicks.",
+  "GanttChartImage": "/images/templates/projects/features/de/gantt_chart.png",
+  "AccessRights": "Verwaltung von Zugriffsrechten",
+  "AccessRightsText": "Legen Sie individuelle Zugriffsberechtigungen für unterschiedliche Modulelemente fest und erstellen Sie private Projekte. Sie haben die volle Kontrolle darüber, was die Zugriffsberechtigten sehen können und welche Aktionen Sie ausführen können.",
+  "AccessRightsImage": "/images/templates/projects/features/de/access_rights.png",
+  "TimeManagement": "Zeitmanagement",
+  "TimeManagementText": "Bewerten Sie die Teamleistung und die Projektaktivitäten mithilfe einer Funktion für die Zeitüberwachung und automatisch generierten Berichten.",
+  "TimeManagementImage": "/images/templates/projects/features/de/time_management.png",
+
+  "MobileApps": "Mobile Apps",
+  "StayMobile": "Bleiben Sie mobil!",
+  "WorkWithProjects": "Arbeiten Sie an Projekten auf <0>iOS</0>- und <1>Android</1>-Geräten. Bearbeiten Sie die Projektdokumentation auch unterwegs.",
+
+  "ItsAPerfectTool": "Das perfekte Projektemanagement-Tool für kleine und mittlere Projekte. So einfach wie Shoppen bei Amazon.",
+  "CmsWire": "CMSWire"
+}

@@ -4,8 +4,8 @@
 
   "HeroTitle": "Project management software for excellent team performance",
   "HeroText": "It's a perfect tool for fast or medium-sized projects. No more complicated than shopping on Amazon.<br/><1>By CMSWire</1>",
-  "HeroImage": "/images/templates/projects/hero/en/hero_image.png",
-  "HeroImage2x": "/images/templates/projects/hero/en/hero_image@2x.png",
+  "HeroImage": "/images/templates/projects/hero/hero_image.png",
+  "HeroImage2x": "/images/templates/projects/hero/hero_image@2x.png",
   "GetItNow": "Get it now",
 
   "ProjectHierarchy": "Project hierarchy",
