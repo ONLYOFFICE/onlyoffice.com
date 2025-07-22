@@ -151,6 +151,10 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
     } else {
       document.body.style.overflow = "auto";
     }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
   }, [filterMobDisplay]);
 
   return (
