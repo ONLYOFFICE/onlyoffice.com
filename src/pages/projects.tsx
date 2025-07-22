@@ -40,6 +40,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "projects",
         "CollaborationsFeatures",
         "CollaborationsTabs",
+        "DownloadButton",
       ])),
       locale,
     },
