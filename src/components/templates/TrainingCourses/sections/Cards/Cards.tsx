@@ -6,6 +6,7 @@ import { Card } from "./sub-components/Card";
 import { items } from "./data/items";
 import { useRefineCardsItems } from "../../utils/useRefineCardsItems";
 import { useFilterCounter } from "../../utils/useFilterCounter";
+import { useHandleClickOutside } from "../../utils/useHandleClickOutside";
 
 import { ILocale } from "@src/types/locale";
 import {
@@ -80,6 +81,7 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
   const filterBtnRef = useRef<HTMLDivElement>(null);
   const moduleBtnRef = useRef<HTMLDivElement>(null);
   const dateBtnRef = useRef<HTMLDivElement>(null);
+  useHandleClickOutside(setActiveDropdown, filterBtnRef, moduleBtnRef, dateBtnRef);
 
   const [filterMobDisplay, setFilterMobDisplay] = useState(false);
   const { filterCounter } = useFilterCounter(choosedFilter, choosedModule, choosedDate);
