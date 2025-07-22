@@ -62,6 +62,8 @@
   "RequestSuccessfully": "Your request has been sent successfully",
   "RequestError": "We are sorry, but an error occurred, try again later",
 
+  "HeroVideoUrl": "https://www.youtube.com/embed/7HY30Xg7PdI?autoplay=1&amp;mute=1",
+
   "NewSign": "New",
   "Sessions": "Sessions: ",
   "Hours": "Hours: ",

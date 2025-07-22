@@ -1,0 +1,134 @@
+{
+  "TrainingCoursesPageTitle": "培训课程",
+  "TrainingCoursesMetaDescription": "了解更多关于协作技术和ONLYOFFICE解决方案的信息。",
+  "TrainingCourses": "培训课程",
+  "SearchTraining": "搜索培训课程",
+  "ONLYOFFICEFeatures": "通过我们的在线课程，包括对ONLYOFFICE功能和工具的可视化演示，以及导师管制下的培训活动，确保您的工作顺利和有效。",
+  "All": "全部",
+  "Modules": "模块",
+  "Purpose": "目的",
+  "ModulesWithPoints": "模块: ",
+  "ONLYOFFICEDocuments": "ONLYOFFICE 文档",
+  "ONLYOFFICEMail": "ONLYOFFICE 邮件",
+  "ONLYOFFICECRM": "ONLYOFFICE 客户关系管理（CRM）",
+  "ONLYOFFICEProjects": "ONLYOFFICE 项目",
+  "ONLYOFFICECalendar": "ONLYOFFICE 日历",
+  "ONLYOFFICECommunity": "ONLYOFFICE 社区",
+  "ONLYOFFICEPeople": "ONLYOFFICE 成员",
+  "Integration": "集成",
+  "SortBy": "排序方式。",
+  "NewestOldest": "最新 - 最旧",
+  "OldestNewest": "最旧 - 最新",
+  "LoadMore": "加载",
+  "FAQ": "常见问题",
+  "QuestionONLYOFFICETraining": "ONLYOFFICE的培训课程是以什么形式进行的？",
+  "AnswerONLYOFFICETraining": "我们的培训课程是通过Zoom平台远程进行的。",
+  "QuestionLimit": "对参与者的数量有什么限制吗？",
+  "AnswerLimit": "每期培训最多可以接待20名参与者。",
+  "QuestionTrainingSessionLookLike": "培训课程是什么样子的？",
+  "AnswerTrainingSessionLookLike": "我们提供一个培训门户，这样您就可以跟随导师的步骤，根据共享屏幕上的视觉演示检查描述的功能。在每堂课结束时，您可以提出您的问题，并澄清任何困惑的地方。",
+  "QuestionGetMaterials": "培训课程结束后，我是否会得到任何材料？",
+  "AnswerGetMaterials": "您会得到一份简短的课程介绍，课程记录以及一份包含您个人培训任务的文件。",
+  "QuestionFindMaterials": "我在哪里可以找到其他问题的答案？",
+  "AnswerFindMaterials": "如果您有任何关于培训课程的问题，请与我们联系：{0}sales@onlyoffice.com{1}.",
+  "Reset": "{0}重启{1}",
+  "Filters": "过滤器",
+  "Module": "模块",
+  "ONLYOFFICEDocs": "ONLYOFFICE 文档",
+  "ApplyFilter": "应用过滤器",
+  "FillOutThisForm": "请填写此表，要求对培训课程进行报价",
+  "FullName": "全名",
+  "FullNamePlaceholder": "名姓",
+  "FullNameEmpty": "全名为空",
+  "CompanyName": "公司名称",
+  "CompanyNameEmpty": "公司名称为空",
+  "Email": "电子邮件",
+  "EmailPlaceholder": "name@domain.com",
+  "PreferredLanguage": "语言*",
+  "English": "英语",
+  "German": "德语",
+  "French": "法语",
+  "Spanish": "西班牙文",
+  "Chinese": "中文",
+  "LanguageIsNotSelected": "语言为空",
+  "TimeZone": "您的时区*",
+  "TimeZoneIsNotSelected": "Time zone is not selected",
+  "Comment": "评论",
+  "ByClickingSubmit": "点击“提交请求”即表示您了解并同意我们的{0}SLA{1}以及{2}隐私声明{3}.",
+  "PleaseWait": "请稍候...",
+  "SubmitRequest": "提交请求",
+  "RequestSuccessfully": "您的请求已成功发送！",
+  "RequestError": "很抱歉，发生错误，请稍后重试",
+
+  "HeroVideoUrl": "//player.bilibili.com/player.html?aid=BV111421Z7Ry&bvid=BV111421Z7Ry&cid=BV111421Z7Ry",
+
+  "NewSign": "New",
+  "Sessions": "课数: ",
+  "Hours": "小时: ",
+  "Price": "价格: ",
+  "OnDemand": "根据需要",
+  "Custom": "自定义",
+
+  "CardDataTitle21": "在教育组织中使用ONLYOFFICE文档",
+  "CardDataDescription21": "想要用数字方式促进教学吗？参加这门综合课程，了解如何使用 ONLYOFFICE 文档创建课程计划和学习材料，包括演示文稿和互动形式，与学生和老师实时协作，建立评分系统等。了解如何管理教育内容并确保敏感数据的安全。",
+
+  "CardDataTitle20": "自定义技术培训",
+  "CardDataDescription20": "了解使用 ONLYOFFICE 文档的技术方面。深入了解如何安装和维护它，如何进行备份，配置编辑器，添加插件和宏，了解高级功能和参数。",
+
+  "CardDataTitle19": "在 ONLYOFFICE 协作空间中编辑文档",
+  "CardDataDescription19": "ONLYOFFICE 协作空间是一个基于房间的有效文档协作平台。了解在协作空间中如何管理办公文档，如何使用实时或段落锁定共同编辑模式，如何创建和协作编辑文本文档、电子表格、演示文稿和表单。",
+
+  "CardDataTitle18": "管理 ONLYOFFICE 协作空间",
+  "CardDataDescription18": "ONLYOFFICE 协作空间是一个基于房间的有效文档协作平台。了解如何使用它管理团队和邀请用户，创建和管理房间，自定义和保护您的空间。",
+
+  "CardDataTitle17": "在WordPress中处理文档",
+  "CardDataDescription17": "了解如何在WordPress内处理办公文件：使用ONLYOFFICE 文档编辑上传到WordPress的文件，在创建文章时添加ONLYOFFICE模块，以嵌入模式插入文件，等等。",
+
+  "CardDataTitle16": "集成（WordPress）",
+  "CardDataDescription16": "了解如何在WordPress内处理办公文件：使用ONLYOFFICE 文档编辑上传到WordPress的文件，在创建文章时添加ONLYOFFICE模块，以嵌入模式插入文件，等等。",
+
+  "CardDataTitle15": "在Nextcloud中处理文档",
+  "CardDataDescription15": "了解如何将ONLYOFFICE 文档连接到Nextcloud，对其进行配置，并在Nextcloud内对文本文档、电子表格、演示文稿和表单进行协作编辑。",
+
+  "CardDataTitle14": "集成（Nextcloud）",
+  "CardDataDescription14": "了解如何将ONLYOFFICE 文档连接到Nextcloud，对其进行配置，并在Nextcloud内对文本文档、电子表格、演示文稿和表单进行协作编辑。",
+
+  "CardDataTitle13": "处理表单",
+  "CardDataDescription13": "了解如何创建可填写的表格，包括添加各种表单字段并改变字段属性，与其他用户分享表单，填写表单并另存为DOCX或PDF格式。",
+
+  "CardDataTitle12": "表单",
+  "CardDataDescription12": "了解如何创建可填写的表格，包括添加各种表单字段并改变字段属性，与其他用户分享表单，填写表单并另存为DOCX或PDF格式。",
+
+  "CardDataTitle11": "定制套餐",
+  "CardDataDescription11": "挑选您想掌握的任何课程，组成您自己的培训套餐。请与我们联系，讨论所有细节。",
+
+  "CardDataTitle10": "VIP 套餐",
+  "CardDataDescription10": "VIP套餐让您获得一套完整的培训课程，以掌握所有ONLYOFFICE模块和工具：处理文档、项目、CRM、邮件和日历，使用社交沟通功能，管理用户和访客，管理门户网站",
+
+  "CardDataTitle9": "门户管理",
+  "CardDataDescription9": "了解如何管理您的ONLYOFFICE和配置门户设置，包括语言和时区、DNS、颜色主题、双因素认证、备份、与第三方服务的集成等等。",
+
+  "CardDataTitle8": "团队协作",
+  "CardDataDescription8": "了解如何使用ONLYOFFICE项目来提高您团队的生产力。了解任务、子任务、里程碑、甘特图、时间跟踪和其他功能。了解如何添加和管理用户、访客和管理员，与队友聊天，使用社交沟通工具如博客、论坛、新闻、投票、百科等。",
+
+  "CardDataTitle7": "与客户合作 ",
+  "CardDataDescription7": "了解ONLYOFFICE CRM、邮件和日历，以管理业务流程、追踪销售并简化您与客户的沟通。了解如何组织客户数据库，创建潜在客户表单，建立报告，管理信件和创建企业邮箱，安排会议和发送邀请。",
+
+  "CardDataTitle6": "办公套件",
+  "CardDataDescription6": "发现有效的文件管理，并根据您的需要组织文件工作流程。了解如何在ONLYOFFICE门户或集成解决方案中创建、编辑、共享和协作文本文档、电子表格和演示文稿。",
+
+  "CardDataTitle5": "成员，聊天，社区",
+  "CardDataDescription5": "学习如何在门户网站上添加和管理用户、访客和管理员，通过即时通讯应用程序与您的队友实时聊天，使用社交沟通工具，如博客、论坛、新闻、投票、百科等。",
+
+  "CardDataTitle4": "邮件和日历",
+  "CardDataDescription4": "了解如何在ONLYOFFICE邮件中管理您的信件，创建企业邮箱，构建收件箱，添加电子邮件签名。了解ONLYOFFICE日历，学习如何创建时间表、安排小组会议、添加待办事项以及与第三方应用程序同步您的日历。",
+
+  "CardDataTitle3": "CRM",
+  "CardDataDescription3": "了解如何使用ONLYOFFICE CRM来组织您的客户数据库，追踪销售，创建潜在客户表单，机会，发票，并建立报告。",
+
+  "CardDataTitle2": "项目",
+  "CardDataDescription2": "了解如何使用ONLYOFFICE项目来提高您团队的生产力。了解任务、子任务、里程碑、甘特图、时间追踪和其他功能。",
+
+  "CardDataTitle1": "文件",
+  "CardDataDescription1": "发现有效的文件管理，并根据您的需要组织文件工作流程。了解如何在ONLYOFFICE门户或集成解决方案中创建、编辑、共享和协作文本文档、电子表格和演示文稿。"
+}

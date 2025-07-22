@@ -36,7 +36,7 @@ const HeroComponent = () => {
           </StyledHeroLeft>
           <StyledHeroRight>
             <StyledHeroVideo
-              src="https://www.youtube.com/embed/7HY30Xg7PdI?autoplay=1&amp;mute=1"
+              src={t("HeroVideoUrl")}
               name="youtube embed"
               frameBorder="0"
               allow="autoplay; encrypted-media"
