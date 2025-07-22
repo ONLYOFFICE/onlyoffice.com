@@ -4,8 +4,8 @@
 
   "HeroTitle": "Efficient time management tool",
   "HeroText": "Keep your team organized and productive",
-  "HeroImage": "/images/templates/calendar/hero/en/hero_image.png",
-  "HeroImage2x": "/images/templates/calendar/hero/en/hero_image@2x.png",
+  "HeroImage": "/images/templates/calendar/hero/hero_image.png",
+  "HeroImage2x": "/images/templates/calendar/hero/hero_image@2x.png",
   "GetItNow": "Get it now",
 
   "IndividualOrGroup": "Individual or group calendar",
