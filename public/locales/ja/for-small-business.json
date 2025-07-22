@@ -35,6 +35,7 @@
   "SMBsFeature34": "30以上のビジネスプラットフォームとすぐに使えるコネクタ。WordPress、Moodle、Nextcloud、ownCloud、Confluence、Alfresco、Jira、その他のプラットフォーム。 <1>コネクタ一覧</1>",
   "SMBsFeature35": "<1>JWT</1>、SSL暗号化、コピー/ダウンロード/印刷の制限によるデータ保護",
   "SMBsFeature36": "すべてのデータを社内で管理するオンプレミス版と、インストール不要のパブリッククラウド版",
+  "JWTLink" : "https://www.onlyoffice.com/blog/ja/2022/09/jwt",
   "SMBsImgUrl3": "/images/templates/for-small-business/features/onlyoffice_docs.svg",
   "UseInTheCloud": "クラウドで試す",
   "Quote3": "「Nextcloudとの統合は魅力的です。 ドキュメントの編集がその場でできるようになり、ドキュメントの共有やコラボレーションができるようになったことは、ユーザーにとって本当に嬉しいことです。メールに添付したり、ドキュメントのバージョンを増やしたりする必要がなくなりました」",

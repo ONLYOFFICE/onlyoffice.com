@@ -51,12 +51,17 @@ const Features = () => {
                   }}
                   contentWidth={544}
                   text={group.items.map((key) => {
-                    const entry = group.textWithLinks?.find(
-                      (item) => item.label === key,
-                    );
+                    const entry = group.textWithLinks?.find((item) => item.label === key);
                     return {
                       label: t(key),
-                      links: entry?.links ?? [],
+                      links: entry?.links?.map((link) => ({
+                        ...link,
+                        href:
+                          link.href === "https://www.onlyoffice.com/blog/2022/09/what-is-jwt/"
+                            ? t("JWTLink")
+                            : link.href,
+                        label: t(link.label),
+                      })) ?? [],
                     };
                   })}
                   position={{

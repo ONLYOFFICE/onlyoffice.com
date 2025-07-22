@@ -35,6 +35,7 @@
   "SMBsFeature34": "Oltre 30 integrazioni pronte all'uso con piattaforme aziendali: WordPress, Moodle, Nextcloud, ownCloud, Confluence, Alfresco, Jira, and other platforms. <1>Scopri tutti connettori</1>",
   "SMBsFeature35": "Protezione dei dati con <1>JWT</1>, crittografia SSL, limitazione di copia, download e stampa",
   "SMBsFeature36": "On-premise per mantenere tutti i dati in-house o nel cloud pubblico senza installazione",
+  "JWTLink" : "https://www.onlyoffice.com/blog/it/2022/09/cos-e-jwt",
   "SMBsImgUrl3": "/images/templates/for-small-business/features/onlyoffice_docs.svg",
   "UseInTheCloud": "USA NEL CLOUD",
   "Quote3": "\"L'integrazione Nextcloud funziona a meraviglia! I nostri utenti sono davvero felici di poter modificare i documenti in-place, consentendo di condividere documenti e collaborare su di essi. Non c'è bisogno di allegati di posta, moltiplicando le versioni dei documenti.\"",

@@ -35,6 +35,7 @@
   "SMBsFeature34": "Více než 30 připravených integrací s obchodními platformami: Moodle, Nextcloud, ownCloud, Confluence, Alfresco, Jira a další platformy. <1>Podívejte se na všechny konektory</1>",
   "SMBsFeature35": "Ochrana dat pomocí <1>JWT</1>, šifrování SSL, omezení kopírování, stahování a tisku.",
   "SMBsFeature36": "On-premises pro uchovávání všech dat v podniku NEBO ve veřejném cloudu bez nutnosti instalace",
+  "JWTLink" : "https://www.onlyoffice.com/blog/2022/09/what-is-jwt",
   "SMBsImgUrl3": "/images/templates/for-small-business/features/onlyoffice_docs.svg",
   "UseInTheCloud": "VYZKOUŠET V CLOUDU",
   "Quote3": "“Integrace Nextcloudu funguje jako kouzlo! Naši uživatelé jsou opravdu rádi, že mohou upravovat dokumenty on site, což jim umožňuje sdílet dokumenty a spolupracovat na nich. Není třeba používat přílohy pošty a množit verze dokumentů.”",
