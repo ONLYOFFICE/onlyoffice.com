@@ -318,17 +318,20 @@ export const items = [
     description: "AwardDesc3",
     width: "245px",
     link: "https://sourceforge.net/projects/teamlab/reviews/",
+    locales: ["en", "fr", "es", "pt", "it", "cs", "nl", "ja", "zh", "ru", "sr"],
   },
   {
     image: "/images/templates/awards/awards/all-digital-school-editors-pick-badge.png",
     title: "AwardTitle2",
     description: "AwardDesc2",
     link: "https://alldigitalschool.com/resource-listing/only-office/",
+    locales: ["en", "fr", "es", "pt", "it", "cs", "nl", "ja", "zh", "ru", "sr"],
   },
   {
     image: "/images/templates/awards/awards/ss_reviewbadge.png",         
     title: "AwardTitle1",       
     description: "AwardDesc1",  
     link: "https://www.softwaresuggest.com/blog/onlyoffice-review/",
+    locales: ["en", "fr", "es", "pt", "it", "cs", "nl", "ja", "zh", "ru", "sr"],
   },
 ];
