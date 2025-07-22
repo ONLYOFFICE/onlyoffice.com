@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -154,6 +154,14 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
     setDataSheetsDisplayCount(cardDatasheetsItems.length);
     setDataSheetsShowButton(false);
   };
+
+  useEffect(() => {
+    if (filterMobDisplay) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [filterMobDisplay]);
 
   return (
     <>
