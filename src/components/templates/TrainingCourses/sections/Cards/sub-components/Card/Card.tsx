@@ -63,7 +63,7 @@ const Card = ({
               {t("Sessions")} {sessions}
             </StyledCardSessions>
             <StyledCardHours color='#aaa' size={4}>
-              {t("Hours")} {hours}
+              {t("Hours")} {(locale === "nl" && hours === "Op maat") ? "Aangepast" : hours}
             </StyledCardHours>
             <StyledCardPrice color='#aaa' size={4}>
               <span>{t("Price")}</span> {price}
