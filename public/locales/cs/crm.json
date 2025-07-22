@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Snadno použitelný systém CRM | ONLYOFFICE",
+  "PageDescription": "Online software pro správu klientů. Správa zákazníků, sledování prodeje, zasílání faktur s kompletní sadou obchodních nástrojů.",
+
+  "HeroTitle": "Jednoduchá správa CRM pro řízení prodeje a zvýšení produktivity",
+  "HeroText": "Skvělý a snadno použitelný CRM systém.<br/><1>Od Live Enterprise</1>",
+  "GetItNow": "Získejte ONLYOFFICE",
+
+  "CustomerRelations": "Základy pro řízení vztahů se zákazníky",
+  "CustomerRelationsText": "Sestavte si databázi zákazníků, spravujte obchodní procesy, analyzujte potencionální nabídky a sledujte prodej se softwarem CRM: Kontakty, obchodní příležitosti, úkoly, formuláře a historie komunikace.",
+  "CustomerRelationsImage": "/images/templates/crm/features/cs/customer_relations.png",
+  "Customization": "Přizpůsobení",
+  "CustomizationText": "Přizpůsobte software ONLYOFFICE CRM vašim konkrétním potřebám: přidejte nové kontakty, kategorie úkolů a speciální uživatelská pole. Popište svůj obchodní proces pomocí přizpůsobitelných fází příležitosti.",
+  "CustomizationImage": "/images/templates/crm/features/cs/customization.png",
+  "RapidEntry": "Rychlý zápis potenciálních zákazníků",
+  "RapidEntryText": "Vložte formulář ONLYOFFICE web-to-lead na své webové stránky a získejte informace o nových potenciálních zákaznících, které se automaticky přenesou do databáze softwaru CRM.",
+  "RapidEntryImage": "/images/templates/crm/features/cs/rapid_entry.png",
+  "Invoicing": "Fakturační systém",
+  "InvoicingText": "Vytvořte fakturu přímo ve vašem ONLYOFFICE výběrem požadovaných příjemců z CRM databáze a následným propojením s požadovanou obchodní příležitostí.",
+  "InvoicingImage": "/images/templates/crm/features/cs/invoicing.png",
+  "CloseIntegration": "Úzká integrace s Mail",
+  "CloseIntegrationText": "Přidávejte kontakty z e-mailu do databáze, posílejte zprávy, faktury a zobrazte veškerou korespondenci s klienty přímo v CRM. Organizujte hromadnou korespondenci přímo z ONLYOFFICE CRM.",
+  "CloseIntegrationImage": "/images/templates/crm/features/cs/close_integration.png",
+  "CustomerCall": "Volání zákazníka",
+  "CustomerCallText": "Zavolejte zákazníkovi nebo odpovídejte na hovor přímo ze svého CRM díky integraci systému ONLYOFFICE Twilio.",
+  "CustomerCallImage": "/images/templates/crm/features/cs/customer_call.png",
+  "SalesReporting": "Přehledy prodeje",
+  "SalesReportingText": "Generujte přehledy, abyste identifikovali silné a slabé stránky svého prodeje a věděli, co se děje ve vaší firmě.",
+  "SalesReportingImage": "/images/templates/crm/features/cs/sales_reporting.png",
+
+  "ItIsPrettyNice": "Skvělý a snadno použitelný CRM systém.",
+  "LiveEnterprise": "Live Enterprise"
+}

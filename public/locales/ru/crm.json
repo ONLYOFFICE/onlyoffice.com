@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Облачная CRM система - управление клиентами онлайн | ONLYOFFICE",
+  "PageDescription": "Управление клиентами онлайн. Отслеживание продаж, интеграция с почтой, автоматизированные отчёты.",
+
+  "HeroTitle": "Простая CRM-система для управления продажами",
+  "HeroText": "Cимпатичная и удобная CRM система<br/><1>Live Enterprise</1>",
+  "GetItNow": "Получить сейчас",
+
+  "CustomerRelations": "Эффективное управление клиентской базой",
+  "CustomerRelationsText": "Создавайте свою клиентскую базу и координируйте продажи при помощи всех необходимых инструментов для взаимодействия с клиентами - контактов, потенциальных сделок, задач, истории сотрудничества.",
+  "CustomerRelationsImage": "/images/templates/crm/features/ru/customer_relations.png",
+  "Customization": "Кастомизация",
+  "CustomizationText": "Настраивайте ONLYOFFICE CRM под индивидуальные нужды компании: добавляйте новые типы контактов, категории задач и специальные пользовательские поля.",
+  "CustomizationImage": "/images/templates/crm/features/ru/customization.png",
+  "RapidEntry": "Быстрая регистрация потенциальных клиентов",
+  "RapidEntryText": "Встройте контактную форму ONLYOFFICE в свой сайт и ускорьте расширение клиентской базы. Информация о новых потенциальных клиентах будет добавляться в ONLYOFFICE CRM автоматически.",
+  "RapidEntryImage": "/images/templates/crm/features/ru/rapid_entry.png",
+  "Invoicing": "Онлайн-инвойсинг",
+  "InvoicingText": "Выставляйте счета напрямую из ONLYOFFICE, выбирая необходимых клиентов из вашей базы данных CRM и, при необходимости, осуществляя привязку к конкретной сделке.",
+  "InvoicingImage": "/images/templates/crm/features/ru/invoicing.png",
+  "CloseIntegration": "Интеграция с модулем \"Почта\"",
+  "CloseIntegrationText": "Добавляйте контакты из электронной почты в вашу базу данных, отправляйте сообщения, счета и просматривайте всю переписку с клиентами прямо в CRM. Организуйте массовую рассылку из ONLYOFFICE CRM.",
+  "CloseIntegrationImage": "/images/templates/crm/features/ru/close_integration.png",
+  "CustomerCall": "Звонки клиентам",
+  "CustomerCallText": "Теперь вы сможете звонить и отвечать на звонки прямо из CRM, благодаря интеграции с сервисом Twilio.",
+  "CustomerCallImage": "/images/templates/crm/features/ru/customer_call.png",
+  "SalesReporting": "Отчеты о продажах",
+  "SalesReportingText": "Генерируйте отчеты, чтобы выявить сильные и слабые стороны процесса продаж и быть в курсе всего происходящего в вашем бизнесе.",
+  "SalesReportingImage": "/images/templates/crm/features/ru/sales_reporting.png",
+
+  "ItIsPrettyNice": "Cимпатичная и удобная CRM система.",
+  "LiveEnterprise": "Live Enterprise"
+}

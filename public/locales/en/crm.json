@@ -4,8 +4,8 @@
 
   "HeroTitle": "Simple CRM for sales management and productivity improvement",
   "HeroText": "It's a pretty nice and easy-to-use CRM system<br/><1>By Live Enterprise</1>",
-  "HeroImage": "/images/templates/crm/hero/en/hero_image.png",
-  "HeroImage2x": "/images/templates/crm/hero/en/hero_image@2x.png",
+  "HeroImage": "/images/templates/crm/hero/hero_image.png",
+  "HeroImage2x": "/images/templates/crm/hero/hero_image@2x.png",
   "GetItNow": "Get it now",
 
   "CustomerRelations": "Customer relations management",
