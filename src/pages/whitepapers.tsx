@@ -8,7 +8,7 @@ import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { WhitepapersTemplate } from "@src/components/templates/Whitepapers";
 
-const VirtualDataRoomsPage = ({ locale }: ILocale) => {
+const WhitepapersPage = ({ locale }: ILocale) => {
   const { t } = useTranslation("whitepapers");
 
   return (
@@ -24,7 +24,14 @@ const VirtualDataRoomsPage = ({ locale }: ILocale) => {
           locale={locale}
           highlight={{
             buttonId: "oo-menu-item-btn-resources",
+            linkId: "oo-menu-link-white-papers"
           }}
+          theme="white"
+          backgroundColor="#3d3d3d"
+          borderColor="#3d3d3d"
+          onScrollBorderColor="#3d3d3d"
+          onScrollBackgroundColor="#3d3d3d"
+          onScrollChangeTheme={false}
         />
       </Layout.Header>
       <Layout.Main>
@@ -49,4 +56,4 @@ export async function getStaticProps({ locale }: ILocale) {
   };
 }
 
-export default VirtualDataRoomsPage;
+export default WhitepapersPage;
