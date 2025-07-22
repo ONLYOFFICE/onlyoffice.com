@@ -15,7 +15,7 @@ const MobileApps = () => {
   const { t } = useTranslation("projects");
 
   return (
-    <StyledMobileAppsSection background="#f6f6f6">
+    <StyledMobileAppsSection background="#f6f6f6" $bgImage={t("MobileImage")}>
       <Container>
         <StyledMobileAppsContent>
           <StyledMobileApps>{t("MobileApps")}</StyledMobileApps>
@@ -44,12 +44,14 @@ const MobileApps = () => {
           </StyledMobileAppsText>
           <StyledMobileAppsButtonsWrapper>
             <DownloadButton
+              id="projects-app-store-button"
               platform="app-store"
               variant="secondary"
               href="https://apps.apple.com/us/app/onlyoffice-projects/id1353395928"
               target="_blank"
             />
             <DownloadButton
+              id="projects-google-play-button"
               platform="google-play"
               variant="secondary"
               href="https://play.google.com/store/apps/details?id=com.onlyoffice.projects"

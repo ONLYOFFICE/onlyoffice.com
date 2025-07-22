@@ -4,9 +4,9 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
-const StyledMobileAppsSection = styled(Section)`
+const StyledMobileAppsSection = styled(Section)<{ $bgImage: string }>`
   padding: 90px 0;
-  background-image: url("/images/templates/projects/mobile-apps/en/mobile.png");
+  background-image: url(${({ $bgImage }) => $bgImage});
   background-repeat: no-repeat;
   background-position: calc(50% + 380px) 0;
 
