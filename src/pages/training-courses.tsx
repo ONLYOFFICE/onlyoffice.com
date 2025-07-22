@@ -26,6 +26,8 @@ const TrainingCoursesPage = ({ locale }: ILocale) => {
             buttonId: "oo-menu-item-btn-products",
             linkId: "oo-menu-link-docspace-training-courses",
           }}
+          backgroundColor="#f5f5f5"
+          borderColor="#f5f5f5"
         />
       </Layout.Header>
       <Layout.Main>

@@ -5,7 +5,13 @@ import "onlyoffice-react-ui-kit/header/css";
 import { IHeader } from "./Header.types";
 import { languages } from "@src/config/data/languages";
 
-const Header = ({ locale, theme, highlight }: IHeader) => {
+const Header = ({
+  locale,
+  theme,
+  highlight,
+  borderColor = "#cccccc",
+  backgroundColor = "#ffffff"
+}: IHeader) => {
   const [scrolled, setScrolled] = useState(false);
   const headerRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
@@ -32,8 +38,8 @@ const Header = ({ locale, theme, highlight }: IHeader) => {
       <div ref={headerRef}></div>
       <OOHeader
         locale={locale}
-        borderColor={scrolled ? "#cccccc" : "transparent"}
-        backgroundColor={scrolled ? "#ffffff" : "transparent"}
+        borderColor={scrolled ? borderColor : "transparent"}
+        backgroundColor={scrolled ? backgroundColor : "transparent"}
         languages={languages.map((language) => ({
           key: language.shortKey,
           shortKey: language.shortKey,
