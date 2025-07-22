@@ -18,18 +18,26 @@ const StyledButton = styled.button<{
   line-height: 18px;
   letter-spacing: 0.04em;
   width: ${(props) => (props.$fullWidth ? "100%" : "auto")};
+  min-height: 56px;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
 
-  padding: ${(props) =>
-    props.$size === "small"
-      ? "16px 24px"
-      : props.$size === "medium"
-        ? props.$variant === "tertiary" || props.$variant === "quinary"
-          ? "18px 24px"
-          : "19px 24px"
-        : "16px 24px"};
+  padding: ${(props) => {
+    if (props.$size === "small") {
+      return props.$variant === "tertiary" || props.$variant === "quinary"
+        ? "15px 24px"
+        : "16px 24px";
+    }
+
+    if (props.$size === "medium") {
+      return props.$variant === "tertiary" || props.$variant === "quinary"
+        ? "18px 24px"
+        : "19px 24px";
+    }
+
+    return "16px 24px";
+  }};
 
   ${(props) =>
     props.$variant === "primary"
