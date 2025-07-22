@@ -18,9 +18,7 @@ const WhitepapersInput = ({ value, setValue }: {
   const { t } = useTranslation("whitepapers");
 
   return (
-    <StyledWhitepapersSection
-        background="#333"
-      >
+    <StyledWhitepapersSection background="#333">
       <Container maxWidth="1038px">
         <StyledWhitepapersInputWrapper>
           <StyledWhitepapersInputLeft>

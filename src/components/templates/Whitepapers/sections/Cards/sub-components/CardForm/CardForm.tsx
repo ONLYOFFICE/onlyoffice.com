@@ -194,7 +194,8 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
 
   return (
     <StyledCardFormOverlay
-      onClick={(event) => event.target === event.currentTarget && setOpenModal(false)}
+      isOpen={openModal}
+      onClose={() => setOpenModal(false)}
     >
       <StyledCardFormModal>
         <StyledCardFormCloseBtn

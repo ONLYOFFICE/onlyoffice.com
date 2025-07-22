@@ -1,16 +1,11 @@
 import styled from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { Modal } from "@src/components/ui/Modal";
 import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 
-const StyledCardFormOverlay = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  inset: 0;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.4);
+const StyledCardFormOverlay = styled(Modal)`
+  overscroll-behavior: contain;
   cursor: pointer;
 `;
 

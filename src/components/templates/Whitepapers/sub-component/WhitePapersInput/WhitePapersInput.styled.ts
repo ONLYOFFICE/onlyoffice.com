@@ -73,5 +73,5 @@ export {
   StyledWhitepapersInputLeft,
   StyledWhitepapersInputSubtitle,
   StyledWhitepapersInputRight,
-  StyledWhitepapersInput,
+  StyledWhitepapersInput
 };
