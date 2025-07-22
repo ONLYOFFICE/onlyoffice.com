@@ -23,8 +23,8 @@ const TrainingCoursesPage = ({ locale }: ILocale) => {
         <Header
           locale={locale}
           highlight={{
-            buttonId: "oo-menu-item-btn-products",
-            linkId: "oo-menu-link-docspace-training-courses",
+            buttonId: "oo-menu-item-btn-resources",
+            linkId: "oo-menu-link-training-courses",
           }}
           backgroundColor="#f5f5f5"
           borderColor="#f5f5f5"
