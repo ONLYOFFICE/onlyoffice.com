@@ -1,0 +1,24 @@
+{
+  "PageTitle": "提高团队协作的企业网络 | ONLYOFFICE",
+  "PageDescription": "通过博客、论坛、书签和wiki增强团队协作。",
+
+  "HeroTitle": "增强团队沟通",
+  "HeroText": "软件易于使用，并提供一系列对业务友好的协作功能。<br/><1>- PCMag</1>",
+  "GetItNow": "立即获取ONLYOFFICE",
+
+  "SharingCompanyNews": "分享公司新闻/公告",
+  "SharingCompanyNewsText": "创建公司新闻板块，在此发布最新的公司新闻、订单和公告等。与同事一起添加书签并将其分享给有用或有趣的网络资源。",
+  "SharingCompanyNewsImage": "/images/templates/community/features/zh/sharing_company_news.png",
+  "CreatingPolls": "开展民意和问卷调查",
+  "CreatingPollsText": "通过民意和问卷调查方式开展研究、收集数据或从其他办公室用户那里获取反馈。让您的论坛发布更多有助于互动的问卷。",
+  "CreatingPollsImage": "/images/templates/community/features/zh/creating_polls.png",
+  "MaintainingBlogs": "维护企业博客和论坛",
+  "MaintainingBlogsText": "通过发布帖子到公司博客，与其他人分享想法、知识和经验。讨论问题和引导论坛讨论等。",
+  "MaintainingBlogsImage": "/images/templates/community/features/zh/maintaining_blogs.png",
+  "InstantMessaging": "即时通讯应用软件",
+  "InstantMessagingText": "与其他用户实时沟通、在聊天室组织会议，使用邮件列表一次性向多人发送消息等。",
+  "InstantMessagingImage": "/images/templates/community/features/zh/instant_messaging.png",
+
+  "EasyToUse": "软件易于使用，并提供一系列对业务友好的协作功能。",
+  "PcMag": "PC Mag"
+}

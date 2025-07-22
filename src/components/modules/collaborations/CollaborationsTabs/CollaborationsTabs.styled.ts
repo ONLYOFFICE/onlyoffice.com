@@ -35,16 +35,18 @@ const StyledCollaborationsTab = styled.li<{
 const StyledCollaborationsTabLink = styled(Link)<{
   $active?: boolean;
 }>`
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   padding: 37px 12px;
   font-size: 13px;
   line-height: 20px;
   font-weight: 600;
   letter-spacing: -0.01em;
   color: ${(props) => (props.$active ? "#ff6f3d" : "#444")};
-  width: 100%;
   background-color: ${(props) => (props.$active ? "#ffffff" : "#f5f5f5")};
   transition: background-color 0.2s;
 
