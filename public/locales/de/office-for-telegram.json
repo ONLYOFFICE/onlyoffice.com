@@ -1,0 +1,31 @@
+{
+  "PageTitle": "ONLYOFFICE-Bot für Telegram",
+  "PageDescription": "Öffnen, erstellen, konvertieren und bearbeiten Sie Office-Dokumente in Telegram",
+
+  "OnlineOfficeForTelegram": "ONLYOFFICE-Bot für Telegram",
+  "OpenCreateConvertEdit": "Öffnen, erstellen, konvertieren und bearbeiten Sie Office-Dokumente in Telegram",
+  "StartNow": "Jetzt starten. Kostenlos",
+  "HeroImgUrl": "/images/templates/office-for-telegram/hero/de/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-telegram/hero/de/hero@2x.png",
+
+  "DocumentsTab1Label": "Erstellen Sie neue DOCX-, XLSX- und PPTX-Dateien; öffnen Sie lokale Dokumente",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-telegram/documents/de/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-telegram/documents/de/screen1@2x.png",
+  "DocumentsTab2Label": "Bearbeiten Sie Ihre Office-Dokumente gemeinsam mit anderen Telegram-Benutzern",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-telegram/documents/de/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-telegram/documents/de/screen2@2x.png",
+  "DocumentsTab3Label": "PDFs lesen und bearbeiten, in/aus PDF exportieren/importieren",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-telegram/documents/de/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-telegram/documents/de/screen3@2x.png",
+  "DocumentsTab4Label": "Konvertieren Sie Dokumente ganz einfach online. Über 50 Formate werden unterstützt",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-telegram/documents/de/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-telegram/documents/de/screen4@2x.png",
+  "DocumentsTab5Label": "Gruppenchat-Support verfügbar!",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-telegram/documents/de/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-telegram/documents/de/screen5@2x.png",
+
+  "WhyOO": "Warum ONLYOFFICE?",
+  "FeaturesAIHelper": "Ein robuster Satz an Bearbeitungs-, Formatierungs- und Gestaltungstools. Verbesserte Sicherheit.",
+  "FeaturesCoEditing": "Gemeinsame Bearbeitung <0>in Echtzeit</0> und <0>mit Absatzsperre</0>, Überprüfung, Versionsverlauf, Dokumentvergleich, Kommentare und Erwähnungen.",
+  "FeaturesFormats": "Unterstützung für mehr als <0>50 Dateiformate</0>. Vollständig kompatibel mit MS Office-Formaten: DOCX, XLSX, PPTX."
+}

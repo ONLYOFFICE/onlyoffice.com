@@ -42,4 +42,5 @@ export interface IFeatureItem {
   heading?: React.ReactNode;
   /** The text */
   text: React.ReactNode;
+  link?: { href: string; label: string; isExternal?: boolean };
 }

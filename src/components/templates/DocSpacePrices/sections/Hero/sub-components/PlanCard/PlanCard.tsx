@@ -71,6 +71,7 @@ const PlanCard = ({
       <StyledPlanCardBtns>
         <Button
           onClick={btn.url ? undefined : btn.onClick}
+          data-testid={btn.dataTestId}
           as={btn.url ? "a" : "button"}
           href={btn.url ? btn.url : undefined}
           variant={isActive ? "primary" : "secondary"}

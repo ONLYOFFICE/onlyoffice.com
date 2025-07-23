@@ -1,0 +1,1 @@
+export { ForResearchTemplate } from "./ForResearch";

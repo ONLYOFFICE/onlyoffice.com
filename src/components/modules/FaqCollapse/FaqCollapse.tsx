@@ -20,8 +20,9 @@ const FaqCollapse = ({
   tabletSpacing,
   tabletSmallSpacing,
   mobileSpacing,
+  borderTop,
 }: IFaqCollapse) => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("FaqCollapse");
 
   return (
     <Section
@@ -32,11 +33,12 @@ const FaqCollapse = ({
       tabletSpacing={tabletSpacing}
       tabletSmallSpacing={tabletSmallSpacing}
       mobileSpacing={mobileSpacing}
+      borderTop={borderTop}
     >
       <Container>
         <StyledFaqCollapseHeader $text={text ? true : false}>
           <StyledFaqCollapseHeading
-            label={t("Frequently Asked Questions")}
+            label={t("FrequentlyAskedQuestions")}
             level={2}
           />
           {text && (

@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Бот ONLYOFFICE для Telegram",
+  "PageDescription": "Открывайте, создавайте, конвертируйте, редактируйте офисные документы и работайте над ними совместно в Telegram",
+
+  "OnlineOfficeForTelegram": "Бот ONLYOFFICE для Telegram",
+  "OpenCreateConvertEdit": "Открывайте, создавайте, конвертируйте, редактируйте офисные документы и работайте над ними совместно в Telegram",
+  "StartNow": "Начните бесплатно прямо сейчас",
+  "HeroImgUrl": "/images/templates/office-for-telegram/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-telegram/hero/ru/hero@2x.png",
+
+  "DocumentsTab1Label": "Создавайте новые документы DOCX, XLSX и PPTX; открывайте локальные документы",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-telegram/documents/ru/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-telegram/documents/ru/screen1@2x.png",
+  "DocumentsTab2Label": "Редактируйте офисные документы и работайте над ними вместе с другими пользователями Telegram",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-telegram/documents/ru/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-telegram/documents/ru/screen2@2x.png",
+  "DocumentsTab3Label": "Читайте и редактируйте PDF-файлы, экспортируйте в PDF или импортируйте из PDF",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-telegram/documents/ru/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-telegram/documents/ru/screen3@2x.png",
+  "DocumentsTab4Label": "Легко конвертируйте документы онлайн. Поддерживается более 50 форматов",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-telegram/documents/ru/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-telegram/documents/ru/screen4@2x.png",
+  "DocumentsTab5Label": "Доступна поддержка в чате!",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-telegram/documents/ru/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-telegram/documents/ru/screen5@2x.png",
+
+  "WhyOO": "Почему ONLYOFFICE?",
+  "FeaturesAIHelper": "Надежный набор инструментов редактирования, форматирования и работы со стилями. Улучшенная безопасность.",
+  "FeaturesCoEditing": "Совместное редактирование <0>в реальном времени</0> и <0>в режиме блокировки абзацев</0>, рецензирование, история версий, сравнение документов, комментарии и упоминания.",
+  "FeaturesFormats": "Поддержка более <0>50 форматов файлов</0>, полная совместимость с форматами MS Office: DOCX, XLSX, PPTX."
+}

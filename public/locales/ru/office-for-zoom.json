@@ -1,0 +1,57 @@
+{
+  "PageTitle": "Работайте над офисными документами совместно в ходе Zoom-сессий | ONLYOFFICE",
+  "PageDescription": "Редактируйте текстовые документы, электронные таблицы, презентации, формы и PDF-файлы и работайте над ними совместно в Zoom с помощью ONLYOFFICE DocSpace",
+
+  "OnlineOfficeForZoom": "Безопасный онлайн офис для <0>Zoom</0>",
+  "EnableCollaborativeDocumentEditing": "Работайте над офисными документами прямо в Zoom, используя надежный набор инструментов ONLYOFFICE",
+  "AddToZoom": "ДОБАВИТЬ В",
+
+  "CollaborateOfficeDocuments": "Работайте над офисными документами совместно в ходе Zoom-конференций",
+  "DocumentsTab1Label": "Создавайте, загружайте документы и предоставляйте к ним доступ, устанавливая разрешения на редактирование или на просмотр в реальном времени.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-zoom/documents/ru/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-zoom/documents/ru/screen1@2x.png",
+  "DocumentsTab2Label": "Работайте над текстовыми документами, электронными таблицами и презентациями в режиме реального времени вместе с другими участниками.",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-zoom/documents/ru/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-zoom/documents/ru/screen2@2x.png",
+  "DocumentsTab3Label": "Обсуждайте и заполняйте сложные онлайн формы, например, договоры купли-продажи или контракты.",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-zoom/documents/ru/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-zoom/documents/ru/screen3@2x.png",
+  "DocumentsTab4Label": "Выполняйте навигацию по PDF-документам, добавляйте комментарии, примечания, рисунки.",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-zoom/documents/ru/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-zoom/documents/ru/screen4@2x.png",
+  "DocumentsTab5Label": "Храните файлы, отредактированные в ходе Zoom-конференции, в комнате для совместной работы и получайте к ним доступ в любом месте и в любое время.",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-zoom/documents/ru/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-zoom/documents/ru/screen5@2x.png",
+
+  "EfficientlyManageYourDocuments": "Эффективно управляйте документами вне конференций",
+  "ManageTab1Label": "Создайте безопасное рабочее пространство для всех ваших файлов. Получите беспрепятственный доступ к нему из вашей учетной записи Zoom.",
+  "ManageTab1ImgUrl": "/images/templates/office-for-zoom/manage/ru/screen1.png",
+  "ManageTab1ImgUrl2x": "/images/templates/office-for-zoom/manage/ru/screen1@2x.png",
+  "ManageTab2Label": "Систематизируйте личные файлы и создайте комнаты для деловых документов.",
+  "ManageTab2ImgUrl": "/images/templates/office-for-zoom/manage/ru/screen2.png",
+  "ManageTab2ImgUrl2x": "/images/templates/office-for-zoom/manage/ru/screen2@2x.png",
+  "ManageTab3Label": "Предоставьте гибкие права доступа: редактирование, комментирование, рецензирование или просмотр.",
+  "ManageTab3ImgUrl": "/images/templates/office-for-zoom/manage/ru/screen3.png",
+  "ManageTab3ImgUrl2x": "/images/templates/office-for-zoom/manage/ru/screen3@2x.png",
+  "ManageTab4Label": "Используйте публичные комнаты для предоставления доступа к вашим документам сторонним пользователям.",
+  "ManageTab4ImgUrl": "/images/templates/office-for-zoom/manage/ru/screen4.png",
+  "ManageTab4ImgUrl2x": "/images/templates/office-for-zoom/manage/ru/screen4@2x.png",
+
+  "MarketplaceConnectorTitle": "Создан для органичной работы в Zoom",
+  "MarketplaceConnectorDescription": "Установите приложение ONLYOFFICE для Zoom из магазина приложений Zoom App Marketplace уже сегодня.",
+
+  "WhyOO": "Почему ONLYOFFICE?",
+  "Reason1": "Надежный набор инструментов редактирования, форматирования и работы co стилями. <0>Интегрированный ИИ-помощник</0> (ChatGPT или ZhiPu Copilot).",
+  "Reason2": "Совместное редактирование в <0>реальном времени</0> и в режиме блокировки абзацев, рецензирование, история версий, сравнение документов, комментарии и упоминания.",
+  "Reason3": "Поддержка более <0>50 форматов</0>. Полная совместимость с форматами MS Office: DOCX, XLSX, PPTX.",
+  "Reason4": "<0>Улучшенная безопасность</0> Гибкие права доступа и JWT. Отслеживание активности и отчеты об аудите. Шифрование при хранении и при передаче. Открытый исходный код.",
+  "Reason5": "<0>Бесплатный тарифный план, чтобы начать</0>. Тарифный план Business, чтобы пригласить больше администраторов, получить более объемное хранилище, улучшенную безопасность и профессиональную техническую поддержку.",
+
+  "HowToStart": "Как начать",
+  "HowToStartStep1": "Войдите в вашу учетную запись Zoom.",
+  "HowToStartStep2": "Установите ONLYOFFICE DocSpace из магазина приложений <0>Zoom App Marketplace</0> и предоставьте требуемые права доступа.",
+  "HowToStartStep3": "Начните конференцию, перейдите на вкладку «Приложения» и запустите приложение ONLYOFFICE DocSpace.",
+  "HowToStartStep4": "Начните сеанс совместной работы, выбрав нужный файл из списка.",
+
+  "ExploreMoreDetailsIn": "Подробнее в <0>этом руководстве</0>"
+}

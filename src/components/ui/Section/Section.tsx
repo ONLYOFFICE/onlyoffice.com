@@ -11,6 +11,7 @@ const Section = ({
   tabletSpacing = ["88px", "88px"],
   tabletSmallSpacing = ["80px", "80px"],
   mobileSpacing = ["48px", "48px"],
+  borderTop = false,
 }: ISection) => {
   return (
     <StyledSection
@@ -22,6 +23,7 @@ const Section = ({
       $tabletSpacing={tabletSpacing}
       $tabletSmallSpacing={tabletSmallSpacing}
       $mobileSpacing={mobileSpacing}
+      $borderTop={borderTop}
     >
       {children}
     </StyledSection>

@@ -1,0 +1,1 @@
+export { DOCXPDFConverterTemplate } from "./DOCXPDFConverter";

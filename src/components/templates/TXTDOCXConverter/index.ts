@@ -1,0 +1,1 @@
+export { TXTDOCXConverterTemplate } from "./TXTDOCXConverter";

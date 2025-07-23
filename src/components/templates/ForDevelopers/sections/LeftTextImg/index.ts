@@ -1,0 +1,1 @@
+export { LeftTextImg } from "./LeftTextImg";

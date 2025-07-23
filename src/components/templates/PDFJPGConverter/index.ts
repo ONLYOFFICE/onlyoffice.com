@@ -1,0 +1,1 @@
+export { PDFJPGConverterTemplate } from "./PDFJPGConverter";

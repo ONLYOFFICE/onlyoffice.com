@@ -1,0 +1,40 @@
+{
+  "PageTitle": "Zoom会議中にオフィスファイルを共同編集できます | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE DocSpaceを使って、Zoom内でドキュメント、シート、スライド、フォーム、PDFを編集し、共同執筆します",
+
+  "OnlineOfficeForZoom": "<0>Zoom</0>用の安全なオンラインオフィス",
+  "EnableCollaborativeDocumentEditing": "ONLYOFFICEの強力な機能セットを使って、Zoomアカウントからオフィス文書を管理しましょう",
+  "AddToZoom": "",
+  "AddToZoomAfter": "に追加",
+
+  "CollaborateOfficeDocuments": "Zoom会議中にオフィス文書でコラボレーション",
+  "DocumentsTab1Label": "ドキュメントの作成、アップロード、共有（編集用＆閲覧用）。",
+  "DocumentsTab2Label": "ドキュメント、シート、スライドを他の参加者とリアルタイムで共同編集。",
+  "DocumentsTab3Label": "販売契約書や契約書など、複雑なオンラインフォームのディスカッションや記入。",
+  "DocumentsTab4Label": "PDFドキュメントをナビゲートし、コメント、注釈、図面を追加。",
+  "DocumentsTab5Label": "Zoom会議中に編集したファイルをコラボレーションルームに保存し、いつでもどこからでもアクセス可能。",
+
+  "EfficientlyManageYourDocuments": "会議の間にドキュメントを効率的に管理",
+  "ManageTab1Label": "すべてのドキュメントを安全に保管できるスペースを作成し、Zoomアカウントから簡単にアクセスできます。",
+  "ManageTab2Label": "個人のファイルを整理し、ビジネス文書用のルームを作成できます。",
+  "ManageTab3Label": "編集、コメント、レビュー、閲覧のみなど、柔軟なアクセス権限を設定できます。",
+  "ManageTab4Label": "パブリックルームを使用すると、スペース外の人もドキュメントにアクセスできます。",
+
+  "MarketplaceConnectorTitle": "Zoomでシームレスに動作するように設計されている",
+  "MarketplaceConnectorDescription": "Zoom App MarketplaceからONLYOFFICEアプリをインストールしましょう。",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "Reason1": "編集、フォーマット、スタイリングツールの強力なセット。<0>統合されたAIヘルパー</0>（ChatGPTまたはZhiPu Copilot）。",
+  "Reason2": "<0>リアルタイムで</0>段落ロックされた共同編集、レビュー、バージョン履歴、ドキュメント比較、コメント＆メンション。",
+  "Reason3": "<0>50以上のファイル形式をサポート</0>。MS Officeフォーマットとの完全な互換性： docx、xlsx、pptx。",
+  "Reason4": "<0>セキュリティ強化</0>。柔軟なアクセス権とJWT。アクティビティ追跡と監査レポート。保存時および転送時の暗号化。オープンソースコード。",
+  "Reason5": "<0>無料プランでスタート</0>。より多くの管理者、より大きなストレージ、より強化されたセキュリティ、プロフェッショナルなサポートのためのBUSINESSプラン。",
+
+  "HowToStart": "開始方法",
+  "HowToStartStep1": "Zoomアカウントにサインインします。",
+  "HowToStartStep2": "<0>Zoom App Marketplace</0>からONLYOFFICE DocSpaceをインストールし、要求されたアプリを許可します。",
+  "HowToStartStep3": "会議を開始し、アプリタブに切り替え、ONLYOFFICE DocSpaceアプリを起動します。",
+  "HowToStartStep4": "リストから必要なファイルを選択し、コラボレーションセッションを開始します。",
+
+  "ExploreMoreDetailsIn": "詳細はこちらの<0>ガイド</0>をご覧ください。"
+}

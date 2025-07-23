@@ -1,0 +1,1 @@
+export { PPTXPDFConverterTemplate } from "./PPTXPDFConverter";

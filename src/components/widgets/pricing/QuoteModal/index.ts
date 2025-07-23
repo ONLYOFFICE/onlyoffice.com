@@ -1,8 +1,6 @@
 export { QuoteModal } from "./QuoteModal";
 export type {
   IQuoteModalFormData,
-  IQuoteModalApiRequest,
-  IQuoteModalSendEmailRequest,
-  IQuoteModalPipedriveRequest,
+  IQuoteModalOnSubmitRequest,
   IQuoteModal,
 } from "./QuoteModal.types";

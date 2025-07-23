@@ -1,0 +1,39 @@
+{
+  "PageTitle": "Colabora en archivos ofimáticos durante tus sesiones de Zoom | ONLYOFFICE",
+  "PageDescription": "Edita y colabora en documentos, hojas, diapositivas, formularios y archivos PDF dentro de Zoom utilizando ONLYOFFICE DocSpace",
+
+  "OnlineOfficeForZoom": "Oficina segura online para <0>Zoom</0>",
+  "EnableCollaborativeDocumentEditing": "Trabaja en documentos ofimáticos desde Zoom utilizando un sólido conjunto de funciones de ONLYOFFICE",
+  "AddToZoom": "AÑADIR A",
+
+  "CollaborateOfficeDocuments": "Colabora en documentos ofimáticos durante las reuniones de Zoom",
+  "DocumentsTab1Label": "Crea, carga y comparte documentos con permisos de edición o visualización en directo.",
+  "DocumentsTab2Label": "Colabora en documentos, hojas y diapositivas en tiempo real con otros participantes.",
+  "DocumentsTab3Label": "Discute y rellena complejos formularios online, como acuerdos de venta o contratos.",
+  "DocumentsTab4Label": "Navega por documentos PDF, añade comentarios, anotaciones y dibujos.",
+  "DocumentsTab5Label": "Almacena archivos editados durante una reunión de Zoom en una sala de colaboración y accede a ellos en cualquier momento y desde cualquier lugar.",
+
+  "EfficientlyManageYourDocuments": "Gestiona eficazmente tus documentos entre reuniones",
+  "ManageTab1Label": "Crea un espacio seguro para todos tus documentos. Accede fácilmente desde tu cuenta de Zoom.",
+  "ManageTab2Label": "Organiza tus archivos personales y crea salas para tus documentos empresariales.",
+  "ManageTab3Label": "Concede permisos de acceso flexibles: editar, comentar, revisar o solo ver.",
+  "ManageTab4Label": "Utiliza salas públicas para dar acceso a tus documentos a personas fuera de tu espacio.",
+
+  "MarketplaceConnectorTitle": "Diseñado para funcionar perfectamente con Zoom",
+  "MarketplaceConnectorDescription": "Instala hoy mismo la aplicación ONLYOFFICE para Zoom desde el Zoom App Marketplace.",
+
+  "WhyOO": "¿Por qué ONLYOFFICE?",
+  "Reason1": "Un sólido conjunto de herramientas de edición, formato y estilo. Asistente de <0>IA integrado</0> (ChatGPT o ZhiPu Copilot).",
+  "Reason2": "Coedición en <0>tiempo real</0> y con bloqueo de párrafos, revisión, historial de versiones, comparación de documentos, comentarios y menciones.",
+  "Reason3": "Compatibilidad con más de <0>50 formatos de archivo</0>. Totalmente compatible con los formatos de MS Office: DOCX, XLSX, PPTX.",
+  "Reason4": "<0>Seguridad mejorad</0>. Permisos de acceso flexibles y JWT. Seguimiento de la actividad e informes de auditoría. Cifrado en reposo y en tránsito. Código fuente abierto.",
+  "Reason5": "<0>Plan gratuito para empeza</0>. Plan Business para más administradores, mayor almacenamiento, seguridad mejorada y soporte profesional.",
+
+  "HowToStart": "Cómo empezar",
+  "HowToStartStep1": "Inicia sesión en tu cuenta de Zoom.",
+  "HowToStartStep2": "Instala ONLYOFFICE DocSpace desde el <0>Zoom App Marketplace</0> y concede los permisos solicitados.",
+  "HowToStartStep3": "Inicia una reunión, cambia a la pestaña Apps y lanza la aplicación ONLYOFFICE DocSpace.",
+  "HowToStartStep4": "Inicia una sesión de colaboración al seleccionar el archivo necesario de la lista.",
+
+  "ExploreMoreDetailsIn": "Para más detalles, consulta <0>esta guía</0>"
+}
