@@ -68,6 +68,9 @@ export default {
     borderRadius: {
       control: { type: "text" },
     },
+    backgroundColor: {
+      control: { type: "color" },
+    },
   },
 } as Meta<typeof Button>;
 

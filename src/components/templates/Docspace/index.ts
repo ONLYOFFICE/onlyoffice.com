@@ -1,0 +1,1 @@
+export { DocSpaceTemplate } from "./Docspace";

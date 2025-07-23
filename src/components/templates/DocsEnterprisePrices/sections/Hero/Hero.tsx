@@ -21,8 +21,6 @@ import { IDocsEnterprisePricesTemplate } from "@src/components/templates/DocsEnt
 import { getProduct } from "./utils/getProduct";
 import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
 import { useRewardful } from "@src/utils/useRewardful";
-import { DocsEnterprisePricesCloudEmail } from "@src/components/emails/DocsEnterprisePricesCloudEmail";
-import { DocsEnterprisePricesOnPremisesEmail } from "@src/components/emails/DocsEnterprisePricesOnPremisesEmail";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
@@ -37,9 +35,7 @@ import { List } from "@src/components/widgets/pricing/List";
 import { SelectorsWrapper } from "@src/components/widgets/pricing/SelectorsWrapper";
 import {
   QuoteModal,
-  IQuoteModalApiRequest,
-  IQuoteModalSendEmailRequest,
-  IQuoteModalPipedriveRequest,
+  IQuoteModalOnSubmitRequest,
   IQuoteModalFormData,
 } from "@src/components/widgets/pricing/QuoteModal";
 import { Reseller } from "@src/components/modules/pricing/Reseller";
@@ -113,17 +109,17 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
 
   const product = getProduct(formData, productsData);
 
-  const apiRequest = async ({
+  const onSubmitRequest = async ({
     from,
-    utmSource,
-    utmCampaign,
-    utmContent,
-    utmTerm,
-  }: IQuoteModalApiRequest) => {
-    const response = await fetch("/api/docs-enterprise-prices", {
+    country,
+    region,
+  }: IQuoteModalOnSubmitRequest) => {
+    return fetch("/api/docs-enterprise-prices", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
+        locale,
+        referer: document.referrer,
         fullName: quoteFormData.fullName,
         email: quoteFormData.email,
         phone: quoteFormData.phone,
@@ -138,112 +134,13 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
         disasterRecovery: formData.disasterRecovery,
         multiTenancy: formData.multiTenancy,
         from,
-        utmSource,
-        utmCampaign,
-        utmContent,
-        utmTerm,
+        country,
+        region,
+        affiliateId: affiliate.id || "",
+        affiliateToken: affiliate.token || "",
+        type: "docsenterpriserequest",
       }),
-    });
-
-    return response.json();
-  };
-
-  const sendEmailRequest = async ({
-    from,
-    errorFlag,
-    utmCampaignFlag,
-    errorText,
-    isSelected,
-  }: IQuoteModalSendEmailRequest) => {
-    const response = await fetch("/api/send-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        from,
-        to: [process.env.NEXT_PUBLIC_SALES_EMAIL],
-        subject: `${errorFlag} - Docs Enterprise Request (${formData.hosting}) ${utmCampaignFlag}[from: ${from}]`,
-        html:
-          formData.hosting === "Cloud"
-            ? DocsEnterprisePricesCloudEmail({
-                fullName: quoteFormData.fullName,
-                email: quoteFormData.email,
-                phone: quoteFormData.phone,
-                companyName: quoteFormData.companyName,
-                cloudType: formData.cloudType,
-                supportLevel: formData.supportLevel,
-                trainingCourses: isSelected(formData.trainingCourses),
-                language: locale,
-                affiliateId: affiliate.id || "",
-                affiliateToken: affiliate.token || "",
-                errorText,
-              })
-            : formData.hosting === "On-premises"
-              ? DocsEnterprisePricesOnPremisesEmail({
-                  fullName: quoteFormData.fullName,
-                  email: quoteFormData.email,
-                  phone: quoteFormData.phone,
-                  companyName: quoteFormData.companyName,
-                  connectionsNumber: formData.connectionsNumber,
-                  licenseDuration: formData.licenseDuration,
-                  supportAndUpdates: formData.supportAndUpdates,
-                  supportLevel: formData.supportLevel,
-                  trainingCourses: isSelected(formData.trainingCourses),
-                  disasterRecovery: isSelected(formData.disasterRecovery),
-                  multiTenancy: isSelected(formData.multiTenancy),
-                  language: locale,
-                  affiliateId: affiliate.id || "",
-                  affiliateToken: affiliate.token || "",
-                  errorText,
-                })
-              : null,
-      }),
-    });
-
-    return response.json();
-  };
-
-  const pipedriveRequest = async ({
-    _ga,
-    utmSource,
-    utmCampaign,
-    title,
-    region,
-    from,
-  }: IQuoteModalPipedriveRequest) => {
-    const response = await fetch("/api/pipedrive", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        owner_id: 12769244,
-        person_id: 131,
-        visible_to: "3",
-        "08f603bf9e0032d5a9f9e5cd39ca8c7a4374ac82": _ga,
-        was_seen: false,
-        title: `dspp DocSpace Enterprise - ${title} - ${quoteFormData.email} - ${region}`,
-        "6654a8f8686bdba60bbcdf6e69313c150f40b088": JSON.stringify({
-          fullName: quoteFormData.fullName,
-          email: quoteFormData.email,
-          phone: quoteFormData.phone,
-          companyName: quoteFormData.companyName,
-          hosting: formData.hosting,
-          connectionsNumber: formData.connectionsNumber,
-          licenseDuration: formData.licenseDuration,
-          supportAndUpdates: formData.supportAndUpdates,
-          cloudType: formData.cloudType,
-          supportLevel: formData.supportLevel,
-          trainingCourses: formData.trainingCourses,
-          disasterRecovery: formData.disasterRecovery,
-          multiTenancy: formData.multiTenancy,
-          from,
-          type: "docsenterpriserequest",
-          langOfPage: locale,
-          ...(utmSource && { utmSource }),
-          ...(utmCampaign && { utmCampaign }),
-        }),
-      }),
-    });
-
-    return response.json();
+    }).then((res) => res.json());
   };
 
   return (
@@ -562,17 +459,20 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
                 {isGetIsQuote ? (
                   <Button
                     onClick={() => setIsModalOpen(true)}
+                    data-testid="get-a-quote-button"
                     fullWidth
                     label={t("GetAQuote")}
                   />
                 ) : isOrderNow ? (
                   <Button
                     onClick={() => setIsModalOpen(true)}
+                    data-testid="get-a-quote-button"
                     fullWidth
                     label={t("OrderNow")}
                   />
                 ) : (
                   <Button
+                    data-testid="buy-now-button"
                     as="a"
                     fullWidth
                     href={product?.url}
@@ -622,9 +522,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
             quoteFormData={quoteFormData}
             setQuoteFormData={setQuoteFormData}
             buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
-            apiRequest={apiRequest}
-            sendEmailRequest={sendEmailRequest}
-            pipedriveRequest={pipedriveRequest}
+            onSubmitRequest={onSubmitRequest}
             onClose={() => setIsModalOpen(false)}
           />
         </StyledHeroWrapper>

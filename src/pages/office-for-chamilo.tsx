@@ -2,7 +2,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { ILocale } from "@src/types/locale";
 import { Layout } from "@src/components/Layout";
-import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
+import { AdventAnnounce } from "@src/components/modules/AdventAnnounce";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { OfficeForChamiloTemplate } from "@src/components/templates/OfficeForChamilo";
@@ -14,13 +14,13 @@ const OfficeForChamiloPage = ({ locale }: ILocale) => {
   return (
     <Layout>
       <Layout.AdventAnnounce>
-        <AdventAnnounceBanner locale={locale} />
+        <AdventAnnounce locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header locale={locale} theme="white" />
       </Layout.Header>
       <Layout.Main>
         <OfficeForChamiloTemplate />
@@ -39,6 +39,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "office-for-chamilo",
         "Connectors",
+        "WatchVideo",
       ])),
       locale,
     },
