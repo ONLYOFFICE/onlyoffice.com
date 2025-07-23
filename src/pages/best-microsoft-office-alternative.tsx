@@ -1,0 +1,50 @@
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+import { ILocale } from "@src/types/locale";
+import { Layout } from "@src/components/Layout";
+import { Header } from "@src/components/modules/Header";
+import { Footer } from "@src/components/modules/Footer";
+import { BestMicrosoftOfficeAlternativeTemplate } from "@src/components/templates/BestMicrosoftOfficeAlternative";
+import { AdventAnnounce } from "@src/components/modules/AdventAnnounce";
+import { Head } from "@src/components/modules/head/Head";
+
+const BestMicrosoftOfficeAlternativePage = ({ locale }: ILocale) => {
+  const { t } = useTranslation("best-microsoft-office-alternative");
+
+  return (
+    <Layout>
+      <Layout.AdventAnnounce>
+        <AdventAnnounce locale={locale} />
+      </Layout.AdventAnnounce>
+      <Layout.Head>
+        <Head title={t("PageTitle")} description={t("PageDescription")} />
+      </Layout.Head>
+      <Layout.Header>
+        <Header locale={locale} />
+      </Layout.Header>
+      <Layout.Main>
+        <BestMicrosoftOfficeAlternativeTemplate />
+      </Layout.Main>
+      <Layout.Footer>
+        <Footer locale={locale} />
+      </Layout.Footer>
+    </Layout>
+  );
+};
+
+export async function getStaticProps({ locale }: ILocale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "best-microsoft-office-alternative",
+        "BestAlternativeCompatibility",
+        "BestAlternativeCompare",
+        "BestAlternativeGetStarted",
+      ])),
+      locale,
+    },
+  };
+}
+
+export default BestMicrosoftOfficeAlternativePage;

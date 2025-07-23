@@ -43,6 +43,11 @@ const StyledReasonsBox = styled.div`
 `;
 
 const StyledReasonsSubtitle = styled(Heading)`
+<<<<<<< Updated upstream
+=======
+  margin-bottom: 16px;
+
+>>>>>>> Stashed changes
   @media ${device.tablet} {
     font-size: 22px;
     line-height: 29px;
