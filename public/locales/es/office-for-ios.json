@@ -55,12 +55,15 @@
   "LearnCardTitleRelease": "Notas de la versión",
   "LearnMoreTextMeet": "Descubre ONLYOFFICE Documents v7.2 para iOS",
   "LearnMoreSubtitleRead": "Leer la historia",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/es/2022/10/onlyoffice-documents-v7-2-para-ios/",
 
   "LearnCardTitleHints": "Consejos",
   "LearnMoreTextHandwriting": "Escritura a mano en ONLYOFFICE Documents",
   "LearnMoreSubtitleLearn1": "Más información",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/es/mobile-applications/documents/document-editor/basic-operations/handwriting.aspx",
 
   "LearnCardTitleDeveloper": "Guía para desarrolladores",
   "LearnMoreTextHowMobile": "Cómo funciona la integración móvil",
-  "LearnMoreSubtitleLearn2": "Más información"
+  "LearnMoreSubtitleLearn2": "Más información",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/es/2022/07/onlyoffice-para-desarrolladores-como-funciona-la-integracion-movil/"
 }

@@ -85,12 +85,15 @@
   "LearnCardTitleRelease": "Описание изменений",
   "LearnMoreTextMeet": "Встречайте ONLYOFFICE Documents v7.2 для iOS",
   "LearnMoreSubtitleRead": "Читать историю",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/2022/10/onlyoffice-documents-v7-2-for-ios/",
 
   "LearnCardTitleHints": "Советы",
   "LearnMoreTextHandwriting": "Рукописный ввод в ONLYOFFICE Documents",
   "LearnMoreSubtitleLearn1": "Подробнее",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/ru/mobile-applications/documents/document-editor/basic-operations/handwriting.aspx",
 
   "LearnCardTitleDeveloper": "Руководство разработчика",
   "LearnMoreTextHowMobile": "Как работает мобильная интеграция",
-  "LearnMoreSubtitleLearn2": "Подробнее"
+  "LearnMoreSubtitleLearn2": "Подробнее",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/2022/07/onlyoffice-for-developers-how-the-mobile-integration-works/"
 }

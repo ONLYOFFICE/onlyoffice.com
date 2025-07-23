@@ -32,7 +32,7 @@ const Learn = () => {
             heading={{ label: t(item.title) }}
             text={t(item.text ?? "")}
             links={item.links?.map((item) => ({
-              href: item.href,
+              href: t(item.href),
               label: t(item.label),
             }))}
           />
