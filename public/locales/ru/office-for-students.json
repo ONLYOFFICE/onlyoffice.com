@@ -1,0 +1,102 @@
+{
+  "PageTitle": "ONLYOFFICE для студентов | ONLYOFFICE",
+  "PageDescription": "Повысьте уровень образования с помощью бесплатного офисного пакета. ONLYOFFICE предложит вам подходящий инструмент для любого устройства.",
+
+  "OfficeForStudents": "ONLYOFFICE для <0>студентов</0>",
+  "SuperchargeYourEducation": "Повысьте уровень образования с помощью бесплатного офисного пакета. Работаете ли вы в классе, библиотеке, университетском кафе или дома — ONLYOFFICE предложит вам подходящий инструмент для любого устройства.",
+
+  "OODesktopEditorsTitle": "<span>ONLYOFFICE Desktop Editors:</span> <br> бесплатная альтернатива Word, Excel, PowerPoint + редактор PDF-файлов",
+  "OODesktopEditorsText": "Работайте над своими файлами в привычном формате в простом, гибком и удобном в использовании решении. Если вы когда-либо использовали офисный пакет, вам будет комфортно с ONLYOFFICE Desktop Editors.",
+
+  "SmoothAndIntuitiveOfficeExperience": "Удобный и интуитивно понятный офисный интерфейс",
+  "SmoothAndIntuitiveOfficeExperienceDesc": "Ваши задания могут быть сложными — но офисный пакет не должен быть таким. ONLYOFFICE Desktop Editors предлагает интуитивно понятный пользовательский интерфейс, единый для <0>текстовых документов</0>, <1>электронных таблиц</1>, <2>презентаций</2> и <3>PDF-файлов</3>.",
+  "SmoothAndIntuitiveOfficeExperienceUrl": "/images/templates/office-for-students/desktop-editors/ru/smooth-intuitive-office-experience.png",
+  "SmoothAndIntuitiveOfficeExperienceUrl2x": "/images/templates/office-for-students/desktop-editors/ru/smooth-intuitive-office-experience@2x.png",
+
+  "SuitedForAllOperatingSystems": "Подходит для всех операционных систем",
+  "SuitedForAllOperatingSystemsDesc": "Выберите операционную систему, которая лучше всего соответствует вашему стилю работы – мы поддержим ваше решение! ONLYOFFICE Desktop Editors отлично работает с Windows, macOS и Linux!",
+  "SuitedForAllOperatingSystemsUrl": "/images/templates/office-for-students/desktop-editors/ru/suited-for-all-operating-systems.png",
+  "SuitedForAllOperatingSystemsUrl2x": "/images/templates/office-for-students/desktop-editors/ru/suited-for-all-operating-systems@2x.png",
+
+  "FreeAndOpenSource": "Бесплатно и с открытым исходным кодом",
+  "FreeAndOpenSourceDesc": "Да, вы правильно поняли! ONLYOFFICE Desktop Editors абсолютно бесплатный — это значит, что вы получите доступ к офисному программному обеспечению профессионального уровня без финансовых ограничений. Более того, наши редакторы работают с открытым исходным кодом, что обеспечивает прозрачность, возможность совместной работы с сообществом и применения инноваций, которые идут с ним рука об руку.",
+  "FreeAndOpenSourceUrl": "/images/templates/office-for-students/desktop-editors/ru/free-open-source.png",
+  "FreeAndOpenSourceUrl2x": "/images/templates/office-for-students/desktop-editors/ru/free-open-source@2x.png",
+
+  "BothOfflineAndOnline": "Офлайн и онлайн",
+  "BothOfflineAndOnlineDesc": "Приложение ONLYOFFICE для ПК — это не только локальное приложение. Его можно подключить к выбранному облаку (Moodle, ONLYOFFICE DocSpace, Nextcloud, ownCloud, Seafile, Liferay, kDrive) для работы онлайн и для совместной работы. Нужно быстро внести изменения в свое эссе, где бы вы ни находились? Воспользуйтесь бесплатными приложениями для <0>iOS</0> и <1>Android</1>.",
+  "BothOfflineAndOnlineUrl": "/images/templates/office-for-students/desktop-editors/ru/both-offline-and-online.png",
+  "BothOfflineAndOnlineUrl2x": "/images/templates/office-for-students/desktop-editors/ru/both-offline-and-online@2x.png",
+
+  "DigitalLibraryAtHand": "Цифровая библиотека под рукой",
+  "DigitalLibraryAtHandDesc": "Конечно, исследования для вашей работы выглядят намного масштабнее, когда на столе разложены стопки книг, но это очень непрактично. С помощью ONLYOFFICE Desktop Editors вы можете читать EPUB, FB2 и PDF-файлы, а также искать информацию во всех <0>электронных книгах</0> прямо в вашем офисном решении.",
+  "DigitalLibraryAtHandUrl": "/images/templates/office-for-students/desktop-editors/ru/digital-library-at-hand.png",
+  "DigitalLibraryAtHandUrl2x": "/images/templates/office-for-students/desktop-editors/ru/digital-library-at-hand@2x.png",
+
+  "DownloadNow": "Скачать сейчас",
+
+  "OODocSpaceTitle": "<0>ONLYOFFICE DocSpace:</0> Выведите свои командные проекты на новый уровень",
+  "OODocSpaceDesc": "Работайте вместе с однокурсниками и учителями, чтобы творить, делиться новыми знаниями и идти к своей цели!",
+
+  "TeamworkHasNeverBeenEasier": "Командная работа никогда не была проще",
+  "TeamworkHasNeverBeenEasierDesc": "Создавая виртуальные комнаты, вы можете контролировать, кто может просматривать, работать над файлами совместно или делиться файлами проекта в вашей комнате. Вы никогда не пропустите важные файлы, а документы, связанные с проектом, будут храниться в комнатах.",
+  "TeamworkHasNeverBeenEasierUrl": "/images/templates/office-for-students/docspace/ru/teamwork-has-never-been-easier.png",
+  "TeamworkHasNeverBeenEasierUrl2x": "/images/templates/office-for-students/docspace/ru/teamwork-has-never-been-easier@2x.png",
+
+  "FitToAnyScenario": "Подходит для любого сценария",
+  "FitToAnyScenarioDesc": "Получайте отзывы по проектам и заполняйте задания в <0>комнатах для заполнения форм</0>, готовьте групповые презентации в <1>комнатах для совместной работы</1>, пишите эссе и делитесь ими с преподавателями, пользуйтесь возможностью просмотреть их в <2>пользовательских комнатах</2>. Разрешайте товарищам по группе и преподавателям просматривать содержимое без регистрации в <3>публичных комнатах</3>. Обсуждайте командные проекты в <4>комнатах для совещаний</4>.",
+  "FitToAnyScenarioUrl": "/images/templates/office-for-students/docspace/ru/fit-to-any-scenario.png",
+  "FitToAnyScenarioUrl2x": "/images/templates/office-for-students/docspace/ru/fit-to-any-scenario@2x.png",
+
+  "StressFreeCoEditing": "Совместное редактирование",
+  "StressFreeCoEditingDesc": "Работайте совместно эффективнее с помощью встроенных инструментов для общения, чата и комментариев, чтобы обсуждать детали проекта, делиться идеями и предоставлять обратную связь участникам вашей группы, не переключаясь между разными платформами.",
+  "StressFreeCoEditingUrl": "/images/templates/office-for-students/docspace/ru/stress-free-co-editing.png",
+  "StressFreeCoEditingUrl2x": "/images/templates/office-for-students/docspace/ru/stress-free-co-editing@2x.png",
+
+  "CreateFreeAccount": "СОЗДАТЬ БЕСПЛАТНУЮ УЧЕТНУЮ ЗАПИСЬ",
+
+  "WhyOOTitle": "<0>Почему</0> ONLYOFFICE?",
+  "WhyOODesc": "Мы знаем, что существует множество офисных решений. Почему вам следует начать использовать ONLYOFFICE, а не другое программное обеспечение? Потому что ONLYOFFICE и студенты — идеальное сочетание. Мы расскажем о главном:",
+
+  "ItSFree": "Это бесплатно",
+  "ItSFreeDesc": "Не нужно экономить, чтобы получить возможность работать над своими заданиями с эффективным офисным пакетом. Мы вас поддержим — для студентов ONLYOFFICE полностью бесплатный.",
+
+  "ItSCompatible": "Он совместим с файлами MS Office (и почти со всеми другими форматами файлов Office)",
+  "ItSCompatibleDesc": "Не беспокойтесь о том, что ваши сокурсники или преподаватели используют другие офисные решения и растеряются, когда откроют файлы. ONLYOFFICE полностью совместим с файлами MS Office (например, DOCX, XLSX, PPTS и так далее) и большинством других форматов.",
+
+  "ItSHighlyCustomizable": "Легко настраивается с помощью нашего встроенного магазина плагинов",
+  "ItSHighlyCustomizableDesc": "Настройте ONLYOFFICE с помощью <0>множества плагинов</0>, которые расширяют функциональные возможности — ускорение работы с документами с помощью нашего официального плагина ChatGPT непосредственно в редакторах, упрощение исследования с помощью плагинов библиографии для Mendeley или Zotero или ускорение написания и проверки с помощью LanguageTool и OCR.",
+
+  "ItSBuilt": "Создан с заботой о сотрудничестве",
+  "ItSBuiltDesc": "Мы любим работать в команде. И полагаем, что вы тоже. Вот почему ONLYOFFICE предлагает различные функции, которые делают сотрудничество максимально простым и эффективным.",
+
+  "GetItNow": "ПОЛУЧИТЬ СЕЙЧАС",
+  "TryInTheCloud": "ПОПРОБОВАТЬ В ОБЛАКЕ",
+
+  "SuccessStoriesHeading": "Истории успеха, которые покажут вам, как это работает",
+  "SuccessStoriesDesc": "Мы могли бы поговорить о том, что ONLYOFFICE и образовательный процесс хорошо сочетаются друг с другом. Но мы лучше расскажем вам об успешном опыте пользователей.",
+
+  "Blog1": "Как ONLYOFFICE облегчает совместную работу в школах Донауэшингена",
+  "Blog1ImgUrl": "/images/templates/office-for-students/success-stories/blog1.jpg",
+
+  "Blog2": "Как школа Collège-Lycée Sacré Cœur de Taravao обеспечивает цифровое равноправие для всех учеников с помощью ONLYOFFICE и Moodle",
+  "Blog2ImgUrl": "/images/templates/office-for-students/success-stories/blog2.jpg",
+
+  "Blog3": "Как Нанкинский университет интегрировал ONLYOFFICE Docs для повышения эффективности совместной работы преподавателей и студентов",
+  "Blog3ImgUrl": "/images/templates/office-for-students/success-stories/blog3.jpg",
+
+  "HowCanOOHelp": "Как ONLYOFFICE может помочь мне с заданиями?",
+  "HowCanOOHelpAnswer": "Мы предоставляем универсальные инструменты для создания и редактирования документов, электронных таблиц, презентаций и PDF-файлов — все это нужно для ваших заданий. Наши функциональные возможности совместной работы позволяют вам работать вместе с однокурсниками в режиме реального времени, что значительно повышает эффективность командной работы и рецензирования.",
+  "CanIUseOOForGroup": "Могу ли я использовать ONLYOFFICE для выполнения групповых заданий с однокурсниками?",
+  "CanIUseOOForGroupAnswer": "Да, конечно! Наше решение было создано с учетом необходимости совместной работы. Такие функции, как совместное редактирование в реальном времени, комментирование, встроенный чат, история версий и другие действительно облегчают работу над проектами. Каждый из вас может одновременно работать над документами, что упрощает совместную работу.",
+  "DoesOOOfferTemplatesForAcademicDocuments": "Предлагает ли ONLYOFFICE шаблоны для рабочих документов?",
+  "DoesOOOfferTemplatesForAcademicDocumentsAnswer": "Да! В нашей <0>библиотеке шаблонов</0> есть множество специально разработанных шаблонов, в том числе шаблоны отчетов, форматы исследовательских работ, макеты презентаций и многое другое. Это означает меньше ваших усилий и больше времени для решения важных задач.",
+  "IsOOSecure": "Безопасен ли ONLYOFFICE в плане хранения и распространения конфиденциальной информации?",
+  "IsOOSecureAnswer": "Мы гордимся тем, что являемся одним из самых безопасных офисных решений. <0>Мы серьезно относимся к безопасности</0>, начиная с шифрования файлов, хранящихся на платформе, и множества вариантов безопасного распространения и контроля доступа. Кроме того, наши решения всегда можно развернуть на частных серверах для повышения безопасности данных.",
+  "IsOOFree": "ONLYOFFICE бесплатный?",
+  "IsOOFreeAnswer": "Да, ONLYOFFICE Desktop Editors — абсолютно бесплатное приложение. ONLYOFFICE DocSpace предлагает бесплатный тарифный план, идеально подходящий для студентов.",
+  "AreThereAnyIntegrations": "Есть ли интеграция с другими платформами?",
+  "AreThereAnyIntegrationsAnswer": "Да, наряду с возможностью подключения десктопного приложения к облаку по вашему выбору можно интегрировать онлайн редакторы — <0>ONLYOFFICE Docs</0> — с сервисом электронного обучения или системой управления данными, используемыми в вашем учебном заведении. Таким образом, вы сможете работать с офисными файлами непосредственно в структуре курса. Среди популярных готовых <1>интеграций</1> — <2>Moodle</2>, Chamilo, ownCloud, Nextcloud, HumHub и так далее.",
+  "WhatIfINeedToEditDocs": "Что делать, если мне нужно отредактировать документы для моих исследований, хранящиеся в моем Box / Dropbox?",
+  "WhatIfINeedToEditDocsAnswer": "С ONLYOFFICE вы можете это сделать! Используйте бесплатные приложения для вашего <0>Box</0> или <1>Dropbox</1>."
+}

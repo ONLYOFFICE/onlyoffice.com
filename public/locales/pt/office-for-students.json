@@ -1,0 +1,89 @@
+{
+  "PageTitle": "ONLYOFFICE para estudantes | ONLYOFFICE",
+  "PageDescription": "Melhore sua educação com um pacote de escritório gratuito. O ONLYOFFICE oferecerá a ferramenta certa para qualquer dispositivo.",
+
+  "OfficeForStudents": "ONLYOFFICE para <0>estudantes</0>",
+  "SuperchargeYourEducation": "Melhore sua educação com um pacote de escritório gratuito. Seja trabalhando em sala de aula, na biblioteca, no café da universidade ou em casa, o ONLYOFFICE oferecerá a ferramenta certa para qualquer dispositivo.",
+
+  "OODesktopEditorsTitle": "<span>ONLYOFFICE Desktop Editors:</span> <br> alternativa gratuita ao Word, Excel, PowerPoint + editor de PDF",
+  "OODesktopEditorsText": "Trabalhe em seus arquivos em formatos familiares com uma solução simples, flexível e fácil de usar. Se você já usou um pacote de escritório, ficará confortável com o ONLYOFFICE Desktop Editors.",
+
+  "SmoothAndIntuitiveOfficeExperience": "Experiência de escritório suave e intuitiva",
+  "SmoothAndIntuitiveOfficeExperienceDesc": "Suas tarefas podem ser complexas, mas seu pacote de escritório não deveria ser. O ONLYOFFICE Desktop Editors oferece uma interface de usuário intuitiva, uniforme para <0>documentos de texto</0>, <1>planilhas</1>, <2>apresentações</2> e <3>arquivos PDF</3>.",
+
+  "SuitedForAllOperatingSystems": "Adequado para todos os sistemas operacionais",
+  "SuitedForAllOperatingSystemsDesc": "Escolha o sistema operacional que melhor se adapta ao seu estilo de trabalho - nós apoiaremos sua decisão! O ONLYOFFICE Desktop Editors funciona perfeitamente com Windows, macOS e Linux!",
+
+  "FreeAndOpenSource": "Gratuito e de código aberto",
+  "FreeAndOpenSourceDesc": "Sim, você ouviu direito! O ONLYOFFICE Desktop Editors é totalmente gratuito - o que significa que você terá acesso a software de escritório de nível profissional sem restrições financeiras. Além disso, nossos editores são de código aberto, garantindo transparência, a capacidade de colaborar com a comunidade e as inovações que vêm com isso.",
+
+  "BothOfflineAndOnline": "Tanto offline quanto online",
+  "BothOfflineAndOnlineDesc": "O aplicativo para desktop ONLYOFFICE não é apenas um aplicativo local. Ele pode ser conectado à sua nuvem preferida (Moodle, ONLYOFFICE DocSpace, Nextcloud, ownCloud, Seafile, Liferay, kDrive) para trabalhar online e colaborar. Precisa fazer alterações rápidas em seu ensaio onde quer que esteja? Use os aplicativos gratuitos para <0>iOS</0> e <1>Android</1>.",
+
+  "DigitalLibraryAtHand": "Biblioteca digital à mão",
+  "DigitalLibraryAtHandDesc": "Claro, a pesquisa para o seu trabalho parece muito mais impressionante quando pilhas de livros estão espalhadas pela mesa, mas isso é muito pouco prático. Com o ONLYOFFICE Desktop Editors, você pode ler arquivos EPUB, FB2 e PDF, bem como pesquisar informações em todos os <0>e-books</0> diretamente em sua solução de escritório.",
+
+  "DownloadNow": "Baixar agora",
+
+  "OODocSpaceTitle": "<0>ONLYOFFICE DocSpace:</0> Leve seus projetos em equipe para o próximo nível",
+  "OODocSpaceDesc": "Trabalhe junto com colegas de classe e professores para criar, compartilhar novos conhecimentos e alcançar seus objetivos!",
+
+  "TeamworkHasNeverBeenEasier": "O trabalho em equipe nunca foi tão fácil",
+  "TeamworkHasNeverBeenEasierDesc": "Ao criar salas virtuais, você pode controlar quem pode visualizar, colaborar ou compartilhar arquivos de projeto em sua sala. Você nunca perderá arquivos importantes, e os documentos relacionados ao projeto serão mantidos nas salas.",
+
+  "FitToAnyScenario": "Adequado para qualquer cenário",
+  "FitToAnyScenarioDesc": "Receba feedback sobre projetos e preencha tarefas em <0>salas de formulários</0>, prepare apresentações em grupo em <1>salas de colaboração</1>, escreva ensaios e compartilhe-os com professores, aproveite a oportunidade de revisá-los em <2>salas personalizadas</2>. Permita que colegas de grupo e professores visualizem o conteúdo sem registro em <3>salas públicas</3>. Discuta projetos de equipe em <4>salas de reunião</4>.",
+
+  "StressFreeCoEditing": "Edição colaborativa sem estresse",
+  "StressFreeCoEditingDesc": "Colabore de forma mais eficaz com ferramentas integradas de comunicação, chat e comentários para discutir detalhes do projeto, compartilhar ideias e fornecer feedback aos membros do seu grupo sem alternar entre diferentes plataformas.",
+
+  "CreateFreeAccount": "CRIAR CONTA GRATUITA",
+
+  "WhyOOTitle": "<0>Por que</0> ONLYOFFICE?",
+  "WhyOODesc": "Sabemos que existem muitas soluções de escritório. Por que você deveria começar a usar o ONLYOFFICE em vez de outro software? Porque ONLYOFFICE e estudantes são uma combinação perfeita. Aqui estão os principais pontos:",
+
+  "ItSFree": "É gratuito",
+  "ItSFreeDesc": "Você não precisa economizar para poder trabalhar em suas tarefas com um pacote de escritório eficaz. Nós apoiamos você - para estudantes, o ONLYOFFICE é totalmente gratuito.",
+
+  "ItSCompatible": "É compatível com arquivos do MS Office (e quase todos os outros formatos de arquivo de escritório)",
+  "ItSCompatibleDesc": "Não se preocupe com seus colegas de classe ou professores usando outras soluções de escritório e ficando confusos ao abrir seus arquivos. O ONLYOFFICE é totalmente compatível com arquivos do MS Office (como DOCX, XLSX, PPTS e assim por diante) e a maioria dos outros formatos.",
+
+  "ItSHighlyCustomizable": "É altamente personalizável com nossa loja de plugins integrada",
+  "ItSHighlyCustomizableDesc": "Personalize o ONLYOFFICE com <0>numerosos plugins</0> que expandem a funcionalidade - acelere o trabalho com documentos com nosso plugin oficial do ChatGPT diretamente nos editores, simplifique a pesquisa com plugins de bibliografia para Mendeley ou Zotero, ou acelere a escrita e revisão com LanguageTool e OCR.",
+
+  "ItSBuilt": "Foi construído pensando na colaboração",
+  "ItSBuiltDesc": "Adoramos trabalho em equipe. E acreditamos que você também. É por isso que o ONLYOFFICE oferece vários recursos que tornam a colaboração o mais simples e eficiente possível.",
+
+  "GetItNow": "OBTENHA AGORA",
+  "TryInTheCloud": "EXPERIMENTE NA NUVEM",
+
+  "SuccessStoriesHeading": "Histórias de sucesso que mostrarão como funciona",
+  "SuccessStoriesDesc": "Poderíamos falar sobre como o ONLYOFFICE e o processo educacional se combinam bem. Mas preferimos contar sobre experiências bem-sucedidas dos usuários.",
+
+  "Blog1": "Como o ONLYOFFICE facilita a colaboração nas escolas de Donaueschingen",
+  "Blog1Link": "https://www.onlyoffice.com/blog/pt-br/2023/10/como-o-onlyoffice-facilita-a-colaboracao-para-escolas-em-donaueschingen",
+  "Blog1ImgUrl": "/images/templates/office-for-students/success-stories/blog1.jpg",
+
+  "Blog2": "Como o Collège-Lycée Sacré Cœur de Taravao garante igualdade digital para todos os alunos com ONLYOFFICE e Moodle",
+  "Blog2Link": "https://www.onlyoffice.com/blog/pt-br/2023/02/como-college-lycee-sacre-coeur-de-taravao-garante-a-igualdade-digital",
+  "Blog2ImgUrl": "/images/templates/office-for-students/success-stories/blog2.jpg",
+
+  "Blog3": "Como a Universidade de Nanjing integrou o ONLYOFFICE Docs para melhorar a colaboração entre professores e alunos",
+  "Blog3Link": "https://www.onlyoffice.com/blog/pt-br/2022/12/nanjing-university-e-onlyoffice-docs",
+  "Blog3ImgUrl": "/images/templates/office-for-students/success-stories/blog3.jpg",
+
+  "HowCanOOHelp": "Como o ONLYOFFICE pode me ajudar com minhas tarefas?",
+  "HowCanOOHelpAnswer": "Fornecemos ferramentas versáteis para criar e editar documentos, planilhas, apresentações e arquivos PDF - tudo o que você precisa para suas tarefas. Nossas capacidades de colaboração permitem que você trabalhe junto com colegas de classe em tempo real, aumentando significativamente a eficiência do trabalho em equipe e revisão.",
+  "CanIUseOOForGroup": "Posso usar o ONLYOFFICE para tarefas em grupo com colegas de classe?",
+  "CanIUseOOForGroupAnswer": "Sim, claro! Nossa solução foi criada pensando na colaboração. Recursos como edição colaborativa em tempo real, comentários, chat integrado, histórico de versões e outros realmente facilitam o trabalho em projetos. Cada um de vocês pode trabalhar em documentos simultaneamente, simplificando a colaboração.",
+  "DoesOOOfferTemplatesForAcademicDocuments": "O ONLYOFFICE oferece modelos para documentos acadêmicos?",
+  "DoesOOOfferTemplatesForAcademicDocumentsAnswer": "Sim! Nossa <0>biblioteca de modelos</0> tem muitos modelos especialmente projetados, incluindo modelos de relatórios, formatos de trabalhos de pesquisa, layouts de apresentações e muito mais. Isso significa menos esforço para você e mais tempo para tarefas importantes.",
+  "IsOOSecure": "O ONLYOFFICE é seguro para armazenar e distribuir informações confidenciais?",
+  "IsOOSecureAnswer": "Temos orgulho de ser uma das soluções de escritório mais seguras. <0>Levamos a segurança a sério</0>, desde a criptografia de arquivos armazenados na plataforma até numerosas opções para distribuição segura e controles de acesso. Além disso, nossas soluções sempre podem ser implantadas em servidores privados para aumentar a segurança dos dados.",
+  "IsOOFree": "O ONLYOFFICE é gratuito?",
+  "IsOOFreeAnswer": "Sim, o ONLYOFFICE Desktop Editors é um aplicativo totalmente gratuito. O ONLYOFFICE DocSpace oferece um plano gratuito, perfeito para estudantes.",
+  "AreThereAnyIntegrations": "Existem integrações com outras plataformas?",
+  "AreThereAnyIntegrationsAnswer": "Sim, além da capacidade de conectar o aplicativo de desktop à nuvem de sua escolha, você pode integrar os editores online - <0>ONLYOFFICE Docs</0> - ao serviço de e-learning ou sistema de gerenciamento de dados usado em sua instituição de ensino. Dessa forma, você poderá trabalhar com arquivos do Office diretamente na estrutura do curso. Entre as <1>integrações</1> populares prontas para uso estão <2>Moodle</2>, Chamilo, ownCloud, Nextcloud, HumHub e assim por diante.",
+  "WhatIfINeedToEditDocs": "E se eu precisar editar documentos para minha pesquisa armazenados no meu Box / Dropbox?",
+  "WhatIfINeedToEditDocsAnswer": "Com o ONLYOFFICE, você pode fazer isso! Use os aplicativos gratuitos para seu <0>Box</0> ou <1>Dropbox</1>."
+}
