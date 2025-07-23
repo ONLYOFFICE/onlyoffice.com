@@ -8,29 +8,10 @@ export interface IQuoteModalFormData {
   hCaptcha: string | null;
 }
 
-export interface IQuoteModalApiRequest {
+export interface IQuoteModalOnSubmitRequest {
   from?: string;
-  utmSource?: string;
-  utmCampaign?: string;
-  utmContent?: string;
-  utmTerm?: string;
-}
-
-export interface IQuoteModalSendEmailRequest {
-  from?: string;
-  errorFlag: string;
-  utmCampaignFlag: string;
-  errorText: string;
-  isSelected: (value: boolean) => "Selected" | "Not selected";
-}
-
-export interface IQuoteModalPipedriveRequest {
-  _ga?: string;
-  utmSource?: string;
-  utmCampaign?: string;
-  title: string;
+  country: string;
   region: string;
-  from?: string;
 }
 
 interface IApiResponse {
@@ -49,10 +30,8 @@ export interface IQuoteModal<T> {
   quoteFormData: IQuoteModalFormData;
   setQuoteFormData: React.Dispatch<React.SetStateAction<IQuoteModalFormData>>;
   buttonLabel: string;
-  apiRequest: (params: IQuoteModalApiRequest) => Promise<IApiResponse>;
-  sendEmailRequest: (
-    params: IQuoteModalSendEmailRequest,
+  onSubmitRequest: (
+    params: IQuoteModalOnSubmitRequest,
   ) => Promise<IApiResponse>;
-  pipedriveRequest: (params: IQuoteModalPipedriveRequest) => void;
   onClose: () => void;
 }

@@ -1,0 +1,1 @@
+export { ForGovernmentTemplate } from "./ForGovernment";
