@@ -1,0 +1,9 @@
+{
+  "GetAnswersToTheMostPopularQuestions": "常见问题",
+  "HowMuchIsDocSpacePerMonth": "协作空间每月多少钱？",
+  "ONLYOFFICEDocSpacePrice": "ONLYOFFICE 协作空间的起价为每位管理员每月 20 美元。了解详细的协作空间<0>定价和方案</0>。",
+  "IsThereASelfHostedVersion": "有自托管版本的ONLYOFFICE 协作空间吗？",
+  "SelfHostedVersion": "是的，可以在<0>这里</0>下载。",
+  "WhatIsTheTechnologyStack": "ONLYOFFICE 协作空间的技术栈是怎样的？",
+  "TheTechnologyStack": "后端: С# 9.0, .NET 5.0/.NET Core/ASP.NET Core/MySQL 8.0/Kafka/ElasticSearch <br /> 前端: ES6, CSS/SASS, React, Mobx, Styled-Components, i18next, Webpack 4/5"
+}
