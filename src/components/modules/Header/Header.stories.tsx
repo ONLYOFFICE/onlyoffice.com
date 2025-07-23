@@ -1,7 +1,7 @@
 import { Meta, StoryFn } from "@storybook/react";
 import { Header } from "./Header";
 import { ILocale } from "@src/types/locale";
-import { languages } from "@src/config/languages";
+import { languages } from "@src/config/data/languages";
 
 export default {
   title: "Modules/Header",
@@ -10,7 +10,7 @@ export default {
     docs: {
       description: {
         component:
-          "Renders the current menu in the header, allowing users to navigate easily throughout the application.",
+          "Renders the header, allowing users to navigate easily throughout the application.",
       },
     },
   },

@@ -28,44 +28,53 @@ const StyledDownloadButton = styled(Link)<{
       ? css`
           border: 1px solid #aaaaaa;
           color: #444444;
-          transition: filter 0.2s, border-color 0.2s;
+          transition:
+            filter 0.2s,
+            border-color 0.2s;
 
           &:hover {
             border-color: #ff6f3d;
           }
         `
       : $variant === "secondary"
-      ? css`
-          color: #ffffff;
-          background-color: #444444;
-          transition: filter 0.2s, background-color 0.2s;
+        ? css`
+            color: #ffffff;
+            background-color: #444444;
+            transition:
+              filter 0.2s,
+              background-color 0.2s;
 
-          &:hover {
-            background-color: #000000;
-          }
-        `
-      : $variant === "tertiary"
-      ? css`
-          border: 1px solid #aaaaaa;
-          color: #ffffff;
-          transition: filter 0.2s, border-color 0.2s;
+            &:hover {
+              background-color: #000000;
+            }
+          `
+        : $variant === "tertiary"
+          ? css`
+              border: 1px solid #aaaaaa;
+              color: #ffffff;
+              transition:
+                filter 0.2s,
+                border-color 0.2s;
 
-          &:hover {
-            border-color: #ff6f3d;
-          }
-        `
-      : $variant === "quaternary"
-      ? css`
-          color: #444444;
-          background-color: rgba(255, 255, 255, 0.9);
-          transition: filter 0.2s, color 0.2s, background-color 0.2s;
+              &:hover {
+                border-color: #ff6f3d;
+              }
+            `
+          : $variant === "quaternary"
+            ? css`
+                color: #444444;
+                background-color: rgba(255, 255, 255, 0.9);
+                transition:
+                  filter 0.2s,
+                  color 0.2s,
+                  background-color 0.2s;
 
-          &:hover {
-            color: #000000;
-            background-color: #ffffff;
-          }
-        `
-      : null}
+                &:hover {
+                  color: #000000;
+                  background-color: #ffffff;
+                }
+              `
+            : null}
 
   ${({ $platform, $variant, $imageSrc }) =>
     $platform === "windows"
@@ -81,60 +90,60 @@ const StyledDownloadButton = styled(Link)<{
           }
         `
       : $platform === "linux"
-      ? css`
-          &::before {
-            content: "";
-            display: inline-flex;
-            align-items: center;
-            margin-right: 8px;
-            width: 32px;
-            height: 32px;
-            background-image: ${$variant === "primary" ||
-            $variant === "quaternary"
-              ? "url('/images/ui/download-button/linux.svg')"
-              : "url('/images/ui/download-button/linux-white.svg')"};
-          }
-        `
-      : $platform === "macos"
-      ? css`
-          &::before {
-            content: "";
-            display: inline-flex;
-            align-items: center;
-            margin-right: 8px;
-            width: 32px;
-            height: 32px;
-            background-image: ${$variant === "primary" ||
-            $variant === "quaternary"
-              ? "url('/images/ui/download-button/macos.svg')"
-              : "url('/images/ui/download-button/macos-white.svg')"};
-          }
-        `
-      : $platform === "app-store"
-      ? css`
-          background-image: ${$imageSrc && `url(${$imageSrc})`};
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: 100% 32px;
-        `
-      : $platform === "google-play"
-      ? css`
-          background-image: ${$imageSrc && `url(${$imageSrc})`};
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: 100% 32px;
-        `
-      : $platform === "snap-store"
-      ? css`
-          background-image: ${$variant === "primary" ||
-          $variant === "quaternary"
-            ? "url('/images/ui/download-button/snap-store.svg')"
-            : "url('/images/ui/download-button/snap-store-white.svg')"};
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: 100% 32px;
-        `
-      : null}
+        ? css`
+            &::before {
+              content: "";
+              display: inline-flex;
+              align-items: center;
+              margin-right: 8px;
+              width: 32px;
+              height: 32px;
+              background-image: ${$variant === "primary" ||
+              $variant === "quaternary"
+                ? "url('/images/ui/download-button/linux.svg')"
+                : "url('/images/ui/download-button/linux-white.svg')"};
+            }
+          `
+        : $platform === "macos"
+          ? css`
+              &::before {
+                content: "";
+                display: inline-flex;
+                align-items: center;
+                margin-right: 8px;
+                width: 32px;
+                height: 32px;
+                background-image: ${$variant === "primary" ||
+                $variant === "quaternary"
+                  ? "url('/images/ui/download-button/macos.svg')"
+                  : "url('/images/ui/download-button/macos-white.svg')"};
+              }
+            `
+          : $platform === "app-store"
+            ? css`
+                background-image: ${$imageSrc && `url(${$imageSrc})`};
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: inherit;
+              `
+            : $platform === "google-play"
+              ? css`
+                  background-image: ${$imageSrc && `url(${$imageSrc})`};
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: inherit;
+                `
+              : $platform === "snap-store"
+                ? css`
+                    background-image: ${$variant === "primary" ||
+                    $variant === "quaternary"
+                      ? "url('/images/ui/download-button/snap-store.svg')"
+                      : "url('/images/ui/download-button/snap-store-white.svg')"};
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100% 32px;
+                  `
+                : null}
 `;
 
 export { StyledDownloadButton };

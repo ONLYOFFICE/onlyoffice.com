@@ -69,7 +69,10 @@ const StyledCollapseContent = styled.div<{ $isOpen: ICollapse["isOpen"] }>`
   overflow: hidden;
   visibility: hidden;
   will-change: max-height;
-  transition: max-height 0.2s, margin-top 0.2s, visibility 0.2s;
+  transition:
+    max-height 0.2s,
+    margin-top 0.2s,
+    visibility 0.2s;
 
   ${(props) =>
     props.$isOpen &&

@@ -21,6 +21,7 @@ interface IFeaturesBody {
 
 interface IFeaturesFooter {
   btns?: {
+    dataTestId?: string;
     variant?: "primary" | "secondary";
     name?: string;
     url?: string;
@@ -299,12 +300,21 @@ export const features: IFeatures = {
     btns: [
       {},
       {
+        dataTestId: "startup-start-now-button-2",
         variant: "secondary",
         name: "StartNow",
         url: "/docspace-registration",
       },
-      { variant: "primary", name: "GetAQuote" },
-      { variant: "secondary", name: "GetAQuote" },
+      {
+        dataTestId: "business-get-a-quote-button-2",
+        variant: "primary",
+        name: "GetAQuote",
+      },
+      {
+        dataTestId: "enterprise-get-a-quote-button-2",
+        variant: "secondary",
+        name: "GetAQuote",
+      },
     ],
     links: [
       {},

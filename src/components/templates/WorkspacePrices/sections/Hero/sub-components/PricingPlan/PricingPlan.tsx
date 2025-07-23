@@ -14,19 +14,24 @@ import {
 } from "./PricingPlan.styled";
 import { IPricingPlan } from "./PricingPlan.types";
 import { Text } from "@src/components/ui/Text";
+import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
 
 const PricingPlan = ({
+  locale,
   active,
   heading,
   price,
+  url,
   numberOfUsers,
   setNumberOfUsers,
   availableList,
   firstResponseTime,
   supportList,
   casesList,
+  planKey,
 }: IPricingPlan) => {
   const { t } = useTranslation("workspace-prices");
+  const currency = getCurrencyByLocale(locale);
 
   return (
     <StyledPricingPlan $active={active}>
@@ -42,8 +47,14 @@ const PricingPlan = ({
 
         <div>
           <StyledPricingPlanPrice>
-            <span>$</span>
-            {price}
+            {numberOfUsers === "more" ? (
+              <span>{t("UponRequest")}</span>
+            ) : (
+              <>
+                <span>{currency.symbol}</span>
+                {price}
+              </>
+            )}
           </StyledPricingPlanPrice>
           <Text
             as="div"
@@ -53,23 +64,35 @@ const PricingPlan = ({
           />
         </div>
 
-        <StyledPricingPlanBtn
-          forwardedAs="a"
-          href=""
-          variant={active ? "primary" : "secondary"}
-          label={t("BuyNow")}
-        />
+        {numberOfUsers === "more" ? (
+          <StyledPricingPlanBtn
+            data-testid={`${planKey}-get-a-quote-button`}
+            forwardedAs="a"
+            href="mailto:sales@onlyoffice.com?subject=More%20connections%20for%20Enterprise%20Edition"
+            variant="secondary"
+            label={t("GetAQuote")}
+          />
+        ) : (
+          <StyledPricingPlanBtn
+            data-testid={`${planKey}-buy-now-button`}
+            forwardedAs="a"
+            target="_blank"
+            href={url}
+            variant={active ? "primary" : "secondary"}
+            label={t("BuyNow")}
+          />
+        )}
 
         <StyledPricingPlanCounterSelector
           bgColor="#f5f5f5"
           buttonSize="medium"
           valueSize="small"
-          label="Number of users"
+          label={t("NumberOfUsers")}
           items={[
             { id: "50", label: "50" },
             { id: "100", label: "100" },
             { id: "200", label: "200" },
-            { id: "more", label: "More" },
+            { id: "more", label: t("More") },
           ]}
           selected={numberOfUsers}
           onChange={(value) => setNumberOfUsers(value)}

@@ -4,7 +4,8 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background: url("/images/templates/office-for-liferay/hero/bg.svg") no-repeat,
+  background:
+    url("/images/templates/office-for-liferay/hero/bg.svg") no-repeat,
     linear-gradient(#ffffff, #e1eaf7);
   background-position-y: -230px, center;
   background-position-x: center;

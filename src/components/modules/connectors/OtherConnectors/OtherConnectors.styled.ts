@@ -59,7 +59,9 @@ const StyledOtherConnectorsItem = styled(Button)<{
   padding: 14px 16px;
   background-color: #ffffff;
   filter: grayscale(100%);
-  transition: filter 0.2s, box-shadow 0.2s;
+  transition:
+    filter 0.2s,
+    box-shadow 0.2s;
 
   ${(props) =>
     props.$active &&

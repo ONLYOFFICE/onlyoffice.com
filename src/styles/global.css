@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-Italic.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-Italic.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
@@ -17,7 +19,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-Light.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-Light.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-Light.woff2") format("woff2");
   font-weight: 300;
   font-display: swap;
@@ -25,7 +28,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-Light-Italic.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-Light-Italic.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-Light-Italic.woff2") format("woff2");
   font-weight: 300;
   font-style: italic;
@@ -34,7 +38,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-Medium.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-Medium.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-Medium.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
@@ -42,7 +47,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-Medium-Italic.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-Medium-Italic.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-Medium-Italic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
@@ -51,7 +57,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-SemiBold.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-SemiBold.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-display: swap;
@@ -59,7 +66,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-SemiBold-Italic.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-SemiBold-Italic.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-SemiBold-Italic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
@@ -68,7 +76,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
@@ -76,7 +85,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-Bold-Italic.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-Bold-Italic.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-Bold-Italic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
@@ -85,7 +95,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-ExtraBold.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-ExtraBold.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-display: swap;
@@ -93,7 +104,8 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("/fonts/OpenSans/OpenSans-ExtraBold-Italic.woff") format("woff"),
+  src:
+    url("/fonts/OpenSans/OpenSans-ExtraBold-Italic.woff") format("woff"),
     url("/fonts/OpenSans/OpenSans-ExtraBold-Italic.woff2") format("woff2");
   font-weight: 800;
   font-style: italic;
@@ -102,7 +114,8 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto/Roboto-Medium.woff") format("woff"),
+  src:
+    url("/fonts/Roboto/Roboto-Medium.woff") format("woff"),
     url("/fonts/Roboto/Roboto-Medium.woff2") format("woff2");
   font-weight: 500;
   font-display: swap;
@@ -110,7 +123,8 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto/Roboto-Bold.woff") format("woff"),
+  src:
+    url("/fonts/Roboto/Roboto-Bold.woff") format("woff"),
     url("/fonts/Roboto/Roboto-Bold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
@@ -118,7 +132,8 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto/Roboto-ExtraBold.woff") format("woff"),
+  src:
+    url("/fonts/Roboto/Roboto-ExtraBold.woff") format("woff"),
     url("/fonts/Roboto/Roboto-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-display: swap;
@@ -126,7 +141,8 @@
 
 @font-face {
   font-family: "Tahoma";
-  src: url("/fonts/Tahoma/Tahoma-Regular.woff") format("woff"),
+  src:
+    url("/fonts/Tahoma/Tahoma-Regular.woff") format("woff"),
     url("/fonts/Tahoma/Tahoma-Regular.woff2") format("woff2");
   font-weight: 400;
   font-display: swap;

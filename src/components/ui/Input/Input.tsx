@@ -66,7 +66,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
     return (
       <StyledInput>
         <StyledInputWrapper
-          className={`input-wrapper ${className}`}
+          className={`input-wrapper ${className ? className : ""}`}
           ref={ref}
           $status={status}
           $isFocused={isFocused}
@@ -82,6 +82,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
                 $value={value}
                 $leftSide={leftSide}
                 $active={active}
+                $status={status}
                 $disabled={disabled}
               >
                 {label}

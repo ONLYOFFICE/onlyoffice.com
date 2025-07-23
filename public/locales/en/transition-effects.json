@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Transition effects for PowerPoint presentations | ONLYOFFICE",
+  "PageDescription": "Keep your audience’s attention by adding transitions to your presentation’s slides with ONLYOFFICE. Set the start time, duration, and delay parameters.",
+  "Header": "Build engaging presentations",
+  "SubHeader": "Create interactive PowerPoint presentations with rich content and outstanding designs",
+
+  "HeroImgUrl": "/images/templates/transition-effects/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/transition-effects/hero/hero@2x.png",
+
+  "Feature1Title": "Build a perfect layout",
+  "Feature1Desc": "Choose from multiple slide styles. Easily manage and rearrange slides, and add hyperlinks, footers and align elements with advanced alignment and wrapping options.",
+
+  "Feature2Title": "Write flawless texts",
+  "Feature2Desc": "Edit and format text boxes, apply fonts, styles, and text layouts. Check spelling, find synonyms and antonyms with the Thesaurus tool, translate to any language with one of the available translation plugins (Google Translate, DeepL, or Apertium).",
+
+  "Feature3Title": "Insert schemes and graphics",
+  "Feature3Desc": "Tell your story with the right visuals. Create and fully customize charts, autoshapes, tables and OLE spreadsheets, equations, and texts. Visually present your ideas with SmartArt graphic. Insert images and edit them with the Photo Editor, add videos via YouTube, and add code lines with Highlight code plugin. Use custom images as bullets in bulleted lists.",
+
+  "Feature4Title": "Add transition effects to slides",
+  "Feature4Desc": "Keep your audience’s attention by adding transitions to your presentation’s slides: Fade, Push, Wipe, Split, Uncover, Cover, Clock, or Zoom. Set the start time, duration, and delay parameters.",
+
+  "Feature1ImgUrl": "/images/templates/transition-effects/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/transition-effects/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/transition-effects/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/transition-effects/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/transition-effects/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/transition-effects/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/transition-effects/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/transition-effects/features/pic4@2x.png"
+}

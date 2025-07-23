@@ -12,3 +12,7 @@ export { InfoIcon } from "./Info";
 export { CrossIcon } from "./Cross";
 export { EyeIcon } from "./Eye";
 export { EyeCloseIcon } from "./EyeClose";
+export { ShoppingBagIcon } from "./ShoppingBag";
+export { TrashIcon } from "./Trash";
+export { ArrowBackIcon } from "./ArrowBack";
+export { ArrowForwardIcon } from "./ArrowForward";

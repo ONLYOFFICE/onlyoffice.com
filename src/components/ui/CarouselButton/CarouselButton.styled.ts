@@ -9,7 +9,9 @@ const StyledCarouselButton = styled.button`
   width: 56px;
   height: 56px;
   background-color: transparent;
-  transition: background-color 0.2s, box-shadow 0.2s;
+  transition:
+    background-color 0.2s,
+    box-shadow 0.2s;
   cursor: pointer;
 
   svg {

@@ -38,7 +38,6 @@ const StyledDesktopEditorsText = styled(Text)`
 
 const StyledDesktopEditorsFeatures = styled.div`
   display: grid;
-  justify-content: center;
   row-gap: 72px;
   margin-bottom: 72px;
 

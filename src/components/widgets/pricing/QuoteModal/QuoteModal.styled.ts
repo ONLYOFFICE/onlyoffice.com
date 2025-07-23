@@ -1,17 +1,23 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import ReCAPTCHA from "react-google-recaptcha";
+import { Text } from "@src/components/ui/Text";
 
 const StyledQuoteModal = styled.div`
-  display: grid;
-  row-gap: 32px;
   border-radius: 5px;
   padding: 72px 96px 80px;
   background-color: #ffffff;
 
   @media ${device.tablet} {
-    row-gap: 24px;
     padding: 48px 24px 56px;
+  }
+`;
+
+const StyledQuoteModalWrapper = styled.div`
+  display: grid;
+  row-gap: 32px;
+
+  @media ${device.tablet} {
+    row-gap: 24px;
   }
 `;
 
@@ -25,15 +31,17 @@ const StyledQuoteModalGetItNow = styled.div`
   }
 `;
 
-const StyledQuoteModalRecaptcha = styled(ReCAPTCHA)`
+const StyledQuoteModalText = styled(Text)`
+  margin-top: 16px;
+
   @media ${device.mobile} {
-    overflow-x: auto;
-    overflow-y: hidden;
+    font-size: 12px;
   }
 `;
 
 export {
   StyledQuoteModal,
+  StyledQuoteModalWrapper,
   StyledQuoteModalGetItNow,
-  StyledQuoteModalRecaptcha,
+  StyledQuoteModalText,
 };

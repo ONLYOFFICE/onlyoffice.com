@@ -4,7 +4,7 @@ import { device } from "@src/utils/device";
 import { Input } from "@src/components/ui/Input";
 
 export const getValueSizeStyles = (
-  $valueSize: ICounterSelector["valueSize"],
+  $valueSize: ICounterSelector<string>["valueSize"],
 ) => {
   return css`
     text-align: center;
@@ -22,22 +22,22 @@ export const getValueSizeStyles = (
           }
         `
       : $valueSize === "medium"
-      ? css`
-          font-size: 18px;
-          line-height: 28px;
+        ? css`
+            font-size: 18px;
+            line-height: 28px;
 
-          @media ${device.mobile} {
-            font-size: 16px;
-            line-height: 26px;
-          }
-        `
-      : null}
+            @media ${device.mobile} {
+              font-size: 16px;
+              line-height: 26px;
+            }
+          `
+        : null}
   `;
 };
 
 const StyledCounterSelector = styled.div<{
-  $label: ICounterSelector["label"];
-  $bgColor: ICounterSelector["bgColor"];
+  $label: ICounterSelector<string>["label"];
+  $bgColor: ICounterSelector<string>["bgColor"];
 }>`
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@ const StyledCounterSelector = styled.div<{
 `;
 
 const StyledCounterSelectorBtn = styled.button<{
-  $buttonSize: ICounterSelector["buttonSize"];
+  $buttonSize: ICounterSelector<string>["buttonSize"];
 }>`
   display: inline-flex;
   justify-content: center;
@@ -74,14 +74,14 @@ const StyledCounterSelectorBtn = styled.button<{
           height: 40px;
         `
       : props.$buttonSize === "medium"
-      ? css`
-          height: 48px;
-        `
-      : props.$buttonSize === "large"
-      ? css`
-          height: 56px;
-        `
-      : null}
+        ? css`
+            height: 48px;
+          `
+        : props.$buttonSize === "large"
+          ? css`
+              height: 56px;
+            `
+          : null}
 
   svg {
     width: 24px;
@@ -109,7 +109,7 @@ const StyledCounterSelectorBtn = styled.button<{
 `;
 
 const StyledCounterSelectorInput = styled(Input)<{
-  $valueSize: ICounterSelector["valueSize"];
+  $valueSize: ICounterSelector<string>["valueSize"];
 }>`
   height: 40px;
 
@@ -129,7 +129,7 @@ const StyledCounterSelectorLabel = styled.div`
 `;
 
 const StyledCounterSelectorValue = styled.div<{
-  $valueSize: ICounterSelector["valueSize"];
+  $valueSize: ICounterSelector<string>["valueSize"];
 }>`
   ${(props) => getValueSizeStyles(props.$valueSize)}
 `;

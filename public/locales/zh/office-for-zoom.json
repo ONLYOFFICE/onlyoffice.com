@@ -1,0 +1,57 @@
+{
+  "PageTitle": "在 Zoom 会话中协作处理办公文件",
+  "PageDescription": "使用 ONLYOFFICE 协作空间在 Zoom 中编辑和协作文档、电子表格、幻灯片，表单和 PDF",
+
+  "OnlineOfficeForZoom": "用于 <0>Zoom</0> 的安全在线文档编辑器",
+  "EnableCollaborativeDocumentEditing": "使用 ONLYOFFICE 强大的功能，在 Zoom 中处理办公文档",
+  "AddToZoom": "立即获取",
+
+  "CollaborateOfficeDocuments": "在 Zoom 会议时协作处理办公文档",
+  "DocumentsTab1Label": "创建、上传和共享有编辑或实时查看权限的文档。",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-zoom/documents/zh/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-zoom/documents/zh/screen1@2x.png",
+  "DocumentsTab2Label": "与其他参与者实时共同创作文档、表格、幻灯片。",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-zoom/documents/zh/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-zoom/documents/zh/screen2@2x.png",
+  "DocumentsTab3Label": "讨论并填写复杂的在线表格，如销售协议或合同。",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-zoom/documents/zh/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-zoom/documents/zh/screen3@2x.png",
+  "DocumentsTab4Label": "查看 PDF 文档，添加评论、注释、绘图。",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-zoom/documents/zh/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-zoom/documents/zh/screen4@2x.png",
+  "DocumentsTab5Label": "将 Zoom 会议中编辑的文件可以存储在协作房间中，并随时随地打开查看它们。",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-zoom/documents/zh/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-zoom/documents/zh/screen5@2x.png",
+
+  "EfficientlyManageYourDocuments": "在会议时高效管理您的文档",
+  "ManageTab1Label": "为所有文档创建一个安全的空间。并从您的 Zoom 帐户轻松访问它们。",
+  "ManageTab1ImgUrl": "/images/templates/office-for-zoom/manage/zh/screen1.png",
+  "ManageTab1ImgUrl2x": "/images/templates/office-for-zoom/manage/zh/screen1@2x.png",
+  "ManageTab2Label": "整理您的个人文件并为工作文档创建房间。",
+  "ManageTab2ImgUrl": "/images/templates/office-for-zoom/manage/zh/screen2.png",
+  "ManageTab2ImgUrl2x": "/images/templates/office-for-zoom/manage/zh/screen2@2x.png",
+  "ManageTab3Label": "提供灵活的访问权限：编辑、评论、审阅或仅查看。",
+  "ManageTab3ImgUrl": "/images/templates/office-for-zoom/manage/zh/screen3.png",
+  "ManageTab3ImgUrl2x": "/images/templates/office-for-zoom/manage/zh/screen3@2x.png",
+  "ManageTab4Label": "使用公共房间让外部人员可以访问您的文档。",
+  "ManageTab4ImgUrl": "/images/templates/office-for-zoom/manage/zh/screen4.png",
+  "ManageTab4ImgUrl2x": "/images/templates/office-for-zoom/manage/zh/screen4@2x.png",
+
+  "MarketplaceConnectorTitle": "可在 Zoom 中无缝协作",
+  "MarketplaceConnectorDescription": "从应用市场安装用于 Zoom 的 ONLYOFFICE 应用程序。",
+
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "Reason1": "一套强大的编辑、格式化和样式工具。<0>集成 AI 助手</0>（ChatGPT 或智谱 AI）。",
+  "Reason2": "两种共同编辑模式、跟踪更改、版本历史记录、文档比较、评论和提及等功能。",
+  "Reason3": "支持超过 <0>50 种文件格式</0>。与微软 Office 格式（DOCX, XLSX, PPTX）高度兼容。",
+  "Reason4": "<0>高级安全</0>。各种访问权限和 JWT。活动跟踪和审计报告。静态和传输中加密。开源代码。",
+  "Reason5": "<0>免费初创版本</0>。 也可使用专业版，获得更多管理员、更大存储空间、更强安全性和专业支持。",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1": "登录您的 Zoom 帐户。",
+  "HowToStartStep2": "从 <0>Zoom 应用市场</0>安装 ONLYOFFICE 协作空间，并允许请求的应用程序权限。",
+  "HowToStartStep3": "开始会议，切换到“应用程序”选项卡并启动 ONLYOFFICE 协作空间。",
+  "HowToStartStep4": "通过从列表中选择所需的文件来开启协作。",
+
+  "ExploreMoreDetailsIn": "阅读<0>本指南</0>了解详情。"
+}

@@ -7,17 +7,39 @@ import {
   StyledHeroPlans,
   StyledHeroFeaturesHeading,
 } from "./Hero.styled";
+import { IAffiliate } from "./Hero.types";
+import { IDocSpacePricesTemplate } from "@src/components/templates/DocSpacePrices";
 import { Container } from "@src/components/ui/Container";
 import { PlanCard } from "./sub-components/PlanCard";
 import { FeaturesTable } from "./sub-components/FeaturesTable";
 import { BusinessModal } from "./sub-components/BusinessModal";
 import { EnterpriseModal } from "./sub-components/EnterpriseModal";
-import { enterpriseCurrentPrice, businessCurrentPrice } from "./data/plans";
+import { useRewardful } from "@src/utils/useRewardful";
 
-const Hero = () => {
+const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
   const { t } = useTranslation("docspace-prices");
   const [isBusinessModalOpen, setIsBusinessModalOpen] = useState(false);
   const [isEnterpriseModalOpen, setIsEnterpriseModalOpen] = useState(false);
+  const [affiliate, setAffiliate] = useState<IAffiliate>({
+    id: "",
+    token: "",
+    params: "",
+  });
+
+  const { getClientReferenceId, getAffiliateToken, getClientReferenceParam } =
+    useRewardful({
+      onReady: () => {
+        const id = getClientReferenceId();
+        const token = getAffiliateToken();
+        const params = getClientReferenceParam();
+
+        setAffiliate((prev) =>
+          prev.id === id && prev.token === token && prev.params === params
+            ? prev
+            : { id, token, params },
+        );
+      },
+    });
 
   return (
     <StyledHero
@@ -38,6 +60,7 @@ const Hero = () => {
 
         <StyledHeroPlans>
           <PlanCard
+            locale={locale}
             heading={t("Startup")}
             subHeading={t("Cloud")}
             headingLabel={t("LimitedTimeOffer")}
@@ -45,36 +68,41 @@ const Hero = () => {
               free: true,
             }}
             btn={{
+              dataTestId: "startup-start-now-button",
               label: t("StartNow"),
               url: "/docspace-registration",
             }}
           />
 
           <PlanCard
+            locale={locale}
             heading={t("Business")}
             subHeading={t("Cloud")}
             price={{
-              prev: "30",
-              current: businessCurrentPrice,
+              prev: locale === "zh" ? 227 : 30,
+              current: productsData.business.price,
               label: t("PerAdminMonth"),
             }}
             isActive={true}
             btn={{
+              dataTestId: "business-get-a-quote-button",
               label: t("GetAQuote"),
               onClick: () => setIsBusinessModalOpen(true),
             }}
           />
 
           <PlanCard
+            locale={locale}
             heading={t("Enterprise")}
             subHeading={t("OnPremises")}
             price={{
               from: true,
-              current: enterpriseCurrentPrice,
+              current: productsData.enterpriseUsers100.price,
               label: t("PerServer"),
             }}
             btn={{
-              label: t("TryItFree"),
+              dataTestId: "enterprise-get-a-quote-button",
+              label: t("GetAQuote"),
               onClick: () => setIsEnterpriseModalOpen(true),
             }}
             link={{
@@ -98,10 +126,16 @@ const Hero = () => {
         <BusinessModal
           isOpen={isBusinessModalOpen}
           onClose={() => setIsBusinessModalOpen(false)}
+          locale={locale}
+          productsData={productsData}
+          affiliate={affiliate}
         />
         <EnterpriseModal
           isOpen={isEnterpriseModalOpen}
           onClose={() => setIsEnterpriseModalOpen(false)}
+          locale={locale}
+          productsData={productsData}
+          affiliate={affiliate}
         />
       </Container>
     </StyledHero>

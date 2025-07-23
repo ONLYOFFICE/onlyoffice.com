@@ -13,9 +13,12 @@ const StyledMarketplaceConnector = styled.section`
     height: 468px;
     top: 50%;
     width: 100%;
-    background-image: url("/images/templates/office-for-liferay/marketplace-connector/bg.svg"),
+    background-image:
+      url("/images/templates/office-for-liferay/marketplace-connector/bg.svg"),
       url("/images/templates/office-for-liferay/marketplace-connector/bg.svg");
-    background-position-y: 100px, -235px;
+    background-position-y:
+      100px,
+      -235px;
     background-position-x: calc(50% - 588px), calc(50% + 891px);
     background-size: 600px, 600px;
     background-repeat: no-repeat;

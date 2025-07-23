@@ -13,7 +13,9 @@ const StyledOverlay = styled.div<{
   z-index: 101;
   opacity: ${(props) => (props.$active ? 1 : 0)};
   visibility: ${(props) => (props.$active ? "visible" : "hidden")};
-  transition: opacity 0.2s, visibility 0.2s;
+  transition:
+    opacity 0.2s,
+    visibility 0.2s;
 `;
 
 export { StyledOverlay };
