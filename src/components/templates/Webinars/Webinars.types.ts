@@ -6,7 +6,9 @@ interface ICardItemProps {
   description: string;
   link?: string;
   speaker: string;
-  image: string;
+  image: {
+    url: string;
+  }[];
   product: string;
   isUpcomingWebinar: boolean;
 }

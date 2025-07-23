@@ -2,7 +2,7 @@ import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
-import { CardItem } from "../../sub-components";
+import { CardItem } from "../../sub-components/CardItem/";
 import { formatWebinarsDate, formatWebinarsDateWithHours } from "../../utils/formaWebinarsDate"
 import { IWebinars } from "../../Webinars.types";
 import { ILocale } from "@src/types/locale";
@@ -39,7 +39,7 @@ const Watch = ({ webinars, locale }: ILocale & IWebinars) => {
               description={item.description}
               link={item.watch_link}
               speaker={item.speaker}
-              image={item.speaker_image[0].url}
+              image={item.speaker_image}
               product={item.product}
               isUpcomingWebinar={false}
             />

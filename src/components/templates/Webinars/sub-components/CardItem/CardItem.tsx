@@ -5,16 +5,16 @@ import { Input } from "@src/components/ui/Input";
 import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
 import { TextArea } from "@src/components/ui/TextArea";
-import { HCaptcha } from "@src/components/widgets/HCaptcha";
+import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { validateFullName, validateEmail } from "@src/utils/validators";
-import { ICardItemProps, IFormData, ICheckStatus } from "../Webinars.types";
+import { ImageChecker } from "../ImageChecker";
+import { ICardItemProps, IFormData, ICheckStatus } from "../../Webinars.types";
 
 import {
   StyledCardItem,
   StyledCardItemBottom,
   StyledCardItemContent,
   StyledCardItemHeading,
-  StyledCardItemImg,
   StyledCardItemLink,
   StyledCardItemModal,
   StyledCardItemModalAgreement,
@@ -165,7 +165,10 @@ const CardItem = ({
               target="_blank"
             />
           )}
-          <StyledCardItemImg $image={image} />
+          {image.map((image) => (
+              <ImageChecker key={image.url} url={image.url} />
+            ))
+          }
           <StyledCardItemSubtitle
             label={speaker}
             level={5}
