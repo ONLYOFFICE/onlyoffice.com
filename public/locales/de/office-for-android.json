@@ -84,12 +84,15 @@
   "LearnCardTitleRelease": "Beschreibung von Neuigkeiten",
   "LearnMoreTextOnlyOfficeDocuments": "ONLYOFFICE Documents 5.5 mit Passwörtern, Formfüllung und UI-Verbesserungen",
   "LearnMoreSubtitleRead": "Beitrag lesen",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/de/2022/10/onlyoffice-documents-5-5-fur-android-mit-passwortern-formfullung-und-ui-verbesserungen/",
 
   "LearnCardTitleTutorials": "Tutorials",
   "LearnMoreTextCollaborative": "Gemeinsame Dokumentenbearbeitung auf Ihrem Android-Gerät",
   "LearnMoreSubtitleLearn1": "Mehr erfahren",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/de/mobile-applications/documents/android/android-de/tools-and-settings/collaborative-editing.aspx",
 
   "LearnCardTitleDeveloper": "Leitfaden für Entwickler",
   "LearnMoreTextHowMobile": "So funktioniert die mobile Integration",
-  "LearnMoreSubtitleLearn2": "Mehr erfahren"
+  "LearnMoreSubtitleLearn2": "Mehr erfahren",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/de/2022/07/onlyoffice-mobile-integration/"
 }

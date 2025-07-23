@@ -27,7 +27,7 @@ const Learn = () => {
         {items.map((item) => (
           <CardLink
             key={item.title}
-            href={item.href}
+            href={t(item.href)}
             icon={{
               iconUrl: item.image,
               iconWidthDesktop: "100%",

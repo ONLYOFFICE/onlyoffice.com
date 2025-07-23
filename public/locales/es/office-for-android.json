@@ -58,12 +58,15 @@
   "LearnCardTitleRelease": "Notas de la versión",
   "LearnMoreTextOnlyOfficeDocuments": "ONLYOFFICE Documents 5.5 con contraseñas, relleno de formas y mejoras en la interfaz de usuario",
   "LearnMoreSubtitleRead": "Más información",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/es/2022/10/onlyoffice-documents-v5-5-para-android/",
 
   "LearnCardTitleTutorials": "Tutoriales",
   "LearnMoreTextCollaborative": "Edición colaborativa de documentos en tu dispositivo Android",
   "LearnMoreSubtitleLearn1": "Más información",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/es/mobile-applications/documents/android/android-de/tools-and-settings/collaborative-editing.aspx",
 
   "LearnCardTitleDeveloper": "Guía para desarrolladores",
   "LearnMoreTextHowMobile": "Cómo funciona la integración móvil",
-  "LearnMoreSubtitleLearn2": "Más información"
+  "LearnMoreSubtitleLearn2": "Más información",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/es/2022/07/onlyoffice-para-desarrolladores-como-funciona-la-integracion-movil/"
 }

@@ -48,7 +48,7 @@
   "FeaturesItemMobile4Bg": "/images/templates/office-for-android/features/fr/img-mobile-4.png",
   "FeaturesItemMobile4Bg2x": "/images/templates/office-for-android/features/fr/img-mobile2x-4.png",
 
-  "FeaturesItemHeadingPDF": "Visionneuse PDF и lecteur multimédia",
+  "FeaturesItemHeadingPDF": "Visionneuse PDF et lecteur multimédia",
   "FeaturesItemTextMakeViewPDF": "Visualisez les fichiers pdf, photo et vidéo. Triez, renommez, déplacez et copiez des fichiers, créez des dossiers sur l'appareil ou dans le cloud.",
   "FeaturesItemTablet5Bg": "/images/templates/office-for-android/features/fr/img-tablet-5.png",
   "FeaturesItemTablet5Bg2x": "/images/templates/office-for-android/features/fr/img-tablet2x-5.png",
@@ -84,12 +84,15 @@
   "LearnCardTitleRelease": "Nouveautés de mise à jour",
   "LearnMoreTextOnlyOfficeDocuments": "Documents ONLYOFFICE 5.5 avec mots de passe, remplissage de formes et améliorations de l'interface utilisateur",
   "LearnMoreSubtitleRead": "Lees verhaal",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/fr/2022/10/documents-onlyoffice-5-5-pour-android/",
 
   "LearnCardTitleTutorials": "Tutoriels",
   "LearnMoreTextCollaborative": "Édition collaborative de documents sur votre appareil Android",
   "LearnMoreSubtitleLearn1": "Meer informatie",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/fr/mobile-applications/documents/android/android-de/tools-and-settings/collaborative-editing.aspx",
 
   "LearnCardTitleDeveloper": "Guide pour les développeurs",
   "LearnMoreTextHowMobile": "Comment fonctionne l'intégration mobile",
-  "LearnMoreSubtitleLearn2": "Meer informatie"
+  "LearnMoreSubtitleLearn2": "Meer informatie",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/fr/2022/07/onlyoffice-pour-les-developpeurs-comment-fonctionne-lintegration-mobile/"
 }
