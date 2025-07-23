@@ -1,0 +1,127 @@
+{
+  "PageTitle": "Integrationsmöglichkeiten von ONLYOFFICE Docs im Vergleich | ONLYOFFICE",
+  "PageDescription": "Entdecken Sie den Unterschied zwischen der Integration von ONLYOFFICE Docs und einem Cloud-Dienst mit API oder WOPI.",
+
+  "HeroTitle": "Integration von <0>ONLYOFFICE Docs</0> mit API und <1></1>WOPI im Vergleich",
+  "HeroParagraph": "Sie können <0>ONLYOFFICE Docs</0> mit jedem Cloud-Dienst integrieren, der entweder API oder WOPI verwendet.",
+  "HeroSmallerParagraph": "Die folgende Tabelle hilft Ihnen, den Unterschied zwischen diesen Optionen herauszufinden.",
+
+  "Header1": "API",
+  "Header2": "WOPI",
+
+  "Sub1": "Allgemeine Informationen",
+
+  "Par1AHead": "API (Programmierschnittstelle):",
+  "Par1ASub": "Beschreibt die wichtigsten Methoden, mit denen Sie mit verschiedenen ONLYOFFICE-Komponenten, einschließlich Editoren, interagieren und programmgesteuert darauf zugreifen können.",
+  "Par1ALink": "Mehr erfahren",
+
+  "Par1BHead": "WOPI (Web Application Open Platform Interface):",
+  "Par1BSub": "REST-basiertes Protokoll von Microsoft. Dadurch können auf einem WOPI-Server gespeicherte Dateien von Clients zugegriffen und bearbeitet werden.",
+  "Par1BLink": "Mehr erfahren",
+
+  "Sub2": "Integration mit Sync&Share- und DMS-Lösungen",
+
+  "Par2ASub": "Über gebrauchsfertige Konnektoren, die von ONLYOFFICE oder offiziellen Technologiepartnern entwickelt wurden.",
+  "Par2ALink": "Alle Konnektoren",
+
+  "Par2BSub": "Über einen WOPI-Konnektor/universalen WOPI-Client",
+
+  "Sub3": "Personalisierung",
+
+  "Item3A": "Festlegen einer notwendigen Sprache und eines benutzerdefinierten Designs für die Editoren",
+  "Item3B": "Ausblenden des Chat-Menüs",
+  "Item3C": "Benutzerdefinierte Informationen im entsprechenden Abschnitt",
+  "Item3D": "Anpassung der Benutzeroberfläche z.B. Kopfzeilen und Symbolleisten",
+  "Item3E": "Branding",
+  "Item3F": "Hinzufügen von Plug-ins",
+
+  "Item3G": "Festlegen einer notwendigen Sprache und eines benutzerdefinierten Designs für die Editoren",
+  "Item3H": "Ausblenden des Chat-Menüs",
+  "Item3I": "Benutzerdefinierte Informationen im entsprechenden Abschnitt",
+
+  "Out3A": "Weitere Optionen kommen demnächst",
+
+  "Sub4": "Grundlegende Funktionalität",
+
+  "Item4A": "Anzeigen",
+  "Item4B": "Bearbeitung",
+  "Item4C": "Mitherausgeber",
+  "Item4D": "Mobile Anzeige und Bearbeitung",
+  "Item4E": "Vereinfachte Anzeige (eingebettet)",
+
+  "Item4F": "Anzeigen",
+  "Item4G": "Bearbeitung",
+  "Item4H": "Mitherausgeber",
+
+  "Out4A": "Weitere Optionen in Entwicklung",
+
+  "Sub5": "Zusätzlich: Methoden",
+
+  "Item5A": "Herunterladen einer Datei im ausgewählten Format",
+  "Item5B": "Hinzufügen einer Datei zu Favoriten",
+  "Item5C": "Meldungen mit nützlichen Tipps",
+
+  "Out5A": "Möglichkeiten von der API-Integration kommen demnächst",
+
+  "Sub6": "Zusätzlich: Ereignisse",
+
+  "Item6A": "Schließen des Editors",
+  "Item6B": "Öffnen des Speicherorts einer Datei",
+  "Item6C": "Wechseln zwischen den Anzeige- und Bearbeitungsmodi",
+  "Item6D": "Umbenennen von Dokumenten",
+  "Item6E": "Verwalten von Zugriffsrechten für Dokumente",
+  "Item6F": "Öffnen des Versionsverlaufs",
+  "Item6G": "Einfügen von Bildern aus dem Speicher",
+  "Item6H": "Seriendruck",
+  "Item6I": "Vergleichen eines Dokuments mit Dateien aus dem Speicher",
+  "Item6J": "Öffnen notwendiger Bereiche mit Links für Lesezeichen",
+  "Item6K": "Speichern einer Datei im gewünschten Format",
+  "Item6L": "Erwähnungen anderer Benutzer in Kommentaren",
+  "Item6M": "Erstellen eines neuen Dokuments",
+
+  "Item6N": "Schließen des Editors",
+  "Item6O": "Öffnen des Speicherorts einer Datei",
+  "Item6P": "Wechseln zwischen den Anzeige- und Bearbeitungsmodi",
+  "Item6Q": "Umbenennen von Dokumenten",
+  "Item6R": "Verwalten von Zugriffsrechten für Dokumente",
+  "Item6S": "Öffnen des Versionsverlaufs (unterschiedlich von der API-Implementierung)",
+  "Item6T": "Einfügen von Bildern aus dem Speicher",
+
+  "Out6A": "Weitere Optionen kommen demnächst",
+
+  "Sub7": "Sicherheit",
+
+  "Item7A": "Beschränkung von IP-Adressen",
+  "Item7B": "Überprüfung von Anfragen und Schutz vor unbefugtem Zugriff mit JWT",
+
+  "Item7C": "Beschränkung von IP-Adressen",
+  "Item7D": "Verifizieren von Anfragen mit Proof Keys",
+
+  "Sub8": "Zugriffsberechtigungen",
+
+  "Item8A": "Schreibgeschützt",
+  "Item8B": "Bearbeitung",
+  "Item8C": "Überprüfung (für Textdokumente)",
+  "Item8D": "Kommentieren",
+  "Item8E": "Ausfüllen von Formularen",
+  "Item8F": "Ändern von Inhaltssteuerelementen (für Textdokumente)",
+  "Item8G": "Benutzerdefinierte Filter (für Tabellenkalkulationen)",
+  "Item8H": "Kopieren in die Zwischenablage",
+  "Item8I": "Herunterladen",
+  "Item8J": "Druck",
+  "Item8K": "Umbenennung",
+
+  "Item8L": "Schreibgeschützt",
+  "Item8M": "Bearbeitung",
+  "Item8N": "Überprüfung (für Textdokumente)",
+  "Item8O": "Druck",
+  "Item8P": "Umbenennung",
+
+  "Out8A": "Weitere Optionen kommen demnächst",
+
+  "Button": "EDITOREN INTEGRIEREN",
+
+  "QuestionsHeader": "Noch weitere Fragen geblieben?",
+  "QuestionsParagraph": "Möchten Sie ONLYOFFICE Docs mit Ihrem Cloud-Dienst integrieren?",
+  "QuestionsContact": "Wenden Sie sich an uns unter <0>sales@onlyoffice.com</0>."
+}
