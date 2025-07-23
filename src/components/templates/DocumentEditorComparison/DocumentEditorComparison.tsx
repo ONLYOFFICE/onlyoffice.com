@@ -1,8 +1,8 @@
-import { Compare } from "./sections/Compare";
+import { Hero } from "./sections/Hero";
 import { Comparison } from "./sections/Comparison/Comparison";
 import { Compatibility } from "./sections/Compatibility";
-import { GetStarted } from "./sections/GetStarted";
-import { Hero } from "./sections/Hero";
+import { Compare } from "./sections/Compare";
+import { GetStarted } from "@src/components/modules/GetStarted";
 
 const DocumentEditorComparisonTemplate = () => {
   return (

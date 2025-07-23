@@ -36,11 +36,16 @@ const Hero = () => {
             <Text size={1} label={t("HeroText")} />
           </StyledHeroContent>
           <StyledHeroButtonsWrapper>
-            <Button id="hero-get-it-now" as="a" href="" label={t("GetItNow")} />
+            <Button
+              id="hero-get-it-now"
+              as="a"
+              href="download?from=downloadintegrationmenu#docs-enterprise"
+              label={t("GetItNow")}
+            />
             <Button
               id="hero-see-it-in-action"
               as="a"
-              href=""
+              href="/see-it-in-action"
               variant="tertiary"
               label={t("SeeItInAction")}
             />
