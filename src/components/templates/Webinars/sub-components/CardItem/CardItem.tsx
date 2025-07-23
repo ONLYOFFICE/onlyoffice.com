@@ -165,8 +165,8 @@ const CardItem = ({
               target="_blank"
             />
           )}
-          {image.map((image) => (
-              <ImageChecker key={image.url} url={image.url} />
+          {image.map((image, index) => (
+              <ImageChecker key={`${image.url} ${index}`} url={image.url} />
             ))
           }
           <StyledCardItemSubtitle
