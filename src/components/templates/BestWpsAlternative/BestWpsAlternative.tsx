@@ -3,8 +3,8 @@ import { StyledBestWpsAlternativeTemplate } from "./BestWpsAlternative.styled";
 import { Compatibility } from "./sections/Compatibility";
 import { Hero } from "./sections/Hero";
 import { Reasons } from "./sections/Reasons";
-import { BestAlternativeGetStarted } from "@src/components/modules/best-alternative/BestAlternativeGetStarted";
 import { Presentation } from "./sections/Presentation";
+import { GetStarted } from "@src/components/modules/GetStarted";
 
 const BestWpsAlternativeTemplate = () => {
   return (
@@ -14,7 +14,7 @@ const BestWpsAlternativeTemplate = () => {
       <Presentation />
       <Compatibility />
       <BestAlternativeCompare alternative="WPS Office" />
-      <BestAlternativeGetStarted />
+      <GetStarted />
     </StyledBestWpsAlternativeTemplate>
   );
 };

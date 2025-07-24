@@ -1,1 +1,0 @@
-export { BestAlternativeGetStarted } from "./BestAlternativeGetStarted";

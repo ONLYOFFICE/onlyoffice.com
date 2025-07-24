@@ -48,7 +48,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "best-microsoft-office-alternative",
         "BestAlternativeCompatibility",
         "BestAlternativeCompare",
-        "BestAlternativeGetStarted",
+        "GetStarted",
       ])),
       locale,
     },

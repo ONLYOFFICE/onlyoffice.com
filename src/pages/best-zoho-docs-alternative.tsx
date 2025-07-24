@@ -48,7 +48,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "best-zoho-docs-alternative",
         "BestAlternativeCompatibility",
         "BestAlternativeCompare",
-        "BestAlternativeGetStarted",
+        "GetStarted",
       ])),
       locale,
     },

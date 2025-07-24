@@ -49,7 +49,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "BestAlternativeCompatibility",
         "BestAlternativeCompare",
         "best-adobe-alternative",
-        "BestAlternativeGetStarted",
+        "GetStarted",
       ])),
       locale,
     },
