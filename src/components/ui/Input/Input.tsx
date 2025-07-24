@@ -82,6 +82,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
                 $value={value}
                 $leftSide={leftSide}
                 $active={active}
+                $status={status}
                 $disabled={disabled}
               >
                 {label}
