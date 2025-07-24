@@ -30,6 +30,8 @@
   "ModalSendButton": "Ver seminario web",
   "ModalCloseButton": "Cancelar",
 
+  "RequestSuccessfull": "Se ha registrado correctamente al seminario web de ONLYOFFICE. <br> El enlace al seminario web ha sido enviado a su dirección de correo electrónico.",
+
   "WatchHeading": "Ver bajo demanda",
   "WatchText": "¿Te has perdido un webinar? Ve la grabación en cualquier momento.",
   "WatchNow": "Ver ahora",

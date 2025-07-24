@@ -30,6 +30,8 @@
   "ModalSendButton": "Visionner le webinaire",
   "ModalCloseButton": "Annuler",
 
+  "RequestSuccessfull": "Vous vous êtes inscrit avec succès au webinaire ONLYOFFICE. <br>  Le lien vers le webinaire a été envoyé à votre adresse électronique.",
+
   "WatchHeading": "Regarder à la demande",
   "WatchText": "Vous avez manqué un webinaire ? Regarder une rediffusion à tout moment.",
   "WatchNow": "Regarder maintenant",

@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
+import { ILoaderButton } from "@src/components/ui/LoaderButton";
 
 const StyledCardItemHeading = styled(Heading)`
   margin-bottom: 16px;
@@ -132,7 +133,7 @@ const StyledCardItemModal = styled.div`
 const StyledCardItemModalContent = styled.div`
   width: 100%;
   max-width: 600px;
-  padding: 64px 0;
+  padding: 64px 0 32px;
   background-color: #fff;
   border-radius: 10px;
   margin: auto;
@@ -222,6 +223,13 @@ const StyledCardItemModalButtons = styled.div`
   }
 `;
 
+const StyledCardItemStatusText = styled(Text)<{
+  $status: ILoaderButton["status"];
+}>`
+  display: ${({ $status }) => $status === "success" ? "block" : "none"};
+  margin-top: 16px;
+`;
+
 export {
   StyledCardItem,
   StyledCardItemTop,
@@ -246,4 +254,5 @@ export {
   StyledCardItemModalPlease,
   StyledCardItemModalAgreement,
   StyledCardItemModalButtons,
+  StyledCardItemStatusText,
  };

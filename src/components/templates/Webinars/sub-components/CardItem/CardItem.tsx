@@ -34,6 +34,7 @@ import {
   StyledCardItemModalPlease,
   StyledCardItemModalProduct,
   StyledCardItemModalText,
+  StyledCardItemStatusText,
   StyledCardItemSubtitle,
   StyledCardItemTop,
 } from "./CardItem.styled";
@@ -392,6 +393,17 @@ const CardItem = ({
                   onClick={() => setIsModalOpen(false)}
                 />
               </StyledCardItemModalButtons>
+              <StyledCardItemStatusText
+                $status={status}
+                color="#333333"
+                size={4}
+              >
+                <Trans
+                  t={t}
+                  i18nKey={"RequestSuccessfull"}
+                  components={{br: <br />}}
+                />
+              </StyledCardItemStatusText>
             </StyledCardItemModalForm>
           </StyledCardItemModalContent>
         </StyledCardItemModal>

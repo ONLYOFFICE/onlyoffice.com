@@ -30,6 +30,8 @@
   "ModalSendButton": "ウェビナーを見る",
   "ModalCloseButton": "キャンセル",
 
+  "RequestSuccessfull": "ONLYOFFICE ウェビナーに正常に登録されました。 <br> ウェビナーへのリンクが、メールに送信されました。",
+
   "WatchHeading": "オンデマンドでご覧ください",
   "WatchText": "ウェビナーを見逃しましたか? いつでもリプレイをご覧ください。",
   "WatchNow": "今すぐチェックする",

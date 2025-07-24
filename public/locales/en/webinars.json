@@ -30,6 +30,8 @@
   "ModalSendButton": "Watch webinar",
   "ModalCloseButton": "Cancel",
 
+  "RequestSuccessfull": "You’ve successfully registered for ONLYOFFICE webinar. <br> Link to the webinar has been sent to your email address.",
+
   "WatchHeading": "Watch on-demand",
   "WatchText": "Missed a webinar? Watch a replay at any time.",
   "WatchNow": "Watch now",

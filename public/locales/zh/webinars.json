@@ -30,6 +30,8 @@
   "ModalSendButton": "观看网络研讨会",
   "ModalCloseButton": "取消",
 
+  "RequestSuccessfull": "您已成功注册ONLYOFFICE网络研讨会。 <br> 网络研讨会链接已发送至您的邮箱。",
+
   "WatchHeading": "点播观看",
   "WatchText": "错过了一场研讨会？随时观看重放。",
   "WatchNow": "立即观看",
