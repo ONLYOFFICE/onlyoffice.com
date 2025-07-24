@@ -18,6 +18,7 @@ interface IFormData {
   companyName: string;
   email: string;
   textArea: string;
+  hCaptcha: string | null,
 }
 
 interface ICheckStatus {
@@ -25,6 +26,7 @@ interface ICheckStatus {
   companyName: "default" | "success" | "error";
   email: "default" | "success" | "error";
   textArea: "default" | "success" | undefined;
+  hCaptcha: "default" | "success" | undefined;
 }
 
 interface IWebinar {

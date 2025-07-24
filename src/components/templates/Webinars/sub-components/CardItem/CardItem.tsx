@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
@@ -6,8 +6,11 @@ import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
 import { TextArea } from "@src/components/ui/TextArea";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
+import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { validateFullName, validateEmail } from "@src/utils/validators";
+import { getFromParam } from "@src/utils/getParams";
 import { ImageChecker } from "../ImageChecker";
+import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { ICardItemProps, IFormData, ICheckStatus } from "../../Webinars.types";
 
 import {
@@ -49,12 +52,15 @@ const CardItem = ({
  }: ICardItemProps) => {
   const { t } = useTranslation("webinars");
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [status, setStatus] = useState<ILoaderButton["status"]>("default");
+  const refHCaptcha = useRef<ReactCaptcha  | null>(null);
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
     companyName: "",
     email: "",
     textArea: "",
+    hCaptcha: null,
   });
 
   const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
@@ -62,6 +68,7 @@ const CardItem = ({
     companyName: "default",
     email: "default",
     textArea: "default",
+    hCaptcha: "default",
   });
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -125,6 +132,71 @@ const CardItem = ({
         ...prev,
         textArea: "default",
       }));
+    }
+  }
+
+  const handleHCaptchaChange = (token: string | null) => {
+    setFormData({
+      ...formData,
+      hCaptcha: token,
+    })
+  }
+
+  const clearData = () => {
+    setFormData({
+      fullName: "",
+      companyName: "",
+      email: "",
+      textArea: "",
+      hCaptcha: null,
+    })
+    setCheckStatus({
+      fullName: "default",
+      companyName: "default",
+      email: "default",
+      textArea: "default",
+      hCaptcha: "default",
+    })
+    refHCaptcha.current?.resetCaptcha();
+  }
+
+  const handleSubmit = async () => {
+    if (status === "loading") return;
+    if (status === "success") {
+      setStatus("default");
+      clearData();
+      return;
+    }
+    if (status === "error") {
+      setStatus("default");
+      clearData();
+      return;
+    }
+
+    const from = getFromParam();
+    try {
+      setStatus("loading");
+      const response = await fetch("/api/webinars", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          email: formData.email,
+          companyName: formData.companyName,
+          webinarTheme: title,
+          webinarDate: dateWithHours,
+          questions: formData.textArea,
+          lang: language,
+          from,
+        }),
+      });
+      const webinarsResponseData = await response.json();
+      setStatus(webinarsResponseData.status);
+    } catch (error) {
+      setStatus("error");
+      console.error(error);
     }
   }
 
@@ -271,7 +343,11 @@ const CardItem = ({
                 />
               </StyledCardItemModalInputWrapper>
               <StyledCardItemModalPlease size={4} label={t("UpcomingModalPlease")} />
-              <HCaptcha />
+              <HCaptcha
+                ref={refHCaptcha}
+                onVerify={handleHCaptchaChange}
+                onExpire={() => handleHCaptchaChange(null)}
+              />
               <StyledCardItemModalAgreement size={4}>
                 <Trans
                   t={t}
@@ -297,18 +373,16 @@ const CardItem = ({
                 />
               </StyledCardItemModalAgreement>
               <StyledCardItemModalButtons>
-                <Button
+                <LoaderButton
                   label={t("ModalSendButton")}
-                  type="submit"
-                  borderRadius="3px"
                   disabled={
-                    checkStatus.fullName === "error" ||
-                    checkStatus.companyName === "error" ||
-                    checkStatus.email === "error" ||
-                    checkStatus.fullName === "default" ||
-                    checkStatus.companyName === "default" ||
-                    checkStatus.email === "default"
+                    checkStatus.fullName !== "success" ||
+                    checkStatus.companyName !== "success" ||
+                    checkStatus.email !== "success" ||
+                    formData.hCaptcha === null
                   }
+                  status={status}
+                  onClick={handleSubmit}
                 />
                 <Button
                   label={t("ModalCloseButton")}
