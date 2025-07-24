@@ -17,13 +17,13 @@
   "UpcomingModalSendQuestions": "Odešlete otázky na webinář",
   "UpcomingModalPlaceholderName": "Jméno Příjmení",
 
-  "FullNameIsIncorrect": "Celé jméno je nesprávné",
+  "FullNameIsIncorrect": "Nesprávný pole pro celé jméno",
   "FullNameIsEmpty": "Pole pro celé jméno je prázdné",
 
   "CompanyNameIsEmpty": "Pole pro název firmy je prázdné",
 
-  "EmailIsEmpty": "Pole pro e-mail je prázdné.",
-  "EmailIsIncorrect": "E-mail je nesprávný",
+  "EmailIsEmpty": "Pole pro e-mail je prázdné",
+  "EmailIsIncorrect": "Nesprávný e-mail",
 
   "AgreementByClicking": "Kliknutím na Sledovat webinář potvrzujete porozumění a souhlas s naší <0>smlouvou SLA</0> a <1>Prohlášením o ochraně osobních údajů</1>.",
 

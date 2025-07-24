@@ -22,8 +22,8 @@
 
   "CompanyNameIsEmpty": "Bedrijfsnaam is leeg",
 
-  "EmailIsEmpty": "E-mail is leeg.",
-  "EmailIsIncorrect": "Foutief e-mailadres",
+  "EmailIsEmpty": "E-mail is leeg",
+  "EmailIsIncorrect": "E-mailadres is onjuist",
 
   "AgreementByClicking": "Door op Bekijk webinar te klikken, begrijpt u en gaat u akkoord met onze <0>SLA</0> en <1>Privacyverklaring</1>.",
 

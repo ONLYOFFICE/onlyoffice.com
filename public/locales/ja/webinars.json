@@ -22,8 +22,8 @@
 
   "CompanyNameIsEmpty": "会社名が入力されていません",
 
-  "EmailIsEmpty": "メールアドレスが入力されていません。",
-  "EmailIsIncorrect": "メールアドレスが正しくありません",
+  "EmailIsEmpty": "メールが入力されていません",
+  "EmailIsIncorrect": "メールが正しくありません",
 
   "AgreementByClicking": "[ウェビナーを見る]をクリックすると、<0>当社のサービス水準合意</0>および <1>個人情報保護方針</1>を理解し、同意したことになります。",
 

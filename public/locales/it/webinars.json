@@ -17,13 +17,13 @@
   "UpcomingModalSendQuestions": "Invia domande per il webinar",
   "UpcomingModalPlaceholderName": "Nome Cognome",
 
-  "FullNameIsIncorrect": "Il nome completo non è corretto",
+  "FullNameIsIncorrect": "Il Nome completo è sbagliato",
   "FullNameIsEmpty": "Il Nome completo è vuoto",
 
   "CompanyNameIsEmpty": "Il Nome dell’azienda è vuoto",
 
-  "EmailIsEmpty": "Email è vuota.",
-  "EmailIsIncorrect": "L'email non è corretta",
+  "EmailIsEmpty": "Email è vuoto",
+  "EmailIsIncorrect": "Email è sbagliato",
 
   "AgreementByClicking": "Facendo clic su Guarda webinar, comprendi e accetti le nostre <0>dichiarazioni SLA</0> e <1>sulla privacy</1>.",
 

@@ -17,13 +17,13 @@
   "UpcomingModalSendQuestions": "发送在线研讨问题",
   "UpcomingModalPlaceholderName": "名姓",
 
-  "FullNameIsIncorrect": "全名不正确",
+  "FullNameIsIncorrect": "全名错误",
   "FullNameIsEmpty": "全名为空",
 
   "CompanyNameIsEmpty": "公司名称为空",
 
-  "EmailIsEmpty": "电子邮箱为空。",
-  "EmailIsIncorrect": "电子邮箱格式不正确",
+  "EmailIsEmpty": "电子邮箱为空",
+  "EmailIsIncorrect": "电子邮箱错误",
 
   "AgreementByClicking": "点击“观看网络研讨会”即表示您了解并同意我们的<0>SLA</0>以及<1>隐私声明</1>。",
 

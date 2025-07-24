@@ -17,13 +17,13 @@
   "UpcomingModalSendQuestions": "Вопросы по вебинару",
   "UpcomingModalPlaceholderName": "Имя Фамилия",
 
-  "FullNameIsIncorrect": "Полное имя указано неверно",
+  "FullNameIsIncorrect": "Некорректное поле Полное имя",
   "FullNameIsEmpty": "Полное имя не указано",
 
   "CompanyNameIsEmpty": "Название компании не указано",
 
-  "EmailIsEmpty": "Email не указан",
-  "EmailIsIncorrect": "Неверный формат email",
+  "EmailIsEmpty": "Поле Email не заполнено",
+  "EmailIsIncorrect": "Неверный Email",
 
   "AgreementByClicking": "Нажав кнопку Смотреть вебинар, вы принимаете наше <0>Соглашение об уровне обслуживания</0> и <1>Положение о конфиденциальности</1>.",
 

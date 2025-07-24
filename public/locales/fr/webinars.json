@@ -17,13 +17,13 @@
   "UpcomingModalSendQuestions": "Envoyer des questions pour le webinaire",
   "UpcomingModalPlaceholderName": "Nom Prénom",
 
-  "FullNameIsIncorrect": "Nom complet est incorrect",
+  "FullNameIsIncorrect": "Le champ Nom complet est incorrecte",
   "FullNameIsEmpty": "Le champ Nom complet est vide",
 
   "CompanyNameIsEmpty": "Le champ Entreprise est vide",
 
-  "EmailIsEmpty": "Le champ Courrier électronique est vide",
-  "EmailIsIncorrect": "Courrier électronique est incorrect",
+  "EmailIsEmpty": "Le champ Email est vide",
+  "EmailIsIncorrect": "L'adresse email est incorrecte",
 
   "AgreementByClicking": "En cliquant Visionner le webinaire, vous reconnaissez et acceptez le <0>SLA</0> et la <1>Politique de confidentialité</1>.",
 
