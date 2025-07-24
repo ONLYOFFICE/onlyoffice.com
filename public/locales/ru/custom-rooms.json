@@ -1,0 +1,45 @@
+{
+  "PageTitle": "Работайте над задачами вместе в пользовательских комнатах",
+  "PageDescription": "Редактируйте документы и работайте совместно в ONLYOFFICE DocSpace. Настройка доступа к комнатам с помощью гибких прав",
+
+  "WorkTogetherAccording": "Работайте над задачами вместе в <0>пользовательских комнатах</0>",
+  "EditAndCollaborate": "Редактируйте документы и работайте совместно в ONLYOFFICE DocSpace",
+  "CreateFreeAccount": "Зарегистрировать бесплатную учетную запись",
+
+  "HeroImgUrl": "/images/templates/custom-rooms/hero/ru/header_main.png",
+  "HeroImgUrl2x": "/images/templates/custom-rooms/hero/ru/header_main@2x.png",
+
+  "Tailored": "Адаптация к любому сценарию",
+  "Sophisticated": "Расширенные настройки доступа",
+  "CostEfectiveForAnyBudget": "Экономическая эффективность для любого бюджета",
+
+  "TailoredDesc": "Применяйте собственные настройки, чтобы использовать комнаты для любых пользовательских задач: предоставлять доступ к контенту только для просмотра, запрашивать редактирование, рецензирование, комментарии к документам или заполнение форм.",
+  "TailoredImgUrl": "/images/templates/custom-rooms/features/ru/tailored_to_any_scenario.png",
+  "TailoredImgUrl2x": "/images/templates/custom-rooms/features/ru/tailored_to_any_scenario@2x.png",
+
+  "SophisticatedDesc": "Настройка доступа к комнатам с помощью гибких прав",
+  "WatchAVideoToLearnMore": "Посмотреть видео, чтобы узнать больше",
+  "SophisticatedImgUrl": "/images/templates/custom-rooms/features/ru/sophisticated-access-settings.png",
+  "SophisticatedImgUrl2x": "/images/templates/custom-rooms/features/ru/sophisticated-access-settings@2x.png",
+
+  "CostEfectiveForAnyBudgetDesc": "Платите только за администраторов и добавляйте любое количество обычных пользователей и гостей бесплатно. Воспользуйтесь бесплатным тарифным планом Startup для небольших команд. ONLYOFFICE DocSpace подойдет как для малых и средних компаний, так и для крупных предприятий. Нужен полный контроль над корпоративными данными? Разверните DocSpace на собственном сервере.",
+  "CostEfectiveForAnyBudgetImgUrl": "/images/templates/custom-rooms/features/ru/cost-effective-for-any-budget.png",
+  "CostEfectiveForAnyBudgetImgUrl2x": "/images/templates/custom-rooms/features/ru/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Узнать больше о пользовательских комнатах DocSpace",
+
+  "HelpCenter": "Справочный центр",
+  "HelpCenterDesc": "Ознакомьтесь с подробными руководствами пользователя для более эффективной работы",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "Узнать больше",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Изучите ONLYOFFICE DocSpace еще лучше с помощью видеоинструкций",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Посмотреть сейчас",
+
+  "CustomerTestimonial": "Отзывы клиентов",
+  "HowKinderhausBerlinSharesAndCollaborates": "Как Дом ребенка в Берлине организует совместную работу и предоставление доступа к конфиденциальным файлам с помощью ONLYOFFICE DocSpace",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Читать историю"
+}

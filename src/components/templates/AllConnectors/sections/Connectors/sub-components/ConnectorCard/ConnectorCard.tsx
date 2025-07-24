@@ -97,9 +97,9 @@ const ConnectorCard = ({
           <div>
             {t("Price")}{" "}
             {isPaid ? (
-              <Text as="span" label={t("Paid")} textTransform="uppercase" />
+              <Text as="span" color="main" label={t("Paid")} textTransform="uppercase" />
             ) : (
-              <Text as="span" label={t("Free")} textTransform="uppercase" />
+              <Text as="span" color="main" label={t("Free")} textTransform="uppercase" />
             )}
           </div>
         </StyledConnectorCardInfo>

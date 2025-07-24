@@ -1,0 +1,45 @@
+{
+  "PageTitle": "カスタムルームで目的に合わせて共同作業",
+  "PageDescription": "ONLYOFFICE DocSpaceで思いのままに編集・コラボレーションする",
+
+  "WorkTogetherAccording": "<0>カスタムルーム</0>で目的に合わせて共同作業",
+  "EditAndCollaborate": "ONLYOFFICE DocSpaceで思いのままに編集・コラボレーションする",
+  "CreateFreeAccount": "無料アカウントを登録",
+
+  "HeroImgUrl": "/images/templates/custom-rooms/hero/custom-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/custom-rooms/hero/custom-rooms-header@2x.png",
+
+  "Tailored": "あらゆるシナリオに対応",
+  "Sophisticated": "柔軟なアクセス設定",
+  "CostEfectiveForAnyBudget": "どのような予算にも対応できる費用対効果",
+
+  "TailoredDesc": "独自の設定を適用することで、閲覧のみのコンテンツ共有、ドキュメントの編集やレビューのリクエスト、共同作業者からのコメントやフォーム入力のリクエストなど、任意のカスタム目的にルームを使用できる。",
+  "TailoredImgUrl": "/images/templates/custom-rooms/features/tailored-to-any-scenario.png",
+  "TailoredImgUrl2x": "/images/templates/custom-rooms/features/tailored-to-any-scenario@2x.png",
+
+  "SophisticatedDesc": "幅広い柔軟なアクセス許可で、ルームへのアクセスを微調整できる",
+  "WatchAVideoToLearnMore": "詳しくはこちらの動画をご覧ください",
+  "SophisticatedImgUrl": "/images/templates/custom-rooms/features/sophisticate-access-settings.png",
+  "SophisticatedImgUrl2x": "/images/templates/custom-rooms/features/sophisticate-access-settings@2x.png",
+
+  "CostEfectiveForAnyBudgetDesc": "管理者のみ有料で、通常のユーザーとゲストは無料で何人でも追加できます。小規模チーム向けの無料STARTUPプランも利用可能。ONLYOFFICE DocSpaceは、中小企業でも大企業でも、すべてのビジネスに適している。企業データを完全に管理したいとお考えの方には、自社のサーバーにDocSpaceをインストールすることも可能。",
+  "CostEfectiveForAnyBudgetImgUrl": "/images/templates/custom-rooms/features/cost-effective-for-any-budget.png",
+  "CostEfectiveForAnyBudgetImgUrl2x": "/images/templates/custom-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "DocSpaceのカスタムルームについてさらに詳しく",
+
+  "HelpCenter": "ヘルプセンター",
+  "HelpCenterDesc": "効果的な作業のための詳細なユーザーガイドをチェック",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "詳しくはこちら",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "ビデオガイドでONLYOFFICE DocSpaceを使いこなす",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "今すぐ見る",
+
+  "CustomerTestimonial": "お客様のサクセスストーリー",
+  "HowKinderhausBerlinSharesAndCollaborates": "Kinderhaus BerlinがONLYOFFICE DocSpaceで機密ファイルを共有し、共同作業する方法",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "ストーリーを読む"
+}

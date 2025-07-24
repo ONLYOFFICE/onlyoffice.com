@@ -1,0 +1,45 @@
+{
+  "PageTitle": "Arbeiten Sie gemeinsam nach Ihren Zielen in benutzerdefinierten Räumen",
+  "PageDescription": "Bearbeiten Sie Dateien auf Ihre Weise in ONLYOFFICE DocSpace",
+
+  "WorkTogetherAccording": "Arbeiten Sie gemeinsam nach Ihren Zielen in <0>benutzerdefinierten Räumen</0>",
+  "EditAndCollaborate": "Bearbeiten Sie Dateien auf Ihre Weise in ONLYOFFICE DocSpace",
+  "CreateFreeAccount": "Kostenloses Konto registrieren",
+
+  "HeroImgUrl": "/images/templates/custom-rooms/hero/de/header_main.png",
+  "HeroImgUrl2x": "/images/templates/custom-rooms/hero/de/header_main@2x.png",
+
+  "Tailored": "Auf jedes Szenario zugeschnitten",
+  "Sophisticated": "Ausgefeilte Zugriffseinstellungen",
+  "CostEfectiveForAnyBudget": "Kosteneffektiv für jedes Budget",
+
+  "TailoredDesc": "Wenden Sie Ihre eigenen Einstellungen an, um einen benutzerdefinierten Raum für jeden beliebigen Zweck zu nutzen: Geben Sie Inhalte nur zur Ansicht frei, fordern Sie die Bearbeitung oder Überprüfung von Dokumenten an, bitten Sie um Kommentare von Mitarbeitern oder füllen Sie Formulare aus.",
+  "TailoredImgUrl": "/images/templates/custom-rooms/features/de/tailored_to_any_scenario.png",
+  "TailoredImgUrl2x": "/images/templates/custom-rooms/features/de/tailored_to_any_scenario@2x.png",
+
+  "SophisticatedDesc": "Optimieren Sie den Raumzugang mit einer Vielzahl flexibler Berechtigungen",
+  "WatchAVideoToLearnMore": "Sehen Sie sich ein Video an, um mehr zu erfahren",
+  "SophisticatedImgUrl": "/images/templates/custom-rooms/features/de/sophisticated-access-settings.png",
+  "SophisticatedImgUrl2x": "/images/templates/custom-rooms/features/de/sophisticated-access-settings@2x.png",
+
+  "CostEfectiveForAnyBudgetDesc": "Bezahlen Sie nur für Administratoren und fügen Sie eine beliebige Anzahl von regelmäßigen Nutzern und Gästen kostenlos hinzu. Profitieren Sie von einem kostenlosen Startup-Plan für kleine Teams. ONLYOFFICE DocSpace ist für alle Unternehmen geeignet, egal ob es sich um ein KMU oder ein großes Unternehmen handelt. Möchten Sie die volle Kontrolle über Ihre Unternehmensdaten haben? Installieren Sie DocSpace auf Ihrem privaten Server.",
+  "CostEfectiveForAnyBudgetImgUrl": "/images/templates/custom-rooms/features/de/cost-effective-for-any-budget.png",
+  "CostEfectiveForAnyBudgetImgUrl2x": "/images/templates/custom-rooms/features/de/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Erfahren Sie mehr über benutzerdefinierte Räume von DocSpace",
+
+  "HelpCenter": "Hilfe-Center",
+  "HelpCenterDesc": "Prüfen Sie die Benutzeranleitungen für effektives Arbeiten",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "Mehr erfahren",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Beherrschen Sie ONLYOFFICE DocSpace mit Videoanleitungen",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Jetzt ansehen",
+
+  "CustomerTestimonial": "Erfahrungsbericht",
+  "HowKinderhausBerlinSharesAndCollaborates": "Wie das Kinderhaus Berlin mit ONLYOFFICE DocSpace schützenswerte Dateien teilt und gemeinsam bearbeitet",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Bericht lesen"
+}
