@@ -20,7 +20,7 @@ const DeveloperEditionPage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale}/>
+        <Header locale={locale} theme="white" highlight={{buttonId: "oo-menu-item-btn-developers", linkId: "oo-menu-link-why-docs-developer"}}/>
       </Layout.Header>
       <Layout.Main>
         <DeveloperEditionTemplate />
