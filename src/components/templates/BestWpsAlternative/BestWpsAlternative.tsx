@@ -14,7 +14,7 @@ const BestWpsAlternativeTemplate = () => {
       <Presentation />
       <Compatibility />
       <BestAlternativeCompare alternative="WPS Office" />
-      <GetStarted />
+      <GetStarted background="linear-gradient(180deg, #F8F9F9 43.75%, rgba(248, 249, 249, 0) 100%), #FFFFFF" />
     </StyledBestWpsAlternativeTemplate>
   );
 };
