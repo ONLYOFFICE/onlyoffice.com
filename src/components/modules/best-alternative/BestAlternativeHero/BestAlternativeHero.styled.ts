@@ -23,7 +23,6 @@ const StyledHeroSection = styled(Section)`
     }
 
     @media ${device.mobile} {
-      /* left: 51%; */
       transform: skew(-6deg, 0deg);
     }
   }
@@ -121,11 +120,13 @@ const StyledHeroComparisonItem = styled.img<{
     @media ${device.tabletS} {
       width: 166px;
       height: 40px;
+      margin-right: 55px;
     }
 
     @media ${device.mobile} {
       width: 116px;
       height: 28px;
+      margin-right: 0;
     }
   `}
 
@@ -142,15 +143,13 @@ const StyledHeroComparisonItem = styled.img<{
     }
   `}
 
-${({ $type }) =>
+  ${({ $type }) =>
     $type === "hancom" &&
     `
-    margin-right: auto;
-
     @media ${device.tabletS} {
       width: 173px;
       height: 42px;
-      margin-right: 29px;
+      margin-right: 40px;
     }
 
     @media ${device.mobile} {
@@ -177,9 +176,14 @@ ${({ $type }) =>
   ${({ $type }) =>
     $type === "microsoft-office" &&
     `
+    @media ${device.tabletS} {
+      margin-right: 75px;
+    }
+
     @media ${device.mobile} {
       width: 113px;
       height: 36px;
+      margin-right: 0;
     }
   `}
 
@@ -189,23 +193,23 @@ ${({ $type }) =>
      @media ${device.tabletS} {
       width: 168px;
       height: 40px;
+      margin-right: 45px;
     }
 
     @media ${device.mobile} {
       width: 135px;
       height: 32px;
+      margin-right: 0;
     }
   `}
 
   ${({ $type }) =>
     $type === "zoho" &&
     `
-    margin-right: auto;
-
     @media ${device.tabletS} {
       width: 117px;
       height: 40px;
-      margin-right: 69px;
+      margin-right: 95px;
     }
 
     @media ${device.mobile} {

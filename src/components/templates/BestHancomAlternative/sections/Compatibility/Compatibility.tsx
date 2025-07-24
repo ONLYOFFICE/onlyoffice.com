@@ -21,7 +21,7 @@ const Compatibility = () => {
           i18nKey="WhatWentWrong"
           components={[
             <Link
-              href={`${process.env.NEXT_PUBLIC_SITE_URL}/images/templates/best-hancom-alternative/compatibility/pdf/zoho.pdf`}
+              href={`${process.env.NEXT_PUBLIC_SITE_URL}/images/templates/best-hancom-alternative/compatibility/pdf/hancom.pdf`}
               color="main"
               target="_blank"
               textUnderline
