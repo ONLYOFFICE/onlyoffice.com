@@ -2,9 +2,9 @@
   "GetStartedAndChooseWhereToWork": "Get started and choose where to work",
   "InOODocSpace": "In ONLYOFFICE DocSpace",
   "CreateRoomsWithinYourSecureDocSpace": "Create rooms within your secure DocSpace, invite people, view, edit, and collaborate on all kinds of documents from any desktop or mobile device.",
-  "StartWithFreeAccount": "Start with your free account",
+  "StartWithYourFreeAccount": "Start with your free account",
   "InThePlatformYouUse": "In the platform you use",
-  "ConnectDocsToYourPlatform": "Connect Docs to your platform with dozens of ready connectors: Moodle, Nextcloud, Odoo, Wordpress, and others and edit docs directly from the app.",
+  "ConnectDocsToEditDocuments": "Connect Docs to your platform with dozens of ready connectors: Moodle, Nextcloud, Odoo, Wordpress, and others and edit docs directly from the app.",
   "GetDocsNow": "Get Docs now",
   "InThePlatformYouBuild": "In the platform you build",
   "IntegrateDocsIntoYourService": "Integrate Docs into your service to provide powerful document-editing and building capabilities to your customers under your brand.",
@@ -12,7 +12,7 @@
   "FromYourPC": "From your PC",
   "EditDocsOfflineWithFreeOfficeApps": "Edit docs offline with free office apps for Windows, Linux, and macOS",
   "DownloadNow": "Download nu",
-  "FromYourMobDevices": "From your mobile devices",
-  "WorkOnDocumentsWithFreeApps": "Work on documents on the go with free apps for iOS and Android devices",
+  "FromYourMobileDevices": "From your mobile devices",
+  "WorkOnDocumentsOnTheGoWithFreeApps": "Work on documents on the go with free apps for iOS and Android devices",
   "InstallNow": "Installeer nu"
 }

@@ -2,9 +2,9 @@
   "GetStartedAndChooseWhereToWork": "开始并选择工作地点",
   "InOODocSpace": "在 ONLYOFFICE 协作空间",
   "CreateRoomsWithinYourSecureDocSpace": "在协作空间中安全地创建房间，邀请他人，从任何桌面或移动设备查看、编辑和协作处理各种文档。",
-  "StartWithFreeAccount": "立即创建免费账户开始",
+  "StartWithYourFreeAccount": "立即创建免费账户开始",
   "InThePlatformYouUse": "在您使用的平台",
-  "ConnectDocsToYourPlatform": "连接 ONLYOFFICE 文档，直接从您的应用程序编辑文档。 <0>40 多个现成集成</0>：Box、Moodle、Nextcloud、Odoo、Wordpress 等。",
+  "ConnectDocsToEditDocuments": "连接 ONLYOFFICE 文档，直接从您的应用程序编辑文档。 <0>40 多个现成集成</0>：Box、Moodle、Nextcloud、Odoo、Wordpress 等。",
   "GetDocsNow": "立即获取文档",
   "InThePlatformYouBuild": "在您创建的平台",
   "IntegrateDocsIntoYourService": "将 ONLYOFFICE 文档集成到您的服务中，使用您的品牌为客户提供强大的文档编辑和创建功能。",
@@ -12,7 +12,7 @@
   "FromYourPC": "在您的电脑",
   "EditDocsOfflineWithFreeOfficeApps": "使用 Windows、Linux 和 MacOS 的免费办公应用程序，离线编辑文档",
   "DownloadNow": "立即下载",
-  "FromYourMobDevices": "在您的移动设备",
-  "WorkOnDocumentsWithFreeApps": "使用适用于 iOS 和 Android 设备的免费应用程序，在旅途中处理文档",
+  "FromYourMobileDevices": "在您的移动设备",
+  "WorkOnDocumentsOnTheGoWithFreeApps": "使用适用于 iOS 和 Android 设备的免费应用程序，在旅途中处理文档",
   "InstallNow": "立即安装"
 }

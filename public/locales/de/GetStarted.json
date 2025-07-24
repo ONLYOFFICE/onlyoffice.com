@@ -2,9 +2,9 @@
   "GetStartedAndChooseWhereToWork": "Starten Sie jetzt und wählen Sie Ihre Arbeitsumgebung aus",
   "InOODocSpace": "In ONLYOFFICE DocSpace",
   "CreateRoomsWithinYourSecureDocSpace": "Erstellen Sie Räume in Ihrem sicheren DocSpace, laden Sie andere Personen ein, schauen Sie sich alle Arten von Dokumenten an, bearbeiten Sie diese und arbeiten Sie gemeinsam daran - von jedem Desktop oder mobilen Gerät aus.",
-  "StartWithFreeAccount": "Beginnen Sie mit Ihrem kostenlosen Konto",
+  "StartWithYourFreeAccount": "Beginnen Sie mit Ihrem kostenlosen Konto",
   "InThePlatformYouUse": "Auf der Plattform, die Sie verwenden",
-  "ConnectDocsToYourPlatform": "Verbinden Sie Docs, um Dokumente direkt von Ihrer App aus zu bearbeiten. <0>40+ vorhandene Integrationen</0>: Box, Moodle, Nextcloud, Odoo, Wordpress, etc.",
+  "ConnectDocsToEditDocuments": "Verbinden Sie Docs, um Dokumente direkt von Ihrer App aus zu bearbeiten. <0>40+ vorhandene Integrationen</0>: Box, Moodle, Nextcloud, Odoo, Wordpress, etc.",
   "GetDocsNow": "Erhalten Sie Docs heute!",
   "InThePlatformYouBuild": "Auf der Plattform, die Sie entwickeln",
   "IntegrateDocsIntoYourService": "Integrieren Sie Docs in Ihren Service, um Ihren Kunden unter Ihrer Marke leistungsstarke Funktionen zur Bearbeitung und Erstellung von Dokumenten anzubieten.",
@@ -12,7 +12,7 @@
   "FromYourPC": "Auf Ihrem Computer",
   "EditDocsOfflineWithFreeOfficeApps": "Dokumente offline bearbeiten mit kostenlosen Office-Apps für Windows, Linux und macOS",
   "DownloadNow": "Jetzt herunterladen",
-  "FromYourMobDevices": "Von Ihren mobilen Geräten aus",
-  "WorkOnDocumentsWithFreeApps": "Arbeiten Sie unterwegs an Dokumenten mit kostenlosen Apps für iOS- und Android-Geräte",
+  "FromYourMobileDevices": "Von Ihren mobilen Geräten aus",
+  "WorkOnDocumentsOnTheGoWithFreeApps": "Arbeiten Sie unterwegs an Dokumenten mit kostenlosen Apps für iOS- und Android-Geräte",
   "InstallNow": "Jetzt installieren"
 }
