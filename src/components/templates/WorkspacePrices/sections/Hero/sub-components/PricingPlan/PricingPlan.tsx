@@ -28,6 +28,7 @@ const PricingPlan = ({
   firstResponseTime,
   supportList,
   casesList,
+  planKey,
 }: IPricingPlan) => {
   const { t } = useTranslation("workspace-prices");
   const currency = getCurrencyByLocale(locale);
@@ -65,6 +66,7 @@ const PricingPlan = ({
 
         {numberOfUsers === "more" ? (
           <StyledPricingPlanBtn
+            data-testid={`${planKey}-get-a-quote-button`}
             forwardedAs="a"
             href="mailto:sales@onlyoffice.com?subject=More%20connections%20for%20Enterprise%20Edition"
             variant="secondary"
@@ -72,6 +74,7 @@ const PricingPlan = ({
           />
         ) : (
           <StyledPricingPlanBtn
+            data-testid={`${planKey}-buy-now-button`}
             forwardedAs="a"
             target="_blank"
             href={url}

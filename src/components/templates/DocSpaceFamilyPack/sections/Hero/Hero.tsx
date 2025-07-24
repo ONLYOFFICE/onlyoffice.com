@@ -133,6 +133,7 @@ const Hero = ({ locale, productsData }: IDocSpaceFamilyPackTemplate) => {
             </StyledHeroTotal>
 
             <Button
+              data-testid="buy-now-button"
               as="a"
               href={productsData.basic.url}
               target="_blank"

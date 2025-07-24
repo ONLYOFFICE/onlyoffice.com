@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Bot ONLYOFFICE pour Telegram",
+  "PageDescription": "Ouvrez, créez, convertissez, modifiez et coéditez des documents Office dans Telegram",
+
+  "OnlineOfficeForTelegram": "Bot ONLYOFFICE pour Telegram",
+  "OpenCreateConvertEdit": "Ouvrez, créez, convertissez, modifiez et coéditez des documents Office dans Telegram",
+  "StartNow": "Commencez maintenant. C'est gratuit",
+  "HeroImgUrl": "/images/templates/office-for-telegram/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-telegram/hero/fr/hero@2x.png",
+
+  "DocumentsTab1Label": "Créez de nouveaux documents DOCX, XLSX et PPTX ; ouvrez les documents locaux",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-telegram/documents/fr/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-telegram/documents/fr/screen1@2x.png",
+  "DocumentsTab2Label": "Modifiez vos documents Office et collaborez avec d'autres utilisateurs de Telegram",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-telegram/documents/fr/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-telegram/documents/fr/screen2@2x.png",
+  "DocumentsTab3Label": "Lisez et éditez des PDF, exportez/importez vers/depuis des PDF",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-telegram/documents/fr/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-telegram/documents/fr/screen3@2x.png",
+  "DocumentsTab4Label": "Convertissez facilement des documents en ligne. Plus de 50 formats sont pris en charge",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-telegram/documents/fr/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-telegram/documents/fr/screen4@2x.png",
+  "DocumentsTab5Label": "Assistance par chat en groupe disponible !",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-telegram/documents/fr/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-telegram/documents/fr/screen5@2x.png",
+
+  "WhyOO": "Pourquoi ONLYOFFICE ?",
+  "FeaturesAIHelper": "Ensemble robuste d'outils d'édition, de mise en forme et de style. Sécurité renforcée.",
+  "FeaturesCoEditing": "Coédition <0>en temps réel</0> et <0>verrouillage des paragraphes</0>, révision, historique des versions, comparaison des documents, commentaires et mentions.",
+  "FeaturesFormats": "Prise en charge de plus de <0>50 formats de fichiers</0>. Entièrement compatible avec les formats MS Office : DOCX, XLSX, PPTX."
+}
