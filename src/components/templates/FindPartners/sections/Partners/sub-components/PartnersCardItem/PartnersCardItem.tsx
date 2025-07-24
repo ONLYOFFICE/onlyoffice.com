@@ -1,10 +1,10 @@
 import { memo } from "react";
 import { Trans } from "next-i18next";
+import { PartnersCardImageChecker } from "../PartnersCardImageChecker";
 import { IPartnerCardProps } from "@src/components/templates/FindPartners/FindPartners.types";
 
 import {
   StyledPartnersCardItem,
-  StyledPartnersCardItemImg,
   StyledPartnersCardItemLeft,
   StyledPartnersCardItemRight,
   StyledPartnersCardItemHead,
@@ -25,10 +25,9 @@ const PartnersCardItemComponent = ({ item, isItemOpen, onToggleCard, t }: IPartn
       onClick={() => onToggleCard(item.id)}
     >
       <StyledPartnersCardItemLeft>
-        <StyledPartnersCardItemImg $imgUrl={
-          item.logo && item.logo.length > 1
-            ? item.logo && item?.logo[1]?.url
-            : item.logo && item?.logo[0]?.url} />
+        {item.logo && item.logo.map((link, index) => (
+          <PartnersCardImageChecker key={link.url + index} url={link.url} />
+        ))}
       </StyledPartnersCardItemLeft>
       <StyledPartnersCardItemRight>
         <StyledPartnersCardItemHead>
