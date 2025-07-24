@@ -1,0 +1,25 @@
+{
+  "PageTitle": "Share PowerPoint online | ONLYOFFICE",
+  "PageDescription": "Share PowerPoint presentations with advanced permissions using ONLYOFFICE. Collaborate with your colleagues. Share presentation with Comment Rights.",
+  "Header": "Create together",
+  "SubHeader": "Share your slides and edit presentations collaboratively",
+
+  "HeroImgUrl": "/images/templates/share-powerpoint-presentations/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/share-powerpoint-presentations/hero/hero@2x.png",
+
+  "Feature1Title": "Share",
+  "Feature1Desc": "Share PowerPoint presentations with advanced permissions. Give full access so your colleagues can collaborate with you, or give View Only permission to display the presentation. Share presentation with Comment Rights to allow commenting and feedback.",
+
+  "Feature2Title": "Collaborate",
+  "Feature2Desc": "Co-author slides in real time so others can see your changes in real time, or enable Strict mode so you can edit the presentation privately and avoid interruptions.",
+
+  "Feature3Title": "Communicate",
+  "Feature3Desc": "Add comments and discuss the collaborative process. Mention users in comments to invite them for a discussion and instantly share files with them. Communicate with your team in the built-in chat.",
+
+  "Feature1ImgUrl": "/images/templates/share-powerpoint-presentations/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/share-powerpoint-presentations/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/share-powerpoint-presentations/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/pic3@2x.png"
+}

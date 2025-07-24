@@ -1,0 +1,95 @@
+{
+  "PageTitle": "Kostenloses Office-Paket für Android | ONLYOFFICE Documents",
+  "PageDescription": "Bearbeiten und gemeinsam an Dokumenten, Tabellenkalkulationen und Präsentationen arbeiten. Füllen Sie Formulare auf Ihrem Android-Gerät aus.",
+
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, <0>kostenlose Office-App</0> für Android",
+
+  "HeroRightImageUrl": "/images/templates/office-for-android/hero/de/header.de.png",
+  "HeroRightImageUrl2x": "/images/templates/office-for-android/hero/de/header.de@2x.png",
+
+  "HeroLeftImageUrl": "/images/templates/office-for-android/hero/de/header-phone.de.png",
+  "HeroLeftImageUrl2x": "/images/templates/office-for-android/hero/de/header-phone.de@2x.png",
+
+  "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.de.png",
+  "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-de.svg",
+
+  "OneAppForYourText": "Eine App für Ihre Textdokumente, Tabellenkalkulationen, Präsentationen, Formulare und Mediendateien",
+  "CompatibleWithMSOffice": "100 % kompatibel mit MS Office-Formaten",
+
+  "AnOptionToConsider": "Eine Option, die Sie in Betracht ziehen sollten, wenn Sie Alternativen zu Office oder Google Docs suchen.",
+  "EliesGuzman": "Elies Guzmán",
+  "Malavida": "Malavida",
+
+  "FeaturesItemHeadingFull": "Dokumenteneditor",
+  "FeaturesItemTextMakeUse": "Arbeiten Sie mit Textdokumenten aller gängigen Formate. Formatieren Sie Ihren Text und legen Sie das Seitenlayout fest. Fügen Sie Links, Bilder und Diagramme ein. Drucken Sie Ihre Dokumente direkt aus der App.",
+  "FeaturesItemTablet1Bg": "/images/templates/office-for-android/features/de/img-tablet-1.png",
+  "FeaturesItemTablet1Bg2x": "/images/templates/office-for-android/features/de/img-tablet2x-1.png",
+  "FeaturesItemMobile1Bg": "/images/templates/office-for-android/features/de/img-mobile-1.png",
+  "FeaturesItemMobile1Bg2x": "/images/templates/office-for-android/features/de/img-mobile2x-1.png",
+
+  "FeaturesItemHeadingComplete": "Tabellenkalkulationseditor",
+  "FeaturesItemTextManage": "Erstellen, anzeigen und bearbeiten Sie Tabellenkalkulationen auf Ihrem Gerät. Arbeiten Sie mit Zeilen und Spalten, passen Sie Zellparameter an, verwenden Sie über 450 Formeln, sortieren und filtern Sie Daten.",
+  "FeaturesItemTablet2Bg": "/images/templates/office-for-android/features/de/img-tablet-2.png",
+  "FeaturesItemTablet2Bg2x": "/images/templates/office-for-android/features/de/img-tablet2x-2.png",
+  "FeaturesItemMobile2Bg": "/images/templates/office-for-android/features/de/img-mobile-2.png",
+  "FeaturesItemMobile2Bg2x": "/images/templates/office-for-android/features/de/img-mobile2x-2.png",
+
+  "FeaturesItemHeadingCollaborative": "Präsentationseditor",
+  "FeaturesItemTextMakeWork": "Erstellen und bearbeiten Sie aussagekräftige Präsentationen auf Android. Verwalten Sie Folien, fügen Sie Bilder ein, fügen Sie Formen, Diagramme und Grafiken, Texte und andere Elemente hinzu und bearbeiten Sie diese.",
+  "FeaturesItemTablet3Bg": "/images/templates/office-for-android/features/de/img-tablet-3.png",
+  "FeaturesItemTablet3Bg2x": "/images/templates/office-for-android/features/de/img-tablet2x-3.png",
+  "FeaturesItemMobile3Bg": "/images/templates/office-for-android/features/de/img-mobile-3.png",
+  "FeaturesItemMobile3Bg2x": "/images/templates/office-for-android/features/de/img-mobile2x-3.png",
+
+  "FeaturesItemHeadingOnline": "Formularausfüller",
+  "FeaturesItemTextMakeView": "Online-Formulare anzeigen und ausfüllen. Navigieren Sie einfach von Feld zu Feld. Speichern Sie das Ergebnis als PDF- oder DOCX-Datei.",
+  "FeaturesItemTablet4Bg": "/images/templates/office-for-android/features/de/img-tablet-4.png",
+  "FeaturesItemTablet4Bg2x": "/images/templates/office-for-android/features/de/img-tablet2x-4.png",
+  "FeaturesItemMobile4Bg": "/images/templates/office-for-android/features/de/img-mobile-4.png",
+  "FeaturesItemMobile4Bg2x": "/images/templates/office-for-android/features/de/img-mobile2x-4.png",
+
+  "FeaturesItemHeadingPDF": "PDF-Viewer & Mediaplayer",
+  "FeaturesItemTextMakeViewPDF": "Zeigen Sie PDF-, Foto- und Videodateien an. Sortieren, umbenennen, verschieben und kopieren Sie Dateien, erstellen Sie Ordner auf dem Gerät oder in der Cloud.",
+  "FeaturesItemTablet5Bg": "/images/templates/office-for-android/features/de/img-tablet-5.png",
+  "FeaturesItemTablet5Bg2x": "/images/templates/office-for-android/features/de/img-tablet2x-5.png",
+  "FeaturesItemMobile5Bg": "/images/templates/office-for-android/features/de/img-mobile-5.png",
+  "FeaturesItemMobile5Bg2x": "/images/templates/office-for-android/features/de/img-mobile2x-5.png",
+
+  "RealTimeCollaboration": "Echtzeit-Zusammenarbeit",
+  "BeMoreProductive": "Seien Sie produktiver. Verbinden Sie Ihre App mit der ONLYOFFICE Cloud. Teilen Sie Dokumente, um sie in Echtzeit mit Ihren Teamkollegen gemeinsam zu bearbeiten. Kommentieren Sie und verfolgen Sie Änderungen. Fügen Sie grafische Anmerkungen hinzu.",
+
+  "VideoCardHeading": "Entdecken Sie ONLYOFFICE Documents, ein solides mobiles Office-Paket",
+
+  "ChooseWhereToWork": "Wählen Sie, wo Sie arbeiten möchten",
+
+  "ChooseItemOnDevice": "Auf dem Gerät",
+  "ChooseItemViewAndEdit": "Textdokumente, Tabellenkalkulationen und Präsentationen anzeigen und bearbeiten. Verwalten Sie PDFs, Bilder und Videodateien auf Ihrem Android-Gerät.",
+
+  "ChooseItemInOnlyOffice": "In der ONLYOFFICE Cloud",
+  "ChooseItemLogInTo": "Melden Sie sich bei der ONLYOFFICE Cloud an, um Dokumente in Echtzeit mit Ihrem Team zu teilen und gemeinsam daran zu arbeiten. Verbinden Sie Dropbox, Google Drive, Box und andere Cloud-Dienste, um dort gespeicherte Dokumente gemeinsam zu bearbeiten.",
+
+  "ChooseItemInYourCloud": "In Ihrer Cloud",
+  "ChooseItemConnectNextcloud": "Verbinden Sie Nextcloud, ownCloud oder jede andere Cloud, die über WebDAV funktioniert. Verwalten, anzeigen und bearbeiten Sie Dokumente direkt aus der App.",
+
+  "ChooseItemFromOther": "Aus anderen Apps",
+  "ChooseItemImportDocuments": "Importieren Sie Dokumente aus Anwendungen wie iTunes, Dateien und anderen.",
+
+  "HaveQuestions": "Haben Sie Fragen zur Funktionalität? Besuchen Sie unser <0>Hilfe-Center</0>.",
+
+  "GetMoreWithComplete": "Holen Sie mehr heraus mit der vollständigen mobilen Webversion",
+  "WorkOnDocumentsWithin": "Arbeiten Sie an Dokumenten in Ihrem mobilen Browser. Gehen Sie zu Ihrem ONLYOFFICE Webportal und erhalten Sie Zugriff auf weitere Werkzeuge zur Dokumentenbearbeitung und Zusammenarbeit. Wechseln Sie einfach von der mobilen Ansicht und bearbeiten Sie Dokumente im Desktop-Modus.",
+
+  "LearnMoreHeading": "Erfahren Sie mehr über ONLYOFFICE Documents für Android",
+
+  "LearnCardTitleRelease": "Versionshinweise",
+  "LearnMoreTextOnlyOfficeDocuments": "ONLYOFFICE Documents 5.5 mit Passwörtern, Formfüllung und UI-Verbesserungen",
+  "LearnMoreSubtitleRead": "Beitrag lesen",
+
+  "LearnCardTitleTutorials": "Tutorials",
+  "LearnMoreTextCollaborative": "Kollaborative Dokumentenbearbeitung auf Ihrem Android-Gerät",
+  "LearnMoreSubtitleLearn1": "Mehr erfahren",
+
+  "LearnCardTitleDeveloper": "Entwicklerhandbuch",
+  "LearnMoreTextHowMobile": "Wie die mobile Integration funktioniert",
+  "LearnMoreSubtitleLearn2": "Mehr erfahren"
+}

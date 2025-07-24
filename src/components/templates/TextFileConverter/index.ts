@@ -1,0 +1,1 @@
+export { TextFileConverterTemplate } from "./TextFileConverter";

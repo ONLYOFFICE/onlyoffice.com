@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { parse as parseCookie, serialize as serializeCookie } from "cookie";
 
 const UTM_KEYS = [
   "utm_term",
@@ -6,24 +7,23 @@ const UTM_KEYS = [
   "utm_campaign",
   "utm_content",
 ] as const;
-const EXPIRES_DAYS = "30";
 
+const EXPIRES_DAYS = 30;
 type TUtmKey = (typeof UTM_KEYS)[number];
 type TUtmData = Record<TUtmKey, string>;
 
 function setCookie(name: string, value: string, days: number): void {
   const expires = new Date();
   expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
-  document.cookie = `${name}=${encodeURIComponent(value)};expires=${expires.toUTCString()};path=/`;
+  document.cookie = serializeCookie(name, value, {
+    expires,
+    path: "/",
+  });
 }
 
-function getCookie(name: string): string | null {
-  const cookies = document.cookie.split("; ");
-  for (const cookie of cookies) {
-    const [cookieName, cookieValue] = cookie.split("=");
-    if (cookieName === name) return decodeURIComponent(cookieValue);
-  }
-  return null;
+function getCookie(name: string): string | undefined {
+  const cookies = parseCookie(document.cookie);
+  return cookies[name];
 }
 
 export const useUtmCookies = (): void => {
@@ -36,7 +36,7 @@ export const useUtmCookies = (): void => {
       const existingCookie = getCookie(key);
 
       if (paramValue) {
-        setCookie(key, paramValue, parseInt(EXPIRES_DAYS, 10));
+        setCookie(key, paramValue, EXPIRES_DAYS);
         utmData[key] = paramValue;
       } else if (existingCookie) {
         utmData[key] = existingCookie;
