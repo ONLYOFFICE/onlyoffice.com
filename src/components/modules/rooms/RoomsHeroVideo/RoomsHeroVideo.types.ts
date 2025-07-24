@@ -1,4 +1,4 @@
-export interface IRoomsHero {
+export interface IRoomsHeroVideo {
   /** Hero heading. */
   heading: React.ReactNode;
   /** Hero text. */

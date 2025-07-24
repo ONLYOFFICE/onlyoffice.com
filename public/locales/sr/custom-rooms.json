@@ -6,9 +6,9 @@
   "EditAndCollaborate": "Uredite i sarađujte na svoj način u ONLYOFFICE DocSpace-u",
   "CreateFreeAccount": "Registrujte besplatan nalog",
 
-  "HeroImgUrl": "/images/templates/custom-rooms/hero/custom-rooms-header.png",
-  "HeroImgUrl2x": "/images/templates/custom-rooms/hero/custom-rooms-header@2x.png",
-
+  "HeroImgUrl": "/images/templates/custom-rooms/hero/header_main.png",
+  "HeroImgUrl2x": "/images/templates/custom-rooms/hero/header_main@2x.png",
+  
   "Tailored": "Prilagođen svakom scenariju",
   "Sophisticated": "Sofisticirane postavke pristupa",
   "CostEfectiveForAnyBudget": "Isplativo za bilo koji budžet",
