@@ -1,0 +1,34 @@
+{
+  "PageTitle": "A melhor alternativa ao Google Docs",
+  "PageDescription": "",
+
+  "HeroTitle": "<0>ONLYOFFICE</0>, a melhor alternativa do Google Docs",
+  "GetOODocsNow": "Obter o ONLYOFFICE",
+  "CompatibleWithMicrosoftOfficeFormats": "100% compatível com os formatos do Microsoft Office",
+
+  "ReasonsTitle": "<0>8 motivos</0> pelos quais o ONLYOFFICE é a melhor alternativa para o Google Docs, o Google Sheets e o Google Slides",
+  "OpenSource": "Open-source",
+  "OpenSourceText": "O ONLYOFFICE fornece aos usuários soluções open-source. Nosso código fonte está listado no GitHub o que garante transparência e confiabilidade: você pode verificá-lo em qualquer momento.",
+  "Security": "Segurança de dados",
+  "SecurityText": "As soluções open-source do ONLYOFFICE podem ser implantadas em seu próprio servidor para que todos os dados permaneçam totalmente na empresa. Salas privadas permitem o armazenamento, edição e coautoria de documentos de forma sempre criptografada.",
+  "DesktopApp": "Web, desktop, móvel",
+  "DesktopAppText": "Com o ONLYOFFICE, você pode trabalhar online a partir de qualquer navegador e sistema operacional, editar documentos offline com os aplicativos de desktop gratuitos para Windows, Linux e macOS, bem como usar aplicativos móveis gratuitos para Android e iOS.",
+  "DocsSheetsSlides": "Documentos, planilhas, slides, formulários, PDF",
+  "DocsSheetsSlidesText": "Edite e colabore em documentos de texto e planilhas de qualquer complexidade, crie apresentações impressionantes, visualize e faça anotações em PDFs. Crie formulários e modelos com aparência profissional do zero ou qualquer arquivo DOCX existente, deixe que outros usuários os preencham e salve formulários como arquivos PDF preenchíveis.",
+  "Seamless": "Colaboração contínua",
+  "SeamlessText": "ONLYOFFICE Docs oferece aos usuários modos de coedição em nível de caractere e parágrafo, revisão e rastreamento de alterações, histórico de versões, comentários e menções, bate-papo integrado, plug-ins para chamadas de áudio e vídeo. Você pode compartilhar facilmente seus documentos com permissões flexíveis, tais como, comentar, revisar, preencher formulários e filtragem personalizada.",
+  "Support": "Suporte para todos os formatos de arquivo populares",
+  "SupportText": "O ONLYOFFICE Docs é totalmente compatíveis com arquivos Office Open XML (DOCX, XLSX, PPTX) e oferecem suporte a outros formatos populares, como ODT, RTF, DOC, TXT, ODS, CSV, ODP, XLS, PPT, HTML, EPUB, XPS, XWP; arquivos Pages, Numbers e Keynote, etc.",
+  "Flexibility": "Flexibilidade",
+  "FlexibilityText": "Ao contrário dos gigantes da tecnologia, o ONLYOFFICE não prende os clientes em seu ecossistema colaborativo. Você é livre para escolher como usar os editores on-line: como parte do ambiente baseado em sala ONLYOFFICE DocSpace, dentro de qualquer serviço de sincronização e compartilhamento ou ECM como Nextcloud, Alfresco, Confluence, Seafile, etc., ou integrado à solução que você está construindo você mesmo.",
+  "AIHelper": "Ajudante de IA",
+  "AIHelperText": "Conecte qualquer provedor de IA e use diferentes modelos de IA para diferentes tarefas. Utilize o plugin AI Assistant para impulsionar o trabalho com seus textos: execute análises de palavras e explore o significado de palavras desconhecidas, gere passagens, imagens e palavras-chave, resuma e traduza histórias, encontre sinônimos.",
+
+  "PresentationTitle": "Assista <0>a esta apresentação</0> para ver a diferença entre os pacotes office:",
+
+  "ReadTheseArticles": "Dê uma olhada neste artigo para uma comparação de recursos profunda disponível no Google Docs e ONLYOFFICE",
+  "OOAndGoogleDocs": "ONLYOFFICE e Google Docs: as quatro principais diferenças",
+  "OOAndGoogleDocsText": "Tanto nós quanto o Google temos excelentes editores online. No entanto, possuímos uma abordagem muito diferente para torná-los excelentes. Spoiler: falaremos sobre privacidade, compatibilidade entre navegadores e arquivos muito grandes.",
+
+  "WhatWentWrong": "O que deu errado no Google Docs? <0>Clique aqui</0> para ver os detalhes"
+}
