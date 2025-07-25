@@ -62,9 +62,18 @@ const StyledBlogCardWrapper = styled.div<{ $isLarge: IBlogCard["isLarge"] }>`
   }
 `;
 
+const StyledBlogCardQuote = styled.div`
+  padding-bottom: 8px;
+
+  span {
+    color: #FF6F3D
+  }
+`;
+
 export {
   StyledBlogCard,
   StyledBlogCardImg,
   StyledBlogCardBody,
   StyledBlogCardWrapper,
+  StyledBlogCardQuote,
 };

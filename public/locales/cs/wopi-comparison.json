@@ -1,0 +1,127 @@
+{
+  "PageTitle": "Porovnání metod integrace ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Zjistěte, jaký je rozdíl mezi integrací ONLYOFFICE Docs s jakoukoli cloudovou službou pomocí API nebo WOPI.",
+
+  "HeroTitle": "Porovnání integrace <0>ONLYOFFICE Docs</0> <1></1>přes API a WOPI",
+  "HeroParagraph": "<0>ONLYOFFICE Docs</0> můžete integrovat s jakoukoli cloudovou službou pomocí rozhraní API nebo WOPI.",
+  "HeroSmallerParagraph": "Níže uvedená tabulka vám pomůže zjistit rozdíly mezi těmito možnostmi.",
+
+  "Header1": "API",
+  "Header2": "WOPI",
+
+  "Sub1": "Obecné informace",
+
+  "Par1AHead": "Rozhraní pro programování aplikací:",
+  "Par1ASub": "popisuje hlavní metody, které umožňují interakci s různými komponentami aplikace ONLYOFFICE, včetně editorů, a umožňují tak programový přístup k ní.",
+  "Par1ALink": "Zjistěte více",
+
+  "Par1BHead": "Rozhraní otevřené platformy pro webové aplikace:",
+  "Par1BSub": "Protokol založený na protokolu REST společnosti Microsoft, který definuje sadu operací umožňujících klientovi přistupovat k souborům uloženým na serveru a měnit je.",
+  "Par1BLink": "Zjistěte více",
+
+  "Sub2": "Integrace s řešeními sync&share a DMS",
+
+  "Par2ASub": "Integrace prostřednictvím hotových konektorů vyvinutých společností ONLYOFFICE nebo jejími partnery.",
+  "Par2ALink": "Zkontrolujte všechny integrace",
+
+  "Par2BSub": "Integrace prostřednictvím konektoru WOPI/univerzálního klienta WOPI.",
+
+  "Sub3": "Přizpůsobení",
+
+  "Item3A": "Nastavení jazyka rozhraní a tématu pro editory",
+  "Item3B": "Skrytí tlačítka nabídky Chat",
+  "Item3C": "Změna informací v části O aplikaci",
+  "Item3D": "Přizpůsobení rozhraní, například úprava záhlaví a panelů nástrojů",
+  "Item3E": "Branding",
+  "Item3F": "Připojení zásuvných modulů",
+
+  "Item3G": "Nastavení jazyka rozhraní a tématu pro editory",
+  "Item3H": "Skrytí tlačítka nabídky Chat",
+  "Item3I": "Změna informací v části O aplikaci",
+
+  "Out3A": "Další připravované možnosti",
+
+  "Sub4": "Základní akce",
+
+  "Item4A": "Prohlížení",
+  "Item4B": "Úpravy",
+  "Item4C": "Společné úpravy",
+  "Item4D": "Prohlížení a úpravy z mobilních zařízení",
+  "Item4E": "Zjednodušené prohlížení (vložené)",
+
+  "Item4F": "Prohlížení",
+  "Item4G": "Editace",
+  "Item4H": "Spolueditace",
+
+  "Out4A": "Další připravované možnosti",
+
+  "Sub5": "Další akce: Metody",
+
+  "Item5A": "Stažení souboru ve zvoleném formátu",
+  "Item5B": "Označení souboru jako oblíbeného",
+  "Item5C": "Zobrazení popisků nástrojů se zprávou",
+
+  "Out5A": "Není k dispozici (ve vývoji)",
+
+  "Sub6": "Další akce: Události",
+
+  "Item6A": "Zavření editoru",
+  "Item6B": "Umístění otevíracího souboru",
+  "Item6C": "Přepnutí souboru z režimu prohlížení do režimu úprav",
+  "Item6D": "Přejmenování dokumentů",
+  "Item6E": "Správa přístupových práv k dokumentům",
+  "Item6F": "Otevření historie verzí",
+  "Item6G": "Vkládání obrázků z úložiště",
+  "Item6H": "Sloučení pošty",
+  "Item6I": "Porovnání s dokumentem z úložiště",
+  "Item6J": "Získání odkazu pro otevření souboru na pozici záložky",
+  "Item6K": "Uložení souboru v požadovaném formátu",
+  "Item6L": "Zmiňování ostatních uživatelů v komentářích",
+  "Item6M": "Vytvoření nového dokumentu",
+
+  "Item6N": "Zavření editoru",
+  "Item6O": "Umístění otevíracího souboru",
+  "Item6P": "Přepnutí souboru z režimu prohlížení do režimu úprav",
+  "Item6Q": "Přejmenování dokumentů",
+  "Item6R": "Správa přístupových práv k dokumentům",
+  "Item6S": "Otevření historie verzí (liší se od realizace API)",
+  "Item6T": "Vkládání obrázků z úložiště",
+
+  "Out6A": "Další připravované možnosti",
+
+  "Sub7": "Zabezpečení",
+
+  "Item7A": "Bílá listina IP adres",
+  "Item7B": "Ověřování požadavků a ochrana před neoprávněným přístupem pomocí JWT",
+
+  "Item7C": "Bílá listina IP adres",
+  "Item7D": "Ověřování požadavků pomocí ověřovacích klíčů",
+
+  "Sub8": "Oprávnění k dokumentům",
+
+  "Item8A": "Prohlížení",
+  "Item8B": "Úpravy",
+  "Item8C": "Recenzování (textové dokumenty)",
+  "Item8D": "Komentování",
+  "Item8E": "Vyplňování formulářů",
+  "Item8F": "Úprava ovládacích prvků obsahu (textové dokumenty)",
+  "Item8G": "Úprava filtrů (tabulky)",
+  "Item8H": "Kopírování do schránky",
+  "Item8I": "Stahování",
+  "Item8J": "Tisk",
+  "Item8K": "Přejmenování",
+
+  "Item8L": "Prohlížení",
+  "Item8M": "Úpravy",
+  "Item8N": "Recenzování (textové dokumenty)",
+  "Item8O": "Tisk",
+  "Item8P": "Přejmenování",
+
+  "Out8A": "Další připravované možnosti",
+
+  "Button": "ZÍSKAT EDITORY PRO INTEGRACI",
+
+  "QuestionsHeader": "Máte ještě nějaké otázky?",
+  "QuestionsParagraph": "Nebo chcete integrovat ONLYOFFICE Docs se svou cloudovou službou?",
+  "QuestionsContact": "Kontaktujte nás na adrese <0>sales@onlyoffice.com</0>."
+}

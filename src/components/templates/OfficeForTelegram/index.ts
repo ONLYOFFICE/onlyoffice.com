@@ -1,0 +1,1 @@
+export { OfficeForTelegramTemplate } from "./OfficeForTelegram";

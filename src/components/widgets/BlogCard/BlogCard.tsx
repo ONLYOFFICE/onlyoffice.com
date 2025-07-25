@@ -3,6 +3,7 @@ import {
   StyledBlogCardImg,
   StyledBlogCardBody,
   StyledBlogCardWrapper,
+  StyledBlogCardQuote
 } from "./BlogCard.styled";
 import { IBlogCard } from "./BlogCard.types";
 import { Link } from "@src/components/ui/Link";
@@ -17,6 +18,10 @@ const BlogCard = ({
   text,
   links,
   isLarge,
+  italicText,
+  author,
+  quotesBefore,
+  quotesAfter
 }: IBlogCard) => {
   return (
     <StyledBlogCard id={id} className={className} $isLarge={isLarge}>
@@ -35,7 +40,29 @@ const BlogCard = ({
               heading?.label
             )}
           </Heading>
+
           {text && <Text size={3} color="#666666" label={text} />}
+
+          {italicText && (
+            <StyledBlogCardQuote>
+              <Text size={2}
+                fontStyle="italic"
+                 color="#444444"
+              >
+              <span>{quotesBefore}</span>
+              {italicText}
+              <span>{quotesAfter}</span>
+              </Text>
+            </StyledBlogCardQuote>
+          )}
+
+          {author && (
+            <Text
+              size={4}
+              color="#808080"
+              label={author}
+            />
+          )}
         </StyledBlogCardWrapper>
 
         {links && (

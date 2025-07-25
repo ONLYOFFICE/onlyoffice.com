@@ -1,0 +1,127 @@
+{
+  "PageTitle": "Vergelijk de integratiemethoden van ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Ontdek het verschil tussen de integratie van ONLYOFFICE Docs met elke cloudservice via API of WOPI.",
+
+  "HeroTitle": "Vergelijk integratie van <0>ONLYOFFICE Docs</0> <1></1>via API en WOPI",
+  "HeroParagraph": "U kunt <0>ONLYOFFICE Docs</0> integreren met elke cloudservice, hetzij via API, hetzij via WOPI.",
+  "HeroSmallerParagraph": "De onderstaande tabel helpt u het verschil tussen deze mogelijkheden te ontdekken.",
+
+  "Header1": "API",
+  "Header2": "WOPI",
+
+  "Sub1": "Algemene informatie",
+
+  "Par1AHead": "Application Programming Interface:",
+  "Par1ASub": "beschrijft de belangrijkste methoden waarmee u kunt communiceren met de verschillende ONLYOFFICE componenten, waaronder editors, zodat u er programmatisch toegang toe hebt.",
+  "Par1ALink": "Meer informatie",
+
+  "Par1BHead": "Web Application Open Platform Interface:",
+  "Par1BSub": "Op REST gebaseerd protocol van Microsoft dat een reeks bewerkingen definieert waarmee een client toegang kan krijgen tot door een server opgeslagen bestanden en die bestanden kan wijzigen.",
+  "Par1BLink": "Meer informatie",
+
+  "Sub2": "Integratie met sync&share en DMS-oplossingen",
+
+  "Par2ASub": "Integratie via gebruiksklare connectoren ontwikkeld door ONLYOFFICE of haar partners.",
+  "Par2ALink": "Bekijk alle integraties",
+
+  "Par2BSub": "Integratie via WOPI-connector/universele WOPI-client.",
+
+  "Sub3": "Maatwerk",
+
+  "Item3A": "Een interfacetaal en een thema instellen voor de editors",
+  "Item3B": "De chatmenuknop verbergen",
+  "Item3C": "Informatie wijzigen in het gedeelte Over",
+  "Item3D": "Aanpassing van de interface, zoals het aanpassen van de koptekst en de werkbalken",
+  "Item3E": "Branding",
+  "Item3F": "Plugins verbinden",
+
+  "Item3G": "Een interfacetaal en een thema instellen voor de editors",
+  "Item3H": "De chatmenuknop verbergen",
+  "Item3I": "Informatie wijzigen in het gedeelte Over",
+
+  "Out3A": "Andere opties in ontwikkeling",
+
+  "Sub4": "Basisacties",
+
+  "Item4A": "Bekijken",
+  "Item4B": "Bewerken",
+  "Item4C": "Samen bewerken",
+  "Item4D": "Mobiel bekijken en bewerken",
+  "Item4E": "Vereenvoudigde weergave (ingesloten)",
+
+  "Item4F": "Bekijken",
+  "Item4G": "Bewerken",
+  "Item4H": "Samen bewerken",
+
+  "Out4A": "Andere opties in ontwikkeling",
+
+  "Sub5": "Aanvullende acties: Methoden",
+
+  "Item5A": "Een bestand downloaden in het gekozen formaat",
+  "Item5B": "Een bestand markeren als favoriet",
+  "Item5C": "Tooltips weergeven met het bericht",
+
+  "Out5A": "Niet beschikbaar (in ontwikkeling)",
+
+  "Sub6": "Aanvullende acties: Evenementen",
+
+  "Item6A": "De editor sluiten",
+  "Item6B": "Bestandslocatie openen",
+  "Item6C": "Een bestand van de weergave- naar de bewerkingsmodus omschakelen",
+  "Item6D": "Documenten hernoemen",
+  "Item6E": "Toegangsrechten voor documenten beheren",
+  "Item6F": "Versiegeschiedenis openen",
+  "Item6G": "Afbeeldingen uit opslag invoegen",
+  "Item6H": "Mail Samenvoegen",
+  "Item6I": "Vergelijking met een document uit de opslag",
+  "Item6J": "Een link krijgen om een bestand te openen op de bladwijzerpositie",
+  "Item6K": "Een bestand opslaan in het gewenste formaat",
+  "Item6L": "Andere gebruikers vermelden in opmerkingen",
+  "Item6M": "Een nieuw document aanmaken",
+
+  "Item6N": "De editor sluiten",
+  "Item6O": "Bestandslocatie openen",
+  "Item6P": "Een bestand van de weergave- naar de bewerkingsmodus omschakelen",
+  "Item6Q": "Documenten hernoemen",
+  "Item6R": "Toegangsrechten voor documenten beheren",
+  "Item6S": "Versiegeschiedenis openen (verschilt van API realisatie)",
+  "Item6T": "Afbeeldingen uit opslag invoegen",
+
+  "Out6A": "Andere opties in ontwikkeling",
+
+  "Sub7": "Beveiliging",
+
+  "Item7A": "IP-adres white listen",
+  "Item7B": "Verificatie van verzoeken en bescherming tegen ongeoorloofde toegang met JWT",
+
+  "Item7C": "IP-adres white listen",
+  "Item7D": "Verificatie van verzoeken met behulp van bewijssleutels",
+
+  "Sub8": "Documentmachtigingen",
+
+  "Item8A": "Bekijken",
+  "Item8B": "Bewerken",
+  "Item8C": "Beoordelen (tekstdocumenten)",
+  "Item8D": "Opmerkingen",
+  "Item8E": "Invullen van formulieren",
+  "Item8F": "Inhoudscontroles Wijzigen (tekstdocumenten)",
+  "Item8G": "Filters wijzigen (spreadsheets)",
+  "Item8H": "Kopiëren naar klembord",
+  "Item8I": "Downloaden",
+  "Item8J": "Printen",
+  "Item8K": "Hernoemen",
+
+  "Item8L": "Bekijken",
+  "Item8M": "Bewerken",
+  "Item8N": "Beoordelen (tekstdocumenten)",
+  "Item8O": "Printen",
+  "Item8P": "Hernoemen",
+
+  "Out8A": "Andere opties in ontwikkeling",
+
+  "Button": "HAAL EDITORS VOOR INTEGRATIE",
+
+  "QuestionsHeader": "Heeft u nog vragen?",
+  "QuestionsParagraph": "Of wilt u ONLYOFFICE Docs integreren met uw cloudservice?",
+  "QuestionsContact": "Neem contact met ons op via <0>sales@onlyoffice.com</0>."
+}

@@ -102,7 +102,7 @@ const DeveloperEditionPricesOnPremisesEmail = ({
                     ${email}
                   </p>
                   <p style="margin-top:5px;">
-                    <b>Phone</b>
+                    <b>Phone / WeChat</b>
                     <br />
                     ${phone}
                   </p>
@@ -177,7 +177,7 @@ const DeveloperEditionPricesOnPremisesEmail = ({
                     ${supportLevel}
                   </p>
                   <p style="margin-top:20px;">
-                    <b>Access to Automation API </b>
+                    <b>Access to Automation API</b>
                     <br />
                     ${accessToAPI}
                   </p>

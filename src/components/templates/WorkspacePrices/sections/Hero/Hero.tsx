@@ -120,6 +120,7 @@ const Hero = ({ locale, productsData }: IWorkspacePricesTemplate) => {
                     firstResponseTime={plan.firstResponseTime}
                     supportList={plan.supportKeys.map((item) => t(item))}
                     casesList={plan.casesKeys.map((item) => t(item))}
+                    planKey={plan.key}
                   />
                 );
               })}

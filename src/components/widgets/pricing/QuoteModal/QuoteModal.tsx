@@ -8,7 +8,7 @@ import {
   StyledQuoteModalText,
 } from "./QuoteModal.styled";
 import { IQuoteModal } from "./QuoteModal.types";
-import { getFromParam, getCookieParams } from "@src/utils/getParams";
+import { getFromParam } from "@src/utils/getParams";
 import { usePhoneInputStore } from "@src/store/phoneInputStore";
 import { countries } from "@src/config/data/countries";
 import { Modal } from "@src/components/ui/Modal";
@@ -18,7 +18,7 @@ import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { Text } from "@src/components/ui/Text";
 import { IPhoneInputRef } from "@src/components/widgets/PhoneInput";
 import { PhoneInput } from "@src/components/widgets/PhoneInput";
-import { HCaptcha } from "@src/components/widgets/HCaptcha";
+import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 
 const QuoteModal = <T,>({
@@ -32,20 +32,11 @@ const QuoteModal = <T,>({
   quoteFormData,
   setQuoteFormData,
   buttonLabel,
-  apiRequest,
-  sendEmailRequest,
-  pipedriveRequest,
+  onSubmitRequest,
   onClose,
 }: IQuoteModal<T>) => {
   const { t } = useTranslation("PricingQuoteModal");
   const from = getFromParam();
-  const cookieParams = getCookieParams([
-    "utm_source",
-    "utm_campaign",
-    "utm_content",
-    "utm_term",
-    "_ga",
-  ]);
 
   const selectedCountry = usePhoneInputStore((state) => state.selectedCountry);
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
@@ -73,7 +64,7 @@ const QuoteModal = <T,>({
     setIsFormValid(
       isFullNameValid &&
         isEmailValid &&
-        isPhoneValid &&
+        (locale === "zh" ? true : isPhoneValid) &&
         isCompanyValid &&
         !!quoteFormData.hCaptcha,
     );
@@ -87,7 +78,7 @@ const QuoteModal = <T,>({
     setIsFormValid(
       isFullNameValid &&
         isEmailValid &&
-        isPhoneValid &&
+        (locale === "zh" ? true : isPhoneValid) &&
         isCompanyValid &&
         !!token,
     );
@@ -109,6 +100,7 @@ const QuoteModal = <T,>({
     setFormData(initialFormData);
     setQuoteFormData(initialQuoteFormData);
     setFormStatus("default");
+    setIsFormValid(false);
     hCaptchaRef.current?.resetCaptcha();
     phoneInputRef.current?.reset();
   };
@@ -139,7 +131,7 @@ const QuoteModal = <T,>({
 
       const hCaptchaData = await hCaptchaResponse.json();
 
-      if (hCaptchaData.status === "errorhCaptchaInvalid") {
+      if (hCaptchaData.status === "errorHCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");
@@ -147,50 +139,19 @@ const QuoteModal = <T,>({
         return;
       }
 
-      const apiData = await apiRequest({
-        from,
-        utmSource: cookieParams.utm_source,
-        utmCampaign: cookieParams.utm_campaign,
-        utmContent: cookieParams.utm_content,
-        utmTerm: cookieParams.utm_term,
-      });
-      const apiDataError = apiData?.message?.code || "";
-
-      if (apiData.status === "error") {
-        setFormStatus("error");
-        return;
-      }
-
-      const errorFlag = `${apiDataError ? "[Error] " : ""}${quoteFormData.companyName}`;
-      const utmCampaignFlag = `${cookieParams.utm_campaign ? `[utm: ${cookieParams.utm_campaign}]` : ""}`;
-      const isSelected = (value: boolean) =>
-        value ? "Selected" : "Not selected";
-
       const countryInfo = Object.values(countries).find(
         (item) => item.country === selectedCountry,
       );
-      const title = countryInfo?.title?.split(" (")[0] || "";
+      const country = countryInfo?.title?.split(" (")[0] || "";
       const region = countryInfo?.salesRegion || "";
 
-      const [sendEmailData] = await Promise.all([
-        sendEmailRequest({
-          from,
-          errorFlag,
-          utmCampaignFlag,
-          errorText: apiDataError,
-          isSelected,
-        }),
-        pipedriveRequest({
-          _ga: cookieParams._ga,
-          utmSource: cookieParams.utm_source,
-          utmCampaign: cookieParams.utm_campaign,
-          title,
-          region,
-          from,
-        }),
-      ]);
+      const onSubmitRequestData = await onSubmitRequest({
+        from,
+        country,
+        region,
+      });
 
-      if (sendEmailData.status === "success") {
+      if (onSubmitRequestData.status === "success") {
         setFormStatus("success");
 
         setTimeout(() => {
@@ -220,7 +181,7 @@ const QuoteModal = <T,>({
       withCloseBtn
       positionCloseBtn="inside"
     >
-      <StyledQuoteModal>
+      <StyledQuoteModal data-testid="pricing-modal-form">
         <StyledQuoteModalWrapper>
           <Heading level={4} textAlign="center" label={heading} />
 
@@ -289,8 +250,22 @@ const QuoteModal = <T,>({
           {locale === "zh" ? (
             <Input
               onChange={(e) => handleInputChange("phone", e.target.value)}
+              onBlur={() => {
+                setIsEmpty((prev) => ({
+                  ...prev,
+                  phone: false,
+                }));
+                checkFormValid();
+              }}
               value={quoteFormData.phone}
               label="微信号"
+              status={
+                isEmpty.phone
+                  ? "error"
+                  : quoteFormData.phone
+                    ? "success"
+                    : "default"
+              }
             />
           ) : (
             <PhoneInput
@@ -349,6 +324,7 @@ const QuoteModal = <T,>({
 
           <LoaderButton
             onClick={onSubmit}
+            data-testid="pricing-modal-get-a-quote-button"
             status={formStatus}
             label={buttonLabel}
             disabled={!isFormValid}

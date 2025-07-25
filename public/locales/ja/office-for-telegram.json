@@ -1,0 +1,19 @@
+{
+  "PageTitle": "タイトル：ONLYOFFICEのTelegramボット",
+  "PageDescription": "概要：Telegram内でオフィス文書の閲覧、作成、変換、編集、共同作業",
+
+  "OnlineOfficeForTelegram": "タイトル：ONLYOFFICEのTelegramボット",
+  "OpenCreateConvertEdit": "概要：Telegram内でオフィス文書の閲覧、作成、変換、編集、共同作業",
+  "StartNow": "完全無料です。今すぐ始める",
+
+  "DocumentsTab1Label": "新しいDOCX、XLSX、PPTXドキュメントの作成、ローカルファイルの閲覧",
+  "DocumentsTab2Label": "他のTelegramユーザーとのオフィス文書の編集と共同作業",
+  "DocumentsTab3Label": "PDFの閲覧と編集、PDFへの書き出し",
+  "DocumentsTab4Label": "オンラインで簡単にドキュメントを変換。50以上のフォーマットに対応。",
+  "DocumentsTab5Label": "グループチャットもサポート！",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "FeaturesAIHelper": "編集、書式、スタイル設定のための強力なツールセット。高度なセキュリティ。",
+  "FeaturesCoEditing": "<0>リアルタイム</0>および<0>段落単位のロック</0>による共同編集、レビュー、バージョン履歴、文書比較、コメント＆メンション。",
+  "FeaturesFormats": "<0>50以上のファイル形式</0>をサポート。MS Office形式（DOCX、XLSX、PPTX）と完全な互換性。"
+}

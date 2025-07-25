@@ -1,0 +1,1 @@
+export { OfficeSuiteTemplate } from "./OfficeSuite";

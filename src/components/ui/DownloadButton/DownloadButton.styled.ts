@@ -124,14 +124,14 @@ const StyledDownloadButton = styled(Link)<{
                 background-image: ${$imageSrc && `url(${$imageSrc})`};
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: 100% 32px;
+                background-size: inherit;
               `
             : $platform === "google-play"
               ? css`
                   background-image: ${$imageSrc && `url(${$imageSrc})`};
                   background-repeat: no-repeat;
                   background-position: center;
-                  background-size: 100% 32px;
+                  background-size: inherit;
                 `
               : $platform === "snap-store"
                 ? css`

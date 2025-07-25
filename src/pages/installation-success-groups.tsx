@@ -7,7 +7,7 @@ import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { InstallationSuccessGroupsTemplate } from "@src/components/templates/InstallationSuccessGroups";
-import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
+import { AdventAnnounce } from "@src/components/modules/AdventAnnounce";
 
 const InstallationSuccessPage = ({ locale }: ILocale) => {
   const { t } = useTranslation("installation-success-groups");
@@ -15,13 +15,13 @@ const InstallationSuccessPage = ({ locale }: ILocale) => {
   return (
     <Layout>
       <Layout.AdventAnnounce>
-        <AdventAnnounceBanner locale={locale} />
+        <AdventAnnounce locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header locale={locale} theme="white" />
       </Layout.Header>
       <Layout.Main>
         <InstallationSuccessGroupsTemplate />

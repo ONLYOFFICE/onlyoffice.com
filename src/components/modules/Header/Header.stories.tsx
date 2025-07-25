@@ -10,7 +10,7 @@ export default {
     docs: {
       description: {
         component:
-          "Renders the current menu in the header, allowing users to navigate easily throughout the application.",
+          "Renders the header, allowing users to navigate easily throughout the application.",
       },
     },
   },
