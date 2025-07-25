@@ -11,7 +11,7 @@ const Join = () => {
 
   return (
     <Section>
-      <Container>
+      <Container maxWidth="1008px">
         <StyledJoinIcon />
         <StyledJoinHeading level={2} size={3} textAlign="center">
           <Trans t={t} i18nKey={"JoinHeading"} components={[
