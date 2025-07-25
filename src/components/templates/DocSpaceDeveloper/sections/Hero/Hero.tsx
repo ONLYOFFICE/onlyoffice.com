@@ -43,7 +43,8 @@ const Hero = () => {
           />
           <Button
             as="a"
-            href="/demo-order" label={t("HeroButtonSchedule")}
+            href="/demo-order"
+            label={t("HeroButtonSchedule")}
             variant="quinary"
             borderRadius="3px"
           />

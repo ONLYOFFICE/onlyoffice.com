@@ -12,7 +12,7 @@
   "SwitcherHeadingBringYour": "为您的 Web 应用程序用户提供一个安全的内容存储和在线文档协作空间",
 
   "SwitcherItemTitle1": "集成整个 ONLYOFFICE 协作空间、单个房间或者一个单独的文档 ...",
-  "SwitcherItemText1": " ONLYOFFICE 提供 <b>JavaScript SDK</b>，让您可以通过 api.js 使用协作空间的所有功能。",
+  "SwitcherItemText1": " ONLYOFFICE 提供 <0>JavaScript SDK</0>，让您可以通过 api.js 使用协作空间的所有功能。",
   "SwitcherItemLink1": "阅读文档",
   "SwitcherItemImgUrl1": "/images/templates/docspace-developer/switcher/integrate.png",
   "SwitcherItemImgUrl2x1": "/images/templates/docspace-developer/switcher/integrate@2x.png",

@@ -57,8 +57,19 @@ const Worth = () => {
           ))}
         </StyledWorthCardsWrapper>
         <StyledWorthButtonsWrapper>
-          <Button label={t("WorthButtonTry")} borderRadius="3px" />
-          <Button label={t("WorthButtonRead")} variant="secondary" borderRadius="3px" />
+          <Button
+            as="a"
+            href="/download-developer#docspace-developer"
+            label={t("WorthButtonTry")}
+            borderRadius="3px"
+          />
+          <Button
+            as="a"
+            href="https://api.onlyoffice.com/docspace/javascript-sdk/get-started/"
+            label={t("WorthButtonRead")}
+            variant="secondary"
+            borderRadius="3px"
+          />
         </StyledWorthButtonsWrapper>
       </Container>
     </Section>
