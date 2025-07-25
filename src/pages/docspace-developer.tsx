@@ -23,8 +23,8 @@ const DocSpaceDeveloperPage = ({ locale }: ILocale) => {
         <Header
           locale={locale}
           highlight={{
-            buttonId: "oo-menu-item-btn-pricing",
-            linkId: "oo-menu-link-pricing-docspace-developer",
+            buttonId: "oo-menu-item-btn-developers",
+            linkId: "oo-menu-link-why-docspace-developer",
           }}
           theme="white"
         />
