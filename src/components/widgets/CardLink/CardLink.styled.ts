@@ -8,8 +8,10 @@ import type { ICardLink } from "./CardLink.types";
 const StyledCardLink = styled(Link)<{
   $widthDesktop: ICardLink["widthDesktop"];
   $widthDesktopSmall: ICardLink["widthDesktopSmall"];
+  $widthTablet: ICardLink["widthTablet"];
   $widthTabletSmall: ICardLink["widthTabletSmall"];
   $widthMobile: ICardLink["widthMobile"];
+  $widthMobileSmall: ICardLink["widthMobileSmall"];
   $textAlign: ICardLink["textAlign"];
 }>`
   background: #ffffff;
@@ -25,12 +27,20 @@ const StyledCardLink = styled(Link)<{
     width: ${(props) => props.$widthDesktopSmall};
   }
 
+  @media ${device.tablet} {
+    width: ${(props) => props.$widthTablet};
+  }
+
   @media ${device.tabletS} {
     width: ${(props) => props.$widthTabletSmall};
   }
 
   @media ${device.mobile} {
     width: ${(props) => props.$widthMobile};
+  }
+
+  @media ${device.mobileS} {
+    width: ${(props) => props.$widthMobileSmall};
   }
 
   &:hover {
@@ -49,18 +59,39 @@ const StyledCardLink = styled(Link)<{
 const StyledCardLinkTop = styled.div<{
   $iconUrl: ICardLink["icon"]["iconUrl"];
   $iconBlockHeightDesktop: ICardLink["icon"]["iconBlockHeightDesktop"];
+  $iconBlockHeightTablet: ICardLink["icon"]["iconBlockHeightTablet"];
   $iconBlockHeightTabletSmall: ICardLink["icon"]["iconBlockHeightTabletSmall"];
+  $iconBlockHeightMobile: ICardLink["icon"]["iconBlockHeightMobile"];
+  $iconBlockHeightMobileSmall: ICardLink["icon"]["iconBlockHeightMobileSmall"];
   $iconWidthDesktop: ICardLink["icon"]["iconWidthDesktop"];
   $iconHeightDesktop: ICardLink["icon"]["iconHeightDesktop"];
+  $iconWidthTablet: ICardLink["icon"]["iconWidthTablet"];
+  $iconHeightTablet: ICardLink["icon"]["iconHeightTablet"];
   $iconWidthTabletSmall: ICardLink["icon"]["iconWidthTabletSmall"];
   $iconHeightTabletSmall: ICardLink["icon"]["iconHeightTabletSmall"];
+  $iconWidthMobile: ICardLink["icon"]["iconWidthMobile"];
+  $iconHeightMobile: ICardLink["icon"]["iconHeightMobile"];
+  $iconWidthMobileSmall: ICardLink["icon"]["iconWidthMobileSmall"];
+  $iconHeightMobileSmall: ICardLink["icon"]["iconHeightMobileSmall"];
 }>`
   background: #f5f5f5;
   border-radius: 5px;
   height: ${(props) => props.$iconBlockHeightDesktop};
 
+  @media ${device.tablet} {
+    height: ${(props) => props.$iconBlockHeightTablet};
+  }
+
   @media ${device.tabletS} {
     height: ${(props) => props.$iconBlockHeightTabletSmall};
+  }
+
+  @media ${device.mobile} {
+    height: ${(props) => props.$iconBlockHeightMobile};
+  }
+
+  @media ${device.mobileS} {
+    height: ${(props) => props.$iconBlockHeightMobileSmall};
   }
 
   &::after {
@@ -78,9 +109,24 @@ const StyledCardLinkTop = styled.div<{
     top: 50%;
     transform: translateY(-50%);
 
+    @media ${device.tablet} {
+      width: ${(props) => props.$iconWidthTablet};
+      height: ${(props) => props.$iconHeightTablet};
+    }
+
     @media ${device.tabletS} {
       width: ${(props) => props.$iconWidthTabletSmall};
       height: ${(props) => props.$iconHeightTabletSmall};
+    }
+
+    @media ${device.mobile} {
+      width: ${(props) => props.$iconWidthMobile};
+      height: ${(props) => props.$iconHeightMobile};
+    }
+
+    @media ${device.mobileS} {
+      width: ${(props) => props.$iconWidthMobileSmall};
+      height: ${(props) => props.$iconHeightMobileSmall};
     }
   }
 `;
@@ -128,16 +174,16 @@ const StyledCardLinkSubtitle = styled(Text)<{
     props.$textAlign === "left"
       ? "0 auto 32px 32px"
       : props.$textAlign === "right"
-        ? "0 32px 32px auto"
-        : "0 auto 32px"};
+      ? "0 32px 32px auto"
+      : "0 auto 32px"};
 
-  @media ${device.tablet} {
+  @media ${device.tabletS} {
     margin: ${(props) =>
       props.$textAlign === "left"
         ? "0 auto 16px 16px"
         : props.$textAlign === "right"
-          ? "0 16px 16px auto"
-          : "0 auto 16px"};
+        ? "0 16px 16px auto"
+        : "0 auto 16px"};
   }
 
   @media ${device.tabletS} {

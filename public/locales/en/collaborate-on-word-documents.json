@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Collaborate on Word documents | ONLYOFFICE",
+  "PageDescription": "Seamlessly collaborate on Word documents with ONLYOFFICE. Comfortably co-author large documents in a team of any size with a range of collaboration tools.",
+  "Header": "Seamlessly collaborate on Word documents",
+  "SubHeader": "Comfortably co-author large documents in a team of any size with a range of collaboration tools",
+
+  "HeroImgUrl": "/images/templates/collaborate-on-word-documents/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/collaborate-on-word-documents/hero/hero@2x.png",
+
+  "Feature1Title": "Share safely",
+  "Feature1Desc": "Share documents for viewing and editing, and make use of the advanced sharing permissions to enable commenting or reviewing. Create ready-to-fill-out forms and let other users fill them in. Restrict the copying, downloading, and printing of documents.",
+
+  "Feature2Title": "Co-edit without stress",
+  "Feature2Desc": "Collaborate on documents online in real-time with Fast mode or work privately on texts and paragraphs with Strict mode. Use Undo and Redo, change tracking, and other tools independently from others.",
+
+  "Feature3Title": "Comment and discuss",
+  "Feature3Desc": "Leave comments to discuss questions and issues. Sort comments by author and date. Mention users in comments to invite them to collaborate and instantly share the file with them. Use the built-in chat, Telegram or Jitsi plugins to communicate with your team.",
+
+  "Feature4Title": "Track changes and compare content",
+  "Feature4Desc": "The best way to collaborate on a Word document is to display your input with others. Enable Track Changes to highlight your contributions, review changes made by others, and accept or delete them. Browse and restore document versions in the history tab and compare separate documents with Document Comparison.",
+
+  "Feature1ImgUrl": "/images/templates/collaborate-on-word-documents/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/collaborate-on-word-documents/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/collaborate-on-word-documents/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/collaborate-on-word-documents/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/pic4@2x.png"
+}

@@ -1,0 +1,1 @@
+export { LicenseFaqTemplate } from "./LicenseFaq";

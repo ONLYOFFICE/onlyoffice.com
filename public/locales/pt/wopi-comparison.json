@@ -1,0 +1,127 @@
+{
+  "PageTitle": "Compare os métodos de integração do ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Descubra qual é a diferença entre integrar o ONLYOFFICE Docs com qualquer serviço em nuvem usando API ou WOPI.",
+
+  "HeroTitle": "Compare a integração do <0>ONLYOFFICE Docs</0> <1></1>através de API e WOPI",
+  "HeroParagraph": "Você pode integrar o <0>ONLYOFFICE Docs</0> a qualquer serviço em nuvem usando API ou WOPI.",
+  "HeroSmallerParagraph": "A tabela abaixo ajudará você a descobrir a diferença entre essas opções.",
+
+  "Header1": "API",
+  "Header2": "WOPI",
+
+  "Sub1": "Informações gerais",
+
+  "Par1AHead": "Interface de Programação de Aplicativo:",
+  "Par1ASub": "descreve os principais métodos que permitem que você interaja com vários componentes do ONLYOFFICE, incluindo editores, dando a você acesso programático a ele.",
+  "Par1ALink": "Saiba mais",
+
+  "Par1BHead": "Interface de plataforma aberta de aplicativo Web:",
+  "Par1BSub": "protocolo baseado em REST da Microsoft, que define um conjunto de operações que permite a um cliente acessar e alterar arquivos armazenados por um servidor.",
+  "Par1BLink": "Saiba mais",
+
+  "Sub2": "Integração com soluções de sincronização e compartilhamento e DMS",
+
+  "Par2ASub": "Integração através de conectores prontos para usar desenvolvidos pelo ONLYOFFICE ou seus parceiros.",
+  "Par2ALink": "Conferir todas as integrações",
+
+  "Par2BSub": "Integração através conector WOPI/cliente WOPI universal.",
+
+  "Sub3": "Personalização",
+
+  "Item3A": "Define idioma de interface e um tema para os editores",
+  "Item3B": "Oculta o botão do menu de chat",
+  "Item3C": "Altera informações na seção Sobre",
+  "Item3D": "Personaliza a interface, tal como ajuste de cabeçalho e barras de ferramentas",
+  "Item3E": "Marca",
+  "Item3F": "Conecta plug-ins",
+
+  "Item3G": "Define um idioma de interface e um tema para os editores",
+  "Item3H": "Oculta o botão do menu de chat",
+  "Item3I": "Altera informações na seção Sobre",
+
+  "Out3A": "Outras opções em desenvolvimento",
+
+  "Sub4": "Ações básicas",
+
+  "Item4A": "Visualização",
+  "Item4B": "Edição",
+  "Item4C": "Coedição",
+  "Item4D": "Visualização e edição em dispositivos móveis",
+  "Item4E": "Visualização simplificada (integrado)",
+
+  "Item4F": "Visualização",
+  "Item4G": "Edição",
+  "Item4H": "Coedição",
+
+  "Out4A": "Outras opções em desenvolvimento",
+
+  "Sub5": "Ações adicionais: métodos",
+
+  "Item5A": "Baixar um arquivo no formato escolhido",
+  "Item5B": "Marcar um arquivo como favorito",
+  "Item5C": "Exibir dicas de ferramentas com a mensagem",
+
+  "Out5A": "Não disponível (em desenvolvimento)",
+
+  "Sub6": "Ações adicionais: Eventos",
+
+  "Item6A": "Fechar o editor",
+  "Item6B": "Abrir localização do arquivo",
+  "Item6C": "Alternar um arquivo do modo de visualização para o modo de edição",
+  "Item6D": "Documentos restantes",
+  "Item6E": "Gerenciar direitos de acesso a documentos",
+  "Item6F": "Abrir o histórico da versão",
+  "Item6G": "Inserir imagens a partir do armazenamento",
+  "Item6H": "Mala direta",
+  "Item6I": "Comparação com um documento do armazenamento",
+  "Item6J": "Obter um link para abrir um arquivo na posição favorita",
+  "Item6K": "Salvar um arquivo no formato desejado",
+  "Item6L": "Mencionar outros usuários nos comentários",
+  "Item6M": "Criar um novo documento",
+
+  "Item6N": "Fechar o editor",
+  "Item6O": "Abrir localização do arquivo",
+  "Item6P": "Alternar um arquivo do modo de visualização para o modo de edição",
+  "Item6Q": "Documentos restantes",
+  "Item6R": "Gerenciar direitos de acesso a documentos",
+  "Item6S": "Abrir o histórico da versão (é diferente da realização da API)",
+  "Item6T": "Inserir imagens a partir do armazenamento",
+
+  "Out6A": "Outras opções em desenvolvimento",
+
+  "Sub7": "Segurança",
+
+  "Item7A": "Lista de permissão de endereços IP",
+  "Item7B": "Verificar solicitações e proteção contra acesso não autorizado usando JWT",
+
+  "Item7C": "Lista de permissão de endereços IP",
+  "Item7D": "Verificar solicitações usando chaves de prova",
+
+  "Sub8": "Permissões de documentos",
+
+  "Item8A": "Visualizar",
+  "Item8B": "Editar",
+  "Item8C": "Rever (documentos de texto)",
+  "Item8D": "Comentar",
+  "Item8E": "Preencher formulários",
+  "Item8F": "Modificar controles de conteúdo (documentos de texto)",
+  "Item8G": "Modificar filtros (planilhas)",
+  "Item8H": "Copiar para área de transferência",
+  "Item8I": "Baixar",
+  "Item8J": "Imprimir",
+  "Item8K": "Renomear",
+
+  "Item8L": "Visualizar",
+  "Item8M": "Editar",
+  "Item8N": "Rever (documentos de texto)",
+  "Item8O": "Imprimir",
+  "Item8P": "Renomear",
+
+  "Out8A": "Outras opções em desenvolvimento",
+
+  "Button": "OBTER EDITORES PARA INTEGRAÇÃO",
+
+  "QuestionsHeader": "Ainda tem alguma dúvida?",
+  "QuestionsParagraph": "Ou gostaria de integrar o ONLYOFFICE Docs ao seu serviço de nuvem?",
+  "QuestionsContact": "Fale conosco pelo <0>sales@onlyoffice.com</0>."
+}

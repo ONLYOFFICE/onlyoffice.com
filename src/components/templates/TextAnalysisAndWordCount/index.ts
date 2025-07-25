@@ -1,0 +1,1 @@
+export { TextAnalysisAndWordCountTemplate } from "./TextAnalysisAndWordCount";

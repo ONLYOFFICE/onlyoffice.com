@@ -5,7 +5,7 @@ import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
 import { getPricesWithUrls } from "@src/lib/requests/getPricesWithUrls";
 import { DocSpaceFamilyPackEntries } from "@src/components/templates/DocSpaceFamilyPack/data/productEntries";
 import { Layout } from "@src/components/Layout";
-import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
+import { AdventAnnounce } from "@src/components/modules/AdventAnnounce";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import {
@@ -23,13 +23,19 @@ const DocSpaceFamilyPackPage = ({
   return (
     <Layout>
       <Layout.AdventAnnounce>
-        <AdventAnnounceBanner locale={locale} />
+        <AdventAnnounce locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
         <Head title={t("PageTitle")} />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale} />
+        <Header
+          locale={locale}
+          highlight={{
+            buttonId: "oo-menu-item-btn-pricing",
+            linkId: "oo-menu-link-pricing-docspace-family-pack",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <DocSpaceFamilyPackTemplate
@@ -60,6 +66,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "docspace-family-pack",
         "PricingReseller",
+        "FaqCollapse",
       ])),
       locale,
       productsData,

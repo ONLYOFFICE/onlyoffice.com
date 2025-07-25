@@ -1,0 +1,1 @@
+export { PowerpointNotesTemplate } from "./PowerpointNotes";
