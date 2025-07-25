@@ -7,21 +7,14 @@ import {
   StyledAcceptItem,
   StyledAcceptItems,
   StyledAcceptItemText,
-  StyledAcceptSocialButton,
-  StyledAcceptSocialIcon,
-  StyledAcceptSocialIconLink,
-  StyledAcceptSocialIcons,
   StyledAcceptWrapper,
 } from "./Accept.styled";
-import { socialIcons } from "./data/social-icons";
-import { useState } from "react";
-import { MailModal } from "./sub-components/MailModal";
 import { items } from "./data/items";
 import { Button } from "@src/components/ui/Button";
+import { SocialIcons } from "@src/components/modules/SocialIcons";
 
 const Accept = () => {
   const { t } = useTranslation("influencer-program");
-  const [isMailModalOpen, setIsMailModalOpen] = useState(false);
 
   return (
     <Section>
@@ -48,35 +41,10 @@ const Accept = () => {
             ))}
           </StyledAcceptItems>
 
-          <StyledAcceptSocialIcons>
-            {socialIcons.map((item, index) => (
-              <StyledAcceptSocialIcon
-                key={index}
-                title={t(item.title)}
-                onClick={
-                  !item.link ? () => setIsMailModalOpen(true) : undefined
-                }
-              >
-                {item.link ? (
-                  <StyledAcceptSocialIconLink
-                    $iconPosition={item.iconPosition}
-                    href={t(item.link)}
-                    target="_blank"
-                  />
-                ) : (
-                  <StyledAcceptSocialButton $iconPosition={item.iconPosition} />
-                )}
-              </StyledAcceptSocialIcon>
-            ))}
-          </StyledAcceptSocialIcons>
+          <SocialIcons />
 
           <Button as="a" href="#form" label={t("ApplyNow")} />
         </StyledAcceptWrapper>
-
-        <MailModal
-          isOpen={isMailModalOpen}
-          onClose={() => setIsMailModalOpen(false)}
-        />
       </Container>
     </Section>
   );

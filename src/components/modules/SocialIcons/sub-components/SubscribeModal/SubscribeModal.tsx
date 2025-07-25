@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
-import { IMailModal } from "./MailModal.types";
+import { IMailModal } from "./SubscribeModal.types";
 import {
   StyledMailModal,
   StyledMailModalWrapper,
@@ -13,13 +13,13 @@ import {
   StyledMailModalBtnWrapper,
   StyledMailModalConfirmText,
   StyledMailModalBtn,
-} from "./MailModal.styled";
+} from "./SubscribeModal.styled";
 import { Modal } from "@src/components/ui/Modal";
 import { CrossIcon } from "@src/components/icons";
 import { validateEmail } from "@src/utils/validators";
 
-const MailModal = ({ isOpen, onClose }: IMailModal) => {
-  const { t } = useTranslation("contribute");
+const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
+  const { t } = useTranslation("SubscribeModal");
 
   const [formData, setFormData] = useState({
     name: "",
@@ -172,4 +172,4 @@ const MailModal = ({ isOpen, onClose }: IMailModal) => {
   );
 };
 
-export { MailModal };
+export { SubscribeModal };

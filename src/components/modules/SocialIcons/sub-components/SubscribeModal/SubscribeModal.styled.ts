@@ -8,7 +8,7 @@ import { Button } from "@src/components/ui/Button";
 const StyledMailModal = styled.div`
   margin: 0 -16px;
   height: 633px;
-  background-image: url("/images/templates/contribute/improve/mail-modal.png");
+  background-image: url("/images/modules/social-icons/mail-modal.png");
   background-repeat: no-repeat;
   background-position: center;
 

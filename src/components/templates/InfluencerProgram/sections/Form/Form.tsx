@@ -15,7 +15,7 @@ import { Input } from "@src/components/ui/Input";
 import { useRef, useState } from "react";
 import { validateEmail, validateFullName } from "@src/utils/validators";
 import { TextArea } from "@src/components/ui/TextArea";
-import { HCaptcha } from "@src/components/widgets/HCaptcha";
+import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Link } from "@src/components/ui/Link";
 import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 

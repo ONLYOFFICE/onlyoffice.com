@@ -38,6 +38,9 @@ export async function getStaticProps({ locale }: ILocale) {
       ...(await serverSideTranslations(locale, [
         "common",
         "influencer-program",
+        "FaqCollapse",
+        "SocialIcons",
+        "SubscribeModal",
       ])),
       locale,
     },

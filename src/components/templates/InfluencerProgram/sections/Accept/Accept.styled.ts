@@ -1,7 +1,6 @@
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
-import Link from "next/link";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const StyledAcceptWrapper = styled.div`
   display: grid;
@@ -61,56 +60,9 @@ const StyledAcceptItemText = styled(Text)`
   }
 `;
 
-const StyledAcceptSocialIcons = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 32px;
-  margin: 0 auto;
-
-  @media ${device.mobile} {
-    gap: 20px 28px;
-  }
-`;
-
-const StyledAcceptSocialIcon = styled.li`
-  display: inline-flex;
-`;
-
-const BaseSocialIcon = css<{ $iconPosition: string }>`
-  width: 24px;
-  height: 24px;
-  background-image: url("/images/templates/contribute/improve/social-icons.svg");
-  background-repeat: no-repeat;
-  background-position-x: ${(props) => props.$iconPosition};
-  filter: grayscale(1);
-  transition: filter 0.2s;
-
-  &:hover {
-    filter: grayscale(0);
-  }
-`;
-
-const StyledAcceptSocialButton = styled.button<{ $iconPosition: string }>`
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  ${BaseSocialIcon};
-`;
-
-const StyledAcceptSocialIconLink = styled(Link)<{ $iconPosition: string }>`
-  display: inline-block;
-  ${BaseSocialIcon};
-`;
-
 export {
   StyledAcceptWrapper,
   StyledAcceptItems,
   StyledAcceptItem,
   StyledAcceptItemText,
-  StyledAcceptSocialIcons,
-  StyledAcceptSocialIcon,
-  BaseSocialIcon,
-  StyledAcceptSocialButton,
-  StyledAcceptSocialIconLink,
 };
