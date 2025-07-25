@@ -38,6 +38,7 @@ export async function getStaticProps({ locale }: ILocale) {
       ...(await serverSideTranslations(locale, [
         "common",
         "office-for-educators",
+        "FaqCollapse",
       ])),
       locale,
     },

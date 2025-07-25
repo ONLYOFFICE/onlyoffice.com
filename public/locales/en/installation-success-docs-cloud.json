@@ -1,0 +1,27 @@
+{
+  "PageTitle": "ONLYOFFICE Docs Cloud: Thank you for registering!",
+  "PageDescription": "You have successfully registered a personal account on the Stripe platform. Complete several more steps to start using your ONLYOFFICE Docs Cloud.",
+
+  "HeroTitle": "Thank you for registering!",
+  "HeroSubtitle": "Complete just several more steps to start using your ONLYOFFICE Docs Cloud",
+
+  "IntegrationsTitle": "Integrations",
+  "IntegrationsDescription": "Don’t have ready-to-use ONLYOFFICE integration within your platform yet? Choose the service you use and install the corresponding ONLYOFFICE connector.",
+  "IntegrationsMoreOptions": "Other options",
+
+  "HelpfulResources": "<0>Helpful</0> resources & assistance",
+  "HelpfulResourcesText1": "Learn how to use the online editors: docs, forms, sheets, slides. <0>Read guides</0>",
+  "HelpfulResourcesText2": "If you have other questions about the functionality, consult our <0>Help Center</0>.",
+  "HelpfulResourcesText3": "In case of any technical issues, please contact our <0>support team</0>.",
+  "HelpfulResourcesText4": "For any other inquiries, you are also welcome to visit our <0>forum</0> and <1>GitHub</1>.",
+
+  "Step1": "Open an email with the ONLYOFFICE Docs integration details:",
+  "Step2": "Log into your platform and switch to the ONLYOFFICE Settings page",
+  "Step3": "Enter the provided credentials and click the Save button",
+
+  "DocumentServerAddress": "Document Server address",
+  "DocumentServerJWTHeader": "Document Server JWT Header*",
+  "DocumentServerSecret": "Document Server secret",
+
+  "JwtNote": "*JWT protects documents from unauthorized access. <0>Learn more</0>"
+}
