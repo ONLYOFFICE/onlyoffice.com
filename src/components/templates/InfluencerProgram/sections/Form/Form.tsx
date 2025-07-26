@@ -206,8 +206,8 @@ const Form = () => {
                 checkFormValid();
               }}
               value={quoteFormData.email}
-              label="Email"
-              placeholder="name@domain.com"
+              label={t("Email")}
+              placeholder={t("Name")}
               caption={
                 quoteFormData.email.length === 0
                   ? t("EmailIsEmpty")
