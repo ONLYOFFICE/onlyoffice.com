@@ -1,0 +1,6 @@
+{
+  "CheckOutTheCompatibility": "Controlla la compatibilità con i formati MS Office",
+  "CheckOutTheCompatibilityText": "Abbiamo salvato il <0>file docx</0> e <1>file xlsx</1> creati da Microsoft in PDF utilizzando altre suite. Ecco il risultato.",
+  "Documents": "Documenti (.docx)",
+  "Spreadsheets": "Fogli di calcolo (.xlsx)"
+}

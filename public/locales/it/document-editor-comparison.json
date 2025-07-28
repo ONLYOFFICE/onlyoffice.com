@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Compare ONLYOFFICE to MS Office Online, Google Docs, Zoho",
+  "PageDescription": "ONLYOFFICE è più di editori di documenti online, offre gestione dei documenti, progetti, diagramma di Gantt, CRM, fatturazione, collaborazione aziendale, calendario, posta.",
+
+  "HeroTitle": "<0>ONLYOFFICE</0> è il #1 editor online al mondo",
+  "HeroText": "Costruito usando l'elemento Canvas di HTML5, ONLYOFFICE combina il meglio delle principali suite ufficio online e offre molto altro.",
+  "GetItNow": "Installalo ora",
+  "SeeItInAction": "Vedilo in azione",
+  "HeroVideoText": "Guarda questo video e scopri perché ONLYOFFICE è la miglior suite ufficio online.",
+
+  "ComparisonTitle": "Per un confronto approfondito di <0>ONLYOFFICE Docs</0> con altre suite per ufficio, dai un'occhiata alla pagina corrispondente",
+  "OODocsVsOfficeOnline": "ONLYOFFICE vs MS Office Online",
+  "OODocsVsGoogleDocs": "ONLYOFFICE vs Google Docs",
+  "OODocsVsZohoDocs": "ONYOFFICE vs Zoho Docs",
+  "OODocsVsLibreOffice": "ONLYOFFICE vs LibreOffice",
+  "OODocsVsWPS": "ONLYOFFICE vs WPS",
+  "OODocsVsAdobe": "ONLYOFFICE vs Adobe",
+  "OODocsVsHancom": "ONLYOFFICE Docs vs Hancom",
+
+  "CheckOutTheCompatibility": "Controlla la compatibilità con i formati MS Office",
+  "CheckOutTheCompatibilityText": "Abbiamo salvato il <0>file docx</0> e il <1>file xlsx</1> creato da Microsoft in PDF con altre suite diverse. Ecco i risultati.",
+  "Documents": "Documenti (.docx)",
+  "Spreadsheets": "Fogli di calcolo (.xlsx)",
+
+  "StillNotConvinced": "Non sei ancora convinto? Confronta gli editor te stesso!",
+  "StillNotConvincedText": "Scarica <0>docx</0> e <1>xlsx</1> e prova a modificarli usano MS Word Online, Google Docs, Zoho Docs, LibreOffice/OpenOffice, WPS Office, Hancom Office e ONLYOFFICE.",
+  "StillNotConvincedLink": "Leggi le istruzioni su come confrontare gli editor",
+  "GetOODocsNow": "Ottieni ONLYOFFICE",
+  "TryItInTheCloud": "Usa nel cloud"
+}

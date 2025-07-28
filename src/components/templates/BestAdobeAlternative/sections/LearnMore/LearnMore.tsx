@@ -28,7 +28,7 @@ const LearnMore = () => {
               <div key={index}>
                 <StyledBlogCardImg src={item.imgUrl} />
                 <StyledBlogCardLink
-                  href={item.heading.href}
+                  href={t(String(item.heading.href))}
                   label={t(String(item.heading.label))}
                   color="main"
                   textUnderline

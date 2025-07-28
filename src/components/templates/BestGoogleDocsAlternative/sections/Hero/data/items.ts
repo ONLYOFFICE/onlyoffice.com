@@ -1,6 +1,6 @@
-import { IComparisonLogo } from "../Hero.types";
+import { IBestAlternativeHero } from "@src/components/modules/best-alternative/BestAlternativeHero/BestAlternativeHero.types";
 
-export const comparisonLogos: IComparisonLogo[] = [
+export const comparisonLogos: IBestAlternativeHero["comparisonLogos"] = [
   {
     src: "/images/templates/best-google-docs-alternative/hero/onlyoffice.svg",
     alt: "ONLYOFFICE",

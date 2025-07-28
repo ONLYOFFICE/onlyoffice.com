@@ -1,23 +1,19 @@
-interface IComparisonLogo {
-  src: string;
-  alt: string;
-  className?: string;
-}
+import { IBestAlternativeHero } from "@src/components/modules/best-alternative/BestAlternativeHero/BestAlternativeHero.types";
 
-export const comparisonLogos: IComparisonLogo[] = [
+export const comparisonLogos: IBestAlternativeHero["comparisonLogos"] = [
   {
     src: "/images/templates/best-wps-alternative/hero/onlyoffice.svg",
     alt: "ONLYOFFICE",
-    className: "onlyoffice",
+    type: "onlyoffice",
   },
   {
     src: "/images/templates/best-wps-alternative/hero/versus.svg",
     alt: "Versus",
-    className: "versus",
+    type: "versus",
   },
   {
     src: "/images/templates/best-wps-alternative/hero/wps.svg",
     alt: "Zoho Docs",
-    className: "wps",
+    type: "wps",
   },
 ];

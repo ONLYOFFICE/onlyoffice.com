@@ -1,0 +1,39 @@
+{
+  "PageTitle": "Adobe Acrobat Officeに代わるベスト製品 | ONLYOFFICE Docs",
+  "PageDescription": "ONLYOFFICE DocsとAdobe Acrobat Officeの比較。同じドキュメントを異なるプラットフォームで開き、結果を比較してください。",
+
+  "HeroTitle": "<0>ONLYOFFICE Docs</0>はAdobe Acrobatの最高の代替品",
+  "GetOODocsNow": "今すぐONLYOFFICE DOCSを取得",
+  "CompatibleWithMicrosoftOfficeFormats": "Microsoft Office形式と100％の互換性",
+
+  "FeaturesTitle": "ONLYOFFICEがデジタルフォームを作成するためのAdobe Acrobatの最高の代替品である<0>5つの理由</0>",
+  "FreeAndOpenSource": "無料でオープンソース",
+  "OOProvidesUsers": "ONLYOFFICEは、オープンソースのソリューションをユーザーに提供します。ソースコードは、透過性と信頼性を保証するGitHubに記載されています。",
+  "WebDesktopMobile": "Web、デスクトップ、モバイル",
+  "WithOOUouCanCreate": "ONLYOFFICEを使用して、オンラインでフォームを作成したり、共同作成したり、入力したりすることができます。さらに、iOSとAndroidのモバイルアプリを使用して、ローカルでフォームで作業したり、外出先でフォームに入力したりすることもできます。",
+  "SeamlessOnlineCollaboration": "シームレスなオンライン共同作業",
+  "YouAreAbleToCreateForms": "チームメイトと一緒にリアルタイムでフォームを作成したり、コメントを追加したり、変更を確認および追跡したり、バージョン履歴を閲覧したりできます。通信プロセスをスピードアップするには、組み込みのチャットまたはTelegramプラグイン、音声通話とビデオ通話用のJitsiプラグインを使用して、ドキュメント内で直接連絡できます。",
+  "CompleteFunctionality": "一つのエディターに全機能",
+  "OOUsesItsNativeDocumentEditor": "ONLYOFFICEは、フォームと作業するには自分のドキュメントエディターを使用します。他のエディターと違って、フォームを作成するために、別のワードプロセッサでドキュメントを作成して、アップロードしてフィールドを追加する必要はありません。ONLYOFFICEを使用すると、1つのエディターですべてを実行できます。フィールド付きフォームテンプレートを作成したり、テキストを書式設定したり、テーブルなどの複雑な要素を追加したりすることもできます。",
+  "SupportForAdobeFieldSettings": "Adobeフィールド設定のサポート",
+  "InOOForms": "ONLYOFFICEフォームでは、さまざまな種類のフィールドの追加、境界線と背景色の調整、文字制限の設定、複数行の入力と文字の組み合わせの適用、ヒントとプレースホルダーの追加、必須フィールドとマークされて、フィールドのグループ化をすることができます。 グループ化されたフィールドは同時に記入してロックすることもできます。",
+
+  "PresentationTitle": "オフィススイートの違いが分かるように、<0>このプレゼンテーションを</0>ご覧ください：",
+
+  "ReadTheseArticles": "ONLYOFFICEフォームの利点について詳しくは、これらの記事をお読みください",
+  "HowToEditaPDF": "【2024年】PDFを編集する方法",
+  "HowToEditaPDFLink": "https://www.onlyoffice.com/blog/ja/2024/06/how-to-edit-pdf",
+  "HowToEditaPDFText": "PDFの編集は、プロにとっても学生にとっても必須のスキルとなっています。PDFは書式が固定されているため、あらゆるデバイスで一貫したドキュメントを表示できるため、広く使われています。しかし、以前はPDFに変更を加えることは困難でした。技術の進歩により、今ではPDFを効率的に編集できるツールがいくつかあります。この記事では、2024年にPDFを編集する方法をご紹介します。",
+  "OOConnector": "ownCloud用ONLYOFFICE連携アプリv9.3.1：PDFフォームの作成と編集",
+  "OOConnectorLink": "https://www.onlyoffice.com/blog/ja/2024/07/onlyoffice-connector-v9-3-1-for-owncloud",
+  "OOConnectorText": "ownCloud用ONLYOFFICE公式コネクタは、PDFフォーマットでフォームを作成・編集できるようになり、バージョン9.3.1までアップデートされました。詳細はこちらをご覧ください。",
+  "VisitFreeFormsLibrary": "無料フォームライブラリをご覧ください",
+
+  "TryItYourself": "ご自分で試してみてください！",
+  "CreateForm": "フォームを作成",
+  "FillOutForm": "フォームに記入",
+  "DemoPreview": "デモプレビュー",
+  "DemoPreviewTitle": "ソースコードを表示",
+  "DocxForEditing": "編集用にDOCXFを開く",
+  "Close": "閉じる"
+}

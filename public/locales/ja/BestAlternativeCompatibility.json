@@ -1,0 +1,6 @@
+{
+  "CheckOutTheCompatibility": "MS Office形式との互換性をチェック",
+  "CheckOutTheCompatibilityText": "Microsoftで作成された<0>docxファイル</0>と<1>xlsxファイル</1>を他のスイートを使用してPDFに保存しました。結果は次のとおりです。",
+  "Documents": "ドキュメント (.docx)",
+  "Spreadsheets": "スプレッドシート (.xlsx)"
+}

@@ -33,6 +33,14 @@ const BestGoogleDocsAlternativePage = ({ locale }: ILocale) => {
 };
 
 export async function getStaticProps({ locale }: ILocale) {
+  if (locale === "zh") {
+    return {
+      redirect: {
+        destination: `/${locale}`,
+        permanent: true,
+      },
+    };
+  }
   return {
     props: {
       ...(await serverSideTranslations(locale, [
@@ -40,7 +48,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "best-google-docs-alternative",
         "BestAlternativeCompatibility",
         "BestAlternativeCompare",
-        "BestAlternativeGetStarted",
+        "GetStarted",
       ])),
       locale,
     },
