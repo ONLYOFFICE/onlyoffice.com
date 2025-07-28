@@ -1,14 +1,14 @@
-import { Faq } from "./sections/Faq";
-import { Features } from "./sections/Features";
-import { GetStart } from "./sections/GetStart";
 import { Hero } from "./sections/Hero";
+import { Features } from "./sections/Features";
+import { GetStarted } from "@src/components/modules/GetStarted";
+import { Faq } from "./sections/Faq";
 
 const DiagramViewerTemplate = () => {
   return (
     <>
       <Hero />
       <Features />
-      <GetStart />
+      <GetStarted background="#F5F5F5" />
       <Faq />
     </>
   );

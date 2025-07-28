@@ -1,1 +1,0 @@
-export { GetStart } from "./GetStart";
