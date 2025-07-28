@@ -1,0 +1,1 @@
+export { WhitepapersInput } from "./WhitepapersInput";
