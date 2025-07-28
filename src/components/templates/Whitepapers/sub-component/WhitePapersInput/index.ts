@@ -1,1 +1,1 @@
-export { WhitepapersInput } from "./WhitepapersInput";
+export { WhitePapersInput } from "./WhitePapersInput";
