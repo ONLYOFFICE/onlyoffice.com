@@ -1,4 +1,5 @@
 import { Features } from "./sections/Features";
+import { GetStart } from "./sections/GetStart";
 import { Hero } from "./sections/Hero";
 
 const DiagramViewerTemplate = () => {
@@ -6,6 +7,7 @@ const DiagramViewerTemplate = () => {
     <>
       <Hero />
       <Features />
+      <GetStart />
     </>
   );
 };
