@@ -30,11 +30,11 @@ const CollaborateCard = ({
   href,
   isActive,
 }: CollaborateCardProps) => {
-  const { t } = useTranslation("docspace");
+  const { t } = useTranslation("docs-enterprise");
   return (
-    <StyledCollaborateCard $isActive={isActive}>
+    <StyledCollaborateCard $isActive={isActive} id={id}>
       <StyledContentWrapper>
-        <StyledCollaborateCardTitle $id={id} $soon={t("soon")}>
+        <StyledCollaborateCardTitle level={3}>
           {title}
         </StyledCollaborateCardTitle>
         <StyledCollaborateCardDescription>
