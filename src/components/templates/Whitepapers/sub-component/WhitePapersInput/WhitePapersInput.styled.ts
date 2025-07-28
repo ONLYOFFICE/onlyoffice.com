@@ -4,7 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Input } from "@src/components/ui/Input";
 
-const StyledWhitepapersSection = styled(Section)`
+const StyledWhitePapersSection = styled(Section)`
   padding: 16px 0 0 0;
   position: sticky;
   top: 54px;
@@ -20,7 +20,7 @@ const StyledWhitepapersSection = styled(Section)`
   }
 `;
 
-const StyledWhitepapersInputWrapper = styled.div`
+const StyledWhitePapersInputWrapper = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
@@ -32,9 +32,9 @@ const StyledWhitepapersInputWrapper = styled.div`
   }
 `;
 
-const StyledWhitepapersInputLeft = styled.div``;
+const StyledWhitePapersInputLeft = styled.div``;
 
-const StyledWhitepapersInputSubtitle = styled(Heading)`
+const StyledWhitePapersInputSubtitle = styled(Heading)`
   padding-right: 8px;
   border-right: 1px solid #aaa;
 
@@ -45,7 +45,7 @@ const StyledWhitepapersInputSubtitle = styled(Heading)`
   }
 `;
 
-const StyledWhitepapersInputRight = styled.div`
+const StyledWhitePapersInputRight = styled.div`
   position: relative;
   flex-grow: 1;
 
@@ -54,7 +54,7 @@ const StyledWhitepapersInputRight = styled.div`
   }
 `;
 
-const StyledWhitepapersInput = styled(Input)`
+const StyledWhitePapersInput = styled(Input)`
   background-color: transparent;
   border: none;
 
@@ -68,10 +68,10 @@ const StyledWhitepapersInput = styled(Input)`
 `;
 
 export {
-  StyledWhitepapersSection,
-  StyledWhitepapersInputWrapper,
-  StyledWhitepapersInputLeft,
-  StyledWhitepapersInputSubtitle,
-  StyledWhitepapersInputRight,
-  StyledWhitepapersInput
+  StyledWhitePapersSection,
+  StyledWhitePapersInputWrapper,
+  StyledWhitePapersInputLeft,
+  StyledWhitePapersInputSubtitle,
+  StyledWhitePapersInputRight,
+  StyledWhitePapersInput
 };
