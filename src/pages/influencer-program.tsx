@@ -6,10 +6,10 @@ import { AdventAnnounce } from "@src/components/modules/AdventAnnounce";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
-import { ContributeTemplate } from "@src/components/templates/Contribute";
+import { InfluencerProgramTemplate } from "@src/components/templates/InfluencerProgram";
 
-const ContributePage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("contribute");
+const InfluencerProgramPage = ({ locale }: ILocale) => {
+  const { t } = useTranslation("influencer-program");
 
   return (
     <Layout>
@@ -20,16 +20,10 @@ const ContributePage = ({ locale }: ILocale) => {
         <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
-        <Header
-          locale={locale}
-          highlight={{
-            buttonId: "oo-menu-item-btn-resources",
-            linkId: "oo-menu-link-for-contributers",
-          }}
-        />
+        <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <ContributeTemplate />
+        <InfluencerProgramTemplate />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -43,7 +37,8 @@ export async function getStaticProps({ locale }: ILocale) {
     props: {
       ...(await serverSideTranslations(locale, [
         "common",
-        "contribute",
+        "influencer-program",
+        "FaqCollapse",
         "SocialIcons",
         "SubscribeModal",
       ])),
@@ -52,4 +47,4 @@ export async function getStaticProps({ locale }: ILocale) {
   };
 }
 
-export default ContributePage;
+export default InfluencerProgramPage;
