@@ -9,7 +9,7 @@ import {
 import { Checkbox } from "@src/components/ui/Checkbox";
 import { useState, useCallback, useRef, useEffect } from "react";
 import { TextArea } from "@src/components/ui/TextArea";
-import { HCaptcha } from "@src/components/widgets/HCaptcha";
+import { HCaptcha } from "@src/components/ui/HCaptcha";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { validateEmail } from "@src/utils/validators";
