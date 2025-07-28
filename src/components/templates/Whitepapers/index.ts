@@ -1,1 +1,1 @@
-export { WhitepapersTemplate } from "./Whitepapers";
+export { WhitePapersTemplate } from "./WhitePapers";

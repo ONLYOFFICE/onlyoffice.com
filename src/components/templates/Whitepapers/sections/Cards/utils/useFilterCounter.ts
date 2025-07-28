@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { TFilterKey, TSortDateKey } from "../../../Whitepapers.types";
+import { TFilterKey, TSortDateKey } from "../../../WhitePapers.types";
 
 const useFilterCounter = (choosedFilter: TFilterKey, choosedModule: TFilterKey, choosedDate: TSortDateKey) => {
 

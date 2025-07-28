@@ -1,4 +1,4 @@
-import { ICardDatasheetsItems } from "../../../Whitepapers.types";
+import { ICardDatasheetsItems } from "../../../WhitePapers.types";
 
 const cardDatasheetsItems: ICardDatasheetsItems[] = [
   {
@@ -42,7 +42,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     download_url: "CardsDatasheetsPdfDocsDatasheetEducation",
   },
   {
-    id:  9,
+    id: 9,
     title: "ONLYOFFICEOwnCloud",
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICEDocs",
@@ -50,7 +50,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     download_url: "CardsDatasheetsPdfDocsForOwncloud",
   },
   {
-    id:  8,
+    id: 8,
     title: "ONLYOFFICENextcloud",
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICEDocs",
@@ -58,7 +58,7 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     download_url: "CardsDatasheetsPdfDocsForNextcloud",
   },
   {
-    id:  7,
+    id: 7,
     title: "ONLYOFFICEDocs",
     date: "2020-02-04T14:00Z",
     product: "ONLYOFFICEDocs",
@@ -66,48 +66,48 @@ const cardDatasheetsItems: ICardDatasheetsItems[] = [
     download_url: "CardsDatasheetsPdfDocs",
   },
   {
-    id:  6,
-    title:"ONLYOFFICENon_Profit",
+    id: 6,
+    title: "ONLYOFFICENon_Profit",
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICEDocs",
     image_url: "/images/templates/whitepapers/cards/npo.svg",
     download_url: "CardsDatasheetsPdfDocsForNonprofit",
   },
   {
-    id:  5,
-    title:"ONLYOFFICEPharmaceutical",
+    id: 5,
+    title: "ONLYOFFICEPharmaceutical",
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICEDocs",
     image_url: "/images/templates/whitepapers/cards/pharmaceutical.svg",
     download_url: "CardsDatasheetsPdfDocsForPharmaceutical",
   },
   {
-    id:  4,
-    title:"ONLYOFFICEMedical",
+    id: 4,
+    title: "ONLYOFFICEMedical",
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICEDocs",
     image_url: "/images/templates/whitepapers/cards/medical.svg",
     download_url: "CardsDatasheetsPdfDocsForMedical",
   },
   {
-    id:  3,
-    title:"ONLYOFFICELawFirms",
+    id: 3,
+    title: "ONLYOFFICELawFirms",
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICEWorkspace",
     image_url: "/images/templates/whitepapers/cards/law.svg",
     download_url: "CardsDatasheetsPdfDocsForLawFirms",
   },
   {
-    id:  2,
-    title:"ONLYOFFICEPrivateRooms",
+    id: 2,
+    title: "ONLYOFFICEPrivateRooms",
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICEDocs",
     image_url: "/images/templates/whitepapers/cards/private.svg",
     download_url: "CardsDatasheetsPdfWorkspacePrivateRooms",
   },
   {
-    id:  1,
-    title:"ONLYOFFICEWorkspace",
+    id: 1,
+    title: "ONLYOFFICEWorkspace",
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICEWorkspace",
     image_url: "/images/templates/whitepapers/cards/workspace.svg",

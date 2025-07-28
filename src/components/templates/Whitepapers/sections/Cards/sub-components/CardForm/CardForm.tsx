@@ -13,8 +13,9 @@ import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import {
   ICardFormProp,
   ICheckStatus,
-  IFormData }
-from "@src/components/templates/Whitepapers/Whitepapers.types";
+  IFormData
+}
+  from "@src/components/templates/WhitePapers/WhitePapers.types";
 
 import {
   StyledCardFormAgreementWrapper,
@@ -28,7 +29,7 @@ import {
   StyledCardFormStatusText,
 } from "./CardForm.styled";
 
-const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: ICardFormProp & ILocale ) => {
+const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: ICardFormProp & ILocale) => {
   const { t } = useTranslation("whitepapers");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha | null>(null);

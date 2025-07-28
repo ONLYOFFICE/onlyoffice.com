@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { ICardDatasheetsItems, ICardWhitepapersItems } from "../../../Whitepapers.types";
+import { ICardDatasheetsItems, ICardWhitepapersItems } from "../../../WhitePapers.types";
 import { useTranslation } from "next-i18next";
 
 const useRefineCardsItems = (
