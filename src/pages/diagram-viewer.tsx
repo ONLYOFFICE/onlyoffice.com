@@ -42,7 +42,12 @@ const DiagramViewerPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "diagram-viewer"])),
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "diagram-viewer",
+        "FaqCollapse",
+        "GetStarted"
+      ])),
       locale,
     },
   };

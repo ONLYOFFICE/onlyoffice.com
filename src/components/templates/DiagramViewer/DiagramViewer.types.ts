@@ -8,4 +8,11 @@ interface IFeaturesItems {
   };
 };
 
-export type { IFeaturesItems };
+interface IFaqItems {
+  id: number;
+  title: string;
+  description: string;
+  link?: string;
+}
+
+export type { IFeaturesItems, IFaqItems };
