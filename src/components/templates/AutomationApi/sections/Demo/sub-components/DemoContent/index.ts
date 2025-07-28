@@ -1,1 +1,1 @@
-export { DemoContent } from "./DemoContent";
+export { DemoContentWithPanel } from "./DemoContent";

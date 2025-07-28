@@ -15,6 +15,7 @@ const Carousel = () => {
 
   return (
     <Section
+      background="#f9f9f9"
       desktopSpacing={["184px", "112px"]}
       tabletSpacing={["176px", "112px"]}
       tabletSmallSpacing={["128px", "112px"]}

@@ -3,11 +3,6 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
 import { Container } from "@src/components/ui/Container";
-import { Section } from "@src/components/ui/Section";
-
-const StyledActionsSection = styled(Section)`
-  border-bottom: 1px solid #C4C4C4;
-`
 
 const StyledActionsContainer = styled(Container)`
   display: flex;
@@ -17,20 +12,8 @@ const StyledActionsContainer = styled(Container)`
   gap: 50px;
 `;
 
-const StyledActionsButtonWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-`;
-
-const StyledActionsButton = styled(Button)`
-  width: 56px;
-  height: 36px;
-  background-image: url("/images/templates/see-it-in-action/actions/close-tag.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0;
+const StyledHeading = styled(Heading)`
+  padding: 80px 0 32px;
 `;
 
 const StyledActionsTabList = styled.ul`
@@ -51,26 +34,24 @@ const StyledActionsTabButton = styled(Button)<{
   $isActive: boolean;
 }>`
   color: ${(props) => (props.$isActive ? "#fff" : "#333333")};
-  background-color: ${(props) => (props.$isActive ? "#fff" : "#f5f5f5")};
   transition: background-color 0.2s;
   border: none;
   padding: 24px 16px;
-  flex-grow: 1;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  box-shadow: ${(props) => (props.$isActive ? "0px 7px 15px 0px rgba(85, 85, 85, 0.1)" : "none")};
-
-  &:hover {
-    background-color: ${(props) => (props.$isActive ? "#fff" : "#ebebeb")};
-  }
+  flex-direction: column;
+  gap: 12px;
 `;
 
 const StyledActionsTabHeading = styled(Heading)<{
   $isActive: boolean;
 }>`
   color: ${(props) => (props.$isActive ? "#ff6f3d" : "#333333")};
+  border-bottom: ${(props) => (props.$isActive ? "1px solid #ff6f3d" : "1px solid #f9f9f9")};
+  font-size: 12px;
+  text-transform: uppercase;
   font-weight: 600;
-  text-transform: none;
+  letter-spacing: 0.08em;
   padding: 0;
 
   @media ${device.tablet} {
@@ -80,11 +61,9 @@ const StyledActionsTabHeading = styled(Heading)<{
 `;
 
 export {
-  StyledActionsSection,
   StyledActionsContainer,
-  StyledActionsButtonWrapper,
-  StyledActionsButton,
   StyledActionsTabList,
   StyledActionsTabButton,
   StyledActionsTabHeading,
+  StyledHeading
 };

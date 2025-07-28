@@ -24,6 +24,14 @@ interface IDemoContentProps {
   fileType: string;
   docType: "word" | "cell" | "slide" | "pdf";
   mode: "view" | "edit";
+  permissions?: {
+    edit?: boolean;
+    fillForms?: boolean;
+    comment?: boolean;
+    download?: boolean;
+    print?: boolean;
+    review?: boolean;
+  };
   uiTheme:
     | "theme-light"
     | "theme-classic-light"
@@ -31,7 +39,6 @@ interface IDemoContentProps {
     | "theme-contrast-dark"
     | "default-dark"
     | "default-light";
-  isCollaborate: boolean;
 }
 
 
