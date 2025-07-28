@@ -1,0 +1,6 @@
+{
+  "CheckOutTheCompatibility": "Check out the compatibility with MS Office formats",
+  "CheckOutTheCompatibilityText": "We saved the <0>docx file</0> and <1>xlsx file</1> created by Microsoft in PDF using other suites. Here's the result.",
+  "Documents": "Documents (.docx)",
+  "Spreadsheets": "Spreadsheets (.xlsx)"
+}

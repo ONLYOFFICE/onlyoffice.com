@@ -36,7 +36,6 @@ export const items: IInfoCard[] = [
       isExternal: true,
     },
   },
-
   {
     id: "contact-us",
     heading: "ContactUs",
