@@ -6,6 +6,9 @@ import { Button } from "@src/components/ui/Button";
 import {
   StyledHeroButtonWrapper,
   StyledHeroHeading,
+  StyledHeroImage,
+  StyledHeroImageWrapper,
+  StyledHeroNoWrapText,
   StyledHeroSection,
   StyledHeroSubHeading
 } from "./Hero.styled";
@@ -14,7 +17,13 @@ const Hero = () => {
   const { t } = useTranslation("diagram-viewer");
 
   return (
-    <StyledHeroSection background="#292B6B">
+    <StyledHeroSection
+      background="#292B6B"
+      desktopSpacing={["152px", "0"]}
+      tabletSpacing={["136px", "0"]}
+      tabletSmallSpacing={["136px", "0"]}
+      mobileSpacing={["88px", "40px"]}
+    >
       <Container>
         <StyledHeroHeading
           textAlign="center"
@@ -24,7 +33,8 @@ const Hero = () => {
             t={t}
             i18nKey="OnlineDiagramViewerForYourWebApp"
             components={[
-              <Text key="0" as={"span"} color="main" />
+              <Text key="0" as={"span"} color="main" />,
+              <StyledHeroNoWrapText key="1" as={"span"}  />
             ]}
           />
         </StyledHeroHeading>
@@ -40,8 +50,15 @@ const Hero = () => {
             as="a"
             href="/download#docs-enterprise"
             label={t("GetItNow")}
+            borderRadius="3px"
           />
         </StyledHeroButtonWrapper>
+        <StyledHeroImageWrapper>
+          <StyledHeroImage
+            $imageUrl={t("HeroImageHeader")}
+            $imageUrl2x={t("HeroImageHeader@2x")}
+          />
+        </StyledHeroImageWrapper>
       </Container>
     </StyledHeroSection>
   );

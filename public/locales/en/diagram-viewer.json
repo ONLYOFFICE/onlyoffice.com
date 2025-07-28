@@ -17,5 +17,15 @@
   "ItSupportsTheWidelyUsedMSVisioFileFormatVSDX": "It supports the widely-used Microsoft Visio file format (.vsdx).",
   "IsItPossibleToUseOnlyofficeDiagramViewerWithinMyAppUnderMyBrand": "Is it possible to use ONLYOFFICE Diagram Viewer within my app under my brand?",
   "YesYouCanIntegrateItIntoYourAppPleaseUseOODocsDeveloper": "Yes, you can integrate it into your app. Please use <0>ONLYOFFICE Docs Developer</0>.",
-  "GetItNow": "Get it now"
+  "GetItNow": "Get it now",
+  "HeroImageHeader": "/images/templates/diagram-viewer/hero/en/header.png",
+  "HeroImageHeader@2x": "/images/templates/diagram-viewer/hero/en/header.png",
+  "FeatureImageMulti": "/images/templates/diagram-viewer/features/en/multi-platform-support.png",
+  "FeatureImageMulti@2x": "/images/templates/diagram-viewer/features/en/multi-platform-support@2x.png",
+  "FeatureImageMicrosoft": "/images/templates/diagram-viewer/features/en/microsoft-visio-compatibility.png",
+  "FeatureImageMicrosoft@2x": "/images/templates/diagram-viewer/features/en/microsoft-visio-compatibility@2x.png",
+  "FeatureImageEffortless": "/images/templates/diagram-viewer/features/en/effortless-navigation.png",
+  "FeatureImageEffortless@2x": "/images/templates/diagram-viewer/features/en/effortless-navigation@2x.png",
+  "FeatureImageTailored": "/images/templates/diagram-viewer/features/en/tailored-for-all-users.png",
+  "FeatureImageTailored@2x": "/images/templates/diagram-viewer/features/en/tailored-for-all-users@2x.png"
 }

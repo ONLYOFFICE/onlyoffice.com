@@ -16,5 +16,16 @@
   "WhichFormatDoesOODiagramViewerSupport": "ONLYOFFICE 图表查看器支持哪些格式？",
   "ItSupportsTheWidelyUsedMSVisioFileFormatVSDX": "它支持广泛使用的 Microsoft Visio 文件格式 (.vsdx)。",
   "IsItPossibleToUseOnlyofficeDiagramViewerWithinMyAppUnderMyBrand": "我可以在自己的品牌应用中使用 ONLYOFFICE 图表查看器吗？",
-  "YesYouCanIntegrateItIntoYourAppPleaseUseOODocsDeveloper": "可以，您可通过 <0>ONLYOFFICE 文档开发者版</0>将其集成到您的应用中。"
+  "YesYouCanIntegrateItIntoYourAppPleaseUseOODocsDeveloper": "可以，您可通过 <0>ONLYOFFICE 文档开发者版</0>将其集成到您的应用中。",
+  "GetItNow": "立即获取",
+  "HeroImageHeader": "/images/templates/diagram-viewer/hero/zh/header.png",
+  "HeroImageHeader@2x": "/images/templates/diagram-viewer/hero/zh/header.png",
+  "FeatureImageMulti": "/images/templates/diagram-viewer/features/zh/multi-platform-support.png",
+  "FeatureImageMulti@2x": "/images/templates/diagram-viewer/features/zh/multi-platform-support@2x.png",
+  "FeatureImageMicrosoft": "/images/templates/diagram-viewer/features/zh/microsoft-visio-compatibility.png",
+  "FeatureImageMicrosoft@2x": "/images/templates/diagram-viewer/features/zh/microsoft-visio-compatibility@2x.png",
+  "FeatureImageEffortless": "/images/templates/diagram-viewer/features/zh/effortless-navigation.png",
+  "FeatureImageEffortless@2x": "/images/templates/diagram-viewer/features/zh/effortless-navigation@2x.png",
+  "FeatureImageTailored": "/images/templates/diagram-viewer/features/zh/tailored-for-all-users.png",
+  "FeatureImageTailored@2x": "/images/templates/diagram-viewer/features/zh/tailored-for-all-users@2x.png"
 }
