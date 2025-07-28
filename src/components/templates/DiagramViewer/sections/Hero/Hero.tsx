@@ -22,14 +22,14 @@ const Hero = () => {
         >
           <Trans
             t={t}
-            i18nKey="OnlineDiagramViewer"
+            i18nKey="OnlineDiagramViewerForYourWebApp"
             components={[
               <Text key="0" as={"span"} color="main" />
             ]}
           />
         </StyledHeroHeading>
         <StyledHeroSubHeading
-          label={t("ViewAndNavigate")}
+          label={t("ViewAndNavigateMicrosoftVisioDiagramsWithEase")}
           textAlign="center"
           color="#fff"
           level={3}

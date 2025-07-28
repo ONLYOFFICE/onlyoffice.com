@@ -9,7 +9,7 @@ import { DiagramViewerTemplate } from "@src/components/templates/DiagramViewer";
 import { Footer } from "@src/components/modules/Footer";
 
 const DiagramViewerPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("developer-edition");
+  const { t } = useTranslation("diagram-viewer");
 
   return (
     <Layout>
@@ -17,7 +17,7 @@ const DiagramViewerPage = ({ locale }: ILocale) => {
         <AdventAnnounce locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head title={t("PageTitle")} description={t("PageDescription")} />
+        <Head title={t("DVPageTitle")} description={t("DVMetaDescription")} />
       </Layout.Head>
       <Layout.Header>
         <Header
