@@ -1,0 +1,28 @@
+{
+  "PageTitle": "Software di gestione progetti online | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE permette di pianificare, gestire progetti e tenere traccia delle attività, scadenze. Migliora la produttività del tuo team.",
+
+  "HeroTitle": "Software di gestione del progetto per prestazioni di squadra elevate",
+  "HeroText": "È uno strumento perfetto per progetti veloci o di medie dimensioni. Non più complicato che fare shopping su Amazon.<br/><1>Da CMSWire</1>",
+  "GetItNow": "Ottienilo ora",
+
+  "ProjectHierarchy": "Gerarchia dei Progetti",
+  "ProjectHierarchyText": "Usa traguardi, compiti e sotto-compiti per determinare le priorità tra i tuoi obiettivi primari e le attività giorno per giorno. Aggiungi stati delle attività personalizzati.",
+  "ProjectHierarchyImage": "/images/templates/projects/features/it/project_hierarchy.png",
+  "GanttChart": "Grafico Gannt",
+  "GanttChartText": "Analizza il progresso del progetto e le relazione tra le attività, aggiorna gli eventi programmati e le scadenze in un paio di click.",
+  "GanttChartImage": "/images/templates/projects/features/it/gantt_chart.png",
+  "AccessRights": "Gestione dei diritti di accesso",
+  "AccessRightsText": "Imposta permessi di accesso individuali per elementi di moduli diversi e crea progetti privati. Hai pieno controllo di cosa tutti possono vedere e delle azioni che effettuano.",
+  "AccessRightsImage": "/images/templates/projects/features/it/access_rights.png",
+  "TimeManagement": "Gestione del tempo",
+  "TimeManagementText": "Valuta le performance del gruppo e le attività di progetto usando una funzione di tracciamento in tempo reale e resoconti generati automaticamente.",
+  "TimeManagementImage": "/images/templates/projects/features/it/time_management.png",
+
+  "MobileApps": "Applicazioni mobili",
+  "StayMobile": "Scegli la mobilità!",
+  "WorkWithProjects": "Lavora con progetti dal tuo dispositivo <0>iOS</0> e <1>Android</1>. Modifica la documentazione dei progetti anche sul momento.",
+
+  "ItsAPerfectTool": "È uno strumento perfetto per progetti veloci o di medie dimensioni. Non più complicato che fare shopping su Amazon.",
+  "CmsWire": "CMSWire"
+}

@@ -1,0 +1,26 @@
+{
+  "PageTitle": "Réseau de l'entreprise pour la collaboration | ONLYOFFICE",
+  "PageDescription": "Améliorer la collaboration en équipe avec blogs, forums, signets, wiki.",
+
+  "HeroTitle": "Mieux communiquer au sein de l'équipe",
+  "HeroText": "Logiciel facile à utiliser avec un éventail de fonctions de collaboration conviviales pour les entreprises.<br/><1>Par PCMag</1>",
+  "HeroImage": "/images/templates/community/hero/fr/hero_image.png",
+  "HeroImage2x": "/images/templates/community/hero/fr/hero_image@2x.png",
+  "GetItNow": "Installer sur le serveur",
+
+  "SharingCompanyNews": "Partage des annonces / actualités de l'entreprise",
+  "SharingCompanyNewsText": "Créez un tableau de nouvelles d'entreprise pour publier les dernières actualités, ordres et annonces de votre entreprise. Ajoutez et partagez des signets aux services utiles ou tout simplement intéressants.",
+  "SharingCompanyNewsImage": "/images/templates/community/features/fr/sharing_company_news.png",
+  "CreatingPolls": "Création des sondages",
+  "CreatingPollsText": "Effectuez des recherches, rassemblez des données, ou recueillez les opinions des utilisateurs du bureau à l'aide des sondages. Faites le message dans le blog plus interactif en ajoutant un questionnaire.",
+  "CreatingPollsImage": "/images/templates/community/features/fr/creating_polls.png",
+  "MaintainingBlogs": "Gestion du blog et des forums",
+  "MaintainingBlogsText": "Partagez vos idées, vos connaissances et vos expériences avec les autres en ajoutant des messages à votre blog d'entreprise. Discutez des problèmes en menant des discussions sur le forum.",
+  "MaintainingBlogsImage": "/images/templates/community/features/fr/maintaining_blogs.png",
+  "InstantMessaging": "Application de messagerie instantanée",
+  "InstantMessagingText": "Communiquez avec d'autres utilisateurs en temps réel, organisez des conférences dans les salles de discussion, utilisez une liste de diffusion pour envoyer un message à quelques utilisateurs à la fois.",
+  "InstantMessagingImage": "/images/templates/community/features/fr/instant_messaging.png",
+
+  "EasyToUse": "Ce logiciel simple d'usage fournit un éventail complet d'outils collaboratifs pour l'entreprise.",
+  "PcMag": "PC Mag"
+}

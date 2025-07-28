@@ -1,0 +1,1 @@
+export { MailTemplate } from "./Mail";

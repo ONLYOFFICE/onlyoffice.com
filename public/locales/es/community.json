@@ -1,0 +1,24 @@
+{
+  "PageTitle": "Red corporativa para la colaboración en equipo | ONLYOFFICE",
+  "PageDescription": "Mejore la comunicación entre los miembros de equipo gracias a blogs, foros, marcadores, wiki.",
+
+  "HeroTitle": "Mejora la comunicación dentro de tu equipo",
+  "HeroText": "Programa fácil de usar con buena variedad de posibilidades de colaboración que favorecen a los negocios.<br/><1>PCMag</1>",
+  "GetItNow": "IMPLEMÉNTALO EN TU PROPIO SERVIDOR",
+
+  "SharingCompanyNews": "Posibilidad de compartir las noticias de empresa/anuncios",
+  "SharingCompanyNewsText": "Crea un panel de noticias corporativas para publicar las últimas noticias, pedidos y anuncios de la empresa. Añade y comparte con tus compañeros marcadores a recursos web útiles o interesantes.",
+  "SharingCompanyNewsImage": "/images/templates/community/features/es/sharing_company_news.png",
+  "CreatingPolls": "Conducción de encuestas",
+  "CreatingPollsText": "Conduce una investigación, recoge datos, o recibe comentarios de otros usuarios de oficina usando encuestas. Haz tus comentarios en el foro más interactivos con el uso de cuestionarios.",
+  "CreatingPollsImage": "/images/templates/community/features/es/creating_polls.png",
+  "MaintainingBlogs": "Creación del blog corporativo y foros",
+  "MaintainingBlogsText": "Comparte tus ideas, conocimientos y experiencias con otros añadiendo publicaciones al blog corporativo. Debate los temas que se generen en las discusiones del foro.",
+  "MaintainingBlogsImage": "/images/templates/community/features/es/maintaining_blogs.png",
+  "InstantMessaging": "Mensajería para la comunicación en tiempo real",
+  "InstantMessagingText": "Comunícate con otros usuarios en tiempo real, organiza conferencias en las salas de discusión, usa las listas de correo masivo para enviar un mensaje a varias personas en seguida.",
+  "InstantMessagingImage": "/images/templates/community/features/es/instant_messaging.png",
+
+  "EasyToUse": "Programa fácil de usar con una gama de características de colaboración beneficiosas para los negocios.",
+  "PcMag": "PC Mag"
+}

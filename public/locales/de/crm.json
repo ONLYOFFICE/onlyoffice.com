@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Das benutzerfreundliche CRM-System | ONLYOFFICE",
+  "PageDescription": "Online Kunden-Management-Software. Verwalten Sie Kunden, verfolgen Sie Ihre Verkäufe, senden Sie Rechnungen mit einem vollständige Reihe von Business-Tools.",
+
+  "HeroTitle": "Einfaches CRM-System für Vertriebsmanagement und Produktivitätssteigerung",
+  "HeroText": "Einfaches und benutzerfreundliches CRM-System.<br/><1>Von Live Enterprise</1>",
+  "GetItNow": "Jetzt erhalten",
+
+  "CustomerRelations": "Grundlage zur Verwaltung von Kundenbeziehungen",
+  "CustomerRelationsText": "Erstellen Sie Ihre Kundendatenbank, verwalten Sie Geschäftsprozesse, analysieren Sie potenzielle Geschäftserfolge und verfolgen Sie den Vertrieb, mit allen wesentlichen Funktionen von CRM-Software: Kontakte, Geschäftsmöglichkeiten, Aufgaben, Web-zu-Lead-Formular und Kommunikationsverlauf.",
+  "CustomerRelationsImage": "/images/templates/crm/features/de/customer_relations.png",
+  "Customization": "Kundenspezifische Anpassung des CRM-Systems",
+  "CustomizationText": "Passen Sie die CRM-Software von ONLYOFFICE an Ihre spezifischen Bedürfnisse an: Fügen Sie neue Kontakttypen, Aufgabenkategorien und spezielle Benutzerfelder hinzu. Beschreiben Sie Ihren eigenen Geschäftsprozess mithilfe von anpassbaren Phasen hinsichtlich der Verkaufschancen.",
+  "CustomizationImage": "/images/templates/crm/features/de/customization.png",
+  "RapidEntry": "Schnelle Eingabe von neuen Kunden",
+  "RapidEntryText": "Betten Sie das Web-zu-Lead-Formular von ONLYOFFICE in Ihre Website ein und Informationen über neue Leads werden automatisch in Ihre CRM-Softwaredatenbank übertragen.",
+  "RapidEntryImage": "/images/templates/crm/features/de/rapid_entry.png",
+  "Invoicing": "Rechnungssystem",
+  "InvoicingText": "Erstellen Sie Rechnungen direkt in Ihrem ONLYOFFICE, indem Sie die benötigten Empfänger aus Ihrer CRM-Datenbank auswählen und diesen mit einer gewünschten Geschäftsmöglichkeit verknüpfen.",
+  "InvoicingImage": "/images/templates/crm/features/de/invoicing.png",
+  "CloseIntegration": "Enge E-Mail-Integration",
+  "CloseIntegrationText": "Fügen Sie Kontakte aus E-Mails zu Ihrer Datenbank hinzu, senden Sie Nachrichten, Rechnungen und sehen Sie sich die gesamte Korrespondenz mit Kunden direkt in CRM an. Organisieren Sie Massenmailings direkt von ONLYOFFICE CRM aus.",
+  "CloseIntegrationImage": "/images/templates/crm/features/de/close_integration.png",
+  "CustomerCall": "Kunden anrufen",
+  "CustomerCallText": "Machen Sie Kundenanrufe und beantworten Sie die Fragen des Kunden direkt aus CRM dank der ONLYOFFICE Twilio-Integration.",
+  "CustomerCallImage": "/images/templates/crm/features/de/customer_call.png",
+  "SalesReporting": "Verkaufsberichte",
+  "SalesReportingText": "Erstellen Sie Berichte, um Stärken und Schwächen in Ihren Verkäufen zu identifizieren und analysieren Sie, was in Ihrem Unternehmen vor sich geht.",
+  "SalesReportingImage": "/images/templates/crm/features/de/sales_reporting.png",
+
+  "ItIsPrettyNice": "Einfaches und benutzerfreundliches CRM-System.",
+  "LiveEnterprise": "Live Enterprise"
+}
