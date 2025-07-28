@@ -6,9 +6,9 @@ import { AdventAnnounce } from "@src/components/modules/AdventAnnounce";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
-import { WhitepapersTemplate } from "@src/components/templates/Whitepapers";
+import { WhitePapersTemplate } from "@src/components/templates/WhitePapers";
 
-const WhitepapersPage = ({ locale }: ILocale) => {
+const WhitePapersPage = ({ locale }: ILocale) => {
   const { t } = useTranslation("whitepapers");
 
   return (
@@ -35,7 +35,7 @@ const WhitepapersPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <WhitepapersTemplate locale={locale} />
+        <WhitePapersTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -56,4 +56,4 @@ export async function getStaticProps({ locale }: ILocale) {
   };
 }
 
-export default WhitepapersPage;
+export default WhitePapersPage;

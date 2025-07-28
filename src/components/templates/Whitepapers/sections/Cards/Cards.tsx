@@ -9,7 +9,7 @@ import { cardDatasheetsItems } from "./data/cardDatasheetsItems";
 import { useRefineCardsItems } from "./utils/useRefineCardsItems";
 import { useHandleClickOutside } from "./utils/useHandleClickOutside";
 import { useFilterCounter } from "./utils/useFilterCounter";
-import { ICardsProp, TFilterKey, TSortDateKey } from "../../Whitepapers.types";
+import { ICardsProp, TFilterKey, TSortDateKey } from "../../WhitePapers.types";
 import { ILocale } from "@src/types/locale";
 
 import {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { CardForm } from "../CardForm";
-import { ICardDatasheetsItemsProps } from "@src/components/templates/Whitepapers/Whitepapers.types";
+import { ICardDatasheetsItemsProps } from "@src/components/templates/WhitePapers/WhitePapers.types";
 import { ILocale } from "@src/types/locale";
 
 import {

@@ -5,7 +5,7 @@ import { Cards } from "./sections/Cards";
 import { WhitePapersInput } from "./sub-component/WhitePapersInput";
 import { ILocale } from "@src/types/locale";
 
-const WhitepapersTemplate = ({ locale }: ILocale) => {
+const WhitePapersTemplate = ({ locale }: ILocale) => {
   const [value, setValue] = useState("");
 
   return (
@@ -18,4 +18,4 @@ const WhitepapersTemplate = ({ locale }: ILocale) => {
   );
 };
 
-export { WhitepapersTemplate };
+export { WhitePapersTemplate };

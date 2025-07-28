@@ -1,7 +1,7 @@
-import { ICardWhitepapersItems } from "../../../Whitepapers.types";
+import { ICardWhitepapersItems } from "../../../WhitePapers.types";
 
 const cardWhitepapersItems: ICardWhitepapersItems[] = [
-   {
+  {
     id: 8,
     head: "CardsWhitepapersHeadStressTest",
     title: "CardsWhitepapersTitleStressTest",
@@ -44,7 +44,7 @@ const cardWhitepapersItems: ICardWhitepapersItems[] = [
   {
     id: 3,
     head: "CardsWhitepapersHeadForGovernmentOffices",
-    title:"CardsWhitepapersTitleForGovernmentOffices",
+    title: "CardsWhitepapersTitleForGovernmentOffices",
     date: "2021-02-04T14:00Z",
     download_url: "CardsWhitepapersPdfForGovernmentOffices",
     description: "CardsWhitepapersDescriptionForGovernmentOffices"
@@ -52,7 +52,7 @@ const cardWhitepapersItems: ICardWhitepapersItems[] = [
   {
     id: 2,
     head: "CardsWhitepapersHeadEndToEndDocumentEncryption",
-    title:"CardsWhitepapersTitleEndToEndDocumentEncryption",
+    title: "CardsWhitepapersTitleEndToEndDocumentEncryption",
     date: "2021-02-03T14:00Z",
     download_url: "CardsWhitepapersPdfEndToEndDocumentEncryption",
     description: "CardsWhitepapersDescriptionEndToEndDocumentEncryption"
@@ -60,7 +60,7 @@ const cardWhitepapersItems: ICardWhitepapersItems[] = [
   {
     id: 1,
     head: "CardsWhitepapersHeadDataEncryptionAtRest",
-    title:"CardsWhitepapersTitleDataEncryptionAtRest",
+    title: "CardsWhitepapersTitleDataEncryptionAtRest",
     date: "2020-08-03T14:00Z",
     download_url: "CardsWhitepapersPdfDataEncryptionAtRest",
     description: "CardsWhitepapersDescriptionDataEncryptionAtRest"

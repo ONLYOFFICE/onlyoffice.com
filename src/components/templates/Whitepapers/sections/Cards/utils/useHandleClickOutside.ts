@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { TDropdownType } from "../../../Whitepapers.types";
+import { TDropdownType } from "../../../WhitePapers.types";
 
 const useHandleClickOutside = (setActiveDropdown: React.Dispatch<React.SetStateAction<TDropdownType>>,
   ...refs: React.RefObject<HTMLDivElement | null>[]
