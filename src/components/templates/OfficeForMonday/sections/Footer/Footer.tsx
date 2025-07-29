@@ -1,4 +1,4 @@
-import { useTranslation, Trans } from "next-i18next";
+import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 import {

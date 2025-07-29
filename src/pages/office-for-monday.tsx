@@ -5,7 +5,7 @@ import { Layout } from "@src/components/Layout";
 import { Head } from "@src/components/modules/head/Head";
 import { OfficeForMondayTemplate } from "@src/components/templates/OfficeForMonday";
 
-const OfficeForMondayPage = ({ locale }: ILocale) => {
+const OfficeForMondayPage = () => {
   const { t } = useTranslation("office-for-monday");
 
   return (
