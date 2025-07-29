@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { device } from "@src/utils/device";
 import styled from "styled-components";
 
 const StyledCommentsPanel = styled.div<{ $addMode: boolean; $replyMode: boolean }>`
@@ -24,6 +25,7 @@ const StyledCommentsPanel = styled.div<{ $addMode: boolean; $replyMode: boolean 
     gap: 16px;
     justify-content: center;
     padding: 32px 0 0;
+    flex-wrap: wrap;
   }
 
   .docbuilder-script {
@@ -124,6 +126,18 @@ const StyledCommentsPanel = styled.div<{ $addMode: boolean; $replyMode: boolean 
     background: transparent;
     border-color: #FF6F3D !important;
     color: ${({ $replyMode }) => ($replyMode ? "#fff" : "#FF6F3D")} !important;
+  }
+}
+
+@media ${device.tabletS} {
+  .doc-builder-list-buttons button {
+    white-space: nowrap;
+  }
+
+  h3 {
+    padding: 48px 0 16px;
+    text-align: center;
+    color: #333333;
   }
 }
 `;

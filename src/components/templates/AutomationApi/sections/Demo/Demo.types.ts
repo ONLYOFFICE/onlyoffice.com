@@ -3,6 +3,7 @@ import { IDemoContentProps } from "./sub-components/DemoContent/DemoContent.type
 interface IButtonInfo extends IDemoContentProps {
   id: number;
   text: string;
+  desc: string;
   iconPositionX: number;
   permissions?: {
     edit?: boolean;

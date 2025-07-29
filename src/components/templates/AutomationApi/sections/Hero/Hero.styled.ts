@@ -50,19 +50,15 @@ const StyledHeroHeading = styled(Heading)`
   font-size: 48px;
   line-height: 53px;
 
-  @media ${device.desktop} {
-    max-width: 795px;
-  }
-
   @media ${device.tablet} {
-    font-size: 44px;
-    line-height: 59px;
+    font-size: 36px;
+    line-height: 48px;
     letter-spacing: -0.02em;
   }
 
   @media ${device.mobile} {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 30px;
+    line-height: 40px;
   }
 `;
 
@@ -72,9 +68,14 @@ const StyledHeroSubheading = styled(Heading)`
   line-height: 33px;
   letter-spacing: 0;
 
+  @media ${device.tablet} {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
   @media ${device.mobile} {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 16px;
+    line-height: 24px;
   }
 `;
 

@@ -19,7 +19,8 @@ const StyledLeftTextImgWrapper = styled.div`
   }
 
   @media ${device.tabletS} {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
   }
 `;
 

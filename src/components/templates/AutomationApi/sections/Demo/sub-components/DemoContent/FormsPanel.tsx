@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Heading } from "@src/components/ui/Heading";
+import { device } from "@src/utils/device";
 import styled from "styled-components";
 
 const StyledFormsPanel = styled.div`
@@ -186,6 +187,13 @@ const StyledFormsPanel = styled.div`
   .radio-option {
     display: flex;
     align-items: center;
+  }
+
+  @media ${device.tablet} {
+    .docbuilder-script {
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 24px;
+    }
   }
 `;
 

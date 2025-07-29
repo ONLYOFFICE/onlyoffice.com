@@ -16,10 +16,10 @@ const Carousel = () => {
   return (
     <Section
       background="#f9f9f9"
-      desktopSpacing={["184px", "112px"]}
-      tabletSpacing={["176px", "112px"]}
-      tabletSmallSpacing={["128px", "112px"]}
-      mobileSpacing={["112px", "48px"]}
+      desktopSpacing={["128px", "112px"]}
+      tabletSpacing={["112px", "112px"]}
+      tabletSmallSpacing={["88px", "88px"]}
+      mobileSpacing={["48px", "48px"]}
     >
       <Container>
         <StyledCarouselText>

@@ -25,4 +25,20 @@ export const StyledCarouselText = styled.div`
       padding-bottom: 59%;
     }
   }
+
+  @media ${device.mobile} {
+    h2 {
+      font-size: 20px;
+      line-height: 133%;
+    }
+
+    p {
+      font-size: 14px;
+      padding: 16px 0;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
 `;

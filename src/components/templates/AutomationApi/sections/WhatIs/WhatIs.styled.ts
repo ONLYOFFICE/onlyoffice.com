@@ -16,6 +16,10 @@ const StyledWhatContent = styled.div`
 
   @media ${device.mobile} {
     row-gap: 24px;
+
+    a {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -27,9 +31,8 @@ const StyledWhatHeading = styled(Heading)`
   }
 
   @media ${device.tablet} {
-    font-size: 44px;
+    font-size: 36px;
     line-height: 59px;
-    letter-spacing: -0.02em;
   }
 
   @media ${device.mobile} {
@@ -43,6 +46,7 @@ const StyledWhatSubheading = styled(Heading)`
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  letter-spacing: 0;
 
   @media ${device.mobile} {
     font-size: 14px;

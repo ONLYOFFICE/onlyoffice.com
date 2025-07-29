@@ -14,6 +14,10 @@ const StyledActionsContainer = styled(Container)`
 
 const StyledHeading = styled(Heading)`
   padding: 80px 0 32px;
+
+  @media ${device.tabletS} {
+    padding: 48px 0 0px;
+  }
 `;
 
 const StyledActionsTabList = styled.ul`
@@ -26,7 +30,7 @@ const StyledActionsTabList = styled.ul`
 
   @media ${device.tabletS} {
     overflow-x: scroll;
-    justify-content: flex-start;
+    padding: 0 40px;
   }
 `;
 
@@ -41,6 +45,30 @@ const StyledActionsTabButton = styled(Button)<{
   border-top-right-radius: 3px;
   flex-direction: column;
   gap: 12px;
+
+  @media ${device.mobile} {
+    align-items: flex-start;
+    padding: 16px;
+
+    &:hover {
+      color: #333333;
+      cursor: default;
+    }
+
+    p {
+      text-align: left;
+      text-transform: none;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    h5 {
+      font-size: 16px;
+      text-transform: none;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+  }
 `;
 
 const StyledActionsTabHeading = styled(Heading)<{
@@ -52,12 +80,8 @@ const StyledActionsTabHeading = styled(Heading)<{
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.08em;
-  padding: 0;
-
-  @media ${device.tablet} {
-    font-size: 14px;
-    white-space: nowrap;
-  }
+  padding-bottom: 10px;
+  line-height: 133%;
 `;
 
 export {
