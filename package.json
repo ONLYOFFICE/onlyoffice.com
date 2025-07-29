@@ -39,6 +39,7 @@
     "sjcl": "^1.0.8",
     "styled-components": "^6.1.15",
     "swiper": "^11.2.4",
+    "uuid": "^11.1.0",
     "zustand": "^5.0.5"
   },
   "devDependencies": {
@@ -71,4 +72,4 @@
       "plugin:storybook/recommended"
     ]
   }
-}
+} 

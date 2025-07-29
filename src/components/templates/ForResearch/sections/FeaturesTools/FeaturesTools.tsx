@@ -5,12 +5,25 @@ import {
   StyledFeaturesHeader,
   StyledFeaturesItems,
 } from "./FeaturesTools.styled";
-import { items } from "./data/items";
+import { featureItems as rawFeatureItems } from "./data/items";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
 import { Heading } from "@src/components/ui/Heading";
 
 const FeaturesTools = () => {
   const { t } = useTranslation("for-research");
+
+  const featureItems = rawFeatureItems.map((item) => {
+    if (item.link?.href === "HrefBlogTools") {
+      return {
+        ...item,
+        link: {
+          ...item.link,
+          href: t("HrefBlogTools"),
+        },
+      };
+    }
+    return item;
+  });
 
   return (
     <Section background="#F9F9F9">
@@ -21,7 +34,7 @@ const FeaturesTools = () => {
         </StyledFeaturesHeader>
 
         <StyledFeaturesItems>
-            {items.map((item, index) => (
+            {featureItems.map((item, index) => (
               <FeatureItem
                 key={index}
                 maxWidth="320px"

@@ -9,7 +9,7 @@ import {
   StyledReasonsList,
   StyledFeaturesText
 } from "./FeaturesTools.styled";
-import { featureItems } from "./data/items";
+import { featureItems as rawFeatureItems } from "./data/items";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -24,6 +24,19 @@ const items = [
 
 const FeaturesTools = () => {
   const { t } = useTranslation("for-government");
+
+  const featureItems = rawFeatureItems.map((item) => {
+    if (item.link?.href === "HrefBlogTools") {
+      return {
+        ...item,
+        link: {
+          ...item.link,
+          href: t("HrefBlogTools"),
+        },
+      };
+    }
+    return item;
+  });
 
   return (
     <Section>

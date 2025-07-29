@@ -9,6 +9,7 @@ const StyledSection = styled.section<{
   $tabletSmallSpacing: ISection["tabletSmallSpacing"];
   $mobileSpacing: ISection["mobileSpacing"];
   $borderTop?: boolean;
+  $borderTopColor?: string;
 }>`
   padding: ${(props) =>
     props.$desktopSpacing &&
@@ -42,10 +43,10 @@ const StyledSection = styled.section<{
   }
 
   
-  ${({ $borderTop }) =>
+  ${({ $borderTop, $borderTopColor }) =>
     $borderTop &&
     `
-      border-top: 1px solid #E2E2E2;
+      border-top: 1px solid ${$borderTopColor || "#E2E2E2"};
     `}
 `;
 

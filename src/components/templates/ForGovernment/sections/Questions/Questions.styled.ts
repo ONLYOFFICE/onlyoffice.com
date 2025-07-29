@@ -79,7 +79,7 @@ const StyledQuestionsTitle = styled(Heading)`
 const StyledQuestionsText = styled(Text)`
   font-size: 16px;
   line-height: 24px;
-  max-width: 750px;
+  max-width: 1120px;
 
   @media ${device.mobile} {
     font-size: 13px;
