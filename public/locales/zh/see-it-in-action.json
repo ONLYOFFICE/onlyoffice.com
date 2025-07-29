@@ -1,46 +1,29 @@
 {
-  "PageTitle": "查看 ONLYOFFICE Docs 主要功能 | ONLYOFFICE",
-  "PageDescription": "编辑 docx、xlsx、pptx 文件，查看 PDF，创建可填写表单，实时协作，以检查 ONLYOFFICE 的主要功能。无需下载或注册。",
+  "PageTitle": "检查ONLYOFFICE文档主要功能 | ONLYOFFICE",
+  "PageDescription": "编辑docx、xlsx、pptx文件，查看PDF，创建可填写的表单。试试共同编辑文档，了解ONLYOFFICE主要功能。无需下载或注册。",
 
-  "HeroHeadingSeeIt": "亲身体验",
-  "HeroTextCurious": "想知道界面是怎样的，并无需注册即可尝试主要功能吗？",
+  "HeroHeadingSeeIt": "立即试一试",
+  "HeroTextCurious": "想知道界面是什么样的，并在不注册的情况下试用主要功能吗？",
 
-  "ActionsOpen": "打开",
-  "ActionsEditDocx": "编辑 DOCX",
-  "ActionsExampleDocumentTitleDocx": "示例文档标题.docx",
-  "ActionsEditXlsx": "编辑 XLSX",
-  "ActionsExampleDocumentTitleXlsx": "示例文档标题.xlsx",
-  "ActionsEditPptx": "编辑 PPTX",
-  "ActionsExampleDocumentTitlePptx": "示例文档标题.pptx",
-  "ActionsEditPdf": "编辑 PDF",
-  "ActionsExampleDocumentTitlePdf": "示例文档标题.pdf",
-  "ActionsCreateForm": "创建表单",
+  "ActionsEditDocx": "编辑DOCX",
+  "ActionsExampleDocumentTitleDocx": "文本文档范本.docx",
+  "ActionsEditXlsx": "编辑XLSX",
+  "ActionsExampleDocumentTitleXlsx": "文本文档范本.xlsx",
+  "ActionsEditPptx": "编辑PPTX",
+  "ActionsExampleDocumentTitlePptx": "文本文档范本.pptx",
+  "ActionsEditPdf": "编辑PDF",
+  "ActionsExampleDocumentTitlePdf": "文本文档范本.pdf",
+  "ActionsCreateForm": "立即创建表单",
   "ActionsFillInPdfForm": "填写 PDF 表单",
   "ActionsCollaborate": "协作",
 
   "ActionsDemoPreview": "演示预览",
-  "ActionsDemoModalHeadingOpen": "打开 DOCX 进行编辑",
-  "ActionsDemoModalButtonClose": "关闭",
-
-  "GetStartedHeading": "开始并选择工作地点",
-
-  "GetStartedItemTitleInOnlyOffice": "在 ONLYOFFICE DocSpace 中",
-  "GetStartedItemTextCreate": "在您的安全 DocSpace 中创建房间，邀请人员，从任何桌面或移动设备查看、编辑和协作处理各种文档。",
-  "GetStartedItemLinkStart": "免费开始使用您的帐户",
-
-  "GetStartedItemTitleYouUse": "在您使用的平台中",
-  "GetStartedItemTextConnect": "连接 Docs 以直接从您的应用程序编辑文档。<0>40 多个现成集成</0>：Box、Moodle、Nextcloud、Odoo、Wordpress 等。",
-  "GetStartedItemLink": "立即获取 Docs",
-
-  "GetStartedItemTitleYouBuild": "在您构建的平台中",
-  "GetStartedItemTextIntegrate": "将 Docs 集成到您的服务中，为您的客户提供强大的文档编辑和构建功能，并使用您的品牌。",
-  "GetStartedItemLinkLearn": "了解更多",
-
-  "GetStartedItemTitleYourPc": "从您的电脑",
-  "GetStartedItemTextEdit": "使用适用于 Windows、Linux 和 macOS 的免费办公应用程序离线编辑文档。",
-  "GetStartedItemLinkDownload": "立即下载",
-
-  "GetStartedItemTitleMobile": "从您的移动设备",
-  "GetStartedItemTextWork": "使用适用于 iOS 和 Android 设备的免费应用程序随时随地处理文档。",
-  "GetStartedItemLinkInstall": "立即安装"
+  "ActionsDemoModalHeadingOpenDocx": "打开DOCX进行编辑",
+  "ActionsDemoModalHeadingOpenXlsx": "打开XLSX进行编辑",
+  "ActionsDemoModalHeadingOpenPptx": "打开PPTX进行编辑",
+  "ActionsDemoModalHeadingOpenPdf": "编辑PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "立即创建表单",
+  "ActionsDemoModalHeadingOpenFill": "填写 PDF 表单",
+  "ActionsDemoModalHeadingOpenCollaborate": "协作",
+  "ActionsDemoModalButtonClose": "关闭"
 }

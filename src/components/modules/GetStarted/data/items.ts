@@ -18,7 +18,7 @@ export const items: IGetStartedItems = {
       links: [
         {
           id: "get-started-start-free-account",
-          name: "Start with your free account",
+          name: "StartWithYourFreeAccount",
           url: "/docspace-registration",
         },
       ],
