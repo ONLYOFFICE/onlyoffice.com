@@ -22,7 +22,6 @@ BUILD_LOG="/home/ubuntu/deploy/site_deploy.log"
 # Function to send Telegram notification
 send_telegram_notification() {
     local status="$1"
-    local message="$2"
     
     # Check if Telegram environment variables are set
     if [[ -z "$TELEGRAM_BOT_TOKEN" || -z "$TELEGRAM_CHAT_ID" ]]; then
@@ -31,20 +30,27 @@ send_telegram_notification() {
     fi
     
     # Prepare the message
-    local full_message="🏗️ $APP_NAME Build $status\n\n$message\n\nTimestamp: $CURRENT_DATE"
-    
-    # Send text message
-    curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
-        -d "chat_id=$TELEGRAM_CHAT_ID" \
-        -d "text=$full_message" \
-        -d "parse_mode=HTML" > /dev/null
-    
-    # Send log file if it exists
+    local full_message=""
+    if [[ $status == "FAILED" ]]; then
+        full_message="❌ $APP_NAME build failed during Docker build stage."
+    fi
+    if [[ $status == "SUCCESS" ]]; then
+        full_message="✅ $APP_NAME build and deployment completed successfully."
+    fi
+
+    # Send log file with message as caption if it exists, otherwise send text message
     if [[ -f "$BUILD_LOG" ]]; then
         curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument" \
             -F "chat_id=$TELEGRAM_CHAT_ID" \
             -F "document=@$BUILD_LOG" \
-            -F "caption=Build log file" > /dev/null
+            -F "caption=$full_message" \
+            -F "parse_mode=HTML" > /dev/null
+    else
+        # Fallback to text message if no log file exists
+        curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+            -d "chat_id=$TELEGRAM_CHAT_ID" \
+            -d "text=$full_message" \
+            -d "parse_mode=HTML" > /dev/null
     fi
     
     echo "Telegram notification sent: $status"
@@ -64,7 +70,7 @@ echo "Starting application build..."
 docker run --rm -e NODE_OPTIONS="--max-old-space-size=4096" -v "$BUILD_DIR":"$APP_DIR" -w "$APP_DIR" "$DOCKER_CONTAINER_TAG" sh -c "yarn && yarn build"
 if [ $? -ne 0 ]; then
     echo "Error: Application build failed. Cleaning up build directory and exiting."
-    send_telegram_notification "FAILED" "❌ Application build failed during Docker build stage."
+    send_telegram_notification "FAILED"
     rm -rf "$BUILD_DIR"
     exit 1
 fi
@@ -109,6 +115,6 @@ else
 fi
 
 # Send success notification
-send_telegram_notification "SUCCESS" "✅ Application build and deployment completed successfully. Container is running on port $EXPOSE_PORT."
+send_telegram_notification "SUCCESS"
 
 echo "Build and deployment process completed successfully."
