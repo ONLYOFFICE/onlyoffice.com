@@ -1,5 +1,5 @@
 #!/bin/bash
-source /root/.bashrc
+source /etc/ci_env.sh
 
 ### Settings
 
