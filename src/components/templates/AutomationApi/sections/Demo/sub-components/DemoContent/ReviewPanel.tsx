@@ -27,7 +27,7 @@ const StyledReviewPanel = styled.div`
   button {
     padding: 21px 26px !important;
     background: transparent;
-    border: 1px solid #AAAAAA !important;
+    border: 1px solid #aaaaaa !important;
     color: #444444 !important;
     font-size: 13px;
     text-transform: uppercase;
@@ -39,17 +39,19 @@ const StyledReviewPanel = styled.div`
 
     &:hover {
       background: transparent;
-      border-color: #FF6F3D !important;
-      color: #FF6F3D !important;
+      border-color: #ff6f3d !important;
+      color: #ff6f3d !important;
     }
   }
-`
+`;
 
-interface Props {
-  connector: any;
+interface IReviewPanel {
+  connector?: {
+    executeMethod: (methodName: string, args?: unknown[]) => void;
+  };
 }
 
-export const ReviewPanel = ({ connector }: Props) => {
+export const ReviewPanel = ({ connector }: IReviewPanel) => {
   const { t } = useTranslation("automation-api");
   useEffect(() => {
     if (!connector) return;
@@ -58,8 +60,7 @@ export const ReviewPanel = ({ connector }: Props) => {
     const handleReject = () => connector.executeMethod("RejectReviewChanges");
     const handlePrev = () =>
       connector.executeMethod("MoveToNextReviewChange", [false]);
-    const handleNext = () =>
-      connector.executeMethod("MoveToNextReviewChange");
+    const handleNext = () => connector.executeMethod("MoveToNextReviewChange");
 
     const accept = document.getElementById("accept");
     const reject = document.getElementById("reject");
@@ -85,10 +86,26 @@ export const ReviewPanel = ({ connector }: Props) => {
         <Heading level={3} size={4} label={t("WorkingWithReview")} />
         <Heading level={4} size={5} label={t("ManagesReviewProcess")} />
         <ul className="list-buttons-review doc-builder-list-buttons">
-          <li><button id="accept" className="button transparent">{t("Accept")}</button></li>
-          <li><button id="reject" className="button transparent">{t("Reject")}</button></li>
-          <li><button id="prev" className="button transparent">{"<"}</button></li>
-          <li><button id="next" className="button transparent">{">"}</button></li>
+          <li>
+            <button id="accept" className="button transparent">
+              {t("Accept")}
+            </button>
+          </li>
+          <li>
+            <button id="reject" className="button transparent">
+              {t("Reject")}
+            </button>
+          </li>
+          <li>
+            <button id="prev" className="button transparent">
+              {"<"}
+            </button>
+          </li>
+          <li>
+            <button id="next" className="button transparent">
+              {">"}
+            </button>
+          </li>
         </ul>
       </div>
     </StyledReviewPanel>

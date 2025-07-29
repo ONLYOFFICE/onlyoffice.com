@@ -63,7 +63,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       payload = bodyPayload;
     } else {
       const {
-        type,
         fileType,
         title,
         url,

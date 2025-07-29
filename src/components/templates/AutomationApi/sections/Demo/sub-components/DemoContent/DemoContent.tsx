@@ -9,11 +9,19 @@ import { ReviewPanel } from "./ReviewPanel";
 import { FormsPanel } from "./FormsPanel";
 import Script from "next/script";
 
+interface IOnlyOfficeConnector {
+  executeMethod(methodName: string, ...args: unknown[]): void;
+}
+
 declare global {
   interface Window {
-    docEditor: any;
-    connector: any;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     DocsAPI?: any;
+    docEditor?: {
+      createConnector?: () => IOnlyOfficeConnector;
+      destroyEditor?: () => void;
+    };
+    connector?: IOnlyOfficeConnector;
   }
 }
 
@@ -25,19 +33,20 @@ export const DemoContentWithPanel = ({
   mode,
   uiTheme,
   permissions,
-  id, 
+  id,
 }: IDemoContentProps & { id: number }) => {
   const { token, config } = useFetchApi(fileType, title, url, mode, uiTheme);
   const { locale } = useRouter();
   const { isMobile } = useIsMobile();
 
-  const [editorConnector, setEditorConnector] = useState<any>(null);
+  const [editorConnector, setEditorConnector] = useState(null);
   const [readyToInit, setReadyToInit] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const check = () =>
-        !!document.getElementById("editorContainer") && !!window.DocsAPI?.DocEditor;
+        !!document.getElementById("editorContainer") &&
+        !!window.DocsAPI?.DocEditor;
       if (check()) {
         setReadyToInit(true);
       } else {
@@ -82,25 +91,25 @@ export const DemoContentWithPanel = ({
     } catch (err) {
       console.error("Failed to initialize ONLYOFFICE editor:", err);
     }
-  }, [readyToInit, token, config, docType, isMobile, locale]);
+  }, [readyToInit, token, config, docType, isMobile, locale, permissions]);
 
   return (
     <>
       <Script
         src={`${process.env.NEXT_PUBLIC_ONLYOFFICE_DOCUMENT_SERVER_URL}/web-apps/apps/api/documents/api.js`}
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
       />
       <div style={{ flex: 1, minWidth: 300, width: "100%" }}>
-          {editorConnector ? (
-            id === 3 ? (
-              <FormsPanel connector={editorConnector} />
-            ) : id === 2 ? (
-              <ReviewPanel connector={editorConnector} />
-            ) : (
-              <CommentsPanel connector={editorConnector} />
-            )
+        {editorConnector ? (
+          id === 3 ? (
+            <FormsPanel connector={editorConnector} />
+          ) : id === 2 ? (
+            <ReviewPanel connector={editorConnector} />
           ) : (
-            <div></div>
+            <CommentsPanel connector={editorConnector} />
+          )
+        ) : (
+          <div></div>
         )}
       </div>
       <StyledDemoContent>

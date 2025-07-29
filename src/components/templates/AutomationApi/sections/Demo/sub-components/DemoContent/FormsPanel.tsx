@@ -42,14 +42,14 @@ const StyledFormsPanel = styled.div`
       font-size: 16px;
       color: #333;
       border: 1px solid #ccc;
-      font-family: 'Open Sans';
+      font-family: "Open Sans";
     }
   }
 
   .input-wrapper {
     position: relative;
-    border: solid 1px #AAAAAA;
-    background: #FFFFFF;
+    border: solid 1px #aaaaaa;
+    background: #ffffff;
     box-sizing: border-box;
     max-width: 336px;
     width: 100%;
@@ -71,7 +71,7 @@ const StyledFormsPanel = styled.div`
     }
 
     label {
-      color: #AAAAAA;
+      color: #aaaaaa;
       position: absolute;
       z-index: 2;
       left: 16px;
@@ -150,7 +150,7 @@ const StyledFormsPanel = styled.div`
     }
 
     .radio-option input[type="radio"]:checked + label:before {
-      content: '';
+      content: "";
       position: absolute;
       left: -42px;
       top: -5px;
@@ -163,7 +163,7 @@ const StyledFormsPanel = styled.div`
     }
 
     .radio-option input[type="radio"]:checked + label:after {
-      content: '';
+      content: "";
       width: 8px;
       height: 8px;
       background: #333333;
@@ -197,45 +197,78 @@ const StyledFormsPanel = styled.div`
   }
 `;
 
-interface ContentControl {
-  Tag: string;
-  InternalId: string;
-  GroupKey?: string;
-  Type: "input" | "radio";
-  Value: any;
-}
-
-interface Person {
-  [key: string]: string;
-}
-
-interface Props {
-  connector: any;
-}
-
-interface RadioOption {
+interface IRadioOption {
   InternalId: string;
   Tag: string;
   checked: boolean;
 }
 
-export const FormsPanel = ({ connector }: Props) => {
+interface IBaseContentControl {
+  Tag: string;
+  InternalId: string;
+  GroupKey?: string;
+  Type: "input" | "radio";
+  Value?: string | boolean | IRadioOption[];
+}
+
+interface IInputContentControl extends IBaseContentControl {
+  Type: "input";
+  Value: string;
+}
+
+interface IRadioContentControl extends IBaseContentControl {
+  Type: "radio";
+  Value: IRadioOption[];
+}
+
+type IContentControl = IInputContentControl | IRadioContentControl;
+
+interface IPerson {
+  FirstName: string;
+  LastName: string;
+  PostalCode: string;
+  Sex?: "Male" | "Female";
+  [key: string]: string | undefined;
+}
+
+interface IContentControlChangeEvent {
+  InternalId: string;
+  Tag?: string;
+}
+
+interface IFormControl {
+  InternalId: string;
+  Tag?: string;
+}
+
+interface IFormsPanel {
+  connector: {
+    executeMethod: <T = unknown>(
+      method: string,
+      args: unknown[] | null,
+      callback?: (data: T) => void,
+    ) => void;
+    attachEvent: (event: string, handler: (...args: unknown[]) => void) => void;
+  };
+}
+
+export const FormsPanel = ({ connector }: IFormsPanel) => {
   const { t } = useTranslation("automation-api");
-  const [contentControls, setContentControls] = useState<ContentControl[]>([]);
-  const [persons, setPersons] = useState<Person[]>([]);
+  const [contentControls, setContentControls] = useState<IContentControl[]>([]);
+  const [persons, setPersons] = useState<IPerson[]>([]);
   const [selectedValue, setSelectedValue] = useState("");
 
-  const isFilled = (val: any) => !!val?.toString().trim();
+  const isFilled = (val: string) => !!val?.toString().trim();
 
   useEffect(() => {
     if (!connector) return;
 
-    connector.executeMethod("GetAllContentControls", null, (data: any[]) => {
+    connector.executeMethod("GetAllContentControls", null, (data) => {
       if (!Array.isArray(data)) return;
 
       const enrichedControls = data
-        .filter(c => c.Tag)
-        .map(control => {
+        .filter((c) => c.Tag)
+        .map((control) => {
           if (["Male", "Female"].includes(control.Tag)) {
             return {
               ...control,
@@ -251,15 +284,15 @@ export const FormsPanel = ({ connector }: Props) => {
           };
         });
 
-      const uniqueControls: ContentControl[] = [];
+      const uniqueControls: IContentControl[] = [];
       const seenGroups = new Set();
 
       for (const ctrl of enrichedControls) {
         if (ctrl.Type === "radio" && ctrl.GroupKey) {
           if (seenGroups.has(ctrl.GroupKey)) continue;
           const grouped = enrichedControls
-            .filter(c => c.GroupKey === ctrl.GroupKey)
-            .map(c => ({
+            .filter((c) => c.GroupKey === ctrl.GroupKey)
+            .map((c) => ({
               Tag: c.Tag,
               InternalId: c.InternalId,
               checked: false,
@@ -278,55 +311,67 @@ export const FormsPanel = ({ connector }: Props) => {
       setContentControls(uniqueControls);
     });
 
-    connector.attachEvent("onChangeContentControl", (ctrl: any) => {
-      connector.executeMethod("GetFormValue", [ctrl.InternalId], (value: string) => {
-        setContentControls(prev =>
-          prev.map(c => {
-            if (c.Type === "radio") return c;
-            if (c.InternalId === ctrl.InternalId) {
-              return { ...c, Value: value };
-            }
-            return c;
-          })
-        );
-      });
+    connector.attachEvent("onChangeContentControl", (...args: unknown[]) => {
+      const ctrl = args[0] as IContentControlChangeEvent;
+      connector.executeMethod(
+        "GetFormValue",
+        [ctrl.InternalId],
+        (value: string) => {
+          setContentControls((prev) =>
+            prev.map((c) => {
+              if (c.Type === "radio") return c;
+              if (c.InternalId === ctrl.InternalId) {
+                return { ...c, Value: value };
+              }
+              return c;
+            }),
+          );
+        },
+      );
     });
   }, [connector]);
 
   useEffect(() => {
     fetch("/js/persons.json")
-      .then(res => res.json())
+      .then((res) => res.json())
       .then(setPersons);
   }, []);
 
   const handlePersonSelect = (postalCode: string) => {
     setSelectedValue(postalCode);
-    const person = persons.find(p => p.PostalCode === postalCode);
+    const person = persons.find((p) => p.PostalCode === postalCode);
     if (!person) return;
 
     Object.entries(person).forEach(([tag, value]) => {
       if (tag === "Sex") {
         const selectedSex = value === "Male" ? "Male" : "Female";
-        const radioGroup = contentControls.find(c => c.Tag === "Sex" && c.Type === "radio");
+        const radioGroup = contentControls.find(
+          (c) => c.Tag === "Sex" && c.Type === "radio",
+        );
 
         if (radioGroup && Array.isArray(radioGroup.Value)) {
-          const selectedOption = radioGroup.Value.find((opt: any) => opt.Tag === selectedSex);
+          const selectedOption = (radioGroup.Value as IRadioOption[]).find(
+            (opt) => opt.Tag === selectedSex,
+          );
           if (selectedOption) {
-            connector.executeMethod("SetFormValue", [selectedOption.InternalId, "true"]);
+            connector.executeMethod("SetFormValue", [
+              selectedOption.InternalId,
+              "true",
+            ]);
             setTimeout(() => {
-              setContentControls(prev =>
-                prev.map(ctrl => {
+              setContentControls((prev) =>
+                prev.map((ctrl) => {
                   if (ctrl.Type === "radio" && ctrl.Tag === "Sex") {
                     return {
                       ...ctrl,
-                      Value: ctrl.Value.map((r: RadioOption) => ({
+                      Value: ctrl.Value.map((r: IRadioOption) => ({
                         ...r,
-                        checked: r.InternalId === selectedOption.InternalId
-                      }))
+                        checked: r.InternalId === selectedOption.InternalId,
+                      })),
                     };
                   }
                   return ctrl;
-                })
+                }),
               );
             }, 100);
           }
@@ -334,31 +379,45 @@ export const FormsPanel = ({ connector }: Props) => {
         return;
       }
 
-      connector.executeMethod("GetFormsByTag", [tag], (forms: any[]) => {
-        if (forms.length > 0) {
-          connector.executeMethod("SetFormValue", [forms[0].InternalId, value ?? ""]);
-        }
-      });
+      connector.executeMethod<IFormControl[]>(
+        "GetFormsByTag",
+        [tag],
+        (forms) => {
+          if (forms.length > 0) {
+            connector.executeMethod("SetFormValue", [
+              forms[0].InternalId,
+              value ?? "",
+            ]);
+          }
+        },
+      );
     });
 
     const userTags = new Set(Object.keys(person));
-    setContentControls(prev =>
-      prev.map(ctrl => {
+    setContentControls((prev) =>
+      prev.map((ctrl) => {
         if (ctrl.Type === "input") {
           const newValue = person[ctrl.Tag] ?? "";
           const shouldClear = !userTags.has(ctrl.Tag) || newValue.trim() === "";
 
           if (shouldClear) {
-            connector.executeMethod("GetFormsByTag", [ctrl.Tag], (forms: any[]) => {
-              if (forms.length > 0) {
-                connector.executeMethod("SetFormValue", [forms[0].InternalId, ""]);
-              }
-            });
-            return { ...ctrl, Value: "" }; 
+            connector.executeMethod<IFormControl[]>(
+              "GetFormsByTag",
+              [ctrl.Tag],
+              (forms) => {
+                if (forms.length > 0) {
+                  connector.executeMethod("SetFormValue", [
+                    forms[0].InternalId,
+                    "",
+                  ]);
+                }
+              },
+            );
+            return { ...ctrl, Value: "" };
           }
         }
         return ctrl;
-      })
+      }),
     );
   };
 
@@ -368,19 +427,23 @@ export const FormsPanel = ({ connector }: Props) => {
 
   const handleRadioChange = (groupTag: string, id: string) => {
     connector.executeMethod("SetFormValue", [id, "true"]);
-    setContentControls(prev =>
-      prev.map(ctrl => {
-        if (ctrl.Type === "radio" && ctrl.Tag === groupTag) {
+    setContentControls((prev) =>
+      prev.map((ctrl) => {
+        if (
+          ctrl.Type === "radio" &&
+          ctrl.Tag === groupTag &&
+          Array.isArray(ctrl.Value)
+        ) {
           return {
             ...ctrl,
-            Value: ctrl.Value.map((r: any) => ({
+            Value: ctrl.Value.map((r: IRadioOption) => ({
               ...r,
               checked: r.InternalId === id,
             })),
           };
         }
         return ctrl;
-      })
+      }),
     );
   };
 
@@ -399,7 +462,7 @@ export const FormsPanel = ({ connector }: Props) => {
             <option value="" disabled>
               {t("ChooseExample")}
             </option>
-            {persons.map(p => (
+            {persons.map((p) => (
               <option key={p.PostalCode} value={p.PostalCode}>
                 {p.FirstName} {p.LastName}
               </option>
@@ -408,14 +471,19 @@ export const FormsPanel = ({ connector }: Props) => {
         </div>
 
         <div id="controlsBlock" className="docbuilder-script">
-          {contentControls.map(ctrl => (
-            <div key={ctrl.InternalId || ctrl.Tag} className={`input-wrapper ${ctrl.Type === "radio" ? "radio-wrapper" : ""}`}>
+          {contentControls.map((ctrl) => (
+            <div
+              key={ctrl.InternalId || ctrl.Tag}
+              className={`input-wrapper ${ctrl.Type === "radio" ? "radio-wrapper" : ""}`}
+            >
               {ctrl.Type === "input" && (
                 <>
                   <input
                     className={`content-control-input ${isFilled(ctrl.Value) ? "filled" : ""}`}
                     value={ctrl.Value}
-                    onChange={(e) => handleInputChange(ctrl.InternalId, e.target.value)}
+                    onChange={(e) =>
+                      handleInputChange(ctrl.InternalId, e.target.value)
+                    }
                     required
                   />
                   <label>{ctrl.Tag.replace(/([a-z])([A-Z])/g, "$1 $2")}</label>
@@ -427,21 +495,24 @@ export const FormsPanel = ({ connector }: Props) => {
                   <span className="radio-group-label">
                     {ctrl.Tag.replace(/([a-z])([A-Z])/g, "$1 $2")}
                   </span>
-                  {ctrl.Value.map((r: any) => (
-                    <div key={r.InternalId} className="radio-option">
-                      <input
-                        type="radio"
-                        id={r.InternalId}
-                        name={ctrl.Tag}
-                        checked={r.checked}
-                        className="content-control-radio"
-                        onChange={() => handleRadioChange(ctrl.Tag, r.InternalId)}
-                      />
-                      <label htmlFor={r.InternalId} className="label-radio">
-                        {r.Tag.replace(/([a-z])([A-Z])/g, "$1 $2")}
-                      </label>
-                    </div>
-                  ))}
+                  {ctrl.Type === "radio" &&
+                    ctrl.Value.map((r) => (
+                      <div key={r.InternalId} className="radio-option">
+                        <input
+                          type="radio"
+                          id={r.InternalId}
+                          name={ctrl.Tag}
+                          checked={r.checked}
+                          className="content-control-radio"
+                          onChange={() =>
+                            handleRadioChange(ctrl.Tag, r.InternalId)
+                          }
+                        />
+                        <label htmlFor={r.InternalId} className="label-radio">
+                          {r.Tag.replace(/([a-z])([A-Z])/g, "$1 $2")}
+                        </label>
+                      </div>
+                    ))}
                 </div>
               )}
             </div>

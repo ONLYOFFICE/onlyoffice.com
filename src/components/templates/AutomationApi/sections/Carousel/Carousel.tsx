@@ -1,7 +1,5 @@
-import { useTranslation, Trans } from "next-i18next";
-import {
-  StyledCarouselText,
-} from "./Carousel.styled";
+import { useTranslation } from "next-i18next";
+import { StyledCarouselText } from "./Carousel.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
@@ -25,22 +23,22 @@ const Carousel = () => {
         <StyledCarouselText>
           <Heading level={2} size={2} label={t("ReadyToUse")} />
           <Text size={1} label={t("UsingAutomationAPI")} />
-        <ImageCarousel
-          imageHeight={575}
-          items={items.map((item) => ({
-            image: {
-              url: t(item.image.url),
-              url2x: item.image.url2x ? t(item.image.url2x) : undefined,
-            },
-          }))}
-        />
-        <Link
-          href="/office-for-odoo.aspx"
-          color="main"
-          textUnderline
-          hover="underline-none"
-          label={t("LearnMore")}
-        />
+          <ImageCarousel
+            imageHeight={575}
+            items={items.map((item) => ({
+              image: {
+                url: t(item.image.url),
+                url2x: item.image.url2x ? t(item.image.url2x) : undefined,
+              },
+            }))}
+          />
+          <Link
+            href="/office-for-odoo.aspx"
+            color="main"
+            textUnderline
+            hover="underline-none"
+            label={t("LearnMore")}
+          />
         </StyledCarouselText>
       </Container>
     </Section>
