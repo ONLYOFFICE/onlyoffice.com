@@ -1,11 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useTranslation } from "next-i18next";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
-const StyledCommentsPanel = styled.div<{ $addMode: boolean; $replyMode: boolean }>`
+const StyledCommentsPanel = styled.div<{
+  $addMode: boolean;
+  $replyMode: boolean;
+}>`
   h3 {
     padding: 56px 0 16px;
     text-align: center;
@@ -77,72 +80,79 @@ const StyledCommentsPanel = styled.div<{ $addMode: boolean; $replyMode: boolean 
     font-size: 14px;
   }
 
-.doc-builder-list-buttons button {
-  padding: 21px 26px !important;
-  background: transparent;
-  border: 1px solid #AAAAAA !important;
-  color: #444444 !important;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 12px;
-  letter-spacing: 0.04em;
-  border-radius: 9px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
+  .doc-builder-list-buttons button {
+    padding: 21px 26px !important;
     background: transparent;
-    border-color: #FF6F3D !important;
-    color: #FF6F3D !important;
-  }
-  
-  ${({ $addMode }) => $addMode && `
+    border: 1px solid #aaaaaa !important;
+    color: #444444 !important;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: transparent;
+      border-color: #ff6f3d !important;
+      color: #ff6f3d !important;
+    }
+
+    ${({ $addMode }) =>
+      $addMode &&
+      `
     pointer-events: none;
     opacity: 0.4;
   `}
-}
-
-.doc-builder-list-buttons li:nth-child(3) button {
-  pointer-events: auto !important;
-  opacity: 1 !important;
-  background: ${({ $addMode }) => ($addMode ? "#FF6F3D" : "transparent")} !important;
-  border-color: ${({ $addMode }) => ($addMode ? "#FF6F3D" : "#AAAAAA")} !important;
-  color: ${({ $addMode }) => ($addMode ? "#fff" : "#444444")} !important;
-
-  &:hover {
-    background: transparent;
-    border-color: #FF6F3D !important;
-    color: ${({ $addMode }) => ($addMode ? "#fff" : "#FF6F3D")} !important;
-  }
-}
-
-.doc-builder-list-buttons li:nth-child(1) button {
-  background: ${({ $replyMode }) => ($replyMode ? "#FF6F3D" : "transparent")} !important;
-  border-color: ${({ $replyMode }) => ($replyMode ? "#FF6F3D" : "#AAAAAA")} !important;
-  color: ${({ $replyMode }) => ($replyMode ? "#fff" : "#444444")} !important;
-
-  &:hover {
-    background: transparent;
-    border-color: #FF6F3D !important;
-    color: ${({ $replyMode }) => ($replyMode ? "#fff" : "#FF6F3D")} !important;
-  }
-}
-
-@media ${device.tabletS} {
-  .doc-builder-list-buttons button {
-    white-space: nowrap;
   }
 
-  h3 {
-    padding: 48px 0 16px;
-    text-align: center;
-    color: #333333;
+  .doc-builder-list-buttons li:nth-child(3) button {
+    pointer-events: auto !important;
+    opacity: 1 !important;
+    background: ${({ $addMode }) =>
+      $addMode ? "#FF6F3D" : "transparent"} !important;
+    border-color: ${({ $addMode }) =>
+      $addMode ? "#FF6F3D" : "#AAAAAA"} !important;
+    color: ${({ $addMode }) => ($addMode ? "#fff" : "#444444")} !important;
+
+    &:hover {
+      background: transparent;
+      border-color: #ff6f3d !important;
+      color: ${({ $addMode }) => ($addMode ? "#fff" : "#FF6F3D")} !important;
+    }
   }
-}
+
+  .doc-builder-list-buttons li:nth-child(1) button {
+    background: ${({ $replyMode }) =>
+      $replyMode ? "#FF6F3D" : "transparent"} !important;
+    border-color: ${({ $replyMode }) =>
+      $replyMode ? "#FF6F3D" : "#AAAAAA"} !important;
+    color: ${({ $replyMode }) => ($replyMode ? "#fff" : "#444444")} !important;
+
+    &:hover {
+      background: transparent;
+      border-color: #ff6f3d !important;
+      color: ${({ $replyMode }) =>
+        $replyMode ? "#fff" : "#FF6F3D"} !important;
+    }
+  }
+
+  @media ${device.tabletS} {
+    .doc-builder-list-buttons button {
+      white-space: nowrap;
+    }
+
+    h3 {
+      padding: 48px 0 16px;
+      text-align: center;
+      color: #333333;
+    }
+  }
 `;
 
-interface CommentData {
+interface ICommentData {
   Text: string;
   Time: string;
   UserName: string;
@@ -153,17 +163,60 @@ interface CommentData {
   }[];
 }
 
-interface Comment {
+interface IComment {
   Id: string;
-  Data: CommentData;
+  Data: ICommentData;
 }
 
-interface Props {
-  connector: any;
+interface IConnectorEvents {
+  onAddComment: IComment;
+  onRemoveComment: IComment;
+  onChangeCommentData: IComment;
 }
 
-export const CommentsPanel = ({ connector }: Props) => {
-  const [comments, setComments] = useState<Comment[]>([]);
+interface IConnectorMethods {
+  GetAllComments: {
+    args: null;
+    callback: (data: IComment[]) => void;
+  };
+  AddComment: {
+    args: [{ Text: string; UserName: string; Time: string }];
+    callback?: void;
+  };
+  RemoveComments: {
+    args: [string[]];
+    callback?: void;
+  };
+  ChangeComment: {
+    args: [string, ICommentData];
+    callback?: void;
+  };
+  MoveToComment: {
+    args: [string];
+    callback?: void;
+  };
+}
+
+interface ICommentsPanel {
+  connector: {
+    executeMethod<K extends keyof IConnectorMethods>(
+      method: K,
+      args: IConnectorMethods[K]["args"],
+      callback?: IConnectorMethods[K]["callback"],
+    ): void;
+    attachEvent<K extends keyof IConnectorEvents>(
+      event: K,
+      handler: (val: IConnectorEvents[K]) => void,
+    ): void;
+    detachEvent<K extends keyof IConnectorEvents>(
+      event: K,
+      handler: (val: IConnectorEvents[K]) => void,
+    ): void;
+  };
+}
+
+export const CommentsPanel = ({ connector }: ICommentsPanel) => {
+  const [comments, setComments] = useState<IComment[]>([]);
   const [indexComment, setIndexComment] = useState(0);
   const [reply, setReply] = useState("");
   const [comment, setComment] = useState("");
@@ -173,20 +226,25 @@ export const CommentsPanel = ({ connector }: Props) => {
   const { t } = useTranslation("automation-api");
   const current = comments[indexComment];
 
-  const renderComment = (commentList: Comment[], currentIndex: number) => {
-    setComments(commentList);
-    setIndexComment(currentIndex);
-    if (commentList.length > 0 && connector?.executeMethod) {
-      connector.executeMethod("MoveToComment", [commentList[currentIndex].Id]);
-    }
-  };
+  const renderComment = useCallback(
+    (commentList: IComment[], currentIndex: number) => {
+      setComments(commentList);
+      setIndexComment(currentIndex);
+      if (commentList.length > 0 && connector?.executeMethod) {
+        connector.executeMethod("MoveToComment", [
+          commentList[currentIndex].Id,
+        ]);
+      }
+    },
+    [connector],
+  );
 
   useEffect(() => {
     if (!connector) return;
     let isMounted = true;
     const localConnector = connector;
 
-    const onAdd = (val: Comment) => {
+    const onAdd = (val: IComment) => {
       if (!isMounted || !val) return;
       setComments((prev) => {
         if (!prev.find((c) => c.Id === val.Id)) {
@@ -197,7 +255,7 @@ export const CommentsPanel = ({ connector }: Props) => {
       setIndexComment(0);
     };
 
-    const onRemove = (val: Comment) => {
+    const onRemove = (val: IComment) => {
       if (!isMounted || !val) return;
       setComments((prev) => {
         const updated = prev.filter((c) => c.Id !== val.Id);
@@ -207,18 +265,21 @@ export const CommentsPanel = ({ connector }: Props) => {
       });
     };
 
-    const onChange = (val: Comment) => {
+    const onChange = (val: IComment) => {
       if (!isMounted || !val) return;
       setComments((prev) => {
         const updated = prev.map((c) =>
-          c.Id === val.Id ? { ...c, Data: val.Data } : c
+          c.Id === val.Id ? { ...c, Data: val.Data } : c,
         );
-        renderComment(updated, updated.findIndex((c) => c.Id === val.Id));
+        renderComment(
+          updated,
+          updated.findIndex((c) => c.Id === val.Id),
+        );
         return updated;
       });
     };
 
-    localConnector.executeMethod("GetAllComments", null, (data: Comment[]) => {
+    localConnector.executeMethod("GetAllComments", null, (data: IComment[]) => {
       if (!isMounted || !Array.isArray(data)) return;
       const currentId = comments[indexComment]?.Id;
       const newIndex = data.findIndex((c) => c.Id === currentId);
@@ -241,7 +302,7 @@ export const CommentsPanel = ({ connector }: Props) => {
         console.warn("Could not detach events", err);
       }
     };
-  }, [connector]);
+  }, [comments, connector, indexComment, renderComment]);
 
   const handleAddReply = () => {
     if (!reply.trim() || !connector || !current) return;
@@ -264,9 +325,9 @@ export const CommentsPanel = ({ connector }: Props) => {
   const handleToggleReplyMode = () => {
     if (replyMode) {
       if (reply.trim()) {
-        handleAddReply(); 
+        handleAddReply();
       } else {
-        setReplyMode(false); 
+        setReplyMode(false);
       }
     } else {
       setReplyMode(true);
@@ -286,12 +347,12 @@ export const CommentsPanel = ({ connector }: Props) => {
   const handleToggleAddComment = () => {
     if (addMode) {
       if (comment.trim()) {
-        handleAddComment(); 
+        handleAddComment();
       } else {
-        setAddMode(false); 
+        setAddMode(false);
       }
     } else {
-      setAddMode(true); 
+      setAddMode(true);
     }
   };
 
@@ -324,9 +385,15 @@ export const CommentsPanel = ({ connector }: Props) => {
 
         {!addMode ? (
           current ? (
-            <div id="commentsBlock" className="docbuilder-script" spellCheck={false}>
+            <div
+              id="commentsBlock"
+              className="docbuilder-script"
+              spellCheck={false}
+            >
               <div id="comment" className="comment">
-                <div className="comment-author">Author: {current.Data.UserName}</div>
+                <div className="comment-author">
+                  Author: {current.Data.UserName}
+                </div>
                 <div className="comment-date">
                   Date: {new Date(+current.Data.Time).toLocaleString()}
                 </div>
@@ -361,7 +428,9 @@ export const CommentsPanel = ({ connector }: Props) => {
               )}
             </div>
           ) : (
-            <div id="empty-comment"><Text>{t("ThereAreNoComments")}</Text></div>
+            <div id="empty-comment">
+              <Text>{t("ThereAreNoComments")}</Text>
+            </div>
           )
         ) : (
           <textarea

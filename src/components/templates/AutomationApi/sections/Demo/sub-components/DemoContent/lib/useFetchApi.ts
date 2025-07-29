@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
-import { IActionsContentProps, ITokenResponse } from "../ActionsContent.types";
+import {
+  IActionsContentProps,
+  ITokenResponse,
+} from "@src/components/templates/SeeItInAction/sections/Actions/sub-components/ActionsContent/ActionsContent.types";
 
 const useFetchApi = (
   fileType: IActionsContentProps["fileType"],
-  title:    IActionsContentProps["title"],
-  url:      IActionsContentProps["url"],
-  mode:     IActionsContentProps["mode"],
-  uiTheme:  IActionsContentProps["uiTheme"]
+  title: IActionsContentProps["title"],
+  url: IActionsContentProps["url"],
+  mode: IActionsContentProps["mode"],
+  uiTheme: IActionsContentProps["uiTheme"],
 ) => {
   const [token, setToken] = useState("");
   const [config, setConfig] = useState<ITokenResponse["config"] | null>(null);
@@ -37,6 +40,6 @@ const useFetchApi = (
   }, [fileType, title, url, mode, uiTheme]);
 
   return { token, config };
-}
+};
 
 export { useFetchApi };

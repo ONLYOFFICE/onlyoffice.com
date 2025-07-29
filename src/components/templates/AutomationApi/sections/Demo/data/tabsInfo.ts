@@ -1,12 +1,5 @@
 import { IButtonInfo } from "../Demo.types";
 
-let isMobile: boolean = false;
-const isMobileOnInit = () => {
-  if (typeof window === "undefined") return;
-  isMobile = window.innerWidth <= 768;
-}
-isMobileOnInit();
-
 export const tabsInfo: IButtonInfo[] = [
   {
     id: 1,
@@ -49,5 +42,5 @@ export const tabsInfo: IButtonInfo[] = [
     permissions: {
       fillForms: true,
     },
-    },
+  },
 ];
