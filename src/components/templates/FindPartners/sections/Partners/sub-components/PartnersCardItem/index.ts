@@ -1,0 +1,1 @@
+export { PartnersCardItem } from './PartnersCardItem';
