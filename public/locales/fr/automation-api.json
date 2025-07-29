@@ -1,0 +1,53 @@
+{
+  "PageTitle": "API d'automatisation | ONLYOFFICE",
+  "PageDescription": "Utilisez vos éléments d'interface personnalisés pour interagir avec le contenu du document depuis l'extérieur.",
+
+  "HeroTitle": "API d'automatisation de ONLYOFFICE",
+  "HeroSubtitle" : "Placez n'importe quel contrôle dans l'interface de votre plateforme et gérez le contenu du document depuis l'extérieur des éditeurs",
+  "HeroButton" : "DEMANDER DÉMO GRATUITE",
+
+  "WhatIsTitle" : "Qu'est-ce que l'<0>API d'automatisation</0>",
+  "WhatIsSubtitle" : "<0>L'API d'automatisation d'ONLYOFFICE</0> avec la classe Connecteur permet d'interagir avec les documents bureautiques depuis l'extérieur. Vous pouvez obtenir les changements effectués dans les fichiers en utilisant vos propres éléments d'interface personnalisés.",
+  "CheckExamples" : "Vérifier les exemples",
+  "Webinar" : "API d'automatisation de ONLYOFFICE [Webinar 2024]",
+  "WatchOurWebinar" : "Regarder notre webinaire",
+
+  "WhatAutomationAPICan" : "Ce que peut faire l'<0>API d'automatisation</0>",
+  "MostPopularExamples" : "Exemples les plus populaires",
+  "WorkingWithComments" : "Travail avec les commentaires",
+  "WorkingWithReview" : "Travail avec les modifications de révision",
+  "FillingOutForms" : "Remplissage des formulaires",
+  "CollectsAllTheCommentsFrom" : "Collecte tous les commentaires du document et les affiche dans l'interface personnalisée.",
+  "ThereAreNoComments" : "Aucun commentaire ne figure dans le document.",
+  "SendReply" : "AJOUTER UN COMMENTAIRE",
+  "AddReply" : "AJOUTER UN COMMENTAIRE",
+  "Delete" : "SUPPRIMER",
+  "SendComment" : "AJOUTER UN COMMENTAIRE",
+  "AddComment" : "AJOUTER UN COMMENTAIRE",
+  "EnterYourReplyHere" : "Entrez votre réponse ici",
+  "EnterYourCommentHere" : "Entrez votre commentaire ici",
+  "ManagesReviewProcess" : "Gère le processus de révision à partir d'une source externe.",
+  "Accept" : "ACCEPTER",
+  "Reject" : "REJETER",
+  "FillsInTheEmptyCells" : "Remplit les cellules vides du formulaire donné.",
+  "ChooseExample" : "Choisir un exemple",
+
+  "ReadyToUse" : "Exemple prêt à l'emploi : intégration Odoo",
+  "UsingAutomationAPI" : "En utilisant l'API Automation, ONLYOFFICE permet aux utilisateurs d'Odoo de créer et de remplir des modèles avec des données disponibles dans Odoo.",
+  "Screen1ImgUrl" : "/images/templates/automation-api/carousel/fr/create_new_form_templates_for_any_odoo_module.png",
+  "Screen1ImgUrl2x" : "/images/templates/automation-api/carousel/fr/create_new_form_templates_for_any_odoo_module@2x.png",
+  "Screen2ImgUrl" : "/images/templates/automation-api/carousel/fr/edit_the_existing_form_templates.png",
+  "Screen2ImgUrl2x" : "/images/templates/automation-api/carousel/fr/edit_the_existing_form_templates@2x.png",
+  "Screen3ImgUrl" : "/images/templates/automation-api/carousel/fr/fill_templates_out_with_data_available_in_odoo.png",
+  "Screen3ImgUrl2x" : "/images/templates/automation-api/carousel/fr/fill_templates_out_with_data_available_in_odoo@2x.png",
+  "LearnMore" : "En savoir plus",
+
+  "HowToGetONLYOFFICEAutomationAPI": "Comment obtenir l'API d'automatisation de ONLYOFFICE",
+  "AutomationAPISsAPartOf": "L'API d'automatisation fait partie de <0>ONLYOFFICE Docs Developer</0> qui fournit une suite bureautique en ligne avec des éditeurs pour les documents, les feuilles de calcul, les présentations et les PDF destinés à être intégrés dans votre propre application ou plateforme web. L'accès à l'API d'automatisation est fourni dans le cadre de la <1>licence de ONLYOFFICE Docs Developer</1>.",
+  "GetA30DayTrial": "Obtenez une version <0>d'essai de 30</0> jours de ONLYOFFICE Docs Developer avec l'API d'automatisation incluse pour le tester gratuitement.",
+  "DownloadNow": "TÉLÉCHARGER MAINTENANT",
+
+  "HaveAnyQuestions": "Avez-vous des questions sur l'API d'automatisation de ONLYOFFICE ? Nous serons ravis de vous consulter et de discuter de tous les détails.",
+  "HaveAnyQuestionsText": "L'équipe d'experts est là pour vous aider à chaque étape. <2 /> <2 /> Si vous avez des questions concernant la prévente, contactez-nous à <0>sales@onlyoffice.com</0> ou fixez un rendez-vous pour que notre équipe vous appelle. <2 /> <2 /> Pour tout problème technique, envoyez-nous un message à <1>support@onlyoffice.com</1>.",
+  "GetInTouch": "NOUS CONTACTER"
+}

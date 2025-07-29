@@ -29,6 +29,10 @@ const StyledFeaturesContent = styled.div`
     }
   }
 
+  .featureList::before {
+    top: 12px !important;
+  }
+
   > div {
     padding: 112px 0;
 
@@ -92,6 +96,10 @@ const StyledFeaturesContent = styled.div`
         flex: 0;
       } 
     }
+  }
+
+  .buttons {
+    gap: 16px;
   }
     
   @media ${device.mobile} {

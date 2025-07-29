@@ -1,0 +1,1 @@
+export { BestLibreofficeAlternativeTemplate } from "./BestLibreofficeAlternative";
