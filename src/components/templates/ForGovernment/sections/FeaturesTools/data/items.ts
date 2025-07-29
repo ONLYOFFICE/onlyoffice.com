@@ -65,7 +65,7 @@ export const featureItems: IFeatureItemExtended[] = [
     heading: "FeatureToolsHead5",
     text: "FeatureToolsText5",
     link: {
-      href: "https://www.onlyoffice.com/blog/2018/05/how-onlyoffice-complies-with-gdpr/",
+      href: "HrefBlogTools",
       label: "LearnMoreTools",
       isExternal: true,
     },

@@ -29,7 +29,7 @@
   "EnterpriseFeature28" : "SaaS delivery model with an ability to host the editors on a dedicated server maintained by the ONLYOFFICE team.",
   "EnterpriseImgUrl2" : "/images/templates/for-enterprises/features/enterprise_ready.svg",
   "TryNow": "Try now",
-  "SeePrices": "<0>See prices</0>",
+  "SeePrices": "See prices",
 
   "EnterpriseHead3": "<0>All-in-one</0> digital workplace to manage every business process",
   "EnterpriseSub3": "Replacement for Google Workspace, Microsoft 365, Zoho Workplace",
@@ -61,9 +61,8 @@
   "EnterpriseFeature54" : "Ability to edit local documents on device.",
   "EnterpriseFeature55" : "Quick access to docs stored in your cloud.",
   "EnterpriseImgUrl5" : "/images/templates/for-enterprises/features/mobile_apps.svg",
-  "iOS": "Learn more about apps for <0>iOS</0>",
-  "Android": "/ <1>Android</1>",
-  "LearnMore": "<0>Learn more</0>",
+  "IOSAndroidLink": "Learn more about apps for <0>iOS</0> / <1>Android</1>",
+  "LearnMore": "Learn more",
 
   "AddYourServiceAsAPlugin": "Add your service as a plugin to ONLYOFFICE",
   "ThinkYourWebServiceCanBeUseful": "Think your web-service can be useful to ONLYOFFICE users? Create a plugin for ONLYOFFICE <0>DocSpace</0> or <1>Docs</1> and make the integration real!",

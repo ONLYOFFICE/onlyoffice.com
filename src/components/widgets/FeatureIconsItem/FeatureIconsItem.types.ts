@@ -2,11 +2,16 @@ import { IContentImage } from "../ContentImage";
 
 export interface IFeatureIconsItemButton {
   label: string;       
-  href: string;
+  href?: string;
   isExternal?: boolean;
   isPrimary?: boolean;
   isLink?: boolean;
   isServer?: boolean;
+
+    links?: {
+    href: string;
+    isExternal?: boolean;
+  }[];
 }
 
 export interface IFeatureIconsItemTextItem {

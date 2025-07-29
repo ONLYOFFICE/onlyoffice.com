@@ -10,9 +10,9 @@ const Features = () => {
 
   return (
     <Section
-      desktopSpacing={["112px", "112px"]}
-      mobileSpacing={["0", "48px"]}
-      tabletSpacing={["48px", "48px"]}
+      desktopSpacing={["0px", "0px"]}
+      mobileSpacing={["0px", "0px"]}
+      tabletSpacing={["0px", "0px"]}
     >
       <Container>
         <StyledFeaturesContent>

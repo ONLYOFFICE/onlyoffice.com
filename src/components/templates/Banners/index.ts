@@ -1,0 +1,1 @@
+export { BannersTemplate } from "./Banners";
