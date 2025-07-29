@@ -1,0 +1,33 @@
+{
+  "PageTitle": "LibreOffice alternative - web based office suite | ONLYOFFICE",
+  "PageDescription": "Online alternative to LibreOffice. Download for Windows, Linux, Mac OS. Android and iOS apps are also available. Rich functionality and collaboration features.",
+
+  "HeroTitle": "<0>ONLYOFFICE Docs</0>, the best LibreOffice alternative",
+  "GetOODocsNow": "GET ONLYOFFICE DOCS NOW",
+  "CompatibleWithMicrosoftOfficeFormats": "100% compatible with Microsoft Office formats",
+
+  "ReasonsTitle": "<0>6 reasons</0> why ONLYOFFICE Docs is the best LibreOffice alternative",
+  "MaximumCompatibility": "Maximum compatibility with MS Office files",
+  "MaximumCompatibilityText": "ONLYOFFICE Docs uses OOXML as a core format which guarantees the highest compatibility with Microsoft Word, Excel, and PowerPoint files (.docx, .xlsx, and .pptx).",
+  "DesktopApp": "Web, desktop, mobile",
+  "DesktopAppText": "With ONLYOFFICE, you can work online from any browser and OS, edit docs offline with the free desktop apps for Windows, Linux, and macOS, as well as use free mobile apps for Android and iOS.",
+  "DocsSheetsSlides": "Docs, sheets, slides, forms, PDF",
+  "DocsSheetsSlidesText": "Edit and collaborate on text documents and spreadsheets of any complexity, create stunning presentations, view and annotate PDFs. Build professional-looking forms and templates from scratch or any existing DOCX file, let other users fill them out, and save forms as fillable PDF files.",
+  "Seamless": "Seamless collaboration",
+  "SeamlessText": "ONLYOFFICE Docs provides users with character- and paragraph-level co-editing modes, review and track changes, version history, comments and mentions, built-in chat, plugins for audio and video calls. You can easily share your documents with flexible permissions such as commenting, reviewing, filling forms, custom filtering.",
+  "Flexibility": "Flexibility",
+  "FlexibilityText": "You are free to choose how to use the online editors: as a part of the room-based environment ONLYOFFICE DocSpace, within any sync&share or ECM service like Nextcloud, Alfresco, Confluence, Seafile, etc., or integrated into the solution you’re building yourself.",
+  "AIHelper": "AI helper",
+  "AIHelperText": "Make use of the AI assistant plugin to boost work with your texts: run word analysis and explore the meaning of unknown words, generate passages, images and keywords, summarize and translate stories, find synonyms.",
+
+  "PresentationTitle": "Watch <0>this presentation</0> to see the difference between office suites:",
+
+  "OODocsVsLibreOfficeVsOpenOffice": "ONLYOFFICE vs LibreOffice vs OpenOffice [Tested Side By Side]",
+  "OODocsVsLibreOfficeVsOpenOfficeLink": "https://windowsreport.com/onlyoffice-libreoffice-openoffice-comparison/?from=comparison",
+  "OODocsVsLibreOfficeVsOpenOfficeText": "Windows Report presents Microsoft Office alternatives compared side by side - including ONLYOFFICE, LibreOffice and OpenOffice. Windows Report is a highly trusted web resource for windows-related products & services, including news and tips for tech users.",
+  "OODocsVsLibreOffice": "ONLYOFFICE vs LibreOffice: what to choose when you decide to ditch Microsoft",
+  "OODocsVsLibreOfficeLink": "https://www.onlyoffice.com/blog/2018/08/onlyoffice-vs-libreoffice-what-to-choose-when-you-decide-to-ditch-microsoft?from=comparison",
+  "OODocsVsLibreOfficeText": "Yes, Microsoft Office is cool but one day it will become burdensome for your budget. Or you may want to give it up following your rebellious open source spirit. No matter what your reasoning is, you’ll need a good replacement. So… ONLYOFFICE or LibreOffice?",
+
+  "WhatWentWrong": "What went wrong in LibreOffice? <0>Click here</0> to see details"
+}

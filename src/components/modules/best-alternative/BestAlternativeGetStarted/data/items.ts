@@ -1,0 +1,84 @@
+import { ISolutionCard } from "@src/components/widgets/SolutionCard";
+
+interface ISolutionCardExtended extends Omit<ISolutionCard, "text"> {
+  text?: { label?: string; links?: { url: string }[] } | string;
+}
+
+export interface IGetStartedItems {
+  items: ISolutionCardExtended[];
+  largeItems: ISolutionCard[];
+}
+
+export const items: IGetStartedItems = {
+  items: [
+    {
+      imgUrl: "/images/modules/best-alternative/best-alternative-get-started/docspace.svg",
+      heading: "InOODocSpace",
+      text: "CreateRoomsWithinYourSecureDocSpace",
+      links: [
+        {
+          id: "best-alternative-get-started-start-free-account",
+          name: "Start with your free account",
+          url: "/docspace-registration",
+        },
+      ],
+    },
+    {
+      imgUrl: "/images/modules/best-alternative/best-alternative-get-started/connectors.svg",
+      heading: "InThePlatformYouUse",
+      text: {
+        label: "ConnectDocsToEditDocuments",
+        links: [
+          {
+            url: "/all-connectors",
+          },
+        ],
+      },
+      links: [
+        {
+          id: "best-alternative-get-started-all-connectors",
+          name: "GetDocsNow",
+          url: "/download#docs-enterprise",
+        },
+      ],
+    },
+    {
+      imgUrl: "/images/modules/best-alternative/best-alternative-get-started/developers.svg",
+      heading: "InThePlatformYouBuild",
+      text: "IntegrateDocsIntoYourService",
+      links: [
+        {
+          id: "best-alternative-get-started-learn-more",
+          name: "LearnMore",
+          url: "/developer-edition",
+        },
+      ],
+    },
+  ],
+  largeItems: [
+    {
+      imgUrl: "/images/modules/best-alternative/best-alternative-get-started/from-pc.svg",
+      heading: "FromYourPC",
+      text: "EditDocsOfflineWithFreeOfficeApps",
+      links: [
+        {
+          id: "best-alternative-get-started-download-now",
+          name: "DownloadNow",
+          url: "/download-desktop",
+        },
+      ],
+    },
+    {
+      imgUrl: "/images/modules/best-alternative/best-alternative-get-started/from-mobile.svg",
+      heading: "FromYourMobileDevices",
+      text: "WorkOnDocumentsOnTheGoWithFreeApps",
+      links: [
+        {
+          id: "best-alternative-get-started-install-now",
+          name: "InstallNow",
+          url: "/download-desktop#mobile",
+        },
+      ],
+    },
+  ],
+};
