@@ -14,7 +14,7 @@ import {
   ICardFormProp,
   ICheckStatus,
   IFormData }
-from "@src/components/templates/Whitepapers/Whitepapers.types";
+from "@src/components/templates/WhitePapers/WhitePapers.types";
 
 import {
   StyledCardFormAgreementWrapper,

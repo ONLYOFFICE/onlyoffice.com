@@ -1,4 +1,4 @@
-import { ICardWhitepapersItems } from "../../../Whitepapers.types";
+import { ICardWhitepapersItems } from "../../../WhitePapers.types";
 
 const cardWhitepapersItems: ICardWhitepapersItems[] = [
    {

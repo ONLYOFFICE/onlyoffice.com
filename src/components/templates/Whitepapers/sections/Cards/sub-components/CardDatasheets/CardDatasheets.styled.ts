@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ICardDatasheetsItems } from "@src/components/templates/Whitepapers/Whitepapers.types";
+import { ICardDatasheetsItems } from "@src/components/templates/WhitePapers/WhitePapers.types";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";

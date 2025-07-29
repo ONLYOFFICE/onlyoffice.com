@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Hero } from "./sections/Hero";
 import { Join } from "./sections/Join";
 import { Cards } from "./sections/Cards";
-import { WhitepapersInput } from "./sub-component/WhitepapersInput";
+import { WhitepapersInput } from "./sub-component/WhitePapersInput";
 import { ILocale } from "@src/types/locale";
 
 const WhitepapersTemplate = ({ locale }: ILocale) => {

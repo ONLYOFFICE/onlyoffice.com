@@ -9,7 +9,7 @@ import {
   StyledWhitepapersInputSubtitle,
   StyledWhitepapersInputWrapper,
   StyledWhitepapersSection,
-} from "./WhitepapersInput.styled";
+} from "./WhitePapersInput.styled";
 
 const WhitepapersInput = ({ value, setValue }: {
   value: string;

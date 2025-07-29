@@ -1,4 +1,4 @@
-import { ICardDatasheetsItems } from "../../../Whitepapers.types";
+import { ICardDatasheetsItems } from "../../../WhitePapers.types";
 
 const cardDatasheetsItems: ICardDatasheetsItems[] = [
   {

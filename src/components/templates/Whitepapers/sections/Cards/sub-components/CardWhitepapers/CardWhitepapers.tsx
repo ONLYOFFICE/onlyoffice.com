@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next';
 import { Text } from '@src/components/ui/Text';
 import { CardForm } from '../CardForm';
 import { formatDateCards } from '../../utils/formatDateCards';
-import { ICardWhitepapersItemsProps } from '@src/components/templates/Whitepapers/Whitepapers.types';
+import { ICardWhitepapersItemsProps } from '@src/components/templates/WhitePapers/WhitePapers.types';
 import { ILocale } from '@src/types/locale';
 
 import {
