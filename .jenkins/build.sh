@@ -26,7 +26,7 @@ cd "$BUILD_DIR"
 
 # Build application with error handling
 echo "Starting application build..."
-docker run --rm -v "$BUILD_DIR":"$APP_DIR" -w "$APP_DIR" "$DOCKER_CONTAINER_TAG" sh -c "yarn && yarn build"
+docker run --rm -e NODE_OPTIONS="--max-old-space-size=4096" -v "$BUILD_DIR":"$APP_DIR" -w "$APP_DIR" "$DOCKER_CONTAINER_TAG" sh -c "yarn && yarn build"
 if [ $? -ne 0 ]; then
     echo "Error: Application build failed. Cleaning up build directory and exiting."
     rm -rf "$BUILD_DIR"
