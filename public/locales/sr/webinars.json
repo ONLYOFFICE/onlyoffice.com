@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Watch ONLYOFFICE webinars | ONLYOFFICE",
+  "PageDescription": "Registrujte se za naše vebinare da biste saznali kako efikasno raditi sa ONLYOFFICE-om",
+
+  "HeroHeadingWatch": "Gledajte ONLYOFFICE <0>vebinare</0>",
+  "HeroTextTune": "Uključite se u naše vebinare uživo i naučite najbolje načine za rad sa ONLYOFFICE-om",
+
+  "UpcomingHeading": "Predstojeći vebinari uživo",
+
+  "UpcomingModalProduct": "Proizvod",
+  "UpcomingModalBy": "Od strane",
+  "UpcomingModalLanguage": "Jezik",
+  "UpcomingModalPlease": "Molimo Vas da popunite sva polja sa zvezdicama (*). Dobićete poruku e-pošte sa linkom na izabrani vebinar.",
+  "UpcomingModalFullName": "Puno ime",
+  "UpcomingModalCompanyName": "Naziv kompanije",
+  "UpcomingModalEmail": "Email",
+  "UpcomingModalSendQuestions": "Pošaljite pitanja za vebinar",
+  "UpcomingModalPlaceholderName": "First name Last name",
+
+  "FullNameIsIncorrect": "Full name is incorrect",
+  "FullNameIsEmpty": "Full name is empty",
+
+  "CompanyNameIsEmpty": "Naziv kompanije je prazno",
+
+  "EmailIsEmpty": "Email is empty",
+  "EmailIsIncorrect": "Email is incorrect",
+
+  "AgreementByClicking": "Klikom na Gledaj vebinar, razumete i slažete se sa našom <0>SLA</0> i <1>Izjavom o privatnosti</1>.",
+
+  "ModalSendButton": "Gledajte vebinar",
+  "ModalCloseButton": "Otkažite",
+
+  "RequestSuccessfull": "Uspešno ste se registrovali za ONLYOFFICE vebinar. <br> Link za vebinar je poslat na vašu adresu e-pošte.",
+
+  "WatchHeading": "Gledajte na zahtev",
+  "WatchText": "Propustili ste vebinar? Gledajte reprizu u bilo kom trenutku.",
+  "WatchNow": "Gledajte sada",
+
+  "en": "In English",
+  "ja": "In Japanese",
+  "zh": "In Chinese",
+  "fr": "In French",
+  "de": "In German",
+  "es": "In Spanish",
+  "pt": "In Portuguese",
+  "it": "In Italian",
+  "cs": "In Czech",
+  "nl": "In Dutch",
+  "ru": "In Russian",
+  "sr": "In Serbian",
+
+  "ContributeHeading": "Doprinesite svojim idejama",
+  "ContributeTextHave": "Imate sjajnu ideju koji vebinar treba da održimo?",
+  "ContributeTextGet": "Stupite u kontakt sa našim timom u <0>press@onlyoffice.com</0> ili uđite u naše DM-ove na <1>Tvitter-u</1>."
+}
