@@ -1,0 +1,288 @@
+{
+  "PageTitle": "ONLYOFFICE - Cloud Office Applications",
+
+  "HeroHeadingWeAreHiring": "Přijímáme zaměstnance",
+  "HeroTextJoin": "Přidejte se k <0>týmu ONLYOFFICE</0> ještě dnes",
+
+  "JobHeading": "Volná pracovní místa",
+
+  "JobFiltersDepartment": "Oddělení",
+  "JobFiltersCountry": "Země",
+  "JobFiltersReset": "Vše",
+
+  "JobCardDepartmentSales": "Prodej",
+  "JobCardDepartmentCustomerCare": "Péče o zákazníky",
+  "JobCardDepartmentMarketing": "Marketing",
+  "JobCardDepartmentTechnicalSupport": "Technická podpora",
+
+  "JobCardLocationRemote": "Vzdálený přístup",
+  "JobCardTimeFullTime": "Na plný úvazek",
+  "JobCardLanguageEnDe": "Angličtina a němčina",
+  "JobCardLanguageEnFr": "Angličtina a francouzština",
+  "JobCardLanguageEnJa": "Angličtina a japonština",
+  "JobCardLanguageEnAr": "Angličtina a arménština",
+  "JobCardLanguageEnSr": "Angličtina a srbština",
+  "JobCardLanguageEnCn": "Angličtina a čínština",
+
+  "JobCardHeadingRequirements": "Požadavky",
+  "JobCardHeadingSkills": "Dovednosti",
+  "JobCardHeadingBenefits": "Výhody",
+
+  "JobCard1Country": "Německo",
+  "JobCard1Title": "Account manager Německo",
+  "JobCard1Description": "Hledáme Account Managera zaměřeného na zákazníky, který bude vytvářet dlouhodobé a důvěryhodné vztahy s našimi zákazníky v Německu.",
+  "JobCard1Requirements": [
+    "Budovat a udržovat silné a dlouhodobé vztahy s klienty založené na důvěře a respektu",
+    "Spolupracovat s týmy profesionálních služeb a péče o zákazníky s cílem lépe porozumět potřebám a výzvám zákazníků a reagovat na ně",
+    "Pomáhat zákazníkům s technickými dotazy",
+    "Identifikovat klienty, kteří by využili funkce Enterprise a další služby",
+    "Poskytovat konzultace zákazníkům o tom, jak vylepšit ONLYOFFICE, aby lépe vyhovoval jejich potřebám",
+    "Spravovat a vyjednávat o obnovení",
+    "Pomáhat zákazníkům s dotazy na vyúčtování a platby"
+  ],
+  "JobCard1Skills": [
+    "Více než 2 roky zkušeností se službami zákazníkům nebo s řízením obchodních účtů",
+    "Pohodlná práce se vzdálenými týmy",
+    "Spolehlivý, chytrý, poctivý, organizovaný, pozitivní, reprezentativní, sebemotivovaný",
+    "Výborné komunikační dovednosti v písemném a mluveném projevu v angličtině a němčině",
+    "Pohodlná práce s CRM, kancelářskými a video komunikačními nástroji",
+    "Rychle se učit a ochotně používat nové nástroje",
+    "Prokazatelná schopnost žonglovat s více projekty správy účtů najednou a zároveň si zachovat důraz na detail"
+  ],
+  "JobCard1Benefits": [
+    "Flexibilní pracovní doba, která se přizpůsobí domácímu životu",
+    "Práce na dálku a nezávislost na místě",
+    "Mezinárodní tým a open source komunita",
+    "Motivovaní a kreativní kolegové",
+    "Konkurenční plat plus provize"
+  ],
+
+  "JobCard2Country": "Francie",
+  "JobCard2Title": "Account manager Francie",
+  "JobCard2Description": "Hledáme Account managera zaměřeného na zákazníky a orientovaného na příjmy, který bude vytvářet dlouhodobé a důvěryhodné vztahy s našimi zákazníky ve Francii.",
+  "JobCard2Requirements": [
+    "Budovat a udržovat silné a dlouhodobé vztahy s klienty založené na důvěře a respektu",
+    "Spolupracovat s týmy profesionálních služeb a péče o zákazníky s cílem lépe porozumět potřebám a výzvám zákazníků a reagovat na ně",
+    "Pomáhat zákazníkům s technickými dotazy",
+    "Identifikovat klienty, kteří by využili funkce Enterprise a další služby",
+    "Poskytovat konzultace zákazníkům o tom, jak vylepšit ONLYOFFICE, aby lépe vyhovoval jejich potřebám",
+    "Spravovat a vyjednávat o obnovení",
+    "Pomáhat zákazníkům s dotazy na vyúčtování a platby"
+  ],
+  "JobCard2Skills": [
+    "Více než 2 roky zkušeností se službami zákazníkům nebo s řízením obchodních účtů",
+    "Pohodlná práce se vzdálenými týmy",
+    "Spolehlivý, chytrý, poctivý, organizovaný, pozitivní, reprezentativní, sebemotivovaný",
+    "Výborné komunikační dovednosti v písemném a mluveném projevu v angličtině a francouzštině",
+    "Pohodlná práce s CRM, kancelářskými a video komunikačními nástroji",
+    "Rychle se učit a ochotně používat nové nástroje",
+    "Prokazatelná schopnost žonglovat s více projekty správy účtů najednou a zároveň si zachovat důraz na detail"
+  ],
+  "JobCard2Benefits": [
+    "Flexibilní pracovní doba, která se přizpůsobí domácímu životu",
+    "Práce na dálku a nezávislost na místě",
+    "Mezinárodní tým a open source komunita",
+    "Motivovaní a kreativní kolegové",
+    "Konkurenční plat plus provize"
+  ],
+
+  "JobCard3Country": "Japonsko",
+  "JobCard3Title": "Account manager Japonsko",
+  "JobCard3Description": "Hledáme Account Managera zaměřeného na zákazníky, který bude vytvářet dlouhodobé a důvěryhodné vztahy s našimi zákazníky v Japonsku.",
+  "JobCard3Requirements": [
+    "Budovat a udržovat silné a dlouhodobé vztahy s klienty založené na důvěře a respektu",
+    "Spolupracovat s týmy profesionálních služeb a péče o zákazníky s cílem lépe porozumět potřebám a výzvám zákazníků a reagovat na ně",
+    "Pomáhat zákazníkům s technickými dotazy",
+    "Identifikovat klienty, kteří by využili funkce Enterprise a další služby",
+    "Poskytovat konzultace zákazníkům o tom, jak vylepšit ONLYOFFICE, aby lépe vyhovoval jejich potřebám",
+    "Spravovat a vyjednávat o obnovení",
+    "Pomáhat zákazníkům s dotazy na vyúčtování a platby"
+  ],
+  "JobCard3Skills": [
+    "Více než 2 roky zkušeností se službami zákazníkům nebo s řízením obchodních účtů",
+    "Pohodlná práce se vzdálenými týmy",
+    "Spolehlivý, chytrý, poctivý, organizovaný, pozitivní, reprezentativní, sebemotivovaný",
+    "Výborné komunikační dovednosti v angličtině a japonštině",
+    "Pohodlná práce s CRM, kancelářskými a video komunikačními nástroji",
+    "Rychle se učit a ochotně používat nové nástroje",
+    "Prokazatelná schopnost žonglovat s více projekty správy účtů najednou a zároveň si zachovat důraz na detail"
+  ],
+  "JobCard3Benefits": [
+    "Flexibilní pracovní doba, která se přizpůsobí domácímu životu",
+    "Práce na dálku a nezávislost na místě",
+    "Mezinárodní tým a open source komunita",
+    "Motivovaní a kreativní kolegové",
+    "Konkurenční plat plus provize"
+  ],
+
+  "JobCard4Country": "Německo",
+  "JobCard4Title": "Obchodní zástupce Německo",
+  "JobCard4Description": "Hledáme obchodního zástupce orientovaného na příjmy, který bude aktivně vyhledávat a zapojovat potenciální zákazníky.",
+  "JobCard4Requirements": [
+    "Spravovat příležitosti v průběhu celého cyklu",
+    "Prezentovat, propagovat a prodávat produkty / služby ONLYOFFICE stávajícím a potenciálním zákazníkům",
+    "Navazovat, rozvíjet a udržovat pozitivní obchodní a zákaznické vztahy",
+    "Koordinovat prodejní úsilí se členy týmu, dalšími odděleními a partnery",
+    "Analyzovat potenciál území / trhů, sledovat prodeje",
+    "Poskytovat zprávy o potřebách, problémech, zájmech zákazníků, konkurenčních aktivitách a potenciálu pro nové služby"
+  ],
+  "JobCard4Skills": [
+    "Vynikající prodejní, vyjednávací a komunikační dovednosti",
+    "Pohodlná práce se vzdálenými týmy",
+    "Spolehlivý, chytrý, poctivý, organizovaný, pozitivní, reprezentativní, sebemotivovaný",
+    "Výborné komunikační dovednosti v písemném a mluveném projevu v angličtině a němčině",
+    "Pohodlná práce s CRM, kancelářskými a video komunikačními nástroji",
+    "Rychle se učit a ochotně používat nové nástroje",
+    "Prokazatelná schopnost žonglovat s více projekty správy účtů najednou a zároveň si zachovat důraz na detail"
+  ],
+  "JobCard4Benefits": [
+    "Flexibilní pracovní doba, která se přizpůsobí domácímu životu",
+    "Práce na dálku a nezávislost na místě",
+    "Mezinárodní tým a open source komunita",
+    "Motivovaní a kreativní kolegové",
+    "Konkurenční plat plus provize"
+  ],
+
+  "JobCard5Country": "Francie",
+  "JobCard5Title": "Obchodní zástupce Francie",
+  "JobCard5Description": "Hledáme obchodního zástupce orientovaného na příjmy, který bude aktivně vyhledávat a zapojovat potenciální zákazníky.",
+  "JobCard5Requirements": [
+    "Spravovat příležitosti v průběhu celého cyklu",
+    "Prezentovat, propagovat a prodávat produkty / služby ONLYOFFICE stávajícím a potenciálním zákazníkům",
+    "Navazovat, rozvíjet a udržovat pozitivní obchodní a zákaznické vztahy",
+    "Koordinovat prodejní úsilí se členy týmu, dalšími odděleními a partnery",
+    "Analyzovat potenciál území / trhů, sledovat prodeje",
+    "Poskytovat zprávy o potřebách, problémech, zájmech zákazníků, konkurenčních aktivitách a potenciálu pro nové služby"
+  ],
+  "JobCard5Skills": [
+    "Vynikající prodejní, vyjednávací a komunikační dovednosti",
+    "Pohodlná práce se vzdálenými týmy",
+    "Spolehlivý, chytrý, poctivý, organizovaný, pozitivní, reprezentativní, sebemotivovaný",
+    "Výborné komunikační dovednosti v písemném a mluveném projevu v angličtině a francouzštině",
+    "Pohodlná práce s CRM, kancelářskými a video komunikačními nástroji",
+    "Rychle se učit a ochotně používat nové nástroje",
+    "Prokazatelná schopnost žonglovat s více projekty správy účtů najednou a zároveň si zachovat důraz na detail"
+  ],
+  "JobCard5Benefits": [
+    "Flexibilní pracovní doba, která se přizpůsobí domácímu životu",
+    "Práce na dálku a nezávislost na místě",
+    "Mezinárodní tým a open source komunita",
+    "Motivovaní a kreativní kolegové",
+    "Konkurenční plat plus provize"
+  ],
+
+  "JobCard6Country": "Japonsko",
+  "JobCard6Title": "Obchodní zástupce Japonsko",
+  "JobCard6Description": "Hledáme obchodního zástupce orientovaného na příjmy, který bude aktivně vyhledávat a zapojovat potenciální zákazníky.",
+  "JobCard6Requirements": [
+    "Spravovat příležitosti v průběhu celého cyklu",
+    "Prezentovat, propagovat a prodávat produkty / služby ONLYOFFICE stávajícím a potenciálním zákazníkům",
+    "Navazovat, rozvíjet a udržovat pozitivní obchodní a zákaznické vztahy",
+    "Koordinovat prodejní úsilí se členy týmu, dalšími odděleními a partnery",
+    "Analyzovat potenciál území / trhů, sledovat prodeje",
+    "Poskytovat zprávy o potřebách, problémech, zájmech zákazníků, konkurenčních aktivitách a potenciálu pro nové služby"
+  ],
+  "JobCard6Skills": [
+    "Vynikající prodejní, vyjednávací a komunikační dovednosti",
+    "Pohodlná práce se vzdálenými týmy",
+    "Spolehlivý, chytrý, poctivý, organizovaný, pozitivní, reprezentativní, sebemotivovaný",
+    "Výborné komunikační dovednosti v angličtině a japonštině",
+    "Pohodlná práce s CRM, kancelářskými a video komunikačními nástroji",
+    "Rychle se učit a ochotně používat nové nástroje",
+    "Prokazatelná schopnost žonglovat s více projekty správy účtů najednou a zároveň si zachovat důraz na detail"
+  ],
+  "JobCard6Benefits": [
+    "Flexibilní pracovní doba, která se přizpůsobí domácímu životu",
+    "Práce na dálku a nezávislost na místě",
+    "Mezinárodní tým a open source komunita",
+    "Motivovaní a kreativní kolegové",
+    "Konkurenční plat plus provize"
+  ],
+
+  "JobCard7Country": "Arménie",
+  "JobCard7Title": "Manažer péče o zákazníky Arménie",
+  "JobCard7Description": "Do našeho mezinárodního týmu hledáme zkušeného manažera péče o zákazníky. Budete zodpovědní za procesy přijímání zákazníků a také za řízení vztahů se zákazníky ONLYOFFICE.",
+  "JobCard7Requirements": [
+    "Poskytování odborných předváděcích akcí, produktového poradenství a funkční podpory",
+    "Zajišťovat vysokou úroveň spokojenosti zákazníků prostřednictvím efektivní podpory a vynikajícího zákaznického servisu",
+    "Úzce spolupracujte s týmem QA a vývojáři s cílem zajistit efektivní a včasnou podporu",
+    "Konzultujte se zákazníky, jak vylepšit ONLYOFFICE, aby lépe vyhovoval jejich potřebám",
+    "Shromažďovat zpětnou vazbu od zákazníků, analyzovat ji a předávat produktovému týmu, abyste pomohli vytvořit lepší produkt",
+    "Využívat reporting k analýze dotazů a problémů"
+  ],
+  "JobCard7Skills": [
+    "Pohodlná práce se vzdálenými týmy",
+    "Spolehlivý, chytrý, poctivý, organizovaný, pozitivní, reprezentativní, sebemotivovaný",
+    "Výborné komunikační dovednosti v angličtině a arménštině",
+    "Pohodlná práce s CRM, kancelářskými a video komunikačními nástroji",
+    "Rychle se učit a ochotně používat nové nástroje"
+  ],
+  "JobCard7Benefits": [
+    "Flexibilní pracovní doba, která se přizpůsobí domácímu životu",
+    "Práce na dálku a nezávislost na místě",
+    "Mezinárodní tým a open source komunita",
+    "Motivovaní a kreativní kolegové"
+  ],
+
+  "JobCard8Country": "Srbsko",
+  "JobCard8Title": "Technical writer Srbsko",
+  "JobCard8Description": "We are looking for a technical writer to contribute to the main company product.",
+  "JobCard8Requirements": [
+    "Work with API documentation",
+    "Improve and maintain the existing product API",
+    "Draw up tech assignments for developers to write new test cases"
+  ],
+  "JobCard8Skills": [
+    "Higher specialized education in the field of IT",
+    "Programming experience, ability to understand API documentation at the level of a software developer",
+    "Ability to evaluate the product API from the position of a third-party developer",
+    "Analytical mindset and ability to quickly process information",
+    "Readiness for discussions in a team and adequate attitude to constructive feedback",
+    "Ability to justify your own suggestions",
+    "Understanding that in addition to the interests of users, there is a commercial interest of the company",
+    "English proficiency level enough for reading and writing technical documentation, including API",
+    "Experience in writing and maintaining API documentation will be a huge advantage"
+  ],
+  "JobCard8Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Decent salary"
+  ],
+
+  "JobCard9Country": "Čína",
+  "JobCard9Title": "Technical support specialist,  Číně",
+  "JobCard9Description": "We are looking for a technical support specialist to assist our customers with technical questions and issues when using our products.",
+  "JobCard9Requirements": [
+    "Provide customer tech support (remote access, client-side product administration, preparing necessary instructions)",
+    "Respond to customer queries in a timely and accurate way",
+    "Interact with the development and testing departments",
+    "Directly participate in the processes of software testing and design"
+  ],
+  "JobCard9Skills": [
+    "Proficiency in English, starting from the B2 level and higher",
+    "Fluent Chinese",
+    "Confident knowledge of client and server operating systems",
+    "Experience in customer support or similar field as well as experience in Linux administration will be a huge advantage",
+    "Motivation, the desire to improve, the willingness to strive to make changes"
+  ],
+  "JobCard9Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Decent salary"
+  ],
+
+  "JobCardAreYouInterested": "Máte zájem o tuto pozici? Přihlaste se nyní. Kontaktujte nás na adrese <0>jobs@onlyoffice.com</0> a zašlete nám svůj životopis.",
+
+  "AboutContentHeading": "O společnosti Ascensio System Sia",
+  "AboutContentText": [
+    "Jsme mezinárodní open source společnost, jejímž posláním je přinášet nejinovativnější webové kancelářské aplikace pro každého.",
+    "Naše pracovní kultura ve společnosti je založena na vzájemné důvěře a společném cíli, který nás spojuje, udržuje nás motivované a aktuální a dává nám inspiraci k inovacím. Držíme se strategie, kdy se každý věnuje tomu, co ho baví, v čem je opravdu dobrý. To nám umožňuje vytvářet a propagovat kvalitní a užitečný produkt, který již má pevnou zákaznickou základnu.",
+    "Jako společnost se zaměstnanci ve více <0>než 30 zemích</0> a širokou komunitou přispěvatelů po celém světě je naším firemním jazykem angličtina. Spousta z nás pracuje z home office s flexibilním rozvrhem, takže je jedno, odkud jste.",
+    "Ve společnosti <0>Ascensio System Sia</0>, poskytujeme rovné zacházení všem zaměstnancům a všem uchazečům bez ohledu na rasu, barvu pleti, náboženství, pohlaví, sexuální orientaci, vnímání nebo identitu pohlaví, národnost, věk, rodinný stav, status veterána nebo zdravotní postižení. Důležitá je pro nás pouze vaše kvalifikace, zkušenosti a nadšení.",
+    "<0>Připojte se k naší velké open source rodině a ucházejte se o práci! Kontaktujte nás na adrese</0> <1>jobs@onlyoffice.com</1>"
+  ]
+}
