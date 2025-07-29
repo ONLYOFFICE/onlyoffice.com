@@ -84,6 +84,44 @@ const StyledHeroImage = styled.div<{
   }
 `;
 
+const StyledHeroYouTubeWrapper = styled.div`
+  width: 1000px;
+  height: 560px;
+  margin: 80px auto 0;
+  padding-bottom: 112px;
+  box-sizing: content-box;
+
+  @media ${device.desktop} {
+    width: 700px;
+    height: 392px;
+  }
+
+  @media ${device.tabletS} {
+    width: 100%;
+    height: 100%;
+    margin: 56px auto 0;
+    padding-bottom: 72px;
+  }
+
+  @media ${device.mobile} {
+    padding-bottom: 8px;
+  }
+
+  & > div > div:first-child {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 7px 25px rgba(85, 85, 85, 0.15);
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+    background-size: cover;
+  }
+
+  &:hover > div > div:first-child {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  }
+`;
+
 export {
   StyledHeroSection,
   StyledHeroHeading,
@@ -91,5 +129,6 @@ export {
   StyledHeroSubHeading,
   StyledHeroButtonWrapper,
   StyledHeroImageWrapper,
-  StyledHeroImage
+  StyledHeroImage,
+  StyledHeroYouTubeWrapper
 };

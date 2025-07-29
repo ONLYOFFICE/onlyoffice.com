@@ -1,7 +1,9 @@
+import { useRouter } from "next/router";
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
+import { YouTubeCard } from "@src/components/modules/docspace/YouTubeCard";
 
 import {
   StyledHeroButtonWrapper,
@@ -10,11 +12,13 @@ import {
   StyledHeroImageWrapper,
   StyledHeroNoWrapText,
   StyledHeroSection,
-  StyledHeroSubHeading
+  StyledHeroSubHeading,
+  StyledHeroYouTubeWrapper
 } from "./Hero.styled";
 
 const Hero = () => {
   const { t } = useTranslation("diagram-viewer");
+  const { locale } = useRouter();
 
   return (
     <StyledHeroSection
@@ -53,12 +57,22 @@ const Hero = () => {
             borderRadius="3px"
           />
         </StyledHeroButtonWrapper>
-        <StyledHeroImageWrapper>
-          <StyledHeroImage
-            $imageUrl={t("HeroImageHeader")}
-            $imageUrl2x={t("HeroImageHeader@2x")}
-          />
-        </StyledHeroImageWrapper>
+          {locale === "zh" ? (
+            <StyledHeroImageWrapper>
+              <StyledHeroImage
+                $imageUrl={t("HeroImageHeader")}
+                $imageUrl2x={t("HeroImageHeader@2x")}
+              />
+            </StyledHeroImageWrapper>
+          ) : (
+            <StyledHeroYouTubeWrapper>
+              <YouTubeCard
+                videoImgUrl={t("HeroYouTubeCoverHeader@2x")}
+                videoUrl={t("HeroYouTubeUrl")}
+                border={true}
+              />
+            </StyledHeroYouTubeWrapper>
+          )}
       </Container>
     </StyledHeroSection>
   );
