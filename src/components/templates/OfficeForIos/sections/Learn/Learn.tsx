@@ -1,15 +1,18 @@
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
-import { Section } from "@src/components/ui/Section";
 import { items } from "./data/items";
 
-import { StyledLearnHeading, StyledLearnList } from "./Learn.styled";
+import { StyledLearnHeading, StyledLearnList, StyledLearnSection } from "./Learn.styled";
 import { BlogCard } from "@src/components/widgets/BlogCard";
+import { hideConfig } from "./utils/hideConfig";
 
 const Learn = () => {
   const { t } = useTranslation("office-for-ios");
+  const { locale } = useRouter();
 
   return (
-    <Section
+    <StyledLearnSection
+      $isDisplay={hideConfig.includes(locale ?? "en") ? false : true}
       background="#F9F9F9"
       desktopSpacing={["112px", "56px"]}
       tabletSpacing={["112px", "56px"]}
@@ -29,13 +32,13 @@ const Learn = () => {
             heading={{ label: t(item.title) }}
             text={t(item.text ?? "")}
             links={item.links?.map((item) => ({
-              href: item.href,
+              href: t(item.href),
               label: t(item.label),
             }))}
           />
         ))}
       </StyledLearnList>
-    </Section>
+    </StyledLearnSection>
   );
 };
 
