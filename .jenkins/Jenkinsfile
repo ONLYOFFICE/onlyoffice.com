@@ -189,7 +189,7 @@ pipeline {
           transfers: [sshTransfer(cleanRemote: false, 
             excludes: '', 
             execCommand: '''
-              sudo bash /home/ubuntu/deploy/.jenkins/site_build.sh |& tee -a > /home/ubuntu/deploy/site_deploy.log
+            sudo bash -c "source /root/.bashrc && /home/ubuntu/deploy/.jenkins/site_build.sh" |& tee -a /home/ubuntu/deploy/site_deploy.log
             ''', 
             execTimeout: 0, 
             flatten: false, 
