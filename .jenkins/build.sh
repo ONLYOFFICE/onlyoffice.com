@@ -63,7 +63,6 @@ echo "Starting application build..."
 docker run --rm -e NODE_OPTIONS="--max-old-space-size=4096" -v "$BUILD_DIR":"$APP_DIR" -w "$APP_DIR" "$DOCKER_CONTAINER_TAG" sh -c "yarn && yarn build"
 if [ $? -ne 0 ]; then
     echo "Error: Application build failed. Cleaning up build directory and exiting."
-    printenv
     send_telegram_notification "FAILED" "❌ Application build failed during Docker build stage."
     rm -rf "$BUILD_DIR"
     exit 1
@@ -109,7 +108,6 @@ else
 fi
 
 # Send success notification
-printenv
 send_telegram_notification "SUCCESS" "✅ Application build and deployment completed successfully. Container is running on port $EXPOSE_PORT."
 
 echo "Build and deployment process completed successfully."
