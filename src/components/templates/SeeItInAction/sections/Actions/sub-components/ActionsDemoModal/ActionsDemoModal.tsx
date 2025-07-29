@@ -10,13 +10,13 @@ import {
   StyledActionsDemoPre
 } from "./ActionsDemoModal.styled";
 
-const ActionsDemoModal = ({ demoCodeFirst, demoCodeSecond, onClose }: ActionsDemoModalProps) => {
+const ActionsDemoModal = ({ heading, demoCodeFirst, demoCodeSecond, onClose }: ActionsDemoModalProps) => {
   const { t } = useTranslation("see-it-in-action");
 
   return (
     <StyledActionsDemoModal>
         <StyledActionsDemoContent>
-          <Heading level={4} size={5} textAlign="center" label={t("ActionsDemoModalHeadingOpen")} />
+          <Heading level={4} size={5} textAlign="center" label={t(heading)} />
           <StyledActionsDemoCloseBtn onClick={onClose}>x</StyledActionsDemoCloseBtn>
           <StyledActionsDemoPre>
             <code>

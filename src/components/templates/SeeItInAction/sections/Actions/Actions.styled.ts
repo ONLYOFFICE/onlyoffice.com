@@ -41,7 +41,7 @@ const StyledActionsTabList = styled.ul`
   padding: 0;
   list-style: none;
 
-  @media ${device.tabletS} {
+  @media ${device.tablet} {
     overflow-x: scroll;
     justify-content: flex-start;
   }

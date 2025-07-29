@@ -1,46 +1,29 @@
 {
   "PageTitle": "Verifique a funcionalidade principal do ONLYOFFICE Docs | ONLYOFFICE",
-  "PageDescription": "Edite arquivos docx, xlsx, pptx, visualize PDFs, crie formulários preenchíveis, colabore em tempo real para verificar os principais recursos do ONLYOFFICE. Não é necessário download ou registro.",
+  "PageDescription": "Edite arquivos docx, xlsx, pptx, visualize PDFs, crie formulários preenchíveis, colabore em tempo real para verificar os principais recursos do ONLYOFFICE. Não é necessário download nem registro.",
 
-  "HeroHeadingSeeIt": "Veja em ação",
-  "HeroTextCurious": "Curioso para saber como é a interface e experimentar as principais funcionalidades sem registro?",
+  "HeroHeadingSeeIt": "Veja-o em ação!",
+  "HeroTextCurious": "Quer saber como é a interface e experimentar as principais funcionalidades?",
 
-  "ActionsOpen": "Abrir",
   "ActionsEditDocx": "Editar DOCX",
-  "ActionsExampleDocumentTitleDocx": "Título do Documento de Exemplo.docx",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
   "ActionsEditXlsx": "Editar XLSX",
-  "ActionsExampleDocumentTitleXlsx": "Título do Documento de Exemplo.xlsx",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
   "ActionsEditPptx": "Editar PPTX",
-  "ActionsExampleDocumentTitlePptx": "Título do Documento de Exemplo.pptx",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
   "ActionsEditPdf": "Editar PDF",
-  "ActionsExampleDocumentTitlePdf": "Título do Documento de Exemplo.pdf",
-  "ActionsCreateForm": "Criar Formulário",
-  "ActionsFillInPdfForm": "Preencher formulário PDF",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
+  "ActionsCreateForm": "Criar formulário",
+  "ActionsFillInPdfForm": "Preencha o formulário PDF",
   "ActionsCollaborate": "Colaborar",
 
-  "ActionsDemoPreview": "Pré-visualização da demonstração",
-  "ActionsDemoModalHeadingOpen": "Abrir DOCX para edição",
-  "ActionsDemoModalButtonClose": "Fechar",
-
-  "GetStartedHeading": "Comece e escolha onde trabalhar",
-
-  "GetStartedItemTitleInOnlyOffice": "No ONLYOFFICE DocSpace",
-  "GetStartedItemTextCreate": "Crie salas dentro do seu DocSpace seguro, convide pessoas, visualize, edite e colabore em todos os tipos de documentos a partir de qualquer dispositivo desktop ou móvel.",
-  "GetStartedItemLinkStart": "Comece com sua conta gratuita",
-
-  "GetStartedItemTitleYouUse": "Na plataforma que você usa",
-  "GetStartedItemTextConnect": "Conecte o Docs para editar documentos diretamente do seu aplicativo. <0>Mais de 40 integrações prontas</0>: Box, Moodle, Nextcloud, Odoo, Wordpress, etc.",
-  "GetStartedItemLink": "Obtenha o Docs agora",
-
-  "GetStartedItemTitleYouBuild": "Na plataforma que você constrói",
-  "GetStartedItemTextIntegrate": "Integre o Docs em seu serviço para fornecer poderosos recursos de edição e criação de documentos aos seus clientes sob sua marca.",
-  "GetStartedItemLinkLearn": "Saiba mais",
-
-  "GetStartedItemTitleYourPc": "Do seu PC",
-  "GetStartedItemTextEdit": "Edite documentos offline com aplicativos de escritório gratuitos para Windows, Linux e macOS.",
-  "GetStartedItemLinkDownload": "Baixe agora",
-
-  "GetStartedItemTitleMobile": "Dos seus dispositivos móveis",
-  "GetStartedItemTextWork": "Trabalhe em documentos em trânsito com aplicativos gratuitos para dispositivos iOS e Android.",
-  "GetStartedItemLinkInstall": "Instale agora"
+  "ActionsDemoPreview": "Pré-visualização da demo",
+  "ActionsDemoModalHeadingOpenDocx": "Abrir DOCX para editar",
+  "ActionsDemoModalHeadingOpenXlsx": "Abrir XLSX para editar",
+  "ActionsDemoModalHeadingOpenPptx": "Abrir PPTX para editar",
+  "ActionsDemoModalHeadingOpenPdf": "Editar PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Criar formulário",
+  "ActionsDemoModalHeadingOpenFill": "Preencha o formulário PDF",
+  "ActionsDemoModalHeadingOpenCollaborate": "Colaborar",
+  "ActionsDemoModalButtonClose": "Fechar"
 }
