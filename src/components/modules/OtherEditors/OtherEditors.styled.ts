@@ -87,6 +87,7 @@ const editorStyles: Record<string, { backgroundPositionY: number }> = {
   form_creator: { backgroundPositionY: -78 },
   pdf_editor: { backgroundPositionY: -104 },
   ebook_creator: { backgroundPositionY: -130 },
+  diagram_viewer: { backgroundPositionY: -156 },
 };
 
 const StyledOtherEditorsItemImg = styled.span<{ $id: string }>`

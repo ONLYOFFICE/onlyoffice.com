@@ -7,32 +7,37 @@ interface IEditor {
 export const items: IEditor[] = [
   {
     id: "document_editor",
-    name: "Document Editor",
+    name: "DocumentEditor",
     url: "/document-editor",
   },
   {
     id: "spreadsheet_editor",
-    name: "Spreadsheet Editor",
+    name: "SpreadsheetEditor",
     url: "/spreadsheet-editor",
   },
   {
     id: "presentation_editor",
-    name: "Presentation Editor",
+    name: "PresentationEditor",
     url: "/presentation-editor",
   },
   {
     id: "form_creator",
-    name: "Form creator",
+    name: "FormCreator",
     url: "/form-creator",
   },
   {
     id: "pdf_editor",
-    name: "PDF Editor",
+    name: "PDFEditor",
     url: "/pdf-editor",
   },
   {
     id: "ebook_creator",
-    name: "E-book creator",
+    name: "EBookCreator",
     url: "/e-book",
+  },
+  {
+    id: "diagram_viewer",
+    name: "DiagramViewer",
+    url: "/diagram-viewer",
   },
 ];
