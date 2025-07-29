@@ -14,6 +14,40 @@ BUILD_DIR="/app/${APP_NAME}_BUILD"
 SOURCE_ARCHIVE_PATH="/home/ubuntu/deploy/.jenkins/$APP_NAME.tar.gz"
 BACKUP_DIR="/app/backups"
 BACKUP_NAME="$APP_NAME-$CURRENT_DATE.tar.gz"
+BUILD_LOG="/home/ubuntu/deploy/site_deploy.log"
+
+### TELEGRAM NOTIFICATION FUNCTION
+
+# Function to send Telegram notification
+send_telegram_notification() {
+    local status="$1"
+    local message="$2"
+    
+    # Check if Telegram environment variables are set
+    if [[ -z "$TELEGRAM_BOT_TOKEN" || -z "$TELEGRAM_CHAT_ID" ]]; then
+        echo "Telegram notification skipped: TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not set"
+        return 0
+    fi
+    
+    # Prepare the message
+    local full_message="🏗️ $APP_NAME Build $status\n\n$message\n\nTimestamp: $CURRENT_DATE"
+    
+    # Send text message
+    curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" \
+        -d "chat_id=$TELEGRAM_CHAT_ID" \
+        -d "text=$full_message" \
+        -d "parse_mode=HTML" > /dev/null
+    
+    # Send log file if it exists
+    if [[ -f "$BUILD_LOG" ]]; then
+        curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendDocument" \
+            -F "chat_id=$TELEGRAM_CHAT_ID" \
+            -F "document=@$BUILD_LOG" \
+            -F "caption=Build log file" > /dev/null
+    fi
+    
+    echo "Telegram notification sent: $status"
+}
 
 ### BUILD STAGE
 
@@ -29,6 +63,7 @@ echo "Starting application build..."
 docker run --rm -e NODE_OPTIONS="--max-old-space-size=4096" -v "$BUILD_DIR":"$APP_DIR" -w "$APP_DIR" "$DOCKER_CONTAINER_TAG" sh -c "yarn && yarn build"
 if [ $? -ne 0 ]; then
     echo "Error: Application build failed. Cleaning up build directory and exiting."
+    send_telegram_notification "FAILED" "❌ Application build failed during Docker build stage."
     rm -rf "$BUILD_DIR"
     exit 1
 fi
@@ -71,3 +106,8 @@ else
     # Build and run a new container if it doesn't exist
     docker run -d --name "$APP_NAME" --publish "0.0.0.0:$EXPOSE_PORT:3000" -v "$APP_DIR:$APP_DIR" -w "$APP_DIR" --restart always "$DOCKER_CONTAINER_TAG" yarn start
 fi
+
+# Send success notification
+send_telegram_notification "SUCCESS" "✅ Application build and deployment completed successfully. Container is running on port $EXPOSE_PORT."
+
+echo "Build and deployment process completed successfully."
