@@ -126,6 +126,7 @@ pipeline {
                         string(credentialsId: 'onlyoffice_site_test_pipedrive_api_token', variable: 'onlyoffice_site_test_pipedrive_api_token'),
                         string(credentialsId: 'onlyoffice_site_test_document_server_token', variable: 'onlyoffice_site_test_document_server_token')]) {          
         sh '''
+          sed -i "s^var_notification_app_name^$src_domain^" .jenkins/build.sh
           cp .jenkins/build.sh .jenkins/site_build.sh
 
           sed -i "s^var_next_public_site_url^$onlyoffice_com_next_public_site_url^" .env

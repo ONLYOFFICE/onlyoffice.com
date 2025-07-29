@@ -16,6 +16,7 @@ SOURCE_ARCHIVE_PATH="/home/ubuntu/deploy/.jenkins/$APP_NAME.tar.gz"
 BACKUP_DIR="/app/backups"
 BACKUP_NAME="$APP_NAME-$CURRENT_DATE.tar.gz"
 BUILD_LOG="/home/ubuntu/deploy/site_deploy.log"
+NOTIFICATION_APP_NAME="var_notification_app_name"
 
 ### TELEGRAM NOTIFICATION FUNCTION
 
@@ -32,10 +33,10 @@ send_telegram_notification() {
     # Prepare the message
     local full_message=""
     if [[ $status == "FAILED" ]]; then
-        full_message="❌ $APP_NAME build failed during Docker build stage."
+        full_message="❌ $NOTIFICATION_APP_NAME build failed."
     fi
     if [[ $status == "SUCCESS" ]]; then
-        full_message="✅ $APP_NAME build and deployment completed successfully."
+        full_message="✅ $NOTIFICATION_APP_NAME build and deploy completed successfully."
     fi
 
     # Send log file with message as caption if it exists, otherwise send text message
