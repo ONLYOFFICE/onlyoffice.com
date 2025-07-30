@@ -2,112 +2,103 @@ import { device } from "@src/utils/device";
 import styled from "styled-components";
 
 const StyledPartnersWrapper = styled.div`
-  padding: 112px 0;
+  padding: 112px 0 80px;
   overflow-x: auto;
 
+  @media ${device.desktop} {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   @media ${device.tablet} {
-    padding: 88px 0;
+    padding: 88px 40px;
   }
 
   @media ${device.mobile} {
-    padding: 48px 0;
+    padding: 48px 16px;
   }
 `;
 
 const StyledPartnersInner = styled.div`
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
 
-  @media ${device.tablet} {
+  @media ${device.desktop} {
     width: 1200px;
   }
 
   @media ${device.mobile} {
-    width: 642px;
-    padding: 0 16px;
+    width: 696px;
   }
 `;
 
 const StyledPartnerLogo = styled.div`
-  background-image: url("/images/templates/education/partners/partners-logos.svg");
-  background-repeat: no-repeat;
-  height: 60px;
+  background-image: url("/images/templates/healthcare/partners-logos.svg");
   background-position-y: center;
+  background-repeat: no-repeat;
   filter: grayscale(1);
-  transition: filter 0.2s;
+  height: 68px;
+  transition: filter 0.5s;
 
-  &.parissud {
-    width: 70px;
-    background-position-x: -20px;
+  &.unesco-iiep {
+    width: 170px;
 
     @media ${device.mobile} {
-      width: 38px;
-      background-position-x: -10px;
+      width: 95px;
     }
   }
 
-  &.strasbourg {
-    width: 97px;
-    background-position-x: -148px;
+  &.croix-rouge {
+    background-position-x: -217px;
+    width: 148px;
 
     @media ${device.mobile} {
-      width: 52px;
-      background-position-x: -74px;
+      background-position-x: -126px;
+      width: 90px;
     }
   }
 
-  &.braunschweig {
-    width: 124px;
-    background-position-x: -301px;
+  &.cbg {
+    background-position-x: -420px;
+    width: 136px;
 
     @media ${device.mobile} {
-      width: 66px;
-      background-position-x: -157px;
+      background-position-x: -247px;
+      width: 81px;
     }
   }
 
-  &.karlsruhe {
-    width: 92px;
-    background-position-x: -483px;
+  &.iccf {
+    background-position-x: -612px;
+    width: 215px;
 
     @media ${device.mobile} {
-      width: 50px;
-      background-position-x: -251px;
+      background-position-x: -360px;
+      width: 127px;
     }
   }
 
-  &.lille {
-    width: 84px;
-    background-position-x: -633px;
+  &.ipph {
+    background-position-x: -883px;
+    width: 248px;
 
     @media ${device.mobile} {
-      width: 46px;
-      background-position-x: -330px;
+      background-position-x: -519px;
+      width: 148px;
     }
   }
 
-  &.bremen {
-    width: 200px;
-    background-position-x: -776px;
+  &.derlab {
+    background-position-x: -1187px;
+    width: 122px;
 
     @media ${device.mobile} {
-      width: 108px;
-      background-position-x: -404px;
-    }
-  }
-
-  &.graz {
-    width: 106px;
-    background-position-x: -1033px;
-
-    @media ${device.mobile} {
-      width: 58px;
-      background-position-x: -540px;
+      background-position-x: -698px;
+      width: 72px;
     }
   }
 
@@ -116,8 +107,8 @@ const StyledPartnerLogo = styled.div`
   }
 
   @media ${device.mobile} {
-    height: 32px;
-    background-size: 607px;
+    background-size: auto 40px;
+    height: 46px;
   }
 `;
 

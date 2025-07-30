@@ -4,24 +4,22 @@ interface IPartners {
 
 export const items: IPartners[] = [
   {
-    name: "parissud",
+    name: "unesco-iiep",
   },
   {
-    name: "strasbourg",
+    name: "croix-rouge",
+  },
+
+  {
+    name: "cbg",
   },
   {
-    name: "braunschweig",
+    name: "iccf",
   },
   {
-    name: "karlsruhe",
+    name: "ipph",
   },
   {
-    name: "lille",
-  },
-  {
-    name: "bremen",
-  },
-  {
-    name: "graz",
+    name: "derlab",
   },
 ];
