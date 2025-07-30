@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import { IActionsContentProps, ITokenResponse, DocumentType } from "../ActionsContent.types";
+import { IActionsContentProps, ITokenResponse } from "../ActionsContent.types";
 
 const useFetchApi = (
   fileType: IActionsContentProps["fileType"],
-  title:    IActionsContentProps["title"],
-  url:      IActionsContentProps["url"],
-  mode:     IActionsContentProps["mode"],
-  uiTheme:  IActionsContentProps["uiTheme"]
+  title: IActionsContentProps["title"],
+  url: IActionsContentProps["url"],
+  mode: IActionsContentProps["mode"],
+  uiTheme: IActionsContentProps["uiTheme"],
 ) => {
   const [token, setToken] = useState("");
   const [config, setConfig] = useState<ITokenResponse["config"] | null>(null);
@@ -32,8 +32,10 @@ const useFetchApi = (
         setConfig(data.config);
       } catch (err) {
         console.error(err);
-        setError(err instanceof Error ? err.message : 'An unknown error occurred');
-        setToken('');
+        setError(
+          err instanceof Error ? err.message : "An unknown error occurred",
+        );
+        setToken("");
         setConfig(null);
       }
     };
@@ -42,6 +44,6 @@ const useFetchApi = (
   }, [fileType, title, url, mode, uiTheme]);
 
   return { token, config, error };
-}
+};
 
 export { useFetchApi };
