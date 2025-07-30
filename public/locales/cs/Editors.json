@@ -19,11 +19,11 @@
   "FindAppsYouNeed": "Find the apps you need",
   "CheckUserGuides": "Check user guides",
   "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "Document Editor",
-  "SpreadsheetEditor": "Spreadsheet Editor",
-  "PresentationEditor": "Presentation Editor",
-  "FormCreator": "Form creator",
-  "PDFEditor": "PDF Editor",
+  "DocumentEditor": "Editor dokumentů",
+  "SpreadsheetEditor": "Editor tabulek",
+  "PresentationEditor": "Editor prezentací",
+  "FormCreator": "Tvůrce formulářů",
+  "PDFEditor": "Editor PDF",
   "EBookCreator": "E-book creator",
   "DiagramViewer": "Diagram Viewer"
 }
