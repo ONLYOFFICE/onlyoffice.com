@@ -19,7 +19,7 @@ const DoEvenMore = () => {
       <Container>
         {items.map((item, index) => (
           <FeatureImageItem
-            fontSize="14px"
+            fontSize="18px"
             key={index}
             contentWidth={item.contentWidth}
             heading={t(item.heading)}
