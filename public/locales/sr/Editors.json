@@ -14,7 +14,7 @@
   "Hints": "Hints",
   "Blog": "Blog",
   "HelpCenter": "Help Center",
-  "ExploreOtherEditors": "Explore other editors",
+  "ExploreOtherEditors": "Istražite druge urednike",
   "ViewMacroSamples": "View macro samples",
   "FindAppsYouNeed": "Find the apps you need",
   "CheckUserGuides": "Check user guides",
@@ -22,8 +22,8 @@
   "DocumentEditor": "Document Editor",
   "SpreadsheetEditor": "Spreadsheet Editor",
   "PresentationEditor": "Presentation Editor",
-  "FormCreator": "Form creator",
+  "FormCreator": "Kreator obrazaca",
   "PDFEditor": "PDF Editor",
-  "EBookCreator": "E-book creator",
-  "DiagramViewer": "Diagram Viewer"
+  "EBookCreator": "E-book kreator",
+  "DiagramViewer": "Pregledač dijagrama"
 }
