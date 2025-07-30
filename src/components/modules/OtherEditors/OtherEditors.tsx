@@ -32,12 +32,12 @@ const OtherEditors = ({ id, className }: IOtherEditors) => {
                   id={`editor-${item.id}`}
                   forwardedAs="a"
                   href={item.url}
-                  title={item.name}
+                  title={t(item.name)}
                   variant="quaternary"
                   $active={router.pathname === item.url}
                 >
                   <StyledOtherEditorsItemImg $id={item.id} />
-                  <span>{item.name}</span>
+                  <span>{t(item.name)}</span>
                 </StyledOtherEditorsItem>
               </li>
             ))}

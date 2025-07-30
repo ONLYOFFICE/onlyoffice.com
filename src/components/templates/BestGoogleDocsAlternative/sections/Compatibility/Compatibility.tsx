@@ -21,7 +21,7 @@ const Compatibility = () => {
           i18nKey="WhatWentWrong"
           components={[
             <Link
-              href="/images/templates/best-google-docs-alternative/compatibility/pdf/google.pdf"
+              href={`${process.env.NEXT_PUBLIC_SITE_URL}/images/templates/best-google-docs-alternative/compatibility/pdf/google.pdf`}
               color="main"
               target="_blank"
               textUnderline

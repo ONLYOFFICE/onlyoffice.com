@@ -16,7 +16,7 @@ export const features: IFeatures[] = [
     text: "ExtendYourWorkspace",
     link: {
       label: "FindAppsYouNeed",
-      href: "https://www.onlyoffice.com/app-directory",
+      href: "/app-directory",
       isExternal: true,
     },
   },

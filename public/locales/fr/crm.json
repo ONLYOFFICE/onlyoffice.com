@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Système CRM simple d'utilisation | ONLYOFFICE",
+  "PageDescription": "Logiciel de gestion de clients en ligne. Gérer des clients, suivre des ventes, envoyer des factures en utilisant le jeu d'outils complet.",
+
+  "HeroTitle": "CRM simple pour dynamiser les ventes et améliorer la performance",
+  "HeroText": "C'est un système efficace et intuitif de gestion des relations client<br/><1>Par Live Enterprise</1>",
+  "GetItNow": "Obtenir maintenant",
+
+  "CustomerRelations": "Base pour gérer vos relations clients",
+  "CustomerRelationsText": "Créez une base de données clients, gérez vos affaires, analysez leur succès et coordonnez les ventes à l'aide du jeu de fonctions offertes par le système CRM : contacts, opportunités, tâches, histoire de la communication.",
+  "CustomerRelationsImage": "/images/templates/crm/features/fr/customer_relations.png",
+  "Customization": "Personnalisation",
+  "CustomizationText": "Adaptez CRM ONLYOFFICE à vos besoins : ajoutez de nouveaux types de contacts, des catégories de tâche, des champs d'utilisateurs spéciaux. Utilisez les étapes d'opportunité personnalisables.",
+  "CustomizationImage": "/images/templates/crm/features/fr/customization.png",
+  "RapidEntry": "Saisie rapide des clients potentiels",
+  "RapidEntryText": "Intégrez le formulaire de contact dans votre site Web et obtenez des informations sur de nouveaux prospects transférées dans votre base de données.",
+  "RapidEntryImage": "/images/templates/crm/features/fr/rapid_entry.png",
+  "Invoicing": "Système de la facturation",
+  "InvoicingText": "Créez une facture directement dans votre ONLYOFFICE, sélectionnez un destinataire de votre base de données CRM, associez-la à une opportunité requise.",
+  "InvoicingImage": "/images/templates/crm/features/fr/invoicing.png",
+  "CloseIntegration": "Intégration avec Mail",
+  "CloseIntegrationText": "Ajoutez des contacts du message à votre base de données, envoyez des messages et des factures et consultez la correspondance avec les clients directement dans le système CRM. Organisez l'envoi en masse juste depuis CRM ONLYOFFICE.",
+  "CloseIntegrationImage": "/images/templates/crm/features/fr/close_integration.png",
+  "CustomerCall": "Passer des appels clients",
+  "CustomerCallText": "Passez et répondez aux appels des clients directement depuis le CRM grâce à l'intégration ONLYOFFICE Twilio.",
+  "CustomerCallImage": "/images/templates/crm/features/fr/customer_call.png",
+  "SalesReporting": "Rapport de vente",
+  "SalesReportingText": "Générez des rapports pour identifier les forces et les faiblesses dans ventes et savoir ce qui se passe dans votre entreprise.",
+  "SalesReportingImage": "/images/templates/crm/features/fr/sales_reporting.png",
+
+  "ItIsPrettyNice": "It's a pretty nice and easy-to-use CRM system.",
+  "LiveEnterprise": "Live Enterprise"
+}

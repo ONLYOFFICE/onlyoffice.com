@@ -1,0 +1,73 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace, stockage sécurisé de documents et collaboration pour les utilisateurs de votre application web | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE est une suite bureautique en ligne intégrée avec une plate-forme de collaboration pour gérer documents, projets, clients dans un seul endroit.",
+
+  "HeroHeading": "ONLYOFFICE DocSpace, <br><0>stockage sécurisé de documents et collaboration pour les utilisateurs de votre application web</0>",
+  "HeroButtonGet": "Obtenir maintenant",
+  "HeroButtonSchedule": "Planifier une démo",
+  "HeroYoutubeTitle": "YouTube video player",
+  "HeroYoutubeUrl": "https://www.youtube.com/embed/snOBl5Ru6lc?si=Tt4C4r4OaUVVCHBs?autoplay=1&mute=1",
+  "HeroYouTubeAttributeName": "youtube embed",
+
+  "SwitcherHeadingBringYour": "Offrez aux utilisateurs de votre application web un espace sécurisé pour le stockage de contenu et la collaboration documentaire en ligne",
+
+  "SwitcherItemTitle1": "Intégrez l'ensemble de ONLYOFFICE DocSpace, une seule salle ou un simple document ...",
+  "SwitcherItemText1": " ONLYOFFICE fournit <0>JavaScript SDK</0> vous permettant d'utiliser toutes les possibilités de DocSpace avec api.js.",
+  "SwitcherItemLink1": "Lire la documentation",
+  "SwitcherItemImgUrl1": "/images/templates/docspace-developer/switcher/integrate.png",
+  "SwitcherItemImgUrl2x1": "/images/templates/docspace-developer/switcher/integrate@2x.png",
+
+  "SwitcherItemTitle2": "... sous votre marque ...",
+  "SwitcherItemText2": "Utilisez les options de marque standard ou optez pour la marque blanche afin de personnaliser l'interface et de l'adapter à la marque de votre site web ou de votre application. Ajustez les couleurs, modifiez les titres, les logos et les liens, masquez la section À propos et bien plus encore.",
+  "SwitcherItemLink2": "Contactez notre équipe de ventes pour plus de détails.",
+  "SwitcherItemImgUrl2": "/images/templates/docspace-developer/switcher/branding.png",
+  "SwitcherItemImgUrl2x2": "/images/templates/docspace-developer/switcher/branding@2x.png",
+
+  "SwitcherItemTitle3": "... sur vos propres serveurs ...",
+  "SwitcherItemText3": "ONLYOFFICE DocSpace Developer peut être déployé sur site en tant que solution de cloud privé ou hybride, de sorte que les données de vos utilisateurs restent toujours au sein de votre infrastructure : pas de transfert vers des clouds publics.",
+  "SwitcherItemLink3": "Essayer maintenant",
+  "SwitcherItemImgUrl3": "/images/templates/docspace-developer/switcher/server.png",
+  "SwitcherItemImgUrl2x3": "/images/templates/docspace-developer/switcher/server@2x.png",
+
+  "SwitcherItemTitle4": "... en minutes.",
+  "SwitcherItemText4": "ONLYOFFICE fournit des outils d'intégration simples qui nécessitent un minimum de temps et d'efforts de la part des développeurs pour mettre en place une intégration DocSpace pleinement fonctionnelle.",
+  "SwitcherItemLink4": "",
+  "SwitcherItemImgUrl4": "/images/templates/docspace-developer/switcher/in-minutes.png",
+  "SwitcherItemImgUrl2x4": "/images/templates/docspace-developer/switcher/in-minutes@2x.png",
+
+  "CardsHeading": "ONLYOFFICE DocSpace est conçu pour s'adapter parfaitement à votre application ou votre site web",
+
+  "CardsItemTitle1": "Quel que soit le langage dans lequel votre application est écrite",
+  "CardsItemText1": "ONLYOFFICE DocSpace peut être intégré dans toute application ou site web indépendamment de sa pile technologique, de son langage de programmation et de son framework.",
+
+  "CardsItemTitle2": "Quel que soit le modèle de déploiement utilisé",
+  "CardsItemText2": "Vous pouvez intégrer ONLYOFFICE DocSpace dans votre solution SaaS ou sur site.",
+
+  "CardsItemTitle3": "Pour de multiples usages",
+  "CardsItemText3": "Y compris : CMS, CRM, plateformes d'apprentissage en ligne, courrier, applications de messagerie, logiciels de gestion de projet, etc.",
+
+  "WorthHeading": "ONLYOFFICE DocSpace est très apprécié à la fois",
+
+  "WorthByUsersTitle": "Par les utilisateurs",
+  "WorthByUsersList": [
+    "Salles personnalisables pour différents usages : collaboration, réunion, remplissage de formulaires, vérification diligente, public",
+    "Permissions d'accès flexibles",
+    "Éditeurs de documents en ligne intégrés pour les documents texte, les feuilles de calcul, les diapositives, les formulaires et les PDF",
+    "Fonctionnalités de sécurité renforcées",
+    "Expérience utilisateur parfaite sur différents appareils"
+  ],
+
+  "WorthByDevelopersTitle": "Par les développeurs",
+  "WorthByDevelopersList": [
+    "Intégration de préréglages et de modes personnalisés",
+    "Prise en charge de l'API et des webhooks",
+    "Plugin SDK pour étendre les fonctionnalités",
+    "Haute disponibilité et performance",
+    "Tarification flexible et évolutive",
+    "Exemples d'intégration prêts à l'emploi",
+    "Assistance à chaque étape par les experts d'ONLYOFFICE"
+  ],
+
+  "WorthButtonTry": "Essayer maintenant",
+  "WorthButtonRead": "Lire la documentation"
+}

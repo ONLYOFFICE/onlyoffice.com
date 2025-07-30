@@ -1,0 +1,28 @@
+{
+  "PageTitle": "Logiciel de gestion de projets efficace | ONLYOFFICE",
+  "PageDescription": "Planifier, gérer et suivre des  and track tâches, dates d'échéance et projets.  Améliorer la productivité de l'équipe.",
+
+  "HeroTitle": "Gestion des projets pour piloter le flux de travail",
+  "HeroText": "C'est un outil parfait pour les projets rapides ou de taille moyenne. No more complicated than shopping on Amazon.<br/><1>Par CMSWire</1>",
+  "GetItNow": "Obtenir maintenant",
+
+  "ProjectHierarchy": "Hiérarchie de projet",
+  "ProjectHierarchyText": "Utilisez les jalons, les tâches et les sous-tâches pour déterminer vos objectifs prioritaires et planifier vos activités de tous les jours. Ajouter des statuts de tâches personnalisés.",
+  "ProjectHierarchyImage": "/images/templates/projects/features/fr/project_hierarchy.png",
+  "GanttChart": "Diagramme de Gantt",
+  "GanttChartText": "Créez les interdépendances des tâches et suivez l'avancement du projet, actualisez les événements planifiés et les dates limites en quelques clics.",
+  "GanttChartImage": "/images/templates/projects/features/fr/gantt_chart.png",
+  "AccessRights": "Gestion des droits d'accès",
+  "AccessRightsText": "Définissez les droits d'accès individuels pour les éléments du module différents et créez des projets privés. Ainsi vous avez un contrôle total sur l'information à afficher et les activités à exécuter.",
+  "AccessRightsImage": "/images/templates/projects/features/fr/access_rights.png",
+  "TimeManagement": "Suivi du temps",
+  "TimeManagementText": "Evaluez la performance de l'équipe et l'avancement du projet à l'aide de l'ensemble d'outils du suivi du temps et les rapports automatiques.",
+  "TimeManagementImage": "/images/templates/projects/features/fr/time_management.png",
+
+  "MobileApps": "Applications mobiles",
+  "StayMobile": "Restez mobile !",
+  "WorkWithProjects": "Travaillez sur les projets à partir de vos appareils <0>iOS</0> et <1>Android</1>. Modifiez la documentation de vos projets, même en déplacement.",
+
+  "ItsAPerfectTool": "C'est un outil parfait pour les projets rapides ou de taille moyenne. No more complicated than shopping on Amazon.",
+  "CmsWire": "CMSWire"
+}

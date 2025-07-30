@@ -1,0 +1,76 @@
+{
+  "PageTitle": "ONLYOFFICE 博主计划 | ONLYOFFICE",
+  "PageDescription": "向您的观众推广 ONLYOFFICE 并获得奖励。",
+
+  "HeroTitle": "ONLYOFFICE <0>博主</0>计划",
+  "HeroText": "向您的受众推广 ONLYOFFICE 并获得奖励",
+  "GetStarted": "立即开始",
+
+  "InspireUsers": "<0>成为</0> ONLYOFFICE 博主",
+  "AreYouABlogger": "您是拥有忠实受众的博主或科技& IT 专家吗？我们推出了 ONLYOFFICE 博主计划，您可以通过发布内容获得奖励。",
+  "HelpUs": "帮助我们向您的受众介绍 ONLYOFFICE 品牌，并向您的粉丝推荐我们的产品。",
+  "Check": "查看常见问题和条件",
+
+  "ItIsEasy": "合作方式<0>很简单</0>",
+  "Apply": "申请",
+  "FillTheForm": "填写<0>申请表</0>并等待我们的回复以讨论细节。",
+  "Create": "制作内容并推广",
+  "CreateContent": "制作与 ONLYOFFICE 相关的内容。",
+  "Earn": "获得奖励",
+  "GetYourReward": "获得奖励。",
+
+  "WhatWeAccept": "我们<0>接受</0>什么内容",
+  "ProductVideos": "不同格式的产品视频",
+  "LongVideos": "长视频、短片、故事（抖音、快手、小红书、CSDN、今日头条等）",
+  "Articles": "文章、测评、帖子",
+  "InSocial": "发布在您的博客和社交媒体账号",
+  "Recommendations": "意见和建议",
+  "InAllSocial": "发布在所有社交媒体中",
+  "CustomFormats": "自定义形式和活动",
+  "Creativity": "欢迎发挥创意",
+
+  "ApplyNow": "立即申请",
+
+  "BecomeAmbassador": "成为我们的<0>校园大使</0>",
+  "OOAmbassadors": "ONLYOFFICE 正在招募校园大使！ 世界各地的大学生都可以参与申请。",
+  "OOAmbassadorsLink": "https://www.onlyoffice.com/blog/zh-hans/2023/05/onlyoffice_campus_ambassador",
+  "JoinNow": "立即加入",
+
+  "Review": "<0>评价</0> ONLYOFFICE",
+  "ShareYourOpinion": "分享您的意见并帮助我们进一步改善 ONLYOFFICE。",
+
+  "Monetize": "加入联盟计划并通过您的网站获利",
+  "WouldYouLike": "想通过推荐销售获得稳定的收入吗？加入我们的计划，将附属链接放置在您的网站上，并获得佣金。",
+  "StartNow": "立即开始",
+
+  "HowQualify": "参加 ONLYOFFICE 博主计划需要什么资格？",
+  "WeAccept": "我们接受各种类型的个人博主申请，他们有自己的社交媒体帐户、博客或网站。 在审核申请时，除了其他数据指标外，我们还会查看您的粉丝数量。",
+  "WhatTypes": "需要什么类型的帐户/博客？",
+  "PreferableTopics": "我们首选的是：IT、科技、软件和应用、极客、电脑技巧、开发人员、商业等。但也欢迎每个人进行申请。",
+  "WhichRewards": "博主可以获得哪些奖励？",
+  "AmongContributionRewards": "可以获得的奖励包括：免费的 ONLYOFFICE 云端版或免费的家用服务器许可证。 可能会有现金奖励，需要单独讨论。",
+  "DoYouHave": "有创作资源提供给博主吗？",
+  "PleaseCheck": "当然有！ 请查看我们的<0>媒体下载</0>和 ONLYOFFICE 品牌手册。如有需要，也会在讨论细节时提供其他材料和资源。",
+
+  "JoinOOInfluencerProgram": "加入 <0>ONLYOFFICE</0> 博主计划",
+  "FillOutTheForm": "请填写表格，我们会与您联系并详谈。",
+  "FullName": "全名",
+  "NameSurname": "Name Surname",
+  "FullNameIsEmpty": "全名为空",
+  "FullNameIsIncorrect": "全名错误",
+  "Email": "电子邮箱",
+  "Name": "name@domain.com",
+  "EmailIsEmpty": "电子邮箱为空",
+  "EmailIsIncorrect": "电子邮箱错误",
+  "Link": "网站/博客/社交媒体链接",
+  "SiteURL": "网站网址为空",
+  "MoreDetails": "补充说明",
+  "TellUs": "请告诉我们更多关于您自己和受众的信息。如有需要可已添加链接。",
+  "ByClickingSubmit": "点击\"提交\"即表示您了解并同意我们的 <0>SLA</0> 以及 <1>隐私声明</1>。",
+  "Submit": "提交",
+  "SuccessfullyRequestText": "您的请求已成功发送！",
+  "ErrorRequestText": "很抱歉，发生错误，请稍后重试",
+
+  "LookingForOtherWays": "想以其他方式为 ONLYOFFICE 项目做贡献？",
+  "CheckThisPage": "请查看此页面"
+}

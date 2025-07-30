@@ -1,0 +1,72 @@
+{
+  "PageTitle": "Váš virtuální digitální pracovní prostor | ONLYOFFICE",
+  "PageDescription": "Vytvářejte kolaborativní online pracovní prostor v zabezpečeném cloudu nebo jej hostujte sami. Pracujte na dálku pomocí funkcí online pracovního prostoru. Spravujte projekty a e-maily, spolupracujte na dokumentech, chatujte v pracovním prostoru ONLYOFFICE.",
+
+  "HeroTitle": "ONLYOFFICE Workspace",
+  "HeroText": "Balíček webových aplikací pro efektivní řízení týmu a spolupráci",
+  "GetItNow": "Získat nyní",
+
+  "ManageAllYourBusinessProcesses": "Spravujte všechny své obchodní procesy",
+  "LearnMore": "Zjistěte více",
+
+  "Documents": "Dokumenty",
+  "StoreAndOrganize": "Ukládejte a organizujte obchodní dokumentaci. Sdílejte dokumenty a spravujte přístupová oprávnění pro uživatele a skupiny. Upravujte a spolupracujte na <0>textových dokumentech</0>, <1>tabulkách</1>, <2>prezentacích</2>, <3>PDF souborech</3> a vyplnitelných <4>formulářích</4>.",
+  "HighestCompatibility": "Nejvyšší kompatibilita s formáty MS Office",
+  "MultiFormat": "Přehrávač médií ve více formátech",
+  "ReadyForms": "Online formuláře dokumentů připravené k vyplnění",
+  "PrivateRooms": "Soukromé místnosti pro end–to–end šifrovanou spolupráci na dokumentech",
+
+  "Mails": "Pošta",
+  "KeepYourMailboxOrganized": "Udržujte si pořádek ve své poštovní schránce. Vytvořte si firemní poštovní schránky na své doméně nebo použijte výchozí. Připojte více e–mailových účtů, spravujte a označujte zprávy. Vytvořte podpis a využijte konstruktor šablon.",
+  "SupportOfCommonEmailProtocols": "Podpora běžných e–mailových protokolů: POP3, SMTP, IMAP",
+  "UnlimitedNumber": "Neomezený počet poštovních schránek a poštovních skupin",
+  "FreeDefaultDomain": "Výchozí doména zdarma",
+
+  "Crm": "CRM",
+  "OrganizeYourBusinessWorkflow": "Uspořádejte si pracovní postupy od generování potenciálních zákazníků až po vyřízení objednávky. Vytvářejte přehledy a sledujte pokrok svého týmu.",
+  "WebToLead": "Formulář Web–to–Lead pro rychlé zadávání potenciálních zákazníků",
+  "MakingCalls": "Provádění hovorů pomocí Twilio",
+  "CloseIntegration": "Úzká integrace s poštou, projekty a kalendářem",
+
+  "Projects": "Projekty",
+  "OrganizeYourTeam": "Organizujte svůj tým pro úspěch. Vytvářejte projekty, určujte priority úkolů a nastavujte termíny. Sledujte čas a vytvářejte přehledy pro analýzu produktivity vašeho týmu",
+  "GanttChart": "Ganttův diagram",
+  "PrivateProjects": "Soukromé projekty a správa přístupových práv",
+  "Integration": "Integrace s dokumenty, kalendářem a CRM",
+  "WatchVideo": "Podívejte se na videoprezentaci",
+
+  "Calendar": "Kalendář",
+  "ManageYourTime": "Spravujte svůj čas moudře : vytvořte si osobní nebo týmový rozvrh, přidávejte různé typy událostí a nastavte připomenutí, abyste nikdy nic nezmeškali.",
+  "CalendarSharing": "Sdílení kalendáře",
+  "Synchronization": "Synchronizace s aplikacemi třetích stran",
+  "CloseIntegrationWithModules": "Úzká integrace se všemi moduly ONLYOFFICE",
+
+  "OOWorkspace": "ONLYOFFICE Workspace 12.5:",
+  "OOWorkspaceMobile": "ONLYOFFICE Workspace 12.5 vydán",
+  "OOWorkspaceText": "vylepšené zabezpečení, optimalizovaná správa dokumentů, Tmavý motiv a další",
+
+  "WhyOOWorkspace": "Proč ONLYOFFICE Workspace",
+  "Benefits": "Výhody online pracovního prostoru",
+
+  "ThirdParty": "Integrace služeb třetích stran",
+  "ExtendYourWorkspace": "Rozšiřte funkčnost svého pracovního prostoru o oblíbené aplikace a nástroje pro přihlašování, podepisování, ověřování nebo ukládání.",
+  "FindAppsYouNeed": "Najděte aplikace, které potřebujete",
+
+  "DataSecurityHeader": "Zabezpečení dat a ovládání",
+  "DataSecurity": "Šifrování dat v klidu a při přenosu. Ověření LDAP / Active Directory. Flexibilní přístupová práva a JWT. Sledování činnosti, hlášení auditů a další funkce.",
+
+  "Administration": "Správa a přizpůsobení",
+  "ManageYourWorkspace": "Spravujte svůj pracovní prostor pomocí intuitivního ovládacího panelu. Přizpůsobte si jej pomocí vestavěných barevných schémat, nahraďte loga, nadpisy, odkazy, nastavte Světlé nebo Tmavé téma rozhraní.",
+
+  "GettingStarted": "Začít je snadné",
+  "UseOOWorkspace": "Využívejte ONLYOFFICE Workspace v cloudu, hostujte jej sami nebo spusťte předkonfigurovanou instalaci.",
+
+  "GetStarted": "Začít",
+  "OvhMarketplace": "OVHcloud Marketplace",
+  "OneClickInstall": "Instalace jedním kliknutím, automatické aktualizace",
+
+  "SelfHosted": "Samohostované",
+  "Host": "Hostujte ve svém prostředí",
+
+  "CommunityFooterText": "Komunitní verze pro domácí použití je k dispozici ke stažení <0>zde</0>."
+}

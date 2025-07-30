@@ -22,7 +22,7 @@ const Compatibility = () => {
           i18nKey="WhatWentWrong"
           components={[
             <Link
-              href="/images/templates/best-zoho-docs-alternative/compatibility/pdf/zoho.pdf"
+              href={`${process.env.NEXT_PUBLIC_SITE_URL}/images/templates/best-zoho-docs-alternative/compatibility/pdf/zoho.pdf`}
               color="main"
               target="_blank"
               textUnderline
