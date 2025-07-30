@@ -1,0 +1,1 @@
+export { FeaturesBottom } from "./FeaturesBottom";
