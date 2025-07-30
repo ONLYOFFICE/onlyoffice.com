@@ -3,7 +3,6 @@ interface ICheckStatus {
   lastName: "default" | "success" | "error";
   email: "default" | "success" | "error";
   portalName: "default" | "success" | "error";
-  youAre: "default" | "success" | "error";
   yourWebsiteURL: "default" | "success" | "error";
 };
 

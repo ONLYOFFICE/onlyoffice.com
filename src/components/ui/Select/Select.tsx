@@ -104,6 +104,7 @@ const Select = ({
         $status={status}
         $labelVariant={labelVariant}
         disabled={disabled}
+        type="button"
       >
         {label && (
           <StyledSelectLabel

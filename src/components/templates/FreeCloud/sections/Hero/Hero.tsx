@@ -7,6 +7,8 @@ import { Link } from "@src/components/ui/Link";
 import { Input } from "@src/components/ui/Input";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { LoaderButton } from "@src/components/ui/LoaderButton";
+import { Select } from "@src/components/ui/Select";
+import { ISelectOption } from "@src/components/ui/Select/Select.types";
 import { ICheckStatus } from "../../FreeCloud.types";
 import { validateFullName, validateEmail, validateWebsite } from "@src/utils/validators";
 
@@ -30,17 +32,24 @@ const Hero = () => {
     lastName: "",
     email: "",
     portalName: "",
-    youAre: "",
     yourWebsiteURL: "",
   });
+
   const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
     firstName: "default",
     lastName: "default",
     email: "default",
     portalName: "default",
-    youAre: "default",
     yourWebsiteURL: "default",
   });
+
+  const [selectedOption, setSelectedOption] = useState<ISelectOption[]>([]);
+
+  const options = [
+    { value: "School", label: t("School") },
+    { value: "NonProfit", label: t("NonProfit") },
+    { value: "Contributor", label: t("Contributor") },
+  ];
 
   const handleCheckStatusFullName = () => {
     if (validateFullName(dataForm.firstName)) {
@@ -142,9 +151,27 @@ const Hero = () => {
           </StyledHeroStep>
           <StyledHeroStepText size={3}>
             <Trans t={t} i18nKey={"StepFirstText"} components={[
-                <Link key="0" color="#FF6F3D" textUnderline={true} hover="underline-none" href="/docspace-registration" />,
-                <Link key="1" color="#FF6F3D" textUnderline={true} hover="underline-none" href="/banners?from=nonprofit" />,
-                <Link key="2" color="#FF6F3D" textUnderline={true} hover="underline-none" href="/" />,
+                <Link
+                  key="0"
+                  color="#FF6F3D"
+                  textUnderline={true}
+                  hover="underline-none"
+                  href="/docspace-registration"
+                />,
+                <Link
+                  key="1"
+                  color="#FF6F3D"
+                  textUnderline={true}
+                  hover="underline-none"
+                  href="/banners?from=nonprofit"
+                />,
+                <Link
+                  key="2"
+                  color="#FF6F3D"
+                  textUnderline={true}
+                  hover="underline-none"
+                  href="/"
+                />,
               ]}
             />
           </StyledHeroStepText>
@@ -173,7 +200,11 @@ const Hero = () => {
                 onBlur={handleCheckStatusFullName}
                 onFocus={() => setCheckStatus((prev) => ({ ...prev, firstName: "default" }))}
                 status={checkStatus.firstName}
-                caption={dataForm.firstName.length === 0 ? t("FirstNameIsEmpty") : t("FirstNameIsIncorrect")}
+                caption={
+                  dataForm.firstName.length === 0
+                    ? t("FirstNameIsEmpty")
+                    : t("FirstNameIsIncorrect")
+                  }
                 required
               />
               <Input
@@ -184,7 +215,11 @@ const Hero = () => {
                 onBlur={handleCheckStatusLastName}
                 onFocus={() => setCheckStatus((prev) => ({ ...prev, lastName: "default" }))}
                 status={checkStatus.lastName}
-                caption={dataForm.lastName.length === 0 ? t("LastNameIsEmpty") : t("LastNameIsIncorrect")}
+                caption={
+                  dataForm.lastName.length === 0
+                    ? t("LastNameIsEmpty")
+                    : t("LastNameIsIncorrect")
+                  }
                 required
               />
             </StyledHeroFormNameWrapper>
@@ -196,7 +231,11 @@ const Hero = () => {
               onBlur={handleCheckStatusEmail}
               onFocus={() => setCheckStatus((prev) => ({ ...prev, email: "default" }))}
               status={checkStatus.email}
-              caption={dataForm.email.length === 0 ? t("EmailIsEmpty") : t("EmailIsIncorrect")}
+              caption={
+                dataForm.email.length === 0
+                  ? t("EmailIsEmpty")
+                  : t("EmailIsIncorrect")
+                }
               required
             />
             <Input
@@ -207,19 +246,21 @@ const Hero = () => {
               onBlur={handleCheckStatusPortalName}
               onFocus={() => setCheckStatus((prev) => ({ ...prev, portalName: "default" }))}
               status={checkStatus.portalName}
-              caption={dataForm.portalName.length === 0 ? t("AccountNameIsEmpty") : undefined}
+              caption={
+                dataForm.portalName.length === 0
+                  ? t("AccountNameIsEmpty")
+                  : undefined
+                }
               required
             />
-            <Input
-              value={dataForm.youAre}
-              onChange={(event) => setDataForm({...dataForm, youAre: event.target.value})}
-              placeholder={t("YouAre")}
+            <Select
+              selected={selectedOption}
+              setSelected={setSelectedOption}
+              options={options}
               label={t("YouAre")}
-              // onBlur={handleCheckStatusYouAre}
-              onFocus={() => setCheckStatus((prev) => ({ ...prev, youAre: "default" }))}
-              status={checkStatus.youAre}
-              caption={dataForm.youAre.length === 0 ? t("YouAreIsEmpty") : t("YouAreIsIncorrect")}
+              status={selectedOption.length === 0 ? "default" : "success"}
               required
+              maxWidth="100%"
             />
             <Input
               value={dataForm.yourWebsiteURL}
@@ -229,7 +270,11 @@ const Hero = () => {
               onBlur={handleCheckStatusYourWebsiteURL}
               onFocus={() => setCheckStatus((prev) => ({ ...prev, yourWebsiteURL: "default" }))}
               status={checkStatus.yourWebsiteURL}
-              caption={dataForm.yourWebsiteURL.length === 0 ? t("YourWebsiteURLEmpty") : t("YourWebsiteURLIsIncorrect")}
+              caption={
+                dataForm.yourWebsiteURL.length === 0
+                  ? t("SiteURLIsEmpty")
+                  : t("SiteURLIsIncorrect")
+                }
               required
             />
             <HCaptcha />
@@ -241,7 +286,7 @@ const Hero = () => {
                 checkStatus.lastName !== "success" ||
                 checkStatus.email !== "success" ||
                 checkStatus.portalName !== "success" ||
-                // checkStatus.youAre !== "success" ||
+                selectedOption.length === 0 ||
                 checkStatus.yourWebsiteURL !== "success"
               }
             />

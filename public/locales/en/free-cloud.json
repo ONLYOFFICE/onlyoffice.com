@@ -24,6 +24,8 @@
 	"NonProfit": "Non-profit",
 	"Contributor": "Contributor",
 	"YourWebsiteURL": "Your website URL",
+	"SiteURLIsEmpty": "Site URL is empty",
+	"SiteURLIsIncorrect": "Site URL is incorrect",
 	"SubmitRequest": "Submit request",
 	"SuccessRequestText": "Your request will be considered within <0>3 working days</0>. Our decision will be made in accordance with the Terms on ONLYOFFICE Cloud Service.",
 	"ErrorRequestText": "The request could not be sent. Please try again later.",
