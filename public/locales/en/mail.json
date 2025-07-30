@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Corporate email management tool | ONLYOFFICE",
+  "PageDescription": "Create corporate mailboxes, link your email accounts and manage all the correspondance in one place.",
+
+  "HeroTitle": "Manage your emails efficiently",
+  "HeroText": "Easy-to-use email management tool",
+  "HeroImage": "/images/templates/mail/hero/en/hero_image.png",
+  "HeroImage2x": "/images/templates/mail/hero/en/hero_image@2x.png",
+  "GetItNow": "Get it now",
+
+  "MailServer": "Mail Server",
+  "MailServerText": "Add a mail server using your domain name to create corporate mailboxes for your team members. Synchronize emails via IMAP. Back up and restore Mail Server database.",
+  "MailServerImage": "/images/templates/mail/features/en/mail_server.png",
+  "MailAggregator": "Mail aggregator",
+  "MailAggregatorText": "Collect, process, and store all correspondence in one place, connecting all email accounts to ONLYOFFICE.",
+  "MailAggregatorImage": "/images/templates/mail/features/en/mail_aggregator.png",
+  "EffectiveEmail": "Effective email management",
+  "EffectiveEmailText": "Organize your Inbox efficiently: structure correspondence into categories with Folders management, easily drag and drop emails to folders, and use filters to sort mail automatically.",
+  "EffectiveEmailImage": "/images/templates/mail/features/en/effective_email.png",
+  "EasyEmailFormatting": "Easy email formatting",
+  "EasyEmailFormattingText": "Customize fonts and styles. Upload attachments and attach from Documents module. Create and manage signatures. Make use of comprehensive template constructor.",
+  "EasyEmailFormattingImage": "/images/templates/mail/features/en/email_formatting.png",
+  "CrmIntegration": "CRM integration",
+  "CrmIntegrationText": "Link email threads or separate messages to CRM contacts, cases, or opportunities and have all related correspondence on hand.",
+  "CrmIntegrationImage": "/images/templates/mail/features/en/crm_integration.png",
+  "DocumentIntegration": "Document integration",
+  "DocumentIntegrationText": "Attach files from the Documents module to your emails for fast information exchange.",
+  "DocumentIntegrationImage": "/images/templates/mail/features/en/document_integration.png",
+  "CalendarIntegration": "Calendar integration",
+  "CalendarIntegrationText": "Send invitations to your calendar events and notify guests about any changes you made. Get invitations from third-party calendars and reply to them.",
+  "CalendarIntegrationImage": "/images/templates/mail/features/en/calendar_integration.png",
+
+  "PerfectOnlineCollaboration": "A perfect little online collaboration space for your entire team.",
+  "PcMag": "PC Mag"
+}

@@ -1,0 +1,69 @@
+{
+  "PageTitle": "Utilizza gli assistenti AI in ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "Lavora più velocemente con i tuoi testi, fogli e diapositive utilizzando i plugin di IA direttamente negli editor.",
+
+  "HeroTitle": "Lavora più velocemente sui tuoi documenti con <0>assistenti basati sull'AI</0>",
+  "HeroInputPlaceholder": "Inserisci la tua e-mail",
+  "CreateFreeAccount": "Crea account gratuito",
+
+  "MakeTheMost": "Ottieni il massimo dagli <0>AI Helper</0>",
+
+  "WorkWithText": "Lavora con i testi",
+  "GenerateText": "Genera contenuto",
+  "RewriteText": "Riscrivi il testo <br/>(rendilo più lungo/più corto/più semplice)",
+  "FixGrammar": "Correggi grammatica e ortografia",
+  "Summarize": "Riassumi",
+  "ExtractKeywords": "Estrai parole chiave",
+  "ExplainWords": "Spiega le parole",
+  "Translate": "Traduci",
+
+  "GenerateElements": "Genera elementi per testi, tabelle, slide",
+  "GenerateImages": "Genera immagini a partire da testo",
+  "GetCode": "Ottieni codice compilato",
+  "BuildTables": "Crea tabelle",
+
+  "ChatWithAI": "Chatta con l'assistente dell'IA",
+  "GetAnswers": "Ottieni risposte alle tue domande",
+  "MakeRequests": "Fai varie richieste in un modulo libero",
+  "QuicklyFind": "Trova rapidamente informazioni",
+  "Entertain": "Divertiti",
+
+  "WorkWithVisuals": "Lavora con elementi visivi",
+  "MakeUseOfOCR": "Usa OCR",
+  "ExtractText": "Estrai testo da PDF scansionati",
+  "DigitizeImages": "Digitalizza immagini con testo incorporato",
+
+  "CalculateWithAI": "Calcola con l'AI",
+  "GetTheRightFunction": "Ottieni la funzione giusta in pochi secondi",
+  "CreateNewMacros": "Crea nuove macro",
+  "ConvertMacros": "Converti macro VBA",
+
+  "TryInCloud": "PROVA NEL CLOUD",
+  "TryInDesktop": "Prova su desktop",
+
+  "ConnectAnyAI": "Connetti qualsiasi assistente AI",
+  "ConnectAnyAIText": "Connetti qualsiasi modello AI, inclusi quelli locali. Seleziona un provider preinstallato dall'elenco (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI) o configura il tuo modello personalizzato.",
+
+  "DifferentAI": "Diversi modelli AI – per compiti diversi",
+  "AdjustAI": "Adatta l'uso dell'AI come ne hai bisogno. Applica diversi modelli AI per eseguire varie azioni come richieste di chatbot, traduzione, OCR, ecc.",
+
+  "GetStarted": "Inizia",
+  "SwitchToThePluginsTab": "Passa alla scheda <0>Plugin</0> negli editor.",
+  "LaunchPluginManager": "Avvia il <0>Plugin Manager</0> integrato.",
+  "ClickInstall": "Clicca su <0>Installa</0> accanto al plugin <0>AI</0>.",
+  "AccessTheAIPlugin": "Accedi alla scheda <0>AI</0> che compare.",
+  "ClickSettings": "Clicca su <0>Impostazioni</0> per aprire la finestra di configurazione.",
+  "ClickEditAIModels": "Clicca su <0>Modifica modelli AI</0>. Inserisci le chiavi per i provider AI selezionati dall'elenco o aggiungi nuovi modelli AI.",
+  "SelectTheRequiredAIModels": "Seleziona i modelli AI necessari per compiti specifici.",
+
+  "LearnMoreHeading": "Scopri di più sull'utilizzo dell'IA in ONLYOFFICE",
+  "Blog": "Blog",
+  "FAQ": "FAQ: come usare l'AI in ONLYOFFICE",
+  "FAQLink": "https://www.onlyoffice.com/blog/it/2025/03/faq-ai-in-onlyoffice",
+  "TopAITools": "I migliori strumenti AI per le suite d'ufficio",
+  "TopAIToolsLink": "https://www.onlyoffice.com/blog/it/2025/01/ai-suite-ufficio",
+  "HowToAdd": "Come aggiungere un provider personalizzato al plugin AI",
+  "HowToAddLink": "https://www.onlyoffice.com/blog/it/2025/03/aggiungere-provider-personalizzato-al-plugin-ai-di-onlyoffice",
+
+  "LearnMore": "Scopri di più"
+}

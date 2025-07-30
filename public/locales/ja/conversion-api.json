@@ -1,0 +1,36 @@
+{
+  "PageTitle": "変換API｜ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "あらゆる種類のオフィス文書を1つのAPIで変換",
+
+  "HeroTitle": "パワフルな文書変換",
+  "HeroText": "テキスト、シート、スライド、フォーム、PDF、電子ブックなど、あらゆる種類の Office ドキュメントを 1 つの API で変換できます",
+  "GetStarted": "今すぐ始める",
+
+  "ExploreExamples": "すぐに使える事例を見る",
+  "OOConversionApiTitle": "ONLYOFFICE変換APIは、人気の高い統合機能で使用されている",
+  "ConvertingFormats": "OOXML形式以外のフォーマットをOOXML形式に変換して、さらに編集する",
+  "SavingDocuments": "さまざまなファイルストレージからドキュメントを保存する",
+
+  "WhyToUseOOConversionApi": "ONLYOFFICEの変換APIを使用する理由",
+  "SupportForAllPopularFormats": "すべての一般的なフォーマットをサポート",
+  "CreatePdfs": "ドキュメントやシート、スライドからPDFを作成したり、教科書を電子書籍にしたり、スライドを画像ファイルに変換したり、様々なことができます。ONLYOFFICEは50種類以上のドキュメント<0>フォーマット</0>をサポートしています。",
+  "Security": "セキュリティについて",
+  "TheOpenSourceCode": "ONLYOFFICEのオープンソースコードはGitHubに公開されており、透明性・信頼性を確保しています。JSON Web Tokenにより、不正なアクセスからドキュメントを保護しています。セキュリティ<0>対策</0>について詳しくはこちら",
+  "AdvancedSettings": "高度設定",
+  "AddConversionSettings": "csvファイル変換時の区切り文字、スプレッドシート変換時のデフォルト通貨表示モード、出力PDFファイルのページサイズや余白の設定など、変換設定を追加することができます。利用可能な機能一覧については、APIドキュメントをご参照ください。",
+  "HighQualityConversion": "高品質な変換",
+  "OOConstantlyImproveTheService": "ONLYOFFICEは、すべての変換タイプで最良の結果を提供するために、常にサービスを改善しています。<0>オンライン変換ツール</0>をご利用いただき、ご自身の文書ファイルを変換してみてはいかがでしょうか。",
+
+  "EasilyBuild": "オンライン文書変換ツールを簡単に作成",
+  "UsingOOConversionApi": "ONLYOFFICE変換APIを使うことで",
+  "CheckTheTutorial": "チュートリアルを見る",
+  "DocumentConverterLink": "https://www.onlyoffice.com/blog/ja/2023/02/onlyoffice-conversion-api",
+
+  "PartOfOODocsDeveloper": "ONLYOFFICE変換API：ONLYOFFICE Docs Developerの一部",
+  "BringAdvancedDocument": "変換サービスによる高度な文書処理を、御社ブランドでエンドユーザーに提供する。<0>詳細はこちら</0>",
+  "ConversionApiLinkSubject": "ONLYOFFICE変換APIのリクエスト",
+
+  "HaveAnyQuestions": "何かご質問ありますか？",
+  "HaveAnyQuestionsText": "喜んでお手伝いたします。詳細についてご相談ください。",
+  "GetInTouch": "お問い合わせ"
+}

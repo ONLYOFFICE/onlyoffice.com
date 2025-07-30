@@ -1,0 +1,63 @@
+{
+  "AccountCanceledPageTitle": "ONLYOFFICE 个人账户已删除 | ONLYOFFICE",
+  "AccountCanceledPageDescription": " 为什么您决定删除您的ONLYOFFICE个人账户？",
+
+  "InstallCanceledPageTitle": "ONLYOFFICE的内部安装已解除。 | ONLYOFFICE",
+  "InstallCanceledPageDescription": "为什么您决定从您的服务器上卸载ONLYOFFICE。",
+
+  "RegistrationCanceledPageTitle": "云办公室的注册被取消 | ONLYOFFICE",
+  "RegistrationCanceledPageDescription": "您为什么决定取消ONLYOFFICE云计算注册？",
+
+  "DesktopUninstalledPageTitle": "ONLYOFFICE桌面编辑器已被卸载 | ONLYOFFICE",
+  "DesktopUninstalledPageDescription": "您为什么决定卸载ONLYOFFICE桌面编辑器？",
+
+  "CanceledHeroTitle": "很遗憾看到您离开！",
+
+  "WhyDidYouDecideToUninstallOnlyoffice": "您为什么决定卸载ONLYOFFICE呢？",
+  "SelectAllThatApply": "请选择所有符合描述的选项",
+  "ExperiencedTechnicalProblems": "有些技术问题",
+  "NeedMoreStorageSpace": "需要更多存储空间",
+  "DidntFindNecessaryFeatures": "没有找到必要功能",
+  "PrivacyConcernsLegalViolation": "隐私问题/违反法律",
+  "IRarelyWorkInBrowser": "我很少在浏览器中工作",
+  "Other": "其他",
+
+  "SwitchedToTheCloudVersion": "切换至云版本",
+  "IRarelyUseOnlyoffice": "我很少使用ONLYOFFICE",
+
+  "IWillUseAnotherDesktopSoftware": "我将使用另一款桌面软件",
+  "IRarelyUseOnlyofficeDesktopEditors": "我很少使用ONLYOFFICE桌面编辑器",
+
+  "SwitchedToOnPremises": "切换至本地",
+
+  "WhatShouldWeImproveInOnlyofficePersonal": "我们应该在哪些方面对ONLYOFFICE个人版进行改进？",
+  "WhatShouldWeImproveInOnlyoffice": "我们应该在哪些方面对ONLYOFFICE进行改进？",
+  "WhatShouldWeImproveInOnlyofficeDesktopEditors": "我们应该在哪些方面对ONLYOFFICE桌面编辑器进行改进？",
+  "YourMessageHere": "请在此处输入消息",
+  "Email": "邮箱地址",
+  "EmailIsEmpty": "电子邮箱为空",
+  "EmailIsIncorrect": "电子邮箱错误",
+  "ByClickingSendFeedback": "",
+  "SendFeedback": "点击“发送反馈”即表示您了解并同意我们的<0>SLA</0>以及<1>隐私声明</1>。",
+
+  "ThanksForYourMessage": "感谢您的消息。",
+  "IfYouDecideToGetBack": "如果您之决定回归，则可使用此优惠券码享受ONLYOFFICE云服务的<0>10%折扣</0>，当然您也可将其与好友分享！*",
+  "WhyTakeBusinessToOnlyofficeCloudToday": "为什么您应立即将业务迁移至ONLYOFFICE云中",
+  "FullyGDPRCompliantCloudOffice": "完全符合GDPR要求的云办公室",
+  "ReducedMaintenanceCosts": "更低的维护成本",
+  "SecureAndReliableHosting": "安全可靠的托管",
+  "AutomaticUpdates": "自动更新与专业技术支持",
+  "ScalableCostEffectiveSolution": "可伸缩高效经济解决方案",
+  "EntirelyFree": "NGO与教育组织可享100%折扣",
+  "TheCoupon": "*优惠券码有效期为12个月。",
+
+  "DontLeave": "不要空手而归 - 带上我们适合家庭使用的的免费个人云（含编辑器），还有企业在线编辑器的<0>10%折扣！*</0>",
+  "WhyChooseFreePersonalOnlyofficeCloudToday": "为什么选择免费个人ONLYOFFICE云",
+  "FreeAndSecureCloudStorage": "免费安全的云存储",
+  "HighestCompatibility": "高度兼容MS Office格式",
+  "DocumentEditing": "在浏览器中编辑文档并进行协作",
+  "ConnectionOfPopular": "可连接至常用第三方存储服务：Dropbox、OneDrive 等。",
+  "PleaseNote": "*请注意，优惠券码仅在12个月内有效。",
+
+  "HopeToSeeYouAgain": "感谢您的消息。希望能再次与您相见！"
+}

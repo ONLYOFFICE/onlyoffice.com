@@ -27,7 +27,10 @@ const Video = () => {
     >
       <Container>
         <StyledVideoWrapper>
-          <StyledVideo $image={t("VideoImageUrl")} onClick={() => setIsOpen(true)} />
+          <StyledVideo
+            $image={t("VideoImageUrl")}
+            onClick={() => setIsOpen(true)}
+          />
           <StyledVideoContent>
             <StyledVideoTitle level={5}>
               <span>{t("OOWorkspace")}</span>
@@ -45,7 +48,11 @@ const Video = () => {
         >
           <StyledWatchVideoModal>
             <iframe
-              src={locale !== "zh" ? "https://www.youtube.com/embed/tTuH1HrxupA?si=TYxrArY6kaleXdJW" : "https://player.bilibili.com/player.html?aid=BV14B4y137LB&bvid=BV14B4y137LB&cid=BV14B4y137LB"}
+              src={
+                locale !== "zh"
+                  ? "https://www.youtube.com/embed/tTuH1HrxupA?si=TYxrArY6kaleXdJW"
+                  : "https://player.bilibili.com/player.html?aid=BV14B4y137LB&bvid=BV14B4y137LB&cid=BV14B4y137LB"
+              }
               allow="encrypted-media"
               allowFullScreen={true}
             ></iframe>

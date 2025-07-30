@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Gestão de emails da empresa | ONLYOFFICE",
+  "PageDescription": "Crie caixas de correio corporativas, vincule contas de e-mail e gerencie toda a correspondência em um só lugar.",
+
+  "HeroTitle": "Gerencie os seus e-mails de forma eficiente",
+  "HeroText": "Ferramenta de gerenciamento de e-mail fácil de usar",
+  "GetItNow": "Obtê-lo agora",
+
+  "MailServer": "Servidor de e-mail",
+  "MailServerText": "Adicione um servidor de e-mail usando seu próprio nome de domínio para criar caixas de correio empresariais para os membros de sua equipe. Sincronize e-mails através do IMAP. Faça backup e restaure o banco de dados do Mail Server.",
+  "MailServerImage": "/images/templates/mail/features/pt/mail_server.png",
+  "MailAggregator": "Agregador de e-mail",
+  "MailAggregatorText": "Colete, processe e armazene todas as suas correspondências em um único lugar, conectando todas as contas de e-mail ao ONLYOFFICE.",
+  "MailAggregatorImage": "/images/templates/mail/features/pt/mail_aggregator.png",
+  "EffectiveEmail": "Gerenciamento eficaz de e-mail",
+  "EffectiveEmailText": "Organize sua Caixa de entrada de maneira eficiente: estruture a correspondência em categorias com o Gerenciamento de pastas, mova facilmente os e-mails para pastas com o recurso de arrastar e soltar, use filtros para organizar os e-mails automaticamente.",
+  "EffectiveEmailImage": "/images/templates/mail/features/pt/effective_email.png",
+  "EasyEmailFormatting": "Formatação fácil de e-mail",
+  "EasyEmailFormattingText": "Trabalhe totalmente com fontes e estilos. Faça upload dos anexos e anexe a partir do módulo Documentos. Crie e gerencie assinaturas. Use o construtor de modelos abrangente.",
+  "EasyEmailFormattingImage": "/images/templates/mail/features/pt/email_formatting.png",
+  "CrmIntegration": "Integração CRM",
+  "CrmIntegrationText": "Vincule threads de e-mail ou mensagens separadas aos contatos de CRM, casos ou oportunidades e tenha toda a correspondência relacionada à mão.",
+  "CrmIntegrationImage": "/images/templates/mail/features/pt/crm_integration.png",
+  "DocumentIntegration": "Integração de documento",
+  "DocumentIntegrationText": "Anexe arquivos do módulo Documentos aos seus e-mails para uma troca de informações mais rápida.",
+  "DocumentIntegrationImage": "/images/templates/mail/features/pt/document_integration.png",
+  "CalendarIntegration": "Integração da agenda",
+  "CalendarIntegrationText": "Envie convites para seu evento da agenda e notifique os convidados sobre quaisquer mudanças realizadas. Receba convites de agendas de terceiros e responda-os.",
+  "CalendarIntegrationImage": "/images/templates/mail/features/pt/calendar_integration.png",
+
+  "PerfectOnlineCollaboration": "Um pequeno espaço de colaboração online perfeito para toda a sua equipe.",
+  "PcMag": "PC Mag"
+}

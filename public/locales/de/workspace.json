@@ -1,0 +1,82 @@
+{
+  "PageTitle": "Digital Workspace für jedes Team",
+  "PageDescription": "Organisieren Sie einen Digital Virtual Workspace mit ONLYOFFICE-Software. Verwalten Sie Dokumente, Projekte und E-Mails online. Erhalten Sie alle Business-Tools für effiziente Zusammenarbeit.",
+
+  "HeroTitle": "Digital Workspace Software",
+  "HeroText": "Collaborative Online Workspace für effizientes Team-Management und Zusammenarbeit",
+  "GetItNow": "Jetzt erhalten",
+
+  "ManageAllYourBusinessProcesses": "Verwalten Sie alle Ihre Geschäftsprozesse",
+  "LearnMore": "Mehr erfahren",
+
+  "Documents": "Dokumente",
+  "StoreAndOrganize": "Speichern und organisieren Sie Geschäftsdokumente. Geben Sie Dokumente frei und verwalten Sie Zugriffsberechtigungen für Benutzer und Gruppen. Bearbeiten Sie <0>Textdokumente</0>, <1>Tabellenkalkulationen</1>, <2>Präsentationen</2>, <3>PDF-Dateien</3> und ausfüllbare <4>Formularen</4> und arbeiten Sie gemeinsam daran.",
+  "HighestCompatibility": "Höchste Kompatibilität mit Formaten von MS Office",
+  "MultiFormat": "Multiformat-Medienplayer",
+  "ReadyForms": "Ausfüllfertige Online-Formulare",
+  "PrivateRooms": "Private Räume für Ende-zu-Ende verschlüsselte Zusammenarbeit an Dokumenten",
+  "DocumentsImgUrl": "/images/templates/workspace/manage/de/documents.png",
+  "DocumentsImgUrl2x": "/images/templates/workspace/manage/de/documents@2x.png",
+
+  "Mails": "E-Mail",
+  "KeepYourMailboxOrganized": "Halten Sie Ihre Mailbox organisiert. Erstellen Sie Firmenpostfächer auf Ihrer Domain oder verwenden Sie das Standardpostfach. Verbinden Sie mehrere E-Mail-Konten, verwalten und taggen Sie Nachrichten. Erstellen Sie Signaturen und nutzen Sie Vorlagen.",
+  "SupportOfCommonEmailProtocols": "Unterstützung von gängigen E-Mail-Protokollen: POP3, SMTP, IMAP",
+  "UnlimitedNumber": "Unbegrenzte Anzahl von Postfächern und E-Mail-Gruppen",
+  "FreeDefaultDomain": "Kostenlose Standard-Domäne",
+  "MailsImgUrl": "/images/templates/workspace/manage/de/mail.png",
+  "MailsImgUrl2x": "/images/templates/workspace/manage/de/mail@2x.png",
+
+  "Crm": "CRM",
+  "OrganizeYourBusinessWorkflow": "Organisieren Sie Ihren Geschäftsablauf von der Lead-Generierung bis zur Auftragsabwicklung. Erstellen Sie Berichte und überwachen Sie die Fortschritte Ihres Teams.",
+  "WebToLead": "Web-to-Lead-Formular für die schnelle Erfassung von potenziellen Kunden",
+  "MakingCalls": "Anrufe mittels Twilio",
+  "CloseIntegration": "Enge Integration mit Mail, Projekten und Kalender",
+  "CrmImgUrl": "/images/templates/workspace/manage/de/crm.png",
+  "CrmImgUrl2x": "/images/templates/workspace/manage/de/crm@2x.png",
+
+  "Projects": "Projekte",
+  "OrganizeYourTeam": "Organisieren Sie Ihr Team für den Erfolg. Erstellen Sie Projekte, priorisieren Sie Aufgaben und setzen Sie Fristen. Erfassen Sie die Zeit und erstellen Sie Berichte, um die Produktivität Ihres Teams zu analysieren.",
+  "GanttChart": "Gantt-Diagramm",
+  "PrivateProjects": "Private Projekte und Verwaltung von Zugriffsrechten",
+  "Integration": "Integration mit Dokumenten, Kalender und CRM",
+  "WatchVideo": "Video-Präsentation ansehen",
+  "ProjectsImgUrl": "/images/templates/workspace/manage/de/projects.png",
+  "ProjectsImgUrl2x": "/images/templates/workspace/manage/de/projects@2x.png",
+
+  "Calendar": "Kalender",
+  "ManageYourTime": "Verwalten Sie Ihre Zeit sinnvoll. Erstellen Sie einen persönlichen oder Teamzeitplan, fügen Sie verschiedene Ereignistypen hinzu, und setzen Sie Erinnerungen, um nichts zu verpassen.",
+  "CalendarSharing": "Gemeinsame Nutzung von Kalendern",
+  "Synchronization": "Synchronisierung mit Anwendungen von Drittanbietern",
+  "CloseIntegrationWithModules": "Enge Integration mit allen ONLYOFFICE-Modulen",
+  "CalendarImgUrl": "/images/templates/workspace/manage/de/calendar.png",
+  "CalendarImgUrl2x": "/images/templates/workspace/manage/de/calendar@2x.png",
+
+  "OOWorkspace": "ONLYOFFICE Workspace 12.5:",
+  "OOWorkspaceMobile": "ONLYOFFICE Workspace 12.5 veröffentlicht",
+  "OOWorkspaceText": "verbesserte Sicherheit, optimierte Dokumentenverwaltung, Dark Theme und mehr",
+
+  "WhyOOWorkspace": "Warum ONLYOFFICE Workspace wählen",
+  "Benefits": "Vorteile eines Online-Workspace",
+
+  "ThirdParty": "Integration von Drittanbieterdiensten",
+  "ExtendYourWorkspace": "Erweitern Sie die Funktionalität Ihres Workspace mit Ihren bevorzugten Anwendungen und Tools für die Protokollierung, Signierung, Authentifizierung oder Speicherung.",
+  "FindAppsYouNeed": "Nützliche Apps finden",
+
+  "DataSecurityHeader": "Datensicherheit und -Kontrolle",
+  "DataSecurity": "Verschlüsselung inaktiver Daten und bei der Datenübertragung. Authentifizierung über LDAP/Active Directory. Flexible Zugriffsrechte und JWT. Aktivitätsverfolgung, Audit-Berichte und vieles mehr.",
+
+  "Administration": "Verwaltung und Anpassung",
+  "ManageYourWorkspace": "Verwalten Sie Ihren Digital Workspace über ein intuitives Control Panel. Passen Sie es mit eingebauten Farbschemata an, ersetzen Sie Logos, Kopfzeilen, Links, stellen Sie ein helles oder dunkles Oberflächenthema ein.",
+
+  "GettingStarted": "Einfache Software-Bereitstellung",
+  "UseOOWorkspace": "Verwenden Sie ONLYOFFICE Workspace in der Cloud, hosten Sie es selbst oder starten Sie eine vorkonfigurierte Installation.",
+
+  "GetStarted": "Los geht's!",
+  "OvhMarketplace": "OVHcloud Marketplace",
+  "OneClickInstall": "Installation mit einem Klick, automatische Updates",
+
+  "SelfHosted": "Selbst gehostet",
+  "Host": "Hosten Sie On-Premises",
+
+  "CommunityFooterText": "Die Community-Version des Online Workspace für den Heimgebrauch können Sie <0>hier</0> herunterladen."
+}

@@ -1,55 +1,29 @@
 import { Trans, useTranslation } from "next-i18next";
-import {
-  StyledHeroContainer,
-  StyledHeroHeading,
-  StyledHeroSection,
-  StyledHeroText,
-  StyledHeroСomparison,
-  StyledHeroСomparisonItem,
-} from "./Hero.styled";
-import { Text } from "@src/components/ui/Text";
-import { Button } from "@src/components/ui/Button";
+import { BestAlternativeHero } from "@src/components/modules/best-alternative/BestAlternativeHero";
 import { comparisonLogos } from "./data/items";
+import { Text } from "@src/components/ui/Text";
 
 const Hero = () => {
   const { t } = useTranslation("best-wps-alternative");
 
   return (
-    <StyledHeroSection
-      background="#f6f6f6"
-      desktopSpacing={["158px", "108px"]}
-      tabletSpacing={["158px", "108px"]}
-      tabletSmallSpacing={["158px", "140px"]}
-      mobileSpacing={["95px", "61px"]}
-    >
-      <StyledHeroContainer>
-        <StyledHeroHeading>
-          <Trans
-            t={t}
-            i18nKey="HeroTitle"
-            components={[<Text as="span" color="#FF6F3D" key="0" />]}
-          />
-        </StyledHeroHeading>
-        <StyledHeroСomparison>
-          {comparisonLogos.map(({ src, alt, className }, index) => (
-            <StyledHeroСomparisonItem
-              key={index}
-              src={src}
-              alt={alt}
-              className={className}
-            />
-          ))}
-        </StyledHeroСomparison>
-        <Button
-          as="a"
-          href="/download?from=comparison#docs-enterprise"
-          label={t("GetOODocsNow")}
+    <BestAlternativeHero
+      heading={
+        <Trans
+          t={t}
+          i18nKey="HeroTitle"
+          components={[<Text as="span" color="#FF6F3D" key="0" />]}
         />
-        <StyledHeroText>
-          {t("CompatibleWithMicrosoftOfficeFormats")}
-        </StyledHeroText>
-      </StyledHeroContainer>
-    </StyledHeroSection>
+      }
+      comparisonLogos={comparisonLogos}
+      buttons={[
+        {
+          href: "/download?from=comparison#docs-enterprise",
+          label: t("GetOODocsNow"),
+        },
+      ]}
+      text={t("CompatibleWithMicrosoftOfficeFormats")}
+    />
   );
 };
 
