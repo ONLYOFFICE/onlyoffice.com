@@ -8982,8 +8982,8 @@ __metadata:
   linkType: hard
 
 "node-gyp@npm:latest":
-  version: 11.2.0
-  resolution: "node-gyp@npm:11.2.0"
+  version: 11.3.0
+  resolution: "node-gyp@npm:11.3.0"
   dependencies:
     env-paths: ^2.2.0
     exponential-backoff: ^3.1.1
@@ -8997,7 +8997,7 @@ __metadata:
     which: ^5.0.0
   bin:
     node-gyp: bin/node-gyp.js
-  checksum: 2536282ba81f8a94b29482d3622b6ab298611440619e46de4512a6f32396a68b5530357c474b859787069d84a4c537d99e0c71078cce5b9f808bf84eeb78e8fb
+  checksum: 64255952af18222e930a0bb8239e8fc86ec25eddfbf61523ab30b45f19670c1e66384ceda0472f5d59e63a7779b2134eab8ec5322b9f092f60202b0e312a66c8
   languageName: node
   linkType: hard
 
@@ -9244,6 +9244,7 @@ __metadata:
     styled-components: ^6.1.15
     swiper: ^11.2.4
     typescript: ^5
+    uuid: ^11.1.0
     zustand: ^5.0.5
   languageName: unknown
   linkType: soft
@@ -11506,6 +11507,15 @@ __metadata:
   version: 0.4.0
   resolution: "utila@npm:0.4.0"
   checksum: 97ffd3bd2bb80c773429d3fb8396469115cd190dded1e733f190d8b602bd0a1bcd6216b7ce3c4395ee3c79e3c879c19d268dbaae3093564cb169ad1212d436f4
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "uuid@npm:11.1.0"
+  bin:
+    uuid: dist/esm/bin/uuid
+  checksum: 840f19758543c4631e58a29439e51b5b669d5f34b4dd2700b6a1d15c5708c7a6e0c3e2c8c4a2eae761a3a7caa7e9884d00c86c02622ba91137bd3deade6b4b4a
   languageName: node
   linkType: hard
 

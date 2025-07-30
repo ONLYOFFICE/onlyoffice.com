@@ -1,0 +1,1 @@
+export { FindPartnersTemplate } from "./FindPartners";

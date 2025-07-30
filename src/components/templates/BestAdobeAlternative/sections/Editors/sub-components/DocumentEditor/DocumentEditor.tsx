@@ -46,7 +46,7 @@ const OnlyOfficeEditor = ({
       .catch((err) => {
         console.error(err);
       });
-  }, [fileType, title, url, uiTheme]);
+  }, [fileType, title, url, uiTheme, mode]);
 
   const onLoadComponentError = (
     errorCode: number,

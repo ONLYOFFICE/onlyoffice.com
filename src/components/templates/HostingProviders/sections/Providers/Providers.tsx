@@ -1,5 +1,5 @@
 import { Trans, useTranslation } from "next-i18next";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import {
   StyledAbout,
   StyledAboutWrapper,

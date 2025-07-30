@@ -1,5 +1,3 @@
-import { Heading } from "@src/components/ui/Heading";
-
 export const integrate = [
   {
     heading: "ConnectAnyAI",

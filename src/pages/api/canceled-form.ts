@@ -33,7 +33,7 @@ export default async function handler(
   const ip = req.headers["x-forwarded-for"] || req.socket.remoteAddress || null;
 
   try {
-    const commonFields: Record<string, any> = {
+    const commonFields: Record<string, string | string[] | Date | null> = {
       message,
       ip,
       create_on: new Date(),
@@ -46,7 +46,10 @@ export default async function handler(
       commonFields.email = email;
     }
 
-    const dataByTable: Record<string, any> = {
+    const dataByTable: Record<
+      string,
+      Record<string, string | string[] | Date | null>
+    > = {
       registration_cancelled_request: {
         switched_to_on_premises: mark1,
         experienced_technical_problems: mark2,

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="58" viewBox="104.5 6.5 38 58" fill="none">
+<defs>
+<linearGradient id="paint4_linear_811_2007" x1="132.5" y1="51.5" x2="132.5" y2="59.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF8E3D"/>
+<stop offset="0.3567" stop-color="#FF883D"/>
+<stop offset="0.8477" stop-color="#FF763D"/>
+<stop offset="1" stop-color="#FF6F3D"/>
+</linearGradient>
+<linearGradient id="paint5_linear_811_2007" x1="112.5" y1="11" x2="134.5" y2="11" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF8E3D"/>
+<stop offset="0.3567" stop-color="#FF883D"/>
+<stop offset="0.8477" stop-color="#FF763D"/>
+<stop offset="1" stop-color="#FF6F3D"/>
+</linearGradient>
+<linearGradient id="paint6_linear_811_2007" x1="118.5" y1="28" x2="127.5" y2="28" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF8E3D"/>
+<stop offset="0.3567" stop-color="#FF883D"/>
+<stop offset="0.8477" stop-color="#FF763D"/>
+<stop offset="1" stop-color="#FF6F3D"/>
+</linearGradient>
+</defs>
+<path d="M137.5 12.5H138.5C140.7 12.5 142.5 14.3 142.5 16.5V60.5C142.5 62.7 140.7 64.5 138.5 64.5H108.5C106.3 64.5 104.5 62.7 104.5 60.5V16.5C104.5 14.3 106.3 12.5 108.5 12.5H109.5" fill="#EFEFEF"/>
+<path d="M137.5 12.5H138.5C140.7 12.5 142.5 14.3 142.5 16.5V60.5C142.5 62.7 140.7 64.5 138.5 64.5H108.5C106.3 64.5 104.5 62.7 104.5 60.5V16.5C104.5 14.3 106.3 12.5 108.5 12.5H109.5" stroke="#333333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M136.5 51.5L128.5 59.5H110.5V19.5H136.5V51.5Z" fill="white" stroke="#333333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M128.5 59.5V51.5H136.5L128.5 59.5Z" fill="url(#paint4_linear_811_2007)" stroke="#333333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M126.5 9.5C126.5 7.8 125.2 6.5 123.5 6.5C121.8 6.5 120.5 7.8 120.5 9.5H114.5C113.4 9.5 112.5 10.4 112.5 11.5V13.5C112.5 14.6 113.4 15.5 114.5 15.5H132.5C133.6 15.5 134.5 14.6 134.5 13.5V11.5C134.5 10.4 133.6 9.5 132.5 9.5H126.5Z" fill="url(#paint5_linear_811_2007)" stroke="#333333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M127.5 26.5H124.5V23.5H121.5V26.5H118.5V29.5H121.5V32.5H124.5V29.5H127.5V26.5Z" fill="url(#paint6_linear_811_2007)" stroke="#333333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M132.5 37H114.5C114.2 37 114 36.8 114 36.5C114 36.2 114.2 36 114.5 36H132.5C132.8 36 133 36.2 133 36.5C133 36.8 132.8 37 132.5 37Z" fill="#333333"/>
+<path d="M132.5 41H114.5C114.2 41 114 40.8 114 40.5C114 40.2 114.2 40 114.5 40H132.5C132.8 40 133 40.2 133 40.5C133 40.8 132.8 41 132.5 41Z" fill="#333333"/>
+<path d="M132.5 45H114.5C114.2 45 114 44.8 114 44.5C114 44.2 114.2 44 114.5 44H132.5C132.8 44 133 44.2 133 44.5C133 44.8 132.8 45 132.5 45Z" fill="#333333"/>
+<path d="M132.5 49H114.5C114.2 49 114 48.8 114 48.5C114 48.2 114.2 48 114.5 48H132.5C132.8 48 133 48.2 133 48.5C133 48.8 132.8 49 132.5 49Z" fill="#333333"/>
+<path d="M122.5 53H114.5C114.2 53 114 52.8 114 52.5C114 52.2 114.2 52 114.5 52H122.5C122.8 52 123 52.2 123 52.5C123 52.8 122.8 53 122.5 53Z" fill="#333333"/>
+</svg>

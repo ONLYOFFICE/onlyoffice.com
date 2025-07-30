@@ -1,0 +1,73 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace、ウェブアプリユーザーのための安全なドキュメント保存と共同作業 | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE は、共同編集プラットフォームに統合されたオンライン オフィススイートです。ドキュメント、プロジェクト、チーム、顧客関係の管理が一か所でできます。",
+
+  "HeroHeading": "ONLYOFFICE DocSpace、 <br><0>ウェブアプリユーザーのための安全なドキュメント保存と共同作業</0>",
+  "HeroButtonGet": "今すぐ入手",
+  "HeroButtonSchedule": "デモを予約",
+  "HeroYoutubeTitle": "YouTube video player",
+  "HeroYoutubeUrl": "https://www.youtube.com/embed/snOBl5Ru6lc?si=Tt4C4r4OaUVVCHBs?autoplay=1&mute=1",
+  "HeroYouTubeAttributeName": "youtube embed",
+
+  "SwitcherHeadingBringYour": "ウェブアプリユーザーに、コンテンツ保存とオンラインドキュメント共同作業のための安全なスペースを提供する",
+
+  "SwitcherItemTitle1": "ONLYOFFICE DocSpace全体、単一ルーム、またはシンプルなドキュメントのみを統合 ...",
+  "SwitcherItemText1": " ONLYOFFICEは、api.jsでDocSpaceのすべての機能を使用できる<0>JavaScript SDK</0>を提供します。",
+  "SwitcherItemLink1": "API ドキュメントを読む",
+  "SwitcherItemImgUrl1": "/images/templates/docspace-developer/switcher/integrate.png",
+  "SwitcherItemImgUrl2x1": "/images/templates/docspace-developer/switcher/integrate@2x.png",
+
+  "SwitcherItemTitle2": "... お客様のブランドで ...",
+  "SwitcherItemText2": "標準のブランディングオプションを利用するか、ホワイトラベルを選択してインターフェースをカスタマイズし、ウェブサイトやアプリのブランディングに合わせます。 色の調整、タイトルの変更、ロゴやリンクの変更、「詳細情報」セクションの非表示など、さまざまなことができます。",
+  "SwitcherItemLink2": "詳細については、弊社営業チームまでお問い合わせください。",
+  "SwitcherItemImgUrl2": "/images/templates/docspace-developer/switcher/branding.png",
+  "SwitcherItemImgUrl2x2": "/images/templates/docspace-developer/switcher/branding@2x.png",
+
+  "SwitcherItemTitle3": "... お客様のサーバーに ...",
+  "SwitcherItemText3": "ONLYOFFICE DocSpace Developer をプライベートクラウドまたはハイブリッドクラウドソリューションとしてオンプレミスで展開できます。そのため、ユーザーデータは常に自社インフラ内に保存され、パブリッククラウドに引き渡されることはありません。",
+  "SwitcherItemLink3": "今すぐ試してみる",
+  "SwitcherItemImgUrl3": "/images/templates/docspace-developer/switcher/server.png",
+  "SwitcherItemImgUrl2x3": "/images/templates/docspace-developer/switcher/server@2x.png",
+
+  "SwitcherItemTitle4": "... 数分で.",
+  "SwitcherItemText4": "ONLYOFFICE は、開発者が DocSpace の完全な機能統合を設定するのに最小限の時間と労力しか必要としないシンプルな統合ツールを提供しています。",
+  "SwitcherItemLink4": "",
+  "SwitcherItemImgUrl4": "/images/templates/docspace-developer/switcher/in-minutes.png",
+  "SwitcherItemImgUrl2x4": "/images/templates/docspace-developer/switcher/in-minutes@2x.png",
+
+  "CardsHeading": "ONLYOFFICE DocSpace は、お客様のアプリケーションやウェブサイトにシームレスに適合するように構築されています。",
+
+  "CardsItemTitle1": "お客様のアプリケーションがどのような言語で書かれているかに関わらず",
+  "CardsItemText1": "ONLYOFFICE DocSpace は、技術スタック、プログラミング言語、フレームワークに関係なく、あらゆるアプリやウェブサイトに統合できます。",
+
+  "CardsItemTitle2": "どのような展開モデルを使用していても、",
+  "CardsItemText2": "ONLYOFFICE DocSpace を SaaS またはオンプレミスソリューションに統合できます。",
+
+  "CardsItemTitle3": "さまざまな用途に",
+  "CardsItemText3": "CMS、CRM、eラーニングプラットフォーム、メール、メッセージングアプリ、プロジェクト管理ソフトウェアなど、さまざまな用途に",
+
+  "WorthHeading": "ONLYOFFICE DocSpace は非常に高く評価されています",
+
+  "WorthByUsersTitle": "ユーザーから",
+  "WorthByUsersList": [
+    "さまざまな目的にカスタマイズ可能なルーム：コラボレーション、ミーティング、フォーム入力、デューデリジェンス、パブリック",
+    "柔軟なアクセス権限",
+    "ドキュメント、シート、スライド、フォーム、PDF用の統合オンラインドキュメントエディタ",
+    "強化されたセキュリティ機能",
+    "さまざまなデバイスで完璧なユーザーエクスペリエンス"
+  ],
+
+  "WorthByDevelopersTitle": "開発者から",
+  "WorthByDevelopersList": [
+    "プリセットとカスタムモードの組み込み",
+    "APIとウェブフックのサポート",
+    "機能拡張のためのプラグインSDK",
+    "高い可用性とパフォーマンス",
+    "柔軟でスケーラブルな価格設定",
+    "すぐに使える統合例",
+    "ONLYOFFICEの専門家による各ステップのサポート"
+  ],
+
+  "WorthButtonTry": "今すぐ試してみる",
+  "WorthButtonRead": "API ドキュメントを読む"
+}

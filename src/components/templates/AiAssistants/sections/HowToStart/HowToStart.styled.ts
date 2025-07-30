@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
-import { Button } from "@src/components/ui/Button";
 
 const StyledHowToStartHeading = styled(Heading)`
   margin-bottom: 72px;

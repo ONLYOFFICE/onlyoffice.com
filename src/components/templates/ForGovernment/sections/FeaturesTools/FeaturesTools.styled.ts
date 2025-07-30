@@ -49,8 +49,9 @@ const StyledFeaturesItems = styled.div`
   }
 
   p {
-    color: #666666;
+    color: #333333;
     line-height: 1.6em;
+    font-size: 14px;
   }
 
   h5 {
@@ -215,7 +216,7 @@ const StyledReasonsList = styled.ul`
     }
 
     &:not(:last-child) {
-      margin-bottom: 12px;
+      margin-bottom: 2px;
     }
 
     @media ${device.mobile} {

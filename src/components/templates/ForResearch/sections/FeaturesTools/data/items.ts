@@ -4,7 +4,7 @@ interface IFeatureItemExtended extends IFeatureItem {
   textLinks?: { href: string; isExternal?: boolean }[];
 }
 
-export const items: IFeatureItemExtended[] = [
+export const featureItems: IFeatureItemExtended[] = [
   {
     icon: {
       url: "/images/templates/for-research/features_tools/icons.svg",
@@ -34,7 +34,7 @@ export const items: IFeatureItemExtended[] = [
       positionX: "-242px",
       isSprite: true
     },
-    heading: "FeatureHead3",
+    heading: "FeatureToolsHead3",
     text: "FeatureToolsText3",
     link: {
       href: "/private-rooms?from=for-research",
@@ -65,7 +65,7 @@ export const items: IFeatureItemExtended[] = [
     heading: "FeatureToolsHead5",
     text: "FeatureToolsText5",
     link: {
-      href: "https://www.onlyoffice.com/blog/2018/05/how-onlyoffice-complies-with-gdpr/",
+      href: "HrefBlogTools",
       label: "LearnMoreTools",
       isExternal: true
     },

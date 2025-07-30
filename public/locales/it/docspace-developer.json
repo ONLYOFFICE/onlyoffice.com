@@ -1,0 +1,73 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace, archiviazione sicura dei documenti e collaborazione per gli utenti della tua app web | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE is an online office that enables you to manage documents, projects, team and customer relations in one place.",
+
+  "HeroHeading": "ONLYOFFICE DocSpace, <br><0>archiviazione sicura dei documenti e collaborazione per gli utenti della tua app web</0>",
+  "HeroButtonGet": "Installalo ora",
+  "HeroButtonSchedule": "Programma una dimostrazione",
+  "HeroYoutubeTitle": "YouTube video player",
+  "HeroYoutubeUrl": "https://www.youtube.com/embed/snOBl5Ru6lc?si=Tt4C4r4OaUVVCHBs?autoplay=1&mute=1",
+  "HeroYouTubeAttributeName": "youtube embed",
+
+  "SwitcherHeadingBringYour": "Offri agli utenti delle tue applicazioni web uno spazio sicuro per l'archiviazione dei contenuti e la collaborazione online sui documenti.",
+
+  "SwitcherItemTitle1": "Integra l'intero ONLYOFFICE DocSpace, una stanza singola, o solo un semplice documento ...",
+  "SwitcherItemText1": " ONLYOFFICE fornisce <0>JavaScript SDK</0> che consente di utilizzare tutte le possibilità di DocSpace con api.js.",
+  "SwitcherItemLink1": "Leggi la documentazione",
+  "SwitcherItemImgUrl1": "/images/templates/docspace-developer/switcher/integrate.png",
+  "SwitcherItemImgUrl2x1": "/images/templates/docspace-developer/switcher/integrate@2x.png",
+
+  "SwitcherItemTitle2": "... sotto il tuo brand ...",
+  "SwitcherItemText2": "Utilizza le opzioni standard di branding o scegli l'etichetta bianca per personalizzare l'interfaccia e abbinare il marchio del tuo sito web o della tua app. Regola i colori, modifica i titoli, i loghi e i link, nascondi la sezione Informazioni e molto altro ancora.",
+  "SwitcherItemLink2": "Contatta il nostro team di vendita per i dettagli.",
+  "SwitcherItemImgUrl2": "/images/templates/docspace-developer/switcher/branding.png",
+  "SwitcherItemImgUrl2x2": "/images/templates/docspace-developer/switcher/branding@2x.png",
+
+  "SwitcherItemTitle3": "... sui tuoi server ...",
+  "SwitcherItemText3": "ONLYOFFICE DocSpace Developer può essere distribuito on-premises come soluzione di cloud privato o ibrido, in modo che i dati degli utenti rimangano sempre all'interno della tua infrastruttura senza alcun passaggio a cloud pubblici.",
+  "SwitcherItemLink3": "Provalo ora",
+  "SwitcherItemImgUrl3": "/images/templates/docspace-developer/switcher/server.png",
+  "SwitcherItemImgUrl2x3": "/images/templates/docspace-developer/switcher/server@2x.png",
+
+  "SwitcherItemTitle4": "... in pochi minuti.",
+  "SwitcherItemText4": "ONLYOFFICE fornisce strumenti di integrazione semplici che richiedono un tempo e uno sforzo minimi per gli sviluppatori per impostare un'integrazione DocSpace completamente funzionale.",
+  "SwitcherItemLink4": "",
+  "SwitcherItemImgUrl4": "/images/templates/docspace-developer/switcher/in-minutes.png",
+  "SwitcherItemImgUrl2x4": "/images/templates/docspace-developer/switcher/in-minutes@2x.png",
+
+  "CardsHeading": "ONLYOFFICE DocSpace è costruito per adattarsi perfettamente alla tua app o al tuo sito web.",
+
+  "CardsItemTitle1": "Non importa in quale linguaggio è scritta la tua applicazione",
+  "CardsItemText1": "ONLYOFFICE DocSpace è costruito per adattarsi perfettamente alla tua app o al tuo sito web.",
+
+  "CardsItemTitle2": "Non importa quale modello di distribuzione utilizzi",
+  "CardsItemText2": "Puoi integrare ONLYOFFICE DocSpace nella tua soluzione SaaS od on-premise",
+
+  "CardsItemTitle3": "Per molteplici usi",
+  "CardsItemText3": "Include: CMS, CRM, piattaforme di eLearning, posta, app di messaggistica, software di gestione dei progetti e altro ancora.",
+
+  "WorthHeading": "ONLYOFFICE DocSpace è molto apprezzato sia",
+
+  "WorthByUsersTitle": "Dagli utenti",
+  "WorthByUsersList": [
+    "Stanze personalizzabili per scopi diversi: collaborazione, riunione, compilazione dei moduli, due diligence, pubbliche",
+    "Permessi d'accesso flessibili",
+    "Editor di documenti online integrati per documenti, fogli, diapositive, moduli e PDF",
+    "Funzioni di sicurezza migliorate",
+    "Esperienza utente impeccabile su diversi dispositivi"
+  ],
+
+  "WorthByDevelopersTitle": "Dagli sviluppatori",
+  "WorthByDevelopersList": [
+    "Incorporazione di preset e modalità personalizzate",
+    "Supporto API e webhook",
+    "Plugin SDK per estendere le funzionalità",
+    "Alta disponibilità ed efficienza",
+    "Prezzo flessibile e scalabile",
+    "Esempi di integrazione pronte all'uso",
+    "Supporto in ogni passo da parte degli esperti di ONLYOFFICE"
+  ],
+
+  "WorthButtonTry": "Provalo ora",
+  "WorthButtonRead": "Leggi la documentazione"
+}

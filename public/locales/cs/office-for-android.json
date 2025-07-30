@@ -1,33 +1,33 @@
 {
-  "PageTitle": "Bezplatný kancelářský balík pro Android | ONLYOFFICE Documents",
-  "PageDescription": "Upravujte a spolupracujte na dokumentech, tabulkách a prezentacích. Vyplňujte formuláře na svém zařízení Android.",
+  "PageTitle": "Free office suite for Android | ONLYOFFICE Documents",
+  "PageDescription": "Upravujte a společně upravujte dokumenty, tabulky a prezentace. Vyplňujte formuláře na svém zařízení se systémem Android.",
 
-  "OnlyOfficeDocuments": "ONLYOFFICE Documents, <0>bezplatná kancelářská aplikace</0> pro Android",
+  "OnlyOfficeDocuments": "ONLYOFFICE Dokumenty, <0>kancelářská aplikace zdarma</0> pro Android",
 
-  "OneAppForYourText": "Jedna aplikace pro vaše textové dokumenty, tabulky, prezentace, formuláře a mediální soubory",
+  "OneAppForYourText": "Jedna aplikace pro textové dokumenty, tabulky, prezentace, formuláře a mediální soubory",
   "CompatibleWithMSOffice": "100% kompatibilní s formáty MS Office",
 
-  "AnOptionToConsider": "Možnost ke zvážení, pokud hledáte alternativy k Office nebo Google Docs.",
+  "AnOptionToConsider": "Možnost, kterou byste měli zvážit, pokud chcete alternativu k Office nebo Dokumentům Google.",
   "EliesGuzman": "Elies Guzmán",
   "Malavida": "Malavida",
 
   "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.cs.png",
   "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-cs.svg",
 
-  "FeaturesItemHeadingFull": "Editor dokumentů",
-  "FeaturesItemTextMakeUse": "Pracujte s textovými dokumenty všech populárních formátů. Formátujte text a nastavte rozvržení stránky. Vkládejte odkazy, obrázky, grafy. Dokumenty můžete tisknout přímo z aplikace.",
+  "FeaturesItemHeadingFull": "Editory dokumentů",
+  "FeaturesItemTextMakeUse": "Pracujte s textovými dokumenty všech oblíbených formátů. Formátujte text a nastavujte rozvržení stránky. Vkládejte odkazy, obrázky, grafy. Tiskněte své dokumenty přímo z aplikace.",
 
-  "FeaturesItemHeadingComplete": "Editor tabulek",
-  "FeaturesItemTextManage": "Vytvářejte, prohlížejte a upravujte tabulky na svém zařízení. Pracujte s řádky a sloupci, upravujte parametry buněk, používejte více než 450 vzorců, řaďte a filtrujte data.",
+  "FeaturesItemHeadingComplete": "Tabulkový editor",
+  "FeaturesItemTextManage": "Vytvářejte, zobrazujte a upravujte tabulky na svém zařízení. Pracujte s řádky a sloupci, upravujte parametry buněk, používejte více než 450 vzorců, třiďte a filtrujte data.",
 
   "FeaturesItemHeadingCollaborative": "Editor prezentací",
-  "FeaturesItemTextMakeWork": "Vytvářejte a upravujte působivé prezentace v systému Android. Spravujte snímky, vkládejte obrázky, přidávejte a upravujte tvary, diagramy a grafy, texty a další položky.",
+  "FeaturesItemTextMakeWork": "Vytvářejte a upravujte působivé prezentace v Androidu. Spravujte slidy, vkládejte obrázky, přidávejte a upravujte automatické tvary, tabulky a grafy, texty a další položky.",
 
-  "FeaturesItemHeadingOnline": "Vyplňovač formulářů",
-  "FeaturesItemTextMakeView": "Prohlížejte a vyplňujte online formuláře. Snadno se pohybujte z pole do pole. Výsledek uložte jako soubor PDF nebo DOCX.",
+  "FeaturesItemHeadingOnline": "Nástroj k vyplňování formulářů",
+  "FeaturesItemTextMakeView": "Prohlížejte si a vyplňujte online formuláře. Snadno přecházejte z pole do pole. Výsledek uložte jako soubor PDF nebo DOCX.",
 
   "FeaturesItemHeadingPDF": "Prohlížeč PDF a přehrávač médií",
-  "FeaturesItemTextMakeViewPDF": "Prohlížejte soubory PDF, fotografie a videa. Řaďte, přejmenovávejte, přesouvejte a kopírujte soubory, vytvářejte složky na zařízení nebo v cloudu.",
+  "FeaturesItemTextMakeViewPDF": "Prohlížejte si dokumenty v PDF a obrázky a video soubory. Tříďte, přejmenovávejte, přesouvejte a kopírujte soubory, vytvářejte složky v zařízení nebo v cloudu.",
 
   "RealTimeCollaboration": "Spolupráce v reálném čase",
   "BeMoreProductive": "Buďte produktivnější. Připojte svou aplikaci ke cloudu ONLYOFFICE. Sdílejte dokumenty pro společné úpravy se svými kolegy v reálném čase. Komentujte a sledujte změny. Přidávejte grafické anotace.",
@@ -37,33 +37,33 @@
   "ChooseWhereToWork": "Vyberte si, kde chcete pracovat",
 
   "ChooseItemOnDevice": "Na zařízení",
-  "ChooseItemViewAndEdit": "Prohlížejte a upravujte textové dokumenty, tabulky a prezentace. Spravujte soubory PDF, obrázky a video soubory na svém zařízení Android.",
+  "ChooseItemViewAndEdit": "Prohlížejte a upravujte textové dokumenty, tabulky a prezentace. Správa souborů PDF, obrázků a videa na zařízení Android.",
 
   "ChooseItemInOnlyOffice": "V cloudu ONLYOFFICE",
-  "ChooseItemLogInTo": "Přihlaste se do cloudu ONLYOFFICE a sdílejte dokumenty a spolupracujte na nich se svým týmem v reálném čase. Připojte Dropbox, Google Drive, Box a další cloudové služby pro společné úpravy dokumentů tam uložených.",
+  "ChooseItemLogInTo": "Přihlaste se do cloudu ONLYOFFICE a sdílejte své dokumenty s týmem v reálném čase a spolupracujte na nich. Propojte Dropbox, Google Drive, Box a další cloudové služby a společně upravujte dokumenty na nich uložené.",
 
-  "ChooseItemInYourCloud": "Ve vašem cloudu",
-  "ChooseItemConnectNextcloud": "Připojte Nextcloud, ownCloud nebo jakýkoli jiný cloud pracující přes WebDAV. Spravujte, prohlížejte a upravujte dokumenty přímo z aplikace.",
+  "ChooseItemInYourCloud": "Ve vašem cloudu dle vlastní volby",
+  "ChooseItemConnectNextcloud": "Připojte Nextcloud, ownCloud nebo jakýkoli jiný cloud běžící přes WebDAV. Spravujte, zobrazujte a upravujte dokumenty přímo z aplikace.",
 
   "ChooseItemFromOther": "Z jiných aplikací",
   "ChooseItemImportDocuments": "Importujte dokumenty z aplikací jako iTunes, Soubory a dalších.",
 
-  "HaveQuestions": "Máte dotazy k funkcím? Navštivte naše <0>Centrum nápovědy</0>.",
+  "HaveQuestions": "Máte otázky týkající se funkcionality? Navštivte naše <0>Centrum pomoci</0>.",
 
-  "GetMoreWithComplete": "Získejte více s kompletní mobilní webovou verzí",
-  "WorkOnDocumentsWithin": "Pracujte na dokumentech ve svém mobilním prohlížeči. Přejděte na svůj webový portál ONLYOFFICE a získejte přístup k dalším nástrojům pro úpravu dokumentů a spolupráci. Snadno přepínejte z mobilního zobrazení a upravujte dokumenty v desktopovém režimu.",
+  "GetMoreWithComplete": "Získejte více díky kompletní verzi pro mobilní web",
+  "WorkOnDocumentsWithin": "Práce na dokumentech v mobilním prohlížeči. Navštivte webový portál ONLYOFFICE a získejte přístup k dalším nástrojům pro úpravy dokumentů a spolupráci. Snadné přepínání z mobilního zobrazení a úpravy dokumentů do desktopového režimu.",
 
-  "LearnMoreHeading": "Zjistěte více o ONLYOFFICE Documents pro Android",
+  "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for Android",
 
-  "LearnCardTitleRelease": "Poznámky k vydání",
-  "LearnMoreTextOnlyOfficeDocuments": "ONLYOFFICE Documents 5.5 s hesly, vyplňováním tvarů a vylepšeními uživatelského rozhraní",
-  "LearnMoreSubtitleRead": "Přečíst článek",
+  "LearnCardTitleRelease": "Release notes",
+  "LearnMoreTextOnlyOfficeDocuments": "ONLYOFFICE Documents 5.5 with passwords, shape filling, and UI improvements",
+  "LearnMoreSubtitleRead": "Read story",
 
-  "LearnCardTitleTutorials": "Návody",
-  "LearnMoreTextCollaborative": "Společná úprava dokumentů na vašem zařízení Android",
-  "LearnMoreSubtitleLearn1": "Zjistit více",
+  "LearnCardTitleTutorials": "Tutorials",
+  "LearnMoreTextCollaborative": "Collaborative document editing on your Android device",
+  "LearnMoreSubtitleLearn1": "Learn more",
 
-  "LearnCardTitleDeveloper": "Průvodce pro vývojáře",
-  "LearnMoreTextHowMobile": "Jak funguje mobilní integrace",
-  "LearnMoreSubtitleLearn2": "Zjistit více"
+  "LearnCardTitleDeveloper": "Developer guide",
+  "LearnMoreTextHowMobile": "How mobile integration works",
+  "LearnMoreSubtitleLearn2": "Learn more"
 }

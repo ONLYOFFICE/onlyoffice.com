@@ -1,4 +1,4 @@
-import { memo, useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import {
   StyledProvider,
   StyledProviderLogo,

@@ -36,7 +36,7 @@ const Form = ({ locale }: ILocale) => {
                 <Trans
                   t={t}
                   i18nKey="IfYouDecideToGetBack"
-                  components={[<Text as="span" color="main" />]}
+                  components={[<Text as="span" color="main" key={0} />]}
                 />
               }
               heading={t("WhyTakeBusinessToOnlyofficeCloudToday")}

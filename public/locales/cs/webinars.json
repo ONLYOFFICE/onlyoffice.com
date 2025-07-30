@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Sledujte webináře ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "Zaregistrujte se do našich webinářů a zjistěte, jak efektivně pracovat s ONLYOFFICE",
+
+  "HeroHeadingWatch": "Sledujte <0>webináře</0> ONLYOFFICE",
+  "HeroTextTune": "Nalaďte si naše živě vysílané webináře a zjistěte, jak nejlépe používat ONLYOFFICE",
+
+  "UpcomingHeading": "Nadcházející webináře ONLYOFFICE",
+
+  "UpcomingModalProduct": "Produkt",
+  "UpcomingModalBy": "Od",
+  "UpcomingModalLanguage": "Jazyk",
+  "UpcomingModalPlease": "Prosím vyplňte všechna pole označená hvězdičkou (*). Obdržíte emailovou zprávu s odkazem na zvolený webinář.",
+  "UpcomingModalFullName": "Celé jméno",
+  "UpcomingModalCompanyName": "Název firmy",
+  "UpcomingModalEmail": "E-mail",
+  "UpcomingModalSendQuestions": "Odešlete otázky na webinář",
+  "UpcomingModalPlaceholderName": "Jméno Příjmení",
+
+  "FullNameIsIncorrect": "Nesprávný pole pro celé jméno",
+  "FullNameIsEmpty": "Pole pro celé jméno je prázdné",
+
+  "CompanyNameIsEmpty": "Pole pro název firmy je prázdné",
+
+  "EmailIsEmpty": "Pole pro e-mail je prázdné",
+  "EmailIsIncorrect": "Nesprávný e-mail",
+
+  "AgreementByClicking": "Kliknutím na Sledovat webinář potvrzujete porozumění a souhlas s naší <0>smlouvou SLA</0> a <1>Prohlášením o ochraně osobních údajů</1>.",
+
+  "ModalSendButton": "Sledovat webinář",
+  "ModalCloseButton": "Zrušit",
+
+  "RequestSuccessfull": "Úspěšně jste se zaregistrovali ke sledování webináře ONLYOFFICE. <br> Odkaz na webinář byl odeslán na vaši emailovou adresu.",
+
+  "WatchHeading": "Sledovat na vyžádání",
+  "WatchText": "Nestihli jste webinář? Sledujte jeho opakování, kdykoli chcete",
+  "WatchNow": "Podívejte se nyní",
+
+  "en": "V angličtině",
+  "ja": "V japonštině",
+  "zh": "V čínštině",
+  "fr": "Ve francouzštině",
+  "de": "V němčině",
+  "es": "Ve španělštině",
+  "pt": "V portugalštině",
+  "it": "V italštině",
+  "cs": "V češtině",
+  "nl": "V nizozemštině",
+  "ru": "V ruštině",
+  "sr": "V srbštině",
+
+  "ContributeHeading": "Přispějte svými myšlenkami",
+  "ContributeTextHave": "Máte skvělý nápad, jaký webinář bychom měli uspořádat?",
+  "ContributeTextGet": "Spojte se s naším týmem na <0>press@onlyoffice.com</0> nebo se připojte k našim DM na <1>Twitteru</1>."
+}

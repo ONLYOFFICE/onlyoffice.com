@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { SocialIcons, StyledSocialIcons } from "@src/components/modules/SocialIcons";
 
 const StyledImproveHeading = styled(Heading)`
   margin-bottom: 56px;
