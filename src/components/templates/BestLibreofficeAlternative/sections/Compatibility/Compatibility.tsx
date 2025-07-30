@@ -21,7 +21,7 @@ const Compatibility = () => {
           i18nKey="WhatWentWrong"
           components={[
             <Link
-              href="/images/templates/best-libreoffice-alternative/compatibility/pdf/libreoffice.pdf"
+              href={`${process.env.NEXT_PUBLIC_SITE_URL}/images/templates/best-libreoffice-alternative/compatibility/pdf/libreoffice.pdf`}
               color="main"
               target="_blank"
               textUnderline

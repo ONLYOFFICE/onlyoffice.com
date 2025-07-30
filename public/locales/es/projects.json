@@ -1,0 +1,28 @@
+{
+  "PageTitle": "Gestión de proyectos en línea eficaz | ONLYOFFICE",
+  "PageDescription": "Herramienta para gestionar proyectos en línea. Realice un seguimiento de tareas, plazos, proyectos. ¡Mejorar la productividad del equipo es fácil con ONLYOFFICE!",
+
+  "HeroTitle": "Software de gestión de proyectos para equipos de alto desempeño",
+  "HeroText": "La herramienta perfecta para proyectos de corta o mediana duración. No es más complicado que hacer compras en Amazon.<br/><1>CMSWire</1>",
+  "GetItNow": "Obtener ahora",
+
+  "ProjectHierarchy": "Estructura de proyectos",
+  "ProjectHierarchyText": "Usa hitos, tareas y subtareas para determinar las prioridades entre tus objetivos primarios y actividades cotidianas. Añade estados de tareas personalizadas.",
+  "ProjectHierarchyImage": "/images/templates/projects/features/es/project_hierarchy.png",
+  "GanttChart": "Diagrama de Gantt",
+  "GanttChartText": "Analiza el progreso de un proyecto y dependencias entre tareas, actualiza la información acerca de las citas planificadas y fechas límites en un par de clics.",
+  "GanttChartImage": "/images/templates/projects/features/es/gantt_chart.png",
+  "AccessRights": "Manejo de derechos de acceso",
+  "AccessRightsText": "Maneja permisos de acceso individuales para diferentes módulos y herramientas y crea proyectos privados. Controla la posibilidad de visualizar y cambiar el contenido del portal para los miembros del equipo.",
+  "AccessRightsImage": "/images/templates/projects/features/es/access_rights.png",
+  "TimeManagement": "Manejo de tiempo",
+  "TimeManagementText": "Evalúa el desempeño del equipo y actividades de un proyecto usando la característica de registro de tiempo y los informes generados automáticamente.",
+  "TimeManagementImage": "/images/templates/projects/features/es/time_management.png",
+
+  "MobileApps": "Aplicaciones móviles",
+  "StayMobile": "¡Trabaja en cualquier parte!",
+  "WorkWithProjects": "Trabaja con proyectos desde tus dispositivos <0>iOS</0> y <1>Android</1>. Edita la documentación del proyecto en cualquier lugar.",
+
+  "ItsAPerfectTool": "Es la herramienta perfecta para proyectos de corta o mediana duración. No es más complicado que hacer compras en Amazon.",
+  "CmsWire": "CMSWire"
+}

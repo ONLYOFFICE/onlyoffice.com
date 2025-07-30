@@ -1,0 +1,1 @@
+export {AiAssistantsTemplate } from './AiAssistants'

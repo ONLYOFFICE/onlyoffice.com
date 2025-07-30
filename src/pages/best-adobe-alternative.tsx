@@ -33,11 +33,20 @@ const BestAdobeAlternativePage = ({ locale }: ILocale) => {
 };
 
 export async function getStaticProps({ locale }: ILocale) {
+  if (locale === "zh") {
+    return {
+      redirect: {
+        destination: `/${locale}`,
+        permanent: true,
+      },
+    };
+  }
   return {
     props: {
       ...(await serverSideTranslations(locale, [
         "common",
         "best-adobe-alternative",
+        "GetStarted",
       ])),
       locale,
     },

@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Helfen Sie uns ONLYOFFICE noch besser zu machen",
+  "PageDescription": "Tragen Sie zum Projekt ONLYOFFICE bei: Sie können entwickeln, übersetzen, testen oder empfehlen Sie uns einfach weiter.",
+
+  "HeroTitle": "Werden auch Sie Teil<br> der <span>ONLYOFFICE</span> Familie",
+  "HeroText": "Tragen Sie zum ONLYOFFICE Open-Source-Projekt bei und helfen Sie uns, noch besser zu werden!",
+
+  "ImproveOO": "Verbessern Sie ONLYOFFICE",
+  "DevelopYourOwnPluginOrMacros": "Entwickeln Sie Ihr eigenes Plugin oder Makro für die Dokumenteneditoren von ONLYOFFICE.",
+  "ReadAPIDocumentation": "API-Dokumentation lesen",
+  "CreateYourOwnForm": "Erstellen Sie Ihre eigenen Formularvorlagen und teilen Sie diese mit anderen.",
+  "OpenOurFormLibrary": "Öffnen Sie unsere Formularbibliothek",
+  "CreateAnExtensionOrModule": "Erstellen Sie eine Erweiterung oder ein Modul für ONLYOFFICE DocSpace.",
+  "DidYouFindABug": "Haben Sie einen Fehler gefunden? Melden Sie Probleme auf <0>GitHub</0> oder im <1>Forum</1>.",
+  "MoreInfo": "Weitere Informationen",
+
+  "SocialMediaText": "Interagieren Sie mit uns über <0>Blog</0> oder unsere Social-Media-Kanäle",
+
+  "SpreadTitle": "Verbreiten Sie die ONLYOFFICE-Technologie",
+  "SpreadText": "Bauen Sie einen Konnektor für Ihre eigene Plattform auf, um ONLYOFFICE allen zugänglich zu machen.",
+  "SpreadLink": "API-Dokumentation lesen",
+  "More": "Mehr",
+
+  "TranslateOO": "ONLYOFFICE <0>übersetzen</0>",
+  "TranslateOOText": "<p>Möchten Sie uns dabei helfen, die Benutzeroberfläche von ONLYOFFICE in Ihre Muttersprache zu übersetzen, um es überall auf der Welt zugänglich zu machen?</p><p>Werden Sie Teil unserer ehrenamtlichen Übersetzergemeinschaft. Schreiben Sie uns dazu eine E-Mail an <0>documentation@onlyoffice.com</0> und Sie erhalten Zugang zu unserem <1>Online-Übersetzungssystem</1>.</p>",
+
+  "TestOO": "<0>Testen</0> Sie ONLYOFFICE",
+  "TestOOText": "<p>Werden Sie ONLYOFFICE Beta-Tester und unterstützen Sie uns beim Testen von neuen Funktionen und Lösungen.</p><p>Kontaktieren Sie uns unter <0>press@onlyoffice.com</0>.</p>",
+
+  "DocumentOO": "ONLYOFFICE <0>dokumentieren</0>",
+  "DocumentOOText": "<p>Haben Sie Tipps oder Tricks, um noch effizienter mit ONLYOFFICE zu arbeiten?</p><p>Haben Sie keine Informationen zur Verwendung bestimmter Funktionen gefunden?</p><p>Möchten Sie die verfügbaren Dokumentationen in Ihre Muttersprache übersetzen?</p><p>Kontaktieren Sie uns unter <0>documentation@onlyoffice.com</0> und teilen Sie uns Ihre Gedanken mit.</p>",
+
+  "ContactsImgUrl": "/images/templates/contribute/contacts/de/contacts-bg.png",
+  "ContactsImgUrl2x": "/images/templates/contribute/contacts/de/contacts-bg@2x.png"
+}

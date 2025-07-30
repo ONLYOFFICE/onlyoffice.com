@@ -1,0 +1,122 @@
+{
+  "PageTitle": "ONLYOFFICE для преподавателей",
+  "PageDescription": "Сделайте свои лекции интереснее с помощью гибкого офисного пакета. Работайте вместе со студентами и коллегами.",
+
+  "OfficeForEducators": "ONLYOFFICE для <0>преподавателей</0>",
+  "BringYourLecturesToLife": "Сделайте свои лекции интереснее с помощью простого в использовании и гибкого офисного пакета. Работайте вместе со своими студентами и коллегами, чтобы создавать файлы, делиться ими и обеспечить каждому ученику наилучший доступ к своим лекциям.",
+
+  "OODocsTitle": "<0>ONLYOFFICE Docs:</0> Совместные онлайн редакторы для вашей платформы электронного обучения",
+  "OODocsDesc": "Создавайте сами или совместно учебные материалы без усилий и без ограничений.",
+
+  "FitToAnyLMSOrDMS": "Подходит для любой системы управления обучением или системы управления данными",
+  "FitToAnyLMSOrDMSDesc": "Неважно, каким компьютером вы пользуетесь — создайте среду обучения, которая соответствует вашим потребностям и задачам ваших учеников. ONLYOFFICE можно легко интегрировать в общие образовательные платформы и платформы управления контентом для работы с документами непосредственно в структуре курса.",
+
+  "ExploreAllIntegrations": "Изучите все интеграции",
+
+  "SeamlessAndUserFriendly": "Эффективный и удобный офис",
+  "SeamlessAndUserFriendlyDesc": "Заинтересовать ученика можно только интересным материалом, а не офисным пакетом, который вы используете. ONLYOFFICE предоставляет вам (и вашему классу) удобный интерфейс для редактирования <0>текстовых документов</0>, <1>электронных таблиц</1>, <2>презентаций</2> и <3>PDF-файлов</3>. Если у вас уже есть опыт работы с другими офисными пакетами, вы быстро сориентируетесь.",
+  "SeamlessAndUserFriendlyImgUrl": "/images/templates/office-for-educators/docs/ru/seamless-and-user-friendly.png",
+  "SeamlessAndUserFriendlyImgUrl2x": "/images/templates/office-for-educators/docs/ru/seamless-and-user-friendly@2x.png",
+
+  "TailoredToCreate": "Специально для создания образовательного контента",
+  "TailoredToCreateDesc": "Легко создавайте информативный контент для учеников: информативные электронные таблицы, красочные слайды и подробные руководства с диаграммами, изображениями, уравнениями и даже встроенными видеороликами YouTube. Применяйте форматирование, добавляйте верхние и нижние колонтитулы, номера страниц, сноски, оглавления и так далее. Используйте встроенные <0>ИИ-помощники</0> чтобы быстро находить необходимую информацию, переписывать или переводить лекции и многое другое.",
+  "TailoredToCreateImgUrl": "/images/templates/office-for-educators/docs/ru/tailored-to-create-educational-content.png",
+  "TailoredToCreateImgUrl2x": "/images/templates/office-for-educators/docs/ru/tailored-to-create-educational-content@2x.png",
+
+  "RatingYourStudentsEssays": "Оценка эссе ваших студентов",
+  "RatingYourStudentsEssaysDesc": "Включите режим обзора, чтобы оценить отправленные задания. Исправляйте грамматику, пунктуацию и орфографию, а также оставляйте комментарии и заметки без фактического редактирования документа. Все предлагаемые изменения записываются и отображаются у студентов.",
+  "RatingYourStudentsEssaysImgUrl": "/images/templates/office-for-educators/docs/ru/rating-your-students-essays.png",
+  "RatingYourStudentsEssaysImgUrl2x": "/images/templates/office-for-educators/docs/ru/rating-your-students-essays@2x.png",
+
+  "YourOnlineLibrarysBestFriend": "Лучший друг вашей онлайн библиотеки",
+  "YourOnlineLibrarysBestFriendDesc1": "Грустная новость для преподавателей, но печатные книги уже не так популярны, как раньше. Кого-то это может расстроить, но с практической точки зрения это отличная новость.",
+  "YourOnlineLibrarysBestFriendDesc2": " С ONLYOFFICE Docs можно читать файлы EPUB, FB2 или PDF, а также <0>создавать собственные электронные книги</0> из ваших документов. Таким образом, знания становятся доступнее, и у студентов всегда есть под рукой литература.",
+  "YourOnlineLibrarysBestFriendDesc3": "Кроме того: если все ваши книги в облаке, вы не сможете забыть их дома.",
+  "YourOnlineLibrarysBestFriendImgUrl": "/images/templates/office-for-educators/docs/ru/your-online-library-best-friend.png",
+  "YourOnlineLibrarysBestFriendImgUrl2x": "/images/templates/office-for-educators/docs/ru/your-online-library-best-friend@2x.png",
+
+  "StartFreeTrial": "НАЧАТЬ БЕСПЛАТНУЮ ПРОБНУЮ ВЕРСИЮ",
+  "RequestFreeDemo": "ЗАПРОСИТЬ БЕСПЛАТНУЮ ДЕМО-ВЕРСИЮ",
+
+  "OODocSpaceTitle": "<0>ONLYOFFICE DocSpace:</0> Соберите учебные материалы и студентов в настраиваемых комнатах",
+  "OODocSpaceTitleDesc": "Если вам нужна еще большая гибкость при распределении студентов для выполнения групповых заданий (или у вас просто нет подходящей системы управления обучением), то ONLYOFFICE DocSpace — правильное решение для вас. Здесь вы можете контролировать, кто может просматривать файлы, совместно работать над ними или предоставлять к ним доступ в ваших виртуальных комнатах.",
+
+  "FillableAssignments": "Заполняемые задания? Проще простого!",
+  "FillableAssignmentsDesc": "Создавайте индивидуальные тесты в PDF-формате с различными полями для ввода данных, например, текстовыми полями, изображениями, полями со списками, раскрывающимися списками, флажками, переключателями и так далее. Собирайте ответы на тесты и анализируйте их в комфортном формате в <0>комнатах для заполнения форм</0>.",
+  "FillableAssignmentsImgUrl": "/images/templates/office-for-educators/docspace/ru/fillable-assignments.png",
+  "FillableAssignmentsImgUrl2x": "/images/templates/office-for-educators/docspace/ru/fillable-assignments@2x.png",
+
+  "EasySharing": "Простой обмен материалами",
+  "EasySharingDesc": "Сосредоточьтесь на главном: на преподавании и обмене знаниями — мы позаботимся обо всем остальном! В <0>публичных комнатах</0> ONLYOFFICE DocSpace ваши студенты и коллеги могут просматривать сохраненные рабочие тетради, разные материалы, презентации курсов и другие материалы без регистрации.",
+  "EasySharingImgUrl": "/images/templates/office-for-educators/docspace/ru/easy-sharing-of-your-materials.png",
+  "EasySharingImgUrl2x": "/images/templates/office-for-educators/docspace/ru/easy-sharing-of-your-materials@2x.png",
+
+  "AnotherTaskInMind": "Еще одна задача для следующего урока?",
+  "AnotherTaskInMindDesc": "Не волнуйтесь! В DocSpace вы можете эффективно работать совместно над документами с помощью встроенных инструментов для общения, например, чата и комментариев, чтобы обсудить детали проекта, поделиться идеями и предоставить обратную связь в <0>комнатах для совместной работы</0>. Или создавайте <1>пользовательские комнаты</1> с гибкими настройками для любой задачи и цели. И еще: используйте <2>комнаты для совещаний</2> для демонстрации и совместного редактирования файлов курса и дидактических материалов во время уроков в Zoom непосредственно в ходе видеоконференции.",
+  "AnotherTaskInMindImgUrl": "/images/templates/office-for-educators/docspace/ru/another-task-in-mind.png",
+  "AnotherTaskInMindImgUrl2x": "/images/templates/office-for-educators/docspace/ru/another-task-in-mind@2x.png",
+
+  "FlexiblePermissionsAndRoles": "Гибкие права доступа и роли",
+  "FlexiblePermissionsAndRolesDesc": "Настройте доступ к комнате с помощью гибких прав доступа: администраторы комнаты с правами менеджера, опытные пользователи с расширенными правами пользователя, редакторы с полным доступом к файлам комнат, рецензенты, комментаторы и заполнители форм с соответствующими правами, права просмотра с доступом только для чтения. Таким образом, вы можете назначать роли приглашенным людям по типам задач, а также защищать конфиденциальные файлы, например, личную информацию студентов, оценки или научные документы.",
+  "FlexiblePermissionsAndRolesImgUrl": "/images/templates/office-for-educators/docspace/ru/flexible-permissions-and-roles.png",
+  "FlexiblePermissionsAndRolesImgUrl2x": "/images/templates/office-for-educators/docspace/ru/flexible-permissions-and-roles@2x.png",
+
+  "GetStarted": "НАЧАТЬ",
+
+  "FreeCloud": "<0>Бесплатное облако</0> для школ",
+  "FreeCloudText": "Создайте бесплатное облако DocSpace для своей школы — получите 2 ГБ хранилища и до 20 учетных записей администратора.",
+  "FreeCloudImgUrl": "/images/templates/office-for-educators/docspace/free-cloud/ru/free-cloud-for-schools.png",
+  "FreeCloudImgUrl2x": "/images/templates/office-for-educators/docspace/free-cloud/ru/free-cloud-for-schools@2x.png",
+  "SubmitRequest": "Отправить запрос",
+
+  "WhyOOTitle": "<0>Почему</0> ONLYOFFICE?",
+  "WhyOODesc": "Множество вариантов, множество решений. Наше действительно работает, доверьтесь нам! Мы можем показать вам, как идеально сочетаются ONLYOFFICE и образование:",
+
+  "ItProvidesFreeApps": "Бесплатные десктопные и мобильные приложения",
+  "ItProvidesFreeAppsDesc": "ONLYOFFICE предназначен для работы с документами в Интернете, однако каждый может дополнительно получить абсолютно <0>бесплатные десктопные приложения</0> для Windows, macOS и Linux, а также бесплатные мобильные приложения для <1>iOS</1> и <2>Android</2>. Поэтому вам решать, как, где и с какого устройства работать и редактировать свои учебные материалы.",
+
+  "ItsAffordable": "Это доступно",
+  "ItsAffordableDesc": "Иногда возникает финансовый вопрос. Ограниченный бюджет школ и образовательных учреждений может затруднить поиск подходящего решения, которое будет соответствовать всем потребностям обучения и преподавания. Но ONLYOFFICE доступен для школ и университетов с учетом образовательных скидок. И он совершенно бесплатен для ваших студентов.",
+
+  "ItsHighlyCustomizable": "Легко настраивается с помощью нашего встроенного магазина плагинов",
+  "ItsHighlyCustomizableDesc": "Настройте ONLYOFFICE с помощью <0>множества плагинов</0>, которые расширяют функциональные возможности — ускорение работы с документами с помощью нашего официального плагина ChatGPT непосредственно в редакторах, упрощение разработок с помощью плагинов библиографии для Mendeley или Zotero или ускорение написания и корректироки с помощью LanguageTool и OCR.",
+
+  "ItsFullyCompatible": "Он полностью совместим с файлами MS Office и PDF-файлами (и почти со всеми другими форматами файлов Office)",
+  "ItsFullyCompatibleDesc": "Вам не придется беспокоиться о том, что ваши студенты или коллеги будут испытывать трудности с чтением ваших документов. ONLYOFFICE работает с файлами MS Office (например, DOCX, XLSX, PPTS и так далее), файлами Adobe PDF и большинством других форматов файлов.",
+
+  "YouWontFindABetterPlaceToCollaborate": "Нет лучшего варианта для совместной работы",
+  "YouWontFindABetterPlaceToCollaborateDesc": "ONLYOFFICE был создан с важной целью: сделать совместную работу быстрой, легкой и эффективной. Функции, которые вы больше нигде не найдете, позволят вам объединить ваших учеников и коллег в новом формате.",
+
+  "GetItNow": "ПОЛУЧИТЬ СЕЙЧАС",
+  "TryInTheCloud": "ПОПРОБОВАТЬ В ОБЛАКЕ",
+
+  "SuccessStoriesTitle": "Истории успеха, которые показывают, как это делается",
+  "SuccessStoriesText": "Мы могли бы долго рассказывать о том, как хорошо сочетаются ONLYOFFICE и образование. Но мы лучше покажем вам — продемонстрировав истории успеха других пользователей.",
+
+  "DigitalTransformation": "Цифровая трансформация в высшем образовании: как университет Джамби внедрил ONLYOFFICE Docs",
+  "DigitalTransformationImgUrl": "/images/templates/office-for-educators/success-stories/transformation.png",
+
+  "HowOOFacilitatesCollaboration": "Как ONLYOFFICE облегчает сотрудничество для школ в Донауэшингене",
+  "HowOOFacilitatesCollaborationImgUrl": "/images/templates/office-for-educators/success-stories/collaboration.png",
+
+  "HowCollegeLyceeSacreCoeur": "Как Колледж-лицей Сакре-Кёр де Таравао обеспечивает цифровое равенство для всех студентов, используя ONLYOFFICE и Moodle",
+  "HowCollegeLyceeSacreCoeurImgUrl": "/images/templates/office-for-educators/success-stories/digital-equality.png",
+
+  "HowKinderhausBerlinSharesAndCollaborates": "Как Дом ребенка в Берлине организует совместную работу и предоставление доступа к конфиденциальным файлам с помощью ONLYOFFICE DocSpace",
+  "HowKinderhausBerlinSharesAndCollaboratesImgUrl": "/images/templates/office-for-educators/success-stories/sensitive.png",
+
+  "HowCanOOAssist": "Как ONLYOFFICE может помочь с заданиями, которые я даю своим ученикам?",
+  "HowCanOOAssistAnswer": "ONLYOFFICE предоставляет инструменты для создания и редактирования документов, электронных таблиц, презентаций и PDF-файлов, которые необходимы для ваших заданий. Кроме того, наши <0>функции совместной работы</0> позволяют вам работать с вашим классом в режиме реального времени, что значительно повышает эффективность групповых проектов и экспертных оценок.",
+
+  "CanIUseOOForCollaborative": "Могу ли я использовать ONLYOFFICE для совместных проектов в моем классе?",
+  "CanIUseOOForCollaborativeAnswer": "Конечно! ONLYOFFICE разработан с учетом необходимости совместной работы. Такие функции, как совместное редактирование в режиме реального времени, комментирование и комнаты для совместной работы DocSpace, позволяют вам и вашим ученикам работать вместе над групповыми заданиями и проектами. Вы можете редактировать документы одновременно, что упрощает работу в команде.",
+
+  "DoesOOOfferTemplates": "Предлагает ли ONLYOFFICE шаблоны для документов?",
+  "DoesOOOfferTemplatesAnswer": "Да, предлагает! Наша <0>библиотека шаблонов</0> включает в себя множество специально разработанных шаблонов, например, шаблоны отчетов, исследовательских работ и макеты презентаций. Это означает, что вы можете больше сосредоточиться на содержании и меньше на форматировании.",
+
+  "IsOOSecure": "Безопасен ли ONLYOFFICE в плане хранения и распространения конфиденциальной информации?",
+  "IsOOSecureAnswer": "Да, мы <0>уделяем первостепенное внимание безопасности</0>. ONLYOFFICE — решение с открытым исходным кодом, которое соответствует Общему положению по защите данных и всем правовым критериям защиты данных и конфиденциальности для образовательных учреждений. ONLYOFFICE включает в себя шифрование файлов и множество опций для безопасного обмена и контроля доступа. Кроме того, наши решения могут быть развернуты на частных серверах.",
+
+  "IsOOFree": "ONLYOFFICE является бесплатным?",
+  "IsOOFreeAnswer": "Мы предоставляем бесплатное облако DocSpace для школ. Для ONLYOFFICE Docs могут быть доступны скидки или субсидированные тарифные планы для образовательных учреждений или студенческих программ."
+}

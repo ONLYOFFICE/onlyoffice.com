@@ -4,7 +4,7 @@ import { Compatibility } from "./sections/Compatibility";
 import { Hero } from "./sections/Hero";
 import { Presentation } from "./sections/Presentation";
 import { Reasons } from "./sections/Reasons";
-import { BestAlternativeGetStarted } from "@src/components/modules/best-alternative/BestAlternativeGetStarted";
+import { GetStarted } from "@src/components/modules/GetStarted";
 
 const BestMicrosoftOfficeAlternativeTemplate = () => {
   return (
@@ -14,7 +14,7 @@ const BestMicrosoftOfficeAlternativeTemplate = () => {
       <Presentation />
       <Compatibility />
       <BestAlternativeCompare alternative="MS Word Online" />
-      <BestAlternativeGetStarted />
+      <GetStarted background="linear-gradient(180deg, #F8F9F9 43.75%, rgba(248, 249, 249, 0) 100%), #FFFFFF" />
     </StyledBestMicrosoftOfficeAlternativeTemplate>
   );
 };

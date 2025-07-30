@@ -1,0 +1,27 @@
+{
+  "PageTitle": "Zoho Docs に一番適合する代替製品",
+  "PageDescription": "ONLYOFFICE を Zoho Docs と比較同じ DOCX 型式のドキュメントを異なるプラットフォームで開いて、結果を比較してください。",
+
+  "HeroTitle": "ONLYOFFICE は、Zoho Docs に一番適合した代替製品です。",
+  "GetOODocsNow": "今すぐ ONLYOFFICE を購入",
+  "CompatibleWithMicrosoftOfficeFormats": "Microsoft Office フォーマットに完全適合",
+
+  "ReasonsTitle": "ONLYOFFICE が Zoho Docs に一番適合している 7 つの理由",
+  "OpenSource": "オープンソース",
+  "OpenSourceText": "ONLYOFFICEは、オープンソースのソリューションをユーザーに提供します。ソースコードは、透過性と信頼性を保証するGitHubに記載されています。いつでもチェックできます。",
+  "DesktopApp": "Web、デスクトップ、モバイル",
+  "DesktopAppText": "ONLYOFFICEを使用すると、どのブラウザーでも、どのOSでもオンラインで作業したり、Windows、Linux、macOS用の無料のデスクトップアプリでドキュメントをオフラインで編集したり、AndroidとiOS用の無料のモバイルアプリを使用したりできます。",
+  "DocsSheetsSlides": "ドキュメント、シート、スライド、フォーム、PDF",
+  "DocsSheetsSlidesText": "あらゆる複雑さのテキスト文書やスプレッドシートの編集と共同作業、魅力的なプレゼンテーションの作成、PDFの表示と注釈。プロフェッショナルなフォームやテンプレートをゼロから、または既存のDOCXファイルから作成し、他のユーザーに記入してもらい、記入可能なPDFファイルとして保存できます。",
+  "Seamless": "シームレスな共同作業",
+  "SeamlessText": "ONLYOFFICE Docsは、文字レベルと段落レベルの共同編集モード、レビューと変更履歴、バージョン履歴、コメントとメンション、ビルトインチャット、音声通話とビデオ通話のためのプラグインをユーザーに提供します。コメント、レビュー、フォーム記入、ユーザ設定フィルターなどの柔軟な権限を使用して、ドキュメントを簡単に共有できます。",
+  "Flexibility": "柔軟性",
+  "FlexibilityText": "ルームベース環境ONLYOFFICE DocSpaceの一部として、Nextcloud、Alfresco、Confluence、Seafileなどの同期・共有サービスやECMサービスの一部として、または自社で構築するソリューションに統合するなど、オンラインエディタをどのように使用するかは自由です。",
+  "AIHelper": "AIヘルパー",
+  "AIHelperText": "AIアシスタントプラグインを利用して、テキストを使った作業を促進しましょう：単語分析を実行し、未知の単語の意味を探り、文章、画像、キーワードを生成し、ストーリーを要約して翻訳し、同義語を見つけます。",
+  "Security": "データ セキュリティ",
+  "SecurityText": "オープンソースのONLYOFFICEソリューションを独自のサーバーに展開して、すべてのデータを完全に社内に保存できます。プライベット ルームでは、常に暗号化された形式でドキュメントを保存、編集、および共同編集できます。",
+
+  "PresentationTitle": "このプレゼンテーションを見て、オフィススイートごとの違いを知る:",
+  "WhatWentWrong": "Zoho Docs が間違っていることとは？詳細は、<0>ここをクリック</0> します"
+}

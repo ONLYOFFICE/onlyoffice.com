@@ -1,0 +1,69 @@
+{
+  "PageTitle": "ONLYOFFICEでAIアシスタントを使いましょう | ONLYOFFICE",
+  "PageDescription": "エディタで直接AIプラグインを使用して、テキスト、シート、スライドをより速く処理できます。",
+
+  "HeroTitle": "<0>AIアシスタント</0>でドキュメントの作業を高速化",
+  "HeroInputPlaceholder": "メールアドレスを入力してください",
+  "CreateFreeAccount": "無料アカウントを作成",
+
+  "MakeTheMost": "<0>AIヘルパ</0>ーを最大限に活用",
+
+  "WorkWithText": "テキストを扱う",
+  "GenerateText": "テキストを生成する",
+  "RewriteText": "テキストを書き換える <br/>（長くする／短くする／シンプルにする）",
+  "FixGrammar": "文法とスペルを修正する",
+  "Summarize": "要約する",
+  "ExtractKeywords": "キーワードを抽出する",
+  "ExplainWords": "単語を説明する",
+  "Translate": "翻訳する",
+
+  "GenerateElements": "ドキュメント、シート、スライドの要素を生成",
+  "GenerateImages": "テキストから画像を生成",
+  "GetCode": "コードを構築",
+  "BuildTables": "テーブルを構築",
+
+  "ChatWithAI": "AIアシスタントとチャット",
+  "GetAnswers": "質問に対する回答を得る",
+  "MakeRequests": "フリーフォームで様々なリクエストをする",
+  "QuicklyFind": "情報を素早く見つける",
+  "Entertain": "楽しく会話をする",
+
+  "WorkWithVisuals": "ビジュアルを使用",
+  "MakeUseOfOCR": "OCRを使う",
+  "ExtractText": "スキャンしたPDFからテキストを抽出",
+  "DigitizeImages": "テキストが埋め込まれた画像をデジタル化",
+
+  "CalculateWithAI": "AIで計算",
+  "GetTheRightFunction": "数秒で正しい関数を取得",
+  "CreateNewMacros": "新しいマクロを作成",
+  "ConvertMacros": "VBAマクロを変換",
+
+  "TryInCloud": "クラウドで試す",
+  "TryInDesktop": "デスクトップで試す",
+
+  "ConnectAnyAI": "あらゆるAIアシスタントへの接続",
+  "ConnectAnyAIText": "ローカルのも含め、任意のAIモデルを接続できます。リストからプレインストールされたプロバイダー（OpenAI、Together AI、Mistral、Groq、GPT4All、Anthropic、Gemini、DeepSeek、Ollama、Stability AI）を選択するか、独自のものを接続することが可能です。",
+
+  "DifferentAI": "さまざまなタスクには，さまざまなAIモデルを",
+  "AdjustAI": "必要に応じて AI の使用を調整しましょう。チャットボットのリクエスト、翻訳、OCR など、さまざまなアクションに異なる AI モデルを適用できます。",
+
+  "GetStarted": "今すぐ始める",
+  "SwitchToThePluginsTab": "エディタで <0>「プラグイン」</0>タブに切り替える。",
+  "LaunchPluginManager": "組み込みの<0>プラグインマネージャー</0>を起動する。",
+  "ClickInstall": "<0>AI</0>プラグインの隣にある<0>インストール</0>をクリックします。",
+  "AccessTheAIPlugin": "表示された<0>AIタブ</0>にアクセスします。",
+  "ClickSettings": "<0>設定</0>をクリックして、設定ウィンドウを開きます。",
+  "ClickEditAIModels": "<0>AIモデルの編集</0>をクリックします。 リストから選択したAIプロバイダー用のキーを入力するか、新しいAIモデルを追加します。",
+  "SelectTheRequiredAIModels": "異なるタスクに必要なAIモデルを選択します。",
+
+  "LearnMoreHeading": "ONLYOFFICEでのAI活用について",
+  "Blog": "ブログ",
+  "FAQ": "FAQ：ONLYOFFICEでAIを使用する方法",
+  "FAQLink": "https://www.onlyoffice.com/blog/ja/2025/03/faq-how-to-use-ai-in-onlyoffice",
+  "TopAITools": "オフィススイート向けの主要なAIツール",
+  "TopAIToolsLink": "https://www.onlyoffice.com/blog/ja/2025/01/ai-tools-for-office-suites",
+  "HowToAdd": "AIプラグインにカスタムプロバイダーを追加する方法",
+  "HowToAddLink": "https://www.onlyoffice.com/blog/ja/2025/03/how-to-add-a-custom-provider-to-the-onlyoffice-ai-plugin",
+
+  "LearnMore": "詳細を見る"
+}

@@ -26,13 +26,13 @@ const Features = () => {
             <FeatureItem
               key={index}
               icon={{
-                url: item.icon.url,
-                positionX: item.icon.positionX,
+                ...item.icon,
+                isSprite: true,
               }}
               text={
                 <Trans
                   t={t}
-                  i18nKey={String(item.text)}
+                  i18nKey={t(String(item.text.label))}
                   components={item.text.links?.map((link, index) => (
                     <Link
                       key={index}

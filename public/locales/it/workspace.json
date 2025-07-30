@@ -1,0 +1,72 @@
+{
+  "PageTitle": "Workspace per il tuo team",
+  "PageDescription": "gestire, collaborare e comunicare in modo efficiente",
+
+  "HeroTitle": "ONLYOFFICE Workspace",
+  "HeroText": "Pacchetto di applicazioni web per una gestione e collaborazione efficiente dei team",
+  "GetItNow": "Ottienilo ora",
+
+  "ManageAllYourBusinessProcesses": "Gestisci tutti i processi aziendali",
+  "LearnMore": "Scopri di più",
+
+  "Documents": "Documenti",
+  "StoreAndOrganize": "Archivia e organizza documentazione della azienda. Condividi i documenti e gestisci i permessi di accesso per gli utenti e i gruppi. Modifica e collabora su <0>documenti di testo</0>, <1>fogli di calcolo</1>, <2>presentazioni</2>, <3>file PDF</3> e <4>moduli compilabili</4>.",
+  "HighestCompatibility": "Altissima compatibilità con i formati di MS Office",
+  "MultiFormat": "Lettore multimediale multiformato",
+  "ReadyForms": "Moduli di documenti online pronti da compilare",
+  "PrivateRooms": "Private rooms per la collaborazione su documenti criptata end-to-end",
+
+  "Mails": "Mail",
+  "KeepYourMailboxOrganized": "Organizzala tua cassetta postale. Crea le cassette postali aziendali sul tuo dominio o usando uno di default. Connetti gli account email multipli, gestisci e tagga i messaggi. Crea una firma e usa il costruttore di modelli.",
+  "SupportOfCommonEmailProtocols": "Supporto dei protocolli email communi: POP3, SMTP, IMAP",
+  "UnlimitedNumber": "Numero di cassette postali e di gruppi mail illimitato",
+  "FreeDefaultDomain": "Dominio di default gratuito",
+
+  "Crm": "CRM",
+  "OrganizeYourBusinessWorkflow": "Organizza il flusso di lavoro della tua azienda da generazione di lead a evasione degli ordini. Crea i report and monitora il progresso del tuo team.",
+  "WebToLead": "Forma Web-to-Lead per inserire rapidamente i potenziali clienti",
+  "MakingCalls": "Telefonate con Twilio",
+  "CloseIntegration": "Stretta integrazione con Mail, Progetti e Calendario",
+
+  "Projects": "Progetti",
+  "OrganizeYourTeam": "Organizza il tuo team per raggiungere il successo. Create progetti, assegna priorità ai compiti e fissa le scadenze. Monitora il tempo e genera i report per analizzare la produttività del tuo team.",
+  "GanttChart": "Grafico Gantt",
+  "PrivateProjects": "Progetti privati e gestione gestione di diritti di accesso",
+  "Integration": "Integrazione con Documenti, Calendario e CRM",
+  "WatchVideo": "Guarda la presentazione video",
+
+  "Calendar": "Calendario",
+  "ManageYourTime": "Gestisci il tuo tempo saggiamente: crea una tempistica personale o di squadra, aggiungi i diversi tipi di eventi e imposta promemorie per non dimenticare mai niente.",
+  "CalendarSharing": "Condivisione di Calendario",
+  "Synchronization": "Sincronizzazione con le applicazioni di terze parti",
+  "CloseIntegrationWithModules": "Stretta integrazione con tutti i moduli di ONLYOFFICE",
+
+  "OOWorkspace": "ONLYOFFICE Workspace 12.5:",
+  "OOWorkspaceMobile": "ONLYOFFICE Workspace 12.5 rilasciato",
+  "OOWorkspaceText": "sicurezza migliorata, gestione dei documenti ottimizzata, tema scuro e altro ancora",
+
+  "WhyOOWorkspace": "Perché ONLYOFFICE Workspace",
+  "Benefits": "Vantaggi di workspace online",
+
+  "ThirdParty": "Integrazione con i servizi di terze parti",
+  "ExtendYourWorkspace": "Estendi la fuzionalità del tuo workspace con le tue app e gli strumenti preferiti per fare login, firmare, autenticare e archiviare.",
+  "FindAppsYouNeed": "Trova le app di cui hai bisogno",
+
+  "DataSecurityHeader": "Controllo e sicurezza dei dati",
+  "DataSecurity": "Crittografia dei dati inattivi e in movimento. Autenticazione LDAP/Active Directory. Diritti di accesso flessibili e JWT. Tracciamento delle attività, relazioni di verifica e altro ancora.",
+
+  "Administration": "Amministrazione e personalizzazione",
+  "ManageYourWorkspace": "Gestisci la tua area di lavoro utilizzando un pannello di controllo intuitivo. Personalizzalo con combinazioni di colori integrate, cambia loghi, titoli, collegamenti, imposta il tema dell'interfaccia chiaro o scuro.",
+
+  "GettingStarted": "Iniziare è semplice",
+  "UseOOWorkspace": "Utilizza ONLYOFFICE Workspace nel cloud, ospitalo autonomamente o avvia un'installazione preconfigurata.",
+
+  "GetStarted": "Inizia",
+  "OvhMarketplace": "OVHcloud Marketplace",
+  "OneClickInstall": "Installazione con un clic, aggiornamento automatico",
+
+  "SelfHosted": "Ospitato in modo autonomo",
+  "Host": "Ospita presso la tua sede",
+
+  "CommunityFooterText": "La versione community per uso domestico è disponibile per il download <0>qui.</0>"
+}

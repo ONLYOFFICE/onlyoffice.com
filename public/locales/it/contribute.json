@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Aiutaci a migliorare ONLYOFFICE",
+  "PageDescription": "Contribuisci al progetto ONLYOFFICE: sviluppa, traduci, testa o documenta e condividi nel mondo.",
+
+  "HeroTitle": "Diventa parte della famiglia <span>ONLYOFFICE</span>",
+  "HeroText": "Contribuisci al progetto open source ONLYOFFICE e rendilo migliore!",
+
+  "ImproveOO": "Migliora ONLYOFFICE",
+  "DevelopYourOwnPluginOrMacros": "Sviluppa il tuo plugin personale o macro per gli editor documenti di ONLYOFFICE.",
+  "ReadAPIDocumentation": "Leggi la documentazione API",
+  "CreateYourOwnForm": "Crea i tuoi modelli di modulo e condividili con gli altri.",
+  "OpenOurFormLibrary": "Apri la nostra libreria di moduli",
+  "CreateAnExtensionOrModule": "Crea un'estensione o un modulo per ONLYOFFICE DocSpace.",
+  "DidYouFindABug": "Hai trovato dei bug? Segnala problemi su <0>GitHub</0> o <1>Forum</1>.",
+  "MoreInfo": "Ulteriori informazioni",
+
+  "SocialMediaText": "Interagisci con noi sul <0>blog</0> o sui social.",
+
+  "SpreadTitle": "Diffondi la tecnologia ONLYOFFICE",
+  "SpreadText": "Sviluppa un connettore per la tua piattaforma personale per condividere ONLYOFFICE con tutti.",
+  "SpreadLink": "Leggi la documentazione API",
+  "More": "Altro",
+
+  "TranslateOO": "<0>Traduci</0> ONLYOFFICE",
+  "TranslateOOText": "<p>Vuoi aiutarci a tradurre l'interfaccia ONLYOFFICE nella tua madrelingua per renderla accessibile in tutto il mondo?</p><p>Unisciti alla nostra comunità di traduttori volontari scrivendo a <0>documentation@onlyoffice.com</0> e ottieni l'accesso al nostro <1>sistema di traduzione online</1>.</p>",
+
+  "TestOO": "<0>Testa</0> ONLYOFFICE",
+  "TestOOText": "<p>Diventa un tester della versione beta di ONLYOFFICE per aiutarci a testare le funzioni e soluzioni in via di sviluppo.</p><p>Contattaci a <0>press@onlyoffice.com</0>.</p>",
+
+  "DocumentOO": "<0>Documento</0> ONLYOFFICE",
+  "DocumentOOText": "<p>Hai dei suggerimenti o dei trucchetti per lavorare con ONLYOFFICE in maniera più efficace?</p><p>Non hai trovato informazioni su come utilizzare alcune funzioni?</p><p>Vuoi tradurre la documentazione disponibile nella tua madrelingua?</p><p>Contattaci a <0>documentation@onlyoffice.com</0> per condividere le tue idee.</p>"
+}

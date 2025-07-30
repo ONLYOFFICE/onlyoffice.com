@@ -1,0 +1,63 @@
+{
+  "AccountCanceledPageTitle": "Account ONLYOFFICE Personal è cancellato | ONLYOFFICE",
+  "AccountCanceledPageDescription": "Perchè hai deciso di cancellare il tuo account ONLYOFFICE Personal",
+
+  "InstallCanceledPageTitle": "ONLYOFFICE on-premises disinstallato | ONLYOFFICE",
+  "InstallCanceledPageDescription": "Perchè hai deciso di disinstallare ONLYOFFICE dal tuo server",
+
+  "RegistrationCanceledPageTitle": "Registrazione di cloud office è cancellata | ONLYOFFICE",
+  "RegistrationCanceledPageDescription": "Perchè hai deciso di cancellare la registrazione ONLYOFFICE cloud",
+
+  "DesktopUninstalledPageTitle": "ONLYOFFICE Desktop Editors disinstallato | ONLYOFFICE",
+  "DesktopUninstalledPageDescription": "Perchè hai deciso di disinstallare ONLYOFFICE Desktop Editors",
+
+  "CanceledHeroTitle": "Ci dispiace che tu abbia deciso di lasciarci!",
+
+  "WhyDidYouDecideToUninstallOnlyoffice": "Perché hai deciso di disinstallare ONLYOFFICE?",
+  "SelectAllThatApply": "Seleziona tutte le risposte pertinenti",
+  "ExperiencedTechnicalProblems": "Ho avuto problemi tecnici",
+  "NeedMoreStorageSpace": "Avevo bisogno di più spazio di archiviazione",
+  "DidntFindNecessaryFeatures": "Non ho trovato le funzionalità necessarie",
+  "PrivacyConcernsLegalViolation": "Problemi di privacy/violazione della legge",
+  "IRarelyWorkInBrowser": "Raramente lavoro in un browser",
+  "Other": "Altro",
+
+  "SwitchedToTheCloudVersion": "Ho iniziato a usare la versione cloud",
+  "IRarelyUseOnlyoffice": "Uso raramente ONLYOFFICE",
+
+  "IWillUseAnotherDesktopSoftware": "Userò un altro software desktop",
+  "IRarelyUseOnlyofficeDesktopEditors": "Uso raramente ONLYOFFICE Desktop Editors",
+
+  "SwitchedToOnPremises": "Ho optato per soluzioni in loco",
+
+  "WhatShouldWeImproveInOnlyofficePersonal": "Cosa dovremmo migliorare in ONLYOFFICE Personal?",
+  "WhatShouldWeImproveInOnlyoffice": "Cosa dovremmo migliorare in ONLYOFFICE?",
+  "WhatShouldWeImproveInOnlyofficeDesktopEditors": "Cosa dovremmo migliorare in ONLYOFFICE Desktop Editors?",
+  "YourMessageHere": "Il tuo messaggio qui",
+  "Email": "Indirizzo Email*",
+  "EmailIsEmpty": "Email è vuoto",
+  "EmailIsIncorrect": "Email è sbagliato",
+  "ByClickingSendFeedback": "Facendo clic su \"Invia un feedback\", comprendi e accetti le nostre <0>dichiarazioni SLA</0> e <1>sulla privacy</1>.",
+  "SendFeedback": "INVIA UN FEEDBACK",
+
+  "ThanksForYourMessage": "Grazie per il tuo messaggio.",
+  "IfYouDecideToGetBack": "Se decidi di tornare, usa questo codice per un buono <0>sconto del 10%</0> sul servizio cloud ONLYOFFICE o semplicemente condividilo con il tuo amico!*",
+  "WhyTakeBusinessToOnlyofficeCloudToday": "Perché usare subito il cloud di ONLYOFFICE per la propria azienda",
+  "FullyGDPRCompliantCloudOffice": "Office cloud completamente conforme al GDPR",
+  "ReducedMaintenanceCosts": "Costi di manutenzione ridotti",
+  "SecureAndReliableHosting": "Hosting sicuro e affidabile",
+  "AutomaticUpdates": "Aggiornamenti automatici e supporto tecnico professionale",
+  "ScalableCostEffectiveSolution": "Soluzione scalabile e conveniente",
+  "EntirelyFree": "Sconti del 100% per le ONG e l'istruzione",
+  "TheCoupon": "*Il buono sconto è valido per 12 mesi.",
+
+  "DontLeave": "Non andare via a mani vuote: assicurati un cloud personale gratuito con editor per uso domestico e il <0>10% di sconto</0> sui nostri editor online per le aziende!*",
+  "WhyChooseFreePersonalOnlyofficeCloudToday": "Perché usare subito il cloud di ONLYOFFICE gratuito per uso personale",
+  "FreeAndSecureCloudStorage": "Archiviazione su cloud gratuita e sicura",
+  "HighestCompatibility": "Compatibilità totale con i formati MS Office",
+  "DocumentEditing": "Modifica dei documenti e collaborazione all'interno del tuo browser",
+  "ConnectionOfPopular": "Connessione di popolari spazi di archiviazione esterni: Dropbox, OneDrive e altri",
+  "PleaseNote": "*Considera che il buono sconto sarà valido solo per 12 mesi.",
+
+  "HopeToSeeYouAgain": "Grazie per il tuo messaggio. Speriamo di rivederti!"
+}

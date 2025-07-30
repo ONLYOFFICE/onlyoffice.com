@@ -1,0 +1,40 @@
+{
+  "PageTitle": "转换 API | ONLYOFFICE",
+  "PageDescription": "一个 API 即可转换所有类型的办公文档",
+
+  "HeroTitle": "强大的文件转换功能",
+  "HeroText": "同一个API有助于转换大部分类型的Office文档：文本、表格、幻灯片、表单、PDF、电子书等",
+  "GetStarted": "立即开始",
+
+  "ExploreExamples": "查看现成可用的例子",
+  "OOConversionApiTitle": "许多热门集成使用 ONLYOFFICE 转换 API",
+  "ConvertingFormats": "将非 OOXML 格式转换为 OOXML 以便进一步编辑",
+  "ConvertingFormatsImgUrl": "/images/templates/conversion-api/examples/zh/converting-non-ooxml-formats-to-ooxml-for-further-editing.png",
+  "ConvertingFormatsImgUrl2x": "/images/templates/conversion-api/examples/zh/converting-non-ooxml-formats-to-ooxml-for-further-editing@2x.png",
+  "SavingDocuments": "从文件存储中以多种格式保存文档",
+  "SavingDocumentsImgUrl": "/images/templates/conversion-api/examples/zh/saving-documents-from-the-file-storage-in-various-formats.png",
+  "SavingDocumentsImgUrl2x": "/images/templates/conversion-api/examples/zh/saving-documents-from-the-file-storage-in-various-formats@2x.png",
+
+  "WhyToUseOOConversionApi": "为什么要使用ONLYOFFICE转换API",
+  "SupportForAllPopularFormats": "支持大部分流行的格式",
+  "CreatePdfs": "将文档、表格或幻灯片转化为PDF，将课本转化为电子书，将演示文稿转换为图像文件，等等。ONLYOFFICE支持超过50种文档<0>格式</0>。",
+  "Security": "安全性",
+  "TheOpenSourceCode": "ONLYOFFICE的开放源代码可在GitHub上找到，这确保ONLYOFFICE的透明度和可靠性。JSON网络令牌保护文件免受未经授权的访问。请阅读更多有关<0>安全措施</0>的信息。",
+  "AdvancedSettings": "高级设置",
+  "AddConversionSettings": "添加转换设置，以便转换CSV文件时定义分隔符，转换电子表格时定义默认货币显示模式，或以便设置输出PDF文件的页面大小和页边距，等等。请查看API文档，了解所有可用的选项。",
+  "HighQualityConversion": "高质量的转换",
+  "OOConstantlyImproveTheService": "ONLYOFFICE不断改进服务，为所有转换类型提供高质量的结果。快来使用<0>我们的在线转换</0>器并尝试转换您自己的文档。",
+
+  "EasilyBuild": "轻松创建在线文档转换器",
+  "UsingOOConversionApi": "使用 ONLYOFFICE 转换 API",
+  "CheckTheTutorial": "查看教程",
+  "DocumentConverterLink": "https://www.onlyoffice.com/blog/zh-hans/2023/02/build-an-online-document-converter-with-onlyoffice-conversion-api",
+
+  "PartOfOODocsDeveloper": "ONLYOFFICE 转换 API – 属于 ONLYOFFICE 文档开发者版的一部分",
+  "BringAdvancedDocument": "为您品牌的终端用户提供先进的文档处理和转换服务。<0>了解更多</0>",
+  "ConversionApiLinkSubject": "ONLYOFFICE%20转换%20API%20请求",
+
+  "HaveAnyQuestions": "还有其他疑问吗？",
+  "HaveAnyQuestionsText": "我们很乐意为您提供帮助并讨论细节。",
+  "GetInTouch": "联系我们"
+}

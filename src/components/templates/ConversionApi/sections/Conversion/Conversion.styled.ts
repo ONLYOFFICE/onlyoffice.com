@@ -1,12 +1,8 @@
 import { Heading } from "@src/components/ui/Heading";
-import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
-const StyledConversionSection = styled(Section)`
-  background-color: #444444;
-`;
 
 const StyledConversionWrapper = styled.div`
   display: grid;
@@ -61,7 +57,6 @@ const StyledConversionImage = styled.div`
 `;
 
 export {
-  StyledConversionSection,
   StyledConversionWrapper,
   StyledConversionHeading,
   StyledConversionText,
