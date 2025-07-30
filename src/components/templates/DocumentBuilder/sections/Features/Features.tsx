@@ -55,22 +55,18 @@ const Features = () => {
                             color="main"
                             target="_blank"
                             href={block.link.url}
-                            label={t(block.link.label)}
-                            children={t(block.link.label)}
                             textUnderline
                             hover="underline-none"
-                            />
+                            >{t(block.link.label)}</StyledLink>
                         ) : (
                             <StyledLink
                             as="a"
                             color="main"
                             target="_blank"
                             href={block.link.url}
-                            label={t(block.link.label)}
-                            children={t(block.link.label)}
                             textUnderline
                             hover="underline-none"
-                            />
+                            >{t(block.link.label)}</StyledLink>
                         )}
                     </FeaturesBlock>
                 </Container>

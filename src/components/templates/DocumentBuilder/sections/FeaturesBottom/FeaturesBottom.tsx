@@ -57,20 +57,18 @@ const FeaturesBottom = () => {
                             <Button
                             className="feature-block-btn"
                             as="a"
-                            children={t(block.link.text)}
                             href={block.link.url}
                             target="_blank"
-                            />
+                            >{t(block.link.text)}</Button>
                         ) : (
                             <StyledLink
                             className="feature-block-link"
                             color="main"
                             target="_blank"
                             href={block.link.url}
-                            label={t(block.link.text)}
                             textUnderline
                             hover="underline-none"
-                            />
+                            >{t(block.link.text)}</StyledLink>
                         )}
                     </FeaturesBlock>
                 </Container>

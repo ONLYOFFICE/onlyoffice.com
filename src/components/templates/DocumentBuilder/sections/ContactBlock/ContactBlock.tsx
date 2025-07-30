@@ -39,7 +39,7 @@ const ContactBlock = () => {
                             />
                         </StyledContactBlockText>
                     ))}
-                    <StyledButton as="a" children={t(items.button.label)} href={items.button.url}/>
+                    <StyledButton as="a" href={items.button.url}>{t(items.button.label)}</StyledButton>
                 </StyledContactBlock>
             </Container>
         </Section>
