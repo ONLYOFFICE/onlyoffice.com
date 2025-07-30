@@ -32,7 +32,7 @@ const BestHancomAlternativePage = ({ locale }: ILocale) => {
   );
 };
 
-export async function getStaticProps({ locale }: ILocale) {
+export async function getServerSideProps({ locale }: ILocale) {
   if (locale === "zh") {
     return {
       redirect: {
