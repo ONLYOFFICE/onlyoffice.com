@@ -12,4 +12,5 @@ export interface IPricingPlan extends ILocale {
   supportList: string[];
   casesList: string[];
   caption?: string;
+  planKey: "basic" | "plus" | "premium";
 }

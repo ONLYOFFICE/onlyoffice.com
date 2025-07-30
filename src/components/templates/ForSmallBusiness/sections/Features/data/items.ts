@@ -292,27 +292,20 @@ export const items = [
           width: 544,
           height: 280,
         },
-        links: [
+        buttons: [
           {
-            href: "/office-for-ios?from=for-small-business",
-            label: "iOS",
-            isExternal: false,
-            isPrimary: false,
+            label: "IOSAndroidLink",
             isLink: true,
+            links: [
+              { href: "/office-for-ios?from=for-small-business" },
+              { href: "/office-for-android?from=for-small-business" },
+            ],
           },
           {
-            href: "/office-for-android?from=for-small-business",
-            label: "Android",
-            isExternal: false,
-            isPrimary: false,
-            isLink: true,
-          },
-          {
-            href: "/download-desktop#mobile",
             label: "DownloadNow",
-            isExternal: false,
+            href: "/download-desktop#mobile",
             isPrimary: true,
-            isLink: false,
+            isExternal: false,
           },
         ],
         connectorsItems: [

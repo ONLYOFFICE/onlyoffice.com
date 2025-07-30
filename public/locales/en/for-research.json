@@ -12,7 +12,7 @@
   "ResearchFeature13" : "<0>Protect access to the confidential research data</0> using available security settings.",
   "ResearchImgUrl" : "/images/templates/for-research/features/research_docspace.svg",
   "UseItForFree": "Use it for free",
-  "LearnMore": "<0>Learn more</0>",
+  "LearnMore": "Learn more",
 
   "FeaturesIconsHeading": "<0>Create, edit, and collaborate</0> on your ideas online with ONLYOFFICE Docs",
   "FeatureHead1": "Create manuscripts",
@@ -39,6 +39,7 @@
   "FeatureToolsText4" : "Flexible access rights and JWT let you entirely control document access. Activity tracking and audit reporting provide traceability.",
   "FeatureToolsHead5": "Compliance with standards",
   "FeatureToolsText5" : "In ONLYOFFICE, any personal information is treated carefully. Our data security policy is fully compliant with GDPR standards.",
+  "HrefBlogTools" : "https://www.onlyoffice.com/blog/2018/05/how-onlyoffice-complies-with-gdpr/",
   "LearnMoreTools" : "Learn more",
 
   "FeaturesReasonsHeading" : "<0>3 reasons to use ONLYOFFICE</0> within your institution",
@@ -70,6 +71,8 @@
   "ForWindows" : "For Windows",
   "ForLinux" : "For Linux",
   "ForMacOS" : "For Mac OS",
+  "AppsImageIOS" : "/images/templates/app-button/app_store_en.svg",
+  "AppsImageAndroid" : "/images/templates/app-button/google_play_en.svg",
 
   "EnterpriseHaed" : "Enterprise-ready solution",
   "EnterpriseSubitle" : "ONLYOFFICE provides a pre-configured and optimized enterprise version:",

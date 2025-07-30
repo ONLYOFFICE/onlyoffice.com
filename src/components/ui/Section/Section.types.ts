@@ -18,4 +18,5 @@ export interface ISection {
   /** Top and bottom spacing value for mobile screens. Default: ["48px", "48px"]. */
   mobileSpacing?: [string, string];
   borderTop?: boolean;
+  borderTopColor?: string;
 }

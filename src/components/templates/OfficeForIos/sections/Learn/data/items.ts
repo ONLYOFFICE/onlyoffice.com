@@ -7,7 +7,7 @@ const items: ILearnItem[] = [
     image: "/images/templates/office-for-ios/learn/item-image_1.png",
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2022/10/onlyoffice-documents-v7-2-for-ios",
+        href: "LearnMoreUrlLink1",
         label: "LearnMoreSubtitleRead",
       },
     ],
@@ -18,7 +18,7 @@ const items: ILearnItem[] = [
     image: "/images/templates/office-for-ios/learn/item-image_2.png",
     links: [
       {
-        href: "https://helpcenter.onlyoffice.com/mobile/ios/documents/document-editor/basic-operations/handwriting.aspx",
+        href: "LearnMoreUrlLink2",
         label: "LearnMoreSubtitleLearn1",
       },
     ],
@@ -29,7 +29,7 @@ const items: ILearnItem[] = [
     image: "/images/templates/office-for-ios/learn/item-image_3.png",
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2022/07/onlyoffice-for-developers-how-the-mobile-integration-works",
+        href: "LearnMoreUrlLink3",
         label: "LearnMoreSubtitleLearn2",
       },
     ],

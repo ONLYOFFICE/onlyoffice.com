@@ -1,0 +1,288 @@
+{
+  "PageTitle": "ONLYOFFICE - Aplicativos de Negócios na Nuvem",
+
+  "HeroHeadingWeAreHiring": "Estamos contratando",
+  "HeroTextJoin": "Junte-se à <0>equipe ONLYOFFICE</0> hoje mesmo",
+
+  "JobHeading": "Vagas de emprego",
+
+  "JobFiltersDepartment": "Departamentos",
+  "JobFiltersCountry": "País",
+  "JobFiltersReset": "Todos",
+
+  "JobCardDepartmentSales": "Vendas",
+  "JobCardDepartmentCustomerCare": "Atendimento ao cliente",
+  "JobCardDepartmentMarketing": "Marketing",
+  "JobCardDepartmentTechnicalSupport": "Suporte técnico",
+
+  "JobCardLocationRemote": "Remoto",
+  "JobCardTimeFullTime": "Tempo integral",
+  "JobCardLanguageEnDe": "Inglês e alemão",
+  "JobCardLanguageEnFr": "Inglês e francês",
+  "JobCardLanguageEnJa": "Inglês e japonês",
+  "JobCardLanguageEnAr": "Inglês e armênio",
+  "JobCardLanguageEnSr": "Inglês e sérvio",
+  "JobCardLanguageEnCn": "Inglês e chinês",
+
+  "JobCardHeadingRequirements": "Requisitos",
+  "JobCardHeadingSkills": "Habilidades",
+  "JobCardHeadingBenefits": "Benefícios",
+
+  "JobCard1Country": "Alemanha",
+  "JobCard1Title": "Gerente de contas Alemanha",
+  "JobCard1Description": "Estamos procurando um gerente de contas focado no cliente e orientado para o faturamento para criar relacionamentos de confiança e de longo prazo com nossos clientes na Alemanha.",
+  "JobCard1Requirements": [
+    "Criar e manter relacionamentos fortes e duradouros com os clientes, baseados na confiança e no respeito",
+    "Colaborar com equipes de Atendimento profissional e Atendimento ao cliente para entender e responder melhor às necessidades e desafios dos clientes",
+    "Auxiliar os clientes nas questões técnicas",
+    "Identificar clientes que se beneficiariam do recurso Enterprise e de outros serviços",
+    "Consultar os clientes sobre como aprimorar o ONLYOFFICE para melhor atender às necessidades deles",
+    "Gerenciar e negociar renovações",
+    "Ajudar os clientes com questões de cobrança e pagamento"
+  ],
+  "JobCard1Skills": [
+    "Mais de 2 anos de experiência com atendimento ao cliente ou gerenciamento de contas de vendas",
+    "Confortável ao trabalhar com equipes remotas",
+    "Confiável, inteligente, honesto, organizado, positivo, apresentável, automotivado",
+    "Ótimas habilidades de comunicação oral e escrita em inglês e alemão",
+    "À vontade com ferramentas de CRM, office e comunicação por vídeo",
+    "Ágil a aprender e ansioso para usar novas ferramentas",
+    "Capacidade comprovada de conciliar vários projetos de gerenciamento de contas em simultâneo, mantendo a atenção aos detalhes"
+  ],
+  "JobCard1Benefits": [
+    "Horários flexíveis para trabalhar em casa",
+    "Trabalho remoto e independência de localização",
+    "Equipe internacional e comunidade open - source",
+    "Colegas de equipe motivados e criativos",
+    "Salário compatível mais comissão"
+  ],
+
+  "JobCard2Country": "França",
+  "JobCard2Title": "Gerente de contas França",
+  "JobCard2Description": "Estamos procurando um gerente de contas focado no cliente e orientado para o faturamento para criar relacionamentos de confiança e de longo prazo com nossos clientes na França.",
+  "JobCard2Requirements": [
+    "Criar e manter relacionamentos fortes e duradouros com os clientes, baseados na confiança e no respeito",
+    "Colaborar com equipes de Atendimento profissional e Atendimento ao cliente para entender e responder melhor às necessidades e desafios dos clientes",
+    "Auxiliar os clientes nas questões técnicas",
+    "Identificar clientes que se beneficiariam do recurso Enterprise e de outros serviços",
+    "Consultar os clientes sobre como aprimorar o ONLYOFFICE para melhor atender às necessidades deles",
+    "Gerenciar e negociar renovações",
+    "Ajudar os clientes com questões de cobrança e pagamento"
+  ],
+  "JobCard2Skills": [
+    "Mais de 2 anos de experiência com atendimento ao cliente ou gerenciamento de contas de vendas",
+    "Confortável ao trabalhar com equipes remotas",
+    "Confiável, inteligente, honesto, organizado, positivo, apresentável, automotivado",
+    "Ótimas habilidades de comunicação oral e escrita em inglês e francês",
+    "À vontade com ferramentas de CRM, office e comunicação por vídeo",
+    "Ágil a aprender e ansioso para usar novas ferramentas",
+    "Capacidade comprovada de conciliar vários projetos de gerenciamento de contas em simultâneo, mantendo a atenção aos detalhes"
+  ],
+  "JobCard2Benefits": [
+    "Horários flexíveis para trabalhar em casa",
+    "Trabalho remoto e independência de localização",
+    "Equipe internacional e comunidade open - source",
+    "Colegas de equipe motivados e criativos",
+    "Salário compatível mais comissão"
+  ],
+
+  "JobCard3Country": "Japão",
+  "JobCard3Title": "Gerente de contas Japão",
+  "JobCard3Description": "Estamos procurando um gerente de contas focado no cliente e orientado para o faturamento para criar relacionamentos de confiança e de longo prazo com nossos clientes no Japão.",
+  "JobCard3Requirements": [
+    "Criar e manter relacionamentos fortes e duradouros com os clientes, baseados na confiança e no respeito",
+    "Colaborar com equipes de Atendimento profissional e Atendimento ao cliente para entender e responder melhor às necessidades e desafios dos clientes",
+    "Auxiliar os clientes nas questões técnicas",
+    "Identificar clientes que se beneficiariam do recurso Enterprise e de outros serviços",
+    "Consultar os clientes sobre como aprimorar o ONLYOFFICE para melhor atender às necessidades deles",
+    "Gerenciar e negociar renovações",
+    "Ajudar os clientes com questões de cobrança e pagamento"
+  ],
+  "JobCard3Skills": [
+    "Mais de 2 anos de experiência com atendimento ao cliente ou gerenciamento de contas de vendas",
+    "Confortável ao trabalhar com equipes remotas",
+    "Confiável, inteligente, honesto, organizado, positivo, apresentável, automotivado",
+    "Ótimas habilidades de comunicação oral e escrita em inglês e japonês",
+    "À vontade com ferramentas de CRM, office e comunicação por vídeo",
+    "Ágil a aprender e ansioso para usar novas ferramentas",
+    "Capacidade comprovada de conciliar vários projetos de gerenciamento de contas em simultâneo, mantendo a atenção aos detalhes"
+  ],
+  "JobCard3Benefits": [
+    "Horários flexíveis para trabalhar em casa",
+    "Trabalho remoto e independência de localização",
+    "Equipe internacional e comunidade open - source",
+    "Colegas de equipe motivados e criativos",
+    "Salário compatível mais comissão"
+  ],
+
+  "JobCard4Country": "Alemanha",
+  "JobCard4Title": "Representante de vendas Alemanha",
+  "JobCard4Description": "Estamos procurando um representante de vendas orientado para o faturamento para buscar e envolver ativamente os clientes em potencial.",
+  "JobCard4Requirements": [
+    "Gerenciar oportunidades ao longo de todo o ciclo",
+    "Apresentar, promover e vender produtos / serviços do ONLYOFFICE para clientes existentes e potenciais",
+    "Estabelecer, desenvolver e manter relacionamentos positivos empresariais e com clientes",
+    "Coordenar o esforço de vendas com os membros da equipe, outros departamentos e parceiros",
+    "Analisar o potencial do território / mercado, acompanhar as vendas",
+    "Fornecer relatórios sobre as necessidades dos clientes, problemas, interesses, atividades competitivas e potencial para novos serviços"
+  ],
+  "JobCard4Skills": [
+    "Ótimas habilidades de vendas, negociação e comunicação",
+    "Confortável ao trabalhar com equipes remotas",
+    "Confiável, inteligente, honesto, organizado, positivo, apresentável, automotivado",
+    "Ótimas habilidades de comunicação oral e escrita em inglês e alemão",
+    "À vontade com ferramentas de CRM, office e comunicação por vídeo",
+    "Ágil a aprender e ansioso para usar novas ferramentas",
+    "Capacidade comprovada de conciliar vários projetos de gerenciamento de contas em simultâneo, mantendo a atenção aos detalhes"
+  ],
+  "JobCard4Benefits": [
+    "Horários flexíveis para trabalhar em casa",
+    "Trabalho remoto e independência de localização",
+    "Equipe internacional e comunidade open - source",
+    "Colegas de equipe motivados e criativos",
+    "Salário compatível mais comissão"
+  ],
+
+  "JobCard5Country": "França",
+  "JobCard5Title": "Representante de vendas França",
+  "JobCard5Description": "Estamos procurando um representante de vendas orientado para o faturamento para buscar e envolver ativamente os clientes em potencial.",
+  "JobCard5Requirements": [
+    "Gerenciar oportunidades ao longo de todo o ciclo",
+    "Apresentar, promover e vender produtos / serviços do ONLYOFFICE para clientes existentes e potenciais",
+    "Estabelecer, desenvolver e manter relacionamentos positivos empresariais e com clientes",
+    "Coordenar o esforço de vendas com os membros da equipe, outros departamentos e parceiros",
+    "Analisar o potencial do território / mercado, acompanhar as vendas",
+    "Fornecer relatórios sobre as necessidades dos clientes, problemas, interesses, atividades competitivas e potencial para novos serviços"
+  ],
+  "JobCard5Skills": [
+    "Ótimas habilidades de vendas, negociação e comunicação",
+    "Confortável ao trabalhar com equipes remotas",
+    "Confiável, inteligente, honesto, organizado, positivo, apresentável, automotivado",
+    "Ótimas habilidades de comunicação oral e escrita em inglês e francês",
+    "À vontade com ferramentas de CRM, office e comunicação por vídeo",
+    "Ágil a aprender e ansioso para usar novas ferramentas",
+    "Capacidade comprovada de conciliar vários projetos de gerenciamento de contas em simultâneo, mantendo a atenção aos detalhes"
+  ],
+  "JobCard5Benefits": [
+    "Horários flexíveis para trabalhar em casa",
+    "Trabalho remoto e independência de localização",
+    "Equipe internacional e comunidade open - source",
+    "Colegas de equipe motivados e criativos",
+    "Salário compatível mais comissão"
+  ],
+
+  "JobCard6Country": "Japão",
+  "JobCard6Title": "Representante de vendas Japão",
+  "JobCard6Description": "Estamos procurando um representante de vendas orientado para o faturamento para buscar e envolver ativamente os clientes em potencial.",
+  "JobCard6Requirements": [
+    "Gerenciar oportunidades ao longo de todo o ciclo",
+    "Apresentar, promover e vender produtos / serviços do ONLYOFFICE para clientes existentes e potenciais",
+    "Estabelecer, desenvolver e manter relacionamentos positivos empresariais e com clientes",
+    "Coordenar o esforço de vendas com os membros da equipe, outros departamentos e parceiros",
+    "Analisar o potencial do território / mercado, acompanhar as vendas",
+    "Fornecer relatórios sobre as necessidades dos clientes, problemas, interesses, atividades competitivas e potencial para novos serviços"
+  ],
+  "JobCard6Skills": [
+    "Ótimas habilidades de vendas, negociação e comunicação",
+    "Confortável ao trabalhar com equipes remotas",
+    "Confiável, inteligente, honesto, organizado, positivo, apresentável, automotivado",
+    "Ótimas habilidades de comunicação oral e escrita em inglês e japonês",
+    "À vontade com ferramentas de CRM, office e comunicação por vídeo",
+    "Ágil a aprender e ansioso para usar novas ferramentas",
+    "Capacidade comprovada de conciliar vários projetos de gerenciamento de contas em simultâneo, mantendo a atenção aos detalhes"
+  ],
+  "JobCard6Benefits": [
+    "Horários flexíveis para trabalhar em casa",
+    "Trabalho remoto e independência de localização",
+    "Equipe internacional e comunidade open - source",
+    "Colegas de equipe motivados e criativos",
+    "Salário compatível mais comissão"
+  ],
+
+  "JobCard7Country": "Armênia",
+  "JobCard7Title": "Gerente de atendimento ao cliente Armênia",
+  "JobCard7Description": "Estamos procurando um Gerente de Atendimento ao Cliente experiente para se juntar à nossa equipe internacional. Você será responsável pelos processos de integração do cliente, bem como pelo gerenciamento do relacionamento com os clientes do ONLYOFFICE.",
+  "JobCard7Requirements": [
+    "Fornecer demonstrações profissionais, consultoria de produtos e suporte funcional",
+    "Garantir altos níveis de satisfação do cliente através de suporte eficaz e ótimo atendimento ao cliente",
+    "Trabalhar em estreita colaboração com a equipe de controle de qualidade e com os desenvolvedores para fornecer um suporte eficaz e oportuno",
+    "Consultar o cliente sobre como melhorar o ONLYOFFICE para melhor atender às necessidades dele",
+    "Agrupar o feedback dos clientes, analisar e repassar para a equipe de produto para ajudar a desenvolver um produto melhor",
+    "Usar relatórios para analisar perguntas e problemas"
+  ],
+  "JobCard7Skills": [
+    "Confortável ao trabalhar com equipes remotas",
+    "Confiável, inteligente, honesto, organizado, positivo, apresentável, automotivado",
+    "Ótimas habilidades de comunicação oral e escrita em inglês e armênio",
+    "À vontade com ferramentas de CRM, office e comunicação por vídeo",
+    "Ágil a aprender e ansioso para usar novas ferramentas"
+  ],
+  "JobCard7Benefits": [
+    "Horários flexíveis para trabalhar em casa",
+    "Trabalho remoto e independência de localização",
+    "Equipe internacional e comunidade open - source",
+    "Colegas de equipe motivados e criativos"
+  ],
+
+  "JobCard8Country": "Sérvia",
+  "JobCard8Title": "Technical writer Sérvia",
+  "JobCard8Description": "We are looking for a technical writer to contribute to the main company product.",
+  "JobCard8Requirements": [
+    "Work with API documentation",
+    "Improve and maintain the existing product API",
+    "Draw up tech assignments for developers to write new test cases"
+  ],
+  "JobCard8Skills": [
+    "Higher specialized education in the field of IT",
+    "Programming experience, ability to understand API documentation at the level of a software developer",
+    "Ability to evaluate the product API from the position of a third-party developer",
+    "Analytical mindset and ability to quickly process information",
+    "Readiness for discussions in a team and adequate attitude to constructive feedback",
+    "Ability to justify your own suggestions",
+    "Understanding that in addition to the interests of users, there is a commercial interest of the company",
+    "English proficiency level enough for reading and writing technical documentation, including API",
+    "Experience in writing and maintaining API documentation will be a huge advantage"
+  ],
+  "JobCard8Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Decent salary"
+  ],
+
+  "JobCard9Country": "China",
+  "JobCard9Title": "Technical support specialist China",
+  "JobCard9Description": "We are looking for a technical support specialist to assist our customers with technical questions and issues when using our products.",
+  "JobCard9Requirements": [
+    "Provide customer tech support (remote access, client-side product administration, preparing necessary instructions)",
+    "Respond to customer queries in a timely and accurate way",
+    "Interact with the development and testing departments",
+    "Directly participate in the processes of software testing and design"
+  ],
+  "JobCard9Skills": [
+    "Proficiency in English, starting from the B2 level and higher",
+    "Fluent Chinese",
+    "Confident knowledge of client and server operating systems",
+    "Experience in customer support or similar field as well as experience in Linux administration will be a huge advantage",
+    "Motivation, the desire to improve, the willingness to strive to make changes"
+  ],
+  "JobCard9Benefits": [
+    "Flexible hours to work around home life",
+    "Remote work & location independence",
+    "International team & open source community",
+    "Motivated and creative teammates",
+    "Decent salary"
+  ],
+
+  "JobCardAreYouInterested": "Você está interessado nesta vaga? Candidate-se agora. Envie-nos seu currículo para o e-mail <0>jobs@onlyoffice.com</0>.",
+
+  "AboutContentHeading": "Sobre a Ascensio System Sia",
+  "AboutContentText": [
+    "Somos uma empresa internacional open-source que tem como missão levar os aplicativos office da Web mais inovadores para todos.",
+    "Nossa vida profissional na empresa é baseada na confiança recíproca e no objetivo comum que nos une, nos mantém motivados e atualizados e nos inspira a ser inovadores. Mantemos a estratégia quando todos estão comprometidos com o que gostam, no que são realmente bons. Isso nos permite criar e promover um produto útil e de alto nível, que já possui uma base sólida de clientes.",
+    "Como uma empresa com funcionários em <0>mais de 30 países</0> e uma grande comunidade de colaboradores em todo o mundo, nosso idioma empresarial é o inglês. Muitos de nós trabalhamos em home office com um horário flexível, por isso, não importa de onde você é.",
+    "Na <0>Ascensio System Sia</0>, oferecemos tratamento igualitário a todos os funcionários e a todos os candidatos, independentemente de raça, cor, religião, sexo, orientação sexual, percepção ou identidade de gênero, nacionalidade, idade, estado civil, situação militar ou deficiência. Apenas suas qualificações, experiência e entusiasmo são importantes para nós.",
+    "<0>Junte-se à nossa grande família open-source e se candidate a um emprego! Fale conosco pelo</0> <1>jobs@onlyoffice.com</1>"
+  ]
+}

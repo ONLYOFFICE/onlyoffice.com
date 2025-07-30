@@ -148,6 +148,18 @@
   font-display: swap;
 }
 
+@property --smooth-gradient-color-1 {
+  syntax: '<color>';
+  initial-value: #444444;
+  inherits: false;
+}
+
+@property --smooth-gradient-color-2 {
+  syntax: '<color>';
+  initial-value: #444444;
+  inherits: false;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

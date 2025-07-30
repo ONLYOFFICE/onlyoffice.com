@@ -41,7 +41,7 @@ const StyledFeaturesContent = styled.div`
   }
 
   > div {
-    padding: 112px 0;
+    padding: 112px 0 48px;
 
     @media ${device.mobile} {
       padding: 48px 0;
@@ -76,6 +76,20 @@ const StyledFeaturesContent = styled.div`
     }
   }
 
+  .featureList::before {
+    top: 12px;
+  }
+
+  .buttons > *:first-child {
+    width: 100%;
+    text-align: left;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
   @media ${device.tablet} {
     grid-template-columns: 1fr 1fr;
   }
@@ -103,7 +117,6 @@ const StyledFeaturesContent = styled.div`
 
     .buttons {
       flex-direction: column !important;
-      align-items: flex-start !important;
     }
   }
 `;

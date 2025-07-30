@@ -1,59 +1,59 @@
 {
-  "PageTitle": "Android向け無料オフィススイート | ONLYOFFICE Documents",
-  "PageDescription": "文書、スプレッドシート、プレゼンテーションの編集・共同編集。Androidデバイスでフォームに入力。",
+  "PageTitle": "Android 版無料オフィススイート | ONLYOFFICE Documents",
+  "PageDescription": "Edit and co-edit documents, spreadsheets and presentations. Fill out forms on your Android device.",
 
-  "OnlyOfficeDocuments": "ONLYOFFICEドキュメント、Android向け<0>無料オフィスアプリ</0>",
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents、Android <0>版無料オフィスアプリ</0>",
 
-  "OneAppForYourText": "テキスト文書、スプレッドシート、プレゼンテーション、フォーム、メディアファイルを一つにまとめたアプリ",
-  "CompatibleWithMSOffice": "MS Office形式と100%互換",
+  "OneAppForYourText": "テキスト ドキュメント、スプレッドシート、プレゼンテーション、フォーム、メディアファイル用の1つのアプリ",
+  "CompatibleWithMSOffice": "Microsoft Office フォーマットに適合",
 
-  "AnOptionToConsider": "OfficeやGoogleドキュメントの代替をお探しの場合に検討すべき選択肢です。",
-  "EliesGuzman": "エリエス・グスマン",
+  "AnOptionToConsider": "OfficeまたはGoogle Docsの代替を探していらっ者たら、いいオプションです。",
+  "EliesGuzman": "からのエリヤ・グズマンより",
   "Malavida": "Malavida",
 
   "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.ja.png",
   "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-ja.svg",
 
-  "FeaturesItemHeadingFull": "ドキュメントエディター",
-  "FeaturesItemTextMakeUse": "すべての一般的な形式のテキストドキュメントを操作できます。テキストをフォーマットし、ページレイアウトを設定します。リンク、画像、グラフを挿入できます。アプリから直接ドキュメントを印刷できます。",
+  "FeaturesItemHeadingFull": "ドキュメント エディター",
+  "FeaturesItemTextMakeUse": "人気の高いすべてのフォーマットでドキュメントを編集。テキストの書式設定、ページレイアウトを設定。リンク、画像、チャートを挿入。アプリから直接ドキュメントを印刷。",
 
-  "FeaturesItemHeadingComplete": "スプレッドシートエディター",
-  "FeaturesItemTextManage": "デバイス上でスプレッドシートを作成、表示、編集できます。行と列を操作し、セルのパラメータを調整し、450以上の関数を使用し、データを並べ替えたりフィルターしたりできます。",
+  "FeaturesItemHeadingComplete": "スプレッドシート エディター",
+  "FeaturesItemTextManage": "お使いのデバイスでスプレッドシートを作成、表示、編集。行、列の編集、セルのパラミーターの調整、450 種類以上の計算式、データの分類、フィルタ使用可能。",
 
-  "FeaturesItemHeadingCollaborative": "プレゼンテーションエディター",
-  "FeaturesItemTextMakeWork": "Androidで印象的なプレゼンテーションを作成および編集できます。スライドを管理し、画像を挿入し、図形、チャート、グラフ、テキスト、その他のアイテムを追加および編集できます。",
+  "FeaturesItemHeadingCollaborative": "プレゼンテーション エディター",
+  "FeaturesItemTextMakeWork": "Android デバイスで、インパクトのあるプレゼンテーションを作成、編集。スライド管理、画像挿入、図形、チャート、グラフ、テキスト、他の項目を追加、編集。",
 
-  "FeaturesItemHeadingOnline": "フォーム入力",
-  "FeaturesItemTextMakeView": "オンラインフォームを表示して入力できます。フィールド間を簡単に移動できます。結果をPDFまたはDOCXファイルとして保存できます。",
+  "FeaturesItemHeadingOnline": "フォーム フィラー",
+  "FeaturesItemTextMakeView": "オンライン フォームを表示して記入できます。フィールド間に簡単に移動できます。結果をPDFまたはDOCXファイルとして保存できます。",
 
-  "FeaturesItemHeadingPDF": "PDFビューアー＆メディアプレーヤー",
-  "FeaturesItemTextMakeViewPDF": "PDF、写真、ビデオファイルを表示できます。ファイルの並べ替え、名前変更、移動、コピー、デバイス上またはクラウドでのフォルダ作成が可能です。",
+  "FeaturesItemHeadingPDF": "PDFビューア、メデア再生機",
+  "FeaturesItemTextMakeViewPDF": "PDF ファイル、フォトファイル、ビデオファイルの表示。ファイルの分類、名前変更、移動、コピー、デバイスまたはクラウドでフォルダを作成。",
 
   "RealTimeCollaboration": "リアルタイム共同編集",
   "BeMoreProductive": "生産性を向上。アプリをONLYOFFICEクラウドに接続。ドキュメントを共有してチームメイトとリアルタイムで共同編集。コメントや変更履歴の追跡。グラフィック注釈の追加。",
 
   "VideoCardHeading": "堅牢なモバイルオフィススイート、ONLYOFFICE Documentsを発見",
 
-  "ChooseWhereToWork": "作業場所を選択",
+  "ChooseWhereToWork": "作業場所の選択",
 
-  "ChooseItemOnDevice": "デバイス上",
-  "ChooseItemViewAndEdit": "Androidデバイスでテキスト文書、スプレッドシート、プレゼンテーションを表示・編集。PDF、画像、動画ファイルを管理。",
+  "ChooseItemOnDevice": "デバイスで",
+  "ChooseItemViewAndEdit": "テキスト文書、スプレッドシート、プレゼンテーションの表示と編集。Android 端末にある PDF、画像、動画ファイルの 管理。",
 
-  "ChooseItemInOnlyOffice": "ONLYOFFICEクラウド内",
-  "ChooseItemLogInTo": "ONLYOFFICEクラウドにログインして、チームとリアルタイムでドキュメントを共有・共同編集。Dropbox、Google Drive、Boxなどのクラウドサービスを接続して、そこに保存されているドキュメントを共同編集。",
+  "ChooseItemInOnlyOffice": "ONLYOFFICE クラウドで",
+  "ChooseItemLogInTo": "ONLYOFFICE クラウドにログインし、リアルタイムでチームとドキュメントを共有、共同編集。ドロップボックス、Google ドライブ、ボックス、他のクラウドサービスを接続して、保存されたドキュメントを共同編集。",
 
-  "ChooseItemInYourCloud": "あなたのクラウド内",
-  "ChooseItemConnectNextcloud": "Nextcloud、ownCloud、またはWebDAV経由で動作するその他のクラウドを接続。アプリから直接ドキュメントを管理、表示、編集。",
+  "ChooseItemInYourCloud": "お好みのクラウドで",
+  "ChooseItemConnectNextcloud": "Nextcloud,、ownCloud、他の WebDAVで作動する任意のデバイスを接続。アプリから直接ドキュメントを管理、閲覧、編集。",
 
   "ChooseItemFromOther": "他のアプリから",
   "ChooseItemImportDocuments": "iTunes、ファイルなどのアプリケーションからドキュメントをインポート。",
 
-  "HaveQuestions": "機能についてご質問がありますか？<0>ヘルプセンター</0>をご覧ください。",
+  "HaveQuestions": "今すぐ無料 Android 版オフィスを手に入れましょう当社の <0>ヘルプセンター</0>へお問い合わせください。",
 
-  "GetMoreWithComplete": "完全なモバイルウェブ版でさらに多くの機能を利用",
-  "WorkOnDocumentsWithin": "モバイルブラウザ内でドキュメントを操作。ONLYOFFICEウェブポータルにアクセスし、ドキュメント編集と共同作業のためのより多くのツールを利用。モバイルビューから簡単に切り替え、デスクトップモードでドキュメントを編集。",
+  "GetMoreWithComplete": "完全なモバイルバージョンをさらに活用しましょう",
+  "WorkOnDocumentsWithin": "モバイル ブラウザーでドキュメントを編集。ONLYOFFICE ウェブポータルへ移動して、ドキュメント編集、共同編集についてのガイドを入手しましょう。モバイル表示から簡単に切り替えて、デスクトップモードでドキュメントを編集",
 
-  "LearnMoreHeading": "Android版ONLYOFFICE Documentsについてもっと知る",
+  "LearnMoreHeading": "ONLYOFFICE によるレビュー",
 
   "LearnCardTitleRelease": "リリースノート",
   "LearnMoreTextOnlyOfficeDocuments": "パスワード、図形への塗りつぶし、UI改善を含むONLYOFFICE Documents 5.5",

@@ -1,0 +1,133 @@
+{
+  "TrainingCoursesPageTitle": "Online-Schulungen",
+  "TrainingCoursesMetaDescription": "Alles über kollaborative Technologien und ONLYOFFICE-Lösungen.",
+  "TrainingCourses": "Schulungen",
+  "SearchTraining": "Schulungen suchen",
+  "ONLYOFFICEFeatures": "Nehmen Sie an unseren Online-Kursen teil, um alles über nahtlose und effektive Arbeit zu erfahren. Sie entdecken praktische Anwendung von ONLYOFFICE-Funktionen und -Tools mit Lehrer/innen.",
+  "All": "Alle",
+  "Modules": "Module",
+  "Purpose": "Zweck",
+  "ModulesWithPoints": "Module: ",
+  "ONLYOFFICEDocuments": "ONLYOFFICE Documents",
+  "ONLYOFFICEMail": "ONLYOFFICE Mail",
+  "ONLYOFFICECRM": "ONLYOFFICE CRM",
+  "ONLYOFFICEProjects": "ONLYOFFICE Projects",
+  "ONLYOFFICECalendar": "ONLYOFFICE Calendar",
+  "ONLYOFFICECommunity": "ONLYOFFICE Community",
+  "ONLYOFFICEPeople": "ONLYOFFICE People",
+  "Integration": "Integration",
+  "SortBy": "Sortieren nach: ",
+  "NewestOldest": "Datum (absteigend)",
+  "OldestNewest": "Datum (aufsteigend)",
+  "LoadMore": "mehr",
+  "FAQ": "Häufig gestellte Fragen",
+  "QuestionONLYOFFICETraining": "In welchem Format werden ONLYOFFICE-Schulungen abgehalten?",
+  "AnswerONLYOFFICETraining": "Unsere Schulungen finden online in Zoom statt.",
+  "QuestionLimit": "Gibt es ein Teilnehmerlimit für Kursen?",
+  "AnswerLimit": "Jede Schulung können bis zu 20 Teilnehmer/innen besuchen.",
+  "QuestionTrainingSessionLookLike": "Wie wird eine Schulung organisiert?",
+  "AnswerTrainingSessionLookLike": "Sie bekommen den Zugriff auf das Schulungsportal, um allen Schritten mit Lehrer/innen folgen und die beschriebenen Funktionen selbst sehen zu können. Am Ende der Sitzung haben Sie Zeit, um Fragen zu stellen und Schwierigkeiten noch einmal zu besprechen.",
+  "QuestionGetMaterials": "Kann ich nach Abschluss der Schulung Materialien bekommen?",
+  "AnswerGetMaterials": "Sie erhalten eine Präsentation mit einer kurzen Beschreibung des Kurses, Aufzeichnungen und ein Dokument mit Aufgaben für Ihr individuelles Training.",
+  "QuestionFindMaterials": "Wo finde ich Antworten auf andere Fragen?",
+  "AnswerFindMaterials": "Wenn Sie Fragen zu den Schulungen haben, wenden Sie sich bitte an uns unter <0>sales@onlyoffice.com</0>.",
+  "Reset": "Zurücksetzen Filter",
+  "Filters": "Filter",
+  "Module": "Module",
+  "ONLYOFFICEDocs": "ONLYOFFICE Docs",
+  "ApplyFilter": "Filter anwenden",
+  "FillOutThisForm": "Für Preisanfrage füllen Sie dieses Formular aus",
+  "FullName": "Vollständiger Name",
+  "FullNamePlaceholder": "Vorname Nachname",
+  "FullNameEmpty": "Das Feld Vollständiger Name ist leer",
+  "CompanyName": "Unternehmen",
+  "CompanyNameEmpty": "Das Feld Unternehmen ist leer",
+  "Email": "Email",
+  "EmailPlaceholder": "name@domain.com",
+  "PreferredLanguage": "Bevorzugte Sprache*",
+  "English": "Englisch",
+  "German": "Deutsch",
+  "French": "Französisch",
+  "Spanish": "Spanisch",
+  "Chinese": "Chinesisch",
+  "LanguageIsNotSelected": "Das Feld Bevorzugte Sprache ist leer",
+  "TimeZone": "Ihre Zeitzone*",
+  "TimeZoneIsNotSelected": "Time zone is not selected",
+  "Comment": "Kommentar",
+  "ByClickingSubmit": "Durch das Anklicken der Schaltfläche \"Anfrage senden\", akzeptieren Sie unsere <0>SLA</0> und <1>Datenschutzerklärung</1>.",
+  "PleaseWait": "Bitte warten...",
+  "SubmitRequest": "Anfrage senden",
+  "RequestSuccessfully": "Ihre Anfrage wurde erfolgreich gesendet",
+  "RequestError": "Entschuldigung, ein Fehler ist aufgetreten. Bitte versuchen Sie erneut später.",
+
+  "NewSign": "NEU",
+  "Sessions": "Sitzungen: ",
+  "Hours": "Stunden: ",
+  "Price": "Preis: ",
+  "ReadMore": "erfolgsgeschichte lesen",
+  "OnDemand": "Auf Anfrage",
+  "Custom": "Anpassbar",
+
+  "CardDataTitle21": "ONLYOFFICE Docs in Bildungseinrichtungen",
+  "CardDataDescription21": "Möchten Sie den Lernprozess digital fördern? Nehmen Sie an diesem umfassenden Kurs teil und lernen Sie, wie Sie mit ONLYOFFICE Docs Unterrichtspläne und Lernmaterialien, einschließlich Präsentationen und interaktive Formulare, <0>erstellen, in Echtzeit mit Schülern und Lehrkräften zusammenarbeiten, ein Benotungssystem einrichten, usw. Erfahren Sie, wie Sie die Zugriffsrechte auf die Lerninhalte verwalten und sensible Daten schützen können.</0>",
+
+  "CardDataTitle20": "Individuelles technikorientiertes Training",
+  "CardDataDescription20": "Entdecken Sie die technische Seite der Arbeit mit ONLYOFFICE Docs. Tauchen Sie ein in die Installation und Wartung, lernen Sie, wie man Backups erstellt, die Editoren konfiguriert, Plugins und Makros hinzufügt und erhalten <0>Sie einen Überblick über die erweiterten Funktionen und Parameter.</0>",
+
+  "CardDataTitle19": "Bearbeiten von Dokumenten in ONLYOFFICE DocSpace",
+  "CardDataDescription19": "Entdecken Sie, wie Sie in ONLYOFFICE DocSpace, einer raumbasierten Umgebung für effektive Zusammenarbeit, mit Office-Dateien arbeiten können. Lernen Sie, wie Sie Dokumente, Tabellenkalkulationen, Präsentationen und Formulare <0>in Echtzeit erstellen, bearbeiten und mitverfassen können oder wie Sie einen absatzsperrenden Bearbeitungsmodus und andere Funktionen für die Zusammenarbeit nutzen.</0>",
+
+  "CardDataTitle18": "Verwaltung von ONLYOFFICE DocSpace",
+  "CardDataDescription18": "Erfahren Sie, wie Sie ONLYOFFICE DocSpace, eine raumbasierte Umgebung für die effektive Zusammenarbeit an Dokumenten, verwalten können. Erfahren Sie, wie Sie Ihr Team einrichten und Benutzer mit verschiedenen Rollen einladen, <0>Räume erstellen und verwalten sowie Ihren Raum anpassen und sichern können.</0>",
+
+  "CardDataTitle17": "Arbeiten mit Dokumenten in WordPress",
+  "CardDataDescription17": "Erfahren Sie, wie Sie mit WordPress an Office-Dokumenten arbeiten können. Bearbeiten Sie Dokumente, die mit ONLYOFFICE Docs in WordPress hochgeladen wurden, fügen Sie ONLYOFFICE-Blöcke beim Erstellen eines Beitrags hinzu, <0>um Dokumente im eingebetteten Modus einzufügen, usw.</0>",
+
+  "CardDataTitle16": "Integration (WordPress)",
+  "CardDataDescription16": "Erfahren Sie, wie Sie mit WordPress an Office-Dokumenten arbeiten können. Bearbeiten Sie Dokumente, die mit ONLYOFFICE Docs in WordPress hochgeladen wurden, fügen Sie ONLYOFFICE-Blöcke beim Erstellen eines Beitrags hinzu, <0>um Dokumente im eingebetteten Modus einzufügen, usw.</0>",
+
+  "CardDataTitle15": "Arbeiten mit Dokumenten in Nextcloud",
+  "CardDataDescription15": "Erfahren Sie, wie Sie ONLYOFFICE Docs mit Nextcloud verbinden, konfigurieren und Textdokumente, Tabellenkalkulationen, Präsentationen und Formulare in Nextcloud bearbeiten und gemeinsam nutzen können.",
+
+  "CardDataTitle14": "Integration (Nextcloud)",
+  "CardDataDescription14": "Erfahren Sie, wie Sie ONLYOFFICE Docs mit Nextcloud verbinden, konfigurieren und Textdokumente, Tabellenkalkulationen, Präsentationen und Formulare in Nextcloud bearbeiten und gemeinsam nutzen können.",
+
+  "CardDataTitle13": "Arbeit mit Formularen",
+  "CardDataDescription13": "Erfahren Sie, wie Sie ausfüllbare Formulare erstellen, verschiedene Formularfelder hinzufügen und Feldeigenschaften ändern, Formulare mit anderen Benutzern teilen, ausfüllen und als DOCX- oder PDF-Dateien speichern.",
+
+  "CardDataTitle12": "Formulare",
+  "CardDataDescription12": "Erfahren Sie, wie Sie ausfüllbare Formulare erstellen, verschiedene Formularfelder hinzufügen und Feldeigenschaften ändern, Formulare mit anderen Benutzern teilen, ausfüllen und als DOCX- oder PDF-Dateien speichern.",
+
+  "CardDataTitle11": "Benutzerdefiniertes Paket",
+  "CardDataDescription11": "Erstellen Sie Ihr eigenes Schulungspaket mit allen Kursen, die Sie wirklich brauchen. Wenden Sie sich an uns, um alle Details zu besprechen.",
+
+  "CardDataTitle10": "VIP-Paket",
+  "CardDataDescription10": "Im VIP-Paket sind alle ONLYOFFICE-Schulungen inbegriffen: Dokumentenbearbeitung, Projekte, CRM, E-Mail und Kalender, Kommunikationstools, Benutzer- und Portalverwaltung.",
+
+  "CardDataTitle9": "Portalverwaltung",
+  "CardDataDescription9": "Lernen Sie ONLYOFFICE verwalten und Portaleinstellungen konfigurieren, darunter Sprache und Zeitzone, DNS, Farbthemen, Zwei-Faktor-Authentifizierung, Backups, Integration mit Diensten von Drittanbietern usw.",
+
+  "CardDataTitle8": "Teamarbeit",
+  "CardDataDescription8": "Lernen Sie Produktivität Ihres Teams mit Projekten in ONLYOFFICE steigern. Machen Sie sich mit Aufgaben, Unteraufgaben, Meilensteinen, Gantt-Diagrammen, Zeitverfolgung und anderen Funktionen vertraut. Erfahren Sie, wie <0>man Benutzer, Gäste und Administratoren hinzufügen und verwalten kann. Entdecken Sie auch Kommunikationstools in ONLYOFFICE, darunter Chat, Blogs, Foren, Nachrichten, Umfragen, Wiki usw.</0>",
+
+  "CardDataTitle7": "Arbeit mit Kunden",
+  "CardDataDescription7": "Lernen Sie Geschäftsprozesse mit CRM, E-Mail und Kalender in ONLYOFFICE verwalten, genauso wie Verkäufe verfolgen und Kommunikation mit Kunden vereinfachen. Sie erfahren, wie man Kundendatenbank organisiert, Web-to-Lead-Formulare <0>und Berichte erstellt, Korrespondenz in Unternehmenspostfächern verwaltet, Veranstaltungen plant und Einladungen sendet.</0>",
+
+  "CardDataTitle6": "Office-Suite",
+  "CardDataDescription6": "Effektive Dateiverwaltung und das Organisieren von Dokumentenarbeit nach Ihren Anforderungen. Lernen Sie Textdokumente, Tabellenkalkulationen und Präsentationen auf einem ONLYOFFICE-Portal oder in integrierten Lösungen <0>erstellen und gemeinsam bearbeiten.</0>",
+
+  "CardDataTitle5": "Personen, Chat, Community",
+  "CardDataDescription5": "Erfahren Sie, wie man Benutzer, Gäste und Administratoren auf dem Portal hinzufügen und verwalten kann. Entdecken Sie auch Tools für Kommunikation in Echtzeit, darunter Messengerdienst, Blogs, Foren, Nachrichten, Umfragen, Wiki usw.",
+
+  "CardDataTitle4": "E-Mail Und Kalender",
+  "CardDataDescription4": "Erfahren Sie, wie Sie Korrespondenz in ONLYOFFICE verwalten, Unternehmenspostfächer erstellen, Posteingang strukturieren und E-Mail-Signaturen hinzufügen können. Erlernen Sie Kalender in ONLYOFFICE, um Zeitpläne zu erstellen, <0>Gruppenbesprechungen zu planen, Aufgaben hinzuzufügen und Ihren Kalender mit Anwendungen von Drittanbietern zu synchronisieren.</0>",
+
+  "CardDataTitle3": "CRM",
+  "CardDataDescription3": "Lernen Sie CRM in ONLYOFFICE benutzen, um Ihre Kundendatenbank zu organisieren, Verkäufe zu verfolgen, Web-to-Lead-Formulare, Verkaufschancen, Rechnungen und Berichte zu erstellen.",
+
+  "CardDataTitle2": "Projekte",
+  "CardDataDescription2": "Lernen Sie Produktivität Ihres Teams mit Projekten in ONLYOFFICE steigern. Machen Sie sich mit Aufgaben, Unteraufgaben, Meilensteinen, Gantt-Diagrammen, Zeitverfolgung und anderen Funktionen vertraut.",
+
+  "CardDataTitle1": "Dokumente",
+  "CardDataDescription1": "Effektive Dateiverwaltung und Organisieren der Dokumentenarbeit nach Ihren Anforderungen. Lernen Sie Textdokumente, Tabellenkalkulationen und Präsentationen auf einem ONLYOFFICE-Portal oder in integrierten Lösungen erstellen <0>und gemeinsam bearbeiten.</0>"
+}
