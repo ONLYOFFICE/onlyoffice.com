@@ -1,3 +1,4 @@
+import { IDownloadButton } from "@src/components/ui/DownloadButton";
 import { IContentImage } from "../../widgets/ContentImage";
 
 export interface IHomeUseFeatureImageItem extends IContentImage {
@@ -14,13 +15,7 @@ export interface IHomeUseFeatureImageItem extends IContentImage {
   /** The buttons. */
   buttons?: { href: string; label: string; className?: string }[];
   /** The download buttons. */
-  downloadButtons?: {
-    href: string;
-    label: string;
-    platform: "google-play" | "app-store" | "windows" | "linux" | "macos" | "snap-store";
-    variant: "secondary" | "primary";
-    imageSrc: string;
-  }[];
+  downloadButtons?: IDownloadButton[];
   /** The alignment. */
   alignItems?: string;
   /** The display tablet S. */

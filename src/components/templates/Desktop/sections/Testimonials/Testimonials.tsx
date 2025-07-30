@@ -30,7 +30,8 @@ const shuffleArray = (array: typeof testimonials) => {
 
 const Testimonials = () => {
   const { t } = useTranslation("desktop");
-  const [shuffledTestimonials, setShuffledTestimonials] = useState(testimonials);
+  const [shuffledTestimonials, setShuffledTestimonials] =
+    useState(testimonials);
 
   useEffect(() => {
     setShuffledTestimonials(shuffleArray(testimonials));
@@ -62,7 +63,10 @@ const Testimonials = () => {
                 <Trans
                   t={t}
                   i18nKey={item.text}
-                  components={[<Text as="p" key={0} />, <Text as="span" key={1} />]}
+                  components={[
+                    <Text as="p" key={0} />,
+                    <Text as="span" key={1} />,
+                  ]}
                 />
               </Comment>
             </Card>
