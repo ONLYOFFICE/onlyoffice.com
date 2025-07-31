@@ -10,7 +10,7 @@ import {
   StyledHeroWrapper,
 } from "./Hero.styled";
 import { Text } from "@src/components/ui/Text";
-import { hero } from "./data";
+import { hero } from "./data/items";
 
 const Hero = () => {
   const { t } = useTranslation("projects-for-android");

@@ -6,7 +6,7 @@ import {
     StyledFeaturesWrapper,
     StyledFeatureImageItem,
  } from "./Features.styled";
-import { items } from "./data";
+import { items } from "./data/items";
 
 const Features = () => {
     const { t } = useTranslation("projects-for-android");

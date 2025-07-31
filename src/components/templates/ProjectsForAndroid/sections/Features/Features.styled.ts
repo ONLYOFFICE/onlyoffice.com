@@ -1,4 +1,3 @@
-import { Heading } from "@src/components/ui/Heading";
 import { 
     StyledContentImageContent, 
     StyledContentImageImg, 

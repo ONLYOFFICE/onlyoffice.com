@@ -10,7 +10,7 @@ import {
     StyledHeading, 
     StyledText
 } from "./Benefits.styled";
-import { items } from "./data";
+import { items } from "./data/items";
 
 const Benefits = () => {
     const { t } = useTranslation("projects-for-android");

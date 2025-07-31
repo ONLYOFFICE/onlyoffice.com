@@ -9,7 +9,7 @@ import {
     WrapperLeftBlock, 
     WrapperRightBlock
 } from "./HowToStart.styled";
-import { items } from "./data";
+import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 
 const HowToStart = () => {

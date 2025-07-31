@@ -1,10 +1,9 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
-import { IHero } from "./Hero.types";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
