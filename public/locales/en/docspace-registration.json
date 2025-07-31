@@ -41,5 +41,17 @@
   "Or": "or",
   "CreateNewAccount": "Create new account",
   "TheRequestCouldNotBeSent": "The request could not be sent. Please try again later.",
-  "PleaseWait": "Please wait..."
+  "PleaseWait": "Please wait...",
+  "ShowAll": "Show all",
+  "ShowLess": "Show less",
+  "RestorePassword": "Restore password",
+  "PleaseEnterYourRegistrationEmailAddress": "Please enter your registration email address to send sign in details to.",
+  "BackToLogIn": "Back to Log in",
+  "IncorrectEmailOrPassword": "Incorrect email or password",
+  "YourEmail": "Your email:",
+  "IfAUserWithThisEmailExists": "If a user with this email exists, the password change instruction has been sent to this email address.",
+  "NoThirdPartyAccountFound": "No third party account found",
+  "YourConfirmationLinkForOODocSpace": "Your confirmation link for ONLYOFFICE DocSpace",
+  "YourLoginLinkToOODocSpace": "Your login link to ONLYOFFICE DocSpace",
+  "OOPasswordReminder": "ONLYOFFICE Password Reminder"
 }

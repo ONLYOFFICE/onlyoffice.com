@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { useTranslation, Trans } from "next-i18next";
+import { useRouter } from "next/router";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import {
   StyledSignUpWrapper,
@@ -14,6 +15,9 @@ import {
   StyledSignUpCaption,
 } from "./SignUp.styled";
 import { ISignUp } from "./SignUp.types";
+import { ISelectOption } from "@src/components/ui/Select/Select.types";
+import { useRewardful } from "@src/utils/useRewardful";
+import { validateEmail } from "@src/utils/validators";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
@@ -21,20 +25,32 @@ import { Checkbox } from "@src/components/ui/Checkbox";
 import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
-import { validateEmail } from "@src/utils/validators";
+import { Select } from "@src/components/ui/Select";
+import { awsRegions } from "../../../config/regions";
 
-declare global {
-  interface Window {
-    SignInByGoogle: (data: string) => void;
-  }
-}
+const currentRegions =
+  process.env.NEXT_PUBLIC_TESTING_ON === "true"
+    ? awsRegions.testRegions
+    : awsRegions.productionRegions;
+const options = currentRegions.map((region) => ({
+  key: region.key,
+  label: region.info,
+  value: region.apiKey,
+}));
 
-const SignUp = ({ setEmail }: ISignUp) => {
+const SignUp = ({
+  setEmail,
+  setStatus,
+  setExistTenants,
+  setCreateNewAccountQuery,
+}: ISignUp) => {
   const { t } = useTranslation("docspace-registration");
+  const router = useRouter();
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const modalDialog = useRef<Window | null>(null);
   const intervalId = useRef<NodeJS.Timeout | null>(null);
 
+  const [affiliateId, setAffiliateId] = useState("");
   const [formData, setFormData] = useState({
     email: "",
     spam: false,
@@ -45,9 +61,20 @@ const SignUp = ({ setEmail }: ISignUp) => {
   const [isFormValid, setIsFormValid] = useState(false);
   const [isFormLoading, setisFormLoading] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
+  const [selected, setSelected] = useState<ISelectOption[]>([]);
 
   const emailIsValid =
     formData.email.trim().length > 0 && validateEmail(formData.email);
+
+  const { getClientReferenceId } = useRewardful({
+    onReady: () => {
+      const id = getClientReferenceId();
+
+      if (id && id !== affiliateId) {
+        setAffiliateId(id);
+      }
+    },
+  });
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -98,19 +125,29 @@ const SignUp = ({ setEmail }: ISignUp) => {
       return;
     }
 
-    const response = await fetch("/api/thirdparty/register", {
+    const res = await fetch("/api/thirdparty/sendemail", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email: formData.email }),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        desktop: router.query.desktop || "",
+        email: formData.email,
+        spam: formData.spam ? "true" : "false",
+        language: router.locale === "en" ? "" : router.locale,
+        awsRegion: selected[0].value,
+        partnerId: router.query.pid || "",
+        affiliateId: affiliateId || "",
+        emailSubject: {
+          register: t("YourConfirmationLinkForOODocSpace"),
+          login: t("YourLoginLinkToOODocSpace"),
+        },
+      }),
     });
 
-    const data = await response.json();
-    console.log(data);
+    const data = await res.json();
 
     if (data.status === "success") {
       setEmail(formData.email);
+      setStatus("checkEmail");
     } else {
       setIsFormError(true);
     }
@@ -151,15 +188,53 @@ const SignUp = ({ setEmail }: ISignUp) => {
   };
 
   useEffect(() => {
-    window.SignInByGoogle = (data) => {
+    window.SignInByGoogle = async (data) => {
       try {
-        console.log("Callback received:", JSON.stringify(data));
-      } catch (error: unknown) {
-        if (error instanceof Error) {
-          console.error("Unexpected error:", error.message);
+        const findBySocialRes = await fetch("/api/thirdparty/findbysocial", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            transport: data,
+          }),
+        });
+        const findBySocialData = await findBySocialRes.json();
+
+        const findByEmailRes = await fetch("/api/thirdparty/findbyemail", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            email: findBySocialData.data.email,
+          }),
+        });
+        const findByEmailData = await findByEmailRes.json();
+
+        if (findByEmailData.data?.length > 0) {
+          const generateKeyRes = await fetch("/api/thirdparty/generate", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              email: findBySocialData.data.email,
+            }),
+          });
+          const generateKeyData = await generateKeyRes.json();
+          setCreateNewAccountQuery(
+            `epkey=${generateKeyData.data.emailKey}&eskey=${generateKeyData.data.linkKey}&transport=${data}&awsRegion=${selected[0].value}`,
+          );
+          setExistTenants(findByEmailData.data);
         } else {
-          console.error("Unexpected error:", error);
+          const registerRes = await fetch("/api/thirdparty/register", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ thirdPartyProfile: data }),
+          });
+          const registerData = await registerRes.json();
+          window.location.href = registerData.data.reference;
         }
+      } catch (err) {
+        console.error(
+          "Unexpected error:",
+          err instanceof Error ? err.message : err,
+        );
       }
     };
 
@@ -168,6 +243,23 @@ const SignUp = ({ setEmail }: ISignUp) => {
         clearInterval(intervalId.current);
       }
     };
+  }, [selected, setCreateNewAccountQuery, setExistTenants]);
+
+  useEffect(() => {
+    const IPGeolocation = async () => {
+      const ipGeolocationRes = await fetch("/api/ip-geolocation");
+      const ipGeolocationInfo = await ipGeolocationRes.json();
+      setSelected(
+        ipGeolocationInfo?.regionDbEntity?.regionDbKey
+          ? options.filter(
+              (opt) =>
+                opt.key === ipGeolocationInfo?.regionDbEntity?.regionDbKey,
+            )
+          : [options[0]],
+      );
+    };
+
+    IPGeolocation();
   }, []);
 
   return (
@@ -175,7 +267,7 @@ const SignUp = ({ setEmail }: ISignUp) => {
       <StyledSignUpAccount>
         <Text size={2} label={t("AlreadyHaveAnAccount")} />
         <StyledSignUpAccountLink
-          href="/docspace-registration#login"
+          href={`/docspace-registration${router.query.desktop === "true" ? "?desktop=true" : ""}#login`}
           color="main"
           textUnderline
           hover="underline-none"
@@ -199,8 +291,19 @@ const SignUp = ({ setEmail }: ISignUp) => {
           />
         </StyledSignUpHeader>
 
+        {process.env.NEXT_PUBLIC_TESTING_ON === "true" &&
+          selected.length > 0 && (
+            <Select
+              selected={selected}
+              setSelected={setSelected}
+              label="awsRegion"
+              options={options}
+            />
+          )}
+
         <StyledSignUpGoogleButton
           onClick={handleGoogleSignIn}
+          data-testid="sign-up-google-button"
           variant="tertiary"
           size="small"
           fullWidth
@@ -220,6 +323,7 @@ const SignUp = ({ setEmail }: ISignUp) => {
               }));
               checkFormValid();
             }}
+            data-testid="sign-up-email-input"
             value={formData.email}
             label={t("EmailAddress")}
             placeholder="name@domain.com"
@@ -243,6 +347,7 @@ const SignUp = ({ setEmail }: ISignUp) => {
           />
 
           <Checkbox
+            data-testid="sign-up-spam-checkbox"
             checked={formData.spam}
             onChange={() =>
               setFormData((prev) => ({
@@ -288,6 +393,7 @@ const SignUp = ({ setEmail }: ISignUp) => {
 
             <Button
               onClick={handleHCaptchaExecute}
+              data-testid="sign-up-button"
               fullWidth
               disabled={!isFormValid}
               label={t("ContinueWithEmail")}

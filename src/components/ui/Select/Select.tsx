@@ -157,6 +157,7 @@ const Select = ({
               $isSelected={isSelected(option) ? true : false}
               $withSelectedIcon={withSelectedIcon}
               key={option.value}
+              type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 toggleOption(option);
