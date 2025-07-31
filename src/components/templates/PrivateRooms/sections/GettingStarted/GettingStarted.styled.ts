@@ -2,7 +2,6 @@ import { Button } from "@src/components/ui/Button";
 import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
-import { QuoteModal } from "@src/components/widgets/pricing/QuoteModal";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 

@@ -2,7 +2,7 @@ import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
 interface IFeatureImageItemExtended extends IFeatureImageItem {
   textLinks?: { href: string; isExternal?: boolean }[];
-  text: String[];
+  text: string[];
 }
 
 export const items: IFeatureImageItemExtended[] = [

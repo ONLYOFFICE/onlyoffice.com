@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { StyledContentImage, StyledContentImageImg, StyledContentImageImgWrapper } from "@src/components/widgets/ContentImage/ContentImage.styled";
+import { StyledContentImage, StyledContentImageImgWrapper } from "@src/components/widgets/ContentImage/ContentImage.styled";
 
 const StyledHowItWorksHeading = styled(Heading)`
   font-size: 32px;

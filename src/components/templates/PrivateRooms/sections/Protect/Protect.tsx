@@ -19,10 +19,9 @@ const Protect = () => {
                     />
                     <StyledButton
                     as="a"
-                    children={t("TryNow")}
                     variant="quaternary"
                     href="/download-desktop.aspx"
-                    />
+                    >{t("TryNow")}</StyledButton>
                 </ProtectBlock>
             </Container>
         </StyledSection>

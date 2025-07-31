@@ -1,1 +1,1 @@
-import { PrivateRoomsTemplate } from "./PrivateRooms";
+export { PrivateRoomsTemplate } from "./PrivateRooms";

@@ -57,9 +57,8 @@ const HowItWorks = () => {
               text={
                 <>
                   {text.map((textKey, idx) => (
-                    <StyledFeatureImageItemText>
+                    <StyledFeatureImageItemText key={idx}>
                       <Trans
-                      key={idx}
                       t={t}
                       i18nKey={String(textKey)}
                       components={textLinks?.map((link, index) => (

@@ -116,9 +116,8 @@ const GettingStarted = () => {
                 <StyledGettingStartedWrapper>
                     <StyledGettingStartedWrapperLeft>
                             {items.text.map((item, idx) => (
-                                <StyledWrapperLeftText>
+                                <StyledWrapperLeftText key={idx}>
                                 <Trans
-                                    key={idx}
                                     t={t}
                                     i18nKey={item.heading}
                                     components={item.textLinks?.map((link, index) => (
