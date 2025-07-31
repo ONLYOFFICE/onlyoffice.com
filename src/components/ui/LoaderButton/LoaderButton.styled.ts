@@ -11,7 +11,9 @@ const StyledLoaderButton = styled.button<{
   $fullWidth: ILoaderButton["fullWidth"];
   $status: ILoaderButton["status"];
   $size: ILoaderButton["size"];
+  $hasContent: boolean;
 }>`
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -25,6 +27,16 @@ const StyledLoaderButton = styled.button<{
   text-transform: uppercase;
   transition: background-color 0.2s;
   cursor: pointer;
+
+  ${(props) =>
+    !props.$hasContent &&
+    props.$status === "default" &&
+    css`
+      background-image: url("/images/icons/arrow-right-white.svg");
+      background-repeat: no-repeat;
+      background-size: 24px;
+      background-position: center;
+    `}
 
   ${(props) =>
     props.$size === "small" &&
@@ -51,11 +63,6 @@ const StyledLoaderButton = styled.button<{
       &:hover,
       &:active {
         background-color: #ff865c;
-      }
-
-      &:disabled {
-        background-color: #ffd4c5;
-        cursor: initial;
       }
     `}
 
@@ -102,6 +109,11 @@ const StyledLoaderButton = styled.button<{
       background-size: 24px 24px;
       background-position: center;
     `}
+
+  &:disabled {
+    background-color: #ffd4c5;
+    cursor: initial;
+  }
 `;
 
 export { StyledLoaderButton };
