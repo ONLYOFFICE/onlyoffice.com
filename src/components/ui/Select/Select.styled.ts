@@ -165,7 +165,7 @@ const StyledSelectOptions = styled.div`
   background-color: #ffffff;
   overflow: hidden;
   overflow-y: auto;
-  z-index: 2;
+  z-index: 3;
 
   @media ${device.mobile} {
     top: 52px;

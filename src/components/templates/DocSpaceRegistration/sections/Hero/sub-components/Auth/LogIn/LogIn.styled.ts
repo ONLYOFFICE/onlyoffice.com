@@ -102,12 +102,12 @@ const StyledLogInForm = styled.div`
 
 const StyledLogInInputWrapper = styled.div`
   display: grid;
-  justify-items: start;
   row-gap: 12px;
   width: 100%;
 `;
 
 const StyledLogInForgotPasswordButton = styled.button`
+  justify-self: start;
   border: none;
   padding: 0;
   font-size: 16px;
@@ -119,6 +119,10 @@ const StyledLogInForgotPasswordButton = styled.button`
 
   &:hover {
     text-decoration: none;
+  }
+
+  @media ${device.mobile} {
+    justify-self: initial;
   }
 `;
 

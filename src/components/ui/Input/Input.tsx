@@ -35,6 +35,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
       onFocus,
       onBlur,
       onKeyDown,
+      ...rest
     },
     ref,
   ) => {
@@ -111,6 +112,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
               onFocus={handleFocus}
               onBlur={handleBlur}
               onKeyDown={onKeyDown}
+              {...rest}
             />
           </StyledInputBody>
 
