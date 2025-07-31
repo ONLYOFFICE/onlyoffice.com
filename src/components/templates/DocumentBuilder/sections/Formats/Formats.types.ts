@@ -1,18 +1,16 @@
 export interface IApiIcon {
+  row: IApiIconRow[];
+}
+
+export interface IApiIconRow {
   label: string;
   iconPosX: number;
-  width: number;
-  paddingLeft: number;
-  leftIcon?: number;
-  widthDesktop?: number;
-  leftIconDesktop?: number;
-  widthTablet?: number;
-  paddingLeftTablet?: number;
-  leftIconTablet?: number;
-  iconPosXTablet?: number;
-  paddingLeftMobile?: number;
-  iconPosXMobile?: number;
-  leftIconMobile?: number;
+  width?: string;
+  widthMobile?: string;
+  widthTablet?: string;
+  minWidth?: string;
+  minWidthTablet?: string;
+  minWidthMobile?: string;
 }
 
 export interface IFormats {
@@ -31,4 +29,11 @@ export interface IItemsTab {
     href: string;
     apiIcons: IApiIcon[];
     apiLinks: boolean;
+}
+
+export interface ICodeBlockProps {
+  code: string;
+  docHref: string;
+  docLabel: string;
+  language?: string;
 }

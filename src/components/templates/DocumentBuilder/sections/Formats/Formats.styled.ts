@@ -3,7 +3,8 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 import { Link } from "@src/components/ui/Link";
-import { IApiIcon } from "./Formats.types";
+import { IApiIconRow } from "./Formats.types";
+import "prismjs/themes/prism.css";
 
 const StyledFormatsHeading = styled(Heading)`
     text-align: center;
@@ -98,7 +99,7 @@ const StyledFormatsTab = styled.button<{
         transition: border-color .2s;
     }
 
-    @media ${device.tablet} {
+    @media ${device.tabletS} {
         font-size: 12px;
     }
 
@@ -144,6 +145,23 @@ const CodeBlock = styled.div`
 
     @media ${device.tablet} {
         width: 100%;
+    }
+
+    pre[class*="language-"] {
+        background: #fff;
+        margin: 0;
+        padding: 0.5em;
+        &.line-numbers {
+            font-size: 14px;
+            padding-left: 3em;
+        }
+    }
+
+    @media ${device.mobile} {
+        pre[class*="language-"].line-numbers {
+            font-size: 11px;
+            padding-left: 2.8em;
+        }
     }
 `;
 
@@ -309,311 +327,83 @@ const StyledWrapperRightLinks = styled(Link)`
     }
 `;
 
-const StyledBlockIconsWrapper = styled.div`
-    margin: 64px auto 24px;
-    padding: 0 24px;
+const StyledBlockIconsWrapperSec = styled.div`
+        margin: 112px auto 24px;
+        padding: 0 24px;
+
+        @media ${device.desktop} {
+            margin: 64px auto 24px;
+            padding: 0;
+        }
+    `;
+
+const StyledBlockIconsWrapperRow = styled.div`
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 16px;
+    margin: 16px 0;
 
-    @media ${device.desktop} {
-        margin: 64px auto 24px;
-        padding: 0;
+    @media ${device.tablet} {
+        flex-wrap: wrap;
     }
 `;
 
-const StyledBlockIconsWrapperBlock = styled(Text)<Omit<IApiIcon, "label">>`
-    background-color: #fff;
+const StyledBlockIconsWrapperBlockSec = styled.div<Omit<IApiIconRow, "label" | "iconPosX">>`
+    background: #FFFFFF;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 21.5px 16px 21.5px ${({paddingLeft}) => paddingLeft}px;
-    border-radius: 5px;
-    position: relative;
-    width: ${({width}) => width}px;
-
-    &::before {
-        background-image: url("/images/templates/document-builder/formats/api-features-icons.svg");
-        background-repeat: no-repeat;
-        background-position-x: ${({iconPosX}) => iconPosX}px;
-        content: "";
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: ${({ leftIcon }) => `calc(50% - ${leftIcon}px)`};
-        transform: translateY(-50%);
-        height: 32px;
-        width: 32px;
-    }
-
-    @media ${device.desktop} {
-        max-height: 74px;
-        width: ${({widthDesktop}) => widthDesktop ? widthDesktop : 15}%;
-        
-        &::before {
-            left: ${({ leftIconDesktop, leftIcon }) => leftIconDesktop ? `calc(50% - ${leftIconDesktop}px)` : `calc(50% - ${leftIcon}px)`};
-        }
-    }
-
-    @media ${device.tablet} {
-        width: calc(33% - 10px);
-        &::before {
-            left: ${({ leftIconTablet }) => `calc(50% - ${leftIconTablet}px)`};
-        }
-    }
-
-    @media ${device.mobile} {
-        &:nth-child(n){
-            font-size: 13px;
-            text-align: center;
-            padding: 56px 16px 16px 16px;
-            min-height: 91.5px;
-            max-height: 130px;
-            width: calc(50% - 8px);
-            
-            &::before {
-                top: 16px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-
-    }
-
-    /* &:nth-child(2)::before {
-        background-position-x: -48px;
-        left: calc(50% - 46px);
-    }
-
-    &:nth-child(3)::before {
-        background-position-x: -96px;
-        left: calc(50% - 44px);
-    }
-
-    &:nth-child(4)::before {
-        background-position-x: -144px;
-        left: calc(50% - 36px);
-    }
-
-    &:nth-child(5)::before {
-        background-position-x: -192px;
-        left: calc(50% - 52px);
-    }
-
-    &:nth-child(6)::before {
-        background-position-x: -240px;
-        left: calc(50% - 50px);
-    }
-
-    &:nth-child(7){
-        width: 138px;
-        &::before {
-            background-position-x: -287px;
-            left: calc(50% - 41px);
-        }
-    }
-
-    &:nth-child(8){
-        width: 156px;
-        &::before {
-            background-position-x: -336px;
-            left: calc(50% - 62px);
-        }
-    }
-
-    &:nth-child(9){
-        width: 184px;
-        &::before {
-            background-position-x: -385px;
-            left: calc(50% - 75px);
-        }
-    }
-
-    &:nth-child(10){
-        width: 171px;
-        &::before {
-            background-position-x: -432px;
-            left: calc(50% - 66px);
-        }
-    }
-
-    &:nth-child(8), &:nth-child(9), &:nth-child(10) {
-        padding-left: 54px;
-    }
-    
-    &:nth-child(11){
-        padding-left: 59px;
-        width: 139px;
-        &::before {
-            background-position-x: -480px;
-            left: calc(50% - 46px);
-        }
-    }
-
-    &:nth-child(12){
-        padding-left: 53px;
-        width: 198px;
-        &::before {
-            background-position-x: -528px;
-            left: calc(50% - 82px);
-        }
-    }
-
-    &:nth-child(13){
-        padding-left: 48px;
-        width: 192.5px;
-        &::before {
-            background-position-x: -576px;
-            left: calc(50% - 82px);
-        }
-    }
-
-    &:nth-child(14){
-        padding-left: 48px;
-        &::before {
-            background-position-x: -624px;
-            left: calc(50% - 44px);
-        }
-    }
-
-    &:nth-child(15){
-        &::before {
-            background-position-x: -672px;
-            left: calc(50% - 59px);
-        }
-    }
-
-    &:nth-child(16){
-        &::before {
-            background-position-x: -720px;
-            left: calc(50% - 37px);
-        }
-    }
-
-    &:nth-child(17){
-        &::before {
-            background-position-x: -768px;
-            left: calc(50% - 58px);
-        }
-    }
-
-    &:nth-child(18){
-        padding-left: 48px;
-        &::before {
-            background-position-x: -816px;
-            left: calc(50% - 62px);
-        }
-    }
-
-    &:nth-child(14), &:nth-child(15), &:nth-child(16), &:nth-child(17), &:nth-child(18) {
-        width: 159.2px;
-    }
-
-    
-    @media ${device.desktop} {
-        max-height: 74px;
-        width: 15%;
-
-        &:nth-child(7) {
-            width: 12.7%;
-        }
-        
-        &:nth-child(8) {
-            width: 14.6%;
-            &::before {
-                left: calc(50% - 53px);
-            }
-        }
-        
-        &:nth-child(9) {
-            width: 17.1%;
-            &::before {
-                left: calc(50% - 65px);
-            }
-        }
-        
-        &:nth-child(10) {
-            width: 15.9%;
-            &::before {
-                left: calc(50% - 61px);
-            }
-        }
-        
-        &:nth-child(11) {
-            width: 12.7%;
-        }
-        
-        &:nth-child(12) {
-            width: 18.3%;
-            &::before {
-                left: calc(50% - 72px);
-            }
-        }
-
-        &:nth-child(14) {
-            width: 12.2%;
-        }
-
-        &:nth-child(15) {
-            width: 15.3%;
-            padding-left: 53px;
-        }
-
-        &:nth-child(16) {
-            width: 12.2%;
-            &::before {
-                left: calc(50% - 33px);
-            }
-        }
-
-        &:nth-child(17) {
-            width: 15.5%;
-        }
-
-        &:nth-child(18) {
-            width: 15.3%;
-        }
-    }
+    padding: 16px;
+    width: ${({width}) => width};
+    min-width: ${({minWidth}) => minWidth};
 
     @media ${device.tablet} {
         &:nth-child(n) {
-            width: calc(33% - 10px);
-        }
-
-        &:nth-child(8)::before {
-            left: calc(50% - 62px);
-        }
-
-        &:nth-child(9)::before {
-            left: calc(50% - 76px);
-        }
-
-        &:nth-child(10)::before {
-            left: calc(50% - 70px);
-        }
-
-        &:nth-child(12)::before {
-            left: calc(50% - 82px);
+            width: ${({widthTablet}) => widthTablet};  
+            min-width: ${({minWidthTablet}) => minWidthTablet};
         }
     }
 
     @media ${device.mobile} {
-        &:nth-child(n){
-            font-size: 13px;
-            text-align: center;
-            padding: 56px 16px 16px 16px;
-            min-height: 91.5px;
-            width: calc(50% - 8px);
-
-            &::before {
-                top: 16px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
+        &:nth-child(n) {
+            width: ${({widthMobile}) => widthMobile};
         }
-    } */
-    `;
+    }
+`;
+
+const StyledBlockIconsWrapperBlockText = styled(Text)<Omit<IApiIconRow, "width">>`
+    align-items: center;
+    color: #333333;
+    cursor: default;
+    display: flex;
+    font-size: 14px;
+    line-height: 1.5em;
+    text-decoration: none;
+    position: relative;
+
+    &::before {
+        align-items: center;
+        display: flex;
+        flex-shrink: 0;
+        background-image: url("/images/templates/document-builder/formats/api-features-icons.svg");
+        background-position-x: ${({iconPosX}) => iconPosX}px;
+        content: '';
+        display: block;
+        height: 32px;
+        margin-right: 8px;
+        width: 32px;
+    }
+
+    @media ${device.mobile} {
+        font-size: 13px;
+        text-align: center;
+        display: block;
+
+        &::before {
+            margin: 0 auto 8px;
+        }
+    }
+`;
 
 export {
     StyledFormatsHeading,
@@ -631,6 +421,8 @@ export {
     StyledWrapperLeftBlock,
     StyledWrapperRightLinks,
     StyledWrapperRigthBlock,
-    StyledBlockIconsWrapper,
-    StyledBlockIconsWrapperBlock,
+    StyledBlockIconsWrapperSec,
+    StyledBlockIconsWrapperRow,
+    StyledBlockIconsWrapperBlockSec,
+    StyledBlockIconsWrapperBlockText
 }

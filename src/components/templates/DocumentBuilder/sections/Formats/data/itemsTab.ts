@@ -8,24 +8,36 @@ export const itemsTab: IItemsTab[] = [
         code: "docBuilder",
         href: "https://static-www.teamlab.info/v9.5.0/images/landing/document-builder/documents/sampletext.docx",
         apiIcons: [
-        { label: "Edit",            iconPosX: 0,    width: 165.3, paddingLeft: 59.5, leftIcon: 36, widthTablet: 200,                                          leftIconTablet: 36 },
-        { label: "Convert",         iconPosX: -48,  width: 165.3, paddingLeft: 59.5, leftIcon: 46, widthTablet: 200,                                          leftIconTablet: 46 },
-        { label: "Merge",           iconPosX: -96,  width: 165.3, paddingLeft: 59.5, leftIcon: 44, widthTablet: 200,                                          leftIconTablet: 44 },
-        { label: "Split",           iconPosX: -144, width: 165.3, paddingLeft: 59.5, leftIcon: 36, widthTablet: 200,                                          leftIconTablet: 36 },
-        { label: "Compress",        iconPosX: -192, width: 165.3, paddingLeft: 59.5, leftIcon: 52, widthTablet: 200,                                          leftIconTablet: 52 },
-        { label: "Compare",         iconPosX: -240, width: 165.3, paddingLeft: 59.5, leftIcon: 50, widthTablet: 200,                                          leftIconTablet: 50 },
-        { label: "Rotate",          iconPosX: -287, width: 138,   paddingLeft: 59.5, leftIcon: 41, widthDesktop: 12.7, leftIconDesktop: 33, widthTablet: 200, leftIconTablet: 36 },
-        { label: "DeletePages",     iconPosX: -336, width: 156,   paddingLeft: 54,   leftIcon: 62, widthDesktop: 14.6, leftIconDesktop: 51, widthTablet: 200, leftIconTablet: 62 },
-        { label: "GenerateReports", iconPosX: -385, width: 184,   paddingLeft: 54,   leftIcon: 75, widthDesktop: 17.1, leftIconDesktop: 64, widthTablet: 200, leftIconTablet: 76 },
-        { label: "CreateInvoices",  iconPosX: -432, width: 171,   paddingLeft: 54,   leftIcon: 66, widthDesktop: 15.9, leftIconDesktop: 60, widthTablet: 200, leftIconTablet: 70 },
-        { label: "Translate",       iconPosX: -480, width: 139,   paddingLeft: 59,   leftIcon: 46, widthDesktop: 12.7,                      widthTablet: 200, leftIconTablet: 46 },
-        { label: "RemoveComments",  iconPosX: -528, width: 198,   paddingLeft: 53,   leftIcon: 82, widthDesktop: 18.3, leftIconDesktop: 70, widthTablet: 200, leftIconTablet: 82 },
-        { label: "SearchAndReplace",iconPosX: -576, width: 192.5, paddingLeft: 48,   leftIcon: 82, widthDesktop: 20.5,                      widthTablet: 200, leftIconTablet: 82 },
-        { label: "Parser",          iconPosX: -624, width: 159.2, paddingLeft: 48,   leftIcon: 44, widthDesktop: 12.2,                      widthTablet: 200, leftIconTablet: 44 },
-        { label: "MailMerge",       iconPosX: -672, width: 159.2, paddingLeft: 48,   leftIcon: 59, widthDesktop: 15.3,                      widthTablet: 200, leftIconTablet: 59, paddingLeftMobile: 53 },
-        { label: "OCR",             iconPosX: -720, width: 159.2, paddingLeft: 48,   leftIcon: 37, widthDesktop: 12.2, leftIconDesktop: 37, widthTablet: 200, leftIconTablet: 37 },
-        { label: "Watermarks",      iconPosX: -768, width: 159.2, paddingLeft: 48,   leftIcon: 58, widthDesktop: 15.5,                      widthTablet: 200, leftIconTablet: 58 },
-        { label: "Annotation",      iconPosX: -816, width: 159.2, paddingLeft: 48,   leftIcon: 62, widthDesktop: 15.3,                      widthTablet: 200, leftIconTablet: 62 },
+            {
+                row: [
+                { label: "Edit",    width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",       iconPosX: 0,   },
+                { label: "Convert", width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",        iconPosX: -48, },
+                { label: "Merge",   width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",        iconPosX: -96, },
+                { label: "Split",   width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",        iconPosX: -144 },
+                { label: "Compress",width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",        iconPosX: -192 },
+                { label: "Compare", width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",        iconPosX: -240 },
+                ],
+            },
+            {
+                row: [
+                { label: "Rotate",          minWidth: "calc(14.41% - 14px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -287, },
+                { label: "DeletePages",     minWidth: "calc(14.41% - 14px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -336, },
+                { label: "GenerateReports", minWidth: "calc(14.41% - 14px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -385, },
+                { label: "CreateInvoices",  minWidth: "calc(14.41% - 14px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -432, },
+                { label: "Translate",       minWidth: "calc(14.41% - 14px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -480, },
+                { label: "RemoveComments",  minWidth: "calc(14.41% - 14px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -528, },
+                ],
+            },
+            {
+                row: [
+                { label: "SearchAndReplace", minWidth: "calc(16.35% - 18px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -576, },
+                { label: "Parser",           minWidth: "calc(16.35% - 18px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -624, },
+                { label: "MailMerge",        minWidth: "calc(16.35% - 18px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -672  },
+                { label: "OCR",              minWidth: "calc(16.35% - 18px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -720  },
+                { label: "Watermarks",       minWidth: "calc(16.35% - 18px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -768, },
+                { label: "Annotation",       minWidth: "calc(16.35% - 18px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -816, },
+                ],
+            }
         ],
         apiLinks: true
     },
@@ -36,21 +48,33 @@ export const itemsTab: IItemsTab[] = [
         code: "xlsxBuilder",
         href: "https://static-www.teamlab.info/v9.5.0/images/landing/document-builder/documents/samplespreadsheet.xlsx",
         apiIcons: [
-        { label: "Edit",            iconPosX: 0,    width: 165.3, paddingLeft: 59.5, leftIcon: 36,  widthDesktop: 15.2,                      widthTablet: 200, leftIconTablet: 36 },
-        { label: "Convert",         iconPosX: -48,  width: 165.3, paddingLeft: 59.5, leftIcon: 46,  widthDesktop: 15.2,                      widthTablet: 200, leftIconTablet: 46 },
-        { label: "xlxsToPdf",       iconPosX: -864, width: 165.3, paddingLeft: 59.5, leftIcon: 59,  widthDesktop: 15.2, leftIconDesktop: 55, widthTablet: 200, leftIconTablet: 57 },
-        { label: "xlxsToPng",       iconPosX: -912, width: 165.3, paddingLeft: 59.5, leftIcon: 59,  widthDesktop: 15.2, leftIconDesktop: 53, widthTablet: 200, leftIconTablet: 59 },
-        { label: "xlxsToHtml",      iconPosX: -960, width: 165.3, paddingLeft: 59.5, leftIcon: 64,  widthDesktop: 15.2, leftIconDesktop: 53, widthTablet: 200, leftIconTablet: 64 },
-        { label: "xlxsToCsv",       iconPosX: -1008,width: 165.3, paddingLeft: 59.5, leftIcon: 59,  widthDesktop: 15.2, leftIconDesktop: 53, widthTablet: 200, leftIconTablet: 57 },
-        { label: "Merge",           iconPosX: -96,  width: 201.6, paddingLeft: 59.5, leftIcon: 42,  widthDesktop: 18.6, leftIconDesktop: 43, widthTablet: 200, leftIconTablet: 41 },
-        { label: "Split",           iconPosX: -144, width: 201.6, paddingLeft: 59.5, leftIcon: 36,  widthDesktop: 18.6, leftIconDesktop: 36, widthTablet: 200, leftIconTablet: 36 },
-        { label: "Compress",        iconPosX: -192, width: 201.6, paddingLeft: 59.5, leftIcon: 52,  widthDesktop: 18.6, leftIconDesktop: 51, widthTablet: 200, leftIconTablet: 53 },
-        { label: "AssembleContent", iconPosX: -1200,width: 201.6, paddingLeft: 54,   leftIcon: 80,  widthDesktop: 18.6, leftIconDesktop: 72, widthTablet: 200, leftIconTablet: 80 },
-        { label: "SearchAndReplace",iconPosX: -576, width: 201.6, paddingLeft: 48,   leftIcon: 86,  widthDesktop: 18.6, leftIconDesktop: 76, widthTablet: 200, leftIconTablet: 84 },
-        { label: "RenderCharts",    iconPosX: -1057,width: 235.55,paddingLeft: 53,   leftIcon: 68,  widthDesktop: 21.8, leftIconDesktop: 67, widthTablet: 200, leftIconTablet: 69 },
-        { label: "ClearTheContents",iconPosX: -1153,width: 235.55,paddingLeft: 48,   leftIcon: 82,  widthDesktop: 21.8,                      widthTablet: 200, leftIconTablet: 82 },
-        { label: "ReverseAndRotate",iconPosX: -1102,width: 314.6, paddingLeft: 48,   leftIcon: 146, widthDesktop: 29.4, leftIconDesktop: 127,widthTablet: 200,leftIconTablet: 100 },
-        { label: "Parser",          iconPosX: -624, width: 235.55,paddingLeft: 48,   leftIcon: 44,  widthDesktop: 21.8,                      widthTablet: 200, leftIconTablet: 43, paddingLeftMobile: 53 },
+            {
+                row: [
+                { label: "Edit",        width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",       iconPosX: 0,   },
+                { label: "Convert",     width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",        iconPosX: -48, },
+                { label: "xlxsToPdf",   width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",        iconPosX: -864, },
+                { label: "xlxsToPng",   width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",        iconPosX: -912 },
+                { label: "xlxsToHtml",  width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",        iconPosX: -960 },
+                { label: "xlxsToCsv",   width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)",        iconPosX: -1008 },
+                ],
+            },
+            {
+                row: [
+                { label: "Merge",           width: "calc(20% - 12px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -96, },
+                { label: "Split",           width: "calc(20% - 12px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -144, },
+                { label: "Compress",        width: "calc(20% - 12px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -192, },
+                { label: "AssembleContent", width: "calc(20% - 12px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -1200, },
+                { label: "SearchAndReplace",width: "calc(20% - 12px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -576, },
+                ],
+            },
+            {
+                row: [
+                { label: "RenderCharts",        minWidth: "calc(23% - 13px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -1057, },
+                { label: "ClearTheContents",    minWidth: "calc(23% - 13px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -1153, },
+                { label: "ReverseAndRotate",    minWidth: "calc(23% - 13px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -1102, },
+                { label: "Parser",              minWidth: "calc(23% - 13px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -624, },
+                ],
+            }
         ],
         apiLinks: true
     },
@@ -61,15 +85,23 @@ export const itemsTab: IItemsTab[] = [
         code: "pptxBuilder",
         href: "https://static-www.teamlab.info/v9.5.0/images/landing/document-builder/documents/samplepresentation.pptx",
         apiIcons: [
-        { label: "Edit",            iconPosX: 0,    width: 201.6,   paddingLeft: 59.5, leftIcon: 36,  widthDesktop: 18.6,                      widthTablet: 200, leftIconTablet: 36 },
-        { label: "Convert",         iconPosX: -48,  width: 201.6,   paddingLeft: 59.5, leftIcon: 46,  widthDesktop: 18.6,                      widthTablet: 200, leftIconTablet: 46 },
-        { label: "Search",          iconPosX: -1345, width: 201.6,   paddingLeft: 48,   leftIcon: 42, widthDesktop: 18.6,                      widthTablet: 200, leftIconTablet: 82 },
-        { label: "Merge",           iconPosX: -96,  width: 201.6,   paddingLeft: 59.5, leftIcon: 42,  widthDesktop: 18.6, leftIconDesktop: 43, widthTablet: 200, leftIconTablet: 41 },
-        { label: "Split",           iconPosX: -144, width: 201.6,   paddingLeft: 59.5, leftIcon: 36,  widthDesktop: 18.6, leftIconDesktop: 36, widthTablet: 200, leftIconTablet: 36 },
-        { label: "SearchAndReplace",iconPosX: -576, width: 256,     paddingLeft: 48,   leftIcon: 86,  widthDesktop: 23.7, leftIconDesktop: 86, widthTablet: 200, leftIconTablet: 84 },
-        { label: "CreateCharts",    iconPosX: -1249,width: 256,     paddingLeft: 53,   leftIcon: 68,  widthDesktop: 23.7, leftIconDesktop: 67, widthTablet: 200, leftIconTablet: 69 },
-        { label: "CombineImages",   iconPosX: -1296, width: 256,     paddingLeft: 59.5, leftIcon: 75,  widthDesktop: 23.7, leftIconDesktop: 73, widthTablet: 200, leftIconTablet: 75 },
-        { label: "Parser",          iconPosX: -624, width: 256,     paddingLeft: 48,   leftIcon: 44,  widthDesktop: 23.7,                      widthTablet: 200, leftIconTablet: 43, paddingLeftMobile: 53 },
+            {
+                row: [
+                { label: "Edit",    width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: 0,   },
+                { label: "Convert", width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -48, },
+                { label: "Search",  width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -1345, },
+                { label: "Merge",   width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -96 },
+                { label: "Split",   width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -144 },
+                ],
+            },
+            {
+                row: [
+                { label: "SearchAndReplace", minWidth: "calc(25% - 12px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -576, },
+                { label: "CreateCharts",     minWidth: "calc(25% - 12px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -1249, },
+                { label: "CombineImages",    minWidth: "calc(25% - 12px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -1296, },
+                { label: "Parser",           minWidth: "calc(25% - 12px)", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -624, },
+                ],
+            },
         ],
         apiLinks: true
     },
@@ -89,10 +121,14 @@ export const itemsTab: IItemsTab[] = [
         code: "pdfBuilder",
         href: "https://static-www.teamlab.info/v9.5.0/images/landing/document-builder/documents/sampleformats.pdf",
         apiIcons: [
-        { label: "Merge",   iconPosX: -96,  width: 256, paddingLeft: 59.5, leftIcon: 44, widthDesktop: 23.7, widthTablet: 200,                                          leftIconTablet: 44 },
-        { label: "Rotate",  iconPosX: -287, width: 256, paddingLeft: 59.5, leftIcon: 41, widthDesktop: 23.7, leftIconDesktop: 33, widthTablet: 200, leftIconTablet: 36 },
-        { label: "Split",   iconPosX: -144, width: 256, paddingLeft: 59.5, leftIcon: 36, widthDesktop: 23.7, widthTablet: 200,                                          leftIconTablet: 36 },
-        { label: "Sign",    iconPosX: -1392, width: 256, paddingLeft: 59.5, leftIcon: 36, widthDesktop: 23.7, widthTablet: 200,                                          leftIconTablet: 36 },
+            {
+                row: [
+                { label: "Merge",   width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -96 },
+                { label: "Rotate",    width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -287,  },
+                { label: "Split", width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -144, },
+                { label: "Sign",  width: "100%", widthTablet: "calc(33% - 11px)", widthMobile: "calc(50% - 8px)", iconPosX: -1392, },
+                ],
+            },
         ],
         apiLinks: false
     },

@@ -120,7 +120,7 @@ const StyledButton = styled(Button)`
         display: block;
         margin: 0 auto;
         height: 48px;
-        width: 141px;
+        width: fit-content;
     }
 `;
 
