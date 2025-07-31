@@ -67,7 +67,13 @@ const OnlyOfficeEditor = ({
             documentType: config.documentType,
             token,
             document: config.document,
-            editorConfig: config.editorConfig,
+            editorConfig: {
+              ...config.editorConfig,
+              customization: {
+                pointerMode: "hand",
+                slidePlayerBackground: "#000000",
+              },
+            },
           }}
           onLoadComponentError={onLoadComponentError}
         />
