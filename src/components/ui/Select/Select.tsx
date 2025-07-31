@@ -29,6 +29,7 @@ const Select = ({
   maxWidth = "472px",
   withReset,
   withSelectedIcon,
+  borderRadius = "9px"
 }: ISelect) => {
   const { t } = useTranslation("Select");
   const selectRef = useRef<HTMLDivElement>(null);
@@ -104,6 +105,7 @@ const Select = ({
         $status={status}
         $labelVariant={labelVariant}
         disabled={disabled}
+        $borderRadius={borderRadius}
         type="button"
       >
         {label && (
@@ -138,7 +140,7 @@ const Select = ({
       {caption && <StyledSelectCaption>{caption}</StyledSelectCaption>}
 
       {isOpen && (
-        <StyledSelectOptions ref={optionsRef}>
+        <StyledSelectOptions ref={optionsRef} $borderRadius={borderRadius}>
           {withReset && (
             <StyledSelectOption
               onClick={(e) => {

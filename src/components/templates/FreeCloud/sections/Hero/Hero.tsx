@@ -15,6 +15,8 @@ import { validateFullName, validateEmail, validateWebsite } from "@src/utils/val
 import {
   StyledHeroForm,
   StyledHeroFormNameWrapper,
+  StyledHeroFormPortalText,
+  StyledHeroFormPortalWrapper,
   StyledHeroFormWrapper,
   StyledHeroHeading,
   StyledHeroStep,
@@ -238,21 +240,26 @@ const Hero = () => {
                 }
               required
             />
-            <Input
-              value={dataForm.portalName}
-              onChange={(event) => setDataForm({...dataForm, portalName: event.target.value})}
-              placeholder={t("PortalName")}
-              label={t("PortalName")}
-              onBlur={handleCheckStatusPortalName}
-              onFocus={() => setCheckStatus((prev) => ({ ...prev, portalName: "default" }))}
-              status={checkStatus.portalName}
-              caption={
-                dataForm.portalName.length === 0
-                  ? t("AccountNameIsEmpty")
-                  : undefined
-                }
-              required
-            />
+            <StyledHeroFormPortalWrapper>
+              <Input
+                value={dataForm.portalName}
+                onChange={(event) => setDataForm({...dataForm, portalName: event.target.value})}
+                placeholder={t("PortalName")}
+                label={t("PortalName")}
+                onBlur={handleCheckStatusPortalName}
+                onFocus={() => setCheckStatus((prev) => ({ ...prev, portalName: "default" }))}
+                status={checkStatus.portalName}
+                caption={
+                  dataForm.portalName.length === 0
+                    ? t("AccountNameIsEmpty")
+                    : undefined
+                  }
+                required
+              />
+              <StyledHeroFormPortalText as={"span"}>
+                .onlyoffice.(co/eu/sg/com/com2)
+              </StyledHeroFormPortalText>
+            </StyledHeroFormPortalWrapper>
             <Select
               selected={selectedOption}
               setSelected={setSelectedOption}
@@ -261,6 +268,7 @@ const Hero = () => {
               status={selectedOption.length === 0 ? "default" : "success"}
               required
               maxWidth="100%"
+              borderRadius="3px"
             />
             <Input
               value={dataForm.yourWebsiteURL}

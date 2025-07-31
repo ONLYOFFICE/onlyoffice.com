@@ -6,6 +6,12 @@ interface ICheckStatus {
   yourWebsiteURL: "default" | "success" | "error";
 };
 
+interface IFaqItems {
+  label: string;
+  content: string;
+}
+
 export type {
-  ICheckStatus
+  ICheckStatus,
+  IFaqItems
 }

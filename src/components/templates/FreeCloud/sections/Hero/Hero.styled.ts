@@ -1,18 +1,27 @@
+import styled from "styled-components";
+import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import styled from "styled-components";
 
 const StyledHeroHeading = styled(Heading)`
   margin-bottom: 56px;
 `;
 
 const StyledHeroFormWrapper = styled.div`
-  width: 736px;
+  max-width: 736px;
   padding: 56px 96px 88px;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0px 7px 25px rgba(85, 85, 85, 0.15);
   text-align: center;
+
+  @media ${device.tabletS} {
+    padding: 56px 32px 32px;
+  }
+
+  @media ${device.mobile} {
+    padding: 48px 12px 40px;
+  }
 `;
 
 const StyledHeroStep = styled(Heading)`
@@ -46,11 +55,43 @@ const StyledHeroForm = styled.form`
   flex-direction: column;
   row-gap: 32px;
   text-align: left;
+
+  @media ${device.mobile} {
+    row-gap: 24px;
+  }
 `;
 
 const StyledHeroFormNameWrapper = styled.div`
   display: flex;
   column-gap: 20px;
+
+  @media ${device.mobile} {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+`;
+
+const StyledHeroFormPortalWrapper = styled.div`
+  display: flex;
+
+  @media ${device.mobileS} {
+    flex-direction: column;
+  }
+`;
+
+const StyledHeroFormPortalText = styled(Text)`
+  font-size: 14px;
+  white-space: nowrap;
+  padding-top: 18px;
+
+  @media ${device.mobile} {
+    font-size: 13px;
+    padding-top: 12px;
+  }
+
+  @media ${device.mobileS} {
+    padding-top: 0;
+  }
 `;
 
 export {
@@ -62,5 +103,7 @@ export {
   StyledHeroStepSubText,
   StyledHeroStepSecond,
   StyledHeroForm,
-  StyledHeroFormNameWrapper
+  StyledHeroFormNameWrapper,
+  StyledHeroFormPortalWrapper,
+  StyledHeroFormPortalText
 };

@@ -14,6 +14,7 @@ const StyledSelectInput = styled.button<{
   $placeholder: boolean;
   $status: ISelect["status"];
   $labelVariant: ISelect["labelVariant"];
+  $borderRadius: ISelect["borderRadius"];
 }>`
   position: relative;
   display: flex;
@@ -27,7 +28,7 @@ const StyledSelectInput = styled.button<{
           : props.$status === "success"
             ? "#8bb825"
             : "#aaaaaa"};
-  border-radius: 9px;
+  border-radius: ${(props) => props.$borderRadius};
   padding: ${(props) =>
     props.$labelVariant === "primary"
       ? "24px 48px 12px 16px"
@@ -153,12 +154,14 @@ const StyledSelectCaption = styled.div`
   color: #cb0000;
 `;
 
-const StyledSelectOptions = styled.div`
+const StyledSelectOptions = styled.div<{
+  $borderRadius: ISelect["borderRadius"];
+}>`
   position: absolute;
   top: 60px;
   left: 0;
   border: 1px solid #666666;
-  border-radius: 9px;
+  border-radius: ${(props) => props.$borderRadius};
   padding: 8px 0;
   width: 100%;
   max-height: 200px;
