@@ -10,11 +10,7 @@ const StyledCheckEmail = styled.div`
   text-align: center;
 
   @media ${device.tabletS} {
-    margin: 40px auto 0;
-  }
-
-  @media ${device.mobile} {
-    margin: 24px auto 0;
+    margin: 0 auto;
   }
 `;
 
@@ -39,6 +35,8 @@ const StyledCheckEmailLink = styled.button`
   justify-self: center;
   border: none;
   padding: 0;
+  font-size: 16px;
+  line-height: 24px;
   color: #ff6f3d;
   background-color: transparent;
   text-decoration: underline;
@@ -50,6 +48,7 @@ const StyledCheckEmailLink = styled.button`
 
   @media ${device.mobile} {
     justify-self: initial;
+    text-align: center;
   }
 `;
 

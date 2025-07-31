@@ -1,6 +1,5 @@
 import { TStatus } from "../../../Hero.types";
 
-export interface ICheckEmail {
-  email: string;
+export interface IRestorePassword {
   setStatus: (status: TStatus) => void;
 }
