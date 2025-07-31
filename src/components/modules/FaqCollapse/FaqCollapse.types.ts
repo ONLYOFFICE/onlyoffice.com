@@ -5,6 +5,8 @@ export interface IFaqCollapse {
   id?: string;
   /** Additional CSS class names. */
   className?: string;
+  /** The background color. */
+  background?: string;
   /** The text. */
   text?: string;
   /** An array of collapse items. */
@@ -19,4 +21,5 @@ export interface IFaqCollapse {
   tabletSmallSpacing?: ISection["tabletSmallSpacing"];
   /** Top and bottom spacing value for mobile screens. Default: ["48px", "48px"]. */
   mobileSpacing?: ISection["mobileSpacing"];
+  borderTop?: boolean;
 }

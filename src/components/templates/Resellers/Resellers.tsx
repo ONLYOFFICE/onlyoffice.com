@@ -1,9 +1,9 @@
-import { Blogs } from "./sections/Blogs";
-import { Conditions } from "./sections/Conditions";
 import { Hero } from "./sections/Hero";
-import { Market } from "./sections/Market";
-import { PartnerLevels } from "./sections/PartnerLevels";
 import { Portfolio } from "./sections/Portfolio";
+import { Conditions } from "./sections/Conditions";
+import { PartnerLevels } from "./sections/PartnerLevels";
+import { Market } from "./sections/Market";
+import { LearnMore } from "./sections/LearnMore";
 import { ReadyToShip } from "./sections/ReadyToShip";
 
 const ResellersTemplate = () => {
@@ -14,7 +14,7 @@ const ResellersTemplate = () => {
       <Conditions />
       <PartnerLevels />
       <Market />
-      <Blogs />
+      <LearnMore />
       <ReadyToShip />
     </>
   );

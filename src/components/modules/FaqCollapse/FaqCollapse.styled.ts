@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
-import { Text } from "@src/components/ui/Text";
 
-const StyledFaqCollapseHeader = styled.div`
-  margin-bottom: 48px;
+const StyledFaqCollapseHeader = styled.div<{ $text: boolean }>`
+  margin-bottom: ${(props) => (props.$text ? "48px" : "56px")};
 
   @media ${device.mobile} {
-    margin-bottom: 24px;
+    margin-bottom: ${(props) => (props.$text ? "24px" : "32px")};
   }
 `;
 
@@ -31,19 +30,4 @@ const StyledFaqCollapseHeading = styled(Heading)`
   }
 `;
 
-const StyledFaqCollapseText = styled(Text)`
-  font-size: 18px;
-  line-height: 27px;
-  color: #333333;
-
-  @media ${device.mobile} {
-    font-size: 16px;
-    line-height: 24px;
-  }
-`;
-
-export {
-  StyledFaqCollapseHeader,
-  StyledFaqCollapseHeading,
-  StyledFaqCollapseText,
-};
+export { StyledFaqCollapseHeader, StyledFaqCollapseHeading };

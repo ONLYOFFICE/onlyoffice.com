@@ -10,7 +10,7 @@ import {
 import { ITabs } from "./Tabs.types";
 import { ChevronUpIcon } from "@src/components/icons";
 
-const Tabs = ({
+const Tabs = <T extends string>({
   id,
   className,
   items,
@@ -18,7 +18,7 @@ const Tabs = ({
   collapsible,
   bgColor,
   onChange,
-}: ITabs) => {
+}: ITabs<T>) => {
   const [isCollapsed, setIsCollapsed] = useState(collapsible);
 
   return (
@@ -28,7 +28,7 @@ const Tabs = ({
           <StyledTabsItem
             key={index}
             $active={selected === item.id}
-            onClick={() => onChange(item.id)}
+            onClick={() => onChange(item.id as T)}
           >
             {item.label}
           </StyledTabsItem>

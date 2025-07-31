@@ -1,0 +1,64 @@
+{
+  "AccountCanceledPageTitle": "Compte ONLYOFFICE Personal supprimé | ONLYOFFICE",
+  "AccountCanceledPageDescription": "Pourquoi avez-vous décidé de supprimer votre compte ONLYOFFICE Personal ?",
+
+  "InstallCanceledPageTitle": "ONLYOFFICE on-premises désinstallé | ONLYOFFICE",
+  "InstallCanceledPageDescription": "Pourquoi avez-vous décidé de désinstaller ONLYOFFICE de votre serveur ?",
+
+  "RegistrationCanceledPageTitle": "Inscription au bureau dans le Cloud annulée | ONLYOFFICE",
+  "RegistrationCanceledPageDescription": "Pourquoi avez-vous décidé d’annuler l’inscription à ONLYOFFICE dans le cloud",
+
+  "DesktopUninstalledPageTitle": "Éditeurs de bureau ONLYOFFICE désinstallés | ONLYOFFICE",
+  "DesktopUninstalledPageDescription": "Pourquoi avez-vous décidé de désinstaller ONLYOFFICE Desktop Editors ?",
+
+  "CanceledHeroTitle": "Nous sommes désolés de vous voir nous quitter !",
+
+  "WhyDidYouDecideToUninstallOnlyoffice": "Pourquoi avez-vous décidé de désinstaller ONLYOFFICE ?",
+  "SelectAllThatApply": "Sélectionnez toutes les réponses appropriées",
+  "ExperiencedTechnicalProblems": "J’ai rencontré des problèmes d’ordre technique.",
+  "NeedMoreStorageSpace": "J’ai besoin de plus d’espace de stockage.",
+  "DidntFindNecessaryFeatures": "Je n’ai pas trouvé des fonctionnalités nécessaires.",
+  "PrivacyConcernsLegalViolation": "Fuite de données confidentielles/Violation du droit",
+  "IRarelyWorkInBrowser": "Je travaille rarement dans le navigateur.",
+  "Other": "Autres",
+
+  "SwitchedToTheCloudVersion": "J’ai passé à une version cloud.",
+  "IRarelyUseOnlyoffice": "J’utilise ONLYOFFICE rarement.",
+
+  "IWillUseAnotherDesktopSoftware": "J’utilise d’autres applications de bureau.",
+  "IRarelyUseOnlyofficeDesktopEditors": "J’utilise rarement les applications de bureau ONLYOFFICE.",
+
+  "SwitchedToOnPremises": "J’ai passé à une version auto-hébergée.",
+
+  "WhatShouldWeImproveInOnlyofficePersonal": "Vos suggestions d’améliorations pour ONLYOFFICE Personal",
+  "WhatShouldWeImproveInOnlyoffice": "Vos suggestions d’améliorations pour ONLYOFFICE",
+  "WhatShouldWeImproveInOnlyofficeDesktopEditors": "Vos suggestions d’améliorations pour les applications de bureau ONLYOFFICE",
+  "YourMessageHere": "Tapez votre message ici",
+  "Email": "Mail",
+  "EmailIsEmpty": "Le champ Email est vide",
+  "EmailIsIncorrect": "L'adresse email est incorrecte",
+  "ByClickingSendFeedback": "En cliquant \"Envoyer\", vous reconnaissez et acceptez le <0>SLA</0> et la <1>Politique de confidentialité</1>.",
+  "SendFeedback": "Envoyer",
+
+  "ThanksForYourMessage": "Merci pour votre message.",
+  "IfYouDecideToGetBack": "Si vous décidez de revenir, profitez de ce code promo qui offre la <0>réduction de 10%</0> sur le service cloud ONLYOFFICE ou partagez-le avec vos amis !*",
+  "WhyTakeBusinessToOnlyofficeCloudToday": "Raisons de passer au service cloud ONLYOFFICE dès aujourd’hui",
+  "FullyGDPRCompliantCloudOffice": "Bureau dans le cloud totalement compatible au RGPD",
+  "ReducedMaintenanceCosts": "Coûts de maintenance réduits",
+  "SecureAndReliableHosting": "Hébergement fiable et sécurisé",
+  "AutomaticUpdates": "Mises à jour automatiques et assistance professionnelle",
+  "ScalableCostEffectiveSolution": "Solution évolutive",
+  "EntirelyFree": "Remises de 100% pour les organismes à but non-lucratif et l’éducation",
+  "TheCoupon": "*Le code est valide pendant 12 mois.",
+
+  "DontLeave": "Ne partez pas les mains vides - munissez-vous d’un cloud gratuit pour l’usage personnel et profitez de la <0>réduction de 10%</0> sur les éditeurs en ligne pour votre entreprise !*",
+  "FreeAndSecureCloudStorage": "Stockage cloud gratuit et sécurisé",
+  "HighestCompatibility": "Compatibilité parfaite avec les formats MS Office",
+  "DocumentEditing": "Outils d’édition et de coédition dans votre navigateur web",
+  "ConnectionOfPopular": "Connexion aux services de stockage populaires : Dropbox, OneDrive, etc",
+  "PleaseNote": "*Le code est valide pendant 12 mois.",
+
+  "WhyChooseFreePersonalOnlyofficeCloudToday": "Raisons de lancer le cloud ONLYOFFICE pour l’usage personnel dès aujourd’hui",
+
+  "HopeToSeeYouAgain": "Merci pour votre message. Au plaisir de vous revoir !"
+}

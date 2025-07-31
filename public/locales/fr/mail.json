@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Outil de gestion des courriels d'entreprise | ONLYOFFICE",
+  "PageDescription": "Créer des boîtes aux lettres professionnelles, connecter des comptes et gérer toute la correspondance dans un seul endroit.",
+
+  "HeroTitle": "Gérer efficacement vos mails",
+  "HeroText": "Outil intuitif de gestion de courriels",
+  "HeroImage": "/images/templates/mail/hero/fr/hero_image.png",
+  "HeroImage2x": "/images/templates/mail/hero/fr/hero_image@2x.png",
+  "GetItNow": "Obtenir maintenant",
+
+  "MailServer": "Serveur de messagerie",
+  "MailServerText": "Ajoutez un serveur de messagerie en utilisant votre propre nom de domaine pour créer des boites de courriel corporatives pour les membres de votre équipe. Synchronisez des emails via IMAP. Sauvegarde et restauration de la base de données de Mail Server.",
+  "MailServerImage": "/images/templates/mail/features/fr/mail_server.png",
+  "MailAggregator": "Agrégateur de messages",
+  "MailAggregatorText": "Collectez, traitez et stockez toute votre correspondance dans un seul endroit, connectez tous vos comptes à ONLYOFFICE.",
+  "MailAggregatorImage": "/images/templates/mail/features/fr/mail_aggregator.png",
+  "EffectiveEmail": "Gestion efficace des e-mails",
+  "EffectiveEmailText": "Organisez efficacement votre boîte de réception : structurez la correspondance en catégories avec la gestion des dossiers, déplacez facilement les courriels vers des dossiers par glisser-déposer, utilisez des filtres pour trier le courrier automatiquement.",
+  "EffectiveEmailImage": "/images/templates/mail/features/fr/effective_email.png",
+  "EasyEmailFormatting": "Mise en forme facile des e-mails",
+  "EasyEmailFormattingText": "Travaillez entièrement avec les polices et les styles. Téléchargez les pièces jointes et les pièces jointes à partir du module Documents. Créez et gérez des signatures. Utilisez le constructeur de modèles complet.",
+  "EasyEmailFormattingImage": "/images/templates/mail/features/fr/email_formatting.png",
+  "CrmIntegration": "Intégration avec CRM",
+  "CrmIntegrationText": "Liez tout un fil de messages ou des messages séparés aux contacts CRM, actions ou opportunités pour avoir toute la correspondance nécessaire à la portée de la main.",
+  "CrmIntegrationImage": "/images/templates/mail/features/fr/crm_integration.png",
+  "DocumentIntegration": "Intégration avec Documents",
+  "DocumentIntegrationText": "Joignez des fichiers du module Documents module à vos messages pour assurer une échange d’information plus rapide.",
+  "DocumentIntegrationImage": "/images/templates/mail/features/fr/document_integration.png",
+  "CalendarIntegration": "Intégration avec Calendrier",
+  "CalendarIntegrationText": "Envoyez des invitationsà un événement créé et informez des invités de tous les changements. Recevez des invitations des calendriers tiers et répondez-y.",
+  "CalendarIntegrationImage": "/images/templates/mail/features/fr/calendar_integration.png",
+
+  "PerfectOnlineCollaboration": "A perfect little online collaboration space for your entire team.",
+  "PcMag": "PC Mag"
+}

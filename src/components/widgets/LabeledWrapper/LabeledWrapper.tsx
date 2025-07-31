@@ -12,9 +12,9 @@ const LabeledWrapper = ({
   return (
     <div id={id} className={className}>
       <StyledLabeledWrapperLabel>
-        {leftSide}
-        <div>{label}</div>
-        {rightSide}
+        {leftSide && <span>{leftSide}</span>}
+        <span>{label}</span>
+        {rightSide && <span>{rightSide}</span>}
       </StyledLabeledWrapperLabel>
       {children}
     </div>

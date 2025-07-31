@@ -1,5 +1,5 @@
 {
-  "PageTitle": "Online office suite for Alfresco Share",
+  "PageTitle": "Online office suite for Alfresco Share | ONLYOFFICE Docs",
   "PageDescription": "Edit and co-edit documents within Alfresco Share",
 
   "OnlineOfficeForAlfresco": "Online office for <0>Alfresco</0>",
@@ -40,7 +40,7 @@
 
   "HowToStart": "How to start",
   "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
-  "HowToStartStep2": "Get the integration app from the <0>AlfrescoAdd-ons directory</0>",
+  "HowToStartStep2": "Get the integration app from the <0>Alfresco Add-ons directory</0>",
   "HowToStartStep3": "Configure the integration app in the  Alfresco Administration Console.",
   "HowToConnect": "How to integrate ONLYOFFICE with Alfresco Share",
 

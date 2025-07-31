@@ -1,11 +1,11 @@
-import { ICounterSelector } from "@src/components/widgets/CounterSelector";
 import { IToggleButtons } from "@src/components/widgets/ToggleButtons";
+import { ICounterSelector } from "@src/components/widgets/CounterSelector";
 import { ITabs } from "@src/components/widgets/Tabs";
+import { IEnterpriseModalFormData } from "../sub-components/EnterpriseModal";
 
-const businessCurrentPrice = "20";
-const enterpriseCurrentPrice = "6550";
-
-const numberOfUsers: ICounterSelector["items"] = [
+export const numberOfUsers: ICounterSelector<
+  IEnterpriseModalFormData["usersNumber"]
+>["items"] = [
   {
     id: "100",
     label: "100",
@@ -28,27 +28,26 @@ const numberOfUsers: ICounterSelector["items"] = [
   },
 ];
 
-const numberOfUsersTotal = {
-  "100": enterpriseCurrentPrice,
-  "250": 14100,
-  "500": 28200,
-  "1000": 56400,
-};
-
-const licenseDurations: IToggleButtons["items"] = [
-  { id: "license-1-year", label: "1Year" },
-  { id: "license-lifetime", label: "Lifetime" },
+export const licenseDuration: IToggleButtons<
+  IEnterpriseModalFormData["licenseDuration"]
+>["items"] = [
+  { id: "1 Year", label: { name: "1Year" } },
+  { id: "Lifetime", label: { name: "Lifetime" } },
 ];
 
-const supportUpdates: IToggleButtons["items"] = [
-  { id: "support-1-year", label: "1Year" },
-  { id: "support-3-years", label: "3Years" },
+export const supportUpdates: IToggleButtons<
+  IEnterpriseModalFormData["supportAndUpdates"]
+>["items"] = [
+  { id: "1 Year", label: { name: "1Year" } },
+  { id: "3 Years", label: { name: "3Years" } },
 ];
 
-const supportLevel: ITabs["items"] = [
+export const supportLevel: ITabs<
+  IEnterpriseModalFormData["supportLevel"]
+>["items"] = [
   {
-    id: "support-level-standard",
-    label: "Standard",
+    id: "Basic",
+    label: "Basic",
     content: [
       "FirstResponseTime48",
       "StandardInstallation",
@@ -60,7 +59,7 @@ const supportLevel: ITabs["items"] = [
     ],
   },
   {
-    id: "support-level-plus",
+    id: "Plus",
     label: "Plus",
     content: [
       "FirstResponseTime24",
@@ -73,7 +72,7 @@ const supportLevel: ITabs["items"] = [
     ],
   },
   {
-    id: "support-level-premium",
+    id: "Premium",
     label: "Premium",
     content: [
       "FirstResponseTime12",
@@ -89,13 +88,3 @@ const supportLevel: ITabs["items"] = [
     ],
   },
 ];
-
-export {
-  businessCurrentPrice,
-  enterpriseCurrentPrice,
-  numberOfUsers,
-  numberOfUsersTotal,
-  licenseDurations,
-  supportUpdates,
-  supportLevel,
-};

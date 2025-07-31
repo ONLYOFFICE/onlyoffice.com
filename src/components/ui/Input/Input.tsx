@@ -2,18 +2,12 @@ import { forwardRef, useState, useEffect, useRef } from "react";
 import {
   StyledInput,
   StyledInputLabel,
-  StyledInputIcon,
+  StyledInputWrapper,
+  StyledInputBody,
   StyledInputField,
-  StyledInputClearButton,
   StyledInputCaption,
 } from "./Input.styled";
 import { IInput } from "./Input.types";
-import {
-  CrossIcon,
-  SearchIcon,
-  EyeIcon,
-  EyeCloseIcon,
-} from "@src/components/icons";
 
 const Input = forwardRef<HTMLInputElement, IInput>(
   (
@@ -24,37 +18,37 @@ const Input = forwardRef<HTMLInputElement, IInput>(
       placeholder,
       tabIndex,
       status = "default",
-      variant,
-      type = variant === "password" ? "password" : "text",
+      type = "text",
       disabled,
       required,
       value,
       name,
       maxLength,
+      pattern,
       autoFocus,
+      active,
       caption,
       leftSide,
       rightSide,
-      withClearButton,
       onClick,
       onChange,
       onFocus,
       onBlur,
       onKeyDown,
+      ...rest
     },
     ref,
   ) => {
-    const localRef = useRef<HTMLInputElement | null>(null);
-    const inputRef = (ref as React.RefObject<HTMLInputElement>) || localRef;
-
     const [isFocused, setIsFocused] = useState(false);
-    const [passwordVisible, setPasswordVisible] = useState(true);
+    const localRef = useRef<HTMLInputElement | null>(null);
 
     useEffect(() => {
-      if (autoFocus && inputRef.current) {
-        inputRef.current.focus();
+      if (autoFocus && localRef.current) {
+        localRef.current.focus();
+        const length = localRef.current.value.length;
+        localRef.current.setSelectionRange(length, length);
       }
-    }, [autoFocus, inputRef]);
+    }, [autoFocus]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       onChange?.(e);
@@ -70,97 +64,65 @@ const Input = forwardRef<HTMLInputElement, IInput>(
       onBlur?.(e);
     };
 
-    const handleClear = () => {
-      onChange?.({
-        target: { value: "" },
-      } as React.ChangeEvent<HTMLInputElement>);
-      setIsFocused(false);
-      inputRef.current?.focus();
-    };
-
     return (
       <StyledInput>
-        {label && (
-          <StyledInputLabel
-            htmlFor={id}
-            $isFocused={isFocused}
-            $value={value}
-            $leftSide={leftSide}
-            $variant={variant}
-          >
-            {label}
-            {required && <span>*</span>}
-          </StyledInputLabel>
-        )}
-
-        <StyledInputField
-          ref={inputRef}
-          id={id}
-          className={className}
-          placeholder={isFocused ? placeholder : undefined}
-          tabIndex={tabIndex}
-          value={value}
-          name={name}
-          maxLength={maxLength}
-          type={
-            type === "password" ? (passwordVisible ? "password" : "text") : type
-          }
-          required={required}
-          disabled={disabled}
-          $value={value}
-          $label={label}
+        <StyledInputWrapper
+          className={`input-wrapper ${className ? className : ""}`}
+          ref={ref}
           $status={status}
           $isFocused={isFocused}
-          $withClearButton={withClearButton}
-          $leftSide={leftSide}
-          $rightSide={rightSide}
-          $variant={variant}
-          onClick={onClick}
-          onChange={handleChange}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
-          onKeyDown={onKeyDown}
-        />
+          $disabled={disabled}
+        >
+          {leftSide}
 
-        {(leftSide || variant === "search") && (
-          <StyledInputIcon $leftSide={leftSide} $variant={variant}>
-            {variant === "search" ? <SearchIcon /> : leftSide}
-          </StyledInputIcon>
-        )}
-
-        {(rightSide || variant === "password") && (
-          <StyledInputIcon
-            $rightSide={rightSide}
-            $variant={variant}
-            onClick={() =>
-              type === "password" && setPasswordVisible(!passwordVisible)
-            }
-          >
-            {variant === "password" ? (
-              passwordVisible ? (
-                <EyeIcon />
-              ) : (
-                <EyeCloseIcon />
-              )
-            ) : (
-              rightSide
+          <StyledInputBody>
+            {label && (
+              <StyledInputLabel
+                htmlFor={id}
+                $isFocused={isFocused}
+                $value={value}
+                $leftSide={leftSide}
+                $active={active}
+                $status={status}
+                $disabled={disabled}
+              >
+                {label}
+                {required && <span>*</span>}
+              </StyledInputLabel>
             )}
-          </StyledInputIcon>
-        )}
 
-        {value && (withClearButton || variant === "search") && (
-          <StyledInputClearButton
-            onClick={handleClear}
-            $rightSide={rightSide}
-            $withClearButton={withClearButton}
-            $variant={variant}
-          >
-            <CrossIcon />
-          </StyledInputClearButton>
-        )}
+            <StyledInputField
+              ref={localRef}
+              id={id}
+              placeholder={!label || isFocused ? placeholder : undefined}
+              tabIndex={tabIndex}
+              value={value}
+              name={name}
+              maxLength={maxLength}
+              pattern={pattern}
+              type={type}
+              required={required}
+              disabled={disabled}
+              $isFocused={isFocused}
+              $label={label}
+              $leftSide={leftSide}
+              $rightSide={rightSide}
+              onClick={onClick}
+              onChange={handleChange}
+              onFocus={handleFocus}
+              onBlur={handleBlur}
+              onKeyDown={onKeyDown}
+              {...rest}
+            />
+          </StyledInputBody>
+
+          {rightSide}
+        </StyledInputWrapper>
 
         {status === "error" && caption && !isFocused && (
-          <StyledInputCaption>{caption}</StyledInputCaption>
+          <StyledInputCaption className="input-caption">
+            {caption}
+          </StyledInputCaption>
         )}
       </StyledInput>
     );

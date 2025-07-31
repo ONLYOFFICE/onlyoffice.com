@@ -1,0 +1,29 @@
+{
+  "PageTitle": "ONLYOFFICE活动 | ONLYOFFICE",
+  "PageTitleOG": "我们参加的活动",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0>参加世界各地的有趣活动",
+  "CurrentEvents": "在2025年的活动中与ONLYOFFICE见面",
+  "PastEvents": "阅读ONLYOFFICE参加过的活动",
+  "MoreInfo": "更多信息",
+  "ScheduleMeeting": "安排会议",
+  "dateTemplates": {
+    "singleDay": "{{year}}年{{month}}{{day}}日",
+    "sameMonth": "{{year}}年{{month}}{{dayStart}}–{{dayEnd}}日",
+    "differentMonths": "{{year}}年{{monthStart}}{{dayStart}}日–{{monthEnd}}{{dayEnd}}日",
+    "differentYears": "{{yearStart}}年{{monthStart}}{{dayStart}}日–{{year}}年{{monthEnd}}{{dayEnd}}日"
+  },
+  "months": {
+    "January": "1月",
+    "February": "2月",
+    "March": "3月",
+    "April": "4月",
+    "May": "5月",
+    "June": "6月",
+    "July": "7月",
+    "August": "8月",
+    "September": "9月",
+    "October": "10月",
+    "November": "11月",
+    "December": "12月"
+  }
+}

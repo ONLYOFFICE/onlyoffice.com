@@ -1,0 +1,1 @@
+export { BestAlternativePresentationSlide } from "./BestAlternativePresentationSlide";

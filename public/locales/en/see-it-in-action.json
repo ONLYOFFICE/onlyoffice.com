@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Check ONLYOFFICE Docs main functionality | ONLYOFFICE",
+  "PageDescription": "Edit docx, xlsx, pptx files, view PDFs, create fillable forms, collaborate in real-time to check the ONLYOFFICE main features. No downloads or registration required.",
+
+  "HeroHeadingSeeIt": "See it in action",
+  "HeroTextCurious": "Curious to know what the interface looks like and try the main functionality without registration?",
+
+  "ActionsEditDocx": "Edit DOCX",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
+  "ActionsEditXlsx": "Edit XLSX",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
+  "ActionsEditPptx": "Edit PPTX",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
+  "ActionsEditPdf": "Edit PDF",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
+  "ActionsCreateForm": "Create Form",
+  "ActionsFillInPdfForm": "Fill in PDF form",
+  "ActionsCollaborate": "Collaborate",
+
+  "ActionsDemoPreview": "Demo preview",
+  "ActionsDemoModalHeadingOpenDocx": "Open DOCX for editing",
+  "ActionsDemoModalHeadingOpenXlsx": "Open XLSX for editing",
+  "ActionsDemoModalHeadingOpenPptx": "Open PPTX for editing",
+  "ActionsDemoModalHeadingOpenPdf": "Edit PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Create form",
+  "ActionsDemoModalHeadingOpenFill": "Fill in PDF form",
+  "ActionsDemoModalHeadingOpenCollaborate": "Collaborate",
+  "ActionsDemoModalButtonClose": "Close"
+}

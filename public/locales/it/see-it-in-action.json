@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Esplora le funzionalità principali di ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Modifica file docx, xlsx, pptx, visualizza PDF, crea moduli compilabili, collabora in tempo reale per esplorare le caratteristiche principali di ONLYOFFICE. Nessun download o registrazione necessari.",
+
+  "HeroHeadingSeeIt": "Vedilo in azione!",
+  "HeroTextCurious": "Curioso di sapere come si presenta l'interfaccia e provare le funzionalità principali senza registrazione?",
+
+  "ActionsEditDocx": "Edita DOCX",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
+  "ActionsEditXlsx": "Edita XLSX",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
+  "ActionsEditPptx": "Edita PPTX",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
+  "ActionsEditPdf": "Modifica PDF",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
+  "ActionsCreateForm": "Crea un modulo",
+  "ActionsFillInPdfForm": "Riempire modulo PDF",
+  "ActionsCollaborate": "Collabora",
+
+  "ActionsDemoPreview": "Anteprima Demo",
+  "ActionsDemoModalHeadingOpenDocx": "Apri DOCX per editing",
+  "ActionsDemoModalHeadingOpenXlsx": "Apri XLSX per editing",
+  "ActionsDemoModalHeadingOpenPptx": "Apri PPTX per editing",
+  "ActionsDemoModalHeadingOpenPdf": "Modifica PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Crea un modulo",
+  "ActionsDemoModalHeadingOpenFill": "Riempire modulo PDF",
+  "ActionsDemoModalHeadingOpenCollaborate": "Collabora",
+  "ActionsDemoModalButtonClose": "Chiudi"
+}

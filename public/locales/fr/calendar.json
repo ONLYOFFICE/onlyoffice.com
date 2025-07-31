@@ -1,0 +1,24 @@
+{
+  "PageTitle": "Outil de gestion du temps pour être organisé | ONLYOFFICE",
+  "PageDescription": "Créer un calendrier individuel ou collectif, gérer des événements d'une façon plus simple.",
+
+  "HeroTitle": "Outil de gestion de temps efficace",
+  "HeroText": "Garder votre équipe organisée et productive.",
+  "GetItNow": "Obtenir maintenant",
+
+  "IndividualOrGroup": "Calendrier collectif ou individuel",
+  "IndividualOrGroupText": "Créez votre horaire personnel, <0>partagez des calendriers</0> en accordant l'accès à une certaine personne ou en organisant une réunion pour toute l'équipe.",
+  "IndividualOrGroupImage": "/images/templates/calendar/features/fr/individual_or_group.png",
+  "SimpleScheduling": "Planification simple",
+  "SimpleSchedulingText": "Créez des événements sur une journée, plusieurs jours et des événements récurrents. Ajoutez des tâches à votre emploi du temps. Envoyez des invitations à n'importe quel utilisateur. Utilisez des rappels pour ne rien manquer.",
+  "SimpleSchedulingImage": "/images/templates/calendar/features/fr/simple_scheduling.png",
+  "Synchronization": "Synchronisation avec des applications tierces",
+  "SynchronizationText": "Importez des événements ou ajoutez un iCal feed de Google, Apple iCal, Yahoo!, synchroniser le calendrier à l'aide du protocole CalDAV, et suivez tous les événements dans un seul endroit.",
+  "SynchronizationImage": "/images/templates/calendar/features/fr/synchronization.png",
+  "CloseIntegration": "Intégration avec tous les modules ONLYOFFICE",
+  "CloseIntegrationText": "Suivez vos jalons, vos tâches de Projets et de CRM, les anniversaires des utilisateurs. Envoyez et recevez des invitations aux événements importants.",
+  "CloseIntegrationImage": "/images/templates/calendar/features/fr/close_integration.png",
+
+  "EasyToUse": "Easy to use software with an array of business-friendly collaboration features.",
+  "PcMag": "PC Mag"
+}

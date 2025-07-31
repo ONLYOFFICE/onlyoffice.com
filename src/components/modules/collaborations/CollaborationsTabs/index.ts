@@ -1,0 +1,1 @@
+export { CollaborationsTabs } from "./CollaborationsTabs";

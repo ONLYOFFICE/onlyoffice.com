@@ -2,8 +2,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { ILocale } from "@src/types/locale";
 import { Layout } from "@src/components/Layout";
-import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
-import { Head } from "@src/components/modules/Head";
+import { AdventAnnounce } from "@src/components/modules/AdventAnnounce";
+import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { MainTemplate } from "@src/components/templates/Main";
 import { Footer } from "@src/components/modules/Footer";
@@ -14,7 +14,7 @@ const MainPage = ({ locale }: ILocale) => {
   return (
     <Layout>
       <Layout.AdventAnnounce>
-        <AdventAnnounceBanner locale={locale} />
+        <AdventAnnounce locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
         <Head
@@ -43,6 +43,8 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "main",
         "SecurityFirst",
+        "GetStarted",
+        "FaqCollapse",
       ])),
       locale,
     },

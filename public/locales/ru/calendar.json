@@ -1,0 +1,24 @@
+{
+  "PageTitle": "Программа для контроля рабочего времени сотрудников | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE позволяет организовать рабочее расписание, управлять календарями, синхронизироваться с Google Calendars и другими.",
+
+  "HeroTitle": "Эффективный инструмент для управления временем",
+  "HeroText": "Помогите своей команде работать ещё продуктивнее",
+  "GetItNow": "Получить сейчас",
+
+  "IndividualOrGroup": "Персональные и групповые календари",
+  "IndividualOrGroupText": "Создайте персональное расписание, <0>предоставляйте доступ к календарю</0> определенным пользователям или планируйте встречу с целой группой.",
+  "IndividualOrGroupImage": "/images/templates/calendar/features/ru/individual_or_group.png",
+  "SimpleScheduling": "Удобное планирование различных событий",
+  "SimpleSchedulingText": "Добавляйте события, которые длятся целый день или несколько дней, или события, повторяющиеся через заданный промежуток времени. Включайте задачи в свое расписание. Отправляйте приглашения на мероприятия любому пользователю интернета. Напоминания помогут вам не пропустить ничего важного.",
+  "SimpleSchedulingImage": "/images/templates/calendar/features/ru/simple_scheduling.png",
+  "Synchronization": "Синхронизация со сторонними приложениями",
+  "SynchronizationText": "Импортируйте события или добавляйте iCal-ленту из Google, Apple iCal, Yahoo!, синхронизируйте календарь по протоколу CalDAV и отслеживайте все события в одном месте.",
+  "SynchronizationImage": "/images/templates/calendar/features/ru/synchronization.png",
+  "CloseIntegration": "Тесная интеграция со всеми модулями ONLYOFFICE",
+  "CloseIntegrationText": "Отслеживайте сроки вех, задач в модулях \"Проекты\" и CRM, получайте оповещения о предстоящих днях рождения пользователей. Отправляйте и получайте приглашения на важные события в календаре.",
+  "CloseIntegrationImage": "/images/templates/calendar/features/ru/close_integration.png",
+
+  "EasyToUse": "Простая в использовании программа со множеством возможностей для совместной работы, которые позволяют эффективно вести бизнес.",
+  "PcMag": "PC Mag"
+}

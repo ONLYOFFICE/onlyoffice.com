@@ -1,32 +1,27 @@
-import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
-import { Section } from "@src/components/ui/Section";
-import { Text } from "@src/components/ui/Text";
+import React from "react";
 import {
-  StyledPartnerLevelsText,
+  StyledPartnerLevelsHeader,
   StyledSupportLevelsIcon,
   StyledSupportLevelsTable,
 } from "./PartnerLevels.styled";
-import { supportLevels } from "./data/items";
-import React from "react";
 import { useTranslation } from "next-i18next";
+import { Section } from "@src/components/ui/Section";
+import { Container } from "@src/components/ui/Container";
+import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
+import { supportLevels } from "./data/items";
 
 const PartnerLevels = () => {
   const { t } = useTranslation("resellers");
+
   return (
     <Section tabletSmallSpacing={["88px", "88px"]}>
       <Container>
-        <Heading
-          label={t("PartnerLevelsTitle")}
-          level={2}
-          size={3}
-          textAlign="center"
-        />
-        <StyledPartnerLevelsText
-          label={t("PartnerLevelsText")}
-          size={2}
-          textAlign="center"
-        />
+        <StyledPartnerLevelsHeader>
+          <Heading label={t("PartnerLevelsTitle")} level={2} size={3} />
+          <Text label={t("PartnerLevelsText")} size={2} />
+        </StyledPartnerLevelsHeader>
+
         <StyledSupportLevelsTable>
           <thead>
             <tr>

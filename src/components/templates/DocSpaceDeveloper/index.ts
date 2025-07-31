@@ -1,0 +1,1 @@
+export { DocSpaceDeveloperTemplate } from "./DocSpaceDeveloper"

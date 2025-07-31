@@ -1,0 +1,24 @@
+{
+  "PageTitle": "Das Zeitmanagement für die bessere Organisation | ONLYOFFICE",
+  "PageDescription": "Erstellen Sie Ihren Team und Einzelzeitplan, verwalten Sie Kalenderereignisse.",
+
+  "HeroTitle": "Effizientes Zeitmanagement-Tool",
+  "HeroText": "Sorgen Sie dafür, dass Ihr Team organisiert und produktiv bleibt",
+  "GetItNow": "Jetzt erhalten",
+
+  "IndividualOrGroup": "Einzel- oder Gruppenkalender",
+  "IndividualOrGroupText": "Erstellen Sie Ihren persönlichen Terminkalender, <0>teilen Sie Ihre Kalender</0> teilen Sie Kalender, um einer bestimmten Person Zugriff zu gewähren, oder planen Sie Meetings mit der gesamten Gruppe.",
+  "IndividualOrGroupImage": "/images/templates/calendar/features/de/individual_or_group.png",
+  "SimpleScheduling": "Einfache Planung der verschiedenen Veranstaltungsarten",
+  "SimpleSchedulingText": "Erstellen Sie ganztägige, mehrtägige und wiederkehrende Ereignisse. Fügen Sie Ihren Plänen und Kalendern To-Dos hinzu. Senden Sie Einladungen an beliebige Benutzer. Nutzen Sie Erinnerungsfunktionen und verpassen Sie nie wichtige Ereignisse und festgelegte Termine.",
+  "SimpleSchedulingImage": "/images/templates/calendar/features/de/simple_scheduling.png",
+  "Synchronization": "Synchronisierung mit Anwendungen von Drittanbietern",
+  "SynchronizationText": "Importieren Sie Ereignisse oder fügen Sie einen iCal-Feed von Google, Apple iCal, Yahoo!, synchronisieren Sie den Kalender mit dem CalDAV-Protokoll und verfolgen Sie alles an einem Ort.",
+  "SynchronizationImage": "/images/templates/calendar/features/de/synchronization.png",
+  "CloseIntegration": "Enge Integration mit allen Modulen von ONLYOFFICE",
+  "CloseIntegrationText": "Verfolgen Sie Ihre Meilensteine und Projekt- und CRM-Aufgaben und erhalten Sie eine automatische Benachrichtigung über anstehende Geburtstage. Senden und empfangen Sie Einladungen für wichtige Kalendertermine.",
+  "CloseIntegrationImage": "/images/templates/calendar/features/de/close_integration.png",
+
+  "EasyToUse": "Einfach zu bedienende Software mit einer Reihe von unternehmensfreundlichen Funktionen für die Zusammenarbeit.",
+  "PcMag": "PC Mag"
+}

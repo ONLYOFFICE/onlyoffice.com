@@ -1,0 +1,97 @@
+{
+  "PageTitle": "Suite mobile gratuite pour iPhone et iPad | ONLYOFFICE Documents",
+  "PageDescription": "Modifiez et corédigez des documents, des feuilles de calcul et des présentations, remplissez des formulaires à partir de vos appareils iOS.",
+
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, <0>suite bureautique mobile</0> performante pour iPhone et iPad",
+  "AbsolutelyFree": "Absolument <0>gratuit</0>. Sans pub. Pas d'achats dans l'application.",
+
+  "OneAppThreeEditors": "Une application - <0>trois éditeurs</0> - plein de fonctionnalités",
+  "CompatibleWithMSOffice": "Compatible à 100% avec les formats de MS Office",
+
+  "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/fr/hero-phone.png",
+  "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/fr/hero-phone-2x.png",
+
+  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.fr.svg",
+
+  "FeaturesItemHeadingFull": "Traitement de texte",
+  "FeaturesItemTextMakeUse": "Utiliser plusieurs outils de traitement de texte : mise en forme des pages, paragraphes et textes, tableaux, formes automatiques, graphiques, etc. Créez des documents texte, peu importe leur taille et leur complexité. Imprimez-les via AirPrint.",
+  "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/fr/img-tablet-1.png",
+  "FeaturesItemTablet1Bg2x": "/images/templates/office-for-ios/features/fr/img-tablet2x-1.png",
+  "FeaturesItemMobile1Bg": "/images/templates/office-for-ios/features/fr/img-mobile-1.png",
+  "FeaturesItemMobile1Bg2x": "/images/templates/office-for-ios/features/fr/img-mobile2x-1.png",
+
+  "FeaturesItemHeadingComplete": "Tableur",
+  "FeaturesItemTextManage": "Gérez vos données de tableur : travaillez avec des lignes et des colonnes, ajustez les paramètres des cellules, utilisez plus de 450 formules, triez et filtrez les données.",
+  "FeaturesItemTablet2Bg": "/images/templates/office-for-ios/features/fr/img-tablet-2.png",
+  "FeaturesItemTablet2Bg2x": "/images/templates/office-for-ios/features/fr/img-tablet2x-2.png",
+  "FeaturesItemMobile2Bg": "/images/templates/office-for-ios/features/fr/img-mobile-2.png",
+  "FeaturesItemMobile2Bg2x": "/images/templates/office-for-ios/features/fr/img-mobile2x-2.png",
+
+  "FeaturesItemHeadingCollaborative": "Outil de présentations collaboratif",
+  "FeaturesItemTextMakeWork": "Travaillez avec tous les objets populaires sur vos diapositives : insérez des images, ajoutez et modifiez des formes automatiques, des tableaux et graphiques, des textes et autres éléments.",
+  "FeaturesItemTablet3Bg": "/images/templates/office-for-ios/features/fr/img-tablet-3.png",
+  "FeaturesItemTablet3Bg2x": "/images/templates/office-for-ios/features/fr/img-tablet2x-3.png",
+  "FeaturesItemMobile3Bg": "/images/templates/office-for-ios/features/fr/img-mobile-3.png",
+  "FeaturesItemMobile3Bg2x": "/images/templates/office-for-ios/features/fr/img-mobile2x-3.png",
+
+  "FeaturesItemHeadingOnline": "Remplisseur de formulaires en ligne",
+  "FeaturesItemTextMakeView": "Affichez et remplissez des formulaires. Naviguez facilement d'un champ à l'autre. Enregistrez le résultat sous forme de fichier PDF ou DOCX.",
+  "FeaturesItemTablet4Bg": "/images/templates/office-for-ios/features/fr/img-tablet-4.png",
+  "FeaturesItemTablet4Bg2x": "/images/templates/office-for-ios/features/fr/img-tablet2x-4.png",
+  "FeaturesItemMobile4Bg": "/images/templates/office-for-ios/features/fr/img-mobile-4.png",
+  "FeaturesItemMobile4Bg2x": "/images/templates/office-for-ios/features/fr/img-mobile2x-4.png",
+
+  "FeaturesItemHeadingPDF": "Visionneuse PDF et lecteur multimédia",
+  "FeaturesItemTextMakeViewPDF": "Visualisez des documents et des images PDF, lisez des fichiers audio et vidéo. Ouvrez les fichiers aux formats .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
+  "FeaturesItemTablet5Bg": "/images/templates/office-for-ios/features/fr/img-tablet-5.png",
+  "FeaturesItemTablet5Bg2x": "/images/templates/office-for-ios/features/fr/img-tablet2x-5.png",
+  "FeaturesItemMobile5Bg": "/images/templates/office-for-ios/features/fr/img-mobile-5.png",
+  "FeaturesItemMobile5Bg2x": "/images/templates/office-for-ios/features/fr/img-mobile2x-5.png",
+
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents est un produit remarquable classé avec la mention Très bien par des utilisateurs.\"",
+  "MichaelGanss": "Michael Ganss,",
+
+  "RealTimeCollaboration": "Collaboration en temps réel",
+  "BeMoreProductive": "Gagnez en productivité. Connectez votre application au cloud ONLYOFFICE. Partagez vos documents afin de les coéditer ensemble avec vos collègues en temps réel. Laissez les commentaires et suivez les modifications. Ajoutez des annotations graphiques.",
+  "CollabBackgroundUrl": "/images/templates/office-for-ios/collab/collaboration.fr.png",
+  "CollabBackgroundUrl2x": "/images/templates/office-for-ios/collab/collaboration.fr@2x.png",
+
+  "VideoCardHeading": "Découvrez ONLYOFFICE Documents, une suite bureautique mobile robuste",
+
+  "GetStartedAndChoose": "Commencez et choisissez où travailler",
+
+  "ChooseItemOnDevice": "Sur l'appareil",
+  "ChooseItemManageDocuments": "Gérez les documents sur l'appareil et éditez-les hors ligne.",
+
+  "ChooseItemInOnlyOffice": "Dans ONLYOFFICE cloud",
+  "ChooseItemAccessDocs": "Accédez aux documents du cloud ONLYOFFICE et aux stockages (Dropbox, Google Drive, etc.) qui y sont connectés et travaillez en collaboration.",
+
+  "ChooseItemInYourCloud": "Dans votre cloud",
+  "ChooseItemConnectNextcloud": "Connectez Nextcloud, ownCloud, ou tout autre cloud fonctionnant via WebDAV et éditez les documents directement depuis l'application.",
+
+  "ChooseItemFromOther": "Depuis d'autres applications",
+  "ChooseItemImportDocuments": "Importez des documents à partir d'applications comme iTunes, Fichiers et autres.",
+
+  "GetMoreWithComplete": "En savoir plus sur la version web mobile complète",
+  "WorkOnDocumentsWithin": "Travaillez sur des documents dans votre navigateur mobile. Rendez-vous sur votre portail web ONLYOFFICE et accédez à d'autres outils d'édition et de collaboration de documents.",
+  "GetMoreImage": "/images/templates/office-for-ios/getMore/webversion.fr.png",
+  "GetMoreImage2x": "/images/templates/office-for-ios/getMore/webversion.fr@2x.png",
+
+  "LearnMoreHeading": "En savoir plus sur ONLYOFFICE Documents pour iOS",
+
+  "LearnCardTitleRelease": "Nouveautés de la mise à jour",
+  "LearnMoreTextMeet": "Découvrez ONLYOFFICE Documents v7.2 pour iOS",
+  "LearnMoreSubtitleRead": "Lire l'histoire",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/fr/2022/10/onlyoffice-documents-v7-2-pour-ios/",
+
+  "LearnCardTitleHints": "Conseils",
+  "LearnMoreTextHandwriting": "Écriture manuscrite dans ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "En savoir plus",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/fr/mobile-applications/documents/document-editor/basic-operations/handwriting.aspx",
+
+  "LearnCardTitleDeveloper": "Guide pour les développeurs",
+  "LearnMoreTextHowMobile": "Comment fonctionne l'intégration mobile",
+  "LearnMoreSubtitleLearn2": "En savoir plus",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/fr/2022/07/onlyoffice-pour-les-developpeurs-comment-fonctionne-lintegration-mobile/"
+
+}

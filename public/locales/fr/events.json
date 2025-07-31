@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Événements ONLYOFFICE | ONLYOFFICE",
+  "PageTitleOG": "Événements auxquels nous avons participé",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> participe à des événements intéressants dans le monde entier",
+  "CurrentEvents": "Rencontrez ONLYOFFICE lors d'un des événements en 2025",
+  "PastEvents": "Lisez à propos des événements auxquels ONLYOFFICE a participé",
+  "MoreInfo": "Plus d'informations",
+  "ScheduleMeeting": "Planifier une réunion",
+  "dateTemplates": {
+    "singleDay": "{{day}} {{month}} {{year}}",
+    "sameMonth": "{{dayStart}}–{{dayEnd}} {{month}} {{year}}",
+    "differentMonths": "{{dayStart}} {{monthStart}} – {{dayEnd}} {{monthEnd}} {{year}}",
+    "differentYears": "{{dayStart}} {{monthStart}} {{yearStart}} – {{dayEnd}} {{monthEnd}} {{year}}"
+  },
+  "months": {
+    "January": "janvier",
+    "February": "février",
+    "March": "mars",
+    "April": "avril",
+    "May": "mai",
+    "June": "juin",
+    "July": "juillet",
+    "August": "août",
+    "September": "septembre",
+    "October": "octobre",
+    "November": "novembre",
+    "December": "décembre"
+  }
+}

@@ -3,13 +3,14 @@ import { Section } from "@src/components/ui/Section";
 import { Trans, useTranslation } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import {
-  StyledFeaturesHeading,
+  StyledFeaturesHeader,
   StyledFeaturesText,
-  StyledFeatures,
+  StyledFeaturesList,
   StyledFeaturesButtonsWrapper,
 } from "./Features.styled";
 import { items } from "./data/items";
 import { FeatureItem } from "@src/components/widgets/FeatureItem";
+import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
 
@@ -19,26 +20,33 @@ const Features = () => {
   return (
     <Section>
       <Container>
-        <StyledFeaturesHeading level={2} size={2}>
-          <Trans
-            t={t}
-            i18nKey={"WhyOOTitle"}
-            components={[<Text as="span" color="#FF6F3D" key="0" />]}
-          />
-        </StyledFeaturesHeading>
-        <StyledFeaturesText label={t("WhyOODesc")} />
-        <StyledFeatures>
-          {items.map(({ icon, heading, text, links }, index) => (
+        <StyledFeaturesHeader>
+          <Heading level={2} size={2}>
+            <Trans
+              t={t}
+              i18nKey={"WhyOOTitle"}
+              components={[<Text as="span" color="#FF6F3D" key="0" />]}
+            />
+          </Heading>
+          <StyledFeaturesText size={1} label={t("WhyOODesc")} />
+        </StyledFeaturesHeader>
+
+        <StyledFeaturesList>
+          {items.map(({ icon, heading, text, textLinks }, index) => (
             <FeatureItem
               key={index}
               variant="horizontal"
-              icon={icon}
-              heading={t(heading ?? "")}
+              mobileVariant="horizontal-icon-top"
+              icon={{
+                ...icon,
+                isSprite: true,
+              }}
+              heading={t(String(heading))}
               text={
                 <Trans
                   t={t}
                   i18nKey={String(text)}
-                  components={links?.map((link, index) => (
+                  components={textLinks?.map((link, index) => (
                     <Link
                       key={index}
                       href={link.href}
@@ -52,7 +60,7 @@ const Features = () => {
               }
             />
           ))}
-        </StyledFeatures>
+        </StyledFeaturesList>
         <StyledFeaturesButtonsWrapper>
           <Button
             id="features-get-it-now"

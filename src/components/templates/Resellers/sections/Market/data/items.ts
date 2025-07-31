@@ -1,132 +1,87 @@
-interface IOOLanguages {
+interface IMarketLanguage {
+  id: string;
   country: string;
-  positionX?: string;
-  positionY?: string;
-  mobPositionX?: string;
-  mobPositionY?: string;
 }
 
-export const laguages: IOOLanguages[] = [
+export const languages: IMarketLanguage[] = [
   {
+    id: "indonesian",
     country: "Indonesian",
   },
   {
+    id: "german",
     country: "German",
-    positionX: "-90px",
-    mobPositionX: "-76px",
   },
   {
+    id: "latvian",
     country: "Latvian",
-    positionX: "-182px",
-    mobPositionX: "-154px",
   },
   {
+    id: "portuguese-portugal",
     country: "PortuguesePortugal",
-    positionX: "-271px",
-    mobPositionX: "-229px",
   },
   {
+    id: "czech",
     country: "Czech",
-    positionY: "-40px",
-    mobPositionY: "-34px",
   },
   {
+    id: "finnish",
     country: "Finnish",
-    positionX: "-90px",
-    positionY: "-40px",
-    mobPositionX: "-76px",
-    mobPositionY: "-34px",
   },
   {
+    id: "russian",
     country: "Russian",
-    positionX: "-182px",
-    positionY: "-40px",
-    mobPositionX: "-154px",
-    mobPositionY: "-34px",
   },
   {
+    id: "chinese-traditional",
     country: "ChineseTraditionalTaiwan",
-    positionX: "-271px",
-    positionY: "-80px",
-    mobPositionX: "-229px",
-    mobPositionY: "-67px",
   },
   {
+    id: "slovak",
     country: "Slovak",
-    positionY: "-80px",
-    mobPositionY: "-67px",
   },
   {
+    id: "spanish",
     country: "Spanish",
-    positionX: "-90px",
-    positionY: "-80px",
-    mobPositionX: "-76px",
-    mobPositionY: "-67px",
   },
   {
+    id: "chinese-simplified",
     country: "ChineseSimplified",
-    positionX: "-182px",
-    positionY: "-80px",
-    mobPositionX: "-154px",
-    mobPositionY: "-67px",
   },
   {
+    id: "basque-basque",
     country: "BasqueBasque",
-    positionX: "-271px",
-    positionY: "-40px",
-    mobPositionX: "-229px",
-    mobPositionY: "-34px",
   },
   {
+    id: "english",
     country: "English",
-    positionY: "-118px",
-    mobPositionY: "-100px",
   },
   {
+    id: "french",
     country: "French",
-    positionX: "-90px",
-    positionY: "-118px",
-    mobPositionX: "-76px",
-    mobPositionY: "-100px",
   },
   {
+    id: "portuguese-brazilian",
     country: "PortugueseBrazilian",
-    positionX: "-182px",
-    positionY: "-118px",
-    mobPositionX: "-154px",
-    mobPositionY: "-100px",
   },
   {
+    id: "malaysia",
     country: "MalayMalaysia",
-    positionX: "-271px",
-    positionY: "-118px",
-    mobPositionX: "-229px",
-    mobPositionY: "-100px",
   },
   {
+    id: "bulgarian",
     country: "Bulgarian",
-    positionY: "-159px",
-    mobPositionY: "-135px",
   },
   {
+    id: "italian",
     country: "Italian",
-    positionX: "-90px",
-    positionY: "-159px",
-    mobPositionX: "-76px",
-    mobPositionY: "-135px",
   },
   {
+    id: "turkish",
     country: "Turkish",
-    positionX: "-182px",
-    positionY: "-159px",
-    mobPositionX: "-154px",
-    mobPositionY: "-135px",
   },
   {
+    id: "armenian",
     country: "ArmenianArmenia",
-    positionX: "-271px",
-    positionY: "-159px",
-    mobPositionX: "-229px",
-    mobPositionY: "-135px",
   },
 ];

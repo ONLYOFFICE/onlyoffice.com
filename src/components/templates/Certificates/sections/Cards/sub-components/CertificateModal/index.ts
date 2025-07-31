@@ -1,0 +1,1 @@
+export { CertificateModal } from "./CertificateModal";

@@ -1,29 +1,46 @@
 import {
-  StyledFeatureImageItem,
-  StyleFeatureImageItemContent,
+  StyledFeatureImageItemContent,
   StyledFeatureImageItemText,
   StyledFeatureImageItemLink,
-  StyledFeatureImageItemImgWrapper,
-  StyledFeatureImageItemImg,
 } from "./FeatureImageItem.styled";
 import { IFeatureImageItem } from "./FeatureImageItem.types";
+import { ContentImage } from "../ContentImage";
 import { Heading } from "@src/components/ui/Heading";
 
 const FeatureImageItem = ({
   id,
   className,
-  title,
+  heading,
   text,
   links,
+  contentWidth = 448,
   image,
-  position = "left",
+  position,
+  fontSize,
+  rowGap,
+  gap,
+  marginTop
 }: IFeatureImageItem) => {
   return (
-    <StyledFeatureImageItem id={id} className={className} $position={position}>
-      <StyleFeatureImageItemContent>
-        <Heading level={3} label={title} />
-        <StyledFeatureImageItemText color="#666666" lineHeight="150%">
-          {text.label}
+    <ContentImage
+      id={id}
+      className={className}
+      contentWidth={contentWidth}
+      position={position}
+      rowGap={rowGap}
+      gap={gap}
+      marginTop={marginTop}
+      image={{
+        url: image.url,
+        url2x: image.url2x,
+        width: image.width,
+        height: image.height,
+      }}
+    >
+      <StyledFeatureImageItemContent>
+        <Heading level={3} label={heading} />
+        <StyledFeatureImageItemText color="#666666" $fontSize={fontSize}>
+          {text}
         </StyledFeatureImageItemText>
         {links?.map(({ href, label, isExternal }, index) => (
           <StyledFeatureImageItemLink
@@ -39,16 +56,8 @@ const FeatureImageItem = ({
             {label}
           </StyledFeatureImageItemLink>
         ))}
-      </StyleFeatureImageItemContent>
-
-      <StyledFeatureImageItemImgWrapper $position={position}>
-        <StyledFeatureImageItemImg
-          $imageHeight={image.height ?? 504}
-          $image={image.url}
-          $image2x={image.url2x}
-        />
-      </StyledFeatureImageItemImgWrapper>
-    </StyledFeatureImageItem>
+      </StyledFeatureImageItemContent>
+    </ContentImage>
   );
 };
 

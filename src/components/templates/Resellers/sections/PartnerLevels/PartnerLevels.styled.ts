@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Text } from "@src/components/ui/Text";
 
-const StyledPartnerLevelsText = styled(Text)`
-  padding: 24px 0 32px;
+const StyledPartnerLevelsHeader = styled.div`
+  display: grid;
+  row-gap: 24px;
+  margin: 0 auto 32px;
+  max-width: 737px;
+  text-align: center;
 `;
 
 const StyledSupportLevelsTable = styled.table`
@@ -134,6 +137,7 @@ const StyledSupportLevelsTable = styled.table`
         flex: 0 1 100%;
         width: initial;
         text-align: center;
+        background-color: #f9f9f9;
       }
     }
 
@@ -166,14 +170,14 @@ const StyledSupportLevelsIcon = styled.span<{ $icon: string }>`
     $icon === "check"
       ? "url('/images/icons/check.svg')"
       : $icon === "dash"
-      ? "url('/images/icons/dash.svg')"
-      : "none"};
+        ? "url('/images/icons/dash.svg')"
+        : "none"};
   background-repeat: no-repeat;
   background-size: contain;
 `;
 
 export {
-  StyledPartnerLevelsText,
+  StyledPartnerLevelsHeader,
   StyledSupportLevelsTable,
   StyledSupportLevelsIcon,
 };

@@ -1,7 +1,7 @@
-import { IRoomHero } from "@src/components/modules/room/RoomHero";
+import { IRoomsHero } from "@src/components/modules/rooms/RoomsHero";
 
-export const hero: IRoomHero = {
-  title: "UseVirtualDataRooms",
+export const hero: IRoomsHero = {
+  heading: "UseVirtualDataRooms",
   text: "OrganizeSecure",
   items: [
     { label: "IdealForDueDiligence" },

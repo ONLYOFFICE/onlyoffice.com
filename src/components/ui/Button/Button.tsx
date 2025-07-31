@@ -17,11 +17,15 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
       as = "button",
       href,
       target,
+      download,
       rel,
       fullWidth,
       variant = "primary",
       size = "medium",
+      borderRadius = "9px",
+      backgroundColor,
       onClick,
+      ...rest
     },
     ref,
   ) => {
@@ -34,9 +38,10 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
         tabIndex={tabIndex}
         type={as === "button" ? type : undefined}
         title={title}
-        as={as === "a" ? Link : as}
-        href={as === "a" ? href ?? "" : undefined}
+        as={download ? "a" : as === "a" ? Link : as}
+        href={as === "a" ? (href ?? "") : undefined}
         target={as === "a" ? target : undefined}
+        download={download}
         rel={
           as === "a"
             ? !rel && target === "_blank"
@@ -48,6 +53,9 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
         $fullWidth={fullWidth ?? undefined}
         $variant={variant}
         $size={size}
+        $borderRadius={borderRadius}
+        $backgroundColor={backgroundColor}
+        {...rest}
       >
         {children || label}
       </StyledButton>

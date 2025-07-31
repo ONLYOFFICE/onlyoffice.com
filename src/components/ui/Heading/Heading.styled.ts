@@ -9,7 +9,12 @@ const StyledHeading = styled.h1<{
   $textAlign: IHeading["textAlign"];
   $textTransform: IHeading["textTransform"];
 }>`
-  color: ${(props) => (props.$color ? props.$color : "#333333")};
+  color: ${(props) =>
+    props.$color === "main"
+      ? "#ff6f3d"
+      : props.$color
+        ? props.$color
+        : "#333333"};
   text-align: ${(props) => props.$textAlign};
   text-transform: ${(props) => props.$textTransform};
 

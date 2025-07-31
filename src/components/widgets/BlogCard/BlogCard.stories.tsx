@@ -24,10 +24,10 @@ export default {
       control: { type: "text" },
     },
     heading: {
-      control: { type: "text" },
+      control: { type: "object" },
     },
     text: {
-      control: { type: "object" },
+      control: { type: "text" },
     },
     links: {
       control: { type: "object" },

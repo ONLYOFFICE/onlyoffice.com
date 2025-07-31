@@ -7,21 +7,51 @@ import {
 } from "./Modal.styled";
 import { IModal } from "./Modal.types";
 
+let openModalCount = 0;
+let cleanupTimeout: ReturnType<typeof setTimeout> | null = null;
+const openModals: HTMLDivElement[] = [];
+
+const modalManager = {
+  addModal() {
+    if (cleanupTimeout) {
+      clearTimeout(cleanupTimeout);
+      cleanupTimeout = null;
+    }
+
+    openModalCount += 1;
+    if (openModalCount === 1) {
+      const scrollbarWidth =
+        window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
+  },
+
+  removeModal() {
+    openModalCount = Math.max(openModalCount - 1, 0);
+    if (openModalCount === 0) {
+      cleanupTimeout = setTimeout(() => {
+        document.body.style.overflow = "";
+        document.body.style.paddingRight = "";
+        cleanupTimeout = null;
+      }, 200);
+    }
+  },
+};
+
 const Modal = ({
   id,
   className,
   children,
-  showCloseIcon,
   maxWidth = "736px",
+  bgColor = "rgba(0, 0, 0, 0.4)",
+  withCloseBtn,
+  positionCloseBtn,
   isOpen,
   onClose,
 }: IModal) => {
   const modalRef = useRef<HTMLDivElement>(null);
-
-  const onCloseModal = useCallback(() => {
-    onClose();
-    stopAllVideos();
-  }, [onClose]);
+  const wasOpen = useRef(false);
 
   const stopAllVideos = () => {
     if (!modalRef.current) return;
@@ -42,74 +72,109 @@ const Modal = ({
       });
   };
 
+  const onCloseModal = useCallback(() => {
+    onClose();
+    stopAllVideos();
+  }, [onClose]);
+
   useEffect(() => {
     if (!isOpen) return;
 
-    const focusableElements = Array.from(
-      modalRef.current?.querySelectorAll<HTMLElement>(
-        "button, [href], input, select, textarea, iframe, [tabindex]:not([tabindex='-1'])",
-      ) || [],
-    ).filter((el) => !el.hasAttribute("disabled") && el.tabIndex >= 0);
-
-    if (focusableElements.length > 0) {
-      focusableElements[0].focus();
+    if (modalRef.current && !openModals.includes(modalRef.current)) {
+      openModals.push(modalRef.current);
     }
 
+    const currentModal = modalRef.current;
+
+    const focusableSelectors = [
+      "a[href]",
+      "area[href]",
+      "input:not([disabled])",
+      "select:not([disabled])",
+      "textarea:not([disabled])",
+      "button:not([disabled])",
+      "iframe",
+      "object",
+      "embed",
+      "[contenteditable]",
+      '[tabindex]:not([tabindex="-1"])',
+    ];
+
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (openModals[openModals.length - 1] !== currentModal) return;
+
       if (e.key === "Escape") {
         onCloseModal();
-      } else if (e.key === "Tab") {
+      } else if (e.key === "Tab" && currentModal) {
+        const focusableElements = Array.from(
+          currentModal.querySelectorAll<HTMLElement>(
+            focusableSelectors.join(","),
+          ),
+        ).filter((el) => el.offsetParent !== null);
+
+        if (focusableElements.length === 0) return;
+
         const firstElement = focusableElements[0];
         const lastElement = focusableElements[focusableElements.length - 1];
 
-        if (e.shiftKey && document.activeElement === firstElement) {
-          e.preventDefault();
-          lastElement.focus();
-        } else if (!e.shiftKey && document.activeElement === lastElement) {
-          e.preventDefault();
-          firstElement.focus();
+        const activeElement = document.activeElement as HTMLElement;
+
+        if (e.shiftKey) {
+          if (
+            activeElement === firstElement ||
+            !currentModal.contains(activeElement)
+          ) {
+            e.preventDefault();
+            lastElement.focus();
+          }
+        } else {
+          if (
+            activeElement === lastElement ||
+            !currentModal.contains(activeElement)
+          ) {
+            e.preventDefault();
+            firstElement.focus();
+          }
         }
       }
     };
 
-    const handleFocusIn = (e: FocusEvent) => {
-      if (!modalRef.current?.contains(e.target as Node)) {
-        e.preventDefault();
-        focusableElements[0]?.focus();
-      }
-    };
-
     document.addEventListener("keydown", handleKeyDown);
-    document.addEventListener("focusin", handleFocusIn);
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
-      document.removeEventListener("focusin", handleFocusIn);
+
+      if (currentModal) {
+        const index = openModals.indexOf(currentModal);
+        if (index > -1) {
+          openModals.splice(index, 1);
+        }
+      }
     };
   }, [isOpen, onCloseModal]);
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout;
-
-    if (isOpen) {
-      const scrollbarWidth =
-        window.innerWidth - document.documentElement.clientWidth;
-      document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = `${scrollbarWidth}px`;
-    } else {
-      timeout = setTimeout(() => {
-        document.body.style.paddingRight = "";
-        document.body.style.overflow = "";
-      }, 200);
+    if (isOpen && !wasOpen.current) {
+      modalManager.addModal();
+      wasOpen.current = true;
+    } else if (!isOpen && wasOpen.current) {
+      modalManager.removeModal();
+      wasOpen.current = false;
     }
 
-    return () => clearTimeout(timeout);
+    return () => {
+      if (wasOpen.current) {
+        modalManager.removeModal();
+        wasOpen.current = false;
+      }
+    };
   }, [isOpen]);
 
   return (
     <StyledModal
       onClick={onCloseModal}
       $isOpen={isOpen}
+      $bgColor={bgColor}
       id={id}
       className={className}
     >
@@ -119,7 +184,12 @@ const Modal = ({
           onClick={(e) => e.stopPropagation()}
           $maxWidth={maxWidth}
         >
-          {showCloseIcon && <StyledModalCloseBtn onClick={onCloseModal} />}
+          {withCloseBtn && (
+            <StyledModalCloseBtn
+              $positionCloseBtn={positionCloseBtn}
+              onClick={onCloseModal}
+            />
+          )}
           {children}
         </StyledModalWrapper>
       </StyledModalContainer>

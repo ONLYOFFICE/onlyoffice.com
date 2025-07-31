@@ -1,0 +1,1 @@
+export { DocsEnterpriseTemplate } from "./DocsEnterprise";

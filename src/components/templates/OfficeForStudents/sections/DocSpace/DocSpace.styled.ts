@@ -10,7 +10,7 @@ const StyledDesktopEditorsHeading = styled(Heading)`
   margin-bottom: 24px;
 
   @media ${device.tabletS} {
-    text-align: start;
+    text-align: initial;
   }
 
   @media ${device.mobile} {
@@ -21,35 +21,34 @@ const StyledDesktopEditorsHeading = styled(Heading)`
 
 const StyledDesktopEditorsText = styled(Text)`
   max-width: 736px;
-  margin: 0 auto;
+  margin: 0 auto 72px;
   text-align: center;
   font-size: 18px;
   line-height: 150%;
 
   @media ${device.tabletS} {
-    text-align: start;
+    text-align: initial;
   }
 
   @media ${device.mobile} {
+    margin: 0 auto 56px;
     font-size: 14px;
   }
 `;
 
 const StyledDesktopEditorsFeatures = styled.div`
-  margin: 72px 0;
   display: grid;
-  gap: 72px;
-  justify-content: center;
+  row-gap: 72px;
+  margin-bottom: 72px;
 
   @media ${device.mobile} {
-    margin: 56px 0;
-    gap: 56px;
+    row-gap: 56px;
+    margin-bottom: 56px;
   }
 `;
 
 const StyledButtonWrapper = styled.div`
-  display: flex;
-  justify-content: center;
+  text-align: center;
 `;
 
 export {

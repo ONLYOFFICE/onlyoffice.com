@@ -65,6 +65,12 @@ export default {
       control: { type: "select" },
       options: ["small", "medium"],
     },
+    borderRadius: {
+      control: { type: "text" },
+    },
+    backgroundColor: {
+      control: { type: "color" },
+    },
   },
 } as Meta<typeof Button>;
 

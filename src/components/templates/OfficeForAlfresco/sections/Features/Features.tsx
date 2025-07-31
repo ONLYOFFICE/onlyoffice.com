@@ -25,9 +25,11 @@ const Features = () => {
             {items.map((item, index) => (
               <FeatureItem
                 key={index}
+                maxWidth="352px"
                 icon={{
                   url: item.icon.url,
                   positionX: item.icon.positionX,
+                  isSprite: true,
                 }}
                 text={
                   <Trans

@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Alternativa LibreOffice - webová kancelářská sada",
+  "PageDescription": "Online alternativa k LibreOffice. Stáhnout pro Windows, Linux, Mac OS. K dispozici jsou také aplikace Android a iOS. Dosáhněte funkce a funkce spolupráce.",
+
+  "HeroTitle": "<0>ONLYOFFICE</0>, nejlepší alternativa LibreOffice",
+  "GetOODocsNow": "Získejte ONLYOFFICE nyní",
+  "CompatibleWithMicrosoftOfficeFormats": "100% kompatibilní s formáty Microsoft Office",
+
+  "ReasonsTitle": "<0>6 důvody</0>, proč ONLYOFFICE je nejlepší alternativa pro LibreOffice",
+  "MaximumCompatibility": "Maximální kompatibilita se soubory MS Office",
+  "MaximumCompatibilityText": "ONLYOFFICE Docs používají jako základní formát OOXML, který zaručuje nejvyšší kompatibilitu se soubory Microsoft Word, Excel a PowerPoint (.docx, .xlsx a .pptx).",
+  "DesktopApp": "Web, stolní počítač, mobilní zařízení",
+  "DesktopAppText": "S aplikací ONLYOFFICE můžete pracovat online z libovolného prohlížeče a operačního systému, upravovat dokumenty offline pomocí bezplatných aplikací pro počítače se systémy Windows, Linux a macOS a také používat bezplatné mobilní aplikace pro Android a iOS.",
+  "DocsSheetsSlides": "Docs, sheets, slides, forms, PDF",
+  "DocsSheetsSlidesText": "Edit and collaborate on text documents and spreadsheets of any complexity, create stunning presentations, view and annotate PDFs. Build professional-looking forms and templates from scratch or any existing DOCX file, let other users fill them out, and save forms as fillable PDF files.",
+  "Seamless": "Bezproblémová spolupráce",
+  "SeamlessText": "ONLYOFFICE Docs provides users with character- and paragraph-level co-editing modes, review and track changes, version history, comments and mentions, built-in chat, plugins for audio and video calls. You can easily share your documents with flexible permissions such as commenting, reviewing, filling forms, custom filtering.",
+  "Flexibility": "Flexibilita",
+  "FlexibilityText": "You are free to choose how to use the online editors: as a part of the room-based environment ONLYOFFICE DocSpace, within any sync&share or ECM service like Nextcloud, Alfresco, Confluence, Seafile, etc., or integrated into the solution you're building yourself.",
+  "AIHelper": "AI helper",
+  "AIHelperText": "Connect any AI provider, use different AI models for different tasks. Make use of the AI assistant plugin to boost work with your texts: run word analysis and explore the meaning of unknown words, generate passages, images and keywords, summarize and translate stories, find synonyms.",
+
+  "PresentationTitle": "Prohlédněte <0>si v prezentaci</0> rozdíl mezi kancelářskými balíky:",
+
+  "OODocsVsLibreOfficeVsOpenOffice": "ONLYOFFICE vs LibreOffice vs OpenOffice [Tested Side By Side]",
+  "OODocsVsLibreOfficeVsOpenOfficeText": "Windows Report představuje srovnání alternativ Microsoft Office vedle sebe - včetně ONLYOFFICE, LibreOffice a OpenOffice. Windows Report je vysoce důvěryhodný webový zdroj informací o produktech a službách souvisejících s Windows, včetně zpráv a tipů pro uživatele technologií.",
+  "OODocsVsLibreOffice": "ONLYOFFICE vs LibreOffice: what to choose when you decide to ditch Microsoft",
+  "OODocsVsLibreOfficeText": "Ano, Microsoft Office je v super, ale jednoho dne to bude zatěžující pro váš rozpočet. Nebo se můžete vzdát a rebesky následovat otevřený zdroj. Bez ohledu na to, jaké jsou vaše důvody, budete potřebovat dobrou náhradu. Takže ... ONLYOFFICE nebo LibreOffice?",
+
+  "WhatWentWrong": "Co se stalo v LibreOffice? <0>Kliknutím</0> sem zobrazíte podrobnosti"
+}

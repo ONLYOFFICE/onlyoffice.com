@@ -20,6 +20,9 @@ export default {
     className: {
       control: { type: "text" },
     },
+    background: {
+      control: { type: "color" },
+    },
     text: {
       control: { type: "text" },
     },

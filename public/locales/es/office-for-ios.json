@@ -1,0 +1,69 @@
+{
+  "PageTitle": "Suite ofimática gratuita para el iPhone y el iPad | ONLYOFFICE Documents",
+  "PageDescription": "Edita y coedita documentos, hojas de cálculo y presentaciones, rellena formularios en tu dispositivo iOS.",
+
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, una <0>suite ofimática móvil</0> sólida para tu iPhone e iPad",
+  "AbsolutelyFree": "Absolutamente <0>gratis</0>. Sin anuncios. Sin compras dentro de la app.",
+
+  "OneAppThreeEditors": "Una app - <0>tres editores</0> - funciones múltiples",
+  "CompatibleWithMSOffice": "100% compatible con formatos de MS Office",
+
+  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.es.svg",
+
+  "FeaturesItemHeadingFull": "Procesador de textos lleno de funcionalidades",
+  "FeaturesItemTextMakeUse": "Haz uso de múltiples herramientas de procesamiento de texto: página, párrafo y formato de texto, tablas, autoformas, gráficos, etc. Crea documentos de texto de cualquier tamaño y complejidad. Imprímelas vía AirPrint.",
+
+  "FeaturesItemHeadingComplete": "Editor de hojas de cálculo completo",
+  "FeaturesItemTextManage": "Gestiona los datos de tu hoja de cálculo: trabaja con filas y columnas, ajusta los parámetros de las celdas, utiliza más de 450 fórmulas, clasifica y filtra los datos.",
+
+  "FeaturesItemHeadingCollaborative": "Editor colaborativo de presentaciones",
+  "FeaturesItemTextMakeWork": "Trabaja con todos los objetos populares en tus diapositivas: inserta imágenes, añade y edita autoformas, cuadros y gráficos, textos y otros elementos.",
+
+  "FeaturesItemHeadingOnline": "Rellenador de formularios en línea",
+  "FeaturesItemTextMakeView": "Visualiza y rellena formularios. Navega fácilmente de un campo a otro. Guarda el resultado como un archivo PDF o DOCX.",
+
+  "FeaturesItemHeadingPDF": "Visor de PDF y media player",
+  "FeaturesItemTextMakeViewPDF": "Ve documentos e imágenes PDF, reproduce archivos de audio y vídeo. Abre archivos .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
+
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents es un producto excelente y sus usuarios le han concedido el premio 'Muy bueno'\".",
+  "MichaelGanss": "Michael Ganss,",
+
+  "RealTimeCollaboration": "Colaboración en tiempo real",
+  "BeMoreProductive": "Sé más productivo. Conecta tu aplicación a la nube de ONLYOFFICE. Comparte documentos para coeditarlos con tus compañeros de equipo en tiempo real. Comenta y sigue los cambios. Añade anotaciones gráficas.",
+
+  "VideoCardHeading": "Descubre ONLYOFFICE Documents, una sólida suite ofimática móvil",
+
+  "GetStartedAndChoose": "Empieza y elige dónde trabajar",
+
+  "ChooseItemOnDevice": "En el dispositivo",
+  "ChooseItemManageDocuments": "Administra documentos en el dispositivo y edítalos sin conexión.",
+
+  "ChooseItemInOnlyOffice": "En la nube ONLYOFFICE",
+  "ChooseItemAccessDocs": "Accede a los documentos desde la nube de ONLYOFFICE y a los almacenamientos (Dropbox, Google Drive, etc.) conectados a ella y colabora con tu equipo.",
+
+  "ChooseItemInYourCloud": "En tu nube",
+  "ChooseItemConnectNextcloud": "Conecta Nextcloud, ownCloud o cualquier otra nube trabajando a través de WebDAV y edita documentos directamente desde la app.",
+
+  "ChooseItemFromOther": "Desde otras apps",
+  "ChooseItemImportDocuments": "Importa documentos desde aplicaciones como iTunes, Files, etc.",
+
+  "GetMoreWithComplete": "Obtén más con la versión web móvil completa",
+  "WorkOnDocumentsWithin": "Trabaja con documentos en el navegador de tu teléfono móvil. Ve a tu portal web de ONLYOFFICE y obtén acceso a más herramientas de edición y colaboración en documentos.",
+
+  "LearnMoreHeading": "Más información sobre ONLYOFFICE Documents para iOS",
+
+  "LearnCardTitleRelease": "Notas de la versión",
+  "LearnMoreTextMeet": "Descubre ONLYOFFICE Documents v7.2 para iOS",
+  "LearnMoreSubtitleRead": "Leer la historia",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/es/2022/10/onlyoffice-documents-v7-2-para-ios/",
+
+  "LearnCardTitleHints": "Consejos",
+  "LearnMoreTextHandwriting": "Escritura a mano en ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "Más información",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/es/mobile-applications/documents/document-editor/basic-operations/handwriting.aspx",
+
+  "LearnCardTitleDeveloper": "Guía para desarrolladores",
+  "LearnMoreTextHowMobile": "Cómo funciona la integración móvil",
+  "LearnMoreSubtitleLearn2": "Más información",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/es/2022/07/onlyoffice-para-desarrolladores-como-funciona-la-integracion-movil/"
+}

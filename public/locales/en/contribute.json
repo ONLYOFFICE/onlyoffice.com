@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Help us make ONLYOFFICE better | ONLYOFFICE",
+  "PageDescription": "Contribute to the ONLYOFFICE project: develop, translate, test, or document and spread the word.",
+
+  "HeroTitle": "Become part of<br> the <span>ONLYOFFICE</span> family",
+  "HeroText": "Contribute to the ONLYOFFICE open source project and make it even better!",
+
+  "ImproveOO": "Improve ONLYOFFICE",
+  "DevelopYourOwnPluginOrMacros": "Develop your own plugin or macros for ONLYOFFICE Docs.",
+  "ReadAPIDocumentation": "Read API documentation",
+  "CreateYourOwnForm": "Create your own form templates and share them with others.",
+  "OpenOurFormLibrary": "Open our form library",
+  "CreateAnExtensionOrModule": "Create an extension or module for ONLYOFFICE DocSpace.",
+  "DidYouFindABug": "Did you find a bug? Report issues on <0>GitHub</0> or <1>Forum</1>.",
+  "MoreInfo": "More info",
+
+  "SocialMediaText": "Interact with us on <0>blog</0> or social media channels",
+
+  "SpreadTitle": "Spread the ONLYOFFICE technology",
+  "SpreadText": "Build a connector for your own platform to bring ONLYOFFICE to everyone.",
+  "SpreadLink": "Read API documentation",
+  "More": "More",
+
+  "TranslateOO": "<0>Translate</0> ONLYOFFICE",
+  "TranslateOOText": "<p>Do you want to help us translate the ONLYOFFICE interface into your mother tongue to make it accessible anywhere in the world?</p><p>Join our volunteer translator community writing to us at <0>documentation@onlyoffice.com</0> and get access to our <1>online translation system</1>.</p>",
+
+  "TestOO": "<0>Test</0> ONLYOFFICE",
+  "TestOOText": "<p>Become an ONLYOFFICE beta-tester to help us test the upcoming features and solutions.</p><p>Contact us at <0>press@onlyoffice.com</0>.</p>",
+
+  "DocumentOO": "<0>Document</0> ONLYOFFICE",
+  "DocumentOOText": "<p>Have you some tips or tricks to work with ONLYOFFICE more efficiently?</p><p>Did not find information on how to use some features?</p><p>Do you want to translate the available documentation to your mother tongue?</p><p>Contact us at <0>documentation@onlyoffice.com</0> to share your thoughts.</p>",
+
+  "ContactsImgUrl": "/images/templates/contribute/contacts/en/contacts-bg.png",
+  "ContactsImgUrl2x": "/images/templates/contribute/contacts/en/contacts-bg@2x.png"
+}

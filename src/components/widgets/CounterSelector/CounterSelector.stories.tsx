@@ -21,6 +21,31 @@ export default {
     className: {
       control: { type: "text" },
     },
+    variant: {
+      control: { type: "select" },
+      options: ["default", "input"],
+    },
+    buttonSize: {
+      control: { type: "select" },
+      options: ["small", "medium", "large"],
+    },
+    valueSize: {
+      control: { type: "select" },
+      options: ["small", "medium"],
+    },
+    label: {
+      control: { type: "text" },
+    },
+    bgColor: {
+      control: { type: "text" },
+    },
+    autoFocus: {
+      control: { type: "boolean" },
+      options: [true, false],
+    },
+    value: {
+      control: { type: "text" },
+    },
     items: {
       control: { type: "object" },
     },
@@ -30,20 +55,43 @@ export default {
   },
 } as Meta<typeof CounterSelector>;
 
-const Template: StoryFn<ICounterSelector> = (args: ICounterSelector) => {
+type IICounterSelectorItems = "100" | "250" | "500";
+
+const Template: StoryFn<ICounterSelector<IICounterSelectorItems>> = (args) => {
+  const hasItems = Array.isArray(args.items) && args.items.length > 0;
   const [selected, setSelected] = useState(args.selected);
+  const [value, setValue] = useState(args.value);
+
+  const handleChange = (val: IICounterSelectorItems) => {
+    if (hasItems) {
+      setSelected(val);
+    } else {
+      setValue(val);
+    }
+  };
 
   return (
-    <CounterSelector {...args} selected={selected} onChange={setSelected} />
+    <CounterSelector
+      {...args}
+      selected={hasItems ? selected : undefined}
+      value={!hasItems ? value : undefined}
+      onChange={handleChange}
+    />
   );
 };
 
 export const Default = Template.bind({});
 Default.args = {
   items: [
-    { id: "counter-selector-100", label: "100" },
-    { id: "counter-selector-250", label: "250" },
-    { id: "counter-selector-500", label: "500" },
+    { id: "100", label: "100" },
+    { id: "250", label: "250" },
+    { id: "500", label: "500" },
   ],
-  selected: "counter-selector-100",
+  selected: "100",
+};
+
+export const InputVariant = Template.bind({});
+InputVariant.args = {
+  variant: "input",
+  value: "1",
 };

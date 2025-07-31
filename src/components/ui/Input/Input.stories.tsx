@@ -34,10 +34,6 @@ export default {
       control: { type: "select" },
       options: ["default", "success", "error"],
     },
-    variant: {
-      control: { type: "select" },
-      options: ["search", "password"],
-    },
     type: {
       control: { type: "select" },
       options: ["text", "number", "password", "tel", "email", "search"],
@@ -53,13 +49,20 @@ export default {
     value: {
       control: { type: "text" },
     },
-    defaultValue: {
-      control: { type: "text" },
-    },
     name: {
       control: { type: "text" },
     },
+    maxLength: {
+      control: { type: "number" },
+    },
+    pattern: {
+      control: { type: "text" },
+    },
     autoFocus: {
+      control: { type: "boolean" },
+      options: [true, false],
+    },
+    active: {
       control: { type: "boolean" },
       options: [true, false],
     },
@@ -71,10 +74,6 @@ export default {
     },
     rightSide: {
       control: { type: "text" },
-    },
-    withClearButton: {
-      control: { type: "boolean" },
-      options: [true, false],
     },
   },
 } as Meta<typeof Input>;
@@ -109,25 +108,6 @@ export const SimpleInput = Template.bind({});
 SimpleInput.args = {
   label: "First name",
   placeholder: "Marina",
-};
-
-export const Search = Template.bind({});
-Search.args = {
-  label: "Search on site",
-  placeholder: "Download",
-  variant: "search",
-};
-
-export const Password = Template.bind({});
-Password.args = {
-  label: "Password",
-  variant: "password",
-};
-
-export const WithClearButton = Template.bind({});
-WithClearButton.args = {
-  ...SimpleInput.args,
-  withClearButton: true,
 };
 
 export const WithLeftSide = Template.bind({});

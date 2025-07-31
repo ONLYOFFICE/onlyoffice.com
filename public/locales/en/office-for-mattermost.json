@@ -1,0 +1,46 @@
+{
+  "PageTitle": "Online office suite for Mattermost | ONLYOFFICE Docs",
+  "PageDescription": "Edit and co-edit documents within Mattermost",
+
+  "OnlineOfficeForConnector": "Online office for <0>Mattermost</0>",
+  "Subheader": "Open, edit, and co-author office documents in your Mattermost chat using ONLYOFFICE Docs",
+  "GetItNow": "Get it now",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Fully compatible with docx, xlsx, and pptx",
+
+  "HeroTab1ImgUrl": "/images/templates/office-for-mattermost/hero/screen1.png",
+  "HeroTab1ImgUrl2x": "/images/templates/office-for-mattermost/hero/screen1@2x.png",
+  "HeroTab2ImgUrl": "/images/templates/office-for-mattermost/hero/screen2.png",
+  "HeroTab2ImgUrl2x": "/images/templates/office-for-mattermost/hero/screen2@2x.png",
+  "HeroTab3ImgUrl": "/images/templates/office-for-mattermost/hero/screen3.png",
+  "HeroTab3ImgUrl2x": "/images/templates/office-for-mattermost/hero/screen3@2x.png",
+  "HeroTab4ImgUrl": "/images/templates/office-for-mattermost/hero/screen4.png",
+  "HeroTab4ImgUrl2x": "/images/templates/office-for-mattermost/hero/screen4@2x.png",
+  "HeroTab5ImgUrl": "/images/templates/office-for-mattermost/hero/screen5.png",
+  "HeroTab5ImgUrl2x": "/images/templates/office-for-mattermost/hero/screen5@2x.png",
+  "HeroTab6ImgUrl": "/images/templates/office-for-mattermost/hero/screen6.png",
+  "HeroTab6ImgUrl2x": "/images/templates/office-for-mattermost/hero/screen6@2x.png",
+
+  "GetStarted": "Get started",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Mattermost",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for Mattermost now from the <0>GitHub</0>.",
+
+  "WhyOO": "Why ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs is a self-hosted office suite for working on text documents, spreadsheets, presentations, fillable forms and PDFs.",
+  "Reason1": "Ready-to-use integration plugins and quick configuration",
+  "Reason2": "Intuitive interface with tabs",
+  "Reason3": "Multiple editing, formatting, and styling tools",
+  "Reason4": "Real-time co-editing, file sharing",
+  "Reason5": "Free Community and scalable Enterprise versions",
+  "Reason6": "Source code on GitHub",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>GitHub</0>.",
+  "HowToStartStep3": "Configure the connector and enable JWT.",
+  "HowToStartImgUrl": "/images/templates/office-for-mattermost/how-to-start/how-to-start.png",
+
+  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+}

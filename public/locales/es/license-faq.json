@@ -1,0 +1,14 @@
+{
+  "PageTitle": "ONLYOFFICE Versión de servidor Comunidad | ONLYOFFICE",
+  "PageDescription": "Versión de código abierto de ONLYOFFICE",
+  "Q1": "¿Qué es la licencia publica general Affero GNU v.3 (AGPL v.3) y donde puedo leerla?",
+  "A1": "La licencia publica general Affero GNU v.3 es una licencia copyleft, gratuita para software y otros tipos de trabajo, diseñada específicamente para asegurar la cooperación con comunidad en el caso de software que corra en servidores de red. Usted puede encontrar el texto completo aquí – <0>https://www.gnu.org/licenses/agpl.html</0>",
+  "Q2": "¿Podemos utilizar ONLYOFFICE para uso interno en nuestra organización comercial?",
+  "A2": "Si su empresa es una organización comercial común usted puede libremente usar ONLYOFFICE Open Source Comunidad para sus propios propósitos sin ningunas limitaciones adicionales. Usted puede libremente usar ONLYOFFICE Open Source Comunidad en ambos servidores basados en el internet e intranet. Si usted tiene algunas dificultades en instalar o ajustar ONLYOFFICE, no dude en ponerse en contacto con nuestro <0>soporte técnico</0>.",
+  "Q3": "¿Podemos usar un código fuente de ONLYOFFICE en nuestra propia aplicación o sitio web?",
+  "A3": "Si, cualesquier desarrolladores pueden usar el código fuente de ONLYOFFICE en su propia aplicación o sitio web, de conformidad con <0>licencia publica general Affero GNU v.3</0> esta aplicación/sitio web debe ser lanzada(o) bajo la licencia GNU AGPL v.3. Preste atención a la <1>sección 13</1> de GNU AGPL v.3, conforme a esta sección los códigos fuente de aplicación/sitio que contienen los códigos fuente de ONLYOFFICE deben estár abiertos y publicados bajo la licencia GNU AGPL v.3.",
+  "Q4": "La AGPL no es apta para mi empresa. ¿Hay otros tipos de licencia para ONLYOFFICE?",
+  "A4": "Por favor, póngase en contacto con nuestro <0>equipo de ventas</0> para discutir cualquier pregunta relativa a este asunto.",
+  "Q5": "¿Puedo eliminar logo de ONLYOFFICE o cambiarlo a mi propio logo?",
+  "A5": "Сonforme a la <0>Sección 7</0> de la licencia pública general Affero GNU v.3 (AGPL v.3) nosotros podemos complementar los términos de esta licencia y obligando a los usuarios conservar los avisos legales razonables. Usando este permiso, declaramos que usted no puede eliminar el logo original ONLYOFFICE de productos y componentes ONLYOFFICE o cambiarlo a su propio. Las interfaces de usuarios interactivas en versiones modificadas de código fuente y objeto del programa deben exponer los avisos legales apropiados, como se requiere bajo la <1>Sección 5</1> de GNU AGPL versión 3. Si quiere discutir cualesquier asuntos de marca compartida, no dude en ponerse en contacto con nuestro departamento de ventas vía <2>sales@onlyoffice.com</2>."
+}

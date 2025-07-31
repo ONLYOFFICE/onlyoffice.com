@@ -1,0 +1,12 @@
+{
+  "ModalTitle": "Ne manquez pas une mise à jour !",
+  "GetTheLatestOONews": "Recevez les dernières actualités d'ONLYOFFICE par email",
+  "FirstName": "Nom",
+  "FirstNameIsEmpty": "Le champ Prénom est vide",
+  "YourEmail": "Email",
+  "EmailIsEmpty": "Le champ Email est vide",
+  "EmailIsIncorrect": "L'adresse email est incorrecte",
+  "Subscribe": "S'abonner",
+
+  "MessageWithConfirmation": "Nous avons envoyé un email de confirmation à votre adresse de courrier électronique."
+}

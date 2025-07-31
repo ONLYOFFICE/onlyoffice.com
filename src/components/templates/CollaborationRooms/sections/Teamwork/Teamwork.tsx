@@ -41,7 +41,7 @@ const Teamwork = () => {
                 {group.map((item, j) => (
                   <TeamworkCard
                     key={j}
-                    title={t(item.title)}
+                    heading={t(item.heading)}
                     text={t(item.text)}
                     image={{
                       url: item.image.url,

@@ -1,6 +1,6 @@
 export interface ITeamworkCard {
-  /** Title of the card */
-  title: string;
+  /** Heading of the card */
+  heading: string;
   /** Text content of the card */
   text: string;
   /** Image details including URL and position */

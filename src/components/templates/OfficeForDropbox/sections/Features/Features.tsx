@@ -19,6 +19,7 @@ const Features = () => {
           <StyledFeaturesItems>
             {items.map((item, index) => (
               <FeatureItem
+                maxWidth="352px"
                 icon={{
                   url: item.icon.url,
                 }}

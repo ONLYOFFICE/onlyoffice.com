@@ -1,0 +1,12 @@
+{
+  "ModalTitle": "更新をお見逃しなく！",
+  "GetTheLatestOONews": "お客様のメールボックス宛に ONLYOFFICE 最新ニュースをお届けします",
+  "FirstName": "名",
+  "FirstNameIsEmpty": "名前が入力されていません",
+  "YourEmail": "メールアドレス",
+  "EmailIsEmpty": "メールが入力されていません",
+  "EmailIsIncorrect": "メールが正しくありません",
+  "Subscribe": "購読",
+
+  "MessageWithConfirmation": "お客様のメールアドレスに確認メールを送信しました。"
+}

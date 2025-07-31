@@ -8,8 +8,10 @@ const StyledCarouselButton = styled.button`
   border-radius: 50%;
   width: 56px;
   height: 56px;
-  background-color: #ffffff;
-  transition: box-shadow 0.2s;
+  background-color: transparent;
+  transition:
+    background-color 0.2s,
+    box-shadow 0.2s;
   cursor: pointer;
 
   svg {
@@ -20,6 +22,7 @@ const StyledCarouselButton = styled.button`
 
   &:hover {
     box-shadow: 0px 20px 50px 0px rgba(85, 85, 85, 0.15);
+    background-color: #ffffff;
 
     svg {
       path {

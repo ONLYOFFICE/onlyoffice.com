@@ -1,0 +1,1 @@
+export { OfficeForMattermostTemplate } from "./OfficeForMattermost";

@@ -1,9 +1,13 @@
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
-import { StyledPortfolio, StyledPortfolioText } from "./Portfolio.styled";
-import { portfolio } from "./data/items";
+import {
+  StyledPortfolio,
+  StyledPortfolioHeader,
+  StyledPortfolioText,
+} from "./Portfolio.styled";
+import { Heading } from "@src/components/ui/Heading";
+import { products } from "./data/items";
 import { Product } from "./sub-components/Product";
 
 const Portfolio = () => {
@@ -12,15 +16,13 @@ const Portfolio = () => {
   return (
     <Section tabletSmallSpacing={["80px", "0"]} mobileSpacing={["48px", "0"]}>
       <Container>
-        <Heading
-          label={t("PortfolioTitle")}
-          level={2}
-          size={3}
-          textAlign="center"
-        />
-        <StyledPortfolioText label={t("PortfolioText")} />
+        <StyledPortfolioHeader>
+          <Heading label={t("PortfolioTitle")} level={2} size={3} />
+          <StyledPortfolioText label={t("PortfolioText")} />
+        </StyledPortfolioHeader>
+
         <StyledPortfolio>
-          {portfolio.map(({ title, text, link, image }, index) => (
+          {products.map(({ title, text, link, image }, index) => (
             <Product
               key={index}
               title={t(title)}

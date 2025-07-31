@@ -1,0 +1,26 @@
+{
+
+    "HeroImgUrl": "/images/templates/document-editor/hero/de/hero.png",
+    "HeroImgUrl2x": "/images/templates/document-editor/hero/de/hero@2x.png",
+
+    "Feature1ImgUrl": "/images/templates/document-editor/features/de/screen1.png",
+    "Feature1ImgUrl2x": "/images/templates/document-editor/features/de/screen1@2x.png",
+    "Feature2ImgUrl": "/images/templates/document-editor/features/de/screen2.png",
+    "Feature2ImgUrl2x": "/images/templates/document-editor/features/de/screen2@2x.png",
+    "Feature3ImgUrl": "/images/templates/document-editor/features/de/screen3.png",
+    "Feature3ImgUrl2x": "/images/templates/document-editor/features/de/screen3@2x.png",
+    "Feature4ImgUrl": "/images/templates/document-editor/features/de/screen4.png",
+    "Feature4ImgUrl2x": "/images/templates/document-editor/features/de/screen4@2x.png",
+    "Feature5ImgUrl": "/images/templates/document-editor/features/de/screen5.png",
+    "Feature5ImgUrl2x": "/images/templates/document-editor/features/de/screen5@2x.png",
+    "Feature6ImgUrl": "/images/templates/document-editor/features/de/screen6.png",
+    "Feature6ImgUrl2x": "/images/templates/document-editor/features/de/screen6@2x.png",
+    "Feature7ImgUrl": "/images/templates/document-editor/features/de/screen7.png",
+    "Feature7ImgUrl2x": "/images/templates/document-editor/features/de/screen7@2x.png",
+    "Feature8ImgUrl": "/images/templates/document-editor/features/de/screen8.png",
+    "Feature8ImgUrl2x": "/images/templates/document-editor/features/de/screen8@2x.png",
+
+    "BlogLink": "https://www.onlyoffice.com/blog/de/2022/07/word-dokument-in-html-einbetten/",
+    "TutorialsLink": "https://helpcenter.onlyoffice.com/de/installation/docs-community-install-fonts-linux.aspx",
+    "HintsLink": "https://helpcenter.onlyoffice.com/de/userguides/docs-de.aspx"
+}

@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Události ONLYOFFICU | ONLYOFFICE",
+  "PageTitleOG": "Událostí, kterých jsme se zúčastnili",
+  "PageDescription": "Přečtěte si o událostech ONLYOFFICU po světe a zůčastněte se jich.",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> se účastní zajímavých událostí po celém světě",
+  "CurrentEvents": "Setkejte se s ONLYOFFICEM na jedné z událostí v roce 2025",
+  "PastEvents": "Přečtěte si informace o událostech, kterých se zúčastnil ONLYOFFICE",
+  "MoreInfo": "Více informací",
+  "ScheduleMeeting": "Naplánovat schůzku",
+  "dateTemplates": {
+    "singleDay": "{{day}}. {{month}} {{year}}",
+    "sameMonth": "{{dayStart}}.–{{dayEnd}}. {{month}} {{year}}",
+    "differentMonths": "{{dayStart}}. {{monthStart}} – {{dayEnd}}. {{monthEnd}} {{year}}",
+    "differentYears": "{{dayStart}}. {{monthStart}} {{yearStart}} – {{dayEnd}}. {{monthEnd}} {{year}}"
+  },
+  "months": {
+    "January": "ledna",
+    "February": "února",
+    "March": "března",
+    "April": "dubna",
+    "May": "května",
+    "June": "června",
+    "July": "července",
+    "August": "srpna",
+    "September": "září",
+    "October": "října",
+    "November": "listopadu",
+    "December": "prosince"
+  }
+}

@@ -46,10 +46,27 @@ const StyledBlogCardWrapper = styled.div<{ $isLarge: IBlogCard["isLarge"] }>`
     &:not(:last-child) {
       margin-bottom: ${(props) => (props.$isLarge ? "16px" : "8px")};
     }
+
+    a {
+      display: block;
+      transition: color 0.2s;
+
+      &:hover {
+        color: #ff6f3d;
+      }
+    }
   }
 
   &:not(:last-child) {
     margin-bottom: 16px;
+  }
+`;
+
+const StyledBlogCardQuote = styled.div`
+  padding-bottom: 8px;
+
+  span {
+    color: #FF6F3D
   }
 `;
 
@@ -58,4 +75,5 @@ export {
   StyledBlogCardImg,
   StyledBlogCardBody,
   StyledBlogCardWrapper,
+  StyledBlogCardQuote,
 };

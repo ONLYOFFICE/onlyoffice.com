@@ -1,0 +1,12 @@
+{
+  "FullName": "Full name",
+  "FullNameIsIncorrect": "Full name is incorrect",
+  "NameSurname": "Name Surname",
+  "FullNameIsEmpty": "Full name is empty",
+  "EmailIsEmpty": "Email is empty",
+  "EmailIsIncorrect": "Email is incorrect",
+  "CompanyName": "Company name",
+  "CompanyNameIsEmpty": "Company name is empty",
+  "successfullyRequestText": "Your request has been sent successfully",
+  "errorRequestText": "We are sorry, but an error occurred, try again later"
+}

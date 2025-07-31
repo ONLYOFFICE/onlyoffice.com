@@ -1,0 +1,29 @@
+{
+  "PageTitle": "检查ONLYOFFICE文档主要功能 | ONLYOFFICE",
+  "PageDescription": "编辑docx、xlsx、pptx文件，查看PDF，创建可填写的表单。试试共同编辑文档，了解ONLYOFFICE主要功能。无需下载或注册。",
+
+  "HeroHeadingSeeIt": "立即试一试",
+  "HeroTextCurious": "想知道界面是什么样的，并在不注册的情况下试用主要功能吗？",
+
+  "ActionsEditDocx": "编辑DOCX",
+  "ActionsExampleDocumentTitleDocx": "文本文档范本.docx",
+  "ActionsEditXlsx": "编辑XLSX",
+  "ActionsExampleDocumentTitleXlsx": "文本文档范本.xlsx",
+  "ActionsEditPptx": "编辑PPTX",
+  "ActionsExampleDocumentTitlePptx": "文本文档范本.pptx",
+  "ActionsEditPdf": "编辑PDF",
+  "ActionsExampleDocumentTitlePdf": "文本文档范本.pdf",
+  "ActionsCreateForm": "立即创建表单",
+  "ActionsFillInPdfForm": "填写 PDF 表单",
+  "ActionsCollaborate": "协作",
+
+  "ActionsDemoPreview": "演示预览",
+  "ActionsDemoModalHeadingOpenDocx": "打开DOCX进行编辑",
+  "ActionsDemoModalHeadingOpenXlsx": "打开XLSX进行编辑",
+  "ActionsDemoModalHeadingOpenPptx": "打开PPTX进行编辑",
+  "ActionsDemoModalHeadingOpenPdf": "编辑PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "立即创建表单",
+  "ActionsDemoModalHeadingOpenFill": "填写 PDF 表单",
+  "ActionsDemoModalHeadingOpenCollaborate": "协作",
+  "ActionsDemoModalButtonClose": "关闭"
+}

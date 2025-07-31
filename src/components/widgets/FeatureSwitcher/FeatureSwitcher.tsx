@@ -5,6 +5,7 @@ import {
   StyledFeatureSwitcherBtn,
   StyledFeatureSwitcherImage,
   StyledFeatureSwitcherCustomBtn,
+  StyledFeatureSwitcherHeading,
 } from "./FeatureSwitcher.styled";
 import { IFeatureSwitcher } from "./FeatureSwitcher.types";
 import { ChevronDownIcon } from "@src/components/icons";
@@ -17,12 +18,18 @@ const FeatureSwitcher = ({
   imageHeight = 520,
   position = "left",
   customButton,
+  heading,
 }: IFeatureSwitcher) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <StyledFeatureSwitcher id={id} className={className} $position={position}>
       <StyledFeatureSwitcherWrapper $position={position}>
+        {heading && (
+          <StyledFeatureSwitcherHeading level={5}>
+            {heading}
+          </StyledFeatureSwitcherHeading>
+        )}
         <ul>
           {items.map((item, index) => (
             <li key={index}>
