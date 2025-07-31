@@ -5,7 +5,6 @@ import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 import { 
   StyledFeatureImageItemImgWrapper,
   StyledFeatureImageItemImg,
-  StyleFeatureImageItemContent
  } from "@src/components/widgets/FeatureImageItem/FeatureImageItem.styled";
 
 const StyledAuthenticationHeading = styled(Heading)`

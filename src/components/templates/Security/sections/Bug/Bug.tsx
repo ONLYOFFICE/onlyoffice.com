@@ -38,6 +38,7 @@ const Bug = () => {
                         i18nKey={t(String(item.label))}
                         components={[
                             <Link
+                              key={0}
                               href={item.links?.href}
                               target={item.links?.isExternal ? "_blank" : undefined}
                               color="main"
