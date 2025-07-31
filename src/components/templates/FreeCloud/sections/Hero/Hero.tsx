@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
 import { Trans, useTranslation } from "next-i18next";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { Section } from "@src/components/ui/Section";
@@ -30,6 +31,7 @@ import {
 const Hero = () => {
   const { t } = useTranslation("free-cloud");
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
+  const { locale } = useRouter();
 
   const [dataForm, setDataForm] = useState<IDataForm>({
     firstName: "",
@@ -186,7 +188,7 @@ const Hero = () => {
     };
     setSubmitStatus("loading");
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha...-verify", {
+      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -197,18 +199,40 @@ const Hero = () => {
       })
 
       const hCaptchaData = await hCaptchaResponse.json();
-      console.log(hCaptchaData);
 
       if (hCaptchaData.status === "errorHCaptchaInvalid") {
         setSubmitStatus("error");
         return;
       }
 
-      if (hCaptchaData.status === "success") {
+      const freeCloudResponse = await fetch("/api/free-cloud", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          firstName: dataForm.firstName,
+          lastName: dataForm.lastName,
+          email: dataForm.email,
+          portalName: dataForm.portalName,
+          youAre: dataForm.youAre,
+          yourWebsiteURL: dataForm.yourWebsiteURL,
+          culture: locale,
+        })
+      })
+
+      const freeCloudData = await freeCloudResponse.json();
+
+      if (freeCloudData.status === "error") {
+        setSubmitStatus("error");
+        return;
+      }
+
+      if (freeCloudData.status === "success") {
         setSubmitStatus("success");
       }
     } catch (error) {
-      console.error("hCaptcha validation exception:", error);
+      console.error( error);
       setSubmitStatus("error");
     }
   }
