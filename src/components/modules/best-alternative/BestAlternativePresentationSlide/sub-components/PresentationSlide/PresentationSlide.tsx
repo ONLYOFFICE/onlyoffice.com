@@ -59,7 +59,13 @@ const PresentationSlide = ({ title, url }: { title: string; url: string }) => {
             documentType: config.documentType,
             token,
             document: config.document,
-            editorConfig: config.editorConfig,
+            editorConfig: {
+              ...config.editorConfig,
+              customization: {
+                pointerMode: "select",
+                slidePlayerBackground: "#000000",
+              },
+            },
             type: "embedded",
           }}
           onLoadComponentError={onLoadComponentError}
