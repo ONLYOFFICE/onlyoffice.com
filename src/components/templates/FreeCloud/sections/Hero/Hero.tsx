@@ -1,15 +1,16 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
+import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import { Input } from "@src/components/ui/Input";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
-import { LoaderButton } from "@src/components/ui/LoaderButton";
+import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { Select } from "@src/components/ui/Select";
 import { ISelectOption } from "@src/components/ui/Select/Select.types";
-import { ICheckStatus } from "../../FreeCloud.types";
+import { ICheckStatus, IDataForm } from "../../FreeCloud.types";
 import { validateFullName, validateEmail, validateWebsite } from "@src/utils/validators";
 
 import {
@@ -28,13 +29,16 @@ import {
 
 const Hero = () => {
   const { t } = useTranslation("free-cloud");
+  const refHcaptcha = useRef<ReactCaptcha | null>(null);
 
-  const [dataForm, setDataForm] = useState({
+  const [dataForm, setDataForm] = useState<IDataForm>({
     firstName: "",
     lastName: "",
     email: "",
     portalName: "",
+    youAre: "",
     yourWebsiteURL: "",
+    hCaptchaToken: null,
   });
 
   const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
@@ -45,6 +49,8 @@ const Hero = () => {
     yourWebsiteURL: "default",
   });
 
+  const [submitStatus, setSubmitStatus] = useState<ILoaderButton["status"]>("default");
+
   const [selectedOption, setSelectedOption] = useState<ISelectOption[]>([]);
 
   const options = [
@@ -52,6 +58,17 @@ const Hero = () => {
     { value: "NonProfit", label: t("NonProfit") },
     { value: "Contributor", label: t("Contributor") },
   ];
+
+  useEffect(() => {
+    if (selectedOption.length > 0) {
+      setDataForm((prev) => (
+        {
+          ...prev,
+          youAre: selectedOption[0].value,
+        }
+      ))
+    }
+  }, [selectedOption])
 
   const handleCheckStatusFullName = () => {
     if (validateFullName(dataForm.firstName)) {
@@ -120,6 +137,79 @@ const Hero = () => {
         ...prev,
         yourWebsiteURL: "error",
       }));
+    }
+  }
+
+  const handleGetHCaptchaToken = (token: string | null) => {
+    setDataForm((prev) => (
+      {
+        ...prev,
+        hCaptchaToken: token,
+      }
+    ))
+  }
+
+  const clearDataForm = () => {
+    setDataForm({
+      firstName: "",
+      lastName: "",
+      email: "",
+      portalName: "",
+      youAre: "",
+      yourWebsiteURL: "",
+      hCaptchaToken: null,
+    });
+
+    setCheckStatus({
+      firstName: "default",
+      lastName: "default",
+      email: "default",
+      portalName: "default",
+      yourWebsiteURL: "default",
+    });
+
+    setSelectedOption([]);
+    refHcaptcha.current?.resetCaptcha();
+  }
+
+  const handleSubmitRequest = async () => {
+    if (submitStatus === "loading") return;
+    if (submitStatus === "success") {
+      clearDataForm();
+      setSubmitStatus("default");
+      return;
+    };
+    if (submitStatus === "error") {
+      clearDataForm();
+      setSubmitStatus("default");
+      return;
+    };
+    setSubmitStatus("loading");
+    try {
+      const hCaptchaResponse = await fetch("/api/hcaptcha...-verify", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          token: dataForm.hCaptchaToken ?? ""
+        })
+      })
+
+      const hCaptchaData = await hCaptchaResponse.json();
+      console.log(hCaptchaData);
+
+      if (hCaptchaData.status === "errorHCaptchaInvalid") {
+        setSubmitStatus("error");
+        return;
+      }
+
+      if (hCaptchaData.status === "success") {
+        setSubmitStatus("success");
+      }
+    } catch (error) {
+      console.error("hCaptcha validation exception:", error);
+      setSubmitStatus("error");
     }
   }
 
@@ -268,7 +358,6 @@ const Hero = () => {
               status={selectedOption.length === 0 ? "default" : "success"}
               required
               maxWidth="100%"
-              borderRadius="3px"
             />
             <Input
               value={dataForm.yourWebsiteURL}
@@ -285,9 +374,13 @@ const Hero = () => {
                 }
               required
             />
-            <HCaptcha />
+            <HCaptcha
+              ref={refHcaptcha}
+              onVerify={handleGetHCaptchaToken}
+              onExpire={() => handleGetHCaptchaToken(null)}
+            />
             <LoaderButton
-              onClick={() => console.log("submit")}
+              onClick={handleSubmitRequest}
               label={t("SubmitRequest")}
               disabled={
                 checkStatus.firstName !== "success" ||
@@ -295,8 +388,10 @@ const Hero = () => {
                 checkStatus.email !== "success" ||
                 checkStatus.portalName !== "success" ||
                 selectedOption.length === 0 ||
-                checkStatus.yourWebsiteURL !== "success"
+                checkStatus.yourWebsiteURL !== "success" ||
+                dataForm.hCaptchaToken === null
               }
+              status={submitStatus}
             />
           </StyledHeroForm>
         </StyledHeroFormWrapper>

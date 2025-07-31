@@ -16,8 +16,6 @@ export interface ISelect {
   label?: string;
   /** Variant of the label */
   labelVariant?: "primary" | "secondary";
-  /** Border radius of the select component */
-  borderRadius?: string;
   /** Placeholder text displayed inside the input field */
   placeholder?: string;
   /** Disables interaction with the select component */

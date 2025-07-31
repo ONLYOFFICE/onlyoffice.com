@@ -1,3 +1,13 @@
+interface IDataForm {
+  firstName: string;
+  lastName: string;
+  email: string;
+  portalName: string;
+  youAre: string;
+  yourWebsiteURL: string;
+  hCaptchaToken: string | null;
+};
+
 interface ICheckStatus {
   firstName: "default" | "success" | "error";
   lastName: "default" | "success" | "error";
@@ -12,6 +22,7 @@ interface IFaqItems {
 }
 
 export type {
+  IDataForm,
   ICheckStatus,
   IFaqItems
 }
