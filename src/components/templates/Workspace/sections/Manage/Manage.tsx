@@ -86,6 +86,10 @@ const Manage = () => {
                   url: t(item.image.url),
                   url2x: t(item.image.url2x),
                 }}
+                links={item.links.map((link) => ({
+                  ...link,
+                  label: t(link.label),
+                }))}
                 isActive={index === activeIndex}
               />
             </SwiperSlide>
