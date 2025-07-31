@@ -1,3 +1,4 @@
+import { EnterpriseSolution } from "./sections/EnterpriseSolution";
 import { Hero } from "./sections/Hero";
 import { Partners } from "./sections/Partners";
 
@@ -6,6 +7,7 @@ const HealthcareTemplate = () => {
     <>
       <Hero />
       <Partners />
+      <EnterpriseSolution />
     </>
   );
 };
