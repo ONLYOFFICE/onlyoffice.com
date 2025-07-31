@@ -1,6 +1,6 @@
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 interface StickyBoxProps { isSticky?: boolean; }
 

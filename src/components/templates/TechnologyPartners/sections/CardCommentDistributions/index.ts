@@ -1,1 +1,1 @@
-import { CardCommentDistributions } from "./CardComment";
+export { CardCommentDistributions } from "./CardComment";

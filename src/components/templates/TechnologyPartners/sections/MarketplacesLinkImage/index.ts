@@ -1,1 +1,1 @@
-import { MarketplacesLinkImage } from "./LinkImage";
+export { MarketplacesLinkImage } from "./LinkImage";

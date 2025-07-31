@@ -1,1 +1,1 @@
-import { HostingLinkImage } from "./LinkImage";
+export { HostingLinkImage } from "./LinkImage";

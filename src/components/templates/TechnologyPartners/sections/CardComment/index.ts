@@ -1,1 +1,1 @@
-import { CardComment } from "./CardComment";
+export { CardComment } from "./CardComment";

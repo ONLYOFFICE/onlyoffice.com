@@ -1,1 +1,1 @@
-import { CardCommentHardware } from "./CardComment";
+export { CardCommentHardware } from "./CardCommentHardware"

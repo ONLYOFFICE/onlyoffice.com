@@ -1,5 +1,3 @@
-import { Container } from "@src/components/ui/Container";
-import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
 import { useTranslation } from "next-i18next"
 import { items } from "./data";

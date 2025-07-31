@@ -1,1 +1,1 @@
-import { HardwareLinkImage } from "./LinkImage";
+export { HardwareLinkImage } from "./LinkImage";

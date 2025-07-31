@@ -1,1 +1,1 @@
-import { DistributionsLinkImage } from "./LinkImage";
+export { DistributionsLinkImage } from "./LinkImage";
