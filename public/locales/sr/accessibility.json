@@ -1,0 +1,49 @@
+{
+  "PageTitle": "ONLYOFFICE dostupan svima | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE je dizajniran da ugosti korisnike sa posebnim potrebama. Saznajte kako se pridržavamo pristupačnosti.",
+
+  "HeroTitle": "ONLYOFFICE dostupan svima",
+  "HeroDescription": "Naši urednici su dizajnirani da udovolje korisnicima sa posebnim potrebama kako bi proces uređivanja bio udoban i jednostavan.",
+  "HeroButtonLabel": "PROBAJTE SADA",
+
+  "AccessibilityTitle": "Kako se pridržavamo pristupačnog pristupa",
+  "AccessibilityDescription": "Pristupačnost je stepen lakoće sa kojim proizvod mogu koristiti ljudi svih sposobnosti. Istražite odgovarajuće funkcije u ONLYOFFICE Docs-u.",
+
+  "VisionTitle": "Pregled",
+  "ScreenReaders": "Čitači ekrana",
+  "ScreenReadersFeature1": "Poslušajte glasovna obaveštenja koja prikazuju operacije izvršene u uređivačima",
+  "ScreenReadersFeature2": "Aktivirajte čitače ekrana za tekstualne dokumente, tabele i prezentacije",
+  "UITweaks": "UI izmene",
+  "UITweaksFeature1": "Promenite veličinu radne površine koristeći višestruke postavke skaliranja",
+  "UITweaksFeature2": "Prilagodite oblast za uređivanje širini stranice i ekrana",
+  "UITweaksFeature3": "Sakrij ili prikaži traku sa alatkama, statusnu traku i lenjire",
+  "ColorModes": "Režimi boja",
+  "ColorModesFeature1": "Udobno radite u bilo kom okruženju koristeći različite teme korisničkog interfejsa.",
+  "ColorModesFeature2": "Neka elementi na grafikonu budu prikazani u visokokontrastnom režimu ili imaju geometrijske obrasce kako bi bili razlikovani bez boje.",
+  "MobileWebView": "Mobile web view",
+  "MobileWebViewFeature1": "Easily increase and decrease text font size when opening documents in the mobile web editors in the reading mode to view the contents without horizontal scrolling.",
+
+  "MobilityTitle": "Pokretljivost",
+  "Hotkeys": "Prečice",
+  "HotkeysFeature1": "Izvršite većinu operacija preko prečica ili prečica na tastaturi.",
+  "SpeechInput": "Unos govora",
+  "SpeechInputFeature1": "Jednostavno kucajte sa svojim glasom pretvaranjem izgovorene reči u tekst.",
+
+  "NeurodiversityTitle": "Neurodiverzitet",
+  "AlternativeText": "Alternativni tekst",
+  "AlternativeTextFeature1": "Navedite naslove i opise za slike i druge grafičke objekte kako bi drugi ljudi bolje razumeli koje informacije objekat sadrži.",
+  "AutoCorrectFeatures": "Funkcije automatskog ispravljanja",
+  "AutoCorrectFeaturesFeature1": "Koristite opcije za proveru pravopisa i automatsko ispravljanje, kao što su zamena simbola, zamena pametnih navodnika, automatsko listanje itd.",
+  "Speech": "Govor",
+  "SpeechFeature1": "Pretvorite izabrani tekst u govor i čitajte tekstualne dokumente naglas.",
+  "Typography": "Tipograf",
+  "TypographyFeature1": "Automatski ispravite tipografiju vaših tekstova.",
+  "Translator": "Prevodilac",
+  "TranslatorFeature1": "Automatski prevesti izabrani tekst na druge jezike.",
+
+  "SuggestionsTitle": "Ima li predloga?",
+  "SuggestionsDescription": "Stalno radimo na dodavanju novih funkcija pristupačnosti urednicima ONLYOFFICE-a. Ako imate bilo kakve ideje, slobodno ih podelite na <0>GitHub</0> ili <1>forum</1>.",
+  "GithubButtonLabel": "GitHub",
+  "ForumButtonLabel": "forum",
+  "LearnMore": "Learn more"
+}
