@@ -228,7 +228,7 @@ const SignUp = ({
             body: JSON.stringify({ thirdPartyProfile: data }),
           });
           const registerData = await registerRes.json();
-          window.location.href = registerData.data.reference;
+          window.location.href = registerData.data.reference + "&wizard=true";
         }
       } catch (err) {
         console.error(
