@@ -54,6 +54,8 @@ const Hero = () => {
   const [submitStatus, setSubmitStatus] = useState<ILoaderButton["status"]>("default");
 
   const [selectedOption, setSelectedOption] = useState<ISelectOption[]>([]);
+  const [selectStatus, setSelectStatus] = useState<ICheckStatus["youAre"]>( "default");
+  const [selectTouched, setSelectTouched] = useState<boolean>(false);
 
   const options = [
     { value: "School", label: t("School") },
@@ -61,16 +63,29 @@ const Hero = () => {
     { value: "Contributor", label: t("Contributor") },
   ];
 
-  useEffect(() => {
+   useEffect(() => {
     if (selectedOption.length > 0) {
-      setDataForm((prev) => (
-        {
-          ...prev,
-          youAre: selectedOption[0].value,
-        }
-      ))
+      setDataForm((prev) => ({ ...prev, youAre: selectedOption[0].value }));
+      setSelectStatus("success");
     }
-  }, [selectedOption])
+  }, [selectedOption]);
+
+  const handleSelectFocus = () => {
+    if (!selectTouched) setSelectTouched(true);
+    if (selectStatus === "error") {
+      setSelectStatus("default");
+    }
+  };
+
+  const handleSelectBlur = () => {
+    if (selectTouched) {
+      if (selectedOption.length === 0) {
+        setSelectStatus("error");
+      } else {
+        setSelectStatus("success");
+      }
+    }
+  };
 
   const handleCheckStatusFullName = () => {
     if (validateFullName(dataForm.firstName)) {
@@ -373,15 +388,26 @@ const Hero = () => {
                 .onlyoffice.(co/eu/sg/com/com2)
               </StyledHeroFormPortalText>
             </StyledHeroFormPortalWrapper>
-            <Select
-              selected={selectedOption}
-              setSelected={setSelectedOption}
-              options={options}
-              label={t("YouAre")}
-              status={selectedOption.length === 0 ? "default" : "success"}
-              required
-              maxWidth="100%"
-            />
+            <div
+              onFocusCapture={handleSelectFocus}
+              onBlurCapture={handleSelectBlur}
+              tabIndex={-1}
+            >
+              <Select
+                selected={selectedOption}
+                setSelected={setSelectedOption}
+                options={options}
+                label={t("YouAre")}
+                status={selectStatus}
+                required
+                maxWidth="100%"
+                caption={
+                  selectStatus === "error"
+                    ? t("FieldIsEmpty")
+                    : undefined
+                }
+              />
+            </div>
             <Input
               value={dataForm.yourWebsiteURL}
               onChange={(event) => setDataForm({...dataForm, yourWebsiteURL: event.target.value})}

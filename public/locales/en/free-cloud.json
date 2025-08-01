@@ -20,6 +20,7 @@
 	"PortalName": "Portal name",
 	"AccountNameIsEmpty": "Account name is empty",
 	"YouAre": "You are",
+	"FieldIsEmpty": "Field is empty",
 	"School": "School",
 	"NonProfit": "Non-profit",
 	"Contributor": "Contributor",

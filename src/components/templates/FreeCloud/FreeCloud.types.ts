@@ -14,6 +14,7 @@ interface ICheckStatus {
   email: "default" | "success" | "error";
   portalName: "default" | "success" | "error";
   yourWebsiteURL: "default" | "success" | "error";
+  youAre?: "default" | "success" | "error";
 };
 
 interface IFaqItems {
