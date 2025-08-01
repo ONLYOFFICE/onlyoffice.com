@@ -243,7 +243,7 @@ const Hero = () => {
         return;
       }
 
-      if (freeCloudData.status === "success") {
+      if (freeCloudData.status === "success" || freeCloudData.status === "update") {
         setSubmitStatus("success");
       }
     } catch (error) {
