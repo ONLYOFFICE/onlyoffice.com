@@ -20,6 +20,7 @@
 	"PortalName": "Nombre del portal",
 	"AccountNameIsEmpty": "La dirección del portal está vacía",
 	"YouAre": "Tú eres",
+	"FieldIsEmpty": "El campo está vacío",
 	"School": "Colegio",
 	"NonProfit": "Sin ánimo de lucro",
 	"Contributor": "Colaborador",

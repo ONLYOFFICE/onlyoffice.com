@@ -20,6 +20,7 @@
 	"PortalName": "Имя портала",
 	"AccountNameIsEmpty": "Имя аккаунта не заполнено",
 	"YouAre": "Вы являетесь",
+	"FieldIsEmpty": "Поле не заполнено",
 	"School": "Школой",
 	"NonProfit": "Некоммерческой организацией",
 	"Contributor": "Контрибьютором",

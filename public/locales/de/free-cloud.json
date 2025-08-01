@@ -20,6 +20,7 @@
 	"PortalName": "Portalname",
 	"AccountNameIsEmpty": "Das Feld Kontoname ist leer",
 	"YouAre": "Sie sind",
+	"FieldIsEmpty": "Das Feld ist leer",
 	"School": "Schule",
 	"NonProfit": "Gemeinnützige Organisation",
 	"Contributor": "Mitwirkende(r)",

@@ -20,6 +20,7 @@
 	"PortalName": "ポータル名",
 	"AccountNameIsEmpty": "アカウント名が入力されていません",
 	"YouAre": "所属",
+	"FieldIsEmpty": "フィールドは空です",
 	"School": "教育機関",
 	"NonProfit": "非営利団体",
 	"Contributor": "貢献者",
