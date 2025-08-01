@@ -1,12 +1,16 @@
-import { useTranslation } from "next-i18next";
+import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { 
     StyledProtectionBlocks,
-    StyledProtectionHeading
+    StyledProtectionHeading,
+    StyledFeatureItem,
+    StyledFeatureItemHeading,
+    StyledFeatureItemText,
+    StyledLink
 } from "./Protection.styled";
 import { items } from "./data/items";
-import { FeatureLinkItem } from "@src/components/widgets/FeatureLinkItem";
+import { Text } from "@src/components/ui/Text";
 
 const Protection = () => {
     const { t } = useTranslation("security");
@@ -14,9 +18,9 @@ const Protection = () => {
     return(
         <Section
         desktopSpacing={["60px", "112px"]}
-        tabletSpacing={["56px", "112px"]}
-        tabletSmallSpacing={["57px", "56px"]}
-        mobileSpacing={["40px", "68px"]}
+        tabletSpacing={["54px", "128px"]}
+        tabletSmallSpacing={["53px", "88px"]}
+        mobileSpacing={["28px", "44px"]}
         >
             <StyledProtectionHeading
                 level={2}
@@ -25,23 +29,33 @@ const Protection = () => {
             <Container>
             <StyledProtectionBlocks>
                 {items.map((item, index) => (
-                    <FeatureLinkItem
-                    ns="security"
-                    variant="horizontal"
-                    customPadding="70px 0 0 0"
-                    key={index}
-                    icon={{
-                        url: item.icon.url,
-                        positionX: item.icon.positionX,
-                        mobilePositionX: item.icon.mobilePositionX
-                    }}
-                    heading={t(String(item.heading))}
-                    textList={item.textList ? item.textList.map((el) => t(String(el))) : undefined}
-                    items={item.items}
-                    linkText={t(String(item.linkText))}
-                    linkUrl={item.linkUrl}
-                    target={item.target}
-                    />
+                    <StyledFeatureItem key={index}>
+                        <StyledFeatureItemHeading 
+                        size={5}
+                        label={t(item.heading)}/>
+                        {Array.isArray(item.text) && item.text.map((el, idx) => (
+                            <StyledFeatureItemText key={idx} 
+                            className="feature-desc"
+                            size={3}
+                            >
+                                <Trans
+                                t={t}
+                                i18nKey={t(el)}
+                                components={[<Text as="span" fontWeight={700} key={0} />]}
+                                />
+                            </StyledFeatureItemText>
+                        ))}
+                        { item.link && (
+                            <StyledLink
+                            color="main"
+                            textUnderline
+                            hover="underline-none"
+                            href={item.link?.href}
+                            target={item.link?.target}
+                            label={t(String(item.link?.label))}
+                            />
+                        )}
+                    </StyledFeatureItem>
                 ))}
             </StyledProtectionBlocks>
             </Container>

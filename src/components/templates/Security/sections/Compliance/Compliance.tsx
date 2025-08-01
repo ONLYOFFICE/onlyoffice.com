@@ -3,42 +3,50 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { 
     StyledComplianceBlocks,
-    StyledComlianceHeading
+    StyledComplianceHeading,
+    StyledFeatureItem,
+    StyledFeatureItemHeading,
+    StyledFeatureItemText,
+    StyledLink
 } from "./Compliance.styled";
 import { items } from "./data/items";
-import { FeatureLinkItem } from "@src/components/widgets/FeatureLinkItem";
 
 const Compliance = () => {
     const { t } = useTranslation("security");
 
     return(
         <Section
-        desktopSpacing={["60px", "112px"]}
-        tabletSpacing={["112px", "112px"]}
-        tabletSmallSpacing={["89px", "56px"]}
+        desktopSpacing={["60px", "136px"]}
+        tabletSpacing={["112px", "136px"]}
+        tabletSmallSpacing={["89px", "112px"]}
         mobileSpacing={["48px", "68px"]}
         >
-            <StyledComlianceHeading
+            <StyledComplianceHeading
                 level={2}
                 label={t("ComplianceWithData")}
             />
             <Container>
             <StyledComplianceBlocks>
                 {items.map((item, index) => (
-                    <FeatureLinkItem
-                    variant="horizontal"
-                    customPadding="80px 0 0 0"
-                    key={index}
-                    icon={{
-                        url: item.icon.url,
-                        positionX: item.icon.positionX,
-                        mobilePositionX: item.icon.mobilePositionX
-                    }}
-                    heading={t(String(item.heading))}
-                    textList={item.textList ? item.textList.map((el) => t(String(el))) : undefined}
-                    linkText={t(String(item.linkText))}
-                    linkUrl={item.linkUrl}
-                    />
+                    <StyledFeatureItem key={index}>
+                        <StyledFeatureItemHeading 
+                        size={5}
+                        label={t(item.heading)}/>
+                        {Array.isArray(item.text) && item.text.map((el, idx) => (
+                            <StyledFeatureItemText key={idx} 
+                            size={3}
+                            label={t(el)}
+                            />
+                        ))}
+                        <StyledLink
+                        color="main"
+                        textUnderline
+                        hover="underline-none"
+                        href={item.link?.href}
+                        target={item.link?.target}
+                        label={t(String(item.link?.label))}
+                        />
+                    </StyledFeatureItem>
                 ))}
             </StyledComplianceBlocks>
             </Container>

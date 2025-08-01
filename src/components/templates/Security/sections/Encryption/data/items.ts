@@ -1,37 +1,32 @@
-  import { IFeatureLinkItem } from "@src/components/widgets/FeatureLinkItem";
+import { IFeature } from "../../Compliance/Compliance.types";
 
-  export const items: IFeatureLinkItem[] = [
+  export const items: IFeature[] = [
       {
-        icon: {
-          url: "/images/templates/security/compliance/sec_icons.svg",
-          positionX: "-242px",
-          mobilePositionX: "-177px",
-        },
         heading: "EncryptionAtRest",
-        textList: ["BreachOfData"],
-        linkText: "ReadMoreAboutEncrypting",
-        linkUrl: "https://helpcenter.onlyoffice.com/server/controlpanel/opensource/encryption.aspx",
-        target: "_blank"
+        text: [
+          "BreachOfData",
+        ],
+        link: {
+          href: "https://helpcenter.onlyoffice.com/server/controlpanel/opensource/encryption.aspx",
+          label: "ReadMoreAboutEncrypting",
+          target: "_blank"
+        }
       },
       {
-        icon: {
-          url: "/images/templates/security/compliance/sec_icons.svg",
-          positionX: "-350px",
-          mobilePositionX: "-261px",
-        },
         heading: "End_To_EndEncryption",
-        textList: ["ONLYOFFICEOffers"],
-        linkText: "ReadMoreAboutPrivate",
-        linkUrl: "https://www.onlyoffice.com/private-rooms.aspx?from=security"
+        text: [
+          "ONLYOFFICEOffers"
+        ],
+        link: {
+          href: "/private-rooms.aspx",
+          label: "ReadMoreAboutPrivate",
+          target: "_self",
+        }
       },
       {
-        icon: {
-          url: "/images/templates/security/compliance/sec_icons.svg",
-          positionX: "-790px",
-          mobilePositionX: "-591px",
-        },
         heading: "DocumentPassword",
-        textList: ["YouCanProtect"],
-        linkText: "",
+        text: [
+          "YouCanProtect"
+        ]
       },
   ];

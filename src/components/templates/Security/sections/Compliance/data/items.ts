@@ -1,30 +1,27 @@
-  import { IFeatureLinkItem } from "@src/components/widgets/FeatureLinkItem";
+import { IFeature } from "../Compliance.types";
 
-  export const items: IFeatureLinkItem[] = [
+  export const items: IFeature[] = [
       {
-        icon: {
-          url: "/images/templates/security/compliance/sec_icons.svg",
-          positionX: "0",
-        },
         heading: "GDPRCompliance",
-        textList: [
+        text: [
           "GDPRComplianceText1",
           "GDPRComplianceText2"
         ],
-        linkText: "ReadMoreAboutONLYOFFICEGDPR",
-        linkUrl: "https://www.onlyoffice.com/blog/2018/05/how-onlyoffice-complies-with-gdpr/"
+        link: {
+          href: "https://www.onlyoffice.com/blog/2018/05/how-onlyoffice-complies-with-gdpr/",
+          label: "ReadMoreAboutONLYOFFICEGDPR",
+          target: "_self"
+        }
       },
       {
-        icon: {
-          url: "/images/templates/security/compliance/sec_icons.svg",
-          positionX: "-120px",
-          mobilePositionX: "-90px",
-        },
         heading: "HIPAACompliance",
-        textList: [
+        text: [
           "HealthInsurance"
         ],
-        linkText: "ReadMoreAboutHIPAA",
-        linkUrl: "https://www.onlyoffice.com/blog/2020/10/how-onlyoffice-complies-with-hipaa/"
+        link: {
+          href: "https://www.onlyoffice.com/blog/2020/10/how-onlyoffice-complies-with-hipaa/",
+          label: "ReadMoreAboutHIPAA",
+          target: "_self",
+        }
       },
   ];

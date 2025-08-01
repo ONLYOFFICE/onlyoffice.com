@@ -1,88 +1,56 @@
-  import { IFeatureLinkItem } from "@src/components/widgets/FeatureLinkItem";
+import { IFeature } from "../../Compliance/Compliance.types";
 
-  export const items: IFeatureLinkItem[] = [
+  export const items: IFeature[] = [
       {
-        icon: {
-          url: "/images/templates/security/compliance/sec_icons.svg",
-          positionX: "-463px",
-          mobilePositionX: "-347px",
-        },
         heading: "JWT",
-        textList: [
+        text: [
           "JSONWebToken",
           "ONLYOFFICEEditors",
         ],
-        linkText: "",
       },
       {
-        icon: {
-          url: "/images/templates/security/compliance/sec_icons.svg",
-          positionX: "-690px",
-          mobilePositionX: "-518px",
-        },
         heading: "DocumentPermission",
-        textList: [
-          "ONLYOFFICEEditorsWork", 
+        text: [
+          "ONLYOFFICEEditorsWork"
         ],
-        linkText: "",
       },
       {
-        icon: {
-          url: "/images/templates/security/compliance/sec_icons.svg",
-          positionX: "-888px",
-          mobilePositionX: "-666px",
-        },
         heading: "SpreadsheetProtection",
-        textList: [
-          "ProtectAccess"
+        text: [
+          "ProtectAccess",
+          "EncryptSpreadsheets",
+          "ProtectWorkbookOrSeparateSheet",
+          "AllowEditingForSpecific",
+          "HideFormulas",
+          "LockSpreadsheetElements",
         ],
-        items: [
-          { label: "EncryptSpreadsheets" },
-          { label: "ProtectWorkbookOrSeparateSheet" },
-          { label: "AllowEditingForSpecific" },
-          { label: "HideFormulas" },
-          { label: "LockSpreadsheetElements" },
-        ],
-        linkText: "ReadMoreAboutProtectingSpreadsheets",
-        linkUrl: "https://helpcenter.onlyoffice.com/onlyoffice-editors/onlyoffice-spreadsheet-editor/UsageInstructions/ProtectSpreadsheet.aspx",
-        target: "_blank"
+        link: {
+          href: "https://helpcenter.onlyoffice.com/onlyoffice-editors/onlyoffice-spreadsheet-editor/UsageInstructions/ProtectSpreadsheet.aspx",
+          label: "ReadMoreAboutProtectingSpreadsheets",
+          target: "_blank"
+        }
       },
       {
-        icon: {
-          url: "/images/templates/security/compliance/sec_icons.svg",
-          positionX: "-992px",
-          mobilePositionX: "-744px",
-        },
         heading: "Watermarks",
-        textList: [
+        text: [
           "YouCanApplyWatermarks"
-        ],
-        linkText: "",
+        ]
       },
       {
-        icon: {
-          url: "/images/templates/security/compliance/sec_icons.svg",
-          positionX: "-581px",
-          mobilePositionX: "-436px",
-        },
         heading: "HTTPS",
-        textList: [
+        text: [
           "ONLYOFFICEAllowsYouToEncrypt"
         ],
-        linkText: "ReadMoreAboutUsingHTTPS",
-        linkUrl: "https://helpcenter.onlyoffice.com/server/controlpanel/enterprise/switch-to-https.aspx",
-        target: "_blank"
+        link: {
+          href: "https://helpcenter.onlyoffice.com/server/controlpanel/enterprise/switch-to-https.aspx",
+          label: "ReadMoreAboutUsingHTTPS",
+          target: "_blank"
+        }
       },
       {
-        icon: {
-          url: "/images/templates/security/compliance/sec_icons.svg",
-          positionX: "-1085px",
-          mobilePositionX: "-815px",
-        },
         heading: "DigitalSignatures",
-        textList: [
+        text: [
           "ApplyingDigitalSignatures"
-        ],
-        linkText: "",
+        ]
       },
   ];

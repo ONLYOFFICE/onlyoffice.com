@@ -2,13 +2,13 @@ import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { 
-    StyledAuthenticationFeatures, 
     StyledAuthenticationHeading, 
-    StyledFeatureImageItem,
-    StyledFeatureItemText,
+    StyledFeatureImageItemText, 
+    StyledHowItWorksFeatures,
 } from "./Authentication.styled";
 import { items } from "./data/items";
-import { Link } from "@src/components/ui/Link";
+import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
+import { Text } from "@src/components/ui/Text";
 
 const Authentication = () => {
     const { t } = useTranslation("security");
@@ -18,16 +18,47 @@ const Authentication = () => {
         background="#f5f5f5"
         desktopSpacing={["60px", "112px"]}
         tabletSpacing={["56px", "112px"]}
-        tabletSmallSpacing={["87px", "56px"]}
-        mobileSpacing={["50px", "68px"]}
+        tabletSmallSpacing={["87px", "88px"]}
         >
             <Container>
             <StyledAuthenticationHeading
                 level={2}
                 label={t("AuthenticationAndPortal")}
             />
-            <StyledAuthenticationFeatures>
-                {items.map(({title, text, image}, index) => (
+            <StyledHowItWorksFeatures>
+                {items.map(({ heading, text, links, image }, index) => (
+                    <FeatureImageItem
+                    key={index}
+                    className="feature-item"
+                    position={{ desktop: index % 2 === 1 ? "right" : "left" }}
+                    heading={t(heading)}
+                    text={
+                        <>
+                        {text.map((textKey, idx) => (
+                            <StyledFeatureImageItemText key={idx}>
+                                <Trans
+                                t={t}
+                                i18nKey={textKey}
+                                components={[<Text as="span" fontWeight={700} key="0" />]}
+                                />
+                            </StyledFeatureImageItemText>
+                        ))}
+                        </>
+                    }
+                    links={links?.map(link => ({
+                        href: link.href,
+                        label: t(link.label),
+                        isExternal: link.isExternal,
+                    }))}
+                    image={{
+                        url: t(image.url),
+                        height: image.height,
+                        width: image.width
+                    }}
+                    />
+                ))}
+            {/* <StyledAuthenticationFeatures> */}
+                {/* {items.map(({title, text, image}, index) => (
                     <StyledFeatureImageItem
                     key={index}
                     className={`auth-item auth-item-${index + 1}`}
@@ -84,8 +115,8 @@ const Authentication = () => {
                         height: image.height,
                     }}
                     />
-                ))}
-            </StyledAuthenticationFeatures>
+                ))} */}
+            </StyledHowItWorksFeatures>
             </Container>
         </Section>
     );

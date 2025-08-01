@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { device } from "@src/utils/device";
+import { Text } from "@src/components/ui/Text";
+import { Link } from "@src/components/ui/Link";
 
-
-
-const StyledComlianceHeading = styled(Heading)`
+const StyledComplianceHeading = styled(Heading)`
     font-size: 32px;
     font-weight: bold;
     letter-spacing: -0.02em;
@@ -26,13 +26,19 @@ const StyledComlianceHeading = styled(Heading)`
 `;
 
 const StyledComplianceBlocks = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 32px;
     justify-content: space-between;
     margin-top: 48px;
 
     @media ${device.desktop} {
         width: 90vw;
+        margin: 48px auto 0;
+    }
+
+    @media ${device.tablet} {
+        grid-template-columns: 1fr
     }
 
     @media ${device.tabletS} {
@@ -40,29 +46,75 @@ const StyledComplianceBlocks = styled.div`
         margin-top: 32px;
         gap: 56px;
     }
+
+    @media ${device.mobile} {
+        margin-top: 24px;
+    }
 `;
 
-const StyledComplianceBlock = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding-top: 80px;
+const StyledFeatureItem = styled.div`
+    justify-items: flex-start;
+    text-align: left;
     position: relative;
-    width: 50%;
 
     &::before {
         content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 64px;
-        height: 64px;
         background-image: url("/images/templates/security/compliance/sec_icons.svg");
+        background-position: 0 0;
+        background-size: cover;
+        display: block;
+        height: 64px;
+        width: 64px;
+        position: absolute;
+    }
+
+    &:nth-child(2)::before {
+        background-position-x: -120px;
+    }
+
+    @media ${device.mobile} {
+        &::before {
+            height: 48px;
+            width: 48px;
+        }
+
+        &:nth-child(2)::before {
+            background-position-x: -90px;
+        }
+    }
+`;
+
+const StyledFeatureItemHeading = styled(Heading)`
+    padding: 80px 0 16px;
+    
+    @media ${device.mobile} {
+        padding-top: 64px;
+    }
+`;
+
+const StyledFeatureItemText = styled(Text)`
+    padding-bottom: 16px;
+    line-height: 1.6em;
+
+    @media ${device.mobile} {
+        font-size: 13px;
+        padding-bottom: 12px;
+    }
+`;
+
+const StyledLink = styled(Link)`
+    font-size: 14px;
+
+    @media ${device.mobile} {
+        font-size: 13px;
     }
 `;
 
 export { 
-    StyledComlianceHeading,
+    StyledComplianceHeading,
     StyledComplianceBlocks,
-    StyledComplianceBlock
+    StyledFeatureItem,
+    StyledFeatureItemHeading,
+    StyledFeatureItemText,
+    StyledLink
  }

@@ -47,7 +47,7 @@ const StyledHeading = styled(Heading)`
 `;
 
 const StyledWrapperRightImg = styled.div`    
-    background-image: url("./images/templates/security/compliance/sec_black_imgs.svg");
+    background-image: url("/images/templates/security/compliance/sec_black_imgs.svg");
     background-size: cover;
     background-repeat: no-repeat;
     display: inline-block;

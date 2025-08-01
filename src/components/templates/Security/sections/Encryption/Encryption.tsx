@@ -3,10 +3,13 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { 
     StyledEncryptionBlocks,
-    StyledEncryptionHeading
+    StyledEncryptionHeading,
+    StyledFeatureItem,
+    StyledFeatureItemHeading,
+    StyledFeatureItemText,
+    StyledLink
 } from "./Encryption.styled";
 import { items } from "./data/items";
-import { FeatureLinkItem } from "@src/components/widgets/FeatureLinkItem";
 
 const Encryption = () => {
     const { t } = useTranslation("security");
@@ -14,9 +17,8 @@ const Encryption = () => {
     return(
         <Section
         desktopSpacing={["60px", "22px"]}
-        tabletSpacing={["112px", "56px"]}
-        tabletSmallSpacing={["89px", "56px"]}
-        mobileSpacing={["48px", "28px"]}
+        tabletSpacing={["112px", "80px"]}
+        tabletSmallSpacing={["89px", "60px"]}
         >
             <StyledEncryptionHeading
                 level={2}
@@ -25,21 +27,28 @@ const Encryption = () => {
             <Container>
             <StyledEncryptionBlocks>
                 {items.map((item, index) => (
-                    <FeatureLinkItem
-                    variant="horizontal"
-                    customPadding="80px 0 0 0"
-                    key={index}
-                    icon={{
-                        url: item.icon.url,
-                        positionX: item.icon.positionX,
-                        mobilePositionX: item.icon.mobilePositionX
-                    }}
-                    heading={t(String(item.heading))}
-                    textList={item.textList ? item.textList.map((el) => t(String(el))) : undefined}
-                    linkText={t(String(item.linkText))}
-                    linkUrl={item.linkUrl}
-                    target={item.target}
-                    />
+                    <StyledFeatureItem key={index}>
+                        <StyledFeatureItemHeading 
+                        className="feature-heading"
+                        size={5}
+                        label={t(item.heading)}/>
+                        {Array.isArray(item.text) && item.text.map((el, idx) => (
+                            <StyledFeatureItemText key={idx} 
+                            size={3}
+                            label={t(el)}
+                            />
+                        ))}
+                        { item.link && (
+                            <StyledLink
+                            color="main"
+                            textUnderline
+                            hover="underline-none"
+                            href={item.link?.href}
+                            target={item.link?.target}
+                            label={t(String(item.link?.label))}
+                            />
+                        )}
+                    </StyledFeatureItem>
                 ))}
             </StyledEncryptionBlocks>
             </Container>
