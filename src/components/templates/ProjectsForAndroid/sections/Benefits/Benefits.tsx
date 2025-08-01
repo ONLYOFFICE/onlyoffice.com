@@ -11,8 +11,10 @@ import {
     StyledText
 } from "./Benefits.styled";
 import { items } from "./data/items";
+import { hero } from "../Hero/data/items";
+import { ILocale } from "@src/types/locale";
 
-const Benefits = () => {
+const Benefits = ({locale}: ILocale) => {
     const { t } = useTranslation("projects-for-android");
 
     return(
@@ -37,11 +39,7 @@ const Benefits = () => {
                                 />
                             ))}
                         </BlockText>
-                        <StyledButton 
-                        as="a"
-                        href={t(items.btnhref)}
-                        target="_blank"
-                        />
+                        <StyledButton as="a" $locale={locale} $HeroImgUrl={t(hero.image.url)} target={locale === "zh" ? "_self" : "_blank"} href={t(items.btnHref)} />
                     </StyledBenefitsWrapperLeft>
                     <StyledBenefitsWrapperRight $BenefitsImgUrl={t(items.image.url)} />
                 </StyledBenefitsWrapper>

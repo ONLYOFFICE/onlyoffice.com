@@ -89,9 +89,9 @@ const StyledText = styled(Text)`
     }
 `;
 
-const StyledButton = styled(Button)`
+const StyledButton = styled(Button)<{$locale?: string; $HeroImgUrl: string;}>`
   background-color: transparent;
-  background-image: url("./images/templates/projects-for-android/hero/googleplay.png");
+  background-image: url(${({ $HeroImgUrl }) => $HeroImgUrl});
   background-repeat: no-repeat;
   background-position: -12px -12px;
   background-size: 193px auto;
@@ -100,7 +100,11 @@ const StyledButton = styled(Button)`
   margin-right: 9px;
   margin-top: 35px;
   width: 170px;
-
+${({ $locale }) => $locale === "zh" && `
+    background-position: 3px 3px;
+    background-size: 165px auto;
+  `}
+  
   &:hover {
     background-color: transparent;
   }

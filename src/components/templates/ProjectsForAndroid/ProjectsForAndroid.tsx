@@ -10,7 +10,7 @@ const ProjectsForAndroidTemplate = ({ locale }: ILocale) => {
       <Hero locale={locale} />
       <Features />
       <HowToStart />
-      <Benefits />
+      <Benefits locale={locale}/>
     </>
   );
 };

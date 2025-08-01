@@ -1,6 +1,6 @@
 export interface IBenefits {
     heading: string;
     text: {label: string;}[];
-    btnhref: string;
+    btnHref: string;
     image: { url: string; };
 }

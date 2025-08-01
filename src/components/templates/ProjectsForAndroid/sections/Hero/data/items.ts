@@ -6,8 +6,5 @@ export const hero: IHero = {
   image: {
     url: "HeroImgUrl",
   },
-  btn: {
-    href: "HeroUrl",
-    target: "_blank"
-  }
+  btnHref: "HeroUrl"
 };

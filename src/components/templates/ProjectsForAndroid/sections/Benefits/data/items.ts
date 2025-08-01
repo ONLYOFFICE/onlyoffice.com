@@ -10,6 +10,6 @@ export const items: IBenefits = {
         {label: "TechnicalSupport"},
         {label: "OnlineDocumentation"},
     ],
-    btnhref: "https://play.google.com/store/apps/details?id=com.onlyoffice.documents",
+    btnHref: "HeroUrl",
     image: {url: "BenefitsImage"}
 }
