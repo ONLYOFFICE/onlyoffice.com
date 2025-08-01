@@ -1,6 +1,6 @@
 import {
   StyledFeatureImageItemContent,
-  StyledFeatureImageItemText,
+  StyledImgLinkBtnItemText,
   StyledFeatureImageItemLink,
 } from "./FeatureImageItem.styled";
 import { IFeatureImageItem } from "./FeatureImageItem.types";
@@ -32,9 +32,9 @@ const FeatureImageItem = ({
     >
       <StyledFeatureImageItemContent>
         <Heading level={3} label={heading} />
-        <StyledFeatureImageItemText color="#666666">
+        <StyledImgLinkBtnItemText color="#666666">
           {text}
-        </StyledFeatureImageItemText>
+        </StyledImgLinkBtnItemText>
         {links?.map(({ href, label, isExternal }, index) => (
           <StyledFeatureImageItemLink
             key={index}

@@ -15,7 +15,7 @@ const StyledFeatureImageItemContent = styled.div<{
   }
 `;
 
-const StyledFeatureImageItemText = styled.div`
+const StyledImgLinkBtnItemText = styled.div`
   font-size: 16px;
   line-height: 24px;
 
@@ -34,6 +34,6 @@ const StyledFeatureImageItemLink = styled(Link)`
 
 export {
   StyledFeatureImageItemContent,
-  StyledFeatureImageItemText,
+  StyledImgLinkBtnItemText,
   StyledFeatureImageItemLink,
 };

@@ -11,5 +11,31 @@
   "EnhancedSecurityOptions": "enhanced security options",
   "PriorityAccessSecurityStabilityFixes": "priority access to security and stability fixes",
   "EasilyScalable": "easily scalable",
-  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "free trial, lifetime license + yearly updates and support"
+  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "free trial, lifetime license + yearly updates and support",
+
+  "FlexibleChoiceSoftwareTools": "<0>Flexible choice</0> of software tools to fit your organization’s needs",
+  "LearnMore": "Learn more",
+  "UseItForFree": "Use it for free",
+  "GetItNow": "Get it now",
+
+  "EffectivelyCollaborateOnMedicalRecords": "Effectively collaborate on medical records",
+  "OODocSpaceAllowsConnectingDoctors": "ONLYOFFICE DocSpace allows connecting doctors and documentation in customizable rooms with flexible settings.",
+  "EffectivelyCollabFeature1": "Create collaboration rooms to work on patient records together such as for multi-disciplinary discussions, form filling rooms to collect data and responses, or custom rooms for any other purpose.",
+  "EffectivelyCollabFeature2": "Share access with doctors responsible for treatment, including cross-hospital cases. For quick access, use Public rooms where it's possible to view documents without registration.",
+  "EffectivelyCollabFeature3": "Protect rooms and sensitive files they might contain using multiple security settings.",
+  "EffectivelyCollabImgUrl": "/images/templates/healthcare/flexible-choice/docspace.svg",
+
+  "OrganizeASecureDigitalWorkplace": "Organize a secure digital workplace",
+  "OOOffersCollaborationPlatform": "ONLYOFFICE offers a full-stack collaboration platform with enhanced security features.",
+  "OrganizeASecureFeature1": "Securely store, share, and edit documents within <0>ONLYOFFICE Documents</0>. Create ready-to-fill-out forms. Open video and audio files and view images of different formats.",
+  "OrganizeASecureFeature2": "Improve contact management with <0>ONLYOFFICE CRM</0>. Manage office tasks with <1>ONLYOFFICE Projects</1>.",
+  "OrganizeASecureFeature3": "Create an internal communication hub for employees within <0>ONLYOFFICE Community</0>. Organize a timetable with <1>ONLYOFFICE Calendar</1>.",
+  "OrganizeASecureImgUrl": "/images/templates/healthcare/flexible-choice/new_icon_1.svg",
+
+  "AlreadyUseAPopularDms": "Already use a popular DMS? Enable secure document editing and collaboration with ONLYOFFICE Docs",
+  "OOOffersConnectors": "ONLYOFFICE offers a collection of ready-to-use connectors for deep integration into your infrastructure.",
+  "AlreadyUseFeature1": "Keep patient information in text documents, spreadsheets, or presentations encrypted end-to-end. Securely edit and collaborate on them in real-time. Highly compatible with MS Office formats.",
+  "AlreadyUseFeature2": "Set granular document permissions. Use a variety of collaboration features, including version history, track changes, comments, and built-in chat.",
+  "AlreadyUseFeature3": "Protect patient information from being copied, downloaded, or printed.",
+  "AlreadyUseImgUrl": "/images/templates/healthcare/flexible-choice/new_icon_2.svg"
 }
