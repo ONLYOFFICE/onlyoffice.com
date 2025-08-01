@@ -1,0 +1,35 @@
+{
+  "PageTitle": "加入我们让ONLYOFFICE变得更好",
+  "PageDescription": "参与ONLYOFFICE项目：开发、翻译、测试或记录和传播我们。",
+
+  "HeroTitle": "成为<span>ONLYOFFICE</span><br />大家庭的一员",
+  "HeroText": "参加到ONLYOFFICE开源项目中，让它变得更好！",
+
+  "ImproveOO": "优化ONLYOFFICE",
+  "DevelopYourOwnPluginOrMacros": "为ONLYOFFICE文档编辑器开发插件或宏。",
+  "ReadAPIDocumentation": "阅读API文档",
+  "CreateYourOwnForm": "创建您自己的表单模板并与他人分享。",
+  "OpenOurFormLibrary": "打开我们的表单库",
+  "CreateAnExtensionOrModule": "为 ONLYOFFICE 协作空间创建扩展或模块。",
+  "DidYouFindABug": "发现了bug？在<0>GitHub</0>或<1>论坛</1>上报告问题。",
+  "MoreInfo": "了解更多",
+
+  "SocialMediaText": "在<0>博客</0>或社交媒体上与我们互动",
+
+  "SpreadTitle": "传播ONLYOFFICE技术",
+  "SpreadText": "为您的平台构建连接器，将ONLYOFFICE带给每一个人。",
+  "SpreadLink": "阅读API文档",
+  "More": "更多",
+
+  "TranslateOO": "<0>翻译</0>ONLYOFFICE",
+  "TranslateOOText": "<p>您是否愿意帮助我们将ONLYOFFICE界面翻译成您的母语，让世界各个国家的用户都可以使用它？</p><p>加入我们的翻译志愿社区，您可以电邮至<0>documentation@onlyoffice.com</0>，以获得访问我们的在线翻<1>译系统的权限</1> 。</p>",
+
+  "TestOO": "<0>测试</0>ONLYOFFICE",
+  "TestOOText": "<p>成为ONLYOFFICE beta版的测试员，帮助我们测试即将推出的功能和解决方案。</p><p>请发送电邮至<0>press@onlyoffice.com</0>联系我们。</p>",
+
+  "DocumentOO": "ONLYOFFICE <0>文档撰写</0>",
+  "DocumentOOText": "<p>您是否有一些贴士或技巧有助于提高ONLYOFFICE的使用效率？</p><p>未找到某些功能的使用指南？</p><p>希望将文档翻译成您的母语？</p><p>请通过<0>documentation@onlyoffice.com</0>与我们联系，分享您的看法。</p>",
+
+  "ContactsImgUrl": "/images/templates/contribute/contacts/zh/contacts-bg.png",
+  "ContactsImgUrl2x": "/images/templates/contribute/contacts/zh/contacts-bg@2x.png"
+}

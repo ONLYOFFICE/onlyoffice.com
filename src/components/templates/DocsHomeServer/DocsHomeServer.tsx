@@ -1,10 +1,14 @@
+import { IDocsHomeServerTemplate } from "@src/components/templates/DocsHomeServer";
 import { Hero } from "./sections/Hero";
 import { Faq } from "./sections/Faq";
 
-const DocsHomeServerTemplate = () => {
+const DocsHomeServerTemplate = ({
+  locale,
+  productsData,
+}: IDocsHomeServerTemplate) => {
   return (
     <>
-      <Hero />
+      <Hero locale={locale} productsData={productsData} />
       <Faq />
     </>
   );

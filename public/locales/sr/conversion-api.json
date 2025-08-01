@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Conversion API | ONLYOFFICE",
+  "PageDescription": "One API to convert all kinds of office documents",
+
+  "HeroTitle": "Moćan konverzija dokumenata",
+  "HeroText": "Jedan API za pretvaranje svih vrsta Office dokumenata: tekstovi, listovi, slajdovi, obrasci, PDF-ovi, e-knjige i još mnogo toga",
+  "GetStarted": "Počnite",
+
+  "ExploreExamples": "Istražite primere spremne za upotrebu",
+  "OOConversionApiTitle": "ONLYOFFICE API za konverziju se koristi u popularnim integracijama",
+  "ConvertingFormats": "Konvertovanje ne-OOXML formata u OOXML za dalju obradu.",
+  "SavingDocuments": "Čuvanje dokumenata iz skladišta datoteka u različitim formatima",
+
+  "WhyToUseOOConversionApi": "Zašto koristiti ONLYOFFICE API za konverziju",
+  "SupportForAllPopularFormats": "Podrška za sve popularne format",
+  "CreatePdfs": "Kreirajte PDF-ove iz svojih dokumenata, listova ili slajdova, pretvorite udžbenik u e-knjige, pretvorite prezentacije u slikovne datoteke i još mnogo toga. ONLYOFFICE podržava više od 50 različitih <0>formata dokumenata</0>.",
+  "Security": "Bezbednost",
+  "TheOpenSourceCode": "Izvorni kod ONLYOFFICE-a je dostupan na GitHub-u kako bi se obezbedila transparentnost i pouzdanost. JSON Web Token štiti dokumente od neovlašćenog pristupa. Pročitajte više o <0>merama bezbednosti</0>.",
+  "AdvancedSettings": "Napredna podešavanja",
+  "AddConversionSettings": "Dodajte podešavanja konverzije za definisanje karaktera delilaca prilikom konvertovanja csv datoteka, podrazumevani način prikaza valute prilikom konvertovanja tabela, ili da postavite veličinu stranice i margine izlazne PDF datoteke, i još mnogo toga. Pogledajte API dokumentaciju da biste saznali o svim dostupnim opcijama.",
+  "HighQualityConversion": "Visokokvalitetna konverzija",
+  "OOConstantlyImproveTheService": "ONLYOFFICE stalno poboljšava uslugu kako bi pružio najbolje moguće rezultate za sve vrste konverzije. Koristite <0>naš online konvertor</0> i pokušajte da konvertujete svoje datoteke dokumenata.",
+
+  "EasilyBuild": "Jednostavno izgradite online konvertor dokumenata",
+  "UsingOOConversionApi": "Korišćenje ONLYOFFICE Conversion API",
+  "CheckTheTutorial": "Proverite tutorijal",
+  "DocumentConverterLink": "https://www.onlyoffice.com/blog/2023/02/build-an-online-document-converter-with-onlyoffice-conversion-api",
+
+  "PartOfOODocsDeveloper": "ONLYOFFICE Conversion API – deo ONLYOFFICE Docs Developer",
+  "BringAdvancedDocument": "Donesite naprednu obradu dokumenata sa uslugom konverzije krajnjim korisnicima pod sopstvenim brendom. <0>Saznajte više</0>",
+
+  "HaveAnyQuestions": "Imate li pitanja?",
+  "HaveAnyQuestionsText": "Rado ćemo vam pomoći i razgovarati o svim detaljima.",
+  "GetInTouch": "KONTAKTIRAJTE NAS"
+}

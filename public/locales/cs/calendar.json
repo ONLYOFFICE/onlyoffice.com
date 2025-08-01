@@ -1,0 +1,24 @@
+{
+  "PageTitle": "Časový nástroj pro lepší organizaci | ONLYOFFICE",
+  "PageDescription": "Vytvořte svůj osobní a týmový rozvrh a jednoduše spravujte události v kalendáři.",
+
+  "HeroTitle": "Efektivní nástroj pro organizaci času",
+  "HeroText": "Udržujte svůj tým organizovaný a produktivní",
+  "GetItNow": "Získejte ONLYOFFICE",
+
+  "IndividualOrGroup": "Individuální nebo skupinový kalendář",
+  "IndividualOrGroupText": "Vytvořte svůj osobní rozvrh, <0>sdílejte kalendáře</0> nebo naplánujte schůzky s celou skupinou.",
+  "IndividualOrGroupImage": "/images/templates/calendar/features/cs/individual_or_group.png",
+  "SimpleScheduling": "Snadné plánování s různými typy událostí",
+  "SimpleSchedulingText": "Vytvořte celodenní, vícedenní anebo opakující se události. Přidat seznam úkolů do svého kalendáře. Pošlete na ně pozvánku všem internetovým uživatelům. Nastavte si upozorňování a už nikdy nic nezmeškejte.",
+  "SimpleSchedulingImage": "/images/templates/calendar/features/cs/simple_scheduling.png",
+  "Synchronization": "Synchronizace s aplikacemi třetích stran",
+  "SynchronizationText": "Můžete importovat události z (nebo přidat) iCal od Google, Apple iCal, Yahoo!, synchronizace kalendáře pomocí protokolu CalDAV a sledovat tak všechny události na jednom místě.",
+  "SynchronizationImage": "/images/templates/calendar/features/cs/synchronization.png",
+  "CloseIntegration": "Úzká integrace se všemi moduly ONLYOFFICE",
+  "CloseIntegrationText": "Sledujte své milníky, projekty a úkoly CRM nebo získávejte oznámení o narozeninách uživatelů. Odesílání a přijímání pozvánek na důležité události z kalendáře.",
+  "CloseIntegrationImage": "/images/templates/calendar/features/cs/close_integration.png",
+
+  "EasyToUse": "Snadno použitelný software s řadou funkcí podporujících spolupráci.",
+  "PcMag": "PC Mag"
+}

@@ -1,0 +1,69 @@
+{
+  "PageTitle": "Koristite AI asistente u ONLYOFFICE-u. | ONLYOFFICE",
+  "PageDescription": "Radite brže sa svojim tekstovima, tabelama i prezentacijama koristeći AI dodatke direktno u uređivačima.",
+
+  "HeroTitle": "Koristite <0>AI asistente</0> u ONLYOFFICE-u",
+  "HeroInputPlaceholder": "Enter your email",
+  "CreateFreeAccount": "Kreirajte besplatan nalog",
+
+  "MakeTheMost": "Iskoristite <0>AI pomagače</0>",
+
+  "WorkWithText": "Radite sa tekstovima",
+  "GenerateText": "Generišite tekst",
+  "RewriteText": "Preformulišite tekst <br/>(produžite ga / skratite ga / pojednostavite ga)",
+  "FixGrammar": "Popravite gramatiku i pravopis",
+  "Summarize": "Sumirajte",
+  "ExtractKeywords": "Izvucite ključne reči",
+  "ExplainWords": "Objasnite reči",
+  "Translate": "Prevedite",
+
+  "GenerateElements": "Generišite elemente za dokumente, listove, slajdove",
+  "GenerateImages": "Generišite slike iz teksta",
+  "GetCode": "Napravite kod",
+  "BuildTables": "Napravite tabele",
+
+  "ChatWithAI": "Razgovarajte sa veštačkom inteligencijom",
+  "GetAnswers": "Dobijte odgovore na svoja pitanja",
+  "MakeRequests": "Napravite različite zahteve u slobodnom obliku",
+  "QuicklyFind": "Brzo pronađite informacije",
+  "Entertain": "Zabavite se",
+
+  "WorkWithVisuals": "Rad sa vizualima",
+  "MakeUseOfOCR": "Korišćenje OCR tehnologije",
+  "ExtractText": "Izdvajanje teksta iz skeniranih PDF-ova",
+  "DigitizeImages": "Digitalizacija slika sa ugrađenim tekstom",
+
+  "CalculateWithAI": "Računanje uz pomoć AI",
+  "GetTheRightFunction": "Pronađite pravu funkciju za sekundu",
+  "CreateNewMacros": "Kreirajte nove makroe",
+  "ConvertMacros": "Konvertujte VBA makroe",
+
+  "TryInCloud": "PROBAJTE U OBLAKU",
+  "TryInDesktop": "PROBAJTE NA DESKTOPU",
+
+  "ConnectAnyAI": "Integrišite bilo kojeg AI asistenta",
+  "ConnectAnyAIText": "Želite li da povežete sopstvenog AI asistenta sa urednicima? Uradite to lako preko dodatka.",
+
+  "DifferentAI": "Različiti AI modeli - za različite zadatke",
+  "AdjustAI": "Prilagodite korišćenje AI prema vašim potrebama. Primenite različite AI modele za izvođenje različitih akcija kao što su chatbot zahtevi, prevođenje, OCR, itd.",
+
+  "GetStarted": "Počnite",
+  "SwitchToThePluginsTab": "Pređite na karticu <0>Dodaci</0> u uređivačima",
+  "LaunchPluginManager": "Pokrenite ugrađeni <0>Plugin Manager</0>",
+  "ClickInstall": "Kliknite na Instaliraj pored dodatka <0>ChatGPT / ZhiPu Copilot</0>",
+  "AccessTheAIPlugin": "Unesite svoj OpenAI API / ZhiPu Copilot ključ da biste počeli da koristite dodatak",
+  "ClickSettings": "Kliknite na <0>Podešavanja</0> da otvorite prozor za konfiguraciju",
+  "ClickEditAIModels": "Kliknite na <0>Uredi AI modele</0>. Unesite svoje ključeve za izabrane AI provajdere sa liste ili dodajte nove AI modele",
+  "SelectTheRequiredAIModels": "Izaberite potrebne AI modele za različite zadatke",
+
+  "LearnMoreHeading": "Saznajte više o korišćenju AI u ONLYOFFICE-u",
+  "Blog": "Blog",
+  "FAQ": "FAQ: kako koristiti AI u ONLYOFFICE-u",
+  "FAQLink": "https://www.onlyoffice.com/blog/sr/2025/03/kako-koristiti-ai-u-onlyoffice-u",
+  "TopAITools": "Najbolji AI alati za kancelarijske pakete",
+  "TopAIToolsLink": "https://www.onlyoffice.com/blog/sr/2025/01/najbolji-ai-alati-za-office-pakete",
+  "HowToAdd": "Kako dodati sopstvenog provajdera u AI dodatak",
+  "HowToAddLink": "https://www.onlyoffice.com/blog/sr/2025/03/kako-dodati-prilagodenog-provajdera-u-onlyoffice-ai-dodatak",
+
+  "LearnMore": "Saznajte više"
+}

@@ -1,6 +1,6 @@
 {
   "windows": "For Windows",
-  "macos": "For macOS",
+  "macos": "For Mac OS",
   "linux": "For Linux",
   "app-store": {
     "light": "/images/ui/download-button/app-store-white.svg",

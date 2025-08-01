@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Help ons om ONLYOFFICE beter te maken",
+  "PageDescription": "Bijdragen aan het ONLYOFFICE-project: ontwikkelen, vertalen, testen of documenteren en het woord verspreiden.",
+
+  "HeroTitle": "Maak deel uit van<br />de <span>ONLYOFFICE</span>-familie",
+  "HeroText": "Bijdragen aan het ONLYOFFICE-open sourceproject en het nog beter maken!",
+
+  "ImproveOO": "Verbeter ONLYOFFICE",
+  "DevelopYourOwnPluginOrMacros": "Ontwikkel uw eigen plugin of macro's voor ONLYOFFICE-document editors.",
+  "ReadAPIDocumentation": "Lees API-documentatie",
+  "CreateYourOwnForm": "Maak uw eigen formulier sjablonen en deel ze met anderen.",
+  "OpenOurFormLibrary": "Open onze formulier bibliotheek",
+  "CreateAnExtensionOrModule": "Maak een app/extensie of de hele module voor ONLYOFFICE-samenwerkingsplatform.",
+  "DidYouFindABug": "Heeft u een bug gevonden? Meld problemen op <0>GitHub</0> of het <1>forum</1>.",
+  "MoreInfo": "Meer informatie",
+
+  "SocialMediaText": "Communiceer met ons op <0>blog</0> of social media-kanalen",
+
+  "SpreadTitle": "Verspreid de ONLYOFFICE-technologie",
+  "SpreadText": "Bouw een connector voor uw eigen platform om ONLYOFFICE naar iedereen te brengen.",
+  "SpreadLink": "Lees API-documentatie",
+  "More": "Meer",
+
+  "TranslateOO": "<0>Vertaal</0> ONLYOFFICE",
+  "TranslateOOText": "<p>Wilt u ons helpen de ONLYOFFICE-interface te vertalen naar uw moedertaal om deze overal ter wereld toegankelijk te maken?</p><p>Word lid van onze vrijwillige gemeenschap van vertalers en schrijf ons op <0>documentation@onlyoffice.com</0> en krijg toegang tot ons <1>online vertaalsysteem</1>.</p>",
+
+  "TestOO": "<0>Test</0> ONLYOFFICE",
+  "TestOOText": "<p>Word een ONLYOFFICE-beta-tester om ons te helpen de komende functies en oplossingen te testen.</p><p>Neem contact met ons op via <0>press@onlyoffice.com</0>.</p>",
+
+  "DocumentOO": "<0>Documenteer</0> ONLYOFFICE",
+  "DocumentOOText": "<p>Heeft u enkele tips of trucs om efficiënter met ONLYOFFICE te werken?</p><p>Heeft u geen informatie gevonden over het gebruik van sommige functies?</p><p>Wilt u de beschikbare documentatie naar uw moedertaal vertalen?</p><p>Neem contact met ons op via <0>documentation@onlyoffice.com</0> om uw gedachten te delen.</p>"
+}

@@ -1,0 +1,26 @@
+{
+  "PageTitle": "Corporate network for team collaboration | ONLYOFFICE",
+  "PageDescription": "Improve your team collaboration with blogs, forums, bookmarks, wiki.",
+
+  "HeroTitle": "Improve team communication",
+  "HeroText": "Easy-to-use software with an array of business-friendly collaboration features<br/><1>By PCMag</1>",
+  "HeroImage": "/images/templates/community/hero/en/hero_image.png",
+  "HeroImage2x": "/images/templates/community/hero/en/hero_image@2x.png",
+  "GetItNow": "Get it now",
+
+  "SharingCompanyNews": "Sharing company news and announcements",
+  "SharingCompanyNewsText": "Create a corporate news board for posting the latest company news, orders, and announcements. Add and share bookmarks to useful or interesting resources with your colleagues.",
+  "SharingCompanyNewsImage": "/images/templates/community/features/en/sharing_company_news.png",
+  "CreatingPolls": "Creating polls and surveys",
+  "CreatingPollsText": "Conduct research, gather data, or get feedback from other office users with polls and surveys. Add questionnaires to make forum posts more interactive.",
+  "CreatingPollsImage": "/images/templates/community/features/en/creating_polls.png",
+  "MaintainingBlogs": "Maintaining corporate blogs and forums",
+  "MaintainingBlogsText": "Add posts to the corporate blog to share ideas, knowledge, and experience with others. Discuss issues and lead forum discussions.",
+  "MaintainingBlogsImage": "/images/templates/community/features/en/maintaining_blogs.png",
+  "InstantMessaging": "Instant messaging application",
+  "InstantMessagingText": "Communicate with other users in real-time, organize conferences in chat rooms, and use mailing lists to send a message to many people simultaneously.",
+  "InstantMessagingImage": "/images/templates/community/features/en/instant_messaging.png",
+
+  "EasyToUse": "Easy-to-use software with an array of business-friendly collaboration features.",
+  "PcMag": "PC Mag"
+}

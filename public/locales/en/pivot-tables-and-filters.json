@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Spreadsheet pivot tables and filters | ONLYOFFICE",
+  "PageDescription": "Briefly illustrate relevant data from your worksheets with summaries. Sort and filter sheets to create the most accurate display of information in ONLYOFFICE.",
+  "Header": "Easily analyze large amounts of data",
+  "SubHeader": "Display your data for each and every task with pivot tables, filtering, and sorting parameters",
+
+  "HeroImgUrl": "/images/templates/pivot-tables-and-filters/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/pivot-tables-and-filters/hero/hero@2x.png",
+
+  "Feature1Title": "Create pivot tables",
+  "Feature1Desc": "Briefly illustrate relevant data from your worksheets with summaries. Change and rearrange display fields, choose from multiple layouts, and organize data between filters, rows, columns, and values.",
+
+  "Feature2Title": "Adjust appearance and advanced settings",
+  "Feature2Desc": "Fit in summaries on the same or new worksheet. Change colors, sizes, and styles, choose from Compact, Outline, and Tabular report layout forms, and apply existing styles from templates or create new ones.",
+
+  "Feature3Title": "Easily add filters to spreadsheets",
+  "Feature3Desc": "Sort and filter sheets and pivot tables to create the most accurate display of information. Set your own filtering templates. Share sheets with the Custom Filter permission to allow your colleagues to independently add filters on Excel spreadsheets. Create Sheet Views so you can personally browse with your own filters.",
+
+  "Feature4Title": "Apply slicers for quick filtering",
+  "Feature4Desc": "Add slicers for formatted and pivot tables to quickly filter out information with buttons. Customize the appearance, size, and position of the slicers, and configure cell snapping parameters. Create and organize multiple slicers on your sheets.",
+
+  "Feature1ImgUrl": "/images/templates/pivot-tables-and-filters/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/pivot-tables-and-filters/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/pivot-tables-and-filters/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/pivot-tables-and-filters/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/pic4@2x.png"
+}

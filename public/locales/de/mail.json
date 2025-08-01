@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Das korporative Tool für die E-Mail-Management | ONLYOFFICE",
+  "PageDescription": "Erstellen Sie korporative Mailboxen, verknüpfen Sie Ihre E-Mail-Konten und verwalten Sie die gesamte Korrespondenz an einem Ort.",
+
+  "HeroTitle": "Effiziente E-Mail-Verwaltung",
+  "HeroText": "Benutzerfreundliches Tool für die Verwaltung von E-Mails",
+  "HeroImage": "/images/templates/mail/hero/de/hero_image.png",
+  "HeroImage2x": "/images/templates/mail/hero/de/hero_image@2x.png",
+  "GetItNow": "Jetzt erhalten",
+
+  "MailServer": "E-Mail-Server",
+  "MailServerText": "Fügen Sie einen Mail-Server mit Ihrem eigenen Domänennamen hinzu, um Postfächer für Ihre Teammitglieder zu erstellen. Synchronisieren Sie E-Mails über IMAP. Sichern und stellen Sie die Mail-Server-Datenbank wieder her.",
+  "MailServerImage": "/images/templates/mail/features/de/mail_server.png",
+  "MailAggregator": "E-Mail-Aggregator",
+  "MailAggregatorText": "Sammeln, verarbeiten und speichern Sie Ihre gesamte Korrespondenz an einem Ort, indem Sie alle E-Mail-Konten mit ONLYOFFICE verbinden.",
+  "MailAggregatorImage": "/images/templates/mail/features/de/mail_aggregator.png",
+  "EffectiveEmail": "Effektive Verwaltung von E-Mails",
+  "EffectiveEmailText": "Organisieren Sie Ihren Posteingang effizient: Ordnen Sie die Korrespondenz mithilfe der Ordnerverwaltung in Kategorien, verschieben Sie E-Mails einfach per Drag & Drop in Ordner, nutzen Sie Filter, um Ihre E-Mails automatisch zu sortieren.",
+  "EffectiveEmailImage": "/images/templates/mail/features/de/effective_email.png",
+  "EasyEmailFormatting": "Einfache E-Mail-Formatierung",
+  "EasyEmailFormattingText": "Zahlreiche Schriftarten und Stile. Laden Sie Anhänge hoch und hängen Sie Anhänge aus dem Modul Dokumente an. Erstellen und Verwalten von Unterschriften. Nutzen Sie den umfangreichen Template-Bausteine.",
+  "EasyEmailFormattingImage": "/images/templates/mail/features/de/email_formatting.png",
+  "CrmIntegration": "CRM-Integration",
+  "CrmIntegrationText": "erknüpfen Sie E-Mail-Threads oder separate Nachrichten mit CRM-Kontakten, Veranstaltungen oder Verkaufschancen und Sie haben die diesbezügliche Korrespondenz immer gleich zur Hand.",
+  "CrmIntegrationImage": "/images/templates/mail/features/de/crm_integration.png",
+  "DocumentIntegration": "Integration des Moduls „Dokumente“",
+  "DocumentIntegrationText": "Hängen Sie Dateien aus dem Modul Dokumente an Ihre E-Mails an, um einen schnellen Informationsaustausch zu ermöglichen.",
+  "DocumentIntegrationImage": "/images/templates/mail/features/de/document_integration.png",
+  "CalendarIntegration": "Integration des Moduls „Kalender“",
+  "CalendarIntegrationText": "Senden Sie Kalender-Einladungen und informieren Sie Ihre Gäste über etwaige vorgenommene Änderungen. Rufen Sie Einladungen von Drittanbieterkalendern ab und beantworten Sie diese.",
+  "CalendarIntegrationImage": "/images/templates/mail/features/de/calendar_integration.png",
+
+  "PerfectOnlineCollaboration": "Der perfekte kleine Online-Arbeitsbereich für Ihr gesamtes Team.",
+  "PcMag": "PC Mag"
+}

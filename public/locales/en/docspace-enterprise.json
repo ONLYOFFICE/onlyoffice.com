@@ -36,7 +36,7 @@
   "EnvironmentItemTitleSecurity": "Security",
   "EnvironmentItemTextSecurity": "Keep your data safe on all fronts: enterprise-ready security settings, compliance with industry-specific standards, priority access to security and stability fixes.",
   "EnvironmentItemLinkSecurity": "Learn more about ONLYOFFICE security",
-  "EnvironmentItemImageSecurity":"/images/templates/docspace-enterprise/environment/en/Security.svg",
+  "EnvironmentItemImageSecurity": "/images/templates/docspace-enterprise/environment/en/Security.svg",
 
   "EnvironmentItemTitleAccessibility": "Accessibility",
   "EnvironmentItemTextAccessibility": "Make the editing process simple and comfortable for everyone: switch between available color modes, enable necessary plugins, hide or show bars and rulers, etc.",
@@ -89,7 +89,7 @@
 
   "CostButtonPickYourPrice": "Pick your price",
 
-  "CostFooterIfYouRepresent":"If you represent an educational institution or a non-profit organization, <0>contact our sales team</0> to get an individual discount.",
+  "CostFooterIfYouRepresent": "If you represent an educational institution or a non-profit organization, <0>contact our sales team</0> to get an individual discount.",
   "CostFooterTheFamilyPack": "The <1>Family Pack</1> for non-commercial use is also available.",
 
   "GettingStarted": "Getting started is easy",

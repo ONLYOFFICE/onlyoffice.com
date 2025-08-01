@@ -1,0 +1,13 @@
+{
+  "windows": "Windows版",
+  "macos": "Mac OS版",
+  "linux": "Linux版",
+  "app-store": {
+    "light": "/images/ui/download-button/zh/app-store.svg",
+    "dark": "/images/ui/download-button/zh/app-store.svg"
+  },
+  "google-play": {
+    "light": "/images/ui/download-button/zh/google-play.svg",
+    "dark": "/images/ui/download-button/zh/google-play.svg"
+  }
+}

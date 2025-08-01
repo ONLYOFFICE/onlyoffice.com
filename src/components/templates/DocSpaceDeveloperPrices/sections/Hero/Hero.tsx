@@ -10,7 +10,9 @@ import {
   StyledHeroLink,
   StyledHeroCaption,
 } from "./Hero.styled";
+import { IDocSpaceDeveloperPricesFormData } from "./Hero.types";
 import { ILocale } from "@src/types/locale";
+import { useRewardful } from "@src/utils/useRewardful";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -23,15 +25,18 @@ import { Tabs } from "@src/components/widgets/Tabs";
 import { CounterSelector } from "@src/components/widgets/CounterSelector";
 import { CounterSelectorWrapper } from "@src/components/widgets/pricing/CounterSelectorWrapper";
 import { List } from "@src/components/widgets/pricing/List";
-import { QuoteModal } from "@src/components/widgets/pricing/QuoteModal";
+import {
+  QuoteModal,
+  IQuoteModalOnSubmitRequest,
+  IQuoteModalFormData,
+} from "@src/components/widgets/pricing/QuoteModal";
 import { SelectorsWrapper } from "@src/components/widgets/pricing/SelectorsWrapper";
 import { SelectorItemWrapper } from "@src/components/widgets/pricing/SelectorItemWrapper";
 
 const Hero = ({ locale }: ILocale) => {
   const { t } = useTranslation("docspace-developer-prices");
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState({
+  const initialFormData: IDocSpaceDeveloperPricesFormData = {
     development: true,
     devServersNumber: "1",
     production: false,
@@ -45,7 +50,81 @@ const Hero = ({ locale }: ILocale) => {
     nativeMobileApps: false,
     desktopApps: false,
     trainingCourses: false,
+  };
+  const initialQuoteFormData: IQuoteModalFormData = {
+    fullName: "",
+    email: "",
+    phone: "",
+    companyName: "",
+    hCaptcha: null,
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState(initialFormData);
+  const [quoteFormData, setQuoteFormData] = useState(initialQuoteFormData);
+  const [affiliate, setAffiliate] = useState<{
+    id?: string;
+    token?: string;
+    params?: string;
+  }>({
+    id: "",
+    token: "",
+    params: "",
   });
+
+  const { getClientReferenceId, getAffiliateToken, getClientReferenceParam } =
+    useRewardful({
+      onReady: () => {
+        const id = getClientReferenceId();
+        const token = getAffiliateToken();
+        const params = getClientReferenceParam();
+
+        setAffiliate((prev) =>
+          prev.id === id && prev.token === token && prev.params === params
+            ? prev
+            : { id, token, params },
+        );
+      },
+    });
+
+  const onSubmitRequest = async ({
+    from,
+    country,
+    region,
+  }: IQuoteModalOnSubmitRequest) => {
+    return fetch("/api/docspace-developer-prices", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        locale,
+        referer: document.referrer,
+        fullName: quoteFormData.fullName,
+        email: quoteFormData.email,
+        phone:
+          locale === "zh" && !quoteFormData.phone ? "+86" : quoteFormData.phone,
+        companyName: quoteFormData.companyName,
+        development: formData.development,
+        devServersNumber: formData.devServersNumber,
+        production: formData.production,
+        prodServerNumber: formData.prodServerNumber,
+        connectionsNumber: formData.connectionsNumber,
+        supportLevel: formData.supportLevel,
+        branding: formData.branding,
+        multiTenancy: formData.multiTenancy,
+        disasterRecovery: formData.disasterRecovery,
+        multiServerDeployment: formData.multiServerDeployment,
+        nativeMobileApps: formData.nativeMobileApps,
+        desktopApps: formData.desktopApps,
+        trainingCourses: formData.trainingCourses,
+        from,
+        country,
+        region,
+        affiliateId: affiliate.id || "",
+        affiliateToken: affiliate.token || "",
+        type: "docspacedeveloperrequest",
+      }),
+    }).then((res) => res.json());
+  };
 
   return (
     <StyledHero
@@ -205,9 +284,9 @@ const Hero = ({ locale }: ILocale) => {
                   { id: "White Label", label: { name: t("WhiteLabel") } },
                 ]}
                 selected={formData.branding}
-                onChange={(value) =>
-                  setFormData((prev) => ({ ...prev, branding: value }))
-                }
+                onChange={(
+                  value: IDocSpaceDeveloperPricesFormData["branding"],
+                ) => setFormData((prev) => ({ ...prev, branding: value }))}
               />
             </LabeledWrapper>
 
@@ -321,9 +400,9 @@ const Hero = ({ locale }: ILocale) => {
                 selected={formData.supportLevel}
                 bgColor="#f5f5f5"
                 collapsible
-                onChange={(value) =>
-                  setFormData((prev) => ({ ...prev, supportLevel: value }))
-                }
+                onChange={(
+                  value: IDocSpaceDeveloperPricesFormData["supportLevel"],
+                ) => setFormData((prev) => ({ ...prev, supportLevel: value }))}
               />
             </LabeledWrapper>
 
@@ -369,6 +448,7 @@ const Hero = ({ locale }: ILocale) => {
 
             <Button
               onClick={() => setIsModalOpen(true)}
+              data-testid="get-a-quote-button"
               fullWidth
               label={t("GetAQuote")}
             />
@@ -389,9 +469,7 @@ const Hero = ({ locale }: ILocale) => {
         )}
 
         <QuoteModal
-          locale={locale}
           isOpen={isModalOpen}
-          onClose={() => setIsModalOpen(false)}
           heading={t("FillInTheFormToGetAQuote")}
           byClickedText={
             <Trans
@@ -409,7 +487,14 @@ const Hero = ({ locale }: ILocale) => {
               ]}
             />
           }
+          initialFormData={initialFormData}
+          initialQuoteFormData={initialQuoteFormData}
+          setFormData={setFormData}
+          quoteFormData={quoteFormData}
+          setQuoteFormData={setQuoteFormData}
           buttonLabel={t("GetAQuote")}
+          onSubmitRequest={onSubmitRequest}
+          onClose={() => setIsModalOpen(false)}
         />
       </Container>
     </StyledHero>

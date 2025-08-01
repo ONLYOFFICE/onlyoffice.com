@@ -1,0 +1,29 @@
+{
+  "PageTitle": "ONLYOFFICE Docsの主な機能を確認する | ONLYOFFICE",
+  "PageDescription": "docx、xlsx、pptxファイルの編集、PDFの閲覧、記入欄の作成、リアルタイムでの共同作業など、ONLYOFFICEの主な機能を確認できます。ダウンロードや登録は必要ありません。",
+
+  "HeroHeadingSeeIt": "実際に使用してみましょう！",
+  "HeroTextCurious": "インターフェイスがどのようなものか、登録なしで主な機能を試してみませんか？",
+
+  "ActionsEditDocx": "DOCX を編集",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
+  "ActionsEditXlsx": "XLSX を編集",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
+  "ActionsEditPptx": "PPTX を編集",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
+  "ActionsEditPdf": "PDFを編集する",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
+  "ActionsCreateForm": "フォームの作成",
+  "ActionsFillInPdfForm": "PDFフォームの入力",
+  "ActionsCollaborate": "共同編集",
+
+  "ActionsDemoPreview": "デモのプレビュー",
+  "ActionsDemoModalHeadingOpenDocx": "DOCX を開いて、編集",
+  "ActionsDemoModalHeadingOpenXlsx": "XLSX を開いて、編集",
+  "ActionsDemoModalHeadingOpenPptx": "PPTX を開いて、編集",
+  "ActionsDemoModalHeadingOpenPdf": "PDFを編集する",
+  "ActionsDemoModalHeadingOpenCreateForm": "フォームの作成",
+  "ActionsDemoModalHeadingOpenFill": "PDFフォームの入力",
+  "ActionsDemoModalHeadingOpenCollaborate": "共同編集",
+  "ActionsDemoModalButtonClose": "閉じる"
+}

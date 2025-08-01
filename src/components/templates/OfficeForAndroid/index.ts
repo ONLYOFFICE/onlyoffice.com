@@ -1,0 +1,1 @@
+export { OfficeForAndroidTemplate } from "./OfficeForAndroid";

@@ -16,7 +16,11 @@ import {
   StyledHeroTotalPrice,
   StyledHeroBtnWrapper,
 } from "./Hero.styled";
-import { ILocale } from "@src/types/locale";
+import { IDocsEnterprisePricesFormData } from "./Hero.types";
+import { IDocsEnterprisePricesTemplate } from "@src/components/templates/DocsEnterprisePrices";
+import { getProduct } from "./utils/getProduct";
+import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
+import { useRewardful } from "@src/utils/useRewardful";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
@@ -29,24 +33,64 @@ import { Tabs } from "@src/components/widgets/Tabs";
 import { CounterSelector } from "@src/components/widgets/CounterSelector";
 import { List } from "@src/components/widgets/pricing/List";
 import { SelectorsWrapper } from "@src/components/widgets/pricing/SelectorsWrapper";
-import { QuoteModal } from "@src/components/widgets/pricing/QuoteModal";
+import {
+  QuoteModal,
+  IQuoteModalOnSubmitRequest,
+  IQuoteModalFormData,
+} from "@src/components/widgets/pricing/QuoteModal";
 import { Reseller } from "@src/components/modules/pricing/Reseller";
 
-const Hero = ({ locale }: ILocale) => {
+const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
   const { t } = useTranslation("docs-enterprise-prices");
+  const currency = getCurrencyByLocale(locale);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState({
+  const initialFormData: IDocsEnterprisePricesFormData = {
     hosting: "On-premises",
     connectionsNumber: "50",
     licenseDuration: "1-year",
-    supportUpdates: "1-year",
+    supportAndUpdates: "1-year",
     cloudType: "Business",
     supportLevel: "Plus",
     trainingCourses: false,
     disasterRecovery: false,
     multiTenancy: false,
+  };
+  const initialQuoteFormData: IQuoteModalFormData = {
+    fullName: "",
+    email: "",
+    phone: "",
+    companyName: "",
+    hCaptcha: null,
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState(initialFormData);
+  const [quoteFormData, setQuoteFormData] = useState(initialQuoteFormData);
+
+  const [affiliate, setAffiliate] = useState<{
+    id?: string;
+    token?: string;
+    params?: string;
+  }>({
+    id: "",
+    token: "",
+    params: "",
   });
+
+  const { getClientReferenceId, getAffiliateToken, getClientReferenceParam } =
+    useRewardful({
+      onReady: () => {
+        const id = getClientReferenceId();
+        const token = getAffiliateToken();
+        const params = getClientReferenceParam();
+
+        setAffiliate((prev) =>
+          prev.id === id && prev.token === token && prev.params === params
+            ? prev
+            : { id, token, params },
+        );
+      },
+    });
 
   const hostingIsCloud = formData.hosting === "Cloud";
   const hostingIsOnPremises = formData.hosting === "On-premises";
@@ -58,7 +102,46 @@ const Hero = ({ locale }: ILocale) => {
     formData.multiTenancy,
   ].some(Boolean);
 
-  const isOrderNow = [formData.disasterRecovery].every(Boolean);
+  const isOrderNow =
+    formData.disasterRecovery &&
+    !formData.trainingCourses &&
+    !formData.multiTenancy;
+
+  const product = getProduct(formData, productsData);
+
+  const onSubmitRequest = async ({
+    from,
+    country,
+    region,
+  }: IQuoteModalOnSubmitRequest) => {
+    return fetch("/api/docs-enterprise-prices", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        locale,
+        referer: document.referrer,
+        fullName: quoteFormData.fullName,
+        email: quoteFormData.email,
+        phone: quoteFormData.phone,
+        companyName: quoteFormData.companyName,
+        hosting: formData.hosting,
+        connectionsNumber: formData.connectionsNumber,
+        licenseDuration: formData.licenseDuration,
+        supportAndUpdates: formData.supportAndUpdates,
+        cloudType: formData.cloudType,
+        supportLevel: formData.supportLevel,
+        trainingCourses: formData.trainingCourses,
+        disasterRecovery: formData.disasterRecovery,
+        multiTenancy: formData.multiTenancy,
+        from,
+        country,
+        region,
+        affiliateId: affiliate.id || "",
+        affiliateToken: affiliate.token || "",
+        type: "docsenterpriserequest",
+      }),
+    }).then((res) => res.json());
+  };
 
   return (
     <StyledHero
@@ -81,8 +164,8 @@ const Hero = ({ locale }: ILocale) => {
             <StyledHeroPriceWrapper>
               {t("From")}
               <StyledHeroPrice>
-                <span>$</span>
-                {hostingIsCloud ? 8 : 1500}
+                <span>{currency.symbol}</span>
+                {hostingIsCloud ? 8 : productsData.basic1.price}
               </StyledHeroPrice>
               {hostingIsCloud && t("user/month")}
             </StyledHeroPriceWrapper>
@@ -122,7 +205,7 @@ const Hero = ({ locale }: ILocale) => {
                   { id: "On-premises", label: { name: t("OnPremises") } },
                 ]}
                 selected={formData.hosting}
-                onChange={(value) =>
+                onChange={(value: IDocsEnterprisePricesFormData["hosting"]) =>
                   setFormData((prev) => ({ ...prev, hosting: value }))
                 }
               />
@@ -150,7 +233,9 @@ const Hero = ({ locale }: ILocale) => {
                     ]}
                     selected={formData.connectionsNumber}
                     bgColor="#f5f5f5"
-                    onChange={(value) =>
+                    onChange={(
+                      value: IDocsEnterprisePricesFormData["connectionsNumber"],
+                    ) =>
                       setFormData((prev) => ({
                         ...prev,
                         connectionsNumber: value,
@@ -166,11 +251,13 @@ const Hero = ({ locale }: ILocale) => {
                       { id: "Lifetime", label: { name: t("Lifetime") } },
                     ]}
                     selected={formData.licenseDuration}
-                    onChange={(value) =>
+                    onChange={(
+                      value: IDocsEnterprisePricesFormData["licenseDuration"],
+                    ) =>
                       setFormData((prev) => ({
                         ...prev,
                         licenseDuration: value,
-                        supportUpdates:
+                        supportAndUpdates:
                           value === "1-year" ? "1-year" : "3-year",
                       }))
                     }
@@ -183,11 +270,13 @@ const Hero = ({ locale }: ILocale) => {
                       { id: "1-year", label: { name: t("1 year") } },
                       { id: "3-year", label: { name: t("3 year") } },
                     ]}
-                    selected={formData.supportUpdates}
-                    onChange={(value) =>
+                    selected={formData.supportAndUpdates}
+                    onChange={(
+                      value: IDocsEnterprisePricesFormData["supportAndUpdates"],
+                    ) =>
                       setFormData((prev) => ({
                         ...prev,
-                        supportUpdates: value,
+                        supportAndUpdates: value,
                         licenseDuration:
                           value === "1-year" ? "1-year" : "Lifetime",
                       }))
@@ -229,9 +318,9 @@ const Hero = ({ locale }: ILocale) => {
                     },
                   ]}
                   selected={formData.cloudType}
-                  onChange={(value) =>
-                    setFormData((prev) => ({ ...prev, cloudType: value }))
-                  }
+                  onChange={(
+                    value: IDocsEnterprisePricesFormData["cloudType"],
+                  ) => setFormData((prev) => ({ ...prev, cloudType: value }))}
                 />
               </LabeledWrapper>
             )}
@@ -305,9 +394,9 @@ const Hero = ({ locale }: ILocale) => {
                 selected={formData.supportLevel}
                 bgColor="#f5f5f5"
                 collapsible
-                onChange={(value) =>
-                  setFormData({ ...formData, supportLevel: value })
-                }
+                onChange={(
+                  value: IDocsEnterprisePricesFormData["supportLevel"],
+                ) => setFormData({ ...formData, supportLevel: value })}
               />
             </LabeledWrapper>
 
@@ -356,12 +445,12 @@ const Hero = ({ locale }: ILocale) => {
             </LabeledWrapper>
 
             <StyledHeroTotal>
-              {!(isGetIsQuote || isOrderNow) && (
+              {!isGetIsQuote && (
                 <StyledHeroTotalWrapper>
                   <Heading level={4} color="#444444" label={t("Total")} />
                   <StyledHeroTotalPrice>
-                    <span>$</span>
-                    2100
+                    <span>{currency.symbol}</span>
+                    {product?.price}
                   </StyledHeroTotalPrice>
                 </StyledHeroTotalWrapper>
               )}
@@ -370,17 +459,26 @@ const Hero = ({ locale }: ILocale) => {
                 {isGetIsQuote ? (
                   <Button
                     onClick={() => setIsModalOpen(true)}
+                    data-testid="get-a-quote-button"
                     fullWidth
                     label={t("GetAQuote")}
                   />
                 ) : isOrderNow ? (
                   <Button
                     onClick={() => setIsModalOpen(true)}
+                    data-testid="get-a-quote-button"
                     fullWidth
                     label={t("OrderNow")}
                   />
                 ) : (
-                  <Button as="a" fullWidth href="" label={t("BuyNow")} />
+                  <Button
+                    data-testid="buy-now-button"
+                    as="a"
+                    fullWidth
+                    href={product?.url}
+                    target="_blank"
+                    label={t("BuyNow")}
+                  />
                 )}
               </StyledHeroBtnWrapper>
             </StyledHeroTotal>
@@ -389,7 +487,6 @@ const Hero = ({ locale }: ILocale) => {
           <QuoteModal
             locale={locale}
             isOpen={isModalOpen}
-            onClose={() => setIsModalOpen(false)}
             heading={
               isOrderNow
                 ? t("FillInTheFormToReceive")
@@ -419,7 +516,14 @@ const Hero = ({ locale }: ILocale) => {
                 ]}
               />
             }
+            initialFormData={initialFormData}
+            initialQuoteFormData={initialQuoteFormData}
+            setFormData={setFormData}
+            quoteFormData={quoteFormData}
+            setQuoteFormData={setQuoteFormData}
             buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
+            onSubmitRequest={onSubmitRequest}
+            onClose={() => setIsModalOpen(false)}
           />
         </StyledHeroWrapper>
 

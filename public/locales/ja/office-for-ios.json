@@ -1,0 +1,66 @@
+{
+  "PageTitle": "iPhone、iPad 対応モバイル用オフィススイート | ONLYOFFICE Documents",
+  "PageDescription": "Edit and co-edit documents, spreadsheets and presentations, fill out forms from your iOS devices.",
+
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents、強力な iPhone、iPad 対応 <0>モバイル用オフィススイート</0>",
+  "AbsolutelyFree": "すべて <0>無料</0>。広告無しアプリ購入無し",
+
+  "OneAppThreeEditors": "1つのアプリ - <0>3 つのエディター</0> - 複数の機能",
+  "CompatibleWithMSOffice": "Microsoft Office フォーマットに適合",
+
+  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.ja.svg",
+
+  "FeaturesItemHeadingFull": "完全装備のテキスト プロセッサ",
+  "FeaturesItemTextMakeUse": "複数のテキスト プロセッサ ツールを利用: ページ、テキストの書式設定、表、オートシェープ、チャートなど。任意の大きさと複雑さのテキスト文書を作成。AirPrint で文書を印刷。",
+
+  "FeaturesItemHeadingComplete": "完璧なスプレッドシート編集",
+  "FeaturesItemTextManage": "スプレッドシートのデータ管理: 行、列の編集、セルのパラミーターの調整、450 種類以上の計算式、データの分類、フィルタ使用可能。",
+
+  "FeaturesItemHeadingCollaborative": "共同プレゼンテーション編集",
+  "FeaturesItemTextMakeWork": "スライドの人気オブジェクトを編集: 画像挿入、オートシェープ、チャート、グラフ、テキスト、他の項目を追加、編集。",
+
+  "FeaturesItemHeadingOnline": "オンライン フォーム フィラー",
+  "FeaturesItemTextMakeView": "フォームを表示して記入できます。フィールド間に簡単に移動できます。結果をPDFまたはDOCXファイルとして保存できます。",
+
+  "FeaturesItemHeadingPDF": "PDF ビューア、メデア再生機",
+  "FeaturesItemTextMakeViewPDF": "PDF ドキュメント、画像を表示、音声ファイル、ビデオファイルを表示。.bmp、.jpg、.jpeg、.png、.gif、.tif、 .tiff、.avi、.mpeg、.mp3、.pdf などを表示。",
+
+  "OnlyOfficeDocumentsIs": "「ONLYOFFICE Documentsは優れた製品であり、ユーザーから『Very Good』賞を与えられました。」",
+  "MichaelGanss": "Michael Ganss氏、",
+
+  "RealTimeCollaboration": "リアルタイムの共同編集",
+  "BeMoreProductive": "より生産的に。アプリをONLYOFFICEクラウドに接続する。ドキュメントを共有して、チームメイトとリアルタイムで共同編集できる。コメントをつけ、変更をトラキングできる。グラフィック注釈の追加。",
+
+  "VideoCardHeading": "パワフルなモバイルオフィススイート「ONLYOFFICE ドキュメント」をご紹介します。",
+
+  "GetStartedAndChoose": "開始して、作業場所を選択しましょう",
+
+  "ChooseItemOnDevice": "デバイスで",
+  "ChooseItemManageDocuments": "デバイスでドキュメントを管理、オフラインで編集。",
+
+  "ChooseItemInOnlyOffice": "ONLYOFFICE クラウドで",
+  "ChooseItemAccessDocs": "ONLYOFFICE クラウド、ONLYOFFICE クラウドが接続されているストレージ (ドロップボックス、Google ドライブなど) からドキュメントにアクセスして、共同編集作業。",
+
+  "ChooseItemInYourCloud": "お使いのクラウドで",
+  "ChooseItemConnectNextcloud": "Nextcloud,、ownCloud、他の WebDAVで作動する任意のクラウドに接続、アプリから直接ドキュメントを編集。",
+
+  "ChooseItemFromOther": "他のアプリから",
+  "ChooseItemImportDocuments": "iTunes、Filesなどのようなアプリからドキュメントをインポート。",
+
+  "GetMoreWithComplete": "完全なモバイルバージョンをさらに活用しましょう",
+  "WorkOnDocumentsWithin": "モバイル ブラウザーでドキュメントを編集。ONLYOFFICE ウェブポータルへ移動して、ドキュメント編集、共同編集についてのガイドを入手しましょう。",
+
+  "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for iOS",
+
+  "LearnCardTitleRelease": "Release notes",
+  "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v7.2 for iOS",
+  "LearnMoreSubtitleRead": "Read story",
+
+  "LearnCardTitleHints": "Hints",
+  "LearnMoreTextHandwriting": "Handwriting in ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "Learn more",
+
+  "LearnCardTitleDeveloper": "Developer guide",
+  "LearnMoreTextHowMobile": "How mobile integration works",
+  "LearnMoreSubtitleLearn2": "Learn more"
+}

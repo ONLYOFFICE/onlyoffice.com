@@ -1,0 +1,12 @@
+{
+  "ModalTitle": "Не пропустите обновление!",
+  "GetTheLatestOONews": "Получайте последние новости ONLYOFFICE на ваш email",
+  "FirstName": "Имя",
+  "FirstNameIsEmpty": "Поле Имя не заполнено",
+  "YourEmail": "Ваш email",
+  "EmailIsEmpty": "Поле Email не заполнено",
+  "EmailIsIncorrect": "Неверный Email",
+  "Subscribe": "Подписаться",
+
+  "MessageWithConfirmation": "На ваш адрес электронной почты отправлено сообщение с подтверждением."
+}

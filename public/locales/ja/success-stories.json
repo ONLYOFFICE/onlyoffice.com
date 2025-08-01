@@ -13,9 +13,7 @@
     },
     "profile": {
       "company": "<0>ASTU - 現代経営技術機関</0>",
-      "industry": [
-        "経営コンサルティング"
-      ]
+      "industry": ["経営コンサルティング"]
     },
     "challenges": [
       "チーム内での効果的なコラボレーション、運用計画、プロジェクト管理。"
@@ -133,9 +131,7 @@
     },
     "profile": {
       "company": "<2>SPDバート・ゼッキンゲン地方支部</2>",
-      "industry": [
-        "ドイツで最も成功している政党の地方支部の一つ。"
-      ],
+      "industry": ["ドイツで最も成功している政党の地方支部の一つ。"],
       "link": "https://www.spd-kreisverband.de/"
     },
     "challenges": [

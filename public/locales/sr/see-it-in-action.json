@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Check ONLYOFFICE Docs main functionality | ONLYOFFICE",
+  "PageDescription": "Edit docx, xlsx, pptx files, view PDFs, create fillable forms, collaborate in real-time to check the ONLYOFFICE main features. No downloads or registration required.",
+
+  "HeroHeadingSeeIt": "Pogledajte u akciji",
+  "HeroTextCurious": "Zanima vas kako izgleda interfejs i da isprobate glavne funkcionalnosti bez registracije?",
+
+  "ActionsEditDocx": "Uredite DOCX",
+  "ActionsExampleDocumentTitleDocx": "Primer dokumenta Title.docx",
+  "ActionsEditXlsx": "Uredite XLSX",
+  "ActionsExampleDocumentTitleXlsx": "Primer dokumenta Title.xlsx",
+  "ActionsEditPptx": "Uredite PPTX",
+  "ActionsExampleDocumentTitlePptx": "Primer dokumenta Title.pptx",
+  "ActionsEditPdf": "Uredite PDF",
+  "ActionsExampleDocumentTitlePdf": "Primer dokumenta Title.pdf",
+  "ActionsCreateForm": "Kreiraj obrazac",
+  "ActionsFillInPdfForm": "Popunite PDF formular",
+  "ActionsCollaborate": "Sarađujete",
+
+  "ActionsDemoPreview": "Demo pregled",
+  "ActionsDemoModalHeadingOpenDocx": "Otvorite DOCXF za uređivanje",
+  "ActionsDemoModalHeadingOpenXlsx": "Otvorite XLSX za uređivanje",
+  "ActionsDemoModalHeadingOpenPptx": "Otvorite PPTX za uređivanje",
+  "ActionsDemoModalHeadingOpenPdf": "Uredite PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Kreiraj obrazac",
+  "ActionsDemoModalHeadingOpenFill": "Popunite PDF formular",
+  "ActionsDemoModalHeadingOpenCollaborate": "Sarađujete",
+  "ActionsDemoModalButtonClose": "Zatvori"
+}

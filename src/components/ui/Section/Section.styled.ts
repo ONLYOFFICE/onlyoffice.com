@@ -8,6 +8,8 @@ const StyledSection = styled.section<{
   $tabletSpacing: ISection["tabletSpacing"];
   $tabletSmallSpacing: ISection["tabletSmallSpacing"];
   $mobileSpacing: ISection["mobileSpacing"];
+  $borderTop?: boolean;
+  $borderTopColor?: string;
 }>`
   padding: ${(props) =>
     props.$desktopSpacing &&
@@ -39,6 +41,13 @@ const StyledSection = styled.section<{
         ? `${props.$mobileSpacing[0]} 0`
         : `${props.$mobileSpacing[0]} 0 ${props.$mobileSpacing[1]}`)};
   }
+
+  
+  ${({ $borderTop, $borderTopColor }) =>
+    $borderTop &&
+    `
+      border-top: 1px solid ${$borderTopColor || "#E2E2E2"};
+    `}
 `;
 
 export { StyledSection };

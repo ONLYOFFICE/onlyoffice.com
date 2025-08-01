@@ -1,0 +1,72 @@
+{
+  "PageTitle": "Seu espaço de trabalho digital virtual",
+  "PageDescription": "Crie um espaço de trabalho colaborativo online na nuvem segura ou hospede-o você mesmo. Trabalhe remotamente usando recursos de um espaço de trabalho online. Gerencie projetos e e-mails, colabore em documentos, converse no ONLYOFFICE Workspace.",
+
+  "HeroTitle": "ONLYOFFICE Workspace",
+  "HeroText": "Pacote de aplicativos da Web para um gerenciamento de equipe e colaboração eficientes",
+  "GetItNow": "Obtenha-o agora",
+
+  "ManageAllYourBusinessProcesses": "Gerenciar todos os seus processos empresariais",
+  "LearnMore": "Saiba mais",
+
+  "Documents": "Documentos",
+  "StoreAndOrganize": "Armazene e organize a documentação empresarial. Compartilhe documentos e gerencie as permissões de acesso para usuários e grupos. Edite e colabore em <0>documentos de texto</0>, <1>planilhas</1>, <2>apresentações</2>, <3>arquivos PDF</3>, e <4>formulários</4> preenchíveis.",
+  "HighestCompatibility": "A mais alta compatibilidade com os formatos do MS Office",
+  "MultiFormat": "Reprodutor de vários formatos de mídia",
+  "ReadyForms": "Formulários de documentos online prontos para preencher",
+  "PrivateRooms": "Salas Privadas para colaboração criptografada de ponta a ponta em documentos",
+
+  "Mails": "E-mails",
+  "KeepYourMailboxOrganized": "Mantenha sua caixa de correio organizada. Crie caixas de correio corporativas em seu domínio ou use uma padrão. Conecte várias contas de e-mail, gerencie e marque mensagens. Crie assinatura e use o construtor de modelo.",
+  "SupportOfCommonEmailProtocols": "Suporta protocolos de e-mail comuns: POP3, SMTP, IMAP",
+  "UnlimitedNumber": "Número ilimitado de caixas de correio e grupos de e-mail",
+  "FreeDefaultDomain": "Domínio padrão grátis",
+
+  "Crm": "CRM",
+  "OrganizeYourBusinessWorkflow": "Organize seu fluxo de trabalho empresarial desde a geração de clientes potenciais até o preenchimento de pedidos. Crie relatórios e monitore o progresso de sua equipe.",
+  "WebToLead": "Formulário Web-to-Lead para entrada rápida de clientes em potencial",
+  "MakingCalls": "Chamadas com Twilio",
+  "CloseIntegration": "Estreita integração com Mail, Projects e Calendar",
+
+  "Projects": "Projetos",
+  "OrganizeYourTeam": "Organize sua equipe para o sucesso. Crie projetos, priorize tarefas e defina prazos. Rastreie o tempo e gere relatórios para analisar a produtividade de sua equipe.",
+  "GanttChart": "Gráfico de Gantt",
+  "PrivateProjects": "Projetos privados e gestão de direitos de acesso",
+  "Integration": "Integração com Documents, Calendar e CRM",
+  "WatchVideo": "Assistir ao vídeo de apresentação",
+
+  "Calendar": "Agenda",
+  "ManageYourTime": "Gerencie seu tempo de forma inteligente: crie um cronograma pessoal ou de equipe, adicione diferentes tipos de evento e defina lembretes para nunca perder nada.",
+  "CalendarSharing": "Compartilhamento de agenda",
+  "Synchronization": "Sincronização com aplicativos de terceiros",
+  "CloseIntegrationWithModules": "Integração estrita com todos os módulos do ONLYOFFICE",
+
+  "OOWorkspace": "ONLYOFFICE Workspace 12.5:",
+  "OOWorkspaceMobile": "ONLYOFFICE Workspace 12.5 lançado",
+  "OOWorkspaceText": "segurança aprimorada, gerenciamento de documentos otimizado, tema escuro e muito mais",
+
+  "WhyOOWorkspace": "Por que o ONLYOFFICE Workspace",
+  "Benefits": "Vantagens de um espaço de trabalho online",
+
+  "ThirdParty": "Integração com serviços de terceiros",
+  "ExtendYourWorkspace": "Aumente a funcionalidade de seu espaço de trabalho com seus aplicativos e ferramentas favoritos para registro, assinatura, autenticação ou armazenamento.",
+  "FindAppsYouNeed": "Encontre os aplicativos de que você precisa",
+
+  "DataSecurityHeader": "Segurança de dados e controle",
+  "DataSecurity": "Criptografia de dados em repouso e em trânsito. Autenticação LDAP/Active Directory. Direitos de acesso flexíveis e JWT. Rastreamento de atividades, relatórios de auditoria e muito mais.",
+
+  "Administration": "Administração e personalização",
+  "ManageYourWorkspace": "Gerencie seu espaço de trabalho usando um painel de controle intuitivo. Personalize-o com esquemas de cores integrados, substitua logotipos, títulos, links, defina o tema da interface para Claro ou Escuro.",
+
+  "GettingStarted": "Começar é fácil",
+  "UseOOWorkspace": "Use o ONLYOFFICE Workspace na nuvem, hospede-o você mesmo ou inicie uma instalação pré-configurada.",
+
+  "GetStarted": "Introdução",
+  "OvhMarketplace": "OVHcloud Marketplace",
+  "OneClickInstall": "Instalação com um clique, atualização automática",
+
+  "SelfHosted": "Auto-hospedado",
+  "Host": "Hospede em suas instalações",
+
+  "CommunityFooterText": "A versão Community para uso doméstico está disponível para download <0>aqui.</0>"
+}

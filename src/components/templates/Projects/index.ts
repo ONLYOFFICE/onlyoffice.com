@@ -1,0 +1,1 @@
+export { ProjectsTemplate } from "./Projects";

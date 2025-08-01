@@ -73,10 +73,13 @@ const StyledHeroContent = styled.div`
   }
 `;
 
-const StyledHeroHeading = styled(Heading)`
+const StyledHeroHeading = styled(Heading)<{ $locale?: string }>`
+  max-width: ${({ $locale }) =>
+    $locale === "ja" || $locale === "zh" ? "303px" : "100%"};
   line-height: 53px;
 
   @media ${device.tabletS} {
+    max-width: 100%;
     line-height: 60px;
   }
 
@@ -85,7 +88,13 @@ const StyledHeroHeading = styled(Heading)`
   }
 `;
 
-const StyledHeroText = styled(Text)`
+const StyledHeroText = styled(Text)<{ $locale?: string }>`
+  max-width: ${({ $locale }) =>
+    $locale === "ja" || $locale === "zh"
+      ? "303px"
+      : $locale === "sr"
+        ? "330px"
+        : "392px"};
   font-size: 22px;
   line-height: 33px;
 
@@ -95,6 +104,8 @@ const StyledHeroText = styled(Text)`
   }
 
   @media ${device.tabletS} {
+    max-width: 392px;
+    margin: 0 auto;
     font-size: 20px;
     line-height: 30px;
   }
@@ -119,7 +130,8 @@ const StyledHeroImage = styled.div`
   @media ${device.mobile} {
     margin: 0 auto;
     padding-bottom: 0;
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     height: 213px;
   }
 `;

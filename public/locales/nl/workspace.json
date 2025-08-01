@@ -1,0 +1,72 @@
+{
+  "PageTitle": "Workspace voor uw team",
+  "PageDescription": "Beheer, werk samen en communiceer effectief",
+
+  "HeroTitle": "ONLYOFFICE Workspace",
+  "HeroText": "Bundel webapplicaties voor een efficiënt teambeheer en samenwerking",
+  "GetItNow": "Haal het nu",
+
+  "ManageAllYourBusinessProcesses": "Beheer al uw bedrijfsprocessen",
+  "LearnMore": "Leer meer",
+
+  "Documents": "Documenten",
+  "StoreAndOrganize": "Bedrijfsdocumentatie opslaan en organiseren. Deel documenten en beheer toegangsrechten voor gebruikers en groepen. Bewerk en werk samen aan <0>tekstdocumenten</0>, <1>spreadsheets</1>, <2>presentaties</2>, en invulbare <3>formulieren</3> in real-time.",
+  "HighestCompatibility": "Optimaal te gebruiken met MS Office formaten",
+  "MultiFormat": "Mediaspeler in meerdere formaten",
+  "ReadyForms": "Kant-en-klare online document formulieren",
+  "PrivateRooms": "Privé Kamers voor end-to-end versleutelde samenwerking aan documenten",
+
+  "Mails": "E-mails",
+  "KeepYourMailboxOrganized": "Houd uw mailbox georganiseerd. Maak bedrijfsmailboxen aan op uw domein of gebruik de standaardmailbox. Koppel meerdere e-mailaccounts, beheer en tag berichten. Maak een handtekening en maak gebruik van de sjabloon bouwer.",
+  "SupportOfCommonEmailProtocols": "Ondersteuning van gangbare e-mailprotocollen: POP3, SMTP, IMAP",
+  "UnlimitedNumber": "Onbeperkt aantal mailboxen en mailgroepen",
+  "FreeDefaultDomain": "Gratis standaard domein",
+
+  "Crm": "CRM",
+  "OrganizeYourBusinessWorkflow": "Organiseer uw bedrijfsworkflow van leadgeneratie tot orderverwerking. Maak verslagen en volg de vorderingen van uw team.",
+  "WebToLead": "Web-to-Lead formulier voor snelle invoer van potentiële klanten",
+  "MakingCalls": "Bellen met Twilio",
+  "CloseIntegration": "Naadloze integratie met Mail, Projecten en Agenda",
+
+  "Projects": "Projecten",
+  "OrganizeYourTeam": "Organiseer uw team voor succes. Maak projecten, prioriteer taken, en stel deadlines. Houd de tijd bij en genereer verslagen om de productiviteit van uw team te analyseren.",
+  "GanttChart": "Gantt diagram",
+  "PrivateProjects": "Beheer van privéprojecten en toegangsrechten",
+  "Integration": "Integratie met documenten, agenda en CRM",
+  "WatchVideo": "Bekijk videopresentatie",
+
+  "Calendar": "Kalender",
+  "ManageYourTime": "Beheer uw tijd op een slimme manier: maak een persoonlijke of teamagenda, voeg verschillende soorten gebeurtenissen toe en stel herinneringen in om nooit iets te missen.",
+  "CalendarSharing": "Kalender delen",
+  "Synchronization": "Synchronisatie met toepassingen van derden",
+  "CloseIntegrationWithModules": "Naadloze integratie met alle modules van ONLYOFFICE",
+
+  "OOWorkspace": "ONLYOFFICE Workspace 12.5:",
+  "OOWorkspaceMobile": "ONLYOFFICE Workspace 12.5",
+  "OOWorkspaceText": "Verbeterde beveiliging, geoptimaliseerd documentbeheer, donker thema en meer",
+
+  "WhyOOWorkspace": "Waarom ONLYOFFICE Workspace",
+  "Benefits": "Voordelen van een online werkruimte",
+
+  "ThirdParty": "Integratie van diensten van derden",
+  "ExtendYourWorkspace": "Breid de functionaliteit van uw werkruimte uit met uw favoriete apps en tools voor logging, ondertekening, authenticatie of opslag.",
+  "FindAppsYouNeed": "Vind de apps die u nodig hebt",
+
+  "DataSecurityHeader": "Gegevensbeveiliging en controle",
+  "DataSecurity": "Gegevenscodering in rust en onderweg. LDAP/Active Directory authenticatie Flexibele toegangsrechten en JWT. Bijhouden van activiteiten, auditrapportage en meer.",
+
+  "Administration": "Administratie en aanpassingen",
+  "ManageYourWorkspace": "Beheer uw werkruimte met behulp van een intuïtief bedieningspaneel. Personaliseer het met ingebouwde kleurenschema's, vervang logo's, titels, links, stel een licht of donker interfacethema in.",
+
+  "GettingStarted": "Beginnen is gemakkelijk",
+  "UseOOWorkspace": "Gebruik ONLYOFFICE Workspace in de cloud, host het zelf of gebruik een vooraf geconfigureerde installatie.",
+
+  "GetStarted": "Beginnen",
+  "OvhMarketplace": "OVHcloud Marketplace",
+  "OneClickInstall": "Installatie met één klik, automatische update",
+
+  "SelfHosted": "Zelf Gehost",
+  "Host": "Host zelf on-premises",
+
+  "CommunityFooterText": "De Community versie voor thuisgebruik kan <0>hier</0> worden gedownload."
+}

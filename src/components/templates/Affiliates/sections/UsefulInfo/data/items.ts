@@ -20,7 +20,7 @@ export const items: IInfoCard[] = [
       label: "MarketingKitDesc",
     },
     link: {
-      href: "/press-downloads?from=affiliatesdf",
+      href: "/press-downloads?from=affiliates",
       label: "DownloadNow",
     },
   },
@@ -36,7 +36,6 @@ export const items: IInfoCard[] = [
       isExternal: true,
     },
   },
-
   {
     id: "contact-us",
     heading: "ContactUs",
