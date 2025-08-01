@@ -1,0 +1,1 @@
+export { LegalTermsTemplate } from "./LegalTerms";

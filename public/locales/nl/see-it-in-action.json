@@ -1,46 +1,29 @@
 {
-  "PageTitle": "Controleer de belangrijkste functionaliteit van ONLYOFFICE Docs | ONLYOFFICE",
-  "PageDescription": "Bewerk docx, xlsx, pptx bestanden, bekijk PDF's, maak invulbare formulieren, werk real-time samen om de belangrijkste functies van ONLYOFFICE te controleren. Geen downloads of registratie vereist.",
+  "PageTitle": "Bekijk de belangrijkste functionaliteit van ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Bewerk docx-, xlsx- en pptx-bestanden, bekijk PDF's, maak invulbare formulieren, werk in realtime samen om de belangrijkste functies van ONLYOFFICE te bekijken. Geen downloads of registratie nodig.",
 
-  "HeroHeadingSeeIt": "Bekijk het in actie",
-  "HeroTextCurious": "Benieuwd hoe de interface eruitziet en wilt u de belangrijkste functionaliteit uitproberen zonder registratie?",
+  "HeroHeadingSeeIt": "Zie zelf hoe het werkt!",
+  "HeroTextCurious": "Benieuwd hoe de interface eruit ziet en zelf de belangrijkste functionaliteiten uitproberen?",
 
-  "ActionsOpen": "Openen",
   "ActionsEditDocx": "DOCX bewerken",
-  "ActionsExampleDocumentTitleDocx": "Voorbeeld Documenttitel.docx",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
   "ActionsEditXlsx": "XLSX bewerken",
-  "ActionsExampleDocumentTitleXlsx": "Voorbeeld Documenttitel.xlsx",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
   "ActionsEditPptx": "PPTX bewerken",
-  "ActionsExampleDocumentTitlePptx": "Voorbeeld Documenttitel.pptx",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
   "ActionsEditPdf": "PDF bewerken",
-  "ActionsExampleDocumentTitlePdf": "Voorbeeld Documenttitel.pdf",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
   "ActionsCreateForm": "Formulier maken",
-  "ActionsFillInPdfForm": "PDF-formulier invullen",
+  "ActionsFillInPdfForm": "Fill in PDF form",
   "ActionsCollaborate": "Samenwerken",
 
-  "ActionsDemoPreview": "Demo-voorbeeld",
-  "ActionsDemoModalHeadingOpen": "DOCX openen voor bewerking",
-  "ActionsDemoModalButtonClose": "Sluiten",
-
-  "GetStartedHeading": "Begin en kies waar u wilt werken",
-
-  "GetStartedItemTitleInOnlyOffice": "In ONLYOFFICE DocSpace",
-  "GetStartedItemTextCreate": "Maak ruimtes binnen uw beveiligde DocSpace, nodig mensen uit, bekijk, bewerk en werk samen aan allerlei soorten documenten vanaf elk desktop- of mobiel apparaat.",
-  "GetStartedItemLinkStart": "Begin met uw gratis account",
-
-  "GetStartedItemTitleYouUse": "Op het platform dat u gebruikt",
-  "GetStartedItemTextConnect": "Verbind Docs om documenten rechtstreeks vanuit uw app te bewerken. <0>40+ kant-en-klare integraties</0>: Box, Moodle, Nextcloud, Odoo, Wordpress, enz.",
-  "GetStartedItemLink": "Ontvang Docs nu",
-
-  "GetStartedItemTitleYouBuild": "Op het platform dat u bouwt",
-  "GetStartedItemTextIntegrate": "Integreer Docs in uw dienst om uw klanten krachtige documentbewerkings- en -creatiemogelijkheden te bieden onder uw eigen merk.",
-  "GetStartedItemLinkLearn": "Meer informatie",
-
-  "GetStartedItemTitleYourPc": "Vanaf uw pc",
-  "GetStartedItemTextEdit": "Bewerk documenten offline met gratis office-apps voor Windows, Linux en macOS.",
-  "GetStartedItemLinkDownload": "Nu downloaden",
-
-  "GetStartedItemTitleMobile": "Vanaf uw mobiele apparaten",
-  "GetStartedItemTextWork": "Werk aan documenten onderweg met gratis apps voor iOS- en Android-apparaten.",
-  "GetStartedItemLinkInstall": "Nu installeren"
+  "ActionsDemoPreview": "Demo preview",
+  "ActionsDemoModalHeadingOpenDocx": "Open DOCX om te bewerken",
+  "ActionsDemoModalHeadingOpenXlsx": "Open XLSX om te bewerken",
+  "ActionsDemoModalHeadingOpenPptx": "Open PPTX om te bewerken",
+  "ActionsDemoModalHeadingOpenPdf": "Edit PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Formulier maken",
+  "ActionsDemoModalHeadingOpenFill": "Fill in PDF form",
+  "ActionsDemoModalHeadingOpenCollaborate": "Samenwerken",
+  "ActionsDemoModalButtonClose": "Sluiten"
 }

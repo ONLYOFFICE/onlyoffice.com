@@ -1,0 +1,73 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace: совместная работа и безопасное хранение документов для пользователей вашего веб-приложения | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE - это облачный офис, который позволяет управлять документами, проектами, командой и взаимоотношениями с клиентами в едином пространстве.",
+
+  "HeroHeading": "ONLYOFFICE DocSpace: <br><0>совместная работа и безопасное хранение документов для пользователей вашего веб-приложения</0>",
+  "HeroButtonGet": "Скачать",
+  "HeroButtonSchedule": "Запланируйте демонстрацию",
+  "HeroYoutubeTitle": "YouTube video player",
+  "HeroYoutubeUrl": "https://www.youtube.com/embed/snOBl5Ru6lc?si=Tt4C4r4OaUVVCHBs?autoplay=1&mute=1",
+  "HeroYouTubeAttributeName": "youtube embed",
+
+  "SwitcherHeadingBringYour": "Предоставьте пользователям вашего веб-приложения безопасное пространство для хранения контента и совместной работы над документами в режиме реального времени.",
+
+  "SwitcherItemTitle1": "Интегрируйте весь ONLYOFFICE DocSpace, одну из комнат или только один документ ...",
+  "SwitcherItemText1": " ONLYOFFICE предоставляет <0>JavaScript SDK</0>, что позволяет использовать все возможности DocSpace с api.js.",
+  "SwitcherItemLink1": "Читать документацию",
+  "SwitcherItemImgUrl1": "/images/templates/docspace-developer/switcher/integrate.png",
+  "SwitcherItemImgUrl2x1": "/images/templates/docspace-developer/switcher/integrate@2x.png",
+
+  "SwitcherItemTitle2": "... под собственным брендом ...",
+  "SwitcherItemText2": "Используйте стандартные параметры брендинга или выберите опцию ребрендинга, чтобы настроить интерфейс в соответствии с брендингом вашего веб-сайта или приложения. Настройте цвета, измените заголовки, логотипы и ссылки, скройте раздел «О нас» и многое другое.",
+  "SwitcherItemLink2": "Для получения подробной информации свяжитесь с нашим отделом продаж.",
+  "SwitcherItemImgUrl2": "/images/templates/docspace-developer/switcher/branding.png",
+  "SwitcherItemImgUrl2x2": "/images/templates/docspace-developer/switcher/branding@2x.png",
+
+  "SwitcherItemTitle3": "... на собственных серверах ...",
+  "SwitcherItemText3": "ONLYOFFICE DocSpace Developer можно развернуть в локальной сети как приватное или гибридное облачное решение, чтобы ваши пользовательские данные всегда оставались внутри вашей инфраструктуры: без перехода в публичные облака.",
+  "SwitcherItemLink3": "Попробовать прямо сейчас",
+  "SwitcherItemImgUrl3": "/images/templates/docspace-developer/switcher/server.png",
+  "SwitcherItemImgUrl2x3": "/images/templates/docspace-developer/switcher/server@2x.png",
+
+  "SwitcherItemTitle4": "... в минутах.",
+  "SwitcherItemText4": "ONLYOFFICE предоставляет простые инструменты интеграции, требующие от разработчиков минимальных усилий и временных затрат для настройки полнофункциональной интеграции DocSpace.",
+  "SwitcherItemLink4": "",
+  "SwitcherItemImgUrl4": "/images/templates/docspace-developer/switcher/in-minutes.png",
+  "SwitcherItemImgUrl2x4": "/images/templates/docspace-developer/switcher/in-minutes@2x.png",
+
+  "CardsHeading": "ONLYOFFICE DocSpace идеально подойдет для вашего приложения или веб-сайта",
+
+  "CardsItemTitle1": "Неважно, на каком языке написано ваше приложение",
+  "CardsItemText1": "ONLYOFFICE DocSpace можно интегрировать в любое приложение или веб-сайт независимо от их комплекса технологий, языка программирования и инфраструктуры.",
+
+  "CardsItemTitle2": "Неважно, какую модель развертывания вы используете",
+  "CardsItemText2": "Вы можете интегрировать ONLYOFFICE DocSpace в свое SaaS- или локальное решение.",
+
+  "CardsItemTitle3": "Для комплексного использования",
+  "CardsItemText3": "В том числе: CMS, CRM, платформы электронного обучения, почта, приложения для обмена сообщениями, программное обеспечение для управления проектами и многое другое.",
+
+  "WorthHeading": "ONLYOFFICE DocSpace получил высокую оценку как",
+
+  "WorthByUsersTitle": "от пользователей",
+  "WorthByUsersList": [
+    "Настраиваемые комнаты для выполнения различных задач, таких как совместная работа, проведение конференций, заполнение форм, комплексная проверка, предоставление общего доступа",
+    "Гибкие права доступа",
+    "Интегрированные онлайн редакторы текстовых документов, электронных таблиц, презентаций, форм, PDF-файлов",
+    "Улучшенные функциональные возможности обеспечения безопасности",
+    "Безупречное взаимодействие с пользователями на различных устройствах"
+  ],
+
+  "WorthByDevelopersTitle": "от разработчиков",
+  "WorthByDevelopersList": [
+    "Предварительные установки для встраивания и пользовательский режим",
+    "API и поддержка вебхуков",
+    "Plugin SDK для расширения функциональных возможностей",
+    "Высокая доступность и эффективность",
+    "Гибкое ценообразование",
+    "Примеры готовых к использованию интеграций",
+    "Поддержка на каждом этапе от экспертов ONLYOFFICE"
+  ],
+
+  "WorthButtonTry": "Попробовать прямо сейчас",
+  "WorthButtonRead": "Читать документацию"
+}

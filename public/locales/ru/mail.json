@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Корпоративная почта с вашим доменным именем | ONLYOFFICE",
+  "PageDescription": "Корпоративные почтовые ящики, техническая поддержка, совместимость с календарями, CRM и онлайн редакторами документов.",
+
+  "HeroTitle": "Управляйте электронной почтой эффективно",
+  "HeroText": "Используйте электронную почту на полную мощность",
+  "HeroImage": "/images/templates/mail/hero/ru/hero_image.png",
+  "HeroImage2x": "/images/templates/mail/hero/ru/hero_image@2x.png",
+  "GetItNow": "Получить сейчас",
+
+  "MailServer": "Почтовый сервер",
+  "MailServerText": "Добавьте почтовый сервер, используя собственное доменное имя, и создайте корпоративные почтовые ящики для участников команды. Синхронизируйте электронную почту через IMAP. Создавайте резервные копии и восстанавливайте базу данных почтового сервера.",
+  "MailServerImage": "/images/templates/mail/features/ru/mail_server.png",
+  "MailAggregator": "Почтовый агрегатор",
+  "MailAggregatorText": "Получайте, обрабатывайте и храните всю почту централизованно, подключив все свои аккаунты к ONLYOFFICE.",
+  "MailAggregatorImage": "/images/templates/mail/features/ru/mail_aggregator.png",
+  "EffectiveEmail": "Эффективное управление электронной почтой",
+  "EffectiveEmailText": "Оптимизируйте работу с входящей почтой: распределяйте корреспонденцию по категориям с помощью функций управления папками, легко перемещайте письма путем перетаскивания, используйте фильтры для автоматической сортировки сообщений.",
+  "EffectiveEmailImage": "/images/templates/mail/features/ru/effective_email.png",
+  "EasyEmailFormatting": "Простое форматирование электронных писем",
+  "EasyEmailFormattingText": "Работайте со всеми доступными шрифтами и стилями. Загружайте документы в виде вложений или прикрепляйте их из модуля «Документы». Создавайте подписи и управляйте ими. Используйте универсальный конструктор шаблонов.",
+  "EasyEmailFormattingImage": "/images/templates/mail/features/ru/email_formatting.png",
+  "CrmIntegration": "Интеграция с CRM",
+  "CrmIntegrationText": "Привязывайте цепочки писем или отдельные сообщения к контактам CRM, мероприятиям или возможным сделкам, чтобы вся необходимая корреспонденция была под рукой.",
+  "CrmIntegrationImage": "/images/templates/mail/features/ru/crm_integration.png",
+  "DocumentIntegration": "Интеграция с модулем \"Документы\"",
+  "DocumentIntegrationText": "Прикрепляйте к письмам файлы из модуля \"Документы\" для быстрого обмена информацией.",
+  "DocumentIntegrationImage": "/images/templates/mail/features/ru/document_integration.png",
+  "CalendarIntegration": "Интеграция с Календарем",
+  "CalendarIntegrationText": "Отправляйте приглашения на события в вашем календаре и оповещайте гостей обо всех изменениях. Получайте приглашения из сторонних календарей и отвечайте на них.",
+  "CalendarIntegrationImage": "/images/templates/mail/features/ru/calendar_integration.png",
+
+  "PerfectOnlineCollaboration": "Идеальное пространство для взаимодействия всей команды онлайн.",
+  "PcMag": "PC Mag"
+}

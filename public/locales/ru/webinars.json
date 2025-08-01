@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Смотрите вебинары ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "Запишитесь на наши вебинары чтобы узнать о возможностях эффективной работы с ONLYOFFICE",
+
+  "HeroHeadingWatch": "Смотрите <0>вебинары</0> ONLYOFFICE",
+  "HeroTextTune": "Полезные советы по работе с ONLYOFFICE от команды поддержки",
+
+  "UpcomingHeading": "Предстоящие вебинары",
+
+  "UpcomingModalProduct": "Продукт",
+  "UpcomingModalBy": "Проводит",
+  "UpcomingModalLanguage": "Язык",
+  "UpcomingModalPlease": "Пожалуйста, заполните все поля, отмеченные звёздочкой (*). Сообщение со ссылкой на выбранный вебинар будет отправлено на ваш адрес электронной почты.",
+  "UpcomingModalFullName": "Полное имя",
+  "UpcomingModalCompanyName": "Название компании",
+  "UpcomingModalEmail": "Email",
+  "UpcomingModalSendQuestions": "Вопросы по вебинару",
+  "UpcomingModalPlaceholderName": "Имя Фамилия",
+
+  "FullNameIsIncorrect": "Некорректное поле Полное имя",
+  "FullNameIsEmpty": "Полное имя не указано",
+
+  "CompanyNameIsEmpty": "Название компании не указано",
+
+  "EmailIsEmpty": "Поле Email не заполнено",
+  "EmailIsIncorrect": "Неверный Email",
+
+  "AgreementByClicking": "Нажав кнопку Смотреть вебинар, вы принимаете наше <0>Соглашение об уровне обслуживания</0> и <1>Положение о конфиденциальности</1>.",
+
+  "ModalSendButton": "Смотреть вебинар",
+  "ModalCloseButton": "Отмена",
+
+  "RequestSuccessfull": "Вы успешно записались на вебинар ONLYOFFICE. <br> Ссылка на вебинар отправлена на ваш адрес электронной почты.",
+
+  "WatchHeading": "Просмотр по запросу",
+  "WatchText": "Пропустили вебинар? Посмотрите повтор в любое время.",
+  "WatchNow": "Смотреть сейчас",
+
+  "en": "На английском",
+  "ja": "На японском",
+  "zh": "На китайском",
+  "fr": "На французском",
+  "de": "На немецком",
+  "es": "На испанском",
+  "pt": "На португальском",
+  "it": "На итальянском",
+  "cs": "На чешском",
+  "nl": "На голландском",
+  "ru": "На русском",
+  "sr": "На сербском",
+
+  "ContributeHeading": "Поделитесь идеями",
+  "ContributeTextHave": "Есть идея вебинара?",
+  "ContributeTextGet": "Напишите нам на почту <0>press@onlyoffice.com</0> или в <1>Twitter</1>."
+}

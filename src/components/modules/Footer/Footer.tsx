@@ -11,7 +11,6 @@ const Footer = ({ locale }: ILocale) => {
     <OOFooter
       locale={locale}
       languages={languages.map((language) => ({
-        key: language.shortKey,
         shortKey: language.shortKey,
         name: language.name,
         href: router.asPath

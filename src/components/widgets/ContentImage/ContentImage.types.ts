@@ -28,6 +28,15 @@ export interface IContentImage {
     /** Default: 16 */
     mobile?: number;
   };
+  marginTop?: {
+    /** Default: 32 */
+    desktop?: number;
+    tablet?: number;
+    /** Default: 24 */
+    tabletS?: number;
+    /** Default: 16 */
+    mobile?: number;
+  };
   /** The text content position. Default: "left" */
   position?: {
     /** Default: "left". */
@@ -35,4 +44,12 @@ export interface IContentImage {
     /** Default: "top". */
     mobile?: "top" | "bottom";
   };
+  /** The alignment of the text content. Default: "" */
+  justifyContent?: "space-between" | "space-around" | "space-evenly" | "center" | "flex-start" | "flex-end" | "";
+  /** The alignment of the text content. Default: "" */
+  alignItems?: string | "flex-start" | "flex-end" | "center" | "";
+  /** The display tablet S. Default: "" */
+  displaytabletS?: string;
+  /** The row gap between the text content and the image, specified per breakpoint in pixels. */
+  rowGap?: number;
 }

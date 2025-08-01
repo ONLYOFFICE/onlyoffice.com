@@ -1,0 +1,26 @@
+{
+  "PageTitle": "Bedrijfse-mailbeheertool | ONLYOFFICE",
+  "PageDescription": "Maak zakelijke postvakken, koppel uw e-mailaccounts en beheer alle correspondentie op één plek.",
+
+  "HeroTitle": "Beheer uw e-mails efficiënt",
+  "HeroText": "Gebruiksvriendelijke e-mailbeheertool",
+  "GetItNow": "Koop ONLYOFFICE nu",
+
+  "MailServer": "Mail server",
+  "MailServerText": "Voeg een mailserver toe met uw eigen domeinnaam om zakelijke mailboxen voor uw teamleden te maken. Synchroniseer e-mails via IMAP. Back-up maken en herstellen van de Mail Server database.",
+  "MailAggregator": "Mail aggregator",
+  "MailAggregatorText": "Verzamel, verwerk en bewaar al uw correspondentie op één plaats, en verbind al uw e-mailaccounts met ONLYOFFICE.",
+  "EffectiveEmail": "Effectief e-mailbeheer",
+  "EffectiveEmailText": "Organiseer uw Postvak IN efficiënt: structureer de correspondentie in categorieën met Mappenbeheer, verplaats e-mails gemakkelijk naar mappen met slepen en neerzetten, gebruik filters om de e-mail automatisch te sorteren.",
+  "EasyEmailFormatting": "Eenvoudige opmaak van e-mails",
+  "EasyEmailFormattingText": "Volledig werken met lettertypen en stijlen. Bijlagen uploaden en bijvoegen vanuit de module Documenten. Handtekeningen maken en beheren. Maak gebruik van de uitgebreide sjabloonconstructeur.",
+  "CrmIntegration": "CRM-integratie",
+  "CrmIntegrationText": "Koppel e-mailthreads of afzonderlijke berichten aan CRM-contactpersonen, cases of opportuniteiten en houd alle bijbehorende correspondentie bij de hand.",
+  "DocumentIntegration": "Documentintegratie",
+  "DocumentIntegrationText": "Voeg bestanden uit de module Documents toe aan uw e-mails voor snelle informatie-uitwisseling.",
+  "CalendarIntegration": "Kalenderintegratie",
+  "CalendarIntegrationText": "Verzend uitnodigingen voor uw agenda-afspraken en breng uw gasten op de hoogte van eventuele wijzigingen. Ontvang uitnodigingen van agenda's van derden en beantwoord ze.",
+
+  "PerfectOnlineCollaboration": "Een perfecte kleine online samenwerkingsruimte voor uw hele team.",
+  "PcMag": "PC Mag"
+}

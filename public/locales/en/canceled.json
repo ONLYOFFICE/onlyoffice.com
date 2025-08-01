@@ -1,0 +1,64 @@
+{
+  "AccountCanceledPageTitle": "ONLYOFFICE Personal account deleted | ONLYOFFICE",
+  "AccountCanceledPageDescription": "Why did you decide to delete your ONLYOFFICE Personal account",
+
+  "InstallCanceledPageTitle": "ONLYOFFICE on-premises uninstalled | ONLYOFFICE",
+  "InstallCanceledPageDescription": "Why did you decide to uninstall ONLYOFFICE from your server.",
+
+  "RegistrationCanceledPageTitle": "Cloud office registration cancelled | ONLYOFFICE",
+  "RegistrationCanceledPageDescription": "Why did you decide to cancel ONLYOFFICE cloud registration.",
+
+  "DesktopUninstalledPageTitle": "ONLYOFFICE Desktop Editors uninstalled | ONLYOFFICE",
+  "DesktopUninstalledPageDescription": "Why did you decide to uninstall ONLYOFFICE Desktop Editors",
+
+  "CanceledHeroTitle": "We're sorry to see you leave!",
+
+  "WhyDidYouDecideToUninstallOnlyoffice": "Why did you decide to uninstall ONLYOFFICE?",
+  "SelectAllThatApply": "Select all that apply",
+  "ExperiencedTechnicalProblems": "Experienced technical problems",
+  "NeedMoreStorageSpace": "Need more storage space",
+  "DidntFindNecessaryFeatures": "Didn't find necessary features",
+  "PrivacyConcernsLegalViolation": "Privacy concerns/Legal violation",
+  "IRarelyWorkInBrowser": "I rarely work in browser",
+  "Other": "Other",
+
+  "SwitchedToTheCloudVersion": "Switched to the cloud version",
+  "IRarelyUseOnlyoffice": "I rarely use ONLYOFFICE",
+
+  "IWillUseAnotherDesktopSoftware": "I will use another desktop software",
+  "IRarelyUseOnlyofficeDesktopEditors": "I rarely use ONLYOFFICE Desktop Editors",
+
+  "SwitchedToOnPremises": "Switched to on-premises",
+  "WhatShouldWeImproveInOnlyofficePersonal": "What should we improve in ONLYOFFICE Personal?",
+  "WhatShouldWeImproveInOnlyoffice": "What should we improve in ONLYOFFICE?",
+  "WhatShouldWeImproveInOnlyofficeDesktopEditors": "What should we improve in ONLYOFFICE Desktop Editors?",
+  "YourMessageHere": "Your message here",
+  "Email": "Email",
+  "EmailIsEmpty": "Email is empty",
+  "EmailIsIncorrect": "Email is incorrect",
+  "ByClickingSendFeedback": "By clicking \"Send Feedback\", you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>.",
+  "SendFeedback": "SEND FEEDBACK",
+
+  "ThanksForYourMessage": "Thanks for your message.",
+  "IfYouDecideToGetBack": "If you decide to get back, use this coupon code for <0>10% discount</0> on ONLYOFFICE cloud service or simply share it with your friend!*",
+  "WhyTakeBusinessToOnlyofficeCloudToday": "Why take business to ONLYOFFICE cloud today",
+  "FullyGDPRCompliantCloudOffice": "Fully GDPR compliant cloud office",
+  "ReducedMaintenanceCosts": "Reduced maintenance costs",
+  "SecureAndReliableHosting": "Secure and reliable hosting",
+  "AutomaticUpdates": "Automatic updates and professional tech support",
+  "ScalableCostEffectiveSolution": "Scalable cost-effective solution",
+  "EntirelyFree": "Entirely free for non-profits and schools",
+  "TheCoupon": "*The coupon code is valid for 12 months.",
+
+  "DontLeave": "Don‘t leave empty-handed — take along free personal cloud with editors for home use and <0>10%</0> off on our online editors for business!*",
+  
+  "WhyChooseFreePersonalOnlyofficeCloudToday": "Why choose free personal ONLYOFFICE cloud today",
+  "FreeAndSecureCloudStorage": "Free and secure cloud storage",
+  "HighestCompatibility": "Highest compatibility with MS Office formats",
+  "DocumentEditing": "Document editing and collaboration within your browser",
+  "ConnectionOfPopular": "Connection of popular third-party storages: Dropbox, OneDrive, and more",
+  "PleaseNote": "*Please note that the coupon code will be valid for 12 months only.",
+
+
+  "HopeToSeeYouAgain": "Thanks for your message. Hope to see you again!"
+}

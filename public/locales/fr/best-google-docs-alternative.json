@@ -1,0 +1,34 @@
+{
+  "PageTitle": "Alternative à Google Docs pour l'entreprise - suite bureautique web | ONLYOFFICE Docs",
+  "PageDescription": "Cherchez-vous à remplacer Google Docs, Sheets et Slides ? Essayez ONLYOFFICE Docs pour collaborer en ligne avec votre équipe sur les fichiers docx, xlsx, pptx.",
+
+  "HeroTitle": "<0>ONLYOFFICE</0>, la meilleure alternative à Google Docs.",
+  "GetOODocsNow": "Télécharger ONLYOFFICE Docs",
+  "CompatibleWithMicrosoftOfficeFormats": "100% compatible avec les formats de Microsoft Office",
+
+  "ReasonsTitle": "<0>8 raisons</0> pour lesquelles ONLYOFFICE Docs est la meilleure alternative à Google Docs, Google Sheets et Google Slides",
+  "OpenSource": "Open-source",
+  "OpenSourceText": "ONLYOFFICE fournit aux utilisateurs des solutions open-source. Notre code source est disponible sur GitHub ce qui assure transparence et fiabilité : vous pouvez le consulter à tout moment.",
+  "Security": "Sécurité des données",
+  "SecurityText": "Les solutions ONLYOFFICE open-source peuvent être déployées sur votre propre serveur afin que toutes les données restent entièrement internes. Les salles privées permettent de stocker, d'éditer et de co-rédiger des documents de manière toujours chiffrée.",
+  "DesktopApp": "Web, desktop, mobile",
+  "DesktopAppText": "Avec ONLYOFFICE, vous pouvez travailler en ligne à partir de tout navigateur et système d'exploitation, modifier des documents hors connexion avec les applications de bureau gratuites pour Windows, Linux et macOS, ainsi qu'utiliser les applications mobiles gratuites pour Android et iOS.",
+  "DocsSheetsSlides": "Documents texte, feuilles de calcul, diapositives, formulaires, PDF",
+  "DocsSheetsSlidesText": "Modifiez et collaborez sur des documents texte et des feuilles de calcul de toute complexité, créez des présentations étonnantes, visualisez et annotez des PDF. Créez des formulaires et des modèles de qualité professionnelle à partir de zéro ou de tout fichier DOCX existant, permettez à d'autres utilisateurs de les remplir et enregistrez les formulaires sous forme de fichiers PDF à remplir.",
+  "Seamless": "Collaboration transparente",
+  "SeamlessText": "ONLYOFFICE Docs offre aux utilisateurs des modes de coédition au niveau des caractères et des paragraphes, la révision et le suivi des modifications, l'historique des versions, les commentaires et les mentions, le chat intégré, les plugins pour les appels audio et vidéo. Vous pouvez facilement partager vos documents avec des permissions flexibles telles que le commentaire, la révision, le remplissage de formulaires, le filtre personnalisé.",
+  "Support": "Prise en charge de tous les formats de fichiers courants",
+  "SupportText": "ONLYOFFICE Docs est entièrement compatible avec les fichiers Office Open XML (DOCX, XLSX, PPTX) et supporte d'autres formats populaires tels que ODT, RTF, DOC, TXT, ODS, CSV, ODP, XLS, PPT, HTML, EPUB, XPS, XWP, les fichiers Pages, Numbers et Keynote, etc.",
+  "Flexibility": "Flexibilité",
+  "FlexibilityText": "Contrairement aux géants de la technologie, ONLYOFFICE n'enferme pas ses clients dans son écosystème collaboratif. Vous pouvez choisir librement comment utiliser les éditeurs en ligne : en tant que partie de l'environnement ONLYOFFICE DocSpace, au sein de n'importe quel service de synchronisation et de partage ou ECM comme Nextcloud, Alfresco, Confluence, Seafile, etc. ou intégré dans la solution que vous construisez vous-même.",
+  "AIHelper": "Assistant IA",
+  "AIHelperText": "Connectez tout fournisseur d'IA, utilisez différents modèles d'IA pour différentes tâches. Utilisez le plugin d'assistant d'IA pour améliorer le travail sur vos textes : effectuez des analyses de mots et explorez le sens des mots inconnus, générez des passages, des images et des mots-clés, résumez et traduisez des histoires, trouvez des synonymes.",
+
+  "PresentationTitle": "Suivez <0>cette présentation</0> pour voir la différence entre les suites bureautiques",
+
+  "ReadTheseArticles": "Jetez un coup d'œil à cet article pour une comparaison approfondie des fonctionnalités disponibles dans Google Docs et ONLYOFFICE Docs",
+  "OOAndGoogleDocs": "ONLYOFFICE et Google Docs : quatre différences principales",
+  "OOAndGoogleDocsText": "Google et nous, nous avons tous deux d'excellents éditeurs en ligne, mais notre approche pour les rendre excellents est très différente. Spoiler : nous parlerons de la confidentialité, de la compatibilité entre navigateurs et des fichiers très grands.",
+
+  "WhatWentWrong": "Pourquoi Google Docs pose-t-il problème ? <0>Cliquez ici</0> pour voir les détails"
+}
