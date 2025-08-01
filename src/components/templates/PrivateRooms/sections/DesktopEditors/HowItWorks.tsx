@@ -38,7 +38,7 @@ const HowItWorks = () => {
             components={[
               <Link
               key="0"
-              href="/desktop.aspx?from=private-rooms"
+              href="/desktop.aspx"
               color="main"
               textUnderline
               hover="underline-none"
