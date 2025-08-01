@@ -7,7 +7,7 @@ import {
     WrapperLink,
 } from "./LinkImage.styled";
 import { Button } from "@src/components/ui/Button";
-import { items } from "./data";
+import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 
 const HostingLinkImage = () => {

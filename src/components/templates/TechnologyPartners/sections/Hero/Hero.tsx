@@ -32,7 +32,7 @@ const Hero = () => {
             </StyledHeroHeading>
               <StyledText label={t(hero.text)} className="first-text"/>
             <StyledButton>
-              <Button as="a" href="~/partnership-request.aspx" label={t(hero.textBtn)} />
+              <Button as="a" href="/partnership-request.aspx" label={t(hero.textBtn)} />
             </StyledButton>
           </StyledHeroContent>
           <StyledHeroImage

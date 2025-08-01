@@ -1,6 +1,6 @@
 import { Section } from "@src/components/ui/Section";
 import { useTranslation } from "next-i18next"
-import { items } from "./data";
+import { items } from "./data/items";
 import { 
     StyledContainer,
     BlockCard, 

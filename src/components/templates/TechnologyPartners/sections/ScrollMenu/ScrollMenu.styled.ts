@@ -12,7 +12,7 @@ const StyledStickyBox = styled.div<StickyBoxProps>`
     z-index: 21; 
 
     @media ${device.tablet} {
-        top: 64px;
+        top: 48px;
     }
 
     @media ${device.tabletS} {
@@ -32,7 +32,7 @@ const DwnFourBlockBtns = styled.div`
         width: 100vw;
     }
 
-    @media ${device.tabletS} {
+    @media ${device.tablet} {
         overflow-x: auto;
         justify-content: start;
     }

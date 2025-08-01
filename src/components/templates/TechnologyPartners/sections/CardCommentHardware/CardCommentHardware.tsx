@@ -6,7 +6,7 @@ import {
   StyledText,
   StyledLink
 } from "./CardCommentHardware.styled";
-import { items } from "./data";
+import { items } from "./data/items";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 import { Container } from "@src/components/ui/Container";

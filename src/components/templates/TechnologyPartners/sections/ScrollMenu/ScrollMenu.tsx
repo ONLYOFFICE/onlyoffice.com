@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next"
 import { DwnFourBlockBtn, DwnFourBlockBtns, StyledStickyBox } from "./ScrollMenu.styled";
-import { items } from "./data";
+import { items } from "./data/items";
 import { useEffect, useRef, useState } from "react";
 
 const ScrollMenu = () => {

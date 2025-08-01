@@ -8,7 +8,7 @@ import {
     StyledContainer,
 } from "./LinkImage.styled";
 import { Button } from "@src/components/ui/Button";
-import { items } from "./data";
+import { items } from "./data/items";
 
 const MarketplacesLinkImage = () => {
     const { t } = useTranslation("technology-partners");

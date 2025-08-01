@@ -42,5 +42,4 @@ export const items = [
     btnLinkPrimary: "mailto:sales@onlyoffice.com",
     btnLinkTertiary: "https://api.onlyoffice.com/docs/plugin-and-macros/get-started/overview/"
   },
-  // другие элементы
 ];
