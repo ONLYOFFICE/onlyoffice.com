@@ -12,5 +12,40 @@
   "DocumentsTab4ImgUrl2x": "/images/templates/office-for-chamilo/documents/de/screenshot4@2x.png",
 
   "HowToStartStep3ImgUrl": "/images/templates/office-for-chamilo/how-to-start/de/step3.svg",
-  "HowToStartStep4ImgUrl": "/images/templates/office-for-chamilo/how-to-start/de/step4.svg"
+  "HowToStartStep4ImgUrl": "/images/templates/office-for-chamilo/how-to-start/de/step4.svg",
+
+  "PageTitle": "Online-Office-Suite für Chamilo | ONLYOFFICE Docs",
+  "PageDescription": "Bearbeiten Sie gemeinsam Dokumente, Tabellenkalkulationen, Präsentationen und Formulare in Chamilo mit ONLYOFFICE Docs.",
+
+  "OnlineOfficeForChamilo": "Online-Office für Chamilo",
+  "Subheader": "Collaborez sur des documents texte, des feuilles de calcul, des présentations et des formulaires dans Chamilo avec ONLYOFFICE Docs",
+  "GetItNow": "Los geht's!",
+  "RequestFreeDemo": "Kostenlose Demo anfragen",
+  "WorkWithinChamilo": " ",
+  "DocumentsTab1Label": " ",
+  "DocumentsTab2Label": " ",
+  "DocumentsTab3Label": " ",
+  "DocumentsTab4Label": " ",
+  "MarketplaceConnectorTitle": " ",
+  "MarketplaceConnectorDescription": " ",
+  "GetStarted": "Los geht's!",
+
+  "WhyOO": "Warum ONLYOFFICE?",
+  "Reason1": "Ein robuster Satz an Bearbeitungs-, Formatierungs- und Styling-Tools. Integrierter <0>KI-Helfer.</0>",
+  "Reason2": "<0>Enhanced security.</0> Flexible access rights and JWT. Open source code available on GitHub.",
+  "Reason3": "Integration with <0>ONLYOFFICE Docs Cloud</0> solution with no installation required.",
+  "Reason4": "Support for more than <0>50 file formats</0>, fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
+  "Reason5": "Real-time and paragraph-locking <0>co-editing</0>, review, version history, document comparison, comments & chat. Audio and video calls.",
+  "Reason6": "Self-hosted solution. Scalable Enterprise versions. <0>Free 30-day trial.</0> Educational discounts.",
+
+  "HowToStart": "Wie Sie anfangen",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Get the integration app from <0>GitHub</0>.",
+  "HowToStartStep3": "Upload the plugin to Chamilo.",
+  "HowToStartStep4": "Configure the plugin by specifying ONLYOFFICE Docs address.",
+  "HowToConnect": "Connecting ONLYOFFICE Docs to Chamilo",
+
+  "ReadDetailedInstructions": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",
+
+  "NeedAnAppToConnect": "Benötigen Sie eine App, um ONLYOFFICE mit Ihren Lieblings-Webdiensten zu verbinden? Oder haben Sie eine neue entwickelt?"
 }

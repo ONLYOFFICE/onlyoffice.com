@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Online kancelarijski paket za Chamilo | ONLYOFFICE Docs",
+  "PageDescription": "Saradjujte na dokumentima, tabelama, prezentacijama i obrascima u Chamilo platformi koristeći ONLYOFFICE Docs",
+
+  "OnlineOfficeForChamilo": "Online kancelarija za Chamilo",
+  "Subheader": "Saradjujte na dokumentima, tabelama, prezentacijama i obrascima u Chamilo-u sa ONLYOFFICE Docs",
+  "GetItNow": "Počnite",
+  "RequestFreeDemo": "ZAHTEV ZA BESPLATAN DEMO",
+  "WorkWithinChamilo": "Radite na kancelarijskim dokumentima unutar Chamilo strukture",
+  "DocumentsTab1Label": "Pregledajte i uređujte tekstualne dokumente, tabele, prezentacije i obrasce koji se mogu popuniti.",
+  "DocumentsTab2Label": "Delite obezbeđujući dozvole za uređivanje ili samo za čitanje.",
+  "DocumentsTab3Label": "Saradjujte na dokumentima u realnom vremenu, pratite promene i ostavite komentare.",
+  "DocumentsTab4Label": "Komunicirajte putem ugrađenih alata za čet ili video konferenciju, poput Jitsi ili Rainbow.",
+  "MarketplaceConnectorTitle": "Dizajniran za besprekorno integrisanje sa Chamilo",
+  "MarketplaceConnectorDescription": "Preuzmite aplikaciju ONLYOFFICE za Chamilo sada na GitHub-u.",
+  "GetStarted": "Počnite",
+
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "Reason1": "Robustan skup alata za uređivanje, formatiranje i stilizovanje. Integrisani <0>AI pomoćnik</0>.",
+  "Reason2": "<0>Poboljšana bezbednost.</0> Fleksibilna prava pristupa i JWT. Otvoreni izvorni kod dostupan na GitHub-u.",
+  "Reason3": "Integracija sa <0>ONLYOFFICE Docs Cloud</0> rešenjem, bez potrebne instalacije.",
+  "Reason4": "Podrška za više od <0>50 formata datoteka</0>, potpuno kompatibilna sa MS Office formatima: DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Zaključavanje u realnom vremenu</0> i zaključavanje paragrafa ko-uređivanje, pregled, istorija verzija, poređenje dokumenata, komentari i ćaskanje. Audio i video pozivi.",
+  "Reason6": "Samostalno rešenje. Skalabilne verzije preduzeća. <0>Besplatna probna verzija 30 dana.</0> Edukativni popusti.",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Postavite <0>ONLYOFFICE Docs</0> na svoj sopstveni server ili se prijavite za <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Nabavite aplikaciju za integraciju sa <0>GitHub</0>.",
+  "HowToStartStep3": "Otpremite dodatak u Chamilo.",
+  "HowToStartStep4": "Konfigurišite dodatak tako što ćete navesti adresu ONLYOFFICE Docs-a.",
+  "HowToConnect": "Povezivanje ONLYOFFICE Docs sa Chamilo",
+
+  "ReadDetailedInstructions": "Pročitajte detaljna uputstva na <0>GitHub</0> i u <1>Centru za pomoć</1>.",
+
+  "NeedAnAppToConnect": "Treba vam aplikacija za povezivanje ONLYOFFICE Docs sa vašom omiljenom web uslugom? Ili ste možda već razvili jednu?"
+}

@@ -12,5 +12,40 @@
   "DocumentsTab4ImgUrl2x": "/images/templates/office-for-chamilo/documents/ru/screenshot4@2x.png",
 
   "HowToStartStep3ImgUrl": "/images/templates/office-for-chamilo/how-to-start/ru/step3.svg",
-  "HowToStartStep4ImgUrl": "/images/templates/office-for-chamilo/how-to-start/ru/step4.svg"
+  "HowToStartStep4ImgUrl": "/images/templates/office-for-chamilo/how-to-start/ru/step4.svg",
+
+  "PageTitle": "Офисный пакет онлайн для Chamilo | ONLYOFFICE Docs",
+  "PageDescription": "Работайте совместно над документами, электронными таблицами, презентациями и формами в Chamilo, используя ONLYOFFICE Docs",
+
+  "OnlineOfficeForChamilo": "Онлайн-офис для Chamilo",
+  "Subheader": "Работайте совместно над текстовыми документами, электронными таблицами, презентациями и формами в Chamilo с ONLYOFFICE Docs",
+  "GetItNow": "Начать работу",
+  "RequestFreeDemo": "Запросить бесплатную демо-версию",
+  "WorkWithinChamilo": "Работайте над офисными документами на платформе Chamilo",
+  "DocumentsTab1Label": "Просматривайте и редактируйте текстовые документы, электронные таблицы, презентации и заполняемые формы.",
+  "DocumentsTab2Label": "Предоставляйте доступ с правами «Редактирование» или «Только чтение».",
+  "DocumentsTab3Label": "Работайте над документами совместно в режиме реального времени, отслеживайте изменения и оставляйте комментарии.",
+  "DocumentsTab4Label": "Общайтесь, используя встроенный чат или инструменты видеоконференции, например, Jisti или Rainbow.",
+  "MarketplaceConnectorTitle": "Разработано для беспрепятственной интеграции с Chamilo",
+  "MarketplaceConnectorDescription": "Получите приложение ONLYOFFICE для Chamilo прямо сейчас на GitHub.",
+  "GetStarted": "Начать работу",
+
+  "WhyOO": "Почему ONLYOFFICE?",
+  "Reason1": "Надежный набор инструментов редактирования, форматирования и работы со стилями. Интегрированный <0>ИИ-помощник.</0>",
+  "Reason2": "<0>Улучшенная безопасность.</0> Гибкие права доступа и JWT. Открытый исходный код, доступный на GitHub.",
+  "Reason3": "Интеграция с решением <0>ONLYOFFICE Docs Cloud</0>, не требующим установки.",
+  "Reason4": "Поддержка более <0>50 форматов файлов</0>, полная совместимость с форматами MS Office: DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Совместное редактирование</0> в реальном времени и в режиме блокировки абзацев, рецензирование, история версий, сравнение документов, комментарии и чат.",
+  "Reason6": "Решение для размещения на собственном сервере. Масштабируемые версии Enterprise. <0>Бесплатный пробный период - 30 дней.</0> Образовательные скидки.",
+
+  "HowToStart": "Как начать",
+  "HowToStartStep1": "Разверните <0>ONLYOFFICE Docs</0> на собственном сервере или зарегистрируйтесь на <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Получите приложение для интеграции на  <0>GitHub</0>.",
+  "HowToStartStep3": "Загрузите плагин в Chamilo.",
+  "HowToStartStep4": "Настройте плагин, указав адрес ONLYOFFICE Docs.",
+  "HowToConnect": "Подключение ONLYOFFICE Docs к Chamilo",
+
+  "ReadDetailedInstructions": "Ознакомьтесь с подробными инструкциями на <0>GitHub</0> и в <1>Справочном центре</1>.",
+
+  "NeedAnAppToConnect": "Вам нужно приложение для подключения ONLYOFFICE Docs к вашему веб-сервису? Или вы разработали его сами?"
 }

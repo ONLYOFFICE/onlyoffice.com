@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Chamilo 向けのオンラインオフィススイート",
+  "PageDescription": "ONLYOFFICEでChamiloのドキュメント、スプレッドシート、プレゼンテーション、フォームを共同編集",
+
+  "OnlineOfficeForChamilo": "Chamilo向けのオンラインオフィス",
+  "Subheader": "ONLYOFFICE Docsで文書、スプレッドシート、プレゼンテーション、フォームをチャミロで共同作業",
+  "GetItNow": "スタートアップ",
+  "RequestFreeDemo": "無料デモをリクエスト",
+  "WorkWithinChamilo": "Chamilo構造内のオフィス文書に対応",
+  "DocumentsTab1Label": "テキスト文書、スプレッドシート、プレゼンテーション、記入可能なフォームの表示と編集。",
+  "DocumentsTab2Label": "編集または読み取り専用権限を提供する共有。",
+  "DocumentsTab3Label": "リアルタイムでドキュメントを共著し、変更を追跡し、コメントを残すことができます。",
+  "DocumentsTab4Label": "JistiやRainbowのようなビルトインチャットやビデオ会議ツールを使ってコミュニケーションが可能。",
+  "MarketplaceConnectorTitle": "Chamiloとシームレスに統合できるように設計されています。",
+  "MarketplaceConnectorDescription": "ONLYOFFICEアプリをGitHubで入手しましょう。",
+  "GetStarted": "始めましょう",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "Reason1": "編集、フォーマット、スタイリングツールの強力なセット。統合された<0>AIヘルパー</0>",
+  "Reason2": "<0>セキュリティ強化。</0>柔軟なアクセス権とJWT。GitHubで利用可能なオープンソースコード。",
+  "Reason3": "インストール不要の<0>ONLYOFFICE Docsクラウド</0>ソリューションとの統合。",
+  "Reason4": "<0>50以上のファイル形式</0>をサポートし、MS Office形式と完全互換： docx、xlsx、pptx。",
+  "Reason5": "リアルタイムで段落ロックされた<0>共同編集</0>、レビュー、バージョン履歴、ドキュメント比較、コメント＆チャット。",
+  "Reason6": "セルフホストソリューション スケーラブルなエンタープライズ版 <0>30日間の無料トライアル</0> 教育機関向け割引。",
+
+  "HowToStart": "開始方法",
+  "HowToStartStep1": "<0>ONLYOFFICE Docs</0>をご自身のサーバーに導入するか、<1>ONLYOFFICE Docsクラウド</1>をご契約ください。",
+  "HowToStartStep2": "<0>GitHub</0>から連携アプリを入手します。",
+  "HowToStartStep3": "プラグインをChamiloにアップロードします。",
+  "HowToStartStep4": "ONLYOFFICE Docsのアドレスを指定してプラグインを設定します。",
+  "HowToConnect": "ONLYOFFICE DocsとChamiloの連携",
+
+  "ReadDetailedInstructions": "<0>GitHub</0>や<1>ヘルプセンタ</1>ーで詳しい説明をお読みください。",
+
+  "NeedAnAppToConnect": "お気に入りのウェブサービスにONLYOFFICE Docsを接続するアプリが必要ですか？または開発されましたか？"
+}
