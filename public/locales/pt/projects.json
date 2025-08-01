@@ -1,0 +1,28 @@
+{
+  "PageTitle": "Gestão de projetos eficiente | ONLYOFFICE",
+  "PageDescription": "Planeje e gerencie tarefas, prazos e projetos. Melhore a produtividade da sua equipe.",
+
+  "HeroTitle": "Software de gestão de projetos para alto desempenho da equipe",
+  "HeroText": "É uma ferramenta perfeita para pequenos ou médios projetos. Não é mais complicado do que comprar no Amazon.<br/><1>Por CMSWire</1>",
+  "GetItNow": "Obtê-lo agora",
+
+  "ProjectHierarchy": "Hierarquia do projeto",
+  "ProjectHierarchyText": "Use marcos, tarefas e subtarefas para determinar prioridades entre seus objetivos principais e as atividades do dia a dia. Adicione status de tarefa personalizados.",
+  "ProjectHierarchyImage": "/images/templates/projects/features/pt/project_hierarchy.png",
+  "GanttChart": "Gráfico de Gantt",
+  "GanttChartText": "Análise o progresso do projeto e as dependências da tarefa, atualize os eventos agendados e os prazos com alguns cliques.",
+  "GanttChartImage": "/images/templates/projects/features/pt/gantt_chart.png",
+  "AccessRights": "Gerenciamento dos direitos de acesso",
+  "AccessRightsText": "Defina permissões de acesso individuais para elementos de módulo diferentes e crie projetos privados. Você tem total controle sobre o que todos podem ver e quais ações podem realizar.",
+  "AccessRightsImage": "/images/templates/projects/features/pt/access_rights.png",
+  "TimeManagement": "Gerenciamento de tempo",
+  "TimeManagementText": "Avalie o desempenho da equipe e as atividades do projeto usando um recurso de acompanhamento de tempo e relatórios gerados automaticamente.",
+  "TimeManagementImage": "/images/templates/projects/features/pt/time_management.png",
+
+  "MobileApps": "Aplicativos móveis",
+  "StayMobile": "Continue móvel!",
+  "WorkWithProjects": "Trabalhe com projetos em seus dispositivos <0>iOS</0> e <1>Android</1>. Edite a documentação do projeto mesmo em movimento.",
+
+  "ItsAPerfectTool": "É uma ferramenta perfeita para pequenos ou médios projetos. Não é mais complicado do que comprar no Amazon.",
+  "CmsWire": "CMSWire"
+}

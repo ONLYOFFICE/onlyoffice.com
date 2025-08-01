@@ -24,7 +24,7 @@ export const EditorsImageItem = ({
   const links = item.links?.map((link) => {
     if (link.isVideo) {
       return {
-        href: `video:${link.href}`,
+        href: link.href,
         label: link.label,
         isExternal: false,
       };

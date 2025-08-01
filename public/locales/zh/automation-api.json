@@ -1,0 +1,53 @@
+{
+  "PageTitle": "自动化 API | ONLYOFFICE",
+  "PageDescription": "自定义界面元素，轻松交互内外部文档。",
+
+  "HeroTitle": "ONLYOFFICE 自动化 API",
+  "HeroSubtitle" : "可以在您的平台界面中嵌入任何控件，并从编辑器外部控制文档内容。",
+  "HeroButton" : "申请免费演示",
+
+  "WhatIsTitle" : "什么是<0>自动化 API</0>",
+  "WhatIsSubtitle" : "<0>ONLYOFFICE 自动化 API</0> 通过连接器类让您可以从外部与办公文档进行交互。您可以使用自定义界面元素获取文件中的更改。",
+  "CheckExamples" : "查看示例",
+  "Webinar" : "ONLYOFFICE 自动化 API [2024 网络研讨会]",
+  "WatchOurWebinar" : "观看我们的网络研讨会",
+
+  "WhatAutomationAPICan" : "<0>自动化 API</0> 能做什么",
+  "MostPopularExamples" : "热门示例",
+  "WorkingWithComments" : "处理批注",
+  "WorkingWithReview" : "管理审阅更改",
+  "FillingOutForms" : "填写表单",
+  "CollectsAllTheCommentsFrom" : "从文档中收集所有批注，并在自定义界面中显示它们。",
+  "ThereAreNoComments" : "文档中没有批注。",
+  "SendReply" : "添加回复",
+  "AddReply" : "添加回复",
+  "Delete" : "删除",
+  "SendComment" : "添加批注",
+  "AddComment" : "添加批注",
+  "EnterYourReplyHere" : "输入您的评论",
+  "EnterYourCommentHere" : "输入您的回复",
+  "ManagesReviewProcess" : "从外部管理文件的审阅。",
+  "Accept" : "接受",
+  "Reject" : "拒绝",
+  "FillsInTheEmptyCells" : "填写给定表单中的空白单元格。",
+  "ChooseExample" : "选择范本",
+
+  "ReadyToUse" : "现成可用的示例：Odoo 集成",
+  "UsingAutomationAPI" : "通过使用自动化 API，ONLYOFFICE 让 Odoo 用户能够使用 Odoo 中的数据创建和填写模板。",
+  "Screen1ImgUrl" : "/images/templates/automation-api/carousel/zh/create_new_form_templates_for_any_odoo_module.png",
+  "Screen1ImgUrl2x" : "/images/templates/automation-api/carousel/zh/create_new_form_templates_for_any_odoo_module@2x.png",
+  "Screen2ImgUrl" : "/images/templates/automation-api/carousel/zh/edit_the_existing_form_templates.png",
+  "Screen2ImgUrl2x" : "/images/templates/automation-api/carousel/zh/edit_the_existing_form_templates@2x.png",
+  "Screen3ImgUrl" : "/images/templates/automation-api/carousel/zh/fill_templates_out_with_data_available_in_odoo.png",
+  "Screen3ImgUrl2x" : "/images/templates/automation-api/carousel/zh/fill_templates_out_with_data_available_in_odoo@2x.png",
+  "LearnMore" : "了解更多",
+
+  "HowToGetONLYOFFICEAutomationAPI": "如何获取 ONLYOFFICE 自动化 API",
+  "AutomationAPISsAPartOf": "自动化 API 属于 <0>ONLYOFFICE 文档开发者版</0>的一部分， 它提供了一个最佳的在线办公套件，包括文档、表格、幻灯片和 PDF 编辑器，可以集成到您自己的网络应用程序或平台中。若要访问自动化 API，您需要获取扩展的 <1>ONLYOFFICE 文档开发者版</1>许可证。",
+  "GetA30DayTrial": "立即获取 ONLYOFFICE 文档开发者版<0>30天免费试用，</0>包含自动化 API。",
+  "DownloadNow": "立即下载",
+
+  "HaveAnyQuestions": "对于 ONLYOFFICE 自动化 API，您还有其他疑问吗？欢迎咨询我们并讨论细节。",
+  "HaveAnyQuestionsText": "专家团队每一步都会为您提供帮助。<2 /> <2 /> 如有任何售前问题，请联系我们：<0>sales@onlyoffice.com</0>，或安排电话沟通。<2 /> <2 /> 如遇任何技术问题，请联系我们：<1>support@onlyoffice.com</1>。",
+  "GetInTouch": "联系我们"
+}

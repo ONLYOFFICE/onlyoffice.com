@@ -8,7 +8,7 @@ import { IGetStartedProps } from "./GetStarted.types";
 import { items } from "./data/items";
 
 const GetStarted = ({ background, header }: IGetStartedProps) => {
-  const { t } = useTranslation("main");
+  const { t } = useTranslation("GetStarted");
 
   return (
     <Section background={background} tabletSpacing={["88px", "80px"]}>

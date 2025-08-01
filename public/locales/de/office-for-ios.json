@@ -1,90 +1,93 @@
 {
-  "PageTitle": "Kostenlose mobile Office Suite für iPhone und iPad | ONLYOFFICE Documents",
-  "PageDescription": "Dokumente, Tabellen und Präsentationen bearbeiten und gemeinsam bearbeiten, Formulare von Ihren iOS-Geräten ausfüllen.",
+  "PageTitle": "Kostenlose mobile Office-Suite für iPhone und iPad | ONLYOFFICE Documents",
+  "PageDescription": "Bearbeiten Sie Textdokumente, Tabellenkalkulationen und Präsentationen gemeinsam auf Ihren iOS-Geräten.",
 
-  "OnlyOfficeDocuments": "ONLYOFFICE Documents, eine solide <0>mobile Office Suite</0> für Ihr iPhone und iPad",
-  "AbsolutelyFree": "Absolut <0>kostenlos</0>. Keine Werbung. Keine In-App-Käufe.",
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, ein solides <0>mobiles Office-Paket</0> für iPhone und iPad",
+  "AbsolutelyFree": "Vollständig <0>kostenlos</0>. Keine Werbung. Keine In-App-Käufe.",
 
-  "OneAppThreeEditors": "Eine App - <0>Drei Editoren</0> - Vielfältige Funktionen",
-  "CompatibleWithMSOffice": "100% kompatibel mit MS Office Formaten",
+  "OneAppThreeEditors": "Eine App - <0>Drei Editoren</0> - Zahlreiche Funktionen",
+  "CompatibleWithMSOffice": "100% Kompatibilität mit Microsoft Office Formaten",
 
   "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.de.svg",
 
-  "FeaturesItemHeadingFull": "Voll ausgestatteter Textprozessor",
-  "FeaturesItemTextMakeUse": "Nutzen Sie verschiedene Textverarbeitungstools: Seiten-, Absatz- und Textformatierung, Tabellen, AutoFormen, Diagramme usw. Erstellen Sie Textdokumente jeder Größe und Komplexität. Drucken Sie sie via AirPrint.",
+  "FeaturesItemHeadingFull": "Funktionsfähige Textverarbeitung",
+  "FeaturesItemTextMakeUse": "Nutzen Sie die verschiedenen Textverarbeitungswerkzeuge wie Seiten-, Absatz-, und Textformatierung, Tabellen, Autoformate, Diagramme usw. und erstellen Sie Textdokumente beliebiger Größe und Komplexität. Drucken Sie diese über AirPrint.",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/de/img-tablet-1.png",
   "FeaturesItemTablet1Bg2x": "/images/templates/office-for-ios/features/de/img-tablet2x-1.png",
   "FeaturesItemMobile1Bg": "/images/templates/office-for-ios/features/de/img-mobile-1.png",
   "FeaturesItemMobile1Bg2x": "/images/templates/office-for-ios/features/de/img-mobile2x-1.png",
 
-  "FeaturesItemHeadingComplete": "Vollständiger Tabellenkalkulationseditor",
-  "FeaturesItemTextManage": "Verwalten Sie Ihre Tabellendaten: Arbeiten Sie mit Zeilen und Spalten, passen Sie Zellparameter an, verwenden Sie mehr als 450 Formeln, sortieren und filtern Sie Daten.",
+  "FeaturesItemHeadingComplete": "Vollständiger Tabelleneditor",
+  "FeaturesItemTextManage": "Verwaltung der Tabellendaten: Bearbeiten von Zeilen und Spalten, Anpassen von Zellparamtern, mehr als 450 Formeln, Sortieren und Filtern von Daten.",
   "FeaturesItemTablet2Bg": "/images/templates/office-for-ios/features/de/img-tablet-2.png",
   "FeaturesItemTablet2Bg2x": "/images/templates/office-for-ios/features/de/img-tablet2x-2.png",
   "FeaturesItemMobile2Bg": "/images/templates/office-for-ios/features/de/img-mobile-2.png",
   "FeaturesItemMobile2Bg2x": "/images/templates/office-for-ios/features/de/img-mobile2x-2.png",
 
-  "FeaturesItemHeadingCollaborative": "Kollaborativer Präsentationseditor",
-  "FeaturesItemTextMakeWork": "Arbeiten Sie mit allen gängigen Objekten in Ihren Folien: Fügen Sie Bilder ein, fügen Sie AutoFormen, Diagramme, Texte und andere Elemente hinzu und bearbeiten Sie diese.",
+  "FeaturesItemHeadingCollaborative": "Gemeinsame Bearbeitung von Präsentationen",
+  "FeaturesItemTextMakeWork": "Bearbeitung von Folien mit gängigen Objekten und Tools: Einfügen und Bearbeiten von Bildern, AutoFormen, Diagrammen, Grafiken, Texten und anderen Elementen.",
   "FeaturesItemTablet3Bg": "/images/templates/office-for-ios/features/de/img-tablet-3.png",
   "FeaturesItemTablet3Bg2x": "/images/templates/office-for-ios/features/de/img-tablet2x-3.png",
   "FeaturesItemMobile3Bg": "/images/templates/office-for-ios/features/de/img-mobile-3.png",
   "FeaturesItemMobile3Bg2x": "/images/templates/office-for-ios/features/de/img-mobile2x-3.png",
 
-  "FeaturesItemHeadingOnline": "Online Formularausfüller",
-  "FeaturesItemTextMakeView": "Formulare anzeigen und ausfüllen. Navigieren Sie einfach von Feld zu Feld. Speichern Sie das Ergebnis als PDF- oder DOCX-Datei.",
+  "FeaturesItemHeadingOnline": "Online-Formularausfüller",
+  "FeaturesItemTextMakeView": "Öffnen und füllen Sie Formulare aus. Navigieren Sie einfach von Feld zu Feld. Speichern Sie das Ergebnis als PDF- oder DOCX-Datei.",
   "FeaturesItemTablet4Bg": "/images/templates/office-for-ios/features/de/img-tablet-4.png",
   "FeaturesItemTablet4Bg2x": "/images/templates/office-for-ios/features/de/img-tablet2x-4.png",
   "FeaturesItemMobile4Bg": "/images/templates/office-for-ios/features/de/img-mobile-4.png",
   "FeaturesItemMobile4Bg2x": "/images/templates/office-for-ios/features/de/img-mobile2x-4.png",
 
-  "FeaturesItemHeadingPDF": "PDF-Viewer und Mediaplayer",
-  "FeaturesItemTextMakeViewPDF": "PDF-Dokumente und Bilder anzeigen, Audio- und Videodateien abspielen. Öffnen Sie .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf usw.",
+  "FeaturesItemHeadingPDF": "Pdf-Viewer und Mediaplayer",
+  "FeaturesItemTextMakeViewPDF": "Anzeigen von PDF-Dokumenten und Bildern; Abspielen von Audio- und Videodateien. Öffen von verschiedenen Dateiformaten wie .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf etc.",
   "FeaturesItemTablet5Bg": "/images/templates/office-for-ios/features/de/img-tablet-5.png",
   "FeaturesItemTablet5Bg2x": "/images/templates/office-for-ios/features/de/img-tablet2x-5.png",
   "FeaturesItemMobile5Bg": "/images/templates/office-for-ios/features/de/img-mobile-5.png",
   "FeaturesItemMobile5Bg2x": "/images/templates/office-for-ios/features/de/img-mobile2x-5.png",
 
-  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents ist ein herausragendes Produkt und wurde von seinen Nutzern mit 'Sehr gut' ausgezeichnet.\"",
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents ist ein hervorragendes Produkt und wurde von den Benutzern mit dem Prädikat 'Sehr gut' ausgezeichnet.\"",
   "MichaelGanss": "Michael Ganss,",
 
-  "RealTimeCollaboration": "Echtzeit-Zusammenarbeit",
-  "BeMoreProductive": "Seien Sie produktiver. Verbinden Sie Ihre App mit der ONLYOFFICE Cloud. Teilen Sie Dokumente, um sie in Echtzeit mit Ihren Teamkollegen gemeinsam zu bearbeiten. Kommentieren und Änderungen verfolgen. Fügen Sie grafische Anmerkungen hinzu.",
+  "RealTimeCollaboration": "Zusammenarbeit in Echtzeit",
+  "BeMoreProductive": "Steigern Sie Ihre Produktivität. Verbinden Sie Ihre App zur ONLYOFFICE Cloud. Geben Sie Dokumente frei, um diese mit Ihrem Team in Echtzeit zu bearbeiten. Hinterlassen Sie Kommentare und verfolgen Sie Änderungen. Fügen Sie grafische Anmerkungen hinzu.",
   "CollabBackgroundUrl": "/images/templates/office-for-ios/collab/collaboration.de.png",
   "CollabBackgroundUrl2x": "/images/templates/office-for-ios/collab/collaboration.de@2x.png",
 
-  "VideoCardHeading": "Entdecken Sie ONLYOFFICE Documents, eine solide mobile Office Suite",
+  "VideoCardHeading": "Entdecken Sie ONLYOFFICE Documents, eine leistungsstarke mobile Office-Suite",
 
-  "GetStartedAndChoose": "Legen Sie los und wählen Sie, wo Sie arbeiten möchten",
+  "GetStartedAndChoose": "Legen Sie los und wählen Sie aus wo Sie arbeiten möchten",
 
   "ChooseItemOnDevice": "Auf dem Gerät",
-  "ChooseItemManageDocuments": "Dokumente auf dem Gerät verwalten und offline bearbeiten.",
+  "ChooseItemManageDocuments": "Verwalten Sie Ihre Dokumente auf Ihrem Gerät und bearbeiten Sie diese offline.",
 
-  "ChooseItemInOnlyOffice": "In der ONLYOFFICE Cloud",
-  "ChooseItemAccessDocs": "Greifen Sie auf Dokumente aus der ONLYOFFICE Cloud und den damit verbundenen Speichern (Dropbox, Google Drive usw.) zu und arbeiten Sie kollaborativ.",
+  "ChooseItemInOnlyOffice": "In der ONLYOFFICE-Cloud",
+  "ChooseItemAccessDocs": "Dokumentenzugriff und gemeinsame Bearbeitung von Dokumenten über die ONLYOFFICE-Cloud und die damit verbundenen Speicher (Dropbox, Google Drive usw.).",
 
   "ChooseItemInYourCloud": "In Ihrer Cloud",
-  "ChooseItemConnectNextcloud": "Verbinden Sie Nextcloud, ownCloud oder jede andere Cloud, die über WebDAV arbeitet, und bearbeiten Sie Dokumente direkt aus der App.",
+  "ChooseItemConnectNextcloud": "Verbinden Sie Nextcloud, ownCloud oder jede andere WebDAV-basierte Cloud und bearbeiten Sie Dokumente direkt in der App.",
 
-  "ChooseItemFromOther": "Aus anderen Apps",
-  "ChooseItemImportDocuments": "Importieren Sie Dokumente aus Anwendungen wie iTunes, Dateien und anderen.",
+  "ChooseItemFromOther": "Über andere Anwendungen",
+  "ChooseItemImportDocuments": "Importieren Sie Dokumente aus Anwendungen wie iTunes, Files etc.",
 
-  "GetMoreWithComplete": "Holen Sie mehr heraus mit der vollständigen mobilen Webversion",
-  "WorkOnDocumentsWithin": "Arbeiten Sie an Dokumenten in Ihrem mobilen Browser. Gehen Sie zu Ihrem ONLYOFFICE Webportal und erhalten Sie Zugang zu weiteren Werkzeugen für die Dokumentenbearbeitung und Zusammenarbeit.",
+  "GetMoreWithComplete": "Mit der mobilen Web-Version erhalten Sie ein vollständiges Rundumpaket",
+  "WorkOnDocumentsWithin": "Bearbeiten Sie Dokumente in Ihrem mobilen Browser. Besuchen Sie Ihr ONLYOFFICE-Webportal und erhalten Sie Zugang zu weiteren Instrumenten für die Bearbeitung und Zusammenarbeit an Dokumenten.",
   "GetMoreImage": "/images/templates/office-for-ios/getMore/webversion.de.png",
   "GetMoreImage2x": "/images/templates/office-for-ios/getMore/webversion.de@2x.png",
 
   "LearnMoreHeading": "Erfahren Sie mehr über ONLYOFFICE Documents für iOS",
 
-  "LearnCardTitleRelease": "Versionshinweise",
-  "LearnMoreTextMeet": "Entdecken Sie ONLYOFFICE Documents v7.2 für iOS",
-  "LearnMoreSubtitleRead": "Geschichte lesen",
+  "LearnCardTitleRelease": "Beschreibung von Neuigkeiten ",
+  "LearnMoreTextMeet": "Lernen Sie ONLYOFFICE Documents v7.2 für iOS kennen",
+  "LearnMoreSubtitleRead": "Weitere Informationen",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/de/2022/10/begrusen-sie-onlyoffice-documents-v7-2-fur-ios-handschrifterkennung-dokumentenschutz-suchfilter-und-mehr/",
 
-  "LearnCardTitleHints": "Tipps",
-  "LearnMoreTextHandwriting": "Handschrift in ONLYOFFICE Documents",
-  "LearnMoreSubtitleLearn1": "Mehr erfahren",
+  "LearnCardTitleHints": "Hinweise",
+  "LearnMoreTextHandwriting": "Handschrift in ONLYOFFICE-Dokumenten",
+  "LearnMoreSubtitleLearn1": "Weitere Informationen",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/de/mobile-applications/documents/document-editor/basic-operations/handwriting.aspx",
 
-  "LearnCardTitleDeveloper": "Entwicklerhandbuch",
-  "LearnMoreTextHowMobile": "Wie die mobile Integration funktioniert",
-  "LearnMoreSubtitleLearn2": "Mehr erfahren"
+  "LearnCardTitleDeveloper": "Leitfaden für Entwickler",
+  "LearnMoreTextHowMobile": "So funktioniert die mobile Integration",
+  "LearnMoreSubtitleLearn2": "Weitere Informationen",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/de/2022/07/onlyoffice-mobile-integration/"
 }

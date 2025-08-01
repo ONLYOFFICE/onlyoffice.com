@@ -1,0 +1,1 @@
+export { CrmTemplate } from "./Crm";

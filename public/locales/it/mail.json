@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Posta aziendale con il nome di proprio dominio | ONLYOFFICE",
+  "PageDescription": "Caselle di posta aziendali, supporto tecnico, compatibilità con calendari, CRM ed editori dei documenti online.",
+
+  "HeroTitle": "Gestisci le tue email in modo efficiente",
+  "HeroText": "Strumento di gestione delle mail facile da usare",
+  "GetItNow": "Ottienilo ora",
+
+  "MailServer": "Server Mail",
+  "MailServerText": "Aggiungi un server mail usando il nome dominio personale a crea una casella di posta aziendale per i membri del tuo gruppo. Sincronizza le email tramite IMAP. Esegui il backup e il ripristino del database di Mail Server.",
+  "MailServerImage": "/images/templates/mail/features/it/mail_server.png",
+  "MailAggregator": "Aggregatore di Mail",
+  "MailAggregatorText": "Raccogli, elabora e immagazzina tutta la tua posta in un unico posto, connetti tutti gli account email a ONLYOFFICE.",
+  "MailAggregatorImage": "/images/templates/mail/features/it/mail_aggregator.png",
+  "EffectiveEmail": "Gestione efficace delle email",
+  "EffectiveEmailText": "Organizza in modo efficace la tua posta in arrivo: suddividi la posta in categorie con la gestione Cartelle, sposta con facilità le email nelle cartelle con trascina e rilascia, utilizza i filtri per organizzare automaticamente le email.",
+  "EffectiveEmailImage": "/images/templates/mail/features/it/effective_email.png",
+  "EasyEmailFormatting": "Facile formattazione delle email",
+  "EasyEmailFormattingText": "Lavora completamente con caratteri e stili. Carica gli allegati e allegali dal modulo Documenti. Crea e gestisci firme. Utilizza lo strumento di creazione di modelli completo.",
+  "EasyEmailFormattingImage": "/images/templates/mail/features/it/email_formatting.png",
+  "CrmIntegration": "Integrazione CRM",
+  "CrmIntegrationText": "Linka discussioni email o invia messaggi separati ai contatti CRM, questioni o opportunità e tieni tutta la corrispondenza collegata a portata di mano.",
+  "CrmIntegrationImage": "/images/templates/mail/features/it/crm_integration.png",
+  "DocumentIntegration": "Integrazione dei documenti",
+  "DocumentIntegrationText": "Allega file dal modulo Documenti alle tue email per un veloce scambio di informazioni.",
+  "DocumentIntegrationImage": "/images/templates/mail/features/it/document_integration.png",
+  "CalendarIntegration": "Integrazione del Calendario",
+  "CalendarIntegrationText": "Mandi inviti al tuo evento in calendario e fai sapere agli ospiti di qualsiasi cambiamento tu faccia. Ricevi inviti da calendari di terze parti e rispondi",
+  "CalendarIntegrationImage": "/images/templates/mail/features/it/calendar_integration.png",
+
+  "PerfectOnlineCollaboration": "Un piccolo e perfetto spazio online di collaborazione per il tuo intero gruppo",
+  "PcMag": "PC Mag"
+}

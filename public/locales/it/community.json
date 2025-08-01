@@ -1,0 +1,24 @@
+{
+  "PageTitle": "Network aziendale per collaborare online | ONLYOFFICE",
+  "PageDescription": "Aumenta la produttività del team con blog, forum, segnalibri, wiki.",
+
+  "HeroTitle": "Migliora la comunicazione del team",
+  "HeroText": "Software facile da usare con una serie di caratteristiche di collaborazione business-friendly<br/><1>Da PcMag</1>",
+  "GetItNow": "Installa sul server",
+
+  "SharingCompanyNews": "Condividi news/annunci sulla compagnia",
+  "SharingCompanyNewsText": "Crea una pagina di notizie aziendali per postare le ultime news, direttive e annunci dell'azienda. Aggiungi e condividi segnalibri con i colleghi per risorse web utili o interessanti.",
+  "SharingCompanyNewsImage": "/images/templates/community/features/it/sharing_company_news.png",
+  "CreatingPolls": "Crea questionari e interviste",
+  "CreatingPollsText": "Conduci una ricerca, raccogli dati o ricevi feedback da altri utenti office tramite questionari e interviste. Rendi i tuoi post sul forum più interattivi aggiungendo questionari.",
+  "CreatingPollsImage": "/images/templates/community/features/it/creating_polls.png",
+  "MaintainingBlogs": "Gestisci blog e forum aziendali",
+  "MaintainingBlogsText": "Condividi le tue idee, conoscenze ed esperienze con gli altri, aggiungendo post nel blog aziendale, discuti delle problematiche e media le discussioni sul forum.",
+  "MaintainingBlogsImage": "/images/templates/community/features/it/maintaining_blogs.png",
+  "InstantMessaging": "Applicazione di messaggistica istantanea",
+  "InstantMessagingText": "Comunica con gli altri utenti in tempo reale, organizza conferenze nelle chatroom, usa le mailing-list per mandare un messaggio a più utenti in una sola volta.",
+  "InstantMessagingImage": "/images/templates/community/features/it/instant_messaging.png",
+
+  "EasyToUse": "Software facile da usare con una serie di caratteristiche di collaborazione business-friendly.",
+  "PcMag": "PC Mag"
+}

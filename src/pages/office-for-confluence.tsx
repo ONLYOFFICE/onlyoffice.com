@@ -45,6 +45,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "office-for-confluence",
         "Connectors",
+        "WatchVideo",
       ])),
       locale,
     },

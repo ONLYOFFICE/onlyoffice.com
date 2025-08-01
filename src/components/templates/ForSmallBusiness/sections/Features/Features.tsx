@@ -19,10 +19,22 @@ const Features = () => {
         <StyledFeaturesContent>
           {items.flatMap((groupSet, groupSetIndex) =>
             groupSet.items.map((group, groupIndex) => {
-              const buttons =
-                group.links?.map((link) => ({
+           const buttons = group.buttons
+              ? group.buttons.map((btn) =>
+                  btn.links
+                    ? {
+                        ...btn,
+                        label: t(btn.label),
+                        links: btn.links,
+                      }
+                    : {
+                        ...btn,
+                        label: t(btn.label),
+                      },
+                )
+              : group.links?.map((link) => ({
                   ...link,
-                  label: t(String(link.label)),
+                  label: t(link.label),
                 })) ?? [];
 
               return (
@@ -39,12 +51,17 @@ const Features = () => {
                   }}
                   contentWidth={544}
                   text={group.items.map((key) => {
-                    const entry = group.textWithLinks?.find(
-                      (item) => item.label === key,
-                    );
+                    const entry = group.textWithLinks?.find((item) => item.label === key);
                     return {
                       label: t(key),
-                      links: entry?.links ?? [],
+                      links: entry?.links?.map((link) => ({
+                        ...link,
+                        href:
+                          link.href === "https://www.onlyoffice.com/blog/2022/09/what-is-jwt/"
+                            ? t("JWTLink")
+                            : link.href,
+                        label: t(link.label),
+                      })) ?? [],
                     };
                   })}
                   position={{

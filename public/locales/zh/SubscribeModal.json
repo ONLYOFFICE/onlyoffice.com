@@ -1,0 +1,13 @@
+{
+  "ModalTitle": "不要错过最新资讯！",
+  "GetTheLatestOONews": "通过邮箱接收ONLYOFFICE的新闻简报",
+  "FirstName": "名",
+  "FirstNameIsEmpty": "名为空",
+  "YourEmail": "您的电子邮箱",
+  "EmailIsEmpty": "电子邮箱为空",
+  "EmailIsIncorrect": "电子邮箱错误",
+  "Subscribe": "订阅",
+
+  "MessageWithConfirmation": "我们向您的邮箱发送了一封确认邮件。",
+  "OK": "好"
+}

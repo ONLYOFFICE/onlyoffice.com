@@ -35,6 +35,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
       onFocus,
       onBlur,
       onKeyDown,
+      ...rest
     },
     ref,
   ) => {
@@ -82,6 +83,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
                 $value={value}
                 $leftSide={leftSide}
                 $active={active}
+                $status={status}
                 $disabled={disabled}
               >
                 {label}
@@ -110,6 +112,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
               onFocus={handleFocus}
               onBlur={handleBlur}
               onKeyDown={onKeyDown}
+              {...rest}
             />
           </StyledInputBody>
 

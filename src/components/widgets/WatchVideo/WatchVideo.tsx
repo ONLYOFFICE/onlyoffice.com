@@ -17,8 +17,9 @@ const WatchVideo = ({
   videoImgUrl,
   videoUrl,
   heading,
+  customLabel
 }: IWatchVideo) => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("WatchVideo");
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -31,7 +32,7 @@ const WatchVideo = ({
       <StyledWatchVideoWrapper>
         <StyledWatchVideoHeading level={4} label={heading} />
         <StyledWatchVideoLabel onClick={() => setIsOpen(true)}>
-          {t("WatchVideo")}
+           {customLabel || t("WatchOurVideo")}
         </StyledWatchVideoLabel>
       </StyledWatchVideoWrapper>
 

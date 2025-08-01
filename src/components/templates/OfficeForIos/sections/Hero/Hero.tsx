@@ -36,7 +36,7 @@ const Hero = () => {
               <Trans
                 t={t}
                 i18nKey="OnlyOfficeDocuments"
-                components={[<Text key="0" as="span" color="main" label="0" />]}
+                components={[<Text key="0" as="span" color="main" label="0" />, <br key={1} />]}
               />
             </StyledHeroLeftHeading>
             <StyledHeroLeftButton

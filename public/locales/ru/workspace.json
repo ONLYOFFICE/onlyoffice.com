@@ -1,0 +1,82 @@
+{
+  "PageTitle": "Рабочее пространство для вашей команды",
+  "PageDescription": "Управляйте всеми бизнес-процессами, работайте совместно и эффективно взаимодействуйте с помощью ONLYOFFICE Workspace.",
+
+  "HeroTitle": "ONLYOFFICE Workspace",
+  "HeroText": "Набор приложений для управления командой и совместной работы",
+  "GetItNow": "Получить сейчас",
+
+  "ManageAllYourBusinessProcesses": "Управляйте всеми бизнес-процессами",
+  "LearnMore": "Узнать больше",
+
+  "Documents": "Документы",
+  "StoreAndOrganize": "Храните и организуйте бизнес-документацию. Предоставляйте доступ с различными индивидуальными и групповыми правами. Редактируйте <0>текстовые документы</0>, <1>электронные таблицы</1>, <2>презентации</2>, <3>PDF-файлы</3> и заполняемые <4>формы</4> и работайте над ними совместно.",
+  "HighestCompatibility": "Максимальная совместимость с форматами MS Office",
+  "MultiFormat": "Мультиформатный медиа-плеер",
+  "ReadyForms": "Готовые к заполнению онлайн-формы документов",
+  "PrivateRooms": "Приватные комнаты для совместной работы над документами, защищенными сквозным шифрованием",
+  "DocumentsImgUrl": "/images/templates/workspace/manage/ru/documents.png",
+  "DocumentsImgUrl2x": "/images/templates/workspace/manage/ru/documents@2x.png",
+
+  "Mails": "Почта",
+  "KeepYourMailboxOrganized": "Наведите порядок в почте. Создавайте корпоративные почтовые ящики на своем домене или используйте домен по умолчанию. Подключайте множество почтовых аккаунтов, управляйте письмами и помечайте их тегами. Создавайте подпись и используйте конструктор шаблонов.",
+  "SupportOfCommonEmailProtocols": "Поддержка распространенных почтовых протоколов: POP3, SMTP, IMAP",
+  "UnlimitedNumber": "Неограниченное число почтовых ящиков и почтовых групп",
+  "FreeDefaultDomain": "Бесплатный домен по умолчанию",
+  "MailsImgUrl": "/images/templates/workspace/manage/ru/mail.png",
+  "MailsImgUrl2x": "/images/templates/workspace/manage/ru/mail@2x.png",
+
+  "Crm": "CRM",
+  "OrganizeYourBusinessWorkflow": "Организуйте бизнес-процессы от создания базы потенциальных клиентов до выполнения заказов. Создавайте отчеты и следите за работой вашей команды.",
+  "WebToLead": "Форма \"Контакты с сайта\" для быстрого заполнения базы потенциальных клиентов",
+  "MakingCalls": "Звонки с помощью Twilio",
+  "CloseIntegration": "Тесная интеграция с почтой, проектами и календарем",
+  "CrmImgUrl": "/images/templates/workspace/manage/ru/crm.png",
+  "CrmImgUrl2x": "/images/templates/workspace/manage/ru/crm@2x.png",
+
+  "Projects": "Проекты",
+  "OrganizeYourTeam": "Организуйте успешную работу команды. Создавайте проекты, выставляйте приоритет задач, определяйте сроки выполнения. Ведите учет времени и генерируйте отчеты для анализа продуктивности.",
+  "GanttChart": "Диаграмма Ганта",
+  "PrivateProjects": "Приватные проекты и управление правами доступа",
+  "Integration": "Интеграция с документами, календарем и CRM",
+  "WatchVideo": "Посмотреть видео-презентацию",
+  "ProjectsImgUrl": "/images/templates/workspace/manage/ru/projects.png",
+  "ProjectsImgUrl2x": "/images/templates/workspace/manage/ru/projects@2x.png",
+
+  "Calendar": "Календарь",
+  "ManageYourTime": "Разумно распоряжайтесь временем: создавайте персональные или общие расписания, добавляйте разные типы событий и включайте напоминания, чтобы ничего не упустить.",
+  "CalendarSharing": "Предоставление доступа к календарям",
+  "Synchronization": "Синхронизация со сторонними приложениями",
+  "CloseIntegrationWithModules": "Тесная интеграция со всеми модулями ONLYOFFICE",
+  "CalendarImgUrl": "/images/templates/workspace/manage/ru/calendar.png",
+  "CalendarImgUrl2x": "/images/templates/workspace/manage/ru/calendar@2x.png",
+
+  "OOWorkspace": "ONLYOFFICE Workspace 12.5:",
+  "OOWorkspaceMobile": "Выпущен ONLYOFFICE Workspace 12.5",
+  "OOWorkspaceText": "улучшенная безопасность, оптимизированное управление документами, темная тема и многое другое",
+
+  "WhyOOWorkspace": "Почему ONLYOFFICE Workspace",
+  "Benefits": "Преимущества рабочего пространства онлайн",
+
+  "ThirdParty": "Интеграция со сторонними сервисами",
+  "ExtendYourWorkspace": "Расширьте функциональность рабочего пространства с помощью приложений и инструментов для входа, подписи, аутентификации или хранения.",
+  "FindAppsYouNeed": "Найти нужное приложение",
+
+  "DataSecurityHeader": "Безопасность и контроль данных",
+  "DataSecurity": "Шифрование хранилища и данных во время совместной работы. Аутентификация с помощью LDAP/Active Directory. Управление правами доступа, JWT, мониторинг активности.",
+
+  "Administration": "Администрирование и кастомизация",
+  "ManageYourWorkspace": "Настройте ONLYOFFICE c помощью интуитивной Панели управления. Настройте его с помощью встроенных цветовых схем, замените логотипы, заголовки, ссылки, установите светлую или темную тему интерфейса.",
+
+  "GettingStarted": "Начните сейчас",
+  "UseOOWorkspace": "Используйте ONLYOFFICE Workspace в облаке, разверните на сервере или запустите предварительно настроенную установку.",
+
+  "GetStarted": "Начать",
+  "OvhMarketplace": "OVHcloud Marketplace",
+  "OneClickInstall": "Установка в один клик, автообновления",
+
+  "SelfHosted": "В локальной сети",
+  "Host": "Установите на своем сервере",
+
+  "CommunityFooterText": "Бесплатная версия доступна для скачки <0>здесь</0>."
+}

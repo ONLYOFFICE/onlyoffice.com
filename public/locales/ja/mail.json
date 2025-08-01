@@ -1,0 +1,26 @@
+{
+  "PageTitle": "社内メール管理ツール | ONLYOFFICE",
+  "PageDescription": "社内メールボックス作成、メールアカウントのリンク、すべての応答を一か所で管理。",
+
+  "HeroTitle": "メールを効果的に管理",
+  "HeroText": "使いやすいメール管理ツール",
+  "GetItNow": "今すぐ入手",
+
+  "MailServer": "メールサーバ",
+  "MailServerText": "専用のドメイン名を使用してメールサーバを追加して、チームメンバーに向けて社内メールボックスを作成。IMAP経由のメール同期。メールサーバーのデータベースをバックアップと復元ができる。",
+  "MailAggregator": "メールフィードリーダー",
+  "MailAggregatorText": "ONLYOFFICE にすべてのメールアカウントを接続して、一か所ですべての応答を収集、処理、保存。",
+  "EffectiveEmail": "効果的なメール管理",
+  "EffectiveEmailText": "ボックス内を効率よく整頓。フォルダ管理機能で応答を分別。ドラッグアンドドロップで簡単にメールを移動。自動的にメールをフィルタし、整列。",
+  "EasyEmailFormatting": "簡易なメール形式",
+  "EasyEmailFormattingText": "フォント、スタイルを活用して作業添付書類アップデートとドキュメントモジュールからの添付サインを作成、管理テンプレート作成機能を利用。",
+  "CrmIntegration": "CRM 統合",
+  "CrmIntegrationText": "メールツリーのリンク、CRM の連絡先、出来事、機会にメッセージを選別、関連する応答すべてを一括管理。",
+  "DocumentIntegration": "ドキュメント統合",
+  "DocumentIntegrationText": "素早い情報交換の目的で、ドキュメント モジュールからメールにファイルを添付。",
+  "CalendarIntegration": "カレンダー統合",
+  "CalendarIntegrationText": "カレンダーにあるイベントの招待状送信、ゲストへの変更があった場合の通知サードパーティのカレンダーからの招待状受領、その返信。",
+
+  "PerfectOnlineCollaboration": "チーム全体に完璧な大きさのオンライン共同編集スペース",
+  "PcMag": "PC Mag より"
+}

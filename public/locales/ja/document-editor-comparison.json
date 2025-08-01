@@ -1,0 +1,30 @@
+{
+  "PageTitle": "ONLYOFFICE を MS Office Online、Google Docs、Zoho と比較",
+  "PageDescription": "ONLYOFFICE 機能: オンライン ドキュメント エディター、ドキュメント管理、プロジェクト管理、ガントチャート、CRM システム、インボイス、ビジネス共同編集、カレンダー、メール フィードリーダー。",
+
+  "HeroTitle": "<0>ONLYOFFICE</0> は、世界ナンバーワンのオンライン オフィススイート です。",
+  "HeroText": "ONLYOFFICE は、HTML5 の キャンバス属性を使用した構築で、トップクラスのオンラインスイートを組み合わせています。そしてさらにできることがあります。",
+  "GetItNow": "今すぐ入手",
+  "SeeItInAction": "実際に使用してみましょう",
+  "HeroVideoText": "この動画を見て、ONLYOFFICE がトップクラスである理由を知る",
+
+  "ComparisonTitle": "<0>ONLYOFFICE Docs</0>と他のオフィススイートの詳細な比較については、対応するページをご覧ください。",
+  "OODocsVsOfficeOnline": "ONLYOFFICE vs MS Office Online",
+  "OODocsVsGoogleDocs": "ONLYOFFICE vs Google Docs",
+  "OODocsVsZohoDocs": "ONLYOFFICE vs Zoho Docs",
+  "OODocsVsLibreOffice": "ONLYOFFICE vs LibreOffice",
+  "OODocsVsWPS": "ONLYOFFICE Docs vs WPS",
+  "OODocsVsAdobe": "ONLYOFFICE Docs vs Adobe",
+  "OODocsVsHancom": "ONLYOFFICE Docs vs Hancom",
+
+  "CheckOutTheCompatibility": "Microsoft Office フォーマットとの適合性を確認",
+  "CheckOutTheCompatibilityText": "Microsoft により作成された<0>docx ファイル</0>と<1>xlsxファイル</1> を他のスイートの PDF フォーマットで保存しました。これが結果です。",
+  "Documents": "ドキュメント（.docx）",
+  "Spreadsheets": "スプレッドシート（.xlsx）",
+
+  "StillNotConvinced": "まだ確信できませんか? エディターを自分で比較",
+  "StillNotConvincedText": "<0>docx</0> と <1>xlsx</1> ファイルをダウンロードしてから MS Word Online、Google Docs、Zoho Docs、LibreOffice/OpenOffice、WPS Office、Hancom Office 、ONLYOFFICE を使用して編集をお試しください。",
+  "StillNotConvincedLink": "エディターの比較方法を読む",
+  "GetOODocsNow": "今すぐ ONLYOFFICE を購入",
+  "TryItInTheCloud": "クラウドで使用"
+}

@@ -18,10 +18,22 @@ const Features = () => {
         <StyledFeaturesContent>
           {items.flatMap((groupSet, groupSetIndex) =>
             groupSet.items.map((group, groupIndex) => {
-              const buttons =
-                group.links?.map((link) => ({
+           const buttons = group.buttons
+              ? group.buttons.map((btn) =>
+                  btn.links
+                    ? {
+                        ...btn,
+                        label: t(btn.label),
+                        links: btn.links,
+                      }
+                    : {
+                        ...btn,
+                        label: t(btn.label),
+                      },
+                )
+              : group.links?.map((link) => ({
                   ...link,
-                  label: t(String(link.label)),
+                  label: t(link.label),
                 })) ?? [];
 
               return (

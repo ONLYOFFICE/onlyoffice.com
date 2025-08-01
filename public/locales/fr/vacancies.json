@@ -1,0 +1,288 @@
+{
+  "PageTitle": "ONLYOFFICE - applications bureautiques dans le nuage",
+
+  "HeroHeadingWeAreHiring": "Nous recrutons",
+  "HeroTextJoin": "Rejoignez <0>l'équipe ONLYOFFICE</0> aujourd'hui",
+
+  "JobHeading": "Offres d'emploi",
+
+  "JobFiltersDepartment": "Départements",
+  "JobFiltersCountry": "Pays",
+  "JobFiltersReset": "Tout",
+
+  "JobCardDepartmentSales": "Équipe de vente",
+  "JobCardDepartmentCustomerCare": "Service clients",
+  "JobCardDepartmentMarketing": "Marketing",
+  "JobCardDepartmentTechnicalSupport": "Soutien technique",
+
+  "JobCardLocationRemote": "Travail à distance",
+  "JobCardTimeFullTime": "Temps plein",
+  "JobCardLanguageEnDe": "Anglais et allemand",
+  "JobCardLanguageEnFr": "Anglais et français",
+  "JobCardLanguageEnJa": "Anglais et japonais",
+  "JobCardLanguageEnAr": "Anglais et arménien",
+  "JobCardLanguageEnSr": "Anglais et serbe",
+  "JobCardLanguageEnCn": "Anglais et chinois",
+
+  "JobCardHeadingRequirements": "Missions",
+  "JobCardHeadingSkills": "Compétences",
+  "JobCardHeadingBenefits": "Avantages",
+
+  "JobCard1Country": "Allemagne",
+  "JobCard1Title": "Chargé de compte client Allemagne",
+  "JobCard1Description": "Nous recherchons un chargé de compte axé sur les clients et les revenus pour établir des relations de confiance à long terme avec nos clients en Allemagne.",
+  "JobCard1Requirements": [
+    "Établir et maintenir des relations stables et à long terme avec les clients, basées sur la confiance et le respect",
+    "Travailler avec les équipes du service professionnel et de l'assistance à la clientèle pour mieux comprendre et répondre aux besoins et aux défis des clients",
+    "Assister les clients pour les questions techniques",
+    "Identifier les clients qui pourraient bénéficier de la fonctionnalité commerciale et d'autres services",
+    "Communiquer avec les clients pour savoir comment améliorer ONLYOFFICE afin de mieux répondre à leurs besoins",
+    "Gérer et négocier les renouvellements",
+    "Assister les clients pour les questions relatives à la facturation et au paiement"
+  ],
+  "JobCard1Skills": [
+    "2 + ans d'expérience dans le domaine des services clients ou de la gestion des comptes de vente",
+    "Possibilité de travailler avec des équipes à distance",
+    "Personne responsable, intelligente, honnête, organisée, positive et motivée",
+    "Excellentes compétences en communication écrite et orale en anglais et en allemand",
+    "Maîtrise des outils de CRM, de bureautique et de communication vidéo",
+    "Capacité d'apprentissage rapide et volonté à utiliser de nouveaux outils",
+    "Bonne gestion de plusieurs comptes clients à la fois, tout en portant une attention particulière aux détails"
+  ],
+  "JobCard1Benefits": [
+    "Horaires flexibles permettant de combiner la vie privée et la vie professionnelle",
+    "Travail à distance et indépendance géographique",
+    "Équipe internationale et communauté open source",
+    "Collègues enthousiastes et créatifs",
+    "Salaire compétitif plus commission"
+  ],
+
+  "JobCard2Country": "France",
+  "JobCard2Title": "Chargé de compte client France",
+  "JobCard2Description": "Nous recherchons un chargé de compte axé sur les clients et les revenus pour établir des relations de confiance à long terme avec nos clients en France.",
+  "JobCard2Requirements": [
+    "Établir et maintenir des relations stables et à long terme avec les clients, basées sur la confiance et le respect",
+    "Travailler avec les équipes du service professionnel et de l'assistance à la clientèle pour mieux comprendre et répondre aux besoins et aux défis des clients",
+    "Assister les clients pour les questions techniques",
+    "Identifier les clients qui pourraient bénéficier de la fonctionnalité commerciale et d'autres services",
+    "Communiquer avec les clients pour savoir comment améliorer ONLYOFFICE afin de mieux répondre à leurs besoins",
+    "Gérer et négocier les renouvellements",
+    "Assister les clients pour les questions relatives à la facturation et au paiement"
+  ],
+  "JobCard2Skills": [
+    "2 + ans d'expérience dans le domaine des services clients ou de la gestion des comptes de vente",
+    "Possibilité de travailler avec des équipes à distance",
+    "Personne responsable, intelligente, honnête, organisée, positive et motivée",
+    "Excellentes compétences en communication écrite et orale en anglais et en français",
+    "Maîtrise des outils de CRM, de bureautique et de communication vidéo",
+    "Capacité d'apprentissage rapide et volonté à utiliser de nouveaux outils",
+    "Bonne gestion de plusieurs comptes clients à la fois, tout en portant une attention particulière aux détails"
+  ],
+  "JobCard2Benefits": [
+    "Horaires flexibles permettant de combiner la vie privée et la vie professionnelle",
+    "Travail à distance et indépendance géographique",
+    "Équipe internationale et communauté open source",
+    "Collègues enthousiastes et créatifs",
+    "Salaire compétitif plus commission"
+  ],
+
+  "JobCard3Country": "Japon",
+  "JobCard3Title": "Chargé de compte client Japon",
+  "JobCard3Description": "Nous recherchons un chargé de compte axé sur les clients et les revenus pour établir des relations de confiance à long terme avec nos clients au Japon.",
+  "JobCard3Requirements": [
+    "Établir et maintenir des relations stables et à long terme avec les clients, basées sur la confiance et le respect",
+    "Travailler avec les équipes du service professionnel et de l'assistance à la clientèle pour mieux comprendre et répondre aux besoins et aux défis des clients",
+    "Assister les clients pour les questions techniques",
+    "Identifier les clients qui pourraient bénéficier de la fonctionnalité commerciale et d'autres services",
+    "Communiquer avec les clients pour savoir comment améliorer ONLYOFFICE afin de mieux répondre à leurs besoins",
+    "Gérer et négocier les renouvellements",
+    "Assister les clients pour les questions relatives à la facturation et au paiement"
+  ],
+  "JobCard3Skills": [
+    "2 + ans d'expérience dans le domaine des services clients ou de la gestion des comptes de vente",
+    "Possibilité de travailler avec des équipes à distance",
+    "Personne responsable, intelligente, honnête, organisée, positive et motivée",
+    "Excellentes compétences en communication écrite et orale en anglais et en japonais",
+    "Maîtrise des outils de CRM, de bureautique et de communication vidéo",
+    "Capacité d'apprentissage rapide et volonté à utiliser de nouveaux outils",
+    "Bonne gestion de plusieurs comptes clients à la fois, tout en portant une attention particulière aux détails"
+  ],
+  "JobCard3Benefits": [
+    "Horaires flexibles permettant de combiner la vie privée et la vie professionnelle",
+    "Travail à distance et indépendance géographique",
+    "Équipe internationale et communauté open source",
+    "Collègues enthousiastes et créatifs",
+    "Salaire compétitif plus commission"
+  ],
+
+  "JobCard4Country": "Allemagne",
+  "JobCard4Title": "Chargé des ventes en Allemagne",
+  "JobCard4Description": "Nous recherchons un chargé des ventes orienté vers les revenus pour acquérir et attirer activement des clients potentiels.",
+  "JobCard4Requirements": [
+    "Gérer les opportunités tout au long du processus",
+    "Présenter, promouvoir et vendre les produits / services ONLYOFFICE aux clients actuels et potentiels",
+    "Établir, développer et maintenir des relations positives avec les entreprises et les clients",
+    "Coordonner les efforts de vente avec les membres de l'équipe, les autres départements et les partenaires",
+    "Analyser le potentiel du territoire / marché, suivre les ventes",
+    "Fournir des rapports sur les besoins, les problèmes, les intérêts, les activités concurrentielles et le potentiel de nouveaux services des clients"
+  ],
+  "JobCard4Skills": [
+    "Excellentes compétences en matière de vente, de négociation et de communication",
+    "Possibilité de travailler avec des équipes à distance",
+    "Personne responsable, intelligente, honnête, organisée, positive et motivée",
+    "Excellentes compétences en communication écrite et orale en anglais et en allemand",
+    "Maîtrise des outils de CRM, de bureautique et de communication vidéo",
+    "Capacité d'apprentissage rapide et volonté à utiliser de nouveaux outils",
+    "Bonne gestion de plusieurs comptes clients à la fois, tout en portant une attention particulière aux détails"
+  ],
+  "JobCard4Benefits": [
+    "Horaires flexibles permettant de combiner la vie privée et la vie professionnelle",
+    "Travail à distance et indépendance géographique",
+    "Équipe internationale et communauté open source",
+    "Collègues enthousiastes et créatifs",
+    "Salaire compétitif plus commission"
+  ],
+
+  "JobCard5Country": "France",
+  "JobCard5Title": "Chargé des ventes en France",
+  "JobCard5Description": "Nous recherchons un chargé des ventes orienté vers les revenus pour acquérir et attirer activement des clients potentiels.",
+  "JobCard5Requirements": [
+    "Gérer les opportunités tout au long du processus",
+    "Présenter, promouvoir et vendre les produits / services ONLYOFFICE aux clients actuels et potentiels",
+    "Établir, développer et maintenir des relations positives avec les entreprises et les clients",
+    "Coordonner les efforts de vente avec les membres de l'équipe, les autres départements et les partenaires",
+    "Analyser le potentiel du territoire / marché, suivre les ventes",
+    "Fournir des rapports sur les besoins, les problèmes, les intérêts, les activités concurrentielles et le potentiel de nouveaux services des clients"
+  ],
+  "JobCard5Skills": [
+    "Excellentes compétences en matière de vente, de négociation et de communication",
+    "Possibilité de travailler avec des équipes à distance",
+    "Personne responsable, intelligente, honnête, organisée, positive et motivée",
+    "Excellentes compétences en communication écrite et orale en anglais et en français",
+    "Maîtrise des outils de CRM, de bureautique et de communication vidéo",
+    "Capacité d'apprentissage rapide et volonté à utiliser de nouveaux outils",
+    "Bonne gestion de plusieurs comptes clients à la fois, tout en portant une attention particulière aux détails"
+  ],
+  "JobCard5Benefits": [
+    "Horaires flexibles permettant de combiner la vie privée et la vie professionnelle",
+    "Travail à distance et indépendance géographique",
+    "Équipe internationale et communauté open source",
+    "Collègues enthousiastes et créatifs",
+    "Salaire compétitif plus commission"
+  ],
+
+  "JobCard6Country": "Japon",
+  "JobCard6Title": "Chargé des ventes en Japon",
+  "JobCard6Description": "Nous recherchons un chargé des ventes orienté vers les revenus pour acquérir et attirer activement des clients potentiels.",
+  "JobCard6Requirements": [
+    "Gérer les opportunités tout au long du processus",
+    "Présenter, promouvoir et vendre les produits / services ONLYOFFICE aux clients actuels et potentiels",
+    "Établir, développer et maintenir des relations positives avec les entreprises et les clients",
+    "Coordonner les efforts de vente avec les membres de l'équipe, les autres départements et les partenaires",
+    "Analyser le potentiel du territoire / marché, suivre les ventes",
+    "Fournir des rapports sur les besoins, les problèmes, les intérêts, les activités concurrentielles et le potentiel de nouveaux services des clients"
+  ],
+  "JobCard6Skills": [
+    "Excellentes compétences en matière de vente, de négociation et de communication",
+    "Possibilité de travailler avec des équipes à distance",
+    "Personne responsable, intelligente, honnête, organisée, positive et motivée",
+    "Excellentes compétences en communication écrite et orale en anglais et en japonais",
+    "Maîtrise des outils de CRM, de bureautique et de communication vidéo",
+    "Capacité d'apprentissage rapide et volonté à utiliser de nouveaux outils",
+    "Bonne gestion de plusieurs comptes clients à la fois, tout en portant une attention particulière aux détails"
+  ],
+  "JobCard6Benefits": [
+    "Horaires flexibles permettant de combiner la vie privée et la vie professionnelle",
+    "Travail à distance et indépendance géographique",
+    "Équipe internationale et communauté open source",
+    "Collègues enthousiastes et créatifs",
+    "Salaire compétitif plus commission"
+  ],
+
+  "JobCard7Country": "Arménie",
+  "JobCard7Title": "Chargé des services clients Arménie",
+  "JobCard7Description": "Nous recherchons un chargé des services clients expérimenté pour rejoindre notre équipe internationale. Vous serez responsable des processus d'accueil des clients ainsi que de la gestion des relations avec les clients de ONLYOFFICE.",
+  "JobCard7Requirements": [
+    "Fournir des démonstrations professionnelles, des conseils sur les produits et une assistance fonctionnelle",
+    "Assurer un niveau élevé de satisfaction des clients grâce à un support efficace et un excellent service client",
+    "Travailler en étroite collaboration avec l'équipe d'assurance qualité et les développeurs afin de fournir un support efficace à temps",
+    "Consulter les clients sur la manière d'améliorer ONLYOFFICE pour mieux répondre à ses besoins",
+    "Rassembler les commentaires des clients, les analyser et les transmettre à l'équipe chargée des produits afin de contribuer à l'élaboration d'un meilleur produit",
+    "Utiliser les rapports pour analyser les questions et les problèmes"
+  ],
+  "JobCard7Skills": [
+    "Possibilité de travailler avec des équipes à distance",
+    "Personne responsable, intelligente, honnête, organisée, positive et motivée",
+    "Excellentes compétences en communication écrite et orale en anglais et en arménien",
+    "Maîtrise des outils de CRM, de bureautique et de communication vidéo",
+    "Capacité d'apprentissage rapide et volonté à utiliser de nouveaux outils"
+  ],
+  "JobCard7Benefits": [
+    "Horaires flexibles permettant de combiner la vie privée et la vie professionnelle",
+    "Travail à distance et indépendance géographique",
+    "Équipe internationale et communauté open source",
+    "Collègues enthousiastes et créatifs"
+  ],
+
+  "JobCard8Country": "Serbie",
+  "JobCard8Title": "Rédacteur technique Serbie",
+  "JobCard8Description": "Nous recherchons un rédacteur technique pour contribuer au produit principal de l'entreprise.",
+  "JobCard8Requirements": [
+    "Travailler avec la documentation de l'API",
+    "Améliorer et maintenir l'API du produit existant",
+    "Rédiger des missions techniques pour les développeurs afin qu'ils écrivent de nouveaux cas de test"
+  ],
+  "JobCard8Skills": [
+    "Formation supérieure spécialisée en informatique",
+    "Expérience de la programmation, capacité à comprendre la documentation de l'API au niveau d'un développeur de logiciels",
+    "Capacité à évaluer l'API du produit à partir de la position d'un développeur tiers",
+    "Esprit analytique et capacité à traiter rapidement des informations",
+    "Disposition à discuter en équipe et attitude adéquate à l'égard d'un retour d'information constructif",
+    "Capacité à justifier ses propres propositions",
+    "Comprendre qu'aux intérêts des utilisateurs s'ajoute l'intérêt commercial de l'entreprise",
+    "Niveau d'anglais est suffisant pour lire et rédiger la documentation technique, y compris l'API",
+    "Expérience dans la rédaction et la mise à jour de la documentation de l'API sera un énorme avantage"
+  ],
+  "JobCard8Benefits": [
+    "Horaires flexibles permettant de combiner la vie privée et la vie professionnelle",
+    "Travail à distance et indépendance géographique",
+    "Équipe internationale et communauté open source",
+    "Collègues enthousiastes et créatifs",
+    "Salaire compétitif"
+  ],
+
+  "JobCard9Country": "Chine",
+  "JobCard9Title": "Spécialiste du support technique Chine",
+  "JobCard9Description": "Nous recherchons un spécialiste du support technique pour aider nos clients à résoudre les questions techniques et les problèmes liés à l'utilisation de nos produits.",
+  "JobCard9Requirements": [
+    "Fournir une assistance technique aux clients (accès à distance, administration des produits côté client, préparation des instructions nécessaires)",
+    "Répondre aux demandes de clients de manière rapide et précise",
+    "Interagir avec les départements de développement et de test",
+    "Participer directement aux processus d'essai et de conception des logiciels"
+  ],
+  "JobCard9Skills": [
+    "Connaissance de l'anglais, niveau B2 et plus",
+    "Chinois courant",
+    "Connaissance approfondie des systèmes d'exploitation client et serveur",
+    "Expérience dans le domaine du support client ou dans un domaine similaire, ainsi qu'une expérience dans l'administration de Linux seront un énorme avantage",
+    "Motivation, désir d'amélioration, volonté de s'efforcer d'apporter des changements"
+  ],
+  "JobCard9Benefits": [
+    "Horaires flexibles permettant de combiner la vie privée et la vie professionnelle",
+    "Travail à distance et indépendance géographique",
+    "Équipe internationale et communauté open source",
+    "Collègues enthousiastes et créatifs",
+    "Salaire compétitif"
+  ],
+
+  "JobCardAreYouInterested": "Ce poste vous intéresse ? Postulez maintenant. Contactez-nous à l'adresse <0>jobs@onlyoffice.com</0> avec votre CV.",
+
+  "AboutContentHeading": "À propos d'Ascensio System Sia",
+  "AboutContentText": [
+    "Nous sommes une entreprise internationale à code source ouvert dont la mission est de mettre les applications bureautiques web les plus innovantes à la portée de tout le monde.",
+    "Notre vie professionnelle au sein de l'entreprise est basée sur la confiance mutuelle et notre objectif commun qui nous unit, nous maintient motivés et à jour, et nous incite à innover. Nous nous en tenons à la stratégie selon laquelle chacun s'engage dans ce qu'il aime, dans ce qu'il sait vraiment faire. Cela nous permet de créer et de promouvoir un produit utile et de haute qualité, qui dispose déjà d'une solide base de clients.",
+    "En tant qu'entreprise comptant des employés dans <0>plus de 30 pays</0> et une vaste communauté de contributeurs dans le monde entier, notre langue d'entreprise est l'anglais. Beaucoup d'entre nous travaillent à domicile avec des horaires flexibles, indépendamment de l'endroit d'où vous venez.",
+    "Chez <0>Ascensio System Sia</0>, nous assurons l'égalité de traitement de tous les membres du personnel et de tous les candidats sans tenir compte de la race, de la couleur, de la religion, du sexe, de l'orientation sexuelle, de la perception ou de l'identité de genre, de l'origine nationale, de l'âge, de l'état civil, du statut de vétéran ou du statut de handicapé. Seuls vos qualifications, votre expérience et votre enthousiasme sont importants pour nous.",
+    "<0>Rejoignez notre grande famille open source et postulez à un emploi ! Contactez nous à</0> <1>jobs@onlyoffice.com</1>"
+  ]
+}

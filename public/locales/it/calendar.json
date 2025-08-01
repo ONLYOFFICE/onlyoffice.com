@@ -1,0 +1,24 @@
+{
+  "PageTitle": "Strumento di gestione del tempo | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE permette di organizzare processi di lavoro in modo efficiente, gestire i calendari, sincronizzarli con Google Calendar ed altri.",
+
+  "HeroTitle": "Strumento di gestione del tempo efficiente",
+  "HeroText": "Mantieni il team organizzato e produttivo",
+  "GetItNow": "Ottienilo ora",
+
+  "IndividualOrGroup": "Calendario individuale o di gruppo",
+  "IndividualOrGroupText": "Crea la tua tabella oraria personale, <0>condivi il calendario</0> fornendo l'accesso a persone singole o programma incontri con tutto il gruppo.",
+  "IndividualOrGroupImage": "/images/templates/calendar/features/it/individual_or_group.png",
+  "SimpleScheduling": "Programmazione semplice con diversi tipi di eventi.",
+  "SimpleSchedulingText": "Crea eventi giornalieri, di più giorni o ricorrenti. Aggiungi una lista \"da fare\" alla tua tabella oraria. Manda inviti a tutti gli utenti. Utilizza i promemoria per non scordare niente.",
+  "SimpleSchedulingImage": "/images/templates/calendar/features/it/simple_scheduling.png",
+  "Synchronization": "Sincronizza con applicazioni di terza parti",
+  "SynchronizationText": "Importa eventi o aggiungi feed iCal da Google, Apple iCal, Yahoo!, sincronizza il calendario utilizzando il protocollo CalDAV, e riunisci tutti gli eventi in un unico posto.",
+  "SynchronizationImage": "/images/templates/calendar/features/it/synchronization.png",
+  "CloseIntegration": "Chiudi l'integrazione con tutti i moduli di ONLYOFFICE",
+  "CloseIntegrationText": "Tieni traccia dei tuoi obiettivi, progetti e compiti CRM, ricevi notifiche sui prossimi compleanni degli utenti. Manda e ricevi inviti a importanti eventi in calendario.",
+  "CloseIntegrationImage": "/images/templates/calendar/features/it/close_integration.png",
+
+  "EasyToUse": "Software facile da usare con una serie di caratteristiche di collaborazione business-friendly",
+  "PcMag": "PC Mag"
+}

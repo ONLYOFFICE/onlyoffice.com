@@ -1,4 +1,4 @@
-import { generateAuthToken } from "@src/utils/generateAuthToken";
+import { createAuthToken } from "@src/utils/createAuthToken";
 import { ILocale } from "@src/types/locale";
 import { TCurrencyCode } from "@src/types/prices";
 
@@ -26,7 +26,7 @@ const billingRequest = async ({
   }
 
   try {
-    const token = generateAuthToken(
+    const token = createAuthToken(
       process.env.BILLING_KEY!,
       process.env.BILLING_SECRET!,
     );

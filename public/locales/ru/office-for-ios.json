@@ -1,12 +1,12 @@
 {
   "PageTitle": "Бесплатный мобильный офисный пакет для iPhone и iPad | ONLYOFFICE Documents",
-  "PageDescription": "Редактируйте и совместно редактируйте документы, электронные таблицы и презентации, заполняйте формы с ваших устройств iOS.",
+  "PageDescription": "Редактируйте документы, электронные таблицы и презентации и работайте над ними совместно. Заполняйте формы с ваших iOS-устройств.",
 
-  "OnlyOfficeDocuments": "ONLYOFFICE Documents, надежный <0>мобильный офисный пакет</0> для вашего iPhone и iPad",
+  "OnlyOfficeDocuments": "ONLYOFFICE Документы, единый <0>мобильный офисный пакет</0> для iPhone и iPad",
   "AbsolutelyFree": "Абсолютно <0>бесплатно</0>. Без рекламы. Без встроенных покупок.",
 
-  "OneAppThreeEditors": "Одно приложение - <0>Три редактора</0> - Множество функций",
-  "CompatibleWithMSOffice": "100% совместимость с форматами MS Office",
+  "OneAppThreeEditors": "Одно приложение - <0>Три редактора</0> - Множество возможностей",
+  "CompatibleWithMSOffice": "100% совместимость с форматами Microsoft Office",
 
   "HeroImageRightUrl": "/images/templates/office-for-ios/hero/ru/hero-laptop.png",
   "HeroImageRightUrl2x": "/images/templates/office-for-ios/hero/ru/hero-laptop-2x.png",
@@ -16,81 +16,84 @@
 
   "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.ru.svg",
 
-  "FeaturesItemHeadingFull": "Полнофункциональный текстовый редактор",
-  "FeaturesItemTextMakeUse": "Используйте множество инструментов для обработки текста: форматирование страниц, абзацев и текста, таблицы, автофигуры, диаграммы и т. д. Создавайте текстовые документы любого размера и сложности. Печатайте их с помощью AirPrint.",
+  "FeaturesItemHeadingFull": "Мощный текстовый процессор",
+  "FeaturesItemTextMakeUse": "Используйте множество инструментов для обработки текстовых документов: форматирования страницы, абзаца, текста, таблиц, фигур, диаграмм и других объектов. Создавайте текстовые документы любого размера и любой сложности. Распечатывайте их с помощью AirPrint.",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/ru/img-tablet-1.png",
   "FeaturesItemTablet1Bg2x": "/images/templates/office-for-ios/features/ru/img-tablet2x-1.png",
   "FeaturesItemMobile1Bg": "/images/templates/office-for-ios/features/ru/img-mobile-1.png",
   "FeaturesItemMobile1Bg2x": "/images/templates/office-for-ios/features/ru/img-mobile2x-1.png",
 
-  "FeaturesItemHeadingComplete": "Полноценный редактор электронных таблиц",
-  "FeaturesItemTextManage": "Управляйте данными в таблицах: работайте со строками и столбцами, настраивайте параметры ячеек, используйте более 450 формул, сортируйте и фильтруйте данные.",
+  "FeaturesItemHeadingComplete": "Полнофункциональный редактор электронных таблиц",
+  "FeaturesItemTextManage": "Управляйте данными электронной таблицы: работайте со строками и столбцами, настраивайте параметры ячейки, используйте более 450 формул, сортируйте и фильтруйте данные.",
   "FeaturesItemTablet2Bg": "/images/templates/office-for-ios/features/ru/img-tablet-2.png",
   "FeaturesItemTablet2Bg2x": "/images/templates/office-for-ios/features/ru/img-tablet2x-2.png",
   "FeaturesItemMobile2Bg": "/images/templates/office-for-ios/features/ru/img-mobile-2.png",
   "FeaturesItemMobile2Bg2x": "/images/templates/office-for-ios/features/ru/img-mobile2x-2.png",
 
-  "FeaturesItemHeadingCollaborative": "Редактор презентаций с возможностью совместной работы",
-  "FeaturesItemTextMakeWork": "Работайте со всеми популярными объектами на ваших слайдах: вставляйте изображения, добавляйте и редактируйте автофигуры, графики и диаграммы, тексты и другие элементы.",
+  "FeaturesItemHeadingCollaborative": "Редактор презентаций с возможностями совместной работы",
+  "FeaturesItemTextMakeWork": "Работайте со всеми необходимыми объектами на слайдах: вставляйте изображения, добавляйте и редактируйте автофигуры, диаграммы, текстовые объекты и другие элементы.",
   "FeaturesItemTablet3Bg": "/images/templates/office-for-ios/features/ru/img-tablet-3.png",
   "FeaturesItemTablet3Bg2x": "/images/templates/office-for-ios/features/ru/img-tablet2x-3.png",
   "FeaturesItemMobile3Bg": "/images/templates/office-for-ios/features/ru/img-mobile-3.png",
   "FeaturesItemMobile3Bg2x": "/images/templates/office-for-ios/features/ru/img-mobile2x-3.png",
 
-  "FeaturesItemHeadingOnline": "Заполнение онлайн-форм",
-  "FeaturesItemTextMakeView": "Просматривайте и заполняйте формы. Легко переходите от поля к полю. Сохраняйте результат как файл PDF или DOCX.",
+  "FeaturesItemHeadingOnline": "Заполнитель онлайн-форм",
+  "FeaturesItemTextMakeView": "Просматривайте и заполняйте онлайн-формы. Легко перемещайтесь между полями. Сохраняйте результаты как PDF- или DOCX-файлы.",
   "FeaturesItemTablet4Bg": "/images/templates/office-for-ios/features/ru/img-tablet-4.png",
   "FeaturesItemTablet4Bg2x": "/images/templates/office-for-ios/features/ru/img-tablet2x-4.png",
   "FeaturesItemMobile4Bg": "/images/templates/office-for-ios/features/ru/img-mobile-4.png",
   "FeaturesItemMobile4Bg2x": "/images/templates/office-for-ios/features/ru/img-mobile2x-4.png",
 
-  "FeaturesItemHeadingPDF": "Просмотр PDF и медиаплеер",
-  "FeaturesItemTextMakeViewPDF": "Просматривайте PDF-документы и изображения, воспроизводите аудио- и видеофайлы. Открывайте .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf и др.",
+  "FeaturesItemHeadingPDF": "Просмотрщик PDF и медиаплеер",
+  "FeaturesItemTextMakeViewPDF": "Просматривайте документы в формате PDF и изображения, воспроизводите аудио- и видеофайлы. Открывайте файлы в форматах .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
   "FeaturesItemTablet5Bg": "/images/templates/office-for-ios/features/ru/img-tablet-5.png",
   "FeaturesItemTablet5Bg2x": "/images/templates/office-for-ios/features/ru/img-tablet2x-5.png",
   "FeaturesItemMobile5Bg": "/images/templates/office-for-ios/features/ru/img-mobile-5.png",
   "FeaturesItemMobile5Bg2x": "/images/templates/office-for-ios/features/ru/img-mobile2x-5.png",
 
-  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents — выдающийся продукт, получивший от пользователей оценку 'Очень хорошо'.\"",
-  "MichaelGanss": "Михаэль Ганс,",
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents – выдающийся продукт, получивший от пользователей оценку «Очень хорошо»\".",
+  "MichaelGanss": "Майкл Гансс,",
 
-  "RealTimeCollaboration": "Совместная работа в режиме реального времени",
-  "BeMoreProductive": "Будьте продуктивнее. Подключите приложение к облаку ONLYOFFICE. Делитесь документами для совместного редактирования с коллегами в режиме реального времени. Комментируйте и отслеживайте изменения. Добавляйте графические аннотации.",
+  "RealTimeCollaboration": "Совместная работа онлайн",
+  "BeMoreProductive": "Станьте продуктивнее. Подключите приложение к облаку ONLYOFFICE. Шарьте документы, чтобы редактировать документы совместно в реальном времени. Комментируйте и отслеживайте изменения. Добавляйте графические аннотации.",
   "CollabBackgroundUrl": "/images/templates/office-for-ios/collab/collaboration.ru.png",
   "CollabBackgroundUrl2x": "/images/templates/office-for-ios/collab/collaboration.ru@2x.png",
 
-  "VideoCardHeading": "Откройте для себя ONLYOFFICE Documents, надежный мобильный офисный пакет",
+  "VideoCardHeading": "Откройте для себя ONLYOFFICE Документы - единый мобильный офисный пакет",
 
-  "GetStartedAndChoose": "Начните работу и выберите, где работать",
+  "GetStartedAndChoose": "Выберите способ работы",
 
   "ChooseItemOnDevice": "На устройстве",
-  "ChooseItemManageDocuments": "Управляйте документами на устройстве и редактируйте их офлайн.",
+  "ChooseItemManageDocuments": "Управляйте документами на устройстве и редактируйте их в офлайн-режиме.",
 
   "ChooseItemInOnlyOffice": "В облаке ONLYOFFICE",
-  "ChooseItemAccessDocs": "Получайте доступ к документам из облака ONLYOFFICE и подключенных к нему хранилищ (Dropbox, Google Drive и др.) и работайте совместно.",
+  "ChooseItemAccessDocs": "Получайте доступ к документам из облака ONLYOFFICE и подключенных к нему хранилищ (Dropbox, Google Drive и т.д.) и работайте совместно.",
 
-  "ChooseItemInYourCloud": "В вашем облаке",
-  "ChooseItemConnectNextcloud": "Подключайте Nextcloud, ownCloud или любое другое облако, работающее по WebDAV, и редактируйте документы прямо из приложения.",
+  "ChooseItemInYourCloud": "В другом облаке",
+  "ChooseItemConnectNextcloud": "Подключите Nextcloud, ownCloud или другое облако, поддерживающее протокол WebDAV, и редактируйте документы непосредственно из приложения.",
 
-  "ChooseItemFromOther": "Из других приложений",
+  "ChooseItemFromOther": "Импорт из приложений",
   "ChooseItemImportDocuments": "Импортируйте документы из таких приложений, как iTunes, Файлы и других.",
 
-  "GetMoreWithComplete": "Получите больше с полной мобильной веб-версией",
-  "WorkOnDocumentsWithin": "Работайте с документами в мобильном браузере. Перейдите на веб-портал ONLYOFFICE и получите доступ к большему количеству инструментов для редактирования и совместной работы над документами.",
+  "GetMoreWithComplete": "Расширьте возможности с полнофункциональной мобильной веб-версией",
+  "WorkOnDocumentsWithin": "Работайте с документами в браузере мобильного устройства. Перейдите на веб-портал ONLYOFFICE и получите доступ к расширенным инструментам для редактирования и совместной работы над документами.",
   "GetMoreImage": "/images/templates/office-for-ios/getMore/webversion.ru.png",
   "GetMoreImage2x": "/images/templates/office-for-ios/getMore/webversion.ru@2x.png",
 
-  "LearnMoreHeading": "Узнать больше о ONLYOFFICE Documents для iOS",
+  "LearnMoreHeading": "Узнать больше об ONLYOFFICE Documents для iOS",
 
-  "LearnCardTitleRelease": "Примечания к выпуску",
+  "LearnCardTitleRelease": "Описание изменений",
   "LearnMoreTextMeet": "Встречайте ONLYOFFICE Documents v7.2 для iOS",
-  "LearnMoreSubtitleRead": "Прочитать историю",
+  "LearnMoreSubtitleRead": "Читать историю",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/2022/10/onlyoffice-documents-v7-2-for-ios/",
 
-  "LearnCardTitleHints": "Подсказки",
+  "LearnCardTitleHints": "Советы",
   "LearnMoreTextHandwriting": "Рукописный ввод в ONLYOFFICE Documents",
-  "LearnMoreSubtitleLearn1": "Узнать больше",
+  "LearnMoreSubtitleLearn1": "Подробнее",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/ru/mobile-applications/documents/document-editor/basic-operations/handwriting.aspx",
 
-  "LearnCardTitleDeveloper": "Руководство для разработчиков",
+  "LearnCardTitleDeveloper": "Руководство разработчика",
   "LearnMoreTextHowMobile": "Как работает мобильная интеграция",
-  "LearnMoreSubtitleLearn2": "Узнать больше"
+  "LearnMoreSubtitleLearn2": "Подробнее",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/2022/07/onlyoffice-for-developers-how-the-mobile-integration-works/"
 }

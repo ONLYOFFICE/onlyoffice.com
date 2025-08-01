@@ -616,17 +616,20 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                 {isGetIsQuote ? (
                   <Button
                     onClick={() => setIsModalOpen(true)}
+                    data-testid="get-a-quote-button"
                     fullWidth
                     label={t("GetAQuote")}
                   />
                 ) : isOrderNow ? (
                   <Button
                     onClick={() => setIsModalOpen(true)}
+                    data-testid="get-a-quote-button"
                     fullWidth
                     label={t("OrderNow")}
                   />
                 ) : (
                   <Button
+                    data-testid="buy-now-button"
                     as="a"
                     fullWidth
                     href={product?.url}

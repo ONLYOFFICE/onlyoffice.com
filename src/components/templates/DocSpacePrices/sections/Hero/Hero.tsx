@@ -68,6 +68,7 @@ const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
               free: true,
             }}
             btn={{
+              dataTestId: "startup-start-now-button",
               label: t("StartNow"),
               url: "/docspace-registration",
             }}
@@ -84,6 +85,7 @@ const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
             }}
             isActive={true}
             btn={{
+              dataTestId: "business-get-a-quote-button",
               label: t("GetAQuote"),
               onClick: () => setIsBusinessModalOpen(true),
             }}
@@ -99,6 +101,7 @@ const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
               label: t("PerServer"),
             }}
             btn={{
+              dataTestId: "enterprise-get-a-quote-button",
               label: t("GetAQuote"),
               onClick: () => setIsEnterpriseModalOpen(true),
             }}

@@ -9,9 +9,11 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { useRouter } from "next/router";
 
 const Registration = () => {
   const { t } = useTranslation("certificates");
+  const locale = useRouter();
 
   return (
     <Section
@@ -23,7 +25,7 @@ const Registration = () => {
     >
       <Container>
         <StyledRegistration>
-          <StyledRegistrationContent>
+          <StyledRegistrationContent $locale={locale.locale}>
             <StyledRegistrationIcon />
             <Heading level={2}>
               <Trans

@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Сравнение ONLYOFFICE Docs с MS Office Online, Google Docs, Zoho",
+  "PageDescription": "ONLYOFFICE Docs сочетают в себе все самое лучшее от ведущих офисных пакетов и предлагают еще больше возможностей.",
+
+  "HeroTitle": "<0>ONLYOFFICE Docs</0> - онлайн-редакторы №1 в мире",
+  "HeroText": "Написанные на HTML5 Canvas, редакторы ONLYOFFICE сочетают в себе все самое лучшее от ведущих офисных пакетов и предлагают еще больше возможностей.",
+  "GetItNow": "Скачать",
+  "SeeItInAction": "Как это работает?",
+  "HeroVideoText": "Посмотрите видео, чтобы узнать, почему ONLYOFFICE - это лучший онлайн-офис",
+
+  "ComparisonTitle": "Для детального сравнения <0>ONLYOFFICE Docs</0> с другими офисными пакетами ознакомьтесь с информацией на соответствующей странице",
+  "OODocsVsOfficeOnline": "Сравнение ONLYOFFICE с MS Office Online",
+  "OODocsVsGoogleDocs": "Сравнение ONLYOFFICE с Google Docs",
+  "OODocsVsZohoDocs": "Сравнение ONLYOFFICE с Zoho Docs",
+  "OODocsVsLibreOffice": "Сравнение ONLYOFFICE с LibreOffice",
+  "OODocsVsWPS": "Сравнение ONLYOFFICE с WPS",
+  "OODocsVsAdobe": "Сравнение ONLYOFFICE с Adobe",
+  "OODocsVsHancom": "Сравнение ONLYOFFICE с Hancom",
+
+  "CheckOutTheCompatibility": "Проверьте совместимость с форматами MS Office",
+  "CheckOutTheCompatibilityText": "Мы сохранили <0>файл docx</0> и <1>файл xlsx</1>, созданные в десктопном редакторе Microsoft Word, в формат PDF с помощью других офисных пакетов. Вот что получилось.",
+  "Documents": "Документы (.docx)",
+  "Spreadsheets": "Таблицы (.xlsx)",
+
+  "StillNotConvinced": "Все еще сомневаетесь? Сравните редакторы сами!",
+  "StillNotConvincedText": "Скачайте файлы в формате <0>docx</0> и <1>xlsx</1> и попробуйте отредактировать их с помощью MS Word Online, Google Docs, Zoho Docs, LibreOffice/OpenOffice, WPS Office, Hancom Office и ONLYOFFICE.",
+  "StillNotConvincedLink": "Инструкция по сравнению редакторов",
+  "GetOODocsNow": "Скачать ONLYOFFICE",
+  "TryItInTheCloud": "Используйте в облаке"
+}
