@@ -242,7 +242,7 @@ const Hero = () => {
       background="#f5f5f5"
       desktopSpacing={["80px", "168px"]}
     >
-      <Container>
+      <Container maxWidth="830px">
         <StyledHeroHeading
           textAlign="center"
           level={1}
@@ -342,7 +342,7 @@ const Hero = () => {
             <Input
               value={dataForm.email}
               onChange={(event) => setDataForm({...dataForm, email: event.target.value})}
-              placeholder={t("Email")}
+              placeholder={"name@domain.com"}
               label={t("Email")}
               onBlur={handleCheckStatusEmail}
               onFocus={() => setCheckStatus((prev) => ({ ...prev, email: "default" }))}
@@ -358,7 +358,6 @@ const Hero = () => {
               <Input
                 value={dataForm.portalName}
                 onChange={(event) => setDataForm({...dataForm, portalName: event.target.value})}
-                placeholder={t("PortalName")}
                 label={t("PortalName")}
                 onBlur={handleCheckStatusPortalName}
                 onFocus={() => setCheckStatus((prev) => ({ ...prev, portalName: "default" }))}
@@ -417,6 +416,28 @@ const Hero = () => {
               }
               status={submitStatus}
             />
+            {submitStatus === "success" && (
+              <Text size={3} color="#666666">
+                <Trans
+                  t={t}
+                  i18nKey={"SuccessRequestText"}
+                  components={[
+                    <Text
+                      key="0"
+                      as="span"
+                      fontWeight={700}
+                    />,
+                  ]}
+                />
+              </Text>
+            )}
+            {submitStatus === "error" && (
+              <Text
+                size={3}
+                color="#666666"
+                label={t("ErrorRequestText")}
+              />
+            )}
           </StyledHeroForm>
         </StyledHeroFormWrapper>
       </Container>
