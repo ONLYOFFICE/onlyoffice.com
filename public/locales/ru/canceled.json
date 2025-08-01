@@ -1,0 +1,63 @@
+{
+  "AccountCanceledPageTitle": "Ваш аккаунт ONLYOFFICE Personal удален | ONLYOFFICE",
+  "AccountCanceledPageDescription": "Почему вы решили удалить аккаунт ONLYOFFICE Personal?",
+
+  "InstallCanceledPageTitle": "Серверная версия ONLYOFFICE удалена | ONLYOFFICE",
+  "InstallCanceledPageDescription": "Почему вы решили удалить ONLYOFFICE со своего сервера?",
+
+  "RegistrationCanceledPageTitle": "Подписка на ONLYOFFICE отменена. | ONLYOFFICE",
+  "RegistrationCanceledPageDescription": "Почему вы решили отменить подписку на ONLYOFFICE?",
+
+  "DesktopUninstalledPageTitle": "Десктопные редакторы ONLYOFFICE удалены. | ONLYOFFICE",
+  "DesktopUninstalledPageDescription": "Почему вы решили удалить десктопные редакторы ONLYOFFICE?",
+
+  "CanceledHeroTitle": "Жаль, что вы уходите!",
+
+  "WhyDidYouDecideToUninstallOnlyoffice": "Почему вы решили удалить ONLYOFFICE?",
+  "SelectAllThatApply": "Можно выбрать несколько вариантов",
+  "ExperiencedTechnicalProblems": "Возникли технические проблемы",
+  "NeedMoreStorageSpace": "Нужно больше места на диске",
+  "DidntFindNecessaryFeatures": "Не было нужных функций",
+  "PrivacyConcernsLegalViolation": "Проблемы с безопасностью",
+  "IRarelyWorkInBrowser": "Редко пользуюсь",
+  "Other": "Другое",
+
+  "SwitchedToTheCloudVersion": "Перешел/перешла на облачную версию",
+  "IRarelyUseOnlyoffice": "Редко пользуюсь",
+
+  "IWillUseAnotherDesktopSoftware": "Планирую использовать другое приложение",
+  "IRarelyUseOnlyofficeDesktopEditors": "Редко пользовался/пользовалась",
+
+  "SwitchedToOnPremises": "Перешел/перешла на серверную версию",
+
+  "WhatShouldWeImproveInOnlyofficePersonal": "Что мы можем улучшить в ONLYOFFICE Personal?",
+  "WhatShouldWeImproveInOnlyoffice": "Что мы можем улучшить в ONLYOFFICE?",
+  "WhatShouldWeImproveInOnlyofficeDesktopEditors": "Что мы можем улучшить в десктопных редакторах ONLYOFFICE?",
+  "YourMessageHere": "Ваши предложения",
+  "Email": "Email",
+  "EmailIsEmpty": "Поле Email не заполнено",
+  "EmailIsIncorrect": "Неверный Email",
+  "ByClickingSendFeedback": "Нажав кнопку \"Отправить отзыв\", вы принимаете наше <0>Соглашение об уровне обслуживания</0> и <1>Положение о конфиденциальности</1>.",
+  "SendFeedback": "Отправить отзыв",
+
+  "ThanksForYourMessage": "Спасибо за отзыв.",
+  "IfYouDecideToGetBack": "Вот купон* на <0>скидку 10%</0> на облако ONLYOFFICE, если вы решите вернуться к нам. Купон можно отдать другу.",
+  "WhyTakeBusinessToOnlyofficeCloudToday": "Плюсы облака от ONLYOFFICE",
+  "FullyGDPRCompliantCloudOffice": "Соответствие GDPR",
+  "ReducedMaintenanceCosts": "Выгодные цены",
+  "SecureAndReliableHosting": "Надежный хостинг",
+  "AutomaticUpdates": "Регулярные обновления и техподдержка",
+  "ScalableCostEffectiveSolution": "Масштабируемость",
+  "EntirelyFree": "Бесплатно для нон-профитов и школ",
+  "TheCoupon": "*Действует 12 месяцев.",
+
+  "DontLeave": "Вы можете использовать бесплатное персональное облако ONLYOFFICE с редакторами документов или купить наше облако <0>со скидкой 10%</0>",
+  "WhyChooseFreePersonalOnlyofficeCloudToday": "Плюсы ONLYOFFICE Personal",
+  "FreeAndSecureCloudStorage": "Бесплатное и безопасное хранилище",
+  "HighestCompatibility": "Максимальная совместимость с форматами Microsoft",
+  "DocumentEditing": "Редактирование документов и совместная работа в браузере",
+  "ConnectionOfPopular": "Подключение сторонних хранилищ: Dropbox, OneDrive, и других",
+  "PleaseNote": "*Купон действует 12 месяцев.",
+
+  "HopeToSeeYouAgain": "Спасибо за отзыв! Надеемся однажды снова увидеть вас среди наших пользователей."
+}

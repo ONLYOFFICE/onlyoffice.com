@@ -16,6 +16,7 @@ export const tabsInfo: IButtonInfo[] = [
     docType: "word",
     mode: "edit",
     uiTheme: "theme-light",
+    heading: "ActionsDemoModalHeadingOpenDocx",
     text: "ActionsEditDocx",
     isCollaborate: false,
     demoCodeFirst: `<!DOCTYPE html>
@@ -56,6 +57,7 @@ export const tabsInfo: IButtonInfo[] = [
     docType: "cell",
     mode: "edit",
     uiTheme: "theme-light",
+    heading: "ActionsDemoModalHeadingOpenXlsx",
     text: "ActionsEditXlsx",
     isCollaborate: false,
     demoCodeFirst: `<!DOCTYPE html>
@@ -96,6 +98,7 @@ export const tabsInfo: IButtonInfo[] = [
     docType: "slide",
     mode: "edit",
     uiTheme: "theme-light",
+    heading: "ActionsDemoModalHeadingOpenPptx",
     text: "ActionsEditPptx",
     isCollaborate: false,
     demoCodeFirst: `<!DOCTYPE html>
@@ -135,6 +138,7 @@ export const tabsInfo: IButtonInfo[] = [
     docType: "pdf",
     mode: "edit",
     uiTheme: "theme-light",
+    heading: "ActionsDemoModalHeadingOpenPdf",
     text: "ActionsEditPdf",
     isCollaborate: false,
     demoCodeFirst: `<!DOCTYPE html>
@@ -174,6 +178,7 @@ export const tabsInfo: IButtonInfo[] = [
     docType: "pdf",
     mode: "edit",
     uiTheme: "theme-light",
+    heading: "ActionsDemoModalHeadingOpenCreateForm",
     text: "ActionsCreateForm",
     isCollaborate: false,
     demoCodeFirst: `<!DOCTYPE html>
@@ -215,6 +220,7 @@ export const tabsInfo: IButtonInfo[] = [
     docType: "pdf",
     mode: "view",
     uiTheme: "theme-light",
+    heading: "ActionsDemoModalHeadingOpenFill",
     text: "ActionsFillInPdfForm",
     isCollaborate: false,
     demoCodeFirst: `<!DOCTYPE html>
@@ -260,6 +266,7 @@ export const tabsInfo: IButtonInfo[] = [
     docType: "word",
     mode: "edit",
     uiTheme: "theme-light",
+    heading: "ActionsDemoModalHeadingOpenCollaborate",
     text: "ActionsCollaborate",
     isCollaborate: true,
     demoCodeFirst: `<!DOCTYPE html>

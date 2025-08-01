@@ -1,0 +1,1 @@
+export { WebinarsTemplate } from "./Webinars";

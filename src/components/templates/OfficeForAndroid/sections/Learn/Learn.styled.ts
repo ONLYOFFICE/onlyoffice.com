@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
+
+const StyledLearnSection = styled(Section)<{
+  $isDisplay: boolean;
+}>`
+  display: ${({ $isDisplay }) => ($isDisplay ? "block" : "none")};
+`
 
 const StyledLearnHeading = styled(Heading)`
   @media ${device.tabletS} {
@@ -57,4 +64,4 @@ const StyledLearnList = styled.div`
   }
 `;
 
-export { StyledLearnHeading, StyledLearnList };
+export { StyledLearnSection, StyledLearnHeading, StyledLearnList };

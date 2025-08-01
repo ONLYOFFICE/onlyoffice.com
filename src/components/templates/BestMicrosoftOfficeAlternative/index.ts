@@ -1,0 +1,1 @@
+export { BestMicrosoftOfficeAlternativeTemplate } from "./BestMicrosoftOfficeAlternative";

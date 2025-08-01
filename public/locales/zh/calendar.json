@@ -1,0 +1,24 @@
+{
+  "PageTitle": "保持井然有序的时间管理工具 | ONLYOFFICE",
+  "PageDescription": "创建个人和团队时间表，轻松管理日历活动。",
+
+  "HeroTitle": "高效的时间管理工具",
+  "HeroText": "让您的团队更加有序和高效",
+  "GetItNow": "立即获取",
+
+  "IndividualOrGroup": "个人或团队日历",
+  "IndividualOrGroupText": "创建个人时间表，<0>共享日历</0>并授予指定人员访问权限或安排与整个团队的会议。",
+  "IndividualOrGroupImage": "/images/templates/calendar/features/zh/individual_or_group.png",
+  "SimpleScheduling": "轻松安排不同事件类型的日程",
+  "SimpleSchedulingText": "创建全天、多天和重复事件。在您的时间表中添加待办事项。向任意用户发送邀请。设置事件提醒，不错过任何事情。",
+  "SimpleSchedulingImage": "/images/templates/calendar/features/zh/simple_scheduling.png",
+  "Synchronization": "与第三方应用软件同步",
+  "SynchronizationText": "导入事件、从Google、Apple iCal、Yahoo！添加iCal Feed、使用CalDAV协议同步日历，从一个平台即可跟踪所有事件。",
+  "SynchronizationImage": "/images/templates/calendar/features/zh/synchronization.png",
+  "CloseIntegration": "紧密集成ONLYOFFICE所有模块",
+  "CloseIntegrationText": "跟踪您的重要事件、项目和CRM任务，收取用户生日的提醒通知。发送和接收重要日历事件的邀请。",
+  "CloseIntegrationImage": "/images/templates/calendar/features/zh/close_integration.png",
+
+  "EasyToUse": "软件易于使用，并提供一系列对业务友好的协作功能。",
+  "PcMag": "PC Mag"
+}

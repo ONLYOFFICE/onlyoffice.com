@@ -1,0 +1,1 @@
+export { DocumentEditorComparisonTemplate } from "./DocumentEditorComparison";

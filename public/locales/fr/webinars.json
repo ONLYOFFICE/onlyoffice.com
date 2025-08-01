@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Regarder les webinaires ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "Inscrivez-vous à nos webinaires pour apprendre à travailler efficacement avec ONLYOFFICE",
+
+  "HeroHeadingWatch": "Regarder les <0>webinaires</0> de ONLYOFFICE",
+  "HeroTextTune": "Accédez à nos webinaires en direct et découvrez les meilleures façons de travailler avec ONLYOFFICE",
+
+  "UpcomingHeading": "Prochains webinaires en direct",
+
+  "UpcomingModalProduct": "Produit",
+  "UpcomingModalBy": "Par",
+  "UpcomingModalLanguage": "Langue",
+  "UpcomingModalPlease": "Veuillez remplir tous les champs marqués d'un astérisque (*). Vous recevrez un message électronique avec le lien vers le webinaire sélectionné.",
+  "UpcomingModalFullName": "Nom complet",
+  "UpcomingModalCompanyName": "Entreprise",
+  "UpcomingModalEmail": "Courrier électronique",
+  "UpcomingModalSendQuestions": "Envoyer des questions pour le webinaire",
+  "UpcomingModalPlaceholderName": "Nom Prénom",
+
+  "FullNameIsIncorrect": "Le champ Nom complet est incorrecte",
+  "FullNameIsEmpty": "Le champ Nom complet est vide",
+
+  "CompanyNameIsEmpty": "Le champ Entreprise est vide",
+
+  "EmailIsEmpty": "Le champ Email est vide",
+  "EmailIsIncorrect": "L'adresse email est incorrecte",
+
+  "AgreementByClicking": "En cliquant Visionner le webinaire, vous reconnaissez et acceptez le <0>SLA</0> et la <1>Politique de confidentialité</1>.",
+
+  "ModalSendButton": "Visionner le webinaire",
+  "ModalCloseButton": "Annuler",
+
+  "RequestSuccessfull": "Vous vous êtes inscrit avec succès au webinaire ONLYOFFICE. <br>  Le lien vers le webinaire a été envoyé à votre adresse électronique.",
+
+  "WatchHeading": "Regarder à la demande",
+  "WatchText": "Vous avez manqué un webinaire ? Regarder une rediffusion à tout moment.",
+  "WatchNow": "Regarder maintenant",
+
+  "en": "En anglais",
+  "ja": "En japonais",
+  "zh": "En chinois",
+  "fr": "En français",
+  "de": "En allemand",
+  "es": "En espagnol",
+  "pt": "En portugais",
+  "it": "En italien",
+  "cs": "En tchèque",
+  "nl": "En néerlandais",
+  "ru": "En russe",
+  "sr": "En serbe",
+
+  "ContributeHeading": "Faites-nous part de vos idées",
+  "ContributeTextHave": "Vous avez une bonne idée du webinaire que nous devons organiser ?",
+  "ContributeTextGet": "Contactez notre équipe à l'adresse suivante : <0>press@onlyoffice.com</0> ou envoyez-nous un message privé sur <1>Twitter</1>."
+}

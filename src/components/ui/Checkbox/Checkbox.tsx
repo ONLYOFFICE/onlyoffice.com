@@ -21,6 +21,7 @@ const Checkbox = forwardRef<HTMLInputElement, ICheckbox>(
       align = "top",
       size,
       onChange,
+      ...rest
     },
     ref,
   ) => {
@@ -38,6 +39,7 @@ const Checkbox = forwardRef<HTMLInputElement, ICheckbox>(
           value={value}
           onChange={onChange}
           $checked={checked}
+          {...rest}
         />
         <StyledCheckboxIcon $checked={checked} />
         <StyledCheckboxLabel $size={size}>{label}</StyledCheckboxLabel>

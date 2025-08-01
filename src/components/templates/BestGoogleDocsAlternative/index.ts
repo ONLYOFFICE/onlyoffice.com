@@ -1,0 +1,1 @@
+export { BestGoogleDocsAlternativeTemplate } from "./BestGoogleDocsAlternative";

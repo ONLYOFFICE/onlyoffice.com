@@ -1,0 +1,53 @@
+{
+  "PageTitle": "API автоматизации | ONLYOFFICE",
+  "PageDescription": "Используйте элементы пользовательского интерфейса, чтобы взаимодействовать с офисными документами извне.",
+
+  "HeroTitle": "API автоматизации ONLYOFFICE",
+  "HeroSubtitle" : "Размещайте элементы управления в интерфейсе вашей платформы и управляйте содержимым документа извне.",
+  "HeroButton" : "ЗАПРОСИТЬ БЕСПЛАТНУЮ ДЕМО-ВЕРСИЮ",
+
+  "WhatIsTitle" : "Что такое <0>API автоматизации</0>",
+  "WhatIsSubtitle" : "<0>API автоматизации ONLYOFFICE</0> с классом «Коннектор» обеспечивает возможность взаимодействия с офисными документами извне. Вы можете получать изменения в файлах, используя собственные элементы интерфейса.",
+  "CheckExamples" : "Посмотреть примеры",
+  "Webinar" : "API автоматизации ONLYOFFICE [Вебинар 2024]",
+  "WatchOurWebinar" : "Посмотреть наш вебинар",
+
+  "WhatAutomationAPICan" : "Что может <0>API автоматизации</0>?",
+  "MostPopularExamples" : "Наиболее популярные примеры",
+  "WorkingWithComments" : "Работа с комментариями",
+  "WorkingWithReview" : "Работа с просмотром изменений",
+  "FillingOutForms" : "Заполнение форм",
+  "CollectsAllTheCommentsFrom" : "Собирает все комментарии из документа и отображает их в пользовательском интерфейсе.",
+  "ThereAreNoComments" : "В документе нет комментариев.",
+  "SendReply" : "ДОБАВИТЬ ОТВЕТ",
+  "AddReply" : "ДОБАВИТЬ ОТВЕТ",
+  "Delete" : "УДАЛИТЬ",
+  "SendComment" : "ДОБАВИТЬ КОММЕНТАРИЙ",
+  "AddComment" : "ДОБАВИТЬ КОММЕНТАРИЙ",
+  "EnterYourReplyHere" : "Напишите ответ здесь",
+  "EnterYourCommentHere" : "Напишите комментарий здесь",
+  "ManagesReviewProcess" : "Управляет процессом рецензирования из внешнего источника.",
+  "Accept" : "ПРИНЯТЬ",
+  "Reject" : "ОТКЛОНИТЬ",
+  "FillsInTheEmptyCells" : "Заполняет пустые ячейки в заданной форме.",
+  "ChooseExample" : "Выбрать пример",
+
+  "ReadyToUse" : "Готовый к использованию пример: интеграция Odoo",
+  "UsingAutomationAPI" : "Используя API автоматизации, ONLYOFFICE предоставляет пользователям Odoo возможность создавать и заполнять шаблоны данными, доступными в Odoo.",
+  "Screen1ImgUrl" : "/images/templates/automation-api/carousel/ru/create_new_form_templates_for_any_odoo_module.png",
+  "Screen1ImgUrl2x" : "/images/templates/automation-api/carousel/ru/create_new_form_templates_for_any_odoo_module@2x.png",
+  "Screen2ImgUrl" : "/images/templates/automation-api/carousel/ru/edit_the_existing_form_templates.png",
+  "Screen2ImgUrl2x" : "/images/templates/automation-api/carousel/ru/edit_the_existing_form_templates@2x.png",
+  "Screen3ImgUrl" : "/images/templates/automation-api/carousel/ru/fill_templates_out_with_data_available_in_odoo.png",
+  "Screen3ImgUrl2x" : "/images/templates/automation-api/carousel/ru/fill_templates_out_with_data_available_in_odoo@2x.png",
+  "LearnMore" : "Узнать больше",
+
+  "HowToGetONLYOFFICEAutomationAPI": "Как получить API автоматизации ONLYOFFICE",
+  "AutomationAPISsAPartOf": "API автоматизации является частью <0>ONLYOFFICE Docs Developer</0>, который предоставляет лучший в своем классе офисный онлайн пакет с редакторами текстовых документов, электронных таблиц, презентаций и PDF-файлов, предназначенный для интеграции в ваше веб-приложение или платформу. Доступ к API автоматизации предоставляется в составе расширенной <1>лицензии ONLYOFFICE Docs Developer</1>.",
+  "GetA30DayTrial": "Получите <0>30-дневную пробную версию</0> ONLYOFFICE Docs Developer с включенным API автоматизации для бесплатного тестирования.",
+  "DownloadNow": "Скачать сейчас",
+
+  "HaveAnyQuestions": "Возникли вопросы, касающиеся API автоматизации ONLYOFFICE? Мы будем рады предоставить консультацию и обсудить все детали.",
+  "HaveAnyQuestionsText": "Команда экспертов готова помочь вам на каждом этапе. <2 /> <2 /> Хотите задать вопрос до покупки? Свяжитесь с нами по адресу: <0>sales@onlyoffice.com</0> или назначьте время, чтобы наш специалист позвонил вам. <2 /> <2 /> В случае возникновения технических проблем свяжитесь с нами по адресу: <1>support@onlyoffice.com</1>.",
+  "GetInTouch": "СВЯЗАТЬСЯ С НАМИ"
+}

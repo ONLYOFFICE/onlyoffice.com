@@ -1,0 +1,36 @@
+{
+  "PageTitle": "API de conversión | ONLYOFFICE",
+  "PageDescription": "Una API para convertir todo tipo de documentos ofimáticos",
+
+  "HeroTitle": "Conversión de documentos potente",
+  "HeroText": "Una sola API para convertir todo tipo de documentos ofimáticos: textos, hojas, diapositivas, formularios, PDFs, ebooks y más",
+  "GetStarted": "Empezar",
+
+  "ExploreExamples": "Explorar ejemplos listos para usar",
+  "OOConversionApiTitle": "La API de conversión de ONLYOFFICE se utiliza en integraciones populares",
+  "ConvertingFormats": "Conversión de formatos no OOXML a OOXML para su edición posterior",
+  "SavingDocuments": "Guardar documentos desde el almacenamiento de archivos en varios formatos",
+
+  "WhyToUseOOConversionApi": "Por qué utilizar la API de conversión de ONLYOFFICE",
+  "SupportForAllPopularFormats": "Soporte para todos los formatos populares",
+  "CreatePdfs": "Crea PDFs desde tus documentos, hojas o diapositivas, convierte libros de texto en ebooks, convierte presentaciones en imágenes y mucho más. ONLYOFFICE soporta más de 50 <0>formatos</0> de documentos diferentes.",
+  "Security": "Seguridad",
+  "TheOpenSourceCode": "El código abierto de ONLYOFFICE se encuentra en GitHub para garantizar la transparencia y la confiabilidad. JSON Web Token protege los documentos del acceso no autorizado. Más información sobre las <0>medidas de seguridad</0>.",
+  "AdvancedSettings": "Ajustes avanzados",
+  "AddConversionSettings": "Añade los ajustes de conversión para definir los caracteres delimitadores al convertir archivos csv, el modo de visualización de la moneda por defecto al convertir hojas de cálculo, establece el tamaño de la página y los márgenes del archivo PDF de salida, y mucho más. Consulta la documentación de la API para conocer todas las opciones disponibles.",
+  "HighQualityConversion": "Conversión de alta calidad",
+  "OOConstantlyImproveTheService": "ONLYOFFICE mejora constantemente el servicio para proporcionar los mejores resultados posibles para todos los tipos de conversión. Utiliza <0>nuestro convertidor online</0> e intenta convertir tus propios archivos de documentos.",
+
+  "EasilyBuild": "Crea fácilmente un convertidor de documentos en línea",
+  "UsingOOConversionApi": "Utilizando la API de conversión de ONLYOFFICE",
+  "CheckTheTutorial": "Consultar el tutorial",
+  "DocumentConverterLink": "https://www.onlyoffice.com/blog/es/2023/02/convertidor-con-la-api-de-conversion-onlyoffice",
+
+  "PartOfOODocsDeveloper": "La API de conversión de ONLYOFFICE – parte de ONLYOFFICE Docs Developer",
+  "BringAdvancedDocument": "Ofrece a los usuarios finales un procesamiento avanzado de documentos con el servicio de conversión bajo tu propia marca. <0>Más información</0>",
+  "ConversionApiLinkSubject": "Solicitud%20de%20la%20API%20de%20conversión%20de%20ONLYOFFICE",
+
+  "HaveAnyQuestions": "¿Tienes alguna pregunta?",
+  "HaveAnyQuestionsText": "Estaremos encantados de ayudarte y discutir todos los detalles.",
+  "GetInTouch": "CONTÁCTANOS"
+}

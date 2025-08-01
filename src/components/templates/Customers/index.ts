@@ -1,0 +1,1 @@
+export { CustomersTemplate } from "./Customers";

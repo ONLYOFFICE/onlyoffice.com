@@ -1,0 +1,28 @@
+{
+  "PageTitle": "Hancom Officeに代わる最適な製品",
+  "PageDescription": "ONLYOFFICE DocsとHancom Officeを比較しましょう。同じ文書を両方のプラットフォームで開き、その結果を確認して見ませんか。",
+
+  "HeroTitle": "<0>ONLYOFFICE Docsは、</0>最適のHancom Officeの代替品",
+  "GetOODocsNow": "今すぐ ONLYOFFICE を購入",
+  "UseInCloud": "クラウドで使用",
+  "CompatibleWithMicrosoftOfficeFormats": "Microsoft Office フォーマットに完全適合",
+
+  "ReasonsTitle": "ONLYOFFICE DocsがHancom Officeの代替品として最適である<0>7つの理由</0>",
+  "OpenSource": "無料かつオープンソース",
+  "OpenSourceText": "ONLYOFFICEは、オープンソースのソリューションをユーザーに提供しています。私たちのソースコードはGitHubに掲載されており、透明性と信頼性を保証しています。そのコードは、いつでもチェックすることができます",
+  "DesktopApp": "ウェブ、デスクトップ、モバイル",
+  "DesktopAppText": "ONLYOFFICEでは、あらゆるブラウザやOSからのオンライン作業、Windows、Linux、macOS用の無料デスクトップアプリケーションによるオフラインでの文書編集、Android、iOS用の無料モバイルアプリケーションの利用が可能です。",
+  "DocsSheetsSlides": "ドキュメント、シート、スライド、フォーム、PDF",
+  "DocsSheetsSlidesText": "あらゆる複雑さのテキスト文書やスプレッドシートの編集と共同作業、魅力的なプレゼンテーションの作成、PDFの表示と注釈。プロフェッショナルなフォームやテンプレートをゼロから、または既存のDOCXファイルから作成し、他のユーザーに記入してもらい、記入可能なPDFファイルとして保存できます。",
+  "Security": "セキュリティ",
+  "SecurityText": "ONLYOFFICEは、お客様のサーバーに導入することで、データを完全に管理することができます。複数のセキュリティツールやサービスにより、あらゆる脅威から身を守ることができます。プライベートルームでは、常に暗号化された状態でドキュメントの保存、編集、共同執筆が可能になっています。",
+  "AIHelper": "AIヘルパー",
+  "AIHelperText": "AIアシスタントプラグインを利用して、テキストを使った作業を促進しましょう：単語分析を実行し、未知の単語の意味を探り、文章、画像、キーワードを生成し、ストーリーを要約して翻訳し、同義語を見つけます。",
+  "Flexibility": "柔軟性",
+  "FlexibilityText": "ルームベース環境ONLYOFFICE DocSpaceの一部として、Nextcloud、Alfresco、Confluence、Seafileなどの同期・共有サービスやECMサービスの一部として、または自社で構築するソリューションに統合するなど、オンラインエディタをどのように使用するかは自由です。",
+  "Seamless": "シームレスなオンラインコラボレーション",
+  "SeamlessText": "共同編集、コメント、レビュー、フォームへの記入、カスタムフィルターなどのためにドキュメントを共有することができます。ONLYOFFICE Docsは、文字レベルと段落レベルの共同編集モード、レビューと変更履歴、バージョン履歴、コメントとメンション、ビルトインチャットとTelegramの統合、音声通話とビデオ通話のプラグインをユーザーに提供します。",
+
+  "PresentationTitle": "このプレゼンテーションを見て、両方のオフィス プログラムの違いを知る:",
+  "WhatWentWrong": "Hancom が間違っていることとは？詳細は、<0>ここをクリック</0> します"
+}

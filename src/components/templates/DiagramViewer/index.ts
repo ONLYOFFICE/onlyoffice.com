@@ -1,0 +1,1 @@
+export { DiagramViewerTemplate } from "./DiagramViewer";

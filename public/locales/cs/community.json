@@ -1,0 +1,24 @@
+{
+  "PageTitle": "Firemní síť pro týmovou spolupráci | ONLYOFFICE",
+  "PageDescription": "Zlepšete týmovou spolupráci s blogy, fórami, záložkami, wiki.",
+
+  "HeroTitle": "Zlepšete týmovou komunikaci",
+  "HeroText": "Snadno použitelný software s řadou funkcí podporujících spolupráci.<br/><1>Od PCMag</1>",
+  "GetItNow": "Získejte ONLYOFFICE",
+
+  "SharingCompanyNews": "Sdílení firemních zpráv/oznámení",
+  "SharingCompanyNewsText": "Vytvořte firemní zpravodajskou desku pro zveřejňování nejnovějších firemních zpráv, objednávek a oznámení. Přidejte a sdílejte záložky s užitečnými nebo zajímavými zdroji se svými kolegy.",
+  "SharingCompanyNewsImage": "/images/templates/community/features/cs/sharing_company_news.png",
+  "CreatingPolls": "Tvorba průzkumů a anket",
+  "CreatingPollsText": "Provádějte výzkum, shromažďujte data nebo získávejte zpětnou vazbu od ostatních uživatelů pomocí anket a průzkumů. Udělejte váš příspěvek na fóru interaktivnější přidáním dotazníků.",
+  "CreatingPollsImage": "/images/templates/community/features/cs/creating_polls.png",
+  "MaintainingBlogs": "Udržování firemního blogu a fór",
+  "MaintainingBlogsText": "Sdílejte své nápady, znalosti a zkušenosti s ostatními přidáváním příspěvků do firemního blogu, debatujte o problémech probíraných na diskusních fórech.",
+  "MaintainingBlogsImage": "/images/templates/community/features/cs/maintaining_blogs.png",
+  "InstantMessaging": "Aplikace pro rychlé zasílání zpráv",
+  "InstantMessagingText": "Komunikujte s ostatními uživateli v reálném čase, pořádejte konference v chatovnách, používejte mailové seznamy pro odesílání zpráv více lidem najednou.",
+  "InstantMessagingImage": "/images/templates/community/features/cs/instant_messaging.png",
+
+  "EasyToUse": "Snadno použitelný software s řadou funkcí podporujících spolupráci.",
+  "PcMag": "PC Mag"
+}
