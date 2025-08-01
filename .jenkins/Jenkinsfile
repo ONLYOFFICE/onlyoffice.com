@@ -28,6 +28,7 @@ def docspace_domain = ""
 def docspace_registration_api = ""
 def next_public_testing_on = ""
 def core_base_domain = ""
+def google_search_url = ""
 
 switch(BRANCH_NAME) {
   case "test_deploy":
@@ -59,6 +60,7 @@ switch(BRANCH_NAME) {
     docspace_registration_api = "https://onlyoffice"
     next_public_testing_on = "true"
     core_base_domain = "teamlab.info"
+    google_search_url = "https://www.googleapis.com/customsearch/v1"
     break
   case "production_deploy":
     aws_region="us-east-1"
@@ -115,6 +117,7 @@ pipeline {
         docspace_registration_api = "${docspace_registration_api}"
         next_public_testing_on = "${next_public_testing_on}"
         core_base_domain = "${core_base_domain}"
+        google_search_url = "${google_search_url}"
       }
       steps {
         withCredentials([usernamePassword(credentialsId: 'onlyoffice_site_test_mysql_credentials', 
@@ -133,7 +136,9 @@ pipeline {
                         string(credentialsId: 'onlyoffice_site_test_document_server_token', variable: 'onlyoffice_site_test_document_server_token'),
                         string(credentialsId: 'onlyoffice_site_test_thirdparty_domain', variable: 'onlyoffice_site_test_thirdparty_domain'),
                         string(credentialsId: 'onlyoffice_site_test_core_machinekey', variable: 'onlyoffice_site_test_core_machinekey'),
-                        string(credentialsId: 'onlyoffice_site_test_google_analytics_url', variable: 'onlyoffice_site_test_google_analytics_url')]) {          
+                        string(credentialsId: 'onlyoffice_site_test_google_analytics_url', variable: 'onlyoffice_site_test_google_analytics_url'),
+                        string(credentialsId: 'onlyoffice_site_test_google_search_cx', variable: 'onlyoffice_site_test_google_search_cx'),
+                        string(credentialsId: 'onlyoffice_site_test_google_search_key', variable: 'onlyoffice_site_test_google_search_key')]) {          
         sh '''
           sed -i "s^var_notification_app_name^$src_domain^" .jenkins/build.sh
           cp .jenkins/build.sh .jenkins/site_build.sh
@@ -183,7 +188,12 @@ pipeline {
           sed -i "s^var_docspace_registration_api^$docspace_registration_api^" .env
 
           sed -i "s^var_thirdparty_domain^$onlyoffice_site_test_thirdparty_domain^" .env
+          
           sed -i "s^var_google_analytics_url^$onlyoffice_site_test_google_analytics_url^" .env
+          sed -i "s^var_google_search_url^$google_search_url^" .env
+          sed -i "s^var_google_search_cx^$onlyoffice_site_test_google_search_cx^" .env
+          sed -i "s^var_google_search_key^$onlyoffice_site_test_google_search_key^" .env
+
           sed -i "s^var_core_base_domain^$core_base_domain^" .env
           sed -i "s^var_core_machinekey^$onlyoffice_site_test_core_machinekey^" .env
           
