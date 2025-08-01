@@ -1,0 +1,51 @@
+{
+  "PageTitle": "Online kancelarija za Drupal | ONLYOFFICE",
+  "PageDescription": "Rad na kancelarijskim datotekama unutar Drupala",
+
+  "OnlineOfficeForConnector": "Online kancelarija za <0>Drupal</0>",
+  "Subheader": "Rad na kancelarijskim datotekama unutar Drupal-a",
+  "GetItNow": "Počnite",
+  "RequestFreeDemo": "ZAHTEV ZA BESPLATAN DEMO",
+  "WorkWithinConnector": "ONLYOFFICE <0>DocSpace aplikacija</0> za Drupal",
+  "DocumentsScreen1Header": "Ugradite kancelarijske dokumente na vašu Drupal veb stranicu",
+  "DocumentsScreen1Tab1Label": "Kreirajte, otpremajte i ugrađujte dokumenta, tabele, prezentacije, PDF-ove ili na vašu veb stranicu",
+  "DocumentsScreen1Tab2Label": "Ugradite celu sobu na svoju veb stranicu omogućavajući posetiocima da pregledaju dokumente direktno u pregledaču",
+  "DocumentsScreen1Tab3Label": "Integrišite kompleksne PDF obrasce kako biste ih mogli popunjavati online. Automatski prikupljajte i analizirajte podatke",
+  "DocumentsScreen1Tab4Label": "Sprečite preuzimanje, štampanje i kopiranje dokumenata sa vašeg sajta",
+  "soon": "uskoro",
+
+  "DocsAppHeading": "ONLYOFFICE <0>Dokumenti aplikacija</0> za Drupal",
+  "DocumentsScreen2Header": "Efikasno upravljajte dokumentima sa vašeg Drupal naloga",
+  "DocumentsScreen2Tab1Label": "Kreirajte siguran prostor za sva svoja dokumenta. Lako mu pristupite bilo kad i bilo gde.",
+  "DocumentsScreen2Tab2Label": "Organizujte svoje lične datoteke i kreirajte prostorije za svoja poslovna dokumenta",
+  "DocumentsScreen2Tab3Label": "Obezbedite fleksibilne dozvole za pristup: uređivanje, komentarisanje, pregled ili samo prikaz",
+  "DocumentsScreen2Tab4Label": "Izmenite i sarađujte na dokumentima sa drugim korisnicima Drupala na mreži",
+  "MarketplaceConnectorTitle": "Napravljen da bez problema radi u Drupalu",
+  "MarketplaceConnectorDescription": "Instalirajte ONLYOFFICE DocSpace aplikaciju za Drupal sa Drupal Marketplace-a.",
+  "GetStarted": "Počnite",
+
+  "DocsAppHeader": "Dodajte kancelarijske dokumente na svoje Drupal stranice",
+  "DocsAppTab1Label": "Pregled dokumenata na javnim stranicama",
+  "DocsAppTab2Label": "Uredite dokumente, listove, slajdove, obrasce i PDF-ove u modulu Drupal Media",
+  "DocsAppTab3Label": "Saradnja na kancelarijskim datotekama u realnom vremenu sa drugim korisnicima Drupala",
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "Reason1": "Robustan skup alata za uređivanje, formatiranje i stilizovanje. <0>Ugrađeni AI pomoćnici</0> (ChatGPT ili ZhiPu Copilot).",
+  "Reason2": "Ko-uređivanje <0>u realnom vremenu</0> i zaključavanje paragrafa, pregled, istorija verzija, poređenje dokumenata, komentari i pominjanja.",
+  "Reason3": "<0>Ugrađeni čet</0> i integracija Telegram. Jitsi i Rainbow dodaci za komunikaciju u realnom vremenu.",
+  "Reason4": "Podrška za više od <0>50 formata datoteka</0>. Potpuno kompatibilan sa MS Office formatima: DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Poboljšana bezbednost.</0> Fleksibilna prava pristupa i JWT. Praćenje aktivnosti i izveštaji o reviziji. Enkripcija u mirovanju i u tranzitu. Otvoreni izvorni kod.",
+  "Reason6": "<0>Slobodan plan za početak.</0> Poslovni plan za više administratora, veći prostor za skladištenje, poboljšanu sigurnost i profesionalnu podršku. Self-hosted rešenje za potpunu kontrolu nad vašim podacima.",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1Docs": "Postavite <0>ONLYOFFICE Docs</0> na svoj sopstveni server ili se prijavite za <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Nabavite aplikaciju za integraciju sa <0>Drupal Marketplace</0>.",
+  "HowToStartStep3": "Otpremite i konfigurišite aplikaciju za integraciju.",
+  "HowToStartStep1Docspace": "Kreirajte svoj besplatni <0>DocSpace</0> nalog.",
+
+  "ReadDetailedInstructions": "Pročitajte detaljna uputstva u <0>Centru za pomoć</0>.",
+
+  "NeedAnAppToConnect": "Potrebna vam je aplikacija da povežete ONLYOFFICE sa vašom omiljenom veb uslugom? Ili ste je već razvili?",
+
+  "Docs": "Dokumenta",
+  "DocSpace": "DocSpace"
+}
