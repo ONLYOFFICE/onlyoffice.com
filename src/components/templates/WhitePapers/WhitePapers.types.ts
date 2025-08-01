@@ -2,7 +2,7 @@ interface ICardsProp {
   sortValue: string;
 }
 
-interface ICardWhitepapersItemsProps {
+interface ICardWhitePapersItemsProps {
   head: string;
   title: string;
   date: string;
@@ -10,7 +10,7 @@ interface ICardWhitepapersItemsProps {
   description: string;
 }
 
-interface ICardWhitepapersItems extends ICardWhitepapersItemsProps {
+interface ICardWhitePapersItems extends ICardWhitePapersItemsProps {
   id: number;
 }
 
@@ -54,8 +54,8 @@ type TSortDateKey = "CardsSortNewestOldest" | "CardsSortOldestNewest" | string;
 
 export type {
   ICardsProp,
-  ICardWhitepapersItems,
-  ICardWhitepapersItemsProps,
+  ICardWhitePapersItems,
+  ICardWhitePapersItemsProps,
   ICardDatasheetsItems,
   ICardDatasheetsItemsProps,
   ICardFormProp,

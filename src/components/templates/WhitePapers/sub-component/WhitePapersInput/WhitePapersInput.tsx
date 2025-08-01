@@ -3,45 +3,45 @@ import { Container } from "@src/components/ui/Container";
 import { SearchIcon } from "@src/components/icons";
 
 import {
-  StyledWhitepapersInput,
-  StyledWhitepapersInputLeft,
-  StyledWhitepapersInputRight,
-  StyledWhitepapersInputSubtitle,
-  StyledWhitepapersInputWrapper,
-  StyledWhitepapersSection,
+  StyledWhitePapersInput,
+  StyledWhitePapersInputLeft,
+  StyledWhitePapersInputRight,
+  StyledWhitePapersInputSubtitle,
+  StyledWhitePapersInputWrapper,
+  StyledWhitePapersSection,
 } from "./WhitePapersInput.styled";
 
-const WhitepapersInput = ({ value, setValue }: {
+const WhitePapersInput = ({ value, setValue }: {
   value: string;
   setValue: (value: string) => void
 }) => {
   const { t } = useTranslation("whitepapers");
 
   return (
-    <StyledWhitepapersSection background="#333">
+    <StyledWhitePapersSection background="#333">
       <Container maxWidth="1038px">
-        <StyledWhitepapersInputWrapper>
-          <StyledWhitepapersInputLeft>
-            <StyledWhitepapersInputSubtitle
+        <StyledWhitePapersInputWrapper>
+          <StyledWhitePapersInputLeft>
+            <StyledWhitePapersInputSubtitle
               color="#fff"
               level={6}
               size={6}
               label={t("TechnicalContent")}
             />
-          </StyledWhitepapersInputLeft>
-          <StyledWhitepapersInputRight>
-            <StyledWhitepapersInput
+          </StyledWhitePapersInputLeft>
+          <StyledWhitePapersInputRight>
+            <StyledWhitePapersInput
               label={t("SearchWhitePaper")}
               id="#whitepapers-input"
               rightSide={<SearchIcon />}
               value={value}
               onChange={(event) => setValue(event.target.value)}
             />
-          </StyledWhitepapersInputRight>
-        </StyledWhitepapersInputWrapper>
+          </StyledWhitePapersInputRight>
+        </StyledWhitePapersInputWrapper>
       </Container>
-    </StyledWhitepapersSection>
+    </StyledWhitePapersSection>
   );
 };
 
-export { WhitepapersInput };
+export { WhitePapersInput };

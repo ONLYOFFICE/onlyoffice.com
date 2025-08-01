@@ -155,7 +155,7 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
       }
 
       if (dataHCaptcha.status === "success") {
-        const responseWhitepapers = await fetch("/api/whitepapers", {
+        const responseWhitePapers = await fetch("/api/whitepapers", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -169,18 +169,18 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
             languageCode: locale ?? "",
           }),
         })
-        const dataWhitepapers = await responseWhitepapers.json();
+        const dataWhitePapers = await responseWhitePapers.json();
 
-        if (dataWhitepapers.status === "success") {
+        if (dataWhitePapers.status === "success") {
           setStatus("success");
           downloadUrl(download_url);
         }
 
-        if (dataWhitepapers.status === "error") {
+        if (dataWhitePapers.status === "error") {
           setStatus("error");
         }
 
-        if (openModal && dataWhitepapers.status === "success") {
+        if (openModal && dataWhitePapers.status === "success") {
           setTimeout(() => {
             setOpenModal(false);
           }, 5000);

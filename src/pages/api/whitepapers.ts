@@ -2,9 +2,9 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
-import { WhitepapersEmail } from "@src/components/emails/WhitepapersEmail";
+import { WhitePapersEmail } from "@src/components/emails/WhitePapersEmail";
 
-interface IAddWhitepapersData {
+interface IAddWhitePapersData {
   fromPage: string;
   fullName: string;
   email: string;
@@ -39,9 +39,9 @@ export default async function handler(
     const errorMessages = [];
     const cookies = parse(req.headers.cookie || "");
 
-    const addWhitepapersDataRequest = async () => {
+    const addWhitePapersDataRequest = async () => {
       try {
-        const addWhitepapersData: IAddWhitepapersData = {
+        const addWhitePapersData: IAddWhitePapersData = {
           fullName,
           email,
           company,
@@ -59,7 +59,7 @@ export default async function handler(
         }
 
         await db.query("INSERT INTO whitepapers_request SET ?", [
-          addWhitepapersData,
+          addWhitePapersData,
         ]);
 
         return {
@@ -68,7 +68,7 @@ export default async function handler(
         }
       } catch (error: unknown) {
         console.error(
-          "Add Whitepapers api returns errors:",
+          "Add WhitePapers api returns errors:",
           error instanceof Error ? error.message : error,
         );
 
@@ -79,10 +79,10 @@ export default async function handler(
       }
     }
 
-    const addWhitepapersDataResult = await addWhitepapersDataRequest();
-    if (addWhitepapersDataResult.status === "error") {
+    const addWhitePapersDataResult = await addWhitePapersDataRequest();
+    if (addWhitePapersDataResult.status === "error") {
       errorMessages.push(
-        `whitepapersRequest: ${addWhitepapersDataResult.message}`,
+        `whitepapersRequest: ${addWhitePapersDataResult.message}`,
       )
     }
 
@@ -90,8 +90,8 @@ export default async function handler(
     await transporter.sendMail({
       from,
       to: [process.env.SALES_EMAIL!],
-      subject: `${errorMessages.length ? "[Error] " : ""}${company} - Whitepapers Request ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
-      html: WhitepapersEmail({
+      subject: `${errorMessages.length ? "[Error] " : ""}${company} - WhitePapers Request ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
+      html: WhitePapersEmail({
         fromPage: from,
         fullName,
         email,
@@ -106,7 +106,7 @@ export default async function handler(
       message: "success",
     })
   } catch (error) {
-    console.error("Whitepapers api returns errors:", error);
+    console.error("WhitePapers api returns errors:", error);
     res.status(500).json({
       status: "error",
       message: error

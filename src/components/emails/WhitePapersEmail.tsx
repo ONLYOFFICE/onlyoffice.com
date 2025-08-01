@@ -1,4 +1,4 @@
-interface IWhitepapersEmail {
+interface IWhitePapersEmail {
   fromPage: string;
   fullName: string;
   email: string;
@@ -7,14 +7,14 @@ interface IWhitepapersEmail {
   languageCode: string;
 }
 
-const WhitepapersEmail = ({
+const WhitePapersEmail = ({
   fromPage,
   fullName,
   email,
   company,
   product,
   languageCode,
-}: IWhitepapersEmail) => {
+}: IWhitePapersEmail) => {
   return `
     <body style="margin: 0; padding: 0; text-align: center; width: 100%; font-family: Arial, sans-serif; font-size: 14px; color: #333;">
       <div style="background-color: #fff; width: 600px; margin: 0 auto; text-align: left;">
@@ -77,4 +77,4 @@ const WhitepapersEmail = ({
   `;
 };
 
-export { WhitepapersEmail };
+export { WhitePapersEmail };
