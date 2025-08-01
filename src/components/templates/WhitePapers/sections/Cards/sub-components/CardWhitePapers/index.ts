@@ -1,1 +1,1 @@
-export { CardWhitePapers } from "./CardWhitePapers"
+export { CardWhitePapers } from "./CardWhitePapers";
