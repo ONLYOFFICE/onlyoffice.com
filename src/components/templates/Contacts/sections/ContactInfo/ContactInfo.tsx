@@ -20,6 +20,10 @@ const getSortedItems = (locale?: string) => {
 
   if (locale === "zh") {
     langKey = "zh";
+  } else if (locale === "nl") {
+    langKey = "nl";
+  } else if (locale === "cs") {
+    langKey = "cs";
   } else if (locale === "en") {
     langKey = "default";
   } else {
@@ -27,10 +31,9 @@ const getSortedItems = (locale?: string) => {
   }
 
   const order = officeOrderByLang[langKey];
-  const map = Object.fromEntries(items.map(item => [item.id, item]));
-  return order.map(id => map[id]).filter(Boolean);
+  const map = Object.fromEntries(items.map((item) => [item.id, item]));
+  return order.map((id) => map[id]).filter(Boolean);
 };
-
 
 const ContactInfo = () => {
   const { t } = useTranslation("contacts");
