@@ -11,8 +11,9 @@ import {
 } from "./Hero.styled";
 import { Text } from "@src/components/ui/Text";
 import { hero } from "./data/items";
+import { ILocale } from "@src/types/locale";
 
-const Hero = () => {
+const Hero = ({locale}: ILocale) => {
   const { t } = useTranslation("projects-for-android");
 
   return (
@@ -33,7 +34,7 @@ const Hero = () => {
               />
             </StyledHeroHeading>
             <StyledHeroText label={t(hero.text)} />
-            <StyledButton $HeroImgUrl={t(hero.image.url)} />
+            <StyledButton as="a" $locale={locale} $HeroImgUrl={t(hero.image.url)} target={hero.btn.target} href={t(hero.btn.href)} />
           </StyledHeroContent>
           <StyledHeroImage />
         </StyledHeroWrapper>

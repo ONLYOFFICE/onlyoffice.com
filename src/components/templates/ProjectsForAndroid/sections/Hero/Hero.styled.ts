@@ -80,7 +80,7 @@ const StyledHeroText = styled(Text)`
   line-height: 160%;
 `;
 
-const StyledButton = styled(Button)<{ $HeroImgUrl: string }>`
+const StyledButton = styled(Button)<{$locale?: string; $HeroImgUrl: string }>`
   background-color: transparent;
   background-image: url(${({ $HeroImgUrl }) => $HeroImgUrl});
   background-repeat: no-repeat;
@@ -90,6 +90,10 @@ const StyledButton = styled(Button)<{ $HeroImgUrl: string }>`
   display: block;
   height: 51px;
   width: 170px;
+  ${({ $locale }) => $locale === "zh" && `
+    background-position: 3px 3px;
+    background-size: 165px auto;
+  `}
 
   &:hover {
     background-color: transparent;

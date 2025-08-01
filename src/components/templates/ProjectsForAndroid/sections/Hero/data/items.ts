@@ -5,5 +5,9 @@ export const hero: IHero = {
   text: "PocketProject",
   image: {
     url: "HeroImgUrl",
+  },
+  btn: {
+    href: "HeroUrl",
+    target: "_blank"
   }
 };

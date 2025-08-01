@@ -23,7 +23,7 @@ const ProjectsForAndroidPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <ProjectsForAndroidTemplate />
+        <ProjectsForAndroidTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
