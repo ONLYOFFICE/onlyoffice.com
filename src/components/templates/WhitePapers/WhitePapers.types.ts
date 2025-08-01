@@ -8,6 +8,7 @@ interface ICardWhitePapersItemsProps {
   date: string;
   download_url: string,
   description: string;
+  id_url: string;
 }
 
 interface ICardWhitePapersItems extends ICardWhitePapersItemsProps {
@@ -20,6 +21,7 @@ interface ICardDatasheetsItemsProps {
   image_url: string;
   download_url: string;
   displayOther?: boolean;
+  id_url: string;
 }
 
 interface ICardDatasheetsItems extends ICardDatasheetsItemsProps {
@@ -31,7 +33,7 @@ interface ICardFormProp {
   download_url: string;
   openModal: boolean;
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
-  product?: string;
+  id_url: string;
 }
 
 interface IFormData {

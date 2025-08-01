@@ -282,6 +282,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                       download_url={t(item.download_url)}
                       description={t(item.description)}
                       locale={locale}
+                      id_url={item.id_url}
                     />
                   ))}
                 </StyledCardsList>
@@ -303,6 +304,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                         download_url={t(item.download_url)}
                         displayOther={index < dataSheetsDisplayCount}
                         locale={locale}
+                        id_url={item.id_url}
                       />
                     )
                   ))}
@@ -316,6 +318,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                       download_url={t(item.download_url)}
                       displayOther={index < dataSheetsDisplayCount}
                       locale={locale}
+                      id_url={item.id_url}
                     />
                   ))}
                 </StyledCardsList>

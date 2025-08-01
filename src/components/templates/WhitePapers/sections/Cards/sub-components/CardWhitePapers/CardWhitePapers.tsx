@@ -19,7 +19,7 @@ import {
 } from './CardWhitePapers.styled';
 
 
-const CardWhitePapers = ({ head, title, date, download_url, description, locale }: ICardWhitePapersItemsProps & ILocale) => {
+const CardWhitePapers = ({ head, title, date, download_url, description, locale, id_url }: ICardWhitePapersItemsProps & ILocale) => {
   const { t } = useTranslation("whitepapers");
   const [openModal, setOpenModal] = useState(false);
 
@@ -72,6 +72,7 @@ const CardWhitePapers = ({ head, title, date, download_url, description, locale 
           openModal={openModal}
           setOpenModal={setOpenModal}
           locale={locale}
+          id_url={id_url}
         />
       }
     </>

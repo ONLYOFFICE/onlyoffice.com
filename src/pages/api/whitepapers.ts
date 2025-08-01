@@ -5,17 +5,11 @@ import { emailTransporter } from "@src/config/email/transporter";
 import { WhitePapersEmail } from "@src/components/emails/WhitePapersEmail";
 
 interface IAddWhitePapersData {
-  fromPage: string;
-  fullName: string;
+  full_name: string;
   email: string;
-  company: string;
+  company_name: string;
   product: string;
-  languageCode: string;
-  ip: string | string[] | null;
-  utm_source: string | null;
-  utm_campaign: string | null;
-  utm_content: string | null;
-  utm_term: string | null;
+  lang: string;
 }
 
 export default async function handler(
@@ -30,9 +24,9 @@ export default async function handler(
     fullName,
     email,
     company,
-    product,
+    id_url,
     languageCode,
-    from,
+    from
   } = req.body;
 
   try {
@@ -42,20 +36,11 @@ export default async function handler(
     const addWhitePapersDataRequest = async () => {
       try {
         const addWhitePapersData: IAddWhitePapersData = {
-          fullName,
+          full_name: fullName,
           email,
-          company,
-          product,
-          languageCode,
-          fromPage: from,
-          ip:
-            req.headers["x-forwarded-for"] ||
-            req.socket.remoteAddress ||
-            null,
-          utm_source: cookies.utmSource ?? null,
-          utm_campaign: cookies.utmCampaign ?? null,
-          utm_content: cookies.utmContent ?? null,
-          utm_term: cookies.utmTerm ?? null,
+          company_name: company,
+          product: id_url,
+          lang: languageCode,
         }
 
         await db.query("INSERT INTO whitepapers_request SET ?", [
@@ -96,7 +81,7 @@ export default async function handler(
         fullName,
         email,
         company,
-        product,
+        product: id_url,
         languageCode,
       })
     })

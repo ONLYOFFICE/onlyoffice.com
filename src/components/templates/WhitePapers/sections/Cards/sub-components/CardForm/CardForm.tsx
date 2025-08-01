@@ -28,7 +28,7 @@ import {
   StyledCardFormStatusText,
 } from "./CardForm.styled";
 
-const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: ICardFormProp & ILocale ) => {
+const CardForm = ({ download_url, openModal, setOpenModal, locale, id_url }: ICardFormProp & ILocale ) => {
   const { t } = useTranslation("whitepapers");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha | null>(null);
@@ -165,7 +165,7 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
             company: formData.companyName ?? "",
             email: formData.email ?? "",
             from: from ?? "",
-            product: product ?? "",
+            id_url: id_url ?? "",
             languageCode: locale ?? "",
           }),
         })
