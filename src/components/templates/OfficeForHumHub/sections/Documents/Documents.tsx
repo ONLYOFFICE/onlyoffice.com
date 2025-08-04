@@ -39,7 +39,7 @@ const Documents = () => {
           <Button
             onClick={scrollToBlock}
             id="documents-get-started"
-            label={t("GetStarted")}
+            label={t("GetItNow")}
           />
         </StyledDocumentBtn>
       </Container>

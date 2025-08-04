@@ -12,5 +12,39 @@
   "DocumentsTab3ImgUrl2x": "/images/templates/office-for-humhub/documents/de/screen3@2x.png",
 
   "DocumentsTab4ImgUrl": "/images/templates/office-for-humhub/documents/de/screen4.png",
-  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-humhub/documents/de/screen4@2x.png"
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-humhub/documents/de/screen4@2x.png",
+
+  "PageTitle": "Gemeinsame Dokumentenbearbeitung für HumHub | ONLYOFFICE Docs",
+  "PageDescription": "Bearbeiten Sie Dokumente gemeinsam innerhalb HumHub",
+
+  "OnlineOfficeForConnector": "Online-Office für <0>HumHub</0>",
+  "Subheader": "Bearbeiten Sie alle Arten von Office-Dokumenten innerhalb von HumHub mit ONLYOFFICE",
+  "GetItNow": "Los geht's!",
+
+  "WorkWithinConnector": "Bearbeiten Sie Office-Dokumente gemeinsam im digitalen HumHub-Bereich",
+  "DocumentsTab1Label": "Anzeigen, Erstellen und Bearbeiten von Textdokumenten, Tabellenkalkulationen und Präsentationen.",
+  "DocumentsTab2Label": "Erstellung von ausfüllbaren PDF-Formularen und deren Online-Ausfüllung.",
+  "DocumentsTab3Label": "Gemeinsame Nutzung und Mitverfassen von Dokumenten mit anderen Mitarbeitern Ihrer Organisation.",
+  "DocumentsTab4Label": "Schutz von Dokumenten vor unberechtigtem Zugriff mit JWT.",
+  "GetStarted": "Jetzt erhalten",
+
+  "MarketplaceConnectorTitle": "Entwickelt für die nahtlose Integration mit HumHub",
+  "MarketplaceConnectorDescription": "Erhalten Sie jetzt den ONLYOFFICE-Konnektor für HumHub vom HumHub Marketplace.",
+
+  "WhyOO": "Warum ONLYOFFICE?",
+  "Reason1": "Unterstützung von mehr als <0>50 Dateiformate</0>, vollständig kompatibel mit MS Office-Formaten: DOCX, XLSX, PPTX.",
+  "Reason2": "Ein robuster Satz an Bearbeitungs-, Formatierungs- und Styling-Tools. Integrierter <0>KI-Helfer.</0>",
+  "Reason3": "<0>Gemeinsame Bearbeitung</0> in Echtzeit und mit Absatzsperre, Überprüfung, Dokumentvergleich, Kommentare und Chat.",
+  "Reason4": "<0>Erweiterte Sicherheit</0>. Flexible Zugriffsrechte und JWT. Wasserzeichen und Passwortschutz. Offener Quellcode.",
+  "Reason5": "<0>Einfache Konfiguration</0>. Nahtlose Integration mit gebrauchsfertigem Konnektor aus dem HumHub Marketplace.",
+  "Reason6": "Skalierbare Enterprise-Versionen. <0>Kostenlose 30-Tage-Testversion</0>. Cloud- und selbstgehostete Version für vollständige Kontrolle über Ihre Daten.",
+
+  "HowToStart": "Wie Sie anfangen",
+  "HowToStartStep1": "Stellen Sie <0>ONLYOFFICE Docs</0> auf Ihrem eigenen Server bereit oder registrieren Sie sich für <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Laden Sie die neueste Version der Integrations-App von der <0>offiziellen HumHub-Marketplace</0>.",
+  "HowToStartStep3": "Konfigurieren Sie den Konnektor und aktivieren Sie JWT.",
+
+  "ReadDetailedInstructions": "Sehen Sie sich <0>nützliche Anleitungen</0> zur HumHub-Integration an",
+
+  "NeedAnAppToConnect": "Benötigen Sie eine App, um ONLYOFFICE mit Ihren Lieblings-Webdiensten zu verbinden? Oder haben Sie eine neue entwickelt?"
 }
