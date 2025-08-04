@@ -16,6 +16,7 @@ import {
 } from "./SignUp.styled";
 import { ISignUp } from "./SignUp.types";
 import { ISelectOption } from "@src/components/ui/Select/Select.types";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { useRewardful } from "@src/utils/useRewardful";
 import { validateEmail } from "@src/utils/validators";
 import { Heading } from "@src/components/ui/Heading";
@@ -45,6 +46,8 @@ const SignUp = ({
   setCreateNewAccountQuery,
 }: ISignUp) => {
   const { t } = useTranslation("docspace-registration");
+  const { IPGeolocationInfo, setIPGeolocationInfo } = useIPGeolocationStore();
+
   const router = useRouter();
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const modalDialog = useRef<Window | null>(null);
@@ -246,21 +249,30 @@ const SignUp = ({
   }, [selected, setCreateNewAccountQuery, setExistTenants]);
 
   useEffect(() => {
-    const IPGeolocation = async () => {
-      const ipGeolocationRes = await fetch("/api/ip-geolocation");
-      const ipGeolocationInfo = await ipGeolocationRes.json();
+    const setRegion = (regionKey?: string) => {
       setSelected(
-        ipGeolocationInfo?.regionDbEntity?.regionDbKey
-          ? options.filter(
-              (opt) =>
-                opt.key === ipGeolocationInfo?.regionDbEntity?.regionDbKey,
-            )
+        regionKey
+          ? options.filter((opt) => opt.key === regionKey)
           : [options[0]],
       );
     };
 
-    IPGeolocation();
-  }, []);
+    if (IPGeolocationInfo.regionDbEntity.domain) {
+      setRegion(IPGeolocationInfo.regionDbEntity?.regionDbKey);
+      return;
+    }
+
+    (async () => {
+      const res = await fetch("/api/ip-geolocation");
+      const data = await res.json();
+      setRegion(data?.regionDbEntity?.regionDbKey);
+      setIPGeolocationInfo(data);
+    })();
+  }, [
+    IPGeolocationInfo.regionDbEntity.domain,
+    IPGeolocationInfo.regionDbEntity?.regionDbKey,
+    setIPGeolocationInfo,
+  ]);
 
   return (
     <>
