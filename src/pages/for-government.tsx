@@ -8,7 +8,7 @@ import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { ForGovernmentTemplate } from "@src/components/templates/ForGovernment";
 
-const ForResearchPage = ({ locale }: ILocale) => {
+const ForGovernmentPage = ({ locale }: ILocale) => {
   const { t } = useTranslation("for-government");
 
   return (
@@ -41,4 +41,4 @@ export async function getStaticProps({ locale }: ILocale) {
   };
 }
 
-export default ForResearchPage;
+export default ForGovernmentPage;

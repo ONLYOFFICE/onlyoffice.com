@@ -1,0 +1,24 @@
+{
+  "PageTitle": "Herramienta para la gestión del tiempo eficaz | ONLYOFFICE",
+  "PageDescription": "Cree su horario personal y de equipo, maneje eventos de calendario con facilidad.",
+
+  "HeroTitle": "Herramienta para manejo de tiempo eficiente",
+  "HeroText": "Manten a tu equipo organizado y productivo",
+  "GetItNow": "Obtener ahora",
+
+  "IndividualOrGroup": "Calendarios individuales y de grupos",
+  "IndividualOrGroupText": "Crea tu horario personal, <0>comparte calendarios</0> concediendo acceso a alguna persona o planea eventos con el grupo entero.",
+  "IndividualOrGroupImage": "/images/templates/calendar/features/es/individual_or_group.png",
+  "SimpleScheduling": "Planificación fácil de diferentes eventos",
+  "SimpleSchedulingText": "Crea eventos durante todo el día, de varios días, y recurrentes. Añade tareas pendientes a tu horario. Envía invitaciones a cualquier usuario. Usa notificaciones para nunca olvidar las cosas.",
+  "SimpleSchedulingImage": "/images/templates/calendar/features/es/simple_scheduling.png",
+  "Synchronization": "Sincronización con otras aplicaciones",
+  "SynchronizationText": "Importa eventos o añade una fuente iCal de Google, Apple iCal, Yahoo! para sincronizar el calendario usando el protocolo CalDAV y monitoriza todo en un solo lugar.",
+  "SynchronizationImage": "/images/templates/calendar/features/es/synchronization.png",
+  "CloseIntegration": "Integración cercana con todos los módulos de ONLYOFFICE",
+  "CloseIntegrationText": "Manten un registro de tus hitos, proyectos y tareas de CRM, recibe notificaciones acerca de cumpleaños próximos de los usuarios. Envia y recibe invitaciones a los eventos de calendario importantes.",
+  "CloseIntegrationImage": "/images/templates/calendar/features/es/close_integration.png",
+
+  "EasyToUse": "Programa fácil de usar con la variedad de las posibilidades para colaboración que favorecen a los negocios.",
+  "PcMag": "PC Mag"
+}

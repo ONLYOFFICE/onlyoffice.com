@@ -29,6 +29,11 @@ const StyledFeaturesContent = styled.div`
     }
   }
 
+  .buttons {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
   > div {
     padding: 112px 0;
 
@@ -52,6 +57,10 @@ const StyledFeaturesContent = styled.div`
     &:last-child {
       border: none;
       padding-bottom: 0;
+    }
+
+    .featureList::before {
+      top: 12px;
     }
 
     @media ${device.tablet} {

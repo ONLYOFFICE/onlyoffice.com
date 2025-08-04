@@ -5,10 +5,24 @@ import "onlyoffice-react-ui-kit/header/css";
 import { IHeader } from "./Header.types";
 import { languages } from "@src/config/data/languages";
 
-const Header = ({ locale, theme, highlight }: IHeader) => {
+const Header = ({
+  locale,
+  theme,
+  highlight,
+  borderColor = "transparent",
+  backgroundColor = "transparent",
+  onScrollBorderColor = "#cccccc",
+  onScrollBackgroundColor = "#ffffff",
+  onScrollChangeTheme = true,
+}: IHeader) => {
   const [scrolled, setScrolled] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
   const headerRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
+
+  useEffect(() => {
+    setSearchValue("");
+  }, [router.asPath]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,28 +41,43 @@ const Header = ({ locale, theme, highlight }: IHeader) => {
     };
   }, [setScrolled]);
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    router.push(`/search?search=${encodeURIComponent(searchValue)}`);
+  };
+
   return (
     <>
       <div ref={headerRef}></div>
       <OOHeader
         locale={locale}
-        borderColor={scrolled ? "#cccccc" : "transparent"}
-        backgroundColor={scrolled ? "#ffffff" : "transparent"}
+        borderColor={scrolled ? onScrollBorderColor : borderColor}
+        backgroundColor={scrolled ? onScrollBackgroundColor : backgroundColor}
         languages={languages.map((language) => ({
           key: language.shortKey,
           shortKey: language.shortKey,
           name: language.name,
-          href: router.asPath
+          href: router.asPath,
         }))}
         search={{
           show: true,
-          onSubmit: () => {},
-          onChange: () => {},
-          value: "",
+          onSubmit: handleSubmit,
+          onChange: (e) => {
+            e.preventDefault();
+            setSearchValue(e.target.value);
+          },
+          value: searchValue,
           variant: "main",
         }}
         hasPhone={true}
-        theme={theme === "white" ? (scrolled ? undefined : "white") : undefined}
+        theme={
+          theme === "white"
+            ? scrolled && onScrollChangeTheme
+              ? undefined
+              : "white"
+            : undefined
+        }
         highlight={{
           buttonId: highlight?.buttonId,
           linkId: highlight?.linkId,

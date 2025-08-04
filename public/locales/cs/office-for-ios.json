@@ -1,66 +1,66 @@
 {
-  "PageTitle": "Bezplatný mobilní kancelářský balík pro iPhone a iPad | ONLYOFFICE Documents",
-  "PageDescription": "Upravujte a spolupracujte na úpravách dokumentů, tabulek a prezentací, vyplňujte formuláře ze svých iOS zařízení.",
+  "PageTitle": "Sada mobilních kancelářských nástrojů pro iPhone a iPad | ONLYOFFICE Documents",
+  "PageDescription": "Upravujte a spolueditujte dokumenty, tabulky a prezentace, vyplňujte formuláře ze zařízení se systémem iOS.",
 
-  "OnlyOfficeDocuments": "ONLYOFFICE Documents, solidní <0>mobilní kancelářský balík</0> pro váš iPhone a iPad",
-  "AbsolutelyFree": "Zcela <0>zdarma</0>. Bez reklam. Bez nákupů v aplikaci.",
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, kvalitní <0>sada mobilních kancelářských nástrojů</0> pro váš iPhone a iPad",
+  "AbsolutelyFree": "Zcela <0>zdarma</0>. Bez reklam. Žádné nákupy v aplikaci.",
 
-  "OneAppThreeEditors": "Jedna aplikace - <0>Tři editory</0> - Mnoho funkcí",
+  "OneAppThreeEditors": "Jedna aplikace - <0>tři editory</0> - mnoho funkcí",
   "CompatibleWithMSOffice": "100% kompatibilní s formáty MS Office",
 
   "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.cs.svg",
 
-  "FeaturesItemHeadingFull": "Plně vybavený textový procesor",
-  "FeaturesItemTextMakeUse": "Využijte mnoho nástrojů pro zpracování textu: formátování stránky, odstavců a textu, tabulky, automatické tvary, grafy atd. Vytvářejte textové dokumenty jakékoli velikosti a složitosti. Tiskněte je pomocí AirPrint.",
+  "FeaturesItemHeadingFull": "Textový editor s širokou škálou funkcí",
+  "FeaturesItemTextMakeUse": "Využijte řadu nástrojů pro zpracování textu: formátování stránky, odstavců a textu, tabulky, automatické tvary, grafy atd. Vytvářejte textové dokumenty libovolné velikosti a složitosti. Vytiskněte je pomocí AirPrint.",
 
-  "FeaturesItemHeadingComplete": "Kompletní editor tabulek",
-  "FeaturesItemTextManage": "Spravujte data v tabulkách: pracujte s řádky a sloupci, upravujte parametry buněk, používejte více než 450 vzorců, řaďte a filtrujte data.",
+  "FeaturesItemHeadingComplete": "Tabulkový editor",
+  "FeaturesItemTextManage": "Spravujte svá data v tabulkách: pracujte s řádky a sloupci, upravujte parametry buněk, používejte více než 450 vzorců, třiďte a filtrujte data.",
 
-  "FeaturesItemHeadingCollaborative": "Spolupracující editor prezentací",
-  "FeaturesItemTextMakeWork": "Pracujte se všemi běžnými objekty ve svých snímcích: vkládejte obrázky, přidávejte a upravujte automatické tvary, grafy, texty a další položky.",
+  "FeaturesItemHeadingCollaborative": "Editor pro spolupráci na tvorbě prezentací",
+  "FeaturesItemTextMakeWork": "Pracujte ve svých slidech se všemi oblíbenými objekty: vkládejte obrázky, přidávejte a upravujte automatické tvary, tabulky a grafy, texty a další položky.",
 
-  "FeaturesItemHeadingOnline": "Online vyplňování formulářů",
-  "FeaturesItemTextMakeView": "Zobrazujte a vyplňujte formuláře. Snadno se pohybujte mezi poli. Výsledek uložte jako soubor PDF nebo DOCX.",
+  "FeaturesItemHeadingOnline": "Online nástroj k vyplňování formulářů",
+  "FeaturesItemTextMakeView": "Prohlížejte si a vyplňujte formuláře. Snadno přecházejte z pole do pole. Výsledek uložte jako soubor PDF nebo DOCX.",
 
   "FeaturesItemHeadingPDF": "Prohlížeč PDF a přehrávač médií",
-  "FeaturesItemTextMakeViewPDF": "Zobrazujte PDF dokumenty a obrázky, přehrávejte audio a video soubory. Otevírejte .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf atd.",
+  "FeaturesItemTextMakeViewPDF": "Prohlížejte si dokumenty v PDF a obrázky, přehrávejte zvukové a video soubory. Otevirejte soubory s koncovkou .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, a další.",
 
-  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents je vynikající produkt a od svých uživatelů získal hodnocení 'Velmi dobrý'.\"",
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents is an outstanding product and was given the 'Very Good' award by its users.\"",
   "MichaelGanss": "Michael Ganss,",
 
   "RealTimeCollaboration": "Spolupráce v reálném čase",
-  "BeMoreProductive": "Buďte produktivnější. Propojte svou aplikaci s cloudem ONLYOFFICE. Sdílejte dokumenty a spolupracujte na nich se svými kolegy v reálném čase. Komentujte a sledujte změny. Přidávejte grafické poznámky.",
+  "BeMoreProductive": "Buďte produktivnější. Připojte svou aplikaci ke cloudu ONLYOFFICE. Sdílejte dokumenty a upravujte je se svými spoluhráči v reálném čase. Komentujte a sledujte změny. Přidávejte grafické poznámky.",
 
-  "VideoCardHeading": "Objevte ONLYOFFICE Documents, solidní mobilní kancelářský balík",
+  "VideoCardHeading": "Objevte ONLYOFFICE Documents, solidní mobilní kancelářskou sadu",
 
-  "GetStartedAndChoose": "Začněte a vyberte si, kde pracovat",
+  "GetStartedAndChoose": "Začněte a vyberte si, kde chcete pracovat",
 
-  "ChooseItemOnDevice": "V zařízení",
-  "ChooseItemManageDocuments": "Spravujte dokumenty v zařízení a upravujte je offline.",
+  "ChooseItemOnDevice": "Na zařízení",
+  "ChooseItemManageDocuments": "Spravovat dokumenty na zařízení a upravovat je offline.",
 
   "ChooseItemInOnlyOffice": "V cloudu ONLYOFFICE",
-  "ChooseItemAccessDocs": "Přistupujte k dokumentům z cloudu ONLYOFFICE a z úložišť (Dropbox, Google Drive atd.) k němu připojených a pracujte společně.",
+  "ChooseItemAccessDocs": "Získejte přístup k dokumentům z cloudu ONLYOFFICE a propojených úložišť (Dropbox, Google Drive atd.) a spolupracujte.",
 
   "ChooseItemInYourCloud": "Ve svém cloudu",
-  "ChooseItemConnectNextcloud": "Připojte Nextcloud, ownCloud nebo jiný cloud fungující přes WebDAV a upravujte dokumenty přímo z aplikace.",
+  "ChooseItemConnectNextcloud": "Připojte Nextcloud, ownCloud nebo jakýkoli jiný cloud běžící přes WebDAV a upravujte dokumenty přímo z aplikace.",
 
   "ChooseItemFromOther": "Z jiných aplikací",
-  "ChooseItemImportDocuments": "Importujte dokumenty z aplikací, jako je iTunes, Soubory a další.",
+  "ChooseItemImportDocuments": "Importujte dokumenty z aplikací, jako jsou iTunes, Soubory a další.",
 
-  "GetMoreWithComplete": "Získejte více s kompletní mobilní webovou verzí",
-  "WorkOnDocumentsWithin": "Pracujte s dokumenty ve svém mobilním prohlížeči. Přejděte na svůj webový portál ONLYOFFICE a získejte přístup k více nástrojům pro úpravu dokumentů a spolupráci.",
+  "GetMoreWithComplete": "Získejte více díky kompletní verzi pro mobilní web",
+  "WorkOnDocumentsWithin": "Práce na dokumentech v mobilním prohlížeči. Navštivte webový portál ONLYOFFICE a získejte přístup k dalším nástrojům pro úpravy dokumentů a spolupráci.",
 
-  "LearnMoreHeading": "Zjistěte více o ONLYOFFICE Documents pro iOS",
+  "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for iOS",
 
-  "LearnCardTitleRelease": "Poznámky k vydání",
-  "LearnMoreTextMeet": "Seznamte se s ONLYOFFICE Documents v7.2 pro iOS",
-  "LearnMoreSubtitleRead": "Přečíst příběh",
+  "LearnCardTitleRelease": "Release notes",
+  "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v7.2 for iOS",
+  "LearnMoreSubtitleRead": "Read story",
 
-  "LearnCardTitleHints": "Tipy",
-  "LearnMoreTextHandwriting": "Psaní rukou v ONLYOFFICE Documents",
-  "LearnMoreSubtitleLearn1": "Zjistit více",
+  "LearnCardTitleHints": "Hints",
+  "LearnMoreTextHandwriting": "Handwriting in ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "Learn more",
 
-  "LearnCardTitleDeveloper": "Příručka pro vývojáře",
-  "LearnMoreTextHowMobile": "Jak funguje mobilní integrace",
-  "LearnMoreSubtitleLearn2": "Zjistit více"
+  "LearnCardTitleDeveloper": "Developer guide",
+  "LearnMoreTextHowMobile": "How mobile integration works",
+  "LearnMoreSubtitleLearn2": "Learn more"
 }

@@ -189,6 +189,8 @@ const StyledPlatformWrapper = styled.div`
   }
 
   h2 {
+    max-width: 1120px;
+    margin: auto;
     padding-bottom: 56px;
 
     @media ${device.tabletS} {

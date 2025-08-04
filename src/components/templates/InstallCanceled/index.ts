@@ -1,0 +1,1 @@
+export { InstallCanceledTemplate } from "./InstallCanceled";

@@ -1,0 +1,1 @@
+export { BestAlternativeHero } from "./BestAlternativeHero";

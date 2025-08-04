@@ -1,0 +1,127 @@
+{
+  "PageTitle": "Comparez les méthodes d'intégration de ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Découvrez la différence entre l'intégration de ONLYOFFICE Docs avec n'importe quel service dans le cloud en utilisant soit API, soit WOPI.",
+
+  "HeroTitle": "Comparez l'intégration de <0>ONLYOFFICE Docs</0> <1></1>via API et WOPI",
+  "HeroParagraph": "Vous pouvez intégrer <0>ONLYOFFICE Docs</0> avec n'importe quel service dans le cloud en utilisant soit API, soit WOPI.",
+  "HeroSmallerParagraph": "Le tableau ci-dessous vous permettra de connaître la différence entre ces deux options.",
+
+  "Header1": "API",
+  "Header2": "WOPI",
+
+  "Sub1": "Information générale",
+
+  "Par1AHead": "Interface de programmation d'application :",
+  "Par1ASub": "décrit les principales méthodes qui vous permettent d'interagir avec les différents composants de ONLYOFFICE, y compris les éditeurs, vous donnant ainsi un accès programmatique à ceux-ci",
+  "Par1ALink": "En savoir plus",
+
+  "Par1BHead": "Interface de plateforme ouverte dans une application web (Web Application Open Platform Interface) :",
+  "Par1BSub": "protocole basé sur REST de Microsoft qui définit un ensemble d'opérations permettant à un client d'accéder aux fichiers stockés par un serveur et de les modifier.",
+  "Par1BLink": "En savoir plus",
+
+  "Sub2": "Intégration avec les solutions sync&share et DMS",
+
+  "Par2ASub": "Intégration via des connecteurs prêts à l'emploi développés par ONLYOFFICE ou ses partenaires.",
+  "Par2ALink": "Consulter toutes les intégrations",
+
+  "Par2BSub": "Intégration via le connecteur WOPI/client universel WOPI.",
+
+  "Sub3": "Personnalisation",
+
+  "Item3A": "Définir une langue d'interface et un thème pour les éditeurs",
+  "Item3B": "Masquer le bouton de menu Chat",
+  "Item3C": "Modifier des informations dans la section À propos",
+  "Item3D": "Personnaliser l'interface, par exemple, ajuster l'en-tête et les barres d'outils",
+  "Item3E": "Personnaliser la marque",
+  "Item3F": "Connecter les plugins",
+
+  "Item3G": "Définir une langue d'interface et un thème pour les éditeurs",
+  "Item3H": "Masquer le bouton de menu Chat",
+  "Item3I": "Modifier des informations dans la section À propos",
+
+  "Out3A": "Autres options en cours de développement",
+
+  "Sub4": "Actions de base",
+
+  "Item4A": "Afficher",
+  "Item4B": "Modifier",
+  "Item4C": "Co-éditer",
+  "Item4D": "Afficher et modifier depuis les appareils mobiles",
+  "Item4E": "Afficher en forme simplifiée (intégrée)",
+
+  "Item4F": "Afficher",
+  "Item4G": "Modifier",
+  "Item4H": "Co-éditer",
+
+  "Out4A": "Autres options en cours de développement",
+
+  "Sub5": "Actions supplémentaires : Méthodes",
+
+  "Item5A": "Télécharger un fichier dans le format choisi",
+  "Item5B": "Marquer un fichier comme favori",
+  "Item5C": "Afficher des infobulles avec le message",
+
+  "Out5A": "Non disponible (en cours de développement)",
+
+  "Sub6": "Actions supplémentaires : Événements",
+
+  "Item6A": "Fermer l'éditeur",
+  "Item6B": "Ouvrir l'emplacement du fichier",
+  "Item6C": "Passer un fichier du mode visualisation au mode édition",
+  "Item6D": "Renommer des documents",
+  "Item6E": "Gérer les droits d'accès aux documents",
+  "Item6F": "Ouvrir l'historique des versions",
+  "Item6G": "Insérer des images à partir du stockage",
+  "Item6H": "Personnaliser courriers",
+  "Item6I": "Comparer des documents stockés",
+  "Item6J": "Obtenir un lien pour ouvrir un fichier à l'emplacement du signet",
+  "Item6K": "Enregistrer un fichier dans le format souhaité",
+  "Item6L": "Mentionner d'autres utilisateurs dans les commentaires",
+  "Item6M": "Créer un nouveau document",
+
+  "Item6N": "Fermer l'éditeur",
+  "Item6O": "Ouvrir l'emplacement du fichier",
+  "Item6P": "Passer un fichier du mode visualisation au mode édition",
+  "Item6Q": "Renommer des documents",
+  "Item6R": "Gérer les droits d'accès aux documents",
+  "Item6S": "Ouvrir l'historique des versions (diffère de la réalisation de l'API)",
+  "Item6T": "Insérer des images à partir du stockage",
+
+  "Out6A": "Autres options en cours de développement",
+
+  "Sub7": "Sécurité",
+
+  "Item7A": "Liste blanche des adresses IP",
+  "Item7B": "Vérification des demandes et protection contre les accès non autorisés à l'aide de JWT",
+
+  "Item7C": "Liste blanche des adresses IP",
+  "Item7D": "Vérification des demandes à l'aide de clés de preuve",
+
+  "Sub8": "Autorisations de documents",
+
+  "Item8A": "Afficher",
+  "Item8B": "Modifier",
+  "Item8C": "Réviser (documents texte)",
+  "Item8D": "Commenter",
+  "Item8E": "Remplir des formulaires",
+  "Item8F": "Modifier les contrôles de contenu (documents texte)",
+  "Item8G": "Modifier les filtres (feuilles de calcul)",
+  "Item8H": "Copier dans le presse-papiers",
+  "Item8I": "Télécharger",
+  "Item8J": "Imprimer",
+  "Item8K": "Renommer",
+
+  "Item8L": "Afficher",
+  "Item8M": "Modifier",
+  "Item8N": "Réviser (documents texte)",
+  "Item8O": "Imprimer",
+  "Item8P": "Renommer",
+
+  "Out8A": "Autres options en cours de développement",
+
+  "Button": "OBTENIR LES ÉDITEURS POUR L'INTÉGRATION",
+
+  "QuestionsHeader": "Vous avez encore des questions ?",
+  "QuestionsParagraph": "Ou vous souhaitez intégrer ONLYOFFICE Docs à votre service de cloud ?",
+  "QuestionsContact": "Contactez-nous à <0>sales@onlyoffice.com</0>."
+}

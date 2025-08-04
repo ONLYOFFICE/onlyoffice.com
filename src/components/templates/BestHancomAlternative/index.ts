@@ -1,0 +1,1 @@
+export { BestHancomAlternativeTemplate } from "./BestHancomAlternative";

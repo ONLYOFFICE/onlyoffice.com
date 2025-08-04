@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Pomožte nám zlepšit ONLYOFFICE",
+  "PageDescription": "Přispějte k projektu ONLYOFFICE: vyvíjejte, překládejte, testujte nebo dokumentujte a šiřte dál.",
+
+  "HeroTitle": "Staňte se součástí<br />rodiny <span>ONLYOFFICE</span>",
+  "HeroText": "Přispívejte k open source projektu ONLYOFFICE a udělejme ho ještě lepší!",
+
+  "ImproveOO": "Zlepšit ONLYOFFICE",
+  "DevelopYourOwnPluginOrMacros": "Vytvořte si vlastní plugin nebo makra pro editory dokumentů ONLYOFFICE.",
+  "ReadAPIDocumentation": "Přečtěte si dokumentaci rozhraní API",
+  "CreateYourOwnForm": "Vytvářejte vlastní šablony formulářů a sdílejte je s ostatními.",
+  "OpenOurFormLibrary": "Otevřete naši knihovnu formulářů",
+  "CreateAnExtensionOrModule": "Vytvořte aplikaci, rozšíření nebo celý modul pro platformu spolupráce ONLYOFFICE.",
+  "DidYouFindABug": "Našli jste chybu? Nahlášení problémů na <0>GitHubu</0> nebo na <1>fóru</1>.",
+  "MoreInfo": "Více informací",
+
+  "SocialMediaText": "Spojte se s námi na <0>blogu</0> nebo social media kanálech",
+
+  "SpreadTitle": "Rozšiřte technologii ONLYOFFICE",
+  "SpreadText": "Vytvořte konektor pro vlastní platformu, abyste zprostředkovali ONLYOFFICE pro všechny ostatní.",
+  "SpreadLink": "Přečtěte si dokumentaci rozhraní API",
+  "More": "Více",
+
+  "TranslateOO": "<0>Přeložit</0> ONLYOFFICE",
+  "TranslateOOText": "<p>Chcete nám pomoci překládat rozhraní ONLYOFFICE do vašeho mateřského jazyka, aby byl dostupný všude na světě?</p><p>Připojte se k naší dobrovolnické překladatelské komunitě, napište nám na adresu <0>documentation@onlyoffice.com</0> a získáte přístup k našemu <1>online překladovému systému</1>.</p>",
+
+  "TestOO": "<0>Testujte</0> ONLYOFFICE",
+  "TestOOText": "<p>Staňte se zkušebním beta testerem ONLYOFFICU a pomožte nám testovat nadcházející funkce a řešení.</p><p>Kontaktujte nás na <0>press@onlyoffice.com</0>.</p>",
+
+  "DocumentOO": "<0>Dokument</0> ONLYOFFICE",
+  "DocumentOOText": "<p>Máte nějaké tipy nebo triky, jak pracovat s ONLYOFFICEM efektivněji?</p><p>Nenašli jste informace o tom, jak používat některé funkce?</p><p>Chcete převést dostupnou dokumentaci do mateřského jazyka?</p><p>Kontaktujte nás na adrese <0>documentation@onlyoffice.com</0>, kde můžete sdílet své myšlenky.</p>"
+}

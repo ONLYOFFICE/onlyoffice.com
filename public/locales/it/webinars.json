@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Visualizza i webinar ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "Iscriviti ai nostri webinar per imparare a lavorare in modo efficace con ONLYOFFICE",
+
+  "HeroHeadingWatch": "Visualizza i <0>webinar</0> ONLYOFFICE",
+  "HeroTextTune": "Sintonizzati sui nostri webinar dal vivo e impara i modi migliori per lavorare con ONLYOFFICE",
+
+  "UpcomingHeading": "Prossimi webinar dal vivo",
+
+  "UpcomingModalProduct": "Prodotto",
+  "UpcomingModalBy": "Da",
+  "UpcomingModalLanguage": "Lingua",
+  "UpcomingModalPlease": "Completa tutti i campi con asterischi (*). Riceverai un messaggio e-mail con il link al webinar selezionato.",
+  "UpcomingModalFullName": "Nome completo",
+  "UpcomingModalCompanyName": "Nome dell’azienda",
+  "UpcomingModalEmail": "Email",
+  "UpcomingModalSendQuestions": "Invia domande per il webinar",
+  "UpcomingModalPlaceholderName": "Nome Cognome",
+
+  "FullNameIsIncorrect": "Il Nome completo è sbagliato",
+  "FullNameIsEmpty": "Il Nome completo è vuoto",
+
+  "CompanyNameIsEmpty": "Il Nome dell’azienda è vuoto",
+
+  "EmailIsEmpty": "Email è vuoto",
+  "EmailIsIncorrect": "Email è sbagliato",
+
+  "AgreementByClicking": "Facendo clic su Guarda webinar, comprendi e accetti le nostre <0>dichiarazioni SLA</0> e <1>sulla privacy</1>.",
+
+  "ModalSendButton": "Guarda webinar",
+  "ModalCloseButton": "Annulla",
+
+  "RequestSuccessfull": "Ti sei registrato correttamente al webinar di ONLYOFFICE. <br> Il link al webinar è stato inviato al tuo indirizzo email.",
+
+  "WatchHeading": "Guarda su richiesta",
+  "WatchText": "Hai perso un webinar? Guarda un replay in qualsiasi momento.",
+  "WatchNow": "Guarda ora",
+
+  "en": "In inglese",
+  "ja": "In giapponese",
+  "zh": "In cinese",
+  "fr": "In francese",
+  "de": "In tedesco",
+  "es": "In spagnolo",
+  "pt": "In portoghese",
+  "it": "In italiano",
+  "cs": "In ceco",
+  "nl": "In olandese",
+  "ru": "In russo",
+  "sr": "In serbo",
+
+  "ContributeHeading": "Contribuisci con le tue idee",
+  "ContributeTextHave": "Vuoi suggerirci un webinar interessante?",
+  "ContributeTextGet": "Entra in contatto con il nostro team all'indirizzo <0>press@onlyoffice.com</0> o scorri i nostri DM su <1>Twitter</1>."
+}

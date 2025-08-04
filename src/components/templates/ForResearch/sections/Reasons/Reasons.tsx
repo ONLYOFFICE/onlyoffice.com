@@ -72,6 +72,7 @@ const Reasons = () => {
                 href="/all-connectors?from=for-research"
                 label={t("SeeAllIntegrations")}
                 color="main"
+                textUnderline
                 hover="underline-none"
                 fontSize="14px"
               />
@@ -106,12 +107,14 @@ const Reasons = () => {
               fontWeight={700}
               lineHeight="21px"
               textAlign="center"
+              color="#666666"
               label={t("QuoteAuthor1")}
             />
             <Text
               fontSize="12px"
               lineHeight="19px"
               textAlign="center"
+              color="#aaaaaa"
               label={t("QuoteAuthorInfo1")}
             />
             <Link
@@ -141,6 +144,7 @@ const Reasons = () => {
                 href="/workspace?from=for-research"
                 label={t("LearnMoreReasons")}
                 color="main"
+                textUnderline
                 hover="underline-none"
                 fontSize="14px"
               />
@@ -162,12 +166,14 @@ const Reasons = () => {
             fontWeight={700}
             lineHeight="21px"
             textAlign="center"
+            color="#666666"
             label={t("QuoteAuthor2")}
           />
           <Text
             fontSize="12px"
             lineHeight="19px"
             textAlign="center"
+            color="#aaaaaa"
             label={t("QuoteAuthorInfo2")}
           />
           <Link

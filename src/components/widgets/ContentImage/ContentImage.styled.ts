@@ -107,6 +107,10 @@ const StyledContentImageImgWrapper = styled.div<{
   @media ${device.tabletS} {
     display: ${(props) => props.$displaytabletS || ""};
   }
+    
+  @media ${device.tabletS} {
+    flex: initial;
+  }
 `;
 
 const StyledContentImageImg = styled.div<{

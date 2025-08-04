@@ -1,0 +1,89 @@
+{
+  "PageTitle": "学生向けのONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "無料のオフィススイートで教育を向上させましょう。ONLYOFFICEはあらゆるデバイスに適したツールを提供します。",
+
+  "OfficeForStudents": "<0>学生</0>向けのONLYOFFICE",
+  "SuperchargeYourEducation": "無料のオフィススイートで教育を向上させましょう。教室、図書館、大学のカフェ、自宅のどこで作業していても、ONLYOFFICEはあらゆるデバイスに適したツールを提供します。",
+
+  "OODesktopEditorsTitle": "<span>ONLYOFFICE Desktop Editors：</span> <br> Word、Excel、PowerPoint + PDFエディターの無料代替品",
+  "OODesktopEditorsText": "シンプルで柔軟、使いやすいソリューションで、馴染みのある形式でファイルを操作できます。オフィススイートを使ったことがあれば、ONLYOFFICE Desktop Editorsでも快適に作業できるでしょう。",
+
+  "SmoothAndIntuitiveOfficeExperience": "スムーズで直感的なオフィス体験",
+  "SmoothAndIntuitiveOfficeExperienceDesc": "課題は複雑かもしれませんが、オフィススイートはそうであるべきではありません。ONLYOFFICE Desktop Editorsは、<0>テキスト文書</0>、<1>スプレッドシート</1>、<2>プレゼンテーション</2>、<3>PDFファイル</3>に統一された直感的なユーザーインターフェースを提供します。",
+
+  "SuitedForAllOperatingSystems": "すべてのオペレーティングシステムに対応",
+  "SuitedForAllOperatingSystemsDesc": "あなたの作業スタイルに最適なオペレーティングシステムを選んでください - 私たちはあなたの決断をサポートします！ONLYOFFICE Desktop EditorsはWindows、macOS、Linuxで完璧に動作します！",
+
+  "FreeAndOpenSource": "無料でオープンソース",
+  "FreeAndOpenSourceDesc": "はい、その通りです！ONLYOFFICE Desktop Editorsは完全に無料で、経済的な制約なしにプロフェッショナルレベルのオフィスソフトウェアにアクセスできます。さらに、私たちのエディターはオープンソースであり、透明性、コミュニティとの協力、それに伴うイノベーションを保証します。",
+
+  "BothOfflineAndOnline": "オフラインとオンラインの両方",
+  "BothOfflineAndOnlineDesc": "ONLYOFFICEデスクトップアプリはローカルアプリケーションだけではありません。お好みのクラウド（Moodle、ONLYOFFICE DocSpace、Nextcloud、ownCloud、Seafile、Liferay、kDrive）に接続して、オンラインで作業したり共同作業したりできます。どこにいても素早くエッセイを変更する必要がありますか？<0>iOS</0>と<1>Android</1>の無料アプリを使用してください。",
+
+  "DigitalLibraryAtHand": "手元にあるデジタルライブラリ",
+  "DigitalLibraryAtHandDesc": "もちろん、テーブルに本の山が広がっていると、あなたの研究作業はより印象的に見えますが、それは非常に実用的ではありません。ONLYOFFICE Desktop Editorsを使用すると、EPUB、FB2、PDFファイルを読んだり、オフィスソリューション内で直接すべての<0>電子書籍</0>の情報を検索したりできます。",
+
+  "DownloadNow": "今すぐダウンロード",
+
+  "OODocSpaceTitle": "<0>ONLYOFFICE DocSpace：</0> チームプロジェクトを次のレベルへ",
+  "OODocSpaceDesc": "クラスメイトや教師と協力して、創造し、新しい知識を共有し、目標を達成しましょう！",
+
+  "TeamworkHasNeverBeenEasier": "チームワークがこれまで以上に簡単に",
+  "TeamworkHasNeverBeenEasierDesc": "仮想ルームを作成することで、誰があなたのルーム内のプロジェクトファイルを表示、共同作業、共有できるかを制御できます。重要なファイルを見逃すことはなく、プロジェクト関連の文書はルーム内に保管されます。",
+
+  "FitToAnyScenario": "あらゆるシナリオに適合",
+  "FitToAnyScenarioDesc": "<0>フォームルーム</0>でプロジェクトのフィードバックを受け取り、課題を完了し、<1>コラボレーションルーム</1>でグループプレゼンテーションを準備し、エッセイを書いて教師と共有し、<2>カスタムルーム</2>でそれらを確認する機会を活用します。グループメンバーや教師が<3>パブリックルーム</3>で登録なしにコンテンツを閲覧できるようにします。<4>ミーティングルーム</4>でチームプロジェクトについて議論します。",
+
+  "StressFreeCoEditing": "ストレスフリーの共同編集",
+  "StressFreeCoEditingDesc": "異なるプラットフォーム間を行き来することなく、プロジェクトの詳細を議論し、アイデアを共有し、グループメンバーにフィードバックを提供するための統合されたコミュニケーション、チャット、コメントツールを使用して、より効果的に協力します。",
+
+  "CreateFreeAccount": "無料アカウントを作成",
+
+  "WhyOOTitle": "<0>なぜ</0>ONLYOFFICE？",
+  "WhyOODesc": "多くのオフィスソリューションが存在することは承知しています。なぜ他のソフトウェアではなくONLYOFFICEを使い始めるべきなのでしょうか？それはONLYOFFICEと学生が完璧な組み合わせだからです。主なポイントをご紹介します：",
+
+  "ItSFree": "無料です",
+  "ItSFreeDesc": "効果的なオフィススイートで課題に取り組むために節約する必要はありません。私たちがサポートします - 学生にとって、ONLYOFFICEは完全に無料です。",
+
+  "ItSCompatible": "MS Officeファイル（およびほぼすべての他のOfficeファイル形式）と互換性があります",
+  "ItSCompatibleDesc": "クラスメイトや教師が他のオフィスソリューションを使用していて、あなたのファイルを開いたときに混乱する心配はありません。ONLYOFFICEはMS Officeファイル（DOCX、XLSX、PPTSなど）およびほとんどの他の形式と完全に互換性があります。",
+
+  "ItSHighlyCustomizable": "内蔵のプラグインストアで高度にカスタマイズ可能",
+  "ItSHighlyCustomizableDesc": "機能を拡張する<0>多数のプラグイン</0>でONLYOFFICEをカスタマイズしましょう - エディター内で直接公式ChatGPTプラグインを使用して文書作業を加速させたり、MendeleyやZotero用の参考文献プラグインで研究を簡素化したり、LanguageToolやOCRで執筆と校正を加速させたりできます。",
+
+  "ItSBuilt": "コラボレーションを念頭に設計されています",
+  "ItSBuiltDesc": "私たちはチームワークが大好きです。あなたもそうだと思います。だからこそ、ONLYOFFICEはコラボレーションをできるだけシンプルかつ効率的にするさまざまな機能を提供しています。",
+
+  "GetItNow": "今すぐ入手",
+  "TryInTheCloud": "クラウドで試す",
+
+  "SuccessStoriesHeading": "それがどのように機能するかを示す成功事例",
+  "SuccessStoriesDesc": "ONLYOFFICEと教育プロセスがいかに相性が良いかについて話すこともできますが、むしろユーザーの成功体験についてお話しします。",
+
+  "Blog1": "ONLYOFFICEがドナウエッシンゲンの学校でのコラボレーションをどのように容易にしているか",
+  "Blog1Link": "https://www.onlyoffice.com/blog/ja/2023/10/onlyoffice-in-donaueschingen-schools",
+  "Blog1ImgUrl": "/images/templates/office-for-students/success-stories/blog1.jpg",
+
+  "Blog2": "Collège-Lycée Sacré Cœur de Taravaoが、ONLYOFFICEとMoodleを使用してすべての生徒にデジタル平等を確保する方法",
+  "Blog2Link": "https://www.onlyoffice.com/blog/ja/2023/02/college-lycee-sacre-coeur-de-taravao-onlyoffice-moodle",
+  "Blog2ImgUrl": "/images/templates/office-for-students/success-stories/blog2.jpg",
+
+  "Blog3": "南京大学がONLYOFFICE Docsを統合して教員と学生のコラボレーションを改善した方法",
+  "Blog3Link": "https://www.onlyoffice.com/blog/ja/2022/12/onlyoffice-docs-3",
+  "Blog3ImgUrl": "/images/templates/office-for-students/success-stories/blog3.jpg",
+
+  "HowCanOOHelp": "ONLYOFFICEは私の課題にどのように役立ちますか？",
+  "HowCanOOHelpAnswer": "文書、スプレッドシート、プレゼンテーション、PDFファイルを作成・編集するための多目的ツールを提供しています - これらはすべて課題に必要なものです。コラボレーション機能により、クラスメイトとリアルタイムで協力することができ、チームワークとレビューの効率が大幅に向上します。",
+  "CanIUseOOForGroup": "クラスメイトとのグループ課題にONLYOFFICEを使用できますか？",
+  "CanIUseOOForGroupAnswer": "はい、もちろんです！私たちのソリューションはコラボレーションを念頭に置いて作られました。リアルタイムの共同編集、コメント、組み込みチャット、バージョン履歴などの機能が、プロジェクト作業を本当に容易にします。各自が同時に文書で作業できるため、コラボレーションが簡素化されます。",
+  "DoesOOOfferTemplatesForAcademicDocuments": "ONLYOFFICEは学術文書のテンプレートを提供していますか？",
+  "DoesOOOfferTemplatesForAcademicDocumentsAnswer": "はい！私たちの<0>テンプレートライブラリ</0>には、レポートテンプレート、研究論文フォーマット、プレゼンテーションレイアウトなど、特別に設計された多くのテンプレートがあります。これにより、あなたの労力が少なくなり、重要なタスクにより多くの時間を割くことができます。",
+  "IsOOSecure": "ONLYOFFICEは機密情報の保存と配布に安全ですか？",
+  "IsOOSecureAnswer": "私たちは最も安全なオフィスソリューションの一つであることを誇りに思っています。<0>セキュリティを真剣に考えています</0>。プラットフォームに保存されているファイルの暗号化から、安全な配布とアクセス制御のための多数のオプションまで。さらに、データセキュリティを高めるために、私たちのソリューションは常にプライベートサーバーにデプロイすることができます。",
+  "IsOOFree": "ONLYOFFICEは無料ですか？",
+  "IsOOFreeAnswer": "はい、ONLYOFFICE Desktop Editorsは完全に無料のアプリケーションです。ONLYOFFICE DocSpaceは、学生に最適な無料プランを提供しています。",
+  "AreThereAnyIntegrations": "他のプラットフォームとの統合はありますか？",
+  "AreThereAnyIntegrationsAnswer": "はい、デスクトップアプリケーションをお好みのクラウドに接続する機能に加えて、オンラインエディター - <0>ONLYOFFICE Docs</0> - を教育機関で使用されているeラーニングサービスやデータ管理システムに統合することができます。これにより、コース構造内で直接Officeファイルを操作できます。人気のある既製の<1>統合</1>には、<2>Moodle</2>、Chamilo、ownCloud、Nextcloud、HumHubなどがあります。",
+  "WhatIfINeedToEditDocs": "Box / Dropboxに保存されている研究用の文書を編集する必要がある場合はどうすればよいですか？",
+  "WhatIfINeedToEditDocsAnswer": "ONLYOFFICEを使えばそれができます！<0>Box</0>または<1>Dropbox</1>用の無料アプリを使用してください。"
+}

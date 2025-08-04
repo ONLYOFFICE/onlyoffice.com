@@ -9,7 +9,7 @@ import {
 } from "./QuoteModal.styled";
 import { IQuoteModal } from "./QuoteModal.types";
 import { getFromParam } from "@src/utils/getParams";
-import { usePhoneInputStore } from "@src/store/phoneInputStore";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { countries } from "@src/config/data/countries";
 import { Modal } from "@src/components/ui/Modal";
 import { Heading } from "@src/components/ui/Heading";
@@ -38,7 +38,10 @@ const QuoteModal = <T,>({
   const { t } = useTranslation("PricingQuoteModal");
   const from = getFromParam();
 
-  const selectedCountry = usePhoneInputStore((state) => state.selectedCountry);
+  const selectedCountry = useIPGeolocationStore(
+    (state) => state.IPGeolocationInfo.country,
+  );
+
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
 
@@ -181,7 +184,7 @@ const QuoteModal = <T,>({
       withCloseBtn
       positionCloseBtn="inside"
     >
-      <StyledQuoteModal>
+      <StyledQuoteModal data-testid="pricing-modal-form">
         <StyledQuoteModalWrapper>
           <Heading level={4} textAlign="center" label={heading} />
 
@@ -324,6 +327,7 @@ const QuoteModal = <T,>({
 
           <LoaderButton
             onClick={onSubmit}
+            data-testid="pricing-modal-get-a-quote-button"
             status={formStatus}
             label={buttonLabel}
             disabled={!isFormValid}

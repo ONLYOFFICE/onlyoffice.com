@@ -121,8 +121,13 @@ const EnterpriseModal = ({
 
   return (
     <>
-      <Modal maxWidth="544px" isOpen={isOpen} onClose={onClose}>
-        <StyledEnterpriseModal>
+      <Modal
+        data-testid="enterprise-modal"
+        maxWidth="544px"
+        isOpen={isOpen}
+        onClose={onClose}
+      >
+        <StyledEnterpriseModal data-testid="enterprise-modal-form">
           <StyledEnterpriseModalHeading
             level={3}
             label={t("EnterpriseOnPremises")}
@@ -277,10 +282,12 @@ const EnterpriseModal = ({
             {isUponRequest ? (
               <StyledEnterpriseModalBtn
                 onClick={() => setIsModalOpen(true)}
+                data-testid="enterprise-modal-get-a-quote-button"
                 label={t("GetAQuote")}
               />
             ) : (
               <StyledEnterpriseModalBtn
+                data-testid="enterprise-modal-buy-now-button"
                 forwardedAs="a"
                 href={`${product.url}${affiliate.params}`}
                 target="_blank"
@@ -290,6 +297,7 @@ const EnterpriseModal = ({
 
             <StyledEnterpriseModalBtn
               onClick={onClose}
+              data-testid="enterprise-modal-cancel-button"
               forwardedAs="button"
               variant="tertiary"
               label={t("Cancel")}

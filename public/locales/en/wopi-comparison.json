@@ -1,0 +1,127 @@
+{
+  "PageTitle": "Compare integration methods of ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Find out the difference between integrating ONLYOFFICE Docs with any cloud service using either API or WOPI.",
+
+  "HeroTitle": "Compare integration of <0>ONLYOFFICE Docs</0> <1></1>via API and WOPI",
+  "HeroParagraph": "You can integrate <0>ONLYOFFICE Docs</0> with any cloud service using either API or WOPI.",
+  "HeroSmallerParagraph": "The table below will help you find out the difference between these options.",
+
+  "Header1": "API",
+  "Header2": "WOPI",
+
+  "Sub1": "General info",
+
+  "Par1AHead": "Application Programming Interface:",
+  "Par1ASub": "describes the main methods that allow you to interact with different ONLYOFFICE components, including editors, thus giving you programmatic access to it.",
+  "Par1ALink": "Learn more",
+
+  "Par1BHead": "Web Application Open Platform Interface:",
+  "Par1BSub": "REST-based protocol by Microsoft that defines a set of operations that enables a client to access and change files stored by a server.",
+  "Par1BLink": "Learn more",
+
+  "Sub2": "Integration with sync&share and DMS solutions",
+
+  "Par2ASub": "Integration via ready-to-use connectors developed by ONLYOFFICE or its partners.",
+  "Par2ALink": "Check all integrations",
+
+  "Par2BSub": "Integration via WOPI connector/universal WOPI client.",
+
+  "Sub3": "Customization",
+
+  "Item3A": "Setting an interface language and a theme for the editors",
+  "Item3B": "Hiding the Chat menu button",
+  "Item3C": "Changing information in the About section",
+  "Item3D": "Interface customization such as adjusting header and toolbars",
+  "Item3E": "Branding",
+  "Item3F": "Connecting plugins",
+
+  "Item3G": "Setting an interface language and a theme for the editors",
+  "Item3H": "Hiding the Chat menu button",
+  "Item3I": "Changing information in the About section",
+
+  "Out3A": "Other options under development",
+
+  "Sub4": "Basic actions",
+
+  "Item4A": "Viewing",
+  "Item4B": "Editing",
+  "Item4C": "Co-editing",
+  "Item4D": "Mobile viewing and editing",
+  "Item4E": "Simplified viewing (embedded)",
+
+  "Item4F": "Viewing",
+  "Item4G": "Editing",
+  "Item4H": "Co-editing",
+
+  "Out4A": "Other options under development",
+
+  "Sub5": "Additional actions: Methods",
+
+  "Item5A": "Downloading a file in the chosen format",
+  "Item5B": "Marking a file as favorite",
+  "Item5C": "Displaying tooltips with the message",
+
+  "Out5A": "Not available (under development)",
+
+  "Sub6": "Additional actions: Events",
+
+  "Item6A": "Closing the editor",
+  "Item6B": "Opening file location",
+  "Item6C": "Switching a file from the viewing into the editing mode",
+  "Item6D": "Renaming documents",
+  "Item6E": "Managing document access rights",
+  "Item6F": "Opening Version History",
+  "Item6G": "Inserting images from storage",
+  "Item6H": "Mail Merge",
+  "Item6I": "Comparison with a document from storage",
+  "Item6J": "Getting a link for opening a file at the bookmark position",
+  "Item6K": "Saving a file in the desired format",
+  "Item6L": "Mentioning other users in comments",
+  "Item6M": "Creating a new document",
+
+  "Item6N": "Closing the editor",
+  "Item6O": "Opening file location",
+  "Item6P": "Switching a file from the viewing into the editing mode",
+  "Item6Q": "Renaming documents",
+  "Item6R": "Managing document access rights",
+  "Item6S": "Opening Version History (differs from API realization)",
+  "Item6T": "Inserting images from storage",
+
+  "Out6A": "Other options under development",
+
+  "Sub7": "Security",
+
+  "Item7A": "IP address white listing",
+  "Item7B": "Verifying of requests and protection from unauthorized access using JWT",
+
+  "Item7C": "IP address white listing",
+  "Item7D": "Verifying of requests using proof keys",
+
+  "Sub8": "Document permissions",
+
+  "Item8A": "Viewing",
+  "Item8B": "Editing",
+  "Item8C": "Reviewing (text documents)",
+  "Item8D": "Commenting",
+  "Item8E": "Filling in forms",
+  "Item8F": "Modifying Content Controls (text documents)",
+  "Item8G": "Modifying filters (spreadsheets)",
+  "Item8H": "Copying to clipboard",
+  "Item8I": "Downloading",
+  "Item8J": "Printing",
+  "Item8K": "Renaming",
+
+  "Item8L": "Viewing",
+  "Item8M": "Editing",
+  "Item8N": "Reviewing (text documents)",
+  "Item8O": "Printing",
+  "Item8P": "Renaming",
+
+  "Out8A": "Other options under development",
+
+  "Button": "Get editors for integration",
+
+  "QuestionsHeader": "Still have any questions?",
+  "QuestionsParagraph": "Or would like to integrate ONLYOFFICE Docs with your cloud service?",
+  "QuestionsContact": "Contact us at <0>sales@onlyoffice.com</0>."
+}

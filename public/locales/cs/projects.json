@@ -1,0 +1,28 @@
+{
+  "PageTitle": "Efektivní nástroj pro správu projektů | ONLYOFFICE",
+  "PageDescription": "Naplánujte, spravujte a sledujte úkoly, projekty a jejich termíny dodání. Zvyšte produktivitu týmu.",
+
+  "HeroTitle": "Software pro správu projektů pro vysoký výkon týmu",
+  "HeroText": "Jedná se o dokonalý nástroj pro rychlé nebo středně velké projekty. Není to o nic komplikovanější než nákup na Amazonu.<br/><1>Od CMSWire</1>",
+  "GetItNow": "Získejte ONLYOFFICE",
+
+  "ProjectHierarchy": "Hierarchie projektu",
+  "ProjectHierarchyText": "Použijte milníky, úkoly a dílčí úkoly k určení priorit mezi vašimi primárními cíli a každodenními činnostmi. Přidávejte vlastní stavy úkolů.",
+  "ProjectHierarchyImage": "/images/templates/projects/features/cs/project_hierarchy.png",
+  "GanttChart": "Ganttův diagram",
+  "GanttChartText": "Analyzujte průběh projektu, aktualizujte plánované události a termíny několika kliknutími.",
+  "GanttChartImage": "/images/templates/projects/features/cs/gantt_chart.png",
+  "AccessRights": "Správa přístupových práv",
+  "AccessRightsText": "Nastavte individuální přístupová oprávnění pro různé prvky modulu a vytvořte soukromé projekty. Máte plnou kontrolu nad tím, co mohou ostatní vidět nebo jaké akce vykonávají.",
+  "AccessRightsImage": "/images/templates/projects/features/cs/access_rights.png",
+  "TimeManagement": "Organizace času",
+  "TimeManagementText": "Vyhodnoťte výkonnost týmu či projektové aktivity pomocí sady funkcí pro sledování času a automaticky generovaných hlášení.",
+  "TimeManagementImage": "/images/templates/projects/features/cs/time_management.png",
+
+  "MobileApps": "Mobilní aplikace",
+  "StayMobile": "Zůstaňte v pohybu!",
+  "WorkWithProjects": "Pracujte s projekty ze svých zařízení se systémy <0>iOS</0> a <1>Android</1>. Upravujte projektovou dokumentaci i na cestách.",
+
+  "ItsAPerfectTool": "Jedná se o dokonalý nástroj pro rychlé nebo středně velké projekty. Není to o nic komplikovanější než nákup na Amazonu.",
+  "CmsWire": "CMSWire"
+}

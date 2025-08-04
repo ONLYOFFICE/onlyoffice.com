@@ -1,0 +1,31 @@
+{
+  "PageTitle": "LibreOffice的替代方案 - 基于Web的办公套件",
+  "PageDescription": "LibreOffice的在线替代方案。下载Windows、Linux和Mac OS版。此外，您还可选择使用安卓和iOS版移动应用。丰富的功能和协作选项。",
+
+  "HeroTitle": "<0>ONLYOFFICE</0> - LibreOffice的最佳替代方案",
+  "GetOODocsNow": "立即获取ONLYOFFICE",
+  "CompatibleWithMicrosoftOfficeFormats": "100%与Microsoft Office格式兼容",
+
+  "ReasonsTitle": "ONLYOFFICE完美替代LibreOffice四个原因",
+  "MaximumCompatibility": "与微软Office文件的最大兼容性",
+  "MaximumCompatibilityText": "ONLYOFFICE Docs使用OOXML作为核心格式，保证与微软Word、Excel和PowerPoint文件（.docx、.xlsx和.pptx）的最高兼容性。",
+  "DesktopApp": "适用于Web、桌面、移动的设备",
+  "DesktopAppText": "使用ONLYOFFICE通过任何浏览器和操作系统在线处理文件。您可以通过适用于Windows、Linux和macOS的免费桌面应用程序离线编辑文档。而且，您也可以使用免费的安卓和iOS移动应用程序。",
+  "DocsSheetsSlides": "文档、电子表格、幻灯片、表单、PDF",
+  "DocsSheetsSlidesText": "编辑和协作处理任何复杂程度的文本文档和电子表格，制作完美的演示文稿，查看和注释 PDF 文件。从零开始创建专业的表单和模板，或使用任何现有的 DOCX 文档，让其他用户填写表单并另存为可填写的 PDF 文件。",
+  "Seamless": "有效协作",
+  "SeamlessText": "ONLYOFFICE 文档提供两种共同编辑模式、跟踪更改、版本历史记录、文档比较、评论和提及、内置聊天、音频和视频通话插件等功能。您可以通过访问权限设置（例如：评论、审查、填写表单、自定义过滤）轻松地分享您的文件。",
+  "Flexibility": "灵活性",
+  "FlexibilityText": "您可以选择使用在线编辑器的方式：将其作为基于房间的环境 ONLYOFFICE 协作空间的一部分、在任何同步共享或 ECM 服务（如 Nextcloud、Alfresco、Confluence、Seafile 等）中使用，或者集成到您自己开发的解决方案中。",
+  "AIHelper": "人工智能助手",
+  "AIHelperText": "连接任意 AI 提供商，使用不同的 AI 模型执行不同任务。使用 AI 助手插件来提高文章处理流程：进行单词分析并探索未知单词的含义，生成段落、图片和关键词，总结和翻译故事，查找同义词等。",
+
+  "PresentationTitle": "请观看<0>此演示文稿</0>，进一步了解两者差别：",
+
+  "OODocsVsLibreOfficeVsOpenOffice": "ONLYOFFICE vs LibreOffice vs OpenOffice [Tested Side By Side]",
+  "OODocsVsLibreOfficeVsOpenOfficeText": "Windows Report介绍了微软Office的替代品，包括ONLYOFFICE、LibreOffice和OpenOffice。Windows Report是高度可信的网络资源，提供与Windows相关的产品和服务，包括技术新闻和提示。",
+  "OODocsVsLibreOffice": "ONLYOFFICE vs LibreOffice: what to choose when you decide to ditch Microsoft",
+  "OODocsVsLibreOfficeText": "是的，Microsoft Office很酷，但是有一天您的预算可能无法再承担它，或者您希望追随开源潮流。无论出于什么原因，您都需要一个强大的替代方案。所以... ONLYOFFICE或LibreOffice？",
+
+  "WhatWentWrong": "LibreOffice的问题出在哪？<0>点击此处</0>阅读详情"
+}

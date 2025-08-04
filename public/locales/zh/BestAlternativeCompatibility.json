@@ -1,0 +1,6 @@
+{
+  "CheckOutTheCompatibility": "查看与MS Office格式的兼容性",
+  "CheckOutTheCompatibilityText": "我们使用其他套件将Microsoft创建的<0>docx文件</0>和<1>xlsx文件</1>保存为PDF。结果如下。",
+  "Documents": "文档 (.docx)",
+  "Spreadsheets": "电子表格 (.xlsx)"
+}

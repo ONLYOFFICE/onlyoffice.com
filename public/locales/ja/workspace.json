@@ -1,0 +1,74 @@
+{
+  "PageTitle": "チームのための作業領域",
+  "PageDescription": "明効率よく管理、共同編集、コミュニケーション",
+
+  "HeroTitle": "ONLYOFFICE ワークスペース",
+  "HeroText": "チームの管理と共同編集を効率良くするウェブアプリが結集",
+  "GetItNow": "今すぐ入手",
+
+  "ManageAllYourBusinessProcesses": "すべてのビジネスプロセスを管理する",
+  "LearnMore": "もっと詳しく",
+
+  "Documents": "ドキュメント",
+  "StoreAndOrganize": "ビジネスドキュメントを保存および整理！ドキュメントを共有し、ユーザーとグループのアクセス許可を管理する。<0>テキスト文書</0>、<1>スプレッドシート</1>、<2>プレゼンテーション</2>、<3>PDF ファイル</3>、<4>フォーム</4>を編集して共同作業できます。",
+  "HighestCompatibility": "MS Officeフォーマットとの最高の互換性",
+  "MultiFormat": "複数の形式のメディアプレーヤー",
+  "ReadyForms": "すぐに記入できるオンラインドキュメントフォーム",
+  "PrivateRooms": "エンドツーエンドの暗号化されたドキュメントコラボレーションのためのプラベートルーム",
+
+  "Mails": "メール",
+  "KeepYourMailboxOrganized": "メールボックスを整理！自社ドメイン上に、または既定メールボックスを使用して、会社のメールボックスを作成する。複数のメールアカウントを接続し、メッセージを管理およびタグ付けする。署名を作成し、テンプレートコンストラクターを利用する。",
+  "SupportOfCommonEmailProtocols": "一般的なメールプロトコルのサポート：POP3、SMTP、IMAP",
+  "UnlimitedNumber": "無制限のメールボックスとメールグループの数",
+  "FreeDefaultDomain": "無料の既定ドメイン",
+
+  "Crm": "CRM",
+  "OrganizeYourBusinessWorkflow": "リード ベースの構築から受注処理までのビジネ スプロセスを整理！レポートを作成し、チームの進捗状況を監視する。",
+  "WebToLead": "見込み顧客の簡単な作成するにはWeb-to-Leadフォーム",
+  "MakingCalls": "Twilioで電話をかける",
+  "CloseIntegration": "メール、プロジェクト、カレンダーとの統合",
+
+  "Projects": "プロジェクト",
+  "OrganizeYourTeam": "成功するチームワークを整理！プロジェクトを作成し、タスクに優先順位を付け、期限を設定する。時間を追跡し、レポートを生成して、チームの生産性を分析する。",
+  "GanttChart": "ガント チャート",
+  "PrivateProjects": "プライベート プロジェクトとアクセス権管理",
+  "Integration": "ドキュメント、カレンダー、CRMとの統合",
+  "WatchVideo": "ビデオを見る",
+
+  "Calendar": "カレンダー",
+  "ManageYourTime": "時間を賢く管理！個人またはチームのタイムテーブルを作成し、様々なイベントタイプを追加し、忘れないようにリマインダーを設定する。",
+  "CalendarSharing": "予定表の共有",
+  "Synchronization": "サードパーティアプリとの同期",
+  "CloseIntegrationWithModules": "すべてのONLYOFFICEモジュールとの統合",
+
+  "OOWorkspace": "ONLYOFFICE Workspace 12.5:",
+  "OOWorkspaceMobile": "ONLYOFFICE Workspace 12.5 リリース",
+  "OOWorkspaceText": "セキュリティの向上、ドキュメント管理の最適化、ダークテーマなど",
+
+  "WhyOOWorkspace": "ONLYOFFICE ワークスペースを選ぶ理由",
+  "Benefits": "オンラインワークスペースのメリット",
+
+  "ThirdParty": "サードパーティのサービス統合",
+  "ExtendYourWorkspace": "ログ、署名、認証、またはストレージ用のお気に入りのアプリとツールを使用して、ワークスペースの機能を拡張する。",
+  "FindAppsYouNeed": "必要なアプリを見つける",
+
+  "DataSecurityHeader": "データセキュリティーとデータコントロール",
+  "DataSecurity": "保存中の暗号化と転送中の暗号化。LDAP/Active Directory 認証。柔軟なアクセス権と JSON ウェブトークン。アクティビティ追跡、監査リポートなど",
+
+  "Administration": "管理とカスタム化",
+  "ManageYourWorkspace": "直感的なコントロールパネルを使用して、作業領域を内蔵カラーテーマでパーソナライズ。内蔵の配色パターン、ロゴ、タイトル、リンクの置き換え、ライトまたはダークインターフェイステーマの設定により、パーソナライズできます。",
+
+  "GettingStarted": "簡単に開始できます",
+  "UseOOWorkspace": "ONLYOFFICE ワークスペースをクラウドで使用するか、自分でホストするか、または設定済みインストールを開始してください。",
+
+  "GetStarted": "開始する",
+  "OvhMarketplace": "OVHcloud Marketplace",
+  "OneClickInstall": "ワンクリックでインストール、自動更新",
+
+  "SelfHosted": "セルフホスティング",
+  "Host": "オンプレミスでホスト",
+
+  "AwsMarketplace": "AWS マーケットプレイス",
+
+  "CommunityFooterText": "家庭での使用に向けたコミュニティーバージョンは、 <0>ここから</0> ダウンロードできます。"
+}
