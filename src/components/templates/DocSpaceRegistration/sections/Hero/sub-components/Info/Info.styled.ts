@@ -4,6 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 
 const StyledInfoBackLink = styled.button`
   display: inline-flex;
+  align-self: start;
   align-items: center;
   border: none;
   padding: 0;
@@ -39,6 +40,7 @@ const StyledInfoBackLink = styled.button`
   }
 
   @media ${device.mobile} {
+    align-self: initial;
     margin-bottom: 48px;
   }
 `;

@@ -1,25 +1,19 @@
-import { useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import {
   StyledImproveHeading,
   StyledImproveItems,
   StyledImproveText,
   StyledImproveSocialIcons,
-  StyledImproveSocialIcon,
-  StyledImproveSocialButton,
-  StyledImproveSocialIconLink,
 } from "./Improve.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
 import { ImproveItem } from "./sub-components/ImproveItem";
-import { socialIcons } from "./data/social-icons";
-import { MailModal } from "./sub-components/MailModal";
 import { items } from "./data/items";
+import { SocialIcons } from "@src/components/modules/SocialIcons";
 
 const Improve = () => {
   const { t } = useTranslation("contribute");
-  const [isMailModalOpen, setIsMailModalOpen] = useState(false);
 
   return (
     <Section desktopSpacing={["136px", "136px"]}>
@@ -80,29 +74,8 @@ const Improve = () => {
         </StyledImproveText>
 
         <StyledImproveSocialIcons>
-          {socialIcons.map((item, index) => (
-            <StyledImproveSocialIcon
-              key={index}
-              title={t(item.title)}
-              onClick={!item.link ? () => setIsMailModalOpen(true) : undefined}
-            >
-              {item.link ? (
-                <StyledImproveSocialIconLink
-                  $iconPosition={item.iconPosition}
-                  href={t(item.link)}
-                  target="_blank"
-                />
-              ) : (
-                <StyledImproveSocialButton $iconPosition={item.iconPosition} />
-              )}
-            </StyledImproveSocialIcon>
-          ))}
+          <SocialIcons />
         </StyledImproveSocialIcons>
-
-        <MailModal
-          isOpen={isMailModalOpen}
-          onClose={() => setIsMailModalOpen(false)}
-        />
       </Container>
     </Section>
   );

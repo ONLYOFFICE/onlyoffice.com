@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Compare ONLYOFFICE to MS Office Online, Google Docs, Zoho",
+  "PageDescription": "ONLYOFFICE Vlastnosti: dokument online editory, správu dokumentů, řízení projektu, Ganttův Graf, crm systém, fakturace, obchodní spolupráce, kalendář, mail agregátor",
+
+  "HeroTitle": "<0>ONLYOFFICE</0> světová jednička mezi online editory",
+  "HeroText": "ONLYOFFICE je sestaven pomocí prvku Canvas v HTML5. To ho činí špičkovým online kancelářským balíkem, který nabízí více možností než jiné kancelářské balíky.",
+  "GetItNow": "Pořídit hned teď",
+  "SeeItInAction": "Podívejte se na formulář v akci",
+  "HeroVideoText": "Shlédněte toto video a dozvíte se, proč je ONLYOFFICE nejlepší online kancelářským balíčkem",
+
+  "ComparisonTitle": "Pro důkladné porovnání <0>ONLYOFFICE Online Editorů</0> s dalšími kancelářemi se podívejte na odpovídající stránku",
+  "OODocsVsOfficeOnline": "ONLYOFFICE vs MS Office Online",
+  "OODocsVsGoogleDocs": "ONLYOFFICE vs Google Docs",
+  "OODocsVsZohoDocs": "ONLYOFFICE vs Zoho Docs",
+  "OODocsVsLibreOffice": "ONLYOFFICE vs LibreOffice",
+  "OODocsVsWPS": "ONLYOFFICE vs WPS",
+  "OODocsVsAdobe": "ONLYOFFICE vs Adobe",
+  "OODocsVsHancom": "ONLYOFFICE Docs vs Hancom",
+
+  "CheckOutTheCompatibility": "Podívejte se na kompatibilitu s formáty MS Office",
+  "CheckOutTheCompatibilityText": "Uložili jsme <0>docx soubor</0> a <1>xlsx soubor</1> vytvořený společností Microsoft v PDF s dalšími sadami. Zde je výsledek.",
+  "Documents": "Dokumenty (.docx)",
+  "Spreadsheets": "Tabulky (.xlsx)",
+
+  "StillNotConvinced": "Stále nejste přesvědčeni? Porovnejte editory sami!",
+  "StillNotConvincedText": "Stáhněte tento soubory <0>docx</0> a <1>xlsx</1> a zkuste je upravit pomocí programu MS Word Online, Google Docs, Zoho Docs, LibreOffice/OpenOffice, WPS Office, Hancom Office a ONLYOFFICE.",
+  "StillNotConvincedLink": "Přečtěte si, jak porovnávat editory",
+  "GetOODocsNow": "Získejte ONLYOFFICE nyní",
+  "TryItInTheCloud": "Použití v cloudu"
+}

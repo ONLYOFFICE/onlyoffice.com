@@ -1,0 +1,108 @@
+{
+  "PageTitle": "教育者向けONLYOFFICE",
+  "PageDescription": "フレキシブルなオフィススイートで講義を実現。学生や同僚と共同作業をしましょう。",
+
+  "OfficeForEducators": "<0>教育者</0>向けONLYOFFICE",
+  "BringYourLecturesToLife": "使いやすく柔軟なオフィススイートで講義を生き生きとさせましょう。学生や同僚と協力し、作成、共有、共同作業を行い、誰もが講義に最高のアクセスができるようにしましょう。",
+
+  "OODocsTitle": "<0>ONLYOFFICE Docs：</0>ラーニングプラットフォーム用のコラボレーションオンラインエディタ",
+  "OODocsDesc": "教材を簡単に作成し、共同執筆できます。教え方に対する制限は、あなたの想像力だけです。",
+
+  "FitToAnyLMSOrDMS": "あらゆるLMSまたはDMSに適合",
+  "FitToAnyLMSOrDMSDesc": "標準的なありふれた学校のコンピュータを使用しているか、あるいは、コンピュータを巧みに扱うタイプであるかに関わらず、ニーズや学生のニーズを満たす学習環境を作成できます。ONLYOFFICEは、一般的な教育およびコンテンツ管理プラットフォームに簡単に統合でき、コース構造内で直接ドキュメントを操作できます。",
+
+  "ExploreAllIntegrations": "すべての統合機能を見る",
+
+  "SeamlessAndUserFriendly": "シームレスで使いやすいオフィス体験",
+  "SeamlessAndUserFriendlyDesc": "学生を混乱させるのは、使用しているオフィススイートではなく、学習教材に限定すべきです。ONLYOFFICEは、<0>テキスト文書</0>、<1>スプレッドシート</1>、<2>プレゼンテーション</2>、<3>PDF</3>の編集に使いやすいインターフェースを提供します。すでに他のオフィススイートを使用した経験があれば、すぐに使い方を理解できるでしょう。",
+
+  "TailoredToCreate": "教育用コンテンツの作成に最適",
+  "TailoredToCreateDesc": "学生向けの有益なコンテンツを簡単に作成できます。生き生きとしたワークシート、カラフルなスライド、図表、画像、数式、YouTube動画の埋め込み機能を備えた総合的な複数ページのガイドなどです。ヘッダーやフッター、ページ番号、脚注、目次など、学術的な書式設定が可能です。<0>統合されたAIヘルパー</0>を使用して、必要な情報を素早く検索したり、講義の書き直しや翻訳などを行うことができます。",
+
+  "RatingYourStudentsEssays": "学生のエッセイの評価",
+  "RatingYourStudentsEssaysDesc": "提出された課題を評価するには、レビューモードを有効にします。文法、句読点、スペルを修正し、実際に文書を編集することなくコメントやメモを残すことができます。すべての変更提案は記録され、学生に表示されます。",
+
+  "YourOnlineLibrarysBestFriend": "オンラインライブラリーのベストフレンド",
+  "YourOnlineLibrarysBestFriendDesc1": "教師世代にとってはつらい現実ですが、印刷された本は以前ほど人気がありません。ノスタルジックな方はまだ涙を流すかもしれませんが、実用的な観点では素晴らしいニュースです。",
+  "YourOnlineLibrarysBestFriendDesc2": "ONLYOFFICE Docsでは、EPUB、FB2、PDFファイルを読むことができ、また、ドキュメントから独自の<0>電子書籍を作成する</0>こともできます。知識はより迅速に入手でき、学生は常に文献を手元に置くことができます。",
+  "YourOnlineLibrarysBestFriendDesc3": "また、正直に言いますと、すべての書籍をクラウドに保存すれば、自宅に忘れてくることもありません。",
+
+  "StartFreeTrial": "無料トライアルを始める",
+  "RequestFreeDemo": "無料デモをリクエスト",
+
+  "OODocSpaceTitle": "<0>ONLYOFFICE DocSpace：</0>カスタマイズ可能なルームで教材と学生を結びつけます",
+  "OODocSpaceTitleDesc": "グループ課題を学生に割り当てる際に、さらに柔軟性が必要な場合(または、適切なLMSが手元にない場合)、ONLYOFFICE DocSpaceが最適なソリューションです。ここでは、仮想ルーム内のプロジェクトファイルの表示、共同作業、共有を誰が行うかを制御できます。",
+
+  "FillableAssignments": "記入式の課題？簡単です！",
+  "FillableAssignmentsDesc": "テキストエリア、画像、コンボボックス、ドロップダウンリスト、日付、チェックボックス、ラジオボタンなど、さまざまな入力フィールドを備えたカスタマイズされたPDFテストを作成します。<0>フォーム記入ルーム</0>で、テストの回答を簡単に収集・分析できます。",
+
+  "EasySharing": "資料の共有が簡単",
+  "EasySharingDesc": "本質に集中：教育と知識の共有に集中してください。その他のことはお任せください！ONLYOFFICE DocSpaceの<0>パブリックルーム</0>では、登録なしで、学生や同僚が保存されたワークブック、配布資料、コースプレゼンテーション、その他の資料を閲覧することができます。",
+
+  "AnotherTaskInMind": "次のレッスンでやるべきことは？",
+  "AnotherTaskInMindDesc": "心配ご無用!DocSpaceでは、チャットやコメントなどの組み込みのコミュニケーションツールを使って、<0>コラボレーションルーム</0>でプロジェクトの詳細を話し合ったり、アイデアを共有したり、フィードバックを提供したりすることができます。また、あらゆるタスクや目的に合わせて柔軟に設定できる<1>カスタムルーム</1>作成することもできます。さらに、Zoomを使ったレッスン中に、ビデオセッション内でコースファイルや教材を共同編集してデモンストレーションを行うための<2>ミーティングルーム</2>もご利用いただけます。",
+
+  "FlexiblePermissionsAndRoles": "柔軟な権限と役割",
+  "FlexiblePermissionsAndRolesDesc": "幅広い柔軟な権限により、会議室へのアクセスをきめ細かく設定できます。管理権限を持つ会議室管理者、拡張ユーザー権限を持つパワーユーザー、会議室ファイルへのフルアクセス権を持つエディタ、該当する権限を持つレビュアー、コメント者、フォーム入力者、閲覧者(読み取り専用アクセス)などです。これにより、招待した人々にタスクの種類に応じて役割を割り当てたり、学生の個人情報、成績、学術論文などの機密性の高いファイルを保護したりすることができます。",
+
+  "GetStarted": "始める",
+
+  "FreeCloud": "学校向け<0>無料クラウド</0>",
+  "FreeCloudText": "学校向けにDocSpaceクラウドを無料で作成できます。2GBのストレージと最大20の管理アカウントをご利用いただけます。",
+  "SubmitRequest": "リクエストを送信",
+
+  "WhyOOTitle": "<0>なぜ</0>ONLYOFFICE？",
+  "WhyOODesc": "多くのオプション、多くのソリューション、それぞれが本物であると主張しています。私たちはそのことを知っています。しかし、私たちは本当に本物です。信じてください!信じなくても結構です。なぜなら、ONLYOFFICEと教育が完璧に調和する方法をお見せできるからです。",
+
+  "ItProvidesFreeApps": "無料のデスクトップおよびモバイルアプリを提供している",
+  "ItProvidesFreeAppsDesc": "ONLYOFFICEはオンラインドキュメントでの作業用に設計されていますが、Windows、macOS、Linux用の完全無<0>料のデスクトップアプリ</0>、および<1>iOS</1>と<2>Android</2>用の無料モバイルアプリで作業を補完することもできます。 つまり、教材をどこで、どのデバイスで作業し、編集するかはあなた次第です。",
+
+  "ItsAffordable": "手頃な価格",
+  "ItsAffordableDesc": "時には、すべてはお金の問題です。学校や教育機関の予算が厳しい場合、すべての教育と学習のニーズを満たす適切なソリューションを見つけるのは難しい場合があります。しかし、ONLYOFFICEは、教育機関向け割引が提供されているため、学校や大学にとっては非常に手頃な価格です。また、学生は完全に無料で利用できます。",
+
+  "ItsHighlyCustomizable": "内蔵のプラグインマーケットプレイスで高度にカスタマイズできる",
+  "ItsHighlyCustomizableDesc": "<0>数多くのプラグイン</0>でONLYOFFICEの機能を強化し、ONLYOFFICEの使用感をカスタマイズできます。ChatGPTプラグインで文書作業を強化したり、MendeleyやZoteroの文献管理プラグインで調査を簡素化したり、LanguageTool & OCRで執筆や校正を改善したりなど、さまざまな用途に対応できます。",
+
+  "ItsFullyCompatible": "MS Office ファイルや PDF（およびほぼすべての他のオフィスファイル形式）と完全に互換性がある",
+  "ItsFullyCompatibleDesc": "学生や同僚があなたの文書を読めないという心配は無用です。ONLYOFFICE は MS Office ファイル(DOCX、XLSX、PPTS など)、Adobe PDF ファイル、およびその他のほとんどのファイル形式とシームレスに動作します。",
+
+  "YouWontFindABetterPlaceToCollaborate": "コラボレーションにこれ以上の場所はない",
+  "YouWontFindABetterPlaceToCollaborateDesc": "ONLYOFFICEは、コラボレーションをシームレスで簡単かつ効率的に行うという1つの大きな目標を持って構築されました。そして、その成果が表れています。どこにも見られない無数の機能により、学生、同僚、そしてあなた自身を新しい方法で結びつけることができます。",
+
+  "GetItNow": "今すぐ入手",
+  "TryInTheCloud": "クラウドで試してみる",
+
+  "SuccessStoriesTitle": "成功事例でやり方をご紹介",
+  "SuccessStoriesText": "ONLYOFFICEと教育がいかに相性が良いかについて、延々と語ることもできます。しかし、他のユーザーの成功事例を実演してお見せする方が良いでしょう。",
+
+  "DigitalTransformation": "高等教育におけるデジタル変革：ジャンビ大学がONLYOFFICE Docsを導入した方法",
+  "DigitalTransformationLink": "https://www.onlyoffice.com/blog/ja/2022/11/dx-onlyoffice-docs",
+  "DigitalTransformationImgUrl": "/images/templates/office-for-educators/success-stories/transformation.png",
+
+  "HowOOFacilitatesCollaboration": "ONLYOFFICEがドナウエッシンゲンの学校でのコラボレーションを促進する方法",
+  "HowOOFacilitatesCollaborationLink": "https://www.onlyoffice.com/blog/ja/2023/10/onlyoffice-in-donaueschingen-schools",
+  "HowOOFacilitatesCollaborationImgUrl": "/images/templates/office-for-educators/success-stories/collaboration.png",
+
+  "HowCollegeLyceeSacreCoeur": "Collège-Lycée Sacré Cœur de TaravaoがONLYOFFICEとMoodleを使用してすべての学生にデジタル平等を確保する方法",
+  "HowCollegeLyceeSacreCoeurLink": "https://www.onlyoffice.com/blog/ja/2023/02/college-lycee-sacre-coeur-de-taravao-onlyoffice-moodle",
+  "HowCollegeLyceeSacreCoeurImgUrl": "/images/templates/office-for-educators/success-stories/digital-equality.png",
+
+  "HowKinderhausBerlinSharesAndCollaborates": "ONLYOFFICE DocSpaceで、キンダーハウス・ベルリンが機密ファイルを共有し、共同作業を行っている方法",
+  "HowKinderhausBerlinSharesAndCollaboratesLink": "https://www.onlyoffice.com/blog/ja/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "HowKinderhausBerlinSharesAndCollaboratesImgUrl": "/images/templates/office-for-educators/success-stories/sensitive.png",
+
+  "HowCanOOAssist": "ONLYOFFICEは、私が学生に与える課題にどのように役立ちますか？",
+  "HowCanOOAssistAnswer": "ONLYOFFICEは、課題に不可欠な文書、スプレッドシート、プレゼンテーション、PDFの作成と編集のためのさまざまなツールを提供します。さらに、<0>コラボレーション機能</0>により、クラスとリアルタイムで作業でき、グループプロジェクトや相互評価の効率が大幅に向上します。",
+
+  "CanIUseOOForCollaborative": "ONLYOFFICEを授業内の共同プロジェクトに利用できますか？",
+  "CanIUseOOForCollaborativeAnswer": "もちろん利用できます!ONLYOFFICEは共同作業を念頭に置いて設計されています。リアルタイム共同編集、コメント、DocSpaceコラボレーションルームなどの機能により、学生にグループ課題やプロジェクトで共同作業を行わせることが容易になります。あなたと学生は同時にドキュメントを編集することができ、チームワークを簡素化します。",
+
+  "DoesOOOfferTemplates": "ONLYOFFICEは学術文書のテンプレートを提供していますか？",
+  "DoesOOOfferTemplatesAnswer": "はい、提供しています！<0>テンプレートライブラリ</0>には、レポートテンプレート、研究論文フォーマット、プレゼンテーションレイアウトなど、学術用途に合わせたさまざまなテンプレートが含まれています。これにより、書式設定に時間をかけることなく、コンテンツに集中することができます。",
+
+  "IsOOSecure": "ONLYOFFICEは、機密性の高い学術情報の保存と共有に安全ですか？",
+  "IsOOSecureAnswer": "はい、強固な対策で<0>セキュリティを優先しています</0>。ONLYOFFICEはオープンソースであり、GDPRに準拠しています。つまり、教育機関向けのデータ保護とプライバシーに関するすべての法的基準を満たしています。ONLYOFFICEには、ファイル暗号化と安全な共有とアクセス制御のための複数のオプションが含まれています。さらに、弊社のソリューションはプライベートサーバーに展開できます。",
+
+  "IsOOFree": "ONLYOFFICEは無料ですか？",
+  "IsOOFreeAnswer": "私たちは学校向けにDocSpace Cloudを無料で提供しています。ONLYOFFICE Docsについては、教育機関や学生プログラムを通じて割引や補助プランが利用できる場合があります。"
+}

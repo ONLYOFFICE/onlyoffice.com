@@ -10,7 +10,7 @@ export default {
     docs: {
       description: {
         component:
-          "`PasswordInput` includes a password field with a toggle to show or hide the value. It also features a built-in password complexity checker with visual feedback: `bad`, `good`, or `perfect`.",
+          "`PasswordInput` includes a password field with a toggle to show or hide the value.",
       },
     },
   },

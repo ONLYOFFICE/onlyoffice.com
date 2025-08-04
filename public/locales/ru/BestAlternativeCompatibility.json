@@ -1,0 +1,6 @@
+{
+  "CheckOutTheCompatibility": "Проверьте совместимость с форматами MS Office",
+  "CheckOutTheCompatibilityText": "Мы сохранили <0>файл docx</0> и <1>файл xlsx</1>, созданные в десктопном редакторе Microsoft Word, в формат PDF с помощью других офисных пакетов. Вот что получилось.",
+  "Documents": "Документы (.docx)",
+  "Spreadsheets": "Таблицы (.xlsx)"
+}

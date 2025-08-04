@@ -1,0 +1,27 @@
+{
+  "PageTitle": "Zoho Docs的最佳替代方案",
+  "PageDescription": "将ONLYOFFICE和Zoho Docs进行对比。在不同平台上打开同一个DOCX文档并对比效果。",
+
+  "HeroTitle": "<0>ONLYOFFICE</0> - Zoho Docs的最佳替代方案",
+  "GetOODocsNow": "立即获取ONLYOFFICE",
+  "CompatibleWithMicrosoftOfficeFormats": "100%与Microsoft Office格式兼容",
+
+  "ReasonsTitle": "ONLYOFFICE完美替代Zoho Docs五大理由",
+  "OpenSource": "开源",
+  "OpenSourceText": "ONLYOFFICE为用户提供开源的解决方案。您可以在GitHub上找到我们软件的源代码，这确保其透明度和可靠性：您可以随时查看。",
+  "DesktopApp": "适用于Web、桌面、移动的设备",
+  "DesktopAppText": "使用ONLYOFFICE通过任何浏览器和操作系统在线处理文件。您可以通过适用于Windows、Linux和macOS的免费桌面应用程序离线编辑文档。而且，您也可以使用免费的安卓和iOS移动应用程序。",
+  "DocsSheetsSlides": "文档、电子表格、幻灯片、表单、PDF",
+  "DocsSheetsSlidesText": "编辑和协作处理任何复杂程度的文本文档和电子表格，制作完美的演示文稿，查看和注释 PDF 文件。从零开始创建专业的表单和模板，或使用任何现有的 DOCX 文档，让其他用户填写表单并另存为可填写的 PDF 文件。",
+  "Seamless": "有效协作",
+  "SeamlessText": "ONLYOFFICE 文档提供两种共同编辑模式、跟踪更改、版本历史记录、文档比较、评论和提及、内置聊天、音频和视频通话插件等功能。您可以通过访问权限设置（例如：评论、审查、填写表单、自定义过滤）轻松地分享您的文件。",
+  "Flexibility": "灵活性",
+  "FlexibilityText": "您可以选择使用在线编辑器的方式：将其作为基于房间的环境 ONLYOFFICE 协作空间的一部分、在任何同步共享或 ECM 服务（如 Nextcloud、Alfresco、Confluence、Seafile 等）中使用，或者集成到您自己开发的解决方案中。",
+  "AIHelper": "人工智能助手",
+  "AIHelperText": "使用 AI 助手插件来提高文章处理流程：进行单词分析并探索未知单词的含义，生成段落、图片和关键词，总结和翻译故事，查找同义词等。",
+  "Security": "数据安全",
+  "SecurityText": "开源的ONLYOFFICE解决方案可以部署到您自己的服务器上，因此所有的数据都在内部保留。私密房间允许以始终加密的方式存储、编辑并共同编写文件。",
+
+  "PresentationTitle": "请观看<0>此演示文稿</0>，进一步了解两者差别：",
+  "WhatWentWrong": "Zoho Docs的问题出在哪？<0>点击此处</0>阅读详情"
+}

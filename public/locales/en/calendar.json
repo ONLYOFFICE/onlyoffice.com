@@ -1,0 +1,26 @@
+{
+  "PageTitle": "Time management tool for staying organized | ONLYOFFICE",
+  "PageDescription": "Create your personal and team timetable, manage calendar events with ease.",
+
+  "HeroTitle": "Efficient time management tool",
+  "HeroText": "Keep your team organized and productive",
+  "HeroImage": "/images/templates/calendar/hero/hero_image.png",
+  "HeroImage2x": "/images/templates/calendar/hero/hero_image@2x.png",
+  "GetItNow": "Get it now",
+
+  "IndividualOrGroup": "Individual or group calendar",
+  "IndividualOrGroupText": "Create personal timetables and <0>share calendars</0>, with the ability to grant access to a certain person or schedule group meetings.",
+  "IndividualOrGroupImage": "/images/templates/calendar/features/en/individual_or_group.png",
+  "SimpleScheduling": "Simple scheduling with different event types",
+  "SimpleSchedulingText": "Create all-day, multi-day, and recurring events. Add to-dos to your timetable. Send invitations to any user. Use reminders to never miss a thing.",
+  "SimpleSchedulingImage": "/images/templates/calendar/features/en/simple_scheduling.png",
+  "Synchronization": "Synchronization with third-party applications",
+  "SynchronizationText": "Import events, add an iCal feed from Google, Apple iCal or Yahoo!, sync your calendar using CalDAV protocol, and track everything in one place.",
+  "SynchronizationImage": "/images/templates/calendar/features/en/synchronization.png",
+  "CloseIntegration": "Close integration with all ONLYOFFICE modules",
+  "CloseIntegrationText": "Track your milestones, projects, and CRM tasks. Receive notifications about upcoming birthdays. Send and receive invitations to important calendar events.",
+  "CloseIntegrationImage": "/images/templates/calendar/features/en/close_integration.png",
+
+  "EasyToUse": "Easy to use software with an array of business-friendly collaboration features.",
+  "PcMag": "PC Mag"
+}

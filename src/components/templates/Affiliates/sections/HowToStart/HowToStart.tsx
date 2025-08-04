@@ -30,7 +30,7 @@ const HowToStart = () => {
                 t={t}
                 i18nKey={String(item.heading)}
                 components={[
-                  <Text as="span" color="#333" fontWeight={700} key="0" />,
+                  <Text as="span" fontStyle="italic" color="#333" fontWeight={700} key="0" />,
                 ]}
               />
             ),

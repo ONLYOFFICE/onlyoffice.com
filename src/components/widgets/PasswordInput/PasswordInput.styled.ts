@@ -1,20 +1,7 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { Input } from "@src/components/ui/Input";
 
-const StyledPasswordInput = styled(Input)<{
-  $checkPasswordComplexity: "perfect" | "good" | "bad" | "";
-}>`
-  ${(props) =>
-    props.$checkPasswordComplexity === "good" &&
-    css`
-      border-color: #ebb881;
-      background: #fffcf7;
-
-      label {
-        color: #aaaaaa;
-      }
-    `}
-
+const StyledPasswordInput = styled(Input)`
   input {
     padding: 24px 56px 8px 16px;
   }

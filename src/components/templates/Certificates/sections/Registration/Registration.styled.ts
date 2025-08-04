@@ -47,11 +47,16 @@ const StyledRegistration = styled.div`
   }
 `;
 
-const StyledRegistrationContent = styled.div`
+const StyledRegistrationContent = styled.div<{ $locale?: string }>`
   display: flex;
   align-items: center;
-  flex: 0 1 808px;
   margin-right: 24px;
+  flex: ${({ $locale }) =>
+    $locale === "fr"
+      ? "0 1 767px"
+      : $locale === "de"
+        ? "0 1 790px"
+        : "0 1 808px"};
 
   @media ${device.tabletS} {
     flex: initial;

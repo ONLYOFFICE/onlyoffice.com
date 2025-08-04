@@ -1,0 +1,1 @@
+export { Ambassador } from "./Ambassador";
