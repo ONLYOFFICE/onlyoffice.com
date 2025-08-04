@@ -20,9 +20,7 @@ const OnlineDocumentConverterTemplate = ({ ratingData }: IRating) => {
             components={[<Text key="0" as="span" color="main" />]}
           />
         }
-        subHeading={t(
-          "Convert text documents, spreadsheets, presentations, and PDF",
-        )}
+        subHeading={t("BrowseComputer")}
         ratingData={{ ratingData }}
       />
       <SupportedFormats />
