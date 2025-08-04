@@ -37,5 +37,52 @@
   "AlreadyUseFeature1": "Keep patient information in text documents, spreadsheets, or presentations encrypted end-to-end. Securely edit and collaborate on them in real-time. Highly compatible with MS Office formats.",
   "AlreadyUseFeature2": "Set granular document permissions. Use a variety of collaboration features, including version history, track changes, comments, and built-in chat.",
   "AlreadyUseFeature3": "Protect patient information from being copied, downloaded, or printed.",
-  "AlreadyUseImgUrl": "/images/templates/healthcare/flexible-choice/new_icon_2.svg"
+  "AlreadyUseImgUrl": "/images/templates/healthcare/flexible-choice/new_icon_2.svg",
+
+
+  "UltimateProtectionHealthcareData": "<0>Ultimate protection</0> of healthcare data against modern-day threats",
+  "OOCompliantWithHipaaPrivacy": "ONLYOFFICE comes with built-in features to help your IT department stay compliant with <0>HIPAA privacy</0> and security rules",
+
+  "EncryptDataAtRestAndTransit": "Encrypt data at rest and in transit",
+  "EncryptDataP1": "Encrypting data at rest and in transit makes it impossible for attackers to decipher patients’ data even if they gain access to them.",
+  "EncryptDataP2": "ONLYOFFICE uses the industry-leading AES-256 encryption standard to protect sensitive data at rest. Data is protected in transit by use of HTTPS protocols with up-to-date TLS encryption algorithm.",
+  "EncryptDataP3": "ONLYOFFICE Enterprise comes with private rooms that ensure ultimate data security. Every symbol you type is encrypted end-to-end.",
+  "EncryptDataImgUrl": "/images/templates/healthcare/screens/first/en/index_1_@x1.png",
+  "EncryptDataImgUrl2x": "/images/templates/healthcare/screens/first/en/index_1_@x2.png",
+  "LearnHowItWorks": "Learn how it works",
+
+  "RestrictAccessToData": "Restrict access to data",
+  "RestrictAccessP1": "Give access to patients’ data only to those who require it to perform their jobs.",
+  "RestrictAccessP2": "ONLYOFFICE offers granular document permissions to control access including full access, view-only, comments, review or fillable form modes.",
+  "RestrictAccessP3": "To validate that users are authorized to access patients’ data, ONLYOFFICE Workspace comes with a set of authentication features:",
+
+  "TwoFactorAuthentication": "two-factor authentication;",
+  "SingleSignOn": "Single Sign-On (SSO);",
+  "TrustedMailDomains": "trusted mail domains;",
+  "PasswordCreationCriteria": "password creation criteria;",
+  "CookieLifetime": "cookie lifetime;",
+  "IpRestriction": "IP restriction;",
+
+  "RestrictAccessP4": "It also allows IT departments to restrict access to ONLYOFFICE Workspace modules and tools.",
+  "RestrictAccessImgUrl": "/images/templates/healthcare/screens/second/en/index_2_@x1.png",
+  "RestrictAccessImgUrl2x": "/images/templates/healthcare/screens/second/en/index_2_@x2.png",
+
+  "ProtectDataUsage": "Protect data usage",
+  "ProtectDataUsageP1": "Protect patient information from being copied, downloaded, or printed.",
+  "ProtectDataUsageP2": "ONLYOFFICE API allows IT departments to implement additional controls to block risky activities with sensitive data.",
+  "ProtectDataImgUrl": "/images/templates/healthcare/screens/third/en/index_3_@x1.png",
+  "ProtectDataImgUrl2x": "/images/templates/healthcare/screens/third/en/index_3_@x2.png",
+  "VisitAll": "Visit All",
+
+  "LogAndMonitorDataUsage": "Log and monitor data usage",
+  "LogAndMonitorDataUsageP1": "Monitor who, when, and what devices and locations access the information.",
+  "LogAndMonitorDataUsageP2": "ONLYOFFICE Workspace comes with built-in audit logs and monitoring tools that allow you to quickly identify and fix problems if an incident occurs.",
+  "LogAndMonitorImgUrl": "/images/templates/healthcare/screens/fourth/en/index_4_@x1.png",
+  "LogAndMonitorImgUrl2x": "/images/templates/healthcare/screens/fourth/en/index_4_@x2.png",
+
+  "BackupAndRestoreData": "Backup and restore your data",
+  "BackupAndRestoreP1": "Protect your sensitive data integrity and availability with regular backups.",
+  "BackupAndRestoreP2": "ONLYOFFICE Workspace offers tools for automatic backup and data restoration allowing IT departments within healthcare organizations to choose a location for their backups: local disk or any third-party private cloud storage.",
+  "BackupAndRestoreImgUrl": "/images/templates/healthcare/screens/fifth/en/index_5_@x1.png",
+  "BackupAndRestoreImgUrl2x": "/images/templates/healthcare/screens/fifth/en/index_5_@x2.png"
 }
