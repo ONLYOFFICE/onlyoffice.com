@@ -12,8 +12,6 @@ import { Text } from "@src/components/ui/Text";
 
 const Hero = () => {
   const { t } = useTranslation("healthcare");
-  
-console.log('Client translation:', t('OOForEducators'));
 
   return (
     <StyledHeroSection
