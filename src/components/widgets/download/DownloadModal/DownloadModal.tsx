@@ -8,7 +8,7 @@ import {
 } from "./DownloadModal.styled";
 import { IDownloadModal } from "./DownloadModal.types";
 import { getFromParam } from "@src/utils/getParams";
-import { usePhoneInputStore } from "@src/store/phoneInputStore";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { countries } from "@src/config/data/countries";
 import { Modal } from "@src/components/ui/Modal";
 import { Heading } from "@src/components/ui/Heading";
@@ -40,7 +40,9 @@ const DownloadModal = ({
   const { t } = useTranslation("DownloadModal");
   const from = getFromParam();
 
-  const selectedCountry = usePhoneInputStore((state) => state.selectedCountry);
+  const selectedCountry = useIPGeolocationStore(
+    (state) => state.IPGeolocationInfo.country,
+  );
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
 
