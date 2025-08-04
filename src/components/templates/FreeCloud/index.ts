@@ -1,0 +1,1 @@
+export { FreeCloudTemplate } from "./FreeCloud";

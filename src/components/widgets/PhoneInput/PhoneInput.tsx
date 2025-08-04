@@ -6,10 +6,7 @@ import {
   useEffect,
 } from "react";
 import { useTranslation } from "next-i18next";
-import {
-  usePhoneInputStore,
-  IPhoneInputStore,
-} from "@src/store/phoneInputStore";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import {
   StyledPhoneInput,
   StyledPhoneInputLeftSide,
@@ -25,16 +22,13 @@ import { countries } from "@src/config/data/countries";
 const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
   ({ id, className, status, onChange, onBlur }, ref) => {
     const { t } = useTranslation("PhoneInput");
+    const { IPGeolocationInfo, setIPGeolocationInfo } = useIPGeolocationStore();
     const leftSideRef = useRef<HTMLButtonElement>(null);
     const countriesRef = useRef<HTMLDivElement>(null);
 
     const [isOpen, setIsOpen] = useState(false);
-    const selectedKey = usePhoneInputStore(
-      (state: IPhoneInputStore) => state.selectedCountry,
-    );
-    const setSelectedCountry = usePhoneInputStore(
-      (state: IPhoneInputStore) => state.setSelectedCountry,
-    );
+    const [selectedKey, setSelectedCountry] = useState("US");
+
     const currentValue = countries.find(
       (item) => item.country === selectedKey,
     ) || {
@@ -60,17 +54,22 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
     }));
 
     useEffect(() => {
-      const fetchGeolocation = async () => {
+      (async () => {
         try {
-          const response = await fetch("/api/ip-geolocation");
-          const data = await response.json();
+          if (IPGeolocationInfo.regionDbEntity.domain) {
+            setSelectedCountry(IPGeolocationInfo.country);
+            return;
+          }
+
+          const res = await fetch("/api/ip-geolocation");
+          const data = await res.json();
+
           setSelectedCountry(data.country);
+          setIPGeolocationInfo(data);
         } catch (error) {
           console.error("Error fetching IP:", error);
         }
-      };
-
-      fetchGeolocation();
+      })();
 
       const handleClickOutside = (e: MouseEvent) => {
         const target = e.target as Node;
@@ -86,7 +85,11 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
       document.addEventListener("mousedown", handleClickOutside);
       return () =>
         document.removeEventListener("mousedown", handleClickOutside);
-    }, [setSelectedCountry]);
+    }, [
+      IPGeolocationInfo.country,
+      IPGeolocationInfo.regionDbEntity.domain,
+      setIPGeolocationInfo,
+    ]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setInputValue(e.target.value);
