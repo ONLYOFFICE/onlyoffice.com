@@ -1,0 +1,41 @@
+{
+    "PageTitle": "Free task management app for Android | ONLYOFFICE",
+    "PageDescription": "Manage your team performance on the go. Track your projects anywhere from your Android device.",
+
+    "ONLYOFFICEProjects": "<0>ONLYOFFICE Projects,</0> free task management app for Android",
+    "PocketProject": "Pocket project management tool",
+    "HeroImgUrl": "/images/templates/projects-for-android/hero/googleplay.png",
+    "HeroUrl": "https://play.google.com/store/apps/details?id=com.onlyoffice.documents",
+
+    "ManageYourTeam": "Manage your team performance on the go",
+    "TrackCurrentWorkload": "Track current workload",
+    "QuicklyBrowseSortAndFilter": "Quickly browse, sort and filter the existing projects and tasks, edit them, change status, assignees and due dates. Access work documents attached to each project.",
+    "ManageNewProjects": "Manage new projects",
+    "CreateNewProjects": "Create new projects and tasks and assign the responsible members. Set priorities and add smaller subtasks. Bind tasks to milestones to plan your work in time.",
+    "Communicate": "Communicate",
+    "StartProjectDiscussions": "Start project discussions to brainstorm ideas, solve issues, ask questions, and make announcements. Leave comments to take part in the communication process.",
+    "KeepYourProjectsSafe": "Keep your projects safe",
+    "MakeSureNoUnauthorized": "Make sure no unauthorized users can access your projects. Secure the application with a code, activate 2FA or authentication with a fingerprint.",
+    "WorkComfortably": "Work comfortably",
+    "EnjoyAnIntuitiveInterface": "Enjoy an intuitive interface and navigate seamlessly around all your projects and tasks. Protect your eyesight in poorly illuminated environments by switching to the Dark mode.",
+    "TrackCurrentWorkloadImage": "/images/templates/projects-for-android/features/track-current-workload.svg",
+    "ManageNewProjectsImage": "/images/templates/projects-for-android/features/manage-new-projects.svg",
+    "CommunicateImage": "/images/templates/projects-for-android/features/communicate-screen.svg",
+    "KeepYourProjectsSafeImage": "/images/templates/projects-for-android/features/keep-your-projects-safe.svg",
+    "WorkComfortablyImage": "/images/templates/projects-for-android/features/work-comfortably.svg",
+
+    "HowToStart": "How to start",
+    "CreateYourONLYOFFICEWorkspace": "<0>1.</0> Create your <1>ONLYOFFICE Workspace</1> account if you don’t have one.",
+    "LaunchInTheCloud": "Launch in the cloud",
+    "RunOnYourOwnServer": "Run on your own server",
+    "ConnectTheApp": "<0>2.</0> Connect the app to your ONLYOFFICE Workspace portal.",
+    "CreateAndTrack": "<0>3.</0> Create and track projects & tasks on the go.",
+
+    "YourBenefits": "Your benefits",
+    "QuickAccessToYourWorkflows": "Quick access to your workflows in ONLYOFFICE",
+    "CleanAndIntuitiveUI": "Clean and intuitive UI",
+    "NoAds": "No ads or in-app purchases",
+    "RegularUpdates": "Regular updates",
+    "TechnicalSupport": "Technical support",
+    "OnlineDocumentation": "Online documentation"
+}
