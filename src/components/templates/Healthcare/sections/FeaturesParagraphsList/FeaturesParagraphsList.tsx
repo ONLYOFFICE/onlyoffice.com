@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import {
   StyledUPHeadingBox,
   StyledFeaturesHeading,
@@ -15,6 +16,7 @@ import { Container } from "@src/components/ui/Container";
 
 const FeaturesParagraphsList = () => {
   const { t } = useTranslation("healthcare");
+  const locale = useRouter();
 
   return (
     <Section
@@ -25,7 +27,7 @@ const FeaturesParagraphsList = () => {
     >
       <Container>
         <StyledUPHeadingBox>
-        <StyledFeaturesHeading level={2} size={3} textAlign="center">
+        <StyledFeaturesHeading level={2} size={3} textAlign="center" className={locale.locale}>
           <Trans
             t={t}
             i18nKey="UltimateProtectionHealthcareData"

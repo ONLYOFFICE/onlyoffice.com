@@ -1,17 +1,9 @@
 {
-  "PageTitle": "Online office for Healthcare offices",
+  "PageTitle": "Online office for Healthcare offices | ONLYOFFICE",
   "PageDescription": "Edit and collaborate on docs seamlessly within your eLearning platform with ONLYOFFICE Docs. Free trial, education discounts.",
 
   "HeroTitle": "The ONLYOFFICE <0>for Healthcare offices</0>",
   "HeroText": "Secure document editing and collaboration for healthcare professionals",
-
-  "EnterpriseReadySolution": "Enterprise-ready solution",
-  "OOProvidesEnterpriseVersion": "ONLYOFFICE provides a pre-configured and optimized enterprise version:",
-  "AdvancedSetOfEditingTools": "advanced set of editing tools",
-  "EnhancedSecurityOptions": "enhanced security options",
-  "PriorityAccessSecurityStabilityFixes": "priority access to security and stability fixes",
-  "EasilyScalable": "easily scalable",
-  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "free trial, lifetime license + yearly updates and support",
 
   "FlexibleChoiceSoftwareTools": "<0>Flexible choice</0> of software tools to fit your organization’s needs",
   "LearnMore": "Learn more",
@@ -72,7 +64,7 @@
   "ProtectDataUsageP2": "ONLYOFFICE API allows IT departments to implement additional controls to block risky activities with sensitive data.",
   "ProtectDataImgUrl": "/images/templates/healthcare/screens/third/en/index_3_@x1.png",
   "ProtectDataImgUrl2x": "/images/templates/healthcare/screens/third/en/index_3_@x2.png",
-  "VisitAll": "Visit All",
+  "VisitAPI": "Visit API",
 
   "LogAndMonitorDataUsage": "Log and monitor data usage",
   "LogAndMonitorDataUsageP1": "Monitor who, when, and what devices and locations access the information.",
@@ -84,5 +76,14 @@
   "BackupAndRestoreP1": "Protect your sensitive data integrity and availability with regular backups.",
   "BackupAndRestoreP2": "ONLYOFFICE Workspace offers tools for automatic backup and data restoration allowing IT departments within healthcare organizations to choose a location for their backups: local disk or any third-party private cloud storage.",
   "BackupAndRestoreImgUrl": "/images/templates/healthcare/screens/fifth/en/index_5_@x1.png",
-  "BackupAndRestoreImgUrl2x": "/images/templates/healthcare/screens/fifth/en/index_5_@x2.png"
+  "BackupAndRestoreImgUrl2x": "/images/templates/healthcare/screens/fifth/en/index_5_@x2.png",
+
+
+  "EnterpriseReadySolution": "Enterprise-ready solution",
+  "OOProvidesEnterpriseVersion": "ONLYOFFICE provides a pre-configured and optimized enterprise version:",
+  "AdvancedSetOfEditingTools": "advanced set of editing tools",
+  "EnhancedSecurityOptions": "enhanced security options",
+  "PriorityAccessSecurityStabilityFixes": "priority access to security and stability fixes",
+  "EasilyScalable": "easily scalable",
+  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "free trial, lifetime license + yearly updates and support"
 }

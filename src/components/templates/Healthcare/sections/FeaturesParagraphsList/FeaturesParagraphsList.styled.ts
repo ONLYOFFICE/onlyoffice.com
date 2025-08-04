@@ -10,7 +10,11 @@ const StyledUPHeadingBox = styled.div`
 
 const StyledFeaturesHeading = styled(Heading)`
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 900px;
+
+  &.en {
+    max-width: 1024px;
+  }
 
   @media ${device.mobile} {
   }
@@ -31,6 +35,11 @@ const StyledIUPContentImage = styled(FeatureImageItem)<{
 }>`
   & > div:last-child > div {
     background-size: ${(props) => props.$imgWidth}px auto;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 1.6em;
   }
 
   ul {

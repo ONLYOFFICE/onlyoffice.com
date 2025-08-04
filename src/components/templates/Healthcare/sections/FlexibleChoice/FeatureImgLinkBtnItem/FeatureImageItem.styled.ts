@@ -67,12 +67,13 @@ const StyledImgLinkBtnItemText = styled.div`
 `;
 
 const StyledFeatureImageItemLink = styled(Link)`
+  font-size: 14px;
+  line-height: 1.6em;
   margin-right: 32px;
 
   @media ${device.mobile} {
     display: block;
     font-size: 13px;
-    line-height: 1.6em;
     margin-bottom: 20px;
   }
 `;

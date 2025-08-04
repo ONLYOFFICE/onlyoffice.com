@@ -65,6 +65,7 @@ const StyledHeroHeading = styled(Heading)`
 const StyledHeroText = styled(Text)`
   font-size: 18px;
   line-height: 1.6em;
+  max-width: 450px;
   
   @media ${device.mobile} {
     font-size: 14px;

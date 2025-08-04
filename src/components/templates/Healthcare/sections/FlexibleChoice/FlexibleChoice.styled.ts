@@ -4,7 +4,8 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
 const StyledFCHeading = styled(Heading)`
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  max-width: 800px;
   text-align: center;
 
   @media ${device.tablet} {

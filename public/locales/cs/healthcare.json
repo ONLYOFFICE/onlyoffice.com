@@ -1,0 +1,78 @@
+{
+  "PageTitle": "Online office for Healthcare offices | ONLYOFFICE",
+  "PageDescription": "Upravujte a spolupracujte na dokumentech soukromě pomocí aplikace ONLYOFFICE, která je vybavena vestavěnými funkcemi, jež pomáhají vašemu IT oddělení dodržovat pravidla ochrany osobních údajů a bezpečnosti HIPAA.",
+
+  "HeroTitle": "ONLYOFFICE <0>pro zdravotnictví</0>",
+  "HeroText": "Bezpečná editace dokumentů a spolupráce pro zdravotnické pracovníky",
+
+  "FlexibleChoiceSoftwareTools": "<0>Flexibilní výběr</0> softwarových nástrojů pro potřeby vaší organizace",
+  "LearnMore": "Zjistit více",
+  "UseItForFree": "Používejte zdarma",
+  "GetItNow": "Získejte nyní",
+
+  "EffectivelyCollaborateOnMedicalRecords": "Efektivní spolupráce na zdravotnických záznamech",
+  "OODocSpaceAllowsConnectingDoctors": "ONLYOFFICE DocSpace umožňuje propojení lékařů a dokumentace v přizpůsobitelných místnostech s flexibilním nastavením.",
+  "EffectivelyCollabFeature1": "Vytvářejte místnosti pro společnou práci na záznamech pacientů, například pro multidisciplinární diskuse, nebo vlastní místnosti pro jakýkoli jiný účel.",
+  "EffectivelyCollabFeature2": "Sdílejte přístup s lékaři odpovědnými za léčbu, včetně případů mezi nemocnicemi.",
+  "EffectivelyCollabFeature3": "Chraňte místnosti a citlivé soubory, které mohou obsahovat, pomocí několika nastavení zabezpečení.",
+
+
+  "OrganizeASecureDigitalWorkplace": "Vytvořte bezpečné digitální pracoviště",
+  "OOOffersCollaborationPlatform": "ONLYOFFICE nabízí plnohodnotnou platformu pro spolupráci s vylepšenými funkcemi zabezpečení.",
+  "OrganizeASecureFeature1": "Bezpečně ukládejte, sdílejte a upravujte dokumenty v rámci <0>dokumentů ONLYOFFICE.</0>. Vytvářejte formuláře připravené k vyplnění. Otevírejte video a audio soubory, zobrazujte obrázky v různých formátech.",
+  "OrganizeASecureFeature2": "Vylepšete správu kontaktů pomocí <0>ONLYOFFICE CRM</0>. Správa kancelářských úkolů pomocí <1>projektů ONLYOFFICE</1>.",
+  "OrganizeASecureFeature3": "Vytvářejte e interní komunikační centrum pro zaměstnance v <0>komunitě ONLYOFFICE</0>. Uspořádejte rozvrh pomocí <1>kalendáře ONLYOFFICE</1>.",
+
+  "AlreadyUseAPopularDms": "Již používáte oblíbený DMS? Povolte bezpečnou editaci dokumentů a spolupráci",
+  "OOOffersConnectors": "ONLYOFFICE nabízí sadu nástrojů připravených k použití pro hlubokou integraci do vaší infrastruktury.",
+  "AlreadyUseFeature1": "Uchovávejte informace o pacientech v textových dokumentech, tabulkách nebo prezentacích šifrované od začátku do konce. Bezpečně je upravujte a spolupracujte na nich v reálném čase. Vysoce kompatibilní s formáty MS Office.",
+  "AlreadyUseFeature2": "Nastavujte podrovná oprávnění pro dokumenty. Používejte různé funkce spolupráce, včetně historie verzí, sledování změn, komentářů a vestavěného chatu.",
+  "AlreadyUseFeature3": "Chraňte informace o pacientech před kopírováním, stahováním nebo tiskem.",
+
+
+  "UltimateProtectionHealthcareData": "<0>Úplná ochrana</0> zdravotních údajů před aktuálními hrozbami",
+  "OOCompliantWithHipaaPrivacy": "ONLYOFFICE nabízí integrované funkce, které pomáhají oddělení IT ve zdravotnických organizacích zajisist soulad s pravidly ochrany soukromí a <0>bezpečnosti HIPAA</0>/",
+
+  "EncryptDataAtRestAndTransit": "Šifrujte data v klidu i v pohybu",
+  "EncryptDataP1": "Šifrování dat v klidu a v tranzitu znemožňuje útočníkům dešifrovat data pacientů, i když k nim získají přístup.",
+  "EncryptDataP2": "ONLYOFFICE používá špičkový šifrovací standard AES-256 k ochraně citlivých dat v klidu. Data jsou při přenosu chráněna pomocí protokolů HTTPS s aktuálním šifrovacím algoritmem TLS.",
+  "EncryptDataP3": "ONLYOFFICE Enterprise nabízí soukromé místnosti, které zajišťují maximální bezpečnost dat. Každý symbol, který píšete, je šifrován end-to-end.",
+  "LearnHowItWorks": "Podívejte se, jak to funguje",
+
+  "RestrictAccessToData": "Omezte přístup k datům",
+  "RestrictAccessP1": "Umožňují přístup k údajům o pacientech pouze těm, kteří vyžadují přístup k výkonu své práce.",
+  "RestrictAccessP2": "ONLYOFFICE nabízí podrobná oprávnění dokumentu k řízení přístupu, včetně úplného přístupu, pouze zobrazení, komentářů, prohlížení nebo vyplnitelných režimů formuláře.",
+  "RestrictAccessP3": "Aby bylo možné ověřit, že uživatelé jsou ve skutečnosti osobami oprávněnými přistupovat k datům pacientů, nabízí platforma pro spolupráci ONLYOFFICE sadu funkcí pro ověřování:",
+
+  "TwoFactorAuthentication": "dvoufázové ověřování;",
+  "SingleSignOn": "jednotné přihlášení Single Sign-On (SSO);",
+  "TrustedMailDomains": "důvěryhodné poštovní domény;",
+  "PasswordCreationCriteria": "kritéria pro vytvoření hesla;",
+  "CookieLifetime": "životnost souborů cookie;",
+  "IpRestriction": "omezení IP;",
+
+  "RestrictAccessP4": "Navíc umožňuje IT oddělením omezovat přístup k modulům a nástrojům ONLYOFFICE.",
+
+
+  "ProtectDataUsage": "Chraňte používání dat",
+  "ProtectDataUsageP1": "Chraňte informace o pacientech před kopírováním, stahováním nebo tiskem.",
+  "ProtectDataUsageP2": "ONLYOFFICE API umožňuje IT oddělením implementovat další ovládací prvky k blokování rizikových činností citlivými daty.",
+  "VisitAPI": "Prohlédněte si API",
+
+  "LogAndMonitorDataUsage": "Sbírejte informace a monitorujte používání dat‘",
+  "LogAndMonitorDataUsageP1": "Sledujte, kdo, kdy a z jakých zařízení a umístění přistupuje k informacím.",
+  "LogAndMonitorDataUsageP2": "ONLYOFFICE nabízí vestavěné protokoly auditu a monitorovací nástroje, které umožňují rychle identifikovat a opravit problémy, pokud dojde k incidentu.",
+
+  "BackupAndRestoreData": "Zálohujte a obnovujte data",
+  "BackupAndRestoreP1": "Chraňte integritu a dostupnost citlivých dat pomocí pravidelných záloh.",
+  "BackupAndRestoreP2": "ONLYOFFICE nabízí nástroje pro automatické zálohování a obnovu dat, což umožňuje oddělením IT ve zdravotnických organizacích zvolit umístění pro své zálohy: místní disk nebo jakékoli soukromé cloudové úložiště třetích stran.",
+
+
+  "EnterpriseReadySolution": "Řešení připravené pro firmy",
+  "OOProvidesEnterpriseVersion": "ONLYOFFICE nabízí předkonfigurovanou a optimalizovanou verzi pro firmy",
+  "AdvancedSetOfEditingTools": "pokročilá sada editačních nástrojů",
+  "EnhancedSecurityOptions": "rozšířené možnosti zabezpečení",
+  "PriorityAccessSecurityStabilityFixes": "prioritní přístup k opravám zabezpečení a stability",
+  "EasilyScalable": "snadno škálovatelné",
+  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "bezplatná zkušební verze, doživotní licence + aktualizace a podpora"
+}

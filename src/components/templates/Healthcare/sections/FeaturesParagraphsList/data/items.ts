@@ -1,7 +1,7 @@
 export const items = [
   {
     heading: "EncryptDataAtRestAndTransit",
-    paragraphs: ["AlreadyUseFeature1", "AlreadyUseFeature2", "AlreadyUseFeature3"],
+    paragraphs: ["EncryptDataP1", "EncryptDataP2", "EncryptDataP3"],
     items: [],
     image: {
       url: "EncryptDataImgUrl",
@@ -29,9 +29,8 @@ export const items = [
     },
     links: [
       {
-        href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
+        href: "/security#access_control",
         label: "LearnMore",
-        isExternal: true,
       },
     ],
   },
@@ -47,8 +46,8 @@ export const items = [
     },
     links: [
       {
-        href: "https://api.onlyoffice.com/editors/basic",
-        label: "VisitAll",
+        href: "https://api.onlyoffice.com/docs/docs-api/get-started/basic-concepts/",
+        label: "VisitAPI",
         isExternal: true,
       },
     ],
