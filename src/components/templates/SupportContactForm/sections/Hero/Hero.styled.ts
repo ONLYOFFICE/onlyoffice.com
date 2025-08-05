@@ -74,7 +74,66 @@ const StyledSelectOption = styled.button<{
   }
 `;
 
-const StyledHeroPaidLicense = styled.div``;
+const StyledHeroPaidLicense = styled.div`
+  background-color: #F9F9F9;
+  border-radius: 3px;
+  padding: 16px;
+`;
+
+const StyledHeroPaidLicenseText = styled(Text)`
+  display: inline-block;
+  width: 30%;
+`;
+
+const StyledHeroRadioInput = styled.input`
+  display: none;
+`;
+
+const StyledHeroRadioLabel = styled.label`
+  display: inline-block;
+  width: 30%;
+  padding-left: 38px;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #AAAAAA;
+    background: #f9f9f9;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    transform: translateY(-50%) scale(0);
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+
+  ${StyledHeroRadioInput}:checked + & {
+    &::before {
+      border: 1px solid #8BB825;
+      background: #8BB825;
+    }
+
+    &::after {
+      transform: translateY(-50%) scale(1);
+    }
+
+  }
+`;
 
 const StyledHeroUploadWrapper = styled.div``;
 
@@ -187,6 +246,9 @@ export {
   StyledHeroOptions,
   StyledSelectOption,
   StyledHeroPaidLicense,
+  StyledHeroPaidLicenseText,
+  StyledHeroRadioInput,
+  StyledHeroRadioLabel,
   StyledHeroUploadWrapper,
   StyledHeroUpload,
   StyledHeroUploadInput,

@@ -18,6 +18,9 @@ import {
   StyledHeroHeading,
   StyledHeroOptions,
   StyledHeroPaidLicense,
+  StyledHeroPaidLicenseText,
+  StyledHeroRadioInput,
+  StyledHeroRadioLabel,
   StyledHeroSelect,
   StyledHeroSelectWrapper,
   StyledHeroText,
@@ -62,6 +65,8 @@ const Hero = () => {
     email: "",
     hcaptcha: null
   });
+
+
 
   const addFile = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files) {
@@ -126,7 +131,25 @@ const Hero = () => {
             )}
           </StyledHeroSelectWrapper>
           <StyledHeroPaidLicense>
-            
+            <StyledHeroPaidLicenseText label={t("PaidLicense")} color="#666666" />
+            <StyledHeroRadioInput
+              id="paid-license-yes"
+              type="radio"
+              name="paidLicense"
+              value="yes"
+              checked={formData.paidLicense}
+              onChange={() => {setFormData((prev) => ({ ...prev, paidLicense: true }))}}
+            />
+            <StyledHeroRadioLabel htmlFor="paid-license-yes">{t("Yes")}</StyledHeroRadioLabel>
+            <StyledHeroRadioInput
+              id="paid-license-no"
+              type="radio"
+              name="paidLicense"
+              value="no"
+              checked={!formData.paidLicense}
+              onChange={() => {setFormData((prev) => ({ ...prev, paidLicense: false }))}}
+            />
+            <StyledHeroRadioLabel htmlFor="paid-license-no">{t("No")}</StyledHeroRadioLabel>
           </StyledHeroPaidLicense>
           <TextArea
             label="Description"
