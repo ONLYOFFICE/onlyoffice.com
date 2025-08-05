@@ -29,21 +29,21 @@ const selectItems: ISelectSubjectItems[] = [
         title: "Collaboration platform",
         value: "Collaboration platform",
         subData: [
-          { option: "Installation\\Activation", value: "Installation\\Activation" },
-          { option: "Migration\\Updates", value: "Migration\\Updates" },
-          { option: "Other", value: "Other" }
+          { option: "Installation\\Activation", value: "Collaboration platform: Installation/Activation" },
+          { option: "Migration\\Updates", value: "Collaboration platform: Migration/Updates" },
+          { option: "Other", value: "Collaboration platform: Other" }
         ]
       },
       {
         title: "Online Editors",
         value: "Online Editors",
         subData: [
-          { option: "Installation\\Activation", value: "Installation\\Activation" },
-          { option: "Migration\\Updates", value: "Migration\\Updates" },
+          { option: "Installation\\Activation", value: "Online Editors: Installation/Activation" },
+          { option: "Migration\\Updates", value: "Online Editors: Migration/Updates" },
           { option: "Connectors", value: "Connectors" },
           { option: "API", value: "API" },
           { option: "Plugins", value: "Plugins" },
-          { option: "Other", value: "Other" },
+          { option: "Other", value: "Online Editors: Other" },
         ]
       },
     ]

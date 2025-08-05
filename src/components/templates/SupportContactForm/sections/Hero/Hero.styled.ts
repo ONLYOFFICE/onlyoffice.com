@@ -23,19 +23,41 @@ const StyledHeroSelectWrapper = styled.div`
   position: relative;
 `;
 
-const StyledHeroSelect = styled.button`
+const StyledHeroSelect = styled.button<{
+  $isSubjectOpen: boolean;
+}>`
   display: block;
+  position: relative;
   width: 100%;
   height: 100%;
-  background-color: #f9f9f9;
-  border: 1px solid #AAAAAA;
+  background-color: ${({ $isSubjectOpen }) => $isSubjectOpen ? "#ffffff" : "#f9f9f9"};
+  border: ${({ $isSubjectOpen }) => $isSubjectOpen ? "1px solid #444444" : "1px solid #AAAAAA"};
   border-radius: 3px;
+  padding: 24px 48px 12px 16px;
   transition: 0.2s;
   cursor: pointer;
 
   &:hover {
     border: 1px solid #666666;
   }
+`;
+
+const StyledHeroSelectLabel = styled(Text)<{
+  $isSubjectOpen?: boolean;
+}>`
+  position: absolute;
+  left: 16px;
+  top: ${({ $isSubjectOpen }) => ($isSubjectOpen ? "8px" : "16px")};
+  font-size: ${({ $isSubjectOpen }) => ($isSubjectOpen ? "12px" : "16px")};
+  color: ${({ $isSubjectOpen }) => ($isSubjectOpen ? "#666666" : "#aaaaaa")};
+  transition: top 0.2s, font-size 0.2s, color 0.2s;
+`;
+
+const StyledHeroSelectText = styled(Text)`
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 `;
 
 const StyledHeroOptions = styled.div`
@@ -245,6 +267,8 @@ export {
   StyledHeroSelect,
   StyledHeroOptions,
   StyledSelectOption,
+  StyledHeroSelectLabel,
+  StyledHeroSelectText,
   StyledHeroPaidLicense,
   StyledHeroPaidLicenseText,
   StyledHeroRadioInput,

@@ -10,7 +10,9 @@ import { Link } from "@src/components/ui/Link";
 import { LoaderButton } from "@src/components/ui/LoaderButton";
 import { selectItems } from "./data/selectItems";
 import { IFormData, ISelectSubjectItems } from "../../SupportContactForm.types";
+import { hasOption } from "../../utils/typeGuards";
 
+import { StyledSelectInputIcon } from "@src/components/ui/Select/Select.styled";
 import {
   StyledHeroAgreeText,
   StyledHeroForm,
@@ -22,6 +24,8 @@ import {
   StyledHeroRadioInput,
   StyledHeroRadioLabel,
   StyledHeroSelect,
+  StyledHeroSelectLabel,
+  StyledHeroSelectText,
   StyledHeroSelectWrapper,
   StyledHeroText,
   StyledHeroUpload,
@@ -47,6 +51,7 @@ const Hero = () => {
   ];
 
   const [selectedSubject, setSelectedSubject] = useState<ISelectSubjectItems | undefined>();
+  const [selectedSubjectOption, setSelectedSubjectOption] = useState<string>("");
   const [isSubjectOpen, setIsSubjectOpen] = useState<boolean>(false);
 
   useMemo(() => {
@@ -66,14 +71,21 @@ const Hero = () => {
     hcaptcha: null
   });
 
-
+  const handleSubjectChoose = (option: string, value: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      subject: value
+    }));
+    setSelectedSubjectOption(option);
+    setIsSubjectOpen(false);
+  };
 
   const addFile = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files) {
       const newFiles = Array.from(event.target.files);
       setFormData((prev) => ({
         ...prev,
-        files: [...(prev.files || []), ...newFiles]
+        files: [...prev.files, ...newFiles]
       }));
     }
   };
@@ -81,11 +93,11 @@ const Hero = () => {
   const removeFile = (file: File) => {
     setFormData((prev) => ({
       ...prev,
-      files: prev.files?.filter((f) => f !== file)
+      files: prev.files?.filter((stateFile) => stateFile !== file)
     }));
   };
 
-  console.log(formData);
+  console.log(formData.subject);
 
   return (
     <Section>
@@ -113,20 +125,61 @@ const Hero = () => {
             <StyledHeroSelect
               type="button"
               onClick={() => setIsSubjectOpen((prev) => !prev)}
+              $isSubjectOpen={isSubjectOpen}
             >
-              {selectedSubject?.option || t("SelectSubject")}
+              <StyledHeroSelectLabel
+                label={t("Subject")}
+                color="#aaaaaa"
+                $isSubjectOpen={isSubjectOpen}
+              />
+              <StyledHeroSelectText label={selectedSubjectOption} />
+              <StyledSelectInputIcon
+                $isOpen={isSubjectOpen}
+                $selected={selectedSubject?.data ? selectedSubject.data.length > 0 : false}
+                $status={selectedSubject?.data && selectedSubject.data.length > 0 ? "success" : "default"}
+              />
             </StyledHeroSelect>
 
             {isSubjectOpen && (
               <StyledHeroOptions>
-                {selectedSubject?.data && selectedSubject.data.map((item) => (
-                  <StyledSelectOption
-                    key={item.value}
-                    type="button"
-                  >
-                      {item.option}
+                {selectedSubject?.data ? (
+                  selectedSubject.data.map((item) => (
+                    <>
+                      {hasOption(item) && (
+                        <StyledSelectOption
+                          key={item.value}
+                          type="button"
+                          onClick={() => handleSubjectChoose(item.option, item.value)}
+                        >
+                          {item.option}
+                        </StyledSelectOption>
+                      )}
+                      {item.title && (
+                        <StyledSelectOption
+                          key={item.value}
+                          type="button"
+                        >
+                          {"title" + item.title}
+                        </StyledSelectOption>
+                      )}
+                      {item?.subData && (
+                        item.subData.map((subItem) => (
+                          <StyledSelectOption
+                            key={subItem.value}
+                            type="button"
+                            onClick={() => handleSubjectChoose(subItem.option, subItem.value)}
+                          >
+                            {"sub option" + subItem.option}
+                          </StyledSelectOption>
+                        ))
+                      )}
+                    </>
+                  ))
+                ) : (
+                  <StyledSelectOption type="button">
+                    {t("ProductIsNotSelected")}
                   </StyledSelectOption>
-                ))}
+                )}
               </StyledHeroOptions>
             )}
           </StyledHeroSelectWrapper>
