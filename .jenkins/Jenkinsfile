@@ -29,6 +29,9 @@ def docspace_registration_api = ""
 def next_public_testing_on = ""
 def core_base_domain = ""
 def google_search_url = ""
+def feedback_email = ""
+def support_email = ""
+def webinars_email = ""
 
 switch(BRANCH_NAME) {
   case "test_deploy":
@@ -61,6 +64,9 @@ switch(BRANCH_NAME) {
     next_public_testing_on = "true"
     core_base_domain = "teamlab.info"
     google_search_url = "https://www.googleapis.com/customsearch/v1"
+    feedback_email = "feedback@onlyoffice.com"
+    support_email = "support@onlyoffice.com"
+    webinars_email = "webinars@onlyoffice.com"
     break
   case "production_deploy":
     aws_region="us-east-1"
@@ -118,6 +124,9 @@ pipeline {
         next_public_testing_on = "${next_public_testing_on}"
         core_base_domain = "${core_base_domain}"
         google_search_url = "${google_search_url}"
+        feedback_email = "${feedback_email}"
+        support_email = "${support_email}"
+        webinars_email = "${webinars_email}"
       }
       steps {
         withCredentials([usernamePassword(credentialsId: 'onlyoffice_site_test_mysql_credentials', 
@@ -171,6 +180,9 @@ pipeline {
           sed -i "s^var_pipedrive_api_token^$onlyoffice_site_test_pipedrive_api_token^" .env
 
           sed -i "s^var_sales_email^$sales_email^" .env
+          sed -i "s^var_feedback_email^$feedback_email^" .env
+          sed -i "s^var_support_email^$support_email^" .env
+          sed -i "s^var_webinars_email^$webinars_email^" .env
 
           sed -i "s^var_web_payment_we_trial_url^$web_payment_we_trial_url^" .env
           sed -i "s^var_web_payment_dd_trial_url^$web_payment_dd_trial_url^" .env
