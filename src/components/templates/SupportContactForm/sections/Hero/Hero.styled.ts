@@ -74,6 +74,110 @@ const StyledSelectOption = styled.button<{
   }
 `;
 
+const StyledHeroPaidLicense = styled.div``;
+
+const StyledHeroUploadWrapper = styled.div``;
+
+const StyledHeroUpload = styled.div`
+  position: relative;
+`;
+
+const StyledHeroUploadInput = styled.input`
+  display: none;
+`;
+
+const StyledHeroUploadLabel = styled.label`
+  margin-left: 60px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #F5F5F5;
+    background-image: url("/images/icons/clip.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    filter: grayscale(1);
+    transition: filter 0.2s;
+  }
+
+  &:hover {
+    &::before {
+      filter: grayscale(0);
+    }
+  }
+`;
+
+const StyledHeroUploadText = styled(Text)`
+  white-space: nowrap;
+`;
+
+const StyledHeroUploadList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 45px;
+`;
+
+const StyledHeroUploadItemText = styled(Text)``;
+
+const StyledHeroUploadItemRemove = styled.button`
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  background-image: url("/images/icons/file-item-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition-duration: 0.2s;
+  filter: grayscale(1);
+  cursor: pointer;
+`;
+
+const StyledHeroUploadItem = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #F9F9F9;
+  border-radius: 3px;
+  padding: 9px 10px;
+  position: relative;
+  transition-duration: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #F2F2F2;
+
+    ${StyledHeroUploadItemText} {
+      color: #444444;
+    }
+
+    ${StyledHeroUploadItemRemove} {
+      filter: grayscale(0);
+    }
+  }
+`;
+
+const StyledHeroHCaptchaWrapper = styled.div`
+  display: flex;
+  gap: 16px;
+`;
+
+const StyledHeroAgreeText = styled(Text)`
+  font-size: 12px;
+`;
+
 export {
   StyledHeroHeading,
   StyledHeroText,
@@ -82,4 +186,16 @@ export {
   StyledHeroSelect,
   StyledHeroOptions,
   StyledSelectOption,
+  StyledHeroPaidLicense,
+  StyledHeroUploadWrapper,
+  StyledHeroUpload,
+  StyledHeroUploadInput,
+  StyledHeroUploadLabel,
+  StyledHeroUploadText,
+  StyledHeroUploadList,
+  StyledHeroUploadItem,
+  StyledHeroUploadItemText,
+  StyledHeroUploadItemRemove,
+  StyledHeroHCaptchaWrapper,
+  StyledHeroAgreeText,
 };

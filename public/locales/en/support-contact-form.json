@@ -2,5 +2,14 @@
   "PageTitle": "Support contact form | ONLYOFFICE",
   "PageDescription": "Describe your problem in detail, this will help our specialists to solve your problem as soon as possible.",
   "SupportContactForm": "Support contact form",
-  "DescribeYourProblem": "Describe your problem, this will help our specialists to solve your problem as soon as possible"
+  "DescribeYourProblem": "Describe your problem, this will help our specialists to solve your problem as soon as possible",
+  "PaidLicense": "Paid license:",
+  "Yes": "Yes",
+  "No": "No",
+  "AttachFileOrScreenshоts": "Attach file or screenshоts <0>( max. 5 Мb )</0>",
+  "ByClickingSubmit": "By clicking Submit, you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>.",
+  "Submit": "Submit",
+  "PleaseWait": "Please wait...",
+  "YourRequestHasBeenSentSuccessfully": "Your request has been sent successfully",
+  "WeAreSorryButAnErrorOccurred": "We are sorry, but an error occurred, try again later"
 }

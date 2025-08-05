@@ -10,6 +10,21 @@ interface ISelectSubjectItems {
       value: string;
     }[];
   }[];
+};
+
+interface IFormData {
+  product: string;
+  subject: string;
+  specifyOfOther: string;
+  paidLicense: boolean;
+  description: string;
+  files: File[];
+  name: string;
+  email: string;
+  hcaptcha: null;
 }
 
-export type { ISelectSubjectItems };
+export type {
+  ISelectSubjectItems,
+  IFormData
+};
