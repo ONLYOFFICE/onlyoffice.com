@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Editing collaborativo dei documuenti per HumHub | ONLYOFFICE Docs",
+  "PageDescription": "Modifica e collabora sui tuoi documenti su HumHub",
+
+  "OnlineOfficeForConnector": "Ufficio online per <0>HumHub</0>",
+  "Subheader": "Lavora su tutti i tipi di documenti all’interno di HumHub utilizzando ONLYOFFICE",
+  "GetItNow": "Inizia",
+
+  "WorkWithinConnector": "Modifica e collabora sui documenti d’ufficio nello spazio digitale HumHub",
+  "DocumentsTab1Label": "Visualizza, crea e modifica documenti di testo, fogli di calcolo e presentazioni.",
+  "DocumentsTab2Label": "Crea moduli PDF compilabili e compilali online.",
+  "DocumentsTab3Label": "Condividi e modifica in collaborazione documenti con altre persone nella tua organizzazione.",
+  "DocumentsTab4Label": "Proteggi i tuoi documenti da accessi non autorizzati con JWT.",
+  "GetStarted": "Ottienilo ora",
+
+  "MarketplaceConnectorTitle": "Progettato per un'integrazione perfetta con HumHub",
+  "MarketplaceConnectorDescription": "Scarica subito il connettore ONLYOFFICE per HumHub dall’HumHub Marketplace.",
+
+  "WhyOO": "Perché ONLYOFFICE?",
+  "Reason1": "Supporto per oltre <0>50 formati di file</0>, pienamente compatibili con i formati MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "Un solido insieme di strumenti di modifica, formattazione e stile. <0>Assistente IA</0> integrato.",
+  "Reason3": "Co-editing in <0>tempo reale</0> e blocco paragrafo , revisione, confronto documenti, commenti e chat.",
+  "Reason4": "<0>Sicurezza avanzata.</0> Permessi di accesso flessibili e JWT. Filigrana e protezione con password. Codice open source.",
+  "Reason5": "<0>Configurazione semplice.</0> Integrazione senza problemi con connettori pronti all’uso disponibili su HumHub Marketplace.",
+  "Reason6": "Versioni Enterprise scalabili. <0>Prova gratuita di 30 giorni.</0> Versione cloud e self-hosted per il controllo totale sui tuoi dati.",
+
+  "HowToStart": "Come iniziare",
+  "HowToStartStep1": "Distribuisci <0>ONLYOFFICE Docs</0> sul tuo server o registrati per <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Scarica l’ultima versione del connettore dall’<0>HumHub Marketplace</0>.",
+  "HowToStartStep3": "Configura il connettore e abilita JWT.",
+
+  "ReadDetailedInstructions": "Consulta le <0>guide utili</0> sull'integrazione con HumHub",
+
+  "NeedAnAppToConnect": "Hai bisogno di un'app per connettere ONLYOFFICE Docs al tuo servizio web preferito? O ne hai sviluppata una?"
+}

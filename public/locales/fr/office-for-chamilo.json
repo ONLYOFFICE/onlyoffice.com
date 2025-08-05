@@ -12,5 +12,40 @@
   "DocumentsTab4ImgUrl2x": "/images/templates/office-for-chamilo/documents/fr/screenshot4@2x.png",
 
   "HowToStartStep3ImgUrl": "/images/templates/office-for-chamilo/how-to-start/fr/step3.svg",
-  "HowToStartStep4ImgUrl": "/images/templates/office-for-chamilo/how-to-start/fr/step4.svg"
+  "HowToStartStep4ImgUrl": "/images/templates/office-for-chamilo/how-to-start/fr/step4.svg",
+
+  "PageTitle": "Suite bureautique en ligne pour Chamilo | ONLYOFFICE Docs",
+  "PageDescription": "Collaborez sur des documents, des feuilles de calcul, des présentations et des formulaires dans Chamilo en utilisant ONLYOFFICE Docs.",
+
+  "OnlineOfficeForChamilo": "Suite bureautique en ligne pour Chamilo",
+  "Subheader": "Collaborez sur des documents texte, des feuilles de calcul, des présentations et des formulaires dans Chamilo avec ONLYOFFICE Docs",
+  "GetItNow": "Démarrer",
+  "RequestFreeDemo": "DEMANDER DÉMO GRATUITE",
+  "WorkWithinChamilo": "Travaillez sur des documents bureautiques au sein de la structure Chamilo",
+  "DocumentsTab1Label": "Affichez et modifiez des documents texte, des feuilles de calcul, des présentations et des formulaires à remplir.",
+  "DocumentsTab2Label": "Partagez en prévoyant des autorisations de modification ou de lecture seule.",
+  "DocumentsTab3Label": "Corédigez des documents en temps réel, suivez les modifications et laissez des commentaires.",
+  "DocumentsTab4Label": "Communiquez grâce à un chat intégré ou à des outils de vidéoconférence, tels que Jisti ou Rainbow.",
+  "MarketplaceConnectorTitle": "Conçue pour une intégration transparente avec Chamilo",
+  "MarketplaceConnectorDescription": "L'application ONLYOFFICE pour Chamilo est disponible sur GitHub.",
+  "GetStarted": "Démarrer",
+
+  "WhyOO": "Pourquoi ONLYOFFICE ?",
+  "Reason1": "Ensemble robuste d'outils d'édition, de mise en forme et de style. <0>Assistant IA</0> intégré.",
+  "Reason2": "<0>Sécurité renforcée.</0> Droits d'accès flexibles et JWT. Code source ouvert disponible sur GitHub.",
+  "Reason3": "Intégration avec la solution <0>ONLYOFFICE Docs Cloud</0> sans aucune installation nécessaire.",
+  "Reason4": "Prise en charge de plus de <0>50 formats de fichiers</0>, entièrement compatible avec les formats MS Office : DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Coédition</0> en temps réel et verrouillage des paragraphes, révision, historique des versions, comparaison des documents, commentaires et chat.",
+  "Reason6": "Solution auto-hébergée. Versions d'entreprise évolutives. <0>Essai gratuit de 30 jours.</0> Remises pour les établissements d'enseignement.",
+
+  "HowToStart": "Comment démarrer",
+  "HowToStartStep1": "Déployez <0>ONLYOFFICE Docs</0>  sur votre propre serveur ou inscrivez-vous à <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Téléchargez l'application d'intégration sur <0>GitHub</0>.",
+  "HowToStartStep3": "Téléchargez le plugin sur Chamilo.",
+  "HowToStartStep4": "Configurez le plugin en spécifiant l'adresse de ONLYOFFICE Docs.",
+  "HowToConnect": "Connectez ONLYOFFICE Docs avec Chamilo",
+
+  "ReadDetailedInstructions": "Lisez les instructions détaillées sur <0>GitHub</0> et dans le <1>Centre d'aide</1>.",
+
+  "NeedAnAppToConnect": "Besoin d'une appli pour connecter ONLYOFFICE Docs à votre service web préférentiel ? Ou en avez-vous développé une ?"
 }
