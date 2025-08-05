@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Bekijk ONLYOFFICE-webinars | ONLYOFFICE",
+  "PageDescription": "Registreer u voor onze webinars om te leren hoe u effectief kunt werken met ONLYOFFICE",
+
+  "HeroHeadingWatch": "Bekijk ONLYOFFICE-<0>webinars</0>",
+  "HeroTextTune": "Stem af op onze live webinars en leer de beste manieren om met ONLYOFFICE te werken",
+
+  "UpcomingHeading": "Aankomende live webinars",
+
+  "UpcomingModalProduct": "Product",
+  "UpcomingModalBy": "Van",
+  "UpcomingModalLanguage": "Taal",
+  "UpcomingModalPlease": "Gelieve alle velden met een sterretje(*) in te vullen. U ontvangt een e-mailbericht met de link naar het geselecteerde webinar.",
+  "UpcomingModalFullName": "Volledige naam",
+  "UpcomingModalCompanyName": "Bedrijfsnaam",
+  "UpcomingModalEmail": "E-mail",
+  "UpcomingModalSendQuestions": "Stuur vragen voor het webinar",
+  "UpcomingModalPlaceholderName": "Voornaam Achternaam",
+
+  "FullNameIsIncorrect": "Volledige naam is onjuist",
+  "FullNameIsEmpty": "Volledige naam is leeg",
+
+  "CompanyNameIsEmpty": "Bedrijfsnaam is leeg",
+
+  "EmailIsEmpty": "E-mail is leeg",
+  "EmailIsIncorrect": "E-mailadres is onjuist",
+
+  "AgreementByClicking": "Door op Bekijk webinar te klikken, begrijpt u en gaat u akkoord met onze <0>SLA</0> en <1>Privacyverklaring</1>.",
+
+  "ModalSendButton": "Bekijk webinar",
+  "ModalCloseButton": "Annuleer",
+
+  "RequestSuccessfull": "U bent succesvol geregistreerd voor de ONLYOFFICE-webinar. <br> Link naar de webinar is verzonden naar uw e-mailadres.",
+
+  "WatchHeading": "Bekijk on-demand",
+  "WatchText": "Webinar gemist? Bekijk op elk gewenst moment een herhaling.",
+  "WatchNow": "Nu bekijken",
+
+  "en": "In het Engels",
+  "ja": "In het Japans",
+  "zh": "In het Chinees",
+  "fr": "In het Frans",
+  "de": "In het Duits",
+  "es": "In het Spaans",
+  "pt": "In het Portugees",
+  "it": "In het Italiaans",
+  "cs": "In het Tsjechisch",
+  "nl": "In het Nederlands",
+  "ru": "In het Russisch",
+  "sr": "In het Servisch",
+
+  "ContributeHeading": "Draag bij met uw ideeën",
+  "ContributeTextHave": "Heeft u een goed idee welke webinar we moeten houden?",
+  "ContributeTextGet": "Neem contact op met ons team op <0>press@onlyoffice.com</0> of schuif aan bij onze DM's op <1>Twitter</1>."
+}

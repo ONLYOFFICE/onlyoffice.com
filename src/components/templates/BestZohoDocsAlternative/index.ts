@@ -1,0 +1,1 @@
+export { BestZohoDocsAlternativeTemplate } from "./BestZohoDocsAlternative";

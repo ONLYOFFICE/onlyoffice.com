@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Alternativa ao LibreOffice - pacote office baseado na Web",
+  "PageDescription": "Alternativa online ao LibreOffice. Download para Windows, Linux e Mac OS. Também estão disponíveis aplicativos para Android e iOS. Funcionalidade completa e recursos de colaboração.",
+
+  "HeroTitle": "<0>ONLYOFFICE</0>, a melhor alternativa do LibreOffice",
+  "GetOODocsNow": "Obter o ONLYOFFICE",
+  "CompatibleWithMicrosoftOfficeFormats": "100% compatível com os formatos do Microsoft Office",
+
+  "ReasonsTitle": "<0>6 razões</0> pelas quais o ONLYOFFICE é a melhor alternativa do LibreOffice",
+  "MaximumCompatibility": "Compatibilidade máxima com arquivos do MS Office",
+  "MaximumCompatibilityText": "O ONLYOFFICE Docs usa o OOXML como formato principal, que garante a mais alta compatibilidade com arquivos do Microsoft Word, Excel e PowerPoint (.docx, .xlsx e .pptx).",
+  "DesktopApp": "Web, desktop, móvel",
+  "DesktopAppText": "Com o ONLYOFFICE, você pode trabalhar online a partir de qualquer navegador e sistema operacional, editar documentos offline com os aplicativos de desktop gratuitos para Windows, Linux e macOS, bem como usar aplicativos móveis gratuitos para Android e iOS.",
+  "DocsSheetsSlides": "Documentos, planilhas, slides, formulários, PDF",
+  "DocsSheetsSlidesText": "Edite e colabore em documentos de texto e planilhas de qualquer complexidade, crie apresentações impressionantes, visualize e faça anotações em PDFs. Crie formulários e modelos com aparência profissional do zero ou qualquer arquivo DOCX existente, deixe que outros usuários os preencham e salve formulários como arquivos PDF preenchíveis.",
+  "Seamless": "Colaboração contínua",
+  "SeamlessText": "ONLYOFFICE Docs oferece aos usuários modos de coedição em nível de caractere e parágrafo, revisão e rastreamento de alterações, histórico de versões, comentários e menções, bate-papo integrado, plug-ins para chamadas de áudio e vídeo. Você pode compartilhar facilmente seus documentos com permissões flexíveis, tais como, comentar, revisar, preencher formulários e filtragem personalizada.",
+  "Flexibility": "Flexibilidade",
+  "FlexibilityText": "Você é livre para escolher como usar os editores on-line: como parte do ambiente baseado em sala ONLYOFFICE DocSpace, dentro de qualquer serviço de sincronização e compartilhamento ou ECM como Nextcloud, Alfresco, Confluence, Seafile, etc., ou integrado à solução que você está construindo você mesmo.",
+  "AIHelper": "Ajudante de IA",
+  "AIHelperText": "Conecte qualquer provedor de IA e use diferentes modelos de IA para diferentes tarefas. Utilize o plugin AI Assistant para impulsionar o trabalho com seus textos: execute análises de palavras e explore o significado de palavras desconhecidas, gere passagens, imagens e palavras-chave, resuma e traduza histórias, encontre sinônimos.",
+
+  "PresentationTitle": "Assista <0>a esta apresentação</0> para ver a diferença entre os pacotes office:",
+
+  "OODocsVsLibreOfficeVsOpenOffice": "ONLYOFFICE vs LibreOffice vs OpenOffice [Tested Side By Side]",
+  "OODocsVsLibreOfficeVsOpenOfficeText": "O Windows Report apresenta alternativas ao Microsoft Office comparadas lado a lado incluindo: ONLYOFFICE, LibreOffice e OpenOffice. O Windows Report é um recurso da Web extremamente confiável para produtos e serviços relacionados ao Windows, que inclui notícias e dicas para usuários de tecnologia.",
+  "OODocsVsLibreOffice": "ONLYOFFICE vs LibreOffice: what to choose when you decide to ditch Microsoft",
+  "OODocsVsLibreOfficeText": "Sim, o Microsoft Office é legal, mas um dia se tornará pesado para o seu orçamento. Ou você pode querer desistir e seguir o seu espírito rebelde de código aberto. Não importa qual seja a sua razão, você precisará de um bom substituto. Então… ONLYOFFICE ou LibreOffice?",
+
+  "WhatWentWrong": "O que correu mal no LibreOffice? <0>Clique aqui</0> para ver os detalhes"
+}

@@ -1,0 +1,53 @@
+{
+  "PageTitle": "自動化API｜ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "カスタムインターフェース要素を使用して、外部からドキュメントコンテンツを操作できます。",
+
+  "HeroTitle": "ONLYOFFICE 自動化 API",
+  "HeroSubtitle" : "プラットフォームのインターフェース内に任意のコントロールを配置し、エディタの外側からドキュメントの内容を操作できます",
+  "HeroButton" : "無料デモをリクエスト",
+
+  "WhatIsTitle" : "<0>自動化API</0>とは？",
+  "WhatIsSubtitle" : "<0>ONLYOFFICE自動化API</0>とConnectorクラスを使用すると、外部からオフィス文書とやりとりすることが可能になります。独自のカスタムインターフェース要素を使用して、ファイルに施された変更を取得できます。",
+  "CheckExamples" : "事例を見る",
+  "Webinar" : "ONLYOFFICE自動化API [ウェビナー2024]",
+  "WatchOurWebinar" : "ウェビナーを見る",
+
+  "WhatAutomationAPICan" : "<0>自動化API</0>ができること",
+  "MostPopularExamples" : "最もよく使われる事例",
+  "WorkingWithComments" : "コメントの操作",
+  "WorkingWithReview" : "レビュー変更の操作",
+  "FillingOutForms" : "フォームの記入",
+  "CollectsAllTheCommentsFrom" : "ドキュメントからすべてのコメントを収集し、カスタムインターフェースに表示する。",
+  "ThereAreNoComments" : "文書にコメントはありません。",
+  "SendReply" : "返信を追加",
+  "AddReply" : "返信を追加",
+  "Delete" : "削除",
+  "SendComment" : "コメントを追加",
+  "AddComment" : "コメントを追加",
+  "EnterYourReplyHere" : "ご返信をこちらに入力してください",
+  "EnterYourCommentHere" : "コメントをこちらに入力してください",
+  "ManagesReviewProcess" : "外部ソースからレビュープロセスを管理する。",
+  "Accept" : "承認",
+  "Reject" : "却下",
+  "FillsInTheEmptyCells" : "指定フォームの空セルに記入する。",
+  "ChooseExample" : "例を選択",
+
+  "ReadyToUse" : "すぐに使える事例：Odoo統合",
+  "UsingAutomationAPI" : "ONLYOFFICEは、自動化APIを使用することで、Odooユーザーが利用可能なデータでテンプレートを作成し、記入することを可能にする。",
+  "Screen1ImgUrl" : "/images/templates/automation-api/carousel/en/create_new_form_templates_for_any_odoo_module.png",
+  "Screen1ImgUrl2x" : "/images/templates/automation-api/carousel/en/create_new_form_templates_for_any_odoo_module@2x.png",
+  "Screen2ImgUrl" : "/images/templates/automation-api/carousel/en/edit_the_existing_form_templates.png",
+  "Screen2ImgUrl2x" : "/images/templates/automation-api/carousel/en/edit_the_existing_form_templates@2x.png",
+  "Screen3ImgUrl" : "/images/templates/automation-api/carousel/en/fill_templates_out_with_data_available_in_odoo.png",
+  "Screen3ImgUrl2x" : "/images/templates/automation-api/carousel/en/fill_templates_out_with_data_available_in_odoo@2x.png",
+  "LearnMore" : "さらに詳しく",
+
+  "HowToGetONLYOFFICEAutomationAPI": "ONLYOFFICE自動化APIの入手方法",
+  "AutomationAPISsAPartOf": "自動化APIは、<0>ONLYOFFICE Docs Developer</0>の一部であり、ドキュメント、スプレッドシート、プレゼンテーション、PDF 用のエディタを備えた最高クラスのオンラインオフィススイートを提供します。自動化APIへのアクセスは、<1>拡張ONLYOFFICE Docs Developerライセンス</1>の一部として提供されます。",
+  "GetA30DayTrial": "ONLYOFFICE Docs Developerの<0>30日間無料トライアル</0>を入手しませんか",
+  "DownloadNow": "今すぐダウンロード",
+
+  "HaveAnyQuestions": "ONLYOFFICE自動化APIについて何かご質問ありますか？喜んでご相談に応じ、詳細についてお話させていただきます。",
+  "HaveAnyQuestionsText": "エキスパートチームが、あらゆるステップでお客様をサポートいたします。<2 /> <2 /> 販売前の質問がある場合は、<0>sales@onlyoffice.com</0>までご連絡いただくか、当社チームからお客様に電話する時間を設定してください。<2 /> <2 /> 技術的な問題については、<1>support@onlyoffice.com</1>までお問い合わせください。",
+  "GetInTouch": "お問い合わせ"
+}

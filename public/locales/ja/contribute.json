@@ -1,0 +1,32 @@
+{
+  "PageTitle": "プロジェクトに参加して、ONLYOFFICE の品質向上にご協力ください。",
+  "PageDescription": "ONLYOFFICEの 開発、翻訳、テスト、ドキュメントに関するプロジェクトに参加して、情報を広めてください 。",
+
+  "HeroTitle": "<span>ONLYOFFICE</span><br /> の仲間に入りましょう",
+  "HeroText": "ONLYOFFICE にオープンソース プロジェクを寄付して、品質向上に協力してください！",
+
+  "ImproveOO": "ONLYOFFICE 向上させましょう",
+  "DevelopYourOwnPluginOrMacros": "ONLYOFFICE ドキュメントエディター向きのプラグインや関数を独自開発しよう。",
+  "ReadAPIDocumentation": "API ドキュメントを読む",
+  "CreateYourOwnForm": "ご自身のフォームテンプレートを作成し、他の人と共有できます。",
+  "OpenOurFormLibrary": "フォーム ライブラリを開く",
+  "CreateAnExtensionOrModule": "ONLYOFFICE DocSpace用の拡張機能またはモジュールを作成する。",
+  "DidYouFindABug": "バグが見つかりましたか? <0>GitHub</0>または <1>フォーラム</1>をお使いください。",
+  "MoreInfo": "詳細情報",
+
+  "SocialMediaText": "<0>ブログ</0> 、ソーシャルメディアで意見をお寄せください",
+
+  "SpreadTitle": "ONLYOFFICE 技術を広めましょう",
+  "SpreadText": "個人プラットフォーム向きにコネクタを構成して、ONLYOFFICE でみんなと共有しましょう。",
+  "SpreadLink": "API ドキュメントを読む",
+  "More": "もっと",
+
+  "TranslateOO": "ONLYOFFICE <0>翻訳</0>",
+  "TranslateOOText": "<p>世界のどこからでも利用できるように、ONLYOFFICE インターフェースの母国語翻訳に協力していただけますか？</p><p>当社の翻訳ボランティア コミュニティー編集に <0>documentation@onlyoffice.com</0> から参加して、当社の <1>オンライン翻訳システム</1>にアクセスしてください。</p>",
+
+  "TestOO": "ONLYOFFICE <0>テスト</0>",
+  "TestOOText": "<p>ONLYOFFICE ベータテストのモニターになって、開発中の機能とソリューションのテストにご協力ください。</p><p><0>press@onlyoffice.com</0>までご連絡ください。</p>",
+
+  "DocumentOO": "ONLYOFFICE <0>ドキュメント</0>",
+  "DocumentOOText": "<p>ONLYOFFICE でもっと効果的に作業ができるヒントやトリックがありますか？</p><p>機能の使い方について情報が見つかりませんでしたか？</p><p>利用可能な資料の母国語翻訳に協力していただけますか？</p><p>意見を共有するには、 <0>documentation@onlyoffice.com</0> までご連絡ください。</p>"
+}

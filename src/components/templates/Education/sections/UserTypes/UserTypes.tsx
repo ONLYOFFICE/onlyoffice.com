@@ -1,28 +1,20 @@
 import { useTranslation } from "next-i18next";
+import * as S from "./UserTypes.styled";
 import { Button } from "@src/components/ui/Button";
 import { userTypes } from "./data/userTypes";
-import {
-  StyledUserType,
-  StyledUserTypeContent,
-  StyledUserTypeHeading,
-  StyledUserTypeImage,
-  StyledUserTypesItems,
-  StyledUserTypesWrapper,
-  StyledUserTypeText,
-} from "./UserTypes.styled";
 
 const UserTypes = () => {
   const { t } = useTranslation("education");
 
   return (
-    <StyledUserTypesWrapper>
-      <StyledUserTypesItems>
+    <S.StyledUserTypesWrapper>
+      <S.StyledUserTypesItems>
         {userTypes.map((item, index) => (
-          <StyledUserType key={index}>
-            <StyledUserTypeImage src={item.image} alt={t(item.title)} />
-            <StyledUserTypeContent>
-              <StyledUserTypeHeading level={3} label={t(item.title)} />
-              <StyledUserTypeText label={t(item.text)} />
+          <S.StyledUserType key={index}>
+            <S.StyledUserTypeImage src={item.image} alt={t(item.title)} />
+            <S.StyledUserTypeContent>
+              <S.StyledUserTypeHeading level={3} label={t(item.title)} />
+              <S.StyledUserTypeText label={t(item.text)} />
               <Button
                 id={item.button.id}
                 as="a"
@@ -30,11 +22,11 @@ const UserTypes = () => {
                 label={t("GetStarted")}
                 variant={item.button.variant}
               />
-            </StyledUserTypeContent>
-          </StyledUserType>
+            </S.StyledUserTypeContent>
+          </S.StyledUserType>
         ))}
-      </StyledUserTypesItems>
-    </StyledUserTypesWrapper>
+      </S.StyledUserTypesItems>
+    </S.StyledUserTypesWrapper>
   );
 };
 

@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Podnikový nástroj pro správu e-mailů | ONLYOFFICE",
+  "PageDescription": "Vytvořte si firemní poštovní schránky, propojte své e-mailové účty a spravujte veškerou korespondenci na jednom místě.",
+
+  "HeroTitle": "Správujte své e-maily efektivně",
+  "HeroText": "Jednoduchý nástroj pro správu pošty",
+  "GetItNow": "Získejte ONLYOFFICE",
+
+  "MailServer": "Mail Server",
+  "MailServerText": "Přidejte poštovní server použitím jména vaší domény a vytvořte tak firemní poštovní schránku pro celý tým. Synchronizujte e-maily prostřednictvím protokolu IMAP. Zálohujte a obnovujte databázi poštovního serveru.",
+  "MailServerImage": "/images/templates/mail/features/cs/mail_server.png",
+  "MailAggregator": "Agregátor pošty",
+  "MailAggregatorText": "Shromažďujte, zpracovávejte a ukládejte veškerou korespondenci na jednom místě a připojte všechny e-mailové účty k ONLYOFFICE.",
+  "MailAggregatorImage": "/images/templates/mail/features/cs/mail_aggregator.png",
+  "EffectiveEmail": "Efektivní správa e-mailů",
+  "EffectiveEmailText": "Uspořádejte si svou schránku efektivně pomocí: struktury korespondence podle kategorií se správou složek, snadného přesouvání e-mailů do složek pomocí funkce přetažení a automatického uspořádání pošty pomocí filtrů.",
+  "EffectiveEmailImage": "/images/templates/mail/features/cs/effective_email.png",
+  "EasyEmailFormatting": "Snadné formátování e-mailů",
+  "EasyEmailFormattingText": "Podpora všech písem a stylů. Nahrávejte přílohy a připojujte je z modulu Dokumenty. Vytvářejte a spravujte podpisy. Využijte komplexní nástroj na vytváření šablon.",
+  "EasyEmailFormattingImage": "/images/templates/mail/features/cs/email_formatting.png",
+  "CrmIntegration": "CRM integrace",
+  "CrmIntegrationText": "Propojte e-mailová vlákna nebo samostatné zprávy s kontakty, příležitostmi v CRM a mějte tak po ruce máte veškerou korespondenci.",
+  "CrmIntegrationImage": "/images/templates/mail/features/cs/crm_integration.png",
+  "DocumentIntegration": "Integrace dokumentů",
+  "DocumentIntegrationText": "Připojte soubory modulu Dokumenty k vašemu e-mailu pro rychlou výměnu informací.",
+  "DocumentIntegrationImage": "/images/templates/mail/features/cs/document_integration.png",
+  "CalendarIntegration": "Integrace kalendáře",
+  "CalendarIntegrationText": "Posílejte pozvánky a informujte hosty o všech změnách, které jste provedli. Obdržujte pozvánky z kalendářů třetích stran a odpovídejte na ně.",
+  "CalendarIntegrationImage": "/images/templates/mail/features/cs/calendar_integration.png",
+
+  "PerfectOnlineCollaboration": "Dokonalý prostor pro online spolupráci vašeho týmu.",
+  "PcMag": "PC Mag"
+}

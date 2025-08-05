@@ -15,8 +15,8 @@ const StyledFeatureImageItemContent = styled.div<{
   }
 `;
 
-const StyledImgLinkBtnItemText = styled.div`
-  font-size: 16px;
+const StyledFeatureImageItemText = styled.div<{ $fontSize: IFeatureImageItem["fontSize"]}>`
+  font-size: ${props => props.$fontSize || "16px"};
   line-height: 24px;
 
   @media ${device.mobile} {
@@ -34,6 +34,6 @@ const StyledFeatureImageItemLink = styled(Link)`
 
 export {
   StyledFeatureImageItemContent,
-  StyledImgLinkBtnItemText,
+  StyledFeatureImageItemText,
   StyledFeatureImageItemLink,
 };

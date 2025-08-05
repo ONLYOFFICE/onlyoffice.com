@@ -1,0 +1,34 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace app for monday | ONLYOFFICE Docs",
+  "PageDescription": "Work with office files related to your monday boards in ONLYOFFICE DocSpace rooms",
+
+  "OnlineOfficeForMonday": "ONLYOFFICE DocSpace app for monday",
+  "WorkWithOfficeFiles": "Work with office files related to your monday boards in ONLYOFFICE DocSpace rooms.",
+
+  "AppInstallation": "App installation and configuration",
+  "AppInstallationText": "<0>ONLYOFFICE DocSpace app can be installed by the monday admin via the monday.com Marketplace.</0> <0>When installing the app, the admin chooses where it will be available: in all Workspaces or any specific Workspace(s). Later, this can be changed through the Manage Apps section.</0> <0>The Uninstall option for the app is also available to admins only.</0>",
+  "AppInstallationUrl": "/images/templates/office-for-monday/installation/screen_1@2x.png",
+
+  "WhatYouShouldKnowTitle": "What you should know",
+  "WhenRoomDeleted": "When the room is deleted",
+  "IfRoomDeletedText": "If you delete/archive the room that was linked to the monday board, it is possible to Unlink the room by clicking the corresponding button in the app tab. Once done, you can create a new DocSpace room for this board.",
+  "ViewerOrGuestRole": "When you have a DocSpace account, but your monday role is Viewer or Guest",
+  "ViewerOrGuestRoleText": "If monday users have an existing DocSpace account, they can log in with their account by clicking on the gear icon in the app tab. A right panel will appear, where it's needed to click Go to App Settings. In the pop-up window, users can enter their DocSpace login and password. This option is available to all monday roles (Admin, Member, Viewer, Guest).",
+
+  "MondayConnectionSettingsTitle" : "Connection settings (for monday admins)",
+  "MondayConnectionSettingsNote" : "Other monday users are able to use the app only after the monday admin configures it.",
+  "MondayStep1": "Go to the <2>monday Workspace</2> where the app is installed. Open the desired board and click on the plus icon. In the Apps section, find <0>ONLYOFFICE DocSpace</0>.",
+  "MondayStep2": "The corresponding app tab will appear. There, enter the address, login and password of your ONLYOFFICE DocSpace. If you're new to DocSpace, you can register a free account <3>here</3>.",
+  "MondayStep3": "Once ready, you also need to go to your <0>ONLYOFFICE DocSpace</0> → <0>Developer Tools</0> → <0>JavaScript SDK</0>. There, add the addresses of your monday and DocSpace in the section - <1>Enter the address of DocSpace to embed</1>.",
+  "MondayStep4": "After successful authorization, the window <1>Welcome to DocSpace Board!</1> and the notification <1>You have successfully logged</1> in are displayed.",
+
+  "AppUsage" : "App usage",
+  "AfterInstallingTheApp" : "After installing the app, the monday admin must click the <1>Create room button</1>. By clicking it, a Public room is created in ONLYOFFICE DocSpace, with two tags assigned: monday integration and monday Board - <0>board_id.</0>",
+  "AccessRights" : "Access rights",
+  "APublicRoomIsCreated" : "A public room is created on behalf of the DocSpace admin. All room participants with the Team Member role are added to the room with the <0>Content Creator</0> role. monday users with the <0>Viewer</0> and <0>Guest</0> roles are not invited to the room. Since the room is public, they will be able to open the files stored in the room for viewing. <br /> <br /> If the board is shared to a group of people (Everyone at \"project name\"), users are not invited to the room. The room is still available for viewing via an external link.",
+
+  "QuestionHead": "Reliable support at every step",
+  "QuestionSub": "Encounter a problem? We've got your back. Submit your issues via <0>GitHub</0> or join the <1>ONLYOFFICE forum</1> for quick support and guidance.",
+
+  "AscensioSystem": "© Ascensio System SIA 1998-2025. All right reserved"
+}

@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Entdecken Sie die Hauptfunktionen von ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Bearbeiten Sie DOCX-, XLSX- und PPTX-Dateien, lesen Sie PDF, erstellen Sie ausfüllbare Formulare, arbeiten Sie in Echtzeit zusammen, um die Hauptfunktionen von ONLYOFFICE zu überprüfen. Keine Downloads oder Registrierung erforderlich.",
+
+  "HeroHeadingSeeIt": "Sehen Sie es in Aktion!",
+  "HeroTextCurious": "Sind Sie neugierig, wie die Benutzeroberfläche aussieht, und möchten die wichtigsten Funktionen ohne Registrierung ausprobieren?",
+
+  "ActionsEditDocx": "DOCX bearbeiten",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
+  "ActionsEditXlsx": "XLSX bearbeiten",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
+  "ActionsEditPptx": "PPTX bearbeiten",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
+  "ActionsEditPdf": "PDF bearbeiten",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
+  "ActionsCreateForm": "Formular erstellen",
+  "ActionsFillInPdfForm": "PDF-Formular ausfüllen",
+  "ActionsCollaborate": "Zusammenarbeiten",
+
+  "ActionsDemoPreview": "Demo-Vorschau",
+  "ActionsDemoModalHeadingOpenDocx": "Öffnen Sie DOCX zur Bearbeitung",
+  "ActionsDemoModalHeadingOpenXlsx": "Öffnen Sie XLSX zur Bearbeitung",
+  "ActionsDemoModalHeadingOpenPptx": "Öffnen Sie PPTX zur Bearbeitung",
+  "ActionsDemoModalHeadingOpenPdf": "PDF bearbeiten",
+  "ActionsDemoModalHeadingOpenCreateForm": "Formular erstellen",
+  "ActionsDemoModalHeadingOpenFill": "PDF-Formular ausfüllen",
+  "ActionsDemoModalHeadingOpenCollaborate": "Zusammenarbeiten",
+  "ActionsDemoModalButtonClose": "Schließen"
+}

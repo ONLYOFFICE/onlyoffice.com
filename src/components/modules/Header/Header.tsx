@@ -1,55 +1,88 @@
-import { useState } from "react";
-import {
-  GlobalStyle,
-  StyledHeader,
-  StyledHeaderWrapper,
-  StyledHumburgerButton,
-  StyledHeaderLogo,
-  StyledHeaderBox,
-} from "./Header.styled";
-import { HeaderMenu } from "onlyoffice-react-ui-kit/header-menu";
-import "onlyoffice-react-ui-kit/header-menu/css";
-import { ILocale } from "@src/types/locale";
-import { Container } from "@src/components/ui/Container";
-import { SearchInput } from "./sub-components/SearchInput";
-import { PhoneMenu } from "./sub-components/PhoneMenu";
-import { LanguageSelector } from "./sub-components/LanguageSelector";
-import { Overlay } from "@src/components/ui/Overlay";
+import { useEffect, useState, useRef } from "react";
+import { useRouter } from "next/router";
+import { OOHeader } from "onlyoffice-react-ui-kit/header";
+import "onlyoffice-react-ui-kit/header/css";
+import { IHeader } from "./Header.types";
+import { languages } from "@src/config/data/languages";
 
-const Header = ({ locale }: ILocale) => {
-  const [isOpenMenuMobile, setIsOpenMenuMobile] = useState<boolean>(false);
+const Header = ({
+  locale,
+  theme,
+  highlight,
+  borderColor = "transparent",
+  backgroundColor = "transparent",
+  onScrollBorderColor = "#cccccc",
+  onScrollBackgroundColor = "#ffffff",
+  onScrollChangeTheme = true,
+}: IHeader) => {
+  const [scrolled, setScrolled] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
+  const headerRef = useRef<HTMLDivElement | null>(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    setSearchValue("");
+  }, [router.asPath]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      requestAnimationFrame(() => {
+        if (headerRef.current) {
+          setScrolled(headerRef.current.getBoundingClientRect().bottom <= 0);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [setScrolled]);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    router.push(`/search?search=${encodeURIComponent(searchValue)}`);
+  };
 
   return (
     <>
-      <GlobalStyle $isOpenMenuMobile={isOpenMenuMobile} />
-      <StyledHeader>
-        <Container maxWidth="1280px" desktopSpacing="24px">
-          <StyledHeaderWrapper>
-            <StyledHumburgerButton
-              onClick={() => setIsOpenMenuMobile(true)}
-              id="hamburger-button"
-            />
-            <StyledHeaderLogo id="header-logo" href="/">
-              <img
-                src="/images/logo/logo.svg"
-                alt="logo"
-                width={130}
-                height={24}
-              />
-            </StyledHeaderLogo>
-            <HeaderMenu locale={locale} isOpen={isOpenMenuMobile} />
-            <StyledHeaderBox>
-              <SearchInput />
-              <PhoneMenu />
-              <LanguageSelector />
-            </StyledHeaderBox>
-          </StyledHeaderWrapper>
-        </Container>
-        <Overlay
-          onClick={() => setIsOpenMenuMobile(false)}
-          active={isOpenMenuMobile}
-        />
-      </StyledHeader>
+      <div ref={headerRef}></div>
+      <OOHeader
+        locale={locale}
+        borderColor={scrolled ? onScrollBorderColor : borderColor}
+        backgroundColor={scrolled ? onScrollBackgroundColor : backgroundColor}
+        languages={languages.map((language) => ({
+          key: language.shortKey,
+          shortKey: language.shortKey,
+          name: language.name,
+          href: router.asPath,
+        }))}
+        search={{
+          show: true,
+          onSubmit: handleSubmit,
+          onChange: (e) => {
+            e.preventDefault();
+            setSearchValue(e.target.value);
+          },
+          value: searchValue,
+          variant: "main",
+        }}
+        hasPhone={true}
+        theme={
+          theme === "white"
+            ? scrolled && onScrollChangeTheme
+              ? undefined
+              : "white"
+            : undefined
+        }
+        highlight={{
+          buttonId: highlight?.buttonId,
+          linkId: highlight?.linkId,
+        }}
+      />
     </>
   );
 };

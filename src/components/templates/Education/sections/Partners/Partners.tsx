@@ -1,19 +1,15 @@
+import * as S from "./Partners.styled";
 import { items } from "./data/items";
-import {
-  StyledPartnerLogo,
-  StyledPartnersInner,
-  StyledPartnersWrapper,
-} from "./Partners.styled";
 
 const Partners = () => {
   return (
-    <StyledPartnersWrapper>
-      <StyledPartnersInner>
+    <S.StyledPartnersWrapper>
+      <S.StyledPartnersInner>
         {items.map((item) => (
-          <StyledPartnerLogo key={item.name} className={item.name} />
+          <S.StyledPartnerLogo key={item.name} className={item.name} />
         ))}
-      </StyledPartnersInner>
-    </StyledPartnersWrapper>
+      </S.StyledPartnersInner>
+    </S.StyledPartnersWrapper>
   );
 };
 

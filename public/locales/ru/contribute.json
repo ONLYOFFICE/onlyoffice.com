@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Помогите нам сделать ONLYOFFICE лучше",
+  "PageDescription": "Примите участие в проекте ONLYOFFICE: разрабатывайте, переводите, тестируйте или документируйте и распространяйте по всему миру.",
+
+  "HeroTitle": "Присоединяйтесь к<br> сообществу <span>ONLYOFFICE</span>",
+  "HeroText": "Нам нужны open-source разработчики, переводчики, редакторы и бета-тестировщики",
+
+  "ImproveOO": "Улучшайте ONLYOFFICE",
+  "DevelopYourOwnPluginOrMacros": "Разработайте собственный плагин или макрос для редакторов документов ONLYOFFICE.",
+  "ReadAPIDocumentation": "Читать документацию по API",
+  "CreateYourOwnForm": "Создавайте собственные шаблоны форм и предоставляйте к ним доступ другим пользователям.",
+  "OpenOurFormLibrary": "Откройте библиотеку форм",
+  "CreateAnExtensionOrModule": "Создайте свое приложение или модуль для ONLYOFFICE DocSpace.",
+  "DidYouFindABug": "Вы нашли ошибку? Сообщить об ошибках на <0>GitHub</0> или <1>Форуме</1>.",
+  "MoreInfo": "Узнать больше",
+
+  "SocialMediaText": "Общайтесь с нами в <0>блоге</0> или соцсетях",
+
+  "SpreadTitle": "Распространяйте технологии ONLYOFFICE",
+  "SpreadText": "Создайте коннектор для вашей платформы, чтобы сделать ONLYOFFICE доступным для всех.",
+  "SpreadLink": "Читать документацию по API",
+  "More": "Больше",
+
+  "TranslateOO": "<0>Переводите</0> ONLYOFFICE",
+  "TranslateOOText": "<p>Хотите помочь нам перевести ONLYOFFICE на ваш родной язык?</p><p>Присоединяйтесь к нашему сообществу переводчиков-добровольцев: напишите нам на <0>documentation@onlyoffice.com</0> и получите доступ к <1>онлайн-системе переводов</1>.</p>",
+
+  "TestOO": "<0>Тестируйте</0> ONLYOFFICE",
+  "TestOOText": "<p>Станьте бета-тестировщиком ONLYOFFICE, чтобы первыми получать доступ к новым функциям и влиять на ход разработки.</p><p>Напишите нам на <0>press@onlyoffice.com</0>.</p>",
+
+  "DocumentOO": "<0>Документируйте</0> ONLYOFFICE",
+  "DocumentOOText": "<p>У вас есть советы по эффективной работе с ONLYOFFICE?</p><p>Вы не нашли информацию по использованию каких-то функций?</p><p>Вы хотите перевести доступную документацию на родной язык?</p><p>Напишите нам на <0>documentation@onlyoffice.com</0> и поделитесь идеями.</p>",
+
+  "ContactsImgUrl": "/images/templates/contribute/contacts/ru/contacts-bg.png",
+  "ContactsImgUrl2x": "/images/templates/contribute/contacts/ru/contacts-bg@2x.png"
+}

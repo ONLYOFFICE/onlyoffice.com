@@ -1,0 +1,21 @@
+{
+  "comingSoon": "即将推出",
+  "soon": "即将推出",
+  "SliderScreen1Url": "/images/templates/docspace/collaborate/zh/collaboration_rooms.png",
+  "SliderScreen1Url2x": "/images/templates/docspace/collaborate/zh/collaboration_rooms_2x.png",
+  "SliderScreen2Url": "/images/templates/docspace/collaborate/zh/meeting_rooms.png",
+  "SliderScreen2Url2x": "/images/templates/docspace/collaborate/zh/meeting_rooms_2x.png",
+  "SliderScreen3Url": "/images/templates/docspace/collaborate/zh/public_rooms.png",
+  "SliderScreen3Url2x": "/images/templates/docspace/collaborate/zh/public_rooms_2x.png",
+  "SliderScreen4Url": "/images/templates/docspace/collaborate/zh/custom_rooms.png",
+  "SliderScreen4Url2x": "/images/templates/docspace/collaborate/zh/custom_rooms_2x.png",
+  "SliderScreen5Url": "/images/templates/docspace/collaborate/zh/form_fill_rooms.png",
+  "SliderScreen5Url2x": "/images/templates/docspace/collaborate/zh/form_fill_rooms_2x.png",
+  "SliderScreen6Url": "/images/templates/docspace/collaborate/zh/virtual_data_rooms.png",
+  "SliderScreen6Url2x": "/images/templates/docspace/collaborate/zh/virtual_data_rooms_2x.png",
+  "SliderScreen7Url": "/images/templates/docspace/collaborate/zh/private_rooms.png",
+  "SliderScreen7Url2x": "/images/templates/docspace/collaborate/zh/private_rooms_2x.png",
+  "AICardImageUrl": "/images/templates/docspace/ai/zh/ai-plugins.svg",
+  "YoutubeImgUrl": "/images/templates/docspace/learn-more/bilibili.jpg",
+  "YoutubeLink": "https://space.bilibili.com/1870911731/channel/collectiondetail?sid=1418626&ctype=0"
+}

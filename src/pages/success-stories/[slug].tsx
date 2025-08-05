@@ -1,14 +1,14 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { Layout } from "@src/components/Layout";
-import { AdventAnnounceBanner } from "@src/components/modules/AdventAnnounceBanner";
+import { AdventAnnounce } from "@src/components/modules/AdventAnnounce";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
 import { SuccessStoriesTemplate } from "@src/components/templates/SuccessStories";
 import { data as successStories } from "@src/components/templates/SuccessStories/data/success-stories";
 import { GetStaticPropsContext, InferGetStaticPropsType } from "next/types";
-import { languages } from "@src/config/languages";
+import { languages } from "@src/config/data/languages";
 import { ISuccessStoriesData } from "@src/components/templates/SuccessStories/SuccessStories.types";
 
 const SuccessStoriesPage = ({
@@ -23,7 +23,7 @@ const SuccessStoriesPage = ({
   return (
     <Layout>
       <Layout.AdventAnnounce>
-        <AdventAnnounceBanner locale={locale ?? "en"} />
+        <AdventAnnounce locale={locale ?? "en"} />
       </Layout.AdventAnnounce>
       <Layout.Head>
         <Head
@@ -34,7 +34,12 @@ const SuccessStoriesPage = ({
         />
       </Layout.Head>
       <Layout.Header>
-        <Header locale={locale ?? "en"} />
+        <Header
+          locale={locale ?? "en"}
+          highlight={{
+            buttonId: "oo-menu-item-btn-resources",
+          }}
+        />
       </Layout.Header>
       <Layout.Main>
         <SuccessStoriesTemplate

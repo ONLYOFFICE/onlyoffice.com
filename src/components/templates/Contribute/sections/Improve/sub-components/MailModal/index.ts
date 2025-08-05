@@ -1,1 +1,0 @@
-export { MailModal } from "./MailModal";

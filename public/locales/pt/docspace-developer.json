@@ -1,0 +1,73 @@
+{
+  "PageTitle": "ONLYOFFICE DocSpace, armazenamento seguro de documentos e colaboração para seus usuários de aplicativos da web | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE é uma suíte de escritório online integrada com plataforma de colaboração para gerenciar documentos, projetos, e relações com clientes em um só lugar.",
+
+  "HeroHeading": "ONLYOFFICE DocSpace, <br><0>armazenamento seguro de documentos e colaboração para seus usuários de aplicativos da web</0>",
+  "HeroButtonGet": "Obtenha-o agora",
+  "HeroButtonSchedule": "Agendar demonstração",
+  "HeroYoutubeTitle": "YouTube video player",
+  "HeroYoutubeUrl": "https://www.youtube.com/embed/snOBl5Ru6lc?si=Tt4C4r4OaUVVCHBs?autoplay=1&mute=1",
+  "HeroYouTubeAttributeName": "youtube embed",
+
+  "SwitcherHeadingBringYour": "Ofereça aos usuários do seu aplicativo web um espaço seguro para armazenamento de conteúdo e colaboração on-line de documentos",
+
+  "SwitcherItemTitle1": "Integre todo o ONLYOFFICE DocSpace, uma única sala ou apenas um documento simples ...",
+  "SwitcherItemText1": " O ONLYOFFICE fornece <0>JavaScript SDK</0> permitindo que você use todas as possibilidades do DocSpace com api.js.",
+  "SwitcherItemLink1": "Leia a documentação",
+  "SwitcherItemImgUrl1": "/images/templates/docspace-developer/switcher/integrate.png",
+  "SwitcherItemImgUrl2x1": "/images/templates/docspace-developer/switcher/integrate@2x.png",
+
+  "SwitcherItemTitle2": "... sob sua marca ...",
+  "SwitcherItemText2": "Use as opções de marca padrão ou opte pelo White Label para personalizar la interface e combinar com a marca do seu site ou aplicativo. Ajuste as cores, altere títulos, logotipos e links, oculte a seção Sobre e muito mais.",
+  "SwitcherItemLink2": "Entre em contato com nossa equipe de vendas para obter detalhes.",
+  "SwitcherItemImgUrl2": "/images/templates/docspace-developer/switcher/branding.png",
+  "SwitcherItemImgUrl2x2": "/images/templates/docspace-developer/switcher/branding@2x.png",
+
+  "SwitcherItemTitle3": "... em seus próprios servidores ...",
+  "SwitcherItemText3": "O ONLYOFFICE DocSpace Developer pode ser implantado no local como uma solução de nuvem privada ou híbrida, de modo que os dados do usuário sempre permaneçam em sua infraestrutura: sem transferência para nuvens públicas.",
+  "SwitcherItemLink3": "Experimente agora",
+  "SwitcherItemImgUrl3": "/images/templates/docspace-developer/switcher/server.png",
+  "SwitcherItemImgUrl2x3": "/images/templates/docspace-developer/switcher/server@2x.png",
+
+  "SwitcherItemTitle4": "... em minutos.",
+  "SwitcherItemText4": "O ONLYOFFICE fornece ferramentas de integração simples que requerem tempo e esforço mínimos para que os desenvolvedores configurem uma integração funcional completa do DocSpace.",
+  "SwitcherItemLink4": "",
+  "SwitcherItemImgUrl4": "/images/templates/docspace-developer/switcher/in-minutes.png",
+  "SwitcherItemImgUrl2x4": "/images/templates/docspace-developer/switcher/in-minutes@2x.png",
+
+  "CardsHeading": "O ONLYOFFICE DocSpace foi criado para se adaptar perfeitamente ao seu aplicativo ou site",
+
+  "CardsItemTitle1": "Não importa em que linguagem seu aplicativo foi escrito",
+  "CardsItemText1": "O ONLYOFFICE DocSpace pode ser integrado em qualquer aplicativo ou site, independentemente de sua pilha de tecnologia, linguagem de programação e estrutura.",
+
+  "CardsItemTitle2": "Não importa o modelo de implantação que você usa",
+  "CardsItemText2": "Você pode integrar o ONLYOFFICE DocSpace em sua solução SaaS ou no local.",
+
+  "CardsItemTitle3": "Para múltiplos usos",
+  "CardsItemText3": "Incluindo: CMS, CRM, plataformas de eLearning, correio, aplicativos de mensagens e software de gerenciamento de projetos e muito mais.",
+
+  "WorthHeading": "O ONLYOFFICE DocSpace é altamente apreciado tanto por",
+
+  "WorthByUsersTitle": "Por usuários",
+  "WorthByUsersList": [
+    "Salas personalizáveis para diferentes finalidades: colaboração, reunião, preenchimento de formulários, due diligence, público",
+    "Permissões de acesso flexíveis",
+    "Editores de documentos on-line integrados para documentos, planilhas, slides, formulários e PDFs",
+    "Recursos de segurança aprimorados",
+    "Experiência de usuário impecável em diferentes dispositivos"
+  ],
+
+  "WorthByDevelopersTitle": "Por desenvolvedores",
+  "WorthByDevelopersList": [
+    "Incorporação de predefinições e modo personalizado",
+    "Suporte a API e webhook",
+    "SDK de plug-in para ampliar a funcionalidade",
+    "Alta disponibilidade e desempenho",
+    "Preços flexíveis e dimensionáveis",
+    "Exemplos de integração prontos para uso",
+    "Suporte para cada etapa dos especialistas do ONLYOFFICE"
+  ],
+
+  "WorthButtonTry": "Experimente agora",
+  "WorthButtonRead": "Leia a documentação"
+}

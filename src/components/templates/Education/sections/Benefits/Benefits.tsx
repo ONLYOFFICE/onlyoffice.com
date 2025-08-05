@@ -1,20 +1,11 @@
 import { useTranslation } from "next-i18next";
+import * as S from "./Benefits.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { useState } from "react";
 import { IBenefits } from "./Benefits.types";
 import { benefits } from "./data/benefits";
 import { Button } from "@src/components/ui/Button";
-import {
-  StyledBenefit,
-  StyledBenefitContent,
-  StyledBenefitImage,
-  StyledBenefitList,
-  StyledBenefitListItem,
-  StyledBenefitsHeading,
-  StyledBenefitsWrapper,
-  StyledBenefitTitle,
-} from "./Benefits.styled";
 
 const Benefits = () => {
   const { t } = useTranslation("education");
@@ -24,40 +15,43 @@ const Benefits = () => {
   return (
     <Section>
       <Container>
-        <StyledBenefitsHeading level={2} label={t("WhyUsingOOForEducation")} />
-        <StyledBenefitsWrapper>
-          <StyledBenefitTitle
+        <S.StyledBenefitsHeading
+          level={2}
+          label={t("WhyUsingOOForEducation")}
+        />
+        <S.StyledBenefitsWrapper>
+          <S.StyledBenefitTitle
             $isActive={educatorType === "teacher"}
             onClick={() => setEducatorType("teacher")}
           >
             {t("IfYoureAnEducator")}
-          </StyledBenefitTitle>
-          <StyledBenefitTitle
+          </S.StyledBenefitTitle>
+          <S.StyledBenefitTitle
             $isActive={educatorType === "student"}
             onClick={() => setEducatorType("student")}
           >
             {t("IfYoureAStudent")}
-          </StyledBenefitTitle>
-        </StyledBenefitsWrapper>
+          </S.StyledBenefitTitle>
+        </S.StyledBenefitsWrapper>
 
         {benefits
           .filter((benefit) => benefit.educatorType === educatorType)
           .map((benefit, index) => (
-            <StyledBenefit key={educatorType + index}>
-              <StyledBenefitContent>
-                <StyledBenefitList
+            <S.StyledBenefit key={educatorType + index}>
+              <S.StyledBenefitContent>
+                <S.StyledBenefitList
                   style={{ order: educatorType === "teacher" ? 0 : 1 }}
                 >
                   {benefit.items.map((item, idx) => (
-                    <StyledBenefitListItem key={idx}>
+                    <S.StyledBenefitListItem key={idx}>
                       {t(item)}
-                    </StyledBenefitListItem>
+                    </S.StyledBenefitListItem>
                   ))}
-                </StyledBenefitList>
-                <StyledBenefitImage src={benefit.image} alt={educatorType} />
-              </StyledBenefitContent>
+                </S.StyledBenefitList>
+                <S.StyledBenefitImage src={benefit.image} alt={educatorType} />
+              </S.StyledBenefitContent>
               <Button as="a" href={benefit.link} label={t("GetStarted")} />
-            </StyledBenefit>
+            </S.StyledBenefit>
           ))}
       </Container>
     </Section>

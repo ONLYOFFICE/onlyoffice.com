@@ -1,6 +1,7 @@
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Section } from "@src/components/ui/Section";
+import { Container } from "@src/components/ui/Container";
 import {
   StyledResourcesContent,
   StyledResourcesListItem,
@@ -13,7 +14,7 @@ const Resources = () => {
 
   return (
     <Section>
-      <StyledResourcesContent>
+      <Container>
         <Heading level={3}>
           <Trans
             t={t}
@@ -21,7 +22,7 @@ const Resources = () => {
             components={[<Text as="span" color="#FF6F3D" key={0} />]}
           />
         </Heading>
-        <div>
+        <StyledResourcesContent>
           <StyledResourcesListItem>
             <Trans
               t={t}
@@ -90,8 +91,8 @@ const Resources = () => {
               ]}
             />
           </StyledResourcesListItem>
-        </div>
-      </StyledResourcesContent>
+        </StyledResourcesContent>
+      </Container>
     </Section>
   );
 };

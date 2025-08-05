@@ -1,0 +1,40 @@
+{
+  "PageTitle": "Conversion API | ONLYOFFICE",
+  "PageDescription": "One API to convert all kinds of office documents",
+
+  "HeroTitle": "Powerful document conversion",
+  "HeroText": "One API to convert all kinds of Office documents : texts, sheets, slides, forms, PDFs, eBooks and more",
+  "GetStarted": "Get started",
+
+  "ExploreExamples": "Explore ready-to-use examples",
+  "OOConversionApiTitle": "ONLYOFFICE Conversion API is used in popular integrations",
+  "ConvertingFormats": "Converting non-OOXML formats to OOXML for further editing",
+  "ConvertingFormatsImgUrl": "/images/templates/conversion-api/examples/en/converting-non-ooxml-formats-to-ooxml-for-further-editing.png",
+  "ConvertingFormatsImgUrl2x": "/images/templates/conversion-api/examples/en/converting-non-ooxml-formats-to-ooxml-for-further-editing@2x.png",
+  "SavingDocuments": "Saving documents from the file storage in various formats",
+  "SavingDocumentsImgUrl": "/images/templates/conversion-api/examples/en/saving-documents-from-the-file-storage-in-various-formats.png",
+  "SavingDocumentsImgUrl2x": "/images/templates/conversion-api/examples/en/saving-documents-from-the-file-storage-in-various-formats@2x.png",
+
+  "WhyToUseOOConversionApi": "Why to use ONLYOFFICE Conversion API",
+  "SupportForAllPopularFormats": "Support for all popular formats",
+  "CreatePdfs": "Create PDFs from your docs, sheets, or slides, turn textbook into eBooks, convert presentations to image files, and more. ONLYOFFICE supports more that 50 different document <0>formats</0>.",
+  "Security": "Security",
+  "TheOpenSourceCode": "The open source code of ONLYOFFICE is listed on GitHub to ensure transparency and reliability. JSON Web Token protects documents from unauthorized access. Read more about <0>security measures</0>.",
+  "AdvancedSettings": "Advanced settings",
+  "AddConversionSettings": "Add conversion settings to define the delimiter characters when converting csv files, the default currency display mode when converting spreadsheets, or to set page size and margins of the output PDF file, and more. Check out the API documentation to learn about all available options.",
+  "HighQualityConversion": "High-quality conversion",
+  "OOConstantlyImproveTheService": "ONLYOFFICE constantly improve the service to provide the best possible results for all conversion types. Use <0>our online converter</0> and try to convert your own document files.",
+
+  "EasilyBuild": "Easily build an online document converter",
+  "UsingOOConversionApi": "Using ONLYOFFICE Conversion API",
+  "CheckTheTutorial": "Check the tutorial",
+  "DocumentConverterLink": "https://www.onlyoffice.com/blog/2023/02/build-an-online-document-converter-with-onlyoffice-conversion-api",
+
+  "PartOfOODocsDeveloper": "ONLYOFFICE Conversion API – part of ONLYOFFICE Docs Developer",
+  "BringAdvancedDocument": "Bring advanced document processing with the conversion service to the end users under your own brand. <0>Learn more</0>",
+  "ConversionApiLinkSubject": "ONLYOFFICE%20Conversion%20API%20request",
+
+  "HaveAnyQuestions": "Have any questions?",
+  "HaveAnyQuestionsText": "We'll be glad to assist you and discuss all the details.",
+  "GetInTouch": "GET IN TOUCH"
+}

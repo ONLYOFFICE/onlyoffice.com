@@ -1,0 +1,63 @@
+{
+  "AccountCanceledPageTitle": "ONLYOFFICE Personal account deleted | ONLYOFFICE",
+  "AccountCanceledPageDescription": "Why did you decide to delete your ONLYOFFICE Personal account.",
+
+  "InstallCanceledPageTitle": "ONLYOFFICE on-premises uninstalled | ONLYOFFICE",
+  "InstallCanceledPageDescription": "Why did you decide to uninstall ONLYOFFICE from your server.",
+
+  "RegistrationCanceledPageTitle": "Cloud office registration cancelled | ONLYOFFICE",
+  "RegistrationCanceledPageDescription": "Why did you decide to cancel ONLYOFFICE cloud registration.",
+
+  "DesktopUninstalledPageTitle": "ONLYOFFICE Desktop Editors uninstalled | ONLYOFFICE",
+  "DesktopUninstalledPageDescription": "Why did you decide to uninstall ONLYOFFICE Desktop Editors.",
+
+  "CanceledHeroTitle": "Lamentamos que te vayas.",
+
+  "WhyDidYouDecideToUninstallOnlyoffice": "¿Por qué has decidido desinstalar ONLYOFFICE?",
+  "SelectAllThatApply": "Selecciona todas las opciones que correspondan",
+  "ExperiencedTechnicalProblems": "He experimentado problemas técnicos",
+  "NeedMoreStorageSpace": "Necesito más espacio de almacenamiento",
+  "DidntFindNecessaryFeatures": "No he encontrado las características necesarias",
+  "PrivacyConcernsLegalViolation": "Asuntos de privacidad/violación legal",
+  "IRarelyWorkInBrowser": "Casi nunca trabajo en el navegador",
+  "Other": "Otras razones",
+
+  "SwitchedToTheCloudVersion": "He migrado a la solución autoalojada",
+  "IRarelyUseOnlyoffice": "Casi nunca uso ONLYOFFICE",
+
+  "IWillUseAnotherDesktopSoftware": "Voy a utilizar otro software de escritorio",
+  "IRarelyUseOnlyofficeDesktopEditors": "Casi nunca uso ONLYOFFICE Desktop Editors",
+
+  "SwitchedToOnPremises": "He migrado a la solución autoalojada",
+  "WhatShouldWeImproveInOnlyofficePersonal": "¿Qué deberíamos mejorar en ONLYOFFICE Personal?",
+  "WhatShouldWeImproveInOnlyoffice": "¿Qué deberíamos mejorar en ONLYOFFICE?",
+  "WhatShouldWeImproveInOnlyofficeDesktopEditors": "¿Qué deberíamos mejorar en ONLYOFFICE Desktop Editors?",
+  "YourMessageHere": "Escribe aquí tu mensaje",
+  "Email": "Email",
+  "EmailIsEmpty": "El campo Email está vacío",
+  "EmailIsIncorrect": "Email es incorrecto",
+  "ByClickingSendFeedback": "Al hacer clic en \"Enviar comentarios\", comprendes y aceptas nuestro <0>SLA</0> y nuestra <1>Declaración de privacidad</1>.",
+  "SendFeedback": "ENVIAR COMENTARIOS",
+
+  "ThanksForYourMessage": "Gracias por tu mensaje.",
+  "IfYouDecideToGetBack": "Si decides volver, utiliza este código para <0>conseguir un 10%</0> de descuento para ONLYOFFICE cloud service o simplemente compártelo con tu amigo*.",
+  "WhyTakeBusinessToOnlyofficeCloudToday": "Por qué trasladar el negocio a la nube de ONLYOFFICE ahora",
+  "FullyGDPRCompliantCloudOffice": "Oficina en la nube que cumple con el RGPD",
+  "ReducedMaintenanceCosts": "Costes de mantenimiento reducidos",
+  "SecureAndReliableHosting": "Alojamiento seguro y fiable",
+  "AutomaticUpdates": "Actualizaciones automáticas y soporte técnico profesional",
+  "ScalableCostEffectiveSolution": "Solución escalable y rentable",
+  "EntirelyFree": "Totalmente gratuito para las organizaciones sin ánimo de lucro y los colegios",
+  "TheCoupon": "*El código será válido durante 12 meses.",
+
+  "DontLeave": "No te vayas con las manos vacías: consigue gratis la nube personal con los editores para uso doméstico y un <0>10% de descuento</0> para nuestros editores en línea para empresas*.",
+  
+  "WhyChooseFreePersonalOnlyofficeCloudToday": "Por qué elegir hoy la nube personal gratuita de ONLYOFFICE",
+  "FreeAndSecureCloudStorage": "Almacenamiento en la nube gratuito y seguro",
+  "HighestCompatibility": "Máxima compatibilidad con los formatos de MS Office",
+  "DocumentEditing": "Edición de documentos y colaboración dentro de tu navegador",
+  "ConnectionOfPopular": "Conexión de almacenamientos populares de terceros: Dropbox, OneDrive y otros",
+  "PleaseNote": "*Por favor, ten en cuenta que el código será válido sólo durante 12 meses.",
+
+  "HopeToSeeYouAgain": "Gracias por tu mensaje. ¡Esperamos que vuelvas pronto!"
+}

@@ -1,34 +1,27 @@
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
-import {
-  StyledHeroContent,
-  StyledHeroHeading,
-  StyledHeroImage,
-  StyledHeroSection,
-  StyledHeroText,
-  StyledHeroWrapper,
-} from "./Hero.styled";
+import * as S from "./Hero.styled";
 
 const Hero = () => {
   const { t } = useTranslation("education");
 
   return (
-    <StyledHeroSection
+    <S.StyledHeroSection
       desktopSpacing={["162px", "162px"]}
       tabletSpacing={["162px", "162px"]}
       tabletSmallSpacing={["162px", "10px"]}
       mobileSpacing={["120px", "48px"]}
     >
       <Container>
-        <StyledHeroWrapper>
-          <StyledHeroContent>
-            <StyledHeroHeading label={t("HeroTitle")} />
-            <StyledHeroText label={t("HeroText")} />
-          </StyledHeroContent>
-          <StyledHeroImage />
-        </StyledHeroWrapper>
+        <S.StyledHeroWrapper>
+          <S.StyledHeroContent>
+            <S.StyledHeroHeading label={t("HeroTitle")} />
+            <S.StyledHeroText label={t("HeroText")} />
+          </S.StyledHeroContent>
+          <S.StyledHeroImage />
+        </S.StyledHeroWrapper>
       </Container>
-    </StyledHeroSection>
+    </S.StyledHeroSection>
   );
 };
 

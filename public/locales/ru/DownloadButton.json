@@ -1,0 +1,13 @@
+{
+  "windows": "Для Windows",
+  "macos": "Для Mac OS",
+  "linux": "Для Linux",
+  "app-store": {
+    "light": "/images/ui/download-button/ru/app-store.svg",
+    "dark": "/images/ui/download-button/ru/app-store.svg"
+  },
+  "google-play": {
+    "light": "/images/ui/download-button/ru/google-play.svg",
+    "dark": "/images/ui/download-button/ru/google-play.svg"
+  }
+}

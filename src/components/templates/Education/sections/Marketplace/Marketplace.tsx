@@ -1,14 +1,10 @@
 import { Trans, useTranslation } from "next-i18next";
+import * as S from "./Marketplace.styled";
 import { Container } from "@src/components/ui/Container";
 import { Section } from "@src/components/ui/Section";
 import { Link } from "@src/components/ui/Link";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import {
-  StyledMarketplaceQuote,
-  StyledMarketplaceStars,
-  StyledMarketplaceWrapper,
-} from "./Marketplace.styled";
 
 const Marketplace = () => {
   const { t } = useTranslation("education");
@@ -20,7 +16,7 @@ const Marketplace = () => {
       tabletSmallSpacing={["64px", "88px"]}
     >
       <Container>
-        <StyledMarketplaceWrapper>
+        <S.StyledMarketplaceWrapper>
           <img
             src="/images/templates/education/marketplace/eas-logo.png"
             alt={t("EducationalAppStore")}
@@ -29,7 +25,7 @@ const Marketplace = () => {
             <Heading level={4} size={5} label={t("EducationalAppStore")} />
             <Text size={1} label={t("ADiscoveryMarketplace")} />
           </div>
-          <StyledMarketplaceStars>
+          <S.StyledMarketplaceStars>
             {[...Array(5)].map((_, index) => (
               <img
                 key={index}
@@ -39,8 +35,8 @@ const Marketplace = () => {
                 alt="star"
               />
             ))}
-          </StyledMarketplaceStars>
-          <StyledMarketplaceQuote>
+          </S.StyledMarketplaceStars>
+          <S.StyledMarketplaceQuote>
             <Trans
               t={t}
               i18nKey="OOIsByFarTheBest"
@@ -55,8 +51,8 @@ const Marketplace = () => {
                 />,
               ]}
             />
-          </StyledMarketplaceQuote>
-        </StyledMarketplaceWrapper>
+          </S.StyledMarketplaceQuote>
+        </S.StyledMarketplaceWrapper>
       </Container>
     </Section>
   );

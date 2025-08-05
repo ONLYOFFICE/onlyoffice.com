@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { IStepCarouselItem } from "./StepCarousel.types";
 import { device } from "@src/utils/device";
 
@@ -101,15 +101,8 @@ const StyledStepCarouselTab = styled.button<{ $active: boolean }>`
   }
 `;
 
-const StyledStepCarouselBox = styled.div<{ $activeTab: boolean }>`
-  ${(props) =>
-    props.$activeTab
-      ? css`
-          display: block;
-        `
-      : css`
-          display: none;
-        `}
+const StyledStepCarouselBox = styled.div<{ $activeTab?: boolean }>`
+  display: ${(props) => (props.$activeTab ? "block" : "none")};
 `;
 
 const StyledStepCarouselSlide = styled.div`

@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Comprueba la funcionalidad principal de ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Edita archivos docx, xlsx, pptx, visualiza PDFs, crea formularios rellenables, colabora en tiempo real para comprobar las características principales de ONLYOFFICE. No es necesario descargar nada ni registrarse.",
+
+  "HeroHeadingSeeIt": "¡Verlo en acción!",
+  "HeroTextCurious": "¿Quieres saber cómo es la interfaz y probar las principales funciones sin registrarte?",
+
+  "ActionsEditDocx": "Editar DOCX",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
+  "ActionsEditXlsx": "Editar XLSX",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
+  "ActionsEditPptx": "Editar PPTX",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
+  "ActionsEditPdf": "Edita archivos PDF",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
+  "ActionsCreateForm": "Crear formulario",
+  "ActionsFillInPdfForm": "Rellena el formulario PDF",
+  "ActionsCollaborate": "Colaborar",
+
+  "ActionsDemoPreview": "Demostración previa",
+  "ActionsDemoModalHeadingOpenDocx": "Abrir DOCX para editar",
+  "ActionsDemoModalHeadingOpenXlsx": "Abrir XLSX para editar",
+  "ActionsDemoModalHeadingOpenPptx": "Abrir PPTX para editar",
+  "ActionsDemoModalHeadingOpenPdf": "Edita archivos PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Crear formulario",
+  "ActionsDemoModalHeadingOpenFill": "Rellena el formulario PDF",
+  "ActionsDemoModalHeadingOpenCollaborate": "Colaborar",
+  "ActionsDemoModalButtonClose": "Cerrar"
+}

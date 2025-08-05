@@ -32,36 +32,48 @@ import {
   supportLevel,
 } from "../../data/plans";
 import { InfoIcon } from "@src/components/icons";
-import { QuoteModal } from "@src/components/widgets/pricing/QuoteModal";
+import {
+  QuoteModal,
+  IQuoteModalOnSubmitRequest,
+  IQuoteModalFormData,
+} from "@src/components/widgets/pricing/QuoteModal";
 
 const EnterpriseModal = ({
   isOpen,
   onClose,
   locale,
   productsData,
+  affiliate,
 }: IEnterpriseModal & IDocSpacePricesTemplate) => {
   const { t } = useTranslation("docspace-prices");
   const currency = getCurrencyByLocale(locale);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formData, setFormData] = useState<IEnterpriseModalFormData>({
-    fullname: "",
-    email: "",
-    phone: "",
-    companyName: "",
+  const initialFormData: IEnterpriseModalFormData = {
     usersNumber: "100",
     licenseDuration: "1 Year",
     supportAndUpdates: "1 Year",
-    supportLevel: "Standard",
+    supportLevel: "Basic",
     multiServerDeployment: false,
     trainingCourses: false,
-  });
+  };
+  const initialQuoteFormData: IQuoteModalFormData = {
+    fullName: "",
+    email: "",
+    phone: "",
+    companyName: "",
+    hCaptcha: null,
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] =
+    useState<IEnterpriseModalFormData>(initialFormData);
+  const [quoteFormData, setQuoteFormData] = useState(initialQuoteFormData);
 
   const isUponRequest = [
     formData.usersNumber === "more",
     formData.licenseDuration !== "1 Year",
     formData.supportAndUpdates !== "1 Year",
-    formData.supportLevel !== "Standard",
+    formData.supportLevel !== "Basic",
     formData.multiServerDeployment,
     formData.trainingCourses,
   ].some(Boolean);
@@ -75,10 +87,47 @@ const EnterpriseModal = ({
       more: { price: null, url: "" },
     }[formData.usersNumber] || "";
 
+  const onSubmitRequest = async ({
+    from,
+    country,
+    region,
+  }: IQuoteModalOnSubmitRequest) => {
+    return fetch("/api/docspace-prices", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        locale,
+        referer: document.referrer,
+        fullName: quoteFormData.fullName,
+        email: quoteFormData.email,
+        phone:
+          locale === "zh" && !quoteFormData.phone ? "+86" : quoteFormData.phone,
+        companyName: quoteFormData.companyName,
+        usersNumber: formData.usersNumber,
+        licenseDuration: formData.licenseDuration,
+        supportAndUpdates: formData.supportAndUpdates,
+        supportLevel: formData.supportLevel,
+        multiServerDeployment: formData.multiServerDeployment,
+        trainingCourses: formData.trainingCourses,
+        from,
+        country,
+        region,
+        affiliateId: affiliate.id || "",
+        affiliateToken: affiliate.token || "",
+        type: "docspaceenterpriserequest",
+      }),
+    }).then((res) => res.json());
+  };
+
   return (
     <>
-      <Modal maxWidth="544px" isOpen={isOpen} onClose={onClose}>
-        <StyledEnterpriseModal>
+      <Modal
+        data-testid="enterprise-modal"
+        maxWidth="544px"
+        isOpen={isOpen}
+        onClose={onClose}
+      >
+        <StyledEnterpriseModal data-testid="enterprise-modal-form">
           <StyledEnterpriseModalHeading
             level={3}
             label={t("EnterpriseOnPremises")}
@@ -233,12 +282,14 @@ const EnterpriseModal = ({
             {isUponRequest ? (
               <StyledEnterpriseModalBtn
                 onClick={() => setIsModalOpen(true)}
+                data-testid="enterprise-modal-get-a-quote-button"
                 label={t("GetAQuote")}
               />
             ) : (
               <StyledEnterpriseModalBtn
+                data-testid="enterprise-modal-buy-now-button"
                 forwardedAs="a"
-                href={product.url}
+                href={`${product.url}${affiliate.params}`}
                 target="_blank"
                 label={t("BuyNow")}
               />
@@ -246,6 +297,7 @@ const EnterpriseModal = ({
 
             <StyledEnterpriseModalBtn
               onClick={onClose}
+              data-testid="enterprise-modal-cancel-button"
               forwardedAs="button"
               variant="tertiary"
               label={t("Cancel")}
@@ -257,7 +309,6 @@ const EnterpriseModal = ({
       <QuoteModal
         locale={locale}
         isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
         heading={t("FillInTheFormToGetAQuoteForOODocSpace")}
         byClickedText={
           <Trans
@@ -283,7 +334,14 @@ const EnterpriseModal = ({
             ]}
           />
         }
+        initialFormData={initialFormData}
+        initialQuoteFormData={initialQuoteFormData}
+        setFormData={setFormData}
+        quoteFormData={quoteFormData}
+        setQuoteFormData={setQuoteFormData}
         buttonLabel={t("GetAQuote")}
+        onSubmitRequest={onSubmitRequest}
+        onClose={() => setIsModalOpen(false)}
       />
     </>
   );

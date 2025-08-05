@@ -43,7 +43,10 @@ const StepCarousel = ({
 
       <StyledStepCarouselWrapper>
         {(isTabbed ? tabs! : [{ items }]).map((tab, i) => (
-          <StyledStepCarouselBox key={i} $activeTab={i === activeTab}>
+          <StyledStepCarouselBox
+            key={i}
+            $activeTab={i === (typeof activeTab === "number" ? activeTab : 0)}
+          >
             <Swiper
               spaceBetween={32}
               loop

@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Gestión de correo electrónico corporativo | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE permite crear buzones corporativos, integrar  cuentas de correo electrónico y gestionar toda la correspondencia en un solo lugar.",
+
+  "HeroTitle": "Administra tus correos eficientemente",
+  "HeroText": "Herramienta fácil de usar para la gestión de correo",
+  "GetItNow": "Obtener ahora",
+
+  "MailServer": "Servidor de Correo",
+  "MailServerText": "Añade un servidor de correo usando tu propio nombre de dominio para crear buzones de correo corporativos para los miembros de tu equipo. Sincroniza los correos electrónicos a través de IMAP. Haz una copia de seguridad y restaura la base de datos del Servidor de Correo.",
+  "MailServerImage": "/images/templates/mail/features/es/mail_server.png",
+  "MailAggregator": "Agregador de correo",
+  "MailAggregatorText": "Recibe, trata y guarda toda la correspondencia en un lugar conectando todas las cuentas de correo a ONLYOFFICE.",
+  "MailAggregatorImage": "/images/templates/mail/features/es/mail_aggregator.png",
+  "EffectiveEmail": "Gestión de correo electrónico efectiva",
+  "EffectiveEmailText": "Organiza tu bandeja de entrada de manera eficiente: estructura la correspondencia por categorías con la gestión de Carpetas, fácilmente mueve emails a carpetas con la función \"arrastrar y soltar\", usa filtros para ordenar correo automáticamente.",
+  "EffectiveEmailImage": "/images/templates/mail/features/es/effective_email.png",
+  "EasyEmailFormatting": "Formateo fácil del correo electrónico",
+  "EasyEmailFormattingText": "Funciona íntegramente con fuentes y estilos. Carga archivos adjuntos y adjunta archivos desde el módulo Documentos. Crea y gestiona firmas. Utiliza el constructor completo de plantillas.",
+  "EasyEmailFormattingImage": "/images/templates/mail/features/es/email_formatting.png",
+  "CrmIntegration": "Integración con CRM",
+  "CrmIntegrationText": "Conecta el hilo de correos o mensajes individuales a contactos, casos u oportunidades del CRM, y ten toda la correspondencia relacionada a mano.",
+  "CrmIntegrationImage": "/images/templates/mail/features/es/crm_integration.png",
+  "DocumentIntegration": "Integración con el módulo Documentos",
+  "DocumentIntegrationText": "Adjunta archivos del módulo Documentos a tus correos para un intercambio de información rápido.",
+  "DocumentIntegrationImage": "/images/templates/mail/features/es/document_integration.png",
+  "CalendarIntegration": "Integración con Calendario",
+  "CalendarIntegrationText": "Envía invitaciones a los eventos de tu calendario y notifica a los invitados de cualquier cambio realizado. Recibe invitaciones de otros calendarios y contesta a ellas.",
+  "CalendarIntegrationImage": "/images/templates/mail/features/es/calendar_integration.png",
+
+  "PerfectOnlineCollaboration": "Un espacio en línea perfecto para colaboración de su equipo entero.",
+  "PcMag": "PC Mag"
+}

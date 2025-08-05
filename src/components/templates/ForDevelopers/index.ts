@@ -1,0 +1,1 @@
+export { ForDevelopersTemplate } from "./ForDevelopers";

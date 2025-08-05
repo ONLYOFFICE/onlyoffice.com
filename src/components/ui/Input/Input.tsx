@@ -35,6 +35,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
       onFocus,
       onBlur,
       onKeyDown,
+      ...rest
     },
     ref,
   ) => {
@@ -66,7 +67,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
     return (
       <StyledInput>
         <StyledInputWrapper
-          className={`input-wrapper ${className}`}
+          className={`input-wrapper ${className ? className : ""}`}
           ref={ref}
           $status={status}
           $isFocused={isFocused}
@@ -82,6 +83,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
                 $value={value}
                 $leftSide={leftSide}
                 $active={active}
+                $status={status}
                 $disabled={disabled}
               >
                 {label}
@@ -110,6 +112,7 @@ const Input = forwardRef<HTMLInputElement, IInput>(
               onFocus={handleFocus}
               onBlur={handleBlur}
               onKeyDown={onKeyDown}
+              {...rest}
             />
           </StyledInputBody>
 

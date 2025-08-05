@@ -1,0 +1,105 @@
+{
+  "PageTitle": "ONLYOFFICE 学生版 | ONLYOFFICE",
+  "PageDescription": "使用免费的办公套件提升您的教育体验。ONLYOFFICE 将为任何设备提供合适的工具。",
+
+  "OfficeForStudents": "ONLYOFFICE <0>学生版</0>",
+  "SuperchargeYourEducation": "使用免费的办公套件提升您的教育体验。无论您是在教室、图书馆、大学咖啡馆还是在家工作，ONLYOFFICE 都将为任何设备提供合适的工具。",
+
+  "OODesktopEditorsTitle": "<span>ONLYOFFICE 桌面编辑器：</span> <br> Word、Excel、PowerPoint 的免费替代品 + PDF 编辑器",
+  "OODesktopEditorsText": "使用简单、灵活且易于使用的解决方案处理熟悉格式的文件。如果您曾经使用过办公套件，您将对 ONLYOFFICE 桌面编辑器感到舒适。",
+
+  "SmoothAndIntuitiveOfficeExperience": "流畅直观的办公体验",
+  "SmoothAndIntuitiveOfficeExperienceDesc": "您的任务可能很复杂，但您的办公套件不应该如此。ONLYOFFICE 桌面编辑器提供了一个直观的用户界面，适用于<0>文本文档</0>、<1>电子表格</1>、<2>演示文稿</2>和<3>PDF 文件</3>。",
+  "SmoothAndIntuitiveOfficeExperienceUrl": "/images/templates/office-for-students/desktop-editors/zh/smooth-intuitive-office-experience.png",
+  "SmoothAndIntuitiveOfficeExperienceUrl2x": "/images/templates/office-for-students/desktop-editors/zh/smooth-intuitive-office-experience@2x.png",
+
+  "SuitedForAllOperatingSystems": "适用于所有操作系统",
+  "SuitedForAllOperatingSystemsDesc": "选择最适合您工作风格的操作系统 - 我们支持您的决定！ONLYOFFICE 桌面编辑器可完美运行于 Windows、macOS 和 Linux！",
+  "SuitedForAllOperatingSystemsUrl": "/images/templates/office-for-students/desktop-editors/zh/suited-for-all-operating-systems.png",
+  "SuitedForAllOperatingSystemsUrl2x": "/images/templates/office-for-students/desktop-editors/zh/suited-for-all-operating-systems@2x.png",
+
+  "FreeAndOpenSource": "免费且开源",
+  "FreeAndOpenSourceDesc": "是的，您没听错！ONLYOFFICE 桌面编辑器完全免费 - 这意味着您可以在没有财务限制的情况下访问专业级办公软件。此外，我们的编辑器是开源的，确保了透明度、与社区合作的能力以及随之而来的创新。",
+  "FreeAndOpenSourceUrl": "/images/templates/office-for-students/desktop-editors/zh/free-open-source.png",
+  "FreeAndOpenSourceUrl2x": "/images/templates/office-for-students/desktop-editors/zh/free-open-source@2x.png",
+
+  "BothOfflineAndOnline": "既可离线又可在线",
+  "BothOfflineAndOnlineDesc": "ONLYOFFICE 桌面应用程序不仅仅是一个本地应用程序。它可以连接到您喜欢的云服务（Moodle、ONLYOFFICE DocSpace、Nextcloud、ownCloud、Seafile、Liferay、kDrive）以在线工作和协作。需要在任何地方快速修改您的论文吗？使用适用于 <0>iOS</0> 和 <1>Android</1> 的免费应用程序。",
+  "BothOfflineAndOnlineUrl": "/images/templates/office-for-students/desktop-editors/zh/both-offline-and-online.png",
+  "BothOfflineAndOnlineUrl2x": "/images/templates/office-for-students/desktop-editors/zh/both-offline-and-online@2x.png",
+
+  "DigitalLibraryAtHand": "随手可得的数字图书馆",
+  "DigitalLibraryAtHandDesc": "当然，当桌子上堆满书籍时，您的作业研究看起来会更加令人印象深刻，但这非常不实用。使用 ONLYOFFICE 桌面编辑器，您可以阅读 EPUB、FB2 和 PDF 文件，并直接在您的办公解决方案中搜索所有<0>电子书</0>中的信息。",
+  "DigitalLibraryAtHandUrl": "/images/templates/office-for-students/desktop-editors/zh/digital-library-at-hand.png",
+  "DigitalLibraryAtHandUrl2x": "/images/templates/office-for-students/desktop-editors/zh/digital-library-at-hand@2x.png",
+
+  "DownloadNow": "立即下载",
+
+  "OODocSpaceTitle": "<0>ONLYOFFICE DocSpace：</0>将您的团队项目提升到新水平",
+  "OODocSpaceDesc": "与同学和老师一起工作，创造、分享新知识并实现您的目标！",
+
+  "TeamworkHasNeverBeenEasier": "团队合作从未如此简单",
+  "TeamworkHasNeverBeenEasierDesc": "通过创建虚拟空间，您可以控制谁可以查看、协作或共享您空间中的项目文件。您永远不会错过重要文件，项目相关文档将保存在空间中。",
+  "TeamworkHasNeverBeenEasierUrl": "/images/templates/office-for-students/docspace/zh/teamwork-has-never-been-easier.png",
+  "TeamworkHasNeverBeenEasierUrl2x": "/images/templates/office-for-students/docspace/zh/teamwork-has-never-been-easier@2x.png",
+
+  "FitToAnyScenario": "适合任何场景",
+  "FitToAnyScenarioDesc": "在<0>表单空间</0>中接收项目反馈并完成任务，在<1>协作空间</1>中准备小组演示，撰写论文并与老师分享，利用在<2>自定义空间</2>中审阅它们的机会。允许小组成员和老师在<3>公共空间</3>中无需注册即可查看内容。在<4>会议空间</4>中讨论团队项目。",
+  "FitToAnyScenarioUrl": "/images/templates/office-for-students/docspace/zh/fit-to-any-scenario.png",
+  "FitToAnyScenarioUrl2x": "/images/templates/office-for-students/docspace/zh/fit-to-any-scenario@2x.png",
+
+  "StressFreeCoEditing": "无压力协同编辑",
+  "StressFreeCoEditingDesc": "通过集成的通信、聊天和评论工具更有效地协作，讨论项目细节，分享想法并向小组成员提供反馈，无需在不同平台之间切换。",
+  "StressFreeCoEditingUrl": "/images/templates/office-for-students/docspace/zh/stress-free-co-editing.png",
+  "StressFreeCoEditingUrl2x": "/images/templates/office-for-students/docspace/zh/stress-free-co-editing@2x.png",
+
+  "CreateFreeAccount": "创建免费账户",
+
+  "WhyOOTitle": "<0>为什么选择</0> ONLYOFFICE？",
+  "WhyOODesc": "我们知道有很多办公解决方案。为什么您应该开始使用 ONLYOFFICE 而不是其他软件？因为 ONLYOFFICE 和学生是完美的组合。以下是关键点：",
+
+  "ItSFree": "它是免费的",
+  "ItSFreeDesc": "您不需要节省资金就能使用有效的办公套件处理您的任务。我们支持您 - 对于学生，ONLYOFFICE 完全免费。",
+
+  "ItSCompatible": "它与 MS Office 文件兼容（以及几乎所有其他办公文件格式）",
+  "ItSCompatibleDesc": "不用担心您的同学或老师使用其他办公解决方案并在打开您的文件时感到困惑。ONLYOFFICE 与 MS Office 文件（如 DOCX、XLSX、PPTS 等）以及大多数其他格式完全兼容。",
+
+  "ItSHighlyCustomizable": "它通过我们内置的插件商店高度可定制",
+  "ItSHighlyCustomizableDesc": "使用<0>众多插件</0>定制 ONLYOFFICE，这些插件扩展了功能 - 通过我们的官方 ChatGPT 插件直接在编辑器中加速文档工作，使用 Mendeley 或 Zotero 的参考文献插件简化研究，或使用 LanguageTool 和 OCR 加速写作和校对。",
+
+  "ItSBuilt": "它是为协作而设计的",
+  "ItSBuiltDesc": "我们喜欢团队合作。我们认为您也是如此。这就是为什么 ONLYOFFICE 提供了各种功能，使协作尽可能简单高效。",
+
+  "GetItNow": "立即获取",
+  "TryInTheCloud": "在云端试用",
+
+  "SuccessStoriesHeading": "成功案例将向您展示它如何工作",
+  "SuccessStoriesDesc": "我们可以谈论 ONLYOFFICE 和教育过程如何很好地结合。但我们更愿意讲述用户的成功经验。",
+
+  "Blog1": "ONLYOFFICE 如何促进多瑙埃辛根学校的协作",
+  "Blog1Link": "https://www.onlyoffice.com/blog/zh-hans/2023/10/onlyoffice-in-donaueschingen-schools",
+  "Blog1ImgUrl": "/images/templates/office-for-students/success-stories/blog1.jpg",
+
+  "Blog2": "Collège-Lycée Sacré Cœur de Taravao 如何通过 ONLYOFFICE 和 Moodle 确保所有学生的数字平等",
+  "Blog2Link": "https://www.onlyoffice.com/blog/zh-hans/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
+  "Blog2ImgUrl": "/images/templates/office-for-students/success-stories/blog2.jpg",
+
+  "Blog3": "南京大学如何整合 ONLYOFFICE Docs 以改善教师和学生之间的协作",
+  "Blog3Link": "https://www.onlyoffice.com/blog/zh-hans/2022/12/nanjing-university-integrated-onlyoffice-docs-to-improve-faculty-and-student-collaboration",
+  "Blog3ImgUrl": "/images/templates/office-for-students/success-stories/blog3.jpg",
+
+  "HowCanOOHelp": "ONLYOFFICE 如何帮助我完成作业？",
+  "HowCanOOHelpAnswer": "我们提供多功能工具来创建和编辑文档、电子表格、演示文稿和 PDF 文件 - 您的作业所需的一切。我们的协作功能使您能够与同学实时合作，显著提高团队工作和审阅的效率。",
+  "CanIUseOOForGroup": "我可以使用 ONLYOFFICE 与同学一起完成小组作业吗？",
+  "CanIUseOOForGroupAnswer": "是的，当然可以！我们的解决方案是为协作而设计的。实时协同编辑、评论、内置聊天、版本历史等功能确实使项目工作更加容易。你们每个人都可以同时处理文档，简化协作。",
+  "DoesOOOfferTemplatesForAcademicDocuments": "ONLYOFFICE 是否提供学术文档模板？",
+  "DoesOOOfferTemplatesForAcademicDocumentsAnswer": "是的！我们的<0>模板库</0>有许多专门设计的模板，包括报告模板、研究论文格式、演示布局等等。这意味着您付出更少的努力，有更多时间用于重要任务。",
+  "IsOOSecure": "ONLYOFFICE 是否安全，可用于存储和分发机密信息？",
+  "IsOOSecureAnswer": "我们自豪地成为最安全的办公解决方案之一。<0>我们认真对待安全性</0>，从平台上存储的文件加密到众多安全分发和访问控制选项。此外，我们的解决方案始终可以部署在私有服务器上，以提高数据安全性。",
+  "IsOOFree": "ONLYOFFICE 是免费的吗？",
+  "IsOOFreeAnswer": "是的，ONLYOFFICE 桌面编辑器是一个完全免费的应用程序。ONLYOFFICE DocSpace 提供免费计划，非常适合学生。",
+  "AreThereAnyIntegrations": "是否有与其他平台的集成？",
+  "AreThereAnyIntegrationsAnswer": "是的，除了能够将桌面应用程序连接到您选择的云服务外，您还可以将在线编辑器 - <0>ONLYOFFICE Docs</0> - 集成到您的教育机构使用的电子学习服务或数据管理系统中。这样，您可以直接在课程结构中处理 Office 文件。流行的即用型<1>集成</1>包括 <2>Moodle</2>、Chamilo、ownCloud、Nextcloud、HumHub 等。",
+  "WhatIfINeedToEditDocs": "如果我需要编辑存储在我的 Box / Dropbox 中的研究文档怎么办？",
+  "WhatIfINeedToEditDocsAnswer": "使用 ONLYOFFICE，您可以做到这一点！使用适用于您的 <0>Box</0> 或 <1>Dropbox</1> 的免费应用程序。"
+}

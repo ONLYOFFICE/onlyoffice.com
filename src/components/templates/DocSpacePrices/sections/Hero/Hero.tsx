@@ -7,17 +7,39 @@ import {
   StyledHeroPlans,
   StyledHeroFeaturesHeading,
 } from "./Hero.styled";
+import { IAffiliate } from "./Hero.types";
 import { IDocSpacePricesTemplate } from "@src/components/templates/DocSpacePrices";
 import { Container } from "@src/components/ui/Container";
 import { PlanCard } from "./sub-components/PlanCard";
 import { FeaturesTable } from "./sub-components/FeaturesTable";
 import { BusinessModal } from "./sub-components/BusinessModal";
 import { EnterpriseModal } from "./sub-components/EnterpriseModal";
+import { useRewardful } from "@src/utils/useRewardful";
 
 const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
   const { t } = useTranslation("docspace-prices");
   const [isBusinessModalOpen, setIsBusinessModalOpen] = useState(false);
   const [isEnterpriseModalOpen, setIsEnterpriseModalOpen] = useState(false);
+  const [affiliate, setAffiliate] = useState<IAffiliate>({
+    id: "",
+    token: "",
+    params: "",
+  });
+
+  const { getClientReferenceId, getAffiliateToken, getClientReferenceParam } =
+    useRewardful({
+      onReady: () => {
+        const id = getClientReferenceId();
+        const token = getAffiliateToken();
+        const params = getClientReferenceParam();
+
+        setAffiliate((prev) =>
+          prev.id === id && prev.token === token && prev.params === params
+            ? prev
+            : { id, token, params },
+        );
+      },
+    });
 
   return (
     <StyledHero
@@ -46,6 +68,7 @@ const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
               free: true,
             }}
             btn={{
+              dataTestId: "startup-start-now-button",
               label: t("StartNow"),
               url: "/docspace-registration",
             }}
@@ -62,6 +85,7 @@ const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
             }}
             isActive={true}
             btn={{
+              dataTestId: "business-get-a-quote-button",
               label: t("GetAQuote"),
               onClick: () => setIsBusinessModalOpen(true),
             }}
@@ -77,6 +101,7 @@ const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
               label: t("PerServer"),
             }}
             btn={{
+              dataTestId: "enterprise-get-a-quote-button",
               label: t("GetAQuote"),
               onClick: () => setIsEnterpriseModalOpen(true),
             }}
@@ -103,12 +128,14 @@ const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
           onClose={() => setIsBusinessModalOpen(false)}
           locale={locale}
           productsData={productsData}
+          affiliate={affiliate}
         />
         <EnterpriseModal
           isOpen={isEnterpriseModalOpen}
           onClose={() => setIsEnterpriseModalOpen(false)}
           locale={locale}
           productsData={productsData}
+          affiliate={affiliate}
         />
       </Container>
     </StyledHero>

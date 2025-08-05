@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Bekijk de belangrijkste functionaliteit van ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Bewerk docx-, xlsx- en pptx-bestanden, bekijk PDF's, maak invulbare formulieren, werk in realtime samen om de belangrijkste functies van ONLYOFFICE te bekijken. Geen downloads of registratie nodig.",
+
+  "HeroHeadingSeeIt": "Zie zelf hoe het werkt!",
+  "HeroTextCurious": "Benieuwd hoe de interface eruit ziet en zelf de belangrijkste functionaliteiten uitproberen?",
+
+  "ActionsEditDocx": "DOCX bewerken",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
+  "ActionsEditXlsx": "XLSX bewerken",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
+  "ActionsEditPptx": "PPTX bewerken",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
+  "ActionsEditPdf": "PDF bewerken",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
+  "ActionsCreateForm": "Formulier maken",
+  "ActionsFillInPdfForm": "Fill in PDF form",
+  "ActionsCollaborate": "Samenwerken",
+
+  "ActionsDemoPreview": "Demo preview",
+  "ActionsDemoModalHeadingOpenDocx": "Open DOCX om te bewerken",
+  "ActionsDemoModalHeadingOpenXlsx": "Open XLSX om te bewerken",
+  "ActionsDemoModalHeadingOpenPptx": "Open PPTX om te bewerken",
+  "ActionsDemoModalHeadingOpenPdf": "Edit PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Formulier maken",
+  "ActionsDemoModalHeadingOpenFill": "Fill in PDF form",
+  "ActionsDemoModalHeadingOpenCollaborate": "Samenwerken",
+  "ActionsDemoModalButtonClose": "Sluiten"
+}

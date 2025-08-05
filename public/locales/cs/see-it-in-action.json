@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Zkontrolujte hlavní funkce ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Upravujte soubory docx, xlsx, pptx, prohlížejte PDF, vytvářejte vyplnitelné formuláře, spolupracujte v reálném čase a zkontrolujte hlavní funkce ONLYOFFICE. Není nutné stahovat ani se registrovat.",
+
+  "HeroHeadingSeeIt": "Podívejte se na formulář v akci!",
+  "HeroTextCurious": "Zajímá vás, jak vypadá rozhraní a jak si vyzkoušet hlavní funkce?",
+
+  "ActionsEditDocx": "Upravit DOCX",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
+  "ActionsEditXlsx": "Upravit XLSX",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
+  "ActionsEditPptx": "Upravit PPTX",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
+  "ActionsEditPdf": "Upravit PDF",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
+  "ActionsCreateForm": "Vytvořit formulář",
+  "ActionsFillInPdfForm": "Fill in PDF form",
+  "ActionsCollaborate": "Spolupracujte",
+
+  "ActionsDemoPreview": "Náhled dema",
+  "ActionsDemoModalHeadingOpenDocx": "Pro úpravy otevřete soubor DOCX",
+  "ActionsDemoModalHeadingOpenXlsx": "Pro úpravy otevřete soubor XLSX",
+  "ActionsDemoModalHeadingOpenPptx": "Pro úpravy otevřete soubor PPTX",
+  "ActionsDemoModalHeadingOpenPdf": "Upravit PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Vytvořit formulář",
+  "ActionsDemoModalHeadingOpenFill": "Fill in PDF form",
+  "ActionsDemoModalHeadingOpenCollaborate": "Spolupracujte",
+  "ActionsDemoModalButtonClose": "Zavřít"
+}

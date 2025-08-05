@@ -1,0 +1,84 @@
+{
+  "PageTitle": "团队工作区",
+  "PageDescription": "高效进行管理、协作以及沟通工作",
+
+  "HeroTitle": "ONLYOFFICE工作区",
+  "HeroText": "Web应用捆绑包，可助力实现高效的团队管理和在线协作",
+  "GetItNow": "立即获取",
+
+  "ManageAllYourBusinessProcesses": "管理您的所有业务流程",
+  "LearnMore": "了解更多",
+
+  "Documents": "文件",
+  "StoreAndOrganize": "存储和组织业务文件。共享文件并管理用户和群组的访问权限。编辑<0>文本文档</0>、<1>电子表格</1>、<2>演示文稿</2>、<3>PDF 文件</3>和可填写<4>表单</4>并进行协作。",
+  "HighestCompatibility": "与微软 Office格式高度兼容",
+  "MultiFormat": "多格式的媒体播放器",
+  "ReadyForms": "可填写的在线表单",
+  "PrivateRooms": "用于端到端加密文档协作的私密房间",
+  "DocumentsImgUrl": "/images/templates/workspace/manage/zh/documents.png",
+  "DocumentsImgUrl2x": "/images/templates/workspace/manage/zh/documents@2x.png",
+
+  "Mails": "邮件",
+  "KeepYourMailboxOrganized": "让您的邮箱井井有条。在您的域名上创建企业邮箱或使用默认的邮箱。连接多个电子邮件账户，管理和标记邮件。创建签名并利用模板构造器。",
+  "SupportOfCommonEmailProtocols": "支持常见的电子邮件协议。pop3, smtp, imap",
+  "UnlimitedNumber": "无限数量的邮箱和邮件组",
+  "FreeDefaultDomain": "免费的默认域名",
+  "MailsImgUrl": "/images/templates/workspace/manage/zh/mail.png",
+  "MailsImgUrl2x": "/images/templates/workspace/manage/zh/mail@2x.png",
+
+  "Crm": "CRM",
+  "OrganizeYourBusinessWorkflow": "组织您的业务工作流程，从线索生成到订单履行。创建报告并监控您的团队的进展。",
+  "WebToLead": "用于快速输入潜在客户的Web-to-Lead表格",
+  "MakingCalls": "用Twilio进行通话",
+  "CloseIntegration": "与邮件、项目和日历紧密集成",
+  "CrmImgUrl": "/images/templates/workspace/manage/zh/crm.png",
+  "CrmImgUrl2x": "/images/templates/workspace/manage/zh/crm@2x.png",
+
+  "Projects": "项目",
+  "OrganizeYourTeam": "组织您的团队以获得成功。创建项目，对任务进行优先排序，并设定截止日期。跟踪时间并生成报告以分析你的团队的生产力。",
+  "GanttChart": "甘特图",
+  "PrivateProjects": "私人项目和访问权限管理",
+  "Integration": "与文件、日历和CRM集成",
+  "WatchVideo": "观看视频演示",
+  "ProjectsImgUrl": "/images/templates/workspace/manage/zh/projects.png",
+  "ProjectsImgUrl2x": "/images/templates/workspace/manage/zh/projects@2x.png",
+
+  "Calendar": "日历",
+  "ManageYourTime": "明智地管理你的时间：创建一个个人或团队时间表，添加不同的事件类型，并设置提醒，以避免错过任何事情。",
+  "CalendarSharing": "日历共享",
+  "Synchronization": "与第三方应用程序同步",
+  "CloseIntegrationWithModules": "与所有ONLYOFFICE模块紧密结合",
+  "CalendarImgUrl": "/images/templates/workspace/manage/zh/calendar.png",
+  "CalendarImgUrl2x": "/images/templates/workspace/manage/zh/calendar@2x.png",
+
+  "WhyOOWorkspace": "为什么选择ONLYOFFICE工作区",
+  "Benefits": "在线工作区好处",
+
+  "ThirdParty": "第三方服务集成",
+  "ExtendYourWorkspace": "用您喜欢的应用程序和工具扩展您的工作区功能，用于记录、签名、认证或存储。",
+  "FindAppsYouNeed": "找到您需要的应用程序",
+
+  "DataSecurityHeader": "数据安全性和控制",
+  "DataSecurity": "静态和传输过程中的数据加密。LDAP/Active Directory身份验证。灵活的访问权限与JWT。活动追踪、审核报告以及更多功能。",
+
+  "Administration": "管理和自定义设置",
+  "ManageYourWorkspace": "借助直观的控制面板管理您的工作区。通过改变内置颜色主题，替换商标、标题与链接等对其进行个性化设置。",
+
+  "GettingStarted": "上手简单",
+  "UseOOWorkspace": "您可在云端使用ONLYOFFICE工作区，也可自行对其进行托管或使用预配置的安装程序完成配置工作。",
+
+  "GetStarted": "上手",
+  "OvhMarketplace": "OVHcloud Marketplace",
+  "OneClickInstall": "一键安装，自动更新",
+
+  "SelfHosted": "自托管",
+  "Host": "现场托管",
+
+  "AwsMarketplace": "Alibaba Cloud市场",
+  "AwsMarketplaceImage": "/images/templates/workspace/get-started/alibabacloud.svg",
+  "AwsMarketplaceLink": "https://marketplace.alibabacloud.com/store/3246121.html",
+
+  "CommunityFooterText": "可在<0>此处</0>下载适合家庭使用的社区版本。",
+
+  "VideoImageUrl": "/images/templates/workspace/video/zh/workspace.svg"
+}

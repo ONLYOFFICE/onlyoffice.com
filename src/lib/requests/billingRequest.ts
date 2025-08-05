@@ -1,4 +1,4 @@
-import { generateAuthToken } from "@src/utils/generateAuthToken";
+import { createAuthToken } from "@src/utils/createAuthToken";
 import { ILocale } from "@src/types/locale";
 import { TCurrencyCode } from "@src/types/prices";
 
@@ -26,7 +26,7 @@ const billingRequest = async ({
   }
 
   try {
-    const token = generateAuthToken(
+    const token = createAuthToken(
       process.env.BILLING_KEY!,
       process.env.BILLING_SECRET!,
     );
@@ -43,10 +43,6 @@ const billingRequest = async ({
       },
     );
 
-    if (!res.ok) {
-      throw new Error(await res.text());
-    }
-
     const data = await res.json();
 
     if (data && Object.keys(data).length) {
@@ -57,7 +53,7 @@ const billingRequest = async ({
       return data;
     }
   } catch (error) {
-    console.log(error);
+    console.error(error);
     return "";
   }
 };

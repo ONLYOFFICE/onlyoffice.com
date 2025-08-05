@@ -38,7 +38,7 @@ const Docs = () => {
             <FeatureImageItem
               key={index}
               heading={t(heading)}
-              position={{ desktop: index % 2 === 1 ? "right" : "left" }}
+              position={{ desktop: index % 2 === 1 ? "left" : "right" }}
               text={
                 Array.isArray(text) ? (
                   text.map((item, index) => (

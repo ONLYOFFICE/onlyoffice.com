@@ -41,15 +41,14 @@ const FeatureSwitcher = ({
                 <ChevronDownIcon />
               </StyledFeatureSwitcherBtn>
 
-              {activeTab === index && (
-                <StyledFeatureSwitcherImage
-                  $imageWidth={imageWidth}
-                  $imageHeight={imageHeight}
-                  $isMobile
-                  $imageUrl={items[activeTab].image.url}
-                  $imageUrl2x={items[activeTab].image?.url2x ?? ""}
-                ></StyledFeatureSwitcherImage>
-              )}
+              <StyledFeatureSwitcherImage
+                $active={activeTab === index}
+                $imageWidth={imageWidth}
+                $imageHeight={imageHeight}
+                $isMobile
+                $imageUrl={item.image.url}
+                $imageUrl2x={item.image?.url2x ?? ""}
+              />
             </li>
           ))}
         </ul>
@@ -60,15 +59,17 @@ const FeatureSwitcher = ({
         )}
       </StyledFeatureSwitcherWrapper>
 
-      {items[activeTab] && (
+      {items.map((item, index) => (
         <StyledFeatureSwitcherImage
+          key={index}
+          $active={activeTab === index}
           $imageWidth={imageWidth}
           $imageHeight={imageHeight}
           $isDesktop
-          $imageUrl={items[activeTab].image.url}
-          $imageUrl2x={items[activeTab].image?.url2x ?? ""}
-        ></StyledFeatureSwitcherImage>
-      )}
+          $imageUrl={item.image.url}
+          $imageUrl2x={item.image?.url2x ?? ""}
+        />
+      ))}
     </StyledFeatureSwitcher>
   );
 };

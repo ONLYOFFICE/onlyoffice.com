@@ -9,4 +9,5 @@ export interface IWatchVideo {
   videoUrl: string;
   /** The heading text. */
   heading: string;
+  customLabel?: string;
 }

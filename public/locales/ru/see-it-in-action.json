@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Протестируйте основные функциональные возможности ONLYOFFICE Docs | ONLYOFFICE",
+  "PageDescription": "Редактируйте документы в форматах docx, xlsx, pptx, просматривайте PDF-файлы, создавайте заполняемые формы, работайте совместно в режиме реального времени, чтобы протестировать основные функциональные возможности ONLYOFFICE. Скачивать и регистрироваться не нужно.",
+
+  "HeroHeadingSeeIt": "Как это работает?",
+  "HeroTextCurious": "Хотите узнать, как выглядит интерфейс, и протестировать основные функциональные возможности без регистрации?",
+
+  "ActionsEditDocx": "Редактировать DOCX",
+  "ActionsExampleDocumentTitleDocx": "Example Document Title.docx",
+  "ActionsEditXlsx": "Редактировать XLSX",
+  "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
+  "ActionsEditPptx": "Редактировать PPTX",
+  "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
+  "ActionsEditPdf": "Редактировать PDF",
+  "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
+  "ActionsCreateForm": "Создать форму",
+  "ActionsFillInPdfForm": "Заполнить PDF-форму",
+  "ActionsCollaborate": "Работать совместно",
+
+  "ActionsDemoPreview": "Демонстрационный просмотр",
+  "ActionsDemoModalHeadingOpenDocx": "Открыть файл DOCX в режиме редактирования",
+  "ActionsDemoModalHeadingOpenXlsx": "Открыть файл XLSX в режиме редактирования",
+  "ActionsDemoModalHeadingOpenPptx": "Открыть файл PPTX в режиме редактирования",
+  "ActionsDemoModalHeadingOpenPdf": "Редактировать PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Создать форму",
+  "ActionsDemoModalHeadingOpenFill": "Заполнить PDF-форму",
+  "ActionsDemoModalHeadingOpenCollaborate": "Работать совместно",
+  "ActionsDemoModalButtonClose": "Закрыть"
+}

@@ -1,0 +1,1 @@
+export { MobileProjectsTemplate } from "./MobileProjects";
