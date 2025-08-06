@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { ICheckStatus } from "../../SupportContactForm.types";
 
 const StyledHeroHeading = styled(Heading)`
   margin-bottom: 40px;
@@ -192,7 +193,6 @@ const StyledHeroRadioLabel = styled.label`
     &::after {
       transform: translateY(-50%) scale(1);
     }
-
   }
 `;
 
@@ -206,7 +206,9 @@ const StyledHeroUploadInput = styled.input`
   display: none;
 `;
 
-const StyledHeroUploadLabel = styled.label`
+const StyledHeroUploadLabel = styled.label<{
+  $fileStatus: ICheckStatus["file"];
+}>`
   margin-left: 60px;
   cursor: pointer;
 
@@ -217,21 +219,86 @@ const StyledHeroUploadLabel = styled.label`
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
-    background-color: #F5F5F5;
-    background-image: url("/images/icons/clip.svg");
+    transform: translateY(-50%) scale(1);
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+
+  &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
-    filter: grayscale(1);
-    transition: filter 0.2s;
+    transition: background-color 0.3s, filter 0.3s, transform 0.3s, opacity 0.3s;
+  }
+
+  ${({ $fileStatus }) =>
+    $fileStatus === "error" &&
+    css`
+      &::after {
+        background-image: url("/images/icons/cross-red.svg");
+        transform: translateY(-50%) scale(1.5);
+        opacity: 0;
+        animation: popError 0.5s forwards;
+      }
+
+      &::before {
+        background-color: #fff7f7;
+      }
+    `}
+
+  ${({ $fileStatus }) =>
+    $fileStatus === "success" &&
+    css`
+      &::after {
+        background-image: url("/images/icons/check-green.svg");
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+        animation: popSuccess 1s forwards;
+      }
+    `}
+
+  ${({ $fileStatus }) =>
+    $fileStatus === "default" &&
+    css`
+      &::after {
+        background-image: url("/images/icons/clip.svg");
+        filter: grayscale(1);
+        transform: translateY(-50%) scale(1);
+        opacity: 1;
+      }
+    `}
+
+  @keyframes popError {
+    to {
+      transform: translateY(-50%) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes popSuccess {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
   }
 
   &:hover {
-    &::before {
+    &::after {
       filter: grayscale(0);
     }
   }
+
 `;
 
 const StyledHeroUploadText = styled(Text)`
@@ -246,6 +313,10 @@ const StyledHeroUploadList = styled.ul`
 `;
 
 const StyledHeroUploadItemText = styled(Text)``;
+
+const StyledHeroUploadItemTextError = styled(Text)`
+  margin-top: 20px;
+`;
 
 const StyledHeroUploadItemRemove = styled.button`
   width: 18px;
@@ -320,6 +391,7 @@ export {
   StyledHeroUploadInput,
   StyledHeroUploadLabel,
   StyledHeroUploadText,
+  StyledHeroUploadItemTextError,
   StyledHeroUploadList,
   StyledHeroUploadItem,
   StyledHeroUploadItemText,

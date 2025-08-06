@@ -27,6 +27,7 @@ interface IFormData {
 interface ICheckStatus {
   name: "default" | "success" | "error";
   email: "default" | "success" | "error";
+  file: "default" | "success" | "error";
 }
 
 type TNavigatorWithUAData = Navigator & {

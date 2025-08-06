@@ -14,6 +14,7 @@ import { ICheckStatus, IFormData, ISelectSubjectItems } from "../../SupportConta
 import { hasOption } from "../../utils/typeGuards";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";
+import { useClientOS } from "../../utils/useClientOs";
 
 import { StyledSelectInputIcon } from "@src/components/ui/Select/Select.styled";
 import {
@@ -36,6 +37,7 @@ import {
   StyledHeroUploadItem,
   StyledHeroUploadItemRemove,
   StyledHeroUploadItemText,
+  StyledHeroUploadItemTextError,
   StyledHeroUploadLabel,
   StyledHeroUploadList,
   StyledHeroUploadText,
@@ -45,7 +47,8 @@ import {
   StyledSelectOptionSub,
   StyledSelectOptionTitle,
 } from "./Hero.styled";
-import { useClientOS } from "../../utils/useClientOs";
+
+const MAX_SIZE = 5 * 1024 * 1024;
 
 const Hero = () => {
   const { t } = useTranslation("support-contact-form");
@@ -54,7 +57,10 @@ const Hero = () => {
   const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
     name: "default",
     email: "default",
+    file: "default",
   });
+
+  const [errorFileName, setErrorFileName] = useState<string>("");
 
   const [selectedProduct, setSelectedProduct] = useState<ISelectOption[]>([]);
   const options = [
@@ -122,14 +128,56 @@ const Hero = () => {
     };
   }, []);
 
-  const addFile = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (event.target.files) {
-      const newFiles = Array.from(event.target.files);
-      setFormData((prev) => ({
+  const fileStatusTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
+
+  useEffect(() => {
+    return () => {
+      if (fileStatusTimeoutRef.current) {
+        clearTimeout(fileStatusTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  const resetFileStatus = () => {
+    fileStatusTimeoutRef.current = setTimeout(() => {
+      setCheckStatus((prev) => ({
         ...prev,
-        files: [...prev.files, ...newFiles]
+        file: "default",
       }));
-    }
+
+      setErrorFileName("");
+    }, 3000);
+  };
+
+  const addFile = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (!event.target.files) return;
+    const newFiles = Array.from(event.target.files);
+
+    const filtered = newFiles.filter(file => {
+      if (file.size > MAX_SIZE) {
+        setCheckStatus((prev) => ({
+          ...prev,
+          file: "error",
+        }));
+
+        setErrorFileName(file.name);
+        resetFileStatus();
+
+        return false;
+      }
+      setCheckStatus((prev) => ({
+        ...prev,
+        file: "success",
+      }));
+
+      resetFileStatus();
+      return true;
+    });
+
+    setFormData(prev => ({
+      ...prev,
+      files: [...prev.files, ...filtered]
+    }));
   };
 
   const removeFile = (file: File) => {
@@ -363,6 +411,7 @@ const Hero = () => {
               />
               <StyledHeroUploadLabel
                 htmlFor="file-input"
+                $fileStatus={checkStatus.file}
               >
                 <Trans
                   t={t}
@@ -395,6 +444,13 @@ const Hero = () => {
                   </StyledHeroUploadItem>
                 ))}
               </StyledHeroUploadList>
+            )}
+            {checkStatus.file === "error" && (
+              <StyledHeroUploadItemTextError
+                size={4}
+                label={`${t("FileSizeExceeded")} ${errorFileName}`}
+                color="#CB0000"
+              />
             )}
           </StyledHeroUploadWrapper>
           <Input
