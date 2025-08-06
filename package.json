@@ -34,6 +34,7 @@
     "onlyoffice-react-ui-kit": "ONLYOFFICE/onlyoffice-react-ui-kit#41b406238dcc65d896e6d43142b1e65794a6100d",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.5.2",
     "react-i18next": "^15.4.0",
     "react-tooltip": "^5.28.0",
     "styled-components": "^6.1.15",
