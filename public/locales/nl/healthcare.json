@@ -1,0 +1,79 @@
+{
+  "PageTitle": "Online office voor Zorgkantoren | ONLYOFFICE",
+  "PageDescription": "Creëer uw eigen productiviteitsplatform met ONLYOFFICE Groups om het aan te passen aan een specifieke sector",
+
+  "HeroTitle": "De ONLYOFFICE <0>voor Gezondheidszorg kantoren</0>",
+  "HeroText": "Veilig documenten bewerken en samenwerken voor zorgprofessionals",
+
+  "FlexibleChoiceSoftwareTools": "<0>Flexibele keuze</0> aan softwaretools die passen bij de behoeften van uw organisatie",
+  "LearnMore": "Meer informatie",
+  "UseItForFree": "Gebruik gratis",
+  "GetItNow": "Probeer het nu",
+
+  "EffectivelyCollaborateOnMedicalRecords": "Effectief samenwerken aan medische dossiers",
+  "OODocSpaceAllowsConnectingDoctors": "ONLYOFFICE DocSpace maakt het mogelijk om artsen en documentatie te verbinden in aanpasbare kamers met flexibele instellingen.",
+  "EffectivelyCollabFeature1": "Creëer kamers om samen aan patiëntendossiers te werken, zoals voor multidisciplinaire besprekingen, of aangepaste kamers voor elk ander doel.",
+  "EffectivelyCollabFeature2": "De toegang delen met artsen die verantwoordelijk zijn voor de behandeling, inclusief gevallen waar meerdere ziekenhuizen betrokken zijn.",
+  "EffectivelyCollabFeature3": "Bescherm kamers en gevoelige bestanden die ze kunnen bevatten met behulp van meerdere beveiligingsinstellingen.",
+
+
+  "OrganizeASecureDigitalWorkplace": "Organiseer een veilige digitale werkplek",
+  "OOOffersCollaborationPlatform": "ONLYOFFICE biedt een volledig samenwerkingsplatform met verbeterde beveiligingsfuncties.",
+  "OrganizeASecureFeature1": "Bewaar, deel en bewerk documenten veilig binnen <0>ONLYOFFICE Documents</0>. Maak invulklare formulieren. Open video- en audiobestanden, bekijk afbeeldingen van verschillende formaten.",
+  "OrganizeASecureFeature2": "Verbeter het contactbeheer met <0>ONLYOFFICE CRM</0>. Beheer kantoortaken met <1>ONLYOFFICE Projects</1>.",
+  "OrganizeASecureFeature3": "Creëer een interne communicatiehub voor werknemers binnen de <0>ONLYOFFICE Community</0>. Organiseer een tijdschema met <1>ONLYOFFICE Calendar</1>.",
+
+
+  "AlreadyUseAPopularDms": "Gebruikt u al een populair DMS? Maak veilige documentbewerking en samenwerking mogelijk",
+  "OOOffersConnectors": "ONLYOFFICE biedt een collectie kant-en-klare connectoren voor een diepgaande integratie in uw infrastructuur.",
+  "AlreadyUseFeature1": "Bewaar patiëntgegevens in tekstdocumenten, spreadsheets of presentaties end-to-end versleuteld. Bewerk ze veilig en werk eraan samen in realtime. Zeer goed te gebruiken met MS Office bestanden.",
+  "AlreadyUseFeature2": "Stel gedetailleerde documentmachtigingen in. Gebruik een verscheidenheid aan samenwerkingsfuncties, waaronder versiegeschiedenis, wijzigingen bijhouden, opmerkingen en ingebouwde chat.",
+  "AlreadyUseFeature3": "Bescherm patiëntinformatie tegen kopiëren, downloaden of afdrukken.",
+
+
+
+  "UltimateProtectionHealthcareData": "<0>Ultieme bescherming</0> van gezondheidsgegevens tegen de huidige bedreigingen",
+  "OOCompliantWithHipaaPrivacy": "ONLYOFFICE wordt geleverd met ingebouwde functies om de IT-afdeling in de gezondheidszorg te helpen voldoen aan de <0>HIPAA-privacy-</0> en beveiligingsregels.",
+
+  "EncryptDataAtRestAndTransit": "Encryptie van gegevens in rust en onderweg",
+  "EncryptDataP1": "Het versleutelen van gegevens in rust en onderweg maakt het voor aanvallers onmogelijk om de gegevens van de patiënten te ontcijferen, zelfs als ze er toegang toe krijgen.",
+  "EncryptDataP2": "ONLYOFFICE gebruikt de toonaangevende AES-256-coderingsstandaard om de gevoelige gegevens in rust te beschermen. De gegevens worden tijdens het verzenden beschermd door het gebruik van HTTPS-protocollen met een actueel TLS-coderingsalgoritme.",
+  "EncryptDataP3": "ONLYOFFICE Enterprise wordt geleverd met privé kamers die de ultieme gegevensbeveiliging garanderen. Elk symbool dat u typt, is end-to-end versleuteld.",
+  "LearnHowItWorks": "Ontdek hier hoe het werkt",
+
+  "RestrictAccessToData": "Beperk de toegang tot gegevens",
+  "RestrictAccessP1": "Geef alleen toegang tot de gegevens van patiënten die toegang nodig hebben om hun werk uit te voeren.",
+  "RestrictAccessP2": "ONLYOFFICE biedt gedetailleerde documentmachtigingen om de toegang te beheren, inclusief volledige toegang, alleen bekijken, opmerkingen, revisie of invulbare formuliermodi.",
+  "RestrictAccessP3": "Om te valideren dat gebruikers in feite de personen zijn die gemachtigd zijn om toegang te krijgen tot de gegevens van patiënten, wordt het ONLYOFFICE -samenwerkingsplatform geleverd met een reeks authenticatiefuncties:",
+
+  "TwoFactorAuthentication": "two-factor authenticatie;",
+  "SingleSignOn": "Single Sign-On (SSO);",
+  "TrustedMailDomains": "vertrouwde maildomeinen;",
+  "PasswordCreationCriteria": "criteria voor het aanmaken van een wachtwoord;",
+  "CookieLifetime": "cookie levensduur;",
+  "IpRestriction": "IP beperking;",
+
+  "RestrictAccessP4": "Bovendien kunnen IT-afdelingen de toegang tot ONLYOFFICE modules en -tools beperken.",
+
+  "ProtectDataUsage": "Bescherm het datagebruik",
+  "ProtectDataUsageP1": "Bescherm patiëntinformatie tegen kopiëren, downloaden of afdrukken.",
+  "ProtectDataUsageP2": "ONLYOFFICE API stelt IT-afdelingen in staat om extra controles uit te voeren om risicovolle activiteiten met gevoelige gegevens te blokkeren.",
+  "VisitAPI": "Bezoek API",
+
+  "LogAndMonitorDataUsage": "Log en bewaak datagebruik",
+  "LogAndMonitorDataUsageP1": "Houd bij wie, wanneer en vanaf welke apparaten en locaties toegang heeft tot de informatie.",
+  "LogAndMonitorDataUsageP2": "ONLYOFFICE wordt geleverd met ingebouwde auditlogboeken en monitoringtools waarmee u snel problemen kunt identificeren en oplossen als zich een incident voordoet.",
+
+  "BackupAndRestoreData": "Back-up en herstel uw gegevens",
+  "BackupAndRestoreP1": "Bescherm de integriteit en beschikbaarheid van uw gevoelige gegevens met regelmatige back-ups.",
+  "BackupAndRestoreP2": "ONLYOFFICE biedt tools voor automatische back-up en gegevensherstel waardoor IT-afdelingen binnen zorginstellingen een locatie kunnen kiezen voor hun back-ups: een lokale schijf of een privé cloudopslag van een derde partij.",
+
+
+  "EnterpriseReadySolution": "Bedrijfsklare oplossing",
+  "OOProvidesEnterpriseVersion": "ONLYOFFICE biedt een vooraf geconfigureerde en geoptimaliseerde bedrijfsversie:",
+  "AdvancedSetOfEditingTools": "geavanceerde set bewerkingstools",
+  "EnhancedSecurityOptions": "verbeterde beveiligingsopties",
+  "PriorityAccessSecurityStabilityFixes": "prioritaire toegang tot oplossingen voor beveiliging en stabiliteit",
+  "EasilyScalable": "gemakkelijk schaalbaar",
+  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "gratis proefperiode, levenslange licentie + updates en ondersteuning"
+}

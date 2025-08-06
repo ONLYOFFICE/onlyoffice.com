@@ -1,0 +1,79 @@
+{
+  "PageTitle": "医療機関用 ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "医療関係者用の安全なドキュメント編集、共同編集",
+
+  "HeroTitle": "<0>医療機関用</0> ONLYOFFICE",
+  "HeroText": "医療関係者用の安全なドキュメント編集、共同編集",
+
+  "FlexibleChoiceSoftwareTools": "医療機関のニーズに合う<0>柔軟性の高い</0>ソフトウェアツールを選択",
+  "LearnMore": "もっと知る",
+  "UseItForFree": "無料で使う",
+  "GetItNow": "今すぐ入手",
+
+  "EffectivelyCollaborateOnMedicalRecords": "カルテの効果的な共同作業",
+  "OODocSpaceAllowsConnectingDoctors": "ONLYOFFICE DocSpaceは、柔軟な設定でカスタマイズ可能なルームで、医師とドキュメントをつなぐ。",
+  "EffectivelyCollabFeature1": "多職種でのディスカッションなど、患者さんの記録を一緒に作成するためのコラボレーションルームや、データと回答を収集するためのフォーム記入ルームや、その他の目的のためのカスタムルームの作成。",
+  "EffectivelyCollabFeature2": "病院をまたいだ症例など、治療を担当する医師とアクセスを共有できます。迅速なアクセスには、登録なしでドキュメントを閲覧できるパブリックルームをご利用ください。",
+  "EffectivelyCollabFeature3": "複数のセキュリティ設定により、ルームとそこに含まれる機密ファイルの保護。",
+
+
+  "OrganizeASecureDigitalWorkplace": "安全なデジタル作業域環境を作成",
+  "OOOffersCollaborationPlatform": "ONLYOFFICE では、セキュリティー機能が強化されたフルスタックの共同編集プラットフォームを用意しています。",
+  "OrganizeASecureFeature1": "<0>ONLYOFFICEドキュメント</0>内で、ドキュメントを安全に格納、共有、編集。すぐに記入できるフォームの作成。動画、音声ファイルを開始。異なったフォーマットの画像を閲覧。",
+  "OrganizeASecureFeature2": "<0>ONLYOFFICE CRM</0>で連絡先管理を改善。<1>ONLYOFFICEプロジェクト</1>で業務タスクを管理。",
+  "OrganizeASecureFeature3": "<0>ONLYOFFICEコミュニティー</0>で従業員用に院内コミュニケーションハブを作成。<1>ONLYOFFICEカレンダー</1>で時間表を管理。",
+
+
+  "AlreadyUseAPopularDms": "既に人気の DMS をお使いですか? 安全なドキュメント編集と共同編集を実現",
+  "OOOffersConnectors": "ONLYOFFICE では、お使いのインフラストラクチャーとの統合にその場で使用可能なコネクターを多数用意しています。",
+  "AlreadyUseFeature1": "テキストドキュメント、スプレッドシート、プレゼンターションにある患者情報をエンドツーエンドで管理。ドキュメント、スプレッドシート、プレゼンターションをリアルタイムで安全に編集、共同編集。Microsoft Office フォーマットに適合。",
+  "AlreadyUseFeature2": "詳細なドキュメント権限を設定。バージョン履歴、変更履歴、コメント、内蔵チャットなどの種々の共同編集機能を使用。",
+  "AlreadyUseFeature3": "患者の情報のコピー、ダウンロード、印刷を防止。",
+
+
+
+  "UltimateProtectionHealthcareData": "最近の脅威から医療関係データを完全保護",
+  "OOCompliantWithHipaaPrivacy": "ONLYOFFICE には、医療関係機関の IT 部門が <0>HIPAA</0> プライバシールールとセキュリティルールの遵守維持を実現できる内蔵機能が付いてきます。",
+
+  "EncryptDataAtRestAndTransit": "保存中、転送中の暗号化",
+  "EncryptDataP1": "保存中、転送中のデータを暗号化することで、攻撃者がアクセス権を取得したとしても患者のデータを解読できないようにしています。",
+  "EncryptDataP2": "ONLYOFFICE では、業界最新の AES-256 暗号化基準を使用して、保存中の機密データを保護しています。転送中のデータは、最新の TLS 暗号化アルゴリズムを利用した HTTPS プロトコールで保護しています。",
+  "EncryptDataP3": "ONLYOFFICE Enterprise では、完璧なデータセキュリティーを約束するプライベートルームが使用できます。すべての入力シンボルが、エンドツーエンドで暗号化されます。",
+  "LearnHowItWorks": "作動の様子を見る",
+
+  "RestrictAccessToData": "データへのアクセスを権限",
+  "RestrictAccessP1": "業務の行うためにアクセス権を必要とする人間だけに患者データへのアクセス権を付与。",
+  "RestrictAccessP2": "ONLYOFFICE では、フルアクセス、読み取り、閲覧、コメント、フォーム入力可能モードなどでのアクセスを統制できる詳細なドキュメント権限を使用できます。",
+  "RestrictAccessP3": "ユーザーが実際に患者データへのアクセス権を認証されている人物であるかどうかを確認するために、ONLYOFFICE 共同編集プラットフォームでは、認証機能のセットを用意しています:",
+
+  "TwoFactorAuthentication": "二要素認証",
+  "SingleSignOn": "シングルサインオン（SSO）",
+  "TrustedMailDomains": "信頼のあるメールドメイン",
+  "PasswordCreationCriteria": "パスワード作成基準",
+  "CookieLifetime": "クッキー有効期間",
+  "IpRestriction": "IP アドレス制限",
+
+  "RestrictAccessP4": "さらに、IT 部門が ONLYOFFICE モジュールとツールへのアクセス権を制限することもできます。",
+
+  "ProtectDataUsage": "データ使用量を保守",
+  "ProtectDataUsageP1": "患者の情報のコピー、ダウンロード、印刷を防止。",
+  "ProtectDataUsageP2": "ONLYOFFICE API で IT 部門が追加の統制を実行でき、機密データに危険な活動をブロックできます。",
+  "VisitAPI": "API に移動",
+
+  "LogAndMonitorDataUsage": "ログと監視データ使用量",
+  "LogAndMonitorDataUsageP1": "情報にアクセスした人物、時間、デバイスの種類、場所を監視。",
+  "LogAndMonitorDataUsageP2": "ONLYOFFICE では、インシデントがあった場合、素早く問題の特定と解消ができる内蔵監視ログと監視ツールが使えます。",
+
+  "BackupAndRestoreData": "お使いのデータをバックアップ、回復",
+  "BackupAndRestoreP1": "定期的なバックアップで、お使いの機密データの統合性と可用性を保守。",
+  "BackupAndRestoreP2": "ONLYOFFICE では、自動バックアップとデータ回復のツールを使用することができ、医療機関内の IT 部門がバックアップの場所 （ローカルディスクまたは任意のサードパーティーのプライベートクラウドのストレージ） を選ぶことができます。",
+
+
+  "EnterpriseReadySolution": "企業用ソリューション",
+  "OOProvidesEnterpriseVersion": "ONLYOFFICE では設定済みバージョンと企業用最適化バージョンを用意しています",
+  "AdvancedSetOfEditingTools": "詳細な編集ツールのセット",
+  "EnhancedSecurityOptions": "強化されたセキュリティーオプション",
+  "PriorityAccessSecurityStabilityFixes": "セキュリティーと安全性回復への優先アクセス",
+  "EasilyScalable": "拡張が簡単",
+  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "無料トライアル、半永久ライセンス、更新、サポート。"
+}
