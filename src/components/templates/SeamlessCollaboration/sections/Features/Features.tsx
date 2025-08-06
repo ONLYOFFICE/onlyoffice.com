@@ -1,13 +1,15 @@
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import { items, tabs } from "./data/items";
 import { StyledEditorsTabs, StyledEditorsFeatures } from "./Features.styled"
 
 const Features = () => {
+  const { locale } = useRouter();
   const { t } = useTranslation("seamless-collaboration");
 
   return (
     <>
-      <StyledEditorsTabs items={tabs} t={t} />
+      <StyledEditorsTabs items={tabs} t={t} className={locale} />
       <StyledEditorsFeatures
         items={items.map((items) => ({
           ...items,

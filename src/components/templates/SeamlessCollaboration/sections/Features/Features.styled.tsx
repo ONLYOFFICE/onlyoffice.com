@@ -8,8 +8,20 @@ const StyledEditorsTabs = styled(EditorsTabs)`
     background-color: #FFFFFF;
   }
 
-  li a {
-    padding: 25px 16px;
+  li {
+    display: inline-flex;
+
+    a {
+      padding: 25px 16px;
+      white-space: normal;
+    }
+  }
+
+  &.de, &.it, &.ru {
+    li a {
+      line-height: 18px;
+      padding: 18px 16px;
+    }
   }
 
   @media screen and (max-width: 1120px) {
@@ -22,7 +34,7 @@ const StyledEditorsTabs = styled(EditorsTabs)`
   @media ${device.tablet} {
     & ul {
       margin: 0 40px;
-      width: auto;
+      width: 1024px;
     }
   }
   
@@ -35,10 +47,20 @@ const StyledEditorsTabs = styled(EditorsTabs)`
   @media ${device.mobile} {
     & ul {
       margin: 0 16px;
+      width: auto;
     }
 
     li a {
+      line-height: 16px;
       padding: 16px;
+      white-space: nowrap;
+    }
+
+    &.de, &.it, &.ru {
+      li a {
+        line-height: 16px;
+        padding: 16px;
+      }
     }
   }
 `;

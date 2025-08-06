@@ -29,8 +29,6 @@ const Hero = () => {
     }
   };
 
-  console.log("HeroImgUrl", t("HeroImgUrl"));
-
   return (
     <StyledHero
       desktopSpacing={["136px", "0"]}

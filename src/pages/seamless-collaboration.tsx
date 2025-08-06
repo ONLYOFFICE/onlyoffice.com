@@ -24,7 +24,7 @@ const SeamlessCollaborationPage = ({ locale }: ILocale) => {
           locale={locale}
           highlight={{
             buttonId: "oo-menu-item-btn-products",
-            linkId: "oo-menu-link-docs-e-book-creator",
+            linkId: "oo-menu-link-docs-seamless-collaboration",
           }}
         />
       </Layout.Header>
