@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -7,10 +7,11 @@ import { Input } from "@src/components/ui/Input";
 import { TextArea } from "@src/components/ui/TextArea";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Link } from "@src/components/ui/Link";
-import { LoaderButton } from "@src/components/ui/LoaderButton";
+import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { selectItems } from "./data/selectItems";
-import { IFormData, ISelectSubjectItems } from "../../SupportContactForm.types";
+import { ICheckStatus, IFormData, ISelectSubjectItems } from "../../SupportContactForm.types";
 import { hasOption } from "../../utils/typeGuards";
+import { validateFullName, validateEmail } from "@src/utils/validators";
 
 import { StyledSelectInputIcon } from "@src/components/ui/Select/Select.styled";
 import {
@@ -45,6 +46,11 @@ import {
 
 const Hero = () => {
   const { t } = useTranslation("support-contact-form");
+  const [loadStatus, setLoadStatus] = useState<ILoaderButton["status"]>("default");
+  const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
+    name: "default",
+    email: "default",
+  });
 
   const [selectedProduct, setSelectedProduct] = useState<ISelectOption[]>([]);
   const options = [
@@ -56,6 +62,7 @@ const Hero = () => {
   const [selectedSubject, setSelectedSubject] = useState<ISelectSubjectItems | undefined>();
   const [selectedSubjectOption, setSelectedSubjectOption] = useState<string>("");
   const [isSubjectOpen, setIsSubjectOpen] = useState<boolean>(false);
+  const selectSubjectRef = useRef<HTMLDivElement>(null);
 
   useMemo(() => {
     const subject = selectItems.find((item) => item.value === selectedProduct[0]?.value);
@@ -86,7 +93,28 @@ const Hero = () => {
   useEffect(() => {
     setIsSubjectOpen(false);
     setSelectedSubjectOption("");
+    setFormData((prev) => ({
+      ...prev,
+      subject: "",
+      product: selectedProduct[0]?.value || ""
+    }));
   }, [selectedProduct])
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        selectSubjectRef.current &&
+        !selectSubjectRef.current.contains(event.target as Node)
+      ) {
+        setIsSubjectOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const addFile = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files) {
@@ -103,6 +131,61 @@ const Hero = () => {
       ...prev,
       files: prev.files?.filter((stateFile) => stateFile !== file)
     }));
+  };
+
+  const handleCheckStatusFullName = () => {
+    if (validateFullName(formData.name)) {
+      setCheckStatus((prev) => ({
+        ...prev,
+        name: "success",
+      }));
+    } else {
+      setCheckStatus((prev) => ({
+        ...prev,
+        name: "error",
+      }));
+    }
+  }
+
+  const handleCheckStatusEmail = () => {
+    if (validateEmail(formData.email)) {
+      setCheckStatus((prev) => ({
+        ...prev,
+        email: "success",
+      }));
+    } else {
+      setCheckStatus((prev) => ({
+        ...prev,
+        email: "error",
+      }));
+    }
+  }
+
+  const handleOnSubmit = async () => {
+    console.log(formData);
+    setLoadStatus("loading");
+
+    try {
+      const hCaptchaResponse = await fetch("/api/hcaptcha-verify",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json"},
+          body: JSON.stringify({ token: formData.hcaptcha})
+        }
+      );
+
+      const hCaptchaData = await hCaptchaResponse.json();
+
+      if (hCaptchaData.status === "errorHCaptchaInvalid") {
+        setLoadStatus("error");
+        return;
+      }
+
+    } catch (error) {
+      console.error(error);
+      setLoadStatus("error");
+    }
+
   };
 
   return (
@@ -127,7 +210,9 @@ const Hero = () => {
             maxWidth="100%"
             status={selectedProduct.length > 0 ? "success" : "default"}
           />
-          <StyledHeroSelectWrapper>
+          <StyledHeroSelectWrapper
+            ref={selectSubjectRef}
+          >
             <StyledHeroSelect
               type="button"
               onClick={() => setIsSubjectOpen((prev) => !prev)}
@@ -281,17 +366,40 @@ const Hero = () => {
             value={formData.name}
             onChange={(event) => {setFormData((prev) => ({ ...prev, name: event.target.value }))}}
             required
+            onBlur={handleCheckStatusFullName}
+            onFocus={() => setCheckStatus((prev) => ({ ...prev, fullName: "default" }))}
+            status={checkStatus.name}
+            caption={
+              checkStatus.name === "error" && formData.name.length === 0
+              ? t("NameIsEmpty")
+              : checkStatus.name === "error" && formData.name.length > 0
+              ? t("NameIsIncorrect")
+              : ""
+            }
           />
           <Input
             label="Email"
-            placeholder="Email"
+            placeholder="name@domain.com"
             type="email"
             value={formData.email}
             onChange={(event) => {setFormData((prev) => ({ ...prev, email: event.target.value }))}}
             required
+            onBlur={handleCheckStatusEmail}
+            onFocus={() => setCheckStatus((prev) => ({ ...prev, email: "default" }))}
+            status={checkStatus.email}
+            caption={
+              checkStatus.email === "error" && formData.email.length === 0
+              ? t("EmailIsEmpty")
+              : checkStatus.email === "error" && formData.email.length > 0
+              ? t("EmailIsIncorrect")
+              : ""
+            }
           />
           <StyledHeroHCaptchaWrapper>
-            <HCaptcha />
+            <HCaptcha
+              onVerify={(token) => {setFormData((prev) => ({ ...prev, hcaptcha: token }))}}
+              onExpire={() => {setFormData((prev) => ({ ...prev, hcaptcha: null }))}}
+            />
             <StyledHeroAgreeText
               color="#808080"
             >
@@ -319,12 +427,13 @@ const Hero = () => {
           </StyledHeroHCaptchaWrapper>
           <LoaderButton
             label={t("Submit")}
-            onClick={() => {}}
+            onClick={() => handleOnSubmit()}
             disabled={
-              formData.name.length === 0 ||
-              formData.email.length === 0 ||
+              checkStatus.name !== "success" ||
+              checkStatus.email !== "success" ||
               formData.hcaptcha === null
             }
+            status={loadStatus}
          />
         </StyledHeroForm>
       </Container>

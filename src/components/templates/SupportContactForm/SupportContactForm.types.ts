@@ -21,10 +21,16 @@ interface IFormData {
   files: File[];
   name: string;
   email: string;
-  hcaptcha: null;
+  hcaptcha: string | null;
+}
+
+interface ICheckStatus {
+  name: "default" | "success" | "error";
+  email: "default" | "success" | "error";
 }
 
 export type {
   ISelectSubjectItems,
-  IFormData
+  IFormData,
+  ICheckStatus
 };
