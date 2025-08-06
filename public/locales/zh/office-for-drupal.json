@@ -37,5 +37,55 @@
 
   "HowToStartStep3DocsImgUrl": "/images/templates/office-for-drupal/how-to-start/zh/step3-dc.svg",
 
-  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-drupal/how-to-start/zh/step3-ds.svg"
+  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-drupal/how-to-start/zh/step3-ds.svg",
+
+  "PageTitle": "用于 Drupal 的在线办公套件",
+  "PageDescription": "在 Drupal 中处理办公文件",
+
+  "OnlineOfficeForConnector": "用于 <0>Drupal</0> 的在线办公套件",
+  "Subheader": "在 Drupal 中处理办公文件",
+  "GetItNow": "立即获取",
+  "RequestFreeDemo": "申请免费演示",
+  "WorkWithinConnector": "用于 Drupal 的 ONLYOFFICE <0>协作空间</0> app",
+  "DocumentsScreen1Header": "将办公文档嵌入您的 Drupal 网站",
+  "DocumentsScreen1Tab1Label": "创建、上传并嵌入文档、表格、幻灯片或 PDF 至您的网站",
+  "DocumentsScreen1Tab2Label": "将整个房间嵌入到您的网页中，访问者可直接在浏览器中查看文档",
+  "DocumentsScreen1Tab3Label": "集成了复杂的 PDF 表单并支持在线填写。自动收集和分析数据",
+  "DocumentsScreen1Tab4Label": "禁止从您的网站下载、打印和复制文档",
+  "soon": "即将推出",
+
+  "DocsAppHeading": "适用于 Drupal 的 ONLYOFFICE <0>文档</0> app",
+  "DocumentsScreen2Header": "高效管理 Drupal 帐户中的文档",
+  "DocumentsScreen2Tab1Label": "为您的全部文档创建一个安全的空间。随时随地轻松访问",
+  "DocumentsScreen2Tab2Label": "整理您的个人文件并为商业文档创建房间",
+  "DocumentsScreen2Tab3Label": "设置灵活的访问权限：编辑、评论、审阅或仅查看",
+  "DocumentsScreen2Tab4Label": "与其他 Drupal 用户在线编辑和协作处理文档",
+  "MarketplaceConnectorTitle": "专为在 Drupal 中无缝工作而设计",
+  "MarketplaceConnectorDescription": "立即从 Drupal 插件目录安装适用于 Drupal 的 ONLYOFFICE 协作空间应用程序。",
+  "GetStarted": "开始使用！",
+
+  "DocsAppHeader": "将办公文档添加到您的 Drupal 页面",
+  "DocsAppTab1Label": "预览公共页面上的文件",
+  "DocsAppTab2Label": "在 Drupal 媒体模块中编辑文档、表格、幻灯片、表单和 PDF",
+  "DocsAppTab3Label": "与其他 Drupal 用户实时协作处理文件",
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "Reason1": "一套强大的编辑、格式化和样式工具。<0>集成 AI 助手</0>（ChatGPT 或智谱 AI）。",
+  "Reason2": "两种共同编辑模式、跟踪更改、版本历史记录、文档比较、评论和提及等功能。",
+  "Reason3": "<0>内置聊天和 Telegram 集成。</0>用于实时通信的 Jitsi 和 Rainbow 插件。",
+  "Reason4": "支持超过 <0>50 种文件格式</0>。与微软 Office 格式（DOCX, XLSX, PPTX）高度兼容。",
+  "Reason5": "<0>高级安全。</0>各种访问权限和 JWT。活动跟踪和审计报告。静态和传输中加密。开源代码。",
+  "Reason6": "<0>从免费方案开始。</0>商业方案具有更多管理员、更大存储空间、增强的安全性和专业支持。自托管解决方案可让您完全控制数据。",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1Docs": "在您自己的服务器上部署 <0>ONLYOFFICE 文档</0>或注册 <1>ONLYOFFICE 文档云</1>。",
+  "HowToStartStep2": "从 <0>Drupal 插件目录</0>获取集成应用程序。",
+  "HowToStartStep3": "上传并配置集成应用程序。",
+  "HowToStartStep1Docspace": "创建免费<0>的协作空间帐户</0>。",
+
+  "ReadDetailedInstructions": "阅读详细指南请前往<0>帮助中心</0>。",
+
+  "NeedAnAppToConnect": "想要将 ONLYOFFICE 连接至您喜爱的网络服务？需要某个连接 app 或者你们已经开发出来了？",
+
+  "Docs": "文档",
+  "DocSpace": "协作空间"
 }

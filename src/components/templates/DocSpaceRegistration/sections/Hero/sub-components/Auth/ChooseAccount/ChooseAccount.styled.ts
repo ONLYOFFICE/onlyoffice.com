@@ -10,11 +10,7 @@ const StyledChooseAccount = styled.div`
   max-width: 472px;
 
   @media ${device.tabletS} {
-    margin: 24px auto 0;
-  }
-
-  @media ${device.mobile} {
-    margin: 8px auto 0;
+    margin: 0 auto;
   }
 `;
 
@@ -34,7 +30,7 @@ const StyledChooseAccountItems = styled.div`
   row-gap: 16px;
 `;
 
-const StyledChooseAccountItem = styled.button`
+const StyledChooseAccountItem = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,7 +41,6 @@ const StyledChooseAccountItem = styled.button`
   transition:
     border-color 0.2s,
     background-color 0.2s;
-  cursor: pointer;
 
   svg {
     margin-left: 8px;
@@ -71,13 +66,27 @@ const StyledChooseAccountItem = styled.button`
   }
 `;
 
-const StyledChooseAccountLink = styled(Link)`
-  justify-self: start;
+const StyledChooseAccountButtons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const StyledChooseAccountButton = styled.button`
+  border: none;
+  padding: 0;
   font-size: 16px;
   line-height: 24px;
+  color: #ff6f3d;
+  text-decoration: underline;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
 
   @media ${device.mobile} {
-    justify-self: initial;
     font-size: 14px;
     line-height: 21px;
   }
@@ -105,6 +114,7 @@ export {
   StyledChooseAccountText,
   StyledChooseAccountItems,
   StyledChooseAccountItem,
-  StyledChooseAccountLink,
+  StyledChooseAccountButton,
+  StyledChooseAccountButtons,
   StyledChooseAccountLabel,
 };

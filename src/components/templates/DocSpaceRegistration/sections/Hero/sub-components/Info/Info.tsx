@@ -20,9 +20,20 @@ const Info = () => {
   const { t } = useTranslation("docspace-registration");
   const router = useRouter();
 
+  const handleBackToPreviousPage = () => {
+    const currentPath = window.location.origin + window.location.pathname;
+    const ref = document.referrer;
+
+    if (ref && !ref.startsWith(currentPath)) {
+      window.location.href = ref;
+    } else {
+      router.push("/");
+    }
+  };
+
   return (
     <>
-      <StyledInfoBackLink onClick={() => router.back()}>
+      <StyledInfoBackLink onClick={handleBackToPreviousPage}>
         <ArrowBackIcon />
         {t("BackToPreviousPage")}
       </StyledInfoBackLink>

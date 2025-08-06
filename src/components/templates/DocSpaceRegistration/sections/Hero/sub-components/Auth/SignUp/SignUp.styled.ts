@@ -31,6 +31,7 @@ const StyledSignUpAccountLink = styled(Link)`
 
 const StyledSignUpWrapper = styled.div`
   display: grid;
+  align-content: start;
   row-gap: 32px;
   max-width: 472px;
   height: 100%;
@@ -101,21 +102,24 @@ const StyledSignUpLabel = styled.div`
 
 const StyledSignUpDownload = styled.div`
   display: grid;
-  justify-items: center;
   row-gap: 4px;
+  text-align: center;
 `;
 
 const StyledSignUpDownloadLink = styled(Link)`
+  justify-self: center;
   font-size: 16px;
   line-height: 24px;
 
   @media ${device.mobile} {
+    justify-self: initial;
     font-size: 14px;
     line-height: 21px;
   }
 `;
 
 const StyledSignUpCaption = styled.div<{ $error?: boolean }>`
+  margin-top: 16px;
   font-size: 13px;
   line-height: 16px;
   color: ${(props) => (props.$error ? "#cb0000" : "#999999")};

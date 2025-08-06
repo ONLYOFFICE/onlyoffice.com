@@ -32,7 +32,10 @@ const CheckEmail = ({ email, setStatus }: ICheckEmail) => {
         <Trans t={t} i18nKey="TheLinkIsValidFor60Minutes" />
       </Text>
 
-      <StyledCheckEmailLink onClick={() => setStatus("signup")}>
+      <StyledCheckEmailLink
+        onClick={() => setStatus("signup")}
+        data-testid="check-email-back-button"
+      >
         {t("BackToSignUp")}
       </StyledCheckEmailLink>
     </StyledCheckEmail>

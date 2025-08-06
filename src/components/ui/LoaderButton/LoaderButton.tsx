@@ -31,6 +31,7 @@ const LoaderButton = forwardRef<HTMLButtonElement, ILoaderButton>(
         $fullWidth={fullWidth ?? undefined}
         $status={status}
         $size={size}
+        $hasContent={!!(children || label)}
         onClick={onClick}
         {...rest}
       >
