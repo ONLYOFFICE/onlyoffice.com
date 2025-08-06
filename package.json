@@ -32,6 +32,7 @@
     "next-i18next": "^15.4.2",
     "nodemailer": "^7.0.3",
     "onlyoffice-react-ui-kit": "ONLYOFFICE/onlyoffice-react-ui-kit#41b406238dcc65d896e6d43142b1e65794a6100d",
+    "prismjs": "^1.30.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.2",

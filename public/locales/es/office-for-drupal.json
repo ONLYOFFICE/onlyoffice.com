@@ -1,0 +1,54 @@
+{
+  "PageTitle": "Suite ofimática online para Drupal",
+  "PageDescription": "Trabaja en archivos ofimáticos dentro de Drupal",
+
+  "OnlineOfficeForConnector": "Suite ofimática online para <0>Drupal</0>",
+  "Subheader": "Trabaja en archivos ofimáticos dentro de Drupal",
+
+  "WorkWithinConnector": "App <0>ONLYOFFICE DocSpace</0> para Drupal",
+  "GetItNow": "Empezar",
+  "RequestFreeDemo": "SOLICITAR DEMOSTRACIÓN GRATUITA",
+  "DocumentsScreen1Header": "Incrusta documentos ofimáticos en tu sitio web Drupal",
+  "DocumentsScreen1Tab1Label": "Crea, carga e incrusta documentos, hojas, diapositivas o PDF en tu página web",
+  "DocumentsScreen1Tab2Label": "Incrusta toda la sala en tu página web para que los visitantes puedan ver los documentos directamente en el navegador",
+  "DocumentsScreen1Tab3Label": "Integra formularios PDF complejos para rellenarlos online. Recopila y analiza datos automáticamente",
+  "DocumentsScreen1Tab4Label": "Evita que se descarguen, impriman y copien documentos de tu sitio web",
+  "soon": "próximamente",
+  
+  "DocumentsScreen2Header": "Gestiona eficazmente los documentos desde tu cuenta de Drupal",
+  "DocumentsScreen2Tab1Label": "Crea un espacio seguro para todos tus documentos. Accede fácilmente en cualquier momento y desde cualquier lugar",
+  "DocumentsScreen2Tab2Label": "Organiza tus archivos personales y crea salas para tus documentos empresariales",
+  "DocumentsScreen2Tab3Label": "Proporciona permisos de acceso flexibles: editar, comentar, revisar o solo visualizar",
+  "DocumentsScreen2Tab4Label": "Edita y colabora en documentos con otros usuarios de Drupal en línea",
+
+  "MarketplaceConnectorTitle": "Diseñado para funcionar perfectamente en Drupal",
+  "MarketplaceConnectorDescription": "Instala la aplicación ONLYOFFICE DocSpace para Drupal desde el Marketplace de Drupal.",
+
+  "DocsAppHeading": "App <0>ONLYOFFICE Docs</0> para Drupal",
+  "DocsAppHeader": "Añade documentos ofimáticos a tus páginas de Drupal",
+  "DocsAppTab1Label": "Previsualiza documentos en las páginas públicas",
+  "DocsAppTab2Label": "Edita documentos, hojas, diapositivas, formularios y archivos PDF en el módulo Drupal Media",
+  "DocsAppTab3Label": "Colabora en los archivos ofimáticos en tiempo real con otros usuarios de Drupal",
+  "GetStarted": "Empezar",
+
+  "WhyOO": "¿Por qué ONLYOFFICE?",
+  "Reason1": "Un sólido conjunto de herramientas de edición, formato y estilo. Asistente de <0>IA integrado</0> (ChatGPT o ZhiPu Copilot).",
+  "Reason2": "Coedición en <0>tiempo real</0> y con bloqueo de párrafos, revisión, historial de versiones, comparación de documentos, comentarios y menciones.",
+  "Reason3": "<0>Chat integrado e integración con Telegram.</0> Plugins de Jitsi y Rainbow para comunicación en tiempo real.",
+  "Reason4": "Compatibilidad con más de <0>50 formatos de archivo</0>. Totalmente compatible con los formatos de MS Office: DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Seguridad mejorad.</0> Permisos de acceso flexibles y JWT. Seguimiento de la actividad e informes de auditoría. Cifrado en reposo y en tránsito. Código fuente abierto.",
+  "Reason6": "<0>Plan gratuito para empezar.</0> Plan Business para más administradores, mayor almacenamiento, seguridad mejorada y asistencia profesional. Solución autoalojada para un control total de tus datos.",
+
+  "HowToStart": "Cómo empezar",
+  "HowToStartStep1Docs": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o regístrate en <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep1Docspace": "Crea tu cuenta de <0>DocSpace gratis</0>.",
+  "HowToStartStep2": "Obtén la aplicación de integración del <0>Marketplace de Drupal</0>.",
+  "HowToStartStep3": "Sube y configura la app de integración.",
+
+  "ReadDetailedInstructions": "Lee las instrucciones detalladas en el <0>Centro de ayuda</0>.",
+
+  "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE a tu servicio web favorito? ¿O ya has desarrollado una?",
+
+  "Docs": "Docs",
+  "DocSpace": "DocSpace"
+}

@@ -6,20 +6,11 @@ import { WebinarsForUsEmail } from "@src/components/emails/WebinarsForUsEmail";
 import { WebinarsForUserEmail } from "@src/components/emails/WebinarsForUserEmail";
 
 interface IWebinarsData {
-	fullName: string;
+	full_name: string;
 	email: string;
-	companyName: string;
-	webinarTheme: string;
-	webinarDate: string;
-	questions: string;
-	lang: string;
-	ip: string | string[] | null;
-  fromPage: string;
-  utm_source: string | null;
-  utm_campaign: string | null;
-  utm_content: string | null;
-  utm_term: string | null;
-  create_on: Date;
+	company_name: string;
+	webinar_theme: string;
+	webinar_lang: string;
 }
 
 export default async function handler(
@@ -48,23 +39,11 @@ export default async function handler(
 		const addWebinarsRequest = async () => {
 			try {
 				const addWebinarsRequestData: IWebinarsData = {
-					fullName,
+					full_name: fullName,
 					email,
-					companyName,
-					webinarTheme,
-					webinarDate,
-					questions,
-					lang,
-					fromPage: from,
-					ip:
-						req.headers["x-forwarded-for"] ||
-						req.socket.remoteAddress ||
-						null,
-					utm_source: cookies.utmSource ?? null,
-					utm_campaign: cookies.utmCampaign ?? null,
-					utm_content: cookies.utmContent ?? null,
-					utm_term: cookies.utmTerm ?? null,
-					create_on: new Date(),
+					company_name: companyName,
+					webinar_theme: webinarTheme,
+					webinar_lang: lang,
 				};
 
 				await db.query("INSERT INTO webinar_request SET ?", [

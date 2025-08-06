@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Drupal用オンラインオフィス",
+  "PageDescription": "Drupal内でオフィスファイルで作業を行う",
+
+  "OnlineOfficeForConnector": "<0>Drupal</0>用オンラインオフィス",
+  "Subheader": "Drupal内でオフィスファイルで作業を行う",
+  "GetItNow": "スタートアップ",
+  "RequestFreeDemo": "無料デモをリクエスト",
+  "WorkWithinConnector": "Drupal用 <0>ONLYOFFICE DocSpace</0> アプリ",
+  "DocumentsScreen1Header": "Drupalウェブサイトにオフィス文書を埋め込む",
+  "DocumentsScreen1Tab1Label": "ドキュメント、シート、スライド、またはPDFを作成、アップロードし、ウェブサイトに埋め込みます",
+  "DocumentsScreen1Tab2Label": "訪問者がブラウザで文書を閲覧できるように、部屋全体をウェブページに埋め込みます",
+  "DocumentsScreen1Tab3Label": "オンラインで記入するための複雑なPDFフォームを統合します。データを自動的に収集・分析",
+  "DocumentsScreen1Tab4Label": "ウェブサイトからのドキュメントのダウンロード、印刷、コピーを制限します",
+  "soon": "まもなく",
+
+  "DocsAppHeading": "Drupal用 <0>ONLYOFFICE Docs</0> アプリ",
+  "DocumentsScreen2Header": "Drupalアカウントからドキュメントを効率的に管理する",
+  "DocumentsScreen2Tab1Label": "すべてのドキュメントを安全に保管。いつでもどこでも簡単にアクセスできます",
+  "DocumentsScreen2Tab2Label": "個人的なファイルを整理し、ビジネス文書用の部屋を作成します",
+  "DocumentsScreen2Tab3Label": "編集、コメント、レビュー、閲覧のみなど、柔軟なアクセス権限を提供します",
+  "DocumentsScreen2Tab4Label": "オンラインで他のDrupalユーザーとドキュメントを編集し、コラボレーションする",
+  "MarketplaceConnectorTitle": "Drupalでシームレスに動作するように設計されている",
+  "MarketplaceConnectorDescription": "Drupal MarketplaceからDrupal用ONLYOFFICE DocSpaceアプリをインストール。",
+  "GetStarted": "スタートアップ",
+
+  "DocsAppHeader": "Drupalページにオフィス文書を追加する",
+  "DocsAppTab1Label": "公開ページでドキュメントをプレビューする",
+  "DocsAppTab2Label": "Drupalの「メディア」モジュールでドキュメント、シート、スライド、フォーム、PDFを編集する",
+  "DocsAppTab3Label": "他のDrupalユーザーとリアルタイムでオフィスファイルのコラボレーションができる",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "Reason1": "編集、フォーマット、スタイリングツールの強力なセット。<0>統合されたAIヘルパー</0>（ChatGPTまたはZhiPu Copilot）。",
+  "Reason2": "<0>リアルタイムで</0>段落ロックされた共同編集、レビュー、バージョン履歴、ドキュメント比較、コメント＆メンション。",
+  "Reason3": "<0>チャットとTelegramの統合。</0>リアルタイムコミュニケーションのためのJitsiとRainbowプラグイン。",
+  "Reason4": "<0>50以上のファイル形式をサポート。</0>MS Officeフォーマットとの完全な互換性： docx、xlsx、pptx。",
+  "Reason5": "<0>セキュリティ強化。</0>柔軟なアクセス権とJWT。アクティビティ追跡と監査レポート。保存時および転送時の暗号化。オープンソースコード。",
+  "Reason6": "<0>まずは無料プランから。</0>BUSINESSプランでは、より多くの管理者、より大きなストレージ、強化されたセキュリティ、プロフェッショナルなサポートをご利用いただけます。お客様のデータを完全に管理するセルフホストソリューションです。",
+
+  "HowToStart": "開始方法",
+  "HowToStartStep1Docs": "<0>ONLYOFFICE Docs</0>をご自身のサーバーに導入するか、<1>ONLYOFFICE Docs</1>クラウドをご契約ください。",
+  "HowToStartStep2": "<0>Drupal Marketplace</0>から統合アプリを入手する。",
+  "HowToStartStep3": "統合アプリをアップロードし、設定します。",
+  "HowToStartStep1Docspace": "無料の<0>DocSpaceアカウントを</0>作成します。",
+
+  "ReadDetailedInstructions": "詳細な手順については、<0>ヘルプセンター</0>を参照してください。",
+
+  "NeedAnAppToConnect": "ONLYOFFICEとお気に入りのウェブサービスをつなぐアプリが必要ですか？または開発済みですか？",
+
+  "Docs": "Docs",
+  "DocSpace": "DocSpace"
+}
