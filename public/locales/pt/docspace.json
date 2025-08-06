@@ -37,7 +37,9 @@
   "MarkdownFiles": "Arquivos de redução",
   "EBooks": "Livros eletrônicos",
   "Multimedia": "Multimídia",
-  "AICardHeading": "Trabalhe mais rápido usando assistentes de IA",
+  "Diagrams": "Diagramas",
+  "WatchNow": "Assista agora",
+  "AICardHeading": "Trabalhe mais rápido com assistentes de IA",
   "AICardText": "Torne o processo de criação e edição de documentos muito mais fácil. Gere textos, imagens e código. Obtenha respostas rápidas às suas dúvidas ou explicação de algumas noções e conceitos. Verifique a ortografia e a gramática do seu texto. Reescreva facilmente seu texto, tornando-o mais curto ou mais longo. Traduza para diferentes idiomas e faça muito mais com ferramentas integradas de IA.",
   "LearnMore": "Saber mais",
   "ExtraCardHeading": "Faça uso de recursos extras",
@@ -60,7 +62,7 @@
   "Enterprise": "Servidor empresarial",
   "EnterpriseDesc": "Implante o DocSpace no seu próprio servidor e obtenha controle total dos seus documentos. Fácil de escalar, este pacote office cresce com seu negócio.",
   "EnterpriseLinkLabel": "Enviar solicitação",
-  "Startup": "Nuvem gratuita para startups",
+  "Startup": "Nuvem grátis para startups",
   "StartupDesc": "Crie um espaço na nuvem gratuito para seus documentos. Convide até 3 administradores e usuários ilimitados e colabore em seus documentos de qualquer lugar.",
   "StartupLinkLabel": "Criar agora",
   "NonProfit": "Nuvem gratuita para escolas e organizações sem fins lucrativos",
@@ -74,6 +76,7 @@
   "HintsCardText": "Mudar o ONLYOFFICE DocSpace Server para HTTPS",
   "HintsLink": "https://www.onlyoffice.com/blog/pt-br/2023/09/como-mudar-o-servidor-onlyoffice-docspace-para-https",
   "YoutubeImgUrl": "/images/templates/docspace/learn-more/youtube.png",
-  "comingSoon": "em breve",
-  "soon": "Em breve"
+  "comingSoon": "breve",
+  "soon": "breve",
+  "Hints": "Dicas"
 }

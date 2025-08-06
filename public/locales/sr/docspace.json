@@ -12,7 +12,7 @@
   "CollaborateDescription": "DocSpace pruža fleksibilne dozvole za pristup. Kreirajte sobe, pozovite ljude, sarađujte i komunicirajte kako biste obavili posao.",
   "CollaborateButton": "Počnite besplatno",
   "SliderTitle1": "Sobe za saradnju",
-  "SliderDescription1": "Radite zajedno i završite svoj projekat brže. Sarađujte na dokumentima u realnom vremenu. Ostavite komentare, ćaskajte i vodite audio i video pozive. Pregledajte i pratite izmene. Pogledajte prethodne verzije dokumenta i vratite potrebnu ako je potrebno.",
+  "SliderDescription1": "Radite zajedno i završite svoj projekat brže. Uređujte dokumente u realnom vremenu. Ostavite komentare, čavrljajte i obavljajte audio i video pozive. Pregledajte i pratite promene. Pregledajte prethodne verzije dokumenta i vratite jednu od njih, ako je potrebno.",
   "SliderImageUrl1": "/images/templates/docspace/slider/collaboration-rooms.svg",
   "SliderTitle2": "Sobe za sastanke",
   "SliderDescription2": "Saradite na kancelarijskim dokumentima tokom Zoom sastanaka. Kreirajte, otpremite i delite dokumente pružajući dozvole za uređivanje ili prikaz uživo. Čuvajte datoteke uređene tokom vašeg sastanka unutar sobe i dobijajte konstantan pristup njima sa bilo kog mesta u bilo koje vreme.",
@@ -30,7 +30,7 @@
   "SliderDescription6": "Koristite VDR za naprednu bezbednost fajlova i transparentnost, kao i za sigurno čuvanje i deljenje poverljivih poslovnih informacija — na primer, tokom dubinske analize. Automatski indeksirajte i pratite sav sadržaj kako biste vodili urednu evidenciju i ostali organizovani. Uključite vodene žigove, podesite trajanje fajlova, ograničite preuzimanje i kopiranje. Organizujte popunjavanje obrazaca na osnovu uloga.",
   "SliderImageUrl6": "/images/templates/docspace/slider/virtual-data-rooms.svg",
   "SliderTitle7": "Privatne sobe",
-  "SliderDescription7": "Za osetljive ili poverljive dokumente, možete koristiti privatne sobe gde je svaki simbol koji ukucate šifrovan end-to-end šifrovanjem.",
+  "SliderDescription7": "Za osetljive ili poverljive dokumente, možete koristiti privatne sobe gde je svaki simbol koji otkucate enkriptovan od kraja do kraja.",
   "SliderImageUrl7": "/images/templates/docspace/slider/private-rooms.svg",
   "comingSoon": "uskoro",
   "soon": "Uskoro",
@@ -44,7 +44,7 @@
   "Presentations": "Prezentacije",
   "DigitalForms": "Digitalni obrasci",
   "PDFs": "PDF-ovi",
-  "MarkdownFiles": "Markdown fajlovi",
+  "MarkdownFiles": "Markdown datoteke",
   "EBooks": "E-knjige",
   "Multimedia": "Multimedija",
 
@@ -69,7 +69,7 @@
   "BudgetsHeading": "Nabavite ONLYOFFICE DocSpace za bilo koji budžet",
   "BudgetsSubHeading": "Izaberite rešenje koje vam najviše odgovara",
   "Business": "Poslovni oblak",
-  "BusinessDesc": "Za više administratora, više prostora za čuvanje, pojačanu bezbednost i profesionalnu podršku. Platite samo za administratore i pozovite koliko god korisnika želite besplatno.",
+  "BusinessDesc": "Za više administratora, veće skladište, poboljšanu sigurnost i profesionalnu podršku. Plaćajte samo za administratore i pozovite koliko god korisnika vam je potrebno besplatno.",
   "BusinessLinkLabel": "Pogledajte cene",
   "Enterprise": "Preduzeće server",
   "EnterpriseDesc": "Razvijte DocSpace na svom serveru i ostvarite potpunu kontrolu nad svojim dokumentima. Lako skalabilan, ovaj kancelarijski paket raste sa vašim poslovanjem.",
@@ -88,5 +88,8 @@
   "YoutubeImgUrl": "/images/templates/docspace/learn-more/youtube.png",
   "YoutubeLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
   "BlogLink": "https://www.onlyoffice.com/blog/2024/05/integrate-onlyoffice-docspace-into-single-page-application",
-  "HintsLink": "https://www.onlyoffice.com/blog/2023/09/switch-onlyoffice-docspace-server-to-https"
+  "HintsLink": "https://www.onlyoffice.com/blog/2023/09/switch-onlyoffice-docspace-server-to-https",
+  "Hints": "Hintovi",
+  "Diagrams": "Dijagrami",
+  "WatchNow": "Gledajte sada"
 }

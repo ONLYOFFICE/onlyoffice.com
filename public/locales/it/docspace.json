@@ -89,5 +89,8 @@
   "YoutubeImgUrl": "/images/templates/docspace/learn-more/youtube.png",
   "YoutubeLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
   "BlogLink": "https://www.onlyoffice.com/blog/it/2024/05/integrazione-di-docspace-in-spa",
-  "HintsLink": "https://www.onlyoffice.com/blog/it/2023/09/https-per-il-server-onlyoffice-docspace"
+  "HintsLink": "https://www.onlyoffice.com/blog/it/2023/09/https-per-il-server-onlyoffice-docspace",
+  "Hints": "Suggerimenti",
+  "Diagrams": "Diagrammi",
+  "WatchNow": "Guarda ora"
 }

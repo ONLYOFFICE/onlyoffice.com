@@ -1,6 +1,6 @@
 {
   "PageTitle": "ONLYOFFICE DocSpace、あらゆるビジネス目的に対応するカスタマイズ可能なルーム | ONLYOFFICE",
-  "HeroTitle": "<0>ONLYOFFICE DocSpace、</0><1></1>ドキュメントコラボレーションをより簡単に",
+  "HeroTitle": "<0>ONLYOFFICE DocSpace、</0><1></1>ドキュメントコラボレーションをよりシンプルに",
   "HeroButton": "無料アカウント作成",
   "HeroInputPlaceholder": "メールアドレスを入力してください",
   "HeroItem1": "カスタマイズ可能なルームで簡単にコラボレーション",
@@ -26,7 +26,7 @@
   "SliderTitle7": "プライベートルーム",
   "SliderDescription7": "機密性の高い文書には、入力するすべての記号がエンドツーエンドで暗号化されるプライベートルームを利用する。",
   "comingSoon": "まもなく",
-  "soon": "さらに詳しく",
+  "soon": "まもなく",
   "ContentHeading": "手持ちのあらゆるコンテンツに対応",
   "ContentSubHeading": "さまざまな形式のファイルをルーム内に保存。閲覧、編集、共同作業。",
   "ContentSubHeading2": "MS Officeとの高い互換性",
@@ -45,7 +45,7 @@
   "ExtraCardHeading": "追加機能を使いこなす",
   "ExtraCardText": "DocSpaceの機能を拡張するために、システムプラグインを有効化したり、独自のプラグインを追加してください。",
 
-  "SecurityHeading": "機密性の高いビジネスデータを保護",
+  "SecurityHeading": "セキュアなコラボレーションを実現",
   "SecurityLinkLabel": "ONLYOFFICEのセキュリティ機能の詳細はこちら",
   "SecurityItemHeader1": "規格への適合性",
   "SecurityItemDescription1": "ONLYOFFICEでは、すべての個人情報が慎重に扱われている。当社のデータセキュリティポリシーは、GDPRの基準に完全に準拠している。",
@@ -80,5 +80,7 @@
   "BlogCardText": "ONLYOFFICE DocSpaceをシングルページアプリケーションに統合する",
   "BlogLink": "https://www.onlyoffice.com/blog/ja/2023/09/integrating-onlyoffice-docspace-into-a-single-page-application",
   "HintsCardText": "ONLYOFFICE DocSpaceのサーバーをHTTPSに変更する",
-  "HintsLink": "https://www.onlyoffice.com/blog/ja/2023/09/onlyoffice-docspace-https"
+  "HintsLink": "https://www.onlyoffice.com/blog/ja/2023/09/onlyoffice-docspace-https",
+  "Diagrams": "図",
+  "WatchNow": "今すぐ見る"
 }

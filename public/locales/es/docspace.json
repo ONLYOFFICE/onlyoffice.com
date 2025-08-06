@@ -42,6 +42,8 @@
   "MarkdownFiles": "Archivos Markdown",
   "EBooks": "Libros electrónicos",
   "Multimedia": "Archivos multimedia",
+  "Diagrams": "Diagramas",
+  "WatchNow": "Ver ahora",
 
   "AICardHeading": "Trabaja más rápido con asistentes de IA",
   "AICardText": "Haz que el proceso de creación y edición de documentos sea mucho más fácil. Genera textos, imágenes y código. Obtén respuestas rápidas a tus preguntas o la explicación de algunas nociones y conceptos. Comprueba la ortografía y la gramática de tus textos. Reescribe fácilmente tu texto haciéndolo más corto o más largo. Traduce a diferentes idiomas y haz mucho más con las herramientas de IA integradas.",
@@ -89,5 +91,6 @@
   "YoutubeImgUrl": "/images/templates/docspace/learn-more/youtube.png",
   "YoutubeLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
   "BlogLink": "https://www.onlyoffice.com/blog/es/2024/05/como-integrar-onlyoffice-docspace-en-una-aplicacion-de-pagina-unica",
-  "HintsLink": "https://www.onlyoffice.com/blog/es/2023/09/como-cambiar-onlyoffice-docspace-server-a-https"
+  "HintsLink": "https://www.onlyoffice.com/blog/es/2023/09/como-cambiar-onlyoffice-docspace-server-a-https",
+  "Hints": "Consejos"
 }

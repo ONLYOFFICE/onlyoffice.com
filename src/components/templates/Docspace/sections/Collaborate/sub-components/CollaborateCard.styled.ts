@@ -23,7 +23,6 @@ const StyledCollaborateCardTitle = styled.h3<{ $id: string, $soon: string }>`
   line-height: 1.33em;
   letter-spacing: -0.02em;
   padding: 0 0 16px;
-  ${({ $id }) => $id === "form-filling-rooms" && "text-transform: uppercase;"}
 
   &::after {
     content: "${(props) => props.$soon}";

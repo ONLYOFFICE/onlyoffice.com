@@ -90,14 +90,16 @@
   "NonProfitLinkLabel": "提交请求",
 
   "LearnMoreHeading": "了解有关 ONLYOFFICE 协作空间的更多信息",
-  "Youtube": "哔哩哔哩",
+  "YouTube": "哔哩哔哩",
   "Blog": "博客",
   "Hints": "提示",
   "YoutubeCardText": "通过视频指南掌握 ONLYOFFICE 协作空间",
   "BlogCardText": "将 ONLYOFFICE 协作空间集成到单页面应用程序中",
   "HintsCardText": "将 ONLYOFFICE 协作空间服务器切换为 HTTPS",
-  "YoutubeImgUrl": "/images/templates/docspace/learn-more/youtube.png",
-  "YoutubeLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
-  "BlogLink": "https://www.onlyoffice.com/blog/2024/05/integrate-onlyoffice-docspace-into-single-page-application",
-  "HintsLink": "https://www.onlyoffice.com/blog/2023/09/switch-onlyoffice-docspace-server-to-https"
+  "YoutubeImgUrl": "/images/templates/docspace/learn-more/bilibili.jpg",
+  "YoutubeLink": "https://space.bilibili.com/1870911731/lists?sid=1418626&ctype=0",
+  "BlogLink": "https://www.onlyoffice.com/blog/zh-hans/2024/05/integrating-onlyoffice-docspace-into-a-single-page-application",
+  "HintsLink": "https://www.onlyoffice.com/blog/zh-hans/2023/10/how-to-switch-onlyoffice-docspace-server-to-https",
+  "Diagrams": "图表",
+  "WatchNow": "立即观看"
 }

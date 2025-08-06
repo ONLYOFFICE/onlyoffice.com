@@ -11,7 +11,7 @@
   "CollaborateTitle": "<0>Wählen Sie</0> die Art der Zusammenarbeit",
   "CollaborateDescription": "DocSpace bietet flexible Zugriffsberechtigungen. Erstellen Sie Räume, laden Sie Personen ein, arbeiten Sie zusammen und kommunizieren Sie, um Ihre Arbeit zu erledigen.",
   "CollaborateButton": "Kostenlos starten",
-  "SliderTitle1": "Räume für die Zusammenarbeit",
+  "SliderTitle1": "Räume für Zusammenarbeit",
   "SliderDescription1": "Arbeiten Sie zusammen und erledigen Sie Ihr Projekt schneller. Bearbeiten Sie Dokumente in Echtzeit gemeinsam. Sie können Kommentare hinterlassen, chatten und Audio- und Videoanrufe tätigen. Überprüfen und verfolgen Sie Änderungen. Zeigen Sie frühere Versionen eines Dokuments an und stellen Sie eine davon bei Bedarf wieder her.",
   "SliderScreen1Url": "/images/templates/docspace/collaborate/de/collaboration_rooms.png",
   "SliderScreen1Url2x": "/images/templates/docspace/collaborate/de/collaboration_rooms_2x.png",
@@ -39,7 +39,7 @@
   "SliderDescription7": "Für sensible oder vertrauliche Dokumente können Sie private Räume nutzen, in denen jedes eingegebene Symbol Ende-zu-Ende verschlüsselt wird.",
   "SliderScreen7Url": "/images/templates/docspace/collaborate/de/private_rooms.png",
   "SliderScreen7Url2x": "/images/templates/docspace/collaborate/de/private_rooms_2x.png",
-  "comingSoon": "kommen demnächst",
+  "comingSoon": "bald",
   "soon": "Bald",
   "ContentHeading": "Arbeiten Sie mit jedem Inhalt",
   "ContentSubHeading": "Speichern Sie Dateien in verschiedenen Formaten in Ihren Räumen. Erstellen und bearbeiten Sie Inhalte, auch gemeinsam.",
@@ -53,6 +53,8 @@
   "MarkdownFiles": "Markdown-Dateien",
   "EBooks": "E-Bücher",
   "Multimedia": "Multimedia",
+  "Diagrams": "Diagramme",
+  "WatchNow": "Jetzt ansehen",
   "AICardHeading": "Arbeiten Sie schneller mit KI-Assistenten",
   "AICardText": "Vereinfachen Sie die Erstellung und Bearbeitung von Dokumenten. Generieren Sie Texte, Bilder und Code. Erhalten Sie schnelle Antworten auf Ihre Fragen oder Erklärungen zu bestimmten Begriffen und Konzepten. Überprüfen Sie Rechtschreibung und Grammatik. Schreiben Sie Text einfach um und machen Sie ihn kürzer oder länger. Übersetzen Sie in verschiedene Sprachen und tun Sie noch viel mehr mit integrierten KI-Tools.",
   "LearnMore": "Mehr erfahren",
@@ -90,5 +92,6 @@
   "YoutubeImgUrl": "/images/templates/docspace/learn-more/youtube.png",
   "YoutubeLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
   "BlogLink": "https://www.onlyoffice.com/blog/de/2023/05/integration-von-onlyoffice-docspace-in-eine-einseitige-anwendung",
-  "HintsLink": "https://www.onlyoffice.com/blog/de/2023/09/onlyoffice-docspace-server-auf-https-umstellen"
+  "HintsLink": "https://www.onlyoffice.com/blog/de/2023/09/onlyoffice-docspace-server-auf-https-umstellen",
+  "Hints": "Hinweise"
 }
