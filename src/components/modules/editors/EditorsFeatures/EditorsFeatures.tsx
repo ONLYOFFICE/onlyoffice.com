@@ -47,6 +47,7 @@ const EditorsFeatures = ({ items, buttons, className }: IEditorsFeatures) => {
                 setVideoUrl(url);
                 setIsOpen(true);
               }}
+              className={className}
             />
           ))}
           {buttons && (

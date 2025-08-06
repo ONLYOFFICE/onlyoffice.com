@@ -17,10 +17,11 @@ const Features = () => {
           image: {
             url: t(items.image.url),
             url2x: items.image.url2x && t(items.image.url2x),
-            height: items.image.height,
+            height: 500,
           },
         }))}
         buttons={false}
+        className="sc-f-sfc"
       />
     </>
   );
