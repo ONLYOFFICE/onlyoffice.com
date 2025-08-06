@@ -60,6 +60,7 @@ const StyledCollaborateItem = styled.li<{
     color: ${(props) => (props.$isActive ? "#ff6f3d" : "#000000")};
     border-bottom: ${(props) =>
       props.$isActive ? "1px solid #ff6f3d" : "none"};
+    white-space: ${({ $title }) => ($title === "Приватные комнаты" ? "nowrap" : "initial")};
   }
 
   &::before {

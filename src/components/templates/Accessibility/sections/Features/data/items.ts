@@ -55,13 +55,6 @@ export const items = [
           url: "MobileWebViewImgUrl",
           url2x: "MobileWebViewImgUrl2x",
         },
-        links: [
-          {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
-            label: "LearnMore",
-            isExternal: true,
-          },
-        ],
       },
     ],
   },

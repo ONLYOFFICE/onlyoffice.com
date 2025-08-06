@@ -85,7 +85,7 @@ const StyledPageDescription = styled(Text)`
 `;
 
 const StyledImage = styled.div`
-  background-image: url(images/templates/accessibility/hero/hero.svg);
+  background-image: url("/images/templates/accessibility/hero/hero.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

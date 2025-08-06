@@ -1,15 +1,10 @@
 import { useTranslation, Trans } from "next-i18next";
-import {
-  ButtonRow,
-  PlatformButton,
-  PlatformIcon,
-  StyledSection,
-  StyledContainer,
-} from "./Download.styled";
+import { ButtonRow, StyledSection, StyledContainer } from "./Download.styled";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
+import { DownloadButton } from "@src/components/ui/DownloadButton";
 
 const Download = () => {
   const { t } = useTranslation("desktop");
@@ -22,17 +17,12 @@ const Download = () => {
         </Heading>
         <ButtonRow>
           {items.map((item, index) => (
-            <PlatformButton
+            <DownloadButton
               key={index}
-              href={item.link}
-              target={item.isExternal ? "_blank" : "_self"}
-            >
-              <PlatformIcon
-                $positionX={item.positionX}
-                $width={item.width || "32px"}
-              />
-              {t(item.title || "")}
-            </PlatformButton>
+              href={item.href}
+              platform={item.platform}
+              variant={item.variant}
+            />
           ))}
         </ButtonRow>
         <Text color="white">
