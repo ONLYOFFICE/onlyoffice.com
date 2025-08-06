@@ -29,8 +29,17 @@ interface ICheckStatus {
   email: "default" | "success" | "error";
 }
 
+type TNavigatorWithUAData = Navigator & {
+  userAgentData?: {
+    platform?: string;
+    brands?: Array<{ brand: string; version: string }>;
+    mobile?: boolean;
+  };
+};
+
 export type {
   ISelectSubjectItems,
   IFormData,
-  ICheckStatus
+  ICheckStatus,
+  TNavigatorWithUAData
 };

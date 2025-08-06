@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
+import { useRouter } from "next/router";
 import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -12,6 +13,7 @@ import { selectItems } from "./data/selectItems";
 import { ICheckStatus, IFormData, ISelectSubjectItems } from "../../SupportContactForm.types";
 import { hasOption } from "../../utils/typeGuards";
 import { validateFullName, validateEmail } from "@src/utils/validators";
+import { getFromParam } from "@src/utils/getParams";
 
 import { StyledSelectInputIcon } from "@src/components/ui/Select/Select.styled";
 import {
@@ -43,9 +45,11 @@ import {
   StyledSelectOptionSub,
   StyledSelectOptionTitle,
 } from "./Hero.styled";
+import { useClientOS } from "../../utils/useClientOs";
 
 const Hero = () => {
   const { t } = useTranslation("support-contact-form");
+  const { locale } = useRouter();
   const [loadStatus, setLoadStatus] = useState<ILoaderButton["status"]>("default");
   const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
     name: "default",
@@ -80,6 +84,8 @@ const Hero = () => {
     email: "",
     hcaptcha: null
   });
+
+  const os = useClientOS();
 
   const handleSubjectChoose = (option: string, value: string) => {
     setFormData((prev) => ({
@@ -162,8 +168,9 @@ const Hero = () => {
   }
 
   const handleOnSubmit = async () => {
-    console.log(formData);
+    console.log("formData", formData);
     setLoadStatus("loading");
+    const from = getFromParam();
 
     try {
       const hCaptchaResponse = await fetch("/api/hcaptcha-verify",
@@ -179,6 +186,37 @@ const Hero = () => {
       if (hCaptchaData.status === "errorHCaptchaInvalid") {
         setLoadStatus("error");
         return;
+      }
+
+      if (hCaptchaData.status === "success") {
+        const responseSupport = await fetch("/api/support-contact-form", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            product: formData.product ?? "",
+            subject: formData.subject ?? "",
+            specifyOfOther: formData.specifyOfOther ?? "",
+            paidLicense: formData.paidLicense ?? null,
+            description: formData.description ?? "",
+            files: formData.files ?? [],
+            name: formData.name ?? "",
+            email: formData.email ?? "",
+            languageCode: locale,
+            from,
+            os,
+          }),
+        });
+
+        const dataSupport = await responseSupport.json();
+
+        console.log("dataSupport", dataSupport);
+
+        if (dataSupport.status === "success") {
+          setLoadStatus("success");
+          return;
+        }
       }
 
     } catch (error) {
