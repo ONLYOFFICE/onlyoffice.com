@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
@@ -25,40 +25,59 @@ const StyledHeroSelectWrapper = styled.div`
 
 const StyledHeroSelect = styled.button<{
   $isSubjectOpen: boolean;
+  $isSelected: boolean;
 }>`
   display: block;
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: ${({ $isSubjectOpen }) => $isSubjectOpen ? "#ffffff" : "#f9f9f9"};
-  border: ${({ $isSubjectOpen }) => $isSubjectOpen ? "1px solid #444444" : "1px solid #AAAAAA"};
+  background-color: ${({ $isSubjectOpen, $isSelected }) => css`
+    ${$isSubjectOpen
+      ? "#ffffff"
+      : $isSelected
+        ? "#f9feef"
+        : "#f9f9f9"
+    };
+  `};
+  border: ${({ $isSubjectOpen, $isSelected }) => css`
+    ${$isSubjectOpen
+      ? "1px solid #444444"
+      : $isSelected
+        ? "1px solid #8bb825"
+        : "1px solid #AAAAAA"
+    };
+  `};
   border-radius: 3px;
   padding: 24px 48px 12px 16px;
   transition: 0.2s;
   cursor: pointer;
 
   &:hover {
-    border: 1px solid #666666;
+    border: ${({ $isSubjectOpen, $isSelected }) => css`
+      ${$isSubjectOpen
+        ? "1px solid #444444"
+        : $isSelected
+          ? "1px solid #8bb825"
+          : "1px solid #444444"
+      };
+    `};
   }
 `;
 
 const StyledHeroSelectLabel = styled(Text)<{
   $isSubjectOpen?: boolean;
+  $isSelected?: boolean;
 }>`
   position: absolute;
   left: 16px;
-  top: ${({ $isSubjectOpen }) => ($isSubjectOpen ? "8px" : "16px")};
-  font-size: ${({ $isSubjectOpen }) => ($isSubjectOpen ? "12px" : "16px")};
-  color: ${({ $isSubjectOpen }) => ($isSubjectOpen ? "#666666" : "#aaaaaa")};
+  top: ${({ $isSubjectOpen, $isSelected }) => ($isSubjectOpen || $isSelected ? "8px" : "16px")};
+  font-size: ${({ $isSubjectOpen, $isSelected }) => ($isSubjectOpen || $isSelected ? "12px" : "16px")};
+  line-height: ${({ $isSubjectOpen, $isSelected }) => ($isSubjectOpen || $isSelected ? "12px" : "24px")};
+  color: ${({ $isSubjectOpen, $isSelected }) => ($isSubjectOpen || $isSelected ? "#666666" : "#aaaaaa")};
   transition: top 0.2s, font-size 0.2s, color 0.2s;
 `;
 
-const StyledHeroSelectText = styled(Text)`
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-`;
+const StyledHeroSelectText = styled(Text)``;
 
 const StyledHeroOptions = styled.div`
   position: absolute;
@@ -76,16 +95,16 @@ const StyledHeroOptions = styled.div`
 `;
 
 const StyledSelectOption = styled.button<{
-  $isSelected?: boolean;
+  $isOptionSelected?: boolean;
 }>`
   position: relative;
   display: block;
   border: none;
   padding: 8px 16px;
   font-size: 16px;
-  font-weight: ${({ $isSelected }) => $isSelected && 600};
+  font-weight: ${({ $isOptionSelected }) => $isOptionSelected && 600};
   line-height: 24px;
-  color: ${({ $isSelected }) => ($isSelected ? "#ff6f3d" : "#444444")};
+  color: ${({ $isOptionSelected }) => ($isOptionSelected ? "#ff6f3d" : "#444444")};
   width: 100%;
   background-color: transparent;
   transition: background-color 0.2s;
@@ -93,6 +112,26 @@ const StyledSelectOption = styled.button<{
 
   &:hover {
     background-color: #f5f5f5;
+  }
+`;
+
+const StyledSelectOptionTitle = styled(StyledSelectOption)`
+  cursor: default;
+
+  &:hover {
+    background-color: transparent;
+  }
+`;
+
+const StyledSelectOptionSub = styled(StyledSelectOption)`
+  padding-left: 32px;
+`;
+
+const StyledSelectOptionNoInclude = styled(StyledSelectOption)`
+  cursor: default;
+
+  &:hover {
+    background-color: transparent;
   }
 `;
 
@@ -267,6 +306,9 @@ export {
   StyledHeroSelect,
   StyledHeroOptions,
   StyledSelectOption,
+  StyledSelectOptionTitle,
+  StyledSelectOptionSub,
+  StyledSelectOptionNoInclude,
   StyledHeroSelectLabel,
   StyledHeroSelectText,
   StyledHeroPaidLicense,

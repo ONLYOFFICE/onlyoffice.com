@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -37,7 +37,10 @@ import {
   StyledHeroUploadList,
   StyledHeroUploadText,
   StyledHeroUploadWrapper,
-  StyledSelectOption
+  StyledSelectOption,
+  StyledSelectOptionNoInclude,
+  StyledSelectOptionSub,
+  StyledSelectOptionTitle,
 } from "./Hero.styled";
 
 const Hero = () => {
@@ -80,6 +83,11 @@ const Hero = () => {
     setIsSubjectOpen(false);
   };
 
+  useEffect(() => {
+    setIsSubjectOpen(false);
+    setSelectedSubjectOption("");
+  }, [selectedProduct])
+
   const addFile = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files) {
       const newFiles = Array.from(event.target.files);
@@ -96,8 +104,6 @@ const Hero = () => {
       files: prev.files?.filter((stateFile) => stateFile !== file)
     }));
   };
-
-  console.log(formData.subject);
 
   return (
     <Section>
@@ -126,11 +132,13 @@ const Hero = () => {
               type="button"
               onClick={() => setIsSubjectOpen((prev) => !prev)}
               $isSubjectOpen={isSubjectOpen}
+              $isSelected={selectedSubjectOption.length > 0}
             >
               <StyledHeroSelectLabel
                 label={t("Subject")}
                 color="#aaaaaa"
                 $isSubjectOpen={isSubjectOpen}
+                $isSelected={selectedSubjectOption.length > 0}
               />
               <StyledHeroSelectText label={selectedSubjectOption} />
               <StyledSelectInputIcon
@@ -144,45 +152,57 @@ const Hero = () => {
               <StyledHeroOptions>
                 {selectedSubject?.data ? (
                   selectedSubject.data.map((item) => (
-                    <>
+                    <React.Fragment key={item.value}>
                       {hasOption(item) && (
                         <StyledSelectOption
-                          key={item.value}
                           type="button"
                           onClick={() => handleSubjectChoose(item.option, item.value)}
+                          $isOptionSelected={item.value === formData.subject}
                         >
                           {item.option}
                         </StyledSelectOption>
                       )}
                       {item.title && (
-                        <StyledSelectOption
-                          key={item.value}
+                        <StyledSelectOptionTitle
                           type="button"
                         >
-                          {"title" + item.title}
-                        </StyledSelectOption>
+                          {item.title}
+                        </StyledSelectOptionTitle>
                       )}
                       {item?.subData && (
                         item.subData.map((subItem) => (
-                          <StyledSelectOption
+                          <StyledSelectOptionSub
                             key={subItem.value}
                             type="button"
                             onClick={() => handleSubjectChoose(subItem.option, subItem.value)}
+                            $isOptionSelected={subItem.value === formData.subject}
                           >
-                            {"sub option" + subItem.option}
-                          </StyledSelectOption>
+                            {subItem.option}
+                          </StyledSelectOptionSub>
                         ))
                       )}
-                    </>
+                    </React.Fragment>
                   ))
                 ) : (
-                  <StyledSelectOption type="button">
+                  <StyledSelectOptionNoInclude type="button">
                     {t("ProductIsNotSelected")}
-                  </StyledSelectOption>
+                  </StyledSelectOptionNoInclude>
                 )}
               </StyledHeroOptions>
             )}
           </StyledHeroSelectWrapper>
+          {(formData.subject === "Other"
+            || formData.subject === "Functionality: Other"
+            || formData.subject === "Online Editors: Other"
+            || formData.subject === "Collaboration platform: Other")
+            && (
+            <Input
+              label={t("PleaseSpecify")}
+              value={formData.specifyOfOther}
+              onChange={(event) => {setFormData((prev) => ({ ...prev, specifyOfOther: event.target.value }))}}
+              status={formData.specifyOfOther.length > 0 ? "success" : "default"}
+            />
+          )}
           <StyledHeroPaidLicense>
             <StyledHeroPaidLicenseText label={t("PaidLicense")} color="#666666" />
             <StyledHeroRadioInput
@@ -236,9 +256,9 @@ const Hero = () => {
 
             {formData.files?.length > 0 && (
               <StyledHeroUploadList>
-                {formData.files.map((file, index) => (
+                {formData.files.map((file) => (
                   <StyledHeroUploadItem
-                    key={index}
+                    key={`${file.name}-${file.lastModified}`}
                   >
                     <StyledHeroUploadItemText
                       size={4}

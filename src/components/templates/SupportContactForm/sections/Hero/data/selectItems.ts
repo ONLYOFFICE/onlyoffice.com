@@ -5,8 +5,8 @@ const selectItems: ISelectSubjectItems[] = [
     option: "Cloud Service",
     value: "Cloud Service",
     data: [
-      { option: "Presale", value: "presale"},
-      { option: "Upgrade\\Refund", value: "Upgrade\\Refund" },
+      { option: "Presale", value: "Presale"},
+      { option: "Upgrade\\Refund", value: "Upgrade/Refund" },
       {
         title: "Functionality",
         value: "Functionality",
@@ -14,7 +14,7 @@ const selectItems: ISelectSubjectItems[] = [
           { option: "Documents", value: "Documents" },
           { option: "CRM", value: "CRM" },
           { option: "Projects", value: "Projects", },
-          { option: "Other", value: "Other" },
+          { option: "Other", value: "Functionality: Other" },
         ]
       },
       { option: "GDPR", value: "GDPR" },
