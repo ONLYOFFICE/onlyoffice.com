@@ -1,0 +1,1 @@
+export { TechnologyPartnersTemplate } from "./TechnologyPartners"

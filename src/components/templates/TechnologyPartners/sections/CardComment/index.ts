@@ -1,0 +1,1 @@
+export { CardComment } from "./CardComment";
