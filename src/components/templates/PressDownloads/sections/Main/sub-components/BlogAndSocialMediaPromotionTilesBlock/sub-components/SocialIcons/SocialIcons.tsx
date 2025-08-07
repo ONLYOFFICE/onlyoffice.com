@@ -1,5 +1,4 @@
 import { useTranslation } from "next-i18next";
-import { useState } from "react";
 import {
   StyledSocialIcons,
   StyledSocialIcon,

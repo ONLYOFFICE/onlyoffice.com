@@ -1,4 +1,3 @@
-import { Select } from "@src/components/ui/Select";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
