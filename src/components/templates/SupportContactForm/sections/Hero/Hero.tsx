@@ -311,7 +311,7 @@ const Hero = () => {
                 $isSubjectOpen={isSubjectOpen}
                 $isSelected={selectedSubjectOption.length > 0}
               />
-              <StyledHeroSelectText 
+              <StyledHeroSelectText
                 label={selectedSubjectOption}
                 size={2}
                 color="#333333"
