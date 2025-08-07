@@ -311,7 +311,11 @@ const Hero = () => {
                 $isSubjectOpen={isSubjectOpen}
                 $isSelected={selectedSubjectOption.length > 0}
               />
-              <StyledHeroSelectText label={selectedSubjectOption} />
+              <StyledHeroSelectText 
+                label={selectedSubjectOption}
+                size={2}
+                color="#333333"
+              />
               <StyledSelectInputIcon
                 $isOpen={isSubjectOpen}
                 $selected={selectedSubject?.data ? selectedSubject.data.length > 0 : false}

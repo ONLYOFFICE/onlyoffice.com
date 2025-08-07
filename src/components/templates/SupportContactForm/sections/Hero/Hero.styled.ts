@@ -1,14 +1,23 @@
 import styled, { css } from "styled-components";
+import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { ICheckStatus } from "../../SupportContactForm.types";
 
 const StyledHeroHeading = styled(Heading)`
   margin-bottom: 40px;
+
+  @media ${device.mobile} {
+    margin-bottom: 16px;
+  }
 `;
 
 const StyledHeroText = styled(Text)`
   margin-bottom: 40px;
+
+  @media ${device.mobile} {
+    margin-bottom: 16px;
+  }
 `;
 
 const StyledHeroForm = styled.form`
@@ -17,11 +26,19 @@ const StyledHeroForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media ${device.mobile} {
+    gap: 24px;
+  }
 `;
 
 const StyledHeroSelectWrapper = styled.div`
   height: 56px;
   position: relative;
+
+  @media ${device.mobile} {
+    height: 48px;
+  }
 `;
 
 const StyledHeroSelect = styled.button<{
@@ -53,6 +70,10 @@ const StyledHeroSelect = styled.button<{
   transition: 0.2s;
   cursor: pointer;
 
+  @media ${device.mobile} {
+    padding: 24px 48px 8px 12px;
+  }
+
   &:hover {
     border: ${({ $isSubjectOpen, $isSelected }) => css`
       ${$isSubjectOpen
@@ -76,9 +97,20 @@ const StyledHeroSelectLabel = styled(Text)<{
   line-height: ${({ $isSubjectOpen, $isSelected }) => ($isSubjectOpen || $isSelected ? "12px" : "24px")};
   color: ${({ $isSubjectOpen, $isSelected }) => ($isSubjectOpen || $isSelected ? "#666666" : "#aaaaaa")};
   transition: top 0.2s, font-size 0.2s, color 0.2s;
+
+  @media ${device.mobile} {
+    left: 12px;
+    top: ${({ $isSubjectOpen, $isSelected }) => ($isSubjectOpen || $isSelected ? "8px" : "11px")};
+    font-size: ${({ $isSubjectOpen, $isSelected }) => ($isSubjectOpen || $isSelected ? "11px" : "14px")};
+    line-height: ${({ $isSubjectOpen, $isSelected }) => ($isSubjectOpen || $isSelected ? "11px" : "21px")};
+  }
 `;
 
-const StyledHeroSelectText = styled(Text)``;
+const StyledHeroSelectText = styled(Text)`
+  @media ${device.mobile} {
+    line-height: 16px;
+  }
+`;
 
 const StyledHeroOptions = styled.div`
   position: absolute;
@@ -111,6 +143,10 @@ const StyledSelectOption = styled.button<{
   transition: background-color 0.2s;
   cursor: pointer;
 
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
+
   &:hover {
     background-color: #f5f5f5;
   }
@@ -126,10 +162,18 @@ const StyledSelectOptionTitle = styled(StyledSelectOption)`
 
 const StyledSelectOptionSub = styled(StyledSelectOption)`
   padding-left: 32px;
+
+  @media ${device.mobile} {
+    font-size: 13px;
+  }
 `;
 
 const StyledSelectOptionNoInclude = styled(StyledSelectOption)`
   cursor: default;
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
 
   &:hover {
     background-color: transparent;
@@ -142,6 +186,12 @@ const StyledHeroPaidLicense = styled.div`
   padding: 16px;
   display: flex;
   align-items: center;
+
+  @media ${device.mobile} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8px;
+  }
 `;
 
 const StyledHeroPaidLicenseText = styled(Text)`
@@ -151,6 +201,11 @@ const StyledHeroPaidLicenseText = styled(Text)`
   flex-basis: 30%;
   flex-shrink: 1;
   padding-right: 25px;
+
+  @media ${device.mobile} {
+    grid-column: 1 / 3;
+    font-size: 13px;
+  }
 `;
 
 const StyledHeroRadioInput = styled.input`
@@ -165,6 +220,10 @@ const StyledHeroRadioLabel = styled.label`
   flex-shrink: 1;
   flex-grow: 0;
   cursor: pointer;
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
 
   &::before {
     content: "";
@@ -219,6 +278,15 @@ const StyledHeroUploadLabel = styled.label<{
 }>`
   margin-left: 60px;
   cursor: pointer;
+
+  @media ${device.mobile} {
+    font-size: 13px;
+  }
+
+  @media ${device.mobileS} {
+    display: flex;
+    align-items: center;
+  }
 
   &::before {
     content: "";
@@ -318,12 +386,20 @@ const StyledHeroUploadList = styled.ul`
   flex-direction: column;
   gap: 4px;
   margin-top: 45px;
+
+  @media ${device.mobile} {
+    margin-top: 35px;
+  }
 `;
 
 const StyledHeroUploadItemText = styled(Text)``;
 
 const StyledHeroUploadItemTextError = styled(Text)`
   margin-top: 20px;
+
+  @media ${device.mobile} {
+    font-size: 11px;
+  }
 `;
 
 const StyledHeroUploadItemRemove = styled.button`
@@ -371,10 +447,18 @@ const StyledHeroUploadItem = styled.li`
 const StyledHeroHCaptchaWrapper = styled.div`
   display: flex;
   gap: 16px;
+
+  @media ${device.mobile} {
+    flex-direction: column;
+  }
 `;
 
 const StyledHeroAgreeText = styled(Text)`
   font-size: 12px;
+
+  @media ${device.mobile} {
+    margin-bottom: 12px;
+  }
 `;
 
 export {
