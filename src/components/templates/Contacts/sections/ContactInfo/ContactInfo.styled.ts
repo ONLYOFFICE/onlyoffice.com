@@ -7,9 +7,11 @@ import { Container } from "@src/components/ui/Container";
 const StyledSection = styled(Section)`
   position: relative;
   top: -290px;
+  margin-bottom: -178px;
 
   @media ${device.mobile} {
     top: -305px;
+    margin-bottom: -241px;
   }
 `;
 

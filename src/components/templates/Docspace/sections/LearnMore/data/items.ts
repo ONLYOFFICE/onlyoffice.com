@@ -8,7 +8,7 @@ export const items: IBlogCard[] = [
     links: [
       {
         href: "YoutubeLink",
-        label: "Watch now",
+        label: "WatchNow",
         isExternal: true,
       },
     ],
@@ -20,7 +20,7 @@ export const items: IBlogCard[] = [
     links: [
       {
         href: "BlogLink",
-        label: "Learn more",
+        label: "LearnMore",
         isExternal: true,
       },
     ],
@@ -32,7 +32,7 @@ export const items: IBlogCard[] = [
     links: [
       {
         href: "HintsLink",
-        label: "Learn more",
+        label: "LearnMore",
         isExternal: true,
       },
     ],

@@ -223,17 +223,15 @@ export const items: IHomeUseFeatureImageItem[] = [
     downloadButtons: [
       {
         href: "https://apps.apple.com/us/app/onlyoffice-documents/id944896972",
-        label: "GetStarted",
+        title: "GetStarted",
         platform: "app-store",
         variant: "secondary",
-        imageSrc: "/images/ui/download-button/app-store.svg",
       },
       {
         href: "https://play.google.com/store/apps/details?id=com.onlyoffice.documents",
-        label: "GetStarted",
+        title: "GetStarted",
         platform: "google-play",
         variant: "secondary",
-        imageSrc: "/images/ui/download-button/google-play.svg",
       },
     ],
     contentWidth: 544,

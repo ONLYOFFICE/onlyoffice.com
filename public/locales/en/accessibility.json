@@ -64,7 +64,7 @@
   "TranslatorImgUrl2x": "/images/templates/accessibility/features/neurodiversity/translator@2x.png",
 
   "SuggestionsTitle": "Any suggestions?",
-  "SuggestionsDescription": "We are constantly working to add new accessibility features to the ONLYOFFICE editors. If you have any ideas, feel free to share them on GitHub or forum.",
+  "SuggestionsDescription": "We are constantly working to add new accessibility features to the ONLYOFFICE editors. If you have any ideas, feel free to share them on <0>GitHub</0> or <1>forum</1>.",
   "GithubButtonLabel": "GitHub",
   "ForumButtonLabel": "Forum",
   "LearnMore": "Learn more"

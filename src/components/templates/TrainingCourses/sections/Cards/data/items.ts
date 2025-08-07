@@ -12,7 +12,8 @@ const items: ICardsDataItem[] = [
     hours: "2",
     price: "OnDemand",
     new: true,
-    description: "CardDataDescription21"
+    description: "CardDataDescription21",
+    course: "docs_educational_organizations"
   },
   {
     id: 20,
@@ -25,7 +26,8 @@ const items: ICardsDataItem[] = [
     hours: "Custom",
     price: "OnDemand",
     new: true,
-    description: "CardDataDescription20"
+    description: "CardDataDescription20",
+    course: "custom_techfocused_training"
   },
   {
     id: 19,
@@ -38,7 +40,8 @@ const items: ICardsDataItem[] = [
     hours: "1,5",
     price: "OnDemand",
     new: true,
-    description: "CardDataDescription19"
+    description: "CardDataDescription19",
+    course: "editing_documents_docspace"
   },
   {
     id: 18,
@@ -51,7 +54,8 @@ const items: ICardsDataItem[] = [
     hours: "1",
     price: "OnDemand",
     new: true,
-    description: "CardDataDescription18"
+    description: "CardDataDescription18",
+    course: "administrating_docspace"
   },
   {
     id: 17,
@@ -64,7 +68,8 @@ const items: ICardsDataItem[] = [
     hours: "1,5",
     price: "OnDemand",
     new: true,
-    description: "CardDataDescription17"
+    description: "CardDataDescription17",
+    course: "working_with_docs_in_wordpress"
   },
   {
     id: 16,
@@ -77,7 +82,8 @@ const items: ICardsDataItem[] = [
     hours: "1,5",
     price: "OnDemand",
     new: true,
-    description: "CardDataDescription16"
+    description: "CardDataDescription16",
+    course: "integration_wordpress"
   },
   {
     id: 15,
@@ -90,7 +96,8 @@ const items: ICardsDataItem[] = [
     hours: "1,5",
     price: "OnDemand",
     new: true,
-    description: "CardDataDescription15"
+    description: "CardDataDescription15",
+    course: "working_with_docs_in_nextcloud"
   },
   {
     id: 14,
@@ -103,7 +110,8 @@ const items: ICardsDataItem[] = [
     hours: "1,5",
     price: "OnDemand",
     new: true,
-    description: "CardDataDescription14"
+    description: "CardDataDescription14",
+    course: "integration_nextcloud"
   },
   {
     id: 13,
@@ -115,7 +123,8 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1,5",
     price: "OnDemand",
-    description: "CardDataDescription13"
+    description: "CardDataDescription13",
+    course: "working_with_forms_package"
   },
   {
     id: 12,
@@ -127,7 +136,8 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1,5",
     price: "OnDemand",
-    description: "CardDataDescription12"
+    description: "CardDataDescription12",
+    course: "forms_package"
   },
   {
     id: 11,
@@ -139,7 +149,8 @@ const items: ICardsDataItem[] = [
     sessions: "Custom",
     hours: "Custom",
     price: "OnDemand",
-    description: "CardDataDescription11"
+    description: "CardDataDescription11",
+    course: "custom_package"
   },
   {
     id: 10,
@@ -151,7 +162,8 @@ const items: ICardsDataItem[] = [
     sessions: "7",
     hours: "9",
     price: "OnDemand",
-    description: "CardDataDescription10"
+    description: "CardDataDescription10",
+    course: "vip_package"
   },
   {
     id: 9,
@@ -163,7 +175,8 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1",
     price: "OnDemand",
-    description: "CardDataDescription9"
+    description: "CardDataDescription9",
+    course: "administrating_the_portal"
   },
   {
     id: 8,
@@ -175,7 +188,8 @@ const items: ICardsDataItem[] = [
     sessions: "2",
     hours: "2",
     price: "OnDemand",
-    description: "CardDataDescription8"
+    description: "CardDataDescription8",
+    course: "working_in_a_team"
   },
   {
     id: 7,
@@ -187,7 +201,8 @@ const items: ICardsDataItem[] = [
     sessions: "2",
     hours: "2,5",
     price: "OnDemand",
-    description: "CardDataDescription7"
+    description: "CardDataDescription7",
+    course: "working_with_customers"
   },
   {
     id: 6,
@@ -199,7 +214,8 @@ const items: ICardsDataItem[] = [
     sessions: "3",
     hours: "4,5",
     price: "OnDemand",
-    description: "CardDataDescription6"
+    description: "CardDataDescription6",
+    course: "office_suite"
   },
   {
     id: 5,
@@ -211,7 +227,8 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1",
     price: "OnDemand",
-    description: "CardDataDescription5"
+    description: "CardDataDescription5",
+    course: "people_chat_community"
   },
   {
     id: 4,
@@ -223,7 +240,8 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1,5",
     price: "OnDemand",
-    description: "CardDataDescription4"
+    description: "CardDataDescription4",
+    course: "mail_calendar"
   },
   {
     id: 3,
@@ -235,7 +253,8 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1",
     price: "OnDemand",
-    description: "CardDataDescription3"
+    description: "CardDataDescription3",
+    course: "crm"
   },
   {
     id: 2,
@@ -247,7 +266,8 @@ const items: ICardsDataItem[] = [
     sessions: "1",
     hours: "1",
     price: "OnDemand",
-    description: "CardDataDescription2"
+    description: "CardDataDescription2",
+    course: "projects"
   },
   {
     id: 1,
@@ -259,7 +279,8 @@ const items: ICardsDataItem[] = [
     sessions: "3",
     hours: "4,5",
     price: "OnDemand",
-    description: "CardDataDescription1"
+    description: "CardDataDescription1",
+    course: "documents"
   }
 ]
 

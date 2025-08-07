@@ -95,8 +95,8 @@ export default async function handler(
     const transporter = emailTransporter();
     const to =
       table_name === "desktop_uninstalled_request"
-        ? process.env.DESKTOP_UNINSTALLED_NOTIFICATION_EMAIL
-        : process.env.INSTALL_CANCELED_NOTIFICATION_EMAIL;
+        ? [process.env.FEEDBACK_EMAIL!]
+        : [process.env.FEEDBACK_EMAIL!, process.env.SUPPORT_EMAIL!];
 
     await transporter.sendMail({
       from: process.env.SALES_EMAIL!,

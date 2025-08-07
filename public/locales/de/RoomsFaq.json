@@ -1,9 +1,9 @@
 {
-  "GetAnswersToTheMostPopularQuestions": "Häufig gestellte Fragen",
+  "GetAnswersToTheMostPopularQuestions": "Häufig gestellte Fragen (FAQ)",
   "HowMuchIsDocSpacePerMonth": "Wie viel kostet DocSpace pro Monat?",
-  "ONLYOFFICEDocSpacePrice": "ONLYOFFICE DocSpace kostet ab 20 $ pro Administrator pro Monat. Erfahren Sie mehr über DocSpace <0>Preise und Pläne</0>.",
+  "ONLYOFFICEDocSpacePrice": "ONLYOFFICE DocSpace kostet ab €20 pro Administrator pro Monat. Erfahren Sie mehr über DocSpace <0>Preis und Pläne</0>.",
   "IsThereASelfHostedVersion": "Gibt es eine selbstgehostete Version von ONLYOFFICE DocSpace?",
   "SelfHostedVersion": "Ja, Sie können es <0>hier</0> herunterladen.",
   "WhatIsTheTechnologyStack": "Was ist der Technologie-Stack von ONLYOFFICE DocSpace?",
-  "TheTechnologyStack": "Backend: С# 9.0, .NET 5.0/.NET Core/ASP.NET Core/MySQL 8.0/Kafka/ElasticSearch <br /> Frontend: ES6, CSS/SASS, React, Mobx, Styled-Components, i18next, Webpack 4/5"
+  "TheTechnologyStack": "Back-end: С# 9.0, .NET 5.0/.NET Core/ASP.NET Core/MySQL 8.0/Kafka/ElasticSearch <br /> Front-end: ES6, CSS/SASS, React, Mobx, Styled-Components, i18next, Webpack 4/5"
 }

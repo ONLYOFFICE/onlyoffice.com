@@ -1,0 +1,35 @@
+{
+    "PageTitle": "Android用の無料タスク管理アプリ | ONLYOFFICE",
+    "PageDescription": "外出先でチームの作業を管理する。 Androidデバイスからどこでもプロジェクトを管理する。",
+
+    "ONLYOFFICEProjects": "<0>ONLYOFFICEプロジェクト、</0>Android用の無料タスク管理アプリ",
+    "PocketProject": "ポケットサイズのプロジェクト管理ツール",
+    "HeroImgUrl": "/images/templates/projects-for-android/hero/ja/googleplay.png",
+
+    "ManageYourTeam": "外出先でチームの作業を管理できる",
+    "TrackCurrentWorkload": "現在のワークロードを追跡",
+    "QuicklyBrowseSortAndFilter": "既存のプロジェクトとタスクをすばやく参照、並べ替え、フィルタし、編集し、ステータスや担当者や期日を変更できます。各プロジェクトに添付されている作業ドキュメントにアクセスできます。",
+    "ManageNewProjects": "新しいプロジェクトを管理",
+    "CreateNewProjects": "新しいプロジェクトとタスクを作成し、担当者を割り当てます。優先順位を設定し、サブタスクを追加できます。タスクとマイルストーンをリンクして、作業を計画できます。",
+    "Communicate": "議論とコメント",
+    "StartProjectDiscussions": "アイデア、問題解決、質問、発表を共同で検討するためのプロジェクトディスカッションを開始できます。コメントを追加して会話に参加できます。",
+    "KeepYourProjectsSafe": "プロジェクトを安全に保つ",
+    "MakeSureNoUnauthorized": "許可されていないユーザーがプロジェクトにアクセスできないようにすることが可能です。コードでアプリを保護するか、2FAを有効にするか、指紋を使用してアプリへのアクセスを許可できます。",
+    "WorkComfortably": "快適に作業",
+    "EnjoyAnIntuitiveInterface": "直感的なインターフェースを楽しんで、すべてのプロジェクトとタスクを簡単に管理できます。ダークモードに切り替えることで、照明が不十分な環境で視力を保護できます。",
+
+    "HowToStart": "開始方法",
+    "CreateYourONLYOFFICEWorkspace": "<0>1.</0> <1>ONLYOFFICE Workspace</1> アカウントをお持ちでない場合は、作成してください。",
+    "LaunchInTheCloud": "クラウドで起動する",
+    "RunOnYourOwnServer": "か、独自のサーバーで実行してください。",
+    "ConnectTheApp": "<0>2.</0> アプリをONLYOFFICE Workspaceポータルに接続してください。",
+    "CreateAndTrack": "<0>3.</0> 外出先でプロジェクトとタスクを作成および追跡できるようになりました。",
+
+    "YourBenefits": "利点",
+    "QuickAccessToYourWorkflows": "ONLYOFFICEでワークフローにすばやくアクセス",
+    "CleanAndIntuitiveUI": "簡単で直感的なUI",
+    "NoAds": "広告なし、アプリ内購入なし",
+    "RegularUpdates": "定期的な更新",
+    "TechnicalSupport": "技術サポート",
+    "OnlineDocumentation": "オンラインドキュメント"
+}
