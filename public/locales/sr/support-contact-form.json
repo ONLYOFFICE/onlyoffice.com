@@ -1,0 +1,23 @@
+{
+  "PageTitle": "Obrazac za kontakt podršku | ONLYOFFICE",
+  "PageDescription": "Detaljno opišite svoj problem, to će pomoći našim stručnjacima da reše vaš problem što je pre moguće.",
+  "SupportContactForm": "Obrazac za kontakt podršku",
+  "DescribeYourProblem": "Opišite svoj problem, to će pomoći našim stručnjacima da što pre reše vaš problem.",
+  "Subject": "Predmet",
+  "ProductIsNotSelected": "Proizvod nije izabran",
+  "PleaseSpecify": "Navedite ...",
+  "PaidLicense": "Plaćena licenca:",
+  "Yes": "Da",
+  "No": "Ne",
+  "AttachFileOrScreenshоts": "Priložite datoteku ili screenshots <0>( maks. 5 MB )</0>",
+  "FileSizeExceeded": "Veličina datoteke premašena:",
+  "NameIsEmpty": "Ime je prazno",
+  "NameIsIncorrect": "Name is incorrect",
+  "EmailIsEmpty": "Email is empty",
+  "EmailIsIncorrect": "Email is incorrect",
+  "ByClickingSubmit": "Klikom na Pošalji, razumete i slažete se sa našom <0>SLA</0> i <1>Izjavom o privatnosti</1>.",
+  "Submit": "Submit",
+  "PleaseWait": "Molimo vas sačekajte...",
+  "YourRequestHasBeenSentSuccessfully": "Vaš zahtev je uspešno poslat",
+  "WeAreSorryButAnErrorOccurred": "Žao nam je, ali došlo je do greške, pokušajte ponovo kasnije"
+}

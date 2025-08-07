@@ -1,0 +1,23 @@
+{
+  "PageTitle": "Formulário de contato do suporte | ONLYOFFICE",
+  "PageDescription": "Descreva o seu problema em detalhes, isso ajudará nossos especialistas a encontrar uma solução o mais rápido possível.",
+  "SupportContactForm": "Formulário para suporte técnico",
+  "DescribeYourProblem": "Descreva seu problema. Isso ajudará nossos especialistas a resolvê-lo o mais rápido possível",
+  "Subject": "Assunto",
+  "ProductIsNotSelected": "Produto não está selecionado",
+  "PleaseSpecify": "Por favor especifique ...",
+  "PaidLicense": "Licença paga:",
+  "Yes": "sim",
+  "No": "não",
+  "AttachFileOrScreenshоts": "Anexar arquivo ou captura de tela <0>(max. 5 Мb)</0>",
+  "FileSizeExceeded": "Tamanho do arquivo excedido: ",
+  "NameIsEmpty": "Nome está vazio",
+  "NameIsIncorrect": "Nome está incorreto",
+  "EmailIsEmpty": "E-mail está vazio",
+  "EmailIsIncorrect": "E-mail está incorreto",
+  "ByClickingSubmit": "Ao clicar em Enviar, você entende e concorda com nosso <0>SLA</0> e <1>declaração de privacidade</1>.",
+  "Submit": "Enviar",
+  "PleaseWait": "Aguarde...",
+  "YourRequestHasBeenSentSuccessfully": "Sua solicitação foi enviada com sucesso",
+  "WeAreSorryButAnErrorOccurred": "Um erro ocorreu, tente novamente mais tarde"
+}

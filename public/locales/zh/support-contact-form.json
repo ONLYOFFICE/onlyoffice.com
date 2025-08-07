@@ -1,0 +1,23 @@
+{
+  "PageTitle": "支持服务联系表单 | ONLYOFFICE",
+  "PageDescription": "描述您的问题，这将有助于我们的专家尽快为您解决问题",
+  "SupportContactForm": "支持服务联系表单",
+  "DescribeYourProblem": "描述您的问题，这将有助于我们的专家尽快为您解决问题",
+  "Subject": "主题",
+  "ProductIsNotSelected": "未选择产品",
+  "PleaseSpecify": "请详细描述…",
+  "PaidLicense": "付费许可：",
+  "Yes": "是",
+  "No": "否",
+  "AttachFileOrScreenshоts": "附加文件或屏幕截图<0>（最大 5MB）</0>",
+  "FileSizeExceeded": "文件大小超出限制： ",
+  "NameIsEmpty": "名称为空",
+  "NameIsIncorrect": "名错误",
+  "EmailIsEmpty": "电子邮箱为空",
+  "EmailIsIncorrect": "电子邮箱错误",
+  "ByClickingSubmit": "点击“提交”即表示您了解并同意我们的 <0>SLA</0>以及<1>隐私声明</1>。",
+  "Submit": "提交",
+  "PleaseWait": "请稍候...",
+  "YourRequestHasBeenSentSuccessfully": "您的请求已成功发送！",
+  "WeAreSorryButAnErrorOccurred": "很抱歉，发生错误，请稍后重试"
+}
