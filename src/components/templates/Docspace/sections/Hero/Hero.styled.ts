@@ -42,11 +42,14 @@ const StyledContainer = styled(Container)`
   }
 `;
 
-const StyledHeading = styled(Heading)`
+const StyledHeading = styled(Heading)<{ $locale?: string }>`
   line-height: 1.33em;
   text-align: left;
   padding: 0 0 32px;
-  max-width: 950px;
+  max-width: ${({ $locale }) =>
+    $locale === "de" || $locale === "it" || $locale === "ru" || $locale === "sr"
+      ? "100%"
+      : "950px"};
 
   @media ${device.tablet} {
     display: none;
@@ -77,7 +80,6 @@ const StyledWrapper = styled.div`
 const StyledAccountContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex-shrink: 0;
   max-width: 396px;
   text-align: left;
