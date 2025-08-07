@@ -140,11 +140,17 @@ const StyledHeroPaidLicense = styled.div`
   background-color: #F9F9F9;
   border-radius: 3px;
   padding: 16px;
+  display: flex;
+  align-items: center;
 `;
 
 const StyledHeroPaidLicenseText = styled(Text)`
   display: inline-block;
-  width: 30%;
+  width: fit-content;
+  white-space: nowrap;
+  flex-basis: 30%;
+  flex-shrink: 1;
+  padding-right: 25px;
 `;
 
 const StyledHeroRadioInput = styled.input`
@@ -153,9 +159,11 @@ const StyledHeroRadioInput = styled.input`
 
 const StyledHeroRadioLabel = styled.label`
   display: inline-block;
-  width: 30%;
   padding-left: 38px;
   position: relative;
+  flex-basis: 30%;
+  flex-shrink: 1;
+  flex-grow: 0;
   cursor: pointer;
 
   &::before {
