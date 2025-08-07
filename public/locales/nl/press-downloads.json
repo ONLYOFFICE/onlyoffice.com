@@ -1,0 +1,56 @@
+{
+  "PageTitle": "ONLYOFFICE media assets | ONLYOFFICE",
+  "PageDescription": "Download ONLYOFFICE media assets: logo's, screenshots, video's en meer.",
+
+  "HeroTitle": "Pers downloads",
+  "HeroDescription": "Download ONLYOFFICE-mediabestanden, inclusief logo's en afbeeldingen.",
+
+  "Description": "Beschrijving",
+  "Logo": "Logo",
+  "Screenshots": "Screenshots",
+  "Videos": "Videos",
+  "BlogAndSocialMedia": "Blog en social media promotietegels",
+
+  "DescriptionTitle": "ONLYOFFICE-beschrijving",
+  "DescriptionText": "ONLYOFFICE, an open-source office software project, focuses on advanced and secure office solutions. With over 15 million users worldwide, it is recognized for its innovation in the online office domain. The ONLYOFFICE ecosystem includes collaborative applications such as online editors for text documents, spreadsheets, presentations, forms, and PDFs, along with a room-based collaborative platform. <br/><br/>As an international company, ONLYOFFICE has employees and contributors across the globe, with offices located in Singapore, Dallas, Riga, London, Belgrade, Yerevan, Tashkent, and Shanghai. ",
+  "CopyToClipboard": "Kopiëren naar klembord",
+  "SuccessCopy": "De tekst is gekopieerd naar het klembord",
+
+  "LogoTitle": "ONLYOFFICE logo",
+  "LogoDefault": "Logo standaard",
+  "LogoCenter": "Logo gecentreerd",
+  "Symbol": "Symbool",
+  "LogoDefaultDark": "Logo donker",
+  "LogoCenterDark": "Logo gecentreerd donker",
+  "SymbolDark": "Symbool donker",
+  "LogoWhite": "Logo wit",
+  "LogoCenterWhite": "Logo gecentreerd wit",
+  "SymbolWhite": "Symbool wit",
+
+  "ScreenshotsTitle": "ONLYOFFICE screenshots",
+  "OnlineEditors": "Online editors",
+  "OnlineEditorsText": "(Documenten, speadsheets, presentaties, forms)",
+  "DocSpace": "DocSpace",
+  "DocSpaceText": "(Aanpasbare kamers voor samenwerking tussen documenten)",
+  "Workspace": "Workspace",
+  "WorkspaceText": "(Documentbeheer, Mail, CRM, Projecten, Kalender, Community)",
+  "DesktopApps": "Desktop apps",
+  "DesktopAppsText": "(Documenten, speadsheets, presentaties, forms)",
+  "MobileApps": "Mobiele apps",
+  "MobileAppsText": "(Documenten voor iOS en Android, projecten voor iOS)",
+
+  "VideosTitle": "ONLYOFFICE videos",
+  "MoreVideos": "Meer video's",
+
+  "BlogAndSocialMediaTitle": "ONLYOFFICE blog en social media promotietegels",
+  "OnlineEditorsMacCardTitle": "ONLYOFFICE Online Editors op Mac",
+  "OnlineEditorsCardTitle": "ONLYOFFICE online editors",
+
+  "DontForgetToMention": "Vergeet niet om ONLYOFFICE te vermelden en met ons te delen!",
+  "MediaInquires": "Voor vragen van de media kunt u contact met ons opnemen. We horen graag van u: <0>press@onlyoffice.com</0>",
+  "AllUserInterfaceAssets": "© All user interface assets, including but not limited to icons, illustrations, images, and visual design elements created or incorporated after [date/version], are provided under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license.",
+  "UnderThisLicense": "Under this license, the licensed materials may be used, copied, and shared solely for non-commercial purposes, without any modifications or derivative works, and only with proper attribution to the original creator. Attribution must include the author’s name, a link to the original source, the full name of the license, and a reference to the license text:",
+  "AnyViolation": "Any violation of the license terms automatically terminates your right to use the materials. Continued use after termination constitutes unauthorized use and may result in legal action.",
+  "RequestPermission": "To request permission for uses not covered by this license, including commercial use or modifications, please contact us at: reply@onlyoffice.com.",
+  "ByUsingTheseMaterials": "By using these materials, you acknowledge that you have read, understood, and agree to be bound by the terms of the CC BY-NC-ND 4.0 license."
+}
