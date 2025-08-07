@@ -1,4 +1,5 @@
 import styled, { css, keyframes } from "styled-components";
+import { device } from "@src/utils/device";
 import { ILoaderButton } from "./LoaderButton.types";
 
 const loaderAnimation = keyframes`
@@ -11,7 +12,7 @@ const StyledLoaderButton = styled.button<{
   $fullWidth: ILoaderButton["fullWidth"];
   $status: ILoaderButton["status"];
   $size: ILoaderButton["size"];
-  $hasContent: boolean;
+  $variant: ILoaderButton["variant"];
 }>`
   position: relative;
   display: inline-flex;
@@ -29,14 +30,28 @@ const StyledLoaderButton = styled.button<{
   cursor: pointer;
 
   ${(props) =>
-    !props.$hasContent &&
+    props.$variant == "secondary" &&
     props.$status === "default" &&
     css`
+      font-size: 0;
       background-image: url("/images/icons/arrow-right-white.svg");
       background-repeat: no-repeat;
       background-size: 24px;
       background-position: center;
     `}
+
+  ${(props) =>
+    props.$variant == "tertiary" &&
+    props.$status === "default" &&
+    css`
+      @media ${device.mobile} {
+        font-size: 0;
+        background-image: url("/images/icons/arrow-right-white.svg");
+        background-repeat: no-repeat;
+        background-size: 24px;
+        background-position: center;
+      }
+    `}  
 
   ${(props) =>
     props.$size === "small" &&

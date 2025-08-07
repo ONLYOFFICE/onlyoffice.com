@@ -31,7 +31,7 @@ const StyledInputLabel = styled.label<{
         : props.$status === "success"
           ? "#8bb825"
           : props.$status === "error"
-            ? "#cb0000"
+            ? "rgba(203, 0, 0, 0.4)"
             : "#aaaaaa"};
   transition:
     top 0.2s,
@@ -128,6 +128,7 @@ const StyledInputField = styled.input<{
   $label: IInput["label"];
   $leftSide: IInput["leftSide"];
   $rightSide: IInput["rightSide"];
+  $status: IInput["status"];
 }>`
   border: none;
   border-radius: inherit;
@@ -158,7 +159,8 @@ const StyledInputField = styled.input<{
   &::placeholder {
     font-size: 16px;
     line-height: 24px;
-    color: #cccccc;
+    color: ${(props) =>
+      props.$status === "error" ? "rgba(203, 0, 0, 0.4)" : "#ccccccc"};
 
     @media ${device.mobile} {
       font-size: 14px;

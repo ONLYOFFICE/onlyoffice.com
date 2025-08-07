@@ -45,6 +45,10 @@ export default {
       control: { type: "select" },
       options: ["default", "loading", "success", "error"],
     },
+    variant: {
+      control: { type: "select" },
+      options: ["primary", "secondary", "tertiary"],
+    },
     size: {
       control: { type: "select" },
       options: ["small", "medium"],
