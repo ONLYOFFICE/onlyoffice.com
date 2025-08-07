@@ -49,6 +49,7 @@ import {
 } from "./Hero.styled";
 
 const MAX_SIZE = 5 * 1024 * 1024;
+const MAX_FILES = 10;
 
 const Hero = () => {
   const { t } = useTranslation("support-contact-form");
@@ -154,6 +155,18 @@ const Hero = () => {
     const newFiles = Array.from(event.target.files);
 
     const filtered = newFiles.filter(file => {
+      if (formData.files.length >= MAX_FILES) {
+        setCheckStatus((prev) => ({
+          ...prev,
+          file: "error",
+        }));
+
+        setErrorFileName(t("YouCanAttachUp"));
+        resetFileStatus();
+
+        return false;
+      }
+
       if (file.size > MAX_SIZE) {
         setCheckStatus((prev) => ({
           ...prev,
@@ -216,7 +229,6 @@ const Hero = () => {
   }
 
   const handleOnSubmit = async () => {
-    console.log("formData", formData);
     setLoadStatus("loading");
     const from = getFromParam();
 
@@ -237,24 +249,26 @@ const Hero = () => {
       }
 
       if (hCaptchaData.status === "success") {
+
+        const fd = new FormData();
+        fd.append("product", formData.product ?? "");
+        fd.append("subject", formData.subject ?? "");
+        fd.append("specifyOfOther", formData.specifyOfOther ?? "");
+        fd.append("paidLicense", String(formData.paidLicense ?? ""));
+        fd.append("description", formData.description ?? "");
+        fd.append("name", formData.name ?? "");
+        fd.append("email", formData.email ?? "");
+        fd.append("languageCode", String(locale));
+        fd.append("from", String(from));
+        fd.append("os", String(os));
+
+        formData.files.forEach((file) => {
+          fd.append("files", file, file.name);
+        });
+
         const responseSupport = await fetch("/api/support-contact-form", {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            product: formData.product ?? "",
-            subject: formData.subject ?? "",
-            specifyOfOther: formData.specifyOfOther ?? "",
-            paidLicense: formData.paidLicense ?? null,
-            description: formData.description ?? "",
-            files: formData.files ?? [],
-            name: formData.name ?? "",
-            email: formData.email ?? "",
-            languageCode: locale,
-            from,
-            os,
-          }),
+          body: fd,
         });
 
         const dataSupport = await responseSupport.json();
@@ -432,9 +446,9 @@ const Hero = () => {
 
             {formData.files?.length > 0 && (
               <StyledHeroUploadList>
-                {formData.files.map((file) => (
+                {formData.files.map((file, index) => (
                   <StyledHeroUploadItem
-                    key={`${file.name}-${file.lastModified}`}
+                    key={`${file.name}-${file.lastModified}-${index}`}
                   >
                     <StyledHeroUploadItemText
                       size={4}
@@ -452,7 +466,11 @@ const Hero = () => {
             {checkStatus.file === "error" && (
               <StyledHeroUploadItemTextError
                 size={4}
-                label={`${t("FileSizeExceeded")} ${errorFileName}`}
+                label={
+                  errorFileName === t("YouCanAttachUp")
+                    ? t("YouCanAttachUp")
+                    : `${t("FileSizeExceeded")} ${errorFileName}`
+                }
                 color="#CB0000"
               />
             )}

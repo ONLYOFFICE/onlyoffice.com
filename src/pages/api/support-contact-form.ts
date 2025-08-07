@@ -1,4 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { mkdirSync, writeFileSync, readdirSync, readFileSync } from "fs";
+import path from "path";
+import { File as FormidableFile, IncomingForm } from "formidable";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
@@ -20,109 +23,127 @@ interface IAddSupportContactFormData {
   utm_term: string | null;
 }
 
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
+
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse,
+  res: NextApiResponse
 ) {
   if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method Not Allowed"})
+    return res.status(405).json({ status: "error", message: "Method Not Allowed" });
   }
 
-  const {
-    product,
-    subject,
-    specifyOfOther,
-    paidLicense,
-    description,
-    files,
-    name,
-    email,
-    languageCode,
-    from,
-    os,
-  } = req.body;
+  const form = new IncomingForm({ multiples: true, maxFiles: 10, maxFileSize: 5 * 1024 * 1024 });
 
-  try {
-    const errorMessages = [];
+  form.parse(req, async (err, fields, filesRaw) => {
+    if (err) {
+      console.error("Form parsing error:", err);
+      return res.status(400).json({ status: "error", message: "Form parsing failed" });
+    }
+
+    const errorMessages: string[] = [];
     const cookies = parse(req.headers.cookie || "");
 
-    const addSupportContactFormRequest = async () => {
-      try {
-        const addSupportContactForm: IAddSupportContactFormData = {
-          first_name: name,
-          last_name: name,
-          phone: "",
-          company_name: "",
-          email,
-          choice_language: languageCode,
-          fromPage: from,
-          operating_system: os,
-          ip:
-            req.headers["x-forwarded-for"] ||
-            req.socket.remoteAddress ||
-            null,
-          utm_source: cookies.utmSource ?? null,
-          utm_campaign: cookies.utmCampaign ?? null,
-          utm_content: cookies.utmContent ?? null,
-          utm_term: cookies.utmTerm ?? null,
-        }
+    const getField = (value: string | string[] | undefined): string =>
+      Array.isArray(value) ? value[0] : value || "";
 
-        await db.query("INSERT INTO form_registration_request SET ?", [
-          addSupportContactForm,
-        ]);
+    const product = getField(fields.product);
+    const subject = getField(fields.subject);
+    const specifyOfOther = getField(fields.specifyOfOther);
+    const paidLicense = getField(fields.paidLicense);
+    const description = getField(fields.description);
+    const name = getField(fields.name);
+    const email = getField(fields.email);
+    const languageCode = getField(fields.languageCode);
+    const fromPage = getField(fields.from);
+    const os = getField(fields.os);
 
-        return {
-          status: "success",
-          message: "supportContactFormSuccessful",
-        }
-      } catch (error: unknown) {
-        console.error(
-          "Add SupportContactForm api returns errors:",
-          error instanceof Error ? error.message : error,
-        );
-
-        return {
-          status: "error",
-          message: error instanceof Error ? error.message : "Unknown error occurred",
-        }
-      }
+    // Normalize raw files into array
+    const rawFiles = filesRaw.files;
+    const uploadedFiles: FormidableFile[] = [];
+    if (Array.isArray(rawFiles)) {
+      uploadedFiles.push(...rawFiles);
+    } else if (rawFiles) {
+      uploadedFiles.push(rawFiles);
     }
 
-    const addSupportContactFormResult = await addSupportContactFormRequest();
-    if (addSupportContactFormResult.status === "error") {
-      errorMessages.push(
-        `supportContactForm: ${addSupportContactFormResult.message}`,
-      )
-    }
-
-    const transporter = emailTransporter();
-    await transporter.sendMail({
-      from,
-      to: [process.env.SUPPORT_EMAIL!],
-      subject: `${errorMessages.length ? "[Error] " : ""}${email} - SupportContactForm Request ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
-      html: SupportContactFormEmail({
-        firstName: name,
+    try {
+      // Save form data to DB
+      const formRecord: IAddSupportContactFormData = {
+        first_name: name,
+        last_name: name,
+        phone: "",
+        company_name: "",
         email,
-        supProduct: product,
-        supTheme: subject,
-        supOtherTheme: specifyOfOther,
-        paidLicense,
-        comment: description,
-        languageCode,
-        errorText: errorMessages.length ? `[Error]: ${errorMessages.join(", ")}` : "",
-        attachmentFiles: files,
-      })
-    })
+        choice_language: languageCode,
+        fromPage,
+        operating_system: os,
+        ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
+        utm_source: cookies.utmSource ?? null,
+        utm_campaign: cookies.utmCampaign ?? null,
+        utm_content: cookies.utmContent ?? null,
+        utm_term: cookies.utmTerm ?? null,
+      };
+      await db.query("INSERT INTO form_registration_request SET ?", [formRecord]);
+    } catch (dbErr) {
+      console.error("DB insert error:", dbErr);
+      errorMessages.push("supportContactForm DB error");
+    }
 
-    res.status(200).json({
-      status: "success",
-      message: "success",
-    })
-  } catch (error) {
-    console.error("SupportContactForm api returns errors:", error);
-    res.status(500).json({
-      status: "error",
-      message: error
-    });
-  }
+    try {
+      // Prepare uploads directory
+      const baseUploads = path.join(process.cwd(), "public", "uploads");
+      mkdirSync(baseUploads, { recursive: true });
+
+      // Determine next request-N folder
+      const existing = readdirSync(baseUploads)
+        .filter(name => name.startsWith("request-"))
+        .map(name => parseInt(name.split('-')[1] || '0', 10))
+        .filter(n => !isNaN(n));
+      const nextIdx = existing.length ? Math.max(...existing) + 1 : 1;
+      const requestDirName = `request-${nextIdx}`;
+      const requestDir = path.join(baseUploads, requestDirName);
+      mkdirSync(requestDir);
+
+      // Save each uploaded file
+      const attachments = uploadedFiles.map(file => {
+        const fileData = readFileSync(file.filepath);
+        const originalFilename = file.originalFilename ?? file.newFilename
+        const finalName = originalFilename.replace(/ /g, "_");
+        const finalPath = path.join(requestDir, finalName);
+        writeFileSync(finalPath, fileData);
+        return { filename: finalName, path: finalPath };
+      });
+
+      // Send email with attachments
+      const transporter = emailTransporter();
+      await transporter.sendMail({
+        from: email,
+        to: [process.env.SUPPORT_EMAIL!],
+        subject: `${email} - SupportContactForm${errorMessages.length ? ' [Error]' : ''}`,
+        html: SupportContactFormEmail({
+          firstName: name,
+          email,
+          supProduct: product,
+          supTheme: subject,
+          supOtherTheme: specifyOfOther,
+          paidLicense,
+          comment: description,
+          languageCode,
+          errorText: errorMessages.join(', '),
+          attachmentFiles: attachments.map(a => a.filename).join(', '),
+        }),
+        attachments,
+      });
+
+      return res.status(200).json({ status: "success", folder: requestDirName });
+    } catch (err) {
+      console.error("Processing error:", err);
+      return res.status(500).json({ status: "error", message: "Processing failed" });
+    }
+  });
 }
