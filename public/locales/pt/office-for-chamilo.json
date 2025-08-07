@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Pacote office online para Chamilo | ONLYOFFICE Docs",
+  "PageDescription": "Colabore em documentos, planilhas, apresentações e formulários no Chamilo usando o ONLYOFFICE Docs",
+
+  "OnlineOfficeForChamilo": "Office online para Chamilo",
+  "Subheader": "Colabore em documentos, planilhas, apresentações e formulários no Chamilo com o ONLYOFFICE Docs",
+  "GetItNow": "Começar agora",
+  "RequestFreeDemo": "SOLICITAR DEMONSTRAÇÃO GRATUITA",
+  "WorkWithinChamilo": "Trabalhar em documentos de escritório dentro da estrutura do Chamilo",
+  "DocumentsTab1Label": "Visualize e edite documentos de texto, planilhas, apresentações e formulários preenchíveis.",
+  "DocumentsTab2Label": "Compartilhe fornecendo permissões de edição ou somente leitura.",
+  "DocumentsTab3Label": "Seja coautor de documentos em tempo real, acompanhe as alterações e deixe comentários.",
+  "DocumentsTab4Label": "Comunique-se usando ferramentas integradas de bate-papo ou videoconferência, como o Jisti ou o Rainbow.",
+  "MarketplaceConnectorTitle": "Projetado para integração perfeita com o Chamilo",
+  "MarketplaceConnectorDescription": "Obtenha o aplicativo ONLYOFFICE para Chamilo agora no GitHub.",
+  "GetStarted": "Começar agora",
+
+  "WhyOO": "Por que ONLYOFFICE?",
+  "Reason1": "Um conjunto robusto de ferramentas de edição, formatação e estilo. <0>Auxiliar de IA</0> integrado.",
+  "Reason2": "<0>Segurança aprimorada.</0> Direitos de acesso flexíveis e JWT. Código-fonte aberto disponível no GitHub.",
+  "Reason3": "Integração com a solução <0>ONLYOFFICE Docs Cloud</0> sem necessidade de instalação.",
+  "Reason4": "Suporte para mais de <0>50 formatos de arquivo</0>, totalmente compatível com os formatos do MS Office: DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Coedição</0> em tempo real e com bloqueio de parágrafo, revisão, histórico de versões, comparação de documentos, comentários e bate-papo.",
+  "Reason6": "Solução auto-hospedada. Versões empresariais escalonáveis. <0>Teste gratuito de 30 dias.</0> Descontos educacionais.",
+
+  "HowToStart": "Como começar",
+  "HowToStartStep1": "Implante o <0>ONLYOFFICE Docs</0> em seu próprio servidor ou inscreva-se no <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenha o aplicativo de integração do <0>GitHub</0>.",
+  "HowToStartStep3": "Faça o upload do plug-in para o Chamilo.",
+  "HowToStartStep4": "Configure o plug-in especificando o endereço do ONLYOFFICE Docs.",
+  "HowToConnect": "Conectando o ONLYOFFICE Docs ao Chamilo",
+
+  "ReadDetailedInstructions": "Leia instruções detalhadas no <0>GitHub</0> e na <1>Central de Ajuda</1>.",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço Web favorito? Ou você desenvolveu um?"
+}

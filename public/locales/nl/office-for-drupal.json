@@ -1,0 +1,54 @@
+{
+  "PageTitle": "Online Office for Drupal | ONLYOFFICE",
+  "PageDescription": "Work on office files within Drupal",
+
+  "OnlineOfficeForConnector": "Online Office for <0>Drupal</0>",
+  "Subheader": "Work on office files within Drupal",
+  "GetItNow": "Aan de slag",
+  "RequestFreeDemo": "Request free demo",
+
+  "WorkWithinConnector": "ONLYOFFICE <0>DocSpace app</0> for Drupal",
+  "DocumentsScreen1Header": "Embed office documents into your Drupal website",
+  "DocumentsScreen1Tab1Label": "Create, upload and embed docs, sheets, slides, PDFs or to your website.",
+  "DocumentsScreen1Tab2Label": "Embed the entier room into your webpage allowing visitors to view documents right in the browser.",
+  "DocumentsScreen1Tab3Label": "Integrate complex PDF forms for filling them in online. Automatically collect and analyse data.",
+  "DocumentsScreen1Tab4Label": "Prevent downloading, printing and copying documents from your website.",
+  "soon": "soon",
+
+  "DocsAppHeading": "ONLYOFFICE <0>Docs app</0> for Drupal",
+  "DocumentsScreen2Header": "Efficiently manage documents from your Drupal account",
+  "DocumentsScreen2Tab1Label": "Create a secure space for all your docs. Easily access it anytime anywhere.",
+  "DocumentsScreen2Tab2Label": "Organize your personal files and create rooms for your business documents.",
+  "DocumentsScreen2Tab3Label": "Provide flexible access permissions: edit, comment, review, or view only.",
+  "DocumentsScreen2Tab4Label": "Edit and collaborate on documents with other Drupal users online.",
+
+  "MarketplaceConnectorTitle": "Built to work in Drupal seamlessly",
+  "MarketplaceConnectorDescription": "Install ONLYOFFICE DocSpace app for Drupal from the Drupal Marketplace.",
+  "GetStarted": "Aan de slag",
+
+  "DocsAppHeader": "Add office documents to your Drupal pages",
+  "DocsAppTab1Label": "Preview documents on the public pages.",
+  "DocsAppTab2Label": "Edit docs, sheets, slides, forms, and PDFs in the Drupal Media module.",
+  "DocsAppTab3Label": "Collaborate on office files in real time with other Drupal users.",
+
+  "WhyOO": "Why ONLYOFFICE?",
+  "Reason1": "A robust set of editing, formatting, and styling tools. <0>Integrated AI helper</0> (ChatGPT or ZhiPu Copilot).",
+  "Reason2": "<0>Real-time</0> and paragraph-locking co-editing, review, version history, document comparison, comments & mentions.",
+  "Reason3": "<0>Built-in chat</0> and Telegram integration. Jitsi and Rainbow plugins for real-time communication.",
+  "Reason4": "Support for more than <0>50 file formats</0>. Fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Enhanced security.</0> Flexible access rights and JWT. Activity tracking and audit reporting. Encryption at rest and in transit. Open source code.",
+  "Reason6": "<0>Free plan to start.</0> Business plan for more admins, bigger storage, enhanced security and professional support. Self-hosted solution for total control over your data.",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1Docs": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Get the integration app from <0>Drupal Marketplace</0>.",
+  "HowToStartStep3": "Upload and configure the integration app.",
+  "HowToStartStep1Docspace": "Create your free <0>DocSpace account</0>.",
+
+  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?",
+
+  "Docs": "Docs",
+  "DocSpace": "DocSpace"
+}

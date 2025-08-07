@@ -40,7 +40,7 @@ const Hero = () => {
       mobileSpacing={["96px", "43px"]}
     >
       <StyledContainer>
-        <StyledHeading level={1} textAlign="left">
+        <StyledHeading level={1} textAlign="left" $locale={locale}>
           <Trans
             t={t}
             i18nKey={"HeroTitle"}
@@ -72,7 +72,7 @@ const Hero = () => {
 
             <StyledCreateAccountWrapper>
               <Input
-                placeholder="Enter your email"
+                placeholder={t("HeroInputPlaceholder")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />

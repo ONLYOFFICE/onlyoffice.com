@@ -1,0 +1,1 @@
+export { ProjectsForAndroidTemplate } from "./ProjectsForAndroid";

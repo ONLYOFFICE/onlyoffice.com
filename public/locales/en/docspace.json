@@ -3,6 +3,7 @@
 
   "HeroTitle": "<0>ONLYOFFICE DocSpace,</0><1></1> document collaboration made simpler",
   "HeroButton": "Create Free Account",
+  "HeroInputPlaceholder": "Enter your email",
   "HeroItem1": "Easily collaborate with customizable rooms",
   "HeroItem2": "Edit any content you have",
   "HeroItem3": "Work faster using AI assistants",
@@ -102,6 +103,10 @@
   "YoutubeImgUrl": "/images/templates/docspace/learn-more/youtube.png",
   "YoutubeLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
   "BlogLink": "https://www.onlyoffice.com/blog/2024/05/integrating-onlyoffice-docspace-into-a-single-page-application",
-  "HintsLink": "https://www.onlyoffice.com/blog/2023/09/how-to-switch-onlyoffice-docspace-server-to-https"
-
+  "HintsLink": "https://www.onlyoffice.com/blog/2023/09/how-to-switch-onlyoffice-docspace-server-to-https",
+  "YouTube": "YouTube",
+  "Blog": "Blog",
+  "Hints": "Hints",
+  "Diagrams": "Diagrams",
+  "WatchNow": "Watch now"
 }
