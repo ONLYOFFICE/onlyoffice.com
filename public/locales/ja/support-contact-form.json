@@ -10,6 +10,7 @@
   "Yes": "はい",
   "No": "いいえ",
   "AttachFileOrScreenshоts": "ファイルまたはスクリーンショットを添付<0>（最大5Mバイト）</0>",
+  "YouCanAttachUp": "10ファイルまで添付できます",
   "FileSizeExceeded": "ファイルが大きすぎます: ",
   "NameIsEmpty": "名前が空です",
   "NameIsIncorrect": "名前が正しくありません",

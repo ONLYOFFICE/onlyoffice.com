@@ -10,6 +10,7 @@
   "Yes": "да",
   "No": "нет",
   "AttachFileOrScreenshоts": "Прикрепите файл или скриншоты <0>( максимум 5 Мб )</0>",
+  "YouCanAttachUp": "Вы можете прикрепить до 10 файлов",
   "FileSizeExceeded": "Превышен размер файла:",
   "NameIsEmpty": "Имя не указано",
   "NameIsIncorrect": "Поле имя некорректно",

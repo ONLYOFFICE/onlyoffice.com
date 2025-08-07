@@ -10,6 +10,7 @@
   "Yes": "ano",
   "No": "ne",
   "AttachFileOrScreenshоts": "Připojte soubor nebo snímky obrazovky <0>(max. 5 MB)</0>",
+  "YouCanAttachUp": "Můžete připojit až 10 souborů",
   "FileSizeExceeded": "Překročena velikost souboru: ",
   "NameIsEmpty": "Jméno je prázdné",
   "NameIsIncorrect": "Nesprávný pole pro jméno",

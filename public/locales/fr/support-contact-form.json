@@ -10,6 +10,7 @@
   "Yes": "oui",
   "No": "non",
   "AttachFileOrScreenshоts": "Joindre les fichiers ou les captures d’écran <0>( max. 5 Мb )</0>",
+  "YouCanAttachUp": "Vous pouvez ajouter jusqu'à 10 pièces jointes",
   "FileSizeExceeded": "La taille de fichier dépasse la limite maximale :",
   "NameIsEmpty": "Champs Nom est vide",
   "NameIsIncorrect": "Champs Nom est incorrecte",

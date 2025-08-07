@@ -10,6 +10,7 @@
   "Yes": "是",
   "No": "否",
   "AttachFileOrScreenshоts": "附加文件或屏幕截图<0>（最大 5MB）</0>",
+  "YouCanAttachUp": "您最多可以附加 10 个文件",
   "FileSizeExceeded": "文件大小超出限制： ",
   "NameIsEmpty": "名称为空",
   "NameIsIncorrect": "名错误",
