@@ -1,43 +1,33 @@
 {
   "PageTitle": "根据不同目的，在自定义房间中协作",
   "PageDescription": "在 ONLYOFFICE 协作空间中，以自定义的方式进行编辑和协作",
-
   "WorkTogetherAccording": "根据不同目的，在<0>自定义房间</0>中协作",
   "EditAndCollaborate": "在 ONLYOFFICE 协作空间中，以自定义的方式进行编辑和协作",
   "CreateFreeAccount": "免费注册账户",
-
   "HeroImgUrl": "/images/templates/custom-rooms/hero/zh/header_main.png",
   "HeroImgUrl2x": "/images/templates/custom-rooms/hero/zh/header_main@2x.png",
-
   "Tailored": "适合任何场景",
   "Sophisticated": "可设置多种访问权限",
   "CostEfectiveForAnyBudget": "适合各种预算的高性价比方案",
-
   "TailoredDesc": "应用自定义设置，让房间适合任何场景与目的：分享仅供查看的文档、请求文档编辑或审阅、让协作者批注或填写表单。",
   "TailoredImgUrl": "/images/templates/custom-rooms/features/zh/tailored_to_any_scenario.png",
   "TailoredImgUrl2x": "/images/templates/custom-rooms/features/zh/tailored_to_any_scenario@2x.png",
-
   "SophisticatedDesc": "设置多级别的访问权限，让房间访问更灵活",
   "WatchAVideoToLearnMore": "观看视频了解详情",
   "SophisticatedImgUrl": "/images/templates/custom-rooms/features/zh/sophisticated-access-settings.png",
   "SophisticatedImgUrl2x": "/images/templates/custom-rooms/features/zh/sophisticated-access-settings@2x.png",
-
   "CostEfectiveForAnyBudgetDesc": "只需为管理员付费，可免费添加任意数量的普通用户和访客。小型团队可使用免费的初创版本。无论是中小型还是大型企业，ONLYOFFICE 协作空间都很适合。还可以在您的私人服务器上部署 协作空间，完全掌控自己的公司数据。",
   "CostEfectiveForAnyBudgetImgUrl": "/images/templates/custom-rooms/features/zh/cost-effective-for-any-budget.png",
   "CostEfectiveForAnyBudgetImgUrl2x": "/images/templates/custom-rooms/features/zh/cost-effective-for-any-budget@2x.png",
-
   "LearnMoreHeading": "了解更多有关自定义房间的信息",
-
   "HelpCenter": "帮助中心",
   "HelpCenterDesc": "查看详细的用户指南以实现高效的工作",
   "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
   "LearnMore": "了解详情",
-
   "YouTube": "视频教程",
   "MasterONLYOFFICEDocSpace": "通过视频指南掌握 ONLYOFFICE 协作空间",
   "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
   "WatchNow": "立即观看",
-
   "CustomerTestimonial": "客户案例",
   "HowKinderhausBerlinSharesAndCollaborates": "柏林儿童之家如何使用 ONLYOFFICE 协作空间共享和协作处理敏感文件",
   "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",

@@ -56,6 +56,7 @@ const StyledCategoryFilterText = styled.span`
 const StyledCategoryFilterDropdown = styled.div`
   position: absolute;
   padding-top: 20px;
+  z-index: 1;
 
   > ul {
     > li {
