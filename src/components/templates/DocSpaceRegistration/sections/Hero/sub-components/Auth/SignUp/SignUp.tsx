@@ -274,6 +274,17 @@ const SignUp = ({
     setIPGeolocationInfo,
   ]);
 
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      email: localStorage.getItem("email") || "",
+    }));
+
+    if (emailIsValid) {
+      setIsFormValid(true);
+    }
+  }, [emailIsValid]);
+
   return (
     <>
       <StyledSignUpAccount>
