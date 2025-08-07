@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Arbeiten Sie effektiv an allen Arten von Office-Dokumenten zusammen | ONLYOFFICE",
+  "PageDescription": "Teilen Sie Ihre Daten, arbeiten Sie zusammen und kommunizieren Sie in Echtzeit, um Ihre Arbeit schneller zu erledigen",
+
+  "Header": "Arbeiten Sie <0>effektiv</0> an allen Arten von Office-Dokumenten zusammen",
+  "SubHeader": "Teilen Sie Ihre Daten, arbeiten Sie zusammen und kommunizieren Sie in Echtzeit, um Ihre Arbeit schneller zu erledigen",
+  "HeroImgUrl": "/images/templates/seamless-collaboration/hero/de/sc-header.png",
+  "HeroImgUrl2x": "/images/templates/seamless-collaboration/hero/de/sc-header@2x.png",
+
+  "SwitcherTitle1": "Freigeben",
+  "SwitcherTitle2": "Mitbearbeiten",
+  "SwitcherTitle3": "Kommentieren",
+  "SwitcherTitle4": "Kommunizieren",
+  "SwitcherTitle5": "Änderungen verfolgen",
+  "SwitcherTitle6": "Vergleichen & kombinieren",
+  "SwitcherTitle7": "Versionen verwalten",
+
+  "Feature1Title": "Dokumente mit flexiblen Berechtigungen teilen",
+  "Feature1Desc": "Geben Sie Textdokumente, Tabellenkalkulationen, Präsentationen und PDF-Dateien zur Ansicht oder Bearbeitung frei und ermöglichen Sie das Kommentieren oder Überprüfen. Erstellen Sie Formulare und lassen Sie andere Nutzer diese ausfüllen. Legen Sie die Berechtigung für benutzerdefiniertes Filtern fest, damit Mitarbeiter Daten unabhängig voneinander filtern können. <2>Geben Sie Links zum ausgewählten Bereich frei, damit andere Mitverfasser auch in großen Arbeitsmappen schnell die benötigten Daten finden können.</2> Schränken Sie die Kopier-, Download- und Druckoptionen ein. Öffentliche Freigabe ist ebenfalls möglich.",
+  "Feature1ImgUrl": "/images/templates/seamless-collaboration/features/de/share-docs-providing-flexible-permissions.png",
+  "Feature1ImgUrl2x": "/images/templates/seamless-collaboration/features/de/share-docs-providing-flexible-permissions@2x.png",
+
+  "Feature2Title": "Zusammenarbeit ohne Stress",
+  "Feature2Desc": "Verfassen Sie Dokumente online in Echtzeit gemeinsam und nutzen Sie den Schnellmodus, um alle Änderungen direkt nach der Eingabe anzuzeigen. Aktivieren Sie den Strikt-Modus, um den von Ihnen bearbeiteten Absatz zu sperren und privat und ohne Unterbrechungen daran zu arbeiten.",
+  "Feature2ImgUrl": "/images/templates/seamless-collaboration/features/de/co-edit-without-stress.png",
+  "Feature2ImgUrl2x": "/images/templates/seamless-collaboration/features/de/co-edit-without-stress@2x.png",
+
+  "Feature3Title": "Kommentieren und erwähnen",
+  "Feature3Desc": "Hinterlassen Sie Kommentare, um Fragen und Probleme zu diskutieren. Erwähnen Sie Benutzer in Kommentaren, um sie zur Zusammenarbeit einzuladen und die Datei sofort mit ihnen zu teilen. Verwalten Sie Kommentare, sortieren Sie sie nach Autor oder Datum.",
+  "Feature3ImgUrl": "/images/templates/seamless-collaboration/features/de/comment-mention.png",
+  "Feature3ImgUrl2x": "/images/templates/seamless-collaboration/features/de/comment-mention@2x.png",
+
+  "Feature4Title": "Kommunizieren",
+  "Feature4Desc": "Chatten Sie mit Mitautoren direkt in Ihren Dokumenten. Aktivieren Sie die Plugins Jitsi oder Rainbow, um Audioanrufe zu tätigen und Videokonferenzen zu organisieren.",
+  "Feature4ImgUrl": "/images/templates/seamless-collaboration/features/de/communicate.png",
+  "Feature4ImgUrl2x": "/images/templates/seamless-collaboration/features/de/communicate@2x.png",
+
+  "Feature5Title": "Änderungen verfolgen",
+  "Feature5Desc": "Aktivieren Sie die Funktion \"Änderungen nachverfolgen\", um Ihre Beiträge zu markieren und die von anderen Mitautoren vorgenommenen Änderungen zu überprüfen. Akzeptieren oder verwerfen Sie die Änderungen einzeln oder alle auf einmal. Wählen Sie, wie die von Ihnen vorgenommenen Änderungen angezeigt werden sollen.",
+  "Feature5ImgUrl": "/images/templates/seamless-collaboration/features/de/track-changes.png",
+  "Feature5ImgUrl2x": "/images/templates/seamless-collaboration/features/de/track-changes@2x.png",
+
+  "Feature6Title": "Vergleichen und kombinieren",
+  "Feature6Desc": "Vergleichen Sie schnell und finden Sie Unterschiede zwischen zwei Dokumenten. Navigieren Sie zwischen Änderungen, akzeptieren oder lehnen Sie sie ab. Kombinieren Sie zwei Dokumente.",
+  "Feature6ImgUrl": "/images/templates/seamless-collaboration/features/de/compare-combine.png",
+  "Feature6ImgUrl2x": "/images/templates/seamless-collaboration/features/de/compare-combine@2x.png",
+
+  "Feature7Title": "Versionen verwalten",
+  "Feature7Desc": "Greifen Sie auf den Versionsverlauf Ihres Dokuments zu und prüfen Sie, wer wann welche Version erstellt und welche Änderungen vorgenommen hat. Zeigen Sie frühere Versionen an und stellen Sie sie bei Bedarf wieder her, auch den gelöschten Text.",
+  "Feature7ImgUrl": "/images/templates/seamless-collaboration/features/de/manage-versions.png",
+  "Feature7ImgUrl2x": "/images/templates/seamless-collaboration/features/de/manage-versions@2x.png"
+}

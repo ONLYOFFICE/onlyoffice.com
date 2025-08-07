@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Saradjujte efikasno na svim vrstama kancelarijskih dokumenata | ONLYOFFICE",
+  "PageDescription": "Delite, koautorišite i komunicirajte u realnom vremenu kako biste brže obavili posao",
+
+  "Header": "Saradnja <0>efikasno</0> na svim vrstama kancelarijskih dokumenata",
+  "SubHeader": "Delite, koautorišite i komunicirajte u realnom vremenu kako biste brže obavili posao",
+
+  "SwitcherTitle1": "Podelite",
+  "SwitcherTitle2": "Ko-uređujte",
+  "SwitcherTitle3": "Komentarišite",
+  "SwitcherTitle4": "Komunicirajte",
+  "SwitcherTitle5": "Pratite promene",
+  "SwitcherTitle6": "Uporedite i kombinujte",
+  "SwitcherTitle7": "Upravljajte verzijama",
+
+  "Feature1Title": "Delite dokumente koji pružaju fleksibilne dozvole",
+  "Feature1Desc": "Delite tekstualne dokumente, tabele, prezentacije i PDF datoteke za pregled ili uređivanje, omogućite komentarisanje ili pregled. Kreirajte spremne obrasce za popunjavanje i pustite druge korisnike da ih popune. Podesite dozvolu za prilagođeno filtriranje kako biste saradnicima omogućili nezavisno filtriranje podataka. <2>Delite veze sa izabranim opsegom tako da drugi koautori mogu brzo pronaći potrebne podatke čak i u velikim radnim svescima.</2> Ograničite opcije kopiranja, preuzimanja i štampanja. Dostupno je i javno deljenje.",
+
+  "Feature2Title": "Ko-uređivanje bez stresa",
+  "Feature2Desc": "Koautorišite dokumenata na mreži u realnom vremenu, koristite brzi režim za prikaz svih promena odmah nakon unosa. Omogućite strogi režim da zaključate paragraf koji uređujete i radite na njemu privatno bez prekida.",
+
+  "Feature3Title": "Komentarišite i označite",
+  "Feature3Desc": "Ostavite komentare kako biste diskutovali o pitanjima i problemima. Pomenite korisnike u komentarima da ih pozovete na saradnju i odmah podelite fajl s njima. Upravljajte komentarima, sortirajte ih po autoru ili datumu.",
+
+  "Feature4Title": "Komunicirajte",
+  "Feature4Desc": "Razgovarajte sa koautorima direktno u vašim dokumentima. Omogućite Jitsi ili Rainbow dodatke kako biste obavljali audio pozive i organizovali video sastanke.",
+
+  "Feature5Title": "Pratite promene",
+  "Feature5Desc": "Omogućite praćenje izmena da istaknete svoje doprinose i pregledate izmene koje su napravili drugi urednici. Prihvatite ili odbacite promene jednu po jednu ili sve odjednom. Izaberite način da prikažete promene koje ste napravili.",
+
+  "Feature6Title": "Uporedite i kombinujte",
+  "Feature6Desc": "Brzo uporedite i pronađite razlike između dva dokumenta. Krećite se između promena, prihvatite ih ili odbacite. Kombinujte dva dokumenta zajedno.",
+
+  "Feature7Title": "Upravljajte verzijama",
+  "Feature7Desc": "Pristupite istoriji verzija vašeg dokumenta, proverite ko je kreirao svaku verziju i kada, koje su promene napravljene. Pregledajte i povratite prethodne verzije po potrebi, uključujući i izbrisani tekst."
+}

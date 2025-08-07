@@ -27,7 +27,7 @@ const Info = () => {
     if (ref && !ref.startsWith(currentPath)) {
       window.location.href = ref;
     } else {
-      router.push("/");
+      router.back();
     }
   };
 

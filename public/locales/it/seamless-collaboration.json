@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Collabora efficacemente su tutti i tipi di documenti d'ufficio | ONLYOFFICE",
+  "PageDescription": "Condividi, scrivi in collaborazione e comunica in tempo reale per portare a termine il lavoro più velocemente",
+
+  "Header": "Collabora <0>efficacemente</0> su tutti i tipi di documenti d'ufficio",
+  "SubHeader": "Condividi, scrivi in collaborazione e comunica in tempo reale per portare a termine il lavoro più velocemente",
+
+  "SwitcherTitle1": "Condividi",
+  "SwitcherTitle2": "Modifica in collaborazione",
+  "SwitcherTitle3": "Commenta",
+  "SwitcherTitle4": "Comunica",
+  "SwitcherTitle5": "Tieni traccia delle modifiche",
+  "SwitcherTitle6": "Confronta e combina",
+  "SwitcherTitle7": "Gestisci le versioni",
+
+  "Feature1Title": "Condividi documenti fornendo autorizzazioni flessibili",
+  "Feature1Desc": "Condividi documenti di testo, fogli di calcolo, presentazioni e file PDF per la visualizzazione o la modifica, abilita commenti o revisioni. Crea moduli pronti da compilare e consenti ad altri utenti di compilarli. Imposta l'autorizzazione per il filtro personalizzato per consentire ai collaboratori di filtrare i dati in modo indipendente. <2>Condividi i collegamenti all'intervallo selezionato in modo che altri coautori possano trovare rapidamente i dati necessari anche in cartelle di lavoro di grandi dimensioni.</2> Limita le opzioni di copia, download e stampa. È disponibile anche la condivisione pubblica.",
+
+  "Feature2Title": "Modifica in collaborazione senza stress",
+  "Feature2Desc": "Scrivi e modifica in collaborazione documenti online in tempo reale, utilizza la modalità Fast per visualizzare tutte le modifiche subito dopo l'immissione.  Attiva la modalità Strict per bloccare il paragrafo che modifichi e lavorarci privatamente senza interruzioni.",
+
+  "Feature3Title": "Commenta e menziona",
+  "Feature3Desc": "Lascia commenti per discutere domande e problemi. Menziona gli utenti nei commenti per invitarli a collaborare e condividere istantaneamente il file con loro. Gestisci i commenti, ordinali per autore o data.",
+
+  "Feature4Title": "Comunica",
+  "Feature4Desc": "Chatta con i coautori direttamente nei tuoi documenti. Abilita i plugin Jitsi o Rainbow per effettuare chiamate audio e organizzare riunioni video.",
+
+  "Feature5Title": "Tieni traccia delle modifiche",
+  "Feature5Desc": "Abilita Tieni traccia delle modifiche per evidenziare i tuoi contributi e rivedere le modifiche apportate da altri redattori. Accetta o rifiuta le modifiche una per una o tutte insieme. Scegli un modo per visualizzare le modifiche apportate.",
+
+  "Feature6Title": "Confronta e combina",
+  "Feature6Desc": "Confronta e trova rapidamente le differenze tra due documenti. Naviga tra le modifiche, accettale o rifiutale. Combina due documenti insieme.",
+
+  "Feature7Title": "Gestisci le versioni",
+  "Feature7Desc": "Accedi alla cronologia delle versioni del tuo documento, controlla chi ha creato ogni versione e quando, quali modifiche ha apportato. Visualizza e recupera le versioni precedenti, se necessario, compreso il testo cancellato."
+}

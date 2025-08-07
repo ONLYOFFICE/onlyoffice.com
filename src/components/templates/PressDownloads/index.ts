@@ -1,0 +1,1 @@
+export { PressDownloadsTemplate } from "./PressDownloads";
