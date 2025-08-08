@@ -1,0 +1,47 @@
+{
+  "PageTitle": "Lavora sui file d'ufficio direttamente nel tuo Dropbox | ONLYOFFICE",
+  "PageDescription": "Visualizza e modifica testi, tabelle, slide e moduli d'ufficio in Dropbox con ONLYOFFICE Docs",
+
+  "FreeOnlineOfficeForDropbox": "Ufficio online gratuito per <0>Dropbox</0>",
+  "EditOfficeFilesRightInDropbox": "Modifica i file d'ufficio direttamente in Dropbox utilizzando il set completo di funzionalità di ONLYOFFICE Docs",
+  "GetFreeApp": "OTTIENI L'APP GRATUITA",
+  "HeroImgUrl": "/images/templates/office-for-dropbox/hero/dropbox_header.png",
+  "HeroImgUrl2x": "/images/templates/office-for-dropbox/hero/dropbox_header@2x.png",
+
+  "WorkOnOfficeDocumentsStored": "Lavora su documenti d'ufficio archiviati in Dropbox",
+  "DocumentsTab1Label": "Visualizza e modifica documenti di testo, fogli di calcolo, presentazioni",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-dropbox/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "Costruisci e compila moduli digitali complessi",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-dropbox/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "Esporta/importa in/da PDF",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-dropbox/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "Trasforma i tuoi libri di testo in e-book",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-dropbox/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Creato per funzionare perfettamente in Dropbox",
+  "MarketplaceConnectorDescription": "Installa oggi l'app ONLYOFFICE per Dropbox dal Dropbox Marketplace",
+
+  "WhyOO": "Perché ONLYOFFICE?",
+  "FeaturesRobustSet": "<0>Set di strumenti</0> di modifica professionale",
+  "FeaturesFamiliarInterface": "<0>Interfaccia familiare</0> con schede",
+  "FeaturesAIHelper": "<0>Assistente AI</0> e raccolta di plugin gratuiti",
+  "FeaturesFormats": "Supporto per più di <0>50 formati di file</0>",
+  "FeaturesHighestCompatibility": "<0>Massima compatibilità</0> con docx, xlsx e pptx",
+  "FeaturesOpenSourceCode": "Filigrane, protezione con una password, <0>codice open source</0>",
+  "FeaturesFreeApp": "<0>App gratuita</0>, nessuna installazione e registrazione richiesta",
+  "GetStarted": "INIZIA ORA",
+
+  "HowToStart": "Come iniziare",
+  "HowToStartStep1": "Accedi al tuo account Dropbox.",
+  "HowToStartStep2": "Segui il <0>link</0>",
+  "HowToStartStep3": "Concedi le autorizzazioni richieste all'app ONLYOFFICE.",
+  "HowToStartStep4": "Accedi al menu contestuale del file richiesto.",
+  "HowToStartStep5": "Fai clic su Apri in -> ONLYOFFICE Docs.",
+  "ExploreMoreDetails": "Scopri maggiori dettagli in <0>questa guida</0>",
+
+  "NeedAnAppToConnect": "Hai bisogno di un'app per connettere ONLYOFFICE Docs al tuo servizio web preferito? O ne hai sviluppata una?"
+}

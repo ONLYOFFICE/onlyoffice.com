@@ -1,0 +1,73 @@
+{
+  "PageTitle": "Moodle 用 Office | ONLYOFFICE Docs",
+  "PageDescription": "オープンソースの学習プラットフォームおよびコース管理システムである Moodle 内でオフィスドキュメントを編集および共同作成します。",
+
+  "OnlineOfficeForMoodle": "Moodle 用オンラインオフィス",
+  "WorkWithOfficeDocuments": "ONLYOFFICE を使用して Moodle 内でオフィスドキュメントを操作",
+  "GetStarted": "Get started",
+
+  "EditAndCollaborateOnOfficeDocuments": "Moodle コース構造内で直接オンラインでオフィスドキュメントを編集およびコラボレーション",
+  "DocumentsTab1Label": "ドキュメント、スプレッドシート、スライド、フォームをアップロード、作成、編集",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-moodle/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "PDF ドキュメントを閲覧し、コメント、注釈、図面を追加",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-moodle/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "閲覧やリアルタイム共同編集のためにドキュメントを共有",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-moodle/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "学生がドキュメントをダウンロードおよび印刷することを防止",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-moodle/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-4@2x.png",
+  "DocumentsTab5Label": "パスワードでドキュメントを保護",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-moodle/documents/documents-5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-5@2x.png",
+
+  "ScheduleYourFreeDemo": "無料デモをスケジュール",
+
+  "QuoteText": "「私たちは学校に ONLYOFFICE を絶対にお勧めします。企業向けの専用ソフトウェアはあるかもしれませんが、データを管理し、学生と協力するためのコラボレーティブでシンプルなシステムが必要なら、これは素晴らしいソリューションです。」",
+  "QuoteAuthor": "コリン・ジョナサン博士",
+  "QuoteAuthorInfo": "物理学と化学、ロボット工学、科学技術の教師",
+
+  "CreateShareAndGradeStudentsAssignments": "学生の課題を作成、共有、採点",
+  "AssignmentsTab1Label": "さまざまなタイプのフィールドを追加して複雑な PDF フォームを構築",
+  "AssignmentsTab1ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-1.png",
+  "AssignmentsTab1ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-1@2x.png",
+  "AssignmentsTab2Label": "ドキュメント、スプレッドシート、スライドを使用して課題を準備",
+  "AssignmentsTab2ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-2.png",
+  "AssignmentsTab2ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-2@2x.png",
+  "AssignmentsTab3Label": "学生と共有して、オンラインで簡単に入力して返送できるようにする",
+  "AssignmentsTab3ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-3.png",
+  "AssignmentsTab3ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-3@2x.png",
+  "AssignmentsTab4Label": "学生の提出物を表示して採点",
+  "AssignmentsTab4ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-4.png",
+  "AssignmentsTab4ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Moodle でシームレスに動作するように構築",
+  "MarketplaceConnectorDescription": "Moodle アプリマーケットプレイスから今すぐ ONLYOFFICE アプリをインストール",
+
+  "WhyOO": "なぜ ONLYOFFICE？",
+  "FeaturesAIHelper": "編集、フォーマット、スタイリングツールの堅牢なセット。Mendeley と Zotero の統合。<0>AI ヘルパー。</0>",
+  "FeaturesCoEditing": "リアルタイムおよび段落ロック<0>共同編集</0>、レビュー、ドキュメント比較、コメント＆チャット。音声とビデオ通話。",
+  "FeaturesFormats": "<0>50 以上のファイル形式</0>をサポート。MS Office 形式と完全に互換性があります。",
+  "FeaturesDesktopEditors": "どのデバイスからもオンラインアクセス。<1>ONLYOFFICE Desktop Editors</1> でデスクトップ環境で Moodle ドキュメントを編集。",
+  "FeaturesOpenSourceCode": "JWT。透かしとパスワード保護。GitHub で利用可能な<0>オープンソースコード</0>。",
+  "FeaturesFreeTrial": "スケーラブルなエンタープライズバージョン。<0>30 日間の無料トライアル。</0>教育機関向け割引。",
+
+  "HowToStart": "始め方は？",
+  "HowToStartStep1": "自分のサーバーに <0>ONLYOFFICE Docs</0> をデプロイするか、<1>ONLYOFFICE Docs Cloud</1> にサインアップ",
+  "HowToStartStep2": "Moodle ディレクトリからプラグインを取得：<0>メイン統合プラグイン</0> / <1>課題提出プラグイン</1>。",
+  "HowToStartStep3": "通常の Moodle プラグインのインストール手順に従います。",
+  "HowToStartStep4": "インストールしたプラグインを設定します。",
+  "HowToConnect": "ONLYOFFICE Docs と Moodle の接続",
+  "ReadDetailedInstructions": "<0>ヘルプセンター</0>で詳細な手順を読む",
+
+  "LearnMoreHeading": "Moodle ONLYOFFICE 統合についてもっと学ぶ",
+  "HowEnsuresDigitalEquality": "Collège-Lycée Sacré Cœur de Taravao が ONLYOFFICE と Moodle を使用してすべての学生にデジタル平等を確保する方法",
+  "ReadTheFullStory": "全文を読む",
+  "WatchAVideoVersion": "ビデオ版を見る",
+  "WhyWeChoseMoodle": "ONLYOFFICE トレーニングセンターを作成するために Moodle を選んだ理由",
+  "NewUpdatesOfOOPlugins": "Moodle 用 ONLYOFFICE プラグインの新しいアップデート：PDF フォームの作成と編集、Docs Cloud 接続、証明書検証",
+
+  "NeedAnAppToConnect": "ONLYOFFICE Docs をお気に入りのウェブサービスに接続するアプリが必要ですか？または開発しましたか？"
+}

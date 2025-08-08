@@ -1,0 +1,73 @@
+{
+  "PageTitle": "Офис для Moodle | ONLYOFFICE Docs",
+  "PageDescription": "Редактируйте офисные документы и работайте над ними совместно на платформе с открытым исходным кодом для создания обучающей среды и в системе управления курсами Moodle",
+
+  "OnlineOfficeForMoodle": "Онлайн офис для Moodle",
+  "WorkWithOfficeDocuments": "Работайте с офисными документами в Moodle с помощью ONLYOFFICE",
+  "GetStarted": "Get started",
+
+  "EditAndCollaborateOnOfficeDocuments": "Редактируйте офисные документы и работайте над ними совместно онлайн непосредственно в структуре курса Moodle",
+  "DocumentsTab1Label": "Загружайте, создавайте и редактируйте текстовые документы, электронные таблицы, презентации, формы.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-moodle/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "Выполняйте навигацию по PDF-документам, добавляйте комментарии, примечания, рисунки.",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-moodle/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "Предоставляйте доступ к документам для просмотра или совместного редактирования в режиме реального времени.",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-moodle/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "Ограничивайте возможность скачивать и распечатывать документы для учащихся.",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-moodle/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-4@2x.png",
+  "DocumentsTab5Label": "Защищайте документы паролем.",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-moodle/documents/documents-5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-5@2x.png",
+
+  "ScheduleYourFreeDemo": "Запланировать бесплатную демонстрацию",
+
+  "QuoteText": "\"Мы абсолютно рекомендуем ONLYOFFICE школам. Возможно, существует специализированное программное обеспечение для компаний, но если вы хотите контролировать свои данные и иметь совместную и простую систему для работы с вашими учениками, это отличное решение.\"",
+  "QuoteAuthor": "Д-р Колин Джонатан",
+  "QuoteAuthorInfo": "Учитель физики и химии, робототехники, науки и технологий",
+
+  "CreateShareAndGradeStudentsAssignments": "Создавайте задания для студентов, предоставляйте к ним доступ и оценивайте их",
+  "AssignmentsTab1Label": "Создавайте сложные PDF-формы, добавляя поля различных типов.",
+  "AssignmentsTab1ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-1.png",
+  "AssignmentsTab1ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-1@2x.png",
+  "AssignmentsTab2Label": "Используйте текстовые документы, электронные таблицы, презентации для подготовки заданий.",
+  "AssignmentsTab2ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-2.png",
+  "AssignmentsTab2ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-2@2x.png",
+  "AssignmentsTab3Label": "Предоставляйте доступ студентам, чтобы они могли легко заполнять их онлайн и отправлять вам.",
+  "AssignmentsTab3ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-3.png",
+  "AssignmentsTab3ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-3@2x.png",
+  "AssignmentsTab4Label": "Просматривайте и оценивайте работы ваших учеников.",
+  "AssignmentsTab4ImgUrl": "/images/templates/office-for-moodle/assignments/assignments-4.png",
+  "AssignmentsTab4ImgUrl2x": "/images/templates/office-for-moodle/assignments/assignments-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Создан для органичной работы в Moodle",
+  "MarketplaceConnectorDescription": "Установите приложение ONLYOFFICE для Moodle уже сегодня из Moodle App Marketplace",
+
+  "WhyOO": "Почему ONLYOFFICE?",
+  "FeaturesAIHelper": "Надежный набор инструментов для редактирования, форматирования и стилизации. Интеграция с Mendeley и Zotero. <0>ИИ-помощник.</0>",
+  "FeaturesCoEditing": "<0>Совместное редактирование</0> в реальном времени с блокировкой абзацев, рецензирование, сравнение документов, комментарии и чат. Аудио- и видеозвонки.",
+  "FeaturesFormats": "Поддержка более <0>50 форматов файлов</0>. Полная совместимость с форматами MS Office.",
+  "FeaturesDesktopEditors": "Онлайн-доступ с любого устройства. Редактируйте документы Moodle в настольной среде с помощью <1>ONLYOFFICE Desktop Editors</1>.",
+  "FeaturesOpenSourceCode": "JWT. Водяные знаки и защита паролем. <0>Открытый исходный код</0>, доступный на GitHub.",
+  "FeaturesFreeTrial": "Масштабируемые версии Enterprise. <0>Бесплатная 30-дневная пробная версия.</0> Скидки для образовательных учреждений.",
+
+  "HowToStart": "Как начать?",
+  "HowToStartStep1": "Разверните <0>ONLYOFFICE Docs</0> на собственном сервере или зарегистрируйтесь в <1>ONLYOFFICE Docs Cloud</1>",
+  "HowToStartStep2": "Получите плагины из каталога Moodle: <0>основной плагин интеграции</0> / <1>плагин отправки заданий</1>.",
+  "HowToStartStep3": "Следуйте обычным шагам установки плагина Moodle.",
+  "HowToStartStep4": "Настройте установленный плагин.",
+  "HowToConnect": "Подключение ONLYOFFICE Docs к Moodle",
+  "ReadDetailedInstructions": "Прочитайте подробные инструкции в <0>Центре помощи</0>",
+
+  "LearnMoreHeading": "Узнайте больше об интеграции Moodle с ONLYOFFICE",
+  "HowEnsuresDigitalEquality": "Как школа Collège-Lycée Sacré Cœur de Taravao обеспечивает цифровое равноправие для всех учеников с помощью ONLYOFFICE и Moodle",
+  "ReadTheFullStory": "Прочитать полную историю",
+  "WatchAVideoVersion": "Посмотреть видеоверсию",
+  "WhyWeChoseMoodle": "Почему мы выбрали Moodle для создания учебного центра ONLYOFFICE",
+  "NewUpdatesOfOOPlugins": "Новые обновления плагинов ONLYOFFICE для Moodle: создание и редактирование PDF-форм, подключение к Docs Cloud, проверка сертификата",
+
+  "NeedAnAppToConnect": "Нужно приложение для подключения ONLYOFFICE Docs к вашему любимому веб-сервису? Или вы разработали его?"
+}
