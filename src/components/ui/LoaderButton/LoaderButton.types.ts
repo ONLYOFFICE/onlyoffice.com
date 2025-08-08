@@ -19,6 +19,8 @@ export interface ILoaderButton {
   status?: "default" | "loading" | "success" | "error";
   /** The size. Default: "medium". */
   size?: "small" | "medium";
+  /** The button variant: "primary" (text), "secondary" (arrow only), "tertiary" (text, arrow on mobile). Default: "primary". */
+  variant?: "primary" | "secondary" | "tertiary";
   /** Callback function triggered on click. */
   onClick?: () => void;
 }
