@@ -77,7 +77,6 @@ const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
 `;
 
 const StyledFeatureSwitcherImage = styled.div<{
-  $active?: boolean;
   $imageWidth?: IFeatureSwitcher["imageWidth"];
   $imageHeight?: IFeatureSwitcher["imageHeight"];
   $imageUrl: IFeatureSwitcher["items"][0]["image"]["url"];
@@ -96,8 +95,6 @@ const StyledFeatureSwitcherImage = styled.div<{
   ${(props) =>
     props.$isDesktop &&
     css`
-      display: ${props.$active ? "block" : "none"};
-
       @media ${device.tablet} {
         display: none;
       }
@@ -109,7 +106,7 @@ const StyledFeatureSwitcherImage = styled.div<{
       display: none;
 
       @media ${device.tablet} {
-        display: ${props.$active ? "block" : "none"};
+        display: block;
       }
     `}
 

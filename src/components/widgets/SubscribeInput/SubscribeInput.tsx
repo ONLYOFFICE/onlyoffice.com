@@ -12,6 +12,7 @@ const SubscribeInput = ({
   placeholder,
   status,
   buttonContent,
+  variant,
   disabled,
   caption,
   autoFocus,
@@ -23,7 +24,7 @@ const SubscribeInput = ({
   return (
     <StyledSubscribeInput $status={status}>
       <Input
-        data-testid={`${dataTestId}-input`}
+        data-testid={dataTestId}
         onChange={onChange}
         onFocus={onFocus}
         onBlur={onBlur}
@@ -39,6 +40,7 @@ const SubscribeInput = ({
         onClick={onSubmit}
         data-testid={`${dataTestId}-button`}
         status={status}
+        variant={variant}
         disabled={disabled}
       >
         {buttonContent}

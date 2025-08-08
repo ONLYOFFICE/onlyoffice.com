@@ -9,7 +9,7 @@ const StyledSubscribeInput = styled.div<{ $status: ILoaderButton["status"] }>`
   align-items: start;
 
   ${StyledInputWrapper} {
-    border-radius: 9px 0 0 9px;
+    border-radius: 6px 0 0 6px;
     border-right: none;
   }
 
