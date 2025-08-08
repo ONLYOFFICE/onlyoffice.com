@@ -36,13 +36,13 @@ const countsOfUsersItems: IFormItems[] = [
 ];
 
 const moduleItems: IFormItems[] = [
-  { label: "Documents", value: "Documents" },
-  { label: "CRM", value: "CRM" },
-  { label: "Community", value: "Community" },
-  { label: "Calendar", value: "Calendar" },
-  { label: "Projects", value: "Projects" },
-  { label: "People", value: "People" },
-  { label: "Mail", value: "Mail" },
+  { label: "Documents", value: "documents" },
+  { label: "CRM", value: "crm" },
+  { label: "Community", value: "community" },
+  { label: "Calendar", value: "calendar" },
+  { label: "Projects", value: "projects" },
+  { label: "People", value: "people" },
+  { label: "Mail", value: "mail" },
 ];
 
 const issuesItems: IFormItems[] = [

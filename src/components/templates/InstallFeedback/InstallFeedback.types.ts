@@ -6,11 +6,21 @@ interface IFormItems {
 interface IFormData {
   operatingSystem: string;
   countsOfUsers: string;
-  module: string;
+  whoIsResponsible: string;
+  modules: {
+    documents: boolean;
+    crm: boolean;
+    community: boolean;
+    calendar: boolean;
+    projects: boolean;
+    people: boolean;
+    mail: boolean;
+  };
   issues: string;
   intuitiveAndSimple: string;
   degreeVersionMeet: string;
   planToUse: string;
+  comments: string;
 }
 
 interface IQuestionBlockProps {
@@ -20,6 +30,7 @@ interface IQuestionBlockProps {
   name: keyof IFormData;
   heading: string;
   columns?: 2 | 3;
+  isCheckBoxBlock?: boolean;
 }
 
 export type {
