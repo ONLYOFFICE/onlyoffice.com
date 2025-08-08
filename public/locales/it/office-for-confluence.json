@@ -35,9 +35,9 @@
   "FeaturesFreeTrial": "Versione Enterprise scalabile. <0>Prova gratuita di 30 giorni</0>. Soluzione self hosted per un controllo totale sui tuoi dati. Versione Docs Cloud per Confluence Cloud.",
 
   "HowToStart": "Come iniziare",
-  "HowToStartStep1": "Distribuisci <0>ONLYOFFICE Docs</0> sul tuo server o registrati per <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep1": "Distribuisci <0>ONLYOFFICE Docs</0>.",
   "HowToStartStep2": "Ottieni l'applicazione di integrazione dal <0>Marketplace di Atlassian</0>. Seleziona l'opzione corrispondente cambiando le schede di hosting (Server/ Data Center/ Cloud).",
-  "HowToStartStep3": "Configura le applicazioni d'integrazione.",
+  "HowToStartStep3": "Configura le applicazioni d'integrazione. ",
 
   "HowToConnect": "Come connettere ONLYOFFICE Docs a Confluence",
   "ReadDetailedInstructions": "Leggi le istruzioni dettagliate nel <0>Centro di Aiuto</0>.",

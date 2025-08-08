@@ -35,7 +35,7 @@
   "FeaturesFreeTrial": "スケーラブルなエンタープライズバージョン{0}30 日間の無料トライアル{1}。データを完全にコントロールするセルフホストソリューション。Confluence Cloud 用の Docs Cloud バージョン。",
 
   "HowToStart": "始め方",
-  "HowToStartStep1": "{0}ONLYOFFICE Docs{1}をデプロイするか、{1}ONLYOFFICE Docs Cloud{1}にサインアップします。",
+  "HowToStartStep1": "{0}ONLYOFFICE Docs{1}をデプロイします。",
   "HowToStartStep2": "{0}Atlassian Marketplace{1} から統合アプリを入手します。ホスティングタブ（サーバー / データセンター / クラウド）を切り替えて、対応するオプションを選択します。",
   "HowToStartStep3": "統合アプリを設定します。",
 

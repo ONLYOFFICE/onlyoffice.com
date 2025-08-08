@@ -1,29 +1,31 @@
 {
-  "PageTitle": "Работайте над офисными документами прямо в Dropbox",
+  "PageTitle": "Работайте над офисными документами прямо в Dropbox | ONLYOFFICE",
   "PageDescription": "Просматривайте и редактируйте офисные документы, электронные таблицы, презентации и формы в Dropbox с помощью ONLYOFFICE Docs",
 
   "FreeOnlineOfficeForDropbox": "Бесплатный онлайн офис для <0>Dropbox</0>",
   "EditOfficeFilesRightInDropbox": "Редактируйте офисные документы прямо в Dropbox, используя весь набор инструментов ONLYOFFICE Docs",
   "GetFreeApp": "ПОЛУЧИТЬ БЕСПЛАТНОЕ ПРИЛОЖЕНИЕ",
+  "HeroImgUrl": "/images/templates/office-for-dropbox/hero/ru/dropbox_header.png",
+  "HeroImgUrl2x": "/images/templates/office-for-dropbox/hero/ru/dropbox_header@2x.png",
 
   "WorkOnOfficeDocumentsStored": "Работайте над офисными документами, хранящимися в Dropbox",
   "DocumentsTab1Label": "Просматривайте и редактируйте текстовые документы, электронные таблицы, презентации",
-  "DocumentsTab1ImgUrl": "/images/templates/office-for-dropbox/documents/documents-1.png",
-  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-1@2x.png",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-dropbox/documents/ru/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-dropbox/documents/ru/documents-1@2x.png",
   "DocumentsTab2Label": "Создавайте и заполняйте сложные онлайн формы",
-  "DocumentsTab2ImgUrl": "/images/templates/office-for-dropbox/documents/documents-2.png",
-  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-2@2x.png",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-dropbox/documents/ru/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-dropbox/documents/ru/documents-2@2x.png",
   "DocumentsTab3Label": "Экспортируйте в PDF или импортируйте из PDF",
-  "DocumentsTab3ImgUrl": "/images/templates/office-for-dropbox/documents/documents-3.png",
-  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-3@2x.png",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-dropbox/documents/ru/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-dropbox/documents/ru/documents-3@2x.png",
   "DocumentsTab4Label": "Превращайте текстовые книги в электронные",
-  "DocumentsTab4ImgUrl": "/images/templates/office-for-dropbox/documents/documents-4.png",
-  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-dropbox/documents/documents-4@2x.png",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-dropbox/documents/ru/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-dropbox/documents/ru/documents-4@2x.png",
 
   "MarketplaceConnectorTitle": "Создан для органичной работы в Dropbox",
   "MarketplaceConnectorDescription": "Установите приложение ONLYOFFICE для Dropbox из магазина приложений Dropbox Marketplace уже сегодня",
 
-  "WhyOO": "Why ONLYOFFICE?",
+  "WhyOO": "Почему ONLYOFFICE?",
   "FeaturesRobustSet": "<0>Надежный набор</0> инструментов редактирования",
   "FeaturesFamiliarInterface": "<0>Интуитивно понятный</0> вкладочный интерфейс",
   "FeaturesAIHelper": "<0>ИИ-помощник</0> и коллекция бесплатных плагинов",
@@ -31,9 +33,9 @@
   "FeaturesHighestCompatibility": "<0>Полная совместимость</0> с форматами docx, xlsx и pptx",
   "FeaturesOpenSourceCode": "Защита с помощью водяных знаков и пароля, <0>открытый исходный код</0>",
   "FeaturesFreeApp": "<0>Бесплатное приложение</0> без установки и регистрации",
-  "GetStarted": "Get started",
+  "GetStarted": "ПОЛУЧИТЬ БЕСПЛАТНОЕ ПРИЛОЖЕНИЕ",
 
-  "HowToStart": "How to start",
+  "HowToStart": "Как начать",
   "HowToStartStep1": "Войдите в вашу учетную запись Dropbox.",
   "HowToStartStep2": "Перейдите по <0>ссылке</0>",
   "HowToStartStep3": "Предоставьте приложению ONLYOFFICE необходимые разрешения.",
@@ -41,5 +43,5 @@
   "HowToStartStep5": "Нажмите Открыть в -> ONLYOFFICE Docs.",
   "ExploreMoreDetails": "Подробнее в <0>этом руководстве</0>.",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Нужно приложение для подключения ONLYOFFICE Docs к вашему любимому веб-сервису? Или вы его разработали?"
 }

@@ -1,10 +1,12 @@
 {
-  "PageTitle": "Lavora sui file d'ufficio direttamente nel tuo Dropbox",
+  "PageTitle": "Lavora sui file d'ufficio direttamente nel tuo Dropbox | ONLYOFFICE",
   "PageDescription": "Visualizza e modifica testi, tabelle, slide e moduli d'ufficio in Dropbox con ONLYOFFICE Docs",
 
   "FreeOnlineOfficeForDropbox": "Ufficio online gratuito per <0>Dropbox</0>",
   "EditOfficeFilesRightInDropbox": "Modifica i file d'ufficio direttamente in Dropbox utilizzando il set completo di funzionalità di ONLYOFFICE Docs",
   "GetFreeApp": "OTTIENI L'APP GRATUITA",
+  "HeroImgUrl": "/images/templates/office-for-dropbox/hero/dropbox_header.png",
+  "HeroImgUrl2x": "/images/templates/office-for-dropbox/hero/dropbox_header@2x.png",
 
   "WorkOnOfficeDocumentsStored": "Lavora su documenti d'ufficio archiviati in Dropbox",
   "DocumentsTab1Label": "Visualizza e modifica documenti di testo, fogli di calcolo, presentazioni",
@@ -23,7 +25,7 @@
   "MarketplaceConnectorTitle": "Creato per funzionare perfettamente in Dropbox",
   "MarketplaceConnectorDescription": "Installa oggi l'app ONLYOFFICE per Dropbox dal Dropbox Marketplace",
 
-  "WhyOO": "Why ONLYOFFICE?",
+  "WhyOO": "Perché ONLYOFFICE?",
   "FeaturesRobustSet": "<0>Set di strumenti</0> di modifica professionale",
   "FeaturesFamiliarInterface": "<0>Interfaccia familiare</0> con schede",
   "FeaturesAIHelper": "<0>Assistente AI</0> e raccolta di plugin gratuiti",
@@ -31,9 +33,9 @@
   "FeaturesHighestCompatibility": "<0>Massima compatibilità</0> con docx, xlsx e pptx",
   "FeaturesOpenSourceCode": "Filigrane, protezione con una password, <0>codice open source</0>",
   "FeaturesFreeApp": "<0>App gratuita</0>, nessuna installazione e registrazione richiesta",
-  "GetStarted": "Get started",
+  "GetStarted": "INIZIA ORA",
 
-  "HowToStart": "How to start",
+  "HowToStart": "Come iniziare",
   "HowToStartStep1": "Accedi al tuo account Dropbox.",
   "HowToStartStep2": "Segui il <0>link</0>",
   "HowToStartStep3": "Concedi le autorizzazioni richieste all'app ONLYOFFICE.",
@@ -41,5 +43,5 @@
   "HowToStartStep5": "Fai clic su Apri in -> ONLYOFFICE Docs.",
   "ExploreMoreDetails": "Scopri maggiori dettagli in <0>questa guida</0>",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Hai bisogno di un'app per connettere ONLYOFFICE Docs al tuo servizio web preferito? O ne hai sviluppata una?"
 }

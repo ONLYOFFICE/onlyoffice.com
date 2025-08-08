@@ -1,10 +1,12 @@
 {
-  "PageTitle": "Dropbox内でオフィスファイルを直接作業",
+  "PageTitle": "Dropbox内でオフィスファイルを直接作業 | ONLYOFFICE",
   "PageDescription": "ONLYOFFICE Docsを使って、テキスト文書、スプレッドシート、スライド、フォームをDropboxで閲覧・編集できます",
 
   "FreeOnlineOfficeForDropbox": "<0>Dropbox</0>向けの無料オンラインオフィス",
   "EditOfficeFilesRightInDropbox": "ONLYOFFICE Docsの完全な機能セットを使って、Dropbox上でオフィスファイルを編集できます",
   "GetFreeApp": "無料アプリのダウンロード",
+  "HeroImgUrl": "/images/templates/office-for-dropbox/hero/dropbox_header.png",
+  "HeroImgUrl2x": "/images/templates/office-for-dropbox/hero/dropbox_header@2x.png",
 
   "WorkOnOfficeDocumentsStored": "Dropboxに保存されたオフィス文書で作業",
   "DocumentsTab1Label": "テキスト文書、スプレッドシート、プレゼンテーションの表示と編集",
@@ -23,7 +25,7 @@
   "MarketplaceConnectorTitle": "Dropboxでシームレスに動作するように設計されている",
   "MarketplaceConnectorDescription": "DropboxマーケットプレイスからONLYOFFICEアプリをインストールしましょう",
 
-  "WhyOO": "Why ONLYOFFICE?",
+  "WhyOO": "なぜONLYOFFICE？",
   "FeaturesRobustSet": "強力な編集ツールセット",
   "FeaturesFamiliarInterface": "タブを使った使い慣れたインターフェイス",
   "FeaturesAIHelper": "AIヘルパーと無料プラグインのコレクション",
@@ -31,9 +33,9 @@
   "FeaturesHighestCompatibility": "docx、xlsx、pptxとの高い互換性",
   "FeaturesOpenSourceCode": "透かし、パスワード保護、オープンソースコード",
   "FeaturesFreeApp": "無料アプリ、インストールと登録不要",
-  "GetStarted": "Get started",
+  "GetStarted": "今すぐ始める",
 
-  "HowToStart": "How to start",
+  "HowToStart": "使い方",
   "HowToStartStep1": "Dropboxアカウントにログインします。",
   "HowToStartStep2": "<0>次のリンクを</0>開きます",
   "HowToStartStep3": "ONLYOFFICEアプリに必要な権限を与えます。",
@@ -41,5 +43,5 @@
   "HowToStartStep5": "「アプリでで開く」->「ONLYOFFICE Docs」をクリックします。",
   "ExploreMoreDetails": "詳しくは<0>こちらのガイド</0>をご覧ください。",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "お気に入りのWebサービスにONLYOFFICE Docsを接続するアプリが必要ですか？または、開発されましたか？"
 }

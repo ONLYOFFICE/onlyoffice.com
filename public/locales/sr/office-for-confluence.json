@@ -35,7 +35,7 @@
   "FeaturesFreeTrial": "Skalabilne verzije preduzeća. <0>Besplatna probna verzija od 30 dana</0>. Self-hosted rešenje za potpunu kontrolu nad vašim podacima. Docs Cloud verzija za Confluence Cloud.",
 
   "HowToStart": "Kako početi",
-  "HowToStartStep1": "Instalirajte <0>ONLYOFFICE Docs</0> na sopstveni server ili se registrujte za <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep1": "Instalirajte <0>ONLYOFFICE Docs</0>.",
   "HowToStartStep2": "Preuzmite aplikaciju za integraciju sa <0>Atlassian Marketplace</0>. Izaberite odgovarajuću opciju prebacivanjem između hosting kartica (Server / Data Center / Cloud).",
   "HowToStartStep3": "Konfigurišite aplikaciju za integraciju.",
 

@@ -5,6 +5,8 @@
   "FreeOnlineOfficeForDropbox": "Online kancelarija za <0>Dropbox</0>",
   "EditOfficeFilesRightInDropbox": "Uredite datoteke u Dropboxu koristeći potpuni skup funkcija ONLYOFFICE Docs-a",
   "GetFreeApp": "Nabavite besplatnu aplikaciju",
+  "HeroImgUrl": "/images/templates/office-for-dropbox/hero/dropbox_header.png",
+  "HeroImgUrl2x": "/images/templates/office-for-dropbox/hero/dropbox_header@2x.png",
 
   "WorkOnOfficeDocumentsStored": "Radite na kancelarijskim dokumentima koji su smešteni na Dropbox-u.",
   "DocumentsTab1Label": "Pregledajte i uređujte tekstualne dokumente, tabele i prezentacije.",
@@ -23,7 +25,7 @@
   "MarketplaceConnectorTitle": "Napravljen da radi besprekorno u Dropboxu",
   "MarketplaceConnectorDescription": "Instalirajte ONLYOFFICE aplikaciju za Dropbox danas sa Dropbox Marketplace-a",
 
-  "WhyOO": "Why ONLYOFFICE?",
+  "WhyOO": "Zašto ONLYOFFICE?",
   "FeaturesRobustSet": "<0>Robustan set</0> alata za uređivanje",
   "FeaturesFamiliarInterface": "<0>Poznati interfejs</0> sa karticama",
   "FeaturesAIHelper": "<0>AI pomoćnik</0> i kolekcija besplatnih dodataka",
@@ -31,9 +33,9 @@
   "FeaturesHighestCompatibility": "<0>Najveća kompatibilnost</0> sa docx, xlsx, i pptx",
   "FeaturesOpenSourceCode": "Vodeni žig, zaštita lozinkom, <0>otvoreni izvorni kod</0>",
   "FeaturesFreeApp": "<0>Besplatna aplikacija</0>, nije potrebna instalacija i registracija",
-  "GetStarted": "Get started",
+  "GetStarted": "Počnite",
 
-  "HowToStart": "How to start",
+  "HowToStart": "Kako početi",
   "HowToStartStep1": "Prijavite se na svoj Dropbox nalog.",
   "HowToStartStep2": "Pratite <0>link</0>",
   "HowToStartStep3": "Odobrite potrebne dozvole za aplikaciju ONLYOFFICE.",
@@ -41,5 +43,5 @@
   "HowToStartStep5": "Kliknite na dugme Otvori u -> ONLYOFFICE Docs.",
   "ExploreMoreDetails": "Istražite više detalja u <0>ovom vodiču</0>.",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Treba vam aplikacija za povezivanje ONLYOFFICE Docs-a sa vašom omiljenom veb uslugom? Ili ste je već razvili?"
 }
