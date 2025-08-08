@@ -32,7 +32,9 @@ import { awsRegions } from "../../../config/regions";
 const currentRegions =
   process.env.NEXT_PUBLIC_TESTING_ON === "true"
     ? awsRegions.testRegions
-    : awsRegions.productionRegions;
+    : process.env.NEXT_PUBLIC_TESTING_ON === "false"
+      ? awsRegions.productionRegions
+      : [];
 const options = currentRegions.map((region) => ({
   key: region.key,
   label: region.info,
@@ -275,15 +277,19 @@ const SignUp = ({
   ]);
 
   useEffect(() => {
-    setFormData((prev) => ({
-      ...prev,
-      email: localStorage.getItem("email") || "",
-    }));
+    const savedEmail = localStorage.getItem("email");
 
-    if (emailIsValid) {
-      setIsFormValid(true);
+    if (savedEmail) {
+      setFormData((prev) => ({
+        ...prev,
+        email: savedEmail,
+      }));
+
+      if (validateEmail(savedEmail)) {
+        setIsFormValid(true);
+      }
     }
-  }, [emailIsValid]);
+  }, []);
 
   return (
     <>

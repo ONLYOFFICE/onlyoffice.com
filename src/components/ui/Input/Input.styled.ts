@@ -160,7 +160,9 @@ const StyledInputField = styled.input<{
     font-size: 16px;
     line-height: 24px;
     color: ${(props) =>
-      props.$status === "error" ? "rgba(203, 0, 0, 0.4)" : "#ccccccc"};
+      !props.$label && props.$status === "error"
+        ? "rgba(203, 0, 0, 0.4)"
+        : "#cccccc"};
 
     @media ${device.mobile} {
       font-size: 14px;
