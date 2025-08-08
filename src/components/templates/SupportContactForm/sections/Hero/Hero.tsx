@@ -11,6 +11,7 @@ import { Link } from "@src/components/ui/Link";
 import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { selectItems } from "./data/selectItems";
 import { ICheckStatus, IFormData, ISelectSubjectItems } from "../../SupportContactForm.types";
+import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { hasOption } from "../../utils/typeGuards";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";
@@ -22,11 +23,14 @@ import {
   StyledHeroForm,
   StyledHeroHCaptchaWrapper,
   StyledHeroHeading,
+  StyledHeroLoaderButtonWrapper,
+  StyledHeroLoadText,
   StyledHeroOptions,
   StyledHeroPaidLicense,
   StyledHeroPaidLicenseText,
   StyledHeroRadioInput,
   StyledHeroRadioLabel,
+  StyledHeroRequestStatusText,
   StyledHeroSelect,
   StyledHeroSelectLabel,
   StyledHeroSelectText,
@@ -54,6 +58,7 @@ const MAX_FILES = 10;
 const Hero = () => {
   const { t } = useTranslation("support-contact-form");
   const { locale } = useRouter();
+  const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const [loadStatus, setLoadStatus] = useState<ILoaderButton["status"]>("default");
   const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
     name: "default",
@@ -228,7 +233,41 @@ const Hero = () => {
     }
   }
 
+  const clearData = () => {
+    setFormData({
+      product: "",
+      subject: "",
+      specifyOfOther: "",
+      paidLicense: true,
+      description: "",
+      files: [],
+      name: "",
+      email: "",
+      hcaptcha: null
+    });
+    setCheckStatus({
+      name: "default",
+      email: "default",
+      file: "default",
+    });
+    setErrorFileName("");
+    setSelectedProduct([]);
+    setSelectedSubjectOption("");
+    setIsSubjectOpen(false);
+    setLoadStatus("default");
+    hCaptchaRef.current?.resetCaptcha();
+  }
+
   const handleOnSubmit = async () => {
+    if (loadStatus === "loading") return;
+    if (loadStatus === "success") {
+      clearData();
+      return;
+    }
+    if (loadStatus === "error") {
+      clearData();
+      return;
+    }
     setLoadStatus("loading");
     const from = getFromParam();
 
@@ -513,6 +552,7 @@ const Hero = () => {
           />
           <StyledHeroHCaptchaWrapper>
             <HCaptcha
+              ref={hCaptchaRef}
               onVerify={(token) => {setFormData((prev) => ({ ...prev, hcaptcha: token }))}}
               onExpire={() => {setFormData((prev) => ({ ...prev, hcaptcha: null }))}}
             />
@@ -541,16 +581,42 @@ const Hero = () => {
               />
             </StyledHeroAgreeText>
           </StyledHeroHCaptchaWrapper>
-          <LoaderButton
-            label={t("Submit")}
-            onClick={() => handleOnSubmit()}
-            disabled={
-              checkStatus.name !== "success" ||
-              checkStatus.email !== "success" ||
-              formData.hcaptcha === null
-            }
-            status={loadStatus}
-         />
+          <StyledHeroLoaderButtonWrapper>
+            {loadStatus === "loading" && (
+             <StyledHeroLoadText
+               size={4}
+               label={t("PleaseWait")}
+               color="#999999"
+             />
+            )}
+            <LoaderButton
+              label={t("Submit")}
+              onClick={() => handleOnSubmit()}
+              disabled={
+                checkStatus.name !== "success" ||
+                checkStatus.email !== "success" ||
+                formData.hcaptcha === null
+              }
+              status={loadStatus}
+              fullWidth={true}
+            />
+            {loadStatus === "success" && (
+              <StyledHeroRequestStatusText
+                size={3}
+                label={t("YourRequestHasBeenSentSuccessfully")}
+                color="#333333"
+                textAlign="center"
+              />
+            )}
+            {loadStatus === "error" && (
+              <StyledHeroRequestStatusText
+                size={3}
+                label={t("WeAreSorryButAnErrorOccurred")}
+                color="#CB0000"
+                textAlign="center"
+              />
+            )}
+         </StyledHeroLoaderButtonWrapper>
         </StyledHeroForm>
       </Container>
     </Section>

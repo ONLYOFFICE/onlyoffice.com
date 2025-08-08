@@ -461,6 +461,21 @@ const StyledHeroAgreeText = styled(Text)`
   }
 `;
 
+const StyledHeroLoaderButtonWrapper = styled.div`
+  position: relative;
+`;
+
+const StyledHeroLoadText = styled(Text)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -25px;
+`;
+
+const StyledHeroRequestStatusText = styled(Text)`
+  margin-top: 16px;
+`;
+
 export {
   StyledHeroHeading,
   StyledHeroText,
@@ -490,4 +505,7 @@ export {
   StyledHeroUploadItemRemove,
   StyledHeroHCaptchaWrapper,
   StyledHeroAgreeText,
+  StyledHeroLoaderButtonWrapper,
+  StyledHeroLoadText,
+  StyledHeroRequestStatusText,
 };
