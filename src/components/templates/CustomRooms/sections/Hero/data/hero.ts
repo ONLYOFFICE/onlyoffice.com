@@ -1,6 +1,6 @@
-import { IRoomsHero } from "@src/components/modules/rooms/RoomsHero";
+import { IRoomsHeroVideo } from "@src/components/modules/rooms/RoomsHeroVideo";
 
-export const hero: IRoomsHero = {
+export const hero: IRoomsHeroVideo = {
   heading: "WorkTogetherAccording",
   text: "EditAndCollaborate",
   items: [

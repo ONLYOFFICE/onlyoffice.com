@@ -9,6 +9,4 @@ export interface IRoomsHero {
   items: { label: string }[];
   /** Hero image. */
   image: { url: string; url2x: string };
-  /** Hero video url. */
-  videoUrl: string;
 }

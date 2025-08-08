@@ -27,7 +27,7 @@ const Hero = () => {
   };
 
   if (locale === "zh") {
-    return <RoomsHero {...heroProps} videoUrl={hero.videoUrl} />;
+    return <RoomsHero {...heroProps} />;
   }
 
   return <RoomsHeroVideo {...heroProps} videoUrl={hero.videoUrl} />;

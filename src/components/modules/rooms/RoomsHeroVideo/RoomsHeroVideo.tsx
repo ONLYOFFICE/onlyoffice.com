@@ -18,7 +18,7 @@ const RoomsHeroVideo = ({
   text,
   button,
   items,
-  image: { url: imgUrl, url2x: imgUrl2x },
+  image: { url2x: imgUrl2x },
   videoUrl,
 }: IRoomsHeroVideo) => {
   return (
