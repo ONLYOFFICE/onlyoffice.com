@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Colabora eficazmente en todo tipo de documentos ofimáticos | ONLYOFFICE",
+  "PageDescription": "Comparte, colabora y comunícate en tiempo real para trabajar con más rapidez",
+
+  "Header": "Colabora <0>eficazmente</0> en todo tipo de documentos ofimáticos",
+  "SubHeader": "Comparte, colabora y comunícate en tiempo real para trabajar con más rapidez",
+
+  "SwitcherTitle1": "Comparte",
+  "SwitcherTitle2": "Coedita",
+  "SwitcherTitle3": "Comenta",
+  "SwitcherTitle4": "Comunícate",
+  "SwitcherTitle5": "Sigue los cambios",
+  "SwitcherTitle6": "Compara y combina",
+  "SwitcherTitle7": "Gestiona las versiones",
+
+  "Feature1Title": "Comparte documentos con permisos flexibles",
+  "Feature1Desc": "Comparte documentos de texto, hojas de cálculo, presentaciones y archivos PDF para verlos o editarlos, y habilita la opción de comentar o revisar. Crea formularios listos para rellenar y deja que otros usuarios los rellenen. Establece permisos de filtrado personalizado para que los colaboradores filtren los datos de forma independiente. <2>Comparte enlaces al rango seleccionado para que otros coautores puedan encontrar rápidamente los datos necesarios, incluso en hojas de gran tamaño.</2> Restringe las opciones de copia, descarga e impresión. También se puede compartir archivos públicamente.",
+
+  "Feature2Title": "Coedita sin estrés",
+  "Feature2Desc": "Colabora en documentos online en tiempo real, utiliza el modo Rápido para mostrar todos los cambios justo después de introducirlos. Activa el modo Estricto para bloquear el párrafo que editas y trabajar en él en privado sin interrupciones.",
+
+  "Feature3Title": "Comenta y menciona",
+  "Feature3Desc": "Deja comentarios para discutir preguntas y problemas. Menciona a los usuarios en los comentarios para invitarles a colaborar y compartir instantáneamente el archivo con ellos. Gestiona los comentarios, ordénalos por autor o fecha.",
+
+  "Feature4Title": "Comunícate",
+  "Feature4Desc": "Chatea con tus coautores directamente en tus documentos. Activa los plugins de Jitsi o Rainbow para hacer llamadas de audio y organizar reuniones de vídeo.",
+
+  "Feature5Title": "Sigue los cambios",
+  "Feature5Desc": "Habilita el seguimiento de cambios para resaltar tus contribuciones y revisar los cambios realizados por otros editores. Acepta o rechaza los cambios uno a uno o todos a la vez. Elige una forma de mostrar los cambios realizados.",
+
+  "Feature6Title": "Compara y combina",
+  "Feature6Desc": "Compara y encuentra rápidamente las diferencias entre dos documentos. Navega entre los cambios, acéptalos o recházalos. Combina dos documentos.",
+
+  "Feature7Title": "Gestiona las versiones",
+  "Feature7Desc": "Accede al historial de versiones de tu documento, comprueba quién creó cada versión y cuándo, qué cambios hizo. Visualiza y recupera versiones anteriores si es necesario, incluido el texto eliminado."
+}
