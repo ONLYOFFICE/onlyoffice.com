@@ -298,7 +298,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "moodle-oo",
     image: {
-      url: "/images/templates/all-connectors/connectors/moodle.svg",
+      url: "/images/templates/all-connectors/connectors/moodle-white.svg",
     },
     name: "Moodle",
     text: "MoodleConnectorText",
@@ -314,7 +314,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "moodle",
     image: {
       bgColor: "#F47F29",
-      url: "/images/templates/all-connectors/connectors/moodle-white.svg",
+      url: "/images/templates/all-connectors/connectors/moodle.svg",
     },
     name: "Moodle",
     text: "MoodleLogicConnectorText",
@@ -329,7 +329,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "neo",
     image: {
-      url: "/images/templates/all-connectors/connectors/neo.png",
+      url: "/images/templates/all-connectors/connectors/neo.svg",
     },
     name: "NEO",
     text: "NEOConnectorText",
@@ -392,7 +392,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "one",
     image: {
-      url: "/images/templates/all-connectors/connectors/one.png",
+      url: "/images/templates/all-connectors/connectors/one.svg",
     },
     name: "ONE",
     text: "ONEConnectorText",
@@ -443,7 +443,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "pintexx",
     image: {
       bgColor: "#FFFFFF",
-      url: "/images/templates/all-connectors/connectors/pintexx.png",
+      url: "/images/templates/all-connectors/connectors/pintexx.svg",
     },
     name: "Pintexx Workplace",
     text: "PintexxConnectorText",
@@ -528,7 +528,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "quasaro",
     image: {
       bgColor: "#FFFFFF",
-      url: "/images/templates/all-connectors/connectors/quasaro.png",
+      url: "/images/templates/all-connectors/connectors/quasaro.svg",
     },
     name: "Quasaro",
     text: "QuasaroConnectorText",

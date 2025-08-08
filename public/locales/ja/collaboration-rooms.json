@@ -1,0 +1,50 @@
+{
+  "PageTitle": "コラボレーションルームでより効率的な共同作業",
+  "PageDescription": "ONLYOFFICE DocSpaceでストレスのない共同編集を楽しもう。",
+
+  "WorkTogetherBetterInCollaborationRooms": "<0>コラボレーションルーム</0>でより効率的な共同作業",
+  "EnjoyStressFreeCoEditing": "ONLYOFFICE DocSpaceでストレスのない共同編集を楽しもう",
+
+  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/en/header_main.png",
+  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/en/header_main@2x.png",
+
+  "CreateFreeAccount": "無料アカウントを作成",
+  "IdealForTeamwork": "チームワークに最適",
+  "EasilyGetAnyGroupWorkOrProject": "同僚やチームメンバー、パートナーなどと一緒に、グループワークやプロジェクトを簡単に進められる",
+  "Education": "教育",
+  "EducationDesc": "エッセイの執筆、長文読解、課題の記入、Excelグリッドの編集、グループプレゼンテーションの準備、電子書籍の作成と閲覧。",
+  "Business": "ビジネス",
+  "BusinessDesc": "契約書、報告書、製品資料など、ビジネスのあらゆる場面で、ダイアグラム、チャート、グラフィックを駆使してコラボレーション。",
+  "Individuals": "個人利用",
+  "IndividualsDesc": "テキスト文書やプレゼンテーションの作成と編集、日常生活におけるフォームの作成と記入。",
+  "Legal": "法務",
+  "LegalDesc": "ステートメント、証明書、ライセンス申請書の作成と共著、契約書やその他の法的文書の注釈と記入。",
+
+  "SecureForSensitiveDocuments": "機密文書の保護",
+  "ProtectYourFiles": "招待したユーザーに利用可能なアクションを定義するアクセスレベルを設定することで、ファイルを保護できます。アクセス管理権限を持つルームマネージャ、ルームファイル/フォルダの管理権限を持つコンテンツ作成者、ルームファイルへのフルアクセス権限を持つエディタ、または読み取り専用アクセス権限を持つビューアなどです。",
+  "SecureImgUrl": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents.png",
+  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents@2x.png",
+  "ConvenientForMultipleCoAuthors": "複数の共著者に便利",
+  "CollaborateEffectively": "効率的なコラボレーションで仕事を早く終わらせる",
+  "CostEffectiveForAnyBudget": "あらゆる予算に対応",
+  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors.png",
+  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors@2x.png",
+  "PayForAdminsOnlyAndAdd": "管理者のみに課金し、通常ユーザーやゲストは無制限に無料で追加できます。小規模チーム向けの無料スタートアッププランをご利用ください。ONLYOFFICE DocSpaceは、中小企業から大企業まで、あらゆる企業に適しています。企業データを完全に管理したいですか？プライベートサーバーにDocSpaceを展開しましょう。",
+  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget.png",
+  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMore": "詳細を見る",
+
+  "LearnMoreHeading": "DocSpaceのコラボレーションルームについてさらに詳しく",
+  "CustomerTestimonial": "お客様の声",
+  "HowKinderhausBerlinSharesAndCollaborates": "Kinderhaus BerlinがONLYOFFICE DocSpaceで機密ファイルを共有し、共同作業する方法",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/ja/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "事例を読む",
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "ビデオガイドでONLYOFFICE DocSpaceをマスター",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "今すぐ視聴",
+  "HelpCenter": "ヘルプセンター",
+  "ExploreTheToolsetAndCollaborativeFeatures": "エディタで利用可能なツールセットとコラボレーション機能を見る",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/userguides/docs-index.aspx"
+}

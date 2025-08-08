@@ -1,0 +1,46 @@
+{
+  "PageTitle": "适用于 Confluence 的在线办公套件 | ONLYOFFICE",
+  "PageDescription": "在 Confluence 中使用 ONLYOFFICE 文档，处理各种办公文档",
+
+  "OnlineOfficeForConfluence": "适用于 Confluence 的在线办公套件",
+  "WorkOnAllKindsOfOfficeDocuments": "在 Confluence 中使用 ONLYOFFICE 文档，处理各种办公文档",
+  "GetStarted": "开始使用",
+  "RequestFreeDemo": "Request free demo",
+  "HeroImgUrl": "/images/templates/office-for-confluence/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-confluence/hero/zh/hero@2x.png",
+
+  "EditAndCoAuthorOfficeDocuments": "在 Confluence 界面中编辑和协作办公文档",
+  "DocumentsTab1Label": "在附件列表中处理已上传的办公文件",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-confluence/documents/zh/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-confluence/documents/zh/documents-1@2x.png",
+  "DocumentsTab2Label": "创建和编辑文档、表格和幻灯片",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-confluence/documents/zh/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-confluence/documents/zh/documents-2@2x.png",
+  "DocumentsTab3Label": "创建、注释和填写 PDF 表单 ",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-confluence/documents/zh/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-confluence/documents/zh/documents-3@2x.png",
+  "DocumentsTab4Label": "实时与同事协作处理文档",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-confluence/documents/zh/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-confluence/documents/zh/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "为了与 Confluence 无缝集成而设计",
+  "MarketplaceConnectorDescription": "立即从 Atlassian Marketplace 获取用于 Confluence 的 ONLYOFFICE 应用。",
+
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "FeaturesFormats": "支持超过 <0>50 种文件格式</0>，高度兼容微软 Office 格式：DOCX、XLSX、PPTX。",
+  "FeaturesAIHelper": "拥有强大的编辑、格式和样式工具。集成 <0>AI 助手</0>。",
+  "FeatureCoEditing": "实时和段落锁定<0>共同编辑</0>模式、审阅、版本历史、文档比较、批注和聊天。音频和视频通话。",
+  "FeaturesEnhancedSecurity": "<0>高度安全性</0>。灵活的访问权限和 JWT。活动跟踪和审计报告。静态和传输加密。水印和密码保护。开源代码。",
+  "FeaturesEasyConfiguration": "<0>易于配置</0>。通过 Atlassian Marketplace 中现成的连接器实现无缝集成。适用于 Confluence 服务器、Data Center 和 Cloud。",
+  "FeaturesFreeTrial": "可扩展的企业版本。<0>免费试用30 天</0>。自托管解决方案，可完全控制您的数据。用于 Confluence Cloud 的文档云版本。",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1": "部署 <0>ONLYOFFICE 文档</0>。",
+  "HowToStartStep2": "从 <0>Atlassian Marketplace</0> 获取集成应用。切换至托管选项卡（Server / Data Center / Cloud）选择相应的选项。",
+  "HowToStartStep3": "配置集成应用程序。",
+
+  "HowToConnect": "如何将 ONLYOFFICE 文档连接到 Confluence",
+  "ReadDetailedInstructions": "在<0>帮助中心</0>阅读详细说明。",
+
+  "NeedAnAppToConnect": "需要应用程序将 ONLYOFFICE 文档连接到您喜爱的网络服务？或者您已经开发了一个？"
+}

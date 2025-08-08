@@ -41,8 +41,8 @@ const Hero = () => {
         </StyledHeroWrapper>
 
         <StyledHeroImg
-          $imgUrl="/images/templates/office-for-dropbox/hero/dropbox-header.png"
-          $imgUrl2x="/images/templates/office-for-dropbox/hero/dropbox-header@2x.png"
+          $imgUrl={t("HeroImgUrl")}
+          $imgUrl2x={t("HeroImgUrl2x")}
         />
       </Container>
     </StyledHero>
