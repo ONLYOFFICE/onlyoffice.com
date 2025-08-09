@@ -1,0 +1,34 @@
+{
+  "PageTitle": "Jira 向けのオンラインオフィススイート | ONLYOFFICE Docs",
+  "PageDescription": "Jira 内でドキュメントを編集・共同編集し、入力可能なフォームを作成",
+
+  "OnlineOfficeForConnector": "Jira用のオンラインオフィス",
+  "Subheader": "Jira Software 上で ONLYOFFICE Docs を使って、あらゆるオフィス文書を扱いましょう",
+
+  "WorkWithinConnector": "Jira の画面上でオフィス文書を編集・共同執筆。",
+  "DocumentsTab1Label": "Jira ダッシュボード上で、タスクに添付されたオフィスファイルを閲覧・編集・共同編集。",
+  "DocumentsTab2Label": "テキスト文書、スプレッドシート、プレゼンテーションを作成・編集。",
+  "DocumentsTab3Label": "リアルタイムでチームメンバーと共同作業。",
+  "GetStarted": "スタートアップ",
+
+  "MarketplaceConnectorTitle": "Jira とシームレスに連携するよう設計されています",
+  "MarketplaceConnectorDescription": "Jira 用の ONLYOFFICE アプリをAtlassian Marketplace から入手いただけます。",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "Reason1": "<0>50 以上のファイル形式</0> に対応し、MS Office 形式（DOCX、XLSX、PPTX）と完全互換。",
+  "Reason2": "豊富な編集・書式設定・デザイン機能を搭載。 <0>AI ヘルパー</0> が統合。",
+  "Reason3": "リアルタイムかつ段落単位でのロックによる <0>共同編集</0>、レビュー、バージョン履歴、文書比較、コメント＆チャット機能、音声・ビデオ通話。",
+  "Reason4": "<0>強化されたセキュリティ</0>。柔軟なアクセス権と JWT、ウォーターマークやパスワード保護、オープンソースコード。",
+  "Reason5": "Jira 管理画面からの <0>簡単な設定</0>。<1>Atlassian Marketplace</1> で提供されているコネクターによるシームレスな統合。Jira Server および Data Center に対応。",
+  "Reason6": "データを完全にコントロールできるクラウド版およびオンプレミス版。拡張性の高いエンタープライズ版も用意。 <0>30 日間の無料トライアル</0>。",
+
+  "HowToStart": "開始方法",
+  "HowToStartStep1": "<0>ONLYOFFICE Docs</0> を独自サーバーに導入するか、<1>Docs Cloud</1> アカウントを作成します。",
+  "HowToStartStep2": "<0>Atlassian Marketplace</0> から ONLYOFFICE コネクターを入手します。",
+  "HowToStartStep3": "コネクターを設定し、JWT を有効化します。",
+
+  "ReadDetailedInstructions": "<0>ヘルプセンター</0>の詳しい説明をお読みください。",
+  "HowToConnect": "ONLYOFFICE DocsとJira Softwareを連携させる方法",
+
+  "NeedAnAppToConnect": "ONLYOFFICEとお気に入りのウェブサービスをつなぐアプリが必要ですか？または開発済みですか？"
+}
