@@ -6,6 +6,20 @@
   "WorkWithOfficeDocuments": "ONLYOFFICE を使用して Moodle 内でオフィスドキュメントを操作",
   "GetStarted": "Get started",
 
+  "MaterialsTitle": "すべての学習教材を1か所にまとめて保存し、学生と簡単に共有",
+  "MaterialsTab1Label": "DocSpaceアカウントのパブリックルームをMoodleコースに埋め込み",
+  "MaterialsTab1ImgUrl": "/images/templates/office-for-moodle/materials/screenshot1_0.png",
+  "MaterialsTab1ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot1_0@2x.png",
+  "MaterialsTab2Label": "教師、管理者、コース作成者がドキュメント、スプレッドシート、スライド、PDFの作成と編集が可能",
+  "MaterialsTab2ImgUrl": "/images/templates/office-for-moodle/materials/screenshot2_0.png",
+  "MaterialsTab2ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot2_0@2x.png",
+  "MaterialsTab3Label": "対応する役割を持つ他のMoodleユーザーと共同でファイルを編集できます。 ドキュメントに加えられたすべての変更を追跡できます",
+  "MaterialsTab3ImgUrl": "/images/templates/office-for-moodle/materials/screenshot3_0.png",
+  "MaterialsTab3ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot3_0@2x.png",
+  "MaterialsTab4Label": "埋め込みルームを学生と共有して閲覧できます",
+  "MaterialsTab4ImgUrl": "/images/templates/office-for-moodle/materials/screenshot4_0.png",
+  "MaterialsTab4ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot4_0@2x.png",
+
   "EditAndCollaborateOnOfficeDocuments": "Moodle コース構造内で直接オンラインでオフィスドキュメントを編集およびコラボレーション",
   "DocumentsTab1Label": "ドキュメント、スプレッドシート、スライド、フォームをアップロード、作成、編集",
   "DocumentsTab1ImgUrl": "/images/templates/office-for-moodle/documents/documents-1.png",
@@ -56,9 +70,6 @@
 
   "HowToStart": "始め方は？",
   "HowToStartStep1": "自分のサーバーに <0>ONLYOFFICE Docs</0> をデプロイするか、<1>ONLYOFFICE Docs Cloud</1> にサインアップ",
-  "HowToStartStep2": "Moodle ディレクトリからプラグインを取得：<0>メイン統合プラグイン</0> / <1>課題提出プラグイン</1>。",
-  "HowToStartStep3": "通常の Moodle プラグインのインストール手順に従います。",
-  "HowToStartStep4": "インストールしたプラグインを設定します。",
   "HowToConnect": "ONLYOFFICE Docs と Moodle の接続",
   "ReadDetailedInstructions": "<0>ヘルプセンター</0>で詳細な手順を読む",
 
