@@ -24,6 +24,10 @@ export default async function handler(
    } = req.body;
 
   try {
+    const modulesString = Object.keys(modules)
+      .filter(key => modules[key])
+      .join(", ");
+
     const transporter = emailTransporter();
     await transporter.sendMail({
       from,
@@ -33,7 +37,7 @@ export default async function handler(
         os,
         users_count,
         responsible,
-        modules,
+        modules: modulesString,
         issues,
         simple,
         meet,

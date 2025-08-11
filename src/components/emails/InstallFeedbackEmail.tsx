@@ -2,15 +2,7 @@ interface IInstallFeedbackEmail {
   os: string;
   users_count: string;
   responsible: string;
-  modules: {
-    documents: boolean;
-    crm: boolean;
-    community: boolean;
-    calendar: boolean;
-    projects: boolean;
-    people: boolean;
-    mail: boolean;
-  };
+  modules: string;
   issues: string;
   simple: string;
   meet: string;

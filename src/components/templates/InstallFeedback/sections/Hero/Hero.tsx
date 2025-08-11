@@ -60,16 +60,44 @@ const Hero = () => {
     comments: "",
   });
 
-  const handleSubmit = async () => {
-    setStatus("loading");
+  const clearData = () => {
+    setStatus("default");
+    setFormData({
+      operatingSystem: "Microsoft Windows Vista SP2",
+      countsOfUsers: "1-30",
+      whoIsResponsible: "",
+      modules: {
+        documents: false,
+        crm: false,
+        community: false,
+        calendar: false,
+        projects: false,
+        people: false,
+        mail: false,
+      },
+      issues: "Yes",
+      intuitiveAndSimple: "Yes",
+      degreeVersionMeet: "Meet absolutely",
+      planToUse: "Yes",
+      comments: "",
+    });
+  };
 
+  const handleSubmit = async () => {
+    if (status === "loading") return;
+    if (status === "success" || status === "error") {
+      clearData();
+      return;
+    };
+
+    setStatus("loading");
     const from = getFromParam();
 
     try {
       const response = await fetch("/api/install-feedback", {
         method: "POST",
         headers: {
-          "Content-Type": "json/application"
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({
           os: formData.operatingSystem,
@@ -95,7 +123,7 @@ const Hero = () => {
     } catch (error) {
       console.error("InstallFeedback api returns errors:", error);
       setStatus("error");
-    }
+    };
   };
 
   return (
@@ -204,6 +232,7 @@ const Hero = () => {
               <StyledHeroLoaderButton
                 label={t("SendFeedback")}
                 onClick={handleSubmit}
+                status={status}
               />
             </StyledHeroLoaderButtonWrapper>
           </StyledHeroForm>
@@ -214,7 +243,7 @@ const Hero = () => {
         <Container maxWidth="1050px">
           <StyledHeroPopupStatus>
             <StyledHeroCrossButton
-              onClick={() => setStatus("default")}
+              onClick={clearData}
             />
             {status === "success" && (
               <StyledHeroStatusHeading
@@ -248,7 +277,7 @@ const Hero = () => {
                 variant="secondary"
                 borderRadius="3px"
                 fullWidth={true}
-                onClick={() => setStatus("default")}
+                onClick={clearData}
               />
             </StyledHeroPopupWrapper>
           </StyledHeroPopupStatus>
