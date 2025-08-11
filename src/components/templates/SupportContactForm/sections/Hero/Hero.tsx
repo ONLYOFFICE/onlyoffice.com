@@ -70,9 +70,9 @@ const Hero = () => {
 
   const [selectedProduct, setSelectedProduct] = useState<ISelectOption[]>([]);
   const options = [
-    { value: "Cloud Service", label: "Cloud Service" },
-    { value: "Self-Hosted Server", label: "Self-Hosted Server" },
-    { value: "Applications", label: "Applications" },
+    { value: "Cloud Service", label: t("CloudService") },
+    { value: "Self-Hosted Server", label: t("SelfHostedServer") },
+    { value: "Applications", label: t("Applications") },
   ];
 
   const [selectedSubject, setSelectedSubject] = useState<ISelectSubjectItems | undefined>();
@@ -345,7 +345,7 @@ const Hero = () => {
             selected={selectedProduct}
             setSelected={setSelectedProduct}
             options={options}
-            label="Product"
+            label={t("Product")}
             maxWidth="100%"
             status={selectedProduct.length > 0 ? "success" : "default"}
           />
@@ -365,7 +365,7 @@ const Hero = () => {
                 $isSelected={selectedSubjectOption.length > 0}
               />
               <StyledHeroSelectText
-                label={selectedSubjectOption}
+                label={t(selectedSubjectOption)}
                 size={2}
                 color="#333333"
               />
@@ -387,14 +387,14 @@ const Hero = () => {
                           onClick={() => handleSubjectChoose(item.option, item.value)}
                           $isOptionSelected={item.value === formData.subject}
                         >
-                          {item.option}
+                          {t(item.option)}
                         </StyledSelectOption>
                       )}
                       {item.title && (
                         <StyledSelectOptionTitle
                           type="button"
                         >
-                          {item.title}
+                          {t(item.title)}
                         </StyledSelectOptionTitle>
                       )}
                       {item?.subData && (
@@ -405,7 +405,7 @@ const Hero = () => {
                             onClick={() => handleSubjectChoose(subItem.option, subItem.value)}
                             $isOptionSelected={subItem.value === formData.subject}
                           >
-                            {subItem.option}
+                            {t(subItem.option)}
                           </StyledSelectOptionSub>
                         ))
                       )}
@@ -453,7 +453,7 @@ const Hero = () => {
             <StyledHeroRadioLabel htmlFor="paid-license-no">{t("No")}</StyledHeroRadioLabel>
           </StyledHeroPaidLicense>
           <TextArea
-            label="Description"
+            label={t("Description")}
             value={formData.description}
             onChange={(event) => {setFormData((prev) => ({ ...prev, description: event.target.value}))}}
             fullWidth={true}
@@ -515,8 +515,8 @@ const Hero = () => {
             )}
           </StyledHeroUploadWrapper>
           <Input
-            label="Name"
-            placeholder="Name"
+            label={t("Name")}
+            placeholder={t("Name")}
             type="text"
             value={formData.name}
             onChange={(event) => {setFormData((prev) => ({ ...prev, name: event.target.value }))}}
@@ -533,7 +533,7 @@ const Hero = () => {
             }
           />
           <Input
-            label="Email"
+            label={t("Email")}
             placeholder="name@domain.com"
             type="email"
             value={formData.email}
