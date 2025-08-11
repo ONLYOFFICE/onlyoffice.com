@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { ILoaderButton } from "@src/components/ui/LoaderButton";
 import { QuestionBlock } from "./sub-components/QuestionBlock";
+import { getFromParam } from "@src/utils/getParams";
 import { IFormData } from "../../InstallFeedback.types";
 
 import {
@@ -59,12 +60,42 @@ const Hero = () => {
     comments: "",
   });
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     setStatus("loading");
-    setTimeout(() => {
-      console.log(formData);
+
+    const from = getFromParam();
+
+    try {
+      const response = await fetch("/api/install-feedback", {
+        method: "POST",
+        headers: {
+          "Content-Type": "json/application"
+        },
+        body: JSON.stringify({
+          os: formData.operatingSystem,
+          users_count: formData.countsOfUsers,
+          responsible: formData.whoIsResponsible,
+          modules: formData.modules,
+          issues: formData.issues,
+          simple: formData.intuitiveAndSimple,
+          meet: formData.degreeVersionMeet,
+          support: formData.planToUse,
+          comments: formData.comments,
+          from,
+        })
+      })
+
+      const responseData = await response.json();
+
+      if (responseData.status === "success") {
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error("InstallFeedback api returns errors:", error);
       setStatus("error");
-    }, 2000);
+    }
   };
 
   return (
