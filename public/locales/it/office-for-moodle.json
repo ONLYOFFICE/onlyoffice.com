@@ -4,7 +4,21 @@
 
   "OnlineOfficeForMoodle": "Office online per Moodle",
   "WorkWithOfficeDocuments": "Lavora con documenti d'ufficio all'interno di Moodle utilizzando ONLYOFFICE",
-  "GetStarted": "Get started",
+  "GetStarted": "Inizia",
+
+  "MaterialsTitle": "Archivia tutti i materiali didattici in un unico posto e condividili facilmente con gli studenti",
+  "MaterialsTab1Label": "Incorpora stanze pubbliche dal tuo account DocSpace nei corsi Moodle",
+  "MaterialsTab1ImgUrl": "/images/templates/office-for-moodle/materials/screenshot1_0.png",
+  "MaterialsTab1ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot1_0@2x.png",
+  "MaterialsTab2Label": "Consenti a insegnanti, manager e creatori di corsi di creare e modificare documenti, fogli di calcolo, presentazioni e PDF",
+  "MaterialsTab2ImgUrl": "/images/templates/office-for-moodle/materials/screenshot2_0.png",
+  "MaterialsTab2ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot2_0@2x.png",
+  "MaterialsTab3Label": "Lavora sui file insieme ad altri utenti Moodle che hanno i ruoli corrispondenti. Tieni traccia di tutte le modifiche apportate ai documenti",
+  "MaterialsTab3ImgUrl": "/images/templates/office-for-moodle/materials/screenshot3_0.png",
+  "MaterialsTab3ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot3_0@2x.png",
+  "MaterialsTab4Label": "Condividi le stanze incorporate per la visualizzazione con gli studenti",
+  "MaterialsTab4ImgUrl": "/images/templates/office-for-moodle/materials/screenshot4_0.png",
+  "MaterialsTab4ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot4_0@2x.png",
 
   "EditAndCollaborateOnOfficeDocuments": "Modifica e collabora ai documenti d'ufficio online direttamente all'interno della struttura del corso Moodle",
   "DocumentsTab1Label": "Carica, crea e modifica documenti, fogli di calcolo, presentazioni, moduli",
@@ -61,6 +75,11 @@
   "HowToStartStep4": "Configura il plugin installato.",
   "HowToConnect": "Connessione di ONLYOFFICE Docs con Moodle",
   "ReadDetailedInstructions": "Leggi le istruzioni dettagliate nel <0>Centro assistenza</0>",
+
+  "HowToStartStep1_1": "Accedi al tuo account DocSpace. <0>Crea un account gratuito nel cloud</0> o <1>distribuisci la versione self-hosted</1>.",
+  "HowToStartStep2_1": "Configura la tua piattaforma DocSpace.",
+  "HowToStartStep3_1": "Configura le impostazioni del plugin in Moodle.",
+  "HowToStartStep4_1": "Esporta gli utenti Moodle nel tuo DocSpace e inizia a lavorare.",
 
   "LearnMoreHeading": "Scopri di più sull'integrazione di Moodle con ONLYOFFICE",
   "HowEnsuresDigitalEquality": "Come il Collège-Lycée Sacré Cœur de Taravao garantisce l'uguaglianza digitale per tutti gli studenti utilizzando ONLYOFFICE e Moodle",

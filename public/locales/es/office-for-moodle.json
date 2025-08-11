@@ -4,7 +4,21 @@
 
   "OnlineOfficeForMoodle": "Oficina en línea para Moodle",
   "WorkWithOfficeDocuments": "Trabaje con documentos de oficina en Moodle usando ONLYOFFICE",
-  "GetStarted": "Get started",
+  "GetStarted": "Empezar",
+
+  "MaterialsTitle": "Almacene todos los materiales de aprendizaje en un solo lugar y compártalos fácilmente con los estudiantes",
+  "MaterialsTab1Label": "Incruste salas públicas desde su cuenta DocSpace en los cursos de Moodle",
+  "MaterialsTab1ImgUrl": "/images/templates/office-for-moodle/materials/screenshot1_0.png",
+  "MaterialsTab1ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot1_0@2x.png",
+  "MaterialsTab2Label": "Permita que los profesores, administradores y creadores de cursos creen y editen documentos, hojas de cálculo, presentaciones y PDF",
+  "MaterialsTab2ImgUrl": "/images/templates/office-for-moodle/materials/screenshot2_0.png",
+  "MaterialsTab2ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot2_0@2x.png",
+  "MaterialsTab3Label": "Trabaje en archivos junto con otros usuarios de Moodle que tengan los roles correspondientes. Realice un seguimiento de todos los cambios realizados en los documentos",
+  "MaterialsTab3ImgUrl": "/images/templates/office-for-moodle/materials/screenshot3_0.png",
+  "MaterialsTab3ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot3_0@2x.png",
+  "MaterialsTab4Label": "Comparta las salas incrustadas para visualización con los estudiantes",
+  "MaterialsTab4ImgUrl": "/images/templates/office-for-moodle/materials/screenshot4_0.png",
+  "MaterialsTab4ImgUrl2x": "/images/templates/office-for-moodle/materials/screenshot4_0@2x.png",
 
   "EditAndCollaborateOnOfficeDocuments": "Edite y colabore en documentos de oficina en línea directamente dentro de la estructura del curso de Moodle",
   "DocumentsTab1Label": "Suba, cree y edite documentos, hojas de cálculo, presentaciones, formularios",
@@ -25,7 +39,7 @@
 
   "ScheduleYourFreeDemo": "Programe su demostración gratuita",
 
-  "QuoteText": "\"Recomendamos absolutamente ONLYOFFICE a las escuelas. Tal vez hay software dedicado para empresas, pero si quiere controlar sus datos y tener un sistema colaborativo y simple para trabajar con sus estudiantes, es una gran solución.\"",
+  "QuoteText": "\"Recomendamos ONLYOFFICE a las escuelas. Quizás hay software especializado para empresas, pero si quiere controlar sus archivos y tener un sistema simple y colaborativo para trabajar con sus estudiantes, es una excelente solución.\"",
   "QuoteAuthor": "Dr. Colin Jonathan",
   "QuoteAuthorInfo": "Profesor de Física y Química, Robótica, Ciencia y Tecnología",
 
@@ -61,6 +75,12 @@
   "HowToStartStep4": "Configure el plugin instalado.",
   "HowToConnect": "Conectando ONLYOFFICE Docs con Moodle",
   "ReadDetailedInstructions": "Lea instrucciones detalladas en el <0>Centro de Ayuda</0>",
+
+  "HowToStartStep1_1": " Inicie sesión en su cuenta DocSpace. <0>Cree una cuenta gratuita en la nube</0> o <1>implemente la versión autohospedada</1>.",
+  "HowToStartStep2_1": "Configure su plataforma DocSpace.",
+  "HowToStartStep3_1": "Configure los ajustes del plugin en Moodle.",
+  "HowToStartStep4_1": "Exporte los usuarios de Moodle a su DocSpace y comience a trabajar.",
+
 
   "LearnMoreHeading": "Aprenda más sobre la integración de Moodle con ONLYOFFICE",
   "HowEnsuresDigitalEquality": "Cómo el Collège-Lycée Sacré Cœur de Taravao garantiza la igualdad digital para todos los estudiantes utilizando ONLYOFFICE y Moodle",

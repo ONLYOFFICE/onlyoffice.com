@@ -1,6 +1,6 @@
 import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
 
-export const items: IStepCarouselItem[] = [
+export const itemsTab1: IStepCarouselItem[] = [
   {
     imgUrl: "/images/templates/office-for-moodle/how-to-start/step-1.svg",
     heading: "HowToStartStep1",
