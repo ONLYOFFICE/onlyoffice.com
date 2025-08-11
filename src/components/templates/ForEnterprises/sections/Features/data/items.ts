@@ -271,27 +271,20 @@ export const items = [
           url: "EnterpriseImgUrl5",
           url2x: "EnterpriseImgUrl5",
         },
-        links: [
+        buttons: [
           {
-            href: "/download-desktop#mobile",
             label: "DownloadNow",
-            isExternal: false,
+            href: "/download-desktop#desktop",
             isPrimary: true,
-            isLink: false,
+            isExternal: false,
           },
           {
-            href: "/office-for-ios?from=for-enterprises",
-            label: "iOS",
-            isExternal: false,
-            isPrimary: false,
+            label: "IOSAndroidLink",
             isLink: true,
-          },
-          {
-            href: "/office-for-android?from=for-enterprises",
-            label: "Android",
-            isExternal: false,
-            isPrimary: false,
-            isLink: true,
+            links: [
+              { href: "/office-for-ios?from=for-enterprises" },
+              { href: "/office-for-android?from=for-enterprises" },
+            ],
           },
         ],
         connectorsItems: [

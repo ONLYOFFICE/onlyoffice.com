@@ -1,0 +1,53 @@
+{
+  "PageTitle": "API de automação | ONLYOFFICE",
+  "PageDescription": "Use seus elementos de interface personalizados para interagir com o conteúdo do documento do lado de fora.",
+
+  "HeroTitle": "API de automação do ONLYOFFICE",
+  "HeroSubtitle" : "Coloque todos os controles na interface da sua plataforma e manipule o conteúdo do documento de fora dos editores",
+  "HeroButton" : "SOLICITAR DEMONSTRAÇÃO GRATUITA",
+
+  "WhatIsTitle" : "O que é <0>API de automação</0>",
+  "WhatIsSubtitle" : "<0>API de automação ONLYOFFICE</0> com a classe Connector torna possível interagir com documentos do Office de fora. Você pode obter alterações feitas em arquivos usando seus próprios elementos de interface personalizados.",
+  "CheckExamples" : "Veja exemplos",
+  "Webinar" : "API de automação do ONLYOFFICE [Webinar 2024]",
+  "WatchOurWebinar" : "Assista ao nosso webinar",
+
+  "WhatAutomationAPICan" : "O que <0>API de automação</0> pode fazer",
+  "MostPopularExamples" : "Exemplos mais populares",
+  "WorkingWithComments" : "Trabalhando com comentários",
+  "WorkingWithReview" : "Trabalhando com alterações de revisão",
+  "FillingOutForms" : "Preenchendo formulários",
+  "CollectsAllTheCommentsFrom" : "Coleta todos os comentários do documento e os exibe na interface personalizada.",
+  "ThereAreNoComments" : "Não há comentários no documento.",
+  "SendReply" : "ADICIONAR RESPOSTA",
+  "AddReply" : "ADICIONAR RESPOSTA",
+  "Delete" : "APAGAR",
+  "SendComment" : "ADICIONAR COMENTÁRIO",
+  "AddComment" : "ADICIONAR COMENTÁRIO",
+  "EnterYourReplyHere" : "Introduza a sua resposta aqui",
+  "EnterYourCommentHere" : "Introduza o seu comentário aqui",
+  "ManagesReviewProcess" : "Gerencia o processo de revisão de uma fonte externa.",
+  "Accept" : "ACEITAR",
+  "Reject" : "REJEITAR",
+  "FillsInTheEmptyCells" : "Preenche as células vazias no formulário fornecido.",
+  "ChooseExample" : "Escolher exemplo",
+
+  "ReadyToUse" : "Exemplo pronto para uso: integração com Odoo",
+  "UsingAutomationAPI" : "Usando a API de automação, o ONLYOFFICE possibilita que os usuários do Odoo criem e preencham modelos com dados disponíveis no Odoo.",
+  "Screen1ImgUrl" : "/images/templates/automation-api/carousel/en/create_new_form_templates_for_any_odoo_module.png",
+  "Screen1ImgUrl2x" : "/images/templates/automation-api/carousel/en/create_new_form_templates_for_any_odoo_module@2x.png",
+  "Screen2ImgUrl" : "/images/templates/automation-api/carousel/en/edit_the_existing_form_templates.png",
+  "Screen2ImgUrl2x" : "/images/templates/automation-api/carousel/en/edit_the_existing_form_templates@2x.png",
+  "Screen3ImgUrl" : "/images/templates/automation-api/carousel/en/fill_templates_out_with_data_available_in_odoo.png",
+  "Screen3ImgUrl2x" : "/images/templates/automation-api/carousel/en/fill_templates_out_with_data_available_in_odoo@2x.png",
+  "LearnMore" : "Saber mais",
+
+  "HowToGetONLYOFFICEAutomationAPI": "Como obter a API de automação do ONLYOFFICE",
+  "AutomationAPISsAPartOf": "A API de automação é parte de <0>ONLYOFFICE Docs Developer</0> que fornece um pacote de escritório online de primeira linha com editores para documentos, planilhas, apresentações e PDFs destinados à integração em seu próprio aplicativo ou plataforma da web. O acesso à API de automação é fornecido como parte do estendido <1>Licença de desenvolvedor do ONLYOFFICE Docs</1>.",
+  "GetA30DayTrial": "Obtenha uma <0>avaliação de 30 dias</0> do ONLYOFFICE Docs Developer com Automation API incluída para testá-lo gratuitamente.",
+  "DownloadNow": "BAIXE AGORA",
+
+  "HaveAnyQuestions": "Tem alguma dúvida sobre a ONLYOFFICE Automation API? Teremos prazer em consultá-lo e discutir todos os detalhes.",
+  "HaveAnyQuestionsText": "A equipe de especialistas está aqui para ajudar você em cada etapa. <2 /> <2 /> Em caso de dúvidas sobre pré-venda, entre em contato conosco em <0>sales@onlyoffice.com</0> ou agende um horário para que nossa equipe ligue para você. <2 /> <2 /> Para qualquer problema técnico, envie uma mensagem para <1>support@onlyoffice.com</1>.",
+  "GetInTouch": "ENTRE EM CONTATO"
+}

@@ -12,7 +12,7 @@ const StyledHeroSection = styled(Section)`
 const StyledHeroWrapper = styled.div`
   margin-left: 120px;
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 423px auto;
   align-items: center;
   gap: 40px;
 
@@ -32,7 +32,7 @@ const StyledHeroContent = styled.div`
   justify-items: start;
   row-gap: 32px;
   color: #ffffff;
-  max-width: 400px;
+  max-width: 423px;
 
   @media ${device.desktop} {
     justify-items: center;

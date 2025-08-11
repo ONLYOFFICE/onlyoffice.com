@@ -1,0 +1,1 @@
+export { EducationTemplate } from "./Education";

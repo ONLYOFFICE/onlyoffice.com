@@ -1,6 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { db } from "@src/config/db/site";
 import { RowDataPacket } from "mysql2/promise";
+import { regions } from "@src/config/data/docspace-regions";
+import { regionsKeys } from "@src/config/constans/multiregion";
 
 interface ILocationRow extends RowDataPacket {
   ip_start: string;
@@ -49,6 +51,72 @@ function formatIP(ip: string | undefined) {
   }
 }
 
+const regionsStringKeys =
+  process.env.NEXT_PUBLIC_TESTING_ON === "true"
+    ? regionsKeys.info
+    : process.env.NEXT_PUBLIC_TESTING_ON === "false"
+      ? regionsKeys.com
+      : [];
+const docspaceDomain = process.env.DOCSPACE_DOMAIN!;
+const baseDomain = process.env.CORE_BASE_DOMAIN!;
+const docspaceRegion = docspaceDomain.split(".")[1];
+const baseMapKeyString = "core.region-map";
+const baseDbConnKeyString = "core";
+const [baseHost, baseHostingRegion] = baseDomain.split(".");
+
+const regionDbEntities = regionsStringKeys
+  .map(({ key, value: hostingRegion }) => {
+    if (!key.startsWith(baseMapKeyString)) return null;
+
+    const regionDbKey = key
+      .substring(baseMapKeyString.length)
+      .replace(/^\./, "");
+
+    const dbConnectionStringKey =
+      hostingRegion === baseHostingRegion
+        ? baseDbConnKeyString
+        : `${baseDbConnKeyString}.${hostingRegion}`;
+
+    const domain = hostingRegion.startsWith(docspaceRegion)
+      ? docspaceDomain
+      : `${baseHost}.${hostingRegion}`;
+
+    return {
+      regionDbKey,
+      hostingRegion,
+      domain,
+      dbConnectionStringKey,
+    };
+  })
+  .filter(Boolean);
+
+const defaultRegionDbEntity = regionDbEntities[0] ?? null;
+
+const getRegionDbEntityByDbKey = (dbKey: string) => {
+  const configKey = !dbKey ? baseMapKeyString : baseMapKeyString + "." + dbKey;
+
+  const currentHostedRegion = regionsStringKeys.find(
+    (item) => item.key === configKey,
+  );
+
+  if (!currentHostedRegion) {
+    return defaultRegionDbEntity;
+  }
+
+  const currentDomain = currentHostedRegion.value.startsWith(docspaceRegion)
+    ? docspaceDomain
+    : baseHost + "." + currentHostedRegion.value;
+
+  const connStringKey = baseDbConnKeyString + "." + currentHostedRegion.value;
+
+  return {
+    regionDbKey: dbKey,
+    hostingRegion: currentHostedRegion.value,
+    domain: currentDomain,
+    dbConnectionStringKey: connStringKey,
+  };
+};
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
@@ -89,6 +157,17 @@ export default async function handler(
     const match = rows.find((row) => ipFormatted <= row.ip_end);
 
     if (match) {
+      const region = regions.find((r) => r.name === match.country);
+      const dbKey =
+        region && region.mappedTo !== ""
+          ? `${docspaceRegion}${region.mappedTo}`
+          : "core";
+      const lang = region && region.lang !== "" ? region.lang : "";
+      const countryCallingCodeKey =
+        region && region.countryCallingCodeKey !== ""
+          ? region.countryCallingCodeKey
+          : "";
+
       const data = {
         ipStart: match.ip_start,
         ipEnd: match.ip_end,
@@ -96,6 +175,9 @@ export default async function handler(
         city: match.city,
         timezoneOffset: match.timezone_offset,
         timezoneName: match.timezone_name,
+        lang,
+        countryCallingCodeKey,
+        regionDbEntity: getRegionDbEntityByDbKey(dbKey),
       };
 
       ipCache.set(ipFormatted, data);

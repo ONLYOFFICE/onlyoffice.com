@@ -1,0 +1,1 @@
+export { TrainingCoursesInput } from "./TrainingCoursesInput";

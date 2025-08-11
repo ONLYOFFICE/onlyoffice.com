@@ -1,29 +1,34 @@
 import { useTranslation } from "next-i18next";
 import {
+  StyledConnectAppSection,
   StyledConnectAppWrapper,
   StyledConnectAppHeading,
+  StyledConnectAppTImg
 } from "./ConnectApp.styled";
-import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-import { Button } from "@src/components/ui/Button";
+import {Link} from "@src/components/ui/Link"
 
 const ConnectApp = () => {
   const { t } = useTranslation("all-connectors");
 
   return (
-    <Section>
+    <StyledConnectAppSection>
       <Container>
         <StyledConnectAppWrapper>
+          <StyledConnectAppTImg />
           <StyledConnectAppHeading level={3} label={t("NeedAnAppToConnect")} />
-          <Button
+          <Link
             id="connect-app-let-us-know"
-            as="a"
             href="mailto:sales@onlyoffice.com"
             label={t("LetUsKnow")}
+            color="main"
+            fontSize="18px"
+            textUnderline={true}
+            hover="underline-none"
           />
         </StyledConnectAppWrapper>
       </Container>
-    </Section>
+    </StyledConnectAppSection>
   );
 };
 

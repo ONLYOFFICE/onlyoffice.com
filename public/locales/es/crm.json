@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Sistema CRM fácil | ONLYOFFICE",
+  "PageDescription": "Software de gestión de clientes en línea. Gestione clientes, rastree las ventas, envíe facturas con un conjunto completo de herramientas comerciales.",
+
+  "HeroTitle": "Sencillo CRM para la gestión de ventas y mejora de la productividad",
+  "HeroText": "Es un sistema CRM muy bueno y fácil de usar<br/><1>Live Enterprise</1>",
+  "GetItNow": "Obtener ahora",
+
+  "CustomerRelations": "Gestíón efectiva de la base de datos de clientes",
+  "CustomerRelationsText": "Crea tu base de datos de clientes, gestiona los procesos de negocios, analiza acuerdos potenciales y monitoriza las ventas con todas las características esenciales del módulo CRM: Contactos, Oportunidades, Tareas y Historia de comunicación.",
+  "CustomerRelationsImage": "/images/templates/crm/features/es/customer_relations.png",
+  "Customization": "Personalización",
+  "CustomizationText": "Ajusta ONLYOFFICE CRM según tus necesidades específicas: añade tipos de contacto nuevos, categorías de tareas y campos de usuario especiales. Describe tu propio proceso de negocios usando etapas de oportunidad personalizables.",
+  "CustomizationImage": "/images/templates/crm/features/es/customization.png",
+  "RapidEntry": "Registro rápido de los clientes potenciales",
+  "RapidEntryText": "Incorpora el formulario de captación de ONLYOFFICE a tu sitio web y obten la información de nuevos clientes potenciales directamente en la base de datos de tu CRM.",
+  "RapidEntryImage": "/images/templates/crm/features/es/rapid_entry.png",
+  "Invoicing": "Sistema de Facturas",
+  "InvoicingText": "Crea la factura directamente en tu portal ONLYOFFICE seleccionando los consignatarios necesarios de tu base de datos CRM y enlazándolos con la oportunidad de acuerdo requerida.",
+  "InvoicingImage": "/images/templates/crm/features/es/invoicing.png",
+  "CloseIntegration": "Integración cercana con Correo",
+  "CloseIntegrationText": "Añade contactos del correo a la base de datos de clientes, envia mensajes, facturas y ve toda la correspondencia con clientes directamente en el módulo CRM. Organiza el correo masivo directamente desde el módulo CRM de ONLYOFFICE.",
+  "CloseIntegrationImage": "/images/templates/crm/features/es/close_integration.png",
+  "CustomerCall": "Llamar a los clientes",
+  "CustomerCallText": "Haz y responde a las llamadas de clientes directamente desde el CRM gracias a la integración de ONLYOFFICE con Twilio.",
+  "CustomerCallImage": "/images/templates/crm/features/es/customer_call.png",
+  "SalesReporting": "Informes de Ventas",
+  "SalesReportingText": "Genera informes para identificar los puntos fuertes y débiles en tus ventas y enterarte de lo que está sucediendo en tu negocio.",
+  "SalesReportingImage": "/images/templates/crm/features/es/sales_reporting.png",
+
+  "ItIsPrettyNice": "Es un sistema CRM más bien amable y fácil de usar.",
+  "LiveEnterprise": "Live Enterprise"
+}

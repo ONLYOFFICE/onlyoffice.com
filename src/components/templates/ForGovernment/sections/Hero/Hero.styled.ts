@@ -15,6 +15,11 @@ const StyledHeroWrapper = styled.div`
   align-items: center;
   gap: 16px;
 
+  &.de {
+    grid-template-columns: 352px 600px;
+    justify-content: space-between;
+  }
+
   @media ${device.tabletS} {
     grid-template-columns: 1fr;
     text-align: center;

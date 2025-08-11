@@ -50,6 +50,7 @@ const StyledUsefullInfoBottomItems = styled.div`
 
   @media ${device.mobile} {
     display: grid;
+    justify-content: initial;
     row-gap: 16px;
   }
 `;

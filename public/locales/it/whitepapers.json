@@ -1,0 +1,120 @@
+{
+  "WhitepapersPageTitle": "White paper e schede tecniche | ONLYOFFICE",
+  "WhitepapersMetaDescription": "Scopri  le tecnologie collaborative e le soluzioni ONLYOFFICE da prospettive tecniche.",
+  "TechnicalContent": "Contenuto tecnico",
+  "SearchWhitePaper": "Cerca white paper, datasheet",
+  "WhitePapersAndDatasheets": "White paper e schede tecniche",
+  "GetDeeperInsights": "Approfondisci le tecnologie collaborative e le soluzioni ONLYOFFICE da prospettive tecniche e specifiche del settore e apprendi fatti utili sui nostri prodotti per diverse applicazioni.",
+  "WhitePapers": "White paper",
+  "Datasheets": "Schede tecniche",
+  "ONLYOFFICEDocs": "ONLYOFFICE Docs",
+  "ONLYOFFICEWorkspace": "ONLYOFFICE Workspace",
+  "ONLYOFFICEPrivateRooms": "ONLYOFFICE Private Rooms",
+  "ONLYOFFICELawFirms": "ONLYOFFICE per studi legali",
+  "ONLYOFFICEMedical": "ONLYOFFICE per l'industria medica",
+  "ONLYOFFICEPharmaceutical": "ONLYOFFICE per le aziende farmaceutiche",
+  "ONLYOFFICENon_Profit": "ONLYOFFICE per le organizzazioni no profit",
+  "ONLYOFFICENextcloud": "ONLYOFFICE per Nextcloud",
+  "ONLYOFFICEOwnCloud": "ONLYOFFICE per ownCloud",
+  "DocumentCollaboration": "Collaborazione documentale nella formazione",
+  "JoinOver": "Unisciti agli oltre <0>15 000 000</0> utenti di ONLYOFFICE in tutto il mondo",
+  "UseInTheCloud": "Usa nel cloud",
+  "FillOutThisForm": "Compila questo modulo",
+  "FillOutThisFormToRequestAQuote": "Compila questo modulo per richiedere un preventivo",
+  "ByClickingDownload": "Facendo clic su Scarica, comprendi e accetti le nostre <0>dichiarazioni SLA</0> e <1>sulla privacy</1>.",
+
+  "CardsFiltersAll": "Tutto",
+  "CardsSortModules": "Moduli:",
+  "CardsSortBy": "Ordina per:",
+  "CardsSortNewestOldest": "Dal più recente al più vecchio",
+  "CardsSortOldestNewest": "Dal più vecchio al più recente",
+  "CardsButtonShowMore": "caricare di più",
+
+  "CardsWhitepaper": "White Paper",
+
+  "CardsMobFiltersHeading": "Filtro",
+  "CardsMobFiltersReset": "Ripristina",
+  "CardsMobFiltersApply": "Applica filtro",
+  "CardsMobFiltersModules": "Moduli",
+
+  "CardsButtonDownload": "Scarica",
+
+  "CardFormFullName": "Nome e cognome",
+  "CardFormFullNameIsEmpty": "Il Nome e cognome è vuoto",
+  "CardFormFullNameIsIncorrect": "Il Nome e cognome è sbagliato",
+  "CardFormPlaceholderName": "Nome Cognome",
+  "CardFormCompanyName": "Nome dell'azienda",
+  "CardFormCompanyNameIsEmpty": "Nome dell'azienda è vuoto",
+  "CardFormEmail": "Email",
+  "CardFormPlaceholderEmail": "name@domain.com",
+  "CardFormEmailIsEmpty": "Email è vuoto",
+  "CardFormEmailIsIncorrect": "Email è sbagliato",
+
+  "CardsWhitepapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
+  "CardsWhitepapersHeadStressTest": "ONLYOFFICE Docs 7.2.2. stress test report",
+  "CardsWhitepapersTitleStressTest": "ONLYOFFICE Docs 7.2.2. stress test report",
+  "CardsWhitepapersDescriptionStressTest": "Questo documento descrive uno stress test che abbiamo condotto su ONLYOFFICE Docs 7.2.2 e i risultati del test. L'obiettivo principale era testare il carico del server pari a 10.000 richieste a ONLYOFFICE Docs.",
+
+  "CardsWhitepapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
+  "CardsWhitepapersHeadForDevelopers": "ONLYOFFICE Docs per sviluppatori: architettura, integrazione e distribuzione",
+  "CardsWhitepapersTitleForDevelopers": "ONLYOFFICE Docs per sviluppatori: architettura, integrazione e distribuzione",
+  "CardsWhitepapersDescriptionForDevelopers": "In questo documento, esploriamo la funzionalità, l'integrazione e i metodi di distribuzione della suite per ufficio online ONLYOFFICE Docs.",
+
+  "CardsWhitepapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
+  "CardsWhitepapersHeadLoadTestReport": "ONLYOFFICE Docs rapporto di prova di carico",
+  "CardsWhitepapersTitleLoadTestReport": "ONLYOFFICE Docs rapporto di prova di carico",
+  "CardsWhitepapersDescriptionLoadTestReport": "Questo documento descrive un test di carico che abbiamo condotto in ONLYOFFICE Docs e i resultati del test. L'obiettivo principale era quello di determinare il numero di connessioni simultanee che ONLYOFFICE Docs può supportare.",
+
+  "CardsWhitepapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
+  "CardsWhitepapersHeadPrivateRooms": "Private Rooms di ONLYOFFICE: 9 principi di sicurezza",
+  "CardsWhitepapersTitlePrivateRooms": "Private Rooms di ONLYOFFICE: 9 principi di sicurezza",
+  "CardsWhitepapersDescriptionPrivateRooms": "In questo libro bianco sono descritti i principi usati in Private Rooms di ONLYOFFICE per garantire la sicurezza ad ogni passo di lavoro con i documenti",
+
+  "CardsWhitepapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
+  "CardsWhitepapersHeadIntegrationExample": "Esempio di integrazione di ONLYOFFICE Docs",
+  "CardsWhitepapersTitleIntegrationExample": "Esempio di integrazione di ONLYOFFICE Docs",
+  "CardsWhitepapersDescriptionIntegrationExample": "In questo libro bianco esamineremo le capacità di integrazione di ONLYOFFICE fornite dalla sua API aperta",
+
+  "CardsWhitepapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
+  "CardsWhitepapersHeadForGovernmentOffices": "Infrastrutture collaborative sovrane per uffici della pubblica amministrazione",
+  "CardsWhitepapersTitleForGovernmentOffices": "Infrastrutture collaborative sovrane per uffici della pubblica amministrazione",
+  "CardsWhitepapersDescriptionForGovernmentOffices": "Esaminiamo le sfide comuni che il settore pubblico affronta quando sviluppa un ambiente IT all'interno della sua rete per sostenere i processi collaborativi e assumere un modello efficace basato su tecnologie aperte, sovrane e sicure.",
+
+  "CardsWhitepapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
+  "CardsWhitepapersHeadEndToEndDocumentEncryption": "Crittografia dei documenti end-to-end",
+  "CardsWhitepapersTitleEndToEndDocumentEncryption": "Crittografia dei documenti end-to-end",
+  "CardsWhitepapersDescriptionEndToEndDocumentEncryption": "Questo White Paper descrive i componenti e la meccanica della crittografia end-to-end dei documenti in ONLYOFFICE Workspace.",
+
+  "CardsWhitepapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
+  "CardsWhitepapersHeadDataEncryptionAtRest": "Crittografia dei dati inattivi 1.0",
+  "CardsWhitepapersTitleDataEncryptionAtRest": "Crittografia dei dati inattivi 1.0",
+  "CardsWhitepapersDescriptionDataEncryptionAtRest": "Questo White Paper descrive i componenti e meccanica della versione 1.0 della crittografia di dati inattivi in ONLYOFFICE Workspace.",
+
+
+  "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
+  "CardsDatasheetsTitleSecureCloudSpace": "Spazio cloud sicuro per il tuo team e non solo",
+  "CardsDatasheetsProductSecureCloudSpace": "ONLYOFFICE DocSpace",
+
+  "CardsDatasheetsPdfForBanking": "/images/templates/whitepapers/pdf/onlyoffice_for_banking.pdf",
+  "CardsDatasheetsTitleForBanking": "Elaborazione di documenti potente e sicura per il settore bancario",
+
+  "CardsDatasheetsPdfWorkspaceForHealthInstitutions": "/images/templates/whitepapers/pdf/it/onlyoffice_workspace_for_health_institutions.pdf",
+  "CardsDatasheetsTitleWorkspaceForHealthInstitutions": "ONLYOFFICE Workspace for health institutions",
+
+  "CardsDatasheetsPdfDocsInYourCluster": "/images/templates/whitepapers/pdf/it/onlyoffice_docs_in_your_cluster.pdf",
+  "CardsDatasheetsTitleDocsInYourCluster": "Potente collaborazione sui documenti nel tuo cluster",
+
+  "CardsDatasheetsPdfDocsDatasheetEducation": "/images/templates/whitepapers/pdf/it/onlyoffice_docs_datasheet_education.pdf",
+  "CardsDatasheetsPdfDocsForOwncloud": "/images/templates/whitepapers/pdf/it/onlyoffice_docs_for_owncloud.pdf",
+  "CardsDatasheetsPdfDocsForNextcloud": "/images/templates/whitepapers/pdf/it/onlyoffice_docs_for_nextcloud.pdf",
+  "CardsDatasheetsPdfDocs": "/images/templates/whitepapers/pdf/it/onlyoffice_docs.pdf",
+  "CardsDatasheetsPdfDocsForNonprofit": "/images/templates/whitepapers/pdf/it/onlyoffice_datasheet_for_non-profits.pdf",
+  "CardsDatasheetsPdfDocsForPharmaceutical": "/images/templates/whitepapers/pdf/onlyoffice_datasheet__for_pharmaceutical_industry.pdf",
+  "CardsDatasheetsPdfDocsForMedical": "/images/templates/whitepapers/pdf/it/docs_datasheet_medical_3.pdf",
+  "CardsDatasheetsPdfDocsForLawFirms": "/images/templates/whitepapers/pdf/it/onlyoffice_datasheet_for_law_firms.pdf",
+  "CardsDatasheetsPdfWorkspacePrivateRooms": "/images/templates/whitepapers/pdf/it/onlyoffice_private_rooms_it.pdf",
+  "CardsDatasheetsPdfWorkspace": "/images/templates/whitepapers/pdf/it/onlyoffice_workspace.pdf",
+
+  "CardsFormSuccess": "La tua richiesta è stata inviata con successo",
+  "CardsFormError": "Siamo spiacenti, si è verificato un errore, riprovare più tardi"
+}

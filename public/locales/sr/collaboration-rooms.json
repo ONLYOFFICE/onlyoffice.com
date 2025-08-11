@@ -1,0 +1,50 @@
+{
+  "PageTitle": "Radite bolje zajedno u prostorijama za saradnju | ONLYOFFICE",
+  "PageDescription": "Uživajte u bezbrižnom zajedničkom uređivanju u ONLYOFFICE DocSpace-u. Lako završite svaki grupni zadatak ili projekat.",
+
+  "WorkTogetherBetterInCollaborationRooms": "Bolje sarađujte u <0>prostorijama za saradnju</0>",
+  "EnjoyStressFreeCoEditing": "Uživajte u bezbrižnom zajedničkom uređivanju u ONLYOFFICE DocSpace-u",
+
+  "HeroImgUrl": "/images/templates/collaboration-rooms/hero/en/header_main.png",
+  "HeroImgUrl2x": "/images/templates/collaboration-rooms/hero/en/header_main@2x.png",
+
+  "CreateFreeAccount": "Kreirajte besplatan nalog",
+  "IdealForTeamwork": "Idealno za timski rad",
+  "EasilyGetAnyGroupWorkOrProject": "Lako završite svaki grupni rad ili projekat zajedno sa svojim kolegama, članovima tima, partnerima i drugima",
+  "Education": "Edukacija",
+  "EducationDesc": "Napišite eseje, radite na dugim tekstovima, popunjavajte zadatke, uređujte Excel tabele, pripremajte grupne prezentacije, kreirajte i čitajte e-knjige.",
+  "Business": "Posao",
+  "BusinessDesc": "Saradjujte na ugovorima, izveštajima, prezentacijama proizvoda, itd. za svaku fazu vašeg poslovanja, unapredite ih dijagramima, grafikonima i grafikama.",
+  "Individuals": "Pojedinci",
+  "IndividualsDesc": "Kreirajte i uređujte tekstualne dokumente i prezentacije, generišite i popunite obrasce u svakodnevnim situacijama.",
+  "Legal": "Pravno",
+  "LegalDesc": "Izradite i koautorizujte izjave, sertifikate, prijave za dozvole, anotirajte i popunite ugovore i druge pravne dokumente.",
+
+  "SecureForSensitiveDocuments": "Bezbedno za osetljive dokumente",
+  "ProtectYourFiles": "Zaštitite svoje datoteke postavljanjem nivoa pristupa kako biste definisali koje radnje će biti dostupne pozvanim osobama: Menadžeri soba sa pravima za upravljanje pristupom, Kreatori sadržaja sa pristupom za upravljanje datotekama/folderima sobe, Uređivači sa potpunim pristupom datotekama sobe ili Pregledači sa samo pravom čitanja.",
+  "SecureImgUrl": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents.png",
+  "SecureImgUrl2x": "/images/templates/collaboration-rooms/features/secure-for-sensitive-documents@2x.png",
+  "ConvenientForMultipleCoAuthors": "Pogodan za više koautora",
+  "CollaborateEffectively": "Efikasno sarađujte kako biste brže obavili posao",
+  "CostEffectiveForAnyBudget": "Ekonomično za svaki budžet",
+  "ConvenientImgUrl": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors.png",
+  "ConvenientImgUrl2x": "/images/templates/collaboration-rooms/features/convenient-for-multiple-co-authors@2x.png",
+  "PayForAdminsOnlyAndAdd": "Platite samo za administratore i dodajte bilo koji broj redovnih korisnika i gostiju besplatno. Iskoristite besplatan Startup plan za male timove. ONLYOFFICE DocSpace je pogodan za sve firme bez obzira da li je u pitanju malo i srednje preduzeće ili velika kompanija. Želite da imate potpunu kontrolu nad svojim korporativnim podacima? Postavite DocSpace na svoj privatni server.",
+  "BudgetImgUrl": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget.png",
+  "BudgetImgUrl2x": "/images/templates/collaboration-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMore": "Saznajte više",
+
+  "LearnMoreHeading": "Saznajte više o DocSpace prostorijama za saradnju",
+  "CustomerTestimonial": "Iskustvo klijenta",
+  "HowKinderhausBerlinSharesAndCollaborates": "Kako Kinderhaus Berlin deli i sarađuje na osetljivim datotekama putem ONLYOFFICE DocSpace-a",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Pročitajte priču",
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Savladajte ONLYOFFICE DocSpace uz video vodiče",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Gledajte sada",
+  "HelpCenter": "Centar za pomoć",
+  "ExploreTheToolsetAndCollaborativeFeatures": "Istražite alate i mogućnosti saradnje dostupne u uređivačima",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/userguides/docs-index.aspx"
+}

@@ -85,12 +85,15 @@
   "LearnCardTitleRelease": "Release notes",
   "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v7.2 for iOS",
   "LearnMoreSubtitleRead": "Read story",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/2022/10/onlyoffice-documents-v7-2-for-ios",
 
   "LearnCardTitleHints": "Hints",
   "LearnMoreTextHandwriting": "Handwriting in ONLYOFFICE Documents",
   "LearnMoreSubtitleLearn1": "Learn more",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/mobile/ios/documents/document-editor/basic-operations/handwriting.aspx",
 
   "LearnCardTitleDeveloper": "Developer guide",
   "LearnMoreTextHowMobile": "How mobile integration works",
-  "LearnMoreSubtitleLearn2": "Learn more"
+  "LearnMoreSubtitleLearn2": "Learn more",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/2022/07/onlyoffice-for-developers-how-the-mobile-integration-works"
 }

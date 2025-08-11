@@ -1,0 +1,27 @@
+{
+  "PageTitle": "最优秀的WPS Office替代产品",
+  "PageDescription": "ONLYOFFICE文档与WPS Office对比。在不同平台上打开同一文档并对比效果。",
+
+  "HeroTitle": "<0>ONLYOFFICE文档，</0> 最优秀的WPS Office替代产品",
+  "GetOODocsNow": "立即获取ONLYOFFICE文档",
+  "CompatibleWithMicrosoftOfficeFormats": "100%与Microsoft Office格式兼容",
+
+  "ReasonsTitle": "ONLYOFFICE完美替代WPS Office<0>五大理由</0>",
+  "OpenSource": "免费、开源",
+  "OpenSourceText": "ONLYOFFICE为用户提供了开源且完全没有广告的解决方案。我们的源代码已在GitHub中提供，确保软件的透明度和可靠性。",
+  "DesktopApp": "网页、桌面、移动端",
+  "DesktopAppText": "借助ONLYOFFICE，您可使用任何浏览器和操作系统进行在线工作，同时还有适用于Windows、Linux与macOS的免费桌面端应用程序，以及免费的Android和iOS移动端应用。",
+  "Seamless": "无缝在线协作",
+  "SeamlessText": "ONLYOFFICE 文档提供两种共同编辑模式、跟踪更改、版本历史记录、文档比较、评论和提及、内置聊天、音频和视频通话插件等功能。从零开始创建专业的表单和模板，或使用任何现有的 DOCX 文档，让其他用户填写表单并另存为可填写的 PDF 文件。",
+  "Security": "安全性",
+  "SecurityText": "ONLYOFFICE可部署在您自己的服务器上，这样您就可以完全控制数据。多种安全工具和服务可保护您免受任何威胁的侵扰。私密房间功能实现了持续加密的文档存储、编辑以及协同创作功能。",
+  "DocsSheetsSlides": "文档、电子表格、幻灯片、表单、PDF",
+  "DocsSheetsSlidesText": "编辑和协作处理任何复杂程度的文本文档和电子表格，制作完美的演示文稿，查看和注释 PDF 文件。从零开始创建专业的表单和模板，或使用任何现有的 DOCX 文档，让其他用户填写表单并另存为可填写的 PDF 文件。",
+  "AIHelper": "AI 助手",
+  "AIHelperText": "连接任意 AI 提供商，根据任务选用不同模型。利用 AI 插件提高文本处理效率：单词分析与含义查询、生成段落、图像和关键字、总结和翻译故事、查找同义词。",
+  "Flexibility": "灵活性",
+  "FlexibilityText": "您可以选择使用在线编辑器的方式：将其作为基于房间的环境 ONLYOFFICE 协作空间的一部分、在任何同步共享或 ECM 服务（如 Nextcloud、Alfresco、Confluence、Seafile 等）中使用，或者集成到您自己开发的解决方案中。",
+
+  "PresentationTitle": "请观看<0>此演示文稿</0>，进一步了解两者差别：",
+  "WhatWentWrong": "WPS Office的问题出在哪？ <0>点击此</0>此处阅读详情"
+}

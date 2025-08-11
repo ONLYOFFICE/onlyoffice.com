@@ -1,0 +1,26 @@
+{
+  "PageTitle": "Корпоративный портал для совместного доступа к информации | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE помогает эффективной коммуникации между сотрудниками, предоставляя месенджер, форумы, блоги, новостную ленту вашей компании.",
+
+  "HeroTitle": "Создайте свою корпоративную соцсеть",
+  "HeroText": "Простая в использовании программа со множеством возможностей для совместной работы, которые позволяют эффективно вести бизнес<br/><1>PCMag</1>",
+  "HeroImage": "/images/templates/community/hero/ru/hero_image.png",
+  "HeroImage2x": "/images/templates/community/hero/ru/hero_image@2x.png",
+  "GetItNow": "Скачать ONLYOFFICE",
+
+  "SharingCompanyNews": "Публикуйте новости компании и объявления",
+  "SharingCompanyNewsText": "Создайте корпоративную доску объявлений, публикуя последние новости компании, приказы и объявления. Добавляйте закладки на полезные или просто интересные интернет-ресурсы и делитесь ими с коллегами.",
+  "SharingCompanyNewsImage": "/images/templates/community/features/ru/sharing_company_news.png",
+  "CreatingPolls": "Проводите опросы",
+  "CreatingPollsText": "Проводите исследования, собирайте нужную информацию, получайте обратную связь от других пользователей офиса или делайте ваши записи на форуме интерактивными, добавляя опросы.",
+  "CreatingPollsImage": "/images/templates/community/features/ru/creating_polls.png",
+  "MaintainingBlogs": "Общайтесь в блогах и на форумах",
+  "MaintainingBlogsText": "Обменивайтесь идеями, знаниями и опытом, добавляя записи в корпоративный блог. Проводите обсуждения на форуме.",
+  "MaintainingBlogsImage": "/images/templates/community/features/ru/maintaining_blogs.png",
+  "InstantMessaging": "Используйте корпоративный мессенджер",
+  "InstantMessagingText": "Общайтесь с другими пользователями в режиме реального времени, организуйте конференции, создавая чат-комнаты, проводите рассылки, отправляя сообщение сразу множеству пользователей.",
+  "InstantMessagingImage": "/images/templates/community/features/ru/instant_messaging.png",
+
+  "EasyToUse": "Простая в использовании программа со множеством возможностей для совместной работы, которые позволяют эффективно вести бизнес.",
+  "PcMag": "PC Mag"
+}

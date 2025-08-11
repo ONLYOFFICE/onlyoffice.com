@@ -1,0 +1,1 @@
+export { OnlyOfficeEditor } from "./DocumentEditor";

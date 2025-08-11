@@ -1,0 +1,72 @@
+{
+  "PageTitle": "Espacio de trabajo para tu equipo",
+  "PageDescription": "Gestiona todos los procesos de negocio, colabora y comunícate eficientemente con ONLYOFFICE Workspace.",
+
+  "HeroTitle": "ONLYOFFICE Workspace",
+  "HeroText": "Paquete de aplicaciones web para la gestión y colaboración eficiente de tu equipo",
+  "GetItNow": "Obtener ahora",
+
+  "ManageAllYourBusinessProcesses": "Gestiona todos tus procesos de negocio",
+  "LearnMore": "Más información",
+
+  "Documents": "Documentos",
+  "StoreAndOrganize": "Almacena y organiza la documentación empresarial. Comparte documentos y gestiona los permisos de acceso de usuarios y grupos. Edita y colabora en <0>documentos de texto</0>, <1>hojas de cálculo</1>, <2>presentaciones</2>, <3>archivos PDF</3> y <4>formularios</4> rellenables.",
+  "HighestCompatibility": "Máxima compatibilidad con los formatos de MS Office",
+  "MultiFormat": "Reproductor multimedia multiformato",
+  "ReadyForms": "Formularios de documentos listos para rellenar en línea",
+  "PrivateRooms": "Salas privadas para la colaboración en documentos cifrados de extremo a extremo",
+
+  "Mails": "Correos",
+  "KeepYourMailboxOrganized": "Mantén organizado tu buzón de correo. Crea buzones corporativos en tu dominio o utilizando el predeterminado. Conecta varias cuentas de correo, gestiona y etiqueta los mensajes. Crea firmas y utiliza el constructor de plantillas.",
+  "SupportOfCommonEmailProtocols": "Soporte de los protocolos de correo electrónico más comunes: POP3, SMTP, IMAP",
+  "UnlimitedNumber": "Número ilimitado de buzones y grupos de correo",
+  "FreeDefaultDomain": "Dominio predeterminado gratuito",
+
+  "Crm": "CRM",
+  "OrganizeYourBusinessWorkflow": "Organiza el flujo de trabajo de tu empresa, desde la gestión de clientes potenciales hasta la realización de pedidos. Crea informes y controla el progreso de tu equipo.",
+  "WebToLead": "Formulario Web-to-Lead para recoger los datos de los clientes potenciales con rapidez",
+  "MakingCalls": "Llamadas con Twilio",
+  "CloseIntegration": "Estrecha integración con Correo, Proyectos y Calendario",
+
+  "Projects": "Proyectos",
+  "OrganizeYourTeam": "Organiza tu equipo para lograr el éxito. Crea proyectos, prioriza tareas y establece plazos. Haz un seguimiento del tiempo y genera informes para analizar la productividad de tu equipo.",
+  "GanttChart": "Diagramas de Gantt",
+  "PrivateProjects": "Proyectos privados y gestión de derechos de acceso",
+  "Integration": "Integración con Documentos, Calendario y CRM",
+  "WatchVideo": "Ver la presentación en vídeo",
+
+  "Calendar": "Calendario",
+  "ManageYourTime": "Gestiona tu tiempo de forma inteligente: crea un horario personal o de equipo, añade diferentes tipos de eventos y establece recordatorios para que no se pierda nada.",
+  "CalendarSharing": "Uso compartido de calendarios",
+  "Synchronization": "Sincronización con aplicaciones de terceros",
+  "CloseIntegrationWithModules": "Estrecha integración con todos los módulos de ONLYOFFICE",
+
+  "OOWorkspace": "ONLYOFFICE Workspace 12.5:",
+  "OOWorkspaceMobile": "ONLYOFFICE Workspace 12.5",
+  "OOWorkspaceText": "Seguridad mejorada, gestión de documentos optimizada, tema oscuro y mucho más",
+
+  "WhyOOWorkspace": "Por qué elegir ONLYOFFICE Workspace",
+  "Benefits": "Ventajas de un espacio de trabajo online",
+
+  "ThirdParty": "Integración de servicios de terceros",
+  "ExtendYourWorkspace": "Amplía la funcionalidad de tu espacio de trabajo con tus aplicaciones y herramientas favoritas para el registro, la firma, la autenticación o el almacenamiento.",
+  "FindAppsYouNeed": "Encuentra las aplicaciones que necesitas",
+
+  "DataSecurityHeader": "Seguridad y control de datos",
+  "DataSecurity": "Cifrado de datos en reposo y en tránsito. Autenticación LDAP/Active Directory. Derechos de acceso flexibles y JWT. Seguimiento de actividad, informes de auditoría y mucho más.",
+
+  "Administration": "Administración y personalización",
+  "ManageYourWorkspace": "Administra tu espacio de trabajo utilizando un panel de control intuitivo. Personalízalo con los esquemas de color incorporados, reemplaza logotipos, títulos, enlaces, establece un tema de interfaz claro u oscuro.",
+
+  "GettingStarted": "Es muy fácil empezar a usarlo",
+  "UseOOWorkspace": "Utiliza ONLYOFFICE Workspace en la nube, alójalo en tu servidor o implementa una instalación preconfigurada.",
+
+  "GetStarted": "Empezar",
+  "OvhMarketplace": "OVHcloud Marketplace",
+  "OneClickInstall": "Se instala con sólo un clic, se actualiza automáticamente",
+
+  "SelfHosted": "Autohospedado",
+  "Host": "Se aloja en tu servidor",
+
+  "CommunityFooterText": "La versión comunitaria para uso doméstico se puede descargar <0>aquí.</0>"
+}

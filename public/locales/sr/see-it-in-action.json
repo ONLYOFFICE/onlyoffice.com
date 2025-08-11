@@ -1,46 +1,29 @@
 {
-  "PageTitle": "Proverite glavne funkcionalnosti ONLYOFFICE Docs | ONLYOFFICE",
-  "PageDescription": "Uređujte docx, xlsx, pptx datoteke, pregledajte PDF-ove, kreirajte popunjive forme, sarađujte u realnom vremenu da biste proverili glavne funkcije ONLYOFFICE-a. Nisu potrebna preuzimanja niti registracija.",
+  "PageTitle": "Check ONLYOFFICE Docs main functionality | ONLYOFFICE",
+  "PageDescription": "Edit docx, xlsx, pptx files, view PDFs, create fillable forms, collaborate in real-time to check the ONLYOFFICE main features. No downloads or registration required.",
 
   "HeroHeadingSeeIt": "Pogledajte u akciji",
-  "HeroTextCurious": "Želite da znate kako izgleda interfejs i da isprobate glavne funkcionalnosti bez registracije?",
+  "HeroTextCurious": "Zanima vas kako izgleda interfejs i da isprobate glavne funkcionalnosti bez registracije?",
 
-  "ActionsOpen": "Otvori",
-  "ActionsEditDocx": "Uredi DOCX",
-  "ActionsExampleDocumentTitleDocx": "Primer naslova dokumenta.docx",
-  "ActionsEditXlsx": "Uredi XLSX",
-  "ActionsExampleDocumentTitleXlsx": "Primer naslova dokumenta.xlsx",
-  "ActionsEditPptx": "Uredi PPTX",
-  "ActionsExampleDocumentTitlePptx": "Primer naslova dokumenta.pptx",
-  "ActionsEditPdf": "Uredi PDF",
-  "ActionsExampleDocumentTitlePdf": "Primer naslova dokumenta.pdf",
-  "ActionsCreateForm": "Kreirajte formu",
-  "ActionsFillInPdfForm": "Popunite PDF formu",
-  "ActionsCollaborate": "Sarađujte",
+  "ActionsEditDocx": "Uredite DOCX",
+  "ActionsExampleDocumentTitleDocx": "Primer dokumenta Title.docx",
+  "ActionsEditXlsx": "Uredite XLSX",
+  "ActionsExampleDocumentTitleXlsx": "Primer dokumenta Title.xlsx",
+  "ActionsEditPptx": "Uredite PPTX",
+  "ActionsExampleDocumentTitlePptx": "Primer dokumenta Title.pptx",
+  "ActionsEditPdf": "Uredite PDF",
+  "ActionsExampleDocumentTitlePdf": "Primer dokumenta Title.pdf",
+  "ActionsCreateForm": "Kreiraj obrazac",
+  "ActionsFillInPdfForm": "Popunite PDF formular",
+  "ActionsCollaborate": "Sarađujete",
 
   "ActionsDemoPreview": "Demo pregled",
-  "ActionsDemoModalHeadingOpen": "Otvori DOCX za uređivanje",
-  "ActionsDemoModalButtonClose": "Zatvori",
-
-  "GetStartedHeading": "Započnite i odaberite gde ćete raditi",
-
-  "GetStartedItemTitleInOnlyOffice": "U ONLYOFFICE DocSpace-u",
-  "GetStartedItemTextCreate": "Kreirajte sobe u okviru vašeg bezbednog DocSpace-a, pozovite ljude, pregledajte, uređujte i sarađujte na svim vrstama dokumenata sa bilo kog desktop ili mobilnog uređaja.",
-  "GetStartedItemLinkStart": "Započnite sa svojim besplatnim nalogom",
-
-  "GetStartedItemTitleYouUse": "Na platformi koju koristite",
-  "GetStartedItemTextConnect": "Povežite Docs za uređivanje dokumenata direktno iz vaše aplikacije. <0>Više od 40 gotovih integracija</0>: Box, Moodle, Nextcloud, Odoo, Wordpress itd.",
-  "GetStartedItemLink": "Preuzmite Docs sada",
-
-  "GetStartedItemTitleYouBuild": "Na platformi koju gradite",
-  "GetStartedItemTextIntegrate": "Integrišite Docs u svoju uslugu da biste svojim klijentima pružili moćne mogućnosti uređivanja i izgradnje dokumenata pod vašim brendom.",
-  "GetStartedItemLinkLearn": "Saznajte više",
-
-  "GetStartedItemTitleYourPc": "Sa vašeg računara",
-  "GetStartedItemTextEdit": "Uređujte dokumente oflajn pomoću besplatnih kancelarijskih aplikacija za Windows, Linux i macOS.",
-  "GetStartedItemLinkDownload": "Preuzmite sada",
-
-  "GetStartedItemTitleMobile": "Sa vaših mobilnih uređaja",
-  "GetStartedItemTextWork": "Radite na dokumentima u pokretu pomoću besplatnih aplikacija za iOS i Android uređaje.",
-  "GetStartedItemLinkInstall": "Instalirajte sada"
+  "ActionsDemoModalHeadingOpenDocx": "Otvorite DOCXF za uređivanje",
+  "ActionsDemoModalHeadingOpenXlsx": "Otvorite XLSX za uređivanje",
+  "ActionsDemoModalHeadingOpenPptx": "Otvorite PPTX za uređivanje",
+  "ActionsDemoModalHeadingOpenPdf": "Uredite PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Kreiraj obrazac",
+  "ActionsDemoModalHeadingOpenFill": "Popunite PDF formular",
+  "ActionsDemoModalHeadingOpenCollaborate": "Sarađujete",
+  "ActionsDemoModalButtonClose": "Zatvori"
 }

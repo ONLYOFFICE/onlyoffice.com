@@ -14,7 +14,7 @@ const languages = [
   {
     key: "de-DE",
     shortKey: "de",
-    name: "German",
+    name: "Deutsch",
     displayName: "German (Germany)",
   },
   {

@@ -85,6 +85,7 @@ const Actions = () => {
 
       {isDemoModalOpen && (
         <ActionsDemoModal
+          heading={tabInfo.heading}
           demoCodeFirst={tabInfo.demoCodeFirst}
           demoCodeSecond={tabInfo.demoCodeSecond}
           onClose={() => setIsDemoModalOpen(false)}

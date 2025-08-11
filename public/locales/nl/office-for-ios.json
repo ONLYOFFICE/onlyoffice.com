@@ -1,52 +1,66 @@
 {
-  "PageTitle": "Gratis mobiele kantoorsuite voor iPhone en iPad | ONLYOFFICE Documents",
-  "PageDescription": "Documenten, spreadsheets en presentaties bewerken en gezamenlijk bewerken, formulieren invullen vanaf uw iOS-apparaten.",
+  "PageTitle": "Gratis mobiele office suite voor iPhone en iPad | ONLYOFFICE Documents",
+  "PageDescription": "Bewerk en bewerk samen documenten, spreadsheets en presentaties, vul formulieren in vanaf uw iOS-apparaten.",
 
-  "OnlyOfficeDocuments": "ONLYOFFICE Documents, een solide <0>mobiele kantoorsuite</0> voor uw iPhone en iPad",
-  "AbsolutelyFree": "Absoluut <0>gratis</0>. Geen advertenties. Geen in-app aankopen.",
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, een solide <0>mobiele office suite</0> voor uw iPhone en iPad.",
+  "AbsolutelyFree": "Helemaal <0>Gratis</0>. Geen advertenties. Geen in-app-aankopen.",
 
   "OneAppThreeEditors": "Eén app - <0>Drie editors</0> - Meerdere functies",
-  "CompatibleWithMSOffice": "100% compatibel met MS Office formaten",
+  "CompatibleWithMSOffice": "100% compatibel met MS Office formats",
 
   "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.nl.svg",
 
   "FeaturesItemHeadingFull": "Volledige tekstverwerker",
-  "FeaturesItemTextMakeUse": "Maak gebruik van meerdere tekstverwerkingstools: pagina-, paragraaf- en tekstformattering, tabellen, autovormen, grafieken, enz. Maak tekstdocumenten van elke grootte en complexiteit. Print ze via AirPrint.",
+  "FeaturesItemTextMakeUse": "Maak gebruik van meerdere tekstverwerkingshulpmiddelen: pagina-, alinea- en tekstopmaak, tabellen, automatische vormen, grafieken, enz. Maak tekstdocumenten van elke grootte en complexiteit. Druk ze af via AirPrint.",
 
-  "FeaturesItemHeadingComplete": "Complete spreadsheet editor",
-  "FeaturesItemTextManage": "Beheer uw spreadsheetgegevens: werk met rijen en kolommen, pas celparameters aan, gebruik meer dan 450 formules, sorteer en filter gegevens.",
+  "FeaturesItemHeadingComplete": "Volledige spreadsheet-editor",
+  "FeaturesItemTextManage": "BeBeheer uw spreadsheetgegevens: werk met rijen en kolommen, pas celparameters aan, gebruik meer dan 450 formules, sorteer en filter gegevens.",
 
-  "FeaturesItemHeadingCollaborative": "Collaboratieve presentatie editor",
-  "FeaturesItemTextMakeWork": "Werk met alle populaire objecten op uw dia's: afbeeldingen invoegen, autovormen, grafieken, teksten en andere items toevoegen en bewerken.",
+  "FeaturesItemHeadingCollaborative": "Collaboratieve presentatie-editor",
+  "FeaturesItemTextMakeWork": "Werk met alle populaire objecten op uw slides: afbeeldingen invoegen, autovormen, grafieken en diagrammen, teksten en andere items toevoegen en bewerken.",
 
-  "FeaturesItemHeadingOnline": "Online formulieren invullen",
-  "FeaturesItemTextMakeView": "Bekijk en vul formulieren in. Navigeer eenvoudig van veld naar veld. Sla het resultaat op als een PDF- of DOCX-bestand.",
+  "FeaturesItemHeadingOnline": "Online formulier invuller",
+  "FeaturesItemTextMakeView": "Bekijken en invullen van forms. Navigeer eenvoudig van veld naar veld. Sla het resultaat op als een PDF of DOCX bestand.",
 
   "FeaturesItemHeadingPDF": "PDF-viewer en mediaspeler",
-  "FeaturesItemTextMakeViewPDF": "Bekijk PDF-documenten en afbeeldingen, speel audio- en videobestanden af. Open .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, enz.",
+  "FeaturesItemTextMakeViewPDF": "Bekijk PDF-documenten en afbeeldingen, speel audio- en videobestanden af. Open .BMP, JPG, JPEG, PNG, GIF, TIF, TIFF, AVI, MPEG, MP3, PDF, etc.",
 
-  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents is een uitstekend product en werd door zijn gebruikers bekroond met de onderscheiding 'Zeer goed'.\"",
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents is an outstanding product and was given the 'Very Good' award by its users.\"",
   "MichaelGanss": "Michael Ganss,",
 
   "RealTimeCollaboration": "Realtime samenwerking",
-  "BeMoreProductive": "Wees productiever. Verbind uw app met de ONLYOFFICE cloud. Deel documenten om ze in realtime met uw teamgenoten te co-bewerken. Reageer en volg wijzigingen. Voeg grafische annotaties toe.",
+  "BeMoreProductive": "Wees productiever. Sluit uw app aan op de ONLYOFFICE cloud. Deel documenten om ze samen met uw teamgenoten in realtime te bewerken. Commentaar geven en veranderingen bijhouden. Voeg grafische annotaties toe.",
 
-  "VideoCardHeading": "Ontdek ONLYOFFICE Documents, een solide mobiele kantoorsuite",
+  "VideoCardHeading": "Ontdek ONLYOFFICE Documents, een krachtige mobiel kantoor suite",
 
   "GetStartedAndChoose": "Ga aan de slag en kies waar u wilt werken",
 
-  "ChooseItemOnDevice": "Op het apparaat",
-  "ChooseItemManageDocuments": "Beheer documenten op het apparaat en bewerk ze offline.",
+  "ChooseItemOnDevice": "Op apparaat",
+  "ChooseItemManageDocuments": "Beheer documenten op apparaat en bewerk ze offline.",
 
-  "ChooseItemInOnlyOffice": "In de ONLYOFFICE cloud",
-  "ChooseItemAccessDocs": "Krijg toegang tot documenten uit de ONLYOFFICE cloud en de daaraan gekoppelde opslagdiensten (Dropbox, Google Drive, enz.) en werk samen.",
+  "ChooseItemInOnlyOffice": "In ONLYOFFICE cloud",
+  "ChooseItemAccessDocs": "Krijg toegang tot documenten van ONLYOFFICE cloud en de opslag (Dropbox, Google Drive, etc.) die ermee verbonden zijn en werk samen.",
 
-  "ChooseItemInYourCloud": "In uw eigen cloud",
-  "ChooseItemConnectNextcloud": "Verbind Nextcloud, ownCloud of elke andere cloud die via WebDAV werkt en bewerk documenten rechtstreeks vanuit de app.",
+  "ChooseItemInYourCloud": "In uw cloud",
+  "ChooseItemConnectNextcloud": "Verbind Nextcloud, ownCloud of een andere cloud die werkt via WebDAV en bewerk documenten rechtstreeks vanuit de app.",
 
-  "ChooseItemFromOther": "Vanuit andere apps",
-  "ChooseItemImportDocuments": "Importeer documenten vanuit applicaties zoals iTunes, Bestanden en andere.",
+  "ChooseItemFromOther": "Van andere apps",
+  "ChooseItemImportDocuments": "Documenten van applicaties zoals iTunes, Bestanden en andere.",
 
   "GetMoreWithComplete": "Haal meer uit de complete mobiele webversie",
-  "WorkOnDocumentsWithin": "Werk aan documenten binnen uw mobiele browser. Ga naar uw ONLYOFFICE webportaal en krijg toegang tot meer tools voor documentbewerking en samenwerking."
+  "WorkOnDocumentsWithin": "Werk aan documenten in uw mobiele browser. Ga naar uw ONLYOFFICE-webportaal en krijg toegang tot meer instrumenten voor documentbewerking en samenwerking.",
+
+  "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for iOS",
+
+  "LearnCardTitleRelease": "Release notes",
+  "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v7.2 for iOS",
+  "LearnMoreSubtitleRead": "Read story",
+
+  "LearnCardTitleHints": "Hints",
+  "LearnMoreTextHandwriting": "Handwriting in ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "Learn more",
+
+  "LearnCardTitleDeveloper": "Developer guide",
+  "LearnMoreTextHowMobile": "How mobile integration works",
+  "LearnMoreSubtitleLearn2": "Learn more"
 }

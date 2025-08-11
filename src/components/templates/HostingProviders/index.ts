@@ -1,0 +1,1 @@
+export { HostingProvidersTemplate } from "./HostingProviders";

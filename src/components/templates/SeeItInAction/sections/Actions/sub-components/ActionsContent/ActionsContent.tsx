@@ -23,7 +23,6 @@ const ActionsContent = ({
   uiTheme,
   isCollaborate,
 }: IActionsContentProps) => {
-
   const { token, config } = useFetchApi(fileType, title, url, mode, uiTheme);
   const { isMobile } = useIsMobile();
   const { locale } = useRouter();
@@ -41,18 +40,21 @@ const ActionsContent = ({
         {token && config && (
           <DocumentEditor
             id="docxEditor"
-            documentServerUrl={process.env.NEXT_PUBLIC_ONLYOFFICE_DOCUMENT_SERVER_URL || ""}
+            documentServerUrl={
+              process.env.NEXT_PUBLIC_ONLYOFFICE_DOCUMENT_SERVER_URL || ""
+            }
             config={{
               documentType: docType,
               token: token,
               document: config.document,
-              editorConfig: {...config.editorConfig,
+              editorConfig: {
+                ...config.editorConfig,
                 user: {
                   id: "1",
                   name: "John Smith",
                 },
                 customization: {
-                  integrationMode: "embed"
+                  integrationMode: "embed",
                 },
                 lang: locale,
               },
@@ -67,18 +69,21 @@ const ActionsContent = ({
           {token && config && (
             <DocumentEditor
               id="docxEditor-2"
-              documentServerUrl={process.env.NEXT_PUBLIC_ONLYOFFICE_DOCUMENT_SERVER_URL || ""}
+              documentServerUrl={
+                process.env.NEXT_PUBLIC_ONLYOFFICE_DOCUMENT_SERVER_URL || ""
+              }
               config={{
                 documentType: docType,
                 token: token,
                 document: config.document,
-                editorConfig: {...config.editorConfig,
+                editorConfig: {
+                  ...config.editorConfig,
                   user: {
                     id: "2",
                     name: "Kate Cage",
                   },
                   customization: {
-                    integrationMode: "embed"
+                    integrationMode: "embed",
                   },
                   lang: locale,
                 },

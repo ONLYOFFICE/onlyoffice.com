@@ -1,0 +1,6 @@
+{
+  "CheckOutTheCompatibility": "Proverite kompatibilnost sa MS Office formatima",
+  "CheckOutTheCompatibilityText": "Sačuvali smo <0>docx datoteku</0> i <1>xlsx datoteku</1> kreiran od strane Microsoft-a u PDF koristeći druge pakete. Evo rezultata.",
+  "Documents": "Dokumenti (.docx)",
+  "Spreadsheets": "Tabele (.xlsx)"
+}

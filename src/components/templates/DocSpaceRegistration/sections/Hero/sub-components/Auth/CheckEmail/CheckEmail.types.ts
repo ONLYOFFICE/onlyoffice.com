@@ -1,6 +1,6 @@
+import { TStatus } from "../../../Hero.types";
+
 export interface ICheckEmail {
   email: string;
-  setStatus: (
-    status: "login" | "signup" | "checkEmail" | "chooseEmail",
-  ) => void;
+  setStatus: (status: TStatus) => void;
 }

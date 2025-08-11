@@ -1,7 +1,7 @@
 {
-  "windows": "For Windows",
-  "macos": "For macOS",
-  "linux": "For Linux",
+  "windows": "Windows版",
+  "macos": "Mac OS版",
+  "linux": "Linux版",
   "app-store": {
     "light": "/images/ui/download-button/zh/app-store.svg",
     "dark": "/images/ui/download-button/zh/app-store.svg"

@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Assista a webinars do ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "Registre-se em nossos seminários online para aprender como trabalhar efetivamente com o ONLYOFFICE",
+
+  "HeroHeadingWatch": "Assista a <0>webinars</0> do ONLYOFFICE",
+  "HeroTextTune": "Conheça nossas webinars online ao vivo e aprenda as melhores formas de trabalhar com o ONLYOFFICE",
+
+  "UpcomingHeading": "Próximas webinars ao vivo",
+
+  "UpcomingModalProduct": "Produto",
+  "UpcomingModalBy": "Por",
+  "UpcomingModalLanguage": "Idioma",
+  "UpcomingModalPlease": "Preencha todos os campos com asteriscos (*). Você receberá uma mensagem de e-mail com o link para a webinar selecionada.",
+  "UpcomingModalFullName": "Nome completo",
+  "UpcomingModalCompanyName": "Nome da empresa",
+  "UpcomingModalEmail": "E-mail",
+  "UpcomingModalSendQuestions": "Enviar perguntas para a webinar",
+  "UpcomingModalPlaceholderName": "Nome Sobrenome",
+
+  "FullNameIsIncorrect": "Nome completo está incorreto",
+  "FullNameIsEmpty": "Nome completo está vazio",
+
+  "CompanyNameIsEmpty": "Nome da empresa está vazio",
+
+  "EmailIsEmpty": "E-mail está vazio.",
+  "EmailIsIncorrect": "E-mail está incorreto",
+
+  "AgreementByClicking": "Ao clicar em Assistir a webinar, você entende e concorda com nosso <0>SLA</0> e <1>declaração de privacidade</1>.",
+
+  "ModalSendButton": "Assistir a webinar",
+  "ModalCloseButton": "Cancelar",
+
+  "RequestSuccessfull": "Você se registrou com sucesso na webinar online do ONLYOFFICE. <br> O link para a webinar foi enviado para o seu endereço de e-mail.",
+
+  "WatchHeading": "Assista a pedido",
+  "WatchText": "Perdeu uma webinar? Assista a um replay em qualquer momento.",
+  "WatchNow": "Assistir agora",
+
+  "en": "Em inglês",
+  "ja": "Em japonês",
+  "zh": "Em chinês",
+  "fr": "Em francês",
+  "de": "Em alemão",
+  "es": "Em espanhol",
+  "pt": "Em português",
+  "it": "Em italiano",
+  "cs": "Em tcheco",
+  "nl": "Em holandês",
+  "ru": "Em russo",
+  "sr": "Em sérvio",
+
+  "ContributeHeading": "Contribua com suas ideias",
+  "ContributeTextHave": "Você tem uma ótima ideia de qual webinar precisamos realizar?",
+  "ContributeTextGet": "Entre em contato com nossa equipe pelo <0>press@onlyoffice.com</0> ou deslize para as nossas DMs no <1>Twitter</1>."
+}

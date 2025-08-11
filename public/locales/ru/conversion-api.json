@@ -1,0 +1,39 @@
+{
+  "PageTitle": "API для конвертации | ONLYOFFICE",
+  "PageDescription": "Один API для конвертации офисных документов любого типа",
+
+  "HeroTitle": "Эффективная конвертация документов",
+  "HeroText": "Один API для конвертации любых офисных документов: текстовых документов, электронных таблиц, презентаций, форм, PDF-файлов, электронных книг и т.д.",
+  "GetStarted": "Начать",
+
+  "ExploreExamples": "Ознакомьтесь с готовыми к использованию примерами",
+  "OOConversionApiTitle": "API для конвертации ONLYOFFICE используется в популярных интеграциях",
+  "ConvertingFormats": "Конвертация документов, созданных не в форматах OOXML, в OOXML для дальнейшего редактирования",
+  "ConvertingFormatsImgUrl": "/images/templates/conversion-api/examples/ru/converting-non-ooxml-formats-to-ooxml-for-further-editing.png",
+  "ConvertingFormatsImgUrl2x": "/images/templates/conversion-api/examples/ru/converting-non-ooxml-formats-to-ooxml-for-further-editing@2x.png",
+  "SavingDocuments": "Сохранение документов из хранилища файлов в различных форматах",
+  "SavingDocumentsImgUrl": "/images/templates/conversion-api/examples/zh/saving-documents-from-the-file-storage-in-various-formats.png",
+  "SavingDocumentsImgUrl2x": "/images/templates/conversion-api/examples/zh/saving-documents-from-the-file-storage-in-various-formats@2x.png",
+
+  "WhyToUseOOConversionApi": "Зачем использовать ONLYOFFICE Conversion API",
+  "SupportForAllPopularFormats": "Поддержка всех популярных форматов",
+  "CreatePdfs": "Создавайте PDF-файлы на основе ваших текстовых документов, электронных таблиц или презентаций, преобразуйте текстовые книги в электронные, конвертируйте презентации в изображения и т.д. ONLYOFFICE поддерживает более 50 различных <0>форматов</0> документов.",
+  "Security": "Безопасность",
+  "TheOpenSourceCode": "Открытый исходный код ONLYOFFICE доступен на GitHub для обеспечения прозрачности и надежности. JSON Web Token защищает документы от несанкционированного доступа. Подробнее о <0>мерах безопасности</0>.",
+  "AdvancedSettings": "Дополнительные параметры",
+  "AddConversionSettings": "Добавьте настройки конвертации для определения символов-разделителей в ходе конвертации CSV-файлов, режима отображения валюты по умолчанию в ходе конвертации электронных таблиц или настройки размера страницы и полей получаемого PDF-файла и т.д. Ознакомьтесь с документацией по API, чтобы узнать обо всех доступных опциях.",
+  "HighQualityConversion": "Качественная конвертация",
+  "OOConstantlyImproveTheService": "ONLYOFFICE постоянно совершенствует сервис для достижения наилучших результатов конвертации любых файлов. Попробуйте сконвертировать ваши документы с помощью <0>нашего онлайн конвертера</0>.",
+
+  "EasilyBuild": "Создайте онлайн конвертер документов",
+  "UsingOOConversionApi": "Использование API для конвертации ONLYOFFICE",
+  "CheckTheTutorial": "Ознакомьтесь с руководством",
+
+  "PartOfOODocsDeveloper": "API для конвертации ONLYOFFICE – часть ONLYOFFICE Docs Developer",
+  "BringAdvancedDocument": "Предоставьте конечным пользователям расширенные возможности обработки документов с помощью сервиса для конвертации под вашим брендом. <0>Узнать больше</0>",
+  "ConversionApiLinkSubject": "Заявка%20на%20API%20для%20конвертации%20ONLYOFFICE",
+
+  "HaveAnyQuestions": "Возникли вопросы?",
+  "HaveAnyQuestionsText": "Мы будем рады предоставить консультацию и обсудить все детали.",
+  "GetInTouch": "СВЯЗАТЬСЯ С НАМИ"
+}

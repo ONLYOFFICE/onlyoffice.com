@@ -1,0 +1,31 @@
+{
+  "PageTitle": "LibreOffice alternativa - veb kancelarijski paket",
+  "PageDescription": "Online alternativa za LibreOffice. Preuzmite za Windows, Linux, Mac OS. Aplikacije za Android i iOS su takođe dostupne. Bogata funkcionalnost i mogućnosti saradnje.",
+
+  "HeroTitle": "<0>ONLYOFFICE Docs</0>, najbolja alternativa LibreOffice-u",
+  "GetOODocsNow": "NABAVITE ONLYOFFICE DOCS ODMAH",
+  "CompatibleWithMicrosoftOfficeFormats": "100% kompatibilan sa Microsoft Office formatima",
+
+  "ReasonsTitle": "<0>6 razloga</0> zašto je ONLYOFFICE Docs najbolja alternativa LibreOffice-u",
+  "MaximumCompatibility": "Maksimalna kompatibilnost sa MS Office datotekama",
+  "MaximumCompatibilityText": "ONLYOFFICE Docs koristi OOXML kao osnovni format koji garantuje najvišu kompatibilnost sa Microsoft Word, Excel i PowerPoint datotekama (.docx, .xlsx i .pptx).",
+  "DesktopApp": "Veb, desktop, mobilni",
+  "DesktopAppText": "Sa ONLYOFFICE-om možete raditi online iz bilo kog pretraživača i operativnog sistema, uređivati dokumente offline uz besplatne desktop aplikacije za Windows, Linux i macOS, kao i koristiti besplatne mobilne aplikacije za Android i iOS.",
+  "DocsSheetsSlides": "Dokumenti, listovi, slajdovi, obrasci, PDF",
+  "DocsSheetsSlidesText": "Uređujte i sarađujte na tekstualnim dokumentima i tabelama bilo koje složenosti, kreirajte zapanjujuće prezentacije, pregledajte i anotirajte PDF-ove. Izradite profesionalne obrasce i šablone od nule ili iz bilo kog postojećeg DOCX fajla, dozvolite drugim korisnicima da ih popune i sačuvajte obrasce kao popunljive PDF fajlove.",
+  "Seamless": "Besprekorna saradnja",
+  "SeamlessText": "ONLYOFFICE Docs pruža korisnicima režime zajedničkog uređivanja na nivou karaktera i paragrafa, pregled i praćenje promena, istoriju verzija, komentare i pominjanja, ugrađeni čat, dodatke za audio i video pozive. Možete lako deliti svoje dokumente sa fleksibilnim dozvolama kao što su komentarisanje, pregledanje, popunjavanje obrazaca, prilagođeno filtriranje.",
+  "Flexibility": "Fleksibilnost",
+  "FlexibilityText": "Za razliku od tehnoloških divova, ONLYOFFICE ne zaključava korisnike u svoj kolaborativni ekosistem. Slobodni ste da izaberete kako da koristite online editore: kao deo okruženja zasnovanog na prostorijama ONLYOFFICE DocSpace, unutar bilo koje sync&share ili ECM usluge kao što su Nextcloud, Alfresco, Confluence, Seafile itd., ili integrisano u rešenje koje sami gradite.",
+  "AIHelper": "AI pomoćnik",
+  "AIHelperText": "Povežite bilo kog AI provajdera, koristite različite AI modele za različite zadatke. Iskoristite AI pomoćni dodatak da biste poboljšali rad sa svojim tekstovima: pokrenite analizu reči i istražite značenje nepoznatih reči, generišite odlomke, slike i ključne reči, sumirajte i prevedite priče, pronađite sinonime.",
+
+  "PresentationTitle": "Pogledajte <0>ovu prezentaciju</0> da biste videli razliku između kancelarijskih paketa:",
+
+  "OODocsVsLibreOfficeVsOpenOffice": "ONLYOFFICE vs LibreOffice vs OpenOffice [Testirano rame uz rame]",
+  "OODocsVsLibreOfficeVsOpenOfficeText": "Windows Report predstavlja alternative za Microsoft Office upoređene jedna pored druge - uključujući ONLYOFFICE, LibreOffice i OpenOffice. Windows Report je veoma pouzdan veb resurs za proizvode i usluge vezane za Windows, uključujući vesti i savete za tehničke korisnike.",
+  "OODocsVsLibreOffice": "ONLYOFFICE vs LibreOffice: šta da izaberete kada odlučite da se odreknete Microsofta",
+  "OODocsVsLibreOfficeText": "Da, Microsoft Office je sjajan, ali jednog dana će postati opterećenje za vaš budžet. Ili možda želite da ga se odreknete prateći svoj buntovni duh otvorenog koda. Bez obzira na to kakvo je vaše obrazloženje, biće vam potrebna dobra zamena. Dakle... ONLYOFFICE ili LibreOffice?",
+
+  "WhatWentWrong": "Šta je pošlo po zlu u LibreOffice-u? <0>Kliknite ovde</0> da vidite detalje"
+}
