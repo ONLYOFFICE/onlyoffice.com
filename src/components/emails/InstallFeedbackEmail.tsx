@@ -42,11 +42,11 @@ const InstallFeedbackEmail = ({
                                     Install Feedback.
                                 </p>
                                 <p style="margin-top:20px;">
-                                    <b>Which operating system you installed ONLYOFFICE$TM Server Edition to?</b><br />
+                                    <b>Which operating system you installed ONLYOFFICE™ Server Edition to?</b><br />
                                     ${os}
                                 </p>
                                 <p style="margin-top:5px;">
-                                    <b>How many users are there at your ONLYOFFICE$TM Server Edition portal?</b><br />
+                                    <b>How many users are there at your ONLYOFFICE™ Server Edition portal?</b><br />
                                     ${users_count}
                                 </p>
                                 <p style="margin-top:5px;">
