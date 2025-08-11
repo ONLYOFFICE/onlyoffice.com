@@ -1,9 +1,8 @@
 import styled from "styled-components";
+import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
-const StyledQuestionBlock = styled.div`
-
-`;
+const StyledQuestionBlock = styled.div``;
 
 const StyledQuestionHeading = styled(Heading)`
   margin-bottom: 12px;
@@ -23,6 +22,10 @@ const StyledQuestionItem = styled.li<{
     if( $columns === 3) return "33.33%"
     return "100%"
   }};
+
+  @media ${device.mobile} {
+    flex-basis: 100%;
+  }
 `;
 
 export {

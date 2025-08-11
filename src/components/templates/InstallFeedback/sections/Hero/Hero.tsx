@@ -130,6 +130,9 @@ const Hero = () => {
     <>
       <Section
         desktopSpacing={["60px", "60px"]}
+        tabletSpacing={["48px", "60px"]}
+        tabletSmallSpacing={["48px", "60px"]}
+        mobileSpacing={["48px", "60px"]}
       >
         <Container maxWidth="1050px">
           <StyledHeroHeading

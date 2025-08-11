@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Input } from "@src/components/ui/Input";
 import { TextArea } from "@src/components/ui/TextArea";
 import { LoaderButton } from "@src/components/ui/LoaderButton";
 import { Text } from "@src/components/ui/Text";
-import { StyledQuestionHeading } from "./sub-components/QuestionBlock/QuestionBlock.styled";
 import { Button } from "@src/components/ui/Button";
+import { StyledQuestionHeading } from "./sub-components/QuestionBlock/QuestionBlock.styled";
 
 const StyledHeroHeading = styled(Heading)`
   font-size: 16px;
@@ -30,16 +31,30 @@ const StyledHeroInputText = styled(Input)`
   max-width: 432px;
   height: 36px;
 
+  @media ${device.tablet} {
+    max-width: 100%;
+  }
+
   & input {
     padding: 0 16px;
   }
 `;
 
-const StyledHeroTextAreaBlock = styled.div``;
+const StyledHeroTextAreaBlock = styled.div`
+  @media ${device.mobile} {
+    & > div {
+      width: 100%;
+    }
+  }
+`;
 
 const StyledHeroTextArea = styled(TextArea)`
   width: 428px;
   height: 108px;
+
+  @media ${device.mobile} {
+    width: 100%;
+  }
 `;
 
 const StyledHeroLoaderButton = styled(LoaderButton)`
