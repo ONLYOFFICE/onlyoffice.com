@@ -11,6 +11,10 @@ import { Button } from "@src/components/ui/Button";
 
 const Assignments = () => {
   const { t } = useTranslation("office-for-moodle");
+  const scrollToBlock = () => {
+    const element = document.getElementById("how-to-start");
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <Section
@@ -38,8 +42,14 @@ const Assignments = () => {
         />
 
         <StyledAssignmentsBtnWrapper>
+        <Button
+            onClick={scrollToBlock}
+            id="features-get-started"
+            variant="secondary"
+            label={t("GetStarted")}
+          />
           <Button
-            id="assignments-free-demo"
+            id="documents-free-demo"
             as="a"
             href="mailto:sales@onlyoffice.com?subject=Demo%20request:%20Moodle"
             label={t("ScheduleYourFreeDemo")}
