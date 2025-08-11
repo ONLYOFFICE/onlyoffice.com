@@ -1,0 +1,19 @@
+{
+  "PageTitle": "Скачать ONLYOFFICE DocSpace",
+  "DownloadODocSpace": "Скачать ONLYOFFICE DocSpace",
+  "Enterprise": "Enterprise",
+  "OODocSpaceEnterprise": "ONLYOFFICE DocSpace Enterprise",
+  "OODocSpaceEnterpriseText": "Получите корпоративное пространство для ваших документов и профессиональную техническую поддержку от команды ONLYOFFICE.",
+  "Community": "Community",
+  "OODocSpaceCommunity": "ONLYOFFICE DocSpace Community",
+  "OODocSpaceCommunityText": "Получите версию DocSpace для сообщества, чтобы самостоятельно установить, настроить и поддерживать решение.",
+  "DockerImage": "Образ Docker",
+  "InstallNow": "Установить сейчас",
+  "ForDebianUbuntu": "Для Debian, Ubuntu",
+  "ForCentOS": "Для CentOS, RHEL",
+  "ForWindowsServer": "Для Windows Server 2016 или выше (только 64-разрядные)",
+  "ReadTheManual": "Read the manual",
+  "Download": "Download",
+  "TryOODocSpaceEnterpriseEdition": "Try ONLYOFFICE DocSpace Enterprise Edition <0>free for 30 days</1>",
+  "GetItNowText": "By downloading/installing this software you agree to our <0>License agreement</0> and <0>Privacy statement</0>."
+}
