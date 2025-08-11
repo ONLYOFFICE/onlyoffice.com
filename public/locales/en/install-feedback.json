@@ -27,5 +27,11 @@
   "DoYouPlanToUseTheAdditional": "Do you plan to use the additional paid support for future work?",
   "Probably": "Probably",
   "PleaseLeaveYourComments": "Please leave your comments as they will help us take into consideration all your suggestions in future versions:",
-  "SendFeedback": "Send feedback"
+  "SendFeedback": "Send feedback",
+  "PleaseWait": "Please, wait...",
+  "SendInstallFeedbackSuccessful": "Send Install Feedback Successful",
+  "ThankYouForYourTimeAndGoodLuck": "Thank you for your time and good luck!",
+  "OK": "OK",
+  "SendInstallFeedbackError": "Send Install Feedback Error",
+  "WeAreSorryBut": "We are sorry, but an error occurred, try again later"
 }
