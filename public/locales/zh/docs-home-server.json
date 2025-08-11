@@ -1,0 +1,31 @@
+{
+  "PageTitle": "ONLYOFFICE Docs Home Server 价格 | ONLYOFFICE",
+  "PageDescription": "选择适合您需求的 ONLYOFFICE Docs Home Server 计划",
+
+  "BuyOODocsHomeServer": "购买 ONLYOFFICE <0>Docs Home Server</0>",
+  "DocsHomeServer": "Docs Home Server",
+  "OnlineEditors": "用于文本文档、电子表格、演示文稿、表单和 PDF 的在线编辑器",
+  "MobileWebEditors": "移动网页编辑器",
+  "ReadyToUseConnectors": "即用型连接器",
+  "DesktopAndMobileApps": "桌面和移动应用程序",
+  "EnhancedSecurityFeatures": "增强的安全功能",
+  "AllMinorUpdatesAndMajorUpgrades": "所有小更新和主要升级",
+  "TryItFree": "免费试用",
+
+  "NumberOfUsers": "用户数量",
+  "NumberOfUsersTooltip": "指定的用户数量定义了有多少人可以访问编辑文档、电子表格和演示文稿。可以同时编辑的文档数量没有限制。其他用户只能打开文档进行查看。",
+  "LicenseDuration": "许可证期限",
+  "Lifetime": "终身",
+  "LifetimeTooltip": "您可以无限期使用购买时可用的所有 ONLYOFFICE Docs Home Server 功能，但在购买日期一年后，您将无法获得免费更新。",
+  "Updates": "更新",
+  "1Year": "1年",
+  "Total": "总计：",
+  "BuyNow": "立即购买",
+
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesLabel": "'终身许可证'和'1年更新'是什么意思？",
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesText": "您可以无限期使用购买时可用的所有 ONLYOFFICE Docs Home Server 功能，但在购买日期一年后，您将无法获得免费更新。如果您想在以后更新您的 ONLYOFFICE Docs Home Server 版本，您需要购买新的许可证密钥。",
+  "WhatDoesTheNumberOfUsersLabel": "'用户数量'是什么意思？",
+  "WhatDoesTheNumberOfUsersText": "指定的用户数量定义了有多少人可以访问编辑文档、电子表格和演示文稿。可以同时编辑的文档数量没有限制。<br/>其他用户只能打开文档进行查看。<br/><br/>注意：ONLYOFFICE 在 30 天内保留用户 ID。之后，您可以在需要时将用户替换为新用户。如果您与外部用户共享文档，每个用户都会收到一个为期 30 天的命名用户 ID。",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "在哪里可以找到其他问题的答案？",
+  "WhereCanIFindAnswersToOtherQuestionsText": "请访问我们的 <0>FAQ 中心</0>或<1>提交您的请求</1>，我们将尽快为您提供帮助。"
+}
