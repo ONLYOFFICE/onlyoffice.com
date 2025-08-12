@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
 const StyledPRForm = styled.form`
@@ -19,6 +20,11 @@ const StyledDownloadModalWrapper = styled.div`
   }
 `;
 
+const StyledPRFHeading = styled(Heading)`
+  margin-bottom: -8px;
+  text-align: center;
+`;
+
 const StyledDownloadModalText = styled(Text)`
   margin-top: 16px;
 
@@ -27,8 +33,19 @@ const StyledDownloadModalText = styled(Text)`
   }
 `;
 
+const StyledHeroHCaptchaWrapper = styled.div`
+  display: flex;
+  gap: 16px;
+
+  @media ${device.mobile} {
+    flex-direction: column;
+  }
+`;
+
 export {
   StyledPRForm,
   StyledDownloadModalWrapper,
+  StyledPRFHeading,
   StyledDownloadModalText,
+  StyledHeroHCaptchaWrapper,
 };

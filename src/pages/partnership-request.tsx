@@ -22,7 +22,7 @@ const DownloadPage = ({
         <AdventAnnounce locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head title={t("PageTitle")} />
+        <Head title={t("PageTitle")} description={t("PageDescription")} />
       </Layout.Head>
       <Layout.Header>
         <Header

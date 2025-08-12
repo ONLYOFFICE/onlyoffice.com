@@ -4,13 +4,14 @@ import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import {
   StyledPRForm,
   StyledDownloadModalWrapper,
+  StyledPRFHeading,
   StyledDownloadModalText,
-} from "./DownloadModal.styled";
-import { IDownloadModal } from "./DownloadModal.types";
+  StyledHeroHCaptchaWrapper,
+} from "./PartnershipRequestForm.styled";
+import { IDownloadModal } from "./PartnershipRequestForm.types";
 import { getFromParam } from "@src/utils/getParams";
 import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { countries } from "@src/config/data/countries";
-import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { TextArea } from "@src/components/ui/TextArea";
@@ -24,9 +25,8 @@ import {
   validateWebsite,
 } from "@src/utils/validators";
 
-const DownloadModal = ({
+const PartnershipRequestForm = ({
   locale,
-  heading,
   initialFormData,
   formData,
   setFormData,
@@ -172,10 +172,12 @@ const DownloadModal = ({
   return (
     <StyledPRForm>
       <StyledDownloadModalWrapper>
-        <Heading level={4} textAlign="center">
-          {heading}
-        </Heading>
 
+        <StyledPRFHeading
+          level={4}
+          size={5}
+          label={t("ContactInfo")}>
+        </StyledPRFHeading>
         <Input
           onChange={(e) => handleInputChange("fullName", e.target.value)}
           onBlur={() => {
@@ -328,6 +330,11 @@ const DownloadModal = ({
           }
         />
 
+        <StyledPRFHeading
+          level={4}
+          size={5}
+          label={t("PartneshipInfo")}>
+        </StyledPRFHeading>
         <TextArea
           onChange={(e) => handleInputChange("comment", e.target.value)}
           onBlur={() => {
@@ -343,10 +350,10 @@ const DownloadModal = ({
           status={formData.comment ? "success" : "default"}
         />
 
-        <div>
+
+        <StyledHeroHCaptchaWrapper>
           <HCaptcha
             ref={hCaptchaRef}
-            size="invisible"
             onVerify={handleHCaptchaChange}
             onExpire={() => handleHCaptchaChange(null)}
           />
@@ -354,7 +361,7 @@ const DownloadModal = ({
           <Text fontSize="12px" lineHeight="20px">
             {byClickingText}
           </Text>
-        </div>
+        </StyledHeroHCaptchaWrapper>
 
         <LoaderButton
           onClick={handleHCaptchaExecute}
@@ -383,4 +390,4 @@ const DownloadModal = ({
   );
 };
 
-export { DownloadModal };
+export { PartnershipRequestForm };

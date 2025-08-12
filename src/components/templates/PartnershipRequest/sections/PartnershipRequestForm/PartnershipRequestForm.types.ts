@@ -22,7 +22,6 @@ interface IApiResponse {
 
 export interface IDownloadModal {
   locale: string;
-  heading: React.ReactNode;
   initialFormData: IDownloadModalData;
   formData: IDownloadModalData;
   setFormData: React.Dispatch<React.SetStateAction<IDownloadModalData>>;
