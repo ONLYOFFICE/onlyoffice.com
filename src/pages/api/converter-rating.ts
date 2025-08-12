@@ -42,7 +42,7 @@ export default async function handler(
     };
 
     // Check if the user already voted
-    const [existing] = await db.query<RowDataPacket[]>(
+    const [existing] = await db.teamlabsite.query<RowDataPacket[]>(
       "SELECT 1 FROM converter_rating WHERE userIP = ? AND converterPageName = ? LIMIT 1",
       Object.values(checkRatingData),
     );
@@ -60,7 +60,7 @@ export default async function handler(
     };
 
     // Insert new rating
-    await db.query(
+    await db.teamlabsite.query(
       "INSERT INTO converter_rating (ratingValue, converterPageName, userIP) VALUES (?, ?, ?)",
       Object.values(insertRatingData),
     );
