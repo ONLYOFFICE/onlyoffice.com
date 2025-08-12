@@ -318,6 +318,11 @@ const Hero = () => {
           setLoadStatus("success");
           return;
         }
+
+        if (dataSupport.status === "error") {
+          setLoadStatus("error");
+          return;
+        }
       }
 
     } catch (error) {
