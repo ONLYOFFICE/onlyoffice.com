@@ -18,7 +18,7 @@ export interface ICoursesItems {
 
 export const coursesItems: ICoursesItems[] = [
   {
-    id: "docs",
+    id: "academy_docs",
     keyModules: [
       {
         title: "DocumentEditor",
@@ -55,7 +55,7 @@ export const coursesItems: ICoursesItems[] = [
     ],
   },
   {
-    id: "docspace",
+    id: "academy_docspace",
     keyModules: [
       {
         description: "DocspaceCourse1",
@@ -75,7 +75,7 @@ export const coursesItems: ICoursesItems[] = [
     ],
   },
   {
-    id: "workspace",
+    id: "academy_workspace",
     levels: [
       {
         basic: ["WorkspaceBasic"],

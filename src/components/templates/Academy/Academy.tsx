@@ -6,13 +6,14 @@ import { Table } from "./sections/Table";
 import { Reviews } from "./sections/Reviews";
 import { FAQ } from "./sections/FAQ";
 import { Contact } from "./sections/Contact";
+import { ILocale } from "@src/types/locale";
 
-const Academy = () => {
+const Academy = ({ locale }: ILocale) => {
   return (
     <>
       <Hero />
       <Benefits />
-      <Discover />
+      <Discover locale={locale} />
       <Table />
       <Reviews />
       <FAQ />

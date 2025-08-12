@@ -29,7 +29,7 @@ const AcademyPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <Academy />
+        <Academy locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -45,6 +45,7 @@ export const getStaticProps = async ({ locale }: ILocale) => {
         "common",
         "academy",
         "FaqCollapse",
+        "training-courses",
       ])),
       locale,
     },

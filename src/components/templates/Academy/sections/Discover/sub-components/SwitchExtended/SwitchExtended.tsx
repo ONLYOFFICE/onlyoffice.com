@@ -11,9 +11,10 @@ import {
 
 interface ISwitchExtended extends IHeroTabs {
   subheading: string;
+  setCourse: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const SwitchExtended = ({ heading, items, subheading }: ISwitchExtended) => {
+const SwitchExtended = ({ heading, items, subheading, setCourse }: ISwitchExtended) => {
   const [activeTab, setActiveTab] = useState<string>(items[0].button.id);
   const activeItem = items.find((item) => item.button.id === activeTab);
 
@@ -33,6 +34,7 @@ const SwitchExtended = ({ heading, items, subheading }: ISwitchExtended) => {
             key={index}
             onClick={() => {
               setActiveTab(item.button.id);
+              setCourse(item.button.id);
             }}
             $activeTab={activeTab === item.button.id}
             $iconUrl={item.button.icon.url}

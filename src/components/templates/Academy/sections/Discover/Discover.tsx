@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
 
 import { ButtonsArea, StyledSection } from "./Discover.styled";
@@ -9,10 +9,14 @@ import { SwitchExtended } from "./sub-components/SwitchExtended/SwitchExtended";
 import { Heading } from "@src/components/ui/Heading";
 import { KeyModules } from "./sub-components/KeyModules/KeyModules";
 import { Levels } from "./sub-components/Levels/Levels";
+import { CardForm } from "@src/components/templates/TrainingCourses/sections/Cards/sub-components/CardForm/CardForm";
+import { ILocale } from "@src/types/locale";
 
-export const Discover = () => {
+export const Discover = ({ locale }: ILocale) => {
   const { t } = useTranslation("academy");
-
+  const [openModal, setOpenModal] = useState(false);
+  const [course, setCourse] = useState("academy_docs");
+  
   return (
     <StyledSection
       id="discover"
@@ -22,6 +26,7 @@ export const Discover = () => {
       mobileSpacing={["48px", "0px"]}
     >
       <SwitchExtended
+        setCourse={setCourse}
         heading={{
           text: (
             <Trans
@@ -35,7 +40,7 @@ export const Discover = () => {
         items={[
           {
             button: {
-              id: "docs",
+              id: "academy_docs",
               icon: {
                 url: "/images/templates/academy/courses/docs.svg",
                 width: "64px",
@@ -59,7 +64,7 @@ export const Discover = () => {
           },
           {
             button: {
-              id: "docspace",
+              id: "academy_docspace",
               icon: {
                 url: "/images/templates/academy/courses/docspace.svg",
                 width: "64px",
@@ -83,7 +88,7 @@ export const Discover = () => {
           },
           {
             button: {
-              id: "workspace",
+              id: "academy_workspace",
               icon: {
                 url: "/images/templates/academy/courses/workspace.svg",
                 width: "64px",
@@ -109,13 +114,23 @@ export const Discover = () => {
       />
 
       <ButtonsArea>
-        <Button as="button" onClick={() => {}}>
+        <Button as="button" onClick={() => setOpenModal(true)}>
           {t("SubmitRequest")}
         </Button>
         <Button as="a" href="/training-courses" variant="tertiary">
           {t("MoreCourses")}
         </Button>
       </ButtonsArea>
+
+
+      {openModal &&
+        <CardForm
+          openModal={openModal}
+          setOpenModal={setOpenModal}
+          locale={locale}
+          course={course}
+        />
+      }
     </StyledSection>
   );
 };
