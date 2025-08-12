@@ -33,7 +33,7 @@ const GratitudionBanner = () => {
             components={[
               <Link
                 key={0}
-                href={`/Unsubscribe?id=${router.query.id || ""}#subscribe`}
+                href={`/Unsubscribe${!router.query.SubscribePage_testing && router.query.id ? `?id=${router.query.id}#subscribe` : ""}`}
                 color="main"
                 textUnderline
                 hover="underline-none"
