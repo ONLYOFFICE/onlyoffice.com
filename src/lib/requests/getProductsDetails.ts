@@ -24,7 +24,7 @@ export const getProductsDetails = async ({
 
   try {
     if (typeof key === "string" && key.trim() !== "") {
-      [rows] = await db.execute<IProductDetails[]>(
+      [rows] = await db.teamlabsite.execute<IProductDetails[]>(
         `${baseQuery} WHERE prod_name = ?`,
         [key],
       );
@@ -33,12 +33,12 @@ export const getProductsDetails = async ({
 
     if (Array.isArray(key) && key.length > 0) {
       const placeholders = key.map(() => "?").join(", ");
-      [rows] = await db.execute<IProductDetails[]>(
+      [rows] = await db.teamlabsite.execute<IProductDetails[]>(
         `${baseQuery} WHERE prod_name IN (${placeholders})`,
         key,
       );
     } else {
-      [rows] = await db.execute<IProductDetails[]>(baseQuery);
+      [rows] = await db.teamlabsite.execute<IProductDetails[]>(baseQuery);
     }
   } catch (err) {
     console.error("getProductsDetails error:", err);

@@ -1,4 +1,12 @@
 {
+  "PageTitle": "Suite bureautique en ligne pour Redmine | ONLYOFFICE Docs",
+  "PageDescription": "Éditez et co-éditez des documents, créez et remplissez des formulaires dans Redmine.",
+
+  "OnlineOfficeForConnector": "Bureau en ligne pour <0>Redmine</0>",
+  "Subheader": "Affichez, modifiez et collaborez sur les documents bureautiques dans Redmine en utilisant ONLYOFFICE Docs",
+  "GetStarted": "Démarrer",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Complètement compatible avec les formats docx, xlsx et pptx",
+
   "HeroTab1ImgUrl": "/images/templates/office-for-redmine/hero/fr/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-redmine/hero/fr/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-redmine/hero/fr/screen2.png",
@@ -12,5 +20,29 @@
   "HeroTab6ImgUrl": "/images/templates/office-for-redmine/hero/fr/screen6.png",
   "HeroTab6ImgUrl2x": "/images/templates/office-for-redmine/hero/fr/screen6@2x.png",
   "HeroTab7ImgUrl": "/images/templates/office-for-redmine/hero/fr/screen7.png",
-  "HeroTab7ImgUrl2x": "/images/templates/office-for-redmine/hero/fr/screen7@2x.png"
+  "HeroTab7ImgUrl2x": "/images/templates/office-for-redmine/hero/fr/screen7@2x.png",
+
+  "MarketplaceConnectorTitle": "Conçue pour une intégration transparente avec Redmine",
+  "MarketplaceConnectorDescription": "Obtenez le connecteur ONLYOFFICE pour Redmine maintenant à partir du <0>répertoire des plugins Redmine</0>.",
+  "GetItNow": "Obtenir maintenant",
+
+  "WhyOO": "Pourquoi ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs est une suite bureautique auto-hébergée pour travailler sur les documents texte, les feuilles de calcul, les présentations et les formulaires",
+  "Reason1": "Connecteur prêt à l'emploi",
+  "Reason2": "Installation facile et configuration rapide",
+  "Reason3": "Travaillez avec des fichiers dans les modules Demandes, Fichiers, Documents, Wiki ou Annonces",
+  "Reason4": "Interface intuitive avec onglets",
+  "Reason5": "Outils multiples d'édition, de formatage et de stylisme",
+  "Reason6": "Collaboration en temps réel, suivi des modifications, commentaires, chat",
+  "Reason7": "Versions Community gratuite et <0>Enterprise évolutive</0> versions",
+  "Reason8": "Code source ouvert disponible sur GitHub",
+
+  "HowToStart": "Comment commencer",
+  "HowToStartStep1": "Déployez <0>ONLYOFFICE Docs</0> sur votre propre serveur ou créez un compte <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenez le connecteur ONLYOFFICE depuis le <0>répertoire de plugins de Redmine</0>.",
+  "HowToStartStep3": "Configurez le connecteur et activez JWT.",
+
+  "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>.",
+
+  "NeedAnAppToConnect": "Besoin d'une appli pour connecter ONLYOFFICE Docs à votre service web préférentiel ? Ou en avez-vous développé une ?"
 }

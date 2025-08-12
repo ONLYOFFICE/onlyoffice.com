@@ -143,7 +143,7 @@ export default async function handler(
       return res.status(200).json(ipCache.get(ipFormatted));
     }
 
-    const [rows] = await db.query<ILocationRow[]>(
+    const [rows] = await db.teamlabsite.query<ILocationRow[]>(
       `
       SELECT ip_start, ip_end, country, city, timezone_offset, timezone_name
       FROM dbip_location

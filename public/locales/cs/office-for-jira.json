@@ -1,0 +1,43 @@
+{
+  "PageTitle": "Online kancelářský balík pro Jira | ONLYOFFICE Docs",
+  "PageDescription": "Upravujte a spoluupravujte dokumenty, vytvářejte vyplnitelné formuláře v aplikaci Jira",
+
+  "OnlineOfficeForConnector": "Online office for Jira",
+  "Subheader": "Work on all kinds of office documents within Jira Software using ONLYOFFICE Docs",
+  "HeroImgUrl": "/images/templates/office-for-jira/hero/cs/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-jira/hero/cs/hero@2x.png",
+
+  "WorkWithinConnector": "Edit and co-author office documents within the Jira interface",
+  "DocumentsTab1Label": "View, edit and co-edit office files attached to tasks right within your Jira dashboard.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-jira/documents/cs/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-jira/documents/cs/screen1@2x.png",
+  "DocumentsTab2Label": "Create and edit text documents, spreadsheets, and presentations.",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-jira/documents/cs/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-jira/documents/cs/screen2@2x.png",
+  "DocumentsTab3Label": "Collaborate on documents with your colleagues in real time.",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-jira/documents/cs/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-jira/documents/cs/screen3@2x.png",
+  "GetStarted": "Get started",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Jira",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Jira now from the Atlassian Marketplace.",
+
+  "WhyOO": "Why ONLYOFFICE?",
+  "Reason1": "Support for more than <0>50 file formats</0>, fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
+  "Reason2": "A robust set of editing, formatting, and styling tools. Integrated <0>AI helper</0>.",
+  "Reason3": "Real-time and paragraph-locking <0>co-editing</0>, review, version history, document comparison, comments & chat. Audio and video calls.",
+  "Reason4": "<0>Enhanced security</0>. Flexible access rights and JWT. Watermarking and password protection. Open source code.",
+  "Reason5": "<0>Easy configuration</0> from the Jira administration panel. Seamless integration with ready-to-use connector from the <1>Atlassian Marketplace</1>. Available for Jira Server and Data Center.",
+  "Reason6": "Cloud and self-hosted solution for total control over your data. Scalable Enterprise versions. <0>Free 30-day trial</0>.",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>Atlassian Marketplace</0>.",
+  "HowToStartStep3": "Configure the connector and enable JWT.",
+  "HowToStartStep3Url": "/images/templates/office-for-jira/how-to-start/cs/step3.svg",
+
+  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "HowToConnect": "How to integrate ONLYOFFICE Docs and Jira Software",
+
+  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"
+}

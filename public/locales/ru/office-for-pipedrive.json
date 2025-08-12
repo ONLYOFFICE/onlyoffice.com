@@ -1,32 +1,70 @@
 {
+  "PageTitle": "Онлайн офис для Pipedrive",
+  "PageDescription": "Работайте с офисными документами Pipedrive Deals",
+
+  "OnlineOfficeForConnector": "Онлайн офис для Pipedrive",
+  "Subheader": "Работайте с офисными документами Pipedrive Deals",
+  "GetStarted": "Начать работу",
+  "ScheduleFreeDemo": "Запланировать бесплатную демонстрацию",
   "HeroImgUrl": "/images/templates/office-for-pipedrive/hero/ru/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-pipedrive/hero/ru/hero@2x.png",
 
+  "DocspaceAppTitle": "<0>Приложение</0> ONLYOFFICE <0>DocSpace</0> для Pipedrive",
+  "New": "Новый",
+  "DocspaceAppHeader": "Создайте рабочее пространство для совместной работы над документами по сделкам",
+  "DocspaceAppTab1Label": "Создайте комнату DocSpace для совместной работы над документами прямо из любой сделки Pipedrive.",
   "DocspaceAppTab1ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/ru/screen1.png",
   "DocspaceAppTab1ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/ru/screen1@2x.png",
-
+  "DocspaceAppTab2Label": "Синхронизировать права доступа.",
   "DocspaceAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/ru/screen2.png",
   "DocspaceAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/ru/screen2@2x.png",
-
+  "DocspaceAppTab3Label": "Храните все данные о сделках в одном месте.",
   "DocspaceAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/ru/screen3.png",
   "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/ru/screen3@2x.png",
-
+  "DocspaceAppTab4Label": "Редактируйте текстовые документы, электронные таблицы, презентации, формы, PDF-файлы и работайте над ними совместно. Просматривайте медиафайлы.",
   "DocspaceAppTab4ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/ru/screen4.png",
   "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/ru/screen4@2x.png",
 
+  "MarketplaceConnectorTitle": "Разработано для беспрепятственной интеграции с Pipedrive",
+  "MarketplaceConnectorDescription": "Получите приложение ONLYOFFICE для Pipedrive прямо сейчас в магазине приложений Marketplace от Pipedrive",
+
+  "DocsAppTitle": "<0>Приложение</0> ONLYOFFICE <0>Docs</0> для Pipedrive",
+  "DocsAppHeader": "Редактируйте офисные документы и работайте над ними совместно в интерфейсе Pipedrive",
+  "DocsAppTab1Label": "Создавайте текстовые документы, электронные таблицы, презентации или загружайте их в Pipedrive.",
   "DocsAppTab1ImgUrl": "/images/templates/office-for-pipedrive/docs-app/ru/screen1.png",
   "DocsAppTab1ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/ru/screen1@2x.png",
-
+  "DocsAppTab2Label": "Просматривайте и редактируйте офисные документы, прикрепленные к сделкам Pipedrive.",
   "DocsAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docs-app/ru/screen2.png",
   "DocsAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/ru/screen2@2x.png",
-
+  "DocsAppTab3Label": "Работайте над документами вместе с коллегами в режиме реального времени, отслеживайте изменения, оставляйте комментарии, обменивайтесь сообщениями в чате.",
   "DocsAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docs-app/ru/screen3.png",
   "DocsAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/ru/screen3@2x.png",
 
+  "WhyOO": "Почему ONLYOFFICE?",
+  "Reason1": "Поддержка более <0>50 форматов файлов</0>, полная совместимость с форматами MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "<0>Совместное редактирование</0> в реальном времени и в режиме блокировки абзацев, рецензирование, история версий, сравнение документов, комментарии и чат. Аудио- и видеозвонки.",
+  "Reason3": "Бесплатная версия Community и масштабируемые версии Enterprise. <0>Бесплатный пробный период - 30 дней</0>. Интеграция с облачной версией.",
+  "Reason4": "Надежный набор инструментов редактирования, форматирования и работы со стилями. Интегрированный <0>ИИ-помощник</0>.",
+  "Reason5": "<0>Простая установка</0> из магазина приложений Marketplace от Pipedrive и быстрая настройка",
+  "Reason6": "<0>Улучшенная безопасность</0>. Гибкие права доступа и JWT. Открытый исходный код. Решение для размещения на собственном сервере для полного контроля над вашими данными.",
+
+  "HowToStart": "Как начать",
+
+  "HowToStartStep1Docspace": "Войдите в учетную запись ONLYOFFICE DocSpace или <0>зарегистрируйте новую</0>.",
+  "HowToStartStep2Docspace": "Установите приложение из магазина приложений <0>Pipedrive Marketplace</0> и предоставьте необходимые разрешения.",
+  "HowToStartStep3Docspace": "Настройте параметры доступа к Pipedrive и ONLYOFFICE.",
+  "HowToStartStep2DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step2-ds.svg",
+  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step3-ds.svg",
+
+  "HowToStartStep1Docs": "Разверните <0>ONLYOFFICE Docs</0> на собственном сервере или зарегистрируйтесь в <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2Docs": "Установите приложение для интеграции из Магазина приложений <0>Marketplace от Pipedrive</0>.",
+  "HowToStartStep3Docs": "Настройте интегрированные экземпляры приложений.",
   "HowToStartStep2DocsImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step2-dc.svg",
   "HowToStartStep3DocsImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step3-dc.svg",
+  "ReadDetailedInstructions": "Ознакомьтесь с полезными руководствами по интеграции с Pipedrive на <0>GitHub</0> или в <1>Справочном центре</1>.",
 
-  "HowToStartStep1DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step1-ds.svg",
-  "HowToStartStep2DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step2-ds.svg",
-  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/ru/step3-ds.svg"
+  "PartnerHeading": "Вы являетесь партнером Pipedrive? Как насчет приобретения нового опыта работы в Pipedrive и повышения дохода?",
+  "PartnerText": "Присоединяйтесь к партнерской программе ONLYOFFICE прямо сейчас.",
+
+  "NeedAnAppToConnect": "Необходимо приложение для подключения ONLYOFFICE к вашему любимому веб-сервису? Или вы разработали такой сервис?"
 }

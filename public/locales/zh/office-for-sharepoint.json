@@ -1,4 +1,11 @@
 {
+  "PageTitle": "适用于SharePoint的在线办公套件",
+  "PageDescription": "在SharePoint中编辑和共同编辑Office文档",
+
+  "OnlineOfficeForConnector": "适用于 SharePoint 的在线办公套件",
+  "Subheader": "ONLYOFFICE将帮助您在浏览器中实现对桌面端Office应用程序的完全替代",
+  "GetStarted": "开始使用",
+
   "HeroTab1ImgUrl": "/images/templates/office-for-sharepoint/hero/zh/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-sharepoint/hero/zh/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-sharepoint/hero/zh/screen2.png",
@@ -8,5 +15,40 @@
   "HeroTab4ImgUrl": "/images/templates/office-for-sharepoint/hero/zh/screen4.png",
   "HeroTab4ImgUrl2x": "/images/templates/office-for-sharepoint/hero/zh/screen4@2x.png",
   "HeroTab5ImgUrl": "/images/templates/office-for-sharepoint/hero/zh/screen5.png",
-  "HeroTab5ImgUrl2x": "/images/templates/office-for-sharepoint/hero/zh/screen5@2x.png"
+  "HeroTab5ImgUrl2x": "/images/templates/office-for-sharepoint/hero/zh/screen5@2x.png",
+
+  "WhyOO": "为什么全球超过1500万用户都在使用ONLYOFFICE",
+  "Reason1": "高度兼容MS Office文件格式。",
+  "Reason2": "丰富的风格和格式化工具",
+  "Reason3": "查看、转换、打印分页均可实现100%保真度",
+  "Reason4": "广泛的协作能力",
+  "Reason5": "包含众多第三方插件",
+  "Reason6": "包含众多第三方插件",
+  "Reason7": "您可在 GitHub 上查看本项目的开源代码",
+  "Reason8": "高安全性",
+  "Reason9": "使用WOPI轻松集成",
+
+  "MarketplaceConnectorTitle": "专为与 SharePoint 无缝集成而设计",
+  "MarketplaceConnectorDescription": "立即从 <0>GitHub</0> 获取适用于 SharePoint 的 ONLYOFFICE 连接器。",
+  "GetItNow": "立即获取",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1": "在您自己的服务器上部署 <0>ONLYOFFICE 文档</0> 或创建 <1>文档云</1> 帐户。",
+  "HowToStartStep2": "从 <0>GitHub</0> 获取 ONLYOFFICE 连接器。",
+  "HowToStartStep3": "配置连接器并启用JWT。",
+
+  "ReadDetailedInstructions": "在<0>帮助中心</0>查看详细说明。",
+
+  "LearnMoreHeading": "了解更多有关 Sharepoint 的 ONLYOFFICE 集成",
+  "Video": "视频",
+  "VideoDesc": "如何将 ONLYOFFICE 文档集成至 Sharepoint。",
+  "VideoLink": "立即观看",
+  "Compare": "对比",
+  "CompareDesc": "ONLYOFFICE 文档为何是 MS Office 的最佳平替。",
+  "CompareLink": "了解更多",
+  "HelpCenter": "帮助中心",
+  "HelpCenterDesc": "如何通过 WOPI 将 ONLYOFFICE 文档与 SharePoint 连接。",
+  "HelpCenterLink": "立即阅读",
+
+  "NeedAnAppToConnect": "需要一个应用程序将ONLYOFFICE连接到您偏好的Web服务？ 或者您已经开发了自己的应用？"
 }
