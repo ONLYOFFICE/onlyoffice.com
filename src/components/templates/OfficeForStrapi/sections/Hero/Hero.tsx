@@ -11,9 +11,11 @@ import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { ImageCarousel } from "@src/components/modules/connectors/ImageCarousel";
 import { items } from "./data/items";
+import { useRouter } from "next/router";
 
 const Hero = () => {
   const { t } = useTranslation("office-for-strapi");
+  const { locale } = useRouter();
 
   const scrollToBlock = () => {
     const element = document.getElementById("how-to-start");
@@ -31,7 +33,7 @@ const Hero = () => {
         <StyledHeroWrapper>
           <StyledHeroLogo />
 
-          <StyledHeroHeader>
+          <StyledHeroHeader $locale={locale}>
             <Heading level={1} size={1}>
               <Trans
                 t={t}
