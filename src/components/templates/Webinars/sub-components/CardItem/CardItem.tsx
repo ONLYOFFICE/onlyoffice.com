@@ -226,7 +226,12 @@ const CardItem = ({
           <Text
             size={2}
             label={description}
-          />
+            color="#666666"
+          >
+            <Trans i18nKey={description} t={t} components={{
+              br: <br />
+            }} />
+          </Text>
         </StyledCardItemContent>
         <StyledCardItemBottom>
           {!isUpcomingWebinar && link && (

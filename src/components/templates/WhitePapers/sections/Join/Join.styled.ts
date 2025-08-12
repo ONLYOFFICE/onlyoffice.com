@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
+import { Text } from "@src/components/ui/Text";
 
 const StyledJoinSection = styled(Section)`
   background-image: url("/images/templates/whitepapers/join/leaf-bg.svg"),linear-gradient(135deg,#FFC671 0%,#FF7541 64.06%,#FF6F3D 100%);
@@ -54,9 +55,14 @@ const StyledJoinButton = styled(Button)`
   }
 `;
 
+const StyledJoinCountText = styled(Text)`
+  white-space: nowrap;
+`;
+
 export {
   StyledJoinSection,
   StyledJoinIcon,
   StyledJoinHeading,
   StyledJoinButton,
+  StyledJoinCountText,
 };

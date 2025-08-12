@@ -29,7 +29,7 @@ const Integration = () => {
             textUnderline={true}
             hover="underline-none"
             target="_blank"
-            href="https://www.onlyoffice.com/blog/2019/02/how-onlyoffice-and-owncloud-integration-in-sciebo-helps-facilitate-research-workflow-in-munster-university" />
+            href={t("IntegrationReadBlogLink")} />
         </StyledIntegrationLeft>
         <StyledIntegrationRight>
           <StyledIntegrationIcon $iconUrl="/images/templates/customers/integration/sciebo-icon.svg" />
