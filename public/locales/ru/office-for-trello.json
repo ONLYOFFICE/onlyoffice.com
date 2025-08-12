@@ -1,13 +1,40 @@
 {
+  "PageTitle": "Онлайн офис для Trello | ONLYOFFICE",
+  "PageDescription": "Работайте с любыми офисными документами в Trello, используя ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Онлайн офис для Trello",
+  "Subheader": "Работайте с любыми офисными документами в Trello, используя ONLYOFFICE Docs",
+  "GetStarted": "НАЧАТЬ",
   "HeroImgUrl": "/images/templates/office-for-trello/hero/ru/main.png",
   "HeroImgUrl2x": "/images/templates/office-for-trello/hero/ru/main@2x.png",
 
+  "WorkWithinConnector": "Работайте над офисными документами, загруженными на карточки на доске Trello",
+  "DocumentsTab1Label": "Разрешайте администраторам и участникам с обычными правами редактировать файлы DOCX, XLSX и PPTX.",
   "DocumentsTab1ImgUrl": "/images/templates/office-for-trello/documents/ru/screen1.png",
   "DocumentsTab1ImgUrl2x": "/images/templates/office-for-trello/documents/ru/screen1@2x.png",
-
+  "DocumentsTab2Label": "Предоставляйте наблюдателям права на просмотр загруженных документов.",
   "DocumentsTab2ImgUrl": "/images/templates/office-for-trello/documents/ru/screen2.png",
   "DocumentsTab2ImgUrl2x": "/images/templates/office-for-trello/documents/ru/screen2@2x.png",
-
+  "DocumentsTab3Label": "Редактируйте документы вместе с коллегами в режиме реального времени.",
   "DocumentsTab3ImgUrl": "/images/templates/office-for-trello/documents/ru/screen3.png",
-  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-trello/documents/ru/screen3@2x.png"
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-trello/documents/ru/screen3@2x.png",
+
+  "MarketplaceConnectorTitle": "Разработано для беспрепятственной интеграции с Trello",
+  "MarketplaceConnectorDescription": "Получите ONLYOFFICE Power-Up для Trello прямо сейчас в Atlassian Marketplace.",
+  "GetItNow": "НАЧАТЬ ПРЯМО СЕЙЧАС",
+
+  "WhyOO": "Почему ONLYOFFICE?",
+  "Reason1": "Поддержка более <0>50 форматов файлов</0>, полная совместимость с форматами MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "Надежный набор инструментов редактирования, форматирования и работы со стилями. Встроенный <0>ИИ-помощник</0>.",
+  "Reason3": "<0>Совместное редактирование</0> в реальном времени и в режиме блокировки абзацев, рецензирование, история версий, сравнение документов, комментарии и чат.",
+  "Reason4": "<0>Улучшенная безопасность</0>. Гибкие права доступа и JWT. Защита с помощью водяных знаков и пароля. Открытый исходный код.",
+  "Reason5": "Беспрепятственная интеграция с помощью готового к использованию коннектора из Atlassian Marketplace. <0>Простая настройка</0>.",
+  "Reason6": "Облачная версия и решение для размещения на собственном сервере для полного контроля безопасности ваших данных. Масштабируемые версии Enterprise. <0>Бесплатный 30-дневный пробный период</0>.",
+
+  "HowToStart": "Как начать",
+  "HowToStartStep1": "Разверните <0>ONLYOFFICE Docs</0> на собственном сервере или создайте учетную запись в <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Получите Power-Up в <0>Atlassian Marketplace</0>.",
+  "HowToStartStep3": "Настройте Power-Up и включите JWT.",
+
+  "NeedAnAppToConnect": "Необходимо приложение для подключения ONLYOFFICE к вашему любимому веб-сервису? Или вы разработали такой сервис?"
 }

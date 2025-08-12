@@ -1,0 +1,37 @@
+{
+  "PageTitle": "Box内で直接オフィスファイルを簡単に編集する",
+  "PageDescription": "統合されたONLYOFFICE Docs Cloudを使用することで",
+
+  "FreeOnlineOfficeForBox": "Box向けの無料オンラインオフィス",
+  "OpenAndEditWithinBox": "統合されたONLYOFFICE Docs Cloudを使用して、Box内でドキュメント、スプレッドシート、プレゼンテーション、PDFを開いて編集できます",
+  "GetItNow": "今すぐ始める",
+  "FullyCompatibleWithDocxXlsxAndPptx": "docx、xlsx、pptxに完全対応",
+
+  "EditAndCoAuthorOfficeDocuments": "Boxのインターフェイス内でオフィス文書を編集、共同執筆",
+  "DocumentsTab1Label": "Boxストレージに保存されたOffice文書を開いて編集",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-box/documents/screenshot1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-box/documents/screenshot1@2x.png",
+  "DocumentsTab2Label": "リアルタイムまたは段落ロックモードで複数のユーザーと文書を共同執筆",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-box/documents/screenshot2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-box/documents/screenshot2@2x.png",
+
+  "MarketplaceConnectorTitle": "Boxとのシームレスな統合のために設計されています",
+  "MarketplaceConnectorDescription": "BoxアプリセンターからBox用ONLYOFFICEアプリを今すぐ入手できます。",
+  "GetStarted": "始める",
+
+  "WhyOO": "なぜONLYOFFICE？",
+  "FeaturesWorking": "Boxフロントエンドでオフィスファイルを<0>直接操作</0>。",
+  "FeaturesFormats": "<0>50以上のファイル形式</0>をサポートし、MS Office形式と完全互換： docx、xlsx、pptx。",
+  "FeaturesAIHelper": "強力な編集、フォーマット、スタイリングツールのセット。",
+  "FeaturesWorkingCoEditing": "リアルタイムで段落ロックされた<0>共同編集</0>、レビュー、バージョン履歴、ドキュメント比較、コメント＆チャット。",
+  "FeaturesFreeApp": "Box App Centerで<0>無料アプリ</0>をご利用いただけます。追加の設定は必要ありません。",
+
+  "HowToStart": "始め方",
+  "HowToStartStep1": "Boxアカウントにログインします。",
+  "HowToStartStep2": "<0>Box App Center</0>に移動します。",
+  "HowToStartStep3": "ONLYOFFICEアプリ*を追加します。",
+  "CheckDetailedInstructions": "<0>ヘルプセンター</0>で詳しい手順をご確認ください。",
+  "TheAppUsesThePreConfiguredTenant": "*アプリは<0>ONLYOFFICE Docs Cloud</0>の設定済みテナントを使用するため、追加の設定は必要ありません。",
+
+  "NeedAnAppToConnect": "お気に入りのウェブサービスにONLYOFFICE Docsを接続するアプリが必要ですか？または、すでに開発されましたか？"
+}

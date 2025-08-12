@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Planos de preços do ONLYOFFICE Docs Home Server | ONLYOFFICE",
+  "PageDescription": "Escolha o plano do ONLYOFFICE Docs Home Server que atenda às suas necessidades.",
+
+  "BuyOODocsHomeServer": "Comprar ONLYOFFICE <0>Docs Home Server</0>",
+  "DocsHomeServer": "Docs Home Server",
+  "OnlineEditors": "Editores online para documentos de texto, planilhas, apresentações, formulários e PDFs",
+  "MobileWebEditors": "Editores web móveis",
+  "ReadyToUseConnectors": "Conectores prontos para uso",
+  "DesktopAndMobileApps": "Aplicativos para desktop e dispositivos móveis",
+  "EnhancedSecurityFeatures": "Recursos de segurança aprimorados",
+  "AllMinorUpdatesAndMajorUpgrades": "Todas as atualizações menores e principais",
+  "TryItFree": "Experimente gratuitamente",
+
+  "NumberOfUsers": "Número de usuários",
+  "NumberOfUsersTooltip": "O número especificado de usuários define quantas pessoas podem ter acesso à edição de documentos, planilhas e apresentações. O número de documentos que podem ser editados ao mesmo tempo não é limitado. Outros usuários poderão abrir documentos apenas para visualização.",
+  "LicenseDuration": "Duração da licença",
+  "Lifetime": "Vitalícia",
+  "LifetimeTooltip": "Você pode usar todos os recursos do ONLYOFFICE Docs Home Server disponíveis no momento da compra por um período ilimitado, mas um ano após a data da compra você não poderá mais obter atualizações gratuitas.",
+  "Updates": "Atualizações",
+  "1Year": "1 ano",
+  "Total": "Total:",
+  "BuyNow": "Comprar agora",
+
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesLabel": "O que significam 'licença vitalícia' e 'atualizações de 1 ano'?",
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesText": "Você pode usar todos os recursos do ONLYOFFICE Docs Home Server disponíveis na compra por um período ilimitado de tempo. No entanto, as atualizações gratuitas não estarão mais disponíveis após um ano da data de compra. Se quiser atualizar sua versão do ONLYOFFICE Docs Home Server posteriormente, você precisará comprar uma nova chave de licença.",
+  "WhatDoesTheNumberOfUsersLabel": "O que significa 'número de usuários'?",
+  "WhatDoesTheNumberOfUsersText": "O número especificado de usuários define quantas pessoas podem ter acesso à edição de documentos, planilhas e apresentações. O número de documentos que podem ser editados ao mesmo tempo não é limitado.<br/>Outros usuários poderão abrir documentos apenas para visualização.<br/><br/>Observação: O ONLYOFFICE mantém um ID de usuário por um período de 30 dias. Depois disso, você poderá substituir o usuário por um novo, se necessário. Se você compartilhar um documento com usuários externos, cada um deles recebe um ID de usuário nomeado por um período de 30 dias.",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "Onde posso encontrar respostas para outras perguntas?",
+  "WhereCanIFindAnswersToOtherQuestionsText": "Por favor, visite nosso <0>centro de FAQ</0> ou <1>envie sua solicitação</1> e nós ajudaremos em breve."
+}

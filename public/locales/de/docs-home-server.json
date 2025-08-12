@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Preise für ONLYOFFICE Docs Home Server | ONLYOFFICE",
+  "PageDescription": "Erwerben Sie ONLYOFFICE Docs Home Server für Heimgebrauch.",
+
+  "BuyOODocsHomeServer": "Kaufen Sie ONLYOFFICE <0>Docs Home Server</0>",
+  "DocsHomeServer": "Docs Home Server",
+  "OnlineEditors": "Online-Editoren für Textdokumente, Tabellenkalkulationen, Präsentationen, Formulare und PDFs",
+  "MobileWebEditors": "Mobile Web-Editoren",
+  "ReadyToUseConnectors": "Einsatzbereite Konnektoren",
+  "DesktopAndMobileApps": "Desktop- und mobile Apps",
+  "EnhancedSecurityFeatures": "Erweiterte Sicherheitsfunktionen",
+  "AllMinorUpdatesAndMajorUpgrades": "Alle kleineren Updates und größeren Upgrades",
+  "TryItFree": "Kostenlos testen",
+
+  "NumberOfUsers": "Anzahl der Benutzer",
+  "NumberOfUsersTooltip": "Die angegebene Anzahl der Benutzer legt fest, wie viele Personen Zugriff auf die Bearbeitung von Dokumenten, Tabellenkalkulationen und Präsentationen haben können. Die Anzahl der Dokumente, die gleichzeitig bearbeitet werden können, ist nicht begrenzt. Andere Benutzer können Dokumente nur zum Anzeigen öffnen.",
+  "LicenseDuration": "Lizenzdauer",
+  "Lifetime": "Unbefristet",
+  "LifetimeTooltip": "Sie können alle zum Zeitpunkt des Kaufs verfügbaren Funktionen von ONLYOFFICE Docs Home Server für einen unbegrenzten Zeitraum nutzen, aber ein Jahr nach dem Kaufdatum können Sie keine kostenlosen Updates mehr erhalten.",
+  "Updates": "Updates",
+  "1Year": "1 Jahr",
+  "Total": "Gesamt:",
+  "BuyNow": "Jetzt kaufen",
+
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesLabel": "Was bedeuten 'unbefristete Lizenz' und '1-Jahres-Updates'?",
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesText": "Sie können alle Funktionen von ONLYOFFICE Docs Home Server nutzen, die beim Kauf für einen unbeschränkten Zeitraum verfügbar sind. Ein Jahr nach dem Kauf erhalten Sie jedoch keine weiteren kostenlosen Updates. Wenn Sie Ihre Version von ONLYOFFICE Docs Home Server später aktualisieren möchten, wird dann ein neuer Lizenz-Schlüssel erforderlich.",
+  "WhatDoesTheNumberOfUsersLabel": "Was bedeutet 'Anzahl der Benutzer'?",
+  "WhatDoesTheNumberOfUsersText": "Die angegebene Anzahl der Benutzer legt fest, wie viele Personen Zugriff auf die Bearbeitung von Dokumenten, Tabellenkalkulationen und Präsentationen haben können. Die Anzahl der Dokumente, die gleichzeitig bearbeitet werden können, ist nicht begrenzt.<br/>Andere Benutzer können Dokumente nur zum Anzeigen öffnen.<br/><br/>Bitte beachten Sie: ONLYOFFICE speichert eine Benutzer-ID für einen Zeitraum von 30 Tagen. Danach können Sie den Benutzer bei Bedarf durch einen neuen ersetzen. Wenn Sie ein Dokument mit externen Benutzern teilen, erhält jeder von ihnen für einen Zeitraum von 30 Tagen eine benannte Benutzer-ID.",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "Wo finde ich Antworten auf andere Fragen?",
+  "WhereCanIFindAnswersToOtherQuestionsText": "Bitte besuchen Sie unser <0>FAQ-Center</0> oder <1>senden Sie uns Ihre Anfrage</1>, und wir werden Ihnen in Kürze helfen."
+}

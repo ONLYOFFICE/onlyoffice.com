@@ -118,9 +118,10 @@ export default async function handler(
             create_on: new Date(),
           };
 
-          await db.query("INSERT INTO docs_enterprise_request SET ?", [
-            addDocsEnterpriseData,
-          ]);
+          await db.teamlabsite.query(
+            "INSERT INTO docs_enterprise_request SET ?",
+            [addDocsEnterpriseData],
+          );
 
           return {
             status: "success",

@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Ceny pro ONLYOFFICE Docs Home Server | ONLYOFFICE",
+  "PageDescription": "Kupte si ONLYOFFICE Docs pro domácí použití",
+
+  "BuyOODocsHomeServer": "Koupit ONLYOFFICE <0>Docs Home Server</0>",
+  "DocsHomeServer": "Docs Home Server",
+  "OnlineEditors": "Online editory pro textové dokumenty, tabulky, prezentace, formuláře a PDF",
+  "MobileWebEditors": "Mobilní webové editory",
+  "ReadyToUseConnectors": "Připravené konektory k použití",
+  "DesktopAndMobileApps": "Aplikace pro počítač a mobilní zařízení",
+  "EnhancedSecurityFeatures": "Vylepšené bezpečnostní funkce",
+  "AllMinorUpdatesAndMajorUpgrades": "Všechny menší aktualizace a hlavní upgrady",
+  "TryItFree": "Vyzkoušejte zdarma",
+
+  "NumberOfUsers": "Počet uživatelů",
+  "NumberOfUsersTooltip": "Zadaný počet uživatelů určuje, kolik lidí může mít přístup k úpravám dokumentů, tabulek a prezentací. Počet dokumentů, které lze upravovat současně, není omezen. Ostatní uživatelé budou moci dokumenty otevírat pouze pro prohlížení.",
+  "LicenseDuration": "Doba platnosti licence",
+  "Lifetime": "Doživotní",
+  "LifetimeTooltip": "Můžete používat všechny funkce ONLYOFFICE Docs Home Server dostupné v okamžiku nákupu po neomezenou dobu, ale rok po datu nákupu již nebudete moci získávat bezplatné aktualizace.",
+  "Updates": "Aktualizace",
+  "1Year": "1 rok",
+  "Total": "Celkem:",
+  "BuyNow": "Koupit nyní",
+
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesLabel": "Co znamená 'doživotní licence' a '1 rok aktualizací'?",
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesText": "Můžete používat všechny funkce ONLYOFFICE Docs Home Server dostupné při nákupu po neomezenou dobu, ale rok po datu nákupu již nebudete moci získávat bezplatné aktualizace. Pokud budete chtít později aktualizovat svou verzi ONLYOFFICE Docs Home Server, budete si muset zakoupit nový licenční klíč.",
+  "WhatDoesTheNumberOfUsersLabel": "Co znamená 'počet uživatelů'?",
+  "WhatDoesTheNumberOfUsersText": "Zadaný počet uživatelů určuje, kolik lidí může mít přístup k úpravám dokumentů, tabulek a prezentací. Počet dokumentů, které lze upravovat současně, není omezen.<br/>Ostatní uživatelé budou moci dokumenty otevírat pouze pro prohlížení.<br/><br/>Poznámka: ONLYOFFICE uchovává ID uživatele po dobu 30 dnů. Poté můžete v případě potřeby uživatele nahradit novým. Pokud sdílíte dokument s externími uživateli, každý z nich obdrží pojmenované ID uživatele na dobu 30 dnů.",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "Kde najdu odpovědi na další otázky?",
+  "WhereCanIFindAnswersToOtherQuestionsText": "Navštivte prosím naše <0>FAQ centrum</0> nebo <1>odešlete svůj dotaz</1> a my vám brzy pomůžeme."
+}

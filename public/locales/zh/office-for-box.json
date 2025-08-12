@@ -1,0 +1,37 @@
+{
+  "PageTitle": "在 Box 中轻松地处理办公文档",
+  "PageDescription": "使用集成的 ONLYOFFICE 文档云",
+
+  "FreeOnlineOfficeForBox": "适用于 Box 的免费在线办公套件",
+  "OpenAndEditWithinBox": "在 Box 中通过集成的 ONLYOFFICE 文档云，打开和编辑文档、表格、幻灯片和 PDF",
+  "GetItNow": "立即获取",
+  "FullyCompatibleWithDocxXlsxAndPptx": "高度兼容 docx、xlsx 和 pptx",
+
+  "EditAndCoAuthorOfficeDocuments": "在 Box 界面内编辑和协作办公文档",
+  "DocumentsTab1Label": "打开和编辑存储在 Box 中的文档",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-box/documents/screenshot1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-box/documents/screenshot1@2x.png",
+  "DocumentsTab2Label": "使用实时或段落锁定模式，与多个用户协同编辑文档",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-box/documents/screenshot2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-box/documents/screenshot2@2x.png",
+
+  "MarketplaceConnectorTitle": "为了与 Box 无缝集成而设计",
+  "MarketplaceConnectorDescription": "立即从 Box 应用程序中心获取适用于 Box 的 ONLYOFFICE 应用。",
+  "GetStarted": "开始使用",
+
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "FeaturesWorking": "直接在 Box 前端<0>处理</0>办公文件。",
+  "FeaturesFormats": "支持超过<0>50 种文件格式</0>，高度兼容微软Office 格式：DOCX、XLSX、PPTX。",
+  "FeaturesAIHelper": "拥有强大的编辑、格式和样式工具。",
+  "FeaturesWorkingCoEditing": "实时和段落锁定<0>共同编辑</0>模式、审阅、版本历史、文档比较、批注和聊天。",
+  "FeaturesFreeApp": "可在 Box 应用程序中心获取<0>免费应用程序</0>。无需额外配置。",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1": "登录您的 Box 帐户。",
+  "HowToStartStep2": "前往 <0>Box 应用程序中心</0>。",
+  "HowToStartStep3": "添加 ONLYOFFICE 应用*。",
+  "CheckDetailedInstructions": "在<0>帮助中心</0>查看详细说明。",
+  "TheAppUsesThePreConfiguredTenant": "*该应用使用<0>ONLYOFFICE 文档云</0>的预配置租户，不需要任何额外的配置。",
+
+  "NeedAnAppToConnect": "需要一个应用程序将 ONLYOFFICE Docs 连接到您喜爱的网络服务？或者您已经开发了一个？"
+}
