@@ -1,4 +1,11 @@
 {
+  "PageTitle": "Online-Office-Suite für SharePoint | ONLYOFFICE Docs",
+  "PageDescription": "Bearbeiten Sie Ihre Office-Dokumente innerhalb SharePoint",
+
+  "OnlineOfficeForConnector": "Online-Office für SharePoint",
+  "Subheader": "Mit ONLYOFFICE erhalten Sie einen voll funktionsfähigen Ersatz für Desktop-Office-Anwendungen, die Sie direkt in Ihrem Browser nutzen können",
+  "GetStarted": "Los geht's!",
+
   "HeroTab1ImgUrl": "/images/templates/office-for-sharepoint/hero/de/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-sharepoint/hero/de/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-sharepoint/hero/de/screen2.png",
@@ -8,5 +15,40 @@
   "HeroTab4ImgUrl": "/images/templates/office-for-sharepoint/hero/de/screen4.png",
   "HeroTab4ImgUrl2x": "/images/templates/office-for-sharepoint/hero/de/screen4@2x.png",
   "HeroTab5ImgUrl": "/images/templates/office-for-sharepoint/hero/de/screen5.png",
-  "HeroTab5ImgUrl2x": "/images/templates/office-for-sharepoint/hero/de/screen5@2x.png"
+  "HeroTab5ImgUrl2x": "/images/templates/office-for-sharepoint/hero/de/screen5@2x.png",
+
+  "WhyOO": "Warum bereits mehr als 15 000 000 Menschen ONLYOFFICE nutzen",
+  "Reason1": "Höchste Kompatibilität mit den Formaten von Microsoft Office",
+  "Reason2": "Große Anzahl von Stil- und Formatierungstools",
+  "Reason3": "100% fehlerfreie Anzeige, Konvertierung, Drucken und Seitennummerierung",
+  "Reason4": "Umfangreiche Funktionen für die Zusammenarbeit",
+  "Reason5": "Sammlung der Add-Ons von Drittanbietern",
+  "Reason6": "Flexible Verwaltung von Zugriffsrechten",
+  "Reason7": "Open Source Code verfügbar auf GitHub",
+  "Reason8": "Hohe Sicherheit",
+  "Reason9": "Einfache Integration mittels WOPI",
+
+  "MarketplaceConnectorTitle": "Entwickelt für die nahtlose Integration mit SharePoint",
+  "MarketplaceConnectorDescription": "Erhalten Sie jetzt den ONLYOFFICE-Konnektor für SharePoint von <0>GitHub</0>.",
+  "GetItNow": "Jetzt erhalten",
+
+  "HowToStart": "Wie Sie anfangen",
+  "HowToStartStep1": "Stellen Sie <0>ONLYOFFICE Docs</0> auf Ihrem eigenen Server bereit oder erstellen Sie ein <1>Docs Cloud</1>-Konto.",
+  "HowToStartStep2": "Erhalten Sie den ONLYOFFICE-Konnektor von <0>GitHub</0>.",
+  "HowToStartStep3": "Konfigurieren Sie den Konnektor und aktivieren Sie JWT.",
+
+  "ReadDetailedInstructions": "Lesen Sie ausführliche Anweisungen im <0>Hilfecenter</0>.",
+
+  "LearnMoreHeading": "Erfahren Sie mehr über die Integration von ONLYOFFICE und SharePoint",
+  "Video": "Video",
+  "VideoDesc": "So integrieren Sie ONLYOFFICE Docs in SharePoint.",
+  "VideoLink": "Jetzt ansehen",
+  "Compare": "Vergleichen",
+  "CompareDesc": "Warum ONLYOFFICE Docs die beste Alternative zu MS Office ist.",
+  "CompareLink": "Mehr erfahren",
+  "HelpCenter": "Hilfe-Center",
+  "HelpCenterDesc": "So verbinden Sie ONLYOFFICE Docs über WOPI mit SharePoint.",
+  "HelpCenterLink": "Jetzt lesen",
+
+  "NeedAnAppToConnect": "Benötigen Sie eine App, um ONLYOFFICE mit Ihren Lieblings-Webdiensten zu verbinden? Oder haben Sie eine neue entwickelt?"
 }

@@ -19,7 +19,7 @@ export default async function handler(
   res: NextApiResponse,
 ) {
   if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method Not Allowed"})
+    return res.status(405).json({ message: "Method Not Allowed" });
   }
 
   const {
@@ -29,60 +29,64 @@ export default async function handler(
     portalName,
     youAre,
     yourWebsiteURL,
-    culture
+    culture,
   } = req.body;
 
-    const addFreeCloudRequest = async () => {
-      const url = yourWebsiteURL;
-      const urlHash = url ? crypto.createHash("md5").update(url, "utf8").digest("hex") : "";
-      try {
-        const addFreeCloud: IAddFreeCloudData = {
-          first_name: firstName,
-          last_name: lastName,
-          email,
-          tenant_alias: portalName,
-          you_are: youAre,
-          url,
-          url_hash: urlHash,
-          culture,
-        }
+  const addFreeCloudRequest = async () => {
+    const url = yourWebsiteURL;
+    const urlHash = url
+      ? crypto.createHash("md5").update(url, "utf8").digest("hex")
+      : "";
+    try {
+      const addFreeCloud: IAddFreeCloudData = {
+        first_name: firstName,
+        last_name: lastName,
+        email,
+        tenant_alias: portalName,
+        you_are: youAre,
+        url,
+        url_hash: urlHash,
+        culture,
+      };
 
-        const [rows] = await db.query<({ cnt: number } & RowDataPacket)[]>(
-          'SELECT COUNT(*) AS cnt FROM non_profit_request WHERE tenant_alias = ?',
-          [portalName]
+      const [rows] = await db.teamlabsite.query<
+        ({ cnt: number } & RowDataPacket)[]
+      >(
+        "SELECT COUNT(*) AS cnt FROM non_profit_request WHERE tenant_alias = ?",
+        [portalName],
+      );
+      const exists = rows[0].cnt > 0;
+
+      if (exists) {
+        await db.teamlabsite.query(
+          "UPDATE non_profit_request SET ? WHERE tenant_alias = ?",
+          [addFreeCloud, portalName],
         );
-        const exists = rows[0].cnt > 0;
-
-        if (exists) {
-          await db.query("UPDATE non_profit_request SET ? WHERE tenant_alias = ?", [
-            addFreeCloud,
-            portalName,
-          ])
-          return {
-            status: "update",
-            message: "freeCloudRequestSuccessful",
-          }
-        } else {
-          await db.query("INSERT INTO non_profit_request SET ?", [
-            addFreeCloud,
-          ]);
-
-          return {
-            status: "success",
-            message: "freeCloudRequestSuccessful",
-          }
-        }
-      } catch (error) {
-        console.error(error);
         return {
-          status: "error",
-          error,
-          message: "freeCloudRequestFailed",
-        }
+          status: "update",
+          message: "freeCloudRequestSuccessful",
+        };
+      } else {
+        await db.teamlabsite.query("INSERT INTO non_profit_request SET ?", [
+          addFreeCloud,
+        ]);
+
+        return {
+          status: "success",
+          message: "freeCloudRequestSuccessful",
+        };
       }
+    } catch (error) {
+      console.error(error);
+      return {
+        status: "error",
+        error,
+        message: "freeCloudRequestFailed",
+      };
     }
+  };
 
-    const result = await addFreeCloudRequest();
+  const result = await addFreeCloudRequest();
 
-    return res.status(200).json(result);
+  return res.status(200).json(result);
 }

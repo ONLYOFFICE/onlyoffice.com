@@ -1,4 +1,12 @@
 {
+  "PageTitle": "Офисный пакет онлайн для Redmine | ONLYOFFICE Docs",
+  "PageDescription": "Офисный пакет онлайн для Redmine | ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Онлайн-офис для <0>Redmine</0>",
+  "Subheader": "Просматривайте, редактируйте документы и работайте над ними совместно в Redmine, используя ONLYOFFICE Docs",
+  "GetStarted": "Начать работу",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Полная совместимость docx, xlsx, pptx",
+
   "HeroTab1ImgUrl": "/images/templates/office-for-redmine/hero/ru/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-redmine/hero/ru/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-redmine/hero/ru/screen2.png",
@@ -12,5 +20,29 @@
   "HeroTab6ImgUrl": "/images/templates/office-for-redmine/hero/ru/screen6.png",
   "HeroTab6ImgUrl2x": "/images/templates/office-for-redmine/hero/ru/screen6@2x.png",
   "HeroTab7ImgUrl": "/images/templates/office-for-redmine/hero/ru/screen7.png",
-  "HeroTab7ImgUrl2x": "/images/templates/office-for-redmine/hero/ru/screen7@2x.png"
+  "HeroTab7ImgUrl2x": "/images/templates/office-for-redmine/hero/ru/screen7@2x.png",
+
+  "MarketplaceConnectorTitle": "Разработано для беспрепятственной интеграции с Redmine",
+  "MarketplaceConnectorDescription": "Получите коннектор ONLYOFFICE для Redmine прямо сейчас в <0>Каталоге плагинов Redmine</0>.",
+  "GetItNow": "Получить сейчас",
+
+  "WhyOO": "Почему ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs – офисный пакет для размещения на собственном сервере для работы с текстовыми документами, электронными таблицами, презентациями и формами",
+  "Reason1": "<0>Готовый к использованию</0> плагин интеграции",
+  "Reason2": "<0>Простая установка</0> и быстрая настройка",
+  "Reason3": "<0>Работа с файлами</0> в модулях Задачи, Файлы, Документы, Wiki, Новости",
+  "Reason4": "<0>Интуитивный</0> вкладочный интерфейс",
+  "Reason5": "<0>Множество инструментов</0> редактирования, форматирования и работы со стилями",
+  "Reason6": "<0>Совместное редактирование в режиме реального времени</0>, отслеживание изменений, комментирование, чат",
+  "Reason7": "Бесплатная версия Community и <0>масштабируемое решение Enterprise</0> versions",
+  "Reason8": "<0>Исходный код</0> доступен на GitHub",
+
+  "HowToStart": "Как начать",
+  "HowToStartStep1": "Разверните <0>ONLYOFFICE Docs</0> на собственном сервере или создайте учетную запись в <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Получите коннектор ONLYOFFICE в <0>каталоге плагинов Redmine</0>.",
+  "HowToStartStep3": "Настройте коннектор и включите JWT.",
+
+  "ReadDetailedInstructions": "Ознакомьтесь с подробными инструкциями в <0>Справочном центре</0>",
+
+  "NeedAnAppToConnect": "Вам нужно приложение для подключения ONLYOFFICE Docs к вашему веб-сервису? Или вы разработали его сами?"
 }

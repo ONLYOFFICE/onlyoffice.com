@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Online kancelarija za Pipedrive",
+  "PageDescription": "Radite sa kancelarijskim dokumentima u okviru Pipedrive Deals",
+
+  "OnlineOfficeForConnector": "Online kancelarija za Pipedrive",
+  "Subheader": "Radite sa kancelarijskim dokumentima u okviru Pipedrive Deals",
+  "GetStarted": "Počnite",
+  "ScheduleFreeDemo": "Zakažite svoj besplatni demo",
+
+  "DocspaceAppTitle": "ONLYOFFICE <0>DocSpace aplikacija</0> za Pipedrive",
+  "New": "NOVO",
+  "DocspaceAppHeader": "Stvorite saradničko okruženje za rad na vašim dokumentima o poslu.",
+  "DocspaceAppTab1Label": "Lako kreirajte posebnu sobu za saradnju na dokumentima direktno iz bilo kog Pipedrive posla.",
+  "DocspaceAppTab2Label": "Sinhronizujte pristupne dozvole.",
+  "DocspaceAppTab3Label": "Čuvajte sve podatke o poslu na jednom mestu.",
+  "DocspaceAppTab4Label": "Uređujte i sarađujte na dokumentima, tabelama, prezentacijama, obrascima i PDF-ovima. Pregledajte medijske datoteke.",
+
+  "MarketplaceConnectorTitle": "Dizajniran za besprekornu integraciju sa Pipedrive-om",
+  "MarketplaceConnectorDescription": "Preuzmite ONLYOFFICE aplikaciju za Pipedrive sada sa Pipedrive Marketplace-a.",
+
+  "DocsAppTitle": "ONLYOFFICE <0>Docs aplikacija</0> za Pipedrive",
+  "DocsAppHeader": "Uređivanje i koautorstvo kancelarijskih dokumenata unutar Pipedrive interfejsa",
+  "DocsAppTab1Label": "Kreirajte ili otpremite tekstualne dokumente, tabele, prezentacije na Pipedrive-u",
+  "DocsAppTab2Label": "Pregledajte i uređujte kancelarijske dokumente vezane za Pipedrive ponude.",
+  "DocsAppTab3Label": "Koautorstvo dokumenata sa kolegama u realnom vremenu, praćenje promena, ostavljanje komentara i ćaskanje.",
+
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "Reason1": "Podrška za više od <0>50 formata datoteka</0>, potpuno kompatibilan sa MS Office formatima: DOCX, XLSX, PPTX.",
+  "Reason2": "Zaključavanje u realnom vremenu i zaključavanje paragrafa <0>ko-uređivanje</0>, pregled, istorija verzija, poređenje dokumenata, komentari i ćaskanje. Audio i video pozivi.",
+  "Reason3": "Besplatne verzije zajednice i skalabilnih preduzeća. <0>Besplatna probna verzija od 30 dana</0>. Integracija sa verzijom oblaka.",
+  "Reason4": "Robustan skup alata za uređivanje, formatiranje i stilizovanje. Integrisani <0>AI pomoćnik</0>.",
+  "Reason5": "<0>Jednostavna instalacija</0> sa Pipedrive Marketplace-a i brza konfiguracija",
+  "Reason6": "<0>Poboljšana bezbednost</0>. Fleksibilna prava pristupa i JWT. Otvoreni izvorni kod. Self-hosted rešenje za potpunu kontrolu nad vašim podacima.",
+
+  "HowToStart": "Kako početi",
+
+  "Docs": "Dokumenta",
+
+  "HowToStartStep1Docspace": "Prijavite se na svoj ONLYOFFICE DocSpace nalog ili počnite tako što ćete se <0>prijaviti za novi nalog</0>.",
+  "HowToStartStep2Docspace": "Instalirajte aplikaciju sa <0>Pipedrive Marketplace</0> i dozvolite tražene dozvole.",
+  "HowToStartStep3Docspace": "Konfigurišite postavke pristupa Pipedrive i ONLYOFFICE.",
+
+  "HowToStartStep1Docs": "Postavite <0>ONLYOFFICE Docs</0> na svoj sopstveni server ili se prijavite za <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2Docs": "Instalirajte aplikaciju za integraciju sa <0>Pipedrive Marketplace</0>.",
+  "HowToStartStep3Docs": "Konfigurišite integrisane instance.",
+  "ReadDetailedInstructions": "Proverite korisne vodiče o integraciji Pipedrive-a na <0>GitHub</0> ili u <1>Centru za pomoć</1>.",
+
+  "PartnerHeading": "Da li ste Pipedrive partner? Kako bi bilo da poboljšate svoje Pipedrive korisničko iskustvo i povećate svoj prihod?",
+  "PartnerText": "Pridružite se ONLYOFFICE partnerskom programu odmah.",
+
+  "NeedAnAppToConnect": "Potrebna vam je aplikacija da povežete ONLYOFFICE sa vašom omiljenom veb uslugom? Ili ste je već razvili?"
+}

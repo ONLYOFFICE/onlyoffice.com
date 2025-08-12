@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Online kancelarijski paket za Mattermost | ONLYOFFICE Docs",
+  "PageDescription": "Uređujte i ko-uređujte dokumente u Mattermost-u",
+
+  "OnlineOfficeForConnector": "Online kancelarija za <0>Mattermost</0>",
+  "Subheader": "Otvorite, uređujte i koautorski radite na kancelarijskim dokumentima u svom Mattermost chatu koristeći ONLYOFFICE Docs.",
+  "GetItNow": "Preuzmite ga sada",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Potpuno kompatibilno sa docx, xlsx i pptx formatima",
+
+  "GetStarted": "Počnite odmah",
+
+  "MarketplaceConnectorTitle": "Dizajniran za besprekornu integraciju sa Mattermost-om.",
+  "MarketplaceConnectorDescription": "Preuzmite ONLYOFFICE konektor za Mattermost odmah sa <0>GitHub-a</0>.",
+
+  "WhyOO": "Zašto ONLYOFFICE Docs?",
+  "WhySubheader": "ONLYOFFICE Docs je samostalni kancelarijski paket za rad na tekstualnim dokumentima, tabelama, prezentacijama, formularima za popunjavanje i PDF dokumentima.",
+  "Reason1": "Gotovi integracioni dodaci i brza konfiguracija",
+  "Reason2": "Intuitivan interfejs sa karticama",
+  "Reason3": "Višestruki alati za uređivanje, formatiranje i stilizovanje",
+  "Reason4": "Saradnja u realnom vremenu, deljenje fajlova",
+  "Reason5": "Besplatne verzije za zajednicu i skalabilne verzije za preduzeća",
+  "Reason6": "Izvorni kod dostupan na GitHub-u",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Postavite <0>ONLYOFFICE Docs</0> na sopstveni server ili kreirajte <1>Docs Cloud</1> nalog.",
+  "HowToStartStep2": "Preuzmite ONLYOFFICE konektor sa <0>GitHub-a</0>.",
+  "HowToStartStep3": "Konfigurišite konektor i omogućite JWT.",
+
+  "ReadDetailedInstructions": "Pročitajte detaljna uputstva u <0>Help Centru</0>",
+
+  "NeedAnAppToConnect": "Treba vam aplikacija za povezivanje ONLYOFFICE Docs sa vašom omiljenom web uslugom? Ili ste možda već razvili jednu?"
+}

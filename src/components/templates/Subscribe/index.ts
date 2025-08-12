@@ -1,0 +1,1 @@
+export { SubscribeTemplate } from "./Subscribe";

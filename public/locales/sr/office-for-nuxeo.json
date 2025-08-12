@@ -1,0 +1,41 @@
+{
+  "PageTitle": "Saradnički online kancelarijski paket za Nuxeo | ONLYOFFICE Docs",
+  "PageDescription": "Uređujte i koautorski radite na docx, pptx, xlsx dokumentima i kreirajte formularima za popunjavanje u Nuxeo-u",
+
+  "OnlineOfficeForConnector": "Online kancelarija za <0>Nuxeo</0>",
+  "Subheader": "Uređujte i koautorski radite na kancelarijskim dokumentima online u Nuxeo-u",
+  "GetItNow": "Preuzmite ga sada",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Radite sa tekstualnim dokumentima, tabelama, prezentacijama i formularima",
+
+  "GetStarted": "Počnite odmah",
+
+  "MarketplaceConnectorTitle": "Dizajniran za besprekornu integraciju sa Nuxeo-om",
+  "MarketplaceConnectorDescription": "Preuzmite ONLYOFFICE konektor za Nuxeo odmah sa <0>Nuxeo Marketplace-a</0>.",
+
+  "WhyOO": "Zašto ONLYOFFICE Docs",
+  "Reason1Header": "Savršena kompatibilnost",
+  "Reason1Description": "Radite sa svim glavnim formatima dokumenata. Zagarantovana je najviša kompatibilnost sa MS Office-om.",
+  "Reason2Header": "Visok kvalitet formatiranja",
+  "Reason2Description": "Koristite stotine alata za formatiranje i stilizovanje kako biste kreirali lepe i ubedljive dokumente.",
+  "Reason3Header": "Prilagodljivost",
+  "Reason3Description": "Proširite funkcionalnost uređivača uz gotove dodatke. Napišite sopstvenu aplikaciju da dodate funkcije koje vam nedostaju ili zamolite naše programere da to učine. Posetite naš <0>Direktorijum aplikacija</0>.",
+  "Reason4Header": "Preciznost",
+  "Reason4Description": "Dokumenti zadržavaju isti format i stil u bilo kom pretraživaču na bilo kom operativnom sistemu, kao i tokom uvoza ili štampanja.",
+  "Reason5Header": "Alati za saradnju",
+  "Reason5Description": "Koristite dva režima ko-uređivanja (u realnom vremenu i zaključavanje paragrafima), pregled i praćenje promena, poređenje dokumenata, komentarisanje ili ćaskanje.",
+  "Reason6Header": "Bezbednost",
+  "Reason6Description": "Pogledajte izvorni kod na GitHub-u. Zaštitite svoje dokumente od neovlašćenog pristupa pomoću JWT-a.",
+  "Reason7Header": "Laka integracija",
+  "Reason7Description": "Birajte između više opcija za implementaciju. Lako povežite ONLYOFFICE Docs sa gotovim konektorom dostupnim na <0>Nuxeo Marketplace-u</0>.",
+  "Reason8Header": "Skalabilnost",
+  "Reason8Description": "ONLYOFFICE Docs može se skalirati za tim bilo koje veličine, čak i ako imate hiljade korisnika!",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Postavite <0>ONLYOFFICE Docs</0> na sopstveni server ili kreirajte <1>Docs Cloud</1> nalog.",
+  "HowToStartStep2": "Preuzmite ONLYOFFICE konektor sa <0>Nuxeo Marketplace-a</0>.",
+  "HowToStartStep3": "Konfigurišite konektor i omogućite JWT.",
+
+  "ReadDetailedInstructions": "Pročitajte detaljna uputstva u <0>Help Centru</0>.",
+
+  "NeedAnAppToConnect": "Treba vam aplikacija za povezivanje ONLYOFFICE Docs sa vašom omiljenom web uslugom? Ili ste možda već razvili jednu?"
+}

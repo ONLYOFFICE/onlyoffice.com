@@ -51,7 +51,7 @@ export async function getServerSideProps({
     errorMessage = "Invalid parameters";
   } else {
     const validateKeysData = await validateKeys({
-      epkey,
+      epkey: epkey.slice(0, -1),
       eskey,
       page: `reg_proxy_page_${eskey}`,
     });

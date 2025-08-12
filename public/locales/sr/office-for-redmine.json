@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Online kancelarijski paket za Redmine | ONLYOFFICE Docs",
+  "PageDescription": "Uređujte i koautorski radite na dokumentima, kreirajte i popunjavajte formulare u Redmine-u",
+
+  "OnlineOfficeForConnector": "Online kancelarija za <0>Redmine</0>",
+  "Subheader": "Pregledajte, uređujte i sarađujte na kancelarijskim dokumentima unutar Redmine-a koristeći ONLYOFFICE Docs",
+  "GetStarted": "Počnite odmah",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Potpuna kompatibilnost sa docx, xlsx i pptx formatima",
+
+  "MarketplaceConnectorTitle": "Dizajniran za besprekornu integraciju sa Redmine-om",
+  "MarketplaceConnectorDescription": "Preuzmite ONLYOFFICE konektor za Nuxeo odmah sa <0>Redmine Plugins Directory-a</0>.",
+  "GetItNow": "Preuzmite ga sada",
+
+  "WhyOO": "Zašto ONLYOFFICE Docs?",
+  "WhySubheader": "ONLYOFFICE Docs je samostalno hostovan kancelarijski paket za rad na tekstualnim dokumentima, tabelama, prezentacijama i formularima",
+  "Reason1": "<0>Gotov</0> integracioni dodatak",
+  "Reason2": "<0>Laka instalacija</0> i brza konfiguracija",
+  "Reason3": "<0>Radite sa fajlovima</0> unutar modula Issues, Files, Documents, Wiki, News",
+  "Reason4": "<0>Intuitivan</0> interfejs sa karticama",
+  "Reason5": "<0>Više</0> alata za uređivanje, formatiranje i stilizovanje",
+  "Reason6": "<0>Saradnja u realnom vremenu</0>, praćenje promena, komentari, ćaskanje",
+  "Reason7": "Besplatna Community verzija i <0>skalabilne Enterprise</0> verzije",
+  "Reason8": "<0>Otvoren izvorni</0> kod dostupan na GitHub-u",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Postavite <0>ONLYOFFICE Docs</0> na sopstveni server ili kreirajte <1>Docs Cloud</1> nalog.",
+  "HowToStartStep2": "Preuzmite ONLYOFFICE konektor iz <0>Redmine Plugins Directory-ja</0>.",
+  "HowToStartStep3": "Konfigurišite konektor i omogućite JWT.",
+
+  "ReadDetailedInstructions": "Pročitajte detaljna uputstva u <0>Help Centru</0>.",
+
+  "NeedAnAppToConnect": "Treba vam aplikacija za povezivanje ONLYOFFICE Docs sa vašom omiljenom web uslugom? Ili ste možda već razvili jednu?"
+}

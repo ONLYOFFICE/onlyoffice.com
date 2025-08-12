@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Online kancelarijsko rešenje za Trello | ONLYOFFICE",
+  "PageDescription": "Radite na svim vrstama kancelarijskih dokumenata unutar Trello-a koristeći ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Online kancelarijsko rešenje za Trello",
+  "Subheader": "Radite na svim vrstama kancelarijskih dokumenata unutar Trello-a koristeći ONLYOFFICE Docs",
+  "GetStarted": "Započnite",
+
+  "WorkWithinConnector": "Radite na kancelarijskim dokumentima otpremljenim u Trello kartice",
+  "DocumentsTab1Label": "Dozvolite administratorima i članovima sa normalnim pravima da uređuju DOCX, XLSX i PPTX fajlove.",
+  "DocumentsTab2Label": "Dodelite posmatračima prava za pregled otpremljenih dokumenata.",
+  "DocumentsTab3Label": "Koautorski uređujte dokumente sa svojim kolegama u realnom vremenu.",
+
+  "MarketplaceConnectorTitle": "Dizajnirano za besprekornu integraciju sa Trello-om",
+  "MarketplaceConnectorDescription": "Preuzmite ONLYOFFICE Power-Up za Trello sada sa Atlassian Marketplace-a.",
+  "GetItNow": "PREUZMITE SADA",
+
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "Reason1": "Podrška za više od <0>50 formata datoteka</0>, potpuno kompatibilnih sa MS Office formatima: DOCX, XLSX, PPTX.",
+  "Reason2": "Robustan set alata za uređivanje, formatiranje i stilizovanje. Integrisan <0>AI asistent</0>.",
+  "Reason3": "Koautorsko uređivanje u realnom vremenu i zaključavanje paragrafa <0>ko-uređivanje</0>, recenzija, istorija verzija, poređenje dokumenata, komentari i čet.",
+  "Reason4": "<0>Poboljšana sigurnost</0>. Fleksibilna prava pristupa i JWT. Vodeni žigovi i zaštita lozinkom. Otvoreni izvorni kod.",
+  "Reason5": "Besprekorna integracija sa gotovim konektorom iz Atlassian Marketplace-a. <0>Jednostavna konfiguracija</0>.",
+  "Reason6": "Cloud i self-hosted rešenje za potpunu kontrolu nad vašim podacima. Skalabilne Enterprise verzije. <0> Besplatan 30-dnevni probni period</0>.",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Implementirajte <0>ONLYOFFICE Docs</0> na sopstvenom serveru ili kreirajte <1>Docs Cloud</1> nalog.",
+  "HowToStartStep2": "Preuzmite Power-Up sa <0>Atlassian Marketplace-a</0>.",
+  "HowToStartStep3": "Konfigurišite Power-Up i omogućite JWT.",
+
+  "NeedAnAppToConnect": "Potrebna vam je aplikacija da povežete ONLYOFFICE sa vašom omiljenom veb uslugom? Ili ste je već razvili?"
+}

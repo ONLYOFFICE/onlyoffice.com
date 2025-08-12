@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Edição colaborativa de documentos para Plone | ONLYOFFICE Docs",
+  "PageDescription": "Edite e seja coautor de seus documentos, crie e preencha formulários no Plone.",
+
+  "OnlineOfficeForConnector": "Escritório on-line para <0>Plone</0>",
+  "Subheader": "Trabalhe em todos os tipos de documents no Plone CMS",
+
+  "GetStarted": "Começar agora",
+
+  "MarketplaceConnectorTitle": "Projetado para integração perfeita com Plone",
+  "MarketplaceConnectorDescription": "Obtenha o conector ONLYOFFICE para Plone agora em <0>PyPi.org</0> e na página do ONLYOFFICE <1>GitHub</1>.",
+
+  "WhyOO": "Por que ONLYOFFICE ?",
+  "Reason1": "Suporte completo para <0>todos os formatos populares</0>, incluindo OOXML e ODF.",
+  "Reason2": "Conjunto completo de ferramentas de formatação e estilo organizadas em uma <0>interface com guias intuitiva</0>.",
+  "Reason3": "<0>Coedição em tempo real</0>, chat e comentários, track changes e histórico de versões.",
+  "Reason4": "<0>Exibição impecável de conteúdo</0> independentemente do navegador e do sistema operacional.",
+  "Reason5": "<0>Configuração fácil</0> no console de administração do Plone.",
+  "Reason6": "<0>Código open source</0> disponível no GitHub.",
+
+  "HowToStart": "Como começar",
+  "HowToStartStep1": "Implante o <0>ONLYOFFICE Docs</0> em seu próprio servidor ou inscreva-se no <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Baixe a versão mais recente do conector em <0>PyPi.org</0> e na página do <1>GitHub</1> do ONLYOFFICE.",
+  "HowToStartStep3": "Configure o conector e habilite o JWT.",
+
+  "ReadDetailedInstructions": "Confira <0>guias úteis</0> sobre a integração do Plone",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço Web favorito? Ou você desenvolveu um?"
+}

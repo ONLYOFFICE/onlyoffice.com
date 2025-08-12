@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Ufficio online per Trello | ONLYOFFICE",
+  "PageDescription": "Lavora su tutti i tipi di documenti all’interno di Trello utilizzando ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Ufficio online per Trello",
+  "Subheader": "Lavora su tutti i tipi di documenti all’interno di Trello utilizzando ONLYOFFICE Docs",
+  "GetStarted": "INIZIA SUBITO",
+
+  "WorkWithinConnector": "Lavora sui documenti caricati nelle schede delle bacheche Trello",
+  "DocumentsTab1Label": "Consenti ad amministratori e membri con diritti normali di modificare file DOCX, XLSX e PPTX.",
+  "DocumentsTab2Label": "Concedi agli osservatori i diritti per visualizzare i documenti caricati.",
+  "DocumentsTab3Label": "Collabora sui documenti con i tuoi colleghi in tempo reale.",
+
+  "MarketplaceConnectorTitle": "Progettato per un’integrazione perfetta con Trello",
+  "MarketplaceConnectorDescription": "Scarica subito il Power-Up ONLYOFFICE per Trello dall’Atlassian Marketplace.",
+  "GetItNow": "OTTIENILO ORA",
+
+  "WhyOO": "Perché ONLYOFFICE?",
+  "Reason1": "Supporto per oltre <0>50 formati di file</0>, completamente compatibili con i formati MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "Un set robusto di strumenti di modifica, formattazione e stile. Assistente <0>AI integrato</0>.",
+  "Reason3": "Co-editing in tempo reale e blocco paragrafo , <0>revisione, cronologia delle versioni, confronto documenti, commenti e chat</0>.",
+  "Reason4": "<0>Sicurezza avanzata</0>. Permessi di accesso flessibili e JWT. Filigrana e protezione con password. Codice open source.",
+  "Reason5": "Integrazione senza problemi con connettore pronto all’uso dall’Atlassian Marketplace. <0>Configurazione semplice</0>.",
+  "Reason6": "Soluzioni cloud e self-hosted per un controllo totale sui tuoi dati. Versioni Enterprise scalabili. <0>Prova gratuita di 30 giorni</0>.",
+
+  "HowToStart": "Come iniziare",
+  "HowToStartStep1": "Distribuisci <0>ONLYOFFICE Docs</0> sul tuo server o crea un account <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Scarica il Power-Up dall’<0>Atlassian Marketplace</0>.",
+  "HowToStartStep3": "Configura il Power-Up e abilita JWT.",
+
+  "NeedAnAppToConnect": "Hai bisogno di un'app per connettere ONLYOFFICE al tuo servizio web preferito? Oppure ne hai sviluppato uno?"
+}

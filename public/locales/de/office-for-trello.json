@@ -1,13 +1,40 @@
 {
+  "PageTitle": "Online-Office für Trello | ONLYOFFICE",
+  "PageDescription": "Bearbeiten Sie alle Arten von Office-Dokumenten in Trello mit ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Online-Office für Trello",
+  "Subheader": "Bearbeiten Sie alle Arten von Office-Dokumenten in Trello mit ONLYOFFICE Docs",
+  "GetStarted": "LOSLEGEN",
   "HeroImgUrl": "/images/templates/office-for-trello/hero/de/main.png",
   "HeroImgUrl2x": "/images/templates/office-for-trello/hero/de/main@2x.png",
 
+  "WorkWithinConnector": "Arbeiten Sie an Office-Dokumenten, die auf Trello-Board-Karten hochgeladen wurden",
+  "DocumentsTab1Label": "Erlauben Sie Administratoren und Mitgliedern mit normalen Rechten, DOCX-, XLSX- und PPTX-Dateien zu bearbeiten.",
   "DocumentsTab1ImgUrl": "/images/templates/office-for-trello/documents/de/screen1.png",
   "DocumentsTab1ImgUrl2x": "/images/templates/office-for-trello/documents/de/screen1@2x.png",
-
+  "DocumentsTab2Label": "Gewähren Sie Beobachterrechten zum Anzeigen hochgeladener Dokumente.",
   "DocumentsTab2ImgUrl": "/images/templates/office-for-trello/documents/de/screen2.png",
   "DocumentsTab2ImgUrl2x": "/images/templates/office-for-trello/documents/de/screen2@2x.png",
-
+  "DocumentsTab3Label": "Bearbeiten Sie Dokumente gemeinsam mit Ihren Kollegen in Echtzeit.",
   "DocumentsTab3ImgUrl": "/images/templates/office-for-trello/documents/de/screen3.png",
-  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-trello/documents/de/screen3@2x.png"
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-trello/documents/de/screen3@2x.png",
+
+  "MarketplaceConnectorTitle": "Entwickelt für die nahtlose Integration mit Trello",
+  "MarketplaceConnectorDescription": "Erhalten Sie jetzt das ONLYOFFICE Power-Up für Trello vom Atlassian Marketplace.",
+  "GetItNow": "JETZT ERHALTEN",
+
+  "WhyOO": "Warum ONLYOFFICE?",
+  "Reason1": "Unterstützung für mehr als <0>50 Dateiformate</0>, vollständig kompatibel mit MS Office-Formaten: DOCX, XLSX, PPTX.",
+  "Reason2": "Ein robuster Satz von Bearbeitungs-, Formatierungs- und Styling-Tools. Integrierter <0>KI-Helfer</0>.",
+  "Reason3": "<0>Gemeinsame Bearbeitung</0> in Echtzeit und mit Absatzsperre, Überprüfung, Versionsverlauf, Dokumentvergleich, Kommentare und Chat.",
+  "Reason4": "<0>Verbesserte Sicherheit</0>. Flexible Zugriffsrechte und JWT. Wasserzeichen und Kennwortschutz. Open-Source-Code.",
+  "Reason5": "Nahtlose Integration mit gebrauchsfertigem Konnektor vom Atlassian Marketplace. <0>Einfache Konfiguration</0>.",
+  "Reason6": "Cloud- und selbstgehostete Lösung für vollständige Kontrolle über Ihre Daten. Skalierbare Enterprise-Versionen. <0>Kostenlose 30-Tage-Testversion</0>.",
+
+  "HowToStart": "Wie Sie anfangen",
+  "HowToStartStep1": "Stellen Sie <0>ONLYOFFICE Docs</0> auf Ihrem eigenen Server bereit oder erstellen Sie ein <1>Docs Cloud</1>-Konto.",
+  "HowToStartStep2": "Holen Sie sich das Power-Up vom <0>Atlassian Marketplace</0>.",
+  "HowToStartStep3": "Konfigurieren Sie das Power-Up und aktivieren Sie JWT.",
+
+  "NeedAnAppToConnect": "Benötigen Sie eine App, um ONLYOFFICE mit Ihren Lieblings-Webdiensten zu verbinden? Oder haben Sie eine neue entwickelt?"
 }

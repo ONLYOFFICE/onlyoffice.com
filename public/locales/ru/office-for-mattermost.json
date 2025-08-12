@@ -1,4 +1,12 @@
 {
+  "PageTitle": "Бесплатный офисный пакет для Mattermost | ONLYOFFICE Docs",
+  "PageDescription": "Редактируйте документы и работайте над ними совместно в Mattermost",
+
+  "OnlineOfficeForConnector": "Онлайн офис для <0>Mattermost</0>",
+  "Subheader": "Открывайте, редактируйте офисные документы и работайте над ними совместно в чате Mattermost с помощью ONLYOFFICE Docs",
+  "GetItNow": "Получить сейчас",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Полностью совместим с docx, xlsx и pptx",
+
   "HeroTab1ImgUrl": "/images/templates/office-for-mattermost/hero/ru/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-mattermost/hero/ru/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-mattermost/hero/ru/screen2.png",
@@ -10,5 +18,29 @@
   "HeroTab5ImgUrl": "/images/templates/office-for-mattermost/hero/ru/screen5.png",
   "HeroTab5ImgUrl2x": "/images/templates/office-for-mattermost/hero/ru/screen5@2x.png",
   "HeroTab6ImgUrl": "/images/templates/office-for-mattermost/hero/ru/screen6.png",
-  "HeroTab6ImgUrl2x": "/images/templates/office-for-mattermost/hero/ru/screen6@2x.png"
+  "HeroTab6ImgUrl2x": "/images/templates/office-for-mattermost/hero/ru/screen6@2x.png",
+
+  "GetStarted": "Начать работу",
+
+  "MarketplaceConnectorTitle": "Разработано для беспрепятственной интеграции с Mattermost",
+  "MarketplaceConnectorDescription": "Получите коннектор ONLYOFFICE для Mattermost прямо сейчас на <0>GitHub</0>.",
+
+  "WhyOO": "Почему ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs – это офисный пакет, размещаемый на собственном сервере, для работы с текстовыми документами, электронными таблицами и презентациями.",
+  "Reason1": "Готовый к использованию плагин интеграции и быстрая настройка",
+  "Reason2": "Интуитивный интерфейс с вкладками",
+  "Reason3": "Множество инструментов редактирования, форматирования и работы со стилями",
+  "Reason4": "Совместная работа в режиме реального времени, общий доступ к файлам",
+  "Reason5": "Бесплатная версия Community и масштабируемая версия Enterprise",
+  "Reason6": "Открытый исходный код на GitHub",
+
+  "HowToStart": "Как начать",
+  "HowToStartStep1": "Разверните <0>ONLYOFFICE Docs</0> на собственном сервере или создайте учетную запись в <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Получите коннектор ONLYOFFICE на <0>GitHub</0>.",
+  "HowToStartStep3": "Настройте коннектор и включите JWT.",
+  "HowToStartImgUrl": "/images/templates/office-for-mattermost/how-to-start/how-to-start.png",
+
+  "ReadDetailedInstructions": "Ознакомьтесь с подробными инструкциями в <0>Справочном центре</0>.",
+
+  "NeedAnAppToConnect": "Вам нужно приложение для подключения ONLYOFFICE Docs к вашему веб-сервису? Или вы разработали его сами?"
 }

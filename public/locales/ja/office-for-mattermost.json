@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Mattermost 向けのオンラインオフィススイート| ONLYOFFICE Docs",
+  "PageDescription": "Mattermost 内のドキュメント編集と共同編集",
+
+  "OnlineOfficeForConnector": "<0>Mattermost</0>用のオンラインオフィ",
+  "Subheader": "ONLYOFFICE Docsを使って、Mattermostのチャットでオフィス文書を開き、編集し、共同執筆することができます。",
+  "GetItNow": "今すぐ入手",
+  "FullyCompatibleWithDocxXlsxAndPptx": "docx、xlsx、pptxに完全対応",
+
+  "GetStarted": "スタートアップ",
+
+  "MarketplaceConnectorTitle": "Mattermost とシームレスに連携するよう設計されています",
+  "MarketplaceConnectorDescription": "Mattermost 用の ONLYOFFICE コネクターを<0>GitHub</0> から入手いただけます。",
+
+  "WhyOO": "なぜONLYOFFICE Docsなのか",
+  "WhySubheader": "ONLYOFFICE Docsは、テキスト文書、スプレッドシート、およびプレゼンテーションで作業するためのセルフホスト型オフィススイートです。",
+  "Reason1": "すぐに使える統合プラグインと迅速な構成",
+  "Reason2": "タブによる直感的なインターフェース",
+  "Reason3": "複数の編集、書式設定、スタイリングツール",
+  "Reason4": "リアルタイムの共同編集、ファイル共有",
+  "Reason5": "無料のコミュニティ版とスケーラブルなエンタープライズ版",
+  "Reason6": "ソースコードはGitHubで公開",
+
+  "HowToStart": "利用を始める",
+  "HowToStartStep1": "ご自身のサーバーに<0>ONLYOFFICE Docs</0>を展開するか、<1>Docs Cloud</1>アカウントを作成します。",
+  "HowToStartStep2": "<0>GitHub</0>からONLYOFFICEコネクタを取得します。",
+  "HowToStartStep3": "コネクタを設定し、JWTを有効にします。",
+
+  "ReadDetailedInstructions": "詳細な手順については、<0>ヘルプセンター</0>を参照してください。",
+
+  "NeedAnAppToConnect": "お好みのウェブ サービスに ONLYOFFICE を接続するアプリが必要ですか？ アプリを開発しましたか？"
+}

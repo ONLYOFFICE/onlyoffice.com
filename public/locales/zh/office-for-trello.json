@@ -1,13 +1,40 @@
 {
+  "PageTitle": "适用于 Trello 在线办公套件 | ONLYOFFICE",
+  "PageDescription": "使用 ONLYOFFICE 文档在 Trello 中处理各种办公文档",
+
+  "OnlineOfficeForConnector": "适用于 Trello 在线办公套件",
+  "Subheader": "使用 ONLYOFFICE 文档在 Trello 中处理各种办公文档",
+  "GetStarted": "立即开始",
   "HeroImgUrl": "/images/templates/office-for-trello/hero/zh/main.png",
   "HeroImgUrl2x": "/images/templates/office-for-trello/hero/zh/main@2x.png",
 
+  "WorkWithinConnector": "处理上传至 Trello 看板和卡片的办公文档",
+  "DocumentsTab1Label": "允许管理员和具有普通权限的成员编辑 DOCX、XLSX 和 PPTX 文件。",
   "DocumentsTab1ImgUrl": "/images/templates/office-for-trello/documents/zh/screen1.png",
   "DocumentsTab1ImgUrl2x": "/images/templates/office-for-trello/documents/zh/screen1@2x.png",
-
+  "DocumentsTab2Label": "授予访客查看上传文档的权限。",
   "DocumentsTab2ImgUrl": "/images/templates/office-for-trello/documents/zh/screen2.png",
   "DocumentsTab2ImgUrl2x": "/images/templates/office-for-trello/documents/zh/screen2@2x.png",
-
+  "DocumentsTab3Label": "实时与同事协作编辑文档。",
   "DocumentsTab3ImgUrl": "/images/templates/office-for-trello/documents/zh/screen3.png",
-  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-trello/documents/zh/screen3@2x.png"
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-trello/documents/zh/screen3@2x.png",
+
+  "MarketplaceConnectorTitle": "专为与 Trello 无缝集成而设计",
+  "MarketplaceConnectorDescription": "立即从 Atlassian 市场获取用于 Trello 的 ONLYOFFICE Power-Up。",
+  "GetItNow": "立即获取",
+
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "Reason1": "支持超过 <0>50 种文件格式</0>，兼容微软 Office 格式：DOCX、XLSX、PPTX。",
+  "Reason2": "拥有强大的编辑、格式化和样式工具。集成 <0>AI 助手</0>。",
+  "Reason3": "实时和段落锁定<0>共同编辑</0>、审阅、版本历史记录、文档比较、批注和聊天。",
+  "Reason4": "<0>高度安全</0>。灵活的访问权限和 JWT。水印和密码保护。开源代码。",
+  "Reason5": "利用 Atlassian 市场中现成的连接器实现无缝集成。<0>配置简单</0>。",
+  "Reason6": "云端和自托管解决方案，可全面控制您的数据。可扩展的企业版本。<0>30 天免费试用</0>。",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1": "在您自己的服务器上部署 <0>ONLYOFFICE 文档</0> 或创建 <1>文档云</1> 帐户。",
+  "HowToStartStep2": "从 <0>Atlassian市场</0> 获取增强功能。",
+  "HowToStartStep3": "配置 power-up 并启用JWT。",
+
+  "NeedAnAppToConnect": "想要将 ONLYOFFICE 连接至您喜爱的网络服务？需要某个连接 app 或者你们已经开发出来了？"
 }

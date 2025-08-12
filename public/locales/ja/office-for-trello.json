@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Trello用のオンラインオフィス | ONLYOFFICE",
+  "PageDescription": "Trello内でONLYOFFICE Docsを使って、あらゆる種類のオフィス文書で作業できます",
+
+  "OnlineOfficeForConnector": "Trello用のオンラインオフィス",
+  "Subheader": "Trello内でONLYOFFICE Docsを使って、あらゆる種類のオフィス文書で作業できます",
+  "GetStarted": "利用を始める",
+
+  "WorkWithinConnector": "Trelloのボードカードにアップロードされたオフィス文書の編集",
+  "DocumentsTab1Label": "管理者や通常権限を持つメンバーに、DOCX、XLSX、PPTXファイルの編集を許可",
+  "DocumentsTab2Label": "オブザーバーにアップロードされた文書の閲覧権限を付与",
+  "DocumentsTab3Label": "同僚とリアルタイムで文書を共同編集",
+
+  "MarketplaceConnectorTitle": "Trelloとのシームレスな統合用に設計",
+  "MarketplaceConnectorDescription": "Atlassian MarketplaceからTrello用のONLYOFFICE Power-Upを入手できます。",
+  "GetItNow": "入手する",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "Reason1": "<0>50以上のファイル形式</0>をサポートし、MS Office形式（DOCX、XLSX、PPTX）と完全に互換性があります。",
+  "Reason2": "強力な編集、書式設定、やスタイル設定ツールのセット。統合された<0>AIヘルパー</0>。",
+  "Reason3": "アルタイムや段落ロックの<0>共同編集</0>、レビュー、バージョン履歴、文書比較、コメントおよびチャット。",
+  "Reason4": "<0>強化されたセキュリティ</0>。柔軟なアクセス権とJWT。透かしとパスワード保護。オープンソースコード。",
+  "Reason5": "アトラシアンマーケットプレイスからすぐに使えるコネクタとのシームレスな統合。<0>簡単な設定</0>。",
+  "Reason6": "データ管理を完全にコントロールできるクラウドおよびセルフホスティングソリューション。拡張可能なエンタープライズ版。<0>30日間の無料トライアル</0>。",
+
+  "HowToStart": "開始方法",
+  "HowToStartStep1": "<0>ONLYOFFICE Docs</0>を自社サーバーにデプロイするか、<1>Docs Cloud</1> アカウントを作成してください",
+  "HowToStartStep2": "<0>Atlassian Marketplace</0> からパワーアップを取得します",
+  "HowToStartStep3": "パワーアップを設定し、JWTを有効にしてください",
+
+  "NeedAnAppToConnect": "ONLYOFFICEとお気に入りのウェブサービスをつなぐアプリが必要ですか？または開発済みですか？"
+}

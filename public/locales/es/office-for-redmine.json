@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Suite ofimática en línea para Redmine | ONLYOFFICE Docs",
+  "PageDescription": "Edita y coedita documentos, crea y rellena formularios dentro de Redmine",
+
+  "OnlineOfficeForConnector": "Oficina online para <0>Redmine</0>",
+  "Subheader": "Ve, edita y colabora en documentos de oficina dentro de Redmine usando ONLYOFFICE Docs",
+  "GetStarted": "Empezar",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Totalmente compatible con docx, xlsx y pptx",
+
+  "MarketplaceConnectorTitle": "Diseñado para una integración perfecta con Redmine",
+  "MarketplaceConnectorDescription": "Obtén el conector ONLYOFFICE para Redmine ahora desde el <0>Directorio de plugins de Redmine</0>.",
+  "GetItNow": "Obtener ahora",
+
+  "WhyOO": "Por qué ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs es una suite ofimática autoalojada para trabajar con documentos de texto, hojas de cálculo, presentaciones y formularios",
+  "Reason1": "Plugin de integración listo para usar",
+  "Reason2": "Instalación sencilla y configuración rápida",
+  "Reason3": "Trabaja con archivos dentro de los módulos Asuntos, Archivos, Documentos, Wiki, Noticias",
+  "Reason4": "Interfaz intuitiva con pestañas",
+  "Reason5": "Múltiples herramientas de edición, formateo y diseño",
+  "Reason6": "Colaboración en tiempo real, seguimiento de cambios, comentarios, chat",
+  "Reason7": "Versión gratuita Community y versiones <0>escalables Enterprise</0>",
+  "Reason8": "Código abierto disponible en GitHub",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud account</1>.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>Redmine Plugins Directory</0>.",
+  "HowToStartStep3": "Configure the connector and enable JWT.",
+
+  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+
+  "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE Docs a tu servicio web favorito? ¿O has desarrollado una?"
+}

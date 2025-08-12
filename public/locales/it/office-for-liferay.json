@@ -1,0 +1,40 @@
+{
+  "PageTitle": "Modifica dei documenti in collaborazione per Liferay | ONLYOFFICE Docs",
+  "PageDescription": "Modifica e collabora ai tuoi documenti da Liferay Document e Media Library",
+
+  "OnlineOfficeForConnector": "Ufficio online per Liferay",
+  "Subheader": "Lavora su tutti i tipi di documenti d'ufficio all'interno di Liferay utilizzando ONLYOFFICE Docs",
+
+  "WorkWithinConnector": "Modifica e collabora su documenti d'ufficio all'interno di Liferay",
+  "DocumentsTab1Label": "Visualizza e modifica file d'ufficio nella sezione Documenti e Media",
+  "DocumentsTab2Label": "Crea nuovi documenti di testo, fogli di calcolo e presentazioni",
+  "DocumentsTab3Label": "Collabora in tempo reale con più utenti sui documenti e salva le modifiche in Liferay",
+  "DocumentsTab4Label": "Apri, modifica e collabora su file PDF",
+  "DocumentsTab5Label": "Crea moduli PDF compilabili e compilali online",
+  "GetStarted": "Inizia",
+  "RequestFreeDemo": "RICHIEDI UNA DEMO GRATUITA",
+
+  "FreeAppsHeading": "Accedi e modifica i tuoi documenti archiviati in Liferay con <0>app desktop</0> gratuite",
+  "FreeAppsDesktopText": "Modifica da solo o in collaborazione i file di Liferay in ambiente desktop con <0>ONLYOFFICE Desktop Editors</0> su Windows, Linux o macOS",
+  "GetFreeDesktopApps": "Ottieni app desktop gratuite",
+
+  "MarketplaceConnectorTitle": "Progettato per un'integrazione perfetta con Liferay",
+  "MarketplaceConnectorDescription": "Ottieni ora l'app ONLYOFFICE per Liferay dal Liferay Marketplace.",
+
+  "WhyOO": "Perché ONLYOFFICE?",
+  "Reason1": "Supporto per oltre <0>50 formati di file</0>, pienamente compatibile con i formati MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "Un set robusto di strumenti di modifica, formattazione e stile. Assistente <0>AI integrato</0>.",
+  "Reason3": "Co-editing in tempo reale e con blocco dei paragrafi, revisione, cronologia delle versioni, confronto dei documenti, commenti e chat. Chiamate audio e video.",
+  "Reason4": "<0>Sicurezza migliorata</0>. Diritti di accesso flessibili e JWT. Protezione con filigrana e password. Codice open source.",
+  "Reason5": "<0>Integrazione e configurazione facili</0>. Disponibile in versione server e cloud.",
+  "Reason6": "Soluzione cloud e self-hosted per il controllo totale sui tuoi dati. Versioni Enterprise scalabili. <0>Prova gratuita di 30 giorni</0>.",
+
+  "HowToStart": "Come iniziare",
+  "HowToStartStep1": "Distribuisci <0>ONLYOFFICE Docs</0> sul tuo server o crea un account <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Ottieni il connettore ONLYOFFICE dal <0>Liferay Marketplace</0>.",
+  "HowToStartStep3": "Configura il connettore e abilita JWT.",
+
+  "ReadDetailedInstructions": "Leggi le istruzioni dettagliate nell'<0>Help Center</0>.",
+
+  "NeedAnAppToConnect": "Hai bisogno di un'app per connettere ONLYOFFICE al tuo servizio web preferito? Oppure ne hai sviluppato uno?"
+}

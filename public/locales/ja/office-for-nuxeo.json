@@ -1,0 +1,41 @@
+{
+  "PageTitle": "Nuxeo対応の共同編集オンラインオフィス | ONLYOFFICE Docs",
+  "PageDescription": "Edit and collaborate on docx, pptx, xlsx, create fillable forms within Nuxeo",
+
+  "OnlineOfficeForConnector": "<0>Nuxeo</0>版オンラインオフィス",
+  "Subheader": "Nuxeoを使用してオフラインドキュメントをオンラインで編集、共同編集",
+  "GetItNow": "今すぐ入手",
+  "FullyCompatibleWithDocxXlsxAndPptx": "テキスト ドキュメント、スプレッドシート、プレゼンテーション、およびフォームで作業する",
+
+  "GetStarted": "スタートアップ",
+
+  "MarketplaceConnectorTitle": "Nuxeo とシームレスに連携するよう設計されています",
+  "MarketplaceConnectorDescription": "Nuxeo 用の ONLYOFFICE コネクターを<0>Nuxeo Marketplace</0> から、入手いただけます。",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "Reason1Header": "完璧な互換性",
+  "Reason1Description": "すべての主要なドキュメント形式で作業できます。MS Officeとの最高の互換性が保証されていま",
+  "Reason2Header": "高品質のフォーマット",
+  "Reason2Description": "100以上のフォーマットやスタイルツールを利用して、美しく説得力のあるドキュメントを作成できます",
+  "Reason3Header": "カスタム化",
+  "Reason3Description": "すぐに使えるプラグインでエディターの機能を拡張できます。自分でアプリを作成して足りない機能を追加するか、当社の開発チームにアプリの作成についてお尋ねください。当社の<0>App Directory</0>を訪問してください。",
+  "Reason4Header": "正確さ",
+  "Reason4Description": "任意のOSのどのブラウザを使っても、さらにインポート中や印刷中でも、ドキュメントは同じ書式形態を保ちます。",
+  "Reason5Header": "共同編集ツール",
+  "Reason5Description": "2種類の共同編集モード（リアルタイムモードとパラグラフロックモード）の使用が可能で、レビュー、変更追跡、ドキュメント比較、コメントまたはチャットができます。",
+  "Reason6Header": "セキュリティー",
+  "Reason6Description": "GitHubでソースコードを確認してください。JWTを使用して、権限のないアクセスからドキュメントを守ります。",
+  "Reason7Header": "統合が簡単",
+  "Reason7Description": "複数の開発オプションから選べます。簡単な操作で<0>ONLYOFFICEをNuxeo</0>マーケットプレースですぐに使えるコネクタに接続できます。",
+  "Reason8Header": "拡張性",
+  "Reason8Description": "ONLYOFFICE はあらゆるサイズのチームに拡張可能です。もちろん、何千のユーザーがいてもです",
+
+  "HowToStart": "利用を始める",
+  "HowToStartStep1": "ご自身のサーバーに <0>ONLYOFFICE Docs</0> を展開するか、<1>Docs Cloud</1> アカウントを作成します。",
+  "HowToStartStep2": "<0>Nuxeo Marketplace</0> からONLYOFFICEコネクターを取得します。",
+  "HowToStartStep3": "コネクターを設定し、JWTを有効にします。",
+
+  "ReadDetailedInstructions": "詳細な手順については、<0>ヘルプセンター</0>を参照してください。",
+
+  "NeedAnAppToConnect": "お好みのウェブ サービスに ONLYOFFICE を接続するアプリが必要ですか？  アプリを開発しましたか？"
+}

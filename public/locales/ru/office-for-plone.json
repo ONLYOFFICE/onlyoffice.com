@@ -1,4 +1,10 @@
 {
+  "PageTitle": "Совместное редактирование документов для Plone | ONLYOFFICE Docs",
+  "PageDescription": "Редактируйте документы и работайте над ними совместно, создавайте и заполняйте формы в Plone.",
+
+  "OnlineOfficeForConnector": "Онлайн офис для <0>Plone</0>",
+  "Subheader": "Работайте со всеми видами офисных документов в CMS Plone",
+  
   "HeroTab1ImgUrl": "/images/templates/office-for-plone/hero/ru/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-plone/hero/ru/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-plone/hero/ru/screen2.png",
@@ -6,5 +12,27 @@
   "HeroTab3ImgUrl": "/images/templates/office-for-plone/hero/ru/screen3.png",
   "HeroTab3ImgUrl2x": "/images/templates/office-for-plone/hero/ru/screen3@2x.png",
   "HeroTab4ImgUrl": "/images/templates/office-for-plone/hero/ru/screen4.png",
-  "HeroTab4ImgUrl2x": "/images/templates/office-for-plone/hero/ru/screen4@2x.png"
+  "HeroTab4ImgUrl2x": "/images/templates/office-for-plone/hero/ru/screen4@2x.png",
+
+  "GetStarted": "Начать работу",
+
+  "MarketplaceConnectorTitle": "Разработано для беспрепятственной интеграции с Plone",
+  "MarketplaceConnectorDescription": "Получите коннектор ONLYOFFICE для Plone прямо сейчас на <0>PyPi.org</0> и на <1>странице GitHub</1> ONLYOFFICE.",
+
+  "WhyOO": "Почему ONLYOFFICE?",
+  "Reason1": "Полная поддержка <0>всех популярных форматов</0>, в том числе OOXML и ODF.",
+  "Reason2": "Полный набор инструментов форматирования и стилевого оформления в <0>интуитивном вкладочном интерфейсе</0>.",
+  "Reason3": "<0>Совместное редактирование в режиме реального времени</0>, чат и комментирование, отслеживание изменений и история версий, сравнение документов.",
+  "Reason4": "<0>Идеальное отображение контента</0> вне зависимости от браузера и операционной системы.",
+  "Reason5": "<0>Простая настройка</0> в консоли администратора Plone.",
+  "Reason6": "<0>Исходный код</0> доступен на GitHub.",
+
+  "HowToStart": "Как начать",
+  "HowToStartStep1": "Разверните <0>ONLYOFFICE Docs</0> на собственном сервере или зарегистрируйтесь в <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Загрузите последнюю версию коннектора на <0>PyPi.org</0> и на <1>странице GitHub</1> ONLYOFFICE.",
+  "HowToStartStep3": "Настройте коннектор и включите JWT.",
+
+  "ReadDetailedInstructions": "Ознакомьтесь с <0>полезными руководствами</0> по интеграции Plone",
+
+  "NeedAnAppToConnect": "Вам нужно приложение для подключения ONLYOFFICE Docs к вашему веб-сервису? Или вы разработали его сами?"
 }

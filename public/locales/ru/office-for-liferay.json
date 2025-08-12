@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Совместное редактирование документов для Liferay | ONLYOFFICE Docs",
+  "PageDescription": "Редактируйте документы и работайте над ними совместно из Liferay Document и Media Library",
+
+  "OnlineOfficeForConnector": "Онлайн офис для Liferay",
+  "Subheader": "Работайте с любыми офисными документами в Liferay, используя ONLYOFFICE Docs",
+  "HeroImgUrl": "/images/templates/office-for-liferay/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-liferay/hero/hero@2x.png",
+
+  "WorkWithinConnector": "Редактируйте офисные документы и работайте над ними совместно в Liferay",
+  "DocumentsTab1Label": "Просматривайте и редактируйте офисные файлы в разделе «Документы и медиа»",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-liferay/documents/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-liferay/documents/screen1@2x.png",
+  "DocumentsTab2Label": "Создавайте новые текстовые документы, электронные таблицы и презентации",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-liferay/documents/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-liferay/documents/screen2@2x.png",
+  "DocumentsTab3Label": "Работайте над документами вместе с несколькими пользователями в режиме реального времени и сохраняйте изменения в Liferay",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-liferay/documents/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-liferay/documents/screen3@2x.png",
+  "DocumentsTab4Label": "Открывайте и редактируйте PDF-файлы, работайте над ними совместно",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-liferay/documents/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-liferay/documents/screen4@2x.png",
+  "DocumentsTab5Label": "Создавайте заполняемые PDF-формы и заполняйте их в режиме реального времени",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-liferay/documents/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-liferay/documents/screen5@2x.png",
+  "GetStarted": "Начать",
+  "RequestFreeDemo": "ЗАПРОСИТЬ БЕСПЛАТНУЮ ДЕМО-ВЕРСИЮ",
+
+  "FreeAppsHeading": "Получайте доступ к документам, хранящимся в Liferay, и редактируйте их с помощью <0>бесплатных десктопных приложений</0>",
+  "FreeAppsDesktopText": "Редактируйте файлы Liferay и работайте над ними совместно на своем компьютере с помощью <0>ONLYOFFICE Desktop Editors</0> для Windows, Linux или macOS",
+  "GetFreeDesktopApps": "Получить бесплатные десктопные приложения",
+
+  "MarketplaceConnectorTitle": "Разработано для беспрепятственной интеграции с Liferay",
+  "MarketplaceConnectorDescription": "Получите приложение ONLYOFFICE для Liferay прямо сейчас на Liferay Marketplace.",
+
+  "WhyOO": "Почему ONLYOFFICE?",
+  "Reason1": "Поддержка более <0>50 форматов файлов</0>, полная совместимость с форматами MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "Надежный набор инструментов редактирования, форматирования и работы со стилями. Встроенный <0>ИИ-помощник</0>.",
+  "Reason3": "<0>Совместное редактирование</0> в реальном времени и в режиме блокировки абзацев, рецензирование, история версий, сравнение документов, комментарии и чат. Аудио- и видеозвонки.",
+  "Reason4": "<0>Улучшенная безопасность</0>. Гибкие права доступа и JWT. Защита с помощью водяных знаков и пароля. Открытый исходный код.",
+  "Reason5": "<0>Простая интеграция и настройка</0>. Доступно в серверной и облачной версиях.",
+  "Reason6": "Облачная версия и решение для размещения на собственном сервере для полного контроля безопасности ваших данных. Масштабируемые версии Enterprise. <0>Бесплатный 30-дневный пробный период</0>.",
+
+  "HowToStart": "Как начать",
+  "HowToStartStep1": "Разверните <0>ONLYOFFICE Docs</0> на собственном сервере или создайте учетную запись в <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Получите коннектор ONLYOFFICE на <0>Liferay Marketplace</0>.",
+  "HowToStartStep3": "Настройте коннектор и включите JWT.",
+
+  "ReadDetailedInstructions": "Ознакомьтесь с подробными инструкциями в <0>Справочном центре</0>.",
+
+  "NeedAnAppToConnect": "Необходимо приложение для подключения ONLYOFFICE к вашему любимому веб-сервису? Или вы разработали такой сервис?"
+}

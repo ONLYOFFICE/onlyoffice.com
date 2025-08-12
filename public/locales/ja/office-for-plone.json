@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Plone 向けドキュメント共同編集 | ONLYOFFICE Docs",
+  "PageDescription": "Edit and co-author your documents, create and fill out forms within Plone.",
+
+  "OnlineOfficeForConnector": "<0>Plone</0>用のオンラインオフィス",
+  "Subheader": "Plone CMS にあるあらゆる種類のオフィス文書を編集",
+
+  "GetStarted": "スタートアップ",
+
+  "MarketplaceConnectorTitle": "Ploneとのシームレスな統合用に設計",
+  "MarketplaceConnectorDescription": "Plone用のONLYOFFICEコネクターは、<0>PyPi.org</0>やONLYOFFICE<1>GitHubページ</1>から今すぐ入手できます。",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "Reason1": "OOXML、ODF など、すべてのフォーマットに対応。",
+  "Reason2": "<0>わかりやすくタブにされたインターフェース</0> の書式スタイルツールを完備。",
+  "Reason3": "リアルタイム共同編集、チャット、コメント、変更履歴、バージョン履歴、ドキュメント比較。",
+  "Reason4": "ブラウザや OS に関わらず、内容をなめらかに表示。",
+  "Reason5": "Plone 管理コンソールから <0>簡単に設定</0>。",
+  "Reason6": "GitHub で<0>オープンソースコード</0> 利用可能。",
+
+  "HowToStart": "開始方法",
+  "HowToStartStep1": "<0>ONLYOFFICE Docs</0> を自社サーバーにデプロイするか、<1>ONLYOFFICE Docs Cloud</1> にサインアップしてください。",
+  "HowToStartStep2": "<0>PyPi.org</0> または<1>ONLYOFFICE GitHub ページ</1> から最新のコネクタバージョンをダウンロードします。",
+  "HowToStartStep3": "コネクタを設定し、JWTを有効にします。",
+
+  "ReadDetailedInstructions": "Plone統合に関する<0>便利なガイド</0>を確認してください",
+
+  "NeedAnAppToConnect": "お好みのウェブ サービスに ONLYOFFICE を接続するアプリが必要ですか？  アプリを開発しましたか？"
+}

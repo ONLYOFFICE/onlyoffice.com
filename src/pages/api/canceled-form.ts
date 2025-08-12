@@ -90,7 +90,9 @@ export default async function handler(
 
     const selectedData = dataByTable[table_name];
 
-    await db.query(`INSERT INTO ${table_name} SET ?`, [selectedData]);
+    await db.teamlabsite.query(`INSERT INTO ${table_name} SET ?`, [
+      selectedData,
+    ]);
 
     const transporter = emailTransporter();
     const to =

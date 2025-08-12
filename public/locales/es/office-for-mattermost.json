@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Suite de oficina en línea para Mattermost | ONLYOFFICE Docs",
+  "PageDescription": "Edita y coedita documentos dentro de Mattermost",
+
+  "OnlineOfficeForConnector": "Suite ofimática en línea para <0>Mattermost</0>",
+  "Subheader": "Abre, edita y coedita documentos de oficina en tu chat de Mattermost utilizando ONLYOFFICE Docs",
+  "GetItNow": "Obtener ahora",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Totalmente compatible con docx, xlsx y pptx",
+
+  "GetStarted": "Empezar",
+
+  "MarketplaceConnectorTitle": "Diseñado para una integración perfecta con Mattermost.",
+  "MarketplaceConnectorDescription": "Obtén el conector ONLYOFFICE para Mattermost ahora desde <0>GitHub</0>.",
+
+  "WhyOO": "Por qué ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs es una suite ofimática autoalojada para trabajar con documentos de texto, hojas de cálculo y presentaciones.",
+  "Reason1": "Plugin de integración listo para usar y configuración rápida",
+  "Reason2": "Interfaz intuitiva con pestañas",
+  "Reason3": "Múltiples herramientas de edición, formato y diseño",
+  "Reason4": "Coedición en tiempo real y uso compartido de archivos",
+  "Reason5": "Versiones gratuitas para la comunidad y escalables para empresas",
+  "Reason6": "Código fuente en GitHub",
+
+  "HowToStart": "Cómo empezar",
+  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una cuenta de <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtén el conector ONLYOFFICE desde <0>GitHub</0>.",
+  "HowToStartStep3": "Configura el conector y activa JWT.",
+
+  "ReadDetailedInstructions": "Lee las instrucciones detalladas en el <0>Centro de ayuda</0>.",
+
+  "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE Docs a tu servicio web favorito? ¿O has desarrollado una?"
+}

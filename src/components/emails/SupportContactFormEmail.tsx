@@ -94,7 +94,7 @@ const SupportContactFormEmail = ({
               <tr border="0" cellspacing="0" cellpadding="0">
                 <td style="width: 600px; vertical-align: top; margin: 0; padding: 20px 30px 15px;">
                     <p style="color: #7b7b7b; font-family: Arial, Tahoma; font-size: 12px; margin: 0; padding: 0; text-align: center; width: 540px;">
-                    © Ascensio System SIA $YEAR. All rights reserved.
+                    © Ascensio System SIA ${new Date().getFullYear()}. All rights reserved.
                     </p>
                 </td>
               </tr>

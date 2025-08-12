@@ -1,10 +1,15 @@
-import mysql from "mysql2/promise";
+import mysql, { Pool } from "mysql2/promise";
+import { connectionStrings } from "./connectionStrings";
 
-const db = mysql.createPool({
-  host: process.env.ONLYOFFICE_SITE_MYSQL_HOST,
-  database: process.env.ONLYOFFICE_SITE_MYSQL_DATABASE,
-  user: process.env.ONLYOFFICE_SITE_MYSQL_USER,
-  password: process.env.ONLYOFFICE_SITE_MYSQL_PASSWORD,
-});
+type DBPools = Record<string, Pool>;
+const db: DBPools = {};
+
+for (const { name, connectionString } of connectionStrings) {
+  if (!connectionString) {
+    throw new Error(`Missing connection string for "${name}".`);
+  }
+
+  db[name] = mysql.createPool(connectionString);
+}
 
 export { db };

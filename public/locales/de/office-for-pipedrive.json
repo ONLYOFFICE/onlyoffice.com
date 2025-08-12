@@ -1,32 +1,71 @@
 {
+  "PageTitle": "Online-Office für Pipedrive",
+  "PageDescription": "Arbeiten mit Office-Dokumenten in Pipedrive Deals",
+
+  "OnlineOfficeForConnector": "Online-Office für Pipedrive",
+  "Subheader": "Arbeiten mit Office-Dokumenten in Pipedrive Deals",
+  "GetStarted": "Los geht's!",
+  "ScheduleFreeDemo": "Kostenlose Demo vereinbaren",
   "HeroImgUrl": "/images/templates/office-for-pipedrive/hero/de/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-pipedrive/hero/de/hero@2x.png",
 
+  "DocspaceAppTitle": "ONLYOFFICE <0>DocSpace-App</0> für Pipedrive",
+  "New": "Neu",
+  "DocspaceAppHeader": "Schaffen Sie eine kollaborative Umgebung für die Arbeit an Ihren Vertragsdokumenten",
+  "DocspaceAppTab1Label": "Erstellen Sie ganz einfach einen eigenen DocSpace-Raum für die Zusammenarbeit an Dokumenten direkt von jedem Pipedrive-Deal aus.",
   "DocspaceAppTab1ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/de/screen1.png",
   "DocspaceAppTab1ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/de/screen1@2x.png",
-
+  "DocspaceAppTab2Label": "Synchronisieren Sie die Zugriffsrechte.",
   "DocspaceAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/de/screen2.png",
   "DocspaceAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/de/screen2@2x.png",
-
+  "DocspaceAppTab3Label": "Speichern Sie alle Ihre Dealdaten an einem einzigen Ort.",
   "DocspaceAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/de/screen3.png",
   "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/de/screen3@2x.png",
-
+  "DocspaceAppTab4Label": "Arbeiten Sie gemeinsam an Dokumenten, Tabellen, Folien, Formularen und PDF. Öffnen Sie Mediendateien.",
   "DocspaceAppTab4ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/de/screen4.png",
   "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/de/screen4@2x.png",
 
+  "MarketplaceConnectorTitle": "Entwickelt für die nahtlose Integration mit Pipedrive",
+  "MarketplaceConnectorDescription": "Erhalten Sie jetzt die ONLYOFFICE-App für Pipedrive vom Pipedrive Marketplace.",
+
+  "DocsAppTitle": "ONLYOFFICE <0>Docs-App</0> für Pipedrive",
+  "DocsAppHeader": "Bearbeiten Sie Office-Dokumente innerhalb der Pipedrive-Oberfläche",
+  "DocsAppTab1Label": "Erstellen oder laden Sie Textdokumente, Tabellen und Präsentationen auf Pipedrive hoch.",
   "DocsAppTab1ImgUrl": "/images/templates/office-for-pipedrive/docs-app/de/screen1.png",
   "DocsAppTab1ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/de/screen1@2x.png",
-
+  "DocsAppTab2Label": "Öffnen Sie an Pipedrive-Deals angehängte Office-Dokumente und bearbeiten Sie sie.",
   "DocsAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docs-app/de/screen2.png",
   "DocsAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/de/screen2@2x.png",
-
+  "DocsAppTab3Label": "Arbeiten Sie in Echtzeit mit Kollegen an Dokumenten zusammen, verfolgen Sie Änderungen, hinterlassen Sie Kommentare und chatten Sie.",
   "DocsAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docs-app/de/screen3.png",
   "DocsAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/de/screen3@2x.png",
 
+  "WhyOO": "Warum ONLYOFFICE?",
+  "Reason1": "Unterstützung für mehr als <0>50 Dateiformate</0>, vollständig kompatibel mit MS Office-Formaten: DOCX, XLSX, PPTX.",
+  "Reason2": "<0>Gemeinsame Bearbeitung</0> in Echtzeit und mit Sperren von Absätzen, Überprüfung, Versionsverlauf, Dokumentvergleich, Kommentare und Chat. Audio- und Videoanrufe.",
+  "Reason3": "Kostenlose Community- und skalierbare Enterprise-Versionen. <0>Kostenlose 30-Tage-Testversion</0>. Integration mit Cloud-Version.",
+  "Reason4": "Ein robuster Satz an Bearbeitungs-, Formatierungs- und Styling-Tools. Integrierter <0>KI-Helfer</0>.",
+  "Reason5": "<0>Einfache Installation</0> über den Pipedrive Marketplace und schnelle Konfiguration",
+  "Reason6": "<0>Verbesserte Sicherheit</0>. Flexible Zugriffsrechte und JWT. Open-Source-Code. Selbstgehostete Lösung für vollständige Kontrolle über Ihre Daten.",
+
+  "HowToStart": "Wie Sie anfangen",
+
+  "HowToStartStep1Docspace": "Melden Sie sich bei Ihrem ONLYOFFICE DocSpace-Konto an oder <0>erstellen Sie ein neues Konto</0>.",
+  "HowToStartStep2Docspace": "Installieren Sie die App vom <0>Pipedrive Marketplace</0> und erlauben Sie die angeforderten Berechtigungen.",
+  "HowToStartStep3Docspace": "Konfigurieren Sie die Pipedrive- und ONLYOFFICE-Zugangseinstellungen.",
+  "HowToStartStep1DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/de/step1-ds.svg",
+  "HowToStartStep2DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/de/step2-ds.svg",
+  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/de/step3-ds.svg",
+  "ReadDetailedInstructions": "Lesen Sie nützliche Anleitungen zur Pipedrive-Integration auf <0>GitHub</0> oder im <1>Hilfecenter</1>.",
+
+  "HowToStartStep1Docs": "Stellen Sie <0>ONLYOFFICE Docs</0> auf Ihrem eigenen Server bereit oder melden Sie sich für <1>ONLYOFFICE Docs Cloud</1> an.",
+  "HowToStartStep2Docs": "Installieren Sie die Integrations-App vom <0>Pipedrive Marketplace</0>.",
+  "HowToStartStep3Docs": "Konfigurieren Sie die integrierten Instanzen.",
   "HowToStartStep2DocsImgUrl": "/images/templates/office-for-pipedrive/how-to-start/de/step2-dc.svg",
   "HowToStartStep3DocsImgUrl": "/images/templates/office-for-pipedrive/how-to-start/de/step3-dc.svg",
 
-  "HowToStartStep1DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/de/step1-ds.svg",
-  "HowToStartStep2DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/de/step2-ds.svg",
-  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/de/step3-ds.svg"
+  "PartnerHeading": "Sind Sie ein Pipedrive-Partner? Wie wäre es, Ihre Pipedrive-Benutzererfahrung zu verbessern und Ihren Umsatz zu steigern?",
+  "PartnerText": "Nehmen Sie jetzt am ONLYOFFICE-Partnerprogramm teil.",
+
+  "NeedAnAppToConnect": "Benötigen Sie eine App, um ONLYOFFICE mit Ihren Lieblings-Webdiensten zu verbinden? Oder haben Sie eine neue entwickelt?"
 }

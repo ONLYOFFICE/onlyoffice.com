@@ -49,10 +49,11 @@ export default async function handler(
     const { data: generateKeyData } = await generateKey({ email });
     const cookies = parse(req.headers.cookie || "");
     const utmCampaign = cookies.utm_campaign || null;
+    const emailKey = `${generateKeyData.emailKey}1`;
 
     const queryString = new URLSearchParams();
     if (desktop) queryString.append("desktop", desktop);
-    queryString.append("epkey", generateKeyData.emailKey);
+    queryString.append("epkey", emailKey);
     queryString.append("eskey", generateKeyData.linkKey);
     if (language) queryString.append("language", language);
     if (awsRegion) queryString.append("awsRegion", awsRegion);
@@ -72,12 +73,12 @@ export default async function handler(
       ? LoginEmail({
           baseUrl,
           queryParams,
-          unsubscribeId: generateKeyData.emailKey,
+          unsubscribeId: emailKey,
         })
       : RegisterEmail({
           baseUrl,
           queryParams,
-          unsubscribeId: generateKeyData.emailKey,
+          unsubscribeId: emailKey,
         });
 
     await sendEmail({ email, subject, body });

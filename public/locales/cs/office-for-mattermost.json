@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Online kancelářský balík pro Mattermost | ONLYOFFICE Docs",
+  "PageDescription": "Upravujte a spoluupravujte dokumenty v prostředí Mattermost",
+
+  "OnlineOfficeForConnector": "Online office for <0>Mattermost</0>",
+  "Subheader": "Otevírejte, upravujte a spoluvytvářejte kancelářské dokumenty v chatu Mattermost pomocí aplikace ONLYOFFICE Docs",
+  "GetItNow": "Získejte jej nyní",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Plně kompatibilní s formáty docx, xlsx a pptx",
+
+  "GetStarted": "Začínáme",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Mattermost",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for Mattermost now from the <0>GitHub</0>.",
+
+  "WhyOO": "Proč ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs je samostatně hostovaný kancelářský balík pro práci s textovými dokumenty, tabulkami a prezentacemi.",
+  "Reason1": "Integrační zásuvný modul připravený k použití a rychlá konfigurace",
+  "Reason2": "Intuitivní rozhraní s kartami",
+  "Reason3": "Mnoho nástrojů pro úpravy, formátování a stylování",
+  "Reason4": "Společná editace v reálném čase, sdílení souborů",
+  "Reason5": "Bezplatná verze Community a škálovatelná verze Enterprise",
+  "Reason6": "Zdrojový kód na GitHubu",
+
+  "HowToStart": "Jak začít",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from <0>GitHub</0>.",
+  "HowToStartStep3": "Configure the connector and enable JWT.",
+
+  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>",
+
+  "NeedAnAppToConnect": "Potřebujete aplikaci k připojení ONLYOFFICE k vaší oblíbené webové službě? Nebo jste ji vyvinuli?"
+}

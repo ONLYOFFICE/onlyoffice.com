@@ -1,0 +1,29 @@
+{
+  "PageTitle": "Kolaborativno uređivanje dokumenata za Plone | ONLYOFFICE Docs",
+  "PageDescription": "Editujte i koautorski uređujte svoje dokumente, kreirajte i popunjavajte formulare unutar Plone-a",
+
+  "OnlineOfficeForConnector": "Online kancelarijsko rešenje za <0>Plone</0>",
+  "Subheader": "Radite na svim vrstama kancelarijskih dokumenata unutar Plone CMS-a",
+
+  "GetStarted": "Počnite",
+
+  "MarketplaceConnectorTitle": "Dizajnirano za besprekornu integraciju sa Plone-om",
+  "MarketplaceConnectorDescription": "Preuzmite ONLYOFFICE konektor za Plone sada sa <0>PyPi.org</0> i <1>GitHub stranice</1> ONLYOFFICE.",
+
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "Reason1": "Puna podrška za <0>sve popularne formate</0>, uključujući OOXML i ODF.",
+  "Reason2": "Kompletan set alata za formatiranje i stilizovanje organizovan u <0>intuitivni kartični interfejs</0>.",
+  "Reason3": "<0>Koautorsko uređivanje u realnom vremenu</0>, čet i komentari, praćenje izmena i istorija verzija, poređenje dokumenata.",
+  "Reason4": "<0>Besprekorno prikazivanje sadržaja</0> bez obzira na pregledač i operativni sistem.",
+  "Reason5": "<0>Jednostavna konfiguracija</0> iz Plone administratorske konzole.",
+  "Reason6": "<0>Otvoreni izvorni kod</0> dostupan na GitHub-u.",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Implementirajte <0>ONLYOFFICE Docs</0> na sopstvenom serveru ili se prijavite za <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Preuzmite najnoviju verziju konektora sa <0>PyPi.org</0> i <1>GitHub stranice</1> ONLYOFFICE.",
+  "HowToStartStep3": "Konfigurišite konektor i omogućite JWT.",
+
+  "ReadDetailedInstructions": "Pogledajte <0>korisne vodiče</0> o Plone integraciji.",
+
+  "NeedAnAppToConnect": "Treba vam aplikacija za povezivanje ONLYOFFICE Docs sa vašom omiljenom web uslugom? Ili ste možda već razvili jednu?"
+}

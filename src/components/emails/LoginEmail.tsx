@@ -145,14 +145,7 @@ const LoginEmail = ({ baseUrl, queryParams, unsubscribeId }: ILoginEmail) => {
                           style="border-top-width: 1px; border-top-color: #E2E2E2; border-top-style: solid; color: #666666; font-family: 'Open Sans', Helvetica, Arial, Tahoma, sans-serif; font-size: 13px; line-height: 20px; margin: 0; padding: 40px 0 8px; vertical-align: top;"
                         >
                           For any purchase questions, email us at
-                          <a
-                            style="color: #FF6F3D; text-decoration: underline;"
-                            target="_blank"
-                            href="mailto:sales@onlyoffice.com"
-                          >
-                            sales@onlyoffice.com
-                          </a>
-                          .
+                          <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.
                         </td>
                       </tr>
                       <tr border="0" cellspacing="0" cellpadding="0">
@@ -161,14 +154,7 @@ const LoginEmail = ({ baseUrl, queryParams, unsubscribeId }: ILoginEmail) => {
                           style="color: #666666; font-family: 'Open Sans', Helvetica, Arial, Tahoma, sans-serif; font-size: 13px; line-height: 20px; margin: 0; padding: 0; vertical-align: top;"
                         >
                           In case of technical problems please contact our
-                          <a
-                            style="color: #FF6F3D; text-decoration: underline;"
-                            target="_blank"
-                            href="https://helpdesk.onlyoffice.com"
-                          >
-                            support team
-                          </a>
-                          .
+                          <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">support team</a>.
                         </td>
                       </tr>
                       <tr border="0" cellspacing="0" cellpadding="0">

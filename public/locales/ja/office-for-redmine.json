@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Redmine 向けのオンラインオフィススイート | ONLYOFFICE Docs",
+  "PageDescription": "Edit and co-edit documents, create and fill out forms within Redmine",
+
+  "OnlineOfficeForConnector": "<0>Redmine</0>用のオンラインオフィス",
+  "Subheader": "ONLYOFFICE Docsを使用して、Redmineでのオフィスドキュメントを表示、編集、共同編集できる",
+  "GetStarted": "スタートアップ",
+  "FullyCompatibleWithDocxXlsxAndPptx": "docx, xlsx, pptxに完全対応",
+
+  "MarketplaceConnectorTitle": "Redmine とシームレスに連携するよう設計されています",
+  "MarketplaceConnectorDescription": "Redmine 用の ONLYOFFICE コネクターを <0>Redmine Plugins Directory</0> から入手いただけます。",
+  "GetItNow": "今すぐ入手",
+
+  "WhyOO": "ONLYOFFICE Docsを選択する理由",
+  "WhySubheader": "ONLYOFFICE Docsは、テキスト ドキュメント、スプレッドシート、プレゼンテーション、およびフォームで作業するためのセルフホストのオフィススイートです。",
+  "Reason1": "すぐに使用できる統合プラグイン",
+  "Reason2": "簡単なインストールと迅速な構成",
+  "Reason3": "課題、ファイル、ドキュメント、Wiki、ニュースモジュールでファイルを操作する",
+  "Reason4": "タブ付きの直感的なインターフェース",
+  "Reason5": "数人での編集、書式設定、およびスタイリング ツール",
+  "Reason6": "リアルタイム コラボレーション、変更の追跡、コメント、チャット",
+  "Reason7": "無料のコミュニティ版と<0>拡張可能なエンタープライズ版</0>",
+  "Reason8": "GitHubで入手可能なオープンソースコード",
+
+  "HowToStart": "利用を始める",
+  "HowToStartStep1": "ご自身のサーバーに <0>ONLYOFFICE Docs</0> を展開するか、<1>Docs Cloud</1> アカウントを作成します。",
+  "HowToStartStep2": "<0>Redmine Plugins Directory</0> からONLYOFFICEコネクタを取得します。",
+  "HowToStartStep3": "コネクタを設定し、JWTを有効にします。",
+
+  "ReadDetailedInstructions": "詳細な手順については、<0>ヘルプセンター</0>を参照してください。",
+
+  "NeedAnAppToConnect": "お好みのウェブ サービスに ONLYOFFICE を接続するアプリが必要ですか？  アプリを開発しましたか？"
+}

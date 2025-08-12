@@ -1,0 +1,50 @@
+{
+  "PageTitle": "Escritório online para Pipedrive",
+  "PageDescription": "Trabalhe com documentos do Office dentro do Pipedrive Deals",
+
+  "OnlineOfficeForConnector": "Escritório online para Pipedrive",
+  "Subheader": "Trabalhe com documentos do Office dentro do Pipedrive Deals",
+  "GetStarted": "Começar agora",
+  "ScheduleFreeDemo": "Agende sua demonstração gratuita",
+
+  "DocspaceAppTitle": "<0>Aplicativo</0> ONLYOFFICE <0>DocSpace</0> para Pipedrive",
+  "New": "Novo",
+  "DocspaceAppHeader": "Crie um ambiente colaborativo para trabalhar nos documentos do seu negócio",
+  "DocspaceAppTab1Label": "Crie facilmente uma sala DocSpace dedicada para colaboração de documentos diretamente de qualquer negócio do Pipedrive.",
+  "DocspaceAppTab2Label": "Sincronizar permissões de acesso.",
+  "DocspaceAppTab3Label": "Armazene todos os dados de seus negócios em um único lugar.",
+  "DocspaceAppTab4Label": "Edite e colabore em documentos, planilhas, slides, formulários, PDFs. Visualize arquivos de mídia.",
+
+  "MarketplaceConnectorTitle": "Projetado para integração perfeita com o Pipedrive",
+  "MarketplaceConnectorDescription": "Obtenha agora o único aplicativo do Office para o Pipedrive no Pipedrive Marketplace.",
+
+  "DocsAppTitle": "<0>Aplicativo</0> ONLYOFFICE <0>Docs</0> para Pipedrive",
+  "DocsAppHeader": "Editar e coautorar documentos do Office na interface do Pipedrive",
+  "DocsAppTab1Label": "Crie ou carregue documentos de texto, planilhas e apresentações no Pipedrive.",
+  "DocsAppTab2Label": "Visualize e edite documentos de escritório anexados a negócios do Pipedrive.",
+  "DocsAppTab3Label": "Co-autor de documentos com colegas em tempo real, acompanhar alterações, deixar comentários e conversar.",
+
+  "WhyOO": "Por que ONLYOFFICE ?",
+  "Reason1": "Suporte para mais de <0>50 formatos de arquivo</0>, totalmente compatível com os formatos do MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "Coedição em tempo real e bloqueio de parágrafos, <0>coedição</0>, histórico de versões, comparação de documentos, comentários e bate-papo. Chamadas de áudio e vídeo.",
+  "Reason3": "Comunidade livre e versões empresariais escaláveis. <0>Teste gratuito de 30 dias</0>. Integração com a versão cloud.",
+  "Reason4": "Um conjunto robusto de ferramentas de edição, formatação e estilo. Auxiliar de <0>IA integrado</0>.",
+  "Reason5": "<0>Configuração fácil</0> do Pipedrive Marketplace e Configuração Rápida",
+  "Reason6": "<0>Segurança reforçada</0>. Direitos de acesso flexíveis e JWT. Código-fonte aberto. Solução auto-hospedada para controle total sobre seus dados.",
+
+  "HowToStart": "Como começar",
+
+  "HowToStartStep1Docspace": "Entre na sua conta ONLYOFFICE DocSpace ou comece <0>criando uma nova conta</0>.",
+  "HowToStartStep2Docspace": "Instale o aplicativo do <0>Pipedrive Marketplace</0> e permita as permissões solicitadas.",
+  "HowToStartStep3Docspace": "Configure as configurações de acesso do Pipedrive e do ONLYOFFICE.",
+
+  "HowToStartStep1Docs": "Implemente <0>ONLYOFFICE Docs</0> no seu próprio servidor ou inscreva-se apenas no <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2Docs": "Instale o aplicativo de integração do <0>Pipedrive Marketplace</0>.",
+  "HowToStartStep3Docs": "Configurar as instâncias integradas.",
+  "ReadDetailedInstructions": "Consulte guias úteis sobre a integração do Pipedrive no <0>GitHub</0> ou na <1>Central de Ajuda</1>.",
+
+  "PartnerHeading": "Você é um parceiro do Pipedrive? Que tal melhorar sua experiência de usuário do Pipedrive e aumentar sua receita?",
+  "PartnerText": "Participe agora mesmo do programa de parceria do ONLYOFFICE.",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE ao seu serviço web favorito? Ou você desenvolveu um?"
+}

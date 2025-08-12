@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Suite office online per Mattermost | ONLYOFFICE Docs",
+  "PageDescription": "Modifica e collabora su documenti su Mattermost",
+
+  "OnlineOfficeForConnector": "Ufficio online per <0>Mattermost</0>",
+  "Subheader": "Apri, modifica e crea in collaborazione documenti office nella tua chat Mattermost usando ONLYOFFICE Docs",
+  "GetItNow": "Ottienilo ora",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Completamente compatibile con docx, xlsx e pptx",
+
+  "GetStarted": "Inizia",
+
+  "MarketplaceConnectorTitle": "Progettato per un'integrazione perfetta con Mattermost",
+  "MarketplaceConnectorDescription": "Ottieni ora il connettore ONLYOFFICE per Mattermost da <0>GitHub</0>.",
+
+  "WhyOO": "Perché ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs è una office suite self-hosted per lavorare su documenti di testo, fogli di calcolo e presentazioni.",
+  "Reason1": "Plugin d'integrazione pronto all'uso e configurazione rapida",
+  "Reason2": "Interfaccia intuitiva con le schede",
+  "Reason3": "Gli strumenti multipli di modifica, formattazione e stile",
+  "Reason4": "Co-editing in tempo reale, condivisione di file",
+  "Reason5": "Versioni Community gratuita e Enterprise scalabile",
+  "Reason6": "Codice disponibile su GitHub",
+
+  "HowToStart": "Come iniziare",
+  "HowToStartStep1": "Installa <0>ONLYOFFICE Docs</0> sul tuo server oppure crea un account su <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Scarica il connettore di ONLYOFFICE da <0>GitHub</0>.",
+  "HowToStartStep3": "Configura il connettore e abilita JWT.",
+
+  "ReadDetailedInstructions": "Leggi le istruzioni dettagliate nel <0>Centro Assistenza</0>",
+
+  "NeedAnAppToConnect": "Hai bisogno di un&apos;app per connettere ONLYOFFICE Docs al tuo servizio web preferito? O ne hai sviluppato una?"
+}

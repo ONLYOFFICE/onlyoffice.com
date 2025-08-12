@@ -1,0 +1,41 @@
+{
+  "PageTitle": "Office online colaborativo para Nuxeo | ONLYOFFICE Docs",
+  "PageDescription": "Edite e colabore em docx, pptx, xlsx, crie formulários preenchíveis no Nuxeo",
+
+  "OnlineOfficeForConnector": "Office online para <0>Nuxeo</0>",
+  "Subheader": "Edição e coautoria de documentos Office no Nuxeo",
+  "GetItNow": "Obter agora",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Compatível com documentos de texto, planilhas, apresentações e formulários",
+
+  "GetStarted": "Começar agora",
+
+  "MarketplaceConnectorTitle": "Projetado para uma integração perfeita com o Nuxeo",
+  "MarketplaceConnectorDescription": "Obtenha o conector ONLYOFFICE para Nuxeo agora no <0>Nuxeo Marketplace</0>.",
+
+  "WhyOO": "Por que o ONLYOFFICE Docs",
+  "Reason1Header": "Compatibilidade perfeita",
+  "Reason1Description": "Trabalhe com todos os principais formatos de documentos. A mais alta compatibilidade com o MS Office garantida.",
+  "Reason2Header": "Formatação de alta qualidade",
+  "Reason2Description": "Use centenas de ferramentas de formatação e estilo para criar documentos bonitos e persuasivos.",
+  "Reason3Header": "Personalização",
+  "Reason3Description": "Amplie a funcionalidade do editor com plug-ins prontos a usar. Escreva seu próprio aplicativo para adicionar os recursos que você sente falta ou peça aos nossos desenvolvedores. Visite nosso <0>Diretório de aplicativos</0>.",
+  "Reason4Header": "Revisão",
+  "Reason4Description": "Os documentos mantêm a mesma formatação e estilo em qualquer navegador de qualquer sistema operacional, bem como durante a importação ou impressão.",
+  "Reason5Header": "Ferramentas de colaboração",
+  "Reason5Description": "Use dois modos de coedição (bloqueio em tempo real e parágrafo), revise e rastreie alterações, compare documentos, comentários ou chat.",
+  "Reason6Header": "Segurança",
+  "Reason6Description": "Verifique o código fonte no GitHub Proteja seus documentos contra acesso não autorizado com o JWT.",
+  "Reason7Header": "Fácil integração",
+  "Reason7Description": "Escolha entre várias opções de implantação. Conecte facilmente o ONLYOFFICE com o conector pronto para uso disponível no <0>Nuxeo Marketplace</0>.",
+  "Reason8Header": "Escalabilidade",
+  "Reason8Description": "O ONLYOFFICE pode ser escalado para equipes de qualquer tamanho. Mesmo se você tiver milhares de usuários!",
+
+  "HowToStart": "Como começar",
+  "HowToStartStep1": "Implante o <0>ONLYOFFICE Docs</0> no seu próprio servidor ou crie uma conta <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenha o conector ONLYOFFICE do <0>Nuxeo Marketplace<0>.",
+  "HowToStartStep3": "Configure o conector e habilite o JWT.",
+
+  "ReadDetailedInstructions": "Leia instruções detalhadas na <0>Central de Ajuda</0>.",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço Web favorito? Ou você desenvolveu um?"
+}

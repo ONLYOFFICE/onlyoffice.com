@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Pacote office online para Redmine | ONLYOFFICE Docs",
+  "PageDescription": "Edite e coedite documentos, crie e preencha formulários no Redmine",
+
+  "OnlineOfficeForConnector": "Online office para <0>Redmine</0>",
+  "Subheader": "Visualize, edite e colabore em documentos office no Redmine usando o ONLYOFFICE Docs",
+  "GetStarted": "Começar agora",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Compatibilidade total com docx, xlsx, pptx",
+
+  "MarketplaceConnectorTitle": "Projetado para integração perfeita com o Redmine",
+  "MarketplaceConnectorDescription": "Obtenha o conector do ONLYOFFICE para Redmine agora no <0>Redmine Plugins Directory</0>.",
+  "GetItNow": "Obter agora",
+
+  "WhyOO": "Por que o ONLYOFFICE Docs",
+  "WhySubheader": "O ONLYOFFICE Docs é um pacote office auto-hospedado para trabalho em documentos de texto, planilhas, apresentações e formulários",
+  "Reason1": "Plug-in de integração pronto para usar.",
+  "Reason2": "Instalação fácil e configuração rápida.",
+  "Reason3": "Trabalhe com arquivos nos módulos Issues, Files, Documents, Wiki, News.",
+  "Reason4": "Interface intuitiva com guias.",
+  "Reason5": "Várias ferramentas de edição, formatação e estilo.",
+  "Reason6": "Colaboração em tempo real, controle de alterações, comentários e chat.",
+  "Reason7": "Versões comunitárias gratuitas e <0>empresas escaláveis</0>",
+  "Reason8": "Código open-source disponível no GitHub.",
+
+  "HowToStart": "Como começar",
+  "HowToStartStep1": "Implante o <0>ONLYOFFICE Docs</0> no seu próprio servidor ou crie uma conta <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenha o conector ONLYOFFICE do <0>Redmine Plugins Directory</0>.",
+  "HowToStartStep3": "Configure o conector e habilite o JWT.",
+
+  "ReadDetailedInstructions": "Leia instruções detalhadas na <0>Central de Ajuda</0>.",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço Web favorito? Ou você desenvolveu um?"
+}

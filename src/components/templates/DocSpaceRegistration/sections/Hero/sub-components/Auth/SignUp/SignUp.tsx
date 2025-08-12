@@ -223,7 +223,7 @@ const SignUp = ({
           });
           const generateKeyData = await generateKeyRes.json();
           setCreateNewAccountQuery(
-            `epkey=${generateKeyData.data.emailKey}&eskey=${generateKeyData.data.linkKey}&transport=${data}&awsRegion=${selected[0].value}`,
+            `epkey=${generateKeyData.data.emailKey}1&eskey=${generateKeyData.data.linkKey}&transport=${data}&awsRegion=${selected[0].value}`,
           );
           setExistTenants(findByEmailData.data);
         } else {

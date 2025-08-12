@@ -31,18 +31,26 @@ export const config = {
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse
+  res: NextApiResponse,
 ) {
   if (req.method !== "POST") {
-    return res.status(405).json({ status: "error", message: "Method Not Allowed" });
+    return res
+      .status(405)
+      .json({ status: "error", message: "Method Not Allowed" });
   }
 
-  const form = new IncomingForm({ multiples: true, maxFiles: 10, maxFileSize: 5 * 1024 * 1024 });
+  const form = new IncomingForm({
+    multiples: true,
+    maxFiles: 10,
+    maxFileSize: 5 * 1024 * 1024,
+  });
 
   form.parse(req, async (err, fields, filesRaw) => {
     if (err) {
       console.error("Form parsing error:", err);
-      return res.status(400).json({ status: "error", message: "Form parsing failed" });
+      return res
+        .status(400)
+        .json({ status: "error", message: "Form parsing failed" });
     }
 
     const errorMessages: string[] = [];
@@ -88,7 +96,10 @@ export default async function handler(
         utm_content: cookies.utmContent ?? null,
         utm_term: cookies.utmTerm ?? null,
       };
-      await db.query("INSERT INTO form_registration_request SET ?", [formRecord]);
+      await db.teamlabsite.query(
+        "INSERT INTO form_registration_request SET ?",
+        [formRecord],
+      );
     } catch (dbErr) {
       console.error("DB insert error:", dbErr);
       errorMessages.push("supportContactForm DB error");
@@ -101,18 +112,18 @@ export default async function handler(
 
       // Determine next request-N folder
       const existing = readdirSync(baseUploads)
-        .filter(name => name.startsWith("request-"))
-        .map(name => parseInt(name.split('-')[1] || '0', 10))
-        .filter(n => !isNaN(n));
+        .filter((name) => name.startsWith("request-"))
+        .map((name) => parseInt(name.split("-")[1] || "0", 10))
+        .filter((n) => !isNaN(n));
       const nextIdx = existing.length ? Math.max(...existing) + 1 : 1;
       const requestDirName = `request-${nextIdx}`;
       const requestDir = path.join(baseUploads, requestDirName);
       mkdirSync(requestDir);
 
       // Save each uploaded file
-      const attachments = uploadedFiles.map(file => {
+      const attachments = uploadedFiles.map((file) => {
         const fileData = readFileSync(file.filepath);
-        const originalFilename = file.originalFilename ?? file.newFilename
+        const originalFilename = file.originalFilename ?? file.newFilename;
         const finalName = originalFilename.replace(/ /g, "_");
         const finalPath = path.join(requestDir, finalName);
         writeFileSync(finalPath, fileData);
@@ -124,7 +135,7 @@ export default async function handler(
       await transporter.sendMail({
         from: email,
         to: [process.env.SUPPORT_EMAIL!],
-        subject: `${email} - SupportContactForm${errorMessages.length ? ' [Error]' : ''}`,
+        subject: `${email} - SupportContactForm${errorMessages.length ? " [Error]" : ""}`,
         html: SupportContactFormEmail({
           firstName: name,
           email,
@@ -134,16 +145,20 @@ export default async function handler(
           paidLicense,
           comment: description,
           languageCode,
-          errorText: errorMessages.join(', '),
-          attachmentFiles: attachments.map(a => a.filename).join(', '),
+          errorText: errorMessages.join(", "),
+          attachmentFiles: attachments.map((a) => a.filename).join(", "),
         }),
         attachments,
       });
 
-      return res.status(200).json({ status: "success", folder: requestDirName });
+      return res
+        .status(200)
+        .json({ status: "success", folder: requestDirName });
     } catch (err) {
       console.error("Processing error:", err);
-      return res.status(500).json({ status: "error", message: "Processing failed" });
+      return res
+        .status(500)
+        .json({ status: "error", message: "Processing failed" });
     }
   });
 }
