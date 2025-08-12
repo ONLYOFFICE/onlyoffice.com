@@ -147,7 +147,13 @@ pipeline {
                         string(credentialsId: 'onlyoffice_site_test_core_machinekey', variable: 'onlyoffice_site_test_core_machinekey'),
                         string(credentialsId: 'onlyoffice_site_test_google_analytics_url', variable: 'onlyoffice_site_test_google_analytics_url'),
                         string(credentialsId: 'onlyoffice_site_test_google_search_cx', variable: 'onlyoffice_site_test_google_search_cx'),
-                        string(credentialsId: 'onlyoffice_site_test_google_search_key', variable: 'onlyoffice_site_test_google_search_key')]) {          
+                        string(credentialsId: 'onlyoffice_site_test_google_search_key', variable: 'onlyoffice_site_test_google_search_key'),
+                        string(credentialsId: 'onlyoffice_site_test_core_mysql_url', variable: 'onlyoffice_site_test_core_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_test_core_us_mysql', variable: 'onlyoffice_site_test_core_us_mysql'),
+                        string(credentialsId: 'onlyoffice_site_test_core_io_mysql_url', variable: 'onlyoffice_site_test_core_io_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_test_core_io2_mysql_url', variable: 'onlyoffice_site_test_core_io2_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_test_teamlabsite_mysql_url', variable: 'onlyoffice_site_test_teamlabsite_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_test_personal_mysql_url', variable: 'onlyoffice_site_test_personal_mysql_url')]) {          
         sh '''
           sed -i "s^var_notification_app_name^$src_domain^" .jenkins/build.sh
           cp .jenkins/build.sh .jenkins/site_build.sh
