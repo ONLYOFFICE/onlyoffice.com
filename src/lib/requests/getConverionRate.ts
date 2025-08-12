@@ -13,7 +13,7 @@ export const getConversionRate = async ({ pageName }: IConversionRate) => {
   }
 
   try {
-    const [rows] = await db.query(
+    const [rows] = await db.teamlabsite.query(
       "SELECT ratingValue FROM converter_rating WHERE converterPageName = ?",
       [pageName],
     );

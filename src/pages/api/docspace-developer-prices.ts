@@ -133,9 +133,10 @@ export default async function handler(
             create_on: new Date(),
           };
 
-          await db.query("INSERT INTO docspace_developer_request SET ?", [
-            addDocSpaceDeveloperData,
-          ]);
+          await db.teamlabsite.query(
+            "INSERT INTO docspace_developer_request SET ?",
+            [addDocSpaceDeveloperData],
+          );
 
           return {
             status: "success",
