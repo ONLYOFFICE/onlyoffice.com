@@ -1,0 +1,55 @@
+{
+  "PageTitle": "在表单填写房间中收集和分析数据",
+  "PageDescription": "在 ONLYOFFICE 协作空间中，轻松填写表单",
+
+  "EasilyCollectAndAnalyze": "在<0>表单填写房间</0>中轻松收集和分析数据",
+  "OrganizeStraightforwardFormFilling": "在 ONLYOFFICE 协作空间中，轻松填写表单",
+
+  "EasyFormUploading": "轻松上传表单",
+  "QuickSharing": "快捷分享",
+  "IntuitiveProcess": "直观的表单填写流程",
+  "ConvenientAnalyzing": "方便分析收集到的回复",
+  "CostEffectiveForAnyBudget": "适合各种预算的高性价比方案",
+
+  "CreateFreeAccount": "免费注册账户",
+
+  "HeroImgUrl": "/images/templates/form-filling-rooms/hero/form-filling-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/form-filling-rooms/hero/form-filling-rooms-header@2x.png",
+
+  "EasyFormUploadingDesc": "只需单击几下，即可从协作空间或设备将准备好的 PDF 表单上传到房间。还有集成的模板库，提供了众多现成的 PDF 模板选择。",
+  "EasyFormUploadingUrl": "/images/templates/form-filling-rooms/features/zh/easy.png",
+  "EasyFormUploadingUrl2x": "/images/templates/form-filling-rooms/features/zh/easy@2x.png",
+
+  "QuickSharingDesc": "邀请同事和团队在房间填写已上传的 PDF 表单。复制公共访问链接即可与外部人员共享房间。",
+  "QuickSharingUrl": "/images/templates/form-filling-rooms/features/zh/quick.png",
+  "QuickSharingUrl2x": "/images/templates/form-filling-rooms/features/zh/quick@2x.png",
+
+  "IntuitiveProcessDesc": "对每个人来说都是小菜一碟！使用上一个字段或下一个字段按钮在字段之间导航。还可以调整缩放比例、适合页面或宽度。填写完毕后，只需单击完成并提交按钮即可。",
+  "IntuitiveProcessUrl": "/images/templates/form-filling-rooms/features/zh/intuitive.png",
+  "IntuitiveProcessUrl2x": "/images/templates/form-filling-rooms/features/zh/intuitive@2x.png",
+
+  "ConvenientAnalyzingDesc": "检查已填好的表单，并分析自动收集到电子表格中的数据。所有操作都在一个房间内完成。",
+  "ConvenientAnalyzingUrl": "/images/templates/form-filling-rooms/features/zh/analyzing.png",
+  "ConvenientAnalyzingUrl2x": "/images/templates/form-filling-rooms/features/zh/analyzing@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "只需为管理员付费，可免费添加任意数量的普通用户和访客。小型团队可使用免费的初创版本。无论是中小型还是大型企业，ONLYOFFICE 协作空间都很适合。还可以在您的私人服务器上部署 协作空间，完全掌控自己的公司数据。",
+  "CostEffectiveForAnyBudgetUrl": "/images/templates/form-filling-rooms/features/zh/cost-effective-for-any-budget.png",
+  "CostEffectiveForAnyBudgetUrl2x": "/images/templates/form-filling-rooms/features/zh/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "详细了解表单填写房间",
+
+  "HelpCenter": "帮助中心",
+  "HelpCenterDesc": "查看详细的用户指南以实现高效的工作",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "了解详情 ",
+
+  "YouTube": "视频教程",
+  "MasterONLYOFFICEDocSpace": "通过视频指南掌握 ONLYOFFICE 协作空间",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "立即观看",
+
+  "CustomerTestimonial": "客户案例",
+  "HowKinderhausBerlinSharesAndCollaborates": "柏林儿童之家如何使用 ONLYOFFICE 协作空间共享和协作处理敏感文件",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "阅读文章"
+}

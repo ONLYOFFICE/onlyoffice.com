@@ -5,6 +5,8 @@
   "FreeOnlineOfficeForDropbox": "Online office for <0>Dropbox</0>",
   "EditOfficeFilesRightInDropbox": "Edit office files right in Dropbox using the complete feature set of ONLYOFFICE Docs.",
   "GetFreeApp": "Get free App",
+  "HeroImgUrl": "/images/templates/office-for-dropbox/hero/dropbox_header.png",
+  "HeroImgUrl2x": "/images/templates/office-for-dropbox/hero/dropbox_header@2x.png",
 
   "WorkOnOfficeDocumentsStored": "Work on office documents stored in Dropbox",
   "DocumentsTab1Label": "View and edit text documents, spreadsheets, presentations",

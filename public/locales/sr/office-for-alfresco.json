@@ -1,0 +1,56 @@
+{
+  "PageTitle": "Online kancelarijski paket za Alfresco Share | ONLYOFFICE Docs",
+  "PageDescription": "Uređivanje i ko-uređivanje dokumenata unutar Alfresco Share",
+
+  "OnlineOfficeForAlfresco": "Online kancelarija za <0>Alfresco</0>",
+  "EnableCollaborativeDocumentEditing": "Omogućite zajedničko uređivanje dokumenata u Alfresco Share koristeći ONLYOFFICE Docs",
+  "GetItNow": "Dodaj u Zoom",
+  "RequestFreeDemo": "Zatraži besplatnu demo verziju",
+  "HeroImgUrl": "/images/templates/office-for-alfresco/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-alfresco/hero/hero@2x.png",
+
+  "WorkWithOfficeDocuments": "Radite sa Office dokumentima unutar ONLYOFFICE iz Alfresco Share",
+  "DocumentsTab1Label": "Pregledajte, kreirajte i uređujte tekstualne dokumente, tabele, prezentacije i obrasce koji se mogu popunjavati.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-alfresco/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "Izgradite prilagođene šablone i kreirajte dokumenta iz njih.",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-alfresco/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "Konvertujte ne-XML dokument u XML format (DOCX, XLSX ili PPTX). Izvezite/uvezite iz/ u PDF.",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-alfresco/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "Koautorišite dokumenata sa više korisnika u realnom vremenu, ostavljajte komentare i komunicirajte putem ugrađenog ćaskanja.",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-alfresco/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-4@2x.png",
+  "DocumentsTab5Label": "Pogledajte istoriju verzija dokumenta.",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-alfresco/documents/documents-5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-5@2x.png",
+
+  "MarketplaceConnectorTitle": "Dizajniran za besprekornu integraciju sa Alfresco-om",
+  "MarketplaceConnectorDescription": "Preuzmite ONLYOFFICE aplikaciju za Alfresco sada u zvaničnom Alfresco Add-ons direktorijumu.",
+  "GetStarted": "Počni",
+
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "FeaturesFormats": "Podrška za više od <0>50 formata datoteka</0>. Potpuno kompatibilan sa MS Office formatima: DOCX, XLSX, PPTX.",
+  "FeaturesCoEditing": "Ko-uređivanje <0>u realnom vremenu</0> i zaključavanje paragrafa, pregled, istorija verzija, poređenje dokumenata, komentari i pominjanja.",
+  "FeaturesFree": "Besplatne verzije za zajednicu i skalabilne verzije za preduzeća. <0>Besplatan 30-dnevni probni period.</0> Rešenje koje se može hostovati samostalno za potpunu kontrolu nad vašim podacima.",
+  "FeaturesSecurity": "<0>Poboljšana bezbednost.</0> Fleksibilna prava pristupa i JWT. Enkripcija u mirovanju i u tranzitu. Vodeni žig i zaštita lozinkom. Otvoreni izvorni kod.",
+  "FeaturesConfiguration": "<0>Jednostavna konfiguracija.</0> Besprekorna integracija sa konektorom spremnim za upotrebu u administratorskoj konzoli Alfresco i automatizovanim testiranjem.",
+  "FeaturesAIHelper": "Robustan skup alata za uređivanje, formatiranje i stilizovanje. <0>Integrisani AI pomoćnik</0> (ChatGPT ili ZhiPu Copilot).",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Instalirajte <0>ONLYOFFICE Docs</0> na svoj server ili se registrujte za <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Nabavite aplikaciju za integraciju iz direktorijuma <0>Alfresco Add-ons</0>.",
+  "HowToStartStep3": "Konfigurišite aplikaciju za integraciju u Alfresco Administrativnoj Konzoli.",
+  "HowToConnect": "Kako integrisati ONLYOFFICE sa Alfresco Share-om",
+
+  "LearnMoreHeading": "Saznajte više o integraciji ONLYOFFICE Alfresco",
+  "HelpCenter": "Centar za pomoć",
+  "UsefulGuides": "Korisni vodiči za integraciju ONLYOFFICE Alfresco Share.",
+  "VisitOurHelpCenter": "Posetite naš Centar za pomoć",
+  "SuccessStory": "Priča o uspehu",
+  "SuccessStoryDescription": "Atol CD jača online saradnju u Alfresco Digital Workspace integracijom ONLYOFFICE Docs.",
+  "ReadTheFullStory": "Pročitajte celu priču",
+
+  "NeedAnAppToConnect": "Potrebna vam je aplikacija da povežete ONLYOFFICE sa vašom omiljenom veb uslugom? Ili ste je već razvili?"
+}

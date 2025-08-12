@@ -1,0 +1,37 @@
+{
+  "PageTitle": "Jednostavno radite sa kancelarijskim datotekama direktno unutar vaše kutije | ONLYOFFICE",
+  "PageDescription": "Korišćenje integrisanog ONLYOFFICE Docs Cloud-a",
+
+  "FreeOnlineOfficeForBox": "Online kancelarija za Box",
+  "OpenAndEditWithinBox": "Otvorite i uređujte dokumente, tabele, prezentacije i PDF fajlove unutar Box-a koristeći integrisani ONLYOFFICE Docs Cloud.",
+  "GetItNow": "Započnite sada",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Potpuno kompatibilno sa docx, xlsx i pptx",
+
+  "EditAndCoAuthorOfficeDocuments": "Uređivanje i koautorstvo kancelarijskih dokumenata u okviru Box interfejsa",
+  "DocumentsTab1Label": "Otvorite i uredite Office dokumente koji su sačuvani u vašem Box skladištu",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-box/documents/screenshot1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-box/documents/screenshot1@2x.png",
+  "DocumentsTab2Label": "Saradnja na dokumentima sa više korisnika u stvarnom vremenu ili režimu zaključavanja odeljka",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-box/documents/screenshot2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-box/documents/screenshot2@2x.png",
+
+  "MarketplaceConnectorTitle": "Dizajniran za besprekorno integrisanje sa Box-om",
+  "MarketplaceConnectorDescription": "Nabavite aplikaciju ONLYOFFICE za Box sada sa Box App Centra.",
+  "GetStarted": "Započnite",
+
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "FeaturesWorking": "<0>Rad</0> sa kancelarijskim datotekama direktno unutar Box frontend-a.",
+  "FeaturesFormats": "Podrška za više od <0>50 formata datoteka</0>, potpuno kompatibilan sa MS Office formatima: DOCX, XLSX, PPTX.",
+  "FeaturesAIHelper": "Robustan set alatki za uređivanje, formatiranje i stilizovanje.",
+  "FeaturesWorkingCoEditing": "Zaključavanje u realnom vremenu i zaključavanje paragrafa <0>ko-uređivanje</0>, pregled, istorija verzija, poređenje dokumenata, komentari i ćaskanje. Audio i video pozivi.",
+  "FeaturesFreeApp": "<0>Besplatna aplikacija</0> dostupna u Box App Centru. Nije potrebna dodatna konfiguracija.",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Prijavite se na svoj Box nalog.",
+  "HowToStartStep2": "Idite na <0>Box App Center</0>.",
+  "HowToStartStep3": "Dodajte aplikaciju ONLYOFFICE *.",
+  "CheckDetailedInstructions": "Proverite detaljna uputstva u <0>Centru za pomoć</0>.",
+  "TheAppUsesThePreConfiguredTenant": "*Aplikacija koristi prethodno konfigurisani tenant <0>ONLYOFFICE Docs Cloud</0> i ne zahteva dodatnu konfiguraciju.",
+
+  "NeedAnAppToConnect": "Potrebna vam je aplikacija za povezivanje ONLYOFFICE Docs sa vašim omiljenim veb servisom? Ili ste razvili jednu?"
+}
