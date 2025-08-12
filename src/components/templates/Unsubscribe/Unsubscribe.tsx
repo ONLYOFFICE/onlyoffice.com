@@ -153,7 +153,7 @@ const UnsubscribeTemplate = ({ email }: IUnsubscribeTemplate) => {
                     components={[
                       <StyledUnsubscribeBannerBtn
                         onClick={handleUnsubscribe}
-                        data-testid="marketing-unsubscribe-button"
+                        data-testid="unsubscribe-button"
                         key="0"
                       />,
                     ]}
