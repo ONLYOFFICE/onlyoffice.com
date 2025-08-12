@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Користите виртуелне собе за податке за побољшану безбедност и транспарентност датотека",
+  "PageDescription": "Организујте безбедно складиштење и дељење поверљивих пословних информација у ONLYOFFICE DocSpace-у",
+
+  "UseVirtualDataRooms": "Користите <0>виртуелне собе за податке</0> за побољшану безбедност и транспарентност датотека",
+  "OrganizeSecure": "Организујте безбедно складиштење и дељење поверљивих пословних информација у ONLYOFFICE DocSpace-у",
+
+  "IdealForDueDiligence": "Идеално за due diligence",
+  "CompletelyOrganized": "Потпуно организовано",
+  "HighLevelOfDataSecurity": "Висок ниво безбедности података",
+  "AdvancedRoleBased": "Напредно попуњавање образаца засновано на улогама",
+  "CostEffectiveForAnyBudget": "Cost-effective for any budget",
+
+  "CreateFreeAccount": "Креирајте бесплатан налог",
+
+  "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
+
+  "IdealForDueDiligenceDesc": "Користите VDR за due diligence, при спајању, раду на пројекту са другим компанијама или другом заједничком подухвату који захтева приступ дељеним подацима.",
+  "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/ideal.png",
+  "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/ideal@2x.png",
+
+  "CompletelyOrganizedDesc": "Аутоматски индексирајте и пратите сав садржај да бисте водили одличне записе и остали организовани. Генеришите сажети извештај о структури датотека собе.",
+  "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/organized.png",
+  "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/organized@2x.png",
+
+  "HighLevelOfDataSecurityDesc": "Омогућите водене жигове, подесите животни век датотеке, ограничите преузимање и копирање да бисте заштитили своје поверљиве записе.",
+  "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/security.png",
+  "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/security@2x.png",
+
+  "AdvancedRoleBasedText": "Позовите свој тим и доделите улоге које се савршено уклапају у организациону структуру ваше компаније. Пратите напредак обрасца у реалном времену. Лако прегледајте завршене и чекајуће обрасце, финализирајте их и преузмите готове верзије за несметан процес.",
+  "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/advanced.png",
+  "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/advanced@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses, no matter if it's SMB or a big enterprise. Want to get full control over your corporate data? Deploy DocSpace on your private server.",
+  "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget.png",
+  "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Сазнајте више о DocSpace виртуелним собама за податке",
+
+  "HelpCenter": "Центар за помоћ",
+  "HelpCenterDesc": "Погледајте детаљне корисничке водиче за ефикасан рад",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "Сазнајте више",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Овладајте ONLYOFFICE DocSpace-ом помоћу видео водича",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Гледајте сада",
+
+  "CustomerTestimonial": "Искуство корисника",
+  "HowKinderhausBerlinSharesAndCollaborates": "Како Kinderhaus Berlin дели и сарађује на поверљивим датотекама у ONLYOFFICE DocSpace-у",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Прочитајте причу"
+}
