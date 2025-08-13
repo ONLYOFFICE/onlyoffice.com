@@ -61,17 +61,16 @@ const PartnershipRequestForm = ({
   const isEmailValid =
     formData.email.length > 0 && validateEmail(formData.email);
   const isCompanyValid = formData.companyName.length > 0;
-  const isPhoneValid = formData.phone.length > 0;
+  // const isPhoneValid = formData.phone.length > 0;
 
   const checkFormValid = useCallback(() => {
     setIsFormValid(
       isFullNameValid &&
       isEmailValid &&
-      (locale === "zh" ? true : isPhoneValid) &&
       isCompanyValid &&
       isCaptchaValid,
     );
-  }, [isFullNameValid, isEmailValid, isPhoneValid, isCompanyValid, isCaptchaValid, locale]);
+  }, [isFullNameValid, isEmailValid, isCompanyValid, isCaptchaValid]);
 
   useEffect(() => {
     checkFormValid();
@@ -259,12 +258,13 @@ const PartnershipRequestForm = ({
             value={formData.phone}
             label="微信号"
             status={
-              isEmpty.phone ? "error" : formData.phone ? "success" : "default"
+              formData.phone ? "success" : "default"
             }
           />
         ) : (
           <PhoneInput
             ref={phoneInputRef}
+            required={false}
             onChange={(e) => handleInputChange("phone", e.target.value)}
             onBlur={() => {
               setIsEmpty((prev) => ({
@@ -273,7 +273,7 @@ const PartnershipRequestForm = ({
               }));
             }}
             status={
-              isEmpty.phone ? "error" : formData.phone ? "success" : "default"
+              formData.phone ? "success" : "default"
             }
           />
         )}
