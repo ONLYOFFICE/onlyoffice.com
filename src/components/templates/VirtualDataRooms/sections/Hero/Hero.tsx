@@ -1,13 +1,13 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
-import { RoomsHero } from "@src/components/modules/rooms/RoomsHero";
+import { RoomsHeroVideo } from "@src/components/modules/rooms/RoomsHeroVideo";
 import { hero } from "./data/hero";
 
 const Hero = () => {
   const { t } = useTranslation("virtual-data-rooms");
 
   return (
-    <RoomsHero
+    <RoomsHeroVideo
       heading={
         <Trans
           t={t}
