@@ -21,6 +21,7 @@ const Hero = () => {
       }))}
       button={{ ...hero.button, label: t(hero.button.label) }}
       image={{ url: t(hero.image.url), url2x: t(hero.image.url2x) }}
+      videoUrl={hero.videoUrl}
     />
   );
 };
