@@ -35,7 +35,11 @@ const ProjectsMobilePage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "mobile-projects"])),
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "mobile-projects",
+        "DownloadButton",
+      ])),
       locale,
     },
   };
