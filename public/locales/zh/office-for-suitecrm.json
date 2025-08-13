@@ -1,0 +1,32 @@
+{
+  "PageDescription": "使用 ONLYOFFICE 文档，在文档模块中处理办公文档",
+
+  "OnlineOfficeForConnector": "适用于 <0>SuiteCRM</0> 的在线办公套件",
+  "Subheader": "使用 ONLYOFFICE 文档，在文档模块中处理办公文档",
+  "GetStarted": "开始使用",
+  "FullyCompatibleWithDocxXlsxAndPptx": "兼容docx、xlsx、pptx。",
+
+  "MarketplaceConnectorTitle": "专为与 SuiteCRM 无缝集成而设计",
+  "MarketplaceConnectorDescription": "立即从 <0>GitHub</0> 获取用于 SuiteCRM 的 ONLYOFFICE 连接器。",
+  "GetItNow": "立即获取",
+
+  "WhyOO": "为什么选择 ONLYOFFICE 文档云？",
+  "WhySubheader": "ONLYOFFICE 文档云是专业的办公套件，用于处理文本文档、电子表格、演示文稿、表单和 PDF 文件。",
+  "Reason1": "现成的集成应用程序",
+  "Reason2": "在 SuiteCRM 文档模块中共同编辑办公文档",
+  "Reason3": "实时协作，跟踪修改，评论，聊天工具",
+  "Reason4": "带有标签页的<0>直观</0>界面",
+  "Reason5": "多种编辑、格式化和风格化工具",
+  "Reason6": "JWT保护，免受未经授权的访问",
+  "Reason7": "<0>无需安装</0>。快速配置",
+  "Reason8": "可在GitHub上获得开源代码",
+
+  "HowToStart": "使用方法：",
+  "HowToStartStep1": "在自己的服务器上部署 <0>ONLYOFFICE 文档</0>或者创建<1>文档云</1>账户。",
+  "HowToStartStep2": "从 <0>GitHub</0> 获取 ONLYOFFICE 连接器。",
+  "HowToStartStep3": "配置连接器并启用 JWT。",
+
+  "ReadDetailedInstructions": "阅读详细指南请前往<0>帮助中心</0>。",
+
+  "NeedAnAppToConnect": "需要一个应用程序将 ONLYOFFICE 连接到您偏好的 Web 服务？ 或者您已经开发了自己的应用？"
+}
