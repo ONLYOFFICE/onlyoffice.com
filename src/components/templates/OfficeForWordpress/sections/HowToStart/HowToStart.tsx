@@ -60,7 +60,7 @@ const HowToStart = ({ activeTab }: IHowToStart) => {
             {activeIndex === 0 ? (
               <Trans
                 t={t}
-                i18nKey="ReadDetailedInstructionsDocs"
+                i18nKey="ReadDetailedInstructionsDocSpace"
                 components={[
                   <Link
                     key={0}
@@ -76,7 +76,7 @@ const HowToStart = ({ activeTab }: IHowToStart) => {
             ) : (
               <Trans
                 t={t}
-                i18nKey="ReadDetailedInstructionsDocSpace"
+                i18nKey="ReadDetailedInstructionsDocs"
                 components={[
                   <Link
                     key={0}
