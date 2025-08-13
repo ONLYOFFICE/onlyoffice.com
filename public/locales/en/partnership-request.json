@@ -1,12 +1,20 @@
 {
   "PageTitle": "Partnership request | ONLYOFFICE",
   "PageDescription": "Submit request to become an ONLYOFFICE partner.",
-	
+
   "BecomeAnOnlyofficeOfficialPartner": "Become an ONLYOFFICE official partner",
   "FillInTheDetailsBelow": "Fill in the details below, and we will be in touch",
   "ContactInfo": "Contact info",
   "PartneshipInfo": "Partneship info",
   "": "",
+
+  "FirstName": "First name",
+  "FirstNameIsEmpty": "First name is empty",
+  "FirstNameIsIncorrect": "First name is incorrect",
+  "LastName": "Last name",
+  "Surname": "Surname",
+  "LastNameIsEmpty": "Last name is empty",
+  "LastNameIsIncorrect": "Last name is incorrect",
 
   "GetItNowText": "By clicking Submit request you understand and agree to our <0>Privacy statement</0>."
 }

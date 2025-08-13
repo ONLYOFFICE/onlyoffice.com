@@ -33,7 +33,8 @@ const PartnershipRequestForm = ({
   byClickingText,
   onSubmitRequest,
 }: IDownloadModal) => {
-  const { t } = useTranslation("DownloadModal");
+  const { t: t2 } = useTranslation("DownloadModal");
+  const { t } = useTranslation("partnership-request");
   const from = getFromParam();
 
   const selectedCountry = useIPGeolocationStore(
@@ -43,7 +44,8 @@ const PartnershipRequestForm = ({
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
 
   const [isEmpty, setIsEmpty] = useState({
-    fullName: false,
+    firstName: false,
+    lastName: false,
     email: false,
     phone: false,
     companyName: false,
@@ -56,8 +58,10 @@ const PartnershipRequestForm = ({
   const [token, setToken] = useState("");
   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
 
-  const isFullNameValid =
-    formData.fullName.length > 0 && validateFullName(formData.fullName);
+  const isFirstNameValid =
+    formData.firstName.length > 0 && validateFullName(formData.firstName);
+  const isLastNameValid =
+    formData.lastName.length > 0 && validateFullName(formData.lastName);
   const isEmailValid =
     formData.email.length > 0 && validateEmail(formData.email);
   const isCompanyValid = formData.companyName.length > 0;
@@ -65,12 +69,13 @@ const PartnershipRequestForm = ({
 
   const checkFormValid = useCallback(() => {
     setIsFormValid(
-      isFullNameValid &&
+      isFirstNameValid &&
+      isLastNameValid &&
       isEmailValid &&
       isCompanyValid &&
       isCaptchaValid,
     );
-  }, [isFullNameValid, isEmailValid, isCompanyValid, isCaptchaValid]);
+  }, [isFirstNameValid, isLastNameValid, isEmailValid, isCompanyValid, isCaptchaValid]);
 
   useEffect(() => {
     checkFormValid();
@@ -187,29 +192,61 @@ const PartnershipRequestForm = ({
           label={t("ContactInfo")}>
         </StyledPRFHeading>
         <Input
-          onChange={(e) => handleInputChange("fullName", e.target.value)}
+          id="partnerFirstName"
+          onChange={(e) => handleInputChange("firstName", e.target.value)}
           onBlur={() => {
             setIsEmpty((prev) => ({
               ...prev,
-              fullName: formData.fullName.length === 0,
+              firstName: formData.firstName.length === 0,
             }));
           }}
-          value={formData.fullName}
-          label={t("FullName")}
-          placeholder={t("NameSurname")}
+          value={formData.firstName}
+          label={t("FirstName")}
+          placeholder={t("FirstName")}
           caption={
-            formData.fullName.length === 0
-              ? t("FullNameIsEmpty")
-              : !validateFullName(formData.fullName)
-                ? t("FullNameIsIncorrect")
+            formData.firstName.length === 0
+              ? t("FirstNameIsEmpty")
+              : !validateFullName(formData.firstName)
+                ? t("FirstNameIsIncorrect")
                 : ""
           }
           required
           status={
-            isEmpty.fullName
+            isEmpty.firstName
               ? "error"
-              : formData.fullName.length > 0
-                ? validateFullName(formData.fullName)
+              : formData.firstName.length > 0
+                ? validateFullName(formData.firstName)
+                  ? "success"
+                  : "error"
+                : "default"
+          }
+        />
+
+        <Input
+          id="partnerLastName"
+          onChange={(e) => handleInputChange("lastName", e.target.value)}
+          onBlur={() => {
+            setIsEmpty((prev) => ({
+              ...prev,
+              lastName: formData.lastName.length === 0,
+            }));
+          }}
+          value={formData.lastName}
+          label={t("LastName")}
+          placeholder={t("Surname")}
+          caption={
+            formData.lastName.length === 0
+              ? t("LastNameIsEmpty")
+              : !validateFullName(formData.lastName)
+                ? t("LastNameIsIncorrect")
+                : ""
+          }
+          required
+          status={
+            isEmpty.lastName
+              ? "error"
+              : formData.lastName.length > 0
+                ? validateFullName(formData.lastName)
                   ? "success"
                   : "error"
                 : "default"
@@ -229,9 +266,9 @@ const PartnershipRequestForm = ({
           placeholder="name@domain.com"
           caption={
             formData.email.length === 0
-              ? t("EmailIsEmpty")
+              ? t2("EmailIsEmpty")
               : !validateEmail(formData.email)
-                ? t("EmailIsIncorrect")
+                ? t2("EmailIsIncorrect")
                 : ""
           }
           required
@@ -287,8 +324,8 @@ const PartnershipRequestForm = ({
             }));
           }}
           value={formData.companyName}
-          label={t("CompanyName")}
-          caption={t("CompanyNameIsEmpty")}
+          label={t2("CompanyName")}
+          caption={t2("CompanyNameIsEmpty")}
           required
           status={
             isEmpty.companyName
@@ -321,9 +358,9 @@ const PartnershipRequestForm = ({
             checkFormValid();
           }}
           value={formData.website}
-          label={t("CompanyWebsite")}
+          label={t2("CompanyWebsite")}
           caption={
-            !validateWebsite(formData.website) ? t("WebsiteIsIncorrect") : ""
+            !validateWebsite(formData.website) ? t2("WebsiteIsIncorrect") : ""
           }
           status={
             formData.website.length > 0
@@ -348,7 +385,7 @@ const PartnershipRequestForm = ({
             }));
           }}
           value={formData.comment}
-          label={t("Comment")}
+          label={t2("Comment")}
           rows={3}
           fullWidth
           status={formData.comment ? "success" : "default"}
@@ -370,7 +407,7 @@ const PartnershipRequestForm = ({
         <LoaderButton
           onClick={onSubmit}
           status={formStatus}
-          label={t("GetItNow")}
+          label={t2("GetItNow")}
           disabled={!isFormValid}
         />
       </StyledDownloadModalWrapper>
@@ -379,7 +416,7 @@ const PartnershipRequestForm = ({
         <StyledDownloadModalText
           textAlign="center"
           size={3}
-          label={t("successfullyRequestText")}
+          label={t2("successfullyRequestText")}
         />
       )}
       {formStatus === "error" && (
@@ -387,7 +424,7 @@ const PartnershipRequestForm = ({
           textAlign="center"
           size={3}
           color="#cb0000"
-          label={t("errorRequestText")}
+          label={t2("errorRequestText")}
         />
       )}
     </StyledPRForm>

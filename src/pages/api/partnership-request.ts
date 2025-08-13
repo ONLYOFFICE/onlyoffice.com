@@ -2,8 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { parse } from "cookie";
 import { addLandingRequest } from "@src/lib/requests/addLandingRequest";
 import { emailTransporter } from "@src/config/email/transporter";
-import { DownloadDocsEnterpriseEmail } from "@src/components/emails/DownloadDocsEnterpriseEmail";
-import { DownloadDocSpaceEnterpriseEmail } from "@src/components/emails/DownloadDocSpaceEnterpriseEmail";
+import { PartnershipRequestEmail } from "@src/components/emails/PartnershipRequestEmail";
 
 export default async function handler(
   req: NextApiRequest,
@@ -15,9 +14,9 @@ export default async function handler(
 
   const {
     locale,
-    type,
     referer,
-    fullName,
+    firstName,
+    lastName,
     email,
     phone,
     companyName,
@@ -35,7 +34,7 @@ export default async function handler(
 
     if (referer) {
       const addLandingResult = await addLandingRequest({
-        first_name: fullName,
+        first_name: firstName,
         last_name: "",
         email,
         phone,
@@ -67,51 +66,29 @@ export default async function handler(
     }
 
     const transporter = emailTransporter();
-    console.log('~ ~ ~ Sending email to:', process.env.SALES_EMAIL);
-    console.log('~ ~ ~ type:', type);
+    console.log('~ ~ ~ Sending email to:', process.env.PARTNERSHIP_REQUEST_EMAIL);
     await transporter.sendMail({
       from,
-      to: [process.env.SALES_EMAIL!],
-      subject: `${errorMessages.length ? "[Error] " : ""}${companyName} partn-req - ${
-        type === "docsenterprisedownloadrequest"
-          ? "Docs Enterprise Download Request"
-          : type === "docspaceenterprisedownloadrequest"
-            ? "DocSpace Enterprise Download Request"
-            : ""
-      } ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
-      html:
-        type === "docsenterprisedownloadrequest"
-          ? DownloadDocsEnterpriseEmail({
-              firstName: fullName,
-              lastName: "",
-              email,
-              phone,
-              companyName,
-              website,
-              comment,
-              buttonId,
-              position: "",
-              operatingSystem: "",
-              communicationLanguage: "",
-              companySize: "",
-              firstHeard: "",
-              language: locale,
-              platform: "",
-              errorText: errorMessages.join("<br/><br/>"),
-            })
-          : type === "docspaceenterprisedownloadrequest"
-            ? DownloadDocSpaceEnterpriseEmail({
-                fullName,
-                email,
-                phone,
-                companyName,
-                website,
-                comment,
-                buttonId,
-                language: locale,
-                errorText: errorMessages.join("<br/><br/>"),
-              })
-            : "",
+      to: [process.env.PARTNERSHIP_REQUEST_EMAIL!],
+      subject: `${errorMessages.length ? "[Error] " : ""}${companyName} Partner Request ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
+      html: PartnershipRequestEmail({
+        firstName: firstName,
+        lastName: lastName,
+        email,
+        phone,
+        companyName,
+        website,
+        comment,
+        buttonId,
+        position: "",
+        operatingSystem: "",
+        communicationLanguage: "",
+        companySize: "",
+        firstHeard: "",
+        language: locale,
+        platform: "",
+        errorText: errorMessages.join("<br/><br/>"),
+      })
     });
 
     res.status(200).json({ status: "success", message: "success" });

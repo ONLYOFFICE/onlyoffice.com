@@ -3,6 +3,7 @@ import { useTranslation, Trans } from "next-i18next";
 import {
   StyledHeroDescription,
   StyledHeroHeading,
+  StyledHeroText,
 } from "./Hero.styled";
 import { IHero } from "./Hero.types";
 import {
@@ -12,14 +13,14 @@ import {
 } from "../PartnershipRequestForm";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
 const Hero = ({ locale }: IHero) => {
   const { t } = useTranslation("partnership-request");
 
   const initialFormData: IDownloadModalData = {
-    fullName: "",
+    firstName: "",
+    lastName: "",
     email: "",
     phone: "",
     companyName: "",
@@ -42,8 +43,8 @@ const Hero = ({ locale }: IHero) => {
       body: JSON.stringify({
         locale,
         referer: document.referrer,
-        type: "docsenterprisedownloadrequest",
-        fullName: formData.fullName,
+        firstName: formData.firstName,
+        lastName: formData.lastName,
         email: formData.email,
         phone: locale === "zh" && !formData.phone ? "+86" : formData.phone,
         companyName: formData.companyName,
@@ -58,7 +59,7 @@ const Hero = ({ locale }: IHero) => {
   };
 
   return (
-    <Section>
+    <Section desktopSpacing={["80px", "112px"]}>
     <Container>
       <StyledHeroDescription>
         <StyledHeroHeading
@@ -66,7 +67,7 @@ const Hero = ({ locale }: IHero) => {
           size={3}
           label={t("BecomeAnOnlyofficeOfficialPartner")}
         />
-        <Text label={t("FillInTheDetailsBelow")}></Text>
+        <StyledHeroText label={t("FillInTheDetailsBelow")}></StyledHeroText>
       </StyledHeroDescription>
 
       <PartnershipRequestForm
