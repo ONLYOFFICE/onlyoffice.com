@@ -8,11 +8,13 @@ import { HowToStart } from "./sections/HowToStart";
 import { LearnMore } from "./sections/LearnMore";
 import { ConnectApp } from "./sections/ConnectApp";
 import { OtherConnectors } from "@src/components/modules/connectors/OtherConnectors";
+import { Materials } from "./sections/Materials";
 
 const OfficeForMoodleTemplate = () => {
   return (
     <>
       <Hero />
+      <Materials />
       <Documents />
       <Quote />
       <Assignments />

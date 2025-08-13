@@ -1,10 +1,14 @@
 import styled, { css } from "styled-components";
 import { ISolutionCard } from "./SolutionCard.types";
 import { device } from "@src/utils/device";
+import { Heading } from "@src/components/ui/Heading";
+import { Link } from "@src/components/ui/Link";
 
 const StyledSolutionCard = styled.div<{
   $large?: ISolutionCard["large"];
 }>`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: ${(props) => (props.$large ? "544px" : "352px")};
   text-align: center;
@@ -75,7 +79,7 @@ const StyledSolutionCardImg = styled.div<{
           }
         `
       : css`
-          padding-bottom: 80.267%;
+          padding-bottom: 82.898%;
           max-width: 304px;
 
           @media ${device.tabletS} {
@@ -89,7 +93,9 @@ const StyledSolutionCardImg = styled.div<{
 const StyledSolutionCardBody = styled.div<{
   $customLinks?: ISolutionCard["customLinks"];
 }>`
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   row-gap: 16px;
   padding: 32px 16px;
 
@@ -104,20 +110,25 @@ const StyledSolutionCardBody = styled.div<{
   }
 `;
 
-const StyledSolutionCardText = styled.div`
-  font-size: 16px;
-  line-height: 24px;
+const StyledSolutionCardHeading = styled(Heading)`
+  font-size: 22px;
+  line-height: 30px;
 
   @media ${device.mobile} {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 18px;
+    line-height: 24px;
   }
+`;
+
+const StyledSolutionCardLink = styled(Link)`
+  margin-top: auto;
 `;
 
 const StyledSolutionCardCustomLinks = styled.div`
   display: flex;
   justify-content: center;
   gap: 16px;
+  margin-top: auto;
 
   @media ${device.mobile} {
     flex-direction: column;
@@ -130,6 +141,7 @@ export {
   StyledSolutionCardImgWrapper,
   StyledSolutionCardImg,
   StyledSolutionCardBody,
-  StyledSolutionCardText,
+  StyledSolutionCardHeading,
+  StyledSolutionCardLink,
   StyledSolutionCardCustomLinks,
 };

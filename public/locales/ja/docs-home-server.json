@@ -1,0 +1,31 @@
+{
+  "PageTitle": "ONLYOFFICE Docs Home Server の価格 | ONLYOFFICE",
+  "PageDescription": "ホーム用の ONLYOFFICE Docs Home Server を購入する",
+
+  "BuyOODocsHomeServer": "ONLYOFFICE <0>Docs Home Server</0> を購入",
+  "DocsHomeServer": "Docs Home Server",
+  "OnlineEditors": "テキスト文書、スプレッドシート、プレゼンテーション、フォーム、PDF用のオンラインエディター",
+  "MobileWebEditors": "モバイルウェブエディター",
+  "ReadyToUseConnectors": "すぐに使えるコネクター",
+  "DesktopAndMobileApps": "デスクトップおよびモバイルアプリ",
+  "EnhancedSecurityFeatures": "強化されたセキュリティ機能",
+  "AllMinorUpdatesAndMajorUpgrades": "すべてのマイナーアップデートとメジャーアップグレード",
+  "TryItFree": "無料で試す",
+
+  "NumberOfUsers": "ユーザー数",
+  "NumberOfUsersTooltip": "指定されたユーザー数は、ドキュメント、スプレッドシート、プレゼンテーションの編集にアクセスできる人数を定義します。同時に編集できるドキュメント数に制限はありません。他のユーザーは閲覧用にのみドキュメントを開くことができます。",
+  "LicenseDuration": "ライセンス期間",
+  "Lifetime": "永久",
+  "LifetimeTooltip": "購入時に利用可能な ONLYOFFICE Docs Home Server のすべての機能を無期限で使用できますが、購入日から1年後は無料のアップデートを受けることができなくなります。",
+  "Updates": "アップデート",
+  "1Year": "1年",
+  "Total": "合計：",
+  "BuyNow": "今すぐ購入",
+
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesLabel": "'永久ライセンス'と'1年間のアップデート'とは何ですか？",
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesText": "購入時に利用可能な ONLYOFFICE Docs Home Server のすべての機能を無期限で使用できますが、購入日から1年後は無料のアップデートを受けることができなくなります。後で ONLYOFFICE Docs Home Server のバージョンをアップデートしたい場合は、新しいライセンスキーを購入する必要があります。",
+  "WhatDoesTheNumberOfUsersLabel": "'ユーザー数'とは何ですか？",
+  "WhatDoesTheNumberOfUsersText": "指定されたユーザー数は、ドキュメント、スプレッドシート、プレゼンテーションの編集にアクセスできる人数を定義します。同時に編集できるドキュメント数に制限はありません。<br/>他のユーザーは閲覧用にのみドキュメントを開くことができます。<br/><br/>注意：ONLYOFFICE は30日間ユーザーIDを保持します。その後、必要に応じてユーザーを新しいユーザーに置き換えることができます。外部ユーザーとドキュメントを共有する場合、各ユーザーは30日間の名前付きユーザーIDを受け取ります。",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "他の質問の回答はどこで見つけられますか？",
+  "WhereCanIFindAnswersToOtherQuestionsText": "<0>FAQセンター</0>をご覧いただくか、<1>お問い合わせ</1>ください。すぐにサポートいたします。"
+}

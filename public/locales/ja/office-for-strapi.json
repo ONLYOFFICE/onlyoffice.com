@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Strapi内での文書閲覧・編集 | ONLYOFFICE Docs",
+  "PageDescription": "DOCX、XLSX、PPTXファイルを編集し、Strapiでコンテンツを共同編集できます。",
+
+  "OnlineOfficeForConnector": "<0>Strapi</0>のオンラインオフィス",
+  "Subheader": "ONLYOFFICE Docsを利用してStrapi メディアライブラリーに追加されたオフィスファイルの編集・共著可能です。",
+  "GetStarted": "スタートアップ",
+  "FullyCompatibleWithDocxXlsxAndPptx": "docx, xlsx, pptxに完全対応",
+
+  "MarketplaceConnectorTitle": "Strapi とシームレスに連携するよう設計されています",
+  "MarketplaceConnectorDescription": "Strapi 用の ONLYOFFICE コネクターを<0>Strapi Market</0> または <1>nmp directory</1> から入手いただけます。",
+  "GetItNow": "今すぐ入手",
+
+  "WhyOO": "ONLYOFFICE Docsを選択する理由",
+  "WhySubheader": "ONLYOFFICE Docsは、テキスト ドキュメント、スプレッドシート、プレゼンテーション、およびフォームで作業するためのセルフホストのオフィススイートです。",
+  "Reason1": "すぐに使える統合プラグイン",
+  "Reason2": "<0>Strapi Market</0>からの簡単にインストール＆設定",
+  "Reason3": "タブによる<0>直感的なインターフェイス</0>",
+  "Reason4": "<0>複数</0>の編集、フォーマット、スタイリングツール",
+  "Reason5": "<0>リアルタイムのコラボレーション</0>、変更履歴、コメント、チャット",
+  "Reason6": "<0>無料のコミュニティ</0>版と<0>拡張性の高いエンタープライズ</0>版",
+  "Reason7": "不正アクセスからの<0>JWT</0>保護",
+  "Reason8": "<0>オープンソースコード</0>はGitHubで公開",
+
+  "HowToStart": "利用方法：",
+  "HowToStartStep1": "ご自身のサーバーに<0>ONLYOFFICE Docs</0>を展開するか、<1>Docs Cloud</1>アカウントを作成します。",
+  "HowToStartStep2": "<0>Strapi Market</0>または <1>npmディレクトリ</1>からONLYOFFICEコネクタを取得します。",
+  "HowToStartStep3": "コネクタを設定し、JWTを有効にします。",
+
+  "ReadDetailedInstructions": "<0>ヘルプセンター</0>で詳細な手順をご覧ください。",
+
+  "NeedAnAppToConnect": "お好みのウェブ サービスに ONLYOFFICE を接続するアプリが必要ですか？  アプリを開発しましたか？"
+}

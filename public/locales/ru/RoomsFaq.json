@@ -1,0 +1,9 @@
+{
+  "GetAnswersToTheMostPopularQuestions": "Часто задаваемые вопросы",
+  "HowMuchIsDocSpacePerMonth": "Какова стоимость DocSpace в месяц?",
+  "ONLYOFFICEDocSpacePrice": "Стоимость ONLYOFFICE DocSpace - от €20 за каждого администратора в месяц. Узнать больше о <0>ценах и тарифных планах</0> DocSpace.",
+  "IsThereASelfHostedVersion": "Существует ли версия ONLYOFFICE DocSpace для размещения на собственном сервере?",
+  "SelfHostedVersion": "Да, вы можете скачать его <0>здесь</0>.",
+  "WhatIsTheTechnologyStack": "Каков комплекс технологий ONLYOFFICE DocSpace?",
+  "TheTechnologyStack": "Серверная часть: С# 9.0, .NET 5.0/.NET Core/ASP.NET Core/MySQL 8.0/Kafka/ElasticSearch <br /> Клиентская часть: ES6, CSS/SASS, React, Mobx, Styled-Components, i18next, Webpack 4/5"
+}

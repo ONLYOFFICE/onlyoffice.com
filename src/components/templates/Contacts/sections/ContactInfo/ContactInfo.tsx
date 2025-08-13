@@ -22,15 +22,16 @@ const getSortedItems = (locale?: string) => {
     langKey = "zh";
   } else if (locale === "en") {
     langKey = "default";
+  } else if (locale === "sr") {
+    langKey = "sr";
   } else {
     langKey = "eu";
   }
 
   const order = officeOrderByLang[langKey];
-  const map = Object.fromEntries(items.map(item => [item.id, item]));
-  return order.map(id => map[id]).filter(Boolean);
+  const map = Object.fromEntries(items.map((item) => [item.id, item]));
+  return order.map((id) => map[id]).filter(Boolean);
 };
-
 
 const ContactInfo = () => {
   const { t } = useTranslation("contacts");

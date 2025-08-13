@@ -1,19 +1,52 @@
 {
+  "PageTitle": "适用于Liferay的协作文档编辑功能",
+  "PageDescription": "在Liferay中编辑和共同编辑Office文档",
+
+  "OnlineOfficeForConnector": "适用于 Liferay 的在线办公套件",
+  "Subheader": "使用 ONLYOFFICE 文档在 Liferay 中处理各种办公文档",
   "HeroImgUrl": "/images/templates/office-for-liferay/hero/zh/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-liferay/hero/zh/hero@2x.png",
 
+  "WorkWithinConnector": "在 Liferay 中编辑和协同创作办公文档",
+  "DocumentsTab1Label": "在文档和媒体库板块查看和编辑办公文件",
   "DocumentsTab1ImgUrl": "/images/templates/office-for-liferay/documents/zh/screen1.png",
   "DocumentsTab1ImgUrl2x": "/images/templates/office-for-liferay/documents/zh/screen1@2x.png",
-
+  "DocumentsTab2Label": "创建新的文本文档、电子表格和演示文稿",
   "DocumentsTab2ImgUrl": "/images/templates/office-for-liferay/documents/zh/screen2.png",
   "DocumentsTab2ImgUrl2x": "/images/templates/office-for-liferay/documents/zh/screen2@2x.png",
-
+  "DocumentsTab3Label": "与多个用户实时协作处理文档，并将更改保存回 Liferay",
   "DocumentsTab3ImgUrl": "/images/templates/office-for-liferay/documents/zh/screen3.png",
   "DocumentsTab3ImgUrl2x": "/images/templates/office-for-liferay/documents/zh/screen3@2x.png",
-
+  "DocumentsTab4Label": "打开、编辑和协作处理 PDF 文件",
   "DocumentsTab4ImgUrl": "/images/templates/office-for-liferay/documents/zh/screen4.png",
   "DocumentsTab4ImgUrl2x": "/images/templates/office-for-liferay/documents/zh/screen4@2x.png",
-
+  "DocumentsTab5Label": "创建可填写的 PDF 表单并在线填写",
   "DocumentsTab5ImgUrl": "/images/templates/office-for-liferay/documents/zh/screen5.png",
-  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-liferay/documents/zh/screen5@2x.png"
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-liferay/documents/zh/screen5@2x.png",
+  "GetStarted": "立即开始",
+  "RequestFreeDemo": "申请免费演示",
+
+  "FreeAppsHeading": "使用<0>免费的桌面应</0>用程序访问和编辑存储在 Liferay 中的文档",
+  "FreeAppsDesktopText": "使用适用于 Windows、Linux 或 macOS 的 <0>ONLYOFFICE 桌面编辑器</0>，在桌面环境中编辑和协作处理 Liferay 文件",
+  "GetFreeDesktopApps": "下载免费桌面应用",
+
+  "MarketplaceConnectorTitle": "专为与 Liferay 无缝集成而设计",
+  "MarketplaceConnectorDescription": "立即从 Liferay应用市场获取用于 Liferay 的 ONLYOFFICE 应用程序。",
+
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "Reason1": "支持 <0>50 多种文件格式</0>，兼容微软Office 格式：DOCX、XLSX、PPTX。",
+  "Reason2": "具有强大的编辑、格式化和样式工具，集成的 <0>AI 助手</0>。",
+  "Reason3": "支持实时和段落锁定<0>共同编辑</0>模式、审阅、版本历史记录、文档比较、批注和聊天等功能，以及音频和视频通话。",
+  "Reason4": "<0>高度安全性</0>，可设置灵活的访问权限、JWT、水印、密码保护和开源代码。",
+  "Reason5": "<0>轻松集成和配置</0>，提供服务器和云版本选项。",
+  "Reason6": "提供云端和自托管解决方案，确保数据完全可控。还有可扩展的企业版本，<0>免费试用30天</0>。",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1": "在您的服务器上部署 <0>ONLYOFFICE 文档</0>或注册<1>文档云</1>帐户。",
+  "HowToStartStep2": "从 <0>Liferay 应用市场</0> 获取 ONLYOFFICE 连接器。",
+  "HowToStartStep3": "配置连接器并启用 JWT 认证。",
+
+  "ReadDetailedInstructions": "在<0>帮助中心</0>查看详细说明。",
+
+  "NeedAnAppToConnect": "想要将 ONLYOFFICE 连接至您喜爱的网络服务？需要某个连接 app 或者你们已经开发出来了？"
 }

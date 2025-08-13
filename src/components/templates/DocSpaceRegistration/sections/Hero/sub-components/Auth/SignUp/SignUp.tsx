@@ -32,7 +32,9 @@ import { awsRegions } from "../../../config/regions";
 const currentRegions =
   process.env.NEXT_PUBLIC_TESTING_ON === "true"
     ? awsRegions.testRegions
-    : awsRegions.productionRegions;
+    : process.env.NEXT_PUBLIC_TESTING_ON === "false"
+      ? awsRegions.productionRegions
+      : [];
 const options = currentRegions.map((region) => ({
   key: region.key,
   label: region.info,
@@ -221,7 +223,7 @@ const SignUp = ({
           });
           const generateKeyData = await generateKeyRes.json();
           setCreateNewAccountQuery(
-            `epkey=${generateKeyData.data.emailKey}&eskey=${generateKeyData.data.linkKey}&transport=${data}&awsRegion=${selected[0].value}`,
+            `epkey=${generateKeyData.data.emailKey}1&eskey=${generateKeyData.data.linkKey}&transport=${data}&awsRegion=${selected[0].value}`,
           );
           setExistTenants(findByEmailData.data);
         } else {
@@ -273,6 +275,21 @@ const SignUp = ({
     IPGeolocationInfo.regionDbEntity?.regionDbKey,
     setIPGeolocationInfo,
   ]);
+
+  useEffect(() => {
+    const savedEmail = localStorage.getItem("email");
+
+    if (savedEmail) {
+      setFormData((prev) => ({
+        ...prev,
+        email: savedEmail,
+      }));
+
+      if (validateEmail(savedEmail)) {
+        setIsFormValid(true);
+      }
+    }
+  }, []);
 
   return (
     <>

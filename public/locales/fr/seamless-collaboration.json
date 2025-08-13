@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Collaborez efficacement sur tous les types de documents bureautiques | ONLYOFFICE",
+  "PageDescription": "Partagez, coéditez et communiquez en temps réel pour accélérer le travail",
+
+  "Header": "Collaborez <0>efficacement</0> sur tous les types de documents bureautiques",
+  "SubHeader": "Partagez, coéditez et communiquez en temps réel pour accélérer le travail",
+  "HeroImgUrl": "/images/templates/seamless-collaboration/hero/fr/sc-header.png",
+  "HeroImgUrl2x": "/images/templates/seamless-collaboration/hero/fr/sc-header@2x.png",
+
+  "SwitcherTitle1": "Partagez",
+  "SwitcherTitle2": "Coéditez",
+  "SwitcherTitle3": "Commentez",
+  "SwitcherTitle4": "Communiquez",
+  "SwitcherTitle5": "Suivez les modifications",
+  "SwitcherTitle6": "Comparez et combinez",
+  "SwitcherTitle7": "Gérez les versions",
+
+  "Feature1Title": "Partagez des documents avec des droits d'accès flexibles",
+  "Feature1Desc": "Partagez des documents texte, des feuilles de calcul, des présentations et des fichiers PDF pour les visualiser ou les modifier, ce qui permet de les commenter ou de les réviser. Créez des formulaires prêts à être remplis et laissez les autres utilisateurs les remplir. Autorisez le filtrage personnalisé pour permettre aux collaborateurs de filtrer les données de manière indépendante. <2>Partagez des liens vers la plage sélectionnée afin que les autres collaborateurs puissent trouver rapidement les données nécessaires, même dans des feuilles de calcul volumineuses. </2>Restreignez les options de copie, de téléchargement et d'impression. Le partage public est également disponible.",
+  "Feature1ImgUrl": "/images/templates/seamless-collaboration/features/fr/share-docs-providing-flexible-permissions.png",
+  "Feature1ImgUrl2x": "/images/templates/seamless-collaboration/features/fr/share-docs-providing-flexible-permissions@2x.png",
+
+  "Feature2Title": "Collaborez sans stress",
+  "Feature2Desc": "Collaborez sur des documents en ligne en temps réel. Utilisez le mode Rapide pour afficher toutes les modifications immédiatement après la saisie. Activez le mode Strict pour verrouiller le paragraphe que vous modifiez et travaillez dessus en privé, sans interruption.",
+  "Feature2ImgUrl": "/images/templates/seamless-collaboration/features/fr/co-edit-without-stress.png",
+  "Feature2ImgUrl2x": "/images/templates/seamless-collaboration/features/fr/co-edit-without-stress@2x.png",
+
+  "Feature3Title": "Commentez et mentionnez",
+  "Feature3Desc": "Laissez des commentaires pour discuter des questions et des problèmes. Mentionnez les utilisateurs dans les commentaires pour les inviter à collaborer et partagez instantanément le fichier avec eux. Gérez les commentaires, triez-les par auteur ou par date.",
+  "Feature3ImgUrl": "/images/templates/seamless-collaboration/features/fr/comment-mention.png",
+  "Feature3ImgUrl2x": "/images/templates/seamless-collaboration/features/fr/comment-mention@2x.png",
+
+  "Feature4Title": "Communiquez",
+  "Feature4Desc": "Discutez avec des collaborateurs directement dans vos documents. Activez les plugins Jitsi ou Rainbow pour passer des appels audio et organiser des réunions vidéo.",
+  "Feature4ImgUrl": "/images/templates/seamless-collaboration/features/fr/communicate.png",
+  "Feature4ImgUrl2x": "/images/templates/seamless-collaboration/features/fr/communicate@2x.png",
+
+  "Feature5Title": "Suivez les modifications",
+  "Feature5Desc": "Activez le suivi des modifications pour signaler vos modifications et examiner les changements apportés par d'autres utilisateurs. Acceptez ou rejetez les modifications une par une ou toutes à la fois. Choisissez un moyen d'afficher les modifications que vous avez apportées.",
+  "Feature5ImgUrl": "/images/templates/seamless-collaboration/features/fr/track-changes.png",
+  "Feature5ImgUrl2x": "/images/templates/seamless-collaboration/features/fr/track-changes@2x.png",
+
+  "Feature6Title": "Comparez et combinez",
+  "Feature6Desc": "Comparez et trouvez rapidement les différences entre deux documents. Naviguez entre les modifications, acceptez-les ou rejetez-les. Combinez deux documents ensemble.",
+  "Feature6ImgUrl": "/images/templates/seamless-collaboration/features/fr/compare-combine.png",
+  "Feature6ImgUrl2x": "/images/templates/seamless-collaboration/features/fr/compare-combine@2x.png",
+
+  "Feature7Title": "Gérez les versions",
+  "Feature7Desc": "Accédez à l'historique des versions de votre document, vérifiez qui a créé chaque version et quand, quelles modifications ont été apportées. Affichez et récupérez les versions précédentes si nécessaire, y compris le texte supprimé.",
+  "Feature7ImgUrl": "/images/templates/seamless-collaboration/features/fr/manage-versions.png",
+  "Feature7ImgUrl2x": "/images/templates/seamless-collaboration/features/fr/manage-versions@2x.png"
+}

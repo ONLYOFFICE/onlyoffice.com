@@ -4,3 +4,8 @@ export type {
   IQuoteModalOnSubmitRequest,
   IQuoteModal,
 } from "./QuoteModal.types";
+export type {
+  IQuoteModalApiRequest,
+  IQuoteModalPipedriveRequest,
+  IQuoteModalSendEmailRequest,
+} from "./QuoteModal";

@@ -20,7 +20,7 @@ export default async function handler(
   res: NextApiResponse,
 ) {
   if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method Not Allowed"})
+    return res.status(405).json({ message: "Method Not Allowed" });
   }
 
   const {
@@ -50,16 +50,17 @@ export default async function handler(
           course,
           message,
           langCode: languageCode,
-        }
+        };
 
-        await db.query("INSERT INTO training_courses_request SET ?", [
-          addTrainingCourses,
-        ]);
+        await db.teamlabsite.query(
+          "INSERT INTO training_courses_request SET ?",
+          [addTrainingCourses],
+        );
 
         return {
           status: "success",
           message: "trainingCoursesRequestSuccessful",
-        }
+        };
       } catch (error: unknown) {
         console.error(
           "Add TrainingCourses api returns errors:",
@@ -68,16 +69,17 @@ export default async function handler(
 
         return {
           status: "error",
-          message: error instanceof Error ? error.message : "Unknown error occurred",
-        }
+          message:
+            error instanceof Error ? error.message : "Unknown error occurred",
+        };
       }
-    }
+    };
 
     const addTrainingCoursesResult = await addTrainingCoursesRequest();
     if (addTrainingCoursesResult.status === "error") {
       errorMessages.push(
         `trainingCoursesRequest: ${addTrainingCoursesResult.message}`,
-      )
+      );
     }
 
     const transporter = emailTransporter();
@@ -95,18 +97,18 @@ export default async function handler(
         course,
         message,
         languageCode,
-      })
-    })
+      }),
+    });
 
     res.status(200).json({
       status: "success",
       message: "success",
-    })
+    });
   } catch (error) {
     console.error("TrainingCourses api returns errors:", error);
     res.status(500).json({
       status: "error",
-      message: error
+      message: error,
     });
   }
 }

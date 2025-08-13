@@ -1,0 +1,60 @@
+{
+  "PageTitle": "Soubory pro média ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "Stáhněte si soubory ONLYOFFICE pro média: loga, snímky obrazovky, videa a mnoho dalšího.",
+
+  "HeroTitle": "Ke stažení pro tisk",
+  "HeroDescription": "Stáhněte si soubory ONLYOFFICE pro média, včetně log a grafiky",
+
+  "Description": "Popis",
+  "Logo": "Logo",
+  "Screenshots": "Snímky obrazovky",
+  "Videos": "Videa",
+  "BlogAndSocialMedia": "Blog a propagační materiály na sociální média",
+
+  "DescriptionTitle": "Popis ONLYOFFICE",
+  "DescriptionText": "ONLYOFFICE, an open-source office software project, focuses on advanced and secure office solutions. With over 15 million users worldwide, it is recognized for its innovation in the online office domain. The ONLYOFFICE ecosystem includes collaborative applications such as online editors for text documents, spreadsheets, presentations, forms, and PDFs, along with a room-based collaborative platform. <br/><br/>As an international company, ONLYOFFICE has employees and contributors across the globe, with offices located in Singapore, Dallas, Riga, London, Belgrade, Yerevan, Tashkent, and Shanghai.",
+  "CopyToClipboard": "Zkopírovat do schránky",
+  "SuccessCopy": "Text byl zkopírován do schránky",
+
+  "LogoTitle": "Logo ONLYOFFICE",
+  "LogoDefault": "Defaultní logo",
+  "LogoCenter": "Středové logo",
+  "Symbol": "Symboly",
+  "LogoDefaultDark": "Defaultní tmavé logo",
+  "LogoCenterDark": "Středové tmavé logo",
+  "SymbolDark": "Tmavé symboly",
+  "LogoWhite": "Bílý logo",
+  "LogoCenterWhite": "Středové bílý logo",
+  "SymbolWhite": "Bílý symboly",
+
+  "BrandbookTitle": "ONLYOFFICE Brandbook",
+  "BrandbookPreview": "Preview",
+  "BrandbookDownload": "Stáhnout",
+
+  "ScreenshotsTitle": "Snímky obrazovky ONLYOFFICE",
+  "OnlineEditors": "Online editory",
+  "OnlineEditorsText": "(Dokumenty, tabulky, prezentace, formuláře)",
+  "DocSpace": "DocSpace",
+  "DocSpaceText": "(Přizpůsobitelné místnosti pro spolupráci na dokumentech)",
+  "Workspace": "Workspace",
+  "WorkspaceText": "(Správa dokumentů, email, zpráva vztahů se zákazníky, projekty, kalendář, komunita)",
+  "DesktopApps": "Stolní aplikace",
+  "DesktopAppsText": "(Dokumenty, tabulky, prezentace, formuláře)",
+  "MobileApps": "Mobilní aplikace",
+  "MobileAppsText": "(Dokumenty pro iOS a Android, Projekty pro iOS)",
+
+  "VideosTitle": "Videa ONLYOFFICE",
+  "MoreVideos": "Více videí",
+
+  "BlogAndSocialMediaTitle": "Blog ONLYOFFICE a propagační materiály na sociální média",
+  "OnlineEditorsMacCardTitle": "Online editory ONLYOFFICE pro Mac",
+  "OnlineEditorsCardTitle": "Online editory ONLYOFFICE",
+
+  "DontForgetToMention": "Nezapomeňte zmínit ONLYOFFICE a podělit se s námi!",
+  "MediaInquires": "S dotazy pro média nás prosím kontaktujte. Budeme rádi, když se nám ozvete: <0>press@onlyoffice.com</0>",
+  "AllUserInterfaceAssets": "© All user interface assets, including but not limited to icons, illustrations, images, and visual design elements created or incorporated after [date/version], are provided under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license.",
+  "UnderThisLicense": "Under this license, the licensed materials may be used, copied, and shared solely for non-commercial purposes, without any modifications or derivative works, and only with proper attribution to the original creator. Attribution must include the author’s name, a link to the original source, the full name of the license, and a reference to the license text:",
+  "AnyViolation": "Any violation of the license terms automatically terminates your right to use the materials. Continued use after termination constitutes unauthorized use and may result in legal action.",
+  "RequestPermission": "To request permission for uses not covered by this license, including commercial use or modifications, please contact us at: reply@onlyoffice.com.",
+  "ByUsingTheseMaterials": "By using these materials, you acknowledge that you have read, understood, and agree to be bound by the terms of the CC BY-NC-ND 4.0 license."
+}

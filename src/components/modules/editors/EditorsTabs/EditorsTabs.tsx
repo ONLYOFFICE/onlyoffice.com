@@ -7,7 +7,7 @@ import {
 import { IEditorsTabsProps } from "./EditorsTabs.types";
 import { useRef, useState, useEffect } from "react";
 
-const EditorsTabs = ({ items, t }: IEditorsTabsProps) => {
+const EditorsTabs = ({ items, t, className }: IEditorsTabsProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [isFixed, setIsFixed] = useState(false);
 
@@ -23,7 +23,7 @@ const EditorsTabs = ({ items, t }: IEditorsTabsProps) => {
   }, []);
 
   return (
-    <div ref={wrapperRef}>
+    <div ref={wrapperRef} className={className}>
       <StyledContainer $isFixed={isFixed}>
         <StyledEditorsTabs>
           {items.map(({ id, url, label }, index) => (

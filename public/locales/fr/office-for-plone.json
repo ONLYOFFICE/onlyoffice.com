@@ -1,4 +1,10 @@
 {
+  "PageTitle": "Édition collaborative de documents pour Plone | ONLYOFFICE Docs",
+  "PageDescription": "Éditez et coécrivez vos documents, créez et remplissez des formulaires dans Plone.",
+
+  "OnlineOfficeForConnector": "Suite bureautique pour <0>Plone</0>",
+  "Subheader": "Travaillez sur tous types de documents au sein du SGC Plone",
+
   "HeroTab1ImgUrl": "/images/templates/office-for-plone/hero/fr/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-plone/hero/fr/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-plone/hero/fr/screen2.png",
@@ -6,5 +12,27 @@
   "HeroTab3ImgUrl": "/images/templates/office-for-plone/hero/fr/screen3.png",
   "HeroTab3ImgUrl2x": "/images/templates/office-for-plone/hero/fr/screen3@2x.png",
   "HeroTab4ImgUrl": "/images/templates/office-for-plone/hero/fr/screen4.png",
-  "HeroTab4ImgUrl2x": "/images/templates/office-for-plone/hero/fr/screen4@2x.png"
+  "HeroTab4ImgUrl2x": "/images/templates/office-for-plone/hero/fr/screen4@2x.png",
+
+  "GetStarted": "Démarrer",
+
+  "MarketplaceConnectorTitle": "Conçue pour une intégration transparente avec Plone",
+  "MarketplaceConnectorDescription": "Obtenez le connecteur ONLYOFFICE pour Plone dès maintenant depuis <0>PyPi.org</0> et la page <1>GitHub</1> de ONLYOFFICE.",
+
+  "WhyOO": "Pourquoi ONLYOFFICE ?",
+  "Reason1": "Support de <0>tous les formats populaires</0>, y compris OOXML et ODF.",
+  "Reason2": "Riche éventail des outils de la mise en forme regroupés dans <0>une interface intuitive à onglets</0>.",
+  "Reason3": "<0>Co-édition en temps réel</0>, chat et commentaires, suivi des modifications et historique des versions, comparaison de documents.",
+  "Reason4": "<0>La même mise en page</0> depuis n'importe quel navigateur, n'importe quel système.",
+  "Reason5": "<0>Configuration simple</0> depuis la console d’administration Plone.",
+  "Reason6": "<0>Code source ouvert</0> disponible sur GitHub.",
+
+  "HowToStart": "Comment démarrer",
+  "HowToStartStep1": "Déployez <0>ONLYOFFICE Docs</0> sur votre propre serveur ou inscrivez-vous à <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Téléchargez la dernière version du connecteur depuis <0>PyPi.org</0> et la page <1>GitHub</1> de ONLYOFFICE.",
+  "HowToStartStep3": "Configurez le connecteur et activez JWT.",
+
+  "ReadDetailedInstructions": "Consultez <0>guides utiles</0> sur l'intégration Plone",
+
+  "NeedAnAppToConnect": "Besoin d'une appli pour connecter ONLYOFFICE Docs à votre service web préférentiel ? Ou en avez-vous développé une ?"
 }

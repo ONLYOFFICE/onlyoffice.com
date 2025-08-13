@@ -1,0 +1,49 @@
+{
+  "PageTitle": "誰でも利用しやすいONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICEは特別なニーズを持つユーザーにも対応できるように設計されています。アクセシビリティへのこだわりをご覧ください。",
+
+  "HeroTitle": "誰もが利用しやすいONLYOFFICE",
+  "HeroDescription": "編集作業を快適かつシンプルに行うために、特別なニーズを持つユーザーにも対応できるようなエディターを提供しています。",
+  "HeroButtonLabel": "今すぐお試しする",
+
+  "AccessibilityTitle": "アクセシビリティの考え方にこだわる理由",
+  "AccessibilityDescription": "アクセシビリティとは、あらゆる能力を持つ人が製品を使いやすい度合いを焼き付けたものです。ここではONLYOFFICE Docsの対応機能をご紹介します。",
+
+  "VisionTitle": "ビジョン",
+  "ScreenReaders": "スクリーンリーダー",
+  "ScreenReadersFeature1": "エディタで実行された操作をレンダリングする音声通知を聞くことができます。",
+  "ScreenReadersFeature2": "テキスト文書、スプレッドシート、プレゼンテーション用のスクリーンリーダーの起動",
+  "UITweaks": "UIの調整",
+  "UITweaksFeature1": "複数のスケーリングプリセットを使って、作業領域の大きさを変更できる",
+  "UITweaksFeature2": "編集領域をページや画面の幅に合わせる",
+  "UITweaksFeature3": "ツールバー、ステータスバー、ルーラーを非表示または表示する",
+  "ColorModes": "カラーモード",
+  "ColorModesFeature1": "さまざまなUIテーマを使って、どんな環境でも快適に作業できる",
+  "ColorModesFeature2": "チャート要素をハイコントラストで表示させたり、幾何学的なパターンを持たせることで、色を付けずに見分けられるようにする",
+  "MobileWebView": "モバイルウェブビュー",
+  "MobileWebViewFeature1": "ドキュメントをモバイルウェブエディターの読み取りモードで開いた際、テキストサイズを簡単に拡大・縮小でき、横スクロールなしで内容を閲覧できます。",
+
+  "MobilityTitle": "モビリティ",
+  "Hotkeys": "ホットキー",
+  "HotkeysFeature1": "ほとんどの操作は、ホットキーまたはキーボードショートカットで行います。",
+  "SpeechInput": "音声入力",
+  "SpeechInputFeature1": "話し言葉をテキストに変換することで、声で簡単に入力することができます。",
+
+  "NeurodiversityTitle": "ニューロダイバーシティ",
+  "AlternativeText": "代替テキスト",
+  "AlternativeTextFeature1": "画像などのグラフィックオブジェクトのタイトルや説明を指定することで、そのオブジェクトに含まれる情報を他の人がより理解できるようにします。",
+  "AutoCorrectFeatures": "オートコレクトの特徴",
+  "AutoCorrectFeaturesFeature1": "記号の置き換え、配置ガイド、ストレートクォートからスマートクォートへの変換、自動リスト化、文頭の自動大文字化などのスペルチェックやオートコレクト機能を利用できます。",
+  "Speech": "Speech",
+  "SpeechFeature1": "選択したテキストを音声に変換し、テキスト文書を読み上げることができます。",
+  "Typography": "Typograf",
+  "TypographyFeature1": "テキストのタイポグラフィを自動で補正します。",
+  "Translator": "Translator",
+  "TranslatorFeature1": "選択したテキストを自動的に他言語に翻訳します。",
+
+  "SuggestionsTitle": "ご意見・ご提案などありますか？",
+  "SuggestionsDescription": "私たちは常にONLYOFFICEエディタに新しいアクセシビリティ機能を追加するために取り組んでいます。もし何かアイデアがあれば、<0>GitHub</0>や<1>フォーラム</1>でお気軽にシェアしてください。",
+  "GithubButtonLabel": "GitHub",
+  "ForumButtonLabel": "フォーラム",
+  "LearnMore": "詳細はこちら"
+}

@@ -1,0 +1,56 @@
+{
+  "PageTitle": "Alfresco Share 向けのオンラインオフィススイート",
+  "PageDescription": "Alfresco Share 内のドキュメント編集と共同編集",
+
+  "OnlineOfficeForAlfresco": "<0>Alfresco</0>用オンラインオフィス",
+  "EnableCollaborativeDocumentEditing": "ONLYOFFICE Docsを使ってAlfresco Shareで共同文書編集が可能に",
+  "GetItNow": "Zoomに追加",
+  "RequestFreeDemo": "無料デモをリクエスト",
+  "HeroImgUrl": "/images/templates/office-for-alfresco/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-alfresco/hero/hero@2x.png",
+
+  "WorkWithOfficeDocuments": "Alfresco ShareのONLYOFFICEでOfficeドキュメントを操作",
+  "DocumentsTab1Label": "テキスト文書、スプレッドシート、プレゼンテーション、記入可能なフォームを表示、作成、編集できます。",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-alfresco/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "カスタムテンプレートを作成し、そこからドキュメントを作成します。",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-alfresco/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "非XMLドキュメントをXML形式(DOCX、XLSX、PPTX)に変換。PDFへのエクスポート/PDFからのインポート",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-alfresco/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "複数のユーザーとリアルタイムで文書を共同作成し、コメントを残したり、内蔵のチャットでコミュニケーション。",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-alfresco/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-4@2x.png",
+  "DocumentsTab5Label": "ドキュメントのバージョン履歴を表示。",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-alfresco/documents/documents-5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-5@2x.png",
+
+  "MarketplaceConnectorTitle": "Alfrescoとシームレスに統合できるように設計されています",
+  "MarketplaceConnectorDescription": "Alfresco用ONLYOFFICEアプリは、公式Alfrescoアドオンディレクトリで入手できます。",
+  "GetStarted": "始める",
+
+  "WhyOO": "なぜONLYOFFICEなのか？",
+  "FeaturesFormats": "<0>50以上のファイル形式をサポート</0>。MS Officeフォーマットとの完全な互換性： docx、xlsx、pptx。",
+  "FeaturesCoEditing": "<0>リアルタイムで</0>段落ロックされた共同編集、レビュー、バージョン履歴、ドキュメント比較、コメント＆メンション。",
+  "FeaturesFree": "無料のコミュニティ版とスケーラブルなエンタープライズ版 <0>30日間の無料トライアル</0> データを完全に管理できるセルフホストソリューション",
+  "FeaturesSecurity": "<0>セキュリティ強化。</0>柔軟なアクセス権とJWT 静止時と転送時の暗号化 電子透かしとパスワード保護 オープンソースコード",
+  "FeaturesConfiguration": "<0>簡単な設定。</0>Alfrescoの管理コンソールですぐに使えるコネクタとのシームレスな統合と、自動テスト。",
+  "FeaturesAIHelper": "編集、フォーマット、スタイリングツールの強力なセット。<0>統合されたAIヘルパー</0>（ChatGPTまたはZhiPu Copilot）。",
+
+  "HowToStart": "始め方",
+  "HowToStartStep1": "自分のサーバーに<0>ONLYOFFICE Docs</0>をデプロイするか、<1>ONLYOFFICE Docs Cloud</1>にサインアップしてください。",
+  "HowToStartStep2": "<0>Alfresco Add-onsディレクトリ</0>から統合アプリを取得します。",
+  "HowToStartStep3": "Alfresco管理コンソールで統合アプリを設定します。",
+  "HowToConnect": "ONLYOFFICEとAlfresco Shareの連携方法",
+
+  "LearnMoreHeading": "ONLYOFFICE Alfrescoとの統合についてもっと見る",
+  "HelpCenter": "ヘルプセンター",
+  "UsefulGuides": "ONLYOFFICE Alfresco Share連携に関するお役立ちガイドです。",
+  "VisitOurHelpCenter": "ヘルプセンターをご覧ください。",
+  "SuccessStory": "導入事例",
+  "SuccessStoryDescription": "Atol CDは、ONLYOFFICE Docsを統合することで、Alfresco Digital Workspaceのオンラインコラボレーションを強化しました。",
+  "ReadTheFullStory": "全文を読む",
+
+  "NeedAnAppToConnect": "ONLYOFFICEとお気に入りのウェブサービスをつなぐアプリが必要ですか？または開発済みですか？"
+}

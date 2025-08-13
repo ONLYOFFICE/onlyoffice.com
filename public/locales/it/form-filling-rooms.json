@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Raccogli e analizza le risposte nelle stanze di compilazione dei moduli",
+  "PageDescription": "Organizza la compilazione dei moduli per i tuoi progetti in ONLYOFFICE DocSpace",
+
+  "EasilyCollectAndAnalyze": "Raccogli e analizza facilmente le risposte nelle <0>stanze di compilazione dei moduli</0>",
+  "OrganizeStraightforwardFormFilling": "Organizza la compilazione dei moduli per i tuoi progetti in ONLYOFFICE DocSpace",
+
+  "EasyFormUploading": "Caricamento semplice dei moduli",
+  "QuickSharing": "Condivisione rapida",
+  "IntuitiveProcess": "Processo intuitivo di compilazione dei moduli",
+  "ConvenientAnalyzing": "Analisi comoda delle risposte raccolte",
+  "CostEffectiveForAnyBudget": "Conveniente per qualsiasi budget",
+
+  "CreateFreeAccount": "Crea un account gratuito",
+
+  "HeroImgUrl": "/images/templates/form-filling-rooms/hero/form-filling-rooms-video.png",
+  "HeroImgUrl2x": "/images/templates/form-filling-rooms/hero/form-filling-rooms-video@2x.png",
+
+  "EasyFormUploadingDesc": "Carica moduli PDF già pronti in una stanza dal tuo DocSpace o dal tuo dispositivo in pochi clic. Utilizza la libreria di modelli integrata e scegli tra numerosi modelli PDF già pronti.",
+  "EasyFormUploadingUrl": "/images/templates/form-filling-rooms/features/en/easy.png",
+  "EasyFormUploadingUrl2x": "/images/templates/form-filling-rooms/features/en/easy@2x.png",
+
+  "QuickSharingDesc": "Invita i tuoi colleghi e membri del team nella stanza per compilare i moduli PDF caricati nella stanza. Copia un link di accesso pubblico per condividere la stanza con gli utenti esterni.",
+  "QuickSharingUrl": "/images/templates/form-filling-rooms/features/en/quick.png",
+  "QuickSharingUrl2x": "/images/templates/form-filling-rooms/features/en/quick@2x.png",
+
+  "IntuitiveProcessDesc": "Facile per tutti! Utilizza i pulsanti Campo precedente o Campo successivo per spostarsi tra i campi. Se necessario, regola lo zoom, adattalo alla pagina o alla larghezza. Una volta pronto, fai semplicemente clic sul pulsante Completa e invia.",
+  "IntuitiveProcessUrl": "/images/templates/form-filling-rooms/features/en/intuitive.png",
+  "IntuitiveProcessUrl2x": "/images/templates/form-filling-rooms/features/en/intuitive@2x.png",
+
+  "ConvenientAnalyzingDesc": "Controlla i moduli compilati e analizza automaticamente i dati raccolti in un foglio di calcolo. Tutto insieme nella stessa stanza.",
+  "ConvenientAnalyzingUrl": "/images/templates/form-filling-rooms/features/en/analyzing.png",
+  "ConvenientAnalyzingUrl2x": "/images/templates/form-filling-rooms/features/en/analyzing@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "Paga solamente per gli amministratori e aggiungi quanti utenti regolari e ospiti tu voglia gratuitamente. Approfitta di un piano Startup gratuito per piccoli team. ONLYOFFICE DocSpace è adatto a tutte le aziende, non importa se si tratta di PMI o di una grande impresa. Vuoi avere il pieno controllo sui tuoi dati aziendali? Implementa DocSpace sul tuo server privato.",
+  "CostEffectiveForAnyBudgetUrl": "/images/templates/form-filling-rooms/features/en/cost-effective.png",
+  "CostEffectiveForAnyBudgetUrl2x": "/images/templates/form-filling-rooms/features/en/cost-effective@2x.png",
+
+  "LearnMoreHeading": "Scopri di più sulle stanze di compilazione moduli di DocSpace",
+
+  "HelpCenter": "Centro assistenza",
+  "HelpCenterDesc": "Consulta le guide utente dettagliate per un lavoro efficace",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "Scopri di più",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Padroneggia ONLYOFFICE DocSpace con le guide video",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Guarda ora",
+
+  "CustomerTestimonial": "Testimonianze dei clienti",
+  "HowKinderhausBerlinSharesAndCollaborates": "Kinderhaus Berlin utilizza ONLYOFFICE DocSpace per la condivisione e la  collaborazione sui file sensibili",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Leggi il caso d'uso completo"
+}

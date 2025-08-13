@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Cene za ONLYOFFICE Docs Home Server | ONLYOFFICE",
+  "PageDescription": "Izaberite ONLYOFFICE Docs Home Server plan koji odgovara vašim potrebama",
+
+  "BuyOODocsHomeServer": "Kupite ONLYOFFICE <0>Docs Home Server</0>",
+  "DocsHomeServer": "Docs Home Server",
+  "OnlineEditors": "Online editori za tekstualne dokumente, tabele, prezentacije, obrasce i PDF",
+  "MobileWebEditors": "Mobilni veb editori",
+  "ReadyToUseConnectors": "Konektori spremni za upotrebu",
+  "DesktopAndMobileApps": "Desktop i mobilne aplikacije",
+  "EnhancedSecurityFeatures": "Napredne bezbednosne funkcije",
+  "AllMinorUpdatesAndMajorUpgrades": "Sva manja ažuriranja i veća unapređenja",
+  "TryItFree": "Probajte besplatno",
+
+  "NumberOfUsers": "Broj korisnika",
+  "NumberOfUsersTooltip": "Navedeni broj korisnika definiše koliko ljudi može imati pristup uređivanju dokumenata, tabela i prezentacija. Broj dokumenata koji se mogu uređivati istovremeno nije ograničen. Drugi korisnici će moći da otvaraju dokumente samo za pregled.",
+  "LicenseDuration": "Trajanje licence",
+  "Lifetime": "Doživotno",
+  "LifetimeTooltip": "Možete koristiti sve funkcije ONLYOFFICE Docs Home Server dostupne u trenutku kupovine na neograničeno vreme, ali godinu dana nakon datuma kupovine više nećete moći da dobijate besplatna ažuriranja.",
+  "Updates": "Ažuriranja",
+  "1Year": "1 godina",
+  "Total": "Ukupno:",
+  "BuyNow": "Kupite odmah",
+
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesLabel": "Šta znače 'doživotna licenca' i '1 godina ažuriranja'?",
+  "WhatDoTheLifetimeLicenseAnd1YearUpdatesText": "Možete koristiti sve funkcije ONLYOFFICE Docs Home Server dostupne u trenutku kupovine na neograničeno vreme, ali godinu dana nakon datuma kupovine više nećete moći da dobijate besplatna ažuriranja. Ako želite da ažurirate svoju verziju ONLYOFFICE Docs Home Server kasnije, moraćete da kupite novi licencni ključ.",
+  "WhatDoesTheNumberOfUsersLabel": "Šta znači 'broj korisnika'?",
+  "WhatDoesTheNumberOfUsersText": "Navedeni broj korisnika definiše koliko ljudi može imati pristup uređivanju dokumenata, tabela i prezentacija. Broj dokumenata koji se mogu uređivati istovremeno nije ograničen.<br/>Drugi korisnici će moći da otvaraju dokumente samo za pregled.<br/><br/>Napomena: ONLYOFFICE čuva ID korisnika u periodu od 30 dana. Nakon toga, možete zameniti korisnika novim ako je potrebno. Ako delite dokument sa spoljnim korisnicima, svaki od njih dobija imenovani ID korisnika na period od 30 dana.",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "Gde mogu pronaći odgovore na druga pitanja?",
+  "WhereCanIFindAnswersToOtherQuestionsText": "Posetite naš <0>FAQ centar</0> ili <1>pošaljite svoj zahtev</1> i mi ćemo vam uskoro pomoći."
+}
