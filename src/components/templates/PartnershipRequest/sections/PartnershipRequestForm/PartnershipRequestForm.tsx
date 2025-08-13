@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { useTranslation } from "next-i18next";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import {
@@ -53,6 +53,8 @@ const PartnershipRequestForm = ({
   const [isFormValid, setIsFormValid] = useState(false);
   const [formStatus, setFormStatus] =
     useState<ILoaderButton["status"]>("default");
+  const [token, setToken] = useState("");
+  const [isCaptchaValid, setIsCaptchaValid] = useState(false);
 
   const isFullNameValid =
     formData.fullName.length > 0 && validateFullName(formData.fullName);
@@ -60,6 +62,20 @@ const PartnershipRequestForm = ({
     formData.email.length > 0 && validateEmail(formData.email);
   const isCompanyValid = formData.companyName.length > 0;
   const isPhoneValid = formData.phone.length > 0;
+
+  const checkFormValid = useCallback(() => {
+    setIsFormValid(
+      isFullNameValid &&
+      isEmailValid &&
+      (locale === "zh" ? true : isPhoneValid) &&
+      isCompanyValid &&
+      isCaptchaValid,
+    );
+  }, [isFullNameValid, isEmailValid, isPhoneValid, isCompanyValid, isCaptchaValid, locale]);
+
+  useEffect(() => {
+    checkFormValid();
+  }, [checkFormValid]);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -74,29 +90,15 @@ const PartnershipRequestForm = ({
 
   const handleHCaptchaChange = (token: string | null) => {
     if (
-      token &&
-      isFullNameValid &&
-      isEmailValid &&
-      (locale === "zh" ? true : isPhoneValid) &&
-      isCompanyValid
+      token
     ) {
-      onSubmit(token);
+      setToken(token);
+      setIsCaptchaValid(true);
     } else {
+      setToken("");
+      setIsCaptchaValid(false);
       setFormStatus("default");
     }
-  };
-
-  const handleHCaptchaExecute = () => {
-    hCaptchaRef.current?.execute();
-  };
-
-  const checkFormValid = () => {
-    setIsFormValid(
-      isFullNameValid &&
-      isEmailValid &&
-      (locale === "zh" ? true : isPhoneValid) &&
-      isCompanyValid,
-    );
   };
 
   const clearData = () => {
@@ -107,7 +109,7 @@ const PartnershipRequestForm = ({
     phoneInputRef.current?.reset();
   };
 
-  const onSubmit = async (token?: string) => {
+  const onSubmit = async () => {
     if (formStatus === "loading") return;
 
     if (formStatus === "error") {
@@ -137,7 +139,12 @@ const PartnershipRequestForm = ({
         setTimeout(() => {
           setFormStatus("default");
         }, 5000);
+        setIsCaptchaValid(false);
         return;
+      }
+
+      if (hCaptchaData.status === "success") {
+        setIsCaptchaValid(true);
       }
 
       const countryInfo = Object.values(countries).find(
@@ -155,6 +162,7 @@ const PartnershipRequestForm = ({
       if (onSubmitRequestData.status === "success") {
         setFormStatus("success");
 
+        //TODO: change UI insted of alert()
         alert(onSubmitRequestData.status);
 
         setTimeout(() => {
@@ -165,6 +173,7 @@ const PartnershipRequestForm = ({
         setFormStatus("error");
       }
     } catch (error) {
+      //TODO: change UI
       console.error(error);
     }
   };
@@ -185,7 +194,6 @@ const PartnershipRequestForm = ({
               ...prev,
               fullName: formData.fullName.length === 0,
             }));
-            checkFormValid();
           }}
           value={formData.fullName}
           label={t("FullName")}
@@ -216,7 +224,6 @@ const PartnershipRequestForm = ({
               ...prev,
               email: formData.email.length === 0,
             }));
-            checkFormValid();
           }}
           value={formData.email}
           label="Email"
@@ -248,7 +255,6 @@ const PartnershipRequestForm = ({
                 ...prev,
                 phone: false,
               }));
-              checkFormValid();
             }}
             value={formData.phone}
             label="微信号"
@@ -265,7 +271,6 @@ const PartnershipRequestForm = ({
                 ...prev,
                 phone: formData.phone.length === 0,
               }));
-              checkFormValid();
             }}
             status={
               isEmpty.phone ? "error" : formData.phone ? "success" : "default"
@@ -280,7 +285,6 @@ const PartnershipRequestForm = ({
               ...prev,
               companyName: formData.companyName.length === 0,
             }));
-            checkFormValid();
           }}
           value={formData.companyName}
           label={t("CompanyName")}
@@ -364,7 +368,7 @@ const PartnershipRequestForm = ({
         </StyledHeroHCaptchaWrapper>
 
         <LoaderButton
-          onClick={handleHCaptchaExecute}
+          onClick={onSubmit}
           status={formStatus}
           label={t("GetItNow")}
           disabled={!isFormValid}
