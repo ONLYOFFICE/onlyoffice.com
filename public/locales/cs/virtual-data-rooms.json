@@ -1,9 +1,9 @@
 {
-  "PageTitle": "ONLYOFFICE - Cloud Office Applications",
-  "PageDescription": "Organize secure storing and sharing of confidential business information in ONLYOFFICE DocSpace",
+  "PageTitle": "Use virtual data rooms for enhanced file security and transparency",
+  "PageDescription": "Organize secure storage and sharing of confidential business information in ONLYOFFICE DocSpace",
 
-  "UseVirtualDataRooms": "Use <0>Virtual Data rooms</0> for advanced file security and transparency",
-  "OrganizeSecure": "Organize secure storing and sharing of confidential business information in ONLYOFFICE DocSpace",
+  "UseVirtualDataRooms": "Use <0>virtual data rooms</0> for enhanced file security and transparency",
+  "OrganizeSecure": "Organize secure storage and sharing of confidential business information in ONLYOFFICE DocSpace",
 
   "IdealForDueDiligence": "Ideal for due diligence",
   "CompletelyOrganized": "Completely organized",
@@ -16,11 +16,11 @@
   "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
   "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
 
-  "IdealForDueDiligenceDesc": "Use VDR for due diligence, when merging, working on a project with other businesses, or other joint venture that requires access to the shared data.",
+  "IdealForDueDiligenceDesc": "Use VDR for due diligence when merging, working on a project with other companies, or other joint venture that requires access to shared data.",
   "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/ideal.png",
   "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/ideal@2x.png",
 
-  "CompletelyOrganizedDesc": "Automatically index and track all content to keep great records and stay organized. Generate a summary report on the room file structure.",
+  "CompletelyOrganizedDesc": "Automatically index and track all content to keep excellent records and stay organized. Generate a summary report on the room file structure.",
   "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/organized.png",
   "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/organized@2x.png",
 
@@ -28,7 +28,7 @@
   "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/security.png",
   "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/security@2x.png",
 
-  "AdvancedRoleBasedText": "Invite your team and assign roles that align perfectly with your company’s organizational structure. Track form progress in real time. Easily see completed and pending forms, finalize them, and retrieve finished versions for a smooth process.",
+  "AdvancedRoleBasedText": "Invite your team and assign roles that perfectly align with your company's organizational structure. Track form progress in real-time. Easily view completed and pending forms, finalize them and retrieve finished versions for a smooth process.",
   "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/advanced.png",
   "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/advanced@2x.png",
 
@@ -36,10 +36,10 @@
   "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget.png",
   "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget@2x.png",
 
-  "LearnMoreHeading": "Learn more about DocSpace Virtual Data rooms",
+  "LearnMoreHeading": "Learn more about DocSpace virtual data rooms",
 
   "HelpCenter": "Help Center",
-  "HelpCenterDesc": "Check detailed user guides for effective work",
+  "HelpCenterDesc": "Check out detailed user guides for effective work",
   "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
   "LearnMore": "Learn more",
 
@@ -49,7 +49,7 @@
   "WatchNow": "Watch now",
 
   "CustomerTestimonial": "Customer testimonial",
-  "HowKinderhausBerlinSharesAndCollaborates": "How Kinderhaus Berlin shares and collaborates on sensitive files with ONLYOFFICE DocSpace",
+  "HowKinderhausBerlinSharesAndCollaborates": "How Kinderhaus Berlin shares and collaborates on confidential files with ONLYOFFICE DocSpace",
   "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
   "ReadStory": "Read story"
 }
