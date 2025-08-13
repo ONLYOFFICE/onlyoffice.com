@@ -107,6 +107,10 @@ const StyledHeroYouTubeWrapper = styled.div`
     padding-bottom: 8px;
   }
 
+  & > div > div {
+    aspect-ratio: 1.77;
+  }
+
   & > div > div:first-child {
     width: 100%;
     height: 100%;
