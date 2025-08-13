@@ -59,7 +59,7 @@ const Hero = ({ locale }: IHero) => {
   };
 
   return (
-    <Section desktopSpacing={["80px", "112px"]}>
+    <Section desktopSpacing={["56px", "112px"]}>
     <Container>
       <StyledHeroDescription>
         <StyledHeroHeading

@@ -20,9 +20,14 @@ const StyledDownloadModalWrapper = styled.div`
   }
 `;
 
+const StyledNameWrapper = styled.div`
+  display: grid;
+  column-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+`;
+
 const StyledPRFHeading = styled(Heading)`
-  margin-bottom: -8px;
-  text-align: center;
+  margin-top: 24px;
 `;
 
 const StyledDownloadModalText = styled(Text)`
@@ -45,6 +50,7 @@ const StyledHeroHCaptchaWrapper = styled.div`
 export {
   StyledPRForm,
   StyledDownloadModalWrapper,
+  StyledNameWrapper,
   StyledPRFHeading,
   StyledDownloadModalText,
   StyledHeroHCaptchaWrapper,

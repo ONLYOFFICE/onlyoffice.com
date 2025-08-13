@@ -15,6 +15,9 @@
   "Surname": "Surname",
   "LastNameIsEmpty": "Last name is empty",
   "LastNameIsIncorrect": "Last name is incorrect",
+  "CorporateEmailAddress": "Corporate email address",
+  "Website": "Website",
+  "WebsiteIsEmpty": "Website is empty",
 
   "GetItNowText": "By clicking Submit request you understand and agree to our <0>Privacy statement</0>."
 }

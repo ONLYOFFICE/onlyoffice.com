@@ -4,12 +4,12 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
 const StyledHeroDescription = styled.div`
-  margin-bottom: 32px;
+  margin-bottom: 56px;
   text-align: center;
 `;
 
 const StyledHeroHeading = styled(Heading)`
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 `;
 
 const StyledHeroText = styled(Text)`

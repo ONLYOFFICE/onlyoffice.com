@@ -4,6 +4,7 @@ import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import {
   StyledPRForm,
   StyledDownloadModalWrapper,
+  StyledNameWrapper,
   StyledPRFHeading,
   StyledDownloadModalText,
   StyledHeroHCaptchaWrapper,
@@ -12,6 +13,7 @@ import { IDownloadModal } from "./PartnershipRequestForm.types";
 import { getFromParam } from "@src/utils/getParams";
 import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { countries } from "@src/config/data/countries";
+import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { TextArea } from "@src/components/ui/TextArea";
@@ -66,6 +68,7 @@ const PartnershipRequestForm = ({
     formData.email.length > 0 && validateEmail(formData.email);
   const isCompanyValid = formData.companyName.length > 0;
   // const isPhoneValid = formData.phone.length > 0;
+  const isWebsiteValid = formData.website.length > 0 && validateWebsite(formData.website);
 
   const checkFormValid = useCallback(() => {
     setIsFormValid(
@@ -73,9 +76,10 @@ const PartnershipRequestForm = ({
       isLastNameValid &&
       isEmailValid &&
       isCompanyValid &&
+      isWebsiteValid &&
       isCaptchaValid,
     );
-  }, [isFirstNameValid, isLastNameValid, isEmailValid, isCompanyValid, isCaptchaValid]);
+  }, [isFirstNameValid, isLastNameValid, isEmailValid, isCompanyValid, isWebsiteValid, isCaptchaValid]);
 
   useEffect(() => {
     checkFormValid();
@@ -186,11 +190,15 @@ const PartnershipRequestForm = ({
     <StyledPRForm>
       <StyledDownloadModalWrapper>
 
-        <StyledPRFHeading
+        <Heading
           level={4}
           size={5}
-          label={t("ContactInfo")}>
-        </StyledPRFHeading>
+          label={t("ContactInfo")}
+          textAlign="center"
+          >
+        </Heading>
+
+        <StyledNameWrapper>
         <Input
           id="partnerFirstName"
           onChange={(e) => handleInputChange("firstName", e.target.value)}
@@ -252,6 +260,7 @@ const PartnershipRequestForm = ({
                 : "default"
           }
         />
+        </StyledNameWrapper>
 
         <Input
           onChange={(e) => handleInputChange("email", e.target.value)}
@@ -262,7 +271,7 @@ const PartnershipRequestForm = ({
             }));
           }}
           value={formData.email}
-          label="Email"
+          label={t("CorporateEmailAddress")}
           placeholder="name@domain.com"
           caption={
             formData.email.length === 0
@@ -339,16 +348,14 @@ const PartnershipRequestForm = ({
         <Input
           onFocus={() => {
             if (formData.website.trim() === "") {
-              handleInputChange("website", "https://");
+              handleInputChange("website", "");
             }
           }}
           onChange={(e) => handleInputChange("website", e.target.value)}
           onBlur={() => {
             setIsEmpty((prev) => ({
               ...prev,
-              website:
-                formData.website.trim() === "" ||
-                formData.website === "https://",
+              website: formData.website.trim() === "",
             }));
 
             if (formData.website === "https://") {
@@ -358,16 +365,24 @@ const PartnershipRequestForm = ({
             checkFormValid();
           }}
           value={formData.website}
-          label={t2("CompanyWebsite")}
+          label={t("Website")}
+          placeholder="e.g. https://www.onlyoffice.com"
           caption={
-            !validateWebsite(formData.website) ? t2("WebsiteIsIncorrect") : ""
+            formData.website.length === 0
+              ? t("WebsiteIsEmpty")
+              : !validateWebsite(formData.website)
+                ? t2("WebsiteIsIncorrect")
+                : ""
           }
+          required
           status={
-            formData.website.length > 0
-              ? validateWebsite(formData.website)
-                ? "success"
-                : "error"
-              : "default"
+            isEmpty.website
+              ? "error"
+              : formData.website.length > 0
+                ? validateWebsite(formData.website)
+                  ? "success"
+                  : "error"
+                : "default"
           }
         />
 
