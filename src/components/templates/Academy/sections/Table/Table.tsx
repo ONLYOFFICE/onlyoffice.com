@@ -33,7 +33,7 @@ export const Table = () => {
             <thead>
               <tr>
               {headers.map((h, i) => (
-                  <th key={i}>{h}</th>
+                  <th key={i}>{t(h)}</th>
                 ))}
               </tr>
                 

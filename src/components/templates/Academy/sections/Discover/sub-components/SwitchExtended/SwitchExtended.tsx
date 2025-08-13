@@ -8,6 +8,8 @@ import {
   StyledBtnText,
   StyledSwitchContent
 } from "./SwitchExtended.styled";
+import { Trans, useTranslation } from "next-i18next";
+import { Text } from "@src/components/ui/Text";
 
 interface ISwitchExtended extends IHeroTabs {
   subheading: string;
@@ -15,6 +17,7 @@ interface ISwitchExtended extends IHeroTabs {
 }
 
 const SwitchExtended = ({ heading, items, subheading, setCourse }: ISwitchExtended) => {
+  const { t } = useTranslation("academy");
   const [activeTab, setActiveTab] = useState<string>(items[0].button.id);
   const activeItem = items.find((item) => item.button.id === activeTab);
 
@@ -45,8 +48,12 @@ const SwitchExtended = ({ heading, items, subheading, setCourse }: ISwitchExtend
             $iconHeight={item.button.icon.height}
           >
             <StyledBtnText>
-              <span>ONLYOFFICE</span> <br />
-              {item.button.label}
+            <Trans
+                t={t}
+                i18nKey={item.button.label}
+                components={[<Text as="span" key="0" />]}
+              />
+              
             </StyledBtnText>
           </StyledHeroTabsButtonCustom>
         ))}

@@ -48,6 +48,7 @@ const StyledHeroTabsButtonCustom = styled(StyledHeroTabsButton)`
 
 const StyledBtnText = styled.div`
   > span {
+    display: block;
     font-size: 12px;
     font-weight: 600;
     line-height: 16px;

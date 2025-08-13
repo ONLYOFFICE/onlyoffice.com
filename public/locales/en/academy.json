@@ -22,9 +22,9 @@
 
   "DiscoverTitle": "Discover what’s <0>inside</0>",
   "DiscoverSubtitle": "Explore training courses tailored to key ONLYOFFICE solutions.",
-  "TabsDocs": "Docs Courses",
-  "TabsDocspace": "DocSpace Courses",
-  "TabsWorkspace": "Workspace Courses",
+  "TabsDocs": "<0>ONLYOFFICE</0> Docs Courses",
+  "TabsDocspace": "<0>ONLYOFFICE</0> DocSpace Courses",
+  "TabsWorkspace": "<0>ONLYOFFICE</0> Workspace Courses",
 
   "TabsOODocsTitle": "ONLYOFFICE <0>Docs</0> Courses",
   "TabsOODocspaceTitle": "ONLYOFFICE <0>DocSpace</0> Courses",
@@ -56,7 +56,7 @@
   "DocsPro2": "Post-session assignments and interactive discussions for mastering complex features.",
 
   "DocspaceCourse1": "Setting up secure <0>collaboration rooms.</0>",
-  "DocspaceCourse2": "Hands‑on document sharing and co‑editing.",
+  "DocspaceCourse2": "Hands‑on document <0>sharing and co‑editing</0>.",
   "DocspaceBasic": "Understand DocSpace, user permissions, and configurations.",
   "DocspaceBasicPlus": "Interaction with real scenarios and expert guidance.",
   "DocspacePro": "Advanced application in dynamic environments with live tutoring.",
@@ -83,10 +83,10 @@
 
 
   "WhatOurLearnersSay": "What our <0>learners</0> say",
-  "Quote1": "The real‑time exercises are a great addition—they make complex features so much clearer. Plus, having the course in my native language was a huge bonus. Highly recommend!",
+  "Quote1": "\"The real‑time exercises are a great addition—they make complex features so much clearer. Plus, having the course in my native language was a huge bonus. Highly recommend!\"",
   "Name1": "Matteo Marcato",
   "Company1": "ITServicenet",
-  "Quote2": "Maria is a terrific tutor, and every module training session was highly structured and interactive. I’ve found the session recordings and exercises valuable as I continue using ONLYOFFICE.",
+  "Quote2": "\"Maria is a terrific tutor, and every module training session was highly structured and interactive. I’ve found the session recordings and exercises valuable as I continue using ONLYOFFICE.\"",
   "Name2": "Moira Dalgarno",
   "Company2": "Minera Alamos Inc.",
 

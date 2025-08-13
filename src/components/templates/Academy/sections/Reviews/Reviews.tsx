@@ -49,7 +49,7 @@ export const Reviews = () => {
           {reviews.map((review, index) => (
             <SwiperSlide key={index}>
               <TestimonialCard $bgImage={review.bg}>
-                <QuoteText>&quot;{t(review.quote)}&quot;</QuoteText>
+                <QuoteText>{t(review.quote)}</QuoteText>
                 <AuthorName>{t(review.author)}</AuthorName>
                 <Link href={review.link} fontSize="12px" color="#AAAAAA">{t(review.position)}</Link>
               </TestimonialCard>
