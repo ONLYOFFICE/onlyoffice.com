@@ -88,25 +88,16 @@ const StyledHeroLeftHeading = styled(Heading)`
   }
 `;
 
-const StyledHeroLeftButton = styled(Button)<{
-  $backgroundUrl: string;
-}>`
-  display: block;
-  width: 170px;
-  height: 58px;
+const StyledHeroLeftButton = styled.div`
   margin-top: 40px;
-  background-image: ${(props) => `url(${props.$backgroundUrl})`};
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  z-index: 2;
 
   @media ${device.tabletS} {
-    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
   }
 
   @media ${device.mobileS} {
-    margin: 32px auto 0;
+    margin-top: 32px;
   }
 `;
 
