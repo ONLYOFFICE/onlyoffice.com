@@ -1,0 +1,32 @@
+{
+  "PageDescription": "Lavora con i file d'ufficio nel modulo Documenti di SuiteCRM utilizzando ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Ufficio online per <0>SuiteCRM</0>",
+  "Subheader": "Lavora con i file d'ufficio nel modulo Documenti di SuiteCRM utilizzando ONLYOFFICE Docs",
+  "GetStarted": "Inizia",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Completamente compatibile con docx, xlsx e pptx",
+
+  "MarketplaceConnectorTitle": "Progettato per un'integrazione perfetta con SuiteCRM",
+  "MarketplaceConnectorDescription": "Ottieni ora il connettore ONLYOFFICE per SuiteCRM da <0>GitHub</0>.",
+  "GetItNow": "Ottienilo ora",
+
+  "WhyOO": "Perché ONLYOFFICE Docs Cloud",
+  "WhySubheader": "ONLYOFFICE Docs Cloud è una suite per ufficio professionale per lavorare su documenti di testo, fogli di calcolo, presentazioni, moduli e file PDF.",
+  "Reason1": "Connettore <0>pronto all'uso</0>",
+  "Reason2": "<0>Modifica e creazione in collaborazione di file d'ufficio direttamente</0> all'interno del modulo Documenti di SuiteCRM",
+  "Reason3": "<0>Collaborazione in tempo reale</0>, Track Changes, commenti, chat",
+  "Reason4": "<0>Intuitiva</0> Interfaccia a schede",
+  "Reason5": "Strumenti <0>multipli</0> di modifica, formattazione e styling",
+  "Reason6": "<0>Protezione JWT</0> da accessi non autorizzati",
+  "Reason7": "<0>Nessuna installazione richiesta</0>. Configurazione rapida.",
+  "Reason8": "<0>Codice open source</0> disponibile su GitHub",
+
+  "HowToStart": "Per cominciare",
+  "HowToStartStep1": "Installa <0>ONLYOFFICE Docs</0> sul tuo server oppure crea un account su <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Scarica il connettore di ONLYOFFICE da <0>GitHub</0>.",
+  "HowToStartStep3": "Installa e configura il connettore.",
+
+  "ReadDetailedInstructions": "Leggi le istruzioni dettagliate nel <0>Centro Assistenza</0>",
+
+  "NeedAnAppToConnect": "Hai bisogno di un'app per connettere ONLYOFFICE Docs al tuo servizio web preferito? O ne hai sviluppato una?"
+}

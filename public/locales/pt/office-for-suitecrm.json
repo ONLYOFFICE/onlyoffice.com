@@ -1,0 +1,32 @@
+{
+  "PageDescription": "Trabalhe com arquivos de escritório no módulo Documentos do SuiteCRM usando o ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Escritório online para <0>SuiteCRM</0>",
+  "Subheader": "Trabalhe com arquivos de escritório no módulo Documentos do SuiteCRM usando o ONLYOFFICE Docs",
+  "GetStarted": "Começar agora",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Compatibilidade total com docx, xlsx, pptx",
+
+  "MarketplaceConnectorTitle": "Projetado para integração perfeita com o SuiteCRM",
+  "MarketplaceConnectorDescription": "Obtenha o conector ONLYOFFICE para SuiteCRM agora em <0>GitHub</0>.",
+  "GetItNow": "Obter agora",
+
+  "WhyOO": "Por que o ONLYOFFICE Docs Cloud",
+  "WhySubheader": "ONLYOFFICE Docs Cloud é um pacote de escritório profissional para trabalhar com documentos de texto, planilhas, apresentações, formulários e PDFs.",
+  "Reason1": "<0>Ready-to-use</0> connector",
+  "Reason2": "<0>Editing and co-authoring office files</0> directly within the SuiteCRM Documents module",
+  "Reason3": "<0>Colaboração em tempo real</0>, controle de alterações, comentários e bate-papo",
+  "Reason4": "Interface <0>intuitiva</0> com abas",
+  "Reason5": "<0>Várias</0> ferramentas de edição, formatação e estilo",
+  "Reason6": "<0>Proteção JWT</0> a partir de acesso não autorizado",
+  "Reason7": "<0>Não requer instalação</0>. Configuração rápida.",
+  "Reason8": "<0>Código open-source</0> disponível no GitHub",
+
+  "HowToStart": "Como começar",
+  "HowToStartStep1": "Implante o <0>ONLYOFFICE Docs</0> no seu próprio servidor ou crie uma conta <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenha o conector ONLYOFFICE do <0>GitHub</0>.",
+  "HowToStartStep3": "Instale e configure o conector.",
+
+  "ReadDetailedInstructions": "Leia instruções detalhadas na <0>Central de Ajuda</0>",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço Web favorito? Ou você desenvolveu um?"
+}

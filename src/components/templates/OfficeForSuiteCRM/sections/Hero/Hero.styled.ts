@@ -52,7 +52,7 @@ export const StyledHeroLogo = styled.div`
 `;
 
 export const StyledHeroHeader = styled.div`
-  max-width: 800px;
+  max-width: 880px;
 
   h1 {
     margin-bottom: 16px;

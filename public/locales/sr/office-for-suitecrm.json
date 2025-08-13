@@ -1,0 +1,32 @@
+{
+  "PageDescription": "Radite sa kancelarijskim datotekama u SuiteCRM modulu Dokumenti koristeći ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Pregledajte, uređujte i sarađujte na dokumentima unutar <0>SuiteCRM</0>",
+  "Subheader": "Radite sa kancelarijskim datotekama u SuiteCRM modulu Dokumenti koristeći ONLYOFFICE Docs",
+  "GetStarted": "Počnite",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Potpuno kompatibilan sa docx, xlsx i pptx",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with SuiteCRM",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for SuiteCRM now from <0>GitHub</0>.",
+  "GetItNow": "Nabavite ga odmah",
+
+  "WhyOO": "Zašto ONLYOFFICE Docs Cloud",
+  "WhySubheader": "ONLYOFFICE Docs Cloud je profesionalni kancelarijski paket za rad sa tekstualnim dokumentima, tabelama, prezentacijama, obrascima i PDF-ovima.",
+  "Reason1": "<0>Spreman za upotrebu</0> konektor",
+  "Reason2": "<0>Uređivanje i koautorstvo kancelarijskih datoteka</0> direktno u okviru modula SuiteCRM dokumenata",
+  "Reason3": "<0>Saradnja u realnom vremenu</0>, praćenje promena, komentari, ćaskanje",
+  "Reason4": "<0>Intuitivan</0> interfejs sa karticama",
+  "Reason5": "<0>Višestruki</0> alati za uređivanje, formatiranje i stilizovanje",
+  "Reason6": "<0>JWT zaštita</0> od neovlašćenog pristupa",
+  "Reason7": "<0>Jednostavna instalacija</0> i brza konfiguracija",
+  "Reason8": "<0>Otvoreni izvorni kod</0> dostupan na GitHub-u",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Izaberite svoj plan i primenite <0>ONLYOFFICE Docs</0>.",
+  "HowToStartStep2": "Nabavite konektor sa <0>GitHub</0> i otpremite ga u svoj SuiteCRM.",
+  "HowToStartStep3": "Instalirajte otpremljen modul.",
+
+  "ReadDetailedInstructions": "Pročitajte detaljna uputstva na <0>GitHub</0>",
+
+  "NeedAnAppToConnect": "Treba vam aplikacija za povezivanje ONLYOFFICE Docs sa vašom omiljenom web uslugom? Ili ste možda već razvili jednu?"
+}

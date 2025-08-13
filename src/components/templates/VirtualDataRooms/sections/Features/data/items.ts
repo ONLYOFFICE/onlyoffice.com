@@ -29,6 +29,15 @@ export const items: IFeatureImageItem[] = [
     },
   },
   {
+    heading: "AdvancedRoleBased",
+    text: "AdvancedRoleBasedText",
+    image: {
+      url: "AdvancedRoleBasedImgUrl",
+      url2x: "AdvancedRoleBasedImgUrl2x",
+      height: 594,
+    },
+  },
+  {
     heading: "CostEffectiveForAnyBudget",
     text: "CostEffectiveForAnyBudgetDesc",
     image: {

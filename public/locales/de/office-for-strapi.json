@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Bearbeitung von Dokumenten in Strapi | ONLYOFFICE Docs",
+  "PageDescription": "Bearbeiten Sie DOCX, XLSX und PPTX und arbeiten Sie gemeinsam an Inhalten in Strapi",
+
+  "OnlineOfficeForConnector": "Online-Office für <0>Strapi</0>",
+  "Subheader": "Bearbeiten Sie mit ONLYOFFICE Docs Office-Dateien, die zur Strapi-Mediathek hinzugefügt wurden",
+  "GetStarted": "Los geht's!",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Volle Kompatibilität mit DOCX, XLSX und PPTX",
+
+  "MarketplaceConnectorTitle": "Entwickelt für die nahtlose Integration mit Strapi",
+  "MarketplaceConnectorDescription": "Erhalten Sie jetzt den ONLYOFFICE-Konnektor für Strapi aus dem <0>Strapi Market</0> oder <1>nmp-Verzeichnis</1>.",
+  "GetItNow": "Jetzt erhalten",
+
+  "WhyOO": "Das spricht für ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs ist eine selbst gehostete Office-Lösung für die Bearbeitung von Textdokumenten, Tabellen, Präsentationen und Formularen",
+  "Reason1": "<0>Gebrauchsfertige</0> Integrations-App",
+  "Reason2": "Einfache Installation über <0>Strapi Market</0> & schnelle Konfiguration",
+  "Reason3": "<0>Intuitive Oberfläche</0> mit Registerkarten",
+  "Reason4": "<0>Zahlreiche Tools</0> für Bearbeitung, Formatierung und Design",
+  "Reason5": "<0>Zusammenarbeit in Echtzeit</0>, Nachverfolgung von Änderungen, Kommentare, Chat",
+  "Reason6": "<0>Kostenlose Community</0>- und <0>skalierbare Enterprise</0>-Version",
+  "Reason7": "<0>JWT-Schutz</0> vor unbefugtem Zugriff",
+  "Reason8": "<0>Quellcode</0> auf GitHub verfügbar",
+
+  "HowToStart": "Erste Schritte",
+  "HowToStartStep1": "Stellen Sie <0>ONLYOFFICE Docs</0> auf Ihrem eigenen Server bereit oder erstellen Sie ein <1>Docs Cloud</1>-Konto.",
+  "HowToStartStep2": "Erhalten Sie den ONLYOFFICE-Konnektor vom <0>Strapi Market</0> oder <1>npm-Directory</1>.",
+  "HowToStartStep3": "Configurez le connecteur et activez JWT.",
+
+  "ReadDetailedInstructions": "Detaillierte Anweisungen finden Sie im <0>Hilfe-Center</0>",
+
+  "NeedAnAppToConnect": "Benötigen Sie eine App, um ONLYOFFICE mit Ihren Lieblings-Webdiensten zu verbinden? Oder haben Sie eine neue entwickelt?"
+}

@@ -43,21 +43,25 @@ export async function getServerSideProps({
 }: {
   locale: ILocale["locale"];
   query: {
-    id: string;
-    UnsubscribePage_testing: string;
+    id?: string;
+    UnsubscribePage_testing?: string;
   };
 }) {
-  const validateUnsubscribeData = await validateUnsubscribeId({ id: query.id });
-  const emailValue = validateUnsubscribeData.data?.email;
+  let email: string | null = null;
 
-  let email = null;
+  if (query.id) {
+    const validateUnsubscribeData = await validateUnsubscribeId({
+      id: query.id,
+    });
+    const emailValue = validateUnsubscribeData.data?.email;
 
-  if (typeof emailValue === "string") {
-    try {
-      const parsed = JSON.parse(emailValue);
-      email = parsed?.email || null;
-    } catch {
-      email = emailValue;
+    if (typeof emailValue === "string") {
+      try {
+        const parsed = JSON.parse(emailValue);
+        email = parsed?.email || null;
+      } catch {
+        email = emailValue;
+      }
     }
   }
 

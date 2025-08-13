@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Pregled i uređivanje dokumenata unutar Strapi | ONLYOFFICE Docs",
+  "PageDescription": "Izmenite DOCX, XLSX i PPTX datoteke i sarađujte na sadržaju u Strapi",
+
+  "OnlineOfficeForConnector": "Saradnja dokumenata i sadržaja za <0>Strapi</0>",
+  "Subheader": "Uređujte i koautorišite datoteke kancelarije u Strapi Media biblioteci koristeći ONLYOFFICE Docs.",
+  "GetStarted": "Počnite",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Potpuno kompatibilan sa docx, xlsx i pptx",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Strapi",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for Strapi now from the <0>Strapi Market</0> or <1>npm directory</1>.",
+  "GetItNow": "Nabavite ga odmah",
+
+  "WhyOO": "Zašto ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs je samohostovani kancelarijski paket za rad na tekstualnim dokumentima, tabelama, prezentacijama i obrascima",
+  "Reason1": "<0>Spreman za upotrebu</0> integracija plugin",
+  "Reason2": "Jednostavna instalacija sa <0>Strapi Market-a</0> i brza konfiguracija",
+  "Reason3": "<0>Intuitivan interfejs</0> sa karticama",
+  "Reason4": "<0>Višestruki</0> alati za uređivanje, formatiranje i stilizovanje",
+  "Reason5": "<0>Saradnja u realnom vremenu</0>, praćenje promena, komentari, ćaskanje",
+  "Reason6": "<0>Slobodna zajednica</0> i <0>skalabilna preduzeća</0> verzije",
+  "Reason7": "<0>JWT zaštita</0> od neovlašćenog pristupa",
+  "Reason8": "<0>Otvoreni izvorni kod</0> dostupan na GitHub-u",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Izaberite svoj plan i primenite <0>ONLYOFFICE Docs</0>.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>Strapi Market</0> or <1>npm directory</1>.",
+  "HowToStartStep3": "Instalirajte i konfigurišite aplikaciju za integraciju.",
+
+  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>",
+
+  "NeedAnAppToConnect": "Treba vam aplikacija za povezivanje ONLYOFFICE Docs sa vašom omiljenom web uslugom? Ili ste možda već razvili jednu?"
+}

@@ -21,6 +21,7 @@ const Link = ({
   textUnderline,
   hover,
   style,
+  ...rest
 }: ILink) => {
   const asProp = download ? "a" : undefined;
 
@@ -44,6 +45,7 @@ const Link = ({
       $textUnderline={textUnderline}
       $hover={hover}
       style={style}
+      {...rest}
     >
       {children || label}
     </StyledLink>

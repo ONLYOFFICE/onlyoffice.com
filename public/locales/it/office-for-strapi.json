@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Visualizzazione e modifica dei documenti in Strapi | ONLYOFFICE Docs",
+  "PageDescription": "Modifica file DOCX, XLSX e PPTX, e collabora ai contenuti in Strapi",
+
+  "OnlineOfficeForConnector": "Ufficio online per <0>Strapi</0>",
+  "Subheader": "Modifica e crea in collaborazione file di ufficio aggiunti alla Libreria multimediale Strapi utilizzando ONLYOFFICE Docs",
+  "GetStarted": "Inizia",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Completamente compatibile con docx, xlsx e pptx",
+
+  "MarketplaceConnectorTitle": "Progettato per un'integrazione perfetta con Strapi",
+  "MarketplaceConnectorDescription": "Ottieni ora il connettore ONLYOFFICE per Strapi da <0>Strapi Market</0> o <1>nmp directory</1>.",
+  "GetItNow": "Ottienilo ora",
+
+  "WhyOO": "Perché ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs è una suite per ufficio self-hosted per lavorare su documenti di testo, fogli di calcolo, presentazioni e moduli",
+  "Reason1": "Plugin di integrazione <0>pronto all'uso</0>",
+  "Reason2": "Installazione semplice da <0>Strapi Market</0> e configurazione rapida",
+  "Reason3": "<0>Interfaccia intuitiva</0> con schede",
+  "Reason4": "Strumenti <0>multipli</0> di modifica, formattazione e styling",
+  "Reason5": "<0>Collaborazione in tempo reale</0>, Track Changes, commenti, chat",
+  "Reason6": "<0>Versione gratuita Community</0> e <0>Versione scalabile Enterprise</0>",
+  "Reason7": "<0>Protezione JWT</0> da accessi non autorizzati",
+  "Reason8": "<0>Codice open source</0> disponibile su GitHub",
+
+  "HowToStart": "Per cominciare",
+  "HowToStartStep1": "Installa <0>ONLYOFFICE Docs</0> sul tuo server oppure crea un account su <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Scarica il connettore di ONLYOFFICE da <0>Strapi Market</0> o dalla <1>directory npm</1>.",
+  "HowToStartStep3": "Configura il connettore e abilita JWT.",
+
+  "ReadDetailedInstructions": "Leggi le istruzioni dettagliate nel <0>Centro Assistenza</0>",
+
+  "NeedAnAppToConnect": "Hai bisogno di un'app per connettere ONLYOFFICE Docs al tuo servizio web preferito? O ne hai sviluppato una?"
+}

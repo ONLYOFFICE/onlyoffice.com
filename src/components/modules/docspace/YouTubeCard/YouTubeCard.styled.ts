@@ -10,13 +10,14 @@ const StyledYouTubeCard = styled.div<{
   box-shadow: 0px 7px 25px rgba(85, 85, 85, 0.15);
   border-radius: ${(props) =>
     props.$borderRadius ? props.$borderRadius : "0"};
-  height: 100%;
 `;
 
 const StyledYouTubeCardImg = styled.div<{
   $videoImgUrl: IYouTubeCard["videoImgUrl"];
 }>`
   position: relative;
+  border: 5px solid #ffffff;
+  box-shadow: 0px 7px 25px rgba(85, 85, 85, 0.15);
   background-image: url(${(props) => props.$videoImgUrl});
   background-size: cover;
   background-position: center;

@@ -1,0 +1,56 @@
+{
+  "PageTitle": "高度なファイルセキュリティと透明性のために、バーチャルデータルームを使用する",
+  "PageDescription": "ONLYOFFICE DocSpaceで機密ビジネス情報の安全な保存と共有を管理する",
+
+  "UseVirtualDataRooms": "高度なファイルセキュリティと透明性のために、<0>バーチャルデータルーム</0>を使用する",
+  "OrganizeSecure": "ONLYOFFICE DocSpaceで機密ビジネス情報の安全な保存と共有を管理する",
+
+  "IdealForDueDiligence": "デューデリジェンスに最適",
+  "CompletelyOrganized": "完璧に整理された",
+  "HighLevelOfDataSecurity": "高度なデータセキュリティ",
+  "AdvancedRoleBased": "高度な役割別のフォーム記入",
+  "CostEffectiveForAnyBudget": "どのような予算にも対応できる費用対効果",
+
+  "CreateFreeAccount": "無料アカウントを登録",
+
+  "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
+
+  "IdealForDueDiligenceDesc": "デューデリジェンス、合併、他の企業とのプロジェクト作業、または共有データへのアクセスが必要なその他の共同事業の場合、VDRを使用します。",
+  "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/ideal.png",
+  "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/ideal@2x.png",
+
+  "CompletelyOrganizedDesc": "すべてのコンテンツを自動的にインデックス化し、追跡することで、優れた記録を維持し、整理された状態を保ちます。ルームファイル構造のサマリーレポートを生成します。",
+  "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/organized.png",
+  "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/organized@2x.png",
+
+  "HighLevelOfDataSecurityDesc": "透かしを挿入したり、ファイルの有効期間を設定したり、ダウンロードやコピーを制限したりして、機密記録を保護します。",
+  "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/security.png",
+  "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/security@2x.png",
+
+  "AdvancedRoleBasedText": "組織構造に完全に一致する役割を割り当て、チームメンバーを招待できます。フォームの進捗状況をリアルタイムで追跡。完了したフォームと保留中のフォームを簡単に確認し、それらを確定し、完了したフォームのバージョンを取得して、スムーズなプロセスを実現できます。",
+  "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/advanced.png",
+  "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/advanced@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "管理者のみが有料で、通常のユーザーとゲストは無料で何人でも追加できます。小規模チーム向けの無料STARTUPプランもご利用いただけます。ONLYOFFICE DocSpaceは、中小企業でも大企業でも、すべてのビジネスに適しています。企業データを完全に管理したい場合は、自社のサーバーにDocSpaceをインストールすることも可能です。",
+  "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget.png",
+  "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "DocSpaceバーチャルデータルームについて詳しく",
+
+  "HelpCenter": "ヘルプセンター",
+  "HelpCenterDesc": "効果的な作業のための詳細なユーザーガイドをチェック",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "詳しくはこちら",
+  "LearnMoreLink": "https://helpcenter.onlyoffice.com/docspace",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "ビデオガイドでONLYOFFICE DocSpaceを使いこなす",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "今すぐ見る",
+
+  "CustomerTestimonial": "お客様のサクセスストーリー",
+  "HowKinderhausBerlinSharesAndCollaborates": "Kinderhaus BerlinがONLYOFFICE DocSpaceで機密ファイルを共有し、共同作業する方法",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "ストーリーを読む"
+}
