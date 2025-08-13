@@ -1,0 +1,32 @@
+{
+  "PageDescription": "ONLYOFFICE Docsを使用して、SuiteCRMの「文書」モジュールでオフィスファイルを扱うことができます。",
+
+  "OnlineOfficeForConnector": "<0>SuiteCRM</0>のオンラインオフィス",
+  "Subheader": "ONLYOFFICE Docsを使用して、SuiteCRMの「文書」モジュールでオフィスファイルを扱うことができます。",
+  "GetStarted": "スタートアップ",
+  "FullyCompatibleWithDocxXlsxAndPptx": "docx, xlsx, pptxに完全対応",
+
+  "MarketplaceConnectorTitle": "SuiteCRM とシームレスに連携するよう設計されています",
+  "MarketplaceConnectorDescription": "SuiteCRM 用の ONLYOFFICE コネクターを<0>GitHub</0> から入手いただけます。",
+  "GetItNow": "今すぐ入手",
+
+  "WhyOO": "なぜONLYOFFICE Docs Cloud",
+  "WhySubheader": "ONLYOFFICE Docs Cloudは、テキスト文書、スプレッドシート、プレゼンテーション、フォーム、PDFを扱うためのプロフェッショナルなオフィススイートです。",
+  "Reason1": "<0>すぐに使える</0>コネクター",
+  "Reason2": "SuiteCRM Documentsモジュール内で直接、オフィスファイルの編集と共同作業が可能です。",
+  "Reason3": "<0>リアルタイムのコラボレーション</0>、変更履歴、コメント、チャット",
+  "Reason4": "タブ型の<0>直感的</0>なインターフェイス",
+  "Reason5": "<0>複数</0>の編集、フォーマット、スタイリングツール",
+  "Reason6": "不正アクセスからの<0>JWT</0>保護",
+  "Reason7": "<0>インストール不要。</0>素早い設定。",
+  "Reason8": "<0>オープンソースコード</0>はGitHubで公開",
+
+  "HowToStart": "利用方法：",
+  "HowToStartStep1": "ご自身のサーバーに<0>ONLYOFFICE Docs</0>を展開するか、<1>Docs Cloud</1>アカウントを作成します。",
+  "HowToStartStep2": "<0>GitHub</0>からONLYOFFICEコネクタを取得します。",
+  "HowToStartStep3": "コネクタをインストールし、設定します。",
+
+  "ReadDetailedInstructions": "詳細な手順については、<0>ヘルプセンター</0>を参照してください。",
+
+  "NeedAnAppToConnect": "お好みのウェブ サービスに ONLYOFFICE を接続するアプリが必要ですか？  アプリを開発しましたか？"
+}
