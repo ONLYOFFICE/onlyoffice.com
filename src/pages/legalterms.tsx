@@ -9,7 +9,7 @@ import { LegalTermsTemplate } from "@src/components/templates/LegalTerms";
 import { Footer } from "@src/components/modules/Footer";
 
 const LegalTermsPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("legal-terms");
+  const { t } = useTranslation("legalterms");
 
   return (
     <Layout>
@@ -35,7 +35,7 @@ const LegalTermsPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "legal-terms"])),
+      ...(await serverSideTranslations(locale, ["common", "legalterms"])),
       locale,
     },
   };
