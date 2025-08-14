@@ -8,6 +8,7 @@ interface IDownloadDocsEnterpriseEmail {
   phone: IDownloadModalData["phone"];
   companyName: IDownloadModalData["companyName"];
   website: IDownloadModalData["website"];
+  numberEmployees: string;
   comment: IDownloadModalData["comment"];
   buttonId: IDownloadModalData["buttonId"];
   operatingSystem: string;
@@ -27,6 +28,7 @@ const PartnershipRequestEmail = ({
   phone,
   companyName,
   website,
+  numberEmployees,
   comment,
   buttonId,
   operatingSystem,
@@ -103,6 +105,11 @@ const PartnershipRequestEmail = ({
                     <b>Company Website</b>
                     <br />
                     ${website}
+                  </p>
+                  <p style="margin-top:5px;">
+                      <b>Company Size</b>
+                      <br />
+                      ${numberEmployees}
                   </p>
                   <p style="margin-top:5px;">
                     <b>Comment</b>

@@ -20,6 +20,9 @@
   "CorporateEmailAddress": "Corporate email address",
   "Website": "Website",
   "WebsiteIsEmpty": "Website is empty",
+  "NumberOfEmployees": "Number of employees",
+  "NumberOfEmployeesIsEmpty": "Number of employees is empty",
+  "NumberOfEmployeesFormatError": "Enter an integer greater than 0",
 
   "GetItNowText": "By clicking Submit request you understand and agree to our <0>Privacy statement</0>."
 }

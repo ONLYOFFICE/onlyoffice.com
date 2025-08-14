@@ -45,6 +45,11 @@ const PartnershipRequestForm = ({
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
 
+  const validateEmployeesCount = (value: string) => {
+    const num = Number(value);
+    return Number.isInteger(num) && num > 0;
+  };
+
   const [isEmpty, setIsEmpty] = useState({
     firstName: false,
     lastName: false,
@@ -53,6 +58,7 @@ const PartnershipRequestForm = ({
     phone: false,
     companyName: false,
     website: false,
+    numberEmployees: false,
     comment: false,
   });
   const [isFormValid, setIsFormValid] = useState(false);
@@ -70,6 +76,7 @@ const PartnershipRequestForm = ({
   const isCompanyValid = formData.companyName.length > 0;
   // const isPhoneValid = formData.phone.length > 0;
   const isWebsiteValid = formData.website.length > 0 && validateWebsite(formData.website);
+  const isEmployeesValid = formData.numberEmployees.length > 0 && validateEmployeesCount(formData.numberEmployees);
 
   const checkFormValid = useCallback(() => {
     setIsFormValid(
@@ -78,9 +85,10 @@ const PartnershipRequestForm = ({
       isEmailValid &&
       isCompanyValid &&
       isWebsiteValid &&
+      isEmployeesValid &&
       isCaptchaValid,
     );
-  }, [isFirstNameValid, isLastNameValid, isEmailValid, isCompanyValid, isWebsiteValid, isCaptchaValid]);
+  }, [isFirstNameValid, isLastNameValid, isEmailValid, isCompanyValid, isWebsiteValid, isEmployeesValid, isCaptchaValid]);
 
   useEffect(() => {
     checkFormValid();
@@ -406,6 +414,37 @@ const PartnershipRequestForm = ({
               ? "error"
               : formData.website.length > 0
                 ? validateWebsite(formData.website)
+                  ? "success"
+                  : "error"
+                : "default"
+          }
+        />
+
+        <Input
+          id="partnerEmployeesCount"
+          onChange={(e) => handleInputChange("numberEmployees", e.target.value)}
+          onBlur={() => {
+            setIsEmpty((prev) => ({
+              ...prev,
+              numberEmployees: formData.numberEmployees.length === 0,
+            }));
+          }}
+          value={formData.numberEmployees}
+          label={t("NumberOfEmployees")}
+          placeholder={t("NumberOfEmployees")}
+          caption={
+            formData.numberEmployees.length === 0
+              ? t("NumberOfEmployeesIsEmpty")
+              : !validateEmployeesCount(formData.numberEmployees)
+                ? t("NumberOfEmployeesFormatError")
+                : ""
+          }
+          required
+          status={
+            isEmpty.numberEmployees
+              ? "error"
+              : formData.numberEmployees.length > 0
+                ? validateEmployeesCount(formData.numberEmployees)
                   ? "success"
                   : "error"
                 : "default"

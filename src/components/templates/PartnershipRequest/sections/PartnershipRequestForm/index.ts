@@ -1,5 +1,5 @@
 export { PartnershipRequestForm } from "./PartnershipRequestForm";
 export type {
-  IDownloadModalData,
+  IPartnershipRequestData,
   IDownloadModalOnSubmitRequest,
 } from "./PartnershipRequestForm.types";

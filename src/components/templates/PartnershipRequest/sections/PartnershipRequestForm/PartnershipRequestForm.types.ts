@@ -4,7 +4,7 @@ export interface IDownloadModalOnSubmitRequest {
   region: string;
 }
 
-export interface IDownloadModalData {
+export interface IPartnershipRequestData {
   firstName: string;
   lastName: string;
   positionTitle: string;
@@ -12,6 +12,7 @@ export interface IDownloadModalData {
   phone: string;
   companyName: string;
   website: string;
+  numberEmployees: string;
   comment: string;
   buttonId: string;
   type: string;
@@ -24,9 +25,9 @@ interface IApiResponse {
 
 export interface IDownloadModal {
   locale: string;
-  initialFormData: IDownloadModalData;
-  formData: IDownloadModalData;
-  setFormData: React.Dispatch<React.SetStateAction<IDownloadModalData>>;
+  initialFormData: IPartnershipRequestData;
+  formData: IPartnershipRequestData;
+  setFormData: React.Dispatch<React.SetStateAction<IPartnershipRequestData>>;
   byClickingText: React.ReactNode;
   onSubmitRequest: (
     params: IDownloadModalOnSubmitRequest,

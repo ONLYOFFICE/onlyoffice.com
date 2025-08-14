@@ -8,7 +8,7 @@ import {
 import { IHero } from "./Hero.types";
 import {
   PartnershipRequestForm,
-  IDownloadModalData,
+  IPartnershipRequestData,
   IDownloadModalOnSubmitRequest,
 } from "../PartnershipRequestForm";
 import { Section } from "@src/components/ui/Section";
@@ -18,7 +18,7 @@ import { Link } from "@src/components/ui/Link";
 const Hero = ({ locale }: IHero) => {
   const { t } = useTranslation("partnership-request");
 
-  const initialFormData: IDownloadModalData = {
+  const initialFormData: IPartnershipRequestData = {
     firstName: "",
     lastName: "",
     positionTitle: "",
@@ -26,6 +26,7 @@ const Hero = ({ locale }: IHero) => {
     phone: "",
     companyName: "",
     website: "",
+    numberEmployees: "",
     comment: "",
     buttonId: "",
     type: "",
@@ -51,6 +52,7 @@ const Hero = ({ locale }: IHero) => {
         phone: locale === "zh" && !formData.phone ? "+86" : formData.phone,
         companyName: formData.companyName,
         website: formData.website,
+        numberEmployees: formData.numberEmployees,
         comment: formData.comment,
         buttonId: "partnerRequestBtn",
         from,
