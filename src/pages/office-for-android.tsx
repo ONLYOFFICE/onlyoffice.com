@@ -43,6 +43,7 @@ export async function getStaticProps({ locale }: ILocale) {
       ...(await serverSideTranslations(locale, [
         "common",
         "office-for-android",
+        "DownloadButton",
       ])),
       locale,
     },
