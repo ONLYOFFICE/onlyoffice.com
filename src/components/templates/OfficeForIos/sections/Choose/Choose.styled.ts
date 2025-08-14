@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
-import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
 
 const StyledChooseSection = styled(Section)`
