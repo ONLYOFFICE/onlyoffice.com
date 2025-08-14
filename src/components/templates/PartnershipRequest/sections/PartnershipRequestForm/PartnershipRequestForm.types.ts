@@ -7,6 +7,7 @@ export interface IDownloadModalOnSubmitRequest {
 export interface IDownloadModalData {
   firstName: string;
   lastName: string;
+  positionTitle: string;
   email: string;
   phone: string;
   companyName: string;

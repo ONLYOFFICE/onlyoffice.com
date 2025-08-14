@@ -48,6 +48,7 @@ const PartnershipRequestForm = ({
   const [isEmpty, setIsEmpty] = useState({
     firstName: false,
     lastName: false,
+    positionTitle: false,
     email: false,
     phone: false,
     companyName: false,
@@ -263,6 +264,30 @@ const PartnershipRequestForm = ({
         </StyledNameWrapper>
 
         <Input
+          id="partnerPosition"
+          onChange={(e) => handleInputChange("positionTitle", e.target.value)}
+          onBlur={() => {
+            setIsEmpty((prev) => ({
+              ...prev,
+              positionTitle: formData.positionTitle.length === 0,
+            }));
+          }}
+          value={formData.positionTitle}
+          label={t("PositionTitle")}
+          placeholder={t("PositionTitle")}
+          caption={t("PositionIsEmpty")}
+          required
+          status={
+            isEmpty.positionTitle
+              ? "error"
+              : formData.positionTitle
+                ? "success"
+                : "default"
+          }
+        />
+
+        <Input
+          id="partnerEmail"
           onChange={(e) => handleInputChange("email", e.target.value)}
           onBlur={() => {
             setIsEmpty((prev) => ({
@@ -334,6 +359,7 @@ const PartnershipRequestForm = ({
           }}
           value={formData.companyName}
           label={t2("CompanyName")}
+          placeholder={t2("CompanyName")}
           caption={t2("CompanyNameIsEmpty")}
           required
           status={

@@ -3,13 +3,13 @@ import { IDownloadModalData } from "@src/components/widgets/download/DownloadMod
 interface IDownloadDocsEnterpriseEmail {
   firstName: IDownloadModalData["fullName"];
   lastName: string;
+  positionTitle: string;
   email: IDownloadModalData["email"];
   phone: IDownloadModalData["phone"];
   companyName: IDownloadModalData["companyName"];
   website: IDownloadModalData["website"];
   comment: IDownloadModalData["comment"];
   buttonId: IDownloadModalData["buttonId"];
-  position: string;
   operatingSystem: string;
   communicationLanguage: string;
   companySize: string;
@@ -22,13 +22,13 @@ interface IDownloadDocsEnterpriseEmail {
 const PartnershipRequestEmail = ({
   firstName,
   lastName,
+  positionTitle,
   email,
   phone,
   companyName,
   website,
   comment,
   buttonId,
-  position,
   operatingSystem,
   communicationLanguage,
   companySize,
@@ -80,6 +80,11 @@ const PartnershipRequestEmail = ({
                     ${lastName}
                   </p>
                   <p style="margin-top:5px;">
+                    <b>Position</b>
+                    <br />
+                    ${positionTitle}
+                  </p>
+                  <p style="margin-top:5px;">
                     <b>Email</b>
                     <br />
                     ${email}
@@ -108,11 +113,6 @@ const PartnershipRequestEmail = ({
                     <b>Button_Id (what wanted to download)</b>
                     <br />
                     ${buttonId}
-                  </p>
-                  <p style="margin-top:5px;">
-                    <b>Position</b>
-                    <br />
-                    ${position}
                   </p>
                   <p style="margin-top:5px;">
                     <b>Operating system</b>

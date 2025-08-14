@@ -21,6 +21,7 @@ const Hero = ({ locale }: IHero) => {
   const initialFormData: IDownloadModalData = {
     firstName: "",
     lastName: "",
+    positionTitle: "",
     email: "",
     phone: "",
     companyName: "",
@@ -45,6 +46,7 @@ const Hero = ({ locale }: IHero) => {
         referer: document.referrer,
         firstName: formData.firstName,
         lastName: formData.lastName,
+        positionTitle: formData.positionTitle,
         email: formData.email,
         phone: locale === "zh" && !formData.phone ? "+86" : formData.phone,
         companyName: formData.companyName,
