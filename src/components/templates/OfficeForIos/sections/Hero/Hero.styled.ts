@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
+import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 
