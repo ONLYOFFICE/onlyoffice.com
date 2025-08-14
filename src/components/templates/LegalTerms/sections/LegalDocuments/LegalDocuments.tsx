@@ -11,7 +11,7 @@ import {
 import { items } from "./data/items";
 
 const LegalDocuments = () => {
-  const { t } = useTranslation("legal-terms");
+  const { t } = useTranslation("legalterms");
 
   return (
     <Section
@@ -27,11 +27,19 @@ const LegalDocuments = () => {
               <StyledDocumentTitle level={3}>
                 {t(item.title)}
               </StyledDocumentTitle>
-              <StyledLink color="main" textUnderline={true} href={item.link} isOpenSource={item.isOpenSource}>
+              <StyledLink
+                color="main"
+                textUnderline={true}
+                href={item.link}
+                isOpenSource={item.isOpenSource}
+              >
                 {t(item.linkText)}
               </StyledLink>
               {item.isOpenSource && (
-                <StyledOpenSourceLink color="main" href={"https://www.gnu.org/licenses/agpl-3.0.en.html"}>
+                <StyledOpenSourceLink
+                  color="main"
+                  href={"https://www.gnu.org/licenses/agpl-3.0.en.html"}
+                >
                   {t("OpenSource")}
                 </StyledOpenSourceLink>
               )}

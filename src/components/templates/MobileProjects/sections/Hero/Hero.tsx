@@ -3,10 +3,11 @@ import { Container } from "@src/components/ui/Container";
 
 import {
   StyledSubtitle,
-  StyledButton,
   StyledSection,
   StyledHeading,
+  StyledButton,
 } from "./Hero.styled";
+import { DownloadButton } from "@src/components/ui/DownloadButton";
 
 const Hero = () => {
   const { t } = useTranslation("mobile-projects");
@@ -21,13 +22,15 @@ const Hero = () => {
       <Container>
         <StyledHeading level={1} label={t("HeroTitle")} />
         <StyledSubtitle>{t("HeroSubtitle")}</StyledSubtitle>
-        <StyledButton
-          $backgroundUrl={t("iTunesButtonImg")}
-          as="a"
-          href={t("iTunesLink")}
-          target="_blank"
-          rel="noopener"
-        />
+        <StyledButton>
+          <DownloadButton
+            platform="app-store"
+            variant="secondary"
+            href={t("iTunesLink")}
+            target="_blank"
+            rel="noopener"
+          />
+        </StyledButton>
       </Container>
     </StyledSection>
   );

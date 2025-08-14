@@ -3,7 +3,6 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { Button } from "@src/components/ui/Button";
 
 const StyledHeading = styled(Heading)`
   max-width: 544px;
@@ -36,20 +35,10 @@ const StyledSubtitle = styled(Text)`
   }
 `;
 
-const StyledButton = styled(Button)<{
-  $backgroundUrl: string;
-}>`
-  display: block;
-  width: 170px;
-  height: 58px;
-  background-image: ${(props) => `url(${props.$backgroundUrl})`};
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  z-index: 2;
-
+const StyledButton = styled.div`
   @media ${device.tablet} {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
 `;
 

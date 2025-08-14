@@ -4,7 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { StyledContainer, StyledDescription } from "./Hero.styled";
 
 const Hero = () => {
-  const { t } = useTranslation("legal-terms");
+  const { t } = useTranslation("legalterms");
 
   return (
     <Section

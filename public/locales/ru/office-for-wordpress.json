@@ -1,37 +1,77 @@
 {
+  "PageTitle": "Онлайн офис для WordPress",
+  "PageDescription": "Работайте с офисными файлами в вашей учетной записи WordPress",
+
+  "OnlineOfficeForConnector": "Онлайн офис для WordPress",
+  "Subheader": "Работайте с офисными файлами в вашей учетной записи WordPress",
+  "GetStarted": "Начать работу",
+  "RequestFreeDemo": "ЗАПРОСИТЬ БЕСПЛАТНУЮ ДЕМО-ВЕРСИЮ",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Полная совместимость с форматами Microsoft Office",
+
+  "DocspaceAppTitle": "Приложение <0>ONLYOFFICE DocSpace</0> для WordPress",
+  "DocspaceAppHeader": "Встраивайте офисные документы в ваш сайт WordPress",
+  "DocspaceAppTab1Label": "Создавайте, загружайте и встраивайте текстовые документы, электронные таблицы, презентации или PDF-файлы в ваш веб-сайт",
   "DocspaceAppTab1ImgUrl": "/images/templates/office-for-wordpress/docspace-app/ru/screen1.png",
   "DocspaceAppTab1ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/ru/screen1@2x.png",
-
+  "DocspaceAppTab2Label": "Встройте всю комнату в вашу веб-страницу и разрешите посетителям просматривать документы прямо в браузере",
   "DocspaceAppTab2ImgUrl": "/images/templates/office-for-wordpress/docspace-app/ru/screen2.png",
   "DocspaceAppTab2ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/ru/screen2@2x.png",
-
+  "DocspaceAppTab3Label": "Интегрируйте сложные PDF-формы, чтобы заполнять их в режиме реального времени. Автоматически собирайте и оперативно анализируйте данные",
+  "soon": "скоро",
   "DocspaceAppTab3ImgUrl": "/images/templates/office-for-wordpress/docspace-app/ru/screen3.png",
   "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/ru/screen3@2x.png",
-
+  "DocspaceAppTab4Label": "Ограничьте загрузку, печать и копирование документов с вашего сайта",
   "DocspaceAppTab4ImgUrl": "/images/templates/office-for-wordpress/docspace-app/ru/screen4.png",
   "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/ru/screen4@2x.png",
 
+  "DocspaceAppScreen2Header": "Эффективно управляйте документами в вашей учетной записи WordPress",
+  "DocspaceAppScreen2Tab1Label": "Создайте безопасное пространство для всех ваших документов. Легко получайте к нему доступ в любом месте и в любое время",
   "DocspaceAppScreen2Tab1ImgUrl": "/images/templates/office-for-wordpress/account/ru/screen1.png",
   "DocspaceAppScreen2Tab1ImgUrl2x": "/images/templates/office-for-wordpress/account/ru/screen1@2x.png",
-
+  "DocspaceAppScreen2Tab2Label": "Организуйте свои личные файлы и создайте комнаты для деловых документов",
   "DocspaceAppScreen2Tab2ImgUrl": "/images/templates/office-for-wordpress/account/ru/screen2.png",
   "DocspaceAppScreen2Tab2ImgUrl2x": "/images/templates/office-for-wordpress/account/ru/screen2@2x.png",
-
+  "DocspaceAppScreen2Tab3Label": "Предоставьте гибкие права доступа: редактирование, комментирование, рецензирование или просмотр",
   "DocspaceAppScreen2Tab3ImgUrl": "/images/templates/office-for-wordpress/account/ru/screen3.png",
   "DocspaceAppScreen2Tab3ImgUrl2x": "/images/templates/office-for-wordpress/account/ru/screen3@2x.png",
-
+  "DocspaceAppScreen2Tab4Label": "Редактируйте документы и работайте над ними вместе с другими пользователями WordPress в режиме реального времени",
   "DocspaceAppScreen2Tab4ImgUrl": "/images/templates/office-for-wordpress/account/ru/screen4.png",
   "DocspaceAppScreen2Tab4ImgUrl2x": "/images/templates/office-for-wordpress/account/ru/screen4@2x.png",
 
+  "MarketplaceConnectorTitle": "Создан для органичной работы в WordPress",
+  "MarketplaceConnectorDescription": "Установите приложение ONLYOFFICE DocSpace для WordPress из каталога плагинов WordPress уже сегодня.",
+
+  "DocsAppTitle": "Приложение <0>ONLYOFFICE Docs</0> для WordPress",
+  "DocsAppHeader": "Добавляйте офисные документы на ваши страницы WordPress",
+  "DocsAppTab1Label": "Добавляйте блоки ONLYOFFICE при создании поста, чтобы вставить документ во встроенном режиме",
   "DocsAppTab1ImgUrl": "/images/templates/office-for-wordpress/docs-app/ru/screen1.png",
   "DocsAppTab1ImgUrl2x": "/images/templates/office-for-wordpress/docs-app/ru/screen1@2x.png",
-
+  "DocsAppTab2Label": "Редактируйте текстовые документы, электронные таблицы и презентации, загруженные в WordPress, из панели администратора",
   "DocsAppTab2ImgUrl": "/images/templates/office-for-wordpress/docs-app/ru/screen2.png",
   "DocsAppTab2ImgUrl2x": "/images/templates/office-for-wordpress/docs-app/ru/screen2@2x.png",
-
+  "DocsAppTab3Label": "Работайте над офисными файлами вместе с другими администраторами WordPress в режиме реального времени",
   "DocsAppTab3ImgUrl": "/images/templates/office-for-wordpress/docs-app/ru/screen3.png",
   "DocsAppTab3ImgUrl2x": "/images/templates/office-for-wordpress/docs-app/ru/screen3@2x.png",
 
+  "WhyOO": "Почему ONLYOFFICE?",
+  "Reason1": "Надежный набор инструментов редактирования, форматирования и работы со стилями. <0>Интегрированный ИИ-помощник</0> (ChatGPT или ZhiPu Copilot).",
+  "Reason2": "Совместное редактирование в <0>реальном времени</0> и в режиме блокировки абзацев, рецензирование, история версий, сравнение документов, комментарии и упоминания.",
+  "Reason3": "<0>Встроенный чат и Telegram</0>. Плагины Jitsi и Rainbow для общения в режиме реального времени.",
+  "Reason4": "Поддержка более <0>50 форматов</0>. Полная совместимость с форматами MS Office: DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Улучшенная безопасность</0>. Гибкие права доступа и JWT. Отслеживание активности и отчеты об аудите. Шифрование при хранении и при передаче. Открытый исходный код.",
+  "Reason6": "<0>Бесплатный тарифный план, чтобы начать</0>. Тарифный план Business, чтобы пригласить больше администраторов, получить более объемное хранилище, улучшенную безопасность и профессиональную техническую поддержку. Решение для размещения на собственном сервере для полного контроля над вашими данными.",
+
+  "HowToStart": "Как начать",
+  "HowToStartStep1Docspace": "Создайте бесплатную <0>учетную запись DocSpace</0>.",
+  "HowToStartStep2Docspace": "Получите приложение для интеграции из <0>каталога плагинов WordPress</0>.",
+  "HowToStartStep3": "Скачайте и настройте приложение для интеграци.",
+  "ReadDetailedInstructionsDocSpace": "Ознакомьтесь с подробными инструкциями в <0>Справочном центре</0>",
+
+  "HowToStartStep1Docs": "Разверните <0>ONLYOFFICE Docs</0> на собственном сервере или зарегистрируйтесь в <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2Docs": "Получите приложение для интеграции на <0>GitHub</0> или из <1>каталога плагинов WordPress</1>.",
   "HowToStartStep3DocsImgUrl": "/images/templates/office-for-wordpress/how-to-start/ru/step3-dc.svg",
-  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/ru/step3-ds.svg"
+  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/ru/step3-ds.svg",
+  "ReadDetailedInstructionsDocs": "Прочтите подробные инструкции на <0>GitHub</0> и в <1>Справочном центре</1>",
+
+  "NeedAnAppToConnect": "Необходимо приложение для подключения ONLYOFFICE к вашему любимому веб-сервису? Или вы разработали такой сервис?"
 }

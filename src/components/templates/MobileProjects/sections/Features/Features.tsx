@@ -6,7 +6,6 @@ import {
   StyledList,
   StyledItem,
   StyledIcon,
-  StyledButton,
   StyledImageContent,
   StyledContainer,
   StyledText,
@@ -14,6 +13,7 @@ import {
 } from "./Features.styled";
 
 import { items } from "./data/items";
+import { DownloadButton } from "@src/components/ui/DownloadButton";
 
 const Features = () => {
   const { t } = useTranslation("mobile-projects");
@@ -42,9 +42,9 @@ const Features = () => {
               </StyledItem>
             ))}
           </StyledList>
-          <StyledButton
-            $backgroundUrl={t("iTunesButtonImg")}
-            as="a"
+          <DownloadButton
+            platform="app-store"
+            variant="secondary"
             href={t("iTunesLink")}
             target="_blank"
             rel="noopener"
