@@ -11,8 +11,6 @@
   "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/fr/hero-phone.png",
   "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/fr/hero-phone-2x.png",
 
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.fr.svg",
-
   "FeaturesItemHeadingFull": "Traitement de texte",
   "FeaturesItemTextMakeUse": "Utiliser plusieurs outils de traitement de texte : mise en forme des pages, paragraphes et textes, tableaux, formes automatiques, graphiques, etc. Créez des documents texte, peu importe leur taille et leur complexité. Imprimez-les via AirPrint.",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/fr/img-tablet-1.png",
@@ -93,5 +91,4 @@
   "LearnMoreTextHowMobile": "Comment fonctionne l'intégration mobile",
   "LearnMoreSubtitleLearn2": "En savoir plus",
   "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/fr/2022/07/onlyoffice-pour-les-developpeurs-comment-fonctionne-lintegration-mobile/"
-
 }

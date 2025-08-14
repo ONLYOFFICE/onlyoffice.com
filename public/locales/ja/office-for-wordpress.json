@@ -1,0 +1,53 @@
+{
+  "PageTitle": "WordPress用オンラインオフィス",
+  "PageDescription": "WordPressアカウントからオフィスファイルを操作",
+
+  "OnlineOfficeForConnector": "WordPress用オンラインオフィス",
+  "Subheader": "WordPressアカウントからオフィスファイルを操作",
+  "GetStarted": "スタートアップ",
+  "RequestFreeDemo": "無料デモをリクエスト",
+  "FullyCompatibleWithDocxXlsxAndPptx": "docx, xlsx, pptxに完全対応",
+
+  "DocspaceAppTitle": "WordPress用<0>ONLYOFFICE DocSpace</0>アプリ",
+  "DocspaceAppHeader": "WordPressサイトにオフィス文書を埋め込み",
+  "DocspaceAppTab1Label": "ドキュメント、シート、スライド、またはPDFを作成、アップロードし、ウェブサイトに埋め込みます",
+  "DocspaceAppTab2Label": "訪問者がブラウザで文書を閲覧できるように、部屋全体をウェブページに埋め込みます",
+  "DocspaceAppTab3Label": "オンラインで記入するための複雑なPDFフォームを統合します。データを自動的に収集・分析",
+  "soon": "まもなく",
+  "DocspaceAppTab4Label": "ウェブサイトからのドキュメントのダウンロード、印刷、コピーを制限します",
+
+  "DocspaceAppScreen2Header": "WordPressアカウントからドキュメントを効率的に管理",
+  "DocspaceAppScreen2Tab1Label": "すべてのドキュメントを安全に保管。いつでもどこでも簡単にアクセスできます",
+  "DocspaceAppScreen2Tab2Label": "個人的なファイルを整理し、ビジネス文書用の部屋を作成します",
+  "DocspaceAppScreen2Tab3Label": "編集、コメント、レビュー、閲覧のみなど、柔軟なアクセス権限を提供します",
+  "DocspaceAppScreen2Tab4Label": "他のWordPressユーザーとオンラインで文書を編集し、共同作業できます",
+
+  "MarketplaceConnectorTitle": "WordPressでシームレスに動作するように設計されている",
+  "MarketplaceConnectorDescription": "WordPressプラグインディレクトリからONLYOFFICE DocSpaceアプリをインストールしましょう。",
+
+  "DocsAppTitle": "WordPress用<0>ONLYOFFICE Docs</0>アプリ",
+  "DocsAppHeader": "WordPressページにオフィス文書を追加",
+  "DocsAppTab1Label": "埋め込みモードでドキュメントを挿入するONLYOFFICEブロックを投稿に追加します",
+  "DocsAppTab2Label": "WordPressにアップロードされたドキュメント、シート、スライドを管理者ダッシュボードで編集",
+  "DocsAppTab3Label": "他のWordPress管理者とリアルタイムでオフィスファイルを共同編集",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "Reason1": "編集、フォーマット、スタイリングツールの強力なセット。<0>統合されたAIヘルパー</0>（ChatGPTまたはZhiPu Copilot）。",
+  "Reason2": "<0>リアルタイムで</0>段落ロックされた共同編集、レビュー、バージョン履歴、ドキュメント比較、コメント＆メンション。",
+  "Reason3": "<0>チャットとTelegramの統合</0>。 リアルタイムコミュニケーションのためのJitsiとRainbowプラグイン。",
+  "Reason4": "<0>50以上のファイル形式をサポート</0>。MS Officeフォーマットとの完全な互換性： docx、xlsx、pptx。",
+  "Reason5": "<0>セキュリティ強化</0>。柔軟なアクセス権とJWT。アクティビティ追跡と監査レポート。保存時および転送時の暗号化。オープンソースコード。",
+  "Reason6": "<0>まずは無料プランから</0>。BUSINESSプランでは、より多くの管理者、より大きなストレージ、強化されたセキュリティ、プロフェッショナルなサポートをご利用いただけます。お客様のデータを完全に管理するセルフホストソリューションです。",
+
+  "HowToStart": "開始方法",
+  "HowToStartStep1Docspace": "無料の<0>DocSpace</0>アカウントを<1>作成します。</1>",
+  "HowToStartStep2Docspace": "<0>WordPressプラグインディレクトリ</0>から統合アプリを取得します。",
+  "HowToStartStep3": "統合アプリをアップロードし、設定します。",
+  "ReadDetailedInstructionsDocSpace": "詳細な手順については、<0>ヘルプセンター</0>を参照してください。",
+
+  "HowToStartStep1Docs": "<0>ONLYOFFICE Docs</0>を自分のサーバーにデプロイするか、<1>ONLYOFFICE Docs Cloud</1>にサインアップできます",
+  "HowToStartStep2Docs": "<0>GitHub</0>または<1>WordPress Plugin Directory</1>から連携アプリを入手します。",
+  "ReadDetailedInstructionsDocs": "<0>GitHub</0>と<1>ヘルプセンター</1>で詳しい説明を読む",
+
+  "NeedAnAppToConnect": "ONLYOFFICEとお気に入りのウェブサービスをつなぐアプリが必要ですか？または開発済みですか？"
+}

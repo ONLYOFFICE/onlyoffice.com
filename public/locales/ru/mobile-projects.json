@@ -4,7 +4,6 @@
 
   "HeroTitle": "Управляйте своей командой и задачами откуда угодно",
   "HeroSubtitle": "Мобильное приложение ONLYOFFICE для управления проектами",
-  "iTunesButtonImg": "/images/templates/mobile-projects/buttons/appstore.ru.svg",
 
   "FeaturesTitle": "<0>Проекты ONLYOFFICE</0> для iOS-устройств",
   "Item1": "Управление задачами и вехами",
@@ -16,5 +15,4 @@
   "Item7": "Онлайн-документация",
   "imageUrl": "/images/templates/mobile-projects/features/ru/mobile_screens.png",
   "imageUrl2x": "/images/templates/mobile-projects/features/ru/mobile_screens_2x.png"
-  }
-  
+}

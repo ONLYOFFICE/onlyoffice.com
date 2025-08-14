@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
-import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
@@ -92,6 +91,8 @@ const StyledHeroLeftButtonsWrapper = styled.div<{
   align-items: center;
   gap: 9px;
   margin-top: 40px;
+  position: relative;
+  z-index: 1;
 
   @media ${device.tabletS} {
     justify-content: center;
@@ -100,35 +101,6 @@ const StyledHeroLeftButtonsWrapper = styled.div<{
   @media ${device.mobile} {
     flex-direction: ${(props) => (props.$isZhLocale ? "column" : "row")};
   }
-`;
-
-const StyledHeroLeftButtonGoogle = styled(Button)<{
-  $backgroundUrl: string;
-  $isZhLocale: boolean;
-}>`
-  display: block;
-  width: ${(props) => (props.$isZhLocale ? "170px" : "188px")};
-  height: ${(props) => (props.$isZhLocale ? "58px" : "80px")};
-  background-image: ${(props) => `url(${props.$backgroundUrl})`};
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  position: relative;
-  z-index: 2;
-`;
-
-const StyledHeroLeftButtonAppGallery = styled(Button)<{
-  $backgroundUrl: string;
-}>`
-  display: block;
-  width: 170px;
-  height: 58px;
-  background-image: ${(props) => `url(${props.$backgroundUrl})`};
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  position: relative;
-  z-index: 2;
 `;
 
 const StyledHeroLeftImgWrapper = styled.div`
@@ -363,8 +335,6 @@ export {
   StyledHeroLeft,
   StyledHeroLeftHeading,
   StyledHeroLeftButtonsWrapper,
-  StyledHeroLeftButtonGoogle,
-  StyledHeroLeftButtonAppGallery,
   StyledHeroLeftImgWrapper,
   StyledHeroLeftImg,
   StyledHeroRight,
