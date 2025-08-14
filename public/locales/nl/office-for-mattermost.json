@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Online office suite voor Mattermost | ONLYOFFICE Docs",
+  "PageDescription": "Bewerk en co-bewerk documenten binnen Mattermost",
+
+  "OnlineOfficeForConnector": "Online office for <0>Mattermost</0>",
+  "Subheader": "Open, bewerk en schrijf samen aan office documenten in uw Mattermost chat met ONLYOFFICE Docs",
+  "GetItNow": "GET IT NOW",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Volledig geschikt voor docx, xlsx en pptx",
+
+  "GetStarted": "Aan de slag",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Mattermost",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for Mattermost now from the <0>GitHub</0>.",
+
+  "WhyOO": "Waarom ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs is een zelf gehoste office suite voor het werken aan tekstdocumenten, spreadsheets en presentaties.",
+  "Reason1": "Kant-en-klare integratie plug-in en snelle configuratie",
+  "Reason2": "Intuïtieve interface met tabbladen",
+  "Reason3": "Meerdere bewerkings-, opmaak- en vormgevingstools",
+  "Reason4": "Real-time gezamenlijke bewerking, bestanden delen",
+  "Reason5": "Gratis Community en schaalbare Enterprise versies",
+  "Reason6": "Broncode op GitHub",
+
+  "HowToStart": "Hoe begint u?",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from <0>GitHub</0>.",
+  "HowToStartStep3": "Configure the connector and enable JWT.",
+
+  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>",
+
+  "NeedAnAppToConnect": "Heeft u een app nodig om ONLYOFFICE aan te sluiten op uw favoriete webservice? Of heeft u een ontwikkeld?"
+}

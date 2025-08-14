@@ -1,0 +1,46 @@
+{
+  "PageTitle": "Онлайн-офис для Confluence | ONLYOFFICE",
+  "PageDescription": "Работайте со всеми видами офисных документов в Confluence с помощью ONLYOFFICE Docs",
+
+  "OnlineOfficeForConfluence": "Онлайн-офис для Confluence",
+  "WorkOnAllKindsOfOfficeDocuments": "Работайте с любыми офисными документами в Confluence, используя ONLYOFFICE Docs",
+  "GetStarted": "Начать работу",
+  "RequestFreeDemo": "ЗАПРОСИТЬ БЕСПЛАТНУЮ ДЕМО-ВЕРСИЮ",
+  "HeroImgUrl": "/images/templates/office-for-confluence/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-confluence/hero/ru/hero@2x.png",
+
+  "EditAndCoAuthorOfficeDocuments": "Редактируйте офисные документы и работайте над ними совместно в интерфейсе Confluence",
+  "DocumentsTab1Label": "Работайте с загруженными офисными файлами во Вложениях",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-confluence/documents/ru/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-confluence/documents/ru/documents-1@2x.png",
+  "DocumentsTab2Label": "Создавайте и редактируйте текстовые документы, электронные таблицы и презентации",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-confluence/documents/ru/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-confluence/documents/ru/documents-2@2x.png",
+  "DocumentsTab3Label": "Создавайте, комментируйте и заполняйте PDF-формы",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-confluence/documents/ru/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-confluence/documents/ru/documents-3@2x.png",
+  "DocumentsTab4Label": "Работайте над документами вместе с коллегами в режиме реального времени",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-confluence/documents/ru/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-confluence/documents/ru/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Разработано для беспрепятственной интеграции с Confluence",
+  "MarketplaceConnectorDescription": "Получите приложение ONLYOFFICE для Confluence прямо сейчас из Atlassian Marketplace.",
+
+  "WhyOO": "Почему ONLYOFFICE?",
+  "FeaturesFormats": "Поддержка более <0>50 форматов файлов</0>, полностью совместимых с форматами MS Office: DOCX, XLSX, PPTX.",
+  "FeaturesAIHelper": "Надежный набор инструментов редактирования, форматирования и работы со стилями. Интегрированный <0>ИИ-помощник</0>.",
+  "FeatureCoEditing": "<0>Совместное редактирование</0> в режиме реального времени и с блокировкой абзацев, рецензирование, история версий, сравнение документов, комментарии и чат. Аудио- и видеозвонки.",
+  "FeaturesEnhancedSecurity": "<0>Улучшенная безопасность</0>. Гибкие права доступа и JWT. Отслеживание активности и отчеты об аудите. Шифрование при хранении и при передаче. Защита с помощью водяных знаков и пароля. Открытый исходный код.",
+  "FeaturesEasyConfiguration": "<0>Простая настройка</0>. Беспрепятственная интеграция с готовым к использованию коннектором из Atlassian Marketplace. Доступно для версий Confluence Server, Data Center и Cloud.",
+  "FeaturesFreeTrial": "Масштабируемые версии Enterprise. <0>Бесплатный пробный период - 30 дней</0>. Решение для размещения на собственном сервере для полного контроля над вашими данными. Версия Docs Cloud для Confluence Cloud.",
+
+  "HowToStart": "Как начать",
+  "HowToStartStep1": "Разверните <0>ONLYOFFICE Docs</0> на собственном сервере или зарегистрируйтесь в <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Получите приложение для интеграции в <0>Atlassian Marketplace</0>. Выберите соответствующую версию, переключаясь между вкладками размещения (Server / Data Center / Cloud).",
+  "HowToStartStep3": "Настройте приложение для интеграции.",
+
+  "HowToConnect": "Как подключить ONLYOFFICE Docs к Confluence",
+  "ReadDetailedInstructions": "Прочитайте подробные инструкции в <0>Центре помощи</0>.",
+
+  "NeedAnAppToConnect": "Нужно приложение для подключения ONLYOFFICE Docs к вашему любимому веб-сервису? Или вы уже разработали его?"
+}

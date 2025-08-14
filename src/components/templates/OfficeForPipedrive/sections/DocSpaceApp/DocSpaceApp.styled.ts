@@ -4,7 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 
 const StyledDocSpaceAppHeader = styled.div`
   margin: 0 auto 56px;
-  max-width: 700px;
+  max-width: 920px;
   text-align: center;
 
   @media ${device.tablet} {

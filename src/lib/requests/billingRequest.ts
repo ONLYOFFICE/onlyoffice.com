@@ -43,10 +43,6 @@ const billingRequest = async ({
       },
     );
 
-    if (!res.ok) {
-      throw new Error(await res.text());
-    }
-
     const data = await res.json();
 
     if (data && Object.keys(data).length) {

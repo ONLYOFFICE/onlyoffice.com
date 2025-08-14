@@ -6,6 +6,7 @@ import { StyledWrapper } from "./EditorsImageItem.styled";
 export const EditorsImageItem = ({
   item,
   openVideo,
+  className,
 }: IEditorsImageItemProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
 
@@ -24,7 +25,7 @@ export const EditorsImageItem = ({
   const links = item.links?.map((link) => {
     if (link.isVideo) {
       return {
-        href: `video:${link.href}`,
+        href: link.href,
         label: link.label,
         isExternal: false,
       };
@@ -45,6 +46,7 @@ export const EditorsImageItem = ({
         position={item.position}
         image={item.image}
         links={links}
+        className={className}
       />
     </StyledWrapper>
   );

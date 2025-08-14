@@ -1,0 +1,56 @@
+{
+  "PageTitle": "适用于Alfresco Share的在线办公套件",
+  "PageDescription": "在Alfresco Share中编辑和共同编辑文档",
+
+  "OnlineOfficeForAlfresco": "适用于 <0>Alfresco</0> 在线办公套件",
+  "EnableCollaborativeDocumentEditing": "使用 ONLYOFFICE 文档在 Alfresco Share 中协作编辑文档",
+  "GetItNow": "立即获取",
+  "RequestFreeDemo": "申请免费演示",
+  "HeroImgUrl": "/images/templates/office-for-alfresco/hero/zh/alfresco_header.png",
+  "HeroImgUrl2x": "/images/templates/office-for-alfresco/hero/zh/alfresco_header@2x.png",
+
+  "WorkWithOfficeDocuments": "在 Alfresco Share 中用 ONLYOFFICE 处理办公文档",
+  "DocumentsTab1Label": "查看、创建和编辑文档、表格、幻灯片和可填写的表单。",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-alfresco/documents/zh/screen_dropbox_1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-alfresco/documents/zh/screen_dropbox_1@2x.png",
+  "DocumentsTab2Label": "创建自定义模板并根据它创建文档。",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-alfresco/documents/zh/screen_dropbox_2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-alfresco/documents/zh/screen_dropbox_2@2x.png",
+  "DocumentsTab3Label": "将非 XML 文档转换为 XML 格式 (DOCX、XLSX 或 PPTX)。导出/导入 PDF。",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-alfresco/documents/zh/screen_dropbox_3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-alfresco/documents/zh/screen_dropbox_3@2x.png",
+  "DocumentsTab4Label": "实时与多个用户共同编辑文档，发表批注并通过内置聊天功能进行交流。",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-alfresco/documents/zh/screen_dropbox_4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-alfresco/documents/zh/screen_dropbox_4@2x.png",
+  "DocumentsTab5Label": "查看文档的版本历史记录。",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-alfresco/documents/zh/screen_dropbox_5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-alfresco/documents/zh/screen_dropbox_5@2x.png",
+
+  "MarketplaceConnectorTitle": "专为与 Alfresco 无缝集成而设计",
+  "MarketplaceConnectorDescription": "立即在官方 Alfresco Add-ons 目录中获取用于 Alfresco 的 ONLYOFFICE 应用程序。",
+  "GetStarted": "开始使用",
+
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "FeaturesFormats": "支持超过 <0>50 种文件格式</0>。与微软 Office 格式（DOCX, XLSX, PPTX）高度兼容。",
+  "FeaturesCoEditing": "两种共同编辑模式、跟踪更改、版本历史记录、文档比较、评论和提及等功能。",
+  "FeaturesFree": "免费社区版&可扩展的企业版。<0>免费试用 30 天。</0>自托管解决方案，可完全控制您的数据。",
+  "FeaturesSecurity": "<0>高度安全性。</0>灵活的访问权限和 JWT。静态和传输加密。水印和密码保护。开源代码。",
+  "FeaturesConfiguration": "<0>易于配置。</0>通过现成的连接器与 Alfresco 管理控制台和自动化测试无缝集成。",
+  "FeaturesAIHelper": "一套强大的编辑、格式化和样式工具。<0>集成 AI 助手</0>（ChatGPT 或智谱 AI）。",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1": "在您自己的服务器上部署 <0>ONLYOFFICE Docs</0> 或注册 <1>ONLYOFFICE Docs Cloud</1>。",
+  "HowToStartStep2": "从 <0>Alfresco Add-ons 目录</0>获取集成应用程序。",
+  "HowToStartStep3": "在 Alfresco 管理控制台中配置集成应用程序。",
+  "HowToConnect": "如何将 ONLYOFFICE 与 Alfresco Share 进行集成",
+
+  "LearnMoreHeading": "了解 ONLYOFFICE 与 Alfresco 集成的更多相关信息",
+  "HelpCenter": "帮助中心",
+  "UsefulGuides": "ONLYOFFICE 与 Alfresco Share 集成的相关指南。",
+  "VisitOurHelpCenter": "访问我们的帮助中心",
+  "SuccessStory": "成功案例",
+  "SuccessStoryDescription": "Atol CD 通过集成 ONLYOFFICE 文档，实现了 Alfresco 数字化工作中的在线协作。",
+  "ReadTheFullStory": " 阅读全文",
+
+  "NeedAnAppToConnect": "想要将 ONLYOFFICE 连接至您喜爱的网络服务？需要某个连接 app 或者你们已经开发出来了？"
+}

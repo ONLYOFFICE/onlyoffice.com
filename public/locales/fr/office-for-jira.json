@@ -1,15 +1,43 @@
 {
+  "PageTitle": "Suite bureautique en ligne pour Jira | ONLYOFFICE Docs",
+  "PageDescription": "Éditez et co-éditez des documents texte, créer des formulaires à remplir dans Jira.",
+
+  "OnlineOfficeForConnector": "Suite bureautique en ligne pour Jira",
+  "Subheader": "Travaillez sur toutes sortes de documents bureautiques dans Jira Software en utilisant ONLYOFFICE Docs",
   "HeroImgUrl": "/images/templates/office-for-jira/hero/fr/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-jira/hero/fr/hero@2x.png",
 
+  "WorkWithinConnector": "Modifiez et coéditez des documents bureautiques dans l'interface de Jira",
+  "DocumentsTab1Label": "Affichez, modifiez et coéditez les fichiers bureautiques joints aux tâches directement dans votre tableau de bord Jira",
   "DocumentsTab1ImgUrl": "/images/templates/office-for-jira/documents/fr/screen1.png",
   "DocumentsTab1ImgUrl2x": "/images/templates/office-for-jira/documents/fr/screen1@2x.png",
-
+  "DocumentsTab2Label": "Créez et modifiez des documents texte, des feuilles de calcul et des présentations",
   "DocumentsTab2ImgUrl": "/images/templates/office-for-jira/documents/fr/screen2.png",
   "DocumentsTab2ImgUrl2x": "/images/templates/office-for-jira/documents/fr/screen2@2x.png",
-
+  "DocumentsTab3Label": "Collaborez sur des documents avec vos collègues en temps réel",
   "DocumentsTab3ImgUrl": "/images/templates/office-for-jira/documents/fr/screen3.png",
   "DocumentsTab3ImgUrl2x": "/images/templates/office-for-jira/documents/fr/screen3@2x.png",
+  "GetStarted": "Démarrer",
 
-  "HowToStartStep3Url": "/images/templates/office-for-jira/how-to-start/fr/step3.svg"
+  "MarketplaceConnectorTitle": "Conçue pour une intégration transparente avec Jira",
+  "MarketplaceConnectorDescription": "Obtenez l'application ONLYOFFICE pour Jira dès maintenant à partir de la marketplace d'Atlassian.",
+
+  "WhyOO": "Pourquoi ONLYOFFICE ?",
+  "Reason1": "Prise en charge de plus de <0>50 formats de fichiers</0>, compatibilité totale avec les formats MS Office : DOCX, XLSX, PPTX.",
+  "Reason2": "Ensemble robuste d'outils d'édition, de mise en forme et de style. <0>Assistant IA</0> intégré.",
+  "Reason3": "<0>Collaboration</0> en temps réel et avec verrouillage des paragraphes, révision, historique des versions, comparaison de documents, commentaires et chat. Appels audio et vidéo.",
+  "Reason4": "<0>Sécurité renforcée</0>. Droits d'accès flexibles et JWT. Filigrane et protection par mot de passe. Code source ouvert.",
+  "Reason5": "<0>Configuration facile</0> à partir du panneau d'administration Jira. Intégration transparente avec le connecteur prêt à l'emploi de la <1>marketplace d'Atlassian</1>. Disponible pour Jira Server et Data Center.",
+  "Reason6": "Solution en cloud et auto-hébergée pour un contrôle total de vos données. Versions Enterprise évolutives. <0>Essai gratuit de 30 jours</0>.",
+
+  "HowToStart": "Comment démarrer",
+  "HowToStartStep1": "Déployez <0>ONLYOFFICE Docs</0> sur votre propre serveur ou créez un compte <1>Docs Cloud</1> account.",
+  "HowToStartStep2": "Obtenez le connecteur ONLYOFFICE à partir de la <0>marketplace d'Atlassian</0>.",
+  "HowToStartStep3": "Configurez le connecteur et activez JWT.",
+  "HowToStartStep3Url": "/images/templates/office-for-jira/how-to-start/fr/step3.svg",
+
+  "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>.",
+  "HowToConnect": "Comment intégrer ONLYOFFICE Docs et Jira Software",
+
+  "NeedAnAppToConnect": "Besoin d'une application pour connecter ONLYOFFICE à votre service web préféré ? Ou vous en avez développé une ?"
 }

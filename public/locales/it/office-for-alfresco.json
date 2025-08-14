@@ -1,0 +1,56 @@
+{
+  "PageTitle": "Suite office online per Alfresco Share",
+  "PageDescription": "Modifica e collabora su documenti su Alfresco Share",
+
+  "OnlineOfficeForAlfresco": "Ufficio online per <0>Alfresco</0>",
+  "EnableCollaborativeDocumentEditing": "Abilita la modifica dei documenti in collaborazione in Alfresco Share utilizzando ONLYOFFICE Docs",
+  "GetItNow": "Aggiungi a Zoom",
+  "RequestFreeDemo": "Richiedi demo gratuita",
+  "HeroImgUrl": "/images/templates/office-for-alfresco/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-alfresco/hero/hero@2x.png",
+
+  "WorkWithOfficeDocuments": "Lavora con i documenti d'ufficio all'interno di ONLYOFFICE da Alfresco Share",
+  "DocumentsTab1Label": "Visualizza, crea e modifica documenti di testo, fogli di calcolo, presentazioni e moduli compilabili.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-alfresco/documents/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-1@2x.png",
+  "DocumentsTab2Label": "Crea modelli personalizzati e documenti a partire da questi.",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-alfresco/documents/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-2@2x.png",
+  "DocumentsTab3Label": "Converti un documento non XML in formato XML (DOCX, XLSX o PPTX). Esporta/importa da/verso PDF.",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-alfresco/documents/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-3@2x.png",
+  "DocumentsTab4Label": "Co-edita documenti con più utenti in tempo reale, lascia commenti e comunica tramite la chat integrata.",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-alfresco/documents/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-4@2x.png",
+  "DocumentsTab5Label": "Visualizza la cronologia delle versioni di un documento.",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-alfresco/documents/documents-5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-alfresco/documents/documents-5@2x.png",
+
+  "MarketplaceConnectorTitle": "Creata per una perfetta integrazione con Alfresco",
+  "MarketplaceConnectorDescription": "Ottieni adesso l'app ONLYOFFICE per Alfresco nella directory ufficiale di Add-on di Alfresco.",
+  "GetStarted": "Inizia",
+
+  "WhyOO": "Perché ONLYOFFICE?",
+  "FeaturesFormats": "Supporto per più di <0>50 formati di file</0>. Pienamente compatibile con i formati MS Office: DOCX, XLSX, PPTX.",
+  "FeaturesCoEditing": "Co-editing, revisione, cronologia delle versioni, confronto di documenti, commenti e menzioni in <0>tempo reale</0> e con blocco paragrafi.",
+  "FeaturesFree": "Versione Community gratuita ed Enterprise scalabile. <0>Prova gratuita di 30 giorni.</0> Soluzione self-hosted per un controllo totale dei dati.",
+  "FeaturesSecurity": "<0>Sicurezza avanzata.</0> Diritti di accesso flessibili e JWT. Crittografia a riposo e in transito. Watermarking e protezione con password. Codice sorgente aperto.",
+  "FeaturesConfiguration": "<0>Facile configurazione.</0> Integrazione perfetta con il connettore pronto all'uso nella console di amministrazione di Alfresco e test automatizzati.",
+  "FeaturesAIHelper": "Un robusto set di strumenti di modifica, formattazione e styling. <0>Assistente AI integrato</0> (ChatGPT o ZhiPu Copilot).",
+
+  "HowToStart": "Come iniziare",
+  "HowToStartStep1": "Distribuisci <0>ONLYOFFICE Docs</0> sul tuo server o registrati per <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Ottieni l'applicazione di integrazione dalla <0>directory di Add-on di Alfresco</0>.",
+  "HowToStartStep3": "Configura l'app di integrazione nella Console di amministrazione di Alfresco.",
+  "HowToConnect": "Come integrare ONLYOFFICE con Alfresco Share",
+
+  "LearnMoreHeading": "Scopri di più sull'integrazione di ONLYOFFICE con Alfresco",
+  "HelpCenter": "Help Center",
+  "UsefulGuides": "Utili guide sull'integrazione di ONLYOFFICE con Alfresco Share.",
+  "VisitOurHelpCenter": "Visita il nostro Help Center",
+  "SuccessStory": "Storia di successo",
+  "SuccessStoryDescription": "Atol CD rafforza la collaborazione online in Alfresco Digital Workspace integrando ONLYOFFICE Docs.",
+  "ReadTheFullStory": "Leggi la storia completa",
+
+  "NeedAnAppToConnect": "Hai bisogno di un'app per connettere ONLYOFFICE al tuo servizio web preferito? Oppure ne hai sviluppato uno?"
+}

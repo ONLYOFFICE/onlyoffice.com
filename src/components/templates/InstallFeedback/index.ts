@@ -1,0 +1,1 @@
+export { InstallFeedbackTemplate } from "./InstallFeedback";

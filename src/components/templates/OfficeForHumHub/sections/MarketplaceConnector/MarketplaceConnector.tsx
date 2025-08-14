@@ -34,7 +34,7 @@ const MarketplaceConnector = () => {
               variant="quaternary"
               target="_blank"
               href="https://marketplace.humhub.com/module/onlyoffice/description"
-              label={t("GetItNow")}
+              label={t("GetStarted")}
             />
           </StyledMarketplaceConnectorBody>
           <StyledMarketplaceConnectorImg />

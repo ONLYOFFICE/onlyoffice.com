@@ -15,6 +15,7 @@ const LoaderButton = forwardRef<HTMLButtonElement, ILoaderButton>(
       fullWidth,
       status = "default",
       size = "medium",
+      variant = "primary",
       onClick,
       ...rest
     },
@@ -31,6 +32,7 @@ const LoaderButton = forwardRef<HTMLButtonElement, ILoaderButton>(
         $fullWidth={fullWidth ?? undefined}
         $status={status}
         $size={size}
+        $variant={variant}
         onClick={onClick}
         {...rest}
       >

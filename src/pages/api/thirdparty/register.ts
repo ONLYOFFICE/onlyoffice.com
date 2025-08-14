@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { createAuthToken } from "@src/utils/createAuthToken";
+import { register } from "@src/lib/requests/thirdparty/register";
 
 export default async function handler(
   req: NextApiRequest,
@@ -10,47 +10,23 @@ export default async function handler(
   }
 
   try {
-    const { email } = req.body;
+    const { thirdPartyProfile } = req.body;
 
-    const ip =
-      req.headers["x-forwarded-for"]?.toString().split(",")[0] ||
-      req.socket.remoteAddress ||
-      "";
-    const token = createAuthToken("site", "");
-
-    const response = await fetch(
-      `${process.env.DOCSPACE_REGISTRATION_API}.${process.env.DOCSPACE_DOMAIN!.split(".").pop()}/apisystem/portal/registerbyemail`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-          "X-Forwarded-For": ip,
-          Authorization: token,
-        },
-        body: JSON.stringify({
-          email,
-        }),
-      },
-    );
-
-    const text = await response.text();
-    const data = text ? JSON.parse(text) : null;
-
-    if (!response.ok || data?.error || data?.message) {
-      console.error("API returned an error:", data);
-      return res.status(response.status).json({
+    if (typeof thirdPartyProfile !== "string") {
+      return res.status(400).json({
         status: "error",
-        message: data?.message || "Unexpected API error",
+        message: "Missing or invalid 'thirdPartyProfile' field",
       });
     }
 
-    return res.status(200).json({
-      status: "success",
-      data,
+    const data = await register({
+      thirdPartyProfile,
+      ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
     });
-  } catch (error) {
-    console.error("RegisterPortal error:", error);
-    res.status(500).json({ error: "Internal Server Error" });
+
+    return res.status(200).json({ status: "success", data: data.data });
+  } catch (err) {
+    console.error("register error:", err);
+    res.status(500).json({ status: "error", message: "Internal Server Error" });
   }
 }

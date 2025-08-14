@@ -1,13 +1,42 @@
-{
+{ 
+  "PageTitle": "适用于Jira的在线办公套件 | ONLYOFFICE Docs",
+  "PageDescription": "在 Jira 中编辑和共同编辑文档",
+
+  "OnlineOfficeForConnector": "适用于 Jira 的在线办公套件",
+  "Subheader": "使用 ONLYOFFICE 文档在 Jira Software 中处理各种办公文档",
   "HeroImgUrl": "/images/templates/office-for-jira/hero/zh/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-jira/hero/zh/hero@2x.png",
 
+  "WorkWithinConnector": "在 Jira 界面中编辑和协同创作办公文档",
+  "DocumentsTab1Label": "在 Jira 仪表板中查看、编辑和共同创作任务附带的办公文件",
   "DocumentsTab1ImgUrl": "/images/templates/office-for-jira/documents/zh/screen1.png",
   "DocumentsTab1ImgUrl2x": "/images/templates/office-for-jira/documents/zh/screen1@2x.png",
-
+  "DocumentsTab2Label": "创建和编辑文本文档、电子表格和演示文稿",
   "DocumentsTab2ImgUrl": "/images/templates/office-for-jira/documents/zh/screen2.png",
   "DocumentsTab2ImgUrl2x": "/images/templates/office-for-jira/documents/zh/screen2@2x.png",
-
+  "DocumentsTab3Label": "实时与同事协作处理文档",
   "DocumentsTab3ImgUrl": "/images/templates/office-for-jira/documents/zh/screen3.png",
-  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-jira/documents/zh/screen3@2x.png"
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-jira/documents/zh/screen3@2x.png",
+  "GetStarted": "开始使用",
+
+  "MarketplaceConnectorTitle": "专为与 Jira 无缝集成而设计",
+  "MarketplaceConnectorDescription": "立即从 Atlassian 应用市场获取用于 Jira 的 ONLYOFFICE 应用。",
+
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "Reason1": "支持 <0>50 多种文件格式</0>，兼容微软 Office 格式：DOCX、XLSX、PPTX。",
+  "Reason2": "具有强大的编辑、格式化和样式工具，集成的 <0>AI 助手</0>。",
+  "Reason3": "支持实时和段落锁定<0>共同编辑</0>模式、审阅、版本历史记录、文档比较、评论和聊天等功能，以及音频和视频通话。",
+  "Reason4": "<0>高度安全性</0>，提供灵活的访问权限和、JWT、水印、密码保护和开源代码。",
+  "Reason5": "通过 Jira 管理面板<0>轻松配置</0>。通过 <1>Atlassian 应用市场</1> 的现成连接器实现无缝集成，适用于 Jira 服务器和数据中心。",
+  "Reason6": "提供云端和自托管解决方案，确保数据完全可控。还要可扩展的企业版本， <0>免费试用30 天</0>。",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1": "在您的服务器上部署 <0>ONLYOFFICE 文档</0>或创建<1>文档云</1>帐户。",
+  "HowToStartStep2": "从 <0>Atlassian 应用市场</0> 获取 ONLYOFFICE 连接器。",
+  "HowToStartStep3": "配置连接器并启用 JWT。",
+
+  "ReadDetailedInstructions": "在<0>帮助中心</0>查看详细说明。",
+  "HowToConnect": "如何集成 ONLYOFFICE 文档和 Jira Software",
+
+  "NeedAnAppToConnect": "想要将 ONLYOFFICE 连接至您喜爱的网络服务？需要某个连接 app 或者你们已经开发出来了？"
 }

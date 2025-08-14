@@ -22,22 +22,27 @@ export const getProductsDetails = async ({
 
   let rows: IProductDetails[] = [];
 
-  if (typeof key === "string" && key.trim() !== "") {
-    [rows] = await db.execute<IProductDetails[]>(
-      `${baseQuery} WHERE prod_name = ?`,
-      [key],
-    );
-    return rows.length > 0 ? normalizeDates(rows[0]) : null;
-  }
+  try {
+    if (typeof key === "string" && key.trim() !== "") {
+      [rows] = await db.teamlabsite.execute<IProductDetails[]>(
+        `${baseQuery} WHERE prod_name = ?`,
+        [key],
+      );
+      return rows.length > 0 ? normalizeDates(rows[0]) : null;
+    }
 
-  if (Array.isArray(key) && key.length > 0) {
-    const placeholders = key.map(() => "?").join(", ");
-    [rows] = await db.execute<IProductDetails[]>(
-      `${baseQuery} WHERE prod_name IN (${placeholders})`,
-      key,
-    );
-  } else {
-    [rows] = await db.execute<IProductDetails[]>(baseQuery);
+    if (Array.isArray(key) && key.length > 0) {
+      const placeholders = key.map(() => "?").join(", ");
+      [rows] = await db.teamlabsite.execute<IProductDetails[]>(
+        `${baseQuery} WHERE prod_name IN (${placeholders})`,
+        key,
+      );
+    } else {
+      [rows] = await db.teamlabsite.execute<IProductDetails[]>(baseQuery);
+    }
+  } catch (err) {
+    console.error("getProductsDetails error:", err);
+    return typeof key === "string" ? null : {};
   }
 
   const result: Record<string, IProductDetails> = {};

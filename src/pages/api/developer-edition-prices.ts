@@ -158,9 +158,10 @@ export default async function handler(
             create_on: new Date(),
           };
 
-          await db.query("INSERT INTO docs_developer_request SET ?", [
-            addDocsDeveloperData,
-          ]);
+          await db.teamlabsite.query(
+            "INSERT INTO docs_developer_request SET ?",
+            [addDocsDeveloperData],
+          );
 
           return {
             status: "success",

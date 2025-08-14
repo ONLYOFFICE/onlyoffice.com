@@ -4,7 +4,6 @@
 
   "HeroTitle": "Beheer uw teamprestaties onderweg",
   "HeroSubtitle": "Pocket project management tool",
-  "iTunesButtonImg": "/images/templates/mobile-projects/buttons/appstore.nl.svg",
 
   "FeaturesTitle": "<0>ONLYOFFICE-projecten</0> voor iOS-apparaten",
   "Item1": "Taak- en mijlpaalbeheer",
@@ -14,5 +13,4 @@
   "Item5": "Regelmatige updates",
   "Item6": "Technische ondersteuning",
   "Item7": "Online documentatie"
-  }
-  
+}

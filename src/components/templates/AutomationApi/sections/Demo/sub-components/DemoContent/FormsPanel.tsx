@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import { Heading } from "@src/components/ui/Heading";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
+import { Select } from "@src/components/ui/Select";
 
 const StyledFormsPanel = styled.div`
   h3 {
@@ -28,22 +29,9 @@ const StyledFormsPanel = styled.div`
   }
 
   .styled-select-container {
-    height: 56px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
     margin-bottom: 32px;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-
-    select {
-      height: 56px;
-      max-width: 544px;
-      width: 100%;
-      font-size: 16px;
-      color: #333;
-      border: 1px solid #ccc;
-      font-family: "Open Sans";
-    }
   }
 
   .input-wrapper {
@@ -454,20 +442,35 @@ export const FormsPanel = ({ connector }: IFormsPanel) => {
         <Heading level={4} size={5} label={t("FillsInTheEmptyCells")} />
 
         <div className="styled-select-container">
-          <select
-            className="personsSelect"
-            value={selectedValue}
-            onChange={(e) => handlePersonSelect(e.target.value)}
-          >
-            <option value="" disabled>
-              {t("ChooseExample")}
-            </option>
-            {persons.map((p) => (
-              <option key={p.PostalCode} value={p.PostalCode}>
-                {p.FirstName} {p.LastName}
-              </option>
-            ))}
-          </select>
+          <Select
+            selected={
+              selectedValue
+                ? [
+                    {
+                      value: selectedValue,
+                      label:
+                        persons.find((p) => p.PostalCode === selectedValue)
+                          ?.FirstName +
+                        " " +
+                        persons.find((p) => p.PostalCode === selectedValue)
+                          ?.LastName,
+                    },
+                  ]
+                : []
+            }
+            setSelected={(newSelected) => {
+              const selectedArray = Array.isArray(newSelected)
+                ? newSelected
+                : [];
+              const postalCode = selectedArray[0]?.value || "";
+              handlePersonSelect(postalCode);
+            }}
+            options={persons.map((p) => ({
+              value: p.PostalCode,
+              label: `${p.FirstName} ${p.LastName}`,
+            }))}
+            label={t("ChooseExample")}
+          />
         </div>
 
         <div id="controlsBlock" className="docbuilder-script">

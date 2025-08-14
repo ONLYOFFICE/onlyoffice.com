@@ -1,0 +1,64 @@
+{
+  "PageTitle": "ONLYOFFICE-Medieninhalte | ONLYOFFICE",
+  "PageDescription": "Laden Sie die Medieninhalte von ONLYOFFICE herunter: Logos, Screenshots, Videos und mehr.",
+
+  "HeroTitle": "Presse-Downloads",
+  "HeroDescription": "Laden Sie ONLYOFFICE-Medieninhalte einschließlich Logos und Grafiken herunter",
+
+  "Description": "Beschreibung",
+  "Logo": "Logo",
+  "Screenshots": "Screenshots",
+  "Videos": "Videos",
+  "BlogAndSocialMedia": "Werbekacheln für Blogs und Soziale Medien",
+
+  "DescriptionTitle": "ONLYOFFICE Beschreibung",
+  "DescriptionText": "ONLYOFFICE ist ein Open-Source-Projekt mit dem Schwerpunkt auf fortschrittlicher und sicherer Dokumentenverarbeitung. Mit über 15 Millionen Benutzern weltweit ist es ein bewährter Innovator im Online-Office-Business. Das ONLYOFFICE-Ökosystem umfasst kollaborative Anwendungen wie Online-Editoren für Textdokumente, Tabellenkalkulationen, Präsentationen, Formulare und PDFs sowie eine raumbasierte Plattform für die Zusammenarbeit. <br/><br/>Als internationales Unternehmen hat ONLYOFFICE Mitarbeiter(innen) und Mitwirkende auf der ganzen Welt, mit Büros in Singapur, Dallas, Riga, London, Belgrad, Eriwan, Taschkent und Shanghai.",
+  "CopyToClipboard": "In die Zwischenablage kopieren",
+  "SuccessCopy": "Der Text wurde in die Zwischenablage kopiert",
+
+  "LogoTitle": "ONLYOFFICE Logo",
+  "LogoDefault": "Logo Standard",
+  "LogoCenter": "Logo-Zentrum",
+  "Symbol": "Symbol",
+  "LogoDefaultDark": "Logo Standard dunkel",
+  "LogoCenterDark": "Logo-Zentrum dunkel",
+  "SymbolDark": "Symbol dunkel",
+  "LogoWhite": "Logo Standard Weiß",
+  "LogoCenterWhite": "Logo-Zentrum Weiß",
+  "SymbolWhite": "Symbol Weiß",
+
+  "BrandbookTitle": "ONLYOFFICE Brandbook",
+  "BrandbookPreview": "Vorschau",
+  "BrandbookDownload": "Herunterladen",
+
+  "ScreenshotsTitle": "ONLYOFFICE Screenshots",
+  "OnlineEditors": "Online-Editoren",
+  "OnlineEditorsText": "(Dokumente, Tabellen, Präsentationen, Formulare)",
+  "OnlineEditorsLink": "/images/templates/press-downloads/screenshots/files/de/screenshots_online_editors.zip",
+  "OnlineEditorsImgUrl": "/images/templates/press-downloads/screenshots/images/de/online_editors.png",
+  "DocSpace": "DocSpace",
+  "DocSpaceText": "(Anpassbare Räume für die Zusammenarbeit an Dokumenten)",
+  "Workspace": "Workspace",
+  "WorkspaceText": "(Dokumentenverwaltung, Mail, CRM, Projekte, Kalender, Community)",
+  "DesktopApps": "Desktop-Anwendungen",
+  "DesktopAppsText": "(Dokumente, Tabellen, Präsentationen, Formulare)",
+  "DesktopAppsLink": "/images/templates/press-downloads/screenshots/files/de/screenshots_desktop_apps.zip",
+  "DesktopAppsImgUrl": "/images/templates/press-downloads/screenshots/images/de/desktop_apps.png",
+  "MobileApps": "Mobile Anwendungen",
+  "MobileAppsText": "(Dokumente für iOS und Android, Projekte für iOS)",
+
+  "VideosTitle": "ONLYOFFICE Videos",
+  "MoreVideos": "Weitere Videos",
+
+  "BlogAndSocialMediaTitle": "ONLYOFFICE Werbekacheln für Blogs und Soziale Medien",
+  "OnlineEditorsMacCardTitle": "ONLYOFFICE Online-Editoren auf dem Mac",
+  "OnlineEditorsCardTitle": "ONLYOFFICE Online-Editoren",
+
+  "DontForgetToMention": "Vergessen Sie nicht ONLYOFFICE zu erwähnen und teilen Sie es mit uns!",
+  "MediaInquires": "Für Medienanfragen setzen Sie sich bitte mit uns in Verbindung. Wir freuen uns von Ihnen zu hören: <0>press@onlyoffice.com</0>",
+  "AllUserInterfaceAssets": "© Alle Benutzeroberflächenelemente, einschließlich, aber nicht beschränkt auf Symbole, Illustrationen, Bilder und visuelle Designelemente, die nach dem [Datum/Version] erstellt oder integriert wurden, werden unter den Bedingungen der Lizenz Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) bereitgestellt.",
+  "UnderThisLicense": "Unter dieser Lizenz dürfen die lizenzierten Materialien ausschließlich für nichtkommerzielle Zwecke, ohne jegliche Änderungen oder abgeleitete Werke und nur unter Angabe des ursprünglichen Urhebers verwendet, kopiert und weitergegeben werden. Die Angabe muss den Namen des Autors, einen Link zur Originalquelle, den vollständigen Namen der Lizenz und einen Verweis auf den Lizenztext enthalten:",
+  "AnyViolation": "Jeder Verstoß gegen die Lizenzbedingungen führt automatisch zum Erlöschen Ihres Nutzungsrechts. Die fortgesetzte Nutzung nach der Kündigung stellt eine unbefugte Nutzung dar und kann rechtliche Schritte nach sich ziehen.",
+  "RequestPermission": "Um eine Genehmigung für Verwendungen anzufordern, die nicht durch diese Lizenz abgedeckt sind, einschließlich kommerzieller Verwendung oder Änderungen, kontaktieren Sie uns bitte unter: reply@onlyoffice.com.",
+  "ByUsingTheseMaterials": "Durch die Verwendung dieser Materialien bestätigen Sie, dass Sie die Bedingungen der CC BY-NC-ND 4.0-Lizenz gelesen und verstanden haben und diesen zustimmen."
+}

@@ -1,32 +1,24 @@
-export interface IButtons {
-    positionX: string;
-    link: string;
-    title?: string;
-    isExternal?: boolean;
-    width?: string;
-}
+import { IDownloadButton } from "@src/components/ui/DownloadButton";
 
-export const items: IButtons[] = [
-    {
-        positionX: "4px",
-        link: "/download-desktop",
-        title: "windows",
-    },
-    {
-        positionX: "-30px",
-        link: "/download-desktop",
-        title: "linux",
-    },
-    {
-        positionX: "-61px",
-        link: "/download-desktop",
-        title: "mac",
-    },
-    {
-        positionX: "-364px",
-        link: "https://snapcraft.io/onlyoffice-desktopeditors",
-        width: "130px",
-        isExternal: true
-    },
-]
-    
+export const items: IDownloadButton[] = [
+  {
+    href: "/download-desktop",
+    platform: "windows",
+    variant: "quaternary",
+  },
+  {
+    href: "/download-desktop",
+    platform: "linux",
+    variant: "quaternary",
+  },
+  {
+    href: "/download-desktop",
+    platform: "macos",
+    variant: "quaternary",
+  },
+  {
+    href: "https://snapcraft.io/onlyoffice-desktopeditors",
+    platform: "snap-store",
+    variant: "quaternary",
+  },
+];

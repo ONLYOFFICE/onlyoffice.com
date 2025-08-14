@@ -2,6 +2,8 @@
   "windows": "Windows版",
   "macos": "Mac OS版",
   "linux": "Linux版",
+  "app-gallery": "/images/ui/download-button/zh/app-gallery.svg",
+  "apk": "/images/ui/download-button/zh/apk.svg",
   "app-store": {
     "light": "/images/ui/download-button/zh/app-store.svg",
     "dark": "/images/ui/download-button/zh/app-store.svg"

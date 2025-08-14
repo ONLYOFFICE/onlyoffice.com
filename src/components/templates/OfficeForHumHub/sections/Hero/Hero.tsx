@@ -44,7 +44,7 @@ const Hero = () => {
           <Button
             onClick={() => scrollToBlock()}
             id="hero-get-started"
-            label={t("GetStarted")}
+            label={t("GetItNow")}
           />
         </StyledHeroWrapper>
 
