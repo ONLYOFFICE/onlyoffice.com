@@ -1,6 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { parse } from "cookie";
-import { addLandingRequest } from "@src/lib/requests/addLandingRequest";
 import { emailTransporter } from "@src/config/email/transporter";
 import { PartnershipRequestEmail } from "@src/components/emails/PartnershipRequestEmail";
 
@@ -14,7 +13,6 @@ export default async function handler(
 
   const {
     locale,
-    referer,
     firstName,
     lastName,
     positionTitle,
@@ -23,6 +21,7 @@ export default async function handler(
     companyName,
     website,
     numberEmployees,
+    targetMarketSegments,
     comment,
     buttonId,
     from,
@@ -31,48 +30,15 @@ export default async function handler(
   } = req.body;
 
   try {
-    const errorMessages = [];
     const cookies = parse(req.headers.cookie || "");
-
-    if (referer) {
-      const addLandingResult = await addLandingRequest({
-        first_name: firstName,
-        last_name: lastName,
-        email,
-        phone,
-        operating_system: null,
-        company_name: companyName,
-        company_size: numberEmployees,
-        position: positionTitle,
-        ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
-        fromPage: from,
-        utm_source: cookies.utm_source || null,
-        utm_campaign: cookies.utm_campaign || null,
-        utm_content: cookies.utm_content || null,
-        utm_term: cookies.utm_term || null,
-        create_on: new Date(),
-        spam: 0,
-        calls: 1,
-        ownerId: null,
-        coupon: null,
-        region: null,
-        portal_id: null,
-        source: null,
-        choice_language: "",
-        website,
-      });
-
-      if (addLandingResult?.status === "error") {
-        errorMessages.push(`landingRequest: ${addLandingResult?.message}`);
-      }
-    }
+    const isSelected = (value: boolean) =>
+      value ? "Selected" : "Not selected";
 
     const transporter = emailTransporter();
-    console.log('~ ~ ~ Sending email to:', process.env.PARTNERSHIP_REQUEST_EMAIL);
     await transporter.sendMail({
       from,
       to: [process.env.PARTNERSHIP_REQUEST_EMAIL!],
-      subject: `${errorMessages.length ? "[Error] " : ""}${companyName} Partner Request ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
+      subject: `${companyName} Partner Request ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
       html: PartnershipRequestEmail({
         firstName: firstName,
         lastName: lastName,
@@ -82,6 +48,7 @@ export default async function handler(
         companyName,
         website,
         numberEmployees,
+        targetMarketSegments,
         comment,
         buttonId,
         operatingSystem: "",
@@ -90,7 +57,6 @@ export default async function handler(
         firstHeard: "",
         language: locale,
         platform: "",
-        errorText: errorMessages.join("<br/><br/>"),
       })
     });
 

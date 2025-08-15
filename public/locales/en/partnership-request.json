@@ -24,5 +24,14 @@
   "NumberOfEmployeesIsEmpty": "Number of employees is empty",
   "NumberOfEmployeesFormatError": "Enter an integer greater than 0",
 
+  "PleaseListYourTargetMarketSegments": "Please list your target market segments*",
+  "Government": "Government",
+  "Education": "Education",
+  "Commerce": "Commerce",
+  "Fortune500Companies": "Fortune 500 companies",
+  "SaMSEnterprises": "Small and medium-sized enterprises",
+  "Industry": "Industry",
+  "Other": "Other",
+
   "GetItNowText": "By clicking Submit request you understand and agree to our <0>Privacy statement</0>."
 }

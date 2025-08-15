@@ -1,6 +1,6 @@
 import { IDownloadModalData } from "@src/components/widgets/download/DownloadModal";
 
-interface IDownloadDocsEnterpriseEmail {
+interface IPartnershipRequestEmail {
   firstName: IDownloadModalData["fullName"];
   lastName: string;
   positionTitle: string;
@@ -9,6 +9,7 @@ interface IDownloadDocsEnterpriseEmail {
   companyName: IDownloadModalData["companyName"];
   website: IDownloadModalData["website"];
   numberEmployees: string;
+  targetMarketSegments: string;
   comment: IDownloadModalData["comment"];
   buttonId: IDownloadModalData["buttonId"];
   operatingSystem: string;
@@ -17,7 +18,6 @@ interface IDownloadDocsEnterpriseEmail {
   firstHeard: string;
   language: string;
   platform: string;
-  errorText: string;
 }
 
 const PartnershipRequestEmail = ({
@@ -29,6 +29,7 @@ const PartnershipRequestEmail = ({
   companyName,
   website,
   numberEmployees,
+  targetMarketSegments,
   comment,
   buttonId,
   operatingSystem,
@@ -37,8 +38,7 @@ const PartnershipRequestEmail = ({
   firstHeard,
   language,
   platform,
-  errorText,
-}: IDownloadDocsEnterpriseEmail) => {
+}: IPartnershipRequestEmail) => {
   return `
     <body style="margin: 0; padding: 0; text-align: center; width: 100%; font-family: Arial, sans-serif; font-size: 14px; color: #333;">
       <div style="background-color: #fff; width: 600px; margin: 0 auto; text-align: left;">
@@ -112,6 +112,11 @@ const PartnershipRequestEmail = ({
                       ${numberEmployees}
                   </p>
                   <p style="margin-top:5px;">
+                      <b>Target market segments</b>
+                      <br />
+                      ${targetMarketSegments}
+                  </p>
+                  <p style="margin-top:5px;">
                     <b>Comment</b>
                     <br />
                     ${comment}
@@ -150,11 +155,6 @@ const PartnershipRequestEmail = ({
                     <b>Platform</b>
                     <br />
                     ${platform}
-                  </p>
-                  <p style="margin-top:5px;">
-                    <b>Error text (Empty if success)</b>
-                    <br />
-                    ${errorText}
                   </p>
                 </div>
               </td>

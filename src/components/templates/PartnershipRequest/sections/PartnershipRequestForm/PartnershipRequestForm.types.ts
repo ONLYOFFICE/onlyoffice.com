@@ -13,6 +13,13 @@ export interface IPartnershipRequestData {
   companyName: string;
   website: string;
   numberEmployees: string;
+  government: boolean;
+  education: boolean;
+  commerce: boolean;
+  fortune500: boolean;
+  smes: boolean;
+  industry: boolean;
+  otherSegments: boolean;
   comment: string;
   buttonId: string;
   type: string;
@@ -23,7 +30,7 @@ interface IApiResponse {
   message: { code?: string; Message?: string };
 }
 
-export interface IDownloadModal {
+export interface IPartnRequestModal {
   locale: string;
   initialFormData: IPartnershipRequestData;
   formData: IPartnershipRequestData;

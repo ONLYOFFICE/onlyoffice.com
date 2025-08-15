@@ -14,6 +14,7 @@ import {
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
+import { targetMarketSegments } from "@src/components/templates/PartnershipRequest/sections/PartnershipRequestForm/data/items";
 
 const Hero = ({ locale }: IHero) => {
   const { t } = useTranslation("partnership-request");
@@ -27,12 +28,26 @@ const Hero = ({ locale }: IHero) => {
     companyName: "",
     website: "",
     numberEmployees: "",
+    government: false,
+    education: false,
+    commerce: false, 
+    fortune500: false,
+    smes: false,
+    industry: false,
+    otherSegments: false,
     comment: "",
     buttonId: "",
     type: "",
   };
 
   const [formData, setFormData] = useState(initialFormData);
+
+  const getTargetMarketSegments = () => {
+    return targetMarketSegments
+      .filter(({ key }) => formData[key])
+      .map(({ id }) => id)
+      .join(", ");
+  };
 
   const onSubmitRequest = async ({
     from,
@@ -44,7 +59,6 @@ const Hero = ({ locale }: IHero) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         locale,
-        referer: document.referrer,
         firstName: formData.firstName,
         lastName: formData.lastName,
         positionTitle: formData.positionTitle,
@@ -53,6 +67,7 @@ const Hero = ({ locale }: IHero) => {
         companyName: formData.companyName,
         website: formData.website,
         numberEmployees: formData.numberEmployees,
+        targetMarketSegments: getTargetMarketSegments(),
         comment: formData.comment,
         buttonId: "partnerRequestBtn",
         from,
@@ -71,7 +86,7 @@ const Hero = ({ locale }: IHero) => {
           size={3}
           label={t("BecomeAnOnlyofficeOfficialPartner")}
         />
-        <StyledHeroText label={t("FillInTheDetailsBelow")}></StyledHeroText>
+        <StyledHeroText label={t("FillInTheDetailsBelow")} />
       </StyledHeroDescription>
 
       <PartnershipRequestForm

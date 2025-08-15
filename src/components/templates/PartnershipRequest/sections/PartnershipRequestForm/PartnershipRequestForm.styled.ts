@@ -38,6 +38,41 @@ const StyledDownloadModalText = styled(Text)`
   }
 `;
 
+const StyledSegmentsWrapper = styled.div`
+  scroll-margin-top: 72px;
+
+  @media ${device.mobile} {
+    scroll-margin-top: 48px;
+  }
+`;
+
+const StyledTextWrapper = styled.div`
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-bottom: 16px;
+
+  &.error {
+    color: #cb0000;
+  }
+`;
+
+const StyledChecboxesWrapper = styled.div`
+  background-color: #F5F5F5;
+  float: left;
+  padding: 24px;
+
+  label {
+    display: inline-flex;
+    float: left;
+    margin-bottom: 24px;
+    width: 50%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+`;
+
 const StyledHeroHCaptchaWrapper = styled.div`
   display: flex;
   gap: 16px;
@@ -53,5 +88,8 @@ export {
   StyledNameWrapper,
   StyledPRFHeading,
   StyledDownloadModalText,
+  StyledSegmentsWrapper,
+  StyledTextWrapper,
+  StyledChecboxesWrapper,
   StyledHeroHCaptchaWrapper,
 };

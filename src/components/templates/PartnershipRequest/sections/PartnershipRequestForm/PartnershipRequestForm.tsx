@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { useTranslation } from "next-i18next";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import {
@@ -7,15 +7,20 @@ import {
   StyledNameWrapper,
   StyledPRFHeading,
   StyledDownloadModalText,
+  StyledSegmentsWrapper,
+  StyledTextWrapper,
+  StyledChecboxesWrapper,
   StyledHeroHCaptchaWrapper,
 } from "./PartnershipRequestForm.styled";
-import { IDownloadModal } from "./PartnershipRequestForm.types";
+import { targetMarketSegments } from "./data/items";
+import { IPartnRequestModal} from "./PartnershipRequestForm.types";
 import { getFromParam } from "@src/utils/getParams";
 import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { countries } from "@src/config/data/countries";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
+import { Checkbox } from "@src/components/ui/Checkbox";
 import { TextArea } from "@src/components/ui/TextArea";
 import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
@@ -34,7 +39,7 @@ const PartnershipRequestForm = ({
   setFormData,
   byClickingText,
   onSubmitRequest,
-}: IDownloadModal) => {
+}: IPartnRequestModal) => {
   const { t: t2 } = useTranslation("DownloadModal");
   const { t } = useTranslation("partnership-request");
   const from = getFromParam();
@@ -44,6 +49,7 @@ const PartnershipRequestForm = ({
   );
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
+  const segmentsRef = useRef<HTMLDivElement | null>(null);
 
   const validateEmployeesCount = (value: string) => {
     const num = Number(value);
@@ -59,6 +65,15 @@ const PartnershipRequestForm = ({
     companyName: false,
     website: false,
     numberEmployees: false,
+
+    government: false,
+    education: false,
+    commerce: false,
+    fortune500: false,
+    smes: false,
+    industry: false,
+    otherSegments: false,
+
     comment: false,
   });
   const [isFormValid, setIsFormValid] = useState(false);
@@ -77,6 +92,31 @@ const PartnershipRequestForm = ({
   // const isPhoneValid = formData.phone.length > 0;
   const isWebsiteValid = formData.website.length > 0 && validateWebsite(formData.website);
   const isEmployeesValid = formData.numberEmployees.length > 0 && validateEmployeesCount(formData.numberEmployees);
+  const [isSegmentError, setIsSegmentError] = useState(false);
+  const [isTMSegmentsTouched, setIsTMSegmentsTouched] = useState(false);
+  const [isOnSubmitPushed, setIsOnSubmitPushed] = useState(false);
+
+
+  const segmentValues = useMemo(
+    () => ({
+      government: formData.government,
+      education: formData.education,
+      commerce: formData.commerce,
+      fortune500: formData.fortune500,
+      smes: formData.smes,
+      industry: formData.industry,
+      otherSegments: formData.otherSegments,
+    }),
+    [
+      formData.government,
+      formData.education,
+      formData.commerce,
+      formData.fortune500,
+      formData.smes,
+      formData.industry,
+      formData.otherSegments,
+    ]
+  );
 
   const checkFormValid = useCallback(() => {
     setIsFormValid(
@@ -86,13 +126,44 @@ const PartnershipRequestForm = ({
       isCompanyValid &&
       isWebsiteValid &&
       isEmployeesValid &&
+      !isSegmentError &&
       isCaptchaValid,
     );
-  }, [isFirstNameValid, isLastNameValid, isEmailValid, isCompanyValid, isWebsiteValid, isEmployeesValid, isCaptchaValid]);
+  }, [isFirstNameValid, isLastNameValid, isEmailValid, isCompanyValid, isWebsiteValid, isEmployeesValid,
+    isSegmentError, isCaptchaValid]);
+
+  function scrollToElementWithOffset(el: HTMLElement) {
+    if (!el) return;
+
+    const menuHeight = window.innerWidth <= 592 ? 48 : 72;
+    const scrollContainer = document.scrollingElement || document.documentElement;
+
+    const doScroll = () => {
+      const rect = el.getBoundingClientRect();
+      const scrollTop = scrollContainer.scrollTop;
+      const targetY = scrollTop + rect.top - menuHeight;
+
+      scrollContainer.scrollTo({
+        top: targetY,
+        behavior: "smooth"
+      });
+    };
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(doScroll);
+    });
+  }
 
   useEffect(() => {
     checkFormValid();
   }, [checkFormValid]);
+
+  useEffect(() => {
+    if (!isOnSubmitPushed && !isTMSegmentsTouched) return;
+
+    const hasChecked = Object.values(segmentValues).some(Boolean);
+    setIsSegmentError(!hasChecked);
+  }, [segmentValues, isTMSegmentsTouched, isOnSubmitPushed]);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -121,12 +192,30 @@ const PartnershipRequestForm = ({
   const clearData = () => {
     setFormData(initialFormData);
     setFormStatus("default");
+    setIsCaptchaValid(false);
     setIsFormValid(false);
+    setIsSegmentError(false);
+    setIsOnSubmitPushed(false);
+    setIsTMSegmentsTouched(false);
     hCaptchaRef.current?.resetCaptcha();
     phoneInputRef.current?.reset();
   };
 
   const onSubmit = async () => {
+    setIsOnSubmitPushed(true);
+
+    const hasChecked = Object.values(segmentValues).some(Boolean);
+    setIsSegmentError(!hasChecked);
+
+    if (!hasChecked) {
+      if (segmentsRef.current) {
+        setTimeout(() => {
+          scrollToElementWithOffset(segmentsRef.current!);
+        }, 0);
+      }
+      return;
+    }
+
     if (formStatus === "loading") return;
 
     if (formStatus === "error") {
@@ -395,8 +484,6 @@ const PartnershipRequestForm = ({
             if (formData.website === "https://") {
               handleInputChange("website", "");
             }
-
-            checkFormValid();
           }}
           value={formData.website}
           label={t("Website")}
@@ -456,6 +543,33 @@ const PartnershipRequestForm = ({
           size={5}
           label={t("PartneshipInfo")}>
         </StyledPRFHeading>
+
+        <StyledSegmentsWrapper ref={segmentsRef}>
+          <StyledTextWrapper className={((isTMSegmentsTouched || isOnSubmitPushed) && isSegmentError) ? "error" : ""}>
+            <Text label={t("PleaseListYourTargetMarketSegments")} />
+          </StyledTextWrapper>
+
+          <div>
+            <StyledChecboxesWrapper>
+              {targetMarketSegments.map(({ key, label, id }) => (
+                <Checkbox
+                id={id}
+                key={key}
+                checked={formData[key]}
+                onChange={() => {
+                  if (!isTMSegmentsTouched) setIsTMSegmentsTouched(true);
+                  setFormData((prev) => ({
+                    ...prev,
+                    [key]: !prev[key],
+                  }));
+                }}
+                label={t(label)}
+              />
+              ))}
+            </StyledChecboxesWrapper>
+          </div>
+        </StyledSegmentsWrapper>
+
         <TextArea
           onChange={(e) => handleInputChange("comment", e.target.value)}
           onBlur={() => {
