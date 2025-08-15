@@ -13,7 +13,7 @@
   "CreateFreeAccount": "Create free account",
   "MakeEditsImageUrl": "/images/modules/converter/make-edits/en/editors.png",
   "MakeEditsImage2xUrl": "/images/modules/converter/make-edits/en/editors@2x.png",
-  "PowerfulConversionAPI": "Powerful conversion API",
+  "PowerfulConversionAPI": "Powerful conversion <0>API</0>",
   "OOProvidesOneAPIToConvert": "ONLYOFFICE provides one API to convert all kinds of Office documents: texts, sheets, slides, forms, PDFs, eBooks and more within your app.",
   "CheckOurAPIDocumentation": "Check our <0>API documentation</0>.",
   "MostPopularFormats": "50+ most popular formats <0>supported</0>",

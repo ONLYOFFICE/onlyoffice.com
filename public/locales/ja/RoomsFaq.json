@@ -1,0 +1,9 @@
+{
+  "GetAnswersToTheMostPopularQuestions": "よくある質問",
+  "HowMuchIsDocSpacePerMonth": "DocSpaceの料金は？",
+  "ONLYOFFICEDocSpacePrice": "ONLYOFFICE DocSpace は、管理者1人あたり月額 $20 ドルからご利用いただけます。<0>DocSpaceの価格とプラン</0>の詳細についてはこちらをご覧ください。",
+  "IsThereASelfHostedVersion": "ONLYOFFICE DocSpaceのセルフホストバージョンはある？",
+  "SelfHostedVersion": "はい、<0>ここ</0>からダウンロードできます。",
+  "WhatIsTheTechnologyStack": "ONLYOFFICE DocSpaceのテクノロジースタックは？",
+  "TheTechnologyStack": "バックエンド：С# 9.0, .NET 5.0/.NET Core/ASP.NET Core/MySQL 8.0/Kafka/ElasticSearch <br /> フロントエンド： ES6, CSS/SASS, React, Mobx, Styled-Components, i18next, Webpack 4/5"
+}

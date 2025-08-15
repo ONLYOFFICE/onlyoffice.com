@@ -21,7 +21,8 @@ const Compatibility = () => {
           i18nKey="WhatWentWrong"
           components={[
             <Link
-              href={`${process.env.NEXT_PUBLIC_SITE_URL}/images/templates/best-wps-alternative/compatibility/pdf/wps.pdf`}
+              href="/images/templates/best-wps-alternative/compatibility/pdf/wps.pdf"
+              download
               color="main"
               target="_blank"
               textUnderline

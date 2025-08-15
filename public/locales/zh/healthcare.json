@@ -1,0 +1,89 @@
+{
+  "PageTitle": "ONLYOFFICE - 云端办公应用 | ONLYOFFICE",
+  "PageDescription": "为医疗保健专业人员提供安全的文档编辑和协作功能",
+
+  "HeroTitle": "<0>医疗保健行业中的</0>ONLYOFFICE",
+  "HeroText": "为医疗保健专业人员提供安全的文档编辑和协作功能",
+
+  "FlexibleChoiceSoftwareTools": "符合您组织需求的软件工具灵活之选",
+  "LearnMore": "了解更多",
+  "UseItForFree": "免费使用",
+  "GetItNow": "立即获取",
+
+  "EffectivelyCollaborateOnMedicalRecords": "高效协作处理病历",
+  "OODocSpaceAllowsConnectingDoctors": "通过ONLYOFFICE协作空间可灵活设置的自定义房间与医生共享文件。",
+  "EffectivelyCollabFeature1": "用于多学科讨论，表单填写房间，可收集数据和回复或其他目的创建自定义房间，共同处理患者记录。",
+  "EffectivelyCollabFeature2": "与负责治疗的医生共享访问权限，包括跨医院病例。为了快速访问，请使用公共房间，无需注册即可查看文档。",
+  "EffectivelyCollabFeature3": "用多项安全设置来保护房间及其可能包含的敏感文件。",
+
+
+  "OrganizeASecureDigitalWorkplace": "组织起安全的数字工作场所",
+  "OOOffersCollaborationPlatform": "ONLYOFFICE提供具有增强安全功能的全栈式协作平台。",
+  "OrganizeASecureFeature1": "在<0>ONLYOFFICE文档</0>中安全地存储、共享和编辑文档。创建可填写的表单。打开视频和音频文件，查看不同格式的图像。",
+  "OrganizeASecureFeature2": "借助<0>ONLYOFFICE CRM</0>改善联系人管理体验。<1>通过ONLYOFFICE项目</1>管理办公人物。",
+  "OrganizeASecureFeature3": "在<0>ONLYOFFICE社区</0>中搭建员工的内部沟通平台。<1>ONLYOFFICE日历</1>助您管理日程。",
+
+
+  "AlreadyUseAPopularDms": "已在使用主流DMS？启用安全的文档编辑和协作功能",
+  "OOOffersConnectors": "ONLYOFFICE提供了一系列即用型连接器，便于同您的基础架构深度集成。",
+  "AlreadyUseFeature1": "以端到端加密的文本文档、电子表格或演示文稿格式保存患者信息。实时对其进行安全编辑与协作。高度兼容MS Office格式。",
+  "AlreadyUseFeature2": "在粒度级别设置文档权限。使用多种协作功能，包括版本历史记录、跟踪更改、评论以及内置聊天。",
+  "AlreadyUseFeature3": "保护患者信息不被复制、下载或打印。",
+
+
+
+  "UltimateProtectionHealthcareData": "<0>终极保护</0>功能可应对医疗保健数据的当今威胁",
+  "OOCompliantWithHipaaPrivacy": "ONLYOFFICE配备有诸多内置功能，可帮助医疗保健组织IT部门实现<0>HIPAA</0>隐私和安全规章合规性。",
+
+  "EncryptDataAtRestAndTransit": "静态和传输过程中的数据加密。",
+  "EncryptDataP1": "加密静态数据和传输中的数据，即使攻击者获得访问权限也无法破译患者数据。",
+  "EncryptDataP2": "ONLYOFFICE使用了业界领先的AES-256加密标准来保护静态敏感数据。传输过程中的数据将使用HTTPS协议和最新的TLS加密算法进行保护。",
+  "EncryptDataP3": "ONLYOFFICE企业版提供私密房间功能，可确保高级数据安全。您所输入的每一个字符都将被端到端加密。",
+  "EncryptDataImgUrl": "/images/templates/healthcare/screens/first/zh/index_1_@x1.zh.png",
+  "EncryptDataImgUrl2x": "/images/templates/healthcare/screens/first/zh/index_1_@x2.zh.png",
+  "LearnHowItWorks": "了解工作原理",
+
+  "RestrictAccessToData": "限制数据访问权限",
+  "RestrictAccessP1": "只有那些在工作中确实需要访问患者数据的人拥有访问权限。",
+  "RestrictAccessP2": "ONLYOFFICE提供了粒度级别的文档权限控制功能，包括完全访问、仅查看、评论、审阅或可填表单模式。",
+  "RestrictAccessP3": "为了对用户身份进行验证并确定其是否拥有访问患者数据的权限，ONLYOFFICE协作平台还提供了一系列的身份认证功能：",
+
+  "TwoFactorAuthentication": "双因素身份验证；",
+  "SingleSignOn": "单点登录（SSO）；",
+  "TrustedMailDomains": "受信任的邮件域；",
+  "PasswordCreationCriteria": "密码创建标准；",
+  "CookieLifetime": "Cookie生命周期；",
+  "IpRestriction": "IP限制；",
+
+  "RestrictAccessP4": "此外，IT部门还可限制对于ONLYOFFICE模块和工具的访问权限。",
+  "RestrictAccessImgUrl": "/images/templates/healthcare/screens/second/zh/index_2_@x1.zh.png",
+  "RestrictAccessImgUrl2x": "/images/templates/healthcare/screens/second/zh/index_2_@x2.zh.png",
+
+  "ProtectDataUsage": "保护数据使用",
+  "ProtectDataUsageP1": "保护患者信息不被复制、下载或打印。",
+  "ProtectDataUsageP2": "ONLYOFFICE API允许IT部门实现额外的控制方式，从而阻止针对敏感数据的高风险活动。",
+  "ProtectDataImgUrl": "/images/templates/healthcare/screens/third/zh/index_3_@x1.zh.png",
+  "ProtectDataImgUrl2x": "/images/templates/healthcare/screens/third/zh/index_3_@x2.zh.png",
+  "VisitAPI": "访问API",
+
+  "LogAndMonitorDataUsage": "记录并监控数据使用",
+  "LogAndMonitorDataUsageP1": "监控信息的访问者、访问时间、访问设备以及访问位置。",
+  "LogAndMonitorDataUsageP2": "ONLYOFFICE内置的审计日志和监控工具能帮助您在事故发生时快速识别和解决问题。",
+  "LogAndMonitorImgUrl": "/images/templates/healthcare/screens/fourth/zh/index_4_@x1.zh.png",
+  "LogAndMonitorImgUrl2x": "/images/templates/healthcare/screens/fourth/zh/index_4_@x2.zh.png",
+
+  "BackupAndRestoreData": "备份和恢复您的数据",
+  "BackupAndRestoreP1": "定期备份，保护您的隐私数据完整性与可用性。",
+  "BackupAndRestoreP2": "ONLYOFFICE提供自动备份和数据恢复工具，让医疗保健组织中的IT部门可选择其备份位置：本地磁盘或任何第三方私有云存储。",
+  "BackupAndRestoreImgUrl": "/images/templates/healthcare/screens/fifth/zh/index_5_@x1.zh.png",
+  "BackupAndRestoreImgUrl2x": "/images/templates/healthcare/screens/fifth/zh/index_5_@x2.zh.png",
+
+
+  "EnterpriseReadySolution": "企业级解决方案",
+  "OOProvidesEnterpriseVersion": "ONLYOFFICE提供了预先配置和优化的企业版本：",
+  "AdvancedSetOfEditingTools": "高级编辑工具组",
+  "EnhancedSecurityOptions": "强化的安全性选项",
+  "PriorityAccessSecurityStabilityFixes": "安全性与稳定性修复优先访问权限",
+  "EasilyScalable": "轻松扩展",
+  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "免费试用、永久许可 + 更新与支持服务"
+}

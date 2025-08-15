@@ -1,0 +1,50 @@
+{
+  "HeroImgUrl": "/images/templates/office-for-humhub/hero/sr/main.png",
+  "HeroImgUrl2x": "/images/templates/office-for-humhub/hero/sr/main@2x.png",
+
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-humhub/documents/sr/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-humhub/documents/sr/screen1@2x.png",
+
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-humhub/documents/sr/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-humhub/documents/sr/screen2@2x.png",
+
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-humhub/documents/sr/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-humhub/documents/sr/screen3@2x.png",
+
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-humhub/documents/sr/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-humhub/documents/sr/screen4@2x.png",
+
+  "PageTitle": "Kolaborativno uređivanje dokumenata za HumHub | ONLYOFFICE Docs",
+  "PageDescription": "Editujte i koautorski uređujte svoje dokumente unutar HumHub-a",
+
+  "OnlineOfficeForConnector": "Online kancelarijsko rešenje za <0>HumHub</0>",
+  "Subheader": "Radite na svim vrstama kancelarijskih dokumenata unutar HumHub-a koristeći ONLYOFFICE",
+  "GetItNow": "Počnite",
+
+  "WorkWithinConnector": "Uređujte i sarađujte na kancelarijskim dokumentima unutar HumHub digitalnog prostora",
+  "DocumentsTab1Label": "Pregledajte, kreirajte i uređujte tekstualne dokumente, tabele i prezentacije.",
+  "DocumentsTab2Label": "Izgradite popunjive PDF formulare i popunjavajte ih online.",
+  "DocumentsTab3Label": "Delite i koautorski uređujte dokumente sa drugim članovima svoje organizacije.",
+  "DocumentsTab4Label": "Zaštitite svoje dokumente od neovlašćenog pristupa pomoću JWT-a.",
+  "GetStarted": "Nabavite ga odmah",
+
+  "MarketplaceConnectorTitle": "Dizajnirano za besprekornu integraciju sa HumHub-om",
+  "MarketplaceConnectorDescription": "Preuzmite ONLYOFFICE konektor za HumHub sada iz HumHub Marketplace-a.",
+
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "Reason1": "Podrška za više od <0>50 formata datoteka</0>, potpuno kompatibilno sa MS Office formatima: DOCX, XLSX, PPTX.",
+  "Reason2": "Robustan skup alata za uređivanje, formatiranje i stilizovanje. Integrisani <0>AI pomoćnik.</0>",
+  "Reason3": "Uređivanje u realnom vremenu i zaključavanje pasusa <0>koautorsko uređivanje</0>, recenzija, poređenje dokumenata, komentari i čet.",
+  "Reason4": "<0>Poboljšana sigurnost.</0> Fleksibilna prava pristupa i JWT. Vodeni žig i zaštita lozinkom. Otvoreni izvorni kod.",
+  "Reason5": "<0>Jednostavna konfiguracija.</0> Besprekorno povezivanje sa gotovim konektorom iz HumHub Marketplace-a.",
+  "Reason6": "Skalabilne Enterprise verzije. <0>Besplatan 30-dnevni probni period.</0> Cloud i samostalno hostovana verzija za potpunu kontrolu nad vašim podacima.",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Implementirajte <0>ONLYOFFICE Docs</0> na sopstvenom serveru ili se prijavite za <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Preuzmite najnoviju verziju konektora iz <0>zvaničnog HumHub Marketplace-a</0>.",
+  "HowToStartStep3": "Konfigurišite konektor i omogućite JWT.",
+
+  "ReadDetailedInstructions": "Pogledajte <0>korisne vodiče</0> o HumHub integraciji.",
+
+  "NeedAnAppToConnect": "Treba vam aplikacija za povezivanje ONLYOFFICE Docs sa vašom omiljenom web uslugom? Ili ste možda već razvili jednu?"
+}

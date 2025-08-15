@@ -1,0 +1,35 @@
+{
+  "PageTitle": "HumHub 向けドキュメント共同作業編集 | ONLYOFFICE",
+  "PageDescription": "HumHub 内のドキュメント編集と共同編集",
+
+  "OnlineOfficeForConnector": "<0>HumHub</0>用のオンラインオフィス",
+  "Subheader": "ONLYOFFICEを使って、HumHub内であらゆる種類のオフィス文書を作成できます",
+  "GetItNow": "スタートアップ",
+
+  "WorkWithinConnector": "HumHubのデジタルスペース内でオフィス文書の編集と共同作業が可能",
+  "DocumentsTab1Label": "テキスト文書、スプレッドシート、プレゼンテーションの表示、作成、編集が可能",
+  "DocumentsTab2Label": "入力可能なPDFフォームを作成し、オンラインで記入できる",
+  "DocumentsTab3Label": "組織内の他のユーザーと文書を共有し、共同編集できる",
+  "DocumentsTab4Label": "JJWTを使用して、不正アクセスから文書を保護できる",
+  "GetStarted": "今すぐ入手",
+
+  "MarketplaceConnectorTitle": "HumHubとのシームレスな統合用に設計",
+  "MarketplaceConnectorDescription": "HumHub Marketplaceから、HumHub用のONLYOFFICEコネクタを入手してください。",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "Reason1": "<0>50以上のファイル形式</0>をサポートし、MS Office形式と完全互換： docx、xlsx、pptx。",
+  "Reason2": "編集、フォーマット、スタイリングツールの強力なセット。統合された<0>AIヘルパー。</0>",
+  "Reason3": "リアルタイムと段落ロックによる<0>共同編集</0>、レビュー、文書比較、コメント、チャット。",
+  "Reason4": "<0>強化されたセキュリティ。</0>柔軟なアクセス権とJWT。透かしとパスワード保護。オープンソースコード。",
+  "Reason5": "<0>簡単な設定。</0>HumHubマーケットプレイスからすぐに使えるコネクタとのシームレスな統合。",
+  "Reason6": "拡張可能なエンタープライズ版。<0>30日間無料トライアル。</0>クラウド版とセルフホスト版で、データを完全に管理。",
+
+  "HowToStart": "開始方法",
+  "HowToStartStep1": "<0>ONLYOFFICE Docs</0>を自社サーバーにデプロイするか、<1>ONLYOFFICE Docs Cloud</1>にサインアップしてください。",
+  "HowToStartStep2": "<0>公式のHumHubマーケットプレイス</0>から最新のコネクタバージョンをダウンロードします。",
+  "HowToStartStep3": "コネクタを設定し、JWTを有効にします。",
+
+  "ReadDetailedInstructions": "HumHub統合に関する<0>便利なガイド</0>を確認してください",
+
+  "NeedAnAppToConnect": "お好みのウェブ サービスに ONLYOFFICE を接続するアプリが必要ですか？  アプリを開発しましたか？"
+}

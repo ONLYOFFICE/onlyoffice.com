@@ -1,0 +1,40 @@
+{
+  "PageTitle": "Liferay文書の共同編集 | ONLYOFFICE Docs",
+  "PageDescription": "Liferay用のオンラインオフィス",
+
+  "OnlineOfficeForConnector": "Liferay用のオンラインオフィス",
+  "Subheader": "Liferay 上で ONLYOFFICE Docs を使って、あらゆるオフィス文書を扱いましょう",
+
+  "WorkWithinConnector": "Liferay 内でオフィス文書を編集・共同執筆",
+  "DocumentsTab1Label": "「文書」と「メディア」セクションでオフィスファイルを閲覧・編集",
+  "DocumentsTab2Label": "新規のテキスト文書、スプレッドシート、プレゼンテーションを作成",
+  "DocumentsTab3Label": "複数ユーザーとリアルタイムで共同作業し、変更内容を Liferay に反映",
+  "DocumentsTab4Label": "PDFファイルを開き、編集し、共同作業を行う",
+  "DocumentsTab5Label": "入力可能なPDFフォームを作成し、オンラインで記入する",
+  "GetStarted": "今すぐ始める",
+  "RequestFreeDemo": "無料デモを予約する",
+
+  "FreeAppsHeading": "Liferay に保存されたドキュメントを、無<0>料のデスクトップアプリ</0>でアクセス・編集",
+  "FreeAppsDesktopText": "Windows、Linux、macOS で利用できる <0>ONLYOFFICEデスクトップエディタ</0>を使い、デスクトップ環境で Liferay のファイルを編集・共同編集",
+  "GetFreeDesktopApps": "無料のデスクトップアプリを入手",
+
+  "MarketplaceConnectorTitle": "Liferay とシームレスに連携するよう設計されています",
+  "MarketplaceConnectorDescription": "Liferay 用の ONLYOFFICE アプリをLiferay Marketplaceから入手いただけます。",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "Reason1": "<0>50 以上のファイル形式</0> に対応し、MS Office 形式（DOCX、XLSX、PPTX）と完全互換。",
+  "Reason2": "豊富な編集・書式設定・デザイン機能を搭載。 <0>AI ヘルパー</0> が統合。",
+  "Reason3": "リアルタイムかつ段落単位でのロックによる <0>共同編集</0>、レビュー、バージョン履歴、文書比較、コメント＆チャット機能、音声・ビデオ通話。",
+  "Reason4": "<0>強化されたセキュリティ</0>。柔軟なアクセス権と JWT、ウォーターマークやパスワード保護、オープンソースコード。",
+  "Reason5": "<0>簡単な統合と設定</0>。サーバー版とクラウド版を提供。",
+  "Reason6": "データを完全にコントロールできるクラウド版およびオンプレミス版。拡張性の高いエンタープライズ版も用意。 <0>30 日間の無料トライアル</0>。",
+
+  "HowToStart": "開始方法",
+  "HowToStartStep1": "<0>ONLYOFFICE Docs</0> を自分のサーバーに導入するか、<1>Docs Cloud</1> アカウントを作成します。",
+  "HowToStartStep2": "<0>Liferay Marketplace</0> から ONLYOFFICE コネクターを入手します。",
+  "HowToStartStep3": "コネクターを設定し、JWT を有効化します。",
+
+  "ReadDetailedInstructions": "<0>ヘルプセンター</0>の詳しい説明をお読みください。",
+
+  "NeedAnAppToConnect": "ONLYOFFICEとお気に入りのウェブサービスをつなぐアプリが必要ですか？または開発済みですか？"
+}

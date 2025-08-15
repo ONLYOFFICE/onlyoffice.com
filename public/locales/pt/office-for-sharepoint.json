@@ -1,0 +1,43 @@
+{
+  "PageTitle": "Pacote office online para SharePoint",
+  "PageDescription": "Edição e coautoria de documentos Office no SharePoint",
+
+  "OnlineOfficeForConnector": "Office online para SharePoint",
+  "Subheader": "Com o ONLYOFFICE Docs, você obtém uma substituição completa do aplicativo Office para desktop compatível com seu navegador",
+  "GetStarted": "Começar agora",
+
+  "WhyOO": "Por que mais de 15 milhões de usuários em todo o mundo já usam o ONLYOFFICE Docs",
+  "Reason1": "Alta compatibilidade com os formatos do MS Office",
+  "Reason2": "Várias ferramentas de estilo e formatação",
+  "Reason3": "Fidelidade de 100% na visualização, conversão, impressão e paginação",
+  "Reason4": "Ampla capacidade de colaboração",
+  "Reason5": "Coleção de complementos de terceiros",
+  "Reason6": "Gerenciamento dos direitos de acesso flexível",
+  "Reason7": "Código open source disponível no GitHub",
+  "Reason8": "Alta segurança",
+  "Reason9": "Integração fácil usando WOPI",
+
+  "MarketplaceConnectorTitle": "Projetado para uma integração perfeita com o SharePoint",
+  "MarketplaceConnectorDescription": "Obtenha o conector do ONLYOFFICE para SharePoint agora em <0>GitHub</0>.",
+  "GetItNow": "Obter agora",
+
+  "HowToStart": "Como começar",
+  "HowToStartStep1": "Implante o <0>ONLYOFFICE Docs</0> em seu próprio servidor ou crie uma conta <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenha o conector ONLYOFFICE do <0>GitHub</0>.",
+  "HowToStartStep3": "Configure o conector e habilite o JWT.",
+
+  "ReadDetailedInstructions": "Leia as instruções detalhadas na <0>Central de Ajuda</0>.",
+
+  "LearnMoreHeading": "Saiba mais sobre a integração do SharePoint ONLYOFFICE",
+  "Video": "Vídeo",
+  "VideoDesc": "Como integrar o ONLYOFFICE Docs com o SharePoint.",
+  "VideoLink": "Assistir agora",
+  "Compare": "Comparar",
+  "CompareDesc": "Por que o ONLYOFFICE Docs é a melhor alternativa ao MS Office.",
+  "CompareLink": "Saiba mais",
+  "HelpCenter": "Centro de ajuda",
+  "HelpCenterDesc": "Como conectar o ONLYOFFICE Docs com o SharePoint pelo WOPI.",
+  "HelpCenterLink": "Leia agora",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço Web favorito? Ou você desenvolveu um?"
+}

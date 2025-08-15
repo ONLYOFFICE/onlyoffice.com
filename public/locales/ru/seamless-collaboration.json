@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Эффективно работайте над всеми офисными документами вместе с командой| ONLYOFFICE",
+  "PageDescription": "Предоставляйте доступ к документам, работайте совместно в режиме реального времени и общайтесь друг с другом, чтобы выполнить работу быстрее",
+
+  "Header": "<0>Эффективно</0> работайте над всеми офисными документами вместе с командой",
+  "SubHeader": "Предоставляйте доступ к документам, работайте совместно в режиме реального времени и общайтесь друг с другом, чтобы выполнить работу быстрее",
+  "HeroImgUrl": "/images/templates/seamless-collaboration/hero/ru/sc-header.png",
+  "HeroImgUrl2x": "/images/templates/seamless-collaboration/hero/ru/sc-header@2x.png",
+
+  "SwitcherTitle1": "Предоставление доступа",
+  "SwitcherTitle2": "Совместное редактирование",
+  "SwitcherTitle3": "Комментирование",
+  "SwitcherTitle4": "Общение",
+  "SwitcherTitle5": "Отслеживание изменений",
+  "SwitcherTitle6": "Сравнение и объединение",
+  "SwitcherTitle7": "Управление версиями",
+
+  "Feature1Title": "Делитесь документами, устанавливая гибкие права доступа",
+  "Feature1Desc": "Предоставляйте доступ к текстовым документам, электронным таблицам, презентациям и PDF-файлам для просмотра или редактирования, подключайте функции комментирования или рецензирования. Создавайте готовые формы и приглашайте пользователей к их заполнению. Устанавливайте разрешение на применение пользовательского фильтра для независимой сортировки данных. <2>Делитесь ссылками на выбранный диапазон данных, чтобы коллеги могли быстро найти необходимые сведения даже в объемных рабочих книгах. </2>Устанавливайте ограничение на копирование, скачивание и печать. Используйте функцию предоставления доступа к документам сторонним пользователям.",
+  "Feature1ImgUrl": "/images/templates/seamless-collaboration/features/ru/share-docs-providing-flexible-permissions.png",
+  "Feature1ImgUrl2x": "/images/templates/seamless-collaboration/features/ru/share-docs-providing-flexible-permissions@2x.png",
+
+  "Feature2Title": "Редактируйте документы совместно без усилий",
+  "Feature2Desc": "Работайте над документами совместно в режиме реального времени, используйте Быстрый режим, чтобы отобразить все изменения сразу после их внесения. Подключите Строгий режим, чтобы блокировать абзац, который вы редактируете, и работайте над ним самостоятельно.",
+  "Feature2ImgUrl": "/images/templates/seamless-collaboration/features/ru/co-edit-without-stress.png",
+  "Feature2ImgUrl2x": "/images/templates/seamless-collaboration/features/ru/co-edit-without-stress@2x.png",
+
+  "Feature3Title": "Оставляйте комментарии и упоминания",
+  "Feature3Desc": "Оставляйте комментарии, чтобы обсудить вопросы и проблемы. Упоминайте пользователей в комментариях, чтобы пригласить их к совместной работе и сразу предоставить им доступ к файлу. Управляйте комментариями, сортируйте их по автору или дате.",
+  "Feature3ImgUrl": "/images/templates/seamless-collaboration/features/ru/comment-mention.png",
+  "Feature3ImgUrl2x": "/images/templates/seamless-collaboration/features/ru/comment-mention@2x.png",
+
+  "Feature4Title": "Общайтесь",
+  "Feature4Desc": "Общайтесь в чате с коллегами прямо в ваших документах. Подключите плагины Jitsi или Rainbow, чтобы совершать аудиозвонки и организовывать видеоконференции.",
+  "Feature4ImgUrl": "/images/templates/seamless-collaboration/features/ru/communicate.png",
+  "Feature4ImgUrl2x": "/images/templates/seamless-collaboration/features/ru/communicate@2x.png",
+
+  "Feature5Title": "Отслеживайте изменения",
+  "Feature5Desc": "Подключите функцию отслеживания изменений, чтобы выделять ваши предложения и просматривать изменения, сделанные другими пользователями. Принимайте или отклоняйте их по одному или все одновременно. Выберите способ отображения внесенных изменений.",
+  "Feature5ImgUrl": "/images/templates/seamless-collaboration/features/ru/track-changes.png",
+  "Feature5ImgUrl2x": "/images/templates/seamless-collaboration/features/ru/track-changes@2x.png",
+
+  "Feature6Title": "Сравнивайте и объединяйте",
+  "Feature6Desc": "Сравнивайте и просматривайте различия между двумя документами оперативно. Переключайтесь между изменениями, принимайте или отклоняйте их. Объединяйте документы.",
+  "Feature6ImgUrl": "/images/templates/seamless-collaboration/features/ru/compare-combine.png",
+  "Feature6ImgUrl2x": "/images/templates/seamless-collaboration/features/ru/compare-combine@2x.png",
+
+  "Feature7Title": "Управляйте версиями",
+  "Feature7Desc": "Получите доступ к истории версий вашего документа, проверьте, кто и когда создал каждую версию, какие изменения были внесены. Просмотрите и, если необходимо, восстановите предыдущие версии, включая удаленный текст.",
+  "Feature7ImgUrl": "/images/templates/seamless-collaboration/features/ru/manage-versions.png",
+  "Feature7ImgUrl2x": "/images/templates/seamless-collaboration/features/ru/manage-versions@2x.png"
+}

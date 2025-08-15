@@ -1,0 +1,53 @@
+{
+  "PageTitle": "Suite ofimática online para WordPress",
+  "PageDescription": "Trabaja en archivos ofimáticos desde tu cuenta de WordPress",
+
+  "OnlineOfficeForConnector": "Suite ofimática online para WordPress",
+  "Subheader": "Trabaja en archivos ofimáticos desde tu cuenta de WordPress",
+  "GetStarted": "Empezar",
+  "RequestFreeDemo": "SOLICITAR DEMOSTRACIÓN GRATUITA",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Totalmente compatible con docx, xlsx y pptx",
+
+  "DocspaceAppTitle": "App <0>ONLYOFFICE DocSpace</0> para WordPress",
+  "DocspaceAppHeader": "Incrusta documentos ofimáticos en tu sitio web basado en WordPress",
+  "DocspaceAppTab1Label": "Crea, carga e incrusta documentos, hojas, diapositivas o PDF en tu página web",
+  "DocspaceAppTab2Label": "Incrusta toda la sala en tu página web para que los visitantes puedan ver los documentos directamente en el navegador",
+  "DocspaceAppTab3Label": "Integra formularios PDF complejos para rellenarlos online. Recopila y analiza datos automáticamente",
+  "soon": "próximamente",
+  "DocspaceAppTab4Label": "Evita que se descarguen, impriman y copien documentos de tu sitio web",
+
+  "DocspaceAppScreen2Header": "Gestiona documentos de forma eficaz desde tu cuenta de WordPress",
+  "DocspaceAppScreen2Tab1Label": "Crea un espacio seguro para todos tus documentos. Accede fácilmente en cualquier momento y desde cualquier lugar",
+  "DocspaceAppScreen2Tab2Label": "Organiza tus archivos personales y crea salas para tus documentos empresariales",
+  "DocspaceAppScreen2Tab3Label": "Proporciona permisos de acceso flexibles: editar, comentar, revisar o solo visualizar",
+  "DocspaceAppScreen2Tab4Label": "Edita y colabora en documentos con otros usuarios de WordPress online",
+
+  "MarketplaceConnectorTitle": "Diseñado para funcionar perfectamente en WordPress",
+  "MarketplaceConnectorDescription": "Instala hoy mismo la aplicación ONLYOFFICE DocSpace para WordPress desde el Directorio de plugins de WordPress.",
+
+  "DocsAppTitle": "App <0>ONLYOFFICE Docs</0> para WordPress",
+  "DocsAppHeader": "Añade documentos ofimáticos a tus páginas de WordPress",
+  "DocsAppTab1Label": "Añade bloques de ONLYOFFICE a las entradas para insertar documentos en modo incrustado",
+  "DocsAppTab2Label": "Edita documentos, hojas, diapositivas subidas a WordPress a través del panel de administración",
+  "DocsAppTab3Label": "Colabora en archivos ofimáticos en tiempo real con otros administradores de WordPress",
+
+  "WhyOO": "¿Por qué ONLYOFFICE?",
+  "Reason1": "Un sólido conjunto de herramientas de edición, formato y estilo. Asistente de <0>IA integrado</0> (ChatGPT o ZhiPu Copilot).",
+  "Reason2": "Coedición en <0>tiempo real</0> y con bloqueo de párrafos, revisión, historial de versiones, comparación de documentos, comentarios y menciones.",
+  "Reason3": "<0>Chat integrado e integración con Telegram</0>. Plugins de Jitsi y Rainbow para comunicación en tiempo real.",
+  "Reason4": "Compatibilidad con más de <0>50 formatos de archivo</0>. Totalmente compatible con los formatos de MS Office: DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Seguridad mejorad</0>. Permisos de acceso flexibles y JWT. Seguimiento de la actividad e informes de auditoría. Cifrado en reposo y en tránsito. Código fuente abierto.",
+  "Reason6": "<0>Plan gratuito para empezar</0>. Plan Business para más administradores, mayor almacenamiento, seguridad mejorada y asistencia profesional. Solución autoalojada para un control total de tus datos.",
+
+  "HowToStart": "Cómo empezar",
+  "HowToStartStep1Docspace": "Crea tu cuenta de <0>DocSpace gratis</0>.",
+  "HowToStartStep2Docspace": "Obtén la app de integración del <0>Directorio de plugins de WordPress</0>.",
+  "HowToStartStep3": "Sube y configura la app de integración.",
+  "ReadDetailedInstructionsDocSpace": "Lee las instrucciones detalladas en el <0>Centro de ayuda</0>",
+
+  "HowToStartStep1Docs": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o regístrate en <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2Docs": "Obtén la app de integración de <0>GitHub</0> o del <1>Directorio de plugins de WordPress</1>.",
+  "ReadDetailedInstructionsDocs": "Lee las instrucciones detalladas en <0>GitHub</0> y en el <1>Centro de Ayuda</1>",
+
+  "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE a tu servicio web favorito? ¿O ya has desarrollado una?"
+}

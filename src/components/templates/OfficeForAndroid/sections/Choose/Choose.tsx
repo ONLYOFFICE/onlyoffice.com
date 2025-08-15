@@ -7,13 +7,12 @@ import { FeatureItem } from "@src/components/widgets/FeatureItem";
 import { items } from "./data/items";
 
 import {
-  StyledChooseButtonAppGallery,
-  StyledChooseButtonGoogle,
   StyledChooseButtonsWrapper,
   StyledChooseHeading,
   StyledChooseList,
   StyledChooseSubtitle,
 } from "./Choose.styled";
+import { DownloadButton } from "@src/components/ui/DownloadButton";
 
 const Choose = () => {
   const { locale } = useRouter();
@@ -43,39 +42,45 @@ const Choose = () => {
           ))}
         </StyledChooseList>
         <StyledChooseButtonsWrapper $isZhLocale={locale === "zh"}>
-              <StyledChooseButtonGoogle
-                $backgroundUrl={t("ButtonGoogleUrl")}
-                $isZhLocale={locale === "zh"}
-                as={"a"}
-                target="_blank"
-                href={locale === "zh" ? "/zh/download-desktop#mobile" : "https://play.google.com/store/apps/details?id=com.onlyoffice.documents"}
-              />
-              <StyledChooseButtonAppGallery
-                $backgroundUrl={t("ButtonAppGalleryUrl")}
-                as={"a"}
-                target="_blank"
-                href="https://appgallery.huawei.com/#/app/C102942717"
-              />
-              {locale === "zh" && (
-                <StyledChooseButtonAppGallery
-                  $backgroundUrl="/images/templates/office-for-android/buttons/black-apk.svg"
-                  as={"a"}
-                  target="_blank"
-                  href="https://download.onlyoffice.com/install/mobile/android/onlyoffice-documents.apk"
-                />
-              )}
-            </StyledChooseButtonsWrapper>
+          <DownloadButton
+            platform="google-play"
+            variant="secondary"
+            href={
+              locale === "zh"
+                ? "/zh/download-desktop#mobile"
+                : "https://play.google.com/store/apps/details?id=com.onlyoffice.documents"
+            }
+            target="_blank"
+          />
+          <DownloadButton
+            platform="app-gallery"
+            variant="secondary"
+            href="https://appgallery.huawei.com/#/app/C102942717"
+            target="_blank"
+          />
+          {locale === "zh" && (
+            <DownloadButton
+              platform="apk"
+              variant="secondary"
+              href="https://download.onlyoffice.com/install/mobile/android/onlyoffice-documents.apk"
+              target="_blank"
+            />
+          )}
+        </StyledChooseButtonsWrapper>
         <StyledChooseSubtitle textAlign="center" size={3} color="#fff">
           <Trans
             t={t}
             i18nKey="HaveQuestions"
             components={[
-              <Link key="0" href="https://helpcenter.onlyoffice.com/mobile-applications/documents/android/overview.aspx"
-                    color="main"
-                    textUnderline={true}
-                    hover="underline-none"
-                    target="_blank"
-              />]}
+              <Link
+                key="0"
+                href="https://helpcenter.onlyoffice.com/mobile-applications/documents/android/overview.aspx"
+                color="main"
+                textUnderline={true}
+                hover="underline-none"
+                target="_blank"
+              />,
+            ]}
           />
         </StyledChooseSubtitle>
       </Container>

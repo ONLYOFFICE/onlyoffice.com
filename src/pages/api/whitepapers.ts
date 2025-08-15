@@ -23,17 +23,10 @@ export default async function handler(
   res: NextApiResponse,
 ) {
   if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method Not Allowed"})
+    return res.status(405).json({ message: "Method Not Allowed" });
   }
 
-  const {
-    fullName,
-    email,
-    company,
-    product,
-    languageCode,
-    from,
-  } = req.body;
+  const { fullName, email, company, product, languageCode, from } = req.body;
 
   try {
     const errorMessages = [];
@@ -49,23 +42,21 @@ export default async function handler(
           languageCode,
           fromPage: from,
           ip:
-            req.headers["x-forwarded-for"] ||
-            req.socket.remoteAddress ||
-            null,
+            req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
           utm_source: cookies.utmSource ?? null,
           utm_campaign: cookies.utmCampaign ?? null,
           utm_content: cookies.utmContent ?? null,
           utm_term: cookies.utmTerm ?? null,
-        }
+        };
 
-        await db.query("INSERT INTO whitepapers_request SET ?", [
+        await db.teamlabsite.query("INSERT INTO whitepapers_request SET ?", [
           addWhitepapersData,
         ]);
 
         return {
           status: "success",
           message: "whitepapersRequestSuccessful",
-        }
+        };
       } catch (error: unknown) {
         console.error(
           "Add Whitepapers api returns errors:",
@@ -74,16 +65,17 @@ export default async function handler(
 
         return {
           status: "error",
-          message: error instanceof Error ? error.message : "Unknown error occurred",
-        }
+          message:
+            error instanceof Error ? error.message : "Unknown error occurred",
+        };
       }
-    }
+    };
 
     const addWhitepapersDataResult = await addWhitepapersDataRequest();
     if (addWhitepapersDataResult.status === "error") {
       errorMessages.push(
         `whitepapersRequest: ${addWhitepapersDataResult.message}`,
-      )
+      );
     }
 
     const transporter = emailTransporter();
@@ -98,18 +90,18 @@ export default async function handler(
         company,
         product,
         languageCode,
-      })
-    })
+      }),
+    });
 
     res.status(200).json({
       status: "success",
       message: "success",
-    })
+    });
   } catch (error) {
     console.error("Whitepapers api returns errors:", error);
     res.status(500).json({
       status: "error",
-      message: error
+      message: error,
     });
   }
 }

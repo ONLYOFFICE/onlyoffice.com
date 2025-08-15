@@ -4,4 +4,6 @@ export interface IEditorsFeatures {
   items: IEditorsItem[];
   /** Whether to show buttons */
   buttons?: boolean;
+  /** Additional CSS class names. */
+  className?: string;
 }

@@ -1,0 +1,47 @@
+{
+  "PageTitle": "在 Dropbox 中轻松地处理办公文档 | ONLYOFFICE",
+  "PageDescription": "使用 ONLYOFFICE 文档查看并编辑 Dropbox 中的文本文档、电子表格、幻灯片和表单",
+
+  "FreeOnlineOfficeForDropbox": "适用于 <0>Dropbox</0> 的免费在线办公套件",
+  "EditOfficeFilesRightInDropbox": "使用 ONLYOFFICE 文档，直接在 Dropbox 中编辑办公文件",
+  "GetFreeApp": "免费获取应用",
+  "HeroImgUrl": "/images/templates/office-for-dropbox/hero/zh/dropbox_header.png",
+  "HeroImgUrl2x": "/images/templates/office-for-dropbox/hero/zh/dropbox_header@2x.png",
+
+  "WorkOnOfficeDocumentsStored": "处理在 Dropbox 中存储的办公文档",
+  "DocumentsTab1Label": "查看和编辑文本文档、电子表格和演示文稿",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-dropbox/documents/zh/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-dropbox/documents/zh/documents-1@2x.png",
+  "DocumentsTab2Label": "创建并填写复杂的在线表单",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-dropbox/documents/zh/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-dropbox/documents/zh/documents-2@2x.png",
+  "DocumentsTab3Label": "导出和导入 PDF",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-dropbox/documents/zh/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-dropbox/documents/zh/documents-3@2x.png",
+  "DocumentsTab4Label": "将纸质书转换成电子书",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-dropbox/documents/zh/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-dropbox/documents/zh/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "在 Dropbox 中使用文档编辑器",
+  "MarketplaceConnectorDescription": "从 Dropbox 应用市场获取用于 Dropbox 的 ONLYOFFICE 应用程序",
+
+  "WhyOO": "为什么选择ONLYOFFICE？",
+  "FeaturesRobustSet": "多种编辑工具",
+  "FeaturesFamiliarInterface": "带有标签页的直观界面",
+  "FeaturesAIHelper": "人工智能助手和免费插件库",
+  "FeaturesFormats": "支持 50 多种文件格式",
+  "FeaturesHighestCompatibility": "高度兼容 docx、xlsx、pptx 格式",
+  "FeaturesOpenSourceCode": "水印、密码保护、开源代码",
+  "FeaturesFreeApp": "免费 APP，无需安装和注册",
+  "GetStarted": "立即开始",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1": "注册您的 Dropbox 账户。",
+  "HowToStartStep2": "访问<0>链接</0>",
+  "HowToStartStep3": "授予 ONLYOFFICE 应用程序所需的权限。",
+  "HowToStartStep4": "打开所需文件的上下文菜单。",
+  "HowToStartStep5": "点击"打开方式" -> ONLYOFFICE Docs。",
+  "ExploreMoreDetails": "<0>阅读本文</0>，了解详情。",
+
+  "NeedAnAppToConnect": "需要一个应用程序将ONLYOFFICE Docs连接到您喜欢的网络服务吗？或者您已经开发了一个？"
+}

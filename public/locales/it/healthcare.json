@@ -1,0 +1,79 @@
+{
+  "PageTitle": "Prodotti ONLYOFFICE per uffici sanitari | ONLYOFFICE",
+  "PageDescription": "Modifica di documenti e collaborazione sicura per professionisti sanitari",
+
+  "HeroTitle": "ONLYOFFICE <0>per uffici sanitari</0>",
+  "HeroText": "Modifica di documenti e collaborazione sicura per professionisti sanitari",
+
+  "FlexibleChoiceSoftwareTools": "<0>Scelta flessibile</0> di strumenti software adatta alle esigenze della tua organizzazione",
+  "LearnMore": "Scopri di più",
+  "UseItForFree": "Usalo gratis",
+  "GetItNow": "Ottieni adesso",
+
+  "EffectivelyCollaborateOnMedicalRecords": "Collabora efficacemente alle cartelle cliniche",
+  "OODocSpaceAllowsConnectingDoctors": "ONLYOFFICE DocSpace consente di collegare medici e documentazione in stanze personalizzabili con impostazioni flessibili.",
+  "EffectivelyCollabFeature1": "Crea stanze di collaborazione per lavorare insieme sulle cartelle cliniche dei pazienti, ad esempio per discussioni multidisciplinari, stanze di compilazione moduli per la raccolta di dati e risposte o stanze personalizzate per qualsiasi altro scopo.",
+  "EffectivelyCollabFeature2": "Condividi l'accesso con i medici responsabili del trattamento, compresi i casi interospedalieri. Per un accesso rapido utilizza le stanze pubbliche dove è possibile visualizzare i documenti senza registrazione.",
+  "EffectivelyCollabFeature3": "Proteggi stanze e file sensibili che potrebbero contenere utilizzando più impostazioni di sicurezza.",
+
+
+  "OrganizeASecureDigitalWorkplace": "Organizza un workplace digitale sicuro",
+  "OOOffersCollaborationPlatform": "ONLYOFFICE offre una collaboration platform completa con funzioni di sicurezza migliorate.",
+  "OrganizeASecureFeature1": "Archivia, condividi e modifica documenti in sicurezza con <0>Documenti</0>. Crea moduli pronti da compilare. Apri file audio e video, visualizza immagini in formati diversi.",
+  "OrganizeASecureFeature2": "Migliora la gestione di contatti con <0>CRM</0>. Gestisci compiti di ufficio con <1>Progetti</1>.",
+  "OrganizeASecureFeature3": "Crea un hub di comunicazione interna per i dipendenti con <0>Comunità</0>.Organizza calendari con <1>Calendario</1>.",
+
+
+  "AlreadyUseAPopularDms": "Usi già un DMS popolare? Abilità modifica di documenti e collaborazione sicura con ONLYOFFICE Docs",
+  "OOOffersConnectors": "ONLYOFFICE offre una raccolta di connectors pronti all'uso per un'integrazione profonda con le tue infrastrutture.",
+  "AlreadyUseFeature1": "Tieni le informazioni dei pazienti in documenti di testo, fogli elettronici o presentazioni criptate end-to-end. Modifica e collabora in sicurezza in tempo reale. Altamente compatibile con formati MS Office.",
+  "AlreadyUseFeature2": "Imposta autorizzazioni per documenti su vari livelli. Usa diverse funzioni di collaborazione, inclusa cronologia versione, monitoraggio modifiche, commenti e chat integrata.",
+  "AlreadyUseFeature3": "Proteggi le informazioni dei pazienti da copia, download o stampa.",
+
+
+
+  "UltimateProtectionHealthcareData": "<0>Protezione definitiva</0> di dati sanitari contro le minacce odierne",
+  "OOCompliantWithHipaaPrivacy": "ONLYOFFICE include funzioni integrate che aiutano il dipartimento informatico di organizzazioni sanitarie a rispettare <0>privacy HIPAA</0> e normative di sicurezza.",
+
+  "EncryptDataAtRestAndTransit": "Crittografia dati in sede e in movimento",
+  "EncryptDataP1": "La crittografia di dati in sede e in movimento rende impossibile per aggressori di decifrare i dati dei pazienti anche se riescono ad accedervi.",
+  "EncryptDataP2": "ONLYOFFICE usa lo standard di crittografia AES-256 leader nel settore per proteggere dati sensibili in sede. I dati in movimento vengono protetti usando protocolli HTTPS con algoritmo di crittografia TLS aggiornato.",
+  "EncryptDataP3": "ONLYOFFICE Enterprise include private rooms che assicurano una sicurezza dei dati definitiva. Ogni simbolo che digiti è criptato end-to-end.",
+  "LearnHowItWorks": "Scopri come funziona",
+
+  "RestrictAccessToData": "Restrizione accesso ai dati",
+  "RestrictAccessP1": "Permetti di accedere ai dati dei pazienti solo a coloro che ne hanno bisogno per il loro lavoro.",
+  "RestrictAccessP2": "ONLYOFFICE offre autorizzazioni per documenti su vari livelli per controllare l'accesso. Disponibili modalità accesso completo, solo visualizzazione, commenti, revisione o compilazione moduli.",
+  "RestrictAccessP3": "Per convalidare che gli utenti siano le persone autorizzate ad accedere ai dati dei pazienti, ONLYOFFICE Workspace include un set di funzioni di autenticazione:",
+
+  "TwoFactorAuthentication": "autenticazione a due fattori;",
+  "SingleSignOn": "autenticazione unica;",
+  "TrustedMailDomains": "domini mail verificati;",
+  "PasswordCreationCriteria": "criteri di creazione password;",
+  "CookieLifetime": "ciclo di vita dei cookie;",
+  "IpRestriction": "restrizione IP;",
+
+  "RestrictAccessP4": "Oltre a questo, permette al dipartimento informatico di limitare l'accesso a strumenti e moduli ONLYOFFICE.",
+
+  "ProtectDataUsage": "Protezione utilizzo di dati",
+  "ProtectDataUsageP1": "Proteggi i dati dei pazienti da copia, download o stampa.",
+  "ProtectDataUsageP2": "L'API ONLYOFFICE consente ai dipartimenti informatici di implementare controlli aggiuntivi per bloccare attività rischiose con dati sensibili.",
+  "VisitAPI": "Visita API",
+
+  "LogAndMonitorDataUsage": "Registrazione e monitoraggio utilizzo di dati",
+  "LogAndMonitorDataUsageP1": "Monitora chi, quando e da quali dispositivi e posizioni vengono effettuati gli accessi ai dati.",
+  "LogAndMonitorDataUsageP2": "ONLYOFFICE Workspace include registri di verifica e strumenti di monitoraggio integrati che consentono di identificare e risolvere problemi velocemente nel caso in cui si verifichi un incidente.",
+
+  "BackupAndRestoreData": "Backup e ripristino dati",
+  "BackupAndRestoreP1": "Proteggi integrità e disponibilità dei tuoi dati sensibili con backup regolari.",
+  "BackupAndRestoreP2": "ONLYOFFICE Workspace offre strumenti per backup automatico e ripristino di dati consentendo ai dipartimenti informatici delle organizzazioni sanitarie di scegliere una posizione per i backup: disco locale o archiviazione su cloud privato fornito da terzi.",
+
+
+  "EnterpriseReadySolution": "Soluzione pronta per imprese",
+  "OOProvidesEnterpriseVersion": "ONLYOFFICE fornisce una versione per imprese ottimizzata e pre-configurata:",
+  "AdvancedSetOfEditingTools": "funzionalità di modifica professionali",
+  "EnhancedSecurityOptions": "opzioni di sicurezza avanzate",
+  "PriorityAccessSecurityStabilityFixes": "accesso prioritario a risoluzioni di stabilità e sicurezza",
+  "EasilyScalable": "scalabile facilmente",
+  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "prova gratis, licenza a vita, aggiornamenti e supporto"
+}

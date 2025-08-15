@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Edição colaborativa de documento para HumHub | ONLYOFFICE Docs",
+  "PageDescription": "Edição e coautoria de seus documentos no HumHub",
+
+  "OnlineOfficeForConnector": "Escritório on-line para o <0>HumHub</0>",
+  "Subheader": "Trabalhe em todos os tipos de documentos do Office no HumHub usando o ONLYOFFICE",
+  "GetItNow": "Começar agora",
+
+  "WorkWithinConnector": "Edite e colabore em documentos de escritório no espaço digital do HumHub",
+  "DocumentsTab1Label": "Visualize, crie e edite documentos de texto, planilhas e apresentações.",
+  "DocumentsTab2Label": "Crie formulários PDF preenchíveis e preencha-o on-line.",
+  "DocumentsTab3Label": "Compartilhe e seja coautor de documentos com outras pessoas de sua organização.",
+  "DocumentsTab4Label": "Proteja seus documentos contra acesso não autorizado com o JWT.",
+  "GetStarted": "Obter agora",
+
+  "MarketplaceConnectorTitle": "Projetado para integração perfeita com o HumHub",
+  "MarketplaceConnectorDescription": "Obtenha o conector ONLYOFFICE para o HumHub agora no HumHub Marketplace.",
+
+  "WhyOO": "Por que ONLYOFFICE?",
+  "Reason1": "Suporte para mais de <0>50 formatos de arquivo</0>, totalmente compatível com os formatos do MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "Um conjunto robusto de ferramentas de edição, formatação e estilo. Auxiliar de <0>IA integrado</0>.",
+  "Reason3": "<0>Coedição</0> em tempo real e com bloqueio de parágrafo, revisão, comparação de documentos, comentários e bate-papo.",
+  "Reason4": "<0>Segurança aprimorada.</0> Direitos de acesso flexíveis e JWT. Marca d'água e proteção por senha. Código-fonte aberto.",
+  "Reason5": "<0>Configuração fácil.</0> Integração perfeita com o conector pronto para uso do HumHub Marketplace.",
+  "Reason6": "Versões empresariais escalonáveis. <0>Teste gratuito de 30 dias.</0> Versão em nuvem e auto-hospedada para controle total sobre seus dados.",
+
+  "HowToStart": "Como começar",
+  "HowToStartStep1": "Implante o <0>ONLYOFFICE Docs</0> em seu próprio servidor ou inscreva-se no <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Faça o download da versão mais recente do conector no <0>official HumHub Marketplace</0>.",
+  "HowToStartStep3": "Configure o conector e ative o JWT.",
+
+  "ReadDetailedInstructions": "Confira <0>guias úteis</0> sobre a integração do HumHub",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço web favorito? Ou você desenvolveu um?"
+}

@@ -1,22 +1,67 @@
 {
+  "PageTitle": "适用于 Pipedrive 的在线办公套件",
+  "PageDescription": "使用 ONLYOFFICE 文档在 Pipedrive 交易中处理办公文档",
+
+  "OnlineOfficeForConnector": "适用于 Pipedrive 的在线办公套件",
+  "Subheader": "使用 ONLYOFFICE 文档在 Pipedrive 交易中处理办公文档",
+  "GetStarted": "开始使用",
+  "ScheduleFreeDemo": "预定免费试用版",
   "HeroImgUrl": "/images/templates/office-for-pipedrive/hero/zh/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-pipedrive/hero/zh/hero@2x.png",
 
+  "DocspaceAppTitle": "适用于 Pipedrive 的 ONLYOFFICE <0>协作空间应用</0>",
+  "New": "全新",
+  "DocspaceAppHeader": "创建协作环境处理您的交易文档",
+  "DocspaceAppTab1Label": "直接从任意 Pipedrive 交易中轻松创建文档协作专用的协作空间房间。",
   "DocspaceAppTab1ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/zh/screen1.png",
   "DocspaceAppTab1ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/zh/screen1@2x.png",
-
+  "DocspaceAppTab2Label": "同步访问权限。",
   "DocspaceAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/zh/screen2.png",
   "DocspaceAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/zh/screen2@2x.png",
-
+  "DocspaceAppTab3Label": "将所有交易数据保存至同一位置",
   "DocspaceAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/zh/screen3.png",
   "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/zh/screen3@2x.png",
-
+  "DocspaceAppTab4Label": "编辑和协作文档、表格、幻灯片、表单和 PDF。查看媒体文件。",
   "DocspaceAppTab4ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/zh/screen4.png",
   "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/zh/screen4@2x.png",
 
+  "MarketplaceConnectorTitle": "为了与 Pipedrive 无缝集成而设计",
+  "MarketplaceConnectorDescription": "立即从 Pipedrive 应用市场获取适用于 Pipedrive 的 ONLYOFFICE 应用程序。",
+
+  "DocsAppTitle": "适用于 Pipedrive 的 ONLYOFFICE <0>文档应用</0>",
+  "DocsAppHeader": "在 Pipedrive 界面中编辑和共同创作办公文档",
+  "DocsAppTab1Label": "创建或上传文档、表格、幻灯片至 Pipedrive。",
+  "DocsAppTab2Label": "查看或编辑与 Pipedrive 交易相关的文件。",
   "DocsAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docs-app/zh/screen2.png",
   "DocsAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/zh/screen2@2x.png",
-
+  "DocsAppTab3Label": "与同事实时协同编辑文档、跟踪更改、进行批注和聊天。",
   "DocsAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docs-app/zh/screen3.png",
-  "DocsAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/zh/screen3@2x.png"
+  "DocsAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/zh/screen3@2x.png",
+
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "Reason1": "支持超过 <0>50 种文件格式</0>，高度兼容微软 Office 格式：DOCX、XLSX、PPTX。",
+  "Reason2": "实时和段落锁定<0>共同编辑</0>模式、审阅、版本历史、文档比较、批注和聊天。音频和视频通话。",
+  "Reason3": "免费社区版&可扩展的企业版。<0>免费试用30天</0>。与云版本集成。",
+  "Reason4": "拥有强大的编辑、格式和样式工具。集成<0> AI 助手</0>。",
+  "Reason5": "在 Pipedrive 市场轻松安装并快速配置",
+  "Reason6": "<0>高度安全性</0>。灵活的访问权限和 JWT。活动跟踪和审计报告。静态和传输加密。水印和密码保护。开源代码。",
+
+  "HowToStart": "如何开始",
+
+  "Docs": "文档",
+  "DocSpace": "协作空间",
+
+  "HowToStartStep1Docspace": "登录您的 ONLYOFFICE 协作空间账户或<0>注册新账户</0>。",
+  "HowToStartStep2Docspace": "在 <0>Pipedrive 应用市场</0>安装应用并授予所需权限。",
+  "HowToStartStep3Docspace": "配置 Pipedrive 和 ONLYOFFICE 访问设置。",
+
+  "HowToStartStep1Docs": "在您自己的服务器上部署 <0>ONLYOFFICE 文档</0>或注册 <1>ONLYOFFICE 文档云</1>。",
+  "HowToStartStep2Docs": "在 <0>Pipedrive 应用市场</0>安装集成应用程序。",
+  "HowToStartStep3Docs": "配置集成实例。",
+  "ReadDetailedInstructions": "在 <0>GitHub</0> 或 <1>帮助中心</1>查看 Pipedrive 相关集成指南。",
+
+  "PartnerHeading": "您是 Pipedrive 的合作伙伴吗？考虑一下如何提升您的 Pipedrive 用户体验并增加你的收入怎么样？",
+  "PartnerText": "立即加入 ONLYOFFICE 合作伙伴计划。",
+
+  "NeedAnAppToConnect": "想要将 ONLYOFFICE 连接至您喜爱的网络服务？需要某个连接 app 或者你们已经开发出来了？"
 }

@@ -1,0 +1,49 @@
+{
+  "PageTitle": "ONLYOFFICE accessibile a tutti | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE è progettato per soddisfare gli utenti con esigenze speciali. Scopri come ci adeguiamo all'approccio all'accessibilità.",
+
+  "HeroTitle": "ONLYOFFICE è accessibile a tutti",
+  "HeroDescription": "I nostri editor sono progettati per accogliere gli utenti con esigenze speciali e rendere il loro processo di editing comodo e semplice.",
+  "HeroButtonLabel": "PROVA ORA",
+
+  "AccessibilityTitle": "Come rispettiamo l'approccio all'accessibilità",
+  "AccessibilityDescription": "L'accessibilità è il grado di facilità con cui il prodotto può essere utilizzato da persone di tutte le abilità. Esplora le funzionalità corrispondenti in ONLYOFFICE Docs.",
+
+  "VisionTitle": "Visione",
+  "ScreenReaders": "Lettori di schermo",
+  "ScreenReadersFeature1": "Ascolta le notifiche vocali che riproducono le operazioni eseguite negli editor",
+  "ScreenReadersFeature2": "Attiva lettori di schermo per documenti di testo, fogli di calcolo, presentazioni",
+  "UITweaks": "Modifiche all'interfaccia utente",
+  "UITweaksFeature1": "Modifica le dimensioni dello spazio di lavoro utilizzando varie preimpostazioni di ridimensionamento.",
+  "UITweaksFeature2": "Adatta l'area di modifica alla pagina e alla larghezza dello schermo.",
+  "UITweaksFeature3": "Nascondi o mostra la barra degli strumenti, la barra di stato e i righelli.",
+  "ColorModes": "Temi cromatici",
+  "ColorModesFeature1": "Lavora comodamente in qualsiasi ambiente applicando vari temi dell'interfaccia utente.",
+  "ColorModesFeature2": "Consenti agli elementi del grafico di essere visualizzati in modalità ad alto contrasto o utilizzare pattern geometrici distinguibili senza essere colorati.",
+  "MobileWebView": "Vista mobile web",
+  "MobileWebViewFeature1": "Aumenta e diminuisci facilmente la dimensione del font del testo quando apri documenti negli editor web mobili in modalità lettura per visualizzare i contenuti senza scorrimento orizzontale.",
+
+  "MobilityTitle": "Mobilità",
+  "Hotkeys": "Tasti di scelta rapida",
+  "HotkeysFeature1": "Effettua le operazioni tramite tasti di scelta rapida o scorciatoie da tastiera.",
+  "SpeechInput": "Input vocale",
+  "SpeechInputFeature1": "Trascrivi la registrazione per trasformare un audio in testo.",
+
+  "NeurodiversityTitle": "Neurodiversità",
+  "AlternativeText": "Testo alternativo",
+  "AlternativeTextFeature1": "Specifica titoli e descrizioni per immagini e altri oggetti grafici in modo che altre persone capiscano meglio quali informazioni contiene l'oggetto.",
+  "AutoCorrectFeatures": "Funzionalità di correzione automatica",
+  "AutoCorrectFeaturesFeature1": "Utilizza opzioni di correzione automatica e ortografia come sostituzione dei simboli, guide di allineamento, sostituzione di virgolette dritte con virgolette curve, elencazione automatica, capitalizzazione delle lettere iniziali delle frasi per impostazione predefinita, ecc.",
+  "Speech": "Speech",
+  "SpeechFeature1": "Converti il testo selezionato in audio e fai leggere ad alta voce i documenti di testo.",
+  "Typography": "Typograf",
+  "TypographyFeature1": "Correggi automaticamente l'ortografia dei tuoi testi.",
+  "Translator": "Traduttore",
+  "TranslatorFeature1": "Traduci automaticamente il testo selezionato in altre lingue.",
+
+  "SuggestionsTitle": "Hai qualche suggerimento?",
+  "SuggestionsDescription": "Stiamo alla ricerca e lavoriamo costantemente per aggiungere nuove funzionalità di accessibilità agli editor di ONLYOFFICE. Se hai qualche idea o esempio, sentiti libero di condividerli su <0>GitHub</0> o sul <1>forum</1>.",
+  "GithubButtonLabel": "GitHub",
+  "ForumButtonLabel": "Forum",
+  "LearnMore": "Scopri di più"
+}

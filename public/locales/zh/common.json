@@ -1,0 +1,15 @@
+{
+    "HarmonyInYourCookies": "Cookie 和谐选择",
+    "CookieText": "我们的网站使用 Cookie 以提供个性化体验。Cookie 帮助我们运营网站、提升用户浏览体验，并实现精准的营销与广告推广。您可以接受所有 Cookie 或自定义您的偏好设置。<0>了解详情</0>",
+    "Deny": "全部拒绝",
+    "Customize": "管理设置",
+    "AcceptAll": "全部接受",
+    "CookieSettings": "Cookie 设置",
+    "ConfirmMyChoices": "确认选择",
+    "Technical": "技术类 Cookie（必需）",
+    "TechnicalDescription": "这些 Cookie 是确保网站正常显示必需的，它们能够保障网站的基本功能。",
+    "Analytical": "分析类 Cookie",
+    "AnalyticalDescription": "分析类 Cookie 的目的是了解用户如何使用我们的网站，并追踪访问情况。这些功能能够帮助我们提升网站的内容与质量。",
+    "Marketing": "营销类 Cookie",
+    "MarketingDescription": "这些 Cookie 用于营销目的，能够收集信息以更精准地投放符合用户兴趣的广告内容。"
+}

@@ -11,6 +11,10 @@ import { Button } from "@src/components/ui/Button";
 
 const Documents = () => {
   const { t } = useTranslation("office-for-moodle");
+  const scrollToBlock = () => {
+    const element = document.getElementById("how-to-start");
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <Section
@@ -36,7 +40,13 @@ const Documents = () => {
           }))}
         />
 
-        <StyledDocumentsBtnWrapper>
+<StyledDocumentsBtnWrapper>
+        <Button
+            onClick={scrollToBlock}
+            id="features-get-started"
+            variant="secondary"
+            label={t("GetStarted")}
+          />
           <Button
             id="documents-free-demo"
             as="a"

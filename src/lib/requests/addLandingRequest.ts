@@ -54,7 +54,7 @@ export const addLandingRequest = async ({
   website,
 }: IAddLandingRequest) => {
   try {
-    await db.query("INSERT INTO form_registration_request SET ?", {
+    await db.teamlabsite.query("INSERT INTO form_registration_request SET ?", {
       first_name,
       last_name,
       email,
