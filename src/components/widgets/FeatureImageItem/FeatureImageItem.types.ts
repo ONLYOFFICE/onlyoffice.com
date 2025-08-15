@@ -1,9 +1,13 @@
 import { IContentImage } from "../ContentImage";
 
 export interface IFeatureImageItem extends IContentImage {
+  /** The heading. */
   heading: string;
+  /** The coming soon. */
+  comingSoon?: string;
   /** The text. */
   text: React.ReactNode;
+  /** The font size. */
   fontSize?: string;
   /** The row gap between the text content and the image, specified per breakpoint in pixels. */
   rowGap?: number;
