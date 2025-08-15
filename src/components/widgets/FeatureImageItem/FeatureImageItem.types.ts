@@ -1,7 +1,7 @@
 import { IContentImage } from "../ContentImage";
 
 export interface IFeatureImageItem extends IContentImage {
-  heading: string;
+  heading: string | React.ReactNode;
   /** The text. */
   text: React.ReactNode;
   fontSize?: string;
