@@ -9,7 +9,6 @@ interface IAddPrivateRoomsData {
   fullName: string;
   email: string;
   company: string;
-  languageCode: string;
   ip: string | string[] | null;
   utm_source: string | null;
   utm_campaign: string | null;
@@ -27,9 +26,8 @@ export default async function handler(
 
   const {
     fullName,
-    email,
     company,
-    languageCode,
+    email,
     from,
   } = req.body;
 
@@ -41,9 +39,8 @@ export default async function handler(
       try {
         const addPrivateRoomsData: IAddPrivateRoomsData = {
           fullName,
-          email,
           company,
-          languageCode,
+          email,
           fromPage: from,
           ip:
             req.headers["x-forwarded-for"] ||
@@ -55,7 +52,7 @@ export default async function handler(
           utm_term: cookies.utmTerm ?? null,
         }
 
-        await db.query("INSERT INTO privateRooms_request SET ?", [
+        await db.teamlabsite.query("INSERT INTO private_rooms_request SET ?", [
           addPrivateRoomsData,
         ]);
 
@@ -91,9 +88,8 @@ export default async function handler(
       html: PrivateRoomsEmail({
         fromPage: from,
         fullName,
-        email,
         company,
-        languageCode,
+        email,
       })
     })
 

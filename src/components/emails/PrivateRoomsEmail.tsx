@@ -3,7 +3,6 @@ interface IPrivateRoomsEmail {
   fullName: string;
   email: string;
   company: string;
-  languageCode: string;
 }
 
 const PrivateRoomsEmail = ({
@@ -11,7 +10,6 @@ const PrivateRoomsEmail = ({
   fullName,
   email,
   company,
-  languageCode,
 }: IPrivateRoomsEmail) => {
   return `
     <body style="margin: 0; padding: 0; text-align: center; width: 100%; font-family: Arial, sans-serif; font-size: 14px; color: #333;">
@@ -44,10 +42,6 @@ const PrivateRoomsEmail = ({
                   <p style="margin-top:5px;">
                     <b>Company</b><br/>
                     ${company}
-                  </p>
-                  <p style="margin-top:5px;">
-                    <b>Language</b><br/>
-                    ${languageCode}
                   </p>
                 </div>
               </td>

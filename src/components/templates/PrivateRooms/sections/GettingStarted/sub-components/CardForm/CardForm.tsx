@@ -29,7 +29,7 @@ import {
   StyledCardFormStatusText,
 } from "./CardForm.styled";
 
-const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: ICardFormProp & ILocale) => {
+const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILocale) => {
   const { t } = useTranslation("private-rooms");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha | null>(null);
@@ -166,8 +166,6 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
             company: formData.companyName ?? "",
             email: formData.email ?? "",
             from: from ?? "",
-            product: product ?? "",
-            languageCode: locale ?? "",
           }),
         })
         const dataPrivateRooms = await responsePrivateRooms.json();
