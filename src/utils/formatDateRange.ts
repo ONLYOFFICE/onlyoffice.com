@@ -3,7 +3,7 @@ import { ILocale } from "@src/types/locale";
 import { formatDate } from "./formatDate";
 
 const dayLabelForLocale = (d: dayjs.Dayjs, locale: ILocale["locale"]) => {
-  // fr: 1 -> "1er", others -> "2", "3" и т.д.
+  // fr: 1 -> "1er", others -> "2", "3" .etc
   if (locale === "fr") {
     return d.date() === 1 ? "1er" : d.format("D");
   }
@@ -36,26 +36,34 @@ export const formatDateRange = (
       switch (locale) {
         case "fr":
           // Du 1er au 2 octobre 2025
-          return `Du ${dayLabelForLocale(s, locale)} au ${dayLabelForLocale(
-            e,
-            locale,
-          )} ${s.format("MMMM")} ${s.format("YYYY")}`;
-        case "es":
-          // Del 1 al 2 de octubre de 2025
-          return `Del ${s.format("D")} al ${e.format(
-            "D",
-          )} de ${s.format("MMMM")} ${s.format("YYYY")}`;
+          return `Du ${dayLabelForLocale(s, locale)} au ${dayLabelForLocale(e, locale,)} ${s.format("MMMM")} ${s.format("YYYY")}`;
         case "de":
-          // 1.–2. Oktober 2025
-          return `${s.format("D")}.${s.format("")}–${e.format(
-            "D",
-          )}. ${s.format("MMMM YYYY")}`.replace(".–", "–");
+          // 1.-2. Oktober 2025
+          return `${s.format("D")}.-${e.format("D")}. ${s.format("MMMM YYYY")}`;
+        case "es":
+          // 1-2 de octubre de 2025
+          return `${s.format("D")}-${e.format("D",)} de ${s.format("MMMM")} de ${s.format("YYYY")}`;
+        case "pt":
+          // 1 a 17 de outubro de 2025
+          return `${s.format("D")} a ${e.format("D",)} de ${s.format("MMMM")} de ${s.format("YYYY")}`;
+        case "it":
+          // 1-2 ottobre 2025
+          return `${s.format("D")}-${e.format("D",)} ${s.format("MMMM")} ${s.format("YYYY")}`;
+        case "cs":
+          // 1.-2. říjen 2025
+          return `${s.format("D")}.-${e.format("D",)}. ${s.format("MMMM")} ${s.format("YYYY")}`;
+        case "nl":
+          // 1-2 oktober 2025
+          return `${s.format("D")}-${e.format("D",)} ${s.format("MMMM")} ${s.format("YYYY")}`;
+        case "ja":
+          // 2025年10月1日～2日
+          return `${s.format("YYYY")}年${s.format("MMMM")}${s.format("D")}日～${e.format("D")}日`;
         case "ru":
-          // 1–2 октября 2025
-          return `${s.format("D")}–${e.format("D")} ${s.format("MMMM YYYY")}`;
+          // 1-2 октября 2025
+          return `${s.format("D")}-${e.format("D MMMM YYYY")} года`;
         case "zh":
-          // 1–2十月 2025
-          return `${s.format("YYYY年M月")}${s.format("D日")}至${e.format("D日")} `;
+          // 2025年10月1日至2日
+          return `${s.format("YYYY[年]MMM")}${s.format("D日")}至${e.format("D日")} `;
         default:
           // en, etc: October 1–2, 2025
           return `${s.format("MMMM D")}–${e.format("D, YYYY")}`;

@@ -16,8 +16,8 @@ import { NewsCard } from "./sub-components/NewsCard";
 import { NewsItem } from "./sub-components/NewsItem";
 import { items } from "./data/items";
 import { getLink } from "@src/utils/getLink";
-import { formatDate } from "@src/utils/formatDate";
 import { formatDateRange } from "@src/utils/formatDateRange";
+import { formatDateLatestNews } from "./utils/formatDateLatestNews";
 
 const LatestNews = ({ locale }: ILocale) => {
   const { t } = useTranslation("main");
@@ -81,9 +81,9 @@ const LatestNews = ({ locale }: ILocale) => {
                     className={newsItem.className}
                     heading={t(newsItem.heading)}
                     imgUrl={newsItem.imgUrl ? t(newsItem.imgUrl) : ''}
-                    linkUrl={newsItem.linkUrl ? (typeof newsItem.linkUrl === 'string' ? newsItem.linkUrl : t(newsItem.linkUrl)) : '#'}
+                    linkUrl={newsItem.linkUrl ? (newsItem.linkUrl.startsWith('http') ? newsItem.linkUrl : t(newsItem.linkUrl)) : '#'}
                     isExternalLink={newsItem.isExternalLink}
-                    date={formatDate(newsItemDate, locale)}
+                    date={formatDateLatestNews(newsItemDate, locale)}
                     key={newsIndex}
                   />
                 );
@@ -137,7 +137,7 @@ const LatestNews = ({ locale }: ILocale) => {
                         imgUrl={t(newsItem.imgUrl)}
                         linkUrl={newsItem.linkUrl}
                         isExternalLink={newsItem.isExternalLink}
-                        date={formatDate(newsItemDate, locale)}
+                        date={formatDateLatestNews(newsItemDate, locale)}
                         isWebinar={true}
                         webinarTime={newsItem.webinarTime}
                         key={newsIndex}
@@ -171,15 +171,15 @@ const LatestNews = ({ locale }: ILocale) => {
                 <NewsCard
                   heading={t(newsItem.heading)}
                   imgUrl={t(newsItem.imgUrl)}
-                  linkUrl={newsItem.linkUrl}
+                  linkUrl={newsItem.linkUrl ? (newsItem.linkUrl.startsWith('http') ? newsItem.linkUrl : t(newsItem.linkUrl)) : '#'}
                   isExternalLink={newsItem.isExternalLink}
                   date={
                     newsItem.startDate && newsItem.endDate
                       ? formatDateRange(newsItem.startDate, newsItem.endDate, locale)
                       : newsItem.startDate
-                      ? formatDate(newsItem.startDate, locale)
+                      ? formatDateLatestNews(newsItem.startDate, locale)
                       : newsItem.date
-                      ? formatDate(newsItem.date, locale)
+                      ? formatDateLatestNews(newsItem.date, locale)
                       : ''
                   }
                   location={t(newsItem.location ?? "")}
