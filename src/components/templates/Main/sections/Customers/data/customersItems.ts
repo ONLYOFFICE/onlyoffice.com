@@ -11,6 +11,7 @@ interface ICustomersItem {
 interface ICustomersLang {
   en: ICustomersItem[];
   fr: ICustomersItem[];
+  zh: ICustomersItem[];
 }
 
 export const customersItems: ICustomersLang = {
@@ -31,6 +32,16 @@ export const customersItems: ICustomersLang = {
     { heading: "Ministere-De-I-Interieur", image: { url: "/images/templates/main/customers/logo/fr/ministere-de-i-interieur.svg", width: 107, height: 90 } },
     { heading: "Suzuki", image: { url: "/images/templates/main/customers/logo/suzuki.svg", width: 69, height: 56 } },
     { heading: "Oracle", image: { url: "/images/templates/main/customers/logo/oracle.svg", width: 116, height: 56 } },
+  ],
+  zh: [
+    { heading: "Unesko", image: { url: "/images/templates/main/customers/logo/unesko.svg", width: 129, height: 56 } },
+    { heading: "Netease", image: { url: "/images/templates/main/customers/logo/zh/netease.jpg", width: 160, height: 56 } },
+    { heading: "Fujitsu", image: { url: "/images/templates/main/customers/logo/fujitsu.svg", width: 91, height: 56 } },
+    { heading: "Croix-Rouge", image: { url: "/images/templates/main/customers/logo/croix-rouge.svg", width: 149, height: 51 } },
+    { heading: "Yamaha-Motor-Solutions", image: { url: "/images/templates/main/customers/logo/zh/ymsl-com-cn.png", width: 136, height: 56 } },
+    { heading: "Nanjing-University", image: { url: "/images/templates/main/customers/logo/zh/nanjing-university.png", width: 136, height: 56 } },
+    { heading: "Citic-Group", image: { url: "/images/templates/main/customers/logo/zh/citic-group.png", width: 120, height: 56 } },
+    { heading: "Cnki", image: { url: "/images/templates/main/customers/logo/zh/cnki.png", width: 136, height: 56 } },
   ],
 };
 
