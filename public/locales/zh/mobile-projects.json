@@ -4,7 +4,6 @@
 
   "HeroTitle": "随时随地管理您的团队表现",
   "HeroSubtitle": "掌上项目管理工具",
-  "iTunesButtonImg": "/images/templates/mobile-projects/buttons/appstore.zh.svg",
   "iTunesLink": "https://itunes.apple.com/us/app/onlyoffice-projects/id1353395928",
 
   "FeaturesTitle": "适用于iOS设备的<0>ONLYOFFICE项目</0>",
@@ -15,5 +14,4 @@
   "Item5": "定期更新",
   "Item6": "技术支持",
   "Item7": "在线文档"
-  }
-  
+}

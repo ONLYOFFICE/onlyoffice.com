@@ -14,8 +14,6 @@
   "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/ru/hero-phone.png",
   "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/ru/hero-phone-2x.png",
 
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.ru.svg",
-
   "FeaturesItemHeadingFull": "Мощный текстовый процессор",
   "FeaturesItemTextMakeUse": "Используйте множество инструментов для обработки текстовых документов: форматирования страницы, абзаца, текста, таблиц, фигур, диаграмм и других объектов. Создавайте текстовые документы любого размера и любой сложности. Распечатывайте их с помощью AirPrint.",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/ru/img-tablet-1.png",

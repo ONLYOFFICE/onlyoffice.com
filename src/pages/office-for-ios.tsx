@@ -44,6 +44,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "office-for-ios",
         "WatchVideo",
+        "DownloadButton",
       ])),
       locale,
     },

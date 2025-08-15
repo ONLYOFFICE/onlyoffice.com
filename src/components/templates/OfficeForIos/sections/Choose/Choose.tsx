@@ -11,6 +11,7 @@ import {
   StyledChooseSubtitle,
 } from "./Choose.styled";
 import { Trans, useTranslation } from "next-i18next";
+import { DownloadButton } from "@src/components/ui/DownloadButton";
 
 const Choose = () => {
   const { t } = useTranslation("office-for-ios");
@@ -38,12 +39,14 @@ const Choose = () => {
             />
           ))}
         </StyledChooseList>
-        <StyledChooseButton
-          $backgroundUrl={t("HeroButtonBackgroundUrl")}
-          as={"a"}
-          target="_blank"
-          href="https://itunes.apple.com/us/app/onlyoffice-documents/id944896972"
-        />
+        <StyledChooseButton>
+          <DownloadButton
+            platform="app-store"
+            variant="secondary"
+            href="https://itunes.apple.com/us/app/onlyoffice-documents/id944896972"
+            target="_blank"
+          />
+        </StyledChooseButton>
         <StyledChooseSubtitle textAlign="center" size={3} color="#fff">
           <Trans
             t={t}

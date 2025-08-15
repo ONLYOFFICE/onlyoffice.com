@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
-import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
 
 const StyledChooseHeading = styled(Heading)`
@@ -61,37 +60,15 @@ const StyledChooseButtonsWrapper = styled.div<{
   justify-content: center;
   align-items: center;
   gap: 9px;
+  margin-bottom: 40px;
+
+  > a {
+    border: 1px solid #fff;
+  }
 
   @media ${device.mobile} {
     flex-direction: ${(props) => (props.$isZhLocale ? "column" : "row")};
   }
-`;
-
-const StyledChooseButtonGoogle = styled(Button)<{
-  $backgroundUrl: string;
-  $isZhLocale: boolean;
-}>`
-  display: block;
-  width: ${(props) => (props.$isZhLocale ? "170px" : "188px")};
-  height: ${(props) => (props.$isZhLocale ? "58px" : "80px")};
-  background-image: ${(props) => `url(${props.$backgroundUrl})`};
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  z-index: 2;
-`;
-
-const StyledChooseButtonAppGallery = styled(Button)<{
-  $backgroundUrl: string;
-}>`
-  display: block;
-  width: 170px;
-  height: 58px;
-  background-image: ${(props) => `url(${props.$backgroundUrl})`};
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  z-index: 2;
 `;
 
 const StyledChooseSubtitle = styled(Text)`
@@ -104,7 +81,5 @@ export {
   StyledChooseHeading,
   StyledChooseList,
   StyledChooseButtonsWrapper,
-  StyledChooseButtonGoogle,
-  StyledChooseButtonAppGallery,
   StyledChooseSubtitle,
 };
