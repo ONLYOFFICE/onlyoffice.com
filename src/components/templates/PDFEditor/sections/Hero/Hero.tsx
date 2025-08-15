@@ -73,8 +73,8 @@ const Hero = () => {
 
         {locale === "zh" ? (
           <StyledHeroImg
-            $imgUrl="/images/templates/presentation-editor/hero/zh/hero.png"
-            $imgUrl2x="/images/templates/presentation-editor/hero/zh/hero@2x.png"
+            $imgUrl="/images/templates/pdf-editor/hero/zh/hero.png"
+            $imgUrl2x="/images/templates/pdf-editor/hero/zh/hero@2x.png"
           />
         ) : (
           <StyledHeroVideo>
