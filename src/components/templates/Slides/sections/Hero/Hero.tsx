@@ -15,7 +15,7 @@ import { Input } from "@src/components/ui/Input";
 import { useState } from "react";
 
 const Hero = () => {
-  const { t } = useTranslation("presentation-editor");
+  const { t } = useTranslation("slides");
   const { t: t2 } = useTranslation("Editors");
   const { locale, query } = useRouter();
   const [email, setEmail] = useState("");
@@ -66,8 +66,8 @@ const Hero = () => {
 
         {locale === "zh" ? (
           <StyledHeroImg
-            $imgUrl="/images/templates/presentation-editor/hero/zh/hero.png"
-            $imgUrl2x="/images/templates/presentation-editor/hero/zh/hero@2x.png"
+            $imgUrl="/images/templates/slides/hero/zh/hero.png"
+            $imgUrl2x="/images/templates/slides/hero/zh/hero@2x.png"
           />
         ) : (
           <StyledHeroVideo>
@@ -79,7 +79,7 @@ const Hero = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
-            ></iframe>
+            />
           </StyledHeroVideo>
         )}
       </Container>

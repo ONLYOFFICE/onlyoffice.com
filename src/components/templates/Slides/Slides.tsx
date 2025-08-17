@@ -5,7 +5,7 @@ import { LearnMore } from "./sections/LearnMore";
 import { Faq } from "./sections/Faq";
 import { OtherEditors } from "@src/components/modules/OtherEditors";
 
-const PresentationEditorTemplate = () => {
+const SlidesTemplate = () => {
   return (
     <>
       <Hero />
@@ -18,4 +18,4 @@ const PresentationEditorTemplate = () => {
   );
 };
 
-export { PresentationEditorTemplate };
+export { SlidesTemplate };

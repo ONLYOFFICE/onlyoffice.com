@@ -4,7 +4,7 @@ import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
 const Faq = () => {
-  const { t } = useTranslation("presentation-editor");
+  const { t } = useTranslation("slides");
 
   return (
     <FaqCollapse

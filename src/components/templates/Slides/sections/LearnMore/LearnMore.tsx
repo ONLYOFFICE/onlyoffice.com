@@ -9,7 +9,7 @@ import { BlogCard } from "@src/components/widgets/BlogCard";
 import { items } from "./data/items";
 
 const LearnMore = () => {
-  const { t } = useTranslation("presentation-editor");
+  const { t } = useTranslation("slides");
   const { t: t2 } = useTranslation("Editors");
 
   return (
@@ -26,7 +26,7 @@ const LearnMore = () => {
               className="blog-card"
               key={index}
               imgUrl={item.imgUrl}
-              heading={{ label: t(item.heading.label) }}
+              heading={{ label: t2(item.heading.label) }}
               text={t(item.text ?? "")}
               links={item.links?.map((item) => ({
                 href: t(item.href),

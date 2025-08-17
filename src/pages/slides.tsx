@@ -6,10 +6,10 @@ import { AdventAnnounce } from "@src/components/modules/AdventAnnounce";
 import { Head } from "@src/components/modules/head/Head";
 import { Header } from "@src/components/modules/Header";
 import { Footer } from "@src/components/modules/Footer";
-import { PresentationEditorTemplate } from "@src/components/templates/PresentationEditor";
+import { SlidesTemplate } from "@src/components/templates/Slides";
 
-const PresentationEditorPage = ({ locale }: ILocale) => {
-  const { t } = useTranslation("presentation-editor");
+const SlidesPage = ({ locale }: ILocale) => {
+  const { t } = useTranslation("slides");
 
   return (
     <Layout>
@@ -29,7 +29,7 @@ const PresentationEditorPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <PresentationEditorTemplate />
+        <SlidesTemplate />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -43,7 +43,7 @@ export async function getStaticProps({ locale }: ILocale) {
     props: {
       ...(await serverSideTranslations(locale, [
         "common",
-        "presentation-editor",
+        "slides",
         "GetStarted",
         "Editors",
         "FaqCollapse",
@@ -53,4 +53,4 @@ export async function getStaticProps({ locale }: ILocale) {
   };
 }
 
-export default PresentationEditorPage;
+export default SlidesPage;
