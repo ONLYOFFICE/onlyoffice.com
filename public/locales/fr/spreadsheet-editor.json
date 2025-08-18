@@ -42,18 +42,18 @@
   "Feature9ImgUrl": "/images/templates/spreadsheet-editor/features/fr/screen9.png",
   "Feature9ImgUrl2x": "/images/templates/spreadsheet-editor/features/fr/screen9@2x.png",
 
-  "LearnMoreHeading": "Learn more about ONLYOFFICE Spreadsheet Editor",
-  "BlogDesc": "All about print preview in Excel sheets",
-  "BlogLink": "https://www.onlyoffice.com/blog/2022/06/all-about-print-preview/",
-  "TutorialsDesc": "Co-editing spreadsheets in real time",
-  "TutorialsLink": "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/CollaborativeEditing.aspx",
-  "HintsDesc": "Supported formats of spreadsheets",
-  "HintsLink": "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/SupportedFormats.aspx",
+  "LearnMoreHeading": "En savoir plus sur l’Éditeur de feuilles de calcul ONLYOFFICE",
+  "BlogDesc": "Tout ce qu’il faut savoir sur l’aperçu avant impression dans les feuilles de calcul Excel",
+  "BlogLink": "https://www.onlyoffice.com/blog/fr/2022/06/apercu-avant-impression-excel",
+  "TutorialsDesc": "Co-édition des feuilles de calcul en temps réel",
+  "TutorialsLink": "https://helpcenter.onlyoffice.com/fr/docs/userguides/spreadsheet_editor/CollaborativeEditing.aspx",
+  "HintsDesc": "Formats pris en charge des feuilles de calcul",
+  "HintsLink": "https://helpcenter.onlyoffice.com/fr/docs/userguides/spreadsheet_editor/SupportedFormats.aspx",
 
-  "Q1": "Can I edit spreadsheets without Internet connection?",
-  "A1": "Yes, you can install and use free <0>ONLYOFFICE Desktop Editors</0> to edit local spreadsheets offline.",
-  "Q2": "Does ONLYOFFICE offer native mobile apps for spreadsheet editing?",
-  "A2": "Yes, you can install free <0>Documents</0> app for iOS or Android devices to work on spreadsheets on-the-go.",
-  "Q3": "Is it possible to use ONLYOFFICE spreadsheet editor within my app under my brand?",
-  "A3": "Yes, you can integrate the spreadsheet editor into your app. Please use <0>ONLYOFFICE Docs Developer</0>."
+  "Q1": "Puis-je éditer des feuilles de calcul sans connexion Internet ?",
+  "A1": "Oui, vous pouvez installer et utiliser gratuitement <0>ONLYOFFICE Desktop Editors</0> pour modifier des feuilles de calcul locales hors connexion.",
+  "Q2": "ONLYOFFICE propose-t-il des applications mobiles natives pour l'édition de feuilles de calcul ?",
+  "A2": "Oui, vous pouvez installer l'application gratuite <0>Documents</0> pour les appareils iOS ou Android afin de travailler sur des feuilles de calcul en déplacement.",
+  "Q3": "Est-il possible d'utiliser l'éditeur de feuilles de calcul ONLYOFFICE dans mon application sous ma marque ?",
+  "A3": "Oui, vous pouvez intégrer l'éditeur de feuilles de calcul dans votre application. Veuillez utiliser <0>ONLYOFFICE Docs Developer</0>."
 }
