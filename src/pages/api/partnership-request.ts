@@ -23,10 +23,7 @@ export default async function handler(
     numberEmployees,
     targetMarketSegments,
     comment,
-    buttonId,
     from,
-    country,
-    region,
   } = req.body;
 
   try {
@@ -50,13 +47,11 @@ export default async function handler(
         numberEmployees,
         targetMarketSegments,
         comment,
-        buttonId,
         operatingSystem: "",
         communicationLanguage: "",
         companySize: "",
         firstHeard: "",
         language: locale,
-        platform: "",
       })
     });
 

@@ -13,10 +13,8 @@ import {
   StyledHeroHCaptchaWrapper,
 } from "./PartnershipRequestForm.styled";
 import { targetMarketSegments } from "./data/items";
-import { IPartnRequestModal} from "./PartnershipRequestForm.types";
+import { IPartnRequestForm} from "./PartnershipRequestForm.types";
 import { getFromParam } from "@src/utils/getParams";
-import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
-import { countries } from "@src/config/data/countries";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
@@ -39,14 +37,11 @@ const PartnershipRequestForm = ({
   setFormData,
   byClickingText,
   onSubmitRequest,
-}: IPartnRequestModal) => {
+}: IPartnRequestForm) => {
   const { t: t2 } = useTranslation("DownloadModal");
   const { t } = useTranslation("partnership-request");
   const from = getFromParam();
 
-  const selectedCountry = useIPGeolocationStore(
-    (state) => state.IPGeolocationInfo.country,
-  );
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
   const segmentsRef = useRef<HTMLDivElement | null>(null);
@@ -253,16 +248,8 @@ const PartnershipRequestForm = ({
         setIsCaptchaValid(true);
       }
 
-      const countryInfo = Object.values(countries).find(
-        (item) => item.country === selectedCountry,
-      );
-      const country = countryInfo?.title?.split(" (")[0] || "";
-      const region = countryInfo?.salesRegion || "";
-
       const onSubmitRequestData = await onSubmitRequest({
         from,
-        country,
-        region,
       });
 
       if (onSubmitRequestData.status === "success") {
@@ -277,6 +264,11 @@ const PartnershipRequestForm = ({
         }, 5000);
       } else {
         setFormStatus("error");
+
+        setTimeout(() => {
+          setFormStatus("default");
+          clearData();
+        }, 5000);
       }
     } catch (error) {
       //TODO: change UI
@@ -579,7 +571,7 @@ const PartnershipRequestForm = ({
             }));
           }}
           value={formData.comment}
-          label={t2("Comment")}
+          label={t("AdditionalInformation")}
           rows={3}
           fullWidth
           status={formData.comment ? "success" : "default"}

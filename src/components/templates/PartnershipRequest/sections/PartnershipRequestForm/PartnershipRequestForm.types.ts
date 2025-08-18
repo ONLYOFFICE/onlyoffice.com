@@ -1,7 +1,5 @@
 export interface IDownloadModalOnSubmitRequest {
   from?: string;
-  country: string;
-  region: string;
 }
 
 export interface IPartnershipRequestData {
@@ -21,7 +19,6 @@ export interface IPartnershipRequestData {
   industry: boolean;
   otherSegments: boolean;
   comment: string;
-  buttonId: string;
   type: string;
 }
 
@@ -30,7 +27,7 @@ interface IApiResponse {
   message: { code?: string; Message?: string };
 }
 
-export interface IPartnRequestModal {
+export interface IPartnRequestForm {
   locale: string;
   initialFormData: IPartnershipRequestData;
   formData: IPartnershipRequestData;

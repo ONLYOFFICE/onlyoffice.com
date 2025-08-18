@@ -36,7 +36,6 @@ const Hero = ({ locale }: IHero) => {
     industry: false,
     otherSegments: false,
     comment: "",
-    buttonId: "",
     type: "",
   };
 
@@ -51,8 +50,6 @@ const Hero = ({ locale }: IHero) => {
 
   const onSubmitRequest = async ({
     from,
-    country,
-    region,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/partnership-request", {
       method: "POST",
@@ -69,10 +66,7 @@ const Hero = ({ locale }: IHero) => {
         numberEmployees: formData.numberEmployees,
         targetMarketSegments: getTargetMarketSegments(),
         comment: formData.comment,
-        buttonId: "partnerRequestBtn",
         from,
-        country,
-        region,
       }),
     }).then((res) => res.json());
   };

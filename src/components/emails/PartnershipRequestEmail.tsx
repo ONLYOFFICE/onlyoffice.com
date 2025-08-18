@@ -11,13 +11,11 @@ interface IPartnershipRequestEmail {
   numberEmployees: string;
   targetMarketSegments: string;
   comment: IDownloadModalData["comment"];
-  buttonId: IDownloadModalData["buttonId"];
   operatingSystem: string;
   communicationLanguage: string;
   companySize: string;
   firstHeard: string;
   language: string;
-  platform: string;
 }
 
 const PartnershipRequestEmail = ({
@@ -31,13 +29,11 @@ const PartnershipRequestEmail = ({
   numberEmployees,
   targetMarketSegments,
   comment,
-  buttonId,
   operatingSystem,
   communicationLanguage,
   companySize,
   firstHeard,
   language,
-  platform,
 }: IPartnershipRequestEmail) => {
   return `
     <body style="margin: 0; padding: 0; text-align: center; width: 100%; font-family: Arial, sans-serif; font-size: 14px; color: #333;">
@@ -117,16 +113,6 @@ const PartnershipRequestEmail = ({
                       ${targetMarketSegments}
                   </p>
                   <p style="margin-top:5px;">
-                    <b>Comment</b>
-                    <br />
-                    ${comment}
-                  </p>
-                  <p style="margin-top:5px;">
-                    <b>Button_Id (what wanted to download)</b>
-                    <br />
-                    ${buttonId}
-                  </p>
-                  <p style="margin-top:5px;">
                     <b>Operating system</b>
                     <br />
                     ${operatingSystem}
@@ -152,9 +138,9 @@ const PartnershipRequestEmail = ({
                     ${language}
                   </p>
                   <p style="margin-top:5px;">
-                    <b>Platform</b>
+                    <b>Additional information</b>
                     <br />
-                    ${platform}
+                    ${comment}
                   </p>
                 </div>
               </td>
