@@ -543,10 +543,11 @@ const PartnershipRequestForm = ({
 
           <div>
             <StyledChecboxesWrapper>
-              {targetMarketSegments.map(({ key, label, id }) => (
+              {targetMarketSegments.map(({ key, label, id, name }) => (
                 <Checkbox
                 id={id}
                 key={key}
+                name={name}
                 checked={formData[key]}
                 onChange={() => {
                   if (!isTMSegmentsTouched) setIsTMSegmentsTouched(true);

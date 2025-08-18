@@ -44,7 +44,7 @@ const Hero = ({ locale }: IHero) => {
   const getTargetMarketSegments = () => {
     return targetMarketSegments
       .filter(({ key }) => formData[key])
-      .map(({ id }) => id)
+      .map(({ name }) => name)
       .join(", ");
   };
 
