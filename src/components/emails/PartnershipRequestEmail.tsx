@@ -15,11 +15,7 @@ interface IPartnershipRequestEmail {
   productTraining: string;
   salesTraining: string;
   comment: IDownloadModalData["comment"];
-  operatingSystem: string;
-  communicationLanguage: string;
-  companySize: string;
   firstHeard: string;
-  language: string;
 }
 
 const PartnershipRequestEmail = ({
@@ -37,11 +33,7 @@ const PartnershipRequestEmail = ({
   productTraining,
   salesTraining,
   comment,
-  operatingSystem,
-  communicationLanguage,
-  companySize,
   firstHeard,
-  language,
 }: IPartnershipRequestEmail) => {
   return `
     <body style="margin: 0; padding: 0; text-align: center; width: 100%; font-family: Arial, sans-serif; font-size: 14px; color: #333;">
@@ -111,56 +103,36 @@ const PartnershipRequestEmail = ({
                     ${website}
                   </p>
                   <p style="margin-top:5px;">
-                      <b>Company Size</b>
-                      <br />
-                      ${numberEmployees}
-                  </p>
-                  <p style="margin-top:5px;">
-                      <b>Target market segments</b>
-                      <br />
-                      ${targetMarketSegments}
-                  </p>
-                  <p style="margin-top:5px;">
-                      <b>Existing sales opportunities for ONLYOFFICE solutions</b>
-                      <br />
-                      ${salesOpportunities}
-                  </p>
-                  <p style="margin-top:5px;">
-                      <b>Need a demo portal</b><br />
-                      ${demoPortal}
-                  </p>
-                  <p style="margin-top:5px;">
-                      <b>Need a product training</b><br />
-                      ${productTraining}
-                  </p>
-                  <p style="margin-top:5px;">
-                      <b>Need a sales training</b><br />
-                      ${salesTraining}
-                  </p>
-                  <p style="margin-top:5px;">
-                    <b>Operating system</b>
-                    <br />
-                    ${operatingSystem}
-                  </p>
-                  <p style="margin-top:5px;">
-                    <b>Communication Language</b>
-                    <br />
-                    ${communicationLanguage}
-                  </p>
-                  <p style="margin-top:5px;">
                     <b>Company Size</b>
                     <br />
-                    ${companySize}
+                    ${numberEmployees}
+                  </p>
+                  <p style="margin-top:5px;">
+                    <b>Target market segments</b>
+                    <br />
+                    ${targetMarketSegments}
+                  </p>
+                  <p style="margin-top:5px;">
+                    <b>Existing sales opportunities for ONLYOFFICE solutions</b>
+                    <br />
+                    ${salesOpportunities}
+                  </p>
+                  <p style="margin-top:5px;">
+                    <b>Need a demo portal</b><br />
+                    ${demoPortal}
+                  </p>
+                  <p style="margin-top:5px;">
+                    <b>Need a product training</b><br />
+                    ${productTraining}
+                  </p>
+                  <p style="margin-top:5px;">
+                    <b>Need a sales training</b><br />
+                    ${salesTraining}
                   </p>
                   <p style="margin-top:5px;">
                     <b>First heard about us</b>
                     <br />
                     ${firstHeard}
-                  </p>
-                  <p style="margin-top:5px;">
-                    <b>Language</b>
-                    <br />
-                    ${language}
                   </p>
                   <p style="margin-top:5px;">
                     <b>Additional information</b>

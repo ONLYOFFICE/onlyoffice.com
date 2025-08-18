@@ -12,7 +12,6 @@ export default async function handler(
   }
 
   const {
-    locale,
     firstName,
     lastName,
     positionTitle,
@@ -53,17 +52,13 @@ export default async function handler(
         productTraining,
         salesTraining,
         comment,
-        operatingSystem: "",
-        communicationLanguage: "",
-        companySize: "",
         firstHeard: "",
-        language: locale,
       })
     });
 
     res.status(200).json({ status: "success", message: "success" });
   } catch (error) {
-    console.error("Download api returns errors:", error);
+    console.error("Partnership request api returns errors:", error);
     res.status(500).json({ status: "error", message: error });
   }
 }

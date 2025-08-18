@@ -63,7 +63,6 @@ const Hero = ({ locale }: IHero) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        locale,
         firstName: formData.firstName,
         lastName: formData.lastName,
         positionTitle: formData.positionTitle,

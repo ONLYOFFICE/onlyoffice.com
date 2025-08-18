@@ -655,6 +655,7 @@ const PartnershipRequestForm = ({
           <StyledLineRadioLabel htmlFor="sales-training-radio-no">{t("No")}</StyledLineRadioLabel>
         </StyledLine2RadiosWrapper>
 
+        <StyledPreRadiosText label={t("PleaseIncludeAnyAdditionalInformation")} />
         <TextArea
           onChange={(e) => handleInputChange("comment", e.target.value)}
           onBlur={() => {
