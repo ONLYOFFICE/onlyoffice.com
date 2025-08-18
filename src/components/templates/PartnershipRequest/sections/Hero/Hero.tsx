@@ -14,7 +14,10 @@ import {
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
-import { targetMarketSegments } from "@src/components/templates/PartnershipRequest/sections/PartnershipRequestForm/data/items";
+import {
+  SegmentKey, InfoSourceKey, PromoteKey,
+  targetMarketSegments, partnerInfoSource, partnerPromote
+} from "@src/components/templates/PartnershipRequest/sections/PartnershipRequestForm/data/items";
 
 const Hero = ({ locale }: IHero) => {
   const { t } = useTranslation("partnership-request");
@@ -35,22 +38,49 @@ const Hero = ({ locale }: IHero) => {
     smes: false,
     industry: false,
     otherSegments: false,
+
     salesOpportunities: true,
+    websitePromote: false,
+    socialNetworks: false,
+    conferencesAndEvents: false,
+    publications: false,
+    personalSelling: false,
+    onlineAdvertising: false,
+    printAdvertising: false,
+    videoAdvertising: false,
+    tvAndRadioAdvertising: false,
+    packaging: false,
+    otherPromote: false,
+
     demoPortal: true,
     productTraining: true,
     salesTraining: true,
+    article: false,
+    conference: false,
+    partner: false,
+    customer: false,
+    otherInfoSource: false,
     comment: "",
     type: "",
   };
 
   const [formData, setFormData] = useState(initialFormData);
 
-  const getTargetMarketSegments = () => {
-    return targetMarketSegments
+  type Item<K> = {
+    key: K;
+    label: string;
+    id: string;
+    name: string;
+  };
+
+  function getSelectedNames<K extends SegmentKey | InfoSourceKey | PromoteKey>(
+    items: Item<K>[]
+  ): string {
+    return items
       .filter(({ key }) => formData[key])
       .map(({ name }) => name)
       .join(", ");
-  };
+  }
 
   const getYesOrNo = (formValue: boolean) => {
     return formValue ? "Yes" : "No";
@@ -71,11 +101,13 @@ const Hero = ({ locale }: IHero) => {
         companyName: formData.companyName,
         website: formData.website,
         numberEmployees: formData.numberEmployees,
-        targetMarketSegments: getTargetMarketSegments(),
+        targetMarketSegments: getSelectedNames(targetMarketSegments),
         salesOpportunities: getYesOrNo(formData.salesOpportunities),
+        promotion: getSelectedNames(partnerPromote),
         demoPortal: getYesOrNo(formData.demoPortal),
         productTraining: getYesOrNo(formData.productTraining),
         salesTraining: getYesOrNo(formData.salesTraining),
+        infoSource: getSelectedNames(partnerInfoSource),
         comment: formData.comment,
         from,
       }),

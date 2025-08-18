@@ -51,6 +51,10 @@ const StyledTextWrapper = styled.div`
   line-height: 1.5em;
   margin-bottom: 16px;
 
+  &.firstHeard {
+    margin-bottom: -16px;
+  }
+
   &.error {
     color: #cb0000;
   }

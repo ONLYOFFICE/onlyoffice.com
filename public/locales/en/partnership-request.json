@@ -40,6 +40,23 @@
   "Yes": "Yes",
   "No": "No",
 
+  "HowAreYouGoingToPromote": "How are you going to promote ONLYOFFICE for your market segments?",
+  "SocialNetworks": "Social networks",
+  "ConferencesAndEvents": "Conferences and events",
+  "Publications": "Publications",
+  "PersonalSelling": "Personal selling",
+  "OnlineAdvertising": "Online advertising",
+  "PrintAdvertising": "Print advertising",
+  "VideoAdvertising": "Video advertising",
+  "TVAndRadioAdvertising": "TV and Radio advertising",
+  "Packaging": "Packaging",
+
+  "WhereHaveYouFirstHeardAboutUs": "Where have you first heard about us?",
+  "Article": "Article",
+  "Conference": "Conference",
+  "Partner": "Partner",
+  "Customer": "Customer",
+
   "PleaseIncludeAnyAdditionalInformation": "Please include any additional information you think would assist our team to process your application:",
   "AdditionalInformation": "Additional information",
 

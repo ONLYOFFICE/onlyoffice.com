@@ -16,7 +16,7 @@ import {
   StyledLineRadioLabel,
   StyledHeroHCaptchaWrapper,
 } from "./PartnershipRequestForm.styled";
-import { targetMarketSegments } from "./data/items";
+import { targetMarketSegments, partnerInfoSource, partnerPromote } from "./data/items";
 import { IPartnRequestForm} from "./PartnershipRequestForm.types";
 import { getFromParam } from "@src/utils/getParams";
 import { Heading } from "@src/components/ui/Heading";
@@ -589,6 +589,30 @@ const PartnershipRequestForm = ({
           <StyledLineRadioLabel htmlFor="opportunities-radio-no">{t("No")}</StyledLineRadioLabel>
         </StyledLine2RadiosWrapper>
 
+        <StyledTextWrapper className="firstHeard">
+          <Text label={t("HowAreYouGoingToPromote")} />
+        </StyledTextWrapper>
+        <div>
+          <StyledChecboxesWrapper>
+            {partnerPromote.map(({ key, label, id, name }) => (
+              <Checkbox
+                id={id}
+                key={key}
+                name={name}
+                checked={formData[key]}
+                onChange={() => {
+                  if (!isTMSegmentsTouched) setIsTMSegmentsTouched(true);
+                  setFormData((prev) => ({
+                    ...prev,
+                    [key]: !prev[key],
+                  }));
+                }}
+                label={t(label)}
+              />
+            ))}
+          </StyledChecboxesWrapper>
+        </div>
+
         <StyledPreRadiosText label={t("WouldYouNeedADemoPortal")} />
         <StyledLine2RadiosWrapper>
           <StyledLineRadioInput
@@ -654,6 +678,30 @@ const PartnershipRequestForm = ({
           />
           <StyledLineRadioLabel htmlFor="sales-training-radio-no">{t("No")}</StyledLineRadioLabel>
         </StyledLine2RadiosWrapper>
+
+        <StyledTextWrapper className="firstHeard">
+          <Text label={t("WhereHaveYouFirstHeardAboutUs")} />
+        </StyledTextWrapper>
+        <div>
+          <StyledChecboxesWrapper>
+            {partnerInfoSource.map(({ key, label, id, name }) => (
+              <Checkbox
+                id={id}
+                key={key}
+                name={name}
+                checked={formData[key]}
+                onChange={() => {
+                  if (!isTMSegmentsTouched) setIsTMSegmentsTouched(true);
+                  setFormData((prev) => ({
+                    ...prev,
+                    [key]: !prev[key],
+                  }));
+                }}
+                label={t(label)}
+              />
+            ))}
+          </StyledChecboxesWrapper>
+        </div>
 
         <StyledPreRadiosText label={t("PleaseIncludeAnyAdditionalInformation")} />
         <TextArea

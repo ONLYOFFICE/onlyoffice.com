@@ -19,9 +19,25 @@ export interface IPartnershipRequestData {
   industry: boolean;
   otherSegments: boolean;
   salesOpportunities: boolean;
+  websitePromote: boolean;
+  socialNetworks: boolean;
+  conferencesAndEvents: boolean;
+  publications: boolean;
+  personalSelling: boolean;
+  onlineAdvertising: boolean;
+  printAdvertising: boolean;
+  videoAdvertising: boolean;
+  tvAndRadioAdvertising: boolean;
+  packaging: boolean;
+  otherPromote: boolean;
   demoPortal: boolean;
   productTraining: boolean;
   salesTraining: boolean;
+  article: boolean;
+  conference: boolean;
+  partner: boolean;
+  customer: boolean;
+  otherInfoSource: boolean;
   comment: string;
   type: string;
 }

@@ -22,9 +22,11 @@ export default async function handler(
     numberEmployees,
     targetMarketSegments,
     salesOpportunities,
+    promotion,
     demoPortal,
     productTraining,
     salesTraining,
+    infoSource,
     comment,
     from,
   } = req.body;
@@ -48,11 +50,12 @@ export default async function handler(
         numberEmployees,
         targetMarketSegments,
         salesOpportunities,
+        promotion,
         demoPortal,
         productTraining,
         salesTraining,
+        infoSource,
         comment,
-        firstHeard: "",
       })
     });
 
