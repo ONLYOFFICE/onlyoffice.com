@@ -22,14 +22,16 @@ export default async function handler(
     website,
     numberEmployees,
     targetMarketSegments,
+    salesOpportunities,
+    demoPortal,
+    productTraining,
+    salesTraining,
     comment,
     from,
   } = req.body;
 
   try {
     const cookies = parse(req.headers.cookie || "");
-    const isSelected = (value: boolean) =>
-      value ? "Selected" : "Not selected";
 
     const transporter = emailTransporter();
     await transporter.sendMail({
@@ -46,6 +48,10 @@ export default async function handler(
         website,
         numberEmployees,
         targetMarketSegments,
+        salesOpportunities,
+        demoPortal,
+        productTraining,
+        salesTraining,
         comment,
         operatingSystem: "",
         communicationLanguage: "",

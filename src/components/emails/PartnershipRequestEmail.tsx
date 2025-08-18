@@ -10,6 +10,10 @@ interface IPartnershipRequestEmail {
   website: IDownloadModalData["website"];
   numberEmployees: string;
   targetMarketSegments: string;
+  salesOpportunities: string;
+  demoPortal: string;
+  productTraining: string;
+  salesTraining: string;
   comment: IDownloadModalData["comment"];
   operatingSystem: string;
   communicationLanguage: string;
@@ -28,6 +32,10 @@ const PartnershipRequestEmail = ({
   website,
   numberEmployees,
   targetMarketSegments,
+  salesOpportunities,
+  demoPortal,
+  productTraining,
+  salesTraining,
   comment,
   operatingSystem,
   communicationLanguage,
@@ -111,6 +119,23 @@ const PartnershipRequestEmail = ({
                       <b>Target market segments</b>
                       <br />
                       ${targetMarketSegments}
+                  </p>
+                  <p style="margin-top:5px;">
+                      <b>Existing sales opportunities for ONLYOFFICE solutions</b>
+                      <br />
+                      ${salesOpportunities}
+                  </p>
+                  <p style="margin-top:5px;">
+                      <b>Need a demo portal</b><br />
+                      ${demoPortal}
+                  </p>
+                  <p style="margin-top:5px;">
+                      <b>Need a product training</b><br />
+                      ${productTraining}
+                  </p>
+                  <p style="margin-top:5px;">
+                      <b>Need a sales training</b><br />
+                      ${salesTraining}
                   </p>
                   <p style="margin-top:5px;">
                     <b>Operating system</b>

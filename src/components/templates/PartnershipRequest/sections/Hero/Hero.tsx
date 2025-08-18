@@ -35,6 +35,10 @@ const Hero = ({ locale }: IHero) => {
     smes: false,
     industry: false,
     otherSegments: false,
+    salesOpportunities: true,
+    demoPortal: true,
+    productTraining: true,
+    salesTraining: true,
     comment: "",
     type: "",
   };
@@ -46,6 +50,10 @@ const Hero = ({ locale }: IHero) => {
       .filter(({ key }) => formData[key])
       .map(({ name }) => name)
       .join(", ");
+  };
+
+  const getYesOrNo = (formValue: boolean) => {
+    return formValue ? "Yes" : "No";
   };
 
   const onSubmitRequest = async ({
@@ -65,6 +73,10 @@ const Hero = ({ locale }: IHero) => {
         website: formData.website,
         numberEmployees: formData.numberEmployees,
         targetMarketSegments: getTargetMarketSegments(),
+        salesOpportunities: getYesOrNo(formData.salesOpportunities),
+        demoPortal: getYesOrNo(formData.demoPortal),
+        productTraining: getYesOrNo(formData.productTraining),
+        salesTraining: getYesOrNo(formData.salesTraining),
         comment: formData.comment,
         from,
       }),

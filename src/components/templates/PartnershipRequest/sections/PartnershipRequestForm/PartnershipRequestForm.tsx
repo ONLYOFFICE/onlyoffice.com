@@ -10,6 +10,10 @@ import {
   StyledSegmentsWrapper,
   StyledTextWrapper,
   StyledChecboxesWrapper,
+  StyledPreRadiosText,
+  StyledLine2RadiosWrapper,
+  StyledLineRadioInput,
+  StyledLineRadioLabel,
   StyledHeroHCaptchaWrapper,
 } from "./PartnershipRequestForm.styled";
 import { targetMarketSegments } from "./data/items";
@@ -562,6 +566,94 @@ const PartnershipRequestForm = ({
             </StyledChecboxesWrapper>
           </div>
         </StyledSegmentsWrapper>
+
+        <StyledPreRadiosText label={t("DoYouHaveExistingSalesOpportunities")} />
+        <StyledLine2RadiosWrapper>
+          <StyledLineRadioInput
+            id="opportunities-radio-yes"
+            type="radio"
+            name="salesOpportunities"
+            value="Yes"
+            checked={formData.salesOpportunities}
+            onChange={() => {setFormData((prev) => ({ ...prev, salesOpportunities: true }))}}
+          />
+          <StyledLineRadioLabel htmlFor="opportunities-radio-yes">{t("Yes")}</StyledLineRadioLabel>
+          <StyledLineRadioInput
+            id="opportunities-radio-no"
+            type="radio"
+            name="salesOpportunities"
+            value="No"
+            checked={!formData.salesOpportunities}
+            onChange={() => {setFormData((prev) => ({ ...prev, salesOpportunities: false }))}}
+          />
+          <StyledLineRadioLabel htmlFor="opportunities-radio-no">{t("No")}</StyledLineRadioLabel>
+        </StyledLine2RadiosWrapper>
+
+        <StyledPreRadiosText label={t("WouldYouNeedADemoPortal")} />
+        <StyledLine2RadiosWrapper>
+          <StyledLineRadioInput
+            id="demo-portal-radio-yes"
+            type="radio"
+            name="demoPortal"
+            value="Yes"
+            checked={formData.demoPortal}
+            onChange={() => {setFormData((prev) => ({ ...prev, demoPortal: true }))}}
+          />
+          <StyledLineRadioLabel htmlFor="demo-portal-radio-yes">{t("Yes")}</StyledLineRadioLabel>
+          <StyledLineRadioInput
+            id="demo-portal-radio-no"
+            type="radio"
+            name="demoPortal"
+            value="No"
+            checked={!formData.demoPortal}
+            onChange={() => {setFormData((prev) => ({ ...prev, demoPortal: false }))}}
+          />
+          <StyledLineRadioLabel htmlFor="demo-portal-radio-no">{t("No")}</StyledLineRadioLabel>
+        </StyledLine2RadiosWrapper>
+
+        <StyledPreRadiosText label={t("DoYouNeedAProductTraining")} />
+        <StyledLine2RadiosWrapper>
+          <StyledLineRadioInput
+            id="product-training-radio-yes"
+            type="radio"
+            name="productTraining"
+            value="Yes"
+            checked={formData.productTraining}
+            onChange={() => {setFormData((prev) => ({ ...prev, productTraining: true }))}}
+          />
+          <StyledLineRadioLabel htmlFor="product-training-radio-yes">{t("Yes")}</StyledLineRadioLabel>
+          <StyledLineRadioInput
+            id="product-training-radio-no"
+            type="radio"
+            name="productTraining"
+            value="No"
+            checked={!formData.productTraining}
+            onChange={() => {setFormData((prev) => ({ ...prev, productTraining: false }))}}
+          />
+          <StyledLineRadioLabel htmlFor="product-training-radio-no">{t("No")}</StyledLineRadioLabel>
+        </StyledLine2RadiosWrapper>
+
+        <StyledPreRadiosText label={t("DoYouNeedASalesTraining")} />
+        <StyledLine2RadiosWrapper>
+          <StyledLineRadioInput
+            id="sales-training-radio-yes"
+            type="radio"
+            name="salesTraining"
+            value="Yes"
+            checked={formData.salesTraining}
+            onChange={() => {setFormData((prev) => ({ ...prev, salesTraining: true }))}}
+          />
+          <StyledLineRadioLabel htmlFor="sales-training-radio-yes">{t("Yes")}</StyledLineRadioLabel>
+          <StyledLineRadioInput
+            id="sales-training-radio-no"
+            type="radio"
+            name="salesTraining"
+            value="No"
+            checked={!formData.salesTraining}
+            onChange={() => {setFormData((prev) => ({ ...prev, salesTraining: false }))}}
+          />
+          <StyledLineRadioLabel htmlFor="sales-training-radio-no">{t("No")}</StyledLineRadioLabel>
+        </StyledLine2RadiosWrapper>
 
         <TextArea
           onChange={(e) => handleInputChange("comment", e.target.value)}

@@ -18,6 +18,10 @@ export interface IPartnershipRequestData {
   smes: boolean;
   industry: boolean;
   otherSegments: boolean;
+  salesOpportunities: boolean;
+  demoPortal: boolean;
+  productTraining: boolean;
+  salesTraining: boolean;
   comment: string;
   type: string;
 }

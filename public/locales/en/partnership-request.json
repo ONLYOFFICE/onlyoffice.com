@@ -33,6 +33,12 @@
   "Industry": "Industry",
   "Other": "Other",
 
+  "DoYouHaveExistingSalesOpportunities": "Do you have existing sales opportunities for ONLYOFFICE solutions?",
+  "WouldYouNeedADemoPortal": "Would you need a demo portal to showcase ONLYOFFICE to your prospects?",
+  "DoYouNeedAProductTraining": "Do you need a product training offered by ONLYOFFICE?",
+  "DoYouNeedASalesTraining": "Do you need a sales training on ONLYOFFICE products?",
+  "Yes": "Yes",
+  "No": "No",
   "AdditionalInformation": "Additional information",
 
   "GetItNowText": "By clicking Submit request you understand and agree to our <0>Privacy statement</0>."
