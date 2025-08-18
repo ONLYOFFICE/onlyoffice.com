@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Diagramme und Grafiken in Tabellen",
+  "PageDescription": "Lassen Sie Ihre Tabellenkalkulationsgrafiken und -diagramme einzigartig in ONLYOFFICE aussehen. Nutzen Sie den Diagrammdatenmanager, um einfache Anpassungen vorzunehmen.",
+
+  "Header": "Visualisieren Sie Daten",
+  "SubHeader": "Stellen Sie Zahlen als Diagrammen, Grafiken, Bildern und Formen dar",
+
+  "HeroImgUrl": "/images/templates/charts-and-graphs/hero/de/hero.png",
+  "HeroImgUrl2x": "/images/templates/charts-and-graphs/hero/de/hero@2x.png",
+
+  "Feature1Title": "Tabellen und Diagramme hinzufügen",
+  "Feature1Desc": "Wählen Sie zwischen mehreren Stilen und Typen, um Ihre Daten abzubilden. Mit dem Datenmanager für Diagramme können Sie Datenbereiche und Legenden anpassen, Objekte am Raster ausrichten, Achsen und Layouts ändern.",
+
+  "Feature2Title": "Design von Diagrammen ändern",
+  "Feature2Desc": "Lassen Sie jedes Element Ihrer Diagramme einzigartiges Design haben. Wenden Sie Farben, Farbverläufe und Ränder an und fügen Sie visuelle Elemente ein, genau wo diese stehen sollen. Sie können Objekte verschieben, umbrechen, vergrößern oder verkleinern.",
+
+  "Feature3Title": "Fügen Sie Formen, Bilder, Videos, TextArt und SmartArt ein",
+  "Feature3Desc": "Fügen Sie ein beliebiges Objekt in Ihre Tabellenkalkulation ein. Verwenden Sie benutzerdefinierte Bilder in Aufzählungslisten. Sie können Bilder im Editor bearbeiten, AutoFormen erstellen und anpassen, Text Art und Überschriften anwenden, YouTube-Videos einfügen und abspielen. Fügen Sie SmartArt-Elemente ein, um eine visuelle Darstellung Ihrer Informationen zu erstellen.",
+
+  "Feature4Title": "Zeilen und Spalten mit Sparklines hervorheben",
+  "Feature4Desc": "Erstellen Sie kleine Diagramme, um Trends in Zeilen oder Spalten anzuzeigen. Verschieben und passen Sie diese an. Wählen Sie zwischen verschiedenen Typen und Stilen von Sparklines.",
+
+  "Feature5Title": "Vorlagen und bedingter Formatierung anwenden",
+  "Feature5Desc": "Verwenden Sie Vorlagen, um Ihre Tabellenkalkulationen visuell zu organisieren. In Blättern mit bedingter Formatierung können Sie Datentypen durchsuchen, Probleme erkennen und Trends identifizieren.",
+
+  "Feature1ImgUrl": "/images/templates/charts-and-graphs/features/de/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/charts-and-graphs/features/de/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/charts-and-graphs/features/de/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/charts-and-graphs/features/de/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/charts-and-graphs/features/de/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/charts-and-graphs/features/de/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/charts-and-graphs/features/de/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/charts-and-graphs/features/de/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/charts-and-graphs/features/de/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/charts-and-graphs/features/de/pic5@2x.png"
+}
