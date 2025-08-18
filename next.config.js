@@ -45,6 +45,11 @@ const nextConfig = {
         destination: "/slides",
         permanent: true,
       },
+      {
+        source: "/presentation-editor/:path*",
+        destination: "/slides/:path*",
+        permanent: true,
+      },
     ];
   },
 };
