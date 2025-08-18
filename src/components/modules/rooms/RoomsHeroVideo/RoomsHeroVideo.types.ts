@@ -12,5 +12,5 @@ export interface IRoomsHeroVideo {
   /** Hero video url. */
   videoUrl: string;
   /** Hero video image. */
-  imageVideo: { url: string; url2x: string };
+  imageVideo?: { url: string; url2x: string };
 }
