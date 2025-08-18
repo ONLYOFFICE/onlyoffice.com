@@ -1,0 +1,22 @@
+﻿{
+  "PageTitle": "Formule e funzioni excel",
+  "PageDescription": "Inserici funzioni, accedi le formule e categorie recentemente usate, lavora con le gamme chiamate, calcola i tuoi fogli e i libri interi, tutto in un unico posto.",
+
+  "Header": "Esegui i calcoli precisi con gli sforzi minim",
+  "SubHeader": "Usa piï¿½ di 450 formule di fogli di calcolo Excel per elaborare i dati per qualsiasi compito",
+
+  "Feature1Title": "Calcola facilmente con piï¿½ di 450 funzioni di fogli di calcolo",
+  "Feature1Desc": "Inserisci i funzioni, accedi le categorie e le formule ultimamente applicate, lavora con gamme chiamate, calcola i tuoi fogli di calcolo e cartelle di lavoro intere, tutto in un unico posto. Esamina i risultati in fogli di calcolo di grandi dimensioni utilizzando Finestra di controllo. Utilizza Traccia precedenti e Traccia dipendenti per visualizzare le relazioni tra formule e celle. Inserisci equazioni e simboli per descrivere i calcoli utilizzati.",
+
+  "Feature2Title": "Definisci gruppi di celle per applicare le formule Excel rapidamente",
+  "Feature2Desc": "Definisci e nomina i gruppo di celle e usa loro come gli argomenti, nomina tabelle completamente formattate, gestisci le gamme, cosï¿½ puoi usarle come collegamenti ipertestuali interni.",
+
+  "Feature3Title": "Convalida inserimento dati",
+  "Feature3Desc": "Definisci le regole per validazione dei dati per assicurare che solo i dati rilevanti sono inseriti nei tuoi fogli di calcolo per i calcoli corretti. Applica la validazione ai numeri e i testi e imposta condizioni dettagliate per filtrare precisamente gli errori.",
+
+  "Feature4Title": "Proteggi la struttura e il contenuto di un foglio di calcolo",
+  "Feature4Desc": "Imposta una password sull'intero foglio di calcolo, cartella di lavoro e persino su un foglio separato. Nascondi le formule per tenerle private. Blocca celle, forme e testo. Attiva le modifiche solo negli intervalli specificati.",
+
+  "Feature5Title": "Automatizza il tuo lavoro con macro",
+  "Feature5Desc": "Usando uno plugin speciale e la nostra API, crea il proprio macro JavaScript o usa uno giï¿½ esistente per automatizzare i calcoli e standardizzare i fogli di calcolo. Esegui macro automaticamente o disattivale e ricevi le notifiche delle macro nellï¿½editor."
+}

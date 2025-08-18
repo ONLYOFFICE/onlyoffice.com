@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Формулы и функции в таблицах Excel",
+  "PageDescription": "Получайте быстрые и точные результаты, выбирая из более чем 400 доступных функций и формул редактора таблиц ONLYOFFICE. Выполняйте расчеты с минимумом усилий.",
+  
+  "Header": "Выполняйте точные расчеты с минимальными усилиями",
+  "SubHeader": "Используйте более 450 формул электронных таблиц Excel",
+
+  "HeroImgUrl": "/images/templates/formulas-and-functions/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/formulas-and-functions/hero/ru/hero@2x.png",
+
+  "Feature1Title": "Проводите расчеты",
+  "Feature1Desc": "Применяйте и настраивайте более 450 формул. Добавляйте быстрые ссылки на диапазоны ячеек. Проверяйте результаты в больших электронных таблицах с помощью окна контрольных значений. Используйте влияющие и зависимые ячейки для отображения связей между формулами и ячейками. Вставляйте уравнения и символы для описания применяемых расчетов.",
+
+  "Feature2Title": "Выберите диапазоны для быстрого применения формул Excel",
+  "Feature2Desc": "Применяйте именнованные диапазоны в качестве аргументов. Управляйте диапазонами, используя их в качестве внутренних гиперссылок.",
+
+  "Feature3Title": "Используйте проверку данных",
+  "Feature3Desc": "Включите валидацию, чтобы в таблицу можно было ввести только релевантные данные. Создавайте правила проверки в зависимости от типа данных.",
+
+  "Feature4Title": "Защитите структуру и содержимое электронной таблицы",
+  "Feature4Desc": "Задайте пароль для всей таблицы, книги или отдельного листа. Скройте формулы, чтобы сохранить их в секрете. Заблокируйте ячейки, фигуры и текст. Предоставьте доступ к редактированию только для определенных диапазонов.",
+
+  "Feature5Title": "Автоматизируйте работу с макросами",
+  "Feature5Desc": "Используя специальный плагин и наш API, создавайте свои JavaScript макросы или используйте существующие для автоматизации вычислений и стандартизации электронных таблиц. Запускайте макросы автоматически или запретите автостарт.",
+
+  "Feature1ImgUrl": "/images/templates/formulas-and-functions/features/ru/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/formulas-and-functions/features/ru/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/formulas-and-functions/features/ru/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/formulas-and-functions/features/ru/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/formulas-and-functions/features/ru/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/formulas-and-functions/features/ru/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/formulas-and-functions/features/ru/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/formulas-and-functions/features/ru/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/formulas-and-functions/features/ru/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/formulas-and-functions/features/ru/pic5@2x.png"
+}

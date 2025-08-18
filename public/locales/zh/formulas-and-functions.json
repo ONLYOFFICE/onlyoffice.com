@@ -1,0 +1,36 @@
+{
+  "PageTitle": "基于Web的电子表格编辑软件：创建、打开、编辑和共享表格 | ONLYOFFICE",
+  "PageDescription": "在线打开MS Excel或Google Sheets文件。创建安全的电子表格、使用公式和可视化数据、共享并与多用户协作编辑。",
+  
+  "Header": "轻松实现精准计算",
+  "SubHeader": "使用超过 450 种 Excel 电子表格公式来处理各类任务的数据",
+
+  "HeroImgUrl": "/images/templates/formulas-and-functions/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/formulas-and-functions/hero/zh/hero@2x.png",
+
+  "Feature1Title": "超过 450 个电子表格函数助您轻松计算",
+  "Feature1Desc": "您可从同一处插入函数、访问类别与最近使用的公式、使用命名区域以及完成工作表或整个工作簿的计算。使用监视窗口检查大型电子表格的结果。使用跟踪先例和跟踪依赖项来显示公式和单元格之间的关系。插入等式和符号来描述所应用的计算",
+
+  "Feature2Title": "定义单元格范围以快速应用 Excel 公式",
+  "Feature2Desc": "定义命名区域并将其作为参数使用。为格式化表格命名。管理区域并将其名称作为内部超链接。",
+
+  "Feature3Title": "校验数据输入",
+  "Feature3Desc": "定义数据校验规则，确保工作表中仅可填写相应数据以正确地进行计算。在数字和文本上应用校验，设置详细的条件以精准地过滤掉错误。",
+
+  "Feature4Title": "保护电子表格的结构和内容",
+  "Feature4Desc": "在整个电子表格、工作簿、单独的工作表上设置密码。隐藏公式以保持其私密性。锁定单元格、形状和文本。只允许在指定范围内进行编辑。",
+
+  "Feature5Title": "借助宏实现工作自动化",
+  "Feature5Desc": "可通过我们的专门插件和 API 创建 JavaScript 宏，也可使用现有的宏来进行自动计算并实现电子表格标准化。您可禁用或自动运行宏并在编辑器中接收有关宏的通知。",
+
+  "Feature1ImgUrl": "/images/templates/formulas-and-functions/features/zh/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/formulas-and-functions/features/zh/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/formulas-and-functions/features/zh/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/formulas-and-functions/features/zh/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/formulas-and-functions/features/zh/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/formulas-and-functions/features/zh/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/formulas-and-functions/features/zh/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/formulas-and-functions/features/zh/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/formulas-and-functions/features/zh/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/formulas-and-functions/features/zh/pic5@2x.png"
+}
