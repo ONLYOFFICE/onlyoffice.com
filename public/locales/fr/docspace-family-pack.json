@@ -1,0 +1,27 @@
+{
+  "PageTitle": "ONLYOFFICE - applications bureautiques dans le nuage",
+
+  "BuyOODocSpaceFamilyPack": "Achetez ONLYOFFICE <0>DocSpace Family Pack</0>",
+  "DocSpaceFamilyPack": "DocSpace Family Pack",
+  "RoomBasedFileStorage": "Stockage de fichiers en salle",
+  "OnlineEditors": "Éditeurs en ligne pour les documents texte, les feuilles de calcul, les présentations, les formulaires et les PDF",
+  "DesktopAndMobileApps": "Applications de bureau et mobiles, version web mobile",
+  "EnhancedSecurityFeatures": "Fonctionnalités de sécurité renforcées",
+  "AllMinorUpdatesAndMajorUpgrades": "Toutes les mises à jour majeures et les améliorations mineures",
+  "TryItFree": "Essayer gratuitement",
+
+  "NumberOfUsers": "Nombre d'utilisateurs préférée",
+  "NumberOfUsersTooltip": "Le nombre spécifié d'utilisateurs définit le nombre de personnes qui peuvent avoir accès à l'édition de documents texte, de feuilles de calcul et de présentations. Le nombre de documents pouvant être modifiés simultanément n'est pas limité. Les autres utilisateurs pourront ouvrir les documents pour les afficher uniquement.",
+  "LicenseDuration": "Durée de la licenc",
+  "Lifetime": "Licence à vie",
+  "LifetimeTooltip": "Vous pouvez utiliser toutes les fonctionnalités d'ONLYOFFICE DocSpace Family Pack disponibles au moment de l'achat pour une période illimitée, mais un an après la date d'achat, vous ne pourrez plus obtenir de mises à jour gratuites.",
+  "Updates": "Mises à jour",
+  "1Year": "1 an",
+  "Total": "Total :",
+  "BuyNow": "Acheter maintenant",
+
+  "WhatDoesTheNumberOfUsersLabel": "Que signifie 'nombre d’utilisateurs' ?",
+  "WhatDoesTheNumberOfUsersText": "Nous avons spécifié combien de personnes peuvent avoir accès à l'édition de documents, de feuilles de calcul et de présentations. Le nombre de documents édités en même temps n'est pas limité.<br/>Les autres utilisateurs pourront ouvrir des documents uniquement pour les afficher.<br/><br/>Remarque : ONLYOFFICE reconnaît un identifiant d'utilisateur pour une période de 30 jours. Après cela, vous pourrez remplacer un utilisateur par un nouveau si nécessaire. Si vous partagez un document avec des utilisateurs externes, chacun d'entre eux reçoit un identifiant d'utilisateur spécifique pour une période de 30 jours.",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "Où puis-je trouver des réponses à d'autres questions ?",
+  "WhereCanIFindAnswersToOtherQuestionsText": "Veuillez consulter notre <0>centre FAQ</0> ou <1>soumettez votre demande</1> et nous vous aiderons dans les plus brefs délais."
+}

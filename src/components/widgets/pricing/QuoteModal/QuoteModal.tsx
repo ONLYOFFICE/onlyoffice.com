@@ -266,7 +266,7 @@ const QuoteModal = <T,>({
               checkFormValid();
             }}
             value={quoteFormData.email}
-            label="Email"
+            label={t("Email")}
             placeholder="name@domain.com"
             caption={
               quoteFormData.email.length === 0

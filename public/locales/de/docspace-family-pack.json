@@ -1,0 +1,27 @@
+{
+  "PageTitle": "ONLYOFFICE: Cloud-Office-Anwendungen",
+
+  "BuyOODocSpaceFamilyPack": "Erwerben Sie ONLYOFFICE <0>DocSpace Family Pack</0>",
+  "DocSpaceFamilyPack": "DocSpace Family Pack",
+  "RoomBasedFileStorage": "Raumbasierter Dateispeicher",
+  "OnlineEditors": "Online-Editoren für Textdokumente, Tabellenkalkulationen, Präsentationen, Formulare und PDF",
+  "DesktopAndMobileApps": "Desktop- und mobile Apps, mobile Webversion",
+  "EnhancedSecurityFeatures": "Verbesserte Sicherheitsfunktionen",
+  "AllMinorUpdatesAndMajorUpgrades": "Alle kleineren Updates und größeren Upgrades",
+  "TryItFree": "Kostenlos testen",
+
+  "NumberOfUsers": "Bevorzugte Anzahl der Benutzer",
+  "NumberOfUsersTooltip": "Die angegebene Anzahl der Benutzer legt fest, wie viele Personen Zugriff auf die Bearbeitung von Dokumenten, Tabellenkalkulationen und Präsentationen haben können. Die Anzahl der Dokumente, die gleichzeitig bearbeitet werden können, ist nicht begrenzt. Andere Benutzer können Dokumente nur zur Ansicht öffnen.",
+  "LicenseDuration": "Dauer der Lizenz",
+  "Lifetime": "Lebenslang",
+  "LifetimeTooltip": "Sie können alle zum Zeitpunkt des Kaufs verfügbaren Funktionen von ONLYOFFICE DocSpace Family Pack für einen unbegrenzten Zeitraum nutzen, aber ein Jahr nach dem Kaufdatum können Sie keine kostenlosen Updates mehr erhalten.",
+  "Updates": "Updates",
+  "1Year": "1 Jahr",
+  "Total": "Insgesamt:",
+  "BuyNow": "Jetzt kaufen",
+
+  "WhatDoesTheNumberOfUsersLabel": "Was versteht man unter Anzahl der Benutzer?",
+  "WhatDoesTheNumberOfUsersText": "Die angegebene Anzahl der Benutzer stellt fest, wie viele Personen die Dokumente, Tabellenkalkulationen und Präsentationen bearbeiten können. Die Anzahl von gleichzeitig bearbeitenden Dateien ist dabei nicht beschränkt.<br/>Für sonstige Benutzer werden Dokumente schreibgeschützt.<br/><br/>Hinweis: In ONLYOFFICE ist eine Benutzer-ID für 30 Tage gültig. Dann können Sie den Benutzer wechseln, wenn notwendig. Wenn Sie ein Dokument für externe Benutzer freigeben, erhält jeder von ihnen für 30 Tage eine benannte Benutzer-ID.",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "Wo finde ich Antworten auf andere Fragen?",
+  "WhereCanIFindAnswersToOtherQuestionsText": "Lesen Sie bitte <0>häufig gestellte Fragen</0> oder <1>senden Sie Ihre Anfrage</1> und wir helfen Ihnen so schnell wie möglich."
+}

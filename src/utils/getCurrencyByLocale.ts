@@ -13,6 +13,7 @@ export function getCurrencyByLocale(locale: ILocale["locale"]): {
     case "cs":
     case "nl":
     case "ru":
+    case "sr":
       return { code: "EUR", symbol: "€" };
     case "zh":
       return { code: "CNY", symbol: "¥" };
