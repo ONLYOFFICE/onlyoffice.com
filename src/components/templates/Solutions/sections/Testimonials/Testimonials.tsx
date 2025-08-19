@@ -8,6 +8,7 @@ import { Section } from "@src/components/ui/Section";
 import { successStoriesItems } from "./data/successStoriesItems";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { Link } from "@src/components/ui/Link";
 
 const Testimonials = () => {
   const { t } = useTranslation("solutions");
@@ -32,6 +33,9 @@ const Testimonials = () => {
             />
           ))}
         </StyledSuccessStoriesItems>
+        <Link fontSize="14px" color="main" textUnderline hover="underline-none" href="/customers">
+          {t("ExploreSuccess")}
+        </Link>
       </StyledContainer>
     </Section>
   );

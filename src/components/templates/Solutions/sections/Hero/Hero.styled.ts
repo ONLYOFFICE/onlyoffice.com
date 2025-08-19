@@ -3,15 +3,14 @@ import { device } from "@src/utils/device";
 import styled from "styled-components";
 
 const StyledHeroSection = styled(Section)`
+  background-image: url("/images/templates/solutions/hero/bg.svg");
+  background-repeat: no-repeat;
+  background-size: 2464px auto;
+  background-position-y: 0;
+  background-position-x: 83%;
+  margin-top: -72px;
 
-background-image: url("/images/templates/solutions/hero/bg.svg");
-background-repeat: no-repeat;
-background-size: 2464px auto;
-background-position-y: 0;
-background-position-x: 83%;
-margin-top: -72px;
-
-@media ${device.tablet} {
+  @media ${device.tablet} {
     margin-top: -64px;
   }
 
@@ -22,6 +21,7 @@ margin-top: -72px;
 
 const StyledButtonWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 
   @media ${device.mobile} {

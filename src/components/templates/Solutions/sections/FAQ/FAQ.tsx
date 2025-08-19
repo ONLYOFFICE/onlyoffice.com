@@ -2,13 +2,23 @@ import { useTranslation, Trans } from "next-i18next";
 import { FaqCollapse } from "@src/components/modules/FaqCollapse";
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 
 const FAQ = () => {
   const { t } = useTranslation("solutions");
+  const { locale } = useRouter();
+  const [showItems, setShowItems] = useState(items);
+
+  useEffect(() => {
+    if (locale === "zh") {
+      setShowItems(items.slice(1, 4));
+    }
+  }, [locale]);
 
   return (
     <FaqCollapse
-      items={items.map(({ label, children, links }) => ({
+      items={showItems.map(({ label, children, links }) => ({
         label: t(label),
         content: (
           <Trans

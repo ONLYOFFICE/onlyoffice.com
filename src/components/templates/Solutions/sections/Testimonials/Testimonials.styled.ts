@@ -11,7 +11,7 @@ const StyledSuccessStoriesItems = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 40px 32px;
   text-align: left;
-  padding: 56px 0 0;
+  padding: 56px 0 36px;
 
   @media ${device.tabletS} {
     grid-template-columns: repeat(1, 1fr);

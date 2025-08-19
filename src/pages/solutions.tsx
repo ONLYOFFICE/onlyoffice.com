@@ -35,7 +35,7 @@ const SolutionsPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "solutions"])),
+      ...(await serverSideTranslations(locale, ["common", "solutions", "FaqCollapse"])),
       locale,
     },
   };

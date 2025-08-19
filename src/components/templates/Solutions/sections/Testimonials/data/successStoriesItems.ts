@@ -2,22 +2,22 @@ import { IStoryCard } from "@src/components/widgets/StoryCard";
 
 export const successStoriesItems: IStoryCard[] = [
   {
-    imgUrl: "/images/templates/solutions/testimonials/case-1.jpg",
+    imgUrl: "Case1Img",
     linkUrl: "Case1Link",
     heading: "Case1",
   },
   {
-    imgUrl: "/images/templates/solutions/testimonials/case-2.jpg",
+    imgUrl: "Case2Img",
     linkUrl: "Case2Link",
     heading: "Case2",
   },
   {
-    imgUrl: "/images/templates/solutions/testimonials/case-3.png",
+    imgUrl: "Case3Img",
     linkUrl: "Case3Link",
     heading: "Case3",
   },
   {
-    imgUrl: "/images/templates/solutions/testimonials/case-4.jpg",
+    imgUrl: "Case4Img",
     linkUrl: "Case4Link",
     heading: "Case4",
   },

@@ -1,47 +1,52 @@
-import { useTranslation, Trans } from "next-i18next";
-import { ButtonRow, StyledSection, StyledContainer } from "./Download.styled";
+import { useTranslation } from "next-i18next";
+import {
+  ButtonRow,
+  StyledSection,
+  StyledDownloadButton,
+  IconsRow,
+  Icon,
+  StyledText,
+} from "./Download.styled";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
-import { DownloadButton } from "@src/components/ui/DownloadButton";
+import { Link } from "@src/components/ui/Link";
+import { Container } from "@src/components/ui/Container";
 
 const Download = () => {
   const { t } = useTranslation("solutions");
 
   return (
     <StyledSection>
-      <StyledContainer>
+      <Container>
         <Heading level={2} color="white">
-          {t("DownloadTitle")}
+          {t("EachPlatform")}
         </Heading>
+        <StyledText color="white">{t("WorkAnyTime")}</StyledText>
         <ButtonRow>
           {items.map((item, index) => (
-            <DownloadButton
+            <StyledDownloadButton
               key={index}
+              as={item.href ? Link : "div"}
               href={item.href}
-              platform={item.platform}
-              variant={item.variant}
-            />
+              label=""
+            >
+              <IconsRow>
+                {item.icons?.map((icon, index) => (
+                  <Icon
+                    as={icon.href ? Link : "div"}
+                    key={index}
+                    href={icon.href}
+                    label=""
+                    $positionX={icon.positionX}
+                  />
+                ))}
+              </IconsRow>
+              <Text as="span">{t(item.title)}</Text>
+            </StyledDownloadButton>
           ))}
         </ButtonRow>
-        <Text color="white">
-          <Trans
-            t={t}
-            i18nKey="DownloadHelp"
-            components={[
-              <Link
-                color="white"
-                textUnderline
-                hover="underline-none"
-                key="0"
-                href="https://forum.onlyoffice.com"
-                target="_blank"
-              />,
-            ]}
-          />
-        </Text>
-      </StyledContainer>
+      </Container>
     </StyledSection>
   );
 };

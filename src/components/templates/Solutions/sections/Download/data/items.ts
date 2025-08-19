@@ -1,24 +1,52 @@
-import { IDownloadButton } from "@src/components/ui/DownloadButton";
+interface IItems {
+  id: string;
+  href?: string;
+  title: string;
+  icons: {
+    href?: string;
+    positionX: number;
+  }[];
+}
 
-export const items: IDownloadButton[] = [
+export const items: IItems[] = [
   {
-    href: "/download-desktop",
-    platform: "windows",
-    variant: "quaternary",
+    id: "web",
+    href: "/office-suite",
+    title: "Web",
+    icons: [
+      {
+        positionX: 0,
+      },
+    ],
   },
   {
+    id: "desktop",
     href: "/download-desktop",
-    platform: "linux",
-    variant: "quaternary",
+    title: "Desktop",
+    icons: [
+      {
+        positionX: -48,
+      },
+      {
+        positionX: -98,
+      },
+      {
+        positionX: -146,
+      },
+    ],
   },
   {
-    href: "/download-desktop",
-    platform: "macos",
-    variant: "quaternary",
-  },
-  {
-    href: "https://snapcraft.io/onlyoffice-desktopeditors",
-    platform: "snap-store",
-    variant: "quaternary",
+    id: "mobile",
+    title: "Mobile",
+    icons: [
+      {
+        href: "/office-for-android",
+        positionX: -196,
+      },
+      {
+        href: "/office-for-ios",
+        positionX: -248,
+      },
+    ],
   },
 ];
