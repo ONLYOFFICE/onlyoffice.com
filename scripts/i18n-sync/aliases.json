@@ -1,0 +1,27 @@
+{
+  "byKey": {
+    "FeaturesFormats": ["50FileFormats"],
+    "FeaturesFree": ["FreeCommunityVersion"],
+    "FeaturesSecurity": ["EnhancedSecurity"],
+    "WorkWithFillableFormTemplates": ["OdooHeader"],
+    "RequestFreeDemo": ["RequestDemo"],
+    "PageTitle": ["OdooSeoTitle"],
+    "HowToStartStep1": ["DeployDocs", "HowToStartStep1", "HowToGetStartedStep1"],
+    
+    "ToBeAbleToUseTheTemplatesApp": ["UseTheTemplatesApp1", "ToBeAbleToUseTheTemplatesApp"],
+    "PartnerText": ["JoinOOPartnership", "PartnerText"],
+    "NeedAnAppToConnect": ["NeedAnAppToConnect"]
+  },
+  "byFile": {
+    "office-for-nextcloud.json": {
+      "PageTitle": ["NextcloudSeoTitle"],
+      "HowToStartStep1": ["OODocsAndCloud"],
+      "HowToStartStep2": ["GetTheIntegration"]
+    },
+    "office-for-odoo.json": {
+      "PageTitle": ["OdooSeoTitle"],
+      "HowToStartStep1": ["Step1"],
+      "HowToStartStep2": ["HowToStart2"]
+    }
+  }
+}
