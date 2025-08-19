@@ -2,10 +2,11 @@ import styled, { css } from "styled-components";
 import { ICheckbox } from "./Checkbox.types";
 import { device } from "@src/utils/device";
 
-const StyledCheckbox = styled.label<{ $align: ICheckbox["align"] }>`
+const StyledCheckbox = styled.label<{ $align: ICheckbox["align"], $disabled: ICheckbox["disabled"] }>`
   display: flex;
   align-items: ${(props) => props.$align === "center" && "center"};
   cursor: pointer;
+  filter: ${(props) => props.$disabled && "grayscale(100%)"};
 `;
 
 const StyledCheckboxInput = styled.input<{ $checked: ICheckbox["checked"] }>`

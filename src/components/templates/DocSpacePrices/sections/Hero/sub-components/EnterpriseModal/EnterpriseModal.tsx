@@ -232,7 +232,7 @@ const EnterpriseModal = ({
 
             <LabeledWrapper label={t("Scalability")}>
               <Checkbox
-                label="Support for multi-server deployment"
+                label={t("SupportForMultiServerDeployment")}
                 checked={formData.multiServerDeployment}
                 size="small"
                 onChange={() =>
@@ -246,7 +246,7 @@ const EnterpriseModal = ({
 
             <LabeledWrapper label={t("AdditionalToolsAndServices")}>
               <Checkbox
-                label="Training courses"
+                label={t("TrainingCourses")}
                 checked={formData.trainingCourses}
                 size="small"
                 onChange={() =>

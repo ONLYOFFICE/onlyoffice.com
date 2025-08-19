@@ -133,17 +133,31 @@ const StyledDownloadButton = styled(Link)<{
                   background-position: center;
                   background-size: inherit;
                 `
-              : $platform === "snap-store"
+              : $platform === "app-gallery"
                 ? css`
-                    background-image: ${$variant === "primary" ||
-                    $variant === "quaternary"
-                      ? "url('/images/ui/download-button/snap-store.svg')"
-                      : "url('/images/ui/download-button/snap-store-white.svg')"};
+                    background-image: ${$imageSrc && `url(${$imageSrc})`};
                     background-repeat: no-repeat;
                     background-position: center;
-                    background-size: 100% 32px;
+                    background-size: inherit;
                   `
-                : null}
+                : $platform === "apk"
+                  ? css`
+                      background-image: ${$imageSrc && `url(${$imageSrc})`};
+                      background-repeat: no-repeat;
+                      background-position: center;
+                      background-size: inherit;
+                    `
+                  : $platform === "snap-store"
+                    ? css`
+                        background-image: ${$variant === "primary" ||
+                        $variant === "quaternary"
+                          ? "url('/images/ui/download-button/snap-store.svg')"
+                          : "url('/images/ui/download-button/snap-store-white.svg')"};
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 100% 32px;
+                      `
+                    : null}
 `;
 
 export { StyledDownloadButton };

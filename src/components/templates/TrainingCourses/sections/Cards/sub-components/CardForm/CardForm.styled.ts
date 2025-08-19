@@ -18,6 +18,7 @@ const StyledCardFormModal = styled.div`
   background-color: #fff;
   position: relative;
   cursor: auto;
+  border-radius: 5px;
 
   @media ${device.tablet} {
     padding: 71px 32px 74px;
