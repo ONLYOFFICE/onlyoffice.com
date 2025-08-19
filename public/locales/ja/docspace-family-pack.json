@@ -1,0 +1,27 @@
+{
+  "PageTitle": "ONLYOFFICE - Cloud Office Applications",
+
+  "BuyOODocSpaceFamilyPack": "ONLYOFFICE <0>DocSpace ファミリーパック</0>を購入",
+  "DocSpaceFamilyPack": "DocSpace ファミリーパック",
+  "RoomBasedFileStorage": "ルームベースのファイルストレージ",
+  "OnlineEditors": "テキスト文書、スプレッドシート、プレゼンテーション、フォーム、PDF用のオンラインエディタ",
+  "DesktopAndMobileApps": "デスクトップアプリ、モバイルアプリ、モバイルWeb版",
+  "EnhancedSecurityFeatures": "強化されたセキュリティ機能",
+  "AllMinorUpdatesAndMajorUpgrades": "全てのマイナーアップデートとメジャーアップグレード",
+  "TryItFree": "無料で試す",
+
+  "NumberOfUsers": "ユーザーの数",
+  "NumberOfUsersTooltip": "指定したユーザー数で、ドキュメント、スプレッドシート、プレゼンテーションの編集にアクセスできる人数を定義します。同時に編集できるドキュメントの数に制限はありません。他のユーザーは閲覧のみドキュメントを開くことができます。",
+  "LicenseDuration": "ライセンス期間",
+  "Lifetime": "永遠",
+  "LifetimeTooltip": "ONLYOFFICE DocSpace ファミリーパックは、購入時点で利用可能なすべての機能を期間無制限で利用することができますが、購入日から1年後に無料アップデートを受けることができなくなります。",
+  "Updates": "更新",
+  "1Year": "1年間",
+  "Total": "合計：",
+  "BuyNow": "今すぐ購入",
+
+  "WhatDoesTheNumberOfUsersLabel": "‘ユーザ数' とは何ですか？",
+  "WhatDoesTheNumberOfUsersText": "指定されたユーザー数は、ドキュメント、スプレッドシート、およびプレゼンテーションの編集にアクセスできるユーザーの数です。 同時に編集できるドキュメントの数に制限はありません。<br/>他のユーザーは、ドキュメントを読み取り専用で開くことができます。<br/><br/>注意： ONLYOFFICEは、ユーザーIDを30日間保存します。 その後、必要に応じてユーザーを新しいユーザーに置き換えることができます。 ドキュメントを外部ユーザーと共有する場合、各ユーザーは30日間名前付きユーザーIDを受け取ります。",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "さらに情報が必要ですか?",
+  "WhereCanIFindAnswersToOtherQuestionsText": "よくある<0>質問センター</0>をご覧になるか、<1>申請</1>をご提出ください。すぐにサポートいたします。"
+}

@@ -116,7 +116,7 @@ const BusinessModal = ({
               <StyledBusinessModalTotalCurrency
                 forwardedAs="span"
                 color="main"
-                label="$"
+                label={t("PriceCurrency")}
               />
               {getTotalPrice()}
             </Heading>
