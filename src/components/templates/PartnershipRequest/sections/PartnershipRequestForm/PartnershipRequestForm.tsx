@@ -16,6 +16,8 @@ import {
   StyledLineRadioInput,
   StyledLineRadioLabel,
   StyledHeroHCaptchaWrapper,
+  StyledPRModal,
+  StyledPRModalButton,
 } from "./PartnershipRequestForm.styled";
 import { targetMarketSegments, partnerInfoSource, partnerPromote } from "./data/items";
 import { IPartnRequestForm} from "./PartnershipRequestForm.types";
@@ -27,6 +29,7 @@ import { Checkbox } from "@src/components/ui/Checkbox";
 import { TextArea } from "@src/components/ui/TextArea";
 import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
+import { Modal } from "@src/components/ui/Modal";
 import { IPhoneInputRef } from "@src/components/widgets/PhoneInput";
 import { PhoneInput } from "@src/components/widgets/PhoneInput";
 import {
@@ -97,6 +100,7 @@ const PartnershipRequestForm = ({
   const [isSegmentError, setIsSegmentError] = useState(false);
   const [isTMSegmentsTouched, setIsTMSegmentsTouched] = useState(false);
   const [isOnSubmitPushed, setIsOnSubmitPushed] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
 
   const segmentValues = useMemo(
@@ -133,6 +137,8 @@ const PartnershipRequestForm = ({
     );
   }, [isFirstNameValid, isLastNameValid, isEmailValid, isCompanyValid, isWebsiteValid, isEmployeesValid,
     isSegmentError, isCaptchaValid]);
+
+  const onClose = () => setIsOpen(false);
 
   function scrollToElementWithOffset(el: HTMLElement) {
     if (!el) return;
@@ -277,8 +283,7 @@ const PartnershipRequestForm = ({
       if (onSubmitRequestData.status === "success") {
         setFormStatus("success");
 
-        //TODO: change UI insted of alert()
-        alert(onSubmitRequestData.status);
+        setIsOpen(true);
 
         setTimeout(() => {
           setFormStatus("default");
@@ -299,6 +304,7 @@ const PartnershipRequestForm = ({
   };
 
   return (
+    <>
     <StyledPRForm>
       <StyledDownloadModalWrapper>
 
@@ -805,7 +811,7 @@ const PartnershipRequestForm = ({
         <LoaderButton
           onClick={onSubmit}
           status={formStatus}
-          label={t2("GetItNow")}
+          label={t("SubmitRequest")}
           disabled={!isFormValid}
         />
       </StyledDownloadModalWrapper>
@@ -826,6 +832,33 @@ const PartnershipRequestForm = ({
         />
       )}
     </StyledPRForm>
+
+      <Modal
+        withCloseBtn
+        positionCloseBtn="inside"
+        maxWidth="544px"
+        isOpen={isOpen}
+        onClose={onClose}>
+        <StyledPRModal>
+          <Heading
+            level={3}
+            size={4}
+            label={t("ThankYouForYourRequest")}
+            textAlign="center"
+          >
+          </Heading>
+          <Text
+            size={2}
+            textAlign="center"
+            label={t("OurManagerWillContactYou")}
+          />
+          <StyledPRModalButton
+            onClick={onClose}
+            label={t("OK")}
+          />
+        </StyledPRModal>
+      </Modal>
+    </>
   );
 };
 

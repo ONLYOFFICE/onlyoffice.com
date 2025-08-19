@@ -137,7 +137,7 @@ const Hero = ({ locale }: IHero) => {
         byClickingText={
           <Trans
             t={t}
-            i18nKey="GetItNowText"
+            i18nKey="ByClickingSubmitRequest"
             components={[
               <Link
                 key="1"
