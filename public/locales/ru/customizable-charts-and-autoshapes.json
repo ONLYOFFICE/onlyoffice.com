@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Автофигуры и диаграммы в документах Word",
+  "PageDescription": "Вставляйте автофигуры и другие сложные объекты в документы Word с помощью редактора ONLYOFFICE. Добавляйте диаграммы, таблицы, изображения и формулы.",
+
+  "Header": "Создавайте впечатляющие документы",
+  "SubHeader": "Добавляйте и редактируйте сложные объекты для создания информативных, визуально насыщенных текстов",
+
+  "HeroImgUrl": "/images/templates/customizable-charts-and-autoshapes/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/hero/ru/hero@2x.png",
+
+  "Feature1Title": "Структурируйте и форматируйте",
+  "Feature1Desc": "Меняйте шрифты и стили. Структурируйте и форматируйте абзацы, а также настраивайте поля, разрывы, ориентацию страницы, столбцы и другие элементы макета.",
+
+  "Feature2Title": "Добавляйте сложные объекты",
+  "Feature2Desc": "Вставляйте автофигуры: выберите один из нескольких стилей и настройте их внешний вид. Вставляйте настраиваемые диаграммы, изображения, таблицы и электронные таблицы OLE. Используйте редактор уравнений для вставки формул в формате Unicode и LaTeX для пояснения математических расчетов. Добавляйте надписи и объекты Text Art. Вставляйте элементы SmartArt для визуализации ваших идей.",
+
+  "Feature3Title": "Применяйте академическое форматирование",
+  "Feature3Desc": "Создавайте оглавления и списки иллюстраций, чтобы структурировать статьи и книги. Вставляйте и систематизируйте подписи, сноски, обычные и концевые сноски, перекрестные ссылки, закладки и гиперссылки. Добавляйте библиографии с Mendeley и Zotero.",
+
+  "Feature4Title": "Используйте плагины",
+  "Feature4Desc": "Вставляйте и воспроизводите видео с YouTube. Редактируйте изображения прямо в документе. Оформите код на любом языке с помощью плагина Highlight Code.",
+
+  "Feature1ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/ru/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/ru/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/ru/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/ru/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/ru/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/ru/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/ru/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/ru/pic4@2x.png"
+}
