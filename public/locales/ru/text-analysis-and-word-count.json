@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Подсчет слов в документах Word",
+  "PageDescription": "Проверьте статистику документа в редакторе ONLYOFFICE. Посчитайте количество слов, символов или абзацев, чтобы оптимизировать размер текста.",
+
+  "Header": "Правка и анализ текстов",
+  "SubHeader": "Создавайте понятные тексты",
+
+  "HeroImgUrl": "/images/templates/text-analysis-and-word-count/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/text-analysis-and-word-count/hero/ru/hero@2x.png",
+
+  "Feature1Title": "Проверьте статистику документа",
+  "Feature1Desc": "Посчитайте количество слов, символов и абзацев, чтобы оптимизировать размер текста для ваших документов, визуальных материалов и писем.",
+
+  "Feature2Title": "Пишите на любом языке",
+  "Feature2Desc": "Пишите и проверяйте тексты на 250 языках. Находите орфографические ошибки и опечатки с помощью встроенного средства проверки правописания, LanguageTool или Grammalecte. Переводите документы с помощью Google Translate, DeepL или Apertium.",
+
+  "Feature3Title": "Используйте поиск и автозамену",
+  "Feature3Desc": "Мгновенно находите любое слово в документе и быстро заменяйте искомые слова в больших текстах. Включите автоматическое исправление текста, символов и уравнений. Используйте «Типограф» для автоматического исправления знаков препинания и типографики.",
+
+  "Feature4Title": "Найдите синонимы и антонимы",
+  "Feature4Desc": "Подберите идеальные слова с помощью тезауруса. Находите синонимы и антонимы и вставляйте их в текст.",
+
+  "Feature1ImgUrl": "/images/templates/text-analysis-and-word-count/features/ru/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/ru/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/text-analysis-and-word-count/features/ru/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/ru/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/text-analysis-and-word-count/features/ru/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/ru/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/text-analysis-and-word-count/features/ru/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/ru/pic4@2x.png"
+}
