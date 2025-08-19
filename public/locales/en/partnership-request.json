@@ -33,6 +33,9 @@
   "Industry": "Industry",
   "Other": "Other",
 
+  "AreYouCurrentlyAPartnerOrAgent": "Are you currently a partner or agent for any other company the offers solutions similar to ONLYOFFICE? If yes, please specify one or more partners",
+  "PleaseSpecify": "Please specify ...",
+  "FieldIsEmpty": "Field is empty",
   "DoYouHaveExistingSalesOpportunities": "Do you have existing sales opportunities for ONLYOFFICE solutions?",
   "WouldYouNeedADemoPortal": "Would you need a demo portal to showcase ONLYOFFICE to your prospects?",
   "DoYouNeedAProductTraining": "Do you need a product training offered by ONLYOFFICE?",

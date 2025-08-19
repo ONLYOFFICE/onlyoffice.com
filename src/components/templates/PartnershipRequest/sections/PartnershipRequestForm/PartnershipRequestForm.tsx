@@ -10,6 +10,7 @@ import {
   StyledSegmentsWrapper,
   StyledTextWrapper,
   StyledChecboxesWrapper,
+  StyledPreRadiosTextWrapper,
   StyledPreRadiosText,
   StyledLine2RadiosWrapper,
   StyledLineRadioInput,
@@ -49,6 +50,7 @@ const PartnershipRequestForm = ({
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
   const segmentsRef = useRef<HTMLDivElement | null>(null);
+  const partnerHeaderRef = useRef<HTMLDivElement | null>(null);
 
   const validateEmployeesCount = (value: string) => {
     const num = Number(value);
@@ -73,6 +75,7 @@ const PartnershipRequestForm = ({
     industry: false,
     otherSegments: false,
 
+    pleaseSpecify: false,
     comment: false,
   });
   const [isFormValid, setIsFormValid] = useState(false);
@@ -211,6 +214,21 @@ const PartnershipRequestForm = ({
         setTimeout(() => {
           scrollToElementWithOffset(segmentsRef.current!);
         }, 0);
+      }
+      return;
+    }
+
+    if (formData.currentlyPartner && formData.pleaseSpecify.length === 0) {
+      setIsEmpty((prev) => ({
+        ...prev,
+        pleaseSpecify: formData.pleaseSpecify.length === 0,
+      }));
+
+      if (segmentsRef.current) {
+        partnerHeaderRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
       }
       return;
     }
@@ -566,6 +584,58 @@ const PartnershipRequestForm = ({
             </StyledChecboxesWrapper>
           </div>
         </StyledSegmentsWrapper>
+
+        <StyledPreRadiosTextWrapper ref={partnerHeaderRef}>
+        <StyledPreRadiosText label={t("AreYouCurrentlyAPartnerOrAgent")} />
+        </StyledPreRadiosTextWrapper>
+        <StyledLine2RadiosWrapper>
+          <StyledLineRadioInput
+            id="partner-radio-yes"
+            type="radio"
+            name="currentlyPartner"
+            value="Yes"
+            checked={formData.currentlyPartner}
+            onChange={() => {setFormData((prev) => ({ ...prev, currentlyPartner: true }))}}
+          />
+          <StyledLineRadioLabel htmlFor="partner-radio-yes">{t("Yes")}</StyledLineRadioLabel>
+          <StyledLineRadioInput
+            id="partner-radio-no"
+            type="radio"
+            name="currentlyPartner"
+            value="No"
+            checked={!formData.currentlyPartner}
+            onChange={() => {setFormData((prev) => ({ ...prev, currentlyPartner: false }))}}
+          />
+          <StyledLineRadioLabel htmlFor="partner-radio-no">{t("No")}</StyledLineRadioLabel>
+        </StyledLine2RadiosWrapper>
+        {formData.currentlyPartner && (
+          <div className="otherField">
+            <Input
+              label={t("PleaseSpecify")}
+              placeholder={t("PleaseSpecify")}
+              value={formData.pleaseSpecify}
+              onBlur={() => {
+                setIsEmpty((prev) => ({
+                  ...prev,
+                  pleaseSpecify: formData.pleaseSpecify.length === 0,
+                }));
+              }}
+              onChange={(e) => handleInputChange("pleaseSpecify", e.target.value)}
+              caption={
+                formData.pleaseSpecify.length === 0
+                  ? t("FieldIsEmpty")
+                  : ""
+              }
+              status={
+                isEmpty.pleaseSpecify
+                  ? "error"
+                  : formData.pleaseSpecify.length > 0
+                    ? "success"
+                    : "default"
+              }
+            />
+          </div>
+        )}
 
         <StyledPreRadiosText label={t("DoYouHaveExistingSalesOpportunities")} />
         <StyledLine2RadiosWrapper>

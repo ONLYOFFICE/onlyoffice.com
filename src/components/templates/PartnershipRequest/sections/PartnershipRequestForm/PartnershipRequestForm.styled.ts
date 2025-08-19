@@ -77,6 +77,14 @@ const StyledChecboxesWrapper = styled.div`
   }
 `;
 
+const StyledPreRadiosTextWrapper = styled.div`
+  scroll-margin-top: 72px;
+
+  @media ${device.mobile} {
+    scroll-margin-top: 48px;
+  }
+`;
+
 const StyledPreRadiosText = styled(Text)`
   font-size: 14px;
   line-height: 1.5em;
@@ -175,6 +183,7 @@ export {
   StyledSegmentsWrapper,
   StyledTextWrapper,
   StyledChecboxesWrapper,
+  StyledPreRadiosTextWrapper,
   StyledPreRadiosText,
   StyledLine2RadiosWrapper,
   StyledLineRadioInput,

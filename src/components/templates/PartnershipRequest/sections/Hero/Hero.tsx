@@ -39,6 +39,8 @@ const Hero = ({ locale }: IHero) => {
     industry: false,
     otherSegments: false,
 
+    currentlyPartner: true,
+    pleaseSpecify: "",
     salesOpportunities: true,
     websitePromote: false,
     socialNetworks: false,
@@ -102,6 +104,7 @@ const Hero = ({ locale }: IHero) => {
         website: formData.website,
         numberEmployees: formData.numberEmployees,
         targetMarketSegments: getSelectedNames(targetMarketSegments),
+        pleaseSpecify: formData.currentlyPartner ? formData.pleaseSpecify : getYesOrNo(formData.currentlyPartner),
         salesOpportunities: getYesOrNo(formData.salesOpportunities),
         promotion: getSelectedNames(partnerPromote),
         demoPortal: getYesOrNo(formData.demoPortal),
