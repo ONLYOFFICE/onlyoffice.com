@@ -1,14 +1,15 @@
 import { Trans, useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 import { Text } from "@src/components/ui/Text";
 import { RoomsHeroVideo } from "@src/components/modules/rooms/RoomsHeroVideo";
 import { RoomsHero } from "@src/components/modules/rooms/RoomsHero";
 import { hero } from "./data/hero";
 
-const Hero = () => {
+interface HeroProps {
+  locale?: string;
+}
+
+const Hero = ({ locale }: HeroProps) => {
   const { t } = useTranslation("custom-rooms");
-  const router = useRouter();
-  const { locale } = router;
 
   const heroProps = {
     heading: (

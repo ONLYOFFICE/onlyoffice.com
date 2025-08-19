@@ -29,7 +29,7 @@ const CustomRoomsPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <CustomRoomsTemplate />
+        <CustomRoomsTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
