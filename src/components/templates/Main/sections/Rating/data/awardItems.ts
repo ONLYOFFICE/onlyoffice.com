@@ -3,8 +3,8 @@ import { IMedalAward } from "../sub-components/MedalAward";
 export const awardItems: IMedalAward[] = [
   {
     linkUrl: "https://slashdot.org/software/p/ONLYOFFICE/",
-    imgUrl: "/images/templates/main/rating/awards/slashdot-2024.svg",
-    heading: "SlashdotLeaderWinter2024",
+    imgUrl: "/images/templates/main/rating/awards/slashdot-2025.svg",
+    heading: "SlashdotLeaderSummer2025",
   },
   {
     linkUrl: "https://www.capterra.com/document-management-software/#top-20",
@@ -30,7 +30,7 @@ export const awardItems: IMedalAward[] = [
   },
   {
     linkUrl: "https://omr.com/de/reviews/product/onlyoffice",
-    imgUrl: "/images/templates/main/rating/awards/leader-sourceforge-2024.svg",
-    heading: "SourceForgeLeaderWinter2024",
+    imgUrl: "/images/templates/main/rating/awards/leader-sourceforge-2025.svg",
+    heading: "SourceForgeLeaderSummer2025",
   },
 ];
