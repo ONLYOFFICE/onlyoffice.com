@@ -55,7 +55,7 @@ export const supportLevels: ISupportLevels = {
       values: [{ icon: "dash" }, { icon: "dash" }, { icon: "check" }],
     },
     {
-      heading: [{ name: "Monitoring system" }],
+      heading: [{ name: "MonitoringSystem" }],
       values: [{ icon: "dash" }, { icon: "dash" }, { icon: "check" }],
     },
     {
