@@ -40,7 +40,7 @@ const DesktopEditors = () => {
             <FeatureImageItem
               key={index}
               position={{ desktop: index % 2 === 1 ? "right" : "left" }}
-              heading={t(heading)}
+              heading={t(String(heading))}
               text={
                 <Trans
                   t={t}

@@ -13,8 +13,8 @@
 
   "CreateFreeAccount": "创建免费账户",
 
-  "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
-  "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
+  "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/zh/main.png",
+  "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/zh/main@2x.png",
 
   "IdealForDueDiligenceDesc": "在合并、与其他公司合作项目或需要访问共享数据的其他合资企业中使用 VDR 进行尽职调查。",
   "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/zh/ideal.png",

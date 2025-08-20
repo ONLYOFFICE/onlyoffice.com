@@ -27,12 +27,12 @@ const StyledRoomsHeroVideo = styled(Section)`
 `;
 
 const StyledHeading = styled(Heading)`
-  width: 780px;
+  width:100%;
 `;
 
 const StyledRoomsHeroVideoWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 396px auto;
   margin-top: 26px;
   column-gap: 26px;
 
