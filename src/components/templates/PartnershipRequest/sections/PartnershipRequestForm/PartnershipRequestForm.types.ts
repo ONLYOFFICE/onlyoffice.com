@@ -42,6 +42,8 @@ export interface IPartnershipRequestData {
   otherInfoSource: boolean;
   comment: string;
   type: string;
+
+  [key: string]: string | boolean;
 }
 
 interface IApiResponse {

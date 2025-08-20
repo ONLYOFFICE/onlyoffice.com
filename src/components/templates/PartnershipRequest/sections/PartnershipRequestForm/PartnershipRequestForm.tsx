@@ -19,7 +19,8 @@ import {
 } from "./PartnershipRequestForm.styled";
 import { targetMarketSegments, partnerInfoSource, partnerPromote } from "./data/items";
 import { SuccessModal } from "./sub-components/SuccessModal/SuccessModal";
-import { IPartnRequestForm} from "./PartnershipRequestForm.types";
+import { CheckboxesBlock } from "./sub-components/CheckboxesBlock/CheckboxesBlock";
+import { IPartnRequestForm } from "./PartnershipRequestForm.types";
 import { getFromParam } from "@src/utils/getParams";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -661,29 +662,13 @@ const PartnershipRequestForm = ({
           <StyledLineRadioLabel htmlFor="opportunities-radio-no">{t("No")}</StyledLineRadioLabel>
         </StyledLine2RadiosWrapper>
 
-        <StyledTextWrapper className="firstHeard">
-          <Text label={t("HowAreYouGoingToPromote")} />
-        </StyledTextWrapper>
-        <div>
-          <StyledChecboxesWrapper>
-            {partnerPromote.map(({ key, label, id, name }) => (
-              <Checkbox
-                id={id}
-                key={key}
-                name={name}
-                checked={formData[key]}
-                onChange={() => {
-                  if (!isTMSegmentsTouched) setIsTMSegmentsTouched(true);
-                  setFormData((prev) => ({
-                    ...prev,
-                    [key]: !prev[key],
-                  }));
-                }}
-                label={t(label)}
-              />
-            ))}
-          </StyledChecboxesWrapper>
-        </div>
+        <CheckboxesBlock
+          label="HowAreYouGoingToPromote"
+          items={partnerPromote}
+          formData={formData}
+          setFormData={setFormData}
+          t={t}
+        />
 
         <StyledPreRadiosText label={t("WouldYouNeedADemoPortal")} />
         <StyledLine2RadiosWrapper>
@@ -751,29 +736,13 @@ const PartnershipRequestForm = ({
           <StyledLineRadioLabel htmlFor="sales-training-radio-no">{t("No")}</StyledLineRadioLabel>
         </StyledLine2RadiosWrapper>
 
-        <StyledTextWrapper className="firstHeard">
-          <Text label={t("WhereHaveYouFirstHeardAboutUs")} />
-        </StyledTextWrapper>
-        <div>
-          <StyledChecboxesWrapper>
-            {partnerInfoSource.map(({ key, label, id, name }) => (
-              <Checkbox
-                id={id}
-                key={key}
-                name={name}
-                checked={formData[key]}
-                onChange={() => {
-                  if (!isTMSegmentsTouched) setIsTMSegmentsTouched(true);
-                  setFormData((prev) => ({
-                    ...prev,
-                    [key]: !prev[key],
-                  }));
-                }}
-                label={t(label)}
-              />
-            ))}
-          </StyledChecboxesWrapper>
-        </div>
+        <CheckboxesBlock
+          label="WhereHaveYouFirstHeardAboutUs"
+          items={partnerInfoSource}
+          formData={formData}
+          setFormData={setFormData}
+          t={t}
+        />
 
         <StyledPreRadiosText label={t("PleaseIncludeAnyAdditionalInformation")} />
         <TextArea

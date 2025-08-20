@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { Button } from "@src/components/ui/Button";
 
 const StyledPRForm = styled.form`
   margin: 0 auto;
@@ -51,10 +50,6 @@ const StyledTextWrapper = styled.div`
   font-size: 14px;
   line-height: 1.5em;
   margin-bottom: 16px;
-
-  &.firstHeard {
-    margin-bottom: -16px;
-  }
 
   &.error {
     color: #cb0000;
