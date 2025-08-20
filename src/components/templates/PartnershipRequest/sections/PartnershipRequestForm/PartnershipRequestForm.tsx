@@ -10,16 +10,13 @@ import {
   StyledSegmentsWrapper,
   StyledTextWrapper,
   StyledChecboxesWrapper,
-  StyledPreRadiosTextWrapper,
-  StyledPreRadiosText,
-  StyledLine2RadiosWrapper,
-  StyledLineRadioInput,
-  StyledLineRadioLabel,
+  StyledPreTextAreaText,
   StyledHeroHCaptchaWrapper,
 } from "./PartnershipRequestForm.styled";
 import { targetMarketSegments, partnerInfoSource, partnerPromote } from "./data/items";
 import { SuccessModal } from "./sub-components/SuccessModal/SuccessModal";
-import { CheckboxesBlock } from "./sub-components/CheckboxesBlock/CheckboxesBlock";
+import { CheckboxesBlock } from "./sub-components/CheckboxesBlock";
+import { YesNoRadioBlock } from "./sub-components/YesNoRadioBlock/YesNoRadioBlock"
 import { IPartnRequestForm } from "./PartnershipRequestForm.types";
 import { getFromParam } from "@src/utils/getParams";
 import { Heading } from "@src/components/ui/Heading";
@@ -588,29 +585,14 @@ const PartnershipRequestForm = ({
           </div>
         </StyledSegmentsWrapper>
 
-        <StyledPreRadiosTextWrapper ref={partnerHeaderRef}>
-        <StyledPreRadiosText label={t("AreYouCurrentlyAPartnerOrAgent")} />
-        </StyledPreRadiosTextWrapper>
-        <StyledLine2RadiosWrapper>
-          <StyledLineRadioInput
-            id="partner-radio-yes"
-            type="radio"
-            name="currentlyPartner"
-            value="Yes"
-            checked={formData.currentlyPartner}
-            onChange={() => {setFormData((prev) => ({ ...prev, currentlyPartner: true }))}}
-          />
-          <StyledLineRadioLabel htmlFor="partner-radio-yes">{t("Yes")}</StyledLineRadioLabel>
-          <StyledLineRadioInput
-            id="partner-radio-no"
-            type="radio"
-            name="currentlyPartner"
-            value="No"
-            checked={!formData.currentlyPartner}
-            onChange={() => {setFormData((prev) => ({ ...prev, currentlyPartner: false }))}}
-          />
-          <StyledLineRadioLabel htmlFor="partner-radio-no">{t("No")}</StyledLineRadioLabel>
-        </StyledLine2RadiosWrapper>
+        <YesNoRadioBlock
+          label="AreYouCurrentlyAPartnerOrAgent"
+          fieldName="currentlyPartner"
+          formData={formData}
+          setFormData={setFormData}
+          t={t}
+          idPrefix="partner"
+        />
         {formData.currentlyPartner && (
           <div className="otherField">
             <Input
@@ -640,27 +622,14 @@ const PartnershipRequestForm = ({
           </div>
         )}
 
-        <StyledPreRadiosText label={t("DoYouHaveExistingSalesOpportunities")} />
-        <StyledLine2RadiosWrapper>
-          <StyledLineRadioInput
-            id="opportunities-radio-yes"
-            type="radio"
-            name="salesOpportunities"
-            value="Yes"
-            checked={formData.salesOpportunities}
-            onChange={() => {setFormData((prev) => ({ ...prev, salesOpportunities: true }))}}
-          />
-          <StyledLineRadioLabel htmlFor="opportunities-radio-yes">{t("Yes")}</StyledLineRadioLabel>
-          <StyledLineRadioInput
-            id="opportunities-radio-no"
-            type="radio"
-            name="salesOpportunities"
-            value="No"
-            checked={!formData.salesOpportunities}
-            onChange={() => {setFormData((prev) => ({ ...prev, salesOpportunities: false }))}}
-          />
-          <StyledLineRadioLabel htmlFor="opportunities-radio-no">{t("No")}</StyledLineRadioLabel>
-        </StyledLine2RadiosWrapper>
+        <YesNoRadioBlock
+          label="DoYouHaveExistingSalesOpportunities"
+          fieldName="salesOpportunities"
+          formData={formData}
+          setFormData={setFormData}
+          t={t}
+          idPrefix="opportunities"
+        />
 
         <CheckboxesBlock
           label="HowAreYouGoingToPromote"
@@ -670,71 +639,32 @@ const PartnershipRequestForm = ({
           t={t}
         />
 
-        <StyledPreRadiosText label={t("WouldYouNeedADemoPortal")} />
-        <StyledLine2RadiosWrapper>
-          <StyledLineRadioInput
-            id="demo-portal-radio-yes"
-            type="radio"
-            name="demoPortal"
-            value="Yes"
-            checked={formData.demoPortal}
-            onChange={() => {setFormData((prev) => ({ ...prev, demoPortal: true }))}}
-          />
-          <StyledLineRadioLabel htmlFor="demo-portal-radio-yes">{t("Yes")}</StyledLineRadioLabel>
-          <StyledLineRadioInput
-            id="demo-portal-radio-no"
-            type="radio"
-            name="demoPortal"
-            value="No"
-            checked={!formData.demoPortal}
-            onChange={() => {setFormData((prev) => ({ ...prev, demoPortal: false }))}}
-          />
-          <StyledLineRadioLabel htmlFor="demo-portal-radio-no">{t("No")}</StyledLineRadioLabel>
-        </StyledLine2RadiosWrapper>
+        <YesNoRadioBlock
+          label="WouldYouNeedADemoPortal"
+          fieldName="demoPortal"
+          formData={formData}
+          setFormData={setFormData}
+          t={t}
+          idPrefix="demo-portal"
+        />
 
-        <StyledPreRadiosText label={t("DoYouNeedAProductTraining")} />
-        <StyledLine2RadiosWrapper>
-          <StyledLineRadioInput
-            id="product-training-radio-yes"
-            type="radio"
-            name="productTraining"
-            value="Yes"
-            checked={formData.productTraining}
-            onChange={() => {setFormData((prev) => ({ ...prev, productTraining: true }))}}
-          />
-          <StyledLineRadioLabel htmlFor="product-training-radio-yes">{t("Yes")}</StyledLineRadioLabel>
-          <StyledLineRadioInput
-            id="product-training-radio-no"
-            type="radio"
-            name="productTraining"
-            value="No"
-            checked={!formData.productTraining}
-            onChange={() => {setFormData((prev) => ({ ...prev, productTraining: false }))}}
-          />
-          <StyledLineRadioLabel htmlFor="product-training-radio-no">{t("No")}</StyledLineRadioLabel>
-        </StyledLine2RadiosWrapper>
+        <YesNoRadioBlock
+          label="DoYouNeedAProductTraining"
+          fieldName="productTraining"
+          formData={formData}
+          setFormData={setFormData}
+          t={t}
+          idPrefix="product-training"
+        />
 
-        <StyledPreRadiosText label={t("DoYouNeedASalesTraining")} />
-        <StyledLine2RadiosWrapper>
-          <StyledLineRadioInput
-            id="sales-training-radio-yes"
-            type="radio"
-            name="salesTraining"
-            value="Yes"
-            checked={formData.salesTraining}
-            onChange={() => {setFormData((prev) => ({ ...prev, salesTraining: true }))}}
-          />
-          <StyledLineRadioLabel htmlFor="sales-training-radio-yes">{t("Yes")}</StyledLineRadioLabel>
-          <StyledLineRadioInput
-            id="sales-training-radio-no"
-            type="radio"
-            name="salesTraining"
-            value="No"
-            checked={!formData.salesTraining}
-            onChange={() => {setFormData((prev) => ({ ...prev, salesTraining: false }))}}
-          />
-          <StyledLineRadioLabel htmlFor="sales-training-radio-no">{t("No")}</StyledLineRadioLabel>
-        </StyledLine2RadiosWrapper>
+        <YesNoRadioBlock
+          label="DoYouNeedASalesTraining"
+          fieldName="salesTraining"
+          formData={formData}
+          setFormData={setFormData}
+          t={t}
+          idPrefix="sales-training"
+        />
 
         <CheckboxesBlock
           label="WhereHaveYouFirstHeardAboutUs"
@@ -744,7 +674,7 @@ const PartnershipRequestForm = ({
           t={t}
         />
 
-        <StyledPreRadiosText label={t("PleaseIncludeAnyAdditionalInformation")} />
+        <StyledPreTextAreaText label={t("PleaseIncludeAnyAdditionalInformation")} />
         <TextArea
           onChange={(e) => handleInputChange("comment", e.target.value)}
           onBlur={() => {

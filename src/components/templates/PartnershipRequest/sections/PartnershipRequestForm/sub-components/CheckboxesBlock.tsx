@@ -1,8 +1,8 @@
 import React from 'react';
-import { IPartnershipRequestData } from "../../PartnershipRequestForm.types";
+import { IPartnershipRequestData } from "../PartnershipRequestForm.types";
 import { Text } from '@src/components/ui/Text';
 import { Checkbox } from '@src/components/ui/Checkbox';
-import { StyledTextWrapper, StyledChecboxesWrapper } from '../../PartnershipRequestForm.styled';
+import { StyledTextWrapper, StyledChecboxesWrapper } from '../PartnershipRequestForm.styled';
 
 interface CheckboxesBlockProps {
   label: string;
