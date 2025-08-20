@@ -35,7 +35,17 @@ const Hero = () => {
       return <RoomsHero {...heroProps} />;
     }
   
-    return <RoomsHeroVideo {...heroProps} videoUrl={hero.videoUrl} image={ { url: t(hero.imageVideo.url), url2x: t(hero.imageVideo.url2x) } } />;
+    const videoImage = hero.imageVideo
+      ? { url: t(hero.imageVideo.url), url2x: t(hero.imageVideo.url2x) }
+      : { url: t(hero.image.url), url2x: t(hero.image.url2x) };
+
+    return (
+      <RoomsHeroVideo
+        {...heroProps}
+        videoUrl={hero.videoUrl}
+        image={videoImage}
+      />
+    );
 };
 
 export { Hero };

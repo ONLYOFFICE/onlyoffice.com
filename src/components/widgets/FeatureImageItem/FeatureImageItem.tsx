@@ -38,7 +38,7 @@ const FeatureImageItem = ({
       }}
     >
       <StyledFeatureImageItemContent>
-        <Heading level={3} label={heading} />
+        <Heading level={3} label={String(heading)} />
         <StyledFeatureImageItemText color="#666666" $fontSize={fontSize}>
           {text}
         </StyledFeatureImageItemText>
