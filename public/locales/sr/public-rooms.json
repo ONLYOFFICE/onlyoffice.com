@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Pojednostavite deljenje datoteka sa spoljnim korisnicima u javnim prostorijama | ONLYOFFICE",
+  "PageDescription": "Jednostavno komunicirajte sa trećim stranama u ONLYOFFICE DocSpace-u. Integrišite javne prostorije u bilo koji veb interfejs",
+
+  "SimplifyFileSharingWithExternalUsers": "Pojednostavite deljenje datoteka sa spoljnim korisnicima u <0>javnim sobama</0>",
+  "EasilyInteractWithThirdParties": "Jednostavno komunicirajte sa trećim stranama u ONLYOFFICE DocSpace",
+  "IdealForPublicSharing": "Idealan za javno deljenje",
+  "AbsolutelySafe": "Apsolutno bezbedan za vaše kancelarijske datoteke",
+  "EasyToStore": "Lako se čuva gde želite",
+  "SeamlesslyEmbeddable": "Besprekorno ugrađen",
+  "CostEffectiveForAnyBudget": "Isplativo za bilo koji budžet",
+  "CreateFreeAccount": "Registrujte besplatan nalog",
+
+  "HeroImgUrl": "/images/templates/public-rooms/hero/public-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/public-rooms/hero/public-rooms-header@2x.png",
+
+  "HeroImgUrlVideo": "/images/templates/public-rooms/hero/public-rooms-video.png",
+  "HeroImgUrlVideo2x": "/images/templates/public-rooms/hero/public-rooms-video@2x.png",
+
+  "PublicSharingDesc": "Pozovite sve korisnike koji nemaju direktan pristup vašem DocSpace-u, kao što su partneri, sponzori, podizvođači itd., putem spoljašnjih linkova kako bi im omogućili da pregledaju, uređuju, pregledaju i komentarišu datoteke bez registracije. Generišite više linkova sa različitim parametrima, ako je potrebno.",
+  "PublicSharingImgUrl": "/images/templates/public-rooms/features/ideal-for-public-sharing.png",
+  "PublicSharingImgUrl2x": "/images/templates/public-rooms/features/ideal-for-public-sharing@2x.png",
+
+  "AbsolutelySafeDesc": "Za dodatnu zaštitu, postavite lozinku i ograničite link vremenskim periodom, ograničite kopiranje sadržaja datoteka, preuzimanje datoteka i štampanje.",
+  "AbsolutelySafeImgUrl": "/images/templates/public-rooms/features/absolutely-safe.png",
+  "AbsolutelySafeImgUrl2x": "/images/templates/public-rooms/features/absolutely-safe@2x.png",
+
+  "EasyToStoreDesc": "Koristite usluge trećih strana kao skladište podataka za vaše javne sobe: Google Drive, One Drive, Box, Dropbox, kDrive, Nextcloud, ownCloud i druge koje rade putem WebDAV protokola.",
+  "EasyToStoreImgUrl": "/images/templates/public-rooms/features/easy-to-store-where-you-want.png",
+  "EasyToStoreImgUrl2x": "/images/templates/public-rooms/features/easy-to-store-where-you-want@2x.png",
+
+  "SeamlesslyEmbeddableDesc": "Lako integrišite javne sobe u bilo koji veb interfejs. Na taj način, korisnici vaše veb stranice ili usluge će moći da pristupe datotekama sobe direktno iz veb frontend-a.",
+  "SeamlesslyEmbeddableImgUrl": "/images/templates/public-rooms/features/seamlessly-embeddable.png",
+  "SeamlesslyEmbeddableImgUrl2x": "/images/templates/public-rooms/features/seamlessly-embeddable@2x.png",
+
+  "CostEffectiveDesc": "Platite samo za administratore i dodajte bilo koji broj redovnih korisnika i gostiju besplatno. Iskoristite besplatan Startup plan za male timove. ONLYOFFICE DocSpace je pogodan za sve poslovne subjekte, bez obzira da li su u pitanju mala ili velika preduzeća. Želite li da dobijete potpunu kontrolu nad vašim korporativnim podacima? Postavite DocSpace na vašem privatnom serveru.",
+  "CostEffectiveImgUrl": "/images/templates/public-rooms/features/cost-effective-for-any-budget.png",
+  "CostEffectiveImgUrl2x": "/images/templates/public-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Saznajte više o DocSpace javnim sobama",
+  "Blog": "Blog",
+  "BlogDesc": "Kako ugraditi javnu sobu na vašu veb stranicu",
+  "LearnMore": "Saznajte više",
+  "BlogLink": "https://www.onlyoffice.com/blog/2023/12/embed-public-docspace-room-to-website",
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Ovladajte ONLYOFFICE DocSpace sa video vodičima",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Gledajte sada",
+  "Tutorial": "Tutorijal",
+  "TutorialDesc": "Kako integrisati DocSpace u aplikaciju jedne stranice",
+  "HelpCenterLink": "https://www.onlyoffice.com/blog/2024/05/integrating-onlyoffice-docspace-into-a-single-page-application"
+}

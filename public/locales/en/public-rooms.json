@@ -14,6 +14,9 @@
   "HeroImgUrl": "/images/templates/public-rooms/hero/public-rooms-header.png",
   "HeroImgUrl2x": "/images/templates/public-rooms/hero/public-rooms-header@2x.png",
 
+  "HeroImgUrlVideo": "/images/templates/public-rooms/hero/public-rooms-video.png",
+  "HeroImgUrlVideo2x": "/images/templates/public-rooms/hero/public-rooms-video@2x.png",
+
   "PublicSharingDesc": "Invite any users who don't have direct access to your DocSpace such as partners, sponsors, subcontractors, etc., via external links to allow them to view, edit, review, and comment files without registration. Generate multiple links with different parameters, if necessary.",
   "PublicSharingImgUrl": "/images/templates/public-rooms/features/ideal-for-public-sharing.png",
   "PublicSharingImgUrl2x": "/images/templates/public-rooms/features/ideal-for-public-sharing@2x.png",
