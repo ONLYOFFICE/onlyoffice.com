@@ -690,6 +690,19 @@ const PartnershipRequestForm = ({
           status={formData.comment ? "success" : "default"}
         />
 
+        <Checkbox
+          id="spam"
+          name="spam"
+          checked={formData.spam}
+          onChange={() => {
+            setFormData((prev) => ({
+              ...prev,
+              spam: !prev.spam,
+            }));
+          }}
+          label={t("IWantToSubscribeToTheOONewsletter")}
+        />
+
 
         <StyledHeroHCaptchaWrapper>
           <HCaptcha

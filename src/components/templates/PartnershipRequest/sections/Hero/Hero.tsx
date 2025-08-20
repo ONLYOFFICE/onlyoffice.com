@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
+import { useRouter } from "next/router";
 import {
   StyledHeroDescription,
   StyledHeroHeading,
@@ -21,6 +22,7 @@ import {
 
 const Hero = ({ locale }: IHero) => {
   const { t } = useTranslation("partnership-request");
+  const router = useRouter();
 
   const initialFormData: IPartnershipRequestData = {
     firstName: "",
@@ -63,6 +65,7 @@ const Hero = ({ locale }: IHero) => {
     customer: false,
     otherInfoSource: false,
     comment: "",
+    spam: false,
     type: "",
   };
 
@@ -113,6 +116,8 @@ const Hero = ({ locale }: IHero) => {
         infoSource: getSelectedNames(partnerInfoSource),
         comment: formData.comment,
         from,
+        spam: formData.spam,
+        locale: router.locale === "en" ? "" : router.locale
       }),
     }).then((res) => res.json());
   };
