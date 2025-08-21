@@ -9,10 +9,12 @@ import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
+import { useRouter } from "next/router";
 
 const Hero = () => {
   const { t: t1 } = useTranslation("collaborate-on-word-documents");
   const { t: t2 } = useTranslation("Editors");
+  const { locale } = useRouter();
 
   return (
     <StyledHero
@@ -22,7 +24,7 @@ const Hero = () => {
       mobileSpacing={["96px", "54px"]}
     >
       <Container>
-        <StyledHeroWrapper>
+        <StyledHeroWrapper $locale={locale}>
           <Heading level={1} color="#ffffff" label={t1("Header")} />
           <Text size={1} label={t1("SubHeader")} />
           <StyledHeroButtons>

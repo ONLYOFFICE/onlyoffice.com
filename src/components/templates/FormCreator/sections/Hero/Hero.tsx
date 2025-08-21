@@ -2,7 +2,6 @@ import { useTranslation, Trans } from "next-i18next";
 import {
   StyledHero,
   StyledHeroWrapper,
-  StyledHeroImg,
   StyledHeroVideo,
   StyledHeroInput,
 } from "./Hero.styled";
@@ -35,7 +34,7 @@ const Hero = () => {
       mobileSpacing={["96px", "48px"]}
     >
       <Container>
-        <StyledHeroWrapper>
+        <StyledHeroWrapper $hasMedia={locale !== "ru"}>
           <Heading level={1}>
             <Trans
               t={t}
@@ -69,23 +68,29 @@ const Hero = () => {
             </StyledHeroInput>
           )}
         </StyledHeroWrapper>
-
-        {locale === "zh" ? (
-          <StyledHeroImg
-            $imgUrl="/images/templates/form-creator/hero/zh/hero.png"
-            $imgUrl2x="/images/templates/form-creator/hero/zh/hero@2x.png"
-          />
-        ) : (
+        {locale !== "ru" && (
           <StyledHeroVideo>
-            <iframe
-              width="100%"
-              height="auto"
-              src="https://www.youtube.com/embed/nxTIJmsg9iM?autoplay=1&mute=1"
-              title="YouTube"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
+            {locale === "zh" ? (
+              <iframe
+                src="https://player.bilibili.com/player.html?bvid=BV1ZFKHzWE5g&autoplay=1&muted=1&high_quality=1"
+                title="Bilibili"
+                frameBorder="0"
+                allow="autoplay; encrypted-media; fullscreen"
+                allowFullScreen
+                style={{ width: "100%", aspectRatio: "16 / 9" }}
+              />
+            ) : (
+              <iframe
+                width="100%"
+                height="auto"
+                src="https://www.youtube.com/embed/rH1sMMwtyPE?si=5W4XWOJD9KAc71VZ&autoplay=1&mute=1"
+                title="YouTube"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                style={{ width: "100%", aspectRatio: "16 / 9" }}
+              />
+            )}
           </StyledHeroVideo>
         )}
       </Container>

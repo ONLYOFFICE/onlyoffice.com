@@ -1,0 +1,100 @@
+{
+    "PageTitle":  "Online-Office für ownCloud",
+    "PageDescription":  "Arbeiten Sie gemeinsam an Dokumenten in ownCloud mit ONLYOFFICE Docs, einer Office-Suite des offiziellen Technologiepartners von ownCloud",
+    "OnlineOfficeForOwnCloud":  "Online-Office für ownCloud",
+    "CollaborateOnDocuments":  "Arbeiten Sie gemeinsam an Dokumenten in ownCloud mit ONLYOFFICE Docs, einer Office-Suite des offiziellen Technologiepartners von ownCloud",
+
+    "GetItNow":  "Jetzt erhalten",
+    "RequestFreeDemo":  "Kostenlose Demo anfordern",
+    "HeroImgUrl":  "/images/templates/office-for-owncloud/hero/de/hero.png",
+    "HeroImgUrl2x":  "/images/templates/office-for-owncloud/hero/de/hero@2x.png",
+    "EditAndCoAuthorOfficeDocuments":  "Office-Dokumente in ownCloud / ownCloud Web erstellen und gemeinsam bearbeiten ",
+
+    "DocumentsTab1Label":  "Erstellen und bearbeiten Sie Textdokumente, Tabellenkalkulationen und Präsentationen.",
+
+    "DocumentsTab1ImgUrl":  "/images/templates/office-for-owncloud/documents/de/documents-1.png",
+    "DocumentsTab1ImgUrl2x":  "/images/templates/office-for-owncloud/documents/de/documents-1@2x.png",
+    "DocumentsTab2Label":  "PDF-Formulare erstellen, bearbeiten und ausfüllen.",
+
+    "DocumentsTab2ImgUrl":  "/images/templates/office-for-owncloud/documents/de/documents-2.png",
+    "DocumentsTab2ImgUrl2x":  "/images/templates/office-for-owncloud/documents/de/documents-2@2x.png",
+    "DocumentsTab3Label":  "PDF-Dateien mit Anmerkungen und Kommentaren versehen, Text hervorheben, unterstreichen und durchstreichen, Objekte hinzufügen.",
+
+    "DocumentsTab3ImgUrl":  "/images/templates/office-for-owncloud/documents/de/documents-3.png",
+    "DocumentsTab3ImgUrl2x":  "/images/templates/office-for-owncloud/documents/de/documents-3@2x.png",
+    "DocumentsTab4Label":  "Konvertieren Sie Nicht-OOXML-Dokumente in OOXML-Formate.",
+
+    "DocumentsTab4ImgUrl":  "/images/templates/office-for-owncloud/documents/de/documents-4.png",
+    "DocumentsTab4ImgUrl2x":  "/images/templates/office-for-owncloud/documents/de/documents-4@2x.png",
+    "DocumentsTab5Label":  "Freigabe von Dateien mit unterschiedlichen Zugriffsrechten: Anzeigen/Bearbeiten, Kommentieren, Überprüfen und Ausfüllen von Formularen.",
+
+    "DocumentsTab5ImgUrl":  "/images/templates/office-for-owncloud/documents/de/documents-5.png",
+    "DocumentsTab5ImgUrl2x":  "/images/templates/office-for-owncloud/documents/de/documents-5@2x.png",
+    "DocumentsTab6Label":  "Zusammenarbeit an Dokumenten in Echtzeit, Verfolgen von Änderungen, Hinterlassen von Kommentaren und Chatten. Kombinieren Sie mehrere Dokumente in einer einzigen Datei. Frühere Versionen von Dokumenten wiederherstellen.",
+
+    "DocumentsTab6ImgUrl":  "/images/templates/office-for-owncloud/documents/de/documents-6.png",
+    "DocumentsTab6ImgUrl2x":  "/images/templates/office-for-owncloud/documents/de/documents-6@2x.png",
+    "DocumentsTab7Label":  "Schützen Sie Dokumente mit Passwörtern und Wasserzeichen. Kopieren von vertraulichen Daten einschränken.",
+
+    "DocumentsTab7ImgUrl":  "/images/templates/office-for-owncloud/documents/de/documents-7.png",
+    "DocumentsTab7ImgUrl2x":  "/images/templates/office-for-owncloud/documents/de/documents-7@2x.png",
+    "FreeAppsHeading":  "Greifen Sie auf Ihre in ownCloud gespeicherten Dokumente zu und bearbeiten Sie sie mit <0>kostenlosen Desktop- und Mobil-Apps</0>",
+
+    "FreeAppsDesktopText":  "Bearbeiten Sie Ihre ownCloud-Dateien gemeinsam in der Desktop-Umgebung mit <0>ONLYOFFICE Desktop Editoren</0> unter Windows, Linux oder macOS",
+
+    "FreeAppsMobileText":  "Lesen und bearbeiten Sie Ihre ownCloud-Dokumente, Tabellen und Folien mit den mobilen ONLYOFFICE Documents-Apps",
+
+    "GetFreeDesktopApps":  "Kostenlose Desktop-Apps erhalten",
+
+    "MarketplaceConnectorTitle":  "Entwickelt für die nahtlose Integration mit ownCloud",
+
+    "MarketplaceConnectorDescription":  "Erhalten Sie die ONLYOFFICE-App für ownCloud jetzt auf dem ownCloud Marketplace.",
+
+    "WhyOO":  "Warum ONLYOFFICE?",
+
+    "FeaturesFormats":  "Unterstützung von mehr als <0>50 Dateiformaten</0>, vollständig kompatibel mit MS Office-Formaten: DOCX, XLSX, PPTX.",
+
+    "FeaturesCoEditing":  "<0>Gemeinsame Bearbeitung</0> in Echtzeit und mit Sperren von Absätzen, Überprüfung, Versionsverlauf, Dokumentvergleich, Kommentare und Chat. Audio- und Videoanrufe.",
+
+    "FeaturesAIHelper":  "Ein robuster Satz an Bearbeitungs-, Formatierungs- und Styling-Tools. Integrierter <0>KI-Helfer</0>.",
+
+    "FeaturesSecurity":  "<0>Verbesserte Sicherheit</0>. Flexible Zugriffsrechte und JWT. Verschlüsselung während der Übertragung. Wasserzeichen und Passwortschutz. Offener Quellcode.",
+
+    "FeaturesConfiguration":  "<0>Einfache Konfiguration</0> über das ownCloud-Administrationsbereich. Nahtlose Integration mit der gebrauchsfertigen App, die im ownCloud Marketplace verfügbar ist.",
+
+    "FeaturesFree":  "<0>Kostenlose Community-Version</0> und skalierbare Enterprise Edition. <0>Kostenlose 30-Tage-Testversion</0>. Selbstgehostete Lösung und Cloud-Version.",
+
+    "FeaturesPermissions":  "<0>Erweiterte Freigabeberechtigungen</0>. Öffentliche Freigabe. Federated Cloud Sharing.",
+
+    "FeaturesCustomization":  "<0>Anpassung</0> der Editoroberfläche, Möglichkeit, einige Registerkarten anzuzeigen oder auszublenden.",
+
+    "FeaturesSupport":  "Unterstützung für <0>ownCloud Web</0>.",
+    "GetStarted":  "Los geht's!",
+
+    "HowToStart":  "Wie Sie anfangen",
+
+    "HowToStartStep1":  "Stellen Sie ONLYOFFICE Docs auf Ihrem eigenen Server bereit oder melden Sie sich für ONLYOFFICE Docs Cloud an.",
+
+    "HowToStartStep2":  "Erhalten Sie die Integrations-App vom <0>ownCloud Marketplace</0>.",
+
+    "HowToStartStep3":  "Konfiguration der ONLYOFFICE-Integrations-App für ownCloud",
+
+    "HowToStartStep3ImgUrl":  "/images/templates/office-for-owncloud/how-to-start/de/step-3.svg",
+    "HowToConnect":  "Schauen Sie sich unser Video an",
+
+    "ReadDetailedInstructions":  "Lesen Sie ausführliche Anweisungen im <0>Hilfecenter</0>.",
+
+    "PartnerHeading":  "Sind Sie ein ownCloud-Partner? Wie wäre es, Ihre ownCloud-Nutzererfahrung zu verbessern und Ihren Umsatz zu steigern?",
+
+    "PartnerText":  "Treten Sie dem ONLYOFFICE-Partnerprogramm bei.",
+
+    "HowCzechTVReplaced":  "Wie das tschechische Fernsehen Google Docs und MS Office durch ONLYOFFICE und ownCloud ersetzte",
+
+    "HowOOandOwnCloudIntegration":  "Wie die Integration von ONLYOFFICE und ownCloud in Sciebo den Forschungsworkflow an der Universität Münster erleichtert",
+
+    "HowSWITCHIntegrated":  "Wie SWITCH ONLYOFFICE in SWITCHdrive integrierte, um eine vollständige Alternative zu Office 365 zu schaffen",
+
+    "ReadTheFullStory":  "Die ganze Geschichte lesen",
+
+    "NeedAnAppToConnect":  "Benötigen Sie eine App, um ONLYOFFICE mit Ihren Lieblings-Webdiensten zu verbinden? Oder haben Sie eine neue entwickelt?"
+}

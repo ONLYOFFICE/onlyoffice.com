@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Anpassbaren Diagramme und AutoFormen in Word einfügen",
+  "PageDescription": "Fügen Sie Autoformen, Diagramme, Tabellen und Bilder zu Word-Dokumenten mit ONLYOFFICE hinzu. Wählen Sie aus mehreren Stilen und passen Sie ihr Aussehen an.",
+
+  "Header": "Erstellen Sie makellose Texte",
+  "SubHeader": "Fügen Sie komplexe Objekte hinzu und bearbeiten Sie diese, um informative und gutaussehende Texte zu erstellen",
+
+  "HeroImgUrl": "/images/templates/customizable-charts-and-autoshapes/hero/de/hero.png",
+  "HeroImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/hero/de/hero@2x.png",
+
+  "Feature1Title": "Texte strukturieren und formatieren",
+  "Feature1Desc": "Ändern Sie Schriftarten und Stile. Strukturieren und Formatieren Sie Absätze, passen Sie Ränder, Umbrüche, Seitenausrichtung, Spalten und andere Elemente des Layouts an.",
+
+  "Feature2Title": "Komplexe Objekte erstellen",
+  "Feature2Desc": "Fügen Sie AutoFormen zu Textdokumenten hinzu: Wählen Sie zwischen mehreren anpassbaren Stilen. Fügen Sie anpassbare Diagramme, Bilder, Tabellen und OLE-Tabellenblätter ein. Verwenden Sie den Gleichungseditor, um Formeln im Unicode- und LaTeX-Format einzufügen, damit Sie mathematische Zusammenhänge veranschaulichen können. Fügen Sie Textfelder und TextArt, so wie auch SmartArt-Elemente ein, um eine visuelle Darstellung Ihrer Ideen zu schaffen.",
+
+  "Feature3Title": "Akademische Formatierung anwenden",
+  "Feature3Desc": "Erstellen Sie Inhalts- und Abbildungsverzeichnisse, um Dokumente und Bücher zu strukturieren. Ergänzen und systematisieren Sie Beschriftungen für jedes Objekt. Fügen Sie Fußnoten, Endnoten, Querverweise, Lesezeichen und Hyperlinks hinzu. Erstellen Sie Bibliographien mit Mendeley und Zotero.",
+
+  "Feature4Title": "Plugins benutzen",
+  "Feature4Desc": "Fügen Sie YouTube-Videos ein und spielen Sie diese ab. Bearbeiten Sie Bilder im Foto-Editor gerade in Ihren Dokumenten. Formatieren Sie den Code in einer beliebigen Programmiersprache mit dem Plugin Code hervorheben.",
+
+  "Feature1ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/de/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/de/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/de/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/de/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/de/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/de/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/de/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/de/pic4@2x.png"
+}

@@ -1,0 +1,52 @@
+{
+  "PageTitle": "公共房间 | ONLYOFFICE",
+  "PageDescription": "在公共房间中与外部用户共享文件 ",
+
+  "SimplifyFileSharingWithExternalUsers": "在\u003c0\u003e公共房间\u003c/0\u003e中与外部用户共享文件",
+  "EasilyInteractWithThirdParties": "在 ONLYOFFICE 协作空间中与第三方轻松合作",
+  "IdealForPublicSharing": "适合公开分享文件",
+  "AbsolutelySafe": "安全保护办公文档",
+  "EasyToStore": "轻松储存在您需要的地方",
+  "SeamlesslyEmbeddable": "可无缝嵌入其他平台",
+  "CostEffectiveForAnyBudget": "适合各种预算的高性价比方案",
+  "CreateFreeAccount": "创建免费账户",
+
+  "HeroImgUrl": "/images/templates/public-rooms/hero/zh/public-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/public-rooms/hero/zh/public-rooms-header@2x.png",
+
+  "HeroImgUrlVideo": "/images/templates/public-rooms/hero/zh/public-rooms-video.png",
+  "HeroImgUrlVideo2x": "/images/templates/public-rooms/hero/zh/public-rooms-video@2x.png",
+
+  "PublicSharingDesc": "对于无法直接访问您的协作空间的用户（例如合作伙伴、赞助商、分包商等），可通过外部链接邀请他们，无需注册即可查看、编辑、审阅和批注文件。",
+  "PublicSharingImgUrl": "/images/templates/public-rooms/features/zh/ideal-for-public-sharing.png",
+  "PublicSharingImgUrl2x": "/images/templates/public-rooms/features/zh/ideal-for-public-sharing@2x.png",
+
+  "AbsolutelySafeDesc": "为了获得额外的保护，请设置密码并对链接进行时间限制、限制文件内容的复制、文件下载和打印。",
+  "AbsolutelySafeImgUrl": "/images/templates/public-rooms/features/zh/absolutely-safe.png",
+  "AbsolutelySafeImgUrl2x": "/images/templates/public-rooms/features/zh/absolutely-safe@2x.png",
+
+  "EasyToStoreDesc": "使用第三方服务进行公共房间的数据储存：Google Drive、One Drive、Box、Dropbox、kDrive、Nextcloud、ownCloud 以及其他通过 WebDAV 协议运行的服务。",
+  "EasyToStoreImgUrl": "/images/templates/public-rooms/features/zh/easy-to-store-where-you-want.png",
+  "EasyToStoreImgUrl2x": "/images/templates/public-rooms/features/zh/easy-to-store-where-you-want@2x.png",
+
+  "SeamlesslyEmbeddableDesc": "轻松将公共房间集成到任何 Web 界面中。这样，您的网站或服务的用户能够直接从网络前端访问房间中的文件。",
+  "SeamlesslyEmbeddableImgUrl": "/images/templates/public-rooms/features/zh/seamlessly-embeddable.png",
+  "SeamlesslyEmbeddableImgUrl2x": "/images/templates/public-rooms/features/zh/seamlessly-embeddable@2x.png",
+
+  "CostEffectiveDesc": "只需为管理员付费，可免费添加任意数量的普通用户和访客。小型团队可使用免费的初创版本。无论是中小型还是大型企业，ONLYOFFICE 协作空间都很适合。还可以在您的私人服务器上部署 协作空间，完全掌控自己的公司数据。",
+  "CostEffectiveImgUrl": "/images/templates/public-rooms/features/zh/cost-effective-for-any-budget.png",
+  "CostEffectiveImgUrl2x": "/images/templates/public-rooms/features/zh/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "了解更多有关公共房间的信息",
+  "Blog": "博客",
+  "BlogDesc": "如何将公共房间嵌入您的网站",
+  "LearnMore": "了解详情",
+  "BlogLink": "https://www.onlyoffice.com/blog/zh-hans/2023/12/embed-public-docspace-room-to-website",
+  "YouTube": "视频教程",
+  "MasterONLYOFFICEDocSpace": "通过视频指南掌握 ONLYOFFICE 协作空间",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "立即观看",
+  "Tutorial": "教程",
+  "TutorialDesc": "如何将协作空间集成至单页面应用程序中",
+  "HelpCenterLink": "https://www.onlyoffice.com/blog/zh-hans/2024/05/integrating-onlyoffice-docspace-into-a-single-page-application"
+}

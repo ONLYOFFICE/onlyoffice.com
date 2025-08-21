@@ -1,6 +1,6 @@
-import { IRoomsHero } from "@src/components/modules/rooms/RoomsHero";
+import { IRoomsHeroVideo } from "@src/components/modules/rooms/RoomsHeroVideo";
 
-export const hero: IRoomsHero = {
+export const hero: IRoomsHeroVideo = {
   heading: "SimplifyFileSharingWithExternalUsers",
   text: "EasilyInteractWithThirdParties",
   items: [
@@ -18,5 +18,10 @@ export const hero: IRoomsHero = {
   image: {
     url: "HeroImgUrl",
     url2x: "HeroImgUrl2x",
+  },
+  videoUrl: "https://www.youtube.com/watch?v=MMNt87qcXw0",
+  imageVideo: {
+    url: "HeroImgUrlVideo",
+    url2x: "HeroImgUrlVideo2x",
   },
 };
