@@ -424,9 +424,9 @@ const PartnershipRequestForm = ({
           placeholder="name@domain.com"
           caption={
             formData.email.length === 0
-              ? t2("EmailIsEmpty")
+              ? t("EmailIsEmpty")
               : !validateEmail(formData.email)
-                ? t2("EmailIsIncorrect")
+                ? t("EmailIsIncorrect")
                 : ""
           }
           required
@@ -482,9 +482,9 @@ const PartnershipRequestForm = ({
             }));
           }}
           value={formData.companyName}
-          label={t2("CompanyName")}
-          placeholder={t2("CompanyName")}
-          caption={t2("CompanyNameIsEmpty")}
+          label={t("CompanyName")}
+          placeholder={t("CompanyName")}
+          caption={t("CompanyNameIsEmpty")}
           required
           status={
             isEmpty.companyName
@@ -519,7 +519,7 @@ const PartnershipRequestForm = ({
             formData.website.length === 0
               ? t("WebsiteIsEmpty")
               : !validateWebsite(formData.website)
-                ? t2("WebsiteIsIncorrect")
+                ? t("WebsiteIsIncorrect")
                 : ""
           }
           required
@@ -568,7 +568,7 @@ const PartnershipRequestForm = ({
         <StyledPRFHeading
           level={4}
           size={5}
-          label={t("PartneshipInfo")}
+          label={t("PartnershipInfo")}
           textAlign="center"
         />
 

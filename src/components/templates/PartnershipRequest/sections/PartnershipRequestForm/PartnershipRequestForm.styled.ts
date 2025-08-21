@@ -65,6 +65,7 @@ const StyledChecboxesWrapper = styled.div`
   background-color: #F5F5F5;
   float: left;
   padding: 24px;
+  width: 100%;
 
   label {
     display: inline-flex;
