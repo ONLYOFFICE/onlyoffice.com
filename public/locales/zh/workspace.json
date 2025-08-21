@@ -80,5 +80,8 @@
 
   "CommunityFooterText": "可在<0>此处</0>下载适合家庭使用的社区版本。",
 
+  "OOWorkspace": "欢迎来到ONLYOFFICE--安全编辑与协作的软件",
+  "OOWorkspaceMobile": "欢迎来到ONLYOFFICE",
+  "OOWorkspaceText": "观看我们的视频",
   "VideoImageUrl": "/images/templates/workspace/video/zh/workspace.svg"
 }
