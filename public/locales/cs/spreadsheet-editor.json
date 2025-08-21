@@ -1,0 +1,38 @@
+{
+  "PageTitle": "Nejlepší online tabulkový editor | ONLYOFFICE",
+  "PageDescription": "Nejlepší online software pro práci s tabulkama. Otevírejte, upravujte a spolupracujte v souborech aplikace Excel online: xls, xlsx, csv, ods.",
+
+  "Header": "Leistungsstarker Online-Tabelleneditor für Ihre Web-App",
+  "SubHeader": "Práce s dokumenty aplikace Excel online",
+
+  "Feature1Title": "Čísla nech pracují pro vás",
+  "Feature1Desc": "Snadné a automatizované výpočty online, organizujte a analyzujte data pomocí editoru tabulkového procesoru ONLYOFFICE. Otevřete a upravte soubory .xlsx, .xls, .ods a .csv a uložte tabulky jako PDF.",
+  "Feature2Title": "Proveďte přesné výpočty s minimálním úsilím",
+  "Feature2Desc": "Dosáhněte rychlých a přesných výsledků výběrem z více než 400 dostupných funkcí a vzorců a použitím speciálních syntaktických tipů. Použijte šablony tabulky, použijte pojmenované rozsahy, třiďte a filtrujte data, abyste zjednodušili práci s tabulkami. Rychle najděte potřebný obsah a nahradit ho novým kliknutím.",
+  "Feature3Title": "Snadná analýza dat",
+  "Feature3Desc": "Analyzujte data a hledejte vzorce pomocí kontingenčních tabulek a podmíněného formátování. Přidáním průřezů do formátovaných tabulek můžete rychle filtrovat data nebo označit aktuální stav filtrování a zjistit, která data se zobrazují. Odstraňte duplicitní hodnoty a řádky, aby byly výpočty přesnější.",
+  "Feature4Title": "Své údaje zobrazte vizuálně",
+  "Feature4Desc": "Přidejte grafy, prskavky a grafiku. Vkládejte rovnice, tvary a obrázky a pro prezentaci a vizualizaci dat používejte prvky Text Art, grafické prvky SmartArt nebo videa z YouTube. Vytvářejte vlastní kresby od ruky pomocí pera nebo zvýrazňovače.",
+  "Feature5Title": "Přinášejte společné týmové úsilí",
+  "Feature5Desc": "Spolupracujte se svým týmem na obchodních výkazech a evidenci zásob. Získejte přístup, sdílejte tabulky nebo dokonce odkazy na konkrétní rozsahy, upravujte je v reálném čase, zanechávejte komentáře v buňkách a chatujte se spolupracovníky online bez opuštění editoru. Umožněte ostatním uživatelům používat vlastní filtry při úpravách tabulky, aniž byste rušili spoluautory. Procházejte historii verzí a obnovte jakoukoli předchozí verzi souboru.",
+  "Feature6Title": "Chraňte své tabulky",
+  "Feature6Desc": "Nastavte heslo pro celý tabulkový procesor, sešit nebo samostatný list. Skryjte vzorce, aby zůstaly soukromé. Zamkněte buňky, tvary a text. Povolit úpravy datových rozsahů pouze pro určené uživatele.",
+  "Feature7Title": "Automatizujte úkoly pomocí makra",
+  "Feature7Desc": "Usnadněte si práci s tabulkami. Vytvořte si vlastní makra pomocí syntaxe jazyka JavaScript, upravujte a ukládejte je a automatizujte běžné a opakující se úkoly. Zajistěte nebo naopak omezte automatické spouštění maker.",
+  "Feature8Title": "Použijte pomocníka AI",
+  "Feature8Desc": "Provádějte úlohy, které zahrnují porozumění nebo generování přirozeného jazyka pomocí zásuvného modulu ChatGPT. Získejte přesné odpovědi na své otázky, rychle vyhledávejte informace, generujte texty, nechte si sestavit kód atd. přímo v editoru.",
+  "Feature9Title": "Dokončete ještě více s doplňky",
+  "Feature9Desc": "Rozšiřte možnosti úprav tabulek s doplňky. Vložte speciální symboly, získejte rychlý překlad libovolného textu a další.",
+
+  "LearnMoreHeading": "Další informace o editoru tabulek ONLYOFFICE",
+  "BlogDesc": "Vše o náhledu tisku v listech aplikace Excel",
+  "TutorialsDesc": "Společná úprava tabulek v reálném čase",
+  "HintsDesc": "Podporované formáty tabulkových procesorů",
+
+  "Q1": "Mohu upravovat tabulky bez připojení k internetu?",
+  "A1": "Ano, můžete si nainstalovat a používat bezplatný desktopový editor <0>ONLYOFFICE Desktop Editors</0> a upravovat lokální tabulky v režimu offline.",
+  "Q2": "Nabízí ONLYOFFICE nativní mobilní aplikace pro úpravu tabulek ?",
+  "A2": "Ano, můžete si nainstalovat bezplatnou aplikaci <0>Dokumenty</0> pro zařízení se systémem iOS nebo Android a pracovat s tabulkami na cestách.",
+  "Q3": "Je možné používat editor tabulek ONLYOFFICE v rámci mé aplikace pod mou značkou ?",
+  "A3": "Ano, editor tabulek můžete integrovat do své aplikace. Použijte prosím aplikaci <0>ONLYOFFICE Docs Developer</0>."
+}

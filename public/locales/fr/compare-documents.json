@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Comparer deux documents Word en ligne",
+  "PageDescription": "Comparer deux documents avec ONLYOFFICE. Sélectionner un document depuis votre ordinateur, stockage cloud ou URL pour voir les différences avec un fichier existant.",
+
+  "Header": "Comparez les documents",
+  "SubHeader": "Trouvez les différences, corrigez et finalisez le texte grâce à l’outil Comparaison des documents",
+
+  "HeroImgUrl": "/images/templates/compare-documents/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/compare-documents/hero/fr/hero@2x.png",
+
+  "Feature1Title": "Comparez deux documents",
+  "Feature1Desc": "Sélectionnez un document stocké sur votre ordinateur, stockage cloud, ou son adresse URL et identifiez les différences par comparaison avec un fichier original.",
+
+  "Feature2Title": "Naviguez entre les modifications surlignées",
+  "Feature2Desc": "La comparaison des documents vous permet de comparer deux documents Word et surligner les différences en mode Suivi des modifications activé. Affichez-les pour voir toutes les corrections apportées au document en les acceptant ou rejetant.",
+
+  "Feature3Title": "Fusionner les versions du fichier",
+  "Feature3Desc": "Acceptez ou rejetez les modifications une par une ou en vrac, fusionnez les documents et finalisez la version du fichier comparé.",
+
+  "Feature4Title": "Affichez l’historique des versions",
+  "Feature4Desc": "Comparez la version du fichier actuelle avec les versions précédentes, restaurez le document à partir de n’importe quel point de son historique et récupérez les contenus perdus. Affichez les dates, le temps et les auteurs des révisions d’un document.",
+
+  "Feature5Title": "Combinez des documents",
+  "Feature5Desc": "La combinaison de documents est similaire à la comparaison. Cependant, lorsque vous combinez deux documents, les modifications initiales non résolues et suivies après la révision d'une personne resteront dans le fichier fusionné, et vous pourrez les accepter ou les rejeter si nécessaire.",
+
+  "Feature1ImgUrl": "/images/templates/compare-documents/features/fr/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/compare-documents/features/fr/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/compare-documents/features/fr/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/compare-documents/features/fr/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/compare-documents/features/fr/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/compare-documents/features/fr/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/compare-documents/features/fr/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/compare-documents/features/fr/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/compare-documents/features/fr/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/compare-documents/features/fr/pic5@2x.png"
+}

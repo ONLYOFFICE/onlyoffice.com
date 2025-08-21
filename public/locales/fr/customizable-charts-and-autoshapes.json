@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Graphique personnalisé et forme automatique Word",
+  "PageDescription": "Ajouter les formes aux documents Word avec ONLYOFFICE : sélectionner le style et ajuster l'apparence. Insérer les graphiques, les tableaux et les images personnalisés.",
+
+  "Header": "Créez des documents impressionnants",
+  "SubHeader": "Ajoutez et éditez des objets complexes pour créer des textes informatifs et captivants",
+
+  "HeroImgUrl": "/images/templates/customizable-charts-and-autoshapes/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/hero/fr/hero@2x.png",
+
+  "Feature1Title": "Structurez et formates vos textes",
+  "Feature1Desc": "Personnalisez les polices, les styles et les préréglages de la mise en forme. Structurez et formatez les paragraphes, ajustez les marges, l’orientation d’une page, les colonnes et d’autres éléments visuels.",
+
+  "Feature2Title": "Créez des objets complexes",
+  "Feature2Desc": "Ajoutez les figures aux documents word : sélectionnez entre plusieurs styles et ajustez leur aspect. Insérez des graphiques, des images, des tableaux et des feuilles de calcul OLE personnalisables. Utilisez l'éditeur d'équations pour insérer des formules au format Unicode et LaTeX afin d'illustrer les mathématiques. Ajoutez des zones de texte et Text Art. Insérez des éléments SmartArt pour créer une représentation visuelle de vos idées.",
+
+  "Feature3Title": "Appliquez la mise en forme académique",
+  "Feature3Desc": "Créez les tables des matières et des illustrations pour structurer les articles et les livres. Insérez et systématisez les légendes pour chaque objet. Ajoutez les pieds de page, les notes de fin, les renvois, les signets et les liens. Créez les références bibliographiques avec Mendeley, Zotero.",
+
+  "Feature4Title": "Faites même plus avec les modules complémentaires",
+  "Feature4Desc": "Insérez les vidéos à partir de YouTube. Modifiez les images avec Photo Editor directement dans les documents. Modifiez le code écrit en tout langage de programmation avec l’outil « Code en surbrillance »",
+
+  "Feature1ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/fr/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/fr/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/fr/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/fr/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/fr/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/fr/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/fr/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/fr/pic4@2x.png"
+}

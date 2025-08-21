@@ -1,0 +1,36 @@
+{
+  "PageTitle": "基于Web的电子表格编辑软件：创建、打开、编辑和共享表格 | ONLYOFFICE",
+  "PageDescription": "在线打开MS Excel或Google Sheets文件。创建安全的电子表格、使用公式和可视化数据、共享并与多用户协作编辑。",
+
+  "Header": "可视化呈现数据",
+  "SubHeader": "通过图表、图形、图像以及形状来呈现数据",
+
+  "HeroImgUrl": "/images/templates/charts-and-graphs/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/charts-and-graphs/hero/zh/hero@2x.png",
+
+  "Feature1Title": "添加电子表格图表与图形",
+  "Feature1Desc": "从多种样式和类型中进行选择来展示您的数据。使用图表数据管理器轻松调整：管理数据范围、图例以及单元格对齐，还可改变坐标轴与布局。",
+
+  "Feature2Title": "自定义您的图表外观",
+  "Feature2Desc": "设计每个元素，制作独一无二的电子表格图形与图表。应用颜色、渐变以及边框。在您的图示上移动并准确放置视觉元素。定位、布局并调整尺寸，使其与您的工作表匹配。",
+
+  "Feature3Title": "插入形状、图像、视频、Text Art、以及 SmartArt 图形",
+  "Feature3Desc": "在您的电子表格插入任意对象，为您的调查结果提供更好支撑。添加并编辑图片，创建并自定义设置自选图形，使用艺术字制作标题。插入 SmartArt 元素，创建有关信息和想法的视觉化呈现方式。在项目符号列表中使用自定义图像作为项目符号。在电子表格中插入 YouTube 视频并播放。",
+
+  "Feature4Title": "借助迷你图展示行列",
+  "Feature4Desc": "创建小型电子表格图形展示表格行或列中的趋势。自定义其位置和外观。从一系列迷你图类型与样式中选择。",
+
+  "Feature5Title": "应用模板与条件格式",
+  "Feature5Desc": "从多个样式模板中选择，直观地组织和润色电子表格。借助条件格式查看工作表，浏览数据类型，发现问题并识别趋势。",
+
+  "Feature1ImgUrl": "/images/templates/charts-and-graphs/features/zh/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/charts-and-graphs/features/zh/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/charts-and-graphs/features/zh/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/charts-and-graphs/features/zh/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/charts-and-graphs/features/zh/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/charts-and-graphs/features/zh/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/charts-and-graphs/features/zh/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/charts-and-graphs/features/zh/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/charts-and-graphs/features/zh/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/charts-and-graphs/features/zh/pic5@2x.png"
+}
