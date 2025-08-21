@@ -1,0 +1,17 @@
+{
+  "FullName": "Celé jméno",
+  "FullNameIsIncorrect": "Nesprávný pole pro celé jméno",
+  "NameSurname": "Celé jméno",
+  "FullNameIsEmpty": "Pole pro celé jméno je prázdné",
+  "Email": "E-mail",
+  "EmailIsEmpty": "Pole pro e-mail je prázdné",
+  "EmailIsIncorrect": "Nesprávný e-mail",
+  "CompanyName": "Název firmy",
+  "CompanyNameIsEmpty": "Pole pro název firmy je prázdné",
+  "CompanyWebsite": "Webová stránka",
+  "WebsiteIsIncorrect": "Website is incorrect",
+  "Comment": "Zanechat komentář",
+  "GetItNow": "Pořídit hned teď",
+  "successfullyRequestText": "Vaše žádost byla úspěšně odeslána",
+  "errorRequestText": "Je nám líto, ale došlo k chybě, zkuste to znovu později"
+}
