@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Graphiques dans un tableur en ligne",
+  "PageDescription": "Donner un style unique aux éléments des graphiques et diagrammes à ONLYOFFICE. Utiliser le gestionnaire des graphiques pour apporter les ajuster facilement.",
+
+  "Header": "Illustrez les données avec des visuels",
+  "SubHeader": "Faites parler les chiffres avec des tableaux, des graphiques, des images et des formes",
+
+  "HeroImgUrl": "/images/templates/charts-and-graphs/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/charts-and-graphs/hero/fr/hero@2x.png",
+
+  "Feature1Title": "Ajoutez des diagrammes et des graphiques de feuilles de calcul",
+  "Feature1Desc": "Faites votre choix parmi plusieurs styles et typographies pour illustrer vos données. Utilisez le gestionnaire de données des graphiques pour effectuer des ajustements faciles : gérez la plage de données, les légendes et l'accrochage des cellules, modifiez les axes et les mises en page.",
+
+  "Feature2Title": "Personnalisez l'apparence de votre graphique",
+  "Feature2Desc": "Donnez à vos graphiques et diagrammes de feuilles de calcul un aspect unique en concevant chaque élément. Appliquez des couleurs, des dégradés et des bordures, et placez avec précision les éléments visuels sur vos illustrations. Positionnez, enroulez et redimensionnez pour adapter votre feuille de calcul.",
+
+  "Feature3Title": "Ajoutez des formes, des images, des vidéos, du Text Art et du SmartArt",
+  "Feature3Desc": "Insérez tout objet dans votre feuille de calcul pour étayer vos conclusions. Ajoutez et modifiez des images et des photos, créez et personnalisez des formes automatiques et utilisez Text Art pour appliquer des titres. Insérez des éléments SmartArt pour créer une représentation visuelle de vos informations. Utilisez des images personnalisées comme puces dans les listes à puces. Insérez des vidéos YouTube et lisez-les sur la feuille de calcul.",
+
+  "Feature4Title": "Mettez en évidence les lignes et les colonnes avec des lignes de tendances",
+  "Feature4Desc": "Créez des graphiques miniatures de feuilles de calcul pour afficher les tendances des lignes ou des colonnes de votre tableau. Personnalisez leur position et leur apparence. Choisissez parmi une sélection de types et de styles de lignes de tendances.",
+
+  "Feature5Title": "Appliquez des modèles et la mise en forme conditionnelle",
+  "Feature5Desc": "Faites votre choix parmi plusieurs modèles de style pour organiser et peaufiner visuellement vos feuilles de calcul. Visualisez les feuilles avec une mise en forme conditionnelle pour parcourir les types de données, repérer les problèmes et identifier les tendances.",
+
+  "Feature1ImgUrl": "/images/templates/charts-and-graphs/features/fr/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/charts-and-graphs/features/fr/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/charts-and-graphs/features/fr/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/charts-and-graphs/features/fr/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/charts-and-graphs/features/fr/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/charts-and-graphs/features/fr/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/charts-and-graphs/features/fr/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/charts-and-graphs/features/fr/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/charts-and-graphs/features/fr/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/charts-and-graphs/features/fr/pic5@2x.png"
+}

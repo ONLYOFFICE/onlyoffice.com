@@ -28,12 +28,16 @@ const DesktopTemplate = () => {
         image2x="AIImgUrl2x"
         title="AITitle"
         description="AIDescription"
+        linkHref="/ai-assistants"
+        linkText="LearnMore"
       />
       <IntegrationsBlock
         image="CapabilitiesImgUrl"
         image2x="CapabilitiesImgUrl2x"
         title="CapabilitiesTitle"
         description="CapabilitiesDescription"
+        linkHref="http://www.onlyoffice.com/app-directory"
+        linkText="FindPlugins"
       />
 
       <DoEvenMore />

@@ -1,0 +1,26 @@
+{
+  "PageTitle": "Совместная работа над презентациями PowerPoint",
+  "PageDescription": "Редактируйте презентации совместно с коллегами в редакторе ONLYOFFICE. Устанавливайте права доступа, выбирайте удобный режим редактирования в реальном времени.",
+
+  "Header": "Творите вместе",
+  "SubHeader": "Редактируйте презентации совместно с коллегами",
+
+  "HeroImgUrl": "/images/templates/share-powerpoint-presentations/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/share-powerpoint-presentations/hero/ru/hero@2x.png",
+
+  "Feature1Title": "Установите права доступа",
+  "Feature1Desc": "Установите права доступа к презентациям PowerPoint. Получив полный доступ, коллеги смогут редактировать презентацию и делиться ей, права на чтения позволяют просматривать контент, на комментирование — оставлять вопросы и комментарии к слайдам и их элементам.",
+
+  "Feature2Title": "Работайте совместно",
+  "Feature2Desc": "Редактируйте в Быстром режиме, когда вы в реальном времени видите, что печатают коллеги, или перейдите в Строгий режим, чтобы работать над своим фрагментом презентации приватно.",
+
+  "Feature3Title": "Общайтесь",
+  "Feature3Desc": "Общайтесь с командой во встроенном чате. Добавляйте комментарии — можно упомянуть коллег, чтобы привлечь их к обсуждению и быстро получить обратную связь.",
+
+  "Feature1ImgUrl": "/images/templates/share-powerpoint-presentations/features/ru/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/ru/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/share-powerpoint-presentations/features/ru/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/ru/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/share-powerpoint-presentations/features/ru/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/ru/pic3@2x.png"
+}

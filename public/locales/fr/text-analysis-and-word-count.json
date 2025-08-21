@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Correcteur du texte et compteur des mots",
+  "PageDescription": "Compter le nombre des mots, caractères, paragraphes avec ONLYOFFICE Document Editor. Ajuster la taille du texte pour vos documents, visules, newsletters et média.",
+
+  "Header": "Analysez et corrigez le texte",
+  "SubHeader": "Créez les contenus claires, précis et éloquents",
+
+  "HeroImgUrl": "/images/templates/text-analysis-and-word-count/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/text-analysis-and-word-count/hero/fr/hero@2x.png",
+
+  "Feature1Title": "Comptez les mots dans le document",
+  "Feature1Desc": "Affichez le nombre des mots, des caractères et des paragraphes pour optimiser la taille du texte de vos documents, visuels, newsletters et d’autres éléments média.",
+
+  "Feature2Title": "Écrivez dans toutes les langues",
+  "Feature2Desc": "Appliquez plus de 250 paramètres de langue aux documents, paragraphes et mots. Identifiez les erreurs d’orthographe et de typographie avec le vérificateur d’orthographe intégré, LanguageTool ou Grammalecte. Corrigez les mots avec des suggestions intelligentes. Traduisez les documents avec Google Translate, DeepL ou Apertium.",
+
+  "Feature3Title": "Recherchez, remplacez et corrigez automatiquement",
+  "Feature3Desc": "Recherchez et remplacez instantanément des mots dans des fichiers textes volumineux. Activez l’autocorrection automatique des textes, symboles et équations. Utilisez Typograph pour corriger automatiquement l’orthographe et la ponctuation.",
+
+  "Feature4Title": "Trouvez les synonymes et les antonymes",
+  "Feature4Desc": "Trouvez un mot idéal lors de la rédaction grâce à l’outil Thesaurus. Recherchez les synonymes et les antonymes pour rédiger un contenu riche et captivant.",
+
+  "Feature1ImgUrl": "/images/templates/text-analysis-and-word-count/features/fr/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/fr/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/text-analysis-and-word-count/features/fr/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/fr/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/text-analysis-and-word-count/features/fr/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/fr/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/text-analysis-and-word-count/features/fr/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/fr/pic4@2x.png"
+}
