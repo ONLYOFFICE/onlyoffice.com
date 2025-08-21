@@ -28,7 +28,10 @@ const StyledLine2RadiosWrapper = styled.div`
   padding: 16px;
 
   @media ${device.mobile} {
-    row-gap: 8px;
+    column-gap: 22px;
+    margin-left: -16px;
+    margin-right: -16px;
+    width: 100vw;
   }
 `;
 
@@ -50,6 +53,7 @@ const StyledLineRadioLabel = styled.label`
 
   @media ${device.mobile} {
     font-size: 14px;
+    line-height: 24px;
   }
 
   &::before {

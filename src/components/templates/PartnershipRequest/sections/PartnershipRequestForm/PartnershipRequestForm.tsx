@@ -82,6 +82,7 @@ const PartnershipRequestForm = ({
     useState<ILoaderButton["status"]>("default");
   const [token, setToken] = useState("");
   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
+  const [hCaptchaSize, setHCaptchaSize] = useState<"normal" | "compact">("normal");
 
   const isFirstNameValid =
     formData.firstName.length > 0 && validateFullName(formData.firstName);
@@ -166,6 +167,19 @@ const PartnershipRequestForm = ({
     const hasChecked = Object.values(segmentValues).some(Boolean);
     setIsSegmentError(!hasChecked);
   }, [segmentValues, isTMSegmentsTouched, isOnSubmitPushed]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const updateSize = () => {
+      setHCaptchaSize(window.innerWidth < 334 ? "compact" : "normal");
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -307,8 +321,7 @@ const PartnershipRequestForm = ({
           size={5}
           label={t("ContactInfo")}
           textAlign="center"
-          >
-        </Heading>
+        />
 
         <StyledNameWrapper>
         <Input
@@ -555,8 +568,9 @@ const PartnershipRequestForm = ({
         <StyledPRFHeading
           level={4}
           size={5}
-          label={t("PartneshipInfo")}>
-        </StyledPRFHeading>
+          label={t("PartneshipInfo")}
+          textAlign="center"
+        />
 
         <StyledSegmentsWrapper ref={segmentsRef}>
           <StyledTextWrapper className={((isTMSegmentsTouched || isOnSubmitPushed) && isSegmentError) ? "error" : ""}>
@@ -707,6 +721,7 @@ const PartnershipRequestForm = ({
         <StyledHeroHCaptchaWrapper>
           <HCaptcha
             ref={hCaptchaRef}
+            size={hCaptchaSize}
             onVerify={handleHCaptchaChange}
             onExpire={() => handleHCaptchaChange(null)}
           />

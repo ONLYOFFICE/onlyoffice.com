@@ -127,7 +127,7 @@ const Hero = ({ locale }: IHero) => {
   };
 
   return (
-    <Section desktopSpacing={["56px", "112px"]}>
+    <Section desktopSpacing={["56px", "112px"]} tabletSmallSpacing={["80px", "112px"]} mobileSpacing={["48px", "56px"]}>
     <Container>
       <StyledHeroDescription>
         <StyledHeroHeading

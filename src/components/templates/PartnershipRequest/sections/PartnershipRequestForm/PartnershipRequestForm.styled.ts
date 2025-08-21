@@ -24,6 +24,11 @@ const StyledNameWrapper = styled.div`
   display: grid;
   column-gap: 16px;
   grid-template-columns: 1fr 1fr;
+
+  @media ${device.mobile} {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
 `;
 
 const StyledPRFHeading = styled(Heading)`
@@ -69,6 +74,18 @@ const StyledChecboxesWrapper = styled.div`
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  @media ${device.mobile} {
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 16px;
+    width: 100vw;
+
+    label {
+      margin-bottom: 16px;
+      width: 100%;
     }
   }
 `;
