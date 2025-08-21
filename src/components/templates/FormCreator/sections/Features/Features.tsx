@@ -11,7 +11,7 @@ const Features = () => {
     <EditorsFeatures
       items={items.map((item, index) => ({
         ...item,
-        heading: t(item.heading),
+        heading: t(String(item.heading)),
         comingSoon:
           locale === "it" && index === 4
             ? t("Feature6ComingSoon")

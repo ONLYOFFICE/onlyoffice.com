@@ -12,7 +12,7 @@ const Features = () => {
     <EditorsFeatures
       items={items.map((item, index) => ({
         ...item,
-        heading: t2(item.heading),
+        heading: t2(String(item.heading)),
         text: t2(String(item.text)),
         links:
           item.links && (index !== 2 || locale === "en")

@@ -40,7 +40,7 @@ const FeatureImageItem = ({
       }}
     >
       <StyledFeatureImageItemContent>
-        <Heading level={3} label={heading} />
+        <Heading level={3} label={String(heading)} />
         {comingSoon && (
           <Text as="span" color="main" fontSize="14px">
             {comingSoon}

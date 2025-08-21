@@ -2,7 +2,7 @@ import { IContentImage } from "../ContentImage";
 
 export interface IFeatureImageItem extends IContentImage {
   /** The heading. */
-  heading: string;
+  heading: string | React.ReactNode;
   /** The coming soon. */
   comingSoon?: string;
   /** The text. */
