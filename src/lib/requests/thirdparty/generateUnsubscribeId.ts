@@ -20,11 +20,29 @@ export const generateUnsubscribeId = async ({
       },
     );
 
-    const data = await res.json();
+    const raw = await res.text();
+    let data: unknown = null;
+    try {
+      data = raw ? JSON.parse(raw) : null;
+    } catch (e) {
+      console.error("generateUnsubscribeId: JSON parse error", e, { raw });
+    }
 
-    return res.ok
-      ? { status: "success", data }
-      : { status: "error", message: `Error: ${res.status} ${res.statusText}` };
+    if (!res.ok) {
+      console.error("generateUnsubscribeId: HTTP error", {
+        status: res.status,
+        statusText: res.statusText,
+        raw,
+      });
+      return { status: "error", message: `Error: ${res.status} ${res.statusText}` };
+    }
+
+    if (!data) {
+      console.error("generateUnsubscribeId: empty data", { raw });
+      return { status: "error", message: "Empty or invalid JSON response" };
+    }
+
+    return { status: "success", data };
   } catch (err) {
     console.error("generateUnsubscribeId error:", err);
     return {

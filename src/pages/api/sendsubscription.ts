@@ -54,13 +54,23 @@ export default async function handler(
       parsedType === SubscribeType.Common ||
       email === process.env.NONPROFIT_EMAIL
     ) {
+      if (generateUnsubscribeIdData.status !== "success") {
+        console.error("generateUnsubscribeId failed: ", generateUnsubscribeIdData);
+        return res.status(500).json({
+          status: "error",
+          message: "Failed to generate unsubscribeId",
+        });
+      }
+
+      const unsubscribeId = generateUnsubscribeIdData.data.unsubscribeId;
+
       const transporter = emailTransporter();
       await transporter.sendMail({
         to: [email],
         subject: "Subscribe to ONLYOFFICE news",
         html: SubscribeEmail({
           baseUrl,
-          subscribe: generateUnsubscribeIdData.data.unsubscribeId,
+          subscribe: unsubscribeId,
         }),
       });
     } else {
