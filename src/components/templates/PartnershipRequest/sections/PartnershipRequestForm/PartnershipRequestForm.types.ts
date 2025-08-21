@@ -42,7 +42,6 @@ export interface IPartnershipRequestData {
   otherInfoSource: boolean;
   comment: string;
   spam: boolean;
-  type: string;
 
   [key: string]: string | boolean;
 }

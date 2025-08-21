@@ -24,6 +24,10 @@ const Hero = ({ locale }: IHero) => {
   const { t } = useTranslation("partnership-request");
   const router = useRouter();
 
+  const requestTypeNumber = parseInt(router.query.requestType as string) || 0;
+  const _requestTypeList = ["For Hosters & MSPs", "For Software Developers"];
+  const partnerReqType = _requestTypeList[requestTypeNumber];
+
   const initialFormData: IPartnershipRequestData = {
     firstName: "",
     lastName: "",
@@ -66,7 +70,6 @@ const Hero = ({ locale }: IHero) => {
     otherInfoSource: false,
     comment: "",
     spam: false,
-    type: "",
   };
 
   const [formData, setFormData] = useState(initialFormData);
@@ -117,6 +120,7 @@ const Hero = ({ locale }: IHero) => {
         comment: formData.comment,
         from,
         spam: formData.spam,
+        partnerReqType,
         locale: router.locale === "en" ? "" : router.locale
       }),
     }).then((res) => res.json());

@@ -18,6 +18,7 @@ interface IPartnershipRequestEmail {
   salesTraining: string;
   infoSource: string;
   comment: IDownloadModalData["comment"];
+  partnerReqType: string;
 }
 
 const PartnershipRequestEmail = ({
@@ -38,6 +39,7 @@ const PartnershipRequestEmail = ({
   salesTraining,
   infoSource,
   comment,
+  partnerReqType,
 }: IPartnershipRequestEmail) => {
   return `
     <body style="margin: 0; padding: 0; text-align: center; width: 100%; font-family: Arial, sans-serif; font-size: 14px; color: #333;">
@@ -70,6 +72,10 @@ const PartnershipRequestEmail = ({
                 <div style="font-family: Arial; font-size: 14px; line-height: 18px; color: #333; margin: 0; padding: 0; width: 540px; height: auto; overflow: hidden; word-wrap: break-word; vertical-align: top; text-align: left; border: 0 none;">
                   <p style="margin-top:10px;">
                     Partner Request
+                  </p>
+                  <p style="margin-top:20px;">
+                    <b>Type</b><br />
+                    ${partnerReqType}
                   </p>
                   <p style="margin-top:20px;">
                     <b>First name</b>

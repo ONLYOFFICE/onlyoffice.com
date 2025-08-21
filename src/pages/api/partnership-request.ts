@@ -32,6 +32,7 @@ export default async function handler(
     comment,
     from,
     spam,
+    partnerReqType,
     locale
   } = req.body;
 
@@ -68,6 +69,7 @@ export default async function handler(
         salesTraining,
         infoSource,
         comment,
+        partnerReqType,
       })
     });
 
