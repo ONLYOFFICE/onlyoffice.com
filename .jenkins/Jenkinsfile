@@ -32,6 +32,8 @@ def google_search_url = ""
 def feedback_email = ""
 def support_email = ""
 def webinars_email = ""
+def server_email = ""
+def nonprofit_email = ""
 
 switch(BRANCH_NAME) {
   case "test_deploy":
@@ -64,9 +66,11 @@ switch(BRANCH_NAME) {
     next_public_testing_on = "true"
     core_base_domain = "teamlab.info"
     google_search_url = "https://www.googleapis.com/customsearch/v1"
-    feedback_email = "feedback@onlyoffice.com"
-    support_email = "support@onlyoffice.com"
-    webinars_email = "webinars@onlyoffice.com"
+    feedback_email = "nonprofit.manager.t@gmail.com"
+    support_email = "nonprofit.manager.t@gmail.com"
+    webinars_email = "nonprofit.manager.t@gmail.com"
+    server_email = "nonprofit.manager.t@gmail.com"
+    nonprofit_email = "nonprofit.manager.t@gmail.com"
     break
   case "production_deploy":
     aws_region="us-east-1"
@@ -127,6 +131,8 @@ pipeline {
         feedback_email = "${feedback_email}"
         support_email = "${support_email}"
         webinars_email = "${webinars_email}"
+        server_email = "${server_email}"
+        nonprofit_email = "${nonprofit_email}"
       }
       steps {
         withCredentials([usernamePassword(credentialsId: 'onlyoffice_site_test_mysql_credentials', 
@@ -196,6 +202,8 @@ pipeline {
           sed -i "s^var_feedback_email^$feedback_email^" .env
           sed -i "s^var_support_email^$support_email^" .env
           sed -i "s^var_webinars_email^$webinars_email^" .env
+          sed -i "s^var_server_email^$server_email^" .env
+          sed -i "s^var_nonprofit_email^$nonprofit_email^" .env
 
           sed -i "s^var_web_payment_we_trial_url^$web_payment_we_trial_url^" .env
           sed -i "s^var_web_payment_dd_trial_url^$web_payment_dd_trial_url^" .env
