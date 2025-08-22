@@ -1,0 +1,43 @@
+{
+  "PageTitle": "Criador de formulário online preenchível",
+  "PageDescription": "Crie formulários preenchíveis a partir de qualquer documento docx existente, edite, compartilhe e colabore neles. Salve-os como PDF. Preencha formulários online.",
+
+  "Header": "Criador de <0>formulários on-line</0> preenchíveis para seu aplicativo da Web",
+  "SubHeader": "Crie, edite e preencha formulários PDF online",
+
+  "Feature1Title": "Transforme seus documentos de texto em formulários PDF preenchíveis",
+  "Feature1Desc": "Use qualquer documento .docx, faça download de um modelo de formulário de nossa biblioteca ou crie um formulário online do zero. Basta adicionar os campos de que você precisa - áreas de texto, imagens, caixas de combinação, listas suspensas, caixas de seleção, botões de opção, e-mails, números de telefone data e hora, cartões de crédito, CEPs: - para obter um contrato de vendas complexo ou contrato de desenvolvimento, compartilhe e o preencha digitalmente. Se necessário, use os campos complexos para compor um campo personalizado necessário.",
+  "Feature1Link": "Abra a biblioteca",
+  "Feature2Title": "Edite formulários de acordo com as suas regras",
+  "Feature2Desc": "Formate seu formulário como qualquer documento de texto: gerencie fontes e estilos, adicione tabelas, gráficos e outros objetos. Insira campos alinhados com seu texto ou corrija a posição deles. Mova e gire-os. Ajuste facilmente o tamanho do campo, habilite a entrada de várias linhas ou distribua o texto inserido uniformemente. Ajuste as cores da borda e do fundo. Adicione dicas e espaços reservados, agrupe campos para preenchê-los simultaneamente. Use tags para tornar mais simples o trabalho com campos no modo automático.",
+  "Feature2Link": "Veja-o em ação",
+  "Feature3Title": "Ajuste os campos de texto para qualquer caso",
+  "Feature3Desc": "Permita o uso de qualquer símbolo específico em campos de texto e defina o formato necessário: nenhum para campos de texto habituais, somente dígitos ou letras, Máscara Arbitrária Personalizável adequada para números de telefone, e Expressão Regular que implica o uso de uma regra segundo a qual os caracteres obrigatórios são inseridos no campo na ordem necessária, como nos endereços de e-mail.",
+  "Feature4Title": "Preencha formulários em qualquer lugar, em qualquer hora, em qualquer dispositivo",
+  "Feature4Desc": "Compartilhe facilmente formulários PDF prontos com outras pessoas e preencha-os on-line no <0>ONLYOFFICE DocSpace</0>, localmente com <1>aplicativos de desktop do ONLYOFFICE</1> ou até mesmo em qualquer lugar usando os <2>aplicativos móveis</2> gratuitos para iOS e Android. Também é possível preencher formulários PDF criados em outros aplicativos usando o ONLYOFFICE.",
+  "Feature4Link": "Encontre os formulários prontos para preencher",
+  "Feature5Title": "Autenticação dos dados digitais com assinaturas eletrônicas e-signatures",
+  "Feature5Desc": "Atribua várias funções de destinatário com as cores correspondentes à função. Personalize a lista de funções padrão para corresponder da melhor forma aos seus requisitos de fluxo de trabalho. Em breve: Permita que os usuários assinem um formulário inteiro ou apenas alguns campos. O ONLYOFFICE usa chaves ED25519 para assinaturas digitais.",
+  "Feature6Title": "Proteção dos dados de campo confidenciais",
+  "Feature6ComingSoon": "em breve",
+  "Feature6Desc": "Proteja o formulário ou partes dele, ou seja, os dados de campo. O ONLYOFFICE usa o algoritmo AES 256 GCM simétrico para criptografar dados, e o algoritmo assimétrico baseado nas chaves Curve25519 para criptografar uma chave.",
+
+  "LearnMoreHeading": "Saiba mais sobre o Criador do formulário do ONLYOFFICE",
+  "BlogDesc": "Automatize a criação de formulários substituindo espaços reservados por campos de formulário usando uma macro",
+  "BlogLink": "https://www.onlyoffice.com/blog/pt-br/2024/01/use-macros-do-onlyoffice-para-adicionar-facilmente-textforms-a-modelos-de-formulario-mestre",
+  "TutorialsDesc": "Como criar formulários preenchíveis",
+  "TutorialsLink": "https://helpcenter.onlyoffice.com/docs/userguides/form_builder/CreatingManagingFormFields.aspx",
+  "HintsDesc": "Como preencher um formulário PDF",
+  "HintsLink": "https://helpcenter.onlyoffice.com/docs/userguides/form_builder/FillingOutForm.aspx",
+
+  "Q1": "Qual formato o ONLYOFFICE usa para os formulários?",
+  "A1": "Os formulários prontos são salvos e distribuídos em PDF.",
+  "Q2": "O ONLYOFFICE oferece algum modelo de formulário?",
+  "A2": "Sim, você pode baixar modelos prontos para uso da <0>biblioteca do ONLYOFFICE</0>.",
+  "Q3": "É possível incorporar um formulário ao meu site?",
+  "A3": "Sim, você pode facilmente adicionar um formulário online ao seu site, disponibilizando-o para preenchimento e download em PDF.",
+  "Q4": "É possível usar o criador de formulários do ONLYOFFICE em meu aplicativo com a minha marca?",
+  "A4": "Sim, você pode integrar o criador de formulários ao seu aplicativo. Use o <0>ONLYOFFICE Docs Developer</0>.",
+  "Q5": "Como criar um formulário preenchível no ONLYOFFICE?",
+  "A5": "No ONLYOFFICE, você pode criar formulários preenchíveis diretamente em PDF adicionando os tipos de campos necessários e ajustando-os para que seu formulário PDF tenha a aparência que você precisa."
+}

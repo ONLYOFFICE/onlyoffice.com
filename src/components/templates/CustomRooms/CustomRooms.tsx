@@ -5,10 +5,14 @@ import { LearnMore } from "./sections/LearnMore";
 import { RoomsFaq } from "@src/components/modules/rooms/RoomsFaq";
 import { RoomsTabs } from "@src/components/modules/rooms/RoomsTabs";
 
-const CustomRoomsTemplate = () => {
+interface CustomRoomsTemplateProps {
+  locale?: string;
+}
+
+const CustomRoomsTemplate = ({ locale }: CustomRoomsTemplateProps) => {
   return (
     <>
-      <Hero />
+      <Hero locale={locale} />
       <Features />
       <RoomsGetStarted />
       <LearnMore />

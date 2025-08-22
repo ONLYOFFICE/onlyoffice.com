@@ -13,8 +13,8 @@
 
   "CreateFreeAccount": "免费注册账户",
 
-  "HeroImgUrl": "/images/templates/form-filling-rooms/hero/form-filling-rooms-header.png",
-  "HeroImgUrl2x": "/images/templates/form-filling-rooms/hero/form-filling-rooms-header@2x.png",
+  "HeroImgUrl": "/images/templates/form-filling-rooms/hero/zh/main.png",
+  "HeroImgUrl2x": "/images/templates/form-filling-rooms/hero/zh/main@2x.png",
 
   "EasyFormUploadingDesc": "只需单击几下，即可从协作空间或设备将准备好的 PDF 表单上传到房间。还有集成的模板库，提供了众多现成的 PDF 模板选择。",
   "EasyFormUploadingUrl": "/images/templates/form-filling-rooms/features/zh/easy.png",

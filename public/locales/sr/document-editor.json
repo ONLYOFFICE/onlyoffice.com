@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Online Word document editor | ONLYOFFICE",
+  "PageDescription": "Collaborative online editor of Word documents compatible with Microsoft® formats. Access from Windows, Linux, Mac OS, Android-devices, iPhone and iPad.",
+
+  "Header": "Collaborative online document editor for your web app",
+  "SubHeader": "Open, edit, and collaborate on Word documents online",
+
+  "Feature1Title": "Take advantage of vast word processing functionality",
+  "Feature1Desc": "No more limitations while working with word document editor online: enjoy 100% view, conversion, print and pagination fidelity; work with files of any size and complexity; use the enhanced set of formatting tools right from your browser. ONLYOFFICE Document Editor supports all popular formats: DOC, DOCX, ODT, TXT, HTML, etc. PDF and XPS can be converted to DOCX for further editing.",
+  "Feature2Title": "Edit docs by your rules",
+  "Feature2Desc": "Manage fonts and styles, format text, adjust line and paragraph spacing, insert headers and footers, customize page layout, and set mirror and gutter margins to prepare documents for publishing, enable automatic hyphenation.",
+  "Feature3Title": "Use AI helper",
+  "Feature3Desc": "Perform tasks which involve understanding or generating natural language using the ChatGPT plugin. Get accurate answers to your questions, quickly find information, generate texts, get your code built, etc. right in the editor.",
+  "Feature4Title": "Be creative",
+  "Feature4Desc": "Create vivid documents with images, customizable charts, autoshapes and tables, Text Art, SmartArt graphic, equations, drop caps, and more. Easily adjust inserted objects: move, resize, align, change wrapping styles, fill with color or pattern, etc. Create professional-looking forms and templates. Make your own freehand drawings using a pen or highlighter.",
+  "Feature5Title": "Explore deeper analysis",
+  "Feature5Desc": "Analyze your text: view word count, paragraphs, and characters with or without spaces. Search for a word or phrase and replace it with a new one using the Find and Replace tool. View version history, select and restore any previous version with a simple click.",
+  "Feature6Title": "Improve your team's workflow",
+  "Feature6Desc": "Collaborate with your team within online document editor: choose the appropriate co-editing mode - <0>real-time</0> or <0>paragraph-locking</0>. Leave and sort comments and discuss the process in the built-in chat or Telegram. Use the Track Changes mode with the Preview in Review feature.",
+  "Feature7Title": "Compare files with ease",
+  "Feature7Desc": "Quickly compare or combine two documents to see the differences with revision marks. Accept or reject changes one-by-one or all at once. Merge the changes and save them as a new version of the original document.",
+  "Feature8Title": "Extend your editing capabilities",
+  "Feature8Desc": "Get the most out of your online word editor with a collection of third-party add-ons. Insert a YouTube video, add special symbols, translate any word or sentence, edit images, and even more.",
+
+  "LearnMoreHeading": "Learn more about ONLYOFFICE Document Editor",
+  "BlogDesc": "How to embed Word document in HTML",
+  "TutorialsDesc": "Adding new font to ONLYOFFICE Docs",
+  "HintsDesc": "Supported formats of electronic text documents",
+
+  "Q1": "Da li mogu da uređujem tekstualne dokumente bez Internet konekcije?",
+  "A1": "Da, možete instalirati i koristiti besplatne <0>ONLYOFFICE Desktop Editors</0> za uređivanje lokalnih dokumenata van mreže.",
+  "Q2": "Da li ONLYOFFICE nudi native mobilne aplikacije za uređivanje dokumenata?",
+  "A2": "Da, možete instalirati besplatnu aplikaciju <0>Documents</0> za iOS ili Android uređaje za rad na dokumentima u pokretu.",
+  "Q3": "Da li je moguće koristiti ONLYOFFICE editor dokumenata u mojoj aplikaciji pod mojim brendom?",
+  "A3": "Da, možete integrisati uređivač dokumenata u vašu aplikaciju. Molimo vas da koristite <0>ONLYOFFICE Docs Developer</0>."
+}

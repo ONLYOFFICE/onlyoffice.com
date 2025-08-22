@@ -6,11 +6,13 @@ import {
 import { IFeatureImageItem } from "./FeatureImageItem.types";
 import { ContentImage } from "../ContentImage";
 import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 
 const FeatureImageItem = ({
   id,
   className,
   heading,
+  comingSoon,
   text,
   links,
   contentWidth = 448,
@@ -19,7 +21,7 @@ const FeatureImageItem = ({
   fontSize,
   rowGap,
   gap,
-  marginTop
+  marginTop,
 }: IFeatureImageItem) => {
   return (
     <ContentImage
@@ -38,7 +40,12 @@ const FeatureImageItem = ({
       }}
     >
       <StyledFeatureImageItemContent>
-        <Heading level={3} label={heading} />
+        <Heading level={3} label={String(heading)} />
+        {comingSoon && (
+          <Text as="span" color="main" fontSize="14px">
+            {comingSoon}
+          </Text>
+        )}
         <StyledFeatureImageItemText color="#666666" $fontSize={fontSize}>
           {text}
         </StyledFeatureImageItemText>

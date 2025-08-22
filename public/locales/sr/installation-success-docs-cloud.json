@@ -1,0 +1,21 @@
+{
+  "PageTitle": "ONLYOFFICE Docs Cloud: Hvala vam što ste se registrovali!",
+  "PageDescription": "Uspešno ste registrovali lični nalog na Stripe platformi. Završite još nekoliko koraka da biste počeli da koristite svoj ONLYOFFICE Docs Cloud.",
+  "HeroTitle": "Hvala na registraciji!",
+  "HeroSubtitle": "Završite još nekoliko koraka da biste počeli da koristite svoj ONLYOFFICE Docs Cloud.",
+  "IntegrationsTitle": "Integracije",
+  "IntegrationsDescription": "Još uvek nemate spremnu integraciju ONLYOFFICE u okviru vaše platforme? Izaberite uslugu koju koristite i instalirajte odgovarajući ONLYOFFICE konektor.",
+  "IntegrationsMoreOptions": "Druge opcije",
+  "HelpfulResources": "<0>Korisno</0> resursi i pomoć",
+  "HelpfulResourcesText1": "Naučite kako da koristite online urednike: dokumente, obrasce, listove, slajdove. <0>Pročitajte uputstva</0>",
+  "HelpfulResourcesText2": "Ako imate drugih pitanja u vezi sa funkcionalnošću, konsultujte naš <0>Centar za pomoć</0>.",
+  "HelpfulResourcesText3": "U slučaju bilo kakvih tehničkih problema, obratite se našem <0>timu za podršku</0>.",
+  "HelpfulResourcesText4": "For any other inquiries, you are also welcome to visit our <0>forum</0> and <1>GitHub</1>.",
+  "Step1": "Otvorite e-poštu sa detaljima integracije ONLYOFFICE Docs:",
+  "Step2": "Prijavite se na svoju platformu i pređite na stranicu ONLYOFFICE Settings.",
+  "Step3": "Unesite pružene akreditive i kliknite na dugme Sačuvaj.",
+  "DocumentServerAddress": "Adresa servera dokumenata",
+  "DocumentServerJWTHeader": "Dokument Server JWT Header*",
+  "DocumentServerSecret": "Tajna servera dokumenta",
+  "JwtNote": "*JWT štiti dokumente od neovlašćenog pristupa. <0>Saznajte više</0>"
+}

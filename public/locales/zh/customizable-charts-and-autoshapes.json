@@ -1,0 +1,31 @@
+{
+  "PageTitle": "企业在线文字处理软件 | ONLYOFFICE",
+  "PageDescription": "与Microsoft®格式兼容的word文档在线协作编辑软件。上传、打开和编辑、共享您的文本文档。通过Windows、Linux、Mac OS、安卓设备、iPhone 和iPad访问。",
+
+  "Header": "让您的文档与众不同",
+  "SubHeader": "添加和编辑复杂对象以创建信息传递直接、视觉效果丰富的文本",
+
+  "HeroImgUrl": "/images/templates/customizable-charts-and-autoshapes/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/hero/zh/hero@2x.png",
+
+  "Feature1Title": "文本结构构建与格式化",
+  "Feature1Desc": "选择并修改字体、样式以及文本格式化预设。段落结构构建与格式化。调整边距、断点、页面方向、分列和其他布局元素。",
+
+  "Feature2Title": "创建复杂对象",
+  "Feature2Desc": "在文本文档中添加自选形状：从多种样式中进行选择并调整其外观。插入可自定义的图表、图像、表格和OLE电子表格。使用方程编辑器插入Unicode和LaTeX格式的公式，这样您就可以对数学进行说明。添加文本框和 Text Art。插入SmartArt 元素，为您的想法创造一个视觉表现。",
+
+  "Feature3Title": "运用学术格式",
+  "Feature3Desc": "创建目录和图片目录，构建论文和书籍结构。插入任意对象并对文本进行系统化整理。添加脚注、尾注、交叉引用、书签和超链接。借助 Mendeley 以及 Zotero 构建参考书目。",
+
+  "Feature4Title": "通过插件实现更多功能",
+  "Feature4Desc": "插入并播放 YouTube 视频。在文档中直接使用照片编辑器编辑图片。使用重点标记代码功能对各类编程语言进行格式化。",
+
+  "Feature1ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/zh/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/zh/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/zh/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/zh/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/zh/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/zh/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/customizable-charts-and-autoshapes/features/zh/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/customizable-charts-and-autoshapes/features/zh/pic4@2x.png"
+}
