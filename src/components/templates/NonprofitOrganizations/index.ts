@@ -1,0 +1,1 @@
+export { NonprofitOrganizationsTemplate } from "./NonprofitOrganizations";
