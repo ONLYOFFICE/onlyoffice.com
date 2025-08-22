@@ -1,0 +1,21 @@
+{
+  "PageTitle": "ONLYOFFICE Docs Cloud: Děkujeme za registraci!",
+  "PageDescription": "Úspěšně jste zaregistrovali osobní účet na platformě Stripe. Dokončete několik dalších kroků, abyste mohli začít používat službu ONLYOFFICE Docs Cloud.",
+  "HeroTitle": "Děkujeme za registraci!",
+  "HeroSubtitle": "Dokončete jen několik dalších kroků, abyste mohli začít používat svůj ONLYOFFICE Docs Cloud",
+  "IntegrationsTitle": "Integrace",
+  "IntegrationsDescription": "Nemáte ještě připravenou integraci ONLYOFFICE v rámci své platformy? Vyberte si službu, kterou používáte, a nainstalujte příslušný konektor ONLYOFFICE.",
+  "IntegrationsMoreOptions": "Další možnosti",
+  "HelpfulResources": "<0>Užitečné</0> zdroje a pomoc",
+  "HelpfulResourcesText1": "Naučte se používat online editory: dokumenty, formuláře, listy, prezentace.  <0>Přečtěte si průvodce</0>",
+  "HelpfulResourcesText2": "Máte-li další otázky týkající se funkcí, nahlédněte do našeho <0>centra nápovědy</0>.",
+  "HelpfulResourcesText3": "V případě technických problémů se obraťte na náš <0>tým podpory</0>.",
+  "HelpfulResourcesText4": "For any other inquiries, you are also welcome to visit our <0>forum</0> and <1>GitHub</1>.",
+  "Step1": "Otevřete e-mail s podrobnostmi o integraci ONLYOFFICE Docs:",
+  "Step2": "Přihlaste se do své platformy a přepněte se na stránku Nastavení ONLYOFFICE.",
+  "Step3": "Zadejte poskytnuté přihlašovací údaje a klikněte na tlačítko Uložit.",
+  "DocumentServerAddress": "Adresa dokumentového serveru",
+  "DocumentServerJWTHeader": "Záhlaví JWT serveru dokumentů*",
+  "DocumentServerSecret": "Utajení serveru dokumentů",
+  "JwtNote": "*JWT chrání dokumenty před neoprávněným přístupem. <0>Další informace</0>"
+}
