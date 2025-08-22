@@ -1,0 +1,21 @@
+{
+  "PageTitle": "ONLYOFFICE Docs Cloud：ご登録ありがとうございます！",
+  "PageDescription": "Stripeプラットフォームへの個人アカウント登録が完了しました。あと数ステップでONLYOFFICE Docs Cloudの利用を開始できます。",
+  "HeroTitle": "ご登録ありがとうございます！",
+  "HeroSubtitle": "ONLYOFFICE Docs Cloudの利用を開始するには、あと数ステップで完了します。",
+  "IntegrationsTitle": "統合",
+  "IntegrationsDescription": "ONLYOFFICE統合をまだお持ちではありませんか？使用するサービスを選択し、対応するONLYOFFICEコネクタをインストールしてください。",
+  "IntegrationsMoreOptions": "その他のオプション",
+  "HelpfulResources": "役立つリソース＆サポート",
+  "HelpfulResourcesText1": "オンラインエディタ（ドキュメント、フォーム、シート、スライド）の使い方をご紹介します。 <0>ガイドを読む</0>",
+  "HelpfulResourcesText2": "その他の機能についてのご質問がありましたら、<0>ヘルプセンター</0>をご覧ください。",
+  "HelpfulResourcesText3": "技術的な問題が発生した場合は、弊社<0>サポートチーム</0>までご連絡ください。",
+  "HelpfulResourcesText4": "For any other inquiries, you are also welcome to visit our <0>forum</0> and <1>GitHub</1>.",
+  "Step1": "ONLYOFFICE Docsの連携詳細が記載されたメールを開く：",
+  "Step2": "お使いのプラットフォームにログインし、ONLYOFFICE設定ページに切り替えます。",
+  "Step3": "提供された認証情報を入力し、「保存」ボタンをクリックします。",
+  "DocumentServerAddress": "Document Server のアドレス",
+  "DocumentServerJWTHeader": "Document Server JWT Header*",
+  "DocumentServerSecret": "Document Serverのシクレット",
+  "JwtNote": "*JWTは不正なアクセスからドキュメントを保護します。 <0>詳細はこちら</0>"
+}

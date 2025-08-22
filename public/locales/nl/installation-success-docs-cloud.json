@@ -1,0 +1,21 @@
+{
+  "PageTitle": "ONLYOFFICE Docs Cloud: Bedankt voor uw registratie!",
+  "PageDescription": "U heeft met succes een persoonlijke account geregistreerd op het Stripe platform. Voltooi nog enkele stappen om uw ONLYOFFICE Docs Cloud te gaan gebruiken.",
+  "HeroTitle": "Bedankt voor uw registratie!",
+  "HeroSubtitle": "Voltooi nog enkele stappen om uw ONLYOFFICE Docs Cloud te gaan gebruiken",
+  "IntegrationsTitle": "Integraties",
+  "IntegrationsDescription": "Heeft u nog geen kant-en-klare ONLYOFFICE integratie binnen uw platform? Kies de dienst die u gebruikt en installeer de bijbehorende ONLYOFFICE connector.",
+  "IntegrationsMoreOptions": "Andere opties",
+  "HelpfulResources": "<0>Handige</0> middelen & ondersteuning",
+  "HelpfulResourcesText1": "Leer de online editors gebruiken: docs, forms, sheets, slides.  <0>Lees gidsen</0>",
+  "HelpfulResourcesText2": "Heeft u andere vragen over de functionaliteit, raadpleeg dan ons <0>Helpcentrum</0>.",
+  "HelpfulResourcesText3": "Bij technische problemen kunt u contact opnemen met ons <0>ondersteuningsteam</0>.",
+  "HelpfulResourcesText4": "For any other inquiries, you are also welcome to visit our <0>forum</0> and <1>GitHub</1>.",
+  "Step1": "Open een e-mail met de ONLYOFFICE Docs integratie details:",
+  "Step2": "Log in op uw platform en ga naar de ONLYOFFICE Instellingen pagina.",
+  "Step3": "Voer de verstrekte inloggegevens in en klik op de knop Opslaan.",
+  "DocumentServerAddress": "Document Server Adres",
+  "DocumentServerJWTHeader": "Document Server JWT Header*",
+  "DocumentServerSecret": "Document Server geheim",
+  "JwtNote": "*JWT beschermt documenten tegen onbevoegde toegang. <0>Meer informatie</0>"
+}
