@@ -50,6 +50,8 @@ export default async function handler(
       email: subscribeJson,
     });
 
+    console.log(generateUnsubscribeIdData);
+
     if (
       parsedType === SubscribeType.Common ||
       email === process.env.NONPROFIT_EMAIL
