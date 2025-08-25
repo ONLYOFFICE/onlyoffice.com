@@ -13,5 +13,10 @@
   "ConnectThirdParty": "Connect third-party cloud storages",
   "WorkTogetherWithin": "Work together within any cloud you are used to without switching between several apps.",
   "TryNow": "Try now",
-  "LearnMore": "Learn more about ONLYOFFICE DocSpace"
+  "LearnMore": "Learn more about ONLYOFFICE DocSpace",
+  "FreeCloudForNonProfitsAndSchools": "<0>Free cloud</0> for non-profits and schools",
+  "CreateAFreeDocSpaceCloud": "Create a free DocSpace Cloud – get 2 GB of storage and up to 20 admins.",
+  "SubmitRequest": "Submit request",
+  "FreeCloudImageUrl": "/images/templates/nonprofit-organizations/free-cloud/en/cost-effective.png",
+  "FreeCloudImageUrl2x": "/images/templates/nonprofit-organizations/free-cloud/en/cost-effective@2x.png"
 }

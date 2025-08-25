@@ -29,7 +29,7 @@ const StyledLogosBlockItem = styled.li<{
 }>`
   width: ${({ $width }) => $width};
   height: 100%;
-  background-image: url("/images/templates/nonprofit-organizations/logosBlock/logo-non-profit.png");
+  background-image: url("/images/templates/nonprofit-organizations/logos-block/logo-non-profit.png");
   background-position-x: ${({ $bgPositionX }) => $bgPositionX};
   background-position-y: 50%;
   background-repeat: no-repeat;
