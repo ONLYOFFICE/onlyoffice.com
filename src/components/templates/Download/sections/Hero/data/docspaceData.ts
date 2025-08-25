@@ -62,18 +62,18 @@ export const docspaceIcons: IIconTooltip[] = [
     },
   },
   {
-    id: "docspace-presentation-editor",
-    tooltipLabel: "PresentationEditor",
-    href: "/presentation-editor",
+    id: "docspace-spreadsheet-editor",
+    tooltipLabel: "SpreadsheetEditor",
+    href: "/spreadsheet-editor",
     icon: {
       url: iconsSprite,
       positionX: "-432px",
     },
   },
   {
-    id: "docspace-spreadsheet-editor",
-    tooltipLabel: "SpreadsheetEditor",
-    href: "/spreadsheet-editor",
+    id: "docspace-presentation-editor",
+    tooltipLabel: "PresentationEditor",
+    href: "/presentation-editor",
     icon: {
       url: iconsSprite,
       positionX: "-504px",

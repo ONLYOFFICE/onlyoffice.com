@@ -1,0 +1,20 @@
+{
+  "PageTitle": "購読を中止 | ONLYOFFICE",
+  "YouHaveSuccessfullyUnsubscribed": "全てのメール配信が停止されました。",
+  "TheEmailAddressHasBeenSuccessfullyRemoved": "<0>{{email}}</0>メールアドレスはONLYOFFICEメーリングリストから正常に削除されました。今後、ONLYOFFICEからのお知らせは一切届きません。",
+  "IfYouDidThisByMistakeYouCanResubscribe": "間違って登録した場合は、下のボタンをクリックして再登録することができます。",
+  "Resubscribe": "再登録",
+  "OOUpdatesAndSpecialOffers": "ONLYOFFICEアップデートとスペシャルオファー",
+  "WishToKeepUpToDate": "ONLYOFFICEのニュースやアップデートを最新をくれませんか？",
+  "YourEmail": "メールアドレス*",
+  "Subscribe": "購読",
+  "YouHaveBeenResubscribed": "再購読完了",
+  "TheEmailHasBeenSuccessfullyAdded": "- <0>{{email}}</0> - このメールアドレスはONLYOFFICEメーリング・リストに正常に追加されました。 製品のアップデートとお知らせが届きます。",
+  "WouldYouLikToUnsubscribeFromAllOOEmails": "ONLYOFFICEのすべてのメール（製品の更新と発表、ポータルの通知、ヒント）の購読が解除したい場合は、この リンクをクリックしてください：<0>すべての購読が解除する</0>",
+  "EmailIsEmpty": "メールが入力されていません",
+  "EmailIsIncorrect": "メールが正しくありません",
+  "TheEmailAddressIsNotRegistered": "このメールアドレス <0>{{email}}</0> は登録されていません。",
+  "UnsubscribeSuccessful": "購読解除完了",
+  "TheEmailHasBeenSuccessfullyRemoved": "このメール（<0>{{email}}</0>）は、ONLYOFFICEメーリング・リストから正常に削除されました。 製品のアップデートやお知らせは届きません。",
+  "IfYouDidThisInErrorYouMayResubscribe": "これを誤って行った場合は、下のボタンをクリックして再購読できます。"
+}
