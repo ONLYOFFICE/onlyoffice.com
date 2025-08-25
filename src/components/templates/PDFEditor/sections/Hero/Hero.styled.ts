@@ -4,7 +4,7 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #A34A4A;
+  background-color: #a34a4a;
 
   @media ${device.tablet} {
     margin-top: -64px;
@@ -37,27 +37,12 @@ const StyledHeroWrapper = styled.div`
 
 const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
   margin: 0 auto;
-  padding-bottom: 64.286%;
   max-width: 1120px;
+  height: 700px;
   background-image: url(${(props) => props.$imgUrl});
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1120px auto;
-
-  &::before {
-    background-image: url("./images/templates/e-book/hero/left.svg");
-    background-size: contain;
-    content: "";
-    display: block;
-    height: 360px;
-    width: 366px;
-  }
-
-  &::after {
-    background-image: url("./images/templates/e-book/hero/right.svg");
-    content: "";
-    display: block;
-  }
 
   ${(props) =>
     props.$imgUrl2x &&
@@ -66,6 +51,12 @@ const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
         background-image: url(${props.$imgUrl2x});
       }
     `}
+
+  @media ${device.desktop} {
+    width: 100%;
+    height: 61vw;
+    background-size: cover;
+  }
 `;
 
 const StyledHeroInput = styled.div`
@@ -124,4 +115,10 @@ const StyledHeroVideo = styled.div`
   }
 `;
 
-export { StyledHero, StyledHeroWrapper, StyledHeroImg, StyledHeroInput, StyledHeroVideo };
+export {
+  StyledHero,
+  StyledHeroWrapper,
+  StyledHeroImg,
+  StyledHeroInput,
+  StyledHeroVideo,
+};

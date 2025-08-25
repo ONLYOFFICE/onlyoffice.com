@@ -15,41 +15,33 @@ const StyledHero = styled(Section)`
   }
 `;
 
-const StyledHeroWrapper = styled.div`
+const wrapperSpacing = ({ $hasMedia }: { $hasMedia?: boolean }) => css`
+  margin-bottom: ${$hasMedia ? "48px" : "0"};
+  @media ${device.tabletS} {
+    margin-bottom: ${$hasMedia ? "80px" : "0"};
+  }
+  @media ${device.mobile} {
+    margin-bottom: ${$hasMedia ? "48px" : "0"};
+  }
+`;
+
+const StyledHeroWrapper = styled.div<{ $hasMedia?: boolean }>`
   display: grid;
   justify-items: center;
   row-gap: 32px;
-  margin: 0 auto 48px;
+  margin: 0 auto;
   max-width: 928px;
   text-align: center;
 
   @media ${device.tabletS} {
     row-gap: 24px;
-    margin: 0 auto 80px;
   }
 
   @media ${device.mobile} {
     row-gap: 16px;
-    margin: 0 auto 48px;
   }
-`;
 
-const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
-  margin: 0 auto;
-  padding-bottom: 51.786%;
-  max-width: 1047px;
-  background-image: url(${(props) => props.$imgUrl});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  ${(props) =>
-    props.$imgUrl2x &&
-    css`
-      @media ${device.retina} {
-        background-image: url(${props.$imgUrl2x});
-      }
-    `}
+  ${wrapperSpacing}
 `;
 
 const StyledHeroVideo = styled.div`
@@ -107,10 +99,4 @@ const StyledHeroInput = styled.div`
   }
 `;
 
-export {
-  StyledHero,
-  StyledHeroWrapper,
-  StyledHeroImg,
-  StyledHeroVideo,
-  StyledHeroInput,
-};
+export { StyledHero, StyledHeroWrapper, StyledHeroVideo, StyledHeroInput };

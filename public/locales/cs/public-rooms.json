@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Simplify file sharing with external users in public rooms | ONLYOFFICE",
+  "PageDescription": "Easily interact with third-parties in ONLYOFFICE DocSpace. Integrate public rooms into any web interface",
+
+  "SimplifyFileSharingWithExternalUsers": "Simplify file sharing with external users in \u003c0\u003epublic rooms\u003c/0\u003e",
+  "EasilyInteractWithThirdParties": "Easily interact with third-parties in ONLYOFFICE DocSpace",
+  "IdealForPublicSharing": "Ideal for public sharing",
+  "AbsolutelySafe": "Absolutely safe for your office files",
+  "EasyToStore": "Easy to store where you want",
+  "SeamlesslyEmbeddable": "Seamlessly embeddable",
+  "CostEffectiveForAnyBudget": "Cost-effective for any budget",
+  "CreateFreeAccount": "Create free account",
+
+  "HeroImgUrl": "/images/templates/public-rooms/hero/public-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/public-rooms/hero/public-rooms-header@2x.png",
+
+  "HeroImgUrlVideo": "/images/templates/public-rooms/hero/public-rooms-video.png",
+  "HeroImgUrlVideo2x": "/images/templates/public-rooms/hero/public-rooms-video@2x.png",
+
+  "PublicSharingDesc": "Invite any users who don't have direct access to your DocSpace such as partners, sponsors, subcontractors, etc., via external links to allow them to view, edit, review, and comment files without registration. Generate multiple links with different parameters, if necessary.",
+  "PublicSharingImgUrl": "/images/templates/public-rooms/features/ideal-for-public-sharing.png",
+  "PublicSharingImgUrl2x": "/images/templates/public-rooms/features/ideal-for-public-sharing@2x.png",
+
+  "AbsolutelySafeDesc": "For additional protection, set a password and limit the link by time period, restrict file content copy, file downloading and printing.",
+  "AbsolutelySafeImgUrl": "/images/templates/public-rooms/features/absolutely-safe.png",
+  "AbsolutelySafeImgUrl2x": "/images/templates/public-rooms/features/absolutely-safe@2x.png",
+
+  "EasyToStoreDesc": "Use third-party services as data storage for your Public rooms: Google Drive, One Drive, Box, Dropbox, kDrive, Nextcloud, ownCloud, and others working via the WebDAV protocol.",
+  "EasyToStoreImgUrl": "/images/templates/public-rooms/features/easy-to-store-where-you-want.png",
+  "EasyToStoreImgUrl2x": "/images/templates/public-rooms/features/easy-to-store-where-you-want@2x.png",
+
+  "SeamlesslyEmbeddableDesc": "Easily integrate public rooms into any web interface. This way, users of your website or service will be able to access the room files directly from the web frontend.",
+  "SeamlesslyEmbeddableImgUrl": "/images/templates/public-rooms/features/seamlessly-embeddable.png",
+  "SeamlesslyEmbeddableImgUrl2x": "/images/templates/public-rooms/features/seamlessly-embeddable@2x.png",
+
+  "CostEffectiveDesc": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses, no matter if it's SMB or a big enterprise. Want to get full control over your corporate data? Deploy DocSpace on your private server.",
+  "CostEffectiveImgUrl": "/images/templates/public-rooms/features/cost-effective-for-any-budget.png",
+  "CostEffectiveImgUrl2x": "/images/templates/public-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Learn more about DocSpace Public rooms",
+  "Blog": "Blog",
+  "BlogDesc": "How to embed a public room into your website",
+  "LearnMore": "Learn more",
+  "BlogLink": "https://www.onlyoffice.com/blog/2023/12/embed-public-docspace-room-to-website",
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Master ONLYOFFICE DocSpace with video guides",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Watch now",
+  "Tutorial": "Tutorial",
+  "TutorialDesc": "How to integrate DocSpace into a Single Page Application",
+  "HelpCenterLink": "https://www.onlyoffice.com/blog/2024/05/integrating-onlyoffice-docspace-into-a-single-page-application"
+}

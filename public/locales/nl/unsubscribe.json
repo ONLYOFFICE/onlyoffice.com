@@ -1,0 +1,20 @@
+{
+  "PageTitle": "Uitschrijven | ONLYOFFICE",
+  "YouHaveSuccessfullyUnsubscribed": "Uitschrijven Gelukt",
+  "TheEmailAddressHasBeenSuccessfullyRemoved": "De e-mail - <0>{{email}}</0> - is succesvol verwijderd van de ONLYOFFICE mailinglijst. U ontvangt voortaan geen ONLYOFFICE e-mails meer: portaalmeldingen en tips en trucs, productupdates en -aankondigingen.",
+  "IfYouDidThisByMistakeYouCanResubscribe": "Als u dit per ongeluk heeft gedaan, kunt u zich opnieuw abonneren door op de onderstaande knop te klikken.",
+  "Resubscribe": "Opnieuw abonneren",
+  "OOUpdatesAndSpecialOffers": "ONLYOFFICE Updates en Speciale Aanbiedingen",
+  "WishToKeepUpToDate": "Wilt u op de hoogte blijven van ONLYOFFICE nieuws en updates?",
+  "YourEmail": "Uw e-mail*",
+  "Subscribe": "Abonneer",
+  "YouHaveBeenResubscribed": "U bent opnieuw aangemeld",
+  "TheEmailHasBeenSuccessfullyAdded": "Uw e-mail - <0>{{email}}</0> - is met succes toegevoegd aan de ONLYOFFICE mailinglijst. U ontvangt productupdates en aankondigingen.",
+  "WouldYouLikToUnsubscribeFromAllOOEmails": "Wilt u zich afmelden voor alle ONLYOFFICE e-mails: productupdates en -aankondigingen, portaalmeldingen en tips en trucs? Klik op de link: <0>Afmelden voor alles</0>",
+  "EmailIsEmpty": "E-mail is leeg",
+  "EmailIsIncorrect": "E-mailadres is onjuist",
+  "TheEmailAddressIsNotRegistered": "Het <0>{{email}}</0> e-mailadres is niet geregistreerd.",
+  "UnsubscribeSuccessful": "Uitschrijven Gelukt",
+  "TheEmailHasBeenSuccessfullyRemoved": "De e-mail - <0>{{email}}</0> - is succesvol verwijderd van de ONLYOFFICE mailinglijst. U ontvangt geen productupdates en aankondigingen meer.",
+  "IfYouDidThisInErrorYouMayResubscribe": "Als u dit per ongeluk hebt gedaan, kunt u zich opnieuw inschrijven door op de onderstaande knop te klikken."
+}

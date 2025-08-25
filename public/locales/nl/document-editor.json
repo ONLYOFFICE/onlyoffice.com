@@ -1,0 +1,46 @@
+{
+  "PageTitle": "Beste online tekstverwerker voor uw bedrijf | ONLYOFFICE",
+  "PageDescription": "Online collaboratieve editor van Word-documenten die compatibel zijn met Microsoft®-formaten. Upload, open en bewerk, deel uw tekstdocumenten. Toegang vanaf Windows, Linux, Mac OS, Android-apparaten, iPhone en iPad.",
+
+  "Header": "Collaborative online document editor for your web app",
+  "SubHeader": "Open, bewerk en werk in realtime samen aan Word-documenten",
+
+  "Feature1Title": "Maak gebruik van de uitgebreide tekstverwerkingsfunctionaliteit",
+  "Feature1Desc": "Geen beperkingen meer tijdens het online bewerken van uw tekstdocumenten: geniet van 100% weergave, conversie, print en paginatrouw, werk met bestanden van elke grootte en complexiteit, gebruik de verbeterde set opmaakhulpmiddelen rechtstreeks vanuit uw browser. ONLYOFFICE Document Editor ondersteunt alle populaire formaten: DOC, DOCX, ODT, TXT, HTML, enz. PDF en XPS kunnen omgezet worden in DOCX om zo verder te bewerken.",
+
+  "Feature2Title": "Bewerk documenten volgens uw regels",
+  "Feature2Desc": "Beheer lettertypen en stijlen, maak tekst op, pas de regel- en alinea-afstand aan, voeg een kop- en voettekst in, wijzig de pagina-indeling om uw documenten er netjes en opgeruimd uit te laten zien. Spiegel- en rugmarge instellen om uw documenten voor te bereiden voor publicatie.",
+
+  "Feature3Title": "Gebruik AI helper",
+  "Feature3Desc": "Voer taken uit waarbij natuurlijke taal wordt begrepen of gegenereerd met behulp van de ChatGPT plugin. Krijg nauwkeurige antwoorden op uw vragen, vind snel informatie, genereer teksten, bouw uw code, enz. direct in de editor.",
+
+  "Feature4Title": "Wees creatief",
+  "Feature4Desc": "Maak aantrekkelijke documenten met afbeeldingen, aanpasbare grafieken, autoshapes en tabellen, Text Art, SmartArt graphic, vergelijkingen, drop caps en meer. Pas eenvoudig de ingevoegde objecten aan: verplaatsen, vergroten of verkleinen, uitlijnen, omloopstijlen wijzigen, vullen met kleur of patroon, enz. Maak professioneel ogende formulieren en sjablonen. Maak uw eigen tekeningen uit de vrije hand met een pen of markeerstift.",
+
+  "Feature5Title": "Verken diepere tekstanalyse",
+  "Feature5Desc": "Analyseer uw document: bekijk het aantal woorden, alinea's en tekens met of zonder spaties. Zoek naar een woord of een zin en vervang deze door een nieuwe met de service Zoeken en vervangen. Bekijk versiegeschiedenis, selecteer en herstel elke vorige versie met een simpele klik.",
+
+  "Feature6Title": "Verbeter de workflow van uw team",
+  "Feature6Desc": "Werk samen met uw team aan documenten: kies de juiste co-bewerkingsmodus - <0>Fast</0> om alle wijzigingen weer te geven terwijl u typt, of <0>Strict</0> om de wijzigingen alleen weer te geven na het opslaan. Laat opmerkingen achter en sorteer deze, en bespreek het proces in de ingebouwde chat of in Telegram. Gebruik de modus Wijzigingen bijhouden met de functie Preview in Review om te weten hoe uw document eruit zal zien als u de wijzigingen accepteert of weigert.",
+
+  "Feature7Title": "Documenten gemakkelijk vergelijken",
+  "Feature7Desc": "Vergelijk of combineer snel twee documenten om de verschillen te zien met revisiemarkeringen. Accepteer of weiger wijzigingen één voor één of allemaal tegelijk. Voeg de wijzigingen samen en sla ze op als een nieuwe versie van het vergeleken document.",
+
+  "Feature8Title": "Breid uw bewerkingsmogelijkheden uit",
+  "Feature8Desc": "Haal het meeste uit uw bewerking met de verzameling add-ons van derden. Voeg een YouTube-video in, voeg speciale symbolen toe, vertaal elk woord of elke zin, bewerk afbeeldingen rechtstreeks in uw document en nog veel meer.",
+
+  "LearnMoreHeading": "Meer informatie over ONLYOFFICE Documenten Editor",
+  "BlogDesc": "Hoe kunt u een Word document in HTML insluiten",
+  "BlogLink": "https://www.onlyoffice.com/blog/2022/07/embed-word-document-in-html/",
+  "TutorialsDesc": "Een nieuw lettertype toevoegen aan ONLYOFFICE Docs",
+  "TutorialsLink": "https://helpcenter.onlyoffice.com/installation/docs-community-install-fonts-linux.aspx",
+  "HintsDesc": "Ondersteunde elektronische tekstdocumenten bestandsformaten",
+  "HintsLink": "https://helpcenter.onlyoffice.com/userguides/docs-de.aspx",
+
+  "Q1": "Kan ik tekstdocumenten bewerken zonder internetverbinding?",
+  "A1": "Ja, u kunt gratis <0>ONLYOFFICE Desktop Editors</0> installeren en gebruiken om lokale documenten offline te bewerken.",
+  "Q2": "Biedt ONLYOFFICE native mobiele apps voor het bewerken van documenten?",
+  "A2": "Ja, u kunt de gratis <0>Documents</0> app installeren voor iOS- of Android-apparaten om onderweg aan documenten te werken.",
+  "Q3": "Is het mogelijk om de ONLYOFFICE documenteditor binnen mijn app onder mijn merk te gebruiken?",
+  "A3": "Ja, u kunt de documenteditor in uw app integreren. Gebruik <0>ONLYOFFICE Docs Developer</0>."
+}

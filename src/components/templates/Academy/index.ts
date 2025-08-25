@@ -1,0 +1,1 @@
+export { Academy } from "./Academy";

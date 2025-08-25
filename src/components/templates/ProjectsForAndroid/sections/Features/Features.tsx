@@ -26,7 +26,7 @@ const Features = () => {
                         position={{desktop: idx % 2 == 1 ? "right" : "left"}}
                         key={idx}
                         className="feature-item"
-                        heading={t(heading)}
+                        heading={t(String(heading))}                        
                         text={t(String(text))}
                         image={{
                             url: t(image.url),

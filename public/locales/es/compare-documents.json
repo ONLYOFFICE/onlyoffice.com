@@ -1,0 +1,22 @@
+{
+  "PageTitle": "Compara documentos | ONLYOFFICE Docs",
+  "PageDescription": "Encuentra las diferencias, aplica las correcciones y finaliza los textos con la característica de comparación de documentos",
+
+  "Header": "Compara documentos",
+  "SubHeader": "Encuentra las diferencias, aplica las correcciones y finaliza los textos con la característica de comparación de documentos",
+
+  "Feature1Title": "Compara dos documentos para ver sus diferencias",
+  "Feature1Desc": "Elige cualquier documento de tu almacenamiento en la nube, URL o archivo en la máquina para ver sus diferencias desde la perspectiva del archivo actual.",
+
+  "Feature2Title": "Navega por los cambios resaltados",
+  "Feature2Desc": "La comparación de documentos te permite comparar dos documentos de Word y resaltar las diferencias con el modo de seguimiento de cambios aplicado. Navega entre ellos y ve rápidamente el documento con todas las correcciones aceptadas o rechazadas con los modos de visualización.",
+
+  "Feature3Title": "Combina las versiones de archivos",
+  "Feature3Desc": "Acepta o rechaza los cambios individualmente o en conjunto para combinar los documentos y finalizar la versión del archivo comparado.",
+
+  "Feature4Title": "Explora el historial de versiones",
+  "Feature4Desc": "Compara las versiones actuales y anteriores del documento, restaura el documento en cualquier punto de su historia y encuentra el contenido perdido accidentalmente. Ve las fechas, horas y autores de las revisiones del documento.",
+
+  "Feature5Title": "Combina documentos",
+  "Feature5Desc": "La combinación de documentos es similar a la comparación. Sin embargo, al combinar dos documentos, los cambios de seguimiento iniciales no resueltos tras la revisión de alguien permanecerán en el archivo combinado, y podrás aceptarlos o rechazarlos si es necesario."
+}

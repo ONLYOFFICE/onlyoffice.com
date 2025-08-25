@@ -145,7 +145,7 @@ export const connectors: IConnectors[] = [
     {
         href: "/office-for-plone",
         backgroundPositionY: -1335,
-        width: 102
+        width: 122
     },
     {
         href: "/office-for-suitecrm",

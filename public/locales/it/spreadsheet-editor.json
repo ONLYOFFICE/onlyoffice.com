@@ -1,0 +1,38 @@
+{
+  "PageTitle": "Apri e modifica fogli Excel online | ONLYOFFICE",
+  "PageDescription": "Apri e crea fogli di calcolo Excel online, modifica foglio elettronico condiviso con il tuo team e collabora in tempo reale sui file Excel: xls, xlsx, csv, ods.",
+
+  "Header": "Potente editor di fogli di calcolo online per la tua applicazione web",
+  "SubHeader": "Apri, crea e modifica fogli di calcolo Excel online",
+
+  "Feature1Title": "Fai lavorare i numeri per te",
+  "Feature1Desc": "Semplifica e automatizza i tuoi calcoli online, organizza e analizza i dati con ONLYOFFICE Spreadsheet Editor. Apri Excel online, visualizza e modifica file .xlsx, .xls, .ods e .csv e salva fogli di calcolo online come PDF.",
+  "Feature2Title": "Esegui calcoli precisi con il minimo sforzo",
+  "Feature2Desc": "Ottieni risultati rapidi e accurati scegliendo tra oltre 400 funzioni e formule disponibili, utilizzando suggerimenti speciali per la sintassi. Applica tabelle preimpostate, usa intervalli nominati, ordina e filtra i dati per semplificare il lavoro con il tuo foglio di calcolo. Trova velocemente i contenuti necessari e sostituiscili con un clic.",
+  "Feature3Title": "Аnalizza facilmente i dati Excel online",
+  "Feature3Desc": "Analizza i dati e trova modelli usando tabelle pivot e formattazione condizionale. Filtra rapidamente il contenuto o indica lo stato di filtraggio corrente per vedere quali dati vengono visualizzati aggiungendo i Filtri dei dati alle tabelle formattate. Rimuovi i valori e le righe duplicate per rendere più precisi i calcoli.",
+  "Feature4Title": "Illustra i tuoi dati con elementi visivi",
+  "Feature4Desc": "Aggiungi diagrammi, sparkline ed elementi grafici. Inserisci equazioni, forme, immagini e usa Text Art, grafica SmartArt o video di YouTube per la presentazione e la visualizzazione dei dati. Crea i tuoi disegni a mano libera usando una penna o un evidenziatore.",
+  "Feature5Title": "Unisci gli sforzi del team",
+  "Feature5Desc": "Lavora su report aziendali e contabilità di magazzino in collaborazione con il tuo team. Accedi, apri e condividi fogli di calcolo o persino collegamenti a intervalli specifici, modificali in collaborazione in tempo reale, lascia commenti sulle celle e chatta con i collaboratori online senza dover uscire dall'editor. Consenti ad altri utenti di applicare i propri filtri durante la modifica di un foglio di calcolo senza alcun disturbo di coautori. Sfoglia la cronologia delle versioni e ripristina qualsiasi versione precedente del file.",
+  "Feature6Title": "Proteggi i tuoi fogli di calcolo",
+  "Feature6Desc": "Imposta una password per l'intero foglio di calcolo, cartella di lavoro o foglio separato. Nascondi le formule per mantenerle private. Blocca celle, forme e testo. Consenti la modifica degli intervalli di dati solo per certi utenti.",
+  "Feature7Title": "Automatizza i tuoi compiti con le macro",
+  "Feature7Desc": "Semplifica il tuo lavoro con i fogli di calcolo Excel. Crea le tue macro utilizzando la sintassi del linguaggio JavaScript, modificale e salvale per automatizzare attività comuni e ripetitive. Esegui le macro automaticamente o limita il loro avvio automatico.",
+  "Feature8Title": "Usa l'aiutante AI",
+  "Feature8Desc": "Esegui attività che implicano la comprensione o la generazione di un linguaggio naturale utilizzando il plugin ChatGPT. Ottieni risposte accurate alle tue domande, trova rapidamente informazioni, genera testi, costruisci il tuo codice e altro direttamente nell'editor.",
+  "Feature9Title": "Fai ancora di più con i plugin",
+  "Feature9Desc": "Estendi le funzionalità di modifica dei fogli di calcolo con strumenti aggiuntivi. Ottieni una rapida traduzione di qualsiasi testo nel tuo file, modifica elementi visivi con un editor di foto integrato e altro ancora.",
+
+  "LearnMoreHeading": "Scopri di più su ONLYOFFICE Spreadsheet Editor",
+  "BlogDesc": "Tutto sull'anteprima di stampa nei fogli di calcolo Excel",
+  "TutorialsDesc": "Co-editing di fogli di calcolo in tempo reale",
+  "HintsDesc": "Formati supportati di fogli di calcolo",
+
+  "Q1": "Posso modificare i fogli di calcolo senza connessione a Internet?",
+  "A1": "Sì, puoi installare e utilizzare <0>ONLYOFFICE Desktop Editors</0> gratuitamente per modificare i fogli di calcolo locali offline.",
+  "Q2": "ONLYOFFICE offre app mobili native per la modifica di fogli di calcolo?",
+  "A2": "Sì, puoi installare l'app <0>Documents</0> gratuita per dispositivi iOS o Android per lavorare su fogli di calcolo on-the-go.",
+  "Q3": "È possibile utilizzare l'editor di fogli di calcolo ONLYOFFICE all'interno della mia app con il mio marchio?",
+  "A3": "Sì, puoi integrare l'editor di fogli di calcolo nella tua app. Utilizza <0>ONLYOFFICE Docs Developer</0>."
+}

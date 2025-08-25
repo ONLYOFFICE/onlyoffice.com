@@ -65,13 +65,15 @@ const UnsubscribeTemplate = ({ email }: IUnsubscribeTemplate) => {
     const data = await res.json();
     if (data.status === "success") {
       setStatus(statusValue);
+      setActiveBlock("portals");
     } else {
       setStatus("notRegistered");
     }
   };
 
   const handleReSubscribe = () => handleSubscription(true, true, "resubscribe");
-  const handleSubscribe = () => handleSubscription(false, false, "unsubscribe");
+  const handleUnsubscribe = () =>
+    handleSubscription(false, false, "unsubscribe");
 
   const handleSubscribeNews = async () => {
     if (subscribeStatus === "error" || subscribeStatus === "success") {
@@ -150,8 +152,8 @@ const UnsubscribeTemplate = ({ email }: IUnsubscribeTemplate) => {
                     i18nKey="WouldYouLikToUnsubscribeFromAllOOEmails"
                     components={[
                       <StyledUnsubscribeBannerBtn
-                        onClick={handleSubscribe}
-                        data-testid="marketing-unsubscribe-button"
+                        onClick={handleUnsubscribe}
+                        data-testid="unsubscribe-button"
                         key="0"
                       />,
                     ]}
@@ -248,7 +250,7 @@ const UnsubscribeTemplate = ({ email }: IUnsubscribeTemplate) => {
                   i18nKey="WouldYouLikToUnsubscribeFromAllOOEmails"
                   components={[
                     <StyledUnsubscribeBannerBtn
-                      onClick={handleSubscribe}
+                      onClick={handleUnsubscribe}
                       data-testid="unsubscribe-button"
                       key="0"
                     />,

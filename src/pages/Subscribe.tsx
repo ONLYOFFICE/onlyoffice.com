@@ -40,20 +40,28 @@ export async function getServerSideProps({
   query,
 }: {
   locale: ILocale["locale"];
-  query: { id: string; SubscribePage_testing: string };
+  query: { id?: string; SubscribePage_testing?: string };
 }) {
-  const validateUnsubscribeIdData = await validateUnsubscribeId({
-    id: query.id,
-  });
+  let email: string | undefined;
+  let firstname: string | undefined;
+  let type: number | undefined;
 
-  let parsedData;
-  try {
-    parsedData = JSON.parse(validateUnsubscribeIdData.data?.email || "{}");
-  } catch {
-    parsedData = {};
+  if (query.id) {
+    const validateUnsubscribeIdData = await validateUnsubscribeId({
+      id: query.id,
+    });
+
+    let parsedData;
+    try {
+      parsedData = JSON.parse(validateUnsubscribeIdData.data?.email || "{}");
+    } catch {
+      parsedData = {};
+    }
+
+    email = parsedData.email;
+    firstname = parsedData.firstname;
+    type = parsedData.type;
   }
-
-  const { email, firstname, type } = parsedData;
 
   if (!email && query.SubscribePage_testing !== "4SPtesting") {
     return {
@@ -63,7 +71,7 @@ export async function getServerSideProps({
 
   if (email) {
     try {
-      subscribeChecking(db.core, email, firstname, type);
+      await subscribeChecking(db.core, email, firstname ?? "", type ?? 0);
     } catch {
       return {
         redirect: { destination: "/", permanent: false },

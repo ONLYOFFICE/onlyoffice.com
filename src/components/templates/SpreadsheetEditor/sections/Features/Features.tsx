@@ -10,7 +10,7 @@ const Features = () => {
     <EditorsFeatures
       items={items.map((items) => ({
         ...items,
-        heading: t2(items.heading),
+        heading: t2(String(items.heading)),
         text: t2(String(items.text)),
         links: items.links?.map((link) => ({
           ...link,
