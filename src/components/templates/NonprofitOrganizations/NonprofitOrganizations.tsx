@@ -3,6 +3,7 @@ import { LogosBlock } from "./sections/LogosBlock";
 import { Features } from "./sections/Features";
 import { FreeCloud } from "./sections/FreeCloud";
 import { Already } from "./sections/Already";
+import { GetAccess } from "./sections/GetAccess";
 
 const NonprofitOrganizationsTemplate = () => {
   return (
@@ -12,6 +13,7 @@ const NonprofitOrganizationsTemplate = () => {
       <Features />
       <FreeCloud />
       <Already />
+      <GetAccess />
     </>
   );
 };

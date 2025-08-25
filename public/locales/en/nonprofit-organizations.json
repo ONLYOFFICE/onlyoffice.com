@@ -30,5 +30,7 @@
   "Plone": "Plone",
   "SyncAndShareSolution": "sync and share solution",
   "ConnectONLYOFFICEDocsToCollaborate": "Connect ONLYOFFICE Docs to collaborate on docs with your distributed team/volunteers within your existing infrastructure.",
-  "GetItNow": "Get it now"
+  "GetItNow": "Get it now",
+  "GetDesktopAndMobileAccess": "Get desktop and mobile access",
+  "ONLYOFFICEOffersFreeDesktopApps": "ONLYOFFICE offers free desktop apps for Windows, Linux, and Mac OS to work seamlessly with Word, Excel, and PowerPoint file types. Researchers can easily connect it to the cloud (ONLYOFFICE, Nextcloud, ownCloud, Seafile, Liferay, or kDrive) to share and collaborate on documents in real time. Free mobile apps for iOS and Android are also available."
 }
