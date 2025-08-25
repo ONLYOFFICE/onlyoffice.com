@@ -50,8 +50,15 @@ const nextConfig = {
         destination: "/slides/:path*",
         permanent: true,
       },
+      {
+        source: "/groups",
+        destination: "/workspace",
+        permanent: true,
+      },
     ];
   },
 };
 
 module.exports = nextConfig;
+
+
