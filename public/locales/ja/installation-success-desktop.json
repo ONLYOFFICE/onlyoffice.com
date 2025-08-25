@@ -1,0 +1,37 @@
+{
+  "PageTitle": "ONLYOFFICEをインストール頂き、ありがとうございます！",
+  "PageDescription": "ONLYOFFICE Features. Use online document editors, options on document management, project management, Gantt Chart, crm system, business collaboration, calendar.",
+
+  "HeroTitle": "<0>ONLYOFFICEデスクトップエディタ</0>をご利用いただきありがとうございます！",
+  "HeroSubTitle": "ONLYOFFICEユーザーの皆様が、私たちのコミュニティに参加してくださったことを嬉しく思います。",
+
+  "EditingCapabilities": "ONLYOFFICEデスクトップエディタを使えば、編集機能は無限大です：",
+  "OpenCreateEdit": "ドキュメント、シート、スライド、PDFファイルを<0>開き、作成、編集</0>",
+  "StylingFormattingTools": "便利な<0>スタイリングやフォーマットツール</0>を多数使用",
+  "CollaborateOnDocs": "クラウドプラットフォーム内でドキュメント上で<0>コラボレーション</0>",
+  "CreateFillOut": "PDFの記入可能なフォームを<0>作成、記入</0>",
+  "ProtectDocs": "パスワード、透かし、デジタル署名で<0>Protect your docs</0>",
+
+  "StayTuned": "最新情報をお届けします",
+  "StayTunedSubTitle": "メールマガジンに登録すると、アプリのヒントや最新情報、特別オファーが届きます！",
+  "StayTunedText": "*「登録する」をクリックすると、<0>サービスの利用</0>および<1>個人データの処理</1>に関するルールに同意したことになります。",
+
+  "Placeholder": "メールアドレスを入力してください",
+  "Subscribe": "登録する",
+  "EmailIsEmpty": "メールが入力されていません",
+  "EmailIsIncorrect": "メールが正しくありません",
+  "ThankYouForSubscribing": "ご登録ありがとうございます！メールを確認してください。",
+
+  "ExploreOOSolutions": "ONLYOFFICEソリューションを見る",
+  "Cloud": "クラウド",
+  "ConnectToYourCloud": "クラウドへの接続",
+  "MobileOffice": "モバイルオフィス",
+  "DownloadMobileOffice": "モバイルオフィスのダウンロード",
+  "OODocSpace": "ONLYOFFICE DocSpace",
+  "TryDocSpace": "ONLYOFFICE DocSpaceを試す",
+
+  "UsefulLinks": "お役立ちリンク",
+  "ReadBlog": "ヒントや最新ニュースについては<0>ブログをお読みください</0>",
+  "LearnMore": "ONLYOFFICE Docsの<0>詳細情報</0>",
+  "ContactUs": "ご質問やご提案がありますか？<0>info@onlyoffice.com</0>までご連絡ください。"
+}
