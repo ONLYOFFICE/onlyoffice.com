@@ -242,7 +242,7 @@ const DownloadModal = ({
               checkFormValid();
             }}
             value={formData.email}
-            label="Email"
+            label={t("Email")}
             placeholder="name@domain.com"
             caption={
               formData.email.length === 0

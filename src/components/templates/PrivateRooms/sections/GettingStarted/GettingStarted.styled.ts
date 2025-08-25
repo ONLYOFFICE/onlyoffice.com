@@ -217,37 +217,6 @@ const StyledButton = styled(Button)`
     }
 `;
 
-const StyledQuoteModal = styled.div`
-
-[class*="StyledQuoteModal"] {
-    padding: 40px;
-  }
-
-[class*="StyledModalWrapper"] {
-    max-width: 624px;
-}
-
-[class*="StyledQuoteModalWrapper"] {
-    padding: 0;
-}
-
-[class*="StyledQuoteModalGetItNow"] {
-    padding: 0;
-}
-
-[class*="StyledHeading"] {
-    text-align: left;
-}
-
-[class*="StyledText"] {
-    color: #808080;
-}
-
-[class*="StyledPhoneInput"] {
-    display: none;
-}
-`;
-
 export {
     StyledSection,
     StyledGettingStartedHeading,
@@ -259,5 +228,4 @@ export {
     StyledWrapperRightBlockHeading,
     StyledWrapperRightBlockText,
     StyledButton,
-    StyledQuoteModal
 }

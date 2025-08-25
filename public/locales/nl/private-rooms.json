@@ -75,5 +75,19 @@
     "WeDoNotUseMaster": "Wij gebruiken geen mastersleutels bij de versleuteling van documenten. De asymmetrische versleuteling met persoonlijke RSA-sleutelparen die in ONLYOFFICE wordt gebruikt, is een betrouwbaardere methode die ook versleutelde samenwerking mogelijk maakt.",
 
     "FillOutThisForm": "Vul dit formulier in om uw download te ontvangen",
-    "GetItNowText": "Door te klikken op “Download”, begrijpt u en gaat u akkoord met onze <0>SLA</0> en <1>privacyverklaring</1>."
+    "GetItNowText": "Door te klikken op “Download”, begrijpt u en gaat u akkoord met onze <0>SLA</0> en <1>privacyverklaring</1>.",
+
+    "CardFormFullName": "Volledige naam",
+    "CardFormFullNameIsEmpty": "Volledige naam is leeg",
+    "CardFormFullNameIsIncorrect": "Volledige naam is onjuist",
+    "CardFormPlaceholderName": "Voornaam Achternaam",
+    "CardFormCompanyName": "Bedrijfsnaam",
+    "CardFormCompanyNameIsEmpty": "Bedrijfsnaam is leeg",
+    "CardFormEmail": "E-mail",
+    "CardFormPlaceholderEmail": "name@domain.com",
+    "CardFormEmailIsEmpty": "E-mail is leeg",
+    "CardFormEmailIsIncorrect": "E-mailadres is onjuist",
+
+    "CardsFormSuccess": "Uw verzoek is succesvol verzonden",
+    "CardsFormError": "Excuses, maar er is een fout gemaakt, probeer het later nog eens"
 }

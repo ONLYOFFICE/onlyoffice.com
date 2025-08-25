@@ -75,5 +75,19 @@
     "WeDoNotUseMaster": "We do not use master keys in document encryption. The asymmetric encryption with personal RSA key pairs used in ONLYOFFICE is a more reliable method that also enables encrypted collaboration.",
 
     "FillOutThisForm": "Fill out this form to get your download",
-    "GetItNowText": "By clicking Download, you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>."
+    "GetItNowText": "By clicking Download, you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>.",
+
+    "CardFormFullName": "Full name",
+    "CardFormFullNameIsEmpty": "Full name is empty",
+    "CardFormFullNameIsIncorrect": "Full name is incorrect",
+    "CardFormPlaceholderName": "First name Last name",
+    "CardFormCompanyName": "Company name",
+    "CardFormCompanyNameIsEmpty": "Company name is empty",
+    "CardFormEmail": "Email",
+    "CardFormPlaceholderEmail": "name@domain.com",
+    "CardFormEmailIsEmpty": "Email is empty",
+    "CardFormEmailIsIncorrect": "Email is incorrect",
+
+    "CardsFormSuccess": "Your request has been sent successfully",
+    "CardsFormError": "We are sorry, but an error occurred, try again later"
 }

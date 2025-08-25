@@ -1,0 +1,17 @@
+{
+  "FullName": "Puno ime",
+  "FullNameIsIncorrect": "Full name is incorrect",
+  "NameSurname": "Ime Prezime",
+  "FullNameIsEmpty": "Puno ime je prazno",
+  "Email": "Email",
+  "EmailIsEmpty": "Email is empty",
+  "EmailIsIncorrect": "Email is incorrect",
+  "CompanyName": "Naziv kompanije",
+  "CompanyNameIsEmpty": "Naziv kompanije je prazno",
+  "CompanyWebsite": "Sajt kompanije",
+  "WebsiteIsIncorrect": "Website is incorrect",
+  "Comment": "Komentar",
+  "GetItNow": "Nabavite ga odmah",
+  "successfullyRequestText": "Vaš zahtev je uspešno poslat",
+  "errorRequestText": "Žao nam je, ali došlo je do greške, pokušajte ponovo kasnije"
+}

@@ -75,5 +75,19 @@
     "WeDoNotUseMaster": "ドキュメントの暗号化にはマスターキーは使用しません。ONLYOFFICEで採用している個人用RSAキーペアによる非対称暗号化方式は、暗号化コラボレーションも可能な、より信頼性の高い方式です。",
 
     "FillOutThisForm": "このフォームに記入して、ダウンロードしてください",
-    "GetItNowText": "[ダウンロード]をクリックすると、<0>当社のサービス水準合意</0>および<1>個人情報保護方針</1>を理解し、同意したことになります。"
+    "GetItNowText": "[ダウンロード]をクリックすると、<0>当社のサービス水準合意</0>および<1>個人情報保護方針</1>を理解し、同意したことになります。",
+
+    "CardFormFullName": "フルネーム",
+    "CardFormFullNameIsEmpty": "フルネームが入力されていません",
+    "CardFormFullNameIsIncorrect": "フルネームが正しくありません",
+    "CardFormPlaceholderName": "苗字 下の名前",
+    "CardFormCompanyName": "会社名",
+    "CardFormCompanyNameIsEmpty": "会社名が入力されていません",
+    "CardFormEmail": "メールアドレス",
+    "CardFormPlaceholderEmail": "name@domain.com",
+    "CardFormEmailIsEmpty": "メールが入力されていません",
+    "CardFormEmailIsIncorrect": "メールが正しくありません",
+
+    "CardsFormSuccess": "リクエストが正常に送信されました",
+    "CardsFormError": "申し訳ありません。エラーが発生しましたので、後でもう一度お試しください"
 }

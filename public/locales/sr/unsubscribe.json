@@ -1,0 +1,20 @@
+{
+  "PageTitle": "Unsubscribe | ONLYOFFICE",
+  "YouHaveSuccessfullyUnsubscribed": "You have successfully unsubscribed from all email communications",
+  "TheEmailAddressHasBeenSuccessfullyRemoved": "The email address <0>{{email}}</0> has been successfully removed from the ONLYOFFICE mailing list. You will no longer receive any email communications from ONLYOFFICE.",
+  "IfYouDidThisByMistakeYouCanResubscribe": "If you did this by mistake, you can resubscribe by clicking the button below.",
+  "Resubscribe": "Resubscribe",
+  "OOUpdatesAndSpecialOffers": "ONLYOFFICE Updates and Special Offers",
+  "WishToKeepUpToDate": "Wish to keep up to date with ONLYOFFICE news and updates?",
+  "YourEmail": "Your e-mail*",
+  "Subscribe": "Subscribe",
+  "YouHaveBeenResubscribed": "You have been resubscribed",
+  "TheEmailHasBeenSuccessfullyAdded": "The email - <0>{{email}}</0> - has been successfully added to ONLYOFFICE mailing list. You will receive product updates and announcements.",
+  "WouldYouLikToUnsubscribeFromAllOOEmails": "Would you like to unsubscribe from all ONLYOFFICE emails: product updates and announcements, portal notifications and tips and tricks? Click the link: <0>Unsubscribe from all</0>",
+  "EmailIsEmpty": "Email is empty",
+  "EmailIsIncorrect": "Email is incorrect",
+  "TheEmailAddressIsNotRegistered": "The <0>{{email}}</0> email address is not registered.",
+  "UnsubscribeSuccessful": "Unsubscribe Successful",
+  "TheEmailHasBeenSuccessfullyRemoved": "The email - <0>{{email}}</0> - has been successfully removed from the ONLYOFFICE mailing list. You will no longer receive product updates and announcements.",
+  "IfYouDidThisInErrorYouMayResubscribe": "If you did this in error, you may resubscribe by clicking the button below."
+}

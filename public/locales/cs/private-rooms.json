@@ -75,5 +75,19 @@
     "WeDoNotUseMaster": "Při šifrování dokumentů nepoužíváme hlavní klíč. Asymetrické šifrování pomocí párů osobních klíčů RSA používané v ONLYOFFICE je spolehlivější metoda, která umožňuje i šifrovanou spolupráci.",
 
     "FillOutThisForm": "Vyplňte formulář a stáhněte si ONLYOFFICE",
-    "GetItNowText": "Kliknutím na Stáhnout potvrzujete porozumění a souhlas s naší <0>SLA</0> a <1>Prohlášením o ochraně osobních údajů</1>."
+    "GetItNowText": "Kliknutím na Stáhnout potvrzujete porozumění a souhlas s naší <0>SLA</0> a <1>Prohlášením o ochraně osobních údajů</1>.",
+
+    "CardFormFullName": "Celé jméno",
+    "CardFormFullNameIsEmpty": "Pole pro celé jméno je prázdné",
+    "CardFormFullNameIsIncorrect": "Pole pro celé jméno nesprávný",
+    "CardFormPlaceholderName": "Jméno Příjmení",
+    "CardFormCompanyName": "Název společnosti",
+    "CardFormCompanyNameIsEmpty": "Pole pro název společnosti je prázdné",
+    "CardFormEmail": "E-mail",
+    "CardFormPlaceholderEmail": "name@domain.com",
+    "CardFormEmailIsEmpty": "Pole pro e-mail je prázdné",
+    "CardFormEmailIsIncorrect": "Nesprávný e-mail",
+
+    "CardsFormSuccess": "Vaše žádost byla úspěšně odeslána",
+    "CardsFormError": "Je nám líto, ale došlo k chybě, zkuste to znovu později"
 }

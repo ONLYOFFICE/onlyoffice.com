@@ -1,0 +1,17 @@
+{
+  "FullName": "全名",
+  "FullNameIsIncorrect": "全名错误",
+  "NameSurname": "全名",
+  "FullNameIsEmpty": "全名为空",
+  "Email": "电子邮箱",
+  "EmailIsEmpty": "电子邮箱为空",
+  "EmailIsIncorrect": "电子邮箱错误",
+  "CompanyName": "公司名称",
+  "CompanyNameIsEmpty": "公司名称为空",
+  "CompanyWebsite": "网站",
+  "WebsiteIsIncorrect": "网站错误",
+  "Comment": "写评论",
+  "GetItNow": "立即获取",
+  "successfullyRequestText": "您的请求已成功发送！",
+  "errorRequestText": "很抱歉，发生错误，请稍后重试"
+}

@@ -75,5 +75,19 @@
     "WeDoNotUseMaster": "Wir verwenden bei der Verschlüsselung von Dokumenten keine Hauptschlüssel. Die asymmetrische Verschlüsselung mit privaten RSA-Schlüsselpaaren, die in ONLYOFFICE verwendet wird, ist eine sicherere Methode, die auch eine verschlüsselte Zusammenarbeit ermöglicht.",
 
     "FillOutThisForm": "Füllen Sie das Formular aus, um Dokumente herunterzuladen",
-    "GetItNowText": "Indem Sie auf Herunterladen clicken, stimmen Sie unserem <0>SLA</0> und <1>Datenschutzerklärung</1> zu."
+    "GetItNowText": "Indem Sie auf Herunterladen clicken, stimmen Sie unserem <0>SLA</0> und <1>Datenschutzerklärung</1> zu.",
+
+    "CardFormFullName": "Vollständiger Name",
+    "CardFormFullNameIsEmpty": "Das Feld Vollständiger Name ist leer",
+    "CardFormFullNameIsIncorrect": "Das Feld Vollständiger Name ist falsch",
+    "CardFormPlaceholderName": "Vorname Nachname",
+    "CardFormCompanyName": "Unternehmen",
+    "CardFormCompanyNameIsEmpty": "Das Feld Unternehmen ist leer",
+    "CardFormEmail": "Email",
+    "CardFormPlaceholderEmail": "name@domain.com",
+    "CardFormEmailIsEmpty": "E-Mail-Adresse ist leer",
+    "CardFormEmailIsIncorrect": "Die E-Mail-Adresse ist falsch",
+
+    "CardsFormSuccess": "Ihre Anfrage wurde erfolgreich gesendet",
+    "CardsFormError": "Entschuldigung, ein Fehler ist aufgetreten. Bitte versuchen Sie erneut später"
 }

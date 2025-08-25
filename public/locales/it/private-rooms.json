@@ -75,5 +75,19 @@
     "WeDoNotUseMaster": "Non utilizziamo chiavi master nella crittografia dei documenti. La crittografia asimmetrica con coppie di chiavi RSA personali utilizzata in ONLYOFFICE è un metodo più affidabile che consente anche la collaborazione crittografata.",
 
     "FillOutThisForm": "Compila questo modulo per ottenere il tuo download",
-    "GetItNowText": "Facendo clic su Scarica, comprendi e accetti le nostre <0>dichiarazioni SLA</0> e <1>sulla privacy</1>."
+    "GetItNowText": "Facendo clic su Scarica, comprendi e accetti le nostre <0>dichiarazioni SLA</0> e <1>sulla privacy</1>.",
+
+    "CardFormFullName": "Nome e cognome",
+    "CardFormFullNameIsEmpty": "Il Nome e cognome è vuoto",
+    "CardFormFullNameIsIncorrect": "Il Nome e cognome è sbagliato",
+    "CardFormPlaceholderName": "Nome Cognome",
+    "CardFormCompanyName": "Nome dell'azienda",
+    "CardFormCompanyNameIsEmpty": "Nome dell'azienda è vuoto",
+    "CardFormEmail": "Email",
+    "CardFormPlaceholderEmail": "name@domain.com",
+    "CardFormEmailIsEmpty": "Email è vuoto",
+    "CardFormEmailIsIncorrect": "Email è sbagliato",
+
+    "CardsFormSuccess": "La tua richiesta è stata inviata con successo",
+    "CardsFormError": "Siamo spiacenti, si è verificato un errore, riprovare più tardi"
 }

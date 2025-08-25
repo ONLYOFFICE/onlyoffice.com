@@ -35,11 +35,11 @@ export const navDesktopData: IHeroNavData[] = [
   },
   {
     id: "pre-installed-on",
-    label: "Pre-installed on",
+    label: "PreInstalledOn",
   },
   {
     id: "available-on",
-    label: "Available on",
+    label: "AvailableOn",
   },
 ];
 

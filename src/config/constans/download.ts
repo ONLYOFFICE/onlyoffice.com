@@ -1,11 +1,11 @@
 export const dockerDocument = {
-  version: "9.0.2.1",
-  date: "2025, 04, 16",
+  version: "9.0.4.1",
+  date: "2025, 08, 05",
 };
 
 export const documentServer = {
-  version: "9.0.2",
-  date: "2025, 06, 26",
+  version: "9.0.4",
+  date: "2025, 08, 05",
 };
 
 export const alibabaCloudImage = {
@@ -14,8 +14,8 @@ export const alibabaCloudImage = {
 };
 
 export const docspaceEnterprise = {
-  version: "3.1.1",
-  date: "2025, 06, 03",
+  version: "3.2.1",
+  date: "2025, 07, 23",
 };
 
 export const amiDocspace = {

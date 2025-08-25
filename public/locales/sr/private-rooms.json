@@ -75,5 +75,19 @@
     "WeDoNotUseMaster": "Ne koristimo glavne ključeve u enkripciji dokumenata. Asimetrična enkripcija sa ličnim RSA ključnim parovima koji se koriste u ONLYOFFICE je pouzdanija metoda koja takođe omogućava enkriptovanu saradnju.",
 
     "FillOutThisForm": "Popunite ovaj obrazac da biste dobili preuzimanje",
-    "GetItNowText": "Klikom na Preuzmi, razumete i slažete se sa našim <0>SLA</0> i <1>Izjavom o privatnosti</1>."
+    "GetItNowText": "Klikom na Preuzmi, razumete i slažete se sa našim <0>SLA</0> i <1>Izjavom o privatnosti</1>.",
+
+    "CardFormFullName": "Puno ime",
+    "CardFormFullNameIsEmpty": "Ime i prezime su prazni",
+    "CardFormFullNameIsIncorrect": "Full name is incorrect",
+    "CardFormPlaceholderName": "Ime i prezime",
+    "CardFormCompanyName": "Ime kompanije",
+    "CardFormCompanyNameIsEmpty": "Ime kompanije je prazno",
+    "CardFormEmail": "Email",
+    "CardFormPlaceholderEmail": "name@domain.com",
+    "CardFormEmailIsEmpty": "Email is empty",
+    "CardFormEmailIsIncorrect": "Email is incorrect",
+
+    "CardsFormSuccess": "Vaš zahtev je uspešno poslat",
+    "CardsFormError": "Žao nam je, ali došlo je do greške, pokušajte ponovo kasnije"
 }

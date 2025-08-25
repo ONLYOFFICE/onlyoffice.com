@@ -1,0 +1,20 @@
+{
+  "PageTitle": "Annuler | ONLYOFFICE",
+  "YouHaveSuccessfullyUnsubscribed": "Vous vous êtes désabonné(e) avec succès de toutes les communications par email.",
+  "TheEmailAddressHasBeenSuccessfullyRemoved": "L'adresse email <0>{{email}}</0> a été retirée avec succès de la liste de diffusion d'ONLYOFFICE. Vous ne recevrez plus aucune communication par email de la part d'ONLYOFFICE.",
+  "IfYouDidThisByMistakeYouCanResubscribe": "Si vous avez effectué cette action par erreur, vous pouvez vous réabonner en cliquant sur le bouton ci-dessous.",
+  "Resubscribe": "RÉABONNER",
+  "OOUpdatesAndSpecialOffers": "Mises à jour et offres spéciales de ONLYOFFICE ",
+  "WishToKeepUpToDate": "Souhaitez-vous rester à jour sur les actualités et les mises à jour ONLYOFFICE ? ",
+  "YourEmail": "Votre adresse e-mail*",
+  "Subscribe": "S'abonner",
+  "YouHaveBeenResubscribed": "Abonnement renouvellé",
+  "TheEmailHasBeenSuccessfullyAdded": "Votre adresse - <0>{{email}}</0> - de courriel a bien été rajouté à la liste de diffusion ONLYOFFICE. Vous allez de nouveau recevoir nos actualités et annonces.",
+  "WouldYouLikToUnsubscribeFromAllOOEmails": "Souhaitez-vous vous désabonner de tous les courriel de la part de ONLYOFFICE : actualités sur les mises à jour de produits et annonces, notifications du portail, tutos et astuces ? Cliquez ce lien : <0>Se désabonner de toutes les newsletters</0>",
+  "EmailIsEmpty": "Le champ Email est vide",
+  "EmailIsIncorrect": "L'adresse email est incorrecte",
+  "TheEmailAddressIsNotRegistered": "L'adresse <0>{{email}}</0> n'est pas enregistrée.",
+  "UnsubscribeSuccessful": "Désabonnement réussi",
+  "TheEmailHasBeenSuccessfullyRemoved": "Votre adresse de courriel - <0>{{email}}</0> - a bien été supprimée de la liste de diffusion ONLYOFFICE. Vous ne recevrez plus de messages ou d'annonces de notre part.",
+  "IfYouDidThisInErrorYouMayResubscribe": "Si vous vous êtes désabonné par erreur, inscrivez-vous de nouveau en cliquant le bouton ci-dessous."
+}

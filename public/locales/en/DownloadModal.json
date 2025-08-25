@@ -3,6 +3,7 @@
   "FullNameIsIncorrect": "Full name is incorrect",
   "NameSurname": "Name Surname",
   "FullNameIsEmpty": "Full name is empty",
+  "Email": "Email",
   "EmailIsEmpty": "Email is empty",
   "EmailIsIncorrect": "Email is incorrect",
   "CompanyName": "Company name",

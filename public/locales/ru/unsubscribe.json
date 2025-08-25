@@ -1,0 +1,20 @@
+{
+  "PageTitle": "Отказ от подписки | ONLYOFFICE",
+  "YouHaveSuccessfullyUnsubscribed": "Вы отписались от всех рассылок по электронной почте",
+  "TheEmailAddressHasBeenSuccessfullyRemoved": "Адрес электронной почты <0>{{email}}</0> был успешно удален из списка рассылки ONLYOFFICE. Вы больше не будете получать рассылок по электронной почте от ONLYOFFICE.",
+  "IfYouDidThisByMistakeYouCanResubscribe": "Если произошла ошибка, вы можете подписаться повторно, нажав на кнопку ниже.",
+  "Resubscribe": "Подписаться повторно",
+  "OOUpdatesAndSpecialOffers": "Обновления и специальные предложения ONLYOFFICE",
+  "WishToKeepUpToDate": "Хотите быть в курсе новостей и обновлений ONLYOFFICE?",
+  "YourEmail": "Ваш e-mail*",
+  "Subscribe": "Подписаться",
+  "YouHaveBeenResubscribed": "Вы были повторно подписаны",
+  "TheEmailHasBeenSuccessfullyAdded": "Ваш адрес электронной почты - <0>{{email}}</0> - был успешно добавлен в список рассылки ONLYOFFICE. Вы будете получать новости проекта.",
+  "WouldYouLikToUnsubscribeFromAllOOEmails": "Хотите отказаться от подписки на все электронные письма ONLYOFFICE: новостей, уведомлений портала и полезных советов? Щелкните ссылку: <0>Отписаться от всего</0>",
+  "EmailIsEmpty": "Поле Email не заполнено",
+  "EmailIsIncorrect": "Неверный Email",
+  "TheEmailAddressIsNotRegistered": "Адрес электронной почты <0>{{email}}</0> не зарегистрирован.",
+  "UnsubscribeSuccessful": "Вы отписались от рассылки",
+  "TheEmailHasBeenSuccessfullyRemoved": "Электронный адрес - <0>{{email}}</0> - был успешно удален из списка рассылки ONLYOFFICE. Вы больше не будете получать новости о проекте.",
+  "IfYouDidThisInErrorYouMayResubscribe": "Если вы отписались по ошибке, вы можете повторно подписаться, нажав кнопку ниже."
+}

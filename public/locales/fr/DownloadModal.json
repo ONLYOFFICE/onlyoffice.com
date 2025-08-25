@@ -1,0 +1,17 @@
+{
+  "FullName": "Nom complet",
+  "FullNameIsIncorrect": "Le champ Nom complet est incorrecte",
+  "NameSurname": "Nom complet",
+  "FullNameIsEmpty": "Le champ Nom complet est vide",
+  "Email": "Courrier électronique",
+  "EmailIsEmpty": "Le champ Email est vide",
+  "EmailIsIncorrect": "L'adresse email est incorrecte",
+  "CompanyName": "Entreprise",
+  "CompanyNameIsEmpty": "Le champ Entreprise est vide",
+  "CompanyWebsite": "Site Web",
+  "WebsiteIsIncorrect": "Le champ Site Web est incorrecte",
+  "Comment": "Laisser un commentaire",
+  "GetItNow": "Obtenir maintenant",
+  "successfullyRequestText": "Votre demande a été envoyée avec succès",
+  "errorRequestText": "Désolé, une erreur est survenue. Veuillez réessayer plus tard."
+}
