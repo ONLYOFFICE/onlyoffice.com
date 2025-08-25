@@ -18,5 +18,17 @@
   "CreateAFreeDocSpaceCloud": "Create a free DocSpace Cloud – get 2 GB of storage and up to 20 admins.",
   "SubmitRequest": "Submit request",
   "FreeCloudImageUrl": "/images/templates/nonprofit-organizations/free-cloud/en/cost-effective.png",
-  "FreeCloudImageUrl2x": "/images/templates/nonprofit-organizations/free-cloud/en/cost-effective@2x.png"
+  "FreeCloudImageUrl2x": "/images/templates/nonprofit-organizations/free-cloud/en/cost-effective@2x.png",
+  "AlreadyUse": "Already use",
+  "Nextcloud": "Nextcloud",
+  "ownCloud": "ownCloud",
+  "Alfresco": "Alfresco",
+  "Confluence": "Confluence",
+  "SharePoint": "SharePoint",
+  "Liferay": "Liferay",
+  "HumHub": "HumHub",
+  "Plone": "Plone",
+  "SyncAndShareSolution": "sync and share solution",
+  "ConnectONLYOFFICEDocsToCollaborate": "Connect ONLYOFFICE Docs to collaborate on docs with your distributed team/volunteers within your existing infrastructure.",
+  "GetItNow": "Get it now"
 }

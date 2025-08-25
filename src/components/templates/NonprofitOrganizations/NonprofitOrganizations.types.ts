@@ -10,7 +10,19 @@ interface IFeaturesItems {
   description: string;
 }
 
+type TAlreadyItems =
+  "Nextcloud" |
+  "ownCloud" |
+  "Alfresco" |
+  "Confluence" |
+  "SharePoint" |
+  "Liferay" |
+  "HumHub" |
+  "Plone" |
+  "SyncAndShareSolution";
+
 export type {
   ILogosBlockItems,
-  IFeaturesItems
+  IFeaturesItems,
+  TAlreadyItems
 }
