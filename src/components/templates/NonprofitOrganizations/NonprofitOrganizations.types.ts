@@ -4,6 +4,13 @@ interface ILogosBlockItems {
   bgPositionX: string;
 }
 
+interface IFeaturesItems {
+  id: number;
+  heading: string;
+  description: string;
+}
+
 export type {
-  ILogosBlockItems
+  ILogosBlockItems,
+  IFeaturesItems
 }
