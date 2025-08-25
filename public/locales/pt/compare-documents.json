@@ -1,0 +1,22 @@
+{
+  "PageTitle": "Compare documentos Word",
+  "PageDescription": "Compare dois documentos para diferenças com ONLYOFFICE. Escolha qualquer documento de seu computador, armazenamento em nuvem ou um URL para ver as diferenças da perspectiva do arquivo atual.",
+
+  "Header": "Compare documentos",
+  "SubHeader": "Encontre diferenças, faça correções e finalize textos com o recurso de Comparação de Documentos",
+
+  "Feature1Title": "Compare dois documentos para ver as diferenças",
+  "Feature1Desc": "Escolha qualquer documento de seu armazenamento em nuvem, URL ou arquivo no computador para ver as diferenças de acordo com o arquivo atual.",
+
+  "Feature2Title": "Navegue pelas alterações destacadas",
+  "Feature2Desc": "A Comparação de Documentos permite que você compare dois documentos do Word e destaque as diferenças com o modo Controlar Alterações aplicado. Navegue entre eles e veja rapidamente o documento com todas as correções aceitas ou rejeitadas com os modos de exibição.",
+
+  "Feature3Title": "Mesclar versões de arquivo",
+  "Feature3Desc": "Aceite ou rejeite as alterações individualmente ou em lote para mesclar os documentos e finalizar a versão do arquivo comparado.",
+
+  "Feature4Title": "Navegar no histórico da versão",
+  "Feature4Desc": "Compare as versões atuais e anteriores do documento, restaure o documento em qualquer ponto de seu histórico e encontre o conteúdo perdido acidentalmente. Veja as datas, as horas e os autores das revisões do documento.",
+
+  "Feature5Title": "Combinar documentos",
+  "Feature5Desc": "A combinação de documentos é semelhante à comparação. No entanto, ao combinar dois documentos, as alterações rastreadas iniciais não resolvidas após a revisão de alguém vão continuar no arquivo combinado e você poderá aceitá-las ou rejeitá-las, se necessário."
+}

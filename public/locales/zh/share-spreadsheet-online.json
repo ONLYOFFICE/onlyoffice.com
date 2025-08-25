@@ -1,0 +1,36 @@
+{
+  "PageTitle": "基于Web的电子表格编辑软件：创建、打开、编辑和共享表格 | ONLYOFFICE",
+  "PageDescription": "在线打开MS Excel或Google Sheets文件。创建安全的电子表格、使用公式和可视化数据、共享并与多用户协作编辑。",
+
+  "Header": "增强团队协作",
+  "SubHeader": "让工作表的协同编辑体验无缝且高效",
+
+  "HeroImgUrl": "/images/templates/share-spreadsheet-online/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/share-spreadsheet-online/hero/zh/hero@2x.png",
+
+  "Feature1Title": "在线共享电子表格",
+  "Feature1Desc": "以完整权限、仅查看权限共享您的工作表, 并让访客留下评论。提供自定义筛选权限，隐藏不相关的数据，还可让同事独立应用筛选条件。获取并分享所选区域的链接，以便其他用户即使在大型工作簿中也能快速找到必要的数据。限制工作表的复制及打印。",
+
+  "Feature2Title": "创建个性化工作表视图",
+  "Feature2Desc": "在单个工作表视图中过滤并整理工作表。将其保存为预设以便随时使用所选的排序和过滤参数。团队可使用已保存的工作表视图，便于您轻松展示自己的发现。",
+
+  "Feature3Title": "电子表格协作处理实时进行",
+  "Feature3Desc": "使用快速模式实时协同编辑，立即向协作者展示您的输入，并通过被选定单元格的颜色指示查看其他用户的工作情况。激活严格模式，在共享的电子表格中编辑单元格与表格，私密进行不受打扰。",
+
+  "Feature4Title": "追踪您电子表格版本",
+  "Feature4Desc": "您可以查看对电子表格所做的修改，其协作者和日期，并浏览版本历史。必要时可恢复任何以前保存的版本。",
+
+  "Feature5Title": "评论、提及以及聊天",
+  "Feature5Desc": "向单元格添加评论，提出要解决的问题。在评论中提及用户并邀请他们加入对话。使用内置聊天、Telegram 或 Jitsi 插件，在编辑器内进行沟通。",
+
+  "Feature1ImgUrl": "/images/templates/share-spreadsheet-online/features/zh/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/share-spreadsheet-online/features/zh/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/share-spreadsheet-online/features/zh/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/share-spreadsheet-online/features/zh/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/share-spreadsheet-online/features/zh/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/share-spreadsheet-online/features/zh/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/share-spreadsheet-online/features/zh/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/share-spreadsheet-online/features/zh/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/share-spreadsheet-online/features/zh/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/share-spreadsheet-online/features/zh/pic5@2x.png"
+}

@@ -42,6 +42,7 @@ export const EditorsImageItem = ({
       <FeatureImageItem
         id={item.id}
         heading={item.heading}
+        comingSoon={item.comingSoon}
         text={item.text}
         position={item.position}
         image={item.image}

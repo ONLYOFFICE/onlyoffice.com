@@ -13,7 +13,11 @@ import { Modal } from "@src/components/ui/Modal";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-const Video = () => {
+type VideoProps = {
+  bg?: string;
+};
+
+const Video = ({ bg }: VideoProps) => {
   const { t } = useTranslation("workspace");
   const { locale } = useRouter();
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +28,7 @@ const Video = () => {
       desktopSpacing={["56px", "112px"]}
       tabletSpacing={["56px", "112px"]}
       tabletSmallSpacing={["16px", "88px"]}
+      background={bg ? bg : "#ffffff"}
     >
       <Container>
         <StyledVideoWrapper>
@@ -36,7 +41,11 @@ const Video = () => {
               <span>{t("OOWorkspace")}</span>
               <span>{t("OOWorkspaceMobile")}</span>
             </StyledVideoTitle>
-            <StyledVideoDescription size={3} label={t("OOWorkspaceText")} />
+            <StyledVideoDescription
+              color={locale === "zh" ? "main" : "#333333"}
+              size={3}
+              label={t("OOWorkspaceText")}
+            />
           </StyledVideoContent>
         </StyledVideoWrapper>
 

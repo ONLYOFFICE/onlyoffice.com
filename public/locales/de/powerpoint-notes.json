@@ -1,0 +1,31 @@
+{
+  "PageTitle": "PowerPoint Notizen",
+  "PageDescription": "Fügen Sie mit ONLYOFFICE Sprechernotizen zu PowerPoint-Präsentationen hinzu. Durchsuchen Sie Notizen beim Präsentieren mit zwei Monitoren, damit nur Sie Ihre Notizen sehen können.",
+  
+  "Header": "Präsentieren Sie Ideen einfacher",
+  "SubHeader": "Rede halten ist einfacher mit Referentenansicht",
+
+  "HeroImgUrl": "/images/templates/powerpoint-notes/hero/de/hero.png",
+  "HeroImgUrl2x": "/images/templates/powerpoint-notes/hero/de/hero@2x.png",
+
+  "Feature1Title": "Notizen hinzufügen",
+  "Feature1Desc": "Fügen Sie Stichwörter oder die ganze Rede zu PowerPoint-Präsentationen hinzu. Sie können die Präsentation mit Notizen im separaten Fenster sehen und diese gleichzeitig ohne Notizen auf dem anderen Bildschirm anzeigen.",
+
+  "Feature2Title": "Folien verwalten",
+  "Feature2Desc": "Navigieren Sie zwischen Folien während der Präsentation mit kompakten Steuerelementen. Beschauen Sie die Folien jederzeit vorher.",
+
+  "Feature3Title": "Zeit verfolgen",
+  "Feature3Desc": "Mit dem Timer können Sie die Länge Ihrer Präsentation in Stunden, Minuten und Sekunden abschätzen. Wenn die Rede zu kurz oder lang ist, machen Sie notwendige Änderungen. Sie können den Timer starten, anhalten, fortsetzen und zurücksetzen.",
+
+  "Feature4Title": "Aufmerksamkeit erregen",
+  "Feature4Desc": "Verwenden Sie den Zeiger, so dass die Zuschauer alle wichtigen Texte und Objekte in Ihrer Präsentation sehen.",
+
+  "Feature1ImgUrl": "/images/templates/powerpoint-notes/features/de/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/powerpoint-notes/features/de/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/powerpoint-notes/features/de/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/powerpoint-notes/features/de/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/powerpoint-notes/features/de/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/powerpoint-notes/features/de/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/powerpoint-notes/features/de/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/powerpoint-notes/features/de/pic4@2x.png"
+}

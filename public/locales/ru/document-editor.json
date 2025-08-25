@@ -1,22 +1,66 @@
 {
+  "PageTitle": "Документы Ворд онлайн | ONLYOFFICE",
+  "PageDescription": "Создавайте, открывайте и редактируйте мощные и защищенные документы онлайн вместе с коллегами. Работайте в облаке, на десктопе или с мобильного устройства.",
 
-    "HeroImgUrl": "/images/templates/document-editor/hero/ru/hero.png",
-    "HeroImgUrl2x": "/images/templates/document-editor/hero/ru/hero@2x.png",
+  "Header": "Онлайн редактор документов для совместной работы для вашего веб-приложения",
+  "SubHeader": "Открывайте, создавайте и совместно редактируйте документы Word",
 
-    "Feature1ImgUrl": "/images/templates/document-editor/features/ru/screen1.png",
-    "Feature1ImgUrl2x": "/images/templates/document-editor/features/ru/screen1@2x.png",
-    "Feature2ImgUrl": "/images/templates/document-editor/features/ru/screen2.png",
-    "Feature2ImgUrl2x": "/images/templates/document-editor/features/ru/screen2@2x.png",
-    "Feature3ImgUrl": "/images/templates/document-editor/features/ru/screen3.png",
-    "Feature3ImgUrl2x": "/images/templates/document-editor/features/ru/screen3@2x.png",
-    "Feature4ImgUrl": "/images/templates/document-editor/features/ru/screen4.png",
-    "Feature4ImgUrl2x": "/images/templates/document-editor/features/ru/screen4@2x.png",
-    "Feature5ImgUrl": "/images/templates/document-editor/features/ru/screen5.png",
-    "Feature5ImgUrl2x": "/images/templates/document-editor/features/ru/screen5@2x.png",
-    "Feature6ImgUrl": "/images/templates/document-editor/features/ru/screen6.png",
-    "Feature6ImgUrl2x": "/images/templates/document-editor/features/ru/screen6@2x.png",
-    "Feature7ImgUrl": "/images/templates/document-editor/features/ru/screen7.png",
-    "Feature7ImgUrl2x": "/images/templates/document-editor/features/ru/screen7@2x.png",
-    "Feature8ImgUrl": "/images/templates/document-editor/features/ru/screen8.png",
-    "Feature8ImgUrl2x": "/images/templates/document-editor/features/ru/screen8@2x.png"
+  "Feature1Title": "Больше возможностей онлайн",
+  "Feature1Desc": "Никаких ограничений при редактировании документов ворд онлайн: 100%-ная идентичность при просмотре, конвертации, печати и разбивке на страницы, работа с файлами любого размера и сложности, расширенный набор инструментов форматирования в браузере. Редактор документов ONLYOFFICE поддерживает все популярные форматы файлов: DOC, DOCX, ODT, TXT, HTML и так далее. Файлы PDF и XPS можно сконвертировать в DOCX для дальнейшего редактирования.",
+
+  "Feature2Title": "Управляйте форматированием",
+  "Feature2Desc": "Управляйте шрифтами и стилями, форматируйте текст, настраивайте междустрочные интервалы и интервалы между абзацами, вставляйте верхние и нижние колонтитулы, настраивайте макет страницы, устанавливайте зеркальные поля и внешние поля для переплета при подготовке документов к публикации, включайте автоматическую расстановку переносов.",
+
+  "Feature3Title": "ИИ-помощник",
+  "Feature3Desc": "Выполняйте задачи, связанные с пониманием или воспроизведением естественного языка, с помощью плагина ChatGPT. Получайте точные ответы на вопросы, быстро находите информацию, создавайте тексты и собственный код и многое другое прямо в редакторе.",
+
+  "Feature4Title": "Будьте креативными",
+  "Feature4Desc": "Создавайте яркие документы с изображениями, настраиваемыми диаграммами, автофигурами и таблицами, объектами Text Art, графикой SmartArt, уравнениями, буквицами и так далее. Редактируйте все вставленные объекты: перемещайте их, меняйте размер, выравнивайте, выбирайте стиль обтекания. Создавайте формы и шаблоны на профессиональном уровне. Создавайте собственные рисунки от руки с помощью ручки или маркера.",
+
+  "Feature5Title": "Проводите углубленный анализ текста",
+  "Feature5Desc": "Подробно исследуйте текст: просматривайте количество слов, абзацев и символов с пробелами или без пробелов. Выполняйте поиск определенного слова или фразы и заменяйте их другими с помощью функции поиска и замены. История версий позволяет открыть документ онлайн и просмотреть его предыдущие редакции, а также восстановить их.",
+
+  "Feature6Title": "Сделайте командную работу эффективной",
+  "Feature6Desc": "Работайте над документами совместно: включайте <0>Быстрый</0> режим совместного редактирования, чтобы отображать все изменения мгновенно, или <0>Строгий</0>, чтобы показывать их только после сохранения. Оставляйте и сортируйте комментарии, обсуждайте процесс работы во встроенном чате или в Telegram.",
+
+  "Feature7Title": "Легко сравнивайте документы",
+  "Feature7Desc": "Быстро сравните или объедините два документа, чтобы увидеть различия и отметки об изменениях. Принимайте или отклоняйте изменения - каждое в отдельности или все сразу. Объединяйте изменения и сохраняйте их как новую версию сравниваемого документа.",
+
+  "Feature8Title": "Расширьте возможности с помощью дополнений",
+  "Feature8Desc": "ONLYOFFICE поддерживает подключение сторонних дополнений. Используйте готовые аддоны, чтобы вставлять видео с YouTube, редактировать изображения и переводить текст на множество языков. Вы также можете создать своё собственное дополнение.",
+
+  "LearnMoreHeading": "Узнайте больше о редакторе документов ONLYOFFICE",
+  "BlogDesc": "Как встроить документ Word в HTML",
+  "BlogLink": "https://www.onlyoffice.com/blog/2022/07/embed-word-document-in-html/",
+  "TutorialsDesc": "Добавить новый шрифт в ONLYOFFICE Docs",
+  "TutorialsLink": "https://helpcenter.onlyoffice.com/installation/docs-community-install-fonts-linux.aspx",
+  "HintsDesc": "Поддерживаемые форматы электронных текстовых документов",
+  "HintsLink": "https://helpcenter.onlyoffice.com/userguides/docs-de.aspx",
+
+  "Q1": "Могу ли я редактировать текстовые документы без подключения к Интернету?",
+  "A1": "Да, вы можете установить и использовать бесплатные <0>десктопные редакторы ONLYOFFICE</0> для работы с локальными текстовыми документами офлайн.",
+  "Q2": "Предлагает ли ONLYOFFICE платформенно-ориентированные мобильные приложения для редактирования текстовых документов?",
+  "A2": "Да, вы можете установить бесплатное приложение <0>Documents</0> для устройств iOS или Android для работы с текстовыми документами, где бы вы ни находились.",
+  "Q3": "Можно ли использовать редактор документов ONLYOFFICE в моем приложении под моим брендом?",
+  "A3": "Да, вы можете интегрировать редактор документов в ваше приложение. Пожалуйста, используйте версию <0>ONLYOFFICE Docs Developer</0>.",
+
+  "HeroImgUrl": "/images/templates/document-editor/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/document-editor/hero/ru/hero@2x.png",
+
+  "Feature1ImgUrl": "/images/templates/document-editor/features/ru/screen1.png",
+  "Feature1ImgUrl2x": "/images/templates/document-editor/features/ru/screen1@2x.png",
+  "Feature2ImgUrl": "/images/templates/document-editor/features/ru/screen2.png",
+  "Feature2ImgUrl2x": "/images/templates/document-editor/features/ru/screen2@2x.png",
+  "Feature3ImgUrl": "/images/templates/document-editor/features/ru/screen3.png",
+  "Feature3ImgUrl2x": "/images/templates/document-editor/features/ru/screen3@2x.png",
+  "Feature4ImgUrl": "/images/templates/document-editor/features/ru/screen4.png",
+  "Feature4ImgUrl2x": "/images/templates/document-editor/features/ru/screen4@2x.png",
+  "Feature5ImgUrl": "/images/templates/document-editor/features/ru/screen5.png",
+  "Feature5ImgUrl2x": "/images/templates/document-editor/features/ru/screen5@2x.png",
+  "Feature6ImgUrl": "/images/templates/document-editor/features/ru/screen6.png",
+  "Feature6ImgUrl2x": "/images/templates/document-editor/features/ru/screen6@2x.png",
+  "Feature7ImgUrl": "/images/templates/document-editor/features/ru/screen7.png",
+  "Feature7ImgUrl2x": "/images/templates/document-editor/features/ru/screen7@2x.png",
+  "Feature8ImgUrl": "/images/templates/document-editor/features/ru/screen8.png",
+  "Feature8ImgUrl2x": "/images/templates/document-editor/features/ru/screen8@2x.png"
 }

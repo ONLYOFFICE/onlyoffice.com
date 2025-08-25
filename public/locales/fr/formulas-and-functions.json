@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Fonctions et formules du tableur",
+  "PageDescription": "Insérer les fonctions, accéder aux fonctions et catégories appliquées récemment, travailler avec les plages, calculer les classeurs et les feuilles de calcul en un seul endroit.",
+
+  "Header": "Effectuez des calculs précis avec un minimum d’effort",
+  "SubHeader": "Utilisez plus de 450 formules de tableur Excel pour traiter les données de n’importe quelle tâche",
+
+  "HeroImgUrl": "/images/templates/formulas-and-functions/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/formulas-and-functions/hero/fr/hero@2x.png",
+
+  "Feature1Title": "Calculez facilement grâce à plus de 450 fonctions de tableur",
+  "Feature1Desc": "Insérez des fonctions, accédez aux catégories et aux formules récemment appliquées, travaillez avec des plages nommées et calculez vos feuilles et des classeurs entiers, le tout en un seul endroit. Inspectez les résultats dans les grandes feuilles de calcul à l'aide de la Fenêtre Espion. Utilisez Repérer les précédents et Repérer les dépendants pour afficher les relations entre les formules et les cellules. Insérez des équations et des symboles pour décrire les calculs appliqués.",
+
+  "Feature2Title": "Définissez des plages de cellules pour appliquer rapidement des formules Excel",
+  "Feature2Desc": "Définissez et nommez des plages de cellules et utilisez-les comme arguments, nommez des tableaux formatés entiers et gérez les plages afin de les utiliser comme hyperliens internes.",
+
+  "Feature3Title": "Validez la saisie des données",
+  "Feature3Desc": "Définissez des règles de validation des données pour vous assurer que seules les données pertinentes sont renseignées dans vos feuilles pour des calculs corrects. Appliquez la validation aux nombres et aux textes et définissez des conditions détaillées pour filtrer précisément les erreurs.",
+
+  "Feature4Title": "Protégez la structure et le contenu d'une feuille de calcul",
+  "Feature4Desc": "Définissez un mot de passe sur l'ensemble de la feuille de calcul, du classeur et même sur une feuille séparée. Masquez les formules pour qu'elles restent privées. Verrouillez les cellules, les formes et le texte. Activez l'édition uniquement dans des plages spécifiées.",
+
+  "Feature5Title": "Automatisez votre travail avec des macros",
+  "Feature5Desc": "Grâce à un plugin spécial et à notre API, créez vos propres macros JavaScript ou utilisez ceux qui existent déjà pour automatiser les calculs et normaliser les feuilles de calcul. Exécutez des macros automatiquement ou désactivez-les et recevez des notifications sur les macros dans l’éditeur.",
+
+  "Feature1ImgUrl": "/images/templates/formulas-and-functions/features/fr/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/formulas-and-functions/features/fr/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/formulas-and-functions/features/fr/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/formulas-and-functions/features/fr/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/formulas-and-functions/features/fr/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/formulas-and-functions/features/fr/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/formulas-and-functions/features/fr/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/formulas-and-functions/features/fr/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/formulas-and-functions/features/fr/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/formulas-and-functions/features/fr/pic5@2x.png"
+}

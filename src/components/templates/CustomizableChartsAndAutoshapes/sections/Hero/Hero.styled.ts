@@ -15,12 +15,13 @@ const StyledHero = styled(Section)`
   }
 `;
 
-const StyledHeroWrapper = styled.div`
+const StyledHeroWrapper = styled.div<{ $locale?: string }>`
   display: grid;
   justify-items: center;
   row-gap: 32px;
   margin: 0 auto 48px;
-  max-width: 928px;
+  max-width: ${({ $locale }) =>
+    $locale === "ja" || $locale === "ru" ? "975px" : "928px"};
   color: #ffffff;
   text-align: center;
 

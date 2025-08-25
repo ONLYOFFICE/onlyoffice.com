@@ -1,10 +1,20 @@
 import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
-export const items: IFeatureImageItem[] = [
+interface IFeatureImageItemExtended extends IFeatureImageItem {
+  textLinks?: { href: string; isExternal?: boolean }[];
+}
+
+export const items: IFeatureImageItemExtended[] = [
   {
     heading: "Feature1Title",
     text: "Feature1Desc",
-    links: [{ label: "Feature1Link", href: "https://templates.onlyoffice.com/", isExternal: true }],
+    links: [
+      {
+        label: "Feature1Link",
+        href: "https://templates.onlyoffice.com/",
+        isExternal: true,
+      },
+    ],
     image: {
       url: "Feature1ImgUrl",
       url2x: "Feature1ImgUrl2x",
@@ -33,7 +43,18 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature4Title",
     text: "Feature4Desc",
-    links: [{ label: "Feature4Link", href: "https://templates.onlyoffice.com/", isExternal: true }],
+    links: [
+      {
+        label: "Feature4Link",
+        href: "https://templates.onlyoffice.com/",
+        isExternal: true,
+      },
+    ],
+    textLinks: [
+      { href: "/docspace-registration" },
+      { href: "/download-desktop" },
+      { href: "/download-desktop#mobile" },
+    ],
     image: {
       url: "Feature4ImgUrl",
       url2x: "Feature4ImgUrl2x",
@@ -52,6 +73,7 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature6Title",
     text: "Feature6Desc",
+    comingSoon: "Feature6ComingSoon",
     image: {
       url: "Feature6ImgUrl",
       height: 440,

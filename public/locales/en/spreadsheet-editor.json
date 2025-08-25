@@ -4,8 +4,6 @@
 
   "Header": "Powerful online spreadsheet editor for your web app",
   "SubHeader": "Create, edit and collaborate on Excel sheets online",
-  "HeroImgUrl": "/images/templates/spreadsheet-editor/hero/hero.png",
-  "HeroImgUrl2x": "/images/templates/spreadsheet-editor/hero/hero@2x.png",
 
   "Feature1Title": "Make numbers work for you",
   "Feature1Desc": "Ease and automate your calculations online, have your data organized and analyzed with ONLYOFFICE Spreadsheet Editor. Open Excel online, view and edit .xlsx, .xls, .ods, and .csv files, and save online spreadsheets as a PDF.",

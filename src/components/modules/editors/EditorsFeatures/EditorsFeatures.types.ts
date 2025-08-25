@@ -2,7 +2,11 @@ import { IEditorsItem } from "./sub-components/EditorsImageItem/EditorsImageItem
 
 export interface IEditorsFeatures {
   items: IEditorsItem[];
-  /** Whether to show buttons */
+  /** The heading. */ 
+  heading?: string | React.ReactNode;
+  /** The text. */
+  text?: string;
+
   buttons?: boolean;
   /** Additional CSS class names. */
   className?: string;

@@ -1,0 +1,31 @@
+{
+  "PageTitle": "企业在线文字处理软件 | ONLYOFFICE",
+  "PageDescription": "与Microsoft®格式兼容的word文档在线协作编辑软件。上传、打开和编辑、共享您的文本文档。通过Windows、Linux、Mac OS、安卓设备、iPhone 和iPad访问。",
+
+  "Header": "文本分析和更正",
+  "SubHeader": "可针对任意目的创建丰富、完美、干净的内容",
+
+  "HeroImgUrl": "/images/templates/text-analysis-and-word-count/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/text-analysis-and-word-count/hero/zh/hero@2x.png",
+
+  "Feature1Title": "借助字数统计器统计文本数据",
+  "Feature1Desc": "显示单词、字符和段落计数，便于对文档、视觉材料、新闻通讯和媒体文件的文本大小进行优化。",
+
+  "Feature2Title": "使用任何语言撰写内容",
+  "Feature2Desc": "可在文档、段落和单词中应用超过 250 种语言参数。使用内置拼写检查器、语言工具或 Grammalecte 找出拼写错误与错别字。借助智能建议更正用词。借助谷歌翻译、DeepL 或 Apertium 翻译文档。",
+
+  "Feature3Title": "搜索、替换、自动更正",
+  "Feature3Desc": "即刻找出您文档中的任何内容，轻松替换大量文本中的信息。启用文本、标志以及等式的自动更正。使用 Typograph 以自动更正标点和排版。",
+
+  "Feature4Title": "寻找同义词与反义词",
+  "Feature4Desc": "通过 Thesaurus 找出最合适的用词。搜索单词的同义词和反义词并在文本中快速替换，轻松撰写信息丰富、重点突出的内容。",
+
+  "Feature1ImgUrl": "/images/templates/text-analysis-and-word-count/features/zh/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/zh/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/text-analysis-and-word-count/features/zh/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/zh/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/text-analysis-and-word-count/features/zh/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/zh/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/text-analysis-and-word-count/features/zh/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/zh/pic4@2x.png"
+}
