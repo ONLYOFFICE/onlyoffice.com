@@ -1,0 +1,20 @@
+{
+  "PageTitle": "Unsubscribe | ONLYOFFICE",
+  "YouHaveSuccessfullyUnsubscribed": "Odhlášení bylo úspěšné ",
+  "TheEmailAddressHasBeenSuccessfullyRemoved": "E-mail - <0>{{email}}</0> - byl úspěšně odstraněn z mailového seznamu ONLYOFFICE. Již nebudete dostávat ONLYOFFICE e-maily: oznámení a tipy a triky na portálu, aktualizace produktů a oznámení.",
+  "IfYouDidThisByMistakeYouCanResubscribe": "Pokud jste tuto akci provedli omylem, můžete se znovu přihlásit kliknutím na tlačítko níže.",
+  "Resubscribe": "Znovu se přihlásit",
+  "OOUpdatesAndSpecialOffers": "ONLYOFFICE aktualizace a speciální nabídky",
+  "WishToKeepUpToDate": "Chcete mít aktuální informace a novinky ONLYOFFICE?",
+  "YourEmail": "Váš e-mail*",
+  "Subscribe": "Přihlásit se",
+  "YouHaveBeenResubscribed": "Byli jste znovu přihlášeni",
+  "TheEmailHasBeenSuccessfullyAdded": "Váš e-mail - <0>{{email}}</0> - byl úspěšně přidán do seznamu adres ONLYOFFICE. Obdržíte aktualizace produktu a oznámení.",
+  "WouldYouLikToUnsubscribeFromAllOOEmails": "Chcete se odhlásit ze všech ONLYOFFICE e-mailů: aktualizace a oznámení o produktu, oznámení na portálu a tipy a triky? Klikněte na odkaz: <0>Zrušit odběr všech oznámení</0>",
+  "EmailIsEmpty": "Pole pro e-mail je prázdné",
+  "EmailIsIncorrect": "Nesprávný e-mail",
+  "TheEmailAddressIsNotRegistered": "Tato <0>{{email}}</0> e-mailová adresa není registrována.",
+  "UnsubscribeSuccessful": "Odhlášení bylo úspěšné ",
+  "TheEmailHasBeenSuccessfullyRemoved": "E-mail - <0>{{email}}</0> - byl úspěšně odstraněn z mailového seznamu ONLYOFFICE. Už nebudete dostávat informace a oznámení o produktu.",
+  "IfYouDidThisInErrorYouMayResubscribe": "Pokud jste tuto akci provedli omylem, můžete se znovu přihlásit kliknutím na tlačítko níže."
+}

@@ -1,0 +1,22 @@
+{
+  "PageTitle": "Nejlepší online tabulkový editor | ONLYOFFICE",
+  "PageDescription": "Nejlepší online software pro práci s tabulkama. Otevírejte, upravujte a spolupracujte v souborech aplikace Excel online: xls, xlsx, csv, ods.",
+
+  "Header": "Provádění přesných výpočtů s minimálním úsilím",
+  "SubHeader": "Použijte více než 450 vzorců tabulkového procesoru Excel ke zpracování dat pro jakýkoli úkol",
+
+  "Feature1Title": "Provádějte snadno výpočty pomocí více než 450 tabulkových funkcí",
+  "Feature1Desc": "Vkládejte funkce, přistupujte ke kategoriím a naposledy použitým vzorcům, pracujte s pojmenovanými rozsahy, a provádějte výpočty na listech i v celých sešitech - to vše na jednom místě. Kontrolujte výsledky ve velkých tabulkách pomocí okna Watch Window. Vkládejte rovnice a symboly pro popis použitých výpočtů.",
+
+  "Feature2Title": "Definujte rozsahy buněk pro rychlé použití excelovských vzorců",
+  "Feature2Desc": "Definujte a pojmenovávejte rozsahy a používejte je jako argumenty. Pojmenovávejte celé formátované tabulky. Spravujte rozsahy a používejte jejich názvy jako interní hypertextové odkazy.",
+
+  "Feature3Title": "Ověřujte zadávání dat",
+  "Feature3Desc": "Definujte pravidla pro ověřování dat, abyste zajistili, že v listech budou vyplněna pouze relevantní data pro správný výpočet. Použijte validaci na čísla a texty, nastavte podrobné podmínky pro přesné odfiltrování chyb.",
+
+  "Feature4Title": "Chraňte strukturu a obsah tabulky",
+  "Feature4Desc": "Nastavte heslo na celou tabulku, sešit, a dokonce i na samostatný list. Skryjte vzorce, aby zůstaly soukromé. Zamkněte buňky, tvary a text. Povolte úpravy pouze v určených rozsazích.",
+
+  "Feature5Title": "Automatizujte svou práci pomocí maker",
+  "Feature5Desc": "Pomocí speciálního zásuvného modulu a našeho rozhraní API můžete vytvářet vlastní makra v jazyce JavaScript nebo používat stávající makra k automatizaci výpočtů a standardizaci tabulek. Automaticky spouštějte makra nebo je zakažte, přijímejte oznámení o makrech v editoru."
+}

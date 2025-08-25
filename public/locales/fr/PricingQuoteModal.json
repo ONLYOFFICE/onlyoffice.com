@@ -1,0 +1,13 @@
+{
+  "FullName": "Nom comple",
+  "FullNameIsIncorrect": "Le champ Nom complet est incorrecte",
+  "NameSurname": "Nom comple",
+  "FullNameIsEmpty": "Le champ Nom complet est vide",
+  "Email": "Mail",
+  "EmailIsEmpty": "Le champ Email est vide",
+  "EmailIsIncorrect": "L'adresse email est incorrecte",
+  "CompanyName": "Entreprise",
+  "CompanyNameIsEmpty": "Le champ Entreprise est vide",
+  "successfullyRequestText": "Votre demande a été envoyée avec succès",
+  "errorRequestText": "Désolé, une erreur est survenue. Veuillez réessayer plus tard."
+}

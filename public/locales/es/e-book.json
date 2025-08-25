@@ -1,0 +1,40 @@
+{
+  "PageTitle": "Lector, creador y convertidor de libros electrónicos online",
+  "PageDescription": "Abre y visualiza libros electrónicos online, convierte DOCX a EPUB y FB2",
+
+  "Header": "Lector, creador y convertidor de <0>libros electrónicos</0> en línea para tu aplicación web",
+  "SubHeader": "Abre y visualiza libros electrónicos online, convierte DOCX a EPUB y FB2",
+
+  "SwitcherTitle1": "LEE",
+  "SwitcherTitle2": "ESCRIBE Y DA FORMATO",
+  "SwitcherTitle3": "COEDITA",
+  "SwitcherTitle4": "CONVIERTE",
+  "SwitcherTitle5": "HAZ MÁS",
+
+  "Feature1Title": "Lee libros electrónicos de forma cómoda",
+  "Feature1Desc": "Abre y visualiza los archivos EPUB, FB2 y PDF cargados online, localmente o sobre la marcha, independientemente del dispositivo que estés utilizando. Navega fácilmente por los encabezados, cambia al tema oscuro en entornos con poca luz, imprime libros electrónicos si es necesario.",
+  "Feature2Title": "Crea libros electrónicos interactivos",
+  "Feature2Desc": "¿Estás escribiendo tu propio libro? Aprovecha las múltiples herramientas de estilo y formato. Inserta un índice de contenidos, haz referencias a imágenes, objetos y gráficos con una tabla de figuras, explica determinados puntos en notas a pie de página o notas finales, añade marcadores y enlaces clicables a recursos útiles.<2> Aplica marcas de agua para proteger la propiedad intelectual. Dale a tu documento un diseño profesional estableciendo márgenes simétricos y márgenes de encuadernación para las páginas que irán encuadernadas juntas.",
+  "Feature3Title": "Coedita con eficacia",
+  "Feature3Desc": "Mientras creas un libro electrónico, colabora en un archivo de texto con tu equipo. Cambia entre los modos de tiempo real o de bloqueo de párrafo, deja comentarios, sigue los cambios, discute el proceso en el chat integrado o en Telegram. Realiza llamadas de audio y vídeo a través de Jitsi.",
+  "Feature4Title": "Exporta a EPUB, FB2 y PDF",
+  "Feature4Desc": "Cuando tu trabajo esté listo, guarda el archivo DOCX creado como EPUB o FB2. EPUB se adapta a los dispositivos móviles, para que puedas leer cómodamente sin necesidad de ampliar o reducir la imagen. FB2 es sencillo y no ocupará demasiado espacio en tu lector de libros electrónicos. Convierte DOCX, EPUB o FB2 a PDF.",
+  "Feature5Title": "Haz más con los plugins",
+  "Feature5Desc": "Inserta bibliografías a través de Mendeley y Zotero eligiendo el estilo de cita requerido. Obtén ayuda de una herramienta de redacción con inteligencia artificial para corregir la ortografía y la gramática, traducir frases, encontrar sinónimos, analizar palabras y frases, acortar o simplificar el texto, etc.",
+  "ExplorePlugins": "Descubre los plugins útiles",
+
+  "LearnMoreHeading": "Más información sobre el lector y creador de libros electrónicos ONLYOFFICE",
+  "BlogDesc": "Cómo escribir un libro",
+  "BlogLink": "https://www.onlyoffice.com/blog/es/2023/09/como-escribir-un-libro",
+  "TutorialsDesc": "Cómo crear una bibliografía",
+  "TutorialsLink": "https://www.onlyoffice.com/blog/es/2024/01/bibliografia",
+  "HintsDesc": "Guía de escritura académica",
+  "HintsLink": "https://www.onlyoffice.com/blog/es/2022/08/que-es-la-escritura-academica",
+
+  "Q1": "¿Puedo exportar documentos a EPUB y FB2 sin conexión a Internet?",
+  "A1": "Sí, puedes instalar y utilizar gratis <0>ONLYOFFICE Desktop Editors</0> para convertir archivos de texto en libros electrónicos sin conexión.",
+  "Q2": "¿Puedo convertir DOCX a EPUB o FB2 sin instalar ninguna aplicación?",
+  "A2": "Sí, puedes hacerlo utilizando <0>un convertidor online gratuito</0> que no requiere instalación ni registro.",
+  "Q3": "¿Puedo integrar el convertidor de libros electrónicos en mi propia aplicación o servicio web?",
+  "A3": "Sí, ONLYOFFICE proporciona <0>una API de conversión</0> para convertir todo tipo de documentos ofimáticos, incluyendo libros electrónicos, dentro de tu aplicación."
+}

@@ -31,7 +31,7 @@ const Authentication = () => {
                     key={index}
                     className="feature-item"
                     position={{ desktop: index % 2 === 1 ? "right" : "left" }}
-                    heading={t(heading)}
+                    heading={t(String(heading))}
                     text={
                         <>
                         {text.map((textKey, idx) => (

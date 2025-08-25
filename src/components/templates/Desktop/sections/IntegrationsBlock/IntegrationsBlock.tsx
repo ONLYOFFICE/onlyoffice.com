@@ -5,6 +5,7 @@ import {
   Logo,
   StyledImage,
   StyledContainer,
+  StyledLink
 } from "./IntegrationsBlock.styled";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -18,6 +19,8 @@ interface IntegrationsBlockProps {
   image2x: string;
   title: string;
   description: string;
+  linkHref?: string;
+  linkText?: string;
 }
 
 const IntegrationsBlock = ({
@@ -26,6 +29,8 @@ const IntegrationsBlock = ({
   logos,
   image,
   image2x,
+  linkHref,
+  linkText,
 }: IntegrationsBlockProps) => {
   const { t } = useTranslation("desktop");
 
@@ -47,6 +52,7 @@ const IntegrationsBlock = ({
             ))}
           </LogoRow>
         )}
+        {linkHref && linkText &&<StyledLink textUnderline hover="underline-none" href={linkHref} target="_blank" color="main">{t(linkText)}</StyledLink>}
         <StyledImage $image={t(image)} $image2x={t(image2x)} />
       </StyledContainer>
     </Section>

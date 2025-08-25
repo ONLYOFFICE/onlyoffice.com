@@ -43,7 +43,7 @@ const Features = () => {
               fontSize="14px"
               key={index}
               contentWidth={item.contentWidth}
-              heading={t(item.heading)}
+              heading={t(String(item.heading))}
               rowGap={16}
               gap={item.gap}
               marginTop={item.marginTop}

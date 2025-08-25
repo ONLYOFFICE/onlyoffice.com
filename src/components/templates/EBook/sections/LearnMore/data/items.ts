@@ -20,7 +20,6 @@ export const items: IBlogCard[] = [
       {
         href: "TutorialsLink",
         label: "LearnMore",
-        isExternal: true,
       },
     ],
   },
@@ -32,7 +31,6 @@ export const items: IBlogCard[] = [
       {
         href: "HintsLink",
         label: "LearnMore",
-        isExternal: true,
       },
     ],
   },

@@ -53,7 +53,7 @@ const HowItWorks = () => {
               key={index}
               className="feature-item"
               position={{ desktop: index % 2 === 1 ? "left" : "right" }}
-              heading={t(heading)}
+              heading={t(String(heading))}
               text={
                 <>
                   {text.map((textKey, idx) => (

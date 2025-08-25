@@ -1,0 +1,20 @@
+{
+  "PageTitle": "取消订阅 | ONLYOFFICE",
+  "YouHaveSuccessfullyUnsubscribed": "您已成功退订所有电子邮件通讯",
+  "TheEmailAddressHasBeenSuccessfullyRemoved": "电子邮件地址 <0>{{email}}</0> 已成功从ONLYOFFICE通讯列表中删除。您将不再收到任何来自ONLYOFFICE的电子邮件。",
+  "IfYouDidThisByMistakeYouCanResubscribe": "如果您误操作，可点击下面的按钮重新订阅。",
+  "Resubscribe": "重新订阅",
+  "OOUpdatesAndSpecialOffers": "ONLYOFFICE更新及特别优惠",
+  "WishToKeepUpToDate": "希望了解ONLYOFFICE的最新动态？",
+  "YourEmail": "您的邮箱*",
+  "Subscribe": "订阅",
+  "YouHaveBeenResubscribed": "您已重新订阅",
+  "TheEmailHasBeenSuccessfullyAdded": "- <0>{{email}}</0> - 您的电子邮件已成功添加到ONLYOFFICE邮件列表。您将收到产品更新和公告。",
+  "WouldYouLikToUnsubscribeFromAllOOEmails": "是否要取消订阅所有ONLYOFFICE电子邮件：产品更新和公告、门户通知以及提示和窍门？单击链接：<0>全部取消订阅</0>",
+  "EmailIsEmpty": "电子邮箱为空",
+  "EmailIsIncorrect": "电子邮箱错误",
+  "TheEmailAddressIsNotRegistered": "该 <0>{{email}}</0> 邮箱地址未被注册。",
+  "UnsubscribeSuccessful": "退订成功",
+  "TheEmailHasBeenSuccessfullyRemoved": "电子邮件-<0>{{email}}</0>-已成功从ONLYOFFICE邮件列表中删除。您将不再收到产品更新和公告。",
+  "IfYouDidThisInErrorYouMayResubscribe": "如果您这样做有误，您可以单击下面的按钮重新订阅。"
+}

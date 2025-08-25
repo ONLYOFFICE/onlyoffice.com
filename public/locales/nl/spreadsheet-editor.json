@@ -1,0 +1,38 @@
+{
+  "PageTitle": "Webgebaseerde spreadsheet-editor: creëren, openen, bewerken en delen van sheets",
+  "PageDescription": "Open MS Excel- of Google Sheets-bestanden online. Maak een veilige spreadsheet, gebruik formules en visualiseer gegevens, deel deze voor gezamenlijke bewerking met meerdere gebruikers.",
+
+  "Header": "Powerful online spreadsheet editor for your web app",
+  "SubHeader": "Werk online met Excel-documenten",
+
+  "Feature1Title": "Laat cijfers voor u werken",
+  "Feature1Desc": "Vergemakkelijk en automatiseer uw berekeningen online, laat uw gegevens ordenen en analyseren met ONLYOFFICE Spreadsheet Editor. Open, bekijk en bewerk .xlsx-, .xls-, .ods- en .csv-bestanden en sla spreadsheets op als PDF.",
+  "Feature2Title": "Voer nauwkeurige berekeningen uit met minimale inspanning",
+  "Feature2Desc": "U krijgt snelle en nauwkeurige resultaten door te kiezen uit meer dan 400 beschikbare functies en formules en door speciale syntax tips te gebruiken. Pas tabelsjablonen toe, gebruik benoemde bereiken, sorteer en filter gegevens om het werken met spreadsheets te vereenvoudigen. Vind snel de benodigde inhoud en vervang deze door een nieuwe in een klik.",
+  "Feature3Title": "Eenvoudig gegevens analyseren",
+  "Feature3Desc": "Gegevens analyseren en patronen vinden met behulp van draaitabellen en voorwaardelijke opmaak. Filter snel gegevens of geef de huidige filterstatus aan om te zien welke gegevens worden weergegeven door Slicers toe te voegen aan geformatteerde tabellen. Verwijder gedupliceerde waarden en rijen om uw berekeningen nauwkeuriger te maken.",
+  "Feature4Title": "Illustreer uw gegevens met visuals",
+  "Feature4Desc": "Diagrammen, sparklines en grafieken toevoegen. Voeg vergelijkingen, vormen en afbeeldingen in en gebruik Text Art, SmartArt of YouTube-video's voor de presentatie en visualisatie van gegevens. Maak uw eigen tekeningen uit de vrije hand met een pen of markeerstift.",
+  "Feature5Title": "Breng de inspanningen van het team bij elkaar",
+  "Feature5Desc": "Werk samen met uw team aan bedrijfsrapporten en voorraadregistratie. Toegang tot, delen van spreadsheets of zelfs links naar specifieke reeksen, gezamenlijk bewerken in real-time, commentaar op cellen achterlaten en online chatten met medewerkers zonder de editor te verlaten. Laat andere gebruikers hun eigen filters toepassen tijdens het bewerken van een spreadsheet zonder de coauteurs te storen. Blader door de versiegeschiedenis en herstel eerdere bestandsversies.",
+  "Feature6Title": "Bescherm uw spreadsheets",
+  "Feature6Desc": "Stel een wachtwoord in voor het gehele spreadsheet, de werkmap, of een afzonderlijk blad. Verberg formules om ze privé te houden. Vergrendel cellen, vormen en tekst. Sta het bewerken van gegevensbereiken alleen toe voor bepaalde gebruikers.",
+  "Feature7Title": "Automatiseer uw taken met macro's",
+  "Feature7Desc": "Maak uw werk met spreadsheets gemakkelijker. Maak uw eigen macro's met behulp van JavaScript taalsyntax, bewerk ze en sla ze op om veelvoorkomende en terugkerende taken te automatiseren. Maak macro's automatisch of beperk hun autostart.",
+  "Feature8Title": "Gebruik AI helper",
+  "Feature8Desc": "Voer taken uit waarbij natuurlijke taal wordt begrepen of gegenereerd met behulp van de ChatGPT plugin. Krijg nauwkeurige antwoorden op uw vragen, vind snel informatie, genereer teksten, bouw uw code, enz. direct in de editor.",
+  "Feature9Title": "Doe nog meer met add-ons",
+  "Feature9Desc": "Breid de bewerkingsmogelijkheden van de spreadsheet uit met extra hulpmiddelen. Voeg speciale symbolen in, krijg een snelle vertaling van elke tekst en meer.",
+
+  "LearnMoreHeading": "Meer informatie over ONLYOFFICE Spreadsheet Editor",
+  "BlogDesc": "Alles over afdrukvoorbeeld in Excel bladen",
+  "TutorialsDesc": "Samen spreadsheets bewerken in real-time",
+  "HintsDesc": "Ondersteunde spreadsheets formaten",
+
+  "Q1": "Kan ik spreadsheets bewerken zonder internetverbinding?",
+  "A1": "Ja, u kunt de gratis <0>ONLYOFFICE Desktop Editors</0> installeren en gebruiken om lokale spreadsheets offline te bewerken.",
+  "Q2": "Heeft ONLYOFFICE native mobiele apps voor het bewerken van spreadsheets?",
+  "A2": "Ja, u kunt de gratis <0>Documents</0> installeren en gebruiken om onderweg aan spreadsheets te werken.",
+  "Q3": "Is het mogelijk om ONLYOFFICE spreadsheet editor te gebruiken binnen mijn app onder mijn eigen merk?",
+  "A3": "Ja, u kunt de spreadsheet editor in uw app integreren. Gebruik <0>ONLYOFFICE Docs Developer</0>."
+}

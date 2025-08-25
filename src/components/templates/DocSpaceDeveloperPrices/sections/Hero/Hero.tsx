@@ -495,6 +495,7 @@ const Hero = ({ locale }: ILocale) => {
           buttonLabel={t("GetAQuote")}
           onSubmitRequest={onSubmitRequest}
           onClose={() => setIsModalOpen(false)}
+          locale={locale}
         />
       </Container>
     </StyledHero>
