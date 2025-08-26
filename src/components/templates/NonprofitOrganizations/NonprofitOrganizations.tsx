@@ -4,6 +4,7 @@ import { Features } from "./sections/Features";
 import { FreeCloud } from "./sections/FreeCloud";
 import { Already } from "./sections/Already";
 import { GetAccess } from "./sections/GetAccess";
+import { Story } from "./sections/Story";
 
 const NonprofitOrganizationsTemplate = () => {
   return (
@@ -14,6 +15,7 @@ const NonprofitOrganizationsTemplate = () => {
       <FreeCloud />
       <Already />
       <GetAccess />
+      <Story />
     </>
   );
 };

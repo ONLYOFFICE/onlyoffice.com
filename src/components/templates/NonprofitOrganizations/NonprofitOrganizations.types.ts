@@ -21,8 +21,27 @@ type TAlreadyItems =
   "Plone" |
   "SyncAndShareSolution";
 
+interface IGetAccessItems {
+  id: number;
+  href: string;
+  label: string;
+  iconUrl: string;
+}
+
+interface IStoryItems {
+  id: string;
+  heading: string;
+  links: {
+    href: string;
+    label: string;
+  };
+  imgUrl: string;
+}
+
 export type {
   ILogosBlockItems,
   IFeaturesItems,
-  TAlreadyItems
+  TAlreadyItems,
+  IGetAccessItems,
+  IStoryItems
 }

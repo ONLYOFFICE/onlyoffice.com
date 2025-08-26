@@ -1,7 +1,11 @@
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
+import { items } from "./data/items";
 
 import {
+  StyledGetAccessButtonsItem,
+  StyledGetAccessButtonsLink,
+  StyledGetAccessButtonsList,
   StyledGetAccessHeading,
   StyledGetAccessIcon,
   StyledGetAccessSection,
@@ -15,7 +19,7 @@ const GetAccess = () => {
     <StyledGetAccessSection
       background="linear-gradient(162.82deg, #FFC671 0%, #FF7541 64.06%, #FF6F3D 100%)"
     >
-      <Container>
+      <Container maxWidth="1010px">
         <StyledGetAccessIcon />
         <StyledGetAccessHeading
           level={2}
@@ -29,6 +33,17 @@ const GetAccess = () => {
           textAlign="center"
           label={t("ONLYOFFICEOffersFreeDesktopApps")}
         />
+        <StyledGetAccessButtonsList>
+          {items.map((item) => (
+            <StyledGetAccessButtonsItem key={item.id}>
+              <StyledGetAccessButtonsLink
+                label={t(item.label)}
+                href={t(item.href, {defaultValue: item.href})}
+                $iconUrl={t(item.iconUrl, {defaultValue: item.iconUrl})}
+              />
+            </StyledGetAccessButtonsItem>
+          ))}
+        </StyledGetAccessButtonsList>
       </Container>
     </StyledGetAccessSection>
   );
