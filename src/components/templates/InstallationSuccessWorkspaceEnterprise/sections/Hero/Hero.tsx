@@ -89,7 +89,7 @@ const Hero = () => {
                   </StyledEditorsListItem>
                 ))}
               </StyledEditorsList>
-              <StyledEditorsText>{t("DesktopAvailableFor")}</StyledEditorsText>
+              <StyledEditorsText>{t("MobileAvailableFor")}</StyledEditorsText>
               <Button
                 as="a"
                 href="/download-desktop#mobile"

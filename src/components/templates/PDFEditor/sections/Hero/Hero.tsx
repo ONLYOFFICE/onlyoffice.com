@@ -73,15 +73,15 @@ const Hero = () => {
 
         {locale === "zh" ? (
           <StyledHeroImg
-            $imgUrl="/images/templates/presentation-editor/hero/zh/hero.png"
-            $imgUrl2x="/images/templates/presentation-editor/hero/zh/hero@2x.png"
+            $imgUrl="/images/templates/pdf-editor/hero/zh/hero.png"
+            $imgUrl2x="/images/templates/pdf-editor/hero/zh/hero@2x.png"
           />
         ) : (
           <StyledHeroVideo>
             <iframe
               width="100%"
               height="auto"
-              src="https://www.youtube.com/embed/kxMwSea5Nw4?autoplay=1&mute=1"
+              src="https://www.youtube.com/embed/zXhjjsvy_e4?si=vGDbTO0C2Ed0kK3X&autoplay=1&mute=1"
               title="YouTube"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -1,0 +1,14 @@
+{
+  "windows": "Voor Windows",
+  "macos": "Voor Mac OS",
+  "linux": "Voor Linux",
+  "app-gallery": "/images/ui/download-button/nl/app-gallery.svg",
+  "app-store": {
+    "light": "/images/ui/download-button/nl/app-store.svg",
+    "dark": "/images/ui/download-button/nl/app-store.svg"
+  },
+  "google-play": {
+    "light": "/images/ui/download-button/nl/google-play.svg",
+    "dark": "/images/ui/download-button/nl/google-play.svg"
+  }
+}

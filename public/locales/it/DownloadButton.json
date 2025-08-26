@@ -1,0 +1,14 @@
+{
+  "windows": "Per Windows",
+  "macos": "Per Mac OS",
+  "linux": "Per Linux",
+  "app-gallery": "/images/ui/download-button/it/app-gallery.svg",
+  "app-store": {
+    "light": "/images/ui/download-button/it/app-store.svg",
+    "dark": "/images/ui/download-button/it/app-store.svg"
+  },
+  "google-play": {
+    "light": "/images/ui/download-button/it/google-play.svg",
+    "dark": "/images/ui/download-button/it/google-play.svg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "PageTitle": "高效的项目管理工具 | ONLYOFFICE",
+  "PageDescription": "计划、管理和跟踪任务、截止期限和项目。提高团队生产力。",
+
+  "HeroTitle": "助您提高团队绩效的项目管理软件",
+  "HeroText": "它是适用于快速或中型项目的完美工具。操作不会比在亚马逊上购物更复杂。<br/><1>- CMSWire</1>",
+  "GetItNow": "立即获取",
+
+  "ProjectHierarchy": "项目结构",
+  "ProjectHierarchyText": "通过设置重要事件、任务和子任务在主要目标和日常活动之间安排优先级。添加自定义任务状态。",
+  "ProjectHierarchyImage": "/images/templates/projects/features/zh/project_hierarchy.png",
+  "GanttChart": "甘特图",
+  "GanttChartText": "分析项目进度和任务相关性，只需几次点击即可更新计划事件和截止日期。",
+  "GanttChartImage": "/images/templates/projects/features/zh/gantt_chart.png",
+  "AccessRights": "访问权限管理",
+  "AccessRightsText": "为不同模块元素设置独立的访问权限并创建私有项目。您可以完全控制每个人可以看到的内容以及执行的操作。",
+  "AccessRightsImage": "/images/templates/projects/features/zh/access_rights.png",
+  "TimeManagement": "时间管理",
+  "TimeManagementText": "使用时间跟踪功能集和自动生成的报告评估团队绩效和项目活动。",
+  "TimeManagementImage": "/images/templates/projects/features/zh/time_management.png",
+
+  "MobileApps": "移动应用",
+  "StayMobile": "保持灵活！",
+  "WorkWithProjects": "通过<0>iOS</0>与<1>Android</1>设备处理项目。随时随地管理团队活动。",
+
+  "ItsAPerfectTool": "它是适用于快速或中型项目的完美工具。操作不会比在亚马逊上购物更复杂。",
+  "CmsWire": "CMSWire"
+}

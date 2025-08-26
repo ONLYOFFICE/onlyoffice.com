@@ -12,9 +12,11 @@ import { Trans } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
 import { ContentCard } from "./sub-components/ContentCard";
+import { useRouter } from "next/router";
 
 const Content = () => {
   const { t } = useTranslation("docspace");
+  const {locale} = useRouter();
 
   return (
     <StyledSection desktopSpacing={["124px", "112px"]}>
@@ -38,6 +40,7 @@ const Content = () => {
               key={index}
               imgUrl={item.imgUrl}
               heading={t(item.heading)}
+              locale={locale}
               href={item.href}
             />
           ))}

@@ -1,0 +1,1 @@
+export { FeaturedIn } from "./FeaturedIn";

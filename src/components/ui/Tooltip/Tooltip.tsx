@@ -14,14 +14,19 @@ const Tooltip = ({
   offset,
   place = "bottom",
   width = "200px",
+  verticalAlign,
+  onClick,
 }: ITooltip) => {
   return (
     <>
       <StyledTooltipBtn
+        onClick={onClick}
         className={className}
         data-tooltip-id={id}
+        data-tooltip-content={content}
         $width={width}
         $infoIcon={infoIcon}
+        $verticalAlign={verticalAlign}
         tabIndex={tabIndex}
         role="button"
       >

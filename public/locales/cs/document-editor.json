@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Nejlepší online editor pro textové dokumenty | ONLYOFFICE",
+  "PageDescription": "Nejlepší online textový editor. Můžete vytvářet, upravovat a spolu-upravovat dokumenty aplikace Word online: docx, doc, txt, odt, rtf.",
+
+  "Header": "Collaborative online document editor for your web app",
+  "SubHeader": "Otevřete si soubor a upravte ho spolu s kolegy v dokumentech Word v reálném čase",
+
+  "Feature1Title": "Využijte rozsáhlé editační funkce online",
+  "Feature1Desc": "Žádné další omezení při online editaci textových dokumentů: užívejte si 100% zobrazení, konverzi, tisk a věrnost stránkování, pracujte se soubory libovolné velikosti a složitosti, použijte sadu nástrojů rozšířeného formátování. Editor dokumentů ONLYOFFICE Document Editor  podporuje všechny oblíbené formáty: DOC, DOCX, ODT, TXT, HTML atd. Formáty PDF a XPS lze převést do formátu DOCX pro další úpravy.",
+  "Feature2Title": "Upravte dokumenty podle pravidel",
+  "Feature2Desc": "Správa písem a stylů, formátování textu, úprava řádku a odstupu odstavců, změna rozvržení stránky, aby vaše dokumenty vypadaly čistě a uklizené. Chcete-li připravit dokumenty k publikování, nastavte okraje.",
+  "Feature3Title": "Použijte pomocníka AI",
+  "Feature3Desc": "Provádějte úlohy, které zahrnují porozumění nebo generování přirozeného jazyka pomocí zásuvného modulu ChatGPT. Získejte přesné odpovědi na své otázky, rychle vyhledávejte informace, generujte texty, nechte si sestavit kód atd. přímo v editoru.",
+  "Feature4Title": "Buďte kreativní",
+  "Feature4Desc": "Vytvářejte živé dokumenty s obrázky, přizpůsobitelnými grafy, automatickými tvary a tabulkami, grafickými prvky Text Art, grafikou SmartArt, rovnicemi, kapátkem a dalšími prvky. Snadné nastavení vložených objektů: přesun, změna velikosti, zarovnání, změna stylů balení, vyplnění barvy nebo vzoru apod. Vytváření profesionálně vypadajících formulářů a šablon. Vytvářejte vlastní volné kresby pomocí pera nebo zvýrazňovače.",
+  "Feature5Title": "Provést hlubší analýzu textu",
+  "Feature5Desc": "Analyzujte svůj dokument: zjisti počet slov, počet odstavců a znaků s nebo bez mezer. Vyhledejte slovo nebo frázi a nahraďte ji novou pomocí služby Najít a nahradit. Zobrazte historii verzí, vyberte a obnovte libovolnou předchozí verzi jednoduchým kliknutím.",
+  "Feature6Title": "Zlepšete pracovní postup vašeho týmu",
+  "Feature6Desc": "Spolupracujte na dokumentech s vaším týmem: zvolte vhodný režim spolupráce - Rychle zobrazte všechny změny v reálném čase nebo Striktní, chcete-li zobrazit změny pouze po uložení. Zanechávejte a tříděte komentáře a diskutujte o postupu ve vestavěném chatu nebo v aplikaci Telegram. Použijte režim sledování změn pomocí funkce Náhled v Přehledu, abyste věděli, jak bude vypadat dokument, pokud změny přijmeme nebo odmítnete.",
+  "Feature7Title": "Snadno porovnávejte dokumenty",
+  "Feature7Desc": "Rychle porovnejte nebo spojte dva dokumenty a zjistěte rozdíly pomocí revizních značek. Přijměte nebo odmítněte změny jednotlivě nebo všechny najednou. Slučte změny a uložte je jako novou verzi porovnávaného dokumentu.",
+  "Feature8Title": "Rozšíření možností úprav",
+  "Feature8Desc": " Využijte co nejlépe své úpravy s kolekcí doplnků třetích stran. Vložte video YouTube, přidejte speciální symboly, přeložte jakékoliv slovo nebo větu, upravte snímky přímo v dokumentu a ještě více.",
+
+  "LearnMoreHeading": "Další informace o editoru dokumentů ONLYOFFICE",
+  "BlogDesc": "Jak vložit dokument Word do HTML",
+  "TutorialsDesc": "Přidání nového písma do dokumentů ONLYOFFICE",
+  "HintsDesc": "Podporované formáty elektronických textových dokumentů",
+
+  "Q1": "Mohu upravovat textové dokumenty bez připojení k internetu?",
+  "A1": "Ano, můžete si nainstalovat a používat bezplatné editory <0>ONLYOFFICE Desktop Editors</0> a upravovat místní dokumenty offline.",
+  "Q2": "Nabízí ONLYOFFICE nativní mobilní aplikace pro úpravu dokumentů ?",
+  "A2": "Yes, you can install free <0>Documents</0> pro zařízení se systémem iOS nebo Android a pracovat na dokumentech na cestách.",
+  "Q3": "Je možné používat editor dokumentů ONLYOFFICE v rámci mé aplikace pod mou značkou ?",
+  "A3": "Ano, editor dokumentů můžete integrovat do své aplikace. Použijte prosím aplikaci <0>ONLYOFFICE Docs Developer</0>."
+}

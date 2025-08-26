@@ -1,0 +1,41 @@
+{
+    "PageTitle": "Бесплатное приложение для управления задачами для Android | ONLYOFFICE",
+    "PageDescription": "Управляйте работой команды, где бы вы ни находились. Отслеживайте любые проекты с вашего Android-устройства",
+
+    "ONLYOFFICEProjects": "<0>ONLYOFFICE Проекты,</0> бесплатное приложение для управления задачами на Android",
+    "PocketProject": "Мобильное приложение ONLYOFFICE",
+    "HeroImgUrl": "/images/templates/projects-for-android/hero/ru/googleplay.png",
+
+    "ManageYourTeam": "Управляйте работой вашей команды, где бы вы ни были",
+    "TrackCurrentWorkload": "Отслеживайте текущую рабочую нагрузку",
+    "QuicklyBrowseSortAndFilter": "Оперативно открывайте, сортируйте и фильтруйте текущие проекты и задачи, редактируйте их, изменяйте их статус, исполнителей и сроки выполнения. Получайте доступ к рабочим документам, прикрепленным к каждому проекту.",
+    "ManageNewProjects": "Управляйте новыми проектами",
+    "CreateNewProjects": "Создавайте новые проекты и задачи и назначайте ответственных участников. Определяйте приоритеты и добавляйте подзадачи. Связывайте задачи с вехами, чтобы спланировать вашу работу.",
+    "Communicate": "Обсуждения и комментарии",
+    "StartProjectDiscussions": "Начинайте обсуждения в проекте для совместного рассмотрения идей, решения проблемных моментов, постановки вопросов, а также для объявлений. Принимайте участие в общении, оставляя комментарии.",
+    "KeepYourProjectsSafe": "Обеспечьте безопасность ваших проектов",
+    "MakeSureNoUnauthorized": "Убедитесь в том, что неавторизованные пользователи не могут получить доступ к вашим проектам. Установите код для защиты приложения, активируйте двухфакторную аутентификацию или предоставьте доступ к приложению по отпечатку пальца.",
+    "WorkComfortably": "Работайте с комфортом",
+    "EnjoyAnIntuitiveInterface": "Используйте интуитивный интерфейс и беспрепятственно перемещайтесь между всеми вашими проектами и задачами. Переключайтесь в темный режим, чтобы снизить нагрузку на зрение в условиях недостаточного освещения.",
+    "TrackCurrentWorkloadImage": "/images/templates/projects-for-android/features/ru/track-current-workload.svg",
+    "ManageNewProjectsImage": "/images/templates/projects-for-android/features/ru/manage-new-projects.svg",
+    "CommunicateImage": "/images/templates/projects-for-android/features/ru/communicate-screen.svg",
+    "KeepYourProjectsSafeImage": "/images/templates/projects-for-android/features/ru/keep-your-projects-safe.svg",
+    "WorkComfortablyImage": "/images/templates/projects-for-android/features/ru/work-comfortably.svg",
+
+    "HowToStart": "С чего начать?",
+    "CreateYourONLYOFFICEWorkspace": "<0>1.</0> Если у вас еще нет аккаунта <1>ONLYOFFICE Workspace</1>, создайте его.",
+    "LaunchInTheCloud": "Запустите в облаке",
+    "RunOnYourOwnServer": "или на вашем сервере",
+    "ConnectTheApp": "<0>2.</0> Подключите приложение к вашему порталу ONLYOFFICE Workspace.",
+    "CreateAndTrack": "<0>3.</0> Cоздавайте и отслеживайте проекты и задачи, где бы вы ни были.",
+
+    "YourBenefits": "Ваши преимущества",
+    "QuickAccessToYourWorkflows": "Быстрый доступ к вашим рабочим процессам в ONLYOFFICE",
+    "CleanAndIntuitiveUI": "Простой и интуитивный интерфейс",
+    "NoAds": "Отсутствие рекламных объявлений и покупок через приложение",
+    "RegularUpdates": "Регулярные обновления",
+    "TechnicalSupport": "Техническая поддержка",
+    "OnlineDocumentation": "Онлайн документация",
+    "BenefitsImage": "/images/templates/projects-for-android/benefits/ru/benefits-pic-en.svg"
+}

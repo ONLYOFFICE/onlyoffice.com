@@ -1,0 +1,137 @@
+{
+  "TrainingCoursesPageTitle": "Training courses | ONLYOFFICE",
+  "TrainingCoursesMetaDescription": "Find out more about collaborative technologies and ONLYOFFICE solutions.",
+  "TrainingCourses": "Training courses",
+  "SearchTraining": "Search training courses",
+  "ONLYOFFICEFeatures": "Ensure your seamless and effective work through our online courses which include a visual demonstration of ONLYOFFICE features and tools along with training activities under tutor’s control.",
+  "All": "All",
+  "Modules": "Modules",
+  "Purpose": "Purpose",
+  "ModulesWithPoints": "Modules: ",
+  "ONLYOFFICEDocuments": "ONLYOFFICE Documents",
+  "ONLYOFFICEMail": "ONLYOFFICE Mail",
+  "ONLYOFFICECRM": "ONLYOFFICE CRM",
+  "ONLYOFFICEProjects": "ONLYOFFICE Projects",
+  "ONLYOFFICECalendar": "ONLYOFFICE Calendar",
+  "ONLYOFFICECommunity": "ONLYOFFICE Community",
+  "ONLYOFFICEPeople": "ONLYOFFICE People",
+  "Integration": "Integration",
+  "SortBy": "Sort by: ",
+  "NewestOldest": "Newest - Oldest",
+  "OldestNewest": "Oldest - Newest",
+  "LoadMore": "load more",
+  "FAQ": "Frequently Asked Questions",
+  "QuestionONLYOFFICETraining": "In what format ONLYOFFICE training courses are held?",
+  "AnswerONLYOFFICETraining": "Our training courses are held remotely via the Zoom platform.",
+  "QuestionLimit": "Is there any limit for a number of participants?",
+  "AnswerLimit": "Every training session can host up to 20 participants.",
+  "QuestionTrainingSessionLookLike": "How does a training session look like?",
+  "AnswerTrainingSessionLookLike": "We provide a training portal so that you can follow tutor’s steps and check the described features during a visual demonstration on the shared screen. In the end of the session, you can ask your questions and clarify any confusing moments.",
+  "QuestionGetMaterials": "Will I get any materials after the training course is over?",
+  "AnswerGetMaterials": "You will get a presentation with a short description of the course, its record as well as a document with tasks for your individual training.",
+  "QuestionFindMaterials": "Where can I find answers to other questions?",
+  "AnswerFindMaterials": "If you have any questions about the training courses, please contact us at <0>sales@onlyoffice.com</0>.",
+  "Reset": "Reset",
+  "Filters": "Filters",
+  "Module": "Module",
+  "ONLYOFFICEDocs": "ONLYOFFICE Docs",
+  "ApplyFilter": "Apply filter",
+  "FillOutThisForm": "Fill out this form to request a quote for the training courses",
+  "FullName": "Full name",
+  "FullNamePlaceholder": "First name Last name",
+  "FullNameEmpty": "Full name is empty",
+  "CompanyName": "Company name",
+  "CompanyNameEmpty": "Company name is empty",
+  "Email": "Email",
+  "EmailPlaceholder": "name@domain.com",
+  "EmailIsEmpty": "Email is empty",
+  "EmailIsIncorrect": "Email is incorrect",
+  "PreferredLanguage": "Preferred language*",
+  "English": "English",
+  "German": "German",
+  "French": "French",
+  "Spanish": "Spanish",
+  "Chinese": "Chinese",
+  "LanguageIsNotSelected": "Language is not selected",
+  "TimeZone": "Your time zone*",
+  "TimeZoneIsNotSelected": "Time zone is not selected",
+  "Comment": "Comment",
+  "ByClickingSubmit": "By clicking Submit, you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>.",
+  "PleaseWait": "Please wait...",
+  "SubmitRequest": "Submit request",
+  "RequestSuccessfully": "Your request has been sent successfully",
+  "RequestError": "We are sorry, but an error occurred, try again later",
+
+  "HeroVideoUrl": "https://www.youtube.com/embed/7HY30Xg7PdI?autoplay=1&amp;mute=1",
+
+  "NewSign": "New",
+  "Sessions": "Sessions: ",
+  "Hours": "Hours: ",
+  "Price": "Price: ",
+  "ReadMore": "read more",
+  "OnDemand": "On demand",
+  "Custom": "Custom",
+
+  "CardDataTitle21": "Using ONLYOFFICE Docs in educational organizations",
+  "CardDataDescription21": "Would like to digitally boost the learning process? Take this comprehensive course and learn how to use ONLYOFFICE Docs to create lesson plans and learning materials, including presentations and interactive forms, collaborate in real <0>time with students and educators, establish a grading system, etc. Find out how to manage access rights to the educational contents and keep sensitive data secure.</0>",
+
+  "CardDataTitle20": "Custom tech-focused training",
+  "CardDataDescription20": "Discover the technical side of working with ONLYOFFICE Docs. Dive into its installation and maintenance, learn how to do backups, configure the editors, add plugins and macros, get an overview of the advanced features and parameters.",
+
+  "CardDataTitle19": "Editing documents in ONLYOFFICE DocSpace",
+  "CardDataDescription19": "Discover how to work with office files within ONLYOFFICE DocSpace, a room-based environment for effective collaboration. Learn how to create, edit, and co-auhtor documents, spreadsheets, presentations, and forms in real time or using <0>a paragraph-locking co-editing mode and other collaborative features.</0>",
+
+  "CardDataTitle18": "Administrating ONLYOFFICE DocSpace",
+  "CardDataDescription18": "Discover how to administer ONLYOFFICE DocSpace, a room-based environment for effective document collaboration. Learn how to set up your team and invite users with various roles, create and manage rooms, customize and secure your space.",
+
+  "CardDataTitle17": "Working with docs in WordPress",
+  "CardDataDescription17": "Learn how to work on office documents within WordPress : edit docs uploaded to WordPress using ONLYOFFICE Docs, add ONLYOFFICE blocks when creating a post to insert documents in the embedded mode, etc.",
+
+  "CardDataTitle16": "Integration (WordPress)",
+  "CardDataDescription16": "Learn how to work on office documents within WordPress : edit docs uploaded to WordPress using ONLYOFFICE Docs, add ONLYOFFICE blocks when creating a post to insert documents in the embedded mode, etc.",
+
+  "CardDataTitle15": "Working with docs in Nextcloud",
+  "CardDataDescription15": "Learn how to connect ONLYOFFICE Docs to Nextcloud, configure it and edit and collaborate on text documents, spreadsheets, presentations, and forms within Nextcloud.",
+
+  "CardDataTitle14": "Integration (Nextcloud)",
+  "CardDataDescription14": "Learn how to connect ONLYOFFICE Docs to Nextcloud, configure it and edit and collaborate on text documents, spreadsheets, presentations, and forms within Nextcloud.",
+
+  "CardDataTitle13": "Working with forms",
+  "CardDataDescription13": "Learn how to create ready-to-fill-out forms, incl. adding various form fields and changing field properties, share forms with other users, fill them out and save as DOCX or PDF files.",
+
+  "CardDataTitle12": "Forms",
+  "CardDataDescription12": "Learn how to create ready-to-fill-out forms, incl. adding various form fields and changing field properties, share forms with other users, fill them out and save as DOCX or PDF files.",
+
+  "CardDataTitle11": "Custom package",
+  "CardDataDescription11": "Pick up any courses you would like to master and compose your own training package. Contact us to discuss all the details.",
+
+  "CardDataTitle10": "VIP package",
+  "CardDataDescription10": "VIP package allows you to get a complete set of training courses to master all ONLYOFFICE modules and tools: working with documents, projects, CRM, mail and calendar, using social communication features, managing users and guests, <0>administrating the portal.</0>",
+
+  "CardDataTitle9": "Administrating the portal",
+  "CardDataDescription9": "Learn how to administer your ONLYOFFICE and configure portal settings, including language and time zone, DNS, color themes, two-factor authentication, backups, integration with third-party services, etc.",
+
+  "CardDataTitle8": "Working in a team",
+  "CardDataDescription8": "Learn how to use ONLYOFFICE Projects to enhance your team’s productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features. Find out how to add and manage users, guests and administrators, chat with <0>your teammates, use social communication tools like blogs, forums, news, polls, wiki, etc.</0>",
+
+  "CardDataTitle7": "Working with customers",
+  "CardDataDescription7": "Discover ONLYOFFICE CRM, Mail and Calendar to manage business processes, track sales and simplify your communication with customers. Learn how to organize a client database, create a web-to-lead form, build reports, manage correspondence <0>and create corporate mailboxes, schedule meetings and send invitations.</0>",
+
+  "CardDataTitle6": "Office suite",
+  "CardDataDescription6": "Discover effective file management and organize document workflow according to your needs. Learn how to create, edit, share and collaborate on text documents, spreadsheets, and presentations on the ONLYOFFICE portal or within integrated solutions.",
+
+  "CardDataTitle5": "People, Chat, Community",
+  "CardDataDescription5": "Learn how to add and manage users, guests and administrators on the portal, chat with your teammates in real time via the instant messaging application, use social communication tools such as blogs, forums, news, polls, wiki, etc.",
+
+  "CardDataTitle4": "Mail & Calendar",
+  "CardDataDescription4": "Learn how to manage your correspondence in ONLYOFFICE Mail, create corporate mailboxes, structure Inbox, add email signatures. Discover ONLYOFFICE Calendar and learn how to create timetables, schedule group meetings, add to-dos and <0>sync your calendar with third-party applications.</0>",
+
+  "CardDataTitle3": "CRM",
+  "CardDataDescription3": "Learn how to use ONLYOFFICE CRM to organize your customer database, track sales, create a web-to-lead form, opportunities, invoices, and build reports.",
+
+  "CardDataTitle2": "Projects",
+  "CardDataDescription2": "Learn how to use ONLYOFFICE Projects to enhance your team’s productivity. Discover tasks, subtasks, milestones, Gantt Chart, time tracking, and other features.",
+
+  "CardDataTitle1": "Documents",
+  "CardDataDescription1": "Discover effective file management and organize document workflow according to your needs. Learn how to create, edit, share and collaborate on text documents, spreadsheets, and presentations on the ONLYOFFICE portal or within integrated solutions."
+}

@@ -1,0 +1,1 @@
+export { VacanciesTemplate } from "./Vacancies"

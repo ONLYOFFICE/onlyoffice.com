@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Escritório on-line para Trello | ONLYOFFICE",
+  "PageDescription": "Trabalhe em todos os tipos de documentos do Office no Trello usando o ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Escritório on-line para Trello",
+  "Subheader": "Trabalhe em todos os tipos de documentos do Office no Trello usando o ONLYOFFICE Docs",
+  "GetStarted": "COMECE AGORA",
+
+  "WorkWithinConnector": "Trabalhar em documentos de escritório carregados em cartões de quadro do Trello",
+  "DocumentsTab1Label": "Permitir que os administradores e membros com direitos normais editem arquivos DOCX, XLSX e PPTX.",
+  "DocumentsTab2Label": "Conceder aos observadores direitos para visualizar os documentos carregados.",
+  "DocumentsTab3Label": "Seja coautor de documentos com seus colegas em tempo real.",
+
+  "MarketplaceConnectorTitle": "Projetado para uma integração perfeita com o Trello",
+  "MarketplaceConnectorDescription": "Obtenha o Power-Up do ONLYOFFICE para o Trello agora no Atlassian Marketplace.",
+  "GetItNow": "ADQUIRA AGORA",
+
+  "WhyOO": "Por que ONLYOFFICE ?",
+  "Reason1": "Suporte para mais de <0>50 formatos de arquivo</0>, totalmente compatível com os formatos do MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "Um conjunto robusto de ferramentas de edição, formatação e estilo. Ajudante de <0>IA integrado</0>.",
+  "Reason3": "<0>Coedição em tempo real e com bloqueio de parágrafo</0>, revisão, histórico de versões, comparação de documentos, comentários e bate-papo.",
+  "Reason4": "<0>Segurança aprimorada</0>. Direitos de acesso flexíveis e JWT. Marca d'água e proteção por senha. Código-fonte aberto.",
+  "Reason5": "Integração perfeita com o conector pronto para uso do Atlassian Marketplace. <0>Fácil configuração</0>.",
+  "Reason6": "Solução em nuvem e auto-hospedada para controle total sobre seus dados. Versões empresariais escaláveis. <0>Teste gratuito por 30 dias</0>.",
+
+  "HowToStart": "Como começar",
+  "HowToStartStep1": "Implante o <0>ONLYOFFICE Docs</0> em seu próprio servidor ou crie uma conta <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenha a ativação no <0>Atlassian Marketplace</0>.",
+  "HowToStartStep3": "Configure a ativação e habilite o JWT.",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE ao seu serviço web favorito? Ou você desenvolveu um?"
+}

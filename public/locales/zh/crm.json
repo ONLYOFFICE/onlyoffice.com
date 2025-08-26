@@ -1,0 +1,33 @@
+{
+  "PageTitle": "易于使用的CRM系统 | ONLYOFFICE",
+  "PageDescription": "在线客户管理软件。管理客户、跟踪销售、利用一整套业务工具发送发票等。",
+
+  "HeroTitle": "有助于销售管理和提高生产力的便捷CRM",
+  "HeroText": "这是一个非常棒且易于使用的CRM系统。<br/><1>- Live Enterprise</1>",
+  "GetItNow": "立即获取",
+
+  "CustomerRelations": "管理客户关系的基石",
+  "CustomerRelationsText": "借助CRM软件的丰富功能构建客户数据库、管理业务流程、分析潜在交易机会并跟踪销售进展，功能包含：联系人、交易机会、任务、Web-to-Lead表单和通讯历史记录等。",
+  "CustomerRelationsImage": "/images/templates/crm/features/zh/customer_relations.png",
+  "Customization": "个性化定制",
+  "CustomizationText": "根据您的具体需求定制ONLYOFFICE CRM软件：添加新的联系人类型、任务类别和特殊用户字段等。使用可自定义的\"机会阶段\"描述您的业务进展。",
+  "CustomizationImage": "/images/templates/crm/features/zh/customization.png",
+  "RapidEntry": "快速了解潜在客户",
+  "RapidEntryText": "将ONLYOFFICE Web-to-lead表单嵌入您的网站，获取自动转移到CRM软件数据库的新潜在客户信息。",
+  "RapidEntryImage": "/images/templates/crm/features/zh/rapid_entry.png",
+  "Invoicing": "进销存系统",
+  "InvoicingText": "在ONLYOFFICE中创建发票、从CRM数据库中选择收货人，并将其与交易机会相关联。",
+  "InvoicingImage": "/images/templates/crm/features/zh/invoicing.png",
+  "CloseIntegration": "紧密集成邮件功能",
+  "CloseIntegrationText": "将电子邮件中的联系人添加到您的数据库中、发送消息和发票，并在CRM中查看与客户的所有联系记录。直接从ONLYOFFICE CRM群发邮件。",
+  "CloseIntegrationImage": "/images/templates/crm/features/zh/close_integration.png",
+  "CustomerCall": "电话联系客户",
+  "CustomerCallText": "得益于ONLYOFFICE与Twilio的集成，您可以直接从CRM拨打和接听客户电话。",
+  "CustomerCallImage": "/images/templates/crm/features/zh/customer_call.png",
+  "SalesReporting": "销售报告",
+  "SalesReportingText": "生成报告，帮助您发掘销售中的优劣势，并了解业务进展。",
+  "SalesReportingImage": "/images/templates/crm/features/zh/sales_reporting.png",
+
+  "ItIsPrettyNice": "这是一个非常棒且易于使用的CRM系统。",
+  "LiveEnterprise": "Live Enterprise"
+}

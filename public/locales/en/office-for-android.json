@@ -10,9 +10,6 @@
   "HeroLeftImageUrl": "/images/templates/office-for-android/hero/en/header-phone.png",
   "HeroLeftImageUrl2x": "/images/templates/office-for-android/hero/en/header-phone@2x.png",
 
-  "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.png",
-  "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery.svg",
-
   "OneAppForYourText": "One app for your text documents, spreadsheets, presentations, forms and media files",
   "CompatibleWithMSOffice": "100% compatible with MS Office formats",
 
@@ -87,12 +84,15 @@
   "LearnCardTitleRelease": "Release notes",
   "LearnMoreTextOnlyOfficeDocuments": "ONLYOFFICE Documents 5.5 with passwords, shape filling, and UI improvements",
   "LearnMoreSubtitleRead": "Read story",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/2022/10/onlyoffice-documents-5-5/",
 
   "LearnCardTitleTutorials": "Tutorials",
   "LearnMoreTextCollaborative": "Collaborative document editing on your Android device",
   "LearnMoreSubtitleLearn1": "Learn more",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/mobile-applications/documents/android/android-de/tools-and-settings/collaborative-editing.aspx",
 
   "LearnCardTitleDeveloper": "Developer guide",
   "LearnMoreTextHowMobile": "How mobile integration works",
-  "LearnMoreSubtitleLearn2": "Learn more"
+  "LearnMoreSubtitleLearn2": "Learn more",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/2022/07/onlyoffice-for-developers-how-the-mobile-integration-works/"
 }

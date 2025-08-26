@@ -1,5 +1,15 @@
 {
-  "Phone": "Phone:",
-  "RequestCall": "Request call",
-  "WatchVideo": "Watch video"
+    "HarmonyInYourCookies": "Harmony in your cookies",
+    "CookieText": "Our website uses cookies to provide you with a tailored experience. Cookies help us run the site, improve your browsing, and enable targeted marketing and ads. You can fully consent to our use of cookies or manage your preferences. <0>Learn more</0>",
+    "Deny": "Deny",
+    "Customize": "Customize",
+    "AcceptAll": "Accept All",
+    "CookieSettings": "Cookie settings",
+    "ConfirmMyChoices": "Confirm my choices",
+    "Technical": "Technical (required)",
+    "TechnicalDescription": "These cookies are necessary for displaying our website correctly. They ensure its proper functioning.",
+    "Analytical": "Analytical",
+    "AnalyticalDescription": "The purpose of analytical cookies is to discover how users use our website as well as to track their visits. These functions allow us to improve the quality and content of our website.",
+    "Marketing": "Marketing",
+    "MarketingDescription": "These cookies are used for marketing purposes and the collection of information to better tailor advertising to the interests of the users of our website."
 }

@@ -1,0 +1,76 @@
+{
+  "PageTitle": "ONLYOFFICEを宣伝して報酬を得ましょう | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE インフルエンサープログラム",
+
+  "HeroTitle": "ONLYOFFICE<0>インフルエンサー</0>プログラム",
+  "HeroText": "あなたのオーディエンスにONLYOFFICEを宣伝することで報酬を得ることができます",
+  "GetStarted": "今すぐ開始",
+
+  "InspireUsers": "ONLYOFFICEのインフルエンサーとしてユーザーに<0>インスパイア</0>を与えましょう",
+  "AreYouABlogger": "忠実な読者を持つブロガーまたは技術&ITの専門家ですか？ ONLYOFFICEインフルエンサープログラムであなたのコンテンツを収益化することをお勧めします！",
+  "HelpUs": "あなたのオーディエンスにONLYOFFICEのブランドや製品を宣伝しましょう。",
+  "Check": "よくある質問と条件をチェック",
+
+  "ItIsEasy": "私たちと働くのは<0>簡単</0>",
+  "Apply": "お申し込み",
+  "FillTheForm": "<0>応募フォーム</0>に必要事項をご記入の上、担当者からの返信をお待ちください。",
+  "Create": "作成",
+  "CreateContent": "ONLYOFFICEに関連するコンテンツを作成してください。",
+  "Earn": "稼ぐ",
+  "GetYourReward": "報酬を獲得してください。",
+
+  "WhatWeAccept": "<0>募集</0>コンテンツ",
+  "ProductVideos": "様々なフォーマットの製品ビデオ",
+  "LongVideos": "ロング動画、ショート動画、ストーリー（YouTube、TikTok、Instagramなど）",
+  "Articles": "記事、レビュー、投稿",
+  "InSocial": "ブログやSNSのチャンネル",
+  "Recommendations": "推薦",
+  "InAllSocial": "すべてのソーシャルメディア",
+  "CustomFormats": "カスタム形とキャンペーン",
+  "Creativity": "クリエイティビティ大歓迎",
+
+  "ApplyNow": "今すぐ応募",
+
+  "BecomeAmbassador": "ブランドアンバサダーに<0>なりませんか</0>？",
+  "OOAmbassadors": "ONLYOFFICEではキャンパスアンバサダーを募集しています！世界中の大学生・専門学校生が対象です。",
+  "OOAmbassadorsLink": "https://www.onlyoffice.com/blog/ja/2023/05/onlyoffice-20",
+  "JoinNow": "今すぐ参加",
+
+  "Review": "ONLYOFFICEを<0>レビュー</0>",
+  "ShareYourOpinion": "ONLYOFFICEをよりよくするために、ご意見をお聞かせください。",
+
+  "Monetize": "アフィリエイトプログラムでウェブサイトを収益化",
+  "WouldYouLike": "紹介販売で安定した収入を得ませんか? アフィリエイト・プログラムに参加し、あなたのウェブサイトにアフィリエイト・リンクを貼ることで、コミッションを受け取ることができます。",
+  "StartNow": "今すぐスタート",
+
+  "HowQualify": "どうすればONLYOFFICEインフルエンサープログラムに参加できますか？",
+  "WeAccept": "私たちは、SNSアカウント、ブログ、ウェブサイトを持ち、熱心な読者を持つあらゆるタイプの個人インフルエンサーからの申請を受け付けています。申請書を審査する際には、他のエンゲージメント指標に加えて、あなたのフォロワー数を見ます。",
+  "WhatTypes": "どのようなアカウントやブログが採用されますか？",
+  "PreferableTopics": "好まれるトピックは以下の通りです： IT、技術、ソフトウェア、アプリ、ギーク、ライフハック、開発者、ビジネスなど。ただし、どなたでもご応募いただけます。",
+  "WhichRewards": "どのような特典がありますか？",
+  "AmongContributionRewards": "ONLYOFFICEクラウドまたはホームサーバーライセンス。金銭的な報酬も可能ですので、個別にご相談ください。",
+  "DoYouHave": "コンテンツ制作に役立つリソースはありますか？",
+  "PleaseCheck": "もちろんです！<0>プレスダウンロード</0>とONLYOFFICEブランドブックをご覧ください。また、詳細についてご相談いただければ、追加の資料や資産も喜んでご提供いたします。",
+
+  "JoinOOInfluencerProgram": "<0>ONLYOFFICE</0>インフルエンサープログラムに参加しませんか？",
+  "FillOutTheForm": "フォームに必要事項をご記入ください。",
+  "FullName": "氏名",
+  "NameSurname": "Name Surname",
+  "FullNameIsEmpty": "氏名が入力されていません",
+  "FullNameIsIncorrect": "氏名が正しくありません",
+  "Email": "メールアドレス*",
+  "Name": "name@domain.com",
+  "EmailIsEmpty": "メールが入力されていません",
+  "EmailIsIncorrect": "メールが正しくありません",
+  "Link": "ウェブサイト/ブログ/SNSへのリンク",
+  "SiteURL": "サイトの URL が入力されていません",
+  "MoreDetails": "詳細",
+  "TellUs": "自己紹介とオーディエンスについてもう少し詳しく教えてください。さらに必要なリンクがあれば、お気軽にご記入ください。",
+  "ByClickingSubmit": "[送信]をクリックすると、<0>当社のサービス水準合意</0>および<1>個人情報保護方針</1>を理解し、同意したことになります。",
+  "Submit": "送信",
+  "SuccessfullyRequestText": "折返し電話リクエストが正常に送信されました",
+  "ErrorRequestText": "申し訳ありませんが、エラーが発生しました。後で再試行してください。",
+
+  "LookingForOtherWays": "ONLYOFFICEプロジェクトに貢献する他の方法をお探しですか？",
+  "CheckThisPage": "こちらのページをご覧ください"
+}

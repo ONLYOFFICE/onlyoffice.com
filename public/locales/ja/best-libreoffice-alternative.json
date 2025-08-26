@@ -1,0 +1,31 @@
+{
+  "PageTitle": "豊富な共同編集機能LibreOffice 代替製品 - ウェブベース オンライン オフィススイート",
+  "PageDescription": "LibreOffice オンライン代替製品Windows 版、Linux 版、Mac OS 版をダウンロードAndroid 版、iOS 版アプリもご利用になれます。",
+
+  "HeroTitle": "<0>ONLYOFFICE</0> は、LibreOffice に一番適合した代替製品です。",
+  "GetOODocsNow": "今すぐ ONLYOFFICE を購入",
+  "CompatibleWithMicrosoftOfficeFormats": "Microsoft Office フォーマットに完全適合",
+
+  "ReasonsTitle": "ONLYOFFICE が、LibreOffice に適合した代替製品である 6 つの理由",
+  "MaximumCompatibility": "MS Officeファイルとの最高の互換性",
+  "MaximumCompatibilityText": "ONLYOFFICE Docsは、Microsoft Word、Excel、およびPowerPointファイル（.docx、.xlsx、および.pptx）との最高の互換性を保証する基本形式としてOOXMLを使用します。",
+  "DesktopApp": "Web、デスクトップ、モバイル",
+  "DesktopAppText": "ONLYOFFICEを使用すると、どのブラウザーでも、どのOSでもオンラインで作業したり、Windows、Linux、macOS用の無料のデスクトップアプリでドキュメントをオフラインで編集したり、AndroidとiOS用の無料のモバイルアプリを使用したりできます。",
+  "DocsSheetsSlides": "ドキュメント、シート、スライド、フォーム、PDF",
+  "DocsSheetsSlidesText": "あらゆる複雑さのテキスト文書やスプレッドシートの編集と共同作業、魅力的なプレゼンテーションの作成、PDFの表示と注釈。プロフェッショナルなフォームやテンプレートをゼロから、または既存のDOCXファイルから作成し、他のユーザーに記入してもらい、記入可能なPDFファイルとして保存できます。",
+  "Seamless": "シームレスな共同作業",
+  "SeamlessText": "ONLYOFFICE Docsは、文字レベルと段落レベルの共同編集モード、レビューと変更履歴、バージョン履歴、コメントとメンション、ビルトインチャット、音声通話とビデオ通話のためのプラグインをユーザーに提供します。コメント、レビュー、フォーム記入、ユーザ設定フィルターなどの柔軟な権限を使用して、ドキュメントを簡単に共有できます。",
+  "Flexibility": "柔軟性",
+  "FlexibilityText": "ルームベース環境ONLYOFFICE DocSpaceの一部として、Nextcloud、Alfresco、Confluence、Seafileなどの同期・共有サービスやECMサービスの一部として、または自社で構築するソリューションに統合するなど、オンラインエディタをどのように使用するかは自由です。",
+  "AIHelper": "AIヘルパー",
+  "AIHelperText": "任意のAIプロバイダーを接続し、異なるタスクに異なるAIモデルを使用できます。AIアシスタントプラグインを利用して、テキストを使った作業を促進しましょう：単語分析を実行し、未知の単語の意味を探り、文章、画像、キーワードを生成し、ストーリーを要約して翻訳し、同義語を見つけます。",
+
+  "PresentationTitle": "オフィススイートの違いが分かるように、<0>このプレゼンテーションを</0>ご覧ください：",
+
+  "OODocsVsLibreOfficeVsOpenOffice": "ONLYOFFICE vs LibreOffice vs OpenOffice [Tested Side By Side]",
+  "OODocsVsLibreOfficeVsOpenOfficeText": "Windows Reportでは、ONLYOFFICE、LibreOffice、OpenOfficeなど、Microsoft Officeの代替ソフトを並べて比較してご紹介しています。Windows Reportは、Windows関連の製品・サービス、ニュース、技術ユーザーのためのヒントなど、信頼性の高いWebリソースです。",
+  "OODocsVsLibreOffice": "ONLYOFFICE vs LibreOffice: what to choose when you decide to ditch Microsoft",
+  "OODocsVsLibreOfficeText": "Microsoft Office は、やっぱりカッコいいですが、そのうちに価格も上がってしまうでしょう。もしくは、対抗的なオープンソース スクリプトを使用すれば、Microsoft Office を諦めることができるかもしれません。どんな理由であれ、代わりになるものを用意する必要があります。それでは、ONLYOFFICE ですか? それとも LibreOffice を使用しますか?",
+
+  "WhatWentWrong": "LibreOffice が間違っていることとは？詳細は、<0>ここをクリック</0> します"
+}

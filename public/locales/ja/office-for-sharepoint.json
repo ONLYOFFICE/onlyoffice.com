@@ -1,0 +1,43 @@
+{
+  "PageTitle": "SharePoint 向けのオンラインオフィススイート",
+  "PageDescription": "SharePoint 内でのオフラインドキュメント編集と共同編集",
+
+  "OnlineOfficeForConnector": "SharePoint用のオンラインオフィス",
+  "Subheader": "ONLYOFFICE は、すべての機能を備えており、お使いのブラウザで作動するデスクトップ用オフィスアプリに代わります。",
+  "GetStarted": "スタートアップ",
+
+  "WhyOO": "1500 万以上の ユーザーが既に ONLYOFFICE を利用している理由",
+  "Reason1": "マイクロソフトとの高い互換性オフラインフォーマット",
+  "Reason2": "豊富なスタイルと書式ツール",
+  "Reason3": "ビューアビリティ100％、コンバージョン、印刷正確なページ表示",
+  "Reason4": "幅広い共同編集能力",
+  "Reason5": "厳選のサードパーティアドオン",
+  "Reason6": "柔軟なアクセス権管理",
+  "Reason7": "オープンソースコード利用可能GitHub で",
+  "Reason8": "セキュリティ レベルが高い",
+  "Reason9": "WOPIを使用した簡単な統合",
+
+  "MarketplaceConnectorTitle": "SharePoint とシームレスに連携するよう設計されています",
+  "MarketplaceConnectorDescription": "SharePoint 用の ONLYOFFICE コネクターを <0>GitHub</0> から入手いただけます。",
+  "GetItNow": "今すぐ入手",
+
+  "HowToStart": "開始方法",
+  "HowToStartStep1": "<0>ONLYOFFICE Docs</0>を自社サーバーにデプロイするか、<1>Docs Cloud</1> アカウントを作成してください",
+  "HowToStartStep2": "<0>GitHub</0>からONLYOFFICEコネクタを取得します。",
+  "HowToStartStep3": "コネクタを設定し、JWTを有効にします。",
+
+  "ReadDetailedInstructions": "<0>ヘルプセンター</0>の詳しい説明をお読みください。",
+
+  "LearnMoreHeading": "SharePointとONLYOFFICEの統合についてさらに詳しく",
+  "Video": "動画",
+  "VideoDesc": "ONLYOFFICE DocsとSharePointの統合方法。",
+  "VideoLink": "今すぐチェックする",
+  "Compare": "比較",
+  "CompareDesc": "ONLYOFFICE Docsが最高のMS Office代替品である理由。",
+  "CompareLink": "詳細はこちら",
+  "HelpCenter": "ヘルプ・センター",
+  "HelpCenterDesc": "WOPI経由でONLYOFFICE DocsとSharePointを接続する方法。",
+  "HelpCenterLink": "今すぐ読む",
+
+  "NeedAnAppToConnect": "お好みのウェブ サービスに ONLYOFFICE を接続するアプリが必要ですか？  アプリを開発しましたか？"
+}

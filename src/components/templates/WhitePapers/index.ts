@@ -1,0 +1,1 @@
+export { WhitePapersTemplate } from "./WhitePapers";

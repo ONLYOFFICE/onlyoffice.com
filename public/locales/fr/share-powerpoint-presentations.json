@@ -1,0 +1,26 @@
+{
+  "PageTitle": "Travail collaboratif PowerPoint",
+  "PageDescription": "Partager les présentations PowerPoint avec les permissions avancées d'ONLYOFFICE. Collaborer avec vos collègues. Partager les présentations avec la permission de laisser les commentaires.",
+
+  "Header": "Créez ensemble",
+  "SubHeader": "Partagez vos diapositives et modifiez les présentations d’une manière collaborative",
+
+  "HeroImgUrl": "/images/templates/share-powerpoint-presentations/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/share-powerpoint-presentations/hero/fr/hero@2x.png",
+
+  "Feature1Title": "Partagez",
+  "Feature1Desc": "Partagez les présentations PowerPoint avec les permissions d’accès avancées. Donnez un accès complet pour que vos collègues puissent collaborer avec vous ou accordez une permission de lecture seule pour leur montrer le contenu de la présentation. Accordez la permission de laisser les commentaires pour solliciter les avis des collègues.",
+
+  "Feature2Title": "Collaborez",
+  "Feature2Desc": "Co-éditez les diapositives dans le mode Rapide pour que vos collègue voient toutes les modifications en temps réel ou activez le mode Strict pour rester plus concentré en travaillant sur sa partie de la présentation.",
+
+  "Feature3Title": "Communiquez",
+  "Feature3Desc": "Ajoutez les commentaires et mentionnez les utilisateurs dans les commentaires pour les inviter dans une discussion ou partager les fichiers instantanément. Communiquez avec votre équipe via une messagerie instantanée.",
+
+  "Feature1ImgUrl": "/images/templates/share-powerpoint-presentations/features/fr/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/fr/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/share-powerpoint-presentations/features/fr/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/fr/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/share-powerpoint-presentations/features/fr/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/fr/pic3@2x.png"
+}

@@ -53,7 +53,7 @@ const Hero = ({ locale, productsData }: IDocSpaceFamilyPackTemplate) => {
             />
 
             <StyledHeroPrice>
-              <Text as="span" size={1} label="$" />
+              <Text as="span" size={1} label={currency.symbol} />
               {productsData.basic.price}
             </StyledHeroPrice>
 
@@ -133,6 +133,7 @@ const Hero = ({ locale, productsData }: IDocSpaceFamilyPackTemplate) => {
             </StyledHeroTotal>
 
             <Button
+              data-testid="buy-now-button"
               as="a"
               href={productsData.basic.url}
               target="_blank"

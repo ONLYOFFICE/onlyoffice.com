@@ -1,0 +1,40 @@
+{
+  "PageTitle": "Konvertierungs-API | ONLYOFFICE",
+  "PageDescription": "Eine API zum Konvertieren aller Arten von Office-Dokumenten",
+
+  "HeroTitle": "Leistungsstarke Konvertierung von Dokumenten",
+  "HeroText": "Eine API für die Konvertierung aller Arten von Office-Dokumenten: Texte, Blätter, Folien, Formulare, PDFs, E-Books und mehr",
+  "GetStarted": "Jetzt starten",
+
+  "ExploreExamples": "Entdecken Sie einsatzbereite Beispiele",
+  "OOConversionApiTitle": "ONLYOFFICE-API zur Konvertierung wird in beliebten Integrationen verwendet",
+  "ConvertingFormats": "Konvertierung von Nicht-OOXML-Formaten nach OOXML zur weiteren Bearbeitung",
+  "ConvertingFormatsImgUrl": "/images/templates/conversion-api/examples/de/converting-non-ooxml-formats-to-ooxml-for-further-editing.png",
+  "ConvertingFormatsImgUrl2x": "/images/templates/conversion-api/examples/de/converting-non-ooxml-formats-to-ooxml-for-further-editing@2x.png",
+  "SavingDocuments": "Speichern von Dokumenten aus dem Dateispeicher in verschiedenen Formaten",
+  "SavingDocumentsImgUrl": "/images/templates/conversion-api/examples/de/saving-documents-from-the-file-storage-in-various-formats.png",
+  "SavingDocumentsImgUrl2x": "/images/templates/conversion-api/examples/de/saving-documents-from-the-file-storage-in-various-formats@2x.png",
+
+  "WhyToUseOOConversionApi": "Warum sollten Sie ONLYOFFICE-API für Konvertierungen verwenden?",
+  "SupportForAllPopularFormats": "Unterstützung aller gängigen Formate",
+  "CreatePdfs": "Erstellen Sie PDFs aus Ihren Dokumenten, Tabellen oder Folien, verwandeln Sie Lehrbücher in E-Books, konvertieren Sie Präsentationen in Bilder und vieles mehr. ONLYOFFICE unterstützt mehr als 50 verschiedene <0>Dokumentformate</0>.",
+  "Security": "Sicherheit",
+  "TheOpenSourceCode": "Der offene Quellcode von ONLYOFFICE ist auf GitHub verfügbar, um Transparenz und Zuverlässigkeit zu gewährleisten. JSON Web Token schützt die Dokumente vor unberechtigtem Zugriff. Lesen Sie mehr über <0>Sicherheitsmaßnahmen</0>.",
+  "AdvancedSettings": "Erweiterte Einstellungen",
+  "AddConversionSettings": "Fügen Sie Konvertierungseinstellungen hinzu, um die Trennzeichen bei der Konvertierung von CSV-Dateien, den Standardmodus für die Anzeige von Währungen bei der Konvertierung von Tabellenkalkulationen oder die Seitengröße und Ränder der PDF-Ausgabedatei festzulegen, und vieles mehr. Informieren Sie sich in der API-Dokumentation über alle verfügbaren Optionen.",
+  "HighQualityConversion": "Hochwertige Konvertierung",
+  "OOConstantlyImproveTheService": "ONLYOFFICE verbessert ständig seinen Service, um die bestmöglichen Ergebnisse für alle Konvertierungsarten zu erzielen. Nutzen Sie <0>unseren Online-Konverter</0> für Ihre eigenen Dokumente.",
+
+  "EasilyBuild": "Erstellen Sie ganz einfach einen Online-Dokumentenkonverter",
+  "UsingOOConversionApi": "Verwendung von ONLYOFFICE-API zur Konvertierung",
+  "CheckTheTutorial": "Anleitung prüfen",
+  "DocumentConverterLink": "https://www.onlyoffice.com/blog/de/2023/02/erstellen-sie-einen-online-dokumentenkonverter-mit-onlyoffice-konvertierungs-api",
+
+  "PartOfOODocsDeveloper": "ONLYOFFICE-API zur Konvertierung – Bestandteil von ONLYOFFICE Docs Developer",
+  "BringAdvancedDocument": "Bringen Sie den Endbenutzern erweiterte Dokumentenverarbeitung mit dem Konvertierungsdienst unter Ihrer eigenen Marke. <0>Mehr erfahren</0>",
+  "ConversionApiLinkSubject": "ONLYOFFICE%20Konvertierungs-API%20anfragen",
+
+  "HaveAnyQuestions": "Haben Sie noch Fragen?",
+  "HaveAnyQuestionsText": "Wir beraten Sie gerne und besprechen mit Ihnen alle Details.",
+  "GetInTouch": "KONTAKT AUFNEHMEN"
+}

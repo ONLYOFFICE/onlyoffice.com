@@ -1,0 +1,1 @@
+export { BestWpsAlternativeTemplate } from "./BestWpsAlternative";

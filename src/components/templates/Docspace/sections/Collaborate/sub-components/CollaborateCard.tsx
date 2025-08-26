@@ -40,7 +40,7 @@ const CollaborateCard = ({
         <StyledCollaborateCardDescription>
           {description}
         </StyledCollaborateCardDescription>
-        <Link label={linkLabel} href={href} textUnderline color="#ff6f3d" />
+        <Link label={t(linkLabel)} href={href} textUnderline color="#ff6f3d" />
       </StyledContentWrapper>
       <StyledCollaborateCardImage $imgUrl={t(image.url)} $imgUrl2x={t(image.url2x)} />
     </StyledCollaborateCard>

@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Используйте виртуальные комнаты данных, чтобы обеспечить эффективный контроль и прозрачность при работе с документами",
+  "PageDescription": "Организуйте систему безопасного хранения и обмена конфиденциальной деловой информацией в ONLYOFFICE DocSpace",
+
+  "UseVirtualDataRooms": "Используйте <0>виртуальные комнаты данных</0>, чтобы обеспечить эффективный контроль и прозрачность при работе с документами",
+  "OrganizeSecure": "Организуйте систему безопасного хранения и обмена конфиденциальной деловой информацией в ONLYOFFICE DocSpace",
+
+  "IdealForDueDiligence": "Идеальное решение при проведении комплексной проверки",
+  "CompletelyOrganized": "Полная организация",
+  "HighLevelOfDataSecurity": "Высокий уровень безопасности данных",
+  "AdvancedRoleBased": "Расширенное заполнение форм на основе ролей",
+  "CostEffectiveForAnyBudget": "Экономическая эффективность для любого бюджета",
+
+  "CreateFreeAccount": "Создайте бесплатный аккаунт",
+
+  "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
+
+  "IdealForDueDiligenceDesc": "Используйте виртуальную комнату данных в ходе комплексной проверки при слиянии, в процессе работы над совместными проектами или выполнения различных задач, требующих доступа к данным.",
+  "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/ru/ideal.png",
+  "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/ru/ideal@2x.png",
+
+  "CompletelyOrganizedDesc": "Индексируйте и отслеживайте весь контент автоматически, чтобы организовать работу оптимальным образом. Создавайте отчеты в соответствии со структурой файлов в комнате.",
+  "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/ru/organized.png",
+  "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/ru/organized@2x.png",
+
+  "HighLevelOfDataSecurityDesc": "Включите водяные знаки, установите срок действия файлов, ограничьте загрузку и копирование, чтобы защитить конфиденциальные данные.",
+  "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/ru/security.png",
+  "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/ru/security@2x.png",
+
+  "AdvancedRoleBasedText": "Пригласите свою команду и назначьте пользователям роли, которые соответствуют организационной структуре вашей компании. Отслеживайте заполнение форм в режиме реального времени. Просматривайте заполненные формы и формы в процессе заполнения, завершайте их и получайте готовые версии.",
+  "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/ru/advanced.png",
+  "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/ru/advanced@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "Платите только за администраторов и добавляйте любое количество обычных пользователей и гостей бесплатно. Воспользуйтесь бесплатным тарифным планом Startup для небольших команд. ONLYOFFICE DocSpace подойдет как для малых и средних компаний, так и для крупных предприятий. Нужен полный контроль над корпоративными данными? Разверните DocSpace на собственном сервере.",
+  "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/ru/cost-effective-for-any-budget.png",
+  "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/ru/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Узнайте больше о виртуальных комнатах данных DocSpace",
+
+  "HelpCenter": "Справочный центр",
+  "HelpCenterDesc": "Ознакомьтесь с подробными руководствами пользователя для более эффективной работы",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "Узнать больше",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Изучите ONLYOFFICE DocSpace еще лучше с помощью видеоинструкций",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Посмотреть сейчас",
+
+  "CustomerTestimonial": "Отзывы клиентов",
+  "HowKinderhausBerlinSharesAndCollaborates": "Как Дом ребенка в Берлине организует совместную работу и предоставление доступа к конфиденциальным файлам с помощью ONLYOFFICE DocSpace",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Читать историю"
+}

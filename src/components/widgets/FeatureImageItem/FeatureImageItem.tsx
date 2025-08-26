@@ -6,16 +6,22 @@ import {
 import { IFeatureImageItem } from "./FeatureImageItem.types";
 import { ContentImage } from "../ContentImage";
 import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 
 const FeatureImageItem = ({
   id,
   className,
   heading,
+  comingSoon,
   text,
   links,
   contentWidth = 448,
   image,
   position,
+  fontSize,
+  rowGap,
+  gap,
+  marginTop,
 }: IFeatureImageItem) => {
   return (
     <ContentImage
@@ -23,6 +29,9 @@ const FeatureImageItem = ({
       className={className}
       contentWidth={contentWidth}
       position={position}
+      rowGap={rowGap}
+      gap={gap}
+      marginTop={marginTop}
       image={{
         url: image.url,
         url2x: image.url2x,
@@ -31,8 +40,13 @@ const FeatureImageItem = ({
       }}
     >
       <StyledFeatureImageItemContent>
-        <Heading level={3} label={heading} />
-        <StyledFeatureImageItemText color="#666666">
+        <Heading level={3} label={String(heading)} />
+        {comingSoon && (
+          <Text as="span" color="main" fontSize="14px">
+            {comingSoon}
+          </Text>
+        )}
+        <StyledFeatureImageItemText color="#666666" $fontSize={fontSize}>
           {text}
         </StyledFeatureImageItemText>
         {links?.map(({ href, label, isExternal }, index) => (

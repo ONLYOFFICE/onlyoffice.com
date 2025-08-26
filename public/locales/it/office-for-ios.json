@@ -1,66 +1,64 @@
 {
-  "PageTitle": "Suite per ufficio mobile gratuita per iPhone e iPad | ONLYOFFICE Documents",
-  "PageDescription": "Modifica e co-modifica documenti, fogli di calcolo e presentazioni, compila moduli dai tuoi dispositivi iOS.",
+  "PageTitle": "Office suite mobile gratis per iPhone e iPad | ONLYOFFICE Documents",
+  "PageDescription": "Modifica in collaborazione documenti, fogli di calcolo e presentazioni, compila moduli dai tuoi dispositivi iOS.",
 
-  "OnlyOfficeDocuments": "ONLYOFFICE Documents, una solida <0>suite per ufficio mobile</0> per il tuo iPhone e iPad",
-  "AbsolutelyFree": "Assolutamente <0>gratuito</0>. Nessuna pubblicità. Nessun acquisto in-app.",
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents, una solida <0>suite office per dispositivi mobili</0> per il tuo iPhone e iPad",
+  "AbsolutelyFree": "Assolutamente <0>gratuita</0>. Senza annunci. Nessun acquisto in-app.",
 
-  "OneAppThreeEditors": "Un'unica app - <0>Tre editor</0> - Molteplici funzionalità",
-  "CompatibleWithMSOffice": "100% compatibile con i formati MS Office",
+  "OneAppThreeEditors": "Un'app, <0>tre editor</0>, funzionalità multiple",
+  "CompatibleWithMSOffice": "100% compatibile con i formati Microsoft Office",
 
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.it.svg",
-
-  "FeaturesItemHeadingFull": "Processore di testo completo",
-  "FeaturesItemTextMakeUse": "Sfrutta molteplici strumenti di elaborazione testo: formattazione di pagina, paragrafo e testo, tabelle, forme automatiche, grafici, ecc. Crea documenti di testo di qualsiasi dimensione e complessità. Stampali tramite AirPrint.",
+  "FeaturesItemHeadingFull": "Elaboratore di testo completo",
+  "FeaturesItemTextMakeUse": "Utilizza più strumenti di elaborazione del testo: formattazione di pagine, paragrafi e testi, tabelle, forme automatiche, grafici, ecc. Crea documenti di testo di qualsiasi dimensione e complessità. Stampali tramite AirPrint.",
 
   "FeaturesItemHeadingComplete": "Editor completo di fogli di calcolo",
   "FeaturesItemTextManage": "Gestisci i dati dei tuoi fogli di calcolo: lavora con righe e colonne, regola i parametri delle celle, usa più di 450 formule, ordina e filtra i dati.",
 
-  "FeaturesItemHeadingCollaborative": "Editor collaborativo di presentazioni",
-  "FeaturesItemTextMakeWork": "Lavora con tutti gli oggetti comuni nelle tue diapositive: inserisci immagini, aggiungi e modifica forme automatiche, grafici, testi e altri elementi.",
+  "FeaturesItemHeadingCollaborative": "Editor in collaborazione per presentazioni",
+  "FeaturesItemTextMakeWork": "Lavora con tutti gli oggetti popolari sulle diapositive: inserisci immagini, aggiungi e modifica forme automatiche, grafici e diagrammi, testi e altri elementi.",
 
   "FeaturesItemHeadingOnline": "Compilatore di moduli online",
-  "FeaturesItemTextMakeView": "Visualizza e compila moduli. Naviga facilmente da campo a campo. Salva il risultato come file PDF o DOCX.",
+  "FeaturesItemTextMakeView": "Visualizza e compila i moduli. Naviga facilmente da un campo all'altro. Salva il risultato come file PDF o DOCX.",
 
   "FeaturesItemHeadingPDF": "Visualizzatore PDF e lettore multimediale",
   "FeaturesItemTextMakeViewPDF": "Visualizza documenti e immagini PDF, riproduci file audio e video. Apri .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, ecc.",
 
-  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents è un prodotto eccezionale e ha ricevuto il premio 'Molto Buono' dai suoi utenti.\"",
+  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents è un prodotto eccezionale e ha ricevuto il premio 'Molto buono' dai suoi utenti.\"",
   "MichaelGanss": "Michael Ganss,",
 
   "RealTimeCollaboration": "Collaborazione in tempo reale",
-  "BeMoreProductive": "Sii più produttivo. Collega la tua app al cloud ONLYOFFICE. Condividi i documenti per co-modificarli con i tuoi compagni di squadra in tempo reale. Commenta e monitora le modifiche. Aggiungi annotazioni grafiche.",
+  "BeMoreProductive": "Sii più produttivo. Collega la tua app al cloud ONLYOFFICE. Condividi i documenti per modificarli con i tuoi colleghi in tempo reale. Commenta e tieni traccia delle modifiche. Aggiungi annotazioni grafiche.",
 
-  "VideoCardHeading": "Scopri ONLYOFFICE Documents, una solida suite per ufficio mobile",
+  "VideoCardHeading": "Scopri ONLYOFFICE Documents, una solida suite per ufficio su mobile",
 
   "GetStartedAndChoose": "Inizia e scegli dove lavorare",
 
   "ChooseItemOnDevice": "Sul dispositivo",
   "ChooseItemManageDocuments": "Gestisci i documenti sul dispositivo e modificali offline.",
 
-  "ChooseItemInOnlyOffice": "Nel cloud ONLYOFFICE",
-  "ChooseItemAccessDocs": "Accedi ai documenti dal cloud ONLYOFFICE e dai servizi di archiviazione (Dropbox, Google Drive, ecc.) ad esso collegati e lavora in modo collaborativo.",
+  "ChooseItemInOnlyOffice": "Nel cloud di ONLYOFFICE",
+  "ChooseItemAccessDocs": "Accedi ai documenti dal cloud ONLYOFFICE e dagli archivi (Dropbox, Google Drive, ecc.) ad esso collegati e lavora in collaborazione.",
 
   "ChooseItemInYourCloud": "Nel tuo cloud",
-  "ChooseItemConnectNextcloud": "Collega Nextcloud, ownCloud o qualsiasi altro cloud che funzioni tramite WebDAV e modifica i documenti direttamente dall'app.",
+  "ChooseItemConnectNextcloud": "Connetti Nextcloud, ownCloud o qualsiasi altro cloud funzionante tramite WebDAV e modifica i documenti direttamente dall'app.",
 
-  "ChooseItemFromOther": "Da altre app",
-  "ChooseItemImportDocuments": "Importa documenti da applicazioni come iTunes, File e altre.",
+  "ChooseItemFromOther": "Dalle altre app",
+  "ChooseItemImportDocuments": "Importa documenti da applicazioni come iTunes, File e altri.",
 
   "GetMoreWithComplete": "Ottieni di più con la versione web mobile completa",
-  "WorkOnDocumentsWithin": "Lavora sui documenti nel tuo browser mobile. Vai al tuo portale web ONLYOFFICE e ottieni accesso a più strumenti per l'editing e la collaborazione sui documenti.",
+  "WorkOnDocumentsWithin": "Lavora sui documenti all'interno del tuo browser mobile. Vai al tuo portale web ONLYOFFICE e accedi a più strumenti per la modifica e la collaborazione dei documenti.",
 
-  "LearnMoreHeading": "Maggiori informazioni su ONLYOFFICE Documents per iOS",
+  "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for iOS",
 
-  "LearnCardTitleRelease": "Note di rilascio",
-  "LearnMoreTextMeet": "Scopri ONLYOFFICE Documents v7.2 per iOS",
-  "LearnMoreSubtitleRead": "Leggi la storia",
+  "LearnCardTitleRelease": "Release notes",
+  "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v7.2 for iOS",
+  "LearnMoreSubtitleRead": "Read story",
 
-  "LearnCardTitleHints": "Suggerimenti",
-  "LearnMoreTextHandwriting": "Scrittura a mano in ONLYOFFICE Documents",
-  "LearnMoreSubtitleLearn1": "Ulteriori informazioni",
+  "LearnCardTitleHints": "Hints",
+  "LearnMoreTextHandwriting": "Handwriting in ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "Learn more",
 
-  "LearnCardTitleDeveloper": "Guida per sviluppatori",
-  "LearnMoreTextHowMobile": "Come funziona l'integrazione mobile",
-  "LearnMoreSubtitleLearn2": "Ulteriori informazioni"
+  "LearnCardTitleDeveloper": "Developer guide",
+  "LearnMoreTextHowMobile": "How mobile integration works",
+  "LearnMoreSubtitleLearn2": "Learn more"
 }

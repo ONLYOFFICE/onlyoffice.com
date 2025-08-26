@@ -1,0 +1,13 @@
+{
+  "PageTitle": "Banners | ONLYOFFICE",
+  "PageDescription": "Place at least one of these banner codes to your site",
+
+  "HeroTitle": "Place at least one of these banner codes to your site",
+
+  "CopyBannerCode" : "Copy the banner code to clipboard",
+  "Animated" : "Animated",
+  "Static" : "Static",
+  "square" : "square",
+  "horizontal" : "horizontal",
+  "vertical" : "vertical"
+}

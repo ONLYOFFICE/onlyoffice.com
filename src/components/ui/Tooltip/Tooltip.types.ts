@@ -31,4 +31,15 @@ export interface ITooltip {
     | "left-end";
   /** Tooltip width */
   width?: string;
+  /** The vertical alignment of the tooltip. */
+  verticalAlign?:
+    | "top"
+    | "middle"
+    | "bottom"
+    | "text-top"
+    | "text-bottom"
+    | "sub"
+    | "super";
+  /** The function to be called when the tooltip is clicked. */
+  onClick?: () => void;
 }

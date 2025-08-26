@@ -1,0 +1,1 @@
+export { AwardsTemplate } from "./Awards";

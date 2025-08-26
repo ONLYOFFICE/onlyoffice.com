@@ -4,6 +4,7 @@ import { device } from "@src/utils/device";
 
 const StyledInput = styled.div`
   position: relative;
+  width: 100%;
 `;
 
 const StyledInputLabel = styled.label<{
@@ -11,6 +12,7 @@ const StyledInputLabel = styled.label<{
   $leftSide: IInput["leftSide"];
   $disabled: IInput["disabled"];
   $active: IInput["active"];
+  $status: IInput["status"];
   $isFocused: boolean;
 }>`
   position: absolute;
@@ -22,7 +24,15 @@ const StyledInputLabel = styled.label<{
   line-height: ${(props) =>
     props.$value || props.$isFocused || props.$active ? "16px" : "24px"};
   color: ${(props) =>
-    props.$isFocused ? "#666666" : props.$disabled ? "#cccccc" : "#aaaaaa"};
+    props.$isFocused
+      ? "#666666"
+      : props.$disabled
+        ? "#cccccc"
+        : props.$status === "success"
+          ? "#8bb825"
+          : props.$status === "error"
+            ? "rgba(203, 0, 0, 0.4)"
+            : "#aaaaaa"};
   transition:
     top 0.2s,
     font-size 0.2s,
@@ -46,6 +56,7 @@ const StyledInputWrapper = styled.div<{
   $disabled: IInput["disabled"];
   $isFocused: boolean;
 }>`
+  position: relative;
   display: flex;
   align-items: center;
   border: 1px solid;
@@ -117,6 +128,7 @@ const StyledInputField = styled.input<{
   $label: IInput["label"];
   $leftSide: IInput["leftSide"];
   $rightSide: IInput["rightSide"];
+  $status: IInput["status"];
 }>`
   border: none;
   border-radius: inherit;
@@ -147,7 +159,10 @@ const StyledInputField = styled.input<{
   &::placeholder {
     font-size: 16px;
     line-height: 24px;
-    color: #cccccc;
+    color: ${(props) =>
+      !props.$label && props.$status === "error"
+        ? "rgba(203, 0, 0, 0.4)"
+        : "#cccccc"};
 
     @media ${device.mobile} {
       font-size: 14px;

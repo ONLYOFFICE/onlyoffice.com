@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
+import { Section } from "@src/components/ui/Section";
+
+const StyledLearnSection = styled(Section)<{
+  $isDisplay: boolean;
+}>`
+  display: ${({ $isDisplay }) => ($isDisplay ? "block" : "none")};
+`
 
 const StyledLearnHeading = styled(Heading)`
   @media ${device.tabletS} {
@@ -27,6 +34,8 @@ const StyledLearnList = styled.div`
   }
 
   .blog-card {
+    height: auto;
+
     @media ${device.tablet} {
       max-width: 352px;
       min-width: 352px;
@@ -39,4 +48,4 @@ const StyledLearnList = styled.div`
   }
 `;
 
-export { StyledLearnHeading, StyledLearnList };
+export { StyledLearnSection, StyledLearnHeading, StyledLearnList };

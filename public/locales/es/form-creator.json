@@ -1,0 +1,43 @@
+{
+  "PageTitle": "Creador de formularios rellenables en línea",
+  "PageDescription": "Crea formularios rellenables a partir de cualquier documento docx existente, edita, comparte y colabora en ellos. Guárdalos como PDF. Rellena formularios en línea.",
+
+  "Header": "Creador de <0>formularios rellenables</0> en línea para tu aplicación web",
+  "SubHeader": "Crea, edita y rellena formularios PDF online",
+
+  "Feature1Title": "Convierte tus documentos de texto en formularios PDF rellenables",
+  "Feature1Desc": "Utiliza cualquier documento .docx, descarga una plantilla de formulario desde nuestra biblioteca o crea un formulario en línea desde cero. Solo tienes que añadir los campos que necesites, como áreas de texto, imágenes, cuadros combinados, listas desplegables, casillas de verificación, botones de radio, correos electrónicos, números de teléfono, fecha y hora, tarjetas de crédito y códigos postales, para obtener un complejo acuerdo de venta o contrato de promoción, y luego compartirlo y rellenarlo digitalmente. Si es necesario, utiliza campos complejos para componer el campo personalizado que necesites.",
+  "Feature1Link": "Abrir la biblioteca",
+  "Feature2Title": "Edita los formularios según tus reglas",
+  "Feature2Desc": "Cambia el formato de tu formulario como cualquier documento de texto: gestiona las fuentes y los estilos, añade tablas, gráficos y otros objetos. Inserta campos en línea con texto o fija su posición. Muévelos y gíralos. Ajusta fácilmente el tamaño de los campos, habilita la entrada multilínea o distribuye uniformemente el texto introducido. Ajusta los colores del borde y del fondo. Añade consejos y marcadores de posición, agrupa los campos para rellenarlos simultáneamente. Utiliza etiquetas para simplificar el trabajo con los campos en el modo automático.",
+  "Feature2Link": "Verlo en acción",
+  "Feature3Title": "Ajusta los campos de texto para cualquier caso",
+  "Feature3Desc": "Permite el uso de cualquier símbolo específico en los campos de texto y establece el formato necesario: Ninguno para los campos de texto habituales, Sólo dígitos o Letras, Máscara arbitraria personalizable adecuada para los números de teléfono, y Expresión regular que supone el uso de una regla según la cual los caracteres obligatorios se introducen en el campo en el orden requerido, como en las direcciones de correo electrónico.",
+  "Feature4Title": "Rellena los formularios en cualquier momento y desde cualquier dispositivo",
+  "Feature4Desc": "Comparte fácilmente formularios PDF listos con otros y rellénalos online en <0>ONLYOFFICE DocSpace</0>, localmente <1>con aplicaciones de escritorio de ONLYOFFICE</1> o incluso sobre la marcha usando <2>las aplicaciones móviles</2> gratuitas para iOS y Android. También es posible rellenar formularios PDF creados en otras aplicaciones usando ONLYOFFICE.",
+  "Feature4Link": "Encontrar los formularios listos para rellenar",
+  "Feature5Title": "Autentica los datos digitales con firmas electrónicas e-signatures",
+  "Feature5Desc": "Asigna varios roles de destinatario con los colores correspondientes a cada rol. Personaliza la lista de roles predeterminados para que se ajuste mejor a los requisitos de tu flujo de trabajo. Próximamente: permite a los usuarios firmar un formulario completo o solo algunos campos. ONLYOFFICE utiliza claves ED25519 para las firmas digitales.",
+  "Feature6Title": "Protege tus datos de campo sensibles",
+  "Feature6ComingSoon": "próximamente",
+  "Feature6Desc": "Protege tu formulario o sus partes, es decir, los datos de campo. ONLYOFFICE utiliza el algoritmo simétrico AES 256 GCM para cifrar los datos y el algoritmo asimétrico basado en las claves Curve25519 para cifrar una clave.",
+
+  "LearnMoreHeading": "Más información sobre el Creador de formularios de ONLYOFFICE",
+  "BlogDesc": "Automatiza la creación de formularios al sustituir los marcadores de posición por campos de formulario mediante una macro",
+  "BlogLink": "https://www.onlyoffice.com/blog/es/2024/01/utiliza-las-macros-de-onlyoffice-para-anadir-facilmente-textforms-a-las-plantillas-de-formularios",
+  "TutorialsDesc": "Cómo crear formularios rellenables",
+  "TutorialsLink": "https://helpcenter.onlyoffice.com/docs/userguides/form_builder/CreatingManagingFormFields.aspx",
+  "HintsDesc": "Cómo rellenar un formulario PDF",
+  "HintsLink": "https://helpcenter.onlyoffice.com/docs/userguides/form_builder/FillingOutForm.aspx",
+
+  "Q1": "¿Qué formato utiliza ONLYOFFICE para los formularios?",
+  "A1": "Los formularios listos se guardan y distribuyen en PDF.",
+  "Q2": "¿Ofrece ONLYOFFICE plantillas de formularios?",
+  "A2": "Sí, puedes descargar plantillas listas para usar de la <0>biblioteca de ONLYOFFICE</0>.",
+  "Q3": "¿Es posible incrustar un formulario en mi sitio web?",
+  "A3": "Sí, puedes añadir fácilmente un formulario online a tu sitio web, para que se pueda rellenar y descargar en formato PDF.",
+  "Q4": "¿Es posible utilizar el creador de formularios de ONLYOFFICE dentro de mi aplicación bajo mi marca?",
+  "A4": "Sí, puedes integrar el creador de formularios en tu aplicación. Por favor, utiliza <0>ONLYOFFICE Docs Developer</0>.",
+  "Q5": "¿Cómo crear un formulario rellenable en ONLYOFFICE?",
+  "A5": "En ONLYOFFICE, puedes crear formularios rellenables directamente en PDF añadiendo los tipos de campos necesarios y ajustándolos para que tu formulario PDF tenga el aspecto que necesitas."
+}

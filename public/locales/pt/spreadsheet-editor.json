@@ -1,0 +1,38 @@
+{
+  "PageTitle": "Abra e edite em planilhas Excel online | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE – melhor software de planilhas online. Abra, edite e colabore em arquivos do Excel online (xls, xlsx, csv, ods).",
+
+  "Header": "Editor de planilhas on-line avançado para seu aplicativo Web",
+  "SubHeader": "Abra, crie e edite em planilhas Excel online",
+
+  "Feature1Title": "Faça os números trabalharem para você",
+  "Feature1Desc": "Facilite e automatize os seus cálculos online, organize-os e os analise com o Editor de Planilhas do ONLYOFFICE. Abra e edite arquivos .xlsx, .xls, .ods e .csv, e salve planilhas como PDF.",
+  "Feature2Title": "Realize cálculos precisos sem o mínimo esforço",
+  "Feature2Desc": "Obtenha resultados rápidos e precisos escolhendo entre mais de 400 funções e fórmulas disponíveis e usando as dicas de sintaxe especiais. Aplique modelos de tabela, use intervalos nomeados, classifique e filtre dados para simplificar o trabalho com planilhas. Encontre rapidamente o conteúdo necessário e o substitua por um novo com um clique.",
+  "Feature3Title": "Analise dados facilmente",
+  "Feature3Desc": "Analise dados e encontre padrões usando tabelas dinâmicas e formatação condicional. Filtre os dados rapidamente ou indique o estado de filtragem atual para ver quais dados são exibidos adicionando Segmentações de Dados às tabelas formatadas. Remova valores e linhas duplicados para tornar seus cálculos mais precisos.",
+  "Feature4Title": "Ilustre seus dados com imagens",
+  "Feature4Desc": "Adicione gráficos, minigráficos e elementos gráficos. Insira equações, formas e imagens e use Text Art, gráfico SmartArt ou vídeos do YouTube para apresentação e visualização de dados. Crie seus próprios desenhos à mão livre usando uma caneta ou marca-texto.",
+  "Feature5Title": "Junte os esforços da equipe",
+  "Feature5Desc": "Trabalhe em relatórios empresariais e registro de estoque de forma colaborativa com sua equipe. Acesse e compartilhe planilhas ou até mesmo links para intervalos específicos, coedite-os em tempo real, deixe comentários em células e converse com colaboradores online sem sair do editor. Permita que outros usuários apliquem seus próprios filtros ao editar uma planilha sem incomodar os coautores. Navegue no histórico da versão e restaure qualquer versão anterior do arquivo.",
+  "Feature6Title": "Proteja suas planilhas",
+  "Feature6Desc": "Defina uma senha para toda a planilha, pasta de trabalho ou planilha separada. Oculte fórmulas para mantê-las privadas. Bloqueie células, formas e texto. Permita a edição de intervalos de dados apenas para usuários especificados.",
+  "Feature7Title": "Automatize as suas tarefas com macros",
+  "Feature7Desc": "Torne seu trabalho com planilhas mais fácil. Crie suas próprias macros usando sintaxe de linguagem JavaScript, edite-as e salve-as para automatizar tarefas comuns e repetitivas. Faça macros serem executadas automaticamente ou restrinja sua inicialização automática.",
+  "Feature8Title": "Usar assistente de Inteligência Artificial",
+  "Feature8Desc": "Realize tarefas que envolvam compreensão ou geração de linguagem natural usando o plug-in ChatGPT. Obtenha respostas precisas para suas perguntas, encontre informações rapidamente, gere textos, crie seu código, etc. diretamente no editor.",
+  "Feature9Title": "Faça ainda mais com complementos",
+  "Feature9Desc": "Estenda os recursos de edição de planilhas com complementos. Insira símbolos especiais, obtenha uma tradução rápida de qualquer texto e mais.",
+
+  "LearnMoreHeading": "Saiba mais sobre o Editor de planilhas do ONLYOFFICE",
+  "BlogDesc": "Tudo sobre a visualização de impressão em planilhas do Excel",
+  "TutorialsDesc": "Co-edição de planilhas em tempo real",
+  "HintsDesc": "Formatos de planilhas compatíveis",
+
+  "Q1": "Posso editar planilhas sem conexão com a Internet?",
+  "A1": "Sim, você pode instalar e usar a versão gratuita do <0>ONLYOFFICE Desktop Editors</0> para editar planilhas locais offline.",
+  "Q2": "O ONLYOFFICE oferece aplicativos móveis nativos para edição de planilhas?",
+  "A2": "Sim, você pode instalar a versão gratuita do aplicativo <0>Documents</0> para dispositivos iOS ou Android para trabalhar em planilhas onde estiver.",
+  "Q3": "É possível usar o editor de planilhas do ONLYOFFICE em meu aplicativo com a minha marca?",
+  "A3": "Sim, você pode integrar o editor de planilhas ao seu aplicativo. Use o <0>ONLYOFFICE Docs Developer</0>."
+}

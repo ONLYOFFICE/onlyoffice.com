@@ -1,0 +1,32 @@
+{
+  "PageTitle": "Ajude-nos a tornar o ONLYOFFICE melhor",
+  "PageDescription": "Contribua para o projeto ONLYOFFICE: desenvolva, traduza, teste ou documente e espalhe a palavra.",
+
+  "HeroTitle": "Torne-se parte<br />da família <span>ONLYOFFICE</span>",
+  "HeroText": "Contribua para o projeto de código aberto ONLYOFFICE e o torne ainda melhor!",
+
+  "ImproveOO": "Melhore o ONLYOFFICE",
+  "DevelopYourOwnPluginOrMacros": "Desenvolva o seu próprio plugin ou macros para os editores de documento do ONLYOFFICE.",
+  "ReadAPIDocumentation": "Leia a documentação API",
+  "CreateYourOwnForm": "Crie seus próprios modelos de formulário e os compartilhe com outras pessoas.",
+  "OpenOurFormLibrary": "Abra nossa biblioteca de formulários",
+  "CreateAnExtensionOrModule": "Crie uma extensão ou módulo para o ONLYOFFICE DocSpace.",
+  "DidYouFindABug": "Você encontrou um erro? Reporte problemas no <0>GitHub</0> ou no <1>Fórum</1>.",
+  "MoreInfo": "Mais informações",
+
+  "SocialMediaText": "Interaja conosco no <0>blog</0> ou nos nossos canais de mídia social",
+
+  "SpreadTitle": "Distribua a tecnologia ONLYOFFICE",
+  "SpreadText": "Construa um conector para sua própria plataforma para levar o ONLYOFFICE para todos.",
+  "SpreadLink": "Leia a documentação API",
+  "More": "Mais",
+
+  "TranslateOO": "<0>Traduza o</0> ONLYOFFICE",
+  "TranslateOOText": "<p>Você quer nos ajudar a traduzir a interface do ONLYOFFICE para a sua língua materna para torná-lo acessível em qualquer lugar do mundo?</p><p>Junte-se à nossa comunidade de tradutores voluntários falando conosco pelo <0>documentation@onlyoffice.com</0> e obtenha acesso ao nosso <1>sistema online de tradução</1>.</p>",
+
+  "TestOO": "<0>Teste</0> o ONLYOFFICE",
+  "TestOOText": "<p>Torne-se um testador beta do ONLYOFFICE para nos ajudar a experimentar os próximos recursos e soluções.</p><p>Fale conosco pelo <0>press@onlyoffice.com</0>.</p>",
+
+  "DocumentOO": "<0>Document</0> ONLYOFFICE",
+  "DocumentOOText": "<p>Você tem algumas dicas ou truques parar trabalhar com o ONLYOFFICE de forma mais eficiente?</p><p>Não encontrou informações sobre como usar alguns recursos?</p><p>Você quer traduzir a documentação disponível para sua língua nativa?</p><p>Fale conosco pelo <0>documentation@onlyoffice.com</0> para compartilhar seus pensamentos.</p>"
+}

@@ -1,66 +1,64 @@
 {
-  "PageTitle": "iPhone・iPad向け無料モバイルオフィススイート | ONLYOFFICE Documents",
-  "PageDescription": "iOSデバイスから文書、スプレッドシート、プレゼンテーションの編集・共同編集、フォームへの入力ができます。",
+  "PageTitle": "iPhone、iPad 対応モバイル用オフィススイート | ONLYOFFICE Documents",
+  "PageDescription": "Edit and co-edit documents, spreadsheets and presentations, fill out forms from your iOS devices.",
 
-  "OnlyOfficeDocuments": "ONLYOFFICE Documents は、iPhoneおよびiPad向けの頼りになる<0>モバイルオフィススイート</0>です。",
-  "AbsolutelyFree": "<0>完全無料</0>。広告なし。アプリ内課金なし。",
+  "OnlyOfficeDocuments": "ONLYOFFICE Documents、強力な iPhone、iPad 対応 <0>モバイル用オフィススイート</0>",
+  "AbsolutelyFree": "すべて <0>無料</0>。広告無しアプリ購入無し",
 
-  "OneAppThreeEditors": "1つのアプリ - <0>3つのエディター</0> - 複数の機能",
-  "CompatibleWithMSOffice": "MS Office フォーマットと100%互換",
+  "OneAppThreeEditors": "1つのアプリ - <0>3 つのエディター</0> - 複数の機能",
+  "CompatibleWithMSOffice": "Microsoft Office フォーマットに適合",
 
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.ja.svg",
+  "FeaturesItemHeadingFull": "完全装備のテキスト プロセッサ",
+  "FeaturesItemTextMakeUse": "複数のテキスト プロセッサ ツールを利用: ページ、テキストの書式設定、表、オートシェープ、チャートなど。任意の大きさと複雑さのテキスト文書を作成。AirPrint で文書を印刷。",
 
-  "FeaturesItemHeadingFull": "フル機能のテキストプロセッサー",
-  "FeaturesItemTextMakeUse": "複数のテキスト処理ツールを活用：ページ、段落、テキストの書式設定、表、オートシェイプ、グラフなど。あらゆるサイズと複雑さのテキスト文書を作成。AirPrint経由で印刷可能。",
+  "FeaturesItemHeadingComplete": "完璧なスプレッドシート編集",
+  "FeaturesItemTextManage": "スプレッドシートのデータ管理: 行、列の編集、セルのパラミーターの調整、450 種類以上の計算式、データの分類、フィルタ使用可能。",
 
-  "FeaturesItemHeadingComplete": "充実したスプレッドシートエディター",
-  "FeaturesItemTextManage": "スプレッドシートデータを管理：行と列の操作、セルパラメータの調整、450以上の関数の使用、データの並べ替えとフィルタリング。",
+  "FeaturesItemHeadingCollaborative": "共同プレゼンテーション編集",
+  "FeaturesItemTextMakeWork": "スライドの人気オブジェクトを編集: 画像挿入、オートシェープ、チャート、グラフ、テキスト、他の項目を追加、編集。",
 
-  "FeaturesItemHeadingCollaborative": "共同編集可能なプレゼンテーションエディター",
-  "FeaturesItemTextMakeWork": "スライド上の一般的なすべてのオブジェクトを操作：画像の挿入、オートシェイプ、グラフ、テキスト、その他の項目の追加と編集。",
+  "FeaturesItemHeadingOnline": "オンライン フォーム フィラー",
+  "FeaturesItemTextMakeView": "フォームを表示して記入できます。フィールド間に簡単に移動できます。結果をPDFまたはDOCXファイルとして保存できます。",
 
-  "FeaturesItemHeadingOnline": "オンラインフォーム入力",
-  "FeaturesItemTextMakeView": "フォームを表示し、入力します。フィールド間を簡単に移動。結果をPDFまたはDOCXファイルとして保存。",
+  "FeaturesItemHeadingPDF": "PDF ビューア、メデア再生機",
+  "FeaturesItemTextMakeViewPDF": "PDF ドキュメント、画像を表示、音声ファイル、ビデオファイルを表示。.bmp、.jpg、.jpeg、.png、.gif、.tif、 .tiff、.avi、.mpeg、.mp3、.pdf などを表示。",
 
-  "FeaturesItemHeadingPDF": "PDFビューアーおよびメディアプレーヤー",
-  "FeaturesItemTextMakeViewPDF": "PDF文書や画像を表示し、オーディオおよびビデオファイルを再生。 .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf などを開く。",
+  "OnlyOfficeDocumentsIs": "「ONLYOFFICE Documentsは優れた製品であり、ユーザーから『Very Good』賞を与えられました。」",
+  "MichaelGanss": "Michael Ganss氏、",
 
-  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documentsは優れた製品であり、ユーザーから「非常に良い」評価を得ています。\"",
-  "MichaelGanss": "Michael Ganss,",
+  "RealTimeCollaboration": "リアルタイムの共同編集",
+  "BeMoreProductive": "より生産的に。アプリをONLYOFFICEクラウドに接続する。ドキュメントを共有して、チームメイトとリアルタイムで共同編集できる。コメントをつけ、変更をトラキングできる。グラフィック注釈の追加。",
 
-  "RealTimeCollaboration": "リアルタイムコラボレーション",
-  "BeMoreProductive": "さらに生産性を高めましょう。アプリをONLYOFFICEクラウドに接続。ドキュメントを共有し、チームメイトとリアルタイムで共同編集。コメントや変更履歴を追跡。グラフィック注釈を追加。",
+  "VideoCardHeading": "パワフルなモバイルオフィススイート「ONLYOFFICE ドキュメント」をご紹介します。",
 
-  "VideoCardHeading": "ONLYOFFICE Documents、頼りになるモバイルオフィススイートを発見",
+  "GetStartedAndChoose": "開始して、作業場所を選択しましょう",
 
-  "GetStartedAndChoose": "始めて、どこで作業するかを選びましょう",
+  "ChooseItemOnDevice": "デバイスで",
+  "ChooseItemManageDocuments": "デバイスでドキュメントを管理、オフラインで編集。",
 
-  "ChooseItemOnDevice": "デバイス上",
-  "ChooseItemManageDocuments": "デバイス上のドキュメントを管理し、オフラインで編集します。",
+  "ChooseItemInOnlyOffice": "ONLYOFFICE クラウドで",
+  "ChooseItemAccessDocs": "ONLYOFFICE クラウド、ONLYOFFICE クラウドが接続されているストレージ (ドロップボックス、Google ドライブなど) からドキュメントにアクセスして、共同編集作業。",
 
-  "ChooseItemInOnlyOffice": "ONLYOFFICEクラウド内",
-  "ChooseItemAccessDocs": "ONLYOFFICEクラウドおよびそれに接続されたストレージ (Dropbox, Google Driveなど) からドキュメントにアクセスし、共同で作業します。",
-
-  "ChooseItemInYourCloud": "あなたのクラウド内",
-  "ChooseItemConnectNextcloud": "Nextcloud, ownCloud, またはWebDAV経由で動作する他のクラウドに接続し、アプリから直接ドキュメントを編集します。",
+  "ChooseItemInYourCloud": "お使いのクラウドで",
+  "ChooseItemConnectNextcloud": "Nextcloud,、ownCloud、他の WebDAVで作動する任意のクラウドに接続、アプリから直接ドキュメントを編集。",
 
   "ChooseItemFromOther": "他のアプリから",
-  "ChooseItemImportDocuments": "iTunes, ファイルなどのアプリケーションからドキュメントをインポートします。",
+  "ChooseItemImportDocuments": "iTunes、Filesなどのようなアプリからドキュメントをインポート。",
 
-  "GetMoreWithComplete": "フル機能のモバイルWebバージョンでさらに多くの機能を利用",
-  "WorkOnDocumentsWithin": "モバイルブラウザ内でドキュメントを操作。ONLYOFFICE Webポータルにアクセスし、ドキュメントの編集と共同作業のためのより多くのツールを利用できます。",
+  "GetMoreWithComplete": "完全なモバイルバージョンをさらに活用しましょう",
+  "WorkOnDocumentsWithin": "モバイル ブラウザーでドキュメントを編集。ONLYOFFICE ウェブポータルへ移動して、ドキュメント編集、共同編集についてのガイドを入手しましょう。",
 
-  "LearnMoreHeading": "ONLYOFFICE Documents for iOS の詳細はこちら",
+  "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for iOS",
 
-  "LearnCardTitleRelease": "リリースノート",
-  "LearnMoreTextMeet": "ONLYOFFICE Documents v7.2 for iOS をご紹介",
-  "LearnMoreSubtitleRead": "ストーリーを読む",
+  "LearnCardTitleRelease": "Release notes",
+  "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v7.2 for iOS",
+  "LearnMoreSubtitleRead": "Read story",
 
-  "LearnCardTitleHints": "ヒント",
-  "LearnMoreTextHandwriting": "ONLYOFFICE Documents での手書き",
-  "LearnMoreSubtitleLearn1": "詳細はこちら",
+  "LearnCardTitleHints": "Hints",
+  "LearnMoreTextHandwriting": "Handwriting in ONLYOFFICE Documents",
+  "LearnMoreSubtitleLearn1": "Learn more",
 
-  "LearnCardTitleDeveloper": "開発者ガイド",
-  "LearnMoreTextHowMobile": "モバイル連携の仕組み",
-  "LearnMoreSubtitleLearn2": "詳細はこちら"
+  "LearnCardTitleDeveloper": "Developer guide",
+  "LearnMoreTextHowMobile": "How mobile integration works",
+  "LearnMoreSubtitleLearn2": "Learn more"
 }

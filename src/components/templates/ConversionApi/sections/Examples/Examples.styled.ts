@@ -1,4 +1,5 @@
 import { Heading } from "@src/components/ui/Heading";
+import { Link } from "@src/components/ui/Link";
 import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
@@ -32,7 +33,7 @@ const StyledExamplesLogosWrapper = styled.div`
   }
 `;
 
-const StyledExamplesLogo = styled.a`
+const StyledExamplesLogo = styled(Link)`
   display: block;
   width: 140px;
   height: 40px;

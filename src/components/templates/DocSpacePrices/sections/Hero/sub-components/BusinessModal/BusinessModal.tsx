@@ -69,7 +69,7 @@ const BusinessModal = ({
 
   return (
     <Modal maxWidth="544px" isOpen={isOpen} onClose={onClose}>
-      <StyledBusinessModal>
+      <StyledBusinessModal data-testid="business-modal-form">
         <StyledBusinessModalInputWrapper>
           <LabeledWrapper label={t("EnterTheNumberOfAdmins")}>
             <Input
@@ -116,7 +116,7 @@ const BusinessModal = ({
               <StyledBusinessModalTotalCurrency
                 forwardedAs="span"
                 color="main"
-                label="$"
+                label={t("PriceCurrency")}
               />
               {getTotalPrice()}
             </Heading>
@@ -125,11 +125,13 @@ const BusinessModal = ({
 
         <StyledBusinessModalBtns>
           <StyledBusinessModalBtn
+            data-testid="business-modal-get-a-quote-button"
             forwardedAs="a"
             href={`mailto:sales@onlyoffice.com?subject=Request%20a%20quote%20for%20ONLYOFFICE%20DocSpace%20Business%20Cloud${affiliate.id ? "&body=(Ticket%20" + affiliate.id + ")" : ""}`}
             label={t("GetAQuote")}
           />
           <StyledBusinessModalBtn
+            data-testid="business-modal-cancel-button"
             onClick={onClose}
             forwardedAs="button"
             variant="tertiary"

@@ -17,7 +17,6 @@ import {
 } from "./EnterpriseModal.types";
 import { IDocSpacePricesTemplate } from "@src/components/templates/DocSpacePrices";
 import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
-import { DocSpacePricesEmail } from "@src/components/emails/DocSpacePricesEmail";
 import { Modal } from "@src/components/ui/Modal";
 import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
@@ -35,9 +34,7 @@ import {
 import { InfoIcon } from "@src/components/icons";
 import {
   QuoteModal,
-  IQuoteModalApiRequest,
-  IQuoteModalSendEmailRequest,
-  IQuoteModalPipedriveRequest,
+  IQuoteModalOnSubmitRequest,
   IQuoteModalFormData,
 } from "@src/components/widgets/pricing/QuoteModal";
 
@@ -90,20 +87,21 @@ const EnterpriseModal = ({
       more: { price: null, url: "" },
     }[formData.usersNumber] || "";
 
-  const apiRequest = async ({
+  const onSubmitRequest = async ({
     from,
-    utmSource,
-    utmCampaign,
-    utmContent,
-    utmTerm,
-  }: IQuoteModalApiRequest) => {
-    const response = await fetch("/api/docspace-prices", {
+    country,
+    region,
+  }: IQuoteModalOnSubmitRequest) => {
+    return fetch("/api/docspace-prices", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
+        locale,
+        referer: document.referrer,
         fullName: quoteFormData.fullName,
         email: quoteFormData.email,
-        phone: quoteFormData.phone,
+        phone:
+          locale === "zh" && !quoteFormData.phone ? "+86" : quoteFormData.phone,
         companyName: quoteFormData.companyName,
         usersNumber: formData.usersNumber,
         licenseDuration: formData.licenseDuration,
@@ -112,97 +110,24 @@ const EnterpriseModal = ({
         multiServerDeployment: formData.multiServerDeployment,
         trainingCourses: formData.trainingCourses,
         from,
-        utmSource,
-        utmCampaign,
-        utmContent,
-        utmTerm,
+        country,
+        region,
+        affiliateId: affiliate.id || "",
+        affiliateToken: affiliate.token || "",
+        type: "docspaceenterpriserequest",
       }),
-    });
-
-    return response.json();
-  };
-
-  const sendEmailRequest = async ({
-    from,
-    errorFlag,
-    utmCampaignFlag,
-    errorText,
-    isSelected,
-  }: IQuoteModalSendEmailRequest) => {
-    const response = await fetch("/api/send-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        from,
-        to: [process.env.SALES_EMAIL],
-        subject: `${errorFlag} - DocSpace Enterprise Request ${utmCampaignFlag}[from: ${from}]`,
-        html: DocSpacePricesEmail({
-          fullName: quoteFormData.fullName,
-          email: quoteFormData.email,
-          phone: quoteFormData.phone,
-          companyName: quoteFormData.companyName,
-          usersNumber: formData.usersNumber,
-          licenseDuration: formData.licenseDuration,
-          supportAndUpdates: formData.supportAndUpdates,
-          supportLevel: formData.supportLevel,
-          multiServerDeployment: isSelected(formData.multiServerDeployment),
-          trainingCourses: isSelected(formData.trainingCourses),
-          language: locale,
-          affiliateId: affiliate.id || "",
-          affiliateToken: affiliate.token || "",
-          errorText,
-        }),
-      }),
-    });
-
-    return response.json();
-  };
-
-  const pipedriveRequest = async ({
-    _ga,
-    utmSource,
-    utmCampaign,
-    title,
-    region,
-    from,
-  }: IQuoteModalPipedriveRequest) => {
-    const response = await fetch("/api/pipedrive", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        owner_id: 12769244,
-        person_id: 131,
-        visible_to: "3",
-        "08f603bf9e0032d5a9f9e5cd39ca8c7a4374ac82": _ga,
-        was_seen: false,
-        title: `dspp DocSpace Enterprise - ${title} - ${quoteFormData.email} - ${region}`,
-        "6654a8f8686bdba60bbcdf6e69313c150f40b088": JSON.stringify({
-          fullName: quoteFormData.fullName,
-          email: quoteFormData.email,
-          phone: quoteFormData.phone,
-          companyName: quoteFormData.companyName,
-          usersNumber: formData.usersNumber,
-          licenseDuration: formData.licenseDuration,
-          supportAndUpdates: formData.supportAndUpdates,
-          supportLevel: formData.supportLevel,
-          multiServerDeployment: formData.multiServerDeployment,
-          trainingCourses: formData.trainingCourses,
-          from,
-          type: "docspaceenterpriserequest",
-          langOfPage: locale,
-          ...(utmSource && { utmSource }),
-          ...(utmCampaign && { utmCampaign }),
-        }),
-      }),
-    });
-
-    return response.json();
+    }).then((res) => res.json());
   };
 
   return (
     <>
-      <Modal maxWidth="544px" isOpen={isOpen} onClose={onClose}>
-        <StyledEnterpriseModal>
+      <Modal
+        data-testid="enterprise-modal"
+        maxWidth="544px"
+        isOpen={isOpen}
+        onClose={onClose}
+      >
+        <StyledEnterpriseModal data-testid="enterprise-modal-form">
           <StyledEnterpriseModalHeading
             level={3}
             label={t("EnterpriseOnPremises")}
@@ -307,7 +232,7 @@ const EnterpriseModal = ({
 
             <LabeledWrapper label={t("Scalability")}>
               <Checkbox
-                label="Support for multi-server deployment"
+                label={t("SupportForMultiServerDeployment")}
                 checked={formData.multiServerDeployment}
                 size="small"
                 onChange={() =>
@@ -321,7 +246,7 @@ const EnterpriseModal = ({
 
             <LabeledWrapper label={t("AdditionalToolsAndServices")}>
               <Checkbox
-                label="Training courses"
+                label={t("TrainingCourses")}
                 checked={formData.trainingCourses}
                 size="small"
                 onChange={() =>
@@ -357,10 +282,12 @@ const EnterpriseModal = ({
             {isUponRequest ? (
               <StyledEnterpriseModalBtn
                 onClick={() => setIsModalOpen(true)}
+                data-testid="enterprise-modal-get-a-quote-button"
                 label={t("GetAQuote")}
               />
             ) : (
               <StyledEnterpriseModalBtn
+                data-testid="enterprise-modal-buy-now-button"
                 forwardedAs="a"
                 href={`${product.url}${affiliate.params}`}
                 target="_blank"
@@ -370,6 +297,7 @@ const EnterpriseModal = ({
 
             <StyledEnterpriseModalBtn
               onClick={onClose}
+              data-testid="enterprise-modal-cancel-button"
               forwardedAs="button"
               variant="tertiary"
               label={t("Cancel")}
@@ -412,9 +340,7 @@ const EnterpriseModal = ({
         quoteFormData={quoteFormData}
         setQuoteFormData={setQuoteFormData}
         buttonLabel={t("GetAQuote")}
-        apiRequest={apiRequest}
-        sendEmailRequest={sendEmailRequest}
-        pipedriveRequest={pipedriveRequest}
+        onSubmitRequest={onSubmitRequest}
         onClose={() => setIsModalOpen(false)}
       />
     </>

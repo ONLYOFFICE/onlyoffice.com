@@ -1,0 +1,64 @@
+{
+  "AccountCanceledPageTitle": "Konto bei ONLYOFFICE Personal gelöscht | ONLYOFFICE",
+  "AccountCanceledPageDescription": "Warum möchten Sie Ihr Konto bei ONLYOFFICE Personal löschen?",
+
+  "InstallCanceledPageTitle": "ONLYOFFICE On-Premises deinstalliert | ONLYOFFICE",
+  "InstallCanceledPageDescription": "Warum möchten Sie ONLYOFFICE deinstallieren?",
+
+  "RegistrationCanceledPageTitle": "Abonnement von Cloud-Office storniert | ONLYOFFICE",
+  "RegistrationCanceledPageDescription": "Warum möchten Sie Ihr ONLYOFFICE-Abonnement stornieren?",
+
+  "DesktopUninstalledPageTitle": "ONLYOFFICE Desktop Editoren deinstalliert | ONLYOFFICE",
+  "DesktopUninstalledPageDescription": "Warum möchten Sie ONLYOFFICE Desktop Editoren deinstallieren?",
+
+  "CanceledHeroTitle": "Tut uns leid, dass Sie uns verlassen!",
+
+  "WhyDidYouDecideToUninstallOnlyoffice": "Warum möchten Sie ONLYOFFICE deinstallieren?",
+  "SelectAllThatApply": "Kreuzen Sie alle zutreffenden Antworten an",
+  "ExperiencedTechnicalProblems": "Ich habe technische Probleme",
+  "NeedMoreStorageSpace": "Ich brauche mehr Speicherplatz",
+  "DidntFindNecessaryFeatures": "Notwendige Funktionen sind abwesend",
+  "PrivacyConcernsLegalViolation": "Sorge um Datenschutz/Rechtswidriges Verhalten",
+  "IRarelyWorkInBrowser": "Ich arbeite selten im Browser",
+  "Other": "Sonstiges",
+
+  "SwitchedToTheCloudVersion": "Ich möchte ONLYOFFICE vor Ort hosten",
+  "IRarelyUseOnlyoffice": "Ich benutze ONLYOFFICE zu selten",
+
+  "IWillUseAnotherDesktopSoftware": "Ich möchte eine andere Desktop-App nutzen",
+  "IRarelyUseOnlyofficeDesktopEditors": "Ich benutze ONLYOFFICE Desktop Editoren zu selten",
+
+  "SwitchedToOnPremises": "Ich möchte ONLYOFFICE vor Ort hosten",
+
+  "WhatShouldWeImproveInOnlyofficePersonal": "Was sollten wir in ONLYOFFICE Personal verbessern?",
+  "WhatShouldWeImproveInOnlyoffice": "Was sollten wir in ONLYOFFICE verbessern?",
+  "WhatShouldWeImproveInOnlyofficeDesktopEditors": "Was sollten wir in ONLYOFFICE Desktop Editoren verbessern?",
+  "YourMessageHere": "Ihre Nachricht",
+  "Email": "E-Mail-Adresse",
+  "EmailIsEmpty": "E-Mail-Adresse ist leer",
+  "EmailIsIncorrect": "Die E-Mail-Adresse ist falsch",
+  "ByClickingSendFeedback": "Indem Sie auf \"Feedback senden\" clicken, stimmen Sie unserem <0>SLA</0> und <1>Datenschutzerklärung</1> zu.",
+  "SendFeedback": "FEEDBACK SENDEN",
+
+  "ThanksForYourMessage": "Vielen Dank für Ihre Nachricht.",
+  "IfYouDecideToGetBack": "Wenn Sie jedoch später zurückkommen, verwenden Sie diesen Gutscheincode für <0>10% Rabatt</0> auf ONLYOFFICE-Cloud oder senden Sie diesen einfach an Freund/innen!*",
+  "WhyTakeBusinessToOnlyofficeCloudToday": "Warum Migration eines Unternehmens zur ONLYOFFICE-Cloud eine gute Idee ist",
+  "FullyGDPRCompliantCloudOffice": "DSGVO-konformes Cloud-Office",
+  "ReducedMaintenanceCosts": "Geringere Wartungskosten",
+  "SecureAndReliableHosting": "Sicheres und zuverlässiges Hosting",
+  "AutomaticUpdates": "Automatische Updates und professioneller technischer Support",
+  "ScalableCostEffectiveSolution": "Skalierbare, kostengünstige Lösung",
+  "EntirelyFree": "Kostenlos für gemeinnützige Organisationen und Schulen",
+  "TheCoupon": "*Der Gutscheincode ist 12 Monate gültig.",
+
+  "DontLeave": "Wir wollten Ihnen nicht mit leeren Händen gehen lassen! Erhalten Sie eine kostenlose Cloud mit Editoren für den Heimgebrauch und <0>10% Rabatt</0>  auf unsere Online-Editoren für Business!*",
+  
+  "WhyChooseFreePersonalOnlyofficeCloudToday": "Wieso ONLYOFFICE Personal für den Heimgebrauch eine gute Idee ist",
+  "FreeAndSecureCloudStorage": "Kostenloser und sicherer Cloud-Speicher",
+  "HighestCompatibility": "Höchste Kompatibilität mit MS Office-Formaten",
+  "DocumentEditing": "Bearbeitung von Dokumenten und Zusammenarbeit in Ihrem Browser",
+  "ConnectionOfPopular": "Connection of popular third-party storages: Dropbox, OneDrive, and more",
+  "PleaseNote": "Integration mit gängigen Speichern von Drittanbietern: Dropbox, OneDrive und mehr",
+
+  "HopeToSeeYouAgain": "Vielen Dank für Ihre Nachricht. Wir hoffen, Sie bald wieder zu sehen!"
+}

@@ -6,7 +6,7 @@ const StyledCards = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 56px 32px;
 
-  @media ${device.tablet} {
+  @media ${device.desktop} {
     grid-template-columns: initial;
     gap: 16px;
   }

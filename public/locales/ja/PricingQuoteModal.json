@@ -1,0 +1,13 @@
+{
+  "FullName": "氏名",
+  "FullNameIsIncorrect": "氏名が正しくありません",
+  "NameSurname": "氏名",
+  "FullNameIsEmpty": "氏名が入力されていません",
+  "Email": "メールアドレス",
+  "EmailIsEmpty": "メールが入力されていません",
+  "EmailIsIncorrect": "メールが正しくありません",
+  "CompanyName": "会社名",
+  "CompanyNameIsEmpty": "会社名が入力されていません",
+  "successfullyRequestText": "リクエストが正常に送信されました",
+  "errorRequestText": "申し訳ありません。エラーが発生しましたので、後でもう一度お試しください"
+}

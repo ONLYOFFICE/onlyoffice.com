@@ -1,0 +1,55 @@
+{
+  "PageTitle": "使用虚拟数据室实现增强的文件安全性和透明度",
+  "PageDescription": "在 ONLYOFFICE DocSpace 中组织安全存储和共享机密业务信息",
+
+  "UseVirtualDataRooms": "使用<0>虚拟数据室</0>实现增强的文件安全性和透明度",
+  "OrganizeSecure": "在 ONLYOFFICE DocSpace 中组织安全存储和共享机密业务信息",
+
+  "IdealForDueDiligence": "适用于尽职调查",
+  "CompletelyOrganized": "完全组织",
+  "HighLevelOfDataSecurity": "高级数据安全",
+  "AdvancedRoleBased": "基于角色的高级表单填写",
+  "CostEffectiveForAnyBudget": "Cost-effective for any budget",
+
+  "CreateFreeAccount": "创建免费账户",
+
+  "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/zh/main.png",
+  "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/zh/main@2x.png",
+
+  "IdealForDueDiligenceDesc": "在合并、与其他公司合作项目或需要访问共享数据的其他合资企业中使用 VDR 进行尽职调查。",
+  "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/zh/ideal.png",
+  "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/zh/ideal@2x.png",
+
+  "CompletelyOrganizedDesc": "自动索引和跟踪所有内容以保持良好记录并保持组织。生成关于房间文件结构的摘要报告。",
+  "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/zh/organized.png",
+  "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/zh/organized@2x.png",
+
+  "HighLevelOfDataSecurityDesc": "启用水印、设置文件生命周期、限制下载和复制以保护您的机密记录。",
+  "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/zh/security.png",
+  "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/zh/security@2x.png",
+
+  "AdvancedRoleBasedText": "邀请您的团队并分配与公司组织结构完美匹配的角色。实时跟踪表单进度。轻松查看已完成和待处理的表单，最终确定它们并检索完成的版本，以实现流畅的流程。",
+  "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/zh/advanced.png",
+  "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/zh/advanced@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses, no matter if it's SMB or a big enterprise. Want to get full control over your corporate data? Deploy DocSpace on your private server.",
+  "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/zh/cost-effective-for-any-budget.png",
+  "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/zh/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "了解有关 DocSpace 虚拟数据室的更多信息",
+
+  "HelpCenter": "帮助中心",
+  "HelpCenterDesc": "查看详细的用户指南以实现有效工作",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "了解更多",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "通过视频指南掌握 ONLYOFFICE DocSpace",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "立即观看",
+
+  "CustomerTestimonial": "客户评价",
+  "HowKinderhausBerlinSharesAndCollaborates": "Kinderhaus Berlin 如何使用 ONLYOFFICE DocSpace 共享和协作处理机密文件",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "阅读故事"
+}

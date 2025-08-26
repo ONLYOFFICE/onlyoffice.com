@@ -1,0 +1,1 @@
+export { DesktopUninstalledTemplate } from "./DesktopUninstalled";

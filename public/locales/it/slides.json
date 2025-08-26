@@ -1,0 +1,37 @@
+{
+  "PageTitle": "Apri o crea presentazioni PowerPoint | ONLYOFFICE",
+  "PageDescription": "Software per presentazioni sorprendenti. Crea presentazioni online. Apri powerpoint online, modifica file pptx, ppt, odp dal tuo browser. Condividi e collabora con il tuo team in tempo reale.",
+
+  "Header": "Editor di presentazioni online per la tua applicazione web",
+  "SubHeader": "Apri, crea e modifica presentazioni PowerPoint online",
+
+  "Feature1Title": "Impressiona i clienti con i tuoi lavori e progetti",
+  "Feature1Desc": "Esprimi qualunque idea utilizzando software per presentazioni di una vasta scelta di strumenti di formattazione, oggetti e opzioni di stile. ONLYOFFICE Presentation Editor lavora con le presentazioni PowerPoint e può salvarle in PDF, PNG, JPG. Sono supportati anche i file PPTX, PPT, ODP e PPSX.",
+  "Feature2Title": "Crea contenuto di qualsiasi complessità",
+  "Feature2Desc": "Crea schemi e schizzi precisi con forme automatiche e oggetti SmartArt, aggiungi grafici, tabelle ed equazioni personalizzabili per una visualizzazione esatta delle statistiche. Rendi la tua presentazione più interattiva con transizioni e animazioni già pronte. Risparmia tempo: usa Slide Master, raggruppa un numero qualsiasi di oggetti e applica le impostazioni in blocco.",
+  "Feature3Title": "Sii creativo",
+  "Feature3Desc": "Crea i tuoi disegni a mano libera sulle diapositive utilizzando una penna o un evidenziatore, scegliendo il colore e lo spessore della linea.",
+  "Feature4Title": "Presenta in modo semplice",
+  "Feature4Desc": "Con la modalità Visualizzazione Relatore puoi aggiungere note per sottolineare parti importanti del tuo discorso e navigare comodamente passando a qualsiasi diapositiva desiderata con un semplice clic.",
+  "Feature5Title": "Unisci gli sforzi del tuo team",
+  "Feature5Desc": "Puoi garantire un lavoro agile del tuo team su diapositive e bozze con le nostre funzionalità di collaborazione. Accedi, condividi e modifica in collaborazione in tempo reale, lascia commenti legati agli elementi della diapositiva e chatta con i collaboratori online senza uscire dall’editor di PowerPoint online.",
+  "Feature6Title": "Usa l'aiutante AI",
+  "Feature6Desc": "Esegui attività che implicano la comprensione o la generazione di un linguaggio naturale utilizzando il plugin ChatGPT. Ottieni risposte accurate alle tue domande, trova rapidamente informazioni, genera testi, costruisci il tuo codice e altro direttamente nell'editor.",
+  "Feature7Title": "Porta le tue slide ad un livello superiore",
+  "Feature7Desc": "Utilizzando componenti aggiuntivi integrati, arricchisci le tue presentazioni con video ed elementi di clip art, ottieni una rapida traduzione di qualsiasi testo, inserisci simboli speciali, modifica immagini e altro ancora.",
+
+  "LearnMoreHeading": "Scopri di più su ONLYOFFICE Presentation Editor",
+  "BlogDesc": "Come includere l'animazione nelle presentazioni PowerPoint?",
+  "BlogLink": "https://www.onlyoffice.com/blog/2022/06/how-to-include-animation-in-powerpoint",
+  "TutorialsDesc": "Protezione delle presentazioni con password",
+  "TutorialsLink": "https://helpcenter.onlyoffice.com/docs/userguides/presentation_editor/Password.aspx",
+  "HintsDesc": "Formati supportati di Presentazioni elettroniche",
+  "HintsLink": "https://helpcenter.onlyoffice.com/docs/userguides/presentation_editor/SupportedFormats.aspx",
+
+  "Q1": "Posso modificare le presentazioni senza connessione a Internet?",
+  "A1": "Sì, puoi installare e utilizzare <0>ONLYOFFICE Desktop Editoren</0> gratuitamente per modificare le presentazioni locali offline.",
+  "Q2": "ONLYOFFICE offre app mobili native per la modifica delle presentazioni?",
+  "A2": "Oui, vous pouvez installer l'application gratuite <0>Documents</0> gratuita per dispositivi iOS o Android per lavorare su presentazioni on-the-go.",
+  "Q3": "È possibile utilizzare l'editor di presentazioni ONLYOFFICE all'interno della mia app con il mio marchio ?",
+  "A3": "Sì, puoi integrare l'editor di presentazione nella tua app. Utilizza <0>ONLYOFFICE Docs Developer</0>."
+}

@@ -1,0 +1,32 @@
+{
+  "PageDescription": "Arbeiten Sie mit Office-Dateien im Modul SuiteCRM Documents mit ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Online-Office für <0>SuiteCRM</0>",
+  "Subheader": "Arbeiten Sie mit Office-Dateien im Modul SuiteCRM Documents mit ONLYOFFICE Docs",
+  "GetStarted": "Los geht's!",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Volle Kompatibilität mit DOCX, XLSX und PPTX",
+
+  "MarketplaceConnectorTitle": "Entwickelt für die nahtlose Integration mit SuiteCRM",
+  "MarketplaceConnectorDescription": "Erhalten Sie jetzt den ONLYOFFICE-Konnektor für SuiteCRM von <0>GitHub</0>.",
+  "GetItNow": "Jetzt erhalten",
+
+  "WhyOO": "Warum ONLYOFFICE Docs Cloud",
+  "WhySubheader": "ONLYOFFICE Docs Cloud ist eine professionelle Office-Suite für die Arbeit mit Textdokumenten, Tabellenkalkulationen, Präsentationen, Formularen und PDF-Dateien.",
+  "Reason1": "<0>Sofort einsatzbereiter</0> Konnektor",
+  "Reason2": "<0>Bearbeitung und Co-Authoring von Office-Dateien</0> direkt innerhalb des SuiteCRM-Moduls Dokumente",
+  "Reason3": "<0>Zusammenarbeit in Echtzeit</0>, Nachverfolgung von Änderungen, Kommentare, Chat",
+  "Reason4": "<0>Intuitive</0> Oberfläche mit Registerkarten",
+  "Reason5": "<0>Zahlreiche</0> Tools für Bearbeitung, Formatierung und Design",
+  "Reason6": "<0>JWT-Schutz</0> vor unbefugtem Zugriff",
+  "Reason7": "<0>Keine Installation erforderlich</0>. Schnelle Konfiguration.",
+  "Reason8": "<0>Quellcode</0> auf GitHub verfügbar",
+
+  "HowToStart": "Erste Schritte",
+  "HowToStartStep1": "Stellen Sie <0>ONLYOFFICE Docs</0> auf Ihrem eigenen Server bereit oder erstellen Sie ein <1>Docs Cloud</1>-Konto.",
+  "HowToStartStep2": "Erhalten Sie den ONLYOFFICE-Konnektor von <0>GitHub</0>.",
+  "HowToStartStep3": "Installieren und konfigurieren Sie den Konnektor.",
+
+  "ReadDetailedInstructions": "Detaillierte Anweisungen finden Sie im <0>Hilfe-Center</0>.",
+
+  "NeedAnAppToConnect": "Benötigen Sie eine App, um ONLYOFFICE mit Ihren Lieblings-Webdiensten zu verbinden? Oder haben Sie eine neue entwickelt?"
+}

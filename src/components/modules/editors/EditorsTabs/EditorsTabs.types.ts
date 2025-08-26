@@ -12,4 +12,5 @@ export interface IEditorsTab {
 export interface IEditorsTabsProps {
   items: IEditorsTab[];
   t: TFunction;
+  className?: string;
 }

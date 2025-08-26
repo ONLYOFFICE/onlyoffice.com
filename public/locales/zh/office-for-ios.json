@@ -1,12 +1,12 @@
 {
-  "PageTitle": "iPhone和iPad免费移动办公套件 | ONLYOFFICE Documents",
-  "PageDescription": "在您的iOS设备上编辑和共同编辑文档、电子表格和演示文稿，填写表单。",
+  "PageTitle": "iPhone和iPad版移动办公套件 | ONLYOFFICE",
+  "PageDescription": "在iOS设备上编辑和共同编辑文档、电子表格和演示文稿。",
 
-  "OnlyOfficeDocuments": "ONLYOFFICE Documents，一款强大的iPhone和iPad <0>移动办公套件</0>",
-  "AbsolutelyFree": "绝对<0>免费</0>。无广告。无应用内购买。",
+  "OnlyOfficeDocuments": "ONLYOFFICE文档，<br>适用于iPhone和iPad的<br><0>移动办公套件</0>",
+  "AbsolutelyFree": "完全<0>免费</0>。无广告。无应用内购买。",
 
-  "OneAppThreeEditors": "一款应用 - <0>三个编辑器</0> - 多种功能",
-  "CompatibleWithMSOffice": "与MS Office格式100%兼容",
+  "OneAppThreeEditors": "一个应用 - <0>三种编辑器</0> - 多样化功能",
+  "CompatibleWithMSOffice": "与微软 Office格式高度兼容",
 
   "HeroImageRightUrl": "/images/templates/office-for-ios/hero/zh/hero-laptop.png",
   "HeroImageRightUrl2x": "/images/templates/office-for-ios/hero/zh/hero-laptop-2x.png",
@@ -14,83 +14,84 @@
   "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/zh/hero-phone.png",
   "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/zh/hero-phone-2x.png",
 
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.zh.svg",
-
   "FeaturesItemHeadingFull": "功能齐全的文本处理器",
-  "FeaturesItemTextMakeUse": "利用多种文本处理工具：页面、段落和文本格式设置，表格，自动形状，图表等。创建任何大小和复杂度的文本文档。通过AirPrint打印。",
+  "FeaturesItemTextMakeUse": "涵盖多个文本处理工具：页面、段落和文本格式、表格、自动形状、图表等。可创建任何大小和复杂程度的文本文档。通过AirPrint直接打印。",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/zh/img-tablet-1.png",
   "FeaturesItemTablet1Bg2x": "/images/templates/office-for-ios/features/zh/img-tablet2x-1.png",
   "FeaturesItemMobile1Bg": "/images/templates/office-for-ios/features/zh/img-mobile-1.png",
   "FeaturesItemMobile1Bg2x": "/images/templates/office-for-ios/features/zh/img-mobile2x-1.png",
 
   "FeaturesItemHeadingComplete": "完整的电子表格编辑器",
-  "FeaturesItemTextManage": "管理您的电子表格数据：使用行和列，调整单元格参数，使用超过450个公式，对数据进行排序和过滤。",
+  "FeaturesItemTextManage": "管理电子表格数据：处理行和列、调整单元格参数、运用超过450个公式，并对数据进行排序和过滤。",
   "FeaturesItemTablet2Bg": "/images/templates/office-for-ios/features/zh/img-tablet-2.png",
   "FeaturesItemTablet2Bg2x": "/images/templates/office-for-ios/features/zh/img-tablet2x-2.png",
   "FeaturesItemMobile2Bg": "/images/templates/office-for-ios/features/zh/img-mobile-2.png",
   "FeaturesItemMobile2Bg2x": "/images/templates/office-for-ios/features/zh/img-mobile2x-2.png",
 
-  "FeaturesItemHeadingCollaborative": "协同演示文稿编辑器",
-  "FeaturesItemTextMakeWork": "处理幻灯片上的所有常用对象：插入图片，添加和编辑自动形状、图表、文本及其他项目。",
+  "FeaturesItemHeadingCollaborative": "演示文稿协作编辑软件",
+  "FeaturesItemTextMakeWork": "兼容幻灯片中所有常用对象：插入图像，添加和编辑自动形状、图表和图形、文本及其他项目。",
   "FeaturesItemTablet3Bg": "/images/templates/office-for-ios/features/zh/img-tablet-3.png",
   "FeaturesItemTablet3Bg2x": "/images/templates/office-for-ios/features/zh/img-tablet2x-3.png",
   "FeaturesItemMobile3Bg": "/images/templates/office-for-ios/features/zh/img-mobile-3.png",
   "FeaturesItemMobile3Bg2x": "/images/templates/office-for-ios/features/zh/img-mobile2x-3.png",
 
   "FeaturesItemHeadingOnline": "在线表单填写器",
-  "FeaturesItemTextMakeView": "查看并填写表单。轻松地在不同字段之间导航。将结果保存为PDF或DOCX文件。",
+  "FeaturesItemTextMakeView": "查看并填写表单。快速从一个字段浏览到另一个字段。将结果另存为PDF或DOCX格式。",
   "FeaturesItemTablet4Bg": "/images/templates/office-for-ios/features/zh/img-tablet-4.png",
   "FeaturesItemTablet4Bg2x": "/images/templates/office-for-ios/features/zh/img-tablet2x-4.png",
   "FeaturesItemMobile4Bg": "/images/templates/office-for-ios/features/zh/img-mobile-4.png",
   "FeaturesItemMobile4Bg2x": "/images/templates/office-for-ios/features/zh/img-mobile2x-4.png",
 
   "FeaturesItemHeadingPDF": "PDF查看器和媒体播放器",
-  "FeaturesItemTextMakeViewPDF": "查看PDF文档和图片，播放音频和视频文件。打开 .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf 等格式文件。",
+  "FeaturesItemTextMakeViewPDF": "查看PDF文档和图像、播放音频和视频文件。可打开.bmp、.jpg、.jpeg、.png、.gif、\n.tif、.tiff、.avi、.mpeg、.mp3和.pdf等。",
   "FeaturesItemTablet5Bg": "/images/templates/office-for-ios/features/zh/img-tablet-5.png",
   "FeaturesItemTablet5Bg2x": "/images/templates/office-for-ios/features/zh/img-tablet2x-5.png",
   "FeaturesItemMobile5Bg": "/images/templates/office-for-ios/features/zh/img-mobile-5.png",
   "FeaturesItemMobile5Bg2x": "/images/templates/office-for-ios/features/zh/img-mobile2x-5.png",
 
-  "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents 是一款出色的产品，用户给出了'非常好'的评价。\"",
+  "OnlyOfficeDocumentsIs": "“ONLYOFFICE 文档是一款出色的产品，被用户授予‘Very Good’奖。”",
   "MichaelGanss": "Michael Ganss,",
 
   "RealTimeCollaboration": "实时协作",
-  "BeMoreProductive": "提高效率。将您的应用连接到ONLYOFFICE云。分享文档以便与您的团队成员实时共同编辑。评论并跟踪更改。添加图形注释。",
+  "BeMoreProductive": "提高工作效率。将您的应用连接到ONLYOFFICE云。分享文档以与团队成员进行实时协同编辑。评论并追踪变更。添加图形注释。",
   "CollabBackgroundUrl": "/images/templates/office-for-ios/collab/collaboration.zh.png",
   "CollabBackgroundUrl2x": "/images/templates/office-for-ios/collab/collaboration.zh@2x.png",
 
-  "VideoCardHeading": "探索 ONLYOFFICE Documents，一款强大的移动办公套件",
+  "VideoCardHeading": "了解ONLYOFFICE文档，优秀的移动办公套件",
 
-  "GetStartedAndChoose": "开始使用并选择工作位置",
+  "GetStartedAndChoose": "开始使用和选择工作平台",
 
-  "ChooseItemOnDevice": "在设备上",
-  "ChooseItemManageDocuments": "管理设备上的文档并离线编辑。",
+  "ChooseItemOnDevice": "在设备中",
+  "ChooseItemManageDocuments": "在设备上管理文档并离线编辑文档。",
 
   "ChooseItemInOnlyOffice": "在ONLYOFFICE云中",
-  "ChooseItemAccessDocs": "从ONLYOFFICE云及其连接的存储（Dropbox、Google Drive等）访问文档并协作工作。",
+  "ChooseItemAccessDocs": "在ONLYOFFICE云及其连接的存储服务商（Dropbox、Google Drive等）中访问文档并开展协作。",
 
-  "ChooseItemInYourCloud": "在您自己的云中",
-  "ChooseItemConnectNextcloud": "连接Nextcloud、ownCloud或任何其他通过WebDAV工作的云，并直接从应用编辑文档。",
+  "ChooseItemInYourCloud": "在您所选的云服务中",
+  "ChooseItemConnectNextcloud": "连接Nextcloud、ownCloud或其他任何支持WebDAV的云服务，直接在应用程序中编辑文档。",
 
-  "ChooseItemFromOther": "从其他应用",
-  "ChooseItemImportDocuments": "从iTunes、文件等应用导入文档。",
+  "ChooseItemFromOther": "从其他应用中",
+  "ChooseItemImportDocuments": "从iTunes、文档等应用程序中导入文档。",
 
-  "GetMoreWithComplete": "通过完整的移动网页版获得更多功能",
-  "WorkOnDocumentsWithin": "在您的移动浏览器中处理文档。前往您的ONLYOFFICE网页门户，获取更多文档编辑和协作工具。",
+  "GetMoreWithComplete": "下载移动网络完整版解锁更多功能",
+  "WorkOnDocumentsWithin": "在移动浏览器中处理文档。进入ONLYOFFICE网站门户，即可使用更多文档编辑和协作处理工具。轻松从移动视图切换并在桌面模式下编辑文档。",
   "GetMoreImage": "/images/templates/office-for-ios/getMore/webversion.zh.png",
   "GetMoreImage2x": "/images/templates/office-for-ios/getMore/webversion.zh@2x.png",
 
-  "LearnMoreHeading": "了解更多关于 ONLYOFFICE Documents for iOS 的信息",
+  "LearnMoreHeading": "了解更多有关ONLYOFFICE文档iOS版的信息",
 
-  "LearnCardTitleRelease": "发行说明",
-  "LearnMoreTextMeet": "了解 ONLYOFFICE Documents v7.2 for iOS",
-  "LearnMoreSubtitleRead": "阅读故事",
+  "LearnCardTitleRelease": "发布新闻",
+  "LearnMoreTextMeet": "快来了解适用于iOS 端的ONLYOFFICE 文档 v7.2",
+  "LearnMoreSubtitleRead": "阅读文章",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/zh-hans/2022/10/onlyoffice-documents-v7-2-for-ios/",
 
   "LearnCardTitleHints": "提示",
-  "LearnMoreTextHandwriting": "ONLYOFFICE Documents 中的手写功能",
+  "LearnMoreTextHandwriting": "ONLYOFFICE文档中的手写功能",
   "LearnMoreSubtitleLearn1": "了解更多",
+  "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/mobile-applications/documents/document-editor/basic-operations/handwriting.aspx",
 
   "LearnCardTitleDeveloper": "开发者指南",
-  "LearnMoreTextHowMobile": "移动集成的工作原理",
-  "LearnMoreSubtitleLearn2": "了解更多"
+  "LearnMoreTextHowMobile": "移动集成如何运作",
+  "LearnMoreSubtitleLearn2": "了解更多",
+  "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/zh-hans/2022/07/onlyoffice-for-developers-how-the-mobile-integration-works/"
 }

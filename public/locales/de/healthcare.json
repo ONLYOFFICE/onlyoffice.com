@@ -1,0 +1,89 @@
+{
+  "PageTitle": "Online-Office für Gesundheitswesen | ONLYOFFICE",
+  "PageDescription": "Bearbeiten Sie Dokumente gemeinsam und privat in ONLYOFFICE mit integrierten Funktionen, um die HIPAA-Konformität Ihrer IT-Abteilung bei der Nutzung unserer Software zu garantieren.",
+
+  "HeroTitle": "ONLYOFFICE <0>für Gesundheitseinrichtungen</0>",
+  "HeroText": "Sichere Dokumentenbearbeitung und Zusammenarbeit für medizinisches Fachpersonal",
+
+  "FlexibleChoiceSoftwareTools": "<0>Flexible Auswahl</0> an Softwaretools, die den Anforderungen Ihrer Einrichtung entsprechen",
+  "LearnMore": "Weitere Informationen",
+  "UseItForFree": "Kostenlos nutzen",
+  "GetItNow": "Jetzt starten",
+
+  "EffectivelyCollaborateOnMedicalRecords": "Effektive Zusammenarbeit bei medizinischen Unterlagen",
+  "OODocSpaceAllowsConnectingDoctors": "ONLYOFFICE DocSpace ermöglicht die Verbindung von Ärzten und Dokumentationen in anpassbaren Räumen mit flexiblen Einstellungen.",
+  "EffectivelyCollabFeature1": "Erstellen Sie Räume für die Zusammenarbeit, um gemeinsam an Patientenakten zu arbeiten, z. B. für interdisziplinäre Diskussionen, Räume zum Ausfüllen von Formularen zur Erfassung von Daten und Antworten oder benutzerdefinierte Räume für jeden anderen Zweck.",
+  "EffectivelyCollabFeature2": "Teilen Sie den Zugang mit Ärzten, die für die Behandlung verantwortlich sind, auch krankenhausübergreifend. Verwenden Sie für den schnellen Zugriff öffentliche Räume, in denen Dokumente ohne Registrierung eingesehen werden können.",
+  "EffectivelyCollabFeature3": "Schützen Sie Räume und die darin enthaltenen sensiblen Dateien mit mehreren Sicherheitseinstellungen.",
+
+
+  "OrganizeASecureDigitalWorkplace": "Organisieren Sie einen sicheren digitalen Arbeitsplatz",
+  "OOOffersCollaborationPlatform": "ONLYOFFICE bietet eine vollwertige Plattform für die Zusammenarbeit mit erweiterten Sicherheitsfunktionen.",
+  "OrganizeASecureFeature1": "Speichern, teilen und bearbeiten Sie Dokumente im Modul <0>ONLYOFFICE Dokumente</0> in aller Sicherheit. Erstellen Sie ausfüllfertige Formulare. Öffnen Sie Video- und Audiodateien und zeigen Sie Bilder in verschiedenen Formaten an.",
+  "OrganizeASecureFeature2": "Verbessern Sie die Kontaktverwaltung mit <0>ONLYOFFICE CRM</0>. Verwalten Sie Office-Aufgaben mit Modul <1>ONLYOFFICE Projekte</1>.",
+  "OrganizeASecureFeature3": "Ermöglichen Sie die interne Kommunikation für Mitarbeiter innerhalb von <0>ONLYOFFICE Community</0>. Organisieren Sie einen Zeitplan mit <1>ONLYOFFICE Kalender</1>.",
+
+
+  "AlreadyUseAPopularDms": "Verwenden Sie bereits ein beliebtes DMS? Ermöglichen Sie eine sichere individuelle und gemeinsame Bearbeitung von Dokumenten mit ONLYOFFICE Docs",
+  "OOOffersConnectors": "ONLYOFFICE bietet eine breite Auswahl an gebrauchsfertigen Konnektoren für eine umfassende Integration in Ihre Infrastruktur.",
+  "AlreadyUseFeature1": "Bewahren Sie Patientendaten in Textdokumenten, Tabellenkalkulationen oder Präsentationen mit einer Ende-zu-Ende-Verschlüsselung auf. Bearbeiten Sie diese gemeinsam in Echtzeit. Hohe Kompatibilität mit MS Office-Formaten.",
+  "AlreadyUseFeature2": "Legen Sie granulare Dokumentberechtigungen fest. Verwenden Sie eine Vielzahl von Funktionen für die Zusammenarbeit, einschließlich Versionshistorie, Nachverfolgung von Änderungen, Kommentare und integrierter Chats.",
+  "AlreadyUseFeature3": "Schützen Sie Patientendaten vor dem Kopieren, Herunterladen oder Drucken.",
+
+
+
+  "UltimateProtectionHealthcareData": "<0>Ultimativer Schutz</0> von Gesundheitsdaten vor heutigen Bedrohungen",
+  "OOCompliantWithHipaaPrivacy": "ONLYOFFICE verfügt über integrierte Funktionen, die IT-Abteilungen in Gesundheitseinrichtungen dabei unterstützen, die <0>HIPAA-Datenschutzbestimmungen</0> und Sicherheitsregeln einzuhalten",
+
+  "EncryptDataAtRestAndTransit": "Verschlüsseln Sie die inaktiven Daten und Dateien während der Übertragung",
+  "EncryptDataP1": "Die Verschlüsselung von inaktiven Daten und während der Übertragung macht es Angreifern unmöglich, die Daten der Patienten zu entschlüsseln, selbst wenn sie Zugang zu ihnen erhalten.",
+  "EncryptDataP2": "ONLYOFFICE verwendet den branchenführenden AES-256-Verschlüsselungsstandard, um die vertraulichen inaktiven Daten zu schützen. Während der Übertragung werden die Daten durch die Verwendung von HTTPS-Protokollen mit dem aktuellen TLS-Verschlüsselungsalgorithmus geschützt.",
+  "EncryptDataP3": "ONLYOFFICE Enterprise verfügt über Privaträume, die die ultimative Datensicherheit gewährleisten. Jedes Symbol, das Sie tippen, ist Gegenstand einer Ende-zu-Ende-Verschlüsselung.",
+  "EncryptDataImgUrl": "/images/templates/healthcare/screens/first/de/index_1_@x1.de.png",
+  "EncryptDataImgUrl2x": "/images/templates/healthcare/screens/first/de/index_1_@x2.de.png",
+  "LearnHowItWorks": "Erfahren Sie, wie es funktioniert",
+
+  "RestrictAccessToData": "Beschränken Sie den Zugriff auf Daten",
+  "RestrictAccessP1": "Geben Sie nur denjenigen Zugriff auf Patientendaten, die diese für die Ausübung ihrer Arbeit benötigen.",
+  "RestrictAccessP2": "ONLYOFFICE bietet mehrere Dokumentberechtigungen zur Steuerung des Zugriffs: Vollzugriff, Schreibgeschützt, Kommentare, Überprüfung oder Ausfüllen von Formularen.",
+  "RestrictAccessP3": "Um den unberechtigten Zugriff auf die Patientendaten zu verhindern, verfügt ONLYOFFICE Workspace über eine Reihe von Authentifizierungsfunktionen:",
+
+  "TwoFactorAuthentication": "Zwei-Faktor-Authentifizierung;",
+  "SingleSignOn": "Single Sign-On (SSO);",
+  "TrustedMailDomains": "sichere Mail-Domänen;",
+  "PasswordCreationCriteria": "Kriterien für die Passworterstellung;",
+  "CookieLifetime": "Cookie-Lebensdauer;",
+  "IpRestriction": "IP-Beschränkung;",
+
+  "RestrictAccessP4": "Außerdem können IT-Abteilungen den Zugriff auf Module und Tools von ONLYOFFICE Workspace einschränken.",
+  "RestrictAccessImgUrl": "/images/templates/healthcare/screens/second/de/index_2_@x1.de.png",
+  "RestrictAccessImgUrl2x": "/images/templates/healthcare/screens/second/de/index_2_@x2.de.png",
+
+  "ProtectDataUsage": "Schützen Sie die Datennutzung",
+  "ProtectDataUsageP1": "Schützen Sie Patientendaten vor dem Kopieren, Herunterladen oder Drucken.",
+  "ProtectDataUsageP2": "Mit der ONLYOFFICE API können IT-Abteilungen zusätzliche Kontrollen implementieren, um riskante Aktivitäten mit sensiblen Daten zu verhindern.",
+  "ProtectDataImgUrl": "/images/templates/healthcare/screens/third/de/index_3_@x1.de.png",
+  "ProtectDataImgUrl2x": "/images/templates/healthcare/screens/third/de/index_3_@x2.de.png",
+  "VisitAPI": "API aufrufen",
+
+  "LogAndMonitorDataUsage": "Protokollieren und überwachen Sie die Datennutzung",
+  "LogAndMonitorDataUsageP1": "Überwachen Sie, wer, wann und von welchen Geräten und Standorten auf die Informationen zugreift.",
+  "LogAndMonitorDataUsageP2": "ONLYOFFICE Workspace verfügt über integrierte Auditprotokolle und Überwachungstools, mit denen Sie Probleme im Falle eines Vorfalls schnell identifizieren und beheben können.",
+  "LogAndMonitorImgUrl": "/images/templates/healthcare/screens/fourth/de/index_4_@x1.de.png",
+  "LogAndMonitorImgUrl2x": "/images/templates/healthcare/screens/fourth/de/index_4_@x2.de.png",
+
+  "BackupAndRestoreData": "Sichern Sie Ihre Daten und stellen Sie diese wieder her",
+  "BackupAndRestoreP1": "Schützen Sie die Integrität und Verfügbarkeit Ihrer sensiblen Daten mit regelmäßigen Backups.",
+  "BackupAndRestoreP2": "ONLYOFFICE Workspace bietet Tools für die automatische Sicherung und Datenwiederherstellung, mit denen IT-Abteilungen im Gesundheitswesen einen Speicherort für ihre Backups auswählen können: die lokale Festplatte oder einen beliebigen privaten Cloud-Speicher von Drittanbietern.",
+  "BackupAndRestoreImgUrl": "/images/templates/healthcare/screens/fifth/de/index_5_@x1.de.png",
+  "BackupAndRestoreImgUrl2x": "/images/templates/healthcare/screens/fifth/de/index_5_@x2.de.png",
+
+
+  "EnterpriseReadySolution": "Unternehmensgerechte Lösung",
+  "OOProvidesEnterpriseVersion": "ONLYOFFICE bietet eine vorkonfigurierte und optimierte Unternehmensversion:",
+  "AdvancedSetOfEditingTools": "erweiterte Bearbeitungstools",
+  "EnhancedSecurityOptions": "erweiterte Sicherheitsoptionen",
+  "PriorityAccessSecurityStabilityFixes": "vorrangiger Zugriff auf Sicherheits- und Stabilitätsverbesserungen",
+  "EasilyScalable": "einfach skalierbar",
+  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "kostenlose Testversion, lebenslange Lizenz + Updates und Support"
+}

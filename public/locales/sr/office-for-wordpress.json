@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Online kancelarija za WordPress | ONLYOFFICE",
+  "PageDescription": "Radite na kancelarijskim datotekama sa svog WordPress naloga",
+
+  "OnlineOfficeForConnector": "Online kancelarija za WordPress",
+  "Subheader": "Radite na kancelarijskim datotekama sa svog WordPress naloga",
+  "GetStarted": "Počnite",
+  "RequestFreeDemo": "ZAHTEV ZA BESPLATAN DEMO",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Potpuno kompatibilan sa docx, xlsx i pptx",
+
+  "DocspaceAppTitle": "ONLYOFFICE <0>DocSpace aplikacija</0> za WordPress",
+  "DocspaceAppHeader": "Ugradite kancelarijske dokumente na svoj WordPress sajt",
+  "DocspaceAppTab1Label": "Kreirajte, otpremajte i ugrađujte dokumenta, tabele, prezentacije, PDF-ove ili na vašu veb stranicu",
+  "DocspaceAppTab2Label": "Ugradite celu sobu na svoju veb stranicu omogućavajući posetiocima da pregledaju dokumente direktno u pregledaču",
+  "DocspaceAppTab3Label": "Integrišite kompleksne PDF obrasce kako biste ih mogli popunjavati online. Automatski prikupljajte i analizirajte podatke",
+  "soon": "uskoro",
+  "DocspaceAppTab4Label": "Sprečite preuzimanje, štampanje i kopiranje dokumenata sa vašeg sajta",
+
+  "DocspaceAppScreen2Header": "Efikasno upravljajte dokumentima sa svog WordPress naloga",
+  "DocspaceAppScreen2Tab1Label": "Kreirajte siguran prostor za sva svoja dokumenta. Lako mu pristupite bilo kad i bilo gde",
+  "DocspaceAppScreen2Tab2Label": "Organizujte svoje lične datoteke i kreirajte prostorije za svoja poslovna dokumenta",
+  "DocspaceAppScreen2Tab3Label": "Obezbedite fleksibilne dozvole za pristup: uređivanje, komentarisanje, pregled ili samo prikaz",
+  "DocspaceAppScreen2Tab4Label": "Uređujte i sarađujte na dokumentima sa drugim korisnicima WordPress-a online",
+
+  "MarketplaceConnectorTitle": "Napravljen da besprekorno funkcioniše u WordPressu-u",
+  "MarketplaceConnectorDescription": "Instalirajte ONLYOFFICE DocSpace aplikaciju za WordPress danas sa WordPress Plugin direktorijuma.",
+
+  "DocsAppTitle": "ONLYOFFICE <0>Docs aplikacija</0> za WordPress",
+  "DocsAppHeader": "Dodajte kancelarijska dokumenta na vaše WordPress stranice",
+  "DocsAppTab1Label": "Dodajte ONLYOFFICE blokove na postove za umetanje dokumenata u ugrađenom režimu",
+  "DocsAppTab2Label": "Uredite dokumenta, tabele i prezentacije koje su postavljene na WordPress putem administratorske table",
+  "DocsAppTab3Label": "Saradjujte u realnom vremenu na kancelarijskim datotekama sa drugim WordPress administratorima",
+
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "Reason1": "Robustan skup alata za uređivanje, formatiranje i stilizovanje. <0>Integrisani AI pomoćnik</0> (ChatGPT ili ZhiPu Copilot).",
+  "Reason2": "Ko-uređivanje <0>u realnom vremenu</0> i zaključavanje paragrafa, pregled, istorija verzija, poređenje dokumenata, komentari i pominjanja.",
+  "Reason3": "<0>Ugrađeni čet</0> i integracija Telegram. Jitsi i Rainbow dodaci za komunikaciju u realnom vremenu.",
+  "Reason4": "Podrška za više od <0>50 formata datoteka</0>. Potpuno kompatibilan sa MS Office formatima: DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Poboljšana bezbednost</0>. Fleksibilna prava pristupa i JWT. Praćenje aktivnosti i izveštavanje o reviziji. Enkripcija u mirovanju i u tranzitu. Otvoreni izvorni kod.",
+  "Reason6": "<0>Slobodan plan za početak</0>. Poslovni plan za više administratora, veći prostor za skladištenje, poboljšanu sigurnost i profesionalnu podršku. Self-hosted rešenje za potpunu kontrolu nad vašim podacima.",
+
+  "Docs": "Dokumenta",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1Docspace": "Kreirajte svoj besplatni <0>DocSpace nalog</0>.",
+  "HowToStartStep2Docspace": "Preuzmite aplikaciju za integraciju sa <0>WordPress Plugin Directory</0>.",
+  "HowToStartStep3": "Otpremite i konfigurišite aplikaciju za integraciju.",
+  "ReadDetailedInstructionsDocSpace": "Pročitajte detaljna uputstva na <0>GitHub</0>.",
+
+  "HowToStartStep1Docs": "Izaberite svoj plan i implementirajte <0>ONLYOFFICE Docs</0>.",
+  "HowToStartStep2Docs": "Preuzmite aplikaciju za integraciju sa <0>GitHub</0> ili <1>WordPress Plugin Directory</1>.",
+  "ReadDetailedInstructionsDocs": "Pročitajte detaljna uputstva na <0>GitHub</0> i u <1>Centru za pomoć</1>.",
+
+  "NeedAnAppToConnect": "Potrebna vam je aplikacija da povežete ONLYOFFICE sa vašom omiljenom veb uslugom? Ili ste je već razvili?"
+}

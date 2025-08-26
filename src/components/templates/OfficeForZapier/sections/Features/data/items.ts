@@ -50,7 +50,7 @@ export const items = [
       {
         heading: "Search",
         iconPositionX: -518,
-        items: ["SearchFile", "SearchFolder", "SearchRoom"],
+        items: ["SearchFile", "SearchFolder"],
       },
       {
         heading: "Create",

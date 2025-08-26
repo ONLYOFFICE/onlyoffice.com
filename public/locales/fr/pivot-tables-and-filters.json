@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Tableaux croisés dynamiques et filtres",
+  "PageDescription": "Illustrer clairement les données de votre feuille de calcul. Trier et filtrer les données afin de présenter les informations à ONLYOFFICE d'une manière conviviale.",
+
+  "Header": "Analysez facilement de grandes quantités de données",
+  "SubHeader": "Affichez vos données pour chaque tâche avec des tableaux croisés dynamiques, des paramètres de filtrage et de tri",
+
+  "HeroImgUrl": "/images/templates/pivot-tables-and-filters/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/pivot-tables-and-filters/hero/fr/hero@2x.png",
+
+  "Feature1Title": "Créez des tableaux croisés dynamiques",
+  "Feature1Desc": "Illustrez brièvement les données pertinentes de vos feuilles de travail par des résumés. Modifiez et réorganisez les champs d'affichage, optez pour plusieurs mises en page et organisez les données entre les filtres, les lignes, les colonnes et les valeurs.",
+
+  "Feature2Title": "Ajustez l'apparence et les paramètres avancés",
+  "Feature2Desc": "Insérez les résumés sur la même feuille ou sur une nouvelle feuille. Modifiez les couleurs, les tailles et les styles, choisissez parmi les formes de mise en page de rapport Compact, Contour et Tabulaire, et appliquez des styles existants à partir de modèles ou créez-en de nouveaux.",
+
+  "Feature3Title": "Ajoutez facilement des filtres aux feuilles de calcul",
+  "Feature3Desc": "Triez et filtrez les feuilles et les tableaux croisés dynamiques pour créer l'affichage le plus précis possible des informations. Définissez vos propres modèles de filtrage. Partagez des feuilles avec l'autorisation Filtre personnalisé pour permettre à vos collègues d'ajouter indépendamment des filtres sur des feuilles de calcul Excel. Créez des vues de feuilles pour pouvoir naviguer personnellement avec vos propres filtres.",
+
+  "Feature4Title": "Appliquez des slicers pour un filtrage rapide",
+  "Feature4Desc": "Ajoutez des slicers pour les tableaux formatés et les tableaux croisés dynamiques afin de filtrer rapidement les informations à l'aide de boutons. Personnalisez l'apparence, la taille et la position des slicers, et configurez les paramètres d'accrochage des cellules. Créez et organisez plusieurs slicers sur vos feuilles.",
+
+  "Feature1ImgUrl": "/images/templates/pivot-tables-and-filters/features/fr/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/fr/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/pivot-tables-and-filters/features/fr/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/fr/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/pivot-tables-and-filters/features/fr/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/fr/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/pivot-tables-and-filters/features/fr/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/fr/pic4@2x.png"
+}

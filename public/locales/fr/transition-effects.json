@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Effets de transition PowerPoint",
+  "PageDescription": "Attacher l'attention de votre audience en ajoutant les transitions aux diapositives de votre présentation avec ONLYOFFICE. Programmer le tamps du début, la durée et les paramètres de délai.",
+
+  "Header": "Créez des présentations conviviales",
+  "SubHeader": "Créez les présentations PowerPoint interactives avec un riche contenu au design novateur",
+
+  "HeroImgUrl": "/images/templates/transition-effects/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/transition-effects/hero/fr/hero@2x.png",
+
+  "Feature1Title": "Créez une maquette parfaite",
+  "Feature1Desc": "Sélectionnez un style de votre diapositive. Gérez et réorganisez les diapositives, ajoutez les liens, les pieds de page, alignez les éléments avec les outils de mise en forme évolués.",
+
+  "Feature2Title": "Rédigez des textes impeccables",
+  "Feature2Desc": "Éditez et formatez les zones de texte, appliquez les polices, les styles et la disposition du texte. Corrigez l’orthographe, trouvez les synonymes et les antonymes avec l’outil Thesaurus, traduisez vers une langue souhaitée avec les modules complémentaires (Google Translate, DeepL, ou Apertium).",
+
+  "Feature3Title": "Insérez les schémas et les graphiques",
+  "Feature3Desc": "Insérez des visuels afin de rendre votre histoire captivante. Créez et personnalisez des graphiques, des formes automatiques, des tableaux et des feuilles de calcul OLE, des équations et des textes. Présentez visuellement vos idées avec le graphique SmartArt. Insérez les images et modifiez-les avec Photo Editor, ajoutez les vidéos à partir de YouTube, et ajoutez les lignes de code avec le module complémentaire Code en surbrillance. Utilisez des images personnalisées comme puces dans les listes à puces.",
+
+  "Feature4Title": "Ajoutez les transitions aux diapositives",
+  "Feature4Desc": "Captez l’attention de votre audience en ajoutant les transitions à vos diapositives : Estomper, Pousser, Balayer, Fractionner, Découvrir, Couvrir, Pointer ou Zoomer. Définissez le temps du début, la durée et les paramètres de délai.",
+
+  "Feature1ImgUrl": "/images/templates/transition-effects/features/fr/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/transition-effects/features/fr/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/transition-effects/features/fr/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/transition-effects/features/fr/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/transition-effects/features/fr/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/transition-effects/features/fr/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/transition-effects/features/fr/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/transition-effects/features/fr/pic4@2x.png"
+}

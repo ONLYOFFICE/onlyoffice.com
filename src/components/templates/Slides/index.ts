@@ -1,0 +1,1 @@
+export { SlidesTemplate } from "./Slides";
