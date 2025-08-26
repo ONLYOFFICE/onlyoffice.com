@@ -36,6 +36,12 @@ export const items: IEditorsItem[] = [
     id: "convert",
     heading: "Feature4Title",
     text: "Feature4Desc",
+    links: [
+      {
+        label: "Feature4Link",
+        href: "/online-document-converter",
+      },
+    ],
     image: {
       url: "Feature4ImgUrl",
       url2x: "Feature4ImgUrl2x",
@@ -50,7 +56,7 @@ export const items: IEditorsItem[] = [
       {
         label: "Feature5Link",
         href: "https://templates.onlyoffice.com",
-        isExternal: true
+        isExternal: true,
       },
     ],
     image: {
@@ -76,7 +82,7 @@ export const items: IEditorsItem[] = [
     links: [
       {
         label: "Feature7Link",
-        href: "/app-directory"
+        href: "/app-directory",
       },
     ],
     image: {

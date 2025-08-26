@@ -4,7 +4,7 @@ export interface ICheckbox {
   /** The class name(s) applied to the input element. */
   className?: string;
   /** The label text. */
-  label: string;
+  label: string | React.ReactNode;
   /** The tab index of the checkbox, which controls its keyboard navigation order. */
   tabIndex?: number;
   /** The checked property sets the checked state of a checkbox. */
@@ -19,6 +19,8 @@ export interface ICheckbox {
   align?: "top" | "center";
   /** The font-size of the label. Default: "medium". */
   size?: "small" | "medium";
+  /** Boolean value that indicates whether the input is disabled. */
+  disabled?: boolean;
   /** A callback function for the input change event. */
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }

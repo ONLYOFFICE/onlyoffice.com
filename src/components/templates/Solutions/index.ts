@@ -1,0 +1,1 @@
+export { SolutionsTemplate } from "./Solutions";

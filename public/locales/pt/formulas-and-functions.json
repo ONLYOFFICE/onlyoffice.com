@@ -1,0 +1,22 @@
+{
+  "PageTitle": "Fórmulas do Excel nas planilhas ONLYOFFICE",
+  "PageDescription": "Insira funções, acesse categorias e fórmulas aplicadas recentemente, trabalhe com intervalos nomeados e calcule suas planilhas e pastas de trabalho inteiras, tudo em um só lugar.",
+
+  "Header": "Realize cálculos precisos sem o mínimo esforço",
+  "SubHeader": "Use mais de 450 fórmulas de planilha do Excel para processar dados para qualquer tarefa",
+
+  "Feature1Title": "Faça cálculos facilmente com mais de 450 funções de planilha",
+  "Feature1Desc": "Insira funções, acesse categorias e fórmulas aplicadas recentemente, trabalhe com intervalos nomeados e faça cálculos em suas planilhas e pastas de trabalho inteiras em um só lugar. Inspecione os resultados em planilhas grandes usando a Watch Window. Use Rastrear precedentes e Rastrear dependentes para exibir os relacionamentos entre fórmulas e células. Insira equações e símbolos para descrever os cálculos aplicados.",
+
+  "Feature2Title": "Defina intervalos de células para aplicar rapidamente fórmulas do Excel",
+  "Feature2Desc": "Defina e nomeie intervalos de células e os use como argumentos, nomeie tabelas formatadas inteiras e gerencie intervalos para que você possa usá-los como hiperlinks internos.",
+
+  "Feature3Title": "Valide a entrada de dados",
+  "Feature3Desc": "Defina regras de validação de dados para se certificar de que apenas dados relevantes sejam preenchidos em suas planilhas para o cálculo correto. Aplique validação a números e textos, e defina condições detalhadas para filtrar erros de forma precisa.",
+
+  "Feature4Title": "Proteja a estrutura e o conteudo de uma planilha",
+  "Feature4Desc": "Defina uma senha para toda a planilha, pasta de trabalho e ate mesmo em uma folha separada. Oculte formulas para mante-las privadas. Bloqueie celulas, formas e texto. Habilite a edicao apenas em intervalos especificados.",
+
+  "Feature5Title": "Automatize seu trabalho com macros",
+  "Feature5Desc": "Com um plug-in especial e nossa API, crie suas próprias macros JavaScript ou use as existentes para automatizar cálculos e padronizar planilhas. Execute macros automaticamente ou desative-as, e receba notificações sobre macros no editor."
+}

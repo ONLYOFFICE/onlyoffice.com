@@ -53,7 +53,7 @@ const Hero = ({ locale, productsData }: IDocSpaceFamilyPackTemplate) => {
             />
 
             <StyledHeroPrice>
-              <Text as="span" size={1} label="$" />
+              <Text as="span" size={1} label={currency.symbol} />
               {productsData.basic.price}
             </StyledHeroPrice>
 

@@ -1,0 +1,17 @@
+{
+  "FullName": "Nome completo",
+  "FullNameIsIncorrect": "Nome completo está incorreto",
+  "NameSurname": "Nome completo",
+  "FullNameIsEmpty": "Nome completo está vazio",
+  "Email": "E-mail",
+  "EmailIsEmpty": "E-mail está vazio",
+  "EmailIsIncorrect": "E-mail está incorreto",
+  "CompanyName": "Nome da empresa",
+  "CompanyNameIsEmpty": "Nome da empresa está vazio",
+  "CompanyWebsite": "Site da empresa",
+  "WebsiteIsIncorrect": "Site está incorreto",
+  "Comment": "Deixe um comentário",
+  "GetItNow": "Obtenha-o agora",
+  "successfullyRequestText": "Sua solicitação foi enviada com sucesso",
+  "errorRequestText": "Um erro ocorreu, tente novamente mais tarde"
+}

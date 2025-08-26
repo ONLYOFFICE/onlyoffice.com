@@ -30,6 +30,10 @@ export default {
       control: { type: "boolean" },
       options: [true, false],
     },
+    disabled: {
+      control: { type: "boolean" },
+      options: [true, false],
+    },
     required: {
       control: { type: "boolean" },
       options: [true, false],

@@ -1,0 +1,20 @@
+{
+  "PageTitle": "Unsubscribe | ONLYOFFICE",
+  "YouHaveSuccessfullyUnsubscribed": "Has cancelado correctamente tu suscripción a todas las notificaciones por correo electrónico",
+  "TheEmailAddressHasBeenSuccessfullyRemoved": "La dirección de correo electrónico <0>{{email}}</0> se ha eliminado correctamente de la lista de correo de ONLYOFFICE. Ya no recibirás ninguna notificación por correo electrónico de ONLYOFFICE.",
+  "IfYouDidThisByMistakeYouCanResubscribe": "Si lo has hecho por error, puedes volver a suscribirte haciendo clic en el botón de abajo.",
+  "Resubscribe": "Volver a suscribirse",
+  "OOUpdatesAndSpecialOffers": "Actualizaciones y ofertas especiales de ONLYOFFICE",
+  "WishToKeepUpToDate": "¿Quieres estar al día con las noticias y actualizaciones de ONLYOFFICE? ",
+  "YourEmail": "Su e-mail*",
+  "Subscribe": "Suscribirse",
+  "YouHaveBeenResubscribed": "Te has vuelto a suscribir",
+  "TheEmailHasBeenSuccessfullyAdded": "Tu correo electrónico - <0>{{email}}</0> - ha sido añadido con éxito a la lista de correo de ONLYOFFICE. Recibirás actualizaciones de productos y anuncios.",
+  "WouldYouLikToUnsubscribeFromAllOOEmails": "¿Te gustaría cancelar la suscripción de todos los correos electrónicos de ONLYOFFICE: actualizaciones de productos y anuncios, notificaciones del portal y consejos y trucos? Haz clic en el enlace: <0>Cancelar toda la suscripción</0>",
+  "EmailIsEmpty": "El campo Email está vacío",
+  "EmailIsIncorrect": "Email es incorrecto",
+  "TheEmailAddressIsNotRegistered": "La dirección de correo electrónico <0>{{email}}</0> no está registrada.",
+  "UnsubscribeSuccessful": "Cancelación de la suscripción exitosa",
+  "TheEmailHasBeenSuccessfullyRemoved": "El correo electrónico - <0>{{email}}</0> - ha sido eliminado con éxito de la lista de correo de ONLYOFFICE. Ya no recibirás más actualizaciones de productos y anuncios.",
+  "IfYouDidThisInErrorYouMayResubscribe": "Si lo has hecho por error, puedes volver a suscribirte haciendo clic en el botón de abajo."
+}

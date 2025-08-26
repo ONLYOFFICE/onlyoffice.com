@@ -80,8 +80,8 @@
 
   "HowToStartStep3": "Upload and configure the integration app.",
 
-  "ReadDetailedInstructionsDocs": "Read detailed instructions in the <0>Help Center</0>.",
-  "ReadDetailedInstructionsDocSpace": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",
+  "ReadDetailedInstructionsDocSpace": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructionsDocs": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
 }

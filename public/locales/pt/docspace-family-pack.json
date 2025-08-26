@@ -1,0 +1,27 @@
+{
+  "PageTitle": "ONLYOFFICE - Aplicativos de Negócios na Nuvem",
+
+  "BuyOODocSpaceFamilyPack": "Compre o <0>pacote familiar ONLYOFFICE DocSpace</0>",
+  "DocSpaceFamilyPack": "DocSpace Family Pack",
+  "RoomBasedFileStorage": "Armazenamento de arquivos baseado em ambiente",
+  "OnlineEditors": "Online editors for text documents, spreadsheets, presentations, forms, and PDFs",
+  "DesktopAndMobileApps": "Aplicativos para desktop e dispositivos móveis, versão web para dispositivos móveis",
+  "EnhancedSecurityFeatures": "Recursos de segurança melhorados",
+  "AllMinorUpdatesAndMajorUpgrades": "All minor updates and major upgrades",
+  "TryItFree": "Experimente de graça",
+
+  "NumberOfUsers": "Número de usuários preferido",
+  "NumberOfUsersTooltip": "O número especificado de usuários define quantas pessoas podem ter acesso para editar documentos, planilhas e apresentações. O número de documentos que podem ser editados ao mesmo tempo não é limitado. Outros usuários poderão abrir documentos apenas para visualização.",
+  "LicenseDuration": "License duration",
+  "Lifetime": "Lifetime",
+  "LifetimeTooltip": "Você pode usar todos os recursos do ONLYOFFICE DocSpace Family Pack disponíveis no momento da compra por um período ilimitado, mas um ano após a data da compra você não poderá mais obter atualizações gratuitas.",
+  "Updates": "Atualizações",
+  "1Year": "1 ano",
+  "Total": "Total:",
+  "BuyNow": "Comprar agora",
+
+  "WhatDoesTheNumberOfUsersLabel": "O que significa “número de usuários”?",
+  "WhatDoesTheNumberOfUsersText": "Número de usuários define a quantidade de pessoas que podem ter acesso para editar documentos, planilhas e apresentações. O número de documentos que podem ser editados ao mesmo tempo não é limitado.<br/>Outros usuários poderão abrir documentos apenas para visualização.<br/><br/>Observe: O ONLYOFFICE mantém a ID de usuário por um período de 30 dias. Depois disso, você poderá substituir o usuário por um novo, se necessário. Se compartilhar um documento com usuários externos, cada um deles receberá um ID de usuário identificado por um período de 30 dias.",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "Onde encontro respostas para outras perguntas?",
+  "WhereCanIFindAnswersToOtherQuestionsText": "Visite nosso <0>Centro de Perguntas Frequentes</0> ou <1>envie sua solicitação</1> e nós o ajudaremos o mais breve possível."
+}

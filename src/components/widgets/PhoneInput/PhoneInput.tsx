@@ -20,7 +20,7 @@ import { Input } from "@src/components/ui/Input";
 import { countries } from "@src/config/data/countries";
 
 const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
-  ({ id, className, status, onChange, onBlur }, ref) => {
+  ({ id, className, status, required, onChange, onBlur }, ref) => {
     const { t } = useTranslation("PhoneInput");
     const { IPGeolocationInfo, setIPGeolocationInfo } = useIPGeolocationStore();
     const leftSideRef = useRef<HTMLButtonElement>(null);
@@ -105,7 +105,7 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
           label={t("Phone")}
           maxLength={50}
           pattern="^\+?\d{1,4}\s{0,}(\(\d{1,4}\))?\s{0,}(\d{1,5}\s{0,}-?){1,4}$"
-          required
+          required={required}
           active
           status={status}
           onFocus={() => setIsOpen(false)}

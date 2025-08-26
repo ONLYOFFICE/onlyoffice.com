@@ -34,6 +34,7 @@
   "VMwareESXImage": "VMware ESX Image",
   "VirtualBoxImage": "VirtualBox Image",
   "KVMImage": "KVM Image",
+  "ForWindowsServer": "For Windows Server",
   "WithNextcloud": "With Nextcloud",
   "GetTheLatestVersionOfNextcloud": "Get the latest version of Nextcloud with ONLYOFFICE editors pre-installed.",
   "OODocSpaceCommunity": "ONLYOFFICE DocSpace Community",

@@ -1,0 +1,15 @@
+{
+    "HarmonyInYourCookies": "Cookieの設定",
+    "CookieText": "当ウェブサイトではCookieを使用して、パーソナライズされた体験を提供しています。Cookieはサイトの運営、ブラウジングの改善、ターゲットマーケティングと広告の実現を支援します。Cookieの使用に完全に同意するか、設定を管理することができます。<0>詳細はこちら</0>",
+    "Deny": "拒否",
+    "Customize": "カスタマイズ",
+    "AcceptAll": "すべてを承認",
+    "CookieSettings": "Cookieの設定",
+    "ConfirmMyChoices": "選択を確認する",
+    "Technical": "技術的（必須）",
+    "TechnicalDescription": "これらのCookieは当ウェブサイトを正しく表示するために必要です。適切な機能を確保します。",
+    "Analytical": "分析用",
+    "AnalyticalDescription": "分析Cookieの目的は、ユーザーが当ウェブサイトをどのように使用しているかを発見し、訪問を追跡することです。これらの機能により、ウェブサイトの品質とコンテンツを改善することができます。",
+    "Marketing": "マーケティング",
+    "MarketingDescription": "これらのCookieはマーケティング目的と、当ウェブサイトのユーザーの興味に合わせた広告をより適切に提供するための情報収集に使用されます。"
+}

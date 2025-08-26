@@ -1,0 +1,22 @@
+{
+  "PageTitle": "Nejlepší online editor pro textové dokumenty | ONLYOFFICE",
+  "PageDescription": "Nejlepší online textový editor. Můžete vytvářet, upravovat a spolu-upravovat dokumenty aplikace Word online: docx, doc, txt, odt, rtf.",
+
+  "Header": "Porovnávání dokumentů",
+  "SubHeader": "Najděte rozdíly, aplikujte opravy a dokončete texty pomocí funkce Porovnávání dokumentů",
+
+  "Feature1Title": "Srovnejte dva dokumenty a nejděte rozdíly",
+  "Feature1Desc": "Vyberte si libovolný dokument z cloudového úložiště, adresy URL nebo souboru v počítači a podívejte se, v čem se tento dokument liší od aktuálního souboru.",
+
+  "Feature2Title": "Procházejte zvýrazněné změny",
+  "Feature2Desc": "Funkce Porovnání dokumentů umožňuje porovnat dva wordovské dokumenty a zvýraznit rozdíly pomocí režimu Sledování změn. Procházejte soubory a rychle si prohlédněte dokument se všemi přijatými nebo zamítnutými opravami pomocí režimů zobrazení.",
+
+  "Feature3Title": "Spojujte verze souborů",
+  "Feature3Desc": "Přijímejte nebo zamítejte změny jednotlivě nebo hromadně, slučujte dokumenty a dokončete verzi porovnávaného souboru.",
+
+  "Feature4Title": "Procházejte historii verzí",
+  "Feature4Desc": "Porovnávejte aktuální a předchozí verze dokumentu, obnovte dokument v libovolném bodě jeho historie a najděte náhodně ztracený obsah. Využijte zobrazení dat, časů a autorů revizí dokumentu.",
+
+  "Feature5Title": "Kombinujte dokumenty",
+  "Feature5Desc": "Kombinování dokumentů je podobné porovnávání. Při kombinování dvou dokumentů však původní nevyřešené sledované změny po něčí kontrole zůstanou ve sloučeném souboru a vy je budete moci v případě potřeby přijmout nebo odmítnout."
+}

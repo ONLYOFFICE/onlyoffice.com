@@ -26,12 +26,11 @@ const LearnMore = () => {
               className="blog-card"
               key={index}
               imgUrl={t(item.imgUrl)}
-              heading={{ label: t(item.heading.label) }}
+              heading={{ label: t2(item.heading.label) }}
               text={t(item.text ?? "")}
               links={item.links?.map((item) => ({
                 href: t(item.href),
                 label: t2(item.label),
-                isExternal: item.isExternal,
               }))}
             />
           ))}

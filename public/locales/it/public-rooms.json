@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Semplifica la condivisione di file con utenti esterni nelle stanze pubbliche",
+  "PageDescription": "Interagisci facilmente con soggetti terzi in ONLYOFFICE DocSpace. Integra le stanze pubbliche in qualsiasi interfaccia web",
+
+  "SimplifyFileSharingWithExternalUsers": "Semplifica la condivisione di file con utenti esterni nelle <0>stanze pubbliche</0>",
+  "EasilyInteractWithThirdParties": "Interagisci facilmente con soggetti terzi in ONLYOFFICE DocSpace",
+  "IdealForPublicSharing": "Ideale per la condivisione pubblica",
+  "AbsolutelySafe": "Assolutamente sicuro per i tuoi file d'ufficio",
+  "EasyToStore": "Facile da archiviare dove vuoi",
+  "SeamlesslyEmbeddable": "Perfettamente integrabile",
+  "CostEffectiveForAnyBudget": "Conveniente per qualsiasi budget",
+  "CreateFreeAccount": "Crea un account gratuito",
+
+  "HeroImgUrl": "/images/templates/public-rooms/hero/public-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/public-rooms/hero/public-rooms-header@2x.png",
+
+  "HeroImgUrlVideo": "/images/templates/public-rooms/hero/public-rooms-video.png",
+  "HeroImgUrlVideo2x": "/images/templates/public-rooms/hero/public-rooms-video@2x.png",
+
+  "PublicSharingDesc": "Invita gli utenti che non hanno accesso diretto al tuo DocSpace, come partner, sponsor, subappaltatori e così via, tramite link esterni per consentire loro di visualizzare, modificare, rivedere e commentare i file senza registrazione.",
+  "PublicSharingImgUrl": "/images/templates/public-rooms/features/ideal-for-public-sharing.png",
+  "PublicSharingImgUrl2x": "/images/templates/public-rooms/features/ideal-for-public-sharing@2x.png",
+
+  "AbsolutelySafeDesc": "Per una protezione extra, imposta una password e limita il link in base al periodo di tempo, limita la copia del contenuto, il download e la stampa dei file.",
+  "AbsolutelySafeImgUrl": "/images/templates/public-rooms/features/absolutely-safe.png",
+  "AbsolutelySafeImgUrl2x": "/images/templates/public-rooms/features/absolutely-safe@2x.png",
+
+  "EasyToStoreDesc": "Utilizza servizi di terze parti come archiviazione dati per le tue stanze pubbliche: Google Drive, One Drive, Box, Dropbox, kDrive, Nextcloud, ownCloud e altri utilizzando il protocollo WebDAV.",
+  "EasyToStoreImgUrl": "/images/templates/public-rooms/features/easy-to-store-where-you-want.png",
+  "EasyToStoreImgUrl2x": "/images/templates/public-rooms/features/easy-to-store-where-you-want@2x.png",
+
+  "SeamlesslyEmbeddableDesc": "Integra facilmente le sale pubbliche in qualsiasi interfaccia web. In questo modo, gli utenti del tuo sito web o servizio potranno accedere ai file della stanza direttamente dal frontend web.",
+  "SeamlesslyEmbeddableImgUrl": "/images/templates/public-rooms/features/seamlessly-embeddable.png",
+  "SeamlesslyEmbeddableImgUrl2x": "/images/templates/public-rooms/features/seamlessly-embeddable@2x.png",
+
+  "CostEffectiveDesc": "Paga solamente per gli amministratori e aggiungi quanti utenti regolari e ospiti tu voglia gratuitamente. Approfitta di un piano Startup gratuito per piccoli team. ONLYOFFICE DocSpace è adatto a tutte le aziende, non importa se si tratta di PMI o di una grande impresa. Vuoi avere il pieno controllo sui tuoi dati aziendali? Implementa DocSpace sul tuo server privato.",
+  "CostEffectiveImgUrl": "/images/templates/public-rooms/features/cost-effective-for-any-budget.png",
+  "CostEffectiveImgUrl2x": "/images/templates/public-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Ulteriori informazioni sulle stanze pubbliche di DocSpace",
+  "Blog": "Blog",
+  "BlogDesc": "Come incorporare una stanza pubblica nel tuo sito web",
+  "LearnMore": "Scopri di più",
+  "BlogLink": "https://www.onlyoffice.com/blog/it/2023/12/incorporare-stanza-docspace-nel-sito",
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Padroneggia ONLYOFFICE DocSpace con le guide video",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Guarda ora",
+  "Tutorial": "Tutorial",
+  "TutorialDesc": "Come integrare DocSpace in un'applicazione a pagina singola",
+  "HelpCenterLink": "https://www.onlyoffice.com/blog/it/2024/05/integrazione-di-docspace-in-spa"
+}

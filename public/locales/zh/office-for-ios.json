@@ -14,8 +14,6 @@
   "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/zh/hero-phone.png",
   "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/zh/hero-phone-2x.png",
 
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.zh.svg",
-
   "FeaturesItemHeadingFull": "功能齐全的文本处理器",
   "FeaturesItemTextMakeUse": "涵盖多个文本处理工具：页面、段落和文本格式、表格、自动形状、图表等。可创建任何大小和复杂程度的文本文档。通过AirPrint直接打印。",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/zh/img-tablet-1.png",
