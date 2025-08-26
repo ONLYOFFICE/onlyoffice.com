@@ -11,101 +11,17 @@ import {
     StyledWrapperRightBlockHeading,
     StyledWrapperRightBlockText,
     StyledButton,
-    StyledQuoteModal,
 } from "./GettingStarted.styled";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
-import {
-    IQuoteModalApiRequest, 
-    IQuoteModalFormData, 
-    IQuoteModalPipedriveRequest, 
-    IQuoteModalSendEmailRequest, 
-    QuoteModal
-} from "@src/components/widgets/pricing/QuoteModal";
+import { CardForm } from "./sub-components/CardForm";
 import { useState } from "react";
+import { ICardDatasheetsItemsProps } from "./GettingStarted.types";
+import { ILocale } from "@src/types/locale";
 
-const GettingStarted = () => {
-    const { t } = useTranslation("private-rooms");
-
-    const initialQuoteFormData: IQuoteModalFormData = {
-        fullName: "",
-        email: "",
-        phone: "hidden",
-        companyName: "",
-        hCaptcha: null,
-      };
-
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [quoteFormData, setQuoteFormData] = useState(initialQuoteFormData);
-
-    const apiRequest = async ({
-        from,
-        utmSource,
-        utmCampaign,
-        utmContent,
-        utmTerm,
-    }: IQuoteModalApiRequest) => {
-        const response = await fetch("/api/private-rooms", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            fullName: quoteFormData.fullName,
-            email: quoteFormData.email,
-            companyName: quoteFormData.companyName,
-            from,
-            utmSource,
-            utmCampaign,
-            utmContent,
-            utmTerm,
-          }),
-        });
-    
-        return response.json();
-      };
-
-    const sendEmailRequest = async ({
-        from,
-        errorFlag,
-        utmCampaignFlag,
-        errorText
-    }: IQuoteModalSendEmailRequest) => {
-        const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            from,
-            errorFlag,
-            utmCampaignFlag,
-            errorText
-        }),
-        });
-
-        return response.json();
-    };
-
-    const pipedriveRequest = async ({
-        _ga,
-        utmSource,
-        utmCampaign,
-        title,
-        region,
-        from
-    } : IQuoteModalPipedriveRequest) => {
-        const response = await fetch("/api/pipedrive", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            _ga,
-            title,
-            region,
-            from,
-            ...(utmSource && { utmSource }),
-            ...(utmCampaign && { utmCampaign })
-        }),
-        });
-    
-        return response.json();
-      };
+const GettingStarted = ({ download_url, locale }: ICardDatasheetsItemsProps & ILocale) => {
+  const { t } = useTranslation("private-rooms");
+  const [openModal, setOpenModal] = useState(false);
 
     return(
         <StyledSection>
@@ -143,51 +59,19 @@ const GettingStarted = () => {
                             label={t(items.btnText)}
                             fullWidth
                             variant="tertiary"
-                            onClick={() => setIsModalOpen(true)}
+                            onClick={() => setOpenModal(true)}
                             />
                         </StyledWrapperRightBlock>
                     </StyledGettingStartedWrapperRight>
                 </StyledGettingStartedWrapper>
-                <StyledQuoteModal>
-                <QuoteModal
-                isOpen={isModalOpen}
-                heading={t("FillOutThisForm")}
-                byClickedText={
-                <Trans
-                    t={t}
-                    i18nKey="GetItNowText"
-                    components={[
-                    <Link
-                        key="0"
-                        href="https://help.onlyoffice.co/Products/Files/doceditor.aspx?fileid=6615734&doc=cy9XcGc5TXNONjVTMkNrR2NZUEVTT2E1Y1FDZGVRQ1YvOTJYTnpkZ3JEWT0_IjY2MTU3MzQi0"
-                        target="_blank"
-                        color="main"
-                        textUnderline
-                        hover="underline-none"
-                    />,
-                    <Link
-                        key="1"
-                        href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261"
-                        target="_blank"
-                        color="main"
-                        textUnderline
-                        hover="underline-none"
-                    />,
-                    ]}
-                />
-                }
-                initialFormData={{}}
-                initialQuoteFormData={initialQuoteFormData}
-                setFormData={()=> {}}
-                quoteFormData={quoteFormData}
-                setQuoteFormData={setQuoteFormData}
-                buttonLabel={t("Download")}
-                apiRequest={apiRequest}
-                sendEmailRequest={sendEmailRequest}
-                pipedriveRequest={pipedriveRequest}
-                onClose={() => setIsModalOpen(false)}
-                />
-                </StyledQuoteModal>
+                {openModal && (
+                    <CardForm
+                    openModal={openModal}
+                    setOpenModal={setOpenModal}
+                    download_url={download_url}
+                    locale={locale}
+                    />
+                )}
             </Container>
         </StyledSection>
     )
