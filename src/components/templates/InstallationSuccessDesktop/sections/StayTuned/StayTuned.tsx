@@ -69,7 +69,7 @@ const StayTuned = () => {
         setStatus("error");
         setErrorMessage(data.message);
       }
-    } catch (error) {
+    } catch {
       setStatus("error");
     } finally {
       setTimeout(resetForm, 2500);

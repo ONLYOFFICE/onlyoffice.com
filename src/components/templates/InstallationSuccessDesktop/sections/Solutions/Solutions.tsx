@@ -7,8 +7,6 @@ import {
   StyledSolution,
   StyledSolutionImage,
   StyledSolutionContent,
-  StyledSolutionTitle,
-  StyledSolutionLink,
 } from "./Solutions.styled";
 import { solutionsItems } from "./data/items";
 import { Link } from "@src/components/ui/Link";

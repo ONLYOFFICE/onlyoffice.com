@@ -7,7 +7,8 @@ interface ISolution {
   image: string;
 }
 
-export const solutionsItems = [
+export const solutionsItems: ISolution[] = [
+  
   {
     title: "Cloud",
     link: {
