@@ -46,6 +46,7 @@ const StyledGetAccessButtonsLink = styled(Link)<{
   gap: 8px;
   height: 100%;
   padding: 16px 12px;
+  white-space: nowrap;
   cursor: pointer;
 
   &::before {

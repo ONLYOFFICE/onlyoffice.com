@@ -29,11 +29,13 @@ const StyledFreeCloudLogo = styled.div`
 `;
 
 const StyledFreeCloudHeading = styled(Heading)`
-  margin-bottom: 16px;
+  max-width: 640px;
+  margin: 0 auto 16px;
 `;
 
 const StyledFreeCloudText = styled(Text)`
-  margin-bottom: 16px;
+  max-width: 640px;
+  margin: 0 auto 16px;
 
   @media ${device.mobile} {
     font-size: 13px;
