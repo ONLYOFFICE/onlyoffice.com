@@ -13,6 +13,8 @@ import {
   StyledDiscoverHeading,
   StyledDiscoverProgressBar,
   StyledDiscoverProgressBarHandle,
+  StyledDiscoverProgressFirstYear,
+  StyledDiscoverProgressLastYear,
   StyledDiscoverProgressWrapper,
   StyledDiscoverSlide,
   StyledDiscoverSlideHeading,
@@ -26,6 +28,8 @@ const SWIPER_SPEED = 300;
 
 const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
   const { t } = useTranslation("about");
+
+  console.log(abouts);
 
   const progressRef = useRef<HTMLDivElement>(null);
   const barRef = useRef<HTMLDivElement>(null);
@@ -68,12 +72,12 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
     if (!swiperRef.current || !barRef.current || !barHandle.current) return;
 
     const progress = swiperRef.current.progress;
-    barRef.current.style.transform = `scaleX(${progress})`;
-
     const currentWidth = widthRef.current;
-    if (currentWidth === 0) return;
 
+    if (currentWidth === 0) return;
     const pixelOffset = progress * currentWidth;
+
+    barRef.current.style.width = `${pixelOffset}px`;
     barHandle.current.style.transform = `translateX(${pixelOffset}px)`;
   }, []);
 
@@ -192,8 +196,16 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
         </Swiper>
 
         <StyledDiscoverProgressWrapper ref={progressRef} onMouseDown={handleMouseDown}>
+          <StyledDiscoverProgressFirstYear
+            label={uniqueYears.at(0)}
+            size={4}
+          />
           <StyledDiscoverProgressBar ref={barRef} />
           <StyledDiscoverProgressBarHandle ref={barHandle} />
+          <StyledDiscoverProgressLastYear
+            label={uniqueYears.at(-1)}
+            size={4}
+          />
         </StyledDiscoverProgressWrapper>
       </StyledDiscoverWrapper>
     </Section>

@@ -77,13 +77,29 @@ const StyledDiscoverProgressWrapper = styled.div`
   pointer-events: none;
 `;
 
+const StyledDiscoverProgressFirstYear = styled(Text)`
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  transform: translateY(-50%);
+`;
+
+const StyledDiscoverProgressLastYear = styled(Text)`
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -45px;
+  transform: translateY(-50%);
+`;
+
 const StyledDiscoverProgressBar = styled.div`
   height: 100%;
   background: orange;
   transform-origin: left;
-  transform: scaleX(0);
   transition: transform 0.05s linear;
   pointer-events: none;
+  will-change: width;
 `;
 
 const StyledDiscoverProgressBarHandle = styled.div`
@@ -116,8 +132,10 @@ export {
   StyledDiscoverSlideHeading,
   StyledDiscoverSlideText,
   StyledDiscoverProgressWrapper,
+  StyledDiscoverProgressFirstYear,
   StyledDiscoverProgressBar,
   StyledDiscoverProgressBarHandle,
+  StyledDiscoverProgressLastYear,
   StyledDiscoverYearList,
   StyledDiscoverYearItem
 };
