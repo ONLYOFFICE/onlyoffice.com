@@ -10,8 +10,6 @@ import {
   StyledSignUpCaption,
 } from "./SignUp.styled";
 import { ISignUp } from "./SignUp.types";
-import { ISelectOption } from "@src/components/ui/Select/Select.types";
-import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { useRewardful } from "@src/utils/useRewardful";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { Heading } from "@src/components/ui/Heading";
@@ -21,27 +19,13 @@ import { Checkbox } from "@src/components/ui/Checkbox";
 import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
-import { Select } from "@src/components/ui/Select";
-import { awsRegions } from "../../../config/regions";
 
-const currentRegions =
-  process.env.NEXT_PUBLIC_TESTING_ON === "true"
-    ? awsRegions.testRegions
-    : process.env.NEXT_PUBLIC_TESTING_ON === "false"
-      ? awsRegions.productionRegions
-      : [];
-const options = currentRegions.map((region) => ({
-  key: region.key,
-  label: region.info,
-  value: region.apiKey,
-}));
 
 const SignUp = ({
   setEmail,
   setStatus,
 }: ISignUp) => {
   const { t } = useTranslation("docs-registration");
-  const { IPGeolocationInfo, setIPGeolocationInfo } = useIPGeolocationStore();
 
   const router = useRouter();
 
@@ -58,7 +42,6 @@ const SignUp = ({
   const [isFormValid, setIsFormValid] = useState(false);
   const [isFormLoading, setisFormLoading] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
-  const [selected, setSelected] = useState<ISelectOption[]>([]);
   const [token, setToken] = useState("");
 
   const emailIsValid =
@@ -128,7 +111,6 @@ const SignUp = ({
         email: formData.email,
         spam: formData.spam ? "true" : "false",
         language: router.locale === "en" ? "" : router.locale,
-        awsRegion: selected[0].value,
         partnerId: router.query.pid || "",
         affiliateId: affiliateId || "",
         emailSubject: {
@@ -149,32 +131,6 @@ const SignUp = ({
 
     setisFormLoading(false);
   };
-
-  useEffect(() => {
-    const setRegion = (regionKey?: string) => {
-      setSelected(
-        regionKey
-          ? options.filter((opt) => opt.key === regionKey)
-          : [options[0]],
-      );
-    };
-
-    if (IPGeolocationInfo.regionDbEntity.domain) {
-      setRegion(IPGeolocationInfo.regionDbEntity?.regionDbKey);
-      return;
-    }
-
-    (async () => {
-      const res = await fetch("/api/ip-geolocation");
-      const data = await res.json();
-      setRegion(data?.regionDbEntity?.regionDbKey);
-      setIPGeolocationInfo(data);
-    })();
-  }, [
-    IPGeolocationInfo.regionDbEntity.domain,
-    IPGeolocationInfo.regionDbEntity?.regionDbKey,
-    setIPGeolocationInfo,
-  ]);
 
   useEffect(() => {
     if (document.referrer) {
@@ -210,16 +166,6 @@ const SignUp = ({
             label={t("InviteUnlimitedNumberOfUsersAndGuestsForFree")}
           />
         </StyledSignUpHeader>
-
-        {process.env.NEXT_PUBLIC_TESTING_ON === "true" &&
-          selected.length > 0 && (
-            <Select
-              selected={selected}
-              setSelected={setSelected}
-              label="awsRegion"
-              options={options}
-            />
-          )}
 
         <StyledSignUpBox>
           <Input
