@@ -20,9 +20,9 @@ const DesktopTemplate = () => {
         title="CollaborationTitle"
         description="CollaborationDescription"
       />
-      <Quotes image="/images/templates/desktop/quotes/softpedia.svg" title="Softpedia" description="SoftpediaQuote" link="https://www.softpedia.com/reviews/onlyoffice-desktop-editors-review/" />
+      <Quotes image="/images/templates/desktop/quotes/softpedia.svg" title="Softpedia" description="SoftpediaQuote" link="https://mac.softpedia.com/get/Word-Processing/ONLYOFFICE.shtml," />
       <DocumentEncryption />
-      <Quotes image="/images/templates/desktop/quotes/softlay.svg" title="Softlay" description="SoftlayQuote" link="https://www.softlay.com/reviews/onlyoffice-desktop-editors-review/" />
+      <Quotes image="/images/templates/desktop/quotes/softlay.svg" title="Softlay" description="SoftlayQuote" link="https://www.softlay.com/downloads/onlyoffice" />
       <IntegrationsBlock
         image="AIImgUrl"
         image2x="AIImgUrl2x"
