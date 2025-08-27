@@ -120,7 +120,7 @@ const SignUp = ({
       return;
     }
 
-    const res = await fetch("/api/thirdparty/sendemail", {
+    const res = await fetch("/api/docs-registration", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
