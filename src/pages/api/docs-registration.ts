@@ -1,7 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { parse } from "cookie";
 import { getDisplayNameWithoutParentheses } from "@src/utils/getDisplayNameWithoutParentheses";
-import { addLandingRequest } from "@src/lib/requests/addLandingRequest";
+import { addDocsRegistrationRequest } from "@src/lib/requests/addDocsRegistrationRequest";
 import { emailTransporter } from "@src/config/email/transporter";
 import { DocsRegistrationRequestEmail } from "@src/components/emails/DocsRegistrationRequestEmail";
 
@@ -31,15 +30,16 @@ export default async function handler(
     phone,
     tariffPlan,
     docPlatform,
-    locale,
     affiliateId,
     affiliateToken,
     from,
+    languageCode,
+    language,
+    referer
   } = req.body;
 
   try {
     const errorMessages = [];
-    const cookies = parse(req.headers.cookie || "");
 
     const webPaymentRequest = async () => {
       try {
@@ -49,8 +49,8 @@ export default async function handler(
           Phone: phone,
           TariffPlan: tariffPlan,
           Platform: docPlatform,
-          LanguageCode: getDisplayNameWithoutParentheses(locale),
-          Language: locale,
+          LanguageCode: getDisplayNameWithoutParentheses(languageCode),
+          Language: language,
           AffiliateId: affiliateId,
           AffiliateToken: affiliateToken,
         };
@@ -88,35 +88,22 @@ export default async function handler(
     }
 
     if (referer) {
-      const addLandingResult = await addLandingRequest({
+      const addDocsRegistrationResult = await addDocsRegistrationRequest({
         first_name: fullName,
         last_name: "",
         email,
         phone,
-        operating_system: null,
-        company_name: companyName,
-        company_size: null,
-        position: null,
+        tariff_plan: tariffPlan,
+        platform: docPlatform,
         ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
-        fromPage: from,
-        utm_source: cookies.utm_source || null,
-        utm_campaign: cookies.utm_campaign || null,
-        utm_content: cookies.utm_content || null,
-        utm_term: cookies.utm_term || null,
+        lang: languageCode,
         create_on: new Date(),
         spam: 0,
         calls: 1,
-        ownerId: null,
-        coupon: null,
-        region: null,
-        portal_id: null,
-        source: null,
-        choice_language: "",
-        website,
       });
 
-      if (addLandingResult?.status === "error") {
-        errorMessages.push(`landingRequest: ${addLandingResult?.message}`);
+      if (addDocsRegistrationResult?.status === "error") {
+        errorMessages.push(`landingRequest: ${addDocsRegistrationResult?.message}`);
       }
     }
 
@@ -130,8 +117,8 @@ export default async function handler(
         email,
         phone,
         tariffPlan,
-        platform,
-        languageCode: locale,
+        platform: docPlatform,
+        languageCode,
         affiliateId,
         affiliateToken,
         errorText: errorMessages.join("<br/><br/>"),

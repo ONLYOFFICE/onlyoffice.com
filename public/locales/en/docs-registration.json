@@ -49,7 +49,5 @@
   "YourEmail": "Your email:",
   "IfAUserWithThisEmailExists": "If a user with this email exists, the password change instruction has been sent to this email address.",
   "NoThirdPartyAccountFound": "No third party account found",
-  "YourConfirmationLinkForOODocSpace": "Your confirmation link for ONLYOFFICE DocSpace",
-  "YourLoginLinkToOODocSpace": "Your login link to ONLYOFFICE DocSpace",
   "OOPasswordReminder": "ONLYOFFICE Password Reminder"
 }

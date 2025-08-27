@@ -12,6 +12,7 @@ import {
 import { ISignUp } from "./SignUp.types";
 import { useRewardful } from "@src/utils/useRewardful";
 import { validateFullName, validateEmail } from "@src/utils/validators";
+import { getFromParam } from "@src/utils/getParams";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
@@ -26,10 +27,17 @@ const SignUp = ({
   setStatus,
 }: ISignUp) => {
   const { t } = useTranslation("docs-registration");
+  const from = getFromParam();
 
   const router = useRouter();
 
-  const [affiliateId, setAffiliateId] = useState("");
+  const [affiliate, setAffiliate] = useState<{
+    id?: string;
+    token?: string;
+  }>({
+    id: "",
+    token: "",
+  });
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -44,16 +52,18 @@ const SignUp = ({
   const [isFormError, setIsFormError] = useState(false);
   const [token, setToken] = useState("");
 
-  const emailIsValid =
-    formData.email.trim().length > 0 && validateEmail(formData.email);
+  const emailIsValid = formData.email.trim().length > 0 && validateEmail(formData.email);
 
-  const { getClientReferenceId } = useRewardful({
+  const { getClientReferenceId, getAffiliateToken } = useRewardful({
     onReady: () => {
       const id = getClientReferenceId();
+      const token = getAffiliateToken();
 
-      if (id && id !== affiliateId) {
-        setAffiliateId(id);
-      }
+      setAffiliate((prev) =>
+        prev.id === id && prev.token === token
+          ? prev
+          : { id, token },
+      );
     },
   });
 
@@ -68,22 +78,19 @@ const SignUp = ({
     }));
   };
 
-  const checkFormValid = () => {
-    setIsFormValid(emailIsValid);
+  const checkFormValid = (newToken?: string | null) => {
+    const tokenValue = newToken || "";
+    setIsFormValid(emailIsValid && !!tokenValue.length);
     setIsFormError(false);
   };
 
   const handleHCaptchaChange = (token: string | null) => {
-    if (token) {
-      setToken(token);
-    } else {
-      setToken("");
-      setIsFormValid(false);
-    }
+    setToken(token || "");
+    checkFormValid(token);
   };
 
   const onSubmit = async () => {
-    if (!emailIsValid) {
+    if (!emailIsValid || !token.length) {
       return;
     }
 
@@ -103,20 +110,31 @@ const SignUp = ({
       return;
     }
 
+    function getPostLang(locale: string) {
+      const displayName = new Intl.DisplayNames([locale], { type: "language" }).of(locale) || locale;
+
+      const idx = displayName.indexOf("(");
+      return idx === -1 ? displayName : displayName.substring(0, idx).trim();
+    }
+
+    const curLang = router.locale && router.locale !== "en" ? router.locale : "en";
+
     const res = await fetch("/api/docs-registration", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        desktop: router.query.desktop || "",
+        fullName: formData.fullName,
         email: formData.email,
+        phone: "",
+        tariffPlan: "", //TEMPOARY
+        docPlatform: "", //TEMPOARY
+        affiliateId: affiliate.id || "",
+        affiliateToken: affiliate.token || "",
         spam: formData.spam ? "true" : "false",
-        language: router.locale === "en" ? "" : router.locale,
-        partnerId: router.query.pid || "",
-        affiliateId: affiliateId || "",
-        emailSubject: {
-          register: t("YourConfirmationLinkForOODocSpace"),
-          login: t("YourLoginLinkToOODocSpace"),
-        },
+        languageCode: curLang,
+        language: getPostLang(curLang),
+        from,
+        referer: document.referrer,
       }),
     });
 
@@ -127,6 +145,9 @@ const SignUp = ({
       setStatus("checkEmail");
     } else {
       setIsFormError(true);
+      setTimeout(() => {
+        checkFormValid();
+      }, 5000);
     }
 
     setisFormLoading(false);
@@ -265,6 +286,7 @@ const SignUp = ({
             />
           </Text>
 
+          <div>
           <Button
             onClick={onSubmit}
             data-testid="docs-sign-up-button"
@@ -280,6 +302,7 @@ const SignUp = ({
           {isFormLoading && (
             <StyledSignUpCaption>{t("PleaseWait")}</StyledSignUpCaption>
           )}
+          </div>
         </StyledSignUpBox>
 
       </StyledSignUpWrapper>
