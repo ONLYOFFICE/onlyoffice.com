@@ -4,11 +4,14 @@ import { useRouter } from "next/router";
 import { RoomsHeroVideo } from "@src/components/modules/rooms/RoomsHeroVideo";
 import { RoomsHero } from "@src/components/modules/rooms/RoomsHero";
 import { hero } from "./data/hero";
+import { ComparisonTable } from "@src/components/templates/CompareEditions/sections/ComparisonTable";
 
 const Hero = () => {
   const { t } = useTranslation("virtual-data-rooms");
   const router = useRouter();
   const { locale } = router;
+
+  console.log(hero.videoUrl)
 
   const heroProps = {
     heading: (

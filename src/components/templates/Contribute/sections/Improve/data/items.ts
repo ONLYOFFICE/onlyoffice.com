@@ -47,7 +47,7 @@ export const items: IImproveItemExtended[] = [
     },
     link: {
       label: "ReadAPIDocumentation",
-      href: "https://api.onlyoffice.com/docspace/plugins-sdk/get-started/basic-concepts/",
+      href: "api.onlyoffice.com/docspace/plugins-sdk/get-started/",
     },
   },
   {

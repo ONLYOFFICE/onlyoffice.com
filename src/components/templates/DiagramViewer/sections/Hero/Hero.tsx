@@ -13,7 +13,8 @@ import {
   StyledHeroNoWrapText,
   StyledHeroSection,
   StyledHeroSubHeading,
-  StyledHeroYouTubeWrapper
+  StyledHeroYouTubeWrapper,
+  StyledYouTubeCard
 } from "./Hero.styled";
 
 const Hero = () => {
@@ -66,7 +67,7 @@ const Hero = () => {
             </StyledHeroImageWrapper>
           ) : (
             <StyledHeroYouTubeWrapper>
-              <YouTubeCard
+              <StyledYouTubeCard
                 videoImgUrl={t("HeroYouTubeCoverHeader@2x")}
                 videoUrl={t("HeroYouTubeUrl")}
                 border={true}
