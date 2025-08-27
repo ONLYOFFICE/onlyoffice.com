@@ -1,14 +1,11 @@
-import { useRef, useEffect, useState, useCallback, useMemo } from 'react';
-import { Trans, useTranslation } from 'next-i18next';
-import SwiperCore from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Section } from '@src/components/ui/Section';
-import { discoverFormatDate } from './utils/discoverFormatDate';
-import { discoverFormatYear } from './utils/discoverFormatYear';
-import { IAbout, IAbouts } from '../../About.types';
+import { useEffect, useState, useMemo, useRef } from "react";
+import { Trans, useTranslation } from "next-i18next";
+import { Section } from "@src/components/ui/Section";
+import { discoverFormatDate } from "./utils/discoverFormatDate";
+import { discoverFormatYear } from "./utils/discoverFormatYear";
+import { IAbout, IAbouts } from "../../About.types";
 import { ILocale } from "@src/types/locale";
 
-import 'swiper/css';
 import {
   StyledDiscoverHeading,
   StyledDiscoverProgressBar,
@@ -16,198 +13,282 @@ import {
   StyledDiscoverProgressFirstYear,
   StyledDiscoverProgressLastYear,
   StyledDiscoverProgressWrapper,
-  StyledDiscoverSlide,
   StyledDiscoverSlideHeading,
   StyledDiscoverSlideText,
   StyledDiscoverWrapper,
-  StyledDiscoverYearItem,
-  StyledDiscoverYearList,
-} from './Discover.styled';
-
-const SWIPER_SPEED = 300;
+  StyledDiscoverYearBlock,
+  StyledDiscoverTop,
+  StyledDiscoverTopYearText,
+  StyledDiscoverBotList,
+  StyledDiscoverBotItem,
+} from "./Discover.styled";
 
 const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
   const { t } = useTranslation("about");
-
-  console.log(abouts);
-
-  const progressRef = useRef<HTMLDivElement>(null);
-  const barRef = useRef<HTMLDivElement>(null);
-  const barHandle = useRef<HTMLDivElement>(null);
-  const swiperRef = useRef<SwiperCore | null>(null);
-  const widthRef = useRef(0);
-
-  const [isDragging, setIsDragging] = useState(false);
   const [items, setItems] = useState<IAbout[]>([]);
-  const [progressBarWidth, setProgressBarWidth] = useState(0);
+
+  const wrapperRef = useRef<HTMLDivElement | null>(null);
+  const dragState = useRef({
+    isDown: false,
+    isDragging: false,
+    startX: 0,
+    scrollLeft: 0,
+  });
+
+  useEffect(() => {
+    const wrapper = wrapperRef.current;
+    if (!wrapper) return;
+
+    const handleMouseDown = (e: MouseEvent) => {
+      e.preventDefault();
+      dragState.current.isDown = true;
+      dragState.current.isDragging = false;
+      dragState.current.startX = e.pageX - wrapper.offsetLeft;
+      dragState.current.scrollLeft = wrapper.scrollLeft;
+    };
+
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!dragState.current.isDown) return;
+
+      const x = e.pageX - wrapper.offsetLeft;
+      const walk = x - dragState.current.startX;
+
+      if (Math.abs(walk) > 5) {
+        dragState.current.isDragging = true;
+      }
+
+      if (dragState.current.isDragging) {
+        wrapper.scrollLeft = dragState.current.scrollLeft - walk;
+      }
+    };
+
+    const handleMouseUp = (e: MouseEvent) => {
+      if (!dragState.current.isDown) return;
+
+      const wasDragging = dragState.current.isDragging;
+
+      dragState.current.isDown = false;
+      dragState.current.isDragging = false;
+
+      if (!wasDragging) {
+        const target = e.target;
+        if (target instanceof Element) {
+          const targetSection = target.closest(".slide") as HTMLElement | null;
+          if (targetSection) {
+            wrapper.scrollTo({
+              left: targetSection.offsetLeft,
+              behavior: "smooth"
+            });
+          }
+        }
+      }
+    };
+
+    const handleMouseLeaveAndBlur = () => {
+      dragState.current.isDown = false;
+      dragState.current.isDragging = false;
+    };
+
+    wrapper.addEventListener("mousedown", handleMouseDown);
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mouseup", handleMouseUp);
+    wrapper.addEventListener("mouseleave", handleMouseLeaveAndBlur);
+    window.addEventListener("blur", handleMouseLeaveAndBlur);
+
+    return () => {
+      wrapper.removeEventListener("mousedown", handleMouseDown);
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mouseup", handleMouseUp);
+      wrapper.removeEventListener("mouseleave", handleMouseLeaveAndBlur);
+      window.removeEventListener("blur", handleMouseLeaveAndBlur);
+    };
+  }, []);
 
   useEffect(() => {
     setItems(abouts.data);
   }, [abouts]);
 
-  useEffect(() => {
-    const progressEl = progressRef.current;
-    if (progressEl) {
-      const updateWidth = () => {
-        const newWidth = progressEl.getBoundingClientRect().width;
-        setProgressBarWidth(newWidth);
-        widthRef.current = newWidth;
-      };
-
-      updateWidth();
-      window.addEventListener('resize', updateWidth);
-
-      return () => {
-        window.removeEventListener('resize', updateWidth);
-      };
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!swiperRef.current) return;
-    swiperRef.current.slideTo(0, 0);
-  }, [items]);
-
-  const updateProgress = useCallback(() => {
-    if (!swiperRef.current || !barRef.current || !barHandle.current) return;
-
-    const progress = swiperRef.current.progress;
-    const currentWidth = widthRef.current;
-
-    if (currentWidth === 0) return;
-    const pixelOffset = progress * currentWidth;
-
-    barRef.current.style.width = `${pixelOffset}px`;
-    barHandle.current.style.transform = `translateX(${pixelOffset}px)`;
-  }, []);
-
-  useEffect(() => {
-    if (progressBarWidth > 0) {
-      updateProgress();
-    }
-  }, [progressBarWidth, updateProgress]);
-
-  const handleSeek = useCallback((clientX: number) => {
-    const progressEl = progressRef.current;
-    const swiper = swiperRef.current;
-    if (!progressEl || !swiper) return;
-
-    const { left, width } = progressEl.getBoundingClientRect();
-    const percent = Math.min(Math.max((clientX - left) / width, 0), 1);
-
-    swiper.setProgress(percent, 0);
-    updateProgress();
-  }, [updateProgress]);
-
-  const handleMouseDown = (e: React.MouseEvent) => {
-    e.preventDefault();
-    if (barHandle.current) {
-      barHandle.current.style.transition = 'none';
-    }
-    setIsDragging(true);
-    handleSeek(e.clientX);
-  };
-
-  const handleMouseMove = useCallback((e: MouseEvent) => {
-    if (!isDragging) return;
-    handleSeek(e.clientX);
-  }, [isDragging, handleSeek]);
-
-  const handleMouseUp = useCallback(() => {
-    if (!isDragging) return;
-    if (barHandle.current) {
-      barHandle.current.style.transition = `transform ${SWIPER_SPEED}ms ease`;
-    }
-    setIsDragging(false);
-
-    const swiper = swiperRef.current;
-    if (swiper && swiper.slides.length > 0) {
-      const targetIndex = Math.round(swiper.progress * (swiper.slides.length - 1));
-      swiper.slideTo(targetIndex, SWIPER_SPEED);
-    }
-  }, [isDragging]);
-
-  useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mouseup", handleMouseUp);
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseup", handleMouseUp);
-    };
-  }, [isDragging, handleMouseMove, handleMouseUp]);
-
   const uniqueYears = useMemo(() =>Array.from(new Set(
     items.map((item) => discoverFormatYear(item.date))
   )), [items]);
 
-  console.log(uniqueYears)
-
   return (
-    <Section background='#F5F5F5'>
-      <StyledDiscoverHeading label={t("DiscoverHeading")} level={2} size={3} textAlign='center' />
-      <StyledDiscoverWrapper>
-        <StyledDiscoverYearList>
-          {uniqueYears.map((year) => (
-            <StyledDiscoverYearItem
-              key={year}
-              label={year}
-              size={2}
-              color='main'
-            />
-          ))}
-        </StyledDiscoverYearList>
-        <Swiper
-          slidesPerView="auto"
-          centeredSlides={true}
-          slideToClickedSlide={true}
-          speed={SWIPER_SPEED}
-          onSwiper={(swiper) => {
-            swiperRef.current = swiper;
-            swiper.on('progress', updateProgress);
-            swiper.on('init', updateProgress);
-            swiper.on('slideChangeTransitionStart', () => {
-              if (barHandle.current) {
-                barHandle.current.style.transition = `transform ${SWIPER_SPEED}ms ease`;
-              }
-            });
-          }}
-        >
-          {items.map((item) => (
-            <SwiperSlide key={item.id}>
-              <StyledDiscoverSlide>
-                <StyledDiscoverSlideHeading
-                  label={discoverFormatDate(item.date, locale)}
-                  level={3}
-                  size={5}
-                  color='#424242'
-                />
-                <StyledDiscoverSlideText>
-                  <Trans
-                    t={t}
-                    i18nKey={item.description}
-                    components={{
-                      p: <p />
-                    }}
-                  />
-                </StyledDiscoverSlideText>
-              </StyledDiscoverSlide>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+    <Section background="#F5F5F5">
+      <StyledDiscoverHeading
+        label={t("DiscoverHeading")}
+        level={2}
+        size={3}
+        textAlign="center"
+      />
 
-        <StyledDiscoverProgressWrapper ref={progressRef} onMouseDown={handleMouseDown}>
-          <StyledDiscoverProgressFirstYear
-            label={uniqueYears.at(0)}
-            size={4}
-          />
-          <StyledDiscoverProgressBar ref={barRef} />
-          <StyledDiscoverProgressBarHandle ref={barHandle} />
-          <StyledDiscoverProgressLastYear
-            label={uniqueYears.at(-1)}
-            size={4}
-          />
-        </StyledDiscoverProgressWrapper>
+      <StyledDiscoverWrapper ref={wrapperRef}>
+        <StyledDiscoverYearBlock className="year-block">
+          <StyledDiscoverTop>
+            <StyledDiscoverTopYearText
+              label="2025"
+              color="#f46c2e"
+            />
+          </StyledDiscoverTop>
+          <StyledDiscoverBotList>
+            <StyledDiscoverBotItem className="slide">
+              <StyledDiscoverSlideHeading
+                label={discoverFormatDate("2025-08-27", locale)}
+                level={3}
+                size={5}
+                color="#424242"
+              />
+              <StyledDiscoverSlideText>
+                <Trans
+                  t={t}
+                  i18nKey={"TeamLab launched. It all began with the Community module, an internal network with blogs, forums, wiki, etc."}
+                  components={{
+                    p: <p />
+                  }}
+                />
+              </StyledDiscoverSlideText>
+            </StyledDiscoverBotItem>
+            <StyledDiscoverBotItem>
+              <StyledDiscoverSlideHeading
+                label={discoverFormatDate("2025-08-27", locale)}
+                level={3}
+                size={5}
+                color="#424242"
+              />
+              <StyledDiscoverSlideText>
+                <Trans
+                  t={t}
+                  i18nKey={"TeamLab launched. It all began with the Community module, an internal network with blogs, forums, wiki, etc."}
+                  components={{
+                    p: <p />
+                  }}
+                />
+              </StyledDiscoverSlideText>
+            </StyledDiscoverBotItem>
+            <StyledDiscoverBotItem>
+              <StyledDiscoverSlideHeading
+                label={discoverFormatDate("2025-08-27", locale)}
+                level={3}
+                size={5}
+                color="#424242"
+              />
+              <StyledDiscoverSlideText>
+                <Trans
+                  t={t}
+                  i18nKey={"TeamLab launched. It all began with the Community module, an internal network with blogs, forums, wiki, etc."}
+                  components={{
+                    p: <p />
+                  }}
+                />
+              </StyledDiscoverSlideText>
+            </StyledDiscoverBotItem>
+            <StyledDiscoverBotItem>
+              <StyledDiscoverSlideHeading
+                label={discoverFormatDate("2025-08-27", locale)}
+                level={3}
+                size={5}
+                color="#424242"
+              />
+              <StyledDiscoverSlideText>
+                <Trans
+                  t={t}
+                  i18nKey={"TeamLab launched. It all began with the Community module, an internal network with blogs, forums, wiki, etc."}
+                  components={{
+                    p: <p />
+                  }}
+                />
+              </StyledDiscoverSlideText>
+            </StyledDiscoverBotItem>
+          </StyledDiscoverBotList>
+        </StyledDiscoverYearBlock>
+
+        <StyledDiscoverYearBlock>
+          <StyledDiscoverTop>
+            <StyledDiscoverTopYearText label="2026" color="#f46c2e" />
+          </StyledDiscoverTop>
+          <StyledDiscoverBotList>
+            <StyledDiscoverBotItem>
+              <StyledDiscoverSlideHeading
+                label={discoverFormatDate("2026-09-27", locale)}
+                level={3}
+                size={5}
+                color="#424242"
+              />
+              <StyledDiscoverSlideText>
+                <Trans
+                  t={t}
+                  i18nKey={"TeamLab launched. It all began with the Community module, an internal network with blogs, forums, wiki, etc."}
+                  components={{
+                    p: <p />
+                  }}
+                />
+              </StyledDiscoverSlideText>
+            </StyledDiscoverBotItem>
+            <StyledDiscoverBotItem>
+              <StyledDiscoverSlideHeading
+                label={discoverFormatDate("2025-08-27", locale)}
+                level={3}
+                size={5}
+                color="#424242"
+              />
+              <StyledDiscoverSlideText>
+                <Trans
+                  t={t}
+                  i18nKey={"TeamLab launched. It all began with the Community module, an internal network with blogs, forums, wiki, etc."}
+                  components={{
+                    p: <p />
+                  }}
+                />
+              </StyledDiscoverSlideText>
+            </StyledDiscoverBotItem>
+            <StyledDiscoverBotItem>
+              <StyledDiscoverSlideHeading
+                label={discoverFormatDate("2025-08-27", locale)}
+                level={3}
+                size={5}
+                color="#424242"
+              />
+              <StyledDiscoverSlideText>
+                <Trans
+                  t={t}
+                  i18nKey={"TeamLab launched. It all began with the Community module, an internal network with blogs, forums, wiki, etc."}
+                  components={{
+                    p: <p />
+                  }}
+                />
+              </StyledDiscoverSlideText>
+            </StyledDiscoverBotItem>
+            <StyledDiscoverBotItem>
+              <StyledDiscoverSlideHeading
+                label={discoverFormatDate("2025-08-27", locale)}
+                level={3}
+                size={5}
+                color="#424242"
+              />
+              <StyledDiscoverSlideText>
+                <Trans
+                  t={t}
+                  i18nKey={"TeamLab launched. It all began with the Community module, an internal network with blogs, forums, wiki, etc."}
+                  components={{
+                    p: <p />
+                  }}
+                />
+              </StyledDiscoverSlideText>
+            </StyledDiscoverBotItem>
+          </StyledDiscoverBotList>
+        </StyledDiscoverYearBlock>
       </StyledDiscoverWrapper>
+      <StyledDiscoverProgressWrapper>
+        <StyledDiscoverProgressFirstYear
+          label={uniqueYears.at(0)}
+          size={4}
+        />
+        <StyledDiscoverProgressBar />
+        <StyledDiscoverProgressBarHandle />
+        <StyledDiscoverProgressLastYear
+          label={uniqueYears.at(-1)}
+          size={4}
+        />
+      </StyledDiscoverProgressWrapper>
     </Section>
   );
 };

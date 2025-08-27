@@ -2,51 +2,62 @@ import styled from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+const CARD_WIDTH = "325px";
+
 const StyledDiscoverHeading = styled(Heading)`
   margin-bottom: 40px;
 `;
 
 const StyledDiscoverWrapper = styled.div`
-  max-width: 100%;
-  padding: 0 20px;
-  user-select: none;
+  width: 100%;
+  padding: 0 calc(50% - ${CARD_WIDTH} / 2) 50px;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
 
-  & .swiper-slide {
-    width: 300px;
+  &::-webkit-scrollbar {
+    display: none;
   }
 `;
 
-const StyledDiscoverSlide = styled.div`
-  height: 250px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  font-size: 24px;
-  border-radius: 8px;
+const StyledDiscoverYearBlock = styled.div`
+  flex-shrink: 0;
+`;
+
+const StyledDiscoverTop = styled.div`
+  width: 100%;
+  padding: 0 15px 20px 0;
+  box-sizing: border-box;
   position: relative;
-  cursor: pointer;
+`;
+
+const StyledDiscoverTopYearText = styled(Text)`
+  width: fit-content;
+  position: sticky;
+  left: 0;
+  top: 15px;
+  padding-right: calc(${CARD_WIDTH} - 50px);
+`;
+
+const StyledDiscoverBotList = styled.div`
+  display: flex;
+`;
+
+const StyledDiscoverBotItem = styled.div`
+  width: ${CARD_WIDTH};
+  border-top: 1px solid #ddd;
+  position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background: #afafaf;
     z-index: 1;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 4px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: #dadada;
-    z-index: 0;
   }
 `;
 
@@ -117,18 +128,14 @@ const StyledDiscoverProgressBarHandle = styled.div`
   pointer-events: visible;
 `;
 
-const StyledDiscoverYearList = styled.div`
-  display: flex;
-`;
-
-const StyledDiscoverYearItem = styled(Text)`
-
-`;
-
 export {
   StyledDiscoverHeading,
   StyledDiscoverWrapper,
-  StyledDiscoverSlide,
+  StyledDiscoverYearBlock,
+  StyledDiscoverTop,
+  StyledDiscoverTopYearText,
+  StyledDiscoverBotList,
+  StyledDiscoverBotItem,
   StyledDiscoverSlideHeading,
   StyledDiscoverSlideText,
   StyledDiscoverProgressWrapper,
@@ -136,6 +143,4 @@ export {
   StyledDiscoverProgressBar,
   StyledDiscoverProgressBarHandle,
   StyledDiscoverProgressLastYear,
-  StyledDiscoverYearList,
-  StyledDiscoverYearItem
 };
