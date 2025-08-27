@@ -30,14 +30,14 @@ const LeftTextImg = () => {
                 i18nKey="AutomationAPISsAPartOf"
                 components={[
                   <Link
-                    href="/developer-edition.aspx"
+                    href="/developer-edition"
                     color="main"
                     textUnderline
                     hover="underline-none"
                     key="0"
                   />,
                   <Link
-                    href="/developer-edition-prices.aspx"
+                    href="/developer-edition-prices"
                     color="main"
                     textUnderline
                     hover="underline-none"
@@ -58,7 +58,7 @@ const LeftTextImg = () => {
             <Button
               as="a"
               id="app-directory-for-developers"
-              href="/download-developer.aspx#docs-developer"
+              href="/download-developer#docs-developer"
               label={t("DownloadNow")}
             />
           </div>

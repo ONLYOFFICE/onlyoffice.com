@@ -3,6 +3,7 @@ import {
   StyledWhatContent,
   StyledWhatSubheading,
   StyledWhatHeading,
+  StyledCheckExamplesBtn,
 } from "./WhatIs.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
@@ -22,7 +23,10 @@ const WhatIs = () => {
     >
       <Container>
         <StyledWhatContent>
-          <img src='/images/templates/automation-api/what-is/automation_api.svg' alt="Image" />
+          <img
+            src="/images/templates/automation-api/what-is/automation_api.svg"
+            alt="Image"
+          />
           <StyledWhatHeading level={2} size={2}>
             <Trans
               t={t}
@@ -46,20 +50,24 @@ const WhatIs = () => {
               ]}
             />
           </StyledWhatSubheading>
-          <Link
-            href="#examples_block"
-            color="main"
-            textUnderline
-            hover="underline-none"
-            label={t("CheckExamples")}
-          />
+          <StyledCheckExamplesBtn
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("examples_block");
+              if (el) {
+                el.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+          >
+            {t("CheckExamples")}
+          </StyledCheckExamplesBtn>
           <WatchVideo
             heading={t("Webinar")}
             customLabel={t("WatchOurWebinar")}
             videoImgUrl="/images/templates/automation-api/what-is/automation_api_webinar.jpg"
             videoUrl="https://www.youtube.com/embed/d45OkcDZtNE"
           />
-          </StyledWhatContent>
+        </StyledWhatContent>
       </Container>
     </Section>
   );
