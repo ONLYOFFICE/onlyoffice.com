@@ -17,5 +17,5 @@ export const hero: IRoomsHeroVideo = {
     url: "HeroImgUrl",
     url2x: "HeroImgUrl2x",
   },
-  videoUrl: "https://www.youtube.com/watch?v=eZLuWwx8VVA",
+  videoUrl: "https://www.youtube.com/embed/eZLuWwx8VVA?si=qdnIB9vbSwAm_r4P",
 };
