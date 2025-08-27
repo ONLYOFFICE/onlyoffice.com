@@ -3,8 +3,8 @@ import { device } from "@src/utils/device";
 
 const StyledCheckEmail = styled.div`
   display: grid;
-  row-gap: 32px;
-  margin-top: 90px;
+  row-gap: 24px;
+  margin-top: 32px;
   width: 100%;
   max-width: 518px;
   text-align: center;
@@ -31,30 +31,8 @@ const StyledCheckEmailBanner = styled.div`
   background-color: #f8f9f9;
 `;
 
-const StyledCheckEmailLink = styled.button`
-  justify-self: center;
-  border: none;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ff6f3d;
-  background-color: transparent;
-  text-decoration: underline;
-  cursor: pointer;
-
-  &:hover {
-    text-decoration: none;
-  }
-
-  @media ${device.mobile} {
-    justify-self: initial;
-    text-align: center;
-  }
-`;
-
 export {
   StyledCheckEmail,
   StyledCheckEmailImage,
   StyledCheckEmailBanner,
-  StyledCheckEmailLink,
 };

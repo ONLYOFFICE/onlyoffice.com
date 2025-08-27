@@ -66,6 +66,16 @@ const StyledSignUpCaption = styled.div<{ $error?: boolean }>`
   }
 `;
 
+const StyledSuccessModal = styled.div`
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 16px 40px 32px;
+
+  @media ${device.tablet} {
+    padding: 16px 24px;
+  }
+`;
+
 export {
   StyledSignUpAccount,
   StyledSignUpAccountLink,
@@ -73,4 +83,5 @@ export {
   StyledSignUpHeader,
   StyledSignUpBox,
   StyledSignUpCaption,
+  StyledSuccessModal,
 };

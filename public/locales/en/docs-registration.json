@@ -34,8 +34,8 @@
   "PasswordIsEmpty": "Password is empty",
   "ThePasswordMustContainAtLeast8Characters": "The password must contain at least 8 characters",
   "CheckYourEmail": "Check your email!",
-  "WeVeJustSentYouAConfirmationLinkToYourEmail": "We've just sent you a confirmation link to your email: <0>{{email}}</0>",
-  "TheLinkIsValidFor60Minutes": "The link is valid for 60 minutes and can only be used once. <br /> If you didn't receive an email, please check your spam.",
+  "ALinkWillBeSentToTheSpecifiedAddress": "A link will be sent to the specified address to go to the admin page.",
+  "TheLinkIsValidFor60Minutes": "The link is valid for 60 minutes. If you didn't receive an email, please check your spam.",
   "BackToSignUp": "Back to Sign up",
 
   "TheRequestCouldNotBeSent": "The request could not be sent. Please try again later.",

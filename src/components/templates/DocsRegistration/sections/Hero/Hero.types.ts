@@ -11,6 +11,5 @@ export interface IHero {
 export type TStatus =
   | "login"
   | "signup"
-  | "checkEmail"
   | "chooseEmail"
   | "restorePassword";

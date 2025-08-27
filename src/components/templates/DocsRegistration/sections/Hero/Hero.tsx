@@ -10,7 +10,6 @@ import { IHero, TStatus } from "./Hero.types";
 import { Info } from "./sub-components/Info";
 import { SignUp } from "./sub-components/Auth/SignUp";
 import { LogIn } from "./sub-components/Auth/LogIn";
-import { CheckEmail } from "./sub-components/Auth/CheckEmail";
 import { RestorePassword } from "./sub-components/Auth/RestorePassword";
 
 const Hero = ({ tenants, queryParams }: IHero) => {
@@ -44,12 +43,9 @@ const Hero = ({ tenants, queryParams }: IHero) => {
             ) : status === "signup" ? (
               <SignUp
                 setEmail={setEmail}
-                setStatus={setStatus}
               />
             ) : status === "login" ? (
               <LogIn setExistTenants={setExistTenants} setStatus={setStatus} />
-            ) : status === "checkEmail" ? (
-              <CheckEmail email={email} setStatus={setStatus} />
             ) : status === "restorePassword" ? (
               <RestorePassword setStatus={setStatus} />
             ) : null}

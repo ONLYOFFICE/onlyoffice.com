@@ -8,8 +8,8 @@ import {
   StyledSignUpAccount,
   StyledSignUpAccountLink,
   StyledSignUpCaption,
+  StyledSuccessModal,
 } from "./SignUp.styled";
-import { ISignUp } from "./SignUp.types";
 import { useRewardful } from "@src/utils/useRewardful";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";
@@ -20,11 +20,16 @@ import { Checkbox } from "@src/components/ui/Checkbox";
 import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
+import { Modal } from "@src/components/ui/Modal";
+import { CheckEmail } from "../CheckEmail";
 
+
+export interface ISignUp {
+  setEmail: (email: string) => void;
+}
 
 const SignUp = ({
   setEmail,
-  setStatus,
 }: ISignUp) => {
   const { t } = useTranslation("docs-registration");
   const from = getFromParam();
@@ -51,6 +56,7 @@ const SignUp = ({
   const [isFormLoading, setisFormLoading] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
   const [token, setToken] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const emailIsValid = formData.email.trim().length > 0 && validateEmail(formData.email);
 
@@ -142,7 +148,7 @@ const SignUp = ({
 
     if (data.status === "success") {
       setEmail(formData.email);
-      setStatus("checkEmail");
+      setIsModalOpen(true);
     } else {
       setIsFormError(true);
       setTimeout(() => {
@@ -306,6 +312,12 @@ const SignUp = ({
         </StyledSignUpBox>
 
       </StyledSignUpWrapper>
+
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} maxWidth="544px" withCloseBtn positionCloseBtn="inside">
+        <StyledSuccessModal>
+          <CheckEmail setIsModalOpen={setIsModalOpen} />
+        </StyledSuccessModal>
+      </Modal>
     </>
   );
 };

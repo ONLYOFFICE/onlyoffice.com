@@ -3,13 +3,15 @@ import {
   StyledCheckEmail,
   StyledCheckEmailImage,
   StyledCheckEmailBanner,
-  StyledCheckEmailLink,
 } from "./CheckEmail.styled";
-import { ICheckEmail } from "./CheckEmail.types";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
-const CheckEmail = ({ email, setStatus }: ICheckEmail) => {
+export interface ICheckEmail {
+  setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const CheckEmail = ({ setIsModalOpen }: ICheckEmail) => {
   const { t } = useTranslation("docs-registration");
 
   return (
@@ -22,22 +24,13 @@ const CheckEmail = ({ email, setStatus }: ICheckEmail) => {
       <StyledCheckEmailBanner>
         <Trans
           t={t}
-          i18nKey="WeVeJustSentYouAConfirmationLinkToYourEmail"
-          values={{ email }}
-          components={[<Text key="email" as="span" color="main" />]}
+          i18nKey="ALinkWillBeSentToTheSpecifiedAddress"
         />
       </StyledCheckEmailBanner>
 
       <Text size={3} color="#666666">
         <Trans t={t} i18nKey="TheLinkIsValidFor60Minutes" />
       </Text>
-
-      <StyledCheckEmailLink
-        onClick={() => setStatus("signup")}
-        data-testid="check-email-back-button"
-      >
-        {t("BackToSignUp")}
-      </StyledCheckEmailLink>
     </StyledCheckEmail>
   );
 };
