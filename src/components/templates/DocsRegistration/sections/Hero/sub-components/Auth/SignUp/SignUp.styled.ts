@@ -51,7 +51,7 @@ const StyledSignUpHeader = styled.div`
 
 const StyledSignUpBox = styled.div`
   display: grid;
-  row-gap: 24px;
+  row-gap: 32px;
 `;
 
 

@@ -15,7 +15,6 @@ import { RestorePassword } from "./sub-components/Auth/RestorePassword";
 const Hero = ({ tenants, queryParams }: IHero) => {
   const router = useRouter();
   const [status, setStatus] = useState<TStatus>("signup");
-  const [email, setEmail] = useState("");
   const [existTenants, setExistTenants] = useState(tenants?.data);
 
   useEffect(() => {
@@ -41,9 +40,7 @@ const Hero = ({ tenants, queryParams }: IHero) => {
             {existTenants && existTenants.length > 0 ? (
               <></>
             ) : status === "signup" ? (
-              <SignUp
-                setEmail={setEmail}
-              />
+              <SignUp />
             ) : status === "login" ? (
               <LogIn setExistTenants={setExistTenants} setStatus={setStatus} />
             ) : status === "restorePassword" ? (

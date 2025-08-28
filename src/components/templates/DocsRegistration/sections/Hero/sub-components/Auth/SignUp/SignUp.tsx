@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useTranslation, Trans } from "next-i18next";
 import { useRouter } from "next/router";
 import {
@@ -18,19 +18,15 @@ import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { Checkbox } from "@src/components/ui/Checkbox";
 import { Link } from "@src/components/ui/Link";
-import { Button } from "@src/components/ui/Button";
+import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Modal } from "@src/components/ui/Modal";
 import { CheckEmail } from "../CheckEmail";
+import { RadioBlock2Options } from "../RadioBlock2Options/RadioBlock2Options";
+import { ISignUpData } from "./SignUp.types";
 
 
-export interface ISignUp {
-  setEmail: (email: string) => void;
-}
-
-const SignUp = ({
-  setEmail,
-}: ISignUp) => {
+const SignUp = () => {
   const { t } = useTranslation("docs-registration");
   const from = getFromParam();
 
@@ -43,20 +39,20 @@ const SignUp = ({
     id: "",
     token: "",
   });
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<ISignUpData>({
     fullName: "",
     email: "",
     spam: false,
+    tariffPlan: "Business",
   });
   const [isEmpty, setIsEmpty] = useState({
     fullName: false,
     email: false,
   });
   const [isFormValid, setIsFormValid] = useState(false);
-  const [isFormLoading, setisFormLoading] = useState(false);
-  const [isFormError, setIsFormError] = useState(false);
   const [token, setToken] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formStatus, setFormStatus] = useState<ILoaderButton["status"]>("default");
 
   const emailIsValid = formData.email.trim().length > 0 && validateEmail(formData.email);
 
@@ -84,15 +80,12 @@ const SignUp = ({
     }));
   };
 
-  const checkFormValid = (newToken?: string | null) => {
-    const tokenValue = newToken || "";
-    setIsFormValid(emailIsValid && !!tokenValue.length);
-    setIsFormError(false);
-  };
+  const checkFormValid = useCallback(() => {
+    setIsFormValid(emailIsValid && !!token.length);
+  }, [emailIsValid, token]);
 
   const handleHCaptchaChange = (token: string | null) => {
     setToken(token || "");
-    checkFormValid(token);
   };
 
   const onSubmit = async () => {
@@ -100,7 +93,7 @@ const SignUp = ({
       return;
     }
 
-    setisFormLoading(true);
+    setFormStatus("loading");
     setIsFormValid(false);
 
     const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
@@ -113,6 +106,10 @@ const SignUp = ({
 
     if (hCaptchaData.status === "errorHCaptchaInvalid") {
       setIsFormValid(false);
+      setFormStatus("error");
+      setTimeout(() => {
+        setFormStatus("default");
+      }, 5000);
       return;
     }
 
@@ -132,7 +129,7 @@ const SignUp = ({
         fullName: formData.fullName,
         email: formData.email,
         phone: "",
-        tariffPlan: "", //TEMPOARY
+        tariffPlan: formData.tariffPlan,
         docPlatform: "", //TEMPOARY
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
@@ -147,16 +144,18 @@ const SignUp = ({
     const data = await res.json();
 
     if (data.status === "success") {
-      setEmail(formData.email);
-      setIsModalOpen(true);
+      if (formData.tariffPlan == "Business") {
+        setIsModalOpen(true);
+      }
+      setFormStatus("success");
     } else {
-      setIsFormError(true);
-      setTimeout(() => {
-        checkFormValid();
-      }, 5000);
+      setFormStatus("error");
     }
 
-    setisFormLoading(false);
+    setTimeout(() => {
+      checkFormValid();
+      setFormStatus("default");
+    }, 5000);
   };
 
   useEffect(() => {
@@ -164,6 +163,10 @@ const SignUp = ({
       localStorage.setItem('previousPage', document.referrer);
     }
   }, []);
+
+  useEffect(() => {
+    checkFormValid();
+  }, [checkFormValid]);
 
   return (
     <>
@@ -233,7 +236,6 @@ const SignUp = ({
                 ...prev,
                 email: formData.email.length === 0,
               }));
-              checkFormValid();
             }}
             data-testid="docs-sign-up-email-input"
             value={formData.email}
@@ -256,6 +258,19 @@ const SignUp = ({
                     : "error"
                   : "default"
             }
+          />
+
+          <RadioBlock2Options
+            label="TariffPlan"
+            fieldName="tariffPlan"
+            formData={formData}
+            setFormData={setFormData}
+            t={t}
+            options={[
+              { label: t("Business"), value: "Business", idPostfix: "business" },
+              { label: t("VIPDedicated"), value: "VIP", idPostfix: "vip" },
+            ]}
+            prefix="tariff-plan-radio-"
           />
 
           <Checkbox
@@ -293,21 +308,17 @@ const SignUp = ({
           </Text>
 
           <div>
-          <Button
+          <LoaderButton
             onClick={onSubmit}
-            data-testid="docs-sign-up-button"
-            fullWidth
-            disabled={!isFormValid}
+            status={formStatus}
             label={t("StartFree")}
+            disabled={!isFormValid}
+            fullWidth
+            data-testid="docs-sign-up-button"
           />
-          {isFormError && (
-            <StyledSignUpCaption $error>
-              {t("TheRequestCouldNotBeSent")}
-            </StyledSignUpCaption>
-          )}
-          {isFormLoading && (
-            <StyledSignUpCaption>{t("PleaseWait")}</StyledSignUpCaption>
-          )}
+          {formStatus === "error" && (<StyledSignUpCaption $error>{t("WeAreSorryButAnErrorOccurred")}</StyledSignUpCaption>)}
+          {formStatus === "loading" && (<StyledSignUpCaption>{t("PleaseWait")}</StyledSignUpCaption>)}
+          {formStatus === "success" && (<StyledSignUpCaption>{t("YourRequestHasBeenSentSuccessfully")}</StyledSignUpCaption>)}
           </div>
         </StyledSignUpBox>
 
