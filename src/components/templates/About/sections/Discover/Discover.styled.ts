@@ -18,9 +18,9 @@ const StyledDiscoverHideMaskLeftMob = styled.div<{
   display: none;
   position: absolute;
   top: 150px;
-  right: 0;
+  left: 0;
   z-index: 3;
-  width: calc((100vw - 323px) / 2);
+  width: calc((100vw - 327px) / 2);
   height: ${({ $height }) => $height};
   background-color: #f5f5f5;
 
@@ -35,9 +35,9 @@ const StyledDiscoverHideMaskRightMob = styled.div<{
   display: none;
   position: absolute;
   top: 150px;
-  left: 0;
+  right: 0;
   z-index: 3;
-  width: calc((100vw - 327px) / 2);
+  width: calc((100vw - 323px) / 2);
   height: ${({ $height }) => $height};
   background-color: #f5f5f5;
 
