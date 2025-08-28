@@ -20,4 +20,22 @@ interface IAbouts {
   }
 }
 
-export type { IFeaturesItem, IAbouts, IAbout };
+interface IAboutAccumulate {
+  year: string;
+  items: IAbout[];
+}
+
+interface IAboutDragState {
+  isDown: boolean;
+  isDragging: boolean;
+  startX: number;
+  scrollLeft: number;
+}
+
+export type {
+  IFeaturesItem,
+  IAbouts,
+  IAbout,
+  IAboutAccumulate,
+  IAboutDragState
+};

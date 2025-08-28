@@ -78,14 +78,10 @@ const StyledDiscoverSlideText = styled.div`
   }
 `;
 
-const StyledDiscoverProgressWrapper = styled.div`
-  margin: 25px auto;
-  width: 200px;
-  height: 1px;
-  background: #ddd;
-  border-radius: 4px;
-  position: relative;
-  pointer-events: none;
+const StyledDiscoverScrollbarWrapper = styled.div`
+  width: 200px; /* Ширина всей области скроллбара */
+  padding: 20px 0; /* Даем немного воздуха сверху и снизу */
+  margin: 0 auto; /* Центрируем по горизонтали */
 `;
 
 const StyledDiscoverProgressFirstYear = styled(Text)`
@@ -104,28 +100,41 @@ const StyledDiscoverProgressLastYear = styled(Text)`
   transform: translateY(-50%);
 `;
 
-const StyledDiscoverProgressBar = styled.div`
-  height: 100%;
-  background: orange;
-  transform-origin: left;
-  transition: transform 0.05s linear;
-  pointer-events: none;
-  will-change: width;
+const StyledDiscoverScrollbarTrack = styled.div`
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #cccccc;
+  border-radius: 4px;
 `;
 
-const StyledDiscoverProgressBarHandle = styled.div`
+const StyledDiscoverScrollbarProgress = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: inset(0 100% 0 0);
+  background-color: orange;
+  border-radius: 4px;
+  z-index: 1;
+`;
+
+const StyledDiscoverScrollbarThumb = styled.div`
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
   background-image: url("/images/templates/about/discover/runner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 100, 0, 0.7);
   cursor: pointer;
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  pointer-events: visible;
 `;
 
 export {
@@ -138,9 +147,10 @@ export {
   StyledDiscoverBotItem,
   StyledDiscoverSlideHeading,
   StyledDiscoverSlideText,
-  StyledDiscoverProgressWrapper,
+  StyledDiscoverScrollbarWrapper,
   StyledDiscoverProgressFirstYear,
-  StyledDiscoverProgressBar,
-  StyledDiscoverProgressBarHandle,
+  StyledDiscoverScrollbarTrack,
+  StyledDiscoverScrollbarProgress,
+  StyledDiscoverScrollbarThumb,
   StyledDiscoverProgressLastYear,
 };
