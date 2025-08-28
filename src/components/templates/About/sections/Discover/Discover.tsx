@@ -101,13 +101,23 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
         return;
       }
 
-      if (dragState.current.lockDirection === "horizontal") {
-        e.preventDefault();
-      }
-
       const { pageX } = getCoords(e);
 
+      if (dragState.current.isThumbDown) {
+        if (dragState.current.lockDirection === "horizontal") e.preventDefault();
+
+        const deltaX = pageX - dragState.current.thumbStartX;
+        const scrollableWidth = wrapper.scrollWidth - wrapper.clientWidth;
+        const maxThumbLeft = track.clientWidth - thumb.clientWidth;
+        if (maxThumbLeft <= 0) return;
+        const scrollDelta = (deltaX / maxThumbLeft) * scrollableWidth;
+        wrapper.scrollLeft = dragState.current.initialScrollLeft + scrollDelta;
+        return;
+      }
+
       if (dragState.current.isDown) {
+        if (dragState.current.lockDirection === "horizontal") e.preventDefault();
+
         const x = pageX - wrapper.offsetLeft;
         const walk = x - dragState.current.startX;
         if (!dragState.current.isDragging && Math.abs(walk) > 5) {
@@ -116,16 +126,6 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
         if (dragState.current.isDragging) {
           wrapper.scrollLeft = dragState.current.scrollLeft - walk;
         }
-        return;
-      }
-
-      if (dragState.current.isThumbDown) {
-        const deltaX = pageX - dragState.current.thumbStartX;
-        const scrollableWidth = wrapper.scrollWidth - wrapper.clientWidth;
-        const maxThumbLeft = track.clientWidth - thumb.clientWidth;
-        if (maxThumbLeft <= 0) return;
-        const scrollDelta = (deltaX / maxThumbLeft) * scrollableWidth;
-        wrapper.scrollLeft = dragState.current.initialScrollLeft + scrollDelta;
       }
     };
 
