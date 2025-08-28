@@ -1,0 +1,1 @@
+export { GetAccess } from "./GetAccess";
