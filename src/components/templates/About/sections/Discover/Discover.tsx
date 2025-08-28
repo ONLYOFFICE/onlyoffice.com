@@ -1,6 +1,5 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
-import { Section } from "@src/components/ui/Section";
 import { useAccumulateYears } from "./utils/useAccumulateYears";
 import { discoverFormatDate } from "./utils/discoverFormatDate";
 import { IAboutDragState, IAbouts } from "../../About.types";
@@ -22,6 +21,9 @@ import {
   StyledDiscoverScrollbarTrack,
   StyledDiscoverScrollbarProgress,
   StyledDiscoverScrollbarThumb,
+  StyledDiscoverHideMaskLeftMob,
+  StyledDiscoverHideMaskRightMob,
+  StyledDiscoverSection,
 } from "./Discover.styled";
 
 const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
@@ -274,8 +276,16 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
     };
   }, [accumulateItems]);
 
+  const [wrapperHeight, setWrapperHeight] = useState(0);
+  useEffect(() => {
+    setWrapperHeight(wrapperRef.current?.offsetHeight ?? 0);
+  }, [wrapperRef, accumulateItems])
+
   return (
-    <Section background="#F5F5F5">
+    <StyledDiscoverSection background="#F5F5F5">
+      <StyledDiscoverHideMaskLeftMob $height={`${wrapperHeight}px`} />
+      <StyledDiscoverHideMaskRightMob $height={`${wrapperHeight}px`} />
+
       <StyledDiscoverHeading
         label={t("DiscoverHeading")}
         level={2}
@@ -331,7 +341,7 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
           />
         </StyledDiscoverScrollbarTrack>
       </StyledDiscoverScrollbarWrapper>
-    </Section>
+    </StyledDiscoverSection>
   );
 };
 

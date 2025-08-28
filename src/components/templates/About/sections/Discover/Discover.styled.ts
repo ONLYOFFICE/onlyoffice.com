@@ -1,11 +1,57 @@
 import styled from "styled-components";
+import { device } from "@src/utils/device";
+import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
 const CARD_WIDTH = "325px";
 
+const StyledDiscoverSection = styled(Section)`
+  @media ${device.mobile} {
+    position: relative;
+  }
+`;
+
+const StyledDiscoverHideMaskLeftMob = styled.div<{
+  $height: string;
+}>`
+  display: none;
+  position: absolute;
+  top: 150px;
+  right: 0;
+  z-index: 3;
+  width: calc((100vw - 323px) / 2);
+  height: ${({ $height }) => $height};
+  background-color: #f5f5f5;
+
+  @media ${device.mobile} {
+    display: block;
+  }
+`;
+
+const StyledDiscoverHideMaskRightMob = styled.div<{
+  $height: string;
+}>`
+  display: none;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  z-index: 3;
+  width: calc((100vw - 327px) / 2);
+  height: ${({ $height }) => $height};
+  background-color: #f5f5f5;
+
+  @media ${device.mobile} {
+    display: block;
+  }
+`;
+
 const StyledDiscoverHeading = styled(Heading)`
   margin-bottom: 40px;
+
+  @media ${device.mobile} {
+    position: relative;
+  }
 `;
 
 const StyledDiscoverWrapper = styled.div`
@@ -142,6 +188,7 @@ const StyledDiscoverScrollbarThumb = styled.div`
 `;
 
 export {
+  StyledDiscoverSection,
   StyledDiscoverHeading,
   StyledDiscoverWrapper,
   StyledDiscoverYearBlock,
@@ -157,4 +204,6 @@ export {
   StyledDiscoverScrollbarProgress,
   StyledDiscoverScrollbarThumb,
   StyledDiscoverProgressLastYear,
+  StyledDiscoverHideMaskLeftMob,
+  StyledDiscoverHideMaskRightMob,
 };
