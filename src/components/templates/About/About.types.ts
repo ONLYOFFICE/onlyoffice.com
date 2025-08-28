@@ -33,6 +33,9 @@ interface IAboutDragState {
   isThumbDown: boolean;
   thumbStartX: number;
   initialScrollLeft: number;
+  initialX: number;
+  initialY: number;
+  lockDirection: 'horizontal' | 'vertical' | null;
 }
 
 export type {

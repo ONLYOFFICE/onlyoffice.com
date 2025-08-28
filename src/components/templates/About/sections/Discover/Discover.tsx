@@ -39,6 +39,9 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
     isThumbDown: false,
     thumbStartX: 0,
     initialScrollLeft: 0,
+    initialX: 0,
+    initialY: 0,
+    lockDirection: null,
   });
   const itemsRef = useRef<HTMLElement[]>([]);
 
@@ -57,23 +60,59 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
     const track = trackRef.current;
     if (!wrapper || !items.length || !thumb || !progress || !track) return;
 
-    const handleMouseDown = (e: MouseEvent) => {
-      e.preventDefault();
-      dragState.current.isDown = true;
-      dragState.current.isDragging = false;
-      dragState.current.startX = e.pageX - wrapper.offsetLeft;
-      dragState.current.scrollLeft = wrapper.scrollLeft;
+    const getCoords = (e: MouseEvent | TouchEvent): { pageX: number, pageY: number } => {
+      if (e.type.startsWith("touch")) {
+        return {
+          pageX: (e as TouchEvent).touches[0].pageX,
+          pageY: (e as TouchEvent).touches[0].pageY
+        };
+      }
+      return {
+        pageX: (e as MouseEvent).pageX,
+        pageY: (e as MouseEvent).pageY
+      };
     };
 
-    const handleMouseMove = (e: MouseEvent) => {
-      if (dragState.current.isDown) {
-        const x = e.pageX - wrapper.offsetLeft;
-        const walk = x - dragState.current.startX;
+    const handleDragStart = (e: MouseEvent | TouchEvent) => {
+      const { pageX, pageY } = getCoords(e);
+      dragState.current.isDown = true;
+      dragState.current.isDragging = false;
+      dragState.current.startX = pageX - wrapper.offsetLeft;
+      dragState.current.scrollLeft = wrapper.scrollLeft;
 
-        if (Math.abs(walk) > 5) {
+      dragState.current.initialX = pageX;
+      dragState.current.initialY = pageY;
+      dragState.current.lockDirection = null;
+    };
+
+    const handleDragMove = (e: MouseEvent | TouchEvent) => {
+      if (e.type === "touchmove" && !dragState.current.lockDirection) {
+        const threshold = 10;
+        const { pageX, pageY } = getCoords(e);
+        const deltaX = Math.abs(pageX - dragState.current.initialX);
+        const deltaY = Math.abs(pageY - dragState.current.initialY);
+
+        if (deltaX > threshold || deltaY > threshold) {
+          dragState.current.lockDirection = deltaX > deltaY ? "horizontal" : "vertical";
+        }
+      }
+
+      if (dragState.current.lockDirection === "vertical") {
+        return;
+      }
+
+      if (dragState.current.lockDirection === "horizontal") {
+        e.preventDefault();
+      }
+
+      const { pageX } = getCoords(e);
+
+      if (dragState.current.isDown) {
+        const x = pageX - wrapper.offsetLeft;
+        const walk = x - dragState.current.startX;
+        if (!dragState.current.isDragging && Math.abs(walk) > 5) {
           dragState.current.isDragging = true;
         }
-
         if (dragState.current.isDragging) {
           wrapper.scrollLeft = dragState.current.scrollLeft - walk;
         }
@@ -81,28 +120,35 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
       }
 
       if (dragState.current.isThumbDown) {
-        const deltaX = e.pageX - dragState.current.thumbStartX;
+        const deltaX = pageX - dragState.current.thumbStartX;
         const scrollableWidth = wrapper.scrollWidth - wrapper.clientWidth;
         const maxThumbLeft = track.clientWidth - thumb.clientWidth;
-
         if (maxThumbLeft <= 0) return;
-
         const scrollDelta = (deltaX / maxThumbLeft) * scrollableWidth;
         wrapper.scrollLeft = dragState.current.initialScrollLeft + scrollDelta;
       }
     };
 
-    const handleMouseUp = (e: MouseEvent) => {
-      if (!dragState.current.isDown && !dragState.current.isThumbDown && !dragState.current.isDragging) return;
+    const handleDragEnd = (e: MouseEvent | TouchEvent) => {
+      if (!dragState.current.isDown && !dragState.current.isThumbDown) return;
 
-      const wasDragging = dragState.current.isDragging;
+      const wasDragging =
+        dragState.current.isDragging ||
+        (dragState.current.lockDirection === "horizontal" && dragState.current.isDown);
 
       dragState.current.isDown = false;
       dragState.current.isDragging = false;
       dragState.current.isThumbDown = false;
+      dragState.current.lockDirection = null;
 
       if (!wasDragging) {
-        const target = e.target;
+        const target = e.type === "touchend"
+            ? document.elementFromPoint(
+                (e as TouchEvent).changedTouches[0].clientX,
+                (e as TouchEvent).changedTouches[0].clientY
+              )
+            : (e as MouseEvent).target;
+
         if (target instanceof Element) {
           const targetSection = items.find((item) => item.contains(target));
           if (targetSection) {
@@ -113,65 +159,83 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
           }
         }
       }
-
-      if (dragState.current.isThumbDown) {
-        dragState.current.isThumbDown = false;
-      }
     };
 
-    const handleMouseLeaveAndBlur = () => {
+    const handleDragCancel = () => {
       dragState.current.isDown = false;
       dragState.current.isDragging = false;
       dragState.current.isThumbDown = false;
+      dragState.current.lockDirection = null;
     };
 
     const updateScrollbar = () => {
+      if (!wrapper || !thumb || !track || !progress) return;
       const scrollableWidth = wrapper.scrollWidth - wrapper.clientWidth;
       if (scrollableWidth <= 0) {
-          thumb.style.display = 'none';
-          return;
+        thumb.style.display = "none";
+        return;
       }
-       thumb.style.display = 'block';
-
+      thumb.style.display = "block";
       const scrollPercentage = (wrapper.scrollLeft / scrollableWidth);
-
       const trackWidth = track.clientWidth;
       const thumbWidth = thumb.clientWidth;
       const maxThumbLeft = trackWidth - thumbWidth;
-
       const thumbLeft = scrollPercentage * maxThumbLeft;
       thumb.style.left = `${thumbLeft}px`;
       progress.style.width = `${thumbLeft + (thumbWidth / 2)}px`;
     };
 
-    const handleThumbMouseDown = (e: MouseEvent) => {
-      e.preventDefault();
+    const handleThumbDragStart = (e: MouseEvent | TouchEvent) => {
       e.stopPropagation();
+      const { pageX } = getCoords(e);
       dragState.current.isThumbDown = true;
-      dragState.current.thumbStartX = e.pageX;
+      dragState.current.thumbStartX = pageX;
       dragState.current.initialScrollLeft = wrapper.scrollLeft;
+      dragState.current.lockDirection = "horizontal";
     };
 
-    wrapper.addEventListener("mousedown", handleMouseDown);
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mouseup", handleMouseUp);
-    wrapper.addEventListener("mouseleave", handleMouseLeaveAndBlur);
-    window.addEventListener("blur", handleMouseLeaveAndBlur);
-    wrapper.addEventListener('scroll', updateScrollbar);
-    window.addEventListener('resize', updateScrollbar);
-    thumb.addEventListener('mousedown', handleThumbMouseDown);
+
+    wrapper.addEventListener("mousedown", handleDragStart);
+    wrapper.addEventListener("touchstart", handleDragStart, { passive: true });
+
+    window.addEventListener("mousemove", handleDragMove);
+    window.addEventListener("touchmove", handleDragMove, { passive: false });
+
+    window.addEventListener("mouseup", handleDragEnd);
+    window.addEventListener("touchend", handleDragEnd);
+
+    wrapper.addEventListener("mouseleave", handleDragCancel);
+    window.addEventListener("blur", handleDragCancel);
+    window.addEventListener("touchcancel", handleDragCancel);
+
+    wrapper.addEventListener("scroll", updateScrollbar);
+    window.addEventListener("resize", updateScrollbar);
+
+    thumb.addEventListener("mousedown", handleThumbDragStart);
+    thumb.addEventListener("touchstart", handleThumbDragStart, { passive: true });
 
     updateScrollbar();
 
     return () => {
-      wrapper.removeEventListener("mousedown", handleMouseDown);
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseup", handleMouseUp);
-      wrapper.removeEventListener("mouseleave", handleMouseLeaveAndBlur);
-      window.removeEventListener("blur", handleMouseLeaveAndBlur);
-      wrapper.removeEventListener('scroll', updateScrollbar);
-      window.removeEventListener('resize', updateScrollbar);
-      thumb.removeEventListener('mousedown', handleThumbMouseDown);
+      wrapper.removeEventListener("mousedown", handleDragStart);
+      wrapper.removeEventListener("touchstart", handleDragStart);
+
+      window.removeEventListener("mousemove", handleDragMove);
+      window.removeEventListener("touchmove", handleDragMove);
+
+      window.removeEventListener("mouseup", handleDragEnd);
+      window.removeEventListener("touchend", handleDragEnd);
+
+      wrapper.removeEventListener("mouseleave", handleDragCancel);
+      window.removeEventListener("blur", handleDragCancel);
+      window.removeEventListener("touchcancel", handleDragCancel);
+
+      wrapper.removeEventListener("scroll", updateScrollbar);
+      window.removeEventListener("resize", updateScrollbar);
+
+      thumb.removeEventListener("mousedown", handleThumbDragStart);
+      thumb.removeEventListener("touchstart", handleThumbDragStart);
+
     };
   }, [accumulateItems]);
 
