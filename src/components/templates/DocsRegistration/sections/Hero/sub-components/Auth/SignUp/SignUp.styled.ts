@@ -61,6 +61,13 @@ const StyledSignUpCaption = styled.div<{ $error?: boolean }>`
   line-height: 16px;
   color: ${(props) => (props.$error ? "#cb0000" : "#999999")};
 
+  &.success {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.6em;
+    text-align: center;
+  }
+
   @media ${device.mobile} {
     font-size: 11px;
   }

@@ -1,5 +1,6 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useTranslation, Trans } from "next-i18next";
+import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { useRouter } from "next/router";
 import {
   StyledSignUpWrapper,
@@ -17,6 +18,8 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { Checkbox } from "@src/components/ui/Checkbox";
+import { Select } from "@src/components/ui/Select";
+import { ISelectOption } from "@src/components/ui/Select/Select.types";
 import { Link } from "@src/components/ui/Link";
 import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
@@ -24,7 +27,15 @@ import { Modal } from "@src/components/ui/Modal";
 import { CheckEmail } from "../CheckEmail";
 import { RadioBlock2Options } from "../RadioBlock2Options/RadioBlock2Options";
 import { ISignUpData } from "./SignUp.types";
+import { Platforms } from "./data/Platforms";
 
+
+const initialFormData: ISignUpData = {
+  fullName: "",
+  email: "",
+  spam: false,
+  tariffPlan: "Business",
+};
 
 const SignUp = () => {
   const { t } = useTranslation("docs-registration");
@@ -39,12 +50,9 @@ const SignUp = () => {
     id: "",
     token: "",
   });
-  const [formData, setFormData] = useState<ISignUpData>({
-    fullName: "",
-    email: "",
-    spam: false,
-    tariffPlan: "Business",
-  });
+
+  const [formData, setFormData] = useState<ISignUpData>(initialFormData);
+  const [selectedPlatform, setSelectedPlatform] = useState<ISelectOption[]>([]);
   const [isEmpty, setIsEmpty] = useState({
     fullName: false,
     email: false,
@@ -55,6 +63,8 @@ const SignUp = () => {
   const [formStatus, setFormStatus] = useState<ILoaderButton["status"]>("default");
 
   const emailIsValid = formData.email.trim().length > 0 && validateEmail(formData.email);
+  
+  const refHcaptcha = useRef<ReactCaptcha | null>(null);
 
   const { getClientReferenceId, getAffiliateToken } = useRewardful({
     onReady: () => {
@@ -84,6 +94,15 @@ const SignUp = () => {
     setIsFormValid(emailIsValid && !!token.length);
   }, [emailIsValid, token]);
 
+  const clearData = () => {
+    setFormData(initialFormData);
+    setFormStatus("default");
+    setIsFormValid(false);
+
+    setSelectedPlatform([]);
+    refHcaptcha.current?.resetCaptcha();
+  };
+
   const handleHCaptchaChange = (token: string | null) => {
     setToken(token || "");
   };
@@ -94,7 +113,6 @@ const SignUp = () => {
     }
 
     setFormStatus("loading");
-    setIsFormValid(false);
 
     const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
       method: "POST",
@@ -130,7 +148,7 @@ const SignUp = () => {
         email: formData.email,
         phone: "",
         tariffPlan: formData.tariffPlan,
-        docPlatform: "", //TEMPOARY
+        docsPlatform: selectedPlatform[0]?.value,
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
         spam: formData.spam ? "true" : "false",
@@ -153,8 +171,7 @@ const SignUp = () => {
     }
 
     setTimeout(() => {
-      checkFormValid();
-      setFormStatus("default");
+      clearData();
     }, 5000);
   };
 
@@ -273,6 +290,13 @@ const SignUp = () => {
             prefix="tariff-plan-radio-"
           />
 
+          <Select
+            selected={selectedPlatform}
+            setSelected={setSelectedPlatform}
+            label="Platform"
+            options={Platforms}
+          />
+
           <Checkbox
             data-testid="docs-sign-up-spam-checkbox"
             checked={formData.spam}
@@ -286,6 +310,7 @@ const SignUp = () => {
           />
 
           <HCaptcha
+            ref={refHcaptcha}
             onVerify={handleHCaptchaChange}
             onExpire={() => handleHCaptchaChange(null)}
           />
@@ -318,7 +343,7 @@ const SignUp = () => {
           />
           {formStatus === "error" && (<StyledSignUpCaption $error>{t("WeAreSorryButAnErrorOccurred")}</StyledSignUpCaption>)}
           {formStatus === "loading" && (<StyledSignUpCaption>{t("PleaseWait")}</StyledSignUpCaption>)}
-          {formStatus === "success" && (<StyledSignUpCaption>{t("YourRequestHasBeenSentSuccessfully")}</StyledSignUpCaption>)}
+          {formStatus === "success" && (<StyledSignUpCaption className="success">{t("YourRequestHasBeenSentSuccessfully")}</StyledSignUpCaption>)}
           </div>
         </StyledSignUpBox>
 
