@@ -163,20 +163,20 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
     const handleDragEnd = (e: MouseEvent | TouchEvent) => {
       if (!dragState.current.isDown && !dragState.current.isThumbDown) return;
 
-      const wasDragging =
+      const wasDraggingContent =
         dragState.current.isDragging ||
         (dragState.current.lockDirection === "horizontal" && dragState.current.isDown);
 
-      const wasThumbDragging = dragState.current.isThumbDown;
+      const wasDraggingThumb = dragState.current.isThumbDown;
 
       dragState.current.isDown = false;
       dragState.current.isDragging = false;
       dragState.current.isThumbDown = false;
       dragState.current.lockDirection = null;
 
-      if (wasDragging && !wasThumbDragging) {
+      if (wasDraggingContent || wasDraggingThumb) {
         snapToClosestItem();
-      } else if (!wasDragging && !wasThumbDragging) {
+      } else {
         const target = e.type === "touchend"
             ? document.elementFromPoint(
                 (e as TouchEvent).changedTouches[0].clientX,
@@ -188,7 +188,7 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
           const targetSection = items.find((item) => item.contains(target));
           if (targetSection) {
             wrapper.scrollTo({
-              left: targetSection.offsetLeft - wrapper.offsetWidth / 2 + 325 / 2,
+              left: targetSection.offsetLeft - wrapper.offsetWidth / 2 + 325 / 2, // Возможно, 325 нужно будет сделать динамическим для мобильных
               behavior: "smooth",
             });
           }
