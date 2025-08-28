@@ -113,8 +113,7 @@ const StyledDiscoverScrollbarProgress = styled.div`
   left: 0;
   top: 0;
   height: 100%;
-  width: 100%;
-  clip-path: inset(0 100% 0 0);
+  width: 0;
   background-color: orange;
   border-radius: 4px;
   z-index: 1;

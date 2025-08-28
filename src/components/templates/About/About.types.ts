@@ -30,6 +30,9 @@ interface IAboutDragState {
   isDragging: boolean;
   startX: number;
   scrollLeft: number;
+  isThumbDown: boolean;
+  thumbStartX: number;
+  initialScrollLeft: number;
 }
 
 export type {
