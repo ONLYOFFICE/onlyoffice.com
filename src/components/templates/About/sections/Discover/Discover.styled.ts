@@ -14,6 +14,7 @@ const StyledDiscoverWrapper = styled.div`
   display: flex;
   overflow-x: scroll;
   scrollbar-width: none;
+  user-select: none;
 
   &::-webkit-scrollbar {
     display: none;
@@ -79,9 +80,9 @@ const StyledDiscoverSlideText = styled.div`
 `;
 
 const StyledDiscoverScrollbarWrapper = styled.div`
-  width: 200px; /* Ширина всей области скроллбара */
-  padding: 20px 0; /* Даем немного воздуха сверху и снизу */
-  margin: 0 auto; /* Центрируем по горизонтали */
+  width: 200px;
+  padding: 20px 0;
+  margin: 0 auto;
 `;
 
 const StyledDiscoverProgressFirstYear = styled(Text)`
