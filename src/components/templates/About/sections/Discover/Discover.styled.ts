@@ -48,6 +48,7 @@ const StyledDiscoverBotItem = styled.div`
   width: ${CARD_WIDTH};
   border-top: 1px solid #ddd;
   position: relative;
+  cursor: pointer;
 
   &::before {
     content: '';
@@ -91,6 +92,7 @@ const StyledDiscoverProgressFirstYear = styled(Text)`
   top: 50%;
   left: -45px;
   transform: translateY(-50%);
+  user-select: none;
 `;
 
 const StyledDiscoverProgressLastYear = styled(Text)`
@@ -99,12 +101,13 @@ const StyledDiscoverProgressLastYear = styled(Text)`
   top: 50%;
   right: -45px;
   transform: translateY(-50%);
+  user-select: none;
 `;
 
 const StyledDiscoverScrollbarTrack = styled.div`
   position: relative;
   width: 100%;
-  height: 4px;
+  height: 1px;
   background-color: #cccccc;
   border-radius: 4px;
 `;
@@ -134,6 +137,7 @@ const StyledDiscoverScrollbarThumb = styled.div`
   background-size: contain;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(255, 100, 0, 0.7);
+  user-select: none;
   cursor: pointer;
 `;
 
