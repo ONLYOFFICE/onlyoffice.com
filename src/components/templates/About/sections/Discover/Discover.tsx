@@ -129,6 +129,37 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
       }
     };
 
+    const snapToClosestItem = () => {
+      const currentScrollLeft = wrapper.scrollLeft;
+      const viewportCenter = wrapper.offsetWidth / 2;
+
+      let minDistance = Infinity;
+      let closestItemIndex = -1;
+
+      items.forEach((item, index) => {
+        const itemCenter = item.offsetLeft + item.offsetWidth / 2;
+        const targetScrollLeft = itemCenter - viewportCenter;
+        const distance = Math.abs(currentScrollLeft - targetScrollLeft);
+
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestItemIndex = index;
+        }
+      });
+
+      if (closestItemIndex !== -1) {
+        const closestItem = items[closestItemIndex];
+        const itemCenter = closestItem.offsetLeft + closestItem.offsetWidth / 2;
+        const targetScrollLeft = itemCenter - viewportCenter;
+
+        wrapper.scrollTo({
+          left: targetScrollLeft,
+          behavior: "smooth",
+        });
+      }
+    };
+
+
     const handleDragEnd = (e: MouseEvent | TouchEvent) => {
       if (!dragState.current.isDown && !dragState.current.isThumbDown) return;
 
@@ -136,12 +167,16 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
         dragState.current.isDragging ||
         (dragState.current.lockDirection === "horizontal" && dragState.current.isDown);
 
+      const wasThumbDragging = dragState.current.isThumbDown;
+
       dragState.current.isDown = false;
       dragState.current.isDragging = false;
       dragState.current.isThumbDown = false;
       dragState.current.lockDirection = null;
 
-      if (!wasDragging) {
+      if (wasDragging && !wasThumbDragging) {
+        snapToClosestItem();
+      } else if (!wasDragging && !wasThumbDragging) {
         const target = e.type === "touchend"
             ? document.elementFromPoint(
                 (e as TouchEvent).changedTouches[0].clientX,
