@@ -32,4 +32,6 @@ export interface IConnectorCard {
   isNew?: boolean;
   /** Indicates if the connector is a WOPI integration. */
   isWopi?: boolean;
+  /** Indicates if the connector is a BOT integration. */
+  isBot?: boolean;
 }

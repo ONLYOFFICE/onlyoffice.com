@@ -15,6 +15,7 @@
   "Free": "Gratuito",
   "Paid": "A pagamento",
   "GetItOn": "Ottienilo su",
+  "Bot": "BOT",
 
   "FeatureConnectorTrelloText": "Visualizza, modifica e collabora in tempo reale sui documenti all'interno di Trello, lo strumento definitivo per la gestione di progetti in team.",
   "FeatureConnectorOdooText": "Modifica e collabora sui file d'ufficio all'interno di Odoo Documents, una suite di app aziendali open source.",
@@ -22,11 +23,12 @@
   "FeatureConnectorOwnCloudText": "Condividi documenti con diversi livelli di accesso, modifica documenti, fogli di calcolo e presentazioni in ownCloud, l'ultima piattaforma di collaborazione cloud di cui avrai bisogno.",
   "FeatureConnectorPipedriveText": "Modifica e collabora sui documenti d'ufficio all'interno di Pipedrive Deals, una soluzione CRM per le vendite e gestione del flusso di lavoro basata sul Web.",
 
+  "TelegramConnectorText": "Apri, crea, converti, modifica e collabora su documenti direttamente all'interno di Telegram, un servizio di messaggistica istantanea e social media basato su cloud e multipiattaforma.",
   "AgorumConnectorText": "L'integrazione di ONLYOFFICE Docs è disponibile dalla versione 9.4 di agorum core e può essere facilmente installata tramite il gestore dei plugin.",
   "AlfrescoConnectorText": "Lavora con tutti i tipi di documenti Office in Alfresco Share, un ampio ambiente di collaborazione basato sul web per gestire documenti, contenuti wiki, blog e altro ancora.",
   "BoxConnectorText": "Visualizza, modifica in collaborazione i file d'ufficio all'interno di Box, un sistema cloud sicuro per la gestione dei contenuti.",
   "ChamiloConnectorText": "Apri e modifica file docx, xlsx, pptx in Chamilo, un software di e-learning e collaborazione.",
-  "CommuniGateConnectorText": "Modifica documenti Office e salvali nuovamente in CommuniGate Pro, una piattaforma di comunicazioni unificate.",
+  "CommuniGateConnectorText": "Modifica documenti Office e salvali nuovamente in CommuniGate Pro, una piattaforma de comunicazioni unificadas.",
   "ConfluenceConnectorText": "Modifica e collabora su documenti in Confluence, uno spazio di lavoro aperto e collaborativo.",
   "DropboxConnectorText": "Apri, visualizza e modifica i file d'ufficio all'interno di Dropbox, un archivio cloud sicuro.",
   "DrupalConnectorText": "Modifica e collabora su file Office nel modulo Media di Drupal, un CMS web open source.",

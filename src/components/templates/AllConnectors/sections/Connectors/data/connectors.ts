@@ -4,9 +4,29 @@ interface IConnectorCardExtended extends IConnectorCard {
   productType?: ("docs" | "docspace")[];
   developerType?: ("oo-developers" | "partners")[];
   isWopi?: boolean;
+  isBot?: boolean;
 }
 
 export const connectors: IConnectorCardExtended[] = [
+  {
+    id: "telegram",
+    image: {
+      url: "/images/templates/all-connectors/connectors/telegram.svg",
+    },
+    name: "Telegram",
+    text: "TelegramConnectorText",
+    moreInfoUrl:
+      "/office-for-telegram",
+    vendor: "Ascensio System Sia",
+    developerWebsiteName: "www.onlyoffice.com",
+    developerWebsiteUrl: "www.onlyoffice.com",
+    getItNowUrl:
+      "https://github.com/ONLYOFFICE/onlyoffice-telegram",
+    productType: ["docs"],
+    developerType: ["oo-developers"],
+    isBot: true,
+  },
+
   {
     id: "agorum",
     image: {

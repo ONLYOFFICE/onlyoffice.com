@@ -16,6 +16,7 @@
   "Free": "ZDARMA",
   "Paid": "PLACENÝ",
   "GetItOn": "Získat nyní",
+  "Bot": "BOT",
 
   "FeatureConnectorTrelloText": "Zobrazujte, upravujte a spolupracujte na kancelářských dokumentech v reálném čase v rámci Trello, dokonalého nástroje pro projektový management týmové práce.",
   "FeatureConnectorOdooText": "Upravujte a spolupracujte na kancelářských souborech v rámci Odoo Documents, sady open-source podnikových aplikací.",
@@ -23,6 +24,7 @@
   "FeatureConnectorOwnCloudText": "Sdílejte dokumenty s poskytnutím různých úrovní přístupu, upravujte a společně upravujte dokumenty, tabulky a slidy v ownCloud, poslední platformě pro spolupráci v cloudu, kterou potřebujete.",
   "FeatureConnectorPipedriveText": "Upravujte a spolupracujte na kancelářských dokumentech v rámci Pipedrive Deals, webového řešení pro řízení prodeje CRM a pipeline.",
 
+  "TelegramConnectorText": "Open, create, convert, edit, and collabore on documents directly within Telegram, a cloud-based, cross-platform, social media and instant messaging (IM) service.",
   "AgorumConnectorText": "Přistupujte k dokumentům a upravujte je přímo z informačního centra a inteligentního asistenta agorum core, aplikace pro správu firemního obsahu s otevřený zdrojovým kódem.",
   "AlfrescoConnectorText": "Pracujte na všech typech dokumentů Office v rámci Alfresco Share, bohatém webovém prostředí pro spolupráci při správě dokumentů, wiki obsahu, blogů a dalšího.",
   "BoxConnectorText": "Zobrazujte, upravujte a spolupracujte na kancelářských souborech v rámci Box, bezpečného systému pro správu obsahu v cloudu.",

@@ -15,6 +15,7 @@
   "Free": "Kostenlos",
   "Paid": "Kostenpflichtig",
   "GetItOn": "Jetzt herunterladen",
+  "Bot": "BOT",
 
   "FeatureConnectorTrelloText": "Öffnen und bearbeiten Sie gemeinsam Office-Dokumente in Echtzeit in Trello, dem ultimativen Projektmanagement-Tool für Teamarbeit.",
   "FeatureConnectorOdooText": "Bearbeiten Sie Office-Dokumente mit Odoo Documents, einer quelloffenen Business-Suite, und arbeiten Sie gemeinsam daran.",
@@ -22,6 +23,7 @@
   "FeatureConnectorOwnCloudText": "Teilen Sie Dokumente mit verschiedenen Zugriffsebenen, bearbeiten Sie Dokumente, Tabellen und Präsentationen in ownCloud, der letzten Cloud-Kollaborationsplattform, die Sie benötigen.",
   "FeatureConnectorPipedriveText": "Bearbeiten Sie Office-Dokumente in Pipedrive Deals, einer webbasierten Lösung für Vertriebs-CRM und Pipeline-Management.",
 
+  "TelegramConnectorText": "Öffnen, erstellen, konvertieren und bearbeiten Sie Dokumente gemeinsam direkt in Telegram, einem cloudbasierten, plattformübergreifenden Social-Media- und Instant-Messaging-Dienst (IM).",
   "AgorumConnectorText": "Die ONLYOFFICE Docs-Integration ist ab Version 9.4 von agorum core verfügbar und kann einfach über den Plugin Manager installiert werden.",
   "AlfrescoConnectorText": "Arbeiten Sie mit allen Arten von Office-Dokumenten in Alfresco Share, einer umfangreichen webbasierten Zusammenarbeitsumgebung für die Verwaltung von Dokumenten, Wiki-Inhalten, Blogs und mehr.",
   "BoxConnectorText": "Anzeigen, Bearbeiten und gemeinsames Bearbeiten von Office-Dateien in Box, einem sicheren Cloud-Content-Management-System.",

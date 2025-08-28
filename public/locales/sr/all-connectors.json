@@ -16,6 +16,7 @@
   "Free": "Free",
   "Paid": "Paid",
   "GetItOn": "Get it now",
+  "Bot": "BOT",
 
   "FeatureConnectorTrelloText": "View, edit and collaborate on office documents in real-time within Trello, the ultimate teamwork project management tool.",
   "FeatureConnectorOdooText": "Edit and collaborate on office files within Odoo Documents, a suite of open-source business apps.",
@@ -23,6 +24,7 @@
   "FeatureConnectorOwnCloudText": "Share documents providing different access levels, edit and co-edit docs, sheets and slides within ownCloud, the last cloud collaboration platform you need.",
   "FeatureConnectorPipedriveText": "Edit and collaborate on office documents within Pipedrive Deals, a web-based Sales CRM and pipeline management solution.",
 
+  "FeatureConnectorTelegramText": "Open, create, convert, edit and collaborate on documents directly in Telegram, a cloud-based cross-platform service for social networks and instant messaging.",
   "AgorumConnectorText": "The ONLYOFFICE Docs integration is available starting from the version 9.4 of agorum core and can be easily installed using the Plugin Manager.",
   "AlfrescoConnectorText": "Work on all kinds of Office documents within Alfresco Share, a rich web-based collaboration environment for managing documents, wiki content, blogs and more.",
   "BoxConnectorText": "View, edit and co-edit office files within Box, a secure cloud content management system.",
