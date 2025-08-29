@@ -1,48 +1,38 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
-import { useRouter } from "next/router";
+import { TStatus } from "../../../Hero.types";
 import {
   StyledLogInAccount,
   StyledLogInAccountLink,
   StyledLogInWrapper,
   StyledLogInHeading,
   StyledLogInContainer,
-  StyledLogInSocialButtons,
-  StyledLogInSocialButton,
-  StyledLogInLabel,
   StyledLogInForm,
-  StyledLogInInputWrapper,
-  StyledLogInForgotPasswordButton,
 } from "./LogIn.styled";
-import { ILogIn } from "./LogIn.types";
+import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { Button } from "@src/components/ui/Button";
 import { validateEmail } from "@src/utils/validators";
-import { PasswordInput } from "@src/components/widgets/PasswordInput";
 
-const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
+export interface ILogIn {
+  setStatus: (status: TStatus) => void;
+}
+
+const LogIn = ({setStatus}: ILogIn) => {
   const { t } = useTranslation("docs-registration");
-  const router = useRouter();
-  const modalDialog = useRef<Window | null>(null);
-  const intervalId = useRef<NodeJS.Timeout | null>(null);
-  const platformRef = useRef<string | null>(null);
 
   const [formData, setFormData] = useState({
     email: "",
-    password: "",
   });
   const [isEmpty, setIsEmpty] = useState({
     email: false,
-    password: false,
   });
   const [isError, setIsError] = useState({
     email: false,
-    password: false,
   });
   const [isFormValid, setIsFormValid] = useState(false);
   const [isFormLoading, setIsFormLoading] = useState(false);
-  const [isLoginError, setIsLoginError] = useState(false);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -57,8 +47,7 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
 
   const checkFormValid = (data = formData) => {
     const emailIsValid = validateEmail(data.email);
-    const passwordIsValid = data.password.length >= 8;
-    setIsFormValid(emailIsValid && passwordIsValid);
+    setIsFormValid(emailIsValid);
   };
 
   const onSubmit = async () => {
@@ -77,7 +66,7 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
     const findByEmailData = await findByEmailRes.json();
 
     if (findByEmailData.data?.length === 0) {
-      setIsError({ email: true, password: true });
+      setIsError({ email: true });
     } else {
       const findByEmailPasswordRes = await fetch(
         "/api/thirdparty/findbyemailpassword",
@@ -86,14 +75,13 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             email: formData.email,
-            password: formData.password,
           }),
         },
       );
       const findByEmailPasswordData = await findByEmailPasswordRes.json();
 
       if (findByEmailPasswordData.data?.length === 0) {
-        setIsError({ email: true, password: true });
+        setIsError({ email: true });
         setIsFormLoading(false);
         return;
       } else if (findByEmailPasswordData.data?.length === 1) {
@@ -101,150 +89,33 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
 
         return;
       }
-
-      setExistTenants(findByEmailPasswordData.data);
     }
 
     setIsFormLoading(false);
   };
-
-  const checkSignInCode = () => {
-    const code = localStorage.getItem("code");
-    if (code) {
-      localStorage.removeItem("code");
-      if (intervalId.current) clearInterval(intervalId.current);
-
-      const token = window.btoa(
-        JSON.stringify({
-          auth: platformRef.current,
-          mode: "popup",
-          callback: "SigninBySocial",
-        }),
-      );
-
-      if (modalDialog.current) {
-        modalDialog.current.location.href = `${location.origin}/login?p=${token}&code=${code}`;
-      }
-    }
-  };
-
-  const handleSignInBySocial = (platform: string) => {
-    if (intervalId.current) clearInterval(intervalId.current);
-
-    platformRef.current = platform;
-
-    modalDialog.current = window.open(
-      `${location.origin}/login?auth=${platform}&mode=popup&callback=SigninBySocial`,
-      "signup",
-      "width=800,height=500,status=no,toolbar=no,menubar=no,resizable=yes,scrollbars=no",
-    );
-
-    intervalId.current = setInterval(checkSignInCode, 500);
-  };
-
-  useEffect(() => {
-    window.SigninBySocial = async (data) => {
-      try {
-        const findBySocialRes = await fetch("/api/thirdparty/findbysocial", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            transport: data,
-          }),
-        });
-        const findBySocialData = await findBySocialRes.json();
-
-        const findByEmailRes = await fetch("/api/thirdparty/findbyemail", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: findBySocialData.data.email,
-          }),
-        });
-        const findByEmailData = await findByEmailRes.json();
-
-        if (findByEmailData.data?.length === 1) {
-          window.location.href = `${findByEmailData.data[0].domain}${findByEmailData.data[0].path}`;
-        } else if (findByEmailData.data?.length > 1) {
-          setExistTenants(findByEmailData.data);
-        } else {
-          setIsLoginError(true);
-        }
-      } catch (err) {
-        console.error(
-          "Unexpected error:",
-          err instanceof Error ? err.message : err,
-        );
-      }
-    };
-
-    return () => {
-      if (intervalId.current) {
-        clearInterval(intervalId.current);
-      }
-    };
-  }, [setExistTenants]);
 
   return (
     <>
       <StyledLogInAccount>
         <Text size={2} label={t("DontHaveAnAccount")} />
         <StyledLogInAccountLink
-          href={`/docspace-registration${router.query.desktop === "true" ? "?desktop=true" : ""}`}
-          color="main"
-          textUnderline
-          hover="underline-none"
-          label={t("SignUp")}
+          href="/docs-registration"
+          as="a"
+          label={t("Register")}
+          onClick={setStatus}
         />
       </StyledLogInAccount>
 
       <StyledLogInWrapper>
-        <StyledLogInHeading level={1} size={4} textAlign="center">
+        <StyledLogInHeading level={1} size={4}>
           <Trans
             t={t}
-            i18nKey="WelcomeBackToYourDocSpace"
+            i18nKey="WelcomeBackToYourDocsCloud"
             components={[<Text key={0} as="span" color="main" />]}
           />
         </StyledLogInHeading>
 
         <StyledLogInContainer>
-          <StyledLogInSocialButtons>
-            {["$google", "$zoom", "$x", "$linkedin"].map((platform) => (
-              <StyledLogInSocialButton
-                onClick={() =>
-                  handleSignInBySocial(
-                    platform === "$google"
-                      ? "google"
-                      : platform === "$zoom"
-                        ? "zoom"
-                        : platform === "$x"
-                          ? "twitter"
-                          : platform === "$linkedin"
-                            ? "linkedin"
-                            : "",
-                  )
-                }
-                data-testid={
-                  platform === "$google"
-                    ? "sign-in-google-button"
-                    : platform === "$zoom"
-                      ? "sign-in-zoom-button"
-                      : platform === "$x"
-                        ? "sign-in-twitter-button"
-                        : platform === "$linkedin"
-                          ? "sign-in-linkedin-button"
-                          : ""
-                }
-                key={platform}
-                {...{ [platform]: true }}
-                variant="tertiary"
-                size="small"
-              />
-            ))}
-          </StyledLogInSocialButtons>
-
-          <StyledLogInLabel>{t("OrLogInWithEmail")}</StyledLogInLabel>
-
           <StyledLogInForm>
             <Input
               onChange={(e) => handleInputChange("email", e.target.value)}
@@ -259,9 +130,9 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
                 }));
                 checkFormValid();
               }}
-              data-testid="sign-in-email-input"
+              data-testid="docs-log-in-email-input"
               value={formData.email}
-              label={t("EmailAddress")}
+              label={t("Email")}
               placeholder="name@domain.com"
               required
               caption={
@@ -284,57 +155,6 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
               }
             />
 
-            <StyledLogInInputWrapper>
-              <PasswordInput
-                onChange={(e) => handleInputChange("password", e.target.value)}
-                onBlur={() => {
-                  setIsEmpty((prevState) => ({
-                    ...prevState,
-                    password: formData.password.length === 0,
-                  }));
-                  setIsError((prevState) => ({
-                    ...prevState,
-                    password: false,
-                  }));
-                  checkFormValid();
-                }}
-                dataTestId="sign-in-password-input"
-                value={formData.password}
-                label={t("Password")}
-                required
-                caption={
-                  formData.password.length === 0
-                    ? t("PasswordIsEmpty")
-                    : formData.password.length < 8
-                      ? t("ThePasswordMustContainAtLeast8Characters")
-                      : ""
-                }
-                status={
-                  isError.password
-                    ? "error"
-                    : isEmpty.password
-                      ? "error"
-                      : formData.password.length > 0
-                        ? formData.password.length >= 8
-                          ? "success"
-                          : "error"
-                        : "default"
-                }
-              />
-
-              {((isError.email && isError.password) || isLoginError) && (
-                <Text
-                  as="div"
-                  fontSize="13px"
-                  lineHeight="16px"
-                  color="#cb0000"
-                >
-                  {isLoginError
-                    ? t("NoThirdPartyAccountFound")
-                    : t("IncorrectEmailOrPassword")}
-                </Text>
-              )}
-
               {isFormLoading && (
                 <Text
                   as="div"
@@ -346,22 +166,38 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
                 </Text>
               )}
 
-              <StyledLogInForgotPasswordButton
-                onClick={() => setStatus("restorePassword")}
-                data-testid="forgot-password-button"
-              >
-                {t("ForgotPassword")}
-              </StyledLogInForgotPasswordButton>
-            </StyledLogInInputWrapper>
           </StyledLogInForm>
-        </StyledLogInContainer>
 
+          <Text fontSize="12px" lineHeight="1.4em" color="#808080">
+            <Trans
+              t={t}
+              i18nKey="ByClickingContinue"
+              components={[
+                <Link
+                  key={0}
+                  href="https://help.onlyoffice.co/Products/Files/doceditor.aspx?fileid=6615734&doc=cy9XcGc5TXNONjVTMkNrR2NZUEVTT2E1Y1FDZGVRQ1YvOTJYTnpkZ3JEWT0_IjY2MTU3MzQi0"
+                  target="_blank"
+                  color="main"
+                  textUnderline
+                />,
+                <Link
+                  key={1}
+                  href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261"
+                  target="_blank"
+                  color="main"
+                  textUnderline
+                />,
+              ]}
+            />
+          </Text>
+        </StyledLogInContainer>
+        
         <Button
           onClick={onSubmit}
-          data-testid="sign-in-button"
+          data-testid="docs-log-in-button"
           disabled={!isFormValid}
           fullWidth
-          label={t("LogIn")}
+          label={t("Continue")}
         />
       </StyledLogInWrapper>
     </>

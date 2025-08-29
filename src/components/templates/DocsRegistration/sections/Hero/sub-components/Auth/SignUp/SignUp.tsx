@@ -190,7 +190,7 @@ const SignUp = () => {
       <StyledSignUpAccount>
         <Text size={2} label={t("AlreadyHaveAnAccount")} />
         <StyledSignUpAccountLink
-          href={`/docspace-registration${router.query.desktop === "true" ? "?desktop=true" : ""}#login`}
+          href="/docs-registration#login"
           color="main"
           textUnderline
           hover="underline-none"

@@ -6,16 +6,14 @@ import {
   StyledHeroWrapper,
   StyledHeroItem,
 } from "./Hero.styled";
-import { IHero, TStatus } from "./Hero.types";
+import { TStatus } from "./Hero.types";
 import { Info } from "./sub-components/Info";
 import { SignUp } from "./sub-components/Auth/SignUp";
 import { LogIn } from "./sub-components/Auth/LogIn";
-import { RestorePassword } from "./sub-components/Auth/RestorePassword";
 
-const Hero = ({ tenants, queryParams }: IHero) => {
+const Hero = () => {
   const router = useRouter();
   const [status, setStatus] = useState<TStatus>("signup");
-  const [existTenants, setExistTenants] = useState(tenants?.data);
 
   useEffect(() => {
     const hash = window.location.hash.replace("#", "");
@@ -37,14 +35,10 @@ const Hero = ({ tenants, queryParams }: IHero) => {
             <Info />
           </StyledHeroItem>
           <StyledHeroItem $auth>
-            {existTenants && existTenants.length > 0 ? (
-              <></>
-            ) : status === "signup" ? (
+            {status === "signup" ? (
               <SignUp />
             ) : status === "login" ? (
-              <LogIn setExistTenants={setExistTenants} setStatus={setStatus} />
-            ) : status === "restorePassword" ? (
-              <RestorePassword setStatus={setStatus} />
+              <LogIn setStatus={setStatus} />
             ) : null}
           </StyledHeroItem>
         </StyledHeroWrapper>

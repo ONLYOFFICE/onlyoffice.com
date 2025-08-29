@@ -1,1 +1,0 @@
-export { RestorePassword } from "./RestorePassword";

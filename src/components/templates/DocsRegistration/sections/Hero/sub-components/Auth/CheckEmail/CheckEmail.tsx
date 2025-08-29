@@ -7,11 +7,7 @@ import {
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
-export interface ICheckEmail {
-  setIsModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const CheckEmail = ({ setIsModalOpen }: ICheckEmail) => {
+const CheckEmail = () => {
   const { t } = useTranslation("docs-registration");
 
   return (
@@ -29,7 +25,7 @@ const CheckEmail = ({ setIsModalOpen }: ICheckEmail) => {
       </StyledCheckEmailBanner>
 
       <Text size={3} color="#666666">
-        <Trans t={t} i18nKey="TheLinkIsValidFor60Minutes" />
+        <Trans t={t} i18nKey="InviteInformationSpam" />
       </Text>
     </StyledCheckEmail>
   );
