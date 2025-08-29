@@ -1,50 +1,43 @@
 {
-  "PageTitle": "About ONLYOFFICE | ONLYOFFICE",
-  "PageTitleOG": "About the project",
-  "PageDescription": "Read about ONLYOFFICE mission, its history and team.",
-
-  "HeroHeadingRun": "Run your own office with the <0>ONLYOFFICE</0>",
-  "HeroTextOurMission": "Our mission is to bring the most innovative web office apps to everyone",
-  "HeroQuotesTextWeWant": "We want our online editors to be ideal, like a Swiss watch",
+  "PageTitle": "ONLYOFFICE 沿革 | ONLYOFFICE",
+  "PageTitleOG": "プロジェクトについて",
+  "PageDescription": "ONLYOFFICE の使命、歴史、チームについて読む。",
+  "HeroHeadingRun": "<0>ONLYOFFICE</0> で自分のオフィスを運営",
+  "HeroTextOurMission": "当社のミッションは、最も画期的なオフィス アプリを皆さまに広めることです",
+  "HeroQuotesTextWeWant": "当社のオンラインエディターを理想的なものに仕上げたいと思っております",
   "HeroQuotesTitleLevBannov": "Lev Bannov",
-  "HeroQuotesSubtitleFounder": "Founder and CEO",
-
-  "AscensioSystem": "Ascensio System SIA - home of the <0>ONLYOFFICE</0>",
+  "HeroQuotesSubtitleFounder": "創立者兼最高経営責任者",
+  "AscensioSystem": "Ascensio System SIA - <0>ONLYOFFICE</0> の本拠地",
   "AscensioDescriptions": [
-    "ONLYOFFICE is a project developed by experienced IT experts from Ascensio System SIA, leading IT company with headquarters in Riga, Latvia. Originally ONLYOFFICE was designed for internal team collaboration.",
-    "An attempt to introduce it to a wider audience proved to be successful: ONLYOFFICE received very positive feedback from the Internet community. As a result, its functionality was considerably revised and expanded that brought about a high and stable growth of users from different countries.",
-    "Nowadays, ONLYOFFICE is an international, open source project with employees and contributors in more than 30 countries. <0>The holding company</0> in Singapore unites our offices around the world under the ONLYOFFICE brand. For now, we have departments in Riga, Singapore, London, Dallas, Belgrade, Yerevan, Tashkent and Shanghai. Would like to join our big open source family? Check how to <1>become a contributor</1> or discover <2>job openings</2>."
+    "ONLYOFFICE はラトビアのリガに本拠地を置く大手 IT 会社 Ascensio System SIA 社に所属する上級 IT 専門家によって開発されたプロジェクトです。ONLYOFFICE はもともと内部チームの共同編集のために設計されました。",
+    "ONLYOFFICE をより多くの人たちに使用してもらおうという働きかけは成功を収めました。インターネットのコミュニティーからも大変好評を受けています。その結果、機能の見直しが進み、他国からのユーザーも大幅に増え、ONLYOFFICE は順調に成長しつづけています。",
+    "現在、ONLYOFFICEは国際的なオープンソースプロジェクトとして、30カ国以上に従業員と貢献者を抱えています。シンガポールの<0>持株会社</0>が、ONLYOFFICEブランドのもと、世界中のオフィスを統合しています。現在はリガ、シンガポール、ロンドン、ダラス、ベオグラード、エレバン、タシケント、上海にオフィスがあります。私たちの大きなオープンソースファミリーに加わりませんか？<1>コントリビューターにな</1>るにはどうすればいいか、<2>求人情報</2>をぜひご覧ください。"
   ],
   "AscensioDescriptionsTextLink1": "https://www.onlyoffice.com/blog/2023/08/onlyoffice-opens-holding-in-singapore",
-
-  "PeopleTextOnlyOffice": "ONLYOFFICE is now used by more than",
-  "PeopleTextCount": "15 000 000 people",
-  "PeopleTextAllOver": "all over the world",
-  "PeopleTextCustomer": "Customer stories",
-
-  "FeaturesItemHeading1": "<0>ONLYOFFICE Docs</0> - the future of document processing",
+  "PeopleTextOnlyOffice": "現在世界中から",
+  "PeopleTextCount": "1500 万人",
+  "PeopleTextAllOver": "以上が ONLYOFFICE を使用しています",
+  "PeopleTextCustomer": "お客様の声",
+  "FeaturesItemHeading1": "<0>ONLYOFFICE</0> - 未来型のドキュメント編集",
   "FeaturesItemText1": [
-    "At Ascensio System SIA, we always keep up to date with latest technology trends and try to make an effective use of them in our work.",
-    "We were the first to build online document editors using HTML5 Canvas element. That allows us to keep ahead of our competitors providing customers with the most complete and feature-rich online office suite highly compatible with Microsoft Office and OpenDocument file formats, among others.",
-    "Introduced for the first time at <0>CeBit</0>, ONLYOFFICE Docs have become our pride and joy. Now you can use it as a part of our productivity suite or easily integrate into your own SaaS or on-premises solutions."
+    "Ascensio System SIA では、 最新テクノロジーのトレンドを取り入れ、当社の業務に取り込む努力をしています。",
+    "当社は、HTML5 キャンバス要素を使用してオンライン ドキュメント エディターを構築した初めての会社です。当社は他の競合よりも一歩先に進んでおり、Microsoft Office、OpenDocument ファイル フォーマットに適合する最も完成に近い多機能オンライン オフィス スイートを顧客に提供しています。",
+    "<0>CeBit</0> で最初に紹介されて以来、ONLYOFFICE Online Document Editors は私たちの大切な一部になっています。当社生産性スイートの一部としての使用も、自分の SaaS ソリューションへの統合も可能になりました。"
   ],
-  "FeaturesItemLink1": "Learn more about ONLYOFFICE Docs",
+  "FeaturesItemLink1": "当社製品についてもっと学ぶ",
   "FeaturesItemTextLink1": "https://www.onlyoffice.com/blog/2012/03/teamlab-at-cebit-2012-how-we-did-it/?from=about",
-
-  "FeaturesItemHeading2": "<0>ONLYOFFICE Workspace</0> - the ONLY thing you need to make your business grow",
+  "FeaturesItemHeading2": "<0>ONLYOFFICE</0> - これひとつでビジネスが成長",
   "FeaturesItemText2": [
-    "ONONLYOFFICE offers a complete productivity suite with document management, project management, CRM, calendar, mail, and corporate network.",
-    "In this way you don't need to switch back and forth between multiple applications to perform different tasks.",
-    "Here you obtain a single multi-featured system to organize every step of your work improving your productivity and optimizing efforts for success."
+    "ONLYOFFICE では、ドキュメント管理、プロジェクト管理、CRM、カレンダー、メール、法人ネットワークなどの機能が付いた生産性スイート完全版を提供しております。",
+    "他のタスクを処理する場合に、複数のアプリケーションを行ったり来たりする必要がなくなります。",
+    "ここでは、ひとつの多機能システムで作業の全手順を管理することができ、生産性を上げ、労力を省きながら、良い結果を出すことができます。"
   ],
-  "FeaturesItemLink2": "Learn more about ONLYOFFICE Workspace",
-
-  "FeaturesItemHeading3": "<0>ONLYOFFICE DocSpace</0> - document collaboration made simpler",
+  "FeaturesItemLink2": "ONLYOFFICE Workspaceの詳細はこちら",
+  "FeaturesItemHeading3": "<0>ONLYOFFICE DocSpace</0>：ドキュメントコラボレーションをよりシンプルに",
   "FeaturesItemText3": [
-    "ONLYOFFICE DocSpace is intended to improve collaboration on office documents and other content with various people you need to interact such as your colleagues, teammates, customers, partners, contractors, sponsors, etc.",
-    "The platform provides a room-based environment for organizing a clear file structure depending on your needs or project goals. Flexible access permissions and user roles allow you to fine-tune the access to the whole space or separate rooms."
+    "ONLYOFFICE DocSpaceは、同僚、チームメイト、顧客、パートナー、請負業者、スポンサーなど、交流が必要な様々な人々とのオフィス文書やその他のコンテンツに関するコラボレーションを改善することを目的としています。",
+    "このプラットフォームは、ニーズやプロジェクトの目標に応じて明確なファイル構造を整理するためのルームベースの環境を提供します。柔軟なアクセス許可とユーザーロールにより、スペース全体または個別のルームへのアクセスを微調整することができます。"
   ],
-  "FeaturesItemLink3": "Learn more about ONLYOFFICE DocSpace",
-
-  "DiscoverHeading": "Discover our story"
+  "FeaturesItemLink3": "ONLYOFFICE DocSpaceの詳細はこちら",
+  "DiscoverHeading": "当社の歴史"
 }

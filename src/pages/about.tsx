@@ -31,6 +31,8 @@ const AboutPage = ({ locale, abouts }: ILocale & IAbouts) => {
             buttonId: "oo-menu-item-btn-resources",
             linkId: "oo-menu-link-company"
           }}
+          backgroundColor="#F5F5F5"
+          borderColor="#F5F5F5"
         />
       </Layout.Header>
       <Layout.Main>
