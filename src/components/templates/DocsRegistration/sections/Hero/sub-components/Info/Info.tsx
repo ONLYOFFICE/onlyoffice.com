@@ -1,5 +1,6 @@
 import { useTranslation, Trans } from "next-i18next";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import {
   StyledInfoBackLink,
   StyledInfoWrapper,
@@ -20,14 +21,33 @@ const Info = () => {
   const { t } = useTranslation("docs-registration");
   const router = useRouter();
 
+  useEffect(() => {
+    if (document.referrer) {
+      localStorage.setItem("previousPage", document.referrer);
+    }
+  }, []);
+
   const handleBackToPreviousPage = () => {
     const currentPath = window.location.origin + window.location.pathname;
+    const previousPage = localStorage.getItem("previousPage");
     const ref = document.referrer;
 
-    if (ref && !ref.startsWith(currentPath)) {
-      window.location.href = ref;
+    if (previousPage) {
+      window.location.href = previousPage;
+    } else if (ref && !ref.startsWith(currentPath)) {
+      const isInternal = ref.startsWith(window.location.origin);
+
+      if (isInternal) {
+        router.push(ref.replace(window.location.origin, ""));
+      } else {
+        window.location.href = ref;
+      }
     } else {
-      router.back();
+      if (window.history.length > 1) {
+        router.back();
+      } else {
+        router.push("/");
+      }
     }
   };
 
