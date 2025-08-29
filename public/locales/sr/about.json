@@ -1,0 +1,43 @@
+{
+  "PageTitle": "About ONLYOFFICE | ONLYOFFICE",
+  "PageTitleOG": "About the project",
+  "PageDescription": "Read about ONLYOFFICE mission, its history and team.",
+  "HeroHeadingRun": "Pokrenite sopstvenu kancelariju sa <0>ONLYOFFICE-om</0>",
+  "HeroTextOurMission": "Our mission is to bring the most innovative web office apps to everyone",
+  "HeroQuotesTextWeWant": "Želimo da naši online urednici budu idealni, kao švajcarski sat",
+  "HeroQuotesTitleLevBannov": "Lev Bannov",
+  "HeroQuotesSubtitleFounder": "Osnivač i izvršni direktor",
+  "AscensioSystem": "Ascensio Sistem SIA - dom <0>ONLYOFFICE-a</0>",
+  "AscensioDescriptions": [
+    "ONLYOFFICE je projekat koji su razvili iskusni IT stručnjaci iz Ascensio Sistem SIA, vodeće IT kompanije sa sedištem u Rigi, Letonija. Prvobitno ONLYOFFICE je dizajniran za internu timsku saradnju.",
+    "Pokušaj da se predstavi široj publici pokazao se uspešnim: ONLYOFFICE je dobio veoma pozitivne povratne informacije od internet zajednice. Kao rezultat toga, njegova funkcionalnost je znatno revidirana i proširena što je dovelo do visokog i stabilnog rasta korisnika iz različitih zemalja.",
+    "Danas je ONLYOFFICE međunarodni, projekat otvorenog koda sa zaposlenima i saradnicima u više od 30 zemalja. <0>Holding kompanija</0> u Singapuru okuplja naše kancelarije širom sveta pod brendom ONLYOFFICE. Za sada imamo odeljenja u Rigi, Singapuru, Londonu, Dalasu, Beogradu, Jerevanu i Taškentu. Da li biste želeli da se pridružite našoj velikoj porodici otvorenog koda? Proverite kako da <1>postanete saradnik</1> ili otkrijte <2>slobodna radna mesta</2>."
+  ],
+  "AscensioDescriptionsTextLink1": "https://www.onlyoffice.com/blog/2023/08/onlyoffice-opens-holding-in-singapore",
+  "PeopleTextOnlyOffice": "ONLYOFFICE sada koristi više od",
+  "PeopleTextCount": "15 000 000 ljudi",
+  "PeopleTextAllOver": "širom sveta",
+  "PeopleTextCustomer": "Priče korisnika",
+  "FeaturesItemHeading1": "<0>ONLYOFFICE Docs</0> - budućnost obrade dokumenata",
+  "FeaturesItemText1": [
+    "At Ascensio System SIA, we always keep up to date with latest technology trends and try to make an effective use of them in our work.",
+    "Bili smo prvi koji su izgradili online uređivače dokumenata koristeći HTML5 Canvas element. To nam omogućava da budemo ispred naših konkurenata pružajući korisnicima najkompletniji i bogat online kancelarijski paket koji je veoma kompatibilan sa Microsoft Office i OpenDocument formatima datoteka, između ostalog.",
+    "Prvi put predstavljeni na <0>CeBit-u</0>, ONLYOFFICE Docs su postali naš ponos i radost. Sada ih možete koristiti kao deo našeg paketa za produktivnost ili ih lako integrisati u svoja SaaS ili lokalna rešenja."
+  ],
+  "FeaturesItemLink1": "Saznajte više o ONLYOFFICE Docs",
+  "FeaturesItemTextLink1": "https://www.onlyoffice.com/blog/2012/03/teamlab-at-cebit-2012-how-we-did-it/?from=about",
+  "FeaturesItemHeading2": "<0>ONLYOFFICE Workspace</0> - JEDINA stvar koja vam je potrebna da bi vaše poslovanje raslo",
+  "FeaturesItemText2": [
+    "ONLYOFFICE nudi kompletan paket produktivnosti sa upravljanjem dokumentima, upravljanjem projektima, CRM-om, kalendarom, poštom i korporativnom mrežom.",
+    "Na ovaj način ne morate da se prebacujete napred i nazad između više aplikacija za obavljanje različitih zadataka.",
+    "Ovde dobijate jedan multi-featured sistem za organizovanje svakog koraka vašeg rada, poboljšanje produktivnosti i optimizaciju napora za uspeh."
+  ],
+  "FeaturesItemLink2": "Saznajte više o ONLYOFFICE Workspace-u",
+  "FeaturesItemHeading3": "<0>ONLYOFFICE DocSpace</0> - saradnja na dokumentima je postala jednostavnija",
+  "FeaturesItemText3": [
+    "ONLYOFFICE DocSpace je namenjen poboljšanju saradnje na kancelarijskim dokumentima i drugom sadržaju sa raznim ljudima sa kojima treba da komunicirate, kao što su vaši kolege, članovi tima, klijenti, partneri, izvođači, sponzori itd.",
+    "Platforma pruža okruženje zasnovano na prostorijama za organizovanje jasne strukture datoteka u zavisnosti od vaših potreba ili ciljeva projekta. Fleksibilne dozvole pristupa i korisničke uloge omogućavaju vam da precizno podesite pristup celom prostoru ili odvojenim prostorijama."
+  ],
+  "FeaturesItemLink3": "Saznajte više o ONLYOFFICE DocSpace-u",
+  "DiscoverHeading": "Otkrijte našu priču"
+}
