@@ -9,7 +9,7 @@ const StyledHeroSection = styled(Section)<{
 }>`
   background-image: ${({ $locale }) => $locale === "zh" ? "" : "url(/images/templates/about/hero/hero-img.svg)"};
   background-repeat: no-repeat;
-  background-position-y: 47%;
+  background-position-y: 25%;
   background-position-x: calc(50% + 260px);
 
   @media ${device.tablet} {
