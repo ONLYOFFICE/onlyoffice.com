@@ -40,7 +40,7 @@ const Features = () => {
                           textUnderline={true}
                           hover="underline-none"
                           color="main"
-                          href={"https://www.onlyoffice.com/blog/2012/03/teamlab-at-cebit-2012-how-we-did-it/?from=about"}
+                          href={t("FeaturesItemTextLink1")}
                         />
                       ]} />
                     </StyledFeaturesText>

@@ -22,7 +22,7 @@ const Ascensio = () => {
         {descriptionsContent.map((description) => (
           <StyledAscensioText key={description} textAlign="center" size={1}>
             <Trans t={t} i18nKey={description} components={[
-              <Link key={0} color="main" href="https://www.onlyoffice.com/blog/2023/08/onlyoffice-opens-holding-in-singapore" />,
+              <Link key={0} color="main" href={t("AscensioDescriptionsTextLink1")} />,
               <Link key={1} color="main" href="/contribute" />,
               <Link key={2} color="main" href="/vacancies" />
             ]} />

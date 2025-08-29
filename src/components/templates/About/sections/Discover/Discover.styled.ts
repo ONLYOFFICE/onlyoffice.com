@@ -96,6 +96,10 @@ const StyledDiscoverBotItem = styled.div`
   position: relative;
   cursor: pointer;
 
+  @media ${device.mobile} {
+    flex-grow: 1;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -106,12 +110,20 @@ const StyledDiscoverBotItem = styled.div`
     border-radius: 50%;
     background: #afafaf;
     z-index: 1;
+
+    @media ${device.mobile} {
+      left: 25px;
+    }
   }
 `;
 
 const StyledDiscoverSlideHeading = styled(Heading)`
   margin-top: 60px;
   padding-right: 25px;
+
+  @media ${device.mobile} {
+    padding-left: 25px;
+  }
 `;
 
 const StyledDiscoverSlideText = styled.div`
@@ -120,6 +132,11 @@ const StyledDiscoverSlideText = styled.div`
   color: #424242;
   font-size: 15px;
   line-height: 20px;
+
+  @media ${device.mobile} {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
   & > p {
     padding: 10px 0;
