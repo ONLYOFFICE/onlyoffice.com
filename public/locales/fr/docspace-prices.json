@@ -126,7 +126,7 @@
   "NumberOfUsers": "Nombre d'utilisateurs préférée",
   "NumberOfUsersTooltip": "Le nombre spécifié d'utilisateurs définit combien de personnes peuvent avoir accès à l'édition de documents, de feuilles de calcul et de présentations. Le nombre de documents pouvant être modifiés simultanément n'est pas limité. Les autres utilisateurs ne pourront ouvrir les documents qu'en lecture seule.",
   "LicenseDuration": "Durée de la licence",
-  "Support&Updates": "Support et mises à jour",
+  "Support & Updates": "Support et mises à jour",
   "SupportLevel": "Niveau de support",
   "Basic": "Standard",
   "BuyNow": "Acheter maintenant",
