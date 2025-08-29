@@ -38,7 +38,7 @@ const Hero = () => {
             {status === "signup" ? (
               <SignUp />
             ) : status === "login" ? (
-              <LogIn setStatus={setStatus} />
+              <LogIn />
             ) : null}
           </StyledHeroItem>
         </StyledHeroWrapper>

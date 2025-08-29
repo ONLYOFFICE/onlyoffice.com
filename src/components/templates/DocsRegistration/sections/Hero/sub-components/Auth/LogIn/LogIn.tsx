@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
-import { TStatus } from "../../../Hero.types";
 import {
   StyledLogInAccount,
   StyledLogInAccountLink,
@@ -15,11 +14,7 @@ import { Input } from "@src/components/ui/Input";
 import { Button } from "@src/components/ui/Button";
 import { validateEmail } from "@src/utils/validators";
 
-export interface ILogIn {
-  setStatus: (status: TStatus) => void;
-}
-
-const LogIn = ({setStatus}: ILogIn) => {
+const LogIn = () => {
   const { t } = useTranslation("docs-registration");
 
   const [formData, setFormData] = useState({
@@ -58,37 +53,20 @@ const LogIn = ({setStatus}: ILogIn) => {
     setIsFormValid(false);
     setIsFormLoading(true);
 
-    const findByEmailRes = await fetch("/api/thirdparty/findbyemail", {
+    const data = { email: formData.email };
+
+    const docscloudsigninRes = await fetch("/api/thirdparty/docscloudsignin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: formData.email }),
+      body: JSON.stringify({ data }), //TODO: add recaptchaLang
     });
-    const findByEmailData = await findByEmailRes.json();
+    const docscloudsigninData = await docscloudsigninRes.json();
 
-    if (findByEmailData.data?.length === 0) {
+    if (docscloudsigninData.data?.length === 0) {
       setIsError({ email: true });
+      console.log("docscloudsigninData.data?.length === 0");
     } else {
-      const findByEmailPasswordRes = await fetch(
-        "/api/thirdparty/findbyemailpassword",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: formData.email,
-          }),
-        },
-      );
-      const findByEmailPasswordData = await findByEmailPasswordRes.json();
-
-      if (findByEmailPasswordData.data?.length === 0) {
-        setIsError({ email: true });
-        setIsFormLoading(false);
-        return;
-      } else if (findByEmailPasswordData.data?.length === 1) {
-        window.location.href = `${findByEmailPasswordData.data[0].domain}${findByEmailPasswordData.data[0].path}`;
-
-        return;
-      }
+      console.log(docscloudsigninData.data);
     }
 
     setIsFormLoading(false);
@@ -100,9 +78,11 @@ const LogIn = ({setStatus}: ILogIn) => {
         <Text size={2} label={t("DontHaveAnAccount")} />
         <StyledLogInAccountLink
           href="/docs-registration"
-          as="a"
+          color="main"
+          textUnderline
+          id="docs-registration-to-signup"
+          data-testid="docs-registration-to-signup"
           label={t("Register")}
-          onClick={setStatus}
         />
       </StyledLogInAccount>
 

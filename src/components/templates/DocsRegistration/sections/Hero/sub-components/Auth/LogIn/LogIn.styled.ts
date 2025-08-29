@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
-import { Button } from "@src/components/ui/Button";
+import { Link } from "@src/components/ui/Link";
 
 const StyledLogInAccount = styled.div`
   display: flex;
@@ -21,7 +21,7 @@ const StyledLogInAccount = styled.div`
   }
 `;
 
-const StyledLogInAccountLink = styled(Button)`
+const StyledLogInAccountLink = styled(Link)`
   margin-left: 16px;
 `;
 
