@@ -190,7 +190,7 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
           const targetSection = items.find((item) => item.contains(target));
           if (targetSection) {
             wrapper.scrollTo({
-              left: targetSection.offsetLeft - wrapper.offsetWidth / 2 + 325 / 2, // Возможно, 325 нужно будет сделать динамическим для мобильных
+              left: targetSection.offsetLeft - wrapper.offsetWidth / 2 + 325 / 2,
               behavior: "smooth",
             });
           }
