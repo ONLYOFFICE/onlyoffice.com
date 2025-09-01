@@ -45,6 +45,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
   const [token, setToken] = useState("");
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
   const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
+  const [hCaptchaSize, setHCaptchaSize] = useState<"normal" | "compact">("normal");
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -135,7 +136,24 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
     
     _onComplete(docscloudsigninData);
   };
-  
+
+  useEffect(() => {
+    if (document.referrer) {
+      localStorage.setItem('previousPage', document.referrer);
+    }
+
+    if (typeof window === "undefined") return;
+
+    const updateSize = () => {
+      setHCaptchaSize(window.innerWidth < 334 ? "compact" : "normal");
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
   useEffect(() => {
     checkFormValid();
   }, [checkFormValid]);
@@ -204,6 +222,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
 
             <HCaptcha
               ref={refHcaptcha}
+              size={hCaptchaSize}
               onVerify={handleHCaptchaChange}
               onExpire={() => handleHCaptchaChange(null)}
             />
@@ -250,7 +269,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
         {formStatus === "error" && (<StyledSignUpCaption $error>{t("WeAreSorryButAnErrorOccurred")}</StyledSignUpCaption>)}
         {formStatus === "success" && (<StyledSignUpCaption className="success">{t("YourRequestHasBeenSentSuccessfully")}</StyledSignUpCaption>)}
       </StyledLogInWrapper>
-
+      
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} maxWidth="544px" withCloseBtn positionCloseBtn="inside">
         <StyledSuccessModal>
           <CheckEmail text2="TheLinkIsValidFor60Minutes" />

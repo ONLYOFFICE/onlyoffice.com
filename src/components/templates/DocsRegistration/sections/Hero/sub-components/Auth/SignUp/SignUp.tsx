@@ -6,6 +6,7 @@ import {
   StyledSignUpWrapper,
   StyledSignUpHeader,
   StyledSignUpBox,
+  StyledSignUpText,
   StyledSignUpAccount,
   StyledSignUpAccountLink,
   StyledSignUpCaption,
@@ -59,6 +60,7 @@ const SignUp = () => {
   });
   const [isFormValid, setIsFormValid] = useState(false);
   const [token, setToken] = useState("");
+  const [hCaptchaSize, setHCaptchaSize] = useState<"normal" | "compact">("normal");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formStatus, setFormStatus] = useState<ILoaderButton["status"]>("default");
 
@@ -183,6 +185,17 @@ const SignUp = () => {
     if (document.referrer) {
       localStorage.setItem('previousPage', document.referrer);
     }
+
+    if (typeof window === "undefined") return;
+
+    const updateSize = () => {
+      setHCaptchaSize(window.innerWidth < 334 ? "compact" : "normal");
+    };
+
+    updateSize();
+    window.addEventListener("resize", updateSize);
+
+    return () => window.removeEventListener("resize", updateSize);
   }, []);
 
   useEffect(() => {
@@ -315,13 +328,14 @@ const SignUp = () => {
 
           <HCaptcha
             ref={refHcaptcha}
+            size={hCaptchaSize}
             onVerify={handleHCaptchaChange}
             onExpire={() => handleHCaptchaChange(null)}
           />
 
           <div>
           {isCaptchaInvalid && <StyledSignUpCaption $error className="wrongcaptcha">{t("WrongCaptcha")}</StyledSignUpCaption>}
-          <Text fontSize="12px" lineHeight="18px">
+          <StyledSignUpText>
             <Trans
               t={t}
               i18nKey="ByClickingStartFree"
@@ -336,7 +350,7 @@ const SignUp = () => {
                 />,
               ]}
             />
-          </Text>
+          </StyledSignUpText>
           </div>
 
           <div>

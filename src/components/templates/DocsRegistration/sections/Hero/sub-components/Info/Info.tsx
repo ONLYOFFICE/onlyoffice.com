@@ -61,7 +61,7 @@ const Info = () => {
       <StyledInfoWrapper>
         <StyledInfoBox>
           <StyledInfoLogo
-            src="/images/templates/docs-registration/oo_docs.svg"
+            src={router.locale !== "zh" ? "/images/templates/docs-registration/oo_docs.svg" : "/images/templates/docs-registration/oo_docs_zh.svg"}
             alt="ONLYOFFICE DocSpace"
           />
           <StyledInfoHeading level={2}>

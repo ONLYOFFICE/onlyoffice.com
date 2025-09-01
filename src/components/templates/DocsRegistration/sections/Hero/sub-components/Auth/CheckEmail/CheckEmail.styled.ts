@@ -4,14 +4,10 @@ import { device } from "@src/utils/device";
 const StyledCheckEmail = styled.div`
   display: grid;
   row-gap: 24px;
-  margin-top: 32px;
+  margin: 32px auto 0;
   width: 100%;
   max-width: 518px;
   text-align: center;
-
-  @media ${device.tabletS} {
-    margin: 0 auto;
-  }
 `;
 
 const StyledCheckEmailImage = styled.div`
@@ -27,8 +23,12 @@ const StyledCheckEmailBanner = styled.div`
   border-radius: 3px;
   padding: 16px 8px;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5em;
   background-color: #f8f9f9;
+
+  @media ${device.mobile} {
+    font-size: 14px;
+  }
 `;
 
 export {

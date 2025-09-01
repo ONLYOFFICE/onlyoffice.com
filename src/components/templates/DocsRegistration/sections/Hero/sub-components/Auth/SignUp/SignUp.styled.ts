@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
+import { Text } from "@src/components/ui/Text";
 
 const StyledSignUpAccount = styled.div`
   display: flex;
@@ -54,6 +55,11 @@ const StyledSignUpBox = styled.div`
   row-gap: 32px;
 `;
 
+const StyledSignUpText = styled(Text)`
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-top: -8px;
+`;
 
 const StyledSignUpCaption = styled.div<{ $error?: boolean }>`
   margin-top: 16px;
@@ -82,10 +88,6 @@ const StyledSuccessModal = styled.div`
   background-color: #ffffff;
   border-radius: 5px;
   padding: 16px 40px 32px;
-
-  @media ${device.tablet} {
-    padding: 16px 24px;
-  }
 `;
 
 export {
@@ -94,6 +96,7 @@ export {
   StyledSignUpWrapper,
   StyledSignUpHeader,
   StyledSignUpBox,
+  StyledSignUpText,
   StyledSignUpCaption,
   StyledSuccessModal,
 };

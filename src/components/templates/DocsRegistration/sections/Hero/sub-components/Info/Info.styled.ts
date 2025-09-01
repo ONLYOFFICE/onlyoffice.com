@@ -76,7 +76,7 @@ const StyledInfoBox = styled.div`
 
 const StyledInfoLogo = styled.img`
   display: block;
-  width: 294px;
+  width: 236px;
   height: 32px;
   object-fit: contain;
 

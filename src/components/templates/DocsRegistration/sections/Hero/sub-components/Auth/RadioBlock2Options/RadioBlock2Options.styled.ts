@@ -52,6 +52,8 @@ const StyledLineRadioLabel = styled.label`
   cursor: pointer;
 
   @media ${device.mobile} {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 24px;
   }
