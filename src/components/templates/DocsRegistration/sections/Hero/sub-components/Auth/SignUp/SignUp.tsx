@@ -65,6 +65,7 @@ const SignUp = () => {
   const emailIsValid = formData.email.trim().length > 0 && validateEmail(formData.email);
   
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
+  const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
 
   const { getClientReferenceId, getAffiliateToken } = useRewardful({
     onReady: () => {
@@ -125,7 +126,10 @@ const SignUp = () => {
     if (hCaptchaData.status === "errorHCaptchaInvalid") {
       setIsFormValid(false);
       setFormStatus("error");
+      setIsCaptchaInvalid(true);
+
       setTimeout(() => {
+        setIsCaptchaInvalid(false);
         setFormStatus("default");
       }, 5000);
       return;
@@ -315,6 +319,8 @@ const SignUp = () => {
             onExpire={() => handleHCaptchaChange(null)}
           />
 
+          <div>
+          {isCaptchaInvalid && <StyledSignUpCaption $error className="wrongcaptcha">{t("WrongCaptcha")}</StyledSignUpCaption>}
           <Text fontSize="12px" lineHeight="18px">
             <Trans
               t={t}
@@ -331,6 +337,7 @@ const SignUp = () => {
               ]}
             />
           </Text>
+          </div>
 
           <div>
           <LoaderButton
@@ -351,7 +358,7 @@ const SignUp = () => {
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} maxWidth="544px" withCloseBtn positionCloseBtn="inside">
         <StyledSuccessModal>
-          <CheckEmail setIsModalOpen={setIsModalOpen} />
+          <CheckEmail text2="InviteInformationSpam" />
         </StyledSuccessModal>
       </Modal>
     </>

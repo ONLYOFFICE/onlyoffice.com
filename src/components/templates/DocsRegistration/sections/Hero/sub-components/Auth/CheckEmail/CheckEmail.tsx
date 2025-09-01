@@ -7,7 +7,11 @@ import {
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
-const CheckEmail = () => {
+interface ICheckEmail {
+  text2: string
+}
+
+const CheckEmail = ({text2}: ICheckEmail) => {
   const { t } = useTranslation("docs-registration");
 
   return (
@@ -25,7 +29,7 @@ const CheckEmail = () => {
       </StyledCheckEmailBanner>
 
       <Text size={3} color="#666666">
-        <Trans t={t} i18nKey="InviteInformationSpam" />
+        <Trans t={t} i18nKey={text2} />
       </Text>
     </StyledCheckEmail>
   );

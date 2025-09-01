@@ -9,13 +9,16 @@ import {
   StyledLogInContainer,
   StyledLogInForm,
   StyledSignUpCaption,
+  StyledSuccessModal,
 } from "./LogIn.styled";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
+import { Modal } from "@src/components/ui/Modal";
 import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { validateEmail } from "@src/utils/validators";
+import { CheckEmail } from "../CheckEmail";
 
 interface ILogInProps {
   recaptchaLang: string;
@@ -42,6 +45,8 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
   const [token, setToken] = useState("");
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
   const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -75,7 +80,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
     } else if (response.status === 200 && !response.error) {
       setIsFormValid(true);
       setFormStatus("success");
-      //TODO: Open modal
+      setIsModalOpen(true);
     } else {
       setFormStatus("error");
       const respMsg = response.message;
@@ -245,6 +250,12 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
         {formStatus === "error" && (<StyledSignUpCaption $error>{t("WeAreSorryButAnErrorOccurred")}</StyledSignUpCaption>)}
         {formStatus === "success" && (<StyledSignUpCaption className="success">{t("YourRequestHasBeenSentSuccessfully")}</StyledSignUpCaption>)}
       </StyledLogInWrapper>
+
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} maxWidth="544px" withCloseBtn positionCloseBtn="inside">
+        <StyledSuccessModal>
+          <CheckEmail text2="TheLinkIsValidFor60Minutes" />
+        </StyledSuccessModal>
+      </Modal>
     </>
   );
 };

@@ -68,6 +68,11 @@ const StyledSignUpCaption = styled.div<{ $error?: boolean }>`
     text-align: center;
   }
 
+
+  &.wrongcaptcha {
+    margin: -32px 0 16px;
+  }
+
   @media ${device.mobile} {
     font-size: 11px;
   }
