@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useTranslation, Trans } from "next-i18next";
+import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import {
   StyledLogInAccount,
   StyledLogInAccountLink,
@@ -7,14 +8,20 @@ import {
   StyledLogInHeading,
   StyledLogInContainer,
   StyledLogInForm,
+  StyledSignUpCaption,
 } from "./LogIn.styled";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
-import { Button } from "@src/components/ui/Button";
+import { HCaptcha } from "@src/components/ui/HCaptcha";
+import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { validateEmail } from "@src/utils/validators";
 
-const LogIn = () => {
+interface ILogInProps {
+  recaptchaLang: string;
+}
+
+const LogIn = ({ recaptchaLang }: ILogInProps) => {
   const { t } = useTranslation("docs-registration");
 
   const [formData, setFormData] = useState({
@@ -27,7 +34,14 @@ const LogIn = () => {
     email: false,
   });
   const [isFormValid, setIsFormValid] = useState(false);
-  const [isFormLoading, setIsFormLoading] = useState(false);
+  const [formStatus, setFormStatus] = useState<ILoaderButton["status"]>("default");
+
+  const emailIsValid = formData.email.trim().length > 0 && validateEmail(formData.email);
+  const [mailError, setMailError] = useState("");
+  
+  const [token, setToken] = useState("");
+  const refHcaptcha = useRef<ReactCaptcha | null>(null);
+  const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -40,10 +54,50 @@ const LogIn = () => {
     }));
   };
 
-  const checkFormValid = (data = formData) => {
-    const emailIsValid = validateEmail(data.email);
-    setIsFormValid(emailIsValid);
+  const checkFormValid = useCallback(() => {
+    setIsFormValid(emailIsValid && !!token.length);
+  }, [emailIsValid, token]);
+
+  const handleHCaptchaChange = (token: string | null) => {
+    setToken(token || "");
   };
+
+  const _onComplete = (response: any) => {
+    setFormStatus("default");
+
+    if (response.status === 403) {
+      setFormStatus("error");
+      setIsCaptchaInvalid(true);
+      setTimeout(() => {
+        setIsCaptchaInvalid(false);
+      }, 5000);
+
+    } else if (response.status === 200 && !response.error) {
+      setIsFormValid(true);
+      setFormStatus("success");
+      //TODO: Open modal
+    } else {
+      setFormStatus("error");
+      const respMsg = response.message;
+      if (respMsg == "emailEmpty") setMailError("EmailIsEmpty");
+      if (respMsg == "emailIncorrect") setMailError("EmailIsIncorrect");
+      if (respMsg == "emailEmpty" || respMsg == "emailIncorrect") {
+        setIsError({ email: true });
+
+        setTimeout(() => {
+          setMailError("");
+        }, 5000);
+      }
+    }
+
+    refHcaptcha.current?.resetCaptcha();
+
+    setTimeout(() => {
+      setFormStatus("default");
+      checkFormValid();
+      setToken("");
+    }, 5000);
+  }
 
   const onSubmit = async () => {
     if (!isFormValid) {
@@ -51,26 +105,35 @@ const LogIn = () => {
     }
 
     setIsFormValid(false);
-    setIsFormLoading(true);
+    setFormStatus("loading");
 
-    const data = { email: formData.email };
+    const data = {
+      email: formData.email,
+      captcha: {
+        type: "hcaptcha",
+        token
+      }
+    };
 
     const docscloudsigninRes = await fetch("/api/thirdparty/docscloudsignin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ data }), //TODO: add recaptchaLang
+      body: JSON.stringify({ data, recaptchaLang }),
     });
-    const docscloudsigninData = await docscloudsigninRes.json();
 
-    if (docscloudsigninData.data?.length === 0) {
-      setIsError({ email: true });
-      console.log("docscloudsigninData.data?.length === 0");
-    } else {
-      console.log(docscloudsigninData.data);
+    let docscloudsigninData: any;
+    try {
+      docscloudsigninData = await docscloudsigninRes.json();
+    } catch (ex) {
+      docscloudsigninData = { error: "Invalid JSON response", message: {ex} };
     }
-
-    setIsFormLoading(false);
+    
+    _onComplete(docscloudsigninData);
   };
+  
+  useEffect(() => {
+    checkFormValid();
+  }, [checkFormValid]);
 
   return (
     <>
@@ -108,7 +171,6 @@ const LogIn = () => {
                   ...prevState,
                   email: false,
                 }));
-                checkFormValid();
               }}
               data-testid="docs-log-in-email-input"
               value={formData.email}
@@ -135,19 +197,15 @@ const LogIn = () => {
               }
             />
 
-              {isFormLoading && (
-                <Text
-                  as="div"
-                  fontSize="13px"
-                  lineHeight="16px"
-                  color="#999999"
-                >
-                  {t("PleaseWait")}
-                </Text>
-              )}
-
+            <HCaptcha
+              ref={refHcaptcha}
+              onVerify={handleHCaptchaChange}
+              onExpire={() => handleHCaptchaChange(null)}
+            />
           </StyledLogInForm>
 
+          <div>
+          {isCaptchaInvalid && <StyledSignUpCaption $error className="wrongcaptcha">{t("WrongCaptcha")}</StyledSignUpCaption>}
           <Text fontSize="12px" lineHeight="1.4em" color="#808080">
             <Trans
               t={t}
@@ -170,15 +228,22 @@ const LogIn = () => {
               ]}
             />
           </Text>
+          {mailError && <StyledSignUpCaption $error className="mailerror">{t(mailError)}</StyledSignUpCaption>}
+          </div>
         </StyledLogInContainer>
         
-        <Button
+        <LoaderButton
           onClick={onSubmit}
-          data-testid="docs-log-in-button"
+          status={formStatus}
           disabled={!isFormValid}
           fullWidth
           label={t("Continue")}
+          data-testid="docs-log-in-button"
         />
+
+        {formStatus === "loading" && (<StyledSignUpCaption>{t("PleaseWait")}</StyledSignUpCaption>)}
+        {formStatus === "error" && (<StyledSignUpCaption $error>{t("WeAreSorryButAnErrorOccurred")}</StyledSignUpCaption>)}
+        {formStatus === "success" && (<StyledSignUpCaption className="success">{t("YourRequestHasBeenSentSuccessfully")}</StyledSignUpCaption>)}
       </StyledLogInWrapper>
     </>
   );

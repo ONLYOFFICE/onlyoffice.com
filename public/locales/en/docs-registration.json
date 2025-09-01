@@ -31,7 +31,7 @@
   "Register": "Register",
 
   "WelcomeBackToYourDocsCloud": "Welcome back to your <0>Docs Cloud!</0>",
-  "Email": "E-mail*",
+  "Email": "E-mail",
   "ByClickingContinue": "By clicking 'Continue', you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>.",
   "Continue": "Continue",
   "CheckYourEmail": "Check your email!",
@@ -40,6 +40,7 @@
   "TheLinkIsValidFor60Minutes": "The link is valid for 60 minutes. If you didn't receive an email, please check your spam.",
   "BackToSignUp": "Back to Sign up",
 
+  "WrongCaptcha": "Wrong captcha",
   "YourRequestHasBeenSentSuccessfully": "Your request has been sent successfully",
   "WeAreSorryButAnErrorOccurred": "We are sorry, but an error occurred, try again later",
   "PleaseWait": "Please wait...",

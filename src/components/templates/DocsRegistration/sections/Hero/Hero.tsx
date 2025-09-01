@@ -13,6 +13,8 @@ import { LogIn } from "./sub-components/Auth/LogIn";
 
 const Hero = () => {
   const router = useRouter();
+  const lang = router.locale || "en";
+  const recaptchaLang = lang == "pt" ? "pt-BR" : lang; 
   const [status, setStatus] = useState<TStatus>("signup");
 
   useEffect(() => {
@@ -38,7 +40,7 @@ const Hero = () => {
             {status === "signup" ? (
               <SignUp />
             ) : status === "login" ? (
-              <LogIn />
+              <LogIn recaptchaLang={recaptchaLang} />
             ) : null}
           </StyledHeroItem>
         </StyledHeroWrapper>
