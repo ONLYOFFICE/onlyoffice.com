@@ -34,6 +34,7 @@ const Features = () => {
         links: item.links?.map((link) => ({
           ...link,
           label: t(String(link.label)),
+          href: link.isExternal ? t(String(link.href)) : link.href,
         })),
         image: {
           url: t(item.image.url),
@@ -47,4 +48,3 @@ const Features = () => {
 };
 
 export { Features };
-
