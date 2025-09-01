@@ -14,6 +14,7 @@ const ClientsGroup = styled.div`
   gap: 64px;
   overflow-x: scroll;
   max-width: 1120px;
+  scrollbar-width: none;
 
   @media ${device.tablet} {
   }
