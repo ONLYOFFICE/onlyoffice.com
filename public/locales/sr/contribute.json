@@ -1,32 +1,32 @@
 {
-  "PageTitle": "Помозите нам да побољшамо ONLYOFFICE",
-  "PageDescription": "Допринесите ONLYOFFICE пројекту: развијајте, преводите, тестирајте или документујте и ширите даље.",
+  "PageTitle": "Pomozite nam da poboljšamo ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "Doprinosite projektu ONLYOFFICE: razvijajte, prevodite, testirajte ili dokumentujte i širite dalje.",
 
-  "HeroTitle": "Постаните део<br /><span>ONLYOFFICE</span> породице",
-  "HeroText": "Допринесите open source ONLYOFFICE пројекту и учинимо га још бољим!",
+  "HeroTitle": "Postanite deo<br /><span>ONLYOFFICE</span> porodice",
+  "HeroText": "Doprinestite ONLYOFFICE projektu otvorenog koda i učinite ga još boljim!",
 
-  "ImproveOO": "Побољшајте ONLYOFFICE",
-  "DevelopYourOwnPluginOrMacros": "Развијте сопствени plugin или макрое за ONLYOFFICE едиторе докумената.",
-  "ReadAPIDocumentation": "Прочитајте API документацију",
-  "CreateYourOwnForm": "Креирајте сопствене шаблоне форми и поделите их са другима.",
-  "OpenOurFormLibrary": "Отворите нашу библиотеку форми",
-  "CreateAnExtensionOrModule": "Креирајте апликацију, проширење или цео модул за ONLYOFFICE платформу за сарадњу.",
-  "DidYouFindABug": "Да ли сте пронашли грешку? Пријавите проблеме на <0>GitHub-у</0> или на <1>форуму</1>.",
-  "MoreInfo": "Више информација",
+  "ImproveOO": "Poboljšajte ONLYOFFICE",
+  "DevelopYourOwnPluginOrMacros": "Razvijte svoj vlastiti dodatak ili makroe za ONLYOFFICE Docs.",
+  "ReadAPIDocumentation": "Pročitajte API dokumentaciju",
+  "CreateYourOwnForm": "Kreirajte sopstvene šablone obrazaca i podelite ih sa drugima.",
+  "OpenOurFormLibrary": "Otvorite našu biblioteku obrazaca",
+  "CreateAnExtensionOrModule": "Kreirajte ekstenziju ili modul za ONLYOFFICE Workspace.",
+  "DidYouFindABug": "Da li ste pronašli grešku? Prijavite probleme na <0>GitHub-u</0> ili <1>forumu</1>.",
+  "MoreInfo": "Više informacija",
 
-  "SocialMediaText": "Повежите се са нама на <0>блогу</0> или каналима друштвених мрежа",
+  "SocialMediaText": "Komunicirajte sa nama na <0>blogu</0> ili društvenim mrežama",
 
-  "SpreadTitle": "Проширите ONLYOFFICE технологију",
-  "SpreadText": "Креирајте конектор за сопствену платформу да бисте донели ONLYOFFICE свима осталима.",
-  "SpreadLink": "Прочитајте API документацију",
-  "More": "Више",
+  "SpreadTitle": "Širite ONLYOFFICE tehnologiju",
+  "SpreadText": "Izgradite konektor za sopstvenu platformu kako biste ONLYOFFICE približili svima.",
+  "SpreadLink": "Pročitajte API dokumentaciju",
+  "More": "Više",
 
-  "TranslateOO": "<0>Преведите</0> ONLYOFFICE",
-  "TranslateOOText": "<p>Желите ли да нам помогнете да преведемо ONLYOFFICE интерфејс на ваш матерњи језик да би био доступан широм света?</p><p>Придружите се нашој волонтерској заједници преводилаца, пишите нам на <0>documentation@onlyoffice.com</0> и добићете приступ нашем <1>онлајн систему за превођење</1>.</p>",
+  "TranslateOO": "<0>Prevedite</0> ONLYOFFICE",
+  "TranslateOOText": "<p>Da li želite da nam pomognete da prevedemo ONLYOFFICE interfejs na vaš maternji jezik kako bismo ga učinili dostupnim bilo gde u svetu?</p><p>Pridružite se našoj zajednici volonterskih prevodilaca tako što ćete nam pisati na <0>documentation@onlyoffice.com</0> i dobijate pristup našem <1>online sistemu za prevođenje</1>.</p>",
 
-  "TestOO": "<0>Тестирајте</0> ONLYOFFICE",
-  "TestOOText": "<p>Постаните ONLYOFFICE бета тестер и помозите нам да тестирамо предстојеће функције и решења.</p><p>Контактирајте нас на <0>press@onlyoffice.com</0>.</p>",
+  "TestOO": "<0>Testirajte</0> ONLYOFFICE",
+  "TestOOText": "<p>Postanite ONLYOFFICE beta-tester koji će nam pomoći da testiramo predstojeće funkcije i rešenja.</p><p>Kontaktirajte nas na <0>press@onlyoffice.com</0>.</p>",
 
-  "DocumentOO": "<0>Документујте</0> ONLYOFFICE",
-  "DocumentOOText": "<p>Имате ли неке савете или трикове како да радите са ONLYOFFICE-ом ефикасније?</p><p>Нисте пронашли информације о томе како да користите неке функције?</p><p>Желите ли да преведете доступну документацију на матерњи језик?</p><p>Контактирајте нас на <0>documentation@onlyoffice.com</0> где можете поделити своје идеје.</p>"
+  "DocumentOO": "<0>Dokument</0> ONLYOFFICE",
+  "DocumentOOText": "<p>Imate li neke savete ili trikove za efikasniji rad sa ONLYOFFICE-om?</p><p>Niste pronašli informacije o tome kako da koristite neke funkcije?</p><p>Da li želite da prevedete dostupnu dokumentaciju na svoj maternji jezik?</p><p>Kontaktirajte nas na <0>documentation@onlyoffice.com</0> da podelite svoje mišljenje.</p>"
 }
