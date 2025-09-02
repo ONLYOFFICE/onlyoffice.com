@@ -44,6 +44,8 @@ const SignUp = () => {
 
   const router = useRouter();
 
+  const platforms = Platforms.map((item) => { return { ...item, label: t(item.label) } });
+
   const [affiliate, setAffiliate] = useState<{
     id?: string;
     token?: string;
@@ -220,14 +222,14 @@ const SignUp = () => {
           <Heading level={1} size={4}>
             <Trans
               t={t}
-              i18nKey="StartWithYourFREEDocSpaceAccount"
+              i18nKey="StartWithYourFREEDocsCloud"
               components={[<Text key={0} as="span" color="main" />]}
             />
           </Heading>
 
           <Text
             size={2}
-            label={t("InviteUnlimitedNumberOfUsersAndGuestsForFree")}
+            label={t("NoCreditCardRequired")}
           />
         </StyledSignUpHeader>
 
@@ -310,8 +312,8 @@ const SignUp = () => {
           <Select
             selected={selectedPlatform}
             setSelected={setSelectedPlatform}
-            label="Platform"
-            options={Platforms}
+            label={t("Platform")}
+            options={platforms}
           />
 
           <Checkbox
@@ -342,7 +344,7 @@ const SignUp = () => {
               components={[
                 <Link
                   key={0}
-                  href="https://help.onlyoffice.co/Products/Files/DocEditor.aspx?fileid=7992046&doc=ekxnSGVoWE5rbGNkeWtCTnNyREFMN1E1Vzl1YVJjYkFMRVMyaGh1cE9VND0_Ijc5OTIwNDYi00"
+                  href="https://help.onlyoffice.co/Products/Files/DocEditor.aspx?fileid=7992046&doc=ekxnSGVoWE5rbGNkeWtCTnNyREFMN1E1Vzl1YVJjYkFMRVMyaGh1cE9VND0_Ijc5OTIwNDYi0"
                   target="_blank"
                   color="main"
                   textUnderline

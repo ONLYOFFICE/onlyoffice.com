@@ -5,7 +5,7 @@ const iconsSprite = "/images/templates/docs-registration/editors-sprite.svg";
 export const icons: IIconTooltip[] = [
   {
     id: "document-editor",
-    tooltipLabel: "DocumentEditors",
+    tooltipLabel: "DocumentEditor",
     href: "/document-editor",
     icon: {
       url: iconsSprite,

@@ -7,7 +7,7 @@
   "SpreadsheetEditor": "Spreadsheet Editor",
   "PresentationEditor": "Presentation Editor",
   "PdfReader": "PDF Editor",
-  "FormCreator": "Form creator",
+  "FormCreator": "Kreator obrazaca",
   "TrustedByMore": "Trusted by more than <br /> <0>15 000 000</0> users worldwide",
 
   "AlreadyHaveAnAccount": "Already have an account?",
@@ -31,19 +31,19 @@
   "ByClickingStartFree": "By clicking \"Start free\" you understand and agree to our <0>Terms of use</0>.",
   "StartFree": "Start free",
 
-  "DontHaveAnAccount": "Don't have an account?",
-  "Register": "Register",
+  "DontHaveAnAccount": "Nemate nalog?",
+  "Register": "Registrujte se",
   "WelcomeBackToYourDocsCloud": "Welcome back to <0>Docs Cloud!</0>",
   "Email": "E-mail",
-  "ByClickingContinue": "By clicking 'Continue', you understand and agree to our <0>SLA</0> and <1>Privacy statement</1>.",
-  "Continue": "Continue",
+  "ByClickingContinue": "Klikom na Nastavi, razumete i slažete se sa našim <0>SLA</0> i <1>Izjavom o privatnosti</1>.",
+  "Continue": "Nastavi",
   "CheckYourEmail": "Check your e-mail!",
   "ALinkWillBeSentToTheSpecifiedAddress": "A link will be sent to the specified address to go to the admin page.",
-  "InviteInformationSpam": "If you didn't receive an email, please check your spam.",
-  "TheLinkIsValidFor60Minutes": "The link is valid for 60 minutes. If you didn't receive an email, please check your spam.",
+  "InviteInformationSpam": "Ako niste primili email, molimo proverite svoj spam.",
+  "TheLinkIsValidFor60Minutes": "Link će biti poslat na navedenu adresu za pristup administratorskoj stranici. Link je važeći 60 minuta. Ako niste primili email, molimo proverite svoj spam.",
 
-  "WrongCaptcha": "Wrong captcha",
+  "WrongCaptcha": "Pogrešna captcha",
   "YourRequestHasBeenSentSuccessfully": "Your request has been sent successfully",
   "WeAreSorryButAnErrorOccurred": "We are sorry, but an error occurred, try again later",
-  "PleaseWait": "Please wait..."
+  "PleaseWait": "Molim vas sačekajte"
 }

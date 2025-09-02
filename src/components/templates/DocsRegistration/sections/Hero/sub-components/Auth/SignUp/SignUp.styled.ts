@@ -56,6 +56,7 @@ const StyledSignUpBox = styled.div`
 `;
 
 const StyledSignUpText = styled(Text)`
+  color: #666666;
   font-size: 12px;
   line-height: 1.5em;
   margin-top: -8px;
