@@ -20,11 +20,6 @@ const Hero = () => {
   const hasDocSpaceRegistration = query.docspace === "registration";
   const [email, setEmail] = useState("");
 
-  const scrollToBlock = () => {
-    const element = document.getElementById("how-to-start");
-    if (element) element.scrollIntoView({ behavior: "smooth" });
-  };
-
   const saveEmail = () => {
     if (email) {
       localStorage.setItem("email", email);

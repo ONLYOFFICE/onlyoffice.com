@@ -1,3 +1,4 @@
+import type React from "react";
 import { StyledLink } from "./Link.styled";
 import { ILink } from "./Link.types";
 
@@ -47,7 +48,7 @@ const Link = ({
       $textUnderline={textUnderline}
       $hover={hover}
       style={style}
-      onClick={(e: any) => {
+      onClick={(e: React.MouseEvent) => {
         if (hasClickNoHref) {
           e?.preventDefault?.();
           onClick?.();

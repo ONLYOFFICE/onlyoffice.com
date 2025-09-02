@@ -3,7 +3,6 @@ import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
-import { YouTubeCard } from "@src/components/modules/docspace/YouTubeCard";
 
 import {
   StyledHeroButtonWrapper,
