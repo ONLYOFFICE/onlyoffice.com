@@ -12,7 +12,7 @@ const OfficeSuiteTemplate = () => {
       <Features />
       <SecurityFirst />
       <GetStarted />
-    </>
+    </> 
   );
 };
 

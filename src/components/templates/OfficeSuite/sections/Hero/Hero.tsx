@@ -45,7 +45,8 @@ const Hero = () => {
           {!hasDocSpaceRegistration ? (
             <StyledHeroHeaderBtns>
               <Button
-                onClick={() => scrollToBlock()}
+              as="a"
+                href="/download?from=office-suite#docs-enterprise"
                 id="hero-get-started"
                 label={t("GetItNow")}
               />
@@ -53,7 +54,7 @@ const Hero = () => {
                 as="a"
                 variant="tertiary"
                 id="hero-request-free-demo"
-                href="/demo-order?from=officeforwordpress"
+                href="/see-it-in-action?from=office-suite"
                 label={t("SeeItInAction")}
               />
             </StyledHeroHeaderBtns>
