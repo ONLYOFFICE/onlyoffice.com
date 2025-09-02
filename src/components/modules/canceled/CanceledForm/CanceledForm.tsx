@@ -29,6 +29,7 @@ const CanceledForm = ({
   checkboxeItems,
   textareaHeading,
   onShowCoupons,
+  isEmailRequired = true,
   locale,
 }: CanceledFormProps) => {
   const { t } = useTranslation("canceled");
@@ -109,8 +110,9 @@ const CanceledForm = ({
 
   const isOtherChecked = formData.mark6 === 1;
 
-  const isEmailValid =
-    formData.email.length > 0 && validateEmail(formData.email);
+  const isEmailValid = isEmailRequired
+    ? formData.email.length > 0 && validateEmail(formData.email)
+    : true;
 
   const isHCaptchaPassed = Boolean(formData.recaptchaResponse);
 
@@ -266,7 +268,7 @@ const CanceledForm = ({
               ? t("EmailIsIncorrect")
               : ""
         }
-        required
+        required={isEmailRequired}
         status={
           isEmpty.email
             ? "error"

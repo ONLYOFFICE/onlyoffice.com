@@ -40,8 +40,11 @@ export default async function handler(
       lang: locale,
       spam,
       calls,
-      email,
     };
+
+    if (email) {
+      commonFields.email = email;
+    }
 
     const dataByTable: Record<
       string,

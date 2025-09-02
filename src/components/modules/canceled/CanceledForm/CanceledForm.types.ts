@@ -36,5 +36,6 @@ export interface CanceledFormProps {
   checkboxeItems: ICheckboxeItem[];
   textareaHeading: string;
   onShowCoupons: () => void;
+  isEmailRequired?: boolean;
   locale: ILocale["locale"];
 }
