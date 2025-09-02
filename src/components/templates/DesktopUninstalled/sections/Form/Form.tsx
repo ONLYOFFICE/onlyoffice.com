@@ -27,7 +27,7 @@ const Form = ({ locale }: ILocale) => {
           textareaHeading={t("WhatShouldWeImproveInOnlyofficeDesktopEditors")}
           checkboxeItems={checkboxeItems}
           onShowCoupons={() => setShowMessage(true)}
-          isEmailOnPage={false}
+          isEmailRequired={false}
           locale={locale}
         />
         {showMessage && (

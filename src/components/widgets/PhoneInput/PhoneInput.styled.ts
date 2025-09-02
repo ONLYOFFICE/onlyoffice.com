@@ -1027,14 +1027,15 @@ const StyledPhoneInputContriesWrapper = styled.ul`
   }
 `;
 
-const StyledPhoneInputContriesItem = styled.button`
+const StyledPhoneInputContriesItem = styled.button<{ $selected: boolean }>`
   display: flex;
   border: none;
   font-size: 12px;
   font-weight: 700;
   line-height: 15px;
   color: #333333;
-  background-color: transparent;
+  width: 100%;
+  background-color: ${(props) => (props.$selected ? "#eeeeee" : "transparent")};
   cursor: pointer;
 
   &:hover {
