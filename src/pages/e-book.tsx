@@ -30,7 +30,7 @@ const EBookPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <EBookTemplate />
+        <EBookTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

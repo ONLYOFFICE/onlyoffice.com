@@ -7,8 +7,10 @@ import { FeatureItem } from "@src/components/widgets/FeatureItem";
 import { Button } from "@src/components/ui/Button";
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
+import { ILocale } from "@src/types/locale";
+import { getLink } from "@src/utils/getLink";
 
-const Features = () => {
+const Features = ({ locale }: ILocale) => {
   const { t } = useTranslation("office-for-nuxeo");
 
   const scrollToBlock = () => {
@@ -39,7 +41,11 @@ const Features = () => {
                     components={item.textLinks?.map((link, index) => (
                       <Link
                         key={index}
-                        href={link.href}
+                        href={
+                          link.href === "/app-directory"
+                            ? getLink("marketplace", locale)
+                            : link.href
+                        }
                         target={link.isExternal ? "_blank" : undefined}
                         color="main"
                         textUnderline

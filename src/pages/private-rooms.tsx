@@ -23,7 +23,7 @@ const PrivateRoomsPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <PrivateRoomsTemplate locale={locale}/>
+        <PrivateRoomsTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -39,6 +39,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "PricingQuoteModal",
         "private-rooms",
+        "FaqCollapse",
       ])),
       locale,
     },
