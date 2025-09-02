@@ -5,5 +5,5 @@
   "IsThereASelfHostedVersion": "Da li postoji samostalna verzija ONLYOFFICE DocSpace-a?",
   "SelfHostedVersion": "Da, možete ga preuzeti <0>ovde</0>.",
   "WhatIsTheTechnologyStack": "Koja je tehnološka struktura ONLYOFFICE DocSpace-a?",
-  "TheTechnologyStack": "Серверная часть: С# 9.0, .NET 5.0/.NET Core/ASP.NET Core/MySQL 8.0/Kafka/ElasticSearch <br /> Клиентская часть: ES6, CSS/SASS, React, Mobx, Styled-Components, i18next, Webpack 4/5"
+  "TheTechnologyStack": "Back-end: С# 9.0, .NET 5.0/.NET Core/ASP.NET Core/MySQL 8.0/Kafka/ElasticSearch <br /> Front-end: ES6, CSS/SASS, React, Mobx, Styled-Components, i18next, Webpack 4/5"
 }
