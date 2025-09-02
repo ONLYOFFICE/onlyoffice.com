@@ -12,9 +12,8 @@ const ClientsGroup = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 64px;
-  overflow-x: scroll;
+  overflow-x: auto;
   max-width: 1120px;
-  scrollbar-width: none;
 
   @media ${device.tablet} {
   }
