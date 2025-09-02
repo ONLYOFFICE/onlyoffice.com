@@ -11,7 +11,7 @@ export const items: IFeatureImageItemExtended[] = [
     links: [
       {
         label: "Feature1Link",
-        href: "TemplatesLink",
+        href: "templatesLink",
         isExternal: true,
       },
     ],
@@ -46,7 +46,7 @@ export const items: IFeatureImageItemExtended[] = [
     links: [
       {
         label: "Feature4Link",
-        href: "TemplatesLink",
+        href: "templatesLink",
         isExternal: true,
       },
     ],

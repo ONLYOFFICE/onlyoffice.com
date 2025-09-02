@@ -83,7 +83,7 @@ export const items: IFeatureImageItem[] = [
     },
     links: [
       {
-        href: "https://templates.onlyoffice.com/",
+        href: "templatesLink",
         label: "LearnMore",
         isExternal: true,
       },

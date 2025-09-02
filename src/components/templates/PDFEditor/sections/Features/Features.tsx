@@ -22,6 +22,8 @@ const Features = ({ locale }: ILocale) => {
             href:
               link.href === "/app-directory"
                 ? getLink("marketplace", locale)
+                : link.href === "templatesLink"
+                ? getLink("templates", locale)
                 : link.href,
           })),
           image: {

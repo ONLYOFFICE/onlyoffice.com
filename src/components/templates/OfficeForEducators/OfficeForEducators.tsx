@@ -14,7 +14,7 @@ const OfficeForEducatorsTemplate = ({ locale }: ILocale) => {
       <DocSpace />
       <Features locale={locale} />
       <SuccessStories />
-      <Faq />
+      <Faq locale={locale} />
     </>
   );
 };

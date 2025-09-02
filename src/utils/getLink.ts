@@ -23,9 +23,11 @@ const links: Record<string, { base: string; paths: Record<string, string> }> = {
   templates: {
     base: "https://templates.onlyoffice.com",
     paths: {
+      en: "",
       cs: "",
       nl: "",
       ru: "",
+      sr: "",
     },
   },
 };

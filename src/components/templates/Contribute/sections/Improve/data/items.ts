@@ -33,7 +33,7 @@ export const items: IImproveItemExtended[] = [
     },
     link: {
       label: "OpenOurFormLibrary",
-      href: "https://templates.onlyoffice.com/",
+      href: "templatesLink",
     },
   },
   {
