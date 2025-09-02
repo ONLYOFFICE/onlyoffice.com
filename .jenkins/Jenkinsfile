@@ -34,6 +34,7 @@ def support_email = ""
 def webinars_email = ""
 def server_email = ""
 def nonprofit_email = ""
+def partnership_email = ""
 
 switch(BRANCH_NAME) {
   case "test_deploy":
@@ -71,6 +72,7 @@ switch(BRANCH_NAME) {
     webinars_email = "nonprofit.manager.t@gmail.com"
     server_email = "nonprofit.manager.t@gmail.com"
     nonprofit_email = "nonprofit.manager.t@gmail.com"
+    partnership_email = "nonprofit.manager.t@gmail.com"
     break
   case "production_deploy":
     aws_region="us-east-1"
@@ -133,6 +135,7 @@ pipeline {
         webinars_email = "${webinars_email}"
         server_email = "${server_email}"
         nonprofit_email = "${nonprofit_email}"
+        partnership_email = "${partnership_email}"
       }
       steps {
         withCredentials([usernamePassword(credentialsId: 'onlyoffice_site_test_mysql_credentials', 
@@ -204,6 +207,7 @@ pipeline {
           sed -i "s^var_webinars_email^$webinars_email^" .env
           sed -i "s^var_server_email^$server_email^" .env
           sed -i "s^var_nonprofit_email^$nonprofit_email^" .env
+          sed -i "s^var_partnership_request_email^$partnership_email^" .env
 
           sed -i "s^var_web_payment_we_trial_url^$web_payment_we_trial_url^" .env
           sed -i "s^var_web_payment_dd_trial_url^$web_payment_dd_trial_url^" .env
