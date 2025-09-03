@@ -15,6 +15,7 @@
   "Free": "無料",
   "Paid": "有料",
   "GetItOn": "入手先",
+  
 
   "FeatureConnectorTrelloText": "究極のチームワークプロジェクト管理ツールであるTrello内で、オフィス文書の閲覧、編集、共同作業をリアルタイムで",
   "FeatureConnectorOdooText": "オープンソースのビジネスアプリケーションスイートであるOdoo Documentsでオフィスファイルを編集し、共同作業を行います。",
@@ -71,6 +72,7 @@
   "FileCloudConnectorText": "会社ファイルの共有、同期、およびバックアップソリューションであるFileCloudから直接、オフィスドキュメント、プレゼンテーション、およびスプレッドシートを編集および共同作業できます。",
   "OpenKMConnectorText": "Edit and co-author office documents, spreadsheets, and presentations directly from OpenKM, an open-source electronic document and records management system.",
   "FeatureConnectorMondayText": "mondayワークプラットフォーム内でリアルタイムにファイルを編集、閲覧、コラボレーションできます。",
+  "DzzOfficeConnectorText": "DzzOfficeの中でオフィス文書をオンラインで閲覧、編集、共同編集できます。DzzOfficeは企業やチームコラボレーション向けのオープンソースオフィススイートです。",
 
   "NeedAnAppToConnect": "ONLYOFFICE Docsをお気に入りのウェブサービスに接続するアプリをリクエストしたいですか？または連携アプリを開発しましたか？",
   "LetUsKnow": "当社にお知らせください",

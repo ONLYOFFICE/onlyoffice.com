@@ -19,3 +19,4 @@ export const hero: IRoomsHeroVideo = {
   },
   videoUrl: "https://www.youtube.com/embed/eZLuWwx8VVA?si=qdnIB9vbSwAm_r4P",
 };
+

@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { YouTubeCard } from "@src/components/modules/docspace/YouTubeCard";
 
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
@@ -128,6 +129,11 @@ const StyledHeroYouTubeWrapper = styled.div`
   }
 `;
 
+const StyledYouTubeCard = styled(YouTubeCard)`
+  width: 100%;
+  height: 100%;
+`;
+
 export {
   StyledHeroSection,
   StyledHeroHeading,
@@ -137,4 +143,5 @@ export {
   StyledHeroImageWrapper,
   StyledHeroImage,
   StyledHeroYouTubeWrapper,
+  StyledYouTubeCard
 };

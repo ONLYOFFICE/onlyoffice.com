@@ -13,7 +13,7 @@ const OfficeSuiteTemplate = ({ locale }: ILocale) => {
       <Features locale={locale} />
       <SecurityFirst />
       <GetStarted />
-    </>
+    </> 
   );
 };
 

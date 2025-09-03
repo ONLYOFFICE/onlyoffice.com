@@ -20,11 +20,6 @@ const Hero = () => {
   const hasDocSpaceRegistration = query.docspace === "registration";
   const [email, setEmail] = useState("");
 
-  const scrollToBlock = () => {
-    const element = document.getElementById("how-to-start");
-    if (element) element.scrollIntoView({ behavior: "smooth" });
-  };
-
   const saveEmail = () => {
     if (email) {
       localStorage.setItem("email", email);
@@ -45,7 +40,8 @@ const Hero = () => {
           {!hasDocSpaceRegistration ? (
             <StyledHeroHeaderBtns>
               <Button
-                onClick={() => scrollToBlock()}
+              as="a"
+                href="/download?from=office-suite#docs-enterprise"
                 id="hero-get-started"
                 label={t("GetItNow")}
               />
@@ -53,7 +49,7 @@ const Hero = () => {
                 as="a"
                 variant="tertiary"
                 id="hero-request-free-demo"
-                href="/demo-order?from=officeforwordpress"
+                href="/see-it-in-action?from=office-suite"
                 label={t("SeeItInAction")}
               />
             </StyledHeroHeaderBtns>

@@ -72,7 +72,7 @@ const PrivacyPageTemplate = () => {
           forms and tools.
         </StyledText>
         <div>
-          <StyledText>We also collect following technical data:</StyledText>
+          <StyledText>We also collect the following technical data:</StyledText>
           <ul>
             <li>
               IP address - to help diagnose problems with our server and to
@@ -178,9 +178,9 @@ const PrivacyPageTemplate = () => {
           Ascensio System SIA may send you tips on using ONLYOFFICE<sup>TM</sup>
           , notify you of and get your feedback on upcoming releases or new
           services offered <b>only</b> if you subscribed to our mailing lists.
-          Users are able to unsubscribe from the mailing list any time after
-          receiving the first informational message using link contained within
-          informational message or by using appropriate Account settings option.
+          Users can unsubscribe from the mailing list at any time after 
+          receiving the first informational message, either by using the link 
+          contained in the message or through the appropriate Account settings option.
         </StyledText>
         <StyledSubHeading level={2}>How long data is used</StyledSubHeading>
         <StyledText>
@@ -207,7 +207,7 @@ const PrivacyPageTemplate = () => {
           How you can control your data
         </StyledSubHeading>
         <StyledText>
-          You have various rights to control use and processing of your Personal
+          You have various rights to control the use and processing of your Personal
           Data and other information. This means that you are entitled to
           request us to take certain actions at any time and free of charge.
         </StyledText>
@@ -242,7 +242,7 @@ const PrivacyPageTemplate = () => {
         </StyledText>
         <StyledText>
           <b>Right to rectification.</b> You have the right to obtain the
-          rectification of inaccurate Data. You entitled to have incomplete
+          rectification of inaccurate Data. You are entitled to have incomplete
           Personal Data completed. In order to do so, please use appropriate
           settings to edit and complete your incomplete Personal Data if you
           find it necessary or provide us with a supplementary statement by

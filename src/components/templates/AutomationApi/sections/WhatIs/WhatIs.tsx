@@ -14,6 +14,11 @@ import { Link } from "@src/components/ui/Link";
 const WhatIs = () => {
   const { t } = useTranslation("automation-api");
 
+  const scrollToBlock = () => {
+    const element = document.getElementById("examples_block");
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Section
       desktopSpacing={["112px", "112px"]}
@@ -50,17 +55,13 @@ const WhatIs = () => {
               ]}
             />
           </StyledWhatSubheading>
-          <StyledCheckExamplesBtn
-            onClick={(e) => {
-              e.preventDefault();
-              const el = document.getElementById("examples_block");
-              if (el) {
-                el.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-          >
-            {t("CheckExamples")}
-          </StyledCheckExamplesBtn>
+          <Link
+            onClick={scrollToBlock}
+            color="main"
+            textUnderline
+            hover="underline-none"
+            label={t("CheckExamples")}
+          />
           <WatchVideo
             heading={t("Webinar")}
             customLabel={t("WatchOurWebinar")}

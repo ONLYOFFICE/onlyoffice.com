@@ -72,6 +72,7 @@ const StyledReasonsLinks = styled.div`
 const StyledReasonsLink = styled(Link)`
   font-size: 16px;
   line-height: 24px;
+  padding-bottom: 8px;
 
   @media ${device.mobile} {
     font-size: 14px;
