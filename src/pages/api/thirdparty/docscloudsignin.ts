@@ -33,7 +33,7 @@ export default async function handler(
     });
 
     const text = await apiRes.text();
-    let resData: any = null;
+    let resData: unknown = null;
     try {
       resData = text ? JSON.parse(text) : null;
     } catch {
@@ -49,7 +49,7 @@ export default async function handler(
     }
 
     return res.status(200).json({ status: 200, ...resData });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("Docs Cloud Signin error:", err);
     return res
       .status(500)
