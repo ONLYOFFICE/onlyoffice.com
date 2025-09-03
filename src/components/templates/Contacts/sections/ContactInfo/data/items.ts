@@ -78,10 +78,10 @@ export const items: IContactInfo[] = [
 ];
 
 export const officeOrderByLang: Record<string, string[]> = {
-  default: ["sg", "usa", "lv", "uk", "arm", "sg", "uz", "ser", "zh"],
-  eu: ["sg", "lv", "uk", "usa", "arm", "sg", "uz", "ser", "zh"],
-  zh: ["zh", "sg", "lv", "uk", "arm", "sg", "uz", "ser"],
-  sr: ["sg", "usa", "lv", "uk", "arm", "sg", "uz", "ser", "zh"],
+  default: ["sg", "usa", "lv", "uk", "arm", "uz", "ser", "zh"],
+  eu: ["sg", "lv", "uk", "usa", "arm", "uz", "ser", "zh"],
+  zh: ["zh", "sg", "lv", "uk", "arm", "uz", "ser"],
+  sr: ["sg", "usa", "lv", "uk", "arm", "uz", "ser", "zh"],
 };
 
 export const mails: IContactMail[] = [

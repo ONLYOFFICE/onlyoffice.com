@@ -37,8 +37,8 @@
   "Email": "邮箱地址",
   "EmailIsEmpty": "电子邮箱为空",
   "EmailIsIncorrect": "电子邮箱错误",
-  "ByClickingSendFeedback": "",
-  "SendFeedback": "点击“发送反馈”即表示您了解并同意我们的<0>SLA</0>以及<1>隐私声明</1>。",
+  "ByClickingSendFeedback": "点击“发送反馈”即表示您了解并同意我们的<0>服务等级条款</0>以及<1>隐私声明</1>。",
+  "SendFeedback": "发送反馈",
 
   "ThanksForYourMessage": "感谢您的消息。",
   "IfYouDecideToGetBack": "如果您之决定回归，则可使用此优惠券码享受ONLYOFFICE云服务的<0>10%折扣</0>，当然您也可将其与好友分享！*",
