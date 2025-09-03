@@ -55,6 +55,8 @@ const ActionsContent = ({
                 },
                 customization: {
                   integrationMode: "embed",
+                  pointerMode: "select",
+                  slidePlayerBackground: "#444444",
                 },
                 lang: locale,
               },
@@ -84,6 +86,8 @@ const ActionsContent = ({
                   },
                   customization: {
                     integrationMode: "embed",
+                    pointerMode: "select",
+                    slidePlayerBackground: "#444444",
                   },
                   lang: locale,
                 },
