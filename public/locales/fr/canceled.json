@@ -11,11 +11,11 @@
   "DesktopUninstalledPageTitle": "Éditeurs de bureau ONLYOFFICE désinstallés | ONLYOFFICE",
   "DesktopUninstalledPageDescription": "Pourquoi avez-vous décidé de désinstaller ONLYOFFICE Desktop Editors ?",
 
-  "CanceledHeroTitle": "Nous sommes désolés de vous voir nous quitter !",
+  "CanceledHeroTitle": "Nous sommes désolés de vous voir partir !",
 
   "WhyDidYouDecideToUninstallOnlyoffice": "Pourquoi avez-vous décidé de désinstaller ONLYOFFICE ?",
   "SelectAllThatApply": "Sélectionnez toutes les réponses appropriées",
-  "ExperiencedTechnicalProblems": "J’ai rencontré des problèmes d’ordre technique.",
+  "ExperiencedTechnicalProblems": "J'ai rencontré des problèmes techniques.",
   "NeedMoreStorageSpace": "J’ai besoin de plus d’espace de stockage.",
   "DidntFindNecessaryFeatures": "Je n’ai pas trouvé des fonctionnalités nécessaires.",
   "PrivacyConcernsLegalViolation": "Fuite de données confidentielles/Violation du droit",
@@ -34,7 +34,7 @@
   "WhatShouldWeImproveInOnlyoffice": "Vos suggestions d’améliorations pour ONLYOFFICE",
   "WhatShouldWeImproveInOnlyofficeDesktopEditors": "Vos suggestions d’améliorations pour les applications de bureau ONLYOFFICE",
   "YourMessageHere": "Tapez votre message ici",
-  "Email": "Mail",
+  "Email": "E-mail",
   "EmailIsEmpty": "Le champ Email est vide",
   "EmailIsIncorrect": "L'adresse email est incorrecte",
   "ByClickingSendFeedback": "En cliquant \"Envoyer\", vous reconnaissez et acceptez le <0>SLA</0> et la <1>Politique de confidentialité</1>.",
