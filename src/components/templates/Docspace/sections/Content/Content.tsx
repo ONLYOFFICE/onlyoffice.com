@@ -46,6 +46,7 @@ const Content = () => {
           ))}
         </StyledCardContainer>
         <StyledButton
+          as="a"
           label={t("ContentButton")}
           href="/docspace-registration"
           size="medium"

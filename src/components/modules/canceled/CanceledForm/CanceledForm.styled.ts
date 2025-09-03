@@ -9,6 +9,7 @@ const StyledCanceledFormWrapper = styled.div`
 
 const StyledCanceledFormText = styled(Text)`
   margin-bottom: 24px;
+  padding-top: 10px;
 
   @media ${device.mobile} {
     margin-bottom: 16px;

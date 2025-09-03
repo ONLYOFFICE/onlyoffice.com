@@ -18,6 +18,6 @@ export const items: ICollapseExtended[] = [
   {
     label: "Q3",
     children: "A3",
-    links: [{ href: "/developer-edition" }],
+    links: [{ href: "/conversion-api" }],
   },
 ];

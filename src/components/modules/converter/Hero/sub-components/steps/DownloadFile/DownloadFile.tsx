@@ -102,7 +102,7 @@ const DownloadFile = ({
               />
             </Text>
           </StyledDownloadFileBannerBody>
-          <Button as="a" href="/docspace-signin" label={t("Login")} />
+          <Button as="a" href="/docspace-registration#login" label={t("Login")} />
         </StyledDownloadFileBanner>
       </StyledDownloadFile>
 

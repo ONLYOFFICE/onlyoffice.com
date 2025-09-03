@@ -58,7 +58,7 @@
   "Multimedia": "Multimedia",
 
   "AICardHeading": "Work faster with AI assistants",
-  "AICardText": "Make the process of document creation and editing much easier. Generate texts, images, and code. Get quick answers to your questions or explanation of some notions and concepts. Check your text spelling and grammer. Easily rewrite your text making it shorter or longer. Translate into different languages and do much more with integrated AI tools.",
+  "AICardText": "Make the process of document creation and editing much easier. Generate texts, images, and code. Get quick answers to your questions or explanation of some notions and concepts. Check your text spelling and grammar. Easily rewrite your text making it shorter or longer. Translate into different languages and do much more with integrated AI tools.",
   "LearnMore": "Learn more",
   "AICardImageUrl": "/images/templates/docspace/ai/ai-plugins.svg",
 
@@ -84,7 +84,7 @@
   "BusinessLinkLabel": "Check prices",
 
   "Enterprise": "Enterprise server",
-  "EnterpriseDesc": "Deploy DocSpace on your own server and get a total control over your documents. Easy scalable, this office suite grows with your business.",
+  "EnterpriseDesc": "Deploy DocSpace on your own server and get a total control over your documents. Easily scalable, this office suite grows with your business.",
   "EnterpriseLinkLabel": "Get it now",
 
   "Startup": "Free cloud for startups",

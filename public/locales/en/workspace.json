@@ -5,6 +5,7 @@
   "HeroTitle": "ONLYOFFICE Workspace",
   "HeroText": "Bundle of web apps for an efficient team management and online collaboration",
   "GetItNow": "Get it now",
+  "PickYourPrice": "Pick your price",
 
   "ManageAllYourBusinessProcesses": "Manage all your business processes",
   "LearnMore": "Learn more",
@@ -35,7 +36,7 @@
   "CrmImgUrl2x": "/images/templates/workspace/manage/en/crm@2x.png",
 
   "Projects": "Projects",
-  "OrganizeYourTeam": "Organize your team for success. Create projects, prioritize tasks, and set deadlines. Track time and generate reports to analize your team’s productivity.",
+  "OrganizeYourTeam": "Organize your team for success. Create projects, prioritize tasks, and set deadlines. Track time and generate reports to analyze your team’s productivity.",
   "GanttChart": "Gantt chart",
   "PrivateProjects": "Private projects and access rights management",
   "Integration": "Integration with Documents, Calendar, and CRM",
@@ -59,7 +60,7 @@
   "Benefits": "Benefits of an online workspace",
 
   "ThirdParty": "Third-party service integration",
-  "ExtendYourWorkspace": "Extend your workspace functionality with your favorites apps and tools for logging, signing, authentication, or storage.",
+  "ExtendYourWorkspace": "Extend your workspace functionality with your favorite apps and tools for logging, signing, authentication, or storage.",
   "FindAppsYouNeed": "Find the apps you need",
 
   "DataSecurityHeader": "Data security and control",

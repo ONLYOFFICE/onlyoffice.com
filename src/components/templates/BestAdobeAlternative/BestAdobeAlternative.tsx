@@ -11,7 +11,7 @@ const BestAdobeAlternativeTemplate = () => {
     <StyledBestAdobeAlternativeTemplate>
       <Hero />
       <Reasons />
-      <Presentation />
+      <Presentation />      
       <LearnMore />
       <Editors />
       <GetStarted background="linear-gradient(180deg, #F8F9F9 43.75%, rgba(248, 249, 249, 0) 100%), #FFFFFF" />

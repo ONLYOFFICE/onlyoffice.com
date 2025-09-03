@@ -40,6 +40,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "office-suite",
         "main",
         "SecurityFirst",
+        "GetStarted",
       ])),
       locale,
     },
