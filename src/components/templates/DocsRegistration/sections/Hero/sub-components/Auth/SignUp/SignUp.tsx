@@ -67,7 +67,7 @@ const SignUp = () => {
   const [formStatus, setFormStatus] = useState<ILoaderButton["status"]>("default");
 
   const emailIsValid = formData.email.trim().length > 0 && validateEmail(formData.email);
-  
+
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
   const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
 
@@ -184,11 +184,11 @@ const SignUp = () => {
   };
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
     if (document.referrer) {
       localStorage.setItem('previousPage', document.referrer);
     }
-
-    if (typeof window === "undefined") return;
 
     const updateSize = () => {
       setHCaptchaSize(window.innerWidth < 334 ? "compact" : "normal");
@@ -236,6 +236,7 @@ const SignUp = () => {
         <StyledSignUpBox>
           <Input
             id="txtFirstName"
+            autoFocus
             onChange={(e) => handleInputChange("fullName", e.target.value)}
             onBlur={() => {
               setIsEmpty((prev) => ({
