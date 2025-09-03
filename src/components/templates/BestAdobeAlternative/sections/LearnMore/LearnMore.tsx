@@ -40,7 +40,7 @@ const LearnMore = () => {
           </StyledBlogCardWrapper>
           <Button
             as="a"
-            href="https://templates.onlyoffice.com/"
+            href={t("VisitFreeFormsLibraryLink")}
             label={t("VisitFreeFormsLibrary")}
           />
         </StyledLearnMoreWrapper>
