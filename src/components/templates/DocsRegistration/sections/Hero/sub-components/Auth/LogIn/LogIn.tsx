@@ -68,7 +68,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
     setToken(token || "");
   };
 
-  const _onComplete = (response: any) => {
+  const _onComplete = (response: unknown) => {
     setFormStatus("default");
 
     if (response.status === 403) {
@@ -127,7 +127,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
       body: JSON.stringify({ data, recaptchaLang }),
     });
 
-    let docscloudsigninData: any;
+    let docscloudsigninData: unknown;
     try {
       docscloudsigninData = await docscloudsigninRes.json();
     } catch (ex) {
