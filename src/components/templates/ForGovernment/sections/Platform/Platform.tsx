@@ -60,7 +60,7 @@ const Platform = () => {
             t={t}
             i18nKey="PlatformSubtitle"
             components={[
-              <a
+              <Link
                 href="/all-connectors?from=for-government"
                 target="_blank"
                 rel="noopener noreferrer"

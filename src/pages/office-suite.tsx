@@ -23,7 +23,7 @@ const OffiseSuitePage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <OfficeSuiteTemplate />
+        <OfficeSuiteTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

@@ -35,6 +35,7 @@ import { getDefaultOutputFormat } from "./utils/getDefaultOutputFormat";
 import { getFormatType } from "../../../utils/getFormatType";
 import { FileErrorModal } from "../../modals/FileErrorModal";
 import { languages } from "@src/config/data/languages";
+import { getLink } from "@src/utils/getLink";
 
 const ConvertFile = ({
   theme,
@@ -293,7 +294,12 @@ const ConvertFile = ({
                   components={[
                     <Link
                       key="0"
-                      href={loadingText[currentTextIndex].link.href}
+                      href={
+                        loadingText[currentTextIndex].link.href ===
+                        "templatesLink"
+                          ? getLink("templates", router.locale!)
+                          : loadingText[currentTextIndex].link.href
+                      }
                       target={
                         loadingText[currentTextIndex].link.isExternal
                           ? "_blank"

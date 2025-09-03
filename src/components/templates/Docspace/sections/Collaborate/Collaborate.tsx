@@ -89,7 +89,7 @@ const Collaborate = () => {
         </StyledSliderViewport>
 
         <Button
-        as="a"
+          as="a"
           label={t("CollaborateButton")}
           href="/docspace-registration"
           size="medium"

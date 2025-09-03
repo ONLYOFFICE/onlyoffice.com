@@ -9,6 +9,7 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { appsItems, IAppsItems } from "./data/appsItems";
+import Link from "next/link";
 
 const Apps = () => {
   const { t } = useTranslation("for-government");
@@ -58,7 +59,7 @@ const Apps = () => {
           <Text label={t("AppsSubtitle")} color="#FFFFFF" textAlign="center" />
           <StyledAppsList>
             {filteredApps.map((item, index) => (
-              <a
+              <Link
                 key={index}
                 href={item.href}
                 style={{
@@ -79,7 +80,7 @@ const Apps = () => {
                 <span style={{ textAlign: "center" }}>
                   {item.label ? t(item.label) : ""}
                 </span>
-              </a>
+              </Link>
             ))}
           </StyledAppsList>
           <img src={t("Image")} srcSet={t("Image2x")} alt="Screenshot" />

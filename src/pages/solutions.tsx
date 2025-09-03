@@ -23,7 +23,7 @@ const SolutionsPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <SolutionsTemplate />
+        <SolutionsTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -35,7 +35,11 @@ const SolutionsPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "solutions", "FaqCollapse"])),
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "solutions",
+        "FaqCollapse",
+      ])),
       locale,
     },
   };

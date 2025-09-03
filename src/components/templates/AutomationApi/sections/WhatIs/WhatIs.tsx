@@ -27,7 +27,10 @@ const WhatIs = () => {
     >
       <Container>
         <StyledWhatContent>
-          <img src='/images/templates/automation-api/what-is/automation_api.svg' alt="Image" />
+          <img
+            src="/images/templates/automation-api/what-is/automation_api.svg"
+            alt="Image"
+          />
           <StyledWhatHeading level={2} size={2}>
             <Trans
               t={t}
@@ -64,7 +67,7 @@ const WhatIs = () => {
             videoImgUrl="/images/templates/automation-api/what-is/automation_api_webinar.jpg"
             videoUrl="https://www.youtube.com/embed/d45OkcDZtNE"
           />
-          </StyledWhatContent>
+        </StyledWhatContent>
       </Container>
     </Section>
   );

@@ -29,7 +29,7 @@ const SlidesPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <SlidesTemplate />
+        <SlidesTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
