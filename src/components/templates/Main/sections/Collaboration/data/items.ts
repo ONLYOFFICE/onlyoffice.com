@@ -4,43 +4,43 @@ export const items: IFeatureSwitcher["items"] = [
   {
     label: "ShareYourDocs",
     image: {
-      url: "/images/templates/main/collaboration/share.png",
-      url2x: "/images/templates/main/collaboration/share@2x.png",
+      url: "ShareYourDocsImg",
+      url2x: "ShareYourDocsImg2x",
     },
   },
   {
     label: "MakeUseOfCharacterAndParagraphLevel",
     image: {
-      url: "/images/templates/main/collaboration/modes.png",
-      url2x: "/images/templates/main/collaboration/modes@2x.png",
+      url: "MakeUseOfCharacterAndParagraphLevelImg",
+      url2x: "MakeUseOfCharacterAndParagraphLevelImg2x",
     },
   },
   {
     label: "CompareAndReviewDocsAndTrackChanges",
     image: {
-      url: "/images/templates/main/collaboration/changes.png",
-      url2x: "/images/templates/main/collaboration/changes@2x.png",
+      url: "CompareAndReviewDocsAndTrackChangesImg",
+      url2x: "CompareAndReviewDocsAndTrackChangesImg2x",
     },
   },
   {
     label: "LeaveCommentsAndMentions",
     image: {
-      url: "/images/templates/main/collaboration/leave.png",
-      url2x: "/images/templates/main/collaboration/leave@2x.png",
+      url: "LeaveCommentsAndMentionsImg",
+      url2x: "LeaveCommentsAndMentionsImg2x",
     },
   },
   {
     label: "CommunicateViaBuiltInChatOrTelegram",
     image: {
-      url: "/images/templates/main/collaboration/communicate.png",
-      url2x: "/images/templates/main/collaboration/communicate@2x.png",
+      url: "CommunicateViaBuiltInChatOrTelegramImg",
+      url2x: "CommunicateViaBuiltInChatOrTelegramImg2x",
     },
   },
   {
     label: "MakeAudioAndVideoCalls",
     image: {
-      url: "/images/templates/main/collaboration/make.png",
-      url2x: "/images/templates/main/collaboration/make@2x.png",
+      url: "MakeAudioAndVideoCallsImg",
+      url2x: "MakeAudioAndVideoCallsImg2x",
     },
   },
 ];
