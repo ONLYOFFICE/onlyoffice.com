@@ -36,24 +36,26 @@ const LatestNews = ({ locale }: ILocale) => {
         if (blogElement && webinarElement) {
           const difference =
             blogElement.offsetHeight - webinarElement.offsetHeight;
-
-          if (window.innerWidth > 592) {
-            webinarElement.style.marginBottom = `${difference + 24}px`;
-          } else {
-            webinarElement.style.marginBottom = `24px`;
-          }
+          webinarElement.style.marginBottom =
+            window.innerWidth > 592 ? `${difference + 24}px` : `24px`;
         }
       }
     };
 
-    updateWebinarSpacing();
+    const webinarElement = ref.current?.querySelector(
+      ".latest-news-item-webinar",
+    ) as HTMLElement | null;
+    if (webinarElement) webinarElement.style.marginBottom = "0px";
+
+    const rafId = requestAnimationFrame(updateWebinarSpacing);
 
     window.addEventListener("resize", updateWebinarSpacing);
 
     return () => {
+      cancelAnimationFrame(rafId);
       window.removeEventListener("resize", updateWebinarSpacing);
     };
-  }, []);
+  }, [locale]);
 
   return (
     <Section background="#f5f5f5">
@@ -75,13 +77,19 @@ const LatestNews = ({ locale }: ILocale) => {
             </StyledLatestNewsItemHeading>
             <StyledLatestNewsCards>
               {items.blog.map((newsItem, newsIndex) => {
-                const newsItemDate = newsItem.date ? t(newsItem.date) : '';
+                const newsItemDate = newsItem.date ? t(newsItem.date) : "";
                 return (
                   <NewsCard
                     className={newsItem.className}
                     heading={t(newsItem.heading)}
-                    imgUrl={newsItem.imgUrl ? t(newsItem.imgUrl) : ''}
-                    linkUrl={newsItem.linkUrl ? (newsItem.linkUrl.startsWith('http') ? newsItem.linkUrl : t(newsItem.linkUrl)) : '#'}
+                    imgUrl={newsItem.imgUrl ? t(newsItem.imgUrl) : ""}
+                    linkUrl={
+                      newsItem.linkUrl
+                        ? newsItem.linkUrl.startsWith("http")
+                          ? newsItem.linkUrl
+                          : t(newsItem.linkUrl)
+                        : "#"
+                    }
                     isExternalLink={newsItem.isExternalLink}
                     date={formatDateLatestNews(newsItemDate, locale)}
                     key={newsIndex}
@@ -129,7 +137,7 @@ const LatestNews = ({ locale }: ILocale) => {
                 </StyledLatestNewsItemHeading>
                 <StyledLatestNewsCards>
                   {items.webinar.map((newsItem, newsIndex) => {
-                    const newsItemDate = newsItem.date ? t(newsItem.date) : '';
+                    const newsItemDate = newsItem.date ? t(newsItem.date) : "";
                     return (
                       <NewsCard
                         className={newsItem.className}
@@ -142,7 +150,7 @@ const LatestNews = ({ locale }: ILocale) => {
                         webinarTime={newsItem.webinarTime}
                         key={newsIndex}
                       />
-                    )
+                    );
                   })}
                   <Link
                     href="https://www.youtube.com/user/onlyofficeTV"
@@ -171,16 +179,26 @@ const LatestNews = ({ locale }: ILocale) => {
                 <NewsCard
                   heading={t(newsItem.heading)}
                   imgUrl={t(newsItem.imgUrl)}
-                  linkUrl={newsItem.linkUrl ? (newsItem.linkUrl.startsWith('http') ? newsItem.linkUrl : t(newsItem.linkUrl)) : '#'}
+                  linkUrl={
+                    newsItem.linkUrl
+                      ? newsItem.linkUrl.startsWith("http")
+                        ? newsItem.linkUrl
+                        : t(newsItem.linkUrl)
+                      : "#"
+                  }
                   isExternalLink={newsItem.isExternalLink}
                   date={
                     newsItem.startDate && newsItem.endDate
-                      ? formatDateRange(newsItem.startDate, newsItem.endDate, locale)
+                      ? formatDateRange(
+                          newsItem.startDate,
+                          newsItem.endDate,
+                          locale,
+                        )
                       : newsItem.startDate
-                      ? formatDateLatestNews(newsItem.startDate, locale)
-                      : newsItem.date
-                      ? formatDateLatestNews(newsItem.date, locale)
-                      : ''
+                        ? formatDateLatestNews(newsItem.startDate, locale)
+                        : newsItem.date
+                          ? formatDateLatestNews(newsItem.date, locale)
+                          : ""
                   }
                   location={t(newsItem.location ?? "")}
                   key={newsIndex}
