@@ -3,7 +3,6 @@ import {
   StyledWhatContent,
   StyledWhatSubheading,
   StyledWhatHeading,
-  StyledCheckExamplesBtn,
 } from "./WhatIs.styled";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
