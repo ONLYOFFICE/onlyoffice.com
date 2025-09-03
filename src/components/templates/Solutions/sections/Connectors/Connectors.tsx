@@ -34,6 +34,7 @@ const Connectors = () => {
         </StyledConnectorsList>
         <StyledBottomArea>
           <Button
+            as="a"
             href="/all-connectors"
             variant="tertiary"
             label={t("CheckIntegrations")}

@@ -13,6 +13,11 @@ import { Link } from "@src/components/ui/Link";
 const WhatIs = () => {
   const { t } = useTranslation("automation-api");
 
+  const scrollToBlock = () => {
+    const element = document.getElementById("examples_block");
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Section
       desktopSpacing={["112px", "112px"]}
@@ -47,7 +52,7 @@ const WhatIs = () => {
             />
           </StyledWhatSubheading>
           <Link
-            href="#examples_block"
+            onClick={scrollToBlock}
             color="main"
             textUnderline
             hover="underline-none"

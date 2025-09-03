@@ -44,7 +44,7 @@ const Demo = () => {
   return (
     <Section
       background="#f9f9f9"
-      desktopSpacing={["112px", "112px"]}
+      desktopSpacing={["112px", "0"]}
       tabletSpacing={["112px", "112px"]}
       tabletSmallSpacing={["88px", "88px"]}
       mobileSpacing={["48px", "48px"]}
@@ -60,6 +60,7 @@ const Demo = () => {
         </Heading>
 
         <StyledHeading
+          id="examples_block"
           level={2}
           size={3}
           textAlign="center"

@@ -35,8 +35,9 @@ export const featuredConnectors: IFeatureConnectorCard[] = [
       url: "/images/templates/all-connectors/featured-connectors/monday.svg",
       bgColor: "#f9f9f9",
     },
-    heading: "Monday",
+    heading: "monday",
     text: "FeatureConnectorMondayText",
+    isNew: true,
   },
   {
     url: "/office-for-pipedrive",
