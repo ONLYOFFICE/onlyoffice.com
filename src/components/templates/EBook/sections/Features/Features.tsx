@@ -2,12 +2,12 @@ import { Trans, useTranslation } from "next-i18next";
 import { items, tabs } from "./data/items";
 import { EditorsFeatures } from "@src/components/modules/editors/EditorsFeatures";
 import { EditorsTabs } from "@src/components/modules/editors/EditorsTabs";
-import { useRouter } from "next/router";
 import { Link } from "@src/components/ui/Link";
+import { getLink } from "@src/utils/getLink";
+import { ILocale } from "@src/types/locale";
 
-const Features = () => {
+const Features = ({ locale }: ILocale) => {
   const { t } = useTranslation("e-book");
-  const { locale } = useRouter();
 
   return (
     <>
@@ -26,7 +26,7 @@ const Features = () => {
                 i18nKey={String(items.text)}
                 components={[
                   <Link
-                    href="/app-directory"
+                    href={getLink("marketplace", locale)}
                     color="main"
                     textUnderline
                     hover="underline-none"
@@ -40,6 +40,10 @@ const Features = () => {
               ? items.links?.map((link) => ({
                   ...link,
                   label: t(String(link.label)),
+                  href:
+                    link.href === "/app-directory"
+                      ? getLink("marketplace", locale)
+                      : link.href,
                 }))
               : undefined,
           image: {

@@ -30,7 +30,6 @@ const Connectors = () => {
               $width={connector.width}
             />
           ))}
-
         </StyledConnectorsList>
         <StyledBottomArea>
           <Button

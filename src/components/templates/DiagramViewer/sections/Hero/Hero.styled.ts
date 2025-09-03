@@ -108,6 +108,12 @@ const StyledHeroYouTubeWrapper = styled.div`
     padding-bottom: 8px;
   }
 
+  & > div {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
   & > div > div:first-child {
     width: 100%;
     height: 100%;

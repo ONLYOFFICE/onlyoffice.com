@@ -1,8 +1,10 @@
 import { useTranslation } from "next-i18next";
 import { items } from "./data/items";
 import { EditorsFeatures } from "@src/components/modules/editors/EditorsFeatures";
+import { ILocale } from "@src/types/locale";
+import { getLink } from "@src/utils/getLink";
 
-const Features = () => {
+const Features = ({ locale }: ILocale) => {
   const { t: t1 } = useTranslation("Editors");
   const { t: t2 } = useTranslation("spreadsheet-editor");
 
@@ -15,10 +17,14 @@ const Features = () => {
         links: items.links?.map((link) => ({
           ...link,
           label: t1(String(link.label)) || t2(String(link.label)),
+          href:
+            link.href === "/app-directory"
+              ? getLink("marketplace", locale)
+              : link.href,
         })),
         image: {
           url: t2(items.image.url),
-          url2x: items.image.url2x && (t2(items.image.url2x)),
+          url2x: items.image.url2x && t2(items.image.url2x),
           height: items.image.height,
         },
       }))}

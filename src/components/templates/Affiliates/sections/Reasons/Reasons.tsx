@@ -24,7 +24,6 @@ const Reasons = () => {
       <Container>
         <StyledReasonsWrapper>
           <Heading label={t("ReasonsToJoin")} level={2} textAlign="center" />
-
           <StyledReasonsContent>
             <StyledReasonsBox>
               <StyledReasonsSubtitle label={t("InnovativeProduct")} level={3} />

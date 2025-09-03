@@ -29,7 +29,7 @@ const SpreadsheetEditorPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <SpreadsheetEditorTemplate />
+        <SpreadsheetEditorTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

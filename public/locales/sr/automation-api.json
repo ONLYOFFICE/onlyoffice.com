@@ -1,0 +1,47 @@
+{
+  "PageTitle": "Automation API | ONLYOFFICE",
+  "PageDescription": "Use your custom interface elements to interact with document content from the outside.",
+
+  "HeroTitle": "ONLYOFFICE API za automatizaciju",
+  "HeroSubtitle": "Postavite bilo kakve kontrole unutar interfejsa platforme i manipulišite sadržajem dokumenta sa spoljne strane urednika",
+  "HeroButton": "ZAHTEV ZA BESPLATAN DEMO",
+
+  "WhatIsTitle": "Šta je <0>Automation API</0>",
+  "WhatIsSubtitle": "<0>ONLYOFFICE Automation API</0> sa klasom Connector omogućava interakciju sa kancelarijskim dokumentima spolja. U mogućnosti ste da dobijete izmene u datotekama koristeći sopstvene prilagođene elemente interfejsa.",
+  "CheckExamples": "Proverite primere",
+  "Webinar": "ONLYOFFICE Automation API [Webinar 2024]",
+  "WatchOurWebinar": "Watch our webinar",
+
+  "WhatAutomationAPICan": "Šta <0>Automation API</0> može da uradi",
+  "MostPopularExamples": "Najpopularniji primeri",
+  "WorkingWithComments": "Rad sa komentarima",
+  "WorkingWithReview": "Radi sa izmenama pregleda",
+  "FillingOutForms": "Popunjava obrasce",
+  "CollectsAllTheCommentsFrom": "Prikuplja sve komentare iz dokumenta i prikazuje ih u prilagođenom interfejsu.",
+  "ThereAreNoComments": "Nema komentara u dokumentu.",
+  "SendReply": "DODAJ ODGOVOR",
+  "AddReply": "DODAJ ODGOVOR",
+  "Delete": "OBRIŠI",
+  "SendComment": "DODAJ KOMENTAR",
+  "AddComment": "DODAJ KOMENTAR",
+  "EnterYourReplyHere": "Unesite svoj odgovor ovde",
+  "EnterYourCommentHere": "Unesite svoj komentar ovde",
+  "ManagesReviewProcess": "Upravlja procesom pregleda iz spoljnog izvora.",
+  "Accept": "PRIHVATI",
+  "Reject": "ODBACI",
+  "FillsInTheEmptyCells": "Popunjava prazne ćelije u datom obliku.",
+  "ChooseExample": "Izaberite primer",
+
+  "ReadyToUse": "Primer spreman za upotrebu: Odoo integracija",
+  "UsingAutomationAPI": "Korišćenjem Automation API, ONLYOFFICE omogućava korisnicima Odoo-a da kreiraju i popunjavaju šablone sa podacima dostupnim u Odoo-u.",
+  "LearnMore": "Saznajte više",
+
+  "HowToGetONLYOFFICEAutomationAPI": "Kako dobiti ONLYOFFICE Automation API?",
+  "AutomationAPISsAPartOf": "Automation API je deo <0>ONLYOFFICE Docs Developer</0> koji pruža najbolji online kancelarijski paket sa urednicima za dokumente, tabele, prezentacije i PDF-ove namenjene za integraciju u sopstvenu veb aplikaciju ili platformu. Pristup API-ju za automatizaciju obezbeđen je kao deo proširene licence <1>ONLIOFFICE Docs Developer licence</1>.",
+  "GetA30DayTrial": "Dobijte <0>30-dnevni probni period</0> za ONLYOFFICE Docs Developer sa uključenim Automation API-jem kako biste ga besplatno testirali.",
+  "DownloadNow": "PREUZMITE SADA",
+
+  "HaveAnyQuestions": "Imate li pitanja u vezi sa ONLYOFFICE Automation API? Rado ćemo vas posavetovati i razgovarati o svim detaljima.",
+  "HaveAnyQuestionsText": "Tim stručnjaka je tu da vam pomogne na svakom koraku. </2></2> U slučaju pitanja pre prodaje, kontaktirajte nas na <0>sales@onlyoffice.com</0> ili zakažite vreme da vas naš tim pozove. </2></2> Za bilo koji tehnički problem, pošaljite nam poruku na <1>support@onlyoffice.com</1>.",
+  "GetInTouch": "KONTAKTIRAJTE NAS"
+}

@@ -13,7 +13,7 @@ import {
   StyledActionsTabButton,
   StyledActionsTabHeading,
   StyledActionsTabList,
-  StyledHeading
+  StyledHeading,
 } from "./Demo.styled";
 
 const useIsMobile = (breakpoint = 592) => {
@@ -76,7 +76,7 @@ const Demo = () => {
               marginTop: "32px",
             }}
           >
-        {tabsInfo.map((tab) => (
+            {tabsInfo.map((tab) => (
               <StyledActionsTabButton
                 key={tab.id}
                 variant="tertiary"
@@ -109,13 +109,11 @@ const Demo = () => {
                     level={5}
                   />
                 </div>
-                <Text size={2}>
-                  {t(tab.desc)}
-                </Text>
+                <Text size={2}>{t(tab.desc)}</Text>
               </StyledActionsTabButton>
             ))}
           </div>
-            ) : (
+        ) : (
           <>
             <StyledActionsTabList>
               {tabsInfo.map((tab, index) => (
@@ -134,7 +132,7 @@ const Demo = () => {
                         'url("/images/templates/automation-api/demo/examples.svg")',
                       backgroundRepeat: "no-repeat",
                       backgroundPosition: `${tab.iconPositionX}px 0`,
-                      display: "block"
+                      display: "block",
                     }}
                   />
                   <StyledActionsTabHeading

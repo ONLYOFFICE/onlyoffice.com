@@ -10,8 +10,10 @@ import {
 } from "./LeftTextImg.styled";
 import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";
+import { getLink } from "@src/utils/getLink";
+import { ILocale } from "@src/types/locale";
 
-const LeftTextImg = () => {
+const LeftTextImg = ({ locale }: ILocale) => {
   const { t } = useTranslation("for-developers");
 
   return (
@@ -51,7 +53,7 @@ const LeftTextImg = () => {
               as="a"
               variant="quaternary"
               id="app-directory-for-developers"
-              href="/app-directory"
+              href={getLink("marketplace", locale)}
               label={t("AvailablePlugins")}
             />
             <StyledLeftTextImgTextAfter>

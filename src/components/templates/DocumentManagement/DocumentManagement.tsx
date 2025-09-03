@@ -1,3 +1,4 @@
+import { ILocale } from "@src/types/locale";
 import { FileFormats } from "./sections/FileFormats";
 import { FreeApps } from "./sections/FreeApps";
 import { Hero } from "./sections/Hero";
@@ -7,7 +8,7 @@ import { Seamlessly } from "./sections/Seamlessly";
 import { StayOrganized } from "./sections/StayOrganized";
 import { CollaborationsTabs } from "@src/components/modules/collaborations/CollaborationsTabs";
 
-const DocumentManagementTemplate = () => {
+const DocumentManagementTemplate = ({ locale }: ILocale) => {
   return (
     <>
       <Hero />
@@ -15,7 +16,7 @@ const DocumentManagementTemplate = () => {
       <FileFormats />
       <Seamlessly />
       <Protect />
-      <Productive />
+      <Productive locale={locale} />
       <FreeApps />
       <CollaborationsTabs />
     </>

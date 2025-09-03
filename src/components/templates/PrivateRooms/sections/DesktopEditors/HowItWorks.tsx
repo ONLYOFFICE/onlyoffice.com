@@ -5,7 +5,7 @@ import {
   StyledHowItWorksHeading,
   StyledHowItWorksText,
   StyledHowItWorksFeatures,
-  StyledFeatureImageItemText
+  StyledFeatureImageItemText,
 } from "./HowItWorks.styled";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
@@ -16,10 +16,7 @@ const HowItWorks = () => {
   const { t } = useTranslation("private-rooms");
 
   return (
-    <Section
-      background="#f5f5f5"
-      desktopSpacing={["112px", "112px"]}
-    >
+    <Section background="#f5f5f5" desktopSpacing={["112px", "112px"]}>
       <Container>
         <StyledHowItWorksHeading level={2} size={2}>
           <Trans
@@ -32,19 +29,19 @@ const HowItWorks = () => {
           />
         </StyledHowItWorksHeading>
         <StyledHowItWorksText>
-            <Trans
+          <Trans
             t={t}
             i18nKey="PrivateRoomWorks"
             components={[
               <Link
-              key="0"
-              href="/desktop.aspx"
-              color="main"
-              textUnderline
-              hover="underline-none"
-              />
+                key="0"
+                href="/desktop.aspx"
+                color="main"
+                textUnderline
+                hover="underline-none"
+              />,
             ]}
-            />
+          />
         </StyledHowItWorksText>
 
         <StyledHowItWorksFeatures>
@@ -59,19 +56,19 @@ const HowItWorks = () => {
                   {text.map((textKey, idx) => (
                     <StyledFeatureImageItemText key={idx}>
                       <Trans
-                      t={t}
-                      i18nKey={String(textKey)}
-                      components={textLinks?.map((link, index) => (
-                        <Link
-                          key={index}
-                          href={link.href}
-                          target={link.isExternal ? "_blank" : undefined}
-                          color="main"
-                          textUnderline
-                          hover="underline-none"
-                        />
-                      ))}
-                    />
+                        t={t}
+                        i18nKey={String(textKey)}
+                        components={textLinks?.map((link, index) => (
+                          <Link
+                            key={index}
+                            href={link.href}
+                            target={link.isExternal ? "_blank" : undefined}
+                            color="main"
+                            textUnderline
+                            hover="underline-none"
+                          />
+                        ))}
+                      />
                     </StyledFeatureImageItemText>
                   ))}
                 </>
@@ -79,7 +76,7 @@ const HowItWorks = () => {
               image={{
                 url: t(image.url),
                 height: image.height,
-                width: image.width
+                width: image.width,
               }}
             />
           ))}
