@@ -80,6 +80,7 @@ const Info = () => {
                 tooltipLabel={t(item.tooltipLabel)}
                 href={item.href}
                 icon={item.icon}
+                width="220px"
               />
             ))}
           </StyledInfoIcons>
