@@ -20,18 +20,18 @@ export const docsIcons: IIconTooltip[] = [
     },
   },
   {
-    id: "docs-presentation-editor",
-    tooltipLabel: "PresentationEditor",
-    href: "/presentation-editor",
+    id: "docs-spreadsheet-editor",
+    tooltipLabel: "SpreadsheetEditor",
+    href: "/spreadsheet-editor",
     icon: {
       url: iconsSprite,
       positionX: "-432px",
     },
   },
   {
-    id: "docs-spreadsheet-editor",
-    tooltipLabel: "SpreadsheetEditor",
-    href: "/spreadsheet-editor",
+    id: "docs-presentation-editor",
+    tooltipLabel: "PresentationEditor",
+    href: "/presentation-editor",
     icon: {
       url: iconsSprite,
       positionX: "-504px",

@@ -1,0 +1,21 @@
+{
+  "PageTitle": "ONLYOFFICE Docs Cloud: Grazie per esserti registrato!",
+  "PageDescription": "Hai registrato con successo un account personale sulla piattaforma Stripe. Completa altri passi per iniziare a utilizzare il tuo ONLYOFFICE Docs Cloud.",
+  "HeroTitle": "Grazie per esserti registrato!",
+  "HeroSubtitle": "Completa altri passi per iniziare a utilizzare il tuo ONLYOFFICE Docs Cloud",
+  "IntegrationsTitle": "Integrazioni",
+  "IntegrationsDescription": "Non hai ancora un'integrazione di ONLYOFFICE pronta per l'uso nella tua piattaforma? Scegli il servizio che utilizzi e installa il connettore ONLYOFFICE corrispondente.",
+  "IntegrationsMoreOptions": "Altre opzioni",
+  "HelpfulResources": "<0>Risorse</0> utili & assistenza",
+  "HelpfulResourcesText1": "Scopri come utilizzare gli editor online: documenti, moduli, fogli, diapositive. <0>Leggi le guide</0>",
+  "HelpfulResourcesText2": "Se hai altre domande sulla funzionalità, consulta il nostro <0>Centro assistenza</0>.",
+  "HelpfulResourcesText3": "In caso di problemi tecnici, contatta il nostro <0>team di supporto</0>.",
+  "HelpfulResourcesText4": "For any other inquiries, you are also welcome to visit our <0>forum</0> and <1>GitHub</1>.",
+  "Step1": "Apri un'email con i dettagli dell'integrazione di ONLYOFFICE Docs:",
+  "Step2": "Accedi alla tua piattaforma e passa alla pagina delle impostazioni di ONLYOFFICE.",
+  "Step3": "Immetti le credenziali fornite e clicca sul pulsante Salvare.",
+  "DocumentServerAddress": "Indirizzo del Document Server",
+  "DocumentServerJWTHeader": "Intestazione JWT* del Document Server",
+  "DocumentServerSecret": "Segreto del Document Server",
+  "JwtNote": "*JWT protegge i documenti dall'accesso non autorizzato. <0>Scopri di più</0>"
+}

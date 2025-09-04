@@ -1,11 +1,11 @@
 {
   "PageTitle": "ONLYOFFICE događaji | ONLYOFFICE",
-  "PageTitleOG": "Догађаји којима смо присуствовали",
-  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> присуствује интересантним догађајима широм света",
-  "CurrentEvents": "Упознајте ONLYOFFICE на једном од догађаја у 2025. години",
-  "PastEvents": "Прочитајте о догађајима којима је ONLYOFFICE присуствовао",
-  "MoreInfo": "Више информација",
-  "ScheduleMeeting": "Закажите састанак",
+  "PageTitleOG": "Pročitajte o događajima širom sveta u kojima je učestvovao ili će učestvovati ONLYOFFICE.",
+  "onlyofficeAttendsInterestingEventsAroundTheWorld": "<0>ONLYOFFICE</0> prisustvuje zanimljivim događajima širom sveta",
+  "CurrentEvents": "Upoznajte ONLYOFFICE na jednom od događaja u 2025",
+  "PastEvents": "Pročitajte o događajima u kojima je učestvovao ONLYOFFICE",
+  "MoreInfo": "More info",
+  "ScheduleMeeting": "Schedule meeting",
   "dateTemplates": {
     "singleDay": "{{day}}. {{month}} {{year}}.",
     "sameMonth": "{{dayStart}}.–{{dayEnd}}. {{month}} {{year}}.",
@@ -13,17 +13,17 @@
     "differentYears": "{{dayStart}}. {{monthStart}} {{yearStart}}. – {{dayEnd}}. {{monthEnd}} {{year}}."
   },
   "months": {
-    "January": "јануар",
-    "February": "фебруар",
-    "March": "март",
-    "April": "април",
-    "May": "мај",
-    "June": "јун",
-    "July": "јул",
-    "August": "август",
-    "September": "септембар",
-    "October": "октобар",
-    "November": "новембар",
-    "December": "децембар"
+    "January": "January",
+    "February": "February",
+    "March": "March",
+    "April": "April",
+    "May": "May",
+    "June": "June",
+    "July": "July",
+    "August": "August",
+    "September": "September",
+    "October": "October",
+    "November": "November",
+    "December": "December"
   }
 }

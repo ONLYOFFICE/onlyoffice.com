@@ -131,7 +131,7 @@ const FeatureIconsItem = ({
                       <Trans
                         i18nKey={label}
                         components={links.map((link, i) => (
-                          <a
+                          <Link
                             key={i}
                             href={link.href}
                             target={link.isExternal ? "_blank" : undefined}

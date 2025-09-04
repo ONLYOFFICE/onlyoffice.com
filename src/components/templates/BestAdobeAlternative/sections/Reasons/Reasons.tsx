@@ -28,7 +28,7 @@ const Reasons = () => {
                 ...item.icon,
                 isSprite: true,
               }}
-              heading={item.heading}
+              heading={t(String(item.heading))}
               text={t(String(item.text))}
             />
           ))}

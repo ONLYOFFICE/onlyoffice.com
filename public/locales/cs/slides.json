@@ -1,0 +1,34 @@
+{
+  "PageTitle": "Nejlepší online editor pro prezentace | ONLYOFFICE",
+  "PageDescription": "Online prezentační nástroje. Pracujte na prezentacích v PowerPointu: pptx, ppt, odp. Tvořte, upravujte a spolupracujte online.",
+
+  "Header": "Online presentation editor for your web app",
+  "SubHeader": "Vytvářejte jedinečné prezentace, upravujte je a spolupracujte na nich odkudkoli",
+
+  "Feature1Title": "Zapůsobit na publikum se svými pracemi a projekty",
+  "Feature1Desc": "Vyjádřete nápady pomocí širokého výběru formátovacích nástrojů, objektů a možností stylů. ONLYOFFICE Presentation Editor spolupracuje s prezentacemi aplikace PowerPoint a umí je ukládat ve formátech PDF, PNG, JPG. Podporovány jsou také soubory PPTX, PPT, ODP a PPSX.",
+  "Feature2Title": "Vytvořte obsah jakékoli složitosti",
+  "Feature2Desc": "Vytvářejte přehledná schémata a náčrty pomocí automatických tvarů a grafiky SmartArt, přidávejte přizpůsobitelné grafy, tabulky a rovnice pro výrazné zobrazení statistik. Zvyšte interaktivitu své prezentace pomocí předem připravených přechodů a animací. Save your time: use Slide Master, group any number of objects and apply settings in bulk.",
+  "Feature3Title": "Dovolte si být kreativní",
+  "Feature3Desc": "Vytvářejte vlastní kresby od ruky na snímcích pomocí pera nebo zvýrazňovače, zvolte si požadovanou barvu a tloušťku čar.",
+  "Feature4Title": "Prezentujte snadno a volně",
+  "Feature4Desc": "Pomocí režimu Presenter View si můžete nechat poznámky zvýraznit důležité součásti pro vaši řeč a pohodlně procházet prezentací přepnutím na libovolný požadovaný snímek jediným kliknutím.",
+  "Feature5Title": "Přinášejte společné týmové úsilí",
+  "Feature5Desc": "Svižná týmová práce na prezentacích a rozpracovaných konceptech je zaručena díky funkcím spolupráce. Souběžně upravujte snímky v reálném čase, ponechte komentáře na prvky snímku a chatujte s uživateli online, aniž byste opustili editor.",
+  "Feature6Title": "Použijte pomocníka AI",
+  "Feature6Desc": "Provádějte úlohy, které zahrnují porozumění nebo generování přirozeného jazyka pomocí zásuvného modulu ChatGPT. Získejte přesné odpovědi na své otázky, rychle vyhledávejte informace, generujte texty, nechte si sestavit kód atd. přímo v editoru.",
+  "Feature7Title": "Pohybujte se nad rámec základních možností",
+  "Feature7Desc": "Pomocí vestavěných doplňků vylepšete prezentace pomocí videa a prvků klipartu, získáte rychlý překlad jakéhokoli textu, vložte speciální symboly, upravte obrázky a další.",
+
+  "LearnMoreHeading": "Další informace o editoru prezentací ONLYOFFICE",
+  "BlogDesc": "Jak začlenit animace do prezentací v aplikaci PowerPoint?",
+  "TutorialsDesc": "Ochrana prezentací heslem",
+  "HintsDesc": "Podporované formáty elektronických prezentací",
+
+  "Q1": "Mohu upravovat prezentace bez připojení k internetu?",
+  "A1": "Ano, můžete si nainstalovat a používat bezplatné desktopové editory <0>ONLYOFFICE Desktop Editors</0> a upravovat místní prezentace offline.",
+  "Q2": "Nabízí ONLYOFFICE nativní mobilní aplikace pro úpravu prezentací ?",
+  "A2": "Ano, můžete si nainstalovat bezplatnou aplikaci <0>Dokumenty</0> pro zařízení se systémem iOS nebo Android a pracovat na prezentacích na cestách.",
+  "Q3": "Je možné používat editor prezentací ONLYOFFICE v rámci mé aplikace pod mou značkou ?",
+  "A3": "Ano, editor prezentací můžete integrovat do své aplikace. Použijte prosím aplikaci <0>ONLYOFFICE Docs Developer</0>."
+}

@@ -34,7 +34,10 @@ const SecurityFirst = ({ id, className }: ISecurityFirst) => {
     >
       <Container maxWidth="1240px">
         <StyledSecurityFirst>
-          <StyledSecurityFirstImage />
+          <StyledSecurityFirstImage
+            $image={t("SecurityFirstImage")}
+            $image2x={t("SecurityFirstImage2x")}
+          />
           <StyledSecurityFirstContent>
             <Heading level={2} size={2} color="#ffffff">
               <Trans

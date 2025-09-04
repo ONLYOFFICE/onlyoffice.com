@@ -1,0 +1,22 @@
+{
+  "PageTitle": "Webgebaseerde spreadsheet-editor: cre�ren, openen, bewerken en delen van sheets",
+  "PageDescription": "Open MS Excel- of Google Sheets-bestanden online. Maak een veilige spreadsheet, gebruik formules en visualiseer gegevens, deel deze voor gezamenlijke bewerking met meerdere gebruikers.",
+
+  "Header": "Teaminspanningen samenbrengen",
+  "SubHeader": "Maak Gezamenlijk bewerken van werkbladen naadloos en efficiënt",
+
+  "Feature1Title": "Deel spreadsheets online",
+  "Feature1Desc": "Deel uw werkbladen met Volledige toegang, Alleen bekijken, laat gasten opmerkingen achterlaten. Geef toestemming voor aangepaste filters om niet-relevante gegevens te verbergen en laat collega's onafhankelijk filters toepassen. Ontvang en deel links naar het geselecteerde bereik, zodat andere medewerkers snel de benodigde gegevens kunnen vinden, zelfs in grote werkmappen. Beperk het kopiëren en afdrukken van spreadsheets",
+
+  "Feature2Title": "Persoonlijke Bladweergaven maken",
+  "Feature2Desc": "Filter en sorteer bladen in individuele Bladweergaven. Sla ze op als voorkeursinstellingen om op elk moment terug te kunnen keren naar de gekozen sorteer- en filterparameters. Opgeslagen Bladweergaven zijn beschikbaar voor uw team, zodat u hun snel uw bevindingen kunt laten zien.",
+
+  "Feature3Title": "Werk samen aan excel spreadsheets in real time",
+  "Feature3Desc": "Bewerk in real-time met de Snelle modus om uw invoer direct aan medewerkers te laten zien en zie waar andere gebruikers werken met kleurindicatoren voor geselecteerde cellen. Zet de Strikte modus aan om cellen en tabellen in gedeelde spreadsheets privé te bewerken zonder afleiding",
+
+  "Feature4Title": "Volg de verschillende versies van uw spreadsheets",
+  "Feature4Desc": "Bekijk alle wijzigingen die in een spreadsheet zijn aangebracht, de auteurs en de data. Blader door de versiegeschiedenis en herstel zo nodig een eerdere versie.",
+
+  "Feature5Title": "Opmerkingen benoemen, en chatten",
+  "Feature5Desc": "Voeg opmerkingen toe aan cellen om vragen te stellen en problemen op te lossen. Benoem gebruikers in opmerkingen om hen uit te nodigen voor een gesprek. Gebruik de ingebouwde live chat, maak verbinding met Telegram of Jitsi via plug-ins om direct in de editor te communiceren."
+}

@@ -4,7 +4,7 @@ export interface IHeading {
   /** Additional CSS class names. */
   className?: string;
   /** The text label. If both `children` and `label` are provided, `children` will take precedence. */
-  label?: string;
+  label?: string | React.ReactNode;
   /** Content to be rendered inside. If both `children` and `label` are provided, `children` will take precedence. */
   children?: React.ReactNode;
   /** The color used for styling. */

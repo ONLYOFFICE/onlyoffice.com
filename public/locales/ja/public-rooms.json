@@ -1,0 +1,52 @@
+{
+  "PageTitle": "パブリックルームでの外部ユーザーとのファイル共有を簡素化",
+  "PageDescription": "ONLYOFFICE DocSpaceで第三者と簡単にコミュニケーションする",
+
+  "SimplifyFileSharingWithExternalUsers": "\u003c0\u003eパブリックルーム\u003c/0\u003eでの外部ユーザーとのファイル共有を簡素化",
+  "EasilyInteractWithThirdParties": "ONLYOFFICE DocSpaceで第三者と簡単にコミュニケーションする",
+  "IdealForPublicSharing": "公開共有に最適",
+  "AbsolutelySafe": "オフィスファイルを扱う際に最大限の安全性",
+  "EasyToStore": "お好みの場所に簡単に保存できる",
+  "SeamlesslyEmbeddable": "シームレスに埋め込み可能",
+  "CostEffectiveForAnyBudget": "どのような予算にも対応できる費用対効果",
+  "CreateFreeAccount": "無料アカウントを登録",
+
+  "HeroImgUrl": "/images/templates/public-rooms/hero/public-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/public-rooms/hero/public-rooms-header@2x.png",
+
+  "HeroImgUrlVideo": "/images/templates/public-rooms/hero/public-rooms-video.png",
+  "HeroImgUrlVideo2x": "/images/templates/public-rooms/hero/public-rooms-video@2x.png",
+
+  "PublicSharingDesc": "パートナー、スポンサー、下請け業者など、DocSpaceに直接アクセスできないユーザーを外部リンク経由で招待し、登録なしでファイルの閲覧、編集、レビュー、コメントができるようにします。",
+  "PublicSharingImgUrl": "/images/templates/public-rooms/features/ideal-for-public-sharing.png",
+  "PublicSharingImgUrl2x": "/images/templates/public-rooms/features/ideal-for-public-sharing@2x.png",
+
+  "AbsolutelySafeDesc": "さらにファイルを保護するために、パスワードを設定し、期間によってリンクを制限し、ファイルコンテンツのコピー、ファイルのダウンロード、印刷を制限することも可能。",
+  "AbsolutelySafeImgUrl": "/images/templates/public-rooms/features/absolutely-safe.png",
+  "AbsolutelySafeImgUrl2x": "/images/templates/public-rooms/features/absolutely-safe@2x.png",
+
+  "EasyToStoreDesc": "次のようなサードパーティのサービスをパブリックルームのデータストレージとして利用できる：Google Drive、One Drive、Box、Dropbox、kDrive、Nextcloud、ownCloud、その他WebDAVプロトコル経由で動作するサービス。",
+  "EasyToStoreImgUrl": "/images/templates/public-rooms/features/easy-to-store-where-you-want.png",
+  "EasyToStoreImgUrl2x": "/images/templates/public-rooms/features/easy-to-store-where-you-want@2x.png",
+
+  "SeamlesslyEmbeddableDesc": "どのようなウェブインターフェイスにも簡単にパブリックルームを統合できる。この方法で、あなたのウェブサイトやサービスのユーザーは、ウェブフロントエンドから直接ルームファイルにアクセスすることが可能。",
+  "SeamlesslyEmbeddableImgUrl": "/images/templates/public-rooms/features/seamlessly-embeddable.png",
+  "SeamlesslyEmbeddableImgUrl2x": "/images/templates/public-rooms/features/seamlessly-embeddable@2x.png",
+
+  "CostEffectiveDesc": "管理者のみ有料で、通常のユーザーとゲストは無料で何人でも追加できます。小規模チーム向けの無料STARTUPプランも利用可能。ONLYOFFICE DocSpaceは、中小企業でも大企業でも、すべてのビジネスに適している。企業データを完全に管理したいとお考えの方には、自社のサーバーにDocSpaceをインストールすることも可能。",
+  "CostEffectiveImgUrl": "/images/templates/public-rooms/features/cost-effective-for-any-budget.png",
+  "CostEffectiveImgUrl2x": "/images/templates/public-rooms/features/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "DocSpaceのパブリックルームについてさらに詳しく",
+  "Blog": "ブログ",
+  "BlogDesc": "ウェブサイトに埋め込む方法",
+  "LearnMore": "詳しくはこちら",
+  "BlogLink": "https://www.onlyoffice.com/blog/ja/2023/12/embed-public-docspace-room-to-website",
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "ビデオガイドでONLYOFFICE DocSpaceを使いこなす",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "今すぐ見る",
+  "Tutorial": "チュートリアル",
+  "TutorialDesc": "DocSpaceをシングルページアプリケーションへ統合する方法",
+  "HelpCenterLink": "https://www.onlyoffice.com/blog/ja/2023/09/integrating-onlyoffice-docspace-into-a-single-page-application"
+}

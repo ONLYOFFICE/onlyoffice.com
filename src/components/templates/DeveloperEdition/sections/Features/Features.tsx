@@ -77,7 +77,7 @@ const Features = () => {
           />
         </StyledCarouselWrapper>
 
-        <Button href="/see-it-in-action?developer=edition">
+        <Button as="a" href="/see-it-in-action?developer=edition">
           {t("HeroButtonSeeAction")}
         </Button>
       </StyledContainer>

@@ -1,0 +1,27 @@
+{
+  "PageTitle": "ONLYOFFICE - Cloud Office Applications",
+
+  "BuyOODocSpaceFamilyPack": "购买 ONLYOFFICE <0>协作空间家用版</0>",
+  "DocSpaceFamilyPack": "协作空间家用版",
+  "RoomBasedFileStorage": "基于房间的文件存储",
+  "OnlineEditors": "用于处理文本文档、电子表格、演示文稿、表单和 PDF 的在线编辑器",
+  "DesktopAndMobileApps": "桌面和移动应用程序，移动 Web 版",
+  "EnhancedSecurityFeatures": "增强安全功能",
+  "AllMinorUpdatesAndMajorUpgrades": "所有次要更新和主要升级",
+  "TryItFree": "免费试用",
+
+  "NumberOfUsers": "用户数",
+  "NumberOfUsersTooltip": "指定的用户数量即有多少人有权编辑文档、电子表格和演示文稿。 可同时编辑的文档数量不受限制。 其他用户只能打开文档仅查看。",
+  "LicenseDuration": "许可证有效期",
+  "Lifetime": "终身",
+  "LifetimeTooltip": "您可以无限期地使用购买时提供的所有 ONLYOFFICE 协作空间家用版的功能，但购买日期一年后您将无法再获得免费更新。",
+  "Updates": "支持与更新",
+  "1Year": "1 年",
+  "Total": "总计：",
+  "BuyNow": "立即购买",
+
+  "WhatDoesTheNumberOfUsersLabel": "“用户数量”是什么意思？",
+  "WhatDoesTheNumberOfUsersText": "指定的用户数量定义了可以访问编辑文档、电子表格和演示文稿的人数。可同时编辑的文档数量不受限制。<br/>其他用户将只能打开文档进行查看。<br/><br/>请注意：ONLYOFFICE 会将用户 ID 保留 30 天。之后，如有必要，您将能够用新用户替换该用户。如果您与外部用户共享文档，他们每个人都会收到一个命名用户 ID，有效期为 30 天。",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "我在哪里可以找到其他问题的答案？",
+  "WhereCanIFindAnswersToOtherQuestionsText": "请访问我们的<0>常见问题中心</0>或<1>提交您的请求</1>，我们会尽快帮助您。"
+}

@@ -29,7 +29,7 @@ const ForDevelopersPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <ForDevelopersTemplate />
+        <ForDevelopersTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

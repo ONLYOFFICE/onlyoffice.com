@@ -53,7 +53,7 @@
   "GetStarted": "Get started",
 
   "HowToStart": "How to start",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</2>.",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Get the integration app from the <0>ownCloud marketplace</0>.",
   "HowToStartStep3": "Configure the integration app.",
   "HowToStartStep3ImgUrl": "/images/templates/office-for-owncloud/how-to-start/step-3.svg",

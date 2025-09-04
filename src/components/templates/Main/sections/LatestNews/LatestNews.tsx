@@ -16,6 +16,8 @@ import { NewsCard } from "./sub-components/NewsCard";
 import { NewsItem } from "./sub-components/NewsItem";
 import { items } from "./data/items";
 import { getLink } from "@src/utils/getLink";
+import { formatDateRange } from "@src/utils/formatDateRange";
+import { formatDateLatestNews } from "./utils/formatDateLatestNews";
 
 const LatestNews = ({ locale }: ILocale) => {
   const { t } = useTranslation("main");
@@ -34,24 +36,26 @@ const LatestNews = ({ locale }: ILocale) => {
         if (blogElement && webinarElement) {
           const difference =
             blogElement.offsetHeight - webinarElement.offsetHeight;
-
-          if (window.innerWidth > 592) {
-            webinarElement.style.marginBottom = `${difference + 24}px`;
-          } else {
-            webinarElement.style.marginBottom = `24px`;
-          }
+          webinarElement.style.marginBottom =
+            window.innerWidth > 592 ? `${difference + 24}px` : `24px`;
         }
       }
     };
 
-    updateWebinarSpacing();
+    const webinarElement = ref.current?.querySelector(
+      ".latest-news-item-webinar",
+    ) as HTMLElement | null;
+    if (webinarElement) webinarElement.style.marginBottom = "0px";
+
+    const rafId = requestAnimationFrame(updateWebinarSpacing);
 
     window.addEventListener("resize", updateWebinarSpacing);
 
     return () => {
+      cancelAnimationFrame(rafId);
       window.removeEventListener("resize", updateWebinarSpacing);
     };
-  }, []);
+  }, [locale]);
 
   return (
     <Section background="#f5f5f5">
@@ -72,17 +76,26 @@ const LatestNews = ({ locale }: ILocale) => {
               />
             </StyledLatestNewsItemHeading>
             <StyledLatestNewsCards>
-              {items.blog.map((newsItem, newsIndex) => (
-                <NewsCard
-                  className={newsItem.className}
-                  heading={t(newsItem.heading)}
-                  imgUrl={newsItem.imgUrl}
-                  linkUrl={t(newsItem.linkUrl)}
-                  isExternalLink={newsItem.isExternalLink}
-                  date={dayjs(newsItem.date).format("D MMMM YYYY")}
-                  key={newsIndex}
-                />
-              ))}
+              {items.blog.map((newsItem, newsIndex) => {
+                const newsItemDate = newsItem.date ? t(newsItem.date) : "";
+                return (
+                  <NewsCard
+                    className={newsItem.className}
+                    heading={t(newsItem.heading)}
+                    imgUrl={newsItem.imgUrl ? t(newsItem.imgUrl) : ""}
+                    linkUrl={
+                      newsItem.linkUrl
+                        ? newsItem.linkUrl.startsWith("http")
+                          ? newsItem.linkUrl
+                          : t(newsItem.linkUrl)
+                        : "#"
+                    }
+                    isExternalLink={newsItem.isExternalLink}
+                    date={formatDateLatestNews(newsItemDate, locale)}
+                    key={newsIndex}
+                  />
+                );
+              })}
               <Link
                 href={getLink("blog", locale)}
                 label={t("MoreNewsHere")}
@@ -106,7 +119,7 @@ const LatestNews = ({ locale }: ILocale) => {
                     <NewsItem
                       heading={newsItem.heading}
                       linkUrl={newsItem.linkUrl}
-                      date={dayjs(newsItem.date).format("YYYY年MM月DD日")}
+                      date={dayjs(newsItem.date).format("YYYY年M月DD日")}
                       key={newsIndex}
                     />
                   ))}
@@ -123,19 +136,22 @@ const LatestNews = ({ locale }: ILocale) => {
                   />
                 </StyledLatestNewsItemHeading>
                 <StyledLatestNewsCards>
-                  {items.webinar.map((newsItem, newsIndex) => (
-                    <NewsCard
-                      className={newsItem.className}
-                      heading={t(newsItem.heading)}
-                      imgUrl={newsItem.imgUrl}
-                      linkUrl={newsItem.linkUrl}
-                      isExternalLink={newsItem.isExternalLink}
-                      date={dayjs(newsItem.date).format("D MMMM YYYY")}
-                      isWebinar={true}
-                      webinarTime={newsItem.webinarTime}
-                      key={newsIndex}
-                    />
-                  ))}
+                  {items.webinar.map((newsItem, newsIndex) => {
+                    const newsItemDate = newsItem.date ? t(newsItem.date) : "";
+                    return (
+                      <NewsCard
+                        className={newsItem.className}
+                        heading={t(newsItem.heading)}
+                        imgUrl={t(newsItem.imgUrl)}
+                        linkUrl={newsItem.linkUrl}
+                        isExternalLink={newsItem.isExternalLink}
+                        date={formatDateLatestNews(newsItemDate, locale)}
+                        isWebinar={true}
+                        webinarTime={newsItem.webinarTime}
+                        key={newsIndex}
+                      />
+                    );
+                  })}
                   <Link
                     href="https://www.youtube.com/user/onlyofficeTV"
                     label={t("MoreVideosHere")}
@@ -162,17 +178,29 @@ const LatestNews = ({ locale }: ILocale) => {
               {items.events.map((newsItem, newsIndex) => (
                 <NewsCard
                   heading={t(newsItem.heading)}
-                  imgUrl={newsItem.imgUrl}
-                  linkUrl={newsItem.linkUrl}
+                  imgUrl={t(newsItem.imgUrl)}
+                  linkUrl={
+                    newsItem.linkUrl
+                      ? newsItem.linkUrl.startsWith("http")
+                        ? newsItem.linkUrl
+                        : t(newsItem.linkUrl)
+                      : "#"
+                  }
                   isExternalLink={newsItem.isExternalLink}
                   date={
-                    newsItem.startDate
-                      ? `${dayjs(newsItem.startDate).format("MMMM D")}–${dayjs(
+                    newsItem.startDate && newsItem.endDate
+                      ? formatDateRange(
+                          newsItem.startDate,
                           newsItem.endDate,
-                        ).format("D, YYYY")}`
-                      : dayjs(newsItem.date).format("MMMM D, YYYY")
+                          locale,
+                        )
+                      : newsItem.startDate
+                        ? formatDateLatestNews(newsItem.startDate, locale)
+                        : newsItem.date
+                          ? formatDateLatestNews(newsItem.date, locale)
+                          : ""
                   }
-                  location={newsItem.location}
+                  location={t(newsItem.location ?? "")}
                   key={newsIndex}
                 />
               ))}

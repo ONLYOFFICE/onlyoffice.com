@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Совместная работа над документами Word",
+  "PageDescription": "Редактируйте документы совместно с коллегами в редакторе ONLYOFFICE. Устанавливайте права доступа, выбирайте удобный режим редактирования в реальном времени.",
+
+  "Header": "Работайте над документами Word совместно",
+  "SubHeader": "ONLYOFFICE делает совместную работу удобной, вне зависимости от размера команды и сложности документа",
+
+  "HeroImgUrl": "/images/templates/collaborate-on-word-documents/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/collaborate-on-word-documents/hero/ru/hero@2x.png",
+
+  "Feature1Title": "Делитесь документами",
+  "Feature1Desc": "Дайте коллегами права просматривать, редактировать, комметировать документы или предлагать изменения. Создавайте готовые к заполнению формы и предоставляйте другим пользователям доступ к их заполнению. Вы также можете запретить копирование, скачку и печать документов.",
+
+  "Feature2Title": "Редактируйте вместе",
+  "Feature2Desc": "Работайте в Быстром режиме, чтобы видеть, что печатают коллеги. Переключитесь на Строгий, чтобы приватно работать над своей частью документа. Если вы примените Undo/Redo или включите рецензирование, это не помешает соавторам.",
+
+  "Feature3Title": "Комментируйте и обсуждайте",
+  "Feature3Desc": "Оставляйте комментарии и отмечайте пользователей, чтобы привлечь их к процессу. Сортируйте комментарии по автору и дате. Используйте встроенный чат, плагины Telegram или Jitsi для общения с командой.",
+
+  "Feature4Title": "Рецензируйте и сравнивайте",
+  "Feature4Desc": "Лучший способ совместной работы над документом Word — показать правки другим пользователям. Включите Отслеживание изменений, чтобы выделить свои предложения, просматривать чужие изменения, принимать и удалять их. Просматривайте и восстанавливайте версии документов и сравнивайте отдельные файлы с помощью функции «Сравнение документов».",
+
+  "Feature1ImgUrl": "/images/templates/collaborate-on-word-documents/features/ru/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/ru/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/collaborate-on-word-documents/features/ru/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/ru/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/collaborate-on-word-documents/features/ru/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/ru/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/collaborate-on-word-documents/features/ru/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/ru/pic4@2x.png"
+}

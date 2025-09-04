@@ -20,7 +20,7 @@ export const items: IStepCarouselItem[] = [
     heading: "HowToStartStep2",
     headingLinks: [
       {
-        url: "https://www.humhub.com/en/marketplace/onlydocuments/",
+        url: "https://marketplace.humhub.com/module/onlyoffice/description",
         isExternal: true,
       },
     ],

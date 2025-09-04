@@ -54,8 +54,29 @@ const StyledWhatSubheading = styled(Heading)`
   }
 `;
 
+const StyledCheckExamplesBtn = styled.button`
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff6f3d;
+  text-decoration: underline;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media ${device.mobile} {
+    font-size: 14px;
+    line-height: 21px;
+  }
+`;
+
 export {
   StyledWhatContent,
   StyledWhatHeading,
   StyledWhatSubheading,
+  StyledCheckExamplesBtn,
 };

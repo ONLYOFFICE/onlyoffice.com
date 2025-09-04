@@ -27,7 +27,7 @@ const StyledHero = styled(Section)`
 
 const StyledHeroWrapper = styled.div`
   display: grid;
-  grid-template-columns: 448px auto;
+  grid-template-columns: 450px auto;
   align-items: center;
 
   @media ${device.tablet} {

@@ -1,0 +1,31 @@
+{
+  "PageTitle": "企业在线文字处理软件 | ONLYOFFICE",
+  "PageDescription": "与Microsoft®格式兼容的word文档在线协作编辑软件。上传、打开和编辑、共享您的文本文档。通过Windows、Linux、Mac OS、安卓设备、iPhone 和iPad访问。",
+
+  "Header": "文本文档无缝协作",
+  "SubHeader": "借助多种协作工具，各类规模的团队均可舒适地就大型文章进行协同创作",
+
+  "HeroImgUrl": "/images/templates/collaborate-on-word-documents/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/collaborate-on-word-documents/hero/zh/hero@2x.png",
+
+  "Feature1Title": "安全共享",
+  "Feature1Desc": "共享文档以供查看和编辑，使用高级共享权限来启用评论或审阅功能。创建可填写的表单并让他人来填写。限制文档的复制、下载以及打印。",
+
+  "Feature2Title": "轻松协同编辑",
+  "Feature2Desc": "通过快速模式实时在线协作处理文档，或借助严格模式私密处理文本与段落。使用撤销与重做、修订追踪以及其他独立工具。",
+
+  "Feature3Title": "评论与讨论",
+  "Feature3Desc": "留下评论，就问题展开讨论。按作者或日期对评论进行排序。在评论中提及用户，邀请他们进行协作并立即与其分享文件。使用内置聊天功能、Telegram 或 Jitsi 插件，同团队进行沟通。",
+
+  "Feature4Title": "追踪变更并对比内容",
+  "Feature4Desc": "就文本文档进行协作的一个方式便是向他人展示您的输入。启用修订追踪功能，突出显示您的变更，审阅由他人做出的变更并对其进行核准或删除。在文档历史记录中浏览和恢复文档版本，同时借助文档比较功能对比独立文档。",
+
+  "Feature1ImgUrl": "/images/templates/collaborate-on-word-documents/features/zh/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/zh/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/collaborate-on-word-documents/features/zh/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/zh/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/collaborate-on-word-documents/features/zh/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/zh/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/collaborate-on-word-documents/features/zh/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/zh/pic4@2x.png"
+}

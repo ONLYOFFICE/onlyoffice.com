@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Совместная работа над таблицами Excel",
+  "PageDescription": "Работайте над отчетами вместе с командой в редакторе таблиц ONLYOFFICE. Оставляйте комментарии к ячейкам, обменивайтесь сообщениями в чате прямо в редакторе.",
+
+  "Header": "Работайте над таблицами вместе",
+  "SubHeader": "Сделайте совместную работу над таблицами Excel максимально эффективной",
+
+  "HeroImgUrl": "/images/templates/share-spreadsheet-online/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/share-spreadsheet-online/hero/ru/hero@2x.png",
+
+  "Feature1Title": "Делитесь таблицами онлайн",
+  "Feature1Desc": "Делитесь таблицами и давайте права на редактирование и просмотр, позвольте гостям оставлять комментарии. Дайте права на пользовательский фильтр, чтобы скрыть нерелевантные данные и разрешить коллегам применять свои фильтры. Получайте и отправляйте ссылки на выбранный диапазон, чтобы соавторы могли быстро найти необходимые данные даже в объемных книгах. Ограничьте копирование и печать электронных таблиц.",
+
+  "Feature2Title": "Создавайте Представления",
+  "Feature2Desc": "Отфильтруйте и отсортируйте листы в отдельных представлениях листов и сохраните их, чтобы вернуться к ним в любой момент. Сохраненные представления доступны вашей команде, чтобы вы могли быстро показать им свои выводы.",
+
+  "Feature3Title": "Работайте совместно над таблицами Excel в реальном времени",
+  "Feature3Desc": "При совместном редактировании в режиме реального времени работайте в Быстром режиме, чтобы сразу показывать свои правки коллегам и видеть правки других пользователей при помощи цветовых индикаторов для выбранных ячеек.",
+
+  "Feature4Title": "Отслеживайте версии электронных таблиц",
+  "Feature4Desc": "Просматривайте изменения в электронных таблицах, а также их авторов и даты внесения. Загружайте историю версий и при необходимости восстанавливайте любые предыдущие версии.",
+
+  "Feature5Title": "Комментируйте и общайтесь в чате",
+  "Feature5Desc": "Добавляйте комментарии к ячейкам, чтобы задавать вопросы и поднимать проблемы. Упоминайте пользователей в комментариях, чтобы пригласить их к разговору. Используйте встроенный онлайн-чат, с помощью плагинов установите Telegram или Jitsi для общения непосредственно в редакторе.",
+
+  "Feature1ImgUrl": "/images/templates/share-spreadsheet-online/features/ru/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/share-spreadsheet-online/features/ru/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/share-spreadsheet-online/features/ru/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/share-spreadsheet-online/features/ru/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/share-spreadsheet-online/features/ru/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/share-spreadsheet-online/features/ru/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/share-spreadsheet-online/features/ru/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/share-spreadsheet-online/features/ru/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/share-spreadsheet-online/features/ru/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/share-spreadsheet-online/features/ru/pic5@2x.png"
+}

@@ -15,6 +15,7 @@
   "Free": "Gratuito",
   "Paid": "Pago",
   "GetItOn": "Obtenha em",
+  "Bot": "BOT",
 
   "FeatureConnectorTrelloText": "Visualize, edite e colabore em documentos do Office em tempo real no Trello, a melhor ferramenta de gerenciamento de projetos de trabalho em equipe.",
   "FeatureConnectorOdooText": "Edite e colabore em arquivos de escritório no Odoo Documents, um conjunto de aplicativos empresariais de código aberto.",
@@ -22,6 +23,7 @@
   "FeatureConnectorOwnCloudText": "Compartilhe documentos com diferentes níveis de acesso, edite documentos, planilhas e apresentações no ownCloud, a última plataforma de colaboração em nuvem que você precisará.",
   "FeatureConnectorPipedriveText": "Edite e colabore em documentos do Office no Pipedrive Deals, uma solução de CRM de vendas e gerenciamento de pipeline baseada na web.",
 
+  "TelegramConnectorText": "Abra, crie, converta, edite e colabore em documentos diretamente no Telegram, um serviço de mídia social e mensagens instantâneas (IM) multiplataforma e baseado em nuvem.",
   "AgorumConnectorText": "A integração do ONLYOFFICE Docs está disponível a partir da versão 9.4 do agorum core e pode ser facilmente instalada através do gerenciador de plugins.",
   "AlfrescoConnectorText": "Trabalhe com todos os tipos de documentos do Office no Alfresco Share, um ambiente de colaboração abrangente baseado na web para gerenciar documentos, conteúdo wiki, blogs e muito mais.",
   "BoxConnectorText": "Visualize, edite e coedite arquivos do Office no Box, um sistema seguro de gerenciamento de conteúdo em nuvem.",
@@ -71,6 +73,7 @@
   "FileCloudConnectorText": "Edite e colabore em documentos do Office, apresentações e planilhas diretamente do FileCloud, uma solução empresarial para compartilhamento, sincronização e backup de arquivos.",
   "OpenKMConnectorText": "Edite e colabore em documentos do Office, planilhas e apresentações diretamente do OpenKM, um sistema de código aberto para gerenciamento eletrônico de documentos e registros.",
   "FeatureConnectorMondayText": "Edite, visualize e colabore em arquivos em tempo real, tudo na sua plataforma de trabalho monday.",
+  "DzzOfficeConnectorText": "Visualize, edite e coedite documentos do Office on-line no DzzOffice, um pacote de escritório de código aberto para colaboração empresarial e de equipe.",
 
   "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço da web favorito? Ou você desenvolveu um?",
   "LetUsKnow": "Fale conosco",

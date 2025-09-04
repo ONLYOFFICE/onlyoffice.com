@@ -16,28 +16,43 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/:path*.aspx',
-        destination: '/:path*',
+        source: "/:path*.aspx",
+        destination: "/:path*",
         permanent: true,
       },
       {
-        source: '/app-server',
-        destination: '/docspace',
+        source: "/app-server",
+        destination: "/docspace",
         permanent: true,
       },
       {
-        source: '/cloud-office',
-        destination: '/docspace',
+        source: "/cloud-office",
+        destination: "/docspace",
         permanent: true,
       },
       {
-        source: '/free-alternative-to-microsoft-office',
-        destination: '/desktop',
+        source: "/free-alternative-to-microsoft-office",
+        destination: "/desktop",
         permanent: true,
       },
       {
-        source: '/survey-workspace',
-        destination: '/docspace',
+        source: "/survey-workspace",
+        destination: "/docspace",
+        permanent: true,
+      },
+      {
+        source: "/presentation-editor",
+        destination: "/slides",
+        permanent: true,
+      },
+      {
+        source: "/presentation-editor/:path*",
+        destination: "/slides/:path*",
+        permanent: true,
+      },
+      {
+        source: "/groups",
+        destination: "/workspace",
         permanent: true,
       },
     ];
@@ -45,3 +60,5 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+

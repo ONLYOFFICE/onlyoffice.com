@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Эффекты перехода в презентациях PowerPoint",
+  "PageDescription": "Привлекайте внимание аудитории, добавляя переходы к слайдам в редакторе презентаций ONLYOFFICE: Выцветание, Появление, Панорама, Открывание и другие.",
+
+  "Header": "Создавайте увлекательные презентации",
+  "SubHeader": "Представляйте свои идеи с помощью интерактивных презентаций PowerPoint",
+
+  "HeroImgUrl": "/images/templates/transition-effects/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/transition-effects/hero/ru/hero@2x.png",
+
+  "Feature1Title": "Создайте идеальный макет",
+  "Feature1Desc": "Выбирайте из нескольких стилей слайдов. Управляйте слайдами и меняйте их порядок, добавляйте гиперссылки, колонтитулы. Выравнивайте элементы с помощью расширенных параметров выравнивания и переноса.",
+
+  "Feature2Title": "Пишите безупречные тексты",
+  "Feature2Desc": "Редактируйте и форматируйте текстовые поля, применяйте шрифты, стили и макеты текста. Проверяйте орфографию, находите синонимы и антонимы, переводите языки с помощью плагинов перевода (Google Translate, DeepL или Apertium).",
+
+  "Feature3Title": "Вставляйте схемы и графику",
+  "Feature3Desc": "Расскажите свою историю с помощью визуальных эффектов. Создавайте и настраивайте диаграммы, автофигуры, таблицы и электронные таблицы OLE, уравнения и тексты. Наглядно представляйте ваши идеи с помощью графики SmartArt. Вставляйте изображения и редактируйте их с помощью плагина Photo Editor, добавляйте видео из YouTube и оформляйте код с помощью Highlight code. Применяйте пользовательские изображения в качестве маркеров в маркированных списках.",
+
+  "Feature4Title": "Добавляйте эффекты перехода к слайдам",
+  "Feature4Desc": "Привлекайте внимание аудитории, добавляя переходы к слайдам презентации, включая: Выцветание, Задвигание, Появление, Панорама, Открывание, Наплыв, Часы, Масштабирование. Укажите, как долго должен отображаться слайд, пока не сменится другим.",
+
+  "Feature1ImgUrl": "/images/templates/transition-effects/features/ru/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/transition-effects/features/ru/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/transition-effects/features/ru/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/transition-effects/features/ru/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/transition-effects/features/ru/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/transition-effects/features/ru/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/transition-effects/features/ru/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/transition-effects/features/ru/pic4@2x.png"
+}

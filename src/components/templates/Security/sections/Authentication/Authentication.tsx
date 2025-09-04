@@ -31,7 +31,7 @@ const Authentication = () => {
                     key={index}
                     className="feature-item"
                     position={{ desktop: index % 2 === 1 ? "right" : "left" }}
-                    heading={t(heading)}
+                    heading={t(String(heading))}
                     text={
                         <>
                         {text.map((textKey, idx) => (
@@ -57,65 +57,6 @@ const Authentication = () => {
                     }}
                     />
                 ))}
-            {/* <StyledAuthenticationFeatures> */}
-                {/* {items.map(({title, text, image}, index) => (
-                    <StyledFeatureImageItem
-                    key={index}
-                    className={`auth-item auth-item-${index + 1}`}
-                    title={t(title)}
-                    position={index % 2 === 0 ? "left" : "right"}
-                    text={
-                        Array.isArray(text.label)
-                        ? {
-                            label: text.label.map((item, index) => (
-                                <StyledFeatureItemText key={index}>
-                                    <Trans
-                                    key={index}
-                                    t={t}
-                                    i18nKey={String(item)}
-                                    components={[
-                                        <strong key="0" />,
-                                        ...(text.links?.map((link, linkIdx) => (
-                                            <Link
-                                            key={linkIdx + 1}
-                                            href={link.href}
-                                            target={link.isExternal ? "_blank" : undefined}
-                                            color="main"
-                                            textUnderline
-                                            hover="underline-none"
-                                            />
-                                        )) ?? []),
-                                        ]}
-                                />
-                                </StyledFeatureItemText>
-                            )),
-                        }
-                        : {
-                            label: (
-                                <Trans
-                                t={t}
-                                i18nKey={String(text.label)}
-                                components={text.links?.map((link, index) => (
-                                    <Link
-                                        key={index}
-                                        href={link.href}
-                                        target={link.isExternal ? "_blank" : undefined}
-                                        color="main"
-                                        textUnderline
-                                        hover="underline-none"
-                                    />
-                                ))}
-                                />
-                            ),
-                        }
-                    }
-                    image={{
-                        url: t(image.url),
-                        url2x: image.url2x && t(image.url2x),
-                        height: image.height,
-                    }}
-                    />
-                ))} */}
             </StyledHowItWorksFeatures>
             </Container>
         </Section>

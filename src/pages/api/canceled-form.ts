@@ -118,7 +118,7 @@ export default async function handler(
       message: "InstallCanceledRequestSuccessful",
     });
   } catch (error) {
-    console.error("Error saving rating:", error);
+    console.error("Install canceled error:", error);
     res.status(500).json({ status: "error", message: "Internal Server Error" });
   }
 }

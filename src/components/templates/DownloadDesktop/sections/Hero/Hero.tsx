@@ -54,7 +54,7 @@ const Hero = ({ locale, desktopProducts, mobileProducts }: IHero) => {
                       }
                     }}
                     variant="tertiary"
-                    label={item.label}
+                    label={t(String(item.label))}
                   />
                 ))}
               </StyledHeroButtons>
@@ -114,7 +114,7 @@ const Hero = ({ locale, desktopProducts, mobileProducts }: IHero) => {
                       }
                     }}
                     variant="tertiary"
-                    label={item.label}
+                    label={t(String(item.label))}
                   />
                 ))}
               </StyledHeroButtons>

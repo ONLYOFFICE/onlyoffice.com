@@ -1,0 +1,1 @@
+export { PrivacyPageTemplate } from "./Privacy";

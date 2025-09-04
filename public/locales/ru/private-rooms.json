@@ -75,5 +75,19 @@
     "WeDoNotUseMaster": "Мы не используем мастер-ключи при шифровании документов. Асимметричное шифрование с помощью личных пар ключей RSA, используемое в ONLYOFFICE, является более надежным методом, который также обеспечивает зашифрованную совместную работу.",
 
     "FillOutThisForm": "Заполните форму, чтобы скачать документы",
-    "GetItNowText": "Нажав кнопку “Скачать”, вы принимаете наше <0>Соглашение об уровне обслуживания</0> и <1>Положение о конфиденциальности</1>."
+    "GetItNowText": "Нажав кнопку “Скачать”, вы принимаете наше <0>Соглашение об уровне обслуживания</0> и <1>Положение о конфиденциальности</1>.",
+
+    "CardFormFullName": "Имя и фамилия",
+    "CardFormFullNameIsEmpty": "Полное имя не указано",
+    "CardFormFullNameIsIncorrect": "Неверное полное имя",
+    "CardFormPlaceholderName": "Имя Фамилия",
+    "CardFormCompanyName": "Компания",
+    "CardFormCompanyNameIsEmpty": "Название компании не указано",
+    "CardFormEmail": "Email",
+    "CardFormPlaceholderEmail": "name@domain.com",
+    "CardFormEmailIsEmpty": "Поле Email не заполнено",
+    "CardFormEmailIsIncorrect": "Неверный Email",
+
+    "CardsFormSuccess": "Запрос успешно отправлен",
+    "CardsFormError": "К сожалению, произошла ошибка, повторите попытку позже"
 }

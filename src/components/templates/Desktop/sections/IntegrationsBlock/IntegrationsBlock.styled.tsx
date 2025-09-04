@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
+import { Link } from "@src/components/ui/Link";
 
 const StyledText = styled(Text)`
   font-size: 18px;
@@ -64,11 +65,9 @@ const StyledContainer = styled(Container)`
   text-align: center;
 `;
 
-export {
-  StyledText,
-  LogoRow,
-  Logo,
-  StyledImage,
-  StyledContainer,
+const StyledLink = styled(Link)`
+  display: block;
+  margin: -24px auto 56px;
+`;
 
-}
+export { StyledText, LogoRow, Logo, StyledImage, StyledContainer, StyledLink };

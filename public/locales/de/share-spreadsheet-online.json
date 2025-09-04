@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Excel-Tabellen online teilen",
+  "PageDescription": "Geben Sie Ihre Arbeitsblätter mit Vollzugriff oder als Schreibgeschützt frei. Kommentare, Benutzerdefinierte Filter, Einschränken von Kopieren und Drucken sind auch verfügbar.",
+
+  "Header": "Organisieren Sie Teamarbeit",
+  "SubHeader": "Arbeiten Sie an Tabellenkalkulationen effizient zusammen",
+
+  "HeroImgUrl": "/images/templates/share-spreadsheet-online/hero/de/hero.png",
+  "HeroImgUrl2x": "/images/templates/share-spreadsheet-online/hero/de/hero@2x.png",
+
+  "Feature1Title": "Tabellenkalkulationen freigeben",
+  "Feature1Desc": "Teilen Sie Arbeitsblätter mit dem vollen Zugriff oder schreibgeschützt, erlauben Sie Kommentieren. Aktivieren Sie benutzerdefinierte Filter, um irrelevante Daten auszublenden und Filter anzuwenden, ohne die anderen zu stören. Erhalten Sie Links zum ausgewählten Bereich und geben Sie diese weiter, so dass Ihre Mitautoren auch in großen Arbeitsmappen schnell die benötigten Daten finden können. Beschränken Sie das Kopieren und Drucken von Tabellenkalkulationen.",
+
+  "Feature2Title": "Persönliche Tabellenansichten erstellen",
+  "Feature2Desc": "Filtern und sortieren Sie Blätter in persönlichen Tabellenansichten, speichern Sie diese als Voreinstellungen. Gespeicherte Tabellenansichten stehen Ihrem Team auch zur Verfügung.",
+
+  "Feature3Title": "In Echtzeit an Excel-Tabellen zusammenarbeiten",
+  "Feature3Desc": "Arbeiten Sie gemeinsam im Modus Schnell, um alle Änderungen von Mitautoren in Echtzeit mit Farbindikatoren in ausgewählten Zellen sehen zu können. Wählen Sie den Modus Formal aus, um Zellen und Tabellen privat zu bearbeiten, ohne die anderen zu stören.",
+
+  "Feature4Title": "Nutzen Sie Versionsverlauf in Tabellenkalkulationen",
+  "Feature4Desc": "Sehen Sie alle Änderungen in einer Tabellenkalkulation, wer und wenn sie gemacht hat. Stellen Sie vorherige Versionen wieder her.",
+
+  "Feature5Title": "Kommentieren, erwähnen, chatten",
+  "Feature5Desc": "Fügen Sie Kommentare in Zellen hinzu, um Fragen zu stellen und Schwierigkeiten zu diskutieren. Erwähnen Sie Benutzer in Kommentaren, um sie zum Gespräch einzuladen. Unterhalten Sie sich im Chat oder verwenden Sie das Telegram- oder Jitsi-Plugin.",
+
+  "Feature1ImgUrl": "/images/templates/share-spreadsheet-online/features/de/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/share-spreadsheet-online/features/de/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/share-spreadsheet-online/features/de/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/share-spreadsheet-online/features/de/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/share-spreadsheet-online/features/de/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/share-spreadsheet-online/features/de/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/share-spreadsheet-online/features/de/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/share-spreadsheet-online/features/de/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/share-spreadsheet-online/features/de/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/share-spreadsheet-online/features/de/pic5@2x.png"
+}

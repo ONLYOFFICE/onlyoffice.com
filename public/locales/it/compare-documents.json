@@ -1,0 +1,22 @@
+{
+  "PageTitle": "Confrontare due documenti word",
+  "PageDescription": "Confronta due documenti Word per le difference con ONLYOFFICE. Prendi qualsiasi documento dal tuo computer, archivio cloud o URL per vedere le differenze dal punto di vista del file presente.",
+
+  "Header": "Confronta i documenti",
+  "SubHeader": "Trova le differenze, applica le correzioni e completa i testi con la funzionalità di confronto di documenti",
+
+  "Feature1Title": "Confronta due documenti per le differenze",
+  "Feature1Desc": "Scegli qualsiasi documento dal tuo computer, archivio cloud o un URL per vedere le sue differenze dalla prospettiva del file presente.",
+
+  "Feature2Title": "Naviga attraverso i cambiamenti sottolineati",
+  "Feature2Desc": "Confronto di documenti ti permette di paragonare due documenti Word e sottolineare le differenze con la modalità Tenere traccia delle modifiche applicata. Naviga tra di loro usando le modalità di visualizzazione, riguarda il documento rapidamente con tutte le correzioni accettate o rifiutate.",
+
+  "Feature3Title": "Unisci le versioni dei file",
+  "Feature3Desc": "Accetta o rifiuta i cambiamenti individualmente o in blocco, pertanto unendo i documenti e completando la versione del file confrontato.",
+
+  "Feature4Title": "Sfoglia la cronologia delle versioni",
+  "Feature4Desc": "Confronta la versione presente e precedente del documento, recupera un documento su qualsiasi punto della sua cronologia, e trova un contenuto accidentalmente perso. Vedi le date, il tempo e l’autore delle revisioni del documento.",
+
+  "Feature5Title": "Unisci documenti",
+  "Feature5Desc": "La combinazione di documenti è simile al confronto. Tuttavia, quando si combinano due documenti, le modifiche non risolte dopo la revisione rimarranno nel file unito per poter accettarle o rifiutarle se necessario."
+}

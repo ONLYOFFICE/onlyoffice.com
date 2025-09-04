@@ -23,7 +23,7 @@ const DocumentManagementPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <DocumentManagementTemplate />
+        <DocumentManagementTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

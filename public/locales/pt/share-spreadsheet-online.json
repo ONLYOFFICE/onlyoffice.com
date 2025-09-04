@@ -1,0 +1,22 @@
+{
+  "PageTitle": "Compartilhe planilhas Excel",
+  "PageDescription": "Compartilhe suas planilhas para edição e vusualização, e deixe os convidados adicionarem comentários. Defina permissão para filtragem, cpia e impressão de planilhas personalizadas.",
+
+  "Header": "Reúna os esforços da equipe",
+  "SubHeader": "Torne a Edição Colaborativa de planilhas contínua e eficiente",
+
+  "Feature1Title": "Compartilhe planilhas online",
+  "Feature1Desc": "Compartilhe suas planilhas com Acesso Total ou Somente Visualização, e permita que os convidados deixem comentários. Defina permissão para que a filtragem personalizada oculte dados irrelevantes e permita que os colegas apliquem filtros de forma independente. Obtenha e compartilhe links para o intervalo selecionado para que outros coautores consigam encontrar rapidamente os dados necessários, mesmo em pastas de trabalho grandes. Restrinja a cópia e impressão de planilhas.",
+
+  "Feature2Title": "Crie Modos de Exposição de Planilhas pessoais",
+  "Feature2Desc": "Filtre e organize as folhas em Modos de Exibição de Planilhas individuais e salve-as como predefinições, para que você possa voltar aos parâmetros de organização e favoritos selecionados em qualquer momento. Modos de Exibição de Planilhas salvos estão disponíveis para sua equipe, para que você possa mostrar rapidamente suas descobertas.",
+
+  "Feature3Title": "Colabore em planilhas do Excel em tempo real",
+  "Feature3Desc": "Coedite em tempo real usando o modo Rápido para mostrar sua entrada de forma instantânea para os colaboradores e para ver onde os outros usuários estão trabalhando através dos indicadores de núcleos para células selecionadas. Ative o modo Estrito para editar de forma privada células e tabelas em planilhas compartilhadas sem distrações",
+
+  "Feature4Title": "Acompanhe as versoes de suas planilhas",
+  "Feature4Desc": "Visualize todas as alteracoes feitas em uma planilha, seus autores e datas. Navegue pelo historico de versoes e, se necessario, restaure qualquer versao anterior.",
+
+  "Feature5Title": "Comente, mencione, converse",
+  "Feature5Desc": "Adicione comentários às células para fazer perguntas e indicar problemas. Mencione usuários em comentários para convidá-los para uma conversa. Use o chat ao vivo integrado, conecte o Telegram ou Jitsi através dos plug-ins para se comunicar diretamente no editor."
+}

@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Заметки в презентациях PowerPoint",
+  "PageDescription": "Добавляйте заметки докладчика к презентациям в редакторе ONLYOFFICE и держите сценарий под рукой. Просматривайте презентацию с заметками в отдельном окне.",
+  
+  "Header": "Презентуйте идеи",
+  "SubHeader": "Используйте режим докладчика во время презентаций",
+
+  "HeroImgUrl": "/images/templates/powerpoint-notes/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/powerpoint-notes/hero/ru/hero@2x.png",
+
+  "Feature1Title": "Добавляйте заметки",
+  "Feature1Desc": "Добавляйте заметки докладчика к презентациям PowerPoint и держите сценарий под рукой. Вы можете просматривать презентацию с заметками к слайдам в отдельном окне, и одновременно демонстрировать её без заметок на другом мониторе.",
+
+  "Feature2Title": "Управляйте слайдами",
+  "Feature2Desc": "Перемещайтесь между слайдами с помощью компактных элементов управления слайд-шоу во время презентации. Просмотрите слайды в любой момент, чтобы оценить, как выглядит презентация в целом.",
+
+  "Feature3Title": "Используйте таймер",
+  "Feature3Desc": "Таймер позволит вам оценить продолжительность вашей презентации в часах, минутах и секундах, чтобы вы могли репетировать свою речь и рассчитать время. Запускайте, приостанавливайте, возобновляйте и сбрасывайте таймер.",
+
+  "Feature4Title": "Управляйте вниманием",
+  "Feature4Desc": "Используйте указку, чтобы направлять внимание аудитории и выделять важные данные в презентации.",
+
+  "Feature1ImgUrl": "/images/templates/powerpoint-notes/features/ru/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/powerpoint-notes/features/ru/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/powerpoint-notes/features/ru/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/powerpoint-notes/features/ru/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/powerpoint-notes/features/ru/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/powerpoint-notes/features/ru/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/powerpoint-notes/features/ru/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/powerpoint-notes/features/ru/pic4@2x.png"
+}
