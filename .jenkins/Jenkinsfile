@@ -110,6 +110,7 @@ switch(BRANCH_NAME) {
     webinars_email = "webinars@onlyoffice.com"
     server_email = "server@onlyoffice.com"
     nonprofit_email = "nonprofit.manager.t@gmail.com"
+    partnership_email = "sales@onlyoffice.com"
     break
   default:
     println("Branch: ${BRANCH_NAME} do not for deploy.")
