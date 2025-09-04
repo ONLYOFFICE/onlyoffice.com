@@ -82,7 +82,7 @@ switch(BRANCH_NAME) {
     public_static_url="https://static-site.onlyoffice.com"
     onlyoffice_com_strapi_api_url="https://site-cms.onlyoffice.com"
     onlyoffice_com_next_public_site_url="https://www.onlyoffice.com"
-    transporter_email_host="notify.teamlab.guru"
+    transporter_email_host="mail.onlyoffice.com"
     transporter_email_port="587"
     billing_domain="https://payments-api.onlyoffice.com/v9.9"
     billing_key="83"
@@ -169,8 +169,11 @@ pipeline {
                         passwordVariable: 'onlyoffice_site_mysql_password', 
                         usernameVariable: 'onlyoffice_site_mysql_user'),
                         usernamePassword(credentialsId: 'onlyoffice_site_test_email_credentials', 
-                        passwordVariable: 'transporter_email_auth_password', 
-                        usernameVariable: 'transporter_email_auth_user'),
+                        passwordVariable: 'transporter_email_auth_password_test', 
+                        usernameVariable: 'transporter_email_auth_user_test'),
+                        usernamePassword(credentialsId: 'onlyoffice_site_prod_email_credentials', 
+                        passwordVariable: 'transporter_email_auth_password_prod', 
+                        usernameVariable: 'transporter_email_auth_user_prod'),
                         usernamePassword(credentialsId: 'cmsoforms-user', 
                         passwordVariable: 'cmsoforms_password', 
                         usernameVariable: 'cmsoforms_user'),
@@ -220,6 +223,9 @@ pipeline {
 
           sed -i "s^var_next_public_onlyoffice_document_server_url^$next_public_onlyoffice_document_server_url^" .env
 
+          sed -i "s^var_transporter_email_host^$transporter_email_host^" .env
+          sed -i "s^var_transporter_email_port^$transporter_email_port^" .env
+
           sed -i "s^var_pipedrive_api_url^$pipedrive_api_url^" .env
 
           sed -i "s^var_sales_email^$sales_email^" .env
@@ -256,12 +262,16 @@ pipeline {
             sed -i "s^var_onlyoffice_document_server_token^$onlyoffice_site_test_document_server_token^" .env
             sed -i "s^var_pipedrive_api_token^$onlyoffice_site_test_pipedrive_api_token^" .env
 
+
             sed -i "s^var_thirdparty_domain^$onlyoffice_site_test_thirdparty_domain^" .env
             sed -i "s^var_google_analytics_url^$onlyoffice_site_test_google_analytics_url^" .env
             sed -i "s^var_google_search_cx^$onlyoffice_site_test_google_search_cx^" .env
             sed -i "s^var_google_search_key^$onlyoffice_site_test_google_search_key^" .env
 
             sed -i "s^var_core_machinekey^$onlyoffice_site_test_core_machinekey^" .env
+
+            sed -i "s^var_transporter_email_auth_user^$transporter_email_auth_user_test^" .env
+            sed -i "s|var_transporter_email_auth_password|$transporter_email_auth_password_test|" .env
 
             sed -i "s^var_core_mysql_url^$onlyoffice_site_test_core_mysql_url^" .env
             sed -i "s^var_core_us_mysql_url^$onlyoffice_site_test_core_us_mysql^" .env
@@ -288,6 +298,9 @@ pipeline {
             sed -i "s^var_google_search_key^$onlyoffice_site_prod_google_search_key^" .env
 
             sed -i "s^var_core_machinekey^$onlyoffice_site_prod_core_machinekey^" .env
+
+            sed -i "s^var_transporter_email_auth_user^$transporter_email_auth_user_prod^" .env
+            sed -i "s|var_transporter_email_auth_password|$transporter_email_auth_password_prod|" .env
 
             sed -i "s^var_core_mysql_url^$onlyoffice_site_prod_core_mysql_url^" .env
             sed -i "s^var_core_eu_mysql_url^$onlyoffice_site_prod_core_eu_mysql_url^" .env
