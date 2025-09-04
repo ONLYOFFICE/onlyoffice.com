@@ -82,7 +82,7 @@ switch(BRANCH_NAME) {
     cloud_front_distribution_id="E2JZ8IECDUCP4S"
     src_domain="2025.onlyoffice.com"
     public_static_url="https://static-site.onlyoffice.com"
-    onlyoffice_com_strapi_api_url="https://cms.teamlab.info"
+    onlyoffice_com_strapi_api_url="https://cms.onlyoffice.com"
     onlyoffice_com_next_public_site_url="https://www.onlyoffice.com"
     transporter_email_host="mail.onlyoffice.com"
     transporter_email_port="587"
