@@ -35,6 +35,7 @@ def webinars_email = ""
 def server_email = ""
 def nonprofit_email = ""
 def partnership_email = ""
+def callback_email = ""
 def docs_cloud_signin_api = ""
 
 switch(BRANCH_NAME) {
@@ -75,6 +76,7 @@ switch(BRANCH_NAME) {
     server_email = "nonprofit.manager.t@gmail.com"
     nonprofit_email = "nonprofit.manager.t@gmail.com"
     partnership_email = "nonprofit.manager.t@gmail.com"
+    callback_email = "nonprofit.manager.t@gmail.com,teamlab.ruby@gmail.com,test.teamlab@gmail.com"
     break
   case "production_deploy":
     aws_region="us-east-1"
@@ -111,6 +113,7 @@ switch(BRANCH_NAME) {
     server_email = "server@onlyoffice.com"
     nonprofit_email = "nonprofit.manager.t@gmail.com"
     partnership_email = "sales@onlyoffice.com"
+    callback_email = "callback@onlyoffice.com,sales@onlyoffice.com,anastasiia.reagan@onlyoffice.com"
     break
   default:
     println("Branch: ${BRANCH_NAME} do not for deploy.")
@@ -168,6 +171,7 @@ pipeline {
         nonprofit_email = "${nonprofit_email}"
         partnership_email = "${partnership_email}"
         docs_cloud_signin_api = "${docs_cloud_signin_api}"
+        callback_email = "${callback_email}"
       }
       steps {
         withCredentials([usernamePassword(credentialsId: 'onlyoffice_site_test_mysql_credentials', 
@@ -240,6 +244,7 @@ pipeline {
           sed -i "s^var_server_email^$server_email^" .env
           sed -i "s^var_nonprofit_email^$nonprofit_email^" .env
           sed -i "s^var_partnership_request_email^$partnership_email^" .env
+          sed -i "s^var_callback_email^$callback_email^" .env
 
           sed -i "s^var_web_payment_we_trial_url^$web_payment_we_trial_url^" .env
           sed -i "s^var_web_payment_dd_trial_url^$web_payment_dd_trial_url^" .env
