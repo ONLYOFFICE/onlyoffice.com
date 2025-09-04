@@ -17,6 +17,7 @@ import { Input } from "@src/components/ui/Input";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Modal } from "@src/components/ui/Modal";
 import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
+import { DocsCloudSigninResponse } from "@src/types/docscloudsignin";
 import { validateEmail } from "@src/utils/validators";
 import { CheckEmail } from "../CheckEmail";
 
@@ -68,7 +69,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
     setToken(token || "");
   };
 
-  const _onComplete = (response: unknown) => {
+  const _onComplete = (response: DocsCloudSigninResponse) => {
     setFormStatus("default");
 
     if (response.status === 403) {
@@ -78,13 +79,13 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
         setIsCaptchaInvalid(false);
       }, 5000);
 
-    } else if (response.status === 200 && !response.error) {
+    } else if (response.status === 200 && !("error" in response)) {
       setIsFormValid(true);
       setFormStatus("success");
       setIsModalOpen(true);
     } else {
       setFormStatus("error");
-      const respMsg = response.message;
+      const respMsg = "message" in response ? response.message : undefined;
       if (respMsg == "emailEmpty") setMailError("EmailIsEmpty");
       if (respMsg == "emailIncorrect") setMailError("EmailIsIncorrect");
       if (respMsg == "emailEmpty" || respMsg == "emailIncorrect") {
@@ -127,11 +128,15 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
       body: JSON.stringify({ data, recaptchaLang }),
     });
 
-    let docscloudsigninData: unknown;
+    let docscloudsigninData: DocsCloudSigninResponse;
     try {
       docscloudsigninData = await docscloudsigninRes.json();
     } catch (ex) {
-      docscloudsigninData = { error: "Invalid JSON response", message: {ex} };
+      docscloudsigninData = {
+        status: 500,
+        error: "Invalid JSON response",
+        message: ex instanceof Error ? ex.message : String(ex),
+      };
     }
     
     _onComplete(docscloudsigninData);
