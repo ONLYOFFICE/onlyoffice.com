@@ -10,8 +10,10 @@ import {
 } from "./Productive.styled";
 import { productiveItems } from "./data/items";
 import { Text } from "@src/components/ui/Text";
+import { getLink } from "@src/utils/getLink";
+import { ILocale } from "@src/types/locale";
 
-const Productive = () => {
+const Productive = ({ locale }: ILocale) => {
   const { t } = useTranslation("document-management");
 
   return (
@@ -39,7 +41,11 @@ const Productive = () => {
                 <Text size={2} color="#666666" label={t(text)} />
                 {link && (
                   <StyledProductiveLink
-                    href={link}
+                    href={
+                      link === "/app-directory"
+                        ? getLink("marketplace", locale)
+                        : link
+                    }
                     label={t("SeeAllIntegrations")}
                     color="main"
                     textUnderline

@@ -7,12 +7,13 @@ import { Cards } from "./sections/Cards";
 import { items } from "./data/items";
 import { Suitable } from "./sections/Suitable";
 import { Connectors } from "./sections/Connectors";
+import { ILocale } from "@src/types/locale";
 
-const SolutionsTemplate = () => {
+const SolutionsTemplate = ({ locale }: ILocale) => {
   return (
     <>
       <Hero />
-      <Features />
+      <Features locale={locale} />
       <Download />
       <Connectors />
       <Cards bg={items[0].bg} title={items[0].title} items={items[0].items} />

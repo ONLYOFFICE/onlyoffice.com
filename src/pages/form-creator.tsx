@@ -29,7 +29,7 @@ const FormCreatorPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <FormCreatorTemplate />
+        <FormCreatorTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

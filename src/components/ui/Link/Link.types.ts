@@ -37,4 +37,5 @@ export interface ILink {
   hover?: "color" | "underline" | "underline-none";
   /** Custom styles. */
   style?: React.CSSProperties;
+  onClick?: (e?: React.MouseEvent) => void;
 }

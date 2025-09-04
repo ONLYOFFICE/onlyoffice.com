@@ -33,7 +33,7 @@ export const items: IImproveItemExtended[] = [
     },
     link: {
       label: "OpenOurFormLibrary",
-      href: "https://templates.onlyoffice.com/",
+      href: "templatesLink",
     },
   },
   {
@@ -47,7 +47,7 @@ export const items: IImproveItemExtended[] = [
     },
     link: {
       label: "ReadAPIDocumentation",
-      href: "https://api.onlyoffice.com/docspace/plugins-sdk/get-started/basic-concepts/",
+      href: "https://api.onlyoffice.com/docspace/plugins-sdk/get-started/",
     },
   },
   {

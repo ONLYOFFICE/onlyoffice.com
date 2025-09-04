@@ -23,6 +23,8 @@ const CounterSelector = <T extends string>({
   selected,
   onChange,
 }: ICounterSelector<T>) => {
+  const MIN_VALUE = 1;
+  const MAX_VALUE = 9999;
   const hasItems = Array.isArray(items) && items.length > 0;
 
   const [inputValue, setInputValue] = useState<string>(() => {
@@ -39,9 +41,12 @@ const CounterSelector = <T extends string>({
         onChange?.(items[currentIndex + 1].id as T);
       }
     } else {
-      const newValue = (parseInt(inputValue, 10) + 1).toString();
-      setInputValue(newValue);
-      onChange?.(newValue as T);
+      const next = parseInt(inputValue, 10) + 1;
+      if (next <= MAX_VALUE) {
+        const newValue = next.toString();
+        setInputValue(newValue);
+        onChange?.(newValue as T);
+      }
     }
   };
 
@@ -51,7 +56,8 @@ const CounterSelector = <T extends string>({
         onChange?.(items[currentIndex - 1].id as T);
       }
     } else {
-      const newValue = Math.max(1, parseInt(inputValue, 10) - 1).toString();
+      const next = Math.max(MIN_VALUE, parseInt(inputValue, 10) - 1);
+      const newValue = next.toString();
       setInputValue(newValue);
       onChange?.(newValue as T);
     }
@@ -60,16 +66,15 @@ const CounterSelector = <T extends string>({
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const numeric = e.target.value.replace(/\D/g, "");
 
-    if (numeric.length > 4) return;
-
-    if (numeric === "") {
-      setInputValue("1");
-      onChange?.("1" as T);
+    if (numeric === "" || numeric === "0") {
+      setInputValue(MIN_VALUE.toString());
+      onChange?.(MIN_VALUE.toString() as T);
       return;
     }
 
-    const num = parseInt(numeric, 10);
-    const newValue = isNaN(num) ? "1" : num.toString();
+    const num = Math.min(MAX_VALUE, Math.max(MIN_VALUE, parseInt(numeric, 10)));
+    const newValue = num.toString();
+
     setInputValue(newValue);
     onChange?.(newValue as T);
   };
@@ -85,7 +90,9 @@ const CounterSelector = <T extends string>({
     >
       <StyledCounterSelectorBtn
         onClick={decrement}
-        disabled={hasItems ? currentIndex <= 0 : parseInt(inputValue, 10) <= 1}
+        disabled={
+          hasItems ? currentIndex <= 0 : parseInt(inputValue, 10) <= MIN_VALUE
+        }
         $buttonSize={buttonSize}
       >
         <DashIcon />
@@ -111,7 +118,11 @@ const CounterSelector = <T extends string>({
 
       <StyledCounterSelectorBtn
         onClick={increment}
-        disabled={hasItems ? currentIndex >= items.length - 1 : false}
+        disabled={
+          hasItems
+            ? currentIndex >= items.length - 1
+            : parseInt(inputValue, 10) >= MAX_VALUE
+        }
         $buttonSize={buttonSize}
       >
         <PlusIcon />

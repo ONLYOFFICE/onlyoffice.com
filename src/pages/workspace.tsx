@@ -23,7 +23,7 @@ const WorkspacePage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <WorkspaceTemplate />
+        <WorkspaceTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

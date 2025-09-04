@@ -13,8 +13,10 @@ import { FeatureItem } from "@src/components/widgets/FeatureItem";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
+import { getLink } from "@src/utils/getLink";
+import { ILocale } from "@src/types/locale";
 
-const Features = () => {
+const Features = ({ locale }: ILocale) => {
   const { t } = useTranslation("office-for-students");
 
   return (
@@ -46,7 +48,11 @@ const Features = () => {
                   components={textLinks?.map((link, index) => (
                     <Link
                       key={index}
-                      href={link.href}
+                      href={
+                        link.href === "/app-directory"
+                          ? getLink("marketplace", locale)
+                          : link.href
+                      }
                       target={link.isExternal ? "_blank" : undefined}
                       color="main"
                       textUnderline

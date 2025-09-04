@@ -1,0 +1,43 @@
+{
+  "PageTitle": "Über ONLYOFFICE | ONLYOFFICE",
+  "PageTitleOG": "Über das Projekt",
+  "PageDescription": "Erfahrten Sie mehr über Mission von ONLYOFFICE, seiner Geschichte und seinem Team.",
+  "HeroHeadingRun": "Betreiben Sie Ihr eigenes Büro mit <0>ONLYOFFICE</0>",
+  "HeroTextOurMission": "Unsere Mission ist es die innovativsten Web-Office-Apps für alle zugänglich zu machen",
+  "HeroQuotesTextWeWant": "Wir möchten, dass unsere Online Editoren perfekt sind wie eine Schweizer Uhr",
+  "HeroQuotesTitleLevBannov": "Lev Bannov",
+  "HeroQuotesSubtitleFounder": "Gründer und leitender Geschäftsführer",
+  "AscensioSystem": "Ascensio System SIA - die Wiege von <0>ONLYOFFICE</0>",
+  "AscensioDescriptions": [
+    "Das Projekt ONLYOFFICE wurde von erfahrenen IT-Experten der Firma Ascensio System SIA, einem führenden IT-Unternehmen mit Sitz in Riga, Lettland, entwickelt. Ursprünglich diente ONLYOFFICE der teaminternen Zusammenarbeit.",
+    "Der Versuch das Projekt einem breiteren Internet-Publikum vorzustellen hat sich als sehr erfolgreich erwiesen: ONLYOFFICE erhielt überragendes positives Feedback von der Internet-Community. Anschließen wurde das Funktionsspektrum von ONLYOFFICE überarbeitet und erheblich erweitert, was weitere Benutzer aus vielen Ländern angezogen hat.",
+    "Heute ist ONLYOFFICE ein internationales Open-Source-Projekt mit Mitarbeitern und Mitwirkenden in mehr als 30 Ländern. <0>Die Holdinggesellschaft</0> in Singapur vereint unsere Büros in aller Welt unter der Marke ONLYOFFICE. Derzeit haben wir Abteilungen in Riga, Singapur, London, Dallas, Belgrad, Eriwan, Taschkent und Shanghai. Möchten Sie Mitglied unserer großen Open-Source-Familie werden? Informieren Sie sich darüber, wie Sie <1>einen Beitrag leisten können</1> oder entdecken Sie <2>offene Stellen</2>."
+  ],
+  "AscensioDescriptionsTextLink1": "https://www.onlyoffice.com/blog/de/2023/08/onlyoffice-holdinggesellschaft-in-singapur",
+  "PeopleTextOnlyOffice": "Heute wird ONLYOFFICE von mehr als",
+  "PeopleTextCount": "15 000 000 Menschen",
+  "PeopleTextAllOver": "auf der ganzen Welt genutzt",
+  "PeopleTextCustomer": "Erfahrungsberichte",
+  "FeaturesItemHeading1": "<0>ONLYOFFICE</0> - die Zukunft der Dokumentenverarbeitung",
+  "FeaturesItemText1": [
+    "Bei Ascensio System SIA sind wir immer auf dem neuesten Stand der Technologietrends und versuchen diese effektiv in unserer Arbeit einzubinden.",
+    "Wir waren die Ersten, die Online-Dokumenteneditoren mit HTML5-Canvas-Elementen geschrieben haben. Dadurch sind wir unseren Konkurrenten immer einen Schritt voraus und unsere Kunden profitieren von einer umfassenden und funktionsreichen Online-Office-Suite, die unter anderem mit den Dateiformaten von Microsoft Office und OpenDocument kompatibel ist",
+    "Die Online Editoren für Dokumente wurden erstmalig auf der <0>CeBit</0> vorgestellt und sind unser ganzer Stolz geworden. Jetzt können Sie diese als Teil unseres Office-Pakets verwenden oder einfach in Ihre eigene SaaS-Lösung integrieren."
+  ],
+  "FeaturesItemLink1": "Weitere Informationen zu unseren Produkten",
+  "FeaturesItemTextLink1": "https://www.onlyoffice.com/blog/2012/03/teamlab-at-cebit-2012-how-we-did-it/?from=about",
+  "FeaturesItemHeading2": "<0>ONLYOFFICE</0> - alles was Sie für das Wachstum Ihres Unternehmens benötigen",
+  "FeaturesItemText2": [
+    "ONLYOFFICE bietet ein komplettes Office-Paket inklusive Dokumentenmanagement, Projektmanagement, CRM, Kalender, Mail und Firmennetzwerk.",
+    "Dadurch müssen Sie nicht zwischen mehreren Anwendungen hin und her wechseln, um verschiedene Aufgaben auszuführen.",
+    "Sie erhalten ein einziges System mit vielen Funktionen, um jeden Arbeitsschritt zu organisieren, Ihre Produktivität zu steigern und Ihren Erfolg zu optimieren."
+  ],
+  "FeaturesItemLink2": "Erfahren Sie mehr über ONLYOFFICE Workspace",
+  "FeaturesItemHeading3": "<0>ONLYOFFICE DocSpace</0> – Zusammenarbeit an Dokumenten einfacher gemacht",
+  "FeaturesItemText3": [
+    "ONLYOFFICE DocSpace soll die Zusammenarbeit an Office-Dokumenten und anderen Inhalten mit verschiedenen Personen verbessern, mit denen Sie interagieren müssen, z.B. mit Kollegen, Mitarbeitern, Kunden, Partnern, Auftragnehmern, Sponsoren usw.",
+    "Die Plattform bietet eine raumbasierte Umgebung für die Organisation einer klaren Dateistruktur, je nach Ihren Bedürfnissen oder Projektzielen. Flexible Zugriffsberechtigungen und Benutzerrollen ermöglichen Ihnen die Feinabstimmung des Zugriffs auf den gesamten Raum oder einzelne Räume."
+  ],
+  "FeaturesItemLink3": "Mehr über ONLYOFFICE DocSpace erfahren",
+  "DiscoverHeading": "Unsere Entwicklung auf der Zeitachse"
+}

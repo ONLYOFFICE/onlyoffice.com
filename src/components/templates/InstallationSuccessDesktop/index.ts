@@ -1,0 +1,1 @@
+export { InstallationSuccessDesktopTemplate } from "./InstallationSuccessDesktop";

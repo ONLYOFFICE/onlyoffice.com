@@ -29,7 +29,7 @@ const TechnologyPartnersPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <TechnologyPartnersTemplate />
+        <TechnologyPartnersTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

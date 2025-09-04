@@ -94,7 +94,7 @@ export const carouselItems: ICarouselItems[] = [
       url2x: "SliderScreen7Url2x",
     },
     linkLabel: "LearnMore",
-    href: "/ai-assistant",
+    href: "/document-editor",
   },
 ];
   

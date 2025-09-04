@@ -1,0 +1,37 @@
+{
+  "PageTitle": "¡Gracias por instalar ONLYOFFICE!",
+  "PageDescription": "ONLYOFFICE Features. Use online document editors, options on document management, project management, Gantt Chart, crm system, business collaboration, calendar.",
+
+  "HeroTitle": "¡Gracias por elegir <0>ONLYOFFICE Desktop Editors</0>!",
+  "HeroSubTitle": "Nos alegramos de que te hayas unido a nuestra comunidad de usuarios felices de ONLYOFFICE.",
+
+  "EditingCapabilities": "Con ONLYOFFICE Desktop Editors tus posibilidades de edición son infinitas:",
+  "OpenCreateEdit": "<0>Abre, crea y edita</0> documentos, hojas, diapositivas y archivos PDF.",
+  "StylingFormattingTools": "Utiliza un montón de útiles <0>herramientas de estilo y formato</0>",
+  "CollaborateOnDocs": "<0>Colabora en documentos</0> dentro de tu plataforma en la nube",
+  "CreateFillOut": "<0>Crea y rellena</0> formularios PDF",
+  "ProtectDocs": "<0>Protege tus documentos</0> con contraseñas, marcas de agua o firmas digitales.",
+
+  "StayTuned": "Sigue atento",
+  "StayTunedSubTitle": "Suscríbete al boletín de noticias para recibir consejos sobre las aplicaciones, actualizaciones y ofertas especiales!",
+  "StayTunedText": "*Al hacer clic en Suscribirse, aceptas las <0>normas de uso del servicio</0> y <1>el procesamiento de datos personales</1>.",
+
+  "Placeholder": "Introduce tu dirección de correo electrónico",
+  "Subscribe": "Suscribirse",
+  "EmailIsEmpty": "El campo Email está vacío",
+  "EmailIsIncorrect": "Email es incorrecto",
+  "ThankYouForSubscribing": "Gracias por suscribirte! Revisa tu correo electrónico.",
+
+  "ExploreOOSolutions": "Explora las soluciones de ONLYOFFICE",
+  "Cloud": "Nube",
+  "ConnectToYourCloud": "Conéctate a tu nube",
+  "MobileOffice": "Suite ofimática móvil",
+  "DownloadMobileOffice": "Descárgate la suite ofimática móvil",
+  "OODocSpace": "ONLYOFFICE DocSpace",
+  "TryDocSpace": "Prueba ONLYOFFICE DocSpace",
+
+  "UsefulLinks": "Enlaces útiles",
+  "ReadBlog": "<0>Lee el blog</0> para consejos y últimas noticias",
+  "LearnMore": "<0>Más información</0> sobre ONLYOFFICE Docs",
+  "ContactUs": "¿Tienes una pregunta o una sugerencia ? Ponte en contacto con nosotros a través de <0>info@onlyoffice.com</0>"
+}

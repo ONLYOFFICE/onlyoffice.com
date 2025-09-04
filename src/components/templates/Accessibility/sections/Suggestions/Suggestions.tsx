@@ -23,7 +23,7 @@ const Suggestions = () => {
             i18nKey="SuggestionsDescription"
             components={[
               <Link
-                href="https://github.com/ONLYOFFICE/DocumentServer/issue"
+                href="https://github.com/ONLYOFFICE/DocumentServer/issues"
                 target="_blank"
                 textUnderline
                 hover="underline-none"

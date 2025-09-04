@@ -75,5 +75,19 @@
     "WeDoNotUseMaster": "我们在文件加密中不使用主密钥。ONLYOFFICE 中使用的个人RSA密钥对的非对称加密是一种更可靠的方法，也允许实现加密协作。",
 
     "FillOutThisForm": "请填写此表以获得您的下载",
-    "GetItNowText": "点击“下载”即表示您了解并同意我们的 <0>SLA</0> 以及 <1> 隐私声明</1>。"
+    "GetItNowText": "点击“下载”即表示您了解并同意我们的 <0>SLA</0> 以及 <1> 隐私声明</1>。",
+
+    "CardFormFullName": "全名",
+    "CardFormFullNameIsEmpty": "全名为空",
+    "CardFormFullNameIsIncorrect": "全名错误",
+    "CardFormPlaceholderName": "姓名",
+    "CardFormCompanyName": "公司名称",
+    "CardFormCompanyNameIsEmpty": "公司名称为空",
+    "CardFormEmail": "电子邮件",
+    "CardFormPlaceholderEmail": "name@domain.com",
+    "CardFormEmailIsEmpty": "电子邮箱为空",
+    "CardFormEmailIsIncorrect": "电子邮箱错误",
+
+    "CardsFormSuccess": "您的请求已成功发送！",
+    "CardsFormError": "很抱歉，发生错误，请稍后重试"
 }

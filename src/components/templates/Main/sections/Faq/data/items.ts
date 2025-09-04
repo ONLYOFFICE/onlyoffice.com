@@ -42,4 +42,19 @@ export const items: ICollapseExtended[] = [
     label: "DoesOOHaveAds",
     children: "NoOOIsAdFree",
   },
+  {
+    label: "WhoOwnsOO",
+    children: "OOIsOwnedByAscensioSystemSIA",
+    links: [{ href: "https://onlyo.co/3UKteVe", isExternal: true }],
+  },
+  {
+    label: "WhoIsTheCEOOfOO",
+    children: "TheFounderAndTheCEOOfOO",
+    links: [
+      {
+        href: "https://www.linkedin.com/in/lev-bannov-6193aa32/",
+        isExternal: true,
+      },
+    ],
+  },
 ];
