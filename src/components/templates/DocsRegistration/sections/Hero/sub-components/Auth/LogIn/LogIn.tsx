@@ -20,6 +20,7 @@ import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { DocsCloudSigninResponse } from "@src/types/docscloudsignin";
 import { validateEmail } from "@src/utils/validators";
 import { CheckEmail } from "../CheckEmail";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 interface ILogInProps {
   recaptchaLang: string;
@@ -49,6 +50,8 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
   const [hCaptchaSize, setHCaptchaSize] = useState<"normal" | "compact">("normal");
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const pageTrack = usePageTrack();
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -80,6 +83,8 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
       }, 5000);
 
     } else if (response.status === 200 && !("error" in response)) {
+      pageTrack('docs-cloud-singin');
+
       setIsFormValid(true);
       setFormStatus("success");
       setIsModalOpen(true);

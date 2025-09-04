@@ -29,6 +29,7 @@ import { CheckEmail } from "../CheckEmail";
 import { RadioBlock2Options } from "../RadioBlock2Options/RadioBlock2Options";
 import { ISignUpData } from "./SignUp.types";
 import { Platforms } from "./data/Platforms";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 
 const initialFormData: ISignUpData = {
@@ -70,6 +71,8 @@ const SignUp = () => {
 
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
   const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
+
+  const pageTrack = usePageTrack();
 
   const { getClientReferenceId, getAffiliateToken } = useRewardful({
     onReady: () => {
@@ -170,6 +173,8 @@ const SignUp = () => {
     const data = await res.json();
 
     if (data.status === "success") {
+      pageTrack("docs-registration-request");
+
       if (formData.tariffPlan == "Business") {
         setIsModalOpen(true);
       }

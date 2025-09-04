@@ -33,6 +33,7 @@ import {
   validateEmail,
   validateWebsite,
 } from "@src/utils/validators";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const PartnershipRequestForm = ({
   locale,
@@ -99,6 +100,7 @@ const PartnershipRequestForm = ({
   const [isOnSubmitPushed, setIsOnSubmitPushed] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
+  const pageTrack = usePageTrack();
 
   const segmentValues = useMemo(
     () => ({
@@ -289,6 +291,8 @@ const PartnershipRequestForm = ({
       });
 
       if (onSubmitRequestData.status === "success") {
+        pageTrack("Become_an_ONLYOFFICE_official_partner");
+
         setFormStatus("success");
 
         setIsOpen(true);
