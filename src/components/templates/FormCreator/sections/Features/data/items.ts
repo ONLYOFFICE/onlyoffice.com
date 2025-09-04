@@ -11,7 +11,7 @@ export const items: IFeatureImageItemExtended[] = [
     links: [
       {
         label: "Feature1Link",
-        href: "https://templates.onlyoffice.com/",
+        href: "FeatureLinkTemplateOO",
         isExternal: true,
       },
     ],
@@ -46,7 +46,7 @@ export const items: IFeatureImageItemExtended[] = [
     links: [
       {
         label: "Feature4Link",
-        href: "https://templates.onlyoffice.com/",
+        href: "FeatureLinkTemplateOO",
         isExternal: true,
       },
     ],

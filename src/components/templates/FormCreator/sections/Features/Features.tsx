@@ -33,6 +33,7 @@ const Features = () => {
         ),
         links: item.links?.map((link) => ({
           ...link,
+          href: t(String(link.href), { defaultValue: link.href }),
           label: t(String(link.label)),
         })),
         image: {
