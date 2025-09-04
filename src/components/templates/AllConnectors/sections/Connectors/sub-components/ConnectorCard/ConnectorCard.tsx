@@ -32,6 +32,7 @@ const ConnectorCard = ({
   getItNowUrl,
   isNew,
   isWopi,
+  isBot,
 }: IConnectorCard) => {
   const { t } = useTranslation("all-connectors");
 
@@ -40,7 +41,11 @@ const ConnectorCard = ({
       <StyledConnectorCardImgWrapper $imgBgColor={imgBgColor}>
         <StyledConnectorCardImg $imgUrl={imgUrl} />
         <StyledConnectorCardHeadingFor>
-          {isWopi ? (
+          {isBot ? (
+            <StyledConnectorCardHeadingName level={4} color="#444444" >
+              {t("Bot")}
+            </StyledConnectorCardHeadingName>
+          ) : isWopi ? (
             <StyledConnectorCardHeadingName level={4} color="#444444" >
               {t("WOPIConnectorFor")}
             </StyledConnectorCardHeadingName>

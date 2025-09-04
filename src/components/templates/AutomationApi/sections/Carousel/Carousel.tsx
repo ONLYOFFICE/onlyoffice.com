@@ -33,7 +33,7 @@ const Carousel = () => {
             }))}
           />
           <Link
-            href="/office-for-odoo.aspx"
+            href="/office-for-odoo"
             color="main"
             textUnderline
             hover="underline-none"

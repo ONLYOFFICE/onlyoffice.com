@@ -17,7 +17,7 @@ export const items: IBlogCard[] = [
     imgUrl:
       "/images/templates/office-for-alfresco/learn-more/success-story.jpg",
     heading: { label: "SuccessStory" },
-    text: "SuccessStoryDescription",
+    text: "AtolCDReinforcesOnlineCollaboration",
     links: [
       {
         href: "https://www.onlyoffice.com/blog/2020/11/atol-cd-reinforces-online-collaboration-in-alfresco-digital-workspace-by-integrating-onlyoffice-docs",

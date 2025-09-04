@@ -29,7 +29,7 @@
   "EnterpriseFeature28": "SaaS-Bereitstellungsmodell mit der Möglichkeit, die Editoren auf einem eigenen Server zu hosten, der vom ONLYOFFICE-Team gewartet wird",
   "EnterpriseImgUrl2": "/images/templates/for-enterprises/features/enterprise_ready.svg",
   "TryNow": "Jetzt testen",
-  "SeePrices": "<0>Preise ansehen</0>",
+  "SeePrices": "Preise ansehen",
 
   "EnterpriseHead3": "<0>Umfassendes</0> Workspace zur Verwaltung aller Geschäftsprozesse",
   "EnterpriseSub3": "Alternative zu Google Workspace, Microsoft 365, Zoho Workplace",
@@ -62,7 +62,7 @@
   "EnterpriseFeature55": "Schneller Zugriff auf in Ihrer Cloud gespeicherte Dokumente",
   "EnterpriseImgUrl5": "/images/templates/for-enterprises/features/mobile_apps.svg",
   "IOSAndroidLink": "Erfahren Sie mehr über Apps für <0>iOS</0> / <1>Android</1>",
-  "LearnMore": "<0>Mehr erfahren</0>",
+  "LearnMore": "Mehr erfahren",
 
   "AddYourServiceAsAPlugin": "Fügen Sie Ihren Dienst als Plugin zu ONLYOFFICE hinzu",
   "ThinkYourWebServiceCanBeUseful": "Denken Sie, dass Ihr Webdienst für ONLYOFFICE-Benutzer nützlich sein könnte? Erstellen Sie ein Plugin für ONLYOFFICE <0>DocSpace</0> oder <1>Docs</1> und machen Sie die Integration Wirklichkeit!",

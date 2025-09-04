@@ -22,9 +22,7 @@ const Hero = () => {
       <Container maxWidth="1240px">
         <StyledHeroWrapper>
           <StyledHeroContent>
-            <StyledHeroHeading
-              label={t("KeepYourDocuments")}
-            />
+            <StyledHeroHeading label={t("KeepYourDocuments")} />
             <StyledHeroText label={t("MeetONLYOFFICEPrivateRooms")} />
           </StyledHeroContent>
           <StyledHeroImage />

@@ -2,10 +2,11 @@ import { Trans, useTranslation } from "next-i18next";
 import { items } from "./data/items";
 import { EditorsFeatures } from "@src/components/modules/editors/EditorsFeatures";
 import { Link } from "@src/components/ui/Link";
+import { getLink } from "@src/utils/getLink";
+import { ILocale } from "@src/types/locale";
 
-const Features = () => {
-  const { t, i18n } = useTranslation("form-creator");
-  const locale = i18n.language;
+const Features = ({ locale }: ILocale) => {
+  const { t } = useTranslation("form-creator");
 
   return (
     <EditorsFeatures
@@ -33,8 +34,11 @@ const Features = () => {
         ),
         links: item.links?.map((link) => ({
           ...link,
-          href: t(String(link.href), { defaultValue: link.href }),
           label: t(String(link.label)),
+          href:
+            link.href === "templatesLink"
+              ? getLink("templates", locale)
+              : link.href,
         })),
         image: {
           url: t(item.image.url),
@@ -48,4 +52,3 @@ const Features = () => {
 };
 
 export { Features };
-

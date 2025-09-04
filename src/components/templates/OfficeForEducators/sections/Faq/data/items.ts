@@ -17,7 +17,7 @@ export const items: ICollapseExtended[] = [
   {
     label: "DoesOOOfferTemplates",
     children: "DoesOOOfferTemplatesAnswer",
-    links: [{ href: "https://templates.onlyoffice.com", isExternal: true }],
+    links: [{ href: "templatesLink", isExternal: true }],
   },
   {
     label: "IsOOSecure",

@@ -11,9 +11,12 @@ import {
 } from "./LearnMore.styled";
 import { items } from "./data/items";
 import { Button } from "@src/components/ui/Button";
+import { ILocale } from "@src/types/locale";
+import { getLink } from "@src/utils/getLink";
 
-const LearnMore = () => {
+const LearnMore = ({ locale }: ILocale) => {
   const { t } = useTranslation("best-adobe-alternative");
+
   return (
     <Section tabletSmallSpacing={["88px", "88px"]}>
       <Container>
@@ -40,7 +43,7 @@ const LearnMore = () => {
           </StyledBlogCardWrapper>
           <Button
             as="a"
-            href={t("VisitFreeFormsLibraryLink")}
+            href={getLink("templates", locale)}
             label={t("VisitFreeFormsLibrary")}
           />
         </StyledLearnMoreWrapper>

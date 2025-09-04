@@ -4,14 +4,15 @@ import { Features } from "./sections/Features";
 import { LeftTextImg } from "./sections/LeftTextImg";
 import { Questions } from "./sections/Questions";
 import { Blog } from "./sections/Blog";
+import { ILocale } from "@src/types/locale";
 
-const ForDevelopersTemplate = () => {
+const ForDevelopersTemplate = ({ locale }: ILocale) => {
   return (
     <>
       <Hero />
       <Connectors />
       <Features />
-      <LeftTextImg />
+      <LeftTextImg locale={locale} />
       <Questions />
       <Blog />
     </>

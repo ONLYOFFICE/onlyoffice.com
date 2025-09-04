@@ -38,7 +38,7 @@ const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
   border: none;
   padding: 16px;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 26px;
   color: ${(props) => (props.$active ? "#ff6f3d" : "#333333")};
   width: 100%;
   background-color: transparent;
@@ -73,6 +73,7 @@ const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
 
   @media ${device.mobile} {
     font-size: 14px;
+    line-height: 21px;
   }
 `;
 

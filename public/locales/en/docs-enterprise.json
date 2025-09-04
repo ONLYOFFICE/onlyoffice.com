@@ -40,7 +40,7 @@
     "LearnMore": "Learn more",
     "LearnMoreSecurity": "Learn more about ONLYOFFICE security",
     "ContactSales": "Contact sales",
-    "ToolsVideoDescription": "ONLYOFFICE Docs 8.3 released: PDF stamps, enhanced format support, Merge Shapes, and more",
+    "ToolsVideoDescription": "ONLYOFFICE Docs 9.0 released: flawless interface, Diagram Viewer, support for .md files, AI-powered sheets & macros, and more",
     "FeaturesHeader": "Enterprise-level features",
     "FeatureTitle1": "Flawless user experience",
     "FeatureText1": "With <0>ONLYOFFICE Docs Enterprise</0>, you can easily edit and collaborate on your documents on the go with any smartphone or tablet by switching to the mobile web version. <1></1> Free <2>desktop apps</2> for offline editing and native <3>mobile apps</3> for iOS and Android are also available.",
@@ -98,5 +98,4 @@
     "BlogNews4Link": "https://www.onlyoffice.com/blog/2024/08/onlyoffice-in-use-by-abensberg-fire-department",
     "BlogNews4": "How the Abensberg Fire Department uses ONLYOFFICE Docs in combination with Nextcloud to easily share and edit centrally stored office documents",
     "ViewAllIntegrations": "View all integrations"
-
 }

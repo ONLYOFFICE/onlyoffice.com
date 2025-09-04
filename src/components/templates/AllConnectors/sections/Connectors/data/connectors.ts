@@ -4,9 +4,29 @@ interface IConnectorCardExtended extends IConnectorCard {
   productType?: ("docs" | "docspace")[];
   developerType?: ("oo-developers" | "partners")[];
   isWopi?: boolean;
+  isBot?: boolean;
 }
 
 export const connectors: IConnectorCardExtended[] = [
+  {
+    id: "telegram",
+    image: {
+      url: "/images/templates/all-connectors/connectors/telegram.svg",
+    },
+    name: "Telegram",
+    text: "TelegramConnectorText",
+    moreInfoUrl:
+      "/office-for-telegram",
+    vendor: "Ascensio System Sia",
+    developerWebsiteName: "www.onlyoffice.com",
+    developerWebsiteUrl: "www.onlyoffice.com",
+    getItNowUrl:
+      "https://github.com/ONLYOFFICE/onlyoffice-telegram",
+    productType: ["docs"],
+    developerType: ["oo-developers"],
+    isBot: true,
+  },
+
   {
     id: "agorum",
     image: {
@@ -131,6 +151,23 @@ export const connectors: IConnectorCardExtended[] = [
     developerType: ["oo-developers"],
   },
   {
+    id: "dzzoffice",
+    image: {
+      bgColor: "#F5F5F5",
+      url: "/images/templates/all-connectors/connectors/dzzoffice.svg",
+    },
+    name: "DzzOffice",
+    text: "DzzOfficeConnectorText",
+    moreInfoUrl: "https://www.dzzoffice.com/index.php?mod=dzzmarket&amp;op=view&amp;mid=50",
+    vendor: "Beijing Qiaoqiao Shidai Network Technology Co., Ltd.",
+    developerWebsiteName: "www.dzzoffice.com",
+    developerWebsiteUrl: "https://www.dzzoffice.com",
+    getItNowUrl: "https://www.dzzoffice.com/index.php?mod=dzzmarket&op=view&mid=50",
+    productType: ["docs"],
+    developerType: ["partners"],
+    isNew: true,
+  },
+  {
     id: "enaio",
     image: {
       url: "/images/templates/all-connectors/connectors/enaio.svg",
@@ -247,8 +284,8 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "liferaysmc",
     image: {
-      bgColor: "#0B63CE",
-      url: "/images/templates/all-connectors/connectors/liferay.svg",
+      bgColor: "#0f63ca",
+      url: "/images/templates/all-connectors/connectors/liferay_1.svg",
     },
     name: "Liferay",
     text: "LiferaySMCConnectorText",
@@ -293,6 +330,21 @@ export const connectors: IConnectorCardExtended[] = [
     developerWebsiteUrl: "/",
     getItNowUrl: "https://github.com/ONLYOFFICE/onlyoffice-mattermost",
     productType: ["docs"],
+    developerType: ["oo-developers"],
+  },
+  {
+    id: "monday",
+    image: {
+      url: "/images/templates/all-connectors/connectors/monday.svg",
+    },
+    name: "Monday",
+    text: "FeatureConnectorMondayText",
+    moreInfoUrl: "/office-for-mattermost",
+    vendor: "Ascensio System Sia",
+    developerWebsiteName: "www.onlyoffice.com",
+    developerWebsiteUrl: "/",
+    getItNowUrl: "https://monday.com/marketplace/listing/10000860/onlyoffice-docspace",
+    productType: ["docspace"],
     developerType: ["oo-developers"],
   },
   {
@@ -515,7 +567,7 @@ export const connectors: IConnectorCardExtended[] = [
     },
     name: "Pydio",
     text: "PydioConnectorText",
-    moreInfoUrl: "https://pydio.com/en/docs/cells/v2/ed-only-office",
+    moreInfoUrl: "https://docs.pydio.com/cells-v4/admin-guide/quick-start/add-collaboration-tools/ent-only-office/",
     vendor: "Pydio",
     developerWebsiteName: "pydio.com",
     developerWebsiteUrl: "https://pydio.com/",
@@ -627,12 +679,12 @@ export const connectors: IConnectorCardExtended[] = [
     name: "Talkspirit",
     text: "TalkspiritConnectorText",
     moreInfoUrl:
-      "https://help.talkspirit.com/en/articles/4161621-the-officenow-suite-of-collaborative-documents",
+      "https://en.talkspirit.com/feature-page/drive",
     vendor: "Talkspirit",
     developerWebsiteName: "talkspirit.com",
     developerWebsiteUrl: "https://www.talkspirit.com/",
     getItNowUrl:
-      "https://help.talkspirit.com/en/articles/4161621-the-officenow-suite-of-collaborative-documents",
+      "https://en.talkspirit.com/feature-page/drive",
     productType: ["docs"],
     developerType: ["partners"],
   },

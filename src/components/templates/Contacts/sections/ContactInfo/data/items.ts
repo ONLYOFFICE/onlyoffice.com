@@ -50,7 +50,7 @@ export const items: IContactInfo[] = [
     title: "ArmeniaTitle",
     address: "ArmeniaAddress",
     addressDescription: "ArmeniaAddressDescription",
-    phone: "+44 20 3287 1086",
+    phone: "+374 33351015",
     map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.6239312523207!2d44.48216671571772!3d40.15065997970156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abc18ad82fe6d%3A0x3ac19e9f6cdc59dd!2s48%2C%202%20Garegin%20Nzhdeh%20St%2C%20Yerevan%2C%20Armenia!5e0!3m2!1sen!2sus!4v1648552733977!5m2!1sen!2sus",
   },
   {

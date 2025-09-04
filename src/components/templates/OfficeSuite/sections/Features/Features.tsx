@@ -4,13 +4,13 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { StyledFeaturesWrapper, StyledSubHeading } from "./Features.styled";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
-import { useRouter } from "next/router";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
+import { ILocale } from "@src/types/locale";
+import { getLink } from "@src/utils/getLink";
 
-const Features = () => {
+const Features = ({ locale }: ILocale) => {
   const { t } = useTranslation("office-suite");
-  const { locale } = useRouter();
 
   return (
     <Section
@@ -120,7 +120,10 @@ const Features = () => {
               position={{ desktop: index % 2 === 1 ? "right" : "left" }}
               links={item.links?.map((link) => ({
                 ...link,
-                href: `${locale === "en" ? "" : `/${locale}`}${link.href}`,
+                href:
+                  link.href === "/app-directory"
+                    ? getLink("marketplace", locale)
+                    : link.href,
                 label: t(String(link.label)),
               }))}
               image={{

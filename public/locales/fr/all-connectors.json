@@ -15,6 +15,7 @@
   "Free": "Gratuit",
   "Paid": "Payant",
   "GetItOn": "Obtenir maintenant",
+  "Bot": "Bot pour",
 
   "FeatureConnectorTrelloText": "Affichez, modifiez et coéditez des documents bureautiques en temps réel dans Trello, l'outil ultime de gestion de projets en équipe.",
   "FeatureConnectorOdooText": "Éditez et collaborez sur des fichiers bureautiques au sein d'Odoo Documents, une suite d'applications professionnelles open-source.",
@@ -22,6 +23,8 @@
   "FeatureConnectorOwnCloudText": "Partager des documents avec différents niveaux d'accès, modifier et collaborer sur des documents, des feuilles de calcul et des présentations dans ownCloud, la dernière plateforme de collaboration cloud dont vous aurez besoin.",
   "FeatureConnectorPipedriveText": "Modifiez et coéditez sur des documents de bureau dans Pipedrive Deals, une solution de CRM et de gestion de pipeline basée sur le web.",
 
+   "TelegramConnectorText": "Open, create, convert, edit, and collabore on documents directly within Telegram, a cloud-based, cross-platform, social media and instant messaging (IM) service.",
+  "TelegramConnectorText": "Ouvrez, créez, convertissez, modifiez et coéditez des documents directement dans Telegram, un service de médias sociaux et de messagerie instantanée (IM) multiplateforme basé sur le cloud.",
   "AgorumConnectorText": "L'intégration d'ONLYOFFICE Docs est disponible à partir de la version 9.4 d'agorum core et peut être facilement installée via le gestionnaire de plugins.",
   "AlfrescoConnectorText": "Travaillez avec tous les types de documents bureautiques dans Alfresco Share, un environnement de collaboration web complet pour gérer des documents, du contenu wiki, des blogs et plus encore.",
   "BoxConnectorText": "Affichez, éditez et coéditez des fichiers bureautiques dans Box, un système sécurisé de gestion de contenu dans le nuage.",
@@ -71,6 +74,7 @@
   "FileCloudConnectorText": "Modifiez et collaborez sur des documents bureautiques, des présentations et des feuilles de calcul directement depuis FileCloud, une solution d'entreprise pour le partage, la synchronisation et la sauvegarde de fichiers.",
   "OpenKMConnectorText": "Editez et coéditez des documents texte, des feuilles de calcul et des présentations directement à partir d'OpenKM, un système de gestion de documents et d'archives électroniques à code source ouvert.",
   "FeatureConnectorMondayText": "Modifiez, affichez et coéditez des fichiers en temps réel, le tout au sein de votre plateforme de travail monday.",
+  "DzzOfficeConnectorText": "Affichez, éditez et coéditez des documents bureautiques en ligne dans DzzOffice, une suite bureautique open-source pour l'entreprise et la collaboration en équipe.",
 
   "NeedAnAppToConnect": "Besoin d'une application pour connecter ONLYOFFICE Docs à votre service web préféré ? Ou en avez-vous développé une ?",
   "LetUsKnow": "Faites-le nous savoir",

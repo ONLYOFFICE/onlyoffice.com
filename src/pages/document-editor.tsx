@@ -30,7 +30,7 @@ const DocumentEditorPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <DocumentEditorTemplate />
+        <DocumentEditorTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
