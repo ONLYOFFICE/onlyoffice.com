@@ -39,6 +39,7 @@
   "No": "Ne",
   "Error": "Greška",
   "TheUploadedFileLikelyExceededTheMaximumFileSize": "Učitana datoteka je verovatno premašila maksimalnu veličinu datoteke 5 MB",
+  "TheFileAppearsToBeBroken": "Fajl deluje da je neispravan. Molimo proverite ga ili pokušajte da koristite drugi.",
   "Close": "Zatvori",
   "SubmitAnIssue": "Pošalji problem",
   "TheUploadedFileHaZeroSize": "Otpremljena datoteka ima nultu veličinu i stoga se ne može konvertovati.",
