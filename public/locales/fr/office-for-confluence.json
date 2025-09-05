@@ -41,6 +41,7 @@
 
   "HowToConnect": "Comment connecter ONLYOFFICE Docs à Confluence",
   "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/confluence.aspx",
 
   "NeedAnAppToConnect": "Besoin d'une application pour connecter ONLYOFFICE Docs à votre service web préféré ? Ou en avez-vous développé une ?"
 }
