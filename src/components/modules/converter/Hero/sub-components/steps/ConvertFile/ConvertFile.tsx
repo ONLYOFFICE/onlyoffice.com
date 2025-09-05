@@ -75,7 +75,6 @@ const ConvertFile = ({
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [fade, setFade] = useState(true);
   const [isOpenFileErrorModal, setIsOpenFileErrorModal] = useState(false);
-  const [errorModalText, setErrorModalText] = useState("");
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -147,7 +146,6 @@ const ConvertFile = ({
       if (data.status === "error") {
         setStep("convert");
         setIsOpenFileErrorModal(true);
-        setErrorModalText(data?.message.message || data.message || "");
       } else {
         setResultData(data);
         setOutputFileType(outputFormat);
@@ -344,9 +342,11 @@ const ConvertFile = ({
         setIsOpenFileErrorModal={setIsOpenFileErrorModal}
         theme={theme}
       >
-        <Text size={2} textAlign="center">
-          Error: {errorModalText}
-        </Text>
+        <Text
+          size={2}
+          textAlign="center"
+          label={t("TheFileAppearsToBeBroken")}
+        />
       </FileErrorModal>
     </>
   );
