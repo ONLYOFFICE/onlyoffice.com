@@ -47,6 +47,7 @@
   "HowToStartStep3": "Configure the connector and enable JWT.",
 
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/liferay.aspx",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"
 }
