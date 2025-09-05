@@ -19,7 +19,7 @@ export const items: IBlogCard[] = [
     text: "WorkWithFillableTemplates",
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2024/07/onlyoffice-templates-app-odoo",
+        href: "WorkWithFillableTemplatesLink",
         label: "LearnMore",
       },
     ],
@@ -30,7 +30,7 @@ export const items: IBlogCard[] = [
     text: "ADetailedGuideOnCreating",
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2024/08/how-to-create-a-new-onlyoffice-form-template-for-odoo",
+        href: "ADetailedGuideOnCreatingLink",
         label: "LearnMore",
       },
     ],
