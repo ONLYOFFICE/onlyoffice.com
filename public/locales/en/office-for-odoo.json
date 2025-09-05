@@ -80,8 +80,10 @@
   "Explore": "Explore",
   "Blog": "Blog",
   "WorkWithFillableTemplates": "Work with fillable templates in Odoo using the brand-new ONLYOFFICE Templates app",
+  "WorkWithFillableTemplatesLink": "https://www.onlyoffice.com/blog/2024/07/onlyoffice-templates-app-odoo",
   "LearnMore": "Learn more",
   "ADetailedGuideOnCreating": "A detailed guide on creating ONLYOFFICE form templates for Odoo",
+  "ADetailedGuideOnCreatingLink": "https://www.onlyoffice.com/blog/2024/08/how-to-create-a-new-onlyoffice-form-template-for-odoo",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
 }

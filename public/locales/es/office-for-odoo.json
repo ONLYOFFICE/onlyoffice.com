@@ -1,7 +1,7 @@
 {
   "PageTitle": "Online office for Odoo | ONLYOFFICE",
   "PageDescription": "Edita y colabora en documentos ofimáticos dentro de la sección Documentos de Odoo utilizando ONLYOFFICE Docs",
-  "OnlineOfficeForOdoo": "Oficina online para Odoo",
+  "OnlineOfficeForOdoo": "Suite ofimática online para Odoo",
   "WorkWithBusinessDocuments": "Trabaja con documentos empresariales dentro de Odoo usando ONLYOFFICE",
   "GetStarted": "Empezar",
   "RequestFreeDemo": "SOLICITAR DEMOSTRACIÓN GRATUITA",
@@ -67,11 +67,13 @@
   "PartnerText": "Únete al programa de socios de ONLYOFFICE ahora mismo.",
   "LearnMoreHeading": "Más información sobre ONLYOFFICE",
   "Guide": "Guía",
-  "WorkingOnDocuments": "Cómo trabajar con documentos en la plataforma de negocios Odoo ",
+  "WorkingOnDocuments": "Cómo trabajar con documentos en la plataforma de negocios Odoo",
   "Explore": "Explorar",
   "Blog": "Blog",
   "WorkWithFillableTemplates": "Trabaja con plantillas rellenables en Odoo usando la nueva aplicación ONLYOFFICE Templates",
+  "WorkWithFillableTemplatesLink": "https://www.onlyoffice.com/blog/es/2024/07/aplicacion-onlyoffice-templates-odoo",
   "LearnMore": "Más información",
   "ADetailedGuideOnCreating": "Una guía detallada sobre la creación de plantillas de formularios ONLYOFFICE para Odoo",
+  "ADetailedGuideOnCreatingLink": "https://www.onlyoffice.com/blog/es/2024/08/como-crear-una-nueva-plantilla-de-formulario-onlyoffice-para-odoo",
   "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE Docs o DocSpace a tu servicio web favorito? <0>¿O ya has desarrollado una? </0>Contáctanos{2}"
 }

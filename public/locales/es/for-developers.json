@@ -26,7 +26,7 @@
   "Forms" : "Formularios",
   "PDFs" : "PDFs",
   "OnlineDocumentSub": "¿Necesitas ofrecer edición colaborativa a los usuarios de tu servicio web? Considera ONLYOFFICE Docs Developer.",
-  "OnlineDocumentFeature1": "<0>API</0> abierta y <1>WOPI</1> <0>compatibilidad con</0>",
+  "OnlineDocumentFeature1": "<0>API</0> abierta y <0>compatibilidad con</0> <1>WOPI</1>",
   "OnlineDocumentFeature2": "<0>Más de 40</0> <1>conectores</1> listos para usar",
   "OnlineDocumentFeature3": "Compatibilidad con <0>todos</0> los lenguajes de programación",
   "OnlineDocumentImgUrl": "/images/templates/for-developers/features/online_document.svg",
@@ -37,10 +37,10 @@
   "GenerateFeature3": "API de JavaScript <0>bien documentada</0>",
   "GenerateImgUrl": "/images/templates/for-developers/features/javascript_code.svg",
 
-  "AddYourServiceAsAPlugin": "Añade tu servicio como un plug-in a ONLYOFFICE",
+  "AddYourServiceAsAPlugin": "Añade tu servicio como un plugin a ONLYOFFICE",
   "ThinkYourWebServiceCanBeUseful": "¿Te parece que tu servicio web puede ser útil a los usuarios de ONLYOFFICE? ¡Crea un plugin para ONLYOFFICE <0>DocSpace</0> o <1>Docs</1> y haz que la integración sea real!",
   "AvailablePlugins": "Plugins disponibles",
-  "WantToDiscussOrSubmitAPlugin": "¿Quieres hablar con nosotros o enviarnos un plug-in? Envíanos un correo electrónico a <0>marketing@onlyoffice.com</0>.",
+  "WantToDiscussOrSubmitAPlugin": "Quieres hablar con nosotros o enviarnos un plugin? Envíanos un correo electrónico a <0>marketing@onlyoffice.com</0>.",
 
   "BlogDevelopersImgUrl": "/images/templates/for-developers/blog/seafile.png",
   "AlternativeText": "BlogDevelopersAuthor",

@@ -4,7 +4,7 @@ import {
   StyledCardCommentHeading,
   StyledCardCommentWrapper,
   StyledText,
-  StyledLink
+  StyledLink,
 } from "./CardComment.styled";
 import { items } from "./data/items";
 import { Section } from "@src/components/ui/Section";
@@ -15,36 +15,30 @@ const CardCommentDistributions = () => {
   const { t } = useTranslation("technology-partners");
 
   return (
-    <Section
-      desktopSpacing={["0px", "112px"]}
-      background="#f5f5f5"
-    >
+    <Section desktopSpacing={["0px", "112px"]} background="#f5f5f5">
       <Container>
         <StyledCardCommentWrapper>
           <StyledCardCommentContent>
             <StyledCardCommentHeading>
+              <Trans t={t} i18nKey={t(items.title)} />
+            </StyledCardCommentHeading>
+            <StyledText>
               <Trans
                 t={t}
-                i18nKey={t(items.title)}
+                i18nKey={items.text}
+                components={[
+                  <Text as="span" fontWeight={700} color="#666666" key="0" />,
+                ]}
               />
-            </StyledCardCommentHeading>
-              <StyledText>
-                <Trans 
-                  t={t}
-                  i18nKey={items.text}
-                  components={
-                    [<Text as="span" fontWeight={700} color="#666666" key="0"/>]
-                  }
-                />
-              </StyledText>
+            </StyledText>
             <StyledLink
-                href={items.linkUrl}
-                label={t(items.textBtn)}
-                color="main"
-                textUnderline
-                fontWeight={400}
-                display="block"
-              />
+              href={items.linkUrl}
+              label={t(items.textBtn)}
+              color="main"
+              textUnderline
+              fontWeight={400}
+              display="block"
+            />
           </StyledCardCommentContent>
         </StyledCardCommentWrapper>
       </Container>

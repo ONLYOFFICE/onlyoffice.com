@@ -92,5 +92,5 @@ export {
   StyledMarketplaceConnectorWrapper,
   StyledMarketplaceConnectorBody,
   StyledMarketplaceConnectorImg,
-  StyledText
+  StyledText,
 };

@@ -14,6 +14,7 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { items } from "./data/items";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
+import { getLink } from "@src/utils/getLink";
 
 const Features = () => {
   const { t } = useTranslation("accessibility");
@@ -61,6 +62,12 @@ const Features = () => {
                 links={group.links?.map((link) => ({
                   ...link,
                   label: t(String(link.label)),
+                  href: link.href.includes("app-directory")
+                    ? link.href.replace(
+                        "https://www.onlyoffice.com/app-directory",
+                        getLink("marketplace", locale!),
+                      )
+                    : link.href,
                 }))}
                 key={groupIndex}
                 image={{

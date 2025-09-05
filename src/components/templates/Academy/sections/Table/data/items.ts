@@ -5,7 +5,7 @@ interface ITableItem {
   pro: boolean;
 }
 
-export const headers = ["Features", "Basic", "Basic+", "Pro"];
+export const headers = ["Features", "Basic", "BasicPlus", "Pro"];
 
 export const tableItems: ITableItem[] = [
   {
