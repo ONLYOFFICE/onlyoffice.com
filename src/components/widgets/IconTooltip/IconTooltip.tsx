@@ -2,7 +2,7 @@ import { StyledIconTooltip } from "./IconTooltip.styled";
 import { IIconTooltip } from "./IconTooltip.types";
 import { Tooltip } from "@src/components/ui/Tooltip";
 
-const IconTooltip = ({ id, icon, href, tooltipLabel }: IIconTooltip) => {
+const IconTooltip = ({ id, icon, href, tooltipLabel, width }: IIconTooltip) => {
   return (
     <Tooltip
       id={id}
@@ -10,6 +10,7 @@ const IconTooltip = ({ id, icon, href, tooltipLabel }: IIconTooltip) => {
       offset={24}
       float
       place="bottom-start"
+      width={width}
     >
       <StyledIconTooltip
         href={href}

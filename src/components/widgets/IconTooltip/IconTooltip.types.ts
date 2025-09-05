@@ -7,4 +7,5 @@ export interface IIconTooltip {
   };
   href: string;
   tooltipLabel: string;
+  width?: string;
 }

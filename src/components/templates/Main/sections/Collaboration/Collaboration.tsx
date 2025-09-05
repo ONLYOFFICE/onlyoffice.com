@@ -14,7 +14,12 @@ const Collaboration = () => {
   const { t } = useTranslation("main");
 
   return (
-    <Section tabletSpacing={["80px", "112px"]} mobileSpacing={["32px", "48px"]}>
+    <Section
+      desktopSpacing={["112px", "56px"]}
+      tabletSpacing={["80px", "56px"]}
+      tabletSmallSpacing={["80px", "56px"]}
+      mobileSpacing={["48px", "32px"]}
+    >
       <Container maxWidth="1240px">
         <StyledCollaborationHeading level={2} size={2}>
           <Trans

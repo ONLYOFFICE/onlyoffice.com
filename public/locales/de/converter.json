@@ -39,6 +39,7 @@
   "No": "Nein",
   "Error": "Fehler",
   "TheUploadedFileLikelyExceededTheMaximumFileSize": "Die hochgeladene Datei hat wahrscheinlich die maximale Dateigröße von <0> Mb</0> überschritten.",
+  "TheFileAppearsToBeBroken": "Die Datei scheint beschädigt zu sein. Bitte überprüfen Sie diese oder versuchen Sie es mit einer anderen.",
   "Close": "Schließen",
   "SubmitAnIssue": "Problem melden",
   "TheUploadedFileHaZeroSize": "Die hochgeladene Datei hat eine Größe von Null und kann daher nicht konvertiert werden.",

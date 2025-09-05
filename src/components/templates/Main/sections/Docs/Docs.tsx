@@ -14,6 +14,7 @@ const Docs = () => {
     <Section
       desktopSpacing={["112px", "56px"]}
       tabletSpacing={["80px", "56px"]}
+      tabletSmallSpacing={["80px", "56px"]}
       mobileSpacing={["48px", "32px"]}
     >
       <Container maxWidth="1240px">
@@ -48,7 +49,10 @@ const Docs = () => {
             ) : (
               t(String(label))
             ),
-            image,
+            image: {
+              url: t(image.url),
+              url2x: image.url2x ? t(image.url2x) : undefined,
+            },
           }))}
         />
 
