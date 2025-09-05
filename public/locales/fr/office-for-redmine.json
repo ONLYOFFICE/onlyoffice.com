@@ -34,7 +34,7 @@
   "Reason4": "Interface intuitive avec onglets",
   "Reason5": "Outils multiples d'édition, de formatage et de stylisme",
   "Reason6": "Collaboration en temps réel, suivi des modifications, commentaires, chat",
-  "Reason7": "Versions Community gratuite et <0>Enterprise évolutive</0> versions",
+  "Reason7": "Versions Community gratuite et <0>Enterprise évolutive</0>",
   "Reason8": "Code source ouvert disponible sur GitHub",
 
   "HowToStart": "Comment commencer",
@@ -43,6 +43,7 @@
   "HowToStartStep3": "Configurez le connecteur et activez JWT.",
 
   "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/redmine.aspx",
 
   "NeedAnAppToConnect": "Besoin d'une appli pour connecter ONLYOFFICE Docs à votre service web préférentiel ? Ou en avez-vous développé une ?"
 }

@@ -45,6 +45,7 @@
   "HowToStartImgUrl": "/images/templates/office-for-redmine/how-to-start/how-to-start.svg",
 
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/redmine.aspx",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
 }
