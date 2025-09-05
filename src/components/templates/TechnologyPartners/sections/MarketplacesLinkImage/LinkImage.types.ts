@@ -8,5 +8,5 @@ export interface ILinkImage {
   /** The button link */
   linkBtn: string;
   /** Links */
-  links?: { href: string; target: "_self" | "_blank" | "_parent" | "_top" }[];
+  links: { href: string; isExternal?: boolean }[];
 }

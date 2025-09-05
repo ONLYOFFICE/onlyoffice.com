@@ -12,7 +12,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://www.onlyoffice.com/blog/2023/10/screen-readers-in-onlyoffice",
+            href: "ScreenReadersLink",
             label: "LearnMore",
             isExternal: true,
           },

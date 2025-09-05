@@ -57,17 +57,20 @@ const Features = () => {
                   group.heading === "AutoCorrectFeatures"
                 ),
             )
+            // linkUrl={t(item.linkUrl, {defaultValue: item.linkUrl})}
             .map((group, groupIndex) => (
               <FeatureImageItem
                 links={group.links?.map((link) => ({
                   ...link,
                   label: t(String(link.label)),
-                  href: link.href.includes("app-directory")
-                    ? link.href.replace(
-                        "https://www.onlyoffice.com/app-directory",
-                        getLink("marketplace", locale!),
-                      )
-                    : link.href,
+                  href: t(link.href, {
+                    defaultValue: link.href.includes("app-directory")
+                      ? link.href.replace(
+                          "https://www.onlyoffice.com/app-directory",
+                          getLink("marketplace", locale!),
+                        )
+                      : link.href,
+                  }),
                 }))}
                 key={groupIndex}
                 image={{

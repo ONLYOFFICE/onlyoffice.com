@@ -15,6 +15,7 @@
   "ScreenReadersFeature2": "Activate Screen Readers for text documents, spreadsheets, presentations",
   "ScreenReadersImgUrl": "/images/templates/accessibility/features/vision/screen-readers.png",
   "ScreenReadersImgUrl2x": "/images/templates/accessibility/features/vision/screen-readers@2x.png",
+  "ScreenReadersLink": "https://www.onlyoffice.com/blog/2023/10/screen-readers-in-onlyoffice",
   "UITweaks": "UI tweaks",
   "UITweaksFeature1": "Change the size of the working area using multiple scaling presets.",
   "UITweaksFeature2": "Fit the editing area to page and screen width.",

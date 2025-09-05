@@ -27,7 +27,11 @@ const MarketplacesLinkImage = () => {
         <StyledText label={t(items.text)} />
         <WrapperLink>
           {items.links?.map((item, idx) => (
-            <StyledLink key={idx} href={item.href} target={item.target} />
+            <StyledLink
+              key={idx}
+              href={t(item.href, { defaultValue: item.href })}
+              target={item.isExternal ? "_blank" : undefined}
+            />
           ))}
         </WrapperLink>
         <Button as="a" href={items.linkBtn} label={t(items.btnText)} />

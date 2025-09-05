@@ -6,7 +6,6 @@ import {
   StyledText,
   StyledLink,
 } from "./CardComment.styled";
-import { items } from "./data/items";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 import { Container } from "@src/components/ui/Container";
@@ -20,20 +19,20 @@ const CardCommentHosting = () => {
         <StyledCardCommentWrapper>
           <StyledCardCommentContent>
             <StyledCardCommentHeading>
-              <Trans t={t} i18nKey={t(items.title)} />
+              <Trans t={t} i18nKey={t("ONLYOFFICEIsTheSoftware")} />
             </StyledCardCommentHeading>
             <StyledText>
               <Trans
                 t={t}
-                i18nKey={items.text}
+                i18nKey="SergioRavera"
                 components={[
                   <Text as="span" fontWeight={700} color="#666666" key="0" />,
                 ]}
               />
             </StyledText>
             <StyledLink
-              href={items.linkUrl}
-              label={t(items.textBtn)}
+              href={t("ONLYOFFICEIsTheSoftwareLink")}
+              label={t("ReadTheFullCaseOfArtera")}
               color="main"
               textUnderline
               fontWeight={400}

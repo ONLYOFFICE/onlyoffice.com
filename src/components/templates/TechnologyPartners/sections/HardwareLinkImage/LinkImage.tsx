@@ -26,8 +26,8 @@ const HardwareLinkImage = () => {
         <StyledHeading label={t(items.title)} />
         <StyledText label={t(items.text)} />
         <WrapperLink>
-          {items.links?.map((item, idx) => (
-            <StyledLink key={idx} href={item.href} target={item.target} />
+          {items.links.map((item, idx) => (
+            <StyledLink key={idx} href={t(item)} />
           ))}
         </WrapperLink>
         <Button as="a" href={items.linkBtn} label={t(items.btnText)} />

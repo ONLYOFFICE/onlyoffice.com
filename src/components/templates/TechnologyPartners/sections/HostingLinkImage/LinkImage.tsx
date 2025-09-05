@@ -7,7 +7,6 @@ import {
   WrapperLink,
 } from "./LinkImage.styled";
 import { Button } from "@src/components/ui/Button";
-import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 
 const HostingLinkImage = () => {
@@ -23,26 +22,29 @@ const HostingLinkImage = () => {
       id="part-hosting"
     >
       <StyledContainer>
-        <StyledHeading label={t(items.title)} />
+        <StyledHeading label={t("Hosting")} />
         <WrapperLink>
           <StyledText>
             <Trans
               t={t}
-              i18nKey={t(items.text)}
-              components={items.textLinks?.map((link, idx) => (
+              i18nKey={t("ProvideYourCustomers")}
+              components={[
                 <Link
-                  key={idx}
-                  href={link.href}
-                  target={link.isExternal ? "_blank" : undefined}
+                  href="hosting-providers"
                   color="main"
                   textUnderline
                   hover="underline-none"
-                />
-              ))}
+                  key="0"
+                />,
+              ]}
             />
           </StyledText>
         </WrapperLink>
-        <Button as="a" href={items.linkBtn} label={t(items.btnText)} />
+        <Button
+          as="a"
+          href="mailto:sales@onlyoffice.com"
+          label={t("SendRequest")}
+        />
       </StyledContainer>
     </Section>
   );
