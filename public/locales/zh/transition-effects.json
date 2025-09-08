@@ -2,7 +2,7 @@
   "PageTitle": "在线演示文稿编辑软件 | ONLYOFFICE",
   "PageDescription": "在线演示文稿工具。适用于PowerPoint演示文稿：pptx、ppt、odp。在线创建、编辑和协作处理。",
 
-  "Header": "打造直击人心的演示文稿",
+  "Header": "创建引人入胜的幻灯片",
   "SubHeader": "创建具有丰富内容和出色设计的交互式演示文稿。",
 
   "HeroImgUrl": "/images/templates/transition-effects/hero/zh/hero.png",
@@ -14,7 +14,7 @@
   "Feature2Title": "撰写完美无瑕的文本",
   "Feature2Desc": "编辑文本框并进行格式化，应用字体、样式和文本布局。借助Thesaurus检查拼写、查找同义词和反义词，使用可用的翻译插件将文本翻译为任何语言（Google Translate、DeepL或Apertium)。",
 
-  "Feature3Title": "插入方案和图形",
+  "Feature3Title": "插入图表和图形",
   "Feature3Desc": "使用合适的视觉图形传递您的消息。创建并完全自定义图表、自选形状、表格和OLE电子表格、方程式和文本。用 SmartArt 图形展示您的想法。插入图像并使用照片编辑器进行编辑，可通过YouTube添加视频，还可使用高亮代码插件添加代码行。在项目符号列表中使用自定义图像作为项目符号。",
 
   "Feature4Title": "为幻灯片添加切换效果",
