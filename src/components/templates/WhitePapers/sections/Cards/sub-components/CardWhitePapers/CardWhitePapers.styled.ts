@@ -3,7 +3,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import styled from "styled-components";
 
-const StyledCardWhitepapers = styled.div`
+const StyledCardWhitePapers = styled.div`
   display: flex;
   flex-direction: column;
   box-shadow: 0px 7px 15px rgba(85,85,85,0.1);
@@ -14,54 +14,54 @@ const StyledCardWhitepapers = styled.div`
   }
 `;
 
-const StyledCardWhitepapersHeader = styled.div`
+const StyledCardWhitePapersHeader = styled.div`
   min-height: 178px;
   background-color: #0F4071;
   border-radius: 5px;
   padding: 61px 32px 24px;
 `;
 
-const StyledCardWhitepapersHeading = styled(Heading)`
+const StyledCardWhitePapersHeading = styled(Heading)`
   margin-bottom: 16px;
 `;
 
-const StyledCardWhitepapersMain = styled.div`
+const StyledCardWhitePapersMain = styled.div`
   min-height: 300px;
   background-color: #fff;
   padding: 32px;
   flex: 1 0 auto;
 `;
 
-const StyledCardWhitepapersTitle = styled(Heading)`
+const StyledCardWhitePapersTitle = styled(Heading)`
   margin-bottom: 16px;
 `;
 
-const StyledCardWhitepapersDate = styled(Text)`
+const StyledCardWhitePapersDate = styled(Text)`
   margin-bottom: 16px;
 `;
 
-const StyledCardWhitepapersDescription = styled(Text)`
+const StyledCardWhitePapersDescription = styled(Text)`
 
 `;
 
-const StyledCardWhitepapersFooter = styled.div`
+const StyledCardWhitePapersFooter = styled.div`
   background-color: #fff;
   padding: 0 32px 32px;
 `;
 
-const StyledCardWhitepapersButton = styled(Button)`
+const StyledCardWhitePapersButton = styled(Button)`
   width: 100%;
   color: #000;
 `;
 
 export {
-  StyledCardWhitepapers,
-  StyledCardWhitepapersHeader,
-  StyledCardWhitepapersHeading,
-  StyledCardWhitepapersMain,
-  StyledCardWhitepapersTitle,
-  StyledCardWhitepapersDate,
-  StyledCardWhitepapersDescription,
-  StyledCardWhitepapersFooter,
-  StyledCardWhitepapersButton
+  StyledCardWhitePapers,
+  StyledCardWhitePapersHeader,
+  StyledCardWhitePapersHeading,
+  StyledCardWhitePapersMain,
+  StyledCardWhitePapersTitle,
+  StyledCardWhitePapersDate,
+  StyledCardWhitePapersDescription,
+  StyledCardWhitePapersFooter,
+  StyledCardWhitePapersButton
 }
