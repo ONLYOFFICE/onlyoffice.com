@@ -101,7 +101,7 @@ switch(BRANCH_NAME) {
     aws_s3_bucket="static-site.onlyoffice.com"
     aws_s3_region="us-west-2"
     docspace_domain = "onlyoffice.com"
-    docspace_registration_api = "https://onlyoffice"
+    docspace_registration_api = "https://api-system.onlyoffice"
     docs_cloud_signin_api = "https://docscloud.onloffice.com/api/auth/invite"
     next_public_testing_on = "false"
     core_base_domain = "onlyoffice.co"
