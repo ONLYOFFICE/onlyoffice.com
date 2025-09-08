@@ -30,13 +30,14 @@ export const featuredConnectors: IFeatureConnectorCard[] = [
     text: "FeatureConnectorMoodleText",
   },
   {
-    url: "/office-for-owncloud",
+    url: "/office-for-monday",
     image: {
-      url: "/images/templates/all-connectors/featured-connectors/owncloud.svg",
-      bgColor: "#1d2d44",
+      url: "/images/templates/all-connectors/featured-connectors/monday.svg",
+      bgColor: "#f9f9f9",
     },
-    heading: "ownCloud",
-    text: "FeatureConnectorOwnCloudText",
+    heading: "monday",
+    text: "FeatureConnectorMondayText",
+    isNew: true,
   },
   {
     url: "/office-for-pipedrive",

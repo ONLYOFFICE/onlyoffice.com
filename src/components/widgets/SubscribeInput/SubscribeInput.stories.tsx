@@ -9,7 +9,8 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: "",
+        component:
+          "A composite input component that includes a text field and a submit button, commonly used for newsletter subscriptions or email collection forms.",
       },
     },
   },
@@ -38,6 +39,10 @@ export default {
     },
     buttonContent: {
       control: { type: "object" },
+    },
+    variant: {
+      control: { type: "select" },
+      options: ["primary", "secondary", "tertiary"],
     },
   },
 } as Meta<typeof SubscribeInput>;

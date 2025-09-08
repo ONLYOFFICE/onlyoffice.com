@@ -14,8 +14,6 @@
   "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/zh/hero-phone.png",
   "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/zh/hero-phone-2x.png",
 
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.zh.svg",
-
   "FeaturesItemHeadingFull": "功能齐全的文本处理器",
   "FeaturesItemTextMakeUse": "涵盖多个文本处理工具：页面、段落和文本格式、表格、自动形状、图表等。可创建任何大小和复杂程度的文本文档。通过AirPrint直接打印。",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/zh/img-tablet-1.png",
@@ -83,9 +81,9 @@
   "LearnMoreHeading": "了解更多有关ONLYOFFICE文档iOS版的信息",
 
   "LearnCardTitleRelease": "发布新闻",
-  "LearnMoreTextMeet": "快来了解适用于iOS 端的ONLYOFFICE 文档 v7.2",
+  "LearnMoreTextMeet": "快来了解适用于iOS 端的ONLYOFFICE 文档 v9.0",
   "LearnMoreSubtitleRead": "阅读文章",
-  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/zh-hans/2022/10/onlyoffice-documents-v7-2-for-ios/",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/zh-hans/2025/07/onlyoffice-documents-v9-0-for-ios",
 
   "LearnCardTitleHints": "提示",
   "LearnMoreTextHandwriting": "ONLYOFFICE文档中的手写功能",

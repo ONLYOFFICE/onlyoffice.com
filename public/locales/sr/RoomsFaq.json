@@ -1,0 +1,9 @@
+{
+  "GetAnswersToTheMostPopularQuestions": "Često postavljana pitanja",
+  "HowMuchIsDocSpacePerMonth": "Koliko košta DocSpace mesečno?",
+  "ONLYOFFICEDocSpacePrice": "ONLYOFFICE DocSpace počinje od €20 po administratoru mesečno. Saznajte više o DocSpace-u <0>cene i planovi</0>.",
+  "IsThereASelfHostedVersion": "Da li postoji samostalna verzija ONLYOFFICE DocSpace-a?",
+  "SelfHostedVersion": "Da, možete ga preuzeti <0>ovde</0>.",
+  "WhatIsTheTechnologyStack": "Koja je tehnološka struktura ONLYOFFICE DocSpace-a?",
+  "TheTechnologyStack": "Back-end: С# 9.0, .NET 5.0/.NET Core/ASP.NET Core/MySQL 8.0/Kafka/ElasticSearch <br /> Front-end: ES6, CSS/SASS, React, Mobx, Styled-Components, i18next, Webpack 4/5"
+}

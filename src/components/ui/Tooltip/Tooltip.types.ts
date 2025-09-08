@@ -40,4 +40,6 @@ export interface ITooltip {
     | "text-bottom"
     | "sub"
     | "super";
+  /** The function to be called when the tooltip is clicked. */
+  onClick?: () => void;
 }

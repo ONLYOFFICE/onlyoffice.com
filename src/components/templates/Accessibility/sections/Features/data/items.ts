@@ -12,7 +12,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://www.onlyoffice.com/blog/2023/10/screen-readers-in-onlyoffice",
+            href: "ScreenReadersLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -27,7 +27,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
+            href: "UITweaksLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -42,7 +42,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
+            href: "ColorModesLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -55,13 +55,6 @@ export const items = [
           url: "MobileWebViewImgUrl",
           url2x: "MobileWebViewImgUrl2x",
         },
-        links: [
-          {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
-            label: "LearnMore",
-            isExternal: true,
-          },
-        ],
       },
     ],
   },
@@ -78,7 +71,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
+            href: "HotkeysLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -93,7 +86,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://www.onlyoffice.com/app-directory/speechrecognition",
+            href: "SpeechInputLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -114,7 +107,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
+            href: "AlternativeLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -129,7 +122,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
+            href: "AutoCorrectLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -144,7 +137,7 @@ export const items = [
         },
         links: [
           {
-            href: "http://www.onlyoffice.com/app-directory/speech",
+            href: "SpeechLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -159,7 +152,7 @@ export const items = [
         },
         links: [
           {
-            href: "http://www.onlyoffice.com/app-directory/typograf",
+            href: "TypographyLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -174,7 +167,7 @@ export const items = [
         },
         links: [
           {
-            href: "http://www.onlyoffice.com/app-directory/translator",
+            href: "TranslatorLink",
             label: "LearnMore",
             isExternal: true,
           },

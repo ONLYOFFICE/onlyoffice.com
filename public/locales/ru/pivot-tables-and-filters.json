@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Сводные таблицы и фильтрация данных в файлах Excel",
+  "PageDescription": "Анализируйте данные и находите закономерности с помощью сводных таблиц. Быстро фильтруйте, используйте срезы, удаляйте повторы в редакторе таблиц ONLYOFFICE.",
+
+  "Header": "Анализируйте большие объемы данных",
+  "SubHeader": "Используйте сводные таблицы, параметры фильтрации и сортировки",
+
+  "HeroImgUrl": "/images/templates/pivot-tables-and-filters/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/pivot-tables-and-filters/hero/ru/hero@2x.png",
+
+  "Feature1Title": "Создавайте сводные таблицы",
+  "Feature1Desc": "Используйте сводные таблицы для обобщения данных. С их помощью можно быстро составить краткий отчет, даже если ваша таблица содержит миллион строк. Выберите диапазон данных для анализа, поля отображения и настройте макет.",
+
+  "Feature2Title": "Отрегулируйте внешний вид и настройки",
+  "Feature2Desc": "Разместите таблицу на текущем или новом листе, выберите форму отчета — Компактный, Структуру или Табличный. Вы также можете можете изменить стиль таблицы.",
+
+  "Feature3Title": "Добавляйте фильтры",
+  "Feature3Desc": "Применяйте фильтры и сортируйте данные. Установите свои собственные шаблоны фильтрации. Делитесь листами с разрешением Пользовательский фильтр, чтобы ваши коллеги могли создавать представления и работать с собственными фильтрами, не отвлекая других.",
+
+  "Feature4Title": "Используйте срезы",
+  "Feature4Desc": "Используйте срезы для форматированных и сводных таблиц, чтобы быстро фильтровать данные с помощью кнопок. Настройте внешний вид срезов. Вы можете добавить и организовать на листе несколько таких элементов.",
+
+  "Feature1ImgUrl": "/images/templates/pivot-tables-and-filters/features/ru/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/ru/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/pivot-tables-and-filters/features/ru/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/ru/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/pivot-tables-and-filters/features/ru/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/ru/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/pivot-tables-and-filters/features/ru/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/ru/pic4@2x.png"
+}

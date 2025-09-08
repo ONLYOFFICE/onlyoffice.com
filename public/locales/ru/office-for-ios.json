@@ -14,8 +14,6 @@
   "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/ru/hero-phone.png",
   "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/ru/hero-phone-2x.png",
 
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.ru.svg",
-
   "FeaturesItemHeadingFull": "Мощный текстовый процессор",
   "FeaturesItemTextMakeUse": "Используйте множество инструментов для обработки текстовых документов: форматирования страницы, абзаца, текста, таблиц, фигур, диаграмм и других объектов. Создавайте текстовые документы любого размера и любой сложности. Распечатывайте их с помощью AirPrint.",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/ru/img-tablet-1.png",
@@ -83,10 +81,10 @@
   "LearnMoreHeading": "Узнать больше об ONLYOFFICE Documents для iOS",
 
   "LearnCardTitleRelease": "Описание изменений",
-  "LearnMoreTextMeet": "Встречайте ONLYOFFICE Documents v7.2 для iOS",
+  "LearnMoreTextMeet": "Встречайте ONLYOFFICE Documents v9.0 для iOS",
   "LearnMoreSubtitleRead": "Читать историю",
-  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/2022/10/onlyoffice-documents-v7-2-for-ios/",
 
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/2025/07/onlyoffice-documents-v9-0-for-ios/",
   "LearnCardTitleHints": "Советы",
   "LearnMoreTextHandwriting": "Рукописный ввод в ONLYOFFICE Documents",
   "LearnMoreSubtitleLearn1": "Подробнее",

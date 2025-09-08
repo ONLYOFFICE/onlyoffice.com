@@ -3,7 +3,6 @@ import { device } from "@src/utils/device";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Heading } from "@src/components/ui/Heading";
-import { Button } from "@src/components/ui/Button";
 
 const StyledList = styled.ul`
   list-style: none;
@@ -31,17 +30,6 @@ const StyledText = styled(Text)`
   @media ${device.mobile} {
     font-size: 16px;
   }
-`;
-
-const StyledButton = styled(Button)<{
-  $backgroundUrl: string;
-}>`
-  display: block;
-  width: 170px;
-  height: 58px;
-  background-image: ${(props) => `url(${props.$backgroundUrl})`};
-  background-repeat: no-repeat;
-  background-size: contain;
 `;
 
 const StyledImageContent = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
@@ -105,7 +93,6 @@ export {
   StyledImageContent,
   StyledList,
   StyledItem,
-  StyledButton,
   StyledIcon,
   StyledContainer,
   StyledText,

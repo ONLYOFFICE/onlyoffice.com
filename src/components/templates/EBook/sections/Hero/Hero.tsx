@@ -19,7 +19,7 @@ import { Trans } from "next-i18next";
 const Hero = () => {
   const { t } = useTranslation("e-book");
   const { t: t2 } = useTranslation("Editors");
-  const { query } = useRouter();
+  const { query, locale } = useRouter();
   const [email, setEmail] = useState("");
   const hasDocsDownload = query.docs === "download";
 
@@ -37,7 +37,7 @@ const Hero = () => {
       mobileSpacing={["96px", "28px"]}
     >
       <Container>
-        <StyledHeroWrapper>
+        <StyledHeroWrapper $locale={locale}>
           <Heading level={1} color="#ffffff">
             <Trans
               t={t}

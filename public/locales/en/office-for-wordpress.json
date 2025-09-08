@@ -16,7 +16,7 @@
   "DocspaceAppTab2Label": "Embed the entire room into your webpage allowing visitors to view documents right in the browser.",
   "DocspaceAppTab2ImgUrl": "/images/templates/office-for-wordpress/docspace-app/screen2.png",
   "DocspaceAppTab2ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/screen2@2x.png",
-  "DocspaceAppTab3Label": "Integrate complex PDF forms for filling them in online. Automatically collect and analyse data.",
+  "DocspaceAppTab3Label": "Integrate complex PDF forms for filling them in online. Automatically collect and analyze data.",
   "DocspaceAppTab3ImgUrl": "/images/templates/office-for-wordpress/docspace-app/screen3.png",
   "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/screen3@2x.png",
   "DocspaceAppTab4Label": "Prevent downloading, printing and copying documents from your website.",
@@ -80,8 +80,9 @@
 
   "HowToStartStep3": "Upload and configure the integration app.",
 
-  "ReadDetailedInstructionsDocs": "Read detailed instructions in the <0>Help Center</0>.",
-  "ReadDetailedInstructionsDocSpace": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",
+  "ReadDetailedInstructionsDocSpace": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructionsDocs": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",
+  "ReadDetailedInstructionsDocsLink": "https://helpcenter.onlyoffice.com/integration/wordpress.aspx",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
 }

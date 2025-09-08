@@ -1,0 +1,60 @@
+{
+  "PageTitle": "Ressources médias ONLYOFFICE | ONLYOFFICE",
+  "PageDescription": "Téléchargez les ressources médias ONLYOFFICE : logos, captures d’écran, vidéos, et plus encore.",
+
+  "HeroTitle": "Téléchargements pour presse",
+  "HeroDescription": "Téléchargez les ressources média ONLYOFFICE, y compris les logos et les images.",
+
+  "Description": "Description",
+  "Logo": "Logo",
+  "Screenshots": "Copies d’écran",
+  "Videos": "Vidéos",
+  "BlogAndSocialMedia": "Tuiles de promotion pour blogs et médias sociaux",
+
+  "DescriptionTitle": "Description de ONLYOFFICE",
+  "DescriptionText": "ONLYOFFICE, un projet de logiciel bureautique open source, se concentre sur des solutions bureautiques avancées et sécurisées. Avec plus de 15 millions d'utilisateurs dans le monde, il est reconnu pour son innovation dans le domaine de la bureautique en ligne. L'écosystème ONLYOFFICE comprend des applications collaboratives telles que des éditeurs en ligne pour les documents texte, les feuilles de calcul, les présentations, les formulaires et les PDF, ainsi qu'une plateforme de collaboration en salle. <br/><br/>En tant qu'entreprise internationale, ONLYOFFICE a des employés et des collaborateurs dans le monde entier, avec des bureaux situés à Singapour, Dallas, Riga, Londres, Belgrade, Erevan, Tachkent et Shanghai.",
+  "CopyToClipboard": "Copier dans le presse-papiers",
+  "SuccessCopy": "Le texte a été copié dans le presse-papiers",
+
+  "LogoTitle": "Logo de ONLYOFFICE",
+  "LogoDefault": "Logo par défaut",
+  "LogoCenter": "Logo centré",
+  "Symbol": "Symbole",
+  "LogoDefaultDark": "Logo par défaut sombre",
+  "LogoCenterDark": "Logo centré sombre",
+  "SymbolDark": "Symbole sombre",
+  "LogoWhite": "Logo par défaut blanc",
+  "LogoCenterWhite": "Logo centré blanc",
+  "SymbolWhite": "Symbole blanc",
+
+  "BrandbookTitle": "ONLYOFFICE Brandbook",
+  "BrandbookPreview": "Aperçu",
+  "BrandbookDownload": "Télécharger",
+
+  "ScreenshotsTitle": "Captures d'écran de ONLYOFFICE",
+  "OnlineEditors": "Éditeurs en ligne",
+  "OnlineEditorsText": "(Documents, feuilles de calcul, présentations, formulaires)",
+  "DocSpace": "DocSpace",
+  "DocSpaceText": "(Salles personnalisables pour la collaboration documentaire)",
+  "Workspace": "Workspace",
+  "WorkspaceText": "(Gestion de documents, Courrier, CRM, Projets, Calendrier, Communauté)",
+  "DesktopApps": "Applications de bureau",
+  "DesktopAppsText": "(Documents, feuilles de calcul, présentations, formulaires)",
+  "MobileApps": "Applications mobiles",
+  "MobileAppsText": "(Documents pour iOS et Android, Projets pour iOS)",
+
+  "VideosTitle": "Vidéos de ONLYOFFICE",
+  "MoreVideos": "Plus de vidéos",
+
+  "BlogAndSocialMediaTitle": "Tuiles de promotion ONLYOFFICE pour blogs et médias sociaux",
+  "OnlineEditorsMacCardTitle": "Éditeurs en ligne ONLYOFFICE pour Mac",
+  "OnlineEditorsCardTitle": "Éditeurs en ligne ONLYOFFICE",
+
+  "DontForgetToMention": "N’oubliez pas de mentionner ONLYOFFICE et de partager avec nous !",
+  "MediaInquires": "Pour les demandes d’information des médias, veuillez communiquer avec nous. Nous aimerions avoir de vos nouvelles : <0>press@onlyoffice.com</0>",
+  "AllUserInterfaceAssets": "© Toutes les ressources de l'interface utilisateur, y compris, mais sans s'y limiter, les icônes, les illustrations, les images et les éléments de conception visuelle créés ou incorporés après le [date/version], sont fournies selon les termes de la licence Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0).",
+  "UnderThisLicense": "En vertu de cette licence, le matériel sous licence peut être utilisé, copié et partagé uniquement à des fins non commerciales, sans aucune modification ou œuvre dérivée, et uniquement avec l'attribution appropriée au créateur original. L'attribution doit inclure le nom de l'auteur, un lien vers la source originale, le nom complet de la licence et une référence au texte de la licence :",
+  "AnyViolation": "Toute violation des conditions de la licence met automatiquement fin à votre droit d'utiliser le matériel. La poursuite de l'utilisation après la résiliation constitue une utilisation non autorisée et peut donner lieu à des poursuites judiciaires.",
+  "RequestPermission": "Pour demander l'autorisation de procéder à des utilisations non couvertes par la présente licence, y compris des utilisations commerciales ou des modifications, veuillez nous contacter à l'adresse suivante : reply@onlyoffice.com.",
+  "ByUsingTheseMaterials": "En utilisant ce matériel, vous reconnaissez avoir lu et compris les termes de la licence CC BY-NC-ND 4.0 et acceptez d'y être lié."
+}

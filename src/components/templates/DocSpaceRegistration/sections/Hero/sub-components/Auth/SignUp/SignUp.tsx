@@ -16,6 +16,7 @@ import {
 } from "./SignUp.styled";
 import { ISignUp } from "./SignUp.types";
 import { ISelectOption } from "@src/components/ui/Select/Select.types";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { useRewardful } from "@src/utils/useRewardful";
 import { validateEmail } from "@src/utils/validators";
 import { Heading } from "@src/components/ui/Heading";
@@ -31,7 +32,9 @@ import { awsRegions } from "../../../config/regions";
 const currentRegions =
   process.env.NEXT_PUBLIC_TESTING_ON === "true"
     ? awsRegions.testRegions
-    : awsRegions.productionRegions;
+    : process.env.NEXT_PUBLIC_TESTING_ON === "false"
+      ? awsRegions.productionRegions
+      : [];
 const options = currentRegions.map((region) => ({
   key: region.key,
   label: region.info,
@@ -45,6 +48,8 @@ const SignUp = ({
   setCreateNewAccountQuery,
 }: ISignUp) => {
   const { t } = useTranslation("docspace-registration");
+  const { IPGeolocationInfo, setIPGeolocationInfo } = useIPGeolocationStore();
+
   const router = useRouter();
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const modalDialog = useRef<Window | null>(null);
@@ -218,7 +223,7 @@ const SignUp = ({
           });
           const generateKeyData = await generateKeyRes.json();
           setCreateNewAccountQuery(
-            `epkey=${generateKeyData.data.emailKey}&eskey=${generateKeyData.data.linkKey}&transport=${data}&awsRegion=${selected[0].value}`,
+            `epkey=${generateKeyData.data.emailKey}1&eskey=${generateKeyData.data.linkKey}&transport=${data}&awsRegion=${selected[0].value}`,
           );
           setExistTenants(findByEmailData.data);
         } else {
@@ -246,20 +251,44 @@ const SignUp = ({
   }, [selected, setCreateNewAccountQuery, setExistTenants]);
 
   useEffect(() => {
-    const IPGeolocation = async () => {
-      const ipGeolocationRes = await fetch("/api/ip-geolocation");
-      const ipGeolocationInfo = await ipGeolocationRes.json();
+    const setRegion = (regionKey?: string) => {
       setSelected(
-        ipGeolocationInfo?.regionDbEntity?.regionDbKey
-          ? options.filter(
-              (opt) =>
-                opt.key === ipGeolocationInfo?.regionDbEntity?.regionDbKey,
-            )
+        regionKey
+          ? options.filter((opt) => opt.key === regionKey)
           : [options[0]],
       );
     };
 
-    IPGeolocation();
+    if (IPGeolocationInfo.regionDbEntity.domain) {
+      setRegion(IPGeolocationInfo.regionDbEntity?.regionDbKey);
+      return;
+    }
+
+    (async () => {
+      const res = await fetch("/api/ip-geolocation");
+      const data = await res.json();
+      setRegion(data?.regionDbEntity?.regionDbKey);
+      setIPGeolocationInfo(data);
+    })();
+  }, [
+    IPGeolocationInfo.regionDbEntity.domain,
+    IPGeolocationInfo.regionDbEntity?.regionDbKey,
+    setIPGeolocationInfo,
+  ]);
+
+  useEffect(() => {
+    const savedEmail = localStorage.getItem("email");
+
+    if (savedEmail) {
+      setFormData((prev) => ({
+        ...prev,
+        email: savedEmail,
+      }));
+
+      if (validateEmail(savedEmail)) {
+        setIsFormValid(true);
+      }
+    }
   }, []);
 
   return (

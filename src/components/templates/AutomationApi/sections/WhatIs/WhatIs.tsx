@@ -13,6 +13,11 @@ import { Link } from "@src/components/ui/Link";
 const WhatIs = () => {
   const { t } = useTranslation("automation-api");
 
+  const scrollToBlock = () => {
+    const element = document.getElementById("examples_block");
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Section
       desktopSpacing={["112px", "112px"]}
@@ -22,7 +27,10 @@ const WhatIs = () => {
     >
       <Container>
         <StyledWhatContent>
-          <img src='/images/templates/automation-api/what-is/automation_api.svg' alt="Image" />
+          <img
+            src="/images/templates/automation-api/what-is/automation_api.svg"
+            alt="Image"
+          />
           <StyledWhatHeading level={2} size={2}>
             <Trans
               t={t}
@@ -47,7 +55,7 @@ const WhatIs = () => {
             />
           </StyledWhatSubheading>
           <Link
-            href="#examples_block"
+            onClick={scrollToBlock}
             color="main"
             textUnderline
             hover="underline-none"
@@ -59,7 +67,7 @@ const WhatIs = () => {
             videoImgUrl="/images/templates/automation-api/what-is/automation_api_webinar.jpg"
             videoUrl="https://www.youtube.com/embed/d45OkcDZtNE"
           />
-          </StyledWhatContent>
+        </StyledWhatContent>
       </Container>
     </Section>
   );

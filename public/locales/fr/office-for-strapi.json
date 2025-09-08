@@ -1,0 +1,34 @@
+{
+  "PageTitle": "Visualisation et édition de documents dans Strapi | ONLYOFFICE Docs",
+  "PageDescription": "Modifiez des fichiers DOCX, XLSX et PPTX et collaborez au contenu dans Strapi",
+
+  "OnlineOfficeForConnector": "Suite bureautique en ligne pour <0>Strapi</0>",
+  "Subheader": "Modifiez et co-rédigez les fichiers bureautiques ajoutés à la médiathèque Strapi en utilisant ONLYOFFICE Docs",
+  "GetStarted": "Démarrer",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Complètement compatible avec les formats docx, xlsx et pptx",
+
+  "MarketplaceConnectorTitle": "Conçue pour une intégration transparente avec Strapi",
+  "MarketplaceConnectorDescription": "Obtenez le connecteur ONLYOFFICE pour Strapi dès maintenant à partir du <0>Strapi Market</0> ou du <1>répertoire nmp</1>.",
+  "GetItNow": "Obtenir maintenant",
+
+  "WhyOO": "Pourquoi ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs est une suite bureautique auto-hébergée pour travailler sur les documents texte, les feuilles de calcul, les présentations et les formulaires",
+  "Reason1": "Application d'intégration <0>prête à l'emploi</0>",
+  "Reason2": "Installation facile à partir de <0>Strapi Market</0> et configuration rapide",
+  "Reason3": "<0>Interface intuitive</0> avec onglets",
+  "Reason4": "Outils <0>multiple</0> d'édition, de formatage et de stylisme",
+  "Reason5": "<0>Collaboration en temps réel</0>, suivi des modifications, commentaires, chat",
+  "Reason6": "<0>Version communautaire gratuite</0> et <0>versions évolutives pour les entreprises</0>",
+  "Reason7": "<0>Protection de JWT</0> contre les accès non autorisés",
+  "Reason8": "<0>Code source ouvert</0> disponible sur GitHub",
+
+  "HowToStart": "Comment commencer",
+  "HowToStartStep1": "Déployez <0>ONLYOFFICE Docs</0> sur votre propre serveur ou créez un compte <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenez le connecteur ONLYOFFICE depuis le <0>marché de Strapi</0> ou le <1>répertoire npm</1>.",
+  "HowToStartStep3": "Installez et configurez l'application d'intégration.",
+
+  "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/strapi.aspx",
+
+  "NeedAnAppToConnect": "Besoin d'une appli pour connecter ONLYOFFICE Docs à votre service web préférentiel ? Ou en avez-vous développé une ?"
+}

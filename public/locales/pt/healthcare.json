@@ -1,0 +1,79 @@
+{
+  "PageTitle": "Office online para clínicas | ONLYOFFICE",
+  "PageDescription": "Edite e colabore de forma privada em documentos usando o ONLYOFFICE, que vem com recursos integrados para ajudar seu departamento de TI a se manter em conformidade com as regras de privacidade e segurança HIPAA.",
+
+  "HeroTitle": "O ONLYOFFICE <0>para consultórios de assistência médica</0>",
+  "HeroText": "Edição segura de documentos e colaboração para profissionais de saúde",
+
+  "FlexibleChoiceSoftwareTools": "<0>Escolha flexível</0> de ferramentas de software para atender às necessidades de sua organização",
+  "LearnMore": "Saiba mais",
+  "UseItForFree": "Use de graça",
+  "GetItNow": "Obtenha-o agora",
+
+  "EffectivelyCollaborateOnMedicalRecords": "Colabore de forma efetiva em prontuários médicos",
+  "OODocSpaceAllowsConnectingDoctors": "O ONLYOFFICE DocSpace permite conectar médicos e documentação em salas personalizáveis com configurações flexíveis.",
+  "EffectivelyCollabFeature1": "Crie salas de colaboração para trabalhar em conjunto em prontuários de pacientes, como para discussões multidisciplinares, formar salas de preenchimento para coletar dados e respostas ou salas personalizadas para qualquer outra finalidade.",
+  "EffectivelyCollabFeature2": "Compartilhe o acesso com os médicos responsáveis pelo tratamento, inclusive em casos inter-hospitalares. Para acesso rápido, utilize Salas Públicas onde é possível visualizar documentos sem cadastro.",
+  "EffectivelyCollabFeature3": "Proteja salas e arquivos confidenciais usando várias configurações de segurança.",
+
+
+  "OrganizeASecureDigitalWorkplace": "Organize um local de trabalho digital seguro",
+  "OOOffersCollaborationPlatform": "O ONLYOFFICE oferece uma plataforma de colaboração completa com recursos de segurança aprimorados.",
+  "OrganizeASecureFeature1": "Armazene, compartilhe e edite documentos com segurança no <0>ONLYOFFICE Documents</0>. Crie formulários prontos para preencher. Abra arquivos de vídeo e áudio, veja imagens de diferentes formatos.",
+  "OrganizeASecureFeature2": "Melhore o gerenciamento de contatos com o <0>ONLYOFFICE CRM</0>. Gerencie tarefas do office com o <1>ONLYOFFICE Projects</1>.",
+  "OrganizeASecureFeature3": "Crie um hub de comunicação interna para funcionários dentro do <0>ONLYOFFICE Community</0>. Organize um cronograma com o <1>ONLYOFFICE Calendar</1>.",
+
+
+  "AlreadyUseAPopularDms": "Já usa um DMS popular? Habilite a edição e colaboração seguras de documentos",
+  "OOOffersConnectors": "O ONLYOFFICE oferece uma coleção de conectores prontos para uso para integração profunda em sua infraestrutura.",
+  "AlreadyUseFeature1": "Mantenha as informações dos pacientes em documentos de texto, planilhas ou apresentações criptografadas de ponta a ponta. Edite e colabore de forma segura em documentos Word em tempo real. Altamente compatível com os formatos do MS Office.",
+  "AlreadyUseFeature2": "Defina permissões granulares de documentos. Use uma variedade de recursos de colaboração, incluindo histórico de versões, controle de alterações, comentários e chat integrado.",
+  "AlreadyUseFeature3": "Proteja as informações dos pacientes contra cópia, download ou impressão.",
+
+
+
+  "UltimateProtectionHealthcareData": "<0>Proteção máxima</0> de dados de saúde contra as ameaças atuais",
+  "OOCompliantWithHipaaPrivacy": "O ONLYOFFICE vem com recursos incorporados para ajudar o Departamento de TI em organizações de saúde a se manter em conformidade com as regras de privacidade e <0>segurança HIPAA</0>.",
+
+  "EncryptDataAtRestAndTransit": "Criptografa dados em repouso e em trânsito",
+  "EncryptDataP1": "A criptografia de dados em repouso e em trânsito torna impossível para os invasores decifrarem os dados dos pacientes, mesmo que tenham acesso a eles.",
+  "EncryptDataP2": "O ONLYOFFICE usa o padrão de criptografia AES 256 líder de mercado para proteger seus dados confidenciais em repouso. Os dados em trânsito são protegidos pelo uso de protocolos HTTPS com algoritmo de criptografia TLS atualizado.",
+  "EncryptDataP3": "O ONLYOFFICE Enterprise conta com salas privadas que garantem o máximo em segurança de dados. Cada símbolo que você digita é criptografado de ponta a ponta.",
+  "LearnHowItWorks": "Veja como funciona",
+
+  "RestrictAccessToData": "Restringir o acesso aos dados",
+  "RestrictAccessP1": "Dê acesso aos dados dos pacientes apenas para as pessoas que precisam de acesso para realizar seus trabalhos.",
+  "RestrictAccessP2": "O ONLYOFFICE oferece permissões granulares de documentos para controlar o acesso, incluindo acesso total, somente visualização, comentários, revisão ou modos de formulário preenchíveis.",
+  "RestrictAccessP3": "Para validar que os usuários sejam de fato as pessoas autorizadas a acessar os dados dos pacientes, a plataforma de colaboração do ONLYOFFICE vem com um conjunto de recursos de autenticação:",
+
+  "TwoFactorAuthentication": "Autenticação de dois fatores;",
+  "SingleSignOn": "Login único (SSO);",
+  "TrustedMailDomains": "Domínios de e-mail confiáveis;",
+  "PasswordCreationCriteria": "Critérios de criação de senha;",
+  "CookieLifetime": "Cookie vitalícia;",
+  "IpRestriction": "Restrição de IP;",
+
+  "RestrictAccessP4": "Além disso, ela permite que os Departamentos de TI restrinjam o acesso aos módulos e ferramentas do ONLYOFFICE.",
+
+  "ProtectDataUsage": "Proteja o uso de dados",
+  "ProtectDataUsageP1": "Proteja as informações dos pacientes contra cópia, download ou impressão.",
+  "ProtectDataUsageP2": "A API do ONLYOFFICE permite que os Departamentos de TI implementem controles adicionais para bloquear atividades arriscadas com dados confidenciais.",
+  "VisitAPI": "Visite a API",
+
+  "LogAndMonitorDataUsage": "Registre e monitore o uso de dados",
+  "LogAndMonitorDataUsageP1": "Monitore quem, quando e de quais dispositivos e locais as informações são acessadas.",
+  "LogAndMonitorDataUsageP2": "O ONLYOFFICE vem com logs de auditoria integrados e ferramentas de monitoramento que permitem que você identifique e corrija problemas rapidamente se ocorrer um incidente.",
+
+  "BackupAndRestoreData": "Faça backup e restaure seus dados",
+  "BackupAndRestoreP1": "Proteja a integridade e a disponibilidade de seus dados confidenciais com backups regulares.",
+  "BackupAndRestoreP2": "O ONLYOFFICE oferece ferramentas para backup automático e restauração de dados, permitindo que departamentos de TI dentro de organizações de saúde escolham um local para seus backups: disco local ou qualquer armazenamento em nuvem privada de terceiros.",
+
+
+  "EnterpriseReadySolution": "Solução pronta para empresas",
+  "OOProvidesEnterpriseVersion": "O ONLYOFFICE fornece uma versão empresarial pré-configurada e otimizada:",
+  "AdvancedSetOfEditingTools": "Conjunto avançado de ferramentas de edição",
+  "EnhancedSecurityOptions": "Opções de segurança aprimoradas",
+  "PriorityAccessSecurityStabilityFixes": "Acesso prioritário a correções de segurança e estabilidade",
+  "EasilyScalable": "Facilmente escalável",
+  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "Versão de avaliação gratuita, licença vitalícia + atualizações e suporte"
+}

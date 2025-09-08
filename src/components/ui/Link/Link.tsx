@@ -1,3 +1,4 @@
+import type React from "react";
 import { StyledLink } from "./Link.styled";
 import { ILink } from "./Link.types";
 
@@ -21,15 +22,18 @@ const Link = ({
   textUnderline,
   hover,
   style,
+  onClick,
+  ...rest
 }: ILink) => {
-  const asProp = download ? "a" : undefined;
+  const asProp = !href || download ? "a" : undefined;
+  const hasClickNoHref = !href && typeof onClick === "function";
 
   return (
     <StyledLink
       id={id}
       {...(asProp && { as: asProp })}
       className={className}
-      href={href ?? ""}
+      href={href ?? "#"}
       rel={!rel && target === "_blank" ? "noopener noreferrer" : rel}
       download={download}
       type={type}
@@ -44,6 +48,15 @@ const Link = ({
       $textUnderline={textUnderline}
       $hover={hover}
       style={style}
+      onClick={(e: React.MouseEvent) => {
+        if (hasClickNoHref) {
+          e?.preventDefault?.();
+          onClick?.();
+          return;
+        }
+        onClick?.(e);
+      }}
+      {...rest}
     >
       {children || label}
     </StyledLink>

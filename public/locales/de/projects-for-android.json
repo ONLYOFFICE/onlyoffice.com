@@ -1,0 +1,41 @@
+{
+    "PageTitle": "Kostenlose App für Projektmanagement auf Android | ONLYOFFICE",
+    "PageDescription": "Verwalten Sie Teamarbeit, Projekte und Aufgaben auf Ihrem Android-Smartphone oder -Tablet.",
+
+    "ONLYOFFICEProjects": "<0>ONLYOFFICE Projects,</0> eine kostenlose App für Projektmanagement auf Android",
+    "PocketProject": "Pocket Projektmanagement-Tool",
+    "HeroImgUrl": "/images/templates/projects-for-android/hero/de/googleplay.png",
+
+    "ManageYourTeam": "Verwalten Sie Geschäftsprozesse auch unterwegs",
+    "TrackCurrentWorkload": "Arbeitsbelastung verfolgen",
+    "QuicklyBrowseSortAndFilter": "Durchsuchen, sortieren und filtern Sie die vorhandenen Projekte und Aufgaben. Bearbeiten Sie sie und ändern Sie Status, verantwortliche Personen und Fälligkeitsdaten. Greifen Sie auf die Dokumente in Projekten zu.",
+    "ManageNewProjects": "Neue Projekte verwalten",
+    "CreateNewProjects": "Erstellen Sie neue Projekte und Aufgaben und wählen Sie verantwortliche Personen aus. Setzen Sie Prioritäten und fügen Sie kleinere Teilaufgaben hinzu. Gruppieren Sie Aufgaben in Meilensteinen, um Ihre Arbeit und Zeit zu planen.",
+    "Communicate": "Kommunizieren",
+    "StartProjectDiscussions": "Erstellen Sie Diskussionen, um Ideen auszutauschen, Probleme zu lösen, Fragen zu stellen und Ankündigungen zu machen. Hinterlassen Sie Kommentare, um an einer Diskussion teilzunehmen.",
+    "KeepYourProjectsSafe": "Projekte sicher verwalten",
+    "MakeSureNoUnauthorized": "Erlauben Sie nur berechtigten Zugriff auf Ihre Projekte. Schützen Sie die Anwendung mit einem Code, aktivieren Sie Zwei-Faktor-Authentifizierung oder den Zugang zur App mit einem Fingerabdruck.",
+    "WorkComfortably": "Komfortabel arbeiten",
+    "EnjoyAnIntuitiveInterface": "Navigieren Sie nahtlos durch alle Ihre Projekte und Aufgaben in einer intuitiven Benutzeroberfläche. Aktivieren Sie den Dunkelmodus, um in schlecht beleuchteten Umgebungen zu arbeiten.",
+    "TrackCurrentWorkloadImage": "/images/templates/projects-for-android/features/de/track-current-workload.svg",
+    "ManageNewProjectsImage": "/images/templates/projects-for-android/features/de/manage-new-projects.svg",
+    "CommunicateImage": "/images/templates/projects-for-android/features/de/communicate-screen.svg",
+    "KeepYourProjectsSafeImage": "/images/templates/projects-for-android/features/de/keep-your-projects-safe.svg",
+    "WorkComfortablyImage": "/images/templates/projects-for-android/features/de/work-comfortably.svg",
+
+    "HowToStart": "Erste Schritte",
+    "CreateYourONLYOFFICEWorkspace": "<0>1.</0> Erstellen Sie ein Konto bei <1>ONLYOFFICE Workspace</1>",
+    "LaunchInTheCloud": "in der Cloud",
+    "RunOnYourOwnServer": "oder auf Ihrem eigenen Server",
+    "ConnectTheApp": "<0>2.</0> Verbinden Sie die App mit Ihrem ONLYOFFICE Workspace-Portal.",
+    "CreateAndTrack": "<0>3.</0> Erstellen und verfolgen Sie Projekte und Aufgaben auch unterwegs.",
+
+    "YourBenefits": "Hauptvorteile",
+    "QuickAccessToYourWorkflows": "Einfacher Zugriff auf Ihre Geschäftsprozesse in ONLYOFFICE",
+    "CleanAndIntuitiveUI": "Intuitive Benutzeroberfläche",
+    "NoAds": "Keine Werbund oder In-App-Käufe",
+    "RegularUpdates": "Regelmäßige Updates",
+    "TechnicalSupport": "Support",
+    "OnlineDocumentation": "Online-Dokumentation",
+    "BenefitsImage": "/images/templates/projects-for-android/benefits/de/benefits-pic-en.svg"
+}

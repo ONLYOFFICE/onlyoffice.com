@@ -37,5 +37,60 @@
 
   "HowToStartStep3DocsImgUrl": "/images/templates/office-for-drupal/how-to-start/fr/step3-dc.svg",
 
-  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-drupal/how-to-start/fr/step3-ds.svg"
+  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-drupal/how-to-start/fr/step3-ds.svg",
+
+  "PageTitle": "Bureau en ligne pour Drupal",
+  "PageDescription": "Travaillez sur des fichiers bureautiques dans Drupal",
+
+  "OnlineOfficeForConnector": "Bureau en ligne pour <0>Drupal</0>",
+  "Subheader": "Travaillez sur des fichiers bureautiques dans Drupal",
+  "GetItNow": "Démarrer",
+  "RequestFreeDemo": "DEMANDER DÉMO GRATUITE",
+
+  "WorkWithinConnector": "Application <0>ONLYOFFICE DocSpace</0> pour Drupal",
+  "DocumentsScreen1Header": "Intégrez des documents bureautiques dans votre site web Drupal",
+  "DocumentsScreen1Tab1Label": "Créez, téléchargez et intégrez des documents texte, des feuilles de calcul, des diapositives ou des PDF à votre site web",
+  "DocumentsScreen1Tab2Label": "Intégrez l'ensemble de la salle dans votre page web pour permettre aux visiteurs de consulter des documents directement dans le navigateur",
+  "DocumentsScreen1Tab3Label": "Intégrez des formulaires PDF complexes pour les remplir en ligne. Collecte et analyse automatiques des données",
+  "DocumentsScreen1Tab4Label": "Empêchez le téléchargement, l'impression et la copie de documents à partir de votre site web",
+  "soon": "bientôt",
+  
+  "DocsAppHeading": "Application <0>ONLYOFFICE Docs</0> pour Drupal",
+  "DocumentsScreen2Header": "Gérez efficacement les documents à partir de votre compte Drupal",
+  "DocumentsScreen2Tab1Label": "Créez un espace sécurisé pour tous vos documents. Accédez-y facilement à tout moment et en tout lieu",
+  "DocumentsScreen2Tab2Label": "Organisez vos fichiers personnels et créez des salles pour vos documents professionnels",
+  "DocumentsScreen2Tab3Label": "Fournissez des autorisations d'accès flexibles : édition, commentaires, révision ou lecture seule",
+  "DocumentsScreen2Tab4Label": "Modifiez et collaborez sur des documents avec d'autres utilisateurs de Drupal en ligne",
+  "GetStarted": "Démarrer",
+
+  "DocsAppHeader": "Ajoutez des documents bureautiques à vos pages Drupal",
+  "DocsAppTab1Label": "Affichez un aperçu des documents sur les pages publiques",
+  "DocsAppTab2Label": "Modifiez des documents texte, des feuilles de calcul, des diapositives, des formulaires et des PDF dans le module Drupal Media",
+  "DocsAppTab3Label": "Collaborez en temps réel sur des fichiers bureautiques avec d'autres utilisateurs de Drupal",
+
+  "WhyOO": "Pourquoi ONLYOFFICE ?",
+  "Reason1": "Un ensemble robuste d'outils d'édition, de mise en forme et de style. <0>Assistant IA intégré</0> (ChatGPT ou ZhiPu Copilot).",
+  "Reason2": "Coédition en <0>temps réel</0> et verrouillage des paragraphes, révision, historique des versions, comparaison des documents, commentaires et mentions.",
+  "Reason3": "<0>Chat intégré et intégration de Telegram.</0> Plugins Jitsi et Rainbow pour la communication en temps réel.",
+  "Reason4": "Prise en charge de plus de <0>50 formats de fichiers</0>. Entièrement compatible avec les formats MS Office : DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Sécurité renforcée.</0> Droits d'accès flexibles et JWT. Suivi des activités et rapports d'audit. Chiffrement au repos et en transit. Code source ouvert.",
+  "Reason6": "<0>Plan gratuit pour commencer.</0> Plan Business pour plus d'administrateurs, un stockage plus important, une sécurité renforcée et un support professionnel. Solution auto-hébergée pour un contrôle total de vos données.",
+
+
+  "MarketplaceConnectorTitle": "Conçue pour fonctionner avec Drupal en toute transparence",
+  "MarketplaceConnectorDescription": "Installez l'application ONLYOFFICE DocSpace pour Drupal depuis le Drupal Marketplace.",
+
+  "HowToStart": "Comment démarrer",
+  "HowToStartStep1Docs": "Déployez <0>ONLYOFFICE Docs</0> sur votre propre serveur ou inscrivez-vous à <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenez l'application d'intégration sur <0>Drupal Marketplace</0>.",
+  "HowToStartStep3": "Téléchargez et configurez l'application d'intégration.",
+  "HowToStartStep1Docspace": "Créez votre compte <0>DocSpace gratuit</0>.",
+
+  "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/drupal.aspx",
+
+  "NeedAnAppToConnect": "Besoin d'une application pour connecter ONLYOFFICE à votre service web préféré ? Ou vous en avez développé une ?",
+
+  "Docs": "Docs",
+  "DocSpace": "DocSpace"
 }

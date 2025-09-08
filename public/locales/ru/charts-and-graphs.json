@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Диаграммы и графики в таблицах Excel",
+  "PageDescription": "Иллюстрируйте данные в редакторе таблиц ONLYOFFICE с помощью наглядных материалов. Добавляйте диаграммы и инфографику. Вставляйте формулы, фигуры, видео.",
+
+  "Header": "Визуализируйте данные в таблицах",
+  "SubHeader": "Дополните числа диаграммами, графиками и изображениями, чтобы сделать данные наглядными",
+
+  "HeroImgUrl": "/images/templates/charts-and-graphs/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/charts-and-graphs/hero/ru/hero@2x.png",
+
+  "Feature1Title": "Добавляйте диаграммы и графики",
+  "Feature1Desc": "Выберите один из нескольких стилей и типов, чтобы проиллюстрировать ваши данные. Используйте диспетчер данных диаграммы для настройки: управляйте диапазоном данных, условными обозначениями и привязкой ячеек, изменяйти оси и макеты.",
+
+  "Feature2Title": "Настройте внешний вид вашей диаграммы",
+  "Feature2Desc": "Сделайте ваши таблицы и диаграммы уникальными. Применяйте цвета, градиенты и границы, а также аккуратно размещайте визуальные элементы на своих иллюстрациях.",
+
+  "Feature3Title": "Добавляйте формы, изображения, видео, объекты Text Art и SmartArt",
+  "Feature3Desc": "Добавляйте и редактируйте изображения и фотографии, создавайте и настраивайте автофигуры и используйте Text Art для заголовков. Вставляйте элементы SmartArt для визуализации информации. Применяйте пользовательские изображения в качестве маркеров в маркированных списках. Вставьте видео с YouTube и воспроизведите их в электронной таблице.",
+
+  "Feature4Title": "Выделяйте строки и столбцы с помощью спарклайнов",
+  "Feature4Desc": "Создавайте миниатюрные диаграммы для отображения тенденций в строках или столбцах таблицы. Настройте их положение и внешний вид. Выберите из множества типов и стилей спарклайнов.",
+
+  "Feature5Title": "Используйте шаблоны и условное форматирование",
+  "Feature5Desc": "Выберите один из нескольких шаблонов стилей, чтобы визуально упорядочить свои электронные таблицы. Просматривайте листы с условным форматированием, чтобы выявлять проблемы и определять тенденции.",
+
+  "Feature1ImgUrl": "/images/templates/charts-and-graphs/features/ru/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/charts-and-graphs/features/ru/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/charts-and-graphs/features/ru/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/charts-and-graphs/features/ru/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/charts-and-graphs/features/ru/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/charts-and-graphs/features/ru/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/charts-and-graphs/features/ru/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/charts-and-graphs/features/ru/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/charts-and-graphs/features/ru/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/charts-and-graphs/features/ru/pic5@2x.png"
+}

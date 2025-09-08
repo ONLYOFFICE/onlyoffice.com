@@ -1,0 +1,13 @@
+{
+  "FullName": "Volledige naam",
+  "FullNameIsIncorrect": "Volledige naam is onjuist",
+  "NameSurname": "Volledige naam",
+  "FullNameIsEmpty": "Volledige naam is leeg",
+  "Email": "E-mailadres",
+  "EmailIsEmpty": "E-mail is leeg",
+  "EmailIsIncorrect": "E-mailadres is onjuist",
+  "CompanyName": "Bedrijfsnaam",
+  "CompanyNameIsEmpty": "Bedrijfsnaam is leeg",
+  "successfullyRequestText": "Uw verzoek is succesvol verzonden",
+  "errorRequestText": "Excuses, maar er is een fout gemaakt, probeer het later nog eens"
+}

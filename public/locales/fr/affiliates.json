@@ -1,7 +1,8 @@
 {
   "PageTitle": "Programme d'affiliation. Gagnez de l'argent avec ONLYOFFICE",
   "PageDescription": "Rejoignez le programme d'affiliation de ONLYOFFICE et recevez jusqu'à 50% de commission.",
-  "HeroTitle": "Gagnez de l'argent avec le programme ONLYOFFICE pour les affiliés",
+  "HeroTitle": "Gagnez de l'argent avec le programme d'affiliation ONLYOFFICE",
+  "HeroTitle": "Gagnez de l'argent avec le programme d'affiliation ONLYOFFICE",
   "InnovativeProducts": "Produits innovants à vendre",
   "CommissionPerSale": "À partir de <0>18 %</0> de commission <0>par vente</0>",
   "EasyStart": "Démarrage facile",
@@ -21,12 +22,13 @@
   "Reason4Title": "Facilité de vente",
   "Reason4Text": "Nous vous fournissons du matériel de marketing, expliquons nos produits et leur public cible.",
   "Reason5Title": "Canal de paiement sécurisé",
-  "Reason5Text": "Vous recevrez vos paiements par le biais d'un canal fiable et sécurisé - Rewardful, un logiciel d'affiliation simple et convivial de Stripe.",
+  "Reason5Text": "Vous recevrez vos paiements par le biais d'un canal fiable et sécurisé, Rewardful, un logiciel d'affiliation simple et convivial de Stripe.",
   "Reason6Title": "Statut du client assigné",
   "Reason6Text": "Chaque client qui obtiendra notre produit de votre part, obtiendra automatiquement le statut de client.",
 
   "HowToStart": "Comment commencer",
-  "RegisterInRewardful": "S'inscrire en tant qu'affilié à Rewardful.",
+  "RegisterInRewardful": "Inscrivez-vous en tant qu'affilié à Rewardful",
+  "RegisterInRewardful": "Inscrivez-vous en tant qu'affilié à Rewardful",
   "GenerateYourPersonalAffiliateLinks": "Générez vos liens d’affiliation personnels, placez-les sur votre site web et commencez à vendre",
   "RewardfulPortal": "Recevez <0>18 % des ventes</0> chaque mois via votre portail Rewardful.",
   "Regitster": "S’INSCRIRE",
@@ -43,6 +45,6 @@
   "ReadNow": "Lire maintenant",
   "ContactUs": "Contactez-nous",
   "ContactUsDesc": "Demandez-nous ce que vous voulez à tout moment à <a>affiliates@onlyoffice.com</a>",
-  "HelpFromOOMarketing": "Aide du marketing ONLYOFFICE",
+  "HelpFromOOMarketing": "Aide de l’équipe marketing de ONLYOFFICE",
   "HelpFromOOMarketingDesc": "Obtenez des conseils sur le contenu du site web et du blog.<br> Contactez-nous à <a>marketing@onlyoffice.com</a>"
 }

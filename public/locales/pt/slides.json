@@ -1,0 +1,37 @@
+{
+  "PageTitle": "Abra e edite em apresentações PowerPoint online | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE – trabalhe em apresentações do PowerPoint: pptx, ppt, odp. Crie, edite e colabore online.",
+
+  "Header": "Editor de apresentação on-line para seu aplicativo da Web",
+  "SubHeader": "Abra, crie e edite em apresentações PowerPoint online",
+
+  "Feature1Title": "Impressione o público com os seus trabalhos e projetos",
+  "Feature1Desc": "Expresse qualquer ideia usando uma variada seleção de opções de ferramentas, objetos e estilo de formatação. O ONLYOFFICE Presentation Editor é compatível com apresentações em PowerPoint e pode salvá-las em PDF, PNG e JPG. Arquivos PPTX, PPT, ODP e PPSX também são suportados.",
+  "Feature2Title": "Crie conteúdo de qualquer complexidade",
+  "Feature2Desc": "Crie esquemas e esboços claros com formas automáticas e gráficos SmartArt, adicione gráficos, tabelas e equações personalizáveis para exibição de estatísticas distintas. Economize seu tempo: use o Slide Mestre, agrupe qualquer número de objetos e aplique configurações em massa.",
+  "Feature3Title": "Permita-se ser criativo",
+  "Feature3Desc": "Crie seus próprios desenhos à mão livre em slides usando uma caneta ou marca-texto, escolha a cor e a espessura desejadas da linha.",
+  "Feature4Title": "Faça apresentações de forma fácil e livre",
+  "Feature4Desc": "Com o modo de Exibição do Apresentador, você pode deixar notas para destacar as partes importantes do seu discurso e navegar confortavelmente através da sua apresentação mudando para qualquer slide desejado com apenas um clique.",
+  "Feature5Title": "Junte os esforços da equipe",
+  "Feature5Desc": "O trabalho em equipe ágil em apresentações e esboços é garantido com recursos colaborativos. Coedite slides em tempo real, deixe comentários em elementos do slide e converse com usuários online sem sair do editor.",
+  "Feature6Title": "Usar assistente de Inteligência Artificial",
+  "Feature6Desc": "Realize tarefas que envolvam compreensão ou geração de linguagem natural usando o plug-in ChatGPT. Obtenha respostas precisas para suas perguntas, encontre informações rapidamente, gere textos, crie seu código, etc. diretamente no editor.",
+  "Feature7Title": "Leve os seus slides para além do básico",
+  "Feature7Desc": "Usando complementos incorporados, aprimore as suas apresentações com vídeos e elementos clip art, obtenha uma tradução rápida de qualquer texto, insira símbolos especiais, edite imagens e muito mais.",
+
+  "LearnMoreHeading": "Saiba mais sobre o Editor de apresentações do ONLYOFFICE",
+  "BlogDesc": "Como adicionar animação em apresentações do PowerPoint?",
+  "BlogLink": "https://www.onlyoffice.com/blog/2022/06/how-to-include-animation-in-powerpoint",
+  "TutorialsDesc": "Proteger apresentações com uma senha",
+  "TutorialsLink": "https://helpcenter.onlyoffice.com/docs/userguides/presentation_editor/Password.aspx",
+  "HintsDesc": "Formatos suportados de apresentações eletrônicas",
+  "HintsLink": "https://helpcenter.onlyoffice.com/docs/userguides/presentation_editor/SupportedFormats.aspx",
+
+  "Q1": "Posso editar apresentações sem conexão com a Internet?",
+  "A1": "Sim, você pode instalar e usar a versão gratuita do <0>ONLYOFFICE Desktop Editoren</0> para editar apresentações locais offline.",
+  "Q2": "O ONLYOFFICE oferece aplicativos móveis nativos para edição de apresentações?",
+  "A2": "Sim, você pode instalar a versão gratuita do aplicativo <0>Documents</0> para dispositivos iOS ou Android para trabalhar em apresentações onde estiver.",
+  "Q3": "É possível usar o editor de apresentações do ONLYOFFICE em meu aplicativo com a minha marca?",
+  "A3": "Sim, você pode integrar o editor de apresentações ao seu aplicativo. Use o <0>ONLYOFFICE Docs Developer</0>."
+}

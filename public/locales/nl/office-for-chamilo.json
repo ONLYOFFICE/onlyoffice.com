@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Online office suite voor Chamilo | ONLYOFFICE Docs",
+  "PageDescription": "Samenwerken aan documenten, spreadsheets, presentaties en formulieren in Chamilo met ONLYOFFICE Docs",
+
+  "OnlineOfficeForChamilo": "Online office for Chamilo",
+  "Subheader": "Collaborate on documents, spreadsheets, presentations, and forms in Chamilo with ONLYOFFICE Docs",
+  "GetItNow": "Aan de slag",
+  "RequestFreeDemo": "Request free demo",
+  "WorkWithinChamilo": "Work on office documents within the Chamilo structure",
+  "DocumentsTab1Label": "View and edit text documents, spreadsheets, presentations and fillable forms.",
+  "DocumentsTab2Label": "Share providing Edit or Read Only permissions.",
+  "DocumentsTab3Label": "Co-author documents in real time, track changes and leave comments.",
+  "DocumentsTab4Label": "Communicate using built-in chat or video conferencing tools, like Jisti or Rainbow.",
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Chamilo",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Chamilo now on GitHub.",
+  "GetStarted": "Aan de slag",
+
+  "WhyOO": "Why ONLYOFFICE?",
+  "Reason1": "A robust set of editing, formatting, and styling tools. Integrated <0>AI helper</0>.",
+  "Reason2": "<0>Enhanced security.</0> Flexible access rights and JWT. Open source code available on GitHub.",
+  "Reason3": "Integration with <0>ONLYOFFICE Docs Cloud</0> solution with no installation required.",
+  "Reason4": "Support for over <0>50 file formats</0>, fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
+  "Reason5": "<0>Co-editing</0> in real time and paragraph locking, version history, document comparison, comments and chat.",
+  "Reason6": "Self-hosted solution. Scalable Enterprise versions. <0>Free 30-day trial.</0> Educational discounts.",
+
+  "HowToStart": "How to start",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Get the integration app from <0>GitHub</0>.",
+  "HowToStartStep3": "Upload the plugin to Chamilo.",
+  "HowToStartStep4": "Configure the plugin by specifying ONLYOFFICE Docs address.",
+  "HowToConnect": "Connecting ONLYOFFICE Docs to Chamilo",
+
+  "ReadDetailedInstructions": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",
+
+  "NeedAnAppToConnect": "Heeft u een app nodig om ONLYOFFICE aan te sluiten op uw favoriete webservice? Of heeft u een ontwikkeld?"
+}

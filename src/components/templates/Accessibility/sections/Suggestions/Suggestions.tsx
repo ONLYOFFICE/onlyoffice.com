@@ -6,8 +6,9 @@ import {
   StyledSuggestionsTitle,
   StyledBackgroundImage,
 } from "./Suggestions.styled";
-import { useTranslation } from "next-i18next";
+import { Trans, useTranslation } from "next-i18next";
 import { Button } from "@src/components/ui/Button";
+import { Link } from "@src/components/ui/Link";
 
 const Suggestions = () => {
   const { t } = useTranslation("accessibility");
@@ -17,7 +18,26 @@ const Suggestions = () => {
       <StyledContentWrapper>
         <StyledSuggestionsTitle>{t("SuggestionsTitle")}</StyledSuggestionsTitle>
         <StyledSuggestionsDescription>
-          {t("SuggestionsDescription")}
+          <Trans
+            t={t}
+            i18nKey="SuggestionsDescription"
+            components={[
+              <Link
+                href="https://github.com/ONLYOFFICE/DocumentServer/issues"
+                target="_blank"
+                textUnderline
+                hover="underline-none"
+                key="0"
+              />,
+              <Link
+                href="https://community.onlyoffice.com/"
+                target="_blank"
+                textUnderline
+                hover="underline-none"
+                key="1"
+              />,
+            ]}
+          />
         </StyledSuggestionsDescription>
         <StyledButtonContainer>
           <Button

@@ -36,7 +36,7 @@ const DocSpace = () => {
           {items.map(({ heading, text, textLinks, image }, index) => (
             <FeatureImageItem
               key={index}
-              heading={t(heading)}
+              heading={t(String(heading))}
               position={{ desktop: index % 2 === 1 ? "right" : "left" }}
               text={
                 <Trans

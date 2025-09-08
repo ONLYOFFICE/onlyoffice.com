@@ -57,8 +57,6 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
     hCaptcha: null,
   });
 
-  console.log(formData.hCaptcha)
-
   const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
     fullName: "default",
     companyName: "default",

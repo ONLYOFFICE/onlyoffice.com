@@ -12,5 +12,40 @@
   "DocumentsTab4ImgUrl2x": "/images/templates/office-for-chamilo/documents/zh/screenshot4@2x.png",
 
   "HowToStartStep3ImgUrl": "/images/templates/office-for-chamilo/how-to-start/zh/step3.svg",
-  "HowToStartStep4ImgUrl": "/images/templates/office-for-chamilo/how-to-start/zh/step4.svg"
+  "HowToStartStep4ImgUrl": "/images/templates/office-for-chamilo/how-to-start/zh/step4.svg",
+
+  "PageTitle": "适用于Chamilo的在线办公套件",
+  "PageDescription": "使用ONLYOFFICE Docs在Chamilo中协作处理文件、电子表格、演示文稿和表单。",
+
+  "OnlineOfficeForChamilo": "适用于Chamilo的在线办公室",
+  "Subheader": "在 Chamilo 中使用 ONLYOFFICE 文档，协作处理文档、表格、幻灯片和表单",
+  "GetItNow": "开始使用",
+  "RequestFreeDemo": "申请免费演示",
+  "WorkWithinChamilo": "在 Chamilo 结构内处理办公文档",
+  "DocumentsTab1Label": "查看和编辑文档、表格、幻灯片和可填写的表单。",
+  "DocumentsTab2Label": "共享并提供编辑或只读权限。",
+  "DocumentsTab3Label": "实时协作编辑文档、跟踪更改并留下批注。",
+  "DocumentsTab4Label": "使用内置聊天或视频会议工具（如 Jisti 或 Rainbow）进行交流。",
+  "MarketplaceConnectorTitle": "为了与 Chamilo 无缝集成而设计",
+  "MarketplaceConnectorDescription": "立即在 GitHub 获取适用于 Chamilo 的 ONLYOFFICE 应用程序。",
+  "GetStarted": "开始使用",
+
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "Reason1": "拥有强大的编辑、格式和样式工具。集成<0>AI 助手。</0>",
+  "Reason2": "<0>高度安全性。</0>灵活的访问权限和 JWT。开源代码可在 GitHub 上获取。",
+  "Reason3": "与<0>ONLYOFFICE 文档云</0>解决方案集成，无需安装。",
+  "Reason4": "支持超过<0>50 种文件格式</0>，高度兼容微软Office 格式：DOCX、XLSX、PPTX。",
+  "Reason5": "实时和段落锁定<0>共同编辑</0>模式、审阅、版本历史、文档比较、批注和聊天。",
+  "Reason6": "自托管解决方案。可扩展的企业版本。<0>30 天免费试用。</0>教育折扣。",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1": "在您自己的服务器上部署<0>ONLYOFFICE 文档</0>或注册<1>ONLYOFFICE 文档云</1>。",
+  "HowToStartStep2": "从<0>GitHub</0>获取集成应用程序。",
+  "HowToStartStep3": "将插件上传至 Chamilo。",
+  "HowToStartStep4": "通过填写 ONLYOFFICE 文档地址来配置插件。",
+  "HowToConnect": "将 ONLYOFFICE 文档连接到 Chamilo",
+
+  "ReadDetailedInstructions": "在<0>GitHub</0>和<1>帮助中心</1>查看详细说明。",
+
+  "NeedAnAppToConnect": "需要一个应用程序将ONLYOFFICE连接到您偏好的Web服务？ 或者您已经开发了自己的应用？"
 }

@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Rédaction collaborative de documents Word",
+  "PageDescription": "Collaborer sur les documents Word avec ONLYOFFICE. Coéditer des fichiers complexes en toute commodité avec votre équipe de toute taille grâce à un riche éventail d'outils collaboratifs.",
+
+  "Header": "Collaborez facilement sur les documents Word",
+  "SubHeader": "Co-éditez des fichiers volumineux avec votre équipe en toute commodité grâce à un riche éventail des outils collaboratifs",
+
+  "HeroImgUrl": "/images/templates/collaborate-on-word-documents/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/collaborate-on-word-documents/hero/fr/hero@2x.png",
+
+  "Feature1Title": "Partagez les documents",
+  "Feature1Desc": "Partagez les documents pour la lecture et l’édition, profitez des permissions de partage évoluées pour activer les commentaires ou la révision. Créez des formulaires prêts à être remplis et invitez d'autres utilisateurs à les remplir. Empêchez la copie, le téléchargement et l’impression.",
+
+  "Feature2Title": "Collaborez en toute commodité",
+  "Feature2Desc": "Collaborez sur les documents en ligne : en temps réel avec le mode Rapide ou verrouillez un extrait de texte en cours d’édition avec le mode Strict. Travaillez sans déranger vos co-auteurs avec les options Annuler/Rétablir, suivi des modifications, etc.",
+
+  "Feature3Title": "Commentez et discutez",
+  "Feature3Desc": "Laissez les commentaires pour discuter d’un sujet. Triez les commentaires par auteur et par date. Mentionnez les utilisateurs dans les commentaires pour solliciter leur aide. Utilisez le chat intégré, les plugins Telegram ou Jitsi pour communiquer avec votre équipe.",
+
+  "Feature4Title": "Suivez les modifications et comparez les contenus",
+  "Feature4Desc": "Lors de la co-édition d’un document Word, il est très pratique de voir les apports d’autres utilisateurs. Activez le suivi des modifications pour surligner vos entrées, examinez les changements effectués par d’autrui, acceptez ou rejetez-les. Chargez et restaurez les versions du document et comparez les fichiers sélectionnées.",
+
+  "Feature1ImgUrl": "/images/templates/collaborate-on-word-documents/features/fr/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/fr/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/collaborate-on-word-documents/features/fr/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/fr/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/collaborate-on-word-documents/features/fr/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/fr/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/collaborate-on-word-documents/features/fr/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/fr/pic4@2x.png"
+}

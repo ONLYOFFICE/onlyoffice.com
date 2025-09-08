@@ -1,26 +1,67 @@
 {
+  "PageTitle": "Traitement de texte | Modifiez des documents Word en ligne | ONLYOFFICE",
+  "PageDescription": "Éditeur de texte en ligne pour collaborer sur les formats Microsoft®. Éditeur de texte pour Windows, Linux, Mac OS, Android et iOS.",
 
-    "HeroImgUrl": "/images/templates/document-editor/hero/fr/hero.png",
-    "HeroImgUrl2x": "/images/templates/document-editor/hero/fr/hero@2x.png",
+  "Header": "Éditeur collaboratif de documents en ligne pour votre application web",
+  "SubHeader": "Ouvrez, modifiez et collaborez sur des documents Word en ligne",
 
-    "Feature1ImgUrl": "/images/templates/document-editor/features/fr/screen1.png",
-    "Feature1ImgUrl2x": "/images/templates/document-editor/features/fr/screen1@2x.png",
-    "Feature2ImgUrl": "/images/templates/document-editor/features/fr/screen2.png",
-    "Feature2ImgUrl2x": "/images/templates/document-editor/features/fr/screen2@2x.png",
-    "Feature3ImgUrl": "/images/templates/document-editor/features/fr/screen3.png",
-    "Feature3ImgUrl2x": "/images/templates/document-editor/features/fr/screen3@2x.png",
-    "Feature4ImgUrl": "/images/templates/document-editor/features/fr/screen4.png",
-    "Feature4ImgUrl2x": "/images/templates/document-editor/features/fr/screen4@2x.png",
-    "Feature5ImgUrl": "/images/templates/document-editor/features/fr/screen5.png",
-    "Feature5ImgUrl2x": "/images/templates/document-editor/features/fr/screen5@2x.png",
-    "Feature6ImgUrl": "/images/templates/document-editor/features/fr/screen6.png",
-    "Feature6ImgUrl2x": "/images/templates/document-editor/features/fr/screen6@2x.png",
-    "Feature7ImgUrl": "/images/templates/document-editor/features/fr/screen7.png",
-    "Feature7ImgUrl2x": "/images/templates/document-editor/features/fr/screen7@2x.png",
-    "Feature8ImgUrl": "/images/templates/document-editor/features/fr/screen8.png",
-    "Feature8ImgUrl2x": "/images/templates/document-editor/features/fr/screen8@2x.png",
+  "Feature1Title": "Profitez de larges fonctionnalités de traitement de texte en ligne",
+  "Feature1Desc": "Oubliez le mot « limites » quand vous éditez de vos documents en ligne : bénéficiez d'une fidélité à 100 % pour l'affichage, la conversion, l'impression et la pagination. Travaillez avec des fichiers de toutes tailles et toutes complexités. Utilisez nos outils de mise en forme améliorée. Le traitement de texte ONLYOFFICE prend en charge tous les formats populaires : DOC, DOCX, ODT, TXT, HTML, etc. Les PDF et XPS peuvent être convertis en DOCX pour une édition ultérieure.",
 
-    "BlogLink": "https://www.onlyoffice.com/blog/fr/2022/07/comment-inserer-un-document-word-dans-html/",
-    "TutorialsLink": "https://helpcenter.onlyoffice.com/fr/installation/docs-community-install-fonts-linux.aspx",
-    "HintsLink": "https://helpcenter.onlyoffice.com/fr/userguides/docs-de.aspx"
+  "Feature2Title": "Modifiez les documents selon vos propres règles",
+  "Feature2Desc": "Gérez les polices et les styles, mettez en forme le texte, ajustez l'espacement des lignes et des paragraphes, insérez des en-têtes et des pieds de page, personnalisez la mise en page, définissez des marges miroir et des marges de fond pour préparer les documents à la publication et activez la césure automatique du texte.",
+
+  "Feature3Title": "Utilisez l'aide de l'IA",
+  "Feature3Desc": "Effectuez des tâches qui impliquent la compréhension ou la génération de langage naturel à l'aide du plugin ChatGPT. Obtenez des réponses précises à vos questions, trouvez rapidement des informations, générez des textes, construisez votre code, etc. directement dans l'éditeur.",
+
+  "Feature4Title": "Libérez votre créativité",
+  "Feature4Desc": "Créez des documents vivants avec des images, des graphiques personnalisables, des formes automatiques et des tableaux, des objets Text Art, des graphiques Smart Art, des équations, des bouchons, etc. Prenez le contrôle des objets insérés : déplacez, redimensionnez, alignez, changez les styles d'habillage, remplissez avec de la couleur ou une texture, etc. Créez des formulaires et des modèles professionnels. Réalisez vos propres dessins à la main à l'aide d'un stylo ou d'un surligneur.",
+
+  "Feature5Title": "Explorez l'analyse de texte plus approfondie",
+  "Feature5Desc": "Analysez votre document Word : affichez le nombre de mots, les paragraphes et les caractères avec ou sans espaces. Recherchez un mot ou une phrase et remplacez-la par une nouvelle en utilisant le service Rechercher et remplacer. Visualisez l'historique des versions, sélectionnez et restaurez n'importe quelle version précédente d'un simple clic.",
+
+  "Feature6Title": "Améliorez la productivité de vos collaborateurs",
+  "Feature6Desc": "Collaborez sur des documents avec vos collègues : choisissez le mode de coédition approprié - Rapide pour voir tous les changements en temps réel, ou Strict pour voir seulement les changements validés. Laissez et triez les commentaires et discutez du processus dans le chat intégré ou dans Telegram. Utilisez le mode Suivi des modifications avec la fonction Aperçu avant révision pour visualiser l'aspect de votre document si vous appliquez ou non les modifications.",
+
+  "Feature7Title": "Comparez facilement les documents",
+  "Feature7Desc": "Comparez ou combinez rapidement deux documents pour voir les différences grâce aux marques de révision. Acceptez ou refusez les changements un par un ou tous à la fois. Fusionnez les modifications et enregistrez-les comme une nouvelle version du document comparé.",
+
+  "Feature8Title": "Démultipliez vos capacités d'édition",
+  "Feature8Desc": "Tirez le meilleur parti possible de votre éditeur Word en ligne grâce à une grande collection de modules tiers. Insérez une vidéo YouTube, ajoutez des symboles spéciaux, traduisez n'importe quel mot ou phrase, modifiez les images directement dans votre document, et plus encore...",
+
+  "LearnMoreHeading": "En savoir plus sur l’éditeur de documents texte ONLYOFFICE",
+  "BlogDesc": "Comment incorporer des documents Word en HTML",
+  "TutorialsDesc": "Ajouter une nouvelle police à ONLYOFFICE Docs",
+  "HintsDesc": "Formats pris en charge des documents texte électroniques",
+
+  "HeroImgUrl": "/images/templates/document-editor/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/document-editor/hero/fr/hero@2x.png",
+
+  "Feature1ImgUrl": "/images/templates/document-editor/features/fr/screen1.png",
+  "Feature1ImgUrl2x": "/images/templates/document-editor/features/fr/screen1@2x.png",
+  "Feature2ImgUrl": "/images/templates/document-editor/features/fr/screen2.png",
+  "Feature2ImgUrl2x": "/images/templates/document-editor/features/fr/screen2@2x.png",
+  "Feature3ImgUrl": "/images/templates/document-editor/features/fr/screen3.png",
+  "Feature3ImgUrl2x": "/images/templates/document-editor/features/fr/screen3@2x.png",
+  "Feature4ImgUrl": "/images/templates/document-editor/features/fr/screen4.png",
+  "Feature4ImgUrl2x": "/images/templates/document-editor/features/fr/screen4@2x.png",
+  "Feature5ImgUrl": "/images/templates/document-editor/features/fr/screen5.png",
+  "Feature5ImgUrl2x": "/images/templates/document-editor/features/fr/screen5@2x.png",
+  "Feature6ImgUrl": "/images/templates/document-editor/features/fr/screen6.png",
+  "Feature6ImgUrl2x": "/images/templates/document-editor/features/fr/screen6@2x.png",
+  "Feature7ImgUrl": "/images/templates/document-editor/features/fr/screen7.png",
+  "Feature7ImgUrl2x": "/images/templates/document-editor/features/fr/screen7@2x.png",
+  "Feature8ImgUrl": "/images/templates/document-editor/features/fr/screen8.png",
+  "Feature8ImgUrl2x": "/images/templates/document-editor/features/fr/screen8@2x.png",
+
+  "BlogLink": "https://www.onlyoffice.com/blog/fr/2022/07/comment-inserer-un-document-word-dans-html/",
+  "TutorialsLink": "https://helpcenter.onlyoffice.com/fr/installation/docs-community-install-fonts-linux.aspx",
+  "HintsLink": "https://helpcenter.onlyoffice.com/fr/userguides/docs-de.aspx",
+
+  "Q1": "Puis-je éditer des documents texte sans connexion Internet ?",
+  "A1": "Oui, vous pouvez installer et utiliser gratuitement <0>ONLYOFFICE Desktop Editors</0> pour éditer des documents locaux hors connexion.",
+  "Q2": "ONLYOFFICE propose-t-il des applications mobiles natives pour l'édition de documents ?",
+  "A2": "Oui, vous pouvez installer l'application gratuite <0>Documents</0> pour les appareils iOS ou Android afin de travailler sur des documents en déplacement.",
+  "Q3": "Est-il possible d'utiliser l'éditeur de documents ONLYOFFICE dans mon application sous ma marque ?",
+  "A3": "Oui, vous pouvez intégrer l'éditeur de documents dans votre application. Veuillez utiliser <0>ONLYOFFICE Docs Developer</0>."
 }

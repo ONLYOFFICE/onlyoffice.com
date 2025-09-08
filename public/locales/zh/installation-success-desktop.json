@@ -1,0 +1,37 @@
+{
+  "PageTitle": "感谢您安装ONLYOFFICE！",
+  "PageDescription": "ONLYOFFICE Features. Use online document editors, options on document management, project management, Gantt Chart, crm system, business collaboration, calendar.",
+
+  "HeroTitle": "感谢您选择<0>ONLYOFFICE 桌面编辑器</0>!",
+  "HeroSubTitle": "欢迎您加入我们的 ONLYOFFICE 快乐用户社区。",
+
+  "EditingCapabilities": "使用 ONLYOFFICE 桌面编辑器，解锁海量功能：",
+  "OpenCreateEdit": "<0>打开、创建和编辑</0>文档、表格、幻灯片、PDF 文件",
+  "StylingFormattingTools": "使用大量便捷的<0>样式和格式工具</0>",
+  "CollaborateOnDocs": "在云平台内<0>协作处理文档</0>",
+  "CreateFillOut": "<0>创建并填写</0>可填写的 PDF 表单",
+  "ProtectDocs": "使用密码、水印或数字签名<0>保护文档</0>",
+
+  "StayTuned": "敬请关注",
+  "StayTunedSubTitle": "订阅新闻通讯即可收到应用提示、更新和特别优惠！",
+  "StayTunedText": "*点击订阅，即表示您同意<0>使用该服务</0>和<1>处理个人数据</1>的条款。",
+
+  "Placeholder": "输入您的电子邮件地址",
+  "Subscribe": "订阅",
+  "EmailIsEmpty": "电子邮箱为空",
+  "EmailIsIncorrect": "电子邮箱错误",
+  "ThankYouForSubscribing": "感谢您的订阅！检查你的电子邮件。",
+
+  "ExploreOOSolutions": "探索 ONLYOFFICE 解决方案",
+  "Cloud": "云",
+  "ConnectToYourCloud": "连接到您的云",
+  "MobileOffice": "移动办公套件",
+  "DownloadMobileOffice": "下载移动办公套件",
+  "OODocSpace": "ONLYOFFICE 协作空间",
+  "TryDocSpace": "立即试试 ONLYOFFICE 协作空间",
+
+  "UsefulLinks": "相关链接",
+  "ReadBlog": "<0>阅读博客</0>获取提示和最新消息",
+  "LearnMore": "<0>了解更多</0>有关 ONLYOFFICE 文档的信息",
+  "ContactUs": "有问题或建议？请联系我们：<0>info@onlyoffice.com</0>"
+}

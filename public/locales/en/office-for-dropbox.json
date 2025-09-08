@@ -5,6 +5,8 @@
   "FreeOnlineOfficeForDropbox": "Online office for <0>Dropbox</0>",
   "EditOfficeFilesRightInDropbox": "Edit office files right in Dropbox using the complete feature set of ONLYOFFICE Docs.",
   "GetFreeApp": "Get free App",
+  "HeroImgUrl": "/images/templates/office-for-dropbox/hero/dropbox_header.png",
+  "HeroImgUrl2x": "/images/templates/office-for-dropbox/hero/dropbox_header@2x.png",
 
   "WorkOnOfficeDocumentsStored": "Work on office documents stored in Dropbox",
   "DocumentsTab1Label": "View and edit text documents, spreadsheets, presentations",
@@ -40,6 +42,7 @@
   "HowToStartStep4": "Access the context menu of the required file.",
   "HowToStartStep5": "Click Open in -> ONLYOFFICE Docs.",
   "ExploreMoreDetails": "Explore more details in <0>this guide</0>.",
+  "ExploreMoreDetailsLink": "https://www.onlyoffice.com/blog/2023/11/new-integration-available-onlyoffice-docs-and-dropbox",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
 }

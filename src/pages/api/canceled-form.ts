@@ -90,13 +90,15 @@ export default async function handler(
 
     const selectedData = dataByTable[table_name];
 
-    await db.query(`INSERT INTO ${table_name} SET ?`, [selectedData]);
+    await db.teamlabsite.query(`INSERT INTO ${table_name} SET ?`, [
+      selectedData,
+    ]);
 
     const transporter = emailTransporter();
     const to =
       table_name === "desktop_uninstalled_request"
-        ? process.env.DESKTOP_UNINSTALLED_NOTIFICATION_EMAIL
-        : process.env.INSTALL_CANCELED_NOTIFICATION_EMAIL;
+        ? [process.env.FEEDBACK_EMAIL!]
+        : [process.env.FEEDBACK_EMAIL!, process.env.SUPPORT_EMAIL!];
 
     await transporter.sendMail({
       from: process.env.SALES_EMAIL!,
@@ -116,7 +118,7 @@ export default async function handler(
       message: "InstallCanceledRequestSuccessful",
     });
   } catch (error) {
-    console.error("Error saving rating:", error);
+    console.error("Install canceled error:", error);
     res.status(500).json({ status: "error", message: "Internal Server Error" });
   }
 }

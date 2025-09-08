@@ -1,0 +1,34 @@
+{
+  "PageTitle": "Editeurs en ligne pour SuiteCRM | ONLYOFFICE",
+  "PageDescription": "Travaillez avec des fichiers bureautiques dans le module Documents de SuiteCRM en utilisant ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Suite bureautique en ligne pour <0>SuiteCRM</0>",
+  "Subheader": "Travaillez avec des fichiers bureautiques dans le module Documents de SuiteCRM en utilisant ONLYOFFICE Docs",
+  "GetStarted": "Démarrer",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Complètement compatible avec les formats docx, xlsx et pptx",
+
+  "MarketplaceConnectorTitle": "Conçue pour une intégration transparente avec SuiteCRM",
+  "MarketplaceConnectorDescription": "Téléchargez le connecteur ONLYOFFICE pour SuiteCRM dès maintenant depuis <0>GitHub</0>.",
+  "GetItNow": "Obtenir maintenant",
+
+  "WhyOO": "Pourquoi ONLYOFFICE Docs Cloud",
+  "WhySubheader": "ONLYOFFICE Docs Cloud est une suite bureautique professionnelle pour travailler avec des documents texte, des feuilles de calcul, des présentations, des formulaires et des fichiers PDF.",
+  "Reason1": "Connecteurs <0>prêts à l'emploi</0>",
+  "Reason2": "<0>Édition et co-écriture de fichiers bureautiques</0> directement dans le module Documents de SuiteCRM",
+  "Reason3": "<0>Collaboration en temps réel</0>, suivi des modifications, commentaires, chat",
+  "Reason4": "Interface <0>intuitive</0> avec onglets",
+  "Reason5": "Outils <0>multiples</0> d'édition, de formatage et de stylisme",
+  "Reason6": "<0>Protection de JWT</0> contre les accès non autorisés",
+  "Reason7": "<0>Aucune installation n'est requise</0>. Configuration rapide.",
+  "Reason8": "<0>Code source ouvert</0> disponible sur GitHub",
+
+  "HowToStart": "Comment commencer",
+  "HowToStartStep1": "Déployez <0>ONLYOFFICE Docs</0> sur votre propre serveur ou créez un compte <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Téléchargez le connecteur ONLYOFFICE depuis <0>GitHub</0>.",
+  "HowToStartStep3": "Installez et configurez le connecteur.",
+
+  "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/suitecrm.aspx",
+
+  "NeedAnAppToConnect": "Besoin d'une appli pour connecter ONLYOFFICE Docs à votre service web préférentiel ? Ou en avez-vous développé une ?"
+}

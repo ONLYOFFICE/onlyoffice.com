@@ -12,11 +12,15 @@ export interface IDownloadButton {
     | "macos"
     | "app-store"
     | "google-play"
-    | "snap-store";
+    | "snap-store"
+    | "app-gallery"
+    | "apk";
   /** The URL to link to. */
   href: string;
   /** Specifies where to open the linked document. If `rel` is not provided, it will default to `"noopener noreferrer"`. */
   target?: "_self" | "_blank" | "_parent" | "_top";
+  /** If `true`, the link will be treated as a downloadable file. */
+  download?: boolean;
   /** Specifies the relationship between the current page and the linked page. */
   rel?: string;
   /** The title attribute. */

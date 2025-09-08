@@ -11,7 +11,7 @@ import { EditorsImageItem } from "./sub-components/EditorsImageItem/EditorsImage
 import { VideoModal } from "@src/components/modules/editors/EditorsFeatures/sub-components/VideoModal";
 import { useState } from "react";
 
-const EditorsFeatures = ({ items, buttons }: IEditorsFeatures) => {
+const EditorsFeatures = ({ items, buttons, className }: IEditorsFeatures) => {
   const { t } = useTranslation("Editors");
   const [isOpen, setIsOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState("");
@@ -20,6 +20,7 @@ const EditorsFeatures = ({ items, buttons }: IEditorsFeatures) => {
     <Section
       desktopSpacing={["112px", "124px"]}
       tabletSmallSpacing={["72px", "72px"]}
+      className={className}
     >
       <Container>
         <StyledRoomsFeaturesWrapper>
@@ -29,23 +30,30 @@ const EditorsFeatures = ({ items, buttons }: IEditorsFeatures) => {
               item={{
                 ...item,
                 position: { desktop: index % 2 === 1 ? "left" : "right" },
-                text: (
-                  <Trans
-                    t={t}
-                    components={[
-                      <span key={0} style={{ fontWeight: "bold" }} />,
-                      <span key={1} style={{ fontWeight: "bold", fontStyle: "italic" }} />,
-                      <span key={2} style={{ display: "block" }} />,
-                    ]}
-                  >
-                    {item.text}
-                  </Trans>
-                ),
+                text:
+                  typeof item.text !== "string" ? (
+                    item.text
+                  ) : (
+                    <Trans
+                      t={t}
+                      components={[
+                        <span key={0} style={{ fontWeight: "bold" }} />,
+                        <span
+                          key={1}
+                          style={{ fontWeight: "bold", fontStyle: "italic" }}
+                        />,
+                        <span key={2} style={{ display: "block" }} />,
+                      ]}
+                    >
+                      {item.text}
+                    </Trans>
+                  ),
               }}
               openVideo={(url) => {
                 setVideoUrl(url);
                 setIsOpen(true);
               }}
+              className={className}
             />
           ))}
           {buttons && (

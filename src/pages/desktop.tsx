@@ -23,7 +23,7 @@ const DesktopPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <DesktopTemplate />
+        <DesktopTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />
@@ -35,7 +35,11 @@ const DesktopPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "desktop"])),
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "desktop",
+        "DownloadButton",
+      ])),
       locale,
     },
   };

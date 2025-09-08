@@ -378,7 +378,7 @@ export const CommentsPanel = ({ connector }: ICommentsPanel) => {
   };
 
   return (
-    <StyledCommentsPanel $addMode={addMode} $replyMode={replyMode}>
+    <StyledCommentsPanel $addMode={addMode} $replyMode={replyMode} >
       <div className="examples_block ec-working-with-comments">
         <Heading level={3} size={4} label={t("WorkingWithComments")} />
         <Heading level={4} size={5} label={t("CollectsAllTheCommentsFrom")} />

@@ -51,7 +51,7 @@ const Improve = () => {
               }
               link={{
                 label: t(item.link.label),
-                href: item.link.href,
+                href: t(item.link.href)
               }}
             />
           ))}
@@ -63,7 +63,7 @@ const Improve = () => {
             i18nKey="SocialMediaText"
             components={[
               <Link
-                href="https://www.onlyoffice.com/blog"
+                href={t("BlogLink")}
                 color="main"
                 textUnderline
                 hover="underline-none"

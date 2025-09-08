@@ -1,0 +1,50 @@
+{
+  "PageTitle": "Pipedrive 用オンラインオフィス",
+  "PageDescription": "Pipedrive Deals 内でオフィス文書を使用",
+
+  "OnlineOfficeForConnector": "Pipedrive 用オンラインオフィス",
+  "Subheader": "Pipedrive Deals 内でオフィス文書を使用",
+  "GetStarted": "スタートアップ",
+  "ScheduleFreeDemo": "無料デモを予約",
+
+  "DocspaceAppTitle": "Pipedrive用ONLYOFFICE <0>DocSpace アプリ</0>",
+  "New": "最新",
+  "DocspaceAppHeader": "案件のドキュメントを共同作業するための環境を作成",
+  "DocspaceAppTab1Label": "Pipedriveの案件から直接、ドキュメント共同作業用のDocSpaceルームを簡単に作成できます。",
+  "DocspaceAppTab2Label": "アクセス権限を同期できます。",
+  "DocspaceAppTab3Label": "すべての案件データを1か所に保存します。",
+  "DocspaceAppTab4Label": "ドキュメント、スプレッドシート、スライド、フォーム、PDFの編集と共同作業を行います。メディアファイルを閲覧します。",
+
+  "MarketplaceConnectorTitle": "Pipedriveとのシームレスな統合を目指した設計",
+  "MarketplaceConnectorDescription": "PipedriveマーケットプレイスからPipedrive用ONLYOFFICEアプリを今すぐ入手しましょう。",
+
+  "DocsAppTitle": "Pipedrive用ONLYOFFICE <0>Docsアプリ</0>",
+  "DocsAppHeader": "Pipedriveインターフェース内でオフィス文書の編集と共同執筆を行う",
+  "DocsAppTab1Label": "テキスト文書、スプレッドシート、プレゼンテーションをPipedriveに作成またはアップロード。",
+  "DocsAppTab2Label": "Pipedrive取引に添付されたオフィス文書の表示と編集。",
+  "DocsAppTab3Label": "リアルタイムで同僚とドキュメントを共著し、変更を追跡し、コメントを残し、チャットできます。",
+
+  "WhyOO": "ONLYOFFICEを選ぶ理由",
+  "Reason1": "<0>50以上のファイル形式</0>をサポートし、MS Office形式と完全互換： docx、xlsx、pptx。",
+  "Reason2": "リアルタイムで段落ロックされた<0>共同編集</0>、レビュー、バージョン履歴、文書比較、コメント＆チャット。音声通話とビデオ通話。",
+  "Reason3": "無料のコミュニティ版とスケーラブルなエンタープライズ版。<0>30日間の無料トライアル</0>。クラウド版との統合。",
+  "Reason4": "編集、フォーマット、スタイリングツールの強力なセット。統合された<0>AIヘルパー</0>。",
+  "Reason5": "Pipedriveマーケットプレイスからの<0>簡単インストールと</0>迅速な設定。",
+  "Reason6": "<0>セキュリティ強化</0>。柔軟なアクセス権とJWT オープンソースコード。データを完全にコントロールするためのセルフホストソリューション。",
+
+  "HowToStart": "開始方法",
+
+  "HowToStartStep1Docspace": "ONLYOFFICE DocSpaceアカウントにログインするか、<0>新規アカウントの登録</0>から始めます。",
+  "HowToStartStep2Docspace": "<0>Pipedrive Marketplace</0>からアプリをインストールし、必要な権限を許可します。",
+  "HowToStartStep3Docspace": "PipedriveとONLYOFFICEのアクセス設定を構成します。",
+
+  "HowToStartStep1Docs": "<0>ONLYOFFICE Docs</0>をご自身のサーバーに導入するか、<1>ONLYOFFICE Docs Cloud</1>をご契約ください。",
+  "HowToStartStep2Docs": "<0>Pipedrive Marketplace</0>から統合アプリをインストールします。",
+  "HowToStartStep3Docs": "統合されたインスタンスを設定します。",
+  "ReadDetailedInstructions": "Pipedriveとの統合に関する便利なガイドを<0>GitHub</0>または<1>ヘルプセンター</1>でご確認ください。",
+
+  "PartnerHeading": "Pipedriveパートナーですか？Pipedriveユーザーエクスペリエンスを向上させ、収益を増やしませんか？",
+  "PartnerText": "今すぐONLYOFFICEパートナーシッププログラムに参加しましょう。",
+
+  "NeedAnAppToConnect": "ONLYOFFICEとお気に入りのウェブサービスをつなぐアプリが必要ですか？または開発済みですか？"
+}

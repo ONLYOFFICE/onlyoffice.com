@@ -33,6 +33,7 @@
   "HowToStartStep3": "Configure the connector and enable JWT.",
 
   "ReadDetailedInstructions": "Check <0>useful guides</0> on Plone integration.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/plone.aspx",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
 }

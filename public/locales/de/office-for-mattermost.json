@@ -1,4 +1,12 @@
 {
+  "PageTitle": "Online-Office-Suite für Mattermost | ONLYOFFICE Docs",
+  "PageDescription": "Bearbeiten Sie Dokumente gemeinsam innerhalb Mattermost",
+
+  "OnlineOfficeForConnector": "Online-Office für <0>Mattermost</0>",
+  "Subheader": "Öffnen und bearbeiten Sie Office-Dokumente gemeinsam in Mattermost mit ONLYOFFICE Docs",
+  "GetItNow": "Jetzt erhalten",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Volle Kompatibilität mit DOCX, XLSX und PPTX",
+
   "HeroTab1ImgUrl": "/images/templates/office-for-mattermost/hero/de/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-mattermost/hero/de/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-mattermost/hero/de/screen2.png",
@@ -10,5 +18,29 @@
   "HeroTab5ImgUrl": "/images/templates/office-for-mattermost/hero/de/screen5.png",
   "HeroTab5ImgUrl2x": "/images/templates/office-for-mattermost/hero/de/screen5@2x.png",
   "HeroTab6ImgUrl": "/images/templates/office-for-mattermost/hero/de/screen6.png",
-  "HeroTab6ImgUrl2x": "/images/templates/office-for-mattermost/hero/de/screen6@2x.png"
+  "HeroTab6ImgUrl2x": "/images/templates/office-for-mattermost/hero/de/screen6@2x.png",
+
+  "GetStarted": "Los geht's!",
+
+  "MarketplaceConnectorTitle": "Entwickelt für die nahtlose Integration mit Mattermost",
+  "MarketplaceConnectorDescription": "Erhalten Sie jetzt den ONLYOFFICE-Konnektor für Mattermost vonr <0>GitHub</0>.",
+
+  "WhyOO": "Das spricht für ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs ist eine selbst gehostete Office-Lösung für die Bearbeitung von Textdokumenten, Tabellen und Präsentationen.",
+  "Reason1": "Gebrauchsfertiger Konnektor und schnelle Konfiguration",
+  "Reason2": "Intuitive Benutzeroberfläche mit Registerkarten",
+  "Reason3": "Zahlreiche Tools für Bearbeitung und Formatierung",
+  "Reason4": "Zusammenarbeit in Echtzeit, Freigabe von Dateien",
+  "Reason5": "Kostenlose Community-Version und skalierbare Enterprise-Version",
+  "Reason6": "Quellcode verfügbar auf GitHub",
+
+  "HowToStart": "Wie man beginnt",
+  "HowToStartStep1": "Stellen Sie <0>ONLYOFFICE Docs</0> auf Ihrem eigenen Server bereit oder erstellen Sie ein <1>Docs Cloud</1>-Konto.",
+  "HowToStartStep2": "Erhalten Sie den ONLYOFFICE-Konnektor von <0>GitHub</0>.",
+  "HowToStartStep3": "Konfigurieren Sie den Konnektor und aktivieren Sie JWT.",
+  "HowToStartImgUrl": "/images/templates/office-for-mattermost/how-to-start/how-to-start.png",
+
+  "ReadDetailedInstructions": "Detaillierte Anweisungen finden Sie im <0>Hilfe-Center</0>",
+
+  "NeedAnAppToConnect": "Benötigen Sie eine App, um ONLYOFFICE mit Ihren Lieblings-Webdiensten zu verbinden? Oder haben Sie eine neue entwickelt?"
 }

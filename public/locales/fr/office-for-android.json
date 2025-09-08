@@ -10,11 +10,8 @@
   "HeroLeftImageUrl": "/images/templates/office-for-android/hero/fr/header-phone.fr.png",
   "HeroLeftImageUrl2x": "/images/templates/office-for-android/hero/fr/header-phone.fr@2x.png",
 
-  "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.fr.png",
-  "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-fr.svg",
-
-  "OneAppForYourText": "Une seule application pour vos documents texte, feuilles de calcul, présentations, formulaires et fichiers multimédias.",
-  "CompatibleWithMSOffice": "Compatible à 100% avec les formats de MS Office",
+  "OneAppForYourText": "Une seule application pour vos documents texte, feuilles de calcul, présentations, formulaires et fichiers multimédias",
+  "CompatibleWithMSOffice": "Compatible à 100 % avec les formats de MS Office",
 
   "AnOptionToConsider": "Une option à considérer si vous cherchez des alternatives à Office ou Google Docs.",
   "EliesGuzman": "Elies Guzmán",
@@ -63,13 +60,13 @@
   "ChooseWhereToWork": "Choissisez où vous voulez travailler",
 
   "ChooseItemOnDevice": "Sur l'appareil",
-  "ChooseItemViewAndEdit": "Afficher et modifier les documents texte, les feuilles de calcul et les présentations. Gérez des PDF, des images et des fichiers vidéo sur votre appareil Android.",
+  "ChooseItemViewAndEdit": "Affichez et modifiez les documents texte, les feuilles de calcul et les présentations. Gérez des PDF, des images et des fichiers vidéo sur votre appareil Android.",
 
   "ChooseItemInOnlyOffice": "Dans ONLYOFFICE cloud",
   "ChooseItemLogInTo": "Connectez-vous à ONLYOFFICE cloud pour partager et collaborer sur les documents avec votre équipe en temps réel. Connectez Dropbox, Google Drive, Box et d'autres services de cloud aux documents co-édités qui y sont stockés.",
 
   "ChooseItemInYourCloud": "Dans le cloud de votre choix",
-  "ChooseItemConnectNextcloud": "Connectez Nextcloud, ownCloud, ou tout autre cloud fonctionnant via WebDAV. Gérez, visualisez et modifiez des documents directement à partir de l'application.",
+  "ChooseItemConnectNextcloud": "Connectez Nextcloud, ownCloud ou tout autre cloud fonctionnant via WebDAV. Gérez, visualisez et modifiez des documents directement à partir de l'application.",
 
   "ChooseItemFromOther": "Depuis d'autres applications",
   "ChooseItemImportDocuments": "Importez des documents depuis des applications comme iTunes, Fichiers et autres.",
@@ -83,16 +80,16 @@
 
   "LearnCardTitleRelease": "Nouveautés de mise à jour",
   "LearnMoreTextOnlyOfficeDocuments": "Documents ONLYOFFICE 5.5 avec mots de passe, remplissage de formes et améliorations de l'interface utilisateur",
-  "LearnMoreSubtitleRead": "Lees verhaal",
+  "LearnMoreSubtitleRead": "En savoir plus",
   "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/fr/2022/10/documents-onlyoffice-5-5-pour-android/",
 
   "LearnCardTitleTutorials": "Tutoriels",
   "LearnMoreTextCollaborative": "Édition collaborative de documents sur votre appareil Android",
-  "LearnMoreSubtitleLearn1": "Meer informatie",
+  "LearnMoreSubtitleLearn1": "Plus d'information",
   "LearnMoreUrlLink2": "https://helpcenter.onlyoffice.com/fr/mobile-applications/documents/android/android-de/tools-and-settings/collaborative-editing.aspx",
 
   "LearnCardTitleDeveloper": "Guide pour les développeurs",
   "LearnMoreTextHowMobile": "Comment fonctionne l'intégration mobile",
-  "LearnMoreSubtitleLearn2": "Meer informatie",
+  "LearnMoreSubtitleLearn2": "Plus d'information",
   "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/fr/2022/07/onlyoffice-pour-les-developpeurs-comment-fonctionne-lintegration-mobile/"
 }

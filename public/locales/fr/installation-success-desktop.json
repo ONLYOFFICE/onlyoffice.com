@@ -1,0 +1,37 @@
+{
+  "PageTitle": "Merci d'avoir installé ONLYOFFICE!",
+  "PageDescription": "ONLYOFFICE Features. Use online document editors, options on document management, project management, Gantt Chart, crm system, business collaboration, calendar.",
+
+  "HeroTitle": "Merci d'avoir choisi <0>ONLYOFFICE Desktop Editors</0> !",
+  "HeroSubTitle": "Nous sommes heureux de vous accueillir dans notre communauté d'utilisateurs satisfaits d'ONLYOFFICE.",
+
+  "EditingCapabilities": "Avec ONLYOFFICE Desktop Editors, vos possibilités d'édition sont infinies :",
+  "OpenCreateEdit": "<0>Ouvrez, créez et modifiez</0> des documents texte, feuilles de calcul, diapositives, fichiers PDF",
+  "StylingFormattingTools": "Utilisez de nombreux <0>outils de style et de mise en forme pratiques</0>",
+  "CollaborateOnDocs": "<0>Collaborez sur des documents</0> au sein de votre plateforme cloud",
+  "CreateFillOut": "<0>Créez et remplissez</0> des formulaires PDF à remplir",
+  "ProtectDocs": "<0>Protégez vos documents</0> avec un mot de passe, un filigrane ou une signature numérique.",
+
+  "StayTuned": "Restez à l'écoute",
+  "StayTunedSubTitle": "Inscrivez-vous à la newsletter pour recevoir des conseils sur les applications, des mises à jour et des offres spéciales !",
+  "StayTunedText": "*En cliquant sur « S'abonner », vous acceptez les <0>règles d'utilisation du service</0> et <1>de traitement des données personnelles</1>.",
+
+  "Placeholder": "Saisissez votre adresse e-mail",
+  "Subscribe": "S'abonner",
+  "EmailIsEmpty": "Le champ Email est vide",
+  "EmailIsIncorrect": "L'adresse email est incorrecte",
+  "ThankYouForSubscribing": "Merci pour votre abonnement ! Vérifiez votre e-mail.",
+
+  "ExploreOOSolutions": "Découvrez les solutions ONLYOFFICE",
+  "Cloud": "Cloud",
+  "ConnectToYourCloud": "Se connecter à votre cloud",
+  "MobileOffice": "Bureau mobile",
+  "DownloadMobileOffice": "Télécharger le bureau mobile",
+  "OODocSpace": "ONLYOFFICE DocSpace",
+  "TryDocSpace": "Essayer ONLYOFFICE DocSpace",
+
+  "UsefulLinks": "Liens utiles",
+  "ReadBlog": "<0>Lire le blog</0> pour des conseils et les dernières nouvelles",
+  "LearnMore": "<0>En savoir plus</0> sur ONLYOFFICE Docs",
+  "ContactUs": "Vous avez une question ou une suggestion ? Contactez-nous à <0>info@onlyoffice.com</0>"
+}

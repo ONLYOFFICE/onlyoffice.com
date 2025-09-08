@@ -1,0 +1,39 @@
+{
+  "PageTitle": "Editor de hojas de cálculo online  | ONLYOFFICE",
+  "PageDescription": "Programa para abrir Excel online y editar una hoja de cálculo online. Usa esta alternativa a Microsoft Excel para abrir xlsx, realizar un analisis de datos en Excel y hacer cálculos online.",
+
+  "Header": "Potente editor de hojas de cálculo en línea para tu aplicación web",
+  "SubHeader": "El mejor software para abrir y editar Excel online",
+
+  "Feature1Title": "Haz números trabajar para ti",
+  "Feature1Desc": "Facilita y automatiza tus cálculos en línea, manten tus datos organizados y analizados con el Editor de Hojas de Cálculo de ONLYOFFICE. Abre y edita archivos .xlsx, .xls, .ods y .csv, guarda hojas de cálculo como PDF.",
+  "Feature2Title": "Realiza cálculos precisos con esfuerzos mínimos",
+  "Feature2Desc": "Consigue resultados rápidos y precisos eligiendo entre más de 400 funciones y fórmulas disponibles y utilizando consejos especiales de sintaxis. Aplica plantillas de tabla, usa rangos con nombres, ordena y filtra datos para simplificar tu trabajo con una hója de cálculo online. Encuentra el contenido necesario rápidamente y reemplázalo por uno nuevo en un clic utilizando esta alternativa a Microsoft Excel online.",
+  "Feature3Title": "Analiza fácilmente los datos de Excel online",
+  "Feature3Desc": "Analiza los datos y encuentra patrones utilizando las tablas pivote y el formato condicional. Filtra rápidamente los datos o indica el estado de filtrado actual para ver qué datos se muestran añadiendo segmentaciones de datos a las tablas con formato. Elimina los valores y filas duplicados para que tus cálculos sean más precisos.",
+  "Feature4Title": "Ilustra los datos con materiales visuales",
+  "Feature4Desc": "Añade diagramas, minigráficos y gráficos. Inserta ecuaciones, formas e imágenes, y utiliza Text Art, gráficos SmartArt o vídeos de YouTube para presentar y visualizar datos. Haz tus propios dibujos a mano alzada con un bolígrafo o rotulador.",
+  "Feature5Title": "Reúne los esfuerzos de tu equipo",
+  "Feature5Desc": "ONLYOFFICE te permite abrir Excel online para trabajar en informes de negocios e inventarios de existencias en colaboración con tu equipo. Accede y comparte hojas de cálculo o incluso enlaces a intervalos específicos, coedítalos en tiempo real, deja comentarios en las celdas y chatea con los colaboradores en línea sin salir del editor. Deja que otros usuarios apliquen sus propios filtros mientras editan una hoja de cálculo sin molestar a los coautores. Navega por el historial de versiones y restaura cualquier versión anterior del archivo.",
+  "Feature6Title": "Protege tus hojas de cálculo",
+  "Feature6Desc": "Establece una contraseña para toda la hoja de cálculo, un libro o una hoja separada. Oculta las fórmulas para mantenerlas privadas. Bloquea celdas, formas y texto. Permite la edición de rangos de datos solo para los usuarios especificados.",
+  "Feature7Title": "Automatiza tus tareas con macros",
+  "Feature7Desc": "Facilita tu trabajo con las hojas de cálculo. Crea tus propias macros usando la sintaxis del lenguaje JavaScript, edítalas y guárdalas para automatizar tareas comunes y repetitivas. Haz que las macros se ejecuten automáticamente o restringe su autoinicio.",
+  "Feature8Title": "Utiliza el ayudante de IA",
+  "Feature8Desc": "Realiza tareas que impliquen la comprensión o generación de lenguaje natural utilizando el plugin de ChatGPT. Obtén respuestas precisas a tus preguntas, encuentra información rápidamente, genera textos, crea tu código, etc. directamente en el editor.",
+  "Feature9Title": "Haz aún más con addons",
+  "Feature9Desc": "Extiende las capacidades de edición de hojas de cálculo con addons. Inserta símbolos especiales, obten una traducción rápida de cualquier texto y más.",
+
+  "LearnMoreHeading": "Más información sobre el Editor de hojas de cálculo de ONLYOFFICE",
+  "BlogDesc": "Todo sobre la vista previa de impresión en las hojas de Excel",
+  "BlogLink": "https://www.onlyoffice.com/blog/es/2022/06/vista-preliminar-en-excel",
+  "TutorialsDesc": "La coedición de hojas de cálculo en tiempo real",
+  "HintsDesc": "Formatos compatibles con las hojas de cálculo",
+
+  "Q1": "¿Puedo editar hojas de cálculo sin conexión a Internet?",
+  "A1": "Sí, puedes instalar y utilizar gratis <0>ONLYOFFICE Desktop Editors</0> para editar hojas de cálculo locales sin conexión.",
+  "Q2": "¿Ofrece ONLYOFFICE aplicaciones móviles nativas para editar hojas de cálculo?",
+  "A2": "Sí, puedes instalar gratis la aplicación <0>Documents</0> para dispositivos iOS o Android para trabajar en hojas de cálculo sobre la marcha.",
+  "Q3": "¿Es posible usar el editor de hojas de cálculo de ONLYOFFICE dentro de mi aplicación bajo mi marca?",
+  "A3": "Sí, puedes integrar el editor de hojas de cálculo en tu aplicación. Por favor, utiliza <0>ONLYOFFICE Docs Developer</0>."
+}

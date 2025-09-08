@@ -76,7 +76,7 @@ export async function getServerSideProps({
 
   if (epkey && eskey) {
     const validateKeysData = await validateKeys({
-      epkey,
+      epkey: epkey.slice(0, -1),
       eskey,
       page: `reg_page_${eskey}`,
     });

@@ -53,12 +53,13 @@
   "GetStarted": "Get started",
 
   "HowToStart": "How to start",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</2>.",
+  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Get the integration app from the <0>ownCloud marketplace</0>.",
   "HowToStartStep3": "Configure the integration app.",
   "HowToStartStep3ImgUrl": "/images/templates/office-for-owncloud/how-to-start/step-3.svg",
   "HowToConnect": "Configuring ONLYOFFICE connector for ownCloud",
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/owncloud.aspx",
 
   "PartnerHeading": "Are you an ownCloud partner? How about improving your ownCloud user experience and increasing your revenue?",
   "PartnerText": "Join the ONLYOFFICE partnership program right now.",

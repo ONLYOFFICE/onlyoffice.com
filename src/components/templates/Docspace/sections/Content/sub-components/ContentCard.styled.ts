@@ -31,17 +31,18 @@ const StyledCard = styled.div`
   }
 `;
 
-const StyledCardBody = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+const StyledCardBody = styled.div<{ $locale?: string }>`
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  height: 100%;
   border-radius: 5px;
-  padding: 40px 30px;
+  padding: ${({ $locale }) => ($locale === "de" ? "24px 15px" : "40px 30px")};
   background-color: #ffffff;
   text-decoration: none;
   color: inherit;
   text-align: center;
+  word-break: break-word;
 
   &:hover {
     box-shadow: 0px 20px 50px rgba(85, 85, 85, 0.15);

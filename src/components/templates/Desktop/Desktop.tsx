@@ -7,8 +7,10 @@ import { IntegrationsBlock } from "./sections/IntegrationsBlock";
 import { DoEvenMore } from "./sections/DoEvenMore";
 import { DocumentEncryption } from "./sections/DocumentEncryption";
 import { Quotes } from "./sections/Quotes";
+import { getLink } from "@src/utils/getLink";
+import { ILocale } from "@src/types/locale";
 
-const DesktopTemplate = () => {
+const DesktopTemplate = ({ locale }: ILocale) => {
   return (
     <>
       <Hero />
@@ -20,20 +22,34 @@ const DesktopTemplate = () => {
         title="CollaborationTitle"
         description="CollaborationDescription"
       />
-      <Quotes image="/images/templates/desktop/quotes/softpedia.svg" title="Softpedia" description="SoftpediaQuote" link="https://www.softpedia.com/reviews/onlyoffice-desktop-editors-review/" />
+      <Quotes
+        image="/images/templates/desktop/quotes/softpedia.svg"
+        title="Softpedia"
+        description="SoftpediaQuote"
+        link="https://mac.softpedia.com/get/Word-Processing/ONLYOFFICE.shtml,"
+      />
       <DocumentEncryption />
-      <Quotes image="/images/templates/desktop/quotes/softlay.svg" title="Softlay" description="SoftlayQuote" link="https://www.softlay.com/reviews/onlyoffice-desktop-editors-review/" />
+      <Quotes
+        image="/images/templates/desktop/quotes/softlay.svg"
+        title="Softlay"
+        description="SoftlayQuote"
+        link="https://www.softlay.com/downloads/onlyoffice"
+      />
       <IntegrationsBlock
         image="AIImgUrl"
         image2x="AIImgUrl2x"
         title="AITitle"
         description="AIDescription"
+        linkHref="/ai-assistants"
+        linkText="LearnMore"
       />
       <IntegrationsBlock
         image="CapabilitiesImgUrl"
         image2x="CapabilitiesImgUrl2x"
         title="CapabilitiesTitle"
         description="CapabilitiesDescription"
+        linkHref={getLink("marketplace", locale)}
+        linkText="FindPlugins"
       />
 
       <DoEvenMore />

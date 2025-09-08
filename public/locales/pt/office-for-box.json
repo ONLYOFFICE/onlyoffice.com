@@ -1,0 +1,37 @@
+{
+  "PageTitle": "Trabalhe facilmente com arquivos do Office diretamente no seu Box",
+  "PageDescription": "Usando o ONLYOFFICE Docs Cloud integrado",
+
+  "FreeOnlineOfficeForBox": "Office on-line gratuito para o Box",
+  "OpenAndEditWithinBox": "Abra e edite documentos, planilhas, apresentações e PDFs no Box usando o ONLYOFFICE Docs Cloud integrado",
+  "GetItNow": "Começar agora",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Totalmente compatível com docx, xlsx e pptx",
+
+  "EditAndCoAuthorOfficeDocuments": "Edite e seja coautor de documentos do Office na interface do Box",
+  "DocumentsTab1Label": "Abra e edite documentos do Office armazenados em seu armazenamento Box",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-box/documents/screenshot1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-box/documents/screenshot1@2x.png",
+  "DocumentsTab2Label": "Coautoria de documentos com vários usuários em tempo real ou no modo de bloqueio de parágrafo",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-box/documents/screenshot2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-box/documents/screenshot2@2x.png",
+
+  "MarketplaceConnectorTitle": "Projetado para uma integração perfeita com o Box",
+  "MarketplaceConnectorDescription": "Obtenha o aplicativo ONLYOFFICE para Box agora no Box App Center.",
+  "GetStarted": "Começar",
+
+  "WhyOO": "Por que ONLYOFFICE?",
+  "FeaturesWorking": "<0>Trabalho</0> com arquivos do Office diretamente no front-end do Box.",
+  "FeaturesFormats": "Suporte para mais de <0>50 formatos de arquivo</0>, totalmente compatível com os formatos do MS Office: DOCX, XLSX, PPTX.",
+  "FeaturesAIHelper": "Um conjunto robusto de ferramentas de edição, formatação e estilo.",
+  "FeaturesWorkingCoEditing": "Coedição em tempo real e com <0>bloqueio de parágrafo</0>, revisão, histórico de versões, comparação de documentos, comentários e bate-papo.",
+  "FeaturesFreeApp": "<0>Aplicativo gratuito</0> disponível no Box App Center. Não é necessária nenhuma configuração adicional.",
+
+  "HowToStart": "Como começar",
+  "HowToStartStep1": "Faça login na sua conta Box.",
+  "HowToStartStep2": "Vá para o <0>Box App Center</0>.",
+  "HowToStartStep3": "Adicione o aplicativo ONLYOFFICE*.",
+  "CheckDetailedInstructions": "Verifique as instruções detalhadas na <0>Central de Ajuda</0>.",
+  "TheAppUsesThePreConfiguredTenant": "*O aplicativo usa o locatário pré-configurado do <0>ONLYOFFICE Docs Cloud</0> e não requer nenhuma configuração adicional.",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço web favorito? Ou você desenvolveu um?"
+}

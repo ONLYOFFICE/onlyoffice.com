@@ -1,0 +1,31 @@
+{
+  "PageTitle": "在线演示文稿编辑软件 | ONLYOFFICE",
+  "PageDescription": "在线演示文稿工具。适用于PowerPoint演示文稿：pptx、ppt、odp。在线创建、编辑和协作处理。",
+
+  "Header": "打造直击人心的演示文稿",
+  "SubHeader": "创建具有丰富内容和出色设计的交互式演示文稿。",
+
+  "HeroImgUrl": "/images/templates/transition-effects/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/transition-effects/hero/zh/hero@2x.png",
+
+  "Feature1Title": "构建完美布局",
+  "Feature1Desc": "从多种幻灯片样式中选择。轻松管理并重新整理幻灯片。添加超链接、脚注以及具有高级对齐与换行选项的对齐元素。",
+
+  "Feature2Title": "撰写完美无瑕的文本",
+  "Feature2Desc": "编辑文本框并进行格式化，应用字体、样式和文本布局。借助Thesaurus检查拼写、查找同义词和反义词，使用可用的翻译插件将文本翻译为任何语言（Google Translate、DeepL或Apertium)。",
+
+  "Feature3Title": "插入方案和图形",
+  "Feature3Desc": "使用合适的视觉图形传递您的消息。创建并完全自定义图表、自选形状、表格和OLE电子表格、方程式和文本。用 SmartArt 图形展示您的想法。插入图像并使用照片编辑器进行编辑，可通过YouTube添加视频，还可使用高亮代码插件添加代码行。在项目符号列表中使用自定义图像作为项目符号。",
+
+  "Feature4Title": "为幻灯片添加切换效果",
+  "Feature4Desc": "通过在演示文稿中的添加幻灯片转场效果来持续吸引观众注意力：淡入淡出、推入、擦除、分割、揭开、覆盖、时钟或缩放。设置开始时机、持续时间以及延迟参数。",
+
+  "Feature1ImgUrl": "/images/templates/transition-effects/features/zh/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/transition-effects/features/zh/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/transition-effects/features/zh/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/transition-effects/features/zh/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/transition-effects/features/zh/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/transition-effects/features/zh/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/transition-effects/features/zh/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/transition-effects/features/zh/pic4@2x.png"
+}

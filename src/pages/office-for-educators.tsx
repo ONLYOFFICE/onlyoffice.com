@@ -23,7 +23,7 @@ const OfficeForEducatorsPage = ({ locale }: ILocale) => {
         <Header locale={locale} />
       </Layout.Header>
       <Layout.Main>
-        <OfficeForEducatorsTemplate />
+        <OfficeForEducatorsTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

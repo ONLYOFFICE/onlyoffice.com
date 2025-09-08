@@ -1,0 +1,19 @@
+{
+  "PageTitle": "Tablas dinámicas y filtros en hojas de cálculo | ONLYOFFICE",
+  "PageDescription": "Visualiza los datos de todas y cada una de las tareas con tablas dinámicas y parámetros de filtrado y ordenación",
+
+  "Header": "Analiza fácilmente grandes cantidades de datos",
+  "SubHeader": "Visualiza tus datos para todas las tareas utilizando las tablas pivote, el filtrado y los parámetros de ordenación",
+
+  "Feature1Title": "Crea tablas pivote",
+  "Feature1Desc": "Ilustra brevemente los datos relevantes de tus hojas de trabajo con resúmenes. Cambia y reorganiza los campos de visualización, elige entre varios diseños y organiza los datos entre filtros, filas, columnas y valores.",
+
+  "Feature2Title": "Ajusta la apariencia y la configuración avanzada",
+  "Feature2Desc": "Adapta los resúmenes en la misma hoja de trabajo o en una nueva. Cambia los colores, los tamaños y los estilos, elige entre las formas de presentación de informes compactos, esquemas y tabulares y aplica los estilos existentes de las plantillas o crea otros nuevos.",
+
+  "Feature3Title": "Añade fácilmente filtros a las hojas de cálculo",
+  "Feature3Desc": "Ordena y filtra hojas y tablas pivote para crear la visualización más precisa de la información. Establece tus propias plantillas de filtrado. Comparte hojas con el permiso de Filtro Personalizado para que tus compañeros puedan añadir filtros de forma independiente en las hojas de cálculo de Excel. Crea vistas de hoja para poder navegar personalmente con tus propios filtros.",
+
+  "Feature4Title": "Aplica segmentaciones de datos para un filtrado rápido",
+  "Feature4Desc": "Añade segmentaciones de datos a las tablas pivote y a las tablas formateadas para filtrar rápidamente la información utilizando botones. Personaliza la apariencia, el tamaño y la posición de las segmentaciones de datos y configura los parámetros de ajuste de las celdas. Crea y organiza múltiples segmentaciones de datos en tus hojas."
+}
