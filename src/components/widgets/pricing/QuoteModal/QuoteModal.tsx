@@ -39,8 +39,12 @@ const QuoteModal = <T,>({
   onClose,
 }: IQuoteModal<T> & {
   apiRequest?: (params: IQuoteModalApiRequest) => Promise<IApiResponse>;
-  sendEmailRequest?: (params: IQuoteModalSendEmailRequest) => Promise<IApiResponse>;
-  pipedriveRequest?: (params: IQuoteModalPipedriveRequest) => Promise<IApiResponse>;
+  sendEmailRequest?: (
+    params: IQuoteModalSendEmailRequest,
+  ) => Promise<IApiResponse>;
+  pipedriveRequest?: (
+    params: IQuoteModalPipedriveRequest,
+  ) => Promise<IApiResponse>;
 }) => {
   const { t } = useTranslation("PricingQuoteModal");
   const from = getFromParam();
@@ -156,39 +160,39 @@ const QuoteModal = <T,>({
       const region = countryInfo?.salesRegion || "";
 
       let requestData;
-      
+
       if (apiRequest) {
         requestData = await apiRequest({
-          from: from || '',
+          from: from || "",
           country,
           region,
           utmSource: quoteFormData.utmSource,
           utmCampaign: quoteFormData.utmCampaign,
           utmContent: quoteFormData.utmContent,
-          utmTerm: quoteFormData.utmTerm
+          utmTerm: quoteFormData.utmTerm,
         });
       } else if (sendEmailRequest) {
         requestData = await sendEmailRequest({
           ...quoteFormData,
-          from: from || '',
+          from: from || "",
           country,
-          region
+          region,
         });
       } else if (pipedriveRequest) {
         requestData = await pipedriveRequest({
           ...quoteFormData,
-          from: from || '',
+          from: from || "",
           country,
-          region
+          region,
         });
       } else if (onSubmitRequest) {
         requestData = await onSubmitRequest({
           from,
           country,
-          region
+          region,
         });
       } else {
-        throw new Error('No request handler provided');
+        throw new Error("No request handler provided");
       }
 
       if (requestData.status === "success") {
@@ -325,6 +329,7 @@ const QuoteModal = <T,>({
                     ? "success"
                     : "default"
               }
+              required
             />
           )}
 
