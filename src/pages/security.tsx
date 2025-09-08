@@ -42,11 +42,7 @@ const SecurityPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        "common",
-        "security",
-        "FaqCollapse",
-      ])),
+      ...(await serverSideTranslations(locale, ["common", "security", "FaqCollapse"])),
       locale,
     },
   };

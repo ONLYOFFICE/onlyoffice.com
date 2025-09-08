@@ -18,6 +18,8 @@ declare module "onlyoffice-react-ui-kit/footer" {
       name: string;
       href: string;
     }[];
+    mailApiUrl: string;
+    mailApiType: "Common" | "AppServer" | "Opensource";
   }
 
   export const OOFooter: React.FC<IFooter>;
