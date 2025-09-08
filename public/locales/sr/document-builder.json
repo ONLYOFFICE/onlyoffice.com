@@ -1,7 +1,7 @@
 {
     "PageTitle": "Alat za generisanje teksta, tabela i PDF-a | ONLYOFFICE",
     "PageDescription": "ONLYOFFICE Dokument Builder - Omogućite svojoj aplikaciji da menja ili kreira dokumente u DOCX, XLSX, PPTX ili PDF formatu bez pokretanja Microsoft Office-a.",
-    
+
     "FrameworkForAdvanced": "Okvir za napredno procesiranje dokumenata",
     "CompatibleWithMicrosoft": "100% kompatibilan sa Microsoft Office formatima",
     "GetStarted": "Počnite",
@@ -25,7 +25,7 @@
     "C++": "<0>C++</0>",
     "COM": "<0>COM</0>",
     "PythonBold": "<0>Python</0>",
-    "ONLYOFFICEDocumentBuilderPart": "ONLYOFFICE Document Builder – part of ONLYOFFICE Docs Developer",
+    "ONLYOFFICEDocumentBuilderPart": "ONLYOFFICE Document Builder - deo ONLYOFFICE Docs razvojne platforme",
     "BringAdvancedDocument": "Donesite naprednu obradu dokumenata krajnjim korisnicima <0>pod sopstvenim brendom</0>.",
     "HaveAnyQuestions": "Imate li pitanja? Rado ćemo vam pomoći i razgovarati o svim detaljima.",
     "GetInTouch": "KONTAKTIRAJTE NAS",
