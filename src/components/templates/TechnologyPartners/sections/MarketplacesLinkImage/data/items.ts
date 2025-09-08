@@ -5,11 +5,11 @@ export const items: ILinkImage = {
     text: "CooperateWithUsOnAdding",
     links: [
         {
-            href: "https://www.onlyoffice.com/blog/2021/11/onlyoffice-docs-and-workspace-on-alibaba-cloud/",
+            href: "AlibabaLink",
             target: "_self"
         },
         {
-            href: "https://www.onlyoffice.com/blog/2021/11/onlyoffice-docs-and-workspace-on-alibaba-cloud/",
+            href: "OvhCloudLink",
             target: "_self"
         },
         {

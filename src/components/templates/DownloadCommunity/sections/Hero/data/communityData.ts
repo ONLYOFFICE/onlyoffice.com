@@ -30,8 +30,7 @@ export const communityProducts: IDownloadBlock[] = [
     license: "AGPLv3",
     sourceCodeOnGithubLink:
       "https://github.com/ONLYOFFICE/Docker-DocumentServer",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-docker.aspx",
+    readInstructionLink: "DockerImagecommunityProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_community_for_docker_image_intel",
@@ -68,8 +67,7 @@ export const communityProducts: IDownloadBlock[] = [
     releaseDate: documentServer.date,
     license: "AGPLv3",
     sourceCodeOnGithubLink: "https://github.com/ONLYOFFICE/DocumentServer",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-ubuntu.aspx",
+    readInstructionLink: "ForDebianUbuntucommunityProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_community_for_debian_ubuntu_and_derivatives_intel",
@@ -106,8 +104,7 @@ export const communityProducts: IDownloadBlock[] = [
     releaseDate: documentServer.date,
     license: "AGPLv3",
     sourceCodeOnGithubLink: "https://github.com/ONLYOFFICE/DocumentServer",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-centos.aspx",
+    readInstructionLink: "ForCentOScommunityProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_community_for_centos_rhel_and_derivatives_intel",
@@ -144,8 +141,7 @@ export const communityProducts: IDownloadBlock[] = [
     releaseDate: documentServer.date,
     license: "AGPLv3",
     sourceCodeOnGithubLink: "https://github.com/ONLYOFFICE/DocumentServer",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-windows.aspx",
+    readInstructionLink: "ForWindowsServer2012OrHighercommunityProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_community_for_windows_server_2012_or_higher",
@@ -174,8 +170,7 @@ export const communityProducts: IDownloadBlock[] = [
     releaseDate: snapPackage.date,
     license: "AGPLv3",
     sourceCodeOnGithubLink: "https://github.com/ONLYOFFICE/snap-documentserver",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-from-snap.aspx",
+    readInstructionLink: "SnapPackagecommunityProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_community_for_snap_package",
@@ -202,8 +197,7 @@ export const communityProducts: IDownloadBlock[] = [
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: univentionAppliance.date,
     license: "AGPLv3",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/integration/nextcloud.aspx#installingonlyofficedocswithnextcloudonavirtualmachineusingucs_block",
+    readInstructionLink: "UniventionAppliancecommunityProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_community_for_univention_appliance",
@@ -231,8 +225,7 @@ export const communityProducts: IDownloadBlock[] = [
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
     license: "AGPLv3",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-digitalocean.aspx",
+    readInstructionLink: "1ClickAppOnDigitalOceancommunityProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_community_for_1-click_app_on_digitalocean",
@@ -260,8 +253,7 @@ export const communityProducts: IDownloadBlock[] = [
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: cloudron.date,
     license: "AGPLv3",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-cloudron.aspx",
+    readInstructionLink: "1ClickAppOnCloudroncommunityProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_community_for_1-click_app_on_cloudron",
@@ -287,8 +279,7 @@ export const communityProducts: IDownloadBlock[] = [
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: vultr.date,
     license: "AGPLv3",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-vultr.aspx",
+    readInstructionLink: "1ClickAppOnVultrcommunityProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_community_for_1-click_app_on_vultr",
@@ -314,8 +305,7 @@ export const communityProducts: IDownloadBlock[] = [
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: linode.date,
     license: "AGPLv3",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-community-install-linode.aspx",
+    readInstructionLink: "1ClickAppOnLinodecommunityProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_community_for_1-click_app_on_linode",
@@ -347,8 +337,7 @@ export const bundlesWithOwnCloudProducts: IDownloadBlock[] = [
       "https://github.com/ONLYOFFICE/onlyoffice-owncloud/blob/master/CHANGELOG.md",
     releaseDate: onlyofficeOvhcloud.date,
     license: "AGPLv3",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/integration/owncloud.aspx#InstallingownCloudUsingDocker_block",
+    readInstructionLink: "DockerComposebundlesWithOwnCloudProductsLink",
     buttons: [
       {
         id: "onlyoffice_workspace_with_owncloud_for_docker_compose",
@@ -372,8 +361,7 @@ export const bundlesWithOwnCloudProducts: IDownloadBlock[] = [
     heading: "VMwareImage",
     version: providedbyunivention.version,
     releaseDate: providedbyunivention.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/integration/owncloud.aspx#InstallingownCloudUsingUCS_block",
+    readInstructionLink: "VMwareImagebundlesWithOwnCloudProductsLink",
     buttons: [
       {
         id: "onlyoffice_workspace_with_owncloud_for_vmware_image",
@@ -397,8 +385,7 @@ export const bundlesWithOwnCloudProducts: IDownloadBlock[] = [
     heading: "VMwareESXImage",
     version: providedbyunivention.version,
     releaseDate: providedbyunivention.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/integration/owncloud.aspx#InstallingownCloudUsingUCS_block",
+    readInstructionLink: "VMwareESXImagebundlesWithOwnCloudProductsLink",
     buttons: [
       {
         id: "onlyoffice_workspace_with_owncloud_for_vmware_esx_image",
@@ -423,8 +410,7 @@ export const bundlesWithOwnCloudProducts: IDownloadBlock[] = [
     heading: "VirtualBoxImage",
     version: providedbyunivention.version,
     releaseDate: providedbyunivention.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/integration/owncloud.aspx#InstallingownCloudUsingUCS_block",
+    readInstructionLink: "VirtualBoxImagebundlesWithOwnCloudProductsLink",
     buttons: [
       {
         id: "onlyoffice_workspace_with_owncloud_for_virtualbox_image",
@@ -448,8 +434,7 @@ export const bundlesWithOwnCloudProducts: IDownloadBlock[] = [
     heading: "KVMImage",
     version: providedbyunivention.version,
     releaseDate: providedbyunivention.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/integration/owncloud.aspx#InstallingownCloudUsingUCS_block",
+    readInstructionLink: "KVMImagebundlesWithOwnCloudProductsLink",
     buttons: [
       {
         id: "onlyoffice_workspace_with_owncloud_for_kvm_image",
@@ -481,8 +466,7 @@ export const bundlesWithNextcloudProducts: IDownloadBlock[] = [
       "https://github.com/ONLYOFFICE/onlyoffice-nextcloud/blob/master/CHANGELOG.md",
     releaseDate: onlyofficeNextcloud.date,
     license: "AGPLv3",
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/integration/nextcloud.aspx#InstallingNextcloudUsingDocker_block",
+    readInstructionLink: "DockerComposebundlesWithNextcloudProductsLink",
     buttons: [
       {
         id: "onlyoffice_workspace_with_nextcloud_for_docker_compose",
@@ -506,8 +490,7 @@ export const bundlesWithNextcloudProducts: IDownloadBlock[] = [
     heading: "VMwareImage",
     version: providedbyunivention.version,
     releaseDate: providedbyunivention.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/integration/nextcloud.aspx#InstallingNextcloudUsingUCS_block",
+    readInstructionLink: "VMwareImagebundlesWithNextcloudProductsLink",
     buttons: [
       {
         id: "onlyoffice_workspace_with_nextcloud_for_vmware_image",
@@ -531,8 +514,7 @@ export const bundlesWithNextcloudProducts: IDownloadBlock[] = [
     heading: "VMwareESXImage",
     version: providedbyunivention.version,
     releaseDate: providedbyunivention.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/integration/nextcloud.aspx#InstallingNextcloudUsingUCS_block",
+    readInstructionLink: "VMwareESXImagebundlesWithNextcloudProductsLink",
     buttons: [
       {
         id: "onlyoffice_workspace_with_nextcloud_for_vmware_esx_image",
@@ -557,8 +539,7 @@ export const bundlesWithNextcloudProducts: IDownloadBlock[] = [
     heading: "VirtualBoxImage",
     version: providedbyunivention.version,
     releaseDate: providedbyunivention.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/integration/nextcloud.aspx#InstallingNextcloudUsingUCS_block",
+    readInstructionLink: "VirtualBoxImagebundlesWithNextcloudProductsLink",
     buttons: [
       {
         id: "onlyoffice_workspace_with_nextcloud_for_virtualbox_image",
@@ -582,8 +563,7 @@ export const bundlesWithNextcloudProducts: IDownloadBlock[] = [
     heading: "KVMImage",
     version: providedbyunivention.version,
     releaseDate: providedbyunivention.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/integration/nextcloud.aspx#InstallingNextcloudUsingUCS_block",
+    readInstructionLink: "KVMImagebundlesWithNextcloudProductsLink",
     buttons: [
       {
         id: "onlyoffice_workspace_with_nextcloud_for_kvm_image",

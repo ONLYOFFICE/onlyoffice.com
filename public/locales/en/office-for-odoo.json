@@ -69,6 +69,7 @@
   "HowToStartStep2": "Install the required ONLYOFFICE app via the admin panel or from the Odoo Apps Store: <0>Templates app</0> / <1>app for Odoo Community</1> / <2>app for Odoo Enterprise</2>.",
   "HowToStartStep3": "Configure the installed app(s).",
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/odoo.aspx",
   "ToBeAbleToUseTheTemplatesApp": "*To be able to use the Templates app, please reach out to <0>sales@onlyoffice.com</0> to obtain a special ONLYOFFICE Docs license.",
 
   "PartnerHeading": "Are you an Odoo partner? How about improving your Odoo user experience and increasing your revenue?",
@@ -80,8 +81,10 @@
   "Explore": "Explore",
   "Blog": "Blog",
   "WorkWithFillableTemplates": "Work with fillable templates in Odoo using the brand-new ONLYOFFICE Templates app",
+  "WorkWithFillableTemplatesLink": "https://www.onlyoffice.com/blog/2024/07/onlyoffice-templates-app-odoo",
   "LearnMore": "Learn more",
   "ADetailedGuideOnCreating": "A detailed guide on creating ONLYOFFICE form templates for Odoo",
+  "ADetailedGuideOnCreatingLink": "https://www.onlyoffice.com/blog/2024/08/how-to-create-a-new-onlyoffice-form-template-for-odoo",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
 }

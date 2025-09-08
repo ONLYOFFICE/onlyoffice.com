@@ -9,7 +9,7 @@ export const items: IBug = {
         ],
         links:
             {
-                href: "https://www.onlyoffice.com/blog/2022/02/onlyoffice-is-launching-a-bounty-program-on-hackerone/",
+                href: "ReadMoreDetailsAboutHowItWorksLink",
                 isExternal: false
             }
         },
@@ -19,7 +19,7 @@ export const items: IBug = {
         ],
         links:
             {
-                href: "https://www.onlyoffice.com/blog/2022/02/onlyoffice-is-launching-a-bounty-program-on-hackerone/",
+                href: "ReadMoreDetailsAboutHowItWorksLink",
                 isExternal: false
             }
         }

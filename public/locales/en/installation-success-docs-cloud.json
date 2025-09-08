@@ -23,5 +23,6 @@
   "DocumentServerJWTHeader": "Document Server JWT Header*",
   "DocumentServerSecret": "Document Server secret",
 
-  "JwtNote": "*JWT protects documents from unauthorized access. <0>Learn more</0>"
+  "JwtNote": "*JWT protects documents from unauthorized access. <0>Learn more</0>",
+  "JwtNoteLink": "https://www.onlyoffice.com/blog/2022/09/what-is-jwt"
 }

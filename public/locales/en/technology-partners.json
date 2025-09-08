@@ -34,6 +34,7 @@
     "ForUsItIsImportantToShow": "“For us, it is important to show that you don’t have to lose months or weeks to find good solutions that combine open source and privacy by design. It is even more important for key need like an online office suite that you use daily. We wanted to base our personal cloud on proven open-source solutions and when looked around for alternatives, ONLYOFFICE was an obvious choice.”",
     "GaelDuval": "<0>Gaël Duval,</0> <br/>CEO at Murena & Founder of e Foundation",
     "ReadTheFullCaseOfMurena": "Read the full case of Murena",
+    "ReadTheFullCaseOfMurenaLink": "https://www.onlyoffice.com/blog/2022/12/murena-integrates-onlyoffice",
 
     "Hosting": "Hosting",
     "ProvideYourCustomers": "Provide your customers with ONLYOFFICE online editors and productivity tools hosted in your robust environment. Discover the <0>list of hosting providers.</0>",
@@ -41,16 +42,26 @@
     "ONLYOFFICEIsTheSoftware": "“ONLYOFFICE is the software that we use at Artera, we tested it and it immediately seemed the best. For this reason, we are very proud of this collaboration. Artera users enjoy full integration with our cloud hosting and ONLYOFFICE Docs.”",
     "SergioRavera": "<0>Sergio Ravera,</0> <br/>CEO of DHH Switzerland SA, owner of the Artera brand",
     "ReadTheFullCaseOfArtera": "Read the full case of Artera",
+    "ReadTheFullCaseOfArteraLink": "https://www.onlyoffice.com/blog/2022/09/deploy-onlyoffice-docs-on-artera-swiss-premium-hosting",
 
     "OSDistributions": "OS distributions",
     "PreInstallONLYOFFICE": "Pre-install ONLYOFFICE on your Linux distro or add to your software store, certify ONLYOFFICE to be compatible with your OS, and get listed on our official website and blog to boost your traffic.",
+    "KylinSoftLink": "https://www.onlyoffice.com/blog/2022/11/onlyoffice-got-certified-by-kylin-os",
+    "RisiOsLink": "https://www.onlyoffice.com/blog/2022/09/onlyoffice-desktop-editors-now-pre-installed-on-risios",
+    "BrOsLink": "https://www.onlyoffice.com/blog/2022/09/onlyoffice-desktop-editors-on-br-os",
+    "WubuntuLink": "https://www.onlyoffice.com/blog/2020/09/onlyoffice-desktop-editors-become-a-default-office-app-in-linuxfx-distro",
+    "LinkatLink": "https://www.onlyoffice.com/blog/2020/09/onlyoffice-desktop-editors-become-a-default-office-app-in-linuxfx-distro",
+    "EscuelasLink": "https://www.onlyoffice.com/blog/2020/06/how-escuelas-linux-and-onlyoffice-contribute-to-basic-education",
 
     "WeAreNowPartnering": "“We are now partnering with ONLYOFFICE to pre-install it on risiOS. ONLYOFFICE is a great office suite with an easy user interface, excellent Microsoft Office document compatibility, and everything else you need from an office suite.”",
     "CameronKnauff": "<0>Cameron Knauff,</0> <br/> Founder of risiOS",
     "ReadTheFullCaseOfRisiOS": "Read the full case of risiOS",
+    "ReadTheFullCaseOfRisiOSLink": "https://www.onlyoffice.com/blog/2022/09/onlyoffice-desktop-editors-now-pre-installed-on-risios/",
 
     "Marketplaces": "Marketplaces",
     "CooperateWithUsOnAdding": "Cooperate with us on adding ONLYOFFICE products to your marketplace to gain more user traffic and make a profit.",
+    "AlibabaLink": "https://www.onlyoffice.com/blog/2021/11/onlyoffice-docs-and-workspace-on-alibaba-cloud",
+    "OvhCloudLink": "https://www.onlyoffice.com/blog/2020/09/onlyoffice-workspace-joins-the-ovhcloud-marketplace",
 
     "BenefitsForONLYOFFICE": "Benefits for ONLYOFFICE technology partners",
     "IndividualApproach": "Individual approach to each partner",

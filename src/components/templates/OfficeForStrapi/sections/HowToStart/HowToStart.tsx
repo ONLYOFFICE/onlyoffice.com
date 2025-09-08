@@ -24,7 +24,7 @@ const HowToStart = () => {
               components={[
                 <Link
                   key={0}
-                  href="https://helpcenter.onlyoffice.com/integration/strapi.aspx"
+                  href={t("ReadDetailedInstructionsLink")}
                   target="_blank"
                   color="main"
                   textUnderline

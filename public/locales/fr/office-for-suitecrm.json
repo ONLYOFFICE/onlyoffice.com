@@ -1,4 +1,5 @@
 {
+  "PageTitle": "Editeurs en ligne pour SuiteCRM | ONLYOFFICE",
   "PageDescription": "Travaillez avec des fichiers bureautiques dans le module Documents de SuiteCRM en utilisant ONLYOFFICE Docs",
 
   "OnlineOfficeForConnector": "Suite bureautique en ligne pour <0>SuiteCRM</0>",
@@ -27,6 +28,7 @@
   "HowToStartStep3": "Installez et configurez le connecteur.",
 
   "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/suitecrm.aspx",
 
   "NeedAnAppToConnect": "Besoin d'une appli pour connecter ONLYOFFICE Docs à votre service web préférentiel ? Ou en avez-vous développé une ?"
 }
