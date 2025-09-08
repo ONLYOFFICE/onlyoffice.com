@@ -47,12 +47,13 @@
 
   "OSDistributions": "Distributions de systèmes d'exploitation",
   "PreInstallONLYOFFICE": "Préinstallez ONLYOFFICE sur votre distribution Linux ou ajoutez-le à votre magasin de logiciels, certifiez ONLYOFFICE pour qu'il soit compatible avec votre système d'exploitation, et soyez listé sur notre site et notre blog officiels pour augmenter votre trafic.",
-  "KylinSoftLink": "https://www.onlyoffice.com/blog/fr/2022/11/onlyoffice-certifie-par-kylin-os",
-  "RisiOsLink": "https://www.onlyoffice.com/blog/fr/2022/09/onlyoffice-desktop-editors-preinstalles-sur-risios",
-  "BrOsLink": "https://www.onlyoffice.com/blog/fr/2022/09/onlyoffice-desktop-editors-devient-une-suite-par-defaut-sur-br-os",
-  "WubuntuLink": "https://www.onlyoffice.com/blog/fr/2024/08/onlyoffice-desktop-editors-sur-wubuntu",
-  "LinkatLink": "https://www.onlyoffice.com/blog/fr/2020/07/applications-de-bureau-onlyoffice-sont-disponibles-sous-linkat",
-  "EscuelasLink": "https://www.onlyoffice.com/blog/fr/2020/06/comment-escuelas-linux-et-onlyoffice-contribuent-a-l-enseignement-de-base",
+  "OSDistributionsLink1": "https://www.onlyoffice.com/blog/fr/2022/11/onlyoffice-certifie-par-kylin-os",
+  "OSDistributionsLink2": "https://www.onlyoffice.com/blog/fr/2024/03/onlyoffice-desktop-editors-mauna-linux",
+  "OSDistributionsLink3": "https://www.onlyoffice.com/blog/fr/2022/09/onlyoffice-desktop-editors-preinstalles-sur-risios",
+  "OSDistributionsLink4": "https://www.onlyoffice.com/blog/fr/2022/09/onlyoffice-desktop-editors-devient-une-suite-par-defaut-sur-br-os",
+  "OSDistributionsLink6": "https://www.onlyoffice.com/blog/fr/2024/08/onlyoffice-desktop-editors-sur-wubuntu",
+  "OSDistributionsLink7": "https://www.onlyoffice.com/blog/fr/2020/07/applications-de-bureau-onlyoffice-sont-disponibles-sous-linkat",
+  "OSDistributionsLink8": "https://www.onlyoffice.com/blog/fr/2020/06/comment-escuelas-linux-et-onlyoffice-contribuent-a-l-enseignement-de-base",
 
   "WeAreNowPartnering": "“Nous sommes maintenant en partenariat avec ONLYOFFICE pour la préinstaller sur risiOS. ONLYOFFICE est une excellente suite bureautique avec une interface utilisateur facile, une excellente compatibilité avec les documents Microsoft Office, et tout ce que vous attendez d’une suite bureautique.”",
   "CameronKnauff": "<0>Cameron Knauff,</0> <br/> fondateur de risiOS",
@@ -61,8 +62,8 @@
 
   "Marketplaces": "Marketplaces",
   "CooperateWithUsOnAdding": "Coopérez avec nous pour ajouter les solutions ONLYOFFICE sur votre marketplace afin d'augmenter le nombre d'utilisateurs et de réaliser des bénéfices.",
-  "AlibabaLink": "https://www.onlyoffice.com/blog/fr/2021/11/onlyoffice-docs-et-workspace-sur-alibaba-cloud",
-  "OvhCloudLink": "https://www.onlyoffice.com/blog/fr/2020/09/onlyoffice-workspace-debarque-sur-ovhcloud-marketplace",
+  "MarketplacesBlogLink1": "https://www.onlyoffice.com/blog/fr/2021/11/onlyoffice-docs-et-workspace-sur-alibaba-cloud",
+  "MarketplacesBlogLink2": "https://www.onlyoffice.com/blog/fr/2020/09/onlyoffice-workspace-debarque-sur-ovhcloud-marketplace",
 
   "BenefitsForONLYOFFICE": "Avantages pour les partenaires technologiques ONLYOFFICE",
   "IndividualApproach": "Approche individuelle pour chaque partenaire",
