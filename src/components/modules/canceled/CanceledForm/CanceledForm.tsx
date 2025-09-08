@@ -29,7 +29,7 @@ const CanceledForm = ({
   checkboxeItems,
   textareaHeading,
   onShowCoupons,
-  isEmailOnPage = true,
+  isEmailRequired = true,
   locale,
 }: CanceledFormProps) => {
   const { t } = useTranslation("canceled");
@@ -110,7 +110,7 @@ const CanceledForm = ({
 
   const isOtherChecked = formData.mark6 === 1;
 
-  const isEmailValid = isEmailOnPage
+  const isEmailValid = isEmailRequired
     ? formData.email.length > 0 && validateEmail(formData.email)
     : true;
 
@@ -250,37 +250,35 @@ const CanceledForm = ({
         />
       </StyledCanceledFormTextarea>
 
-      {isEmailOnPage && (
-        <Input
-          onChange={(e) => handleInputChange("email", e.target.value)}
-          onBlur={() => {
-            setIsEmpty((prev) => ({
-              ...prev,
-              email: formData.email.length === 0,
-            }));
-          }}
-          value={formData.email}
-          label={t("Email")}
-          placeholder="name@domain.com"
-          caption={
-            formData.email.length === 0
-              ? t("EmailIsEmpty")
-              : !validateEmail(formData.email)
-                ? t("EmailIsIncorrect")
-                : ""
-          }
-          required
-          status={
-            isEmpty.email
-              ? "error"
-              : formData.email.length > 0
-                ? validateEmail(formData.email)
-                  ? "success"
-                  : "error"
-                : "default"
-          }
-        />
-      )}
+      <Input
+        onChange={(e) => handleInputChange("email", e.target.value)}
+        onBlur={() => {
+          setIsEmpty((prev) => ({
+            ...prev,
+            email: formData.email.length === 0,
+          }));
+        }}
+        value={formData.email}
+        label={t("Email")}
+        placeholder="name@domain.com"
+        caption={
+          formData.email.length === 0
+            ? t("EmailIsEmpty")
+            : !validateEmail(formData.email)
+              ? t("EmailIsIncorrect")
+              : ""
+        }
+        required={isEmailRequired}
+        status={
+          isEmpty.email
+            ? "error"
+            : formData.email.length > 0
+              ? validateEmail(formData.email)
+                ? "success"
+                : "error"
+              : "default"
+        }
+      />
 
       <StyledCanceledHCaptchaWrapper>
         <HCaptcha

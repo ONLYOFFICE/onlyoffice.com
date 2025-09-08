@@ -11,8 +11,10 @@ import { Link } from "@src/components/ui/Link";
 import { ImproveItem } from "./sub-components/ImproveItem";
 import { items } from "./data/items";
 import { SocialIcons } from "@src/components/modules/SocialIcons";
+import { getLink } from "@src/utils/getLink";
+import { ILocale } from "@src/types/locale";
 
-const Improve = () => {
+const Improve = ({ locale }: ILocale) => {
   const { t } = useTranslation("contribute");
 
   return (
@@ -51,7 +53,10 @@ const Improve = () => {
               }
               link={{
                 label: t(item.link.label),
-                href: item.link.href,
+                href:
+                  item.link.href === "templatesLink"
+                    ? getLink("templates", locale)
+                    : item.link.href,
               }}
             />
           ))}

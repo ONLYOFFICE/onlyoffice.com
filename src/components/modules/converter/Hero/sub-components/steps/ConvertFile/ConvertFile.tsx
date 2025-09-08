@@ -35,6 +35,7 @@ import { getDefaultOutputFormat } from "./utils/getDefaultOutputFormat";
 import { getFormatType } from "../../../utils/getFormatType";
 import { FileErrorModal } from "../../modals/FileErrorModal";
 import { languages } from "@src/config/data/languages";
+import { getLink } from "@src/utils/getLink";
 
 const ConvertFile = ({
   theme,
@@ -74,7 +75,6 @@ const ConvertFile = ({
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [fade, setFade] = useState(true);
   const [isOpenFileErrorModal, setIsOpenFileErrorModal] = useState(false);
-  const [errorModalText, setErrorModalText] = useState("");
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -146,7 +146,6 @@ const ConvertFile = ({
       if (data.status === "error") {
         setStep("convert");
         setIsOpenFileErrorModal(true);
-        setErrorModalText(data?.message.message || data.message || "");
       } else {
         setResultData(data);
         setOutputFileType(outputFormat);
@@ -293,7 +292,12 @@ const ConvertFile = ({
                   components={[
                     <Link
                       key="0"
-                      href={loadingText[currentTextIndex].link.href}
+                      href={
+                        loadingText[currentTextIndex].link.href ===
+                        "templatesLink"
+                          ? getLink("templates", router.locale!)
+                          : loadingText[currentTextIndex].link.href
+                      }
                       target={
                         loadingText[currentTextIndex].link.isExternal
                           ? "_blank"
@@ -338,9 +342,11 @@ const ConvertFile = ({
         setIsOpenFileErrorModal={setIsOpenFileErrorModal}
         theme={theme}
       >
-        <Text size={2} textAlign="center">
-          Error: {errorModalText}
-        </Text>
+        <Text
+          size={2}
+          textAlign="center"
+          label={t("TheFileAppearsToBeBroken")}
+        />
       </FileErrorModal>
     </>
   );

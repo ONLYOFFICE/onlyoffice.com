@@ -93,6 +93,7 @@ const Connectors = ({ locale }: ILocale) => {
               getItNowUrl={connector.getItNowUrl}
               isNew={connector.isNew}
               isWopi={connector.isWopi}
+              isBot={connector.isBot}
             />
           ))}
         </StyledConnectorItems>

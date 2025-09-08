@@ -21,7 +21,7 @@ export interface ISectionItem {
       title: "LanguageTitle",
       text: "LanguageDescription",
       buttonLabel: "ExploreDocs",
-      buttonLink: "https://api.onlyoffice.com/docs/docs-api/get-started/language-specific-examples/",
+      buttonLink: "https://api.onlyoffice.com/docs/docs-api/samples/language-specific-examples/",
       isExternal: true,
     },
     {

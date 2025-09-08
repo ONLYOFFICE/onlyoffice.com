@@ -2,8 +2,10 @@ import { useTranslation, Trans } from "next-i18next";
 import { FaqCollapse } from "@src/components/modules/FaqCollapse";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
+import { ILocale } from "@src/types/locale";
+import { getLink } from "@src/utils/getLink";
 
-const Faq = () => {
+const Faq = ({ locale }: ILocale) => {
   const { t } = useTranslation("office-for-students");
 
   return (
@@ -18,7 +20,9 @@ const Faq = () => {
             i18nKey={String(children)}
             components={links?.map(({ href, isExternal }, index) => (
               <Link
-                href={href}
+                href={
+                  href === "templatesLink" ? getLink("templates", locale) : href
+                }
                 key={index}
                 target={isExternal ? "_blank" : undefined}
               />

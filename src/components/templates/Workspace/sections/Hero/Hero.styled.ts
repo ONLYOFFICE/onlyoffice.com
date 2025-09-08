@@ -67,9 +67,20 @@ const StyledHeroImage = styled.div`
   }
 `;
 
+const StyledHeroButtons = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  @media ${device.tabletS} {
+    grid-template-columns: 1fr;
+  }
+`;
+
 export {
   StyledHeroSection,
   StyledHeroWrapper,
   StyledHeroContent,
   StyledHeroImage,
+  StyledHeroButtons,
 };

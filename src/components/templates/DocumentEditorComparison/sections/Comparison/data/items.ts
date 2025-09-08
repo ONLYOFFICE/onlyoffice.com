@@ -3,7 +3,7 @@ import { IComparisonCard } from "../sub-components/ComparisonCard/ComparisonCard
 export const items: IComparisonCard[] = [
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/Comparison/office.svg",
+      src: "/images/templates/document-editor-comparison/comparison/office.svg",
       alt: "office",
       width: "138px",
       height: "44px",
@@ -15,7 +15,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/Comparison/google-docs.svg",
+      src: "/images/templates/document-editor-comparison/comparison/google-docs.svg",
       alt: "google-docs",
       width: "216px",
       height: "42px",
@@ -27,7 +27,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/Comparison/zoho.svg",
+      src: "/images/templates/document-editor-comparison/comparison/zoho.svg",
       alt: "zoho",
       width: "163px",
       height: "56px",
@@ -39,7 +39,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/Comparison/libreoffice.svg",
+      src: "/images/templates/document-editor-comparison/comparison/libreoffice.svg",
       alt: "libreoffice",
       width: "223px",
       height: "52px",
@@ -51,7 +51,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/Comparison/wps.svg",
+      src: "/images/templates/document-editor-comparison/comparison/wps.svg",
       alt: "wps",
       width: "168px",
       height: "40px",
@@ -61,7 +61,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/Comparison/adobe.svg",
+      src: "/images/templates/document-editor-comparison/comparison/adobe.svg",
       alt: "adobe",
       width: "216px",
       height: "56px",
@@ -71,7 +71,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/Comparison/hancom.svg",
+      src: "/images/templates/document-editor-comparison/comparison/hancom.svg",
       alt: "hancom",
       width: "194px",
       height: "52px",

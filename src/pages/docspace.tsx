@@ -29,7 +29,7 @@ const DocspacePage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <DocSpaceTemplate />
+        <DocSpaceTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

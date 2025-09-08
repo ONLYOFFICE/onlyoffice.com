@@ -6,8 +6,10 @@ import { StyledFeaturesWrapper, StyledHeading } from "./Features.styled";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
+import { getLink } from "@src/utils/getLink";
+import { ILocale } from "@src/types/locale";
 
-const Features = () => {
+const Features = ({ locale }: ILocale) => {
   const { t } = useTranslation("solutions");
 
   return (
@@ -26,13 +28,7 @@ const Features = () => {
                 <Trans
                   t={t}
                   i18nKey={String(item.heading)}
-                  components={[
-                    <Text
-                      key={0}
-                      as="span"
-                      color="main"
-                    />,
-                  ]}
+                  components={[<Text key={0} as="span" color="main" />]}
                 />
               }
               rowGap={16}
@@ -56,11 +52,11 @@ const Features = () => {
               position={{ desktop: index % 2 === 1 ? "right" : "left" }}
               links={item.links?.map((link) => ({
                 ...link,
-                href: `${link.href}`,
+                href: link.href === "templatesLink" ? getLink("templates", locale) : link.href,
                 label: t(String(link.label)),
               }))}
               image={{
-                url: (item.image.url),
+                url: item.image.url,
                 height: item.image.height,
                 width: item.image.width,
               }}

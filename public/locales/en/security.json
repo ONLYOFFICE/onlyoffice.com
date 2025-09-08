@@ -18,7 +18,7 @@
     "ReadMoreAboutHIPAA": "Read more about HIPAA compliance in ONLYOFFICE",
 
     "Self_Hosting": "Self-hosting",
-    "ONLYOFFICEWasDesignedForBusinesses": "ONLYOFFICE was designed for businesses carrying out sensitive communication and records that, if compromised, may to various extent endanger customers and internal operations. Our range of solutions keeps your services and all assigned data completely within your physical perimeter. We put hardware protection in your hands, allowing you to manually maintain stability and connectivity as your business standards demand.",
+    "ONLYOFFICEWasDesignedForBusinesses": "ONLYOFFICE was designed for businesses carrying out sensitive communication and records that, if compromised, may endanger customers and internal operations to various extent. Our range of solutions keeps your services and all assigned data completely within your physical perimeter. We put hardware protection in your hands, allowing you to manually maintain stability and connectivity as your business standards demand.",
     "WeProvideCompleteTechnicalSupport": "We provide complete technical support for on-premise deployment and release regular software updates.",
 
     "DataEncryption": "Data encryption",
@@ -34,7 +34,7 @@
     "DataProtection": "Data protection",
     "JWT": "JWT",
     "JSONWebToken": "JSON Web Token (or JWT) protects documents from unauthorized access. This technology secures portal traffic and ensures that users cannot access more data than permitted to them, which is critical in case of external user invitation.",
-    "ONLYOFFICEEditors": "ONLYOFFICE editors request an encrypted signature that is contained in the token. The token is added in the configuration when Document Editor is initialized and during the exchange of commands between inner services (storage service, editing service, command service, and conversion service), therefore validating the right to perform a certain operation with the data.",
+    "ONLYOFFICEEditors": "ONLYOFFICE editors request an encrypted signature that is contained in the token. The token is added in the configuration when Document Editor is initialized and during the exchange of commands between inner services (storage service, editing service, command service, and conversion service), therefore, validating the right to perform a certain operation with the data.",
     "DocumentPermission": "Document permission management",
     "ONLYOFFICEEditorsWork": "ONLYOFFICE editors work on the client, moving most of the data load to the individual user’s browser. This approach allows you to create a flexible range of document permission types that include both full access and view-only permissions, and also permissions for exclusively commenting, reviewing or filling forms. Additionally, it is possible to restrict downloading, printing, and copying of documents to block further distribution of content. You can also restrict other users from changing the sharing settings. Besides, you are able to set time limits and passwords for externally shared documents and folders.",
     "SpreadsheetProtection": "Spreadsheet protection",

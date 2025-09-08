@@ -8,14 +8,15 @@ import { RoomsGetStarted } from "@src/components/modules/rooms/RoomsGetStarted";
 import { RoomsFaq } from "@src/components/modules/rooms/RoomsFaq";
 import { LearnMore } from "./sections/LearnMore";
 import { AwardsBanner } from "./sections/Awards";
+import { ILocale } from "@src/types/locale";
 
-const DocSpaceTemplate = () => {
+const DocSpaceTemplate = ({ locale }: ILocale) => {
   return (
     <>
       <Hero />
       <Collaborate />
       <Content />
-      <Features />
+      <Features locale={locale} />
       <Security />
       <Budgets />
       <AwardsBanner />

@@ -9,9 +9,11 @@ import { Container } from "@src/components/ui/Container";
 import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
 import { Text } from "@src/components/ui/Text";
+import { useRouter } from "next/router";
 
 const HowToStart = () => {
   const { t } = useTranslation("affiliates");
+  const { locale } = useRouter();
 
   return (
     <Section background="#f9f9f9" tabletSpacing={["80px", "80px"]}>
@@ -30,7 +32,13 @@ const HowToStart = () => {
                 t={t}
                 i18nKey={String(item.heading)}
                 components={[
-                  <Text as="span" fontStyle="italic" color="#333" fontWeight={700} key="0" />,
+                  <Text
+                    as="span"
+                    fontStyle={locale !== "zh" ? "italic" : undefined}
+                    color="#333"
+                    fontWeight={700}
+                    key="0"
+                  />,
                 ]}
               />
             ),

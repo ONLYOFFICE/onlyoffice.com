@@ -15,6 +15,7 @@
   "Free": "Gratis",
   "Paid": "De pago",
   "GetItOn": "Obtenerlo en",
+  "Bot": "BOT",
 
   "FeatureConnectorTrelloText": "Visualiza, edita y colabora en documentos ofimáticos en tiempo real dentro de Trello, la herramienta definitiva de gestión de proyectos en equipo.",
   "FeatureConnectorOdooText": "Edita y colabora en archivos ofimáticos dentro de Odoo Documents, un conjunto de aplicaciones empresariales de código abierto.",
@@ -22,6 +23,7 @@
   "FeatureConnectorOwnCloudText": "Compartir documentos con diferentes niveles de acceso, editar documentos, hojas de cálculo y presentaciones en ownCloud, la última plataforma de colaboración en la nube que necesitarás.",
   "FeatureConnectorPipedriveText": "Edita y colabora en documentos ofimáticos dentro de Pipedrive Deals, un CRM de ventas basado en web y una solución de gestión de procesos de ventas.",
 
+  "TelegramConnectorText": "Abre, crea, convierte, edita y colabora en documentos directamente en Telegram, un servicio de mensajería instantánea y redes sociales multiplataforma basado en la nube.",
   "AgorumConnectorText": "La integración de ONLYOFFICE Docs está disponible a partir de la versión 9.4 de agorum core y se puede instalar fácilmente a través del Administrador de complementos.",
   "AlfrescoConnectorText": "Trabaja con todos los tipos de documentos de oficina en Alfresco Share, un amplio entorno de colaboración basado en web para gestionar documentos, contenido wiki, blogs y más.",
   "BoxConnectorText": "Visualiza, edita y coedita archivos ofimáticos en Box, un sistema seguro de gestión de contenidos en la nube.",
@@ -71,6 +73,7 @@
   "FileCloudConnectorText": "Edita y colabora en documentos de oficina, presentaciones y hojas de cálculo directamente desde FileCloud, una solución empresarial para compartir, sincronizar y respaldar archivos.",
   "OpenKMConnectorText": "Edita y colabora en documentos de oficina, hojas de cálculo y presentaciones directamente desde OpenKM, un sistema de código abierto para la gestión electrónica de documentos y registros.",
   "FeatureConnectorMondayText": "Edita, visualiza y colabora en archivos en tiempo real, todo dentro de tu plataforma de trabajo monday.",
+  "DzzOfficeConnectorText": "Visualiza, edita y coedita documentos ofimáticos en línea en DzzOffice, una suite ofimática de código abierto para la colaboración empresarial y en equipo.",
 
   "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE Docs con tu servicio web favorito? ¿O ya has desarrollado una?",
   "LetUsKnow": "Contáctanos",

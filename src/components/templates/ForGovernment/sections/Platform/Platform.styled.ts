@@ -169,15 +169,14 @@ const StyledContent = styled.div`
       }
     }
   }
-}
 
-@media ${device.tablet} {
-  grid-template-columns: 1fr 1fr;
-}
+  @media ${device.tablet} {
+    grid-template-columns: 1fr 1fr;
+  }
 
-@media ${device.tabletS} {
-  grid-template-columns: 1fr;
-}
+  @media ${device.tabletS} {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const StyledPlatformWrapper = styled.div`

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
-import { Button } from "@src/components/ui/Button";
 import { device } from "@src/utils/device";
 
 const StyledSection = styled(Section)`
@@ -14,6 +13,14 @@ const StyledContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   padding: 0;
+
+  .docspace-content-button {
+    margin-top: 56px;
+
+    @media ${device.mobile} {
+      margin-top: 32px;
+    }
+  }
 
   @media ${device.desktop} {
     padding: 0 32px;
@@ -77,14 +84,6 @@ const StyledCardContainer = styled.div`
   }
 `;
 
-const StyledButton = styled(Button)`
-  margin-top: 56px;
-
-  @media ${device.mobile} {
-    margin-top: 32px;
-  }
-`;
-
 export {
   StyledContainer,
   StyledHeading,
@@ -92,5 +91,4 @@ export {
   StyledSmallHeading,
   StyledCardContainer,
   StyledSection,
-  StyledButton,
 };

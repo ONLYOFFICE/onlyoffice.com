@@ -12,18 +12,22 @@ const links: Record<string, { base: string; paths: Record<string, string> }> = {
   marketplace: {
     base: `${process.env.NEXT_PUBLIC_SITE_URL}/app-directory`,
     paths: {
+      en: "",
       pt: "",
       it: "",
       cs: "",
       nl: "",
+      sr: "",
     },
   },
   templates: {
     base: "https://templates.onlyoffice.com",
     paths: {
+      en: "",
       cs: "",
       nl: "",
       ru: "",
+      sr: "",
     },
   },
 };
