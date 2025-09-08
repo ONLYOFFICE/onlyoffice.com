@@ -1,55 +1,55 @@
 {
-  "PageTitle": "Користите виртуелне собе за податке за побољшану безбедност и транспарентност датотека",
-  "PageDescription": "Организујте безбедно складиштење и дељење поверљивих пословних информација у ONLYOFFICE DocSpace-у",
+  "PageTitle": "ONLYOFFICE - Cloud Office Applications",
+  "PageDescription": "Organizujte sigurno čuvanje i deljenje poverljivih poslovnih informacija u ONLYOFFICE DocSpace-u",
 
-  "UseVirtualDataRooms": "Користите <0>виртуелне собе за податке</0> за побољшану безбедност и транспарентност датотека",
-  "OrganizeSecure": "Организујте безбедно складиштење и дељење поверљивих пословних информација у ONLYOFFICE DocSpace-у",
+  "UseVirtualDataRooms": "Koristite <0>Virtuelne sobe za podatke</0> za naprednu sigurnost i transparentnost datoteka",
+  "OrganizeSecure": "Organizujte sigurno čuvanje i deljenje poverljivih poslovnih informacija u ONLYOFFICE DocSpace-u",
 
-  "IdealForDueDiligence": "Идеално за due diligence",
-  "CompletelyOrganized": "Потпуно организовано",
-  "HighLevelOfDataSecurity": "Висок ниво безбедности података",
-  "AdvancedRoleBased": "Напредно попуњавање образаца засновано на улогама",
-  "CostEffectiveForAnyBudget": "Cost-effective for any budget",
+  "IdealForDueDiligence": "Idealno za due diligence",
+  "CompletelyOrganized": "Potpuno organizovan",
+  "HighLevelOfDataSecurity": "Visok nivo bezbednosti podataka",
+  "AdvancedRoleBased": "Napredno popunjavanje obrazaca po ulogama",
+  "CostEffectiveForAnyBudget": "Isplativo za bilo koji budžet",
 
-  "CreateFreeAccount": "Креирајте бесплатан налог",
+  "CreateFreeAccount": "Napravite besplatan nalog",
 
   "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
   "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
 
-  "IdealForDueDiligenceDesc": "Користите VDR за due diligence, при спајању, раду на пројекту са другим компанијама или другом заједничком подухвату који захтева приступ дељеним подацима.",
+  "IdealForDueDiligenceDesc": "Koristite VDR za due diligence, prilikom spajanja, rada na projektu sa drugim preduzećima ili drugog zajedničkog ulaganja koje zahteva pristup zajedničkim podacima.",
   "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/ideal.png",
   "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/ideal@2x.png",
 
-  "CompletelyOrganizedDesc": "Аутоматски индексирајте и пратите сав садржај да бисте водили одличне записе и остали организовани. Генеришите сажети извештај о структури датотека собе.",
+  "CompletelyOrganizedDesc": "Automatski indeksirajte i pratite sav sadržaj kako biste vodili odlične zapise i ostali organizovani. Generišite zbirni izveštaj o strukturi datoteke sobe.",
   "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/organized.png",
   "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/organized@2x.png",
 
-  "HighLevelOfDataSecurityDesc": "Омогућите водене жигове, подесите животни век датотеке, ограничите преузимање и копирање да бисте заштитили своје поверљиве записе.",
+  "HighLevelOfDataSecurityDesc": "Omogućite vodene žigove, podesite životni vek datoteke, ograničite preuzimanje i kopiranje kako biste zaštitili svoje osetljive zapise.",
   "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/security.png",
   "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/security@2x.png",
 
-  "AdvancedRoleBasedText": "Позовите свој тим и доделите улоге које се савршено уклапају у организациону структуру ваше компаније. Пратите напредак обрасца у реалном времену. Лако прегледајте завршене и чекајуће обрасце, финализирајте их и преузмите готове верзије за несметан процес.",
+  "AdvancedRoleBasedText": "Pozovite svoj tim i dodelite im uloge koje savršeno odgovaraju strukturi vaše organizacije. Pratite napredak u popunjavanju obrazaca u realnom vremenu. Lako pregledajte popunjene i nepotpune obrasce, završite ih i preuzmite gotove verzije za nesmetan tok procesa.",
   "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/advanced.png",
   "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/advanced@2x.png",
 
-  "CostEffectiveForAnyBudgetDesc": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses, no matter if it's SMB or a big enterprise. Want to get full control over your corporate data? Deploy DocSpace on your private server.",
+  "CostEffectiveForAnyBudgetDesc": "Platite samo za administratore i dodajte bilo koji broj redovnih korisnika i gostiju besplatno. Iskoristite besplatan Startup plan za male timove. ONLYOFFICE DocSpace je pogodan za sve poslovne subjekte, bez obzira da li su u pitanju mala ili velika preduzeća. Želite li da dobijete potpunu kontrolu nad vašim korporativnim podacima? Postavite DocSpace na vašem privatnom serveru.",
   "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget.png",
   "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget@2x.png",
 
-  "LearnMoreHeading": "Сазнајте више о DocSpace виртуелним собама за податке",
+  "LearnMoreHeading": "Saznajte više o DocSpace virtuelnim sobama za podatke",
 
-  "HelpCenter": "Центар за помоћ",
-  "HelpCenterDesc": "Погледајте детаљне корисничке водиче за ефикасан рад",
+  "HelpCenter": "Centar za pomoć",
+  "HelpCenterDesc": "Proverite detaljne korisničke vodiče za efikasan rad",
   "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
-  "LearnMore": "Сазнајте више",
+  "LearnMore": "Saznajte više",
 
   "YouTube": "YouTube",
-  "MasterONLYOFFICEDocSpace": "Овладајте ONLYOFFICE DocSpace-ом помоћу видео водича",
+  "MasterONLYOFFICEDocSpace": "Ovladajte ONLYOFFICE DocSpace sa video vodičima",
   "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
-  "WatchNow": "Гледајте сада",
+  "WatchNow": "Gledajte sada",
 
-  "CustomerTestimonial": "Искуство корисника",
-  "HowKinderhausBerlinSharesAndCollaborates": "Како Kinderhaus Berlin дели и сарађује на поверљивим датотекама у ONLYOFFICE DocSpace-у",
+  "CustomerTestimonial": "Izjava kupaca",
+  "HowKinderhausBerlinSharesAndCollaborates": "Kako Kinderhaus Berlin deli i sarađuje na osetljivim datotekama sa ONLYOFFICE DocSpace-om",
   "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
-  "ReadStory": "Прочитајте причу"
+  "ReadStory": "Pročitajte priču"
 }
