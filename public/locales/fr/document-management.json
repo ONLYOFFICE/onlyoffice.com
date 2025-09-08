@@ -2,13 +2,13 @@
   "PageTitle": "Le meilleur système de gestion des documents | ONLYOFFICE",
   "PageDescription": "Logiciel de gestion des documents en ligne. Gérer des documents : créer, partager, collaborer avec l'équipe.",
 
-  "HeroTitle": "Créer facilement un bureau sans papier",
+  "HeroTitle": "Créez facilement un bureau sans papier",
   "HeroText": "Prix Platine aux Cloud Computing Insider Awards 2023 dans la catégorie Gestion de contenu dans le cloud",
   "HeroImage": "/images/templates/document-management/hero/fr/hero_image.png",
   "HeroImage2x": "/images/templates/document-management/hero/fr/hero_image@2x.png",
   "GetItNow": "Obtenir maintenant",
 
-  "StayOrganized": "Restez organisé",
+  "StayOrganized": "Organisez-vous",
   "StayAndAccess": "Stockez et accédez à vos fichiers de n’importe où",
   "StayAndAccessText": "Stockez vos documents en un seul endroit et accédez à ceux-ci à partir de votre navigateur, de votre ordinateur, de votre téléphone ou de votre tablette.",
   "BringTogether": "Rassemblez tous vos documents",
@@ -57,7 +57,7 @@
   "DocumentEmbeddingText": "Intégrez les documents directement dans votre site web. Offrez aux visiteurs de votre page web une vue instantanée des fichiers sans aucun téléchargement supplémentaire.",
   "DocumentEmbeddingImage": "/images/templates/document-management/seamlessly/fr/document-embedding.png",
   "DocumentEmbeddingImage2x": "/images/templates/document-management/seamlessly/fr/document-embedding@2x.png",
-  "WebDAV": "WebDAV server",
+  "WebDAV": "Serveur WebDAV",
   "WebDAVText": "Travaillez avec d'autres utilisateurs sur des serveurs web distants à partir de clients WebDAV pour modifier et gérer des fichiers en collaboration.",
   "WebDAVImage": "/images/templates/document-management/seamlessly/fr/webdav-server.png",
   "WebDAVImage2x": "/images/templates/document-management/seamlessly/fr/webdav-server@2x.png",
@@ -65,7 +65,7 @@
   "ProtectYourDocuments": "Protégez vos documents",
   "ProtectYourDocumentsText": "Créez un environnement sécurisé pour l’édition et la co-création de documents. Tous les documents stockés dans la salle privée ainsi que le transfert de données lors de la co-rédaction de documents seront chiffrés à l’aide de l’algorithme de chiffrement AES-256 pour empêcher tout accès non autorisé.",
 
-  "BeMoreProductive": "Soyez plus productif",
+  "BeMoreProductive": "Améliorez votre productivité",
   "Integration": "Intégration avec vos outils préférés",
   "IntegrationText": "Étendez la fonctionnalité de gestion des documents avec les outils dont vous avez besoin : signez les documents numériquement avec DocuSign, raccourcissez les liens avec Bitly, publiez les documents sur WordPress, et plus encore.",
   "SeeAllIntegrations": "Voir toutes les intégrations",

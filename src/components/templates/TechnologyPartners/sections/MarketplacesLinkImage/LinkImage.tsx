@@ -1,9 +1,9 @@
 import { Section } from "@src/components/ui/Section";
 import { useTranslation } from "next-i18next"
-import { 
-    StyledHeading, 
+import {
+    StyledHeading,
     StyledText,
-    StyledLink, 
+    StyledLink,
     WrapperLink,
     StyledContainer,
 } from "./LinkImage.styled";
@@ -14,7 +14,7 @@ const MarketplacesLinkImage = () => {
     const { t } = useTranslation("technology-partners");
 
     return (
-        <Section 
+        <Section
         desktopSpacing={["168px", "112px"]}
         tabletSpacing={["144px", "80px"]}
         tabletSmallSpacing={["144px", "80px"]}
@@ -29,9 +29,9 @@ const MarketplacesLinkImage = () => {
                 <StyledText label={t(items.text)}/>
                 <WrapperLink>
                     {items.links?.map((item, idx) => (
-                        <StyledLink 
+                        <StyledLink
                         key={idx}
-                        href={item.href}
+                        href={t(item.href, { defaultValue: item.href })}
                         target={item.target}
                         />
                     ))}

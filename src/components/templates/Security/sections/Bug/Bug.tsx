@@ -39,7 +39,7 @@ const Bug = () => {
                         components={[
                             <Link
                               key={0}
-                              href={item.links?.href}
+                              href={item.links ? t(item.links.href, { defaultValue: item.links.href }) : ""}
                               target={item.links?.isExternal ? "_blank" : undefined}
                               color="main"
                               textUnderline

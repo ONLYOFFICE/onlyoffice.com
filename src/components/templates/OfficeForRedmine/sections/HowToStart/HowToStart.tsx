@@ -20,7 +20,7 @@ const HowToStart = () => {
               components={[
                 <Link
                   key={0}
-                  href="https://helpcenter.onlyoffice.com/integration/redmine.aspx"
+                  href={t("ReadDetailedInstructionsLink")}
                   target="_blank"
                   color="main"
                   textUnderline

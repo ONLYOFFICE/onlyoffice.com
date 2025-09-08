@@ -39,6 +39,7 @@
   "No": "いいえ",
   "Error": "エラー",
   "TheUploadedFileLikelyExceededTheMaximumFileSize": "アップロードされたファイルが最大ファイルサイズ<0>5MB</0>を超えている可能性があります",
+  "TheFileAppearsToBeBroken": "ファイルが破損しているようです。確認するか、別のファイルを使用してみてください。",
   "Close": "閉じる",
   "SubmitAnIssue": "問題を送信する",
   "TheUploadedFileHaZeroSize": "アップロードされたファイルのサイズがゼロなので、変換できません。",

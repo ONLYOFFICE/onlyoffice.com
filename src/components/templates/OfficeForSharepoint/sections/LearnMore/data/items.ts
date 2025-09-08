@@ -31,8 +31,9 @@ export const items: IBlogCard[] = [
     text: "HelpCenterDesc",
     links: [
       {
-        href: "https://helpcenter.onlyoffice.com/integration/gettingstarted-sharepoint.aspx#WOPI_block",
+        href: "HelpCenterLinkUrl",
         label: "HelpCenterLink",
+        isExternal: true,
       },
     ],
   },

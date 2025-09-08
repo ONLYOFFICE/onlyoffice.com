@@ -24,7 +24,7 @@
 
   "AlreadyUseAPopularDms": "Vous utilisez déjà un DMS ? Activez l'édition de documents et la collaboration avec ONLYOFFICE Docs",
   "OOOffersConnectors": "ONLYOFFICE propose une collection de connecteurs prêts à l’emploi pour une intégration profonde dans votre infrastructure.",
-  "AlreadyUseFeature1": "Gardez les informations sur les patients dans les documents textes, les feuilles de calcul ou les présentations cryptées de bout en bout. Editez-les en toute sécurité et collaborez dessus en temps réel. Hautement compatible avec les formats MS Office.",
+  "AlreadyUseFeature1": "Gardez les informations sur les patients dans les documents textes, les feuilles de calcul ou les présentations cryptées de bout en bout. Éditez-les en toute sécurité et collaborez dessus en temps réel. Hautement compatible avec les formats MS Office.",
   "AlreadyUseFeature2": "Définissez des autorisations granulaires pour les documents. Utilisez diverses fonctions de collaboration, notamment l’historique des versions, le suivi des modifications, les commentaires et le chat intégré.",
   "AlreadyUseFeature3": "Protégez les informations des patients contre la copie, le téléchargement ou l’impression.",
 
@@ -42,7 +42,7 @@
   "RestrictAccessToData": "Accès aux données limité",
   "RestrictAccessP1": "Ne donnez l’accès aux données des patients qu’aux personnes qui en ont besoin pour effectuer leur travail.",
   "RestrictAccessP2": "ONLYOFFICE offre des autorisations de documents granulaires pour contrôler l’accès, y compris l’accès complet, l’affichage uniquement, les commentaires, la révision ou les modes de formulaires à remplir.",
-  "RestrictAccessP3": "Pour valider que les utilisateurs sont bien les personnes autorisées à accéder aux données des patients, ONLYOFFICE Workspace est dotée d’un ensemble de fonctionnalités d’authentification :",
+  "RestrictAccessP3": "Pour valider que les utilisateurs sont bien les personnes autorisées à accéder aux données des patients, ONLYOFFICE Workspace est doté d’un ensemble de fonctionnalités d’authentification :",
 
   "TwoFactorAuthentication": "authentification à deux facteurs ;",
   "SingleSignOn": "authentification unique (SSO) ;",
@@ -63,12 +63,12 @@
   "VisitAPI": "Consulter l’API",
 
   "LogAndMonitorDataUsage": "Enregistrement et surveillance d'utilisation des données",
-  "LogAndMonitorDataUsageP1": "Surveillez qui, quand, et à partir de quels appareils et lieux accède à l’information.",
+  "LogAndMonitorDataUsageP1": "Surveillez qui, quand et à partir de quels appareils et lieux accède à l’information.",
   "LogAndMonitorDataUsageP2": "ONLYOFFICE Workspace est livré avec des journaux d’audit et des outils de surveillance intégrés qui vous permettent d’identifier et de résoudre rapidement les problèmes si un incident se produit.",
   "LogAndMonitorImgUrl": "/images/templates/healthcare/screens/fourth/fr/index_4_@x1.fr.png",
   "LogAndMonitorImgUrl2x": "/images/templates/healthcare/screens/fourth/fr/index_4_@x2.fr.png",
 
-  "BackupAndRestoreData": "Sauvegarde et restauration vos données",
+  "BackupAndRestoreData": "Sauvegarde et restauration de vos données",
   "BackupAndRestoreP1": "Protégez l’intégrité et la disponibilité de vos données sensibles grâce à des sauvegardes régulières.",
   "BackupAndRestoreP2": "ONLYOFFICE Workspace propose des outils de sauvegarde et de restauration automatique des données permettant aux services informatiques des organismes de santé de choisir un emplacement pour leurs sauvegardes : un disque local ou tout autre stockage privé sur le cloud d’un tiers.",
   "BackupAndRestoreImgUrl": "/images/templates/healthcare/screens/fifth/fr/index_5_@x1.fr.png",

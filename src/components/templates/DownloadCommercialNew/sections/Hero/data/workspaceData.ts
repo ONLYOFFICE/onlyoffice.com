@@ -21,7 +21,7 @@ export const workspaceProducts: IDownloadBlock[] = [
     version: enterpriseWindows.version,
     releaseDate: enterpriseWindows.date,
     readInstructionLink:
-      "https://helpcenter.onlyoffice.com/workspace/installation/workspace-enterprise-install-windows.aspx",
+      "ForWindowsServerWorkspaceEnterpriseInstructionLink",
     buttons: [
       {
         id: "onlyoffice_workspace_enterprise_for_windows",
@@ -51,7 +51,7 @@ export const workspaceProducts: IDownloadBlock[] = [
     version: enterpriseWindows.version,
     releaseDate: enterpriseWindows.date,
     readInstructionLink:
-      "https://helpcenter.onlyoffice.com/workspace/installation/workspace-enterprise-install-docker.aspx",
+      "DockerWorkspaceEnterpriseInstructionLink",
     buttons: [
       {
         id: "onlyoffice_workspace_enterprise_for_docker_image",
@@ -81,7 +81,7 @@ export const workspaceProducts: IDownloadBlock[] = [
     version: enterpriseWindows.version,
     releaseDate: enterpriseWindows.date,
     readInstructionLink:
-      "https://helpcenter.onlyoffice.com/workspace/installation/workspace-enterprise-install-linux.aspx",
+      "ForDebianUbuntuWorkspaceEnterpriseInstructionLink",
     buttons: [
       {
         id: "onlyoffice_workspace_enterprise_for_debian_ubuntu_and_derivatives",
@@ -111,7 +111,7 @@ export const workspaceProducts: IDownloadBlock[] = [
     version: enterpriseWindows.version,
     releaseDate: enterpriseWindows.date,
     readInstructionLink:
-      "https://helpcenter.onlyoffice.com/workspace/installation/workspace-enterprise-install-linux.aspx",
+      "ForCentOSRHELWorkspaceEnterpriseInstructionLink",
     buttons: [
       {
         id: "onlyoffice_workspace_enterprise_for_centos_rhel_and_derivatives",
@@ -140,7 +140,7 @@ export const workspaceProducts: IDownloadBlock[] = [
     version: weAws.version,
     releaseDate: weAws.date,
     readInstructionLink:
-      "https://helpcenter.onlyoffice.com/workspace/installation/workspace-enterprise-install-linux.aspx",
+      "AmazonMachineImageWorkspaceEnterpriseInstructionLink",
     buttons: [
       {
         id: "onlyoffice_workspace_enterprise_for_amazon_machine_image",
@@ -189,7 +189,7 @@ export const workspaceProducts: IDownloadBlock[] = [
     version: weAlibabacloud.version,
     releaseDate: weAlibabacloud.date,
     readInstructionLink:
-      "https://helpcenter.onlyoffice.com/workspace/installation/workspace-enterprise-install-alibaba.aspx",
+      "AlibabaCloudImageWorkspaceEnterpriseInstructionLink",
     buttons: [
       {
         id: "onlyoffice_workspace_enterprise_for_alibaba_cloud_image",

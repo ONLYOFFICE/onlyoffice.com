@@ -21,13 +21,13 @@
   "CloseIntegration": "Intégration avec Mail",
   "CloseIntegrationText": "Ajoutez des contacts du message à votre base de données, envoyez des messages et des factures et consultez la correspondance avec les clients directement dans le système CRM. Organisez l'envoi en masse juste depuis CRM ONLYOFFICE.",
   "CloseIntegrationImage": "/images/templates/crm/features/fr/close_integration.png",
-  "CustomerCall": "Passer des appels clients",
+  "CustomerCall": "Appels aux clients",
   "CustomerCallText": "Passez et répondez aux appels des clients directement depuis le CRM grâce à l'intégration ONLYOFFICE Twilio.",
   "CustomerCallImage": "/images/templates/crm/features/fr/customer_call.png",
   "SalesReporting": "Rapport de vente",
   "SalesReportingText": "Générez des rapports pour identifier les forces et les faiblesses dans ventes et savoir ce qui se passe dans votre entreprise.",
   "SalesReportingImage": "/images/templates/crm/features/fr/sales_reporting.png",
 
-  "ItIsPrettyNice": "It's a pretty nice and easy-to-use CRM system.",
+  "ItIsPrettyNice": "C'est un système CRM plutôt sympa et facile à utiliser.",
   "LiveEnterprise": "Live Enterprise"
 }

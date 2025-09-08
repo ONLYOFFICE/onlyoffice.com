@@ -34,13 +34,21 @@ const Already = () => {
   return (
     <Section>
       <Container>
-        {locale !== "ja" ? (
+        {locale === "fr" ? (
           <StyledAlreadyHeading
             level={2}
             textAlign="center"
             $isVisible={visible}
           >
-            {t("AlreadyUse")} <span> {t(items[index])}</span>?
+            {t("AlreadyUse")} <span> {t(items[index])}</span> ?
+          </StyledAlreadyHeading>
+        ) : locale === "ja" ? (
+          <StyledAlreadyHeading
+            level={2}
+            textAlign="center"
+            $isVisible={visible}
+          >
+            <span>{t(items[index])}</span>{t("AlreadyUse")}
           </StyledAlreadyHeading>
         ) : (
           <StyledAlreadyHeading
@@ -48,7 +56,7 @@ const Already = () => {
             textAlign="center"
             $isVisible={visible}
           >
-            <span>{t(items[index])}</span>{t("AlreadyUse")}
+            {t("AlreadyUse")} <span> {t(items[index])}</span>?
           </StyledAlreadyHeading>
         )}
         <StyledAlreadyText
