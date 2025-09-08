@@ -70,13 +70,18 @@ const Hero = ({
                     <DownloadBlock
                       key={index}
                       {...item}
+                      readInstructionLink={
+                        item.readInstructionLink
+                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          : undefined
+                      }
                       heading={t(item.heading)}
                       buttons={item.buttons.map((button) => ({
                         id: button.id,
                         label: t(button.label),
                         ...(button.link?.href && {
                           link: {
-                            href: button.link.href,
+                            href: t(button.link.href, { defaultValue: button.link.href }),
                             isExternal: button.link.isExternal,
                           },
                         }),
@@ -125,6 +130,11 @@ const Hero = ({
                     <DownloadBlock
                       key={index}
                       {...item}
+                      readInstructionLink={
+                        item.readInstructionLink
+                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          : undefined
+                      }
                       heading={t(item.heading)}
                       buttons={item.buttons.map((button) => ({
                         id: button.id,
@@ -163,6 +173,11 @@ const Hero = ({
                   <DownloadBlock
                     key={index}
                     {...item}
+                    readInstructionLink={
+                      item.readInstructionLink
+                        ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                        : undefined
+                    }
                     heading={t(item.heading)}
                     buttons={item.buttons.map((button) => ({
                       id: button.id,
@@ -201,6 +216,11 @@ const Hero = ({
                   <DownloadBlock
                     key={index}
                     {...item}
+                    readInstructionLink={
+                      item.readInstructionLink
+                        ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                        : undefined
+                    }
                     heading={t(item.heading)}
                     buttons={item.buttons.map((button) => ({
                       id: button.id,

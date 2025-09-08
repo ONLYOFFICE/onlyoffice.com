@@ -38,7 +38,7 @@ const CardCommentDistributions = () => {
                 />
               </StyledText>
             <StyledLink
-                href={items.linkUrl}
+                href={t(items.linkUrl, { defaultValue: items.linkUrl })}
                 label={t(items.textBtn)}
                 color="main"
                 textUnderline

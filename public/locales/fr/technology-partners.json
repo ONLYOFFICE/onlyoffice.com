@@ -7,7 +7,7 @@
     "BecomePartner": "Devenir partenaire",
 
     "Software": "Logiciels",
-    "BuildCreate": "Construisez, créez, intégrez, offrez à vos utilisateurs la meilleure expérience de bureau en ligne, et plus encore.",
+    "BuildCreate": "Construisez, créez, intégrez, offrez à vos utilisateurs la meilleure expérience de bureau en ligne et plus encore.",
     "IntegrateOnline": "Intégrez des éditeurs de documents en ligne",
     "BringCollaborative": "Offrez aux utilisateurs de vos services Web, sous votre propre marque, la possibilité de modifier en collaboration des documents texte, des feuilles de calcul et des présentations, ainsi que de créer des formulaires et de visualiser des fichiers PDF.",
     "ExploreExisting": "Explorer les intégrations de partenaires existants",
@@ -35,6 +35,7 @@
     "ForUsItIsImportantToShow": "“Pour nous, il est important de montrer qu'il n'est pas nécessaire de perdre des mois ou des semaines pour trouver de bonnes solutions combinant open source et protection de la vie privée dès la conception. C'est encore plus important pour des besoins essentiels comme une suite bureautique en ligne que vous utilisez quotidiennement. Nous voulions baser notre cloud personnel sur des solutions open-source éprouvées et lorsque nous avons cherché des alternatives, ONLYOFFICE était un choix évident.”",
     "GaelDuval": "<0>Gaël Duval,</0> <br/>PDG de Murena & et fondateur de e Foundation",
     "ReadTheFullCaseOfMurena": "Lire le témoignage complet de Murena",
+    "ReadTheFullCaseOfMurenaLink": "https://www.onlyoffice.com/blog/fr/2022/12/ecosysteme-open-source-axe-sur-le-respect-de-la-vie-privee-comment-murena-integre-onlyoffice-a-e-os",
 
     "Hosting": "Hébergement",
     "ProvideYourCustomers": "Fournissez à vos clients des éditeurs en ligne et des outils de productivité ONLYOFFICE hébergés dans votre environnement robuste. Découvrir la <0>liste des fournisseurs d'hébergement.</0>",
@@ -42,18 +43,28 @@
     "ONLYOFFICEIsTheSoftware": "“ONLYOFFICE est le logiciel que nous utilisons chez Artera, nous l’avons testé et il nous a immédiatement semblé le meilleur. C’est pourquoi nous sommes très fiers de cette collaboration. Les utilisateurs d’Artera bénéficient d’une intégration complète avec notre hébergement en nuage et ONLYOFFICE Docs.”",
     "SergioRavera": "<0>Sergio Ravera,</0> <br/>PDG de DHH Switzerland SA, propriétaire de la marque Artera",
     "ReadTheFullCaseOfArtera": "Lire le témoignage complet d'Artera",
+    "ReadTheFullCaseOfArteraLink": "https://www.onlyoffice.com/blog/fr/2022/09/deployez-onlyoffice-docs-sur-artera",
 
     "OSDistributions": "Distributions de systèmes d'exploitation",
     "PreInstallONLYOFFICE": "Préinstallez ONLYOFFICE sur votre distribution Linux ou ajoutez-le à votre magasin de logiciels, certifiez ONLYOFFICE pour qu'il soit compatible avec votre système d'exploitation, et soyez listé sur notre site et notre blog officiels pour augmenter votre trafic.",
+    "KylinSoftLink": "https://www.onlyoffice.com/blog/fr/2022/11/onlyoffice-certifie-par-kylin-os",
+    "RisiOsLink": "https://www.onlyoffice.com/blog/fr/2022/09/onlyoffice-desktop-editors-preinstalles-sur-risios",
+    "BrOsLink": "https://www.onlyoffice.com/blog/fr/2022/09/onlyoffice-desktop-editors-devient-une-suite-par-defaut-sur-br-os",
+    "WubuntuLink": "https://www.onlyoffice.com/blog/fr/2024/08/onlyoffice-desktop-editors-sur-wubuntu",
+    "LinkatLink": "https://www.onlyoffice.com/blog/fr/2020/07/applications-de-bureau-onlyoffice-sont-disponibles-sous-linkat",
+    "EscuelasLink": "https://www.onlyoffice.com/blog/fr/2020/06/comment-escuelas-linux-et-onlyoffice-contribuent-a-l-enseignement-de-base",
 
     "WeAreNowPartnering": "“Nous sommes maintenant en partenariat avec ONLYOFFICE pour la préinstaller sur risiOS. ONLYOFFICE est une excellente suite bureautique avec une interface utilisateur facile, une excellente compatibilité avec les documents Microsoft Office, et tout ce que vous attendez d’une suite bureautique.”",
     "CameronKnauff": "<0>Cameron Knauff,</0> <br/> fondateur de risiOS",
     "ReadTheFullCaseOfRisiOS": "Lire le témoignage complet de risiOS",
+    "ReadTheFullCaseOfRisiOSLink": "https://www.onlyoffice.com/blog/fr/2022/09/onlyoffice-desktop-editors-preinstalles-sur-risios",
 
     "Marketplaces": "Marketplaces",
     "CooperateWithUsOnAdding": "Coopérez avec nous pour ajouter les solutions ONLYOFFICE sur votre marketplace afin d'augmenter le nombre d'utilisateurs et de réaliser des bénéfices.",
+    "AlibabaLink": "https://www.onlyoffice.com/blog/fr/2021/11/onlyoffice-docs-et-workspace-sur-alibaba-cloud",
+    "OvhCloudLink": "https://www.onlyoffice.com/blog/fr/2020/09/onlyoffice-workspace-debarque-sur-ovhcloud-marketplace",
 
-    "BenefitsForONLYOFFICE": "Coopérez avec nous pour ajouter les solutions ONLYOFFICE sur votre marketplace afin d'augmenter le nombre d'utilisateurs et de réaliser des bénéfices. Benefits for ONLYOFFICE technology partners",
+    "BenefitsForONLYOFFICE": "Avantages pour les partenaires technologiques ONLYOFFICE",
     "IndividualApproach": "Approche individuelle pour chaque partenaire",
     "ProfitableAndFair": "Conditions rentables et équitables",
     "StraightforwardEnrollment": "Inscription simple",
@@ -64,7 +75,7 @@
 
     "WouldLikeToEnter": "Souhaitez-vous établir un partenariat technologique avec ONLYOFFICE ?",
     "ContactUsAtMail": "Contactez nous à <0>sales@onlyoffice.com</0> pour discuter de tous les détails.",
-    "ContactUs": "Contactez-nous",
+    "ContactUs": "NOUS CONTACTER",
 
     "Benefits": "Avantages"
 }

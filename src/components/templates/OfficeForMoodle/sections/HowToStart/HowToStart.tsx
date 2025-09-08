@@ -98,7 +98,7 @@ const HowToStart = () => {
                 <Link
                   key={0}
                   id="how-to-start-instructions"
-                  href="https://helpcenter.onlyoffice.com/integration/moodle.aspx"
+                  href={t("ReadDetailedInstructionsLink")}
                   target="_blank"
                   color="main"
                   textUnderline

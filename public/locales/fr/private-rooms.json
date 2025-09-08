@@ -1,5 +1,5 @@
 {
-    "PageTitle": "Coédition des document chiffrée de bout-en-bout | Salles privées d'ONLYOFFICE",
+    "PageTitle": "Coédition de documents chiffrée de bout-en-bout | Salles privées d'ONLYOFFICE",
     "PageDescription": "Activez les Salles Privées d'ONLYOFFICE ou chaque élément saisi est chiffré de bout-en-bout.",
 
     "KeepYourDocuments": "Gardez vos documents toujours cryptés",
@@ -70,7 +70,7 @@
     "HowAreTheFile": "Comment les clés de cryptage des fichiers dans les salles privées sont-elles stockées et protégées ?",
     "TheEncryptionKeys": "Les clés de cryptage de chaque fichier sont cryptées et décryptées sur la machine à l'aide d'un cryptage asymétrique et stockées sous forme cryptée dans le système de fichiers.",
     "HowAreTheEncryption": "Comment les clés de cryptage sont-elles distribuées entre les utilisateurs lorsqu'un fichier est partagé ?",
-    "WhenYouShareAFile": "Lorsque vous partagez un fichier dans les salles privés, la clé de chiffrement est cryptée à l'aide de la clé publique du destinataire. Le fichier reçu est ensuite décrypté sur sa machine avec sa clé privée lorsque l'utilisateur l'ouvre.",
+    "WhenYouShareAFile": "Lorsque vous partagez un fichier dans les salles privées, la clé de chiffrement est cryptée à l'aide de la clé publique du destinataire. Le fichier reçu est ensuite décrypté sur sa machine avec sa clé privée lorsque l'utilisateur l'ouvre.",
     "IsThereAMaster": "Y a-t-il une clé principale pour tous les fichiers cryptés ?",
     "WeDoNotUseMaster": "Nous n'utilisons pas de clés maîtres pour le cryptage des documents. Le chiffrement asymétrique avec des paires de clés RSA personnelles utilisé dans ONLYOFFICE est une méthode plus fiable qui permet également une collaboration chiffrée.",
 
