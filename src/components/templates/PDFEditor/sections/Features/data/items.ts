@@ -55,7 +55,7 @@ export const items: IEditorsItem[] = [
     links: [
       {
         label: "Feature5Link",
-        href: "https://templates.onlyoffice.com",
+        href: "templatesLink",
         isExternal: true,
       },
     ],

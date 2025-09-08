@@ -32,7 +32,9 @@
   "Feature6ComingSoon": "bientôt disponible",
   "Feature6Desc": "Protégez votre formulaire ou ses parties, notamment les données de champs. ONLYOFFICE utilise l'algorithme symétrique AES 256 GCM pour chiffrer les données et l'algorithme asymétrique basé sur les clés Curve25519 pour chiffrer une clé.",
 
-  "LearnMoreHeading": "En savoir plus sur le Créateur de formulaires à remplir ONLYOFFICE",
+  "FeatureLinkTemplateOO": "https://templates.onlyoffice.com/fr",
+
+  "LearnMoreHeading": "En savoir plus sur le créateur de formulaires à remplir ONLYOFFICE",
   "BlogDesc": "Automatisez la création de formulaires en remplaçant les espaces réservés par des champs de formulaire à l'aide d'une macro",
   "BlogLink": "https://www.onlyoffice.com/blog/fr/2024/01/macro-ajouter-textforms-aux-modeles-de-formulaires",
   "TutorialsDesc": "Comment créer des formulaires à remplir",

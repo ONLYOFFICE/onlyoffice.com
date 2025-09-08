@@ -55,14 +55,14 @@ const LogoBlock = ({ id }: { id: string }) => {
         <StyledBrandbookBlockBtns>
           <Button
             as="a"
-            download
-            href="/images/templates/press-downloads/logo/brandbook/files/onlyoffice_brandbook.pdf"
+            href="https://static-www.onlyoffice.com/static/brandbook(ENG).pdf"
+            target="_blank"
             label={t("BrandbookPreview")}
           />
           <Button
             as="a"
-            href="https://static-www.onlyoffice.com/static/brandbook(ENG).pdf"
-            target="_blank"
+            download
+            href="/images/templates/press-downloads/logo/brandbook/files/onlyoffice_brandbook.pdf"
             variant="secondary"
             label={t("BrandbookDownload")}
           />

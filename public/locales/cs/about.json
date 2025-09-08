@@ -1,0 +1,43 @@
+{
+  "PageTitle": "O ONLYOFFICU | ONLYOFFICE",
+  "PageTitleOG": "O projektu",
+  "PageDescription": "Přečtěte si o misi ONLYOFFICU, její historii a týmu.",
+  "HeroHeadingRun": "Rozjeďte si vlastní kancelář s <0>ONLYOFFICE</0>",
+  "HeroTextOurMission": "Naším posláním je přinést inovativní webové kancelářské aplikace",
+  "HeroQuotesTextWeWant": "Chceme, aby naše online editory šlapaly jako švýcarské hodinky",
+  "HeroQuotesTitleLevBannov": "Lev Bannov",
+  "HeroQuotesSubtitleFounder": "Zakladatel a generální ředitel",
+  "AscensioSystem": "Ascensio System SIA - domov <0>ONLYOFFICE</0>",
+  "AscensioDescriptions": [
+    "ONLYOFFICE je projekt vytvrořený zkušenými IT experty z Ascensio System SIA, vedoucí IT společnosti se sídlem v Rize, Lotyšsko. Původně byl ONLYOFFICE navržen pro spolupráci jednotlivých týmů.",
+    "Pokus o jeho představení širšímu publiku byl ve výsledku úspěšný: ONLYOFFICE získal od internetové komunity velice pozitivní zpětnou vazbu. V důsledku toho byly některé funkce změněny nebo rozšířeny, což přineslo vysoký a stabilní růst uživatelů z ruzných zemí.",
+    "V současné době je ONLYOFFICE mezinárodním open source projektem se zaměstnanci a přispěvateli ve více než 30 zemích. Vedle naší hlavní kanceláře v Rize máme pobočky v Londýně a Dallasu, Taškentu a Bělehradě, Jerevanu, Singapuru a Shanghai. Chcete se připojit k naší velké open source rodině? Podívejte se, jak se <1>stát přispěvatelem</1>, nebo objevte <2>volná pracovní místa</2>."
+  ],
+  "AscensioDescriptionsTextLink1": "https://www.onlyoffice.com/blog/2023/08/onlyoffice-opens-holding-in-singapore",
+  "PeopleTextOnlyOffice": "ONLYOFFICE nyní využívá více než",
+  "PeopleTextCount": "15 000 000 lidí",
+  "PeopleTextAllOver": "po celém světě",
+  "PeopleTextCustomer": "Příběhy zákazníků",
+  "FeaturesItemHeading1": "<0>ONLYOFFICE</0> - budnoucnost práce s dokumenty",
+  "FeaturesItemText1": [
+    "V Ascensio System SIA vždy používáme nejaktuálnější trendy technologie a snažíme se jich efektivně využít.",
+    "Jako první jsme sestavili online editory dokumentů pomocí elementu Canvas v HTML5. To nám umožnilo získat náskok nad konkurencí, protože jsme schopni poskytnout našim zákazníkům nejkomplexnější online kancelářský balík, který je navíc vysoce kompatibilní se soubory Microsoft Office, OpenDocument a s mnoho dalšími.",
+    "Po prvním představení na <0>CeBitu</0>, ONLYOFFICE online editory dokumentů se staly naší pýchou a radostí. Nyní je můžete použít jako součást naší sady produktů nebo je snadno propojit s vaším vlastním SaaS řešením."
+  ],
+  "FeaturesItemLink1": "Zjistěte více o našich produktech",
+  "FeaturesItemTextLink1": "https://www.onlyoffice.com/blog/2012/03/teamlab-at-cebit-2012-how-we-did-it/?from=about",
+  "FeaturesItemHeading2": "<0>ONLYOFFICE</0> - JEDINÁ věc, kterou potřebujete pro růst vašeho podnikání",
+  "FeaturesItemText2": [
+    "ONLYOFFICE nabízí kompletní sadu produktů pro správu dokumentů, řízení projetků, CRM, kalendáře, mail a propojenou síť.",
+    "Takto nebudete muset přepínat mezi jednotlivými aplikacemi pro provedení různých úkolů.",
+    "Získejte multifunkční systém pro organizaci každého kroku vaší práce, zlepšete svoji pracovní produktivitu a optimalizujte veškeré vynaložené úsilí."
+  ],
+  "FeaturesItemLink2": "Další informace o ONLYOFFICE Workspace",
+  "FeaturesItemHeading3": "<0>ONLYOFFICE DocSpace</0> - document collaboration made simpler",
+  "FeaturesItemText3": [
+    "ONLYOFFICE DocSpace is intended to improve collaboration on office documents and other content with various people you need to interact such as your colleagues, teammates, customers, partners, contractors, sponsors, etc.",
+    "The platform provides a room-based environment for organizing a clear file structure depending on your needs or project goals. Flexible access permissions and user roles allow you to fine-tune the access to the whole space or separate rooms."
+  ],
+  "FeaturesItemLink3": "Learn more about ONLYOFFICE DocSpace",
+  "DiscoverHeading": "Objevte náš příběh"
+}

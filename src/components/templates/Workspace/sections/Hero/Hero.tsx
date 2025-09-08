@@ -5,6 +5,7 @@ import {
   StyledHeroImage,
   StyledHeroSection,
   StyledHeroWrapper,
+  StyledHeroButtons
 } from "./Hero.styled";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -26,11 +27,20 @@ const Hero = () => {
           <StyledHeroContent>
             <Heading size={2} label={t("HeroTitle")} />
             <Text size={1} label={t("HeroText")} />
-            <Button
-              as="a"
-              href="/download-workspace?from=workspace"
-              label={t("GetItNow")}
-            />
+
+            <StyledHeroButtons>
+              <Button
+                as="a"
+                href="/download-workspace?from=workspace"
+                label={t("GetItNow")}
+              />
+              <Button
+                as="a"
+                href="/workspace-prices.aspx?from=workspace"
+                label={t("PickYourPrice")}
+                variant="secondary"
+              />
+            </StyledHeroButtons>
           </StyledHeroContent>
           <StyledHeroImage />
         </StyledHeroWrapper>

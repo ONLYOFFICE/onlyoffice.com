@@ -42,7 +42,7 @@ const Budgets = () => {
                     bgColor={item.bgColor}
                     borderColor={item.borderColor}
                     linkLabel={t(item.linkLabel || "")}
-                    linkHref={t(item.linkHref || "")}
+                    linkHref={item.linkHref || ""}
                   />
                 ))}
               </StyledBudgetItem>

@@ -39,6 +39,7 @@
   "No": "Não",
   "Error": "Erro",
   "TheUploadedFileLikelyExceededTheMaximumFileSize": "O arquivo enviado provavelmente excedeu o tamanho máximo de arquivo <0>5 MB</0>",
+  "TheFileAppearsToBeBroken": "O arquivo parece estar corrompido. Verifique-o ou tente usar outro.",
   "Close": "Fechar",
   "SubmitAnIssue": "Relatar um problema",
   "TheUploadedFileHaZeroSize": "O arquivo enviado tem tamanho zero e, portanto, não pode ser convertido.",

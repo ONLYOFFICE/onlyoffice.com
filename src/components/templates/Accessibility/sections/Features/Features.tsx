@@ -59,8 +59,9 @@ const Features = () => {
             .map((group, groupIndex) => (
               <FeatureImageItem
                 links={group.links?.map((link) => ({
-                  ...link,
+                  href: t(String(link.href)),
                   label: t(String(link.label)),
+                  isExternal: link.isExternal,
                 }))}
                 key={groupIndex}
                 image={{

@@ -1,12 +1,12 @@
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 import { items } from "./data/items";
 import { EditorsFeatures } from "@src/components/modules/editors/EditorsFeatures";
+import { getLink } from "@src/utils/getLink";
+import { ILocale } from "@src/types/locale";
 
-const Features = () => {
+const Features = ({ locale }: ILocale) => {
   const { t: t1 } = useTranslation("Editors");
   const { t: t2 } = useTranslation("slides");
-  const { locale } = useRouter();
 
   return (
     <EditorsFeatures
@@ -19,6 +19,10 @@ const Features = () => {
             ? item.links.map((link) => ({
                 ...link,
                 label: t1(String(link.label)) || t2(String(link.label)),
+                href:
+                  link.href === "/app-directory"
+                    ? getLink("marketplace", locale)
+                    : link.href,
               }))
             : undefined,
         image: {

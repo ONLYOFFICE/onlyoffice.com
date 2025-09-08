@@ -39,6 +39,7 @@
   "No": "No",
   "Error": "Error",
   "TheUploadedFileLikelyExceededTheMaximumFileSize": "The uploaded file likely exceeded the maximum file size <0>5 Mb</0>",
+  "TheFileAppearsToBeBroken": "The file appears to be broken. Please check it or try using a different one.",
   "Close": "Close",
   "SubmitAnIssue": "Submit an issue",
   "TheUploadedFileHaZeroSize": "The uploaded file has zero size and therefore cannot be converted.",

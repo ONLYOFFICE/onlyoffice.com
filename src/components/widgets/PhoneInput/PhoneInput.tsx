@@ -24,7 +24,8 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
     const { t } = useTranslation("PhoneInput");
     const { IPGeolocationInfo, setIPGeolocationInfo } = useIPGeolocationStore();
     const leftSideRef = useRef<HTMLButtonElement>(null);
-    const countriesRef = useRef<HTMLDivElement>(null);
+    const countriesRef = useRef<HTMLUListElement>(null);
+    const selectedRef = useRef<HTMLLIElement>(null);
 
     const [isOpen, setIsOpen] = useState(false);
     const [selectedKey, setSelectedCountry] = useState("US");
@@ -36,6 +37,18 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
       countryCode: "+1",
     };
     const [inputValue, setInputValue] = useState(currentValue.countryCode);
+
+    useEffect(() => {
+      if (countriesRef.current && selectedRef.current) {
+        const parent = countriesRef.current;
+        const el = selectedRef.current;
+
+        const elOffsetTop = el.offsetTop;
+        const elHeight = el.offsetHeight;
+
+        parent.scrollTop = elOffsetTop - parent.clientHeight / 2 + elHeight / 2;
+      }
+    }, [isOpen, selectedKey]);
 
     useEffect(() => {
       const selected = countries.find((item) => item.country === selectedKey);
@@ -64,8 +77,10 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
           const res = await fetch("/api/ip-geolocation");
           const data = await res.json();
 
-          setSelectedCountry(data.country);
-          setIPGeolocationInfo(data);
+          if (data?.country) {
+            setSelectedCountry(data.country);
+            setIPGeolocationInfo(data);
+          }
         } catch (error) {
           console.error("Error fetching IP:", error);
         }
@@ -92,8 +107,12 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
     ]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      setInputValue(e.target.value);
-      onChange?.(e);
+      const onlyNumbers = e.target.value.replace(/[^\d+]/g, "");
+      setInputValue(onlyNumbers);
+      onChange?.({
+        ...e,
+        target: { ...e.target, value: onlyNumbers },
+      } as React.ChangeEvent<HTMLInputElement>);
     };
 
     return (
@@ -128,18 +147,19 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
         />
 
         {isOpen && (
-          <StyledPhoneInputCountries ref={countriesRef}>
-            <StyledPhoneInputContriesWrapper>
+          <StyledPhoneInputCountries>
+            <StyledPhoneInputContriesWrapper ref={countriesRef}>
               {countries.map((item, index) => (
-                <li key={index}>
+                <li
+                  key={index}
+                  ref={item.country === selectedKey ? selectedRef : null}
+                >
                   <StyledPhoneInputContriesItem
+                    $selected={item.country === selectedKey}
                     onClick={() => {
                       setSelectedCountry(item.country);
                       setInputValue(
-                        `${item.countryCode} ${inputValue.replace(
-                          /^\+?\d*\s*/,
-                          "",
-                        )}`,
+                        `${item.countryCode} ${inputValue.replace(/^\+?\d*\s*/, "")}`,
                       );
                       setIsOpen(false);
                     }}

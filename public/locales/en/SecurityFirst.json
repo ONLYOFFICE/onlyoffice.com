@@ -1,4 +1,6 @@
 {
+  "SecurityFirstImage": "/images/modules/security-first/secure.png",
+  "SecurityFirstImage2x": "/images/modules/security-first/secure@2x.png",
   "SecurityFirst": "<0>Security</0> first",
   "OpenSourceCodeAvailableOnGithub": "Open source code available on GitHub",
   "ComplianceWithInternationalSecurityStandards": "Compliance with international security standards",

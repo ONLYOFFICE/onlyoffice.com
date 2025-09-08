@@ -75,6 +75,7 @@
   "HowToStartStep4": "Configure the installed plugin.",
   "HowToConnect": "Connecting ONLYOFFICE Docs with Moodle",
   "ReadDetailedInstructions": "Read detailed instructions in <0>Help Center</0>",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/moodle.aspx",
   "Tab1Label": "Docs",
   "Tab2Label": "DocSpace",
 

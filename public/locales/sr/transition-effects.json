@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Transition effects for PowerPoint presentations | ONLYOFFICE",
+  "PageDescription": "Keep your audience’s attention by adding transitions to your presentation’s slides with ONLYOFFICE. Set the start time, duration, and delay parameters.",
+  "Header": "Kreirajte zanimljive prezentacije",
+  "SubHeader": "Kreirajte interaktivne PowerPoint prezentacije sa bogatim sadržajem i izvanrednim dizajnom",
+
+  "HeroImgUrl": "/images/templates/transition-effects/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/transition-effects/hero/hero@2x.png",
+
+  "Feature1Title": "Napravite savršen raspored",
+  "Feature1Desc": "Izaberite između više stilova slajdova. Lako upravljajte i preuređujte slajdove, te dodajte hiperlinkove, podnožja i poravnajte elemente uz napredne opcije za poravnavanje i prelamanje teksta.",
+
+  "Feature2Title": "Pišite besprekorne tekstove",
+  "Feature2Desc": "Uređujte i formatirajte tekstualna polja, primenjujte fontove, stilove i rasporede teksta. Proverite pravopis, pronađite sinonime i antonime pomoću tezaurusa, prevodite na bilo koji jezik uz jedan od dostupnih prevodilačkih dodataka (Google Prevodilac, DeepL, ili Apertium).",
+
+  "Feature3Title": "Umetnite šeme i grafike",
+  "Feature3Desc": "Ispričajte svoju priču uz prave vizuelne elemente. Kreirajte i u potpunosti prilagodite grafikone, automatske oblike, tabele i OLE tabele, jednačine i tekstove. Vizuelno predstavite svoje ideje pomoću SmartArt grafike. Umetnite slike i uredite ih uz Photo Editor, dodajte video zapise preko YouTube-a i dodajte linije koda pomoću Highlight code dodatka. Koristite prilagođene slike kao oznake u nabrajanjima.",
+
+  "Feature4Title": "Dodajte tranzicione efekte slajdovima",
+  "Feature4Desc": "Zadržite pažnju svoje publike dodavanjem tranzicija slajdovima svoje prezentacije: Bledenje, Guranje, Brisanje, Cepanje, Otkrivanje, Pokrivanje, Sat ili Zumiranje. Podesite parametre početnog vremena, trajanja i kašnjenja.",
+
+  "Feature1ImgUrl": "/images/templates/transition-effects/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/transition-effects/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/transition-effects/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/transition-effects/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/transition-effects/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/transition-effects/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/transition-effects/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/transition-effects/features/pic4@2x.png"
+}

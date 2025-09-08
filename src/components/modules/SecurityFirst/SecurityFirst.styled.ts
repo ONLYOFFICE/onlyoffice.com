@@ -15,14 +15,17 @@ const StyledSecurityFirst = styled.div`
   }
 `;
 
-const StyledSecurityFirstImage = styled.div`
+const StyledSecurityFirstImage = styled.div<{
+  $image: string;
+  $image2x: string;
+}>`
   padding-bottom: 77.58%;
-  background-image: url("/images/templates/main/security/secure.png");
+  background-image: url(${(props) => props.$image});
   background-repeat: no-repeat;
   background-size: cover;
 
   @media ${device.retina} {
-    background-image: url("/images/templates/main/security/secure@2x.png");
+    background-image: url(${(props) => props.$image2x});
   }
 `;
 
@@ -83,7 +86,7 @@ const StyledSecurityFirstFeatures = styled.ul`
   li {
     width: 64px;
     height: 64px;
-    background-image: url("/images/templates/main/security/features.svg");
+    background-image: url("/images/modules/security-first/features.svg");
     background-repeat: no-repeat;
 
     &:not(:last-child) {

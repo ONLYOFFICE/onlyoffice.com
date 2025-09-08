@@ -27,7 +27,7 @@ export const items: ICollapseExtended[] = [
     children: "CanIUseOODocsEnterpriseUnderMyCompanyBrandText",
     links: [
       {
-        href: "mailto:sales@onlyoffice.com",
+        href: "SalesOOMail",
       },
     ],
   },
@@ -36,7 +36,7 @@ export const items: ICollapseExtended[] = [
     children: "WhatIfIRepresentAnEducationalInstitutionText",
     links: [
       {
-        href: "mailto:sales@onlyoffice.com",
+        href: "SalesOOMail",
       },
     ],
   },
@@ -45,11 +45,11 @@ export const items: ICollapseExtended[] = [
     children: "WhereCanIFindAnswersToOtherQuestionsText",
     links: [
       {
-        href: "https://helpcenter.onlyoffice.com/faq/docs-enterprise.aspx",
+        href: "WhereCanIFindAnswersToOtherQuestionsLink",
         isExternal: true,
       },
       {
-        href: "mailto:sales@onlyoffice.com",
+        href: "SalesOOMail",
       },
     ],
   },

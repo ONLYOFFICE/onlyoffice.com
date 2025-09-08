@@ -17,7 +17,7 @@
   "TailoredImgUrl": "/images/templates/custom-rooms/features/fr/tailored_to_any_scenario.png",
   "TailoredImgUrl2x": "/images/templates/custom-rooms/features/fr/tailored_to_any_scenario@2x.png",
 
-  "SophisticatedDesc": "Ajustez l'accès à la salle grâce à un large éventail de droits d'accès flexibles",
+  "SophisticatedDesc": "Ajustez l'accès à la salle grâce à un large éventail de droits d'accès flexibles.",
   "WatchAVideoToLearnMore": "Regarder la vidéo pour en savoir plus",
   "SophisticatedImgUrl": "/images/templates/custom-rooms/features/fr/sophisticated-access-settings.png",
   "SophisticatedImgUrl2x": "/images/templates/custom-rooms/features/fr/sophisticated-access-settings@2x.png",
@@ -30,7 +30,7 @@
 
   "HelpCenter": "Centre d'aide",
   "HelpCenterDesc": "Consultez les guides d'utilisation détaillés pour un travail efficace",
-  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/fr/docspace/administration/docspace-custom-rooms.aspx",
   "LearnMore": "En savoir plus",
 
   "YouTube": "YouTube",

@@ -38,7 +38,7 @@
   "DocspaceAppScreen2Tab4ImgUrl": "/images/templates/office-for-wordpress/account/fr/screen4.png",
   "DocspaceAppScreen2Tab4ImgUrl2x": "/images/templates/office-for-wordpress/account/fr/screen4@2x.png",
 
-  "MarketplaceConnectorTitle": "Conçu pour fonctionner de manière transparente avec WordPress",
+  "MarketplaceConnectorTitle": "Conçue pour fonctionner de manière transparente avec WordPress",
   "MarketplaceConnectorDescription": "Installez l'application ONLYOFFICE DocSpace pour WordPress aujourd'hui à partir de WordPress Plugin Directory.",
 
   "DocsAppTitle": "Application <0>ONLYOFFICE Docs</0> pour WordPress",
@@ -72,6 +72,7 @@
   "HowToStartStep3DocsImgUrl": "/images/templates/office-for-wordpress/how-to-start/fr/step3-dc.svg",
   "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/fr/step3-ds.svg",
   "ReadDetailedInstructionsDocs": "Lisez les instructions détaillées sur <0>GitHub</0> et dans le <1>Centre d'aide</1>",
+  "ReadDetailedInstructionsDocsLink": "https://helpcenter.onlyoffice.com/fr/integration/wordpress.aspx",
 
   "NeedAnAppToConnect": "Besoin d'une application pour connecter ONLYOFFICE à votre service web préféré ? Ou vous en avez développé une ?"
 }

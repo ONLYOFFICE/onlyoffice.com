@@ -19,7 +19,7 @@ export const items: IImproveItemExtended[] = [
     },
     link: {
       label: "ReadAPIDocumentation",
-      href: "https://api.onlyoffice.com/docs/plugin-and-macros/get-started/overview/",
+      href: "DevelopYourOwnPluginOrMacrosLink",
     },
   },
   {
@@ -33,7 +33,7 @@ export const items: IImproveItemExtended[] = [
     },
     link: {
       label: "OpenOurFormLibrary",
-      href: "https://templates.onlyoffice.com/",
+      href: "CreateYourOwnFormLink",
     },
   },
   {
@@ -47,7 +47,7 @@ export const items: IImproveItemExtended[] = [
     },
     link: {
       label: "ReadAPIDocumentation",
-      href: "https://api.onlyoffice.com/docspace/plugins-sdk/get-started/basic-concepts/",
+      href: "CreateAnExtensionOrModuleLink",
     },
   },
   {
@@ -68,7 +68,7 @@ export const items: IImproveItemExtended[] = [
     },
     link: {
       label: "MoreInfo",
-      href: "https://helpcenter.onlyoffice.com/docs/contribution/ReportIssues.aspx",
+      href: "DidYouFindABugLink",
     },
   },
 ];

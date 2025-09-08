@@ -12,7 +12,7 @@
 
   "NumberOfUsers": "Nombre d'utilisateurs préférée",
   "NumberOfUsersTooltip": "Le nombre spécifié d'utilisateurs définit le nombre de personnes qui peuvent avoir accès à l'édition de documents texte, de feuilles de calcul et de présentations. Le nombre de documents pouvant être modifiés simultanément n'est pas limité. Les autres utilisateurs pourront ouvrir les documents pour les afficher uniquement.",
-  "LicenseDuration": "Durée de la licenc",
+  "LicenseDuration": "Durée de la licence",
   "Lifetime": "Licence à vie",
   "LifetimeTooltip": "Vous pouvez utiliser toutes les fonctionnalités d'ONLYOFFICE DocSpace Family Pack disponibles au moment de l'achat pour une période illimitée, mais un an après la date d'achat, vous ne pourrez plus obtenir de mises à jour gratuites.",
   "Updates": "Mises à jour",

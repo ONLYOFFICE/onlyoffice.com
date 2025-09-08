@@ -43,7 +43,7 @@ const FeatureConnectorCard = ({
             {t("ConnectorFor")}
           </Text>
           <StyledFeatureConnectorCardHeading>
-            <Heading level={4} label={heading} />
+            <Heading level={4} label={t("For") + " " + heading} />
             {isNew && <Badge label={t("New")} />}
           </StyledFeatureConnectorCardHeading>
         </StyledFeatureConnectorCardHeader>

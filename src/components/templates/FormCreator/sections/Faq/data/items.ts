@@ -12,7 +12,7 @@ export const items: ICollapseExtended[] = [
   {
     label: "Q2",
     children: "A2",
-    links: [{ href: "https://templates.onlyoffice.com/", isExternal: true }],
+    links: [{ href: "templatesLink", isExternal: true }],
   },
   {
     label: "Q3",

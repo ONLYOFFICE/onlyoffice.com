@@ -274,7 +274,7 @@ export const items = [
         buttons: [
           {
             label: "DownloadNow",
-            href: "/download-desktop#desktop",
+            href: "/download-desktop#mobile",
             isPrimary: true,
             isExternal: false,
           },

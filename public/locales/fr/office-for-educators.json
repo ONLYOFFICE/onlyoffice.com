@@ -5,7 +5,7 @@
   "OfficeForEducators": "ONLYOFFICE pour les <0>enseignants</0>",
   "BringYourLecturesToLife": "Donnez vie à vos cours grâce à une suite bureautique conviviale et flexible. Travaillez avec vos étudiants et vos collègues pour créer, partager et travailler en équipe afin de vous assurer que tout le monde a le meilleur accès à vos enseignements.",
 
-  "OODocsTitle": "<0>ONLYOFFICE Docs:</0> éditeurs collaboratifs en ligne pour votre plateforme e-learning",
+  "OODocsTitle": "<0>ONLYOFFICE Docs :</0> éditeurs collaboratifs en ligne pour votre plateforme e-learning",
   "OODocsDesc": "Créez et coéditez vos supports pédagogiques sans effort - la seule limite à la façon dont vous voulez enseigner est votre imagination.",
 
   "FitToAnyLMSOrDMS": "Adapté à tout LMS ou DMS",
@@ -18,8 +18,8 @@
   "SeamlessAndUserFriendlyImgUrl": "/images/templates/office-for-educators/docs/fr/seamless-and-user-friendly.png",
   "SeamlessAndUserFriendlyImgUrl2x": "/images/templates/office-for-educators/docs/fr/seamless-and-user-friendly@2x.png",
 
-  "TailoredToCreate": "Conçue pour créer des contenus éducatifs",
-  "TailoredToCreateDesc": "Créez facilement des contenus informatifs pour vos étudiants : des feuilles de travail animées, des diapositives colorées et des guides complets de plusieurs pages avec des diagrammes, des images, des équations et même des vidéos YouTube intégrées. Appliquez le formatage académique, y compris les en-têtes et pieds de page, les numéros de page, les notes de bas de page, les tables des matières, etc. Utilisez les <0>assistants IA intégrées</0> pour trouver rapidement les informations nécessaires, réécrire ou traduire vos cours, et bien plus encore.",
+  "TailoredToCreate": "Conçu pour créer des contenus éducatifs",
+  "TailoredToCreateDesc": "Créez facilement des contenus informatifs pour vos étudiants : des feuilles de travail animées, des diapositives colorées et des guides complets de plusieurs pages avec des diagrammes, des images, des équations et même des vidéos YouTube intégrées. Appliquez le formatage académique, y compris les en-têtes et pieds de page, les numéros de page, les notes de bas de page, les tables des matières, etc. Utilisez les <0>assistants IA intégrés</0> pour trouver rapidement les informations nécessaires, réécrire, traduire vos cours et bien plus encore.",
   "TailoredToCreateImgUrl": "/images/templates/office-for-educators/docs/fr/tailored-to-create-educational-content.png",
   "TailoredToCreateImgUrl2x": "/images/templates/office-for-educators/docs/fr/tailored-to-create-educational-content@2x.png",
 
@@ -38,7 +38,7 @@
   "StartFreeTrial": "COMMENCER ESSAI GRATUIT",
   "RequestFreeDemo": "DEMANDER DÉMO GRATUITE",
 
-  "OODocSpaceTitle": "<0>ONLYOFFICE DocSpace:</0> connectez le matériel d'apprentissage et les étudiants dans des salles personnalisables",
+  "OODocSpaceTitle": "<0>ONLYOFFICE DocSpace :</0> connectez le matériel d'apprentissage et les étudiants dans des salles personnalisables",
   "OODocSpaceTitleDesc": "Si vous avez besoin d'encore plus de flexibilité pour faire travailler vos étudiants en groupe (ou si vous ne disposez pas d'un LMS adapté), ONLYOFFICE DocSpace est la solution qu'il vous faut. Ici, vous pouvez contrôler qui peut voir, collaborer et partager les fichiers du projet dans vos salles virtuelles.",
 
   "FillableAssignments": "Des missions à remplir ? Un jeu d'enfant !",
@@ -77,13 +77,12 @@
 
   "ItsAffordable": "C'est accessible",
   "ItsAffordableDesc": "Parfois, tout est question d'argent. Les budgets serrés des écoles et des institutions peuvent rendre difficile la recherche d'une solution adaptée à tous les besoins d'enseignement et d'apprentissage. Mais ONLYOFFICE est particulièrement abordable pour les écoles et les universités grâce aux remises pédagogiques proposées. Et d'ailleurs, c'est entièrement gratuit pour vos étudiants.",
-
   "ItsHighlyCustomizable": "Il est hautement personnalisable grâce à notre marketplace de plugins intégrée",
   "ItsHighlyCustomizableDesc": "Personnalisez votre expérience ONLYOFFICE avec de <0>nombreux plugins</0> qui améliorent ses fonctionnalités. Qu'il s'agisse d'améliorer votre travail sur les documents avec le plugin ChatGPT, de simplifier la recherche avec les plugins de bibliographie pour Mendeley ou Zotero, ou d'améliorer la rédaction et la relecture avec LanguageTool et OCR, nous avons ce qu'il vous faut.",
 
   "ItsFullyCompatible": "Il est entièrement compatible avec les fichiers MS Office et PDF (et presque tous les autres formats de fichiers Office)",
-  "ItsFullyCompatibleDesc": "Vous n'aurez pas à vous soucier de la difficulté de vos étudiants ou collègues à lire vos documents. ONLYOFFICE fonctionne parfaitement avec les fichiers MS Office (comme DOCX, XLSX, PPTS, etc.), les fichiers Adobe PDF et la plupart des autres formats de fichiers.",
 
+  "ItsFullyCompatibleDesc": "Vous n'aurez pas à vous soucier de la difficulté de vos étudiants ou collègues à lire vos documents. ONLYOFFICE fonctionne parfaitement avec les fichiers MS Office (comme DOCX, XLSX, PPTX, etc.), les fichiers Adobe PDF et la plupart des autres formats de fichiers.",
   "YouWontFindABetterPlaceToCollaborate": "Vous ne trouverez pas de meilleur endroit pour collaborer",
   "YouWontFindABetterPlaceToCollaborateDesc": "ONLYOFFICE a été créé avec un objectif majeur : rendre la collaboration transparente, facile et efficace. Et cela se voit. D'innombrables fonctionnalités que vous ne trouverez nulle part ailleurs vous permettent de réunir vos étudiants, vos collègues et vous-même d'une nouvelle manière.",
 

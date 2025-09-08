@@ -1,0 +1,1 @@
+export { AboutTemplate } from "./About"

@@ -28,10 +28,10 @@
   "TutorialsDesc": "Kako napraviti bibliografiju",
   "HintsDesc": "Vodič za akademsko pisanje",
 
-  "Q1": "",
-  "A1": "",
-  "Q2": "",
-  "A2": "",
-  "Q3": "",
-  "A3": ""
+  "Q1": "Da li mogu da eksportujem dokumente u EPUB i FB2 bez internet konekcije?",
+  "A1": "Da, možete instalirati i koristiti besplatne <0>ONLYOFFICE Desktop Editors</0> za konvertovanje tekstualnih fajlova u e-knjige van mreže.",
+  "Q2": "Da li mogu samo da konvertujem DOCX u EPUB ili FB2 bez instaliranja bilo kakvih aplikacija?",
+  "A2": "Da, dobrodošli ste da to učinite koristeći <0>besplatni online konvertor</0> koji ne zahteva nikakvu instalaciju ili registraciju.",
+  "Q3": "Da li mogu da integrišem konvertor e-knjiga u svoju veb aplikaciju ili uslugu?",
+  "A3": "Da, ONLYOFFICE pruža <0>API za konverziju</0> za konvertovanje svih vrsta kancelarijskih dokumenata, uključujući e-knjige, unutar vaše aplikacije."
 }

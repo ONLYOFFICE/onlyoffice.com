@@ -63,7 +63,7 @@ export const items: IEditorsItem[] = [
   {
     heading: "Feature7Title",
     text: "Feature7Desc",
-    links: [{ label: "ViewMacroSamples", href: "https://api.onlyoffice.com/plugin/macrosamples/", isExternal: true }],
+    links: [{ label: "ViewMacroSamples", href: "https://api.onlyoffice.com/docs/plugin-and-macros/samples/macro-samples/", isExternal: true }],
     image: {
       url: "Feature7ImgUrl",
       url2x: "Feature7ImgUrl2x",
