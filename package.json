@@ -32,7 +32,7 @@
     "next": "15.1.7",
     "next-i18next": "^15.4.2",
     "nodemailer": "^7.0.3",
-    "onlyoffice-react-ui-kit": "ONLYOFFICE/onlyoffice-react-ui-kit#41b406238dcc65d896e6d43142b1e65794a6100d",
+    "onlyoffice-react-ui-kit": "ONLYOFFICE/onlyoffice-react-ui-kit#d5e085b71ee0f6d9a4078909d03b11cdffc80b5a",
     "prismjs": "^1.30.0",
     "react": "^19.0.0",
     "react-datepicker": "^8.7.0",
@@ -75,4 +75,3 @@
     ]
   }
 }
- 
