@@ -18,7 +18,7 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
     links: [
       {
         label: "ReadMoreAbout",
-        href: "https://helpcenter.onlyoffice.com/guides/two-factor-authentication.aspx", 
+        href: "https://helpcenter.onlyoffice.com/guides/two-factor-authentication.aspx",
         isExternal: true
       }
     ]
@@ -35,7 +35,7 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
     links: [
       {
         label: "ReadMoreAboutHowSingle",
-        href: "https://helpcenter.onlyoffice.com/server/controlpanel/enterprise/sso-description.aspx", 
+        href: "https://helpcenter.onlyoffice.com/server/controlpanel/enterprise/sso-description.aspx",
         isExternal: true
       }
     ]
@@ -52,7 +52,7 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
     links: [
       {
         label: "ReadMoreAboutTheAccess",
-        href: "https://helpcenter.onlyoffice.com/video/manage-access-rights.aspx", 
+        href: "ReadMoreAboutTheAccessLink",
         isExternal: true
       }
     ]
