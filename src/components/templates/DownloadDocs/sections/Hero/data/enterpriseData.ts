@@ -21,8 +21,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: dockerDocument.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: dockerDocument.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-docker.aspx",
+    readInstructionLink: "DockerImageenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_docker_image_intel",
@@ -61,8 +60,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-ubuntu.aspx",
+    readInstructionLink: "ForDebianUbuntuenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_debian_ubuntu_and_derivatives_intel",
@@ -101,8 +99,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-centos.aspx",
+    readInstructionLink: "ForCentOSRHELenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_centos_rhel_and_derivatives_intel",
@@ -141,8 +138,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-windows.aspx",
+    readInstructionLink: "ForWindowsServerenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_windows",
@@ -172,8 +168,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-ami.aspx",
+    readInstructionLink: "AmazonMachineImageenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_amazon_machine_image",
@@ -199,8 +194,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: alibabaCloudImage.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: alibabaCloudImage.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-alibaba.aspx",
+    readInstructionLink: "AlibabaCloudImageenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_alibaba_cloud_image",

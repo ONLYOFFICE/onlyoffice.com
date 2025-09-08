@@ -48,7 +48,7 @@ const HowToStart = () => {
                 <Link
                   key={0}
                   id="how-to-start-instructions-help"
-                  href="https://helpcenter.onlyoffice.com/integration/plone.aspx"
+                  href={t("ReadDetailedInstructionsLink")}
                   target="_blank"
                   color="main"
                   textUnderline

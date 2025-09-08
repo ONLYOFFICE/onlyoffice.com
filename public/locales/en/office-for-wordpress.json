@@ -82,6 +82,7 @@
 
   "ReadDetailedInstructionsDocSpace": "Read detailed instructions in the <0>Help Center</0>.",
   "ReadDetailedInstructionsDocs": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",
+  "ReadDetailedInstructionsDocsLink": "https://helpcenter.onlyoffice.com/integration/wordpress.aspx",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
 }

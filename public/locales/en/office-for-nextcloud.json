@@ -51,6 +51,7 @@
   "HowToStartStep3": "Configure the integration app.",
   "HowToConnect": "Configuring ONLYOFFICE connector for Nextcloud",
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/nextcloud.aspx",
 
   "PartnerHeading": "Are you a Nextcloud partner? How about improving your Nextcloud user experience and increasing your revenue?",
   "PartnerText": "Join the ONLYOFFICE partnership program right now.",

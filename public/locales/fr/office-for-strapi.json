@@ -28,6 +28,7 @@
   "HowToStartStep3": "Installez et configurez l'application d'intégration.",
 
   "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/strapi.aspx",
 
   "NeedAnAppToConnect": "Besoin d'une appli pour connecter ONLYOFFICE Docs à votre service web préférentiel ? Ou en avez-vous développé une ?"
 }

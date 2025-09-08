@@ -13,7 +13,7 @@ import {
   StyledCardDatasheetsTitle
 } from "./CardDatasheets.styled";
 
-const CardDatasheets = ({ title, product, image_url, download_url, displayOther, locale }: ICardDatasheetsItemsProps & ILocale) => {
+const CardDatasheets = ({ title, product, image_url, download_url, displayOther, locale, id_url }: ICardDatasheetsItemsProps & ILocale) => {
   const { t } = useTranslation("whitepapers");
   const [openModal, setOpenModal] = useState(false);
 
@@ -52,7 +52,7 @@ const CardDatasheets = ({ title, product, image_url, download_url, displayOther,
           setOpenModal={setOpenModal}
           download_url={download_url}
           locale={locale}
-          product={product}
+          id_url={id_url}
         />
       )}
     </>

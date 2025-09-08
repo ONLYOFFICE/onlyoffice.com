@@ -47,12 +47,12 @@
   "quotesBefore": "“",
   "BlogDevelopersItalicText": "Nous sommes ravis de faire équipe avec ONLYOFFICE pour offrir à nos clients une capacité de collaboration documentaire plus riche. La combinaison de la capacité performante de synchronisation de fichiers de Seafile et de l'expérience intuitive d'édition en ligne d'ONLYOFFICE offre à nos utilisateurs une alternative complète à Office 365 et Google Docs.",
   "quotesAfter": "”",
-  "BlogDevelopersAuthor": "Jonathan Xu, Co-founder & CTO at Seafile",
+  "BlogDevelopersAuthor": "Jonathan Xu, cofondateur et directeur technique chez Seafile",
   "BlogDevelopersLabel": "Blog",
   "BlogDevelopersLinks": "https://www.onlyoffice.com/blog/2019/03/onlyoffice-announces-partnership-and-integration-with-seafile",
   "BlogDevelopersLinksLabel": "Lire l'annonce complète sur le blog",
   "BlogDevelopersImgUrl2": "/images/templates/for-developers/blog/pydio.png",
-  "BlogDevelopersAuthor2": "Charles du Jeu, CEO/CTO at Pydio",
+  "BlogDevelopersAuthor2": "Charles du Jeu, PDG chez Pydio",
   "BlogDevelopersItalicText2": "L'intégration de Pydio Cells Enterprise nous permet de fournir à notre client une véritable plateforme de collaboration sur site. La combinaison de notre logiciel de partage de fichiers et de l'éditeur en ligne ONLYOFFICE crée une alternative aux solutions SaaS permettant aux entreprises de garder le contrôle de leurs données, en termes de stockage, de contrôles d'accès et d'audits. C'est essentiel pour la conformité et la gouvernance de l'information.",
   "BlogDevelopersLabel2": "Blog",
   "BlogDevelopersLinks2": "https://www.onlyoffice.com/blog/2018/12/onlyoffice-announces-partnership-and-integration-with-pydio/",
@@ -60,6 +60,6 @@
 
   "HaveAnyQuestions": "Vous avez des questions ?",
   "HaveAnyQuestionsText": "Nous serons heureux de vous conseiller et de discuter de tous les détails. Contactez-nous à sales@onlyoffice.com ou planifiez un appel avec notre équipe.",
-  "ContactUs": "Contactez-nous",
-  "ScheduleATime": "Planifier un appel"
+  "ContactUs": "NOUS CONTACTER",
+  "ScheduleATime": "FIXER UN RENDEZ-VOUS"
 }

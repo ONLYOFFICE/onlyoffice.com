@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { SearchIcon } from "@src/components/icons";
@@ -36,7 +35,7 @@ const WhitePapersInput = ({ value, setValue }: {
               id="#whitepapers-input"
               rightSide={<SearchIcon />}
               value={value}
-              onChange={(event: React.ChangeEvent<HTMLInputElement>) => setValue(event.target.value)}
+              onChange={(event) => setValue(event.target.value)}
             />
           </StyledWhitePapersInputRight>
         </StyledWhitePapersInputWrapper>

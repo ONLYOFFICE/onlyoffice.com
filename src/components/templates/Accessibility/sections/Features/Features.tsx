@@ -57,11 +57,9 @@ const Features = () => {
                   group.heading === "AutoCorrectFeatures"
                 ),
             )
-            // linkUrl={t(item.linkUrl, {defaultValue: item.linkUrl})}
             .map((group, groupIndex) => (
               <FeatureImageItem
                 links={group.links?.map((link) => ({
-                  ...link,
                   label: t(String(link.label)),
                   href: t(link.href, {
                     defaultValue: link.href.includes("app-directory")
@@ -71,6 +69,7 @@ const Features = () => {
                         )
                       : link.href,
                   }),
+                  isExternal: link.isExternal,
                 }))}
                 key={groupIndex}
                 image={{

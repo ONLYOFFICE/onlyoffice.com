@@ -27,7 +27,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
+            href: "UITweaksLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -42,7 +42,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
+            href: "ColorModesLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -71,7 +71,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
+            href: "HotkeysLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -86,7 +86,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://www.onlyoffice.com/app-directory/speechrecognition",
+            href: "SpeechInputLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -107,7 +107,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
+            href: "AlternativeLink",
             label: "LearnMore",
             isExternal: true,
           },
@@ -122,7 +122,7 @@ export const items = [
         },
         links: [
           {
-            href: "https://helpcenter.onlyoffice.com/docs/userguides/spreadsheet_editor/accessibility.aspx",
+            href: "AutoCorrectLink",
             label: "LearnMore",
             isExternal: true,
           },
