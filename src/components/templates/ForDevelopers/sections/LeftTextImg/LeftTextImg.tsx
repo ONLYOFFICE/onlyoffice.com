@@ -39,7 +39,7 @@ const LeftTextImg = ({ locale }: ILocale) => {
                     target="_blank"
                   />,
                   <Link
-                    href="https://api.onlyoffice.com/docs/plugin-and-macros/get-started/getting-started/"
+                    href="https://api.onlyoffice.com/docs/plugin-and-macros/get-started/"
                     color="main"
                     textUnderline
                     hover="underline-none"
