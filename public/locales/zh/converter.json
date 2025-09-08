@@ -39,6 +39,7 @@
   "No": "否",
   "Error": "错误",
   "TheUploadedFileLikelyExceededTheMaximumFileSize": "上传的文件可能超过了最大文件大小5 MB",
+  "TheFileAppearsToBeBroken": "The file appears to be broken. Please check it or try using a different one.",
   "Close": "关闭",
   "SubmitAnIssue": "报道错误",
   "TheUploadedFileHaZeroSize": "上传文件的大小为零，因此无法转换。",

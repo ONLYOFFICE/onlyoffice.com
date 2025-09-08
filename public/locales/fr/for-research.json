@@ -4,7 +4,7 @@
 
   "HeroTitle": "ONLYOFFICE pour <0>la science et la recherche</0>",
   "HeroSubitle": "Une infrastructure sécurisée pour la production de connaissances",
-  "HeadingUsers": "Adopté par 15 000 000 d'utilisateurs dans le monde entier",
+  "HeadingUsers": "Reconnu par 15 000 000 d'utilisateurs dans le monde entier",
 
   "ResearchHead1": "Connectez les documents scientifiques, les chercheurs et les partenaires du consortium dans des salles personnalisables avec <0>ONLYOFFICE DocSpace</0>",
   "ResearchFeature1": "Créez <0>des salles de collaboration</0>pour travailler ensemble sur des discours, des monographies, des spécifications de recherche, etc., <0>salles de remplissage de formulaires</0> pour collecter des données et des réponses, ou <0>des salles personnalisées</0> avec des paramètres flexibles pour tout autre objectif. Permettez à d'autres personnes de consulter des documents sans inscription dans les <0>salles publiques</0>.",
@@ -14,7 +14,7 @@
   "UseItForFree": "Utiliser gratuitement",
   "LearnMore": "En savoir plus",
 
-  "FeaturesIconsHeading": "<0>Créer, éditer et collaborer</0> sur vos idées en ligne avec ONLYOFFICE Docs",
+  "FeaturesIconsHeading": "<0>Créez, éditez et coéditez</0> vos idées en ligne avec ONLYOFFICE Docs",
   "FeatureHead1": "Créez des manuscrits",
   "FeatureText1": "Utilisez plusieurs outils de style et de mise en forme, la table des symboles, les objets, la table des matières, les signets et équations.",
   "FeatureHead2": "Corrigez les textes et modifiez les images",
@@ -39,12 +39,12 @@
   "FeatureToolsText4": "Des droits d’accès flexibles et JWT permettent de contrôler entièrement l’accès aux documents. Le suivi des activités et les rapports d’audit assurent la traçabilité.",
   "FeatureToolsHead5": "Respect des normes",
   "FeatureToolsText5": "Dans ONLYOFFICE, toute information personnelle est traitée avec soin. Notre politique de sécurité des données est entièrement conforme aux normes GDPR.",
-  "HrefBlogTools" : "https://www.onlyoffice.com/blog/fr/2018/05/comment-onlyoffice-se-conforme-au-rgpd/",
+  "HrefBlogTools" : "https://www.onlyoffice.com/blog/fr/2018/05/comment-onlyoffice-se-conforme-au-rgpd",
   "LearnMoreTools": "En savoir plus",
 
   "FeaturesReasonsHeading": "<0>3 raisons d'utiliser ONLYOFFICE</0> au sein de votre institution",
   "ReasonsHead": "Un choix d'outils flexible pour toute infrastructure",
-  "ConnectONLYOFFICEDocs": "Connectez ONLYOFFICE Docs à la plateforme à laquelle vous êtes habitué",
+  "ConnectONLYOFFICEDocs": "Connectez ONLYOFFICE Docs à la plateforme à laquelle vous êtes habituée",
   "ONLYOFFICEDocsEasily": "ONLYOFFICE Docs s'intègre facilement dans votre infrastructure de recherche. Fournissant des connecteurs prêts à l'emploi pour les services cloud les plus courants, ONLYOFFICE permet d'utiliser de puissants éditeurs de documents en ligne au sein de la plateforme dont vous disposez déjà.",
   "GetItNow": "Obtenir",
   "SeeAllIntegrations": "Voir toute la liste",
@@ -80,7 +80,7 @@
   "EnhancedSecurityOptions": "options de sécurité renforcées",
   "PriorityAccessToSecurity": "accès prioritaire à des solutions en matière de sécurité et de stabilité",
   "EasilyScalable": "facilement extensible",
-  "FreeTrialLifetimeLicense": "essai gratuit, licence à vie + mises à jour et assistance annuelles",
+  "FreeTrialLifetimeLicense": "essai gratuit, licence à vie + mises à jour annuelles et assistance",
   "QuoteText3": "\"La combinaison ownCloud-ONLYOFFICE a simplifié l'échange de données et favorisé un travail plus collaboratif en soi.\"",
   "QuoteAuthor3": "Holger Angenent,",
   "QuoteAuthorInfo3": "chef du projet sciebo au centre informatique de l'université de Münster",

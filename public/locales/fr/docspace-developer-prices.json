@@ -22,7 +22,7 @@
   "NumberOfConnectors": "Nombre de connexions",
   "NumberOfConnectorsTooltip": "Nous avons spécifié le nombre d'onglets de navigateur contenant des documents qui peuvent être ouverts en même temps pour être modifiés. Notez qu'un document ouvert par deux utilisateurs signifie deux connexions simultanées puisqu'il est ouvert dans deux onglets. Lorsque la limite est atteinte, chaque document suivant s'ouvre en mode lecture seule.",
   "More": "Plus",
-  "Branding": "Marquage",
+  "Branding": "Marque",
   "Standard": "Marque standard",
   "WhiteLabel": "Marque blanche",
   "Scalability": "Évolutivité",

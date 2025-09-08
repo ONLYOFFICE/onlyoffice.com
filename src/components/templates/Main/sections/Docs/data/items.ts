@@ -13,39 +13,47 @@ export const items: DocsItem[] = [
       { id: "docs-presentation-editor", url: "/presentation-editor" },
     ],
     image: {
-      url: "/images/templates/main/docs/actions.png",
-      url2x: "/images/templates/main/docs/actions@2x.png",
+      url: "ViewEditAndCollaborateOnDocsSheetsSlidesImg",
+      url2x: "ViewEditAndCollaborateOnDocsSheetsSlidesImg2x",
     },
   },
   {
     label: "BuildFillablePDFFormsAndFillThemInOnline",
     links: [{ id: "docs-form-creator", url: "/form-creator" }],
     image: {
-      url: "/images/templates/main/docs/pdf_forms.png",
-      url2x: "/images/templates/main/docs/pdf_forms@2x.png",
+      url: "BuildFillablePDFFormsAndFillThemInOnlineImg",
+      url2x: "BuildFillablePDFFormsAndFillThemInOnlineImg2x",
     },
   },
   {
     label: "ReadAndEditPDFsExportImportToFromPDF",
     links: [{ id: "docs-pdf-editor", url: "/pdf-editor" }],
     image: {
-      url: "/images/templates/main/docs/pdfs.png",
-      url2x: "/images/templates/main/docs/pdfs@2x.png",
+      url: "ReadAndEditPDFsExportImportToFromPDFImg",
+      url2x: "ReadAndEditPDFsExportImportToFromPDFImg2x",
     },
   },
   {
     label: "ConvertDocsToMarkdownAndHTML",
     image: {
-      url: "/images/templates/main/docs/convert.png",
-      url2x: "/images/templates/main/docs/convert@2x.png",
+      url: "ConvertDocsToMarkdownAndHTMLImg",
+      url2x: "ConvertDocsToMarkdownAndHTMLImg2x",
     },
   },
   {
     label: "TurnYourTextbooksIntoEbooks",
     links: [{ id: "docs-e-book", url: "/e-book" }],
     image: {
-      url: "/images/templates/main/docs/e_book.png",
-      url2x: "/images/templates/main/docs/e_book@2x.png",
+      url: "TurnYourTextbooksIntoEbooksImg",
+      url2x: "TurnYourTextbooksIntoEbooksImg2x",
+    },
+  },
+  {
+    label: "ViewAndNavigateDiagramsWithEase",
+    links: [{ id: "docs-diagram", url: "/diagram-viewer" }],
+    image: {
+      url: "ViewAndNavigateDiagramsWithEaseImg",
+      url2x: "ViewAndNavigateDiagramsWithEaseImg2x",
     },
   },
 ];

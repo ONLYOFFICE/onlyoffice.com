@@ -15,5 +15,9 @@
   "ReadTheManual": "Read the manual",
   "Download": "Télécharger",
   "TryOODocSpaceEnterpriseEdition": "Try ONLYOFFICE DocSpace Enterprise Edition <0>free for 30 days</1>",
-  "GetItNowText": "By downloading/installing this software you agree to our <0>License agreement</0> and <0>Privacy statement</0>."
+  "GetItNowText": "By downloading/installing this software you agree to our <0>License agreement</0> and <0>Privacy statement</0>.",
+  "DockerImageenterpriseProductsLink": "https://helpcenter.onlyoffice.com/fr/docspace/installation/docspace-enterprise-install-script.aspx",
+  "ForDebianUbuntuenterpriseProductsLink": "https://helpcenter.onlyoffice.com/fr/docspace/installation/docspace-enterprise-install-script.aspx",
+  "ForCentOSenterpriseProductsLink": "https://helpcenter.onlyoffice.com/fr/docspace/installation/docspace-enterprise-install-script.aspx",
+  "ForWindowsServerenterpriseProductsLink": "https://helpcenter.onlyoffice.com/fr/docspace/installation/docspace-enterprise-install-windows.aspx"
 }

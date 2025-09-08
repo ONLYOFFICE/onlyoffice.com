@@ -11,10 +11,8 @@ import { Link } from "@src/components/ui/Link";
 import { ImproveItem } from "./sub-components/ImproveItem";
 import { items } from "./data/items";
 import { SocialIcons } from "@src/components/modules/SocialIcons";
-import { getLink } from "@src/utils/getLink";
-import { ILocale } from "@src/types/locale";
 
-const Improve = ({ locale }: ILocale) => {
+const Improve = () => {
   const { t } = useTranslation("contribute");
 
   return (
@@ -53,10 +51,7 @@ const Improve = ({ locale }: ILocale) => {
               }
               link={{
                 label: t(item.link.label),
-                href:
-                  item.link.href === "templatesLink"
-                    ? getLink("templates", locale)
-                    : item.link.href,
+                href: t(item.link.href)
               }}
             />
           ))}
@@ -68,7 +63,7 @@ const Improve = ({ locale }: ILocale) => {
             i18nKey="SocialMediaText"
             components={[
               <Link
-                href="https://www.onlyoffice.com/blog"
+                href={t("BlogLink")}
                 color="main"
                 textUnderline
                 hover="underline-none"

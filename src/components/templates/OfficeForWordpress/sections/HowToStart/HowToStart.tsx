@@ -90,7 +90,7 @@ const HowToStart = ({ activeTab }: IHowToStart) => {
                   <Link
                     key={1}
                     id="how-to-start-instructions-help-helpcenter"
-                    href="https://helpcenter.onlyoffice.com/integration/wordpress.aspx"
+                    href={t("ReadDetailedInstructionsDocsLink")}
                     target="_blank"
                     color="main"
                     textUnderline

@@ -20,7 +20,7 @@ const Faq = () => {
             components={[
               ...links.map((link, index) => (
                 <Link
-                  href={link.href}
+                  href={t(link.href)}
                   target={link.isExternal ? "_blank" : undefined}
                   key={index}
                 />

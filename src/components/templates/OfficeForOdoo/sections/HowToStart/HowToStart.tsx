@@ -55,7 +55,7 @@ const HowToStart = () => {
               components={[
                 <Link
                   key={0}
-                  href="https://helpcenter.onlyoffice.com/integration/odoo.aspx"
+                  href={t("ReadDetailedInstructionsLink")}
                   target="_blank"
                   color="main"
                   textUnderline

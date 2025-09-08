@@ -67,6 +67,7 @@
   "HowToStartStep2DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/step2-ds.svg",
   "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/step3-ds.svg",
   "ReadDetailedInstructions": "Check useful guides on Pipedrive integration on <0>GitHub</0> or in the <1>Help Center</1>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/pipedrive.aspx",
 
   "PartnerHeading": "Are you a Pipedrive partner? How about improving your Pipedrive user experience and increasing your revenue?",
   "PartnerText": "Join the ONLYOFFICE partnership program right now.",

@@ -5,7 +5,7 @@ export const items: ILinkImage = {
     text: "PreInstallONLYOFFICE",
     links: [
         {
-            href: "https://www.onlyoffice.com/blog/2022/11/onlyoffice-got-certified-by-kylin-os/",
+            href: "KylinSoftLink",
             target: "_self"
         },
         {
@@ -13,11 +13,11 @@ export const items: ILinkImage = {
             target: "_self"
         },
         {
-            href: "https://www.onlyoffice.com/blog/2022/09/onlyoffice-desktop-editors-now-pre-installed-on-risios/",
+            href: "RisiOsLink",
             target: "_self"
         },
         {
-            href: "https://www.onlyoffice.com/blog/2022/09/onlyoffice-desktop-editors-on-br-os/",
+            href: "BrOsLink",
             target: "_self"
         },
         {
@@ -25,15 +25,15 @@ export const items: ILinkImage = {
             target: "_self"
         },
         {
-            href: "https://www.onlyoffice.com/blog/2020/09/onlyoffice-desktop-editors-become-a-default-office-app-in-linuxfx-distro/",
+            href: "WubuntuLink",
             target: "_self"
         },
         {
-            href: "https://www.onlyoffice.com/blog/2020/07/onlyoffice-desktop-editors-are-now-available-in-linkat/",
+            href: "LinkatLink",
             target: "_self"
         },
         {
-            href: "https://www.onlyoffice.com/blog/2020/06/how-escuelas-linux-and-onlyoffice-contribute-to-basic-education/",
+            href: "EscuelasLink",
             target: "_self"
         },
         {

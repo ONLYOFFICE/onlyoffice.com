@@ -64,5 +64,6 @@
   "HowToStartStep4": "Cliquez sur le bouton <0>+ Ajouter une connexion</0>, trouvez et connectez-vous à votre ONLYOFFICE DocSpace.",
   "HowToStartStep5": "Commencez à créer un nouveau Zap en utilisant DocSpace.",
 
-  "ReadDetailedInstructions": "<0>En savoir plus</0>"
+  "ReadDetailedInstructions": "<0>En savoir plus</0>",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/zapier-docspace.aspx"
 }
