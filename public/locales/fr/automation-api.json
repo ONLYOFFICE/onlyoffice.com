@@ -7,7 +7,7 @@
   "HeroButton" : "DEMANDER DÉMO GRATUITE",
 
   "WhatIsTitle" : "Qu'est-ce que l'<0>API d'automatisation</0>",
-  "WhatIsSubtitle" : "<0>L'API d'automatisation d'ONLYOFFICE</0> avec la classe Connecteur permet d'interagir avec les documents bureautiques depuis l'extérieur. Vous pouvez obtenir les changements effectués dans les fichiers en utilisant vos propres éléments d'interface personnalisés.",
+  "WhatIsSubtitle" : "<0>L'API d'automatisation de ONLYOFFICE</0> avec la classe connecteur permet d'interagir avec les documents bureautiques depuis l'extérieur. Vous pouvez obtenir les changements effectués dans les fichiers en utilisant vos propres éléments d'interface personnalisés.",
   "CheckExamples" : "Vérifier les exemples",
   "Webinar" : "API d'automatisation de ONLYOFFICE [Webinar 2024]",
   "WatchOurWebinar" : "Regarder notre webinaire",
@@ -28,9 +28,9 @@
   "EnterYourCommentHere" : "Entrez votre commentaire ici",
   "ManagesReviewProcess" : "Gère le processus de révision à partir d'une source externe.",
   "Accept" : "ACCEPTER",
-  "Reject" : "REJETER",
+  "Reject" : "REFUSER",
   "FillsInTheEmptyCells" : "Remplit les cellules vides du formulaire donné.",
-  "ChooseExample" : "Choisir un exemple",
+  "ChooseExample" : "Choisissiez un exemple",
 
   "ReadyToUse" : "Exemple prêt à l'emploi : intégration Odoo",
   "UsingAutomationAPI" : "En utilisant l'API Automation, ONLYOFFICE permet aux utilisateurs d'Odoo de créer et de remplir des modèles avec des données disponibles dans Odoo.",

@@ -46,7 +46,7 @@ const Authentication = () => {
                         </>
                     }
                     links={links?.map(link => ({
-                        href: link.href,
+                        href: t(link.href, { defaultValue: link.href }),
                         label: t(link.label),
                         isExternal: link.isExternal,
                     }))}

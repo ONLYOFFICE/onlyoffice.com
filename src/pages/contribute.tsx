@@ -29,7 +29,7 @@ const ContributePage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <ContributeTemplate locale={locale} />
+        <ContributeTemplate />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

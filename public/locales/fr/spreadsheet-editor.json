@@ -3,7 +3,7 @@
   "PageDescription": "Organiser et analyser les données avec le tableur open source ONLYOFFICE. Éditer et co-éditer des classeurs partagés Excel en ligne : xlsx, .xls, .ods, .csv. Exporter les feuilles de calcul en PDF.",
 
   "Header": "Puissant éditeur de feuilles de calcul en ligne pour votre application web",
-  "SubHeader": "Ouvrez, modifiez et collaborez sur des tableaux Excel en ligne",
+  "SubHeader": "Ouvrez, modifiez et coéditez des fichiers Excel en ligne",
 
   "Feature1Title": "Faites travailler les chiffres pour vous",
   "Feature1Desc": "Facilitez et automatisez vos calculs en ligne, organisez et analysez vos données avec le tableur ONLYOFFICE. Ouvrez et éditez les formats .xlsx, .xls, .ods et .csv, et exportez vos feuilles de calcul en PDF.",
@@ -38,11 +38,11 @@
   "Feature8ImgUrl": "/images/templates/spreadsheet-editor/features/fr/screen8.png",
   "Feature8ImgUrl2x": "/images/templates/spreadsheet-editor/features/fr/screen8@2x.png",
   "Feature9Title": "Faites-en encore plus, avec les modules tiers",
-  "Feature9Desc": "Ajoutez de nouvelles fonctorialités d’édition dans vos feuilles de calcul grâce aux modules. Insérez des symboles spéciaux, obtenez une traduction rapide de n'importe quel texte, et bien plus encore...",
+  "Feature9Desc": "Ajoutez de nouvelles fonctionnalités d’édition dans vos feuilles de calcul grâce aux modules. Insérez des symboles spéciaux, obtenez une traduction rapide de n'importe quel texte et bien plus encore...",
   "Feature9ImgUrl": "/images/templates/spreadsheet-editor/features/fr/screen9.png",
   "Feature9ImgUrl2x": "/images/templates/spreadsheet-editor/features/fr/screen9@2x.png",
 
-  "LearnMoreHeading": "En savoir plus sur l’Éditeur de feuilles de calcul ONLYOFFICE",
+  "LearnMoreHeading": "En savoir plus sur l’éditeur de feuilles de calcul ONLYOFFICE",
   "BlogDesc": "Tout ce qu’il faut savoir sur l’aperçu avant impression dans les feuilles de calcul Excel",
   "BlogLink": "https://www.onlyoffice.com/blog/fr/2022/06/apercu-avant-impression-excel",
   "TutorialsDesc": "Co-édition des feuilles de calcul en temps réel",

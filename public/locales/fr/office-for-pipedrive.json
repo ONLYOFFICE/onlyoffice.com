@@ -60,6 +60,7 @@
   "HowToStartStep2DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/fr/step2-ds.svg",
   "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/fr/step3-ds.svg",
   "ReadDetailedInstructions": "Consultez les guides utiles sur l'intégration de Pipedrive sur <0>GitHub</0> ou dans le <1>Centre d'aide</1>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/pipedrive.aspx",
 
   "HowToStartStep1Docs": "Déployez <0>ONLYOFFICE Docs</0> sur votre propre serveur ou inscrivez-vous à <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2Docs": "Installez l'application d'intégration à partir de la <0>marketplace de Pipedrive</0>.",

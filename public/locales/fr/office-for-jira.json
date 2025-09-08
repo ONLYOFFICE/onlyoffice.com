@@ -37,6 +37,7 @@
   "HowToStartStep3Url": "/images/templates/office-for-jira/how-to-start/fr/step3.svg",
 
   "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/jira.aspx",
   "HowToConnect": "Comment intégrer ONLYOFFICE Docs et Jira Software",
 
   "NeedAnAppToConnect": "Besoin d'une application pour connecter ONLYOFFICE à votre service web préféré ? Ou vous en avez développé une ?"

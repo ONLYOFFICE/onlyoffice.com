@@ -48,7 +48,7 @@
   "GetAnswers": "Obtenez des réponses à vos questions",
   "GetAnswersImg": "/images/templates/ai-assistants/ai-helpers/fr/cwa_1.png",
   "GetAnswersImg2x": "/images/templates/ai-assistants/ai-helpers/fr/cwa_1@2x.png",
-  "MakeRequests": "Formulez diverses demandes dans un formulaire libre",
+  "MakeRequests": "Faites vos demandes en format libre",
   "MakeRequestsImg": "/images/templates/ai-assistants/ai-helpers/fr/cwa_2.png",
   "MakeRequestsImg2x": "/images/templates/ai-assistants/ai-helpers/fr/cwa_2@2x.png",
   "QuicklyFind": "Trouvez rapidement des informations",
@@ -59,18 +59,18 @@
   "EntertainImg2x": "/images/templates/ai-assistants/ai-helpers/fr/cwa_4@2x.png",
 
   "WorkWithVisuals": "Travaillez avec des visuels",
-  "MakeUseOfOCR": "Utilisez l'OCR",
+  "MakeUseOfOCR": "Utilisez la reconnaissance de texte (OCR)",
   "MakeUseOfOCRImg": "/images/templates/ai-assistants/ai-helpers/fr/mwv_1.png",
   "MakeUseOfOCRImg2x": "/images/templates/ai-assistants/ai-helpers/fr/mwv_1@2x.png",
   "ExtractText": "Obtenez du texte à partir de PDF numérisés",
   "ExtractTextImg": "/images/templates/ai-assistants/ai-helpers/fr/mwv_2.png",
   "ExtractTextImg2x": "/images/templates/ai-assistants/ai-helpers/fr/mwv_2@2x.png",
-  "DigitizeImages": "Numérisez des images avec du texte intégré",
+  "DigitizeImages": "Scannez vos images contenant du texte",
   "DigitizeImagesImg": "/images/templates/ai-assistants/ai-helpers/fr/mwv_3.png",
   "DigitizeImagesImg2x": "/images/templates/ai-assistants/ai-helpers/fr/mwv_3@2x.png",
 
   "CalculateWithAI": "Calculez avec l'IA",
-  "GetTheRightFunction": "Obtenez la bonne fonction en quelques secondes",
+  "GetTheRightFunction": "Obtenez la bonne formule en quelques secondes",
   "GetTheRightFunctionImg": "/images/templates/ai-assistants/ai-helpers/fr/calwa_1.png",
   "GetTheRightFunctionImg2x": "/images/templates/ai-assistants/ai-helpers/fr/calwa_1@2x.png",
   "CreateNewMacros": "Créez de nouvelles macros",
@@ -83,10 +83,10 @@
   "TryInCloud": "ESSAYER DANS CLOUD",
   "TryInDesktop": "Essayer sur le bureau",
 
-  "ConnectAnyAI": "Connectez tout assistant d'IA",
+  "ConnectAnyAI": "Connectez tout assistant IA",
   "ConnectAnyAIText": "Connectez tout modèle d'IA, y compris un modèle local. Sélectionnez un fournisseur préinstallé dans la liste (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI) ou connectez le vôtre.",
 
-  "DifferentAI": "Différents modèles d'IA – pour différentes tâches",
+  "DifferentAI": "Différents modèles d'IA pour différentes tâches",
   "AdjustAI": "Ajustez l'utilisation de l'IA en fonction de vos besoins. Appliquez différents modèles d'IA pour effectuer diverses actions telles que les demandes de chatbot, la traduction, l'OCR, etc.",
 
   "GetStarted": "Pour installer",

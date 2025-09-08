@@ -59,6 +59,8 @@
   "FillInTheFormToGetAQuote": "Fill in the form to get a quote for ONLYOFFICE Docs Enterprise",
   "GetItNowText": "By clicking Get it now, you understand and agree to our <0>License agreement</0> and <0>Privacy statement</0>.",
   "OrderNow": "Order now",
+  "LicenseDuration": "License duration",
+  "Support&Updates": "Support&Updates",
 
   "WhatDoTheLifetimeLicenseAnd3YearUpdatesLabel": "What do the 'lifetime license' and '3-year updates' mean?",
   "WhatDoTheLifetimeLicenseAnd3YearUpdatesText": "You can use all the ONLYOFFICE Docs Enterprise features available at the moment of the purchase for an unlimited period of time, but three years after the purchase date you will no longer be able to get free updates. If you want to update your ONLYOFFICE Docs Enterprise version later, you will need to purchase a new license key.",
@@ -73,6 +75,8 @@
   "WhatIfIRepresentAnEducationalInstitutionText": "Please contact our Sales Department at <0>sales@onlyoffice.com</0> to request a quote.",
   "WhereCanIFindAnswersToOtherQuestionsLabel": "Where can I find answers to other questions?",
   "WhereCanIFindAnswersToOtherQuestionsText": "Please, visit our <0>FAQ center</0> or <1>submit your request</1> and we'll help you shortly.",
+  "WhereCanIFindAnswersToOtherQuestionsLink": "https://helpcenter.onlyoffice.com/faq/docs-enterprise.aspx",
+  "SalesOOMail": "mailto:sales@onlyoffice.com",
   "NumberOfRequestsIncluded": "Number of requests included",
   "FirstResponseTime": "First response time",
   "48DuringWorkingHours": "48 during working hours",
