@@ -35,4 +35,5 @@ export interface IDownloadModal {
     params: IDownloadModalOnSubmitRequest,
   ) => Promise<IApiResponse>;
   buttonAction: IDownloadBlockButton["withModal"];
+  pageTrackName: string;
 }

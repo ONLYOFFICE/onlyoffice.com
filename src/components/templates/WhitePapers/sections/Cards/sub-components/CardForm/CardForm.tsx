@@ -28,11 +28,14 @@ import {
   StyledCardFormOverlay,
   StyledCardFormStatusText,
 } from "./CardForm.styled";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: ICardFormProp & ILocale) => {
   const { t } = useTranslation("whitepapers");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha | null>(null);
+
+  const pageTrack = usePageTrack();
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
@@ -173,6 +176,8 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
         const dataWhitepapers = await responseWhitepapers.json();
 
         if (dataWhitepapers.status === "success") {
+          pageTrack('whitepapers-request');
+
           setStatus("success");
           downloadUrl(download_url);
         }

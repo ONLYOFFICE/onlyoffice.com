@@ -342,6 +342,7 @@ const EnterpriseModal = ({
         buttonLabel={t("GetAQuote")}
         onSubmitRequest={onSubmitRequest}
         onClose={() => setIsModalOpen(false)}
+        pageTrackName="docspace-prices-request"
       />
     </>
   );

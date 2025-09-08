@@ -524,6 +524,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
             buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
             onSubmitRequest={onSubmitRequest}
             onClose={() => setIsModalOpen(false)}
+            pageTrackName={isOrderNow ? "ie-order-now" : "ie-gaq" }
           />
         </StyledHeroWrapper>
 

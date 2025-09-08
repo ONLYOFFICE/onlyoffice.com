@@ -51,4 +51,5 @@ export interface IQuoteModal<T> {
   sendEmailRequest?: (params: IQuoteModalSendEmailRequest) => Promise<IApiResponse>;
   pipedriveRequest?: (params: IQuoteModalPipedriveRequest) => Promise<IApiResponse>;
   onClose: () => void;
+  pageTrackName: string;
 }

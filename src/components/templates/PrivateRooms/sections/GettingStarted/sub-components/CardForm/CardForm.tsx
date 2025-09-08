@@ -28,11 +28,14 @@ import {
   StyledCardFormOverlay,
   StyledCardFormStatusText,
 } from "./CardForm.styled";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILocale) => {
   const { t } = useTranslation("private-rooms");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha | null>(null);
+  
+  const pageTrack = usePageTrack();
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
@@ -171,6 +174,8 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
         const dataPrivateRooms = await responsePrivateRooms.json();
 
         if (dataPrivateRooms.status === "success") {
+          pageTrack('private-rooms-request');
+
           setStatus("success");
           downloadUrl(download_url);
         }

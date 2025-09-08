@@ -20,6 +20,7 @@ import { IPhoneInputRef } from "@src/components/widgets/PhoneInput";
 import { PhoneInput } from "@src/components/widgets/PhoneInput";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { validateFullName, validateEmail } from "@src/utils/validators";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const QuoteModal = <T,>({
   apiRequest,
@@ -37,6 +38,7 @@ const QuoteModal = <T,>({
   buttonLabel,
   onSubmitRequest,
   onClose,
+  pageTrackName,
 }: IQuoteModal<T> & {
   apiRequest?: (params: IQuoteModalApiRequest) => Promise<IApiResponse>;
   sendEmailRequest?: (params: IQuoteModalSendEmailRequest) => Promise<IApiResponse>;
@@ -51,6 +53,8 @@ const QuoteModal = <T,>({
 
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
+
+  const pageTrack = usePageTrack();
 
   const [isEmpty, setIsEmpty] = useState({
     fullName: false,
@@ -192,6 +196,7 @@ const QuoteModal = <T,>({
       }
 
       if (requestData.status === "success") {
+        pageTrack(pageTrackName);
         setFormStatus("success");
 
         setTimeout(() => {
