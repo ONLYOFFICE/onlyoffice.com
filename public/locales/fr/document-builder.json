@@ -15,8 +15,8 @@
     "ReadDocumentation": "Lire la documentation",
 
     "TheTechnologyBehindONLYOFFICE": "La technologie derrière ONLYOFFICE Document Builder",
-    "ONLYOFFICEDocumentBuilderProvides": "ONLYOFFICE Document Builder offre <1>JavaScript</1> API, bien documenté et très simple à utiliser. Choisissez des méthodes et des classes appropriées de notre bibliothèque ou utilisez des méthodes couramment utilisées de JavaScript pour changer certains paramètres de mise en forme.",
-    "NoMatterWhatLanguage": "Quelle que soit le langage de programmation de votre application, vous pouvez y intégrer Document Builder.",
+    "ONLYOFFICEDocumentBuilderProvides": "ONLYOFFICE Document Builder offre une API <1>JavaScript</1> bien documentée et très simple à utiliser. Choisissez des méthodes et des classes appropriées de notre bibliothèque ou utilisez des méthodes couramment utilisées de JavaScript pour changer certains paramètres de mise en forme.",
+    "NoMatterWhatLanguage": "Quel que soit le langage de programmation de votre application, vous pouvez y intégrer Document Builder",
     "NetC#MVC": "<0>.Net (C# MVC)</0>",
     "NetC#": "<0>.Net (C#)</0>",
     "Node": "<0>Node.js</0>",

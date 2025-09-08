@@ -59,6 +59,7 @@
   "HowToStartStep3ImgUrl": "/images/templates/office-for-owncloud/how-to-start/step-3.svg",
   "HowToConnect": "Configuring ONLYOFFICE connector for ownCloud",
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/owncloud.aspx",
 
   "PartnerHeading": "Are you an ownCloud partner? How about improving your ownCloud user experience and increasing your revenue?",
   "PartnerText": "Join the ONLYOFFICE partnership program right now.",

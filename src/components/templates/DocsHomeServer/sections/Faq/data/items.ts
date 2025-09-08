@@ -18,11 +18,11 @@ export const items: ICollapseExtended[] = [
     children: "WhereCanIFindAnswersToOtherQuestionsText",
     links: [
       {
-        href: "https://helpcenter.onlyoffice.com/docs/faq/docs-enterprise.aspx",
+        href: "WhereCanIFindAnswersToOtherQuestionsLink",
         isExternal: true,
       },
       {
-        href: "mailto:sales@onlyoffice.com",
+        href: "OOSalesMail",
       },
     ],
   },

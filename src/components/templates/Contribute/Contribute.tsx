@@ -3,13 +3,12 @@ import { Hero } from "./sections/Hero";
 import { Improve } from "./sections/Improve";
 import { Spread } from "./sections/Spread";
 import { Features } from "./sections/Features";
-import { ILocale } from "@src/types/locale";
 
-const ContributeTemplate = ({ locale }: ILocale) => {
+const ContributeTemplate = () => {
   return (
     <StyledContributeTemplate>
       <Hero />
-      <Improve locale={locale} />
+      <Improve />
       <Spread />
       <Features />
     </StyledContributeTemplate>

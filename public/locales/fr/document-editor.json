@@ -6,7 +6,7 @@
   "SubHeader": "Ouvrez, modifiez et collaborez sur des documents Word en ligne",
 
   "Feature1Title": "Profitez de larges fonctionnalités de traitement de texte en ligne",
-  "Feature1Desc": "Oubliez le mot « limites » quand vous éditez de vos documents en ligne : Jouissez d'une visualisation, d'une conversion, d'une impression et d'une pagination, fidèles à 100%. Travaillez avec des fichiers de toutes tailles et toutes complexités. Utilisez nos outils de mise en forme améliorée. Le traitement de texte ONLYOFFICE prend en charge tous les formats populaires : DOC, DOCX, ODT, TXT, HTML, etc. Les PDF et XPS peuvent être convertis en DOCX pour une édition ultérieure.",
+  "Feature1Desc": "Oubliez le mot « limites » quand vous éditez de vos documents en ligne : bénéficiez d'une fidélité à 100 % pour l'affichage, la conversion, l'impression et la pagination. Travaillez avec des fichiers de toutes tailles et toutes complexités. Utilisez nos outils de mise en forme améliorée. Le traitement de texte ONLYOFFICE prend en charge tous les formats populaires : DOC, DOCX, ODT, TXT, HTML, etc. Les PDF et XPS peuvent être convertis en DOCX pour une édition ultérieure.",
 
   "Feature2Title": "Modifiez les documents selon vos propres règles",
   "Feature2Desc": "Gérez les polices et les styles, mettez en forme le texte, ajustez l'espacement des lignes et des paragraphes, insérez des en-têtes et des pieds de page, personnalisez la mise en page, définissez des marges miroir et des marges de fond pour préparer les documents à la publication et activez la césure automatique du texte.",
@@ -15,13 +15,13 @@
   "Feature3Desc": "Effectuez des tâches qui impliquent la compréhension ou la génération de langage naturel à l'aide du plugin ChatGPT. Obtenez des réponses précises à vos questions, trouvez rapidement des informations, générez des textes, construisez votre code, etc. directement dans l'éditeur.",
 
   "Feature4Title": "Libérez votre créativité",
-  "Feature4Desc": "Créez des documents vivants avec des images, des graphiques personnalisables, des formes automatiques et des tableaux, des objets Text Art, des graphiques Smart Art, des équations, des bouchons, etc. Prenez le contrôle des objets insérés : Déplacez, redimensionnez, alignez, changez les styles d'habillage, remplissez avec de la couleur ou une texture, etc... Créez des formulaires et des modèles professionnels. Réalisez vos propres dessins à main à l'aide d'un stylo ou d'un surligneur.",
+  "Feature4Desc": "Créez des documents vivants avec des images, des graphiques personnalisables, des formes automatiques et des tableaux, des objets Text Art, des graphiques Smart Art, des équations, des bouchons, etc. Prenez le contrôle des objets insérés : déplacez, redimensionnez, alignez, changez les styles d'habillage, remplissez avec de la couleur ou une texture, etc. Créez des formulaires et des modèles professionnels. Réalisez vos propres dessins à la main à l'aide d'un stylo ou d'un surligneur.",
 
   "Feature5Title": "Explorez l'analyse de texte plus approfondie",
-  "Feature5Desc": "Analysez votre document Word : voir le nombre de mots, les paragraphes et les caractères avec ou sans espaces. Recherchez un mot ou une phrase et remplacez-la par une nouvelle en utilisant le service Rechercher et remplacer. Visualisez l'historique des versions, sélectionnez et restaurez n'importe quelle version précédente d'un simple clic.",
+  "Feature5Desc": "Analysez votre document Word : affichez le nombre de mots, les paragraphes et les caractères avec ou sans espaces. Recherchez un mot ou une phrase et remplacez-la par une nouvelle en utilisant le service Rechercher et remplacer. Visualisez l'historique des versions, sélectionnez et restaurez n'importe quelle version précédente d'un simple clic.",
 
   "Feature6Title": "Améliorez la productivité de vos collaborateurs",
-  "Feature6Desc": "Collaborez sur des documents avec vos collègues : choisissez le mode de co-édition approprié - <0>Rapide</0> pour voir tous les changements en temps réel, ou <0>Strict</0> pour voir seulement les changements validés . Laissez et triez les commentaires et discutez du processus dans le chat intégré ou dans Telegram. Utilisez le mode Suivi des modifications avec la fonction Aperçu avant révision, pour visualiser l'aspect de votre document si vous appliquez ou non les modifications.",
+  "Feature6Desc": "Collaborez sur des documents avec vos collègues : choisissez le mode de coédition approprié - Rapide pour voir tous les changements en temps réel, ou Strict pour voir seulement les changements validés. Laissez et triez les commentaires et discutez du processus dans le chat intégré ou dans Telegram. Utilisez le mode Suivi des modifications avec la fonction Aperçu avant révision pour visualiser l'aspect de votre document si vous appliquez ou non les modifications.",
 
   "Feature7Title": "Comparez facilement les documents",
   "Feature7Desc": "Comparez ou combinez rapidement deux documents pour voir les différences grâce aux marques de révision. Acceptez ou refusez les changements un par un ou tous à la fois. Fusionnez les modifications et enregistrez-les comme une nouvelle version du document comparé.",
@@ -29,7 +29,7 @@
   "Feature8Title": "Démultipliez vos capacités d'édition",
   "Feature8Desc": "Tirez le meilleur parti possible de votre éditeur Word en ligne grâce à une grande collection de modules tiers. Insérez une vidéo YouTube, ajoutez des symboles spéciaux, traduisez n'importe quel mot ou phrase, modifiez les images directement dans votre document, et plus encore...",
 
-  "LearnMoreHeading": "En savoir plus sur l'Éditeur de documents ONLYOFFICE",
+  "LearnMoreHeading": "En savoir plus sur l’éditeur de documents texte ONLYOFFICE",
   "BlogDesc": "Comment incorporer des documents Word en HTML",
   "TutorialsDesc": "Ajouter une nouvelle police à ONLYOFFICE Docs",
   "HintsDesc": "Formats pris en charge des documents texte électroniques",

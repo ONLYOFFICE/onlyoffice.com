@@ -34,6 +34,8 @@
   "Feature6Desc": "Protect your form and its contents, i.e., field data. ONLYOFFICE uses the symmetric AES 256 GCM algorithm to encrypt data and the asymmetric algorithm based on the Curve25519 keys to encrypt a key.",
   "Feature6ImgUrl": "/images/templates/form-creator/features/screen6.svg",
 
+  "FeatureLinkTemplateOO": "https://templates.onlyoffice.com/",
+
   "LearnMoreHeading": "Learn more about ONLYOFFICE Form Creator",
   "BlogDesc": "Automate form creation by replacing placeholders with form fields using a macro",
   "BlogLink": "https://www.onlyoffice.com/blog/2024/01/use-onlyoffice-macros-to-master-form-templates",

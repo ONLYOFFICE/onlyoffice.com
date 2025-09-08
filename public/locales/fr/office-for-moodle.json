@@ -57,7 +57,7 @@
   "AssignmentsTab4ImgUrl": "/images/templates/office-for-moodle/assignments/fr/assignments-4.png",
   "AssignmentsTab4ImgUrl2x": "/images/templates/office-for-moodle/assignments/fr/assignments-4@2x.png",
 
-  "MarketplaceConnectorTitle": "Conçu pour fonctionner parfaitement dans Moodle",
+  "MarketplaceConnectorTitle": "Conçue pour fonctionner en toute transparence avec Moodle",
   "MarketplaceConnectorDescription": "Installez l'application ONLYOFFICE pour Moodle dès aujourd'hui depuis le Moodle App Marketplace",
 
   "WhyOO": "Pourquoi ONLYOFFICE ?",
@@ -75,6 +75,7 @@
   "HowToStartStep4": "Configurez le plugin installé.",
   "HowToConnect": "Connexion d'ONLYOFFICE Docs à Moodle",
   "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/moodle.aspx",
 
   "HowToStartStep1_1": "Connectez-vous à votre compte DocSpace. <0>Créez un compte gratuit dans le cloud</0> ou <1>déployez la version auto-hébergée</1>.",
   "HowToStartStep2_1": "Configurez votre plateforme DocSpace.",
