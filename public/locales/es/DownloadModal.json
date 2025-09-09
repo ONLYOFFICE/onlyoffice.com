@@ -1,17 +1,17 @@
 {
-  "FullName": "Nombre completo",
+  "FullName": "Nombre y apellidos",
   "FullNameIsIncorrect": "El campo Nombre completo está incorrecto",
   "NameSurname": "Nombre completo",
-  "FullNameIsEmpty": "El campo Nombre completo está vacío",
+  "FullNameIsEmpty": "El campo está vacío",
   "Email": "E-mail",
   "EmailIsEmpty": "El campo Email está vacío",
   "EmailIsIncorrect": "Email es incorrecto",
-  "CompanyName": "Nombre de empresa",
+  "CompanyName": "Nombre de la empresa",
   "CompanyNameIsEmpty": "El campo Nombre de empresa está vacío",
-  "CompanyWebsite": "Sitio web",
+  "CompanyWebsite": "Sitio web de la empresa",
   "WebsiteIsIncorrect": "El campo Sitio web está incorrecto",
-  "Comment": "Dejar un comentario",
-  "GetItNow": "Obtener ahora",
+  "Comment": "Comentario",
+  "GetItNow": "OBTENERLO AHORA",
   "successfullyRequestText": "Su solicitud ha sido enviada con éxito",
   "errorRequestText": "Lo sentimos, pero ocurrió un error, inténtelo de nuevo más tarde"
 }

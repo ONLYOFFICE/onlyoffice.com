@@ -39,7 +39,12 @@ const StyledHeroSwitchButton = styled.button<{ $active?: boolean }>`
   background-color: transparent;
   cursor: pointer;
   scroll-margin-top: 72px;
+  -webkit-tap-highlight-color: transparent;
 
+  &:focus {
+    outline: none;
+  }
+    
   &:first-child {
     padding-right: 16px;
 

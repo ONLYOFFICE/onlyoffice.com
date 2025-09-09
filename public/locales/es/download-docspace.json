@@ -1,19 +1,19 @@
 {
-  "PageTitle": "Download ONLYOFFICE DocSpace | ONLYOFFICE",
-  "DownloadODocSpace": "Download ONLYOFFICE DocSpace",
+  "PageTitle": "Descargar ONLYOFFICE DocSpace | ONLYOFFICE",
+  "DownloadODocSpace": "Descargar ONLYOFFICE DocSpace",
   "Enterprise": "Enterprise",
   "OODocSpaceEnterprise": "ONLYOFFICE DocSpace Enterprise",
-  "OODocSpaceEnterpriseText": "Get the enterprise-ready space for your documents and professional technical support from the ONLYOFFICE team.",
+  "OODocSpaceEnterpriseText": "Obtén el espacio ideal para tus documentos y el soporte técnico profesional del equipo de ONLYOFFICE.",
   "Community": "Community",
   "OODocSpaceCommunity": "ONLYOFFICE DocSpace Community",
-  "OODocSpaceCommunityText": "Get the community version of DocSpace to install, configure, and maintain the solution on their own.",
+  "OODocSpaceCommunityText": "Obtén la versión comunitaria de DocSpace para instalar, configurar y mantener la solución por tu propia cuenta.",
   "DockerImage": "Imagen Docker",
-  "InstallNow": "Install now",
+  "InstallNow": "INSTALAR AHORA",
   "ForDebianUbuntu": "Para Debian, Ubuntu",
   "ForCentOS": "Para CentOS, RHEL",
   "ForWindowsServer": "Para Windows Server 2016 o superior (sólo 64 bits)",
   "ReadTheManual": "Read the manual",
   "Download": "Descargar",
-  "TryOODocSpaceEnterpriseEdition": "Try ONLYOFFICE DocSpace Enterprise Edition <0>free for 30 days</1>",
-  "GetItNowText": "By downloading/installing this software you agree to our <0>License agreement</0> and <0>Privacy statement</0>."
+  "TryOODocSpaceEnterpriseEdition": "Prueba ONLYOFFICE DocSpace Enterprise Edition <0>gratis durante 30 días</1>",
+  "GetItNowText": "Al descargar/instalar este software, aceptas nuestro <0>Acuerdo de licencia</0> y nuestra <0>Declaración de privacidad</0>."
 }

@@ -1,1 +1,0 @@
-export { CardWhitepapers } from "./CardWhitepapers"

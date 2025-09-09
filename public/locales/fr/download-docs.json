@@ -1,7 +1,7 @@
 {
   "PageTitle": "T\u00e9l\u00e9charger ONLYOFFICE Docs",
   "PageDescription": "Get online editors for text documents, spreadsheets, and presentations to install on your own server.",
-  "DownloadOODocs": "T\u00e9l\u00e9charger ONLYOFFICE Docs",
+  "DownloadOODocs": "Téléchargez ONLYOFFICE Docs",
   "Enterprise": "Enterprise",
   "Developer": "Developer",
   "Community": "Community",
@@ -52,5 +52,11 @@
   "GetTheLatestVersionOfNextcloud": "Obtenez la derni\u00e8re version de Nextcloud avec les \u00e9diteurs ONLYOFFICE pr\u00e9install\u00e9s.",
   "TryOODocsEnterprise": "Essayez ONLYOFFICE Docs Enterprise localement <0>gratuitement pendant 30 jours</0>",
   "TryOODocsDeveloper": "Essayez ONLYOFFICE Docs Developer localement <0>gratuitement pendant 30 jours</0>",
-  "GetItNowText": "En t\u00e9l\u00e9chargeant/installant ce logiciel, vous acceptez notre <0>Contrat de licence</0> et notre <1>Politique de confidentialit\u00e9</1>."
+  "GetItNowText": "En t\u00e9l\u00e9chargeant/installant ce logiciel, vous acceptez notre <0>Contrat de licence</0> et notre <1>Politique de confidentialit\u00e9</1>.",
+  "DockerImageenterpriseProductsLink": "https://helpcenter.onlyoffice.com/fr/docs/installation/docs-enterprise-install-docker.aspx",
+  "ForDebianUbuntuenterpriseProductsLink": "https://helpcenter.onlyoffice.com/fr/docs/installation/docs-enterprise-install-ubuntu.aspx",
+  "ForCentOSRHELenterpriseProductsLink": "https://helpcenter.onlyoffice.com/fr/docs/installation/docs-enterprise-install-centos.aspx",
+  "ForWindowsServerenterpriseProductsLink": "https://helpcenter.onlyoffice.com/fr/docs/installation/docs-enterprise-install-windows.aspx",
+  "AmazonMachineImageenterpriseProductsLink": "https://helpcenter.onlyoffice.com/fr/docs/installation/docs-enterprise-install-ami.aspx",
+  "AlibabaCloudImageenterpriseProductsLink": "https://helpcenter.onlyoffice.com/fr/docs/installation/docs-enterprise-install-alibaba.aspx"
 }

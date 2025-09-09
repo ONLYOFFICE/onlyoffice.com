@@ -41,7 +41,7 @@
   "HowToStart": "Cómo empezar",
   "HowToStartStep1": "Despliega <0>ONLYOFFICE Docs</0> en tu propio servidor o regístrate en <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Obtén la app de integración del <0>directorio de complementos de Alfresco</0>.",
-  "HowToStartStep3": "ConfiConfigura la aplicación de integración en la Consola de administración de Alfresco.",
+  "HowToStartStep3": "Configura la aplicación de integración en la Consola de administración de Alfresco.",
   "HowToConnect": "Cómo integrar ONLYOFFICE con Alfresco Share",
 
   "LearnMoreHeading": "Más información sobre la integración de ONLYOFFICE y Alfresco",
