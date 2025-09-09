@@ -4,7 +4,7 @@ def aws_region = ""
 def region = ""
 def cloud_front_distribution_id = ""
 def src_domain = ""
-def public_static_url = ""
+def next_public_static_url = ""
 def onlyoffice_site_mysql_host = ""
 def onlyoffice_site_mysql_database = ""
 def onlyoffice_com_strapi_api_url = ""
@@ -44,7 +44,7 @@ switch(BRANCH_NAME) {
     region="info"
     cloud_front_distribution_id="EQ4O7B2M9Q51X"
     src_domain="test-new.teamlab.info"
-    public_static_url="https://test-new.teamlab.info"
+    next_public_static_url="https://static-test-new.teamlab.info"
     onlyoffice_site_mysql_host="teamlab-4testing.cyxlgbdbuyvm.us-east-1.rds.amazonaws.com"
     onlyoffice_site_mysql_database="teamlab_site_test"
     onlyoffice_com_strapi_api_url="https://cms.teamlab.info"
@@ -83,7 +83,7 @@ switch(BRANCH_NAME) {
     region="com"
     cloud_front_distribution_id="E2JZ8IECDUCP4S"
     src_domain="2025.onlyoffice.com"
-    public_static_url="https://static-site.onlyoffice.com"
+    next_public_static_url="https://static-site.onlyoffice.com"
     onlyoffice_com_strapi_api_url="https://cms.onlyoffice.com"
     onlyoffice_com_next_public_site_url="https://www.onlyoffice.com"
     transporter_email_host="mail.onlyoffice.com"
@@ -139,7 +139,7 @@ pipeline {
       environment {
         region = "${region}"
         src_domain="${src_domain}"
-        public_static_url = "${public_static_url}"
+        next_public_static_url = "${next_public_static_url}"
         onlyoffice_site_mysql_host="${onlyoffice_site_mysql_host}"
         onlyoffice_site_mysql_database="${onlyoffice_site_mysql_database}"
         onlyoffice_com_strapi_api_url="${onlyoffice_com_strapi_api_url}"
@@ -232,6 +232,7 @@ pipeline {
           cp .jenkins/build.sh .jenkins/site_build.sh
 
           sed -i "s^var_next_public_site_url^$onlyoffice_com_next_public_site_url^" .env
+          sed -i "s^var_next_public_static_url^$next_public_static_url^" .env
           sed -i "s^var_next_public_testing_on^$next_public_testing_on^" .env
           sed -i "s^var_strapi_api_url^$onlyoffice_com_strapi_api_url^" .env
 
