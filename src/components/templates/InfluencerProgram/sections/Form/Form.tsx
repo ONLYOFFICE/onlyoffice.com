@@ -18,6 +18,7 @@ import { TextArea } from "@src/components/ui/TextArea";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Link } from "@src/components/ui/Link";
 import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 interface IInitialFormData {
   fullName: string;
@@ -30,6 +31,8 @@ interface IInitialFormData {
 const Form = () => {
   const { t } = useTranslation("influencer-program");
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
+
+  const pageTrack = usePageTrack();
 
   const initialFormData: IInitialFormData = {
     fullName: "",
@@ -135,6 +138,7 @@ const Form = () => {
       }
 
       setTimeout(() => {
+        pageTrack("influencer-program-request");
         setFormStatus("success"); // change status after request
       }, 3000);
 

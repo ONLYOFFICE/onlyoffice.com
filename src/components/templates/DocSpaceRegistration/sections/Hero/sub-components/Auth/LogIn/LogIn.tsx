@@ -20,6 +20,7 @@ import { Input } from "@src/components/ui/Input";
 import { Button } from "@src/components/ui/Button";
 import { validateEmail } from "@src/utils/validators";
 import { PasswordInput } from "@src/components/widgets/PasswordInput";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
   const { t } = useTranslation("docspace-registration");
@@ -27,6 +28,8 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
   const modalDialog = useRef<Window | null>(null);
   const intervalId = useRef<NodeJS.Timeout | null>(null);
   const platformRef = useRef<string | null>(null);
+
+  const pageTrack = usePageTrack();
 
   const [formData, setFormData] = useState({
     email: "",
@@ -97,11 +100,13 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
         setIsFormLoading(false);
         return;
       } else if (findByEmailPasswordData.data?.length === 1) {
+        pageTrack("singin");
         window.location.href = `${findByEmailPasswordData.data[0].domain}${findByEmailPasswordData.data[0].path}`;
 
         return;
       }
 
+      pageTrack("singin");
       setExistTenants(findByEmailPasswordData.data);
     }
 

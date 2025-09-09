@@ -12,7 +12,7 @@ import { getFromParam } from "@src/utils/getParams";
 import { ImageChecker } from "../ImageChecker";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { ICardItemProps, IFormData, ICheckStatus } from "../../Webinars.types";
-
+import { usePageTrack } from "@src/lib/hooks/useGA";
 import {
   StyledCardItem,
   StyledCardItemBottom,
@@ -55,6 +55,8 @@ const CardItem = ({
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha  | null>(null);
+
+  const pageTrack = usePageTrack();
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
@@ -194,6 +196,9 @@ const CardItem = ({
         }),
       });
       const webinarsResponseData = await response.json();
+      if (webinarsResponseData.status == "success") {
+        pageTrack("join_webinar");
+      }
       setStatus(webinarsResponseData.status);
     } catch (error) {
       setStatus("error");
