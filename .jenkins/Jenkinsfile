@@ -79,7 +79,7 @@ switch(BRANCH_NAME) {
     callback_email = "nonprofit.manager.t@gmail.com,teamlab.ruby@gmail.com,test.teamlab@gmail.com"
     break
   case "production_deploy":
-    aws_region="us-east-1"
+    aws_region="us-west-2"
     region="com"
     cloud_front_distribution_id="E2JZ8IECDUCP4S"
     src_domain="2025.onlyoffice.com"
@@ -225,7 +225,7 @@ pipeline {
           export AWS_SECRET_ACCESS_KEY="$cmsoforms_user"
           export AWS_DEFAULT_aws_region="$aws_s3_region"
           
-          aws s3 sync ./public "s3://$aws_s3_bucket" --exact-timestamps
+          aws s3 sync ./public s3://$aws_s3_bucket --exact-timestamps --region $aws_s3_region
 
           sed -i "s^var_notification_app_name^$src_domain^" .jenkins/build.sh
           cp .jenkins/build.sh .jenkins/site_build.sh
