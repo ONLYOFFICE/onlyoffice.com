@@ -5,17 +5,17 @@ export const items: IHowToStart = {
     links: [
         {
             label: "CreateYourONLYOFFICEWorkspace",
-            href: "/workspace.aspx",
+            href: "/workspace",
             target: "_blank"
         },
         {
             label: "LaunchInTheCloud",
-            href: "/registration.aspx",
+            href: "/docspace-registration",
             target: "_self"
         },
         {
             label: "RunOnYourOwnServer",
-            href: "/download-workspace.aspx",
+            href: "/download-workspace",
             target: "_self"
         },
         {

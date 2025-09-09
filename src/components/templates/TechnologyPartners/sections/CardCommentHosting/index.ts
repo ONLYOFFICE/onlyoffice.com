@@ -1,1 +1,1 @@
-export { CardCommentHosting } from "./CardComment"
+export { CardCommentHosting } from "./CardComment";

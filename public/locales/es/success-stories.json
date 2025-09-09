@@ -320,7 +320,7 @@
     "achievements": [
       "El ownCloud de GWDG registra actualmente alrededor de 4.000 usuarios activos al mes y 1.500 usuarios al día. Estos incluyen universidades, pero también grupos de trabajo individuales de diversas instituciones científicas dentro de Baja Sajonia, así como a nivel nacional, que utilizan ownCloud y las funciones de ONLYOFFICE. El procesamiento de archivos funciona sin problemas con la interfaz desarrollada por ownCloud y ONLYOFFICE; incluso con formatos de archivo distintos de Microsoft Office, los archivos y el formato son mostrados por el servidor sin problemas de compatibilidad.",
       "La cooperación entre ownCloud y ONLYOFFICE no solo beneficia a los usuarios de GWDG y Academic Cloud; a través de la cooperación técnica, los administradores de ownCloud pueden instalar la aplicación de integración de ONLYOFFICE con solo unos pocos clics y agregar la aplicación a su nube a través del Marketplace de ownCloud.",
-      "<7>Lea la historia de éxito completa</7>"
+      "<7>Lee la historia de éxito completa</7>"
     ],
     "PageTitle": "Historia de éxito de GWDG | ONLYOFFICE",
     "PageDescription": "Lea cómo ONLYOFFICE y ownCloud implementados en GWDG ayudan a investigadores y educadores",
@@ -333,7 +333,7 @@
     "title": "Cómo la integración de ONLYOFFICE y ownCloud en sciebo ayuda a facilitar el flujo de trabajo de investigación en la Universidad de Münster",
     "intro": "Las pruebas internas demostraron que ONLYOFFICE y ownCloud se adaptaban idealmente al escenario de aplicación de sciebo y eran superiores a otras soluciones. También fue muy importante que ambas soluciones sean productos de código abierto que atienden una gran demanda de los usuarios de sciebo y tienen una arquitectura robusta y escalable.",
     "user": {
-      "name": "Münster University",
+      "name": "Universidad de Münster",
       "role": "",
       "portal": "",
       "location": "Ubicación: Alemania",
@@ -353,7 +353,7 @@
     "achievements": [
       "ONLYOFFICE y ownCloud ya se utilizan con éxito en numerosas universidades y organizaciones. Las pruebas internas demostraron que ambas soluciones se adaptaban idealmente al escenario de aplicación de sciebo y eran superiores a otras soluciones. También fue muy importante que ambos sean productos de código abierto que atienden una gran demanda de los usuarios de sciebo y tienen una arquitectura robusta y escalable.",
       "Holger Angenent: “Con suerte, la combinación ownCloud-ONLYOFFICE ha simplificado el intercambio de datos y fomentado un trabajo más colaborativo per se. Para revelar cambios concretos en la vida laboral diaria de nuestros empleados, tendremos que realizar más estudios.”",
-      "<9>Lea la historia de éxito completa</9>"
+      "<9>Lee la historia de éxito completa</9>"
     ],
     "PageTitle": "Historia de éxito de la Universidad de Münster | ONLYOFFICE",
     "PageDescription": "Lea cómo la integración de ONLYOFFICE y ownCloud en sciebo ayuda a facilitar el flujo de trabajo de investigación en la Universidad de Münster",

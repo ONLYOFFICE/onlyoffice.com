@@ -33,7 +33,7 @@ const JoinComponent = () => {
         </StyledJoinHeading>
         <StyledJoinButton
           as={"a"}
-          href="/registration?from=whitepapers"
+          href="/docspace-registration?from=whitepapers"
         >
           {t("UseInTheCloud")}
         </StyledJoinButton>

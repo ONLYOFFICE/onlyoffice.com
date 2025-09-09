@@ -25,7 +25,7 @@
   "AbsolutelySafeImgUrl": "/images/templates/public-rooms/features/absolutely-safe.png",
   "AbsolutelySafeImgUrl2x": "/images/templates/public-rooms/features/absolutely-safe@2x.png",
 
-  "EasyToStoreDesc": "Utiliza servicios de terceros como almacenamiento de datos para tus salas públicas: Google Drive, One Drive, Box, Dropbox, kDrive, Nextcloud, ownCloud y otros que funcionan mediante el protocolo WebDAV.",
+  "EasyToStoreDesc": "Utiliza servicios de terceros como almacenamiento de datos para tus salas públicas: One Drive, Box, Dropbox, kDrive, Nextcloud, ownCloud y otros que funcionan mediante el protocolo WebDAV.",
   "EasyToStoreImgUrl": "/images/templates/public-rooms/features/easy-to-store-where-you-want.png",
   "EasyToStoreImgUrl2x": "/images/templates/public-rooms/features/easy-to-store-where-you-want@2x.png",
 
