@@ -225,7 +225,8 @@ pipeline {
           export AWS_SECRET_ACCESS_KEY="$cmsoforms_password"
           export AWS_DEFAULT_REGION="$aws_s3_region"
           
-          aws s3 sync ./public s3://$aws_s3_bucket/public --exact-timestamps --region $aws_s3_region
+          aws s3 sync ./public/images s3://$aws_s3_bucket/public/images --exact-timestamps --region $aws_s3_region
+          aws s3 sync ./public/files s3://$aws_s3_bucket/public/files --exact-timestamps --region $aws_s3_region
 
           sed -i "s^var_notification_app_name^$src_domain^" .jenkins/build.sh
           cp .jenkins/build.sh .jenkins/site_build.sh
