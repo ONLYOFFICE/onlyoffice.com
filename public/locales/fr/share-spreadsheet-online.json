@@ -20,7 +20,7 @@
   "Feature4Title": "Suivez les versions de vos feuilles de calcul",
   "Feature4Desc": "Affichez toutes les modifications apportées à une feuille de calcul, leurs auteurs et leurs dates. Parcourez l'historique des versions et restaurez une version précédente si nécessaire.",
 
-  "Feature5Title": "Commentaire, mention, discussion",
+  "Feature5Title": "Commentaires, mentions, discussions",
   "Feature5Desc": "Ajoutez des commentaires aux cellules pour poser des questions et soulever des problèmes. Mentionnez des utilisateurs dans les commentaires pour les inviter à participer à la conversation. Utilisez le chat intégré, connectez Telegram ou Jitsi via des plugins pour communiquer directement dans l’éditeur.",
 
   "Feature1ImgUrl": "/images/templates/share-spreadsheet-online/features/fr/pic1.png",
