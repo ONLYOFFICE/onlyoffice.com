@@ -21,7 +21,7 @@
   "OOWorkspaceCommunityText": "Consigue un paquete de aplicaciones web para la gestión de equipos y la colaboración.",
   "OOWorkspaceCommunityBanner": "¿Necesitas más usuarios, características de edición a nivel empresarial o asistencia técnica profesional del equipo de ONLYOFFICE? Opta por <0>ONLYOFFICE Workspace Enterprise Edition</0>.",
   "ForWindowsServer2012OrHigher": "Para Windows Server 2012 o superior (sólo 64 bits)",
-  "DockerImageForLinux": "Docker Image para Linux",
+  "DockerImageForLinux": "Imagen Docker para Linux",
   "DockerCompose": "Docker compose",
   "1ClickAppOnDigitalOcean": "App de un clic en DigitalOcean",
   "InstallOnDigitalOcean": "Instalar en DigitalOcean",

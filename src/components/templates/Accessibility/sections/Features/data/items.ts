@@ -137,7 +137,7 @@ export const items = [
         },
         links: [
           {
-            href: "SpeechLink",
+            href: "https://www.onlyoffice.com/app-directory/speech",
             label: "LearnMore",
             isExternal: true,
           },
@@ -152,7 +152,7 @@ export const items = [
         },
         links: [
           {
-            href: "TypographyLink",
+            href: "https://www.onlyoffice.com/app-directory/typograf",
             label: "LearnMore",
             isExternal: true,
           },
@@ -167,7 +167,7 @@ export const items = [
         },
         links: [
           {
-            href: "TranslatorLink",
+            href: "https://www.onlyoffice.com/app-directory/translator",
             label: "LearnMore",
             isExternal: true,
           },
