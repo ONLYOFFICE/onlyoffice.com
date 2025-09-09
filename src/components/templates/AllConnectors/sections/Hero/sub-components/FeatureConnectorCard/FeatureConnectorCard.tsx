@@ -11,6 +11,7 @@ import { IFeatureConnectorCard } from "./FeatureConnectorCard.types";
 import { Text } from "@src/components/ui/Text";
 import { Heading } from "@src/components/ui/Heading";
 import { Badge } from "@src/components/ui/Badge";
+import { useRouter } from "next/router";
 
 const FeatureConnectorCard = ({
   id,
@@ -22,6 +23,7 @@ const FeatureConnectorCard = ({
   isNew,
 }: IFeatureConnectorCard) => {
   const { t } = useTranslation("all-connectors");
+  const { locale } = useRouter();
 
   return (
     <StyledFeatureConnectorCard id={id} className={className} href={url}>
@@ -43,7 +45,9 @@ const FeatureConnectorCard = ({
             {t("ConnectorFor")}
           </Text>
           <StyledFeatureConnectorCardHeading>
-            <Heading level={4} label={t("For") + " " + heading} />
+            <Heading level={4}>
+              {locale === "es" ? heading : t("For") + " " + heading}
+            </Heading>
             {isNew && <Badge label={t("New")} />}
           </StyledFeatureConnectorCardHeading>
         </StyledFeatureConnectorCardHeader>

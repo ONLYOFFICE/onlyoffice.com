@@ -1,1 +1,1 @@
-export { CardCommentHardware } from "./CardCommentHardware"
+export { CardCommentHardware } from "./CardCommentHardware";

@@ -1,45 +1,39 @@
 import { Section } from "@src/components/ui/Section";
-import { useTranslation } from "next-i18next"
+import { useTranslation } from "next-i18next";
 import {
-    StyledHeading,
-    StyledText,
-    StyledLink,
-    WrapperLink,
-    StyledContainer,
+  StyledHeading,
+  StyledText,
+  StyledLink,
+  WrapperLink,
+  StyledContainer,
 } from "./LinkImage.styled";
 import { Button } from "@src/components/ui/Button";
 import { items } from "./data/items";
 
 const DistributionsLinkImage = () => {
-    const { t } = useTranslation("technology-partners");
+  const { t } = useTranslation("technology-partners");
 
-    return (
-        <Section
-        desktopSpacing={["168px", "112px"]}
-        tabletSpacing={["144px", "80px"]}
-        tabletSmallSpacing={["144px", "80px"]}
-        mobileSpacing={["112px", "48px"]}
-        background="#f5f5f5"
-        id="part-os-distributions"
-        >
-            <StyledContainer >
-                <StyledHeading
-                label={t(items.title)}
-                />
-                <StyledText label={t(items.text)}/>
-                <WrapperLink>
-                    {items.links?.map((item, idx) => (
-                        <StyledLink
-                        key={idx}
-                        href={t(item.href, { defaultValue: item.href })}
-                        target={item.target}
-                        />
-                    ))}
-                </WrapperLink>
-                <Button as="a" href={items.linkBtn} label={t(items.btnText)}/>
-            </StyledContainer>
-        </Section>
-    );
+  return (
+    <Section
+      desktopSpacing={["168px", "112px"]}
+      tabletSpacing={["144px", "80px"]}
+      tabletSmallSpacing={["144px", "80px"]}
+      mobileSpacing={["112px", "48px"]}
+      background="#f5f5f5"
+      id="part-os-distributions"
+    >
+      <StyledContainer>
+        <StyledHeading label={t(items.title)} />
+        <StyledText label={t(items.text)} />
+        <WrapperLink>
+          {items.links?.map((item, idx) => (
+            <StyledLink key={idx} href={t(item)} />
+          ))}
+        </WrapperLink>
+        <Button as="a" href={items.linkBtn} label={t(items.btnText)} />
+      </StyledContainer>
+    </Section>
+  );
 };
 
-export { DistributionsLinkImage }
+export { DistributionsLinkImage };
