@@ -186,8 +186,8 @@ const Hero = () => {
             timezone: formData.timeZoneOffset,
             calltheme: formData.topic ?? "",
           }),
-        })
-        
+        });
+
         const dataCallBack = await responseCallBack.json();
 
         if (dataCallBack.status === "success") {
@@ -319,6 +319,7 @@ const Hero = () => {
               status={
                 isEmpty.phone ? "error" : formData.phone ? "success" : "default"
               }
+              required
             />
             <Select
               selected={selectedLang}

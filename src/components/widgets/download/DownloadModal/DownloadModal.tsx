@@ -293,6 +293,7 @@ const DownloadModal = ({
               status={
                 isEmpty.phone ? "error" : formData.phone ? "success" : "default"
               }
+              required
             />
           )}
 
