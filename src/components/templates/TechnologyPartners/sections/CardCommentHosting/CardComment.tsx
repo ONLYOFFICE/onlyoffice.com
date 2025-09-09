@@ -4,9 +4,8 @@ import {
   StyledCardCommentHeading,
   StyledCardCommentWrapper,
   StyledText,
-  StyledLink
+  StyledLink,
 } from "./CardComment.styled";
-import { items } from "./data/items";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 import { Container } from "@src/components/ui/Container";
@@ -15,36 +14,30 @@ const CardCommentHosting = () => {
   const { t } = useTranslation("technology-partners");
 
   return (
-    <Section
-      desktopSpacing={["0px", "112px"]}
-      background="#f5f5f5"
-    >
+    <Section desktopSpacing={["0px", "112px"]} background="#f5f5f5">
       <Container>
         <StyledCardCommentWrapper>
           <StyledCardCommentContent>
             <StyledCardCommentHeading>
+              <Trans t={t} i18nKey={t("ONLYOFFICEIsTheSoftware")} />
+            </StyledCardCommentHeading>
+            <StyledText>
               <Trans
                 t={t}
-                i18nKey={t(items.title)}
+                i18nKey="SergioRavera"
+                components={[
+                  <Text as="span" fontWeight={700} color="#666666" key="0" />,
+                ]}
               />
-            </StyledCardCommentHeading>
-              <StyledText>
-                <Trans 
-                  t={t}
-                  i18nKey={items.text}
-                  components={
-                    [<Text as="span" fontWeight={700} color="#666666" key="0"/>]
-                  }
-                />
-              </StyledText>
+            </StyledText>
             <StyledLink
-                href={t(items.linkUrl, { defaultValue: items.linkUrl })}
-                label={t(items.textBtn)}
-                color="main"
-                textUnderline
-                fontWeight={400}
-                display="block"
-              />
+              href={t("ONLYOFFICEIsTheSoftwareLink")}
+              label={t("ReadTheFullCaseOfArtera")}
+              color="main"
+              textUnderline
+              fontWeight={400}
+              display="block"
+            />
           </StyledCardCommentContent>
         </StyledCardCommentWrapper>
       </Container>

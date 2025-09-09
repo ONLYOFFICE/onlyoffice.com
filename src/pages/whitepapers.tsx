@@ -17,7 +17,7 @@ const WhitePapersPage = ({ locale }: ILocale) => {
         <AdventAnnounce locale={locale} />
       </Layout.AdventAnnounce>
       <Layout.Head>
-        <Head title={t("WhitepapersPageTitle")} description={t("WhitepapersMetaDescription")} />
+        <Head title={t("WhitePapersPageTitle")} description={t("WhitePapersMetaDescription")} />
       </Layout.Head>
       <Layout.Header>
         <Header

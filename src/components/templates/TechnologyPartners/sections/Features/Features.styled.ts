@@ -12,18 +12,17 @@ const StyledFeaturesHeader = styled.div`
   text-align: center;
   position: relative;
 
-    &::before {
-        background-image: url("/images/templates/technology-partners/heading-icons/tech-h-icons.svg");
-        background-position: -4px -4px;
-        content: "";
-        height: 56px;
-        left: 50%;
-        position: absolute;
-        transform: translateX(-50%);
-        top: -64px;
-        width: 56px;
-
-    }
+  &::before {
+    background-image: url("/images/templates/technology-partners/heading-icons/tech-h-icons.svg");
+    background-position: -4px -4px;
+    content: "";
+    height: 56px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: -64px;
+    width: 56px;
+  }
 
   @media ${device.mobile} {
     margin: 0 auto 40px;

@@ -9,7 +9,7 @@
   "CompletelyOrganized": "Organización completa",
   "HighLevelOfDataSecurity": "Alto nivel de seguridad de los datos",
   "AdvancedRoleBased": "Rellenado avanzado de formularios basado en roles",
-  "CostEffectiveForAnyBudget": "Cost-effective for any budget",
+  "CostEffectiveForAnyBudget": "Rentable para cualquier presupuesto",
 
   "CreateFreeAccount": "Crear cuenta gratuita",
 
@@ -32,24 +32,24 @@
   "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/advanced.png",
   "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/advanced@2x.png",
 
-  "CostEffectiveForAnyBudgetDesc": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses, no matter if it's SMB or a big enterprise. Want to get full control over your corporate data? Deploy DocSpace on your private server.",
+  "CostEffectiveForAnyBudgetDesc": "Paga solo por los administradores y añade gratis cualquier número de usuarios habituales e invitados. Disfruta de un plan Startup gratis para equipos pequeños. ONLYOFFICE DocSpace es adecuado para todas las empresas, no importa si es una PYME o una gran empresa. ¿Quieres tener el control total de tus datos corporativos? Implementa DocSpace en tu servidor privado.",
   "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget.png",
   "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget@2x.png",
 
   "LearnMoreHeading": "Más información sobre las salas de datos virtuales en DocSpace",
 
   "HelpCenter": "Centro de ayuda",
-  "HelpCenterDesc": "Consulte las guías detalladas del usuario para un trabajo eficaz",
+  "HelpCenterDesc": "Consulta las guías detalladas del usuario para un trabajo eficaz",
   "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
   "LearnMore": "Más información",
 
   "YouTube": "YouTube",
-  "MasterONLYOFFICEDocSpace": "Domine ONLYOFFICE DocSpace con guías en video",
+  "MasterONLYOFFICEDocSpace": "Domina ONLYOFFICE DocSpace con guías en vídeo",
   "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
   "WatchNow": "Ver ahora",
 
   "CustomerTestimonial": "Testimonio del cliente",
   "HowKinderhausBerlinSharesAndCollaborates": "Cómo Kinderhaus Berlin comparte y colabora en archivos confidenciales con ONLYOFFICE DocSpace",
-  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/es/2023/11/como-kinderhaus-berlin-utiliza-onlyoffice-docspace",
   "ReadStory": "Leer historia"
 }

@@ -74,15 +74,13 @@ const Connectors = ({ locale }: ILocale) => {
               name={
                 ["zh", "ja"].includes(locale)
                   ? `${connector.name} ${
-                      connector.isWopi
-                        ? t("For")
-                        : t("For")
+                      connector.isWopi ? t("For") : t("For")
                     }`
-                  : `${
-                      connector.isWopi
-                        ? t("For")
-                        : t("For")
-                    } ${connector.name}`
+                  : locale === "es"
+                    ? connector.name
+                    : `${
+                        connector.isWopi ? t("For") : t("For")
+                      } ${connector.name}`
               }
               text={t(connector.text)}
               moreInfoUrl={connector.moreInfoUrl}

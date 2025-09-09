@@ -6,7 +6,7 @@ import {
   StyledHeroWrapper,
   StyledButton,
   StyledText,
-  StyledContainer
+  StyledContainer,
 } from "./Hero.styled";
 import { Button } from "@src/components/ui/Button";
 import { hero } from "./data/hero";
@@ -25,14 +25,15 @@ const Hero = () => {
         <StyledHeroWrapper>
           <StyledHeroContent>
             <StyledHeroHeading>
-              <Trans
-                t={t}
-                i18nKey="BecomeONLYOFFICE"
-              />
+              <Trans t={t} i18nKey="BecomeONLYOFFICE" />
             </StyledHeroHeading>
-              <StyledText label={t(hero.text)} className="first-text"/>
+            <StyledText label={t(hero.text)} className="first-text" />
             <StyledButton>
-              <Button as="a" href="/partnership-request.aspx" label={t(hero.textBtn)} />
+              <Button
+                as="a"
+                href="/partnership-request.aspx"
+                label={t(hero.textBtn)}
+              />
             </StyledButton>
           </StyledHeroContent>
           <StyledHeroImage

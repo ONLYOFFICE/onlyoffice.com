@@ -3,31 +3,31 @@ import { useTranslation } from 'next-i18next';
 import { Text } from '@src/components/ui/Text';
 import { CardForm } from '../CardForm';
 import { formatDateCards } from '../../utils/formatDateCards';
-import { ICardWhitepapersItemsProps } from '@src/components/templates/WhitePapers/WhitePapers.types';
+import { ICardWhitePapersItemsProps } from '@src/components/templates/WhitePapers/WhitePapers.types';
 import { ILocale } from '@src/types/locale';
 
 import {
-  StyledCardWhitepapers,
-  StyledCardWhitepapersButton,
-  StyledCardWhitepapersDate,
-  StyledCardWhitepapersDescription,
-  StyledCardWhitepapersFooter,
-  StyledCardWhitepapersHeader,
-  StyledCardWhitepapersHeading,
-  StyledCardWhitepapersMain,
-  StyledCardWhitepapersTitle,
-} from './CardWhitepapers.styled';
+  StyledCardWhitePapers,
+  StyledCardWhitePapersButton,
+  StyledCardWhitePapersDate,
+  StyledCardWhitePapersDescription,
+  StyledCardWhitePapersFooter,
+  StyledCardWhitePapersHeader,
+  StyledCardWhitePapersHeading,
+  StyledCardWhitePapersMain,
+  StyledCardWhitePapersTitle,
+} from './CardWhitePapers.styled';
 
 
-const CardWhitepapers = ({ head, title, date, download_url, description, locale }: ICardWhitepapersItemsProps & ILocale) => {
+const CardWhitePapers = ({ head, title, date, download_url, description, locale, id_url }: ICardWhitePapersItemsProps & ILocale) => {
   const { t } = useTranslation("whitepapers");
   const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
-      <StyledCardWhitepapers>
-        <StyledCardWhitepapersHeader>
-          <StyledCardWhitepapersHeading
+      <StyledCardWhitePapers>
+        <StyledCardWhitePapersHeader>
+          <StyledCardWhitePapersHeading
             level={5}
             size={6}
             label={head}
@@ -38,33 +38,33 @@ const CardWhitepapers = ({ head, title, date, download_url, description, locale 
             color='#fff'
             size={4}
           />
-        </StyledCardWhitepapersHeader>
-        <StyledCardWhitepapersMain>
-          <StyledCardWhitepapersTitle
+        </StyledCardWhitePapersHeader>
+        <StyledCardWhitePapersMain>
+          <StyledCardWhitePapersTitle
             level={3}
             size={5}
             label={title}
           />
-          <StyledCardWhitepapersDate
+          <StyledCardWhitePapersDate
             label={formatDateCards(date, locale)}
             color='#808080'
             fontStyle='italic'
             size={4}
           />
-          <StyledCardWhitepapersDescription
+          <StyledCardWhitePapersDescription
             label={description}
             size={4}
           />
-        </StyledCardWhitepapersMain>
-        <StyledCardWhitepapersFooter>
-          <StyledCardWhitepapersButton
+        </StyledCardWhitePapersMain>
+        <StyledCardWhitePapersFooter>
+          <StyledCardWhitePapersButton
             label={t("CardsButtonDownload")}
             variant='quinary'
             borderRadius='3px'
             onClick={() => setOpenModal(true)}
           />
-        </StyledCardWhitepapersFooter>
-      </StyledCardWhitepapers>
+        </StyledCardWhitePapersFooter>
+      </StyledCardWhitePapers>
 
       {openModal &&
         <CardForm
@@ -72,10 +72,11 @@ const CardWhitepapers = ({ head, title, date, download_url, description, locale 
           openModal={openModal}
           setOpenModal={setOpenModal}
           locale={locale}
+          id_url={id_url}
         />
       }
     </>
   );
 };
 
-export { CardWhitepapers };
+export { CardWhitePapers };

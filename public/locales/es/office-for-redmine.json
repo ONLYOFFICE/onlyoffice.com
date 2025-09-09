@@ -2,7 +2,7 @@
   "PageTitle": "Suite ofimática en línea para Redmine | ONLYOFFICE Docs",
   "PageDescription": "Edita y coedita documentos, crea y rellena formularios dentro de Redmine",
 
-  "OnlineOfficeForConnector": "Oficina online para <0>Redmine</0>",
+  "OnlineOfficeForConnector": "Suite ofimática en línea para <0>Redmine</0>",
   "Subheader": "Ve, edita y colabora en documentos de oficina dentro de Redmine usando ONLYOFFICE Docs",
   "GetStarted": "Empezar",
   "FullyCompatibleWithDocxXlsxAndPptx": "Totalmente compatible con docx, xlsx y pptx",
@@ -22,12 +22,12 @@
   "Reason7": "Versión gratuita Community y versiones <0>escalables Enterprise</0>",
   "Reason8": "Código abierto disponible en GitHub",
 
-  "HowToStart": "How to start",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud account</1>.",
-  "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>Redmine Plugins Directory</0>.",
-  "HowToStartStep3": "Configure the connector and enable JWT.",
+  "HowToStart": "Cómo empezar",
+  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una <1>cuenta en Docs Cloud</1>.",
+  "HowToStartStep2": "Obtén el conector ONLYOFFICE del <0>directorio de plugins de Redmine</0>.",
+  "HowToStartStep3": "Configura el conector y activa JWT.",
 
-  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructions": "Lee las instrucciones detalladas en el <0>Centro de ayuda</0>.",
 
   "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE Docs a tu servicio web favorito? ¿O has desarrollado una?"
 }

@@ -22,7 +22,7 @@
   "Reason8": "<0>Código abierto</0> disponible en GitHub",
 
   "HowToStart": "Cómo empezar",
-  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una cuenta de <1>Docs Cloud</1>.",
+  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una cuenta en <1>Docs Cloud</1>.",
   "HowToStartStep2": "Obtén el conector ONLYOFFICE desde <0>GitHub</0>.",
   "HowToStartStep3": "Instala y configura el conector",
 
