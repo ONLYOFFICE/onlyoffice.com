@@ -1,30 +1,29 @@
 import { IBenefits } from "../Benefits.types";
 
 export const items: IBenefits = {
-    title: "BenefitsForONLYOFFICE",
-    btn: {
-        href: "/partnership-request.aspx",
-        label: "SubmitRequest"
+  title: "BenefitsForONLYOFFICE",
+  btn: {
+    href: "/partnership-request",
+    label: "SubmitRequest",
+  },
+  cardText: [
+    {
+      label: "IndividualApproach",
     },
-    cardText: [
-        {
-            label: "IndividualApproach",
-        },
-        {
-            label: "ProfitableAndFair",
-        },
-        {
-            label: "StraightforwardEnrollment",
-        },
-        {
-            label: "ReliabilityAndRegular",
-        },
-        {
-            label: "TechAssistance",
-        },
-        {
-            label: "MarketingSupport",
-        },
-    ]
-    
-}
+    {
+      label: "ProfitableAndFair",
+    },
+    {
+      label: "StraightforwardEnrollment",
+    },
+    {
+      label: "ReliabilityAndRegular",
+    },
+    {
+      label: "TechAssistance",
+    },
+    {
+      label: "MarketingSupport",
+    },
+  ],
+};

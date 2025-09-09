@@ -13,8 +13,7 @@ import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import {
   ICardFormProp,
   ICheckStatus,
-  IFormData
-}
+  IFormData }
   from "@src/components/templates/WhitePapers/WhitePapers.types";
 
 import {
@@ -30,7 +29,7 @@ import {
 } from "./CardForm.styled";
 import { usePageTrack } from "@src/lib/hooks/useGA";
 
-const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: ICardFormProp & ILocale) => {
+const CardForm = ({ download_url, openModal, setOpenModal, locale, id_url }: ICardFormProp & ILocale ) => {
   const { t } = useTranslation("whitepapers");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha | null>(null);
@@ -159,7 +158,7 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
       }
 
       if (dataHCaptcha.status === "success") {
-        const responseWhitepapers = await fetch("/api/whitepapers", {
+        const responseWhitePapers = await fetch("/api/whitepapers", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -169,24 +168,24 @@ const CardForm = ({ download_url, openModal, setOpenModal, locale, product }: IC
             company: formData.companyName ?? "",
             email: formData.email ?? "",
             from: from ?? "",
-            product: product ?? "",
+            id_url: id_url ?? "",
             languageCode: locale ?? "",
           }),
         })
-        const dataWhitepapers = await responseWhitepapers.json();
+        const dataWhitePapers = await responseWhitePapers.json();
 
-        if (dataWhitepapers.status === "success") {
+        if (dataWhitePapers.status === "success") {
           pageTrack('whitepapers-request');
 
           setStatus("success");
           downloadUrl(download_url);
         }
 
-        if (dataWhitepapers.status === "error") {
+        if (dataWhitePapers.status === "error") {
           setStatus("error");
         }
 
-        if (openModal && dataWhitepapers.status === "success") {
+        if (openModal && dataWhitePapers.status === "success") {
           setTimeout(() => {
             setOpenModal(false);
           }, 5000);

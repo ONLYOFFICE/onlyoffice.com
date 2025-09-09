@@ -10,20 +10,20 @@ import { Protection } from "./sections/Protection/Protection";
 import { SelfHosting } from "./sections/SelfHosting/SelfHosting";
 
 const SecurityTemplate = () => {
-    return(
-        <>
-        <Hero />
-        <Compliance />
-        <SelfHosting />
-        <Encryption />
-        <Protection />
-        <Authentication />
-        <Backup />
-        <Bug />
-        <LearnMore />
-        <Faq />
-        </>
-    );
+  return (
+    <>
+      <Hero />
+      <Compliance />
+      <SelfHosting />
+      <Encryption />
+      <Protection />
+      <Authentication />
+      <Backup />
+      <Bug />
+      <LearnMore />
+      <Faq />
+    </>
+  );
 };
 
 export { SecurityTemplate };

@@ -1,40 +1,24 @@
-export interface IAppsItems {
-  href: string;
-  width: string;
-  backgroundPositionX: string;
-  label?: string;
-  platform?: "ios" | "android";
-}
+import { IDownloadButton } from "@src/components/ui/DownloadButton";
 
-export const appsItems: IAppsItems[] = [
+export const appsItems: IDownloadButton[] = [
   {
     href: "/download-desktop",
-    width: "31px",
-    backgroundPositionX: "0",
-    label: "ForWindows",
+    platform: "windows",
   },
   {
     href: "/download-desktop",
-    width: "31px",
-    backgroundPositionX: "-25px",
-    label: "ForLinux",
+    platform: "linux",
   },
   {
     href: "/download-desktop",
-    width: "31px",
-    backgroundPositionX: "-61px",
-    label: "ForMacOS",
+    platform: "macos",
   },
   {
     href: "https://itunes.apple.com/us/app/onlyoffice-documents/id944896972",
-    width: "135px",
-    backgroundPositionX: "50%",
-    platform: "ios",
+    platform: "app-store",
   },
   {
     href: "https://play.google.com/store/apps/details?id=com.onlyoffice.documents",
-    width: "130px",
-    backgroundPositionX: "50%",
-    platform: "android",
+    platform: "google-play",
   },
 ];

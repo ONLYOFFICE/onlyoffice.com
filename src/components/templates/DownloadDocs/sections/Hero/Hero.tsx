@@ -129,6 +129,11 @@ const Hero = ({
                     <DownloadBlock
                       key={index}
                       {...item}
+                      readInstructionLink={
+                        item.readInstructionLink
+                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          : undefined
+                      }
                       heading={t(item.heading)}
                       buttons={item.buttons.map((button) => ({
                         ...button,

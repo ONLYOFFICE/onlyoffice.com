@@ -10,7 +10,7 @@
 
   "BuildZaps": "<0>Crea Zaps</0> específicos para las necesidades de tu empresa con un conjunto de desencadenadores y acciones útiles",
   "Triggers": "Desencadenadores",
-  "Actions": "Actions",
+  "Actions": "ACCIONES",
 
   "File": "Archivo",
   "FileCreated": "Archivo eliminado",
@@ -53,7 +53,7 @@
   "GetExternalLink": "Obtener enlace externo",
 
   "MarketplaceConnectorTitle": "Accede a más de 3.000 aplicaciones",
-  "MarketplaceConnectorDescription": "Encuentra tu aplicación favorita en el marketplace de Zapier y conéctala con ONLYOFFICE DocSpace. Sin tener que cambiar entre aplicaciones.",
+  "MarketplaceConnectorDescription": "Encuentra tu aplicación favorita en el marketplace de Zapier y conéctala a ONLYOFFICE DocSpace. Sin tener que cambiar entre aplicaciones.",
 
   "HowToStart": "Cómo empezar",
   "HowToStartStep1": "Crea tu cuenta de <0>DocSpace gratis</0>.",

@@ -6,7 +6,7 @@ export const items: IBlogCard[] = [
     heading: { label: "LearnMoreBlueDragon" },
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2024/03/blue-dragon-onlyoffice-use-case",
+        href: "LearnMoreBlueDragonLink",
         label: "ReadTheFullStory",
       },
     ],
@@ -16,7 +16,7 @@ export const items: IBlogCard[] = [
     heading: { label: "LearnMoreStiftung" },
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2023/05/stiftung-der-deutschen-wirtschaft-and-onlyoffice",
+        href: "LearnMoreStiftungLink",
         label: "ReadTheFullStory",
       },
     ],
@@ -27,7 +27,7 @@ export const items: IBlogCard[] = [
     heading: { label: "LearnMoreEqualRights" },
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2023/05/equal-rights-beyond-borders-and-onlyoffice",
+        href: "LearnMoreEqualRightsLink",
         label: "ReadTheFullStory",
       },
     ],
@@ -37,7 +37,7 @@ export const items: IBlogCard[] = [
     heading: { label: "LearnMoreMaritime" },
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2023/01/marinom-gmbh-onlyoffice-use-case",
+        href: "LearnMoreMaritimeLink",
         label: "ReadTheFullStory",
       },
     ],
@@ -47,7 +47,7 @@ export const items: IBlogCard[] = [
     heading: { label: "LearnMoreGeyma" },
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2023/01/onlyoffice-docs-helps-geyma-sistemas-de-informacion",
+        href: "LearnMoreGeymaLink",
         label: "ReadTheFullStory",
       },
     ],
@@ -57,7 +57,7 @@ export const items: IBlogCard[] = [
     heading: { label: "LearnMoreStellfeld" },
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2022/10/stellfeld-ernst-using-onlyoffice-docs",
+        href: "LearnMoreStellfeldLink",
         label: "ReadTheFullStory",
       },
     ],
@@ -67,7 +67,7 @@ export const items: IBlogCard[] = [
     heading: { label: "LearnMoreIBE" },
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2022/09/medical-research-at-ibe-how-onlyoffice-and-nextcloud-help-the-institute",
+        href: "LearnMoreIBELink",
         label: "ReadTheFullStory",
       },
     ],
@@ -78,7 +78,7 @@ export const items: IBlogCard[] = [
     heading: { label: "LearnMoreLoveFoundation" },
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2022/08/how-onlyoffice-and-nextcloud-help-love-foundation",
+        href: "LearnMoreLoveFoundationLink",
         label: "ReadTheFullStory",
       },
     ],
