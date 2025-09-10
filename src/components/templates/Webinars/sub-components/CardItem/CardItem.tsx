@@ -12,6 +12,7 @@ import { getFromParam } from "@src/utils/getParams";
 import { ImageChecker } from "../ImageChecker";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { ICardItemProps, IFormData, ICheckStatus } from "../../Webinars.types";
+import { ILocale } from "@src/types/locale";
 
 import {
   StyledCardItem,
@@ -42,7 +43,7 @@ import {
 const CardItem = ({
   date,
   dateWithHours,
-  language,
+  webinarLang,
   title,
   description,
   link,
@@ -50,7 +51,8 @@ const CardItem = ({
   image,
   product,
   isUpcomingWebinar,
-}: ICardItemProps) => {
+  locale,
+}: ICardItemProps & ILocale) => {
   const { t } = useTranslation("webinars");
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
@@ -192,9 +194,10 @@ const CardItem = ({
           webinarTheme: title,
           webinarDate: dateWithHours,
           questions: formData.textArea,
-          lang: language,
+          webinarLang,
           from,
           hCaptchaResponse: formData.hCaptcha,
+          locale,
         }),
       });
       const webinarsResponseData = await response.json();
@@ -219,7 +222,7 @@ const CardItem = ({
       >
         <StyledCardItemTop>
           <Text size={1} label={date} />
-          <Text size={1} label={t(language)} />
+          <Text size={1} label={t(webinarLang)} />
         </StyledCardItemTop>
         <StyledCardItemContent>
           <StyledCardItemHeading level={4} size={4} label={title} />
@@ -265,7 +268,7 @@ const CardItem = ({
                 </StyledCardItemModalBy>
                 <StyledCardItemModalLang>
                   <Text size={3} label={t("UpcomingModalLanguage")} />
-                  <Text size={3} label={t(language)} />
+                  <Text size={3} label={t(webinarLang)} />
                 </StyledCardItemModalLang>
               </StyledCardItemModalInfo>
             </StyledCardItemModalDesc>
