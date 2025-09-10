@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
@@ -21,17 +22,29 @@ export default async function handler(
   res: NextApiResponse,
 ) {
   if (req.method !== "POST") {
-    return res.status(405).json({ message: "Method Not Allowed"})
+    return res.status(405).json({ message: "Method Not Allowed" });
   }
 
-  const {
-    fullName,
-    company,
-    email,
-    from,
-  } = req.body;
+  const { fullName, company, email, from, hCaptchaResponse } = req.body;
 
   try {
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
+
     const errorMessages = [];
     const cookies = parse(req.headers.cookie || "");
 
@@ -42,15 +55,12 @@ export default async function handler(
           company,
           email,
           fromPage: from,
-          ip:
-            req.headers["x-forwarded-for"] ||
-            req.socket.remoteAddress ||
-            null,
+          ip,
           utm_source: cookies.utmSource ?? null,
           utm_campaign: cookies.utmCampaign ?? null,
           utm_content: cookies.utmContent ?? null,
           utm_term: cookies.utmTerm ?? null,
-        }
+        };
 
         await db.teamlabsite.query("INSERT INTO private_rooms_request SET ?", [
           addPrivateRoomsData,
@@ -59,7 +69,7 @@ export default async function handler(
         return {
           status: "success",
           message: "privateRoomsRequestSuccessful",
-        }
+        };
       } catch (error: unknown) {
         console.error(
           "Add PrivateRooms api returns errors:",
@@ -68,16 +78,17 @@ export default async function handler(
 
         return {
           status: "error",
-          message: error instanceof Error ? error.message : "Unknown error occurred",
-        }
+          message:
+            error instanceof Error ? error.message : "Unknown error occurred",
+        };
       }
-    }
+    };
 
     const addPrivateRoomsDataResult = await addPrivateRoomsDataRequest();
     if (addPrivateRoomsDataResult.status === "error") {
       errorMessages.push(
         `privateRoomsRequest: ${addPrivateRoomsDataResult.message}`,
-      )
+      );
     }
 
     const transporter = emailTransporter();
@@ -90,18 +101,18 @@ export default async function handler(
         fullName,
         company,
         email,
-      })
-    })
+      }),
+    });
 
     res.status(200).json({
       status: "success",
       message: "success",
-    })
+    });
   } catch (error) {
     console.error("PrivateRooms api returns errors:", error);
     res.status(500).json({
       status: "error",
-      message: error
+      message: error,
     });
   }
 }

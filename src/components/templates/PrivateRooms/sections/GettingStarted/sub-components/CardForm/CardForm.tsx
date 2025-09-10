@@ -13,9 +13,8 @@ import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import {
   ICardFormProp,
   ICheckStatus,
-  IFormData
-}
-  from "../../GettingStarted.types";
+  IFormData,
+} from "../../GettingStarted.types";
 
 import {
   StyledCardFormAgreementWrapper,
@@ -30,7 +29,11 @@ import {
 } from "./CardForm.styled";
 import { usePageTrack } from "@src/lib/hooks/useGA";
 
-const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILocale) => {
+const CardForm = ({
+  download_url,
+  openModal,
+  setOpenModal,
+}: ICardFormProp & ILocale) => {
   const { t } = useTranslation("private-rooms");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha | null>(null);
@@ -55,8 +58,8 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
     setFormData({
       ...formData,
       hCaptcha: token,
-    })
-  }
+    });
+  };
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -64,7 +67,7 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
       ...formData,
       [name]: value,
     });
-  }
+  };
 
   const handleCheckStatusFullName = () => {
     if (validateFullName(formData.fullName)) {
@@ -78,7 +81,7 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
         fullName: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusCompanyName = () => {
     if (formData.companyName.length > 0) {
@@ -92,7 +95,7 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
         companyName: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusEmail = () => {
     if (validateEmail(formData.email)) {
@@ -106,7 +109,7 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
         email: "error",
       }));
     }
-  }
+  };
 
   const clearData = () => {
     setFormData({
@@ -114,15 +117,15 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
       companyName: "",
       email: "",
       hCaptcha: null,
-    })
+    });
     setCheckStatus({
       fullName: "default",
       companyName: "default",
       email: "default",
       hCaptcha: "default",
-    })
+    });
     refHCaptcha.current?.resetCaptcha();
-  }
+  };
 
   const handleSubmit = async () => {
     if (status === "loading") return;
@@ -142,23 +145,6 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
     try {
       setStatus("loading");
 
-      const responceHCaptcha = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          token: formData.hCaptcha ?? "",
-        })
-      })
-      const dataHCaptcha = await responceHCaptcha.json();
-
-      if (dataHCaptcha.status === "errorHCaptchaInvalid") {
-        setStatus("error");
-        return;
-      }
-
-      if (dataHCaptcha.status === "success") {
         const responsePrivateRooms = await fetch("/api/private-rooms", {
           method: "POST",
           headers: {
@@ -169,9 +155,17 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
             company: formData.companyName ?? "",
             email: formData.email ?? "",
             from: from ?? "",
+          hCaptchaResponse: formData.hCaptcha ?? "",
           }),
-        })
+      });
         const dataPrivateRooms = await responsePrivateRooms.json();
+
+      if (
+        dataPrivateRooms.status === "errorHCaptchaInvalid" ||
+        dataPrivateRooms.status === "error"
+      ) {
+        setStatus("error");
+      }
 
         if (dataPrivateRooms.status === "success") {
           pageTrack('private-rooms-request');
@@ -180,18 +174,13 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
           downloadUrl(download_url);
         }
 
-        if (dataPrivateRooms.status === "error") {
-          setStatus("error");
-        }
-
         if (openModal && dataPrivateRooms.status === "success") {
           setTimeout(() => {
             setOpenModal(false);
           }, 5000);
         }
-      }
     } catch (error) {
-      setStatus("error")
+      setStatus("error");
       console.error(error);
     }
   };
@@ -202,9 +191,7 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
       onClose={() => setOpenModal(false)}
     >
       <StyledCardFormModal>
-        <StyledCardFormCloseBtn
-          onClick={() => setOpenModal(false)}
-        />
+        <StyledCardFormCloseBtn onClick={() => setOpenModal(false)} />
         <StyledCardFormHeading
           level={3}
           size={5}
@@ -223,13 +210,25 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
               maxLength={100}
               onBlur={handleCheckStatusFullName}
               status={checkStatus.fullName}
-              onFocus={() => setCheckStatus((prev) => ({ ...prev, fullName: "default" }))}
+              onFocus={() =>
+                setCheckStatus((prev) => ({ ...prev, fullName: "default" }))
+              }
             />
-            {checkStatus.fullName === "error" && formData.fullName.length === 0 && (
-              <Text size={4} label={t("CardFormFullNameIsEmpty")} color="#CB0000" />
+            {checkStatus.fullName === "error" &&
+              formData.fullName.length === 0 && (
+                <Text
+                  size={4}
+                  label={t("CardFormFullNameIsEmpty")}
+                  color="#CB0000"
+                />
             )}
-            {checkStatus.fullName === "error" && formData.fullName.length > 0 && (
-              <Text size={4} label={t("CardFormFullNameIsIncorrect")} color="#CB0000" />
+            {checkStatus.fullName === "error" &&
+              formData.fullName.length > 0 && (
+                <Text
+                  size={4}
+                  label={t("CardFormFullNameIsIncorrect")}
+                  color="#CB0000"
+                />
             )}
           </StyledCardFormInputWrapper>
           <StyledCardFormInputWrapper>
@@ -243,10 +242,17 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
               maxLength={100}
               onBlur={handleCheckStatusCompanyName}
               status={checkStatus.companyName}
-              onFocus={() => setCheckStatus((prev) => ({ ...prev, companyName: "default" }))}
+              onFocus={() =>
+                setCheckStatus((prev) => ({ ...prev, companyName: "default" }))
+              }
             />
-            {checkStatus.companyName === "error" && formData.companyName.length === 0 && (
-              <Text size={4} label={t("CardFormCompanyNameIsEmpty")} color="#CB0000" />
+            {checkStatus.companyName === "error" &&
+              formData.companyName.length === 0 && (
+                <Text
+                  size={4}
+                  label={t("CardFormCompanyNameIsEmpty")}
+                  color="#CB0000"
+                />
             )}
           </StyledCardFormInputWrapper>
           <StyledCardFormInputWrapper>
@@ -261,13 +267,23 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
               maxLength={50}
               onBlur={handleCheckStatusEmail}
               status={checkStatus.email}
-              onFocus={() => setCheckStatus((prev) => ({ ...prev, email: "default" }))}
+              onFocus={() =>
+                setCheckStatus((prev) => ({ ...prev, email: "default" }))
+              }
             />
             {checkStatus.email === "error" && formData.email.length === 0 && (
-              <Text size={4} label={t("CardFormEmailIsEmpty")} color="#CB0000" />
+              <Text
+                size={4}
+                label={t("CardFormEmailIsEmpty")}
+                color="#CB0000"
+              />
             )}
             {checkStatus.email === "error" && formData.email.length > 0 && (
-              <Text size={4} label={t("CardFormEmailIsIncorrect")} color="#CB0000" />
+              <Text
+                size={4}
+                label={t("CardFormEmailIsIncorrect")}
+                color="#CB0000"
+              />
             )}
           </StyledCardFormInputWrapper>
           <StyledCardFormAgreementWrapper>
@@ -287,14 +303,16 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
                     textUnderline={true}
                     hover="underline-none"
                     target="_blank"
-                    href="https://help.onlyoffice.co/Products/Files/doceditor.aspx?fileid=6615734&doc=cy9XcGc5TXNONjVTMkNrR2NZUEVTT2E1Y1FDZGVRQ1YvOTJYTnpkZ3JEWT0_IjY2MTU3MzQi0" />,
+                    href="https://help.onlyoffice.co/Products/Files/doceditor.aspx?fileid=6615734&doc=cy9XcGc5TXNONjVTMkNrR2NZUEVTT2E1Y1FDZGVRQ1YvOTJYTnpkZ3JEWT0_IjY2MTU3MzQi0"
+                  />,
                   <Link
                     key="1"
                     color="main"
                     textUnderline={true}
                     hover="underline-none"
                     target="_blank"
-                    href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261" />
+                    href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261"
+                  />,
                 ]}
               />
             </Text>
@@ -311,7 +329,9 @@ const CardForm = ({ download_url, openModal, setOpenModal }: ICardFormProp & ILo
             status={status}
           />
           <StyledCardFormStatusText
-            label={status === "success" ? t("CardsFormSuccess") : t("CardsFormError")}
+            label={
+              status === "success" ? t("CardsFormSuccess") : t("CardsFormError")
+            }
             textAlign="center"
             $status={status}
             color={status === "error" ? "#CB0000" : "#333333"}

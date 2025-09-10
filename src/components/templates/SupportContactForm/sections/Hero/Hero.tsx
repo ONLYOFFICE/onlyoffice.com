@@ -10,7 +10,11 @@ import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Link } from "@src/components/ui/Link";
 import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { selectItems } from "./data/selectItems";
-import { ICheckStatus, IFormData, ISelectSubjectItems } from "../../SupportContactForm.types";
+import {
+  ICheckStatus,
+  IFormData,
+  ISelectSubjectItems,
+} from "../../SupportContactForm.types";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { hasOption } from "../../utils/typeGuards";
 import { validateFullName, validateEmail } from "@src/utils/validators";
@@ -59,7 +63,8 @@ const Hero = () => {
   const { t } = useTranslation("support-contact-form");
   const { locale } = useRouter();
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
-  const [loadStatus, setLoadStatus] = useState<ILoaderButton["status"]>("default");
+  const [loadStatus, setLoadStatus] =
+    useState<ILoaderButton["status"]>("default");
   const [checkStatus, setCheckStatus] = useState<ICheckStatus>({
     name: "default",
     email: "default",
@@ -75,13 +80,18 @@ const Hero = () => {
     { value: "Applications", label: t("Applications") },
   ];
 
-  const [selectedSubject, setSelectedSubject] = useState<ISelectSubjectItems | undefined>();
-  const [selectedSubjectOption, setSelectedSubjectOption] = useState<string>("");
+  const [selectedSubject, setSelectedSubject] = useState<
+    ISelectSubjectItems | undefined
+  >();
+  const [selectedSubjectOption, setSelectedSubjectOption] =
+    useState<string>("");
   const [isSubjectOpen, setIsSubjectOpen] = useState<boolean>(false);
   const selectSubjectRef = useRef<HTMLDivElement>(null);
 
   useMemo(() => {
-    const subject = selectItems.find((item) => item.value === selectedProduct[0]?.value);
+    const subject = selectItems.find(
+      (item) => item.value === selectedProduct[0]?.value,
+    );
     setSelectedSubject(subject);
   }, [selectedProduct]);
 
@@ -94,7 +104,7 @@ const Hero = () => {
     files: [],
     name: "",
     email: "",
-    hcaptcha: null
+    hcaptcha: null,
   });
 
   const os = useClientOS();
@@ -102,7 +112,7 @@ const Hero = () => {
   const handleSubjectChoose = (option: string, value: string) => {
     setFormData((prev) => ({
       ...prev,
-      subject: value
+      subject: value,
     }));
     setSelectedSubjectOption(option);
     setIsSubjectOpen(false);
@@ -114,9 +124,9 @@ const Hero = () => {
     setFormData((prev) => ({
       ...prev,
       subject: "",
-      product: selectedProduct[0]?.value || ""
+      product: selectedProduct[0]?.value || "",
     }));
-  }, [selectedProduct])
+  }, [selectedProduct]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -159,7 +169,7 @@ const Hero = () => {
     if (!event.target.files) return;
     const newFiles = Array.from(event.target.files);
 
-    const filtered = newFiles.filter(file => {
+    const filtered = newFiles.filter((file) => {
       if (formData.files.length >= MAX_FILES) {
         setCheckStatus((prev) => ({
           ...prev,
@@ -192,16 +202,16 @@ const Hero = () => {
       return true;
     });
 
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      files: [...prev.files, ...filtered]
+      files: [...prev.files, ...filtered],
     }));
   };
 
   const removeFile = (file: File) => {
     setFormData((prev) => ({
       ...prev,
-      files: prev.files?.filter((stateFile) => stateFile !== file)
+      files: prev.files?.filter((stateFile) => stateFile !== file),
     }));
   };
 
@@ -217,7 +227,7 @@ const Hero = () => {
         name: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusEmail = () => {
     if (validateEmail(formData.email)) {
@@ -231,7 +241,7 @@ const Hero = () => {
         email: "error",
       }));
     }
-  }
+  };
 
   const clearData = () => {
     setFormData({
@@ -243,7 +253,7 @@ const Hero = () => {
       files: [],
       name: "",
       email: "",
-      hcaptcha: null
+      hcaptcha: null,
     });
     setCheckStatus({
       name: "default",
@@ -256,7 +266,7 @@ const Hero = () => {
     setIsSubjectOpen(false);
     setLoadStatus("default");
     hCaptchaRef.current?.resetCaptcha();
-  }
+  };
 
   const handleOnSubmit = async () => {
     if (loadStatus === "loading") return;
@@ -272,59 +282,40 @@ const Hero = () => {
     const from = getFromParam();
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json"},
-          body: JSON.stringify({ token: formData.hcaptcha})
-        }
-      );
+      const fd = new FormData();
+      fd.append("product", formData.product ?? "");
+      fd.append("subject", formData.subject ?? "");
+      fd.append("specifyOfOther", formData.specifyOfOther ?? "");
+      fd.append("paidLicense", String(formData.paidLicense ?? ""));
+      fd.append("description", formData.description ?? "");
+      fd.append("name", formData.name ?? "");
+      fd.append("email", formData.email ?? "");
+      fd.append("languageCode", String(locale));
+      fd.append("from", String(from));
+      fd.append("os", String(os));
+      fd.append("hCaptchaResponse", formData.hcaptcha ?? "");
 
-      const hCaptchaData = await hCaptchaResponse.json();
+      formData.files.forEach((file) => {
+        fd.append("files", file, file.name);
+      });
 
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
+      const responseSupport = await fetch("/api/support-contact-form", {
+        method: "POST",
+        body: fd,
+      });
+
+      const dataSupport = await responseSupport.json();
+
+      if (dataSupport.status === "errorHCaptchaInvalid") {
         setLoadStatus("error");
         return;
+      } else if (dataSupport.status === "success") {
+        setLoadStatus("success");
       }
-
-      if (hCaptchaData.status === "success") {
-
-        const fd = new FormData();
-        fd.append("product", formData.product ?? "");
-        fd.append("subject", formData.subject ?? "");
-        fd.append("specifyOfOther", formData.specifyOfOther ?? "");
-        fd.append("paidLicense", String(formData.paidLicense ?? ""));
-        fd.append("description", formData.description ?? "");
-        fd.append("name", formData.name ?? "");
-        fd.append("email", formData.email ?? "");
-        fd.append("languageCode", String(locale));
-        fd.append("from", String(from));
-        fd.append("os", String(os));
-
-        formData.files.forEach((file) => {
-          fd.append("files", file, file.name);
-        });
-
-        const responseSupport = await fetch("/api/support-contact-form", {
-          method: "POST",
-          body: fd,
-        });
-
-        const dataSupport = await responseSupport.json();
-
-        console.log("dataSupport", dataSupport);
-
-        if (dataSupport.status === "success") {
-          setLoadStatus("success");
-          return;
-        }
-      }
-
     } catch (error) {
       console.error(error);
       setLoadStatus("error");
     }
-
   };
 
   return (
@@ -349,9 +340,7 @@ const Hero = () => {
             maxWidth="100%"
             status={selectedProduct.length > 0 ? "success" : "default"}
           />
-          <StyledHeroSelectWrapper
-            ref={selectSubjectRef}
-          >
+          <StyledHeroSelectWrapper ref={selectSubjectRef}>
             <StyledHeroSelect
               type="button"
               onClick={() => setIsSubjectOpen((prev) => !prev)}
@@ -371,8 +360,16 @@ const Hero = () => {
               />
               <StyledSelectInputIcon
                 $isOpen={isSubjectOpen}
-                $selected={selectedSubject?.data ? selectedSubject.data.length > 0 : false}
-                $status={selectedSubject?.data && selectedSubject.data.length > 0 ? "success" : "default"}
+                $selected={
+                  selectedSubject?.data
+                    ? selectedSubject.data.length > 0
+                    : false
+                }
+                $status={
+                  selectedSubject?.data && selectedSubject.data.length > 0
+                    ? "success"
+                    : "default"
+                }
               />
             </StyledHeroSelect>
 
@@ -384,31 +381,34 @@ const Hero = () => {
                       {hasOption(item) && (
                         <StyledSelectOption
                           type="button"
-                          onClick={() => handleSubjectChoose(item.option, item.value)}
+                          onClick={() =>
+                            handleSubjectChoose(item.option, item.value)
+                          }
                           $isOptionSelected={item.value === formData.subject}
                         >
                           {t(item.option)}
                         </StyledSelectOption>
                       )}
                       {item.title && (
-                        <StyledSelectOptionTitle
-                          type="button"
-                        >
+                        <StyledSelectOptionTitle type="button">
                           {t(item.title)}
                         </StyledSelectOptionTitle>
                       )}
-                      {item?.subData && (
+                      {item?.subData &&
                         item.subData.map((subItem) => (
                           <StyledSelectOptionSub
                             key={subItem.value}
                             type="button"
-                            onClick={() => handleSubjectChoose(subItem.option, subItem.value)}
-                            $isOptionSelected={subItem.value === formData.subject}
+                            onClick={() =>
+                              handleSubjectChoose(subItem.option, subItem.value)
+                            }
+                            $isOptionSelected={
+                              subItem.value === formData.subject
+                            }
                           >
                             {t(subItem.option)}
                           </StyledSelectOptionSub>
-                        ))
-                      )}
+                        ))}
                     </React.Fragment>
                   ))
                 ) : (
@@ -419,43 +419,65 @@ const Hero = () => {
               </StyledHeroOptions>
             )}
           </StyledHeroSelectWrapper>
-          {(formData.subject === "Other"
-            || formData.subject === "Functionality: Other"
-            || formData.subject === "Online Editors: Other"
-            || formData.subject === "Collaboration platform: Other")
-            && (
+          {(formData.subject === "Other" ||
+            formData.subject === "Functionality: Other" ||
+            formData.subject === "Online Editors: Other" ||
+            formData.subject === "Collaboration platform: Other") && (
             <Input
               label={t("PleaseSpecify")}
               value={formData.specifyOfOther}
-              onChange={(event) => {setFormData((prev) => ({ ...prev, specifyOfOther: event.target.value }))}}
-              status={formData.specifyOfOther.length > 0 ? "success" : "default"}
+              onChange={(event) => {
+                setFormData((prev) => ({
+                  ...prev,
+                  specifyOfOther: event.target.value,
+                }));
+              }}
+              status={
+                formData.specifyOfOther.length > 0 ? "success" : "default"
+              }
             />
           )}
           <StyledHeroPaidLicense>
-            <StyledHeroPaidLicenseText label={t("PaidLicense")} color="#666666" />
+            <StyledHeroPaidLicenseText
+              label={t("PaidLicense")}
+              color="#666666"
+            />
             <StyledHeroRadioInput
               id="paid-license-yes"
               type="radio"
               name="paidLicense"
               value="yes"
               checked={formData.paidLicense}
-              onChange={() => {setFormData((prev) => ({ ...prev, paidLicense: true }))}}
+              onChange={() => {
+                setFormData((prev) => ({ ...prev, paidLicense: true }));
+              }}
             />
-            <StyledHeroRadioLabel htmlFor="paid-license-yes">{t("Yes")}</StyledHeroRadioLabel>
+            <StyledHeroRadioLabel htmlFor="paid-license-yes">
+              {t("Yes")}
+            </StyledHeroRadioLabel>
             <StyledHeroRadioInput
               id="paid-license-no"
               type="radio"
               name="paidLicense"
               value="no"
               checked={!formData.paidLicense}
-              onChange={() => {setFormData((prev) => ({ ...prev, paidLicense: false }))}}
+              onChange={() => {
+                setFormData((prev) => ({ ...prev, paidLicense: false }));
+              }}
             />
-            <StyledHeroRadioLabel htmlFor="paid-license-no">{t("No")}</StyledHeroRadioLabel>
+            <StyledHeroRadioLabel htmlFor="paid-license-no">
+              {t("No")}
+            </StyledHeroRadioLabel>
           </StyledHeroPaidLicense>
           <TextArea
             label={t("Description")}
             value={formData.description}
-            onChange={(event) => {setFormData((prev) => ({ ...prev, description: event.target.value}))}}
+            onChange={(event) => {
+              setFormData((prev) => ({
+                ...prev,
+                description: event.target.value,
+              }));
+            }}
             fullWidth={true}
           />
           <StyledHeroUploadWrapper>
@@ -473,12 +495,7 @@ const Hero = () => {
                 <Trans
                   t={t}
                   i18nKey="AttachFileOrScreenshоts"
-                  components={[
-                    <StyledHeroUploadText
-                      key="0"
-                      as={"span"}
-                    />
-                  ]}
+                  components={[<StyledHeroUploadText key="0" as={"span"} />]}
                 />
               </StyledHeroUploadLabel>
             </StyledHeroUpload>
@@ -519,17 +536,21 @@ const Hero = () => {
             placeholder={t("Name")}
             type="text"
             value={formData.name}
-            onChange={(event) => {setFormData((prev) => ({ ...prev, name: event.target.value }))}}
+            onChange={(event) => {
+              setFormData((prev) => ({ ...prev, name: event.target.value }));
+            }}
             required
             onBlur={handleCheckStatusFullName}
-            onFocus={() => setCheckStatus((prev) => ({ ...prev, fullName: "default" }))}
+            onFocus={() =>
+              setCheckStatus((prev) => ({ ...prev, fullName: "default" }))
+            }
             status={checkStatus.name}
             caption={
               checkStatus.name === "error" && formData.name.length === 0
-              ? t("NameIsEmpty")
-              : checkStatus.name === "error" && formData.name.length > 0
-              ? t("NameIsIncorrect")
-              : ""
+                ? t("NameIsEmpty")
+                : checkStatus.name === "error" && formData.name.length > 0
+                  ? t("NameIsIncorrect")
+                  : ""
             }
           />
           <Input
@@ -537,28 +558,34 @@ const Hero = () => {
             placeholder="name@domain.com"
             type="email"
             value={formData.email}
-            onChange={(event) => {setFormData((prev) => ({ ...prev, email: event.target.value }))}}
+            onChange={(event) => {
+              setFormData((prev) => ({ ...prev, email: event.target.value }));
+            }}
             required
             onBlur={handleCheckStatusEmail}
-            onFocus={() => setCheckStatus((prev) => ({ ...prev, email: "default" }))}
+            onFocus={() =>
+              setCheckStatus((prev) => ({ ...prev, email: "default" }))
+            }
             status={checkStatus.email}
             caption={
               checkStatus.email === "error" && formData.email.length === 0
-              ? t("EmailIsEmpty")
-              : checkStatus.email === "error" && formData.email.length > 0
-              ? t("EmailIsIncorrect")
-              : ""
+                ? t("EmailIsEmpty")
+                : checkStatus.email === "error" && formData.email.length > 0
+                  ? t("EmailIsIncorrect")
+                  : ""
             }
           />
           <StyledHeroHCaptchaWrapper>
             <HCaptcha
               ref={hCaptchaRef}
-              onVerify={(token) => {setFormData((prev) => ({ ...prev, hcaptcha: token }))}}
-              onExpire={() => {setFormData((prev) => ({ ...prev, hcaptcha: null }))}}
+              onVerify={(token) => {
+                setFormData((prev) => ({ ...prev, hcaptcha: token }));
+              }}
+              onExpire={() => {
+                setFormData((prev) => ({ ...prev, hcaptcha: null }));
+              }}
             />
-            <StyledHeroAgreeText
-              color="#808080"
-            >
+            <StyledHeroAgreeText color="#808080">
               <Trans
                 t={t}
                 i18nKey="ByClickingSubmit"
@@ -576,18 +603,18 @@ const Hero = () => {
                     target="_blank"
                     color="main"
                     textUnderline={true}
-                  />
+                  />,
                 ]}
               />
             </StyledHeroAgreeText>
           </StyledHeroHCaptchaWrapper>
           <StyledHeroLoaderButtonWrapper>
             {loadStatus === "loading" && (
-             <StyledHeroLoadText
-               size={4}
-               label={t("PleaseWait")}
-               color="#999999"
-             />
+              <StyledHeroLoadText
+                size={4}
+                label={t("PleaseWait")}
+                color="#999999"
+              />
             )}
             <LoaderButton
               label={t("Submit")}
@@ -616,7 +643,7 @@ const Hero = () => {
                 textAlign="center"
               />
             )}
-         </StyledHeroLoaderButtonWrapper>
+          </StyledHeroLoaderButtonWrapper>
         </StyledHeroForm>
       </Container>
     </Section>

@@ -129,7 +129,7 @@ const Form = () => {
 
       const hCaptchaData = await hCaptchaResponse.json();
 
-      if (hCaptchaData.status === "errorhCaptchaInvalid") {
+      if (hCaptchaData.status === "errorHCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");

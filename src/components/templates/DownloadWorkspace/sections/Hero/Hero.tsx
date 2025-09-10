@@ -51,6 +51,7 @@ const Hero = ({ locale }: ILocale) => {
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-workspace", {
       method: "POST",
@@ -69,6 +70,7 @@ const Hero = ({ locale }: ILocale) => {
         from,
         country,
         region,
+        hCaptchaResponse,
       }),
     }).then((res) => res.json());
   };

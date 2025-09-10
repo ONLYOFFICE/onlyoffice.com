@@ -95,7 +95,10 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
       );
       const findByEmailPasswordData = await findByEmailPasswordRes.json();
 
-      if (findByEmailPasswordData.data?.length === 0) {
+      if (
+        findByEmailPasswordData.status === "error" ||
+        findByEmailPasswordData.data?.length === 0
+      ) {
         setIsError({ email: true, password: true });
         setIsFormLoading(false);
         return;

@@ -328,7 +328,7 @@ pipeline {
             sed -i "s^var_core_sg_mysql_url^$onlyoffice_site_prod_core_sg_mysql_url^" .env
             sed -i "s^var_core_com_mysql_url^$onlyoffice_site_prod_core_com_mysql_url^" .env
             sed -i "s^var_core_com2_mysql_url^$onlyoffice_site_prod_core_com2_mysql_url^" .env
-            sed -i "s^var_teamlabsite_mysql_url^$onlyoffice_site_prod_core_teamlabsite_mysql_url^" .env
+            sed -i "s^var_teamlabsite_mysql_url^$onlyoffice_site_test_teamlabsite_mysql_url^" .env
             sed -i "s^var_personal_mysql_url^$onlyoffice_site_prod_core_personal_mysql_url^" .env
 
           fi
