@@ -12,10 +12,12 @@
   "GDPRComplianceText1": "General Data Protection Regulation (GDPR) was adopted in order to protect end-users of software, regulating the way companies handle their information when working with EU residents. We respect our users’ right to own and control their personal data, and we created products which are fully compliant with European laws.",
   "GDPRComplianceText2": "Therefore, ONLYOFFICE sticks to data minimalism and we let users know how data is collected, stored, and processed. ONLYOFFICE gives freedom to access, copy, delete, restrict, or move any personal data. If your organization acts as a data controller and provides ONLYOFFICE to end-customers, you get complete access to the procedures through which they can execute their legal rights related to their personal data.",
   "ReadMoreAboutONLYOFFICEGDPR": "Read more about ONLYOFFICE GDPR compliance",
+  "ReadMoreAboutONLYOFFICEGDPRLink": "https://www.onlyoffice.com/blog/2018/05/how-onlyoffice-complies-with-gdpr",
 
   "HIPAACompliance": "HIPAA compliance",
   "HealthInsurance": "Health Insurance Portability and Accountability Act (HIPAA) requires any organization providing treatment, payment, and operations in healthcare, as well as their business associates and subcontractors who have access to any of their data assets, to protect sensitive patient data according to a set of recognized standards. ONLYOFFICE protects structured and unstructured data both at rest and in transfer, data audits, provides data integrity controls, etc., to provide the mandatory attributes defined by HIPAA and ensure that the customer organization stays fully compliant with the Act.",
   "ReadMoreAboutHIPAA": "Read more about HIPAA compliance in ONLYOFFICE",
+  "ReadMoreAboutHIPAALink": "https://www.onlyoffice.com/blog/2020/10/how-onlyoffice-complies-with-hipaa",
 
   "Self_Hosting": "Self-hosting",
   "ONLYOFFICEWasDesignedForBusinesses": "ONLYOFFICE was designed for businesses carrying out sensitive communication and records that, if compromised, may endanger customers and internal operations to various extent. Our range of solutions keeps your services and all assigned data completely within your physical perimeter. We put hardware protection in your hands, allowing you to manually maintain stability and connectivity as your business standards demand.",
@@ -67,6 +69,7 @@
   "TheThreatOfMalicious": "The threat of malicious internal action scales with business size and data classification variety, thus necessitating the differentiation of rights.",
   "UsersOfYourPrivate": "Users of your private portal can be easily grouped and hierarchized. Set access rights to portal modules and data for each user or group to protect specific data from unwanted attention and insider actions.",
   "ReadMoreAboutTheAccess": "Read more about the access rights management",
+  "ReadMoreAboutTheAccessLink": "https://helpcenter.onlyoffice.com/video.aspx#workspace_block",
   "AuthenticationFiltering": "Authentication filtering and monitoring",
   "ACustomizedSet": "A customized set-up for log-in criteria allows you to manage specific frameworks for authentication based on your knowledge and concerns. Moreover, all activities can be manually monitored and reported to reveal the potentially fraudulent or harmful behavior.",
   "TrustedMailDomains": "<0>Trusted mail domains.</0> This option allows you to manually select the mail servers that sign-up emails should belong to. Customized mail domains are also supported.",
@@ -84,6 +87,7 @@
   "ONLYOFFICEBug": "<0>ONLYOFFICE</0> Bug Bounty Program",
   "WeWantToMakeOurProducts": "We want to make our products as reliable and secure as we can, and here’s where the help from external talents can power up our own internal testing efforts. Everyone from professional ethical hackers to aspiring security enthusiasts can take part in our Bug Bounty Program on HackerOne to find and report vulnerabilities and receive fair compensation.",
   "ReadMoreDetailsAboutHowItWorks": "Read more details about how it works in our <0>blog</0>.",
+  "ReadMoreDetailsAboutHowItWorksLink": "https://www.onlyoffice.com/blog/2022/02/onlyoffice-is-launching-a-bounty-program-on-hackerone",
 
   "LearnMoreAboutONLYOFFICE": "Learn more about ONLYOFFICE security measures",
   "WhitePaper": "White paper",
