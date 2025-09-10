@@ -49,12 +49,12 @@ const CardItem = ({
   speaker,
   image,
   product,
-  isUpcomingWebinar
- }: ICardItemProps) => {
+  isUpcomingWebinar,
+}: ICardItemProps) => {
   const { t } = useTranslation("webinars");
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
-  const refHCaptcha = useRef<ReactCaptcha  | null>(null);
+  const refHCaptcha = useRef<ReactCaptcha | null>(null);
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
@@ -72,13 +72,15 @@ const CardItem = ({
     hCaptcha: "default",
   });
 
-  const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChangeInput = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = event.target;
     setFormData({
       ...formData,
       [name]: value,
     });
-  }
+  };
 
   const handleCheckStatusFullName = () => {
     if (validateFullName(formData.fullName)) {
@@ -92,7 +94,7 @@ const CardItem = ({
         fullName: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusCompanyName = () => {
     if (formData.companyName.length > 0) {
@@ -106,7 +108,7 @@ const CardItem = ({
         companyName: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusEmail = () => {
     if (validateEmail(formData.email)) {
@@ -120,7 +122,7 @@ const CardItem = ({
         email: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusTextArea = () => {
     if (formData.textArea.length > 0) {
@@ -134,14 +136,14 @@ const CardItem = ({
         textArea: "default",
       }));
     }
-  }
+  };
 
   const handleHCaptchaChange = (token: string | null) => {
     setFormData({
       ...formData,
       hCaptcha: token,
-    })
-  }
+    });
+  };
 
   const clearData = () => {
     setFormData({
@@ -150,16 +152,16 @@ const CardItem = ({
       email: "",
       textArea: "",
       hCaptcha: null,
-    })
+    });
     setCheckStatus({
       fullName: "default",
       companyName: "default",
       email: "default",
       textArea: "default",
       hCaptcha: "default",
-    })
+    });
     refHCaptcha.current?.resetCaptcha();
-  }
+  };
 
   const handleSubmit = async () => {
     if (status === "loading") return;
@@ -175,6 +177,7 @@ const CardItem = ({
     }
 
     const from = getFromParam();
+
     try {
       setStatus("loading");
       const response = await fetch("/api/webinars", {
@@ -191,15 +194,22 @@ const CardItem = ({
           questions: formData.textArea,
           lang: language,
           from,
+          hCaptchaResponse: formData.hCaptcha,
         }),
       });
       const webinarsResponseData = await response.json();
-      setStatus(webinarsResponseData.status);
+
+      if (webinarsResponseData.status === "errorHCaptchaInvalid") {
+        setStatus("error");
+        return;
+      } else {
+        setStatus(webinarsResponseData.status);
+      }
     } catch (error) {
       setStatus("error");
       console.error(error);
     }
-  }
+  };
 
   return (
     <>
@@ -208,25 +218,12 @@ const CardItem = ({
         onClick={() => setIsModalOpen((prev) => !prev)}
       >
         <StyledCardItemTop>
-          <Text
-            size={1}
-            label={date}
-          />
-          <Text
-            size={1}
-            label={t(language)}
-          />
+          <Text size={1} label={date} />
+          <Text size={1} label={t(language)} />
         </StyledCardItemTop>
         <StyledCardItemContent>
-          <StyledCardItemHeading
-            level={4}
-            size={4}
-            label={title}
-          />
-          <Text
-            size={2}
-            label={description}
-          />
+          <StyledCardItemHeading level={4} size={4} label={title} />
+          <Text size={2} label={description} />
         </StyledCardItemContent>
         <StyledCardItemBottom>
           {!isUpcomingWebinar && link && (
@@ -239,26 +236,28 @@ const CardItem = ({
             />
           )}
           {image.map((image, index) => (
-              <ImageChecker key={`${image.url} ${index}`} url={image.url} />
-            ))
-          }
-          <StyledCardItemSubtitle
-            label={speaker}
-            level={5}
-            size={5}
-          />
+            <ImageChecker key={`${image.url} ${index}`} url={image.url} />
+          ))}
+          <StyledCardItemSubtitle label={speaker} level={5} size={5} />
         </StyledCardItemBottom>
       </StyledCardItem>
 
       {isModalOpen && isUpcomingWebinar && (
-        <StyledCardItemModal onClick={(event) => event.target === event.currentTarget && setIsModalOpen(false)}>
+        <StyledCardItemModal
+          onClick={(event) =>
+            event.target === event.currentTarget && setIsModalOpen(false)
+          }
+        >
           <StyledCardItemModalContent>
             <StyledCardItemModalDesc>
               <StyledCardItemModalClose onClick={() => setIsModalOpen(false)} />
               <Text label={dateWithHours} size={3} />
               <StyledCardItemModalHeading level={4} size={4} label={title} />
               <StyledCardItemModalText size={3} label={description} />
-              <StyledCardItemModalProduct size={3} label={`${t("UpcomingModalProduct")}: ${product}`} />
+              <StyledCardItemModalProduct
+                size={3}
+                label={`${t("UpcomingModalProduct")}: ${product}`}
+              />
               <StyledCardItemModalInfo>
                 <StyledCardItemModalBy>
                   <Text size={3} label={t("UpcomingModalBy")} />
@@ -283,14 +282,26 @@ const CardItem = ({
                   maxLength={100}
                   onBlur={handleCheckStatusFullName}
                   status={checkStatus.fullName}
-                  onFocus={() => setCheckStatus((prev) => ({ ...prev, fullName: "default" }))}
+                  onFocus={() =>
+                    setCheckStatus((prev) => ({ ...prev, fullName: "default" }))
+                  }
                 />
-                {checkStatus.fullName === "error" && formData.fullName.length === 0 && (
-                  <Text size={4} label={t("FullNameIsEmpty")} color="#CB0000" />
-                )}
-                {checkStatus.fullName === "error" && formData.fullName.length > 0 && (
-                  <Text size={4} label={t("FullNameIsIncorrect")} color="#CB0000" />
-                )}
+                {checkStatus.fullName === "error" &&
+                  formData.fullName.length === 0 && (
+                    <Text
+                      size={4}
+                      label={t("FullNameIsEmpty")}
+                      color="#CB0000"
+                    />
+                  )}
+                {checkStatus.fullName === "error" &&
+                  formData.fullName.length > 0 && (
+                    <Text
+                      size={4}
+                      label={t("FullNameIsIncorrect")}
+                      color="#CB0000"
+                    />
+                  )}
               </StyledCardItemModalInputWrapper>
               <StyledCardItemModalInputWrapper>
                 <Input
@@ -303,11 +314,21 @@ const CardItem = ({
                   maxLength={100}
                   onBlur={handleCheckStatusCompanyName}
                   status={checkStatus.companyName}
-                  onFocus={() => setCheckStatus((prev) => ({ ...prev, companyName: "default" }))}
+                  onFocus={() =>
+                    setCheckStatus((prev) => ({
+                      ...prev,
+                      companyName: "default",
+                    }))
+                  }
                 />
-                {checkStatus.companyName === "error" && formData.companyName.length === 0 && (
-                  <Text size={4} label={t("CompanyNameIsEmpty")} color="#CB0000" />
-                )}
+                {checkStatus.companyName === "error" &&
+                  formData.companyName.length === 0 && (
+                    <Text
+                      size={4}
+                      label={t("CompanyNameIsEmpty")}
+                      color="#CB0000"
+                    />
+                  )}
               </StyledCardItemModalInputWrapper>
               <StyledCardItemModalInputWrapper>
                 <Input
@@ -321,13 +342,20 @@ const CardItem = ({
                   maxLength={50}
                   onBlur={handleCheckStatusEmail}
                   status={checkStatus.email}
-                  onFocus={() => setCheckStatus((prev) => ({ ...prev, email: "default" }))}
+                  onFocus={() =>
+                    setCheckStatus((prev) => ({ ...prev, email: "default" }))
+                  }
                 />
-                {checkStatus.email === "error" && formData.email.length === 0 && (
-                  <Text size={4} label={t("EmailIsEmpty")} color="#CB0000" />
-                )}
+                {checkStatus.email === "error" &&
+                  formData.email.length === 0 && (
+                    <Text size={4} label={t("EmailIsEmpty")} color="#CB0000" />
+                  )}
                 {checkStatus.email === "error" && formData.email.length > 0 && (
-                  <Text size={4} label={t("EmailIsIncorrect")} color="#CB0000" />
+                  <Text
+                    size={4}
+                    label={t("EmailIsIncorrect")}
+                    color="#CB0000"
+                  />
                 )}
               </StyledCardItemModalInputWrapper>
               <StyledCardItemModalInputWrapper>
@@ -343,7 +371,10 @@ const CardItem = ({
                   status={checkStatus.textArea}
                 />
               </StyledCardItemModalInputWrapper>
-              <StyledCardItemModalPlease size={4} label={t("UpcomingModalPlease")} />
+              <StyledCardItemModalPlease
+                size={4}
+                label={t("UpcomingModalPlease")}
+              />
               <HCaptcha
                 ref={refHCaptcha}
                 onVerify={handleHCaptchaChange}
@@ -369,7 +400,7 @@ const CardItem = ({
                       textUnderline={true}
                       hover="underline-none"
                       href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261"
-                    />
+                    />,
                   ]}
                 />
               </StyledCardItemModalAgreement>
@@ -401,7 +432,7 @@ const CardItem = ({
                 <Trans
                   t={t}
                   i18nKey={"RequestSuccessfull"}
-                  components={{br: <br />}}
+                  components={{ br: <br /> }}
                 />
               </StyledCardItemStatusText>
             </StyledCardItemModalForm>

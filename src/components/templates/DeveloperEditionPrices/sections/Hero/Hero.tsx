@@ -137,6 +137,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IQuoteModalOnSubmitRequest) => {
     return fetch("/api/developer-edition-prices", {
       method: "POST",
@@ -170,6 +171,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
         from,
         country,
         region,
+        hCaptchaResponse,
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
         type: "docsdeveloperrequest",
