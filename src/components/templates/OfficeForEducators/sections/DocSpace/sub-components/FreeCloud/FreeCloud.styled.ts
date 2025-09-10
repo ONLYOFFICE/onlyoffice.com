@@ -5,6 +5,7 @@ import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
 const StyledFreeCloud = styled.div`
+  background-color: #ffffff;
   padding: 64px;
   border: 1px solid #e2e2e2;
   border-radius: 12px;

@@ -4,7 +4,7 @@
 
   "HeroTitle": "ONLYOFFICE Automation API",
   "HeroSubtitle" : "Place any controls within your platform interface and manipulate document contents from the outside of the editors",
-  "HeroButton" : "REQUEST FREE DEMO",
+  "HeroButton" : "Request free demo",
 
   "WhatIsTitle" : "What is <0>Automation API</0>",
   "WhatIsSubtitle" : "<0>ONLYOFFICE Automation API</0> with the Connector class makes it possible to interact with office documents from the outside. You are able to get changes made in files using your own custom interface elements.",
@@ -45,9 +45,9 @@
   "HowToGetONLYOFFICEAutomationAPI": "How to get ONLYOFFICE Automation API",
   "AutomationAPISsAPartOf": "Automation API is a part of <0>ONLYOFFICE Docs Developer</0> which provides a best-in-breed online office suite with editors for documents, spreadsheets, presentations, and PDFs intended for integration into your own web app or platform. Access to Automation API is provided as a part of the extended <1>ONLYOFFICE Docs Developer license</1>.",
   "GetA30DayTrial": "Get a <0>30-day trial</0> of ONLYOFFICE Docs Developer with Automation API included to test it for free.",
-  "DownloadNow": "DOWNLOAD NOW",
+  "DownloadNow": "Download now",
 
   "HaveAnyQuestions": "Have any questions about ONLYOFFICE Automation API? We will be happy to consult you and discuss all the details.",
   "HaveAnyQuestionsText": "The team of experts is here to help you at every step. <2 /> <2 /> In case of pre-sale questions, contact us at <0>sales@onlyoffice.com</0> or schedule a time to have our team call you.  <2 /> <2 /> For any technical issue, message us at <1>support@onlyoffice.com</1>.",
-  "GetInTouch": "GET IN TOUCH"
+  "GetInTouch": "Get in touch"
 }

@@ -1,8 +1,6 @@
 import { useTranslation } from "next-i18next";
-import { StyledDocumentsHeading, StyledDocumentBtn } from "./Documents.styled";
+import { StyledDocumentsHeading, StyledDocumentBtn, StyledFeatureSwitcher, StyledContainer } from "./Documents.styled";
 import { Section } from "@src/components/ui/Section";
-import { Container } from "@src/components/ui/Container";
-import { FeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
 import { Button } from "@src/components/ui/Button";
 import { items } from "./data/items";
 
@@ -11,14 +9,14 @@ const Documents = () => {
 
   return (
     <Section background="#f9f9f9">
-      <Container>
+      <StyledContainer maxWidth="1200px">
         <StyledDocumentsHeading
           level={2}
           label={t("WorkWithinConnector")}
           textAlign="center"
         />
 
-        <FeatureSwitcher
+        <StyledFeatureSwitcher
           imageHeight={540}
           imageWidth={736}
           items={items.map(({ label, image }) => ({
@@ -39,7 +37,7 @@ const Documents = () => {
             label={t("RequestFreeDemo")}
           />
         </StyledDocumentBtn>
-      </Container>
+      </StyledContainer>
     </Section>
   );
 };

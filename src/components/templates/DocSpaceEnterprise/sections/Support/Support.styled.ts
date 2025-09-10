@@ -76,7 +76,7 @@ const StyledSupportList = styled.div`
       background-color: transparent;
       border: 1px solid #ffffff;
       color: #fff;
-      border-radius: 3px;
+      border-radius: 6px;
     }
   }
 

@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <StyledHero
       background="#f5f5f5"
-      desktopSpacing={["134px", "104px"]}
+      desktopSpacing={["184px", "104px"]}
       tabletSpacing={["126px", "24px"]}
       tabletSmallSpacing={["104px", "53px"]}
       mobileSpacing={["88px", "55px"]}
@@ -34,7 +34,7 @@ const Hero = () => {
           <StyledHeroLogo />
 
           <StyledHeroHeader>
-            <Heading level={1} size={1}>
+            <Heading level={1} size={2}>
               <Trans
                 t={t}
                 i18nKey="OnlineOfficeForConnector"
