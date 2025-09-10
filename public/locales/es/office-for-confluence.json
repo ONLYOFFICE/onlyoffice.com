@@ -5,7 +5,7 @@
   "OnlineOfficeForConfluence": "Suite ofimática online para Confluence",
   "WorkOnAllKindsOfOfficeDocuments": "Trabaja con todo tipo de documentos ofimáticos en Confluence con ONLYOFFICE Docs",
   "GetStarted": "COMENZAR",
-  "RequestFreeDemo": "Request free demo",
+  "RequestFreeDemo": "SOLICITAR DEMO GRATUITA",
   "HeroImgUrl": "/images/templates/office-for-confluence/hero/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-confluence/hero/hero@2x.png",
 
@@ -13,13 +13,13 @@
   "DocumentsTab1Label": "Trabaja con archivos ofimáticos cargados en la lista Archivos adjuntos",
   "DocumentsTab1ImgUrl": "/images/templates/office-for-confluence/documents/documents-1.png",
   "DocumentsTab1ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-1@2x.png",
-  "DocumentsTab2Label": "Cree y edite documentos de texto, hojas de cálculo y presentaciones",
+  "DocumentsTab2Label": "Crea y edita documentos de texto, hojas de cálculo y presentaciones",
   "DocumentsTab2ImgUrl": "/images/templates/office-for-confluence/documents/documents-2.png",
   "DocumentsTab2ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-2@2x.png",
-  "DocumentsTab3Label": "Cree, anote y complete formularios PDF",
+  "DocumentsTab3Label": "Crea, anota y rellena formularios PDF",
   "DocumentsTab3ImgUrl": "/images/templates/office-for-confluence/documents/documents-3.png",
   "DocumentsTab3ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-3@2x.png",
-  "DocumentsTab4Label": "Colabore en documentos con sus colegas en tiempo real",
+  "DocumentsTab4Label": "Colabora en documentos con tus colegas en tiempo real",
   "DocumentsTab4ImgUrl": "/images/templates/office-for-confluence/documents/documents-4.png",
   "DocumentsTab4ImgUrl2x": "/images/templates/office-for-confluence/documents/documents-4@2x.png",
 
@@ -35,12 +35,12 @@
   "FeaturesFreeTrial": "Versiones Enterprise escalables. <0>Prueba gratuita de 30 días</0>. Solución autoalojada para un control total de tus datos. Versión Docs Cloud para Confluence Cloud.",
 
   "HowToStart": "Cómo empezar",
-  "HowToStartStep1": "Implemente <0>ONLYOFFICE Docs</0> en su propio servidor o regístrese para <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o regístrate en <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Obtén la aplicación de integración desde el <0>Marketplace de Atlassian</0>. Selecciona la opción correspondiente cambiando las pestañas de alojamiento (Server / Data Center / Cloud).",
-  "HowToStartStep3": "Configure la aplicación de integración.",
+  "HowToStartStep3": "Configura la aplicación de integración.",
 
   "HowToConnect": "Cómo conectar ONLYOFFICE Docs a Confluence",
-  "ReadDetailedInstructions": "Lea instrucciones detalladas en el <0>Centro de Ayuda</0>.",
+  "ReadDetailedInstructions": "Lee las instrucciones detalladas en el <0>Centro de Ayuda</0>.",
 
-  "NeedAnAppToConnect": "¿Necesita una aplicación para conectar ONLYOFFICE Docs a su servicio web favorito? ¿O ha desarrollado una?"
+  "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE Docs a tu servicio web favorito? ¿O has desarrollado una?"
 }

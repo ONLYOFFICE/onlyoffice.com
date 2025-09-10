@@ -16,8 +16,12 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
 import {
-  SegmentKey, InfoSourceKey, PromoteKey,
-  targetMarketSegments, partnerInfoSource, partnerPromote
+  SegmentKey,
+  InfoSourceKey,
+  PromoteKey,
+  targetMarketSegments,
+  partnerInfoSource,
+  partnerPromote,
 } from "@src/components/templates/PartnershipRequest/sections/PartnershipRequestForm/data/items";
 
 const Hero = ({ locale }: IHero) => {
@@ -39,7 +43,7 @@ const Hero = ({ locale }: IHero) => {
     numberEmployees: "",
     government: false,
     education: false,
-    commerce: false, 
+    commerce: false,
     fortune500: false,
     smes: false,
     industry: false,
@@ -82,7 +86,7 @@ const Hero = ({ locale }: IHero) => {
   };
 
   function getSelectedNames<K extends SegmentKey | InfoSourceKey | PromoteKey>(
-    items: Item<K>[]
+    items: Item<K>[],
   ): string {
     return items
       .filter(({ key }) => formData[key])
@@ -96,6 +100,7 @@ const Hero = ({ locale }: IHero) => {
 
   const onSubmitRequest = async ({
     from,
+    hCaptchaResponse,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/partnership-request", {
       method: "POST",
@@ -110,7 +115,9 @@ const Hero = ({ locale }: IHero) => {
         website: formData.website,
         numberEmployees: formData.numberEmployees,
         targetMarketSegments: getSelectedNames(targetMarketSegments),
-        pleaseSpecify: formData.currentlyPartner ? formData.pleaseSpecify : getYesOrNo(formData.currentlyPartner),
+        pleaseSpecify: formData.currentlyPartner
+          ? formData.pleaseSpecify
+          : getYesOrNo(formData.currentlyPartner),
         salesOpportunities: getYesOrNo(formData.salesOpportunities),
         promotion: getSelectedNames(partnerPromote),
         demoPortal: getYesOrNo(formData.demoPortal),
@@ -121,46 +128,51 @@ const Hero = ({ locale }: IHero) => {
         from,
         spam: formData.spam,
         partnerReqType,
-        locale: router.locale === "en" ? "" : router.locale
+        locale: router.locale === "en" ? "" : router.locale,
+        hCaptchaResponse,
       }),
     }).then((res) => res.json());
   };
 
   return (
-    <Section desktopSpacing={["56px", "112px"]} tabletSmallSpacing={["80px", "112px"]} mobileSpacing={["48px", "56px"]}>
-    <Container>
-      <StyledHeroDescription>
-        <StyledHeroHeading
-          level={1}
-          size={3}
-          label={t("BecomeAnOnlyofficeOfficialPartner")}
-        />
-        <StyledHeroText label={t("FillInTheDetailsBelow")} />
-      </StyledHeroDescription>
-
-      <PartnershipRequestForm
-        locale={locale}
-        initialFormData={initialFormData}
-        formData={formData}
-        setFormData={setFormData}
-        byClickingText={
-          <Trans
-            t={t}
-            i18nKey="ByClickingSubmitRequest"
-            components={[
-              <Link
-                key="1"
-                href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0"
-                target="_blank"
-                textUnderline
-                hover="underline-none"
-              />,
-            ]}
+    <Section
+      desktopSpacing={["56px", "112px"]}
+      tabletSmallSpacing={["80px", "112px"]}
+      mobileSpacing={["48px", "56px"]}
+    >
+      <Container>
+        <StyledHeroDescription>
+          <StyledHeroHeading
+            level={1}
+            size={3}
+            label={t("BecomeAnOnlyofficeOfficialPartner")}
           />
-        }
-        onSubmitRequest={onSubmitRequest}
-      />
-    </Container>
+          <StyledHeroText label={t("FillInTheDetailsBelow")} />
+        </StyledHeroDescription>
+
+        <PartnershipRequestForm
+          locale={locale}
+          initialFormData={initialFormData}
+          formData={formData}
+          setFormData={setFormData}
+          byClickingText={
+            <Trans
+              t={t}
+              i18nKey="ByClickingSubmitRequest"
+              components={[
+                <Link
+                  key="1"
+                  href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0"
+                  target="_blank"
+                  textUnderline
+                  hover="underline-none"
+                />,
+              ]}
+            />
+          }
+          onSubmitRequest={onSubmitRequest}
+        />
+      </Container>
     </Section>
   );
 };

@@ -13,43 +13,23 @@
 
   "CreateFreeAccount": "Napravite besplatan nalog",
 
-  "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
-  "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
-
   "IdealForDueDiligenceDesc": "Koristite VDR za due diligence, prilikom spajanja, rada na projektu sa drugim preduzećima ili drugog zajedničkog ulaganja koje zahteva pristup zajedničkim podacima.",
-  "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/ideal.png",
-  "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/ideal@2x.png",
-
   "CompletelyOrganizedDesc": "Automatski indeksirajte i pratite sav sadržaj kako biste vodili odlične zapise i ostali organizovani. Generišite zbirni izveštaj o strukturi datoteke sobe.",
-  "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/organized.png",
-  "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/organized@2x.png",
-
   "HighLevelOfDataSecurityDesc": "Omogućite vodene žigove, podesite životni vek datoteke, ograničite preuzimanje i kopiranje kako biste zaštitili svoje osetljive zapise.",
-  "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/security.png",
-  "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/security@2x.png",
-
   "AdvancedRoleBasedText": "Pozovite svoj tim i dodelite im uloge koje savršeno odgovaraju strukturi vaše organizacije. Pratite napredak u popunjavanju obrazaca u realnom vremenu. Lako pregledajte popunjene i nepotpune obrasce, završite ih i preuzmite gotove verzije za nesmetan tok procesa.",
-  "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/advanced.png",
-  "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/advanced@2x.png",
-
   "CostEffectiveForAnyBudgetDesc": "Platite samo za administratore i dodajte bilo koji broj redovnih korisnika i gostiju besplatno. Iskoristite besplatan Startup plan za male timove. ONLYOFFICE DocSpace je pogodan za sve poslovne subjekte, bez obzira da li su u pitanju mala ili velika preduzeća. Želite li da dobijete potpunu kontrolu nad vašim korporativnim podacima? Postavite DocSpace na vašem privatnom serveru.",
-  "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget.png",
-  "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget@2x.png",
 
   "LearnMoreHeading": "Saznajte više o DocSpace virtuelnim sobama za podatke",
 
   "HelpCenter": "Centar za pomoć",
   "HelpCenterDesc": "Proverite detaljne korisničke vodiče za efikasan rad",
-  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
   "LearnMore": "Saznajte više",
 
   "YouTube": "YouTube",
   "MasterONLYOFFICEDocSpace": "Ovladajte ONLYOFFICE DocSpace sa video vodičima",
-  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
   "WatchNow": "Gledajte sada",
 
   "CustomerTestimonial": "Izjava kupaca",
   "HowKinderhausBerlinSharesAndCollaborates": "Kako Kinderhaus Berlin deli i sarađuje na osetljivim datotekama sa ONLYOFFICE DocSpace-om",
-  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
   "ReadStory": "Pročitajte priču"
 }

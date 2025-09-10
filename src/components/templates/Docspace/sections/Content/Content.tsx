@@ -13,6 +13,7 @@ import { items } from "./data/items";
 import { ContentCard } from "./sub-components/ContentCard";
 import { useRouter } from "next/router";
 import { Button } from "@src/components/ui/Button";
+import { getLink } from "@src/utils/getLink";
 
 const Content = () => {
   const { t } = useTranslation("docspace");
@@ -39,7 +40,14 @@ const Content = () => {
               imgUrl={item.imgUrl}
               heading={t(item.heading)}
               locale={locale}
-              href={item.href}
+              href={
+                item.href?.includes("app-directory")
+                  ? item.href.replace(
+                      "https://www.onlyoffice.com/app-directory",
+                      getLink("marketplace", locale!),
+                    )
+                  : item.href
+              }
             />
           ))}
         </StyledCardContainer>

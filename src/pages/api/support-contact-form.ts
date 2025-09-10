@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { mkdirSync, writeFileSync, readdirSync, readFileSync } from "fs";
 import path from "path";
 import { File as FormidableFile, IncomingForm } from "formidable";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
@@ -69,6 +70,24 @@ export default async function handler(
     const languageCode = getField(fields.languageCode);
     const fromPage = getField(fields.from);
     const os = getField(fields.os);
+    const hCaptchaResponse = getField(fields.hCaptchaResponse);
+
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
 
     // Normalize raw files into array
     const rawFiles = filesRaw.files;
@@ -90,7 +109,7 @@ export default async function handler(
         choice_language: languageCode,
         fromPage,
         operating_system: os,
-        ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
+        ip,
         utm_source: cookies.utmSource ?? null,
         utm_campaign: cookies.utmCampaign ?? null,
         utm_content: cookies.utmContent ?? null,

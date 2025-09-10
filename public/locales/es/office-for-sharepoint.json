@@ -11,7 +11,7 @@
   "Reason2": "Abundancia de herramientas de estilo y formateo",
   "Reason3": "100% de fidelidad de visualización, conversión, impresión y paginación",
   "Reason4": "Amplias capacidades de colaboración",
-  "Reason5": "Colección de add-ons de terceros",
+  "Reason5": "Colección de plugins de terceros",
   "Reason6": "Gestión flexible de derechos de acceso",
   "Reason7": "Código fuente abierto disponible en GitHub",
   "Reason8": "Seguridad avanzada",
@@ -36,7 +36,7 @@
   "CompareDesc": "Por qué ONLYOFFICE Docs es la mejor alternativa a MS Office.",
   "CompareLink": "Más información",
   "HelpCenter": "Centro de Ayuda",
-  "HelpCenterDesc": "Como conectar ONLYOFFICE Docs con SharePoint mediante WOPI.",
+  "HelpCenterDesc": "Como conectar ONLYOFFICE Docs a SharePoint mediante WOPI.",
   "HelpCenterLink": "Leer ahora",
 
   "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE Docs a tu servicio web favorito? ¿O has desarrollado una?"

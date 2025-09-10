@@ -130,6 +130,7 @@ const ConvertFile = ({
     formData.append("formatType", formatType ?? "");
     formData.append("uuid", uuid);
     formData.append("region", languageData?.key || "en-US");
+    formData.append("hCaptchaResponse", captchaToken);
 
     try {
       const res = await fetch("/api/converter", {
@@ -138,6 +139,11 @@ const ConvertFile = ({
       });
 
       const data = await res.json();
+
+      if (data.status === "errorHCaptchaInvalid") {
+        setCaptchaError(true);
+        return;
+      }
 
       if (data.status === "stopConvertRequestSuccessful") {
         return;
@@ -163,19 +169,6 @@ const ConvertFile = ({
 
   const handleHCaptchaChange = async (token: string | null) => {
     if (token) {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token }),
-      });
-
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
-        setCaptchaError(true);
-        return;
-      }
-
       setCaptchaToken(token);
       setCaptchaError(false);
     }
