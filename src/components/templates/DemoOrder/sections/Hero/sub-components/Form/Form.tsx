@@ -130,53 +130,42 @@ const Form = () => {
     setFormStatus("loading");
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
+      const d = new Date(formData.date);
+      const formattedDate = `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
+
+      const responseDemoOrder = await fetch("/api/demo-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token: formData.hcaptcha }),
+        body: JSON.stringify({
+          fullName: formData.fullName ?? "",
+          email: formData.email ?? "",
+          website: formData.website ?? "",
+          companyName: formData.companyName ?? "",
+          date: formattedDate,
+          time: formData.time ?? "",
+          timeZoneOffset: formData.timeZoneOffset ?? "",
+          lang: formData.lang || String(locale),
+          module: formData.module ?? "",
+          note: formData.note ?? "",
+          spam: formData.spam ?? false,
+          hCaptchaResponse: formData.hcaptcha,
+        }),
       });
+      const dataDemoOrder = await responseDemoOrder.json();
 
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
+      if (dataDemoOrder.status === "errorHCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");
         }, 5000);
         return;
-      }
+      } else if (dataDemoOrder.status === "success") {
+        setFormStatus("success");
 
-      if (hCaptchaData.status === "success") {
-        const d = new Date(formData.date);
-        const formattedDate = `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
-
-        const responseDemoOrder = await fetch("/api/demo-order", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            fullName: formData.fullName ?? "",
-            email: formData.email ?? "",
-            website: formData.website ?? "",
-            companyName: formData.companyName ?? "",
-            date: formattedDate,
-            time: formData.time ?? "",
-            timeZoneOffset: formData.timeZoneOffset ?? "",
-            lang: formData.lang || String(locale),
-            module: formData.module ?? "",
-            note: formData.note ?? "",
-            spam: formData.spam ?? false,
-          }),
-        });
-        const dataDemoOrder = await responseDemoOrder.json();
-
-        if (dataDemoOrder.status === "success") {
-          setFormStatus("success");
-
-          setTimeout(() => {
-            setFormStatus("default");
-            clearData();
-          }, 5000);
-        }
+        setTimeout(() => {
+          setFormStatus("default");
+          clearData();
+        }, 5000);
       } else {
         setFormStatus("error");
       }

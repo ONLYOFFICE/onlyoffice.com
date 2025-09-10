@@ -12,7 +12,11 @@ import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { Select } from "@src/components/ui/Select";
 import { ISelectOption } from "@src/components/ui/Select/Select.types";
 import { ICheckStatus, IDataForm } from "../../FreeCloud.types";
-import { validateFullName, validateEmail, validateWebsite } from "@src/utils/validators";
+import {
+  validateFullName,
+  validateEmail,
+  validateWebsite,
+} from "@src/utils/validators";
 
 import {
   StyledHeroForm,
@@ -25,7 +29,7 @@ import {
   StyledHeroStepNumber,
   StyledHeroStepSecond,
   StyledHeroStepSubText,
-  StyledHeroStepText
+  StyledHeroStepText,
 } from "./Hero.styled";
 
 const Hero = () => {
@@ -51,10 +55,12 @@ const Hero = () => {
     yourWebsiteURL: "default",
   });
 
-  const [submitStatus, setSubmitStatus] = useState<ILoaderButton["status"]>("default");
+  const [submitStatus, setSubmitStatus] =
+    useState<ILoaderButton["status"]>("default");
 
   const [selectedOption, setSelectedOption] = useState<ISelectOption[]>([]);
-  const [selectStatus, setSelectStatus] = useState<ICheckStatus["youAre"]>( "default");
+  const [selectStatus, setSelectStatus] =
+    useState<ICheckStatus["youAre"]>("default");
   const [selectTouched, setSelectTouched] = useState<boolean>(false);
 
   const options = [
@@ -63,7 +69,7 @@ const Hero = () => {
     { value: "Contributor", label: t("Contributor") },
   ];
 
-   useEffect(() => {
+  useEffect(() => {
     if (selectedOption.length > 0) {
       setDataForm((prev) => ({ ...prev, youAre: selectedOption[0].value }));
       setSelectStatus("success");
@@ -99,7 +105,7 @@ const Hero = () => {
         firstName: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusLastName = () => {
     if (validateFullName(dataForm.lastName)) {
@@ -113,7 +119,7 @@ const Hero = () => {
         lastName: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusEmail = () => {
     if (validateEmail(dataForm.email)) {
@@ -127,7 +133,7 @@ const Hero = () => {
         email: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusPortalName = () => {
     if (dataForm.portalName.length > 0) {
@@ -141,7 +147,7 @@ const Hero = () => {
         portalName: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusYourWebsiteURL = () => {
     if (validateWebsite(dataForm.yourWebsiteURL)) {
@@ -155,16 +161,14 @@ const Hero = () => {
         yourWebsiteURL: "error",
       }));
     }
-  }
+  };
 
   const handleGetHCaptchaToken = (token: string | null) => {
-    setDataForm((prev) => (
-      {
-        ...prev,
-        hCaptchaToken: token,
-      }
-    ))
-  }
+    setDataForm((prev) => ({
+      ...prev,
+      hCaptchaToken: token,
+    }));
+  };
 
   const clearDataForm = () => {
     setDataForm({
@@ -187,7 +191,7 @@ const Hero = () => {
 
     setSelectedOption([]);
     refHcaptcha.current?.resetCaptcha();
-  }
+  };
 
   const handleSubmitRequest = async () => {
     if (submitStatus === "loading") return;
@@ -195,35 +199,18 @@ const Hero = () => {
       clearDataForm();
       setSubmitStatus("default");
       return;
-    };
+    }
     if (submitStatus === "error") {
       clearDataForm();
       setSubmitStatus("default");
       return;
-    };
+    }
     setSubmitStatus("loading");
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          token: dataForm.hCaptchaToken ?? ""
-        })
-      })
-
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
-        setSubmitStatus("error");
-        return;
-      }
-
       const freeCloudResponse = await fetch("/api/free-cloud", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           firstName: dataForm.firstName,
@@ -233,55 +220,54 @@ const Hero = () => {
           youAre: dataForm.youAre,
           yourWebsiteURL: dataForm.yourWebsiteURL,
           culture: locale,
-        })
-      })
+          hCaptchaResponse: dataForm.hCaptchaToken,
+        }),
+      });
 
       const freeCloudData = await freeCloudResponse.json();
 
-      if (freeCloudData.status === "error") {
+      if (
+        freeCloudData.status === "errorHCaptchaInvalid" ||
+        freeCloudData.status === "error"
+      ) {
         setSubmitStatus("error");
         return;
       }
 
-      if (freeCloudData.status === "success" || freeCloudData.status === "update") {
+      if (
+        freeCloudData.status === "success" ||
+        freeCloudData.status === "update"
+      ) {
         setSubmitStatus("success");
       }
     } catch (error) {
-      console.error( error);
+      console.error(error);
       setSubmitStatus("error");
     }
-  }
+  };
 
   return (
-    <Section
-      background="#f5f5f5"
-      desktopSpacing={["80px", "168px"]}
-    >
+    <Section background="#f5f5f5" desktopSpacing={["80px", "168px"]}>
       <Container maxWidth="830px">
-        <StyledHeroHeading
-          textAlign="center"
-          level={1}
-          size={3}
-        >
+        <StyledHeroHeading textAlign="center" level={1} size={3}>
           <Trans
             t={t}
             i18nKey={"HeroTitle"}
-            components={[
-              <Text as="span" color="#FF6F3D" key="0" />
-            ]}
+            components={[<Text as="span" color="#FF6F3D" key="0" />]}
           />
         </StyledHeroHeading>
         <StyledHeroFormWrapper>
-          <StyledHeroStep
-            level={2}
-            size={5}
-            color="#808080"
-          >
-            <StyledHeroStepNumber as="span" color="#808080">1</StyledHeroStepNumber>
+          <StyledHeroStep level={2} size={5} color="#808080">
+            <StyledHeroStepNumber as="span" color="#808080">
+              1
+            </StyledHeroStepNumber>
             {t("Step")}
           </StyledHeroStep>
           <StyledHeroStepText size={3}>
-            <Trans t={t} i18nKey={"StepFirstText"} components={[
+            <Trans
+              t={t}
+              i18nKey={"StepFirstText"}
+              components={[
                 <Link
                   key="0"
                   color="#FF6F3D"
@@ -310,12 +296,10 @@ const Hero = () => {
             size={3}
             label={t("IfYouAreAContributorSkipThisStep")}
           />
-          <StyledHeroStep
-            level={2}
-            size={5}
-            color="#808080"
-          >
-            <StyledHeroStepNumber as="span" color="#808080">2</StyledHeroStepNumber>
+          <StyledHeroStep level={2} size={5} color="#808080">
+            <StyledHeroStepNumber as="span" color="#808080">
+              2
+            </StyledHeroStepNumber>
             {t("Step")}
           </StyledHeroStep>
           <StyledHeroStepSecond size={3}>
@@ -325,63 +309,79 @@ const Hero = () => {
             <StyledHeroFormNameWrapper>
               <Input
                 value={dataForm.firstName}
-                onChange={(event) => setDataForm({...dataForm, firstName: event.target.value})}
+                onChange={(event) =>
+                  setDataForm({ ...dataForm, firstName: event.target.value })
+                }
                 placeholder={t("Name")}
                 label={t("FirstName")}
                 onBlur={handleCheckStatusFullName}
-                onFocus={() => setCheckStatus((prev) => ({ ...prev, firstName: "default" }))}
+                onFocus={() =>
+                  setCheckStatus((prev) => ({ ...prev, firstName: "default" }))
+                }
                 status={checkStatus.firstName}
                 caption={
                   dataForm.firstName.length === 0
                     ? t("FirstNameIsEmpty")
                     : t("FirstNameIsIncorrect")
-                  }
+                }
                 required
               />
               <Input
                 value={dataForm.lastName}
-                onChange={(event) => setDataForm({...dataForm, lastName: event.target.value})}
+                onChange={(event) =>
+                  setDataForm({ ...dataForm, lastName: event.target.value })
+                }
                 placeholder={t("Surname")}
                 label={t("LastName")}
                 onBlur={handleCheckStatusLastName}
-                onFocus={() => setCheckStatus((prev) => ({ ...prev, lastName: "default" }))}
+                onFocus={() =>
+                  setCheckStatus((prev) => ({ ...prev, lastName: "default" }))
+                }
                 status={checkStatus.lastName}
                 caption={
                   dataForm.lastName.length === 0
                     ? t("LastNameIsEmpty")
                     : t("LastNameIsIncorrect")
-                  }
+                }
                 required
               />
             </StyledHeroFormNameWrapper>
             <Input
               value={dataForm.email}
-              onChange={(event) => setDataForm({...dataForm, email: event.target.value})}
+              onChange={(event) =>
+                setDataForm({ ...dataForm, email: event.target.value })
+              }
               placeholder={"name@domain.com"}
               label={t("Email")}
               onBlur={handleCheckStatusEmail}
-              onFocus={() => setCheckStatus((prev) => ({ ...prev, email: "default" }))}
+              onFocus={() =>
+                setCheckStatus((prev) => ({ ...prev, email: "default" }))
+              }
               status={checkStatus.email}
               caption={
                 dataForm.email.length === 0
                   ? t("EmailIsEmpty")
                   : t("EmailIsIncorrect")
-                }
+              }
               required
             />
             <StyledHeroFormPortalWrapper>
               <Input
                 value={dataForm.portalName}
-                onChange={(event) => setDataForm({...dataForm, portalName: event.target.value})}
+                onChange={(event) =>
+                  setDataForm({ ...dataForm, portalName: event.target.value })
+                }
                 label={t("PortalName")}
                 onBlur={handleCheckStatusPortalName}
-                onFocus={() => setCheckStatus((prev) => ({ ...prev, portalName: "default" }))}
+                onFocus={() =>
+                  setCheckStatus((prev) => ({ ...prev, portalName: "default" }))
+                }
                 status={checkStatus.portalName}
                 caption={
                   dataForm.portalName.length === 0
                     ? t("AccountNameIsEmpty")
                     : undefined
-                  }
+                }
                 required
               />
               <StyledHeroFormPortalText as={"span"}>
@@ -402,25 +402,30 @@ const Hero = () => {
                 required
                 maxWidth="100%"
                 caption={
-                  selectStatus === "error"
-                    ? t("FieldIsEmpty")
-                    : undefined
+                  selectStatus === "error" ? t("FieldIsEmpty") : undefined
                 }
               />
             </div>
             <Input
               value={dataForm.yourWebsiteURL}
-              onChange={(event) => setDataForm({...dataForm, yourWebsiteURL: event.target.value})}
+              onChange={(event) =>
+                setDataForm({ ...dataForm, yourWebsiteURL: event.target.value })
+              }
               placeholder={t("YourWebsiteURL")}
               label={t("YourWebsiteURL")}
               onBlur={handleCheckStatusYourWebsiteURL}
-              onFocus={() => setCheckStatus((prev) => ({ ...prev, yourWebsiteURL: "default" }))}
+              onFocus={() =>
+                setCheckStatus((prev) => ({
+                  ...prev,
+                  yourWebsiteURL: "default",
+                }))
+              }
               status={checkStatus.yourWebsiteURL}
               caption={
                 dataForm.yourWebsiteURL.length === 0
                   ? t("SiteURLIsEmpty")
                   : t("SiteURLIsIncorrect")
-                }
+              }
               required
             />
             <HCaptcha
@@ -447,22 +452,12 @@ const Hero = () => {
                 <Trans
                   t={t}
                   i18nKey={"SuccessRequestText"}
-                  components={[
-                    <Text
-                      key="0"
-                      as="span"
-                      fontWeight={700}
-                    />,
-                  ]}
+                  components={[<Text key="0" as="span" fontWeight={700} />]}
                 />
               </Text>
             )}
             {submitStatus === "error" && (
-              <Text
-                size={3}
-                color="#666666"
-                label={t("ErrorRequestText")}
-              />
+              <Text size={3} color="#666666" label={t("ErrorRequestText")} />
             )}
           </StyledHeroForm>
         </StyledHeroFormWrapper>
