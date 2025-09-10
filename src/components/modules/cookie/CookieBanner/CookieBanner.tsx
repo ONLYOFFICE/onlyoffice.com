@@ -14,7 +14,6 @@ import { useState, useEffect, useRef } from "react";
 import { CookieSettings } from "../CookieSettings/CookieSettings";
 import {
   setConsentCookie,
-  applyConsent,
   DEFAULT_CONSENT,
   ALL_GRANTED,
 } from "@src/utils/useUtmCookies";
@@ -95,27 +94,6 @@ const CookieBanner = () => {
 
     setIsFullGDPR(gdpr);
   }, [selectedCountry]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!isFullGDPR && !scrolledRef.current && !getConsentCookie()) {
-        const top = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight; 
-        const winHeight = window.innerHeight;
-
-        const scrollPercent = (top + winHeight) / docHeight;
-
-        if (scrollPercent >= 0.2) {
-          scrolledRef.current = true;
-          setConsentCookie(ALL_GRANTED);
-          applyConsent(ALL_GRANTED);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [isFullGDPR]);
     
   useEffect(() => {
     const consentFromCookie = getConsentCookie();
@@ -131,7 +109,6 @@ const CookieBanner = () => {
           location.hostname === new URL(document.referrer).hostname;
   
         if (sameOrigin) {
-          applyConsent(ALL_GRANTED);
           setConsentCookie(ALL_GRANTED);
           setShowBanner(false);
           setShowFab(true);
@@ -144,18 +121,36 @@ const CookieBanner = () => {
         setShowBanner(true);
       }
     }
+
+    const handleScroll = () => {
+      if (!isFullGDPR && !scrolledRef.current && !getConsentCookie()) {
+        const top = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight; 
+        const winHeight = window.innerHeight;
+
+        const scrollPercent = (top + winHeight) / docHeight;
+
+        if (scrollPercent >= 0.2) {
+          scrolledRef.current = true;
+          setConsentCookie(ALL_GRANTED);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [isFullGDPR]);
 
   const handleAcceptAll = () => {
     setConsentCookie(ALL_GRANTED);
-    applyConsent(ALL_GRANTED);
+    setConsent(ALL_GRANTED);
     setShowBanner(false);
     setShowFab(true);
   };
 
   const handleDeclineAll = () => {
     setConsentCookie(DEFAULT_CONSENT);
-    applyConsent(DEFAULT_CONSENT);
+    setConsent(DEFAULT_CONSENT);
     setShowBanner(false);
     setShowFab(true);
   };
