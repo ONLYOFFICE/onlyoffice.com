@@ -60,7 +60,8 @@
   "GetItNowText": "By clicking Get it now, you understand and agree to our <0>License agreement</0> and <0>Privacy statement</0>.",
   "OrderNow": "Order now",
   "LicenseDuration": "License duration",
-  "Support&Updates": "Support&Updates",
+  "Support&Updates": "Support & Updates",
+  "Total": "Total:",
 
   "WhatDoTheLifetimeLicenseAnd3YearUpdatesLabel": "What do the 'lifetime license' and '3-year updates' mean?",
   "WhatDoTheLifetimeLicenseAnd3YearUpdatesText": "Puedes usar todas las funciones de ONLYOFFICE Docs Enterprise disponibles en el momento de la compra por un tiempo ilimitado, pero tres años después de la fecha de compra, no podrás recibir actualizaciones gratuitas. Si deseas actualizar tu versión de ONLYOFFICE Docs Enterprise más tarde, deberás comprar una nueva clave de licencia.",
@@ -85,7 +86,7 @@
   "Clustering*": "Clustering assistance*",
   "TheAppropriateLicenseForClusterVersion": "The appropriate License for Cluster version is required.",
   "ForMoreInformationReadServiceLevelAgreement": "Para más información, lee nuestro <0>Acuerdo de nivel de servicio</0>.",
-  "1 year": "1 año",
-  "3 year": "3 años",
-  "Lifetime": "De por vida"
+  "1 year": "1 year",
+  "3 year": "3 years",
+  "Lifetime": "Lifetime"
 }

@@ -61,6 +61,7 @@
   "OrderNow": "Commander maintenant",
   "LicenseDuration": "Durée de la licence",
   "Support&Updates": "Support et mises à jour",
+  "Total": "Total :",
 
   "WhatDoTheLifetimeLicenseAnd3YearUpdatesLabel": "Que signifient la 'licence à vie' et les 'mises à jour de 3 ans' ?",
   "WhatDoTheLifetimeLicenseAnd3YearUpdatesText": "Vous pouvez utiliser toutes les fonctionnalités d'ONLYOFFICE Docs Enterprise disponibles au moment de l'achat pour une durée illimitée, mais trois ans après la date d'achat, vous ne pourrez plus recevoir de mises à jour gratuites. Si vous souhaitez mettre à jour votre version d'ONLYOFFICE Docs Enterprise plus tard, vous devrez acheter une nouvelle clé de licence.",
@@ -84,5 +85,8 @@
   "12DuringWorkingHours": "12 pendant les heures de travail",
   "Clustering*": "Clustering*",
   "TheAppropriateLicenseForClusterVersion": "La licence appropriée pour la version cluster est requise.",
-  "ForMoreInformationReadServiceLevelAgreement": "Pour plus d'informations, consultez notre <0>Accord de niveau de service</0>."
+  "ForMoreInformationReadServiceLevelAgreement": "Pour plus d'informations, consultez notre <0>Accord de niveau de service</0>.",
+  "1 year": "1 an",
+  "3 year": "3 ans",
+  "Lifetime": "Licence à vie"
 }
