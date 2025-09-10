@@ -17,14 +17,14 @@
 
   "WhyOO": "¿Por qué ONLYOFFICE?",
   "Reason1": "Soporte para más de <0>50 formatos de archivo</0>, con compatibilidad completa con los formatos de MS Office: DOCX, XLSX, PPTX.",
-  "Reason2": "Un conjunto robusto de herramientas de edición, formato y estilo. <0>Ayudante de IA</0> integrado.",
+  "Reason2": "Un conjunto robusto de herramientas de edición, formato y estilo. <0>Asistente de IA</0> integrado.",
   "Reason3": "<0>Coedición</0> en tiempo real y con bloqueo de párrafos, revisión, historial de versiones, comparación de documentos, comentarios y chat.",
   "Reason4": "<0>Seguridad mejorada</0>. Permisos de acceso flexibles y JWT. Marcas de agua y protección por contraseña. Código fuente abierto.",
   "Reason5": "Integración perfecta mediante el conector listo para usar disponible en el Marketplace de Atlassian. <0>Fácil configuración</0>.",
   "Reason6": "Solución en la nube y autoalojada para un control total de tus datos. Versiones escalables para empresas. <0>Prueba gratuita de 30 días</0>.",
 
   "HowToStart": "Cómo empezar",
-  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una cuenta de <1>Docs Cloud</1>.",
+  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una cuenta en <1>Docs Cloud</1>.",
   "HowToStartStep2": "Obtén el power-up desde el <0>Marketplace de Atlassian</0>.",
   "HowToStartStep3": "Configura el power-up y activa JWT.",
 

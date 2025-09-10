@@ -12,9 +12,9 @@
   "Feature1Desc": "Sélectionnez un document stocké sur votre ordinateur, stockage cloud, ou son adresse URL et identifiez les différences par comparaison avec un fichier original.",
 
   "Feature2Title": "Naviguez entre les modifications surlignées",
-  "Feature2Desc": "La comparaison des documents vous permet de comparer deux documents Word et surligner les différences en mode Suivi des modifications activé. Affichez-les pour voir toutes les corrections apportées au document en les acceptant ou rejetant.",
+  "Feature2Desc": "La comparaison des documents vous permet de comparer deux documents Word et de surligner les différences en mode suivi des modifications activé. Affichez-les pour voir toutes les corrections apportées au document en les acceptant ou en les rejetant.",
 
-  "Feature3Title": "Fusionner les versions du fichier",
+  "Feature3Title": "Fusionnez les versions du fichier",
   "Feature3Desc": "Acceptez ou rejetez les modifications une par une ou en vrac, fusionnez les documents et finalisez la version du fichier comparé.",
 
   "Feature4Title": "Affichez l’historique des versions",

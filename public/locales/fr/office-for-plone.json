@@ -22,7 +22,7 @@
   "WhyOO": "Pourquoi ONLYOFFICE ?",
   "Reason1": "Support de <0>tous les formats populaires</0>, y compris OOXML et ODF.",
   "Reason2": "Riche éventail des outils de la mise en forme regroupés dans <0>une interface intuitive à onglets</0>.",
-  "Reason3": "<0>Co-édition en temps réel</0>, chat et commentaires, suivi des modifications et historique des versions, comparaison de documents.",
+  "Reason3": "<0>Coédition en temps réel</0>, chat et commentaires, suivi des modifications et historique des versions, comparaison de documents.",
   "Reason4": "<0>La même mise en page</0> depuis n'importe quel navigateur, n'importe quel système.",
   "Reason5": "<0>Configuration simple</0> depuis la console d’administration Plone.",
   "Reason6": "<0>Code source ouvert</0> disponible sur GitHub.",
@@ -33,6 +33,7 @@
   "HowToStartStep3": "Configurez le connecteur et activez JWT.",
 
   "ReadDetailedInstructions": "Consultez <0>guides utiles</0> sur l'intégration Plone",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/plone.aspx",
 
   "NeedAnAppToConnect": "Besoin d'une appli pour connecter ONLYOFFICE Docs à votre service web préférentiel ? Ou en avez-vous développé une ?"
 }

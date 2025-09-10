@@ -109,8 +109,7 @@ export const docspaceProducts: IDownloadCard[] = [
     heading: "DockerImage",
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/installation/docspace-enterprise-install-script.aspx",
+    readInstructionLink: "DocspaceProductsDockerImageLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_docker_image",
@@ -135,8 +134,7 @@ export const docspaceProducts: IDownloadCard[] = [
     heading: "ForDebianUbuntu",
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/installation/docspace-enterprise-install-script.aspx",
+    readInstructionLink: "DocspaceProductsForDebianUbuntuLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_debian_ubuntu_and_derivatives",
@@ -161,8 +159,7 @@ export const docspaceProducts: IDownloadCard[] = [
     heading: "ForCentOS",
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/installation/docspace-enterprise-install-script.aspx",
+    readInstructionLink: "DocspaceProductsForCentOSLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_centos_rhel_and_derivatives",
@@ -187,8 +184,7 @@ export const docspaceProducts: IDownloadCard[] = [
     heading: "ForWindowsServer",
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/installation/docspace-enterprise-install-windows.aspx",
+    readInstructionLink: "DocspaceProductsForWindowsServerLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_windows",

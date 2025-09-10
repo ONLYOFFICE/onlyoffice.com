@@ -11,11 +11,12 @@
   "HelpfulResourcesText2": "Si vous avez d'autres questions sur la fonctionnalité, consultez notre <0>centre d'aide</0>.",
   "HelpfulResourcesText3": "En cas de problème technique, veuillez contacter notre <0>équipe d'assistance</0>.",
   "HelpfulResourcesText4": "For any other inquiries, you are also welcome to visit our <0>forum</0> and <1>GitHub</1>.",
-  "Step1": "Ouvrez un email avec les détails de l'intégration de ONLYOFFICE Docs :",
+  "Step1": "Ouvrez un e-mail avec les détails de l'intégration de ONLYOFFICE Docs :",
   "Step2": "Connectez-vous à votre plateforme et passez à la page des paramètres ONLYOFFICE.",
   "Step3": "Saisissez les informations d'identification fournies et cliquez sur le bouton Enregistrer.",
   "DocumentServerAddress": "Adresse de Document Server",
   "DocumentServerJWTHeader": "En-tête JWT de Document Server* ",
   "DocumentServerSecret": "Secret de Document Server",
-  "JwtNote": "*JWT protège les documents contre les accès non autorisés. <0>En savoir plus</0>"
+  "JwtNote": "*JWT protège les documents contre les accès non autorisés. <0>En savoir plus</0>",
+  "JwtNoteLink": "https://www.onlyoffice.com/blog/fr/2022/09/quest-ce-que-jwt-et-comment-cette-technologie-protege-vos-documents"
 }

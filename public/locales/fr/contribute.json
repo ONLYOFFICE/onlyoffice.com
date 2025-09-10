@@ -5,19 +5,22 @@
   "HeroTitle": "Bienvenue dans la communauté<br/> <span>ONLYOFFICE</span>",
   "HeroText": "Contribuez au projet open source ONLYOFFICE pour l'améliorer encore !",
 
-  "ImproveOO": "Améliorer ONLYOFFICE",
-  "DevelopYourOwnPluginOrMacros": "Développez votre propre plugin ou macros pour ONLYOFFICE Docs.",
+  "ImproveOO": "Améliorez ONLYOFFICE",
+  "DevelopYourOwnPluginOrMacros": "Développez votre propre plugin ou macro pour ONLYOFFICE Docs.",
   "ReadAPIDocumentation": "Lire la documentation API",
   "CreateYourOwnForm": "Créez vos propres modèles de formulaires et partagez-les avec d'autres.",
   "OpenOurFormLibrary": "Ouvrir notre bibliothèque de formulaires",
   "CreateAnExtensionOrModule": "Créez une extension ou un module pour ONLYOFFICE DocSpace.",
   "DidYouFindABug": "Avez-vous trouvé un bug ? Signalez les problèmes sur <0>GitHub</0> ou sur le <1>forum</1>.",
+  "DidYouFindABugLink": "https://helpcenter.onlyoffice.com/fr/docs/contribution/ReportIssues.aspx",
   "MoreInfo": "En savoir plus",
+
+  "BlogLink": "https://www.onlyoffice.com/blog/fr",
 
   "SocialMediaText": "Interagissez avec nous sur notre <0>blog</0> ou sur les réseaux sociaux",
 
   "SpreadTitle": "Diffusez la technologie ONLYOFFICE",
-  "SpreadText": "Construisez un connecteur pour votre propre plate-forme afin d'apporter ONLYOFFICE à tout le monde.",
+  "SpreadText": "Construisez un connecteur pour votre propre plateforme afin d'apporter ONLYOFFICE à tout le monde.",
   "SpreadLink": "Lire la documentation API",
   "More": "Plus",
 

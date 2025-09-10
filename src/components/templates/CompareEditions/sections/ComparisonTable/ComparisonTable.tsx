@@ -59,7 +59,7 @@ const ComparisonTable = () => {
                   <StyledTableCell $empty={row.type === "cta"}>
                     {row.link ? (
                       <Link
-                        href={row.link || ""}
+                        href={t(row.link || "")}
                         color="main"
                         textUnderline
                         hover="underline-none"
@@ -104,7 +104,7 @@ const ComparisonTable = () => {
                         return (
                           <StyledTableCell key={item}>
                             <Link
-                              href={val.href || ""}
+                              href={t(val.href || "")}
                               color="#333333"
                               textUnderline
                               hover="underline-none"

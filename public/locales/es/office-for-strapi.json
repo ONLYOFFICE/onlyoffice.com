@@ -14,7 +14,7 @@
   "WhyOO": "Por qué ONLYOFFICE Docs",
   "WhySubheader": "ONLYOFFICE Docs es una suite ofimática autoalojada para trabajar con documentos de texto, hojas de cálculo, presentaciones y formularios",
   "Reason1": "Plugin de integración <0>listo para usar</0>",
-  "Reason2": "Instalación sencilla desde <0>Strapi Market</0> y configuración rápida",
+  "Reason2": "Instalación sencilla desde el <0>Mercado de Strapi</0> y configuración rápida",
   "Reason3": "<0>Interfaz intuitiva</0> con pestañas",
   "Reason4": "<0>Múltiples</0> herramientas de edición, formato y estilo",
   "Reason5": "<0>Colaboración en tiempo real</0>, seguimiento de cambios, comentarios, chat",
@@ -23,7 +23,7 @@
   "Reason8": "<0>Código abierto</0> disponible en GitHub",
 
   "HowToStart": "Cómo empezar",
-  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una cuenta de <1>Docs Cloud</1>.",
+  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una cuenta en <1>Docs Cloud</1>.",
   "HowToStartStep2": "Obtén el conector ONLYOFFICE desde el <0>Mercado de Strapi</0> o el <1>directorio npm</1>.",
   "HowToStartStep3": "Configura el conector y activa JWT.",
 

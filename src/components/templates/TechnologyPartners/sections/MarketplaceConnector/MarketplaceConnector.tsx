@@ -4,7 +4,7 @@ import {
   StyledMarketplaceConnectorWrapper,
   StyledMarketplaceConnectorBody,
   StyledMarketplaceConnectorImg,
-  StyledText
+  StyledText,
 } from "./MarketplaceConnector.styled";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
@@ -19,11 +19,7 @@ const MarketplaceConnector = () => {
       <Container>
         <StyledMarketplaceConnectorWrapper>
           <StyledMarketplaceConnectorBody>
-            <Heading
-              level={3}
-              color="#ffffff"
-              label={t("WouldLikeToEnter")}
-            />
+            <Heading level={3} color="#ffffff" label={t("WouldLikeToEnter")} />
             <StyledText size={2} color="#ffffff">
               <Trans
                 t={t}

@@ -20,7 +20,7 @@ export const items: IBlogCard[] = [
     text: "WhatIsJWT",
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2022/09/what-is-jwt/",
+        href: "WhatIsJWTLink",
         label: "LearnMore",
       },
     ],

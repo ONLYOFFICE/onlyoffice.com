@@ -42,7 +42,7 @@ const Compliance = () => {
                         color="main"
                         textUnderline
                         hover="underline-none"
-                        href={item.link?.href}
+                        href={t(String(item.link?.href), { defaultValue: item.link?.href })}
                         target={item.link?.target}
                         label={t(String(item.link?.label))}
                         />

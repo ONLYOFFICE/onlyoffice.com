@@ -75,6 +75,7 @@
   "HowToStartStep4": "Configure the installed plugin.",
   "HowToConnect": "Connecting ONLYOFFICE Docs with Moodle",
   "ReadDetailedInstructions": "Read detailed instructions in <0>Help Center</0>",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/moodle.aspx",
   "Tab1Label": "Docs",
   "Tab2Label": "DocSpace",
 
@@ -85,10 +86,13 @@
 
   "LearnMoreHeading": "Learn more about Moodle ONLYOFFICE integration",
   "HowEnsuresDigitalEquality": "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
+  "HowEnsuresDigitalEqualityLink": "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
   "ReadTheFullStory": "Read the full story",
   "WatchAVideoVersion": "Watch a video version",
   "WhyWeChoseMoodle": "Why we chose Moodle for creating an ONLYOFFICE training center",
+  "WhyWeChoseMoodleLink": "https://www.onlyoffice.com/blog/2024/08/why-moodle-onlyoffice-training-center",
   "NewUpdatesOfOOPlugins": "New updates of ONLYOFFICE plugins for Moodle: PDF form creation and editing, Docs Cloud connection, certificate verification",
+  "NewUpdatesOfOOPluginsLink": "https://www.onlyoffice.com/blog/2024/07/updates-of-onlyoffice-plugins-for-moodle",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
 }

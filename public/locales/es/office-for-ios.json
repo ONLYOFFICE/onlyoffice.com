@@ -20,7 +20,7 @@
   "FeaturesItemHeadingOnline": "Rellenador de formularios en línea",
   "FeaturesItemTextMakeView": "Visualiza y rellena formularios. Navega fácilmente de un campo a otro. Guarda el resultado como un archivo PDF o DOCX.",
 
-  "FeaturesItemHeadingPDF": "Visor de PDF y media player",
+  "FeaturesItemHeadingPDF": "Visor de PDF y reproductor multimedia",
   "FeaturesItemTextMakeViewPDF": "Ve documentos e imágenes PDF, reproduce archivos de audio y vídeo. Abre archivos .bmp, .jpg, .jpeg, .png, .gif, .tif, .tiff, .avi, .mpeg, .mp3, .pdf, etc.",
 
   "OnlyOfficeDocumentsIs": "\"ONLYOFFICE Documents es un producto excelente y sus usuarios le han concedido el premio 'Muy bueno'\".",
@@ -37,7 +37,7 @@
   "ChooseItemManageDocuments": "Administra documentos en el dispositivo y edítalos sin conexión.",
 
   "ChooseItemInOnlyOffice": "En la nube ONLYOFFICE",
-  "ChooseItemAccessDocs": "Accede a los documentos desde la nube de ONLYOFFICE y a los almacenamientos (Dropbox, Google Drive, etc.) conectados a ella y colabora con tu equipo.",
+  "ChooseItemAccessDocs": "Accede a los documentos desde la nube ONLYOFFICE y a los almacenamientos (Dropbox, Google Drive, etc.) conectados a ella y colabora con tu equipo.",
 
   "ChooseItemInYourCloud": "En tu nube",
   "ChooseItemConnectNextcloud": "Conecta Nextcloud, ownCloud o cualquier otra nube trabajando a través de WebDAV y edita documentos directamente desde la app.",
@@ -51,9 +51,9 @@
   "LearnMoreHeading": "Más información sobre ONLYOFFICE Documents para iOS",
 
   "LearnCardTitleRelease": "Notas de la versión",
-  "LearnMoreTextMeet": "Descubre ONLYOFFICE Documents v7.2 para iOS",
+  "LearnMoreTextMeet": "Descubre ONLYOFFICE Documents v9.0 para iOS",
   "LearnMoreSubtitleRead": "Leer la historia",
-  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/es/2022/10/onlyoffice-documents-v7-2-para-ios/",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/es/2025/07/onlyoffice-documents-v9-0-para-ios",
 
   "LearnCardTitleHints": "Consejos",
   "LearnMoreTextHandwriting": "Escritura a mano en ONLYOFFICE Documents",

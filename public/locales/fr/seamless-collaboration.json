@@ -46,7 +46,7 @@
   "Feature6ImgUrl2x": "/images/templates/seamless-collaboration/features/fr/compare-combine@2x.png",
 
   "Feature7Title": "Gérez les versions",
-  "Feature7Desc": "Accédez à l'historique des versions de votre document, vérifiez qui a créé chaque version et quand, quelles modifications ont été apportées. Affichez et récupérez les versions précédentes si nécessaire, y compris le texte supprimé.",
+  "Feature7Desc": "Accédez à l'historique des versions de votre document, vérifiez qui a créé chaque version et quand et quelles modifications ont été apportées. Affichez et récupérez les versions précédentes si nécessaire, y compris le texte supprimé.",
   "Feature7ImgUrl": "/images/templates/seamless-collaboration/features/fr/manage-versions.png",
   "Feature7ImgUrl2x": "/images/templates/seamless-collaboration/features/fr/manage-versions@2x.png"
 }

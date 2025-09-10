@@ -27,7 +27,7 @@ const items = [
   {
     heading: "MarkdownFiles",
     imgUrl: "/images/templates/docspace/content/markdown-icon.svg",
-    href: "http://www.onlyoffice.com/app-directory/markdown",
+    href: "https://www.onlyoffice.com/app-directory/markdown",
   },
   {
     heading: "EBooks",

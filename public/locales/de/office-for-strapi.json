@@ -25,7 +25,7 @@
   "HowToStart": "Erste Schritte",
   "HowToStartStep1": "Stellen Sie <0>ONLYOFFICE Docs</0> auf Ihrem eigenen Server bereit oder erstellen Sie ein <1>Docs Cloud</1>-Konto.",
   "HowToStartStep2": "Erhalten Sie den ONLYOFFICE-Konnektor vom <0>Strapi Market</0> oder <1>npm-Directory</1>.",
-  "HowToStartStep3": "Configurez le connecteur et activez JWT.",
+  "HowToStartStep3": "Konfigurieren Sie den Konnektor und aktivieren Sie JWT.",
 
   "ReadDetailedInstructions": "Detaillierte Anweisungen finden Sie im <0>Hilfe-Center</0>",
 

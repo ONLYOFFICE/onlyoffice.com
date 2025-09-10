@@ -1,5 +1,5 @@
 {
-  "SupportedFormatsHeading": "Plus de 50 formats les plus populaires <0>pris en charge</0>",
+  "SupportedFormatsHeading": "<0>Plus de 50 formats</0> les plus populaires pris en charge",
   "Spreadsheets": "Feuilles de calcul",
   "TextDocuments": "Documents texte",
   "Presentations": "Présentations",
@@ -39,6 +39,7 @@
   "No": "Non",
   "Error": "Erreur",
   "TheUploadedFileLikelyExceededTheMaximumFileSize": "Le fichier téléchargé a probablement dépassé la taille maximale du fichier <0>5 Mo</0>",
+  "TheFileAppearsToBeBroken": "Le fichier semble endommagé. Veuillez le vérifier ou en utiliser un autre.",
   "Close": "Fermer",
   "SubmitAnIssue": "Signaler un problème",
   "TheUploadedFileHaZeroSize": "Le fichier téléchargé a une taille nulle et ne peut donc pas être converti.",

@@ -59,7 +59,7 @@ export const HeroSection = () => {
                 components={[
                   <Link
                     key={0}
-                    href="https://www.onlyoffice.com/blog/2022/09/what-is-jwt/"
+                    href={t("JwtNoteLink")}
                     color="main"
                     target="_blank"
                   />,

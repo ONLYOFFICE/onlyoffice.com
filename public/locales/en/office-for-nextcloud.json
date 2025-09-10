@@ -51,18 +51,27 @@
   "HowToStartStep3": "Configure the integration app.",
   "HowToConnect": "Configuring ONLYOFFICE connector for Nextcloud",
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/nextcloud.aspx",
 
   "PartnerHeading": "Are you a Nextcloud partner? How about improving your Nextcloud user experience and increasing your revenue?",
   "PartnerText": "Join the ONLYOFFICE partnership program right now.",
 
   "LearnMoreBlueDragon": "How the Blue Dragon Children’s Foundation helps young people in Vietnam using ONLYOFFICE and Nextcloud",
+  "LearnMoreBlueDragonLink": "https://www.onlyoffice.com/blog/2024/03/blue-dragon-onlyoffice-use-case",
   "LearnMoreStiftung": "How the Stiftung der Deutschen Wirtschaft manages its funding processes with ONLYOFFICE and Nextcloud",
+  "LearnMoreStiftungLink": "https://www.onlyoffice.com/blog/2023/05/stiftung-der-deutschen-wirtschaft-and-onlyoffice",
   "LearnMoreEqualRights": "How Equal Rights Beyond Borders enforces human rights with ONLYOFFICE and Nextcloud",
+  "LearnMoreEqualRightsLink": "https://www.onlyoffice.com/blog/2023/05/equal-rights-beyond-borders-and-onlyoffice",
   "LearnMoreMaritime": "Maritime autonomy: how marinom GmbH organizes effective collaboration using ONLYOFFICE Docs and Nextcloud",
+  "LearnMoreMaritimeLink": "https://www.onlyoffice.com/blog/2023/01/marinom-gmbh-onlyoffice-use-case",
   "LearnMoreGeyma": "How ONLYOFFICE Docs and Nextcloud help Geyma Sistemas de Información build a better collaborative environment for its employees",
+  "LearnMoreGeymaLink": "https://www.onlyoffice.com/blog/2023/01/onlyoffice-docs-helps-geyma-sistemas-de-informacion",
   "LearnMoreStellfeld": "How Stellfeld & Ernst GmbH shapes digital collaboration using ONLYOFFICE Docs and Nextcloud",
+  "LearnMoreStellfeldLink": "https://www.onlyoffice.com/blog/2022/10/stellfeld-ernst-using-onlyoffice-docs",
   "LearnMoreIBE": "Medical research at IBE: how ONLYOFFICE and Nextcloud help the institute",
+  "LearnMoreIBELink": "https://www.onlyoffice.com/blog/2022/09/medical-research-at-ibe-how-onlyoffice-and-nextcloud-help-the-institute",
   "LearnMoreLoveFoundation": "How ONLYOFFICE and Nextcloud help Love Foundation support socially important projects",
+  "LearnMoreLoveFoundationLink": "https://www.onlyoffice.com/blog/2022/08/how-onlyoffice-and-nextcloud-help-love-foundation",
   "ReadTheFullStory": "Read the full story",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"

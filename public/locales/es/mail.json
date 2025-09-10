@@ -6,7 +6,7 @@
   "HeroText": "Herramienta fácil de usar para la gestión de correo",
   "GetItNow": "Obtener ahora",
 
-  "MailServer": "Servidor de Correo",
+  "MailServer": "Servidor de correo",
   "MailServerText": "Añade un servidor de correo usando tu propio nombre de dominio para crear buzones de correo corporativos para los miembros de tu equipo. Sincroniza los correos electrónicos a través de IMAP. Haz una copia de seguridad y restaura la base de datos del Servidor de Correo.",
   "MailServerImage": "/images/templates/mail/features/es/mail_server.png",
   "MailAggregator": "Agregador de correo",

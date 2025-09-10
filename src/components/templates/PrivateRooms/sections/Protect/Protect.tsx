@@ -2,10 +2,10 @@ import { Container } from "@src/components/ui/Container";
 import { useTranslation } from "next-i18next";
 import {
   ProtectBlock,
-  StyledButton,
   StyledHeading,
   StyledSection,
 } from "./Protect.styled";
+import { Button } from "@src/components/ui/Button";
 
 const Protect = () => {
   const { t } = useTranslation("private-rooms");
@@ -20,13 +20,9 @@ const Protect = () => {
       <Container>
         <ProtectBlock>
           <StyledHeading label={t("ProtectYourSensitive")} />
-          <StyledButton
-            as="a"
-            variant="quaternary"
-            href="/download-desktop.aspx"
-          >
+          <Button as="a" variant="quaternary" href="/download-desktop">
             {t("TryNow")}
-          </StyledButton>
+          </Button>
         </ProtectBlock>
       </Container>
     </StyledSection>

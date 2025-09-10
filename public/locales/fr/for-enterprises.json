@@ -6,7 +6,7 @@
   "HeroSubitle": "Obtenez des applications d'édition, de partage et de productivité sécurisées pour votre entreprise",
 
   "EnterpriseHead1": "<0>DocSpace</0> pour une collaboration transparente avec les bureaux, les clients d'entreprise et les partenaires",
-  "EnterpriseSub1": "",
+  "EnterpriseSub1": "Aucune alternative trouvée",
   "EnterpriseFeature1": "Salles personnalisables avec des permissions flexibles pour tout objectif professionnel.",
   "EnterpriseFeature12": "Travail avec tout type de contenu : documents, feuilles de calcul, présentations, formulaires numériques, livres électroniques, PDF.",
   "EnterpriseFeature13": "Accès protégé aux documents et multiples options de sécurité.",
@@ -18,7 +18,7 @@
   "RunOnYourOwnServer": "Exécutez sur votre propre serveur",
 
   "EnterpriseHead2": "Suite bureautique en ligne <0>prête à l'emploi</0> pour intégrer dans votre plateforme",
-  "EnterpriseSub2": "Remplacement de Google Docs/Sheets/Slides/, Microsoft Office Online, Zoho Docs, Dropbox Paper",
+  "EnterpriseSub2": "Remplacement de Google Docs/Sheets/Slides, Microsoft Office Online, Zoho Docs, Dropbox Paper",
   "EnterpriseFeature2": "Éditeurs puissants pour les documents texte, les feuilles de calcul, les présentations, les formulaires et les fichiers PDF",
   "EnterpriseFeature22": "Tous les outils pour une édition professionnelle et une collaboration efficace",
   "EnterpriseFeature23": "Déploiement et intégration faciles avec votre plateforme telle que Nextcloud, Liferay, Nuxeo, Confluence, ownCloud, Jira, Alfresco, SharePoint. <1>Afficher toutes les options disponibles</1>",
@@ -55,7 +55,7 @@
 
   "EnterpriseHead5": "<0>Applications mobiles</0> pour travailler avec les documents sur iOS et Android",
   "EnterpriseSub5": "Remplacement de Office, Google Docs mobile, Zoho Docs mobile, QuickOffice, Pages",
-  "EnterpriseFeature5": "Travailler avec des documents bureautiques sur plusieurs appareils, où que vous soyez",
+  "EnterpriseFeature5": "Travail avec des documents bureautiques sur plusieurs appareils partout",
   "EnterpriseFeature52": "Une seule application pour les documents texte, les feuilles de calcul et les présentations",
   "EnterpriseFeature53": "Remplisseur de formulaires, visionneuse de PDF, lecteur multimédia",
   "EnterpriseFeature54": "Possibilité d'éditer des documents locaux sur l'appareil",

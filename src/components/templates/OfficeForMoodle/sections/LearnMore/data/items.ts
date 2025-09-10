@@ -6,7 +6,7 @@ export const items: IBlogCard[] = [
     heading: { label: "HowEnsuresDigitalEquality" },
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
+        href: "HowEnsuresDigitalEqualityLink",
         label: "ReadTheFullStory",
       },
       {
@@ -21,7 +21,7 @@ export const items: IBlogCard[] = [
     heading: { label: "WhyWeChoseMoodle" },
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2024/08/why-moodle-onlyoffice-training-center",
+        href: "WhyWeChoseMoodleLink",
         label: "ReadTheFullStory",
       },
     ],
@@ -31,7 +31,7 @@ export const items: IBlogCard[] = [
     heading: { label: "NewUpdatesOfOOPlugins" },
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2024/07/updates-of-onlyoffice-plugins-for-moodle",
+        href: "NewUpdatesOfOOPluginsLink",
         label: "ReadTheFullStory",
       },
     ],
