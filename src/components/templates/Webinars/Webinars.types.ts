@@ -1,7 +1,7 @@
 interface ICardItemProps {
   date: string;
   dateWithHours: string;
-  language: string;
+  webinarLang: string;
   title: string;
   description: string;
   link?: string;

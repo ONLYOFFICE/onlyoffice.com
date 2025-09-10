@@ -6,11 +6,11 @@ export const itemsTab2: IStepCarouselItem[] = [
     heading: "HowToStartStep1_1",
     headingLinks: [
       {
-        url: "/download#docs-enterprise",
+        url: "/download#docspace-enterprise",
         isExternal: false,
       },
       {
-        url: "/docs-registration",
+        url: "/docspace-registration",
         isExternal: false,
       },
     ],

@@ -33,7 +33,6 @@ const StyledTooltipBtn = styled.div<{
     max-width: ${(props) => props.$width};
     text-align: initial;
     background-color: rgba(0, 0, 0, 0.6);
-    white-space: nowrap;
     z-index: 10;
   }
 `;

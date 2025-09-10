@@ -125,29 +125,34 @@ export default async function handler(
     }
 
     try {
-      // Prepare uploads directory
-      const baseUploads = path.join(process.cwd(), "public", "uploads");
-      mkdirSync(baseUploads, { recursive: true });
+      let attachments: { filename: string; path: string }[] = [];
+      let requestDirName: string | null = null;
 
-      // Determine next request-N folder
-      const existing = readdirSync(baseUploads)
-        .filter((name) => name.startsWith("request-"))
-        .map((name) => parseInt(name.split("-")[1] || "0", 10))
-        .filter((n) => !isNaN(n));
-      const nextIdx = existing.length ? Math.max(...existing) + 1 : 1;
-      const requestDirName = `request-${nextIdx}`;
-      const requestDir = path.join(baseUploads, requestDirName);
-      mkdirSync(requestDir);
+      if (uploadedFiles.length > 0) {
+        // Prepare uploads directory
+        const baseUploads = path.join(process.cwd(), "public", "uploads");
+        mkdirSync(baseUploads, { recursive: true });
 
-      // Save each uploaded file
-      const attachments = uploadedFiles.map((file) => {
-        const fileData = readFileSync(file.filepath);
-        const originalFilename = file.originalFilename ?? file.newFilename;
-        const finalName = originalFilename.replace(/ /g, "_");
-        const finalPath = path.join(requestDir, finalName);
-        writeFileSync(finalPath, fileData);
-        return { filename: finalName, path: finalPath };
-      });
+        // Determine next request-N folder
+        const existing = readdirSync(baseUploads)
+          .filter((name) => name.startsWith("request-"))
+          .map((name) => parseInt(name.split("-")[1] || "0", 10))
+          .filter((n) => !isNaN(n));
+        const nextIdx = existing.length ? Math.max(...existing) + 1 : 1;
+        requestDirName = `request-${nextIdx}`;
+        const requestDir = path.join(baseUploads, requestDirName);
+        mkdirSync(requestDir);
+
+        // Save each uploaded file
+        attachments = uploadedFiles.map((file) => {
+          const fileData = readFileSync(file.filepath);
+          const originalFilename = file.originalFilename ?? file.newFilename;
+          const finalName = originalFilename.replace(/ /g, "_");
+          const finalPath = path.join(requestDir, finalName);
+          writeFileSync(finalPath, fileData);
+          return { filename: finalName, path: finalPath };
+        });
+      }
 
       // Send email with attachments
       const transporter = emailTransporter();
