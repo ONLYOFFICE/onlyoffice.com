@@ -38,7 +38,7 @@
   "UsesTitle": "多种用途",
   "UsesDescription": "从文件和内容管理系统、CRM和电子学习平台，到邮箱和项目管理软件等。",
   "ExploreIntegrations": "了解现成的集成",
-  "WhyOO": "为什么选择ONLYOFFICE Docs",
+  "WhyOO": "为什么选择ONLYOFFICE文档",
   "BenefitsUsersTitle": "您的用户会爱上",
   "BenefitUserTitle1": "熟悉的用户界面",
   "BenefitUserDesc1": "ONLYOFFICE 的界面为全球数百万人所熟知，因此您的用户可以立即舒适地在您的应用中创建和编辑办公文档。",
@@ -68,7 +68,7 @@
   "BenefitDevDesc8": "在 Kubernetes 中部署 ONLYOFFICE 文档的分片，以证明高可用性和服务连续性。ONLYOFFICE 文档支持所有常用的架构技术。",
   "ReadDocumentation": "阅读文档",
   "ContactUsForDetails": "联系我们了解更多详情",
-  "GetStartedTitle": "简单开始",
+  "GetStartedTitle": "上手简单",
   "SelfHostedTitle": "自托管",
   "SelfHostedDescription": "在您自己的服务器（Docker、Linux、Windows）上进行托管",
   "AmiTitle": "Amazon系统映像（AMI）",
@@ -118,6 +118,6 @@
   "EmailTitle": "邮件支持",
   "EmailDesc": "通过电子邮件联系我们——我们的团队将帮助您解决任何技术问题。选择高级服务以获得电话支持。我们还可通过微信为中文用户提供支持。",
   "ContactUs": "联系",
-  "PreSaleTitle": "预售问题",
+  "PreSaleTitle": "售前问题",
   "PreSaleDesc": "联系我们的销售团队或安排时间让我们的团队给您回电。"
 }
