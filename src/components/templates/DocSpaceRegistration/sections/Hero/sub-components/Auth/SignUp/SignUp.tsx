@@ -53,6 +53,7 @@ const SignUp = ({
   );
 
   const router = useRouter();
+  const desktopQuery = router.query.desktop;
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const modalDialog = useRef<Window | null>(null);
   const intervalId = useRef<NodeJS.Timeout | null>(null);
@@ -123,7 +124,7 @@ const SignUp = ({
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        desktop: router.query.desktop || "",
+        desktop: desktopQuery || "",
         email: formData.email,
         spam: formData.spam ? "true" : "false",
         language: router.locale === "en" ? "" : router.locale,
@@ -270,7 +271,7 @@ const SignUp = ({
       <StyledSignUpAccount>
         <Text size={2} label={t("AlreadyHaveAnAccount")} />
         <StyledSignUpAccountLink
-          href={`/docspace-registration${router.query.desktop === "true" ? "?desktop=true" : ""}#login`}
+          href={`/docspace-registration${desktopQuery === "true" ? "?desktop=true" : ""}#login`}
           color="main"
           textUnderline
           hover="underline-none"

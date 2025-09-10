@@ -29,6 +29,7 @@ import { CheckEmail } from "../CheckEmail";
 import { RadioBlock2Options } from "../RadioBlock2Options/RadioBlock2Options";
 import { ISignUpData } from "./SignUp.types";
 import { Platforms } from "./data/Platforms";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const initialFormData: ISignUpData = {
   fullName: "",
@@ -75,6 +76,8 @@ const SignUp = () => {
 
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
   const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
+
+  const pageTrack = usePageTrack();
 
   const { getClientReferenceId, getAffiliateToken } = useRewardful({
     onReady: () => {
@@ -167,6 +170,8 @@ const SignUp = () => {
       }, 5000);
       return;
     } else if (data.status === "success") {
+      pageTrack("docs-registration-request");
+
       if (formData.tariffPlan == "Business") {
         setIsModalOpen(true);
       }
@@ -340,33 +345,33 @@ const SignUp = () => {
                 {t("WrongCaptcha")}
               </StyledSignUpCaption>
             )}
-            <StyledSignUpText>
-              <Trans
-                t={t}
-                i18nKey="ByClickingStartFree"
-                components={[
-                  <Link
-                    key={0}
-                    href="https://help.onlyoffice.co/Products/Files/DocEditor.aspx?fileid=7992046&doc=ekxnSGVoWE5rbGNkeWtCTnNyREFMN1E1Vzl1YVJjYkFMRVMyaGh1cE9VND0_Ijc5OTIwNDYi0"
-                    target="_blank"
-                    color="main"
-                    textUnderline
-                    hover="underline-none"
-                  />,
-                ]}
-              />
-            </StyledSignUpText>
+          <StyledSignUpText>
+            <Trans
+              t={t}
+              i18nKey="ByClickingStartFree"
+              components={[
+                <Link
+                  key={0}
+                  href="https://help.onlyoffice.co/Products/Files/DocEditor.aspx?fileid=7992046&doc=ekxnSGVoWE5rbGNkeWtCTnNyREFMN1E1Vzl1YVJjYkFMRVMyaGh1cE9VND0_Ijc5OTIwNDYi0"
+                  target="_blank"
+                  color="main"
+                  textUnderline
+                  hover="underline-none"
+                />,
+              ]}
+            />
+          </StyledSignUpText>
           </div>
 
           <div>
-            <LoaderButton
-              onClick={onSubmit}
-              status={formStatus}
-              label={t("StartFree")}
-              disabled={!isFormValid}
-              fullWidth
-              data-testid="docs-sign-up-button"
-            />
+          <LoaderButton
+            onClick={onSubmit}
+            status={formStatus}
+            label={t("StartFree")}
+            disabled={!isFormValid}
+            fullWidth
+            data-testid="docs-sign-up-button"
+          />
             {formStatus === "error" && (
               <StyledSignUpCaption $error>
                 {t("WeAreSorryButAnErrorOccurred")}

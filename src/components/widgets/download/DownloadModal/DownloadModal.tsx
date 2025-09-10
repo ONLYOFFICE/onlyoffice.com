@@ -24,6 +24,7 @@ import {
   validateEmail,
   validateWebsite,
 } from "@src/utils/validators";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const DownloadModal = ({
   locale,
@@ -36,6 +37,7 @@ const DownloadModal = ({
   onClose,
   onSubmitRequest,
   buttonAction,
+  pageTrackName,
 }: IDownloadModal) => {
   const { t } = useTranslation("DownloadModal");
   const from = getFromParam();
@@ -45,6 +47,8 @@ const DownloadModal = ({
   );
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
+
+  const pageTrack = usePageTrack();
 
   const [isEmpty, setIsEmpty] = useState({
     fullName: false,
@@ -149,7 +153,11 @@ const DownloadModal = ({
         }, 5000);
         return;
       } else if (onSubmitRequestData.status === "success") {
+        pageTrack(pageTrackName);
         setFormStatus("success");
+        const endOfPartName = pageTrackName.indexOf("_for");
+        const partBtnName = endOfPartName != -1 ? pageTrackName.substring(0, endOfPartName) : pageTrackName;
+        pageTrack(partBtnName);
 
         if (buttonAction?.href) {
           setTimeout(() => {
