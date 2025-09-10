@@ -235,6 +235,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
               size={hCaptchaSize}
               onVerify={handleHCaptchaChange}
               onExpire={() => handleHCaptchaChange(null)}
+              sitekey={process.env.DOCS_CLOUD_SIGNIN_RECAPCHA_PUBLIC_KEY!}
             />
           </StyledLogInForm>
 
