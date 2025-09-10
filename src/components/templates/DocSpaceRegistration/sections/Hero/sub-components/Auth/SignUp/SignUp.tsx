@@ -48,7 +48,9 @@ const SignUp = ({
   setCreateNewAccountQuery,
 }: ISignUp) => {
   const { t } = useTranslation("docspace-registration");
-  const { IPGeolocationInfo, setIPGeolocationInfo } = useIPGeolocationStore();
+  const IPGeolocationRegionDbKey = useIPGeolocationStore(
+    (state) => state.IPGeolocationInfo?.regionDbEntity?.regionDbKey,
+  );
 
   const router = useRouter();
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
@@ -241,30 +243,12 @@ const SignUp = ({
   }, [selected, setCreateNewAccountQuery, setExistTenants]);
 
   useEffect(() => {
-    const setRegion = (regionKey?: string) => {
-      setSelected(
-        regionKey
-          ? options.filter((opt) => opt.key === regionKey)
-          : [options[0]],
-      );
-    };
-
-    if (IPGeolocationInfo.regionDbEntity.domain) {
-      setRegion(IPGeolocationInfo.regionDbEntity?.regionDbKey);
-      return;
-    }
-
-    (async () => {
-      const res = await fetch("/api/ip-geolocation");
-      const data = await res.json();
-      setRegion(data?.regionDbEntity?.regionDbKey);
-      setIPGeolocationInfo(data);
-    })();
-  }, [
-    IPGeolocationInfo.regionDbEntity.domain,
-    IPGeolocationInfo.regionDbEntity?.regionDbKey,
-    setIPGeolocationInfo,
-  ]);
+    setSelected(
+      IPGeolocationRegionDbKey
+        ? options.filter((opt) => opt.key === IPGeolocationRegionDbKey)
+        : [options[0]],
+    );
+  }, [IPGeolocationRegionDbKey]);
 
   useEffect(() => {
     const savedEmail = localStorage.getItem("email");

@@ -43,34 +43,19 @@ const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
   const [showFab, setShowFab] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const { IPGeolocationInfo, setIPGeolocationInfo } = useIPGeolocationStore();
   const [isFullGDPR, setIsFullGDPR] = useState(true);
   const scrolledRef = useRef(false);
 
-  useEffect(() => {
-    (async () => {
-      const res = await fetch("/api/ip-geolocation");
-      const data = await res.json();
-      setIPGeolocationInfo(data);
-    })();
-  }, [
-    IPGeolocationInfo.regionDbEntity.domain,
-    IPGeolocationInfo.regionDbEntity?.regionDbKey,
-    setIPGeolocationInfo,
-  ]);
-
-  const selectedCountry = useIPGeolocationStore(
+  const IPGeolocationCountry = useIPGeolocationStore(
     (state) => state.IPGeolocationInfo.country,
   );
 
   useEffect(() => {
     let gdpr = true;
 
-    if (!selectedCountry) {
-      const lang = (navigator.language)
-        .slice(0, 2)
-        .toLowerCase();
-
+    if (!IPGeolocationCountry) {
+      const lang = navigator.language.slice(0, 2).toLowerCase();
+      // prettier-ignore
       const GDPR_LANGS = [
         "de", "fr", "it", "es", "nl", "pl", "fi", "sv", "da", "hu", "el", "cs", "pt", "ro", "sk",
         "sl", "hr", "et", "lv", "lt", "mt", "ga", "is", "no", "nb", "nn", "lb", "bg", "tr",
@@ -81,6 +66,7 @@ const CookieBanner = () => {
         gdpr = false;
       }
     } else {
+      // prettier-ignore
       const ALL_COUNTRIES = [
         "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT",
         "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE",
@@ -88,19 +74,19 @@ const CookieBanner = () => {
         "CN", "SG", "ZA", "NG", "KE"
       ];
 
-      if (!ALL_COUNTRIES.includes(selectedCountry)) {
+      if (!ALL_COUNTRIES.includes(IPGeolocationCountry)) {
         gdpr = false;
       }
     }
 
     setIsFullGDPR(gdpr);
-  }, [selectedCountry]);
+  }, [IPGeolocationCountry]);
 
   useEffect(() => {
     const handleScroll = () => {
       if (!isFullGDPR && !scrolledRef.current && !getConsentCookie()) {
         const top = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight; 
+        const docHeight = document.documentElement.scrollHeight;
         const winHeight = window.innerHeight;
 
         const scrollPercent = (top + winHeight) / docHeight;
@@ -116,10 +102,10 @@ const CookieBanner = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isFullGDPR]);
-    
+
   useEffect(() => {
     const consentFromCookie = getConsentCookie();
-  
+
     if (consentFromCookie) {
       setConsent(consentFromCookie);
       setShowBanner(false);
@@ -129,7 +115,7 @@ const CookieBanner = () => {
         const sameOrigin =
           document.referrer &&
           location.hostname === new URL(document.referrer).hostname;
-  
+
         if (sameOrigin) {
           applyConsent(ALL_GRANTED);
           setConsentCookie(ALL_GRANTED);
@@ -191,7 +177,9 @@ const CookieBanner = () => {
               label={t("HarmonyInYourCookies")}
               level={4}
             />
-            {!isFullGDPR && <StyledCross id="cookie-banner-close" onClick={handleCross} />}
+            {!isFullGDPR && (
+              <StyledCross id="cookie-banner-close" onClick={handleCross} />
+            )}
           </StyledCookieBannerHeader>
           <Text fontSize="14px">
             <Trans
