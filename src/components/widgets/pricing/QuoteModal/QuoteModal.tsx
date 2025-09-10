@@ -35,6 +35,7 @@ const QuoteModal = <T,>({
   buttonLabel,
   onSubmitRequest,
   onClose,
+  pageTrackName,
 }: IQuoteModal<T>) => {
   const { t } = useTranslation("PricingQuoteModal");
   const from = getFromParam();
