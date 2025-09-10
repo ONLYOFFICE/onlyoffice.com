@@ -162,10 +162,6 @@ const StyledInformationText = styled(Text)`
   font-size: 16px;
   text-align: center;
 
-  > span {
-   display: block;
-   }
-
   &:before {
     background-image: url(/images/templates/docs-enterprise/cost/union.svg);
     background-repeat: no-repeat;
