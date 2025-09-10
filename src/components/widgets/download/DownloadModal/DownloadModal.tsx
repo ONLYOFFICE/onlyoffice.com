@@ -40,7 +40,7 @@ const DownloadModal = ({
   const { t } = useTranslation("DownloadModal");
   const from = getFromParam();
 
-  const selectedCountry = useIPGeolocationStore(
+  const IPGeolocationCountry = useIPGeolocationStore(
     (state) => state.IPGeolocationInfo.country,
   );
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
@@ -130,7 +130,7 @@ const DownloadModal = ({
 
     try {
       const countryInfo = Object.values(countries).find(
-        (item) => item.country === selectedCountry,
+        (item) => item.country === IPGeolocationCountry,
       );
       const country = countryInfo?.title?.split(" (")[0] || "";
       const region = countryInfo?.salesRegion || "";

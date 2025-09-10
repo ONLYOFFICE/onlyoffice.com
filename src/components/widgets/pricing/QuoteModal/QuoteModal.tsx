@@ -14,11 +14,11 @@ import { countries } from "@src/config/data/countries";
 import { Modal } from "@src/components/ui/Modal";
 import { Heading } from "@src/components/ui/Heading";
 import { Input } from "@src/components/ui/Input";
-import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { Text } from "@src/components/ui/Text";
+import { HCaptcha } from "@src/components/ui/HCaptcha";
+import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { IPhoneInputRef } from "@src/components/widgets/PhoneInput";
 import { PhoneInput } from "@src/components/widgets/PhoneInput";
-import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 
 const QuoteModal = <T,>({
@@ -38,7 +38,7 @@ const QuoteModal = <T,>({
   const { t } = useTranslation("PricingQuoteModal");
   const from = getFromParam();
 
-  const selectedCountry = useIPGeolocationStore(
+  const IPGeolocationCountry = useIPGeolocationStore(
     (state) => state.IPGeolocationInfo.country,
   );
 
@@ -127,7 +127,7 @@ const QuoteModal = <T,>({
 
     try {
       const countryInfo = Object.values(countries).find(
-        (item) => item.country === selectedCountry,
+        (item) => item.country === IPGeolocationCountry,
       );
       const country = countryInfo?.title?.split(" (")[0] || "";
       const region = countryInfo?.salesRegion || "";
