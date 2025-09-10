@@ -202,7 +202,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                   <span>{currency.symbol}</span>
                   {productsData.basicCloud.price}
                 </StyledHeroPrice>
-                {t("user/month")}
+                {t("UserMonth")}
               </StyledHeroPriceWrapper>
             )}
 

@@ -8,7 +8,7 @@ import { IFeature } from "../Compliance.types";
           "GDPRComplianceText2"
         ],
         link: {
-          href: "https://www.onlyoffice.com/blog/2018/05/how-onlyoffice-complies-with-gdpr/",
+          href: "ReadMoreAboutONLYOFFICEGDPRLink",
           label: "ReadMoreAboutONLYOFFICEGDPR",
           target: "_self"
         }
@@ -19,7 +19,7 @@ import { IFeature } from "../Compliance.types";
           "HealthInsurance"
         ],
         link: {
-          href: "https://www.onlyoffice.com/blog/2020/10/how-onlyoffice-complies-with-hipaa/",
+          href: "ReadMoreAboutHIPAALink",
           label: "ReadMoreAboutHIPAA",
           target: "_self",
         }
