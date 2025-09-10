@@ -11,6 +11,7 @@ import formidable, { Files, Fields, File } from "formidable";
 import fs from "fs";
 import jwt from "jsonwebtoken";
 import crypto, { randomUUID } from "crypto";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 
 interface ICustomFields extends Fields {
   action?: string[];
@@ -215,8 +216,26 @@ export default async function handler(
     const region = fields.region?.[0];
     const isConvertToImage =
       fields.converttoimage?.[0] === "true" ? true : false;
+    const hCaptchaResponse = fields.hCaptchaResponse?.[0] || "";
 
     try {
+      const ip =
+        (Array.isArray(req.headers["x-forwarded-for"])
+          ? req.headers["x-forwarded-for"][0]
+          : req.headers["x-forwarded-for"]
+        )?.split(",")[0] ||
+        req.socket.remoteAddress ||
+        null;
+
+      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+      if (!hCaptchaResult.success) {
+        return res.status(400).json({
+          status: "errorHCaptchaInvalid",
+          error: hCaptchaResult.error,
+        });
+      }
+
       try {
         const putObjectParams: PutObjectCommandInput = {
           Bucket: process.env.AWS_S3_BUCKET!,

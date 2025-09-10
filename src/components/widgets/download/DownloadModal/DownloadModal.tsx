@@ -111,7 +111,7 @@ const DownloadModal = ({
     phoneInputRef.current?.reset();
   };
 
-  const onSubmit = async (token?: string) => {
+  const onSubmit = async (token: string) => {
     if (formStatus === "loading") return;
 
     if (formStatus === "error") {
@@ -129,22 +129,6 @@ const DownloadModal = ({
     setFormStatus("loading");
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token }),
-      });
-
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
-        setFormStatus("error");
-        setTimeout(() => {
-          setFormStatus("default");
-        }, 5000);
-        return;
-      }
-
       const countryInfo = Object.values(countries).find(
         (item) => item.country === selectedCountry,
       );
@@ -155,9 +139,16 @@ const DownloadModal = ({
         from,
         country,
         region,
+        hCaptchaResponse: token,
       });
 
-      if (onSubmitRequestData.status === "success") {
+      if (onSubmitRequestData.status === "errorHCaptchaInvalid") {
+        setFormStatus("error");
+        setTimeout(() => {
+          setFormStatus("default");
+        }, 5000);
+        return;
+      } else if (onSubmitRequestData.status === "success") {
         setFormStatus("success");
 
         if (buttonAction?.href) {

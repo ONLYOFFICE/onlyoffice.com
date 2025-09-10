@@ -17,8 +17,8 @@ import {
   ICheckStatus,
   IFormData,
   IPreferredLang,
-  ITimeZone}
-from "@src/components/templates/TrainingCourses/TrainingCourses.types";
+  ITimeZone,
+} from "@src/components/templates/TrainingCourses/TrainingCourses.types";
 
 import {
   StyledCardFormAgreementWrapper,
@@ -39,7 +39,12 @@ import {
   StyledCardFormTextArea,
 } from "./CardForm.styled";
 
-const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & ILocale ) => {
+const CardForm = ({
+  openModal,
+  setOpenModal,
+  locale,
+  course,
+}: ICardFormProp & ILocale) => {
   const { t } = useTranslation("training-courses");
 
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
@@ -68,8 +73,8 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
     setFormData({
       ...formData,
       hCaptcha: token,
-    })
-  }
+    });
+  };
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -77,31 +82,33 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
       ...formData,
       [name]: value,
     });
-  }
+  };
 
   const handleChangeSelectLang = (lang: IPreferredLang["lang"]) => {
     setFormData({
       ...formData,
       preferredLang: lang,
-    })
+    });
     setIsPreferredOpen(false);
-  }
+  };
 
   const handleChangeSelectTime = (time: ITimeZone["time"]) => {
     setFormData({
       ...formData,
       timeZone: time,
-    })
+    });
     setIsTimeZoneOpen(false);
-  }
+  };
 
-  const handleChangeTextArea = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const handleChangeTextArea = (
+    event: React.ChangeEvent<HTMLTextAreaElement>,
+  ) => {
     const { name, value } = event.target;
     setFormData({
       ...formData,
       [name]: value,
     });
-  }
+  };
 
   const handleCheckStatusFullName = () => {
     if (validateFullName(formData.fullName)) {
@@ -115,7 +122,7 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
         fullName: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusCompanyName = () => {
     if (formData.companyName.length > 0) {
@@ -129,7 +136,7 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
         companyName: "error",
       }));
     }
-  }
+  };
 
   const handleCheckStatusEmail = () => {
     if (validateEmail(formData.email)) {
@@ -143,7 +150,7 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
         email: "error",
       }));
     }
-  }
+  };
 
   const clearData = () => {
     setFormData({
@@ -154,15 +161,15 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
       timeZone: "",
       commentArea: "",
       hCaptcha: null,
-    })
+    });
     setCheckStatus({
       fullName: "default",
       companyName: "default",
       email: "default",
       hCaptcha: "default",
-    })
+    });
     refHCaptcha.current?.resetCaptcha();
-  }
+  };
 
   const handleSubmit = async () => {
     if (status === "loading") return;
@@ -182,58 +189,44 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
     try {
       setStatus("loading");
 
-      const responceHCaptcha = await fetch("/api/hcaptcha-verify", {
+      const responseWhitepapers = await fetch("/api/training-courses", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          token: formData.hCaptcha ?? "",
-        })
-      })
-      const dataHCaptcha = await responceHCaptcha.json();
+          fullName: formData.fullName ?? "",
+          company: formData.companyName ?? "",
+          email: formData.email ?? "",
+          lang: formData.preferredLang ?? "",
+          timezone: formData.timeZone ?? "",
+          message: formData.commentArea ?? "",
+          course: course ?? "",
+          from: from ?? "",
+          languageCode: locale ?? "",
+          hCaptchaResponse: formData.hCaptcha ?? "",
+        }),
+      });
+      const dataWhitepapers = await responseWhitepapers.json();
 
-      if (dataHCaptcha.status === "errorHCaptchaInvalid") {
+      if (
+        dataWhitepapers.status === "errorHCaptchaInvalid" ||
+        dataWhitepapers.status === "error"
+      ) {
         setStatus("error");
-        return;
       }
 
-      if (dataHCaptcha.status === "success") {
-        const responseWhitepapers = await fetch("/api/training-courses", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            fullName: formData.fullName ?? "",
-            company: formData.companyName ?? "",
-            email: formData.email ?? "",
-            lang: formData.preferredLang ?? "",
-            timezone: formData.timeZone ?? "",
-            message: formData.commentArea ?? "",
-            course: course ?? "",
-            from: from ?? "",
-            languageCode: locale ?? "",
-          }),
-        })
-        const dataWhitepapers = await responseWhitepapers.json();
+      if (dataWhitepapers.status === "success") {
+        setStatus("success");
+      }
 
-        if (dataWhitepapers.status === "success") {
-          setStatus("success");
-        }
-
-        if (dataWhitepapers.status === "error") {
-          setStatus("error");
-        }
-
-        if (openModal && dataWhitepapers.status === "success") {
-          setTimeout(() => {
-            setOpenModal(false);
-          }, 5000);
-        }
+      if (openModal && dataWhitepapers.status === "success") {
+        setTimeout(() => {
+          setOpenModal(false);
+        }, 5000);
       }
     } catch (error) {
-      setStatus("error")
+      setStatus("error");
       console.error(error);
     }
   };
@@ -244,9 +237,7 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
       onClose={() => setOpenModal(false)}
     >
       <StyledCardFormModal>
-        <StyledCardFormCloseBtn
-          onClick={() => setOpenModal(false)}
-        />
+        <StyledCardFormCloseBtn onClick={() => setOpenModal(false)} />
         <StyledCardFormHeading
           level={3}
           size={5}
@@ -265,14 +256,22 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
               maxLength={100}
               onBlur={handleCheckStatusFullName}
               status={checkStatus.fullName}
-              onFocus={() => setCheckStatus((prev) => ({ ...prev, fullName: "default" }))}
+              onFocus={() =>
+                setCheckStatus((prev) => ({ ...prev, fullName: "default" }))
+              }
             />
-            {checkStatus.fullName === "error" && formData.fullName.length === 0 && (
-              <Text size={4} label={t("FullNameEmpty")} color="#CB0000" />
-            )}
-            {checkStatus.fullName === "error" && formData.fullName.length > 0 && (
-              <Text size={4} label={t("CardFormFullNameIsIncorrect")} color="#CB0000" />
-            )}
+            {checkStatus.fullName === "error" &&
+              formData.fullName.length === 0 && (
+                <Text size={4} label={t("FullNameEmpty")} color="#CB0000" />
+              )}
+            {checkStatus.fullName === "error" &&
+              formData.fullName.length > 0 && (
+                <Text
+                  size={4}
+                  label={t("CardFormFullNameIsIncorrect")}
+                  color="#CB0000"
+                />
+              )}
           </StyledCardFormInputWrapper>
           <StyledCardFormInputWrapper>
             <Input
@@ -285,11 +284,14 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
               maxLength={100}
               onBlur={handleCheckStatusCompanyName}
               status={checkStatus.companyName}
-              onFocus={() => setCheckStatus((prev) => ({ ...prev, companyName: "default" }))}
+              onFocus={() =>
+                setCheckStatus((prev) => ({ ...prev, companyName: "default" }))
+              }
             />
-            {checkStatus.companyName === "error" && formData.companyName.length === 0 && (
-              <Text size={4} label={t("CompanyNameEmpty")} color="#CB0000" />
-            )}
+            {checkStatus.companyName === "error" &&
+              formData.companyName.length === 0 && (
+                <Text size={4} label={t("CompanyNameEmpty")} color="#CB0000" />
+              )}
           </StyledCardFormInputWrapper>
           <StyledCardFormInputWrapper>
             <Input
@@ -303,7 +305,9 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
               maxLength={50}
               onBlur={handleCheckStatusEmail}
               status={checkStatus.email}
-              onFocus={() => setCheckStatus((prev) => ({ ...prev, email: "default" }))}
+              onFocus={() =>
+                setCheckStatus((prev) => ({ ...prev, email: "default" }))
+              }
             />
             {checkStatus.email === "error" && formData.email.length === 0 && (
               <Text size={4} label={t("EmailIsEmpty")} color="#CB0000" />
@@ -393,14 +397,16 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
                     textUnderline={true}
                     hover="underline-none"
                     target="_blank"
-                    href="https://help.onlyoffice.co/Products/Files/doceditor.aspx?fileid=6615734&doc=cy9XcGc5TXNONjVTMkNrR2NZUEVTT2E1Y1FDZGVRQ1YvOTJYTnpkZ3JEWT0_IjY2MTU3MzQi0" />,
+                    href="https://help.onlyoffice.co/Products/Files/doceditor.aspx?fileid=6615734&doc=cy9XcGc5TXNONjVTMkNrR2NZUEVTT2E1Y1FDZGVRQ1YvOTJYTnpkZ3JEWT0_IjY2MTU3MzQi0"
+                  />,
                   <Link
                     key="1"
                     color="main"
                     textUnderline={true}
                     hover="underline-none"
                     target="_blank"
-                    href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261" />
+                    href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261"
+                  />,
                 ]}
               />
             </StyledCardFormTextAgree>
@@ -419,7 +425,11 @@ const CardForm = ({ openModal, setOpenModal, locale, course }: ICardFormProp & I
             status={status}
           />
           <StyledCardFormStatusText
-            label={status === "success" ? t("RequestSuccessfully") : t("RequestError")}
+            label={
+              status === "success"
+                ? t("RequestSuccessfully")
+                : t("RequestError")
+            }
             textAlign="center"
             $status={status}
             color={status === "error" ? "#CB0000" : "#333333"}

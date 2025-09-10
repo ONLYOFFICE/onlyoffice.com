@@ -7,7 +7,7 @@ import {
   StyledQuoteModalGetItNow,
   StyledQuoteModalText,
 } from "./QuoteModal.styled";
-import { IQuoteModal, IApiResponse } from "./QuoteModal.types";
+import { IQuoteModal } from "./QuoteModal.types";
 import { getFromParam } from "@src/utils/getParams";
 import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { countries } from "@src/config/data/countries";
@@ -22,9 +22,6 @@ import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 
 const QuoteModal = <T,>({
-  apiRequest,
-  sendEmailRequest,
-  pipedriveRequest,
   locale,
   isOpen,
   heading,
@@ -37,15 +34,7 @@ const QuoteModal = <T,>({
   buttonLabel,
   onSubmitRequest,
   onClose,
-}: IQuoteModal<T> & {
-  apiRequest?: (params: IQuoteModalApiRequest) => Promise<IApiResponse>;
-  sendEmailRequest?: (
-    params: IQuoteModalSendEmailRequest,
-  ) => Promise<IApiResponse>;
-  pipedriveRequest?: (
-    params: IQuoteModalPipedriveRequest,
-  ) => Promise<IApiResponse>;
-}) => {
+}: IQuoteModal<T>) => {
   const { t } = useTranslation("PricingQuoteModal");
   const from = getFromParam();
 
@@ -137,65 +126,26 @@ const QuoteModal = <T,>({
     setFormStatus("loading");
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token: quoteFormData.hCaptcha }),
-      });
-
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
-        setFormStatus("error");
-        setTimeout(() => {
-          setFormStatus("default");
-        }, 5000);
-        return;
-      }
-
       const countryInfo = Object.values(countries).find(
         (item) => item.country === selectedCountry,
       );
       const country = countryInfo?.title?.split(" (")[0] || "";
       const region = countryInfo?.salesRegion || "";
 
-      let requestData;
+      const onSubmitRequestData = await onSubmitRequest({
+        from,
+        country,
+        region,
+        hCaptchaResponse: quoteFormData.hCaptcha,
+      });
 
-      if (apiRequest) {
-        requestData = await apiRequest({
-          from: from || "",
-          country,
-          region,
-          utmSource: quoteFormData.utmSource,
-          utmCampaign: quoteFormData.utmCampaign,
-          utmContent: quoteFormData.utmContent,
-          utmTerm: quoteFormData.utmTerm,
-        });
-      } else if (sendEmailRequest) {
-        requestData = await sendEmailRequest({
-          ...quoteFormData,
-          from: from || "",
-          country,
-          region,
-        });
-      } else if (pipedriveRequest) {
-        requestData = await pipedriveRequest({
-          ...quoteFormData,
-          from: from || "",
-          country,
-          region,
-        });
-      } else if (onSubmitRequest) {
-        requestData = await onSubmitRequest({
-          from,
-          country,
-          region,
-        });
-      } else {
-        throw new Error("No request handler provided");
-      }
-
-      if (requestData.status === "success") {
+      if (onSubmitRequestData.status === "errorHCaptchaInvalid") {
+        setFormStatus("error");
+        setTimeout(() => {
+          setFormStatus("default");
+        }, 5000);
+        return;
+      } else if (onSubmitRequestData.status === "success") {
         setFormStatus("success");
 
         setTimeout(() => {
@@ -395,42 +345,5 @@ const QuoteModal = <T,>({
     </Modal>
   );
 };
-
-export interface IQuoteModalApiRequest {
-  from: string;
-  country: string;
-  region: string;
-  utmSource?: string;
-  utmCampaign?: string;
-  utmContent?: string;
-  utmTerm?: string;
-}
-
-export interface IQuoteModalFormData {
-  fullName: string;
-  email: string;
-  phone: string;
-  companyName: string;
-  hCaptcha: string | null;
-}
-
-export interface IQuoteModalPipedriveRequest extends IQuoteModalFormData {
-  from: string;
-  country: string;
-  region: string;
-  _ga?: string;
-  utmSource?: string;
-  utmCampaign?: string;
-  title?: string;
-}
-
-export interface IQuoteModalSendEmailRequest extends IQuoteModalFormData {
-  from: string;
-  country: string;
-  region: string;
-  errorFlag?: boolean;
-  utmCampaignFlag?: boolean;
-  errorText?: string;
-}
 
 export { QuoteModal };

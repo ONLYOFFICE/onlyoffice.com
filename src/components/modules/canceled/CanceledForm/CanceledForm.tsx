@@ -51,7 +51,7 @@ const CanceledForm = ({
     from: "",
     spam: 0,
     calls: 1,
-    recaptchaResponse: null,
+    hCaptchaResponse: null,
     table_name: tableName,
     locale,
     referer: "",
@@ -94,7 +94,7 @@ const CanceledForm = ({
   const handleHCaptchaChange = (token: string | null) => {
     setFormData((prev) => ({
       ...prev,
-      recaptchaResponse: token,
+      hCaptchaResponse: token,
     }));
   };
 
@@ -114,7 +114,7 @@ const CanceledForm = ({
     ? formData.email.length > 0 && validateEmail(formData.email)
     : true;
 
-  const isHCaptchaPassed = Boolean(formData.recaptchaResponse);
+  const isHCaptchaPassed = Boolean(formData.hCaptchaResponse);
 
   const isFormValid =
     isAnyMarkChecked &&
@@ -162,29 +162,23 @@ const CanceledForm = ({
     setFormStatus("loading");
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token: formData.recaptchaResponse }),
-      });
-
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorhCaptchaInvalid") {
-        setFormStatus("error");
-        setTimeout(() => {
-          setFormStatus("default");
-        }, 5000);
-        return;
-      }
-
       const canceledFormResponse = await fetch("/api/canceled-form", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
       const canceledFormData = await canceledFormResponse.json();
-      if (canceledFormResponse.ok && canceledFormData.status === "success") {
+
+      if (canceledFormData.status === "errorHCaptchaInvalid") {
+        setFormStatus("error");
+        setTimeout(() => {
+          setFormStatus("default");
+        }, 5000);
+        return;
+      } else if (
+        canceledFormResponse.ok &&
+        canceledFormData.status === "success"
+      ) {
         setFormStatus("success");
         onShowCoupons();
 
