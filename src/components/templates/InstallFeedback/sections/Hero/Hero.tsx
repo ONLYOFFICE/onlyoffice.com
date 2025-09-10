@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useTranslation } from "next-i18next";
+import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { ILoaderButton } from "@src/components/ui/LoaderButton";
 import { QuestionBlock } from "./sub-components/QuestionBlock";
 import { getFromParam } from "@src/utils/getParams";
@@ -39,6 +41,7 @@ import {
 const Hero = () => {
   const { t } = useTranslation("install-feedback");
 
+  const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const [formData, setFormData] = useState<IFormData>({
     operatingSystem: "Microsoft Windows Vista SP2",
@@ -58,6 +61,7 @@ const Hero = () => {
     degreeVersionMeet: "Meet absolutely",
     planToUse: "Yes",
     comments: "",
+    captchaToken: null,
   });
 
   const clearData = () => {
@@ -80,7 +84,15 @@ const Hero = () => {
       degreeVersionMeet: "Meet absolutely",
       planToUse: "Yes",
       comments: "",
+      captchaToken: null,
     });
+  };
+
+  const handleHCaptchaChange = async (token: string | null) => {
+    setFormData((prev) => ({
+      ...prev,
+      captchaToken: token,
+    }));
   };
 
   const handleSubmit = async () => {
@@ -88,7 +100,7 @@ const Hero = () => {
     if (status === "success" || status === "error") {
       clearData();
       return;
-    };
+    }
 
     setStatus("loading");
     const from = getFromParam();
@@ -97,7 +109,7 @@ const Hero = () => {
       const response = await fetch("/api/install-feedback", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           os: formData.operatingSystem,
@@ -110,8 +122,9 @@ const Hero = () => {
           support: formData.planToUse,
           comments: formData.comments,
           from,
-        })
-      })
+          hCaptchaResponse: formData.captchaToken,
+        }),
+      });
 
       const responseData = await response.json();
 
@@ -123,7 +136,7 @@ const Hero = () => {
     } catch (error) {
       console.error("InstallFeedback api returns errors:", error);
       setStatus("error");
-    };
+    }
   };
 
   return (
@@ -163,10 +176,12 @@ const Hero = () => {
               <StyledHeroInputText
                 name="whoIsResponsible"
                 value={formData.whoIsResponsible}
-                onChange={(e) => setFormData({
-                  ...formData,
-                  whoIsResponsible: e.target.value,
-                })}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    whoIsResponsible: e.target.value,
+                  })
+                }
               />
             </StyledHeroInputTextBlock>
             <QuestionBlock
@@ -218,12 +233,21 @@ const Hero = () => {
               <StyledHeroTextArea
                 name="comments"
                 value={formData.comments}
-                onChange={(e) => setFormData({
-                  ...formData,
-                  comments: e.target.value,
-                })}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    comments: e.target.value,
+                  })
+                }
               />
             </StyledHeroTextAreaBlock>
+
+            <HCaptcha
+              ref={hCaptchaRef}
+              onVerify={handleHCaptchaChange}
+              onExpire={() => handleHCaptchaChange(null)}
+            />
+
             <StyledHeroLoaderButtonWrapper>
               {status === "loading" && (
                 <StyledHeroLoaderStatusLoadText
@@ -236,6 +260,7 @@ const Hero = () => {
                 label={t("SendFeedback")}
                 onClick={handleSubmit}
                 status={status}
+                disabled={formData.captchaToken === null ? true : false}
               />
             </StyledHeroLoaderButtonWrapper>
           </StyledHeroForm>
@@ -245,9 +270,7 @@ const Hero = () => {
       {(status === "success" || status === "error") && (
         <Container maxWidth="1050px">
           <StyledHeroPopupStatus>
-            <StyledHeroCrossButton
-              onClick={clearData}
-            />
+            <StyledHeroCrossButton onClick={clearData} />
             {status === "success" && (
               <StyledHeroStatusHeading
                 label={t("SendInstallFeedbackSuccessful")}
@@ -270,10 +293,7 @@ const Hero = () => {
                 />
               )}
               {status === "error" && (
-                <StyledHeroStatusText
-                  label={t("WeAreSorryBut")}
-                  size={4}
-                />
+                <StyledHeroStatusText label={t("WeAreSorryBut")} size={4} />
               )}
               <StyledHeroPopupCloseButton
                 label={t("OK")}

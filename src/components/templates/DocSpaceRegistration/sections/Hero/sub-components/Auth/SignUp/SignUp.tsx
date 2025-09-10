@@ -117,19 +117,6 @@ const SignUp = ({
     setisFormLoading(true);
     setIsFormValid(false);
 
-    const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ token }),
-    });
-
-    const hCaptchaData = await hCaptchaResponse.json();
-
-    if (hCaptchaData.status === "errorHCaptchaInvalid") {
-      setIsFormValid(false);
-      return;
-    }
-
     const res = await fetch("/api/thirdparty/sendemail", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -145,12 +132,15 @@ const SignUp = ({
           register: t("YourConfirmationLinkForOODocSpace"),
           login: t("YourLoginLinkToOODocSpace"),
         },
+        hCaptchaResponse: token,
       }),
     });
 
     const data = await res.json();
 
-    if (data.status === "success") {
+    if (data.status === "errorHCaptchaInvalid") {
+      setIsFormValid(false);
+    } else if (data.status === "success") {
       setEmail(formData.email);
       setStatus("checkEmail");
     } else {

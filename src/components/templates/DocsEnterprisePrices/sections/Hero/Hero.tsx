@@ -113,6 +113,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IQuoteModalOnSubmitRequest) => {
     return fetch("/api/docs-enterprise-prices", {
       method: "POST",
@@ -136,6 +137,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
         from,
         country,
         region,
+        hCaptchaResponse,
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
         type: "docsenterpriserequest",
