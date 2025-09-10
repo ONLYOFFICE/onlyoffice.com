@@ -4,8 +4,9 @@
 
   "IntegrateOODocsOrDocSpace": "Integrieren Sie <0>ONLYOFFICE Docs</0> oder <1>DocSpace</1> in Ihre bevorzugte Unternehmensplattform mit gebrauchsfertigen Konnektoren",
   "FeaturedConnectors": "Ausgewählte Konnektoren",
-  "ConnectorFor": "Konnektor für",
-  "WOPIConnectorFor": "WOPI-Konnektor für",
+  "ConnectorFor": "Konnektor",
+  "For": "für",
+  "WOPIConnectorFor": "WOPI-Konnektor",
   "New": "Neu",
   "MoreInfo": "Weitere Informationen",
   "Connectors": "Konnektoren",
