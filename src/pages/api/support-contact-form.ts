@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { mkdirSync, writeFileSync, readdirSync, readFileSync } from "fs";
 import path from "path";
 import { File as FormidableFile, IncomingForm } from "formidable";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
@@ -69,6 +70,24 @@ export default async function handler(
     const languageCode = getField(fields.languageCode);
     const fromPage = getField(fields.from);
     const os = getField(fields.os);
+    const hCaptchaResponse = getField(fields.hCaptchaResponse);
+
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
 
     // Normalize raw files into array
     const rawFiles = filesRaw.files;
@@ -90,7 +109,7 @@ export default async function handler(
         choice_language: languageCode,
         fromPage,
         operating_system: os,
-        ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
+        ip,
         utm_source: cookies.utmSource ?? null,
         utm_campaign: cookies.utmCampaign ?? null,
         utm_content: cookies.utmContent ?? null,
@@ -106,29 +125,34 @@ export default async function handler(
     }
 
     try {
-      // Prepare uploads directory
-      const baseUploads = path.join(process.cwd(), "public", "uploads");
-      mkdirSync(baseUploads, { recursive: true });
+      let attachments: { filename: string; path: string }[] = [];
+      let requestDirName: string | null = null;
 
-      // Determine next request-N folder
-      const existing = readdirSync(baseUploads)
-        .filter((name) => name.startsWith("request-"))
-        .map((name) => parseInt(name.split("-")[1] || "0", 10))
-        .filter((n) => !isNaN(n));
-      const nextIdx = existing.length ? Math.max(...existing) + 1 : 1;
-      const requestDirName = `request-${nextIdx}`;
-      const requestDir = path.join(baseUploads, requestDirName);
-      mkdirSync(requestDir);
+      if (uploadedFiles.length > 0) {
+        // Prepare uploads directory
+        const baseUploads = path.join(process.cwd(), "public", "uploads");
+        mkdirSync(baseUploads, { recursive: true });
 
-      // Save each uploaded file
-      const attachments = uploadedFiles.map((file) => {
-        const fileData = readFileSync(file.filepath);
-        const originalFilename = file.originalFilename ?? file.newFilename;
-        const finalName = originalFilename.replace(/ /g, "_");
-        const finalPath = path.join(requestDir, finalName);
-        writeFileSync(finalPath, fileData);
-        return { filename: finalName, path: finalPath };
-      });
+        // Determine next request-N folder
+        const existing = readdirSync(baseUploads)
+          .filter((name) => name.startsWith("request-"))
+          .map((name) => parseInt(name.split("-")[1] || "0", 10))
+          .filter((n) => !isNaN(n));
+        const nextIdx = existing.length ? Math.max(...existing) + 1 : 1;
+        requestDirName = `request-${nextIdx}`;
+        const requestDir = path.join(baseUploads, requestDirName);
+        mkdirSync(requestDir);
+
+        // Save each uploaded file
+        attachments = uploadedFiles.map((file) => {
+          const fileData = readFileSync(file.filepath);
+          const originalFilename = file.originalFilename ?? file.newFilename;
+          const finalName = originalFilename.replace(/ /g, "_");
+          const finalPath = path.join(requestDir, finalName);
+          writeFileSync(finalPath, fileData);
+          return { filename: finalName, path: finalPath };
+        });
+      }
 
       // Send email with attachments
       const transporter = emailTransporter();

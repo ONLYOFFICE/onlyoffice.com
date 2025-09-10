@@ -1,5 +1,6 @@
 export interface IDownloadModalOnSubmitRequest {
   from?: string;
+  hCaptchaResponse: string;
 }
 
 export interface IPartnershipRequestData {

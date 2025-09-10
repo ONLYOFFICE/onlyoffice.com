@@ -91,6 +91,7 @@ const EnterpriseModal = ({
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IQuoteModalOnSubmitRequest) => {
     return fetch("/api/docspace-prices", {
       method: "POST",
@@ -112,6 +113,7 @@ const EnterpriseModal = ({
         from,
         country,
         region,
+        hCaptchaResponse,
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
         type: "docspaceenterpriserequest",

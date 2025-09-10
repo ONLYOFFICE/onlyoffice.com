@@ -4,7 +4,7 @@ interface IWebinarsForUsEmail {
   companyName: string;
   webinarTheme: string;
   webinarDate: string;
-  lang: string;
+  webinarLang: string;
   questions: string;
 };
 
@@ -14,7 +14,7 @@ const WebinarsForUsEmail = ({
   companyName,
   webinarTheme,
   webinarDate,
-  lang,
+  webinarLang,
   questions,
 }: IWebinarsForUsEmail) => {
   return `
@@ -59,7 +59,7 @@ const WebinarsForUsEmail = ({
                 </p>
                 <p style="margin-top:5px;">
                     <b>Webinar language</b><br />
-                    ${lang}
+                    ${webinarLang}
                 </p>
                 <p style="margin-top:5px;">
                     <b>Questions</b><br />

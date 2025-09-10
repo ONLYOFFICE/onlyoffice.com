@@ -91,6 +91,7 @@ const Hero = ({ locale }: ILocale) => {
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IQuoteModalOnSubmitRequest) => {
     return fetch("/api/docspace-developer-prices", {
       method: "POST",
@@ -119,6 +120,7 @@ const Hero = ({ locale }: ILocale) => {
         from,
         country,
         region,
+        hCaptchaResponse,
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
         type: "docspacedeveloperrequest",
