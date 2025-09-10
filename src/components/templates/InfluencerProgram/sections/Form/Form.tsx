@@ -112,22 +112,6 @@ const Form = () => {
     setFormStatus("loading");
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token: formData.hCaptcha }),
-      });
-
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
-        setFormStatus("error");
-        setTimeout(() => {
-          setFormStatus("default");
-        }, 5000);
-        return;
-      }
-
       const formResponse = await fetch("/api/influencer-program-request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
