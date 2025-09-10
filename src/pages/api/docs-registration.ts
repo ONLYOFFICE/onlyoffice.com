@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { getDisplayNameWithoutParentheses } from "@src/utils/getDisplayNameWithoutParentheses";
 import { addDocsRegistrationRequest } from "@src/lib/requests/addDocsRegistrationRequest";
 import { emailTransporter } from "@src/config/email/transporter";
@@ -35,10 +36,28 @@ export default async function handler(
     from,
     languageCode,
     language,
-    referer
+    referer,
+    hCaptchaResponse,
   } = req.body;
 
   try {
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
+
     const errorMessages = [];
 
     const webPaymentRequest = async () => {
@@ -54,13 +73,11 @@ export default async function handler(
           AffiliateId: affiliateId,
           AffiliateToken: affiliateToken,
         };
-        await fetch(
-          process.env.WEB_PAYMENT_DC_TRIAL_URL!,
-          {
-            method: "POST",
-            body: new URLSearchParams(Object.entries(webPaymentEnterpiseData))
-          },
-        );
+
+        await fetch(process.env.WEB_PAYMENT_DC_TRIAL_URL!, {
+          method: "POST",
+          body: new URLSearchParams(Object.entries(webPaymentEnterpiseData)),
+        });
 
         return {
           status: "success",
@@ -95,7 +112,7 @@ export default async function handler(
         phone,
         tariff_plan: tariffPlan,
         platform: docsPlatform,
-        ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
+        ip,
         lang: languageCode,
         create_on: new Date(),
         spam: 0,
@@ -103,7 +120,9 @@ export default async function handler(
       });
 
       if (addDocsRegistrationResult?.status === "error") {
-        errorMessages.push(`landingRequest: ${addDocsRegistrationResult?.message}`);
+        errorMessages.push(
+          `landingRequest: ${addDocsRegistrationResult?.message}`,
+        );
       }
     }
 
@@ -122,7 +141,7 @@ export default async function handler(
         affiliateId,
         affiliateToken,
         errorText: errorMessages.join("<br/><br/>"),
-      })
+      }),
     });
 
     res.status(200).json({ status: "success", message: "success" });
