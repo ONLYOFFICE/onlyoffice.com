@@ -30,6 +30,7 @@ export default async function handler(
     questions,
     lang,
     from,
+    locale,
   } = req.body;
 
   try {
@@ -98,6 +99,7 @@ export default async function handler(
       html: WebinarsForUserEmail({
         webinarTheme,
         webinarDate,
+        language: locale,
       }),
     });
 

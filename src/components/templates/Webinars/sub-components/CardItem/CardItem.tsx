@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { Trans, useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { Link } from "@src/components/ui/Link";
@@ -55,6 +56,7 @@ const CardItem = ({
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha  | null>(null);
+  const { locale } = useRouter();
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
@@ -191,6 +193,7 @@ const CardItem = ({
           questions: formData.textArea,
           lang: language,
           from,
+          locale,
         }),
       });
       const webinarsResponseData = await response.json();
