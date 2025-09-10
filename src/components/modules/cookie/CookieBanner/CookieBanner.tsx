@@ -7,6 +7,7 @@ import {
   StyledCookieBannerHeader,
   StyledCross,
 } from "./CookieBanner.styled";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";
@@ -18,7 +19,6 @@ import {
   DEFAULT_CONSENT,
   ALL_GRANTED,
 } from "@src/utils/useUtmCookies";
-import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 
 function getConsentCookie(): IConsentData | null {
   if (typeof document === "undefined") return null;
@@ -39,16 +39,16 @@ export interface IConsentData {
 
 const CookieBanner = () => {
   const { t } = useTranslation("common");
+  const IPGeolocationCountry = useIPGeolocationStore(
+    (state) => state.IPGeolocationInfo.country,
+  );
+
   const [consent, setConsent] = useState<IConsentData | null>(null);
   const [showBanner, setShowBanner] = useState(false);
   const [showFab, setShowFab] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [isFullGDPR, setIsFullGDPR] = useState(true);
   const scrolledRef = useRef(false);
-
-  const IPGeolocationCountry = useIPGeolocationStore(
-    (state) => state.IPGeolocationInfo.country,
-  );
 
   useEffect(() => {
     let gdpr = true;

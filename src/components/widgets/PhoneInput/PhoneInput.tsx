@@ -6,7 +6,6 @@ import {
   useEffect,
 } from "react";
 import { useTranslation } from "next-i18next";
-import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import {
   StyledPhoneInput,
   StyledPhoneInputLeftSide,
@@ -16,6 +15,7 @@ import {
   StyledPhoneInputContriesItem,
 } from "./PhoneInput.styled";
 import { IPhoneInputRef, IPhoneInput } from "./PhoneInput.types";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { Input } from "@src/components/ui/Input";
 import { countries } from "@src/config/data/countries";
 
