@@ -27,6 +27,7 @@ import {
   StyledCardFormOverlay,
   StyledCardFormStatusText,
 } from "./CardForm.styled";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const CardForm = ({
   download_url,
@@ -38,6 +39,8 @@ const CardForm = ({
   const { t } = useTranslation("whitepapers");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha | null>(null);
+
+  const pageTrack = usePageTrack();
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
@@ -144,22 +147,22 @@ const CardForm = ({
     try {
       setStatus("loading");
 
-      const responseWhitePapers = await fetch("/api/whitepapers", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          fullName: formData.fullName ?? "",
-          company: formData.companyName ?? "",
-          email: formData.email ?? "",
-          from: from ?? "",
-          id_url: id_url ?? "",
-          languageCode: locale ?? "",
+        const responseWhitePapers = await fetch("/api/whitepapers", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullName: formData.fullName ?? "",
+            company: formData.companyName ?? "",
+            email: formData.email ?? "",
+            from: from ?? "",
+            id_url: id_url ?? "",
+            languageCode: locale ?? "",
           hCaptchaResponse: formData.hCaptcha,
-        }),
+          }),
       });
-      const dataWhitePapers = await responseWhitePapers.json();
+        const dataWhitePapers = await responseWhitePapers.json();
 
       if (
         dataWhitePapers.status === "errorHCaptchaInvalid" ||
@@ -169,16 +172,18 @@ const CardForm = ({
         return;
       }
 
-      if (dataWhitePapers.status === "success") {
-        setStatus("success");
-        downloadUrl(download_url);
-      }
+        if (dataWhitePapers.status === "success") {
+          pageTrack('whitepapers-request');
 
-      if (openModal && dataWhitePapers.status === "success") {
-        setTimeout(() => {
-          setOpenModal(false);
-        }, 5000);
-      }
+          setStatus("success");
+          downloadUrl(download_url);
+        }
+
+        if (openModal && dataWhitePapers.status === "success") {
+          setTimeout(() => {
+            setOpenModal(false);
+          }, 5000);
+        }
     } catch (error) {
       setStatus("error");
       console.error(error);
@@ -221,7 +226,7 @@ const CardForm = ({
                   label={t("CardFormFullNameIsEmpty")}
                   color="#CB0000"
                 />
-              )}
+            )}
             {checkStatus.fullName === "error" &&
               formData.fullName.length > 0 && (
                 <Text
@@ -229,7 +234,7 @@ const CardForm = ({
                   label={t("CardFormFullNameIsIncorrect")}
                   color="#CB0000"
                 />
-              )}
+            )}
           </StyledCardFormInputWrapper>
           <StyledCardFormInputWrapper>
             <Input
@@ -253,7 +258,7 @@ const CardForm = ({
                   label={t("CardFormCompanyNameIsEmpty")}
                   color="#CB0000"
                 />
-              )}
+            )}
           </StyledCardFormInputWrapper>
           <StyledCardFormInputWrapper>
             <Input
