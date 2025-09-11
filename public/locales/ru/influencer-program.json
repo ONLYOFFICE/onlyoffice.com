@@ -57,7 +57,7 @@
   "NameSurname": "Name Surname",
   "FullNameIsEmpty": "Полное имя не указано",
   "FullNameIsIncorrect": "Некорректное поле Полное имя",
-  "Email": "Электронная почта*",
+  "Email": "Электронная почта",
   "Name": "name@domain.com",
   "EmailIsEmpty": "Поле Email не заполнено",
   "EmailIsIncorrect": "Неверный Email",
