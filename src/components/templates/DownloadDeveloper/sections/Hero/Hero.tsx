@@ -318,6 +318,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
         onClose={() => setIsModalOpen(false)}
         onSubmitRequest={onSubmitRequest}
         buttonAction={buttonAction}
+        pageTrackName={formData.buttonId}
       />
     </>
   );

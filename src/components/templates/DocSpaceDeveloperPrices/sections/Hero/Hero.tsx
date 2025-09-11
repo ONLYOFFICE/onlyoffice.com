@@ -498,6 +498,7 @@ const Hero = ({ locale }: ILocale) => {
           onSubmitRequest={onSubmitRequest}
           onClose={() => setIsModalOpen(false)}
           locale={locale}
+          pageTrackName="onlyoffice_docspace_developer_prices"
         />
       </Container>
     </StyledHero>

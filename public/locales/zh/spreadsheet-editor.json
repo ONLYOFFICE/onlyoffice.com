@@ -2,7 +2,7 @@
   "PageTitle": "基于Web的电子表格编辑软件：创建、打开、编辑和共享表格 | ONLYOFFICE",
   "PageDescription": "在线打开MS Excel或Google Sheets文件。创建安全的电子表格、使用公式和可视化数据、共享并与多用户协作编辑。",
 
-  "Header": "在线电子表格编辑器，适配您的 Web 应用",
+  "Header": "为您的网页应用获取强大的在线表格编辑器",
   "SubHeader": "在线创建、编辑和协作处理Excel文档",
 
   "Feature1Title": "让数字为您工作",
@@ -10,7 +10,7 @@
   "Feature1ImgUrl": "/images/templates/spreadsheet-editor/features/zh/screen1.png",
   "Feature1ImgUrl2x": "/images/templates/spreadsheet-editor/features/zh/screen1@2x.png",
   "Feature2Title": "轻松实现精准计算",
-  "Feature2Desc": "使用400多个函数和公式并利用特殊的语法提示，实现快速及准确的结果。通过表格模板、命名范围、排序和过滤数据等简化电子表格的使用。快速查找内容，轻按鼠标即可将其替换为新内容。",
+  "Feature2Desc": "使用400多个函数和公式并利用特殊的语法提示，实现快速及准确的结果。通过表格模板、名称管理器、排序和过滤数据等简化电子表格的使用。快速查找内容，轻按鼠标即可将其替换为新内容。",
   "Feature2ImgUrl": "/images/templates/spreadsheet-editor/features/zh/screen2.png",
   "Feature2ImgUrl2x": "/images/templates/spreadsheet-editor/features/zh/screen2@2x.png",
   "Feature3Title": "轻松分析数据",
