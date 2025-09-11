@@ -13,7 +13,7 @@ export interface ICanceledFormData {
   from: string;
   spam: number;
   calls: number;
-  recaptchaResponse: string | null;
+  hCaptchaResponse: string | null;
   table_name: string;
 }
 

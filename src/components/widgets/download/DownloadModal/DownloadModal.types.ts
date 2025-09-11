@@ -4,6 +4,7 @@ export interface IDownloadModalOnSubmitRequest {
   from?: string;
   country: string;
   region: string;
+  hCaptchaResponse: string;
 }
 
 export interface IDownloadModalData {
@@ -35,4 +36,5 @@ export interface IDownloadModal {
     params: IDownloadModalOnSubmitRequest,
   ) => Promise<IApiResponse>;
   buttonAction: IDownloadBlockButton["withModal"];
+  pageTrackName: string;
 }

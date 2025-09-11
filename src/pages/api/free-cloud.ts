@@ -1,5 +1,6 @@
 import { db } from "@src/config/db/site";
 import { NextApiRequest, NextApiResponse } from "next";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import crypto from "crypto";
 import { RowDataPacket } from "mysql2";
 
@@ -30,6 +31,7 @@ export default async function handler(
     youAre,
     yourWebsiteURL,
     culture,
+    hCaptchaResponse,
   } = req.body;
 
   const addFreeCloudRequest = async () => {
@@ -38,6 +40,23 @@ export default async function handler(
       ? crypto.createHash("md5").update(url, "utf8").digest("hex")
       : "";
     try {
+      const ip =
+        (Array.isArray(req.headers["x-forwarded-for"])
+          ? req.headers["x-forwarded-for"][0]
+          : req.headers["x-forwarded-for"]
+        )?.split(",")[0] ||
+        req.socket.remoteAddress ||
+        null;
+
+      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+      if (!hCaptchaResult.success) {
+        return res.status(400).json({
+          status: "errorHCaptchaInvalid",
+          error: hCaptchaResult.error,
+        });
+      }
+
       const addFreeCloud: IAddFreeCloudData = {
         first_name: firstName,
         last_name: lastName,

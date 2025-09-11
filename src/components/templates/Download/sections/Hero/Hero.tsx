@@ -54,6 +54,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download", {
       method: "POST",
@@ -72,6 +73,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
         from,
         country,
         region,
+        hCaptchaResponse,
       }),
     }).then((res) => res.json());
   };
@@ -150,7 +152,9 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
                       releaseDate={item.releaseDate}
                       readInstructionLink={
                         item.readInstructionLink
-                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          ? t(item.readInstructionLink, {
+                              defaultValue: item.readInstructionLink,
+                            })
                           : undefined
                       }
                       buttons={item.buttons.map((button) => ({
@@ -261,7 +265,9 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
                       releaseDate={item.releaseDate}
                       readInstructionLink={
                         item.readInstructionLink
-                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          ? t(item.readInstructionLink, {
+                              defaultValue: item.readInstructionLink,
+                            })
                           : undefined
                       }
                       buttons={item.buttons.map((button) => ({
@@ -361,6 +367,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
         onClose={() => setIsModalOpen(false)}
         onSubmitRequest={onSubmitRequest}
         buttonAction={buttonAction}
+        pageTrackName={formData.buttonId}
       />
     </>
   );

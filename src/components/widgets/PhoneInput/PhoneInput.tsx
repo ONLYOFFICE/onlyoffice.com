@@ -6,7 +6,6 @@ import {
   useEffect,
 } from "react";
 import { useTranslation } from "next-i18next";
-import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import {
   StyledPhoneInput,
   StyledPhoneInputLeftSide,
@@ -16,13 +15,17 @@ import {
   StyledPhoneInputContriesItem,
 } from "./PhoneInput.styled";
 import { IPhoneInputRef, IPhoneInput } from "./PhoneInput.types";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { Input } from "@src/components/ui/Input";
 import { countries } from "@src/config/data/countries";
 
 const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
   ({ id, className, status, required, onChange, onBlur }, ref) => {
     const { t } = useTranslation("PhoneInput");
-    const { IPGeolocationInfo, setIPGeolocationInfo } = useIPGeolocationStore();
+    const IPGeolocationCountry = useIPGeolocationStore(
+      (state) => state.IPGeolocationInfo.country,
+    );
+
     const leftSideRef = useRef<HTMLButtonElement>(null);
     const countriesRef = useRef<HTMLUListElement>(null);
     const selectedRef = useRef<HTMLLIElement>(null);
@@ -67,24 +70,7 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
     }));
 
     useEffect(() => {
-      (async () => {
-        try {
-          if (IPGeolocationInfo.regionDbEntity.domain) {
-            setSelectedCountry(IPGeolocationInfo.country);
-            return;
-          }
-
-          const res = await fetch("/api/ip-geolocation");
-          const data = await res.json();
-
-          if (data?.country) {
-            setSelectedCountry(data.country);
-            setIPGeolocationInfo(data);
-          }
-        } catch (error) {
-          console.error("Error fetching IP:", error);
-        }
-      })();
+      setSelectedCountry(IPGeolocationCountry);
 
       const handleClickOutside = (e: MouseEvent) => {
         const target = e.target as Node;
@@ -100,11 +86,7 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
       document.addEventListener("mousedown", handleClickOutside);
       return () =>
         document.removeEventListener("mousedown", handleClickOutside);
-    }, [
-      IPGeolocationInfo.country,
-      IPGeolocationInfo.regionDbEntity.domain,
-      setIPGeolocationInfo,
-    ]);
+    }, [IPGeolocationCountry]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const onlyNumbers = e.target.value.replace(/[^\d+]/g, "");
