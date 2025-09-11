@@ -41,9 +41,9 @@
   "SpeechInputImgUrl": "/images/templates/accessibility/features/mobility/zh/speech-input.png",
   "SpeechInputImgUrl2x": "/images/templates/accessibility/features/mobility/zh/speech-input@2x.png",
 
-  "NeurodiversityTitle": "智能功能",
+  "NeurodiversityTitle": "神经多样性",
   "AlternativeText": "替代文本",
-  "AlternativeTextFeature1": "替代文本",
+  "AlternativeTextFeature1": "为图像和其他图形对象指定标题和描述，以便其他人更好地理解该对象包含的信息。",
   "AutoCorrectFeatures": "自动更正功能",
   "AutoCorrectFeaturesFeature1": "使用拼写检查和自动更正，如符号替换、布局指南、直接智能引号替换、自动列表、默认将句子首字母大写等。",
   "Speech": "文本转语音",

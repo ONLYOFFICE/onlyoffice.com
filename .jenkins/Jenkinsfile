@@ -97,7 +97,7 @@ switch(BRANCH_NAME) {
     web_payment_dse_trial_url="https://payments-api.onlyoffice.com/v9.9/license/getdsetrial"
     web_payment_dspd_trial_url="https://payments-api.onlyoffice.com/v9.9/license/getdspdtrial"
     web_payment_dc_trial_url="https://payments-api.onlyoffice.com/v9.9/license/getdctrial"
-    next_public_onlyoffice_document_server_url="https://asc.docs.onlyoffice.com"
+    next_public_onlyoffice_document_server_url="https://site.docs.onlyoffice.com"
     aws_s3_bucket="static-site.onlyoffice.com"
     aws_s3_region="us-west-2"
     docspace_domain = "onlyoffice.com"

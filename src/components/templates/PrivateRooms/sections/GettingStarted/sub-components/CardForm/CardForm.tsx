@@ -27,6 +27,7 @@ import {
   StyledCardFormOverlay,
   StyledCardFormStatusText,
 } from "./CardForm.styled";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const CardForm = ({
   download_url,
@@ -36,6 +37,8 @@ const CardForm = ({
   const { t } = useTranslation("private-rooms");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha | null>(null);
+  
+  const pageTrack = usePageTrack();
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
@@ -142,20 +145,20 @@ const CardForm = ({
     try {
       setStatus("loading");
 
-      const responsePrivateRooms = await fetch("/api/private-rooms", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          fullName: formData.fullName ?? "",
-          company: formData.companyName ?? "",
-          email: formData.email ?? "",
-          from: from ?? "",
+        const responsePrivateRooms = await fetch("/api/private-rooms", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullName: formData.fullName ?? "",
+            company: formData.companyName ?? "",
+            email: formData.email ?? "",
+            from: from ?? "",
           hCaptchaResponse: formData.hCaptcha ?? "",
-        }),
+          }),
       });
-      const dataPrivateRooms = await responsePrivateRooms.json();
+        const dataPrivateRooms = await responsePrivateRooms.json();
 
       if (
         dataPrivateRooms.status === "errorHCaptchaInvalid" ||
@@ -164,16 +167,18 @@ const CardForm = ({
         setStatus("error");
       }
 
-      if (dataPrivateRooms.status === "success") {
-        setStatus("success");
-        downloadUrl(download_url);
-      }
+        if (dataPrivateRooms.status === "success") {
+          pageTrack('private-rooms-request');
 
-      if (openModal && dataPrivateRooms.status === "success") {
-        setTimeout(() => {
-          setOpenModal(false);
-        }, 5000);
-      }
+          setStatus("success");
+          downloadUrl(download_url);
+        }
+
+        if (openModal && dataPrivateRooms.status === "success") {
+          setTimeout(() => {
+            setOpenModal(false);
+          }, 5000);
+        }
     } catch (error) {
       setStatus("error");
       console.error(error);
@@ -216,7 +221,7 @@ const CardForm = ({
                   label={t("CardFormFullNameIsEmpty")}
                   color="#CB0000"
                 />
-              )}
+            )}
             {checkStatus.fullName === "error" &&
               formData.fullName.length > 0 && (
                 <Text
@@ -224,7 +229,7 @@ const CardForm = ({
                   label={t("CardFormFullNameIsIncorrect")}
                   color="#CB0000"
                 />
-              )}
+            )}
           </StyledCardFormInputWrapper>
           <StyledCardFormInputWrapper>
             <Input
@@ -248,7 +253,7 @@ const CardForm = ({
                   label={t("CardFormCompanyNameIsEmpty")}
                   color="#CB0000"
                 />
-              )}
+            )}
           </StyledCardFormInputWrapper>
           <StyledCardFormInputWrapper>
             <Input

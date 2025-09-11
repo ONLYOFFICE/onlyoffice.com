@@ -26,7 +26,7 @@
 	"Contributor": "贡献者",
 	"YourWebsiteURL": "您的网站地址",
 	"SiteURLIsEmpty": "网站网址为空",
-	"SiteURLIsIncorrect": "Site URL is incorrect",
+	"SiteURLIsIncorrect": "网址地址不正确",
 	"SubmitRequest": "提交请求",
 	"SuccessRequestText": "您的申请将在<0>3 个工作日内</0>审核，审核标准依据 ONLYOFFICE 云服务条款。",
 	"ErrorRequestText": "无法发送请求，请稍后重试。",
