@@ -57,7 +57,7 @@
   "NameSurname": "Name Surname",
   "FullNameIsEmpty": "Full name is empty",
   "FullNameIsIncorrect": "Full name is incorrect",
-  "Email": "Email*",
+  "Email": "Email",
   "Name": "name@domain.com",
   "EmailIsEmpty": "Email is empty",
   "EmailIsIncorrect": "Email is incorrect",

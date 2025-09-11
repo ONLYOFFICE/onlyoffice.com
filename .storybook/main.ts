@@ -5,14 +5,13 @@ const config: StorybookConfig = {
   addons: [
     "@storybook/addon-onboarding",
     "@storybook/addon-essentials",
-    "@chromatic-com/storybook",
     "@storybook/addon-interactions",
   ],
   framework: {
     name: "@storybook/nextjs",
     options: {},
   },
-  staticDirs: ["..\\public"],
+  staticDirs: ["../public"],
   docs: {
     autodocs: true,
   },
