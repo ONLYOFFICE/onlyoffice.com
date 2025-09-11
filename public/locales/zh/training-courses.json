@@ -30,7 +30,7 @@
   "QuestionGetMaterials": "培训课程结束后，我是否会得到任何材料？",
   "AnswerGetMaterials": "您会得到一份简短的课程介绍，课程记录以及一份包含您个人培训任务的文件。",
   "QuestionFindMaterials": "我在哪里可以找到其他问题的答案？",
-  "AnswerFindMaterials": "如果您有任何关于培训课程的问题，请与我们联系：<0>sales@onlyoffice.com</0>.",
+  "AnswerFindMaterials": "如果您有任何关于培训课程的问题，请与我们联系：sales@onlyoffice.com",
   "Reset": "重启",
   "Filters": "过滤器",
   "Module": "模块",
@@ -76,10 +76,10 @@
   "CardDataDescription20": "了解使用 ONLYOFFICE 文档的技术方面。深入了解如何安装和维护它，如何进行备份，配置编辑器，添加插件和宏，了解高级功能和参数。",
 
   "CardDataTitle19": "在 ONLYOFFICE 协作空间中编辑文档",
-  "CardDataDescription19": "ONLYOFFICE 协作空间是一个基于房间的有效文档协作平台。了解在协作空间中如何管理办公文档，如何使用实时或段落锁定共同编辑模式，如何创建和协作编辑文本文档、电子表格、演示文稿和表单。",
+  "CardDataDescription19": "ONLYOFFICE 协作空间是一个基于房间的高效文档协作平台。了解如何用它管理办公文档，如何创建和协作编辑文本文档、电子表格、演示文稿和表单。如何使用实时或段落锁定共同编辑模式等协作功能。",
 
   "CardDataTitle18": "管理 ONLYOFFICE 协作空间",
-  "CardDataDescription18": "ONLYOFFICE 协作空间是一个基于房间的有效文档协作平台。了解如何使用它管理团队和邀请用户，创建和管理房间，自定义和保护您的空间。",
+  "CardDataDescription18": "ONLYOFFICE 协作空间是一个基于房间的高效文档协作平台。了解如何使用它管理团队和邀请用户并设置权限、创建和管理房间、自定义和保护您的空间。",
 
   "CardDataTitle17": "在WordPress中处理文档",
   "CardDataDescription17": "了解如何在WordPress内处理办公文件：使用ONLYOFFICE 文档编辑上传到WordPress的文件，在创建文章时添加ONLYOFFICE模块，以嵌入模式插入文件，等等。",
