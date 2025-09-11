@@ -12,12 +12,14 @@
     "GDPRComplianceText1": "Die Datenschutz-Grundverordnung (DSGVO) wurde zum Schutz der Endbenutzer von Software verabschiedet und regelt, wie Unternehmen bei ihrem Kontakt mit EU-Bürgern deren Informationen behandeln. Wir respektieren das Recht unserer Benutzer, ihre personenbezogenen Daten zu besitzen und zu kontrollieren, und haben Produkte entwickelt, die den europäischen Gesetzen vollständig entsprechen.",
     "GDPRComplianceText2": "ONLYOFFICE fragt nur die notwendigen Daten an und lässt die Benutzer wissen, wie diese gesammelt, gespeichert und verarbeitet werden. ONLYOFFICE ermöglicht Ihnen, auf persönliche Daten zuzugreifen, diese zu kopieren, zu löschen, einzuschränken oder zu verschieben. Wenn Ihr Unternehmen als Datenverantwortlicher fungiert und Endkunden ONLYOFFICE zur Verfügung stellt, erhalten Sie vollständigen Zugriff auf die Verfahren, mit denen die Endkunden ihre gesetzlichen Rechte in Bezug auf ihre personenbezogenen Daten ausüben können.",
     "ReadMoreAboutONLYOFFICEGDPR": "Lesen Sie mehr über die Einhaltung der DSGVO durch ONLYOFFICE",
+    "ReadMoreAboutONLYOFFICEGDPRLink": "https://www.onlyoffice.com/blog/de/2018/05/wie-onlyoffice-die-dsgvo-vorgaben-erfullt",
 
     "HIPAACompliance": "HIPAA-Konformität",
     "HealthInsurance": "ONLYOFFICE schützt strukturierte und unstrukturierte inaktive Daten und bei ihrer Übertragung, ermöglicht den Zugriff auf Datenaudits, bietet Datenintegritätskontrollen usw., um die von HIPAA definierten obligatorischen Attribute zu erfüllen und sicherzustellen, dass die Kundeneinrichtung vollständig mit dem Gesetz konform bleibt.",
     "ReadMoreAboutHIPAA": "Lesen Sie mehr über die HIPAA-Konformität von ONLYOFFICE",
+    "ReadMoreAboutHIPAALink": "https://www.onlyoffice.com/blog/de/2020/10/wie-onlyoffice-hipaa-konformitat-gewahrleistet",
 
-    "Self_Hosting": "Self-hosting",
+    "Self_Hosting": "Selbsthosting",
     "ONLYOFFICEWasDesignedForBusinesses": "ONLYOFFICE wurde für Unternehmen entwickelt, die vertrauliche Kommunikationen und Aufzeichnungen durchführen, die, wenn sie kompromittiert werden, Kunden und interne Abläufe in unterschiedlichem Umfang gefährden können. Unser Lösungsspektrum bewahrt Ihre Dienste und alle zugewiesenen Daten zur Gänze in Ihrem physischen Umkreis. Wir legen den Hardwareschutz in Ihre eigenen Hände, sodass Sie die Stabilität und Konnektivität manuell aufrechterhalten können, gemäß den Anforderungen Ihrer Unternehmensstandards.",
     "WeProvideCompleteTechnicalSupport": "Wir bieten Ihnen einen vollständigen technischen Support für die Bereitstellung vor Ort und veröffentlichen regelmäßige Software-Updates.",
 
@@ -50,8 +52,8 @@
     "HTTPS": "HTTPS",
     "ONLYOFFICEAllowsYouToEncrypt": "ONLYOFFICE ermöglicht die Verschlüsselung Ihres Datenverkehrs über das HTTPS-Protokoll, unabhängig davon, ob Sie bereits ein SSL-Zertifikat besitzen oder nicht. Laden Sie die vorhandenen öffentlichen Schlüssel hoch, die auf Ihrem Server oder auf seiner Basis generiert wurden, oder stellen Sie das neue CA-signierte Zertifikat auf letsencrypt.org aus.",
     "ReadMoreAboutUsingHTTPS": "Lesen Sie mehr über die Verwendung von HTTPS in ONLYOFFICE",
-    "DigitalSignatures": "Digital signatures",
-    "ApplyingDigitalSignatures": "Applying digital signatures to documents helps confirm their integrity and authenticity. In ONLYOFFICE, you can use any certificates to add signatures to documents, request signatures from one or multiple parties, customize signature layout and appearance.",
+    "DigitalSignatures": "Digitale Signaturen",
+    "ApplyingDigitalSignatures": "Digitale Signaturen bestätigen die Integrität und Authentizität von Dokumenten. In ONLYOFFICE können Sie beliebige Zertifikate verwenden, um Dokumente zu signieren, Signaturen von einer oder mehreren Parteien anzufordern und das Layout und Erscheinungsbild der Signatur anzupassen.",
 
     "AuthenticationAndPortal": "Authentifizierung und Portalzugriffskontrolle",
     "Two_Factor": "Zwei-Faktor-Authentifizierung",
@@ -84,6 +86,7 @@
     "ONLYOFFICEBug": "<0>ONLYOFFICE</0> Bug Bounty Program",
     "WeWantToMakeOurProducts": "Wir wollen unsere Produkte so zuverlässig und sicher wie möglich machen, und hier kann die Hilfe von externen Talenten unsere eigenen internen Testbemühungen unterstützen. Jeder, vom professionellen ethischen Hacker bis zum aufstrebenden Sicherheitsenthusiasten, kann an unserem Bug Bounty Programm auf HackerOne teilnehmen, um Schwachstellen zu finden und zu melden und eine faire Vergütung zu erhalten.",
     "ReadMoreDetailsAboutHowItWorks": "Lesen Sie mehr darüber in unserem <0>Blog</0>.",
+    "ReadMoreDetailsAboutHowItWorksLink": "https://www.onlyoffice.com/blog/de/2022/02/onlyoffice-auf-hackerone",
 
     "LearnMoreAboutONLYOFFICE": "Erfahren Sie mehr über die Sicherheitsmaßnahmen von ONLYOFFICE",
     "WhitePaper": "White paper",

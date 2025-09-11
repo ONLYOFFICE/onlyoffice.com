@@ -5,6 +5,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { parse } from "cookie";
 import { WebinarsForUsEmail } from "@src/components/emails/WebinarsForUsEmail";
 import { WebinarsForUserEmail } from "@src/components/emails/WebinarsForUserEmail";
+import { generateKey } from "@src/lib/requests/thirdparty/generate";
 
 interface IWebinarsData {
   full_name: string;
@@ -29,9 +30,10 @@ export default async function handler(
     webinarTheme,
     webinarDate,
     questions,
-    lang,
+    webinarLang,
     from,
     hCaptchaResponse,
+    locale,
   } = req.body;
 
   try {
@@ -62,7 +64,7 @@ export default async function handler(
           email,
           company_name: companyName,
           webinar_theme: webinarTheme,
-          webinar_lang: lang,
+          webinar_lang: webinarLang,
         };
 
         await db.teamlabsite.query("INSERT INTO webinar_request SET ?", [
@@ -105,10 +107,14 @@ export default async function handler(
         companyName,
         webinarTheme,
         webinarDate,
-        lang,
+        webinarLang,
         questions,
       }),
     });
+
+    const { data: generateKeyData } = await generateKey({ email });
+    const baseUrl = `${req.headers.origin}${locale === "en" ? "" : `/${locale}`}`;
+    const emailKey = `${generateKeyData.emailKey}1`;
 
     await transporter.sendMail({
       from,
@@ -117,6 +123,8 @@ export default async function handler(
       html: WebinarsForUserEmail({
         webinarTheme,
         webinarDate,
+        baseUrl,
+        unsubscribeId: emailKey,
       }),
     });
 

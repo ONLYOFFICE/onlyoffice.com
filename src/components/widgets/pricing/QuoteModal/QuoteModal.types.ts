@@ -35,4 +35,5 @@ export interface IQuoteModal<T> {
     params: IQuoteModalOnSubmitRequest,
   ) => Promise<IApiResponse>;
   onClose: () => void;
+  pageTrackName: string;
 }

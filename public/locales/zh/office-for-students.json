@@ -2,7 +2,7 @@
   "PageTitle": "ONLYOFFICE 学生版 | ONLYOFFICE",
   "PageDescription": "使用免费的办公套件提升您的教育体验。ONLYOFFICE 将为任何设备提供合适的工具。",
 
-  "OfficeForStudents": "ONLYOFFICE <0>学生版</0>",
+  "OfficeForStudents": "适合<0>学生</0>的ONLYOFFICE",
   "SuperchargeYourEducation": "使用免费的办公套件提升您的教育体验。无论您是在教室、图书馆、大学咖啡馆还是在家工作，ONLYOFFICE 都将为任何设备提供合适的工具。",
 
   "OODesktopEditorsTitle": "<span>ONLYOFFICE 桌面编辑器：</span> <br> Word、Excel、PowerPoint 的免费替代品 + PDF 编辑器",
@@ -35,16 +35,16 @@
 
   "DownloadNow": "立即下载",
 
-  "OODocSpaceTitle": "<0>ONLYOFFICE DocSpace：</0>将您的团队项目提升到新水平",
+  "OODocSpaceTitle": "<0>ONLYOFFICE 协作空间：</0>高效完成团队项目",
   "OODocSpaceDesc": "与同学和老师一起工作，创造、分享新知识并实现您的目标！",
 
   "TeamworkHasNeverBeenEasier": "团队合作从未如此简单",
-  "TeamworkHasNeverBeenEasierDesc": "通过创建虚拟空间，您可以控制谁可以查看、协作或共享您空间中的项目文件。您永远不会错过重要文件，项目相关文档将保存在空间中。",
+  "TeamworkHasNeverBeenEasierDesc": "通过创建虚拟的房间，您可以控制谁能查看、协作或共享房间中的文件。重要文件再也不易丢失，因为项目相关文档都保存在房间中。",
   "TeamworkHasNeverBeenEasierUrl": "/images/templates/office-for-students/docspace/zh/teamwork-has-never-been-easier.png",
   "TeamworkHasNeverBeenEasierUrl2x": "/images/templates/office-for-students/docspace/zh/teamwork-has-never-been-easier@2x.png",
 
   "FitToAnyScenario": "适合任何场景",
-  "FitToAnyScenarioDesc": "在<0>表单空间</0>中接收项目反馈并完成任务，在<1>协作空间</1>中准备小组演示，撰写论文并与老师分享，利用在<2>自定义空间</2>中审阅它们的机会。允许小组成员和老师在<3>公共空间</3>中无需注册即可查看内容。在<4>会议空间</4>中讨论团队项目。",
+  "FitToAnyScenarioDesc": "在<0>表单填写房间</0>中收集数据并完成任务；在<1>协作房间</1>中准备小组演示，撰写论文并与老师分享；在<2>自定义房间</2>中审阅这些文档。在<3>公共房间</3>中，小组成员和老师无需注册即可查看内容。在<4>会议房间</4>中讨论团队项目。",
   "FitToAnyScenarioUrl": "/images/templates/office-for-students/docspace/zh/fit-to-any-scenario.png",
   "FitToAnyScenarioUrl2x": "/images/templates/office-for-students/docspace/zh/fit-to-any-scenario@2x.png",
 

@@ -50,8 +50,8 @@
     "HTTPS": "HTTPS",
     "ONLYOFFICEAllowsYouToEncrypt": "ONLYOFFICE允许使用HTTPS协议来加密流量，无论您是否已拥有SSL证书。 上传在服务器上或主机上已生成的现有公钥，或在letsencrypt.org上签发新的CA签名证书。",
     "ReadMoreAboutUsingHTTPS": "详细了解如何在ONLYOFFICE中使用HTTPS",
-    "DigitalSignatures": "Digital signatures",
-    "ApplyingDigitalSignatures": "Applying digital signatures to documents helps confirm their integrity and authenticity. In ONLYOFFICE, you can use any certificates to add signatures to documents, request signatures from one or multiple parties, customize signature layout and appearance.",
+    "DigitalSignatures": "数字签名",
+    "ApplyingDigitalSignatures": "为文件添加数字签名有助于确认它们的完整性和真实性。在ONLYOFFICE中，您可以使用任何证书为文件添加签名，请求一方或多方的签名，自定义签名的布局和外观。",
 
     "AuthenticationAndPortal": "身份验证和门户访问控制",
     "Two_Factor": "双因素身份验证",
@@ -83,7 +83,7 @@
 
     "ONLYOFFICEBug": "<0>ONLYOFFICE</0>漏洞赏金计划",
     "WeWantToMakeOurProducts": "我们希望给客户提供可靠的和安全的产品，来自外部人才的帮忙可以为我们内部测试工作提供动力。专业的道德黑客、或有抱负的安全爱好者，都可以参加我们在HackerOne上的漏洞赏金计划，发现并报告漏洞并获得补偿。",
-    "ReadMoreDetailsAboutHowItWorks": "请阅读我们的<0>官方公众号的文章</0>以了解更多。",
+    "ReadMoreDetailsAboutHowItWorks": "请阅读<0>此文章</0>了解详情。",
 
     "LearnMoreAboutONLYOFFICE": "了解更多关于ONLYOFFICE安全措施",
     "WhitePaper": "白皮书",

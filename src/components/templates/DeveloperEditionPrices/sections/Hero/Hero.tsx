@@ -204,7 +204,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                   <span>{currency.symbol}</span>
                   {productsData.basicCloud.price}
                 </StyledHeroPrice>
-                {t("user/month")}
+                {t("UserMonth")}
               </StyledHeroPriceWrapper>
             )}
 
@@ -699,6 +699,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
           buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
           onSubmitRequest={onSubmitRequest}
           onClose={() => setIsModalOpen(false)}
+          pageTrackName="onlyoffice_docs_developer_prices"
         />
       </Container>
     </StyledHero>

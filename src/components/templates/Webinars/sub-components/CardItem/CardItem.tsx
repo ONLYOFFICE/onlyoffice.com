@@ -12,7 +12,8 @@ import { getFromParam } from "@src/utils/getParams";
 import { ImageChecker } from "../ImageChecker";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { ICardItemProps, IFormData, ICheckStatus } from "../../Webinars.types";
-
+import { ILocale } from "@src/types/locale";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 import {
   StyledCardItem,
   StyledCardItemBottom,
@@ -42,7 +43,7 @@ import {
 const CardItem = ({
   date,
   dateWithHours,
-  language,
+  webinarLang,
   title,
   description,
   link,
@@ -50,11 +51,14 @@ const CardItem = ({
   image,
   product,
   isUpcomingWebinar,
-}: ICardItemProps) => {
+  locale,
+}: ICardItemProps & ILocale) => {
   const { t } = useTranslation("webinars");
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
-  const refHCaptcha = useRef<ReactCaptcha | null>(null);
+  const refHCaptcha = useRef<ReactCaptcha  | null>(null);
+
+  const pageTrack = usePageTrack();
 
   const [formData, setFormData] = useState<IFormData>({
     fullName: "",
@@ -192,16 +196,18 @@ const CardItem = ({
           webinarTheme: title,
           webinarDate: dateWithHours,
           questions: formData.textArea,
-          lang: language,
+          webinarLang,
           from,
           hCaptchaResponse: formData.hCaptcha,
+          locale,
         }),
       });
       const webinarsResponseData = await response.json();
-
-      if (webinarsResponseData.status === "errorHCaptchaInvalid") {
+      if (webinarsResponseData.status == "success") {
+        pageTrack("join_webinar");
+        setStatus(webinarsResponseData.status);
+      } else if (webinarsResponseData.status === "errorHCaptchaInvalid") {
         setStatus("error");
-        return;
       } else {
         setStatus(webinarsResponseData.status);
       }
@@ -219,7 +225,7 @@ const CardItem = ({
       >
         <StyledCardItemTop>
           <Text size={1} label={date} />
-          <Text size={1} label={t(language)} />
+          <Text size={1} label={t(webinarLang)} />
         </StyledCardItemTop>
         <StyledCardItemContent>
           <StyledCardItemHeading level={4} size={4} label={title} />
@@ -236,7 +242,7 @@ const CardItem = ({
             />
           )}
           {image.map((image, index) => (
-            <ImageChecker key={`${image.url} ${index}`} url={image.url} />
+              <ImageChecker key={`${image.url} ${index}`} url={image.url} />
           ))}
           <StyledCardItemSubtitle label={speaker} level={5} size={5} />
         </StyledCardItemBottom>
@@ -265,7 +271,7 @@ const CardItem = ({
                 </StyledCardItemModalBy>
                 <StyledCardItemModalLang>
                   <Text size={3} label={t("UpcomingModalLanguage")} />
-                  <Text size={3} label={t(language)} />
+                  <Text size={3} label={t(webinarLang)} />
                 </StyledCardItemModalLang>
               </StyledCardItemModalInfo>
             </StyledCardItemModalDesc>
@@ -293,7 +299,7 @@ const CardItem = ({
                       label={t("FullNameIsEmpty")}
                       color="#CB0000"
                     />
-                  )}
+                )}
                 {checkStatus.fullName === "error" &&
                   formData.fullName.length > 0 && (
                     <Text
@@ -301,7 +307,7 @@ const CardItem = ({
                       label={t("FullNameIsIncorrect")}
                       color="#CB0000"
                     />
-                  )}
+                )}
               </StyledCardItemModalInputWrapper>
               <StyledCardItemModalInputWrapper>
                 <Input
@@ -328,7 +334,7 @@ const CardItem = ({
                       label={t("CompanyNameIsEmpty")}
                       color="#CB0000"
                     />
-                  )}
+                )}
               </StyledCardItemModalInputWrapper>
               <StyledCardItemModalInputWrapper>
                 <Input
@@ -348,8 +354,8 @@ const CardItem = ({
                 />
                 {checkStatus.email === "error" &&
                   formData.email.length === 0 && (
-                    <Text size={4} label={t("EmailIsEmpty")} color="#CB0000" />
-                  )}
+                  <Text size={4} label={t("EmailIsEmpty")} color="#CB0000" />
+                )}
                 {checkStatus.email === "error" && formData.email.length > 0 && (
                   <Text
                     size={4}
@@ -432,7 +438,7 @@ const CardItem = ({
                 <Trans
                   t={t}
                   i18nKey={"RequestSuccessfull"}
-                  components={{ br: <br /> }}
+                  components={{br: <br />}}
                 />
               </StyledCardItemStatusText>
             </StyledCardItemModalForm>
