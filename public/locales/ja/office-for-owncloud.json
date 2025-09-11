@@ -47,7 +47,7 @@
     "FeaturesSupport":  "\u003c0\u003eownCloud Web\u003c/0\u003eのサポート。",
     "GetStarted":  "スタートアップ",
     "HowToStart":  "開始方法",
-    "HowToStartStep1":  "貴社サーバーにONLYOFFICE Docsを導入するか、ONLYOFFICE Docs Cloudにサインアップしてください。",
+    "HowToStartStep1":  "貴社サーバーに<0>ONLYOFFICE Docs</0>を導入するか、<1>ONLYOFFICE Docs Cloud</1>にサインアップしてください。",
     "HowToStartStep2":  "\u003c0\u003eownCloudマーケットプレイス\u003c/0\u003eから統合アプリを入手します。",
     "HowToStartStep3":  "統合アプリを設定します。",
     "HowToStartStep3ImgUrl":  "/images/templates/office-for-owncloud/how-to-start/step-3.svg",

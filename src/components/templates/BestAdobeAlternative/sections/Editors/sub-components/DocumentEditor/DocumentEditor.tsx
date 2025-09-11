@@ -71,10 +71,6 @@ const OnlyOfficeEditor = ({
             document: config.document,
             editorConfig: {
               ...config.editorConfig,
-              customization: {
-                pointerMode: "select",
-                slidePlayerBackground: "#444444",
-              },
               lang: locale,
             },
           }}
