@@ -10,8 +10,6 @@ const Hero = () => {
   const router = useRouter();
   const { locale } = router;
 
-  console.log(hero.videoUrl)
-
   const heroProps = {
     heading: (
       <Trans
@@ -36,5 +34,3 @@ const Hero = () => {
 };
 
 export { Hero };
-
-
