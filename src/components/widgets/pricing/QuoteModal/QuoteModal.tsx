@@ -20,6 +20,7 @@ import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { IPhoneInputRef } from "@src/components/widgets/PhoneInput";
 import { PhoneInput } from "@src/components/widgets/PhoneInput";
 import { validateFullName, validateEmail } from "@src/utils/validators";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const QuoteModal = <T,>({
   locale,
@@ -34,6 +35,7 @@ const QuoteModal = <T,>({
   buttonLabel,
   onSubmitRequest,
   onClose,
+  pageTrackName,
 }: IQuoteModal<T>) => {
   const { t } = useTranslation("PricingQuoteModal");
   const from = getFromParam();
@@ -44,6 +46,8 @@ const QuoteModal = <T,>({
 
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
+
+  const pageTrack = usePageTrack();
 
   const [isEmpty, setIsEmpty] = useState({
     fullName: false,
@@ -133,11 +137,11 @@ const QuoteModal = <T,>({
       const region = countryInfo?.salesRegion || "";
 
       const onSubmitRequestData = await onSubmitRequest({
-        from,
-        country,
-        region,
+          from,
+          country,
+          region,
         hCaptchaResponse: quoteFormData.hCaptcha,
-      });
+        });
 
       if (onSubmitRequestData.status === "errorHCaptchaInvalid") {
         setFormStatus("error");
@@ -146,6 +150,7 @@ const QuoteModal = <T,>({
         }, 5000);
         return;
       } else if (onSubmitRequestData.status === "success") {
+        pageTrack(pageTrackName);
         setFormStatus("success");
 
         setTimeout(() => {
