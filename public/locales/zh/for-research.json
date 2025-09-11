@@ -7,14 +7,14 @@
   "HeadingUsers": "深受全球15 000 000余名用户信赖",
 
   "ResearchHead1": "在<0>ONLYOFFICE协作空间</0>的协作房间中连接研究论文、科学家和联盟合作伙伴",
-  "ResearchFeature1": "在协作房间中共同处理论述、专着、研究规范等，表单填写房间，可收集数据和回复或为任何其他目的创建可灵活设置的自定义房间。让其他人在公共房间中，无需注册即可查看文档。",
+  "ResearchFeature1": "创建协作房间，协作处理论述、专着、研究规范等；在表单填写房间中，收集数据并分析；或为任何其他目的创建自定义房间，并灵活设置访问权限；在公共房间中，外部用户无需注册即可查看文档。",
   "ResearchFeature12": "轻松与其他机构和组织的人员、联盟合作伙伴和分包商共享创建的房间。",
   "ResearchFeature13": "使用安全设置限制访问权限，来保护机密的研究数据。",
   "ResearchImgUrl": "/images/templates/for-research/features/research_docspace.svg",
   "UseItForFree": "免费使用",
   "LearnMore": "了解更多",
 
-  "FeaturesIconsHeading": "在线建立想法并对其进行编辑与协作",
+  "FeaturesIconsHeading": "在ONLYOFFICE文档中在线<0>创建、编辑并协作</0>",
   "FeatureHead1": "创建手稿",
   "FeatureText1": "使用多种样式和格式化工具、符号表，对象、目录、书签、方程。",
   "FeatureHead2": "更正文本和编辑图像",
@@ -23,8 +23,8 @@
   "FeatureText3": "借助集成式的Zotero或Mendeley插件创建并管理引用。",
   "FeatureHead4": "分析数据并对其进行可视化",
   "FeatureText4": "使用400+函数和公式，含数学、逻辑学与统计学领域的公式、方程以及各种图表类型。通过宏自动执行重复任务",
-  "FeatureHead5": "制作研究报告",
-  "FeatureText5": "使用多种格式化工具与样式选项、对象、音频以及视频。启用演示者模式以保留演讲者笔记。",
+  "FeatureHead5": "制作研究幻灯片",
+  "FeatureText5": "使用多种格式化工具、样式选项、对象、音频和视频。启用演讲者模式以保留演讲者笔记。",
   "FeatureHead6": "协作并跟踪变更",
   "FeatureText6": "将您的作品与共同作者分享，还可提供多种级别的访问权限。可切换使用实时与段落锁定的协同编辑模式。在文档中留下评论或进行聊天，查看并轻松比较两个文档，跟踪共同作者的编辑并恢复任何以前的版本。",
 
@@ -42,7 +42,7 @@
   "HrefBlogTools" : "https://www.onlyoffice.com/blog/2018/05/how-onlyoffice-complies-with-gdpr/",
   "LearnMoreTools": "了解更多",
 
-  "FeaturesReasonsHeading": "三大在您的学术机构中使用ONLYOFFICE的理由",
+  "FeaturesReasonsHeading": "在您的机构中使用ONLYOFFICE的<0>3大理由</0>",
   "ReasonsHead": "适用于任何基础架构的灵活工具",
   "ConnectONLYOFFICEDocs": "连接至您习惯使用的平台",
   "ONLYOFFICEDocsEasily": "ONLYOFFICE可轻松集成至您的基础研究架构中。我们针对流行的云服务提供了即用型连接器，允许在您已拥有的平台内使用功能强大的在线文档编辑器。",

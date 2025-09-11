@@ -49,7 +49,7 @@
     "ShareFilesWithUsersWithout": "与没有加密凭据的用户共享文件",
 
     "GettingStarted": "开始使用",
-    "DeployTheLatest": "<strong>步骤 1.</strong> 在您自己的服务器上部署最新版本的ONLYOFFICE工作区 (<0>社区版</0> <1>或</1>企业版)。",
+    "DeployTheLatest": "<strong>步骤 1.</strong> 在您自己的服务器上部署最新版本的ONLYOFFICE工作区(<0>社区版</0>或<1>企业版</1>)。",
     "EnablePrivateRooms": "<strong>步骤 2.</strong>在控制面板的门户设置中启用私密房间。",
     "InstallTheLatest": "<strong>步骤 3.</strong> 安装最新版本的<0>ONLYOFFICE桌面编辑器</0>。",
     "ConnectTheDesktop": "<strong>步骤 4.</strong>在“连接到云”中将桌面应用程序连接至ONLYOFFICE实例。",
@@ -61,7 +61,8 @@
     "ProtectYourSensitive": "立即使用ONLYOFFICE来保护您的敏感文档",
     "TryNow": "立即试用",
 
-    "WhatAreTheScenarios": "使用私密房间的案例有哪些？",
+    "FrequentlyAskedQuestions": "常见问题",
+    "WhatAreTheScenarios": "私密房间的使用场景是什么？",
     "PrivateRoomsAreTheSpace": "私密房间是一个空间，每一个数据都是加密的，包括存储、编辑和协作的状态。我们建议在处理所有敏感文件时使用私密房间，该功能提供了最终的数据保护，甚至可以防止未经授权的人进入文件管理系统或服务器本身。",
     "WhatIsEncrypted": "什么是 “加密的实时共同编辑”?",
     "PrivateRoomsMechanics": "私密房间机制包括加密形式的文件协作。对文件所做的每一个改动都会使用相同的算法单独加密，发送到服务器上，并在合作者的机器上解密。",

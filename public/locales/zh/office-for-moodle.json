@@ -75,6 +75,8 @@
   "HowToStartStep4": "配置已安装的插件。",
   "HowToConnect": "将 ONLYOFFICE Docs 与 Moodle 连接",
   "ReadDetailedInstructions": "在 <0>帮助中心</0> 阅读详细说明",
+  "Tab1Label": "文档",
+  "Tab2Label": "协作空间",
 
   "HowToStartStep1_1": "登录您的协作空间帐户。<0>在云端创建免费帐户</0>或<1>部署自托管版本</1>。",
   "HowToStartStep2_1": "配置您的协作空间平台。",
