@@ -5,6 +5,7 @@ import { items } from "./data/items";
 import { FeatureItem } from "./sub-components/FeatureItem";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Features = () => {
   const { t } = useTranslation("contribute");
@@ -24,7 +25,7 @@ const Features = () => {
             <FeatureItem
               key={index}
               icon={{
-                url: item.icon.url,
+                url: getAssetUrl(item.icon.url),
                 positionX: item.icon.positionX,
                 mobilePositionX: item.icon.mobilePositionX,
               }}

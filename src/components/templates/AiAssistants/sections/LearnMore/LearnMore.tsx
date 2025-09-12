@@ -8,6 +8,7 @@ import { Container } from "@src/components/ui/Container";
 import { BlogCard } from "@src/components/widgets/BlogCard";
 import { items } from "./data/items";
 import { useRouter } from "next/router";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const LearnMore = () => {
   const { t } = useTranslation("ai-assistants");
@@ -26,7 +27,7 @@ const LearnMore = () => {
             <BlogCard
               className="blog-card"
               key={index}
-              imgUrl={locale.locale === "zh" ? (item.zhImgUrl || item.imgUrl) : item.imgUrl}
+              imgUrl={locale.locale === "zh" ? (item.zhImgUrl ? getAssetUrl(item.zhImgUrl) : getAssetUrl(item.imgUrl)) : getAssetUrl(item.imgUrl)}
               heading={{ label: t(item.heading.label) }}
               text={t(item.text ?? "")}
               links={item.links?.map((item) => ({

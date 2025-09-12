@@ -280,7 +280,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                       head={t(item.head)}
                       title={t(item.title)}
                       date={item.date}
-                      download_url={getAssetUrl(t(item.download_url))}
+                      download_url={(t(item.download_url))}
                       description={t(item.description)}
                       locale={locale}
                       id_url={item.id_url}
@@ -301,8 +301,8 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                         key={item.id}
                         title={t(item.title)}
                         product={t(item.product)}
-                        image_url={item.image_url}
-                        download_url={getAssetUrl(t(item.download_url))}
+                        image_url={getAssetUrl(item.image_url)}
+                        download_url={t(item.download_url)}
                         displayOther={index < dataSheetsDisplayCount}
                         locale={locale}
                         id_url={item.id_url}
@@ -315,8 +315,8 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                       key={item.id}
                       title={t(item.title)}
                       product={t(item.product)}
-                      image_url={item.image_url}
-                      download_url={getAssetUrl(t(item.download_url))}
+                      image_url={getAssetUrl(item.image_url)}
+                      download_url={t(item.download_url)}
                       displayOther={index < dataSheetsDisplayCount}
                       locale={locale}
                       id_url={item.id_url}
