@@ -58,7 +58,7 @@
   "NameSurname": "Name Surname",
   "FullNameIsEmpty": "Le champ Nom complet est vide",
   "FullNameIsIncorrect": "Le champ Nom complet est incorrecte",
-  "Email": "Adresse e-mail*",
+  "Email": "Adresse e-mail",
   "Name": "name@domain.com",
   "EmailIsEmpty": "Le champ Email est vide",
   "EmailIsIncorrect": "L'adresse email est incorrecte",

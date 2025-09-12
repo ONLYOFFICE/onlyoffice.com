@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
@@ -26,10 +27,28 @@ export default async function handler(
     company,
     id_url,
     languageCode,
-    from
+    from,
+    hCaptchaResponse,
   } = req.body;
 
   try {
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
+
     const errorMessages = [];
     const cookies = parse(req.headers.cookie || "");
 
@@ -41,7 +60,7 @@ export default async function handler(
           company_name: company,
           product: id_url,
           lang: languageCode,
-        }
+        };
 
         await db.teamlabsite.query("INSERT INTO whitepapers_request SET ?", [
           addWhitePapersData,
@@ -69,7 +88,7 @@ export default async function handler(
     if (addWhitePapersDataResult.status === "error") {
       errorMessages.push(
         `whitepapersRequest: ${addWhitePapersDataResult.message}`,
-      )
+      );
     }
 
     const transporter = emailTransporter();

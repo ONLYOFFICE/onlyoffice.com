@@ -10,7 +10,14 @@ import { IHCaptcha } from "./HCaptcha.types";
 
 const HCaptcha = forwardRef<ReactHCaptcha, IHCaptcha>(
   (
-    { size = "normal", onVerify, onExpire, position, error }: IHCaptcha,
+    {
+      sitekey = process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY!,
+      size = "normal",
+      onVerify,
+      onExpire,
+      position,
+      error
+    }: IHCaptcha,
     ref,
   ) => {
     const router = useRouter();
@@ -20,7 +27,7 @@ const HCaptcha = forwardRef<ReactHCaptcha, IHCaptcha>(
         <StyledHCaptchaWrapper $position={position}>
           <ReactHCaptcha
             ref={ref}
-            sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY!}
+            sitekey={sitekey}
             languageOverride={router.locale}
             size={size}
             onVerify={onVerify}

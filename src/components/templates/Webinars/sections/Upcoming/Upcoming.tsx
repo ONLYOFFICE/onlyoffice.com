@@ -37,7 +37,7 @@ const Upcoming = ({ webinars, locale }: ILocale & IWebinars) => {
               key={item.id}
               date={formatWebinarsDate(item.date, locale)}
               dateWithHours={formatWebinarsDateWithHours(item.date, locale)}
-              language={item.language}
+              webinarLang={item.language}
               title={item.title}
               description={item.description}
               link={item.watch_link}
@@ -45,6 +45,7 @@ const Upcoming = ({ webinars, locale }: ILocale & IWebinars) => {
               image={item.speaker_image}
               product={item.product}
               isUpcomingWebinar={true}
+              locale={locale}
             />
           ))}
         </StyledUpcomingList>

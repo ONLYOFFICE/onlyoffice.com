@@ -52,6 +52,7 @@ const Hero = ({ locale }: ILocale) => {
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-workspace", {
       method: "POST",
@@ -70,6 +71,7 @@ const Hero = ({ locale }: ILocale) => {
         from,
         country,
         region,
+        hCaptchaResponse,
       }),
     }).then((res) => res.json());
   };
@@ -238,6 +240,7 @@ const Hero = ({ locale }: ILocale) => {
         onClose={() => setIsModalOpen(false)}
         onSubmitRequest={onSubmitRequest}
         buttonAction={buttonAction}
+        pageTrackName={formData.buttonId}
       />
     </>
   );

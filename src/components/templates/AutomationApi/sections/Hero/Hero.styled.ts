@@ -61,6 +61,15 @@ const StyledHeroHeading = styled(Heading)`
     font-size: 30px;
     line-height: 40px;
   }
+
+  @media ${device.mobileS} {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  & > .nowrap {
+    white-space: nowrap;
+  }
 `;
 
 const StyledHeroSubheading = styled(Heading)`

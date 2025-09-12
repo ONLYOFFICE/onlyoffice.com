@@ -20,7 +20,7 @@
   "Feature4Title": "Versionsverlauf durchsuchen",
   "Feature4Desc": "Vergleichen Sie die Dokumentversionen, stellen Sie Versionen und versehentlich verlorene Inhalte wieder her. Daten, Uhrzeiten und Autoren von Dokumentrevisionen werden angezeigt.",
 
-  "Feature5Title": "Combine documents",
+  "Feature5Title": "Dokumente kombinieren",
   "Feature5Desc": "Das Kombinieren von Dokumenten ist ähnlich wie der Vergleich. Beim Kombinieren von zwei Dokumenten bleiben jedoch die ungelösten, nachverfolgten Änderungen nach der Überprüfung durch eine andere Person in der zusammengeführten Datei erhalten, und Sie können diese bei Bedarf annehmen oder ablehnen.",
 
   "Feature1ImgUrl": "/images/templates/compare-documents/features/de/pic1.png",
