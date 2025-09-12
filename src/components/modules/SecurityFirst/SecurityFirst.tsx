@@ -12,6 +12,7 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const items = [
   { label: "OpenSourceCodeAvailableOnGithub" },
@@ -35,8 +36,8 @@ const SecurityFirst = ({ id, className }: ISecurityFirst) => {
       <Container maxWidth="1240px">
         <StyledSecurityFirst>
           <StyledSecurityFirstImage
-            $image={t("SecurityFirstImage")}
-            $image2x={t("SecurityFirstImage2x")}
+            $image={getAssetUrl(t("SecurityFirstImage"))}
+            $image2x={getAssetUrl(t("SecurityFirstImage2x"))}
           />
           <StyledSecurityFirstContent>
             <Heading level={2} size={2} color="#ffffff">
