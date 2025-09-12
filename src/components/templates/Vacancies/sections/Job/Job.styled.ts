@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledJobHeadingWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -81,7 +82,7 @@ const StyledJobSelectorOption = styled.li<{
       top: 50%;
       left: 16px;
       transform: translateY(-50%);
-      background-image: url("/images/icons/cross.svg");
+      background-image: url(${getAssetUrl('/images/icons/cross.svg')});
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -105,7 +106,7 @@ const StyledJobSelectorButton = styled(Button)<{
     right: 0;
     transform: translateY(-50%) rotate(${({ $isOpen }) => ($isOpen ? "180deg" : "0deg")});
     transition-duration: 300ms;
-    background-image: url("/images/icons/chevron-down.svg");
+    background-image: url(${getAssetUrl('/images/icons/chevron-down.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

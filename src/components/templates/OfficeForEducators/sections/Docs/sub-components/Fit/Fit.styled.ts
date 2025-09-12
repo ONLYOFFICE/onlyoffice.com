@@ -5,6 +5,7 @@ import { device } from "@src/utils/device";
 import styled from "styled-components";
 import { IFit } from "./Fit.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFitWrapper = styled.div`
   padding: 72px 0;
   text-align: center;
@@ -33,7 +34,7 @@ const StyledFitTitle = styled(Heading)`
     transform: translateX(-50%);
     width: 120px;
     height: 64px;
-    background-image: url("/images/templates/office-for-educators/sprites/icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-educators/sprites/icons.svg')});
     background-repeat: no-repeat;
     background-position: -20px center;
 
@@ -106,7 +107,7 @@ const StyledConnector = styled(Link)<{
   min-width: ${({ $desktopWidth }) => $desktopWidth};
   max-width: ${({ $desktopWidth }) => $desktopWidth};
   height: 48px;
-  background-image: url("/images/templates/office-for-educators/sprites/logos.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-educators/sprites/logos.svg')});
   background-repeat: no-repeat;
   background-position: ${({ $desktopPositionX }) => $desktopPositionX} center;
   filter: grayscale(1);

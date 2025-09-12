@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   themeColors,
   IThemeColors,
@@ -49,7 +50,7 @@ const StyledSelectFileHeading = styled(Heading)<{
         margin-right: 10px;
         width: 32px;
         height: 32px;
-        background-image: url("/images/modules/converter/hero/formats.svg");
+        background-image: url(${getAssetUrl('/images/modules/converter/hero/formats.svg')});
 
         ${props.$theme === "text"
           ? css`

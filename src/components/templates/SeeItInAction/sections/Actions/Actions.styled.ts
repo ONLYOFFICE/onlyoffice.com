@@ -5,6 +5,7 @@ import { Button } from "@src/components/ui/Button";
 import { Container } from "@src/components/ui/Container";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledActionsSection = styled(Section)`
   border-bottom: 1px solid #C4C4C4;
 `
@@ -27,7 +28,7 @@ const StyledActionsButtonWrapper = styled.div`
 const StyledActionsButton = styled(Button)`
   width: 56px;
   height: 36px;
-  background-image: url("/images/templates/see-it-in-action/actions/close-tag.svg");
+  background-image: url(${getAssetUrl('/images/templates/see-it-in-action/actions/close-tag.svg')});
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;

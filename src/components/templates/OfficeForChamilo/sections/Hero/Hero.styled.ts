@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #397ca8;
-  background-image: url("/images/templates/office-for-chamilo/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-chamilo/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: center;
 
@@ -41,7 +42,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 62px;
   height: 56px;
-  background-image: url("/images/templates/office-for-chamilo/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-chamilo/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

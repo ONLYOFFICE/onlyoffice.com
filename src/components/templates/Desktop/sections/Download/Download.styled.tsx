@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const ButtonRow = styled.div`
   display: flex;
   flex-direction: row;
@@ -29,7 +30,7 @@ const ButtonRow = styled.div`
 
 const StyledSection = styled(Section)`
   background:
-    url("/images/templates/desktop/download/bg.svg") center/cover no-repeat,
+    url(${getAssetUrl('/images/templates/desktop/download/bg.svg')}) center/cover no-repeat,
     linear-gradient(162.82deg, #ffc671 0%, #ff7541 64.06%, #ff6f3d 100%);
   text-align: center;
 `;

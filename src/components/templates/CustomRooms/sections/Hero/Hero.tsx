@@ -4,6 +4,7 @@ import { RoomsHeroVideo } from "@src/components/modules/rooms/RoomsHeroVideo";
 import { RoomsHero } from "@src/components/modules/rooms/RoomsHero";
 import { hero } from "./data/hero";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface HeroProps {
   locale?: string;
 }
@@ -24,7 +25,7 @@ const Hero = ({ locale }: HeroProps) => {
       label: t(String(label)),
     })),
     button: { ...hero.button, label: t(hero.button.label) },
-    image: { url: t(hero.image.url), url2x: t(hero.image.url2x) },
+    image: { url: getAssetUrl(t(hero.image.url)), url2x: getAssetUrl(t(hero.image.url2x)) },
   };
 
   if (locale === "zh") {

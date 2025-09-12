@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Uporedi dokumenta | ONLYOFFICE",
+  "PageDescription": "Uporedite dva dokumenta i pronađite razlike uz ONLYOFFICE. Izaberite bilo koji dokument sa računara, cloud skladišta ili URL-a da vidite razlike u odnosu na trenutni fajl.",
+  "Header": "Uporedi dokumenta",
+  "SubHeader": "Pronađite razlike, unesite ispravke i finalizujte tekst pomoću funkcije za poređenje dokumenata",
+
+  "HeroImgUrl": "/images/templates/compare-documents/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/compare-documents/hero/hero@2x.png",
+
+  "Feature1Title": "Uporedite dva dokumenta i pronađite razlike",
+  "Feature1Desc": "Izaberite bilo koji dokument sa računara, cloud skladišta ili URL-a da biste videli razlike u odnosu na trenutni fajl.",
+
+  "Feature2Title": "Krećite se kroz označene izmene",
+  "Feature2Desc": "Poređenje dokumenata omogućava upoređivanje dva Word dokumenta i isticanje razlika uz aktiviran režim Praćenja promena. Krećite se između njih i brzo pregledajte dokument sa svim prihvaćenim ili odbijenim izmenama.",
+
+  "Feature3Title": "Spojite verzije fajlova",
+  "Feature3Desc": "Prihvatite ili odbijte izmene pojedinačno ili odjednom, čime se dokumenti spajaju i finalizuje verzija upoređenog fajla.",
+
+  "Feature4Title": "Pregledajte istoriju verzija",
+  "Feature4Desc": "Uporedite trenutne i prethodne verzije dokumenata, vratite dokument u bilo kom trenutku njegove istorije i pronađite slučajno izgubljen sadržaj. Pogledajte datume, vreme i autore revizija dokumenta.",
+
+  "Feature5Title": "Kombinujte dokumente",
+  "Feature5Desc": "Kombinovanje dokumenata je slično poređenju. Međutim, prilikom kombinovanja dva dokumenta, početne nerešene promene nakon nečije revizije ostaće u spojenom fajlu, a vi ćete ih moći prihvatiti ili odbiti po potrebi.",
+
+  "Feature1ImgUrl": "/images/templates/compare-documents/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/compare-documents/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/compare-documents/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/compare-documents/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/compare-documents/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/compare-documents/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/compare-documents/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/compare-documents/features/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/compare-documents/features/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/compare-documents/features/pic5@2x.png"
+}

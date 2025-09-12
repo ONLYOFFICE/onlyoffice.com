@@ -4,12 +4,13 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContactBlock = styled.div`
     position: relative;
 
     &::after {
         content: '';
-        background-image: url("/images/templates/document-builder/contact-block/enterprise_level.svg");
+        background-image: url(${getAssetUrl('/images/templates/document-builder/contact-block/enterprise_level.svg')});
         background-repeat: no-repeat;
         background-position: 0 0;
         position: absolute;

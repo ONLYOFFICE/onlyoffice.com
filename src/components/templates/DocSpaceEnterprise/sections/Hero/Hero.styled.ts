@@ -3,10 +3,11 @@ import styled from "styled-components";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   position: relative;
   z-index: 1;
-  background-image: url("/images/templates/docspace-enterprise/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/docspace-enterprise/hero/bg.svg')});
   background-repeat: no-repeat;
   background-size: 3574px auto;
   background-position: 65% 0px;
@@ -16,7 +17,7 @@ const StyledHero = styled(Section)`
 
   @media ${device.tablet} {
     margin-top: -64px;
-    background-image: url("/images/templates/docspace-enterprise/hero/bg_mob.svg");
+    background-image: url(${getAssetUrl('/images/templates/docspace-enterprise/hero/bg_mob.svg')});
     background-size: 3030px auto;
     background-position: 53% 97%;
   }

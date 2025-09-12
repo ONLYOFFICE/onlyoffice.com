@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFeaturesHeading = styled(Heading)`
   max-width: 696px;
   margin: 0 auto;
@@ -52,7 +53,7 @@ const StyledConverterWrapper = styled.div`
 const StyledConverterImage = styled.div`
   width: 392px;
   height: 192px;
-  background-image: url("/images/templates/conversion-api/features/document-converter.svg");
+  background-image: url(${getAssetUrl('/images/templates/conversion-api/features/document-converter.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 

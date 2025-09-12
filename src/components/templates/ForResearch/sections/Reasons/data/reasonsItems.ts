@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IReasonsItems {
   href: string,
   imageUrl: string,
@@ -10,7 +11,7 @@ interface IReasonsItems {
 export const reasonsItems: IReasonsItems[] = [
   {
     href: "/office-for-nextcloud?from=for-research",
-    imageUrl: '/images/templates/for-research/reasons/research_connectors.svg',
+    imageUrl: getAssetUrl('/images/templates/for-research/reasons/research_connectors.svg'),
     width: '83px',
     mobileWidth: '52px',
     backgroundPositionX: "0",
@@ -18,7 +19,7 @@ export const reasonsItems: IReasonsItems[] = [
   },
   {
     href: "/all-connectors#seafile",
-    imageUrl: '/images/templates/for-research/reasons/research_connectors.svg',
+    imageUrl: getAssetUrl('/images/templates/for-research/reasons/research_connectors.svg'),
     width: '155px',
     mobileWidth: '96px',
     backgroundPositionX: "-196px",
@@ -26,7 +27,7 @@ export const reasonsItems: IReasonsItems[] = [
   },
   {
     href: "/office-for-owncloud",
-    imageUrl: '/images/templates/for-research/reasons/research_connectors.svg',
+    imageUrl: getAssetUrl('/images/templates/for-research/reasons/research_connectors.svg'),
     width: '107px',
     mobileWidth: '66px',
     backgroundPositionX: "-460px",
@@ -34,7 +35,7 @@ export const reasonsItems: IReasonsItems[] = [
   },
   {
     href: "/office-for-sharepoint?from=for-research",
-    imageUrl: '/images/templates/for-research/reasons/research_connectors.svg',
+    imageUrl: getAssetUrl('/images/templates/for-research/reasons/research_connectors.svg'),
     width: '160px',
     mobileWidth: '100px',
     backgroundPositionX: "-638px",
@@ -42,7 +43,7 @@ export const reasonsItems: IReasonsItems[] = [
   },
   {
     href: "/all-connectors#moodle",
-    imageUrl: '/images/templates/for-research/reasons/research_connectors.svg',
+    imageUrl: getAssetUrl('/images/templates/for-research/reasons/research_connectors.svg'),
     width: '120px',
     mobileWidth: '76px',
     backgroundPositionX: "-890px",
@@ -50,7 +51,7 @@ export const reasonsItems: IReasonsItems[] = [
   },
   {
     href: "/office-for-alfresco?from=for-research",
-    imageUrl: '/images/templates/for-research/reasons/research_connectors.svg',
+    imageUrl: getAssetUrl('/images/templates/for-research/reasons/research_connectors.svg'),
     width: '150px',
     mobileWidth: '96px',
     backgroundPositionX: "-1118px",
@@ -58,7 +59,7 @@ export const reasonsItems: IReasonsItems[] = [
   },
   {
     href: "/all-connectors#nuxeo",
-    imageUrl: '/images/templates/for-research/reasons/research_connectors.svg',
+    imageUrl: getAssetUrl('/images/templates/for-research/reasons/research_connectors.svg'),
     width: '125px',
     mobileWidth: '80px',
     backgroundPositionX: "-1358px",
@@ -66,7 +67,7 @@ export const reasonsItems: IReasonsItems[] = [
   },
   {
     href: "/office-for-humhub",
-    imageUrl: '/images/templates/for-research/reasons/research_connectors.svg',
+    imageUrl: getAssetUrl('/images/templates/for-research/reasons/research_connectors.svg'),
     width: '145px',
     mobileWidth: '93px',
     backgroundPositionX: "-1580px",
@@ -74,7 +75,7 @@ export const reasonsItems: IReasonsItems[] = [
   },
   {
     href: "/all-connectors#liferay",
-    imageUrl: '/images/templates/for-research/reasons/research_connectors.svg',
+    imageUrl: getAssetUrl('/images/templates/for-research/reasons/research_connectors.svg'),
     width: '120px',
     mobileWidth: '78px',
     backgroundPositionX: "-1832px",

@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFeaturesHeader = styled.div`
   display: grid;
   row-gap: 24px;
@@ -13,7 +14,7 @@ const StyledFeaturesHeader = styled.div`
   position: relative;
 
   &::before {
-    background-image: url("/images/templates/technology-partners/heading-icons/tech-h-icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/technology-partners/heading-icons/tech-h-icons.svg')});
     background-position: -4px -4px;
     content: "";
     height: 56px;
@@ -60,7 +61,7 @@ const StyledFeatureItem = styled.div`
   &::before {
     content: "";
     position: absolute;
-    background-image: url("/images/templates/technology-partners/features/tech-in-icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/technology-partners/features/tech-in-icons.svg')});
     background-position: 0 0;
     top: 0;
     left: 0;

@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #6b4d65;
-  background-image: url("/images/templates/office-for-odoo/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-odoo/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -36,7 +37,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 127px;
   height: 40px;
-  background-image: url("/images/templates/office-for-odoo/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-odoo/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

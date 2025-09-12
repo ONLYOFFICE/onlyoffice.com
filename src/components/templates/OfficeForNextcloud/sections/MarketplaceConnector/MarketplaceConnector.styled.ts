@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background-color: #01679e;
   overflow: hidden;
@@ -40,7 +41,7 @@ const StyledMarketplaceConnectorImg = styled.div`
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url("/images/templates/office-for-nextcloud/marketplace-connector/app.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-nextcloud/marketplace-connector/app.svg')});
     background-repeat: no-repeat;
     background-position: center;
     background-size: 545px 468px;
@@ -58,7 +59,7 @@ const StyledMarketplaceConnectorImg = styled.div`
     right: -190px;
     width: 1144px;
     height: 331px;
-    background-image: url("/images/templates/office-for-nextcloud/marketplace-connector/bg.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-nextcloud/marketplace-connector/bg.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     pointer-events: none;
@@ -68,7 +69,7 @@ const StyledMarketplaceConnectorImg = styled.div`
       right: -16px;
       width: 280px;
       height: 172px;
-      background-image: url("/images/templates/office-for-nextcloud/marketplace-connector/bg-mobile.svg");
+      background-image: url(${getAssetUrl('/images/templates/office-for-nextcloud/marketplace-connector/bg-mobile.svg')});
     }
   }
 `;

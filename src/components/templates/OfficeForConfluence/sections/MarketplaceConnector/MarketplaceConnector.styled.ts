@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background-color: #1c48aa;
   overflow: hidden;
@@ -20,7 +21,7 @@ const StyledMarketplaceConnectorWrapper = styled.div`
     right: -274px;
     width: 480px;
     height: 388px;
-    background-image: url("/images/templates/office-for-confluence/marketplace-connector/bg.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-confluence/marketplace-connector/bg.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     pointer-events: none;
@@ -59,7 +60,7 @@ const StyledMarketplaceConnectorBody = styled.div`
 
 const StyledMarketplaceConnectorImg = styled.div`
   min-height: 440px;
-  background-image: url("/images/templates/office-for-confluence/marketplace-connector/app.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-confluence/marketplace-connector/app.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

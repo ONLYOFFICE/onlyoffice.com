@@ -5,6 +5,7 @@ import { ICardProps } from "@src/components/templates/Vacancies/Vacancies.types"
 import { Button } from "@src/components/ui/Button";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const CardItem = styled.li`
   background-color: #fff;
   box-shadow: 0 7px 15px rgba(85, 85, 85, 0.15);
@@ -75,7 +76,7 @@ const CardInfoLocation = styled(Text)`
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url("/images/icons/location.svg");
+    background-image: url(${getAssetUrl('/images/icons/location.svg')});
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -94,7 +95,7 @@ const CardInfoTime = styled(Text)`
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url("/images/icons/clock.svg");
+    background-image: url(${getAssetUrl('/images/icons/clock.svg')});
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -144,7 +145,7 @@ const CardRequirementsList = styled.ul`
 
 const CardRequirementsItem = styled.li`
   list-style-type: auto;
-  list-style-image: url("/images/icons/rectangle-orange.svg");
+  list-style-image: url(${getAssetUrl('/images/icons/rectangle-orange.svg')});
   list-style-position: inside;
   line-height: 1.6em;
 
@@ -165,7 +166,7 @@ const CardSkillsList = styled.ul`
 
 const CardSkillsItem = styled.li`
   list-style-type: auto;
-  list-style-image: url("/images/icons/rectangle-orange.svg");
+  list-style-image: url(${getAssetUrl('/images/icons/rectangle-orange.svg')});
   list-style-position: inside;
   line-height: 1.6em;
 
@@ -187,7 +188,7 @@ const CardBenefitsList = styled.ul`
 
 const CardBenefitsItem = styled.li`
   list-style-type: auto;
-  list-style-image: url("/images/icons/rectangle-dark.svg");
+  list-style-image: url(${getAssetUrl('/images/icons/rectangle-dark.svg')});
   list-style-position: inside;
   line-height: 1.6em;
 
@@ -208,7 +209,7 @@ const CardOpenButton = styled(Button)<{
   height: 24px;
   min-height: auto;
   padding: 0;
-  background-image: url("/images/icons/chevron-down.svg");
+  background-image: url(${getAssetUrl('/images/icons/chevron-down.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

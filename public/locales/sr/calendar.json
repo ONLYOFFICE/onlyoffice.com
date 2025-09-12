@@ -1,0 +1,26 @@
+{
+  "PageTitle": "Alat za upravljanje vremenom za bolju organizaciju | ONLYOFFICE",
+  "PageDescription": "Kreirajte svoj lični i timski raspored, lako upravljajte kalendarskim događajima.",
+
+  "HeroTitle": "Efikasan alat za upravljanje vremenom",
+  "HeroText": "Održavajte svoj tim organizovanim i produktivnim",
+  "HeroImage": "/images/templates/calendar/hero/hero_image.png",
+  "HeroImage2x": "/images/templates/calendar/hero/hero_image@2x.png",
+  "GetItNow": "Preuzmite odmah",
+
+  "IndividualOrGroup": "Pojedinačni ili grupni kalendar",
+  "IndividualOrGroupText": "Kreirajte lične rasporede i <0>delite kalendare</0>, uz mogućnost davanja pristupa određenoj osobi ili zakazivanja grupnih sastanaka.",
+  "IndividualOrGroupImage": "/images/templates/calendar/features/en/individual_or_group.png",
+  "SimpleScheduling": "Jednostavno zakazivanje sa različitim tipovima događaja",
+  "SimpleSchedulingText": "Kreirajte celodnevne, višednevne i ponavljajuće događaje. Dodajte zadatke u raspored. Šaljite pozivnice bilo kom korisniku. Koristite podsetnike da ništa ne propustite.",
+  "SimpleSchedulingImage": "/images/templates/calendar/features/en/simple_scheduling.png",
+  "Synchronization": "Sinhronizacija sa aplikacijama trećih strana",
+  "SynchronizationText": "Uvezite događaje, dodajte iCal feed sa Google-a, Apple iCal-a ili Yahoo!-a, sinhronizujte svoj kalendar pomoću CalDAV protokola i pratite sve na jednom mestu.",
+  "SynchronizationImage": "/images/templates/calendar/features/en/synchronization.png",
+  "CloseIntegration": "Bliska integracija sa svim ONLYOFFICE modulima",
+  "CloseIntegrationText": "Pratite svoje prekretnice, projekte i CRM zadatke. Primajte obaveštenja o predstojećim rođendanima. Šaljite i primajte pozivnice za važne kalendarske događaje.",
+  "CloseIntegrationImage": "/images/templates/calendar/features/en/close_integration.png",
+
+  "EasyToUse": "Jednostavan softver za korišćenje sa nizom funkcija za poslovnu saradnju.",
+  "PcMag": "PC Mag"
+}

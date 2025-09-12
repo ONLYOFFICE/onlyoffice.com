@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #f4f8fd;
-  background-image: url("/images/templates/office-for-redmine/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-redmine/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: calc(50% - 96px) -380px;
   background-size: 2657px 2132px;
@@ -48,7 +49,7 @@ export const StyledHeroLogo = styled.div`
   margin-bottom: 6px;
   width: 70px;
   height: 48px;
-  background: url("/images/templates/office-for-redmine/hero/logo.svg")
+  background: url(${getAssetUrl('/images/templates/office-for-redmine/hero/logo.svg')})
     no-repeat center;
   background-size: contain;
 

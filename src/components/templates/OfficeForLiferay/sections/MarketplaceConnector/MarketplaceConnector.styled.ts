@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background-color: #0b63ce;
   overflow: hidden;
@@ -14,8 +15,8 @@ const StyledMarketplaceConnector = styled.section`
     top: 50%;
     width: 100%;
     background-image:
-      url("/images/templates/office-for-liferay/marketplace-connector/bg.svg"),
-      url("/images/templates/office-for-liferay/marketplace-connector/bg.svg");
+      url(${getAssetUrl('/images/templates/office-for-liferay/marketplace-connector/bg.svg')}),
+      url(${getAssetUrl('/images/templates/office-for-liferay/marketplace-connector/bg.svg')});
     background-position-y:
       100px,
       -235px;
@@ -26,7 +27,7 @@ const StyledMarketplaceConnector = styled.section`
     pointer-events: none;
 
     @media ${device.desktop} {
-      background-image: url("/images/templates/office-for-liferay/marketplace-connector/bg.svg");
+      background-image: url(${getAssetUrl('/images/templates/office-for-liferay/marketplace-connector/bg.svg')});
       background-size: contain;
       background-position: center;
       left: calc(50% - 888px);
@@ -88,7 +89,7 @@ const StyledMarketplaceConnectorBody = styled.div`
 const StyledMarketplaceConnectorImg = styled.div`
   width: 544px;
   height: 100%;
-  background-image: url("/images/templates/office-for-liferay/marketplace-connector/apps.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-liferay/marketplace-connector/apps.svg')});
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;

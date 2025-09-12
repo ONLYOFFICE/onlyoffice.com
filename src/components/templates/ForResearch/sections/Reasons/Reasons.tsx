@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledReasonsWrapper,
   StyledReasonsContent,
@@ -29,8 +30,8 @@ const items = [
 
 const Reasons = () => {
   const { t } = useTranslation("for-research");
-  const logo1 = '/images/templates/for-research/reasons/logo_comment_1.svg'; 
-  const logo2 = '/images/templates/for-research/reasons/logo_comment_2.svg'; 
+  const logo1 = getAssetUrl('/images/templates/for-research/reasons/logo_comment_1.svg'); 
+  const logo2 = getAssetUrl('/images/templates/for-research/reasons/logo_comment_2.svg'); 
 
   return (
     <Section

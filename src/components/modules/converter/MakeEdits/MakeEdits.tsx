@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledMakeEditsWrapper,
   StyledMakeEditsImage,
@@ -32,8 +33,8 @@ const MakeEdits = () => {
         </StyledMakeEditsWrapper>
 
         <StyledMakeEditsImage
-          $imageUrl={t("MakeEditsImageUrl")}
-          $image2xUrl={t("MakeEditsImage2xUrl")}
+          $imageUrl={getAssetUrl(t("MakeEditsImageUrl"))}
+          $image2xUrl={getAssetUrl(t("MakeEditsImage2xUrl"))}
         />
       </Container>
     </Section>

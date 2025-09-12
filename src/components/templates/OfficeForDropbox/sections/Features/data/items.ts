@@ -1,45 +1,46 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IFeatureItem[] = [
   {
     icon: {
-      url: "/images/templates/office-for-dropbox/features/robust-set.svg",
+      url: getAssetUrl("/images/templates/office-for-dropbox/features/robust-set.svg"),
     },
     text: "FeaturesRobustSet",
   },
   {
     icon: {
-      url: "/images/templates/office-for-dropbox/features/familiar-interface.svg",
+      url: getAssetUrl("/images/templates/office-for-dropbox/features/familiar-interface.svg"),
     },
     text: "FeaturesFamiliarInterface",
   },
   {
     icon: {
-      url: "/images/templates/office-for-dropbox/features/ai-helper.svg",
+      url: getAssetUrl("/images/templates/office-for-dropbox/features/ai-helper.svg"),
     },
     text: "FeaturesAIHelper",
   },
   {
     icon: {
-      url: "/images/templates/office-for-dropbox/features/formats.svg",
+      url: getAssetUrl("/images/templates/office-for-dropbox/features/formats.svg"),
     },
     text: "FeaturesFormats",
   },
   {
     icon: {
-      url: "/images/templates/office-for-dropbox/features/highest-compatibility.svg",
+      url: getAssetUrl("/images/templates/office-for-dropbox/features/highest-compatibility.svg"),
     },
     text: "FeaturesHighestCompatibility",
   },
   {
     icon: {
-      url: "/images/templates/office-for-dropbox/features/open-source-code.svg",
+      url: getAssetUrl("/images/templates/office-for-dropbox/features/open-source-code.svg"),
     },
     text: "FeaturesOpenSourceCode",
   },
   {
     icon: {
-      url: "/images/templates/office-for-dropbox/features/free-app.svg",
+      url: getAssetUrl("/images/templates/office-for-dropbox/features/free-app.svg"),
     },
     text: "FeaturesFreeApp",
   },

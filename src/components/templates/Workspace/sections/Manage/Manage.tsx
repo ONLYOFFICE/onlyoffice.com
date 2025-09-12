@@ -11,6 +11,7 @@ import "swiper/css";
 import { ManageCard } from "./sub-compoenents/ManageCard";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Manage = () => {
   const { t } = useTranslation("workspace");
   const [activeIndex, setActiveIndex] = useState(0);
@@ -83,8 +84,8 @@ const Manage = () => {
                 textList={item.textList.map((text) => t(text))}
                 image={{
                   ...item.image,
-                  url: t(item.image.url),
-                  url2x: t(item.image.url2x),
+                  url: getAssetUrl(t(item.image.url)),
+                  url2x: getAssetUrl(t(item.image.url2x)),
                 }}
                 links={item.links.map((link) => ({
                   ...link,

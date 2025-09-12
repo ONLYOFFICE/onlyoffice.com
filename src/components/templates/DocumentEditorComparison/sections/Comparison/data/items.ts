@@ -1,9 +1,10 @@
 import { IComparisonCard } from "../sub-components/ComparisonCard/ComparisonCard.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IComparisonCard[] = [
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/comparison/office.svg",
+      src: getAssetUrl("/images/templates/document-editor-comparison/comparison/office.svg"),
       alt: "office",
       width: "138px",
       height: "44px",
@@ -15,7 +16,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/comparison/google-docs.svg",
+      src: getAssetUrl("/images/templates/document-editor-comparison/comparison/google-docs.svg"),
       alt: "google-docs",
       width: "216px",
       height: "42px",
@@ -27,7 +28,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/comparison/zoho.svg",
+      src: getAssetUrl("/images/templates/document-editor-comparison/comparison/zoho.svg"),
       alt: "zoho",
       width: "163px",
       height: "56px",
@@ -39,7 +40,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/comparison/libreoffice.svg",
+      src: getAssetUrl("/images/templates/document-editor-comparison/comparison/libreoffice.svg"),
       alt: "libreoffice",
       width: "223px",
       height: "52px",
@@ -51,7 +52,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/comparison/wps.svg",
+      src: getAssetUrl("/images/templates/document-editor-comparison/comparison/wps.svg"),
       alt: "wps",
       width: "168px",
       height: "40px",
@@ -61,7 +62,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/comparison/adobe.svg",
+      src: getAssetUrl("/images/templates/document-editor-comparison/comparison/adobe.svg"),
       alt: "adobe",
       width: "216px",
       height: "56px",
@@ -71,7 +72,7 @@ export const items: IComparisonCard[] = [
   },
   {
     logo: {
-      src: "/images/templates/document-editor-comparison/comparison/hancom.svg",
+      src: getAssetUrl("/images/templates/document-editor-comparison/comparison/hancom.svg"),
       alt: "hancom",
       width: "194px",
       height: "52px",

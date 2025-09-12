@@ -1,7 +1,8 @@
 import { IHeroNavData, IHeroProducts } from "../Hero.types";
 import { ILocale } from "@src/types/locale";
 
-const productsSprite = "/images/templates/download-desktop/hero/products.svg";
+import { getAssetUrl } from "@utils/getAssetUrl";
+const productsSprite = getAssetUrl("/images/templates/download-desktop/hero/products.svg");
 
 export const navMobileData: IHeroNavData[] = [
   {

@@ -3,6 +3,7 @@ import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCanceledSection = styled(Section)`
   position: relative;
   margin-top: -72px;
@@ -45,7 +46,7 @@ const StyledCanceledImage = styled.div`
   bottom: -25px;
   width: 608px;
   height: 431px;
-  background-image: url("/images/modules/canceled/mascot.svg");
+  background-image: url(${getAssetUrl('/images/modules/canceled/mascot.svg')});
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: contain;

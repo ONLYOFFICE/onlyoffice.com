@@ -2,10 +2,11 @@ import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #efefef;
-  background-image: url("/images/templates/office-for-alfresco/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-alfresco/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: center -228px;
 
@@ -40,7 +41,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 56px;
   height: 56px;
-  background-image: url("/images/templates/office-for-alfresco/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-alfresco/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

@@ -4,6 +4,7 @@ import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledText = styled(Text)`
   font-size: 18px;
   line-height: 1.6em;
@@ -26,7 +27,7 @@ const LogoRow = styled.div`
 
 const Logo = styled.div<{ $positionX?: string; $width: number }>`
   content: "";
-  background-image: url("/images/templates/desktop/logos/connectors-desktop-logos.svg");
+  background-image: url(${getAssetUrl('/images/templates/desktop/logos/connectors-desktop-logos.svg')});
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: ${(props) => props.$positionX};

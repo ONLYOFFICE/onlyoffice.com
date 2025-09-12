@@ -28,14 +28,17 @@ const BusinessModal = ({
   affiliate,
 }: IBusinessModal & IDocSpacePricesTemplate) => {
   const { t } = useTranslation("docspace-prices");
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState("1");
 
   const currency = getCurrencyByLocale(locale);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newValue = e.target.value;
+    let newValue = e.target.value;
 
     if (/^\d*$/.test(newValue)) {
+      if (newValue === "" || newValue === "0") {
+        newValue = "1";
+      }
       setValue(newValue);
     }
   };
@@ -47,7 +50,8 @@ const BusinessModal = ({
   };
 
   const getDiskSpace = () => {
-    const numOfAdmins = value === "999+" ? 999 : parseInt(value) || 0;
+    const numOfAdmins =
+      value === "999+" ? 999 : Math.max(parseInt(value) || 1, 1);
     let baseDiskSpace = 250;
 
     if (numOfAdmins > 1) {
@@ -62,7 +66,8 @@ const BusinessModal = ({
   };
 
   const getTotalPrice = () => {
-    const numOfAdmins = parseInt(value) || 1;
+    const numOfAdmins =
+      value === "999+" ? 999 : Math.max(parseInt(value) || 1, 1);
     const pricePerAdmin = productsData.business.price;
     return numOfAdmins * pricePerAdmin;
   };

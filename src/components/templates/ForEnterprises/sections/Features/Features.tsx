@@ -5,6 +5,7 @@ import { Container } from "@src/components/ui/Container";
 import { FeatureIconsItem } from "@src/components/widgets/FeatureIconsItem";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Features = () => {
   const { t } = useTranslation("for-enterprises");
 
@@ -44,7 +45,7 @@ const Features = () => {
                   connectorsSubheading={t(group.connectorsSubheading ?? "")}
                   buttons={buttons}
                   image={{
-                    url: t(group.image.url),
+                    url: getAssetUrl(t(group.image.url)),
                     url2x: group.image.url2x ? t(group.image.url2x) : undefined,
                     width: 544,
                   }}
