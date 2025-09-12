@@ -66,7 +66,7 @@ const StyledInputWrapper = styled.div<{
       : props.$status === "error"
         ? "#cb0000"
         : "#aaaaaa"};
-  border-radius: 3px;
+  border-radius: 6px;
   width: 100%;
   height: 56px;
   background-color: ${(props) =>

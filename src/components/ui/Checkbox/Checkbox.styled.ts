@@ -43,7 +43,7 @@ const StyledCheckboxLabel = styled.span<{ $size: ICheckbox["size"] }>`
 
 const StyledCheckboxIcon = styled.span<{ $checked: ICheckbox["checked"] }>`
   border: 1px solid ${(props) => (props.$checked ? "#8BB825" : "#aaaaaa")};
-  border-radius: 3px;
+  border-radius: 6px;
   width: 24px;
   min-width: 24px;
   height: 24px;

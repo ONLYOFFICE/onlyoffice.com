@@ -33,7 +33,7 @@ const StyledDateInput = styled.div<{
   background: ${(props) => (props.$isOpen ? "#ffffff" : "#f9f9f9")};
   border: solid 1px #aaaaaa;
   border-color: ${(props) => (props.$isOpen ? "#666666" : "#aaaaaa")};
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   display: grid;
   grid-template-columns: ${({ $isDateEmpty }) =>
@@ -98,7 +98,7 @@ const StyledDatePopup = styled.div<{ $isOpen: boolean }>`
   display: ${(props) => (props.$isOpen ? "block" : "none")};
   background-color: #ffffff;
   border: 1px solid #666666;
-  border-radius: 4px;
+  border-radius: 6px;
   box-sizing: border-box;
   margin-top: 3px;
   position: absolute;
@@ -185,7 +185,7 @@ const StyledDateWrapper = styled.div`
 
     .react-datepicker__day {
       font-weight: normal;
-      color: #666666;
+      color: #444444;
       font-size: 14px;
       line-height: 1.6em;
       text-align: center;
@@ -271,7 +271,7 @@ const Item = styled.li<{ selected: boolean }>`
   line-height: 1.6em;
   padding: 4px 16px;
   width: 76px;
-  border-radius: 5px;
+  border-radius: 6px;
   text-align: center;
 
   ${(props) =>
@@ -316,7 +316,7 @@ const MobilePicker = styled.div<{ $isOpen: boolean; $isSelected: boolean }>`
   justify-content: center;
   align-items: center;
   border: 1px solid #cccccc;
-  border-radius: 3px;
+  border-radius: 6px;
   font-size: 14px;
   line-height: 1.3em;
   width: 80px;
@@ -371,7 +371,7 @@ const StyledSwiperSlide = styled(SwiperSlide)`
     transform-origin: 0;
     transform: none;
     background: #ff6f3d !important;
-    border-radius: 5px;
+    border-radius: 6px;
     color: #ffffff !important;
   }
 `;

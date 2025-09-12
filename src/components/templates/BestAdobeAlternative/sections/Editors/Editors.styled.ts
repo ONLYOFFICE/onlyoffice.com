@@ -64,7 +64,7 @@ const StyledDemoPreviewButton = styled.button`
   background-color: #444;
   color: #fff;
   padding: 8px 10px;
-  border-radius: 3px;
+  border-radius: 6px;
   border: none;
   cursor: pointer;
 `;

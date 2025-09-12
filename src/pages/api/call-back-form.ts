@@ -99,7 +99,7 @@ export default async function handler(
 
     const transporter = emailTransporter();
     await transporter.sendMail({
-      to: [process.env.CALLBACK_EMAIL!],
+      to: process.env.CALLBACK_EMAIL!,
       subject: `New callback request`,
       html: CallBackFormEmail({
         fullName,
