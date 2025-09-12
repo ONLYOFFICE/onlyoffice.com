@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
   interface IItem {
     iconPosition: number;
     icon?: string;
@@ -63,7 +64,7 @@
     },
     {
       iconPosition: 0,
-      icon: "/images/templates/developer-edition/features/document-viewing.svg",
+      icon: getAssetUrl("/images/templates/developer-edition/features/document-viewing.svg"),
       title: "DocumentViewingTitle",
       description: "DocumentViewingDescription",
     }

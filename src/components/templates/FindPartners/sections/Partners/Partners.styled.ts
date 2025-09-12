@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledPartnersKeyList = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +58,7 @@ const StyledPartnersCountryInner = styled.div<{
     position: absolute;
     top: 50%;
     right: 0;
-    background-image: url("/images/icons/chevron-down.svg");
+    background-image: url(${getAssetUrl('/images/icons/chevron-down.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transition-duration: 300ms;

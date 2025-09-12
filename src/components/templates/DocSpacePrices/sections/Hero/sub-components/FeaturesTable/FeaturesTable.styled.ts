@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFeaturesTable = styled.div`
   table {
     border: 1px solid #e2e2e2;
@@ -214,9 +215,9 @@ const StyledFeaturesTableIcon = styled.span<{ $icon: string }>`
   height: 24px;
   background-image: ${({ $icon }) =>
     $icon === "check"
-      ? "url('/images/icons/check.svg')"
+      ? `url(${getAssetUrl('/images/icons/check.svg')})`
       : $icon === "dash"
-        ? "url('/images/icons/dash.svg')"
+        ? `url(${getAssetUrl('/images/icons/dash.svg')})`
         : "none"};
   background-repeat: no-repeat;
   background-size: contain;

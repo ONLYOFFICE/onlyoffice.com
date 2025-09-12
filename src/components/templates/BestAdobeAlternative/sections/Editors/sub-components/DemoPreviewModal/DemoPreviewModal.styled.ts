@@ -1,6 +1,7 @@
 import { Heading } from "@src/components/ui/Heading";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledDemoPreviewModal = styled.div`
   padding: 20px;
   display: grid;
@@ -27,7 +28,7 @@ const StyledDemoPreviewModalTopButton = styled.button`
   height: 24px;
   border: none;
   background-color: transparent;
-  background-image: url("/images/icons/cross.svg");
+  background-image: url(${getAssetUrl('/images/icons/cross.svg')});
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;

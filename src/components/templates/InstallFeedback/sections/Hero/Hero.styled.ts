@@ -8,6 +8,7 @@ import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { StyledQuestionHeading } from "./sub-components/QuestionBlock/QuestionBlock.styled";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroHeading = styled(Heading)`
   font-size: 16px;
   font-weight: 400;
@@ -86,7 +87,7 @@ const StyledHeroPopupWrapper = styled.div`
 const StyledHeroCrossButton = styled.div`
   width: 20px;
   height: 20px;
-  background-image: url("/images/icons/close.svg");
+  background-image: url(${getAssetUrl('/images/icons/close.svg')});
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;

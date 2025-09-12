@@ -1,5 +1,6 @@
 import { useTranslation, Trans } from "next-i18next";
 import { useRouter } from "next/router";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledFeaturesWrapper,
   StyledFeaturesItems,
@@ -16,8 +17,8 @@ const Features = () => {
   const { t } = useTranslation("office-for-zoom");
   const { locale } = useRouter();
 
-  const imageSrc1 = "/images/templates/office-for-zoom/button.svg";
-  const imageSrc2 = "/images/templates/office-for-zoom/icon.svg";
+  const imageSrc1 = getAssetUrl("/images/templates/office-for-zoom/button.svg");
+  const imageSrc2 = getAssetUrl("/images/templates/office-for-zoom/icon.svg");
 
   return (
     <Section>

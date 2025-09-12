@@ -1,5 +1,6 @@
 import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IFeatureImageItem[] = [
   {
     heading: "OODocs",
@@ -19,7 +20,7 @@ export const items: IFeatureImageItem[] = [
       },
     ],
     image: {
-      url: "/images/templates/solutions/features/docs.svg",
+      url: getAssetUrl("/images/templates/solutions/features/docs.svg"),
       height: 460,
       width: 736,
     },
@@ -42,7 +43,7 @@ export const items: IFeatureImageItem[] = [
       },
     ],
     image: {
-      url: "/images/templates/solutions/features/docspace.svg",
+      url: getAssetUrl("/images/templates/solutions/features/docspace.svg"),
       height: 460,
       width: 736,
     },
@@ -65,7 +66,7 @@ export const items: IFeatureImageItem[] = [
       },
     ],
     image: {
-      url: "/images/templates/solutions/features/workspace.svg",
+      url: getAssetUrl("/images/templates/solutions/features/workspace.svg"),
       height: 460,
       width: 736,
     },
@@ -89,7 +90,7 @@ export const items: IFeatureImageItem[] = [
       },
     ],
     image: {
-      url: "/images/templates/solutions/features/forms.svg",
+      url: getAssetUrl("/images/templates/solutions/features/forms.svg"),
       height: 460,
       width: 736,
     },
@@ -112,7 +113,7 @@ export const items: IFeatureImageItem[] = [
       },
     ],
     image: {
-      url: "/images/templates/solutions/features/convert.svg",
+      url: getAssetUrl("/images/templates/solutions/features/convert.svg"),
       height: 460,
       width: 736,
     },

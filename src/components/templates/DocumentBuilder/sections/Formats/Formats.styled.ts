@@ -6,6 +6,7 @@ import { Link } from "@src/components/ui/Link";
 import { IApiIconRow } from "./Formats.types";
 import "prismjs/themes/prism.css";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFormatsHeading = styled(Heading)`
     text-align: center;
     padding-bottom: 24px;
@@ -77,7 +78,7 @@ const StyledFormatsTab = styled.button<{
 
     &::before {
         content: '';
-        background-image: url("/images/templates/document-builder/formats/icons_featured.svg");
+        background-image: url(${getAssetUrl('/images/templates/document-builder/formats/icons_featured.svg')});
         background-repeat: no-repeat;
         background-position-x: ${(props) => props.$iconPositionX ? `${props.$iconPositionX}px` : "0px"};
         display: inline-block;
@@ -268,7 +269,7 @@ const StyledWrapperRightLinks = styled(Link)`
     position: relative;
 
     &::before {
-        background-image: url("/images/templates/document-builder/formats/api-for-icons.svg");
+        background-image: url(${getAssetUrl('/images/templates/document-builder/formats/api-for-icons.svg')});
         background-position: 0 0;
         background-repeat: no-repeat;
         content: "";
@@ -385,7 +386,7 @@ const StyledBlockIconsWrapperBlockText = styled(Text)<Omit<IApiIconRow, "width">
         align-items: center;
         display: flex;
         flex-shrink: 0;
-        background-image: url("/images/templates/document-builder/formats/api-features-icons.svg");
+        background-image: url(${getAssetUrl('/images/templates/document-builder/formats/api-features-icons.svg')});
         background-position-x: ${({iconPosX}) => iconPosX}px;
         content: '';
         display: block;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background-color: #017737;
   overflow: hidden;
@@ -21,7 +22,7 @@ const StyledMarketplaceConnectorWrapper = styled.div`
     right: calc(50% - 722px);
     width: 861px;
     height: 861px;
-    background-image: url("/images/templates/office-for-pipedrive/marketplace-connector/bg.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-pipedrive/marketplace-connector/bg.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     pointer-events: none;
@@ -60,7 +61,7 @@ const StyledMarketplaceConnectorBody = styled.div`
 const StyledMarketplaceConnectorImg = styled.div`
   width: 100%;
   height: 100%;
-  background-image: url("/images/templates/office-for-pipedrive/marketplace-connector/apps.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-pipedrive/marketplace-connector/apps.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

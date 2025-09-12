@@ -1,8 +1,9 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IBlogCard[] = [
   {
-    imgUrl: "/images/templates/pdf-editor/learn-more/blog.png",
+    imgUrl: getAssetUrl("/images/templates/pdf-editor/learn-more/blog.png"),
     heading: { label: "Blog" },
     text: "BlogDesc",
     links: [
@@ -13,7 +14,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/pdf-editor/learn-more/tutorial.png",
+    imgUrl: getAssetUrl("/images/templates/pdf-editor/learn-more/tutorial.png"),
     heading: { label: "Blog" },
     text: "TutorialsDesc",
     links: [
@@ -25,7 +26,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/pdf-editor/learn-more/hints.png",
+    imgUrl: getAssetUrl("/images/templates/pdf-editor/learn-more/hints.png"),
     heading: { label: "Blog" },
     text: "HintsDesc",
     links: [

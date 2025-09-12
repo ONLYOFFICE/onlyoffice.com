@@ -2,6 +2,7 @@ import { Link } from "@src/components/ui/Link";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCompareWrapper = styled.div`
   display: grid;
   gap: 32px;
@@ -41,9 +42,9 @@ const StyledCompareTextLink = styled(Link)<{
     margin: 0 5px;
     background-image: ${({ $type }) =>
       $type === "docx"
-        ? "url('/images/templates/document-editor-comparison/compare/file_docx.svg')"
+        ? `url(${getAssetUrl('/images/templates/document-editor-comparison/compare/file_docx.svg')})`
         : $type === "xlsx"
-        ? "url('/images/templates/document-editor-comparison/compare/file_xlsx.svg')"
+        ? `url(${getAssetUrl('/images/templates/document-editor-comparison/compare/file_xlsx.svg')})`
         : undefined};
   }
 `;

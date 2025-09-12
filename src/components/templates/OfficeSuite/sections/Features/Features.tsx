@@ -9,6 +9,7 @@ import { Link } from "@src/components/ui/Link";
 import { ILocale } from "@src/types/locale";
 import { getLink } from "@src/utils/getLink";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Features = ({ locale }: ILocale) => {
   const { t } = useTranslation("office-suite");
 
@@ -127,8 +128,8 @@ const Features = ({ locale }: ILocale) => {
                 label: t(String(link.label)),
               }))}
               image={{
-                url: t(String(item.image.url)),
-                url2x: t(String(item.image.url2x)),
+                url: getAssetUrl(t(String(item.image.url))),
+                url2x: getAssetUrl(t(String(item.image.url2x))),
                 height: item.image.height,
                 width: item.image.width,
               }}

@@ -2,6 +2,7 @@ import { device } from "@src/utils/device";
 import styled from "styled-components";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledLogoBlockWrapper = styled.div`
   display: grid;
   gap: 112px;
@@ -53,7 +54,7 @@ const StyledLogoBlockItem = styled(Link)`
 const StyledLogoBlockItemTop = styled.div`
   width: 100%;
   height: 130px;
-  background-image: url("/images/templates/press-downloads/logo/mask.png");
+  background-image: url(${getAssetUrl('/images/templates/press-downloads/logo/mask.png')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

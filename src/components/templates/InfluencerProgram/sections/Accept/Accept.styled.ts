@@ -2,6 +2,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledAcceptWrapper = styled.div`
   display: grid;
   justify-items: center;
@@ -44,7 +45,7 @@ const StyledAcceptItem = styled.div<{ $positionX: string }>`
     transform: translateX(-50%);
     width: 64px;
     height: 64px;
-    background-image: url("/images/templates/influencer-program/accept/icons-accept.svg");
+    background-image: url(${getAssetUrl('/images/templates/influencer-program/accept/icons-accept.svg')});
     background-repeat: no-repeat;
     background-position-x: ${({ $positionX }) => $positionX};
   }

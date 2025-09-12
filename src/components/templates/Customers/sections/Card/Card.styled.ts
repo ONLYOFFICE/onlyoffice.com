@@ -4,6 +4,7 @@ import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCardList = styled.div`
   display: grid;
   justify-items: center;
@@ -111,7 +112,7 @@ const StyledCardLink = styled(Link)`
     left: 0;
     width: 16px;
     height: 16px;
-    background-image: url("/images/icons/arrow-down-orange.svg");
+    background-image: url(${getAssetUrl('/images/icons/arrow-down-orange.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateY(-50%);

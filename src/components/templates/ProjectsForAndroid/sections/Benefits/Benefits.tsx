@@ -1,5 +1,6 @@
 import { Container } from "@src/components/ui/Container";
 import { Section } from "@src/components/ui/Section";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import { useTranslation } from "next-i18next"
 import { 
     BlockText,
@@ -39,9 +40,9 @@ const Benefits = ({locale}: ILocale) => {
                                 />
                             ))}
                         </BlockText>
-                        <StyledButton as="a" $locale={locale} $HeroImgUrl={t(hero.image.url)} target={locale === "zh" ? "_self" : "_blank"} href={t(items.btnHref)} />
+                        <StyledButton as="a" $locale={locale} $HeroImgUrl={getAssetUrl(t(hero.image.url))} target={locale === "zh" ? "_self" : "_blank"} href={t(items.btnHref)} />
                     </StyledBenefitsWrapperLeft>
-                    <StyledBenefitsWrapperRight $BenefitsImgUrl={t(items.image.url)} />
+                    <StyledBenefitsWrapperRight $BenefitsImgUrl={getAssetUrl(t(items.image.url))} />
                 </StyledBenefitsWrapper>
             </Container>
         </Section>

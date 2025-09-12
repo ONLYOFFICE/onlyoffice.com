@@ -4,6 +4,7 @@ import { device } from "@src/utils/device";
 import styled from "styled-components";
 
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledConversionWrapper = styled.div`
   display: grid;
   grid-template-columns: 545px auto;
@@ -38,7 +39,7 @@ const StyledConversionText = styled(Text)`
 `;
 
 const StyledConversionImage = styled.div`
-  background-image: url("/images/templates/conversion-api/conversion/conversion.svg");
+  background-image: url(${getAssetUrl('/images/templates/conversion-api/conversion/conversion.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

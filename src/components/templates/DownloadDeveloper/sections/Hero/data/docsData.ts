@@ -1,13 +1,14 @@
 import { IIconTooltip } from "@src/components/widgets/IconTooltip";
 import { IDownloadCard } from "@src/components/widgets/download/DownloadCard";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   dockerDocument,
   documentServer,
   alibabaCloudImage,
 } from "@src/config/constans/download";
 
-const iconsSprite = "/images/templates/download-developer/hero/features.svg";
-const productsSprite = "/images/templates/download-developer/hero/products.svg";
+const iconsSprite = getAssetUrl("/images/templates/download-developer/hero/features.svg");
+const productsSprite = getAssetUrl("/images/templates/download-developer/hero/products.svg");
 
 export const docsIcons: IIconTooltip[] = [
   {

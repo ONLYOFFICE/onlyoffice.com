@@ -2,6 +2,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledAmbassadorWrapper = styled.div`
   display: grid;
   justify-items: center;
@@ -21,7 +22,7 @@ const StyledAmbassadorImage = styled.div`
   width: 100%;
   height: 400px;
   margin: 56px 0 160px;
-  background-image: url("/images/templates/influencer-program/ambassador/ambassador.svg");
+  background-image: url(${getAssetUrl('/images/templates/influencer-program/ambassador/ambassador.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

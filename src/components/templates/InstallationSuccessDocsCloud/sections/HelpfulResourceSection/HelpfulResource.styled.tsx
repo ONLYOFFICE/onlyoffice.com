@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const ResourcesContainer = styled(Container)`
   text-align: center;
 `;
@@ -39,7 +40,7 @@ const ResourceCard = styled.div`
 `;
 
 const ResourceIcon = styled.div<{ $positionX: string }>`
-  background-image: url("/images/templates/installation-success-docs-cloud/resources/help-icons.svg");
+  background-image: url(${getAssetUrl('/images/templates/installation-success-docs-cloud/resources/help-icons.svg')});
   background-repeat: no-repeat;
   background-size: auto 32px;
   background-position-x: ${(props) => props.$positionX};

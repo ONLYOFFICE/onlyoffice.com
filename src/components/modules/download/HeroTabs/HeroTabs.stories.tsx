@@ -3,6 +3,7 @@ import { HeroTabs } from "./HeroTabs";
 import { IHeroTabs } from "./HeroTabs.types";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Modules/Download/HeroTabs",
   component: HeroTabs,
@@ -42,7 +43,7 @@ Default.args = {
       button: {
         id: "docspace-enterprise",
         icon: {
-          url: "/images/storybook/modules/download/hero-switch/enterprise.svg",
+          url: getAssetUrl("/images/storybook/modules/download/hero-switch/enterprise.svg"),
         },
         label: "Enterprise",
       },
@@ -52,7 +53,7 @@ Default.args = {
       button: {
         id: "docspace-community",
         icon: {
-          url: "/images/storybook/modules/download/hero-switch/community.svg",
+          url: getAssetUrl("/images/storybook/modules/download/hero-switch/community.svg"),
         },
         label: "Community",
       },

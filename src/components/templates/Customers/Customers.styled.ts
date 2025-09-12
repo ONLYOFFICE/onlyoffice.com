@@ -1,8 +1,9 @@
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCustomersBgWrapper = styled.div`
-  background-image: url("/images/templates/customers/hero/map.svg");
+  background-image: url(${getAssetUrl('/images/templates/customers/hero/map.svg')});
   background-size: auto 930px;
   background-repeat: no-repeat;
   background-position: 50% -145px;

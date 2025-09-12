@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IFeatures {
   icon: string;
   title: string;
@@ -11,7 +12,7 @@ interface IFeatures {
 
 export const features: IFeatures[] = [
   {
-    icon: "/images/templates/workspace/why-oo-workspace/integration.svg",
+    icon: getAssetUrl("/images/templates/workspace/why-oo-workspace/integration.svg"),
     title: "ThirdParty",
     text: "ExtendYourWorkspace",
     link: {
@@ -21,7 +22,7 @@ export const features: IFeatures[] = [
     },
   },
   {
-    icon: "/images/templates/workspace/why-oo-workspace/security.svg",
+    icon: getAssetUrl("/images/templates/workspace/why-oo-workspace/security.svg"),
     title: "DataSecurityHeader",
     text: "DataSecurity",
     link: {
@@ -30,7 +31,7 @@ export const features: IFeatures[] = [
     },
   },
   {
-    icon: "/images/templates/workspace/why-oo-workspace/admin.svg",
+    icon: getAssetUrl("/images/templates/workspace/why-oo-workspace/admin.svg"),
     title: "Administration",
     text: "ManageYourWorkspace",
   },

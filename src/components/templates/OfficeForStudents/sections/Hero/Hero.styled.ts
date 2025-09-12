@@ -4,9 +4,10 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/templates/office-for-students/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-students/hero/bg.svg')});
   background-position: center -630px;
   background-repeat: no-repeat;
   background-color: #f9f9f9;
@@ -90,7 +91,7 @@ const StyledHeroText = styled(Text)`
 
 const StyledHeroImage = styled.div`
   padding-bottom: 110.938%;
-  background-image: url("/images/templates/office-for-students/hero/hero-image.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-students/hero/hero-image.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 

@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/templates/office-for-sharepoint/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-sharepoint/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -39,7 +40,7 @@ export const StyledHeroWrapper = styled.div`
 export const StyledHeroLogo = styled.div`
   width: 72px;
   height: 72px;
-  background: url("/images/templates/office-for-sharepoint/hero/logo.svg")
+  background: url(${getAssetUrl('/images/templates/office-for-sharepoint/hero/logo.svg')})
     no-repeat center;
   background-size: contain;
 

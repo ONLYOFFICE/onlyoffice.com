@@ -4,10 +4,11 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
   background-color: #f5f5f5;
-  background-image: url("/images/templates/healthcare/hero/cardiorgam.svg");
+  background-image: url(${getAssetUrl('/images/templates/healthcare/hero/cardiorgam.svg')});
   background-repeat: no-repeat;
   background-position: calc(50% + 190px) 50%;
 
@@ -75,7 +76,7 @@ const StyledHeroText = styled(Text)`
 
 const StyledHeroImage = styled.div`
   padding-bottom: 400px;
-  background-image: url("/images/templates/healthcare/hero/hero-image.svg");
+  background-image: url(${getAssetUrl('/images/templates/healthcare/hero/hero-image.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 

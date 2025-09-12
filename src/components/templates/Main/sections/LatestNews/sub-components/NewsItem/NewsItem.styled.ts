@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledNewsItemHeading = styled.div`
   margin-bottom: 8px;
   font-size: 14px;
@@ -20,7 +21,7 @@ const StyledNewsItemDate = styled.div`
     left: 0;
     width: 13px;
     height: 13px;
-    background-image: url("/images/icons/calendar.svg");
+    background-image: url(${getAssetUrl('/images/icons/calendar.svg')});
     background-repeat: no-repeat;
     transform: translateY(-50%);
   }

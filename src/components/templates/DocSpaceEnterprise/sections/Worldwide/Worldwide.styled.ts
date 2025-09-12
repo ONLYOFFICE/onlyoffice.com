@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledWorldwideWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,7 +24,7 @@ const StyledWorldwideImgWrapper = styled.div`
   width: 64px;
   height: 52px;
   margin-bottom: 24px;
-  background-image: url("/images/templates/docspace-enterprise/hero/world_icon.svg");
+  background-image: url(${getAssetUrl('/images/templates/docspace-enterprise/hero/world_icon.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 
