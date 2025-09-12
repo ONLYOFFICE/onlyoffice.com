@@ -102,7 +102,6 @@ const StyledEnterpriseContent = styled.div`
         }
       }
     }
-  }
 
   @media ${device.tablet} {
     grid-template-columns: 1fr 1fr;

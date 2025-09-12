@@ -37,7 +37,7 @@ const StyledContainer = styled(Container)`
 `;
 
 const ContactIcon = styled.div`
-  background-image: url(/images/templates/academy/contacts/icon-choose.svg')});
+  background-image: url(${getAssetUrl('/images/templates/academy/contacts/icon-choose.svg')});
   background-repeat: no-repeat;
   background-size: 64px auto;
   width: 64px;

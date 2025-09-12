@@ -153,7 +153,7 @@ const TableCell = styled.td<{ $icon?: string }>`
     props.$icon &&
     `
       &::after {
-        background-image: url(${getAssetUrl('/images/templates/academy/table/${props.$icon}.svg')});
+        background-image: url(${getAssetUrl(`/images/templates/academy/table/${props.$icon}.svg`)});
         background-repeat: no-repeat;
         content: "";
         background-position: center;
