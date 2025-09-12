@@ -27,6 +27,12 @@ const StyledHeroInputTextBlock = styled.div``;
 
 const StyledHeroQuestionHeading = styled(StyledQuestionHeading)``;
 
+const StyledHeroSubtitleWrapper = styled.div``;
+
+const StyledHeroSubtitleText = styled(Text)`
+  margin-bottom: 22px;
+`;
+
 const StyledHeroInputText = styled(Input)`
   width: 100%;
   max-width: 432px;
@@ -111,6 +117,8 @@ export {
   StyledHeroForm,
   StyledHeroInputTextBlock,
   StyledHeroQuestionHeading,
+  StyledHeroSubtitleWrapper,
+  StyledHeroSubtitleText,
   StyledHeroInputText,
   StyledHeroTextAreaBlock,
   StyledHeroTextArea,

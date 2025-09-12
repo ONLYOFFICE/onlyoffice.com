@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 
 import { getAssetUrl } from "@utils/getAssetUrl";
@@ -28,6 +29,10 @@ const StyledJoinHeading = styled(Heading)`
     font-size: 16px;
     margin: 32px auto;
   }
+`;
+
+const StyledTextNoWrap = styled(Text)`
+  white-space: nowrap;
 `;
 
 const StyledJoinButton = styled(Button)`
@@ -59,5 +64,6 @@ export {
   StyledJoinSection,
   StyledJoinIcon,
   StyledJoinHeading,
+  StyledTextNoWrap,
   StyledJoinButton,
 };
