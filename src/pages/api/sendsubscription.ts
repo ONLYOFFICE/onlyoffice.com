@@ -21,7 +21,8 @@ export default async function handler(
   }
 
   try {
-    const { language, firstName, email, type, emailSubject } = req.body;
+    const { language, firstName, email, type } = req.body;
+
     const baseUrl = `${req.headers.origin}${language ? `/${language}` : ""}`;
 
     const emailSubjects: Record<string, Record<string, string>> = {
@@ -37,7 +38,8 @@ export default async function handler(
       zh: { subscribe: "订阅 ONLYOFFICE 新闻" },
     };
 
-    const subject = emailSubjects[language] ? emailSubjects[language][emailSubject] : emailSubjects.en[emailSubject];
+    const lang = language && emailSubjects[language] ? language : "en";
+    const subject = emailSubjects[lang].subscribe;
 
     if (typeof email !== "string" || !validateEmail(email)) {
       return res.status(400).json({
