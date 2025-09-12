@@ -2,6 +2,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { StoryCard } from "./StoryCard";
 import { IStoryCard } from "./StoryCard.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Widgets/StoryCard",
   component: StoryCard,
@@ -42,5 +43,5 @@ Default.args = {
     "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
   heading:
     "How Kinderhaus Berlin shares and collaborates on sensitive files with ONLYOFFICE DocSpace",
-  imgUrl: "/images/storybook/widgets/story-card/kinderhaus.jpg",
+  imgUrl: getAssetUrl("/images/storybook/widgets/story-card/kinderhaus.jpg"),
 };

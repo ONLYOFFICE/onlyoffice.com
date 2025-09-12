@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   text-align: center;
@@ -79,7 +80,7 @@ const StyledEditionCard = styled.div<{ $positionX: string }>`
   }
 
   &:before {
-    background-image: url("/images/icons/editions-icons.svg");
+    background-image: url(${getAssetUrl('/images/icons/editions-icons.svg')});
     background-position: ${(props) => props.$positionX};
     content: "";
     display: block;

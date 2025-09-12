@@ -2,6 +2,7 @@ import { useTranslation, Trans } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledList,
   StyledItem,
@@ -51,7 +52,7 @@ const Features = () => {
           />
         </div>
         <StyledImageContent
-          $imgUrl={t("imageUrl")}
+          $imgUrl={getAssetUrl(t("imageUrl"))}
           $imgUrl2x={t("imageUrl2x")}
         />
       </StyledContainer>

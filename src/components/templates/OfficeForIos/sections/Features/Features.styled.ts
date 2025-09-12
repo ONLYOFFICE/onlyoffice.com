@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { IFeaturesItem } from "./Features.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFeaturesWrapper = styled.div`
   display: flex;
   position: relative;
@@ -28,7 +29,7 @@ const StyledFeaturesAside = styled.aside`
 `;
 
 const StyledFeaturesAsideTablet = styled.div`
-  background-image: url("/images/templates/office-for-ios/features/tablet.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-ios/features/tablet.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   width: 92%;
@@ -74,7 +75,7 @@ const StyledFeaturesAsideTabletImg = styled.div<{
 `;
 
 const StyledFeaturesAsideMobile = styled.div`
-  background-image: url("/images/templates/office-for-ios/features/mobile.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-ios/features/mobile.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   width: 31%;

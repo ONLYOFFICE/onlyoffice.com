@@ -5,6 +5,7 @@ import { items } from "./data/items";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const DoEvenMore = () => {
   const { t } = useTranslation("desktop");
 
@@ -44,7 +45,7 @@ const DoEvenMore = () => {
             }
             position={{ desktop: index % 2 === 1 ? "right" : "left" }}
             image={{
-              url: t(String(item.image.url)),
+              url: getAssetUrl(t(String(item.image.url))),
               height: item.image.height,
               width: item.image.width,
             }}

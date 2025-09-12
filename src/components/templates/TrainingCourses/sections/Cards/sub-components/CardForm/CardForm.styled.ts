@@ -6,6 +6,7 @@ import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { Modal } from "@src/components/ui/Modal";
 import { TextArea } from "@src/components/ui/TextArea";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCardFormOverlay = styled(Modal)`
 
 overscroll-behavior: contain;
@@ -32,7 +33,7 @@ const StyledCardFormCloseBtn = styled.div`
   height: 18px;
   padding: 5px;
   box-sizing: content-box;
-  background-image: url("/images/icons/cross.svg");
+  background-image: url(${getAssetUrl('/images/icons/cross.svg')});
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -114,7 +115,7 @@ const StyledCardFormSelect = styled.div<{
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    background-image: url("/images/icons/chevron-down-gray.svg");
+    background-image: url(${getAssetUrl('/images/icons/chevron-down-gray.svg')});
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

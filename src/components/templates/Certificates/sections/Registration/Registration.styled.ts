@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledRegistration = styled.div`
   position: relative;
   display: flex;
@@ -19,7 +20,7 @@ const StyledRegistration = styled.div`
     bottom: -15px;
     width: 154px;
     height: 31px;
-    background-image: url("/images/templates/certificates/registration/line.svg");
+    background-image: url(${getAssetUrl('/images/templates/certificates/registration/line.svg')});
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -76,7 +77,7 @@ const StyledRegistrationIcon = styled.span`
   width: 74px;
   min-width: 74px;
   height: 74px;
-  background-image: url("/images/templates/certificates/registration/world.svg");
+  background-image: url(${getAssetUrl('/images/templates/certificates/registration/world.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

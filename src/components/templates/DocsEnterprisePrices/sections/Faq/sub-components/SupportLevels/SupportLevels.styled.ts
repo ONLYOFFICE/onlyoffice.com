@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSupportLevelsTable = styled.div`
   margin-bottom: 24px;
 
@@ -172,9 +173,9 @@ const StyledSupportLevelsIcon = styled.span<{ $icon: string }>`
   height: 20px;
   background-image: ${({ $icon }) =>
     $icon === "check"
-      ? "url('/images/icons/check.svg')"
+      ? `url(${getAssetUrl('/images/icons/check.svg')})`
       : $icon === "dash"
-        ? "url('/images/icons/dash.svg')"
+        ? `url(${getAssetUrl('/images/icons/dash.svg')})`
         : "none"};
   background-repeat: no-repeat;
   background-size: contain;

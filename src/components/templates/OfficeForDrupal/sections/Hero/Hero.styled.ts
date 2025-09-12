@@ -2,10 +2,11 @@ import { styled, css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #e8f8ff;
-  background-image: url("/images/templates/office-for-drupal/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-drupal/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: 50% 0;
 
@@ -39,7 +40,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 42px;
   height: 56px;
-  background-image: url("/images/templates/office-for-drupal/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-drupal/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

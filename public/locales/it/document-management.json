@@ -7,7 +7,7 @@
   "GetItNow": "Ottienilo ora",
 
   "StayOrganized": "Resta organizzato",
-  "StayAndAccess": "Archivia e accedi file ovunque",
+  "StayAndAccess": "Archivia e accedi ai file ovunque",
   "StayAndAccessText": "Archivia i tuoi documenti in un unico posto e accedi da browser, computer, telefono o tablet.",
   "BringTogether": "Raccogli tutti i tuoi documenti insieme",
   "BringTogetherText": "Collega i cloud che usi a ONLYOFFICE e lavora sui documenti archiviati senza passare da un'app all'altra.",
@@ -42,12 +42,12 @@
   "VersionControl": "Sistema di controllo versione e revisione",
   "VersionControlText": "Ottieni controllo completo sui tuoi documenti: monitora anche le più piccole modifiche con etichette di revisione e contrassegno sulle versioni dei file.",
   "DocumentEmbedding": "Incorporamento documenti",
-  "DocumentEmbeddingText": "Documenti incorporati direttamente sul tuo sito. Fornisci ai visitatori delle tue pagine web visualizzazione istantanea dei file senza download aggiuntivi.",
+  "DocumentEmbeddingText": "Incorpora documenti direttamente dal tuo sito. Fornisci ai visitatori delle tue pagine web visualizzazione istantanea dei file senza download aggiuntivi.",
   "WebDAV": "Server WebDAV",
   "WebDAVText": "Lavora con altri utenti su server Web remoti dai client WebDAV per modificare e gestire i file in modo collaborativo.",
 
   "ProtectYourDocuments": "Proteggi i tuoi documenti",
-  "ProtectYourDocumentsText": "Crea un ambiente sicuro per modificare documenti individualmente o in collaborazione. Tutti i documenti archiviati in una private room oltre che il trasferimento di dati durante la modifica in collaborazione di documenti viene criptato usando l'algoritmo di crittografia AES-256 per prevenire accessi non autorizzati.",
+  "ProtectYourDocumentsText": "Crea un ambiente sicuro per modificare documenti individualmente o in collaborazione. Tutti i documenti archiviati in una private room, oltre che al trasferimento di dati durante la modifica in collaborazione di documenti, vengono criptati usando l'algoritmo di crittografia AES-256 per prevenire accessi non autorizzati.",
 
   "BeMoreProductive": "Sii più produttivo",
   "Integration": "Integrazione con i tuoi strumenti preferiti",

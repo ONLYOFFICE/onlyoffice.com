@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background-color: #409160;
   overflow: hidden;
@@ -21,7 +22,7 @@ const StyledMarketplaceConnectorWrapper = styled.div`
     right: -101px;
     width: 812px;
     height: 834px;
-    background-image: url("/images/templates/office-for-alfresco/marketplace-connector/bg.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-alfresco/marketplace-connector/bg.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateY(-50%);
@@ -65,7 +66,7 @@ const StyledMarketplaceConnectorBody = styled.div`
 const StyledMarketplaceConnectorImg = styled.div`
   width: 100%;
   height: 100%;
-  background-image: url("/images/templates/office-for-alfresco/marketplace-connector/app.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-alfresco/marketplace-connector/app.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

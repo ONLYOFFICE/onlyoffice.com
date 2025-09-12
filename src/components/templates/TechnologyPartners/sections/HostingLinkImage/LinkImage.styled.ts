@@ -5,6 +5,7 @@ import { Text } from "@src/components/ui/Text";
 import { Container } from "@src/components/ui/Container";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContainer = styled(Container)`
   text-align: center;
 `;
@@ -15,7 +16,7 @@ const StyledHeading = styled(Heading)`
   position: relative;
 
   &::before {
-    background-image: url("/images/templates/technology-partners/heading-icons/tech-h-icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/technology-partners/heading-icons/tech-h-icons.svg')});
     background-position: -219px -3px;
     content: "";
     height: 56px;
@@ -76,7 +77,7 @@ const StyledLink = styled(Link)`
   }
 
   &::before {
-    background-image: url("/images/templates/technology-partners/image-link/hardware.svg");
+    background-image: url(${getAssetUrl('/images/templates/technology-partners/image-link/hardware.svg')});
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: auto;

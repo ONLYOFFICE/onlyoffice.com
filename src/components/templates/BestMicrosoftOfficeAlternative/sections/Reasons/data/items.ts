@@ -1,5 +1,6 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
   text: {
     label: React.ReactNode;
@@ -10,35 +11,35 @@ interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
 export const items: IFeatureItemExtended[] = [
   {
     icon: {
-      url: "/images/templates/best-microsoft-office-alternative/reasons/ooxml.svg",
+      url: getAssetUrl("/images/templates/best-microsoft-office-alternative/reasons/ooxml.svg"),
     },
     heading: "MaximumCompatibility",
     text: { label: "MaximumCompatibilityText" },
   },
   {
     icon: {
-      url: "/images/templates/best-microsoft-office-alternative/reasons/desktop_app.svg",
+      url: getAssetUrl("/images/templates/best-microsoft-office-alternative/reasons/desktop_app.svg"),
     },
     heading: "DesktopApp",
     text: { label: "DesktopAppText" },
   },
   {
     icon: {
-      url: "/images/templates/best-microsoft-office-alternative/reasons/docs_sheets_slides.svg",
+      url: getAssetUrl("/images/templates/best-microsoft-office-alternative/reasons/docs_sheets_slides.svg"),
     },
     heading: "DocsSheetsSlides",
     text: { label: "DocsSheetsSlidesText" },
   },
   {
     icon: {
-      url: "/images/templates/best-microsoft-office-alternative/reasons/collaborative.svg",
+      url: getAssetUrl("/images/templates/best-microsoft-office-alternative/reasons/collaborative.svg"),
     },
     heading: "Seamless",
     text: { label: "SeamlessText" },
   },
   {
     icon: {
-      url: "/images/templates/best-microsoft-office-alternative/reasons/security.svg",
+      url: getAssetUrl("/images/templates/best-microsoft-office-alternative/reasons/security.svg"),
     },
     heading: "DataSecurity",
     text: {
@@ -48,14 +49,14 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/best-microsoft-office-alternative/reasons/ai_helper.svg",
+      url: getAssetUrl("/images/templates/best-microsoft-office-alternative/reasons/ai_helper.svg"),
     },
     heading: "AIHelper",
     text: { label: "AIHelperText" },
   },
   {
     icon: {
-      url: "/images/templates/best-microsoft-office-alternative/reasons/flexibility.svg",
+      url: getAssetUrl("/images/templates/best-microsoft-office-alternative/reasons/flexibility.svg"),
     },
     variant: "vertical",
     heading: "Flexibility",

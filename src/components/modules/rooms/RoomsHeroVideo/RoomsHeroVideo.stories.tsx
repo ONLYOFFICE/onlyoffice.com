@@ -2,6 +2,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { RoomsHeroVideo } from "./RoomsHeroVideo";
 import { IRoomsHeroVideo } from "./RoomsHeroVideo.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Modules/Rooms/RoomsHeroVideo",
   component: RoomsHeroVideo,
@@ -47,7 +48,7 @@ Default.args = {
     href: "/docspace-registration",
   },
   image: {
-    url: "/images/storybook/modules/rooms/rooms-hero/rooms-hero.png",
-    url2x: "/images/storybook/modules/rooms/rooms-hero/rooms-hero@2x.png",
+    url: getAssetUrl("/images/storybook/modules/rooms/rooms-hero/rooms-hero.png"),
+    url2x: getAssetUrl("/images/storybook/modules/rooms/rooms-hero/rooms-hero@2x.png"),
   },
 };

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { ILogosBlockItems } from "../../NonprofitOrganizations.types";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledLogosBlockContainer = styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -29,7 +30,7 @@ const StyledLogosBlockItem = styled.li<{
 }>`
   width: ${({ $width }) => $width};
   height: 100%;
-  background-image: url("/images/templates/nonprofit-organizations/logos-block/logo-non-profit.png");
+  background-image: url(${getAssetUrl('/images/templates/nonprofit-organizations/logos-block/logo-non-profit.png')});
   background-position-x: ${({ $bgPositionX }) => $bgPositionX};
   background-position-y: 50%;
   background-repeat: no-repeat;

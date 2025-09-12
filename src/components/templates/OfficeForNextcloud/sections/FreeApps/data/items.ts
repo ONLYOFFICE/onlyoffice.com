@@ -1,6 +1,7 @@
 import { ISolutionCard } from "@src/components/widgets/SolutionCard";
 import { IDownloadButton } from "@src/components/ui/DownloadButton";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export interface ISolutionCardExtended
   extends Omit<ISolutionCard, "customLinks"> {
   customLinks?: {
@@ -14,7 +15,7 @@ export interface ISolutionCardExtended
 
 export const items: ISolutionCardExtended[] = [
   {
-    imgUrl: "/images/templates/office-for-nextcloud/free-apps/desktop.svg",
+    imgUrl: getAssetUrl("/images/templates/office-for-nextcloud/free-apps/desktop.svg"),
     text: "FreeAppsDesktopText",
     customLinks: [
       {
@@ -26,7 +27,7 @@ export const items: ISolutionCardExtended[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-nextcloud/free-apps/mobile.svg",
+    imgUrl: getAssetUrl("/images/templates/office-for-nextcloud/free-apps/mobile.svg"),
     text: "FreeAppsMobileText",
     customLinks: [
       {

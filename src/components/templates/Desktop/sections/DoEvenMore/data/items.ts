@@ -1,5 +1,6 @@
 import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IFeatureImageItem[] = [
   {
     heading: "DoMore",
@@ -13,7 +14,7 @@ export const items: IFeatureImageItem[] = [
       mobile: 16,
     },
     image: {
-      url: "/images/templates/desktop/features/do-even-more.svg",
+      url: getAssetUrl("/images/templates/desktop/features/do-even-more.svg"),
       height: 444,
       width: 460,
     },

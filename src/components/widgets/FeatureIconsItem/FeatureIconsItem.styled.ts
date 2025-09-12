@@ -3,6 +3,7 @@ import { IFeatureIconsItem } from "./FeatureIconsItem.types";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFeatureIconsItemContent = styled.div<{
   $contentWidth?: IFeatureIconsItem["contentWidth"];
   $position?: IFeatureIconsItem["position"];
@@ -194,7 +195,7 @@ const StyledQuoteText = styled.i`
     left: 50%;
     width: 196px;
     height: 160px;
-    background-image: url("/images/templates/for-small-business/features/quotes.svg");
+    background-image: url(${getAssetUrl('/images/templates/for-small-business/features/quotes.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateX(-50%);

@@ -3,10 +3,11 @@ import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
 
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledConnectAppSection = styled(Section)`
   background-color: #F9F9F9;
   background-position: 50% 0%;
-  background-image: url(/images/templates/all-connectors/connect-app/letter_bg.png);
+  background-image: url(${getAssetUrl('/images/templates/all-connectors/connect-app/letter_bg.png')});
   background-size: 844px;
   background-repeat: no-repeat;
   text-align: center;

@@ -3,12 +3,13 @@ import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSection = styled(Section)`
   background-color: #333333;
 `;
 
 const ProtectBlock = styled.div`
-  background-image: url("/images/templates/private-rooms/protect/try-bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/private-rooms/protect/try-bg.svg')});
   background-repeat: no-repeat;
   background-position: 50% 70%;
   margin: 0 auto;

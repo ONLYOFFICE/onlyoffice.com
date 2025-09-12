@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCategoryFilterBtn = styled.button<{ $isOpen: boolean }>`
   position: relative;
   border: none;
@@ -15,7 +16,7 @@ const StyledCategoryFilterBtn = styled.button<{ $isOpen: boolean }>`
     right: 0;
     width: 24px;
     height: 24px;
-    background: url("/images/icons/chevron-down.svg");
+    background: url(${getAssetUrl('/images/icons/chevron-down.svg')});
     transform: ${(props) =>
       props.$isOpen ? "translateY(-50%) rotate(180deg)" : "translateY(-50%)"};
   }
@@ -127,13 +128,13 @@ const StyledCategoryFilterDropdownHeaderBtn = styled.button<{
   ${(props) =>
     props.$isBack &&
     css`
-      background-image: url("/images/icons/chevron-left.svg");
+      background-image: url(${getAssetUrl('/images/icons/chevron-left.svg')});
     `}
 
   ${(props) =>
     props.$isCross &&
     css`
-      background-image: url("/images/icons/cross.svg");
+      background-image: url(${getAssetUrl('/images/icons/cross.svg')});
     `}
 `;
 

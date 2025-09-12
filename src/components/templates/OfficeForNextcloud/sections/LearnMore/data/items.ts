@@ -1,8 +1,9 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IBlogCard[] = [
   {
-    imgUrl: "/images/templates/office-for-nextcloud/learn-more/blue-dragon.png",
+    imgUrl: getAssetUrl("/images/templates/office-for-nextcloud/learn-more/blue-dragon.png"),
     heading: { label: "LearnMoreBlueDragon" },
     links: [
       {
@@ -12,7 +13,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-nextcloud/learn-more/stiftung.png",
+    imgUrl: getAssetUrl("/images/templates/office-for-nextcloud/learn-more/stiftung.png"),
     heading: { label: "LearnMoreStiftung" },
     links: [
       {
@@ -33,7 +34,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-nextcloud/learn-more/maritime.png",
+    imgUrl: getAssetUrl("/images/templates/office-for-nextcloud/learn-more/maritime.png"),
     heading: { label: "LearnMoreMaritime" },
     links: [
       {
@@ -43,7 +44,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-nextcloud/learn-more/geyma.png",
+    imgUrl: getAssetUrl("/images/templates/office-for-nextcloud/learn-more/geyma.png"),
     heading: { label: "LearnMoreGeyma" },
     links: [
       {
@@ -53,7 +54,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-nextcloud/learn-more/stellfeld.png",
+    imgUrl: getAssetUrl("/images/templates/office-for-nextcloud/learn-more/stellfeld.png"),
     heading: { label: "LearnMoreStellfeld" },
     links: [
       {
@@ -63,7 +64,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-nextcloud/learn-more/ibe.png",
+    imgUrl: getAssetUrl("/images/templates/office-for-nextcloud/learn-more/ibe.png"),
     heading: { label: "LearnMoreIBE" },
     links: [
       {

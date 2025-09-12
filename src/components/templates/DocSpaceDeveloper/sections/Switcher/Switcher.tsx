@@ -6,6 +6,7 @@ import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
 import { IHeadingItemOffsets } from "../../DocSpaceDeveloper.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledSwitcherHeading,
   StyledSwitcherWrapper,
@@ -123,7 +124,7 @@ const Switcher = () => {
               <StyledSwitcherImage
                 $isActive={activeSwitcher === index}
                 key={item.img.url}
-                $imageUrl={t(item.img.url)}
+                $imageUrl={getAssetUrl(t(item.img.url))}
                 $imageUrl2x={t(item.img.url2x)}
               />
             ))}

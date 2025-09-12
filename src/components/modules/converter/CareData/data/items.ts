@@ -1,6 +1,7 @@
 import { ICareDataItem } from "../CareData.types";
 
-const spriteUrl = "/images/modules/converter/care-data/icons.svg";
+import { getAssetUrl } from "@utils/getAssetUrl";
+const spriteUrl = getAssetUrl("/images/modules/converter/care-data/icons.svg");
 
 export const items: ICareDataItem[] = [
   {
