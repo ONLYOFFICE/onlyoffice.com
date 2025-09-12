@@ -3,10 +3,11 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
   background-repeat: no-repeat;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/images/templates/awards/hero/it-awards-2024.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${getAssetUrl('/images/templates/awards/hero/it-awards-2024.jpg')});
   background-size: cover;
   background-position-x: 50%;
 `;
@@ -85,7 +86,7 @@ const StyledHeroSubheading = styled(Heading)`
 const StyledHeroImage = styled.div`
   height: 200px;
   width: 100%;
-  background-image: url("/images/templates/awards/hero/cci_award_2024_platin_cloudcontentmanagement.svg");
+  background-image: url(${getAssetUrl('/images/templates/awards/hero/cci_award_2024_platin_cloudcontentmanagement.svg')});
   background-repeat: no-repeat;
   background-size: 542px auto;
   background-position: center;

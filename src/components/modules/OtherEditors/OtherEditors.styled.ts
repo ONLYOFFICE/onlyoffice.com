@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledOtherEditors = styled(Section)`
   border-top: 1px solid #e2e2e2;
   background-color: #f9f9f9;
@@ -93,7 +94,7 @@ const editorStyles: Record<string, { backgroundPositionY: number }> = {
 const StyledOtherEditorsItemImg = styled.span<{ $id: string }>`
   width: 24px;
   height: 24px;
-  background-image: url("/images/modules/other-editors/editor-selector.svg");
+  background-image: url(${getAssetUrl('/images/modules/other-editors/editor-selector.svg')});
   background-repeat: no-repeat;
   background-position-y: ${({ $id }) =>
     editorStyles[$id]?.backgroundPositionY || 0}px;

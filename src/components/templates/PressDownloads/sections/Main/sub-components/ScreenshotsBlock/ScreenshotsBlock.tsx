@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { Heading } from "@src/components/ui/Heading";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledScreenshotsBlock,
   StyledScreenshotsBlockItem,
@@ -24,7 +25,7 @@ const ScreenshotsBlock = ({ id }: { id: string }) => {
             download
             key={item.title}
           >
-            <StyledScreenshotsBlockItemImg $imgUrl={t(item.imgUrl)} />
+            <StyledScreenshotsBlockItemImg $imgUrl={getAssetUrl(t(item.imgUrl))} />
             <StyledScreenshotsBlockItemBottom>
               <StyledScreenshotsBlockItemTitle>
                 {t(item.title)}

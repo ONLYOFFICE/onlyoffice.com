@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledTrustedHeading = styled(Heading)`
   margin-bottom: 56px;
 
@@ -82,7 +83,7 @@ const ArrowBase = styled.button`
   top: calc(50% - 26px);
   z-index: 1;
   background:
-    url("/images/templates/customers/trusted/arrow.svg") no-repeat center/24px 24px,
+    url(${getAssetUrl('/images/templates/customers/trusted/arrow.svg')}) no-repeat center/24px 24px,
     radial-gradient(
       circle at center,
       rgba(245,245,245,1) 10%,

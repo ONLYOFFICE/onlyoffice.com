@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHero,
   StyledHeroWrapper,
@@ -66,7 +67,7 @@ const Hero = () => {
 
         {locale === "zh" ? (
           <StyledHeroImg
-            $imgUrl="/images/templates/spreadsheet-editor/hero/zh/hero.png"
+            $imgUrl={getAssetUrl("/images/templates/spreadsheet-editor/hero/zh/hero.png")}
             $imgUrl2x="/images/templates/spreadsheet-editor/hero/zh/hero@2x.png"
           />
         ) : (

@@ -1,6 +1,7 @@
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import { useTranslation } from "next-i18next"
 import { 
     StyledFeaturesWrapper,
@@ -29,7 +30,7 @@ const Features = () => {
                         heading={t(String(heading))}                        
                         text={t(String(text))}
                         image={{
-                            url: t(image.url),
+                            url: getAssetUrl(t(image.url)),
                             height: image.height
                         }}
                         />

@@ -3,9 +3,10 @@ import { Text } from "@src/components/ui/Text";
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const StyledSection = styled(Section)`
   text-align: center;
-  background-image: url("/images/templates/desktop/quotes/quotes.svg");
+  background-image: url(${getAssetUrl('/images/templates/desktop/quotes/quotes.svg')});
   background-repeat: no-repeat;
   background-position: center 112px;
   background-size: 186px auto;

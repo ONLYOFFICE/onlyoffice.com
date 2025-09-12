@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledCustomers,
   StyledCustomersHeading,
@@ -61,8 +62,8 @@ const Customers = () => {
           <StyledSuccessStoriesItems>
             {successStoriesItems.map((item, index) => (
               <StoryCard
-                imgUrl={t(item.imgUrl)}
-                linkUrl={t(item.linkUrl)}
+                imgUrl={getAssetUrl(t(item.imgUrl))}
+                linkUrl={getAssetUrl(t(item.linkUrl))}
                 heading={t(item.heading)}
                 key={index}
               />

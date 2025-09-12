@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledDocSpaceHeading,
   StyledDocSpaceAppBtnWrapper,
@@ -55,7 +56,7 @@ const DocSpaceApp = ({ setActiveTab }: IDocSpaceApp) => {
                 </>
               ),
               image: {
-                url: t(image.url),
+                url: getAssetUrl(t(image.url)),
                 url2x: image.url2x ? t(image.url2x) : undefined,
               },
             }))}
@@ -77,7 +78,7 @@ const DocSpaceApp = ({ setActiveTab }: IDocSpaceApp) => {
             items={accountItems.map(({ label, image }) => ({
               label: t(String(label)),
               image: {
-                url: t(image.url),
+                url: getAssetUrl(t(image.url)),
                 url2x: image.url2x ? t(image.url2x) : undefined,
               },
             }))}

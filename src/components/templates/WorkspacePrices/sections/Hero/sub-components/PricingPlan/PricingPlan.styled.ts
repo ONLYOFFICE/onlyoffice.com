@@ -5,6 +5,7 @@ import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { CounterSelector } from "@src/components/widgets/CounterSelector";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledPricingPlan = styled.div<{ $active?: boolean }>`
   border: ${(props) =>
     props.$active ? "2px solid #ff6f3d" : "1px solid #cccccc"};
@@ -129,7 +130,7 @@ const StyledPricingPlanFeaturesItem = styled.li`
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url("/images/templates/workspace-prices/hero/check.svg");
+    background-image: url(${getAssetUrl('/images/templates/workspace-prices/hero/check.svg')});
     background-repeat: no-repeat;
     background-size: contain;
   }

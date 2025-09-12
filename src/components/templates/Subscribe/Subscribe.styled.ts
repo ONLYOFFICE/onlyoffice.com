@@ -5,6 +5,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { StyledSubscribeItem } from "./sub-components/SubscribeItem/SubscribeItem.styled";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSubscribe = styled(Section)`
   margin-top: -72px;
 
@@ -73,7 +74,7 @@ const StyledSubscribeHeroImage = styled.div`
   width: 392px;
   min-width: 392px;
   height: 238px;
-  background-image: url("/images/templates/subscribe/hero.svg");
+  background-image: url(${getAssetUrl('/images/templates/subscribe/hero.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

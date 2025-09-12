@@ -4,6 +4,7 @@ import { StepCarousel } from "./StepCarousel";
 import { IStepCarousel } from "./StepCarousel.types";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Widgets/StepCarousel",
   component: StepCarousel,
@@ -58,15 +59,15 @@ export const Default = DefaultTemplate.bind({});
 Default.args = {
   items: [
     {
-      imgUrl: "/images/storybook/widgets/step-carousel/step-1.svg",
+      imgUrl: getAssetUrl("/images/storybook/widgets/step-carousel/step-1.svg"),
       heading: "Log into your Box account",
     },
     {
-      imgUrl: "/images/storybook/widgets/step-carousel/step-2.svg",
+      imgUrl: getAssetUrl("/images/storybook/widgets/step-carousel/step-2.svg"),
       heading: "Go to the Box App Center",
     },
     {
-      imgUrl: "/images/storybook/widgets/step-carousel/step-3.svg",
+      imgUrl: getAssetUrl("/images/storybook/widgets/step-carousel/step-3.svg"),
       heading: "Add the ONLYOFFICE app*",
     },
   ],
@@ -79,15 +80,15 @@ Tabs.args = {
       label: "DocSpace",
       items: [
         {
-          imgUrl: "/images/storybook/widgets/step-carousel/docspace-step-1.svg",
+          imgUrl: getAssetUrl("/images/storybook/widgets/step-carousel/docspace-step-1.svg"),
           heading: "Create your free DocSpace account.",
         },
         {
-          imgUrl: "/images/storybook/widgets/step-carousel/docspace-step-2.svg",
+          imgUrl: getAssetUrl("/images/storybook/widgets/step-carousel/docspace-step-2.svg"),
           heading: "Get the integration app from Drupal Marketplace.",
         },
         {
-          imgUrl: "/images/storybook/widgets/step-carousel/docspace-step-3.svg",
+          imgUrl: getAssetUrl("/images/storybook/widgets/step-carousel/docspace-step-3.svg"),
           heading: "Upload and configure the integration app.",
         },
       ],
@@ -96,16 +97,16 @@ Tabs.args = {
       label: "Docs",
       items: [
         {
-          imgUrl: "/images/storybook/widgets/step-carousel/docs-step-1.svg",
+          imgUrl: getAssetUrl("/images/storybook/widgets/step-carousel/docs-step-1.svg"),
           heading:
             "Deploy ONLYOFFICE Docs on your own server or sign up for ONLYOFFICE Docs Cloud.",
         },
         {
-          imgUrl: "/images/storybook/widgets/step-carousel/docs-step-2.svg",
+          imgUrl: getAssetUrl("/images/storybook/widgets/step-carousel/docs-step-2.svg"),
           heading: "Get the integration app from Drupal Marketplace.",
         },
         {
-          imgUrl: "/images/storybook/widgets/step-carousel/docs-step-3.svg",
+          imgUrl: getAssetUrl("/images/storybook/widgets/step-carousel/docs-step-3.svg"),
           heading: "Upload and configure the integration app.",
         },
       ],

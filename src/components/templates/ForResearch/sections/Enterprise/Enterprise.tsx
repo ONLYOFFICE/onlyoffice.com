@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledEnterpriseWrapper,
   StyledEnterpriseContent,
@@ -22,7 +23,7 @@ const items = [
 
 const Enterprise = () => {
   const { t } = useTranslation("for-research");
-  const logo = "/images/templates/for-research/enterprise/logo_comment.svg";
+  const logo = getAssetUrl("/images/templates/for-research/enterprise/logo_comment.svg");
 
   return (
     <Section

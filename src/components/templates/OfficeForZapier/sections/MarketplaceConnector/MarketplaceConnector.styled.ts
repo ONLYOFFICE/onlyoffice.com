@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background-color: #f9f9f9;
   border-top: 1px solid #e2e2e2;
@@ -14,7 +15,7 @@ const StyledMarketplaceConnector = styled.section`
     left: calc(50% - 148px);
     width: 1486px;
     height: 402px;
-    background-image: url("/images/templates/office-for-zapier/marketplace-connector/bg.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-zapier/marketplace-connector/bg.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateY(-50%);
@@ -66,7 +67,7 @@ const StyledMarketplaceConnectorImg = styled.div`
   width: 100%;
   max-width: 328px;
   height: 100%;
-  background-image: url("/images/templates/office-for-zapier/marketplace-connector/apps.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-zapier/marketplace-connector/apps.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

@@ -1,5 +1,6 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IFeatureItemExtended extends IFeatureItem {
   textLinks?: { href: string; isExternal?: boolean }[];
 }
@@ -7,7 +8,7 @@ interface IFeatureItemExtended extends IFeatureItem {
 export const featureItems: IFeatureItemExtended[] = [
   {
     icon: {
-      url: "/images/templates/for-government/features_tools/icons.svg",
+      url: getAssetUrl("/images/templates/for-government/features_tools/icons.svg"),
       positionX: "-18px",
       isSprite: true,
     },
@@ -16,7 +17,7 @@ export const featureItems: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/for-government/features_tools/icons.svg",
+      url: getAssetUrl("/images/templates/for-government/features_tools/icons.svg"),
       positionX: "-123px",
       isSprite: true,
     },
@@ -30,7 +31,7 @@ export const featureItems: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/for-government/features_tools/icons.svg",
+      url: getAssetUrl("/images/templates/for-government/features_tools/icons.svg"),
       positionX: "-247px",
       isSprite: true,
     },
@@ -44,7 +45,7 @@ export const featureItems: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/for-government/features_tools/icons.svg",
+      url: getAssetUrl("/images/templates/for-government/features_tools/icons.svg"),
       positionX: "-358px",
       isSprite: true,
     },
@@ -58,7 +59,7 @@ export const featureItems: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/for-government/features_tools/icons.svg",
+      url: getAssetUrl("/images/templates/for-government/features_tools/icons.svg"),
       positionX: "-458px",
       isSprite: true,
     },

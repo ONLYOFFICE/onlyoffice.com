@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledESSection = styled(Section)`
   position: relative;
 `;
@@ -12,7 +13,7 @@ const StyledBgImage = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/images/templates/healthcare/enterprise-solution/bg.png);
+  background-image: url(${getAssetUrl('/images/templates/healthcare/enterprise-solution/bg.png')});
   background-repeat: no-repeat;
   background-position: 61% -270px;
   width: 100%;

@@ -1,5 +1,6 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IFeatureItemExtended extends IFeatureItem {
   textLinks?: { href: string; isExternal?: boolean }[];
 }
@@ -7,7 +8,7 @@ interface IFeatureItemExtended extends IFeatureItem {
 export const items: IFeatureItemExtended[] = [
   {
     icon: {
-      url: "/images/templates/for-research/features_icons/icons.svg",
+      url: getAssetUrl("/images/templates/for-research/features_icons/icons.svg"),
       positionX: "0px",
       isSprite: true
     },
@@ -16,7 +17,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/for-research/features_icons/icons.svg",
+      url: getAssetUrl("/images/templates/for-research/features_icons/icons.svg"),
       positionX: "-123px",
       isSprite: true
     },
@@ -25,7 +26,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/for-research/features_icons/icons.svg",
+      url: getAssetUrl("/images/templates/for-research/features_icons/icons.svg"),
       positionX: "-242px",
       isSprite: true
     },
@@ -34,7 +35,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/for-research/features_icons/icons.svg",
+      url: getAssetUrl("/images/templates/for-research/features_icons/icons.svg"),
       positionX: "-365px",
       isSprite: true
     },
@@ -43,7 +44,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/for-research/features_icons/icons.svg",
+      url: getAssetUrl("/images/templates/for-research/features_icons/icons.svg"),
       positionX: "-482px",
       isSprite: true
     },
@@ -52,7 +53,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/for-research/features_icons/icons.svg",
+      url: getAssetUrl("/images/templates/for-research/features_icons/icons.svg"),
       positionX: "-603px",
       isSprite: true
     },

@@ -3,9 +3,10 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroWrapperBg = styled.div`
   background-color: #F5F5F5;
-  background-image: url("/images/templates/nonprofit-organizations/hero/hero-bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/nonprofit-organizations/hero/hero-bg.svg')});
   background-position: calc(50% + 200px) 50px;
   background-repeat: no-repeat;
 

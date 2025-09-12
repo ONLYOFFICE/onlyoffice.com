@@ -1,0 +1,31 @@
+{
+  "PageTitle": "ONLYOFFICE bot za Telegram",
+  "PageDescription": "Otvarajte, kreirajte, konvertujte, uređujte i sarađujte na Office dokumentima unutar Telegrama",
+
+  "OnlineOfficeForTelegram": "ONLYOFFICE bot za Telegram",
+  "OpenCreateConvertEdit": "Otvarajte, kreirajte, konvertujte, uređujte i sarađujte na Office dokumentima unutar Telegrama",
+  "StartNow": "Počnite sada. Besplatno je",
+  "HeroImgUrl": "/images/templates/office-for-telegram/hero/en/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-telegram/hero/en/hero@2x.png",
+
+  "DocumentsTab1Label": "Kreirajte nove DOCX, XLSX i PPTX dokumente; otvarajte lokalne fajlove",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-telegram/documents/en/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-telegram/documents/en/screen1@2x.png",
+  "DocumentsTab2Label": "Uređujte i sarađujte na svojim Office dokumentima sa drugim Telegram korisnicima",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-telegram/documents/en/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-telegram/documents/en/screen2@2x.png",
+  "DocumentsTab3Label": "Čitajte i uređujte PDF dokumente, eksportujte/ uvozite u/ iz PDF formata",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-telegram/documents/en/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-telegram/documents/en/screen3@2x.png",
+  "DocumentsTab4Label": "Jednostavno konvertujte dokumente online. Podržano preko 50 formata",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-telegram/documents/en/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-telegram/documents/en/screen4@2x.png",
+  "DocumentsTab5Label": "Podrška za grupna ćaskanja je dostupna!",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-telegram/documents/en/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-telegram/documents/en/screen5@2x.png",
+
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "FeaturesAIHelper": "Robustan skup alata za uređivanje, formatiranje i stilizovanje. Poboljšana sigurnost.",
+  "FeaturesCoEditing": "<0>Uređivanje u realnom vremenu</0> i <0>zaključavanje paragrafa</0>, zajedničko uređivanje, recenzija, istorija verzija, upoređivanje dokumenata, komentari i oznake.",
+  "FeaturesFormats": "Podrška za više od <0>50 formata fajlova</0>. Potpuna kompatibilnost sa MS Office formatima: DOCX, XLSX, PPTX."
+}

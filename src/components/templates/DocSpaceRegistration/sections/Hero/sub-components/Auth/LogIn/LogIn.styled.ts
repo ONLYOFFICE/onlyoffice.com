@@ -4,6 +4,7 @@ import { Link } from "@src/components/ui/Link";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledLogInAccount = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -65,7 +66,7 @@ const StyledLogInSocialButton = styled(Button)<{
     display: block;
     width: ${(props) => (props.$zoom ? "20px" : "24px")};
     height: ${(props) => (props.$zoom ? "20px" : "24px")};
-    background-image: url("/images/templates/docspace-registration/hero/social-icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/docspace-registration/hero/social-icons.svg')});
     background-repeat: no-repeat;
     background-position-x: ${(props) =>
       props.$zoom

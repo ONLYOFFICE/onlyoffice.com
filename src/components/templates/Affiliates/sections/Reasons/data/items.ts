@@ -1,9 +1,10 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IFeatureItem[] = [
   {
     icon: {
-      url: "/images/templates/affiliates/reasons/icons.svg",
+      url: getAssetUrl("/images/templates/affiliates/reasons/icons.svg"),
       positionX: "-108.5px",
     },
     heading: "Reason1Title",
@@ -11,7 +12,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/affiliates/reasons/icons.svg",
+      url: getAssetUrl("/images/templates/affiliates/reasons/icons.svg"),
       positionX: "-216px",
     },
     heading: "Reason2Title",
@@ -19,7 +20,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/affiliates/reasons/icons.svg",
+      url: getAssetUrl("/images/templates/affiliates/reasons/icons.svg"),
       positionX: "-326px",
     },
     heading: "Reason3Title",
@@ -27,7 +28,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/affiliates/reasons/icons.svg",
+      url: getAssetUrl("/images/templates/affiliates/reasons/icons.svg"),
       positionX: "-432px",
     },
     heading: "Reason4Title",
@@ -35,7 +36,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/affiliates/reasons/icons.svg",
+      url: getAssetUrl("/images/templates/affiliates/reasons/icons.svg"),
       positionX: "-542px",
     },
     heading: "Reason5Title",
@@ -43,7 +44,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/affiliates/reasons/icons.svg",
+      url: getAssetUrl("/images/templates/affiliates/reasons/icons.svg"),
       positionX: "-650px",
     },
     heading: "Reason6Title",

@@ -31,7 +31,7 @@
   "OnlineDocumentFeature3": "Поддержка <0>всех</0> языков программирования",
   "OnlineDocumentImgUrl": "/images/templates/for-developers/features/online_document.svg",
   "Generate": "Генерирование документов из кода",
-  "GenerateSub": "ONLYOFFICE Document Builder — SDK для генерации документов с помощью JavaScript кода..",
+  "GenerateSub": "ONLYOFFICE Document Builder — SDK для генерации документов с помощью JavaScript кода.",
   "GenerateFeature1": "Поддержка <0>всех популярных</0> форматов документов",
   "GenerateFeature2": ".Net (C# MVC), .Net (C#), Node.js, PHP, Ruby, C++, Python и <0>другие</0>",
   "GenerateFeature3": "<0>Подробная документация</0> по API JavaScript",

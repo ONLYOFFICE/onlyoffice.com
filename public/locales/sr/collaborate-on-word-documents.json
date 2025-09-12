@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Saradnja na Word dokumentima | ONLYOFFICE",
+  "PageDescription": "Besprekorno sarađujte na Word dokumentima uz ONLYOFFICE. Udobno koautorski uređujte velike dokumente u timu bilo koje veličine koristeći različite alate za saradnju.",
+  "Header": "Besprekorno sarađujte na Word dokumentima",
+  "SubHeader": "Lako koautorski uređujte velike dokumente u timu bilo koje veličine koristeći različite alate za saradnju",
+
+  "HeroImgUrl": "/images/templates/collaborate-on-word-documents/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/collaborate-on-word-documents/hero/hero@2x.png",
+
+  "Feature1Title": "Delite bezbedno",
+  "Feature1Desc": "Delite dokumenta za pregled i uređivanje i koristite napredna podešavanja deljenja da omogućite komentarisanje ili reviziju. Kreirajte obrasce spremne za popunjavanje i dozvolite drugim korisnicima da ih popune. Ograničite kopiranje, preuzimanje i štampanje dokumenata.",
+
+  "Feature2Title": "Ko-uređujte bez stresa",
+  "Feature2Desc": "Saradjujte na dokumentima onlajn u realnom vremenu pomoću Brzog režima ili radite privatno na tekstovima i pasusima uz Strogi režim. Koristite Poništi i Ponovi, praćenje izmena i druge alate nezavisno od drugih.",
+
+  "Feature3Title": "Komentarišite i diskutujte",
+  "Feature3Desc": "Ostavite komentare kako biste diskutovali o pitanjima i problemima. Sortirajte komentare po autoru i datumu. Pomenite korisnike u komentarima da biste ih pozvali na saradnju i odmah podelili fajl sa njima. Koristite ugrađeni čet, Telegram ili Jitsi dodatke za komunikaciju sa svojim timom.",
+
+  "Feature4Title": "Pratite izmene i upoređujte sadržaj",
+  "Feature4Desc": "Najbolji način za saradnju na Word dokumentu je da prikažete svoj doprinos drugima. Omogućite Praćenje izmena da biste istakli svoj rad, pregledali promene koje su napravili drugi i prihvatili ili obrisali ih. Pregledajte i vratite verzije dokumenata u kartici istorije i uporedite odvojene dokumente pomoću opcije Upoređivanje dokumenata.",
+
+  "Feature1ImgUrl": "/images/templates/collaborate-on-word-documents/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/collaborate-on-word-documents/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/collaborate-on-word-documents/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/collaborate-on-word-documents/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/collaborate-on-word-documents/features/pic4@2x.png"
+}

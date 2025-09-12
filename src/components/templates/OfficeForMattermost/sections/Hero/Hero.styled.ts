@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #f9f9f9;
-  background-image: url("/images/templates/office-for-mattermost/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-mattermost/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: calc(50% - 115px) -374px;
   background-size: 2652px 2084px;
@@ -43,7 +44,7 @@ export const StyledHeroWrapper = styled.div`
 export const StyledHeroLogo = styled.div`
   width: 48px;
   height: 48px;
-  background: url("/images/templates/office-for-mattermost/hero/logo.svg")
+  background: url(${getAssetUrl('/images/templates/office-for-mattermost/hero/logo.svg')})
     no-repeat center;
   background-size: contain;
 

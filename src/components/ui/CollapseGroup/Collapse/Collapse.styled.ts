@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { ICollapse } from "./Collapse.types";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCollapse = styled.div<{
   $divider: ICollapse["divider"];
 }>`
@@ -47,10 +48,10 @@ const StyledCollapseLabel = styled.button<{ $isOpen: ICollapse["isOpen"] }>`
     ${(props) =>
       props.$isOpen
         ? css`
-            background-image: url("/images/icons/dash.svg");
+            background-image: url(${getAssetUrl('/images/icons/dash.svg')});
           `
         : css`
-            background-image: url("/images/icons/plus.svg");
+            background-image: url(${getAssetUrl('/images/icons/plus.svg')});
           `}
   }
 

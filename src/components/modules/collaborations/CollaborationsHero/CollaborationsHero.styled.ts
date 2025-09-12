@@ -6,9 +6,10 @@ import { device } from "@src/utils/device";
 import styled, { css } from "styled-components";
 import { ICollaborationsHero } from "./CollaborationsHero.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCollaborationsHeroSection = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/templates/document-management/hero/clouds.svg");
+  background-image: url(${getAssetUrl('/images/templates/document-management/hero/clouds.svg')});
   background-position: calc(50% + 290px) 100px;
   background-repeat: no-repeat;
   background-color: #f5f5f5;

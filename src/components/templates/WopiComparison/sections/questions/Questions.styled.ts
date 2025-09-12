@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledQuestionsWrapper = styled(Section)`
   text-align: center;
 `;
@@ -18,7 +19,7 @@ const StyledQuestionsHeader = styled(Heading)`
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url("/images/templates/wopi-comparison/questions/questions.svg");
+    background-image: url(${getAssetUrl('/images/templates/wopi-comparison/questions/questions.svg')});
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40px 40px;

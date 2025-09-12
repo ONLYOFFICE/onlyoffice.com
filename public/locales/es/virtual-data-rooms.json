@@ -1,17 +1,17 @@
 {
-  "PageTitle": "Utiliza Salas de datos virtuales para una mayor seguridad y transparencia de los archivos",
+  "PageTitle": "ONLYOFFICE - Aplicaciones ofimáticas en la nube",
   "PageDescription": "Organiza el almacenamiento seguro y el intercambio de información empresarial confidencial en ONLYOFFICE DocSpace",
 
-  "UseVirtualDataRooms": "Utiliza <0>Salas de datos virtuales</0> para una mayor seguridad y transparencia de los archivos",
+  "UseVirtualDataRooms": "Utiliza <0>salas de datos virtuales</0> para una mayor seguridad y transparencia de los archivos",
   "OrganizeSecure": "Organiza el almacenamiento seguro y el intercambio de información empresarial confidencial en ONLYOFFICE DocSpace",
 
   "IdealForDueDiligence": "Ideal para la diligencia debida",
   "CompletelyOrganized": "Organización completa",
   "HighLevelOfDataSecurity": "Alto nivel de seguridad de los datos",
   "AdvancedRoleBased": "Rellenado avanzado de formularios basado en roles",
-  "CostEffectiveForAnyBudget": "Rentable para cualquier presupuesto",
+  "CostEffectiveForAnyBudget": "Eficacia para cualquier presupuesto",
 
-  "CreateFreeAccount": "Crear cuenta gratuita",
+  "CreateFreeAccount": "Crear cuenta gratis",
 
   "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
   "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
@@ -28,7 +28,7 @@
   "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/security.png",
   "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/security@2x.png",
 
-  "AdvancedRoleBasedText": "Invita a tu equipo y asigna roles que se ajusten perfectamente a la estructura de tu empresa. Sigue el progreso de los formularios en tiempo real. Accede fácilmente a los formularios completados y pendientes, finalízalos y recupera las versiones terminadas para que el proceso se desarrolle sin problemas.",
+  "AdvancedRoleBasedText": "Invita a tu equipo y asigna roles que se ajusten perfectamente a la estructura organizativa de tu empresa. Sigue el progreso de los formularios en tiempo real. Visualiza fácilmente los formularios completados y pendientes, finalízalos y recupera las versiones terminadas para un proceso fluido.",
   "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/advanced.png",
   "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/advanced@2x.png",
 
@@ -36,10 +36,10 @@
   "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget.png",
   "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget@2x.png",
 
-  "LearnMoreHeading": "Más información sobre las salas de datos virtuales en DocSpace",
+  "LearnMoreHeading": "Más información sobre las salas de datos virtuales de DocSpace",
 
   "HelpCenter": "Centro de ayuda",
-  "HelpCenterDesc": "Consulta las guías detalladas del usuario para un trabajo eficaz",
+  "HelpCenterDesc": "Consulta las guías de usuario detalladas para trabajar eficazmente",
   "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
   "LearnMore": "Más información",
 
@@ -48,8 +48,8 @@
   "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
   "WatchNow": "Ver ahora",
 
-  "CustomerTestimonial": "Testimonio del cliente",
+  "CustomerTestimonial": "Testimonio de un cliente",
   "HowKinderhausBerlinSharesAndCollaborates": "Cómo Kinderhaus Berlin comparte y colabora en archivos confidenciales con ONLYOFFICE DocSpace",
   "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/es/2023/11/como-kinderhaus-berlin-utiliza-onlyoffice-docspace",
-  "ReadStory": "Leer historia"
+  "ReadStory": "Leer artículo"
 }

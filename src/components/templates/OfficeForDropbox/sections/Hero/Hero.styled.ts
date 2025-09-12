@@ -2,9 +2,10 @@ import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/templates/office-for-dropbox/hero/hero.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-dropbox/hero/hero.svg')});
   background-position: calc(50% - 70px) -564px;
   background-repeat: no-repeat;
   background-color: #f9f9f9;
@@ -47,7 +48,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 234px;
   height: 46px;
-  background-image: url("/images/templates/office-for-dropbox/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-dropbox/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 

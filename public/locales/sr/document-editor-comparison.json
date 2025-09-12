@@ -1,14 +1,14 @@
 {
-  "PageTitle": "Compare ONLYOFFICE Docs to MS Office Online, Google Docs, Zoho | ONLYOFFICE",
-  "PageDescription": "ONLYOFFICE Docs combines the best of leading online office suites and offers even more.",
+  "PageTitle": "Uporedite ONLYOFFICE Docs sa MS Office Online, Google Docs, Zoho | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICE Docs kombinuje najbolje iz vodećih online kancelarijskih paketa i nudi još više.",
 
-  "HeroTitle": "<0>ONLYOFFICE Docs</0> is the world's #1 online editors",
-  "HeroText": "Built on the HTML5 Canvas element, ONLYOFFICE Docs combines the best of leading online office suites and offers even more.",
-  "GetItNow": "Get it now",
-  "SeeItInAction": "See it in action",
-  "HeroVideoText": "Watch this video to learn why ONLYOFFICE Docs is the best online office suite",
+  "HeroTitle": "<0>ONLYOFFICE Docs</0> je najbolji online urednik na svetu",
+  "HeroText": "Izgrađeni na HTML5 Canvas elementu, ONLYOFFICE Docs kombinuje najbolje iz vodećih online kancelarijskih paketa i nudi još više.",
+  "GetItNow": "Preuzmite odmah",
+  "SeeItInAction": "Pogledajte u akciji",
+  "HeroVideoText": "Pogledajte ovaj video i saznajte zašto je ONLYOFFICE Docs najbolji online kancelarijski paket",
 
-  "ComparisonTitle": "For an in-depth comparison of <0>ONLYOFFICE Docs</0> with other office suites, take a look at the corresponding page",
+  "ComparisonTitle": "Za detaljno poređenje <0>ONLYOFFICE Docs</0> sa drugim kancelarijskim paketima, pogledajte odgovarajuću stranicu",
   "OODocsVsOfficeOnline": "ONLYOFFICE Docs vs MS Office Online",
   "OODocsVsGoogleDocs": "ONLYOFFICE Docs vs Google Docs",
   "OODocsVsZohoDocs": "ONLYOFFICE Docs vs Zoho Docs",
@@ -17,14 +17,14 @@
   "OODocsVsAdobe": "ONLYOFFICE Docs vs Adobe",
   "OODocsVsHancom": "ONLYOFFICE Docs vs Hancom",
 
-  "CheckOutTheCompatibility": "Check out the compatibility with MS Office formats",
-  "CheckOutTheCompatibilityText": "We saved the <0>docx file</0> and <1>xlsx file</1> created by Microsoft in PDF using other suites. Here's the result.",
-  "Documents": "Documents (.docx)",
-  "Spreadsheets": "Spreadsheets (.xlsx)",
+  "CheckOutTheCompatibility": "Pogledajte kompatibilnost sa MS Office formatima",
+  "CheckOutTheCompatibilityText": "Sačuvali smo <0>docx fajl</0> i <1>xlsx fajl</1> kreirane u Microsoft-u u PDF koristeći druge pakete. Evo rezultata.",
+  "Documents": "Dokumenti (.docx)",
+  "Spreadsheets": "Tabele (.xlsx)",
 
-  "StillNotConvinced": "Još uvek niste uvereni? Uporedite urednike sami!",
-  "StillNotConvincedText": "Preuzmite <0>docx</0> i <1>xlsx</1> datoteke i pokušajte da ih uredite koristeći MS Word Online, Google Docs, Zoho Docs, LibreOffice/OpenOffice, WPS Office, Hancom Office i ONLYOFFICE Docs.",
+  "StillNotConvinced": "Još niste uvereni? Uporedite urednike sami!",
+  "StillNotConvincedText": "Preuzmite <0>docx</0> i <1>xlsx</1> fajlove i pokušajte da ih izmenite koristeći MS Word Online, Google Docs, Zoho Docs, LibreOffice/OpenOffice, WPS Office, Hancom Office i ONLYOFFICE Docs.",
   "StillNotConvincedLink": "Pročitajte uputstvo kako da uporedite urednike",
-  "GetOODocsNow": "NABAVITE ONLYOFFICE DOCS ODMAH",
+  "GetOODocsNow": "PREUZMITE ONLYOFFICE DOCS ODMAH",
   "TryItInTheCloud": "ISPROBAJTE U OBLAKU"
 }

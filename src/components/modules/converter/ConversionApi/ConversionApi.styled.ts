@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledConversionApiWrapper = styled.div`
   text-align: center;
 `;
@@ -18,7 +19,7 @@ const StyledConversionApiImage = styled.div`
   margin: 0 auto 32px;
   width: 116px;
   height: 104px;
-  background-image: url("/images/modules/converter/conversion-api/icon.svg");
+  background-image: url(${getAssetUrl('/images/modules/converter/conversion-api/icon.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

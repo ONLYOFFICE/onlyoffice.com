@@ -6,6 +6,7 @@ import { Text } from "@src/components/ui/Text";
 import { FeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
 import { websiteItems, accountItems } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const DocSpaceApp = () => {
   const { t } = useTranslation("office-for-drupal");
 
@@ -44,7 +45,7 @@ const DocSpaceApp = () => {
                 </>
               ),
               image: {
-                url: t(image.url),
+                url: getAssetUrl(t(image.url)),
                 url2x: image.url2x ? t(image.url2x) : undefined,
               },
             }))}
@@ -66,7 +67,7 @@ const DocSpaceApp = () => {
             items={accountItems.map(({ label, image }) => ({
               label: t(String(label)),
               image: {
-                url: t(image.url),
+                url: getAssetUrl(t(image.url)),
                 url2x: image.url2x ? t(image.url2x) : undefined,
               },
             }))}

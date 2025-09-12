@@ -4,6 +4,7 @@ import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroButtonWrapper,
   StyledHeroHeading,
@@ -60,15 +61,15 @@ const Hero = () => {
           {locale === "zh" ? (
             <StyledHeroImageWrapper>
               <StyledHeroImage
-                $imageUrl={t("HeroImageHeader")}
+                $imageUrl={getAssetUrl(t("HeroImageHeader"))}
                 $imageUrl2x={t("HeroImageHeader@2x")}
               />
             </StyledHeroImageWrapper>
           ) : (
             <StyledHeroYouTubeWrapper>
               <StyledYouTubeCard
-                videoImgUrl={t("HeroYouTubeCoverHeader@2x")}
-                videoUrl={t("HeroYouTubeUrl")}
+                videoImgUrl={getAssetUrl(t("HeroYouTubeCoverHeader@2x"))}
+                videoUrl={getAssetUrl(t("HeroYouTubeUrl"))}
                 border={true}
               />
             </StyledHeroYouTubeWrapper>

@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroButtons,
   StyledHeroButton,
@@ -34,7 +35,7 @@ const Hero = ({ locale, desktopProducts, mobileProducts }: IHero) => {
           button: {
             id: "desktop",
             icon: {
-              url: "/images/templates/download-desktop/hero/icons.svg",
+              url: getAssetUrl("/images/templates/download-desktop/hero/icons.svg"),
               positionY: "-70px",
               width: "80px",
             },
@@ -95,7 +96,7 @@ const Hero = ({ locale, desktopProducts, mobileProducts }: IHero) => {
           button: {
             id: "mobile",
             icon: {
-              url: "/images/templates/download-desktop/hero/icons.svg",
+              url: getAssetUrl("/images/templates/download-desktop/hero/icons.svg"),
               positionX: "center",
             },
             label: t("Mobile"),
