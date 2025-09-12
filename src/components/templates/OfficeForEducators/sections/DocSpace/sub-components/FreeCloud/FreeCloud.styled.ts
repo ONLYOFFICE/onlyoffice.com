@@ -4,6 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFreeCloud = styled.div`
   background-color: #ffffff;
   padding: 64px;
@@ -45,7 +46,7 @@ const StyledFreeCloudTitle = styled(Heading)`
     transform: translateX(-50%);
     width: 150px;
     height: 72px;
-    background-image: url("/images/templates/office-for-educators/sprites/icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-educators/sprites/icons.svg')});
     background-repeat: no-repeat;
     background-position: -754px center;
   }

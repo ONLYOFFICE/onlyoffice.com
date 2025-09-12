@@ -3,9 +3,9 @@ import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
-
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCardCommentWrapper = styled.div`
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 3px 9px rgba(85, 85, 85, 0.1);
   margin: 0 auto;
@@ -14,7 +14,7 @@ const StyledCardCommentWrapper = styled.div`
   text-align: center;
 
   &::before {
-    background-image: url("/images/templates/technology-partners/cardcomment/quotes.svg");
+    background-image: url(${getAssetUrl('/images/templates/technology-partners/cardcomment/quotes.svg')});
     background-repeat: no-repeat;
     content: "";
     display: block;

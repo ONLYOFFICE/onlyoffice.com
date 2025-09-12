@@ -13,7 +13,9 @@ import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
 import { IBestAlternativeCompareProps } from "./BestAlternativeCompare.types";
 
-const BestAlternativeCompare = ({ alternative }: IBestAlternativeCompareProps) => {
+const BestAlternativeCompare = ({
+  alternative,
+}: IBestAlternativeCompareProps) => {
   const { t } = useTranslation("BestAlternativeCompare");
 
   return (

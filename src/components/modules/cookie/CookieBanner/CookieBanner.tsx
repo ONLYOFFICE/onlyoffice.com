@@ -7,6 +7,7 @@ import {
   StyledCookieBannerHeader,
   StyledCross,
 } from "./CookieBanner.styled";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";
@@ -14,11 +15,9 @@ import { useState, useEffect, useRef } from "react";
 import { CookieSettings } from "../CookieSettings/CookieSettings";
 import {
   setConsentCookie,
-  applyConsent,
   DEFAULT_CONSENT,
   ALL_GRANTED,
 } from "@src/utils/useUtmCookies";
-import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 
 function getConsentCookie(): IConsentData | null {
   if (typeof document === "undefined") return null;
@@ -39,38 +38,23 @@ export interface IConsentData {
 
 const CookieBanner = () => {
   const { t } = useTranslation("common");
+  const IPGeolocationCountry = useIPGeolocationStore(
+    (state) => state.IPGeolocationInfo.country,
+  );
+
   const [consent, setConsent] = useState<IConsentData | null>(null);
   const [showBanner, setShowBanner] = useState(false);
   const [showFab, setShowFab] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const { IPGeolocationInfo, setIPGeolocationInfo } = useIPGeolocationStore();
   const [isFullGDPR, setIsFullGDPR] = useState(true);
   const scrolledRef = useRef(false);
 
   useEffect(() => {
-    (async () => {
-      const res = await fetch("/api/ip-geolocation");
-      const data = await res.json();
-      setIPGeolocationInfo(data);
-    })();
-  }, [
-    IPGeolocationInfo.regionDbEntity.domain,
-    IPGeolocationInfo.regionDbEntity?.regionDbKey,
-    setIPGeolocationInfo,
-  ]);
-
-  const selectedCountry = useIPGeolocationStore(
-    (state) => state.IPGeolocationInfo.country,
-  );
-
-  useEffect(() => {
     let gdpr = true;
 
-    if (!selectedCountry) {
-      const lang = (navigator.language)
-        .slice(0, 2)
-        .toLowerCase();
-
+    if (!IPGeolocationCountry) {
+      const lang = navigator.language.slice(0, 2).toLowerCase();
+      // prettier-ignore
       const GDPR_LANGS = [
         "de", "fr", "it", "es", "nl", "pl", "fi", "sv", "da", "hu", "el", "cs", "pt", "ro", "sk",
         "sl", "hr", "et", "lv", "lt", "mt", "ga", "is", "no", "nb", "nn", "lb", "bg", "tr",
@@ -81,6 +65,7 @@ const CookieBanner = () => {
         gdpr = false;
       }
     } else {
+      // prettier-ignore
       const ALL_COUNTRIES = [
         "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT",
         "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE",
@@ -88,19 +73,19 @@ const CookieBanner = () => {
         "CN", "SG", "ZA", "NG", "KE"
       ];
 
-      if (!ALL_COUNTRIES.includes(selectedCountry)) {
+      if (!ALL_COUNTRIES.includes(IPGeolocationCountry)) {
         gdpr = false;
       }
     }
 
     setIsFullGDPR(gdpr);
-  }, [selectedCountry]);
+  }, [IPGeolocationCountry]);
 
   useEffect(() => {
     const handleScroll = () => {
       if (!isFullGDPR && !scrolledRef.current && !getConsentCookie()) {
         const top = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight; 
+        const docHeight = document.documentElement.scrollHeight;
         const winHeight = window.innerHeight;
 
         const scrollPercent = (top + winHeight) / docHeight;
@@ -108,7 +93,6 @@ const CookieBanner = () => {
         if (scrollPercent >= 0.2) {
           scrolledRef.current = true;
           setConsentCookie(ALL_GRANTED);
-          applyConsent(ALL_GRANTED);
         }
       }
     };
@@ -116,10 +100,10 @@ const CookieBanner = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isFullGDPR]);
-    
+
   useEffect(() => {
     const consentFromCookie = getConsentCookie();
-  
+
     if (consentFromCookie) {
       setConsent(consentFromCookie);
       setShowBanner(false);
@@ -129,9 +113,8 @@ const CookieBanner = () => {
         const sameOrigin =
           document.referrer &&
           location.hostname === new URL(document.referrer).hostname;
-  
+
         if (sameOrigin) {
-          applyConsent(ALL_GRANTED);
           setConsentCookie(ALL_GRANTED);
           setShowBanner(false);
           setShowFab(true);
@@ -144,18 +127,36 @@ const CookieBanner = () => {
         setShowBanner(true);
       }
     }
+
+    const handleScroll = () => {
+      if (!isFullGDPR && !scrolledRef.current && !getConsentCookie()) {
+        const top = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight; 
+        const winHeight = window.innerHeight;
+
+        const scrollPercent = (top + winHeight) / docHeight;
+
+        if (scrollPercent >= 0.2) {
+          scrolledRef.current = true;
+          setConsentCookie(ALL_GRANTED);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [isFullGDPR]);
 
   const handleAcceptAll = () => {
     setConsentCookie(ALL_GRANTED);
-    applyConsent(ALL_GRANTED);
+    setConsent(ALL_GRANTED);
     setShowBanner(false);
     setShowFab(true);
   };
 
   const handleDeclineAll = () => {
     setConsentCookie(DEFAULT_CONSENT);
-    applyConsent(DEFAULT_CONSENT);
+    setConsent(DEFAULT_CONSENT);
     setShowBanner(false);
     setShowFab(true);
   };
@@ -191,7 +192,9 @@ const CookieBanner = () => {
               label={t("HarmonyInYourCookies")}
               level={4}
             />
-            {!isFullGDPR && <StyledCross id="cookie-banner-close" onClick={handleCross} />}
+            {!isFullGDPR && (
+              <StyledCross id="cookie-banner-close" onClick={handleCross} />
+            )}
           </StyledCookieBannerHeader>
           <Text fontSize="14px">
             <Trans

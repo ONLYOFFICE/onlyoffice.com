@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroSection,
   StyledHeroDescription,
@@ -39,7 +40,7 @@ const Hero = ({
           button: {
             id: "docs-enterprise",
             icon: {
-              url: "/images/templates/download-commercial-new/hero/docs.svg",
+              url: getAssetUrl("/images/templates/download-commercial-new/hero/docs.svg"),
             },
             label: t("OODocs"),
           },
@@ -70,13 +71,18 @@ const Hero = ({
                     <DownloadBlock
                       key={index}
                       {...item}
+                      readInstructionLink={
+                        item.readInstructionLink
+                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          : undefined
+                      }
                       heading={t(item.heading)}
                       buttons={item.buttons.map((button) => ({
                         id: button.id,
                         label: t(button.label),
                         ...(button.link?.href && {
                           link: {
-                            href: button.link.href,
+                            href: t(button.link.href, { defaultValue: button.link.href }),
                             isExternal: button.link.isExternal,
                           },
                         }),
@@ -125,6 +131,11 @@ const Hero = ({
                     <DownloadBlock
                       key={index}
                       {...item}
+                      readInstructionLink={
+                        item.readInstructionLink
+                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          : undefined
+                      }
                       heading={t(item.heading)}
                       buttons={item.buttons.map((button) => ({
                         id: button.id,
@@ -147,7 +158,7 @@ const Hero = ({
           button: {
             id: "workspace",
             icon: {
-              url: "/images/templates/download-commercial-new/hero/workspace.svg",
+              url: getAssetUrl("/images/templates/download-commercial-new/hero/workspace.svg"),
             },
             label: t("OOWorkspace"),
           },
@@ -163,6 +174,11 @@ const Hero = ({
                   <DownloadBlock
                     key={index}
                     {...item}
+                    readInstructionLink={
+                      item.readInstructionLink
+                        ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                        : undefined
+                    }
                     heading={t(item.heading)}
                     buttons={item.buttons.map((button) => ({
                       id: button.id,
@@ -184,7 +200,7 @@ const Hero = ({
           button: {
             id: "docspace",
             icon: {
-              url: "/images/templates/download-commercial-new/hero/docspace.svg",
+              url: getAssetUrl("/images/templates/download-commercial-new/hero/docspace.svg"),
               size: "contain",
             },
             label: t("OODocSpace"),
@@ -201,6 +217,11 @@ const Hero = ({
                   <DownloadBlock
                     key={index}
                     {...item}
+                    readInstructionLink={
+                      item.readInstructionLink
+                        ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                        : undefined
+                    }
                     heading={t(item.heading)}
                     buttons={item.buttons.map((button) => ({
                       id: button.id,

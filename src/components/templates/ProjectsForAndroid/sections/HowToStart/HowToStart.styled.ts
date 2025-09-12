@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHowToStartWrapper = styled.div`
     display: flex;
     justify-content: space-between;
@@ -74,7 +75,7 @@ const StyledLink = styled(Link)`
 `;
 
 const WrapperRightBlock = styled.div`
-    background-image: url("/images/templates/projects-for-android/how-to-start/proj-how-to-start.svg");
+    background-image: url(${getAssetUrl('/images/templates/projects-for-android/how-to-start/proj-how-to-start.svg')});
     background-repeat: no-repeat;
     display: block;
     height: 400px;

@@ -152,52 +152,41 @@ const Hero = () => {
     setFormStatus("loading");
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
+      const d = new Date(formData.date);
+      const formattedDate = `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
+      const responseCallBack = await fetch("/api/call-back-form", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token: formData.hcaptcha }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: formData.fullName ?? "",
+          email: formData.email ?? "",
+          phone: formData.phone ?? "",
+          language: formData.lang ?? "",
+          product: formData.product ?? "",
+          desireddatetime: formattedDate + " " + formData.time,
+          timezone: formData.timeZoneOffset,
+          calltheme: formData.topic ?? "",
+          hCaptchaResponse: formData.hcaptcha,
+        }),
       });
 
-      const hCaptchaData = await hCaptchaResponse.json();
+      const dataCallBack = await responseCallBack.json();
 
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
+      if (dataCallBack.status === "errorHCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");
         }, 5000);
         return;
-      }
+      } else if (dataCallBack.status === "success") {
+        setFormStatus("success");
 
-      if (hCaptchaData.status === "success") {
-        const d = new Date(formData.date);
-        const formattedDate = `${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()}`;
-        const responseCallBack = await fetch("/api/call-back-form", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            fullName: formData.fullName ?? "",
-            email: formData.email ?? "",
-            phone: formData.phone ?? "",
-            language: formData.lang ?? "",
-            product: formData.product ?? "",
-            desireddatetime: formattedDate + " " + formData.time,
-            timezone: formData.timeZoneOffset,
-            calltheme: formData.topic ?? "",
-          }),
-        })
-        
-        const dataCallBack = await responseCallBack.json();
-
-        if (dataCallBack.status === "success") {
-          setFormStatus("success");
-
-          setTimeout(() => {
-            setFormStatus("default");
-            clearData();
-          }, 5000);
-        }
+        setTimeout(() => {
+          setFormStatus("default");
+          clearData();
+        }, 5000);
       } else {
         setFormStatus("error");
       }
@@ -319,6 +308,7 @@ const Hero = () => {
               status={
                 isEmpty.phone ? "error" : formData.phone ? "success" : "default"
               }
+              required
             />
             <Select
               selected={selectedLang}

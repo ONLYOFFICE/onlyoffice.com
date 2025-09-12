@@ -1,5 +1,6 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHero,
   StyledHeroContent,
@@ -34,7 +35,7 @@ const Hero = ({locale}: ILocale) => {
               />
             </StyledHeroHeading>
             <StyledHeroText label={t(hero.text)} />
-            <StyledButton as="a" $locale={locale} $HeroImgUrl={t(hero.image.url)} target={locale === "zh" ? "_self" : "_blank"} href={t(hero.btnHref)} />
+            <StyledButton as="a" $locale={locale} $HeroImgUrl={getAssetUrl(t(hero.image.url))} target={locale === "zh" ? "_self" : "_blank"} href={t(hero.btnHref)} />
           </StyledHeroContent>
           <StyledHeroImage />
         </StyledHeroWrapper>

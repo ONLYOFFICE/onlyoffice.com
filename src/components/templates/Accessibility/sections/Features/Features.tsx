@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledFeaturesHeading,
   StyledFeaturesTabs,
@@ -14,6 +15,7 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { items } from "./data/items";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
+import { getLink } from "@src/utils/getLink";
 
 const Features = () => {
   const { t } = useTranslation("accessibility");
@@ -59,12 +61,20 @@ const Features = () => {
             .map((group, groupIndex) => (
               <FeatureImageItem
                 links={group.links?.map((link) => ({
-                  ...link,
                   label: t(String(link.label)),
+                  href: t(link.href, {
+                    defaultValue: link.href.includes("app-directory")
+                      ? link.href.replace(
+                          "https://www.onlyoffice.com/app-directory",
+                          getLink("marketplace", locale!),
+                        )
+                      : link.href,
+                  }),
+                  isExternal: link.isExternal,
                 }))}
                 key={groupIndex}
                 image={{
-                  url: t(group.image.url),
+                  url: getAssetUrl(t(group.image.url)),
                   url2x: group.image.url2x ? t(group.image.url2x) : undefined,
                   height: 520,
                 }}

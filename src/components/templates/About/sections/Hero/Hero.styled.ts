@@ -4,10 +4,11 @@ import { Heading } from "@src/components/ui/Heading";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)<{
   $locale: string;
 }>`
-  background-image: ${({ $locale }) => $locale === "zh" ? "" : "url(/images/templates/about/hero/hero-img.svg)"};
+  background-image: ${({ $locale }) => $locale === "zh" ? "" : `url(${getAssetUrl('/images/templates/about/hero/hero-img.svg')})`};
   background-repeat: no-repeat;
   background-position-y: 25%;
   background-position-x: calc(50% + 260px);
@@ -78,7 +79,7 @@ const StyledHeroQuotesText = styled(Text)`
     display: block;
     width: 102px;
     height: 84px;
-    background-image: url("/images/templates/about/hero/quotes.svg");
+    background-image: url(${getAssetUrl('/images/templates/about/hero/quotes.svg')});
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

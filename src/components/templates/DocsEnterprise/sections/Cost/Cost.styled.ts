@@ -3,6 +3,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCostBusinessBlock = styled.div`
   justify-content: space-between;
   text-align: start;
@@ -66,7 +67,7 @@ const StyledCostBusinessListItem = styled.li`
   display: flex;
 
   &:before {
-    background: url(/images/templates/docs-enterprise/cost/chech-support-orange.svg) no-repeat 0 0;
+    background: url(${getAssetUrl('/images/templates/docs-enterprise/cost/chech-support-orange.svg')}) no-repeat 0 0;
     content: '';
     display: inline-block;
     height: 12px;
@@ -131,7 +132,7 @@ const StyledCostBusinessImage = styled.div`
   right: -1px;
   width: 50%;
   height: 100%;
-  background-image: url(/images/templates/docs-enterprise/cost/cost-efficient.svg);
+  background-image: url(${getAssetUrl('/images/templates/docs-enterprise/cost/cost-efficient.svg')});
   background-repeat: no-repeat;
   background-position: 100% 0;
   background-size: contain;
@@ -162,12 +163,8 @@ const StyledInformationText = styled(Text)`
   font-size: 16px;
   text-align: center;
 
-  > span {
-   display: block;
-   }
-
   &:before {
-    background-image: url(/images/templates/docs-enterprise/cost/union.svg);
+    background-image: url(/images/templates/docs-enterprise/cost/union.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     content: '';

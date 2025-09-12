@@ -1,5 +1,6 @@
 import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IFeatureImageItemExtended extends IFeatureImageItem {
   text: string[];
 }
@@ -13,12 +14,12 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
       "AdditionallyItIsPossible",
     ],
     image: {
-      url: "/images/templates/security/compliance/sec_gray_imgs.svg",
+      url: getAssetUrl("/images/templates/security/compliance/sec_gray_imgs.svg"),
     },
     links: [
       {
         label: "ReadMoreAbout",
-        href: "https://helpcenter.onlyoffice.com/guides/two-factor-authentication.aspx", 
+        href: "https://helpcenter.onlyoffice.com/guides/two-factor-authentication.aspx",
         isExternal: true
       }
     ]
@@ -30,12 +31,12 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
       "CurrentlyWeHave",
     ],
     image: {
-      url: "/images/templates/security/compliance/sec_gray_imgs.svg",
+      url: getAssetUrl("/images/templates/security/compliance/sec_gray_imgs.svg"),
     },
     links: [
       {
         label: "ReadMoreAboutHowSingle",
-        href: "https://helpcenter.onlyoffice.com/server/controlpanel/enterprise/sso-description.aspx", 
+        href: "https://helpcenter.onlyoffice.com/server/controlpanel/enterprise/sso-description.aspx",
         isExternal: true
       }
     ]
@@ -47,12 +48,12 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
       "UsersOfYourPrivate",
     ],
     image: {
-      url: "/images/templates/security/compliance/sec_gray_imgs.svg",
+      url: getAssetUrl("/images/templates/security/compliance/sec_gray_imgs.svg"),
     },
     links: [
       {
         label: "ReadMoreAboutTheAccess",
-        href: "https://helpcenter.onlyoffice.com/video/manage-access-rights.aspx", 
+        href: "ReadMoreAboutTheAccessLink",
         isExternal: true
       }
     ]
@@ -70,7 +71,7 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
       "AuditTrail",
     ],
     image: {
-      url: "/images/templates/security/compliance/sec_gray_imgs.svg",
+      url: getAssetUrl("/images/templates/security/compliance/sec_gray_imgs.svg"),
     },
   },
 ];

@@ -2,9 +2,9 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-import { CardWhitepapers } from "./sub-components/CardWhitepapers";
+import { CardWhitePapers } from "./sub-components/CardWhitePapers";
 import { CardDatasheets } from "./sub-components/CardDatasheets";
-import { cardWhitepapersItems } from "./data/cardWhitepapersItems";
+import { cardWhitePapersItems } from "./data/cardWhitePapersItems";
 import { cardDatasheetsItems } from "./data/cardDatasheetsItems";
 import { useRefineCardsItems } from "./utils/useRefineCardsItems";
 import { useHandleClickOutside } from "./utils/useHandleClickOutside";
@@ -12,6 +12,7 @@ import { useFilterCounter } from "./utils/useFilterCounter";
 import { ICardsProp, TFilterKey, TSortDateKey } from "../../WhitePapers.types";
 import { ILocale } from "@src/types/locale";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledCardsFiltersWrapper,
   StyledCardsFilterSelect,
@@ -97,7 +98,7 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
   }, [locale]);
 
   const { refineWhitepaperItems, refineDatasheetsItems } = useRefineCardsItems(
-    cardWhitepapersItems,
+    cardWhitePapersItems,
     cardDatasheetsItems,
     sortValue,
     choosedModule,
@@ -274,14 +275,15 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                 <StyledCardsHeading label={t("WhitePapers")} textAlign="center" level={2} size={4} />
                 <StyledCardsList>
                   {refineWhitepaperItems.map(item => (
-                    <CardWhitepapers
+                    <CardWhitePapers
                       key={item.id}
                       head={t(item.head)}
                       title={t(item.title)}
                       date={item.date}
-                      download_url={t(item.download_url)}
+                      download_url={getAssetUrl(t(item.download_url))}
                       description={t(item.description)}
                       locale={locale}
+                      id_url={item.id_url}
                     />
                   ))}
                 </StyledCardsList>
@@ -300,9 +302,10 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                         title={t(item.title)}
                         product={t(item.product)}
                         image_url={item.image_url}
-                        download_url={t(item.download_url)}
+                        download_url={getAssetUrl(t(item.download_url))}
                         displayOther={index < dataSheetsDisplayCount}
                         locale={locale}
+                        id_url={item.id_url}
                       />
                     )
                   ))}
@@ -313,9 +316,10 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
                       title={t(item.title)}
                       product={t(item.product)}
                       image_url={item.image_url}
-                      download_url={t(item.download_url)}
+                      download_url={getAssetUrl(t(item.download_url))}
                       displayOther={index < dataSheetsDisplayCount}
                       locale={locale}
+                      id_url={item.id_url}
                     />
                   ))}
                 </StyledCardsList>

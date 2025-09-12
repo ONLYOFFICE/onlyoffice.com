@@ -52,5 +52,11 @@
   "GetTheLatestVersionOfNextcloud": "Get the latest version of Nextcloud with ONLYOFFICE editors pre-installed.",
   "TryOODocsEnterprise": "Try ONLYOFFICE Docs Enterprise locally <0>free for 30 days</0>",
   "TryOODocsDeveloper": "Try ONLYOFFICE Docs Developer locally <0>free for 30 days</0>",
-  "GetItNowText": "By downloading/installing this software you agree to our <0>License agreement</0> and <1>Privacy statement</1>."
+  "GetItNowText": "By downloading/installing this software you agree to our <0>License agreement</0> and <1>Privacy statement</1>.",
+  "DockerImageenterpriseProductsLink": "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-docker.aspx",
+  "ForDebianUbuntuenterpriseProductsLink": "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-ubuntu.aspx",
+  "ForCentOSRHELenterpriseProductsLink": "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-centos.aspx",
+  "ForWindowsServerenterpriseProductsLink": "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-windows.aspx",
+  "AmazonMachineImageenterpriseProductsLink": "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-ami.aspx",
+  "AlibabaCloudImageenterpriseProductsLink": "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-alibaba.aspx"
 }

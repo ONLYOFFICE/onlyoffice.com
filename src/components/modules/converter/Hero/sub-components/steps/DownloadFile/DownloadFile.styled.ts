@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   themeColors,
   IThemeColors,
@@ -69,12 +70,12 @@ const StyledDownloadFileIcon = styled.div<{ $isFormatZip: boolean }>`
       ? css`
           width: 40px;
           height: 48px;
-          background-image: url("/images/modules/converter/hero/file-result-zip.svg");
+          background-image: url(${getAssetUrl('/images/modules/converter/hero/file-result-zip.svg')});
         `
       : css`
           width: 24px;
           height: 24px;
-          background-image: url("/images/modules/converter/hero/file-result.svg");
+          background-image: url(${getAssetUrl('/images/modules/converter/hero/file-result.svg')});
         `}
 
   @media ${device.mobile} {
@@ -88,7 +89,7 @@ const StyledDownloadFileImageLabel = styled.div`
   left: calc(50% + 32px);
   width: 36px;
   height: 22px;
-  background-image: url("/images/modules/converter/hero/zip-label.svg");
+  background-image: url(${getAssetUrl('/images/modules/converter/hero/zip-label.svg')});
 
   @media ${device.mobile} {
     top: 13px;

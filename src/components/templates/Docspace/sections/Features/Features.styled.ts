@@ -3,13 +3,14 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSection = styled(Section)`
   border-bottom: 1px solid #efefef;
   background: #f4f5f6;
 `;
 
 const StyledFeatureImageItem = styled(FeatureImageItem)`
-  background-image: url("/images/templates/docspace/ai/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/docspace/ai/bg.svg')});
   background-position: calc(50% + 400px) bottom;
   background-repeat: no-repeat;
   background-size: 640px 640px;

@@ -28,7 +28,10 @@ const Hero = () => {
               <Trans
                 t={t}
                 i18nKey="HeroTitle"
-                components={[<Text as="span" color="#FF6F3D" key="0" />]}
+                components={[
+                  <Text as="span" color="#FF6F3D" key="0" />,
+                  <Text className="nowrap" as="span" key="1" />
+                ]}
               />
             </StyledHeroHeading>
             <StyledHeroSubheading level={2} size={5} label={t("HeroSubtitle")} />

@@ -3,6 +3,7 @@ import { ImageCarousel } from "./ImageCarousel";
 import { IImageCarousel } from "./ImageCarousel.types";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Widgets/ImageCarousel",
   component: ImageCarousel,
@@ -46,14 +47,14 @@ Default.args = {
   items: [
     {
       image: {
-        url: "/images/storybook/widgets/image-carousel/screen1.svg",
-        url2x: "/images/storybook/widgets/image-carousel/screen1@2x.svg",
+        url: getAssetUrl("/images/storybook/widgets/image-carousel/screen1.svg"),
+        url2x: getAssetUrl("/images/storybook/widgets/image-carousel/screen1@2x.svg"),
       },
     },
     {
       image: {
-        url: "/images/storybook/widgets/image-carousel/screen2.svg",
-        url2x: "/images/storybook/widgets/image-carousel/screen2@2x.svg",
+        url: getAssetUrl("/images/storybook/widgets/image-carousel/screen2.svg"),
+        url2x: getAssetUrl("/images/storybook/widgets/image-carousel/screen2@2x.svg"),
       },
     },
   ],

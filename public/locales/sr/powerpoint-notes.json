@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Add notes to PowerPoint | ONLYOFFICE",
+  "PageDescription": "Add speaker notes to your PowerPoint presentations with ONLYOFFICE. Browse your notes when presenting with two monitors, so only you can see your notes.",
+  "Header": "Prezentujte sa lagodnošću",
+  "SubHeader": "Javni nastupi postaju lakši uz funkcije Prezenterskog režima",
+
+  "HeroImgUrl": "/images/templates/powerpoint-notes/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/powerpoint-notes/hero/hero@2x.png",
+
+  "Feature1Title": "Dodajte korisne beleške",
+  "Feature1Desc": "Dodajte govorne beleške u svoje PowerPoint prezentacije, tako da imate tragove za pomoć ili ceo scenario u svojim rukama.Pregledajte svoje beleške tokom prezentacije sa dva monitora, tako da samo vi možete da vidite svoje beleške.",
+
+  "Feature2Title": "Pokrenite besprekorne projekcije slajdova",
+  "Feature2Desc": "Lako se krećite između slajdova uz kompaktne kontrole tokom projekcije dok prezentujete. Pregledajte svoje slajdove u bilo kom trenutku da biste procenili ukupni izgled svoje prezentacije.",
+
+  "Feature3Title": "Pratite svoje vreme",
+  "Feature3Desc": "Tajmer će vam pomoći da procenite dužinu svoje prezentacije u satima, minutima i sekundama, tako da možete da uvežbate svoj govor i tempirate ga tačno onoliko koliko vam je potrebno.Pokrenite, pauzirajte, nastavite i resetujte tajmer da biste dobili tačnu predstavu o tome koliko dugo traje vaša prezentacija.",
+
+  "Feature4Title": "Upravljajte svojom prezentacijom",
+  "Feature4Desc": "Koristite funkciju pokazivača da biste vodili publiku kroz svoje slajdove i istakli važan tekst i brojke.",
+
+  "Feature1ImgUrl": "/images/templates/powerpoint-notes/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/powerpoint-notes/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/powerpoint-notes/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/powerpoint-notes/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/powerpoint-notes/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/powerpoint-notes/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/powerpoint-notes/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/powerpoint-notes/features/pic4@2x.png"
+}

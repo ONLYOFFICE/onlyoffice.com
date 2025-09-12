@@ -7,11 +7,11 @@
   "HeroImgUrl": "/images/templates/e-book/hero/fr/hero.png",
   "HeroImgUrl2x": "/images/templates/e-book/hero/fr/hero@2x.png",
 
-  "SwitcherTitle1": "LIRE",
-  "SwitcherTitle2": "ÉCRIRE ET FORMATER",
-  "SwitcherTitle3": "COÉDITER",
-  "SwitcherTitle4": "CONVERTIR",
-  "SwitcherTitle5": "FAIRE PLUS",
+  "SwitcherTitle1": "LISEZ",
+  "SwitcherTitle2": "ÉCRIVEZ ET FORMATEZ",
+  "SwitcherTitle3": "COÉDITEZ",
+  "SwitcherTitle4": "CONVERTISSEZ",
+  "SwitcherTitle5": "FAITES PLUS",
 
   "Feature1Title": "Lisez des livres électroniques en toute simplicité",
   "Feature1Desc": "Ouvrez et visualisez les fichiers EPUB, FB2 et PDF téléchargés en ligne, localement ou en déplacement, quel que soit l'appareil que vous utilisez. Naviguez facilement dans les rubriques, passez au thème sombre dans les environnements peu éclairés, imprimez les livres électroniques si nécessaire.",

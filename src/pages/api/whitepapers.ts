@@ -1,21 +1,16 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
-import { WhitepapersEmail } from "@src/components/emails/WhitepapersEmail";
+import { WhitePapersEmail } from "@src/components/emails/WhitePapersEmail";
 
-interface IAddWhitepapersData {
-  fromPage: string;
-  fullName: string;
+interface IAddWhitePapersData {
+  full_name: string;
   email: string;
-  company: string;
+  company_name: string;
   product: string;
-  languageCode: string;
-  ip: string | string[] | null;
-  utm_source: string | null;
-  utm_campaign: string | null;
-  utm_content: string | null;
-  utm_term: string | null;
+  lang: string;
 }
 
 export default async function handler(
@@ -26,31 +21,49 @@ export default async function handler(
     return res.status(405).json({ message: "Method Not Allowed" });
   }
 
-  const { fullName, email, company, product, languageCode, from } = req.body;
+  const {
+    fullName,
+    email,
+    company,
+    id_url,
+    languageCode,
+    from,
+    hCaptchaResponse,
+  } = req.body;
 
   try {
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
+
     const errorMessages = [];
     const cookies = parse(req.headers.cookie || "");
 
-    const addWhitepapersDataRequest = async () => {
+    const addWhitePapersDataRequest = async () => {
       try {
-        const addWhitepapersData: IAddWhitepapersData = {
-          fullName,
+        const addWhitePapersData: IAddWhitePapersData = {
+          full_name: fullName,
           email,
-          company,
-          product,
-          languageCode,
-          fromPage: from,
-          ip:
-            req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
-          utm_source: cookies.utmSource ?? null,
-          utm_campaign: cookies.utmCampaign ?? null,
-          utm_content: cookies.utmContent ?? null,
-          utm_term: cookies.utmTerm ?? null,
+          company_name: company,
+          product: id_url,
+          lang: languageCode,
         };
 
         await db.teamlabsite.query("INSERT INTO whitepapers_request SET ?", [
-          addWhitepapersData,
+          addWhitePapersData,
         ]);
 
         return {
@@ -59,7 +72,7 @@ export default async function handler(
         };
       } catch (error: unknown) {
         console.error(
-          "Add Whitepapers api returns errors:",
+          "Add WhitePapers api returns errors:",
           error instanceof Error ? error.message : error,
         );
 
@@ -71,10 +84,10 @@ export default async function handler(
       }
     };
 
-    const addWhitepapersDataResult = await addWhitepapersDataRequest();
-    if (addWhitepapersDataResult.status === "error") {
+    const addWhitePapersDataResult = await addWhitePapersDataRequest();
+    if (addWhitePapersDataResult.status === "error") {
       errorMessages.push(
-        `whitepapersRequest: ${addWhitepapersDataResult.message}`,
+        `whitepapersRequest: ${addWhitePapersDataResult.message}`,
       );
     }
 
@@ -82,13 +95,13 @@ export default async function handler(
     await transporter.sendMail({
       from,
       to: [process.env.SALES_EMAIL!],
-      subject: `${errorMessages.length ? "[Error] " : ""}${company} - Whitepapers Request ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
-      html: WhitepapersEmail({
+      subject: `${errorMessages.length ? "[Error] " : ""}${company} - WhitePapers Request ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
+      html: WhitePapersEmail({
         fromPage: from,
         fullName,
         email,
         company,
-        product,
+        product: id_url,
         languageCode,
       }),
     });
@@ -98,7 +111,7 @@ export default async function handler(
       message: "success",
     });
   } catch (error) {
-    console.error("Whitepapers api returns errors:", error);
+    console.error("WhitePapers api returns errors:", error);
     res.status(500).json({
       status: "error",
       message: error,

@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledCollabWrapper,
   StyledCollabLeft,
@@ -19,7 +20,7 @@ const Collab = () => {
       tabletSmallSpacing={["112px", "0"]}
       mobileSpacing={["48px", "0"]}
       background="#f5f5f5"
-      $backgroundUrl={t("CollabBackgroundUrl")}
+      $backgroundUrl={getAssetUrl(t("CollabBackgroundUrl"))}
       $backgroundUrl2x={t("CollabBackgroundUrl2x")}
     >
       <StyledCollabWrapper maxWidth="1200px">
@@ -31,7 +32,7 @@ const Collab = () => {
           />
           <StyledCollabText size={1} label={t("BeMoreProductive")} />
         </StyledCollabLeft>
-        <StyledCollabRight $backgroundUrl={t("CollabBackgroundUrl")} $backgroundUrl2x={t("CollabBackgroundUrl2x")} />
+        <StyledCollabRight $backgroundUrl={getAssetUrl(t("CollabBackgroundUrl"))} $backgroundUrl2x={t("CollabBackgroundUrl2x")} />
       </StyledCollabWrapper>
     </StyledCollabSection>
   );

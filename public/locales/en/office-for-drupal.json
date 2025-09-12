@@ -72,6 +72,7 @@
   "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-drupal/how-to-start/step3-ds.svg",
 
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/drupal.aspx",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?",
 

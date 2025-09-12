@@ -6,6 +6,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
   overflow: hidden;
@@ -69,7 +70,7 @@ const StyledHeroLeftHeading = styled(Heading)`
     height: 155px;
     left: -100px;
     top: -120px;
-    background-image: url("/images/templates/office-for-ios/hero/heading.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-ios/hero/heading.svg')});
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -154,7 +155,7 @@ const StyledHeroLeftImg = styled.div<{
     display: block;
     width: 131px;
     height: 131px;
-    background-image: url("/images/templates/office-for-ios/hero/triangle_top.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-ios/hero/triangle_top.svg')});
     background-repeat: no-repeat;
     position: absolute;
     top: 81px;
@@ -167,7 +168,7 @@ const StyledHeroLeftImg = styled.div<{
     display: block;
     width: 131px;
     height: 131px;
-    background-image: url("/images/templates/office-for-ios/hero/triangle_bottom.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-ios/hero/triangle_bottom.svg')});
     background-repeat: no-repeat;
     position: absolute;
     left: 41px;
@@ -235,7 +236,7 @@ const StyledHeroPhoneImgMob = styled.div<{
     display: block;
     width: 131px;
     height: 131px;
-    background-image: url("/images/templates/office-for-ios/hero/triangle_top.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-ios/hero/triangle_top.svg')});
     background-repeat: no-repeat;
     position: absolute;
     top: 81px;
@@ -248,7 +249,7 @@ const StyledHeroPhoneImgMob = styled.div<{
     display: block;
     width: 131px;
     height: 131px;
-    background-image: url("/images/templates/office-for-ios/hero/triangle_bottom.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-ios/hero/triangle_bottom.svg')});
     background-repeat: no-repeat;
     position: absolute;
     left: 41px;
@@ -274,7 +275,7 @@ const StyledHeroFooterImgLink = styled(Link)`
   width: 172px;
   height: 172px;
   margin: 0 auto;
-  background-image: url("/images/templates/office-for-ios/hero/award.png");
+  background-image: url(${getAssetUrl('/images/templates/office-for-ios/hero/award.png')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

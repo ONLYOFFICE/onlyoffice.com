@@ -1,9 +1,10 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IFeatureItem[] = [
   {
     icon: {
-      url: "/images/templates/best-adobe-alternative/reasons/icons.svg",
+      url: getAssetUrl("/images/templates/best-adobe-alternative/reasons/icons.svg"),
       positionX: "0",
     },
     heading: "FreeAndOpenSource",
@@ -11,7 +12,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/best-adobe-alternative/reasons/icons.svg",
+      url: getAssetUrl("/images/templates/best-adobe-alternative/reasons/icons.svg"),
       positionX: "-96px",
     },
     heading: "WebDesktopMobile",
@@ -19,7 +20,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/best-adobe-alternative/reasons/icons.svg",
+      url: getAssetUrl("/images/templates/best-adobe-alternative/reasons/icons.svg"),
       positionX: "-192px",
     },
     heading: "SeamlessOnlineCollaboration",
@@ -27,7 +28,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/best-adobe-alternative/reasons/icons.svg",
+      url: getAssetUrl("/images/templates/best-adobe-alternative/reasons/icons.svg"),
       positionX: "-384px",
     },
     heading: "CompleteFunctionality",
@@ -35,7 +36,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/best-adobe-alternative/reasons/icons.svg",
+      url: getAssetUrl("/images/templates/best-adobe-alternative/reasons/icons.svg"),
       positionX: "-480px",
     },
     heading: "SupportForAdobeFieldSettings",

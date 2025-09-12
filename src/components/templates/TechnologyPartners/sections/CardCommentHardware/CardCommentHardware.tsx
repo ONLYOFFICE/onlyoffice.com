@@ -4,9 +4,8 @@ import {
   StyledCardCommentHeading,
   StyledCardCommentWrapper,
   StyledText,
-  StyledLink
+  StyledLink,
 } from "./CardCommentHardware.styled";
-import { items } from "./data/items";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 import { Container } from "@src/components/ui/Container";
@@ -24,28 +23,25 @@ const CardCommentHardware = () => {
         <StyledCardCommentWrapper>
           <StyledCardCommentContent>
             <StyledCardCommentHeading>
+              <Trans t={t} i18nKey={t("ForUsItIsImportantToShow")} />
+            </StyledCardCommentHeading>
+            <StyledText>
               <Trans
                 t={t}
-                i18nKey={t(items.title)}
+                i18nKey="GaelDuval"
+                components={[
+                  <Text as="span" fontWeight={700} color="#666666" key="0" />,
+                ]}
               />
-            </StyledCardCommentHeading>
-              <StyledText>
-                <Trans 
-                  t={t}
-                  i18nKey={items.text}
-                  components={
-                    [<Text as="span" fontWeight={700} color="#666666" key="0"/>]
-                  }
-                />
-              </StyledText>
+            </StyledText>
             <StyledLink
-                href={items.linkUrl}
-                label={t(items.textBtn)}
-                color="main"
-                textUnderline
-                fontWeight={400}
-                display="block"
-              />
+              href={t("ForUsItIsImportantToShowLink")}
+              label={t("ReadTheFullCaseOfMurena")}
+              color="main"
+              textUnderline
+              fontWeight={400}
+              display="block"
+            />
           </StyledCardCommentContent>
         </StyledCardCommentWrapper>
       </Container>

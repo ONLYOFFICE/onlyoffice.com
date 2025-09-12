@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Kontrolne tabele i filteri u tabelama | ONLYOFFICE",
+  "PageDescription": "Kratko ilustrujte relevantne podatke iz svojih radnih listova sa sažecima. Sortirajte i filtrirajte tabele kako biste kreirali najprecizniji prikaz informacija u ONLYOFFICE-u.",
+  "Header": "Jednostavno analizirajte velike količine podataka",
+  "SubHeader": "Prikažite svoje podatke za svaki zadatak pomoću kontrolnih tabela, filtera i parametara sortiranja",
+
+  "HeroImgUrl": "/images/templates/pivot-tables-and-filters/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/pivot-tables-and-filters/hero/hero@2x.png",
+
+  "Feature1Title": "Kreirajte kontrolne tabele",
+  "Feature1Desc": "Kratko ilustrujte relevantne podatke iz radnih listova sa sažecima. Menjajte i preuređujte prikaz polja, birajte između više rasporeda i organizujte podatke između filtera, redova, kolona i vrednosti.",
+
+  "Feature2Title": "Prilagodite izgled i napredna podešavanja",
+  "Feature2Desc": "Smestite sažetke na isti ili novi radni list. Menjajte boje, veličine i stilove, birajte između kompaktnih, preglednih i tabelarnih formata izveštaja, i primenjajte postojeće stilove iz šablona ili kreirajte nove.",
+
+  "Feature3Title": "Jednostavno dodajte filtere u tabele",
+  "Feature3Desc": "Sortirajte i filtrirajte radne listove i kontrolne tabele kako biste kreirali najprecizniji prikaz informacija. Postavite svoje filter šablone. Delite tabele sa dozvolom Prilagođeni filter da biste kolegama omogućili samostalno dodavanje filtera na Excel tabelama. Kreirajte prikaze tabela da možete lično pregledati sa sopstvenim filterima.",
+
+  "Feature4Title": "Primena prekidača za brzo filtriranje",
+  "Feature4Desc": "Dodajte prekidače za formatirane i kontrolne tabele da brzo filtrirate informacije pomoću dugmadi. Prilagodite izgled, veličinu i položaj prekidača i podesite parametre prianjanja ćelija. Kreirajte i organizujte više prekidača na svojim tabelama.",
+
+  "Feature1ImgUrl": "/images/templates/pivot-tables-and-filters/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/pivot-tables-and-filters/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/pivot-tables-and-filters/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/pivot-tables-and-filters/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/pic4@2x.png"
+}

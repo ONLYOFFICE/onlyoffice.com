@@ -1,24 +1,25 @@
 import { IStoryCard } from "@src/components/widgets/StoryCard";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const successStoriesItems: IStoryCard[] = [
   {
-    imgUrl: "/images/templates/developer-edition/testimonials/success-stories/easishare.png",
-    linkUrl: "BlogNews1Link",
+    imgUrl: getAssetUrl("/images/templates/developer-edition/testimonials/success-stories/easishare.png"),
+    linkUrl: "BlogNewsLink1",
     heading: "BlogNews1",
   },
   {
-    imgUrl: "/images/templates/developer-edition/testimonials/success-stories/tgi.png",
-    linkUrl: "BlogNews2Link",
+    imgUrl: getAssetUrl("/images/templates/developer-edition/testimonials/success-stories/tgi.png"),
+    linkUrl: "BlogNewsLink2",
     heading: "BlogNews2",
   },
   {
-    imgUrl: "/images/templates/developer-edition/testimonials/success-stories/cnki.jpg",
-    linkUrl: "BlogNews3Link",
+    imgUrl: getAssetUrl("/images/templates/developer-edition/testimonials/success-stories/cnki.jpg"),
+    linkUrl: "BlogNewsLink3",
     heading: "BlogNews3",
   },
   {
-    imgUrl: "/images/templates/developer-edition/testimonials/success-stories/nuage-francais.jpg",
-    linkUrl: "BlogNews4Link",
+    imgUrl: getAssetUrl("/images/templates/developer-edition/testimonials/success-stories/nuage-francais.jpg"),
+    linkUrl: "BlogNewsLink4",
     heading: "BlogNews4",
   },
 ];

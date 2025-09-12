@@ -5,6 +5,7 @@ import { Modal } from "@src/components/ui/Modal";
 import { StyledModalWrapper } from "../Modal/Modal.styled";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledDateTimePicker = styled.div`
   position: relative;
 `;
@@ -107,7 +108,7 @@ const StyledDatePopup = styled.div<{ $isOpen: boolean }>`
 
 const StyledCalendarIcon = styled.div<{ $isOpen: boolean }>`
   content: "";
-  background-image: url("/images/icons/datetime-calendar.svg");
+  background-image: url(${getAssetUrl('/images/icons/datetime-calendar.svg')});
   background-repeat: no-repeat;
   background-size: 55px 24px;
   background-position-x: ${(props) => (props.$isOpen ? "-31px" : "0")};

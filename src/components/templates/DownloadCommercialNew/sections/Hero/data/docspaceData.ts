@@ -1,11 +1,12 @@
 import { IDownloadBlock } from "@src/components/widgets/download/DownloadBlock";
 import { docspaceEnterprise } from "@src/config/constans/download";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const docspaceProducts: IDownloadBlock[] = [
   {
     nameKey: "DocSpace",
     image: {
-      url: "/images/templates/download-commercial-new/hero/docker.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/docker.svg"),
       positionX: "center",
       positionY: "center",
       background: "#099cec",
@@ -17,7 +18,7 @@ export const docspaceProducts: IDownloadBlock[] = [
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
     readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docspace/installation/docspace-enterprise-install-script.aspx",
+      "DockerDocspaceInstructionLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_docker_image",
@@ -36,7 +37,7 @@ export const docspaceProducts: IDownloadBlock[] = [
   {
     nameKey: "DocSpace",
     image: {
-      url: "/images/templates/download-commercial-new/hero/derbian-ubuntu.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/derbian-ubuntu.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -48,7 +49,7 @@ export const docspaceProducts: IDownloadBlock[] = [
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
     readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docspace/installation/docspace-enterprise-install-script.aspx",
+      "ForDebianUbuntuDocspaceInstructionLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_debian_ubuntu_and_derivatives",
@@ -67,7 +68,7 @@ export const docspaceProducts: IDownloadBlock[] = [
   {
     nameKey: "DocSpace",
     image: {
-      url: "/images/templates/download-commercial-new/hero/centos.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/centos.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -79,7 +80,7 @@ export const docspaceProducts: IDownloadBlock[] = [
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
     readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docspace/installation/docspace-enterprise-install-script.aspx",
+      "ForCentOSRHELDocspaceInstructionLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_centos_rhel_and_derivatives",
@@ -98,7 +99,7 @@ export const docspaceProducts: IDownloadBlock[] = [
   {
     nameKey: "DocSpace",
     image: {
-      url: "/images/templates/download-commercial-new/hero/windows.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/windows.svg"),
       positionX: "center",
       positionY: "center",
       background: "#00188f",
@@ -110,7 +111,7 @@ export const docspaceProducts: IDownloadBlock[] = [
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
     readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docspace/installation/docspace-enterprise-install-windows.aspx",
+      "ForWindowsServerDocspaceInstructionLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_windows",

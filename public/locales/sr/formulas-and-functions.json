@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Formule i funkcije u tabelama | ONLYOFFICE",
+  "PageDescription": "Umetnite funkcije, pristupajte kategorijama i nedavno primenjenim formulama, radite sa imenovanim opsezima i obračunavajte svoje tabele i čitave radne sveske, sve na jednom mestu.",
+  "Header": "Izvršite precizne proračune uz minimalan napor",
+  "SubHeader": "Koristite preko 450 Excel funkcija za obradu podataka za bilo koji zadatak",
+
+  "HeroImgUrl": "/images/templates/formulas-and-functions/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/formulas-and-functions/hero/hero@2x.png",
+
+  "Feature1Title": "Lako izračunavanje sa preko 450 funkcija tabela",
+  "Feature1Desc": "Umetnite funkcije, pristupite kategorijama i nedavno primenjenim formulama, radite sa imenovanim opsezima i obračunavajte tabele i čitave radne sveske, sve na jednom mestu. Pregledajte rezultate u velikim tabelama koristeći prozor za praćenje. Koristite funkcije Praćenje prethodnika i Praćenje zavisnika da prikažete veze između formula i ćelija. Umetnite jednačine i simbole za opis primenjenih izračunavanja.",
+
+  "Feature2Title": "Definišite opsege ćelija za brzu primenu Excel formula",
+  "Feature2Desc": "Definišite i imenjujte opsege ćelija i koristite ih kao argumente, imenujte cele formatirane tabele i upravljajte opsezima kako biste ih koristili kao interne hiperveze.",
+
+  "Feature3Title": "Validacija unosa podataka",
+  "Feature3Desc": "Definišite pravila validacije podataka da osigurate da se u vaše tabele unose samo relevantni podaci za tačne proračune. Primenujte validaciju na brojeve i tekstove i podesite detaljne uslove za precizno filtriranje grešaka.",
+
+  "Feature4Title": "Zaštitite strukturu i sadržaj tabele",
+  "Feature4Desc": "Postavite lozinku na celu tabelu, radnu svesku, pa čak i na pojedinačne listove. Sakrijte formule da biste ih zaštitili. Zaključajte ćelije, oblike i tekst. Omogućite uređivanje samo u određenim opsezima.",
+
+  "Feature5Title": "Automatizujte rad pomoću makroa",
+  "Feature5Desc": "Koristeći poseban dodatak i naš API, kreirajte sopstvene JavaScript makroe ili koristite postojeće za automatizaciju proračuna i standardizaciju tabela. Pokrećite makroe automatski ili ih deaktivirajte i primajte obaveštenja o makroima u uređivaču.",
+
+  "Feature1ImgUrl": "/images/templates/formulas-and-functions/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/formulas-and-functions/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/formulas-and-functions/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/formulas-and-functions/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/formulas-and-functions/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/formulas-and-functions/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/formulas-and-functions/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/formulas-and-functions/features/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/formulas-and-functions/features/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/formulas-and-functions/features/pic5@2x.png"
+}

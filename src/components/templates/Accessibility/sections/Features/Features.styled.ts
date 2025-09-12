@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFeaturesHeading = styled(Heading)`
   font-size: 32px;
   font-weight: 800;
@@ -56,7 +57,7 @@ const StyledFeaturesTab = styled.button<{
     width: 56px;
     min-width: 56px;
     height: 56px;
-    background-image: url("/images/templates/accessibility/features/buttons.svg");
+    background-image: url(${getAssetUrl('/images/templates/accessibility/features/buttons.svg')});
     background-position-x: ${(props) =>
       props.$iconPositionX ? `${props.$iconPositionX}px` : "0px"};
     background-position-y: -0px;

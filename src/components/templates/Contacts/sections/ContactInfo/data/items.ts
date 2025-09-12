@@ -26,7 +26,7 @@ export const items: IContactInfo[] = [
     title: "UsaTitle",
     address: "UsaAddress",
     addressDescription: "UsaAddressDescription",
-    phone: "+1 (972) 301-8440",
+    phone: "+1 972 301 8440",
     map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6697.633007444701!2d-96.818856!3d32.929446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c20dc81aaaf37%3A0x53a961f5e87dda8!2s13355%20Noel%20Rd%20Suite%3A%201100%2C%20Dallas%2C%20TX%2075240!5e0!3m2!1sen!2sus!4v1649396343935!5m2!1sen!2sus",
   },
   {
@@ -78,10 +78,10 @@ export const items: IContactInfo[] = [
 ];
 
 export const officeOrderByLang: Record<string, string[]> = {
-  default: ["sg", "usa", "lv", "uk", "arm", "sg", "uz", "ser", "zh"],
-  eu: ["sg", "lv", "uk", "usa", "arm", "sg", "uz", "ser", "zh"],
-  zh: ["zh", "sg", "lv", "uk", "arm", "sg", "uz", "ser"],
-  sr: ["sg", "usa", "lv", "uk", "arm", "sg", "uz", "ser", "zh"],
+  default: ["sg", "usa", "lv", "uk", "arm", "uz", "ser", "zh"],
+  eu: ["sg", "lv", "uk", "usa", "arm", "uz", "ser", "zh"],
+  zh: ["zh", "sg", "lv", "uk", "arm", "uz", "ser"],
+  sr: ["sg", "usa", "lv", "uk", "arm", "uz", "ser", "zh"],
 };
 
 export const mails: IContactMail[] = [

@@ -5,6 +5,7 @@ import { Link } from "@src/components/ui/Link";
 import { ConnectorHowToStart } from "@src/components/modules/connectors/HowToStart";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const HowToStart = () => {
   const { t } = useTranslation("office-for-strapi");
 
@@ -24,7 +25,7 @@ const HowToStart = () => {
               components={[
                 <Link
                   key={0}
-                  href="https://helpcenter.onlyoffice.com/integration/strapi.aspx"
+                  href={t("ReadDetailedInstructionsLink")}
                   target="_blank"
                   color="main"
                   textUnderline
@@ -34,7 +35,7 @@ const HowToStart = () => {
             />
           }
           image={{
-            url: t("HowToStartImgUrl"),
+            url: getAssetUrl(t("HowToStartImgUrl")),
             width: 631,
             height: 470,
           }}

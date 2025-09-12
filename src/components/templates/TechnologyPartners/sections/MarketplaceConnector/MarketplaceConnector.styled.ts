@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background-color: #333333;
 `;
@@ -39,7 +40,7 @@ const StyledMarketplaceConnectorBody = styled.div`
   z-index: 1;
 
   &::before {
-    background-image: url("/images/templates/technology-partners/features/tech-in-icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/technology-partners/features/tech-in-icons.svg')});
     background-position: -2136px 0;
     position: absolute;
     content: "";
@@ -61,7 +62,7 @@ const StyledMarketplaceConnectorBody = styled.div`
 `;
 
 const StyledMarketplaceConnectorImg = styled.div`
-  background-image: url("/images/templates/technology-partners/partnership/transpatent-mail.svg");
+  background-image: url(${getAssetUrl('/images/templates/technology-partners/partnership/transpatent-mail.svg')});
   background-repeat: no-repeat;
   height: 313px;
   left: 52vw;
@@ -92,5 +93,5 @@ export {
   StyledMarketplaceConnectorWrapper,
   StyledMarketplaceConnectorBody,
   StyledMarketplaceConnectorImg,
-  StyledText
+  StyledText,
 };

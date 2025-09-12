@@ -5,6 +5,7 @@ import { ConnectorHowToStart } from "@src/components/modules/connectors/HowToSta
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const HowToStart = () => {
   const { t } = useTranslation("office-for-nuxeo");
 
@@ -20,7 +21,7 @@ const HowToStart = () => {
               components={[
                 <Link
                   key={0}
-                  href="https://helpcenter.onlyoffice.com/integration/nuxeo.aspx"
+                  href={t("ReadDetailedInstructionsLink")}
                   target="_blank"
                   color="main"
                   textUnderline
@@ -31,7 +32,7 @@ const HowToStart = () => {
           }
           contentWidth={458}
           image={{
-            url: t("HowToStartImgUrl"),
+            url: getAssetUrl(t("HowToStartImgUrl")),
             width: 630,
             height: 470,
           }}

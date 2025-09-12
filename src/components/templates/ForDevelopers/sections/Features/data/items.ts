@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items = [
   {
     items: [
@@ -37,7 +38,7 @@ export const items = [
         connectorsItems: [
           {
             image: {
-              url: "/images/templates/for-developers/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-developers/features/icons.svg"),
               width: 56,
               height: 56,
               positionX: "0px",
@@ -46,7 +47,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-developers/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-developers/features/icons.svg"),
               width: 56,
               height: 56,
               positionX: "-72px",
@@ -55,7 +56,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-developers/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-developers/features/icons.svg"),
               width: 56,
               height: 56,
               positionX: "-144px",
@@ -64,7 +65,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-developers/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-developers/features/icons.svg"),
               width: 56,
               height: 56,
               positionX: "-216px",
@@ -73,7 +74,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-developers/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-developers/features/icons.svg"),
               width: 56,
               height: 56,
               positionX: "-288px",
@@ -142,7 +143,7 @@ export const items = [
         connectorsItems: [
           {
             image: {
-              url: "/images/templates/for-developers/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-developers/features/icons.svg"),
               width: 56,
               height: 56,
               positionX: "-360px",
@@ -151,7 +152,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-developers/features/icon_sheets.svg",
+              url: getAssetUrl("/images/templates/for-developers/features/icon_sheets.svg"),
               width: 56,
               height: 56,
               positionX: "0px",
@@ -160,7 +161,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-developers/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-developers/features/icons.svg"),
               width: 56,
               height: 56,
               positionX: "-433px",
@@ -169,7 +170,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-developers/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-developers/features/icons.svg"),
               width: 56,
               height: 56,
               positionX: "-506px",
@@ -178,7 +179,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-developers/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-developers/features/icons.svg"),
               width: 56,
               height: 56,
               positionX: "-579px",

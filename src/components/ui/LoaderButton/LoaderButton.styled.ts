@@ -2,6 +2,7 @@ import styled, { css, keyframes } from "styled-components";
 import { device } from "@src/utils/device";
 import { ILoaderButton } from "./LoaderButton.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const loaderAnimation = keyframes`
   100%  { 
     transform: translate(-50%, -50%) rotate(360deg); 
@@ -33,7 +34,7 @@ const StyledLoaderButton = styled.button<{
     props.$status === "default" &&
     css`
       font-size: 0;
-      background-image: url("/images/icons/arrow-right-white.svg");
+      background-image: url(${getAssetUrl('/images/icons/arrow-right-white.svg')});
       background-repeat: no-repeat;
       background-size: 24px;
       background-position: center;
@@ -45,7 +46,7 @@ const StyledLoaderButton = styled.button<{
     css`
       @media ${device.mobile} {
         font-size: 0;
-        background-image: url("/images/icons/arrow-right-white.svg");
+        background-image: url(${getAssetUrl('/images/icons/arrow-right-white.svg')});
         background-repeat: no-repeat;
         background-size: 24px;
         background-position: center;
@@ -94,7 +95,7 @@ const StyledLoaderButton = styled.button<{
         top: 50%;
         width: 24px;
         height: 24px;
-        background-image: url("/images/icons/loader.svg");
+        background-image: url(${getAssetUrl('/images/icons/loader.svg')});
         background-repeat: no-repeat;
         background-size: contain;
         transform: translate(-50%, -50%);
@@ -107,7 +108,7 @@ const StyledLoaderButton = styled.button<{
     css`
       color: transparent;
       background-color: #8bb825;
-      background-image: url("/images/icons/check-white.svg");
+      background-image: url(${getAssetUrl('/images/icons/check-white.svg')});
       background-repeat: no-repeat;
       background-size: 24px 24px;
       background-position: center;
@@ -118,7 +119,7 @@ const StyledLoaderButton = styled.button<{
     css`
       color: transparent;
       background-color: #cb0000;
-      background-image: url("/images/icons/cross-white.svg");
+      background-image: url(${getAssetUrl('/images/icons/cross-white.svg')});
       background-repeat: no-repeat;
       background-size: 24px 24px;
       background-position: center;

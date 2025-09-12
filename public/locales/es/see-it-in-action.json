@@ -11,19 +11,19 @@
   "ActionsExampleDocumentTitleXlsx": "Example Document Title.xlsx",
   "ActionsEditPptx": "Editar PPTX",
   "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
-  "ActionsEditPdf": "Edita archivos PDF",
+  "ActionsEditPdf": "Editar archivos PDF",
   "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
   "ActionsCreateForm": "Crear formulario",
-  "ActionsFillInPdfForm": "Rellena el formulario PDF",
+  "ActionsFillInPdfForm": "Rellenar el formulario PDF",
   "ActionsCollaborate": "Colaborar",
 
   "ActionsDemoPreview": "Demostración previa",
   "ActionsDemoModalHeadingOpenDocx": "Abrir DOCX para editar",
   "ActionsDemoModalHeadingOpenXlsx": "Abrir XLSX para editar",
   "ActionsDemoModalHeadingOpenPptx": "Abrir PPTX para editar",
-  "ActionsDemoModalHeadingOpenPdf": "Edita archivos PDF",
+  "ActionsDemoModalHeadingOpenPdf": "Editar archivos PDF",
   "ActionsDemoModalHeadingOpenCreateForm": "Crear formulario",
-  "ActionsDemoModalHeadingOpenFill": "Rellena el formulario PDF",
+  "ActionsDemoModalHeadingOpenFill": "Rellenar el formulario PDF",
   "ActionsDemoModalHeadingOpenCollaborate": "Colaborar",
   "ActionsDemoModalButtonClose": "Cerrar"
 }

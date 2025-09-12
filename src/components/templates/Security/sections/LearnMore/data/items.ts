@@ -1,8 +1,9 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IBlogCard[] = [
   {
-    imgUrl: "/images/templates/security/compliance/wp_sec.svg",
+    imgUrl: getAssetUrl("/images/templates/security/compliance/wp_sec.svg"),
     heading: { label: "WhitePaper" },
     text: "ComponentsAndMechanics",
     links: [
@@ -20,7 +21,7 @@ export const items: IBlogCard[] = [
     text: "WhatIsJWT",
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2022/09/what-is-jwt/",
+        href: "WhatIsJWTLink",
         label: "LearnMore",
       },
     ],

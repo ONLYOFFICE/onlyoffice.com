@@ -1,11 +1,15 @@
 interface IWebinarsForUserEmail {
   webinarTheme: string;
   webinarDate: string;
+  baseUrl: string;
+  unsubscribeId: string;
 };
 
 const WebinarsForUserEmail = ({
   webinarTheme,
   webinarDate,
+  baseUrl,
+  unsubscribeId,
 }: IWebinarsForUserEmail) => {
   return `
     <body style="margin: 0; padding: 0; text-align: center; width: 100%; font-family: 'Open Sans', Arial, Tahoma; font-size: 14px; color: #000;">
@@ -161,7 +165,13 @@ const WebinarsForUserEmail = ({
                                 <td class="fol" style="color: #666666; font-family: 'Open Sans', Helvetica, Arial, Tahoma;  font-size: 13px; line-height: 19.5px; margin: 0; padding: 0px 24px 40px; vertical-align: top;">
                                     This email is generated automatically and you do not need to answer it.
                                     <br>
-                                    <a href="https://www.onlyoffice.com/Unsubscribe?id=$unsubscribeId" style="color: #FF6F3D;text-decoration: underline;white-space: nowrap;" target="_blank">Click here to unsubscribe</a>
+                                    <a
+                                        href="${baseUrl}/Unsubscribe?id=${unsubscribeId}"
+                                        style="color: #FF6F3D;text-decoration: underline;white-space: nowrap;"
+                                        target="_blank"
+                                    >
+                                            Click here to unsubscribe
+                                    </a>
                                     </p>
                                 </td>
                             </tr>

@@ -27,7 +27,8 @@
   "OOConnector": "ONLYOFFICE connector v9.3.1 for ownCloud: create and edit PDF forms",
   "OOConnectorLink": "https://www.onlyoffice.com/blog/2024/07/onlyoffice-connector-v9-3-1-for-owncloud",
   "OOConnectorText": "The official ONLYOFFICE connector for ownCloud comes in version 9.3.1 with the possibility to create and edit forms in PDF format. Keep on reading to learn more.",
-  "VisitFreeFormsLibrary": "Visit free forms library",
+  "VisitFreeFormsLibrary": "VISIT FREE FORMS LIBRARY",
+  "VisitFreeFormsLibraryLink": "https://templates.onlyoffice.com",
 
   "TryItYourself": "Try it yourself!",
   "CreateForm": "Create form",

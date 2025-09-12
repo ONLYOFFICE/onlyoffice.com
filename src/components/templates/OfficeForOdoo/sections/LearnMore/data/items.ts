@@ -1,8 +1,9 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IBlogCard[] = [
   {
-    imgUrl: "/images/templates/office-for-odoo/learn-more/blog-1.png",
+    imgUrl: getAssetUrl("/images/templates/office-for-odoo/learn-more/blog-1.png"),
     heading: { label: "Guide" },
     text: "WorkingOnDocuments",
     links: [
@@ -14,23 +15,23 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-odoo/learn-more/blog-2.png",
+    imgUrl: getAssetUrl("/images/templates/office-for-odoo/learn-more/blog-2.png"),
     heading: { label: "Blog" },
     text: "WorkWithFillableTemplates",
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2024/07/onlyoffice-templates-app-odoo",
+        href: "WorkWithFillableTemplatesLink",
         label: "LearnMore",
       },
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-odoo/learn-more/blog-3.png",
+    imgUrl: getAssetUrl("/images/templates/office-for-odoo/learn-more/blog-3.png"),
     heading: { label: "Blog" },
     text: "ADetailedGuideOnCreating",
     links: [
       {
-        href: "https://www.onlyoffice.com/blog/2024/08/how-to-create-a-new-onlyoffice-form-template-for-odoo",
+        href: "ADetailedGuideOnCreatingLink",
         label: "LearnMore",
       },
     ],

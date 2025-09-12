@@ -1,5 +1,6 @@
 import { IImproveItem } from "../sub-components/ImproveItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IImproveItemExtended extends Omit<IImproveItem, "text"> {
   text: {
     label: string;
@@ -10,7 +11,7 @@ interface IImproveItemExtended extends Omit<IImproveItem, "text"> {
 export const items: IImproveItemExtended[] = [
   {
     icon: {
-      url: "/images/templates/contribute/improve/icons.svg",
+      url: getAssetUrl("/images/templates/contribute/improve/icons.svg"),
       positionX: "-136px",
       mobilePositionX: "-92px",
     },
@@ -19,12 +20,12 @@ export const items: IImproveItemExtended[] = [
     },
     link: {
       label: "ReadAPIDocumentation",
-      href: "https://api.onlyoffice.com/docs/plugin-and-macros/get-started/overview/",
+      href: "DevelopYourOwnPluginOrMacrosLink",
     },
   },
   {
     icon: {
-      url: "/images/templates/contribute/improve/icons.svg",
+      url: getAssetUrl("/images/templates/contribute/improve/icons.svg"),
       positionX: "0px",
       mobilePositionX: "0px",
     },
@@ -38,7 +39,7 @@ export const items: IImproveItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/contribute/improve/icons.svg",
+      url: getAssetUrl("/images/templates/contribute/improve/icons.svg"),
       positionX: "-280px",
       mobilePositionX: "-188px",
     },
@@ -47,12 +48,12 @@ export const items: IImproveItemExtended[] = [
     },
     link: {
       label: "ReadAPIDocumentation",
-      href: "https://api.onlyoffice.com/docspace/plugins-sdk/get-started/",
+      href: "CreateAnExtensionOrModuleLink",
     },
   },
   {
     icon: {
-      url: "/images/templates/contribute/improve/icons.svg",
+      url: getAssetUrl("/images/templates/contribute/improve/icons.svg"),
       positionX: "-417px",
       mobilePositionX: "-282px",
     },
@@ -68,7 +69,7 @@ export const items: IImproveItemExtended[] = [
     },
     link: {
       label: "MoreInfo",
-      href: "https://helpcenter.onlyoffice.com/docs/contribution/ReportIssues.aspx",
+      href: "DidYouFindABugLink",
     },
   },
 ];

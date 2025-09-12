@@ -15,7 +15,7 @@
     "ReadDocumentation": "Leer la documentación",
 
     "TheTechnologyBehindONLYOFFICE": "La tecnología detrás de ONLYOFFICE Document Builder",
-    "ONLYOFFICEDocumentBuilderProvides": "ONLYOFFICE Document Builder provee <1>JavaScript</1> API, que está bien documentado y es realmente sencillo de usar. Elige los métodos apropiados y clases de tu biblioteca o usa los métodos de JavaScript más comunes para cambiar los parámetros de formateo de un elemento concreto.",
+    "ONLYOFFICEDocumentBuilderProvides": "ONLYOFFICE Document Builder proporciona la API de <1>JavaScript</1>, que está bien documentada y es realmente sencilla de usar. Elige los métodos apropiados y clases de tu biblioteca o usa los métodos de JavaScript más comunes para cambiar los parámetros de formateo de un elemento concreto.",
     "NoMatterWhatLanguage": "Sin importar en que lenguaje esté escrita tu aplicación, puedes integrarla en Document Builder con él",
     "NetC#MVC": "<0>.Net (C# MVC)</0>",
     "NetC#": "<0>.Net (C#)</0>",
@@ -429,7 +429,7 @@
         "builder.SaveFile(\"pdf\", \"sampleformats.pdf\");",
         "builder.CloseFile();"
         ],
-    "TextDocumentAPI": "<0>Text document API</0>  para",
+    "TextDocumentAPI": "<0>API de documentos de texto</0> para",
     "DotNET": ".NET",
     "PHP": "PHP",
     "Java": "Java",

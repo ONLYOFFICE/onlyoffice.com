@@ -1,6 +1,7 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import { 
     StyledAuthenticationHeading, 
     StyledFeatureImageItemText, 
@@ -46,12 +47,12 @@ const Authentication = () => {
                         </>
                     }
                     links={links?.map(link => ({
-                        href: link.href,
+                        href: t(link.href, { defaultValue: link.href }),
                         label: t(link.label),
                         isExternal: link.isExternal,
                     }))}
                     image={{
-                        url: t(image.url),
+                        url: getAssetUrl(t(image.url)),
                         height: image.height,
                         width: image.width
                     }}

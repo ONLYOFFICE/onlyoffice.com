@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Button } from "@src/components/ui/Button";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Documents = () => {
   const { t } = useTranslation("office-for-liferay");
 
@@ -22,7 +23,7 @@ const Documents = () => {
           items={items.map(({ label, image }) => ({
             label: t(String(label)),
             image: {
-              url: t(image.url),
+              url: getAssetUrl(t(image.url)),
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}

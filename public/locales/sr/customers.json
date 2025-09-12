@@ -9,24 +9,24 @@
   "HeroOr": "ili",
 
   "TrustedHeadingTrustedAndLove": "Veruje i voli više od <0>15 000 000</0> korisnika širom sveta",
-  "TrustedButtonShowMore": "Show more",
-  "TrustedButtonShowLess": "Show less",
+  "TrustedButtonShowMore": "Prikažite više",
+  "TrustedButtonShowLess": "Prikažite manje",
 
-  "TabsInfoTitleInternational": "International organizations",
-  "TabsInfoTitleTechnology": "Technology",
-  "TabsInfoTitleEducation": "Education",
-  "TabsInfoTitleScience": "Science & Research",
-  "TabsInfoTitleGovernment": "Government",
-  "TabsInfoTitleFinance": "Finance",
-  "TabsInfoTitleManufactural": "Manufactural",
-  "TabsInfoTitleBusiness": "Business",
+  "TabsInfoTitleInternational": "Internacionalne organizacije",
+  "TabsInfoTitleTechnology": "Tehnologija",
+  "TabsInfoTitleEducation": "Obrazovanje",
+  "TabsInfoTitleScience": "Nauka i istraživanje",
+  "TabsInfoTitleGovernment": "Vlada",
+  "TabsInfoTitleFinance": "Finansije",
+  "TabsInfoTitleManufactural": "Proizvodno",
+  "TabsInfoTitleBusiness": "Poslovno",
   "TabsInfoTitleNPO": "NPO",
-  "TabsInfoTitleTelecoms": "Telecoms",
+  "TabsInfoTitleTelecoms": "Telekomunikacije",
 
   "IntegrationHowOnlyofficeAndOwnCloud": "Kako integracija ONLYOFFICE i ownCloud u Sciebo pomaže u olakšavanju istraživačkog toka rada na Univerzitetu u Minhenu",
   "IntegrationReadBlog": "Pročitajte blog",
 
-  "DownloadPDF": "Download PDF",
+  "DownloadPDF": "Preuzmite PDF",
 
   "StartYourStory": "Započnite svoju priču ovde"
 }

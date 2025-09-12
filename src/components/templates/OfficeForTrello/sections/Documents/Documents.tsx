@@ -3,6 +3,7 @@ import { StyledDocumentsHeading, StyledFeatureSwitcher, StyledContainer } from "
 import { Section } from "@src/components/ui/Section";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Documents = () => {
   const { t } = useTranslation("office-for-trello");
 
@@ -21,7 +22,7 @@ const Documents = () => {
           items={items.map(({ label, image }) => ({
             label: t(String(label)),
             image: {
-              url: t(image.url),
+              url: getAssetUrl(t(image.url)),
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}

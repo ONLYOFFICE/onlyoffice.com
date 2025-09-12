@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledLearnMoreItems = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -54,7 +55,7 @@ const StyledLearnMoreLogos = styled.div`
 
 const StyledLearnMoreLogo = styled(Link)`
   height: 110px;
-  background-image: url("/images/templates/resellers/learn-more/logos.jpg");
+  background-image: url(${getAssetUrl('/images/templates/resellers/learn-more/logos.jpg')});
   background-repeat: no-repeat;
 
   &.converged-open-systems {

@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Delite tabele online | ONLYOFFICE",
+  "PageDescription": "Delite svoje radne listove sa potpunim pristupom ili samo za pregled, i dozvolite gostima da ostavljaju komentare. Podesite dozvole za prilagođeno filtriranje, kopiranje i štampu tabela.",
+  "Header": "Povežite timske napore",
+  "SubHeader": "Omogućite da zajedničko uređivanje radnih listova bude besprekorno i efikasno",
+
+  "HeroImgUrl": "/images/templates/share-spreadsheet-online/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/share-spreadsheet-online/hero/hero@2x.png",
+
+  "Feature1Title": "Delite tabele online",
+  "Feature1Desc": "Delite svoje radne listove sa potpunim pristupom ili samo za pregled, i dozvolite gostima da ostavljaju komentare. Podesite dozvole za prilagođeno filtriranje da biste sakrili nerelevantne podatke i omogućite kolegama da samostalno primenjuju filtere. Dobijte i delite linkove do izabranih opsega kako bi koautori brzo pronašli potrebne podatke čak i u velikim radnim sveskama. Ograničite kopiranje i štampu tabela.",
+
+  "Feature2Title": "Kreirajte lične prikaze tabela",
+  "Feature2Desc": "Filtrirajte i sortirajte tabele u pojedinačnim prikazima tabela i sačuvajte ih kao predloge, kako biste se svaki put vratili na svoje omiljene parametre sortiranja i filtriranja. Sačuvani prikazi tabela dostupni su vašem timu da biste brzo podelili svoja otkrića.",
+
+  "Feature3Title": "Saradnja na Excel tabelama u realnom vremenu",
+  "Feature3Desc": "Zajedničko uređivanje u realnom vremenu koristeći Brzi režim za trenutni prikaz vašeg unosa saradnicima i praćenje gde drugi korisnici rade putem obeležavanja ćelija bojama. Aktivirajte Strogi režim za privatno uređivanje ćelija i tabela u deljenim tabelama bez ometanja.",
+
+  "Feature4Title": "Pratite verzije tabela",
+  "Feature4Desc": "Pogledajte sve promene napravljene u tabeli, njihove autore i datume. Pregledajte istoriju verzija i po potrebi vratite bilo koju prethodnu verziju.",
+
+  "Feature5Title": "Komentarišite, pominjite, ćaskajte",
+  "Feature5Desc": "Dodajte komentare na ćelije da postavite pitanja i iznesete probleme. Pominjite korisnike u komentarima da ih pozovete u razgovor. Koristite ugrađeni čet uživo, povežite Telegram ili Jitsi preko dodataka za komunikaciju direktno u uređivaču.",
+
+  "Feature1ImgUrl": "/images/templates/share-spreadsheet-online/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/share-spreadsheet-online/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/share-spreadsheet-online/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/share-spreadsheet-online/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/share-spreadsheet-online/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/share-spreadsheet-online/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/share-spreadsheet-online/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/share-spreadsheet-online/features/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/share-spreadsheet-online/features/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/share-spreadsheet-online/features/pic5@2x.png"
+}

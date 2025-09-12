@@ -72,17 +72,17 @@ const Connectors = ({ locale }: ILocale) => {
                 bgColor: connector.image.bgColor,
               }}
               name={
-                ["zh", "ja"].includes(locale)
+                locale === "zh"
                   ? `${connector.name} ${
-                      connector.isWopi
-                        ? t("For")
-                        : t("For")
+                      connector.isWopi ? t("For") : t("For")
                     }`
-                  : `${
-                      connector.isWopi
-                        ? t("For")
-                        : t("For")
-                    } ${connector.name}`
+                  : locale === "es"
+                    ? connector.name
+                    : locale === "ja"
+                      ? `${connector.name} ${t("For")}`
+                      : `${
+                          connector.isWopi ? t("For") : t("For")
+                        } ${connector.name}`
               }
               text={t(connector.text)}
               moreInfoUrl={connector.moreInfoUrl}

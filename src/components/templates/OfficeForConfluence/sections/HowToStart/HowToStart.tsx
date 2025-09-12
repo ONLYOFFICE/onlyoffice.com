@@ -8,6 +8,7 @@ import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const HowToStart = () => {
   const { t } = useTranslation("office-for-confluence");
 
@@ -43,7 +44,7 @@ const HowToStart = () => {
         <StyledHowToStartInfo>
           <WatchVideo
             heading={t("HowToConnect")}
-            videoImgUrl="/images/templates/office-for-confluence/how-to-start/watch-video.jpg"
+            videoImgUrl={getAssetUrl("/images/templates/office-for-confluence/how-to-start/watch-video.jpg")}
             videoUrl="https://youtube.com/embed/bPorM--L11o"
           />
 
@@ -54,7 +55,7 @@ const HowToStart = () => {
               components={[
                 <Link
                   key={0}
-                  href="https://helpcenter.onlyoffice.com/integration/gettingstarted-confluence.aspx"
+                  href={t("ReadDetailedInstructionsLink")}
                   target={"_blank"}
                   color="main"
                   textUnderline

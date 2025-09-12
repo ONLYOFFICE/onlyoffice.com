@@ -9,6 +9,7 @@ import { Text } from "@src/components/ui/Text";
 import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const HowToStart = ({ activeTab }: IHowToStart) => {
   const { t } = useTranslation("office-for-drupal");
 
@@ -29,7 +30,7 @@ const HowToStart = ({ activeTab }: IHowToStart) => {
           tabs={items.map((tab) => ({
             label: t(tab.label),
             items: tab.items.map((item) => ({
-              imgUrl: t(item.imgUrl),
+              imgUrl: getAssetUrl(t(item.imgUrl)),
               heading: item.headingLinks ? (
                 <Trans
                   t={t}
@@ -61,7 +62,7 @@ const HowToStart = ({ activeTab }: IHowToStart) => {
                 <Link
                   key={0}
                   id="how-to-start-instructions-help"
-                  href="https://helpcenter.onlyoffice.com/integration/drupal.aspx"
+                  href={t("ReadDetailedInstructionsLink")}
                   target="_blank"
                   color="main"
                   textUnderline

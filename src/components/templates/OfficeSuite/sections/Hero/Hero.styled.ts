@@ -3,10 +3,11 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #f9f9f9;
-  background-image: url(/images/templates/office-suite/cloud-bg.svg);
+  background-image: url(${getAssetUrl('/images/templates/office-suite/cloud-bg.svg')});
   background-position: calc(50% + 364px) 219px;
   background-repeat: no-repeat;
 

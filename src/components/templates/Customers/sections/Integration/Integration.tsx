@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledIntegrationContainer,
   StyledIntegrationHeading,
@@ -29,12 +30,12 @@ const Integration = () => {
             textUnderline={true}
             hover="underline-none"
             target="_blank"
-            href="https://www.onlyoffice.com/blog/2019/02/how-onlyoffice-and-owncloud-integration-in-sciebo-helps-facilitate-research-workflow-in-munster-university" />
+            href={t("IntegrationReadBlogLink")} />
         </StyledIntegrationLeft>
         <StyledIntegrationRight>
-          <StyledIntegrationIcon $iconUrl="/images/templates/customers/integration/sciebo-icon.svg" />
-          <StyledIntegrationIcon $iconUrl="/images/templates/customers/integration/onlyoffice-icon.svg" />
-          <StyledIntegrationIcon $iconUrl="/images/templates/customers/integration/owncloud-icon.svg" />
+          <StyledIntegrationIcon $iconUrl={getAssetUrl("/images/templates/customers/integration/sciebo-icon.svg")} />
+          <StyledIntegrationIcon $iconUrl={getAssetUrl("/images/templates/customers/integration/onlyoffice-icon.svg")} />
+          <StyledIntegrationIcon $iconUrl={getAssetUrl("/images/templates/customers/integration/owncloud-icon.svg")} />
         </StyledIntegrationRight>
       </StyledIntegrationContainer>
     </StyledIntegrationSection>

@@ -2,15 +2,16 @@ interface ICardsProp {
   sortValue: string;
 }
 
-interface ICardWhitepapersItemsProps {
+interface ICardWhitePapersItemsProps {
   head: string;
   title: string;
   date: string;
   download_url: string,
   description: string;
+  id_url: string;
 }
 
-interface ICardWhitepapersItems extends ICardWhitepapersItemsProps {
+interface ICardWhitePapersItems extends ICardWhitePapersItemsProps {
   id: number;
 }
 
@@ -20,6 +21,7 @@ interface ICardDatasheetsItemsProps {
   image_url: string;
   download_url: string;
   displayOther?: boolean;
+  id_url: string;
 }
 
 interface ICardDatasheetsItems extends ICardDatasheetsItemsProps {
@@ -31,7 +33,7 @@ interface ICardFormProp {
   download_url: string;
   openModal: boolean;
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>
-  product?: string;
+  id_url: string;
 }
 
 interface IFormData {
@@ -54,8 +56,8 @@ type TSortDateKey = "CardsSortNewestOldest" | "CardsSortOldestNewest" | string;
 
 export type {
   ICardsProp,
-  ICardWhitepapersItems,
-  ICardWhitepapersItemsProps,
+  ICardWhitePapersItems,
+  ICardWhitePapersItemsProps,
   ICardDatasheetsItems,
   ICardDatasheetsItemsProps,
   ICardFormProp,
@@ -64,4 +66,4 @@ export type {
   TDropdownType,
   TFilterKey,
   TSortDateKey
-}; 
+};

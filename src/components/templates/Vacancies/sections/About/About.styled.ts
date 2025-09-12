@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledAboutContent = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,20 +15,12 @@ const StyledAboutContent = styled.div`
   }
 `;
 
-const StyledAboutText = styled(Text)`
-  &:first-child {
-    font-size: 22px;
-
-    @media ${device.mobile} {
-      font-size: 18px;
-    }
-  }
-`;
+const StyledAboutText = styled(Text)``;
 
 const StyledAboutImage = styled.div`
   width: 1240px;
   height: 418px;
-  background-image: url("/images/templates/vacancies/about/about-pic.svg");
+  background-image: url(${getAssetUrl('/images/templates/vacancies/about/about-pic.svg')});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

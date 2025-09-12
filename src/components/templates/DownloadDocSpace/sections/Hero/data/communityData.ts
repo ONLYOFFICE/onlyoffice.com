@@ -1,11 +1,12 @@
 import { IDownloadBlock } from "@src/components/widgets/download/DownloadBlock";
 import { docspaceEnterprise } from "@src/config/constans/download";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const communityProducts: IDownloadBlock[] = [
   {
     nameKey: "DocSpace",
     image: {
-      url: "/images/templates/download-docspace/hero/docker.svg",
+      url: getAssetUrl("/images/templates/download-docspace/hero/docker.svg"),
       positionX: "center",
       positionY: "center",
       background: "#099cec",
@@ -32,7 +33,7 @@ export const communityProducts: IDownloadBlock[] = [
   {
     nameKey: "DocSpace",
     image: {
-      url: "/images/templates/download-docspace/hero/derbian-ubuntu.svg",
+      url: getAssetUrl("/images/templates/download-docspace/hero/derbian-ubuntu.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -59,7 +60,7 @@ export const communityProducts: IDownloadBlock[] = [
   {
     nameKey: "DocSpace",
     image: {
-      url: "/images/templates/download-docspace/hero/centos.svg",
+      url: getAssetUrl("/images/templates/download-docspace/hero/centos.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -86,7 +87,7 @@ export const communityProducts: IDownloadBlock[] = [
   {
     nameKey: "DocSpace",
     image: {
-      url: "/images/templates/download-docspace/hero/windows.svg",
+      url: getAssetUrl("/images/templates/download-docspace/hero/windows.svg"),
       positionX: "center",
       positionY: "center",
       background: "#00188f",

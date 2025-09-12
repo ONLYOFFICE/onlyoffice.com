@@ -1,0 +1,52 @@
+{
+  "PageTitle": "Zajedničko uređivanje dokumenata za Liferay | ONLYOFFICE Docs",
+  "PageDescription": "Uređujte i sarađujte na svojim dokumentima iz Liferay Document and Media Library",
+
+  "OnlineOfficeForConnector": "Online kancelarija za Liferay",
+  "Subheader": "Rad na svim vrstama kancelarijskih dokumenata unutar Liferay koristeći ONLYOFFICE Docs",
+  "HeroImgUrl": "/images/templates/office-for-liferay/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-liferay/hero/hero@2x.png",
+
+  "WorkWithinConnector": "Uređujte i ko-uređujte kancelarijske dokumente unutar Liferay-a",
+  "DocumentsTab1Label": "Pregledajte i uređujte kancelarijske fajlove u odeljku Documents and Media.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-liferay/documents/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-liferay/documents/screen1@2x.png",
+  "DocumentsTab2Label": "Kreirajte nove tekstualne dokumente, tabele i prezentacije.",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-liferay/documents/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-liferay/documents/screen2@2x.png",
+  "DocumentsTab3Label": "Saradjujte sa više korisnika na dokumentima u realnom vremenu i sačuvajte izmene nazad u Liferay.",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-liferay/documents/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-liferay/documents/screen3@2x.png",
+  "DocumentsTab4Label": "Otvorite, uređujte i sarađujte na PDF fajlovima.",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-liferay/documents/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-liferay/documents/screen4@2x.png",
+  "DocumentsTab5Label": "Kreirajte popunjive PDF forme i popunjavajte ih online.",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-liferay/documents/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-liferay/documents/screen5@2x.png",
+  "GetStarted": "Počnite",
+  "RequestFreeDemo": "Zatražite besplatan demo",
+
+  "FreeAppsHeading": "Pristupite i uređujte svoje dokumente sačuvane u Liferay uz <0>besplatne desktop aplikacije</0>",
+  "FreeAppsDesktopText": "Uređujte i zajednički uređujte Liferay fajlove u desktop okruženju sa <0>ONLYOFFICE Desktop Editors</0> na Windows, Linux ili macOS platformama",
+  "GetFreeDesktopApps": "Preuzmite besplatne desktop aplikacije",
+
+  "MarketplaceConnectorTitle": "Dizajnirano za besprekornu integraciju sa Liferay-jem",
+  "MarketplaceConnectorDescription": "Preuzmite ONLYOFFICE aplikaciju za Liferay odmah sa Liferay Marketplace-a.",
+
+  "WhyOO": "Zašto ONLYOFFICE?",
+  "Reason1": "Podrška za više od <0>50 formata fajlova</0>, potpuno kompatibilan sa MS Office formatima: DOCX, XLSX, PPTX.",
+  "Reason2": "Robustan skup alata za uređivanje, formatiranje i stilizovanje. Integrisan <0>AI pomoćnik.</0>",
+  "Reason3": "U realnom vremenu i zaključavanje paragrafa <0>zajedničko uređivanje</0>, pregled, istorija verzija, poređenje dokumenata, komentari i čet. Audio i video pozivi.",
+  "Reason4": "<0>Poboljšana sigurnost.</0> Fleksibilna prava pristupa i JWT. Vodeni žig i zaštita lozinkom. Otvoreni izvorni kod.",
+  "Reason5": "<0>Laka integracija i konfiguracija</0>. Dostupno u server i cloud verzijama.",
+  "Reason6": "Cloud i samostalna rešenja za potpunu kontrolu nad vašim podacima. Skalabilne Enterprise verzije. <0>Besplatna 30-dnevna proba</0>.",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Postavite <0>ONLYOFFICE Docs</0> na svoj server ili napravite <1>Docs Cloud</1> nalog.",
+  "HowToStartStep2": "Preuzmite ONLYOFFICE konektor sa <0>Liferay Marketplace-a</0>.",
+  "HowToStartStep3": "Konfigurišite konektor i omogućite JWT.",
+
+  "ReadDetailedInstructions": "Pročitajte detaljna uputstva u <0>Centru za pomoć</0>.",
+
+  "NeedAnAppToConnect": "Treba vam aplikacija za povezivanje ONLYOFFICE sa omiljenom web uslugom? Ili ste razvili jednu?"
+}

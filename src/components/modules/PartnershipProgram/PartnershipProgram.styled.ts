@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Button } from "@src/components/ui/Button";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledPartnershipProgramWrapper = styled.div`
   display: grid;
   grid-template-columns: minmax(224px, 648px) minmax(224px, 448px);
@@ -61,7 +62,7 @@ const StyledPartnershipProgramLink = styled(Link)`
 const StyledPartnershipProgramImg = styled.div`
   padding-bottom: 65.625%;
   width: 100%;
-  background-image: url("/images/modules/partnership-program/partners.svg");
+  background-image: url(${getAssetUrl('/images/modules/partnership-program/partners.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 

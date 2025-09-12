@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSwitcherHeading = styled(Heading)`
   margin-bottom: 64px;
 
@@ -138,7 +139,7 @@ const StyledSwitcherLink = styled(Link)`
     left: 0;
     width: 18px;
     height: 18px;
-    background-image: url("/images/icons/arrow-in-circle.svg");
+    background-image: url(${getAssetUrl('/images/icons/arrow-in-circle.svg')});
     background-size: contain;
     background-repeat: no-repeat;
     transform: translateY(-50%);

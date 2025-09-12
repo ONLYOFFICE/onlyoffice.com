@@ -5,6 +5,7 @@ import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import type { ICardLink } from "./CardLink.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCardLink = styled(Link)<{
   $widthDesktop: ICardLink["widthDesktop"];
   $widthDesktopSmall: ICardLink["widthDesktopSmall"];
@@ -206,7 +207,7 @@ const StyledCardLinkSubtitle = styled(Text)<{
             right: -21px;
           `}
     transform: translate(0, -50%);
-    background-image: url("/images/icons/arrow-in-circle.svg");
+    background-image: url(${getAssetUrl('/images/icons/arrow-in-circle.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transition-duration: 0.3s;

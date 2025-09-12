@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroSection,
   StyledHeroDescription,
@@ -38,7 +39,7 @@ const Hero = ({
           button: {
             id: "docs-community",
             icon: {
-              url: "/images/templates/download-community/hero/icons.svg",
+              url: getAssetUrl("/images/templates/download-community/hero/icons.svg"),
             },
             label: t("DocsCommunity"),
           },
@@ -80,6 +81,11 @@ const Hero = ({
                     <DownloadBlock
                       key={index}
                       {...item}
+                      readInstructionLink={
+                        item.readInstructionLink
+                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          : undefined
+                      }
                       heading={t(item.heading)}
                       buttons={item.buttons.map((button) => ({
                         ...button,
@@ -104,6 +110,11 @@ const Hero = ({
                     <DownloadBlock
                       key={index}
                       {...item}
+                      readInstructionLink={
+                        item.readInstructionLink
+                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          : undefined
+                      }
                       heading={t(item.heading)}
                       buttons={item.buttons.map((button) => ({
                         ...button,
@@ -126,6 +137,11 @@ const Hero = ({
                     <DownloadBlock
                       key={index}
                       {...item}
+                      readInstructionLink={
+                        item.readInstructionLink
+                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          : undefined
+                      }
                       heading={t(item.heading)}
                       buttons={item.buttons.map((button) => ({
                         ...button,
@@ -142,7 +158,7 @@ const Hero = ({
           button: {
             id: "docspace-community",
             icon: {
-              url: "/images/templates/download-community/hero/icons.svg",
+              url: getAssetUrl("/images/templates/download-community/hero/icons.svg"),
               positionY: "-70px",
             },
             label: t("DocSpaceCommunity"),
@@ -184,6 +200,11 @@ const Hero = ({
                   <DownloadBlock
                     key={index}
                     {...item}
+                    readInstructionLink={
+                      item.readInstructionLink
+                        ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                        : undefined
+                    }
                     heading={t(item.heading)}
                     buttons={item.buttons.map((button) => ({
                       id: button.id,

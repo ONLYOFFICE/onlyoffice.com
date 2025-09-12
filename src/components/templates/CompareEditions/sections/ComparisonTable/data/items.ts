@@ -132,19 +132,19 @@ export const tableRows: IDocsEditions[] = [
       community: {
         type: "link",
         value: "HelpCenter",
-        href: "https://helpcenter.onlyoffice.com/installation/docs-community-index.aspx",
+        href: "DocumentationCommunityLink",
         isExternal: true,
       },
       enterprise: {
         type: "link",
         value: "HelpCenter",
-        href: "https://helpcenter.onlyoffice.com/installation/docs-enterprise-index.aspx",
+        href: "DocumentationEnterpriseLink",
         isExternal: true,
       },
       developer: {
         type: "link",
         value: "HelpCenter",
-        href: "https://helpcenter.onlyoffice.com/installation/docs-developer-index.aspx",
+        href: "DocumentationDeveloperLink",
         isExternal: true,
       },
     },
@@ -259,7 +259,7 @@ export const tableRows: IDocsEditions[] = [
     type: "feature",
     label: "JWT",
     info: "JwtInfo",
-    link: "https://www.onlyoffice.com/blog/2022/09/what-is-jwt",
+    link: "JwtLink",
     isExternal: true,
     values: {
       community: {

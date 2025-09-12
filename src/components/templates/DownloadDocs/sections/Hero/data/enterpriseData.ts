@@ -1,4 +1,5 @@
 import { IDownloadBlock } from "@src/components/widgets/download/DownloadBlock";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   dockerDocument,
   documentServer,
@@ -9,7 +10,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
   {
     nameKey: "onlyoffice4enterprise/documentserver-ee",
     image: {
-      url: "/images/templates/download-docs/hero/docker.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/docker.svg"),
       positionX: "center",
       positionY: "center",
       background: "#099cec",
@@ -21,8 +22,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: dockerDocument.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: dockerDocument.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-docker.aspx",
+    readInstructionLink: "DockerImageenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_docker_image_intel",
@@ -49,7 +49,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-docs/hero/derbian-ubuntu.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/derbian-ubuntu.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -61,8 +61,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-ubuntu.aspx",
+    readInstructionLink: "ForDebianUbuntuenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_debian_ubuntu_and_derivatives_intel",
@@ -89,7 +88,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-docs/hero/centos.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/centos.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -101,8 +100,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-centos.aspx",
+    readInstructionLink: "ForCentOSRHELenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_centos_rhel_and_derivatives_intel",
@@ -129,7 +127,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-docs/hero/windows.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/windows.svg"),
       positionX: "center",
       positionY: "center",
       background: "#00188f",
@@ -141,8 +139,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-windows.aspx",
+    readInstructionLink: "ForWindowsServerenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_windows",
@@ -161,7 +158,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-docs/hero/amazon.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/amazon.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f39d39",
@@ -172,8 +169,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-ami.aspx",
+    readInstructionLink: "AmazonMachineImageenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_amazon_machine_image",
@@ -187,7 +183,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-docs/hero/alibabacloud.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/alibabacloud.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -199,8 +195,7 @@ export const enterpriseProducts: IDownloadBlock[] = [
     version: alibabaCloudImage.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: alibabaCloudImage.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-alibaba.aspx",
+    readInstructionLink: "AlibabaCloudImageenterpriseProductsLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_alibaba_cloud_image",

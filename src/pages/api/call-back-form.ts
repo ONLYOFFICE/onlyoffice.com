@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { db } from "@src/config/db/site";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { emailTransporter } from "@src/config/email/transporter";
 import { CallBackFormEmail } from "@src/components/emails/CallBackFormEmail";
 
@@ -31,9 +32,27 @@ export default async function handler(
     timezone,
     calltheme,
     product,
+    hCaptchaResponse,
   } = req.body;
 
   try {
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
+
     const errorMessages = [];
 
     const addCallBackFormRequest = async () => {

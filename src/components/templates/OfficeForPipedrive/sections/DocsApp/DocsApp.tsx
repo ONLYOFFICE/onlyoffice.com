@@ -8,6 +8,7 @@ import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const DocsApp = ({ setActiveTab }: IDocsApp) => {
   const { t } = useTranslation("office-for-pipedrive");
 
@@ -36,7 +37,7 @@ const DocsApp = ({ setActiveTab }: IDocsApp) => {
           items={items.map(({ label, image }) => ({
             label: t(String(label)),
             image: {
-              url: t(image.url),
+              url: getAssetUrl(t(image.url)),
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}

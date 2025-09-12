@@ -5,6 +5,7 @@ import { ConnectorHowToStart } from "@src/components/modules/connectors/HowToSta
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const HowToStart = () => {
   const { t } = useTranslation("office-for-redmine");
 
@@ -20,7 +21,7 @@ const HowToStart = () => {
               components={[
                 <Link
                   key={0}
-                  href="https://helpcenter.onlyoffice.com/integration/redmine.aspx"
+                  href={t("ReadDetailedInstructionsLink")}
                   target="_blank"
                   color="main"
                   textUnderline
@@ -30,7 +31,7 @@ const HowToStart = () => {
             />
           }
           image={{
-            url: t("HowToStartImgUrl"),
+            url: getAssetUrl(t("HowToStartImgUrl")),
             width: 640,
             height: 378,
           }}

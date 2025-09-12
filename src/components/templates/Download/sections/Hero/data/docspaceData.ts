@@ -3,9 +3,10 @@ import { IDownloadCard } from "@src/components/widgets/download/DownloadCard";
 import { IInfoCard } from "@src/components/widgets/download/InfoCard";
 import { docspaceEnterprise, amiDocspace } from "@src/config/constans/download";
 
-const iconsSprite = "/images/templates/download/hero/features.svg";
-const productsSprite = "/images/templates/download/hero/products.svg";
-const infoProductsSprite = "/images/templates/download/hero/icons.svg";
+import { getAssetUrl } from "@utils/getAssetUrl";
+const iconsSprite = getAssetUrl("/images/templates/download/hero/features.svg");
+const productsSprite = getAssetUrl("/images/templates/download/hero/products.svg");
+const infoProductsSprite = getAssetUrl("/images/templates/download/hero/icons.svg");
 
 export const docspaceIcons: IIconTooltip[] = [
   {
@@ -109,8 +110,7 @@ export const docspaceProducts: IDownloadCard[] = [
     heading: "DockerImage",
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/installation/docspace-enterprise-install-script.aspx",
+    readInstructionLink: "DocspaceProductsDockerImageLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_docker_image",
@@ -135,8 +135,7 @@ export const docspaceProducts: IDownloadCard[] = [
     heading: "ForDebianUbuntu",
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/installation/docspace-enterprise-install-script.aspx",
+    readInstructionLink: "DocspaceProductsForDebianUbuntuLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_debian_ubuntu_and_derivatives",
@@ -161,8 +160,7 @@ export const docspaceProducts: IDownloadCard[] = [
     heading: "ForCentOS",
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/installation/docspace-enterprise-install-script.aspx",
+    readInstructionLink: "DocspaceProductsForCentOSLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_centos_rhel_and_derivatives",
@@ -187,8 +185,7 @@ export const docspaceProducts: IDownloadCard[] = [
     heading: "ForWindowsServer",
     version: docspaceEnterprise.version,
     releaseDate: docspaceEnterprise.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/installation/docspace-enterprise-install-windows.aspx",
+    readInstructionLink: "DocspaceProductsForWindowsServerLink",
     buttons: [
       {
         id: "onlyoffice_docspace_enterprise_for_windows",

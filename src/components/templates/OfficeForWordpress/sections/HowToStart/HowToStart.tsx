@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHowToStart,
   StyledHowToStartInfo,
@@ -32,7 +33,7 @@ const HowToStart = ({ activeTab }: IHowToStart) => {
           tabs={items.map((tab) => ({
             label: t(tab.label),
             items: tab.items.map((item) => ({
-              imgUrl: t(item.imgUrl),
+              imgUrl: getAssetUrl(t(item.imgUrl)),
               heading: item.headingLinks ? (
                 <Trans
                   t={t}
@@ -90,7 +91,7 @@ const HowToStart = ({ activeTab }: IHowToStart) => {
                   <Link
                     key={1}
                     id="how-to-start-instructions-help-helpcenter"
-                    href="https://helpcenter.onlyoffice.com/integration/wordpress.aspx"
+                    href={t("ReadDetailedInstructionsDocsLink")}
                     target="_blank"
                     color="main"
                     textUnderline

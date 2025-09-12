@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 const items = [
   {
     heading: "AICardHeading",
@@ -17,7 +18,7 @@ const items = [
     heading: "ExtraCardHeading",
     text: "ExtraCardText",
     image: {
-      url: "/images/templates/docspace/ai/features-plugins.svg",
+      url: getAssetUrl("/images/templates/docspace/ai/features-plugins.svg"),
       height: 480,
       width: 544,
     },

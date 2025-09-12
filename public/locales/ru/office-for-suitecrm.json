@@ -1,7 +1,7 @@
 {
   "PageDescription": "Работайте с офисными файлами в модуле Документы SuiteCRM, используя ONLYOFFICE Docs",
 
-  "OnlineOfficeForConnector": "Онлайн офис для <0>SuiteCRM</0>",
+  "OnlineOfficeForConnector": "Онлайн-офис для <0>SuiteCRM</0>",
   "Subheader": "Работайте с офисными файлами в модуле Документы SuiteCRM, используя ONLYOFFICE Docs",
   "GetStarted": "Начать работу",
   "FullyCompatibleWithDocxXlsxAndPptx": "Полная совместимость с форматами Microsoft Office",
