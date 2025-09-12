@@ -4,6 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledInfoCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -30,7 +31,7 @@ const StyledInfoCardImage = styled.div`
     position: absolute;
     top: 50%;
     left: 50%;
-    background-image: url("/images/templates/affiliates/useful-info/icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/affiliates/useful-info/icons.svg')});
     background-repeat: no-repeat;
     transform: translate(-50%, -50%);
   }

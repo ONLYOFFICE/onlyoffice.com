@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroDescription,
   StyledHeroHeading,
@@ -96,7 +97,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
             button: {
               id: "docs-enterprise",
               icon: {
-                url: "/images/templates/download/hero/icons.svg",
+                url: getAssetUrl("/images/templates/download/hero/icons.svg"),
                 positionY: "-210px",
               },
               label: t("DocsEnterprise"),
@@ -211,7 +212,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
             button: {
               id: "docspace-enterprise",
               icon: {
-                url: "/images/templates/download/hero/icons.svg",
+                url: getAssetUrl("/images/templates/download/hero/icons.svg"),
                 positionY: "-70px",
               },
               label: t("DocSpaceEnterprise"),

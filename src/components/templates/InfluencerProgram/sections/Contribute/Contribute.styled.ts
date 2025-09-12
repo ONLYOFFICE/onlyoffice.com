@@ -1,6 +1,7 @@
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContributeWrapper = styled.div`
   display: grid;
   gap: 16px;
@@ -19,7 +20,7 @@ const StyledContributeWrapper = styled.div`
     transform: translateX(-50%);
     width: 36px;
     height: 36px;
-    background-image: url("/images/templates/influencer-program/contribute/contribute.svg");
+    background-image: url(${getAssetUrl('/images/templates/influencer-program/contribute/contribute.svg')});
     background-repeat: no-repeat;
   }
 

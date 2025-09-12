@@ -3,8 +3,9 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const ContactSection = styled(Section)`
-  background-image: url(/images/templates/academy/contacts/bg.svg);
+  background-image: url(${getAssetUrl('/images/templates/academy/contacts/bg.svg')});
   background-position: calc(50% + 270px) bottom;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -36,7 +37,7 @@ const StyledContainer = styled(Container)`
 `;
 
 const ContactIcon = styled.div`
-  background-image: url(/images/templates/academy/contacts/icon-choose.svg);
+  background-image: url(/images/templates/academy/contacts/icon-choose.svg')});
   background-repeat: no-repeat;
   background-size: 64px auto;
   width: 64px;

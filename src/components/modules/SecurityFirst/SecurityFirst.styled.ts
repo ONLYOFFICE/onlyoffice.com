@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSecurityFirst = styled.div`
   display: grid;
   align-items: center;
@@ -86,7 +87,7 @@ const StyledSecurityFirstFeatures = styled.ul`
   li {
     width: 64px;
     height: 64px;
-    background-image: url("/images/modules/security-first/features.svg");
+    background-image: url(${getAssetUrl('/images/modules/security-first/features.svg')});
     background-repeat: no-repeat;
 
     &:not(:last-child) {

@@ -4,6 +4,7 @@ import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledBackupWrapper = styled.div`
     align-items: center;
     display: flex;
@@ -53,7 +54,7 @@ const StyledHeading = styled(Heading)`
 `;
 
 const StyledWrapperRightImg = styled.div`    
-    background-image: url("/images/templates/security/compliance/sec_black_imgs.svg");
+    background-image: url(${getAssetUrl('/images/templates/security/compliance/sec_black_imgs.svg')});
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -731px;

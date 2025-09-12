@@ -5,13 +5,14 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContactSection = styled(Section)`
   padding: 0;
 `;
 
 const StyledContactContainer = styled(Container)`
   padding: 112px 40px;
-  background-image: url("/images/templates/education/contact/mail.svg");
+  background-image: url(${getAssetUrl('/images/templates/education/contact/mail.svg')});
   background-repeat: no-repeat;
   background-position: right center;
 
@@ -30,7 +31,7 @@ const StyledContactContect = styled.div`
   max-width: 100%;
   gap: 16px;
   padding-left: 96px;
-  background-image: url("/images/templates/education/contact/icon-mail.svg");
+  background-image: url(${getAssetUrl('/images/templates/education/contact/icon-mail.svg')});
   background-repeat: no-repeat;
 
   @media ${device.mobile} {

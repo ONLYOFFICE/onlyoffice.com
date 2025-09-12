@@ -2,10 +2,11 @@ import { styled, css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #f5f5f5;
-  background-image: url("/images/templates/office-for-humhub/hero/hero.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-humhub/hero/hero.svg')});
   background-repeat: no-repeat;
   background-position: calc(50% - 106px) -454px;
 
@@ -42,7 +43,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 60px;
   height: 59px;
-  background-image: url("/images/templates/office-for-humhub/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-humhub/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

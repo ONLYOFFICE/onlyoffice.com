@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-repeat: no-repeat;
@@ -44,7 +45,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 177px;
   height: 40px;
-  background-image: url("/images/templates/office-for-monday/hero/monday_logo.png");
+  background-image: url(${getAssetUrl('/images/templates/office-for-monday/hero/monday_logo.png')});
   background-repeat: no-repeat;
 
   @media ${device.mobile} {

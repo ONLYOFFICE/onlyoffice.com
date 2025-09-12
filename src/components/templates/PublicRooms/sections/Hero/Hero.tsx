@@ -7,6 +7,7 @@ import { hero } from "./data/hero";
 
 
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Hero = () => {
   const { t } = useTranslation("public-rooms");
   const router = useRouter();
@@ -26,7 +27,7 @@ const Hero = () => {
       label: t(String(label)),
     })),
     button: { ...hero.button, label: t(hero.button.label) },
-    image: { url: t(hero.image.url), url2x: t(hero.image.url2x) },
+    image: { url: getAssetUrl(t(hero.image.url)), url2x: getAssetUrl(t(hero.image.url2x)) },
   };
 
   
@@ -36,8 +37,8 @@ const Hero = () => {
     }
   
     const videoImage = hero.imageVideo
-      ? { url: t(hero.imageVideo.url), url2x: t(hero.imageVideo.url2x) }
-      : { url: t(hero.image.url), url2x: t(hero.image.url2x) };
+      ? { url: getAssetUrl(t(hero.imageVideo.url)), url2x: getAssetUrl(t(hero.imageVideo.url2x)) }
+      : { url: getAssetUrl(t(hero.image.url)), url2x: getAssetUrl(t(hero.image.url2x)) };
 
     return (
       <RoomsHeroVideo

@@ -4,9 +4,10 @@ import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSection = styled(Section)`
   background-color: #333333;
-  background-image: url("/images/templates/docspace/security/bg-shield.svg");
+  background-image: url(${getAssetUrl('/images/templates/docspace/security/bg-shield.svg')});
   background-repeat: no-repeat;
   background-position-x: calc(50% - 360px);
   background-position-y: 50%;
@@ -40,7 +41,7 @@ const StyledCardContainer = styled.div`
 
 const StyledLink = styled(Link)`
   &:after {
-    background-image: url("/images/templates/docspace/security/arrow-icon.svg");
+    background-image: url(${getAssetUrl('/images/templates/docspace/security/arrow-icon.svg')});
     background-repeat: no-repeat;
     display: inline-block;
     content: "";

@@ -1,5 +1,6 @@
 import { Container } from "@src/components/ui/Container";
 import { Section } from "@src/components/ui/Section";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledButtonWrapper,
   StyledDocSpaceFeatures,
@@ -55,7 +56,7 @@ const DocSpace = () => {
                 />
               }
               image={{
-                url: t(image.url),
+                url: getAssetUrl(t(image.url)),
                 url2x: image.url2x && t(image.url2x),
                 height: image.height,
               }}

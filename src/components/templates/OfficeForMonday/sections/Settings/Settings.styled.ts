@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSettingsGroup = styled.div`
   display: flex;
   align-items: stretch;
@@ -94,7 +95,7 @@ const StyledNoticeImg = styled.div`
   min-width: 24px;
   background-size: 120px;
   background-position: 72px 92px;
-  background-image: url("/images/templates/office-for-monday/settings/union.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-monday/settings/union.svg')});
 `;
 
 const StyledNotice = styled.div`

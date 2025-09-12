@@ -4,6 +4,7 @@ import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContainer = styled(Container)`
   text-align: center;
 `;
@@ -44,7 +45,7 @@ const StyledConnectorLink = styled(Link)<{ $positionX: number; $iconUrl?: string
   height: 48px;
   background-position: ${({ $positionX }) => `${$positionX}px`} center;
   background-size: ${({ $iconUrl }) => $iconUrl ? "contain" : "auto 48px"};
-  background-image: ${({ $iconUrl }) => $iconUrl ? `url("${$iconUrl}")` : "url(/images/templates/installation-success-docs-cloud/connectors/connectors.svg)"};
+  background-image: ${({ $iconUrl }) => $iconUrl ? `url("${$iconUrl}")` : `url(${getAssetUrl('/images/templates/installation-success-docs-cloud/connectors/connectors.svg')})`};
   background-repeat: no-repeat;
 
   width: ${({ $width }) => `${$width}px`};

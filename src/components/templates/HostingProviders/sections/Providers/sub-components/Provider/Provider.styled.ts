@@ -1,6 +1,7 @@
 import { Text } from "@src/components/ui/Text";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledProvider = styled.div`
   position: relative;
   width: 100%;
@@ -140,7 +141,7 @@ const StyledProviderIcon = styled.a<{
 }>`
   width: 48px;
   height: 48px;
-  background-image: url("/images/templates/hosting-providers/providers/providers_icons.svg");
+  background-image: url(${getAssetUrl('/images/templates/hosting-providers/providers/providers_icons.svg')});
   background-repeat: no-repeat;
   background-position: ${({ $positionX }) => $positionX} -20px;
 

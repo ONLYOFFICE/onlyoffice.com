@@ -4,6 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledQuestionsContainer = styled(Container)`
   position: relative;
   z-index: 0;
@@ -21,7 +22,7 @@ const StyledQuestionsWrapper = styled.div`
     left: 0;
     width: 64px;
     height: 64px;
-    background-image: url("/images/templates/office-for-monday/support/support.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-monday/support/support.svg')});
     background-repeat: no-repeat;
     
     @media ${device.mobile} {

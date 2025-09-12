@@ -2,6 +2,7 @@ import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
 
@@ -49,7 +50,7 @@ const StyledHeroContent = styled.div`
 
 const StyledHeroImage = styled.div`
   padding-bottom: 100%;
-  background-image: url("/images/templates/workspace/hero/header_circle_icons.svg");
+  background-image: url(${getAssetUrl('/images/templates/workspace/hero/header_circle_icons.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledJoinIcon = styled.div`
-  background-image: url("/images/templates/find-partners/join/join-icon.svg");
+  background-image: url(${getAssetUrl('/images/templates/find-partners/join/join-icon.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   width: 75px;

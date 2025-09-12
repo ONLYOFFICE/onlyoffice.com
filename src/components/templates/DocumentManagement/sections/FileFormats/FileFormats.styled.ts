@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFileFormatsHeading = styled(Heading)`
   max-width: 768px;
   margin: 0 auto 32px;
@@ -93,7 +94,7 @@ const StyledFileFormatImage = styled.div<{
 }>`
   width: 153px;
   height: 95px;
-  background-image: url("/images/templates/document-management/file-formats/file-icons.svg");
+  background-image: url(${getAssetUrl('/images/templates/document-management/file-formats/file-icons.svg')});
   background-repeat: no-repeat;
   background-position: ${({ $positionX }) => $positionX} center;
 

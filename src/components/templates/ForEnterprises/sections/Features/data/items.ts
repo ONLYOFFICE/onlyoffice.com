@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items = [
   {
     items: [
@@ -93,7 +94,7 @@ export const items = [
         connectorsItems: [
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 156,
               height: 40,
               positionY: "0px",
@@ -102,7 +103,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 96,
               height: 40,
               positionY: "-458px",
@@ -111,7 +112,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 162,
               height: 30,
               positionY: "-50px",
@@ -120,7 +121,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 141,
               height: 40,
               positionY: "-545px",
@@ -171,7 +172,7 @@ export const items = [
         connectorsItems: [
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 235,
               height: 40,
               positionY: "-269px",
@@ -180,7 +181,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 173,
               height: 40,
               positionY: "-315px",
@@ -189,7 +190,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 215,
               height: 40,
               positionY: "-363px",
@@ -230,7 +231,7 @@ export const items = [
         connectorsItems: [
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 96,
               height: 40,
               positionY: "-458px",
@@ -239,7 +240,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 111,
               height: 40,
               positionY: "-180px",
@@ -248,7 +249,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 98,
               height: 40,
               positionY: "-225px",
@@ -290,7 +291,7 @@ export const items = [
         connectorsItems: [
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 96,
               height: 40,
               positionY: "-458px",
@@ -299,7 +300,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 156,
               height: 40,
               positionY: "0px",
@@ -308,7 +309,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 162,
               height: 30,
               positionY: "-50px",
@@ -317,7 +318,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 115,
               height: 40,
               positionY: "-85px",
@@ -326,7 +327,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 72,
               height: 40,
               positionY: "-132px",

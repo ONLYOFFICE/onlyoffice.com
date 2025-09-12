@@ -1,8 +1,9 @@
 import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IStepCarouselItem[] = [
   {
-    imgUrl: "/images/templates/office-for-owncloud/how-to-start/step-1.svg",
+    imgUrl: getAssetUrl("/images/templates/office-for-owncloud/how-to-start/step-1.svg"),
     heading: "HowToStartStep1",
     headingLinks: [
       {
@@ -16,7 +17,7 @@ export const items: IStepCarouselItem[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-owncloud/how-to-start/step-2.svg",
+    imgUrl: getAssetUrl("/images/templates/office-for-owncloud/how-to-start/step-2.svg"),
     heading: "HowToStartStep2",
     headingLinks: [
       {

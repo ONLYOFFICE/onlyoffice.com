@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledGratitudionBanner = styled.div`
   display: flex;
   align-items: center;
@@ -22,7 +23,7 @@ const StyledGratitudionBannerImage = styled.div`
   width: 160px;
   min-width: 160px;
   height: 198px;
-  background-image: url("/images/templates/subscribe/gratitudion.svg");
+  background-image: url(${getAssetUrl('/images/templates/subscribe/gratitudion.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

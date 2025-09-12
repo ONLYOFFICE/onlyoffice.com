@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #edf4ff;
-  background-image: url("/images/templates/office-for-strapi/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-strapi/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: calc(50% - 153px) -245px;
   background-size: 2644px 1352px;
@@ -40,7 +41,7 @@ export const StyledHeroWrapper = styled.div`
 export const StyledHeroLogo = styled.div`
   width: 64px;
   height: 64px;
-  background: url("/images/templates/office-for-strapi/hero/logo.svg") no-repeat
+  background: url(${getAssetUrl('/images/templates/office-for-strapi/hero/logo.svg')}) no-repeat
     center;
   background-size: contain;
 

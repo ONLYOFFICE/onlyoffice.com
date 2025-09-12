@@ -4,9 +4,10 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/templates/webinars/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/webinars/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: 50% 80%;
 

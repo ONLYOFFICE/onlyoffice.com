@@ -1,6 +1,7 @@
 import { ISupportedFormat } from "../SupportedFormats.types";
 
-const spriteUrl = "/images/modules/converter/supported-formats/icons.svg";
+import { getAssetUrl } from "@utils/getAssetUrl";
+const spriteUrl = getAssetUrl("/images/modules/converter/supported-formats/icons.svg");
 
 export const formats: ISupportedFormat[] = [
   {

@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledGetMoreHeading,
   StyledGetMoreImage,
@@ -24,7 +25,7 @@ const GetMore = () => {
           textAlign="center"
           size={1}
         />
-        <StyledGetMoreImage $backgroundUrl={t("GetMoreImage")} $backgroundUrl2x={t("GetMoreImage2x")} />
+        <StyledGetMoreImage $backgroundUrl={getAssetUrl(t("GetMoreImage"))} $backgroundUrl2x={t("GetMoreImage2x")} />
       </Container>
     </Section>
   );

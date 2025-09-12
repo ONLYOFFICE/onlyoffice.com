@@ -1,8 +1,9 @@
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const PressDownloadsTemplateStyled = styled.div`
-  background-image: url("/images/templates/press-downloads/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/press-downloads/bg.svg')});
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-color: #f9f9f9;

@@ -6,6 +6,7 @@ import { Text } from "@src/components/ui/Text";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -147,7 +148,7 @@ const StyledHeroIcon = styled.div<{
     display: ${({ $type }) => ($type === "icon" ? "block" : "none")};
     width: 48px;
     height: 48px;
-    background-image: url("/images/templates/contribute/hero/hero_icons.png");
+    background-image: url(${getAssetUrl('/images/templates/contribute/hero/hero_icons.png')});
     background-size: auto 48px;
     background-position: ${({ $positionX }) => `${$positionX || "0px"} center`};
     transform: translate(-50%, -50%);

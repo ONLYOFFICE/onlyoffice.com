@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContainer = styled(Container)`
   text-align: center;
 `;
@@ -86,7 +87,7 @@ const BlockCardBg = styled.div`
   width: 100%;
 
   &::before {
-    background-image: url("/images/templates/technology-partners/features/tech-in-icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/technology-partners/features/tech-in-icons.svg')});
     background-position: -417px 0;
     background-repeat: no-repeat;
     content: "";

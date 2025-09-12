@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledExamplesSection = styled(Section)`
   border-bottom: 1px solid #e2e2e2;
 `;
@@ -37,7 +38,7 @@ const StyledExamplesLogo = styled(Link)`
   display: block;
   width: 140px;
   height: 40px;
-  background-image: url("/images/templates/conversion-api/examples/logo_connectors.svg");
+  background-image: url(${getAssetUrl('/images/templates/conversion-api/examples/logo_connectors.svg')});
   background-size: 140px auto;
   background-repeat: no-repeat;
   background-position-y: 0;

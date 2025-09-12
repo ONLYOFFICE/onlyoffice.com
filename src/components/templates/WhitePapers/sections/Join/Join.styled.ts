@@ -4,8 +4,9 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledJoinSection = styled(Section)`
-  background-image: url("/images/templates/whitepapers/join/leaf-bg.svg"),linear-gradient(135deg,#FFC671 0%,#FF7541 64.06%,#FF6F3D 100%);
+  background-image: url(${getAssetUrl('/images/templates/whitepapers/join/leaf-bg.svg')}),linear-gradient(135deg,#FFC671 0%,#FF7541 64.06%,#FF6F3D 100%);
   background-position: 50% 40%;
   background-repeat: no-repeat;
 `;
@@ -13,7 +14,7 @@ const StyledJoinSection = styled(Section)`
 const StyledJoinIcon = styled.div`
   width: 64px;
   height: 53px;
-  background-image: url("/images/icons/world.svg");
+  background-image: url(${getAssetUrl('/images/icons/world.svg')});
   background-position: 50% 50%;
   background-repeat: no-repeat;
   margin: 0 auto;

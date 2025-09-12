@@ -1,5 +1,6 @@
 import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IFeatureImageItem[] = [
   {
     heading: "FeatureTitle1",
@@ -13,7 +14,7 @@ export const items: IFeatureImageItem[] = [
       mobile: 16,
     },
     image: {
-      url: "/images/templates/docs-enterprise/features/flawless.svg",
+      url: getAssetUrl("/images/templates/docs-enterprise/features/flawless.svg"),
       height: 290,
       width: 504,
     },
@@ -36,7 +37,7 @@ export const items: IFeatureImageItem[] = [
       },
     ],
     image: {
-      url: "/images/templates/docs-enterprise/features/ultimate-security.svg",
+      url: getAssetUrl("/images/templates/docs-enterprise/features/ultimate-security.svg"),
       height: 346,
       width: 504,
     },
@@ -59,7 +60,7 @@ export const items: IFeatureImageItem[] = [
       },
     ],
     image: {
-      url: "/images/templates/docs-enterprise/features/office-suite.svg",
+      url: getAssetUrl("/images/templates/docs-enterprise/features/office-suite.svg"),
       height: 290,
       width: 504,
     },
@@ -82,7 +83,7 @@ export const items: IFeatureImageItem[] = [
       },
     ],
     image: {
-      url: "/images/templates/docs-enterprise/features/high-availability.svg",
+      url: getAssetUrl("/images/templates/docs-enterprise/features/high-availability.svg"),
       height: 290,
       width: 504,
     },

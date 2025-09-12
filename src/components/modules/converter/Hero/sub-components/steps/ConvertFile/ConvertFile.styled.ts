@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   themeColors,
   IThemeColors,
@@ -63,7 +64,7 @@ const StyledConvertFileSelectIcon = styled.span<{
   margin-right: 8px;
   width: 24px;
   height: 24px;
-  background-image: url("/images/modules/converter/hero/input-formats.svg");
+  background-image: url(${getAssetUrl('/images/modules/converter/hero/input-formats.svg')});
 
   ${(props) =>
     props.$formatType === "spreadsheet"

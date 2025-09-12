@@ -2,6 +2,7 @@ import { Link } from "@src/components/ui/Link";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledBestAlternativeCompareWrapper = styled.div`
   display: grid;
   gap: 40px;
@@ -45,9 +46,9 @@ const StyledBestAlternativeCompareTextLink = styled(Link)<{
     margin: 0 5px;
     background-image: ${({ $type }) =>
       $type === "docx"
-        ? "url('/images/modules/best-alternative/best-alternative-compare/file_docx.svg')"
+        ? `url(${getAssetUrl('/images/modules/best-alternative/best-alternative-compare/file_docx.svg')})`
         : $type === "xlsx"
-        ? "url('/images/modules/best-alternative/best-alternative-compare/file_xlsx.svg')"
+        ? `url(${getAssetUrl('/images/modules/best-alternative/best-alternative-compare/file_xlsx.svg')})`
         : undefined};
   }
 `;

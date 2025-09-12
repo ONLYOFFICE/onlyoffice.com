@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background: linear-gradient(to left, #00b8d9, #0065ff);
   overflow: hidden;
@@ -13,7 +14,7 @@ const StyledMarketplaceConnector = styled.section`
     left: calc(50% - 377px);
     width: 650px;
     height: 650px;
-    background-image: url("/images/templates/office-for-trello/marketplace-connector/bg.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-trello/marketplace-connector/bg.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateY(-50%);
@@ -75,7 +76,7 @@ const StyledMarketplaceConnectorBody = styled.div`
 const StyledMarketplaceConnectorImg = styled.div`
   width: 544px;
   height: 100%;
-  background-image: url("/images/templates/office-for-trello/marketplace-connector/apps.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-trello/marketplace-connector/apps.svg')});
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;

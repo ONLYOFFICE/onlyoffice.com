@@ -1,4 +1,5 @@
 import { IDownloadBlock } from "@src/components/widgets/download/DownloadBlock";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   enterpriseWindows,
   weAws,
@@ -9,7 +10,7 @@ import {
 export const workspaceProducts: IDownloadBlock[] = [
   {
     image: {
-      url: "/images/templates/download-commercial-new/hero/windows.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/windows.svg"),
       positionX: "center",
       positionY: "center",
       background: "#00188f",
@@ -39,7 +40,7 @@ export const workspaceProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-commercial-new/hero/docker.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/docker.svg"),
       positionX: "center",
       positionY: "center",
       background: "#099cec",
@@ -69,7 +70,7 @@ export const workspaceProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-commercial-new/hero/derbian-ubuntu.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/derbian-ubuntu.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -99,7 +100,7 @@ export const workspaceProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-commercial-new/hero/centos.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/centos.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -129,7 +130,7 @@ export const workspaceProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-commercial-new/hero/amazon.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/amazon.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f39d39",
@@ -154,7 +155,7 @@ export const workspaceProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-commercial-new/hero/ovhcloud.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/ovhcloud.svg"),
       positionX: "center",
       positionY: "center",
       background: "#000e9c",
@@ -177,7 +178,7 @@ export const workspaceProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-commercial-new/hero/alibabacloud.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/alibabacloud.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
