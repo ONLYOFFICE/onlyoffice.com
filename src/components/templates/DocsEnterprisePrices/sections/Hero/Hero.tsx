@@ -164,11 +164,23 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
             <Heading level={3} textAlign="center" label={t("DocsEnterprise")} />
 
             <StyledHeroPriceWrapper>
-              {t("From")}
-              <StyledHeroPrice>
-                <span>{currency.symbol}</span>
-                {hostingIsCloud ? 8 : productsData.basic1.price}
-              </StyledHeroPrice>
+              {locale === "ja" ? (
+                <>
+                  <StyledHeroPrice>
+                    <span>{currency.symbol}</span>
+                    {hostingIsCloud ? 8 : productsData.basic1.price}
+                  </StyledHeroPrice>
+                  {t("From")}
+                </>
+              ) : (
+                <>
+                  {t("From")}
+                  <StyledHeroPrice>
+                    <span>{currency.symbol}</span>
+                    {hostingIsCloud ? 8 : productsData.basic1.price}
+                  </StyledHeroPrice>
+                </>
+              )}
               {hostingIsCloud && t("user/month")}
             </StyledHeroPriceWrapper>
 
