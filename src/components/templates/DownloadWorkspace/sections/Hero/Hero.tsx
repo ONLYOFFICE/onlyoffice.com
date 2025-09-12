@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroDescription,
   StyledHeroBanner,
@@ -51,6 +52,7 @@ const Hero = ({ locale }: ILocale) => {
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-workspace", {
       method: "POST",
@@ -69,6 +71,7 @@ const Hero = ({ locale }: ILocale) => {
         from,
         country,
         region,
+        hCaptchaResponse,
       }),
     }).then((res) => res.json());
   };
@@ -90,7 +93,7 @@ const Hero = ({ locale }: ILocale) => {
             button: {
               id: "workspace-enterprise",
               icon: {
-                url: "/images/templates/download-workspace/hero/enterprise.svg",
+                url: getAssetUrl("/images/templates/download-workspace/hero/enterprise.svg"),
               },
               label: t("Enterprise"),
             },
@@ -143,7 +146,7 @@ const Hero = ({ locale }: ILocale) => {
             button: {
               id: "workspace-community",
               icon: {
-                url: "/images/templates/download-workspace/hero/community.svg",
+                url: getAssetUrl("/images/templates/download-workspace/hero/community.svg"),
               },
               label: t("Community"),
             },
@@ -237,6 +240,7 @@ const Hero = ({ locale }: ILocale) => {
         onClose={() => setIsModalOpen(false)}
         onSubmitRequest={onSubmitRequest}
         buttonAction={buttonAction}
+        pageTrackName={formData.buttonId}
       />
     </>
   );

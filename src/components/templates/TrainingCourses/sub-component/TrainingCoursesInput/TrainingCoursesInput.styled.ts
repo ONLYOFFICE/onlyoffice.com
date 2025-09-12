@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Input } from "@src/components/ui/Input";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledTrainingCoursesInputSection = styled(Section)`
   padding: 16px 0 0 0;
   position: sticky;
@@ -80,7 +81,7 @@ const StyledTrainingCoursesInputClearBtn = styled.div`
   width: 24px;
   height: 24px;
   box-sizing: content-box;
-  background-image: url("/images/icons/cross-gray.svg");
+  background-image: url(${getAssetUrl('/images/icons/cross-gray.svg')});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

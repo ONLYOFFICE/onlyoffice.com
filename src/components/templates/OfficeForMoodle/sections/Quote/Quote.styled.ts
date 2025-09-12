@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledQuoteText = styled.i`
   position: relative;
   display: block;
@@ -19,7 +20,7 @@ const StyledQuoteText = styled.i`
     left: 50%;
     width: 196px;
     height: 160px;
-    background-image: url("/images/templates/office-for-moodle/quote/decor.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-moodle/quote/decor.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateX(-50%);

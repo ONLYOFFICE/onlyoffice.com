@@ -4,8 +4,9 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
-  background-image: url("/images/templates/private-rooms/hero/head-bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/private-rooms/hero/head-bg.svg')});
   background-repeat: no-repeat;
   background-position: calc(50% + 200px) 20px;
   background-color: #f9f9f9;
@@ -104,7 +105,7 @@ const StyledHeroText = styled(Text)`
 `;
 
 const StyledHeroImage = styled.div`
-  background-image: url("/images/templates/private-rooms/hero/head-pic.svg");
+  background-image: url(${getAssetUrl('/images/templates/private-rooms/hero/head-pic.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   height: 329px;

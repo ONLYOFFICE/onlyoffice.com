@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledMarketplaceConnector,
   StyledMarketplaceConnectorWrapper,
@@ -16,10 +17,9 @@ const MarketplaceConnector = () => {
   const { t } = useTranslation("office-for-zoom");
   const { locale } = useRouter();
 
-  const imageSrc =
-    "/images/templates/office-for-zoom/marketplace-connector/zoom.svg";
-  const imageSrc1 = "/images/templates/office-for-zoom/button.svg";
-  const imageSrc2 = "/images/templates/office-for-zoom/icon.svg";
+  const imageSrc = getAssetUrl("/images/templates/office-for-zoom/marketplace-connector/zoom.svg");
+  const imageSrc1 = getAssetUrl("/images/templates/office-for-zoom/button.svg");
+  const imageSrc2 = getAssetUrl("/images/templates/office-for-zoom/icon.svg");
 
   return (
     <StyledMarketplaceConnector>

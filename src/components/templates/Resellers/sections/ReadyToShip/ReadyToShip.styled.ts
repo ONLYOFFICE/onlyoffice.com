@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledReadyToShipIcon = styled.div`
   margin: 0 auto 32px;
   width: 64px;
   height: 64px;
-  background-image: url("/images/templates/resellers/ready-to-ship/icon.svg");
+  background-image: url(${getAssetUrl('/images/templates/resellers/ready-to-ship/icon.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 

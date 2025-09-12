@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFeaturesTable = styled.table`
   border: 1px solid #e2e2e2;
   border-radius: 5px;
@@ -121,7 +122,7 @@ const StyledFeaturesTableItemList = styled.ol`
 `;
 
 const StyledFeaturesTableItemListItem = styled.li`
-  background-image: url("/images/icons/check.svg");
+  background-image: url(${getAssetUrl('/images/icons/check.svg')});
   background-repeat: no-repeat;
   margin-bottom: 9px;
   padding-left: 32px;

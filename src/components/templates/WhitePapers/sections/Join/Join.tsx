@@ -1,13 +1,13 @@
 import { memo } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
-import { Text } from "@src/components/ui/Text";
 
 import {
   StyledJoinButton,
   StyledJoinHeading,
   StyledJoinIcon,
-  StyledJoinSection
+  StyledJoinSection,
+  StyledTextNoWrap
 } from "./Join.styled";
 
 const JoinComponent = () => {
@@ -27,7 +27,7 @@ const JoinComponent = () => {
             t={t}
             i18nKey={"JoinOver"}
             components={[
-              <Text key={0} as={"span"} fontWeight={600} label="" />
+              <StyledTextNoWrap key={0} as={"span"} fontWeight={600} />
             ]}
           />
         </StyledJoinHeading>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background-color: #5ec0cf;
   overflow: hidden;
@@ -13,7 +14,7 @@ const StyledMarketplaceConnector = styled.section`
     left: calc(50% - 231px);
     width: 1100px;
     height: 1100px;
-    background-image: url("/images/templates/office-for-humhub/marketplace-connector/humhub.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-humhub/marketplace-connector/humhub.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateY(-50%);
@@ -72,7 +73,7 @@ const StyledMarketplaceConnectorBody = styled.div`
 const StyledMarketplaceConnectorImg = styled.div`
   width: 544px;
   height: 100%;
-  background-image: url("/images/templates/office-for-humhub/marketplace-connector/connector-img.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-humhub/marketplace-connector/connector-img.svg')});
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;

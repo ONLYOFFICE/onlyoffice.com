@@ -3,6 +3,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledBugBlock = styled.div`
     margin: 0 auto;
     max-width: 544px;
@@ -17,7 +18,7 @@ const StyledBugBlock = styled.div`
         top: 0;
         left: 50%;
         transform: translateX(-50%);
-        background-image: url("/images/templates/security/compliance/sec_bug_program.svg");
+        background-image: url(${getAssetUrl('/images/templates/security/compliance/sec_bug_program.svg')});
         background-repeat: no-repeat;
         width: 249px;
         height: 183px;

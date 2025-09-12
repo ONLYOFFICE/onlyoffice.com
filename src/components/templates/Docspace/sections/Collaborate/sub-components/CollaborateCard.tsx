@@ -1,4 +1,5 @@
 import { Link } from "@src/components/ui/Link";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledCollaborateCard,
   StyledCollaborateCardDescription,
@@ -42,7 +43,7 @@ const CollaborateCard = ({
         </StyledCollaborateCardDescription>
         <Link label={t(linkLabel)} href={href} textUnderline color="#ff6f3d" />
       </StyledContentWrapper>
-      <StyledCollaborateCardImage $imgUrl={t(image.url)} $imgUrl2x={t(image.url2x)} />
+      <StyledCollaborateCardImage $imgUrl={getAssetUrl(t(image.url))} $imgUrl2x={t(image.url2x)} />
     </StyledCollaborateCard>
   );
 };

@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #efefef;
-  background-image: url("/images/templates/office-for-zoom/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-zoom/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: center -228px;
 
@@ -37,7 +38,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 188px;
   height: 43px;
-  background-image: url("/images/templates/office-for-zoom/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-zoom/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 

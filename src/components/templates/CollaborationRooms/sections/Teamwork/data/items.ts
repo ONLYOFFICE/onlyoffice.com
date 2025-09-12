@@ -1,11 +1,12 @@
 import { ITeamworkCard } from "../sub-components/TeamworkCard";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const teamworkItems: ITeamworkCard[] = [
   {
     heading: "Education",
     text: "EducationDesc",
     image: {
-      url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",
+      url: getAssetUrl("/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg"),
       positionX: "-18px",
     },
   },
@@ -13,7 +14,7 @@ export const teamworkItems: ITeamworkCard[] = [
     heading: "Business",
     text: "BusinessDesc",
     image: {
-      url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",
+      url: getAssetUrl("/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg"),
       positionX: "-94px",
     },
     color: "#ffffff",
@@ -23,7 +24,7 @@ export const teamworkItems: ITeamworkCard[] = [
     heading: "Individuals",
     text: "IndividualsDesc",
     image: {
-      url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",
+      url: getAssetUrl("/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg"),
       positionX: "-170px",
     },
     borderColor: "#8bb825",
@@ -33,7 +34,7 @@ export const teamworkItems: ITeamworkCard[] = [
     heading: "Legal",
     text: "LegalDesc",
     image: {
-      url: "/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg",
+      url: getAssetUrl("/images/templates/collaboration-rooms/teamwork/teamwork-icons.svg"),
       positionX: "-245px",
     },
   },

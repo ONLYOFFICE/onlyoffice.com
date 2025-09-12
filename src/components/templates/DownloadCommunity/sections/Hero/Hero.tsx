@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroSection,
   StyledHeroDescription,
@@ -38,7 +39,7 @@ const Hero = ({
           button: {
             id: "docs-community",
             icon: {
-              url: "/images/templates/download-community/hero/icons.svg",
+              url: getAssetUrl("/images/templates/download-community/hero/icons.svg"),
             },
             label: t("DocsCommunity"),
           },
@@ -157,7 +158,7 @@ const Hero = ({
           button: {
             id: "docspace-community",
             icon: {
-              url: "/images/templates/download-community/hero/icons.svg",
+              url: getAssetUrl("/images/templates/download-community/hero/icons.svg"),
               positionY: "-70px",
             },
             label: t("DocSpaceCommunity"),

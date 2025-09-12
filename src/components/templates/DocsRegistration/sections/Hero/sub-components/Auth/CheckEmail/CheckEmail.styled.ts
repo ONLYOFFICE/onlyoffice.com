@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCheckEmail = styled.div`
   display: grid;
   row-gap: 24px;
@@ -14,7 +15,7 @@ const StyledCheckEmailImage = styled.div`
   margin: 0 auto 8px;
   width: 140px;
   height: 140px;
-  background-image: url("/images/templates/docspace-registration/hero/check-email.svg");
+  background-image: url(${getAssetUrl('/images/templates/docspace-registration/hero/check-email.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

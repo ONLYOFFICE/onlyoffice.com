@@ -2,8 +2,8 @@
   "PageTitle": "API di conversione | ONLYOFFICE",
   "PageDescription": "Un'unica API per convertire tutti i tipi di documenti d'ufficio",
 
-  "HeroTitle": "Conversione di documenti potente",
-  "HeroText": "Un'unica API per convertire tutti i tipi di documenti di Office: testi, tabelle, diapositive, moduli, PDF, eBook e altro ancora",
+  "HeroTitle": "Potente conversione di documenti",
+  "HeroText": "Un'unica API per convertire tutti i tipi di documenti d'ufficio: testi, tabelle, diapositive, moduli, PDF, eBook e altro ancora",
   "GetStarted": "Inizia",
 
   "ExploreExamples": "Scopri gli esempi pronti all'uso",
@@ -19,14 +19,14 @@
   "AdvancedSettings": "Impostazioni avanzate",
   "AddConversionSettings": "Aggiungi impostazioni di conversione per definire i caratteri delimitatori durante la conversione di file CSV, la modalità di visualizzazione della valuta predefinita durante la conversione di fogli di calcolo, imposta le dimensioni della pagina e i margini del file PDF di output e altro ancora. Consulta la documentazione dell'API per conoscere tutte le opzioni disponibili.",
   "HighQualityConversion": "Conversione di alta qualità",
-  "OOConstantlyImproveTheService": "ONLYOFFICE migliora costantemente il servizio per fornire i migliori risultati possibili per tutti i tipi di conversione. Usa il <0>ostro convertitore online</0> e prova a convertire i tuoi file.",
+  "OOConstantlyImproveTheService": "ONLYOFFICE migliora costantemente il servizio per fornire i migliori risultati possibili per tutti i tipi di conversione. Usa il <0>nostro convertitore online</0> e prova a convertire i tuoi file.",
 
   "EasilyBuild": "Crea facilmente un convertitore di documenti online",
   "UsingOOConversionApi": "Utilizzo dell'API di conversione ONLYOFFICE",
   "CheckTheTutorial": "Consulta il tutorial",
   "DocumentConverterLink": "https://www.onlyoffice.com/blog/it/2023/02/convertitore-di-documenti-online-con-api-onlyoffice",
 
-  "PartOfOODocsDeveloper": "API di conversione ONLYOFFICE - fa parte di ONLYOFFICE Docs Developer",
+  "PartOfOODocsDeveloper": "L'API di conversione ONLYOFFICE fa parte di ONLYOFFICE Docs Developer",
   "BringAdvancedDocument": "Porta l'elaborazione avanzata dei documenti con il servizio di conversione agli utenti finali con il tuo marchio. <0>Scopri di più</0>",
   "ConversionApiLinkSubject": "Richiesta%20di%20API%20di%20conversione%20di%20ONLYOFFICE",
 

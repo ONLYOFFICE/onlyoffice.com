@@ -2,6 +2,8 @@ interface IWebinarsForUserEmail {
   webinarTheme: string;
   webinarDate: string;
   language: string;
+  baseUrl: string;
+  unsubscribeId: string;
 }
 
 const emailsTranslations: Record<
@@ -165,6 +167,8 @@ const WebinarsForUserEmail = ({
   webinarTheme,
   webinarDate,
   language,
+  baseUrl,
+  unsubscribeId,
 }: IWebinarsForUserEmail) => {
   const t = (key: string, params?: Record<string, string>): string => {
     const langObj = emailsTranslations[language] || emailsTranslations.en;
@@ -468,7 +472,13 @@ const WebinarsForUserEmail = ({
                                 <td class="fol" style="color: #666666; font-family: 'Open Sans', Helvetica, Arial, Tahoma;  font-size: 13px; line-height: 19.5px; margin: 0; padding: 0px 24px 40px; vertical-align: top;">
                                     ${t("ThisEmailIsGeneratedAutomatically")}
                                     <br>
-                                    <a href="https://www.onlyoffice.com/${language !== "en" ? `${language}/` : ""}Unsubscribe?id=$unsubscribeId" style="color: #FF6F3D;text-decoration: underline;white-space: nowrap;" target="_blank">${t("Unsubscribe")}</a>
+                                    <a
+                                        href="${baseUrl}/Unsubscribe?id=${unsubscribeId}"
+                                        style="color: #FF6F3D;text-decoration: underline;white-space: nowrap;"
+                                        target="_blank"
+                                    >
+                                           ${t("Unsubscribe")}
+                                    </a>
                                     </p>
                                 </td>
                             </tr>

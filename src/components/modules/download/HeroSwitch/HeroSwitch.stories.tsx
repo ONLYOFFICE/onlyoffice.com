@@ -3,6 +3,7 @@ import { HeroSwitch } from "./HeroSwitch";
 import { IHeroSwitch } from "./HeroSwitch.types";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Modules/Download/HeroSwitch",
   component: HeroSwitch,
@@ -42,7 +43,7 @@ Default.args = {
       button: {
         id: "docs-enterprise",
         icon: {
-          url: "/images/storybook/modules/download/hero-switch/icons.svg",
+          url: getAssetUrl("/images/storybook/modules/download/hero-switch/icons.svg"),
           positionY: "-70px",
         },
         label: "Docs Enterprise",
@@ -54,7 +55,7 @@ Default.args = {
       button: {
         id: "docspace-enterprise",
         icon: {
-          url: "/images/storybook/modules/download/hero-switch/icons.svg",
+          url: getAssetUrl("/images/storybook/modules/download/hero-switch/icons.svg"),
           positionY: "-70px",
         },
         label: "DocSpace Enterprise",

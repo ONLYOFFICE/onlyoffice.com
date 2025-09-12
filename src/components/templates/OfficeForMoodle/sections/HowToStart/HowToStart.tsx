@@ -10,6 +10,7 @@ import { itemsTab1 } from "./data/itemsTab1";
 import { itemsTab2 } from "./data/itemsTab2";
 import { Tabs } from "@src/components/widgets/Tabs";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const HowToStart = () => {
   const { t } = useTranslation("office-for-moodle");
   const [selectedTab, setSelectedTab] = useState("tab-1");
@@ -86,7 +87,7 @@ const HowToStart = () => {
         <StyledHowToStartInfo>
           <WatchVideo
             heading={t("HowToConnect")}
-            videoImgUrl="/images/templates/office-for-moodle/how-to-start/watch-video.jpg"
+            videoImgUrl={getAssetUrl("/images/templates/office-for-moodle/how-to-start/watch-video.jpg")}
             videoUrl="https://youtube.com/embed/JudgGPQo1nQ"
           />
 

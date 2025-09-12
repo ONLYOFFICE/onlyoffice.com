@@ -5,6 +5,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSection = styled(Section)`
     background-color: #333;
 `;
@@ -12,7 +13,7 @@ const StyledSection = styled(Section)`
 const StyledFeaturesWrapper = styled.div`
     background-position-x: calc(50% + 470px);
     background-position-y: 100%;
-    background-image: url("/images/templates/document-builder/features/bg_technology.svg");
+    background-image: url(${getAssetUrl('/images/templates/document-builder/features/bg_technology.svg')});
     background-repeat: no-repeat;
     border-bottom: 1px solid rgba(237, 240, 246, 0.1);
     padding: 116px 0 143px;
@@ -44,7 +45,7 @@ const StyledFeaturesWrapper = styled.div`
     }
 
     &:nth-child(2) {
-        background-image: url("/images/templates/document-builder/features/bg_languages.svg");
+        background-image: url(${getAssetUrl('/images/templates/document-builder/features/bg_languages.svg')});
         background-position-y: calc(100% - 39px);
         background-position-x: calc(50% + 450px);
 
@@ -109,7 +110,7 @@ const FeaturesBlock = styled.div`
     &::before {
         content: "";
         position: absolute;
-        background-image: url("/images/templates/document-builder/features/icons.svg");
+        background-image: url(${getAssetUrl('/images/templates/document-builder/features/icons.svg')});
         background-repeat: no-repeat;
         background-position: -233px 0;
         top: -18px;
@@ -167,7 +168,7 @@ const StyledLink = styled(Link)`
 
     &::after {
         content: "";
-        background-image: url("/images/templates/document-builder/features/more.svg");
+        background-image: url(${getAssetUrl('/images/templates/document-builder/features/more.svg')});
         background-repeat: no-repeat;
         background-position: 0 0;
         background-size: 6px auto;

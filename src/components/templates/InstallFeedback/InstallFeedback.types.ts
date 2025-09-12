@@ -21,6 +21,7 @@ interface IFormData {
   degreeVersionMeet: string;
   planToUse: string;
   comments: string;
+  captchaToken: string | null;
 }
 
 interface IQuestionBlockProps {
@@ -33,8 +34,4 @@ interface IQuestionBlockProps {
   isCheckBoxBlock?: boolean;
 }
 
-export type {
-  IFormItems,
-  IFormData,
-  IQuestionBlockProps,
-}
+export type { IFormItems, IFormData, IQuestionBlockProps };

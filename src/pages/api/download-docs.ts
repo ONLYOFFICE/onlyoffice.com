@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { parse } from "cookie";
 import { getDisplayNameWithoutParentheses } from "@src/utils/getDisplayNameWithoutParentheses";
 import { addLandingRequest } from "@src/lib/requests/addLandingRequest";
@@ -77,9 +78,27 @@ export default async function handler(
     from,
     country,
     region,
+    hCaptchaResponse,
   } = req.body;
 
   try {
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
+
     const errorMessages = [];
     const cookies = parse(req.headers.cookie || "");
 
@@ -171,7 +190,7 @@ export default async function handler(
         company_name: companyName,
         company_size: null,
         position: null,
-        ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
+        ip,
         fromPage: from,
         utm_source: cookies.utm_source || null,
         utm_campaign: cookies.utm_campaign || null,

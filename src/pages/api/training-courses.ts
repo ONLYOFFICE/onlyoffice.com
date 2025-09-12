@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
@@ -33,9 +34,27 @@ export default async function handler(
     message,
     languageCode,
     from,
+    hCaptchaResponse,
   } = req.body;
 
   try {
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
+
     const errorMessages = [];
     const cookies = parse(req.headers.cookie || "");
 

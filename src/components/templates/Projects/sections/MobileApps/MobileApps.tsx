@@ -1,5 +1,6 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledMobileApps,
   StyledMobileAppsButtonsWrapper,
@@ -15,7 +16,7 @@ const MobileApps = () => {
   const { t } = useTranslation("projects");
 
   return (
-    <StyledMobileAppsSection background="#f6f6f6" $bgImage={t("MobileImage")}>
+    <StyledMobileAppsSection background="#f6f6f6" $bgImage={getAssetUrl(t("MobileImage"))}>
       <Container>
         <StyledMobileAppsContent>
           <StyledMobileApps>{t("MobileApps")}</StyledMobileApps>

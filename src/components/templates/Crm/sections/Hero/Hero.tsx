@@ -2,6 +2,7 @@ import { Trans, useTranslation } from "next-i18next";
 import { CollaborationsHero } from "@src/components/modules/collaborations/CollaborationsHero";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Hero = () => {
   const { t } = useTranslation("crm");
 
@@ -24,8 +25,8 @@ const Hero = () => {
         label: t("GetItNow"),
       }}
       image={{
-        url: t("HeroImage"),
-        url2x: t("HeroImage2x"),
+        url: getAssetUrl(t("HeroImage")),
+        url2x: getAssetUrl(t("HeroImage2x")),
         type: "video",
         videoUrl:
           "https://www.youtube.com/embed/A2V1EXwrogk?si=bL3bmte1R7nJgZMK",

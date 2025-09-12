@@ -3,6 +3,7 @@ import { FeatureSwitcher } from "./FeatureSwitcher";
 import { IFeatureSwitcher } from "./FeatureSwitcher.types";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Widgets/FeatureSwitcher",
   component: FeatureSwitcher,
@@ -57,15 +58,15 @@ Default.args = {
     {
       label: "View, edit and collaborate on docs, sheets, slides",
       image: {
-        url: "/images/storybook/widgets/feature-switcher/actions.png",
-        url2x: "/images/storybook/widgets/feature-switcher/actions@2x.png",
+        url: getAssetUrl("/images/storybook/widgets/feature-switcher/actions.png"),
+        url2x: getAssetUrl("/images/storybook/widgets/feature-switcher/actions@2x.png"),
       },
     },
     {
       label: "Build fillable PDF forms and fill in them online",
       image: {
-        url: "/images/storybook/widgets/feature-switcher/pdf-forms.png",
-        url2x: "/images/storybook/widgets/feature-switcher/pdf-forms@2x.png",
+        url: getAssetUrl("/images/storybook/widgets/feature-switcher/pdf-forms.png"),
+        url2x: getAssetUrl("/images/storybook/widgets/feature-switcher/pdf-forms@2x.png"),
       },
     },
   ],

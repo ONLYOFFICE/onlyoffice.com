@@ -1,4 +1,5 @@
 import { IDownloadBlock } from "@src/components/widgets/download/DownloadBlock";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   documentServer,
   snapPackage,
@@ -15,7 +16,7 @@ export const communityProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-community/hero/docker.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/docker.svg"),
       positionX: "center",
       positionY: "center",
       background: "#099cec",
@@ -53,7 +54,7 @@ export const communityProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-community/hero/derbian-ubuntu.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/derbian-ubuntu.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -90,7 +91,7 @@ export const communityProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-community/hero/centos.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/centos.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -127,7 +128,7 @@ export const communityProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-community/hero/windows.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/windows.svg"),
       positionX: "center",
       positionY: "center",
       background: "#00188f",
@@ -156,7 +157,7 @@ export const communityProducts: IDownloadBlock[] = [
   {
     nameKey: "snap-documentserver",
     image: {
-      url: "/images/templates/download-community/hero/snap-package.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/snap-package.svg"),
       positionX: "center",
       positionY: "center",
       background: "#ff6f3d",
@@ -184,7 +185,7 @@ export const communityProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/univention-appliance.png",
+      url: getAssetUrl("/images/templates/download-community/hero/univention-appliance.png"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -212,7 +213,7 @@ export const communityProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-community/hero/digital-ocean.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/digital-ocean.svg"),
       positionX: "center",
       positionY: "center",
       background: "#0080ff",
@@ -240,7 +241,7 @@ export const communityProducts: IDownloadBlock[] = [
   {
     nameKey: "com.onlyoffice.coudronapp",
     image: {
-      url: "/images/templates/download-community/hero/cloudron.png",
+      url: getAssetUrl("/images/templates/download-community/hero/cloudron.png"),
       positionX: "center",
       positionY: "center",
       background: "#03aefc",
@@ -267,7 +268,7 @@ export const communityProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/vultr.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/vultr.svg"),
       positionX: "center",
       positionY: "center",
       background: "linear-gradient(90deg,#09276B 0%,#2448A2 100%)",
@@ -293,7 +294,7 @@ export const communityProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/linode.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/linode.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -323,7 +324,7 @@ export const bundlesWithOwnCloudProducts: IDownloadBlock[] = [
   {
     nameKey: "onlyoffice-owncloud",
     image: {
-      url: "/images/templates/download-community/hero/docker.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/docker.svg"),
       positionX: "center",
       positionY: "center",
       background: "#099cec",
@@ -351,7 +352,7 @@ export const bundlesWithOwnCloudProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/vmware.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/vmware.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -375,7 +376,7 @@ export const bundlesWithOwnCloudProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/vmware-esx.png",
+      url: getAssetUrl("/images/templates/download-community/hero/vmware-esx.png"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -399,7 +400,7 @@ export const bundlesWithOwnCloudProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/virtualbox.png",
+      url: getAssetUrl("/images/templates/download-community/hero/virtualbox.png"),
       positionX: "center",
       positionY: "center",
       background: "#1d3d67",
@@ -424,7 +425,7 @@ export const bundlesWithOwnCloudProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/kvm.png",
+      url: getAssetUrl("/images/templates/download-community/hero/kvm.png"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -452,7 +453,7 @@ export const bundlesWithNextcloudProducts: IDownloadBlock[] = [
   {
     nameKey: "onlyoffice-nextcloud",
     image: {
-      url: "/images/templates/download-community/hero/docker.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/docker.svg"),
       positionX: "center",
       positionY: "center",
       background: "#099cec",
@@ -480,7 +481,7 @@ export const bundlesWithNextcloudProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/vmware.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/vmware.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -504,7 +505,7 @@ export const bundlesWithNextcloudProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/vmware-esx.png",
+      url: getAssetUrl("/images/templates/download-community/hero/vmware-esx.png"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -528,7 +529,7 @@ export const bundlesWithNextcloudProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/virtualbox.png",
+      url: getAssetUrl("/images/templates/download-community/hero/virtualbox.png"),
       positionX: "center",
       positionY: "center",
       background: "#1d3d67",
@@ -553,7 +554,7 @@ export const bundlesWithNextcloudProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/kvm.png",
+      url: getAssetUrl("/images/templates/download-community/hero/kvm.png"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",

@@ -3,6 +3,7 @@ import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 import { BestAlternativeCompatibility } from "@src/components/modules/best-alternative/BestAlternativeCompatibility";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Compatibility = () => {
   const { t } = useTranslation("best-libreoffice-alternative");
 
@@ -11,7 +12,7 @@ const Compatibility = () => {
       alternative={{
         label: "LibreOffice",
         logo: {
-          src: "/images/templates/best-libreOffice-alternative/compatibility/logo_libreOffice.svg",
+          src: getAssetUrl("/images/templates/best-libreOffice-alternative/compatibility/logo_libreOffice.svg"),
         },
       }}
       items={items}

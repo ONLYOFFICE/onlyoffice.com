@@ -2,8 +2,9 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
-  background-image: url("/images/templates/academy/hero/clouds.svg");
+  background-image: url(${getAssetUrl('/images/templates/academy/hero/clouds.svg')});
   background-repeat: no-repeat;
   background-size: 1051px auto;
   background-position: calc(50% + 286px) 101px;

@@ -2,10 +2,11 @@ import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #efefef;
-  background-image: url("/images/templates/office-for-telegram/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-telegram/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: 35% 0;
   position: relative;
@@ -13,8 +14,8 @@ const StyledHero = styled(Section)`
 
   &:before {
     background-image:
-      url("/images/templates/office-for-telegram/hero/left.svg"),
-      url("/images/templates/office-for-telegram/hero/right.svg");
+      url(${getAssetUrl('/images/templates/office-for-telegram/hero/left.svg')}),
+      url(${getAssetUrl('/images/templates/office-for-telegram/hero/right.svg')});
     content: "";
     display: block;
     background-position-x: 0%, 100%;
@@ -76,7 +77,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 80px;
   height: 80px;
-  background-image: url("/images/templates/office-for-telegram/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-telegram/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -131,7 +132,7 @@ const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
   position: relative;
 
   &:after {
-    background-image: url("/images/templates/office-for-telegram/hero/bot.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-telegram/hero/bot.svg')});
     background-repeat: no-repeat;
     content: "";
     display: block;

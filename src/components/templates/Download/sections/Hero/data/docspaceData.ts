@@ -3,9 +3,10 @@ import { IDownloadCard } from "@src/components/widgets/download/DownloadCard";
 import { IInfoCard } from "@src/components/widgets/download/InfoCard";
 import { docspaceEnterprise, amiDocspace } from "@src/config/constans/download";
 
-const iconsSprite = "/images/templates/download/hero/features.svg";
-const productsSprite = "/images/templates/download/hero/products.svg";
-const infoProductsSprite = "/images/templates/download/hero/icons.svg";
+import { getAssetUrl } from "@utils/getAssetUrl";
+const iconsSprite = getAssetUrl("/images/templates/download/hero/features.svg");
+const productsSprite = getAssetUrl("/images/templates/download/hero/products.svg");
+const infoProductsSprite = getAssetUrl("/images/templates/download/hero/icons.svg");
 
 export const docspaceIcons: IIconTooltip[] = [
   {

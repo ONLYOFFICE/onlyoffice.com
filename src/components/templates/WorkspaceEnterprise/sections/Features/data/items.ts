@@ -1,5 +1,6 @@
 import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IFeatureImageItem[] = [
   {
     heading: "Feature1",
@@ -13,7 +14,7 @@ export const items: IFeatureImageItem[] = [
       mobile: 16,
     },
     image: {
-      url: "/images/templates/workspace-enterprise/features/administration-customization.svg",
+      url: getAssetUrl("/images/templates/workspace-enterprise/features/administration-customization.svg"),
       height: 290,
       width: 449,
     },
@@ -30,7 +31,7 @@ export const items: IFeatureImageItem[] = [
       mobile: 16,
     },
     image: {
-      url: "/images/templates/workspace-enterprise/features/multitenancy-scalability.svg",
+      url: getAssetUrl("/images/templates/workspace-enterprise/features/multitenancy-scalability.svg"),
       height: 290,
       width: 449,
     },

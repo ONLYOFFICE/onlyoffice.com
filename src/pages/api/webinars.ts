@@ -1,9 +1,11 @@
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { emailTransporter } from "@src/config/email/transporter";
 import { NextApiRequest, NextApiResponse } from "next";
 import { parse } from "cookie";
 import { WebinarsForUsEmail } from "@src/components/emails/WebinarsForUsEmail";
 import { WebinarsForUserEmail } from "@src/components/emails/WebinarsForUserEmail";
+import { generateKey } from "@src/lib/requests/thirdparty/generate";
 
 interface IWebinarsData {
   full_name: string;
@@ -28,13 +30,31 @@ export default async function handler(
     webinarTheme,
     webinarDate,
     questions,
-    lang,
+    webinarLang,
     from,
-    locale,
     emailSubject,
+    hCaptchaResponse,
+    locale,
   } = req.body;
 
   try {
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
+
     const errorMessages = [];
     const cookies = parse(req.headers.cookie || "");
 
@@ -45,7 +65,7 @@ export default async function handler(
           email,
           company_name: companyName,
           webinar_theme: webinarTheme,
-          webinar_lang: lang,
+          webinar_lang: webinarLang,
         };
 
         await db.teamlabsite.query("INSERT INTO webinar_request SET ?", [
@@ -88,10 +108,14 @@ export default async function handler(
         companyName,
         webinarTheme,
         webinarDate,
-        lang,
+        webinarLang,
         questions,
       }),
     });
+
+    const { data: generateKeyData } = await generateKey({ email });
+    const baseUrl = `${req.headers.origin}${locale === "en" ? "" : `/${locale}`}`;
+    const emailKey = `${generateKeyData.emailKey}1`;
 
     await transporter.sendMail({
       from,
@@ -101,6 +125,8 @@ export default async function handler(
         webinarTheme,
         webinarDate,
         language: locale,
+        baseUrl,
+        unsubscribeId: emailKey,
       }),
     });
 

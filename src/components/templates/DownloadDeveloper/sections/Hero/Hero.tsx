@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroDescription,
   StyledHeroHeading,
@@ -54,6 +55,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-developer", {
       method: "POST",
@@ -72,6 +74,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
         from,
         country,
         region,
+        hCaptchaResponse,
       }),
     }).then((res) => res.json());
   };
@@ -88,7 +91,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
             button: {
               id: "docs-developer",
               icon: {
-                url: "/images/templates/download-developer/hero/icons.svg",
+                url: getAssetUrl("/images/templates/download-developer/hero/icons.svg"),
                 positionY: "-70px",
               },
               label: t("DocsDeveloper"),
@@ -193,7 +196,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
             button: {
               id: "docspace-developer",
               icon: {
-                url: "/images/templates/download-developer/hero/icons.svg",
+                url: getAssetUrl("/images/templates/download-developer/hero/icons.svg"),
               },
               label: t("DocSpaceDeveloper"),
               text: t("DocumentEditorsSecureRoomBasedDMS"),
@@ -316,6 +319,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
         onClose={() => setIsModalOpen(false)}
         onSubmitRequest={onSubmitRequest}
         buttonAction={buttonAction}
+        pageTrackName={formData.buttonId}
       />
     </>
   );

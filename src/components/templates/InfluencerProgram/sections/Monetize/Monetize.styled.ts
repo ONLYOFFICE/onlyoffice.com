@@ -2,6 +2,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMonetizeWrapper = styled.div`
   display: grid;
   grid-template-columns: 448px auto;
@@ -51,7 +52,7 @@ const StyledMonetizeImage = styled.div`
   max-width: 624px;
   width: 100%;
   padding-bottom: 55.157%;
-  background-image: url("/images/templates/influencer-program/monetize/monetize.svg");
+  background-image: url(${getAssetUrl('/images/templates/influencer-program/monetize/monetize.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

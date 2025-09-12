@@ -2,6 +2,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { RoomsFeatures } from "./RoomsFeatures";
 import { IRoomsFeatures } from "./RoomsFeatures.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Modules/Rooms/RoomsFeatures",
   component: RoomsFeatures,
@@ -27,7 +28,7 @@ Default.args = {
       heading: "Secure for sensitive documents",
       text: "Protect your files by setting access level to define which actions will be available to the invited people: Room managers with access management rights, Content creators with access to manage room files/folders, Editors with full access to the room files, or Viewers with read-only access.",
       image: {
-        url: "/images/storybook/modules/rooms/rooms-features/secure-for-sensitive-documents.png",
+        url: getAssetUrl("/images/storybook/modules/rooms/rooms-features/secure-for-sensitive-documents.png"),
         url2x:
           "/images/storybook/modules/rooms/rooms-features/secure-for-sensitive-documents@2x.png",
         height: 518,
@@ -38,7 +39,7 @@ Default.args = {
       text: "Collaborate effectively to get work done faster.",
       links: [{ href: "#", label: "Learn more" }],
       image: {
-        url: "/images/storybook/modules/rooms/rooms-features/cost-effective-for-any-budget.png",
+        url: getAssetUrl("/images/storybook/modules/rooms/rooms-features/cost-effective-for-any-budget.png"),
         url2x:
           "/images/storybook/modules/rooms/rooms-features/cost-effective-for-any-budget@2x.png",
         height: 518,

@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { parse } from "cookie";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { validateEmail } from "@src/utils/validators";
 import { LoginEmail } from "@src/components/emails/LoginEmail";
 import { RegisterEmail } from "@src/components/emails/RegisterEmail";
@@ -25,7 +26,25 @@ export default async function handler(
       partnerId,
       affiliateId,
       emailSubject,
+      hCaptchaResponse,
     } = req.body;
+
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
 
     if (typeof email !== "string" || !validateEmail(email)) {
       return res.status(400).json({

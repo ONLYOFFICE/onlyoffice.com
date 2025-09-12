@@ -22,7 +22,7 @@
   "GetCode": "Ottieni codice compilato",
   "BuildTables": "Crea tabelle",
 
-  "ChatWithAI": "Chatta con l'assistente dell'IA",
+  "ChatWithAI": "Chatta con l'assistente AI",
   "GetAnswers": "Ottieni risposte alle tue domande",
   "MakeRequests": "Fai varie richieste in un modulo libero",
   "QuicklyFind": "Trova rapidamente informazioni",
@@ -44,7 +44,7 @@
   "ConnectAnyAI": "Connetti qualsiasi assistente AI",
   "ConnectAnyAIText": "Connetti qualsiasi modello AI, inclusi quelli locali. Seleziona un provider preinstallato dall'elenco (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI) o configura il tuo modello personalizzato.",
 
-  "DifferentAI": "Diversi modelli AI – per compiti diversi",
+  "DifferentAI": "Diversi modelli AI per compiti diversi",
   "AdjustAI": "Adatta l'uso dell'AI come ne hai bisogno. Applica diversi modelli AI per eseguire varie azioni come richieste di chatbot, traduzione, OCR, ecc.",
 
   "GetStarted": "Inizia",
@@ -56,7 +56,7 @@
   "ClickEditAIModels": "Clicca su <0>Modifica modelli AI</0>. Inserisci le chiavi per i provider AI selezionati dall'elenco o aggiungi nuovi modelli AI.",
   "SelectTheRequiredAIModels": "Seleziona i modelli AI necessari per compiti specifici.",
 
-  "LearnMoreHeading": "Scopri di più sull'utilizzo dell'IA in ONLYOFFICE",
+  "LearnMoreHeading": "Scopri di più sull'utilizzo dell'AI in ONLYOFFICE",
   "Blog": "Blog",
   "FAQ": "FAQ: come usare l'AI in ONLYOFFICE",
   "FAQLink": "https://www.onlyoffice.com/blog/it/2025/03/faq-ai-in-onlyoffice",

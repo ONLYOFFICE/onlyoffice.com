@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledEnterpriseWrapper = styled.div`
   display: grid;
   align-items: center;
@@ -113,7 +114,7 @@ const StyledEnterpriseContent = styled.div`
 `;
 
 const StyledEnterpriseImage = styled.div`
-  background-image: url("/images/templates/for-research/enterprise/enterprise.svg");
+  background-image: url(${getAssetUrl('/images/templates/for-research/enterprise/enterprise.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   height: 356px;
@@ -202,7 +203,7 @@ const StyledQuoteText = styled.i`
     left: 50%;
     width: 196px;
     height: 160px;
-    background-image: url("/images/templates/for-research/enterprise/dark_quotes.svg");
+    background-image: url(${getAssetUrl('/images/templates/for-research/enterprise/dark_quotes.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateX(-50%);

@@ -91,6 +91,7 @@ const EnterpriseModal = ({
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IQuoteModalOnSubmitRequest) => {
     return fetch("/api/docspace-prices", {
       method: "POST",
@@ -112,6 +113,7 @@ const EnterpriseModal = ({
         from,
         country,
         region,
+        hCaptchaResponse,
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
         type: "docspaceenterpriserequest",
@@ -342,6 +344,7 @@ const EnterpriseModal = ({
         buttonLabel={t("GetAQuote")}
         onSubmitRequest={onSubmitRequest}
         onClose={() => setIsModalOpen(false)}
+        pageTrackName="docspace-prices-request"
       />
     </>
   );

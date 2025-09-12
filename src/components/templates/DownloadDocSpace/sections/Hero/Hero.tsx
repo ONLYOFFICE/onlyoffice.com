@@ -6,6 +6,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import { HeroTabs } from "@src/components/modules/download/HeroTabs";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   DownloadModal,
   IDownloadModalData,
@@ -44,6 +45,7 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-docspace", {
       method: "POST",
@@ -62,6 +64,7 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
         from,
         country,
         region,
+        hCaptchaResponse,
       }),
     }).then((res) => res.json());
   };
@@ -83,7 +86,7 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
             button: {
               id: "docspace-enterprise",
               icon: {
-                url: "/images/templates/download-docspace/hero/enterprise.svg",
+                url: getAssetUrl("/images/templates/download-docspace/hero/enterprise.svg"),
               },
               label: t("Enterprise"),
             },
@@ -101,7 +104,9 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
                       {...item}
                       readInstructionLink={
                         item.readInstructionLink
-                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          ? t(item.readInstructionLink, {
+                              defaultValue: item.readInstructionLink,
+                            })
                           : undefined
                       }
                       heading={t(item.heading)}
@@ -141,7 +146,7 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
             button: {
               id: "docspace-community",
               icon: {
-                url: "/images/templates/download-docspace/hero/community.svg",
+                url: getAssetUrl("/images/templates/download-docspace/hero/community.svg"),
               },
               label: t("Community"),
             },
@@ -217,6 +222,7 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
         onClose={() => setIsModalOpen(false)}
         onSubmitRequest={onSubmitRequest}
         buttonAction={buttonAction}
+        pageTrackName={formData.buttonId}
       />
     </>
   );

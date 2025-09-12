@@ -13,10 +13,14 @@ import {
   StyledPreTextAreaText,
   StyledHeroHCaptchaWrapper,
 } from "./PartnershipRequestForm.styled";
-import { targetMarketSegments, partnerInfoSource, partnerPromote } from "./data/items";
+import {
+  targetMarketSegments,
+  partnerInfoSource,
+  partnerPromote,
+} from "./data/items";
 import { SuccessModal } from "./sub-components/SuccessModal/SuccessModal";
 import { CheckboxesBlock } from "./sub-components/CheckboxesBlock";
-import { YesNoRadioBlock } from "./sub-components/YesNoRadioBlock/YesNoRadioBlock"
+import { YesNoRadioBlock } from "./sub-components/YesNoRadioBlock/YesNoRadioBlock";
 import { IPartnRequestForm } from "./PartnershipRequestForm.types";
 import { getFromParam } from "@src/utils/getParams";
 import { Heading } from "@src/components/ui/Heading";
@@ -33,6 +37,7 @@ import {
   validateEmail,
   validateWebsite,
 } from "@src/utils/validators";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const PartnershipRequestForm = ({
   locale,
@@ -82,7 +87,9 @@ const PartnershipRequestForm = ({
     useState<ILoaderButton["status"]>("default");
   const [token, setToken] = useState("");
   const [isCaptchaValid, setIsCaptchaValid] = useState(false);
-  const [hCaptchaSize, setHCaptchaSize] = useState<"normal" | "compact">("normal");
+  const [hCaptchaSize, setHCaptchaSize] = useState<"normal" | "compact">(
+    "normal",
+  );
 
   const isFirstNameValid =
     formData.firstName.length > 0 && validateFullName(formData.firstName);
@@ -92,13 +99,17 @@ const PartnershipRequestForm = ({
     formData.email.length > 0 && validateEmail(formData.email);
   const isCompanyValid = formData.companyName.length > 0;
   // const isPhoneValid = formData.phone.length > 0;
-  const isWebsiteValid = formData.website.length > 0 && validateWebsite(formData.website);
-  const isEmployeesValid = formData.numberEmployees.length > 0 && validateEmployeesCount(formData.numberEmployees);
+  const isWebsiteValid =
+    formData.website.length > 0 && validateWebsite(formData.website);
+  const isEmployeesValid =
+    formData.numberEmployees.length > 0 &&
+    validateEmployeesCount(formData.numberEmployees);
   const [isSegmentError, setIsSegmentError] = useState(false);
   const [isTMSegmentsTouched, setIsTMSegmentsTouched] = useState(false);
   const [isOnSubmitPushed, setIsOnSubmitPushed] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
+  const pageTrack = usePageTrack();
 
   const segmentValues = useMemo(
     () => ({
@@ -118,7 +129,7 @@ const PartnershipRequestForm = ({
       formData.smes,
       formData.industry,
       formData.otherSegments,
-    ]
+    ],
   );
 
   const checkFormValid = useCallback(() => {
@@ -132,14 +143,23 @@ const PartnershipRequestForm = ({
       !isSegmentError &&
       isCaptchaValid,
     );
-  }, [isFirstNameValid, isLastNameValid, isEmailValid, isCompanyValid, isWebsiteValid, isEmployeesValid,
-    isSegmentError, isCaptchaValid]);
+  }, [
+    isFirstNameValid,
+    isLastNameValid,
+    isEmailValid,
+    isCompanyValid,
+    isWebsiteValid,
+    isEmployeesValid,
+    isSegmentError,
+    isCaptchaValid,
+  ]);
 
   function scrollToElementWithOffset(el: HTMLElement) {
     if (!el) return;
 
     const menuHeight = window.innerWidth <= 592 ? 48 : 72;
-    const scrollContainer = document.scrollingElement || document.documentElement;
+    const scrollContainer =
+      document.scrollingElement || document.documentElement;
 
     const doScroll = () => {
       const rect = el.getBoundingClientRect();
@@ -148,7 +168,7 @@ const PartnershipRequestForm = ({
 
       scrollContainer.scrollTo({
         top: targetY,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     };
 
@@ -193,9 +213,7 @@ const PartnershipRequestForm = ({
   };
 
   const handleHCaptchaChange = (token: string | null) => {
-    if (
-      token
-    ) {
+    if (token) {
       setToken(token);
       setIsCaptchaValid(true);
     } else {
@@ -263,32 +281,21 @@ const PartnershipRequestForm = ({
     setFormStatus("loading");
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token }),
+      const onSubmitRequestData = await onSubmitRequest({
+        from,
+        hCaptchaResponse: token,
       });
 
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
+      if (onSubmitRequestData.status === "errorHCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");
         }, 5000);
         setIsCaptchaValid(false);
         return;
-      }
+      } else if (onSubmitRequestData.status === "success") {
+        pageTrack("Become_an_ONLYOFFICE_official_partner");
 
-      if (hCaptchaData.status === "success") {
-        setIsCaptchaValid(true);
-      }
-
-      const onSubmitRequestData = await onSubmitRequest({
-        from,
-      });
-
-      if (onSubmitRequestData.status === "success") {
         setFormStatus("success");
 
         setIsOpen(true);
@@ -315,7 +322,6 @@ const PartnershipRequestForm = ({
     <>
     <StyledPRForm>
       <StyledDownloadModalWrapper>
-
         <Heading
           level={4}
           size={5}
@@ -452,9 +458,7 @@ const PartnershipRequestForm = ({
             }}
             value={formData.phone}
             label="微信号"
-            status={
-              formData.phone ? "success" : "default"
-            }
+              status={formData.phone ? "success" : "default"}
           />
         ) : (
           <PhoneInput
@@ -467,9 +471,7 @@ const PartnershipRequestForm = ({
                 phone: formData.phone.length === 0,
               }));
             }}
-            status={
-              formData.phone ? "success" : "default"
-            }
+              status={formData.phone ? "success" : "default"}
           />
         )}
 
@@ -536,7 +538,9 @@ const PartnershipRequestForm = ({
 
         <Input
           id="partnerEmployeesCount"
-          onChange={(e) => handleInputChange("numberEmployees", e.target.value)}
+            onChange={(e) =>
+              handleInputChange("numberEmployees", e.target.value)
+            }
           onBlur={() => {
             setIsEmpty((prev) => ({
               ...prev,
@@ -573,7 +577,13 @@ const PartnershipRequestForm = ({
         />
 
         <StyledSegmentsWrapper ref={segmentsRef}>
-          <StyledTextWrapper className={((isTMSegmentsTouched || isOnSubmitPushed) && isSegmentError) ? "error" : ""}>
+            <StyledTextWrapper
+              className={
+                (isTMSegmentsTouched || isOnSubmitPushed) && isSegmentError
+                  ? "error"
+                  : ""
+              }
+            >
             <Text label={t("PleaseListYourTargetMarketSegments")} />
           </StyledTextWrapper>
 
@@ -619,11 +629,11 @@ const PartnershipRequestForm = ({
                   pleaseSpecify: formData.pleaseSpecify.length === 0,
                 }));
               }}
-              onChange={(e) => handleInputChange("pleaseSpecify", e.target.value)}
+                onChange={(e) =>
+                  handleInputChange("pleaseSpecify", e.target.value)
+                }
               caption={
-                formData.pleaseSpecify.length === 0
-                  ? t("FieldIsEmpty")
-                  : ""
+                  formData.pleaseSpecify.length === 0 ? t("FieldIsEmpty") : ""
               }
               status={
                 isEmpty.pleaseSpecify
@@ -688,7 +698,9 @@ const PartnershipRequestForm = ({
           t={t}
         />
 
-        <StyledPreTextAreaText label={t("PleaseIncludeAnyAdditionalInformation")} />
+          <StyledPreTextAreaText
+            label={t("PleaseIncludeAnyAdditionalInformation")}
+          />
         <TextArea
           onChange={(e) => handleInputChange("comment", e.target.value)}
           onBlur={() => {
@@ -716,7 +728,6 @@ const PartnershipRequestForm = ({
           }}
           label={t("IWantToSubscribeToTheOONewsletter")}
         />
-
 
         <StyledHeroHCaptchaWrapper>
           <HCaptcha

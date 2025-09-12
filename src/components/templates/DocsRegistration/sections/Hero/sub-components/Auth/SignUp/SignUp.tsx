@@ -29,7 +29,7 @@ import { CheckEmail } from "../CheckEmail";
 import { RadioBlock2Options } from "../RadioBlock2Options/RadioBlock2Options";
 import { ISignUpData } from "./SignUp.types";
 import { Platforms } from "./data/Platforms";
-
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const initialFormData: ISignUpData = {
   fullName: "",
@@ -44,7 +44,9 @@ const SignUp = () => {
 
   const router = useRouter();
 
-  const platforms = Platforms.map((item) => { return { ...item, label: t(item.label) } });
+  const platforms = Platforms.map((item) => {
+    return { ...item, label: t(item.label) };
+  });
 
   const [affiliate, setAffiliate] = useState<{
     id?: string;
@@ -62,14 +64,20 @@ const SignUp = () => {
   });
   const [isFormValid, setIsFormValid] = useState(false);
   const [token, setToken] = useState("");
-  const [hCaptchaSize, setHCaptchaSize] = useState<"normal" | "compact">("normal");
+  const [hCaptchaSize, setHCaptchaSize] = useState<"normal" | "compact">(
+    "normal",
+  );
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [formStatus, setFormStatus] = useState<ILoaderButton["status"]>("default");
+  const [formStatus, setFormStatus] =
+    useState<ILoaderButton["status"]>("default");
 
-  const emailIsValid = formData.email.trim().length > 0 && validateEmail(formData.email);
+  const emailIsValid =
+    formData.email.trim().length > 0 && validateEmail(formData.email);
 
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
   const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
+
+  const pageTrack = usePageTrack();
 
   const { getClientReferenceId, getAffiliateToken } = useRewardful({
     onReady: () => {
@@ -77,9 +85,7 @@ const SignUp = () => {
       const token = getAffiliateToken();
 
       setAffiliate((prev) =>
-        prev.id === id && prev.token === token
-          ? prev
-          : { id, token },
+        prev.id === id && prev.token === token ? prev : { id, token },
       );
     },
   });
@@ -119,34 +125,17 @@ const SignUp = () => {
 
     setFormStatus("loading");
 
-    const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ token }),
-    });
-
-    const hCaptchaData = await hCaptchaResponse.json();
-
-    if (hCaptchaData.status === "errorHCaptchaInvalid") {
-      setIsFormValid(false);
-      setFormStatus("error");
-      setIsCaptchaInvalid(true);
-
-      setTimeout(() => {
-        setIsCaptchaInvalid(false);
-        setFormStatus("default");
-      }, 5000);
-      return;
-    }
-
     function getPostLang(locale: string) {
-      const displayName = new Intl.DisplayNames([locale], { type: "language" }).of(locale) || locale;
+      const displayName =
+        new Intl.DisplayNames([locale], { type: "language" }).of(locale) ||
+        locale;
 
       const idx = displayName.indexOf("(");
       return idx === -1 ? displayName : displayName.substring(0, idx).trim();
     }
 
-    const curLang = router.locale && router.locale !== "en" ? router.locale : "en";
+    const curLang =
+      router.locale && router.locale !== "en" ? router.locale : "en";
 
     const res = await fetch("/api/docs-registration", {
       method: "POST",
@@ -164,12 +153,25 @@ const SignUp = () => {
         language: getPostLang(curLang),
         from,
         referer: document.referrer,
+        hCaptchaResponse: token,
       }),
     });
 
     const data = await res.json();
 
-    if (data.status === "success") {
+    if (data.status === "errorHCaptchaInvalid") {
+      setIsFormValid(false);
+      setFormStatus("error");
+      setIsCaptchaInvalid(true);
+
+      setTimeout(() => {
+        setIsCaptchaInvalid(false);
+        setFormStatus("default");
+      }, 5000);
+      return;
+    } else if (data.status === "success") {
+      pageTrack("docs-registration-request");
+
       if (formData.tariffPlan == "Business") {
         setIsModalOpen(true);
       }
@@ -187,7 +189,7 @@ const SignUp = () => {
     if (typeof window === "undefined") return;
 
     if (document.referrer) {
-      localStorage.setItem('previousPage', document.referrer);
+      localStorage.setItem("previousPage", document.referrer);
     }
 
     const updateSize = () => {
@@ -227,10 +229,7 @@ const SignUp = () => {
             />
           </Heading>
 
-          <Text
-            size={2}
-            label={t("NoCreditCardRequired")}
-          />
+          <Text size={2} label={t("NoCreditCardRequired")} />
         </StyledSignUpHeader>
 
         <StyledSignUpBox>
@@ -304,7 +303,11 @@ const SignUp = () => {
             setFormData={setFormData}
             t={t}
             options={[
-              { label: t("Business"), value: "Business", idPostfix: "business" },
+              {
+                label: t("Business"),
+                value: "Business",
+                idPostfix: "business",
+              },
               { label: t("VIPDedicated"), value: "VIP", idPostfix: "vip" },
             ]}
             prefix="tariff-plan-radio-"
@@ -337,7 +340,11 @@ const SignUp = () => {
           />
 
           <div>
-          {isCaptchaInvalid && <StyledSignUpCaption $error className="wrongcaptcha">{t("WrongCaptcha")}</StyledSignUpCaption>}
+            {isCaptchaInvalid && (
+              <StyledSignUpCaption $error className="wrongcaptcha">
+                {t("WrongCaptcha")}
+              </StyledSignUpCaption>
+            )}
           <StyledSignUpText>
             <Trans
               t={t}
@@ -365,15 +372,30 @@ const SignUp = () => {
             fullWidth
             data-testid="docs-sign-up-button"
           />
-          {formStatus === "error" && (<StyledSignUpCaption $error>{t("WeAreSorryButAnErrorOccurred")}</StyledSignUpCaption>)}
-          {formStatus === "loading" && (<StyledSignUpCaption>{t("PleaseWait")}</StyledSignUpCaption>)}
-          {formStatus === "success" && (<StyledSignUpCaption className="success">{t("YourRequestHasBeenSentSuccessfully")}</StyledSignUpCaption>)}
+            {formStatus === "error" && (
+              <StyledSignUpCaption $error>
+                {t("WeAreSorryButAnErrorOccurred")}
+              </StyledSignUpCaption>
+            )}
+            {formStatus === "loading" && (
+              <StyledSignUpCaption>{t("PleaseWait")}</StyledSignUpCaption>
+            )}
+            {formStatus === "success" && (
+              <StyledSignUpCaption className="success">
+                {t("YourRequestHasBeenSentSuccessfully")}
+              </StyledSignUpCaption>
+            )}
           </div>
         </StyledSignUpBox>
-
       </StyledSignUpWrapper>
 
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} maxWidth="544px" withCloseBtn positionCloseBtn="inside">
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        maxWidth="544px"
+        withCloseBtn
+        positionCloseBtn="inside"
+      >
         <StyledSuccessModal>
           <CheckEmail text2="InviteInformationSpam" />
         </StyledSuccessModal>

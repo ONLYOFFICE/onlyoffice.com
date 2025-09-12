@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background-color: #f9f9f9;
-  background-image: url("/images/templates/office-for-zoom/marketplace-connector/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-zoom/marketplace-connector/bg.svg')});
   background-size: 1416px 755px;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -53,7 +54,7 @@ const StyledMarketplaceConnectorImg = styled.div`
   width: 100%;
   min-width: 328px;
   height: 100%;
-  background-image: url("/images/templates/office-for-zoom/marketplace-connector/apps.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-zoom/marketplace-connector/apps.svg')});
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;

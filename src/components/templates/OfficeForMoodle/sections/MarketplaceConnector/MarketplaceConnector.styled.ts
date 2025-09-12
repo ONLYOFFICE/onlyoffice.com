@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   border-top: 1px solid #e2e2e2;
   background-color: #444444;
@@ -21,7 +22,7 @@ const StyledMarketplaceConnectorWrapper = styled.div`
     left: -97px;
     width: 1497px;
     height: 440px;
-    background-image: url("/images/templates/office-for-moodle/marketplace-connector/bg.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-moodle/marketplace-connector/bg.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     pointer-events: none;
@@ -42,7 +43,7 @@ const StyledMarketplaceConnectorWrapper = styled.div`
       bottom: -170px;
       width: 658px;
       height: 382px;
-      background-image: url("/images/templates/office-for-moodle/marketplace-connector/bg-mobile.svg");
+      background-image: url(${getAssetUrl('/images/templates/office-for-moodle/marketplace-connector/bg-mobile.svg')});
     }
   }
 
@@ -69,7 +70,7 @@ const StyledMarketplaceConnectorBody = styled.div`
 
 const StyledMarketplaceConnectorImg = styled.div`
   min-height: 440px;
-  background-image: url("/images/templates/office-for-moodle/marketplace-connector/app.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-moodle/marketplace-connector/app.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

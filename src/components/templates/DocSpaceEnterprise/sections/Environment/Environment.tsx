@@ -4,6 +4,7 @@ import { Container } from "@src/components/ui/Container";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledEnvironmentHeading,
   StyledEnvironmentList,
@@ -28,7 +29,7 @@ const Environment = () => {
               className="item"
               heading={t(item.heading)}
               text={t(item.text)}
-              image={{ url: t(item.image.url) }}
+              image={{ url: getAssetUrl(t(item.image.url)) }}
               links={item.links?.map((link) => ({
                 href: link.href,
                 label: t(link.label),

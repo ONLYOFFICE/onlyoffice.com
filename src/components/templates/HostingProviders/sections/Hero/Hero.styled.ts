@@ -2,6 +2,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroWrapper = styled.div`
   max-width: 723px;
   margin: 0 auto;
@@ -30,7 +31,7 @@ const StyledHeroHeading = styled(Heading)`
     transform: translateX(-50%);
     width: 280px;
     height: 74px;
-    background-image: url("/images/templates/hosting-providers/hero/hero-icon.svg");
+    background-image: url(${getAssetUrl('/images/templates/hosting-providers/hero/hero-icon.svg')});
     background-repeat: no-repeat;
   }
 

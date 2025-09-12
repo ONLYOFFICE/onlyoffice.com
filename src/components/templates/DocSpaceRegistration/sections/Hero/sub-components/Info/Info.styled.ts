@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledInfoBackLink = styled.button`
   display: inline-flex;
   align-self: start;
@@ -117,7 +118,7 @@ const StyledInfoTrusted = styled.div`
     left: 0;
     width: 56px;
     height: 46px;
-    background-image: url("/images/templates/docspace-registration/hero/trusted.svg");
+    background-image: url(${getAssetUrl('/images/templates/docspace-registration/hero/trusted.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateY(-50%);
@@ -148,7 +149,7 @@ const StyledInfoAward = styled.div<{
 }>`
   width: ${(props) => (props.$cloudComputing ? "200px" : "72px")};
   height: 72px;
-  background-image: url("/images/templates/docspace-registration/hero/awards.svg");
+  background-image: url(${getAssetUrl('/images/templates/docspace-registration/hero/awards.svg')});
   background-repeat: no-repeat;
   background-position-x: ${(props) =>
     props.$slashdot ? "-222px" : props.$capterra ? "-320px" : null};
