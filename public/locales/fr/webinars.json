@@ -51,5 +51,7 @@
 
   "ContributeHeading": "Faites-nous part de vos idées",
   "ContributeTextHave": "Vous avez une bonne idée du webinaire que nous devons organiser ?",
-  "ContributeTextGet": "Contactez notre équipe à l'adresse suivante : <0>press@onlyoffice.com</0> ou envoyez-nous un message privé sur <1>Twitter</1>."
+  "ContributeTextGet": "Contactez notre équipe à l'adresse suivante : <0>press@onlyoffice.com</0> ou envoyez-nous un message privé sur <1>Twitter</1>.",
+
+  "WebinarSubject": "Vous êtes inscrit avec succès au webinaire ONLYOFFICE"
 }

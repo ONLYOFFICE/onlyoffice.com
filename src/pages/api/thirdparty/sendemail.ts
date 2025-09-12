@@ -74,11 +74,13 @@ export default async function handler(
           baseUrl,
           queryParams,
           unsubscribeId: emailKey,
+          language,
         })
       : RegisterEmail({
           baseUrl,
           queryParams,
           unsubscribeId: emailKey,
+          language,
         });
 
     await sendEmail({ email, subject, body });

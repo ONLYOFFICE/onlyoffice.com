@@ -31,6 +31,7 @@ export default async function handler(
     lang,
     from,
     locale,
+    emailSubject,
   } = req.body;
 
   try {
@@ -95,7 +96,7 @@ export default async function handler(
     await transporter.sendMail({
       from,
       to: email,
-      subject: `You’ve successfully registered for ONLYOFFICE webinar`,
+      subject: emailSubject,
       html: WebinarsForUserEmail({
         webinarTheme,
         webinarDate,

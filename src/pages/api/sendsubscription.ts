@@ -21,8 +21,23 @@ export default async function handler(
   }
 
   try {
-    const { language, firstName, email, type } = req.body;
+    const { language, firstName, email, type, emailSubject } = req.body;
     const baseUrl = `${req.headers.origin}${language ? `/${language}` : ""}`;
+
+    const emailSubjects: Record<string, Record<string, string>> = {
+      en: { subscribe: "Subscribe to ONLYOFFICE news" },
+      de: { subscribe: "Abonnieren Sie die ONLYOFFICE-Nachrichten" },
+      es: { subscribe: "Suscríbete a las noticias de ONLYOFFICE" },
+      fr: { subscribe: "Abonnez-vous aux nouvelles de ONLYOFFICE" },
+      it: { subscribe: "Iscriviti alle news di ONLYOFFICE" },
+      ja: { subscribe: "ONLYOFFICEニュースレターの登録" },
+      nl: { subscribe: "Abonneer u op ONLYOFFICE-nieuws" },
+      pt: { subscribe: "Assine as notícias do ONLYOFFICE" },
+      ru: { subscribe: "Подпишитесь на новости ONLYOFFICE" },
+      zh: { subscribe: "订阅 ONLYOFFICE 新闻" },
+    };
+
+    const subject = emailSubjects[language] ? emailSubjects[language][emailSubject] : emailSubjects.en[emailSubject];
 
     if (typeof email !== "string" || !validateEmail(email)) {
       return res.status(400).json({
@@ -58,10 +73,11 @@ export default async function handler(
       await transporter.sendMail({
         from: `"Cloud Office Applications" <${process.env.TRANSPORTER_EMAIL_AUTH_USER}>`,
         to: [email],
-        subject: "Subscribe to ONLYOFFICE news",
+        subject: subject,
         html: SubscribeEmail({
           baseUrl,
           subscribe: generateUnsubscribeIdData.data.unsubscribeId,
+          language,
         }),
       });
     } else {

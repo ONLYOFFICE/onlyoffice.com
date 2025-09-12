@@ -194,6 +194,7 @@ const CardItem = ({
           lang: language,
           from,
           locale,
+          emailSubject: t("WebinarSubject"),
         }),
       });
       const webinarsResponseData = await response.json();
