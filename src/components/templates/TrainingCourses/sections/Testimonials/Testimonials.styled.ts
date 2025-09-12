@@ -7,6 +7,7 @@ import { Link } from "@src/components/ui/Link";
 import { CarouselButton } from '@src/components/ui/CarouselButton';
 import { ITestimonialsItem } from "../../TrainingCourses.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledTestimonialsContainer = styled(Container)`
   position: relative;
   z-index: 0;
@@ -59,7 +60,7 @@ const StyledTestimonialsSlideWrapper = styled.div`
 const StyledTestimonialsSlideQuotes = styled.div`
   width: 196px;
   height: 160px;
-  background-image: url("/images/templates/training-courses/testimonials/quotes.svg");
+  background-image: url(${getAssetUrl('/images/templates/training-courses/testimonials/quotes.svg')});
   background-repeat: no-repeat;
   background-position: center top;
   position: absolute;

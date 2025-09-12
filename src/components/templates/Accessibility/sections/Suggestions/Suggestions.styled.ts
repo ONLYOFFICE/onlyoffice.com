@@ -3,6 +3,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContainer = styled(Section)`
   display: flex;
   background-color: #ffc671;
@@ -34,7 +35,7 @@ const StyledBackgroundImage = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/images/templates/accessibility/suggestions/bg.svg);
+  background-image: url(${getAssetUrl('/images/templates/accessibility/suggestions/bg.svg')});
   background-repeat: no-repeat;
   background-position: 61% -270px;
   width: 100%;

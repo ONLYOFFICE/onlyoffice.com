@@ -1,6 +1,7 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Section } from "@src/components/ui/Section";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledDesktopEditorsHeading,
   StyledDesktopEditorsText,
@@ -58,7 +59,7 @@ const DesktopEditors = () => {
                 />
               }
               image={{
-                url: t(image.url),
+                url: getAssetUrl(t(image.url)),
                 url2x: image.url2x && t(image.url2x),
               }}
             />

@@ -1,5 +1,6 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IFeatureItemExtended extends IFeatureItem {
   textLinks?: { href: string; isExternal?: boolean }[];
 }
@@ -7,7 +8,7 @@ interface IFeatureItemExtended extends IFeatureItem {
 export const items: IFeatureItemExtended[] = [
   {
     icon: {
-      url: "/images/templates/office-for-educators/sprites/icons.svg",
+      url: getAssetUrl("/images/templates/office-for-educators/sprites/icons.svg"),
       positionX: "-172px",
     },
     heading: "ItProvidesFreeApps",
@@ -26,7 +27,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/office-for-educators/sprites/icons.svg",
+      url: getAssetUrl("/images/templates/office-for-educators/sprites/icons.svg"),
       positionX: "-270px",
     },
     heading: "ItsAffordable",
@@ -34,7 +35,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/office-for-educators/sprites/icons.svg",
+      url: getAssetUrl("/images/templates/office-for-educators/sprites/icons.svg"),
       positionX: "-368px",
     },
     heading: "ItsHighlyCustomizable",
@@ -47,7 +48,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/office-for-educators/sprites/icons.svg",
+      url: getAssetUrl("/images/templates/office-for-educators/sprites/icons.svg"),
       positionX: "-464px",
     },
     heading: "ItsFullyCompatible",
@@ -55,7 +56,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/office-for-educators/sprites/icons.svg",
+      url: getAssetUrl("/images/templates/office-for-educators/sprites/icons.svg"),
       positionX: "-560px",
     },
     heading: "YouWontFindABetterPlaceToCollaborate",

@@ -1,8 +1,9 @@
 import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const itemsTab1: IStepCarouselItem[] = [
   {
-    imgUrl: "/images/templates/office-for-moodle/how-to-start/step-1.svg",
+    imgUrl: getAssetUrl("/images/templates/office-for-moodle/how-to-start/step-1.svg"),
     heading: "HowToStartStep1",
     headingLinks: [
       {
@@ -16,7 +17,7 @@ export const itemsTab1: IStepCarouselItem[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-moodle/how-to-start/step-2.svg",
+    imgUrl: getAssetUrl("/images/templates/office-for-moodle/how-to-start/step-2.svg"),
     heading: "HowToStartStep2",
     headingLinks: [
       {
@@ -30,11 +31,11 @@ export const itemsTab1: IStepCarouselItem[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-moodle/how-to-start/step-3.svg",
+    imgUrl: getAssetUrl("/images/templates/office-for-moodle/how-to-start/step-3.svg"),
     heading: "HowToStartStep3",
   },
   {
-    imgUrl: "/images/templates/office-for-moodle/how-to-start/step-4.svg",
+    imgUrl: getAssetUrl("/images/templates/office-for-moodle/how-to-start/step-4.svg"),
     heading: "HowToStartStep4",
   },
 ];

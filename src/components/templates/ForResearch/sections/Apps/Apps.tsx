@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledAppsWrapper,
   StyledAppsList,
@@ -12,7 +13,7 @@ import { DownloadButton } from "@src/components/ui/DownloadButton";
 
 const Apps = () => {
   const { t } = useTranslation("for-research");
-  const icon = "/images/templates/for-research/apps/icon.svg";
+  const icon = getAssetUrl("/images/templates/for-research/apps/icon.svg");
 
   return (
     <Section

@@ -1,4 +1,5 @@
 import { IHeroNavData, IHeroProducts } from "../Hero.types";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   onlineinstaller,
   win64Exe,
@@ -17,8 +18,8 @@ import {
   appimageDesktopeditors,
 } from "@src/config/constans/download";
 
-const productsSprite = "/images/templates/download-desktop/hero/products.svg";
-const productsSprite2 = "/images/templates/download-desktop/hero/products.png";
+const productsSprite = getAssetUrl("/images/templates/download-desktop/hero/products.svg");
+const productsSprite2 = getAssetUrl("/images/templates/download-desktop/hero/products.png");
 
 export const navDesktopData: IHeroNavData[] = [
   {

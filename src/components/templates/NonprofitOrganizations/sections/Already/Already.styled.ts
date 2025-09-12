@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -53,7 +54,7 @@ const StyledAlreadyButtonsWrapper = styled.div`
 
 const StyledAlreadyImage = styled.div`
   height: 390px;
-  background-image: url("/images/templates/nonprofit-organizations/already/already-image.svg");
+  background-image: url(${getAssetUrl('/images/templates/nonprofit-organizations/already/already-image.svg')});
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

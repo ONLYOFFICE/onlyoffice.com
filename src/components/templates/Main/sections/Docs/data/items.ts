@@ -1,5 +1,6 @@
 import { IFeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
 
+
 type DocsItem = IFeatureSwitcher["items"][0] & {
   links?: { id: string; url: string }[];
 };

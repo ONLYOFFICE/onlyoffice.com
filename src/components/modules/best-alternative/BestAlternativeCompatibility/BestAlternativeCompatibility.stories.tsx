@@ -3,6 +3,7 @@ import { BestAlternativeCompatibility } from "./BestAlternativeCompatibility";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Modules/Best-alternative/BestAlternativeCompatibility",
   component: BestAlternativeCompatibility,
@@ -27,25 +28,25 @@ export const Default: Story = {
     alternative: {
       label: "Google Docs",
       logo: {
-        src: "/images/storybook/modules/best-alternative/best-alternative-compatibility/logo_google_docs.svg",
+        src: getAssetUrl("/images/storybook/modules/best-alternative/best-alternative-compatibility/logo_google_docs.svg"),
       },
     },
     items: [
       {
         type: "onlyOfficeDocx",
-        src: "/images/storybook/modules/best-alternative/best-alternative-compatibility/pdf/onlyoffice_docx.pdf",
+        src: getAssetUrl("/images/storybook/modules/best-alternative/best-alternative-compatibility/pdf/onlyoffice_docx.pdf"),
       },
       {
         type: "onlyOfficeXlsx",
-        src: "/images/storybook/modules/best-alternative/best-alternative-compatibility/pdf/onlyoffice_xlsx.pdf",
+        src: getAssetUrl("/images/storybook/modules/best-alternative/best-alternative-compatibility/pdf/onlyoffice_xlsx.pdf"),
       },
       {
         type: "alternativeDocx",
-        src: "/images/storybook/modules/best-alternative/best-alternative-compatibility/pdf/google_docs_docx.pdf",
+        src: getAssetUrl("/images/storybook/modules/best-alternative/best-alternative-compatibility/pdf/google_docs_docx.pdf"),
       },
       {
         type: "alternativeXlsx",
-        src: "/images/storybook/modules/best-alternative/best-alternative-compatibility/pdf/google_docs_xlsx.pdf",
+        src: getAssetUrl("/images/storybook/modules/best-alternative/best-alternative-compatibility/pdf/google_docs_xlsx.pdf"),
       },
     ],
     details: (

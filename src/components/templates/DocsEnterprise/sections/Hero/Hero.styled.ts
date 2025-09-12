@@ -4,9 +4,10 @@ import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledDocsEnterpriseHero = styled(Section)`
   background-color: #f5f5f5;
-  background-image: url(/images/templates/docs-enterprise/hero/city-bg-header.svg);
+  background-image: url(${getAssetUrl('/images/templates/docs-enterprise/hero/city-bg-header.svg')});
   background-position: 50% 100%;
   background-repeat: no-repeat;
   margin-top: -72px;

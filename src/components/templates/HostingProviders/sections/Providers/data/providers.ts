@@ -1,5 +1,6 @@
 import { IIcons } from "./icons";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IProvider {
   logo: string;
   name: string;
@@ -15,7 +16,7 @@ interface IProvider {
 
 export const providers: IProvider[] = [
   {
-    logo: "/images/templates/hosting-providers/providers/alibaba_cloud.svg",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/alibaba_cloud.svg"),
     name: "Alibaba Cloud",
     description: { label: "AlibabaDesc" },
     icons: [
@@ -34,7 +35,7 @@ export const providers: IProvider[] = [
     ],
   },
   {
-    logo: "/images/templates/hosting-providers/providers/aws.svg",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/aws.svg"),
     name: "Amazon Web Services",
     description: {
       label: "AwsDesc",
@@ -66,7 +67,7 @@ export const providers: IProvider[] = [
     ],
   },
   {
-    logo: "/images/templates/hosting-providers/providers/artera.svg",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/artera.svg"),
     name: "Artera",
     description: { label: "ArteraDesc" },
     icons: [
@@ -81,7 +82,7 @@ export const providers: IProvider[] = [
     ],
   },
   {
-    logo: "/images/templates/hosting-providers/providers/digital_ocean.svg",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/digital_ocean.svg"),
     name: "DigitalOcean",
     description: { label: "DigitalOceanDesc" },
     icons: [
@@ -96,7 +97,7 @@ export const providers: IProvider[] = [
     ],
   },
   {
-    logo: "/images/templates/hosting-providers/providers/hostingsolutions.png",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/hostingsolutions.png"),
     name: "Hosting Solutions®",
     description: { label: "HostingSolutionsDesc" },
     icons: [
@@ -127,7 +128,7 @@ export const providers: IProvider[] = [
     ],
   },
   {
-    logo: "/images/templates/hosting-providers/providers/linode.svg",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/linode.svg"),
     name: "Linode",
     description: { label: "LinodeDesc" },
     icons: [
@@ -138,7 +139,7 @@ export const providers: IProvider[] = [
     ],
   },
   {
-    logo: "/images/templates/hosting-providers/providers/netexplorer.png",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/netexplorer.png"),
     name: "NetExplorer",
     description: { label: "NetExplorerDesc" },
     icons: [
@@ -153,7 +154,7 @@ export const providers: IProvider[] = [
     ],
   },
   {
-    logo: "/images/templates/hosting-providers/providers/ovh_cloud.svg",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/ovh_cloud.svg"),
     name: "OVHCloud",
     description: { label: "OVHCloudDesc" },
     icons: [
@@ -164,7 +165,7 @@ export const providers: IProvider[] = [
     ],
   },
   {
-    logo: "/images/templates/hosting-providers/providers/vultr.svg",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/vultr.svg"),
     name: "Vultr",
     description: { label: "VultrDesc" },
     icons: [
@@ -179,7 +180,7 @@ export const providers: IProvider[] = [
     ],
   },
   {
-    logo: "/images/templates/hosting-providers/providers/yourownnet.png",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/yourownnet.png"),
     name: "YourOwnNet",
     description: { label: "YourOwnNetDesc" },
     icons: [
@@ -194,7 +195,7 @@ export const providers: IProvider[] = [
     ],
   },
   {
-    logo: "/images/templates/hosting-providers/providers/wolkli.svg",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/wolkli.svg"),
     name: "wölkli",
     description: { label: "WolkliDesc" },
     icons: [
@@ -233,7 +234,7 @@ export const providers: IProvider[] = [
     ],
   },
   {
-    logo: "/images/templates/hosting-providers/providers/wp_provider.svg",
+    logo: getAssetUrl("/images/templates/hosting-providers/providers/wp_provider.svg"),
     name: "WP Provider",
     description: { label: "WpProviderDesc" },
     icons: [

@@ -6,6 +6,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import { HeroTabs } from "@src/components/modules/download/HeroTabs";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   DownloadModal,
   IDownloadModalData,
@@ -85,7 +86,7 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
             button: {
               id: "docspace-enterprise",
               icon: {
-                url: "/images/templates/download-docspace/hero/enterprise.svg",
+                url: getAssetUrl("/images/templates/download-docspace/hero/enterprise.svg"),
               },
               label: t("Enterprise"),
             },
@@ -145,7 +146,7 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
             button: {
               id: "docspace-community",
               icon: {
-                url: "/images/templates/download-docspace/hero/community.svg",
+                url: getAssetUrl("/images/templates/download-docspace/hero/community.svg"),
               },
               label: t("Community"),
             },

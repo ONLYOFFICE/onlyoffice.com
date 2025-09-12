@@ -3,6 +3,7 @@ import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 import { BestAlternativeCompatibility } from "@src/components/modules/best-alternative/BestAlternativeCompatibility";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Compatibility = () => {
   const { t } = useTranslation("best-hancom-alternative");
 
@@ -11,7 +12,7 @@ const Compatibility = () => {
       alternative={{
         label: "Hancom Office",
         logo: {
-          src: "/images/templates/best-hancom-alternative/compatibility/logo_hancom.png",
+          src: getAssetUrl("/images/templates/best-hancom-alternative/compatibility/logo_hancom.png"),
         },
       }}
       items={items}

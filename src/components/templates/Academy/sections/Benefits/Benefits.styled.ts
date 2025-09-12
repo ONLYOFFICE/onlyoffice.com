@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const BenefitsWrapper = styled(Section)`
   border-bottom: 1px solid #e2e2e2;
 `;
@@ -89,7 +90,7 @@ const BenefitText = styled.div`
 `;
 
 const BenefitIcon = styled.div<{ $position: number }>`
-  background-image: url(/images/templates/academy/benefits/icons.svg);
+  background-image: url(${getAssetUrl('/images/templates/academy/benefits/icons.svg')});
   background-position: 0 ${(props) => props.$position}px;
   background-repeat: no-repeat;
   background-size: 64px auto;

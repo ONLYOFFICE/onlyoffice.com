@@ -2,6 +2,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceWrapper = styled.div`
   max-width: 468px;
   width: 100%;
@@ -10,7 +11,7 @@ const StyledMarketplaceWrapper = styled.div`
   justify-items: center;
   gap: 32px;
   padding-top: 199px;
-  background-image: url("/images/templates/education/marketplace/education.svg");
+  background-image: url(${getAssetUrl('/images/templates/education/marketplace/education.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;

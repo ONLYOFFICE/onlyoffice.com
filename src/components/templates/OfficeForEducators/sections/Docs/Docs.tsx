@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledButtonWrapper,
   StyledDocsFeatures,
@@ -78,7 +79,7 @@ const Docs = () => {
                 )
               }
               image={{
-                url: t(image.url),
+                url: getAssetUrl(t(image.url)),
                 url2x: image.url2x && t(image.url2x),
                 height: image.height,
               }}

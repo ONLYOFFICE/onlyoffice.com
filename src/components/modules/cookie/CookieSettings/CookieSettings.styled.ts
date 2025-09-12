@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCookieSettingsHeader = styled.div`
   display: flex;
   align-items: center;
@@ -12,7 +13,7 @@ const StyledCross = styled.div`
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url("/images/icons/cross.svg");
+  background-image: url(${getAssetUrl('/images/icons/cross.svg')});
   background-position: center;
   background-repeat: no-repeat;
 `;

@@ -1,5 +1,6 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
   text: {
     label: React.ReactNode;
@@ -10,7 +11,7 @@ interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
 export const items: IFeatureItemExtended[] = [
   {
     icon: {
-      url: "/images/templates/conversion-api/features/icons.svg",
+      url: getAssetUrl("/images/templates/conversion-api/features/icons.svg"),
       positionX: "0",
     },
     heading: "SupportForAllPopularFormats",
@@ -26,7 +27,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/conversion-api/features/icons.svg",
+      url: getAssetUrl("/images/templates/conversion-api/features/icons.svg"),
       positionX: "-288px",
     },
     heading: "Security",
@@ -41,7 +42,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/conversion-api/features/icons.svg",
+      url: getAssetUrl("/images/templates/conversion-api/features/icons.svg"),
       positionX: "-96px",
     },
     heading: "AdvancedSettings",
@@ -49,7 +50,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/conversion-api/features/icons.svg",
+      url: getAssetUrl("/images/templates/conversion-api/features/icons.svg"),
       positionX: "-192px",
     },
     heading: "HighQualityConversion",

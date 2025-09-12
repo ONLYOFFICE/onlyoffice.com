@@ -3,9 +3,10 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/templates/influencer-program/hero/hero_bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/influencer-program/hero/hero_bg.svg')});
   background-color: #eefaff;
   background-repeat: no-repeat;
   background-position: top center;

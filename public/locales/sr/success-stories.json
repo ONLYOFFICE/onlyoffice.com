@@ -1,0 +1,368 @@
+{
+  "astu": {
+    "id": 1,
+    "slug": "astu",
+    "title": "Kako završiti projekat na vreme koristeći ONLYOFFICE",
+    "intro": "Timski rad je postao transparentniji, mogućnost zamene članova tima je povećana. Smanjili smo propuste u poštovanju rokova projekata i stekli mogućnost prikupljanja podataka o troškovima.",
+    "user": {
+      "name": "Ivan N. Sheremet",
+      "role": "Izvršni direktor NVO ASTU",
+      "portal": "Korisnici ONLYOFFICE portala: nema podataka",
+      "location": "Lokacija: Rusija",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/ivan_sheremet.png"
+    },
+    "profile": {
+      "company": "<0>ASTU - agencija za savremene upravljačke tehnologije</0>",
+      "industry": ["Konsalting u upravljanju"]
+    },
+    "challenges": [
+      "Efikasna saradnja unutar tima, operativno planiranje i upravljanje projektima."
+    ],
+    "achievements": [
+      "Ivan N. Sheremet, izvršni direktor kaže: \"Unapredili smo našu tehnologiju upravljanja projektima uzimajući u obzir funkcije i terminologiju korišćenu u ONLYOFFICE-u. Prenos zadataka između članova tima je postao lakši (na primer tokom godišnjih odmora). Operativno planiranje se sada u potpunosti sprovodi pomoću ONLYOFFICE-a.",
+      "Kombinacija ONLYOFFICE-a i cloud skladišta omogućila nam je da prestanemo da koristimo sopstveni server. Timski rad je postao transparentniji, a mogućnost zamene članova veća. Smanjili smo propuste u ispunjavanju rokova i dobili opciju prikupljanja podataka o troškovima."
+    ],
+    "PageTitle": "ASTU Priča o uspehu | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako je ASTU završio projekat na vreme koristeći ONLYOFFICE",
+    "PageTitleOG": "ASTU Priča o uspehu | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako je ASTU završio projekat na vreme koristeći ONLYOFFICE"
+  },
+  "igv-austria": {
+    "id": 2,
+    "slug": "igv-austria",
+    "title": "Kako IGV Austria štedi vreme i novac uz ONLYOFFICE",
+    "intro": "Postigli smo cilј da smanjimo broj poziva u našoj kancelariji. To štedi vreme našim članovima i novac našoj zajednici.",
+    "user": {
+      "name": "Mag. Matthias Kienzl",
+      "role": "Generalni direktor IGV Austria",
+      "portal": "Korisnici ONLYOFFICE portala: 423",
+      "location": "Lokacija: Austrija",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/matthias_kienzl.png"
+    },
+    "profile": {
+      "company": "<0>IGV Austria.</0> vodeći posrednik u osiguranju.",
+      "industry": [
+        "Najveća privatna konsolidacija osiguravajućih posrednika u Austriji, što nam omogućava da našim klijentima predstavimo korisne i kvalitetne proizvode osiguranja i pružimo im najbolju ponudu nekoliko osiguravajućih grupacija. Naši članovi su raspoređeni širom Austrije, tako da svaki klijent u Austriji ima priliku da koristi naše proizvode u blizini. Nas je 423 koji svakodnevno koristimo ONLYOFFICE — takođe i zaposleni naših članova koriste portal."
+      ]
+    },
+    "challenges": [
+      "Tražili smo održivo i isplativo rešenje da efikasno pružimo našim članovima korisne i važne informacije. Izgradnjom naše zajednice tražimo platformu za razmenu informacija, deljenje i arhiviranje dokumenata, dobru i jednostavnu administraciju članova i održavanje kontakta sa njima."
+    ],
+    "achievements": [
+      "Rad od kada imamo ONLYOFFICE je mnogo lakši. Ne moramo da šaljemo dokumenta na 500 mejlova. Treba nam 1 minut i 4 klika i dokument je na pravom mestu. Oni kojima je potreban, mogu odmah pristupiti, a našim članovima je dovolјan internet pristup, bez obzira koriste li mobilne telefone ili lične računare.",
+      "Pre godinu dana integrisali smo „IGV-Wiki“ za naše članove. To funkcioniše kao interna vikipedija, gde se nalaze pravilnici i uputstva. Posebno novi članovi koriste ovu funkciju i ostvarili smo cilj da smanjimo broj poziva u našoj kancelariji. To štedi vreme našim članovima i novac našoj zajednici."
+    ],
+    "PageTitle": "IGV Priča o uspehu | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako IGV Austria štedi vreme i novac uz ONLYOFFICE",
+    "PageTitleOG": "IGV Priča o uspehu | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako IGV Austria štedi vreme i novac uz ONLYOFFICE"
+  },
+  "maisto-banko": {
+    "id": 3,
+    "slug": "maisto-banko",
+    "title": "Kako je humanitarni projekat prikupio hranu vrednu 300.000 EUR",
+    "intro": "Tokom dva dana prikupili smo hranu u vrednosti od skoro 300.000 EUR. Sva ta hrana je podeljena ljudima kojima je potrebna.",
+    "user": {
+      "name": "Modestas Bastys",
+      "role": "Humanitarna fondacija Food Bank \"Maisto bankas\"",
+      "portal": "Korisnici ONLYOFFICE portala: 24",
+      "location": "Lokacija: Litvanija",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/modestas_bastys.png"
+    },
+    "profile": {
+      "company": "Humanitarna fondacija Food Bank <1>\"Maisto bankas\"</1>",
+      "industry": [
+        "Radimo na suzbijanju siromaštva i bacanja hrane. Naše aktivnosti obuhvataju celu Litvaniju. Kao akteri u prehrambenoj industriji smo posrednici između kompanija ili pojedinaca koji doniraju hranu i organizacija i ljudi kojima je potrebna pomoć hranom. Trenutno zapošljavamo 24 ljudi i imamo preko 350 volontera, kaže Modestas Bastys, menadžer projekata."
+      ]
+    },
+    "challenges": [
+      "Trebali smo jedinstveni sistem za koordinaciju aktivnosti prikupljanja hrane (nabavke hrane od kompanija) širom Litvanije."
+    ],
+    "achievements": [
+      "Delegiranje zadataka i čuvanje podataka su postali mnogo lakši. Takođe smo počeli koristiti modul za projekte za planiranje velikih projekata.",
+      "Prolećni projekat prikupljanja hrane 2014. je planiran korišćenjem ONLYOFFICE alata za upravljanje projektima. Komunikacija sa partnerima i donatorima je koordinisana kroz CRM. Rezultat - tokom dva dana prikupili smo hranu vrednu skoro 300.000 EUR. Sva hrana je distribuira ljudima kojima je potrebna. Svi troškovi projekta su pokriveni od strane naših donatora."
+    ],
+    "PageTitle": "Maisto bankas Priča o uspehu | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako je humanitarni projekat Maisto bankas prikupio hranu vrednu 300.000 EUR",
+    "PageTitleOG": "Maisto bankas Priča o uspehu | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako je humanitarni projekat Maisto bankas prikupio hranu vrednu 300.000 EUR"
+  },
+  "robo-ru": {
+    "id": 4,
+    "slug": "robo-ru",
+    "title": "Kako smo implementirali ekološki program na vreme koristeći ONLYOFFICE",
+    "intro": "U okviru ekološkog programa prikupljanja i reciklaže korišćenih baterija u Sankt Peterburgu postavili smo eko-kutije u više od 20 obrazovnih ustanova, a planiramo postavljanje još 300 jedinica širom grada.",
+    "user": {
+      "name": "Jaroslav Baronov",
+      "role": "Menadžer projekta Ro-bo.ru",
+      "portal": "Korisnici ONLYOFFICE portala: nema podataka",
+      "location": "Lokacija: Rusija",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/yaroslav_baronov.png"
+    },
+    "profile": {
+      "company": "<0>ro-bo.ru</0> - uređaji za prirodu.",
+      "industry": [
+        "Online prodavnica savremene elektronike - roboti, interaktivne igračke i radio-kontrolisani modeli."
+      ]
+    },
+    "challenges": [
+      "Planiranje marketinških aktivnosti, efikasno upravljanje vremenom. Mogućnost podele ukupnog posla na blokove, organizacija zadataka u zasebne projekte i prioritetizacija."
+    ],
+    "achievements": [
+      "Jaroslav Baronov, menadžer projekta komentariše: \"Sada možemo postići više, a naša kompanija je na pravom putu. Prioritizovanjem zadataka ne propuštamo rokove i trudimo se da sve obavimo unapred, što minimizira rizik od neuspeha projekta i povećava kvalitet.",
+      "Jedan od uspešnih projekata koje smo realizovali sa ONLYOFFICE-om je implementacija ekološkog programa sakupljanja i reciklaže korišćenih baterija u Sankt Peterburgu. Program je sprovodila omladinska asocijacija pri guverneru Sankt Peterburga. Postavili smo eko-kutije u više od 20 obrazovnih institucija, a planiramo postavljanje još 300 jedinica širom grada. Bez ovog jasnog sistema planiranja i rasporeda, inicijativa ne bi bila realizovana na vreme.\""
+    ],
+    "PageTitle": "Ro-bo.ru Priča o uspehu | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako je Ro-bo.ru implementirao ekološki program na vreme koristeći ONLYOFFICE",
+    "PageTitleOG": "Ro-bo.ru Priča o uspehu | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako je Ro-bo.ru implementirao ekološki program na vreme koristeći ONLYOFFICE"
+  },
+  "spd-kreisverband": {
+    "id": 5,
+    "slug": "spd-kreisverband",
+    "title": "Kako organizovati efikasnu saradnju unutar političke asocijacije",
+    "intro": "Sada smo u stanju da se savršeno pripremimo i radimo zajedno van sastanaka, što ranije nije bilo moguće.",
+    "user": {
+      "name": "Stefan Muster",
+      "role": "Ocenjivač regionalne asocijacije SPD Waldshut",
+      "portal": "Korisnici ONLYOFFICE portala: 15",
+      "location": "Lokacija: Nemačka",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/stephan_muster.png"
+    },
+    "profile": {
+      "company": "<2>SPD Bad Säckingen lokalna asocijacija</2>",
+      "industry": [
+        "Jedna od najuspešnijih lokalnih asocijacija nemačke političke partije."
+      ],
+      "link": "https://www.spd-kreisverband.de/"
+    },
+    "challenges": [
+      "\"Kao lokalna politička asocijacija želimo da optimizujemo rad u našem izvršnom odboru koji se sastoji od 15 ljudi\" - kaže Stefan Muster, vršilac dužnosti predsednika, - \"Optimalna saradnja, zajedničko komuniciranje kroz projekte zajednice, planiranje sastanaka i kolektivni rad na dokumentima bili su nam posebno važni. Online izveštaj nam je skrenuo pažnju na ONLYOFFICE.\""
+    ],
+    "achievements": [
+      "Uz ONLYOFFICE sada se savršeno pripremamo i možemo raditi zajedno izvan sastanaka, što ranije nije bilo moguće. Zadatke i dokumente prvenstveno koristimo u ONLYOFFICE-u. Zahvaljujemo ONLYOFFICE-u na podršci saradničkom radu."
+    ],
+    "PageTitle": "SPD Priča o uspehu | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako ONLYOFFICE pomaže organizovati efikasnu saradnju unutar političke asocijacije",
+    "PageTitleOG": "SPD Priča o uspehu | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako ONLYOFFICE pomaže organizovati efikasnu saradnju unutar političke asocijacije"
+  },
+  "pcrubriekdemonitor": {
+    "id": 6,
+    "slug": "pcrubriekdemonitor",
+    "title": "Kako vodim svoj blog koristeći ONLYOFFICE",
+    "intro": "ONLYOFFICE Personal za mene je dragoceni dar koji sjajno izgleda za objavljivanje, koristim uslugu za ugrađivanje recenzija u moj blog, izgleda sjajno i pogodno je za čitaoce.",
+    "user": {
+      "name": "Frans van Beers",
+      "role": "Nezavisni recenzent",
+      "portal": "",
+      "location": "Lokacija: Holandija",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/frans_van_beers.png"
+    },
+    "profile": {
+      "company": "<0>Frans van Beers.</0> Nezavisni recenzent i bloger više od 10 godina.",
+      "industry": [
+        "Blog <3>PC-RUBRIEK DE MONITOR</3> (Holandija): vesti, saveti, softver, freeware, recenzije hardvera, Open Source i internet."
+      ]
+    },
+    "challenges": [
+      "Za objavljivanje na mom blogu često sam koristio besplatnu uslugu Scribd gde sam mogao da otpremim dokumente i koristim HTML kod za ugrađivanje na blog. Međutim, bez najave ili razloga, obrisali su mi nalog. Naravno, obavestio sam ih o tome i o tome da je deo mog bloga postao beskoristan. Nakon mnogo problema i mejlova otkrio sam da sam zabranjen jer su mislili da sam spammer, greška sa njihove strane i vratili su moj nalog. Ali hvala ne! Oeps, nikada nisam ni pomislio da se nešto slično može dogoditi, pa <0>uvek treba zapitati sebe „Da li verujem digitalnoj usluzi koju koristim i da li mogu sa njima da komuniciram, i da li su korisnički orijentisani i odgovorni?“</0>"
+    ],
+    "achievements": [
+      "ONLYOFFICE za blogere i korisnike društvenih mreža pruža prednost da sadržaj može lako da se objavi i deli linkom, klikom miša ili kodom za ugrađivanje. Naravno, postoje i druge besplatne usluge koje to omogućavaju, ali korisnik prvo mora da otpremi svoj materijal i/ili konvertuje u PDF da bi ga podelio na društvenim mrežama ili blogu. U ONLYOFFICE-u pišete i kreirate svoj kreativan sadržaj online svuda gde imate pristup Internetu, on je šifrovan i možete ga lako objaviti, podeliti i čak zajedno raditi na projektu. Moje recenzije su predstavljene atraktivno, čitaoci mogu zumirati, sačuvati kopiju, podeliti i ugrađivati moj rad. Pogledajte, kreirano i objavljeno u ONLYOFFICE-u: \\n  \\u2002\\u2002recenzija <4>CorelDraw Home & Student</4> \\n  \\u2002\\u2002članak i recenzija na <5>G Data</5>",
+      "Jednostavno postignuto jer je paket ispunjen korisnim alatima i funkcijama, a besplatna verzija za privatnu upotrebu nudi neograničen prostor za skladištenje!"
+    ],
+    "PageTitle": "Priča o uspehu Fransa van Beersa | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako Frans van Beers vodi svoj blog koristeći ONLYOFFICE",
+    "PageTitleOG": "Priča o uspehu Fransa van Beersa | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako Frans van Beers vodi svoj blog koristeći ONLYOFFICE"
+  },
+  "rostov-club": {
+    "id": 7,
+    "slug": "rostov-club",
+    "title": "Kako ONLYOFFICE pomaže u razvoju intelektualnog potencijala zemlje",
+    "intro": "Od momenta kada je ONLYOFFICE postavljen, rad je postao mnogo udobniji. Prestali smo da propuštamo zadatke i stekli smo potpuno razumevanje procedura.",
+    "user": {
+      "name": "Andrej Pastušenko",
+      "role": "Regionalni intelektualni klub igara Rostov",
+      "portal": "",
+      "location": "Lokacija: Rusija",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/andrey_pastushenko.png"
+    },
+    "profile": {
+      "company": "<0>Andrej Pastušenko.</0> Regionalni intelektualni klub igara Rostov.",
+      "industry": [
+        "Radimo u oblasti intelektualne zabave, okupljajući ljude za igru pitanje? gde? kada? u regionu Rostov. Naš klub broji više od 30 timova za igru. Prošle godine smo pokrenuli projekat za proizvodnju i distribuciju figurica i počeli da obezbeđujemo štampane materijale besplatno za klubove širom sveta, od Kanade do Češke."
+      ]
+    },
+    "challenges": [
+      "Godinama smo tražili jednostavno i efikasno online rešenje koje bi automatizovalo sve naše procese. Probali smo mnoge opcije, i naposletku smo se odlučili za ONLYOFFICE. Naš tim je raspoređen po gradovima, pa je bilo ključno da dobijemo zajedničku platformu za dodjelu zadataka, razmenu informacija i kontrolu procesa. Projekti i CRM su se pokazali kao ključni moduli za nas. Pisano planiranje odmah strukturira aktivnosti i otkriva nedostatke koje je moguće na vreme detektovati i ukloniti. Online komunikacija je unapredila interakciju među članovima tima. Integracija sa trećim cloud rješenjima olakšala je skladištenje i upravljanje ključnim dokumentima."
+    ],
+    "achievements": [
+      "Od momenta kada je ONLYOFFICE postavljen, rad postao mnogo udobniji. Prestali smo da propuštamo zadatke, stekli potpuno razumevanje procedura. Svaki projekat sada čuva svu istoriju, bez obzira koliko je ranije pokrenut."
+    ],
+    "PageTitle": "Priča o uspehu Intelektualnog kluba igara | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako ONLYOFFICE pomaže Rostov klubu da razvije intelektualni potencijal zemlje",
+    "PageTitleOG": "Priča o uspehu Intelektualnog kluba igara | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako ONLYOFFICE pomaže Rostov klubu da razvije intelektualni potencijal zemlje"
+  },
+  "stammtisch": {
+    "id": 8,
+    "slug": "stammtisch",
+    "title": "Kako mladi igrači unapređuju svoj radni tok na mreži",
+    "intro": "Preporučili bismo ONLYOFFICE, jer je pouzdanost i jasnoća platforme zaista fantastična. Kao što je uređivač dokumenata vrlo lak i jasan za korišćenje, saradnja funkcioniše savršeno čak i sa Rostocka do Frankfurta.",
+    "user": {
+      "name": "Lukas Bothur",
+      "role": "Vođa projekta Stammtisch",
+      "portal": "",
+      "location": "Lokacija: Nemačka",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/stammtisch.png"
+    },
+    "profile": {
+      "company": "<0>Der Stammtisch</0>",
+      "industry": [
+        "Preporučujemo ONLYOFFICE, jer je pouzdanost i jasnoća platforme jednostavno fantastična. Kao što je uređivač dokumenata vrlo lak i jasan za korišćenje, saradnja funkcioniše savršeno čak i sa Rostocka do Frankfurta."
+      ]
+    },
+    "challenges": [
+      "\"Der Stammtisch\" je nezavisna web platforma za decu i mlade, kao i za odrasle koji promovišu razmenu i društvenu povezanost."
+    ],
+    "achievements": [
+      "Lukas Bothur, vođa projekta Stammtisch: \"Već manje od tri meseca koristimo ONLYOFFICE softver. Platforma pokriva sve što nam treba i besplatna je. Zbog toga smo veoma zahvalni što koristimo platformu. Trenutno radimo samo sa dokumentima, glavni fokus je centralno skladište dokumenata. Zahvaljujući integraciji u naš timski portal, naš sveobuhvatni, predani tim u Nemačkoj može bolje da se povezuje i čuva važne informacije i dokumente na jednom mestu. Ostale funkcije online kancelarijskog paketa ćemo koristiti u budućnosti. Osim Cloud verzije, koristimo i aplikaciju za iOS koja olakšava saradnju u pokretu. Inače, ne vidimo nikakve probleme sa platformom.\""
+    ],
+    "PageTitle": "Stammtisch Priča o uspehu | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako ONLYOFFICE pomaže mladim igračima da unaprede svoj radni tok na mreži",
+    "PageTitleOG": "Stammtisch Priča o uspehu | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako ONLYOFFICE pomaže mladim igračima da unaprede svoj radni tok na mreži"
+  },
+  "skatepark-zuidlaren": {
+    "id": 9,
+    "slug": "skatepark-zuidlaren",
+    "title": "Kako organizovati sjajno lokalno mesto za sportske aktivnosti uz ONLYOFFICE",
+    "intro": "Uređivač ONLYOFFICE je veoma dobar za deljenje fajlova i njihovo zajedničko uređivanje. Izabrali smo ONLYOFFICE kao naš poslovni alat i rado bismo ga preporučili drugima.",
+    "user": {
+      "name": "St. Skatepark Zuidlaren",
+      "role": "",
+      "portal": "",
+      "location": "Lokacija: Holandija",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/skatepark_zuidlaren.png"
+    },
+    "profile": {
+      "company": "<0>St. Skatepark Zuidlaren</0>",
+      "industry": [
+        "Glavna ideja fondacije je promocija različitih sportova na otvorenom i podrška aktivnostima koje direktno ili indirektno uključuju sve povezane sa sportom i njegovim razvojem."
+      ]
+    },
+    "challenges": [
+      "Naša misija je da ostvarimo Skatepark za mlade u našem selu gde će imati mesto za opuštanje, sport i druženje."
+    ],
+    "achievements": [
+      "Marko Nieborg: \"Pre mnogo godina koristio sam TeamLab za lične potrebe, a zatim sam počeo koristiti ONLYOFFICE za školske projekte. Nakon nekog vremena zainteresovao sam se za projekat \"Stichting Skatepark Zuidlaren\" i ponovo se okrenuo ONLYOFFICE-u, platformi za upravljanje dokumentima, korporativnu komunikaciju, mejl i alate za upravljanje projektima. Implementacija je bila vrlo laka i brza. Za pola sata smo imali sve delove spremne. Zadovoljava naše potrebe za zajedničkim radom u projektnom timu koristeći alate za upravljanje projektima. Tokom trajanja projekta (nekoliko godina) imali smo dobre rezultate. Jednostavan je za korišćenje. ONLYOFFICE urednik je odličan za deljenje i zajedničko uređivanje fajlova. Izabrali smo ONLYOFFICE kao naš poslovni alat i rado bismo ga preporučili drugima.\""
+    ],
+    "PageTitle": "St. Skatepark Zuidlaren Priča o uspehu | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako ONLYOFFICE pomaže u organizaciji sjajnog lokalnog mesta za sportske aktivnosti",
+    "PageTitleOG": "St. Skatepark Zuidlaren Priča o uspehu | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako ONLYOFFICE pomaže u organizaciji sjajnog lokalnog mesta za sportske aktivnosti"
+  },
+  "icgeurope": {
+    "id": 10,
+    "slug": "icgeurope",
+    "title": "Kako da unapredite vaše poslovanje uz ONLYOFFICE",
+    "intro": "Posebno hvala ONLYOFFICE Document Editors. Uređivanje složenih dokumenata postalo je mnogo lakše zbog direktnog rada sa urednicima u pregledaču.",
+    "user": {
+      "name": "InCapital Group",
+      "role": "",
+      "portal": "",
+      "location": "Lokacija: Letonija",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/icgeurope.png"
+    },
+    "profile": {
+      "company": "<0>InCapital Group</0>",
+      "industry": [
+        "InCapital Group je IT kompanija koja posluje u B2B sektoru, pružajući kompletne usluge e-trgovine: razvoj platformi, marketing i SEO, IT integracione usluge, logistiku, obradu plaćanja i konsultacije."
+      ]
+    },
+    "challenges": [
+      "S rastom biznisa potrebna nam je alatka koja zadovoljava naše standarde u upravljanju projektima, dokumentima i CRM. Nakon osam test vožnji, izabrali smo ONLYOFFICE. Iskreno, bili smo oduševljeni i odlučili smo se za partnerstvo sa ovom kompanijom."
+    ],
+    "achievements": [
+      "Koristimo modul \"Projekti\" za upravljanje složenim ugovorima, deljenje perioda i zadataka između planiranja, marketinga, rada na serveru, prebacivanje zadataka između članova tima i obaveštavanje zaposlenih o svim procesima i ažuriranjima unutar projekta ili zadatka. Takođe, imamo Gantt dijagram koji vizuelno prikazuje napredak projekta.",
+      "Posebno hvala ONLYOFFICE Document Editors. Uređivanje složenih dokumenata postalo je znatno lakše zahvaljujući direktnom radu sa urednicima u pregledaču.",
+      "Zahvaljujući CRM-u, uspeli smo da pojednostavimo komunikaciju sa našim klijentima implementirajući sistem oznaka."
+    ],
+    "PageTitle": "ICG Priča o uspehu | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako je ICG unapredio svoje poslovanje uz ONLYOFFICE",
+    "PageTitleOG": "ICG Priča o uspehu | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako je ICG unapredio svoje poslovanje uz ONLYOFFICE"
+  },
+  "gwdg": {
+    "id": 11,
+    "slug": "gwdg",
+    "title": "Kako ONLYOFFICE i ownCloud u GWDG pomažu istraživačima i edukatorima",
+    "intro": "Istraživanje i obrazovanje zavise od efikasne i inovativne IT infrastrukture. Sa novim interfejsom između ownClouda i ONLYOFFICE-a, korisnici sada mogu simultano raditi na fajlu u web pregledaču.",
+    "user": {
+      "name": "GWDG",
+      "role": "",
+      "portal": "",
+      "location": "Lokacija: Nemačka",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/gwdg.svg"
+    },
+    "profile": {
+      "company": "<6>GWDG</6>",
+      "industry": [
+        "Gesellschaft für Wissenschaftliche Datenverarbeitung mbH Göttingen (GWDG) je univerzitetski računarski centar za Georg-August Univerzitet u Getingenu i centar za računarsku i IT stručnost za Max Planck društvo. Nudi širok spektar informativnih i komunikacionih usluga za nauku. Finansirano državnim sredstvima, rešenje će biti dostupno svim univerzitetima u Donjoj Saksoniji kao deo projekta Akademski oblak."
+      ]
+    },
+    "challenges": [
+      "ownCloud se koristi za produktivnu razmenu i saradničko uređivanje fajlova. Ali posebno kada dva korisnika rade istovremeno na istom dokumentu, konflikti sinhronizacije se ne mogu uvek sprečiti. U takvim slučajevima, sigurnosni mehanizam ownClouda kreira tzv. „konflikt fajlove“: drugu verziju postojećeg fajla koja treba da spreči gubitak sadržaja tokom zajedničkih izmena. GWDG vidi integraciju ONLYOFFICE-a u ownCloud kao sjajnu priliku za dugoročno rešavanje problema sinhronizacije jer softver za saradnju kao ONLYOFFICE rešava ovaj problem ciljano: ONLYOFFICE omogućava da se dokument uređuje putem zajedničkog korisničkog interfejsa, gde se izmene ažuriraju u realnom vremenu i odmah su vidljive drugim korisnicima.",
+      "Ralf Krimmel, GWDG: “Istraživanje i obrazovanje zavise od efikasne i inovativne IT infrastrukture. Sa novim interfejsom između ownClouda i ONLYOFFICE-a, korisnici sada mogu simultano raditi na fajlu u web pregledaču. Konfliktni fajlovi se sprečavaju i rad se odvija tamo gde su fajlovi — u našem ownCloudu.”"
+    ],
+    "achievements": [
+      "GWDG ownCloud trenutno ima oko 4.000 aktivnih korisnika mesečno i 1.500 dnevno. Uključuje univerzitete, ali i pojedinačne radne grupe u različitim naučnim institucijama Donje Saksonije kao i širom Nemačke, koji koriste ownCloud i funkcije ONLYOFFICE-a. Obrada fajlova funkcioniše glatko sa interfejsom razvijenim od strane ownClouda i ONLYOFFICE-a; čak i sa formatima različitim od Microsoft Office, fajlovi i formatiranje se prikazuju bez problema sa kompatibilnošću.",
+      "Saradnja između ownClouda i ONLYOFFICE-a ne koristi samo korisnicima GWDG i Akademskog oblaka; tehnička saradnja omogućava administratorima ownClouda da instaliraju ONLYOFFICE Integration App sa samo nekoliko klikova i dodaju aplikaciju u svoj oblak preko ownCloud Marketplace-a.",
+      "<7>Pročitajte celu priču o uspehu</7>"
+    ],
+    "PageTitle": "GWDG Priča o uspehu | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako ONLYOFFICE i ownCloud implementirani u GWDG pomažu istraživačima i edukatorima",
+    "PageTitleOG": "GWDG Priča o uspehu | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako ONLYOFFICE i ownCloud implementirani u GWDG pomažu istraživačima i edukatorima"
+  },
+  "muenster-university": {
+    "id": 12,
+    "slug": "muenster-university",
+    "title": "Kako integracija ONLYOFFICE i ownClouda u sciebo olakšava istraživački rad u Univerzitetu u Muenstru",
+    "intro": "Interno testiranje je pokazalo da su ONLYOFFICE i ownCloud idealno prilagođeni sciebo scenariju upotrebe i superiorniji su od drugih rešenja. Takođe je bilo važno da su oba rešenja Open Source proizvodi koji zadovoljavaju velike potrebe sciebo korisnika i imaju skalabilnu čvrstu arhitekturu.",
+    "user": {
+      "name": "Univerzitet u Muenstru",
+      "role": "",
+      "portal": "",
+      "location": "Lokacija: Nemačka",
+      "image": "https://static-www.onlyoffice.com/v9.5.0/images/clients/case-studies/wumunster-01.svg"
+    },
+    "profile": {
+      "company": "<8>Univerzitet u Muenstru i sciebo</8>",
+      "industry": [
+        "Sa više od 40.000 studenata i 5.000 zaposlenih, Univerzitet u Muenstru je treći po veličini u Nemačkoj. Nudi širok spektar studijskih programa i održava raznovrstan istraživački profil.",
+        "IT centar univerziteta (Zentrum für Informationsverarbeitung, ZIV) nudi sync & share servis nazvan sciebo (skraćeno za „science box“) – ne samo za Univerzitet u Muenstru, već i za većinu univerziteta i jedan istraživački centar u Severnoj Rajni Vestfaliji, najnaseljenijoj nemačkoj pokrajini. Trenutno je registrovano više od 100.000 korisnika sciebo servisa."
+      ]
+    },
+    "challenges": [
+      "Organizacija sciebo servisa bila je složen zadatak jer usluga mora da podrži mnogo veći broj korisnika nego obično. Takođe su morali biti rešeni pravni izazovi, uključujući kreiranje ugovora sa krajnjim korisnicima u skladu sa GDPR regulativom. Još važnije bilo je da se servis prilagodi potrebama korisnika. Holger Angenent, vođa projekta sciebo iz IT centra Univerziteta u Muenstru: “Prema našim istraživanjima, korisnici nam daju bolju ocenu kvaliteta usluge nego vodećim cloud provajderima.”",
+      "Među korisnicima sciebo servisa su i istraživači koji se bave osetljivim i često poverljivim podacima, pa imaju visoke zahteve za zaštitom podataka i prevencijom gubitka podataka."
+    ],
+    "achievements": [
+      "ONLYOFFICE i ownCloud već su uspešno u upotrebi na mnogim univerzitetima i organizacijama. Interna testiranja pokazala su da su oba rešenja idealno prilagođena sciebo scenariju i da su superiornija od drugih rešenja. Takođe je bilo važno što su oba Open Source proizvodi koji zadovoljavaju velike potrebe korisnika i imaju skalabilnu i pouzdanu arhitekturu.",
+      "Holger Angenent: \"Nadamo se da će kombinacija ownClouda i ONLYOFFICE-a pojednostaviti razmenu podataka i podstaći više saradničkog rada. Da bismo otkrili konkretne promene u svakodnevnom radu zaposlenih, moraćemo da sprovedemo dodatne studije.\"",
+      "<9>Pročitajte celu priču o uspehu</9>"
+    ],
+    "PageTitle": "Priča o uspehu Univerziteta u Muenstru | ONLYOFFICE",
+    "PageDescription": "Pročitajte kako integracija ONLYOFFICE i ownClouda u sciebo olakšava istraživački rad u Univerzitetu u Muenstru",
+    "PageTitleOG": "Priča o uspehu Univerziteta u Muenstru | ONLYOFFICE",
+    "PageDescriptionOG": "Pročitajte kako integracija ONLYOFFICE i ownClouda u sciebo olakšava istraživački rad u Univerzitetu u Muenstru"
+  },
+  "subTitleProfile": "Profil",
+  "subTitleChallenges": "Izazovi",
+  "subTitleAchievements": "Postignuća",
+  "titleOthers": "Pogledajte ostale priče o uspehu",
+  "showMoreButton": "Više"
+}

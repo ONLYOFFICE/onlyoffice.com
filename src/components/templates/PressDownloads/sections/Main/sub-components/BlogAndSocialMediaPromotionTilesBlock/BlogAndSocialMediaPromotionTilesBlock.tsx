@@ -1,6 +1,7 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Heading } from "@src/components/ui/Heading";
 import { SocialIcons } from "./sub-components/SocialIcons";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledBlogAndMediaCard,
   StyledBlogAndMediaCardContent,
@@ -24,7 +25,7 @@ const BlogAndSocialMediaPromotionTilesBlock = ({ id }: { id: string }) => {
       <StyledBlogAndMediaCardWrapper>
         {items.map((item) => (
           <StyledBlogAndMediaCard key={item.title} href={t(item.url)} download>
-            <StyledBlogAndMediaCardImage $imgUrl={t(item.imgUrl)} />
+            <StyledBlogAndMediaCardImage $imgUrl={getAssetUrl(t(item.imgUrl))} />
             <StyledBlogAndMediaCardContent>
               <StyledBlogAndMediaCardTitle>
                 {t(item.title)}

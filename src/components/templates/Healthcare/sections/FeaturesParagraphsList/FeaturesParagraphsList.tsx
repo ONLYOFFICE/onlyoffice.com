@@ -1,5 +1,6 @@
 import { Trans, useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledUPHeadingBox,
   StyledFeaturesHeading,
@@ -53,7 +54,7 @@ const FeaturesParagraphsList = () => {
                 }))}
                 key={groupIndex}
                 image={{
-                  url: t(group.image.url),
+                  url: getAssetUrl(t(group.image.url)),
                   url2x: group.image.url2x ? t(group.image.url2x) : undefined,
                   height: group.image.height,
                   width: group.image.width,

@@ -1,6 +1,7 @@
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledProvidersWrapper = styled.div`
   display: grid;
   gap: 32px;
@@ -48,7 +49,7 @@ const StyledAbout = styled.div`
     display: inline-block;
     width: 62px;
     height: 62px;
-    background-image: url("/images/templates/hosting-providers/providers/about_icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/hosting-providers/providers/about_icons.svg')});
     background-repeat: no-repeat;
     background-position-x: 0;
 

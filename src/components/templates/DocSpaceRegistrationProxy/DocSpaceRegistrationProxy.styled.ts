@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledDocSpaceRegistrationProxyImage = styled.div`
   margin: 0 auto 40px;
   width: 100%;
   max-width: 610px;
   height: 430px;
-  background-image: url("/images/templates/docspace-registration-proxy/proxy-error.svg");
+  background-image: url(${getAssetUrl('/images/templates/docspace-registration-proxy/proxy-error.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

@@ -2,12 +2,13 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   display: flex;
   align-items: center;
   min-height: 728px;
-  background-image: url("/images/templates/events/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/events/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: center 72px;
   background-size: 1040px 628px;
@@ -39,7 +40,7 @@ const StyledHeroWrapper = styled.div`
 const StyledHeroImg = styled.div`
   margin-top: 64px;
   padding-bottom: 53.934%;
-  background-image: url("/images/templates/events/hero/hero.svg");
+  background-image: url(${getAssetUrl('/images/templates/events/hero/hero.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 

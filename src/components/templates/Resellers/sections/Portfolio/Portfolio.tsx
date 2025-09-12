@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Section } from "@src/components/ui/Section";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledPortfolio,
   StyledPortfolioHeader,
@@ -30,7 +31,7 @@ const Portfolio = () => {
               link={{ ...link, label: t(link.label) }}
               image={{
                 ...image,
-                imgUrl: t(image.imgUrl),
+                imgUrl: getAssetUrl(t(image.imgUrl)),
                 imgUrl2x: t(image.imgUrl2x),
               }}
             />

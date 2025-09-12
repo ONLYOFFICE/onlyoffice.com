@@ -1,6 +1,7 @@
 import { Trans, useTranslation } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Section } from "@src/components/ui/Section";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHowItWorksHeading,
   StyledHowItWorksText,
@@ -74,7 +75,7 @@ const HowItWorks = () => {
                 </>
               }
               image={{
-                url: t(image.url),
+                url: getAssetUrl(t(image.url)),
                 height: image.height,
                 width: image.width,
               }}

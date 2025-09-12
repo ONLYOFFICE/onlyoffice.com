@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Heading } from "@src/components/ui/Heading";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledUsers = styled.div`
   text-align: center;
   max-width: 1120px;
@@ -45,7 +46,7 @@ const UserItem = styled.li<{
   $height: number;
   $positionX: number;
 }>`
-  background-image: url("/images/templates/workspace-enterprise/trusted/logos.svg");
+  background-image: url(${getAssetUrl('/images/templates/workspace-enterprise/trusted/logos.svg')});
   background-repeat: no-repeat;
   background-position: ${(props) => props.$positionX}px center;
   height: ${(props) => props.$height}px;

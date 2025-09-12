@@ -4,6 +4,7 @@ import { Container } from "@src/components/ui/Container";
 import { BlogCard } from "@src/components/widgets/BlogCard";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledStoryItem,
   StyledStoryList
@@ -26,7 +27,7 @@ const Story = () => {
                   href: t(item.links.href),
                   label: t(item.links.label)
                 }]}
-                imgUrl={t(item.imgUrl)}
+                imgUrl={getAssetUrl(t(item.imgUrl))}
               />
             </StyledStoryItem>
           ))}

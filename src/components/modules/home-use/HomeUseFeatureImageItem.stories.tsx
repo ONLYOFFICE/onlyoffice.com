@@ -2,6 +2,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { IHomeUseFeatureImageItem } from "./HomeUseFeatureImageItem.types";
 import { HomeUseFeatureImageItem } from "./HomeUseFeatureImageItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Modules/HomeUse/FeatureImageItem",
   component: HomeUseFeatureImageItem,
@@ -49,7 +50,7 @@ Default.args = {
   text: "Protect your files by setting access level to define which actions will be available to the invited people: Room managers with access management rights, Content creators with access to manage room files/folders, Editors with full access to the room files, or Viewers with read-only access.",
   links: [{ href: "#", label: "Learn More" }],
   image: {
-    url: "/images/storybook/widgets/feature-image-item/secure-for-sensitive-documents.png",
+    url: getAssetUrl("/images/storybook/widgets/feature-image-item/secure-for-sensitive-documents.png"),
     url2x:
       "/images/storybook/widgets/feature-image-item/secure-for-sensitive-documents@2x.png",
   },

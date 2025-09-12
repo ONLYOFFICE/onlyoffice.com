@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IUsersItem {
   image: {
     url: string;
@@ -10,7 +11,7 @@ interface IUsersItem {
 export const usersItems: IUsersItem[] = [
   {
     image: {
-      url: "/images/templates/for-government/users/logos.svg",
+      url: getAssetUrl("/images/templates/for-government/users/logos.svg"),
       width: 186,
       height: 88,
       positionX: "-5px",
@@ -18,7 +19,7 @@ export const usersItems: IUsersItem[] = [
   },
   {
     image: {
-      url: "/images/templates/for-government/users/logos.svg",
+      url: getAssetUrl("/images/templates/for-government/users/logos.svg"),
       width: 186,
       height: 88,
       positionX: "-200px",
@@ -26,7 +27,7 @@ export const usersItems: IUsersItem[] = [
   },
   {
     image: {
-      url: "/images/templates/for-government/users/logos.svg",
+      url: getAssetUrl("/images/templates/for-government/users/logos.svg"),
       width: 186,
       height: 88,
       positionX: "-375px",
@@ -34,7 +35,7 @@ export const usersItems: IUsersItem[] = [
   },
   {
     image: {
-      url: "/images/templates/for-government/users/logos.svg",
+      url: getAssetUrl("/images/templates/for-government/users/logos.svg"),
       width: 186,
       height: 88,
       positionX: "-570px",
@@ -42,7 +43,7 @@ export const usersItems: IUsersItem[] = [
   },
   {
     image: {
-      url: "/images/templates/for-government/users/logos.svg",
+      url: getAssetUrl("/images/templates/for-government/users/logos.svg"),
       width: 186,
       height: 88,
       positionX: "-750px",
@@ -50,7 +51,7 @@ export const usersItems: IUsersItem[] = [
   },
   {
     image: {
-      url: "/images/templates/for-government/users/logos.svg",
+      url: getAssetUrl("/images/templates/for-government/users/logos.svg"),
       width: 186,
       height: 88,
       positionX: "-950px",
