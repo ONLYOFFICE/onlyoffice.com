@@ -9,8 +9,8 @@ const OfficeForStrapiTemplate = () => {
   return (
     <>
       <Hero />
-      <Features />
       <MarketplaceConnector />
+      <Features />
       <HowToStart />
       <ConnectApp />
       <OtherConnectors />

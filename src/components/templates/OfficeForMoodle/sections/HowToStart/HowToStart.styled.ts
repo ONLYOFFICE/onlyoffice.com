@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
-import { StepCarousel } from "@src/components/widgets/StepCarousel";
 
 const StyledHowToStart = styled(Section)`
   border-top: 1px solid #e2e2e2;
@@ -49,12 +48,8 @@ const StyledHowToStartInfo = styled.div`
   }
 `;
 
-const StyledStepCarousel = styled(StepCarousel)`
 
-margin-top: 72px;
-
-`;
-
-
-
-export { StyledHowToStart, StyledHowToStartInfo, StyledStepCarousel };
+export {
+  StyledHowToStart,
+  StyledHowToStartInfo,
+};

@@ -21,7 +21,7 @@ const Features = () => {
   return (
     <Section>
       <Container>
-        <StyledFeaturesHeading level={2} size={2} textAlign="center">
+        <StyledFeaturesHeading level={2} size={3} textAlign="center">
           <Trans
             t={t}
             i18nKey="BuildZaps"

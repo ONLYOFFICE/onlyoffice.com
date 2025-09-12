@@ -17,7 +17,7 @@ const StyledTextArea = styled.div<{
         : props.$status === "success"
           ? "#8bb825"
           : "#aaaaaa"};
-  border-radius: 4px;
+  border-radius: 6px;
   width: ${(props) => (props.$fullWidth ? "100%" : "fit-content")};
   background-color: ${(props) =>
     props.$isFocused

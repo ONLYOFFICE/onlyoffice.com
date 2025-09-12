@@ -4,7 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
 const StyledHeroDescription = styled.div`
-  margin-bottom: 56px;
+  margin-bottom: 32px;
   text-align: center;
 
   @media ${device.mobile} {
@@ -13,11 +13,7 @@ const StyledHeroDescription = styled.div`
 `;
 
 const StyledHeroHeading = styled(Heading)`
-  margin-bottom: 24px;
-
-  @media ${device.mobile} {
-    margin-bottom: 16px;
-  }
+  margin-bottom: 32px;
 `;
 
 const StyledHeroText = styled(Text)`
