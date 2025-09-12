@@ -66,7 +66,7 @@ const StyledHeroSelect = styled.button<{
         : "1px solid #AAAAAA"
     };
   `};
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 24px 48px 12px 16px;
   transition: 0.2s;
   cursor: pointer;
@@ -118,7 +118,7 @@ const StyledHeroOptions = styled.div`
   top: 60px;
   left: 0;
   border: 1px solid #666666;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 8px 0;
   width: 100%;
   max-height: 200px;
@@ -183,7 +183,7 @@ const StyledSelectOptionNoInclude = styled(StyledSelectOption)`
 
 const StyledHeroPaidLicense = styled.div`
   background-color: #F9F9F9;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 16px;
   display: flex;
   align-items: center;
@@ -426,7 +426,7 @@ const StyledHeroUploadItem = styled.li`
   align-items: center;
   gap: 16px;
   background-color: #F9F9F9;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 9px 10px;
   position: relative;
   transition-duration: 0.2s;

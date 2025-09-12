@@ -32,7 +32,9 @@ const StyledNameWrapper = styled.div`
 `;
 
 const StyledPRFHeading = styled(Heading)`
-  margin-top: 24px;
+  padding-top: 32px;
+  margin-top: 8px;
+  border-top: 1px solid #cccccc;
 `;
 
 const StyledDownloadModalText = styled(Text)`

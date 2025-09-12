@@ -15,7 +15,7 @@ export const items: IFeatureImageItem[] = [
     image: {
       url: "CreateImgUrl",
       url2x: "CreateImgUrl2x",
-      height: 580,
+      height: 640,
       width: 780,
     },
   },
@@ -106,7 +106,7 @@ export const items: IFeatureImageItem[] = [
     image: {
       url: "CustomizeImgUrl",
       url2x: "CustomizeImgUrl2x",
-      height: 580,
+      height: 640,
       width: 780,
     },
   },

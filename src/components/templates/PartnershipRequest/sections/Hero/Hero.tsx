@@ -166,6 +166,7 @@ const Hero = ({ locale }: IHero) => {
                   target="_blank"
                   textUnderline
                   hover="underline-none"
+                  color="main"
                 />,
               ]}
             />

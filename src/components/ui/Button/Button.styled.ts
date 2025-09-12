@@ -20,7 +20,6 @@ const StyledButton = styled.button<{
   width: ${(props) => (props.$fullWidth ? "100%" : "auto")};
   min-height: 56px;
   text-align: center;
-  text-transform: uppercase;
   cursor: pointer;
 
   padding: ${(props) => {

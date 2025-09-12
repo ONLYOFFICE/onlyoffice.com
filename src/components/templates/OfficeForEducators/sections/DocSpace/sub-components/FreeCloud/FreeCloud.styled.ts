@@ -6,6 +6,7 @@ import { Link } from "@src/components/ui/Link";
 
 import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFreeCloud = styled.div`
+  background-color: #ffffff;
   padding: 64px;
   border: 1px solid #e2e2e2;
   border-radius: 12px;

@@ -18,7 +18,9 @@ const StyledLink = styled(Link)<{
   line-height: ${(props) => props.$lineHeight};
   color: ${(props) => (props.$color === "main" ? "#ff6f3d" : props.$color)};
   text-transform: ${(props) => props.$textTransform};
-  text-decoration: ${(props) => props.$textUnderline && "underline"};
+  text-decoration: ${(props) =>
+  props.$textUnderline === false ? "none" : "underline"};
+
 
   ${(props) =>
     props.$hover === "color" &&

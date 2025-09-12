@@ -120,6 +120,7 @@ const StyledOtherConnectorsButton = styled(Button)<{
   $active?: boolean;
   $disabled?: boolean;
 }>`
+  min-height: 46px;
   padding: 10px 18px;
   font-size: 16px;
   line-height: 24px;

@@ -83,6 +83,10 @@ const StyledPhoneInputFlag = styled.span<{
     background-position-y: -594px;
   }
 
+  &.AO {
+    background-position-y: -1947px;
+  }
+
   &.AI {
     background-position-y: -1980px;
   }
@@ -257,6 +261,10 @@ const StyledPhoneInputFlag = styled.span<{
 
   &.HR {
     background-position-y: -902px;
+  }
+
+  &.CU {
+    background-position-y: -748px;
   }
 
   &.CW {
