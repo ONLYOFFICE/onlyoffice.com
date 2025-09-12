@@ -37,6 +37,7 @@ def nonprofit_email = ""
 def partnership_email = ""
 def callback_email = ""
 def docs_cloud_signin_api = ""
+def docs_cloud_recaptcha_public_key = ""
 
 switch(BRANCH_NAME) {
   case "test_deploy":
@@ -66,6 +67,7 @@ switch(BRANCH_NAME) {
     docspace_domain = "onlyoffice.io"
     docspace_registration_api = "https://onlyoffice"
     docs_cloud_signin_api = "https://docscloud.teamlab.info/api/auth/invite"
+    docs_cloud_recaptcha_public_key = "6LdrVhAnAAAAALBv4ahiwI4H_NukKb97flZSum5c"
     next_public_testing_on = "true"
     core_base_domain = "teamlab.info"
     google_search_url = "https://www.googleapis.com/customsearch/v1"
@@ -103,6 +105,7 @@ switch(BRANCH_NAME) {
     docspace_domain = "onlyoffice.com"
     docspace_registration_api = "https://api-system.onlyoffice"
     docs_cloud_signin_api = "https://docscloud.onloffice.com/api/auth/invite"
+    docs_cloud_recaptcha_public_key = "6LcavSQoAAAAAJhZsnyOJo10hmzFf_sXKX48QqTk"
     next_public_testing_on = "false"
     core_base_domain = "onlyoffice.co"
     google_search_url = "https://www.googleapis.com/customsearch/v1"
@@ -161,6 +164,8 @@ pipeline {
         aws_s3_region = "${aws_s3_region}"
         docspace_domain = "${docspace_domain}"
         docspace_registration_api = "${docspace_registration_api}"
+        docs_cloud_signin_api = "${docs_cloud_signin_api}"
+        docs_cloud_recaptcha_public_key = "${docs_cloud_recaptcha_public_key}"
         next_public_testing_on = "${next_public_testing_on}"
         core_base_domain = "${core_base_domain}"
         google_search_url = "${google_search_url}"
@@ -170,7 +175,6 @@ pipeline {
         server_email = "${server_email}"
         nonprofit_email = "${nonprofit_email}"
         partnership_email = "${partnership_email}"
-        docs_cloud_signin_api = "${docs_cloud_signin_api}"
         callback_email = "${callback_email}"
       }
       steps {
@@ -271,6 +275,7 @@ pipeline {
           sed -i "s^var_docspace_registration_api^$docspace_registration_api^" .env
 
           sed -i "s^var_docs_cloud_signin_api^$docs_cloud_signin_api^" .env
+          sed -i "s^var_docs_cloud_recaptcha_public_key^$docs_cloud_recaptcha_public_key^" .env
 
           sed -i "s^var_google_search_url^$google_search_url^" .env
           sed -i "s^var_core_base_domain^$core_base_domain^" .env
