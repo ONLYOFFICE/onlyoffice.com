@@ -1,55 +1,55 @@
 {
-  "PageTitle": "Usa le stanze di dati virtuali per una sicurezza e una trasparenza avanzate dei file.",
-  "PageDescription": "Organizza l'archiviazione e la condivisione sicura di informazioni aziendali riservate in ONLYOFFICE DocSpace",
+  "PageTitle": "ONLYOFFICE - Applicazioni cloud per l’ufficio",
+  "PageDescription": "Organizza l’archiviazione e la condivisione sicura delle informazioni aziendali riservate con ONLYOFFICE DocSpace",
 
-  "UseVirtualDataRooms": "Usa le <0>Stanze di dati virtuali</0> per una sicurezza e una trasparenza avanzate dei file.",
-  "OrganizeSecure": "Organizza l'archiviazione e la condivisione sicura di informazioni aziendali riservate in ONLYOFFICE DocSpace",
+  "UseVirtualDataRooms": "Usa le <0>Virtual Data Room</0> per una sicurezza avanzata dei file e la massima trasparenza.",
+  "OrganizeSecure": "Organizza l’archiviazione e la condivisione sicura delle informazioni aziendali riservate con ONLYOFFICE DocSpace",
 
   "IdealForDueDiligence": "Ideale per la due diligence",
   "CompletelyOrganized": "Completamente organizzato",
-  "HighLevelOfDataSecurity": "Alto livello di sicurezza dei dati",
+  "HighLevelOfDataSecurity": "Sicurezza dei dati di alto livello",
   "AdvancedRoleBased": "Compilazione avanzata dei moduli basata sui ruoli",
-  "CostEffectiveForAnyBudget": "Cost-effective for any budget",
+  "CostEffectiveForAnyBudget": "Conveniente per qualsiasi budget",
 
-  "CreateFreeAccount": "Crea account gratuito",
+  "CreateFreeAccount": "Crea un account gratuito",
 
   "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
   "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
 
-  "IdealForDueDiligenceDesc": "Usa le stanze di dati virtuali per la due diligence, in caso di fusioni, progetti con altre aziende o altre joint venture che richiedono l'accesso ai dati condivisi.",
+  "IdealForDueDiligenceDesc": "Usa le VDR per la due diligence, nelle operazioni di fusione, nello sviluppo di progetti con altre aziende o in qualsiasi joint venture che richieda l’accesso ai dati condivisi.",
   "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/ideal.png",
   "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/ideal@2x.png",
 
-  "CompletelyOrganizedDesc": "Indicizza e traccia automaticamente tutti i contenuti per mantenere una buona documentazione e un'ottima organizzazione. Genera un rapporto di sintesi sulla struttura dei file della stanza.",
+  "CompletelyOrganizedDesc": "Indicizza e traccia automaticamente tutti i contenuti per mantenere una documentazione impeccabile e restare sempre organizzato. Genera un rapporto riepilogativo sulla struttura dei file della stanza.",
   "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/organized.png",
   "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/organized@2x.png",
 
-  "HighLevelOfDataSecurityDesc": "Abilita le filigrane, imposta la durata dei file, limita il download e la copia per proteggere i tuoi documenti sensibili.",
+  "HighLevelOfDataSecurityDesc": "Abilita filigrane, imposta la durata dei file, limita download e copie per proteggere i tuoi documenti sensibili.",
   "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/security.png",
   "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/security@2x.png",
 
-  "AdvancedRoleBasedText": "Invita il tuo team e assegna ruoli che si adattano perfettamente alla struttura organizzativa della tua azienda. Monitoraggio dell'avanzamento dei moduli in tempo reale. Visualizza facilmente i moduli completati e quelli in sospeso, finalizzali e recupera le versioni finite per un processo senza problemi.",
+  "AdvancedRoleBasedText": "Invita il tuo team e assegna ruoli che si adattino perfettamente alla struttura organizzativa della tua azienda. Tieni traccia dell’avanzamento dei moduli in tempo reale. Visualizza facilmente i moduli completati e quelli in sospeso, finalizzali e recupera le versioni definitive per un processo fluido.",
   "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/advanced.png",
   "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/advanced@2x.png",
 
-  "CostEffectiveForAnyBudgetDesc": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses, no matter if it's SMB or a big enterprise. Want to get full control over your corporate data? Deploy DocSpace on your private server.",
+  "CostEffectiveForAnyBudgetDesc": "Paga solo per gli amministratori e aggiungi gratuitamente un numero illimitato di utenti regolari e ospiti. Approfitta del piano Startup gratuito per i piccoli team. ONLYOFFICE DocSpace è adatto a qualsiasi tipo di azienda, dalle PMI alle grandi imprese. Vuoi avere il pieno controllo sui tuoi dati aziendali? Implementa DocSpace sul tuo server privato.",
   "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget.png",
   "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget@2x.png",
 
-  "LearnMoreHeading": "Scopri di più sulle Stanze di dati virtuali di DocSpace",
+  "LearnMoreHeading": "Scopri di più sulle Virtual Data Room di DocSpace",
 
-  "HelpCenter": "Centro assistenza",
-  "HelpCenterDesc": "Consulta le guide utente dettagliate per un lavoro efficace",
+  "HelpCenter": "Help Center",
+  "HelpCenterDesc": "Consulta guide utente dettagliate per lavorare in modo efficace.",
   "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
   "LearnMore": "Scopri di più",
 
   "YouTube": "YouTube",
-  "MasterONLYOFFICEDocSpace": "Padroneggia ONLYOFFICE DocSpace con guide video",
+  "MasterONLYOFFICEDocSpace": "Diventa esperto di ONLYOFFICE DocSpace con le video guide",
   "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
   "WatchNow": "Guarda ora",
 
-  "CustomerTestimonial": "Testimonianza del cliente",
-  "HowKinderhausBerlinSharesAndCollaborates": "Come Kinderhaus Berlin condivide e collabora su file riservati con ONLYOFFICE DocSpace",
-  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "CustomerTestimonial": "Testimonianza dei clienti",
+  "HowKinderhausBerlinSharesAndCollaborates": "Come Kinderhaus Berlin condivide e collabora su file sensibili con ONLYOFFICE DocSpace",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/it/2023/11/onlyoffice-doscspace-per-la-casa-dei-bambini",
   "ReadStory": "Leggi la storia"
 }

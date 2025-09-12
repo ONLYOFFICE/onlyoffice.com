@@ -54,13 +54,31 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
     }
   };
 
+  const mobLeftMaskRef = useRef<HTMLDivElement | null>(null);
+
   useEffect(() => {
     const wrapper = wrapperRef.current;
     const items = itemsRef.current;
     const thumb = thumbRef.current;
     const progress = progressRef.current;
     const track = trackRef.current;
+    const mobLeftMask = mobLeftMaskRef.current;
     if (!wrapper || !items.length || !thumb || !progress || !track) return;
+
+    const lastItem = items.at(-1);
+    const isMobile = window.innerWidth <= 592;
+    if (lastItem) {
+      if (!isMobile) {
+        const offsetRight = (lastItem.offsetLeft || 0) + lastItem.offsetWidth;
+        wrapper.scrollTo({
+          left: offsetRight - wrapper.offsetWidth,
+        });
+      } else {
+        wrapper.scrollTo({
+          left: lastItem.offsetLeft - (mobLeftMask?.offsetWidth ?? 0),
+        });
+      };
+    };
 
     const getCoords = (e: MouseEvent | TouchEvent): { pageX: number, pageY: number } => {
       if (e.type.startsWith("touch")) {
@@ -283,7 +301,7 @@ const Discover = ({ abouts, locale }: IAbouts & ILocale) => {
 
   return (
     <StyledDiscoverSection background="#F5F5F5">
-      <StyledDiscoverHideMaskLeftMob $height={`${wrapperHeight}px`} />
+      <StyledDiscoverHideMaskLeftMob $height={`${wrapperHeight}px`} ref={mobLeftMaskRef} />
       <StyledDiscoverHideMaskRightMob $height={`${wrapperHeight}px`} />
 
       <StyledDiscoverHeading
