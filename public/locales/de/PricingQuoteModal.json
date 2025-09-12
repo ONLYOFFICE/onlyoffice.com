@@ -1,13 +1,13 @@
 {
   "FullName": "Vollständiger Name",
-  "FullNameIsIncorrect": "Der Vollständiger Name ist falsch",
-  "NameSurname": "Vollständiger Name",
-  "FullNameIsEmpty": "Das Feld Vollständiger Name ist leer",
-  "Email": "E-Mail-Adresse",
-  "EmailIsEmpty": "E-Mail-Adresse ist leer",
-  "EmailIsIncorrect": "Die E-Mail-Adresse ist falsch",
-  "CompanyName": "Unternehmen",
-  "CompanyNameIsEmpty": "Das Feld Unternehmen ist leer",
-  "successfullyRequestText": "Ihre Anfrage wurde erfolgreich gesendet",
-  "errorRequestText": "Entschuldigung, ein Fehler ist aufgetreten. Bitte versuchen Sie erneut später"
+  "FullNameIsIncorrect": "Der vollständige Name ist falsch",
+  "NameSurname": "Vorname Nachname",
+  "FullNameIsEmpty": "Der vollständige Name ist leer",
+  "Email": "E-Mail",
+  "EmailIsEmpty": "E-Mail ist leer",
+  "EmailIsIncorrect": "E-Mail ist falsch",
+  "CompanyName": "Firmenname",
+  "CompanyNameIsEmpty": "Firmenname ist leer",
+  "successfullyRequestText": "Ihre Anfrage wurde erfolgreich versendet",
+  "errorRequestText": "Es tut uns leid, aber es ist ein Fehler aufgetreten. Versuchen Sie es später noch einmal."
 }

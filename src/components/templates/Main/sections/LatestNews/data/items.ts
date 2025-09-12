@@ -1,6 +1,7 @@
 import { INewsCard } from "../sub-components/NewsCard";
 import { INewsItem } from "../sub-components/NewsItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface INewsItems {
   blog: INewsCard[];
   webinar: INewsCard[];
@@ -49,7 +50,7 @@ export const items: INewsItems = {
   events: [
     {
       heading: "FOSSASIASummit2025",
-      imgUrl: "/images/templates/main/latest-news/big-data-and-ai-paris@1x.png",
+      imgUrl: getAssetUrl("/images/templates/main/latest-news/big-data-and-ai-paris@1x.png"),
       linkUrl: "https://www.bigdataparis.com/",
       isExternalLink: true,
       startDate: "2025-10-01",
@@ -58,7 +59,7 @@ export const items: INewsItems = {
     },
     {
       heading: "TechUniteAfrica",
-      imgUrl: "/images/templates/main/latest-news/gitex-global-2025@1x.png",
+      imgUrl: getAssetUrl("/images/templates/main/latest-news/gitex-global-2025@1x.png"),
       linkUrl: "https://www.gitex.com/",
       isExternalLink: true,
       startDate: "2025-10-13",

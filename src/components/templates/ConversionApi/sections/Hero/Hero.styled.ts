@@ -4,8 +4,9 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
-  background-image: url("/images/templates/conversion-api/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/conversion-api/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: calc(50% + 327px) -488px;
   background-repeat: no-repeat;

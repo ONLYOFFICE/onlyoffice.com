@@ -3,6 +3,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledProtectWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -17,7 +18,7 @@ const StyledProtectWrapper = styled.div`
 
 const StyledProtectImage = styled.div`
   padding-bottom: 63%;
-  background-image: url("/images/templates/document-management/protect/protect.svg");
+  background-image: url(${getAssetUrl('/images/templates/document-management/protect/protect.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

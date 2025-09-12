@@ -2,6 +2,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { BlogCard } from "./BlogCard";
 import { IBlogCard } from "./BlogCard.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Widgets/BlogCard",
   component: BlogCard,
@@ -44,7 +45,7 @@ const Template: StoryFn<IBlogCard> = (args: IBlogCard) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  imgUrl: "/images/storybook/widgets/blog-card/story.jpg",
+  imgUrl: getAssetUrl("/images/storybook/widgets/blog-card/story.jpg"),
   heading: {
     label:
       "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
@@ -63,7 +64,7 @@ Default.args = {
 
 export const Large = Template.bind({});
 Large.args = {
-  imgUrl: "/images/storybook/widgets/blog-card/story.jpg",
+  imgUrl: getAssetUrl("/images/storybook/widgets/blog-card/story.jpg"),
   heading: {
     label:
       "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
@@ -83,7 +84,7 @@ Large.args = {
 
 export const WithBlogLink = Template.bind({});
 WithBlogLink.args = {
-  imgUrl: "/images/storybook/widgets/blog-card/story.jpg",
+  imgUrl: getAssetUrl("/images/storybook/widgets/blog-card/story.jpg"),
   heading: {
     href: "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
     label:

@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Efikasan alat za upravljanje projektima | ONLYOFFICE",
+  "PageDescription": "Planirajte, upravljajte i pratite zadatke, rokove i projekte. Poboljšajte produktivnost svog tima.",
+
+  "HeroTitle": "Softver za upravljanje projektima za odlične performanse tima",
+  "HeroText": "To je savršen alat za brze ili srednje velike projekte. Nije komplikovaniji od kupovine na Amazonu.<br/><1>Prema CMSWire</1>",
+  "HeroImage": "/images/templates/projects/hero/hero_image.png",
+  "HeroImage2x": "/images/templates/projects/hero/hero_image@2x.png",
+  "GetItNow": "Preuzmite odmah",
+
+  "ProjectHierarchy": "Hijerarhija projekta",
+  "ProjectHierarchyText": "Koristite prekretnice, zadatke i podzadatke za prioritizaciju glavnih ciljeva i svakodnevnih aktivnosti. Dodajte prilagođene statuse zadataka.",
+  "ProjectHierarchyImage": "/images/templates/projects/features/en/project_hierarchy.png",
+  "GanttChart": "Gantt dijagram",
+  "GanttChartText": "Analizirajte napredak projekta i zavisnosti zadataka. Ažurirajte zakazane događaje i rokove sa nekoliko klikova.",
+  "GanttChartImage": "/images/templates/projects/features/en/gantt_chart.png",
+  "AccessRights": "Upravljanje pravima pristupa",
+  "AccessRightsText": "Postavite individualne dozvole pristupa za različite elemente modula i kreirajte privatne projekte. Imate potpunu kontrolu nad time šta ko može da vidi i koje radnje može da izvrši.",
+  "AccessRightsImage": "/images/templates/projects/features/en/access_rights.png",
+  "TimeManagement": "Upravljanje vremenom",
+  "TimeManagementText": "Procenite performanse tima i status projekta koristeći funkcije praćenja vremena i automatski generisane izveštaje.",
+  "TimeManagementImage": "/images/templates/projects/features/en/time_management.png",
+
+  "MobileApps": "Mobilne aplikacije",
+  "StayMobile": "Ostanite mobilni!",
+  "WorkWithProjects": "Radite na projektima sa svojih <0>iOS</0> i <1>Android</1> uređaja. Upravljajte aktivnostima tima čak i u pokretu.",
+  "MobileImage": "/images/templates/projects/mobile-apps/en/mobile.png",
+
+  "ItsAPerfectTool": "To je savršen alat za brze ili srednje velike projekte. Nije komplikovaniji od kupovine na Amazonu.",
+  "CmsWire": "CMSWire"
+}

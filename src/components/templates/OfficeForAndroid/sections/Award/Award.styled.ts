@@ -4,6 +4,7 @@ import { Link } from "@src/components/ui/Link";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledAwardFooter = styled.div``;
 
 const StyledAwardFooterImgLink = styled(Link)`
@@ -11,7 +12,7 @@ const StyledAwardFooterImgLink = styled(Link)`
   width: 172px;
   height: 172px;
   margin: 0 auto;
-  background-image: url("/images/templates/office-for-android/award/award.webp");
+  background-image: url(${getAssetUrl('/images/templates/office-for-android/award/award.webp')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

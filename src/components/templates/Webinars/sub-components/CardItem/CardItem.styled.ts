@@ -4,6 +4,7 @@ import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { ILoaderButton } from "@src/components/ui/LoaderButton";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCardItemHeading = styled(Heading)`
   margin-bottom: 16px;
   transition-duration: 300ms;
@@ -40,7 +41,7 @@ const StyledCardItemLink = styled(Link)`
     left: 0;
     transform: translateY(-50%);
     background-color: transparent;
-    background-image: url("/images/icons/play.svg");
+    background-image: url(${getAssetUrl('/images/icons/play.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -142,7 +143,7 @@ const StyledCardItemModalContent = styled.div`
 `;
 
 const StyledCardItemModalClose = styled.div`
-  background-image: url("/images/icons/close.svg");
+  background-image: url(${getAssetUrl('/images/icons/close.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

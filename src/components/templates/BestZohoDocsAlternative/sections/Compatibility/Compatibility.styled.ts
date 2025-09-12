@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCompatibilityTop = styled.div`
   max-width: 817px;
   margin: 0 auto 40px;
@@ -53,9 +54,9 @@ const StyledCompatibilityTopTextLink = styled(Link)<{ $type: "docx" | "xlsx" }>`
     margin: 0 5px;
     background-image: ${({ $type }) =>
       $type === "docx"
-        ? "url('/images/templates/best-zoho-docs-alternative/compatibility/file_docx.svg')"
+        ? `url(${getAssetUrl('/images/templates/best-zoho-docs-alternative/compatibility/file_docx.svg')})`
         : $type === "xlsx"
-        ? "url('/images/templates/best-zoho-docs-alternative/compatibility/file_xlsx.svg')"
+        ? `url(${getAssetUrl('/images/templates/best-zoho-docs-alternative/compatibility/file_xlsx.svg')})`
         : undefined};
   }
 `;
@@ -155,9 +156,9 @@ const StyledCompatibilityCompanySwitcherItem = styled.button<{
     background-position: center;
     background-image: ${({ $type }) =>
       $type === "onlyOffice"
-        ? "url('/images/templates/best-zoho-docs-alternative/compatibility/logo_onlyoffice.svg')"
+        ? `url(${getAssetUrl('/images/templates/best-zoho-docs-alternative/compatibility/logo_onlyoffice.svg')})`
         : $type === "zohoDocs"
-        ? "url('/images/templates/best-zoho-docs-alternative/compatibility/logo_zoho.svg')"
+        ? `url(${getAssetUrl('/images/templates/best-zoho-docs-alternative/compatibility/logo_zoho.svg')})`
         : undefined};
   }
 `;

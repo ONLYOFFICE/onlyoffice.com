@@ -3,6 +3,7 @@ import { FeatureButtonItem } from "./FeatureButtonItem";
 import type { IFeatureButtonItem } from "./FeatureButtonItem.types";
 import { Meta, StoryFn } from "@storybook/react";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Widgets/FeatureButtonItem",
   component: FeatureButtonItem,
@@ -33,7 +34,7 @@ const Template: StoryFn<IFeatureButtonItem> = (args: IFeatureButtonItem) => (
 export const Default = Template.bind({});
 Default.args = {
   icon: {
-    url: "/images/storybook/widgets/feature-item/working.svg",
+    url: getAssetUrl("/images/storybook/widgets/feature-item/working.svg"),
   },
   heading: "Heading",
   text: "Working with office files directly within the Box frontend",

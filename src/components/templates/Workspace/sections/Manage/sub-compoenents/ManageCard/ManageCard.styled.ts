@@ -90,10 +90,16 @@ const StyledManageCardImage = styled.div<{
   }
 `;
 
+const StyledManageCardLinks = styled.div`
+  display: flex;
+  gap: 16px;
+`;
+
 export {
   StyledManageCard,
   StyledManageCardContent,
   StyledManageCardTextList,
   StyledManageCardTextListItem,
   StyledManageCardImage,
+  StyledManageCardLinks,
 };

@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IItems {
   heading: string;
   text: string;
@@ -10,7 +11,7 @@ export const items: IItems[] = [
   {
     heading: "SecurityFeature1",
     text: "SecurityFeature1Text",
-    icon: "/images/templates/workspace-enterprise/security/end-to-end.svg",
+    icon: getAssetUrl("/images/templates/workspace-enterprise/security/end-to-end.svg"),
     link: "/private-rooms"
   },
   {

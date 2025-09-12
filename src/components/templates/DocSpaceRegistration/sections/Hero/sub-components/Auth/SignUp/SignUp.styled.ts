@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSignUpAccount = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -66,7 +67,7 @@ const StyledSignUpGoogleButton = styled(Button)`
       left: 0;
       width: 24px;
       height: 24px;
-      background-image: url("/images/templates/docspace-registration/hero/google.svg");
+      background-image: url(${getAssetUrl('/images/templates/docspace-registration/hero/google.svg')});
       background-repeat: no-repeat;
       background-size: contain;
       transform: translateY(-50%);

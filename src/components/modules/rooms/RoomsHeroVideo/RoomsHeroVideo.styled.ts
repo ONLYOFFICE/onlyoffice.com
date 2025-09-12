@@ -5,9 +5,10 @@ import { Section } from "@src/components/ui/Section";
 import { YouTubeCard } from "@src/components/modules/docspace/YouTubeCard";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledRoomsHeroVideo = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/modules/rooms/rooms-hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/modules/rooms/rooms-hero/bg.svg')});
   background-position: 37% -630px;
   background-repeat: no-repeat;
   background-color: #f9f9f9;

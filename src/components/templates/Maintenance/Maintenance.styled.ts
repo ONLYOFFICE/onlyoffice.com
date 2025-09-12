@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMaintenance = styled.div`
   position: relative;
   height: 100%;
@@ -18,7 +19,7 @@ const StyledMaintenanceContent = styled.div`
   transform: translate(-50%, -50%);
   width: 952px;
   height: 646px;
-  background-image: url("/images/templates/maintenance/bg.png");
+  background-image: url(${getAssetUrl('/images/templates/maintenance/bg.png')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

@@ -3,6 +3,7 @@ import { IHowToStart } from "./HowToStart.types";
 import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHowToStart = styled.div`
   position: relative;
   display: flex;
@@ -71,7 +72,7 @@ const StyledHowToStartInfo = styled(Text)`
     width: 22px;
     height: 22px;
     transform: translateY(-50%);
-    background: url("/images/templates/office-for-mattermost/how-to-start/github-icon.svg")
+    background: url(${getAssetUrl('/images/templates/office-for-mattermost/how-to-start/github-icon.svg')})
       no-repeat center;
     background-size: contain;
   }

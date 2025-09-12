@@ -1,8 +1,9 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IBlogCard[] = [
   {
-    imgUrl: "/images/templates/office-for-moodle/learn-more/story-1.jpg",
+    imgUrl: getAssetUrl("/images/templates/office-for-moodle/learn-more/story-1.jpg"),
     heading: { label: "HowEnsuresDigitalEquality" },
     links: [
       {
@@ -17,7 +18,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-moodle/learn-more/story-2.png",
+    imgUrl: getAssetUrl("/images/templates/office-for-moodle/learn-more/story-2.png"),
     heading: { label: "WhyWeChoseMoodle" },
     links: [
       {
@@ -27,7 +28,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/office-for-moodle/learn-more/story-3.png",
+    imgUrl: getAssetUrl("/images/templates/office-for-moodle/learn-more/story-3.png"),
     heading: { label: "NewUpdatesOfOOPlugins" },
     links: [
       {

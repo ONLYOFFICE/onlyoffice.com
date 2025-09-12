@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCostContent = styled.div`
   background: #ffffff;
   border: 1px solid #cccccc;
@@ -18,7 +19,7 @@ const StyledCostContent = styled.div`
     right: -1px;
     width: 509px;
     height: 463px;
-    background-image: url("/images/templates/docspace-enterprise/cost/cost_picture.svg");
+    background-image: url(${getAssetUrl('/images/templates/docspace-enterprise/cost/cost_picture.svg')});
     background-repeat: no-repeat;
     background-position: 100% 0;
     background-size: contain;
@@ -88,7 +89,7 @@ const StyledCostItem = styled.li`
     position: absolute;
     top: 4px;
     left: 6px;
-    background-image: url("/images/icons/check-orange.svg");
+    background-image: url(${getAssetUrl('/images/icons/check-orange.svg')});
     background-repeat: no-repeat;
   }
 `;
@@ -116,7 +117,7 @@ const StyledCostFooter = styled.div`
   &::before {
     content: "";
     display: block;
-    background-image: url("/images/icons/heart.svg");
+    background-image: url(${getAssetUrl('/images/icons/heart.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     width: 40px;

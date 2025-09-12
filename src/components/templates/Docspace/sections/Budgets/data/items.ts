@@ -1,11 +1,12 @@
 import { IDocSpaceCard } from "@src/components/modules/docspace/DocSpaceCards/DocSpaceCards.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const budgetItems: IDocSpaceCard[] = [
   {
     heading: "Business",
     text: "BusinessDesc",
     image: {
-      url: "/images/templates/docspace/budgets/business-icon.svg",
+      url: getAssetUrl("/images/templates/docspace/budgets/business-icon.svg"),
     },
     linkLabel: "BusinessLinkLabel",
     linkHref: "/docspace-prices#docspace-cloud",
@@ -14,7 +15,7 @@ export const budgetItems: IDocSpaceCard[] = [
     heading: "Enterprise",
     text: "EnterpriseDesc",
     image: {
-      url: "/images/templates/docspace/budgets/enterprise-icon.svg",
+      url: getAssetUrl("/images/templates/docspace/budgets/enterprise-icon.svg"),
     },
     color: "white",
     borderColor: "transparent",
@@ -26,7 +27,7 @@ export const budgetItems: IDocSpaceCard[] = [
     heading: "Startup",
     text: "StartupDesc",
     image: {
-      url: "/images/templates/docspace/budgets/startup-icon.svg",
+      url: getAssetUrl("/images/templates/docspace/budgets/startup-icon.svg"),
     },
     borderColor: "#8bb825",
     bgColor: "#f9feef",
@@ -37,7 +38,7 @@ export const budgetItems: IDocSpaceCard[] = [
     heading: "NonProfit",
     text: "NonProfitDesc",
     image: {
-      url: "/images/templates/docspace/budgets/non-profit-icon.svg",
+      url: getAssetUrl("/images/templates/docspace/budgets/non-profit-icon.svg"),
     },
     linkLabel: "NonProfitLinkLabel",
     linkHref:

@@ -4,6 +4,7 @@ import { StyledCards } from "./Cards.styled";
 import { ILocale } from "@src/types/locale";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   CertificateCard,
   ICertificateCard,
@@ -44,7 +45,7 @@ const Cards = ({ locale }: ILocale) => {
               key={index}
               date={item.date}
               heading={t(item.heading)}
-              blogUrl={t(item.blogUrl)}
+              blogUrl={getAssetUrl(t(item.blogUrl))}
               product={{ label: t(item.product.label), url: item.product.url }}
               imageUrl={item.imageUrl}
               locale={locale}

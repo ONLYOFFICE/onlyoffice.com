@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledWrapper = styled.div`
   display: grid;
   align-items: center;
@@ -28,7 +29,7 @@ const StyledWrapper = styled.div`
     column-gap: initial;
     row-gap: 32px;
     background-color: #f5f5f5;
-    background-image: url("/images/templates/for-government/platform/spd_mobile.svg");
+    background-image: url(${getAssetUrl('/images/templates/for-government/platform/spd_mobile.svg')});
     background-repeat: no-repeat;
     background-position-x: 50%;
     padding: 112px 0 69px;
@@ -100,7 +101,7 @@ const StyledWrapperDark = styled.div`
     column-gap: initial;
     row-gap: 32px;
     background-color: #f5f5f5;
-    background-image: url("/images/templates/for-government/platform/hopewell_mobile.svg");
+    background-image: url(${getAssetUrl('/images/templates/for-government/platform/hopewell_mobile.svg')});
     background-repeat: no-repeat;
     background-position-x: 50%;
     padding: 220px 16px 48px;

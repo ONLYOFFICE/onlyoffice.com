@@ -2,10 +2,11 @@ import { styled, css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background:
-    url(/images/templates/office-for-trello/hero/bg.svg) no-repeat,
+    url(${getAssetUrl('/images/templates/office-for-trello/hero/bg.svg')});no-repeat,
     linear-gradient(to left, #00b8d9, #0065ff);
   background-position-x: calc(50% + 266px), center;
   background-position-y: -202px;
@@ -55,7 +56,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 48px;
   height: 48px;
-  background-image: url("/images/templates/office-for-trello/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-trello/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

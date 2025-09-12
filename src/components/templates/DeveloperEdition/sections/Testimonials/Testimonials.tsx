@@ -4,6 +4,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import { CarouselButton } from "@src/components/ui/CarouselButton";
 import "swiper/css";
 import "swiper/css/pagination";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledContainer,
   StyledStepCarouselWrapper,
@@ -70,8 +71,8 @@ const Testimonials = () => {
         <StyledSuccessStoriesItems>
           {successStoriesItems.map((item, index) => (
             <StoryCard
-              imgUrl={t(item.imgUrl)}
-              linkUrl={t(item.linkUrl)}
+              imgUrl={getAssetUrl(t(item.imgUrl))}
+              linkUrl={getAssetUrl(t(item.linkUrl))}
               heading={t(item.heading)}
               key={index}
             />

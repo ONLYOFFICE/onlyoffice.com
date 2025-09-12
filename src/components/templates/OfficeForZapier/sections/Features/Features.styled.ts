@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFeaturesHeading = styled(Heading)`
   margin-bottom: 56px;
 
@@ -55,7 +56,7 @@ const StyledFeaturesTab = styled.button<{
     width: 18px;
     min-width: 18px;
     height: 18px;
-    background-image: url("/images/templates/office-for-zapier/features/features.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-zapier/features/features.svg')});
     background-position-x: ${(props) => (props.$active ? "-48px" : "-15px")};
     background-position-y: -13px;
     background-size: 456px;
@@ -115,7 +116,7 @@ const StyledFeaturesListHeading = styled(Heading)<{ $iconPositionX: number }>`
     width: 32px;
     min-width: 32px;
     height: 32px;
-    background-image: url("/images/templates/office-for-zapier/features/features.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-zapier/features/features.svg')});
     background-position-x: ${(props) => props.$iconPositionX}px;
     background-position-y: center;
   }

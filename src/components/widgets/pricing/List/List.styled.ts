@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { IList } from "./List.types";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledList = styled.ul<{ $variant: IList["variant"] }>`
   ${(props) =>
     props.$variant === "medium" &&
@@ -32,7 +33,7 @@ const StyledListItem = styled.li<{ $variant: IList["variant"] }>`
             left: 0;
             width: 24px;
             height: 24px;
-            background-image: url("/images/icons/check-gray.svg");
+            background-image: url(${getAssetUrl('/images/icons/check-gray.svg')});
             background-repeat: no-repeat;
             background-size: contain;
           }
@@ -54,7 +55,7 @@ const StyledListItem = styled.li<{ $variant: IList["variant"] }>`
               left: 0;
               width: 12px;
               height: 12px;
-              background-image: url("/images/icons/check-small.svg");
+              background-image: url(${getAssetUrl('/images/icons/check-small.svg')});
               background-repeat: no-repeat;
               background-size: contain;
             }

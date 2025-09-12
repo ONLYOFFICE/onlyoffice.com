@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const CARD_WIDTH = "325px";
 
 const StyledDiscoverSection = styled(Section)`
@@ -194,7 +195,7 @@ const StyledDiscoverScrollbarThumb = styled.div`
   left: 0;
   transform: translateY(-50%);
   z-index: 2;
-  background-image: url("/images/templates/about/discover/runner.png");
+  background-image: url(${getAssetUrl('/images/templates/about/discover/runner.png')});
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

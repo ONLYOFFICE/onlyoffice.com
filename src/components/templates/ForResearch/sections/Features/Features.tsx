@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledFeaturesContent,
 } from "./Features.styled";
@@ -33,7 +34,7 @@ const Features = () => {
                   connectorsHeading={t(group.connectorsHeading ?? "")}
                   buttons={buttons}
                   image={{
-                    url: t(group.image.url),
+                    url: getAssetUrl(t(group.image.url)),
                     width: 544,
                   }}
                   text={group.items.map((key) => {

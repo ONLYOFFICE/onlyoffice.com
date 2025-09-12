@@ -1,5 +1,6 @@
 import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IFeatureImageItemExtended extends IFeatureImageItem {
   textLinks?: { href: string; isExternal?: boolean }[];
   text: string[];
@@ -13,7 +14,7 @@ export const items: IFeatureImageItemExtended[] = [
       "ThePrivateKeyIsEncrypted",
     ],
     image: {
-      url: "/images/templates/private-rooms/how-it-works/key.svg",
+      url: getAssetUrl("/images/templates/private-rooms/how-it-works/key.svg"),
       height: 100,
       width: 448
     },
@@ -29,7 +30,7 @@ export const items: IFeatureImageItemExtended[] = [
       "WhenAccessing",
     ],
     image: {
-      url: "/images/templates/private-rooms/how-it-works/encrypting.svg",
+      url: getAssetUrl("/images/templates/private-rooms/how-it-works/encrypting.svg"),
       height: 375,
       width: 336
     },
@@ -41,7 +42,7 @@ export const items: IFeatureImageItemExtended[] = [
       "InCoEditing",
     ],
     image: {
-      url: "/images/templates/private-rooms/how-it-works/sharing.svg",
+      url: getAssetUrl("/images/templates/private-rooms/how-it-works/sharing.svg"),
       height: 170,
       width: 412
     },

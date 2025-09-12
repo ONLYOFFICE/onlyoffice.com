@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCookieBannerHeading = styled(Heading)`
   display: flex;
   align-items: center;
@@ -11,7 +12,7 @@ const StyledCookieBannerHeading = styled(Heading)`
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url("/images/icons/cookie.svg");
+    background-image: url(${getAssetUrl('/images/icons/cookie.svg')});
     background-position-x: 50%;
     background-repeat: no-repeat;
   }
@@ -25,7 +26,7 @@ const StyledCookieBannerHeader = styled.div`
 
 const StyledCookieFab = styled.div`
   background-color: #ffffff;
-  background-image: url(/images/icons/cookie.svg);
+  background-image: url(${getAssetUrl('/images/icons/cookie.svg')});
   background-position: center;
   background-repeat: no-repeat;
   background-size: 24px auto;
@@ -104,7 +105,7 @@ const StyledCross = styled.div`
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url("/images/icons/cross.svg");
+  background-image: url(${getAssetUrl('/images/icons/cross.svg')});
   background-position: center;
   background-repeat: no-repeat;
 `;

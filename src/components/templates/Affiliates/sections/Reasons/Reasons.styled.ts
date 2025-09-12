@@ -5,6 +5,7 @@ import { Text } from "@src/components/ui/Text";
 import { StyledFeatureItem } from "@src/components/widgets/FeatureItem";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledReasonsWrapper = styled.div`
   display: grid;
   row-gap: 32px;
@@ -82,14 +83,14 @@ const StyledReasonsLink = styled(Link)`
 
 const StyledReasonsImage = styled.div`
   width: 100%;
-  background-image: url("/images/templates/affiliates/reasons/reasons_image.png");
+  background-image: url(${getAssetUrl('/images/templates/affiliates/reasons/reasons_image.png')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-bottom: 65.804%;
 
   @media ${device.retina} {
-    background-image: url("/images/templates/affiliates/reasons/reasons_image@2x.png");
+    background-image: url(${getAssetUrl('/images/templates/affiliates/reasons/reasons_image@2x.png')});
   }
 
   @media ${device.tablet} {

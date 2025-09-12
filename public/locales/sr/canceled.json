@@ -1,0 +1,64 @@
+{
+  "AccountCanceledPageTitle": "ONLYOFFICE lični nalog obrisan | ONLYOFFICE",
+  "AccountCanceledPageDescription": "Zašto ste odlučili da obrišete svoj ONLYOFFICE lični nalog",
+
+  "InstallCanceledPageTitle": "ONLYOFFICE on-premises deinstaliran | ONLYOFFICE",
+  "InstallCanceledPageDescription": "Zašto ste odlučili da deinstalirate ONLYOFFICE sa svog servera.",
+
+  "RegistrationCanceledPageTitle": "Registracija za cloud kancelariju otkazana | ONLYOFFICE",
+  "RegistrationCanceledPageDescription": "Zašto ste odlučili da otkažete registraciju za ONLYOFFICE cloud.",
+
+  "DesktopUninstalledPageTitle": "ONLYOFFICE Desktop Editors deinstaliran | ONLYOFFICE",
+  "DesktopUninstalledPageDescription": "Zašto ste odlučili da deinstalirate ONLYOFFICE Desktop Editors",
+
+  "CanceledHeroTitle": "Žao nam je što odlazite!",
+
+  "WhyDidYouDecideToUninstallOnlyoffice": "Zašto ste odlučili da deinstalirate ONLYOFFICE?",
+  "SelectAllThatApply": "Odaberite sve što se odnosi na vas",
+  "ExperiencedTechnicalProblems": "Imao/la sam tehničke probleme",
+  "NeedMoreStorageSpace": "Potrebno mi je više prostora za skladištenje",
+  "DidntFindNecessaryFeatures": "Nisam našao/la potrebne funkcije",
+  "PrivacyConcernsLegalViolation": "Zabrinutost za privatnost/kršenje zakona",
+  "IRarelyWorkInBrowser": "Retko radim u pregledaču",
+  "Other": "Drugo",
+
+  "SwitchedToTheCloudVersion": "Prešao/la sam na cloud verziju",
+  "IRarelyUseOnlyoffice": "Retko koristim ONLYOFFICE",
+
+  "IWillUseAnotherDesktopSoftware": "Koristiću neki drugi desktop softver",
+  "IRarelyUseOnlyofficeDesktopEditors": "Retko koristim ONLYOFFICE Desktop Editors",
+
+  "SwitchedToOnPremises": "Prešao/la sam na on-premises verziju",
+  "WhatShouldWeImproveInOnlyofficePersonal": "Šta bismo mogli da poboljšamo u ONLYOFFICE Personal?",
+  "WhatShouldWeImproveInOnlyoffice": "Šta bismo mogli da poboljšamo u ONLYOFFICE-u?",
+  "WhatShouldWeImproveInOnlyofficeDesktopEditors": "Šta bismo mogli da poboljšamo u ONLYOFFICE Desktop Editors?",
+  "YourMessageHere": "Vaša poruka ovde",
+  "Email": "Email",
+  "EmailIsEmpty": "Email polje je prazno",
+  "EmailIsIncorrect": "Email nije ispravan",
+  "ByClickingSendFeedback": "Klikom na \"Pošaljite povratne informacije\", razumete i slažete se sa našim <0>SLA</0> i <1>Izjavom o privatnosti</1>.",
+  "SendFeedback": "POŠALJITE POVRATNE INFORMACIJE",
+
+  "ThanksForYourMessage": "Hvala na vašoj poruci.",
+  "IfYouDecideToGetBack": "Ako odlučite da se vratite, iskoristite ovaj kupon kod za <0>10% popusta</0> na ONLYOFFICE cloud servis ili ga jednostavno podelite sa prijateljem!*",
+  "WhyTakeBusinessToOnlyofficeCloudToday": "Zašto koristiti ONLYOFFICE cloud za posao već danas",
+  "FullyGDPRCompliantCloudOffice": "Cloud kancelarija u potpunosti usklađena sa GDPR-om",
+  "ReducedMaintenanceCosts": "Smanjeni troškovi održavanja",
+  "SecureAndReliableHosting": "Siguran i pouzdan hosting",
+  "AutomaticUpdates": "Automatska ažuriranja i profesionalna tehnička podrška",
+  "ScalableCostEffectiveSolution": "Skalabilno i isplativo rešenje",
+  "EntirelyFree": "Potpuno besplatno za neprofitne organizacije i škole",
+  "TheCoupon": "**Kupon kod važi 12 meseci.",
+
+  "DontLeave": "Nemojte otići praznih ruku — ponesite besplatan lični cloud sa editorima za kućnu upotrebu i ostvarite <0>10%</0> popusta na naše onlajn editore za posao!*",
+  
+  "WhyChooseFreePersonalOnlyofficeCloudToday": "Zašto izabrati besplatan lični ONLYOFFICE cloud već danas",
+  "FreeAndSecureCloudStorage": "Besplatno i sigurno cloud skladište",
+  "HighestCompatibility": "Najviša kompatibilnost sa MS Office formatima",
+  "DocumentEditing": "Uređivanje i saradnja na dokumentima u vašem pregledaču",
+  "ConnectionOfPopular": "Povezivanje popularnih skladišta trećih strana: Dropbox, OneDrive i drugih",
+  "PleaseNote": "*Imajte na umu da će kupon kod važiti samo 12 meseci.",
+
+
+  "HopeToSeeYouAgain": "Hvala na vašoj poruci. Nadamo se da ćemo vas ponovo videti!"
+}

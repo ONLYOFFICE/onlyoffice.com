@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledUnsubscribe = styled(Section)`
   margin-top: -72px;
 
@@ -32,8 +33,8 @@ const StyledUnsubscribeImage = styled.div<{
   height: 353px;
   background-image: ${(props) =>
     props.$unsubscribe
-      ? 'url("/images/templates/unsubscribe/mascot-unsub.svg")'
-      : 'url("/images/templates/unsubscribe/mascot-sub.svg")'};
+      ? `url(${getAssetUrl('/images/templates/unsubscribe/mascot-unsub.svg')})`
+      : `url(${getAssetUrl('/images/templates/unsubscribe/mascot-sub.svg')})`};
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -79,7 +80,7 @@ const StyledUnsubscribeSuccessLogo = styled.div`
   margin: 38px auto 0;
   width: 40px;
   height: 40px;
-  background-image: url("/images/templates/unsubscribe/success-logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/unsubscribe/success-logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

@@ -2,6 +2,7 @@ import { Trans, useTranslation } from "next-i18next";
 import { Text } from "@src/components/ui/Text";
 import { BestAlternativePresentation } from "@src/components/modules/best-alternative/BestAlternativePresentation";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Presentation = () => {
   const { t } = useTranslation("best-hancom-alternative");
 
@@ -19,7 +20,7 @@ const Presentation = () => {
         ariaLabel: "Presentation ONLYOFFICE vs Hancom Office",
       }}
       image={{
-        src: "/images/templates/best-hancom-alternative/presentation/presentation.jpg",
+        src: getAssetUrl("/images/templates/best-hancom-alternative/presentation/presentation.jpg"),
         alt: "ONLYOFFICE vs Hancom Office",
       }}
     />

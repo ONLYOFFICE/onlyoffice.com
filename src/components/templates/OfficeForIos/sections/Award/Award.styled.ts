@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledAwardContent = styled.div`
   background-color: #fff;
   position: relative;
@@ -13,7 +14,7 @@ const StyledAwardContent = styled.div`
 `;
 
 const StyledAwardLogo = styled.div`
-  background-image: url("/images/templates/office-for-ios/award/award-user-rating.png");
+  background-image: url(${getAssetUrl('/images/templates/office-for-ios/award/award-user-rating.png')});
   background-size: contain;
   background-repeat: no-repeat;
   width: 172px;
@@ -66,7 +67,7 @@ const StyledAwardLink = styled(Link)`
 const StyledAwardQuotes = styled.div`
   width: 100px;
   height: 80px;
-  background-image: url("/images/templates/office-for-ios/award/quotes.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-ios/award/quotes.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
