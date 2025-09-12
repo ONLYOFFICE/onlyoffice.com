@@ -305,9 +305,6 @@ const Hero = () => {
                   phone: formData.phone.length === 0,
                 }));
               }}
-              status={
-                isEmpty.phone ? "error" : formData.phone ? "success" : "default"
-              }
               required
             />
             <Select
