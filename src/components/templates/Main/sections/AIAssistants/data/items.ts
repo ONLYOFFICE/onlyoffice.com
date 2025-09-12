@@ -54,4 +54,11 @@ export const items: AIAssistantsItem[] = [
       url2x: "TranslateIntoDifferentLanguagesImg2x",
     },
   },
+  {
+    label: "UseAiInlineAgent",
+    image: {
+      url: "UseAiInlineAgentImg",
+      url2x: "UseAiInlineAgentImg2x",
+    },
+  },
 ];

@@ -49,7 +49,11 @@ const AIAssistants = () => {
                 ))}
               />
             ) : (
-              t(String(label))
+              <Trans
+                t={t}
+                i18nKey={String(label)}
+                components={{ sup: <Text as="sup" color="main" fontSize="10px" />}}
+              />
             ),
             image: {
               url: t(image.url),
