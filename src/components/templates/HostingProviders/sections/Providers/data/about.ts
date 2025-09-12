@@ -6,7 +6,7 @@ interface IAbout {
 export const about: IAbout[] = [
   {
     label: "HostFeedback",
-    link: "https://forum.onlyoffice.com/",
+    link: "https://community.onlyoffice.com/",
   },
   {
     label: "BeListed",

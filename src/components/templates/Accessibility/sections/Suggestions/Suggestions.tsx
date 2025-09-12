@@ -51,7 +51,7 @@ const Suggestions = () => {
             as="a"
             variant="quinary"
             id="suggestions-forum-button"
-            href="https://forum.onlyoffice.com/"
+            href="https://community.onlyoffice.com/"
             label={t("ForumButtonLabel")}
           />
         </StyledButtonContainer>
