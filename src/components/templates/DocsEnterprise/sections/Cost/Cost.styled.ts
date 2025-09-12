@@ -164,7 +164,7 @@ const StyledInformationText = styled(Text)`
   text-align: center;
 
   &:before {
-    background-image: url(/images/templates/docs-enterprise/cost/union.svg')});
+    background-image: url(${getAssetUrl('/images/templates/docs-enterprise/cost/union.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     content: '';

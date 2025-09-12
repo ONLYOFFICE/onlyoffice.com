@@ -135,13 +135,13 @@ const PartnershipRequestForm = ({
   const checkFormValid = useCallback(() => {
     setIsFormValid(
       isFirstNameValid &&
-      isLastNameValid &&
-      isEmailValid &&
-      isCompanyValid &&
-      isWebsiteValid &&
-      isEmployeesValid &&
-      !isSegmentError &&
-      isCaptchaValid,
+        isLastNameValid &&
+        isEmailValid &&
+        isCompanyValid &&
+        isWebsiteValid &&
+        isEmployeesValid &&
+        !isSegmentError &&
+        isCaptchaValid,
     );
   }, [
     isFirstNameValid,
@@ -320,263 +320,262 @@ const PartnershipRequestForm = ({
 
   return (
     <>
-    <StyledPRForm>
-      <StyledDownloadModalWrapper>
-        <Heading
-          level={4}
-          size={5}
-          label={t("ContactInfo")}
-          textAlign="center"
-        />
+      <StyledPRForm>
+        <StyledDownloadModalWrapper>
+          <Heading
+            level={4}
+            size={5}
+            label={t("ContactInfo")}
+            textAlign="center"
+          />
 
-        <StyledNameWrapper>
-        <Input
-          id="partnerFirstName"
-          onChange={(e) => handleInputChange("firstName", e.target.value)}
-          onBlur={() => {
-            setIsEmpty((prev) => ({
-              ...prev,
-              firstName: formData.firstName.length === 0,
-            }));
-          }}
-          value={formData.firstName}
-          label={t("FirstName")}
-          placeholder={t("FirstName")}
-          caption={
-            formData.firstName.length === 0
-              ? t("FirstNameIsEmpty")
-              : !validateFullName(formData.firstName)
-                ? t("FirstNameIsIncorrect")
-                : ""
-          }
-          required
-          status={
-            isEmpty.firstName
-              ? "error"
-              : formData.firstName.length > 0
-                ? validateFullName(formData.firstName)
-                  ? "success"
-                  : "error"
-                : "default"
-          }
-        />
+          <StyledNameWrapper>
+            <Input
+              id="partnerFirstName"
+              onChange={(e) => handleInputChange("firstName", e.target.value)}
+              onBlur={() => {
+                setIsEmpty((prev) => ({
+                  ...prev,
+                  firstName: formData.firstName.length === 0,
+                }));
+              }}
+              value={formData.firstName}
+              label={t("FirstName")}
+              placeholder={t("FirstName")}
+              caption={
+                formData.firstName.length === 0
+                  ? t("FirstNameIsEmpty")
+                  : !validateFullName(formData.firstName)
+                    ? t("FirstNameIsIncorrect")
+                    : ""
+              }
+              required
+              status={
+                isEmpty.firstName
+                  ? "error"
+                  : formData.firstName.length > 0
+                    ? validateFullName(formData.firstName)
+                      ? "success"
+                      : "error"
+                    : "default"
+              }
+            />
 
-        <Input
-          id="partnerLastName"
-          onChange={(e) => handleInputChange("lastName", e.target.value)}
-          onBlur={() => {
-            setIsEmpty((prev) => ({
-              ...prev,
-              lastName: formData.lastName.length === 0,
-            }));
-          }}
-          value={formData.lastName}
-          label={t("LastName")}
-          placeholder={t("Surname")}
-          caption={
-            formData.lastName.length === 0
-              ? t("LastNameIsEmpty")
-              : !validateFullName(formData.lastName)
-                ? t("LastNameIsIncorrect")
-                : ""
-          }
-          required
-          status={
-            isEmpty.lastName
-              ? "error"
-              : formData.lastName.length > 0
-                ? validateFullName(formData.lastName)
-                  ? "success"
-                  : "error"
-                : "default"
-          }
-        />
-        </StyledNameWrapper>
+            <Input
+              id="partnerLastName"
+              onChange={(e) => handleInputChange("lastName", e.target.value)}
+              onBlur={() => {
+                setIsEmpty((prev) => ({
+                  ...prev,
+                  lastName: formData.lastName.length === 0,
+                }));
+              }}
+              value={formData.lastName}
+              label={t("LastName")}
+              placeholder={t("Surname")}
+              caption={
+                formData.lastName.length === 0
+                  ? t("LastNameIsEmpty")
+                  : !validateFullName(formData.lastName)
+                    ? t("LastNameIsIncorrect")
+                    : ""
+              }
+              required
+              status={
+                isEmpty.lastName
+                  ? "error"
+                  : formData.lastName.length > 0
+                    ? validateFullName(formData.lastName)
+                      ? "success"
+                      : "error"
+                    : "default"
+              }
+            />
+          </StyledNameWrapper>
 
-        <Input
-          id="partnerPosition"
-          onChange={(e) => handleInputChange("positionTitle", e.target.value)}
-          onBlur={() => {
-            setIsEmpty((prev) => ({
-              ...prev,
-              positionTitle: formData.positionTitle.length === 0,
-            }));
-          }}
-          value={formData.positionTitle}
-          label={t("PositionTitle")}
-          placeholder={t("PositionTitle")}
-          caption={t("PositionIsEmpty")}
-          required
-          status={
-            isEmpty.positionTitle
-              ? "error"
-              : formData.positionTitle
-                ? "success"
-                : "default"
-          }
-        />
-
-        <Input
-          id="partnerEmail"
-          onChange={(e) => handleInputChange("email", e.target.value)}
-          onBlur={() => {
-            setIsEmpty((prev) => ({
-              ...prev,
-              email: formData.email.length === 0,
-            }));
-          }}
-          value={formData.email}
-          label={t("CorporateEmailAddress")}
-          placeholder="name@domain.com"
-          caption={
-            formData.email.length === 0
-              ? t("EmailIsEmpty")
-              : !validateEmail(formData.email)
-                ? t("EmailIsIncorrect")
-                : ""
-          }
-          required
-          status={
-            isEmpty.email
-              ? "error"
-              : formData.email.length > 0
-                ? validateEmail(formData.email)
-                  ? "success"
-                  : "error"
-                : "default"
-          }
-        />
-
-        {locale === "zh" ? (
           <Input
-            onChange={(e) => handleInputChange("phone", e.target.value)}
+            id="partnerPosition"
+            onChange={(e) => handleInputChange("positionTitle", e.target.value)}
             onBlur={() => {
               setIsEmpty((prev) => ({
                 ...prev,
-                phone: false,
+                positionTitle: formData.positionTitle.length === 0,
               }));
             }}
-            value={formData.phone}
-            label="微信号"
-              status={formData.phone ? "success" : "default"}
-          />
-        ) : (
-          <PhoneInput
-            ref={phoneInputRef}
-            required={false}
-            onChange={(e) => handleInputChange("phone", e.target.value)}
-            onBlur={() => {
-              setIsEmpty((prev) => ({
-                ...prev,
-                phone: formData.phone.length === 0,
-              }));
-            }}
-              status={formData.phone ? "success" : "default"}
-          />
-        )}
-
-        <Input
-          onChange={(e) => handleInputChange("companyName", e.target.value)}
-          onBlur={() => {
-            setIsEmpty((prev) => ({
-              ...prev,
-              companyName: formData.companyName.length === 0,
-            }));
-          }}
-          value={formData.companyName}
-          label={t("CompanyName")}
-          placeholder={t("CompanyName")}
-          caption={t("CompanyNameIsEmpty")}
-          required
-          status={
-            isEmpty.companyName
-              ? "error"
-              : formData.companyName
-                ? "success"
-                : "default"
-          }
-        />
-
-        <Input
-          onFocus={() => {
-            if (formData.website.trim() === "") {
-              handleInputChange("website", "");
-            }
-          }}
-          onChange={(e) => handleInputChange("website", e.target.value)}
-          onBlur={() => {
-            setIsEmpty((prev) => ({
-              ...prev,
-              website: formData.website.trim() === "",
-            }));
-
-            if (formData.website === "https://") {
-              handleInputChange("website", "");
-            }
-          }}
-          value={formData.website}
-          label={t("Website")}
-          placeholder="e.g. https://www.onlyoffice.com"
-          caption={
-            formData.website.length === 0
-              ? t("WebsiteIsEmpty")
-              : !validateWebsite(formData.website)
-                ? t("WebsiteIsIncorrect")
-                : ""
-          }
-          required
-          status={
-            isEmpty.website
-              ? "error"
-              : formData.website.length > 0
-                ? validateWebsite(formData.website)
+            value={formData.positionTitle}
+            label={t("PositionTitle")}
+            placeholder={t("PositionTitle")}
+            caption={t("PositionIsEmpty")}
+            required
+            status={
+              isEmpty.positionTitle
+                ? "error"
+                : formData.positionTitle
                   ? "success"
-                  : "error"
-                : "default"
-          }
-        />
+                  : "default"
+            }
+          />
 
-        <Input
-          id="partnerEmployeesCount"
+          <Input
+            id="partnerEmail"
+            onChange={(e) => handleInputChange("email", e.target.value)}
+            onBlur={() => {
+              setIsEmpty((prev) => ({
+                ...prev,
+                email: formData.email.length === 0,
+              }));
+            }}
+            value={formData.email}
+            label={t("CorporateEmailAddress")}
+            placeholder="name@domain.com"
+            caption={
+              formData.email.length === 0
+                ? t("EmailIsEmpty")
+                : !validateEmail(formData.email)
+                  ? t("EmailIsIncorrect")
+                  : ""
+            }
+            required
+            status={
+              isEmpty.email
+                ? "error"
+                : formData.email.length > 0
+                  ? validateEmail(formData.email)
+                    ? "success"
+                    : "error"
+                  : "default"
+            }
+          />
+
+          {locale === "zh" ? (
+            <Input
+              onChange={(e) => handleInputChange("phone", e.target.value)}
+              onBlur={() => {
+                setIsEmpty((prev) => ({
+                  ...prev,
+                  phone: false,
+                }));
+              }}
+              value={formData.phone}
+              label="微信号"
+              status={formData.phone ? "success" : "default"}
+            />
+          ) : (
+            <PhoneInput
+              ref={phoneInputRef}
+              required={false}
+              onChange={(e) => handleInputChange("phone", e.target.value)}
+              onBlur={() => {
+                setIsEmpty((prev) => ({
+                  ...prev,
+                  phone: formData.phone.length === 0,
+                }));
+              }}
+            />
+          )}
+
+          <Input
+            onChange={(e) => handleInputChange("companyName", e.target.value)}
+            onBlur={() => {
+              setIsEmpty((prev) => ({
+                ...prev,
+                companyName: formData.companyName.length === 0,
+              }));
+            }}
+            value={formData.companyName}
+            label={t("CompanyName")}
+            placeholder={t("CompanyName")}
+            caption={t("CompanyNameIsEmpty")}
+            required
+            status={
+              isEmpty.companyName
+                ? "error"
+                : formData.companyName
+                  ? "success"
+                  : "default"
+            }
+          />
+
+          <Input
+            onFocus={() => {
+              if (formData.website.trim() === "") {
+                handleInputChange("website", "");
+              }
+            }}
+            onChange={(e) => handleInputChange("website", e.target.value)}
+            onBlur={() => {
+              setIsEmpty((prev) => ({
+                ...prev,
+                website: formData.website.trim() === "",
+              }));
+
+              if (formData.website === "https://") {
+                handleInputChange("website", "");
+              }
+            }}
+            value={formData.website}
+            label={t("Website")}
+            placeholder="e.g. https://www.onlyoffice.com"
+            caption={
+              formData.website.length === 0
+                ? t("WebsiteIsEmpty")
+                : !validateWebsite(formData.website)
+                  ? t("WebsiteIsIncorrect")
+                  : ""
+            }
+            required
+            status={
+              isEmpty.website
+                ? "error"
+                : formData.website.length > 0
+                  ? validateWebsite(formData.website)
+                    ? "success"
+                    : "error"
+                  : "default"
+            }
+          />
+
+          <Input
+            id="partnerEmployeesCount"
             onChange={(e) =>
               handleInputChange("numberEmployees", e.target.value)
             }
-          onBlur={() => {
-            setIsEmpty((prev) => ({
-              ...prev,
-              numberEmployees: formData.numberEmployees.length === 0,
-            }));
-          }}
-          value={formData.numberEmployees}
-          label={t("NumberOfEmployees")}
-          placeholder={t("NumberOfEmployees")}
-          caption={
-            formData.numberEmployees.length === 0
-              ? t("NumberOfEmployeesIsEmpty")
-              : !validateEmployeesCount(formData.numberEmployees)
-                ? t("NumberOfEmployeesFormatError")
-                : ""
-          }
-          required
-          status={
-            isEmpty.numberEmployees
-              ? "error"
-              : formData.numberEmployees.length > 0
-                ? validateEmployeesCount(formData.numberEmployees)
-                  ? "success"
-                  : "error"
-                : "default"
-          }
-        />
+            onBlur={() => {
+              setIsEmpty((prev) => ({
+                ...prev,
+                numberEmployees: formData.numberEmployees.length === 0,
+              }));
+            }}
+            value={formData.numberEmployees}
+            label={t("NumberOfEmployees")}
+            placeholder={t("NumberOfEmployees")}
+            caption={
+              formData.numberEmployees.length === 0
+                ? t("NumberOfEmployeesIsEmpty")
+                : !validateEmployeesCount(formData.numberEmployees)
+                  ? t("NumberOfEmployeesFormatError")
+                  : ""
+            }
+            required
+            status={
+              isEmpty.numberEmployees
+                ? "error"
+                : formData.numberEmployees.length > 0
+                  ? validateEmployeesCount(formData.numberEmployees)
+                    ? "success"
+                    : "error"
+                  : "default"
+            }
+          />
 
-        <StyledPRFHeading
-          level={4}
-          size={5}
-          label={t("PartnershipInfo")}
-          textAlign="center"
-        />
+          <StyledPRFHeading
+            level={4}
+            size={5}
+            label={t("PartnershipInfo")}
+            textAlign="center"
+          />
 
-        <StyledSegmentsWrapper ref={segmentsRef}>
+          <StyledSegmentsWrapper ref={segmentsRef}>
             <StyledTextWrapper
               className={
                 (isTMSegmentsTouched || isOnSubmitPushed) && isSegmentError
@@ -584,190 +583,190 @@ const PartnershipRequestForm = ({
                   : ""
               }
             >
-            <Text label={t("PleaseListYourTargetMarketSegments")} />
-          </StyledTextWrapper>
+              <Text label={t("PleaseListYourTargetMarketSegments")} />
+            </StyledTextWrapper>
 
-          <div>
-            <StyledChecboxesWrapper>
-              {targetMarketSegments.map(({ key, label, id, name }) => (
-                <Checkbox
-                id={id}
-                key={key}
-                name={name}
-                checked={formData[key]}
-                onChange={() => {
-                  if (!isTMSegmentsTouched) setIsTMSegmentsTouched(true);
-                  setFormData((prev) => ({
+            <div>
+              <StyledChecboxesWrapper>
+                {targetMarketSegments.map(({ key, label, id, name }) => (
+                  <Checkbox
+                    id={id}
+                    key={key}
+                    name={name}
+                    checked={formData[key]}
+                    onChange={() => {
+                      if (!isTMSegmentsTouched) setIsTMSegmentsTouched(true);
+                      setFormData((prev) => ({
+                        ...prev,
+                        [key]: !prev[key],
+                      }));
+                    }}
+                    label={t(label)}
+                  />
+                ))}
+              </StyledChecboxesWrapper>
+            </div>
+          </StyledSegmentsWrapper>
+
+          <YesNoRadioBlock
+            label="AreYouCurrentlyAPartnerOrAgent"
+            fieldName="currentlyPartner"
+            formData={formData}
+            setFormData={setFormData}
+            t={t}
+            idPrefix="partner"
+          />
+          {formData.currentlyPartner && (
+            <div className="otherField">
+              <Input
+                label={t("PleaseSpecify")}
+                placeholder={t("PleaseSpecify")}
+                value={formData.pleaseSpecify}
+                onBlur={() => {
+                  setIsEmpty((prev) => ({
                     ...prev,
-                    [key]: !prev[key],
+                    pleaseSpecify: formData.pleaseSpecify.length === 0,
                   }));
                 }}
-                label={t(label)}
-              />
-              ))}
-            </StyledChecboxesWrapper>
-          </div>
-        </StyledSegmentsWrapper>
-
-        <YesNoRadioBlock
-          label="AreYouCurrentlyAPartnerOrAgent"
-          fieldName="currentlyPartner"
-          formData={formData}
-          setFormData={setFormData}
-          t={t}
-          idPrefix="partner"
-        />
-        {formData.currentlyPartner && (
-          <div className="otherField">
-            <Input
-              label={t("PleaseSpecify")}
-              placeholder={t("PleaseSpecify")}
-              value={formData.pleaseSpecify}
-              onBlur={() => {
-                setIsEmpty((prev) => ({
-                  ...prev,
-                  pleaseSpecify: formData.pleaseSpecify.length === 0,
-                }));
-              }}
                 onChange={(e) =>
                   handleInputChange("pleaseSpecify", e.target.value)
                 }
-              caption={
+                caption={
                   formData.pleaseSpecify.length === 0 ? t("FieldIsEmpty") : ""
-              }
-              status={
-                isEmpty.pleaseSpecify
-                  ? "error"
-                  : formData.pleaseSpecify.length > 0
-                    ? "success"
-                    : "default"
-              }
-            />
-          </div>
-        )}
+                }
+                status={
+                  isEmpty.pleaseSpecify
+                    ? "error"
+                    : formData.pleaseSpecify.length > 0
+                      ? "success"
+                      : "default"
+                }
+              />
+            </div>
+          )}
 
-        <YesNoRadioBlock
-          label="DoYouHaveExistingSalesOpportunities"
-          fieldName="salesOpportunities"
-          formData={formData}
-          setFormData={setFormData}
-          t={t}
-          idPrefix="opportunities"
-        />
+          <YesNoRadioBlock
+            label="DoYouHaveExistingSalesOpportunities"
+            fieldName="salesOpportunities"
+            formData={formData}
+            setFormData={setFormData}
+            t={t}
+            idPrefix="opportunities"
+          />
 
-        <CheckboxesBlock
-          label="HowAreYouGoingToPromote"
-          items={partnerPromote}
-          formData={formData}
-          setFormData={setFormData}
-          t={t}
-        />
+          <CheckboxesBlock
+            label="HowAreYouGoingToPromote"
+            items={partnerPromote}
+            formData={formData}
+            setFormData={setFormData}
+            t={t}
+          />
 
-        <YesNoRadioBlock
-          label="WouldYouNeedADemoPortal"
-          fieldName="demoPortal"
-          formData={formData}
-          setFormData={setFormData}
-          t={t}
-          idPrefix="demo-portal"
-        />
+          <YesNoRadioBlock
+            label="WouldYouNeedADemoPortal"
+            fieldName="demoPortal"
+            formData={formData}
+            setFormData={setFormData}
+            t={t}
+            idPrefix="demo-portal"
+          />
 
-        <YesNoRadioBlock
-          label="DoYouNeedAProductTraining"
-          fieldName="productTraining"
-          formData={formData}
-          setFormData={setFormData}
-          t={t}
-          idPrefix="product-training"
-        />
+          <YesNoRadioBlock
+            label="DoYouNeedAProductTraining"
+            fieldName="productTraining"
+            formData={formData}
+            setFormData={setFormData}
+            t={t}
+            idPrefix="product-training"
+          />
 
-        <YesNoRadioBlock
-          label="DoYouNeedASalesTraining"
-          fieldName="salesTraining"
-          formData={formData}
-          setFormData={setFormData}
-          t={t}
-          idPrefix="sales-training"
-        />
+          <YesNoRadioBlock
+            label="DoYouNeedASalesTraining"
+            fieldName="salesTraining"
+            formData={formData}
+            setFormData={setFormData}
+            t={t}
+            idPrefix="sales-training"
+          />
 
-        <CheckboxesBlock
-          label="WhereHaveYouFirstHeardAboutUs"
-          items={partnerInfoSource}
-          formData={formData}
-          setFormData={setFormData}
-          t={t}
-        />
+          <CheckboxesBlock
+            label="WhereHaveYouFirstHeardAboutUs"
+            items={partnerInfoSource}
+            formData={formData}
+            setFormData={setFormData}
+            t={t}
+          />
 
           <StyledPreTextAreaText
             label={t("PleaseIncludeAnyAdditionalInformation")}
           />
-        <TextArea
-          onChange={(e) => handleInputChange("comment", e.target.value)}
-          onBlur={() => {
-            setIsEmpty((prev) => ({
-              ...prev,
-              comment: formData.comment.length === 0,
-            }));
-          }}
-          value={formData.comment}
-          label={t("AdditionalInformation")}
-          rows={3}
-          fullWidth
-          status={formData.comment ? "success" : "default"}
-        />
-
-        <Checkbox
-          id="spam"
-          name="spam"
-          checked={formData.spam}
-          onChange={() => {
-            setFormData((prev) => ({
-              ...prev,
-              spam: !prev.spam,
-            }));
-          }}
-          label={t("IWantToSubscribeToTheOONewsletter")}
-        />
-
-        <StyledHeroHCaptchaWrapper>
-          <HCaptcha
-            ref={hCaptchaRef}
-            size={hCaptchaSize}
-            onVerify={handleHCaptchaChange}
-            onExpire={() => handleHCaptchaChange(null)}
+          <TextArea
+            onChange={(e) => handleInputChange("comment", e.target.value)}
+            onBlur={() => {
+              setIsEmpty((prev) => ({
+                ...prev,
+                comment: formData.comment.length === 0,
+              }));
+            }}
+            value={formData.comment}
+            label={t("AdditionalInformation")}
+            rows={3}
+            fullWidth
+            status={formData.comment ? "success" : "default"}
           />
 
-          <Text fontSize="12px" lineHeight="20px">
-            {byClickingText}
-          </Text>
-        </StyledHeroHCaptchaWrapper>
+          <Checkbox
+            id="spam"
+            name="spam"
+            checked={formData.spam}
+            onChange={() => {
+              setFormData((prev) => ({
+                ...prev,
+                spam: !prev.spam,
+              }));
+            }}
+            label={t("IWantToSubscribeToTheOONewsletter")}
+          />
 
-        <LoaderButton
-          onClick={onSubmit}
-          status={formStatus}
-          label={t("SubmitRequest")}
-          disabled={!isFormValid}
-        />
-      </StyledDownloadModalWrapper>
+          <StyledHeroHCaptchaWrapper>
+            <HCaptcha
+              ref={hCaptchaRef}
+              size={hCaptchaSize}
+              onVerify={handleHCaptchaChange}
+              onExpire={() => handleHCaptchaChange(null)}
+            />
 
-      {formStatus === "success" && (
-        <StyledDownloadModalText
-          textAlign="center"
-          size={3}
-          label={t2("successfullyRequestText")}
-        />
-      )}
-      {formStatus === "error" && (
-        <StyledDownloadModalText
-          textAlign="center"
-          size={3}
-          color="#cb0000"
-          label={t2("errorRequestText")}
-        />
-      )}
-    </StyledPRForm>
+            <Text fontSize="12px" lineHeight="20px">
+              {byClickingText}
+            </Text>
+          </StyledHeroHCaptchaWrapper>
 
-    <SuccessModal isOpen={isOpen} setIsOpen={setIsOpen} />
+          <LoaderButton
+            onClick={onSubmit}
+            status={formStatus}
+            label={t("SubmitRequest")}
+            disabled={!isFormValid}
+          />
+        </StyledDownloadModalWrapper>
+
+        {formStatus === "success" && (
+          <StyledDownloadModalText
+            textAlign="center"
+            size={3}
+            label={t2("successfullyRequestText")}
+          />
+        )}
+        {formStatus === "error" && (
+          <StyledDownloadModalText
+            textAlign="center"
+            size={3}
+            color="#cb0000"
+            label={t2("errorRequestText")}
+          />
+        )}
+      </StyledPRForm>
+
+      <SuccessModal isOpen={isOpen} setIsOpen={setIsOpen} />
     </>
   );
 };

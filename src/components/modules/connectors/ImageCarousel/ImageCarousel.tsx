@@ -14,7 +14,7 @@ const ImageCarousel = ({
   id,
   className,
   items,
-  imageWidth = 960,
+  imageWidth = 928,
   imageHeight = 532,
 }: IImageCarousel) => {
   return (

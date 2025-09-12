@@ -41,11 +41,12 @@ const StyledFeatureSwitcherBtn = styled.button<{ $active?: boolean }>`
   line-height: 26px;
   color: ${(props) => (props.$active ? "#ff6f3d" : "#333333")};
   width: 100%;
-  background-color: transparent;
+  background-color: ${(props) => (props.$active ? "#ffffff" : "transparent")};
   transition:
     color 0.2s,
     box-shadow 0.2s;
   cursor: pointer;
+  border-radius: 3px;
 
   ${(props) =>
     props.$active &&

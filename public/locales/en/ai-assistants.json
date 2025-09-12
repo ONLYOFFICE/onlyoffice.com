@@ -80,8 +80,8 @@
   "ConvertMacrosImg": "/images/templates/ai-assistants/ai-helpers/en/calwa_3.png",
   "ConvertMacrosImg2x": "/images/templates/ai-assistants/ai-helpers/en/calwa_3@2x.png",
 
-  "TryInCloud": "TRY IN CLOUD",
-  "TryInDesktop": "TRY IN DESKTOP",
+  "TryInCloud": "Try in cloud",
+  "TryInDesktop": "Try in desktop",
 
   "ConnectAnyAI": "Connect any AI assistant",
   "ConnectAnyAIText": "Connect any AI model, including a local one. Select a pre-installed provider from the list (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI) or connect your own.",
