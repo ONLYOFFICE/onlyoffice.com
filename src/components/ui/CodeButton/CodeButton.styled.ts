@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCodeButton = styled.button`
   border: none;
   border-radius: 9px;
   width: 52px;
   height: 40px;
-  background-image: url("/images/icons/code.svg");
+  background-image: url(${getAssetUrl('/images/icons/code.svg')});
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: center;

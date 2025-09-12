@@ -4,9 +4,10 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/templates/docspace-developer/hero/background.svg");
+  background-image: url(${getAssetUrl('/images/templates/docspace-developer/hero/background.svg')});
   background-position: 100% 0;
   background-repeat: no-repeat;
   background-size: auto;

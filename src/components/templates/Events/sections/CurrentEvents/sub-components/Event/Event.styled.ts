@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledEventHeading = styled(Heading)`
   margin-bottom: 32px;
 
@@ -34,7 +35,7 @@ const StyledEventDate = styled.div`
     left: 0;
     width: 12px;
     height: 12px;
-    background-image: url("/images/icons/clock.svg");
+    background-image: url(${getAssetUrl('/images/icons/clock.svg')});
     background-repeat: no-repeat;
     background-position: center;
     transform: translateY(-50%);

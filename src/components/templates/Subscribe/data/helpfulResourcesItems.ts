@@ -1,6 +1,7 @@
 import { ISubscribeItem } from "../sub-components/SubscribeItem";
 
-const iconSprite = "/images/templates/subscribe/icons.svg";
+import { getAssetUrl } from "@utils/getAssetUrl";
+const iconSprite = getAssetUrl("/images/templates/subscribe/icons.svg");
 
 export const helpfulResourcesItems: ISubscribeItem[] = [
   {

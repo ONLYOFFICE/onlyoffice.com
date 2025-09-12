@@ -1,5 +1,6 @@
 import { IFeatureItem } from "../sub-components/FeatureItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
   text: {
     label: React.ReactNode;
@@ -10,7 +11,7 @@ interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
 export const items: IFeatureItemExtended[] = [
   {
     icon: {
-      url: "/images/templates/contribute/contacts/icons.svg",
+      url: getAssetUrl("/images/templates/contribute/contacts/icons.svg"),
       positionX: "-566px",
       mobilePositionX: "-380px",
     },
@@ -34,7 +35,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/contribute/contacts/icons.svg",
+      url: getAssetUrl("/images/templates/contribute/contacts/icons.svg"),
       positionX: "-886px",
       mobilePositionX: "-592px",
     },
@@ -58,7 +59,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/contribute/contacts/icons.svg",
+      url: getAssetUrl("/images/templates/contribute/contacts/icons.svg"),
       positionX: "-732px",
       mobilePositionX: "-490px",
     },

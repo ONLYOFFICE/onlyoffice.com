@@ -3,9 +3,10 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/templates/affiliates/hero/hero_bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/affiliates/hero/hero_bg.svg')});
   background-repeat: no-repeat;
   background-position: calc(50% + 275px) 72px;
   background-color: #f5f5f5;
@@ -136,7 +137,7 @@ const StyledHeroListItem = styled.li`
 
 const StyledHeroImage = styled.div`
   padding-bottom: 75.71%;
-  background-image: url("/images/templates/affiliates/hero/hero_image.svg");
+  background-image: url(${getAssetUrl('/images/templates/affiliates/hero/hero_image.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

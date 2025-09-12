@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHowToStart = styled(Section)`
   scroll-margin-top: 72px;
+  border-top: 1px solid #E3E3E3;
 
   @media ${device.tablet} {
     scroll-margin-top: 64px;

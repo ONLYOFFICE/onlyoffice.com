@@ -1,8 +1,9 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IBlogCard[] = [
   {
-    imgUrl: "/images/templates/collaboration-rooms/learn-more/customers.png",
+    imgUrl: getAssetUrl("/images/templates/collaboration-rooms/learn-more/customers.png"),
     heading: { label: "CustomerTestimonial" },
     text: "HowKinderhausBerlinSharesAndCollaborates",
     links: [
@@ -13,7 +14,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/collaboration-rooms/learn-more/docspace.png",
+    imgUrl: getAssetUrl("/images/templates/collaboration-rooms/learn-more/docspace.png"),
     heading: { label: "YouTube" },
     text: "MasterONLYOFFICEDocSpace",
     links: [
@@ -25,7 +26,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: "/images/templates/collaboration-rooms/learn-more/helpcenter.png",
+    imgUrl: getAssetUrl("/images/templates/collaboration-rooms/learn-more/helpcenter.png"),
     heading: { label: "HelpCenter" },
     text: "ExploreTheToolsetAndCollaborativeFeatures",
     links: [

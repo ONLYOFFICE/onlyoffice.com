@@ -34,7 +34,7 @@
   "Feature7ImgUrl": "/images/templates/spreadsheet-editor/features/ru/screen7.png",
   "Feature7ImgUrl2x": "/images/templates/spreadsheet-editor/features/ru/screen7@2x.png",
   "Feature8Title": "ИИ-помощник",
-  "Feature8Desc": "Выполняйте задачи, связанные с пониманием или воспроизведением естественного языка, с помощью плагина ChatGPT. Получайте точные ответы на вопросы, быстро находите информацию, создавайте тексты и собственный код и многое другое прямо в редакторе.",
+  "Feature8Desc": "Выполняйте задачи, связанные с пониманием или воспроизведением естественного языка, с помощью плагина ChatGPT. Получайте точные ответы на вопросы, быстро находите информацию, создавайте тексты, собственный код и многое другое прямо в редакторе.",
   "Feature8ImgUrl": "/images/templates/spreadsheet-editor/features/ru/screen8.png",
   "Feature8ImgUrl2x": "/images/templates/spreadsheet-editor/features/ru/screen8@2x.png",
   "Feature9Title": "Добейтесь большего с помощью дополнений",
@@ -42,7 +42,7 @@
   "Feature9ImgUrl": "/images/templates/spreadsheet-editor/features/ru/screen9.png",
   "Feature9ImgUrl2x": "/images/templates/spreadsheet-editor/features/ru/screen9@2x.png",
 
-  "LearnMoreHeading": "Узнайте больше о Редакторе таблиц ONLYOFFICE",
+  "LearnMoreHeading": "Узнайте больше о редакторе таблиц ONLYOFFICE",
   "BlogDesc": "Все о предварительном просмотре перед печатью в электронных таблицах Excel",
   "TutorialsDesc": "Совместное редактирование электронных таблиц в режиме реального времени",
   "HintsDesc": "Поддерживаемые форматы электронных таблиц",

@@ -7,6 +7,7 @@ import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { WatchVideo } from "@src/components/widgets/WatchVideo";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const HowToStart = () => {
   const { t } = useTranslation("office-for-alfresco");
 
@@ -42,7 +43,7 @@ const HowToStart = () => {
         <StyledHowToStartInfo>
           <WatchVideo
             heading={t("HowToConnect")}
-            videoImgUrl="/images/templates/office-for-alfresco/how-to-start/watch-video.jpg"
+            videoImgUrl={getAssetUrl("/images/templates/office-for-alfresco/how-to-start/watch-video.jpg")}
             videoUrl="https://www.youtube.com/embed/RyQA4gYi6e4?si=cQvEq-0Kg4sF0Jb5"
           />
         </StyledHowToStartInfo>

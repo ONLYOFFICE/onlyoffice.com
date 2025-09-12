@@ -12,6 +12,7 @@ import {
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Platform = () => {
   const { t } = useTranslation("workspace-enterprise");
@@ -37,9 +38,9 @@ const Platform = () => {
                     {t("LearnMore")}
                   </Link>
                 )}
-              </PlatformItem>
+              </PlatformItem> 
 
-              <PlatformImage $image={t(item.image)} $image2x={t(item.image2x)} $width={item.width} $height={item.height} />
+              <PlatformImage $image={getAssetUrl(t(item.image))} $image2x={getAssetUrl(t(item.image2x))} $width={item.width} $height={item.height} />
             </div>
           ))}
         </StyledPlatformItems>

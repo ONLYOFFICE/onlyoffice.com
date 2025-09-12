@@ -3,11 +3,12 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroImage = styled.div`
   width: 640px;
   height: 354px;
   margin: 0 auto 32px;
-  background-image: url("/images/templates/installation-success-desktop/hero/hero_image.svg");
+  background-image: url(${getAssetUrl('/images/templates/installation-success-desktop/hero/hero_image.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -74,7 +75,7 @@ const StyledHeroFeatureItem = styled(Text)<{ iconPositionX: string }>`
     transform: translateX(-50%);
     width: 64px;
     height: 64px;
-    background-image: url("/images/templates/installation-success-desktop/hero/icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/installation-success-desktop/hero/icons.svg')});
     background-repeat: no-repeat;
     background-position: ${(props) => props.iconPositionX} center;
   }

@@ -3,6 +3,7 @@ import { Container } from "@src/components/ui/Container";
 import { device } from "@src/utils/device";
 
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContainer = styled(Container)`
   text-align: center;
 `;
@@ -28,7 +29,7 @@ const StyledConnector = styled.div<{
 }>`
   display: block;
   height: 40px;
-  background-image: url(/images/templates/solutions/connectors/connectors.svg);
+  background-image: url(${getAssetUrl('/images/templates/solutions/connectors/connectors.svg')});
   background-position-x: ${({ $backgroundPositionX }) =>
     $backgroundPositionX}px;
   filter: grayscale(100%);

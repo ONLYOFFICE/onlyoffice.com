@@ -20,6 +20,7 @@ const RoomsTabs = () => {
             href={url}
             label={t(label)}
             $active={router.pathname === url}
+            textUnderline={false}
           />
         </StyledRoomsTab>
       ))}

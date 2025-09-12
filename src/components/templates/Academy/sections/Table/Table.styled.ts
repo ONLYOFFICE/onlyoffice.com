@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const TableWrapper = styled.div`
   overflow: hidden;
   border-radius: 6px;
@@ -152,7 +153,7 @@ const TableCell = styled.td<{ $icon?: string }>`
     props.$icon &&
     `
       &::after {
-        background-image: url("/images/templates/academy/table/${props.$icon}.svg");
+        background-image: url(${getAssetUrl(`/images/templates/academy/table/${props.$icon}.svg`)});
         background-repeat: no-repeat;
         content: "";
         background-position: center;

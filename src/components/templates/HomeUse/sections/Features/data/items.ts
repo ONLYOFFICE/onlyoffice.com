@@ -1,28 +1,29 @@
 import { IHomeUseFeatureImageItem } from "@src/components/modules/home-use/HomeUseFeatureImageItem.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IHomeUseFeatureImageItem[] = [
   {
     heading: "SafePersonalSpace",
     text: "ReplacementForGoogleDocsSheetsSlides",
     image: {
-      url: "/images/templates/home-use/features/huf_04.svg",
-      url2x: "/images/templates/home-use/features/huf_04.svg",
+      url: getAssetUrl("/images/templates/home-use/features/huf_04.svg"),
+      url2x: getAssetUrl("/images/templates/home-use/features/huf_04.svg"),
       height: 346,
       width: 412,
     },
     logos: [
       {
-        url: "/images/templates/home-use/features/google_docs.svg",
+        url: getAssetUrl("/images/templates/home-use/features/google_docs.svg"),
         width: 125,
         height: 31,
       },
       {
-        url: "/images/templates/home-use/features/office.svg",
+        url: getAssetUrl("/images/templates/home-use/features/office.svg"),
         width: 88,
         height: 31,
       },
       {
-        url: "/images/templates/home-use/features/zoho_docs.svg",
+        url: getAssetUrl("/images/templates/home-use/features/zoho_docs.svg"),
         width: 87,
         height: 31,
       },
@@ -52,24 +53,24 @@ export const items: IHomeUseFeatureImageItem[] = [
     heading: "DesktopEditorsForWorkStudyCreativeProjects",
     text: "ReplacementForMicrosoftOfficeWPSCalligraOffice",
     image: {
-      url: "/images/templates/home-use/features/huf_01.svg",
-      url2x: "/images/templates/home-use/features/huf_01.svg",
+      url: getAssetUrl("/images/templates/home-use/features/huf_01.svg"),
+      url2x: getAssetUrl("/images/templates/home-use/features/huf_01.svg"),
       height: 390,
       width: 340,
     },
     logos: [
       {
-        url: "/images/templates/home-use/features/office.svg",
+        url: getAssetUrl("/images/templates/home-use/features/office.svg"),
         width: 88,
         height: 31,
       },
       {
-        url: "/images/templates/home-use/features/wps.svg",
+        url: getAssetUrl("/images/templates/home-use/features/wps.svg"),
         width: 111,
         height: 31,
       },
       {
-        url: "/images/templates/home-use/features/aliata.svg",
+        url: getAssetUrl("/images/templates/home-use/features/aliata.svg"),
         width: 67,
         height: 41,
       },
@@ -97,24 +98,24 @@ export const items: IHomeUseFeatureImageItem[] = [
     heading: "SelfHostedEditorsToWorkOnDocsPrivately",
     text: "ReplacementForGoogleDocsSheetsSlidesMSOfficeOnlineZohoDocs",
     image: {
-      url: "/images/templates/home-use/features/huf_02.svg",
-      url2x: "/images/templates/home-use/features/huf_02.svg",
+      url: getAssetUrl("/images/templates/home-use/features/huf_02.svg"),
+      url2x: getAssetUrl("/images/templates/home-use/features/huf_02.svg"),
       height: 384,
       width: 340,
     },
     logos: [
       {
-        url: "/images/templates/home-use/features/google_docs.svg",
+        url: getAssetUrl("/images/templates/home-use/features/google_docs.svg"),
         width: 125,
         height: 31,
       },
       {
-        url: "/images/templates/home-use/features/office.svg",
+        url: getAssetUrl("/images/templates/home-use/features/office.svg"),
         width: 88,
         height: 31,
       },
       {
-        url: "/images/templates/home-use/features/zoho_docs.svg",
+        url: getAssetUrl("/images/templates/home-use/features/zoho_docs.svg"),
         width: 87,
         height: 31,
       },
@@ -141,19 +142,19 @@ export const items: IHomeUseFeatureImageItem[] = [
     heading: "SelfHostedProductivityAppsForFamilyProjectsAndCreativeWork",
     text: "ReplacementForGSuiteOffice365",
     image: {
-      url: "/images/templates/home-use/features/huf_03.svg",
-      url2x: "/images/templates/home-use/features/huf_03.svg",
+      url: getAssetUrl("/images/templates/home-use/features/huf_03.svg"),
+      url2x: getAssetUrl("/images/templates/home-use/features/huf_03.svg"),
       height: 419,
       width: 359,
     },
     logos: [
       {
-        url: "/images/templates/home-use/features/gsuite.svg",
+        url: getAssetUrl("/images/templates/home-use/features/gsuite.svg"),
         width: 81,
         height: 21,
       },
       {
-        url: "/images/templates/home-use/features/office365.svg",
+        url: getAssetUrl("/images/templates/home-use/features/office365.svg"),
         width: 110,
         height: 31,
       },
@@ -184,29 +185,29 @@ export const items: IHomeUseFeatureImageItem[] = [
     heading: "FreeAppsToWorkWithDocsOnDevices",
     text: "ReplacementForMobileMSOfficeGoogleDocsQuickOfficePages",
     image: {
-      url: "/images/templates/home-use/features/huf_05.svg",
-      url2x: "/images/templates/home-use/features/huf_05.svg",
+      url: getAssetUrl("/images/templates/home-use/features/huf_05.svg"),
+      url2x: getAssetUrl("/images/templates/home-use/features/huf_05.svg"),
       height: 386,
       width: 357,
     },
     logos: [
       {
-        url: "/images/templates/home-use/features/office.svg",
+        url: getAssetUrl("/images/templates/home-use/features/office.svg"),
         width: 88,
         height: 31,
       },
       {
-        url: "/images/templates/home-use/features/google_docs.svg",
+        url: getAssetUrl("/images/templates/home-use/features/google_docs.svg"),
         width: 125,
         height: 31,
       },
       {
-        url: "/images/templates/home-use/features/quickoffice.svg",
+        url: getAssetUrl("/images/templates/home-use/features/quickoffice.svg"),
         width: 114,
         height: 31,
       },
       {
-        url: "/images/templates/home-use/features/pages.svg",
+        url: getAssetUrl("/images/templates/home-use/features/pages.svg"),
         width: 72,
         height: 31,
       },

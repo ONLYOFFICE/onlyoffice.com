@@ -107,8 +107,9 @@ const StyledStepCarouselBox = styled.div<{ $activeTab?: boolean }>`
 
 const StyledStepCarouselSlide = styled.div`
   display: grid;
-  grid-template-columns: minmax(200px, 448px) minmax(200px, 480px);
+  grid-template-columns: minmax(200px, 448px) minmax(200px, 448px);
   column-gap: 32px;
+  justify-content: center;
 
   @media ${device.tablet} {
     grid-template-columns: initial;

@@ -4,9 +4,10 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSection = styled(Section)`
     background-color: #f9f9f9;
-    background-image: url("/images/templates/document-builder/hero/docbuilder_image.svg");
+    background-image: url(${getAssetUrl('/images/templates/document-builder/hero/docbuilder_image.svg')});
     background-repeat: no-repeat;
     background-position-x: 50%;
     background-position-y: calc(100% + 10px);

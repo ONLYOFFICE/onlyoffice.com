@@ -1,0 +1,30 @@
+{
+  "PageTitle": "Analiza teksta i brojanje reči | ONLYOFFICE",
+  "PageDescription": "Prikažite broj reči, karaktera i pasusa u ONLYOFFICE uređivaču dokumenata. Optimizujte veličinu teksta za vaše dokumente, vizuelne materijale, biltene i medije.",
+  "Header": "Analiza i ispravka teksta",
+  "SubHeader": "Kreirajte bogat i besprekorno čist sadržaj",
+
+  "HeroImgUrl": "/images/templates/text-analysis-and-word-count/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/text-analysis-and-word-count/hero/hero@2x.png",
+
+  "Feature1Title": "Brojanje reči u dokumentima",
+  "Feature1Desc": "Prikažite broj reči, karaktera i pasusa da biste optimizovali veličinu teksta za vaše dokumente, vizuelne materijale, biltene i medije.",
+
+  "Feature2Title": "Pišite na bilo kom jeziku",
+  "Feature2Desc": "Primenite preko 250 jezičkih parametara na dokumente, pasuse i reči. Pronađite pravopisne greške i tipografske greške sa ugrađenim proveravačem pravopisa, LanguageTool ili Grammalecte. Ispravite reči pomoću pametnih predloga. Prevedite dokumente koristeći Google Translate, DeepL ili Apertium.",
+
+  "Feature3Title": "Pretraži, zameni i automatski ispravi",
+  "Feature3Desc": "Odmah pronađite bilo koju reč u dokumentu i brzo zamenite odabrane reči u velikim tekstovima. Omogućite automatsku autocorrect funkciju za tekstove, simbole i jednačine. Koristite Tipograf za automatsku ispravku pravopisa i tipografije.",
+
+  "Feature4Title": "Pronađite sinonime i antonime",
+  "Feature4Desc": "Pronađite savršene reči za vaš tekst pomoću Tezaurusa. Pretražujte sinonime i antonime i brzo ih zamenite u tekstovima da biste efikasno kreirali bogat i jedinstven sadržaj.",
+
+  "Feature1ImgUrl": "/images/templates/text-analysis-and-word-count/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/text-analysis-and-word-count/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/text-analysis-and-word-count/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/text-analysis-and-word-count/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/text-analysis-and-word-count/features/pic4@2x.png"
+}

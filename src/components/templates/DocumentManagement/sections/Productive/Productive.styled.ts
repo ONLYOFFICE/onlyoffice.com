@@ -2,6 +2,7 @@ import { Link } from "@src/components/ui/Link";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledProductiveWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -27,7 +28,7 @@ const StyledProductiveIcon = styled.div<{
   width: 452px;
   height: 176px;
   margin-left: -50px;
-  background-image: url("/images/templates/document-management/productive/integrations.svg");
+  background-image: url(${getAssetUrl('/images/templates/document-management/productive/integrations.svg')});
   background-repeat: no-repeat;
   background-position: ${({ $positionX }) => $positionX} center;
 

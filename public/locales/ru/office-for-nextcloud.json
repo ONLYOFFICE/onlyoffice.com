@@ -1,7 +1,7 @@
 {
-  "PageTitle": "Онлайн офис для Nextcloud",
+  "PageTitle": "Онлайн-офис для Nextcloud",
   "PageDescription": "Работайте над офисными документами в Nextcloud с помощью ONLYOFFICE Docs",
-  "OnlineOfficeForNextcloud": "Онлайн офис для Nextcloud",
+  "OnlineOfficeForNextcloud": "Онлайн-офис для Nextcloud",
   "WorkOnOfficeDocuments": "Работайте над офисными документами в Nextcloud с помощью ONLYOFFICE Docs",
   "GetItNow": "Получить сейчас",
   "RequestFreeDemo": "ЗАПРОСИТЬ БЕСПЛАТНУЮ ДЕМО-ВЕРСИЮ",
@@ -40,7 +40,7 @@
   "FeaturesFree": "Версии: бесплатная Community и <0>масштабируемая Enterprise</0>. <0>Бесплатный пробный период – 30 дней</0>.",
   "FeaturesIntegration": "Интеграция с <0>десктопным</0> и мобильным приложениями <0>Nextcloud</0>",
   "HowToStart": "Как начать",
-  "HowToStartStep1": "Разверните ONLYOFFICE Docs<0> на собственном сервере или зарегистрируйтесь на </0>ONLYOFFICE Docs Cloud.",
+  "HowToStartStep1": "Разверните <0>ONLYOFFICE Docs</0> на собственном сервере или зарегистрируйтесь в <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Получите приложение для интеграции в <0>Nextcloud App Store</0>.",
   "HowToStartStep3": "Настройте приложение для интеграции.",
   "HowToConnect": "Настройка коннектора ONLYOFFICE для Nextcloud",

@@ -5,12 +5,13 @@ import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSupport = styled(Section)`
   background: linear-gradient(136deg, #ffc671 0%, #ff7541 59.38%, #ff6f3d 100%);
 `;
 
 const StyledSupportBg = styled.div`
-  background-image: url("/images/templates/docspace-enterprise/support/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/docspace-enterprise/support/bg.svg')});
   background-position-x: 50%;
   background-repeat: no-repeat;
   background-size: 1396px auto;
@@ -35,7 +36,7 @@ const StyledSupportContainer = styled(Container)`
 const StyledSupportHeading = styled(Heading)`
   &::before {
     content: "";
-    background-image: url("/images/templates/docspace-enterprise/support/logo.svg");
+    background-image: url(${getAssetUrl('/images/templates/docspace-enterprise/support/logo.svg')});
     background-repeat: no-repeat;
     display: block;
     margin: 0 auto 24px;
@@ -76,7 +77,7 @@ const StyledSupportList = styled.div`
       background-color: transparent;
       border: 1px solid #ffffff;
       color: #fff;
-      border-radius: 3px;
+      border-radius: 6px;
     }
   }
 

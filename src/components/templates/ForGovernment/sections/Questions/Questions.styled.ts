@@ -4,6 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledQuestionsContainer = styled(Container)`
   position: relative;
   z-index: 0;
@@ -15,7 +16,7 @@ const StyledQuestionsContainer = styled(Container)`
     right: 39px;
     width: 246px;
     height: 215px;
-    background-image: url("/images/templates/for-government/questions/mail.svg");
+    background-image: url(${getAssetUrl('/images/templates/for-government/questions/mail.svg')});
     background-repeat: no-repeat;
 
     @media ${device.tablet} {
@@ -46,7 +47,7 @@ const StyledQuestionsWrapper = styled.div`
     left: 0;
     width: 64px;
     height: 64px;
-    background-image: url("/images/templates/for-government/questions/contact_us.svg");
+    background-image: url(${getAssetUrl('/images/templates/for-government/questions/contact_us.svg')});
     background-repeat: no-repeat;
 
     @media ${device.mobile} {

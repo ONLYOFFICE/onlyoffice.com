@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledLearnMoreItems,
   StyledLearnMoreLogos,
@@ -26,7 +27,7 @@ const LearnMore = () => {
             <BlogCard
               className="blog-card"
               key={index}
-              imgUrl={t(item.imgUrl)}
+              imgUrl={getAssetUrl(t(item.imgUrl))}
               heading={{
                 href: t(item.heading.href ?? ""),
                 label: t(item.heading.label),

@@ -2,6 +2,7 @@ import { Link } from "@src/components/ui/Link";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCompatibilityTop = styled.div`
   max-width: 817px;
   margin: 0 auto 40px;
@@ -32,9 +33,9 @@ const StyledCompatibilityTopTextLink = styled(Link)<{ $type: "docx" | "xlsx" }>`
     margin: 0 5px;
     background-image: ${({ $type }) =>
       $type === "docx"
-        ? "url('/images/templates/document-editor-comparison/compatibility/file_docx.svg')"
+        ? `url(${getAssetUrl('/images/templates/document-editor-comparison/compatibility/file_docx.svg')})`
         : $type === "xlsx"
-        ? "url('/images/templates/document-editor-comparison/compatibility/file_xlsx.svg')"
+        ? `url(${getAssetUrl('/images/templates/document-editor-comparison/compatibility/file_xlsx.svg')})`
         : undefined};
   }
 `;

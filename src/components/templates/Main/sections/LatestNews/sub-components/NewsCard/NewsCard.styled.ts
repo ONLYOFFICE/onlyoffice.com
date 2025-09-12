@@ -4,6 +4,7 @@ import { INewsCard } from "./NewsCard.types";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledNewsCard = styled.div`
   display: grid;
   row-gap: 16px;
@@ -64,7 +65,7 @@ const StyledNewsCardInfoItem = styled.div<{
     props.$isWebinar &&
     css`
       &::before {
-        background-image: url("/images/icons/workshop.svg");
+        background-image: url(${getAssetUrl('/images/icons/workshop.svg')});
       }
     `}
 
@@ -72,7 +73,7 @@ const StyledNewsCardInfoItem = styled.div<{
     props.$isDate &&
     css`
       &::before {
-        background-image: url("/images/icons/clock.svg");
+        background-image: url(${getAssetUrl('/images/icons/clock.svg')});
       }
     `}
 
@@ -80,7 +81,7 @@ const StyledNewsCardInfoItem = styled.div<{
     props.$isLocation &&
     css`
       &::before {
-        background-image: url("/images/icons/location.svg");
+        background-image: url(${getAssetUrl('/images/icons/location.svg')});
         background-position: center;
       }
     `}

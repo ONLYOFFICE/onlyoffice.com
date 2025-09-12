@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledExperienceWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -50,7 +51,7 @@ const StyledExperienceSubtitleWrapper = styled.div`
     content: "";
     width: 40px;
     height: 40px;
-    background-image: url("/images/icons/wifi-offline.svg");
+    background-image: url(${getAssetUrl('/images/icons/wifi-offline.svg')});
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -67,7 +68,7 @@ const StyledExperienceRight = styled.div`
   width: 504px;
   height: 290px;
   flex-shrink: 0;
-  background-image: url("/images/templates/docspace-enterprise/experience/experience-image.svg");
+  background-image: url(${getAssetUrl('/images/templates/docspace-enterprise/experience/experience-image.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 

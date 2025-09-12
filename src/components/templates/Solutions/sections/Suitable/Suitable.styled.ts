@@ -4,8 +4,9 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSection = styled(Section)`
-  background-image: url("/images/templates/solutions/dark-bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/solutions/dark-bg.svg')});
   background-repeat: no-repeat;
   background-size: 2443px auto;
   background-position: 72%;
@@ -66,7 +67,7 @@ const IndustryItem = styled(Link)<{
     left: 0;
     width: 36px;
     height: 36px;
-    background-image: url("/images/templates/solutions/icons.svg");
+    background-image: url(${getAssetUrl('/images/templates/solutions/icons.svg')});
     background-repeat: no-repeat;
     background-size: auto 36px;
     background-position: ${(props) => props.$positionX}px center;

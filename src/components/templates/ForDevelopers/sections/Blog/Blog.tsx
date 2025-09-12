@@ -5,6 +5,7 @@ import { Container } from "@src/components/ui/Container";
 import { BlogCard } from "@src/components/widgets/BlogCard";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Blog = () => {
   const { t } = useTranslation("for-developers");
 
@@ -20,7 +21,7 @@ const Blog = () => {
             <BlogCard
               className="blog-card"
               key={index}
-              imgUrl={t(item.imgUrl)}
+              imgUrl={getAssetUrl(t(item.imgUrl))}
               heading={{
                 label: t(item.heading.label),
               }}

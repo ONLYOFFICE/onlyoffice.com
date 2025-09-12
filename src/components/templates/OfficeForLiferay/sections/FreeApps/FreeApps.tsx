@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledFreeAppsHeading,
   StyledSection,
@@ -24,7 +25,7 @@ const FreeApps = () => {
 
         <StyledSolutionCard
           large
-          imgUrl="/images/templates/office-for-liferay/free-apps/desktop.svg"
+          imgUrl={getAssetUrl("/images/templates/office-for-liferay/free-apps/desktop.svg")}
           text={
             <Trans
               t={t}

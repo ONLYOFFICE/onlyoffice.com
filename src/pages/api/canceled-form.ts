@@ -117,7 +117,7 @@ export default async function handler(
         : [process.env.FEEDBACK_EMAIL!, process.env.SUPPORT_EMAIL!];
 
     await transporter.sendMail({
-      from: process.env.SALES_EMAIL!,
+      from: `"Cloud Office Applications" <${process.env.TRANSPORTER_EMAIL_AUTH_USER}>`,
       to,
       subject: `Request ${from}`,
       html: MailTemplate({

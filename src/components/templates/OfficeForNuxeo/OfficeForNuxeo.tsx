@@ -10,8 +10,8 @@ const OfficeForNuxeoTemplate = ({ locale }: ILocale) => {
   return (
     <>
       <Hero />
-      <Features locale={locale} />
       <MarketplaceConnector />
+      <Features locale={locale} />
       <HowToStart />
       <ConnectApp />
       <OtherConnectors />

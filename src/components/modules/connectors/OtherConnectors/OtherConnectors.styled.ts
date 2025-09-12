@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledOtherConnectors = styled(Section)`
   border-top: 1px solid #e2e2e2;
   background-color: #f9f9f9;
@@ -91,7 +92,7 @@ const connectorStyles: Record<
 const StyledOtherConnectorsItemImg = styled.span<{ $id: string }>`
   width: ${({ $id }) => connectorStyles[$id]?.width || 48}px;
   height: 28px;
-  background-image: url("/images/modules/other-connectors/connectors.svg");
+  background-image: url(${getAssetUrl('/images/modules/other-connectors/connectors.svg')});
   background-repeat: no-repeat;
   background-position-x: ${({ $id }) =>
     connectorStyles[$id]?.backgroundPositionX || 0}px;
@@ -119,6 +120,7 @@ const StyledOtherConnectorsButton = styled(Button)<{
   $active?: boolean;
   $disabled?: boolean;
 }>`
+  min-height: 46px;
   padding: 10px 18px;
   font-size: 16px;
   line-height: 24px;

@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHero,
   StyledHeroWrapper,
@@ -32,7 +33,7 @@ const Hero = () => {
           <StyledHeroLogo />
 
           <StyledHeroHeader>
-            <Heading level={1} size={1}>
+            <Heading level={1} size={2}>
               <Trans
                 t={t}
                 i18nKey="OnlineOfficeForConnector"
@@ -60,7 +61,7 @@ const Hero = () => {
         imageHeight={576}
         items={items.map((item) => ({
           image: {
-            url: t(item.image.url),
+            url: getAssetUrl(t(item.image.url)),
             url2x: item.image.url2x ? t(item.image.url2x) : undefined,
           },
         }))}

@@ -2,8 +2,9 @@ import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
-  background-image: url("/images/templates/solutions/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/solutions/hero/bg.svg')});
   background-repeat: no-repeat;
   background-size: 2464px auto;
   background-position-y: 0;
@@ -69,7 +70,7 @@ const StyledHeroContent = styled.div`
 
 const StyledHeroImage = styled.div`
   padding-bottom: 100%;
-  background-image: url("/images/templates/solutions/hero/main.svg");
+  background-image: url(${getAssetUrl('/images/templates/solutions/hero/main.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
