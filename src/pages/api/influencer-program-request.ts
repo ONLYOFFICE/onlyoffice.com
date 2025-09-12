@@ -39,7 +39,7 @@ export default async function handler(
     const transporter = emailTransporter();
 
     await transporter.sendMail({
-      from: process.env.SALES_EMAIL!,
+      from: `"Cloud Office Applications" <${process.env.TRANSPORTER_EMAIL_AUTH_USER}>`,
       to: process.env.SALES_EMAIL!,
       subject: `Request ${fromPage}`,
       html: InfluencerProgram({
