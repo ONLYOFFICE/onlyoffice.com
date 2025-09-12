@@ -11,11 +11,11 @@
   "DesktopUninstalledPageTitle": "ONLYOFFICE デスクトップ・エディター がアンインストールされました | ONLYOFFICE",
   "DesktopUninstalledPageDescription": "ONLYOFFICE デスクトップ・エディター をアンインストールすることにした理由は何ですか",
 
-  "CanceledHeroTitle": "ご利用いただきありがとうございました。",
+  "CanceledHeroTitle": "ご利用いただきありがとうございました！",
 
-  "WhyDidYouDecideToUninstallOnlyoffice": "ONLYOFFICEをアンインストールすることにしたのはなぜでしょうか？",
-  "SelectAllThatApply": "技術的な問題が発生しました",
-  "ExperiencedTechnicalProblems": "技術的な問題が発生しました",
+  "WhyDidYouDecideToUninstallOnlyoffice": "もしよろしければ、ONLYOFFICEをアンインストールした理由をお聞かせください。",
+  "SelectAllThatApply": "当てはまるものをすべて選択してください",
+"ExperiencedTechnicalProblems": "技術的な問題が発生しました",
   "NeedMoreStorageSpace": "より多くのストレージスペースが必要です",
   "DidntFindNecessaryFeatures": "必要な機能を見つけませんでした",
   "PrivacyConcernsLegalViolation": "プライバシーの問題・法的違反",
