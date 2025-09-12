@@ -38,7 +38,7 @@
   "EncryptDataAtRestAndTransit": "Шифруйте хранящиеся и передаваемые данные",
   "EncryptDataP1": "Шифрование хранящихся и передаваемых данных не позволяет злоумышленникам расшифровать данные о пациентах, даже если они получат к ним доступ.",
   "EncryptDataP2": "ONLYOFFICE использует ведущий стандарт шифрования AES-256 для защиты хранящихся конфиденциальных данных. В процессе передачи данные защищены благодаря использованию протокола HTTPS с современным алгоритмом шифрования TLS.",
-  "EncryptDataP3": "ONLYOFFICE Docs Enterprise Edition включает в себя Приватные комнаты, где каждый введенный символ шифруется с помощью стандарта AES-256, даже во время совместного редактирования в реальном времени.",
+  "EncryptDataP3": "ONLYOFFICE Docs Enterprise Edition включает в себя Приватные комнаты, где каждый введенный символ шифруется с помощью стандарта AES-256 даже во время совместного редактирования в реальном времени.",
   "EncryptDataImgUrl": "/images/templates/healthcare/screens/first/ru/index_1_@x1.ru.png",
   "EncryptDataImgUrl2x": "/images/templates/healthcare/screens/first/ru/index_1_@x2.ru.png",
   "LearnHowItWorks": "Узнать, как это работает",
