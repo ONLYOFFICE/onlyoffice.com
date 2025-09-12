@@ -36,6 +36,8 @@ import {
   StyledHeroStatusText,
   StyledHeroPopupCloseButton,
   StyledHeroPopupWrapper,
+  StyledHeroSubtitleText,
+  StyledHeroSubtitleWrapper,
 } from "./Hero.styled";
 
 const Hero = () => {
@@ -192,14 +194,19 @@ const Hero = () => {
               heading={t("WhichModulesDoYouUse")}
               isCheckBoxBlock={true}
             />
-            <QuestionBlock
-              formData={formData}
-              setFormData={setFormData}
-              items={issuesItems}
-              name="issues"
-              heading={t("DidYouHaveAnyIssues")}
-              columns={3}
-            />
+            <StyledHeroSubtitleWrapper>
+              <StyledHeroSubtitleText
+                label={t("HaveYouAlreadyTried")}
+              />
+              <QuestionBlock
+                formData={formData}
+                setFormData={setFormData}
+                items={issuesItems}
+                name="issues"
+                heading={t("DidYouHaveAnyIssues")}
+                columns={3}
+              />
+            </StyledHeroSubtitleWrapper>
             <QuestionBlock
               formData={formData}
               setFormData={setFormData}

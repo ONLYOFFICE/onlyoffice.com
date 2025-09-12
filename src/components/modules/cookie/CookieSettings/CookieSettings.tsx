@@ -13,7 +13,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
 import { Text } from "@src/components/ui/Text";
 import { IConsentData } from "../CookieBanner/CookieBanner";
-import { setConsentCookie, applyConsent } from "@src/utils/useUtmCookies";
+import { setConsentCookie } from "@src/utils/useUtmCookies";
 import { ICookieSettings } from "./CookieSettings.types";
 
 const CookieSettings = ({
@@ -47,7 +47,6 @@ const CookieSettings = ({
   const confirmChanges = () => {
     setConsentCookie(checkedItems);
     setConsent(checkedItems);
-    applyConsent(checkedItems);
     setShowSettings(false);
     setShowFab(true);
   };
