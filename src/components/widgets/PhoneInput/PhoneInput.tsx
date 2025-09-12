@@ -6,6 +6,7 @@ import {
   useEffect,
 } from "react";
 import { useTranslation } from "next-i18next";
+import parse from "html-react-parser";
 import {
   StyledPhoneInput,
   StyledPhoneInputLeftSide,
@@ -20,7 +21,7 @@ import { Input } from "@src/components/ui/Input";
 import { countries } from "@src/config/data/countries";
 
 const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
-  ({ id, className, status, required, onChange, onBlur }, ref) => {
+  ({ id, className, required, onChange, onBlur }, ref) => {
     const { t } = useTranslation("PhoneInput");
     const IPGeolocationCountry = useIPGeolocationStore(
       (state) => state.IPGeolocationInfo.country,
@@ -32,6 +33,7 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
 
     const [isOpen, setIsOpen] = useState(false);
     const [selectedKey, setSelectedCountry] = useState("US");
+    const [touched, setTouched] = useState(false);
 
     const currentValue = countries.find(
       (item) => item.country === selectedKey,
@@ -39,7 +41,9 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
       country: "US",
       countryCode: "+1",
     };
-    const [inputValue, setInputValue] = useState(currentValue.countryCode);
+
+    const prefix = currentValue.countryCode;
+    const [inputValue, setInputValue] = useState(prefix);
 
     useEffect(() => {
       if (countriesRef.current && selectedRef.current) {
@@ -56,8 +60,15 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
     useEffect(() => {
       const selected = countries.find((item) => item.country === selectedKey);
       if (selected) {
-        setInputValue(selected.countryCode);
+        setInputValue(
+          selected.countryCode +
+            inputValue.slice(
+              inputValue.indexOf(selected.countryCode) +
+                selected.countryCode.length,
+            ),
+        );
       }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedKey]);
 
     useImperativeHandle(ref, () => ({
@@ -66,6 +77,7 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
           (item) => item.country === selectedKey,
         ) || { countryCode: "+1" };
         setInputValue(defaultCountry.countryCode);
+        setTouched(false);
       },
     }));
 
@@ -89,13 +101,31 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
     }, [IPGeolocationCountry]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      const onlyNumbers = e.target.value.replace(/[^\d+]/g, "");
+      let value = e.target.value;
+
+      if (!value.startsWith(prefix)) {
+        value = prefix + value.replace(/^\+?\d*/, "");
+      }
+
+      const onlyNumbers =
+        prefix + value.slice(prefix.length).replace(/[^\d]/g, "");
+
       setInputValue(onlyNumbers);
       onChange?.({
         ...e,
         target: { ...e.target, value: onlyNumbers },
       } as React.ChangeEvent<HTMLInputElement>);
     };
+
+    const status = touched
+      ? required
+        ? inputValue.length === prefix.length
+          ? "error"
+          : "success"
+        : inputValue.length > prefix.length
+          ? "success"
+          : "default"
+      : "default";
 
     return (
       <StyledPhoneInput>
@@ -105,13 +135,15 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
           value={inputValue}
           label={t("Phone")}
           maxLength={50}
-          pattern="^\+?\d{1,4}\s{0,}(\(\d{1,4}\))?\s{0,}(\d{1,5}\s{0,}-?){1,4}$"
           required={required}
           active
           status={status}
           onFocus={() => setIsOpen(false)}
           onChange={handleChange}
-          onBlur={onBlur}
+          onBlur={(e) => {
+            setTouched(true);
+            onBlur?.(e);
+          }}
           caption={t("PhoneIsEmpty")}
           leftSide={
             <StyledPhoneInputLeftSide
@@ -141,7 +173,7 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
                     onClick={() => {
                       setSelectedCountry(item.country);
                       setInputValue(
-                        `${item.countryCode} ${inputValue.replace(/^\+?\d*\s*/, "")}`,
+                        item.countryCode + inputValue.slice(prefix.length),
                       );
                       setIsOpen(false);
                     }}
@@ -150,7 +182,7 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
                       $isCountriesFlag
                       className={item.country}
                     />
-                    {item.title}
+                    {parse(item.title)} {item.countryCode}
                   </StyledPhoneInputContriesItem>
                 </li>
               ))}
