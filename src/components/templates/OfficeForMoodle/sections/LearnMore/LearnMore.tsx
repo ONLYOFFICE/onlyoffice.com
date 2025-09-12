@@ -27,7 +27,7 @@ const LearnMore = () => {
               imgUrl={item.imgUrl}
               heading={{ label: t(item.heading.label) }}
               links={item.links?.map((item) => ({
-                href: t(item.href),
+                href: t(item.href, { defaultValue: item.href }),
                 label: t(item.label),
                 isExternal: item.isExternal,
               }))}
