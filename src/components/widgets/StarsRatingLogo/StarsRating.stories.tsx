@@ -2,6 +2,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { StarsRatingLogo } from "./StarsRatingLogo";
 import { IStarsRatingLogo } from "./StarsRatingLogo.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Widgets/StarsRatingLogo",
   component: StarsRatingLogo,
@@ -45,7 +46,7 @@ export const Default = Template.bind({});
 Default.args = {
   url: "https://sourceforge.net/projects/teamlab/",
   image: {
-    url: "/images/storybook/widgets/stars-rating-logo/sourceforge.svg",
+    url: getAssetUrl("/images/storybook/widgets/stars-rating-logo/sourceforge.svg"),
     alt: "SourceForge",
     width: 150,
     height: 22,

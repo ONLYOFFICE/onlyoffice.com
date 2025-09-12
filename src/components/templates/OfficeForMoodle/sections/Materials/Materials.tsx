@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledDocumentsHeading,
   StyledDocumentsBtnWrapper,
@@ -35,7 +36,7 @@ const Materials = () => {
           items={items.map(({ label, image }) => ({
             label: t(String(label)),
             image: {
-              url: t(image.url),
+              url: getAssetUrl(t(image.url)),
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}

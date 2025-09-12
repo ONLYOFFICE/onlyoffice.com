@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const ButtonRow = styled.div`
   display: flex;
   flex-direction: row;
@@ -28,7 +29,7 @@ const ButtonRow = styled.div`
 
 const StyledSection = styled(Section)`
   background:
-    url("/images/templates/desktop/download/bg.svg") center / 2350px auto
+    url(${getAssetUrl('/images/templates/desktop/download/bg.svg')}) center / 2350px auto
       no-repeat,
     linear-gradient(162.82deg, #ffc671 0%, #ff7541 64.06%, #ff6f3d 100%);
   text-align: center;
@@ -64,7 +65,7 @@ const IconsRow = styled.div`
 const Icon = styled.div<{ $positionX: number }>`
   display: block;
   height: 32px;
-  background-image: url(/images/templates/solutions/platforms.svg);
+  background-image: url(${getAssetUrl('/images/templates/solutions/platforms.svg')});
   background-position: ${(props) => props.$positionX}px center;
   filter: grayscale(100%);
   transition: filter 0.5s;

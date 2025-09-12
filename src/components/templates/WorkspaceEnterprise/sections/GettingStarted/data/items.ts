@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IItems {
     title: string;
     text: string;
@@ -11,7 +12,7 @@ export const items: IItems[] = [
         title: "SelfHosted",
         text: "SelfHostedText",
         color: "#F5F5F5",
-        icon: "/images/templates/workspace-enterprise/getting-started/selfhosted.svg",
+        icon: getAssetUrl("/images/templates/workspace-enterprise/getting-started/selfhosted.svg"),
         link: "/download-workspace",
     },
     {
@@ -25,7 +26,7 @@ export const items: IItems[] = [
     {
         title: "OVH",
         text: "OVHText",
-        icon: "/images/templates/workspace-enterprise/getting-started/ovh.svg",
+        icon: getAssetUrl("/images/templates/workspace-enterprise/getting-started/ovh.svg"),
         color: "#000e9c",
         link: "OVHLink",
         isExternal: true

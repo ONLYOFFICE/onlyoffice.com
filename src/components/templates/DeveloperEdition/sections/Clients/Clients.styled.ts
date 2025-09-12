@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContainer = styled(Container)`
   text-align: center;
 `;
@@ -28,7 +29,7 @@ const ClientsGroup = styled.div`
 `;
 
 const ClientItem = styled.span<{ $width: number; $positionX: string }>`
-  background-image: url("/images/templates/developer-edition/customers/customers-articles.png");
+  background-image: url(${getAssetUrl('/images/templates/developer-edition/customers/customers-articles.png')});
   background-size: auto 86px;
   background-position: ${(props) => props.$positionX} 50%;
   height: 51px;

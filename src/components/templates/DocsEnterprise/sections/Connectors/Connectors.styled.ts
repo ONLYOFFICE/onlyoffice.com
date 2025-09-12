@@ -4,6 +4,7 @@ import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledText = styled(Text)`
   font-size: 16px;
   line-height: 1.6em;
@@ -44,7 +45,7 @@ const StyledConnector = styled(Link)<{
 }>`
   display: block;
   height: 48px;
-  background-image: url(/images/templates/docs-enterprise/connectors/logos-connectors.svg);
+  background-image: url(${getAssetUrl('/images/templates/docs-enterprise/connectors/logos-connectors.svg')});
   background-position-y: ${({ $backgroundPositionY }) =>
     $backgroundPositionY}px;
   filter: grayscale(100%);
@@ -83,7 +84,7 @@ const StyledShowMore = styled.div<{$transformIcon: string;}>`
   &:after {
     content: "";
     transform: ${({ $transformIcon }) => $transformIcon};
-    background-image: url(/images/templates/docs-enterprise/connectors/orange-arrow.svg);
+    background-image: url(${getAssetUrl('/images/templates/docs-enterprise/connectors/orange-arrow.svg')});
     width: 24px;
     height: 24px;
     display: inline-flex;

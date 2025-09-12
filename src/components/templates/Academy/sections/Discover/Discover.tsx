@@ -12,6 +12,7 @@ import { Levels } from "./sub-components/Levels/Levels";
 import { CardForm } from "@src/components/templates/TrainingCourses/sections/Cards/sub-components/CardForm/CardForm";
 import { ILocale } from "@src/types/locale";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const Discover = ({ locale }: ILocale) => {
   const { t } = useTranslation("academy");
   const [openModal, setOpenModal] = useState(false);
@@ -42,7 +43,7 @@ export const Discover = ({ locale }: ILocale) => {
             button: {
               id: "academy_docs",
               icon: {
-                url: "/images/templates/academy/courses/docs.svg",
+                url: getAssetUrl("/images/templates/academy/courses/docs.svg"),
                 width: "64px",
                 height: "64px",
               },
@@ -66,7 +67,7 @@ export const Discover = ({ locale }: ILocale) => {
             button: {
               id: "academy_docspace",
               icon: {
-                url: "/images/templates/academy/courses/docspace.svg",
+                url: getAssetUrl("/images/templates/academy/courses/docspace.svg"),
                 width: "64px",
                 height: "64px",
               },
@@ -90,7 +91,7 @@ export const Discover = ({ locale }: ILocale) => {
             button: {
               id: "academy_workspace",
               icon: {
-                url: "/images/templates/academy/courses/workspace.svg",
+                url: getAssetUrl("/images/templates/academy/courses/workspace.svg"),
                 width: "64px",
                 height: "64px",
               },

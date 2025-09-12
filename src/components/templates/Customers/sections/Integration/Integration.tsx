@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledIntegrationContainer,
   StyledIntegrationHeading,
@@ -32,9 +33,9 @@ const Integration = () => {
             href={t("IntegrationReadBlogLink")} />
         </StyledIntegrationLeft>
         <StyledIntegrationRight>
-          <StyledIntegrationIcon $iconUrl="/images/templates/customers/integration/sciebo-icon.svg" />
-          <StyledIntegrationIcon $iconUrl="/images/templates/customers/integration/onlyoffice-icon.svg" />
-          <StyledIntegrationIcon $iconUrl="/images/templates/customers/integration/owncloud-icon.svg" />
+          <StyledIntegrationIcon $iconUrl={getAssetUrl("/images/templates/customers/integration/sciebo-icon.svg")} />
+          <StyledIntegrationIcon $iconUrl={getAssetUrl("/images/templates/customers/integration/onlyoffice-icon.svg")} />
+          <StyledIntegrationIcon $iconUrl={getAssetUrl("/images/templates/customers/integration/owncloud-icon.svg")} />
         </StyledIntegrationRight>
       </StyledIntegrationContainer>
     </StyledIntegrationSection>

@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledFillableFormHeader,
   StyledFillableFormHeading,
@@ -38,7 +39,7 @@ const FillableForm = () => {
           items={items.map(({ label, image }) => ({
             label: t(String(label)),
             image: {
-              url: t(image.url),
+              url: getAssetUrl(t(image.url)),
               url2x: image.url2x ? t(image.url2x) : undefined,
             },
           }))}

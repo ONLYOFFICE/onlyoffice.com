@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IGetStartedItems {
   icon: {
     src: string;
@@ -15,7 +16,7 @@ interface IGetStartedItems {
 export const items: IGetStartedItems[] = [
   {
     icon: {
-      src: "/images/templates/workspace/get-started/ovhcloud.svg",
+      src: getAssetUrl("/images/templates/workspace/get-started/ovhcloud.svg"),
       width: "150px",
     },
     title: "OvhMarketplace",
@@ -27,7 +28,7 @@ export const items: IGetStartedItems[] = [
     },
   },
   {
-    icon: { src: "/images/templates/workspace/get-started/hosted.svg" },
+    icon: { src: getAssetUrl("/images/templates/workspace/get-started/hosted.svg") },
     title: "SelfHosted",
     text: "Host",
     link: {

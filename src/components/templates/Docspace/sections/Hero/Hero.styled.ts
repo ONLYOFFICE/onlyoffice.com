@@ -4,10 +4,11 @@ import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 import styled, { css } from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   position: relative;
   background-color: #f8f9f9;
-  background-image: url("/images/templates/docspace/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/docspace/hero/bg.svg')});
   background-repeat: no-repeat;
   background-size: 3136px auto;
   background-position-y: -650px;

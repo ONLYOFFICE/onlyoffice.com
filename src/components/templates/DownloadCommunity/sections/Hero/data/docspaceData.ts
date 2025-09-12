@@ -1,4 +1,5 @@
 import { IDownloadBlock } from "@src/components/widgets/download/DownloadBlock";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   docspaceEnterprise,
   digitaloceanDocspace,
@@ -9,7 +10,7 @@ export const docspaceProducts: IDownloadBlock[] = [
   {
     nameKey: "Docspace",
     image: {
-      url: "/images/templates/download-community/hero/docker.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/docker.svg"),
       positionX: "center",
       positionY: "center",
       background: "#099cec",
@@ -35,7 +36,7 @@ export const docspaceProducts: IDownloadBlock[] = [
   {
     nameKey: "Docspace",
     image: {
-      url: "/images/templates/download-community/hero/derbian-ubuntu.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/derbian-ubuntu.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -61,7 +62,7 @@ export const docspaceProducts: IDownloadBlock[] = [
   {
     nameKey: "Docspace",
     image: {
-      url: "/images/templates/download-community/hero/centos.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/centos.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -87,7 +88,7 @@ export const docspaceProducts: IDownloadBlock[] = [
   {
     nameKey: "Docspace",
     image: {
-      url: "/images/templates/download-community/hero/windows.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/windows.svg"),
       positionX: "center",
       positionY: "center",
       background: "#00188f",
@@ -114,7 +115,7 @@ export const docspaceProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/digital-ocean.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/digital-ocean.svg"),
       positionX: "center",
       positionY: "center",
       background: "#0080ff",
@@ -141,7 +142,7 @@ export const docspaceProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-community/hero/vultr.svg",
+      url: getAssetUrl("/images/templates/download-community/hero/vultr.svg"),
       positionX: "center",
       positionY: "center",
       background: "linear-gradient(90deg,#09276B 0%,#2448A2 100%)",

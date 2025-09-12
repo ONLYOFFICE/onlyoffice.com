@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledResourceList = styled.ul`
   list-style: none;
   margin: 0;
@@ -18,7 +19,7 @@ const StyledResourceItem = styled.li`
 const StyledResourceListItemLink = styled(Link)`
   white-space: nowrap;
   &:after {
-    background-image: url(/images/templates/installation-success-workspace/resources/arrow-red.svg);
+    background-image: url(${getAssetUrl('/images/templates/installation-success-workspace/resources/arrow-red.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     content: " ";

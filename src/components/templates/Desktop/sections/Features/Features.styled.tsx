@@ -5,6 +5,7 @@ import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContainer = styled(Container)`
   align-items: center;
   display: flex;
@@ -46,7 +47,7 @@ const StyledCardContainer = styled.div`
 
 const StyledCardImage = styled.div<{ $positionX: string }>`
   aspect-ratio: 1.67;
-  background-image: url("/images/templates/desktop/one-pack/desktop-icons.svg");
+  background-image: url(${getAssetUrl('/images/templates/desktop/one-pack/desktop-icons.svg')});
   background-position: center;
   background-repeat: no-repeat;
   content: "";

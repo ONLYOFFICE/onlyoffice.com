@@ -3,8 +3,9 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSection = styled(Section)`
-  background-image: url("/images/templates/developer-edition/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/developer-edition/hero/bg.svg')});
   background-color: #333333;
   background-position: 50% 0;
   background-repeat: no-repeat;

@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledLetUsKnowBanner = styled(Section)`
   border-top: 1px solid #e2e2e2;
-  background-image: url("/images/modules/let-us-know-banner/decor.svg");
+  background-image: url(${getAssetUrl('/images/modules/let-us-know-banner/decor.svg')});
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #f9f9f9;
@@ -32,7 +33,7 @@ const StyledLetUsKnowBannerWrapper = styled.div`
       margin-bottom: 24px;
       width: 84px;
       height: 72px;
-      background-image: url("/images/modules/let-us-know-banner/icon.svg");
+      background-image: url(${getAssetUrl('/images/modules/let-us-know-banner/icon.svg')});
       background-position-x: 50%;
       background-repeat: no-repeat;
     }

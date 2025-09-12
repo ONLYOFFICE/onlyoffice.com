@@ -3,6 +3,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHero,
   StyledHeroBtnWrapper,
@@ -46,7 +47,7 @@ const Hero = () => {
           />
         </StyledHeroBtnWrapper>
       </StyledHeroContainer>
-      <StyledHeroImgWrapper $imageUrl={t("HeroImageUrl")} />
+      <StyledHeroImgWrapper $imageUrl={getAssetUrl(t("HeroImageUrl"))} />
     </StyledHero>
   );
 };

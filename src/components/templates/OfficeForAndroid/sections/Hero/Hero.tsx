@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { Text } from "@src/components/ui/Text";
 import { Trans, useTranslation } from "next-i18next";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroSection,
   StyledHeroContainer,
@@ -72,17 +73,17 @@ const Hero = () => {
             </StyledHeroLeftButtonsWrapper>
             <StyledHeroLeftImgWrapper>
               <StyledHeroLeftImg
-                $backgroundUrl={t("HeroLeftImageUrl")}
+                $backgroundUrl={getAssetUrl(t("HeroLeftImageUrl"))}
                 $backgroundUrl2x={t("HeroLeftImageUrl2x")}
               />
             </StyledHeroLeftImgWrapper>
           </StyledHeroLeft>
           <StyledHeroRight
-            $backgroundUrl={t("HeroRightImageUrl")}
+            $backgroundUrl={getAssetUrl(t("HeroRightImageUrl"))}
             $backgroundUrl2x={t("HeroRightImageUrl2x")}
           />
           <StyledHeroPhoneImgMob
-            $backgroundUrl={t("HeroLeftImageUrl")}
+            $backgroundUrl={getAssetUrl(t("HeroLeftImageUrl"))}
             $backgroundUrl2x={t("HeroLeftImageUrl2x")}
           />
           <StyledHeroFooter>

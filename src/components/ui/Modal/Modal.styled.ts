@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { IModal } from "./Modal.types";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledModal = styled.div<{
   $isOpen: IModal["isOpen"];
   $bgColor: IModal["bgColor"];
@@ -54,12 +55,12 @@ const StyledModalCloseBtn = styled.button<{
       ? css`
           top: 24px;
           right: 24px;
-          background-image: url("/images/icons/cross.svg");
+          background-image: url(${getAssetUrl('/images/icons/cross.svg')});
         `
       : css`
           top: -24px;
           right: -24px;
-          background-image: url("/images/icons/cross-white.svg");
+          background-image: url(${getAssetUrl('/images/icons/cross-white.svg')});
         `}
 `;
 

@@ -1,9 +1,10 @@
 import { IHeroImage } from "../Hero.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const images: IHeroImage[] = [
   {
     image: {
-      url: "/images/templates/contribute/hero/image1.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image1.jpg"),
     },
     top: "133px",
     right: "8px",
@@ -11,7 +12,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image2.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image2.jpg"),
     },
     link: "https://www.linkedin.com/in/klaibson",
     top: "399px",
@@ -20,14 +21,14 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image3.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image3.jpg"),
     },
     top: "266px",
     right: "273px",
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image4.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image4.jpg"),
     },
     top: "399px",
     right: "140px",
@@ -35,7 +36,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image5.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image5.jpg"),
     },
     top: "266px",
     right: "-125px",
@@ -43,7 +44,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image6.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image6.jpg"),
     },
     top: "665px",
     right: "-391px",
@@ -51,7 +52,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image7.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image7.jpg"),
     },
     top: "0px",
     right: "-391px",
@@ -59,7 +60,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image8.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image8.jpg"),
     },
     top: "0px",
     left: "-258px",
@@ -68,7 +69,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image9.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image9.jpg"),
     },
     top: "532px",
     right: "273px",
@@ -76,7 +77,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image10.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image10.jpg"),
     },
     link: "https://www.myntic-pr.com/",
     top: "266px",
@@ -85,7 +86,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image11.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image11.jpg"),
     },
     link: "https://www.act-translations.com/en-us/",
     top: "0",
@@ -94,7 +95,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image12.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image12.jpg"),
     },
     top: "133px",
     right: "-258px",
@@ -103,7 +104,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image13.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image13.jpg"),
     },
     top: "133px",
     right: "-525px",
@@ -112,7 +113,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image14.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image14.jpg"),
     },
     link: "https://www.medienstuermer.de/",
     top: "0",
@@ -121,7 +122,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image15.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image15.jpg"),
     },
     top: "399px",
     right: "8px",
@@ -130,7 +131,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image16.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image16.jpg"),
     },
     top: "266px",
     right: "8px",
@@ -139,7 +140,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image17.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image17.jpg"),
     },
     top: "266px",
     right: "-258px",
@@ -148,7 +149,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image18.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image18.jpg"),
     },
     top: "266px",
     right: "-391px",
@@ -157,7 +158,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image19.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image19.jpg"),
     },
     top: "266px",
     right: "-525px",
@@ -166,7 +167,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image20.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image20.jpg"),
     },
     top: "399px",
     right: "-258px",
@@ -175,7 +176,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image21.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image21.jpg"),
     },
     top: "399px",
     right: "-391px",
@@ -184,7 +185,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image22.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image22.jpg"),
     },
     top: "532px",
     right: "8px",
@@ -193,7 +194,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image23.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image23.jpg"),
     },
     top: "532px",
     right: "-125px",
@@ -202,7 +203,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image24.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image24.jpg"),
     },
     top: "532px",
     left: "-258px",
@@ -211,7 +212,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image25.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image25.jpg"),
     },
     top: "532px",
     left: "-525px",
@@ -220,7 +221,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image26.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image26.jpg"),
     },
     top: "399px",
     left: "-391px",
@@ -229,7 +230,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image27.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image27.jpg"),
     },
     top: "665px",
     left: "-391px",
@@ -238,7 +239,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image28.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image28.jpg"),
     },
     top: "399px",
     left: "-525px",
@@ -247,7 +248,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image29.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image29.jpg"),
     },
     top: "266px",
     left: "-391px",
@@ -256,7 +257,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image30.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image30.jpg"),
     },
     top: "133px",
     left: "-391px",
@@ -265,7 +266,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image31.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image31.jpg"),
       isVisible: false,
     },
     animationDelay: "0.3s",
@@ -273,7 +274,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image32.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image32.jpg"),
       isVisible: false,
     },
     animationDelay: "0.4s",
@@ -281,7 +282,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image33.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image33.jpg"),
       isVisible: false,
     },
     animationDelay: "0.5s",
@@ -289,7 +290,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image34.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image34.jpg"),
       isVisible: false,
     },
     animationDelay: "0.1s",
@@ -297,7 +298,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image35.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image35.jpg"),
       isVisible: false,
     },
     animationDelay: "0.3s",
@@ -305,7 +306,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image36.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image36.jpg"),
       isVisible: false,
     },
     animationDelay: "0.4s",
@@ -313,7 +314,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image37.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image37.jpg"),
       isVisible: false,
     },
     animationDelay: "0.5s",
@@ -321,7 +322,7 @@ export const images: IHeroImage[] = [
   },
   {
     image: {
-      url: "/images/templates/contribute/hero/image38.jpg",
+      url: getAssetUrl("/images/templates/contribute/hero/image38.jpg"),
       isVisible: false,
     },
     animationDelay: "0.7s",

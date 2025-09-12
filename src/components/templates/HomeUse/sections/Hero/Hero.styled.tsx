@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   background-color: #f5f5f5;
   margin-top: -72px;
@@ -75,7 +76,7 @@ const StyledPageDescription = styled(Text)`
 
 const StyledImage = styled.div`
   aspect-ratio: 1.117;
-  background-image: url(/images/templates/home-use/hero/hero.svg);
+  background-image: url(${getAssetUrl('/images/templates/home-use/hero/hero.svg')});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

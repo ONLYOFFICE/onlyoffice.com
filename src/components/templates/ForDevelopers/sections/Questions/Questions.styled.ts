@@ -4,6 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledQuestionsContainer = styled(Container)`
   position: relative;
   z-index: 0;
@@ -15,7 +16,7 @@ const StyledQuestionsContainer = styled(Container)`
     right: 39px;
     width: 246px;
     height: 215px;
-    background-image: url("/images/templates/conversion-api/questions/letter.svg");
+    background-image: url(${getAssetUrl('/images/templates/conversion-api/questions/letter.svg')});
     background-repeat: no-repeat;
 
     @media ${device.tablet} {
@@ -41,7 +42,7 @@ const StyledQuestionsWrapper = styled.div`
     left: 0;
     width: 48px;
     height: 48px;
-    background-image: url("/images/templates/conversion-api/questions/question.svg");
+    background-image: url(${getAssetUrl('/images/templates/conversion-api/questions/question.svg')});
     background-repeat: no-repeat;
   }
 

@@ -1,4 +1,5 @@
-const iconsSprite = "/images/templates/demo-order/hero/icons.svg";
+import { getAssetUrl } from "@utils/getAssetUrl";
+const iconsSprite = getAssetUrl("/images/templates/demo-order/hero/icons.svg");
 
 interface IIconItems {
   label: string;
