@@ -11,7 +11,7 @@ const StyledMarketplaceConnector = styled.section`
     content: "";
     position: absolute;
     top: calc(50% + 15px);
-    right: calc(50% + 400px);
+    left: -240px;
     width: 700px;
     height: 700px;
     background-image: url(${getAssetUrl('/images/templates/office-for-jira/marketplace-connector/logo.svg')});
@@ -21,11 +21,7 @@ const StyledMarketplaceConnector = styled.section`
     pointer-events: none;
 
     @media ${device.desktop} {
-      right: calc(100% - 400px);
-    }
-
-    @media ${device.tabletS} {
-      right: calc(100% - 300px);
+      left: -400px;
     }
   }
 `;

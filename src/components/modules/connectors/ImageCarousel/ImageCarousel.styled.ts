@@ -41,7 +41,7 @@ const StyledImageCarouselImgWrapper = styled.div<{
   $imageWidth?: IImageCarousel["imageWidth"];
 }>`
   margin: 0 auto;
-  max-width: ${(props) => (props.$imageWidth ?? 960) + 172}px;
+  max-width: ${(props) => (props.$imageWidth ?? 928) + 172}px;
   padding: 0 86px;
 
   @media ${device.tablet} {
@@ -90,7 +90,7 @@ const StyledImageCarouselBtns = styled.div<{
   margin: 0 auto;
   padding: 0 16px;
   width: 100%;
-  max-width: ${(props) => (props.$imageWidth ?? 960) + 172}px;
+  max-width: ${(props) => (props.$imageWidth ?? 928) + 172}px;
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 10;

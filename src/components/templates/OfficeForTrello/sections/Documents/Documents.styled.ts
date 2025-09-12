@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
+import { Container } from "@src/components/ui/Container";
+import { FeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
 
 const StyledDocumentsHeading = styled(Heading)`
   margin: 0 auto 56px;
@@ -25,4 +27,16 @@ const StyledDocumentBtn = styled.div`
   }
 `;
 
-export { StyledDocumentsHeading, StyledDocumentBtn };
+const StyledFeatureSwitcher = styled(FeatureSwitcher)`
+  grid-template-columns: 432px auto;
+`;
+
+const StyledContainer = styled(Container)`
+  padding: 0;
+
+  @media ${device.desktop} {
+    padding: 0 40px;
+  }
+`;
+
+export { StyledDocumentsHeading, StyledDocumentBtn, StyledFeatureSwitcher, StyledContainer };

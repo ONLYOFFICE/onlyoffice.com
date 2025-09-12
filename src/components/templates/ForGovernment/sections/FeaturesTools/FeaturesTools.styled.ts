@@ -60,7 +60,7 @@ const StyledFeaturesItems = styled.div`
   }
 
   > div {
-   backgrounf-size: 840px;
+   background-size: 840px;
 
     @media ${device.desktop} {
       width: calc(33.333% - 24px);
@@ -239,7 +239,7 @@ const StyledFeaturesText = styled(Text)`
     }
 
     &.mobile {
-      font-color: #333333;
+      color: #333333;
       font-size: 14px;
       padding: 0 0 16px;
     }

@@ -22,7 +22,7 @@ const StyledPreRadiosText = styled(Text)`
 
 const StyledLine2RadiosWrapper = styled.div`
   background-color: #F9F9F9;
-  border-radius: 3px;
+  border-radius: 6px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 16px;

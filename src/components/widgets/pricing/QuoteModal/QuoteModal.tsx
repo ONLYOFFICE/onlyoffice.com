@@ -137,11 +137,11 @@ const QuoteModal = <T,>({
       const region = countryInfo?.salesRegion || "";
 
       const onSubmitRequestData = await onSubmitRequest({
-          from,
-          country,
-          region,
+        from,
+        country,
+        region,
         hCaptchaResponse: quoteFormData.hCaptcha,
-        });
+      });
 
       if (onSubmitRequestData.status === "errorHCaptchaInvalid") {
         setFormStatus("error");
@@ -277,13 +277,6 @@ const QuoteModal = <T,>({
                 }));
                 checkFormValid();
               }}
-              status={
-                isEmpty.phone
-                  ? "error"
-                  : quoteFormData.phone
-                    ? "success"
-                    : "default"
-              }
               required
             />
           )}

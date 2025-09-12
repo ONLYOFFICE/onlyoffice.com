@@ -26,7 +26,6 @@ const StyledLoaderButton = styled.button<{
   line-height: 18px;
   letter-spacing: 0.04em;
   width: ${(props) => props.$fullWidth && "100%"};
-  text-transform: uppercase;
   transition: background-color 0.2s;
   cursor: pointer;
 

@@ -6,7 +6,7 @@ import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background:
-    url(${getAssetUrl('/images/templates/office-for-trello/hero/bg.svg')});no-repeat,
+    url(${getAssetUrl('/images/templates/office-for-trello/hero/bg.svg')}) no-repeat,
     linear-gradient(to left, #00b8d9, #0065ff);
   background-position-x: calc(50% + 266px), center;
   background-position-y: -202px;
