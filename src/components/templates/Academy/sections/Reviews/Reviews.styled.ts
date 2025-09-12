@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSection = styled(Section)`
   border-bottom: 1px solid #e2e2e2;
   border-top: 1px solid #e2e2e2;
@@ -16,7 +17,7 @@ const TestimonialCard = styled.div<{ $bgImage: string }>`
   padding: 80px 0 0;
   width: 100%;
   position: relative;
-  background-image: url(${(props) => props.$bgImage}), url(/images/templates/academy/reviews/quote.svg);
+  background-image: url(${(props) => props.$bgImage}), url(${getAssetUrl('/images/templates/academy/reviews/quote.svg')});
   background-size: auto 48px, auto auto;
   background-position: 50% 0, 50% 50%;
   background-repeat: no-repeat;

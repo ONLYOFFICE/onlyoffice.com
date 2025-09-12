@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCertificateCard = styled.div`
   display: grid;
   grid-template-columns: 250px auto;
@@ -65,7 +66,7 @@ const StyledCertificateCardViewBtn = styled.button`
   height: 48px;
   border-radius: 50%;
   background-color: rgba(51, 51, 51, 0.6);
-  background-image: url("/images/icons/eye-white.svg");
+  background-image: url(${getAssetUrl('/images/icons/eye-white.svg')});
   background-repeat: no-repeat;
   background-position: center;
   transition: background-color 0.2s;
@@ -85,7 +86,7 @@ const StyledCertificateCardDownloadBtn = styled.a`
   height: 48px;
   border-radius: 50%;
   background-color: rgba(51, 51, 51, 0.6);
-  background-image: url("/images/icons/download-white.svg");
+  background-image: url(${getAssetUrl('/images/icons/download-white.svg')});
   background-repeat: no-repeat;
   background-position: center;
   transition: background-color 0.2s;

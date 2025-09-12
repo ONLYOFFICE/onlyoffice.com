@@ -3,10 +3,11 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledQuoteWrapper = styled.div`
   display: grid;
   justify-items: center;
-  background-image: url("/images/templates/education/quote/quotes.svg");
+  background-image: url(${getAssetUrl('/images/templates/education/quote/quotes.svg')});
   background-repeat: no-repeat;
   background-size: 196px 160px;
   background-position: center 18px;

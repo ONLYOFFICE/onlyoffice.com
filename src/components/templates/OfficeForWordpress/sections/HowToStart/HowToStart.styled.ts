@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHowToStart = styled(Section)`
   border-top: 1px solid #e2e2e2;
   scroll-margin-top: 72px;
@@ -51,7 +52,7 @@ const StyledHowToStartText = styled(Text)`
     width: 20px;
     height: 20px;
     vertical-align: middle;
-    background-image: url("/images/templates/office-for-wordpress/how-to-start/github.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-wordpress/how-to-start/github.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

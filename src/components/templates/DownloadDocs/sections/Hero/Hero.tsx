@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroSection,
   StyledHeroDescription,
@@ -101,7 +102,7 @@ const Hero = ({
             button: {
               id: "docs-enterprise",
               icon: {
-                url: "/images/templates/download-docs/hero/icons.svg",
+                url: getAssetUrl("/images/templates/download-docs/hero/icons.svg"),
               },
               label: t("Enterprise"),
             },
@@ -169,7 +170,7 @@ const Hero = ({
             button: {
               id: "docs-developer",
               icon: {
-                url: "/images/templates/download-docs/hero/icons.svg",
+                url: getAssetUrl("/images/templates/download-docs/hero/icons.svg"),
                 positionX: "-88px",
               },
               label: t("Developer"),
@@ -245,7 +246,7 @@ const Hero = ({
             button: {
               id: "docs-community",
               icon: {
-                url: "/images/templates/download-docs/hero/icons.svg",
+                url: getAssetUrl("/images/templates/download-docs/hero/icons.svg"),
                 positionX: "-176px",
               },
               label: t("Community"),

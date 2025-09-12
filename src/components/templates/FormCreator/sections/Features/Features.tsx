@@ -5,6 +5,7 @@ import { Link } from "@src/components/ui/Link";
 import { getLink } from "@src/utils/getLink";
 import { ILocale } from "@src/types/locale";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Features = ({ locale }: ILocale) => {
   const { t } = useTranslation("form-creator");
 
@@ -41,7 +42,7 @@ const Features = ({ locale }: ILocale) => {
               : link.href,
         })),
         image: {
-          url: t(item.image.url),
+          url: getAssetUrl(t(item.image.url)),
           url2x: item.image.url2x && t(item.image.url2x),
           height: item.image.height,
         },

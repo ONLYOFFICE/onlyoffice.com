@@ -5,8 +5,9 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSection = styled(Section)`
-    background-image: url("/images/templates/private-rooms/getting-started/steps-bg.svg");
+    background-image: url(${getAssetUrl('/images/templates/private-rooms/getting-started/steps-bg.svg')});
     background-repeat: no-repeat;
     background-position: 50% 72%;
 
@@ -81,7 +82,7 @@ const StyledWrapperLeftText = styled(Text)`
 
     &::before {
         content: "";
-        background-image: url("/images/templates/private-rooms/getting-started/icons-steps.svg");
+        background-image: url(${getAssetUrl('/images/templates/private-rooms/getting-started/icons-steps.svg')});
         background-position-x: 0;
         background-repeat: no-repeat;
         position: absolute;
@@ -165,7 +166,7 @@ const StyledWrapperRightBlock = styled.div`
 
     &::before {
         content: '';
-        background-image: url("/images/templates/private-rooms/getting-started/private_room.svg");
+        background-image: url(${getAssetUrl('/images/templates/private-rooms/getting-started/private_room.svg')});
         background-repeat: no-repeat;
         background-size: 72px 72px;
         background-position: 50% 50%;

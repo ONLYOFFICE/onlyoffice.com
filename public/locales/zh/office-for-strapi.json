@@ -3,7 +3,7 @@
   "PageDescription": "在 Strapi 中编辑 DOCX、XLSX 和 PPTX 文件并协作编辑内容。",
 
   "OnlineOfficeForConnector": "适用于 <0>Strapi</0> 的在线办公套件",
-  "Subheader": "使用ONLYOFFICE Docs，在Strapi平台上协作编辑媒体库中的办公文件。",
+  "Subheader": "使用ONLYOFFICE文档在Strapi平台上编辑并协作媒体库中的办公文件。",
   "GetStarted": "开始使用",
   "FullyCompatibleWithDocxXlsxAndPptx": "兼容docx、xlsx、pptx。",
 
@@ -11,11 +11,11 @@
   "MarketplaceConnectorDescription": "立即从 <0>Strapi 市场</0> 或 <1>nmp 目录</1>获取用于 Strapi 的 ONLYOFFICE 连接器。",
   "GetItNow": "立即获取",
 
-  "WhyOO": "为什么选择ONLYOFFICE Docs",
-  "WhySubheader": "ONLYOFFICE Docs是自托管的办公套件，用于处理文本文档、电子表格、演示文稿和表单。",
+  "WhyOO": "为什么选择 ONLYOFFICE 文档",
+  "WhySubheader": "ONLYOFFICE文档是一个自托管的办公套件，用于处理文本文档、电子表格、演示文稿和表单。",
   "Reason1": "现成的集成插件",
   "Reason2": "在Strapi市场上轻松安装，快速配置",
-  "Reason3": "带有标签的直观界面",
+  "Reason3": "选项卡式直观界面",
   "Reason4": "多种编辑、格式化和风格化工具",
   "Reason5": "实时协作，跟踪修改，评论，聊天工具",
   "Reason6": "免费的社区版和可扩展的企业版",

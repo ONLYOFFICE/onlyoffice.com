@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IBenefits {
   title: string;
   icon: string;
@@ -19,25 +20,25 @@ interface IBenefits {
 export const benefits: IBenefits[] = [
   {
     title: "BenefitsUsersTitle",
-    icon: "/images/templates/developer-edition/why-oo/why-docs-users.svg",
+    icon: getAssetUrl("/images/templates/developer-edition/why-oo/why-docs-users.svg"),
     items: [
       {
-        icon: "/images/templates/developer-edition/why-oo/familiar.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/familiar.svg"),
         title: "BenefitUserTitle1",
         description: "BenefitUserDesc1",
       },
       {
-        icon: "/images/templates/developer-edition/why-oo/unmatched.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/unmatched.svg"),
         title: "BenefitUserTitle2",
         description: "BenefitUserDesc2",
       },
       {
-        icon: "/images/templates/developer-edition/why-oo/in-browser.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/in-browser.svg"),
         title: "BenefitUserTitle3",
         description: "BenefitUserDesc3",
       },
       {
-        icon: "/images/templates/developer-edition/why-oo/deployment.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/deployment.svg"),
         title: "BenefitUserTitle4",
         description: "BenefitUserDesc4",
       },
@@ -49,20 +50,20 @@ export const benefits: IBenefits[] = [
   },
   {
     title: "BenefitsDevelopersTitle",
-    icon: "/images/templates/developer-edition/why-oo/why-docs-devs.svg",
+    icon: getAssetUrl("/images/templates/developer-edition/why-oo/why-docs-devs.svg"),
     items: [
       {
-        icon: "/images/templates/developer-edition/why-oo/cross-browser.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/cross-browser.svg"),
         title: "BenefitDevTitle1",
         description: "BenefitDevDesc1",
       },
       {
-        icon: "/images/templates/developer-edition/why-oo/label.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/label.svg"),
         title: "BenefitDevTitle2",
         description: "BenefitDevDesc2",
       },
       {
-        icon: "/images/templates/developer-edition/why-oo/external-access.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/external-access.svg"),
         title: "BenefitDevTitle3",
         description: "BenefitDevDesc3",
         link: {
@@ -71,7 +72,7 @@ export const benefits: IBenefits[] = [
         },
       },
       {
-        icon: "/images/templates/developer-edition/why-oo/plugins.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/plugins.svg"),
         title: "BenefitDevTitle4",
         description: "BenefitDevDesc4",
         link: {
@@ -81,12 +82,12 @@ export const benefits: IBenefits[] = [
         },
       },
       {
-        icon: "/images/templates/developer-edition/why-oo/performance.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/performance.svg"),
         title: "BenefitDevTitle5",
         description: "BenefitDevDesc5",
       },
       {
-        icon: "/images/templates/developer-edition/why-oo/api.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/api.svg"),
         title: "BenefitDevTitle6",
         description: "BenefitDevDesc6",
         link: {
@@ -96,12 +97,12 @@ export const benefits: IBenefits[] = [
         },
       },
       {
-        icon: "/images/templates/developer-edition/why-oo/scalability.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/scalability.svg"),
         title: "BenefitDevTitle7",
         description: "BenefitDevDesc7",
       },
       {
-        icon: "/images/templates/developer-edition/why-oo/availability.svg",
+        icon: getAssetUrl("/images/templates/developer-edition/why-oo/availability.svg"),
         title: "BenefitDevTitle8",
         description: "BenefitDevDesc8",
         link: {

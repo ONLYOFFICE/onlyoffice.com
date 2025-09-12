@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCertificateModal = styled.div`
   display: flex;
   align-items: start;
@@ -23,7 +24,7 @@ const StyledCertificateCardDownloadBtn = styled.a`
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  background-image: url("/images/icons/download-white.svg");
+  background-image: url(${getAssetUrl('/images/icons/download-white.svg')});
   background-color: rgba(51, 51, 51, 0.6);
   background-repeat: no-repeat;
   background-position: center;
@@ -46,7 +47,7 @@ const StyledCertificateCardCloseBtn = styled.button`
   width: 48px;
   height: 48px;
   background-color: rgba(51, 51, 51, 0.6);
-  background-image: url("/images/icons/cross-white.svg");
+  background-image: url(${getAssetUrl('/images/icons/cross-white.svg')});
   background-repeat: no-repeat;
   background-position: center;
   transition: background-color 0.2s;

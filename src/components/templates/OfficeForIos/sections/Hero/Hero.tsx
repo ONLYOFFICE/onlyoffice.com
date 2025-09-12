@@ -1,6 +1,7 @@
 import { Text } from "@src/components/ui/Text";
 import { Trans, useTranslation } from "next-i18next";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroSection,
   StyledHeroContainer,
@@ -60,17 +61,17 @@ const Hero = () => {
             </StyledHeroLeftText>
             <StyledHeroLeftImgWrapper>
               <StyledHeroLeftImg
-                $backgroundUrl={t("HeroImageLeftUrl")}
+                $backgroundUrl={getAssetUrl(t("HeroImageLeftUrl"))}
                 $backgroundUrl2x={t("HeroImageLeftUrl2x")}
               />
             </StyledHeroLeftImgWrapper>
           </StyledHeroLeft>
           <StyledHeroRight
-            $backgroundUrl={t("HeroImageRightUrl")}
+            $backgroundUrl={getAssetUrl(t("HeroImageRightUrl"))}
             $backgroundUrl2x={t("HeroImageRightUrl2x")}
           />
           <StyledHeroPhoneImgMob
-            $backgroundUrl={t("HeroImageLeftUrl")}
+            $backgroundUrl={getAssetUrl(t("HeroImageLeftUrl"))}
             $backgroundUrl2x={t("HeroImageLeftUrl2x")}
           />
           <StyledHeroFooter>

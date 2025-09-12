@@ -4,6 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFreeCloudWrapper = styled.div`
   border: 1px solid #e2e2e2;
   border-radius: 12px;
@@ -22,7 +23,7 @@ const StyledFreeCloudWrapper = styled.div`
 const StyledFreeCloudLogo = styled.div`
   width: 150px;
   height: 72px;
-  background-image: url("/images/templates/nonprofit-organizations/free-cloud/free-cloud-logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/nonprofit-organizations/free-cloud/free-cloud-logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0 auto 16px;

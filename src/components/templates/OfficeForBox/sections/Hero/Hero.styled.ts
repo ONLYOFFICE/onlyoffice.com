@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/templates/office-for-box/hero/hero.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-box/hero/hero.svg')});
   background-color: #0056cf;
   background-repeat: no-repeat;
   background-position: top center;
@@ -37,7 +38,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 72px;
   height: 40px;
-  background-image: url("/images/templates/office-for-box/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-box/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

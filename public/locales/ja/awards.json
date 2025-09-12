@@ -1,116 +1,116 @@
 {
-  "PageTitle": "ONLYOFFICE アワード賞とレビュー | ONLYOFFICE",
-  "PageDescription": "ONLYOFFICE アワード賞とレビュー",
+  "PageTitle": "ONLYOFFICE 受賞歴 | ONLYOFFICE",
+  "PageDescription": "PCMagが選ぶ2020年のベスト文書管理ソフトウェア、中小企業向けベストクラウドサービス、G2オフィススイート部門リーダーなど多数の評価を獲得",
 
   "HeroTitle": "ONLYOFFICE、ITアワード2024で金賞を受賞",
-  "HeroSubtitle": "ONLYOFFICEは、クラウドコンピューティングインサイダー読者賞のクラウドコンテンツ管理部門で金賞を受賞しました。インサイダーITアワードは、ドイツの情報技術分野で最も著名な出版社およびイベント主催者の1つであるフォーゲルITメディアが主催する、毎年恒例の読者投票です。",
-  "HeroLink": "本文はこちらからご覧いただけます",
+  "HeroSubtitle": "ONLYOFFICEはCloud Computing Insider読者投票アワードにおいて、クラウドコンテンツ管理部門で金賞を獲得しました。Insider ITアワードは、ドイツの有力IT出版社かつイベント主催者であるVogel IT-Medienが毎年実施する読者投票による賞です。",
+  "HeroLink": "公式発表を読む",
 
   "UseTitle" : "<0>世界中の1500万人</0>以上のユーザーと共に、すでにONLYOFFICEを利用しているコミュニティに参加しましょう",
   "UseButton" : "クラウドで始める",
 
-  "ReadTheFullArticle" : "本文をすべてお読みください",
-  "ReadTheFullArticleEn" : "本文をすべてお読みください",
+  "ReadTheFullArticle" : "記事全文を読む",
+  "ReadTheFullArticleEn" : "記事全文を読む",
 
-  "AwardTitle1" : "SoftwareSuggest による ONLYOFFICE のリビュー",
-  "AwardDesc1" : "\"ONLYOFFICE は、業務用ドキュメントの作成、編集、共同編集をすることができる一番安全で効果的な方法を提供するオンライン オフィス スイートです。ドキュメントの他、ONLYOFFICE では、完全な生産性スイートを用意しており、どこでも効率よく作業できます\"。",
+  "AwardTitle1" : "SoftwareSuggestによるONLYOFFICEレビュー",
+  "AwardDesc1" : "「ONLYOFFICEは、ビジネス文書の作成・編集・共同作業を最も安全かつ効率的に行えるオンラインオフィススイートです。文書以外にも生産性向上に役立つフル機能を備え、どこからでも効果的に作業できます。」",
 
-  "AwardTitle2" : "ONLYOFFICE が、All Digital School 編集部特選賞を受賞",
-  "AwardDesc2" : "\"教育リソースプラットフォームである All Digital School (ADS) の編集者たちが、周期的にリストをレビューして、すべての部門で際立つ最優秀アプリを決定します。最後のレビューでは、ビジネス開発部門と教師用ツール部門でのお気に入りの一つに ONLYOFFICE が選ばれています。この違いで、ONLYOFFICE が ADS 編集部特選賞バッジを受賞しました\"。",
+  "AwardTitle2" : "ONLYOFFICE、All Digital School編集者が選ぶ賞を受賞",
+  "AwardDesc2" : "「教育リソースプラットフォームAll Digital School（ADS）の編集者は、各カテゴリで優れたアプリを定期的に選出しています。直近のレビューで、ONLYOFFICEはビジネス開発および教師向けツールカテゴリのお気に入りとして選ばれ、ADS Editors’ Choiceバッジを受賞しました。」",
 
-  "AwardTitle3" : "ONLYOFFICE は、SourceForge のユーザー評価による 4.6 星 (星 5 つ中) を獲得しています",
-  "AwardDesc3" : "\"平均評価星 5 つ中 4.6 星を獲得し、豊富な機能、簡単な使用方法や優秀なテクニカルサポートを気に入った Sourceforge ユーザーが ONLYOFFICE を絶賛しています\"。",
+  "AwardTitle3" : "SourceForgeユーザーレビューで5点満点中4.6を獲得",
+  "AwardDesc3" : "「平均評価4.6/5という高スコアを獲得し、豊富な機能、使いやすさ、優れたサポートが高く評価されています。」",
 
-  "AwardTitle4" : "ONLYOFFICE Desktop Editors - 良好判定　Chip.de",
-  "AwardDesc4" : "\"ONLYOFFICE はオープンソースであるばかりでなく、他社よりもスピードがあるため、Microsoft Office、OpenOffice、LibreOffice などのトップクラスのオフィススイートにも負けません\"。",
+  "AwardTitle4" : "Chip.deが「非常に良い」と評価したONLYOFFICE Desktop Editors",
+  "AwardDesc4" : "「ONLYOFFICEはMicrosoft Office、OpenOffice、LibreOfficeといった人気スイートの強力なライバルです。オープンソースであるだけでなく動作も高速です。」",
 
-  "AwardTitle5" : "Mac 対応 ONLYOFFICE Desktop Editors - 5つ星獲得　Taimienphi.vn",
-  "AwardDesc5" : "\"ONLYOFFICE Desktop Editors はマルチプラットフォーム オフィススイートで、ドキュメント、スプレッドシート、スライドショーの管理がいち早く簡単にできます。このパッケージで、他のコンピューター上でもデータの編集、共有、整理が効率的に行えます\"。",
+  "AwardTitle5" : "Taimienphi.vnがMac版ONLYOFFICE Desktop Editorsを星5評価",
+  "AwardDesc5" : "「複数プラットフォーム対応のオフィススイートで、文書・表計算・スライドを素早く簡単に扱えます。複数PCで編集・共有・整理がスムーズに可能です。」",
 
-  "AwardTitle6" : "ONLYOFFICE - Microsoft Office に代わる無料の代替品　ウェブサイト ホスト上位 10 位より",
-  "AwardDesc6" : "\"ONLYOFFICE は高機能を備えており Microsoft Office や Google Docs などの代替品として無料で使用できます。世界中どこからでもアクセスでき、一つの拠点で企業の工程管理が可能です。オンラインの機能数やユーザーの量には、当社も大変驚いております\"。",
+  "AwardTitle6" : "Top 10 Website HostingがMicrosoft Officeの無料代替としてレビュー",
+  "AwardDesc6" : "「ONLYOFFICEは機能豊富で無料のMicrosoft Office/Google Docs代替として、企業がプロセスを一元管理でき、どこからでもアクセス可能です。豊富な機能とユーザー数に驚かされました。」",
 
-  "AwardTitle7" : "ONLYOFFICE - 2018 年度オープンソース プロジェクト管理ツール優秀者　最高情報責任者 (CIO)",
-  "AwardDesc7" : "\"ONLYOFFICE は、MS Office フォーマットに適合するドキュメントをオフラインで編集できる無料オフィススイートです。機能にはオンライン ドキュメント編集、ドキュメント管理、CRM、メール管理、カレンダー、コミュニティー ツールがあります\"。",
+  "AwardTitle7" : "CIO誌が選ぶ2018年ベストOSSプロジェクト管理ツールのひとつに選出",
+  "AwardDesc7" : "「ONLYOFFICEはMS Office形式と互換性のある無料のオフラインオフィススイートで、オンライン文書編集、文書管理、CRM、メール管理、カレンダー、コミュニティツールを備えています。」",
 
-  "AwardTitle8" : "ONLYOFFICE - 'ユーザーご愛顧'賞　G2 Crowd",
-  "AwardDesc8" : "\"皆様からの大変なご支援により、G2 Crowd から 'ユーザーご愛顧'賞を受賞することができました。大変感謝いたします。評価を残して、当社の品質向上にご協力ください\"。",
+  "AwardTitle8" : "G2 Crowdで「Users Love Us」バッジを受賞",
+  "AwardDesc8" : "「多大なご支援をいただいたお客様のおかげでG2 Crowdの『Users Love Us』バッジを受賞しました。ぜひレビューをお寄せください。」",
 
-  "AwardTitle9" : "ONLYOFFICE - 世界中どこからでも使用できる多機能なオフィススイート　HostingAdvice",
-  "AwardDesc9" : "\"ONLYOFFICE はビジネスに便利な共同編集機能を安価で提供し、ドキュメント共有に関するニーズにすべて対応するショップになろうと努力しています\"。",
+  "AwardTitle9" : "HostingAdviceが「汎用性が高くバランスの良いオフィススイート」と評価",
+  "AwardDesc9" : "「ONLYOFFICEは手頃な価格で豊富なコラボレーション機能を提供し、文書共有のワンストップソリューションを目指しています。」",
 
-  "AwardTitle10" : "ONLYOFFICE - FinancesOnline 社 2016 年度優秀ユーザーエクスペリエンス専門家特選賞受賞",
-  "AwardDesc10" : "\"ONLYOFFICE は最も機能が豊富なオフィス生産性スイートで、お客様のビジネスを整理するすべての必須ツールを備えています\"。",
+  "AwardTitle10" : "FinancesOnline 2016 ユーザー体験賞・専門家推薦賞をダブル受賞",
+  "AwardDesc10" : "「ONLYOFFICEは必要なビジネスツールをすべて備えた最も高機能なオフィス＆生産性スイートです。」",
 
-  "AwardTitle11" : "ONLYOFFICE は無料オープンソース オフィススイートとして、Badcredit.org から編集者特選最優秀賞を受賞しています",
-  "AwardDesc11" : "\"ONLYOFFICE は個人的な使用にもビジネスで使用する場合にもピッタリな商品であるデスクトップソリューションとクラウドソリューションを用意しており、個人、非営利団体、教育関係機関が各ニーズに合ったソフトウェアを無料で入手するお手伝いをします\"。",
+  "AwardTitle11" : "Badcredit.org編集者が選ぶベスト無料OSSオフィススイート賞を受賞",
+  "AwardDesc11" : "「個人・法人向けのデスクトップやクラウド製品を通じて、非営利団体や教育機関も必要なソフトウェアを無料で利用できます。」",
 
-  "AwardTitle12" : "ONLYOFFICE Desktop Editors - 5 つ星獲得、\"必須\" に格付け　FindMySoft",
-  "AwardDesc12" : "\"快適で効率の良い生産性ソリューションをお探しなら、ONLYOFFICE を是非お勧めします\"。",
+  "AwardTitle12" : "FindMySoftがレビュー、星5＆「必須」と認定",
+  "AwardDesc12" : "「快適かつ効率的な生産性ソリューションを求めるなら、ONLYOFFICEは最適です。」",
 
-  "AwardTitle13" : "ONLYOFFICE Desktop Editors - Softpedia によるテスト、評価",
-  "AwardDesc13" : "\"ONLYOFFICE Desktop Editors は有料のオフィススイートの代替品であり、他の無料オフィススイートのライバルになる可能性もあります\"。",
+  "AwardTitle13" : "SoftpediaによるONLYOFFICE Desktop Editorsレビュー",
+  "AwardDesc13" : "「有料スイートに代わる現実的な選択肢であり、無料スイートの有力競合になる可能性を秘めています。」",
 
-  "AwardTitle14" : "ONLYOFFICE - ビジネス管理カテゴリーのリーダー的存在　GetApp.com",
-  "AwardDesc14" : "\"ここでは、ひとつの多機能システムで作業の全手順を管理することができ、生産性を上げ、労力を省きながら、良い結果を生みます\"。",
-  
-  "AwardTitle15" : "GoodFirms に信頼性のあるドキュメント管理ソリューションとして掲載された ONLYOFFICE",
-  "AwardDesc15" : "\"GoodFirms は信頼のあるソフトウェアを掲載するプラットフォームで、様々なソフトウェアを使用するユーザーの正式な投稿を集めており、ワークフローの強化、業務での効率的な技術向上を目指す方への豊富な知識の拠り所になっています。誰でもこの一部になることができ、使用体験を共有することで ONLYOFFICE 製品の品質向上を手助けできます\"。",
+  "AwardTitle14" : "GetApp.comがビジネスマネジメント部門リーダーとして評価",
+  "AwardDesc14" : "「あらゆる業務プロセスを整理し生産性を向上させる多機能システムを提供します。」",
 
-  "AwardTitle16" : "ONLYOFFICE Documents - Educational App Store により評価、認定",
-  "AwardDesc16" : "\"ONLYOFFICE は学生や教育機関にとって有利なことがあります。他のオンライン クラウド サービスと比較しても価格が安く、教育費に制限がある場合があるので、とても重要なことです。ドキュメントを共同で作業し共有できる機能は、生徒の宿題を管理しながら、インスタント フィードバックや修正ファイルを送りたいと考える先生たちにはピッタリです\"。",
+  "AwardTitle15" : "GoodFirmsに信頼できる文書管理ソリューションとして掲載",
+  "AwardDesc15" : "「GoodFirmsは、様々なソフトのユーザーレビューを集める信頼できるプラットフォームです。利用者の声が製品改善に役立ちます。」",
 
-  "AwardTitle17" : "ONLYOFFICE - 2017 年度 SMB 対応クラウドサービス 上位 40 を指名　PCMag",
-  "AwardDesc17" : "\"ファイル共有、オンライン編集、プロジェクト管理、メール、カレンダーをひとつのユーザーインターフェースに統合できるビジネス ドキュメント管理をご希望なら、Ascensio System の ONLYOFFICE が一番ふさわしいツールです\"。",
+  "AwardTitle16" : "Educational App Storeが認証したONLYOFFICE Documents",
+  "AwardDesc16" : "「教育機関や学生にとって価格が魅力的で、コラボレーションやフィードバックの提供に最適です。」",
 
-  "AwardTitle18" : "ONLYOFFICE - 2019 年度最良ドキュメント管理ソフトウェアに指名　PCMag",
-  "AwardDesc18" : "\"Ascensio System ONLYOFFICE は確実なドキュメントとプロジェクト管理機能を提供し、多くのクラウドサービスに対応し、大変使いやすいです\"。",
+  "AwardTitle17" : "PCMagが選ぶ2017年中小企業向けベストクラウドサービス40選に選出",
+  "AwardDesc17" : "「文書管理、ファイル共有、オンライン編集、プロジェクト管理、メール・カレンダー統合を備えたONLYOFFICEは最適なツールです。」",
 
-  "AwardTitle19" : "ONLYOFFICE - FrontRunner を プロジェクト管理ソフトウェアに指名　Software Advice",
-  "AwardDesc19" : "\"FrontRunner は有効なエンドユーザーのレビューを評価して、使いやすさとユーザーによる推奨という基準で、小規模ビジネス向けトップ商品を決定しています。FrontRunner のプロジェクト管理ソフトウェアの全リストは、ここで利用可能です\"。",
+  "AwardTitle18" : "PCMagが選ぶ2019年ベスト文書管理ソフトウェアのひとつに選出",
+  "AwardDesc18" : "「クラウドサービスとの高い互換性と使いやすさを兼ね備えた堅実な管理機能を提供します。」",
 
-  "AwardTitle20" : "ONLYOFFICEは、Digital.comによって2020年のベストメールプロバイダーの1つとして認められていました",
-  "AwardDesc20" : "\"Digital.comは、中小企業の所有者がビジネスを次のレベルに引き上げるための適切なツールを見つけ、さまざまなカテゴリの最高のソフトウェア製品を定期的にレビューおよび比較するのに役立つオンライン出版物です。2020年に、ONLYOFFICEはベストビジネスメールプロバイダーリストのお気に入りの1つとして選ばれました\"。",
+  "AwardTitle19" : "Software Adviceがプロジェクト管理ソフトのFrontRunnerに選出",
+  "AwardDesc19" : "「実ユーザーレビューと製品データに基づき、使いやすさと推奨度で評価されています。」",
 
-  "AwardTitle21" : "Digital.com で最優良ドキュメント管理ソフトとして特集された ONLYOFFICE",
-  "AwardDesc21" : "\"Digital.com は、零細企業所有者が業務を次のレベルへ上げるのに最適なツールを探すことができるオンライン刊行物で、異なる部門の最優秀ソフトウェア製品を定期的にレビューしています。2020 年には、ONLYOFFICE が最優秀ドキュメント管理ソフトウェアでお気に入りの一つに選ばれました\"。",
+  "AwardTitle20" : "Digital.comが選ぶ2020年ベストビジネスメールプロバイダーに掲載",
+  "AwardDesc20" : "「小規模ビジネス向けに最適なツールを紹介するオンラインメディアで、ONLYOFFICEはお気に入りのひとつとして選出されました。」",
 
-  "AwardTitle22" : "Software Advice でドキュメント管理ソフトウェア トップ特集 (2020 年 6 月号) に取り上げられたONLYOFFICE ",
-  "AwardDesc22" : "\"Software Advice では、実在するソフトウェア使用者からのレビューを使用して、違う部門から上位ランクのソフトウェア商品をハイライトしています。2020 年 6 月時点で、ONLYOFFICE は北米で最優秀ドキュメント管理ソフトの一つにリストされています\"。",
-  
-  "AwardTitle23" : "2020 年度 Appvizer 最優秀オフィススイート部門のリーダーにランクされた ONLYOFFICE",
-  "AwardDesc23" : "\"MS オフィスに最も互換性のある代替製品 (テキスト ドキュメント、スプレッドシート、プレゼンテーション用オンラインエディター)。 ONLYOFFICE は、編集ツール、ファイルの共有やフォルダーの共有を提供しながら、販売処理全体の自動化を実現する CRM、プロジェクトやメールの管理、さらに個人用予定表またはグループ用予定表を提供することで、もっと先へ進みます\"。",
-  
-  "AwardTitle24" : "2020 年度 GetApps ドキュメント管理ソフトウェアで部門別リーダーになった ONLYOFFICE ",
-  "AwardDesc24" : "\"毎年、GetApps では最も人気のある部門からビジネスアプリのトップを決めて、ユーザーがうまくソフトウェアを選択できるようにしています。101 ポイント中 80 ポイントで、ONLYOFFCE は、ドキュメント管理ソフトウェア部門で、トップに入っています\"。",
+  "AwardTitle21" : "Digital.comが選ぶ2020年ベスト文書管理ソフトウェアに掲載",
+  "AwardDesc21" : "「ONLYOFFICEは2020年のベスト文書管理ソフトとしてリスト入りしました。」",
 
-  "AwardTitle25" : "Capterra の 2020 年度トップ 20 ドキュメント管理ソフトウェアで特集された ONLYOFFICE",
-  "AwardDesc25" : "\"ONLYOFFICE は、Capterra のトップ 20 ドキュメント管理ソフトの最優秀ソリューションの一つとしてリストされています。ドキュメントの作成、保存、配布などの社内ドキュメント管理の自動化、効率改善を実現し、費用と紙版記録を維持するための煩雑さを少なくします\"。",
+  "AwardTitle22" : "Software Adviceが選ぶ2020年6月トップ文書管理ソフトに掲載",
+  "AwardDesc22" : "「実ユーザーのレビューを基に選ばれるランキングで、北米の優れた製品のひとつに挙げられました。」",
 
-  "AwardTitle26" : "SourceForgeのトップパフォーマー2021年秋",
-  "AwardDesc26" : "\"ONLYOFFICEは、SourceForgeユーザーの最新のレビューに基づいて、2021年秋にSourceForgeによってトップパフォーマーとして認められました\"。",
+  "AwardTitle23" : "Appvizerが選ぶ2020年ベストオフィススイートカテゴリリーダーに選出",
+  "AwardDesc23" : "「MS Office代替として、共同編集・CRM・プロジェクト管理・カレンダー機能を提供する成長中のプラットフォームです。」",
 
-  "AwardTitle27" : "ONLYOFFICE は G2 の 2020 年度夏季ハイパフォーマンス賞を獲得しています",
-  "AwardDesc27" : "\"ONLYOFFICE は、G2 による \"最優良オフィス スイート ソフトウェア\" 一覧のトップ 10 に上げられ、関連する賞を受賞しています。このプラットフォームへの顧客満足評価度によると、ONLYOFFICE は 5 つ星中平均 4.2 星を獲得しています\"。",
+  "AwardTitle24" : "GetAppが選ぶ2020年文書管理ソフトカテゴリリーダーに選出",
+  "AwardDesc24" : "「毎年発表されるランキングで、80/100点を獲得しリーダーに選ばれました。」",
 
-  "AwardTitle28" : "ONLYOFFICEがCybernewsによる2022年ベストデジタルワークプレイス製品に選出",
-  "AwardDesc28" : "\"今日の雇用主にとってデジタルワークプレイス製品が必須であることは疑いの余地がありません。リモートワークやハイブリッドワークのスケジュールに対応し、情報のサイロ化を打破することで、オンラインワークプレイスアプリは大きな影響を与えることができます。ONLYOFFICEは、あらゆる作業ステップを整理できる多機能システムとして、Cybernewsのトップピックに選ばれています\"。",
+  "AwardTitle25" : "Capterraが選ぶ2020年トップ20文書管理ソフトに掲載",
+  "AwardDesc25" : "「文書の作成・保管・配布を自動化し、効率化とコスト削減を実現する優れたソリューションとして選ばれました。」",
 
-  "AwardTitle29" : "ONLYOFFICEは、2022年 SoftwareSuggest Recognition Winter Awardsの2022年リーダー と言うカテゴリーで受賞",
-  "AwardDesc29" : "\"ONLYOFFICEが2022年SoftwareSuggest Recognition WinterAwardsの2022年トップ パフォーマーと言うカテゴリで受賞したことをお知らせします。御社は常に顧客に献身し続けており、チームはできることを実現ます。 その結果、私たちの専門家委員会は、上記の称号を授与してあげます\"。",
+  "AwardTitle26" : "SourceForge Top Performer Fall 2021に認定",
+  "AwardDesc26" : "「SourceForgeユーザーによる最新レビューをもとにTop Performerに選出されました。」",
 
-  "AwardTitle30" : "PCMag の 2020 年度最優秀ドキュメント管理ソフトウェア トップ 10 にリストされた ONLYOFFICE",
-  "AwardDesc30" : "\"PCMag では毎年レビューを行い、ドキュメント管理ソフトウェアの分野でトップ 10 を決めています。2020 年度では、ONLYOFFICE は \"中小企業向きの効率の良いドキュメント管理システム\" として編集チームから選ばれました\"。",
+  "AwardTitle27" : "G2が授与する2020年夏High Performerバッジを受賞",
+  "AwardDesc27" : "「G2の『ベストオフィススイートソフト』リストトップ10に選ばれ、平均評価は4.2/5です。」",
 
-  "AwardTitle31" : "ONLYOFFICE wins Gold in Cloud Computing Insider Awards 2021",
-  "AwardDesc31" : "\"ONLYOFFICEは、Cloud Computing Insider 2021年、ファイル共有とコラボレーションのカテゴリでGOLDを受賞しました。これは、ドイツで最も著名な情報技術の出版社およびイベント企画社の1つであるVogelIT-Medienが提供する毎年の読者の選択です\"。",
+  "AwardTitle28" : "Cybernewsが選ぶ2022年ベストデジタルワークプレース製品に掲載",
+  "AwardDesc28" : "「リモートワークや情報共有に対応する必須ツールとして選出されました。」",
 
-  "AwardTitle32" : "ONLYOFFICEがBest Software賞を受賞しました",
-  "AwardDesc32" : "\"SAASのONLYOFFICE Workspaceが、GraphicsFamily.comの「BEST SOFTWARE AWARD」の審査を受け、受賞しました\"。",
+  "AwardTitle29" : "SoftwareSuggest Recognition Winter Awards 2022でHigh Performer 2022賞を受賞",
+  "AwardDesc29" : "「顧客に真摯に向き合い成果を出してきた証として、審査員団より表彰されました。」",
 
-  "AwardTitle33" : "ONLYOFFICEがCloud Computing Insider Awards 2022で金賞を受賞しました",
-  "AwardDesc33" : "\"ONLYOFFICEはCloud Computing Insider Awards 2022のクラウドコンテンツ管理部門で金賞を受賞し、2年連続でトップ3に入りました\"。",
+  "AwardTitle30" : "PCMagが選ぶ2020年トップ10文書管理ソフトに掲載",
+  "AwardDesc30" : "「中小企業向けに効果的な文書管理システムとして選ばれました。」",
 
-  "AwardTitle34" : "IT Awards 2023でONLYOFFICEがプラチナ賞を受賞",
-  "AwardDesc34" : "\"ONLYOFFICEはCloud Computing Insider Readers' Choice Awardsのクラウドコンテンツ管理部門で1位を獲得しました。Insider IT-Awardsは、ドイツで最も著名な情報技術関連の出版社でありイベント主催者であるVogel IT-Medienが毎年主催する読者投票です\"。"
+  "AwardTitle31" : "Cloud Computing Insider Awards 2021で金賞を受賞",
+  "AwardDesc31" : "「ファイル共有＆コラボレーション部門で金賞を獲得しました。」",
+
+  "AwardTitle32" : "GraphicsFamily.comが選ぶベストソフトウェア賞を受賞",
+  "AwardDesc32" : "「ONLYOFFICE Workspaceは“BEST SOFTWARE AWARD”を授与されました。」",
+
+  "AwardTitle33" : "Cloud Computing Insider Awards 2022で金賞を受賞",
+  "AwardDesc33" : "「クラウドコンテンツ管理部門で2年連続トップ3入りを果たしました。」",
+
+  "AwardTitle34" : "ITアワード2023でプラチナ賞を受賞",
+  "AwardDesc34" : "「Cloud Computing Insider読者投票アワードのクラウドコンテンツ管理部門で第1位を獲得しました。」"
 }

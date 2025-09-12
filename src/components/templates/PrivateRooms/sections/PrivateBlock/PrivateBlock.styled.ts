@@ -3,6 +3,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const PrivateRoomBlock = styled.div`
   background-color: #ffffff;
   background-position: center 0;
@@ -100,7 +101,7 @@ const StyledPrivateCardColLeft = styled(Text)`
   width: 450px;
 
   &::before {
-    background-image: url("/images/templates/private-rooms/how-it-works/yes-no.svg");
+    background-image: url(${getAssetUrl('/images/templates/private-rooms/how-it-works/yes-no.svg')});
     background-repeat: no-repeat;
     background-position: -35px 50%;
     content: '';
@@ -140,7 +141,7 @@ const StyledPrivateCardColRight = styled(Text)`
   width: 450px;
 
   &::before {
-    background-image: url("/images/templates/private-rooms/how-it-works/yes-no.svg");
+    background-image: url(${getAssetUrl('/images/templates/private-rooms/how-it-works/yes-no.svg')});
     background-repeat: no-repeat;
     background-position: 0 50%;
     content: '';

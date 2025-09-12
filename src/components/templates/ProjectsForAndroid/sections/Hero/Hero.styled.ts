@@ -5,6 +5,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #f9f9f9;
@@ -105,7 +106,7 @@ const StyledButton = styled(Button)<{$locale?: string; $HeroImgUrl: string }>`
 `;
 
 const StyledHeroImage = styled.div`
-  background-image: url("/images/templates/projects-for-android/hero/project-head-img.svg");
+  background-image: url(${getAssetUrl('/images/templates/projects-for-android/hero/project-head-img.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   height: 538px;

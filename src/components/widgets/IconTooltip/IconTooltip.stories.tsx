@@ -2,6 +2,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import { IconTooltip } from "./IconTooltip";
 import { IIconTooltip } from "./IconTooltip.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Widgets/IconTooltip",
   component: IconTooltip,
@@ -22,6 +23,6 @@ const Template: StoryFn<IIconTooltip> = (args: IIconTooltip) => {
 export const Default = Template.bind({});
 Default.args = {
   id: "tooltip-1",
-  icon: { url: "/images/storybook/widgets/icon-tooltip/icons.svg" },
+  icon: { url: getAssetUrl("/images/storybook/widgets/icon-tooltip/icons.svg") },
   tooltipLabel: "Tooltip label",
 };

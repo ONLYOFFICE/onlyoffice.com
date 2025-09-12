@@ -1,0 +1,42 @@
+{
+  "PageTitle": "Teamlabについてのご意見 | ONLYOFFICE",
+  "PageDescription": "ONLYOFFICEの機能：オンライン文書エディター、文書管理、プロジェクト管理、ガントチャート、CRMシステム、ビジネスコラボレーション、カレンダーなど。",
+
+  "PleaseShareYourImpressions": "ONLYOFFICE Server Editionの使用感についてご意見をお聞かせください。いただいたご意見は、製品改善に役立てます。",
+  "WhichOperatingSystem": "ONLYOFFICE Server EditionをインストールしたOSは？",
+  "HowManyUsersAre": "ONLYOFFICE Server Editionポータルのユーザー数は？",
+  "OrMore": "以上",
+  "WhoIsResponsibleForTheServer": "御社でサーバー導入・保守を担当しているのは？",
+  "WhichModulesDoYouUse": "最もよく使っている、または今後利用予定のモジュールは？",
+  "Documents": "ドキュメント",
+  "CRM": "CRM",
+  "Community": "コミュニティ",
+  "Calendar": "カレンダー",
+  "Projects": "プロジェクト",
+  "People": "メンバー",
+  "Mail": "メール",
+
+  "HaveYouAlreadyTried": "すでにONLYOFFICE Server Editionをお試しになりましたか？",
+  "DidYouHaveAnyIssues": "インストール時に問題はありましたか？",
+  "Yes": "はい",
+  "No": "いいえ",
+  "DidYouFindTheInstallation": "インストールは直感的で簡単だと感じましたか？",
+  "NotSure": "よくわからない",
+
+  "ToWhatDegreeThisVersion": "今回のバージョンの機能は期待にどの程度応えましたか？",
+  "MeetAbsolutely": "完全に応えた",
+  "MeetSomewhat": "ある程度応えた",
+  "DoNotMeet": "応えていない",
+
+  "DoYouPlanToUseTheAdditional": "今後、有料サポートを利用する予定はありますか？",
+  "Probably": "おそらく",
+
+  "PleaseLeaveYourComments": "ご意見・ご要望をぜひお書きください。今後のバージョン開発に反映します：",
+  "SendFeedback": "フィードバックを送信",
+  "PleaseWait": "送信中…",
+  "SendInstallFeedbackSuccessful": "インストールフィードバック送信成功",
+  "ThankYouForYourTimeAndGoodLuck": "ご協力ありがとうございました！",
+  "OK": "OK",
+  "SendInstallFeedbackError": "インストールフィードバック送信エラー",
+  "WeAreSorryBut": "申し訳ありません、エラーが発生しました。後でもう一度お試しください"
+}

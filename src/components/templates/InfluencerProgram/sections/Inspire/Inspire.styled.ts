@@ -1,6 +1,7 @@
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledInspireWrapper = styled.div`
   margin-top: 56px;
   display: grid;
@@ -24,7 +25,7 @@ const StyledInspireWrapper = styled.div`
 const StyledInspireImage = styled.div`
   width: 100%;
   padding-bottom: 55.157%;
-  background-image: url("/images/templates/influencer-program/inspire/inspire.svg");
+  background-image: url(${getAssetUrl('/images/templates/influencer-program/inspire/inspire.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

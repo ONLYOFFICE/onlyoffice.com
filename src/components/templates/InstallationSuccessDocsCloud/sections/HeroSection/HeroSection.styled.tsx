@@ -4,10 +4,11 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const HeroBackground = styled(Section)`
   background-image:
-    url("/images/templates/installation-success-docs-cloud/hero/dots.png"),
-    url("/images/templates/installation-success-docs-cloud/hero/bg.svg");
+    url(${getAssetUrl('/images/templates/installation-success-docs-cloud/hero/dots.png')}),
+    url(${getAssetUrl('/images/templates/installation-success-docs-cloud/hero/bg.svg')});
   background-repeat: no-repeat, no-repeat;
   background-position:
     center 72px,
@@ -30,7 +31,7 @@ const HeroBackground = styled(Section)`
 
 const HeadingIcon = styled.div`
   display: block;
-  background-image: url("/images/templates/installation-success-docs-cloud/hero/success-logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/installation-success-docs-cloud/hero/success-logo.svg')});
   background-repeat: no-repeat;
   background-size: 48px;
   content: "";
@@ -93,7 +94,7 @@ const StepsWrapper = styled.div`
 
 const StepsImage = styled.div`
   aspect-ratio: 1.113;
-  background-image: url("/images/templates/installation-success-docs-cloud/hero/letter.svg");
+  background-image: url(${getAssetUrl('/images/templates/installation-success-docs-cloud/hero/letter.svg')});
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -159,7 +160,7 @@ const StepContentText = styled.li`
   line-height: 1.33em;
 
   &:before {
-    background: url("/images/templates/installation-success-docs-cloud/hero/tick.svg");
+    background: url(${getAssetUrl('/images/templates/installation-success-docs-cloud/hero/tick.svg')});
     background-repeat: no-repeat;
     border: none;
     border-radius: unset;

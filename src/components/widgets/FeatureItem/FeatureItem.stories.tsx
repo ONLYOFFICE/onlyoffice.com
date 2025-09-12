@@ -2,6 +2,7 @@ import { FeatureItem } from "./FeatureItem";
 import { IFeatureItem } from "./FeatureItem.types";
 import { Meta, StoryFn } from "@storybook/react";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Widgets/FeatureItem",
   component: FeatureItem,
@@ -48,14 +49,14 @@ const Template: StoryFn<IFeatureItem> = (args: IFeatureItem) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  icon: { url: "/images/storybook/widgets/feature-item/working.svg" },
+  icon: { url: getAssetUrl("/images/storybook/widgets/feature-item/working.svg") },
   text: "Working with office files directly within the Box frontend",
 };
 
 export const Vertical = Template.bind({});
 Vertical.args = {
   variant: "vertical",
-  icon: { url: "/images/storybook/widgets/feature-item/working.svg" },
+  icon: { url: getAssetUrl("/images/storybook/widgets/feature-item/working.svg") },
   heading: "Heading",
   text: "Working with office files directly within the Box frontend",
 };
@@ -63,7 +64,7 @@ Vertical.args = {
 export const Horizontal = Template.bind({});
 Horizontal.args = {
   variant: "horizontal",
-  icon: { url: "/images/storybook/widgets/feature-item/working.svg" },
+  icon: { url: getAssetUrl("/images/storybook/widgets/feature-item/working.svg") },
   heading: "Heading",
   text: "Working with office files directly within the Box frontend",
 };

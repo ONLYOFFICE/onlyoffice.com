@@ -4,6 +4,7 @@ import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledComplianceHeading = styled(Heading)`
     font-size: 32px;
     font-weight: bold;
@@ -59,7 +60,7 @@ const StyledFeatureItem = styled.div`
 
     &::before {
         content: "";
-        background-image: url("/images/templates/security/compliance/sec_icons.svg");
+        background-image: url(${getAssetUrl('/images/templates/security/compliance/sec_icons.svg')});
         background-position: 0 0;
         background-size: cover;
         display: block;

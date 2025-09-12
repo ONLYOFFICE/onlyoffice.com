@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items = [
   {
     items: [
@@ -67,7 +68,7 @@ export const items = [
         connectorsItems: [
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 235,
               height: 40,
               positionY: "-269px",
@@ -76,7 +77,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 173,
               height: 40,
               positionY: "-315px",
@@ -85,7 +86,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 215,
               height: 40,
               positionY: "-363px",
@@ -94,7 +95,7 @@ export const items = [
           },
         ],
         quote: {
-          icon: "/images/templates/for-small-business/features/quote-icon.svg",
+          icon: getAssetUrl("/images/templates/for-small-business/features/quote-icon.svg"),
           text: "Quote2",
           author: "Quote2Author",
           info: "Quote2Info",
@@ -170,7 +171,7 @@ export const items = [
         connectorsItems: [
           {
             image: {
-              url: "/images/templates/for-enterprises/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-enterprises/features/icons.svg"),
               width: 183,
               height: 40,
               positionY: "-415px",
@@ -179,7 +180,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 96,
               height: 40,
               positionY: "-458px",
@@ -188,7 +189,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 162,
               height: 30,
               positionY: "-50px",
@@ -197,7 +198,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 220,
               height: 40,
               positionY: "-545px",
@@ -206,7 +207,7 @@ export const items = [
           },
         ],
         quote: {
-          icon: "/images/templates/for-small-business/features/quote-icon.svg",
+          icon: getAssetUrl("/images/templates/for-small-business/features/quote-icon.svg"),
           text: "Quote3",
           author: "Quote3Author",
           info: "Quote3Info",
@@ -251,7 +252,7 @@ export const items = [
         connectorsItems: [
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 96,
               height: 40,
               positionY: "-458px",
@@ -260,7 +261,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 111,
               height: 40,
               positionY: "-180px",
@@ -269,7 +270,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 98,
               height: 40,
               positionY: "-225px",
@@ -311,7 +312,7 @@ export const items = [
         connectorsItems: [
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 96,
               height: 40,
               positionY: "-458px",
@@ -320,7 +321,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 156,
               height: 40,
               positionY: "0px",
@@ -329,7 +330,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 162,
               height: 30,
               positionY: "-50px",
@@ -338,7 +339,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 115,
               height: 40,
               positionY: "-85px",
@@ -347,7 +348,7 @@ export const items = [
           },
           {
             image: {
-              url: "/images/templates/for-small-business/features/icons.svg",
+              url: getAssetUrl("/images/templates/for-small-business/features/icons.svg"),
               width: 72,
               height: 40,
               positionY: "-132px",
@@ -356,7 +357,7 @@ export const items = [
           },
         ],
         quote: {
-          icon: "/images/templates/for-small-business/features/quote-icon.svg",
+          icon: getAssetUrl("/images/templates/for-small-business/features/quote-icon.svg"),
           text: "Quote5",
           author: "Quote5Author",
           info: "Quote5Info",

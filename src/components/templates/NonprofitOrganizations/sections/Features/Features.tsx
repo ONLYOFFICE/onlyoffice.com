@@ -4,6 +4,7 @@ import { Container } from "@src/components/ui/Container";
 import { Button } from "@src/components/ui/Button";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledFeaturesButtonWrapper,
   StyledFeaturesFeatureImageItem,
@@ -71,7 +72,7 @@ const Features = () => {
             </>
           }
           image={{
-            url: "/images/templates/nonprofit-organizations/features/feature-image.svg"
+            url: getAssetUrl("/images/templates/nonprofit-organizations/features/feature-image.svg")
           }}
           position={{
             desktop: "right",

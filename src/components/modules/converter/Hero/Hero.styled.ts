@@ -3,9 +3,10 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/modules/converter/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/modules/converter/hero/bg.svg')});
   background-position: top;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -30,7 +31,7 @@ const StyledHeroBody = styled.div`
     right: calc(100% + 16px);
     width: 332px;
     height: 460px;
-    background-image: url("/images/modules/converter/hero/decor-left.svg");
+    background-image: url(${getAssetUrl('/images/modules/converter/hero/decor-left.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     pointer-events: none;
@@ -47,7 +48,7 @@ const StyledHeroBody = styled.div`
     left: calc(100% + 78px);
     width: 304px;
     height: 480px;
-    background-image: url("/images/modules/converter/hero/decor-right.svg");
+    background-image: url(${getAssetUrl('/images/modules/converter/hero/decor-right.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     pointer-events: none;

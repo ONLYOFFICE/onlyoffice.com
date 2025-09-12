@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledGiftBanner = styled.div`
   display: flex;
   align-items: center;
@@ -32,7 +33,7 @@ const StyledGiftBannerImage = styled.div`
   width: 158px;
   min-width: 158px;
   height: 205px;
-  background-image: url("/images/templates/subscribe/gift.svg");
+  background-image: url(${getAssetUrl('/images/templates/subscribe/gift.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 

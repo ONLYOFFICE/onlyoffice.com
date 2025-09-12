@@ -1,6 +1,7 @@
 import { Link } from "@src/components/ui/Link";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   ICompatibilityAlternative,
   ICompatibilityItem,
@@ -37,9 +38,9 @@ const StyledCompatibilityTopTextLink = styled(Link)<{ $type: "docx" | "xlsx" }>`
     margin: 0 5px;
     background-image: ${({ $type }) =>
       $type === "docx"
-        ? "url('/images/modules/best-alternative/best-alternative-compatibility/file_docx.svg')"
+        ? `url(${getAssetUrl('/images/modules/best-alternative/best-alternative-compatibility/file_docx.svg')})`
         : $type === "xlsx"
-        ? "url('/images/modules/best-alternative/best-alternative-compatibility/file_xlsx.svg')"
+        ? `url(${getAssetUrl('/images/modules/best-alternative/best-alternative-compatibility/file_xlsx.svg')})`
         : undefined};
   }
 `;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledLearnMoreBtnWrapper = styled.div`
   margin-top: 72px;
   text-align: center;
@@ -54,7 +55,7 @@ const StyledLearnMoreCloseBtn = styled.button`
   width: 24px;
   height: 24px;
   background-color: transparent;
-  background-image: url("/images/icons/cross.svg");
+  background-image: url(${getAssetUrl('/images/icons/cross.svg')});
   cursor: pointer;
 `;
 

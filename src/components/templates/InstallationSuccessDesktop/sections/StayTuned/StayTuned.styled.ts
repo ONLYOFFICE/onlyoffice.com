@@ -5,6 +5,7 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledStayTunedSection = styled(Section)`
   overflow: hidden;
 `;
@@ -20,7 +21,7 @@ const StyledStayTunedContainer = styled(Container)`
     bottom: -67px;
     width: 1403px;
     height: 939px;
-    background-image: url("/images/templates/installation-success-desktop/stay-tuned/left.svg");
+    background-image: url(${getAssetUrl('/images/templates/installation-success-desktop/stay-tuned/left.svg')});
     background-repeat: no-repeat;
 
     @media ${device.tablet} {
@@ -61,7 +62,7 @@ const StyledStayTunedContainer = styled(Container)`
     bottom: -152px;
     width: 972px;
     height: 757px;
-    background-image: url("/images/templates/installation-success-desktop/stay-tuned/right.svg");
+    background-image: url(${getAssetUrl('/images/templates/installation-success-desktop/stay-tuned/right.svg')});
     background-repeat: no-repeat;
 
     @media ${device.tablet} {
@@ -121,7 +122,7 @@ const StyledStayTunedTitle = styled(Heading)`
     transform: translateX(-50%);
     width: 48px;
     height: 48px;
-    background-image: url("/images/templates/installation-success-desktop/stay-tuned/logo.svg");
+    background-image: url(${getAssetUrl('/images/templates/installation-success-desktop/stay-tuned/logo.svg')});
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -195,7 +196,7 @@ const StyledForm = styled.form<{ $locale?: string }>`
       left: 0;
       right: 0;
       margin: 0 auto;
-      background-image: url("/images/templates/installation-success-desktop/stay-tuned/triangle.svg");
+      background-image: url(${getAssetUrl('/images/templates/installation-success-desktop/stay-tuned/triangle.svg')});
       background-repeat: no-repeat;
       width: 17px;
       height: 9px;

@@ -2,6 +2,7 @@ import type { Meta, StoryFn } from "@storybook/react";
 import { BestAlternativePresentation } from "./BestAlternativePresentation";
 import { IBestAlternativePresentation } from "./BestAlternativePresentation.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Modules/Best-alternative/BestAlternativePresentation",
   component: BestAlternativePresentation,
@@ -41,7 +42,7 @@ Default.args = {
     ariaLabel: "Presentation ONLYOFFICE vs Google Docs",
   },
   image: {
-    src: "/images/storybook/modules/best-alternative/best-alternative-presentation/presentation.jpg",
+    src: getAssetUrl("/images/storybook/modules/best-alternative/best-alternative-presentation/presentation.jpg"),
     alt: "ONLYOFFICE Docs vs Google Docs",
   },
 };

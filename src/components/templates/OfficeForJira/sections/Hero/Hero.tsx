@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHero,
   StyledHeroWrapper,
@@ -48,7 +49,7 @@ const Hero = () => {
         </StyledHeroWrapper>
 
         <StyledHeroImg
-          $imgUrl={t("HeroImgUrl")}
+          $imgUrl={getAssetUrl(t("HeroImgUrl"))}
           $imgUrl2x={t("HeroImgUrl2x")}
         />
       </Container>

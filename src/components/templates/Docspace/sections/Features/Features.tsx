@@ -4,6 +4,7 @@ import { StyledSection, StyledFeatureImageItem } from "./Features.styled";
 import { useTranslation } from "next-i18next";
 import { ILocale } from "@src/types/locale";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Features = ({ locale }: ILocale) => {
   const { t } = useTranslation("docspace");
 
@@ -30,7 +31,7 @@ const Features = ({ locale }: ILocale) => {
                 : link.href,
           }))}
           image={{
-            url: t(item.image.url),
+            url: getAssetUrl(t(item.image.url)),
             height: item.image.height,
             width: item.image.width,
           }}

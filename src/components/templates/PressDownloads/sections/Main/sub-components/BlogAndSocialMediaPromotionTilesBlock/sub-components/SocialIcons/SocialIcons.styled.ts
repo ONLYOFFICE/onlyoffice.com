@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import Link from "next/link";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSocialIcons = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -22,7 +23,7 @@ const StyledWeChatQRCode = styled.div`
   top: -285px;
   left: -85px;
   background-color: #ffffff;
-  background-image: url("/images/modules/social-icons/qrcode_for_wechat.jpg");
+  background-image: url(${getAssetUrl('/images/modules/social-icons/qrcode_for_wechat.jpg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
@@ -85,7 +86,7 @@ const BaseSocialIcon = css<{ $iconPosition?: string; $iconUrl?: string }>`
   background-image: ${(props) =>
     props.$iconUrl
       ? `url("${props.$iconUrl}")`
-      : 'url("/images/modules/social-icons/social-icons.svg")'};
+      : `url(${getAssetUrl('/images/modules/social-icons/social-icons.svg')})`};
   background-position-x: ${(props) => props.$iconPosition || "0"};
   background-position-y: center;
   background-size: ${(props) => (props.$iconUrl ? "contain" : "auto 40px")};

@@ -2,6 +2,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { device } from "@src/utils/device";
 import styled, { keyframes } from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const fadeInRight = keyframes`
   0% {
     opacity: 0;
@@ -46,7 +47,7 @@ const StyledBenefitTitle = styled.button<{ $isActive: boolean }>`
   color: ${({ $isActive }) => ($isActive ? "#333333" : "#CCCCCC")};
   background-image: ${({ $isActive }) =>
     $isActive
-      ? "url('/images/templates/education/benefits/line.svg')"
+      ? `url(${getAssetUrl('/images/templates/education/benefits/line.svg')})`
       : "none"};
   background-repeat: no-repeat;
   background-position: 0 bottom;

@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHero,
   StyledContainer,
@@ -86,12 +87,12 @@ const Hero = () => {
           </StyledAccountContainer>
           {locale === "zh" ? (
             <StyledHeroImg
-              $imgUrl="/images/templates/docspace/hero/zh/hero.png"
+              $imgUrl={getAssetUrl("/images/templates/docspace/hero/zh/hero.png")}
               $imgUrl2x="/images/templates/docspace/hero/zh/hero@2x.png"
             />
           ) : (
             <YouTubeCard
-              videoImgUrl="/images/templates/docspace/hero/yt-cover.png"
+              videoImgUrl={getAssetUrl("/images/templates/docspace/hero/yt-cover.png")}
               videoUrl="https://www.youtube.com/embed/DU14HFeZErU?si=_TiGQD8IP8qG1hLe"
               border
             />

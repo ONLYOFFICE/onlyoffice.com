@@ -2,10 +2,11 @@ import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #1d2d44;
-  background-image: url("/images/templates/office-for-owncloud/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-owncloud/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: calc(50% - 24px) -229px;
 
@@ -36,7 +37,7 @@ const StyledHeroLogo = styled.div`
   margin: 0 auto;
   width: 98px;
   height: 56px;
-  background-image: url("/images/templates/office-for-owncloud/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-owncloud/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 `;

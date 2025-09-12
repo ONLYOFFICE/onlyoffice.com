@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledWhatContent,
   StyledWhatSubheading,
@@ -64,7 +65,7 @@ const WhatIs = () => {
           <WatchVideo
             heading={t("Webinar")}
             customLabel={t("WatchOurWebinar")}
-            videoImgUrl="/images/templates/automation-api/what-is/automation_api_webinar.jpg"
+            videoImgUrl={getAssetUrl("/images/templates/automation-api/what-is/automation_api_webinar.jpg")}
             videoUrl="https://www.youtube.com/embed/d45OkcDZtNE"
           />
         </StyledWhatContent>
