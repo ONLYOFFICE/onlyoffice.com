@@ -63,6 +63,7 @@ const StyledPartnersCardItemImg = styled.div.attrs<{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  margin: 0 auto;
 
   @media ${device.tabletS} {
     width: 126px;
