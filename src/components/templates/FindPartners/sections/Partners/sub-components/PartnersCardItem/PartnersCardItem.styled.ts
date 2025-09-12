@@ -213,7 +213,9 @@ const StyledPartnersLevel = styled.div<{
   position: absolute;
   top: 0;
   left: 15px;
-  background-image: ${({ $icon }) => `url(${$icon})`};
+  background-image: ${({ $icon }) => css`
+    url(${getAssetUrl($icon)})
+  `};
 
   @media ${device.tabletS} {
     left: auto;
