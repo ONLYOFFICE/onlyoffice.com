@@ -16,8 +16,10 @@ declare module "onlyoffice-react-ui-kit/footer" {
     languages: {
       shortKey: string;
       name: string;
-      href: string
+      href: string;
     }[];
+    mailApiUrl: string;
+    mailApiType: "Common" | "AppServer" | "Opensource";
   }
 
   export const OOFooter: React.FC<IFooter>;
@@ -34,12 +36,12 @@ declare module "onlyoffice-react-ui-kit/header" {
       key: string;
       shortKey: string;
       name: string;
-      href: string
+      href: string;
     }[];
     search: {
       show: boolean;
-      onSubmit: () => void;
-      onChange: () => void;
+      onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+      onChange: React.ChangeEventHandler<HTMLInputElement>;
       value: string;
       variant: "main" | "secondary";
     };

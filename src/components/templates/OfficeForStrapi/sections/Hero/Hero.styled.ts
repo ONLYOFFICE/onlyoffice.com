@@ -50,8 +50,8 @@ export const StyledHeroLogo = styled.div`
   }
 `;
 
-export const StyledHeroHeader = styled.div`
-  max-width: 800px;
+export const StyledHeroHeader = styled.div<{ $locale?: string }>`
+  max-width: ${({ $locale }) => ($locale === "fr" ? "928px" : "800px")};
 
   h1 {
     margin-bottom: 16px;

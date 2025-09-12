@@ -17,7 +17,7 @@ interface ICardsDataItemProp {
   price: string;
   description: string;
   new?: boolean;
-  course?: string;
+  course: string;
 };
 
 interface ICardsDataItem extends ICardsDataItemProp {
@@ -28,7 +28,7 @@ interface ICardsDataItem extends ICardsDataItemProp {
 interface ICardFormProp {
   openModal: boolean;
   setOpenModal: React.Dispatch<React.SetStateAction<boolean>>;
-  course?: string;
+  course: string;
 }
 
 interface IFormData {

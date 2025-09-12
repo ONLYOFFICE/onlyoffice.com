@@ -58,7 +58,7 @@
   "NameSurname": "Name Surname",
   "FullNameIsEmpty": "氏名が入力されていません",
   "FullNameIsIncorrect": "氏名が正しくありません",
-  "Email": "メールアドレス*",
+  "Email": "メールアドレス",
   "Name": "name@domain.com",
   "EmailIsEmpty": "メールが入力されていません",
   "EmailIsIncorrect": "メールが正しくありません",

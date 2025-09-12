@@ -1,0 +1,54 @@
+{
+  "PageTitle": "高效协作处理各类办公文档 | ONLYOFFICE",
+  "PageDescription": "实时共享、共同编辑和交流，更快完成任务",
+
+  "Header": "<0>高效协作处理</0>各类办公文档",
+  "SubHeader": "实时共享、共同编辑和交流，更快完成任务",
+  "EnterYourEmail": "输入您的邮箱",
+  "CreateNow": "立即注册",
+  "HeroImgUrl": "/images/templates/seamless-collaboration/hero/zh/sc-header.png",
+  "HeroImgUrl2x": "/images/templates/seamless-collaboration/hero/zh/sc-header@2x.png",
+
+  "SwitcherTitle1": "共享",
+  "SwitcherTitle2": "协作编辑",
+  "SwitcherTitle3": "批注",
+  "SwitcherTitle4": "交流",
+  "SwitcherTitle5": "追踪更改",
+  "SwitcherTitle6": "比较与合并",
+  "SwitcherTitle7": "管理版本历史",
+
+  "Feature1Title": "共享文档，设置访问权限",
+  "Feature1Desc": "共享文本文档、电子表格、演示文稿和 PDF 文件，选择可查看、可编辑、可批注或可审阅等共享模式。创建随时可填写的表单，让其他用户填写。设置自定义过滤权限，让协作者独立过滤数据。<2>共享所选范围的链接，让同事快速找到所需的数据。</2>限制文档复制、下载和打印。向外部用户共享文件。",
+  "Feature1ImgUrl": "/images/templates/seamless-collaboration/features/zh/share-docs-providing-flexible-permissions.png",
+  "Feature1ImgUrl2x": "/images/templates/seamless-collaboration/features/zh/share-docs-providing-flexible-permissions@2x.png",
+
+  "Feature2Title": "共同编辑，毫无压力",
+  "Feature2Desc": "在线实时共同编辑文档，使用快速模式在输入后立即显示所有更改。 启用严格模式，锁定您编辑的段落，不受干扰地处理内容。",
+  "Feature2ImgUrl": "/images/templates/seamless-collaboration/features/zh/co-edit-without-stress.png",
+  "Feature2ImgUrl2x": "/images/templates/seamless-collaboration/features/zh/co-edit-without-stress@2x.png",
+
+  "Feature3Title": "批注与提及",
+  "Feature3Desc": "留下批注，讨论文档中的问题。在批注中提及用户，共享文件并邀请他们合作。管理批注，按作者或日期进行排序。",
+  "Feature3ImgUrl": "/images/templates/seamless-collaboration/features/zh/comment-mention.png",
+  "Feature3ImgUrl2x": "/images/templates/seamless-collaboration/features/zh/comment-mention@2x.png",
+
+  "Feature4Title": "交流",
+  "Feature4Desc": "直接在文档中与协作者聊天。启用 Jitsi 或 Rainbow 插件，拨打音频电话、组织视频会议。",
+  "Feature4ImgUrl": "/images/templates/seamless-collaboration/features/zh/communicate.png",
+  "Feature4ImgUrl2x": "/images/templates/seamless-collaboration/features/zh/communicate@2x.png",
+
+  "Feature5Title": "追踪更改",
+  "Feature5Desc": "启用追踪更改功能，查看其他用户所做的更改。接受或拒绝更改。选择显示您所做更改的方式。",
+  "Feature5ImgUrl": "/images/templates/seamless-collaboration/features/zh/track-changes.png",
+  "Feature5ImgUrl2x": "/images/templates/seamless-collaboration/features/zh/track-changes@2x.png",
+
+  "Feature6Title": "比较与合并",
+  "Feature6Desc": "快速比较两个文档，发现两个文档之间的差异。导航更改，接受或拒绝更改。合并两个文档。",
+  "Feature6ImgUrl": "/images/templates/seamless-collaboration/features/zh/compare-combine.png",
+  "Feature6ImgUrl2x": "/images/templates/seamless-collaboration/features/zh/compare-combine@2x.png",
+
+  "Feature7Title": "管理版本历史",
+  "Feature7Desc": "访问文档的版本历史记录，查看每个版本的创建者及其创建时间，以及所做的更改。您可以查看并恢复之前的版本，包括已删除的内容。",
+  "Feature7ImgUrl": "/images/templates/seamless-collaboration/features/zh/manage-versions.png",
+  "Feature7ImgUrl2x": "/images/templates/seamless-collaboration/features/zh/manage-versions@2x.png"
+}

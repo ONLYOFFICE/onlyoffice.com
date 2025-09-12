@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Visualización y edición de documentos en Strapi | ONLYOFFICE Docs",
+  "PageDescription": "Edita archivos DOCX, XLSX y PPTX, y colabora en los contenidos en Strapi",
+
+  "OnlineOfficeForConnector": "Suite ofimática en línea para <0>Strapi</0>",
+  "Subheader": "Edita y colabora en los archivos de oficina añadidos a la biblioteca multimedia de Strapi utilizando ONLYOFFICE Docs",
+  "GetStarted": "Empezar",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Totalmente compatible con docx, xlsx y pptx",
+
+  "MarketplaceConnectorTitle": "Diseñado para una integración perfecta con Strapi",
+  "MarketplaceConnectorDescription": "Obtén el conector ONLYOFFICE para Strapi ahora desde el <0>Mercado de Strapi</0> o el <1>directorio nmp</1>.",
+  "GetItNow": "Obtener ahora",
+
+  "WhyOO": "Por qué ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs es una suite ofimática autoalojada para trabajar con documentos de texto, hojas de cálculo, presentaciones y formularios",
+  "Reason1": "Plugin de integración <0>listo para usar</0>",
+  "Reason2": "Instalación sencilla desde el <0>Mercado de Strapi</0> y configuración rápida",
+  "Reason3": "<0>Interfaz intuitiva</0> con pestañas",
+  "Reason4": "<0>Múltiples</0> herramientas de edición, formato y estilo",
+  "Reason5": "<0>Colaboración en tiempo real</0>, seguimiento de cambios, comentarios, chat",
+  "Reason6": "<0>Versión gratuita Community</0> y versión <0>escalable Enterprise</0>",
+  "Reason7": "<0>Protección de JWT</0> contra el acceso no autorizado",
+  "Reason8": "<0>Código abierto</0> disponible en GitHub",
+
+  "HowToStart": "Cómo empezar",
+  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una cuenta en <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtén el conector ONLYOFFICE desde el <0>Mercado de Strapi</0> o el <1>directorio npm</1>.",
+  "HowToStartStep3": "Configura el conector y activa JWT.",
+
+  "ReadDetailedInstructions": "Lee las instrucciones detalladas en el <0>Centro de ayuda</0>",
+
+  "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE Docs a tu servicio web favorito? ¿O has desarrollado una?"
+}

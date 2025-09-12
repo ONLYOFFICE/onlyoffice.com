@@ -1,0 +1,55 @@
+{
+  "PageTitle": "フォーム記入ルームでに回答を収集し、分析します",
+  "PageDescription": "ONLYOFFICE DocSpaceを使用してフォーム記入過程を簡単にします",
+
+  "EasilyCollectAndAnalyze": "<0>フォーム記入ルーム</0>で簡単に回答を収集し、分析します。",
+  "OrganizeStraightforwardFormFilling": "ONLYOFFICE DocSpaceを使用してフォーム記入過程を簡単にします：",
+
+  "EasyFormUploading": "簡単にフォームのアップロード",
+  "QuickSharing": "素早い共有",
+  "IntuitiveProcess": "フォーム記入の直感的なプロセス",
+  "ConvenientAnalyzing": "回答の便利な分析 ",
+  "CostEffectiveForAnyBudget": "どのような予算にも対応できる費用対効果",
+
+  "CreateFreeAccount": "無料アカウントを登録",
+
+  "HeroImgUrl": "/images/templates/form-filling-rooms/hero/form-filling-rooms-video.png",
+  "HeroImgUrl2x": "/images/templates/form-filling-rooms/hero/form-filling-rooms-video@2x.png",
+
+  "EasyFormUploadingDesc": "DocSpaceかデバイスから簡単にPDFフォームをアップロードします。その他、統合されたテンプレートライブラリを利用して、多数の準備ができて PDF テンプレートの中から選択してみてください。",
+  "EasyFormUploadingUrl": "/images/templates/form-filling-rooms/features/en/easy.png",
+  "EasyFormUploadingUrl2x": "/images/templates/form-filling-rooms/features/en/easy@2x.png",
+
+  "QuickSharingDesc": "アップロードされたPDFフォームを記入するために、ユーザをルームに招待してください。または外部アクセスリンクを作成し、関係者に共有できます。",
+  "QuickSharingUrl": "/images/templates/form-filling-rooms/features/en/quick.png",
+  "QuickSharingUrl2x": "/images/templates/form-filling-rooms/features/en/quick@2x.png",
+
+  "IntuitiveProcessDesc": "誰にも簡単な過程。フィールド間を移動するため「前のフィールド」と「次のフィールド」のボタンを使用してください。必要なければ、ズームかページと幅に合わせることに設定してください。準備ができたら、「記入＆提出」ボタンを押してください。",
+  "IntuitiveProcessUrl": "/images/templates/form-filling-rooms/features/en/intuitive.png",
+  "IntuitiveProcessUrl2x": "/images/templates/form-filling-rooms/features/en/intuitive@2x.png",
+
+  "ConvenientAnalyzingDesc": "フォームをチエック、スプレッドシートで自動的に収集された情報を分析します。すべての動作を一つのルームの中に。",
+  "ConvenientAnalyzingUrl": "/images/templates/form-filling-rooms/features/en/analyzing.png",
+  "ConvenientAnalyzingUrl2x": "/images/templates/form-filling-rooms/features/en/analyzing@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "管理者のみ有料で、通常のユーザーとゲストは無料で何人でも追加できます。小規模チーム向けの無料STARTUPプランも利用可能。ONLYOFFICE DocSpaceは、中小企業でも大企業でも、すべてのビジネスに適している。企業データを完全に管理したいとお考えの方には、自社のサーバーにDocSpaceをインストールすることも可能。",
+  "CostEffectiveForAnyBudgetUrl": "/images/templates/form-filling-rooms/features/en/cost-effective.png",
+  "CostEffectiveForAnyBudgetUrl2x": "/images/templates/form-filling-rooms/features/en/cost-effective@2x.png",
+
+  "LearnMoreHeading": "DocSpaceであるフォーム記入ルームについて詳細情報はこちらです",
+
+  "HelpCenter": "ヘルプセンター",
+  "HelpCenterDesc": "効果的な作業のための詳細なユーザーガイドをチェック",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "詳しくはこちら",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "ビデオガイドでONLYOFFICE DocSpaceを使いこなす",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "今すぐ見る",
+
+  "CustomerTestimonial": "お客様のサクセスストーリー",
+  "HowKinderhausBerlinSharesAndCollaborates": "Kinderhaus BerlinがONLYOFFICE DocSpaceで機密ファイルを共有し、共同作業する方法",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "ストーリーを読む"
+}

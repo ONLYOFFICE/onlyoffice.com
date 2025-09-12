@@ -1,0 +1,60 @@
+{
+  "PageTitle": "ONLYOFFICE メディア資産 | ONLYOFFICE",
+  "PageDescription": "ロゴ、スクリーンショット、動画を含む ONLYOFFICE メディア資産のダウンロードONLYOFFICE メディア資産",
+
+  "HeroTitle": "プレスリリースのダウンロード",
+  "HeroDescription": "ロゴ、グラフィックを含む ONLYOFFICE メディア資産のダウンロード",
+
+  "Description": "概要",
+  "Logo": "ロゴ",
+  "Screenshots": "スクリーンショット",
+  "Videos": "ビデオ",
+  "BlogAndSocialMedia": "ブログ、ソーシャルメディア プロモーション タイル",
+
+  "DescriptionTitle": "ONLYOFFICE 概要",
+  "DescriptionText": "ONLYOFFICEは、先進的で安全なオフィスソリューションに重点を置くオープンソースのオフィスソフトウェアプロジェクトです。世界中に1500万人以上のユーザーがおり、オンラインオフィス分野におけるイノベーションで知られています。ONLYOFFICEのエコシステムには、ルームベースのコラボレーションプラットフォームに加え、テキストドキュメント、スプレッドシート、プレゼンテーション、フォーム、PDF用のオンラインエディタなどのコラボレーションアプリケーションが含まれています。<br/><br/>国際企業であるONLYOFFICEは、シンガポール、ダラス、リガ、ロンドン、ベオグラード、エレバン、タシケント、上海にオフィスを構え、世界中に従業員と貢献者がいます。",
+  "CopyToClipboard": "クリップボードにコピー",
+  "SuccessCopy": "テキストがクリップボードにコピーされました",
+
+  "LogoTitle": "ONLYOFFICE ロゴ",
+  "LogoDefault": "デフォルトのロゴ",
+  "LogoCenter": "ロゴの中心",
+  "Symbol": "シンボル",
+  "LogoDefaultDark": "暗いロゴ",
+  "LogoCenterDark": "ロゴの中心暗い",
+  "SymbolDark": "シンボル",
+  "LogoWhite": "白いロゴ",
+  "LogoCenterWhite": "ロゴの中心白い",
+  "SymbolWhite": "シンボル",
+
+  "BrandbookTitle": "ONLYOFFICE Brandbook",
+  "BrandbookPreview": "プレビュー",
+  "BrandbookDownload": "ダウンロード",
+
+  "ScreenshotsTitle": "ONLYOFFICE スクリーンショット",
+  "OnlineEditors": "オンライン エディター",
+  "OnlineEditorsText": "(ドキュメント、スプレッドシート、プレゼンテーション、フォーム)",
+  "DocSpace": "DocSpace",
+  "DocSpaceText": "(ドキュメントコラボレーション用のカスタマイズ可能なルーム)",
+  "Workspace": "Workspace",
+  "WorkspaceText": "(ドキュメント管理、メール、CRM、プロジェクト、カレンダー、コミュニティー)",
+  "DesktopApps": "デスクトップ アプリ",
+  "DesktopAppsText": "(ドキュメント、スプレッドシート、プレゼンテーション、フォーム)",
+  "MobileApps": "モバイル アプリ",
+  "MobileAppsText": "(Android 向けドキュメント、iOS 向けプロジェクト)",
+
+  "VideosTitle": "ONLYOFFICE ビデオ",
+  "MoreVideos": "もっとビデオを表示",
+
+  "BlogAndSocialMediaTitle": "ONLYOFFICE ブログ、ソーシャルメディア プロモーション タイル",
+  "OnlineEditorsMacCardTitle": "Mac 版 ONLYOFFICE Online Editors",
+  "OnlineEditorsCardTitle": "ONLYOFFICE Online Editors",
+
+  "DontForgetToMention": "ONLYOFFICE を紹介して、当社とご共有ください!",
+  "MediaInquires": "メディアのご質問については、当社にご連絡ください。 メールでのご意見・ご質問:<0>press@onlyoffice.com</0>",
+  "AllUserInterfaceAssets": "© [date/version]以降に作成または組み込まれた、アイコン、イラスト、画像、ビジュアルデザイン要素を含むがこれらに限定されないすべてのユーザーインターフェース資産は、Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) ライセンスの条件下で提供されます。",
+  "UnderThisLicense": "このライセンスに基づき、ライセンス対象の素材は、非営利目的でのみ使用、複製、共有することができ、改変や派生作品の作成は禁止されます。また、元の作成者への適切な帰属表示が必須です。帰属表示には、著者の名前、元のソースへのリンク、ライセンスの正式名称、およびライセンス条項への参照を含める必要があります：",
+  "AnyViolation": "ライセンス条項の違反は、自動的に本資料の使用権を終了させます。終了後も使用を継続することは、無断使用に該当し、法的措置の対象となる可能性があります。",
+  "RequestPermission": "このライセンスでカバーされていない使用（商用利用や改変を含む）に関する許可を請求する場合は、reply@onlyoffice.comまでご連絡ください。",
+  "ByUsingTheseMaterials": "これらの資料を使用することにより、あなたは、CC BY-NC-ND 4.0 ライセンスの条項を読んだこと、理解したこと、およびその条項に従うことに同意したものとみなされます。"
+}

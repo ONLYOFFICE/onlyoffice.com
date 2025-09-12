@@ -13,8 +13,10 @@ const Footer = ({ locale }: ILocale) => {
       languages={languages.map((language) => ({
         shortKey: language.shortKey,
         name: language.name,
-        href: router.asPath
+        href: router.asPath,
       }))}
+      mailApiUrl="/api/sendsubscription"
+      mailApiType="Common"
     />
   );
 };

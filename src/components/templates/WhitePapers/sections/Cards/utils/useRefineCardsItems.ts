@@ -1,9 +1,9 @@
 import { useMemo } from "react";
-import { ICardDatasheetsItems, ICardWhitepapersItems } from "../../../WhitePapers.types";
+import { ICardDatasheetsItems, ICardWhitePapersItems } from "../../../WhitePapers.types";
 import { useTranslation } from "next-i18next";
 
 const useRefineCardsItems = (
-  cardWhitepapersItems: ICardWhitepapersItems[],
+  cardWhitePapersItems: ICardWhitePapersItems[],
   cardDatasheetsItems: ICardDatasheetsItems[],
   sortValue: string,
   choosedModule: string,
@@ -12,19 +12,19 @@ const useRefineCardsItems = (
   const { t } = useTranslation("whitepapers");
 
   const refineWhitepaperItems = useMemo(() => {
-    const filteredWhitepapers = cardWhitepapersItems.filter((item) => {
+    const filteredWhitePapers = cardWhitePapersItems.filter((item) => {
       return t(item.title).toLowerCase().includes(sortValue.toLowerCase());
     });
 
-    const filteredSortedWhitepapers = filteredWhitepapers.sort((a, b) => {
+    const filteredSortedWhitePapers = filteredWhitePapers.sort((a, b) => {
       if (choosedDate === "CardsSortNewestOldest") {
         return b.date.localeCompare(a.date);
       }
       return a.date.localeCompare(b.date);
     });
 
-    return filteredSortedWhitepapers;
-  }, [t, sortValue, cardWhitepapersItems, choosedDate]);
+    return filteredSortedWhitePapers;
+  }, [t, sortValue, cardWhitePapersItems, choosedDate]);
 
   const refineDatasheetsItems = useMemo(() => {
     const filteredDatasheets = cardDatasheetsItems.filter((item) => {

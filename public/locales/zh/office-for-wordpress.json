@@ -1,37 +1,80 @@
 {
+  "PageTitle": "用于WordPress的在线文档编辑",
+  "PageDescription": "从您的 WordPress 帐户处理办公文件",
+
+  "OnlineOfficeForConnector": "用于WordPress的在线文档编辑",
+  "Subheader": "从您的 WordPress 帐户处理办公文件",
+  "GetStarted": "开始使用",
+  "RequestFreeDemo": "申请免费演示",
+  "FullyCompatibleWithDocxXlsxAndPptx": "兼容docx、xlsx、pptx。",
+
+  "DocspaceAppTitle": "用于 WordPress 的 ONLYOFFICE <0>协作空间 app</0>",
+  "DocspaceAppHeader": "将办公文档嵌入您的 WordPress 网站",
+  "DocspaceAppTab1Label": "创建、上传并嵌入文档、表格、幻灯片或 PDF 至您的网站",
   "DocspaceAppTab1ImgUrl": "/images/templates/office-for-wordpress/docspace-app/zh/screen1.png",
   "DocspaceAppTab1ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/zh/screen1@2x.png",
-
+  "DocspaceAppTab2Label": "将整个房间嵌入到您的网页中，访问者可直接在浏览器中查看文档",
   "DocspaceAppTab2ImgUrl": "/images/templates/office-for-wordpress/docspace-app/zh/screen2.png",
   "DocspaceAppTab2ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/zh/screen2@2x.png",
-
+  "DocspaceAppTab3Label": "集成了复杂的 PDF 表单并支持在线填写。自动收集和分析数据",
+  "soon": "即将推出",
   "DocspaceAppTab3ImgUrl": "/images/templates/office-for-wordpress/docspace-app/zh/screen3.png",
   "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/zh/screen3@2x.png",
-
+  "DocspaceAppTab4Label": "禁止从您的网站下载、打印和复制文档",
   "DocspaceAppTab4ImgUrl": "/images/templates/office-for-wordpress/docspace-app/zh/screen4.png",
   "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/zh/screen4@2x.png",
 
+  "DocspaceAppScreen2Header": "高效管理 WordPress 帐户中的文档",
+  "DocspaceAppScreen2Tab1Label": "为您的全部文档创建一个安全的空间。随时随地轻松访问",
   "DocspaceAppScreen2Tab1ImgUrl": "/images/templates/office-for-wordpress/account/zh/screen1.png",
   "DocspaceAppScreen2Tab1ImgUrl2x": "/images/templates/office-for-wordpress/account/zh/screen1@2x.png",
-
+  "DocspaceAppScreen2Tab2Label": "整理您的个人文件并为商业文档创建房间",
   "DocspaceAppScreen2Tab2ImgUrl": "/images/templates/office-for-wordpress/account/zh/screen2.png",
   "DocspaceAppScreen2Tab2ImgUrl2x": "/images/templates/office-for-wordpress/account/zh/screen2@2x.png",
-
+  "DocspaceAppScreen2Tab3Label": "设置灵活的访问权限：编辑、评论、审阅或仅查看",
   "DocspaceAppScreen2Tab3ImgUrl": "/images/templates/office-for-wordpress/account/zh/screen3.png",
   "DocspaceAppScreen2Tab3ImgUrl2x": "/images/templates/office-for-wordpress/account/zh/screen3@2x.png",
-
+  "DocspaceAppScreen2Tab4Label": "与其他 WordPress 用户在线编辑和协作处理文档",
   "DocspaceAppScreen2Tab4ImgUrl": "/images/templates/office-for-wordpress/account/zh/screen4.png",
   "DocspaceAppScreen2Tab4ImgUrl2x": "/images/templates/office-for-wordpress/account/zh/screen4@2x.png",
 
+  "MarketplaceConnectorTitle": "专为在 WordPress 中无缝工作而设计",
+  "MarketplaceConnectorDescription": "立即从 WordPress 插件目录安装适用于 WordPress 的 ONLYOFFICE 协作空间应用程序。",
+
+  "DocsAppTitle": "适用于 WordPress 的 ONLYOFFICE <0>文档应用程序</0>",
+  "DocsAppHeader": "将办公文档添加到您的 WordPress 页面",
+  "DocsAppTab1Label": "将 ONLYOFFICE 板块添加到帖子中，以嵌入模式插入文档",
   "DocsAppTab1ImgUrl": "/images/templates/office-for-wordpress/docs-app/zh/screen1.png",
   "DocsAppTab1ImgUrl2x": "/images/templates/office-for-wordpress/docs-app/zh/screen1@2x.png",
-
+  "DocsAppTab2Label": "通过管理面板上传文档、工作表、幻灯片至 WordPress 并进行编辑",
   "DocsAppTab2ImgUrl": "/images/templates/office-for-wordpress/docs-app/zh/screen2.png",
   "DocsAppTab2ImgUrl2x": "/images/templates/office-for-wordpress/docs-app/zh/screen2@2x.png",
-
+  "DocsAppTab3Label": "与其他 WordPress 管理员实时协作处理文件",
   "DocsAppTab3ImgUrl": "/images/templates/office-for-wordpress/docs-app/zh/screen3.png",
   "DocsAppTab3ImgUrl2x": "/images/templates/office-for-wordpress/docs-app/zh/screen3@2x.png",
 
+  "WhyOO": "为什么选择 ONLYOFFICE？",
+  "Reason1": "一套强大的编辑、格式化和样式工具。<0>集成 AI 助手</0>（ChatGPT 或智谱 AI）。",
+  "Reason2": "两种共同编辑模式、跟踪更改、版本历史记录、文档比较、评论和提及等功能。",
+  "Reason3": "<0>内置聊天和 Telegram 集成</0>。用于实时通信的 Jitsi 和 Rainbow 插件。",
+  "Reason4": "支持超过 <0>50 种文件格式</0>。与微软 Office 格式（DOCX, XLSX, PPTX）高度兼容。",
+  "Reason5": "<0>高级安全</0>。各种访问权限和 JWT。活动跟踪和审计报告。静态和传输中加密。开源代码。",
+  "Reason6": "<0>从免费方案开始</0>。商业方案具有更多管理员、更大存储空间、增强的安全性和专业支持。自托管解决方案可让您完全控制数据。",
+
+  "DocSpace": "协作空间",
+  "Docs": "文档",
+
+  "HowToStart": "如何开始",
+  "HowToStartStep1Docspace": "创建免费<0>协作空间帐户</0>。",
+  "HowToStartStep2Docspace": "从 <0>WordPress 插件目录</0>获取集成应用程序。",
+  "HowToStartStep3": "上传并配置集成应用程序。",
+  "ReadDetailedInstructionsDocSpace": "阅读详细指南请前往<0>帮助中心</0>。",
+
+  "HowToStartStep1Docs": "在您自己的服务器上部署 <0>ONLYOFFICE 文档</0>或注册 <1>ONLYOFFICE 文档云</1>。",
+  "HowToStartStep2Docs": "从 <0>GitHub</0>或<1>WordPress 插件目录</1>获取集成应用程序。",
   "HowToStartStep3DocsImgUrl": "/images/templates/office-for-wordpress/how-to-start/zh/step3-dc.svg",
-  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/zh/step3-ds.svg"
+  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/zh/step3-ds.svg",
+  "ReadDetailedInstructionsDocs": "<0>GitHub</0>和<1>帮助中心</1>上阅读详细说明",
+
+  "NeedAnAppToConnect": "想要将 ONLYOFFICE 连接至您喜爱的网络服务？需要某个连接 app 或者你们已经开发出来了？"
 }

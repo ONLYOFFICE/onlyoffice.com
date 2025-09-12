@@ -8,7 +8,7 @@ import {
 } from "./DownloadModal.styled";
 import { IDownloadModal } from "./DownloadModal.types";
 import { getFromParam } from "@src/utils/getParams";
-import { usePhoneInputStore } from "@src/store/phoneInputStore";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { countries } from "@src/config/data/countries";
 import { Modal } from "@src/components/ui/Modal";
 import { Heading } from "@src/components/ui/Heading";
@@ -24,6 +24,7 @@ import {
   validateEmail,
   validateWebsite,
 } from "@src/utils/validators";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const DownloadModal = ({
   locale,
@@ -36,13 +37,18 @@ const DownloadModal = ({
   onClose,
   onSubmitRequest,
   buttonAction,
+  pageTrackName,
 }: IDownloadModal) => {
   const { t } = useTranslation("DownloadModal");
   const from = getFromParam();
 
-  const selectedCountry = usePhoneInputStore((state) => state.selectedCountry);
+  const IPGeolocationCountry = useIPGeolocationStore(
+    (state) => state.IPGeolocationInfo.country,
+  );
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
+
+  const pageTrack = usePageTrack();
 
   const [isEmpty, setIsEmpty] = useState({
     fullName: false,
@@ -109,7 +115,7 @@ const DownloadModal = ({
     phoneInputRef.current?.reset();
   };
 
-  const onSubmit = async (token?: string) => {
+  const onSubmit = async (token: string) => {
     if (formStatus === "loading") return;
 
     if (formStatus === "error") {
@@ -127,24 +133,8 @@ const DownloadModal = ({
     setFormStatus("loading");
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token }),
-      });
-
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
-        setFormStatus("error");
-        setTimeout(() => {
-          setFormStatus("default");
-        }, 5000);
-        return;
-      }
-
       const countryInfo = Object.values(countries).find(
-        (item) => item.country === selectedCountry,
+        (item) => item.country === IPGeolocationCountry,
       );
       const country = countryInfo?.title?.split(" (")[0] || "";
       const region = countryInfo?.salesRegion || "";
@@ -153,10 +143,21 @@ const DownloadModal = ({
         from,
         country,
         region,
+        hCaptchaResponse: token,
       });
 
-      if (onSubmitRequestData.status === "success") {
+      if (onSubmitRequestData.status === "errorHCaptchaInvalid") {
+        setFormStatus("error");
+        setTimeout(() => {
+          setFormStatus("default");
+        }, 5000);
+        return;
+      } else if (onSubmitRequestData.status === "success") {
+        pageTrack(pageTrackName);
         setFormStatus("success");
+        const endOfPartName = pageTrackName.indexOf("_for");
+        const partBtnName = endOfPartName != -1 ? pageTrackName.substring(0, endOfPartName) : pageTrackName;
+        pageTrack(partBtnName);
 
         if (buttonAction?.href) {
           setTimeout(() => {
@@ -240,7 +241,7 @@ const DownloadModal = ({
               checkFormValid();
             }}
             value={formData.email}
-            label="Email"
+            label={t("Email")}
             placeholder="name@domain.com"
             caption={
               formData.email.length === 0
@@ -291,6 +292,7 @@ const DownloadModal = ({
               status={
                 isEmpty.phone ? "error" : formData.phone ? "success" : "default"
               }
+              required
             />
           )}
 

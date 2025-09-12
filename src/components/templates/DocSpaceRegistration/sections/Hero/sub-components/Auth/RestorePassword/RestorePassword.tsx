@@ -7,17 +7,19 @@ import {
   StyledRestorePasswordSuccessMessage,
 } from "./RestorePassword.styled";
 import { IRestorePassword } from "./RestorePassword.types";
-import { ILoaderButton } from "@src/components/ui/LoaderButton";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
-import { SubscribeInput } from "@src/components/widgets/SubscribeInput";
+import {
+  SubscribeInput,
+  ISubscribeInput,
+} from "@src/components/widgets/SubscribeInput";
 import { validateEmail } from "@src/utils/validators";
 
 const RestorePassword = ({ setStatus }: IRestorePassword) => {
   const { t } = useTranslation("docspace-registration");
   const [value, setValue] = useState("");
   const [formStatus, setFormStatus] =
-    useState<ILoaderButton["status"]>("default");
+    useState<ISubscribeInput["status"]>("default");
   const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit = async () => {
@@ -62,7 +64,7 @@ const RestorePassword = ({ setStatus }: IRestorePassword) => {
 
       <StyledRestorePasswordInput>
         <SubscribeInput
-          dataTestId="restore-subscribe"
+          dataTestId="restore-subscribe-input"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
             setValue(e.target.value)
           }
@@ -77,6 +79,7 @@ const RestorePassword = ({ setStatus }: IRestorePassword) => {
           label={t("YourEmail")}
           placeholder="name@email.com"
           status={formStatus}
+          variant="secondary"
           autoFocus
           caption={
             value.length === 0

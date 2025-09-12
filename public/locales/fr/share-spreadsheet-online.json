@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Tableur collaboratif en ligne",
+  "PageDescription": "Partager les classeurs avec un accès complet, pour la lecture seule ou les commentaires. Permettre d'appliquer les filtres personnalisés, de copier et d'imprimer les classeurs.",
+
+  "Header": "Concentrez les efforts de votre équipe",
+  "SubHeader": "Rendez l’édition collaborative des feuilles de calcul transparente et efficace",
+
+  "HeroImgUrl": "/images/templates/share-spreadsheet-online/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/share-spreadsheet-online/hero/fr/hero@2x.png",
+
+  "Feature1Title": "Partagez des feuilles de calcul en ligne",
+  "Feature1Desc": "Partagez vos feuilles de calcul avec un accès complet ou en affichage seul, et laissez les invités laisser des commentaires. Définissez l’autorisation de filtrage personnalisé pour masquer les données non pertinentes et laissez vos collègues appliquer des filtres de manière indépendante. Obtenez et partagez les liens vers la plage sélectionnée afin que les autres co-auteurs puissent trouver rapidement les données nécessaires, même dans les classeurs volumineux. Limitez la copie et l’impression des feuilles de calcul.",
+
+  "Feature2Title": "Créez des vues de feuilles personnelles",
+  "Feature2Desc": "Filtrez et triez les feuilles dans des vues individuelles, puis enregistrez-les en tant que préréglages, afin de pouvoir retrouver à tout moment vos paramètres de tri et de filtrage préférés. Les vues de feuilles enregistrées sont accessibles à votre équipe afin que vous puissiez leur montrer rapidement vos résultats.",
+
+  "Feature3Title": "Collaborez sur des feuilles de calcul Excel en temps réel",
+  "Feature3Desc": "Co-éditez en temps réel en utilisant le mode Rapide pour montrer immédiatement vos entrées aux collaborateurs et voyez où les autres utilisateurs travaillent grâce aux indicateurs de couleur pour les cellules sélectionnées. Activez le mode Strict pour modifier en privé les cellules et les tableaux des feuilles de calcul partagées sans être dérangé.",
+
+  "Feature4Title": "Suivez les versions de vos feuilles de calcul",
+  "Feature4Desc": "Affichez toutes les modifications apportées à une feuille de calcul, leurs auteurs et leurs dates. Parcourez l'historique des versions et restaurez une version précédente si nécessaire.",
+
+  "Feature5Title": "Commentaires, mentions, discussions",
+  "Feature5Desc": "Ajoutez des commentaires aux cellules pour poser des questions et soulever des problèmes. Mentionnez des utilisateurs dans les commentaires pour les inviter à participer à la conversation. Utilisez le chat intégré, connectez Telegram ou Jitsi via des plugins pour communiquer directement dans l’éditeur.",
+
+  "Feature1ImgUrl": "/images/templates/share-spreadsheet-online/features/fr/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/share-spreadsheet-online/features/fr/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/share-spreadsheet-online/features/fr/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/share-spreadsheet-online/features/fr/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/share-spreadsheet-online/features/fr/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/share-spreadsheet-online/features/fr/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/share-spreadsheet-online/features/fr/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/share-spreadsheet-online/features/fr/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/share-spreadsheet-online/features/fr/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/share-spreadsheet-online/features/fr/pic5@2x.png"
+}

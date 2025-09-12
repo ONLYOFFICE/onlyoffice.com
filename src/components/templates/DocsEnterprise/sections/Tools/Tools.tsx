@@ -96,7 +96,7 @@ const Tools = () => {
           <StyledWatchVideo
             heading={t("ToolsVideoDescription")}
             videoImgUrl={locale !== "zh" ? "/images/templates/docs-enterprise/tools/docs-9-0.png" : "/images/templates/docs-enterprise/tools/zh/docs-9-0.png"}
-            videoUrl={locale !== "zh" ? "https://youtu.be/nxTIJmsg9iM" : "https://player.bilibili.com/player.html?isOutside=true&aid=BV1ZFKHzWE5g&bvid=BV1ZFKHzWE5g&cid=BV1ZFKHzWE5g&muted=true"}
+            videoUrl={locale !== "zh" ? "https://www.youtube.com/embed/rH1sMMwtyPE" : "https://player.bilibili.com/player.html?isOutside=true&aid=BV1ZFKHzWE5g&bvid=BV1ZFKHzWE5g&cid=BV1ZFKHzWE5g&muted=true"}
           />
         </StyledVideoArea>
       </StyledToolsArea>

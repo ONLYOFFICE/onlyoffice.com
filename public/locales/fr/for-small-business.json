@@ -28,11 +28,11 @@
   "Quote2Info": "Ingénieur logiciel senior",
 
   "SMBsHead3": "<0>ONLYOFFICE Docs</0> pour une collaboration transparente au sein de votre entreprise",
-  "SMBsSub3": "Remplacement de Google Docs/Sheets/Slides/, Microsoft Office Online, Zoho Docs, Dropbox Paper",
+  "SMBsSub3": "Remplacement de Google Docs/Sheets/Slides, Microsoft Office Online, Zoho Docs, Dropbox Paper",
   "SMBsFeature3": "Éditeurs en ligne pour les documents texte, les feuilles de calcul, les présentations, les formulaires et les fichiers PDF",
   "SMBsFeature32": "Haute compatibilité avec les formats MS Office",
   "SMBsFeature33": "Collaboration avancée avec des modes de coédition en temps réel et avec verrouillage des paragraphes, commentaires, suivi des modifications, chat intégré, appels vidéo via Jitsi",
-  "SMBsFeature34": "Plus de 30 intégrations prêtes à l'emploi avec des plateformes d'entreprise : WordPress, Moodle, Nextcloud, ownCloud, Confluence, Alfresco, Jira et d'autres plateformes. <1>Voir tous les connecteurs</1>",
+  "SMBsFeature34": "Plus de 40 intégrations prêtes à l'emploi avec des plateformes d'entreprise : WordPress, Moodle, Nextcloud, ownCloud, Confluence, Alfresco, Jira et d'autres plateformes. <1>Voir tous les connecteurs</1>",
   "SMBsFeature35": "Protection des données avec <1>JWT</1>, chiffrement SSL, restriction de la copie, du téléchargement et de l'impression",
   "SMBsFeature36": "Sur site pour conserver toutes les données en interne OU dans le cloud public sans installation",
   "JWTLink" : "https://www.onlyoffice.com/blog/fr/2022/09/quest-ce-que-jwt-et-comment-cette-technologie-protege-vos-documents",

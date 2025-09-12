@@ -54,7 +54,9 @@ function formatIP(ip: string | undefined) {
 const regionsStringKeys =
   process.env.NEXT_PUBLIC_TESTING_ON === "true"
     ? regionsKeys.info
-    : regionsKeys.com;
+    : process.env.NEXT_PUBLIC_TESTING_ON === "false"
+      ? regionsKeys.com
+      : [];
 const docspaceDomain = process.env.DOCSPACE_DOMAIN!;
 const baseDomain = process.env.CORE_BASE_DOMAIN!;
 const docspaceRegion = docspaceDomain.split(".")[1];
@@ -141,7 +143,7 @@ export default async function handler(
       return res.status(200).json(ipCache.get(ipFormatted));
     }
 
-    const [rows] = await db.query<ILocationRow[]>(
+    const [rows] = await db.teamlabsite.query<ILocationRow[]>(
       `
       SELECT ip_start, ip_end, country, city, timezone_offset, timezone_name
       FROM dbip_location

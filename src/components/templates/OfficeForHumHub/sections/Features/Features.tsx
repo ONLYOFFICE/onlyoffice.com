@@ -45,7 +45,7 @@ const Features = () => {
           <Button
             onClick={scrollToBlock}
             id="features-get-started"
-            label={t("GetStarted")}
+            label={t("GetItNow")}
           />
         </StyledFeaturesWrapper>
       </Container>

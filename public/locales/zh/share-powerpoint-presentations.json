@@ -1,0 +1,26 @@
+{
+  "PageTitle": "在线演示文稿编辑软件 | ONLYOFFICE",
+  "PageDescription": "在线演示文稿工具。适用于PowerPoint演示文稿：pptx、ppt、odp。在线创建、编辑和协作处理。",
+
+  "Header": "共同协作",
+  "SubHeader": "共享您的幻灯片，协作编辑演示文稿",
+
+  "HeroImgUrl": "/images/templates/share-powerpoint-presentations/hero/de/hero.png",
+  "HeroImgUrl2x": "/images/templates/share-powerpoint-presentations/hero/de/hero@2x.png",
+
+  "Feature1Title": "分享",
+  "Feature1Desc": "以高级权限共享 PowerPoint 演示文稿。授予完全访问权限以让您的同事参与协作，或授予仅查看权限以展示演示文稿内容。以评论权限共享演示文稿，便于评论和接收反馈。",
+
+  "Feature2Title": "协作",
+  "Feature2Desc": "实时共同撰写幻灯片，让其他人实时查看您的更改。或启用严格模式以对演示文稿的部分内容进行私密更改，避免中断工作。",
+
+  "Feature3Title": "沟通",
+  "Feature3Desc": "添加评论以讨论协作过程。在评论中提及用户，邀请他们加入讨论并立即与其分享文件。通过内置聊天功能与您的团队进行沟通。",
+
+  "Feature1ImgUrl": "/images/templates/share-powerpoint-presentations/features/de/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/de/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/share-powerpoint-presentations/features/de/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/de/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/share-powerpoint-presentations/features/de/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/share-powerpoint-presentations/features/de/pic3@2x.png"
+}

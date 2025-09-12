@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Funktionen und Formeln in Excel-Tabellen",
+  "PageDescription": "Fügen Sie Funktionen ein, greifen Sie auf Kategorien und zuletzt angewandte Formeln zu, arbeiten Sie mit benannten Bereichen und berechnen Sie Blätter und Arbeitsmappen.",
+  
+  "Header": "Führen Sie präzise Berechnungen einfach durch",
+  "SubHeader": "Verwenden Sie mehr als 450 Excel-Funktionen für Datenverarbeitung",
+
+  "HeroImgUrl": "/images/templates/formulas-and-functions/hero/de/hero.png",
+  "HeroImgUrl2x": "/images/templates/formulas-and-functions/hero/de/hero@2x.png",
+
+  "Feature1Title": "Mit mehr als 450 Funktionen berechnen",
+  "Feature1Desc": "Sie können Funktionen einfügen, auf Kategorien und zuletzt angewendete Formeln zugreifen, mit benannten Bereichen arbeiten, Daten in Blättern und ganzen Arbeitsbüchern berechnen. Überprüfen Sie Ergebnisse in großen Tabellenkalkulationen mit dem Überwachungsfenster. Verfolgen Sie Präzedenzfälle und Abhängigkeiten, um die Beziehungen zwischen Formeln und Zellen anzuzeigen. Fügen Sie Gleichungen und Symbole hinzu, um die angewandten Berechnungen zu beschreiben.",
+
+  "Feature2Title": "Zellenbereiche definieren und Excel-Formeln schnell anwenden",
+  "Feature2Desc": "Definieren und benennen Sie Zellbereiche, um diese als Argumente zu benutzen. Benennen Sie formatierte Tabellen und verwalten Sie Bereiche, um sie als interne Hyperlinks zu verwenden.",
+
+  "Feature3Title": "Dateneingabe validieren",
+  "Feature3Desc": "Stellen Sie Datenvalidierung ein, so dass nur relevante Daten in Ihren Blättern für Berechnungen eingegeben werden. Validieren Sie Zahlen und Texte, wenden Sie Bedingungen an, um Fehler zu vermeiden.",
+
+  "Feature4Title": "Struktur und Inhalt schützen",
+  "Feature4Desc": "Legen Sie ein Kennwort für die gesamte Kalkulationstabelle, die Arbeitsmappe oder ein einzelnes Blatt fest. Blenden Sie Formeln aus, um sie privat zu halten. Sperren Sie Zellen, Formen und Text. Ermöglichen Sie die Bearbeitung nur in bestimmten Bereichen.",
+
+  "Feature5Title": "Arbeit mit Makros automatisieren",
+  "Feature5Desc": "Erstellen Sie eigene JavaScript-Makros mit unserem Plugin und API oder benutzen Sie vorhandene Makros, um Berechnungen zu automatisieren und Tabellenkalkulationen zu standardisieren. Sie können Makros automatisch ausführen, deaktiviere und Benachrichtigungen über Makros im Editor erhalten.",
+
+  "Feature1ImgUrl": "/images/templates/formulas-and-functions/features/de/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/formulas-and-functions/features/de/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/formulas-and-functions/features/de/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/formulas-and-functions/features/de/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/formulas-and-functions/features/de/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/formulas-and-functions/features/de/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/formulas-and-functions/features/de/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/formulas-and-functions/features/de/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/formulas-and-functions/features/de/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/formulas-and-functions/features/de/pic5@2x.png"
+}

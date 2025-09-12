@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Word-Dokumente vergleichen",
+  "PageDescription": "Vergleichen Sie zwei Dokumente mit ONLYOFFICE. Wählen Sie ein Dokument von Ihrem Computer, Cloud-Speicher oder einer URL aus, um Unterschiede zu sehen.",
+
+  "Header": "Vergleichen Sie Dokumenten",
+  "SubHeader": "Finden Sie Unterschiede schneller und korrigieren Sie Texten",
+
+  "HeroImgUrl": "/images/templates/compare-documents/hero/de/hero.png",
+  "HeroImgUrl2x": "/images/templates/compare-documents/hero/de/hero@2x.png",
+
+  "Feature1Title": "Zwei Dokumente vergleichen",
+  "Feature1Desc": "Öffnen Sie ein Dokument und laden Sie eine andere Datei vom Computer, Cloud-Speicher oder über URL hoch, um die Unterschiede dazwischen zu sehen.",
+
+  "Feature2Title": "Änderungen nachverfolgen",
+  "Feature2Desc": "Mit Vergleich von Dokumenten können Sie Änderungen in Textdokumenten hervorheben. Benutzen Sie verschiedene Anzeigemodi, um das Dokument mit oder ohne akzeptierten Änderungen zu sehen.",
+
+  "Feature3Title": "Dateiversionen zusammenführen",
+  "Feature3Desc": "Führen Sie die zwei Dokumente zusammen, indem Sie Änderungen auf einmal oder nacheinander annehmen oder ablehnen.",
+
+  "Feature4Title": "Versionsverlauf durchsuchen",
+  "Feature4Desc": "Vergleichen Sie die Dokumentversionen, stellen Sie Versionen und versehentlich verlorene Inhalte wieder her. Daten, Uhrzeiten und Autoren von Dokumentrevisionen werden angezeigt.",
+
+  "Feature5Title": "Dokumente kombinieren",
+  "Feature5Desc": "Das Kombinieren von Dokumenten ist ähnlich wie der Vergleich. Beim Kombinieren von zwei Dokumenten bleiben jedoch die ungelösten, nachverfolgten Änderungen nach der Überprüfung durch eine andere Person in der zusammengeführten Datei erhalten, und Sie können diese bei Bedarf annehmen oder ablehnen.",
+
+  "Feature1ImgUrl": "/images/templates/compare-documents/features/de/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/compare-documents/features/de/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/compare-documents/features/de/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/compare-documents/features/de/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/compare-documents/features/de/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/compare-documents/features/de/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/compare-documents/features/de/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/compare-documents/features/de/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/compare-documents/features/de/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/compare-documents/features/de/pic5@2x.png"
+}

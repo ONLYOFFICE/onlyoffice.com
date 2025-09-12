@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { db } from "@src/config/db/site";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { emailTransporter } from "@src/config/email/transporter";
 import { MailTemplate } from "@src/components/emails/MailTemplate";
 
@@ -28,9 +29,24 @@ export default async function handler(
     from,
     table_name,
     locale,
+    hCaptchaResponse,
   } = req.body;
+  const ip =
+    (Array.isArray(req.headers["x-forwarded-for"])
+      ? req.headers["x-forwarded-for"][0]
+      : req.headers["x-forwarded-for"]
+    )?.split(",")[0] ||
+    req.socket.remoteAddress ||
+    null;
 
-  const ip = req.headers["x-forwarded-for"] || req.socket.remoteAddress || null;
+  const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+  if (!hCaptchaResult.success) {
+    return res.status(400).json({
+      status: "errorHCaptchaInvalid",
+      error: hCaptchaResult.error,
+    });
+  }
 
   try {
     const commonFields: Record<string, string | string[] | Date | null> = {
@@ -90,13 +106,15 @@ export default async function handler(
 
     const selectedData = dataByTable[table_name];
 
-    await db.query(`INSERT INTO ${table_name} SET ?`, [selectedData]);
+    await db.teamlabsite.query(`INSERT INTO ${table_name} SET ?`, [
+      selectedData,
+    ]);
 
     const transporter = emailTransporter();
     const to =
       table_name === "desktop_uninstalled_request"
-        ? process.env.DESKTOP_UNINSTALLED_NOTIFICATION_EMAIL
-        : process.env.INSTALL_CANCELED_NOTIFICATION_EMAIL;
+        ? [process.env.FEEDBACK_EMAIL!]
+        : [process.env.FEEDBACK_EMAIL!, process.env.SUPPORT_EMAIL!];
 
     await transporter.sendMail({
       from: process.env.SALES_EMAIL!,
@@ -116,7 +134,7 @@ export default async function handler(
       message: "InstallCanceledRequestSuccessful",
     });
   } catch (error) {
-    console.error("Error saving rating:", error);
+    console.error("Install canceled error:", error);
     res.status(500).json({ status: "error", message: "Internal Server Error" });
   }
 }

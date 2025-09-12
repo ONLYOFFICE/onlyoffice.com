@@ -4,6 +4,7 @@ import { AdventAnnounce } from "./AdventAnnounce";
 import { Header } from "./Header";
 import { Main } from "./Main";
 import { Footer } from "./Footer";
+import { CookieBanner } from "@src/components/modules/cookie/CookieBanner";
 
 const Layout = ({
   children,
@@ -21,6 +22,7 @@ const Layout = ({
       {header && <Header>{header}</Header>}
       {main && <Main>{main}</Main>}
       {footer && <Footer>{footer}</Footer>}
+      <CookieBanner />
     </div>
   );
 };

@@ -1,0 +1,21 @@
+{
+  "PageTitle": "ONLYOFFICE文档云： 谢谢注册!",
+  "PageDescription": "您在Stripe平台上个人账户注册成功了。只需完成几个步骤，就可以开始使用ONLYOFFICE文档云。",
+  "HeroTitle": "谢谢注册！",
+  "HeroSubtitle": "只需完成几个步骤，就可以开始使用ONLYOFFICE文档云。",
+  "IntegrationsTitle": "集成",
+  "IntegrationsDescription": "您的平台中还没有现成的ONLYOFFICE集成应用吗？请选择您使用的服务，并安装相应的ONLYOFFICE连接器。",
+  "IntegrationsMoreOptions": "其他选项",
+  "HelpfulResources": "实用资源和援助",
+  "HelpfulResourcesText1": "了解如何使用在线编辑器：文档、表格、工作表、幻灯片。 <0>阅读指南</0>",
+  "HelpfulResourcesText2": "如果您有其他有关功能的问题，请咨询我们的<0>帮助中心</0>。",
+  "HelpfulResourcesText3": "如果有任何技术问题，请联系我们的<0>支持团队</0>。",
+  "HelpfulResourcesText4": "如有其他问题，欢迎访问我们的<0>论坛</0>和<1>GitHub</1>。",
+  "Step1": "打开一封包含 ONLYOFFICE 文档集成细节的电子邮件：",
+  "Step2": "登录您的平台并转到 ONLYOFFICE 设置页面。",
+  "Step3": "输入所提供的凭证，并点击\"保存“按钮。",
+  "DocumentServerAddress": "文档服务器地址",
+  "DocumentServerJWTHeader": "文档服务器 JWT 头部*",
+  "DocumentServerSecret": "文档服务器秘密",
+  "JwtNote": "*JWT 保护文件免受未经授权的访问。 <0>了解更多</0>"
+}

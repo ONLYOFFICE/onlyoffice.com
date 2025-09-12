@@ -91,6 +91,7 @@ const EnterpriseModal = ({
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IQuoteModalOnSubmitRequest) => {
     return fetch("/api/docspace-prices", {
       method: "POST",
@@ -112,6 +113,7 @@ const EnterpriseModal = ({
         from,
         country,
         region,
+        hCaptchaResponse,
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
         type: "docspaceenterpriserequest",
@@ -232,7 +234,7 @@ const EnterpriseModal = ({
 
             <LabeledWrapper label={t("Scalability")}>
               <Checkbox
-                label="Support for multi-server deployment"
+                label={t("SupportForMultiServerDeployment")}
                 checked={formData.multiServerDeployment}
                 size="small"
                 onChange={() =>
@@ -246,7 +248,7 @@ const EnterpriseModal = ({
 
             <LabeledWrapper label={t("AdditionalToolsAndServices")}>
               <Checkbox
-                label="Training courses"
+                label={t("TrainingCourses")}
                 checked={formData.trainingCourses}
                 size="small"
                 onChange={() =>
@@ -342,6 +344,7 @@ const EnterpriseModal = ({
         buttonLabel={t("GetAQuote")}
         onSubmitRequest={onSubmitRequest}
         onClose={() => setIsModalOpen(false)}
+        pageTrackName="docspace-prices-request"
       />
     </>
   );

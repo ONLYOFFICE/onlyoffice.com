@@ -1,0 +1,35 @@
+{
+  "PageTitle": "Spreadsheet charts and graphs | ONLYOFFICE",
+  "PageDescription": "Make your spreadsheet graphs and charts look unique by designing every element in ONLYOFFICE. Make use of the chart data manager to make easy adjustments.",
+  "Header": "Predstavite podatke vizuelno",
+  "SubHeader": "Pustite brojke da govore putem grafikona, dijagrama, slika i oblika",
+
+  "HeroImgUrl": "/images/templates/charts-and-graphs/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/charts-and-graphs/hero/hero@2x.png",
+
+  "Feature1Title": "Dodajte grafikone i dijagrame iz tabela",
+  "Feature1Desc": "Izaberite iz više stilova i tipova da ilustrujete svoje podatke. Koristite upravljač podacima grafikona za lake izmene: upravljajte opsegom podataka, legendama i prilepljivanjem za ćelije, menjajte ose i izgled.",
+
+  "Feature2Title": "Prilagodite izgled svojih grafikona",
+  "Feature2Desc": "Učinite svoje grafikonе i dijagrame iz tabela jedinstvenim dizajnirajući svaki element. Primenite boje, prelive i ivice, i precizno postavljajte vizuelne elemente na svoje ilustracije. Pozicionirajte, prelamajte i menjaјte veličinu da se uklope u vaš radni list.",
+
+  "Feature3Title": "Dodajte oblike, slike, video zapise, Text Art i SmartArt",
+  "Feature3Desc": "Umetnite bilo koje objekte u svoju tabelu da podržite svoje nalaze. Dodajte i uređujte slike i fotografije, kreirajte i prilagodite automatske oblike, i koristite Text Art za naslove. Umetnite SmartArt elemente da kreirate vizuelni prikaz svojih informacija. Koristite prilagođene slike kao tačke u listama. Umetnite YouTube video zapise i pustite ih direktno u tabeli.",
+
+  "Feature4Title": "Istaknite redove i kolone sparklines grafikonima",
+  "Feature4Desc": "Kreirajte minijaturne grafikonе u tabeli za prikaz trendova u redovima ili kolonama. Prilagodite njihov položaj i izgled. Izaberite iz ponuđenih tipova i stilova sparklines grafikona.",
+
+  "Feature5Title": " Primenite šablone i uslovno formatiranje",
+  "Feature5Desc": "Izaberite između više stilskih šablona da vizuelno organizujete i doterate svoje tabele. Pregledajte listove sa uslovnim formatiranjem za brzu analizu tipova podataka, uočavanje problema i identifikovanje trendova.",
+
+  "Feature1ImgUrl": "/images/templates/charts-and-graphs/features/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/charts-and-graphs/features/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/charts-and-graphs/features/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/charts-and-graphs/features/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/charts-and-graphs/features/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/charts-and-graphs/features/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/charts-and-graphs/features/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/charts-and-graphs/features/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/charts-and-graphs/features/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/charts-and-graphs/features/pic5@2x.png"
+}

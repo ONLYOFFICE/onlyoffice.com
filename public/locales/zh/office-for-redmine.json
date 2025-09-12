@@ -1,4 +1,12 @@
 {
+  "PageTitle": "适用于Redmine的在线办公套件 | ONLYOFFICE Docs",
+  "PageDescription": "在Redmine中编辑和共同编辑文档",
+
+  "OnlineOfficeForConnector": "适用于<0>Redmine</0>的在线办公套件",
+  "Subheader": "在Redmine中使用ONLYOFFICE 文档，查看、编辑和协作办公文件。",
+  "GetStarted": "开始使用",
+  "FullyCompatibleWithDocxXlsxAndPptx": "兼容docx、xlsx、pptx。",
+
   "HeroTab1ImgUrl": "/images/templates/office-for-redmine/hero/zh/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-redmine/hero/zh/screen1@2x.png",
   "HeroTab2ImgUrl": "/images/templates/office-for-redmine/hero/zh/screen2.png",
@@ -12,5 +20,29 @@
   "HeroTab6ImgUrl": "/images/templates/office-for-redmine/hero/zh/screen6.png",
   "HeroTab6ImgUrl2x": "/images/templates/office-for-redmine/hero/zh/screen6@2x.png",
   "HeroTab7ImgUrl": "/images/templates/office-for-redmine/hero/zh/screen7.png",
-  "HeroTab7ImgUrl2x": "/images/templates/office-for-redmine/hero/zh/screen7@2x.png"
+  "HeroTab7ImgUrl2x": "/images/templates/office-for-redmine/hero/zh/screen7@2x.png",
+
+  "MarketplaceConnectorTitle": "专为与 Redmine 无缝集成而设计",
+  "MarketplaceConnectorDescription": "立即从 <0>Redmine 插件目录</0>获取用于 Redmine 的 ONLYOFFICE 连接器",
+  "GetItNow": "立即获取",
+
+  "WhyOO": "为什么选择 ONLYOFFICE 文档",
+  "WhySubheader": "ONLYOFFICE文档是一个自托管的办公套件，用于处理文本文档、电子表格、演示文稿和表单。",
+  "Reason1": "随时可以使用的集成插件",
+  "Reason2": "易于安装和快速配置",
+  "Reason3": "在问题、文件、文档、维基、新闻模块中处理文件",
+  "Reason4": "选项卡式直观界面",
+  "Reason5": "多种编辑、格式化和风格化工具",
+  "Reason6": "实时协作，跟踪修改，评论，聊天",
+  "Reason7": "免费社区版和可<0>扩展的企业版</0>",
+  "Reason8": "在GitHub上提供开源代码",
+
+  "HowToStart": "如何开始：",
+  "HowToStartStep1": "在自己的服务器上部署 <0>ONLYOFFICE 文档</0>或者创建<1>文档云</1>账户。",
+  "HowToStartStep2": "从 <0>Redmine 插件库</0>中获取 ONLYOFFICE 连接器。",
+  "HowToStartStep3": "配置连接器并启用 JWT。",
+
+  "ReadDetailedInstructions": "阅读详细指南请前往<0>帮助中心</0>。",
+
+  "NeedAnAppToConnect": "需要一个应用程序将ONLYOFFICE连接到您偏好的Web服务？ 或者您已经开发了自己的应用？"
 }

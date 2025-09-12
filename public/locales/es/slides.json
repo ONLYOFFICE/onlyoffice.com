@@ -1,0 +1,37 @@
+{
+  "PageTitle": "Editor de presentaciones PowerPoint online | ONLYOFFICE",
+  "PageDescription": "Editor de diapositivas online para hacer presentaciones PowerPoint online en los formatos PPTX, PPT, ODP. Utiliza el editor para crear presentaciones en la nube y abrir PowerPoint online sin problemas.",
+
+  "Header": "Editor de presentaciones en línea para tu aplicación web",
+  "SubHeader": "El mejor software para abrir, hacer y collaborar en presentaciones únicas desde cualquier lugar",
+
+  "Feature1Title": "Impresiona al público con tus trabajos y proyectos PowerPoint",
+  "Feature1Desc": "Expresa tus ideas usando un conjunto de herramientas amplio de formateo, objetos y opciones de estilo. El editor de presentaciones ONLYOFFICE trabaja con presentaciones de PowerPoint y puede guardarlas en PDF, PNG, JPG. También se soportan los archivos PPTX, PPT, ODP y PPSX.",
+  "Feature2Title": "Crea el contenido de cualquier complejidad online",
+  "Feature2Desc": "Crea esquemas y bocetos claros con formas y gráficos SmartArt, añade diagramas personalizables, tablas y ecuaciones para una visualización estadística diferenciada. Haz que tu presentación sea más interactiva con transiciones y animaciones ya preparadas. Ahorra tiempo: utiliza el Patrón de diapositivas, agrupa cualquier número de objetos y aplica ajustes al mismo tiempo.",
+  "Feature3Title": "Deja volar tu creatividad",
+  "Feature3Desc": "Crea tus propios dibujos a mano alzada sobre las diapositivas utilizando un bolígrafo o rotulador, elige el color y el grosor de línea que desees.",
+  "Feature4Title": "Haz tu presentación PowerPoint online fácil y libremente",
+  "Feature4Desc": "Con el modo Presentador puedes dejar notas para destacar unas partes importantes de tus presentaciones online y cómodamente navegar por ellas pasando a la diapositiva deseada con un sólo clic.",
+  "Feature5Title": "Reúne los esfuerzos de tu equipo online",
+  "Feature5Desc": "El trabajo ágil en equipo en presentaciones PowerPoint online y proyectos se garantiza con las funciones de colaboración. Coedita diapositivas en tiempo real, deja comentarios en los elementos de diapositiva y chatea con usuarios en línea sin abandonar el editor.",
+  "Feature6Title": "Utiliza el ayudante de IA",
+  "Feature6Desc": "Realiza tareas que impliquen la comprensión o generación de lenguaje natural utilizando el plugin de ChatGPT. Obtén respuestas precisas a tus preguntas, encuentra información rápidamente, genera textos, crea tu código, etc. directamente en el editor.",
+  "Feature7Title": "Lleva las presentaciones PowerPoint a un nivel más alto",
+  "Feature7Desc": "Usa los addons incorporados para abrir y hacer presentaciones online con vídeos y elementos de clip art, obtener una traducción rápida de cualquier texto, insertar símbolos especiales, editar imágenes y más.",
+
+  "LearnMoreHeading": "Más información sobre el Editor de presentaciones de ONLYOFFICE",
+  "BlogDesc": "¿Cómo incluir una animación en las presentaciones de PowerPoint?",
+  "BlogLink": "https://www.onlyoffice.com/blog/es/2022/06/animaciones-de-powerpoint",
+  "TutorialsDesc": "Cómo proteger las presentaciones con una contraseña",
+  "TutorialsLink": "https://helpcenter.onlyoffice.com/docs/userguides/presentation_editor/Password.aspx",
+  "HintsDesc": "Formatos compatibles con las presentaciones electrónicas",
+  "HintsLink": "https://helpcenter.onlyoffice.com/docs/userguides/presentation_editor/SupportedFormats.aspx",
+
+  "Q1": "¿Puedo editar presentaciones sin conexión a Internet?",
+  "A1": "Sí, puedes instalar y utilizar gratis <0>ONLYOFFICE Desktop Editoren</0> para editar presentaciones locales sin conexión.",
+  "Q2": "¿Ofrece ONLYOFFICE aplicaciones móviles nativas para editar presentaciones?",
+  "A2": "Sí, puedes instalar gratis la aplicación <0>Documents</0> para dispositivos iOS o Android para trabajar en presentaciones sobre la marcha.",
+  "Q3": "¿Es posible utilizar el editor de presentaciones de ONLYOFFICE dentro de mi aplicación bajo mi marca?",
+  "A3": "Sí, puedes integrar el editor de presentaciones en tu aplicación. Por favor, utiliza <0>ONLYOFFICE Docs Developer</0>."
+}

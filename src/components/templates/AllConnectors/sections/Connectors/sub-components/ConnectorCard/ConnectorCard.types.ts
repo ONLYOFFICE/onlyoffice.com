@@ -30,4 +30,8 @@ export interface IConnectorCard {
   getItNowUrl?: string;
   /** Indicates if the connector is newly released. */
   isNew?: boolean;
+  /** Indicates if the connector is a WOPI integration. */
+  isWopi?: boolean;
+  /** Indicates if the connector is a BOT integration. */
+  isBot?: boolean;
 }

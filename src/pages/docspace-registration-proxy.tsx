@@ -51,7 +51,7 @@ export async function getServerSideProps({
     errorMessage = "Invalid parameters";
   } else {
     const validateKeysData = await validateKeys({
-      epkey,
+      epkey: epkey.slice(0, -1),
       eskey,
       page: `reg_proxy_page_${eskey}`,
     });
@@ -72,6 +72,11 @@ export async function getServerSideProps({
       });
 
       if (registerData.data.reference) {
+        if (registerData.data.tenant != null)
+        {
+          sendGA(registerData.data.tenant.ownerId, query.desktop === "true", String(query.store), req.cookies?._ga || "");
+        }
+
         return {
           redirect: {
             destination: registerData.data.reference + "&wizard=true",
@@ -91,6 +96,73 @@ export async function getServerSideProps({
       errorMessage,
     },
   };
+}
+
+function sendGA(ownerId: string, isDesktop: boolean, store: string, _ga: string) {
+  let eventName;
+  const isTestSite = process.env.NEXT_PUBLIC_TESTING_ON === "true";
+
+  try {
+    if (isDesktop) {
+      store = store ? "_" + store.trim() : "";
+      eventName = isTestSite
+        ? "Test_GA_Desktop" + store
+        : "Portal_Created_Desktop" + store;
+    } else {
+      eventName = isTestSite
+        ? "Test_GA"
+        : "DocSpace_Portal_Created";
+    }
+    sendReqToGA(eventName, ownerId, _ga).catch((err) =>
+      console.error("sendGA error", err)
+    );
+
+  } catch (ex) {
+    console.error("docspace-registration-proxy.aspx: " + ex);
+  }
+}
+
+async function sendReqToGA(key: string, ownerId: string, _ga: string) {
+  const gaUrl = process.env.GOOGLE_ANALYTICS_URL || "";
+  if (gaUrl == "") {
+    return;
+  }
+
+  if (_ga) {
+    const _gaParts = _ga.split('.');
+    if (_gaParts.length >= 2) {
+      _ga = _gaParts.slice(-2).join(".");
+    }
+  }
+
+  const requestBody = {
+    client_id: _ga,
+    non_personalized_ads: false,
+    events: [
+      {
+        name: key,
+        params: {
+          ownerId,
+        },
+      },
+    ],
+  };
+
+  try {
+    const res = await fetch(gaUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(requestBody),
+    });
+
+    if (!res.ok) {
+      console.error("GA request failed", await res.text());
+    } else {
+      console.info("GA request send successfully.");
+    }
+  } catch (err) {
+    console.error("SendGA error", err);
+  }
 }
 
 export default DocSpaceRegistrationProxyPage;

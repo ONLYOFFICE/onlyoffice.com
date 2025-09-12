@@ -45,7 +45,7 @@ const HowToStart = () => {
             components={[
               <Link
                 key={0}
-                href="https://www.onlyoffice.com/blog/2023/11/new-integration-available-onlyoffice-docs-and-dropbox"
+                href={t("ExploreMoreDetailsLink")}
                 target={"_blank"}
                 color="main"
                 textUnderline

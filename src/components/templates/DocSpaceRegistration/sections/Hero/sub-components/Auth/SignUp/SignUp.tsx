@@ -16,6 +16,7 @@ import {
 } from "./SignUp.styled";
 import { ISignUp } from "./SignUp.types";
 import { ISelectOption } from "@src/components/ui/Select/Select.types";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { useRewardful } from "@src/utils/useRewardful";
 import { validateEmail } from "@src/utils/validators";
 import { Heading } from "@src/components/ui/Heading";
@@ -31,7 +32,9 @@ import { awsRegions } from "../../../config/regions";
 const currentRegions =
   process.env.NEXT_PUBLIC_TESTING_ON === "true"
     ? awsRegions.testRegions
-    : awsRegions.productionRegions;
+    : process.env.NEXT_PUBLIC_TESTING_ON === "false"
+      ? awsRegions.productionRegions
+      : [];
 const options = currentRegions.map((region) => ({
   key: region.key,
   label: region.info,
@@ -45,7 +48,12 @@ const SignUp = ({
   setCreateNewAccountQuery,
 }: ISignUp) => {
   const { t } = useTranslation("docspace-registration");
+  const IPGeolocationRegionDbKey = useIPGeolocationStore(
+    (state) => state.IPGeolocationInfo?.regionDbEntity?.regionDbKey,
+  );
+
   const router = useRouter();
+  const desktopQuery = router.query.desktop;
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const modalDialog = useRef<Window | null>(null);
   const intervalId = useRef<NodeJS.Timeout | null>(null);
@@ -112,24 +120,11 @@ const SignUp = ({
     setisFormLoading(true);
     setIsFormValid(false);
 
-    const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ token }),
-    });
-
-    const hCaptchaData = await hCaptchaResponse.json();
-
-    if (hCaptchaData.status === "errorHCaptchaInvalid") {
-      setIsFormValid(false);
-      return;
-    }
-
     const res = await fetch("/api/thirdparty/sendemail", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        desktop: router.query.desktop || "",
+        desktop: desktopQuery || "",
         email: formData.email,
         spam: formData.spam ? "true" : "false",
         language: router.locale === "en" ? "" : router.locale,
@@ -140,12 +135,15 @@ const SignUp = ({
           register: t("YourConfirmationLinkForOODocSpace"),
           login: t("YourLoginLinkToOODocSpace"),
         },
+        hCaptchaResponse: token,
       }),
     });
 
     const data = await res.json();
 
-    if (data.status === "success") {
+    if (data.status === "errorHCaptchaInvalid") {
+      setIsFormValid(false);
+    } else if (data.status === "success") {
       setEmail(formData.email);
       setStatus("checkEmail");
     } else {
@@ -218,7 +216,7 @@ const SignUp = ({
           });
           const generateKeyData = await generateKeyRes.json();
           setCreateNewAccountQuery(
-            `epkey=${generateKeyData.data.emailKey}&eskey=${generateKeyData.data.linkKey}&transport=${data}&awsRegion=${selected[0].value}`,
+            `epkey=${generateKeyData.data.emailKey}1&eskey=${generateKeyData.data.linkKey}&transport=${data}&awsRegion=${selected[0].value}`,
           );
           setExistTenants(findByEmailData.data);
         } else {
@@ -246,20 +244,26 @@ const SignUp = ({
   }, [selected, setCreateNewAccountQuery, setExistTenants]);
 
   useEffect(() => {
-    const IPGeolocation = async () => {
-      const ipGeolocationRes = await fetch("/api/ip-geolocation");
-      const ipGeolocationInfo = await ipGeolocationRes.json();
-      setSelected(
-        ipGeolocationInfo?.regionDbEntity?.regionDbKey
-          ? options.filter(
-              (opt) =>
-                opt.key === ipGeolocationInfo?.regionDbEntity?.regionDbKey,
-            )
-          : [options[0]],
-      );
-    };
+    setSelected(
+      IPGeolocationRegionDbKey
+        ? options.filter((opt) => opt.key === IPGeolocationRegionDbKey)
+        : [options[0]],
+    );
+  }, [IPGeolocationRegionDbKey]);
 
-    IPGeolocation();
+  useEffect(() => {
+    const savedEmail = localStorage.getItem("email");
+
+    if (savedEmail) {
+      setFormData((prev) => ({
+        ...prev,
+        email: savedEmail,
+      }));
+
+      if (validateEmail(savedEmail)) {
+        setIsFormValid(true);
+      }
+    }
   }, []);
 
   return (
@@ -267,7 +271,7 @@ const SignUp = ({
       <StyledSignUpAccount>
         <Text size={2} label={t("AlreadyHaveAnAccount")} />
         <StyledSignUpAccountLink
-          href={`/docspace-registration${router.query.desktop === "true" ? "?desktop=true" : ""}#login`}
+          href={`/docspace-registration${desktopQuery === "true" ? "?desktop=true" : ""}#login`}
           color="main"
           textUnderline
           hover="underline-none"

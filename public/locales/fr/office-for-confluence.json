@@ -1,0 +1,47 @@
+{
+  "PageTitle": "Office en ligne pour Confluence | ONLYOFFICE",
+  "PageDescription": "Travaillez sur tous types de documents bureautiques dans Confluence en utilisant ONLYOFFICE Docs",
+
+  "OnlineOfficeForConfluence": "Office en ligne pour Confluence",
+  "WorkOnAllKindsOfOfficeDocuments": "Travaillez sur tous types de documents bureautiques dans Confluence en utilisant ONLYOFFICE Docs",
+  "GetStarted": "COMMENCER",
+  "RequestFreeDemo": "Request free demo",
+  "HeroImgUrl": "/images/templates/office-for-confluence/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-confluence/hero/fr/hero@2x.png",
+
+  "EditAndCoAuthorOfficeDocuments": "Éditez et co-écrivez des documents bureautiques dans l'interface Confluence",
+  "DocumentsTab1Label": "Travaillez avec des fichiers bureautiques téléchargés dans la liste des pièces jointes",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-confluence/documents/fr/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-confluence/documents/fr/documents-1@2x.png",
+  "DocumentsTab2Label": "Créez et modifiez des documents texte, des feuilles de calcul et des présentations",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-confluence/documents/fr/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-confluence/documents/fr/documents-2@2x.png",
+  "DocumentsTab3Label": "Créez, annotez et remplissez des formulaires PDF",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-confluence/documents/fr/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-confluence/documents/fr/documents-3@2x.png",
+  "DocumentsTab4Label": "Collaborez sur des documents avec vos collègues en temps réel",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-confluence/documents/fr/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-confluence/documents/fr/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Conçue pour une intégration transparente avec Confluence",
+  "MarketplaceConnectorDescription": "Obtenez l'application ONLYOFFICE pour Confluence dès maintenant depuis la marketplace d'Atlassian.",
+
+  "WhyOO": "Pourquoi ONLYOFFICE ?",
+  "FeaturesFormats": "Prise en charge de plus de <0>50 formats de fichiers</0>, entièrement compatible avec les formats MS Office : DOCX, XLSX, PPTX.",
+  "FeaturesAIHelper": "Ensemble robuste d'outils d'édition, de mise en forme et de style. <0>Assistant IA</0> intégré.",
+  "FeatureCoEditing": "<0>Coédition</0> en temps réel et verrouillage des paragraphes, révision, historique des versions, comparaison de documents, commentaires et chat. Appels audio et vidéo.",
+  "FeaturesEnhancedSecurity": "<0>Sécurité renforcée.</0> Droits d'accès flexibles et JWT. Suivi des activités et rapports d'audit. Chiffrement au repos et en transit. Filigrane et protection par mot de passe. Code source ouvert.",
+  "FeaturesEasyConfiguration": "<0>Configuration facile</0>. Intégration transparente avec les connecteurs prêts à l'emploi de la marketplace d'Atlassian. Disponible pour Confluence Server, Data Center et Cloud.",
+  "FeaturesFreeTrial": "Versions d'entreprise évolutives. <0>Essai gratuit de 30 jours</0>. Solution auto-hébergée pour un contrôle total de vos données. Version Docs Cloud pour Confluence Cloud.",
+
+  "HowToStart": "Comment commencer",
+  "HowToStartStep1": "Déployez <0>ONLYOFFICE Docs</0> sur votre propre serveur ou inscrivez-vous à <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenez l'application d'intégration depuis <0>Atlassian Marketplace</0>. Sélectionnez l'option correspondante en changeant les onglets d'hébergement (Serveur / Data Center / Cloud).",
+  "HowToStartStep3": "Configurez l'application d'intégration.",
+
+  "HowToConnect": "Comment connecter ONLYOFFICE Docs à Confluence",
+  "ReadDetailedInstructions": "Lisez les instructions détaillées dans le <0>Centre d'aide</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/fr/integration/confluence.aspx",
+
+  "NeedAnAppToConnect": "Besoin d'une application pour connecter ONLYOFFICE Docs à votre service web préféré ? Ou en avez-vous développé une ?"
+}

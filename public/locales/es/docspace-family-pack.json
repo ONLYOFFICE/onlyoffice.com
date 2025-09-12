@@ -1,0 +1,27 @@
+{
+  "PageTitle": "ONLYOFFICE - Aplicaciones de oficina en la nube",
+
+  "BuyOODocSpaceFamilyPack": "Compra ONLYOFFICE <0>DocSpace Family Pack</0>",
+  "DocSpaceFamilyPack": "DocSpace Family Pack",
+  "RoomBasedFileStorage": "Almacenamiento de archivos basado en salas",
+  "OnlineEditors": "Editores online para documentos de texto, hojas de cálculo, presentaciones, formularios y archivos PDF",
+  "DesktopAndMobileApps": "Apps de escritorio y para móviles, versión web para móviles",
+  "EnhancedSecurityFeatures": "Funciones de seguridad mejoradas",
+  "AllMinorUpdatesAndMajorUpgrades": "Todas las actualizaciones menores y mayores",
+  "TryItFree": "Probar gratis",
+
+  "NumberOfUsers": "Número de usuarios preferido",
+  "NumberOfUsersTooltip": "El número especificado de usuarios define cuántas personas pueden tener acceso a la edición de documentos, hojas de cálculo y presentaciones. El número de documentos que se pueden editar al mismo tiempo no está limitado. Los demás usuarios solo podrán abrir los documentos para su visualización.",
+  "LicenseDuration": "Duración de la licencia",
+  "Lifetime": "De por vida",
+  "LifetimeTooltip": "Puedes utilizar todas las funciones de ONLYOFFICE DocSpace Family Pack disponibles en el momento de la compra durante un período ilimitado de tiempo, pero un año después de la fecha de compra ya no podrás obtener actualizaciones gratuitas.",
+  "Updates": "Actualizaciones",
+  "1Year": "1 año",
+  "Total": "En total:",
+  "BuyNow": "Comprar ahora",
+
+  "WhatDoesTheNumberOfUsersLabel": "¿Qué significa el \"número de usuarios\"?",
+  "WhatDoesTheNumberOfUsersText": "Hemos especificado cuántas personas pueden tener acceso a la edición de documentos, hojas de cálculo y presentaciones. El número de documentos que pueden ser editados al mismo tiempo no está limitado.<br/>Otros usuarios podrán abrir documentos sólo para verlos.<br/><br/>Nota: ONLYOFFICE reconoce el ID de usuario por un período de 30 días. Después de eso, podrás reemplazar un usuario por uno nuevo si es necesario. Si compartes un documento con usuarios externos, cada uno de ellos recibe una identificación de usuario con nombre durante un periodo de 30 días.",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "¿Dónde puedo encontrar respuestas a otras preguntas?",
+  "WhereCanIFindAnswersToOtherQuestionsText": "Por favor, visita nuestro <0>centro de preguntas frecuentes</0> o <1>envía tu solicitud</1> y te ayudaremos lo antes posible."
+}

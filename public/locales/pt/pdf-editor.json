@@ -1,0 +1,45 @@
+{
+  "PageTitle": "Visualizador e conversor de PDF online",
+  "PageDescription": "Visualize e crie arquivos PDF a partir de qualquer documento de texto, planilha ou apresentação, converta PDF para DOCX online e crie formulários PDF preenchíveis.",
+
+  "Header": "Editor, leitor e conversor de PDF on-line para seu aplicativo da Web",
+  "SubHeader": "Visualize, edite, anote e crie arquivos PDF, converta PDF em DOCX online",
+
+  "SwitcherTitle1": "Editar PDF",
+  "SwitcherTitle2": "Anotar PDF",
+  "SwitcherTitle3": "Ler",
+  "SwitcherTitle4": "Converter",
+  "SwitcherTitle5": "Criar e preencher",
+  "SwitcherTitle6": "Colaborar",
+  "SwitcherTitle7": "Faça mais",
+
+  "Feature1Title": "Editar PDF",
+  "Feature1Desc": "Edite texto em seus arquivos PDF. Insira e ajuste diversos objetos como tabelas, formas, imagens, hiperlinks, etc. Trabalhe com páginas: gire, adicione novas páginas, exclua as desnecessárias. Alterne facilmente entre os modos de edição e visualização.",
+  "Feature2Title": "Anotar PDF",
+  "Feature2Desc": "Destaque, sublinhe e risque textos, deixe comentários e faça desenhos à mão livre. Dê um toque profissional aos seus PDFs com carimbos.",
+  "Feature3Title": "Leia arquivos PDF em qualquer lugar",
+  "Feature3Desc": "Abra e visualize arquivos PDF online, localmente ou em trânsito, não importa onde você esteja e qual dispositivo esteja usando. Navegue pelas páginas do PDF, imprima o PDF com facilidade.",
+  "Feature4Title": "Converta PDF para DOCX e vice-versa",
+  "Feature4Desc": "Salve qualquer documento de texto, planilha ou apresentação como um arquivo PDF ou PDF/A. Crie PDFs com painel de navegação. Converta PDF para DOCX para edição adicional usando várias ferramentas de formatação e estilo.",
+  "Feature4Link": "Converter agora",
+  "Feature5Title": "Crie e preencha formulários PDF",
+  "Feature5Desc": "Use qualquer documento .docx, baixe um modelo de formulário da nossa biblioteca ou crie um formulário PDF online do zero. Basta adicionar os campos necessários – áreas de texto, imagens, caixas de combinação, listas suspensas, caixas de seleção, etc. Preencha formulários PDF prontos.",
+  "Feature5Link": "Abra a biblioteca",
+  "Feature6Title": "Colabore com sua equipe",
+  "Feature6Desc": "Co-edite arquivos PDF para um trabalho em equipe mais eficiente. Alterne entre os modos de bloqueio de parágrafo e em tempo real. Deixe comentários e discuta o processo no bate-papo integrado ou no Telegram. Faça chamadas de áudio e vídeo habilitando o plug-in Jitsi.",
+  "Feature7Title": "Amplie suas capacidades de trabalho",
+  "Feature7Desc": "Aproveite ao máximo seu editor de PDF online com uma coleção de complementos de terceiros. Traduza qualquer palavra ou frase, edite imagens e muito mais.",
+  "Feature7Link": "Encontre os aplicativos que você precisa para o editor de PDF",
+
+  "LearnMoreHeading": "Saiba mais sobre o leitor e conversor de PDF do ONLYOFFICE",
+  "BlogDesc": "Como converter PDF para DOCX",
+  "TutorialsDesc": "PDF vs DOCX: quais são as diferenças",
+  "HintsDesc": "Como criar um formulário preenchível em PDF",
+
+  "Q1": "Posso converter PDF para DOCX sem conexão com a Internet?",
+  "A1": "Sim, você pode instalar e usar a versão gratuita do <0>ONLYOFFICE Desktop Editors</0> para converter arquivos PDF offline para edição posterior.",
+  "Q2": "O ONLYOFFICE oferece aplicativos móveis nativos para visualização de PDF?",
+  "A2": "Sim, você pode instalar a versão gratuita do aplicativo <0>Documents</0> para dispositivos iOS ou Android para visualizar arquivos PDF onde estiver.",
+  "Q3": "É possível usar o conversor de PDF do ONLYOFFICE em meu aplicativo com a minha marca?",
+  "A3": "Sim, você pode integrar o visualizador e conversor de PDF ao seu aplicativo. Use o <0>ONLYOFFICE Docs Developer</0>."
+}

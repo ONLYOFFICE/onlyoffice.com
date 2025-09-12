@@ -1,24 +1,66 @@
 {
+  "PageTitle": "企业在线文字处理软件 | ONLYOFFICE",
+  "PageDescription": "与Microsoft®格式兼容的word文档在线协作编辑软件。上传、打开和编辑、共享您的文本文档。通过Windows、Linux、Mac OS、安卓设备、iPhone 和iPad访问。",
 
-    "HeroImgUrl": "/images/templates/document-editor/hero/zh/hero.png",
-    "HeroImgUrl2x": "/images/templates/document-editor/hero/zh/hero@2x.png",
+  "Header": "为您的网页应用获取在线协作文档编辑器",
+  "SubHeader": "实时在线打开、编辑和协作处理Word文档",
 
-    "Feature1ImgUrl": "/images/templates/document-editor/features/zh/screen1.png",
-    "Feature1ImgUrl2x": "/images/templates/document-editor/features/zh/screen1@2x.png",
-    "Feature2ImgUrl": "/images/templates/document-editor/features/zh/screen2.png",
-    "Feature2ImgUrl2x": "/images/templates/document-editor/features/zh/screen2@2x.png",
-    "Feature3ImgUrl": "/images/templates/document-editor/features/zh/screen3.png",
-    "Feature3ImgUrl2x": "/images/templates/document-editor/features/zh/screen3@2x.png",
-    "Feature4ImgUrl": "/images/templates/document-editor/features/zh/screen4.png",
-    "Feature4ImgUrl2x": "/images/templates/document-editor/features/zh/screen4@2x.png",
-    "Feature5ImgUrl": "/images/templates/document-editor/features/zh/screen5.png",
-    "Feature5ImgUrl2x": "/images/templates/document-editor/features/zh/screen5@2x.png",
-    "Feature6ImgUrl": "/images/templates/document-editor/features/zh/screen6.png",
-    "Feature6ImgUrl2x": "/images/templates/document-editor/features/zh/screen6@2x.png",
-    "Feature7ImgUrl": "/images/templates/document-editor/features/zh/screen7.png",
-    "Feature7ImgUrl2x": "/images/templates/document-editor/features/zh/screen7@2x.png",
-    "Feature8ImgUrl": "/images/templates/document-editor/features/zh/screen8.png",
-    "Feature8ImgUrl2x": "/images/templates/document-editor/features/zh/screen8@2x.png",
+  "Feature1Title": "具备丰富的文字处理功能",
+  "Feature1Desc": "在线编辑文本文档从此不再受限制：100%享受查看、转换、打印和分页保真度; 处理任何大小和复杂程度的文件；直接在浏览器上使用加强版的格式化工具集。ONLYOFFICE文档编辑器支持所有流行的格式，例如：DOC、DOCX、ODT、TXT、HTML等。PDF和XPS可以转换为DOCX，以便进一步编辑。",
 
-    "BlogLink": "https://www.onlyoffice.com/blog/zh-hans/2022/07/embed-word-document-in-html/"
+  "Feature2Title": "丰富的编辑功能",
+  "Feature2Desc": "管理字体和样式、设置文本格式、调整行距和段落间距、插入页眉和页脚、自定义页面布局以及设置镜像和装订线边距以准备要发布的文档，启用自动断字。",
+
+  "Feature3Title": "使用 AI 助手",
+  "Feature3Desc": "借助 ChatGPT 插件执行涉及理解或生成自然语言的任务。获得问题的准确答案、快速查找信息、生成文本、构建代码...这些工作在编辑器中即可直接完成。",
+
+  "Feature4Title": "保持创意",
+  "Feature4Desc": "用图像、自定义的图表、自选图形和表格、文本艺术、SmartArt图形、方程、首字下沉等创建完美的文件。轻松调整插入的对象：移动、调整大小、对齐、更改环绕样式、填充颜色或图案等。创建专业外观的表单和模板。使用钢笔或荧光笔工具自行手绘图形。",
+
+  "Feature5Title": "深入分析文本",
+  "Feature5Desc": "分析您的文档：查看包含或不包含空格的字数、段落和字符。搜索单词或短语，使用查找并替换功能将其替换为新单词或短语。查看版本历史记录，只需单击即可选择并恢复任何以前的版本。",
+
+  "Feature6Title": "改善团队工作流程",
+  "Feature6Desc": "与您的团队在线协作处理文档：选择适合的共同编辑模式——在键入时<0>快速</0>显示所有更改，或者仅<0>严格</0>显示保存后的更改。留下并分类批注评论，并在内置聊天或Telegram中讨论该流程。使用追踪修订模式和预览功能了解在接受或拒绝更改后的文档外观。",
+
+  "Feature7Title": "轻松对比文档",
+  "Feature7Desc": "快速对比或合并两篇文档，通过审阅模式查看不同之处。可逐个地接受或拒绝修改，也可同时批量操作。比较文档后合并修改并将其保存为原文档的新版本",
+
+  "Feature8Title": "扩展编辑功能",
+  "Feature8Desc": "通过一系列第三方插件扩展您的在线编辑功能。插入YouTube视频、添加特殊符号、翻译任意单词或句子，并在文档中编辑图像等。",
+
+  "LearnMoreHeading": "了解更多关于ONLYOFFICE文本文档编辑器的信息",
+  "BlogDesc": "如何在HTML中嵌入Word文档",
+  "BlogLink": "https://www.onlyoffice.com/blog/zh-hans/2022/07/embed-word-document-in-html/",
+  "TutorialsDesc": "为ONLYOFFICE文档添加新字体",
+  "TutorialsLink": "https://blog.csdn.net/VincentYoung/article/details/125753662",
+  "HintsDesc": "支持的电子文本文件格式",
+  "HintsLink": "https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/ONLYOFFICE-Document-Editor/HelpfulHints/SupportedFormats.aspx",
+
+  "Q1": "可以线下编辑文本文件吗？",
+  "A1": "是的，您可以免费安装并使用<0>ONLYOFFICE编辑器桌面版</0>来离线编辑本地文档。",
+  "Q2": "ONLYOFFICE 是否提供用于文档编辑的原生移动应用程序？",
+  "A2": "是的，您可以安装适用于 iOS 或 Android 设备的免费<0>文档</0>应用程序，以便随时随地处理文档。",
+  "Q3": "是否可以在我的品牌下的应用程序中使用ONLYOFFICE文本文档编辑器？",
+  "A3": "是的，您可以将文本文档编辑器集成到您的应用程序中。请使用<0>ONLYOFFICE文档开发者版</0>。",
+
+  "HeroImgUrl": "/images/templates/document-editor/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/document-editor/hero/zh/hero@2x.png",
+
+  "Feature1ImgUrl": "/images/templates/document-editor/features/zh/screen1.png",
+  "Feature1ImgUrl2x": "/images/templates/document-editor/features/zh/screen1@2x.png",
+  "Feature2ImgUrl": "/images/templates/document-editor/features/zh/screen2.png",
+  "Feature2ImgUrl2x": "/images/templates/document-editor/features/zh/screen2@2x.png",
+  "Feature3ImgUrl": "/images/templates/document-editor/features/zh/screen3.png",
+  "Feature3ImgUrl2x": "/images/templates/document-editor/features/zh/screen3@2x.png",
+  "Feature4ImgUrl": "/images/templates/document-editor/features/zh/screen4.png",
+  "Feature4ImgUrl2x": "/images/templates/document-editor/features/zh/screen4@2x.png",
+  "Feature5ImgUrl": "/images/templates/document-editor/features/zh/screen5.png",
+  "Feature5ImgUrl2x": "/images/templates/document-editor/features/zh/screen5@2x.png",
+  "Feature6ImgUrl": "/images/templates/document-editor/features/zh/screen6.png",
+  "Feature6ImgUrl2x": "/images/templates/document-editor/features/zh/screen6@2x.png",
+  "Feature7ImgUrl": "/images/templates/document-editor/features/zh/screen7.png",
+  "Feature7ImgUrl2x": "/images/templates/document-editor/features/zh/screen7@2x.png",
+  "Feature8ImgUrl": "/images/templates/document-editor/features/zh/screen8.png",
+  "Feature8ImgUrl2x": "/images/templates/document-editor/features/zh/screen8@2x.png"
 }

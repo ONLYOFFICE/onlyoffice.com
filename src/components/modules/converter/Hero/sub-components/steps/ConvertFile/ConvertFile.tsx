@@ -35,6 +35,7 @@ import { getDefaultOutputFormat } from "./utils/getDefaultOutputFormat";
 import { getFormatType } from "../../../utils/getFormatType";
 import { FileErrorModal } from "../../modals/FileErrorModal";
 import { languages } from "@src/config/data/languages";
+import { getLink } from "@src/utils/getLink";
 
 const ConvertFile = ({
   theme,
@@ -74,7 +75,6 @@ const ConvertFile = ({
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [fade, setFade] = useState(true);
   const [isOpenFileErrorModal, setIsOpenFileErrorModal] = useState(false);
-  const [errorModalText, setErrorModalText] = useState("");
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -130,6 +130,7 @@ const ConvertFile = ({
     formData.append("formatType", formatType ?? "");
     formData.append("uuid", uuid);
     formData.append("region", languageData?.key || "en-US");
+    formData.append("hCaptchaResponse", captchaToken);
 
     try {
       const res = await fetch("/api/converter", {
@@ -139,6 +140,11 @@ const ConvertFile = ({
 
       const data = await res.json();
 
+      if (data.status === "errorHCaptchaInvalid") {
+        setCaptchaError(true);
+        return;
+      }
+
       if (data.status === "stopConvertRequestSuccessful") {
         return;
       }
@@ -146,7 +152,6 @@ const ConvertFile = ({
       if (data.status === "error") {
         setStep("convert");
         setIsOpenFileErrorModal(true);
-        setErrorModalText(data?.message.message || data.message || "");
       } else {
         setResultData(data);
         setOutputFileType(outputFormat);
@@ -164,19 +169,6 @@ const ConvertFile = ({
 
   const handleHCaptchaChange = async (token: string | null) => {
     if (token) {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token }),
-      });
-
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
-        setCaptchaError(true);
-        return;
-      }
-
       setCaptchaToken(token);
       setCaptchaError(false);
     }
@@ -293,7 +285,12 @@ const ConvertFile = ({
                   components={[
                     <Link
                       key="0"
-                      href={loadingText[currentTextIndex].link.href}
+                      href={
+                        loadingText[currentTextIndex].link.href ===
+                        "templatesLink"
+                          ? getLink("templates", router.locale!)
+                          : loadingText[currentTextIndex].link.href
+                      }
                       target={
                         loadingText[currentTextIndex].link.isExternal
                           ? "_blank"
@@ -338,9 +335,11 @@ const ConvertFile = ({
         setIsOpenFileErrorModal={setIsOpenFileErrorModal}
         theme={theme}
       >
-        <Text size={2} textAlign="center">
-          Error: {errorModalText}
-        </Text>
+        <Text
+          size={2}
+          textAlign="center"
+          label={t("TheFileAppearsToBeBroken")}
+        />
       </FileErrorModal>
     </>
   );

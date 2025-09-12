@@ -12,6 +12,7 @@ export interface IQuoteModalOnSubmitRequest {
   from?: string;
   country: string;
   region: string;
+  hCaptchaResponse: string | null;
 }
 
 interface IApiResponse {
@@ -34,4 +35,5 @@ export interface IQuoteModal<T> {
     params: IQuoteModalOnSubmitRequest,
   ) => Promise<IApiResponse>;
   onClose: () => void;
+  pageTrackName: string;
 }

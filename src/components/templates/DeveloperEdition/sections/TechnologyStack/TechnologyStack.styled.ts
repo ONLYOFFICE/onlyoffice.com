@@ -111,7 +111,7 @@ const LangImg = styled.div<{ $positionX: number; $width?: number }>`
   content: "";
   display: block;
   height: 58px;
-  background-image: url("./images/templates/developer-edition/developing/lang-logos.svg");
+  background-image: url("/images/templates/developer-edition/developing/lang-logos.svg");
   background-repeat: no-repeat;
   background-size: auto 58px;
   background-position: ${(props) => props.$positionX}px 50%;

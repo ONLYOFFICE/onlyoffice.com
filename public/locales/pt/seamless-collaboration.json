@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Colabore de forma eficaz em todos os tipos de documentos de escritório | ONLYOFFICE",
+  "PageDescription": "Compartilhe, seja coautor e comunique-se em tempo real para realizar o trabalho com mais rapidez",
+
+  "Header": "Colabore <0>de forma eficaz</0> em todos os tipos de documentos de escritório",
+  "SubHeader": "Compartilhe, seja coautor e comunique-se em tempo real para realizar o trabalho com mais rapidez",
+
+  "SwitcherTitle1": "Compartilhar",
+  "SwitcherTitle2": "Coeditar",
+  "SwitcherTitle3": "Comentar",
+  "SwitcherTitle4": "Comunicar",
+  "SwitcherTitle5": "Acompanhar alterações",
+  "SwitcherTitle6": "Comparar e combinar",
+  "SwitcherTitle7": "Gerenciar versões",
+
+  "Feature1Title": "Compartilhe documentos fornecendo permissões flexíveis",
+  "Feature1Desc": "Compartilhe documentos de texto, planilhas, apresentações e arquivos PDF para visualização ou edição, permita comentários ou revisão. Crie formulários prontos para preenchimento e deixe que outros usuários os preencham. Defina permissão para filtragem personalizada para permitir que os colaboradores filtrem os dados de forma independente. <2>Compartilhe links para o intervalo selecionado para que outros coautores possam encontrar rapidamente os dados necessários, mesmo em pastas de trabalho grandes. </2>Restrinja as opções de cópia, download e impressão. O compartilhamento público também está disponível.",
+
+  "Feature2Title": "Coedite sem estresse",
+  "Feature2Desc": "Coautor de documentos on-line em tempo real, use o modo Rápido para exibir todas as alterações logo após a entrada. Ative o modo Estrito para bloquear o parágrafo que você edita e trabalhar nele de forma privada, sem interrupções.",
+
+  "Feature3Title": "Comente e mencione",
+  "Feature3Desc": "Deixe comentários para discutir dúvidas e problemas. Mencione os usuários nos comentários para convidá-los a colaborar e compartilhar instantaneamente o arquivo com eles. Gerencie comentários, classifique-os por autor ou data.",
+
+  "Feature4Title": "Comunicar",
+  "Feature4Desc": "Converse com coautores diretamente em seus documentos. Habilite os plug-ins Jitsi ou Rainbow para fazer chamadas de áudio e organizar videoconferências.",
+
+  "Feature5Title": "Alterações de percurso",
+  "Feature5Desc": "Ative Rastrear alterações para destacar suas contribuições e revisar alterações feitas por outros editores. Aceite ou rejeite as alterações uma por uma ou todas de uma vez. Escolha uma maneira de exibir as alterações feitas.",
+
+  "Feature6Title": "Compare e combine",
+  "Feature6Desc": "Compare e encontre rapidamente diferenças entre dois documentos. Navegue entre as alterações, aceite-as ou rejeite-as. Combine dois documentos.",
+
+  "Feature7Title": "Gerenciar versões",
+  "Feature7Desc": "Acesse o histórico de versões do seu documento, verifique quem criou cada versão e quando, quais alterações foram feitas. Visualize e recupere versões anteriores, se necessário, inclusive o texto excluído."
+}

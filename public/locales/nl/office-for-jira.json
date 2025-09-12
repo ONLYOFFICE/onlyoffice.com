@@ -1,0 +1,43 @@
+{
+  "PageTitle": "Online office suite voor Jira | ONLYOFFICE Docs",
+  "PageDescription": "Bewerk en co-bewerk documenten, maak invulbare formulieren binnen Jira",
+
+  "OnlineOfficeForConnector": "Online office voor Jira",
+  "Subheader": "Werk aan alle soorten kantoordocumenten in Jira Software met ONLYOFFICE Docs",
+  "HeroImgUrl": "/images/templates/office-for-jira/hero/nl/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-jira/hero/nl/hero@2x.png",
+
+  "WorkWithinConnector": "Bewerk en werk samen aan kantoordocumenten binnen de Jira-interface",
+  "DocumentsTab1Label": "Bekijk, bewerk en co-bewerk kantoordocumenten die aan taken zijn gekoppeld direct in je Jira-dashboard.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-jira/documents/nl/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-jira/documents/nl/screen1@2x.png",
+  "DocumentsTab2Label": "Maak en bewerk tekstdocumenten, spreadsheets en presentaties.",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-jira/documents/nl/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-jira/documents/nl/screen2@2x.png",
+  "DocumentsTab3Label": "Werk in realtime samen met collega's aan documenten.",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-jira/documents/nl/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-jira/documents/nl/screen3@2x.png",
+  "GetStarted": "Aan de slag",
+
+  "MarketplaceConnectorTitle": "Ontworpen voor naadloze integratie met Jira",
+  "MarketplaceConnectorDescription": "Haal nu de ONLYOFFICE-app voor Jira uit de Atlassian Marketplace.",
+
+  "WhyOO": "Waarom ONLYOFFICE?",
+  "Reason1": "Ondersteuning voor meer dan <0>50 bestandsindelingen</0>, volledig compatibel met MS Office-indelingen: DOCX, XLSX, PPTX.",
+  "Reason2": "Een uitgebreide set bewerkings-, opmaak- en stijlgereedschappen. Geïntegreerde <0>AI-helper</0>.",
+  "Reason3": "Realtime en paragraafvergrendelende <0>samenbewerking</0>, review, versiegeschiedenis, documentvergelijking, opmerkingen & chat. Audio- en videogesprekken.",
+  "Reason4": "<0>Verbeterde beveiliging.</0> Flexibele toegangsrechten en JWT. Watermerken en wachtwoordbeveiliging. Open-source code.",
+  "Reason5": "<0>Eenvoudige configuratie</0> vanuit het Jira-beheerpaneel. Naadloze integratie met de kant-en-klare connector uit de <1>Atlassian Marketplace</1>. Beschikbaar voor Jira Server en Data Center.",
+  "Reason6": "Cloud- en self-hosted oplossing voor volledige controle over je gegevens. Schaalbare Enterprise-versies. <0>Gratis proefperiode van 30 dagen</0>.",
+
+  "HowToStart": "Aan de slag",
+  "HowToStartStep1": "Installeer <0>ONLYOFFICE Docs</0> op je eigen server of maak een <1>Docs Cloud</1>-account aan.",
+  "HowToStartStep2": "Haal de ONLYOFFICE-connector uit de <0>Atlassian Marketplace</0>.",
+  "HowToStartStep3": "Configureer de connector en schakel JWT in.",
+  "HowToStartStep3Url": "/images/templates/office-for-jira/how-to-start/nl/step3.svg",
+
+  "ReadDetailedInstructions": "Lees gedetailleerde instructies in het <0>Help Center</0>.",
+  "HowToConnect": "ONLYOFFICE Docs en Jira Software integreren",
+
+  "NeedAnAppToConnect": "Heb je een app nodig om ONLYOFFICE met je favoriete webservice te verbinden? Of heb je er al een ontwikkeld?"
+}

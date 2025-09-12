@@ -51,7 +51,7 @@ const Hero = () => {
             />
           </StyledHeroButtonsWrapper>
           <StyledHeroVideoWrapper>
-            <StyledHeroVideo src="https://www.youtube.com/embed/JzqxSas5OpY" />
+            <StyledHeroVideo src="https://www.youtube.com/embed/JzqxSas5OpY?si=ilgMB8HpWDMkAVZp" />
             <StyledHeroVideoText label={t("HeroVideoText")} />
           </StyledHeroVideoWrapper>
         </StyledHeroWrapper>

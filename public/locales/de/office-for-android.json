@@ -10,9 +10,6 @@
   "HeroLeftImageUrl": "/images/templates/office-for-android/hero/de/header-phone.de.png",
   "HeroLeftImageUrl2x": "/images/templates/office-for-android/hero/de/header-phone.de@2x.png",
 
-  "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.de.png",
-  "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery.svg",
-
   "OneAppForYourText": "Eine App für Ihre Dokumente, Tabellen, Präsentationen, Formulare und Mediendateien",
   "CompatibleWithMSOffice": "100% Kompatibilität mit Microsoft Office Formaten",
 
@@ -48,7 +45,7 @@
   "FeaturesItemMobile4Bg": "/images/templates/office-for-android/features/de/img-mobile-4.png",
   "FeaturesItemMobile4Bg2x": "/images/templates/office-for-android/features/de/img-mobile2x-4.png",
 
-  "FeaturesItemHeadingPDF": "Pdf-Viewer und Mediaplayer",
+  "FeaturesItemHeadingPDF": "PDF-Viewer und Mediaplayer",
   "FeaturesItemTextMakeViewPDF": "Anzeigen von PDF-Dokumenten Bildern und Videodateien. Sortieren, umbenennen, verschieben und kopieren von Dateien. Erstellen von Ordnern auf dem Gerät oder in der Cloud.",
   "FeaturesItemTablet5Bg": "/images/templates/office-for-android/features/de/img-tablet-5.png",
   "FeaturesItemTablet5Bg2x": "/images/templates/office-for-android/features/de/img-tablet2x-5.png",

@@ -14,15 +14,7 @@ const StyledAboutContent = styled.div`
   }
 `;
 
-const StyledAboutText = styled(Text)`
-  &:first-child {
-    font-size: 22px;
-
-    @media ${device.mobile} {
-      font-size: 18px;
-    }
-  }
-`;
+const StyledAboutText = styled(Text)``;
 
 const StyledAboutImage = styled.div`
   width: 1240px;

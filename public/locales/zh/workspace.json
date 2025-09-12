@@ -4,7 +4,8 @@
 
   "HeroTitle": "ONLYOFFICE工作区",
   "HeroText": "Web应用捆绑包，可助力实现高效的团队管理和在线协作",
-  "GetItNow": "立即获取",
+  "GetItNow": "开始",
+  "PickYourPrice": "自由选择价格",
 
   "ManageAllYourBusinessProcesses": "管理您的所有业务流程",
   "LearnMore": "了解更多",
@@ -80,5 +81,8 @@
 
   "CommunityFooterText": "可在<0>此处</0>下载适合家庭使用的社区版本。",
 
+  "OOWorkspace": "欢迎来到ONLYOFFICE--安全编辑与协作的软件",
+  "OOWorkspaceMobile": "欢迎来到ONLYOFFICE",
+  "OOWorkspaceText": "观看我们的视频",
   "VideoImageUrl": "/images/templates/workspace/video/zh/workspace.svg"
 }

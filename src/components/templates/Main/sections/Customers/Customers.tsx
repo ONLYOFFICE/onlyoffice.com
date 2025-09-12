@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import {
   StyledCustomers,
   StyledCustomersHeading,
@@ -10,11 +11,14 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
 import { StoryCard } from "@src/components/widgets/StoryCard";
-import { customersItems } from "./data/customersItems";
+import { customersItems, TCustomersLocale } from "./data/customersItems";
 import { successStoriesItems } from "./data/successStoriesItems";
 
 const Customers = () => {
   const { t } = useTranslation("main");
+  const router = useRouter();
+  const locale: TCustomersLocale = (router.locale as TCustomersLocale) ?? "en";
+  const customersLangItems = customersItems[locale] || customersItems.en;
 
   return (
     <Section
@@ -30,7 +34,7 @@ const Customers = () => {
             textAlign="center"
           />
           <StyledCustomersItems>
-            {customersItems.map((item, index) => (
+            {customersLangItems.map((item, index) => (
               <li key={index}>
                 <img
                   src={item.image.url}

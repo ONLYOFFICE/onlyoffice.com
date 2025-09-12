@@ -2,16 +2,19 @@ import styled, { css } from "styled-components";
 import { IConnectorCard } from "./ConnectorCard.types";
 import { device } from "@src/utils/device";
 import { Button } from "@src/components/ui/Button";
+import { Heading } from "@src/components/ui/Heading";
+import { Badge } from "@src/components/ui/Badge";
 
 const StyledConnectorCard = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid #e2e2e2;
-  border-radius: 5px;
+  border-radius: 16px;
   width: 100%;
   height: 100%;
-  box-shadow: 0px 7px 15px 0px rgba(85, 85, 85, 0.1);
   transition: box-shadow 0.2s;
+  border: 1px solid #E5E5E5
+  box-shadow: 0px 7px 15px 0px #5555551A;
+
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -21,11 +24,15 @@ const StyledConnectorCard = styled.div`
 const StyledConnectorCardImgWrapper = styled.div<{
   $imgBgColor: IConnectorCard["image"]["bgColor"];
 }>`
+  position: relative;
+  display: flex;
+  padding: 24px 24px 0px;
+  align-items: center;
   border-radius: 5px;
-  padding: 40px;
-  background: ${({ $imgBgColor }) => ($imgBgColor ? $imgBgColor : "#f5f5f5")};
+  background: #fff;
+  gap: 16px;
 
-  @media ${device.tablet} {
+@media ${device.tablet} {
     padding: 40px 28px;
   }
 
@@ -37,18 +44,32 @@ const StyledConnectorCardImgWrapper = styled.div<{
 const StyledConnectorCardImg = styled.div<{
   $imgUrl: IConnectorCard["image"]["url"];
 }>`
-  width: 100%;
-  height: 80px;
+  width: 88px;
+  height: 88px;
   background-image: url(${({ $imgUrl }) => $imgUrl});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 `;
 
+const StyledConnectorCardHeadingFor = styled.div`
+   
+    display: flex;
+    flex-direction: column;
+    
+`;
+const StyledConnectorCardHeadingName = styled(Heading)`
+   
+    font-weight: 400;
+    font-size:12px;
+    text-transform: uppercase;
+    
+`;
+
 const StyledConnectorCardBody = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 32px;
+  padding: 16px 24px;
   height: 100%;
   background-color: #ffffff;
 
@@ -67,6 +88,12 @@ const StyledConnectorCardHeading = styled.div`
       margin-right: 6px;
     }
   }
+`;
+
+const StyledBadge = styled(Badge)`
+  position: absolute;
+    right: 24px;
+    top: 24px;
 `;
 
 const StyledConnectorCardText = styled.div`
@@ -109,4 +136,7 @@ export {
   StyledConnectorCardText,
   StyledConnectorCardInfo,
   StyledConnectorCardButton,
+  StyledConnectorCardHeadingFor,
+  StyledConnectorCardHeadingName,
+  StyledBadge,
 };

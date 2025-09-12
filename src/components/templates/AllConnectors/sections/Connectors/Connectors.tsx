@@ -74,15 +74,13 @@ const Connectors = ({ locale }: ILocale) => {
               name={
                 ["zh", "ja"].includes(locale)
                   ? `${connector.name} ${
-                      connector.isWopi
-                        ? t("WOPIConnectorFor")
-                        : t("ConnectorFor")
+                      connector.isWopi ? t("For") : t("For")
                     }`
-                  : `${
-                      connector.isWopi
-                        ? t("WOPIConnectorFor")
-                        : t("ConnectorFor")
-                    } ${connector.name}`
+                  : locale === "es"
+                    ? connector.name
+                    : `${
+                        connector.isWopi ? t("For") : t("For")
+                      } ${connector.name}`
               }
               text={t(connector.text)}
               moreInfoUrl={connector.moreInfoUrl}
@@ -92,6 +90,8 @@ const Connectors = ({ locale }: ILocale) => {
               isPaid={connector.isPaid}
               getItNowUrl={connector.getItNowUrl}
               isNew={connector.isNew}
+              isWopi={connector.isWopi}
+              isBot={connector.isBot}
             />
           ))}
         </StyledConnectorItems>

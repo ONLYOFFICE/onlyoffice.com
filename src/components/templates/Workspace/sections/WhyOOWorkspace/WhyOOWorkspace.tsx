@@ -11,8 +11,10 @@ import { Heading } from "@src/components/ui/Heading";
 import { features } from "./data/items";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
+import { ILocale } from "@src/types/locale";
+import { getLink } from "@src/utils/getLink";
 
-const WhyOOWorkspace = () => {
+const WhyOOWorkspace = ({ locale }: ILocale) => {
   const { t } = useTranslation("workspace");
 
   return (
@@ -41,7 +43,11 @@ const WhyOOWorkspace = () => {
                 <Text size={2} color="#666666" label={t(item.text)} />
                 {item.link && (
                   <Link
-                    href={item.link.href}
+                    href={
+                      item.link.href === "/app-directory"
+                        ? getLink("marketplace", locale)
+                        : item.link.href
+                    }
                     label={t(item.link.label)}
                     target={item.link.isExternal ? "_blank" : undefined}
                     color="main"

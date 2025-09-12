@@ -1,0 +1,48 @@
+{
+  "PageTitle": "Travaillez sur des fichiers bureautiques directement dans votre Dropbox | ONLYOFFICE",
+  "PageDescription": "Affichez et éditez des documents bureautiques, des feuilles de calcul, des diapositives et des formulaires dans Dropbox en utilisant ONLYOFFICE Docs",
+
+  "FreeOnlineOfficeForDropbox": "Bureau en ligne gratuit pour <0>Dropbox</0>",
+  "EditOfficeFilesRightInDropbox": "Modifiez vos fichiers bureautiques directement dans Dropbox en utilisant l'ensemble des fonctionnalités d'ONLYOFFICE Docs",
+  "GetFreeApp": "OBTENIR APPLICATION GRATUITE",
+  "HeroImgUrl": "/images/templates/office-for-dropbox/hero/dropbox_header.png",
+  "HeroImgUrl2x": "/images/templates/office-for-dropbox/hero/dropbox_header@2x.png",
+
+  "WorkOnOfficeDocumentsStored": "Travaillez sur des documents bureautiques stockés dans Dropbox",
+  "DocumentsTab1Label": "Affichez et modifiez des documents texte, des feuilles de calcul et des présentations",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-dropbox/documents/fr/documents-1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-dropbox/documents/fr/documents-1@2x.png",
+  "DocumentsTab2Label": "Construisez et remplissez des formulaires en ligne complexes",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-dropbox/documents/fr/documents-2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-dropbox/documents/fr/documents-2@2x.png",
+  "DocumentsTab3Label": "Exportez/importez de/vers un fichier PDF",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-dropbox/documents/fr/documents-3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-dropbox/documents/fr/documents-3@2x.png",
+  "DocumentsTab4Label": "Transformez vos manuels en livres électroniques",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-dropbox/documents/fr/documents-4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-dropbox/documents/fr/documents-4@2x.png",
+
+  "MarketplaceConnectorTitle": "Conçu pour fonctionner de manière transparente dans Dropbox",
+  "MarketplaceConnectorDescription": "Installez l'application ONLYOFFICE pour Dropbox dès aujourd'hui dans Dropbox Marketplace",
+
+  "WhyOO": "Pourquoi ONLYOFFICE ?",
+  "FeaturesRobustSet": "<0>Ensemble robuste</0> d'outils d'édition",
+  "FeaturesFamiliarInterface": "<0>Interface familière</0> avec onglets",
+  "FeaturesAIHelper": "<0>Assistant IA</0> et collection de plugins gratuits",
+  "FeaturesFormats": "Prise en charge de plus de <0>50 formats de fichiers</0>",
+  "FeaturesHighestCompatibility": "<0>Compatibilité maximale</0> avec les formats docx, xlsx et pptx",
+  "FeaturesOpenSourceCode": "Filigrane, protection par mot de passe, <0>code source ouvert</0>",
+  "FeaturesFreeApp": "<0>Application gratuite</0>, sans installation ni enregistrement",
+  "GetStarted": "COMMENCER",
+
+  "HowToStart": "Comment commencer",
+  "HowToStartStep1": "Connectez-vous à votre compte Dropbox.",
+  "HowToStartStep2": "Suivez le <0>lien</0>",
+  "HowToStartStep3": "Accordez les autorisations nécessaires à l'application ONLYOFFICE.",
+  "HowToStartStep4": "Accédez au menu contextuel du fichier requis.",
+  "HowToStartStep5": "Cliquez sur Ouvrir dans -> ONLYOFFICE Docs.",
+  "ExploreMoreDetails": "Pour en savoir plus, consultez <0>ce guide</0>.",
+  "ExploreMoreDetailsLink": "https://www.onlyoffice.com/blog/fr/2023/11/integration-onlyoffice-docs-et-dropbox",
+
+  "NeedAnAppToConnect": "Vous avez besoin d'une application pour connecter ONLYOFFICE Docs à votre service Web préféré ? Ou en avez-vous développé une ?"
+}

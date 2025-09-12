@@ -1,0 +1,33 @@
+{
+  "PageTitle": "Visualização e edição de documentos no Strapi | ONLYOFFICE Docs",
+  "PageDescription": "Edite arquivos DOCX, XLSX e PPTX e colabore com o conteúdo no Strapi",
+
+  "OnlineOfficeForConnector": "Office online para <0>Strapi</0>",
+  "Subheader": "Edite e seja coautor em arquivos do Office adicionados à biblioteca de mídia do Strapi usando o ONLYOFFICE Docs",
+  "GetStarted": "Começar agora",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Compatibilidade total com docx, xlsx, pptx",
+
+  "MarketplaceConnectorTitle": "Projetado para uma integração perfeita com o Strapi",
+  "MarketplaceConnectorDescription": "Obtenha o conector ONLYOFFICE para Strapi agora no <0>Strapi Market</0> ou <1>nmp directory</1>.",
+  "GetItNow": "Obter agora",
+
+  "WhyOO": "Por que o ONLYOFFICE Docs",
+  "WhySubheader": "O ONLYOFFICE Docs é um pacote office auto-hospedado para trabalho em documentos de texto, planilhas, apresentações e formulários",
+  "Reason1": "<0>Plug-in de integração</0> pronto para usar",
+  "Reason2": "Fácil instalação do <0>Strapi Market</0> e configuração rápida",
+  "Reason3": "<0>Interface intuitiva</0> com guias",
+  "Reason4": "<0>Várias</0> ferramentas de edição, formatação e estilo",
+  "Reason5": "<0>Colaboração em tempo real</0>, controle de alterações, comentários e bate-papo",
+  "Reason6": "<0>Comunidade gratuita</0> e versões <0>Enterprise escaláveis</0>",
+  "Reason7": "<0>Proteção JWT</0> a partir de acesso não autorizado",
+  "Reason8": "<0>Código open-source</0> disponível no GitHub",
+
+  "HowToStart": "Como começar",
+  "HowToStartStep1": "Implante o <0>ONLYOFFICE Docs</0> no seu próprio servidor ou crie uma conta <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtenha o conector ONLYOFFICE do <0>Strapi Market</0> ou do <1>diretório npm</1>.",
+  "HowToStartStep3": "Configure o conector e habilite o JWT.",
+
+  "ReadDetailedInstructions": "Leia instruções detalhadas na Central de Ajuda",
+
+  "NeedAnAppToConnect": "Precisa de um aplicativo para conectar o ONLYOFFICE Docs ao seu serviço Web favorito? Ou você desenvolveu um?"
+}

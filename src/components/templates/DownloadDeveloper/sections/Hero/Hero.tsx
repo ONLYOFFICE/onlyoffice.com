@@ -54,6 +54,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-developer", {
       method: "POST",
@@ -72,6 +73,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
         from,
         country,
         region,
+        hCaptchaResponse,
       }),
     }).then((res) => res.json());
   };
@@ -172,7 +174,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "docsdeveloperdownloadrequest",
+                              type: "docsDeveloperDownloadRequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,
@@ -316,6 +318,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
         onClose={() => setIsModalOpen(false)}
         onSubmitRequest={onSubmitRequest}
         buttonAction={buttonAction}
+        pageTrackName={formData.buttonId}
       />
     </>
   );

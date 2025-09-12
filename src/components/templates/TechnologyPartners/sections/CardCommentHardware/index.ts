@@ -1,0 +1,1 @@
+export { CardCommentHardware } from "./CardCommentHardware";

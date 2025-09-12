@@ -29,7 +29,7 @@ const PDFEditorPage = ({ locale }: ILocale) => {
         />
       </Layout.Header>
       <Layout.Main>
-        <PDFEditorTemplate />
+        <PDFEditorTemplate locale={locale} />
       </Layout.Main>
       <Layout.Footer>
         <Footer locale={locale} />

@@ -1,0 +1,27 @@
+{
+  "PageTitle": "ONLYOFFICE - Cloud Office Applications",
+
+  "BuyOODocSpaceFamilyPack": "Kupite ONLYOFFICE <0>DocSpace Porodični paket</0>",
+  "DocSpaceFamilyPack": "DocSpace porodični paket",
+  "RoomBasedFileStorage": "Skladištenje datoteka zasnovano na sobi",
+  "OnlineEditors": "Online urednici za tekstualne dokumente, tabele, prezentacije, obrasce i PDF-ove",
+  "DesktopAndMobileApps": "Desktop i mobilne aplikacije, mobilna veb verzija",
+  "EnhancedSecurityFeatures": "Poboljšane bezbednosne funkcije",
+  "AllMinorUpdatesAndMajorUpgrades": "Sve manje izmene i veća unapređenja",
+  "TryItFree": "Isprobajte besplatno",
+
+  "NumberOfUsers": "Broj korisnika",
+  "NumberOfUsersTooltip": "Određeni broj korisnika definiše koliko ljudi može imati pristup uređivanju dokumenata, tabela i prezentacija. Broj dokumenata koji se mogu uređivati u isto vreme nije ograničen. Ostali korisnici će moći da otvore dokumente samo za pregled.",
+  "LicenseDuration": "Trajanje licence",
+  "Lifetime": "Doživotno",
+  "LifetimeTooltip": "Možete koristiti sve funkcije ONLYOFFICE DocSpace Family Pack-a dostupne u trenutku kupovine na neograničen vremenski period, ali godinu dana nakon datuma kupovine više nećete moći da dobijate besplatna ažuriranja.",
+  "Updates": "Ažuriranja",
+  "1Year": "1 godina",
+  "Total": "Ukupno:",
+  "BuyNow": "Kupite sada",
+
+  "WhatDoesTheNumberOfUsersLabel": "Šta znači \"broj korisnika\"?",
+  "WhatDoesTheNumberOfUsersText": "Određeni broj korisnika definiše koliko ljudi može imati pristup uređivanju dokumenata, tabela i prezentacija. Broj dokumenata koji se mogu uređivati u isto vreme nije ograničen. Ostali korisnici će moći da otvore dokumente samo za pregled. Imajte na umu: ONLYOFFICE čuva ID korisnika tokom perioda od 30 dana. Nakon toga, bićete u mogućnosti da zamenite korisnika novim ako bude potrebno. Ako delite dokument sa spoljnim korisnicima, svaki od njih dobija imenovani ID korisnika na period od 30 dana.",
+  "WhereCanIFindAnswersToOtherQuestionsLabel": "Gde mogu da nađem odgovore na druga pitanja?",
+  "WhereCanIFindAnswersToOtherQuestionsText": "Molimo vas da posetite naš <0>FAQ centar</0> ili <1>pošaljete svoj zahtev</1> i pomoći ćemo vam uskoro."
+}

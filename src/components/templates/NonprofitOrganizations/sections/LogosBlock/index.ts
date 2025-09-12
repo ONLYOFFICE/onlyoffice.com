@@ -1,0 +1,1 @@
+export { LogosBlock } from "./LogosBlock";

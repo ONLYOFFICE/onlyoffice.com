@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { TokenResponse } from "./DocumentEditor.types";
+import { useRouter } from "next/router";
 
 const DocumentEditor = dynamic(
   () =>
@@ -19,6 +20,7 @@ const OnlyOfficeEditor = ({
 }) => {
   const [token, setToken] = useState("");
   const [config, setConfig] = useState<TokenResponse["config"] | null>(null);
+  const { locale } = useRouter();
 
   const fileType = "pdf";
   const url = "https://static.onlyoffice.com/assets/docs/samples/oform.pdf";
@@ -67,7 +69,10 @@ const OnlyOfficeEditor = ({
             documentType: config.documentType,
             token,
             document: config.document,
-            editorConfig: config.editorConfig,
+            editorConfig: {
+              ...config.editorConfig,
+              lang: locale,
+            },
           }}
           onLoadComponentError={onLoadComponentError}
         />

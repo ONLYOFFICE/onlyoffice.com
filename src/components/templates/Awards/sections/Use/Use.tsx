@@ -32,7 +32,7 @@ const Use = () => {
             <Button
               as="a"
               label={t("UseButton")}
-              href="/registration?from=awards"
+              href="/docspace-registration?from=awards"
             />
       </StyledUse>
       </Container>

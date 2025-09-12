@@ -10,11 +10,12 @@ interface IContentCard {
   imgUrl: string;
   heading: string;
   href?: string;
+  locale?: string;
 }
 
-const ContentCard = ({ imgUrl, heading, href }: IContentCard) => {
+const ContentCard = ({ imgUrl, heading, href, locale }: IContentCard) => {
   const Content = (
-    <StyledCardBody>
+    <StyledCardBody $locale={locale}>
       <StyledCardImage src={imgUrl} alt={heading} />
       <StyledCardHeading>{heading}</StyledCardHeading>
     </StyledCardBody>
@@ -22,7 +23,11 @@ const ContentCard = ({ imgUrl, heading, href }: IContentCard) => {
 
   return (
     <StyledCard>
-      {href ? <Link href={href}>{Content}</Link> : <div>{Content}</div>}
+      {href ? (
+        <Link href={href}>{Content}</Link>
+      ) : (
+        <div style={{ height: "100%" }}>{Content}</div>
+      )}
     </StyledCard>
   );
 };

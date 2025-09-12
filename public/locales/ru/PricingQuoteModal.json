@@ -1,0 +1,13 @@
+{
+  "FullName": "Полное имя",
+  "FullNameIsIncorrect": "Некорректное поле Полное имя",
+  "NameSurname": "Имя и фамилия",
+  "FullNameIsEmpty": "Полное имя не указано",
+  "Email": "Email",
+  "EmailIsEmpty": "Поле Email не заполнено",
+  "EmailIsIncorrect": "Неверный Email",
+  "CompanyName": "Название компании",
+  "CompanyNameIsEmpty": "Название компании не указано",
+  "successfullyRequestText": "Запрос успешно отправлен",
+  "errorRequestText": "К сожалению, произошла ошибка, повторите попытку позже"
+}

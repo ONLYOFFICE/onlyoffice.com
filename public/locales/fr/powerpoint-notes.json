@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Note de bas de page PowerPoint",
+  "PageDescription": "Ajouter les notes du présentateur à votre diaporama PowerPoint avec ONLYOFFICE. Afficher les notes lors de la présentation sur deux écrans, de manière que vous soyez le seul à voir vos notes.",
+  
+  "Header": "Présentez vos idées",
+  "SubHeader": "Exprimez-vous librement avec le mode Présentateur",
+
+  "HeroImgUrl": "/images/templates/powerpoint-notes/hero/fr/hero.png",
+  "HeroImgUrl2x": "/images/templates/powerpoint-notes/hero/fr/hero@2x.png",
+
+  "Feature1Title": "Ajoutez les notes utiles",
+  "Feature1Desc": "Ajoutez les notes pour un speaker dans votre présentation PowerPoint pour que vous ayez les points importants ou un texte intégral sous vos yeux. Chargez vos notes, si vous présentez en utilisant deux écrans, pour que vous soyez le seul à les voir.",
+
+  "Feature2Title": "Naviguez entre les diapositives",
+  "Feature2Desc": "Naviguez facilement entre les diapositives lors de votre intervention. Lancez-les en mode Aperçu pour évaluer l’apparence de votre présentation.",
+
+  "Feature3Title": "Gérez votre temps",
+  "Feature3Desc": "Le minuteur permet d’évaluer le temps de l’intervention en heures, minutes, secondes pour que vous puissiez ajuster la longueur de votre présentation. Démarrez, mettez en pause, fermez ou remettez le chronomètre à zéro.",
+
+  "Feature4Title": "Captez l'attention de votre audience",
+  "Feature4Desc": "Attirez l’attention de votre audience en accentuant les points les plus importants et en surlignant le texte et les objets.",
+
+  "Feature1ImgUrl": "/images/templates/powerpoint-notes/features/fr/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/powerpoint-notes/features/fr/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/powerpoint-notes/features/fr/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/powerpoint-notes/features/fr/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/powerpoint-notes/features/fr/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/powerpoint-notes/features/fr/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/powerpoint-notes/features/fr/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/powerpoint-notes/features/fr/pic4@2x.png"
+}

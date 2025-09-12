@@ -1,0 +1,36 @@
+{
+    "PageTitle": "免费的安卓任务管理应用程序 | ONLYOFFICE",
+    "PageDescription": "在旅途中管理您的团队表现。从您的安卓设备上随时随地跟踪您的项目。",
+
+    "ONLYOFFICEProjects": "<0>ONLYOFFICE项目。</0>免费的安卓任务管理应用程序",
+    "PocketProject": "掌上项目管理工具",
+    "HeroImgUrl": "/images/templates/projects-for-android/hero/zh/googleplay.png",
+    "HeroUrl": "/zh/download-desktop.aspx#mobile",
+
+    "ManageYourTeam": "在旅途中管理您的团队表现",
+    "TrackCurrentWorkload": "跟踪当前的工作量",
+    "QuicklyBrowseSortAndFilter": "快速浏览、分类和过滤现有的项目和任务，编辑它们，改变状态、指定人和到期日。访问每个项目所附的工作文件。",
+    "ManageNewProjects": "管理新项目",
+    "CreateNewProjects": "创建新的项目和任务，分配负责的成员。设定优先级并添加较小的子任务。将任务与里程碑绑定，及时计划您的工作。",
+    "Communicate": "沟通交流",
+    "StartProjectDiscussions": "启动项目讨论，集思广益，解决问题，提出问题，并发布公告。留下评论，参与沟通过程。",
+    "KeepYourProjectsSafe": "保持您的项目安全",
+    "MakeSureNoUnauthorized": "确保没有未经授权的用户可以访问您的项目。用密码保护应用程序，激活2FA或允许用指纹访问应用程序。",
+    "WorkComfortably": "舒适地工作",
+    "EnjoyAnIntuitiveInterface": "享受一个直观的界面，在您所有的项目和任务中无缝导航。在光线不足的环境中，切换到黑暗模式，可以保护您的视力。",
+
+    "HowToStart": "如何开始",
+    "CreateYourONLYOFFICEWorkspace": "<0>1.</0> 如果您没有<1>ONLYOFFICE工作空</1>间的账户，请创建您的账户。",
+    "LaunchInTheCloud": "在云中启动",
+    "RunOnYourOwnServer": "或在您的服务器上运行",
+    "ConnectTheApp": "<0>2.</0> 将该应用程序连接到您的ONLYOFFICE工作空间门户。",
+    "CreateAndTrack": "<0>3.</0> 在旅途中创建和跟踪项目和任务。",
+
+    "YourBenefits": "有哪些益处",
+    "QuickAccessToYourWorkflows": "在ONLYOFFICE中快速访问您的工作流程",
+    "CleanAndIntuitiveUI": "简洁而直观的用户界面",
+    "NoAds": "没有广告或应用内购买",
+    "RegularUpdates": "定期更新",
+    "TechnicalSupport": "技术支持",
+    "OnlineDocumentation": "在线文档"
+}

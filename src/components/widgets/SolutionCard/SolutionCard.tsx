@@ -1,14 +1,14 @@
+import { Text } from "@src/components/ui/Text";
 import {
   StyledSolutionCard,
   StyledSolutionCardImgWrapper,
   StyledSolutionCardImg,
   StyledSolutionCardBody,
-  StyledSolutionCardText,
+  StyledSolutionCardHeading,
+  StyledSolutionCardLink,
   StyledSolutionCardCustomLinks,
 } from "./SolutionCard.styled";
 import { ISolutionCard } from "./SolutionCard.types";
-import { Heading } from "@src/components/ui/Heading";
-import { Link } from "@src/components/ui/Link";
 
 const SolutionCard = ({
   id,
@@ -33,12 +33,16 @@ const SolutionCard = ({
       </StyledSolutionCardImgWrapper>
 
       <StyledSolutionCardBody $customLinks={customLinks}>
-        {heading && <Heading level={3} label={heading} />}
-        {text && <StyledSolutionCardText>{text}</StyledSolutionCardText>}
+        {heading && <StyledSolutionCardHeading level={3} label={heading} />}
+        {text && (
+          <Text size={2} color="#666666">
+            {text}
+          </Text>
+        )}
 
         {links &&
           links.map((link, index) => (
-            <Link
+            <StyledSolutionCardLink
               id={link.id}
               label={link.name}
               href={link.url}

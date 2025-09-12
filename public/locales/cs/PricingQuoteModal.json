@@ -1,0 +1,13 @@
+{
+  "FullName": "Celé jméno",
+  "FullNameIsIncorrect": "Nesprávný pole pro celé jméno",
+  "NameSurname": "Celé jméno",
+  "FullNameIsEmpty": "Pole pro celé jméno je prázdné",
+  "Email": "Email",
+  "EmailIsEmpty": "Pole pro e-mail je prázdné",
+  "EmailIsIncorrect": "Nesprávný e-mail",
+  "CompanyName": "Název firmy",
+  "CompanyNameIsEmpty": "Pole pro název firmy je prázdné",
+  "successfullyRequestText": "Vaše žádost byla úspěšně odeslána",
+  "errorRequestText": "Je nám líto, ale došlo k chybě, zkuste to znovu později"
+}

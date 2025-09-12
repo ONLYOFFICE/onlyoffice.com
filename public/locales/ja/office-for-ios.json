@@ -8,8 +8,6 @@
   "OneAppThreeEditors": "1つのアプリ - <0>3 つのエディター</0> - 複数の機能",
   "CompatibleWithMSOffice": "Microsoft Office フォーマットに適合",
 
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.ja.svg",
-
   "FeaturesItemHeadingFull": "完全装備のテキスト プロセッサ",
   "FeaturesItemTextMakeUse": "複数のテキスト プロセッサ ツールを利用: ページ、テキストの書式設定、表、オートシェープ、チャートなど。任意の大きさと複雑さのテキスト文書を作成。AirPrint で文書を印刷。",
 
@@ -55,6 +53,7 @@
   "LearnCardTitleRelease": "Release notes",
   "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v7.2 for iOS",
   "LearnMoreSubtitleRead": "Read story",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/ja/2025/07/ios-onlyoffice-documents-v9-0-docspace-odg-markdown",
 
   "LearnCardTitleHints": "Hints",
   "LearnMoreTextHandwriting": "Handwriting in ONLYOFFICE Documents",

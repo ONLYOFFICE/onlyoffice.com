@@ -6,15 +6,13 @@
   "AbsolutelyFree": "Absolument <0>gratuit</0>. Sans pub. Pas d'achats dans l'application.",
 
   "OneAppThreeEditors": "Une application - <0>trois éditeurs</0> - plein de fonctionnalités",
-  "CompatibleWithMSOffice": "Compatible à 100% avec les formats de MS Office",
+  "CompatibleWithMSOffice": "Compatible à 100 % avec les formats de MS Office",
 
   "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/fr/hero-phone.png",
   "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/fr/hero-phone-2x.png",
 
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.fr.svg",
-
   "FeaturesItemHeadingFull": "Traitement de texte",
-  "FeaturesItemTextMakeUse": "Utiliser plusieurs outils de traitement de texte : mise en forme des pages, paragraphes et textes, tableaux, formes automatiques, graphiques, etc. Créez des documents texte, peu importe leur taille et leur complexité. Imprimez-les via AirPrint.",
+  "FeaturesItemTextMakeUse": "Utilisez plusieurs outils de traitement de texte : mise en forme des pages, paragraphes et textes, tableaux, formes automatiques, graphiques, etc. Créez des documents texte, peu importe leur taille et leur complexité. Imprimez-les via AirPrint.",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/fr/img-tablet-1.png",
   "FeaturesItemTablet1Bg2x": "/images/templates/office-for-ios/features/fr/img-tablet2x-1.png",
   "FeaturesItemMobile1Bg": "/images/templates/office-for-ios/features/fr/img-mobile-1.png",
@@ -80,9 +78,9 @@
   "LearnMoreHeading": "En savoir plus sur ONLYOFFICE Documents pour iOS",
 
   "LearnCardTitleRelease": "Nouveautés de la mise à jour",
-  "LearnMoreTextMeet": "Découvrez ONLYOFFICE Documents v7.2 pour iOS",
-  "LearnMoreSubtitleRead": "Lire l'histoire",
-  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/fr/2022/10/onlyoffice-documents-v7-2-pour-ios/",
+  "LearnMoreTextMeet": "Découvrez ONLYOFFICE Documents v9.0 pour iOS",
+  "LearnMoreSubtitleRead": "En savoir plus",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/fr/2025/07/onlyoffice-documents-v9-0-pour-ios",
 
   "LearnCardTitleHints": "Conseils",
   "LearnMoreTextHandwriting": "Écriture manuscrite dans ONLYOFFICE Documents",
@@ -93,5 +91,4 @@
   "LearnMoreTextHowMobile": "Comment fonctionne l'intégration mobile",
   "LearnMoreSubtitleLearn2": "En savoir plus",
   "LearnMoreUrlLink3": "https://www.onlyoffice.com/blog/fr/2022/07/onlyoffice-pour-les-developpeurs-comment-fonctionne-lintegration-mobile/"
-
 }

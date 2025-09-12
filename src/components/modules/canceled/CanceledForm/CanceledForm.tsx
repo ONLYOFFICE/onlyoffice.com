@@ -29,7 +29,7 @@ const CanceledForm = ({
   checkboxeItems,
   textareaHeading,
   onShowCoupons,
-  isEmailOnPage = true,
+  isEmailRequired = true,
   locale,
 }: CanceledFormProps) => {
   const { t } = useTranslation("canceled");
@@ -51,7 +51,7 @@ const CanceledForm = ({
     from: "",
     spam: 0,
     calls: 1,
-    recaptchaResponse: null,
+    hCaptchaResponse: null,
     table_name: tableName,
     locale,
     referer: "",
@@ -94,7 +94,7 @@ const CanceledForm = ({
   const handleHCaptchaChange = (token: string | null) => {
     setFormData((prev) => ({
       ...prev,
-      recaptchaResponse: token,
+      hCaptchaResponse: token,
     }));
   };
 
@@ -110,11 +110,11 @@ const CanceledForm = ({
 
   const isOtherChecked = formData.mark6 === 1;
 
-  const isEmailValid = isEmailOnPage
+  const isEmailValid = isEmailRequired
     ? formData.email.length > 0 && validateEmail(formData.email)
     : true;
 
-  const isHCaptchaPassed = Boolean(formData.recaptchaResponse);
+  const isHCaptchaPassed = Boolean(formData.hCaptchaResponse);
 
   const isFormValid =
     isAnyMarkChecked &&
@@ -162,29 +162,23 @@ const CanceledForm = ({
     setFormStatus("loading");
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token: formData.recaptchaResponse }),
-      });
-
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorhCaptchaInvalid") {
-        setFormStatus("error");
-        setTimeout(() => {
-          setFormStatus("default");
-        }, 5000);
-        return;
-      }
-
       const canceledFormResponse = await fetch("/api/canceled-form", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
       const canceledFormData = await canceledFormResponse.json();
-      if (canceledFormResponse.ok && canceledFormData.status === "success") {
+
+      if (canceledFormData.status === "errorHCaptchaInvalid") {
+        setFormStatus("error");
+        setTimeout(() => {
+          setFormStatus("default");
+        }, 5000);
+        return;
+      } else if (
+        canceledFormResponse.ok &&
+        canceledFormData.status === "success"
+      ) {
         setFormStatus("success");
         onShowCoupons();
 
@@ -250,37 +244,35 @@ const CanceledForm = ({
         />
       </StyledCanceledFormTextarea>
 
-      {isEmailOnPage && (
-        <Input
-          onChange={(e) => handleInputChange("email", e.target.value)}
-          onBlur={() => {
-            setIsEmpty((prev) => ({
-              ...prev,
-              email: formData.email.length === 0,
-            }));
-          }}
-          value={formData.email}
-          label={t("Email")}
-          placeholder="name@domain.com"
-          caption={
-            formData.email.length === 0
-              ? t("EmailIsEmpty")
-              : !validateEmail(formData.email)
-                ? t("EmailIsIncorrect")
-                : ""
-          }
-          required
-          status={
-            isEmpty.email
-              ? "error"
-              : formData.email.length > 0
-                ? validateEmail(formData.email)
-                  ? "success"
-                  : "error"
-                : "default"
-          }
-        />
-      )}
+      <Input
+        onChange={(e) => handleInputChange("email", e.target.value)}
+        onBlur={() => {
+          setIsEmpty((prev) => ({
+            ...prev,
+            email: formData.email.length === 0,
+          }));
+        }}
+        value={formData.email}
+        label={t("Email")}
+        placeholder="name@domain.com"
+        caption={
+          formData.email.length === 0
+            ? t("EmailIsEmpty")
+            : !validateEmail(formData.email)
+              ? t("EmailIsIncorrect")
+              : ""
+        }
+        required={isEmailRequired}
+        status={
+          isEmpty.email
+            ? "error"
+            : formData.email.length > 0
+              ? validateEmail(formData.email)
+                ? "success"
+                : "error"
+              : "default"
+        }
+      />
 
       <StyledCanceledHCaptchaWrapper>
         <HCaptcha

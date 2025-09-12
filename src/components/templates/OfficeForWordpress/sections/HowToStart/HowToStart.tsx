@@ -60,7 +60,7 @@ const HowToStart = ({ activeTab }: IHowToStart) => {
             {activeIndex === 0 ? (
               <Trans
                 t={t}
-                i18nKey="ReadDetailedInstructionsDocs"
+                i18nKey="ReadDetailedInstructionsDocSpace"
                 components={[
                   <Link
                     key={0}
@@ -76,7 +76,7 @@ const HowToStart = ({ activeTab }: IHowToStart) => {
             ) : (
               <Trans
                 t={t}
-                i18nKey="ReadDetailedInstructionsDocSpace"
+                i18nKey="ReadDetailedInstructionsDocs"
                 components={[
                   <Link
                     key={0}
@@ -90,7 +90,7 @@ const HowToStart = ({ activeTab }: IHowToStart) => {
                   <Link
                     key={1}
                     id="how-to-start-instructions-help-helpcenter"
-                    href="https://helpcenter.onlyoffice.com/integration/wordpress.aspx"
+                    href={t("ReadDetailedInstructionsDocsLink")}
                     target="_blank"
                     color="main"
                     textUnderline

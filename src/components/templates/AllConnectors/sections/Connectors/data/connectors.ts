@@ -4,9 +4,29 @@ interface IConnectorCardExtended extends IConnectorCard {
   productType?: ("docs" | "docspace")[];
   developerType?: ("oo-developers" | "partners")[];
   isWopi?: boolean;
+  isBot?: boolean;
 }
 
 export const connectors: IConnectorCardExtended[] = [
+  {
+    id: "telegram",
+    image: {
+      url: "/images/templates/all-connectors/connectors/telegram.svg",
+    },
+    name: "Telegram",
+    text: "TelegramConnectorText",
+    moreInfoUrl:
+      "/office-for-telegram",
+    vendor: "Ascensio System Sia",
+    developerWebsiteName: "www.onlyoffice.com",
+    developerWebsiteUrl: "/",
+    getItNowUrl:
+      "https://github.com/ONLYOFFICE/onlyoffice-telegram",
+    productType: ["docs"],
+    developerType: ["oo-developers"],
+    isBot: true,
+  },
+
   {
     id: "agorum",
     image: {
@@ -131,6 +151,23 @@ export const connectors: IConnectorCardExtended[] = [
     developerType: ["oo-developers"],
   },
   {
+    id: "dzzoffice",
+    image: {
+      bgColor: "#F5F5F5",
+      url: "/images/templates/all-connectors/connectors/dzzoffice.svg",
+    },
+    name: "DzzOffice",
+    text: "DzzOfficeConnectorText",
+    moreInfoUrl: "https://www.dzzoffice.com/index.php?mod=dzzmarket&amp;op=view&amp;mid=50",
+    vendor: "Beijing Qiaoqiao Shidai Network Technology Co., Ltd.",
+    developerWebsiteName: "www.dzzoffice.com",
+    developerWebsiteUrl: "https://www.dzzoffice.com",
+    getItNowUrl: "https://www.dzzoffice.com/index.php?mod=dzzmarket&op=view&mid=50",
+    productType: ["docs"],
+    developerType: ["partners"],
+    isNew: true,
+  },
+  {
     id: "enaio",
     image: {
       url: "/images/templates/all-connectors/connectors/enaio.svg",
@@ -142,7 +179,7 @@ export const connectors: IConnectorCardExtended[] = [
     developerWebsiteName: "ecmind.ch",
     developerWebsiteUrl: "https://ecmind.ch",
     isPaid: true,
-    getItNowUrl: "https://ecmind.ch/solutions/embeddedoffice/",
+    getItNowUrl: "https://ecmind.ch/products/embedded-office/",
     productType: ["docs"],
     developerType: ["partners"],
   },
@@ -247,8 +284,8 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "liferaysmc",
     image: {
-      bgColor: "#0B63CE",
-      url: "/images/templates/all-connectors/connectors/liferay.svg",
+      bgColor: "#0f63ca",
+      url: "/images/templates/all-connectors/connectors/liferay_1.svg",
     },
     name: "Liferay",
     text: "LiferaySMCConnectorText",
@@ -296,9 +333,24 @@ export const connectors: IConnectorCardExtended[] = [
     developerType: ["oo-developers"],
   },
   {
+    id: "monday",
+    image: {
+      url: "/images/templates/all-connectors/connectors/monday.svg",
+    },
+    name: "Monday",
+    text: "FeatureConnectorMondayText",
+    moreInfoUrl: "/office-for-mattermost",
+    vendor: "Ascensio System Sia",
+    developerWebsiteName: "www.onlyoffice.com",
+    developerWebsiteUrl: "/",
+    getItNowUrl: "https://monday.com/marketplace/listing/10000860/onlyoffice-docspace",
+    productType: ["docspace"],
+    developerType: ["oo-developers"],
+  },
+  {
     id: "moodle-oo",
     image: {
-      url: "/images/templates/all-connectors/connectors/moodle.svg",
+      url: "/images/templates/all-connectors/connectors/moodle-white.svg",
     },
     name: "Moodle",
     text: "MoodleConnectorText",
@@ -314,7 +366,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "moodle",
     image: {
       bgColor: "#F47F29",
-      url: "/images/templates/all-connectors/connectors/moodle-white.svg",
+      url: "/images/templates/all-connectors/connectors/moodle.svg",
     },
     name: "Moodle",
     text: "MoodleLogicConnectorText",
@@ -329,7 +381,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "neo",
     image: {
-      url: "/images/templates/all-connectors/connectors/neo.png",
+      url: "/images/templates/all-connectors/connectors/neo.svg",
     },
     name: "NEO",
     text: "NEOConnectorText",
@@ -392,7 +444,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "one",
     image: {
-      url: "/images/templates/all-connectors/connectors/one.png",
+      url: "/images/templates/all-connectors/connectors/one.svg",
     },
     name: "ONE",
     text: "ONEConnectorText",
@@ -443,7 +495,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "pintexx",
     image: {
       bgColor: "#FFFFFF",
-      url: "/images/templates/all-connectors/connectors/pintexx.png",
+      url: "/images/templates/all-connectors/connectors/pintexx.svg",
     },
     name: "Pintexx Workplace",
     text: "PintexxConnectorText",
@@ -515,12 +567,12 @@ export const connectors: IConnectorCardExtended[] = [
     },
     name: "Pydio",
     text: "PydioConnectorText",
-    moreInfoUrl: "https://pydio.com/en/docs/cells/v2/ed-only-office",
+    moreInfoUrl: "https://docs.pydio.com/cells-v4/admin-guide/quick-start/add-collaboration-tools/ent-only-office/",
     vendor: "Pydio",
     developerWebsiteName: "pydio.com",
     developerWebsiteUrl: "https://pydio.com/",
     isPaid: true,
-    getItNowUrl: "https://pydio.com/en/docs/cells/v2/ed-only-office",
+    getItNowUrl: "https://docs.pydio.com/cells-v4/admin-guide/quick-start/add-collaboration-tools/ent-only-office/",
     productType: ["docs"],
     developerType: ["partners"],
   },
@@ -528,7 +580,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "quasaro",
     image: {
       bgColor: "#FFFFFF",
-      url: "/images/templates/all-connectors/connectors/quasaro.png",
+      url: "/images/templates/all-connectors/connectors/quasaro.svg",
     },
     name: "Quasaro",
     text: "QuasaroConnectorText",
@@ -627,12 +679,12 @@ export const connectors: IConnectorCardExtended[] = [
     name: "Talkspirit",
     text: "TalkspiritConnectorText",
     moreInfoUrl:
-      "https://help.talkspirit.com/en/articles/4161621-the-officenow-suite-of-collaborative-documents",
+      "https://en.talkspirit.com/feature-page/drive",
     vendor: "Talkspirit",
     developerWebsiteName: "talkspirit.com",
     developerWebsiteUrl: "https://www.talkspirit.com/",
     getItNowUrl:
-      "https://help.talkspirit.com/en/articles/4161621-the-officenow-suite-of-collaborative-documents",
+      "https://en.talkspirit.com/feature-page/drive",
     productType: ["docs"],
     developerType: ["partners"],
   },

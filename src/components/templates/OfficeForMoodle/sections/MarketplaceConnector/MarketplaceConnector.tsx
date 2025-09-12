@@ -13,6 +13,11 @@ import { Button } from "@src/components/ui/Button";
 const MarketplaceConnector = () => {
   const { t } = useTranslation("office-for-moodle");
 
+  const scrollToBlock = () => {
+    const element = document.getElementById("how-to-start");
+    if (element) element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <StyledMarketplaceConnector>
       <Container>
@@ -30,9 +35,7 @@ const MarketplaceConnector = () => {
             />
             <Button
               id="marketplace-connector-get-started"
-              as="a"
-              target="_blank"
-              href="https://dropbox.onlyoffice.com/oauth/redirect"
+              onClick={scrollToBlock}
               label={t("GetStarted")}
             />
           </StyledMarketplaceConnectorBody>

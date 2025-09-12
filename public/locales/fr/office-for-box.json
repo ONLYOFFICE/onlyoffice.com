@@ -1,0 +1,37 @@
+{
+  "PageTitle": "Travaillez facilement avec des fichiers bureautiques directement dans Box",
+  "PageDescription": "En utilisant l'outil intégré ONLYOFFICE Docs Cloud",
+
+  "FreeOnlineOfficeForBox": "Bureau en ligne gratuit pour Box",
+  "OpenAndEditWithinBox": "Ouvrez et éditez des documents texte, des feuilles de calcul, des présentations et des PDF dans Box en utilisant ONLYOFFICE Docs Cloud",
+  "GetItNow": "Commencer",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Complètement compatible avec les formats docx, xlsx et pptx",
+
+  "EditAndCoAuthorOfficeDocuments": "Modifiez et coéditez des documents bureautiques dans l'interface de Box",
+  "DocumentsTab1Label": "Ouvrez et modifiez les documents Office stockés dans votre espace de stockage Box",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-box/documents/screenshot1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-box/documents/screenshot1@2x.png",
+  "DocumentsTab2Label": "Collaborez sur des documents avec plusieurs utilisateurs en temps réel ou en mode de verrouillage des paragraphes",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-box/documents/screenshot2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-box/documents/screenshot2@2x.png",
+
+  "MarketplaceConnectorTitle": "Conçu pour une intégration transparente avec Box",
+  "MarketplaceConnectorDescription": "Téléchargez l'application ONLYOFFICE pour Box maintenant depuis Box App Center.",
+  "GetStarted": "Commencer",
+
+  "WhyOO": "Pourquoi ONLYOFFICE?",
+  "FeaturesWorking": "<0>Travail</0> avec des fichiers bureautiques directement dans le frontend de Box.",
+  "FeaturesFormats": "Prise en charge de plus de <0>50 formats de fichiers</0>, entièrement compatible avec les formats MS Office : DOCX, XLSX, PPTX.",
+  "FeaturesAIHelper": "Ensemble robuste d'outils d'édition, de mise en forme et de style.",
+  "FeaturesWorkingCoEditing": "<0>Coédition</0> en temps réel et verrouillage des paragraphes, révision, historique des versions, comparaison des documents, commentaires et chat.",
+  "FeaturesFreeApp": "<0>Application gratuite</0> disponible dans le Box App Center. Aucune configuration supplémentaire n'est requise.",
+
+  "HowToStart": "Comment commencer",
+  "HowToStartStep1": "Connectez-vous à votre compte Box.",
+  "HowToStartStep2": "Allez au <0>Box App Center</0>.",
+  "HowToStartStep3": "Ajoutez l'application ONLYOFFICE*.",
+  "CheckDetailedInstructions": "Consultez les instructions détaillées dans le <0>Centre d'aide</0>.",
+  "TheAppUsesThePreConfiguredTenant": "*L'application utilise le locataire préconfiguré de <0>ONLYOFFICE Docs Cloud</0> et ne nécessite aucune configuration supplémentaire.",
+
+  "NeedAnAppToConnect": "Besoin d'une application pour connecter ONLYOFFICE Docs à votre service web préféré ? Ou en avez-vous développé une ?"
+}

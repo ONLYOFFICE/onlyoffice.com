@@ -7,12 +7,17 @@
 
   "ImproveOO": "Improve ONLYOFFICE",
   "DevelopYourOwnPluginOrMacros": "Develop your own plugin or macros for ONLYOFFICE Docs.",
+  "DevelopYourOwnPluginOrMacrosLink": "https://api.onlyoffice.com/docs/plugin-and-macros/structure/getting-started",
   "ReadAPIDocumentation": "Read API documentation",
   "CreateYourOwnForm": "Create your own form templates and share them with others.",
   "OpenOurFormLibrary": "Open our form library",
   "CreateAnExtensionOrModule": "Create an extension or module for ONLYOFFICE DocSpace.",
+  "CreateAnExtensionOrModuleLink": "https://api.onlyoffice.com/docspace/plugins-sdk/get-started/",
   "DidYouFindABug": "Did you find a bug? Report issues on <0>GitHub</0> or <1>Forum</1>.",
+  "DidYouFindABugLink": "https://helpcenter.onlyoffice.com/docs/contribution/ReportIssues.aspx",
   "MoreInfo": "More info",
+
+  "BlogLink": "https://www.onlyoffice.com/blog",
 
   "SocialMediaText": "Interact with us on <0>blog</0> or social media channels",
 

@@ -22,18 +22,18 @@ export const docsIcons: IIconTooltip[] = [
     },
   },
   {
-    id: "docs-presentation-editor",
-    tooltipLabel: "PresentationEditor",
-    href: "/presentation-editor",
+    id: "docs-spreadsheet-editor",
+    tooltipLabel: "SpreadsheetEditor",
+    href: "/spreadsheet-editor",
     icon: {
       url: iconsSprite,
       positionX: "-432px",
     },
   },
   {
-    id: "docs-spreadsheet-editor",
-    tooltipLabel: "SpreadsheetEditor",
-    href: "/spreadsheet-editor",
+    id: "docs-presentation-editor",
+    tooltipLabel: "PresentationEditor",
+    href: "/presentation-editor",
     icon: {
       url: iconsSprite,
       positionX: "-504px",
@@ -88,8 +88,7 @@ export const docsProducts: IDownloadCard[] = [
     version: dockerDocument.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: dockerDocument.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-docker.aspx",
+    readInstructionLink: "DocsProductsDockerImageLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_docker_image_intel",
@@ -123,8 +122,7 @@ export const docsProducts: IDownloadCard[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-ubuntu.aspx",
+    readInstructionLink: "DocsProductsForDebianUbuntuLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_debian_ubuntu_and_derivatives_intel",
@@ -158,8 +156,7 @@ export const docsProducts: IDownloadCard[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-centos.aspx",
+    readInstructionLink: "DocsProductsForCentOSLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_centos_rhel_and_derivatives_intel",
@@ -193,8 +190,7 @@ export const docsProducts: IDownloadCard[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-windows.aspx",
+    readInstructionLink: "DocsProductsForWindowsServerLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_windows",
@@ -220,8 +216,7 @@ export const docsProducts: IDownloadCard[] = [
     version: documentServer.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: documentServer.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-ami.aspx",
+    readInstructionLink: "DocsProductsAmazonMachineImageLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_amazon_machine_image",
@@ -242,8 +237,7 @@ export const docsProducts: IDownloadCard[] = [
     version: alibabaCloudImage.version,
     whatsNewLink: "https://helpcenter.onlyoffice.com/docs/docs-changelog.aspx",
     releaseDate: alibabaCloudImage.date,
-    readInstructionLink:
-      "https://helpcenter.onlyoffice.com/docs/installation/docs-enterprise-install-alibaba.aspx",
+    readInstructionLink: "DocsProductsAlibabaCloudImageLink",
     buttons: [
       {
         id: "onlyoffice_docs_enterprise_for_alibaba_cloud_image",

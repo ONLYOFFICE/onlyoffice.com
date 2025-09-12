@@ -7,10 +7,6 @@ import {
 } from "react";
 import { useTranslation } from "next-i18next";
 import {
-  usePhoneInputStore,
-  IPhoneInputStore,
-} from "@src/store/phoneInputStore";
-import {
   StyledPhoneInput,
   StyledPhoneInputLeftSide,
   StyledPhoneInputFlag,
@@ -19,22 +15,24 @@ import {
   StyledPhoneInputContriesItem,
 } from "./PhoneInput.styled";
 import { IPhoneInputRef, IPhoneInput } from "./PhoneInput.types";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { Input } from "@src/components/ui/Input";
 import { countries } from "@src/config/data/countries";
 
 const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
-  ({ id, className, status, onChange, onBlur }, ref) => {
+  ({ id, className, status, required, onChange, onBlur }, ref) => {
     const { t } = useTranslation("PhoneInput");
+    const IPGeolocationCountry = useIPGeolocationStore(
+      (state) => state.IPGeolocationInfo.country,
+    );
+
     const leftSideRef = useRef<HTMLButtonElement>(null);
-    const countriesRef = useRef<HTMLDivElement>(null);
+    const countriesRef = useRef<HTMLUListElement>(null);
+    const selectedRef = useRef<HTMLLIElement>(null);
 
     const [isOpen, setIsOpen] = useState(false);
-    const selectedKey = usePhoneInputStore(
-      (state: IPhoneInputStore) => state.selectedCountry,
-    );
-    const setSelectedCountry = usePhoneInputStore(
-      (state: IPhoneInputStore) => state.setSelectedCountry,
-    );
+    const [selectedKey, setSelectedCountry] = useState("US");
+
     const currentValue = countries.find(
       (item) => item.country === selectedKey,
     ) || {
@@ -42,6 +40,18 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
       countryCode: "+1",
     };
     const [inputValue, setInputValue] = useState(currentValue.countryCode);
+
+    useEffect(() => {
+      if (countriesRef.current && selectedRef.current) {
+        const parent = countriesRef.current;
+        const el = selectedRef.current;
+
+        const elOffsetTop = el.offsetTop;
+        const elHeight = el.offsetHeight;
+
+        parent.scrollTop = elOffsetTop - parent.clientHeight / 2 + elHeight / 2;
+      }
+    }, [isOpen, selectedKey]);
 
     useEffect(() => {
       const selected = countries.find((item) => item.country === selectedKey);
@@ -60,17 +70,7 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
     }));
 
     useEffect(() => {
-      const fetchGeolocation = async () => {
-        try {
-          const response = await fetch("/api/ip-geolocation");
-          const data = await response.json();
-          setSelectedCountry(data.country);
-        } catch (error) {
-          console.error("Error fetching IP:", error);
-        }
-      };
-
-      fetchGeolocation();
+      setSelectedCountry(IPGeolocationCountry);
 
       const handleClickOutside = (e: MouseEvent) => {
         const target = e.target as Node;
@@ -86,11 +86,15 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
       document.addEventListener("mousedown", handleClickOutside);
       return () =>
         document.removeEventListener("mousedown", handleClickOutside);
-    }, [setSelectedCountry]);
+    }, [IPGeolocationCountry]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      setInputValue(e.target.value);
-      onChange?.(e);
+      const onlyNumbers = e.target.value.replace(/[^\d+]/g, "");
+      setInputValue(onlyNumbers);
+      onChange?.({
+        ...e,
+        target: { ...e.target, value: onlyNumbers },
+      } as React.ChangeEvent<HTMLInputElement>);
     };
 
     return (
@@ -102,7 +106,7 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
           label={t("Phone")}
           maxLength={50}
           pattern="^\+?\d{1,4}\s{0,}(\(\d{1,4}\))?\s{0,}(\d{1,5}\s{0,}-?){1,4}$"
-          required
+          required={required}
           active
           status={status}
           onFocus={() => setIsOpen(false)}
@@ -125,18 +129,19 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
         />
 
         {isOpen && (
-          <StyledPhoneInputCountries ref={countriesRef}>
-            <StyledPhoneInputContriesWrapper>
+          <StyledPhoneInputCountries>
+            <StyledPhoneInputContriesWrapper ref={countriesRef}>
               {countries.map((item, index) => (
-                <li key={index}>
+                <li
+                  key={index}
+                  ref={item.country === selectedKey ? selectedRef : null}
+                >
                   <StyledPhoneInputContriesItem
+                    $selected={item.country === selectedKey}
                     onClick={() => {
                       setSelectedCountry(item.country);
                       setInputValue(
-                        `${item.countryCode} ${inputValue.replace(
-                          /^\+?\d*\s*/,
-                          "",
-                        )}`,
+                        `${item.countryCode} ${inputValue.replace(/^\+?\d*\s*/, "")}`,
                       );
                       setIsOpen(false);
                     }}

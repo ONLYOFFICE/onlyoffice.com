@@ -9,17 +9,18 @@ import {
 } from "./QuoteModal.styled";
 import { IQuoteModal } from "./QuoteModal.types";
 import { getFromParam } from "@src/utils/getParams";
-import { usePhoneInputStore } from "@src/store/phoneInputStore";
+import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { countries } from "@src/config/data/countries";
 import { Modal } from "@src/components/ui/Modal";
 import { Heading } from "@src/components/ui/Heading";
 import { Input } from "@src/components/ui/Input";
-import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { Text } from "@src/components/ui/Text";
+import { HCaptcha } from "@src/components/ui/HCaptcha";
+import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { IPhoneInputRef } from "@src/components/widgets/PhoneInput";
 import { PhoneInput } from "@src/components/widgets/PhoneInput";
-import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { validateFullName, validateEmail } from "@src/utils/validators";
+import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const QuoteModal = <T,>({
   locale,
@@ -34,13 +35,19 @@ const QuoteModal = <T,>({
   buttonLabel,
   onSubmitRequest,
   onClose,
+  pageTrackName,
 }: IQuoteModal<T>) => {
   const { t } = useTranslation("PricingQuoteModal");
   const from = getFromParam();
 
-  const selectedCountry = usePhoneInputStore((state) => state.selectedCountry);
+  const IPGeolocationCountry = useIPGeolocationStore(
+    (state) => state.IPGeolocationInfo.country,
+  );
+
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
+
+  const pageTrack = usePageTrack();
 
   const [isEmpty, setIsEmpty] = useState({
     fullName: false,
@@ -123,35 +130,27 @@ const QuoteModal = <T,>({
     setFormStatus("loading");
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token: quoteFormData.hCaptcha }),
-      });
-
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorHCaptchaInvalid") {
-        setFormStatus("error");
-        setTimeout(() => {
-          setFormStatus("default");
-        }, 5000);
-        return;
-      }
-
       const countryInfo = Object.values(countries).find(
-        (item) => item.country === selectedCountry,
+        (item) => item.country === IPGeolocationCountry,
       );
       const country = countryInfo?.title?.split(" (")[0] || "";
       const region = countryInfo?.salesRegion || "";
 
       const onSubmitRequestData = await onSubmitRequest({
-        from,
-        country,
-        region,
-      });
+          from,
+          country,
+          region,
+        hCaptchaResponse: quoteFormData.hCaptcha,
+        });
 
-      if (onSubmitRequestData.status === "success") {
+      if (onSubmitRequestData.status === "errorHCaptchaInvalid") {
+        setFormStatus("error");
+        setTimeout(() => {
+          setFormStatus("default");
+        }, 5000);
+        return;
+      } else if (onSubmitRequestData.status === "success") {
+        pageTrack(pageTrackName);
         setFormStatus("success");
 
         setTimeout(() => {
@@ -226,7 +225,7 @@ const QuoteModal = <T,>({
               checkFormValid();
             }}
             value={quoteFormData.email}
-            label="Email"
+            label={t("Email")}
             placeholder="name@domain.com"
             caption={
               quoteFormData.email.length === 0
@@ -285,6 +284,7 @@ const QuoteModal = <T,>({
                     ? "success"
                     : "default"
               }
+              required
             />
           )}
 

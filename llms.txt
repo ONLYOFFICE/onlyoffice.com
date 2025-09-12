@@ -1,0 +1,124 @@
+# ONLYOFFICE - Secure Online Office | ONLYOFFICE
+
+ONLYOFFICE offers a secure online office suite highly compatible with MS Office formats. Connect it to your web platform for document editing and collaboration or use as a part of ONLYOFFICE DocSpace.
+
+## Getting Started
+- [Get it now](https://www.onlyoffice.com/): Access the ONLYOFFICE suite and start using its features.
+
+## Product Releases
+- [ONLYOFFICE Docs 9.0 released: flawless interface, Diagram Viewer, support for .md files, AI-powered sheets & macros, and more](https://www.onlyoffice.com/blog/2025/06/onlyoffice-docs-9-0-released): An overview of the new features and improvements in ONLYOFFICE Docs 9.0.
+
+## Language Support
+- [enEnglish](https://www.onlyoffice.com/en/): English language support.
+- [frfrançais](https://www.onlyoffice.com/fr/): French language support.
+- [deDeutsch](https://www.onlyoffice.com/de/): German language support.
+- [esespañol](https://www.onlyoffice.com/es/): Spanish language support.
+- [ptportuguês](https://www.onlyoffice.com/pt/): Portuguese language support.
+- [ititaliano](https://www.onlyoffice.com/it/): Italian language support.
+- [csčeština](https://www.onlyoffice.com/cs/): Czech language support.
+- [nlNederlands](https://www.onlyoffice.com/nl/): Dutch language support.
+- [ja日本語](https://www.onlyoffice.com/ja/): Japanese language support.
+- [zh中文](https://www.onlyoffice.com/zh/): Chinese language support.
+- [ruрусский](https://www.onlyoffice.com/ru/): Russian language support.
+- [srsrpski](https://www.onlyoffice.com/sr/): Serbian language support.
+
+## ONLYOFFICE DocSpace
+- [What is ONLYOFFICE DocSpace](https://www.onlyoffice.com/docspace.aspx): An introduction to ONLYOFFICE DocSpace and its functionalities.
+- [Collaboration rooms](https://www.onlyoffice.com/collaboration-rooms.aspx): Features and benefits of collaboration rooms in ONLYOFFICE.
+- [Meeting rooms](https://www.onlyoffice.com/office-for-zoom.aspx): Overview of meeting room capabilities.
+- [Public rooms](https://www.onlyoffice.com/public-rooms.aspx): Information on public room features.
+- [Custom rooms](https://www.onlyoffice.com/custom-rooms.aspx): Details on creating custom rooms for specific needs.
+- [Form Filling rooms](https://www.onlyoffice.com/form-filling-rooms.aspx): Explanation of form filling rooms for data collection.
+- [Virtual data rooms](https://www.onlyoffice.com/virtual-data-rooms.aspx): Overview of virtual data rooms for secure document sharing.
+- [DocSpace connectors](https://www.onlyoffice.com/all-connectors.aspx): Information on connectors available for DocSpace integration.
+
+## Document Editors
+- [What is ONLYOFFICE Docs](https://www.onlyoffice.com/office-suite.aspx): A comprehensive overview of ONLYOFFICE Docs.
+- [Document Editor](https://www.onlyoffice.com/document-editor.aspx): Features and functionalities of the document editor.
+- [Spreadsheet Editor](https://www.onlyoffice.com/spreadsheet-editor.aspx): Overview of the spreadsheet editor capabilities.
+- [Presentation Editor](https://www.onlyoffice.com/presentation-editor.aspx): Details on the presentation editor.
+- [PDF Editor](https://www.onlyoffice.com/pdf-editor.aspx): Features of the PDF editor.
+- [Form creator](https://www.onlyoffice.com/form-creator.aspx): Information on creating forms within ONLYOFFICE.
+- [E-book creator](https://www.onlyoffice.com/e-book.aspx): Overview of the e-book creation tool.
+- [Diagram Viewer](https://www.onlyoffice.com/diagram-viewer.aspx): Features of the diagram viewer.
+- [Collaboration features](https://www.onlyoffice.com/seamless-collaboration.aspx): Insights into collaboration tools available in ONLYOFFICE.
+
+## Desktop and Mobile Solutions
+- [ONLYOFFICE Desktop Editors](https://www.onlyoffice.com/desktop.aspx): Information on the desktop versions of ONLYOFFICE editors.
+- [ONLYOFFICE Workspace](https://www.onlyoffice.com/workspace.aspx): Overview of the ONLYOFFICE Workspace environment.
+- [Online converters](https://www.onlyoffice.com/online-document-converter.aspx): Tools for converting documents online.
+- [Templates](https://templates.onlyoffice.com/): Access to various templates for document creation.
+- [Marketplace](http://www.onlyoffice.com/app-directory): Explore the ONLYOFFICE marketplace for additional resources.
+- [Security](https://www.onlyoffice.com/security.aspx): Information on security features within ONLYOFFICE.
+
+## AI and Accessibility
+- [AI assistant](https://www.onlyoffice.com/ai-assistants.aspx): Overview of the AI assistant features.
+- [Accessibility](https://www.onlyoffice.com/accessibility.aspx): Information on accessibility options available in ONLYOFFICE.
+- [Sustainability](https://www.onlyoffice.com/blog/2024/06/eco-friendly): Insights into ONLYOFFICE's sustainability initiatives.
+
+## Enterprise Solutions
+- [Why Docs Enterprise](https://www.onlyoffice.com/docs-enterprise.aspx): Reasons to choose ONLYOFFICE Docs for enterprise use.
+- [Pricing](https://www.onlyoffice.com/docs-enterprise-prices.aspx): Pricing information for ONLYOFFICE Docs.
+- [Why DocSpace Enterprise](https://www.onlyoffice.com/docspace-enterprise.aspx): Benefits of using DocSpace for enterprise environments.
+- [Pricing](https://www.onlyoffice.com/docspace-prices.aspx): Pricing details for DocSpace.
+
+## Developer Solutions
+- [Why Docs Developer](https://www.onlyoffice.com/developer-edition.aspx): Reasons to choose ONLYOFFICE Docs for developers.
+- [Automation API](https://www.onlyoffice.com/automation-api.aspx): Overview of the Automation API features.
+- [Conversion API](https://www.onlyoffice.com/conversion-api.aspx): Information on the Conversion API.
+- [Document Builder](https://www.onlyoffice.com/document-builder.aspx): Details on the Document Builder tool.
+- [Pricing](https://www.onlyoffice.com/developer-edition-prices.aspx): Pricing information for developer solutions.
+- [Launch demo](https://www.onlyoffice.com/see-it-in-action.aspx?developer=edition): Access to a demo for developer tools.
+- [Why DocSpace Developer](https://www.onlyoffice.com/docspace-developer.aspx): Benefits of using DocSpace for developers.
+- [Pricing](https://www.onlyoffice.com/docspace-developer-prices.aspx): Pricing details for DocSpace developer solutions.
+- [API Docs](https://api.onlyoffice.com/): Documentation for the ONLYOFFICE API.
+
+## Support and Resources
+- [Contact Sales](https://www.onlyoffice.com/contacts.aspx): For enterprise inquiries, pricing, and partnerships.  
+- Email: [sales@onlyoffice.com](mailto:sales@onlyoffice.com) (for direct requests).
+- [Request demo](https://www.onlyoffice.com/demo-order.aspx): Schedule a demo to see ONLYOFFICE in action.
+- [Help Center](https://helpcenter.onlyoffice.com/index.aspx): Access the help center for support and resources.
+- [Academy](https://www.onlyoffice.com/academy.aspx): Educational resources and training courses.
+- [Training courses](https://www.onlyoffice.com/training-courses.aspx): Information on available training courses.
+- [Webinars](https://www.onlyoffice.com/webinars.aspx): Upcoming webinars on ONLYOFFICE features.
+- [White papers](https://www.onlyoffice.com/whitepapers.aspx): Access to white papers for in-depth information.
+- [Blog](http://www.onlyoffice.com/blog/): Read the latest updates and articles on ONLYOFFICE.
+
+## Customer Success Stories
+- [How Kinderhaus Berlin shares and collaborates on sensitive files with ONLYOFFICE DocSpace](https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace): A case study on Kinderhaus Berlin's use of ONLYOFFICE.
+- [Why the Guará Linux team chooses ONLYOFFICE Desktop Editors as the default office suite for 22.000 employees of the Military Police of Minas Gerais](https://www.onlyoffice.com/blog/2024/07/onlyoffice-desktop-editors-on-guara-linux): Insights into the Guará Linux team's decision.
+- [How Czech TV replaced Google Docs and MS Office with ONLYOFFICE and ownCloud](https://www.onlyoffice.com/blog/2021/04/how-czech-tv-replaced-google-docs-and-ms-office-with-onlyoffice-and-owncloud/): A case study on Czech TV's transition to ONLYOFFICE.
+- [How SWITCH integrated ONLYOFFICE into SWITCHdrive to create a complete alternative to Office 365](https://www.onlyoffice.com/blog/2021/02/how-switch-integrated-onlyoffice-into-switchdrive-to-create-a-complete-alternative-to-office-365/): Overview of SWITCH's integration of ONLYOFFICE.
+- [The City of Hopewell, Virginia: enabling remote work for 500 government employees with ONLYOFFICE](https://www.onlyoffice.com/blog/2020/06/onlyoffice-in-the-city-of-hopewell/): A case study on the City of Hopewell's implementation.
+- [How Calar Alto Observatory implements ONLYOFFICE for secure & location-independent collaboration](https://www.onlyoffice.com/blog/2022/06/how-calar-alto-observatory-implements-onlyoffice/): Insights into Calar Alto Observatory's use of ONLYOFFICE.
+
+## Awards and Recognition
+- [Slashdot Leader Summer 2025](https://slashdot.org/software/p/ONLYOFFICE/): Recognition received by ONLYOFFICE.
+- [Top 20 Document Management Software](https://www.capterra.com/document-management-software/#top-20): ONLYOFFICE's ranking in document management software.
+- [Office Suites High Performer Fall 2023](https://www.g2.com/products/onlyoffice/reviews?utm_source=rewards-badge): Acknowledgment as a high performer in office suites.
+- [GOLD in the Cloud Content Management 2024](https://www.cloudcomputing-insider.de/it-awards-2024-gewinner-a-0eff7f083cda3aea4c1b8c23ef107b60/): Award for excellence in cloud content management.
+- [Top rated office suites](https://omr.com/de/reviews/product/onlyoffice): Recognition as a top-rated office suite.
+- [SourceForge Leader Summer 2025](https://sourceforge.net/software/product/ONLYOFFICE/): Leadership recognition on SourceForge.
+
+## Community and Contributions
+- [Forum](https://forum.onlyoffice.com/): Join the ONLYOFFICE community forum for discussions.
+- [For contributors](https://www.onlyoffice.com/contribute.aspx): Information for contributors to ONLYOFFICE.
+- [For translators](https://helpcenter.onlyoffice.com/guides/become-translator.aspx): Resources for translators working with ONLYOFFICE.
+- [For influencers](https://www.onlyoffice.com/influencer-program.aspx): Information for influencers collaborating with ONLYOFFICE.
+- [Vacancies](https://www.onlyoffice.com/vacancies.aspx): Current job openings at ONLYOFFICE.
+
+## Additional Resources
+- [GitHub](https://github.com/ONLYOFFICE): Access ONLYOFFICE's GitHub repository for development resources.
+- [YouTube](https://www.youtube.com/user/onlyofficeTV): Watch videos and tutorials on ONLYOFFICE features.
+- [Events](https://www.onlyoffice.com/events.aspx): Information on upcoming events related to ONLYOFFICE.
+- [Legal notice](https://www.onlyoffice.com/legalterms.aspx): Legal information regarding ONLYOFFICE.
+- [Comparison](https://www.onlyoffice.com/document-editor-comparison.aspx): Compare ONLYOFFICE Docs with other office solutions.
+- [ONLYOFFICE Docs vs MS Office Online](https://www.onlyoffice.com/best-microsoft-office-alternative.aspx): A comparison of ONLYOFFICE Docs and MS Office Online.
+- [ONLYOFFICE Docs vs Google Docs](https://www.onlyoffice.com/best-google-docs-alternative.aspx): A comparison of ONLYOFFICE Docs and Google Docs.
+- [ONLYOFFICE Docs vs Zoho Docs](https://www.onlyoffice.com/best-zoho-docs-alternative.aspx): A comparison of ONLYOFFICE Docs and Zoho Docs.
+- [ONLYOFFICE Docs vs LibreOffice](https://www.onlyoffice.com/best-libreoffice-alternative.aspx): A comparison of ONLYOFFICE Docs and LibreOffice.
+- [ONLYOFFICE Docs vs WPS](https://www.onlyoffice.com/best-wps-alternative.aspx): A comparison of ONLYOFFICE Docs and WPS.
+- [ONLYOFFICE Docs vs Adobe Acrobat](https://www.onlyoffice.com/best-adobe-alternative.aspx): A comparison of ONLYOFFICE Docs and Adobe Acrobat.
+- [ONLYOFFICE Docs vs Hancom](https://www.onlyoffice.com/best-hancom-alternative.aspx): A comparison of ONLYOFFICE Docs and Hancom.
+
+This structured summary provides a comprehensive overview of ONLYOFFICE's offerings, features, and resources, ensuring clarity and accessibility for users seeking information about the platform.

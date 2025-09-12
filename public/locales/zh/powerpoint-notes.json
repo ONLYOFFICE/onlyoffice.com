@@ -1,0 +1,31 @@
+{
+  "PageTitle": "在线演示文稿编辑软件 | ONLYOFFICE",
+  "PageDescription": "在线演示文稿工具。适用于PowerPoint演示文稿：pptx、ppt、odp。在线创建、编辑和协作处理.",
+
+  "Header": "轻松进行幻灯片演示",
+  "SubHeader": "演示者模式功能，助您轻松表达",
+
+  "HeroImgUrl": "/images/templates/powerpoint-notes/hero/zh/hero.png",
+  "HeroImgUrl2x": "/images/templates/powerpoint-notes/hero/zh/hero@2x.png",
+
+  "Feature1Title": "添加实用笔记",
+  "Feature1Desc": "在 PowerPoint 演示文稿中添加讲者提示，给自己一些提示，当然也可准备完整脚本。在使用两台显示器演示文档时，您无需将备注展示给听众也能自如地浏览。",
+
+  "Feature2Title": "无缝展示幻灯片",
+  "Feature2Desc": "展示过程中可使用紧凑幻灯片控件轻松导航。您可从任何位置开始幻灯片预览，了解演示文稿的整体外观。",
+
+  "Feature3Title": "追踪时间",
+  "Feature3Desc": "定时器可以帮助您估计演示文稿的展示时长（小时、分钟、秒），便于您自行演练，有助于控制最终呈现时的时间。定时器可轻松启动、暂停、继续和复位，便于获得准确数据。",
+
+  "Feature4Title": "与演示文稿进行互动",
+  "Feature4Desc": "使用指针功能来引导幻灯片观看者，突出展示重要的文本和数字。",
+
+  "Feature1ImgUrl": "/images/templates/powerpoint-notes/features/zh/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/powerpoint-notes/features/zh/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/powerpoint-notes/features/zh/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/powerpoint-notes/features/zh/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/powerpoint-notes/features/zh/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/powerpoint-notes/features/zh/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/powerpoint-notes/features/zh/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/powerpoint-notes/features/zh/pic4@2x.png"
+}

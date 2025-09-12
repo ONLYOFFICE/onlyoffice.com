@@ -6,10 +6,10 @@
   "HeroText": "¡Contribuye al proyecto de código abierto de ONLYOFFICE para mejorarlo aún más!",
 
   "ImproveOO": "Mejora ONLYOFFICE",
-  "DevelopYourOwnPluginOrMacros": "Desarrolla tu propio addon o macros para ONLYOFFICE Docs.",
-  "ReadAPIDocumentation": "Consulta nuestro manual del API",
+  "DevelopYourOwnPluginOrMacros": "Desarrolla tu propio plugin o macro para ONLYOFFICE Docs.",
+  "ReadAPIDocumentation": "Consulta nuestro manual de la API",
   "CreateYourOwnForm": "Crea tus propias plantillas de formularios y compártelas con otros.",
-  "OpenOurFormLibrary": "Abrir nuestra biblioteca de formularios",
+  "OpenOurFormLibrary": "Abre nuestra biblioteca de formularios",
   "CreateAnExtensionOrModule": "Crea una extensión o módulo para ONLYOFFICE DocSpace.",
   "DidYouFindABug": "¿Has encontrado un error? Informa de los problemas en <0>GitHub</0> o en el <1>Foro</1>.",
   "MoreInfo": "Más información",
@@ -18,14 +18,14 @@
 
   "SpreadTitle": "Difunde la tecnología de ONLYOFFICE",
   "SpreadText": "Desarrolla un conector para tu propia plataforma y lleva ONLYOFFICE a más usuarios.",
-  "SpreadLink": "Consulta nuestro manual del API",
+  "SpreadLink": "Consulta nuestro manual de la API",
   "More": "Más",
 
   "TranslateOO": "<0>Traduce</0> ONLYOFFICE",
-  "TranslateOOText": "<p>¿Quieres ayudarnos a traducir la interfaz de ONLYOFFICE a tu idioma natal y hacerla más accesible en cualquier lugar del mundo?</p><p>Únete a nuestra comunidad de traductores voluntarios escribiéndonos a <0>documentation@onlyoffice.com</0> y obten acceso a nuestro <1>sistema de traducción en línea</1>.</p>",
+  "TranslateOOText": "<p>¿Quieres ayudarnos a traducir la interfaz de ONLYOFFICE a tu idioma natal y hacerla más accesible en cualquier lugar del mundo?</p><p>Únete a nuestra comunidad de traductores voluntarios escribiéndonos a <0>documentation@onlyoffice.com</0> y obtén acceso a nuestro <1>sistema de traducción en línea</1>.</p>",
 
   "TestOO": "<0>Prueba</0> ONLYOFFICE",
-  "TestOOText": "<p>Conviértete en un beta-tester de ONLYOFFICE para ayudarnos a probar las próximas características y soluciones.</p><p>Contáctanos a <0>press@onlyoffice.com</0></p>",
+  "TestOOText": "<p>Conviértete en un beta-tester de ONLYOFFICE para ayudarnos a probar las próximas características y soluciones.</p><p>Contáctanos a través de <0>press@onlyoffice.com</0></p>",
 
   "DocumentOO": "<0>Documenta</0> ONLYOFFICE",
   "DocumentOOText": "<p>¿Tienes algún consejo o truco para trabajar con ONLYOFFICE de manera más eficiente?</p><p>¿No has econtrado información sobre cómo usar alguna de las características?</p><p>¿Quieres traducir la documentación disponible a tu idioma natal?</p><p>Contáctanos escribiendo a <0>documentation@onlyoffice.com</0> para compartir tus ideas.</p>"

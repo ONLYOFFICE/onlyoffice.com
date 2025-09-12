@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Собирайте и анализируйте ответы на вопросы в комнатах для заполнения форм",
+  "PageDescription": "Организуйте эффективное заполнение форм для ваших проектов в ONLYOFFICE DocSpace",
+
+  "EasilyCollectAndAnalyze": "Легко собирайте и анализируйте ответы на вопросы в <0>комнатах для заполнения форм</0>",
+  "OrganizeStraightforwardFormFilling": "Организуйте эффективное заполнение форм для ваших проектов в ONLYOFFICE DocSpace",
+
+  "EasyFormUploading": "Простая загрузка форм",
+  "QuickSharing": "Быстрое предоставление доступа",
+  "IntuitiveProcess": "Интуитивно понятный процесс заполнения форм",
+  "ConvenientAnalyzing": "Удобный анализ полученных ответов",
+  "CostEffectiveForAnyBudget": "Экономическая эффективность для любого бюджета",
+
+  "CreateFreeAccount": "Создайте бесплатный аккаунт",
+
+  "HeroImgUrl": "/images/templates/form-filling-rooms/hero/form-filling-rooms-video.png",
+  "HeroImgUrl2x": "/images/templates/form-filling-rooms/hero/form-filling-rooms-video@2x.png",
+
+  "EasyFormUploadingDesc": "Загружайте готовые PDF-формы в комнату из своего DocSpace или с устройства в несколько кликов. Воспользуйтесь встроенной библиотекой шаблонов и выберите один из готовых PDF-шаблонов.",
+  "EasyFormUploadingUrl": "/images/templates/form-filling-rooms/features/ru/easy.png",
+  "EasyFormUploadingUrl2x": "/images/templates/form-filling-rooms/features/ru/easy@2x.png",
+
+  "QuickSharingDesc": "Пригласите своих коллег и участников команды в комнату для заполнения загруженных PDF-форм. Скопируйте общую ссылку, чтобы предоставить доступ в комнату сторонним пользователям.",
+  "QuickSharingUrl": "/images/templates/form-filling-rooms/features/ru/quick.png",
+  "QuickSharingUrl2x": "/images/templates/form-filling-rooms/features/ru/quick@2x.png",
+
+  "IntuitiveProcessDesc": "Легко для всех! Используйте кнопки «Предыдущее поле» или «Следующее поле» для перемещения между полями. При необходимости увеличивайте и уменьшайте, масштабируйте по размеру страницы или по ширине. Когда все будет готово, просто нажмите кнопку «Завершить и отправить».",
+  "IntuitiveProcessUrl": "/images/templates/form-filling-rooms/features/ru/intuitive.png",
+  "IntuitiveProcessUrl2x": "/images/templates/form-filling-rooms/features/ru/intuitive@2x.png",
+
+  "ConvenientAnalyzingDesc": "Проверяйте заполненные формы и анализируйте данные, собираемые автоматически в электронную таблицу. Все в одной комнате.",
+  "ConvenientAnalyzingUrl": "/images/templates/form-filling-rooms/features/ru/analyzing.png",
+  "ConvenientAnalyzingUrl2x": "/images/templates/form-filling-rooms/features/ru/analyzing@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "Платите только за администраторов и добавляйте любое количество обычных пользователей и гостей бесплатно. Воспользуйтесь бесплатным тарифным планом Startup для небольших команд. ONLYOFFICE DocSpace подойдет как для малых и средних компаний, так и для крупных предприятий. Нужен полный контроль над корпоративными данными? Разверните DocSpace на собственном сервере.",
+  "CostEffectiveForAnyBudgetUrl": "/images/templates/form-filling-rooms/features/ru/cost-effective-for-any-budget.png",
+  "CostEffectiveForAnyBudgetUrl2x": "/images/templates/form-filling-rooms/features/ru/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Узнайте больше о комнатах для заполнения форм DocSpace",
+
+  "HelpCenter": "Справочный центр",
+  "HelpCenterDesc": "Ознакомьтесь с подробными руководствами пользователя для более эффективной работы",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "Узнать больше",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Изучите ONLYOFFICE DocSpace еще лучше с помощью видеоинструкций",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Посмотреть сейчас",
+
+  "CustomerTestimonial": "Отзывы клиентов",
+  "HowKinderhausBerlinSharesAndCollaborates": "Как Дом ребенка в Берлине организует совместную работу и предоставление доступа к конфиденциальным файлам с помощью ONLYOFFICE DocSpace",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Читать историю"
+}

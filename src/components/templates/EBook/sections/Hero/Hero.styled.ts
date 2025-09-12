@@ -15,12 +15,13 @@ const StyledHero = styled(Section)`
   }
 `;
 
-const StyledHeroWrapper = styled.div`
+const StyledHeroWrapper = styled.div<{ $locale?: string }>`
+  max-width: ${({ $locale }) =>
+    $locale === "fr" ? "955px" : $locale === "zh" ? "975px" : "928px"};
   display: grid;
   justify-items: center;
   row-gap: 32px;
   margin: 0 auto 80px;
-  max-width: 928px;
   color: #ffffff;
   text-align: center;
 
@@ -35,9 +36,9 @@ const StyledHeroWrapper = styled.div`
 `;
 
 const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
+  max-width: 1120px;
   margin: 0 auto;
   padding-bottom: 64.286%;
-  max-width: 1120px;
   background-image: url(${(props) => props.$imgUrl});
   background-position: center;
   background-repeat: no-repeat;
@@ -54,8 +55,8 @@ const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
     `}
 
   @media ${device.tablet} {
-    padding-bottom: 52.331%;
     max-width: 768px;
+    padding-bottom: 52.331%;
   }
 
   @media ${device.tabletS} {

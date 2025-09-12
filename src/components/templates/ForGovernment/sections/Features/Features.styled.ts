@@ -40,7 +40,7 @@ const StyledFeaturesContent = styled.div`
     line-height: 1.6em;
     color: #666666;
     font-size: 14px;
-    
+
     &:before {
       content: "";
       position: absolute;
@@ -81,7 +81,7 @@ const StyledFeaturesContent = styled.div`
     }
 
     > div {
-      gap: 32px; 
+      gap: 32px;
       padding-top: 32px;
 
       @media ${device.tabletS} {
@@ -91,7 +91,7 @@ const StyledFeaturesContent = styled.div`
           a {
             font-size: 14px;
           }
-        } 
+        }
       }
 
       @media ${device.mobile} {
@@ -141,7 +141,7 @@ const StyledFeaturesContent = styled.div`
   @media ${device.mobile} {
     text-align: left;
     padding: 48px 0;
-    
+
     .buttons {
       align-items: flex-start !important;
     }
@@ -150,7 +150,6 @@ const StyledFeaturesContent = styled.div`
       padding-left: 16px;
     }
   }
-}
 `;
 
 export { StyledFeaturesContent };

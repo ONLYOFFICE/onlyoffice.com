@@ -1,0 +1,43 @@
+{
+  "PageTitle": "Online kancelarijski paket za SharePoint | ONLYOFFICE Docs",
+  "PageDescription": "Uredite i koautorišite kancelarijske dokumente unutar SharePoint-a",
+
+  "OnlineOfficeForConnector": "Online kancelarija za SharePoint",
+  "Subheader": "Sa ONLYOFFICE Docs-om, dobijate potpuno opremljenu zamenu za desktop Office aplikaciju u vašem pretraživaču",
+  "GetStarted": "Počnite",
+
+  "WhyOO": "Zašto više od 15 miliona ljudi već koristi ONLYOFFICE Docs",
+  "Reason1": "Najveća kompatibilnost sa MS Office formatima",
+  "Reason2": "Obilje alata za stilizovanje i formatiranje",
+  "Reason3": "100% pregled, konverzija, štampanje i vernost paginaciji",
+  "Reason4": "Široke mogućnosti saradnje",
+  "Reason5": "Kolekcija dodataka trećih strana",
+  "Reason6": "Fleksibilno upravljanje pravima pristupa",
+  "Reason7": "Dostupan je otvoreni izvorni kod na GitHub-u",
+  "Reason8": "Visoka bezbednost",
+  "Reason9": "Jednostavna integracija koristeći WOPI",
+
+  "MarketplaceConnectorTitle": "Dizajniran za besprekornu integraciju sa SharePoint-om.",
+  "MarketplaceConnectorDescription": "Preuzmite ONLYOFFICE konektor za SharePoint sada sa <0>GitHub-a</0>.",
+  "GetItNow": "Nabavite ga odmah",
+
+  "HowToStart": "Kako početi",
+  "HowToStartStep1": "Implementirajte <0>ONLYOFFICE Docs</0> na sopstvenom serveru ili kreirajte <1>Docs Cloud</1> nalog.",
+  "HowToStartStep2": "Nabavite konektor sa <0>GitHub</0> i otpremite ga u svoj SuiteCRM.",
+  "HowToStartStep3": "Konfigurišite konektor i omogućite JWT.",
+
+  "ReadDetailedInstructions": "Pročitajte detaljna uputstva u <0>Centru za pomoć</0>.",
+
+  "LearnMoreHeading": "Saznajte više o integraciji SharePoint-a i ONLYOFFICE-a",
+  "Video": "Video",
+  "VideoDesc": "Kako integrisati ONLYOFFICE Docs sa SharePoint-om.",
+  "VideoLink": "Gledajte sada",
+  "Compare": "Uporedite ONLYOFFICE Docs sa drugim kancelarijskim paketima",
+  "CompareDesc": "Zašto je ONLYOFFICE Docs najbolja alternativa za MS Office.",
+  "CompareLink": "Saznajte više",
+  "HelpCenter": "Centar za pomoć",
+  "HelpCenterDesc": "Kako povezati ONLYOFFICE Docs sa SharePoint-om preko WOPI.",
+  "HelpCenterLink": "Pročitajte sada",
+
+  "NeedAnAppToConnect": "Treba vam aplikacija za povezivanje ONLYOFFICE Docs sa vašom omiljenom web uslugom? Ili ste možda već razvili jednu?"
+}

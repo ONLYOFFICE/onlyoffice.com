@@ -4,7 +4,7 @@ def aws_region = ""
 def region = ""
 def cloud_front_distribution_id = ""
 def src_domain = ""
-def public_static_url = ""
+def next_public_static_url = ""
 def onlyoffice_site_mysql_host = ""
 def onlyoffice_site_mysql_database = ""
 def onlyoffice_com_strapi_api_url = ""
@@ -24,6 +24,19 @@ def sales_email = ""
 def next_public_onlyoffice_document_server_url = ""
 def aws_s3_bucket = ""
 def aws_s3_region = ""
+def docspace_domain = ""
+def docspace_registration_api = ""
+def next_public_testing_on = ""
+def core_base_domain = ""
+def google_search_url = ""
+def feedback_email = ""
+def support_email = ""
+def webinars_email = ""
+def server_email = ""
+def nonprofit_email = ""
+def partnership_email = ""
+def callback_email = ""
+def docs_cloud_signin_api = ""
 
 switch(BRANCH_NAME) {
   case "test_deploy":
@@ -31,17 +44,16 @@ switch(BRANCH_NAME) {
     region="info"
     cloud_front_distribution_id="EQ4O7B2M9Q51X"
     src_domain="test-new.teamlab.info"
-    public_static_url="https://test-new.teamlab.info"
+    next_public_static_url="https://static-test-new.teamlab.info"
     onlyoffice_site_mysql_host="teamlab-4testing.cyxlgbdbuyvm.us-east-1.rds.amazonaws.com"
     onlyoffice_site_mysql_database="teamlab_site_test"
     onlyoffice_com_strapi_api_url="https://cms.teamlab.info"
-    onlyoffice_com_next_public_site_url="https://www.onlyoffice.com"
+    onlyoffice_com_next_public_site_url="https://teamlab.info"
     transporter_email_host="notify.teamlab.guru"
     transporter_email_port="587"
     billing_domain="https://payments.teamlab.info/api"
     billing_key="14"
     pipedrive_api_url="https://api.pipedrive.com/v1/leads?api_token="
-    sales_email="sales@onlyoffice.com"
     web_payment_we_trial_url="https://payments.teamlab.info/api/license/getwetrial"
     web_payment_dd_trial_url="https://payments.teamlab.info/api/license/getddtrial"
     web_payment_de_trial_url="https://payments.teamlab.info/api/license/getdetrial"
@@ -51,13 +63,57 @@ switch(BRANCH_NAME) {
     next_public_onlyoffice_document_server_url="https://asc.docs.teamlab.info"
     aws_s3_bucket="static-test-new.teamlab.info"
     aws_s3_region="us-west-2"
+    docspace_domain = "onlyoffice.io"
+    docspace_registration_api = "https://onlyoffice"
+    docs_cloud_signin_api = "https://docscloud.teamlab.info/api/auth/invite"
+    next_public_testing_on = "true"
+    core_base_domain = "teamlab.info"
+    google_search_url = "https://www.googleapis.com/customsearch/v1"
+    sales_email="partners@qamail.teamlab.info"
+    feedback_email = "partners@qamail.teamlab.info"
+    support_email = "partners@qamail.teamlab.info"
+    webinars_email = "partners@qamail.teamlab.info"
+    server_email = "partners@qamail.teamlab.info"
+    nonprofit_email = "partners@qamail.teamlab.info"
+    partnership_email = "partners@qamail.teamlab.info"
+    callback_email = "partners@qamail.teamlab.info"
     break
   case "production_deploy":
-    aws_region="us-east-1"
+    aws_region="us-west-2"
     region="com"
-    MONITOR_ID = '8888888888888'
-    src_domain="test-new.teamlab.info"
-    public_static_url="https://test-new.teamlab.info"
+    cloud_front_distribution_id="E2JZ8IECDUCP4S"
+    src_domain="2025.onlyoffice.com"
+    next_public_static_url="https://static-site.onlyoffice.com"
+    onlyoffice_com_strapi_api_url="https://cms.onlyoffice.com"
+    onlyoffice_com_next_public_site_url="https://www.onlyoffice.com"
+    transporter_email_host="mail.onlyoffice.com"
+    transporter_email_port="587"
+    billing_domain="https://payments-api.onlyoffice.com/v9.9"
+    billing_key="83"
+    pipedrive_api_url="https://api.pipedrive.com/v1/leads?api_token="
+    web_payment_we_trial_url="https://payments-api.onlyoffice.com/v9.9/license/getwetrial"
+    web_payment_dd_trial_url="https://payments-api.onlyoffice.com/v9.9/license/getddtrial"
+    web_payment_de_trial_url="https://payments-api.onlyoffice.com/v9.9/license/getdetrial"
+    web_payment_dse_trial_url="https://payments-api.onlyoffice.com/v9.9/license/getdsetrial"
+    web_payment_dspd_trial_url="https://payments-api.onlyoffice.com/v9.9/license/getdspdtrial"
+    web_payment_dc_trial_url="https://payments-api.onlyoffice.com/v9.9/license/getdctrial"
+    next_public_onlyoffice_document_server_url="https://site.docs.onlyoffice.com"
+    aws_s3_bucket="static-site.onlyoffice.com"
+    aws_s3_region="us-west-2"
+    docspace_domain = "onlyoffice.com"
+    docspace_registration_api = "https://api-system.onlyoffice"
+    docs_cloud_signin_api = "https://docscloud.onloffice.com/api/auth/invite"
+    next_public_testing_on = "false"
+    core_base_domain = "onlyoffice.co"
+    google_search_url = "https://www.googleapis.com/customsearch/v1"
+    sales_email="sales@onlyoffice.com"
+    feedback_email = "feedback@onlyoffice.com"
+    support_email = "support@onlyoffice.com"
+    webinars_email = "webinars@onlyoffice.com"
+    server_email = "server@onlyoffice.com"
+    nonprofit_email = "nonprofit.manager.t@gmail.com"
+    partnership_email = "sales@onlyoffice.com"
+    callback_email = "callback@onlyoffice.com,sales@onlyoffice.com,anastasiia.reagan@onlyoffice.com"
     break
   default:
     println("Branch: ${BRANCH_NAME} do not for deploy.")
@@ -83,7 +139,7 @@ pipeline {
       environment {
         region = "${region}"
         src_domain="${src_domain}"
-        public_static_url = "${public_static_url}"
+        next_public_static_url = "${next_public_static_url}"
         onlyoffice_site_mysql_host="${onlyoffice_site_mysql_host}"
         onlyoffice_site_mysql_database="${onlyoffice_site_mysql_database}"
         onlyoffice_com_strapi_api_url="${onlyoffice_com_strapi_api_url}"
@@ -103,14 +159,30 @@ pipeline {
         next_public_onlyoffice_document_server_url="${next_public_onlyoffice_document_server_url}"
         aws_s3_bucket = "${aws_s3_bucket}"
         aws_s3_region = "${aws_s3_region}"
+        docspace_domain = "${docspace_domain}"
+        docspace_registration_api = "${docspace_registration_api}"
+        next_public_testing_on = "${next_public_testing_on}"
+        core_base_domain = "${core_base_domain}"
+        google_search_url = "${google_search_url}"
+        feedback_email = "${feedback_email}"
+        support_email = "${support_email}"
+        webinars_email = "${webinars_email}"
+        server_email = "${server_email}"
+        nonprofit_email = "${nonprofit_email}"
+        partnership_email = "${partnership_email}"
+        docs_cloud_signin_api = "${docs_cloud_signin_api}"
+        callback_email = "${callback_email}"
       }
       steps {
         withCredentials([usernamePassword(credentialsId: 'onlyoffice_site_test_mysql_credentials', 
                         passwordVariable: 'onlyoffice_site_mysql_password', 
                         usernameVariable: 'onlyoffice_site_mysql_user'),
                         usernamePassword(credentialsId: 'onlyoffice_site_test_email_credentials', 
-                        passwordVariable: 'transporter_email_auth_password', 
-                        usernameVariable: 'transporter_email_auth_user'),
+                        passwordVariable: 'transporter_email_auth_password_test', 
+                        usernameVariable: 'transporter_email_auth_user_test'),
+                        usernamePassword(credentialsId: 'onlyoffice_site_prod_email_credentials', 
+                        passwordVariable: 'transporter_email_auth_password_prod', 
+                        usernameVariable: 'transporter_email_auth_user_prod'),
                         usernamePassword(credentialsId: 'cmsoforms-user', 
                         passwordVariable: 'cmsoforms_password', 
                         usernameVariable: 'cmsoforms_user'),
@@ -118,37 +190,70 @@ pipeline {
                         string(credentialsId: 'onlyoffice_site_test_hcaptcha_secret_key', variable: 'onlyoffice_site_test_hcaptcha_secret_key'),
                         string(credentialsId: 'onlyoffice_site_test_billing_secret', variable: 'onlyoffice_site_test_billing_secret'),
                         string(credentialsId: 'onlyoffice_site_test_pipedrive_api_token', variable: 'onlyoffice_site_test_pipedrive_api_token'),
-                        string(credentialsId: 'onlyoffice_site_test_document_server_token', variable: 'onlyoffice_site_test_document_server_token')]) {          
+                        string(credentialsId: 'onlyoffice_site_test_document_server_token', variable: 'onlyoffice_site_test_document_server_token'),
+                        string(credentialsId: 'onlyoffice_site_test_thirdparty_domain', variable: 'onlyoffice_site_test_thirdparty_domain'),
+                        string(credentialsId: 'onlyoffice_site_test_core_machinekey', variable: 'onlyoffice_site_test_core_machinekey'),
+                        string(credentialsId: 'onlyoffice_site_test_google_analytics_url', variable: 'onlyoffice_site_test_google_analytics_url'),
+                        string(credentialsId: 'onlyoffice_site_test_google_search_cx', variable: 'onlyoffice_site_test_google_search_cx'),
+                        string(credentialsId: 'onlyoffice_site_test_google_search_key', variable: 'onlyoffice_site_test_google_search_key'),
+                        string(credentialsId: 'onlyoffice_site_test_core_mysql_url', variable: 'onlyoffice_site_test_core_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_test_core_us_mysql', variable: 'onlyoffice_site_test_core_us_mysql'),
+                        string(credentialsId: 'onlyoffice_site_test_core_io_mysql_url', variable: 'onlyoffice_site_test_core_io_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_test_core_io2_mysql_url', variable: 'onlyoffice_site_test_core_io2_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_test_teamlabsite_mysql_url', variable: 'onlyoffice_site_test_teamlabsite_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_test_personal_mysql_url', variable: 'onlyoffice_site_test_personal_mysql_url'),                        
+                        string(credentialsId: 'onlyoffice_site_prod_hcaptcha_site_key', variable: 'onlyoffice_site_prod_hcaptcha_site_key'),
+                        string(credentialsId: 'onlyoffice_site_prod_hcaptcha_secret_key', variable: 'onlyoffice_site_prod_hcaptcha_secret_key'),
+                        string(credentialsId: 'onlyoffice_site_prod_billing_secret', variable: 'onlyoffice_site_prod_billing_secret'),
+                        string(credentialsId: 'onlyoffice_site_prod_pipedrive_api_token', variable: 'onlyoffice_site_prod_pipedrive_api_token'),
+                        string(credentialsId: 'onlyoffice_site_prod_document_server_token', variable: 'onlyoffice_site_prod_document_server_token'),
+                        string(credentialsId: 'onlyoffice_site_prod_thirdparty_domain', variable: 'onlyoffice_site_prod_thirdparty_domain'),
+                        string(credentialsId: 'onlyoffice_site_prod_core_machinekey', variable: 'onlyoffice_site_prod_core_machinekey'),
+                        string(credentialsId: 'onlyoffice_site_prod_google_analytics_url', variable: 'onlyoffice_site_prod_google_analytics_url'),
+                        string(credentialsId: 'onlyoffice_site_prod_google_search_cx', variable: 'onlyoffice_site_prod_google_search_cx'),
+                        string(credentialsId: 'onlyoffice_site_prod_google_search_key', variable: 'onlyoffice_site_prod_google_search_key'),
+                        string(credentialsId: 'onlyoffice_site_prod_core_mysql_url', variable: 'onlyoffice_site_prod_core_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_prod_core_eu_mysql_url', variable: 'onlyoffice_site_prod_core_eu_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_prod_core_sg_mysql_url', variable: 'onlyoffice_site_prod_core_sg_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_prod_core_com_mysql_url', variable: 'onlyoffice_site_prod_core_com_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_prod_core_com2_mysql_url', variable: 'onlyoffice_site_prod_core_com2_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_prod_core_teamlabsite_mysql_url', variable: 'onlyoffice_site_prod_core_teamlabsite_mysql_url'),
+                        string(credentialsId: 'onlyoffice_site_prod_core_personal_mysql_url', variable: 'onlyoffice_site_prod_core_personal_mysql_url')]) {          
         sh '''
+
+          export AWS_ACCESS_KEY_ID="$cmsoforms_user"
+          export AWS_SECRET_ACCESS_KEY="$cmsoforms_password"
+          export AWS_DEFAULT_REGION="$aws_s3_region"
+          
+          aws s3 sync ./public/images s3://$aws_s3_bucket/public/images --exact-timestamps --region $aws_s3_region
+          aws s3 sync ./public/files s3://$aws_s3_bucket/public/files --exact-timestamps --region $aws_s3_region
+
+          sed -i "s^var_notification_app_name^$src_domain^" .jenkins/build.sh
           cp .jenkins/build.sh .jenkins/site_build.sh
 
           sed -i "s^var_next_public_site_url^$onlyoffice_com_next_public_site_url^" .env
+          sed -i "s^var_next_public_static_url^$next_public_static_url^" .env
+          sed -i "s^var_next_public_testing_on^$next_public_testing_on^" .env
           sed -i "s^var_strapi_api_url^$onlyoffice_com_strapi_api_url^" .env
-
-          sed -i "s^var_next_public_hcaptcha_site_key^$onlyoffice_site_test_hcaptcha_site_key^" .env
-          sed -i "s^var_hcaptcha_secret_key^$onlyoffice_site_test_hcaptcha_secret_key^" .env
 
           sed -i "s^var_billing_domain^$billing_domain^" .env
           sed -i "s^var_billing_key^$billing_key^" .env
-          sed -i "s^var_billing_secret^$onlyoffice_site_test_billing_secret^" .env
 
-          sed -i "s^var_onlyoffice_document_server_token^$onlyoffice_site_test_document_server_token^" .env
           sed -i "s^var_next_public_onlyoffice_document_server_url^$next_public_onlyoffice_document_server_url^" .env
-
-          sed -i "s^var_onlyoffice_site_mysql_host^$onlyoffice_site_mysql_host^" .env
-          sed -i "s^var_onlyoffice_site_mysql_database^$onlyoffice_site_mysql_database^" .env
-          sed -i "s^var_onlyoffice_site_mysql_user^$onlyoffice_site_mysql_user^" .env
-          sed -i "s^var_onlyoffice_site_mysql_password^$onlyoffice_site_mysql_password^" .env
 
           sed -i "s^var_transporter_email_host^$transporter_email_host^" .env
           sed -i "s^var_transporter_email_port^$transporter_email_port^" .env
-          sed -i "s^var_transporter_email_auth_user^$transporter_email_auth_user^" .env
-          sed -i "s|var_transporter_email_auth_password|$transporter_email_auth_password|" .env
 
           sed -i "s^var_pipedrive_api_url^$pipedrive_api_url^" .env
-          sed -i "s^var_pipedrive_api_token^$onlyoffice_site_test_pipedrive_api_token^" .env
 
           sed -i "s^var_sales_email^$sales_email^" .env
+          sed -i "s^var_feedback_email^$feedback_email^" .env
+          sed -i "s^var_support_email^$support_email^" .env
+          sed -i "s^var_webinars_email^$webinars_email^" .env
+          sed -i "s^var_server_email^$server_email^" .env
+          sed -i "s^var_nonprofit_email^$nonprofit_email^" .env
+          sed -i "s^var_partnership_request_email^$partnership_email^" .env
+          sed -i "s^var_callback_email^$callback_email^" .env
 
           sed -i "s^var_web_payment_we_trial_url^$web_payment_we_trial_url^" .env
           sed -i "s^var_web_payment_dd_trial_url^$web_payment_dd_trial_url^" .env
@@ -161,9 +266,71 @@ pipeline {
           sed -i "s^var_aws_s3_access_key^$cmsoforms_user^" .env
           sed -i "s^var_aws_s3_secret_access_key^$cmsoforms_password^" .env
           sed -i "s^var_aws_s3_region^$aws_s3_region^" .env
-          
+
+          sed -i "s^var_docspace_domain^$docspace_domain^" .env
+          sed -i "s^var_docspace_registration_api^$docspace_registration_api^" .env
+
+          sed -i "s^var_docs_cloud_signin_api^$docs_cloud_signin_api^" .env
+
+          sed -i "s^var_google_search_url^$google_search_url^" .env
+          sed -i "s^var_core_base_domain^$core_base_domain^" .env
+        
           if [ "${region}" = "info" ]; then
+
+            sed -i "s^var_next_public_hcaptcha_site_key^$onlyoffice_site_test_hcaptcha_site_key^" .env
+            sed -i "s^var_hcaptcha_secret_key^$onlyoffice_site_test_hcaptcha_secret_key^" .env
+            sed -i "s^var_billing_secret^$onlyoffice_site_test_billing_secret^" .env
+            sed -i "s^var_onlyoffice_document_server_token^$onlyoffice_site_test_document_server_token^" .env
+            sed -i "s^var_pipedrive_api_token^$onlyoffice_site_test_pipedrive_api_token^" .env
+
+
+            sed -i "s^var_thirdparty_domain^$onlyoffice_site_test_thirdparty_domain^" .env
+            sed -i "s^var_google_analytics_url^$onlyoffice_site_test_google_analytics_url^" .env
+            sed -i "s^var_google_search_cx^$onlyoffice_site_test_google_search_cx^" .env
+            sed -i "s^var_google_search_key^$onlyoffice_site_test_google_search_key^" .env
+
+            sed -i "s^var_core_machinekey^$onlyoffice_site_test_core_machinekey^" .env
+
+            sed -i "s^var_transporter_email_auth_user^$transporter_email_auth_user_test^" .env
+            sed -i "s|var_transporter_email_auth_password|$transporter_email_auth_password_test|" .env
+
+            sed -i "s^var_core_mysql_url^$onlyoffice_site_test_core_mysql_url^" .env
+            sed -i "s^var_core_us_mysql_url^$onlyoffice_site_test_core_us_mysql^" .env
+            sed -i "s^var_core_io_mysql_url^$onlyoffice_site_test_core_io_mysql_url^" .env
+            sed -i "s^var_core_io2_mysql_url^$onlyoffice_site_test_core_io2_mysql_url^" .env
+            sed -i "s^var_teamlabsite_mysql_url^$onlyoffice_site_test_teamlabsite_mysql_url^" .env
+            sed -i "s^var_personal_mysql_url^$onlyoffice_site_test_personal_mysql_url^" .env
+
             cp .jenkins/robots.txt ./
+
+          fi
+
+          if [ "${region}" = "com" ]; then
+
+            sed -i "s^var_next_public_hcaptcha_site_key^$onlyoffice_site_prod_hcaptcha_site_key^" .env
+            sed -i "s^var_hcaptcha_secret_key^$onlyoffice_site_prod_hcaptcha_secret_key^" .env
+            sed -i "s^var_billing_secret^$onlyoffice_site_prod_billing_secret^" .env
+            sed -i "s^var_onlyoffice_document_server_token^$onlyoffice_site_prod_document_server_token^" .env
+            sed -i "s^var_pipedrive_api_token^$onlyoffice_site_prod_pipedrive_api_token^" .env
+
+            sed -i "s^var_thirdparty_domain^$onlyoffice_site_prod_thirdparty_domain^" .env
+            sed -i "s^var_google_analytics_url^$onlyoffice_site_prod_google_analytics_url^" .env
+            sed -i "s^var_google_search_cx^$onlyoffice_site_prod_google_search_cx^" .env
+            sed -i "s^var_google_search_key^$onlyoffice_site_prod_google_search_key^" .env
+
+            sed -i "s^var_core_machinekey^$onlyoffice_site_prod_core_machinekey^" .env
+
+            sed -i "s^var_transporter_email_auth_user^$transporter_email_auth_user_prod^" .env
+            sed -i "s|var_transporter_email_auth_password|$transporter_email_auth_password_prod|" .env
+
+            sed -i "s^var_core_mysql_url^$onlyoffice_site_prod_core_mysql_url^" .env
+            sed -i "s^var_core_eu_mysql_url^$onlyoffice_site_prod_core_eu_mysql_url^" .env
+            sed -i "s^var_core_sg_mysql_url^$onlyoffice_site_prod_core_sg_mysql_url^" .env
+            sed -i "s^var_core_com_mysql_url^$onlyoffice_site_prod_core_com_mysql_url^" .env
+            sed -i "s^var_core_com2_mysql_url^$onlyoffice_site_prod_core_com2_mysql_url^" .env
+            sed -i "s^var_teamlabsite_mysql_url^$onlyoffice_site_test_teamlabsite_mysql_url^" .env
+            sed -i "s^var_personal_mysql_url^$onlyoffice_site_prod_core_personal_mysql_url^" .env
+
           fi
           
           tar -czpf .jenkins/onlyoffice.com.tar.gz \

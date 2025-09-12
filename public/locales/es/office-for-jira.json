@@ -1,0 +1,34 @@
+{
+  "PageTitle": "Suite ofimática en línea para Jira | ONLYOFFICE Docs",
+  "PageDescription": "Edita y coedita documentos, crea formularios rellenables en Jira",
+
+  "OnlineOfficeForConnector": "Suite ofimática en línea para Jira",
+  "Subheader": "Trabaja con todo tipo de documentos ofimáticos dentro de Jira Software usando ONLYOFFICE Docs",
+
+  "WorkWithinConnector": "Edita y colabora en documentos ofimáticos desde la interfaz de Jira",
+  "DocumentsTab1Label": "Visualiza, edita y coedita archivos ofimáticos adjuntos a tareas directamente desde tu panel de control de Jira",
+  "DocumentsTab2Label": "Crea y edita documentos de texto, hojas de cálculo y presentaciones.",
+  "DocumentsTab3Label": "Colabora en documentos con tus compañeros en tiempo real.",
+  "GetStarted": "Empezar",
+
+  "MarketplaceConnectorTitle": "Diseñado para una integración perfecta con Jira",
+  "MarketplaceConnectorDescription": "Obtén la aplicación ONLYOFFICE para Jira ahora desde el Marketplace de Atlassian.",
+
+  "WhyOO": "¿Por qué ONLYOFFICE?",
+  "Reason1": "Soporte para más de <0>50 formatos de archivo</0>, con compatibilidad completa con los formatos de MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "Un conjunto robusto de herramientas de edición, formato y estilo. <0>Asistente de IA</0> integrado.",
+  "Reason3": "<0>Edición colaborativa</0> en tiempo real y con bloqueo de párrafos, revisión, historial de versiones, comparación de documentos, comentarios y chat. Llamadas de audio y vídeo.",
+  "Reason4": "<0>Seguridad mejorada.</0> Permisos de acceso flexibles y JWT. Marcas de agua y protección por contraseña. Código abierto.",
+  "Reason5": "<0>Fácil configuración</0> desde el panel de administración de Jira. Integración perfecta mediante el conector listo para usar disponible en el <1>Marketplace de Atlassian</1>. Compatible con Jira Server y Data Center.",
+  "Reason6": "Solución en la nube y autoalojada para un control total de tus datos. Versiones Enterprise escalables. <0>Prueba gratuita de 30 días</0>.",
+
+  "HowToStart": "Cómo empezar",
+  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una cuenta de <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtén el conector ONLYOFFICE desde el <0>Marketplace de Atlassian</0>.",
+  "HowToStartStep3": "Configura el conector y activa JWT.",
+
+  "ReadDetailedInstructions": "Lee las instrucciones detalladas en el <0>Centro de ayuda</0>.",
+  "HowToConnect": "Cómo integrar ONLYOFFICE Docs y Jira Software",
+
+  "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE a tu servicio web favorito? ¿O ya has desarrollado una?"
+}

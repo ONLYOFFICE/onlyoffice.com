@@ -35,7 +35,11 @@ const ForResearchPage = ({ locale }: ILocale) => {
 export async function getStaticProps({ locale }: ILocale) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "for-research"])),
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "for-research",
+        "DownloadButton",
+      ])),
       locale,
     },
   };

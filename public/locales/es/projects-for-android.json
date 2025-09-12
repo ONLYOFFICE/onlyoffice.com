@@ -1,0 +1,35 @@
+{
+    "PageTitle": "App gratuita para la gestión de tareas en Android | ONLYOFFICE",
+    "PageDescription": "Gestiona el rendimiento de tu equipo sobre la marcha. Sigue tus proyectos en cualquier lugar usando tu dispositivo Android.",
+
+    "ONLYOFFICEProjects": "<0>ONLYOFFICE Projects,</0> aplicación gratuita de gestión de tareas para Android",
+    "PocketProject": "Herramienta de gestión de proyectos de bolsillo",
+    "HeroImgUrl": "/images/templates/projects-for-android/hero/es/googleplay.png",
+
+    "ManageYourTeam": "Gestiona la productividad de tu equipo sobre la marcha",
+    "TrackCurrentWorkload": "Sigue la carga de trabajo actual",
+    "QuicklyBrowseSortAndFilter": "Navega, ordena y filtra rápidamente los proyectos y tareas existentes, edítalos, cambia el estado, las personas asignadas y las fechas de vencimiento. Accede a los documentos de trabajo adjuntos a cada proyecto.",
+    "ManageNewProjects": "Gestiona nuevos proyectos",
+    "CreateNewProjects": "Crea nuevos proyectos y tareas y asígnalos a los miembros responsables. Establece prioridades y añade subtareas más pequeñas. Enlaza tareas con hitos para planificar tu trabajo en el tiempo.",
+    "Communicate": "Comunícate",
+    "StartProjectDiscussions": "Inicia discusiones sobre el proyecto para generar ideas, resolver problemas, hacer preguntas y hacer anuncios. Deja comentarios para participar en el proceso de comunicación.",
+    "KeepYourProjectsSafe": "Haz que tus proyectos sean seguros",
+    "MakeSureNoUnauthorized": "Asegúrate de que ningún usuario no autorizado pueda acceder a tus proyectos. Protege la aplicación con un código, activa el 2FA o autoriza el acceso a la app con una huella dactilar.",
+    "WorkComfortably": "Trabaja cómodamente",
+    "EnjoyAnIntuitiveInterface": "Disfruta de una interfaz intuitiva y navega sin problemas por todos tus proyectos y tareas. Protege tus ojos en entornos poco iluminados al activar el modo oscuro.",
+
+    "HowToStart": "Cómo empezar",
+    "CreateYourONLYOFFICEWorkspace": "<0>1.</0> Crea tu cuenta de <1>ONLYOFFICE Workspace</1> si no tienes una.",
+    "LaunchInTheCloud": "Empieza en la nube",
+    "RunOnYourOwnServer": "Ejecútalo en tu propio servidor",
+    "ConnectTheApp": "<0>2.</0> Conecta la aplicación a tu portal de ONLYOFFICE Workspace.",
+    "CreateAndTrack": "<0>3.</0> Crea y sigue proyectos y tareas sobre la marcha.",
+
+    "YourBenefits": "Tus ventajas",
+    "QuickAccessToYourWorkflows": "Acceso rápido a tus flujos de trabajo en ONLYOFFICE",
+    "CleanAndIntuitiveUI": "Interfaz de usuario limpia e intuitiva",
+    "NoAds": "No hay anuncios ni compras dentro de la aplicación",
+    "RegularUpdates": "Actualizaciones regulares",
+    "TechnicalSupport": "Soporte técnico",
+    "OnlineDocumentation": "Documentación online"
+}

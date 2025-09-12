@@ -1,0 +1,22 @@
+{
+  "PageTitle": "Fórmulas y funciones en hojas de cálculo | ONLYOFFICE",
+  "PageDescription": "Utiliza más de 450 fórmulas de hojas de cálculo de Excel para procesar los datos de cualquier tarea",
+
+  "Header": "Realiza cálculos precisos con el mínimo esfuerzo",
+  "SubHeader": "Utiliza más de 450 fórmulas de hojas de cálculo de Excel para procesar los datos de cualquier tarea",
+
+  "Feature1Title": "Haz cálculos fácilmente con más de 450 funciones de hojas de cálculo",
+  "Feature1Desc": "Inserta funciones, accede a las categorías y a las fórmulas aplicadas recientemente, trabaja con rangos con nombre y calcula tus hojas y libros enteros, todo en un solo lugar. Comprueba los resultados en grandes hojas de cálculo utilizando la Ventana de inspección. Utiliza las opciones Rastrear precedentes y Rastrear dependientes para mostrar las relaciones entre fórmulas y celdas. Inserta ecuaciones y símbolos para describir los cálculos aplicados.",
+
+  "Feature2Title": "Define los rangos de celdas para aplicar rápidamente las fórmulas de Excel",
+  "Feature2Desc": "Define y nombra los rangos de celdas y úsalos como argumentos, nombra tablas enteras con formato y gestiona los rangos para poder usarlos como hipervínculos internos.",
+
+  "Feature3Title": "Valida las entradas de datos",
+  "Feature3Desc": "Define las reglas de validación de datos para garantizar que sólo se rellenan los datos relevantes en tus hojas para realizar cálculos correctos. Aplica la validación a números y textos y establece condiciones detalladas para filtrar los errores con precisión.",
+
+  "Feature4Title": "Protege la estructura y el contenido de una hoja de cálculo",
+  "Feature4Desc": "Establece una contraseña para toda la hoja de cálculo, un libro o una hoja separada. Oculta las fórmulas para mantenerlas privadas. Bloquea celdas, formas y texto. Permite la edición sólo en los rangos especificados.",
+
+  "Feature5Title": "Automatiza tu trabajo con macros",
+  "Feature5Desc": "Utilizando un plugin especial y nuestra API, crea tus propias macros de JavaScript o utiliza las existentes para automatizar los cálculos y estandarizar las hojas de cálculo. Ejecuta las macros automáticamente o desactívalas y recibe notificaciones sobre las macros en el editor."
+}

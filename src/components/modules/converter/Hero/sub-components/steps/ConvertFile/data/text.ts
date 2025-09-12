@@ -16,7 +16,7 @@ export const loadingText: ILoadingText[] = [
   {
     key: "DownloadEasyEditableOnline",
     link: {
-      href: "https://templates.onlyoffice.com",
+      href: "templatesLink",
       isExternal: true,
     },
   },

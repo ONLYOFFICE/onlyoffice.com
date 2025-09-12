@@ -10,10 +10,7 @@
   "HeroLeftImageUrl": "/images/templates/office-for-android/hero/zh/header-phone.zh.png",
   "HeroLeftImageUrl2x": "/images/templates/office-for-android/hero/zh/header-phone.zh@2x.png",
 
-  "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.zh.svg",
-  "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-zh.svg",
-
-  "OneAppForYourText": "一个应用，即可处理文本文档、表格、演示文稿、表单以及媒体文件",
+  "OneAppForYourText": "只需这一个应用，即可处理文本文档、电子表格、演示文稿、表单以及媒体文件",
   "CompatibleWithMSOffice": "与微软 Office格式高度兼容",
 
   "AnOptionToConsider": "如果您想获得Office或Google Docs的替代品，可以考虑这个选项。",
@@ -76,7 +73,7 @@
 
   "HaveQuestions": "对软件功能有疑问？访问我们的<0>帮助中心</0>。",
 
-  "GetMoreWithComplete": "下载移动网络完整版解锁更多功能",
+  "GetMoreWithComplete": "在移动网页版中使用更多功能",
   "WorkOnDocumentsWithin": "在移动浏览器中处理文档。进入ONLYOFFICE网站门户，即可使用更多文档编辑和协作处理工具。轻松从移动视图切换并在桌面模式下编辑文档。",
 
   "GetMoreImage": "/images/templates/office-for-android/getMore/webversion.zh.png",

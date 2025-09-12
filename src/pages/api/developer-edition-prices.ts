@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { parse } from "cookie";
 import { db } from "@src/config/db/site";
 import { emailTransporter } from "@src/config/email/transporter";
@@ -108,12 +109,30 @@ export default async function handler(
     from,
     country,
     region,
+    hCaptchaResponse,
     affiliateId,
     affiliateToken,
     type,
   } = req.body;
 
   try {
+    const ip =
+      (Array.isArray(req.headers["x-forwarded-for"])
+        ? req.headers["x-forwarded-for"][0]
+        : req.headers["x-forwarded-for"]
+      )?.split(",")[0] ||
+      req.socket.remoteAddress ||
+      null;
+
+    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+    if (!hCaptchaResult.success) {
+      return res.status(400).json({
+        status: "errorHCaptchaInvalid",
+        error: hCaptchaResult.error,
+      });
+    }
+
     const errorMessages = [];
     const cookies = parse(req.headers.cookie || "");
     const isSelected = (value: boolean) =>
@@ -158,9 +177,10 @@ export default async function handler(
             create_on: new Date(),
           };
 
-          await db.query("INSERT INTO docs_developer_request SET ?", [
-            addDocsDeveloperData,
-          ]);
+          await db.teamlabsite.query(
+            "INSERT INTO docs_developer_request SET ?",
+            [addDocsDeveloperData],
+          );
 
           return {
             status: "success",

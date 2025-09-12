@@ -60,6 +60,7 @@ const Hero = ({
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-docs", {
       method: "POST",
@@ -78,6 +79,7 @@ const Hero = ({
         from,
         country,
         region,
+        hCaptchaResponse,
       }),
     }).then((res) => res.json());
   };
@@ -129,6 +131,13 @@ const Hero = ({
                     <DownloadBlock
                       key={index}
                       {...item}
+                      readInstructionLink={
+                        item.readInstructionLink
+                          ? t(item.readInstructionLink, {
+                              defaultValue: item.readInstructionLink,
+                            })
+                          : undefined
+                      }
                       heading={t(item.heading)}
                       buttons={item.buttons.map((button) => ({
                         ...button,
@@ -391,6 +400,7 @@ const Hero = ({
         onClose={() => setIsModalOpen(false)}
         onSubmitRequest={onSubmitRequest}
         buttonAction={buttonAction}
+        pageTrackName={formData.buttonId}
       />
     </>
   );

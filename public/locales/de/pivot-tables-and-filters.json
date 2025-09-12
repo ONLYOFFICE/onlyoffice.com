@@ -1,0 +1,31 @@
+{
+  "PageTitle": "Pivot-Tabellen und Filter",
+  "PageDescription": "Veranschaulichen Sie relevante Daten aus Arbeitsbl�ttern. Sortieren und filtern Sie Bl�tter, um die genaueste Anzeige von Informationen in ONLYOFFICE zu erstellen.",
+
+  "Header": "Große Datenmengen einfach analysieren",
+  "SubHeader": "Zeigen Sie Daten für jede Aufgabe in Pivot-Tabellen, Filter- und Sortierparametern an",
+
+  "HeroImgUrl": "/images/templates/pivot-tables-and-filters/hero/de/hero.png",
+  "HeroImgUrl2x": "/images/templates/pivot-tables-and-filters/hero/de/hero@2x.png",
+
+  "Feature1Title": "Pivot-Tabellen erstellen",
+  "Feature1Desc": "Bilden Sie relevante Daten aus Ihren Arbeitsblättern in Zusammenfassungen ab. Sie können Anzeigefeldern ändern, zwischen Layouts auswählen und Daten in Filtern, Zeilen, Spalten und Werten organisieren.",
+
+  "Feature2Title": "Tabellen visuell einstellen",
+  "Feature2Desc": "Fügen Sie Zusammenfassungen auf demselben oder neues Arbeitsblatt ein. Sie können Farben, Größen, Stile ändern, zwischen Anzeigemodi Kompakt, Gliederung und Tabular wählen, neue Stile erstellen oder die vorhandenen aus Vorlagen anwenden.",
+
+  "Feature3Title": "Filter in Tabellenkalkulationen einfach hinzufügen",
+  "Feature3Desc": "Sortieren und filtern Sie Blätter und Pivot-Tabellen, um die Informationen präziser anzuzeigen. Legen Sie Ihre eigenen Filtervorlagen fest. Teilen Sie Blätter mit benutzerdefinierten Filtern, sodass Ihre Kolleg/innen Daten filtern können, ohne Sie zu stören. Erstellen Sie Tabellenansichten, damit Sie Ihren eigenen Filterzustand privat sehen können.",
+
+  "Feature4Title": "Datenschnitte für schnelle Filterung anwenden",
+  "Feature4Desc": "Fügen Sie Datenschnitte für formatierte und Pivot-Tabellen hinzu, um Informationen mit Schaltflächen schnell zu filtern. Sie können Datenschnitte visuell ändern, am Raster ausrichten, ihre Größe und Position einstellen. Erstellen und organisieren Sie mehrere Datenschnitte in Tabellenkalkulationen.",
+
+  "Feature1ImgUrl": "/images/templates/pivot-tables-and-filters/features/de/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/de/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/pivot-tables-and-filters/features/de/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/de/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/pivot-tables-and-filters/features/de/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/de/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/pivot-tables-and-filters/features/de/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/de/pic4@2x.png"
+}

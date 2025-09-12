@@ -13,7 +13,7 @@ export interface ICanceledFormData {
   from: string;
   spam: number;
   calls: number;
-  recaptchaResponse: string | null;
+  hCaptchaResponse: string | null;
   table_name: string;
 }
 
@@ -35,7 +35,7 @@ export interface CanceledFormProps {
   tableName: string;
   checkboxeItems: ICheckboxeItem[];
   textareaHeading: string;
-  isEmailOnPage?: boolean;
   onShowCoupons: () => void;
+  isEmailRequired?: boolean;
   locale: ILocale["locale"];
 }

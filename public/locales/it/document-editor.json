@@ -1,0 +1,46 @@
+{
+  "PageTitle": "Apri e modifica documenti Word online | ONLYOFFICE",
+  "PageDescription": "Usa editor di testo online per aprire e modificare file word online, creare e collaborare sui documenti Word online: docx, doc, txt, odt, rtf.",
+
+  "Header": "Editor di documenti online collaborativo per la tua applicazione web",
+  "SubHeader": "Apri, crea e modifica documenti Word online",
+
+  "Feature1Title": "Ottieni tutti i vantaggi di una vasta funzionalità per modificare documento Word online",
+  "Feature1Desc": "Modifica testo online senza limitazioni: il tuo documento Word rimane 100% identico nel corso di visualizzazione, conversione, stampa e impaginazione, lavora con file di ogni dimensione e complessità, utilizza gli strumenti di formattazione avanzati direttamente dal tuo browser. ONLYOFFICE Document Editor supporta tutti i formati più diffusi: DOC, DOCX, ODT, TXT, HTML ecc. PDF e XPS possono essere convertiti in DOCX per ulteriori modifiche.",
+
+  "Feature2Title": "Usa Editor di testo online e formatta i documenti di testo a tuo piacimento",
+  "Feature2Desc": "Gestisci caratteri e stili, formatta il testo, regola la spaziatura di righe e paragrafi, inserisci intestazioni e piè di pagina, personalizza il layout della pagina e imposta i margini speculari e rilegati per preparare i documenti per la pubblicazione, abilita la sillabazione automatica.",
+
+  "Feature3Title": "Usa l'aiutante AI",
+  "Feature3Desc": "Esegui attività che implicano la comprensione o la generazione di un linguaggio naturale utilizzando il plugin ChatGPT. Ottieni risposte accurate alle tue domande, trova rapidamente informazioni, genera testi, costruisci il tuo codice e altro direttamente nell'editor.",
+
+  "Feature4Title": "Sii creativo",
+  "Feature4Desc": "Crea documenti vivaci con immagini, grafici personalizzabili, forme automatiche e tabelle, Text Art, grafica SmartArt, equazioni, capolettera e altro ancora. Puoi modificare e sistemare semplicemente gli oggetti inseriti: muovi, ridimensiona, allinea, cambia stile, riempi con colori o schemi. Crea moduli e modelli dall'aspetto professionale. Crea i tuoi disegni a mano libera usando una penna o un evidenziatore.",
+
+  "Feature5Title": "Esplora più approfonditamente l'analisi del testo",
+  "Feature5Desc": "Analizza i tuoi file Word online: visualizza il conteggio delle parole, i paragrafi e i caratteri con o senza spazi. Cerca una parola o una frase e sostituiscila con una nuova utilizzando lo strumento Trova e Sostituisci. Visualizza la cronologia delle versioni, seleziona e ripristina qualsiasi versione precedente con un semplice clic.",
+
+  "Feature6Title": "Migliora il flusso di lavoro del tuo team",
+  "Feature6Desc": "Collabora con il tuo team all'interno dell'editor di documenti online: scegli la modalità di co-editing appropriata: <0>in tempo reale</0> o <0>bloccando i paragrafi</0>. Lascia e ordina i commenti e discuti il processo nella chat integrata o in Telegram. Utilizza la modalità Revisioni con la funzione Anteprima.",
+
+  "Feature7Title": "Confronta documenti con facilità",
+  "Feature7Desc": "Confronta o combina rapidamente due documenti per vedere le differenze con i segni di revisione. Accetta o rifiuta le modifiche una per una o tutte in una volta. Unisci le modifiche e salvale come una nuova versione del documento originale.",
+
+  "Feature8Title": "Estendi le tue capacità di modifiche",
+  "Feature8Desc": "Ottieni il massimo dal tuo editor word online con una raccolta di componenti aggiuntivi di terze parti. Inserisci un video di YouTube, aggiungi simboli speciali, traduci qualsiasi parola o frase, modifica immagini e altro ancora.",
+
+  "LearnMoreHeading": "Scopri di più su ONLYOFFICE Document Editor",
+  "BlogDesc": "Come incorporare un documento Word in HTML",
+  "BlogLink": "https://www.onlyoffice.com/blog/2022/07/embed-word-document-in-html/",
+  "TutorialsDesc": "Aggiunta di un nuovo font a ONLYOFFICE Docs",
+  "TutorialsLink": "https://helpcenter.onlyoffice.com/installation/docs-community-install-fonts-linux.aspx",
+  "HintsDesc": "Formati supportati di documenti di testo elettronici",
+  "HintsLink": "https://helpcenter.onlyoffice.com/userguides/docs-de.aspx",
+
+  "Q1": "Posso modificare documenti di testo senza connessione a Internet?",
+  "A1": "Sì, puoi installare e utilizzare <0>ONLYOFFICE Desktop Editors</0> gratuitamente per modificare i documenti locali offline.",
+  "Q2": "ONLYOFFICE offre app mobili native per la modifica dei documenti?",
+  "A2": "Sì, puoi installare l'app <0>Documents</0> gratuita per dispositivi iOS o Android e lavorare sui documenti on-the-go.",
+  "Q3": "È possibile utilizzare l'editor di documenti ONLYOFFICE all'interno della mia app con il mio marchio?",
+  "A3": "Sì, puoi integrare l'editor di documenti nella tua app. Utilizza <0>ONLYOFFICE Docs Developer</0>."
+}

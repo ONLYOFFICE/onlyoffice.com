@@ -1,0 +1,15 @@
+{
+    "HarmonyInYourCookies": "Gestion harmonieuse de vos cookies",
+    "CookieText": "Notre site web utilise des cookies pour vous offrir une expérience personnalisée. Les cookies nous aident à gérer le site, à améliorer votre navigation et à permettre un marketing et des publicités ciblés. Vous pouvez consentir pleinement à notre utilisation des cookies ou gérer vos préférences. <0>En savoir plus</0>",
+    "Deny": "Tout refuser",
+    "Customize": "Personnaliser",
+    "AcceptAll": "Tout accepter",
+    "CookieSettings": "Paramètres des cookies",
+    "ConfirmMyChoices": "Confirmer mes choix",
+    "Technical": "Techniques (obligatoire)",
+    "TechnicalDescription": "Ces cookies sont nécessaires à l'affichage correct de notre site web. Ils assurent son bon fonctionnement.",
+    "Analytical": "Analytiques",
+    "AnalyticalDescription": "Les cookies analytiques ont pour but de découvrir comment les utilisateurs utilisent notre site web et de suivre leurs visites. Ces fonctions nous permettent d'améliorer la qualité et le contenu de notre site web.",
+    "Marketing": "Marketing",
+    "MarketingDescription": "Ces cookies sont utilisés à des fins de marketing et de collecte d'informations pour mieux adapter la publicité aux intérêts des utilisateurs de notre site web."
+}

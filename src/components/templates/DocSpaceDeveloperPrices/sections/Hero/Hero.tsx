@@ -91,6 +91,7 @@ const Hero = ({ locale }: ILocale) => {
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IQuoteModalOnSubmitRequest) => {
     return fetch("/api/docspace-developer-prices", {
       method: "POST",
@@ -119,6 +120,7 @@ const Hero = ({ locale }: ILocale) => {
         from,
         country,
         region,
+        hCaptchaResponse,
         affiliateId: affiliate.id || "",
         affiliateToken: affiliate.token || "",
         type: "docspacedeveloperrequest",
@@ -495,6 +497,8 @@ const Hero = ({ locale }: ILocale) => {
           buttonLabel={t("GetAQuote")}
           onSubmitRequest={onSubmitRequest}
           onClose={() => setIsModalOpen(false)}
+          locale={locale}
+          pageTrackName="onlyoffice_docspace_developer_prices"
         />
       </Container>
     </StyledHero>

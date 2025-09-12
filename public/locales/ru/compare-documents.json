@@ -1,0 +1,36 @@
+{
+  "PageTitle": "Сравнение документов Word",
+  "PageDescription": "Сравните две версии одного документа Word с помощью редактора ONLYOFFICE. Версию для сравнения можно загрузить с компьютера, из облачного хранилища или по URL.",
+
+  "Header": "Сравнение документов",
+  "SubHeader": "С помощью этой функции вы сможете быстро найти отличия в двух версиях одного и того же файла и объединить их в один документ",
+
+  "HeroImgUrl": "/images/templates/compare-documents/hero/ru/hero.png",
+  "HeroImgUrl2x": "/images/templates/compare-documents/hero/ru/hero@2x.png",
+
+  "Feature1Title": "Сравните две версии одного документа",
+  "Feature1Desc": "Версию для сравнения можно загрузить с компьютера, из облачного хранилища или по URL.",
+
+  "Feature2Title": "Проверьте изменения",
+  "Feature2Desc": "Различия в документах будут выделены в режиме рецензирования (Отслеживание изменений). Вы можете переключаться между правками, исходным документом и видом документа, в который добавлены все правки из версии для сравнения. Для этого нужно выбрать режим отображения.",
+
+  "Feature3Title": "Объедините версии файлов",
+  "Feature3Desc": "Объедините исходный документ и версию для сравнения, приняв или отклонив правки по одной или все вместе.",
+
+  "Feature4Title": "Просмотрите историю версий",
+  "Feature4Desc": "Вы можете в любой момент просмотреть историю версий исходного документа и восстановить контент, который был удален или изменен по ошибке.",
+
+  "Feature5Title": "Объединяйте документы",
+  "Feature5Desc": "Объединение документов происходит аналогично сравнению. Однако при объединении двух документов первоначальные неразрешенные отслеженные изменения после рецензирования останутся в объединенном файле, и вы сможете принять или отклонить их при необходимости.",
+
+  "Feature1ImgUrl": "/images/templates/compare-documents/features/ru/pic1.png",
+  "Feature1ImgUrl2x": "/images/templates/compare-documents/features/ru/pic1@2x.png",
+  "Feature2ImgUrl": "/images/templates/compare-documents/features/ru/pic2.png",
+  "Feature2ImgUrl2x": "/images/templates/compare-documents/features/ru/pic2@2x.png",
+  "Feature3ImgUrl": "/images/templates/compare-documents/features/ru/pic3.png",
+  "Feature3ImgUrl2x": "/images/templates/compare-documents/features/ru/pic3@2x.png",
+  "Feature4ImgUrl": "/images/templates/compare-documents/features/ru/pic4.png",
+  "Feature4ImgUrl2x": "/images/templates/compare-documents/features/ru/pic4@2x.png",
+  "Feature5ImgUrl": "/images/templates/compare-documents/features/ru/pic5.png",
+  "Feature5ImgUrl2x": "/images/templates/compare-documents/features/ru/pic5@2x.png"
+}

@@ -27,5 +27,7 @@
   "WhatDoesTheNumberOfUsersLabel": "What does the 'number of users' mean?",
   "WhatDoesTheNumberOfUsersText": "Specified number of users defines how many people can have access to editing documents, spreadsheets, and presentations. The number of documents that can be edited at the same time is not limited.<br/>Other users will be able to open documents for viewing only.<br/><br/>Please note: ONLYOFFICE keeps a user ID for a period of 30 days. After that, you will be able to replace the user with a new one if necessary. If you share a document with external users, each of them receives a named user ID for a period of 30 days.",
   "WhereCanIFindAnswersToOtherQuestionsLabel": "Where can I find answers to other questions?",
-  "WhereCanIFindAnswersToOtherQuestionsText": "Please, visit our <0>FAQ center</0> or <1>submit your request</1> and we'll help you shortly."
+  "WhereCanIFindAnswersToOtherQuestionsText": "Please, visit our <0>FAQ center</0> or <1>submit your request</1> and we'll help you shortly.",
+  "WhereCanIFindAnswersToOtherQuestionsLink": "https://helpcenter.onlyoffice.com/docs/faq/docs-enterprise.aspx",
+  "OOSalesMail": "mailto:sales@onlyoffice.com"
 }

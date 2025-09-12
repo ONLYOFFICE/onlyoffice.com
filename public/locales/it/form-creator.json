@@ -1,0 +1,43 @@
+{
+  "PageTitle": "Creatore di moduli online compilabili",
+  "PageDescription": "Crea moduli compilabili da qualsiasi documento docx esistente, modifica, condividi e collabora su di essi. Salvali come PDF. Compila i moduli online.",
+
+  "Header": "Creatore di <0>moduli online</0> compilabili per la vostra tua applicazione web",
+  "SubHeader": "Crea, modifica e compila moduli PDF online",
+
+  "Feature1Title": "Trasforma i tuoi documenti di testo in moduli PDF compilabili",
+  "Feature1Desc": "Usa qualsiasi documento .docx, scarica un modello di modulo dalla nostra libreria o crea un modulo online da zero. Basta solo aggiungere i campi necessari - aree di testo, immagini, caselle combinate, elenchi a discesa, caselle di controllo, pulsanti di opzione, e-mail, numeri di telefono, data e ora, carte di credito, codici postali - per ottenere un complesso contratto di vendita o contratto di sviluppo, per poi condividerlo e compilarlo digitalmente. Se necessario, utilizza campi complessi per comporre un campo personalizzato di cui hai bisogno.",
+  "Feature1Link": "Apri la libreria",
+  "Feature2Title": "Modifica i moduli secondo le tue regole",
+  "Feature2Desc": "Formatta il tuo modulo come qualsiasi documento di testo: gestisci caratteri e stili, aggiungi tabelle, grafica e altri oggetti. Inserisci i campi in linea con il tuo testo o fissa la loro posizione. Sposta e ruota i campi. Regola facilmente le dimensioni del campo, abilita l'immissione multilinea o distribuisci uniformemente il testo inserito. Regola i colori del bordo e dello sfondo. Aggiungi suggerimenti e segnaposto, raggruppa i campi per compilarli contemporaneamente e utilizza i tag per semplificare il lavoro con i campi in modalità automatica.",
+  "Feature2Link": "Vedilo in azione",
+  "Feature3Title": "Personalizza i campi di testo per qualsiasi occasione",
+  "Feature3Desc": "Consenti l'utilizzo di qualsiasi simbolo specifico nei campi di testo e imposta il formato necessario: Nessuno per i soliti campi di testo, Solo cifre o lettere, Maschera arbitraria personalizzabile fatta per i numeri di telefono ed Espressione regolare, che implica l'utilizzo di una regola in base alla quale nel campo vengono inseriti i caratteri obbligatori nell'ordine richiesto, ad esempio negli indirizzi e-mail.",
+  "Feature4Title": "Compila i moduli ovunque tu sia in qualsiasi momento su qualsiasi dispositivo",
+  "Feature4Desc": "Condividi facilmente moduli PDF già pronti con altri e compilali online in <0>ONLYOFFICE DocSpace</0>, localmente con <1>le app desktop ONLYOFFICE</1> o anche in movimento utilizzando le <2>app mobili</2> gratuite per iOS e Android. È anche possibile compilare moduli PDF creati in altre app utilizzando ONLYOFFICE.",
+  "Feature4Link": "Trova i moduli pronti da compilare",
+  "Feature5Title": "Autenticazione di dati digitali con firme elettroniche",
+  "Feature5Desc": "Assegna vari ruoli ai destinatari con i colori in corrispondenza con i ruoli. Personalizza l'elenco dei ruoli predefiniti per soddisfare le esigenze del tuo flusso di lavoro al meglio. Prossimamente: consenti agli utenti di firmare un intero modulo o solo alcuni campi. ONLYOFFICE utilizza le chiavi ED25519 per le firme digitali.",
+  "Feature6Title": "Proteggi i tuoi dati di campo sensibili",
+  "Feature6ComingSoon": "in arrivo",
+  "Feature6Desc": "Proteggi il tuo modulo o le sue parti, ad es. i dati del campo. ONLYOFFICE utilizza l'algoritmo simmetrico AES 256 GCM per crittografare i dati e l'algoritmo asimmetrico basato sulle chiavi Curve25519 per crittografare una chiave.",
+
+  "LearnMoreHeading": "Scopri di più su ONLYOFFICE Creatore di moduli",
+  "BlogDesc": "Automatizza la creazione di moduli sostituendo i segnaposto con i campi del modulo utilizzando una macro",
+  "BlogLink": "https://www.onlyoffice.com/blog/it/2024/01/macro-di-onlyoffice-per-aggiungere-textform-ai-modelli-di-moduli",
+  "TutorialsDesc": "Come creare moduli compilabili",
+  "TutorialsLink": "https://helpcenter.onlyoffice.com/docs/userguides/form_builder/CreatingManagingFormFields.aspx",
+  "HintsDesc": "Come compilare un modulo PDF",
+  "HintsLink": "https://helpcenter.onlyoffice.com/docs/userguides/form_builder/FillingOutForm.aspx",
+
+  "Q1": "Quale formato utilizza ONLYOFFICE per i moduli?",
+  "A1": "I moduli pronti vengono salvati e distribuiti in PDF.",
+  "Q2": "ONLYOFFICE offre modelli di modulo?",
+  "A2": "Sì, puoi scaricare modelli pronti all'uso dalla <0>libreria ONLYOFFICE</0>.",
+  "Q3": "È possibile incorporare un modulo nel mio sito web?",
+  "A3": "Sì, puoi facilmente aggiungere un modulo online al tuo sito web, rendendolo disponibile per la compilazione e il download in formato PDF.",
+  "Q4": "È possibile utilizzare il creatore di moduli ONLYOFFICE all'interno della mia app con il mio marchio?",
+  "A4": "Sì, puoi integrare il creatore di moduli nella tua app. Utilizza <0>ONLYOFFICE Docs Developer</0>.",
+  "Q5": "Come creare un modulo compilabile in ONLYOFFICE?",
+  "A5": "In ONLYOFFICE, puoi creare moduli compilabili direttamente in PDF aggiungendo i tipi di campi richiesti e modificandoli per far sì che il tuo modulo PDF appaia come ti serve."
+}

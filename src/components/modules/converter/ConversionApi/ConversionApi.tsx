@@ -21,8 +21,13 @@ const ConversionApi = () => {
 
           <StyledConversionApiHeading
             level={2}
-            label={t("PowerfulConversionAPI")}
-          />
+          >
+            <Trans
+              t={t}
+              i18nKey="PowerfulConversionAPI"
+              components={[<Text as="span" color="#FF6F3D" key="0" />]}
+            />
+          </StyledConversionApiHeading>
 
           <StyledConversionApiText>
             <Text size={2} label={t("OOProvidesOneAPIToConvert")} />

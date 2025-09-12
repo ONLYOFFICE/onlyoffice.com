@@ -7,8 +7,6 @@ import {
   StyledHeroContainer,
   StyledHeroWrapper,
   StyledHeroLeft,
-  StyledHeroLeftButtonGoogle,
-  StyledHeroLeftButtonAppGallery,
   StyledHeroLeftHeading,
   StyledHeroLeftImgWrapper,
   StyledHeroLeftImg,
@@ -21,6 +19,7 @@ import {
   StyledHeroLeftButtonsWrapper,
   StyledHeroFooterLink,
 } from "./Hero.styled";
+import { DownloadButton } from "@src/components/ui/DownloadButton";
 
 const Hero = () => {
   const { locale } = useRouter();
@@ -45,34 +44,47 @@ const Hero = () => {
               />
             </StyledHeroLeftHeading>
             <StyledHeroLeftButtonsWrapper $isZhLocale={locale === "zh"}>
-              <StyledHeroLeftButtonGoogle
-                $backgroundUrl={t("ButtonGoogleUrl")}
-                $isZhLocale={locale === "zh"}
-                as={"a"}
+              <DownloadButton
+                variant="secondary"
+                platform="google-play"
+                href={
+                  locale === "zh"
+                    ? "/zh/download-desktop#mobile"
+                    : "https://play.google.com/store/apps/details?id=com.onlyoffice.documents"
+                }
                 target="_blank"
-                href={locale === "zh" ? "/zh/download-desktop#mobile" : "https://play.google.com/store/apps/details?id=com.onlyoffice.documents"}
               />
-              <StyledHeroLeftButtonAppGallery
-                $backgroundUrl={t("ButtonAppGalleryUrl")}
-                as={"a"}
+              <DownloadButton
+                variant="secondary"
+                platform="app-gallery"
                 target="_blank"
                 href="https://appgallery.huawei.com/#/app/C102942717"
               />
+
               {locale === "zh" && (
-                <StyledHeroLeftButtonAppGallery
-                  $backgroundUrl="/images/templates/office-for-android/buttons/black-apk.svg"
-                  as={"a"}
-                  target="_blank"
+                <DownloadButton
+                  variant="secondary"
+                  platform="apk"
                   href="https://download.onlyoffice.com/install/mobile/android/onlyoffice-documents.apk"
+                  target="_blank"
                 />
               )}
             </StyledHeroLeftButtonsWrapper>
             <StyledHeroLeftImgWrapper>
-              <StyledHeroLeftImg $backgroundUrl={t("HeroLeftImageUrl")} $backgroundUrl2x={t("HeroLeftImageUrl2x")} />
+              <StyledHeroLeftImg
+                $backgroundUrl={t("HeroLeftImageUrl")}
+                $backgroundUrl2x={t("HeroLeftImageUrl2x")}
+              />
             </StyledHeroLeftImgWrapper>
           </StyledHeroLeft>
-          <StyledHeroRight $backgroundUrl={t("HeroRightImageUrl")} $backgroundUrl2x={t("HeroRightImageUrl2x")} />
-          <StyledHeroPhoneImgMob $backgroundUrl={t("HeroLeftImageUrl")} $backgroundUrl2x={t("HeroLeftImageUrl2x")} />
+          <StyledHeroRight
+            $backgroundUrl={t("HeroRightImageUrl")}
+            $backgroundUrl2x={t("HeroRightImageUrl2x")}
+          />
+          <StyledHeroPhoneImgMob
+            $backgroundUrl={t("HeroLeftImageUrl")}
+            $backgroundUrl2x={t("HeroLeftImageUrl2x")}
+          />
           <StyledHeroFooter>
             <StyledHeroFooterImg />
             <StyledHeroFooterHeading

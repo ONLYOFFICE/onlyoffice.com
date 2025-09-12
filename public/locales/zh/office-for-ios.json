@@ -3,7 +3,7 @@
   "PageDescription": "在iOS设备上编辑和共同编辑文档、电子表格和演示文稿。",
 
   "OnlyOfficeDocuments": "ONLYOFFICE文档，<br>适用于iPhone和iPad的<br><0>移动办公套件</0>",
-  "AbsolutelyFree": "完全<0>免费</0>。无广告。无应用内购买。",
+  "AbsolutelyFree": "<0>免费</0>、无广告、无隐性消费",
 
   "OneAppThreeEditors": "一个应用 - <0>三种编辑器</0> - 多样化功能",
   "CompatibleWithMSOffice": "与微软 Office格式高度兼容",
@@ -13,8 +13,6 @@
 
   "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/zh/hero-phone.png",
   "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/zh/hero-phone-2x.png",
-
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.zh.svg",
 
   "FeaturesItemHeadingFull": "功能齐全的文本处理器",
   "FeaturesItemTextMakeUse": "涵盖多个文本处理工具：页面、段落和文本格式、表格、自动形状、图表等。可创建任何大小和复杂程度的文本文档。通过AirPrint直接打印。",
@@ -75,7 +73,7 @@
   "ChooseItemFromOther": "从其他应用中",
   "ChooseItemImportDocuments": "从iTunes、文档等应用程序中导入文档。",
 
-  "GetMoreWithComplete": "下载移动网络完整版解锁更多功能",
+  "GetMoreWithComplete": "在移动网页版中使用更多功能",
   "WorkOnDocumentsWithin": "在移动浏览器中处理文档。进入ONLYOFFICE网站门户，即可使用更多文档编辑和协作处理工具。轻松从移动视图切换并在桌面模式下编辑文档。",
   "GetMoreImage": "/images/templates/office-for-ios/getMore/webversion.zh.png",
   "GetMoreImage2x": "/images/templates/office-for-ios/getMore/webversion.zh@2x.png",
@@ -83,9 +81,9 @@
   "LearnMoreHeading": "了解更多有关ONLYOFFICE文档iOS版的信息",
 
   "LearnCardTitleRelease": "发布新闻",
-  "LearnMoreTextMeet": "快来了解适用于iOS 端的ONLYOFFICE 文档 v7.2",
+  "LearnMoreTextMeet": "快来了解适用于iOS 端的ONLYOFFICE 文档 v9.0",
   "LearnMoreSubtitleRead": "阅读文章",
-  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/zh-hans/2022/10/onlyoffice-documents-v7-2-for-ios/",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/zh-hans/2025/07/onlyoffice-documents-v9-0-for-ios",
 
   "LearnCardTitleHints": "提示",
   "LearnMoreTextHandwriting": "ONLYOFFICE文档中的手写功能",

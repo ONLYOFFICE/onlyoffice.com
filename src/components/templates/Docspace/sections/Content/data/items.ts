@@ -27,7 +27,7 @@ const items = [
   {
     heading: "MarkdownFiles",
     imgUrl: "/images/templates/docspace/content/markdown-icon.svg",
-    href: "http://www.onlyoffice.com/app-directory/markdown",
+    href: "https://www.onlyoffice.com/app-directory/markdown",
   },
   {
     heading: "EBooks",
@@ -37,6 +37,11 @@ const items = [
   {
     heading: "Multimedia",
     imgUrl: "/images/templates/docspace/content/multimedia-icon.svg",
+  },
+  {
+    heading: "Diagrams",
+    imgUrl: "/images/templates/docspace/content/diagram-viewer-icon.svg",
+    href: "/diagram-viewer",
   },
 ];
 export { items };

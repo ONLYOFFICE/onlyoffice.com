@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Sammeln und analysieren Sie Antworten in Räumen zum Ausfüllen von Formularen",
+  "PageDescription": "Organisieren Sie das unkomplizierte Ausfüllen von Formularen für Ihre Projekte in ONLYOFFICE DocSpace",
+
+  "EasilyCollectAndAnalyze": "Erfassen und analysieren Sie Antworten in  <0>Räumen zum Ausfüllen von Formularen</0>",
+  "OrganizeStraightforwardFormFilling": "Organisieren Sie das unkomplizierte Ausfüllen von Formularen für Ihre Projekte in ONLYOFFICE DocSpace",
+
+  "EasyFormUploading": "Einfaches Hochladen von Formularen",
+  "QuickSharing": "Schnelle Freigabe",
+  "IntuitiveProcess": "Intuitiver Prozess des Ausfüllens von Formularen",
+  "ConvenientAnalyzing": "Bequeme Analyse der gesammelten Antworten",
+  "CostEffectiveForAnyBudget": "Kosteneffektiv für jedes Budget",
+
+  "CreateFreeAccount": "Kostenloses Konto erstellen",
+
+  "HeroImgUrl": "/images/templates/form-filling-rooms/hero/form-filling-rooms-video.png",
+  "HeroImgUrl2x": "/images/templates/form-filling-rooms/hero/form-filling-rooms-video@2x.png",
+
+  "EasyFormUploadingDesc": "Laden Sie fertige PDF-Formulare mit wenigen Klicks von Ihrem DocSpace oder Gerät in einen Raum hoch. Nutzen Sie die integrierte Vorlagenbibliothek und wählen Sie aus zahlreichen fertigen PDF-Vorlagen.",
+  "EasyFormUploadingUrl": "/images/templates/form-filling-rooms/features/de/easy.png",
+  "EasyFormUploadingUrl2x": "/images/templates/form-filling-rooms/features/de/easy@2x.png",
+
+  "QuickSharingDesc": "Laden Sie Ihre Kollegen und Teammitglieder in den Raum ein, um die hochgeladenen PDF-Formulare auszufüllen. Kopieren Sie einen öffentlichen Zugangslink, um den Raum für externe Teilnehmer freizugeben.",
+  "QuickSharingUrl": "/images/templates/form-filling-rooms/features/de/quick.png",
+  "QuickSharingUrl2x": "/images/templates/form-filling-rooms/features/de/quick@2x.png",
+
+  "IntuitiveProcessDesc": "Ein Kinderspiel für alle! Verwenden Sie die Schaltflächen \"Vorheriges Feld\" oder \"Nächstes Feld\", um zwischen den Feldern zu navigieren. Passen Sie bei Bedarf den Zoom, die Anpassung an die Seite oder die Breite an. Wenn Sie fertig sind, klicken Sie einfach auf die Schaltfläche \"Ausfüllen und Absenden\".",
+  "IntuitiveProcessUrl": "/images/templates/form-filling-rooms/features/de/intuitive.png",
+  "IntuitiveProcessUrl2x": "/images/templates/form-filling-rooms/features/de/intuitive@2x.png",
+
+  "ConvenientAnalyzingDesc": "Überprüfen Sie die ausgefüllten Formulare und analysieren Sie die Daten, die automatisch in einer Tabellenkalkulation gesammelt werden. Alles – in einem Raum.",
+  "ConvenientAnalyzingUrl": "/images/templates/form-filling-rooms/features/de/analyzing.png",
+  "ConvenientAnalyzingUrl2x": "/images/templates/form-filling-rooms/features/de/analyzing@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "Bezahlen Sie nur für Administratoren und fügen Sie eine beliebige Anzahl von regelmäßigen Nutzern und Gästen kostenlos hinzu. Profitieren Sie von einem kostenlosen Startup-Plan für kleine Teams. ONLYOFFICE DocSpace ist für alle Unternehmen geeignet, egal ob es sich um ein KMU oder ein großes Unternehmen handelt. Möchten Sie die volle Kontrolle über Ihre Unternehmensdaten haben? Installieren Sie DocSpace auf Ihrem privaten Server.",
+  "CostEffectiveForAnyBudgetUrl": "/images/templates/form-filling-rooms/features/de/cost-effective-for-any-budget.png",
+  "CostEffectiveForAnyBudgetUrl2x": "/images/templates/form-filling-rooms/features/de/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Erfahren Sie mehr über DocSpace-Räume zum Ausfüllen von Formularen",
+
+  "HelpCenter": "Hilfe-Center",
+  "HelpCenterDesc": "Prüfen Sie die Benutzeranleitungen für effektives Arbeiten",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "Mehr erfahren",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Beherrschen Sie ONLYOFFICE DocSpace mit Videoanleitungen",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Jetzt ansehen",
+
+  "CustomerTestimonial": "Erfahrungsbericht",
+  "HowKinderhausBerlinSharesAndCollaborates": "Wie das Kinderhaus Berlin mit ONLYOFFICE DocSpace schützenswerte Dateien teilt und gemeinsam bearbeitet",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Bericht lesen "
+}

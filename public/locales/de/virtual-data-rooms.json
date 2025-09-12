@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Nutzen Sie virtuelle Datenräume für erweiterte Dateisicherheit und Transparenz",
+  "PageDescription": "Organisieren Sie die sichere Speicherung und den Austausch vertraulicher Geschäftsinformationen in ONLYOFFICE DocSpace",
+
+  "UseVirtualDataRooms": "Nutzen Sie <0>virtuelle Datenräume</0> für erweiterte Dateisicherheit und Transparenz",
+  "OrganizeSecure": "Organisieren Sie die sichere Speicherung und den Austausch vertraulicher Geschäftsinformationen in ONLYOFFICE DocSpace",
+
+  "IdealForDueDiligence": "Ideal für Due-Diligence-Prüfungen",
+  "CompletelyOrganized": "Komplett organisiert",
+  "HighLevelOfDataSecurity": "Hohe Datensicherheit",
+  "AdvancedRoleBased": "Erweiterte rollenbasierte Formularausfüllung",
+  "CostEffectiveForAnyBudget": "Kosteneffektiv für jedes Budget",
+
+  "CreateFreeAccount": "Kostenloses Konto erstellen",
+
+  "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
+  "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
+
+  "IdealForDueDiligenceDesc": "Nutzen Sie VDR für Due-Diligence-Prüfungen, bei Fusionen, bei der Arbeit an einem Projekt mit anderen Unternehmen oder bei anderen Joint Ventures, die den Zugriff auf gemeinsame Daten erfordern.",
+  "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/de/ideal.png",
+  "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/de/ideal@2x.png",
+
+  "CompletelyOrganizedDesc": "Indizieren und verfolgen Sie automatisch alle Inhalte, um gute Aufzeichnungen zu führen und den Überblick zu behalten. Erstellen Sie einen zusammenfassenden Bericht über die Dateistruktur des Raums.",
+  "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/de/organized.png",
+  "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/de/organized@2x.png",
+
+  "HighLevelOfDataSecurityDesc": "Aktivieren Sie Wasserzeichen, legen Sie die Dateilebensdauer fest und schränken Sie das Herunterladen und Kopieren ein, um Ihre vertraulichen Daten zu schützen.",
+  "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/de/security.png",
+  "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/de/security@2x.png",
+
+  "AdvancedRoleBasedText": "Laden Sie Ihr Team ein und weisen Sie Rollen zu, die perfekt zur Organisationsstruktur Ihres Unternehmens passen. Verfolgen Sie den Fortschritt der Formulare in Echtzeit. Sehen Sie einfach abgeschlossene und ausstehende Formulare ein, finalisieren Sie sie und rufen Sie fertige Versionen für einen reibungslosen Prozess ab.",
+  "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/de/advanced.png",
+  "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/de/advanced@2x.png",
+
+  "CostEffectiveForAnyBudgetDesc": "Bezahlen Sie nur für Administratoren und fügen Sie eine beliebige Anzahl von regelmäßigen Nutzern und Gästen kostenlos hinzu. Profitieren Sie von einem kostenlosen Startup-Plan für kleine Teams. ONLYOFFICE DocSpace ist für alle Unternehmen geeignet, egal ob es sich um ein KMU oder ein großes Unternehmen handelt. Möchten Sie die volle Kontrolle über Ihre Unternehmensdaten haben? Installieren Sie DocSpace auf Ihrem privaten Server.",
+  "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/de/cost-effective-for-any-budget.png",
+  "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/de/cost-effective-for-any-budget@2x.png",
+
+  "LearnMoreHeading": "Erfahren Sie mehr über virtuelle Datenräume in DocSpace",
+
+  "HelpCenter": "Hilfezentrum",
+  "HelpCenterDesc": "Lesen Sie detaillierte Benutzerhandbücher für effektives Arbeiten",
+  "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
+  "LearnMore": "Mehr erfahren",
+
+  "YouTube": "YouTube",
+  "MasterONLYOFFICEDocSpace": "Meistern Sie ONLYOFFICE DocSpace mit Videoanleitungen",
+  "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
+  "WatchNow": "Jetzt ansehen",
+
+  "CustomerTestimonial": "Kundenbewertung",
+  "HowKinderhausBerlinSharesAndCollaborates": "Wie Kinderhaus Berlin sensible Dateien mit ONLYOFFICE DocSpace teilt und zusammenarbeitet",
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
+  "ReadStory": "Geschichte lesen"
+}

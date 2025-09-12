@@ -71,7 +71,7 @@ const HowToStart = ({ activeTab }: IHowToStart) => {
                 />,
                 <Link
                   key={1}
-                  href="https://helpcenter.onlyoffice.com/integration/pipedrive.aspx"
+                  href={t("ReadDetailedInstructionsLink")}
                   target="_blank"
                   color="main"
                   textUnderline

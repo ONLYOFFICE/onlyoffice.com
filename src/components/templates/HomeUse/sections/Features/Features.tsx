@@ -54,10 +54,8 @@ const Features = () => {
                   isChineseLocale && button.platform === "google-play"
                     ? "/download-desktop#mobile"
                     : button.href,
-                label: t(button.label),
                 platform: button.platform,
                 variant: button.variant,
-                imageSrc: t(button.imageSrc),
               }))}
               links={item.links?.map((link) => ({
                 href: link.href,

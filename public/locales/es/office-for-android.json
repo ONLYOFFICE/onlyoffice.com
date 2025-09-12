@@ -7,9 +7,6 @@
   "OneAppForYourText": "Una aplicación para tus documentos de texto, hojas de cálculo, presentaciones, formularios y archivos multimedia",
   "CompatibleWithMSOffice": "100% compatible con formatos de MS Office",
 
-  "ButtonGoogleUrl": "/images/templates/office-for-android/buttons/googleplay.es.png",
-  "ButtonAppGalleryUrl": "/images/templates/office-for-android/buttons/huawei-appgallery-es.svg",
-
   "AnOptionToConsider": "Una opción para tener en cuenta si necesitas alternativas a Office o Google Docs.",
   "EliesGuzman": "Elies Guzmán",
   "Malavida": "Malavida",
@@ -17,7 +14,7 @@
   "FeaturesItemHeadingFull": "Editor de documento",
   "FeaturesItemTextMakeUse": "Trabaja con documentos de texto de todos los formatos populares. Formatea el texto y establece el diseño de la página. Inserta enlaces, imágenes, tablas. Imprime tus documentos desde la app.",
 
-  "FeaturesItemHeadingComplete": "Editor de Hojas de Cálculo",
+  "FeaturesItemHeadingComplete": "Editor de hojas de cálculo",
   "FeaturesItemTextManage": "Crea, ve y edita hojas de cálculo en tu dispositivo. Trabaja con filas y columnas, ajusta los parámetros de las celdas, utiliza más de 450 fórmulas, clasifica y filtra los datos.",
 
   "FeaturesItemHeadingCollaborative": "Editor de presentaciones",
@@ -40,7 +37,7 @@
   "ChooseItemViewAndEdit": "Ve y edita documentos de texto, hojas de cálculo y presentaciones. Gestiona archivos PDF, imágenes y videos en tu dispositivo Android.",
 
   "ChooseItemInOnlyOffice": "En la nube ONLYOFFICE",
-  "ChooseItemLogInTo": "Accede a la nuve de ONLYOFFICE para compartir y colaborar en documentos con tu equipo en tiempo real. Conéctate a Dropbox, Google Drive, Box y otros servicios en la nube para coeditar los documentos almacenados allí.",
+  "ChooseItemLogInTo": "Accede a la nube ONLYOFFICE para compartir y colaborar en documentos con tu equipo en tiempo real. Conéctate a Dropbox, Google Drive, Box y otros servicios en la nube para coeditar los documentos almacenados allí.",
 
   "ChooseItemInYourCloud": "En la nube de tu elección",
   "ChooseItemConnectNextcloud": "Conéctate a Nextcloud, ownCloud o cualquier otra nube trabajando a través de WebDAV. Gestiona, visualiza y edita documentos directamente desde la app.",

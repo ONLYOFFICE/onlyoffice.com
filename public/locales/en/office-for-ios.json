@@ -14,8 +14,6 @@
   "HeroImageLeftUrl": "/images/templates/office-for-ios/hero/en/hero-phone.png",
   "HeroImageLeftUrl2x": "/images/templates/office-for-ios/hero/en/hero-phone-2x.png",
 
-  "HeroButtonBackgroundUrl": "/images/templates/office-for-ios/buttons/appstore.svg",
-
   "FeaturesItemHeadingFull": "Full-featured text processor",
   "FeaturesItemTextMakeUse": "Make use of multiple text processing tools : page, paragraph and text formatting, tables, autoshapes, charts, etc. Create text documents of any size and complexity. Print them via AirPrint.",
   "FeaturesItemTablet1Bg": "/images/templates/office-for-ios/features/en/img-tablet-1.png",
@@ -31,7 +29,7 @@
   "FeaturesItemMobile2Bg2x": "/images/templates/office-for-ios/features/en/img-mobile2x-2.png",
 
   "FeaturesItemHeadingCollaborative": "Collaborative presentation editor",
-  "FeaturesItemTextMakeWork": "Work with all popular objects on your slides: insert images, add and edit autoshapes, charts and graphs, texts and other Featuresitems.",
+  "FeaturesItemTextMakeWork": "Work with all popular objects on your slides: insert images, add and edit autoshapes, charts and graphs, texts and other items.",
   "FeaturesItemTablet3Bg": "/images/templates/office-for-ios/features/en/img-tablet-3.png",
   "FeaturesItemTablet3Bg2x": "/images/templates/office-for-ios/features/en/img-tablet2x-3.png",
   "FeaturesItemMobile3Bg": "/images/templates/office-for-ios/features/en/img-mobile-3.png",
@@ -83,9 +81,9 @@
   "LearnMoreHeading": "Learn more about ONLYOFFICE Documents for iOS",
 
   "LearnCardTitleRelease": "Release notes",
-  "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v7.2 for iOS",
+  "LearnMoreTextMeet": "Meet ONLYOFFICE Documents v9.0 for iOS",
   "LearnMoreSubtitleRead": "Read story",
-  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/2022/10/onlyoffice-documents-v7-2-for-ios",
+  "LearnMoreUrlLink1": "https://www.onlyoffice.com/blog/2025/07/onlyoffice-documents-v9-0-for-ios",
 
   "LearnCardTitleHints": "Hints",
   "LearnMoreTextHandwriting": "Handwriting in ONLYOFFICE Documents",

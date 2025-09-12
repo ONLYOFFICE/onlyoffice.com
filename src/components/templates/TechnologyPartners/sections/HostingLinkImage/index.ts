@@ -1,0 +1,1 @@
+export { HostingLinkImage } from "./LinkImage";

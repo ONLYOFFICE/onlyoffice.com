@@ -39,6 +39,7 @@
   "HowToStartStep3": "Configure the connector and enable JWT.",
 
   "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/sharepoint.aspx",
 
   "LearnMoreHeading": "Learn more about SharePoint ONLYOFFICE integration",
   "Video": "Video",
@@ -49,6 +50,7 @@
   "CompareLink": "Learn more",
   "HelpCenter": "Help Center",
   "HelpCenterDesc": "How to connect ONLYOFFICE Docs with SharePoint over WOPI.",
+  "HelpCenterLinkUrl": "https://helpcenter.onlyoffice.com/integration/sharepoint.aspx#WOPI_block",
   "HelpCenterLink": "Read now",
 
   "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
