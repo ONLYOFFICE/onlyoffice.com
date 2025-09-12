@@ -5,6 +5,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   background-color: #f5f5f5;
   @media ${device.mobile} {
@@ -85,7 +86,7 @@ const StyledPageDescription = styled(Text)`
 `;
 
 const StyledImage = styled.div`
-  background-image: url("/images/templates/accessibility/hero/hero.svg");
+  background-image: url(${getAssetUrl('/images/templates/accessibility/hero/hero.svg')});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

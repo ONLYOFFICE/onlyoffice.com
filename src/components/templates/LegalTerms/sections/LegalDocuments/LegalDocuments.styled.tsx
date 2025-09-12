@@ -4,6 +4,7 @@ import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContainer = styled(Container)`
   width: 100%;
   max-width: 1050px;
@@ -60,7 +61,7 @@ const StyledOpenSourceLink = styled(Link)`
   gap: 5px;
 
   &:before {
-    background-image: url("/images/icons/open-source.png");
+    background-image: url(${getAssetUrl('/images/icons/open-source.png')});
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

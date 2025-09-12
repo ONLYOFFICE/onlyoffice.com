@@ -4,6 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCardsFiltersWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -27,7 +28,7 @@ const StyledCardsRefineHeading = styled(Heading)<{
     content: "";
     width: 24px;
     height: 100%;
-    background-image: url("/images/icons/chevron-down.svg");
+    background-image: url(${getAssetUrl('/images/icons/chevron-down.svg')});
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -149,7 +150,7 @@ const StyledCardsHeading = styled(Heading)`
 const StyledCardsFilterMobIcon = styled.div`
   width: 24px;
   height: 24px;
-  background-image: url("/images/icons/filter.svg");
+  background-image: url(${getAssetUrl('/images/icons/filter.svg')});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -234,7 +235,7 @@ const StyledCardsFilterMobHeading = styled(Heading)`
 const StyledCardsFilterMobCloseBtn = styled.div`
   width: 24px;
   height: 24px;
-  background-image: url("/images/icons/cross.svg");
+  background-image: url(${getAssetUrl('/images/icons/cross.svg')});
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -294,7 +295,7 @@ const StyledCardsMobDateOption = styled.div<{
     width: 22px;
     height: 22px;
     background-color: ${({ $isActive }) => ($isActive ? "#8BB825" : "#E2E2E2")};
-    background-image: ${({ $isActive }) => ($isActive ? "url(/images/icons/check-white.svg)" : "")};
+    background-image: ${({ $isActive }) => ($isActive ? `url(${getAssetUrl('/images/icons/check-white.svg')})` : "")};
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

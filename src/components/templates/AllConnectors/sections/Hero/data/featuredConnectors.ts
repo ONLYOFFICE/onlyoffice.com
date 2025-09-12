@@ -1,10 +1,11 @@
 import { IFeatureConnectorCard } from "../sub-components/FeatureConnectorCard";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const featuredConnectors: IFeatureConnectorCard[] = [
   {
     url: "/office-for-trello",
     image: {
-      url: "/images/templates/all-connectors/featured-connectors/trello.svg",
+      url: getAssetUrl("/images/templates/all-connectors/featured-connectors/trello.svg"),
       bgColor: "#253858",
     },
     heading: "Trello",
@@ -14,7 +15,7 @@ export const featuredConnectors: IFeatureConnectorCard[] = [
   {
     url: "/office-for-odoo",
     image: {
-      url: "/images/templates/all-connectors/featured-connectors/odoo.svg",
+      url: getAssetUrl("/images/templates/all-connectors/featured-connectors/odoo.svg"),
       bgColor: "#efefef",
     },
     heading: "Odoo",
@@ -23,7 +24,7 @@ export const featuredConnectors: IFeatureConnectorCard[] = [
   {
     url: "/office-for-moodle",
     image: {
-      url: "/images/templates/all-connectors/featured-connectors/moodle.svg",
+      url: getAssetUrl("/images/templates/all-connectors/featured-connectors/moodle.svg"),
       bgColor: "#f5f5f5",
     },
     heading: "Moodle",
@@ -32,7 +33,7 @@ export const featuredConnectors: IFeatureConnectorCard[] = [
   {
     url: "/office-for-monday",
     image: {
-      url: "/images/templates/all-connectors/featured-connectors/monday.svg",
+      url: getAssetUrl("/images/templates/all-connectors/featured-connectors/monday.svg"),
       bgColor: "#f9f9f9",
     },
     heading: "monday",
@@ -42,7 +43,7 @@ export const featuredConnectors: IFeatureConnectorCard[] = [
   {
     url: "/office-for-pipedrive",
     image: {
-      url: "/images/templates/all-connectors/featured-connectors/pipedrive.svg",
+      url: getAssetUrl("/images/templates/all-connectors/featured-connectors/pipedrive.svg"),
       bgColor: "#017737",
     },
     heading: "Pipedrive",

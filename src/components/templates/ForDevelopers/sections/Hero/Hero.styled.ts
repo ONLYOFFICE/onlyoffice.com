@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
   background-repeat: no-repeat;
@@ -78,7 +79,7 @@ const StyledHeroSubheading = styled(Heading)`
 
 const StyledHeroImage = styled.div`
   padding-bottom: 75.71%;
-  background-image: url("/images/templates/for-developers/hero/hero_image.svg");
+  background-image: url(${getAssetUrl('/images/templates/for-developers/hero/hero_image.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

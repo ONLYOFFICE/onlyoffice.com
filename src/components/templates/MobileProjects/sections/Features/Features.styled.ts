@@ -4,6 +4,7 @@ import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledList = styled.ul`
   list-style: none;
   padding: 32px 0 40px;
@@ -57,7 +58,7 @@ const StyledImageContent = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
 `;
 
 const StyledIcon = styled.div<{ $positionX: string }>`
-  background-image: url("/images/templates/mobile-projects/features/icons.svg");
+  background-image: url(${getAssetUrl('/images/templates/mobile-projects/features/icons.svg')});
   background-size: 432px 48px;
   width: 48px;
   height: 48px;

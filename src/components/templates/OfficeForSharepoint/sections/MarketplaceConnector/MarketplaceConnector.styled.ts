@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background-color: #0a1e2c;
   overflow: hidden;
@@ -13,7 +14,7 @@ const StyledMarketplaceConnector = styled.section`
     right: calc(50% - 621px);
     width: 691px;
     height: 678px;
-    background-image: url("/images/templates/office-for-sharepoint/marketplace-connector/bg.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-sharepoint/marketplace-connector/bg.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateY(-50%);
@@ -59,7 +60,7 @@ const StyledMarketplaceConnectorImg = styled.div`
   width: 100%;
   max-width: 328px;
   height: 100%;
-  background-image: url("/images/templates/office-for-sharepoint/marketplace-connector/apps.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-sharepoint/marketplace-connector/apps.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

@@ -4,8 +4,9 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledGetAccessSection = styled(Section)`
-  background: url("/images/templates/nonprofit-organizations/get-access/bg.png"), linear-gradient(162.82deg, #FFC671 0%, #FF7541 64.06%, #FF6F3D 100%);
+  background: url(${getAssetUrl('/images/templates/nonprofit-organizations/get-access/bg.png')}), linear-gradient(162.82deg, #FFC671 0%, #FF7541 64.06%, #FF6F3D 100%);
   background-size: 2210px auto;
   background-position: 50% 70%;
   background-repeat: no-repeat;
@@ -14,7 +15,7 @@ const StyledGetAccessSection = styled(Section)`
 const StyledGetAccessIcon = styled.div`
   width: 152px;
   height: 75px;
-  background: url("/images/templates/nonprofit-organizations/get-access/icon.svg");
+  background: url(${getAssetUrl('/images/templates/nonprofit-organizations/get-access/icon.svg')});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,5 +1,6 @@
 import { IFeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IFeatureImageItemExtended extends IFeatureImageItem {
   text: string[];
 }
@@ -13,7 +14,7 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
       "AdditionallyItIsPossible",
     ],
     image: {
-      url: "/images/templates/security/compliance/sec_gray_imgs.svg",
+      url: getAssetUrl("/images/templates/security/compliance/sec_gray_imgs.svg"),
     },
     links: [
       {
@@ -30,7 +31,7 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
       "CurrentlyWeHave",
     ],
     image: {
-      url: "/images/templates/security/compliance/sec_gray_imgs.svg",
+      url: getAssetUrl("/images/templates/security/compliance/sec_gray_imgs.svg"),
     },
     links: [
       {
@@ -47,7 +48,7 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
       "UsersOfYourPrivate",
     ],
     image: {
-      url: "/images/templates/security/compliance/sec_gray_imgs.svg",
+      url: getAssetUrl("/images/templates/security/compliance/sec_gray_imgs.svg"),
     },
     links: [
       {
@@ -70,7 +71,7 @@ interface IFeatureImageItemExtended extends IFeatureImageItem {
       "AuditTrail",
     ],
     image: {
-      url: "/images/templates/security/compliance/sec_gray_imgs.svg",
+      url: getAssetUrl("/images/templates/security/compliance/sec_gray_imgs.svg"),
     },
   },
 ];

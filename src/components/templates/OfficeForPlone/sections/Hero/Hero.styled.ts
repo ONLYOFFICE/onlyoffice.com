@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #f5f5f5;
-  background-image: url("/images/templates/office-for-plone/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-plone/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: calc(50% - 40px) -321px;
   background-size: 2053px 1853px;
@@ -37,7 +38,7 @@ export const StyledHeroWrapper = styled.div`
 export const StyledHeroLogo = styled.div`
   width: 58px;
   height: 58px;
-  background: url("/images/templates/office-for-plone/hero/logo.svg") no-repeat
+  background: url(${getAssetUrl('/images/templates/office-for-plone/hero/logo.svg')}) no-repeat
     center;
   background-size: contain;
 `;

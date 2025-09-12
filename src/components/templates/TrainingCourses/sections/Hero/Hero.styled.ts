@@ -3,11 +3,12 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("/images/templates/training-courses/hero/cloud.svg");
+  background-image: url(${getAssetUrl('/images/templates/training-courses/hero/cloud.svg')});
   background-size: 917px 294px;
   background-repeat: no-repeat;
   background-position: 200px 10px;

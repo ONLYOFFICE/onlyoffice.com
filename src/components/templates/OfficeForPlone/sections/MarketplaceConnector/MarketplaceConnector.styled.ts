@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   background-color: #006c9d;
   overflow: hidden;
@@ -13,7 +14,7 @@ const StyledMarketplaceConnector = styled.section`
     right: calc(50% - 899px);
     width: 1150px;
     height: 1151px;
-    background-image: url("/images/templates/office-for-plone/marketplace-connector/bg.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-plone/marketplace-connector/bg.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateY(-50%);
@@ -73,7 +74,7 @@ const StyledMarketplaceConnectorBody = styled.div`
 const StyledMarketplaceConnectorImg = styled.div`
   width: 544px;
   height: 100%;
-  background-image: url("/images/templates/office-for-plone/marketplace-connector/apps.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-plone/marketplace-connector/apps.svg')});
   background-repeat: no-repeat;
   background-position: center;
   z-index: 1;

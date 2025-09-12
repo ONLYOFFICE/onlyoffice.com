@@ -1,4 +1,5 @@
 import { Trans, useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledFCHeading,
   StyledFCContent,
@@ -42,7 +43,7 @@ const FlexibleChoice = () => {
               heading={t(group.heading)}
               postheading={t(group.postheading)}
               image={{
-                url: t(group.image.url),
+                url: getAssetUrl(t(group.image.url)),
                 height: 544,
                 width: group.image.width
               }}

@@ -2,8 +2,8 @@
   "PageTitle": "适用于Redmine的在线办公套件 | ONLYOFFICE Docs",
   "PageDescription": "在Redmine中编辑和共同编辑文档",
 
-  "OnlineOfficeForConnector": "在线办公室对<0>Redmine</0>",
-  "Subheader": "使用ONLYOFFICE Docs在Redmine内查看、编辑和协作办公文件。",
+  "OnlineOfficeForConnector": "适用于<0>Redmine</0>的在线办公套件",
+  "Subheader": "在Redmine中使用ONLYOFFICE 文档，查看、编辑和协作办公文件。",
   "GetStarted": "开始使用",
   "FullyCompatibleWithDocxXlsxAndPptx": "兼容docx、xlsx、pptx。",
 
@@ -26,12 +26,12 @@
   "MarketplaceConnectorDescription": "立即从 <0>Redmine 插件目录</0>获取用于 Redmine 的 ONLYOFFICE 连接器",
   "GetItNow": "立即获取",
 
-  "WhyOO": "为什么选择ONLYOFFICE Docs",
-  "WhySubheader": "ONLYOFFICE Docs是自托管的办公套件，用于处理文本文档、电子表格、演示文稿和表单。",
+  "WhyOO": "为什么选择 ONLYOFFICE 文档",
+  "WhySubheader": "ONLYOFFICE文档是一个自托管的办公套件，用于处理文本文档、电子表格、演示文稿和表单。",
   "Reason1": "随时可以使用的集成插件",
   "Reason2": "易于安装和快速配置",
   "Reason3": "在问题、文件、文档、维基、新闻模块中处理文件",
-  "Reason4": "带有标签的直观界面",
+  "Reason4": "选项卡式直观界面",
   "Reason5": "多种编辑、格式化和风格化工具",
   "Reason6": "实时协作，跟踪修改，评论，聊天",
   "Reason7": "免费社区版和可<0>扩展的企业版</0>",

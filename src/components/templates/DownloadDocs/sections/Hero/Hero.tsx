@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroSection,
   StyledHeroDescription,
@@ -60,6 +61,7 @@ const Hero = ({
     from,
     country,
     region,
+    hCaptchaResponse,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/download-docs", {
       method: "POST",
@@ -78,6 +80,7 @@ const Hero = ({
         from,
         country,
         region,
+        hCaptchaResponse,
       }),
     }).then((res) => res.json());
   };
@@ -99,7 +102,7 @@ const Hero = ({
             button: {
               id: "docs-enterprise",
               icon: {
-                url: "/images/templates/download-docs/hero/icons.svg",
+                url: getAssetUrl("/images/templates/download-docs/hero/icons.svg"),
               },
               label: t("Enterprise"),
             },
@@ -131,7 +134,9 @@ const Hero = ({
                       {...item}
                       readInstructionLink={
                         item.readInstructionLink
-                          ? t(item.readInstructionLink, { defaultValue: item.readInstructionLink })
+                          ? t(item.readInstructionLink, {
+                              defaultValue: item.readInstructionLink,
+                            })
                           : undefined
                       }
                       heading={t(item.heading)}
@@ -165,7 +170,7 @@ const Hero = ({
             button: {
               id: "docs-developer",
               icon: {
-                url: "/images/templates/download-docs/hero/icons.svg",
+                url: getAssetUrl("/images/templates/download-docs/hero/icons.svg"),
                 positionX: "-88px",
               },
               label: t("Developer"),
@@ -241,7 +246,7 @@ const Hero = ({
             button: {
               id: "docs-community",
               icon: {
-                url: "/images/templates/download-docs/hero/icons.svg",
+                url: getAssetUrl("/images/templates/download-docs/hero/icons.svg"),
                 positionX: "-176px",
               },
               label: t("Community"),
@@ -396,6 +401,7 @@ const Hero = ({
         onClose={() => setIsModalOpen(false)}
         onSubmitRequest={onSubmitRequest}
         buttonAction={buttonAction}
+        pageTrackName={formData.buttonId}
       />
     </>
   );

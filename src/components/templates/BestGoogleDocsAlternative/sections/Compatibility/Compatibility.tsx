@@ -3,6 +3,7 @@ import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 import { BestAlternativeCompatibility } from "@src/components/modules/best-alternative/BestAlternativeCompatibility";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Compatibility = () => {
   const { t } = useTranslation("best-google-docs-alternative");
 
@@ -11,7 +12,7 @@ const Compatibility = () => {
       alternative={{
         label: "Google Docs",
         logo: {
-          src: "/images/templates/best-google-docs-alternative/compatibility/logo_google_docs.svg",
+          src: getAssetUrl("/images/templates/best-google-docs-alternative/compatibility/logo_google_docs.svg"),
         },
       }}
       items={items}

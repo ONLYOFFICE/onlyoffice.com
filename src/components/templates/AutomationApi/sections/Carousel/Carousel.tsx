@@ -8,6 +8,7 @@ import { Link } from "@src/components/ui/Link";
 import { ImageCarousel } from "@src/components/modules/connectors/ImageCarousel";
 import { items } from "./data/items";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Carousel = () => {
   const { t } = useTranslation("automation-api");
 
@@ -27,7 +28,7 @@ const Carousel = () => {
             imageHeight={575}
             items={items.map((item) => ({
               image: {
-                url: t(item.image.url),
+                url: getAssetUrl(t(item.image.url)),
                 url2x: item.image.url2x ? t(item.image.url2x) : undefined,
               },
             }))}

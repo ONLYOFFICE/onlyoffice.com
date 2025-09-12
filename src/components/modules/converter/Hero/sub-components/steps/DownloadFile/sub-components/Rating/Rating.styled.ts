@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledRating = styled.div`
   display: flex;
   align-items: center;
@@ -21,7 +22,7 @@ const StyledRatingStars = styled.ul<{
   position: relative;
   display: flex;
   margin: 0 10px;
-  background-image: url("/images/modules/converter/hero/stars-empty.svg");
+  background-image: url(${getAssetUrl('/images/modules/converter/hero/stars-empty.svg')});
   background-repeat: no-repeat;
   pointer-events: ${(props) => props.$hasVoted && "none"};
 
@@ -32,7 +33,7 @@ const StyledRatingStars = styled.ul<{
     left: 0;
     width: ${(props) => (props.$hover > 0 ? props.$hover : props.$value)}%;
     height: 100%;
-    background-image: url("/images/modules/converter/hero/stars-full.svg");
+    background-image: url(${getAssetUrl('/images/modules/converter/hero/stars-full.svg')});
     background-repeat: no-repeat;
     pointer-events: none;
   }

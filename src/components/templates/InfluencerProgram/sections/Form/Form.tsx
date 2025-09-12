@@ -18,42 +18,36 @@ import { TextArea } from "@src/components/ui/TextArea";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Link } from "@src/components/ui/Link";
 import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
-
-interface IInitialFormData {
-  fullName: string;
-  email: string;
-  link: string;
-  moreDetails: string;
-  hCaptcha: string | null;
-}
+import { IInitialformData } from "./Form.types";
 
 const Form = () => {
   const { t } = useTranslation("influencer-program");
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
 
-  const initialFormData: IInitialFormData = {
+  const initialformData: IInitialformData = {
+    fromPage: "influencer-program-request",
     fullName: "",
     email: "",
     link: "",
     moreDetails: "",
     hCaptcha: null,
+    errorText: "",
   };
 
   const [formStatus, setFormStatus] =
     useState<ILoaderButton["status"]>("default");
-  const [quoteFormData, setQuoteFormData] = useState(initialFormData);
+  const [formData, setFormData] = useState(initialformData);
   const [isFormValid, setIsFormValid] = useState(false);
 
   const isFullNameValid =
-    quoteFormData.fullName.length > 0 &&
-    validateFullName(quoteFormData.fullName);
+    formData.fullName.length > 0 && validateFullName(formData.fullName);
   const isEmailValid =
-    quoteFormData.email.length > 0 && validateEmail(quoteFormData.email);
-  const isLinkValid = quoteFormData.link.length > 0;
-  const isMoreDetailsValid = quoteFormData.moreDetails.length > 0;
+    formData.email.length > 0 && validateEmail(formData.email);
+  const isLinkValid = formData.link.length > 0;
+  const isMoreDetailsValid = formData.moreDetails.length > 0;
 
   const handleRecaptchaChange = (token: string | null) => {
-    setQuoteFormData((prevData) => ({
+    setFormData((prevData) => ({
       ...prevData,
       hCaptcha: token,
     }));
@@ -75,7 +69,7 @@ const Form = () => {
   });
 
   const handleInputChange = (field: string, value: string) => {
-    setQuoteFormData((prevData) => ({
+    setFormData((prevData) => ({
       ...prevData,
       [field]: value,
     }));
@@ -91,12 +85,12 @@ const Form = () => {
         isEmailValid &&
         isLinkValid &&
         isMoreDetailsValid &&
-        !!quoteFormData.hCaptcha,
+        !!formData.hCaptcha,
     );
   };
 
   const clearData = () => {
-    setQuoteFormData(initialFormData);
+    setFormData(initialformData);
     setFormStatus("default");
     hCaptchaRef.current?.resetCaptcha();
   };
@@ -118,29 +112,29 @@ const Form = () => {
     setFormStatus("loading");
 
     try {
-      const hCaptchaResponse = await fetch("/api/hcaptcha-verify", {
+      const formResponse = await fetch("/api/influencer-program-request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ token: quoteFormData.hCaptcha }),
+        body: JSON.stringify(formData),
       });
+      const responseFormData = await formResponse.json();
+      if (responseFormData.status === "success") {
+        setFormStatus("success");
 
-      const hCaptchaData = await hCaptchaResponse.json();
-
-      if (hCaptchaData.status === "errorhCaptchaInvalid") {
+        setTimeout(() => {
+          clearData();
+        }, 5000);
+      } else {
         setFormStatus("error");
+        setFormData((prevData) => ({
+          ...prevData,
+          errorText: responseFormData.message || "error",
+        }));
         setTimeout(() => {
           setFormStatus("default");
+          clearData();
         }, 5000);
-        return;
       }
-
-      setTimeout(() => {
-        setFormStatus("success"); // change status after request
-      }, 3000);
-
-      setTimeout(() => {
-        setFormStatus("default");
-      }, 5000);
     } catch (error) {
       console.error(error);
     }
@@ -170,17 +164,17 @@ const Form = () => {
               onBlur={() => {
                 setIsEmpty((prev) => ({
                   ...prev,
-                  fullName: quoteFormData.fullName.length === 0,
+                  fullName: formData.fullName.length === 0,
                 }));
                 checkFormValid();
               }}
-              value={quoteFormData.fullName}
+              value={formData.fullName}
               label={t("FullName")}
               placeholder={t("NameSurname")}
               caption={
-                quoteFormData.fullName.length === 0
+                formData.fullName.length === 0
                   ? t("FullNameIsEmpty")
-                  : !validateFullName(quoteFormData.fullName)
+                  : !validateFullName(formData.fullName)
                     ? t("FullNameIsIncorrect")
                     : ""
               }
@@ -188,8 +182,8 @@ const Form = () => {
               status={
                 isEmpty.fullName
                   ? "error"
-                  : quoteFormData.fullName.length > 0
-                    ? validateFullName(quoteFormData.fullName)
+                  : formData.fullName.length > 0
+                    ? validateFullName(formData.fullName)
                       ? "success"
                       : "error"
                     : "default"
@@ -201,17 +195,17 @@ const Form = () => {
               onBlur={() => {
                 setIsEmpty((prev) => ({
                   ...prev,
-                  email: quoteFormData.email.length === 0,
+                  email: formData.email.length === 0,
                 }));
                 checkFormValid();
               }}
-              value={quoteFormData.email}
+              value={formData.email}
               label={t("Email")}
               placeholder={t("Name")}
               caption={
-                quoteFormData.email.length === 0
+                formData.email.length === 0
                   ? t("EmailIsEmpty")
-                  : !validateEmail(quoteFormData.email)
+                  : !validateEmail(formData.email)
                     ? t("EmailIsIncorrect")
                     : ""
               }
@@ -219,8 +213,8 @@ const Form = () => {
               status={
                 isEmpty.email
                   ? "error"
-                  : quoteFormData.email.length > 0
-                    ? validateEmail(quoteFormData.email)
+                  : formData.email.length > 0
+                    ? validateEmail(formData.email)
                       ? "success"
                       : "error"
                     : "default"
@@ -232,20 +226,16 @@ const Form = () => {
               onBlur={() => {
                 setIsEmpty((prev) => ({
                   ...prev,
-                  link: quoteFormData.link.length === 0,
+                  link: formData.link.length === 0,
                 }));
                 checkFormValid();
               }}
-              value={quoteFormData.link}
+              value={formData.link}
               label={t("Link")}
               caption={t("SiteURL")}
               required
               status={
-                isEmpty.link
-                  ? "error"
-                  : quoteFormData.link
-                    ? "success"
-                    : "default"
+                isEmpty.link ? "error" : formData.link ? "success" : "default"
               }
             />
 
@@ -257,17 +247,17 @@ const Form = () => {
                 onBlur={() => {
                   setIsEmpty((prev) => ({
                     ...prev,
-                    moreDetails: quoteFormData.moreDetails.length === 0,
+                    moreDetails: formData.moreDetails.length === 0,
                   }));
                   checkFormValid();
                 }}
-                value={quoteFormData.moreDetails}
+                value={formData.moreDetails}
                 label={t("MoreDetails")}
                 required
                 status={
                   isEmpty.moreDetails
                     ? "default"
-                    : quoteFormData.moreDetails
+                    : formData.moreDetails
                       ? "success"
                       : "default"
                 }
@@ -320,7 +310,9 @@ const Form = () => {
             label={
               formStatus === "success"
                 ? t("SuccessfullyRequestText")
-                : t("ErrorRequestText")
+                : formStatus === "error"
+                  ? t("ErrorRequestText")
+                  : ""
             }
           />
         </StyledFormWrapper>

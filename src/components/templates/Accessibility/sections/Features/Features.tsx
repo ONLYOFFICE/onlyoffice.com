@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledFeaturesHeading,
   StyledFeaturesTabs,
@@ -73,7 +74,7 @@ const Features = () => {
                 }))}
                 key={groupIndex}
                 image={{
-                  url: t(group.image.url),
+                  url: getAssetUrl(t(group.image.url)),
                   url2x: group.image.url2x ? t(group.image.url2x) : undefined,
                   height: 520,
                 }}

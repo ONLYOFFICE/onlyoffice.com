@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #f5f5f5;
@@ -42,7 +43,7 @@ const StyledHeroTab = styled.button`
     margin-right: 10px;
     width: 32px;
     height: 32px;
-    background-image: url("/images/templates/workspace-prices/hero/on-premises.svg");
+    background-image: url(${getAssetUrl('/images/templates/workspace-prices/hero/on-premises.svg')});
     background-repeat: no-repeat;
     background-size: contain;
 

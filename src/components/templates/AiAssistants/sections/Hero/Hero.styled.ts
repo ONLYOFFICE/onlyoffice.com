@@ -3,9 +3,10 @@ import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
-  background-image: url("/images/templates/ai-assistants/hero/hero_bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/ai-assistants/hero/hero_bg.svg')});
   background-repeat: no-repeat;
   background-position: center -56px;
   /* background-size: cover; */

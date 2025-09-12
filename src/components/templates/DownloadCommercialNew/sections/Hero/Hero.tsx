@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroSection,
   StyledHeroDescription,
@@ -39,7 +40,7 @@ const Hero = ({
           button: {
             id: "docs-enterprise",
             icon: {
-              url: "/images/templates/download-commercial-new/hero/docs.svg",
+              url: getAssetUrl("/images/templates/download-commercial-new/hero/docs.svg"),
             },
             label: t("OODocs"),
           },
@@ -157,7 +158,7 @@ const Hero = ({
           button: {
             id: "workspace",
             icon: {
-              url: "/images/templates/download-commercial-new/hero/workspace.svg",
+              url: getAssetUrl("/images/templates/download-commercial-new/hero/workspace.svg"),
             },
             label: t("OOWorkspace"),
           },
@@ -199,7 +200,7 @@ const Hero = ({
           button: {
             id: "docspace",
             icon: {
-              url: "/images/templates/download-commercial-new/hero/docspace.svg",
+              url: getAssetUrl("/images/templates/download-commercial-new/hero/docspace.svg"),
               size: "contain",
             },
             label: t("OODocSpace"),

@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #f5f5f5;
@@ -68,7 +69,7 @@ const StyledHeroText = styled(Text)`
 
 const StyledHeroImage = styled.div`
   padding-bottom: 75%;
-  background-image: url("/images/templates/resellers/hero/hero-image.svg");
+  background-image: url(${getAssetUrl('/images/templates/resellers/hero/hero-image.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 

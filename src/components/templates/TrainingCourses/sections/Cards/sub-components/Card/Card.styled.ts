@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { Button } from "@src/components/ui/Button";
 import { Badge } from "@src/components/ui/Badge";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@ const StyledCard = styled.div`
 
 const StyledCardTop = styled.div`
   min-height: 160px;
-  background-image: url("/images/templates/training-courses/cards/bg_box_2.png");
+  background-image: url(${getAssetUrl('/images/templates/training-courses/cards/bg_box_2.png')});
   background-size: cover;
   background-position: center;
   display: flex;

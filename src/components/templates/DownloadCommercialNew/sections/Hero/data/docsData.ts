@@ -1,4 +1,5 @@
 import { IDownloadBlock } from "@src/components/widgets/download/DownloadBlock";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   dockerDocument,
   documentServer,
@@ -9,7 +10,7 @@ export const docsEnterpriseProducts: IDownloadBlock[] = [
   {
     nameKey: "onlyoffice4enterprise/documentserver-ee",
     image: {
-      url: "/images/templates/download-commercial-new/hero/docker.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/docker.svg"),
       positionX: "center",
       positionY: "center",
       background: "#099cec",
@@ -49,7 +50,7 @@ export const docsEnterpriseProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-commercial-new/hero/derbian-ubuntu.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/derbian-ubuntu.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -89,7 +90,7 @@ export const docsEnterpriseProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-commercial-new/hero/centos.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/centos.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -129,7 +130,7 @@ export const docsEnterpriseProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-commercial-new/hero/windows.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/windows.svg"),
       positionX: "center",
       positionY: "center",
       background: "#00188f",
@@ -161,7 +162,7 @@ export const docsEnterpriseProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-commercial-new/hero/amazon.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/amazon.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f39d39",
@@ -187,7 +188,7 @@ export const docsEnterpriseProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-commercial-new/hero/alibabacloud.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/alibabacloud.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -218,7 +219,7 @@ export const docsDeveloperProducts: IDownloadBlock[] = [
   {
     nameKey: "onlyoffice4enterprise/documentserver-ee",
     image: {
-      url: "/images/templates/download-commercial-new/hero/docker.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/docker.svg"),
       positionX: "center",
       positionY: "center",
       background: "#099cec",
@@ -258,7 +259,7 @@ export const docsDeveloperProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-commercial-new/hero/derbian-ubuntu.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/derbian-ubuntu.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -298,7 +299,7 @@ export const docsDeveloperProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-commercial-new/hero/centos.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/centos.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -338,7 +339,7 @@ export const docsDeveloperProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-commercial-new/hero/windows.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/windows.svg"),
       positionX: "center",
       positionY: "center",
       background: "#00188f",
@@ -370,7 +371,7 @@ export const docsDeveloperProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-commercial-new/hero/amazon.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/amazon.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f39d39",
@@ -395,7 +396,7 @@ export const docsDeveloperProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-commercial-new/hero/alibabacloud.svg",
+      url: getAssetUrl("/images/templates/download-commercial-new/hero/alibabacloud.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",

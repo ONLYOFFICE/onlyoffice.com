@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledTableParagraph = styled.p`
   font-size: 16px;
   line-height: 1.6em;
@@ -140,7 +141,7 @@ const StyledTableCell = styled.td<{ $thin?: boolean; $empty?: boolean }>`
     }
 
     .download {
-      background-image: url("/images/icons/comptry-reg.svg");
+      background-image: url(${getAssetUrl('/images/icons/comptry-reg.svg')});
       background-position: center;
       background-repeat: no-repeat;
       background-size: 24px;

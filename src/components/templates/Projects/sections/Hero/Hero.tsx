@@ -3,6 +3,7 @@ import { CollaborationsHero } from "@src/components/modules/collaborations/Colla
 import { medals } from "./data/items";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Hero = () => {
   const { t } = useTranslation("projects");
 
@@ -25,8 +26,8 @@ const Hero = () => {
         label: t("GetItNow"),
       }}
       image={{
-        url: t("HeroImage"),
-        url2x: t("HeroImage2x"),
+        url: getAssetUrl(t("HeroImage")),
+        url2x: getAssetUrl(t("HeroImage2x")),
         type: "video",
         videoUrl:
           "https://www.youtube.com/embed/ljEU6zJj9VE?si=csSqycwScLZuTBty",

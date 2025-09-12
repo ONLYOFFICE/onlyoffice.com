@@ -1,26 +1,26 @@
 {
-  "PageTitle": "Spreadsheet formulas and functions | ONLYOFFICE",
-  "PageDescription": "Insert functions, access categories and recently applied formulas, work with named ranges, and calculate your sheets and entire workbooks, all in one place.",
-  "Header": "Izvršavajte precizne proračune uz minimalan napor",
-  "SubHeader": "Koristite preko 450 Excel formula za obradu podataka za bilo koji zadatak",
+  "PageTitle": "Formule i funkcije u tabelama | ONLYOFFICE",
+  "PageDescription": "Umetnite funkcije, pristupajte kategorijama i nedavno primenjenim formulama, radite sa imenovanim opsezima i obračunavajte svoje tabele i čitave radne sveske, sve na jednom mestu.",
+  "Header": "Izvršite precizne proračune uz minimalan napor",
+  "SubHeader": "Koristite preko 450 Excel funkcija za obradu podataka za bilo koji zadatak",
 
   "HeroImgUrl": "/images/templates/formulas-and-functions/hero/hero.png",
   "HeroImgUrl2x": "/images/templates/formulas-and-functions/hero/hero@2x.png",
 
-  "Feature1Title": "Lako računajte uz preko 450 funkcija za tabele",
-  "Feature1Desc": "Umetnite funkcije, pristupajte kategorijama i nedavno korišćenim formulama, radite sa imenovanim opsezima i izračunavajte svoje listove i cele radne sveske, sve na jednom mestu. Pregledajte rezultate u velikim tabelama koristeći Prozor za praćenje. Koristite Praćenje prethodnika i Praćenje zavisnosti da prikažete odnose između formula i ćelija. Umetnite jednačine i simbole da opišete primenjene proračune.",
+  "Feature1Title": "Lako izračunavanje sa preko 450 funkcija tabela",
+  "Feature1Desc": "Umetnite funkcije, pristupite kategorijama i nedavno primenjenim formulama, radite sa imenovanim opsezima i obračunavajte tabele i čitave radne sveske, sve na jednom mestu. Pregledajte rezultate u velikim tabelama koristeći prozor za praćenje. Koristite funkcije Praćenje prethodnika i Praćenje zavisnika da prikažete veze između formula i ćelija. Umetnite jednačine i simbole za opis primenjenih izračunavanja.",
 
   "Feature2Title": "Definišite opsege ćelija za brzu primenu Excel formula",
-  "Feature2Desc": "Definišite i imenujte opsege ćelija i koristite ih kao argumente, imenujte cele formatirane tabele i upravljajte opsezima kako biste ih mogli koristiti kao interne hiperlinkove.",
+  "Feature2Desc": "Definišite i imenjujte opsege ćelija i koristite ih kao argumente, imenujte cele formatirane tabele i upravljajte opsezima kako biste ih koristili kao interne hiperveze.",
 
-  "Feature3Title": "Proveravajte validnost unosa podataka",
-  "Feature3Desc": "Definišite pravila validacije podataka kako biste osigurali da su u vaše listove unešeni samo relevantni podaci za tačne proračune. Primenite validaciju na brojeve i tekstove i postavite detaljne uslove za precizno filtriranje grešaka.",
+  "Feature3Title": "Validacija unosa podataka",
+  "Feature3Desc": "Definišite pravila validacije podataka da osigurate da se u vaše tabele unose samo relevantni podaci za tačne proračune. Primenujte validaciju na brojeve i tekstove i podesite detaljne uslove za precizno filtriranje grešaka.",
 
   "Feature4Title": "Zaštitite strukturu i sadržaj tabele",
-  "Feature4Desc": "Postavite lozinku na celu tabelu, radnu svesku, pa čak i na poseban list. Sakrijte formule da ih zadržite u privatnosti. Zaključajte ćelije, oblike i tekst. Omogućite uređivanje samo u određenim opsezima.",
+  "Feature4Desc": "Postavite lozinku na celu tabelu, radnu svesku, pa čak i na pojedinačne listove. Sakrijte formule da biste ih zaštitili. Zaključajte ćelije, oblike i tekst. Omogućite uređivanje samo u određenim opsezima.",
 
-  "Feature5Title": "Automatizujte svoj rad makroima",
-  "Feature5Desc": "Koristeći specijalni dodatak i naš API, kreirajte sopstvene JavaScript makroe ili koristite postojeće da automatizujete proračune i standardizujete tabele. Pokrenite makroe automatski ili ih onemogućite i primite obaveštenja o makroima u editoru.",
+  "Feature5Title": "Automatizujte rad pomoću makroa",
+  "Feature5Desc": "Koristeći poseban dodatak i naš API, kreirajte sopstvene JavaScript makroe ili koristite postojeće za automatizaciju proračuna i standardizaciju tabela. Pokrećite makroe automatski ili ih deaktivirajte i primajte obaveštenja o makroima u uređivaču.",
 
   "Feature1ImgUrl": "/images/templates/formulas-and-functions/features/pic1.png",
   "Feature1ImgUrl2x": "/images/templates/formulas-and-functions/features/pic1@2x.png",

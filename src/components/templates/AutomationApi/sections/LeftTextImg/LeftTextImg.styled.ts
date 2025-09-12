@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledLeftTextImgSection = styled(Section)`
   background-color: #333333;
 `;
@@ -43,7 +44,7 @@ const StyledLeftTextImgText = styled(Text)`
 `;
 
 const StyledLeftTextImgImage = styled.div`
-  background-image: url("/images/templates/automation-api/lefttextimg/docs_developer.svg");
+  background-image: url(${getAssetUrl('/images/templates/automation-api/lefttextimg/docs_developer.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

@@ -4,8 +4,9 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSupport = styled(Section)`
-  background: url("/images/templates/docspace-enterprise/support/bg.svg"), linear-gradient(136deg, #ffc671 0%, #ff7541 59.38%, #ff6f3d 100%);
+  background: url(${getAssetUrl('/images/templates/docspace-enterprise/support/bg.svg')}), linear-gradient(136deg, #ffc671 0%, #ff7541 59.38%, #ff6f3d 100%);
   background-position-x: 50%;
   background-repeat: no-repeat;
   background-size: 1396px auto, cover;
@@ -19,7 +20,7 @@ const StyledSupport = styled(Section)`
 const StyledSupportHeading = styled(Heading)`
   &::before {
     content: "";
-    background-image: url("/images/templates/docspace-enterprise/support/logo.svg");
+    background-image: url(${getAssetUrl('/images/templates/docspace-enterprise/support/logo.svg')});
     background-repeat: no-repeat;
     display: block;
     margin: 0 auto 24px;

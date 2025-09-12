@@ -1,6 +1,7 @@
 import { IIconTooltip } from "@src/components/widgets/IconTooltip";
 
-const iconsSprite = "/images/templates/docspace-registration/hero/icons.svg";
+import { getAssetUrl } from "@utils/getAssetUrl";
+const iconsSprite = getAssetUrl("/images/templates/docspace-registration/hero/icons.svg");
 
 export const icons: IIconTooltip[] = [
   {

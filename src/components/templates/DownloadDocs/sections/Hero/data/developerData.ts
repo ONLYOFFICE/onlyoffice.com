@@ -1,4 +1,5 @@
 import { IDownloadBlock } from "@src/components/widgets/download/DownloadBlock";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   dockerDocument,
   documentServer,
@@ -9,7 +10,7 @@ export const developerProducts: IDownloadBlock[] = [
   {
     nameKey: "onlyoffice4enterprise/documentserver-ee",
     image: {
-      url: "/images/templates/download-docs/hero/docker.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/docker.svg"),
       positionX: "center",
       positionY: "center",
       background: "#099cec",
@@ -49,7 +50,7 @@ export const developerProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-docs/hero/derbian-ubuntu.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/derbian-ubuntu.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -89,7 +90,7 @@ export const developerProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-docs/hero/centos.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/centos.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",
@@ -129,7 +130,7 @@ export const developerProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-docs/hero/windows.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/windows.svg"),
       positionX: "center",
       positionY: "center",
       background: "#00188f",
@@ -161,7 +162,7 @@ export const developerProducts: IDownloadBlock[] = [
   {
     nameKey: "DocumentServer",
     image: {
-      url: "/images/templates/download-docs/hero/amazon.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/amazon.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f39d39",
@@ -186,7 +187,7 @@ export const developerProducts: IDownloadBlock[] = [
   },
   {
     image: {
-      url: "/images/templates/download-docs/hero/alibabacloud.svg",
+      url: getAssetUrl("/images/templates/download-docs/hero/alibabacloud.svg"),
       positionX: "center",
       positionY: "center",
       background: "#f5f5f5",

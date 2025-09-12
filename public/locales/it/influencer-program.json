@@ -32,7 +32,7 @@
   "ApplyNow": "APPLICA ORA",
 
   "BecomeAmbassador": "<0>Diventa</0> un brand ambassador",
-  "OOAmbassadors": "ONLYOFFICE sta reclutando ambasciatori del campus! È aperto a studenti di college e università di tutto il mondo.",
+  "OOAmbassadors": "ONLYOFFICE sta reclutando ambasciatori dei campus! L'invito è aperto a studenti di college e università di tutto il mondo.",
   "OOAmbassadorsLink": "https://www.onlyoffice.com/blog/it/2023/05/onlyoffice-campus-ambassador-program",
   "JoinNow": "ISCRIVITI ORA",
 
@@ -40,7 +40,7 @@
   "ShareYourOpinion": "Condividi la tua opinione e aiutaci a migliorare ONLYOFFICE per te e per gli altri.",
 
   "Monetize": "<0>Monetizza</0> il tuo sito web con il Programma di affiliazione",
-  "WouldYouLike": "Ti piacerebbe ottenere un reddito stabile attraverso le vendite di riferimento? Unisciti al nostro programma, inserisci i link di affiliazione sul tuo sito web e ricevi commissioni.",
+  "WouldYouLike": "Ti piacerebbe ottenere un reddito stabile attraverso vendite referenziate? Unisciti al nostro programma, inserisci i link di affiliazione sul tuo sito web e ricevi commissioni.",
   "StartNow": "PROVALO ORA",
 
   "HowQualify": "Come posso qualificarmi per il Programma per gli Influencer di ONLYOFFICE?",
@@ -58,7 +58,7 @@
   "NameSurname": "Name Surname",
   "FullNameIsEmpty": "Il Nome completo è vuoto",
   "FullNameIsIncorrect": "Il Nome completo è sbagliato",
-  "Email": "E-mail*",
+  "Email": "E-mail",
   "Name": "name@domain.com",
   "EmailIsEmpty": "Email è vuoto",
   "EmailIsIncorrect": "Email è sbagliato",
@@ -71,6 +71,6 @@
   "SuccessfullyRequestText": "La tua richiesta è stata inviata con successo",
   "ErrorRequestText": "Siamo spiacenti, si è verificato un errore, riprovare più tardi",
 
-  "LookingForOtherWays": "Ti interessano i altri modi per contribuire al progetto ONLYOFFICE?",
+  "LookingForOtherWays": "Ti interessano altri modi per contribuire al progetto ONLYOFFICE?",
   "CheckThisPage": "Scopri di più"
 }

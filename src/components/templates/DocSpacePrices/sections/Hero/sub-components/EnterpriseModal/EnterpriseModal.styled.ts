@@ -5,6 +5,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Tooltip } from "@src/components/ui/Tooltip";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledEnterpriseModal = styled.div`
   border-radius: 5px;
   padding: 32px;
@@ -69,7 +70,7 @@ const StyledEnterpriseModalList = styled.ul`
       left: 0;
       width: 12px;
       height: 12px;
-      background-image: url("/images/icons/check-small.svg");
+      background-image: url(${getAssetUrl('/images/icons/check-small.svg')});
       background-repeat: no-repeat;
       background-size: contain;
     }

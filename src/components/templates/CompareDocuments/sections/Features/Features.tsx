@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 import { items } from "./data/items";
 import { EditorsFeatures } from "@src/components/modules/editors/EditorsFeatures";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Features = () => {
   const { t } = useTranslation("compare-documents");
 
@@ -16,7 +17,7 @@ const Features = () => {
           label: t(String(link.label)),
         })),
         image: {
-          url: t(items.image.url),
+          url: getAssetUrl(t(items.image.url)),
           url2x: items.image.url2x && t(items.image.url2x),
           height: items.image.height,
         },

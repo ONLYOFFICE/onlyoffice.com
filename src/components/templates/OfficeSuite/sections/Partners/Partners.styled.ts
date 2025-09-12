@@ -1,6 +1,7 @@
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledPartnersWrapper = styled.div`
   padding: 88px 0;
   overflow-x: auto;
@@ -39,7 +40,7 @@ const StyledPartnerLogo = styled.div<{
   $positionX: { desktop: string; mobile: string };
   $width: { desktop: string; mobile: string };
 }>`
-  background-image: url("/images/templates/office-suite/customers.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-suite/customers.svg')});
   background-repeat: no-repeat;
   height: 90px;
   background-position-y: center;
