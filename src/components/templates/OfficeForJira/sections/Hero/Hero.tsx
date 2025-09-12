@@ -34,7 +34,7 @@ const Hero = () => {
           <StyledHeroHeader>
             <Heading
               level={1}
-              size={1}
+              size={2}
               label={t("OnlineOfficeForConnector")}
               color="#ffffff"
             />

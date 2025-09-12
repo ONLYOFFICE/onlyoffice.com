@@ -156,7 +156,10 @@ const DownloadModal = ({
         pageTrack(pageTrackName);
         setFormStatus("success");
         const endOfPartName = pageTrackName.indexOf("_for");
-        const partBtnName = endOfPartName != -1 ? pageTrackName.substring(0, endOfPartName) : pageTrackName;
+        const partBtnName =
+          endOfPartName != -1
+            ? pageTrackName.substring(0, endOfPartName)
+            : pageTrackName;
         pageTrack(partBtnName);
 
         if (buttonAction?.href) {
@@ -289,9 +292,6 @@ const DownloadModal = ({
                 }));
                 checkFormValid();
               }}
-              status={
-                isEmpty.phone ? "error" : formData.phone ? "success" : "default"
-              }
               required
             />
           )}

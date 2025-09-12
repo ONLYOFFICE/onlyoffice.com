@@ -15,10 +15,7 @@ const StyledCollaborationsTab = styled.li<{
   min-width: 191.5px;
   width: 100%;
 
-  ${(props) =>
-    !props.$active &&
-    css`
-      &:not(:last-child) {
+    &:not(:last-child) {
         &::after {
           content: "";
           position: absolute;
@@ -29,6 +26,11 @@ const StyledCollaborationsTab = styled.li<{
           transform: translateY(-50%);
         }
       }
+
+  ${(props) =>
+    !props.$active &&
+    css`
+    
     `}
 `;
 

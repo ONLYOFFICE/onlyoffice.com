@@ -28,7 +28,7 @@ const StyledSelectInput = styled.button<{
           : props.$status === "success"
             ? "#8bb825"
             : "#aaaaaa"};
-  border-radius: 3px;
+  border-radius: 6px;
   padding: ${(props) =>
     props.$labelVariant === "primary"
       ? "24px 48px 12px 16px"
@@ -159,7 +159,7 @@ const StyledSelectOptions = styled.div`
   top: 60px;
   left: 0;
   border: 1px solid #666666;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 8px 0;
   width: 100%;
   max-height: 200px;

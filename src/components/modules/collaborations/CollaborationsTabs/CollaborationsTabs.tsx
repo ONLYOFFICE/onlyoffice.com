@@ -50,6 +50,7 @@ const CollaborationsTabs = () => {
               href={url}
               label={t(label)}
               $active={isActive}
+              textUnderline={false}
             />
           </StyledCollaborationsTab>
         );
