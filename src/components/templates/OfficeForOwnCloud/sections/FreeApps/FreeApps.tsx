@@ -9,6 +9,7 @@ import { ChooseSolution } from "@src/components/widgets/ChooseSolution";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
 import { Button } from "@src/components/ui/Button";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const FreeApps = () => {
   const { t } = useTranslation("office-for-owncloud");
@@ -26,7 +27,7 @@ const FreeApps = () => {
 
         <ChooseSolution
           largeItems={items.map((item) => ({
-            imgUrl: item.imgUrl,
+            imgUrl: getAssetUrl(item.imgUrl),
             text: (
               <Trans
                 t={t}

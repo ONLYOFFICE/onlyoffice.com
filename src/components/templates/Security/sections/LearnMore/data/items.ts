@@ -1,9 +1,8 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IBlogCard[] = [
   {
-    imgUrl: getAssetUrl("/images/templates/security/compliance/wp_sec.svg"),
+    imgUrl: "/images/templates/security/compliance/wp_sec.svg",
     heading: { label: "WhitePaper" },
     text: "ComponentsAndMechanics",
     links: [

@@ -13,6 +13,7 @@ import {
 import { Button } from "@src/components/ui/Button";
 import { hero } from "./data/hero";
 import { Text } from "@src/components/ui/Text";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Hero = () => {
   const { t } = useTranslation("security");
@@ -42,7 +43,7 @@ const Hero = () => {
             </StyledButton>
           </StyledHeroContent>
           <StyledHeroImage
-            $imgUrl={hero.imgUrl}
+            $imgUrl={getAssetUrl(hero.imgUrl)}
             $imgHeight={hero.imgHeight}
             $imgWidth={hero.imgWidth}
           />
