@@ -11,8 +11,8 @@ import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
-
 import { getAssetUrl } from "@utils/getAssetUrl";
+
 const HowToStart = () => {
   const { t } = useTranslation("office-for-moodle");
   const [activeIndex, setActiveIndex] = useState(0);
@@ -32,7 +32,7 @@ const HowToStart = () => {
           tabs={items.map((tab) => ({
             label: t(tab.label),
             items: tab.items.map((item) => ({
-              imgUrl: t(item.imgUrl),
+              imgUrl: getAssetUrl(item.imgUrl),
               heading: item.headingLinks ? (
                 <Trans
                   t={t}
