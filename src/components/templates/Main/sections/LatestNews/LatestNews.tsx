@@ -20,6 +20,7 @@ import { getLink } from "@src/utils/getLink";
 import { formatDateRange } from "@src/utils/formatDateRange";
 import { formatDateLatestNews } from "./utils/formatDateLatestNews";
 
+
 const LatestNews = ({ locale }: ILocale) => {
   const { t } = useTranslation("main");
   const ref = useRef<HTMLDivElement | null>(null);

@@ -9,6 +9,7 @@ import {
 } from "./Hero.styled";
 import { Heading } from "@src/components/ui/Heading";
 import { Button } from "@src/components/ui/Button";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Hero = () => {
   const { t } = useTranslation("docs-enterprise");
@@ -44,7 +45,7 @@ const Hero = () => {
             />
           </StyledButtonsArea>
         </StyledLeftHeroArea>
-        <StyledDocsEnterpriseHeroImage $src={t("HeroImage")} $src2x={t("HeroImageRetina")} />
+        <StyledDocsEnterpriseHeroImage $src={getAssetUrl(t("HeroImage"))} $src2x={getAssetUrl(t("HeroImageRetina"))} />
       </StyledDocsEnterpriseHeroContent>
     </StyledDocsEnterpriseHero>
   );

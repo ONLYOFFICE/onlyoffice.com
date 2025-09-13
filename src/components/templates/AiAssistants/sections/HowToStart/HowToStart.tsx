@@ -5,6 +5,7 @@ import { Container } from "@src/components/ui/Container";
 import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
 import { Text } from "@src/components/ui/Text";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const HowToStart = () => {
   const { t } = useTranslation("ai-assistants");
@@ -20,7 +21,7 @@ const HowToStart = () => {
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: item.imgUrl,
+            imgUrl: getAssetUrl(item.imgUrl),
             heading: (
               <Trans
                 t={t}

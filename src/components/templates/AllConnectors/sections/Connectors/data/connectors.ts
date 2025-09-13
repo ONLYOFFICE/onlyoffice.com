@@ -1,6 +1,5 @@
 import { IConnectorCard } from "../sub-components/ConnectorCard/ConnectorCard.types";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 interface IConnectorCardExtended extends IConnectorCard {
   productType?: ("docs" | "docspace")[];
   developerType?: ("oo-developers" | "partners")[];
@@ -12,7 +11,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "telegram",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/telegram.svg"),
+      url: "/images/templates/all-connectors/connectors/telegram.svg",
     },
     name: "Telegram",
     text: "TelegramConnectorText",
@@ -31,7 +30,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "agorum",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/agorum.svg"),
+      url: "/images/templates/all-connectors/connectors/agorum.svg",
     },
     name: "agorum",
     text: "AgorumConnectorText",
@@ -48,7 +47,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "alfresco",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/alfresco.svg"),
+      url: "/images/templates/all-connectors/connectors/alfresco.svg",
     },
     name: "Alfresco",
     text: "AlfrescoConnectorText",
@@ -63,7 +62,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "box",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/box.svg"),
+      url: "/images/templates/all-connectors/connectors/box.svg",
     },
     name: "Box",
     text: "BoxConnectorText",
@@ -78,7 +77,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "chamilo",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/chamilo.svg"),
+      url: "/images/templates/all-connectors/connectors/chamilo.svg",
     },
     name: "Chamilo",
     text: "ChamiloConnectorText",
@@ -94,7 +93,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "communigate",
     image: {
       bgColor: "#475965",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/communigate.svg"),
+      url: "/images/templates/all-connectors/connectors/communigate.svg",
     },
     name: "CommuniGate",
     text: "CommuniGateConnectorText",
@@ -108,7 +107,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "confluence",
     image: {
       bgColor: "#253858",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/confluence.svg"),
+      url: "/images/templates/all-connectors/connectors/confluence.svg",
     },
     name: "Confluence",
     text: "ConfluenceConnectorText",
@@ -123,7 +122,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "dropbox",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/dropbox.svg"),
+      url: "/images/templates/all-connectors/connectors/dropbox.svg",
     },
     name: "Dropbox",
     text: "DropboxConnectorText",
@@ -139,7 +138,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "drupal",
     image: {
       bgColor: "#0E497F",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/drupal.svg"),
+      url: "/images/templates/all-connectors/connectors/drupal.svg",
     },
     name: "Drupal",
     text: "DrupalConnectorText",
@@ -155,7 +154,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "dzzoffice",
     image: {
       bgColor: "#F5F5F5",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/dzzoffice.svg"),
+      url: "/images/templates/all-connectors/connectors/dzzoffice.svg",
     },
     name: "DzzOffice",
     text: "DzzOfficeConnectorText",
@@ -171,7 +170,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "enaio",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/enaio.svg"),
+      url: "/images/templates/all-connectors/connectors/enaio.svg",
     },
     name: "enaio",
     text: "EnaioConnectorText",
@@ -188,7 +187,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "exoplatform",
     image: {
       bgColor: "#405F97",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/exo.svg"),
+      url: "/images/templates/all-connectors/connectors/exo.svg",
     },
     name: "eXo Platform",
     text: "eXoConnectorText",
@@ -205,7 +204,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "flinkiso",
     image: {
       bgColor: "#0095ff",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/flinkiso.png"),
+      url: "/images/templates/all-connectors/connectors/flinkiso.png",
     },
     name: "FlinkISO",
     text: "FlinkISOConnectorText",
@@ -221,7 +220,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "humhub",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/humhub.svg"),
+      url: "/images/templates/all-connectors/connectors/humhub.svg",
     },
     name: "HumHub",
     text: "HumHubConnectorText",
@@ -236,7 +235,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "jalios",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/jalios.svg"),
+      url: "/images/templates/all-connectors/connectors/jalios.svg",
     },
     name: "Jalios",
     text: "JaliosConnectorText",
@@ -254,7 +253,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "jira",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/jira.svg"),
+      url: "/images/templates/all-connectors/connectors/jira.svg",
     },
     name: "Jira",
     text: "JiraConnectorText",
@@ -270,7 +269,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "liferay",
     image: {
       bgColor: "#0B63CE",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/liferay.svg"),
+      url: "/images/templates/all-connectors/connectors/liferay.svg",
     },
     name: "Liferay",
     text: "LiferayConnectorText",
@@ -286,7 +285,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "liferaysmc",
     image: {
       bgColor: "#0f63ca",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/liferay_1.svg"),
+      url: "/images/templates/all-connectors/connectors/liferay_1.svg",
     },
     name: "Liferay",
     text: "LiferaySMCConnectorText",
@@ -304,7 +303,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "maarch",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/maarch.svg"),
+      url: "/images/templates/all-connectors/connectors/maarch.svg",
     },
     name: "Maarch Courrier",
     text: "CourrierConnectorText",
@@ -321,7 +320,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "mattermost",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/mattermost.svg"),
+      url: "/images/templates/all-connectors/connectors/mattermost.svg",
     },
     name: "Mattermost",
     text: "MattermostConnectorText",
@@ -336,7 +335,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "monday",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/monday.svg"),
+      url: "/images/templates/all-connectors/connectors/monday.svg",
     },
     name: "Monday",
     text: "FeatureConnectorMondayText",
@@ -351,7 +350,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "moodle-oo",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/moodle-white.svg"),
+      url: "/images/templates/all-connectors/connectors/moodle-white.svg",
     },
     name: "Moodle",
     text: "MoodleConnectorText",
@@ -367,7 +366,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "moodle",
     image: {
       bgColor: "#F47F29",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/moodle.svg"),
+      url: "/images/templates/all-connectors/connectors/moodle.svg",
     },
     name: "Moodle",
     text: "MoodleLogicConnectorText",
@@ -382,7 +381,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "neo",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/neo.svg"),
+      url: "/images/templates/all-connectors/connectors/neo.svg",
     },
     name: "NEO",
     text: "NEOConnectorText",
@@ -399,7 +398,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "nextcloud",
     image: {
       bgColor: "#0082C9",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/nextcloud.svg"),
+      url: "/images/templates/all-connectors/connectors/nextcloud.svg",
     },
     name: "Nextcloud",
     text: "NextcloudConnectorText",
@@ -415,7 +414,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "nuxeo",
     image: {
       bgColor: "#0B59F5",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/nuxeo.svg"),
+      url: "/images/templates/all-connectors/connectors/nuxeo.svg",
     },
     name: "Nuxeo",
     text: "NuxeoConnectorText",
@@ -430,7 +429,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "odoo",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/odoo.svg"),
+      url: "/images/templates/all-connectors/connectors/odoo.svg",
     },
     name: "Odoo",
     text: "OdooConnectorText",
@@ -445,7 +444,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "one",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/one.svg"),
+      url: "/images/templates/all-connectors/connectors/one.svg",
     },
     name: "ONE",
     text: "ONEConnectorText",
@@ -462,7 +461,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "openolat",
     image: {
       bgColor: "#5284A9",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/openolat.svg"),
+      url: "/images/templates/all-connectors/connectors/openolat.svg",
     },
     name: "OpenOlat",
     text: "OpenOlatConnectorText",
@@ -480,7 +479,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "owncloud",
     image: {
       bgColor: "#1D2D44",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/owncloud.svg"),
+      url: "/images/templates/all-connectors/connectors/owncloud.svg",
     },
     name: "ownCloud",
     text: "ownCloudConnectorText",
@@ -496,7 +495,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "pintexx",
     image: {
       bgColor: "#FFFFFF",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/pintexx.svg"),
+      url: "/images/templates/all-connectors/connectors/pintexx.svg",
     },
     name: "Pintexx Workplace",
     text: "PintexxConnectorText",
@@ -513,7 +512,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "pipedrive",
     image: {
       bgColor: "#017737",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/pipedrive.svg"),
+      url: "/images/templates/all-connectors/connectors/pipedrive.svg",
     },
     name: "Pipedrive",
     text: "PipedriveConnectorText",
@@ -530,7 +529,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "plone",
     image: {
       bgColor: "#006C9D",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/plone.svg"),
+      url: "/images/templates/all-connectors/connectors/plone.svg",
     },
     name: "Plone",
     text: "PloneConnectorText",
@@ -546,7 +545,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "powerfolder",
     image: {
       bgColor: "#1F3142",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/powerfolder.svg"),
+      url: "/images/templates/all-connectors/connectors/powerfolder.svg",
     },
     name: "PowerFolder",
     text: "PowerFolderConnectorText",
@@ -564,7 +563,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "pydio",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/pydio.svg"),
+      url:  "/images/templates/all-connectors/connectors/pydio.svg",
     },
     name: "Pydio",
     text: "PydioConnectorText",
@@ -581,7 +580,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "quasaro",
     image: {
       bgColor: "#FFFFFF",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/quasaro.svg"),
+      url: "/images/templates/all-connectors/connectors/quasaro.svg",
     },
     name: "Quasaro",
     text: "QuasaroConnectorText",
@@ -597,7 +596,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "redmine",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/redmine.svg"),
+      url: "/images/templates/all-connectors/connectors/redmine.svg",
     },
     name: "Redmine",
     text: "RedmineConnectorText",
@@ -613,7 +612,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "seafile",
     image: {
       bgColor: "linear-gradient(180deg,#FBD44E 0%,#FFA613 100%),#FFA816",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/seafile.svg"),
+      url: "/images/templates/all-connectors/connectors/seafile.svg",
     },
     name: "Seafile",
     text: "SeafileConnectorText",
@@ -629,7 +628,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "sharepoint",
     image: {
       bgColor: "#006CC5",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/sharepoint.svg"),
+      url: "/images/templates/all-connectors/connectors/sharepoint.svg",
     },
     name: "SharePoint",
     text: "SharePointConnectorText",
@@ -644,7 +643,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "strapi",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/strapi.svg"),
+      url: "/images/templates/all-connectors/connectors/strapi.svg",
     },
     name: "Strapi",
     text: "StrapiConnectorText",
@@ -659,7 +658,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "suitecrm",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/suitecrm.svg"),
+      url: "/images/templates/all-connectors/connectors/suitecrm.svg",
     },
     name: "SuiteCRM",
     text: "SuiteCRMConnectorText",
@@ -675,7 +674,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "talkspirit",
     image: {
       bgColor: "#101830",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/talkspirit.svg"),
+      url: "/images/templates/all-connectors/connectors/talkspirit.svg",
     },
     name: "Talkspirit",
     text: "TalkspiritConnectorText",
@@ -693,7 +692,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "trello",
     image: {
       bgColor: "#253858",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/trello.svg"),
+      url: "/images/templates/all-connectors/connectors/trello.svg",
     },
     name: "Trello",
     text: "TrelloConnectorText",
@@ -710,7 +709,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "webweaver",
     image: {
       bgColor: "#FFFFFF",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/webweaver.svg"),
+      url: "/images/templates/all-connectors/connectors/webweaver.svg",
     },
     name: "WebWeaver",
     text: "WebWeaverConnectorText",
@@ -728,7 +727,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "wedoc",
     image: {
       bgColor: "#FFFFFF",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/wedoc.svg"),
+      url: "/images/templates/all-connectors/connectors/wedoc.svg",
     },
     name: "WeDoc",
     text: "WeDocConnectorText",
@@ -745,7 +744,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "wordpress",
     image: {
       bgColor: "#000000",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/wordpress.svg"),
+      url: "/images/templates/all-connectors/connectors/wordpress.svg",
     },
     name: "WordPress",
     text: "WordPressConnectorText",
@@ -760,7 +759,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "xwiki",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/xwiki.svg"),
+      url: "/images/templates/all-connectors/connectors/xwiki.svg",
     },
     name: "XWiki",
     text: "XWikiConnectorText",
@@ -779,7 +778,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "zapier",
     image: {
       bgColor: "#ffffff",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/zapier.svg"),
+      url: "/images/templates/all-connectors/connectors/zapier.svg",
     },
     name: "Zapier",
     text: "ZapierConnectorText",
@@ -796,7 +795,7 @@ export const connectors: IConnectorCardExtended[] = [
     id: "zoom",
     image: {
       bgColor: "#0B5CFF",
-      url: getAssetUrl("/images/templates/all-connectors/connectors/zoom.svg"),
+      url: "/images/templates/all-connectors/connectors/zoom.svg",
     },
     name: "Zoom",
     text: "ZoomConnectorText",
@@ -811,7 +810,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "filecloud",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/filecloud.svg"),
+      url: "/images/templates/all-connectors/connectors/filecloud.svg",
     },
     name: "FileCloud",
     text: "FileCloudConnectorText",
@@ -828,7 +827,7 @@ export const connectors: IConnectorCardExtended[] = [
   {
     id: "openkm",
     image: {
-      url: getAssetUrl("/images/templates/all-connectors/connectors/openkm.svg"),
+      url: "/images/templates/all-connectors/connectors/openkm.svg",
     },
     name: "OpenKM",
     text: "OpenKMConnectorText",

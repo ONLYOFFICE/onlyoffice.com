@@ -7,6 +7,7 @@ import { items } from "./data/items";
 import { useRefineCardsItems } from "../../utils/useRefineCardsItems";
 import { useFilterCounter } from "../../utils/useFilterCounter";
 import { useHandleClickOutside } from "../../utils/useHandleClickOutside";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 import { ILocale } from "@src/types/locale";
 import {
@@ -273,7 +274,7 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
                   <Card
                     key={moduleCard.id}
                     locale={locale}
-                    icon_url={moduleCard.icon_url}
+                    icon_url={getAssetUrl(moduleCard.icon_url)}
                     title={t(moduleCard.title)}
                     type={moduleCard.type}
                     module={moduleCard.module}
@@ -302,7 +303,7 @@ const Cards = ({ filterValue, locale }: ICardsProp & ILocale) => {
                   <Card
                     key={purposeCard.id}
                     locale={locale}
-                    icon_url={purposeCard.icon_url}
+                    icon_url={getAssetUrl(purposeCard.icon_url)}
                     title={t(purposeCard.title)}
                     type={purposeCard.type}
                     module={t(purposeCard.module)}

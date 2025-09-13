@@ -3,6 +3,7 @@ import { items } from "./data/items";
 import { EditorsFeatures } from "@src/components/modules/editors/EditorsFeatures";
 import { getLink } from "@src/utils/getLink";
 import { ILocale } from "@src/types/locale";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Features = ({ locale }: ILocale) => {
   const { t: t1 } = useTranslation("Editors");
@@ -23,8 +24,8 @@ const Features = ({ locale }: ILocale) => {
               : link.href,
         })),
         image: {
-          url: t2(items.image.url),
-          url2x: items.image.url2x && t2(items.image.url2x),
+          url: getAssetUrl(t2(items.image.url)),
+          url2x: items.image.url2x && getAssetUrl(t2(items.image.url2x)),
           height: items.image.height,
         },
       }))}

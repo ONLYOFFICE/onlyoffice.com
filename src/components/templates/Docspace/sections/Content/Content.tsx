@@ -14,6 +14,7 @@ import { ContentCard } from "./sub-components/ContentCard";
 import { useRouter } from "next/router";
 import { Button } from "@src/components/ui/Button";
 import { getLink } from "@src/utils/getLink";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Content = () => {
   const { t } = useTranslation("docspace");
@@ -37,7 +38,7 @@ const Content = () => {
           {items.map((item, index) => (
             <ContentCard
               key={index}
-              imgUrl={item.imgUrl}
+              imgUrl={getAssetUrl(item.imgUrl)}
               heading={t(item.heading)}
               locale={locale}
               href={

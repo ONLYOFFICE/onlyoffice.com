@@ -43,7 +43,7 @@ const Manage = () => {
           {carouselItems.map((item, index) => (
             <StyledManageTabsItem
               key={index}
-              $icon={item.iconUrl}
+              $icon={getAssetUrl(item.iconUrl)}
               $isActive={index === activeIndex}
               onClick={() => handleClickTab(index)}
             >

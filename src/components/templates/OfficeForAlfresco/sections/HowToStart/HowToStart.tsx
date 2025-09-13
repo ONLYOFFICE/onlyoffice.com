@@ -6,8 +6,8 @@ import { Link } from "@src/components/ui/Link";
 import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { WatchVideo } from "@src/components/widgets/WatchVideo";
 import { items } from "./data/items";
+import { getAssetUrl } from "@src/utils/getAssetUrl";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 const HowToStart = () => {
   const { t } = useTranslation("office-for-alfresco");
 
@@ -18,7 +18,7 @@ const HowToStart = () => {
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: item.imgUrl,
+            imgUrl: getAssetUrl(item.imgUrl),
             heading: item.headingLinks ? (
               <Trans
                 t={t}
