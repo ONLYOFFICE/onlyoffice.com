@@ -13,7 +13,6 @@ import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 import { Button } from "@src/components/ui/Button";
-import { getAssetUrl } from "@utils/getAssetUrl";
 
 const HowToStart = () => {
   const { t } = useTranslation("office-for-zoom");
