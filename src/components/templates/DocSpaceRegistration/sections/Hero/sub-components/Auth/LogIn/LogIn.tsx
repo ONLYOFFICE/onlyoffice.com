@@ -137,7 +137,10 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
   };
 
   const handleSignInBySocial = (platform: string) => {
-    if (intervalId.current) clearInterval(intervalId.current);
+    if (intervalId.current) {
+      clearInterval(intervalId.current);
+      intervalId.current = null;
+    }
 
     platformRef.current = platform;
 
@@ -189,6 +192,7 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
     return () => {
       if (intervalId.current) {
         clearInterval(intervalId.current);
+        intervalId.current = null;
       }
     };
   }, [setExistTenants]);
