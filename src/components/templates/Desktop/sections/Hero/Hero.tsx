@@ -13,6 +13,7 @@ import { Text } from "@src/components/ui/Text";
 import { Trans } from "next-i18next";
 import { Button } from "@src/components/ui/Button";
 import { awards } from "./data/items";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Hero = () => {
   const { t } = useTranslation("desktop");
@@ -67,7 +68,7 @@ const Hero = () => {
               key={index}
               $positionX={item.positionX}
               $width={item.width}
-              $imgUrl={item.imgUrl}
+              $imgUrl={getAssetUrl(item.imgUrl)}
               href={item.link}
               target={item.isExternal ? "_blank" : undefined}
             />

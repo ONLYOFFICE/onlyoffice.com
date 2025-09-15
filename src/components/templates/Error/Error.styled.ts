@@ -8,7 +8,6 @@ import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledError = styled(Section)`
   display: flex;
   align-items: center;
-  min-height: 100vh;
 `;
 
 const StyledErrorWrapper = styled.div`

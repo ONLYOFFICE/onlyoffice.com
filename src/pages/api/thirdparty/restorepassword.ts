@@ -13,7 +13,7 @@ export default async function handler(
   }
 
   try {
-    const { email, emailSubject } = req.body;
+    const { email, emailSubject, language } = req.body;
 
     if (typeof email !== "string" || !validateEmail(email)) {
       return res.status(400).json({
@@ -41,7 +41,7 @@ export default async function handler(
     const sendEmailData = await sendEmail({
       email,
       subject: emailSubject,
-      body: PasswordReminder({ portals: restorePasswordData.data }),
+      body: PasswordReminder({ portals: restorePasswordData.data, language: language }),
     });
 
     if (sendEmailData.status !== "success") {

@@ -1,9 +1,8 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IBlogCard[] = [
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-alfresco/learn-more/help-center.jpg"),
+    imgUrl: "/images/templates/office-for-alfresco/learn-more/help-center.jpg",
     heading: { label: "HelpCenter" },
     text: "UsefulGuides",
     links: [

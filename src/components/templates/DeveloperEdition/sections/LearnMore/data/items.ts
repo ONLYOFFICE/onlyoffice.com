@@ -1,9 +1,9 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
+
 export const items: IBlogCard[] = [
   {
-    imgUrl: getAssetUrl("/images/templates/developer-edition/learn-more/whitepaper.png"),
+    imgUrl: "/images/templates/developer-edition/learn-more/whitepaper.png",
     heading: { label: "WhitepaperTitle" },
     text: "WhitepaperDescription",
     links: [
@@ -27,7 +27,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/developer-edition/learn-more/blog.png"),
+    imgUrl: "/images/templates/developer-edition/learn-more/blog.png",
     heading: { label: "BlogTitle" },
     text: "BlogDescription",
     links: [

@@ -5,6 +5,7 @@ import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
 import { ChooseSolution } from "@src/components/widgets/ChooseSolution";
 import { items } from "./data/items";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 interface IGetStartedProps {
   /** The background color of the section. */
@@ -29,7 +30,7 @@ const RoomsGetStarted = ({ background }: IGetStartedProps) => {
 
         <ChooseSolution
           items={items.items.map(({ imgUrl, heading, text, links }) => ({
-            imgUrl,
+            imgUrl: getAssetUrl(imgUrl),
             heading: t(heading ?? ""),
             text:
               typeof text === "string" ? (

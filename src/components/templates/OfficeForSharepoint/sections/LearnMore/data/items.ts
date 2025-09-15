@@ -1,9 +1,8 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IBlogCard[] = [
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-sharepoint/learn-more/card1.png"),
+    imgUrl: "/images/templates/office-for-sharepoint/learn-more/card1.png",
     heading: { label: "Video" },
     text: "VideoDesc",
     links: [
@@ -15,7 +14,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-sharepoint/learn-more/card2.png"),
+    imgUrl: "/images/templates/office-for-sharepoint/learn-more/card2.png",
     heading: { label: "Compare" },
     text: "CompareDesc",
     links: [
@@ -27,7 +26,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-sharepoint/learn-more/card3.png"),
+    imgUrl: "/images/templates/office-for-sharepoint/learn-more/card3.png",
     heading: { label: "HelpCenter" },
     text: "HelpCenterDesc",
     links: [

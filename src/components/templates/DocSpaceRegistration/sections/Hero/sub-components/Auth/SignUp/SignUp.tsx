@@ -174,7 +174,10 @@ const SignUp = ({
   };
 
   const handleGoogleSignIn = () => {
-    if (intervalId.current) clearInterval(intervalId.current);
+    if (intervalId.current) {
+      clearInterval(intervalId.current);
+      intervalId.current = null;
+    }
 
     modalDialog.current = window.open(
       `${location.origin}/login?auth=google&mode=popup&callback=SignInByGoogle`,
@@ -239,6 +242,7 @@ const SignUp = ({
     return () => {
       if (intervalId.current) {
         clearInterval(intervalId.current);
+        intervalId.current = null;
       }
     };
   }, [selected, setCreateNewAccountQuery, setExistTenants]);

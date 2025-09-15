@@ -117,7 +117,7 @@ export const onlineinstaller = {
   version: "2.0.0",
   date: "2025, 05, 21",
   size: "984",
-  url: "https://download.onlyoffice.com/install/desktop/editors/windows/distrib/onlyoffice/OnlineInstaller.exe",
+  url: "https://github.com/ONLYOFFICE/desktop-onlineinstaller/releases/latest/download/ONLYOFFICEDesktopInstaller.exe",
 };
 
 export const win64Exe = {

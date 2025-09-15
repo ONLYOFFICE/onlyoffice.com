@@ -14,9 +14,11 @@ import {
   ISubscribeInput,
 } from "@src/components/widgets/SubscribeInput";
 import { validateEmail } from "@src/utils/validators";
+import { useRouter } from "next/router";
 
 const RestorePassword = ({ setStatus }: IRestorePassword) => {
   const { t } = useTranslation("docspace-registration");
+  const { locale } = useRouter();
   const [value, setValue] = useState("");
   const [formStatus, setFormStatus] =
     useState<ISubscribeInput["status"]>("default");
@@ -39,6 +41,7 @@ const RestorePassword = ({ setStatus }: IRestorePassword) => {
       body: JSON.stringify({
         email: value,
         emailSubject: t("OOPasswordReminder"),
+        language: locale,
       }),
     });
     const restorePasswordData = await restorePasswordRes.json();

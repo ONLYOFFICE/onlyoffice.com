@@ -8,6 +8,7 @@ import {
 } from "./LearnMore.styled";
 import { items } from "./data/items";
 import { Text } from "@src/components/ui/Text";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const LearnMore = () => {
   const { t } = useTranslation("best-libreoffice-alternative");
@@ -18,7 +19,7 @@ const LearnMore = () => {
         <StyledBlogCardWrapper>
           {items.map((item, index) => (
             <div key={index}>
-              <StyledBlogCardImg src={item.imgUrl} />
+              <StyledBlogCardImg src={getAssetUrl(item.imgUrl)} />
               <StyledBlogCardLink
                 href={t(item.heading.href ?? "")}
                 label={t(String(item.heading.label))}

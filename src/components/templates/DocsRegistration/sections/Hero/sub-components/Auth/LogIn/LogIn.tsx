@@ -134,7 +134,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
     };
 
     const url =
-      (process.env.DOCS_CLOUD_SIGNIN_API! || "") +
+      (process.env.NEXT_PUBLIC_DOCS_CLOUD_SIGNIN_API! || "") +
       `?culture=${encodeURIComponent(recaptchaLang || "en")}`;
 
     try {

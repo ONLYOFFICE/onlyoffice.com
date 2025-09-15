@@ -9,6 +9,7 @@ import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { FeatureConnectorCard } from "./sub-components/FeatureConnectorCard";
 import { featuredConnectors } from "./data/featuredConnectors";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Hero = () => {
   const { t } = useTranslation("all-connectors");
@@ -39,7 +40,7 @@ const Hero = () => {
               key={index}
               url={connector.url}
               image={{
-                url: connector.image.url,
+                url: getAssetUrl(connector.image.url),
                 bgColor: connector.image.bgColor,
               }}
               heading={connector.heading}
