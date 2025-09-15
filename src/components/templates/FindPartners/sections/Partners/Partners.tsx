@@ -7,13 +7,13 @@ import { PartnersKeyItem } from "./sub-components/PartnersKeyItem";
 import { useUniqueItems } from "./utils/useUniqueItems";
 import { IPartner, IPartners } from "../../FindPartners.types";
 import { Select } from "@src/components/ui/Select";
+import { Button } from "@src/components/ui/Button";
 import { ISelectOption } from "@src/components/ui/Select/Select.types";
 
 import {
   StyledPartnersCardList,
   StyledPartnersCountryWrapper,
   StyledPartnersKeyList,
-  StyledPartnersButtonShowMore,
 } from "./Partners.styled";
 
 const Partners = ({ partners }: IPartners) => {
@@ -140,7 +140,7 @@ const Partners = ({ partners }: IPartners) => {
               />
             ))}
           {filteredItems.length > 3 && (
-            <StyledPartnersButtonShowMore
+            <Button
               label={showAllCards ? t("ShowLessBtnText") : t("ShowMoreBtnText")}
               onClick={() => setShowAllCards(!showAllCards)}
               variant="tertiary"

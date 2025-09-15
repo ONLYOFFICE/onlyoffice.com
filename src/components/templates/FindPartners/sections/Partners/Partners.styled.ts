@@ -30,13 +30,8 @@ const StyledPartnersCardList = styled.ul`
   gap: 32px;
 `;
 
-const StyledPartnersButtonShowMore = styled(Button)`
-  background-color: #fff;
-`;
-
 export {
   StyledPartnersKeyList,
   StyledPartnersCountryWrapper,
   StyledPartnersCardList,
-  StyledPartnersButtonShowMore,
 };
