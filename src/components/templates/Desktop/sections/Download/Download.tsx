@@ -35,7 +35,7 @@ const Download = () => {
                 textUnderline
                 hover="underline-none"
                 key="0"
-                href="https://forum.onlyoffice.com"
+                href="https://community.onlyoffice.com/"
                 target="_blank"
               />,
             ]}

@@ -28,7 +28,7 @@
   "APublicRoomIsCreated" : "A public room is created on behalf of the DocSpace admin. All room participants with the Team Member role are added to the room with the <0>Content Creator</0> role. monday users with the <0>Viewer</0> and <0>Guest</0> roles are not invited to the room. Since the room is public, they will be able to open the files stored in the room for viewing. <br /> <br /> If the board is shared to a group of people (Everyone at \"project name\"), users are not invited to the room. The room is still available for viewing via an external link.",
 
   "QuestionHead": "Reliable support at every step",
-  "QuestionSub": "Encounter a problem? We've got your back. Submit your issues via <0>GitHub</0> or join the <1>ONLYOFFICE forum</1> for quick support and guidance.",
+  "QuestionSub": "Encounter a problem? We've got your back. Submit your issues via <0>GitHub</0> or join the <1>ONLYOFFICE Community</1> for quick support and guidance.",
 
   "AscensioSystem": "© Ascensio System SIA 1998-2025. All right reserved"
 }
