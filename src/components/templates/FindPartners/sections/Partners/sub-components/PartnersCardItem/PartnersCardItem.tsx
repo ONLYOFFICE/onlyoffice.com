@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useRef } from "react";
 import { Trans } from "next-i18next";
 import { PartnersCardImageChecker } from "../PartnersCardImageChecker";
 import { IPartnerCardProps } from "@src/components/templates/FindPartners/FindPartners.types";
@@ -15,14 +15,29 @@ import {
   StyledPartnersLevel,
   StyledPartnersCardItemDesc,
   StyledPartnersCardItemCountryMob,
-  StyledPartnersCardItemLinkMob
+  StyledPartnersCardItemLinkMob,
+  StyledPartnersCardItemDescWrapper
 } from "./PartnersCardItem.styled";
 
 const PartnersCardItemComponent = ({ item, isItemOpen, onToggleCard, t }: IPartnerCardProps) => {
+  const descriptionRef = useRef<HTMLParagraphElement>(null);
+  const handleCardClick = () => {
+    onToggleCard(item.id);
+
+    if (descriptionRef.current) {
+      if (isItemOpen) {
+        descriptionRef.current.style.maxHeight = "0px";
+      } else {
+        descriptionRef.current.style.maxHeight = `${descriptionRef.current.scrollHeight}px`;
+      }
+
+    }
+  }
+
   return (
     <StyledPartnersCardItem
       $isItemOpen={isItemOpen}
-      onClick={() => onToggleCard(item.id)}
+      onClick={handleCardClick}
     >
       <StyledPartnersCardItemLeft>
         {item.logo && item.logo.map((link, index) => (
@@ -51,11 +66,21 @@ const PartnersCardItemComponent = ({ item, isItemOpen, onToggleCard, t }: IPartn
           }
         </StyledPartnersCardItemHead>
         {item.description &&
-          <StyledPartnersCardItemDesc $isItemOpen={isItemOpen}>
-            <Trans components={{br: <br />}}>
-              {item.description}
-            </Trans>
-          </StyledPartnersCardItemDesc>
+          <StyledPartnersCardItemDescWrapper
+            ref={descriptionRef}
+            $isItemOpen={isItemOpen}
+          >
+            <StyledPartnersCardItemDesc $isItemOpen={isItemOpen}>
+              <Trans components={{
+                br: <br />,
+                p: <p />,
+                ul: <ul />,
+                li: <li />,
+              }}>
+                {item.description}
+              </Trans>
+            </StyledPartnersCardItemDesc>
+          </StyledPartnersCardItemDescWrapper>
         }
       </StyledPartnersCardItemRight>
       <StyledPartnersCardItemInfoWrapperMob>
@@ -76,12 +101,18 @@ const PartnersCardItemComponent = ({ item, isItemOpen, onToggleCard, t }: IPartn
       {item.level && item.level !== "No level" && (
         <StyledPartnersLevel
           $level={
-            item.level === "Gold partner" ? t("PartnersLevelGold") :
-            item.level === "Silver partner" ? t("PartnersLevelSilver") : t("PartnersLevelAutorized")
+            item.level === "Gold partner"
+              ? t("PartnersLevelGold")
+              : item.level === "Silver partner"
+                ? t("PartnersLevelSilver")
+                : t("PartnersLevelAutorized")
           }
           $icon={
-            item.level === "Gold partner" ? "/images/templates/find-partners/partners/gold-partner.svg" :
-            item.level === "Silver partner" ? "/images/templates/find-partners/partners/silver-partner.svg" : "/images/templates/find-partners/partners/autorized.svg"
+            item.level === "Gold partner"
+              ? "/images/templates/find-partners/partners/gold-partner.svg"
+              : item.level === "Silver partner"
+                ? "/images/templates/find-partners/partners/silver-partner.svg"
+                : "/images/templates/find-partners/partners/autorized.svg"
           }
         />
       )}
