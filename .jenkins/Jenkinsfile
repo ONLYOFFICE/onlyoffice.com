@@ -274,6 +274,8 @@ pipeline {
           sed -i "s^var_docspace_domain^$docspace_domain^" .env
           sed -i "s^var_docspace_registration_api^$docspace_registration_api^" .env
 
+          sed -i "s^var_next_docs_cloud_signin_api^$docs_cloud_signin_api^" .env
+
           sed -i "s^var_docs_cloud_signin_api^$docs_cloud_signin_api^" .env
           sed -i "s^var_docs_cloud_recaptcha_public_key^$docs_cloud_recaptcha_public_key^" .env
 
