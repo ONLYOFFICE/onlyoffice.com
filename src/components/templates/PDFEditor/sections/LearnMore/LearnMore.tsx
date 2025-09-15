@@ -9,6 +9,7 @@ import { Container } from "@src/components/ui/Container";
 import { BlogCard } from "@src/components/widgets/BlogCard";
 import { items } from "./data/items";
 
+
 const LearnMore = () => {
   const { t } = useTranslation("pdf-editor");
   const { t: t2 } = useTranslation("Editors");

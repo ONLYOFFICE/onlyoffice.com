@@ -18,6 +18,7 @@ import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import { useState, useRef } from "react";
 import { useRouter } from "next/router";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Tools = () => {
   const { t } = useTranslation("docs-enterprise");
@@ -55,7 +56,7 @@ const Tools = () => {
               <StyledCollaborateItem
                 key={index}
                 $title={t(item.title)}
-                $image={item.iconUrl}
+                $image={getAssetUrl(item.iconUrl)}
                 $isActive={isActive}
                 onClick={() => handleTabClick(index)}
               />

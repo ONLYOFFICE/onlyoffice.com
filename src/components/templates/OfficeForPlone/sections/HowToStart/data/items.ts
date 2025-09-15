@@ -1,9 +1,8 @@
 import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IStepCarouselItem[] = [
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-plone/how-to-start/step1.svg"),
+    imgUrl: "/images/templates/office-for-plone/how-to-start/step1.svg",
     heading: "HowToStartStep1",
     headingLinks: [
       {
@@ -17,7 +16,7 @@ export const items: IStepCarouselItem[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-plone/how-to-start/step2.svg"),
+    imgUrl: "/images/templates/office-for-plone/how-to-start/step2.svg",
     heading: "HowToStartStep2",
     headingLinks: [
       {
@@ -31,7 +30,7 @@ export const items: IStepCarouselItem[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-plone/how-to-start/step3.svg"),
+    imgUrl: "/images/templates/office-for-plone/how-to-start/step3.svg",
     heading: "HowToStartStep3",
   },
 ];

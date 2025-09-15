@@ -1,5 +1,5 @@
-export function getAssetUrl(path: string): string {
-  if (!path) return path
+export function getAssetUrl(path?: string): string {
+  if (!path) return ""
   const url = path.trim()
   if (/^(https?:)?\/\//i.test(url) || url.startsWith('data:')) return url
   const base = process.env.NEXT_PUBLIC_STATIC_URL || ''

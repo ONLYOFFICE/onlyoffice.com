@@ -7,8 +7,8 @@ import { WatchVideo } from "@src/components/widgets/WatchVideo";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
-
 import { getAssetUrl } from "@utils/getAssetUrl";
+
 const HowToStart = () => {
   const { t } = useTranslation("office-for-chamilo");
 

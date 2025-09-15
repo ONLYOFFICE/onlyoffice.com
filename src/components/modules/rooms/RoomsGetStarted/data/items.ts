@@ -1,6 +1,6 @@
 import { ISolutionCard } from "@src/components/widgets/SolutionCard";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
+
 interface ISolutionCardExtended extends Omit<ISolutionCard, "text"> {
   text?: { label?: string; links?: { url: string }[] } | string;
 }
@@ -13,7 +13,7 @@ export interface IGetStartedItems {
 export const items: IGetStartedItems = {
   items: [
     {
-      imgUrl: getAssetUrl("/images/modules/rooms/rooms-get-started/docspace.svg"),
+      imgUrl: "/images/modules/rooms/rooms-get-started/docspace.svg",
       heading: "OnPremisesOrInTheCloud",
       text: "CreateRoomsWithinYourSecureDocSpace",
       links: [
@@ -30,7 +30,7 @@ export const items: IGetStartedItems = {
       ],
     },
     {
-      imgUrl: getAssetUrl("/images/modules/rooms/rooms-get-started/connectors.svg"),
+      imgUrl: "/images/modules/rooms/rooms-get-started/connectors.svg",
       heading: "InThePlatformYouUse",
       text: "ConnectDocSpaceToCollaborateOnOfficeDocuments",
       links: [
@@ -42,7 +42,7 @@ export const items: IGetStartedItems = {
       ],
     },
     {
-      imgUrl: getAssetUrl("/images/modules/rooms/rooms-get-started/collaboration.svg"),
+      imgUrl: "/images/modules/rooms/rooms-get-started/collaboration.svg",
       heading: "InThePlatformYouBuild",
       text: "EmbedRoomsOrTheWholeDocSpace",
       links: [
@@ -56,7 +56,7 @@ export const items: IGetStartedItems = {
   ],
   largeItems: [
     {
-      imgUrl: getAssetUrl("/images/modules/rooms/rooms-get-started/from-pc.svg"),
+      imgUrl: "/images/modules/rooms/rooms-get-started/from-pc.svg",
       heading: "FromYourPC",
       text: "EditDocsOfflineWithFreeOfficeApps",
       links: [
@@ -68,7 +68,7 @@ export const items: IGetStartedItems = {
       ],
     },
     {
-      imgUrl: getAssetUrl("/images/modules/rooms/rooms-get-started/from-mobile.svg"),
+      imgUrl: "/images/modules/rooms/rooms-get-started/from-mobile.svg",
       heading: "FromYourMobileDevices",
       text: "WorkOnDocumentsOnTheGoWithFreeApps",
       links: [

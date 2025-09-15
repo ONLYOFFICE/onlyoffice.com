@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const StyledCard = styled.div`
   display: flex;
@@ -18,7 +19,7 @@ const StyledCard = styled.div`
 
 const StyledCardIcon = styled.div<{ $image: string }>`
   width: 64px;
-  background-image: url(${({ $image }) => $image});
+  background-image: url(${({ $image }) => getAssetUrl($image)});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;

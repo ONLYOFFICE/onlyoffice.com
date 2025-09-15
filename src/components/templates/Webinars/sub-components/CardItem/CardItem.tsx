@@ -198,6 +198,7 @@ const CardItem = ({
           questions: formData.textArea,
           webinarLang,
           from,
+          emailSubject: t("WebinarSubject"),
           hCaptchaResponse: formData.hCaptcha,
           locale,
         }),
