@@ -114,92 +114,92 @@ export const amiDeveloper = {
 };
 
 export const onlineinstaller = {
-  version: "2.0.0",
-  date: "2025, 05, 21",
-  size: "984",
+  version: "2.0.1",
+  date: "2025, 08, 27",
+  size: "952",
   url: "https://github.com/ONLYOFFICE/desktop-onlineinstaller/releases/latest/download/ONLYOFFICEDesktopInstaller.exe",
 };
 
 export const win64Exe = {
-  version: "8.3.3",
-  date: "2025, 04, 17",
-  size: "260",
+  version: "9.0.4",
+  date: "2025, 08, 06",
+  size: "277",
   url: "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/DesktopEditors_x64.exe",
 };
 
 export const win64Msi = {
-  size: "406",
+  size: "424",
   url: "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/DesktopEditors_x64.msi",
 };
 
 export const win86Exe = {
-  version: "8.3.3",
-  date: "2025, 04, 17",
-  size: "240",
+  version: "9.0.4",
+  date: "2025, 08, 06",
+  size: "256",
   url: "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/DesktopEditors_x86.exe",
 };
 
 export const win86Msi = {
-  size: "389",
+  size: "408",
   url: "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/DesktopEditors_x86.msi",
 };
 
 export const win64Xp = {
-  version: "8.3.3",
-  date: "2025, 04, 17",
-  size: "458",
+  version: "9.0.4",
+  date: "2025, 08, 06",
+  size: "465",
   url: "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/DesktopEditors_x64_xp.exe",
 };
 
 export const win86Xp = {
-  size: "447",
+  size: "455",
   url: "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/DesktopEditors_x86_xp.exe",
 };
 
 export const macosIntel = {
-  version: "9.0.0",
-  date: "2025, 06, 19",
-  size: "352",
+  version: "9.0.4",
+  date: "2025, 08, 06",
+  size: "353",
   url: "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/ONLYOFFICE-x86_64.dmg",
 };
 
 export const macosApple = {
-  size: "328",
+  size: "343",
   url: "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/ONLYOFFICE-arm.dmg",
 };
 
 export const macosX86 = {
-  version: "9.0.0",
-  date: "2025, 06, 19",
-  size: "389",
+  version: "9.0.4",
+  date: "2025, 08, 06",
+  size: "390",
   url: "https://download.onlyoffice.com/install/desktop/editors/mac/v8/distrib/ONLYOFFICE.dmg",
 };
 
 export const lindeb = {
-  version: "9.0.0",
-  date: "2025, 06, 19",
-  size: "275",
+  version: "9.0.4",
+  date: "2025, 08, 06",
+  size: "292",
   url: "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyoffice-desktopeditors_amd64.deb",
 };
 
 export const linrpm = {
-  version: "9.0.0",
-  date: "2025, 06, 19",
-  size: "281",
+  version: "9.0.4",
+  date: "2025, 08, 06",
+  size: "285",
   url: "https://github.com/ONLYOFFICE/DesktopEditors/releases/latest/download/onlyoffice-desktopeditors.x86_64.rpm",
 };
 
 export const linsnap = {
-  version: "8.3.3",
-  date: "2025, 04, 21",
+  version: "9.0.4",
+  date: "2025, 08, 26",
 };
 
 export const linflatpak = {
-  version: "9.0.0",
-  date: "2025, 06, 19",
+  version: "9.0.4",
+  date: "2025, 08, 11",
 };
 
 export const appimageDesktopeditors = {
-  version: "9.0.0",
-  date: "2025, 06, 24",
+  version: "9.0.4",
+  date: "2025, 08, 12",
 };
