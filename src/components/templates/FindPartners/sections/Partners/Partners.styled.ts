@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
-import { Button } from "@src/components/ui/Button";
 
 const StyledPartnersKeyList = styled.ul`
   display: flex;
