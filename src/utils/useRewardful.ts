@@ -28,6 +28,7 @@ export const useRewardful = ({ onReady }: { onReady?: () => void }) => {
       window.rewardful = rewardfulFn;
     }
 
+    if (!document.querySelector('script[src="https://r.wdfl.co/rw.js"]')) {
     const script = document.createElement("script");
     script.src = "https://r.wdfl.co/rw.js";
     script.async = true;
@@ -38,10 +39,9 @@ export const useRewardful = ({ onReady }: { onReady?: () => void }) => {
       });
     };
     document.head.appendChild(script);
+    }
 
     return () => {
-      document.head.removeChild(script);
-
       const recaptchaContainers = document.querySelectorAll(
         'iframe[src*="google.com/recaptcha"], div.g-recaptcha-bubble-arrow, div[style*="z-index: 2000000000"]',
       );
