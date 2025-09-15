@@ -83,6 +83,7 @@ const SignUp = () => {
     onReady: () => {
       const id = getClientReferenceId();
       const token = getAffiliateToken();
+      console.log("__ Rewardful: ", id, token);
 
       setAffiliate((prev) =>
         prev.id === id && prev.token === token ? prev : { id, token },
