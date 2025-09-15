@@ -32,7 +32,7 @@
   "Password": "Senha",
   "PasswordIsEmpty": "Senha está vazia",
   "ThePasswordMustContainAtLeast8Characters": "A senha deve conter pelo menos 8 caracteres",
-  "CheckYourEmail": "Check your email!",
+  "CheckYourEmail": "Verifique seu e-mail!",
   "WeVeJustSentYouAConfirmationLinkToYourEmail": "We've just sent you a confirmation link to your email: <0>{{email}}</0>",
   "TheLinkIsValidFor60Minutes": "O link pode ser inválido, expirado ou já utilizado. <br /> Tente novamente ou solicite um novo link.",
   "BackToSignUp": "Voltar para Cadastrar-se",
@@ -50,8 +50,8 @@
   "IncorrectEmailOrPassword": "E-mail ou senha incorreta",
   "YourEmail": "Seu e-mail:",
   "IfAUserWithThisEmailExists": "Se existir um usuário com este e-mail, a instrução de alteração de senha foi enviada para o endereço.",
-  "NoThirdPartyAccountFound": "No third party account found",
-  "YourConfirmationLinkForOODocSpace": "Your confirmation link for ONLYOFFICE DocSpace",
-  "YourLoginLinkToOODocSpace": "Your login link to ONLYOFFICE DocSpace",
-  "OOPasswordReminder": "ONLYOFFICE Password Reminder"
+  "NoThirdPartyAccountFound": "Nenhuma conta de terceiro encontrada",
+  "YourConfirmationLinkForOODocSpace": "Seu link de confirmação para o ONLYOFFICE DocSpace",
+  "YourLoginLinkToOODocSpace": "Seu link de login para o ONLYOFFICE DocSpace",
+  "OOPasswordReminder": "Lembrete de senha do ONLYOFFICE"
 }

@@ -32,7 +32,7 @@
   "Password": "パスワード*",
   "PasswordIsEmpty": "パスワードが入力されていません",
   "ThePasswordMustContainAtLeast8Characters": "パスワードは少なくとも8 文字を含んでいるはずです",
-  "CheckYourEmail": "Check your email!",
+  "CheckYourEmail": "メールの受信トレイをご確認ください",
   "WeVeJustSentYouAConfirmationLinkToYourEmail": "We've just sent you a confirmation link to your email: <0>{{email}}</0>",
   "TheLinkIsValidFor60Minutes": "The link is valid for 60 minutes and can only be used once. <br /> If you didn't receive an email, please check your spam.",
   "BackToSignUp": "登録に戻る",
@@ -50,8 +50,8 @@
   "IncorrectEmailOrPassword": "メールかパスワードが正しくありません",
   "YourEmail": "メールアドレス:",
   "IfAUserWithThisEmailExists": "このメールアドレスがあるユーザーが存在する場合、パスワード変更の説明書がこのメールアドレスに送信されました。",
-  "NoThirdPartyAccountFound": "No third party account found",
-  "YourConfirmationLinkForOODocSpace": "Your confirmation link for ONLYOFFICE DocSpace",
-  "YourLoginLinkToOODocSpace": "Your login link to ONLYOFFICE DocSpace",
-  "OOPasswordReminder": "ONLYOFFICE Password Reminder"
+  "NoThirdPartyAccountFound": "サードパーティのアカウントが見つかりませんでした",
+  "YourConfirmationLinkForOODocSpace": "ONLYOFFICE DocSpaceの確認リンク",
+  "YourLoginLinkToOODocSpace": "ONLYOFFICE DocSpaceへのログインリンク",
+  "OOPasswordReminder": "ONLYOFFICE パスワード リマインダー"
 }

@@ -32,7 +32,7 @@
   "Password": "Contraseña*",
   "PasswordIsEmpty": "El campo Contraseña está vacío",
   "ThePasswordMustContainAtLeast8Characters": "La contraseña debe contener al menos 8 caracteres",
-  "CheckYourEmail": "Check your email!",
+  "CheckYourEmail": "¡Comprueba tu correo electrónico!",
   "WeVeJustSentYouAConfirmationLinkToYourEmail": "We've just sent you a confirmation link to your email: <0>{{email}}</0>",
   "TheLinkIsValidFor60Minutes": "The link is valid for 60 minutes and can only be used once. <br /> If you didn't receive an email, please check your spam.",
   "BackToSignUp": "Volver a la página de registro",
@@ -50,8 +50,8 @@
   "IncorrectEmailOrPassword": "Contraseña o email incorrecto",
   "YourEmail": "Su e-mail:",
   "IfAUserWithThisEmailExists": "Si existe un usuario con este correo electrónico, la instrucción para cambiar la contraseña se ha enviado a esta dirección de correo electrónico.",
-  "NoThirdPartyAccountFound": "No third party account found",
-  "YourConfirmationLinkForOODocSpace": "Your confirmation link for ONLYOFFICE DocSpace",
-  "YourLoginLinkToOODocSpace": "Your login link to ONLYOFFICE DocSpace",
-  "OOPasswordReminder": "ONLYOFFICE Password Reminder"
+  "NoThirdPartyAccountFound": "Ninguna cuenta del tercer partido encontrada",
+  "YourConfirmationLinkForOODocSpace": "Su enlace de confirmación para ONLYOFFICE DocSpace",
+  "YourLoginLinkToOODocSpace": "Su enlace de acceso a ONLYOFFICE DocSpace",
+  "OOPasswordReminder": "Recordatorio de contraseña ONLYOFFICE"
 }
