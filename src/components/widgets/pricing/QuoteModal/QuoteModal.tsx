@@ -67,7 +67,8 @@ const QuoteModal = <T,>({
   const isEmailValid =
     quoteFormData.email.length > 0 && validateEmail(quoteFormData.email);
   const isCompanyValid = quoteFormData.companyName.length > 0;
-  const isPhoneValid = quoteFormData.phone.length > 0;
+  const phonePrefix = phoneInputRef.current?.getPrefix() || "";
+  const isPhoneValid = quoteFormData.phone.replace(phonePrefix, "").length > 0;
 
   const checkFormValid = (testEmailOverride?: boolean) => {
     setIsFormValid(

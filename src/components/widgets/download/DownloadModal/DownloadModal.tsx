@@ -69,7 +69,8 @@ const DownloadModal = ({
   const isEmailValid =
     formData.email.length > 0 && validateEmail(formData.email);
   const isCompanyValid = formData.companyName.length > 0;
-  const isPhoneValid = formData.phone.length > 0;
+  const phonePrefix = phoneInputRef.current?.getPrefix() || "";
+  const isPhoneValid = formData.phone.replace(phonePrefix, "").length > 0;
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({

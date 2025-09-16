@@ -96,7 +96,8 @@ const Hero = () => {
     formData.timeZoneOffset.length > 0;
   const isLanguageValid = formData.lang.length > 0;
   const isHCaptchaValid = isTestEmailValid ? true : formData.hcaptcha !== null;
-  const isPhoneValid = formData.phone.length > 0;
+  const phonePrefix = phoneInputRef.current?.getPrefix() || "";
+  const isPhoneValid = formData.phone.replace(phonePrefix, "").length > 0;
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
