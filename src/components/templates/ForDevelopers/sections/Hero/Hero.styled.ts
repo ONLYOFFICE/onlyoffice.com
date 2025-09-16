@@ -5,7 +5,6 @@ import { Heading } from "@src/components/ui/Heading";
 
 import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
-  margin-top: -72px;
   background-repeat: no-repeat;
   background-color: #333333;
 `;

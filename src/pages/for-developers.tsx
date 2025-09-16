@@ -26,6 +26,7 @@ const ForDevelopersPage = ({ locale }: ILocale) => {
           highlight={{
             buttonId: "oo-menu-item-btn-developers",
           }}
+          backgroundColor="#333333"
         />
       </Layout.Header>
       <Layout.Main>
