@@ -146,7 +146,7 @@ const StyledFeatureIconsButton = styled(Link)<{
   display: inline-block;
   transition: 0.2s ease;
   cursor: pointer;
-  text-transform: ${({ $isLink }) => ($isLink ? "" : "uppercase")};
+  text-transform: ${({ $isLink }) => ($isLink ? "" : "capitalize")};
   letter-spacing: ${({ $isLink }) => ($isLink ? "0" : "0.08em")};
   font-weight: ${({ $isLink }) => ($isLink ? "400" : "600")};
 
