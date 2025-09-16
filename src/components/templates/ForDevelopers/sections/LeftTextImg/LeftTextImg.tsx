@@ -55,8 +55,6 @@ const LeftTextImg = ({ locale }: ILocale) => {
               id="app-directory-for-developers"
               href={getLink("marketplace", locale)}
               label={t("AvailablePlugins")}
-              textTransform="uppercase"
-              fontSize="13px"
             />
             <StyledLeftTextImgTextAfter>
               <Trans

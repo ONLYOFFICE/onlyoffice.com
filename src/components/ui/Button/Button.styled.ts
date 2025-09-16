@@ -8,20 +8,17 @@ const StyledButton = styled.button<{
   $fullWidth: IButton["fullWidth"];
   $borderRadius: IButton["borderRadius"];
   $backgroundColor: IButton["backgroundColor"];
-  $textTransform: IButton["textTransform"];
-  $fontSize: IButton["fontSize"];
 }>`
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: ${(props) => props.$borderRadius};
-  font-size: ${(props) => props.$fontSize || "16px"};
+  font-size: 16px;
   font-weight: 600;
   line-height: 22px;
   width: ${(props) => (props.$fullWidth ? "100%" : "auto")};
   min-height: 56px;
   text-align: center;
-  text-transform: ${(props) => props.$textTransform};
   cursor: pointer;
 
   padding: ${(props) => {

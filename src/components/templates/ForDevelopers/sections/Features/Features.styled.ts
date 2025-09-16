@@ -106,7 +106,6 @@ const StyledFeatureIconsButton = styled.a<{
   display: inline-block;
   transition: 0.2s ease;
   cursor: pointer;
-  text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 600;
 

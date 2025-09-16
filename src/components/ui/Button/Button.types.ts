@@ -35,10 +35,6 @@ export interface IButton {
   borderRadius?: string;
   /** The background color. */
   backgroundColor?: string;
-  /** The text transform. */
-  textTransform?: "uppercase" | "lowercase" | "capitalize";
-  /** The font size. */
-  fontSize?: string;
   /** Callback function triggered on click. */
   onClick?: () => void;
 }
