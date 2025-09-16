@@ -126,6 +126,7 @@ const Partners = ({ partners }: IPartners) => {
             label={t("PartnersSelectCountry")}
             placeholder={t("PartnersSelectCountry")}
             withSelectedIcon={true}
+            enableScrollToSelected={true}
           />
         </StyledPartnersCountryWrapper>
 

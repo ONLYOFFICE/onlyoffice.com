@@ -29,6 +29,7 @@ const Select = ({
   maxWidth = "472px",
   withReset,
   withSelectedIcon,
+  enableScrollToSelected = false,
 }: ISelect) => {
   const { t } = useTranslation("Select");
   const selectRef = useRef<HTMLDivElement>(null);
@@ -39,7 +40,7 @@ const Select = ({
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (!multiple) {
+    if (!multiple && enableScrollToSelected) {
       if (selected.length > 0) {
         const option = selected[0];
         if (optionsRef.current && optionRefs.current[option.value]) {
@@ -49,7 +50,7 @@ const Select = ({
         }
       }
     }
-  }, [isOpen, selected, multiple]);
+  }, [isOpen, selected, multiple, enableScrollToSelected]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
