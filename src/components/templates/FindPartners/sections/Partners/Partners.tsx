@@ -125,6 +125,7 @@ const Partners = ({ partners }: IPartners) => {
             options={options}
             label={t("PartnersSelectCountry")}
             placeholder={t("PartnersSelectCountry")}
+            withSelectedIcon={true}
           />
         </StyledPartnersCountryWrapper>
 

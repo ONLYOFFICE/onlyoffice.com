@@ -34,8 +34,22 @@ const Select = ({
   const selectRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef(null);
   const optionsRef = useRef<HTMLDivElement>(null);
+  const optionRefs = useRef<Record<string, HTMLButtonElement | null>>({});
 
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (!multiple) {
+      if (selected.length > 0) {
+        const option = selected[0];
+        if (optionsRef.current && optionRefs.current[option.value]) {
+          optionsRef.current.scrollTo({
+            top: optionRefs.current[option.value]?.offsetTop || 0,
+          });
+        }
+      }
+    }
+  }, [isOpen, selected, multiple]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -161,6 +175,13 @@ const Select = ({
               onClick={(e) => {
                 e.stopPropagation();
                 toggleOption(option);
+              }}
+              ref={(el) => {
+                if (el) {
+                  optionRefs.current[option.value] = el;
+                } else {
+                  delete optionRefs.current[option.value];
+                }
               }}
             >
               {option.label}
