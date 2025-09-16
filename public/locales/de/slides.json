@@ -7,6 +7,8 @@
 
   "Feature1Title": "Beeindrucken Sie Ihr Publikum mit Ihren Arbeiten und Projekten",
   "Feature1Desc": "Drücken Sie Ihre Ideen mit umfangreichen Formatierungstools, Objekten und Stiloptionen aus. Mit dem Editor von ONLYOFFICE können Sie PowerPoint online erstellen, PPTX-, PPT-, ODP- und PPSX-Dateien öffnen und Präsentationen im PDF-, PNG-, JPG- Format speichern.",
+  "Feature1ImgUrl": "/images/templates/slides/features/de/screen1.png",
+  "Feature1ImgUrl2x": "/images/templates/slides/features/de/screen1@2x.png",
   "Feature2Title": "Inhalte mit beliebiger Komplexität",
   "Feature2Desc": "Erstellen Sie klare Schemata und Skizzen mit Autoformen und SmartArt-Grafiken, fügen Sie anpassbare Diagramme, Tabellen und Gleichungen für eine eindeutige Statistikanzeige hinzu. Machen Sie Ihre Präsentation interaktiver mit vorgefertigten Übergängen und Animationen. Sparen Sie Zeit: Verwenden Sie den Folienmaster, gruppieren Sie eine beliebige Anzahl von Objekten und wenden Sie Einstellungen in großen Mengen an.",
   "Feature2ImgUrl": "/images/templates/slides/features/de/screen2.png",
@@ -24,7 +26,7 @@
   "Feature5ImgUrl": "/images/templates/slides/features/de/screen5.png",
   "Feature5ImgUrl2x": "/images/templates/slides/features/de/screen5@2x.png",
   "Feature6Title": "KI verwenden",
-  "Feature6Desc": "Führen Sie mit dem ChatGPT-Plugin Aufgaben aus, die das Verstehen oder Erzeugen natürlicher Sprache beinhalten. Erhalten Sie genaue Antworten auf Ihre Fragen, finden Sie schnell Informationen, generieren Sie Texte, erstellen Sie Ihren Code, usw. direkt im Editor.",
+  "Feature6Desc": "Verbinden Sie einen beliebigen KI-Assistenten, um schneller zu arbeiten. Aktivieren Sie den KI-Inline-Agenten für die intelligente Interaktion mit dem Editor. Führen Sie grundlegende Aktionen wie das Duplizieren von Folien, das Festlegen des Folienhintergrunds oder das Einfügen von Formen aus, ohne lange Menüs durchsuchen zu müssen. Erstellen Sie datenbasierte Diagramme und Bilder für Ihre Folien basierend auf einfachen Beschreibungen, integriert in Ihren Workflow.",
   "Feature6ImgUrl": "/images/templates/slides/features/de/screen6.png",
   "Feature6ImgUrl2x": "/images/templates/slides/features/de/screen6@2x.png",
   "Feature7Title": "Weitere Möglichkeiten zur Erstellung von tollen Präsentationen",

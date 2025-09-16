@@ -7,6 +7,8 @@
 
   "Feature1Title": "Impressionnez votre audience avec vos travaux et projets",
   "Feature1Desc": "Exprimez librement vos idées en utilisant des outils de mise en forme, des objets et des options de style. L'outil de présentations ONLYOFFICE fonctionne avec les présentations PowerPoint et peut les enregistrer en PDF, PNG, JPG. Les fichiers PPTX, PPT, ODP et PPSX sont également pris en charge.",
+  "Feature1ImgUrl": "/images/templates/slides/features/fr/screen1.png",
+  "Feature1ImgUrl2x": "/images/templates/slides/features/fr/screen1@2x.png",
   "Feature2Title": "Créez des contenus, quelle que soit leur complexité",
   "Feature2Desc": "Créez des schémas et des croquis clairs avec des formes automatiques et des graphiques SmartArt, ajoutez des graphiques, des tableaux et des équations personnalisables pour un affichage distinct des statistiques. Rendez votre présentation plus interactive grâce à des transitions et des animations prêtes à l'emploi. Gagnez du temps : utilisez le masque de diapositives, regroupez un nombre illimité d'objets et appliquez des paramètres en bloc.",
   "Feature2ImgUrl": "/images/templates/slides/features/fr/screen2.png",
@@ -24,7 +26,7 @@
   "Feature5ImgUrl": "/images/templates/slides/features/fr/screen5.png",
   "Feature5ImgUrl2x": "/images/templates/slides/features/fr/screen5@2x.png",
   "Feature6Title": "Utilisez l'aide de l'IA",
-  "Feature6Desc": "Effectuez des tâches qui impliquent la compréhension ou la génération de langage naturel à l'aide du plugin ChatGPT. Obtenez des réponses précises à vos questions, trouvez rapidement des informations, générez des textes, construisez votre code, etc. directement dans l'éditeur.",
+  "Feature6Desc": "Connectez n'importe quel assistant IA pour travailler plus rapidement. Activez l'agent IA intégré pour interagir intelligemment avec l'éditeur. Effectuez des actions de base telles que dupliquer des diapositives, définir l'arrière-plan d'une diapositive ou insérer des formes sans avoir à parcourir les menus. Créez des diagrammes et des images basés sur des données pour vos diapositives à partir de descriptions simples, le tout intégré à votre flux de travail.",
   "Feature6ImgUrl": "/images/templates/slides/features/fr/screen6.png",
   "Feature6ImgUrl2x": "/images/templates/slides/features/fr/screen6@2x.png",
   "Feature7Title": "Passez à la vitesse supérieure avec vos diapos",

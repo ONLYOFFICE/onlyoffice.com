@@ -7,6 +7,8 @@
 
   "Feature1Title": "用您的作品和项目打动观众",
   "Feature1Desc": "借助一系列丰富的格式工具、对象和样式选项展示您的任何创意。ONLYOFFICE演示文稿编辑软件可与PowerPoint配合使用，并另存为PDF、PNG、JPG格式。支持PPTX、PPT和ODP和PPSX文件。",
+  "Feature1ImgUrl": "/images/templates/slides/features/zh/screen1.png",
+  "Feature1ImgUrl2x": "/images/templates/slides/features/zh/screen1@2x.png",
   "Feature2Title": "构建任何复杂程度的内容",
   "Feature2Desc": "用自选形状和 SmartArt 图形创建清晰的方案和草图，添加自定义的图表、表格和方程，以获得独特的统计显示。用切换和动画效果使您的演示文稿更优秀。节省时间：使用幻灯片模板，分组对象并批量应用设置。",
   "Feature2ImgUrl": "/images/templates/slides/features/zh/screen2.png",
@@ -24,7 +26,7 @@
   "Feature5ImgUrl": "/images/templates/slides/features/zh/screen5.png",
   "Feature5ImgUrl2x": "/images/templates/slides/features/zh/screen5@2x.png",
   "Feature6Title": "使用 AI 助手",
-  "Feature6Desc": "借助 ChatGPT 插件执行涉及理解或生成自然语言的任务。获得问题的准确答案、快速查找信息、生成文本、构建代码...这些工作在编辑器中即可直接完成。",
+  "Feature6Desc": "连接任何 AI 助手，提升工作效率。激活 AI 内联智能体，实现与编辑器的智能交互。无需搜索菜单，即可执行复制幻灯片、设置幻灯片背景、插入形状等基本操作。用户仅需提供简单描述，即可自动为幻灯片创建数据驱动的图表和图像，并将全部功能集成到现有工作流程中。",
   "Feature6ImgUrl": "/images/templates/slides/features/zh/screen6.png",
   "Feature6ImgUrl2x": "/images/templates/slides/features/zh/screen6@2x.png",
   "Feature7Title": "将您的幻灯片提升到新高度",

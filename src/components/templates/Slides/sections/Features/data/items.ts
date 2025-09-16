@@ -68,6 +68,9 @@ export const items: IFeatureImageItem[] = [
   {
     heading: "Feature6Title",
     text: "Feature6Desc",
+    links: [
+      { label: "LearnMore", href: "/ai-assistants" },
+    ],
     image: {
       url: "Feature6ImgUrl",
       url2x: "Feature6ImgUrl2x",
