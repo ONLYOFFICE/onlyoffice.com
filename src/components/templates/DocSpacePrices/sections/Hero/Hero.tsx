@@ -34,6 +34,7 @@ const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
       const token = getAffiliateToken();
       const params = getClientReferenceParam();
 
+      console.log("Rewardful ready!", id, token, params);
       setAffiliate((prev) =>
         prev.id === id && prev.token === token && prev.params === params
           ? prev
