@@ -144,6 +144,8 @@ const FeatureIconsItem = ({
                   ) : (
                     <StyledFeatureIconsButton
                       key={index}
+                      variant="secondary"
+                      as={"a"}
                       href={href}
                       target={isExternal ? "_blank" : undefined}
                       rel={isExternal ? "noopener noreferrer" : undefined}
