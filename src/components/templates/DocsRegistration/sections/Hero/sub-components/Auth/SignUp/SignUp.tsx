@@ -49,14 +49,6 @@ const SignUp = () => {
     return { ...item, label: t(item.label) };
   });
 
-  const [affiliate, setAffiliate] = useState<{
-    id?: string;
-    token?: string;
-  }>({
-    id: "",
-    token: "",
-  });
-
   const [formData, setFormData] = useState<ISignUpData>(initialFormData);
   const [selectedPlatform, setSelectedPlatform] = useState<ISelectOption[]>([]);
   const [isEmpty, setIsEmpty] = useState({

@@ -1,6 +1,7 @@
 interface IRewardfulFunction {
   (...args: unknown[]): void;
   q?: unknown[];
+  _rwq?: string;
   referral?: string;
   affiliate?: {
     token?: string;
