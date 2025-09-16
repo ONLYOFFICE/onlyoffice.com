@@ -19,6 +19,7 @@ import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { hasOption } from "../../utils/typeGuards";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { useClientOS } from "../../utils/useClientOs";
 
 import { StyledSelectInputIcon } from "@src/components/ui/Select/Select.styled";
@@ -69,6 +70,7 @@ const Hero = () => {
     name: "default",
     email: "default",
     file: "default",
+    hcaptcha: "default",
   });
 
   const [errorFileName, setErrorFileName] = useState<string>("");
@@ -229,7 +231,14 @@ const Hero = () => {
     }
   };
 
-  const handleCheckStatusEmail = () => {
+  const handleCheckStatusEmail = async () => {
+    const isTestEmailValid = await validateTestEmail(formData.email);
+
+    setCheckStatus((prev) => ({
+      ...prev,
+      hcaptcha: isTestEmailValid ? "success" : "default",
+    }));
+
     if (validateEmail(formData.email)) {
       setCheckStatus((prev) => ({
         ...prev,
@@ -241,6 +250,17 @@ const Hero = () => {
         email: "error",
       }));
     }
+  };
+
+  const handleHCaptchaChange = (token: string | null) => {
+    setFormData({
+      ...formData,
+      hcaptcha: token,
+    });
+    setCheckStatus((prev) => ({
+      ...prev,
+      hcaptcha: token ? "success" : "default",
+    }));
   };
 
   const clearData = () => {
@@ -259,6 +279,7 @@ const Hero = () => {
       name: "default",
       email: "default",
       file: "default",
+      hcaptcha: "default",
     });
     setErrorFileName("");
     setSelectedProduct([]);
@@ -578,12 +599,8 @@ const Hero = () => {
           <StyledHeroHCaptchaWrapper>
             <HCaptcha
               ref={hCaptchaRef}
-              onVerify={(token) => {
-                setFormData((prev) => ({ ...prev, hcaptcha: token }));
-              }}
-              onExpire={() => {
-                setFormData((prev) => ({ ...prev, hcaptcha: null }));
-              }}
+              onVerify={handleHCaptchaChange}
+              onExpire={() => handleHCaptchaChange(null)}
             />
             <StyledHeroAgreeText color="#808080">
               <Trans
@@ -622,7 +639,7 @@ const Hero = () => {
               disabled={
                 checkStatus.name !== "success" ||
                 checkStatus.email !== "success" ||
-                formData.hcaptcha === null
+                checkStatus.hcaptcha !== "success"
               }
               status={loadStatus}
               fullWidth={true}

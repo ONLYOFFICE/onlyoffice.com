@@ -5,6 +5,7 @@ import { Text } from "@src/components/ui/Text";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Link } from "@src/components/ui/Link";
 import { validateFullName, validateEmail } from "@src/utils/validators";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { getFromParam } from "@src/utils/getParams";
 import { downloadUrl } from "../../utils/downloadUrl";
 import { ILoaderButton } from "@src/components/ui/LoaderButton";
@@ -37,7 +38,7 @@ const CardForm = ({
   const { t } = useTranslation("private-rooms");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
   const refHCaptcha = useRef<ReactCaptcha | null>(null);
-  
+
   const pageTrack = usePageTrack();
 
   const [formData, setFormData] = useState<IFormData>({
@@ -59,6 +60,10 @@ const CardForm = ({
       ...formData,
       hCaptcha: token,
     });
+    setCheckStatus((prev) => ({
+      ...prev,
+      hCaptcha: token ? "success" : "default",
+    }));
   };
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -97,7 +102,14 @@ const CardForm = ({
     }
   };
 
-  const handleCheckStatusEmail = () => {
+  const handleCheckStatusEmail = async () => {
+    const isTestEmailValid = await validateTestEmail(formData.email);
+
+    setCheckStatus((prev) => ({
+      ...prev,
+      hCaptcha: isTestEmailValid ? "success" : "default",
+    }));
+
     if (validateEmail(formData.email)) {
       setCheckStatus((prev) => ({
         ...prev,
@@ -145,20 +157,20 @@ const CardForm = ({
     try {
       setStatus("loading");
 
-        const responsePrivateRooms = await fetch("/api/private-rooms", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            fullName: formData.fullName ?? "",
-            company: formData.companyName ?? "",
-            email: formData.email ?? "",
-            from: from ?? "",
-          hCaptchaResponse: formData.hCaptcha ?? "",
-          }),
+      const responsePrivateRooms = await fetch("/api/private-rooms", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: formData.fullName ?? "",
+          company: formData.companyName ?? "",
+          email: formData.email ?? "",
+          from: from ?? "",
+          hCaptchaResponse: formData.hCaptcha ?? null,
+        }),
       });
-        const dataPrivateRooms = await responsePrivateRooms.json();
+      const dataPrivateRooms = await responsePrivateRooms.json();
 
       if (
         dataPrivateRooms.status === "errorHCaptchaInvalid" ||
@@ -167,18 +179,18 @@ const CardForm = ({
         setStatus("error");
       }
 
-        if (dataPrivateRooms.status === "success") {
-          pageTrack('private-rooms-request');
+      if (dataPrivateRooms.status === "success") {
+        pageTrack("private-rooms-request");
 
-          setStatus("success");
-          downloadUrl(download_url);
-        }
+        setStatus("success");
+        downloadUrl(download_url);
+      }
 
-        if (openModal && dataPrivateRooms.status === "success") {
-          setTimeout(() => {
-            setOpenModal(false);
-          }, 5000);
-        }
+      if (openModal && dataPrivateRooms.status === "success") {
+        setTimeout(() => {
+          setOpenModal(false);
+        }, 5000);
+      }
     } catch (error) {
       setStatus("error");
       console.error(error);
@@ -221,7 +233,7 @@ const CardForm = ({
                   label={t("CardFormFullNameIsEmpty")}
                   color="#CB0000"
                 />
-            )}
+              )}
             {checkStatus.fullName === "error" &&
               formData.fullName.length > 0 && (
                 <Text
@@ -229,7 +241,7 @@ const CardForm = ({
                   label={t("CardFormFullNameIsIncorrect")}
                   color="#CB0000"
                 />
-            )}
+              )}
           </StyledCardFormInputWrapper>
           <StyledCardFormInputWrapper>
             <Input
@@ -253,7 +265,7 @@ const CardForm = ({
                   label={t("CardFormCompanyNameIsEmpty")}
                   color="#CB0000"
                 />
-            )}
+              )}
           </StyledCardFormInputWrapper>
           <StyledCardFormInputWrapper>
             <Input
@@ -323,7 +335,7 @@ const CardForm = ({
               checkStatus.fullName !== "success" ||
               checkStatus.companyName !== "success" ||
               checkStatus.email !== "success" ||
-              formData.hCaptcha === null
+              checkStatus.hCaptcha !== "success"
             }
             onClick={handleSubmit}
             status={status}

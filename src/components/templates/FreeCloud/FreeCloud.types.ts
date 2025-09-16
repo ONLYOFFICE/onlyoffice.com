@@ -6,7 +6,7 @@ interface IDataForm {
   youAre: string;
   yourWebsiteURL: string;
   hCaptchaToken: string | null;
-};
+}
 
 interface ICheckStatus {
   firstName: "default" | "success" | "error";
@@ -15,15 +15,12 @@ interface ICheckStatus {
   portalName: "default" | "success" | "error";
   yourWebsiteURL: "default" | "success" | "error";
   youAre?: "default" | "success" | "error";
-};
+  hCaptchaToken?: "default" | "success" | "error";
+}
 
 interface IFaqItems {
   label: string;
   content: string;
 }
 
-export type {
-  IDataForm,
-  ICheckStatus,
-  IFaqItems
-}
+export type { IDataForm, ICheckStatus, IFaqItems };

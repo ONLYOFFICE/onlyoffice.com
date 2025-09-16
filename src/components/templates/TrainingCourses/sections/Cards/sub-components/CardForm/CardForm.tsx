@@ -6,6 +6,7 @@ import { Text } from "@src/components/ui/Text";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Link } from "@src/components/ui/Link";
 import { validateFullName, validateEmail } from "@src/utils/validators";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { getFromParam } from "@src/utils/getParams";
 import { ILoaderButton } from "@src/components/ui/LoaderButton";
 import { preferredLang } from "./data/preferredLang";
@@ -74,6 +75,10 @@ const CardForm = ({
       ...formData,
       hCaptcha: token,
     });
+    setCheckStatus((prev) => ({
+      ...prev,
+      hCaptcha: token ? "success" : "default",
+    }));
   };
 
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -138,7 +143,14 @@ const CardForm = ({
     }
   };
 
-  const handleCheckStatusEmail = () => {
+  const handleCheckStatusEmail = async () => {
+    const isTestEmailValid = await validateTestEmail(formData.email);
+
+    setCheckStatus((prev) => ({
+      ...prev,
+      hCaptcha: isTestEmailValid ? "success" : "default",
+    }));
+
     if (validateEmail(formData.email)) {
       setCheckStatus((prev) => ({
         ...prev,
@@ -204,7 +216,7 @@ const CardForm = ({
           course: course ?? "",
           from: from ?? "",
           languageCode: locale ?? "",
-          hCaptchaResponse: formData.hCaptcha ?? "",
+          hCaptchaResponse: formData.hCaptcha ?? null,
         }),
       });
       const dataWhitepapers = await responseWhitepapers.json();
@@ -417,7 +429,7 @@ const CardForm = ({
               checkStatus.fullName !== "success" ||
               checkStatus.companyName !== "success" ||
               checkStatus.email !== "success" ||
-              formData.hCaptcha === null ||
+              checkStatus.hCaptcha !== "success" ||
               formData.preferredLang.length === 0 ||
               formData.timeZone.length === 0
             }

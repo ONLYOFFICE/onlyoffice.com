@@ -19,6 +19,7 @@ import { ISelectOption } from "@src/components/ui/Select/Select.types";
 import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { useRewardful } from "@src/utils/useRewardful";
 import { validateEmail } from "@src/utils/validators";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
@@ -70,6 +71,7 @@ const SignUp = ({
   const [isFormLoading, setisFormLoading] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
   const [selected, setSelected] = useState<ISelectOption[]>([]);
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   const emailIsValid =
     formData.email.trim().length > 0 && validateEmail(formData.email);
@@ -112,7 +114,7 @@ const SignUp = ({
     }
   };
 
-  const onSubmit = async (token?: string) => {
+  const onSubmit = async (token?: string | null) => {
     if (!emailIsValid) {
       return;
     }
@@ -135,7 +137,7 @@ const SignUp = ({
           register: t("YourConfirmationLinkForOODocSpace"),
           login: t("YourLoginLinkToOODocSpace"),
         },
-        hCaptchaResponse: token,
+        hCaptchaResponse: token || null,
       }),
     });
 
@@ -324,11 +326,13 @@ const SignUp = ({
         <StyledSignUpBox>
           <Input
             onChange={(e) => handleInputChange("email", e.target.value)}
-            onBlur={() => {
+            onBlur={async () => {
               setIsEmpty((prev) => ({
                 ...prev,
                 email: formData.email.length === 0,
               }));
+              const isTestEmail = await validateTestEmail(formData.email);
+              setIsTestEmailValid(isTestEmail === true);
               checkFormValid();
             }}
             data-testid="sign-up-email-input"
@@ -400,7 +404,13 @@ const SignUp = ({
             />
 
             <Button
-              onClick={handleHCaptchaExecute}
+              onClick={() => {
+                if (isTestEmailValid) {
+                  onSubmit();
+                } else {
+                  handleHCaptchaExecute();
+                }
+              }}
               data-testid="sign-up-button"
               fullWidth
               disabled={!isFormValid}

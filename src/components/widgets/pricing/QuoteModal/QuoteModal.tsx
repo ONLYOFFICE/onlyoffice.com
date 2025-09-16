@@ -9,6 +9,7 @@ import {
 } from "./QuoteModal.styled";
 import { IQuoteModal } from "./QuoteModal.types";
 import { getFromParam } from "@src/utils/getParams";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { countries } from "@src/config/data/countries";
 import { Modal } from "@src/components/ui/Modal";
@@ -58,6 +59,7 @@ const QuoteModal = <T,>({
   const [isFormValid, setIsFormValid] = useState(false);
   const [formStatus, setFormStatus] =
     useState<ILoaderButton["status"]>("default");
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   const isFullNameValid =
     quoteFormData.fullName.length > 0 &&
@@ -67,28 +69,24 @@ const QuoteModal = <T,>({
   const isCompanyValid = quoteFormData.companyName.length > 0;
   const isPhoneValid = quoteFormData.phone.length > 0;
 
-  const checkFormValid = () => {
+  const checkFormValid = (testEmailOverride?: boolean) => {
     setIsFormValid(
       isFullNameValid &&
         isEmailValid &&
         (locale === "zh" ? true : isPhoneValid) &&
         isCompanyValid &&
-        !!quoteFormData.hCaptcha,
+        ((testEmailOverride ?? isTestEmailValid)
+          ? true
+          : !!quoteFormData.hCaptcha),
     );
   };
 
-  const handleRecaptchaChange = (token: string | null) => {
+  const handleHCaptchaChange = (token: string | null) => {
     setQuoteFormData((prevData) => ({
       ...prevData,
       hCaptcha: token,
     }));
-    setIsFormValid(
-      isFullNameValid &&
-        isEmailValid &&
-        (locale === "zh" ? true : isPhoneValid) &&
-        isCompanyValid &&
-        !!token,
-    );
+    checkFormValid();
     setFormStatus("default");
   };
 
@@ -217,12 +215,14 @@ const QuoteModal = <T,>({
 
           <Input
             onChange={(e) => handleInputChange("email", e.target.value)}
-            onBlur={() => {
+            onBlur={async () => {
               setIsEmpty((prev) => ({
                 ...prev,
                 email: quoteFormData.email.length === 0,
               }));
-              checkFormValid();
+              const isTestEmail = await validateTestEmail(quoteFormData.email);
+              setIsTestEmailValid(isTestEmail === true);
+              checkFormValid(isTestEmail);
             }}
             value={quoteFormData.email}
             label={t("Email")}
@@ -306,8 +306,8 @@ const QuoteModal = <T,>({
           <StyledQuoteModalGetItNow>
             <HCaptcha
               ref={hCaptchaRef}
-              onVerify={handleRecaptchaChange}
-              onExpire={() => handleRecaptchaChange(null)}
+              onVerify={handleHCaptchaChange}
+              onExpire={() => handleHCaptchaChange(null)}
             />
 
             <Text fontSize="12px" lineHeight="20px">

@@ -17,6 +17,7 @@ import {
   validateEmail,
   validateWebsite,
 } from "@src/utils/validators";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 
 import {
   StyledHeroForm,
@@ -53,6 +54,7 @@ const Hero = () => {
     email: "default",
     portalName: "default",
     yourWebsiteURL: "default",
+    hCaptchaToken: "default",
   });
 
   const [submitStatus, setSubmitStatus] =
@@ -121,7 +123,14 @@ const Hero = () => {
     }
   };
 
-  const handleCheckStatusEmail = () => {
+  const handleCheckStatusEmail = async () => {
+    const isTestEmailValid = await validateTestEmail(dataForm.email);
+
+    setCheckStatus((prev) => ({
+      ...prev,
+      hCaptchaToken: isTestEmailValid ? "success" : "default",
+    }));
+
     if (validateEmail(dataForm.email)) {
       setCheckStatus((prev) => ({
         ...prev,
@@ -167,6 +176,10 @@ const Hero = () => {
     setDataForm((prev) => ({
       ...prev,
       hCaptchaToken: token,
+    }));
+    setCheckStatus((prev) => ({
+      ...prev,
+      hCaptchaToken: token ? "success" : "default",
     }));
   };
 
@@ -443,7 +456,7 @@ const Hero = () => {
                 checkStatus.portalName !== "success" ||
                 selectedOption.length === 0 ||
                 checkStatus.yourWebsiteURL !== "success" ||
-                dataForm.hCaptchaToken === null
+                checkStatus.hCaptchaToken !== "success"
               }
               status={submitStatus}
             />

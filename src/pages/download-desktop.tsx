@@ -90,19 +90,18 @@ export async function getStaticProps({ locale }: ILocale) {
       return {
         ...item,
         fileSize: {
-          primary: db?.size || item.fileSize?.primary || "",
-          secondary: secondaryDb?.size || item.fileSize?.secondary || "",
+          primary: item.fileSize?.primary || db?.size || "",
+          secondary: item.fileSize?.secondary || secondaryDb?.size || "",
           unit: item.fileSize?.unit || "",
         },
-        version: db?.version?.trim() || item.version || "",
-        releaseDate: db?.lastmodified || item.releaseDate || "",
+        version: item.version || db?.version?.trim() || "",
+        releaseDate: item.releaseDate || db?.lastmodified || "",
         buttons: item.buttons.map((button, index) => {
           const src = [db, secondaryDb][index];
-          const href = src
-            ? locale === "zh"
-              ? src.url_zh || src.url
-              : src.url
-            : button.link?.href || "";
+          const href =
+            button.link?.href ||
+            (src ? (locale === "zh" ? src.url_zh || src.url : src.url) : "");
+
           return {
             ...button,
             link: button.link ? { ...button.link, href } : null,

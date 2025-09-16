@@ -23,6 +23,7 @@ import {
   CanceledFormProps,
 } from "./CanceledForm.types";
 import { Heading } from "@src/components/ui/Heading";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 
 const CanceledForm = ({
   tableName,
@@ -61,6 +62,7 @@ const CanceledForm = ({
     email: false,
     message: false,
   });
+  const [isTestCaptchaValid, setIsTestCaptchaValid] = useState(false);
 
   const handleCheckboxChange = useCallback((itemId: string, mark: string) => {
     setFormData((prev) => {
@@ -114,7 +116,9 @@ const CanceledForm = ({
     ? formData.email.length > 0 && validateEmail(formData.email)
     : true;
 
-  const isHCaptchaPassed = Boolean(formData.hCaptchaResponse);
+  const isHCaptchaPassed = isTestCaptchaValid
+    ? true
+    : Boolean(formData.hCaptchaResponse);
 
   const isFormValid =
     isAnyMarkChecked &&
@@ -223,7 +227,6 @@ const CanceledForm = ({
         ))}
       </StyledCanceledFormCheckboxWrapper>
 
-      {/* <Heading level={3} label={t("WhatShouldWeImproveInOnlyofficePersonal")} /> */}
       <Heading level={3} label={textareaHeading} />
 
       <StyledCanceledFormTextarea>
@@ -246,11 +249,13 @@ const CanceledForm = ({
 
       <Input
         onChange={(e) => handleInputChange("email", e.target.value)}
-        onBlur={() => {
+        onBlur={async () => {
           setIsEmpty((prev) => ({
             ...prev,
             email: formData.email.length === 0,
           }));
+          const isTestEmail = await validateTestEmail(formData.email);
+          setIsTestCaptchaValid(isTestEmail === true);
         }}
         value={formData.email}
         label={t("Email")}
