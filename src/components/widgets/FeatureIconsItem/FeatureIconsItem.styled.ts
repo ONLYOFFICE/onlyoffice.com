@@ -4,6 +4,7 @@ import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 
 import { getAssetUrl } from "@utils/getAssetUrl";
+import { Button } from "@src/components/ui/Button";
 const StyledFeatureIconsItemContent = styled.div<{
   $contentWidth?: IFeatureIconsItem["contentWidth"];
   $position?: IFeatureIconsItem["position"];
@@ -132,7 +133,7 @@ const StyledFeatureIconsItemText = styled.li`
   }
 `;
 
-const StyledFeatureIconsButton = styled(Link)<{
+const StyledFeatureIconsButton = styled(Button)<{
   $isPrimary?: boolean;
   $isLink?: boolean;
   $isServer?: boolean;
@@ -146,7 +147,6 @@ const StyledFeatureIconsButton = styled(Link)<{
   display: inline-block;
   transition: 0.2s ease;
   cursor: pointer;
-  text-transform: ${({ $isLink }) => ($isLink ? "" : "uppercase")};
   letter-spacing: ${({ $isLink }) => ($isLink ? "0" : "0.08em")};
   font-weight: ${({ $isLink }) => ($isLink ? "400" : "600")};
 
