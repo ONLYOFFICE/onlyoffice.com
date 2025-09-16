@@ -1,7 +1,6 @@
 interface IRewardfulFunction {
   (...args: unknown[]): void;
   q?: unknown[];
-  _rwq?: string;
   referral?: string;
   affiliate?: {
     token?: string;
@@ -11,6 +10,7 @@ interface IRewardfulFunction {
 declare global {
   interface Window {
     rewardful?: IRewardfulFunction;
+    _rwq?: string;
   }
 }
 
