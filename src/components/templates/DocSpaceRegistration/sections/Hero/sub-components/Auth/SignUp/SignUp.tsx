@@ -17,7 +17,7 @@ import {
 import { ISignUp } from "./SignUp.types";
 import { ISelectOption } from "@src/components/ui/Select/Select.types";
 import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
-import { useRewardful } from "@src/utils/useRewardful";
+import { loadRewardful, addClientReferenceOnReady, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
 import { validateEmail } from "@src/utils/validators";
 import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { Heading } from "@src/components/ui/Heading";
@@ -60,6 +60,7 @@ const SignUp = ({
   const intervalId = useRef<NodeJS.Timeout | null>(null);
 
   const [affiliateId, setAffiliateId] = useState("");
+  const [affiliateToken, setAffiliateToken] = useState("");
   const [formData, setFormData] = useState({
     email: "",
     spam: false,
@@ -76,15 +77,19 @@ const SignUp = ({
   const emailIsValid =
     formData.email.trim().length > 0 && validateEmail(formData.email);
 
-  const { getClientReferenceId } = useRewardful({
-    onReady: () => {
-      const id = getClientReferenceId();
+  useEffect(() => {
+    loadRewardful();
 
-      if (id && id !== affiliateId) {
-        setAffiliateId(id);
-      }
-    },
-  });
+    addClientReferenceOnReady(function () {
+      const affiliateId = getClientReferenceId() || "";
+      const affiliateToken = getAffiliateToken() || "";
+
+      console.log(document.querySelector('script[src="https://r.wdfl.co/rw.js"]'), "affiliateId=", affiliateId, "affiliateToken=", affiliateToken);
+
+      setAffiliateId(affiliateId);
+      setAffiliateToken(affiliateToken);
+    });
+  }, []);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -133,6 +138,7 @@ const SignUp = ({
         awsRegion: selected[0].value,
         partnerId: router.query.pid || "",
         affiliateId: affiliateId || "",
+        affiliateToken: affiliateToken || "",
         emailSubject: {
           register: t("YourConfirmationLinkForOODocSpace"),
           login: t("YourLoginLinkToOODocSpace"),
