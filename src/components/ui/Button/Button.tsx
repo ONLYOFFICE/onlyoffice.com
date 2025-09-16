@@ -24,6 +24,8 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
       size = "medium",
       borderRadius = "9px",
       backgroundColor,
+      textTransform,
+      fontSize,
       onClick,
       ...rest
     },
@@ -55,6 +57,8 @@ const Button = forwardRef<HTMLButtonElement, IButton>(
         $size={size}
         $borderRadius={borderRadius}
         $backgroundColor={backgroundColor}
+        $textTransform={textTransform}
+        $fontSize={fontSize}
         {...rest}
       >
         {children || label}

@@ -23,12 +23,16 @@ const Questions = () => {
               as="a"
               href="mailto:sales@onlyoffice.com"
               label={t("ContactUs")}
+              textTransform="uppercase"
+              fontSize="13px"
             />
             <Button
               as="a"
               href="/call-back-form"
               label={t("ScheduleATime")}
               variant="secondary"
+              textTransform="uppercase"
+              fontSize="13px"
             />
           </StyledQuestionsButtons>
         </StyledQuestionsWrapper>
