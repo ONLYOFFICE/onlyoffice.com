@@ -137,7 +137,10 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
   };
 
   const handleSignInBySocial = (platform: string) => {
-    if (intervalId.current) clearInterval(intervalId.current);
+    if (intervalId.current) {
+      clearInterval(intervalId.current);
+      intervalId.current = null;
+    }
 
     platformRef.current = platform;
 
@@ -151,44 +154,53 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
   };
 
   useEffect(() => {
+    const redirectOrSetTenants = (
+      tenants: { domain: string; path: string }[],
+    ) => {
+      if (!tenants || tenants.length === 0) {
+        setIsLoginError(true);
+        return;
+      }
+      if (tenants.length === 1) {
+        window.location.href = `${tenants[0].domain}${tenants[0].path}`;
+      } else {
+        setExistTenants(tenants);
+      }
+    };
+
     window.SigninBySocial = async (data) => {
       try {
         const findBySocialRes = await fetch("/api/thirdparty/findbysocial", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            transport: data,
-          }),
+          body: JSON.stringify({ transport: data }),
         });
         const findBySocialData = await findBySocialRes.json();
 
-        const findByEmailRes = await fetch("/api/thirdparty/findbyemail", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: findBySocialData.data.email,
-          }),
-        });
-        const findByEmailData = await findByEmailRes.json();
-
-        if (findByEmailData.data?.length === 1) {
-          window.location.href = `${findByEmailData.data[0].domain}${findByEmailData.data[0].path}`;
-        } else if (findByEmailData.data?.length > 1) {
-          setExistTenants(findByEmailData.data);
+        if (findBySocialData.data.email) {
+          const findByEmailRes = await fetch("/api/thirdparty/findbyemail", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: findBySocialData.data.email }),
+          });
+          const findByEmailData = await findByEmailRes.json();
+          redirectOrSetTenants(findByEmailData.data);
         } else {
-          setIsLoginError(true);
+          redirectOrSetTenants(findBySocialData.data.tenants);
         }
       } catch (err) {
         console.error(
           "Unexpected error:",
           err instanceof Error ? err.message : err,
         );
+        setIsLoginError(true);
       }
     };
 
     return () => {
       if (intervalId.current) {
         clearInterval(intervalId.current);
+        intervalId.current = null;
       }
     };
   }, [setExistTenants]);

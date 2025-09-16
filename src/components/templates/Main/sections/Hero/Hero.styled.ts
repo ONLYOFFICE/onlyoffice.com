@@ -44,10 +44,6 @@ const StyledHeroBtns = styled.div`
         margin: 0 0 16px;
       }
     }
-
-    @media ${device.mobile} {
-      width: 100%;
-    }
   }
 
   @media ${device.tablet} {

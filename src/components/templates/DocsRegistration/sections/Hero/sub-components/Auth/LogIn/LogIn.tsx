@@ -17,7 +17,6 @@ import { Input } from "@src/components/ui/Input";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Modal } from "@src/components/ui/Modal";
 import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
-import { DocsCloudSigninResponse } from "@src/types/docscloudsignin";
 import { validateEmail } from "@src/utils/validators";
 import { CheckEmail } from "../CheckEmail";
 import { usePageTrack } from "@src/lib/hooks/useGA";
@@ -25,6 +24,10 @@ import { usePageTrack } from "@src/lib/hooks/useGA";
 interface ILogInProps {
   recaptchaLang: string;
 }
+
+type DocsCloudSigninResponse =
+  | Response
+  | { [key: string]: string };
 
 const LogIn = ({ recaptchaLang }: ILogInProps) => {
   const { t } = useTranslation("docs-registration");
@@ -75,14 +78,14 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
   const _onComplete = (response: DocsCloudSigninResponse) => {
     setFormStatus("default");
 
-    if (response.status === 403) {
+    if ('status' in response && response.status === 403) {
       setFormStatus("error");
       setIsCaptchaInvalid(true);
       setTimeout(() => {
         setIsCaptchaInvalid(false);
       }, 5000);
 
-    } else if (response.status === 200 && !("error" in response)) {
+    } else if ('status' in response &&response.status === 200 && !("error" in response)) {
       pageTrack('docs-cloud-singin');
 
       setIsFormValid(true);
@@ -90,7 +93,10 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
       setIsModalOpen(true);
     } else {
       setFormStatus("error");
-      const respMsg = "message" in response ? response.message : undefined;
+      let respMsg: string | undefined;
+      if ("message" in response && typeof response.message === "string") {
+        respMsg = response.message;
+      }
       if (respMsg == "emailEmpty") setMailError("EmailIsEmpty");
       if (respMsg == "emailIncorrect") setMailError("EmailIsIncorrect");
       if (respMsg == "emailEmpty" || respMsg == "emailIncorrect") {
@@ -127,24 +133,31 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
       }
     };
 
-    const docscloudsigninRes = await fetch("/api/thirdparty/docscloudsignin", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ data, recaptchaLang }),
-    });
+    const url =
+      (process.env.NEXT_PUBLIC_DOCS_CLOUD_SIGNIN_API! || "") +
+      `?culture=${encodeURIComponent(recaptchaLang || "en")}`;
 
-    let docscloudsigninData: DocsCloudSigninResponse;
     try {
-      docscloudsigninData = await docscloudsigninRes.json();
-    } catch (ex) {
-      docscloudsigninData = {
-        status: 500,
-        error: "Invalid JSON response",
-        message: ex instanceof Error ? ex.message : String(ex),
-      };
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        _onComplete(response);
+      } else {
+        let errorRes;
+        try {
+          errorRes = await response.json();
+        } catch {
+          errorRes = { error: response.statusText };
+        }
+        _onComplete(errorRes);
+      }
+    } catch(ex) {
+      _onComplete({ error: ex instanceof Error ? ex.message : String(ex) });
     }
-    
-    _onComplete(docscloudsigninData);
   };
 
   useEffect(() => {
@@ -235,7 +248,6 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
               size={hCaptchaSize}
               onVerify={handleHCaptchaChange}
               onExpire={() => handleHCaptchaChange(null)}
-              sitekey={process.env.DOCS_CLOUD_SIGNIN_RECAPCHA_PUBLIC_KEY!}
             />
           </StyledLogInForm>
 

@@ -17,6 +17,7 @@ import { images } from "./data/images";
 import { getPreparedImages } from "./helper/random";
 import { IHeroImage } from "./Hero.types";
 
+
 const Hero = () => {
   const { t } = useTranslation("contribute");
   const [heroImages, setHeroImages] = useState<IHeroImage[]>([]);

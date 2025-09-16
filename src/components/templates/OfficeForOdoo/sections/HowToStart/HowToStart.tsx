@@ -10,6 +10,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
+import { getAssetUrl } from "@src/utils/getAssetUrl";
 
 const HowToStart = () => {
   const { t } = useTranslation("office-for-odoo");
@@ -25,7 +26,7 @@ const HowToStart = () => {
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: item.imgUrl,
+            imgUrl: getAssetUrl(item.imgUrl),
             heading: item.headingLinks ? (
               <Trans
                 t={t}

@@ -35,7 +35,7 @@ const StyledChooseAccountItem = styled(Link)`
   align-items: center;
   justify-content: space-between;
   border: 1px solid transparent;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 15px 24px;
   background-color: #f5f5f5;
   transition:

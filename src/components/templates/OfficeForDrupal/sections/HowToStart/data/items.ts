@@ -1,12 +1,11 @@
 import { IStepCarouselTab } from "@src/components/widgets/StepCarousel";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IStepCarouselTab[] = [
   {
     label: "DocSpace",
     items: [
       {
-        imgUrl: getAssetUrl("/images/templates/office-for-drupal/how-to-start/step1-ds.svg"),
+        imgUrl: "/images/templates/office-for-drupal/how-to-start/step1-ds.svg",
         heading: "HowToStartStep1Docspace",
         headingLinks: [
           {
@@ -16,7 +15,7 @@ export const items: IStepCarouselTab[] = [
         ],
       },
       {
-        imgUrl: getAssetUrl("/images/templates/office-for-drupal/how-to-start/step2.svg"),
+        imgUrl: "/images/templates/office-for-drupal/how-to-start/step2.svg",
         heading: "HowToStartStep2",
         headingLinks: [
           {
@@ -35,7 +34,7 @@ export const items: IStepCarouselTab[] = [
     label: "Docs",
     items: [
       {
-        imgUrl: getAssetUrl("/images/templates/office-for-drupal/how-to-start/step1-dc.svg"),
+        imgUrl: "/images/templates/office-for-drupal/how-to-start/step1-dc.svg",
         heading: "HowToStartStep1Docs",
         headingLinks: [
           {
@@ -49,7 +48,7 @@ export const items: IStepCarouselTab[] = [
         ],
       },
       {
-        imgUrl: getAssetUrl("/images/templates/office-for-drupal/how-to-start/step2.svg"),
+        imgUrl: "/images/templates/office-for-drupal/how-to-start/step2.svg",
         heading: "HowToStartStep2",
         headingLinks: [
           {

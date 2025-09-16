@@ -9,8 +9,8 @@ const OfficeForSuiteCRMTemplate = () => {
   return (
     <>
       <Hero />
-      <Features />
       <MarketplaceConnector />
+      <Features />
       <HowToStart />
       <ConnectApp />
       <OtherConnectors />

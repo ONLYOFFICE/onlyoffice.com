@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { IInput } from "@src/components/ui/Input";
+import { getAssetUrl } from "@src/utils/getAssetUrl";
 
 const StyledPhoneInput = styled.div`
   position: relative;
@@ -32,7 +33,7 @@ const StyledPhoneInputFlag = styled.span<{
   width: 16px;
   min-width: 16px;
   height: 11px;
-  background-image: url("../images/widgets/phone-input/flags.gif");
+  background-image: url(${getAssetUrl("/images/widgets/phone-input/flags.gif")});
   background-repeat: no-repeat;
 
   ${(props) =>
@@ -80,6 +81,10 @@ const StyledPhoneInputFlag = styled.span<{
 
   &.AD {
     background-position-y: -594px;
+  }
+
+  &.AO {
+    background-position-y: -1947px;
   }
 
   &.AI {
@@ -256,6 +261,10 @@ const StyledPhoneInputFlag = styled.span<{
 
   &.HR {
     background-position-y: -902px;
+  }
+
+  &.CU {
+    background-position-y: -748px;
   }
 
   &.CW {

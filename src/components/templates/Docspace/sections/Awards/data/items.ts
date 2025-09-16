@@ -1,16 +1,15 @@
-import { getAssetUrl } from "@utils/getAssetUrl";
 const bannerItems = [
   {
     id: "capterra",
-    imgUrl: getAssetUrl("/images/templates/docspace/awards/capterra.svg"),
+    imgUrl: "/images/templates/docspace/awards/capterra.svg",
   },
   {
     id: "get-app",
-    imgUrl: getAssetUrl("/images/templates/docspace/awards/getapp.png"),
+    imgUrl: "/images/templates/docspace/awards/getapp.png",
   },
   {
     id: "software-advice",
-    imgUrl: getAssetUrl("/images/templates/docspace/awards/software.png"),
+    imgUrl: "/images/templates/docspace/awards/software.png",
   },
   {
     id: "crozdesk",

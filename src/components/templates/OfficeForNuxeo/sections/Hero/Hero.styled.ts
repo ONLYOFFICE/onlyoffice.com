@@ -53,7 +53,7 @@ const StyledHeroHeader = styled.div`
   max-width: 880px;
 
   h1 {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
   }
 `;
 

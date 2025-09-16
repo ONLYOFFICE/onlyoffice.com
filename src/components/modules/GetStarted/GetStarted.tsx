@@ -6,6 +6,7 @@ import { ChooseSolution } from "@src/components/widgets/ChooseSolution";
 import { Link } from "@src/components/ui/Link";
 import { IGetStartedProps } from "./GetStarted.types";
 import { items } from "./data/items";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const GetStarted = ({ background, header }: IGetStartedProps) => {
   const { t } = useTranslation("GetStarted");
@@ -50,7 +51,7 @@ const GetStarted = ({ background, header }: IGetStartedProps) => {
           }))}
           largeItems={items.largeItems.map(
             ({ imgUrl, heading, text, links }) => ({
-              imgUrl,
+              imgUrl: getAssetUrl(imgUrl),
               heading: t(heading ?? ""),
               text: t(String(text)),
               links: links?.map(({ id, name, url }) => ({

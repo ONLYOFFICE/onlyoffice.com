@@ -1,9 +1,8 @@
 import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IStepCarouselItem[] = [
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-odoo/how-to-start/step-1.svg"),
+    imgUrl: "/images/templates/office-for-odoo/how-to-start/step-1.svg",
     heading: "HowToStartStep1",
     headingLinks: [
       {
@@ -17,7 +16,7 @@ export const items: IStepCarouselItem[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-odoo/how-to-start/step-2.svg"),
+    imgUrl: "/images/templates/office-for-odoo/how-to-start/step-2.svg",
     heading: "HowToStartStep2",
     headingLinks: [
       {
@@ -35,7 +34,7 @@ export const items: IStepCarouselItem[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-odoo/how-to-start/step-3.svg"),
+    imgUrl: "/images/templates/office-for-odoo/how-to-start/step-3.svg",
     heading: "HowToStartStep3",
   },
 ];

@@ -9,8 +9,8 @@ const OfficeForMattermostTemplate = () => {
   return (
     <>
       <Hero />
-      <Features />
       <MarketplaceConnector />
+      <Features />
       <HowToStart />
       <ConnectApp />
       <OtherConnectors />

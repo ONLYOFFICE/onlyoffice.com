@@ -13,6 +13,7 @@ import { items } from "./data/items";
 import { Button } from "@src/components/ui/Button";
 import { ILocale } from "@src/types/locale";
 import { getLink } from "@src/utils/getLink";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const LearnMore = ({ locale }: ILocale) => {
   const { t } = useTranslation("best-adobe-alternative");
@@ -29,7 +30,7 @@ const LearnMore = ({ locale }: ILocale) => {
           <StyledBlogCardWrapper>
             {items.map((item, index) => (
               <div key={index}>
-                <StyledBlogCardImg src={item.imgUrl} />
+                <StyledBlogCardImg src={getAssetUrl(item.imgUrl)} />
                 <StyledBlogCardLink
                   href={t(String(item.heading.href))}
                   label={t(String(item.heading.label))}

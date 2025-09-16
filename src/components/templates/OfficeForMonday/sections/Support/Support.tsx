@@ -5,7 +5,7 @@ import {
   StyledQuestionsContainer,
   StyledQuestionsText,
   StyledQuestionsTitle,
-  StyledQuestionsWrapper
+  StyledQuestionsWrapper,
 } from "./Support.styled";
 
 const Support = () => {
@@ -27,7 +27,7 @@ const Support = () => {
                   style={{ color: "#ff6f3d", textDecoration: "underline" }}
                 />,
                 <Link
-                  href="https://forum.onlyoffice.com/"
+                  href="https://community.onlyoffice.com/"
                   key="1"
                   target="_blank"
                   style={{ color: "#ff6f3d", textDecoration: "underline" }}

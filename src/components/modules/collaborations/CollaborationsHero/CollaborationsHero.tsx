@@ -15,6 +15,7 @@ import { Container } from "@src/components/ui/Container";
 import { ICollaborationsHero } from "./CollaborationsHero.types";
 import { useState } from "react";
 import { Modal } from "@src/components/ui/Modal";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const CollaborationsHero = ({
   heading,
@@ -45,8 +46,8 @@ const CollaborationsHero = ({
             />
           </StyledCollaborationsHeroContent>
           <StyledCollaborationsHeroImage
-            $image={image.url}
-            $image2x={image.url2x}
+            $image={getAssetUrl(image.url)}
+            $image2x={getAssetUrl(image.url2x)}
             $type={image.type}
             onClick={() => image.type === "video" && setIsOpen(true)}
           />

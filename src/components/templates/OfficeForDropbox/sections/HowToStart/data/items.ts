@@ -1,13 +1,12 @@
 import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IStepCarouselItem[] = [
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-dropbox/how-to-start/step-1.svg"),
+    imgUrl: "/images/templates/office-for-dropbox/how-to-start/step-1.svg",
     heading: "HowToStartStep1",
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-dropbox/how-to-start/step-2.svg"),
+    imgUrl: "/images/templates/office-for-dropbox/how-to-start/step-2.svg",
     heading: "HowToStartStep2",
     headingLinks: [
       {
@@ -17,15 +16,15 @@ export const items: IStepCarouselItem[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-dropbox/how-to-start/step-3.svg"),
+    imgUrl: "/images/templates/office-for-dropbox/how-to-start/step-3.svg",
     heading: "HowToStartStep3",
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-dropbox/how-to-start/step-4.svg"),
+    imgUrl: "/images/templates/office-for-dropbox/how-to-start/step-4.svg",
     heading: "HowToStartStep4",
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-dropbox/how-to-start/step-5.svg"),
+    imgUrl: "/images/templates/office-for-dropbox/how-to-start/step-5.svg",
     heading: "HowToStartStep5",
   },
 ];

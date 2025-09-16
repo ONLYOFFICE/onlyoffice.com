@@ -1,9 +1,8 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IBlogCard[] = [
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-owncloud/learn-more/czech-tv.jpg"),
+    imgUrl: "/images/templates/office-for-owncloud/learn-more/czech-tv.jpg",
     heading: { label: "HowCzechTVReplaced" },
     links: [
       {
@@ -13,7 +12,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-owncloud/learn-more/sciebo.jpg"),
+    imgUrl: "/images/templates/office-for-owncloud/learn-more/sciebo.jpg",
     heading: { label: "HowOOandOwnCloudIntegration" },
     links: [
       {
@@ -23,7 +22,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/office-for-owncloud/learn-more/switch.jpg"),
+    imgUrl: "/images/templates/office-for-owncloud/learn-more/switch.jpg",
     heading: { label: "HowSWITCHIntegrated" },
     links: [
       {

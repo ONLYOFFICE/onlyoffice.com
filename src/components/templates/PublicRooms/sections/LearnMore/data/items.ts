@@ -1,9 +1,8 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IBlogCard[] = [
   {
-    imgUrl: getAssetUrl("/images/templates/public-rooms/learn-more/blog.png"),
+    imgUrl: "/images/templates/public-rooms/learn-more/blog.png",
     heading: { label: "Blog" },
     text: "BlogDesc",
     links: [
@@ -14,7 +13,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/public-rooms/learn-more/docspace.png"),
+    imgUrl: "/images/templates/public-rooms/learn-more/docspace.png",
     heading: { label: "YouTube" },
     text: "MasterONLYOFFICEDocSpace",
     links: [
@@ -26,7 +25,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl: getAssetUrl("/images/templates/public-rooms/learn-more/tutorial.png"),
+    imgUrl: "/images/templates/public-rooms/learn-more/tutorial.png",
     heading: { label: "Tutorial" },
     text: "TutorialDesc",
     links: [

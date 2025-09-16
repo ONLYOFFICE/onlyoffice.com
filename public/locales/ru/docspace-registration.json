@@ -32,7 +32,7 @@
   "Password": "Пароль",
   "PasswordIsEmpty": "Поле Пароль не заполнено",
   "ThePasswordMustContainAtLeast8Characters": "Пароль должен содержать не менее 8 символов",
-  "CheckYourEmail": "Check your email!",
+  "CheckYourEmail": "Проверьте электронную почту!",
   "WeVeJustSentYouAConfirmationLinkToYourEmail": "We've just sent you a confirmation link to your email: <0>{{email}}</0>",
   "TheLinkIsValidFor60Minutes": "The link is valid for 60 minutes and can only be used once. <br /> If you didn't receive an email, please check your spam.",
   "BackToSignUp": "Вернуться к регистрации",
@@ -50,8 +50,8 @@
   "IncorrectEmailOrPassword": "Неверный пароль или email",
   "YourEmail": "Ваш email:",
   "IfAUserWithThisEmailExists": "Если пользователь с таким адресом существует, инструкция по смене пароля была отправлена на этот email.",
-  "NoThirdPartyAccountFound": "No third party account found",
-  "YourConfirmationLinkForOODocSpace": "Your confirmation link for ONLYOFFICE DocSpace",
-  "YourLoginLinkToOODocSpace": "Your login link to ONLYOFFICE DocSpace",
-  "OOPasswordReminder": "ONLYOFFICE Password Reminder"
+  "NoThirdPartyAccountFound": "Сторонних аккаунтов не найдено",
+  "YourConfirmationLinkForOODocSpace": "Ваша ссылка подтверждения для ONLYOFFICE DocSpace",
+  "YourLoginLinkToOODocSpace": "Ваша ссылка для входа в ONLYOFFICE DocSpace",
+  "OOPasswordReminder": "Восстановление пароля на сайте ONLYOFFICE"
 }

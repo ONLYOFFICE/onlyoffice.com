@@ -9,8 +9,8 @@ const OfficeForRedmineTemplate = () => {
   return (
     <>
       <Hero />
-      <Features />
       <MarketplaceConnector />
+      <Features />
       <HowToStart />
       <ConnectApp />
       <OtherConnectors />
