@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
 import {
   StyledHero,
@@ -20,7 +20,7 @@ import { IDocsEnterprisePricesFormData } from "./Hero.types";
 import { IDocsEnterprisePricesTemplate } from "@src/components/templates/DocsEnterprisePrices";
 import { getProduct } from "./utils/getProduct";
 import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
-import { useRewardful } from "@src/utils/useRewardful";
+import { loadRewardful, addClientReferenceOnReady, getClientReferenceParam, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
@@ -66,32 +66,15 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState(initialFormData);
   const [quoteFormData, setQuoteFormData] = useState(initialQuoteFormData);
+  const [referenceParam, setReferenceParam] = useState("");
 
-  const [affiliate, setAffiliate] = useState<{
-    id?: string;
-    token?: string;
-    params?: string;
-  }>({
-    id: "",
-    token: "",
-    params: "",
-  });
+  useEffect(() => {
+    loadRewardful();
 
-  const { getClientReferenceId, getAffiliateToken, getClientReferenceParam } =
-    useRewardful({
-      onReady: () => {
-        const id = getClientReferenceId();
-        const token = getAffiliateToken();
-        const params = getClientReferenceParam();
-        console.log("__ Rewardful: ", id, token, params);
-
-        setAffiliate((prev) =>
-          prev.id === id && prev.token === token && prev.params === params
-            ? prev
-            : { id, token, params },
-        );
-      },
+    addClientReferenceOnReady(function () {
+      setReferenceParam(getClientReferenceParam());
     });
+  }, []);
 
   const hostingIsCloud = formData.hosting === "Cloud";
   const hostingIsOnPremises = formData.hosting === "On-premises";
@@ -139,8 +122,8 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
         country,
         region,
         hCaptchaResponse,
-        affiliateId: affiliate.id || "",
-        affiliateToken: affiliate.token || "",
+        affiliateId: getClientReferenceId() || "",
+        affiliateToken: getAffiliateToken() || "",
         type: "docsenterpriserequest",
       }),
     }).then((res) => res.json());
@@ -490,7 +473,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
                     data-testid="buy-now-button"
                     as="a"
                     fullWidth
-                    href={product?.url}
+                    href={product?.url + referenceParam}
                     target="_blank"
                     label={t("BuyNow")}
                   />

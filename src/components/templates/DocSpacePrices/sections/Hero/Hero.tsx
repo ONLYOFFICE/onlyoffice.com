@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 import {
   StyledHero,
@@ -14,7 +14,7 @@ import { PlanCard } from "./sub-components/PlanCard";
 import { FeaturesTable } from "./sub-components/FeaturesTable";
 import { BusinessModal } from "./sub-components/BusinessModal";
 import { EnterpriseModal } from "./sub-components/EnterpriseModal";
-import { useRewardful } from "@src/utils/useRewardful";
+import { loadRewardful, addClientReferenceOnReady, getClientReferenceParam, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
 
 const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
   const { t } = useTranslation("docspace-prices");
@@ -26,20 +26,21 @@ const Hero = ({ locale, productsData }: IDocSpacePricesTemplate) => {
     params: "",
   });
 
-  const { getClientReferenceId, getAffiliateToken, getClientReferenceParam } =
-    useRewardful({
-      onReady: () => {
-        const id = getClientReferenceId();
-        const token = getAffiliateToken();
-        const params = getClientReferenceParam();
+  useEffect(() => {
+    loadRewardful();
 
-        setAffiliate((prev) =>
-          prev.id === id && prev.token === token && prev.params === params
-            ? prev
-            : { id, token, params },
-        );
-      },
+    addClientReferenceOnReady(function () {
+      const id = getClientReferenceId();
+      const token = getAffiliateToken();
+      const params = getClientReferenceParam();
+
+      setAffiliate((prev) =>
+        prev.id === id && prev.token === token && prev.params === params
+          ? prev
+          : { id, token, params },
+      );
     });
+  }, []);
 
   return (
     <StyledHero

@@ -12,7 +12,7 @@ import {
   StyledSignUpCaption,
   StyledSuccessModal,
 } from "./SignUp.styled";
-import { useRewardful } from "@src/utils/useRewardful";
+import { loadRewardful, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";
 import { Heading } from "@src/components/ui/Heading";
@@ -79,17 +79,11 @@ const SignUp = () => {
 
   const pageTrack = usePageTrack();
 
-  const { getClientReferenceId, getAffiliateToken } = useRewardful({
-    onReady: () => {
-      const id = getClientReferenceId();
-      const token = getAffiliateToken();
-      console.log("__ Rewardful: ", id, token);
+  useEffect(() => {
+    loadRewardful();
 
-      setAffiliate((prev) =>
-        prev.id === id && prev.token === token ? prev : { id, token },
-      );
-    },
-  });
+    console.log(document.querySelector('script[src="https://r.wdfl.co/rw.js"]'), "affiliateId=", getClientReferenceId(), "affiliateToken=", getAffiliateToken());
+  }, []);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -147,8 +141,8 @@ const SignUp = () => {
         phone: "",
         tariffPlan: formData.tariffPlan,
         docsPlatform: selectedPlatform[0]?.value,
-        affiliateId: affiliate.id || "",
-        affiliateToken: affiliate.token || "",
+        affiliateId: getClientReferenceId() || "",
+        affiliateToken: getAffiliateToken() || "",
         spam: formData.spam ? "true" : "false",
         languageCode: curLang,
         language: getPostLang(curLang),
