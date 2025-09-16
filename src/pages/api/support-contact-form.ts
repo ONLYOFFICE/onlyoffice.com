@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { mkdirSync, writeFileSync, readdirSync, readFileSync } from "fs";
 import path from "path";
 import { File as FormidableFile, IncomingForm } from "formidable";
+import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
@@ -80,13 +81,15 @@ export default async function handler(
       req.socket.remoteAddress ||
       null;
 
-    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+    if (!isTestEmail(email)) {
+      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
-    if (!hCaptchaResult.success) {
-      return res.status(400).json({
-        status: "errorHCaptchaInvalid",
-        error: hCaptchaResult.error,
-      });
+      if (!hCaptchaResult.success) {
+        return res.status(400).json({
+          status: "errorHCaptchaInvalid",
+          error: hCaptchaResult.error,
+        });
+      }
     }
 
     // Normalize raw files into array
@@ -157,7 +160,6 @@ export default async function handler(
       // Send email with attachments
       const transporter = emailTransporter();
       await transporter.sendMail({
-        from: email,
         to: [process.env.SUPPORT_EMAIL!],
         subject: `${email} - SupportContactForm${errorMessages.length ? " [Error]" : ""}`,
         html: SupportContactFormEmail({

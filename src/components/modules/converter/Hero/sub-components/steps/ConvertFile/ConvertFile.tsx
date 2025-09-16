@@ -36,6 +36,7 @@ import { getFormatType } from "../../../utils/getFormatType";
 import { FileErrorModal } from "../../modals/FileErrorModal";
 import { languages } from "@src/config/data/languages";
 import { getLink } from "@src/utils/getLink";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 
 const ConvertFile = ({
   theme,
@@ -75,6 +76,8 @@ const ConvertFile = ({
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [fade, setFade] = useState(true);
   const [isOpenFileErrorModal, setIsOpenFileErrorModal] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -104,9 +107,11 @@ const ConvertFile = ({
   );
 
   const handleConvert = async () => {
-    if (!captchaToken) {
-      setCaptchaError(true);
-      return;
+    if (!isTestEmailValid) {
+      if (!captchaToken) {
+        setCaptchaError(true);
+        return;
+      }
     }
 
     if (!selectedFile) return;
@@ -130,7 +135,8 @@ const ConvertFile = ({
     formData.append("formatType", formatType ?? "");
     formData.append("uuid", uuid);
     formData.append("region", languageData?.key || "en-US");
-    formData.append("hCaptchaResponse", captchaToken);
+    formData.append("hCaptchaResponse", captchaToken || "");
+    formData.append("email", inputValue);
 
     try {
       const res = await fetch("/api/converter", {
@@ -268,6 +274,18 @@ const ConvertFile = ({
               position="center"
               error={captchaError ? t("CaptchaTimeIsUp") : ""}
             />
+
+            <input
+              id="email-input"
+              style={{ display: "none" }}
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onBlur={async () => {
+                const isTestEmail = await validateTestEmail(inputValue);
+                setIsTestEmailValid(Boolean(isTestEmail));
+              }}
+              type="email"
+            />
           </>
         ) : (
           <>
@@ -317,7 +335,9 @@ const ConvertFile = ({
             <Button
               onClick={handleConvert}
               backgroundColor={theme ? themeColors[theme] : undefined}
-              disabled={captchaToken === null ? true : false}
+              disabled={
+                isTestEmailValid ? false : captchaToken === null ? true : false
+              }
               label={t("Convert")}
             />
           </StyledConvertFileBtns>

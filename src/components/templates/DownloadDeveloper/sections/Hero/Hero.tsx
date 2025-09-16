@@ -49,7 +49,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
     download: false,
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const isDocsDeveloper = formData.type === "docsDeveloperDownloadRequest";
+  const isDocsDeveloper = formData.type === "docsdeveloperdownloadrequest";
 
   const onSubmitRequest = async ({
     from,
@@ -91,7 +91,9 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
             button: {
               id: "docs-developer",
               icon: {
-                url: getAssetUrl("/images/templates/download-developer/hero/icons.svg"),
+                url: getAssetUrl(
+                  "/images/templates/download-developer/hero/icons.svg",
+                ),
                 positionY: "-70px",
               },
               label: t("DocsDeveloper"),
@@ -175,7 +177,7 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
                             setFormData({
                               ...formData,
                               buttonId: button.id,
-                              type: "docsDeveloperDownloadRequest",
+                              type: "docsdeveloperdownloadrequest",
                             });
                             setButtonAction({
                               href: button.withModal?.href,
@@ -196,7 +198,9 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
             button: {
               id: "docspace-developer",
               icon: {
-                url: getAssetUrl("/images/templates/download-developer/hero/icons.svg"),
+                url: getAssetUrl(
+                  "/images/templates/download-developer/hero/icons.svg",
+                ),
               },
               label: t("DocSpaceDeveloper"),
               text: t("DocumentEditorsSecureRoomBasedDMS"),

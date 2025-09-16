@@ -14,6 +14,7 @@ import { PhoneInput } from "@src/components/widgets/PhoneInput";
 import { Link } from "@src/components/ui/Link";
 import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { validateFullName, validateEmail } from "@src/utils/validators";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import {
   StyledHeroAgreeText,
   StyledHeroForm,
@@ -69,6 +70,7 @@ const Hero = () => {
     topic: false,
     hcaptcha: false,
   });
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
   const initialFormData: IFormData = {
     fullName: "",
     email: "",
@@ -93,8 +95,9 @@ const Hero = () => {
     formData.time.length > 0 &&
     formData.timeZoneOffset.length > 0;
   const isLanguageValid = formData.lang.length > 0;
-  const isHCaptchaValid = formData.hcaptcha !== null;
-  const isPhoneValid = formData.phone.length > 0;
+  const isHCaptchaValid = isTestEmailValid ? true : formData.hcaptcha !== null;
+  const phonePrefix = phoneInputRef.current?.getPrefix() || "";
+  const isPhoneValid = formData.phone.replace(phonePrefix, "").length > 0;
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -268,11 +271,13 @@ const Hero = () => {
           />
           <Input
             onChange={(e) => handleInputChange("email", e.target.value)}
-            onBlur={() => {
+            onBlur={async () => {
               setIsEmpty((prev) => ({
                 ...prev,
                 email: formData.email.length === 0,
               }));
+              const isTestEmail = await validateTestEmail(formData.email);
+              setIsTestEmailValid(Boolean(isTestEmail));
             }}
             value={formData.email}
             label={t("Email")}

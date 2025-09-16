@@ -15,6 +15,7 @@ import {
 import { loadRewardful, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
@@ -63,11 +64,13 @@ const SignUp = () => {
   const [formStatus, setFormStatus] =
     useState<ILoaderButton["status"]>("default");
 
+  const fullNameIsValid = validateFullName(formData.fullName);
   const emailIsValid =
     formData.email.trim().length > 0 && validateEmail(formData.email);
 
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
   const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   const pageTrack = usePageTrack();
 
@@ -89,8 +92,9 @@ const SignUp = () => {
   };
 
   const checkFormValid = useCallback(() => {
-    setIsFormValid(emailIsValid && !!token.length);
-  }, [emailIsValid, token]);
+    const baseValid = fullNameIsValid && emailIsValid;
+    setIsFormValid(isTestEmailValid ? baseValid : baseValid && !!token.length);
+  }, [fullNameIsValid, emailIsValid, isTestEmailValid, token.length]);
 
   const clearData = () => {
     setFormData(initialFormData);
@@ -106,7 +110,8 @@ const SignUp = () => {
   };
 
   const onSubmit = async () => {
-    if (!emailIsValid || !token.length) {
+    const baseValid = fullNameIsValid && emailIsValid;
+    if (!(isTestEmailValid ? baseValid : baseValid && !!token.length)) {
       return;
     }
 
@@ -140,7 +145,7 @@ const SignUp = () => {
         language: getPostLang(curLang),
         from,
         referer: document.referrer,
-        hCaptchaResponse: token,
+        hCaptchaResponse: token || null,
       }),
     });
 
@@ -254,11 +259,13 @@ const SignUp = () => {
 
           <Input
             onChange={(e) => handleInputChange("email", e.target.value)}
-            onBlur={() => {
+            onBlur={async () => {
               setIsEmpty((prev) => ({
                 ...prev,
                 email: formData.email.length === 0,
               }));
+              const isTestEmail = await validateTestEmail(formData.email);
+              setIsTestEmailValid(Boolean(isTestEmail));
             }}
             data-testid="docs-sign-up-email-input"
             value={formData.email}
@@ -332,33 +339,33 @@ const SignUp = () => {
                 {t("WrongCaptcha")}
               </StyledSignUpCaption>
             )}
-          <StyledSignUpText>
-            <Trans
-              t={t}
-              i18nKey="ByClickingStartFree"
-              components={[
-                <Link
-                  key={0}
-                  href="https://help.onlyoffice.co/Products/Files/DocEditor.aspx?fileid=7992046&doc=ekxnSGVoWE5rbGNkeWtCTnNyREFMN1E1Vzl1YVJjYkFMRVMyaGh1cE9VND0_Ijc5OTIwNDYi0"
-                  target="_blank"
-                  color="main"
-                  textUnderline
-                  hover="underline-none"
-                />,
-              ]}
-            />
-          </StyledSignUpText>
+            <StyledSignUpText>
+              <Trans
+                t={t}
+                i18nKey="ByClickingStartFree"
+                components={[
+                  <Link
+                    key={0}
+                    href="https://help.onlyoffice.co/Products/Files/DocEditor.aspx?fileid=7992046&doc=ekxnSGVoWE5rbGNkeWtCTnNyREFMN1E1Vzl1YVJjYkFMRVMyaGh1cE9VND0_Ijc5OTIwNDYi0"
+                    target="_blank"
+                    color="main"
+                    textUnderline
+                    hover="underline-none"
+                  />,
+                ]}
+              />
+            </StyledSignUpText>
           </div>
 
           <div>
-          <LoaderButton
-            onClick={onSubmit}
-            status={formStatus}
-            label={t("StartFree")}
-            disabled={!isFormValid}
-            fullWidth
-            data-testid="docs-sign-up-button"
-          />
+            <LoaderButton
+              onClick={onSubmit}
+              status={formStatus}
+              label={t("StartFree")}
+              disabled={!isFormValid}
+              fullWidth
+              data-testid="docs-sign-up-button"
+            />
             {formStatus === "error" && (
               <StyledSignUpCaption $error>
                 {t("WeAreSorryButAnErrorOccurred")}

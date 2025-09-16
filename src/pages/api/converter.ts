@@ -11,6 +11,7 @@ import formidable, { Files, Fields, File } from "formidable";
 import fs from "fs";
 import jwt from "jsonwebtoken";
 import crypto, { randomUUID } from "crypto";
+import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 
 interface ICustomFields extends Fields {
@@ -216,6 +217,7 @@ export default async function handler(
     const region = fields.region?.[0];
     const isConvertToImage =
       fields.converttoimage?.[0] === "true" ? true : false;
+    const email = fields.email?.[0];
     const hCaptchaResponse = fields.hCaptchaResponse?.[0] || "";
 
     try {
@@ -227,13 +229,15 @@ export default async function handler(
         req.socket.remoteAddress ||
         null;
 
-      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+      if (!isTestEmail(email)) {
+        const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
-      if (!hCaptchaResult.success) {
-        return res.status(400).json({
-          status: "errorHCaptchaInvalid",
-          error: hCaptchaResult.error,
-        });
+        if (!hCaptchaResult.success) {
+          return res.status(400).json({
+            status: "errorHCaptchaInvalid",
+            error: hCaptchaResult.error,
+          });
+        }
       }
 
       try {
