@@ -8,7 +8,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: "The HCaptcha component displays a reCAPTCHA.",
+        component: "The HCaptcha component displays a hCaptcha.",
       },
     },
   },

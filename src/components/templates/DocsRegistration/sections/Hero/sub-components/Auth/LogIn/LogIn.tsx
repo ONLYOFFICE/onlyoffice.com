@@ -18,6 +18,7 @@ import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Modal } from "@src/components/ui/Modal";
 import { LoaderButton, ILoaderButton } from "@src/components/ui/LoaderButton";
 import { validateEmail } from "@src/utils/validators";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { CheckEmail } from "../CheckEmail";
 import { usePageTrack } from "@src/lib/hooks/useGA";
 
@@ -25,9 +26,7 @@ interface ILogInProps {
   recaptchaLang: string;
 }
 
-type DocsCloudSigninResponse =
-  | Response
-  | { [key: string]: string };
+type DocsCloudSigninResponse = Response | { [key: string]: string };
 
 const LogIn = ({ recaptchaLang }: ILogInProps) => {
   const { t } = useTranslation("docs-registration");
@@ -42,15 +41,20 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
     email: false,
   });
   const [isFormValid, setIsFormValid] = useState(false);
-  const [formStatus, setFormStatus] = useState<ILoaderButton["status"]>("default");
+  const [formStatus, setFormStatus] =
+    useState<ILoaderButton["status"]>("default");
 
-  const emailIsValid = formData.email.trim().length > 0 && validateEmail(formData.email);
+  const emailIsValid =
+    formData.email.trim().length > 0 && validateEmail(formData.email);
   const [mailError, setMailError] = useState("");
-  
+
   const [token, setToken] = useState("");
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
   const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
-  const [hCaptchaSize, setHCaptchaSize] = useState<"normal" | "compact">("normal");
+  const [isTestCaptchaValid, setIsTestCaptchaValid] = useState(false);
+  const [hCaptchaSize, setHCaptchaSize] = useState<"normal" | "compact">(
+    "normal",
+  );
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -68,8 +72,8 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
   };
 
   const checkFormValid = useCallback(() => {
-    setIsFormValid(emailIsValid && !!token.length);
-  }, [emailIsValid, token]);
+    setIsFormValid(emailIsValid && isTestCaptchaValid ? true : !!token.length);
+  }, [emailIsValid, token, isTestCaptchaValid]);
 
   const handleHCaptchaChange = (token: string | null) => {
     setToken(token || "");
@@ -78,15 +82,18 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
   const _onComplete = (response: DocsCloudSigninResponse) => {
     setFormStatus("default");
 
-    if ('status' in response && response.status === 403) {
+    if ("status" in response && response.status === 403) {
       setFormStatus("error");
       setIsCaptchaInvalid(true);
       setTimeout(() => {
         setIsCaptchaInvalid(false);
       }, 5000);
-
-    } else if ('status' in response &&response.status === 200 && !("error" in response)) {
-      pageTrack('docs-cloud-singin');
+    } else if (
+      "status" in response &&
+      response.status === 200 &&
+      !("error" in response)
+    ) {
+      pageTrack("docs-cloud-singin");
 
       setIsFormValid(true);
       setFormStatus("success");
@@ -115,7 +122,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
       checkFormValid();
       setToken("");
     }, 5000);
-  }
+  };
 
   const onSubmit = async () => {
     if (!isFormValid) {
@@ -129,8 +136,8 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
       email: formData.email,
       captcha: {
         type: "hcaptcha",
-        token
-      }
+        token,
+      },
     };
 
     const url =
@@ -155,14 +162,14 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
         }
         _onComplete(errorRes);
       }
-    } catch(ex) {
+    } catch (ex) {
       _onComplete({ error: ex instanceof Error ? ex.message : String(ex) });
     }
   };
 
   useEffect(() => {
     if (document.referrer) {
-      localStorage.setItem('previousPage', document.referrer);
+      localStorage.setItem("previousPage", document.referrer);
     }
 
     if (typeof window === "undefined") return;
@@ -208,7 +215,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
           <StyledLogInForm>
             <Input
               onChange={(e) => handleInputChange("email", e.target.value)}
-              onBlur={() => {
+              onBlur={async () => {
                 setIsEmpty((prevState) => ({
                   ...prevState,
                   email: formData.email.length === 0,
@@ -217,6 +224,8 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
                   ...prevState,
                   email: false,
                 }));
+                const isTestEmail = await validateTestEmail(formData.email);
+                setIsTestCaptchaValid(isTestEmail === true);
               }}
               data-testid="docs-log-in-email-input"
               value={formData.email}
@@ -252,33 +261,41 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
           </StyledLogInForm>
 
           <div>
-          {isCaptchaInvalid && <StyledSignUpCaption $error className="wrongcaptcha">{t("WrongCaptcha")}</StyledSignUpCaption>}
-          <Text fontSize="12px" lineHeight="1.4em" color="#808080">
-            <Trans
-              t={t}
-              i18nKey="ByClickingContinue"
-              components={[
-                <Link
-                  key={0}
-                  href="https://help.onlyoffice.co/Products/Files/doceditor.aspx?fileid=6615734&doc=cy9XcGc5TXNONjVTMkNrR2NZUEVTT2E1Y1FDZGVRQ1YvOTJYTnpkZ3JEWT0_IjY2MTU3MzQi0"
-                  target="_blank"
-                  color="main"
-                  textUnderline
-                />,
-                <Link
-                  key={1}
-                  href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261"
-                  target="_blank"
-                  color="main"
-                  textUnderline
-                />,
-              ]}
-            />
-          </Text>
-          {mailError && <StyledSignUpCaption $error className="mailerror">{t(mailError)}</StyledSignUpCaption>}
+            {isCaptchaInvalid && (
+              <StyledSignUpCaption $error className="wrongcaptcha">
+                {t("WrongCaptcha")}
+              </StyledSignUpCaption>
+            )}
+            <Text fontSize="12px" lineHeight="1.4em" color="#808080">
+              <Trans
+                t={t}
+                i18nKey="ByClickingContinue"
+                components={[
+                  <Link
+                    key={0}
+                    href="https://help.onlyoffice.co/Products/Files/doceditor.aspx?fileid=6615734&doc=cy9XcGc5TXNONjVTMkNrR2NZUEVTT2E1Y1FDZGVRQ1YvOTJYTnpkZ3JEWT0_IjY2MTU3MzQi0"
+                    target="_blank"
+                    color="main"
+                    textUnderline
+                  />,
+                  <Link
+                    key={1}
+                    href="https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5048502&doc=SXhWMEVzSEYxNlVVaXJJeUVtS0kyYk14YWdXTEFUQmRWL250NllHNUFGbz0_IjUwNDg1MDIi0&_ga=2.101739969.1105072466.1587625676-1002786878.1584771261"
+                    target="_blank"
+                    color="main"
+                    textUnderline
+                  />,
+                ]}
+              />
+            </Text>
+            {mailError && (
+              <StyledSignUpCaption $error className="mailerror">
+                {t(mailError)}
+              </StyledSignUpCaption>
+            )}
           </div>
         </StyledLogInContainer>
-        
+
         <LoaderButton
           onClick={onSubmit}
           status={formStatus}
@@ -288,12 +305,28 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
           data-testid="docs-log-in-button"
         />
 
-        {formStatus === "loading" && (<StyledSignUpCaption>{t("PleaseWait")}</StyledSignUpCaption>)}
-        {formStatus === "error" && (<StyledSignUpCaption $error>{t("WeAreSorryButAnErrorOccurred")}</StyledSignUpCaption>)}
-        {formStatus === "success" && (<StyledSignUpCaption className="success">{t("YourRequestHasBeenSentSuccessfully")}</StyledSignUpCaption>)}
+        {formStatus === "loading" && (
+          <StyledSignUpCaption>{t("PleaseWait")}</StyledSignUpCaption>
+        )}
+        {formStatus === "error" && (
+          <StyledSignUpCaption $error>
+            {t("WeAreSorryButAnErrorOccurred")}
+          </StyledSignUpCaption>
+        )}
+        {formStatus === "success" && (
+          <StyledSignUpCaption className="success">
+            {t("YourRequestHasBeenSentSuccessfully")}
+          </StyledSignUpCaption>
+        )}
       </StyledLogInWrapper>
-      
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} maxWidth="544px" withCloseBtn positionCloseBtn="inside">
+
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        maxWidth="544px"
+        withCloseBtn
+        positionCloseBtn="inside"
+      >
         <StyledSuccessModal>
           <CheckEmail text2="TheLinkIsValidFor60Minutes" />
         </StyledSuccessModal>

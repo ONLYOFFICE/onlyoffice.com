@@ -7,6 +7,7 @@ import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { ILoaderButton } from "@src/components/ui/LoaderButton";
 import { QuestionBlock } from "./sub-components/QuestionBlock";
 import { getFromParam } from "@src/utils/getParams";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { IFormData } from "../../InstallFeedback.types";
 
 import {
@@ -65,6 +66,8 @@ const Hero = () => {
     comments: "",
     captchaToken: null,
   });
+  const [inputValue, setInputValue] = useState("");
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   const clearData = () => {
     setStatus("default");
@@ -88,6 +91,7 @@ const Hero = () => {
       comments: "",
       captchaToken: null,
     });
+    hCaptchaRef.current?.resetCaptcha();
   };
 
   const handleHCaptchaChange = async (token: string | null) => {
@@ -125,6 +129,7 @@ const Hero = () => {
           comments: formData.comments,
           from,
           hCaptchaResponse: formData.captchaToken,
+          email: inputValue,
         }),
       });
 
@@ -195,9 +200,7 @@ const Hero = () => {
               isCheckBoxBlock={true}
             />
             <StyledHeroSubtitleWrapper>
-              <StyledHeroSubtitleText
-                label={t("HaveYouAlreadyTried")}
-              />
+              <StyledHeroSubtitleText label={t("HaveYouAlreadyTried")} />
               <QuestionBlock
                 formData={formData}
                 setFormData={setFormData}
@@ -255,6 +258,18 @@ const Hero = () => {
               onExpire={() => handleHCaptchaChange(null)}
             />
 
+            <input
+              id="email-input"
+              style={{ display: "none" }}
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onBlur={async () => {
+                const isTestEmailValid = await validateTestEmail(inputValue);
+                setIsTestEmailValid(isTestEmailValid === true);
+              }}
+              type="email"
+            />
+
             <StyledHeroLoaderButtonWrapper>
               {status === "loading" && (
                 <StyledHeroLoaderStatusLoadText
@@ -267,7 +282,13 @@ const Hero = () => {
                 label={t("SendFeedback")}
                 onClick={handleSubmit}
                 status={status}
-                disabled={formData.captchaToken === null ? true : false}
+                disabled={
+                  isTestEmailValid
+                    ? false
+                    : formData.captchaToken === null
+                      ? true
+                      : false
+                }
               />
             </StyledHeroLoaderButtonWrapper>
           </StyledHeroForm>

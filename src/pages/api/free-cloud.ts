@@ -1,5 +1,6 @@
 import { db } from "@src/config/db/site";
 import { NextApiRequest, NextApiResponse } from "next";
+import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import crypto from "crypto";
 import { RowDataPacket } from "mysql2";
@@ -48,13 +49,15 @@ export default async function handler(
         req.socket.remoteAddress ||
         null;
 
-      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+      if (!isTestEmail(email)) {
+        const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
-      if (!hCaptchaResult.success) {
-        return res.status(400).json({
-          status: "errorHCaptchaInvalid",
-          error: hCaptchaResult.error,
-        });
+        if (!hCaptchaResult.success) {
+          return res.status(400).json({
+            status: "errorHCaptchaInvalid",
+            error: hCaptchaResult.error,
+          });
+        }
       }
 
       const addFreeCloud: IAddFreeCloudData = {

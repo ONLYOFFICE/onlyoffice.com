@@ -10,7 +10,7 @@ interface ISelectSubjectItems {
       value: string;
     }[];
   }[];
-};
+}
 
 interface IFormData {
   product: string;
@@ -28,6 +28,7 @@ interface ICheckStatus {
   name: "default" | "success" | "error";
   email: "default" | "success" | "error";
   file: "default" | "success" | "error";
+  hcaptcha: "default" | "success" | "error";
 }
 
 type TNavigatorWithUAData = Navigator & {
@@ -42,5 +43,5 @@ export type {
   ISelectSubjectItems,
   IFormData,
   ICheckStatus,
-  TNavigatorWithUAData
+  TNavigatorWithUAData,
 };

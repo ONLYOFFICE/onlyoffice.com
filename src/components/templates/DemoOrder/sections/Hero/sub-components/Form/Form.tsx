@@ -27,6 +27,7 @@ import {
 } from "./Form.styled";
 import { Heading } from "@src/components/ui/Heading";
 import DateTimePicker from "@src/components/ui/DateTimePicker/DateTimePicker";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 
 const Form = () => {
   const { t } = useTranslation("demo-order");
@@ -47,6 +48,7 @@ const Form = () => {
     note: false,
     spam: false,
   });
+  const [isTestCaptchaValid, setIsTestCaptchaValid] = useState(false);
   const initialFormData: IFormData = {
     fullName: "",
     email: "",
@@ -74,7 +76,9 @@ const Form = () => {
     formData.time.length > 0 &&
     formData.timeZoneOffset.length > 0;
   const isProductValid = formData.module.length > 0;
-  const isHCaptchaValid = formData.hcaptcha !== null;
+  const isHCaptchaValid = isTestCaptchaValid
+    ? true
+    : formData.hcaptcha !== null;
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -264,11 +268,13 @@ const Form = () => {
         />
         <Input
           onChange={(e) => handleInputChange("email", e.target.value)}
-          onBlur={() => {
+          onBlur={async () => {
             setIsEmpty((prev) => ({
               ...prev,
               email: formData.email.length === 0,
             }));
+            const isTestEmail = await validateTestEmail(formData.email);
+            setIsTestCaptchaValid(isTestEmail === true);
           }}
           value={formData.email}
           label={t("Email")}
