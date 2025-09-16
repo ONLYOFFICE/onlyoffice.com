@@ -1,6 +1,9 @@
-interface IRewardfulFunction {
+interface IRewardfulQueue {
   (...args: unknown[]): void;
   q?: unknown[];
+}
+
+interface IRewardfulData {
   referral?: string;
   affiliate?: {
     token?: string;
@@ -9,7 +12,8 @@ interface IRewardfulFunction {
 
 declare global {
   interface Window {
-    rewardful?: IRewardfulFunction;
+    rewardful?: IRewardfulQueue;
+    Rewardful?: IRewardfulData;
     _rwq?: string;
   }
 }
@@ -17,7 +21,7 @@ declare global {
 export const loadRewardful = () => {
   if (!window.rewardful) {
     window._rwq = "rewardful";
-    const rewardfulFn: IRewardfulFunction = (...args) => {
+    const rewardfulFn: IRewardfulQueue = (...args) => {
       (rewardfulFn.q = rewardfulFn.q || []).push(args);
     };
     window.rewardful = rewardfulFn;
@@ -33,10 +37,10 @@ export const loadRewardful = () => {
 };
 
 export const getClientReferenceId = (): string | undefined =>
-  typeof window !== "undefined" ? window.rewardful?.referral : undefined;
+  window.Rewardful?.referral;
 
 export const getAffiliateToken = (): string | undefined =>
-  typeof window !== "undefined" ? window.rewardful?.affiliate?.token : undefined;
+  window.Rewardful?.affiliate?.token;
 
 export const getClientReferenceParam = (): string => {
   const id = getClientReferenceId();
@@ -50,8 +54,10 @@ export const getClientReferenceParam = (): string => {
 
 export const addClientReferenceOnReady = (callback: () => void) => {
   if (window.rewardful) {
+    console.log("~~ window.rewardful ~~");
     window.rewardful("ready", callback);
   } else {
-    callback();
+    console.log("~~ else ~~");
+    setTimeout(() => addClientReferenceOnReady(callback), 50);
   }
 };
