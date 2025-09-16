@@ -10,7 +10,6 @@ const StyledHeroSection = styled(Section)`
 `;
 
 const StyledHeroWrapper = styled.div`
-  margin-left: 65px;
   display: grid;
   grid-template-columns: 400px auto;
   align-items: center;

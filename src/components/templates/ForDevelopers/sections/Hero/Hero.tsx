@@ -20,7 +20,7 @@ const Hero = () => {
       tabletSmallSpacing={["80px", "80px"]}
       mobileSpacing={["48px", "48px"]}
     >
-      <Container maxWidth="1419px">
+      <Container maxWidth="1280px">
         <StyledHeroWrapper>
           <StyledHeroContent>
             <StyledHeroHeading level={1} size={1}>
