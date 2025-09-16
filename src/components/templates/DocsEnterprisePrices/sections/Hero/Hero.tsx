@@ -72,7 +72,10 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
     loadRewardful();
 
     addClientReferenceOnReady(function () {
-      setReferenceParam(getClientReferenceParam());
+      const param = getClientReferenceParam();
+      console.log("Rewardful ready! param=", param);
+
+      setReferenceParam(param);
     });
   }, []);
 
@@ -473,7 +476,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
                     data-testid="buy-now-button"
                     as="a"
                     fullWidth
-                    href={product?.url + referenceParam}
+                    href={`${product?.url}${referenceParam}`}
                     target="_blank"
                     label={t("BuyNow")}
                   />
