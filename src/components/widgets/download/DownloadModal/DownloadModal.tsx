@@ -243,8 +243,8 @@ const DownloadModal = ({
                 ...prev,
                 email: formData.email.length === 0,
               }));
-              const isTestEmailValid = await validateTestEmail(formData.email);
-              setIsTestEmailValid(isTestEmailValid === true);
+              const isTestEmail = await validateTestEmail(formData.email);
+              setIsTestEmailValid(Boolean(isTestEmail));
               checkFormValid();
             }}
             value={formData.email}

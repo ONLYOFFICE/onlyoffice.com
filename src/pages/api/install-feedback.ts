@@ -22,7 +22,6 @@ export default async function handler(
     meet,
     support,
     comments,
-    from,
     email,
     hCaptchaResponse,
   } = req.body;

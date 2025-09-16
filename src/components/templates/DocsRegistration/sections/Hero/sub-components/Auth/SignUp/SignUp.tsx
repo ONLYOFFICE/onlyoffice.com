@@ -78,7 +78,7 @@ const SignUp = () => {
 
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
   const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
-  const [isTestCaptchaValid, setIsTestCaptchaValid] = useState(false);
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   const pageTrack = usePageTrack();
 
@@ -107,10 +107,8 @@ const SignUp = () => {
 
   const checkFormValid = useCallback(() => {
     const baseValid = fullNameIsValid && emailIsValid;
-    setIsFormValid(
-      isTestCaptchaValid ? baseValid : baseValid && !!token.length,
-    );
-  }, [fullNameIsValid, emailIsValid, isTestCaptchaValid, token.length]);
+    setIsFormValid(isTestEmailValid ? baseValid : baseValid && !!token.length);
+  }, [fullNameIsValid, emailIsValid, isTestEmailValid, token.length]);
 
   const clearData = () => {
     setFormData(initialFormData);
@@ -127,7 +125,7 @@ const SignUp = () => {
 
   const onSubmit = async () => {
     const baseValid = fullNameIsValid && emailIsValid;
-    if (!(isTestCaptchaValid ? baseValid : baseValid && !!token.length)) {
+    if (!(isTestEmailValid ? baseValid : baseValid && !!token.length)) {
       return;
     }
 
@@ -281,7 +279,7 @@ const SignUp = () => {
                 email: formData.email.length === 0,
               }));
               const isTestEmail = await validateTestEmail(formData.email);
-              setIsTestCaptchaValid(isTestEmail === true);
+              setIsTestEmailValid(Boolean(isTestEmail));
             }}
             data-testid="docs-sign-up-email-input"
             value={formData.email}

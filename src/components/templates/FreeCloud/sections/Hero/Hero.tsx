@@ -124,12 +124,13 @@ const Hero = () => {
   };
 
   const handleCheckStatusEmail = async () => {
-    const isTestEmailValid = await validateTestEmail(dataForm.email);
-
-    setCheckStatus((prev) => ({
-      ...prev,
-      hCaptchaToken: isTestEmailValid ? "success" : "default",
-    }));
+    if (checkStatus.hCaptchaToken !== "success") {
+      const isTestEmailValid = await validateTestEmail(dataForm.email);
+      setCheckStatus((prev) => ({
+        ...prev,
+        hCaptchaToken: isTestEmailValid ? "success" : "default",
+      }));
+    }
 
     if (validateEmail(dataForm.email)) {
       setCheckStatus((prev) => ({

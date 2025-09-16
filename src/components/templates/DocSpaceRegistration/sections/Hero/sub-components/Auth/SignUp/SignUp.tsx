@@ -332,7 +332,7 @@ const SignUp = ({
                 email: formData.email.length === 0,
               }));
               const isTestEmail = await validateTestEmail(formData.email);
-              setIsTestEmailValid(isTestEmail === true);
+              setIsTestEmailValid(Boolean(isTestEmail));
               checkFormValid();
             }}
             data-testid="sign-up-email-input"

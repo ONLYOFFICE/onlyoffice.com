@@ -261,8 +261,8 @@ const Hero = () => {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               onBlur={async () => {
-                const isTestEmailValid = await validateTestEmail(inputValue);
-                setIsTestEmailValid(isTestEmailValid === true);
+                const isTestEmail = await validateTestEmail(inputValue);
+                setIsTestEmailValid(Boolean(isTestEmail));
               }}
               type="email"
             />

@@ -62,7 +62,7 @@ const CanceledForm = ({
     email: false,
     message: false,
   });
-  const [isTestCaptchaValid, setIsTestCaptchaValid] = useState(false);
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   const handleCheckboxChange = useCallback((itemId: string, mark: string) => {
     setFormData((prev) => {
@@ -116,7 +116,7 @@ const CanceledForm = ({
     ? formData.email.length > 0 && validateEmail(formData.email)
     : true;
 
-  const isHCaptchaPassed = isTestCaptchaValid
+  const isHCaptchaPassed = isTestEmailValid
     ? true
     : Boolean(formData.hCaptchaResponse);
 
@@ -255,7 +255,7 @@ const CanceledForm = ({
             email: formData.email.length === 0,
           }));
           const isTestEmail = await validateTestEmail(formData.email);
-          setIsTestCaptchaValid(isTestEmail === true);
+          setIsTestEmailValid(Boolean(isTestEmail));
         }}
         value={formData.email}
         label={t("Email")}

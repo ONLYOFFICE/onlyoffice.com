@@ -48,7 +48,7 @@ const Form = () => {
     note: false,
     spam: false,
   });
-  const [isTestCaptchaValid, setIsTestCaptchaValid] = useState(false);
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
   const initialFormData: IFormData = {
     fullName: "",
     email: "",
@@ -76,9 +76,7 @@ const Form = () => {
     formData.time.length > 0 &&
     formData.timeZoneOffset.length > 0;
   const isProductValid = formData.module.length > 0;
-  const isHCaptchaValid = isTestCaptchaValid
-    ? true
-    : formData.hcaptcha !== null;
+  const isHCaptchaValid = isTestEmailValid ? true : formData.hcaptcha !== null;
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -274,7 +272,7 @@ const Form = () => {
               email: formData.email.length === 0,
             }));
             const isTestEmail = await validateTestEmail(formData.email);
-            setIsTestCaptchaValid(isTestEmail === true);
+            setIsTestEmailValid(Boolean(isTestEmail));
           }}
           value={formData.email}
           label={t("Email")}

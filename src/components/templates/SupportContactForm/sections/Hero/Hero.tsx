@@ -232,12 +232,14 @@ const Hero = () => {
   };
 
   const handleCheckStatusEmail = async () => {
-    const isTestEmailValid = await validateTestEmail(formData.email);
+    if (checkStatus.hcaptcha !== "success") {
+      const isTestEmailValid = await validateTestEmail(formData.email);
 
-    setCheckStatus((prev) => ({
-      ...prev,
-      hcaptcha: isTestEmailValid ? "success" : "default",
-    }));
+      setCheckStatus((prev) => ({
+        ...prev,
+        hcaptcha: isTestEmailValid ? "success" : "default",
+      }));
+    }
 
     if (validateEmail(formData.email)) {
       setCheckStatus((prev) => ({

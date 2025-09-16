@@ -86,7 +86,13 @@ const QuoteModal = <T,>({
       ...prevData,
       hCaptcha: token,
     }));
-    checkFormValid();
+    setIsFormValid(
+      isFullNameValid &&
+        isEmailValid &&
+        (locale === "zh" ? true : isPhoneValid) &&
+        isCompanyValid &&
+        !!token,
+    );
     setFormStatus("default");
   };
 
@@ -221,7 +227,7 @@ const QuoteModal = <T,>({
                 email: quoteFormData.email.length === 0,
               }));
               const isTestEmail = await validateTestEmail(quoteFormData.email);
-              setIsTestEmailValid(isTestEmail === true);
+              setIsTestEmailValid(Boolean(isTestEmail));
               checkFormValid(isTestEmail);
             }}
             value={quoteFormData.email}
