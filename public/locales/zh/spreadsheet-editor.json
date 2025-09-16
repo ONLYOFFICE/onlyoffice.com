@@ -34,7 +34,7 @@
   "Feature7ImgUrl": "/images/templates/spreadsheet-editor/features/zh/screen7.png",
   "Feature7ImgUrl2x": "/images/templates/spreadsheet-editor/features/zh/screen7@2x.png",
   "Feature8Title": "使用 AI 助手",
-  "Feature8Desc": "借助 ChatGPT 插件执行涉及理解或生成自然语言的任务。获得问题的准确答案、快速查找信息、生成文本、构建代码...这些工作在编辑器中即可直接完成。",
+  "Feature8Desc": "连接任何 AI 助手，提升工作效率。激活 AI 内联智能体，实现与编辑器的智能交互。使用 AI 计算能力，快速响应功能请求。汇总、分析、排序、筛选电子表格中的数据，并根据选定范围或整个工作表生成可视化图表。同时支持自动创建宏和转换 VBA，提升准确性与执行效率。",
   "Feature8ImgUrl": "/images/templates/spreadsheet-editor/features/zh/screen8.png",
   "Feature8ImgUrl2x": "/images/templates/spreadsheet-editor/features/zh/screen8@2x.png",
   "Feature9Title": "添加附加组件进一步扩展功能",

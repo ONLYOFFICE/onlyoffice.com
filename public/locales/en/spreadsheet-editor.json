@@ -34,7 +34,7 @@
   "Feature7ImgUrl": "/images/templates/spreadsheet-editor/features/screen7.png",
   "Feature7ImgUrl2x": "/images/templates/spreadsheet-editor/features/screen7@2x.png",
   "Feature8Title": "Use AI helper",
-  "Feature8Desc": "Perform tasks which involve understanding or generating natural language using the ChatGPT plugin. Get accurate answers to your questions, quickly find information, generate texts, get your code built, etc. right in the editor.",
+  "Feature8Desc": "Connect any AI assistant to work faster. Activate the AI inline agent for smart interaction with the editor. Calculate with AI and get the right function in seconds. Aggregate, analyze, sort, and filter information within your spreadsheets, generate visual representations from selected ranges or entire sheets. Automate macro creation and VBA conversion to save time and avoid errors.",
   "Feature8ImgUrl": "/images/templates/spreadsheet-editor/features/screen8.png",
   "Feature8ImgUrl2x": "/images/templates/spreadsheet-editor/features/screen8@2x.png",
   "Feature9Title": "Do even more with plugins",

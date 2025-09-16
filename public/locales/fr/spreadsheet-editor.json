@@ -34,7 +34,7 @@
   "Feature7ImgUrl": "/images/templates/spreadsheet-editor/features/fr/screen7.png",
   "Feature7ImgUrl2x": "/images/templates/spreadsheet-editor/features/fr/screen7@2x.png",
   "Feature8Title": "Utilisez l'aide de l'IA",
-  "Feature8Desc": "Effectuez des tâches qui impliquent la compréhension ou la génération de langage naturel à l'aide du plugin ChatGPT. Obtenez des réponses précises à vos questions, trouvez rapidement des informations, générez des textes, construisez votre code, etc. directement dans l'éditeur.",
+  "Feature8Desc": "Connectez n'importe quel assistant IA pour travailler plus rapidement. Activez l'agent IA intégré pour interagir intelligemment avec l'éditeur. Effectuez des calculs avec l'IA et obtenez la fonction appropriée en quelques secondes. Agrégez, analysez, triez et filtrez les informations dans vos feuilles de calcul, générez des représentations visuelles à partir de plages sélectionnées ou de feuilles entières. Automatisez la création de macros et la conversion VBA pour gagner du temps et éviter les erreurs.",
   "Feature8ImgUrl": "/images/templates/spreadsheet-editor/features/fr/screen8.png",
   "Feature8ImgUrl2x": "/images/templates/spreadsheet-editor/features/fr/screen8@2x.png",
   "Feature9Title": "Faites-en encore plus, avec les modules tiers",

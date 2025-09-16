@@ -73,6 +73,7 @@ export const items: IEditorsItem[] = [
   {
     heading: "Feature8Title",
     text: "Feature8Desc",
+    links: [{ label: "LearnMore", href: "/ai-assistants" }],
     image: {
       url: "Feature8ImgUrl",
       url2x: "Feature8ImgUrl2x",
