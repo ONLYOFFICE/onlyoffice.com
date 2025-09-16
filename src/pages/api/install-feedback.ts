@@ -53,7 +53,6 @@ export default async function handler(
 
     const transporter = emailTransporter();
     await transporter.sendMail({
-      from,
       to: process.env.SERVER_EMAIL!,
       subject: "Install Feedback",
       html: InstallFeedbackEmail({

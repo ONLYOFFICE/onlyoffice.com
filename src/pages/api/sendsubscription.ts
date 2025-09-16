@@ -73,7 +73,6 @@ export default async function handler(
     ) {
       const transporter = emailTransporter();
       await transporter.sendMail({
-        from: `"Cloud Office Applications" <${process.env.TRANSPORTER_EMAIL_AUTH_USER}>`,
         to: [email],
         subject: subject,
         html: SubscribeEmail({

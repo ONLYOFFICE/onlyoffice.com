@@ -6,7 +6,6 @@ import { Container } from "@src/components/ui/Container";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { ILoaderButton } from "@src/components/ui/LoaderButton";
 import { QuestionBlock } from "./sub-components/QuestionBlock";
-import { getFromParam } from "@src/utils/getParams";
 import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { IFormData } from "../../InstallFeedback.types";
 
@@ -109,7 +108,6 @@ const Hero = () => {
     }
 
     setStatus("loading");
-    const from = getFromParam();
 
     try {
       const response = await fetch("/api/install-feedback", {
@@ -127,7 +125,6 @@ const Hero = () => {
           meet: formData.degreeVersionMeet,
           support: formData.planToUse,
           comments: formData.comments,
-          from,
           hCaptchaResponse: formData.captchaToken,
           email: inputValue,
         }),

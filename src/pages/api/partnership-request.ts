@@ -72,7 +72,6 @@ export default async function handler(
 
     const transporter = emailTransporter();
     await transporter.sendMail({
-      from,
       to: [process.env.SALES_EMAIL!],
       subject: `${companyName} Partner Request ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
       html: PartnershipRequestEmail({

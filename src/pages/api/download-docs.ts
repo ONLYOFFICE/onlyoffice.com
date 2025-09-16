@@ -283,7 +283,6 @@ export default async function handler(
 
     const transporter = emailTransporter();
     await transporter.sendMail({
-      from,
       to: [process.env.SALES_EMAIL!],
       subject: `${errorMessages.length ? "[Error] " : ""}${companyName} - ${
         type === "docsenterprisedownloadrequest"
