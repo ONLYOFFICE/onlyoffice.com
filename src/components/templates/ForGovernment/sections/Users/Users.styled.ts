@@ -31,13 +31,24 @@ const StyledUsersItems = styled.ul`
   }
 `;
 
-const StyledItem = styled.li<{ $width: number; $height: number; $backgroundImage: string; $backgroundPosition: string }>`
+const StyledItem = styled.li<{
+  $width: number;
+  $height: number;
+  $backgroundImage: string;
+  $backgroundPosition: string
+}>`
   width: ${props => props.$width}px;
   height: ${props => props.$height}px;
   background-image: ${props => props.$backgroundImage};
   background-position: ${props => props.$backgroundPosition};
   background-size: auto;
   background-repeat: no-repeat;
+  transition: filter 0.3s ease;
+  filter: grayscale(1);
+
+  &:hover {
+    filter: grayscale(0);
+  }
 `;
 
 export { StyledUsers, StyledUsersItems, StyledUsersHeading, StyledItem };

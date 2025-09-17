@@ -49,7 +49,7 @@ const StyledAppsList = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
-  padding-top: 16px;
+  padding: 16px 0 32px;
   flex-wrap: wrap;
   justify-content: center;
 
@@ -62,14 +62,16 @@ const StyledAppsList = styled.div`
     justify-content: center;
     transition:
       background-color 0.3s ease,
-      box-shadow 0.3s ease;
+      box-shadow 0.3s ease,
+      filter 0.3s ease;
 
     &:hover {
       box-shadow: 0 7px 25px rgba(85, 85, 85, 0.15);
       background-color: #ffffff;
       transition:
         background-color 0.3s ease,
-        box-shadow 0.3s ease;
+        box-shadow 0.3s ease,
+        filter 0.3s ease;
     }
   }
 `;
