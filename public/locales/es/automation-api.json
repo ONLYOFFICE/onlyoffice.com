@@ -4,7 +4,7 @@
 
   "HeroTitle": "API de automatización de ONLYOFFICE",
   "HeroSubtitle" : "Coloca cualquier control dentro de la interfaz de tu plataforma y manipula el contenido del documento desde el exterior de los editores",
-  "HeroButton" : "SOLICITAR DEMOSTRACIÓN GRATUITA",
+  "HeroButton" : "Solicitar demostración gratuita",
 
   "WhatIsTitle" : "Qué es <0>la API de automatización</0>",
   "WhatIsSubtitle" : "<0>La API de automatización de ONLYOFFICE</0> con la clase Conector hace posible interactuar con documentos ofimáticos desde el exterior. Puedes obtener los cambios realizados en los archivos utilizando tus propios elementos de interfaz personalizados.",
@@ -45,9 +45,9 @@
   "HowToGetONLYOFFICEAutomationAPI": "Cómo obtener la API de automatización de ONLYOFFICE",
   "AutomationAPISsAPartOf": "La API de automatización es una parte de <0>ONLYOFFICE Docs Developer</0> que proporciona la mejor suite ofimática en línea con editores para documentos, hojas de cálculo, presentaciones y archivos PDF destinados a la integración en tu propia aplicación web o plataforma. El acceso a la API de automatización se proporciona como parte de <1>la licencia extendida de ONLYOFFICE Docs Developer</1>.",
   "GetA30DayTrial": "Obtén una <0>prueba de 30 días</0> de ONLYOFFICE Docs Developer con la API de automatización incluida para probarla gratis.",
-  "DownloadNow": "DESCARGAR AHORA",
+  "DownloadNow": "Descargar ahora",
 
   "HaveAnyQuestions": "¿Tienes alguna pregunta sobre la API de automatización de ONLYOFFICE? Estaremos encantados de consultarte y discutir todos los detalles.",
   "HaveAnyQuestionsText": "El equipo de expertos está aquí para ayudarte en cada paso. <2 /> <2 /> Si tienes preguntas sobre la preventa, ponte en contacto con nosotros a través de <0>sales@onlyoffice.com</0> o elige una hora para que nuestro equipo te llame. <2 /> <2 /> Para cualquier cuestión técnica, envíanos un mensaje a <1>support@onlyoffice.com</1>.",
-  "GetInTouch": "CONTÁCTANOS"
+  "GetInTouch": "Contáctanos"
 }
