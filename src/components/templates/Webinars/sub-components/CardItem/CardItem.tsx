@@ -8,6 +8,7 @@ import { TextArea } from "@src/components/ui/TextArea";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { validateFullName, validateEmail } from "@src/utils/validators";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { getFromParam } from "@src/utils/getParams";
 import { ImageChecker } from "../ImageChecker";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
@@ -56,7 +57,7 @@ const CardItem = ({
   const { t } = useTranslation("webinars");
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
-  const refHCaptcha = useRef<ReactCaptcha  | null>(null);
+  const refHCaptcha = useRef<ReactCaptcha | null>(null);
 
   const pageTrack = usePageTrack();
 
@@ -114,7 +115,16 @@ const CardItem = ({
     }
   };
 
-  const handleCheckStatusEmail = () => {
+  const handleCheckStatusEmail = async () => {
+    if (checkStatus.hCaptcha !== "success") {
+      const isTestEmailValid = await validateTestEmail(formData.email);
+
+      setCheckStatus((prev) => ({
+        ...prev,
+        hCaptcha: isTestEmailValid ? "success" : "default",
+      }));
+    }
+
     if (validateEmail(formData.email)) {
       setCheckStatus((prev) => ({
         ...prev,
@@ -147,6 +157,10 @@ const CardItem = ({
       ...formData,
       hCaptcha: token,
     });
+    setCheckStatus((prev) => ({
+      ...prev,
+      hCaptcha: token ? "success" : "default",
+    }));
   };
 
   const clearData = () => {
@@ -198,7 +212,8 @@ const CardItem = ({
           questions: formData.textArea,
           webinarLang,
           from,
-          hCaptchaResponse: formData.hCaptcha,
+          emailSubject: t("WebinarSubject"),
+          hCaptchaResponse: formData.hCaptcha || null,
           locale,
         }),
       });
@@ -230,8 +245,10 @@ const CardItem = ({
         <StyledCardItemContent>
           <StyledCardItemHeading level={4} size={4} label={title} />
           <Text size={2}>
-            <Trans i18nKey={description} components={{
-                br: <br />
+            <Trans
+              i18nKey={description}
+              components={{
+                br: <br />,
               }}
             />
           </Text>
@@ -247,7 +264,7 @@ const CardItem = ({
             />
           )}
           {image.map((image, index) => (
-              <ImageChecker key={`${image.url} ${index}`} url={image.url} />
+            <ImageChecker key={`${image.url} ${index}`} url={image.url} />
           ))}
           <StyledCardItemSubtitle label={speaker} level={5} size={5} />
         </StyledCardItemBottom>
@@ -304,7 +321,7 @@ const CardItem = ({
                       label={t("FullNameIsEmpty")}
                       color="#CB0000"
                     />
-                )}
+                  )}
                 {checkStatus.fullName === "error" &&
                   formData.fullName.length > 0 && (
                     <Text
@@ -312,7 +329,7 @@ const CardItem = ({
                       label={t("FullNameIsIncorrect")}
                       color="#CB0000"
                     />
-                )}
+                  )}
               </StyledCardItemModalInputWrapper>
               <StyledCardItemModalInputWrapper>
                 <Input
@@ -339,7 +356,7 @@ const CardItem = ({
                       label={t("CompanyNameIsEmpty")}
                       color="#CB0000"
                     />
-                )}
+                  )}
               </StyledCardItemModalInputWrapper>
               <StyledCardItemModalInputWrapper>
                 <Input
@@ -359,8 +376,8 @@ const CardItem = ({
                 />
                 {checkStatus.email === "error" &&
                   formData.email.length === 0 && (
-                  <Text size={4} label={t("EmailIsEmpty")} color="#CB0000" />
-                )}
+                    <Text size={4} label={t("EmailIsEmpty")} color="#CB0000" />
+                  )}
                 {checkStatus.email === "error" && formData.email.length > 0 && (
                   <Text
                     size={4}
@@ -422,7 +439,7 @@ const CardItem = ({
                     checkStatus.fullName !== "success" ||
                     checkStatus.companyName !== "success" ||
                     checkStatus.email !== "success" ||
-                    formData.hCaptcha === null
+                    checkStatus.hCaptcha !== "success"
                   }
                   status={status}
                   onClick={handleSubmit}
@@ -443,7 +460,7 @@ const CardItem = ({
                 <Trans
                   t={t}
                   i18nKey={"RequestSuccessfull"}
-                  components={{br: <br />}}
+                  components={{ br: <br /> }}
                 />
               </StyledCardItemStatusText>
             </StyledCardItemModalForm>

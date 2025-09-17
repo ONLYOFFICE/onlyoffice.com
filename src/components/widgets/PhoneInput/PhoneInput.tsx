@@ -79,6 +79,12 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
         setInputValue(defaultCountry.countryCode);
         setTouched(false);
       },
+      getPrefix: () => {
+        return (
+          countries.find((item) => item.country === selectedKey)?.countryCode ||
+          "+1"
+        );
+      },
     }));
 
     useEffect(() => {

@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { parse } from "cookie";
+import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { validateEmail } from "@src/utils/validators";
 import { LoginEmail } from "@src/components/emails/LoginEmail";
@@ -37,13 +38,15 @@ export default async function handler(
       req.socket.remoteAddress ||
       null;
 
-    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+    if (!isTestEmail(email)) {
+      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
-    if (!hCaptchaResult.success) {
-      return res.status(400).json({
-        status: "errorHCaptchaInvalid",
-        error: hCaptchaResult.error,
-      });
+      if (!hCaptchaResult.success) {
+        return res.status(400).json({
+          status: "errorHCaptchaInvalid",
+          error: hCaptchaResult.error,
+        });
+      }
     }
 
     if (typeof email !== "string" || !validateEmail(email)) {
@@ -93,11 +96,13 @@ export default async function handler(
           baseUrl,
           queryParams,
           unsubscribeId: emailKey,
+          language,
         })
       : RegisterEmail({
           baseUrl,
           queryParams,
           unsubscribeId: emailKey,
+          language,
         });
 
     await sendEmail({ email, subject, body });

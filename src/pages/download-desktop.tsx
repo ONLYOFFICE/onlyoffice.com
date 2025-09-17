@@ -103,6 +103,7 @@ export async function getStaticProps({ locale }: ILocale) {
               ? src.url_zh || src.url
               : src.url
             : button.link?.href || "";
+
           return {
             ...button,
             link: button.link ? { ...button.link, href } : null,

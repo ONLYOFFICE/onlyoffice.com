@@ -10,6 +10,7 @@ import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { items } from "./data/items";
 import { Text } from "@src/components/ui/Text";
 import { useRouter } from "next/router";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const HowToStart = () => {
   const { t } = useTranslation("affiliates");
@@ -26,7 +27,7 @@ const HowToStart = () => {
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: item.imgUrl,
+            imgUrl: getAssetUrl(item.imgUrl),
             heading: (
               <Trans
                 t={t}

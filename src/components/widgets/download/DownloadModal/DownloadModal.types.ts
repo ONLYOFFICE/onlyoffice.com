@@ -4,7 +4,7 @@ export interface IDownloadModalOnSubmitRequest {
   from?: string;
   country: string;
   region: string;
-  hCaptchaResponse: string;
+  hCaptchaResponse: string | null;
 }
 
 export interface IDownloadModalData {

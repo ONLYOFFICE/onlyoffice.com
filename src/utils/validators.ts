@@ -3,7 +3,7 @@ export const validateFullName = (fullname: string): boolean => {
 };
 
 export const validateEmail = (email: string): boolean => {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
 };
 
 export const validateWebsite = (website: string): boolean => {

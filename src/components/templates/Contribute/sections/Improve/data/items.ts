@@ -62,7 +62,7 @@ export const items: IImproveItemExtended[] = [
       links: [
         { href: "https://github.com/ONLYOFFICE/", isExternal: true },
         {
-          href: "https://forum.onlyoffice.com/?_ga=2.159844410.648881030.1661151945-1933786737.1539158971",
+          href: "https://community.onlyoffice.com/",
           isExternal: true,
         },
       ],

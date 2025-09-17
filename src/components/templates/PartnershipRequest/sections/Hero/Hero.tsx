@@ -129,7 +129,7 @@ const Hero = ({ locale }: IHero) => {
         spam: formData.spam,
         partnerReqType,
         locale: router.locale === "en" ? "" : router.locale,
-        hCaptchaResponse,
+        hCaptchaResponse: hCaptchaResponse || null,
       }),
     }).then((res) => res.json());
   };

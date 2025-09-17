@@ -94,7 +94,7 @@ const EnterpriseModal = ({
     hCaptchaResponse,
   }: IQuoteModalOnSubmitRequest) => {
     return fetch("/api/docspace-prices", {
-      method: "POST",
+    method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         locale,

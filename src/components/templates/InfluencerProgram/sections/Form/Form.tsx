@@ -14,6 +14,7 @@ import {
 import { Input } from "@src/components/ui/Input";
 import { useRef, useState } from "react";
 import { validateEmail, validateFullName } from "@src/utils/validators";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { TextArea } from "@src/components/ui/TextArea";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Link } from "@src/components/ui/Link";
@@ -38,6 +39,7 @@ const Form = () => {
     useState<ILoaderButton["status"]>("default");
   const [formData, setFormData] = useState(initialformData);
   const [isFormValid, setIsFormValid] = useState(false);
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   const isFullNameValid =
     formData.fullName.length > 0 && validateFullName(formData.fullName);
@@ -46,7 +48,7 @@ const Form = () => {
   const isLinkValid = formData.link.length > 0;
   const isMoreDetailsValid = formData.moreDetails.length > 0;
 
-  const handleRecaptchaChange = (token: string | null) => {
+  const handleHCaptchaChange = (token: string | null) => {
     setFormData((prevData) => ({
       ...prevData,
       hCaptcha: token,
@@ -79,13 +81,13 @@ const Form = () => {
     }));
   };
 
-  const checkFormValid = () => {
+  const checkFormValid = (testEmailOverride?: boolean) => {
     setIsFormValid(
       isFullNameValid &&
         isEmailValid &&
         isLinkValid &&
         isMoreDetailsValid &&
-        !!formData.hCaptcha,
+        ((testEmailOverride ?? isTestEmailValid) ? true : !!formData.hCaptcha),
     );
   };
 
@@ -192,12 +194,14 @@ const Form = () => {
 
             <Input
               onChange={(e) => handleInputChange("email", e.target.value)}
-              onBlur={() => {
+              onBlur={async () => {
                 setIsEmpty((prev) => ({
                   ...prev,
                   email: formData.email.length === 0,
                 }));
-                checkFormValid();
+                const isTestEmail = await validateTestEmail(formData.email);
+                setIsTestEmailValid(Boolean(isTestEmail));
+                checkFormValid(isTestEmail);
               }}
               value={formData.email}
               label={t("Email")}
@@ -268,8 +272,8 @@ const Form = () => {
             <StyledHCaptchaWrapper>
               <HCaptcha
                 ref={hCaptchaRef}
-                onVerify={handleRecaptchaChange}
-                onExpire={() => handleRecaptchaChange(null)}
+                onVerify={handleHCaptchaChange}
+                onExpire={() => handleHCaptchaChange(null)}
               />
 
               <Text fontSize="12px" lineHeight="20px">

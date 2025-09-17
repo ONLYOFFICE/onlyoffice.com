@@ -51,5 +51,7 @@
 
   "ContributeHeading": "ご意見をお寄せください",
   "ContributeTextHave": "当社が保持すべきウェビナーについて、ご意見がありますか?",
-  "ContributeTextGet": "当社のチーム ( <0>press@onlyoffice.com</0> ) にお問い合わせいただくか、 <1>Twitter</1> でダイレクトメッセージをご利用ください。"
+  "ContributeTextGet": "当社のチーム ( <0>press@onlyoffice.com</0> ) にお問い合わせいただくか、 <1>Twitter</1> でダイレクトメッセージをご利用ください。",
+
+  "WebinarSubject": "ONLYOFFICEウェビナーへの登録が完了しました。"
 }

@@ -37,7 +37,7 @@ const Assignments = () => {
             label: t(String(label)),
             image: {
               url: getAssetUrl(t(image.url)),
-              url2x: image.url2x ? t(image.url2x) : undefined,
+              url2x: image.url2x ? getAssetUrl(t(image.url2x)) : undefined,
             },
           }))}
         />

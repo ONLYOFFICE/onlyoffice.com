@@ -101,7 +101,7 @@ ONLYOFFICE offers a secure online office suite highly compatible with MS Office 
 - [SourceForge Leader Summer 2025](https://sourceforge.net/software/product/ONLYOFFICE/): Leadership recognition on SourceForge.
 
 ## Community and Contributions
-- [Forum](https://forum.onlyoffice.com/): Join the ONLYOFFICE community forum for discussions.
+- [Forum](https://community.onlyoffice.com/): Join the ONLYOFFICE community forum for discussions.
 - [For contributors](https://www.onlyoffice.com/contribute.aspx): Information for contributors to ONLYOFFICE.
 - [For translators](https://helpcenter.onlyoffice.com/guides/become-translator.aspx): Resources for translators working with ONLYOFFICE.
 - [For influencers](https://www.onlyoffice.com/influencer-program.aspx): Information for influencers collaborating with ONLYOFFICE.

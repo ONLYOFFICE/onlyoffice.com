@@ -12,6 +12,7 @@ import { ConnectorCard } from "./sub-components/ConnectorCard";
 import { connectors } from "./data/connectors";
 import { SortByNameFilter } from "./sub-components/SortByNameFilter";
 import { CategoryFilter } from "./sub-components/CategoryFilter";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Connectors = ({ locale }: ILocale) => {
   const { t } = useTranslation("all-connectors");
@@ -68,7 +69,7 @@ const Connectors = ({ locale }: ILocale) => {
               key={index}
               idName={connector.id}
               image={{
-                url: connector.image.url,
+                url: getAssetUrl(connector.image.url),
                 bgColor: connector.image.bgColor,
               }}
               name={

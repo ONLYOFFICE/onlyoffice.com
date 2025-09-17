@@ -104,7 +104,7 @@ const ComparisonTable = () => {
                         return (
                           <StyledTableCell key={item}>
                             <Link
-                              href={t(val.href || "")}
+                              href={t(val.href || "", { defaultValue: val.href || "" })}
                               color="#333333"
                               textUnderline
                               hover="underline-none"

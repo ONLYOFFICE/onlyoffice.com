@@ -37,6 +37,7 @@ import {
   validateEmail,
   validateWebsite,
 } from "@src/utils/validators";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { usePageTrack } from "@src/lib/hooks/useGA";
 
 const PartnershipRequestForm = ({
@@ -419,11 +420,16 @@ const PartnershipRequestForm = ({
           <Input
             id="partnerEmail"
             onChange={(e) => handleInputChange("email", e.target.value)}
-            onBlur={() => {
+            onBlur={async () => {
               setIsEmpty((prev) => ({
                 ...prev,
                 email: formData.email.length === 0,
               }));
+              const isTestEmail = await validateTestEmail(formData.email);
+
+              if (!isCaptchaValid) {
+                setIsCaptchaValid(isTestEmail === true);
+              }
             }}
             value={formData.email}
             label={t("CorporateEmailAddress")}

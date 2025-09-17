@@ -13,6 +13,7 @@ import { Container } from "@src/components/ui/Container";
 import { BlogCard } from "@src/components/widgets/BlogCard";
 import { items } from "./data/items";
 import { CarouselButton } from "@src/components/ui/CarouselButton";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const LearnMore = () => {
   const { t } = useTranslation("office-for-nextcloud");
@@ -55,7 +56,7 @@ const LearnMore = () => {
                     <SwiperSlide key={index}>
                       <BlogCard
                         className="blog-card"
-                        imgUrl={item.imgUrl}
+                        imgUrl={getAssetUrl(item.imgUrl)}
                         heading={{ label: t(item.heading.label) }}
                         links={item.links?.map((item) => ({
                           href: t(item.href),
@@ -79,7 +80,7 @@ const LearnMore = () => {
                 <BlogCard
                   className="blog-card"
                   key={index}
-                  imgUrl={item.imgUrl}
+                  imgUrl={getAssetUrl(item.imgUrl)}
                   heading={{ label: t(item.heading.label) }}
                   links={item.links?.map((item) => ({
                     href: item.href,

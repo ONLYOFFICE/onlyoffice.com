@@ -13,6 +13,7 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Awards = () => {
   const { t } = useTranslation("awards");
@@ -34,13 +35,13 @@ const Awards = () => {
             <StyledAwardItem key={index} $isLink={!!item.link}>
               <StyledAwardImageContent>
                 <StyledAwardImage
-                  $image={item.image}
+                  $image={getAssetUrl(item.image)}
                   $isSprite={item.isSprite}
                   $position={item.position}
                   $size={item.size}
                   $width={item.width}
                 >
-                  {!item.isSprite && <img src={item.image} alt={t(item.title)} />}
+                  {!item.isSprite && <img src={getAssetUrl(item.image)} alt={t(item.title)} />}
                 </StyledAwardImage>
               </StyledAwardImageContent>
               <StyledAwardContent>

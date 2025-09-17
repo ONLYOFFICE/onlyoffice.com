@@ -1,7 +1,6 @@
 import { INewsCard } from "../sub-components/NewsCard";
 import { INewsItem } from "../sub-components/NewsItem";
 
-import { getAssetUrl } from "@utils/getAssetUrl";
 interface INewsItems {
   blog: INewsCard[];
   webinar: INewsCard[];
@@ -14,14 +13,14 @@ export const items: INewsItems = {
     {
       className: "latest-news-item-blog",
       heading: "OODocSpaceReleased",
-      imgUrl: "OODocSpaceReleasedImage",
+      imgUrl: "/images/templates/main/latest-news/docs-9-0.png",
       linkUrl: "OODocSpaceReleasedLink",
       isExternalLink: false,
       date: "OODocSpaceReleasedDate",
     },
     {
       heading: "OODocsReleased",
-      imgUrl: "OODocsReleasedImage",
+      imgUrl: "/images/templates/main/latest-news/docspace-3-1.png",
       linkUrl: "OODocsReleasedLink",
       isExternalLink: false,
       date: "OODocsReleasedDate",
@@ -31,7 +30,7 @@ export const items: INewsItems = {
     {
       className: "latest-news-item-webinar",
       heading: "MeetOODocSpace",
-      imgUrl: "OODocSpaceReleasedImage",
+      imgUrl: "/images/templates/main/latest-news/docs-9-0.png",
       linkUrl: "https://www.youtube.com/watch?v=rH1sMMwtyPE&ab_channel=ONLYOFFICE",
       isExternalLink: true,
       date: "2025-06-18",
@@ -39,7 +38,7 @@ export const items: INewsItems = {
     },
     {
       heading: "MeetOODocs",
-      imgUrl: "OODocsReleasedImage",
+      imgUrl: "/images/templates/main/latest-news/docspace-3-1.png",
       linkUrl: "https://www.youtube.com/watch?v=sl9BmWjGtnk&ab_channel=ONLYOFFICE",
       isExternalLink: true,
       date: "2025-04-21",
@@ -50,7 +49,7 @@ export const items: INewsItems = {
   events: [
     {
       heading: "FOSSASIASummit2025",
-      imgUrl: getAssetUrl("/images/templates/main/latest-news/big-data-and-ai-paris@1x.png"),
+      imgUrl: "/images/templates/main/latest-news/big-data-and-ai-paris@1x.png",
       linkUrl: "https://www.bigdataparis.com/",
       isExternalLink: true,
       startDate: "2025-10-01",
@@ -59,7 +58,7 @@ export const items: INewsItems = {
     },
     {
       heading: "TechUniteAfrica",
-      imgUrl: getAssetUrl("/images/templates/main/latest-news/gitex-global-2025@1x.png"),
+      imgUrl: "/images/templates/main/latest-news/gitex-global-2025@1x.png",
       linkUrl: "https://www.gitex.com/",
       isExternalLink: true,
       startDate: "2025-10-13",

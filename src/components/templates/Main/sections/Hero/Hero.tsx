@@ -10,6 +10,7 @@ import { ILocale } from "@src/types/locale";
 import { Container } from "@src/components/ui/Container";
 import { Button } from "@src/components/ui/Button";
 import { Section } from "@src/components/ui/Section";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Hero = ({ locale }: ILocale) => {
   const { t } = useTranslation("main");
@@ -58,7 +59,7 @@ const Hero = ({ locale }: ILocale) => {
                 onContextMenu={(e) => e.preventDefault()}
               >
                 <source
-                  src="/images/templates/main/hero/hero-video.mp4"
+                  src={getAssetUrl("/images/templates/main/hero/hero-video.mp4")}
                   type="video/mp4"
                 />
               </video>
