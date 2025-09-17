@@ -174,7 +174,7 @@ export const connectors: IConnectorCardExtended[] = [
     },
     name: "enaio",
     text: "EnaioConnectorText",
-    moreInfoUrl: "https://ecmind.ch/solutions/embeddedoffice/",
+    moreInfoUrl: "https://ecmind.ch/products/embedded-office/",
     vendor: "ECMind GmbH",
     developerWebsiteName: "ecmind.ch",
     developerWebsiteUrl: "https://ecmind.ch",
