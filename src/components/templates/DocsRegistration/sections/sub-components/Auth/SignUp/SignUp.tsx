@@ -12,7 +12,7 @@ import {
   StyledSignUpCaption,
   StyledSuccessModal,
 } from "./SignUp.styled";
-import { useRewardful } from "@src/utils/useRewardful";
+import { loadRewardful, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";
 import { validateTestEmail } from "@src/utils/IsTestEmail";
@@ -49,14 +49,6 @@ const SignUp = () => {
     return { ...item, label: t(item.label) };
   });
 
-  const [affiliate, setAffiliate] = useState<{
-    id?: string;
-    token?: string;
-  }>({
-    id: "",
-    token: "",
-  });
-
   const [formData, setFormData] = useState<ISignUpData>(initialFormData);
   const [selectedPlatform, setSelectedPlatform] = useState<ISelectOption[]>([]);
   const [isEmpty, setIsEmpty] = useState({
@@ -78,21 +70,15 @@ const SignUp = () => {
 
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
   const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
-  const [isTestCaptchaValid, setIsTestCaptchaValid] = useState(false);
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   const pageTrack = usePageTrack();
 
-  const { getClientReferenceId, getAffiliateToken } = useRewardful({
-    onReady: () => {
-      const id = getClientReferenceId();
-      const token = getAffiliateToken();
-      console.log("__ Rewardful: ", id, token);
+  useEffect(() => {
+    loadRewardful();
 
-      setAffiliate((prev) =>
-        prev.id === id && prev.token === token ? prev : { id, token },
-      );
-    },
-  });
+    console.log(document.querySelector('script[src="https://r.wdfl.co/rw.js"]'), "affiliateId=", getClientReferenceId(), "affiliateToken=", getAffiliateToken());
+  }, []);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -107,10 +93,8 @@ const SignUp = () => {
 
   const checkFormValid = useCallback(() => {
     const baseValid = fullNameIsValid && emailIsValid;
-    setIsFormValid(
-      isTestCaptchaValid ? baseValid : baseValid && !!token.length,
-    );
-  }, [fullNameIsValid, emailIsValid, isTestCaptchaValid, token.length]);
+    setIsFormValid(isTestEmailValid ? baseValid : baseValid && !!token.length);
+  }, [fullNameIsValid, emailIsValid, isTestEmailValid, token.length]);
 
   const clearData = () => {
     setFormData(initialFormData);
@@ -127,7 +111,7 @@ const SignUp = () => {
 
   const onSubmit = async () => {
     const baseValid = fullNameIsValid && emailIsValid;
-    if (!(isTestCaptchaValid ? baseValid : baseValid && !!token.length)) {
+    if (!(isTestEmailValid ? baseValid : baseValid && !!token.length)) {
       return;
     }
 
@@ -154,8 +138,8 @@ const SignUp = () => {
         phone: "",
         tariffPlan: formData.tariffPlan,
         docsPlatform: selectedPlatform[0]?.value,
-        affiliateId: affiliate.id || "",
-        affiliateToken: affiliate.token || "",
+        affiliateId: getClientReferenceId() || "",
+        affiliateToken: getAffiliateToken() || "",
         spam: formData.spam ? "true" : "false",
         languageCode: curLang,
         language: getPostLang(curLang),
@@ -281,7 +265,7 @@ const SignUp = () => {
                 email: formData.email.length === 0,
               }));
               const isTestEmail = await validateTestEmail(formData.email);
-              setIsTestCaptchaValid(isTestEmail === true);
+              setIsTestEmailValid(Boolean(isTestEmail));
             }}
             data-testid="docs-sign-up-email-input"
             value={formData.email}

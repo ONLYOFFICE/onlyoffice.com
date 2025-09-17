@@ -131,7 +131,6 @@ export default async function handler(
 
     const transporter = emailTransporter();
     await transporter.sendMail({
-      from,
       to: [process.env.SALES_EMAIL!],
       subject: `${errorMessages.length ? "[Error] " : ""}${fullName} - Docs Registration Request [from: ${from}]`,
       html: DocsRegistrationRequestEmail({

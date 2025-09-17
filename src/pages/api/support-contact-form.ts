@@ -160,7 +160,6 @@ export default async function handler(
       // Send email with attachments
       const transporter = emailTransporter();
       await transporter.sendMail({
-        from: email,
         to: [process.env.SUPPORT_EMAIL!],
         subject: `${email} - SupportContactForm${errorMessages.length ? " [Error]" : ""}`,
         html: SupportContactFormEmail({

@@ -103,12 +103,14 @@ const CardForm = ({
   };
 
   const handleCheckStatusEmail = async () => {
-    const isTestEmailValid = await validateTestEmail(formData.email);
+    if (checkStatus.hCaptcha !== "success") {
+      const isTestEmailValid = await validateTestEmail(formData.email);
 
-    setCheckStatus((prev) => ({
-      ...prev,
-      hCaptcha: isTestEmailValid ? "success" : "default",
-    }));
+      setCheckStatus((prev) => ({
+        ...prev,
+        hCaptcha: isTestEmailValid ? "success" : "default",
+      }));
+    }
 
     if (validateEmail(formData.email)) {
       setCheckStatus((prev) => ({

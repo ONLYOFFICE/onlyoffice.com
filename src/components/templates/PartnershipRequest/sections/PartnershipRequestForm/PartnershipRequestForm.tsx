@@ -425,8 +425,11 @@ const PartnershipRequestForm = ({
                 ...prev,
                 email: formData.email.length === 0,
               }));
-              const isTestEmailValid = await validateTestEmail(formData.email);
-              setIsCaptchaValid(isTestEmailValid === true);
+              const isTestEmail = await validateTestEmail(formData.email);
+
+              if (!isCaptchaValid) {
+                setIsCaptchaValid(isTestEmail === true);
+              }
             }}
             value={formData.email}
             label={t("CorporateEmailAddress")}

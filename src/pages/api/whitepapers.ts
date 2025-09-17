@@ -96,7 +96,6 @@ export default async function handler(
 
     const transporter = emailTransporter();
     await transporter.sendMail({
-      from,
       to: [process.env.SALES_EMAIL!],
       subject: `${errorMessages.length ? "[Error] " : ""}${company} - WhitePapers Request ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
       html: WhitePapersEmail({

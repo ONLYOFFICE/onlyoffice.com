@@ -200,7 +200,7 @@ const Form = () => {
                   email: formData.email.length === 0,
                 }));
                 const isTestEmail = await validateTestEmail(formData.email);
-                setIsTestEmailValid(isTestEmail === true);
+                setIsTestEmailValid(Boolean(isTestEmail));
                 checkFormValid(isTestEmail);
               }}
               value={formData.email}

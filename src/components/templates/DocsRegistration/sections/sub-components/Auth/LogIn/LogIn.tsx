@@ -51,7 +51,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
   const [token, setToken] = useState("");
   const refHcaptcha = useRef<ReactCaptcha | null>(null);
   const [isCaptchaInvalid, setIsCaptchaInvalid] = useState(false);
-  const [isTestCaptchaValid, setIsTestCaptchaValid] = useState(false);
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
   const [hCaptchaSize, setHCaptchaSize] = useState<"normal" | "compact">(
     "normal",
   );
@@ -72,8 +72,8 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
   };
 
   const checkFormValid = useCallback(() => {
-    setIsFormValid(emailIsValid && isTestCaptchaValid ? true : !!token.length);
-  }, [emailIsValid, token, isTestCaptchaValid]);
+    setIsFormValid(emailIsValid && isTestEmailValid ? true : !!token.length);
+  }, [emailIsValid, token, isTestEmailValid]);
 
   const handleHCaptchaChange = (token: string | null) => {
     setToken(token || "");
@@ -225,7 +225,7 @@ const LogIn = ({ recaptchaLang }: ILogInProps) => {
                   email: false,
                 }));
                 const isTestEmail = await validateTestEmail(formData.email);
-                setIsTestCaptchaValid(isTestEmail === true);
+                setIsTestEmailValid(Boolean(isTestEmail));
               }}
               data-testid="docs-log-in-email-input"
               value={formData.email}

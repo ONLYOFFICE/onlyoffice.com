@@ -70,7 +70,7 @@ const Hero = () => {
     topic: false,
     hcaptcha: false,
   });
-  const [isTestCaptchaValid, setIsTestCaptchaValid] = useState(false);
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
   const initialFormData: IFormData = {
     fullName: "",
     email: "",
@@ -95,10 +95,9 @@ const Hero = () => {
     formData.time.length > 0 &&
     formData.timeZoneOffset.length > 0;
   const isLanguageValid = formData.lang.length > 0;
-  const isHCaptchaValid = isTestCaptchaValid
-    ? true
-    : formData.hcaptcha !== null;
-  const isPhoneValid = formData.phone.length > 0;
+  const isHCaptchaValid = isTestEmailValid ? true : formData.hcaptcha !== null;
+  const phonePrefix = phoneInputRef.current?.getPrefix() || "";
+  const isPhoneValid = formData.phone.replace(phonePrefix, "").length > 0;
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -278,7 +277,7 @@ const Hero = () => {
                 email: formData.email.length === 0,
               }));
               const isTestEmail = await validateTestEmail(formData.email);
-              setIsTestCaptchaValid(isTestEmail === true);
+              setIsTestEmailValid(Boolean(isTestEmail));
             }}
             value={formData.email}
             label={t("Email")}

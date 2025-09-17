@@ -102,7 +102,6 @@ export default async function handler(
 
     const transporter = emailTransporter();
     await transporter.sendMail({
-      from,
       to: [process.env.WEBINARS_EMAIL!],
       subject: `${errorMessages.length ? "[Error] " : ""}${companyName} - Webinars For Us Request (${webinarTheme}) ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
       html: WebinarsForUsEmail({

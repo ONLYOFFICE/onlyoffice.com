@@ -1,7 +1,5 @@
 import { IFeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
 
-
-
 type AIAssistantsItem = IFeatureSwitcher["items"][0] & {
   links?: { id: string; url: string }[];
 };
@@ -10,50 +8,50 @@ export const items: AIAssistantsItem[] = [
   {
     label: "ConnectAnyAIModel",
     image: {
-      url: "/images/templates/main/ai-assistants/ConnectAnyAIModelImg.png",
-      url2x: "/images/templates/main/ai-assistants/ConnectAnyAIModelImg@2x.png",
+      url: "ConnectAnyAIModelImg",
+      url2x: "ConnectAnyAIModelImg2x",
     },
   },
   {
     label: "UseDifferentAIModels",
     image: {
-      url: "/images/templates/main/ai-assistants/UseDifferentAIModelsImg.png",
-      url2x: "/images/templates/main/ai-assistants/UseDifferentAIModelsImg@2x.png",
+      url: "UseDifferentAIModelsImg",
+      url2x: "UseDifferentAIModelsImg2x",
     },
   },
   {
     label: "GenerateTextsImagesAndCode",
     image: {
-      url: "/images/templates/main/ai-assistants/GenerateTextsImagesAndCodeImg.png",
-      url2x: "/images/templates/main/ai-assistants/GenerateTextsImagesAndCodeImg@2x.png",
+      url: "GenerateTextsImagesAndCodeImg",
+      url2x: "GenerateTextsImagesAndCodeImg2x",
     },
   },
   {
     label: "GetQuickAnswersToYourQuestions",
     image: {
-      url: "/images/templates/main/ai-assistants/GetQuickAnswersToYourQuestionsImg.png",
-      url2x: "/images/templates/main/ai-assistants/GetQuickAnswersToYourQuestionsImg@2x.png",
+      url: "GetQuickAnswersToYourQuestionsImg",
+      url2x: "GetQuickAnswersToYourQuestionsImg2x",
     },
   },
   {
     label: "CheckYourTextSpellingAndGrammar",
     image: {
-      url: "/images/templates/main/ai-assistants/CheckYourTextSpellingAndGrammarImg.png",
-      url2x: "/images/templates/main/ai-assistants/CheckYourTextSpellingAndGrammarImg@2x.png",
+      url: "CheckYourTextSpellingAndGrammarImg",
+      url2x: "CheckYourTextSpellingAndGrammarImg2x",
     },
   },
   {
     label: "EasilyRewriteYourTextMakingItShorterOrLonger",
     image: {
-      url: "/images/templates/main/ai-assistants/EasilyRewriteYourTextMakingItShorterOrLongerImg.png",
-      url2x: "/images/templates/main/ai-assistants/EasilyRewriteYourTextMakingItShorterOrLongerImg@2x.png",
+      url: "EasilyRewriteYourTextMakingItShorterOrLongerImg",
+      url2x: "EasilyRewriteYourTextMakingItShorterOrLongerImg2x",
     },
   },
   {
     label: "TranslateIntoDifferentLanguages",
     image: {
-      url: "/images/templates/main/ai-assistants/TranslateIntoDifferentLanguagesImg.png",
-      url2x: "/images/templates/main/ai-assistants/TranslateIntoDifferentLanguagesImg@2x.png",
+      url: "TranslateIntoDifferentLanguagesImg",
+      url2x: "TranslateIntoDifferentLanguagesImg2x",
     },
   },
 ];
