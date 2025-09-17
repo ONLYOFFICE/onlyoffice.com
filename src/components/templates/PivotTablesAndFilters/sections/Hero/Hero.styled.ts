@@ -4,7 +4,7 @@ import { Section } from "@src/components/ui/Section";
 
 const StyledHero = styled(Section)`
   margin-top: -72px;
-  background-color: #387951;
+  background-color: #487754;
 
   @media ${device.tablet} {
     margin-top: -64px;
@@ -20,7 +20,6 @@ const StyledHeroWrapper = styled.div`
   justify-items: center;
   row-gap: 32px;
   margin: 0 auto 48px;
-  max-width: 928px;
   color: #ffffff;
   text-align: center;
 
@@ -37,8 +36,7 @@ const StyledHeroWrapper = styled.div`
 
 const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
   margin: 0 auto;
-  padding-bottom: 51.786%;
-  max-width: 1047px;
+  padding-bottom: 63.334%;
   background-image: url(${(props) => props.$imgUrl});
   background-position: center;
   background-repeat: no-repeat;
