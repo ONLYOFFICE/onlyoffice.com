@@ -29,6 +29,7 @@ const StyledRoomsHeroVideo = styled(Section)`
 
 const StyledHeading = styled(Heading)`
   width:100%;
+  max-width: 888px;
 `;
 
 const StyledRoomsHeroVideoWrapper = styled.div`
