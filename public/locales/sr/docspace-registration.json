@@ -51,7 +51,7 @@
   "YourEmail": "Vaš email:",
   "IfAUserWithThisEmailExists": "Email je prazan.",
   "NoThirdPartyAccountFound": "No third party account found",
-  "YourConfirmationLinkForOODocSpace": "Your confirmation link for ONLYOFFICE DocSpace",
-  "YourLoginLinkToOODocSpace": "Your login link to ONLYOFFICE DocSpace",
+  "YourConfirmationLinkForOODocSpace": "Vaš link za potvrdu za ONLYOFFICE DocSpace",
+  "YourLoginLinkToOODocSpace": "Vaš link za prijavu na ONLYOFFICE DocSpace",
   "OOPasswordReminder": "ONLYOFFICE Password Reminder"
 }

@@ -116,6 +116,18 @@ const emailsTranslations: Record<
     InCaseOfTechnicalProblemsPleaseContactOur: `如有任何技术问题，请联系我们的<a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">支持团队</a。`,
     ClickHereToUnsubscribe: `点击此处取消订阅`,
   },
+  sr: {
+    YourLoginLink: `Vaš link za potvrdu za <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
+    Hello: "Zdravo!",
+    ClickTheButtonBelow:
+      "Kliknite na dugme ispod da potvrdite svoju e-poštu i pristupite svom DocSpace nalogu.",
+    SignInToDocSpace: "Prijavite se u DocSpace",
+    TheConfirmationLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `Link za potvrdu je aktivan 60 minuta <br>i može se iskoristiti samo jednom.`,
+    TrulyYoursONLYOFFICETeam: `Srdačno, ONLYOFFICE tim`,
+    ForAnyPurchaseQuestionsEmailUsAt: `Za pitanja u vezi sa kupovinom, pišite nam na: <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
+    InCaseOfTechnicalProblemsPleaseContactOur: `U slučaju tehničkih problema, kontaktirajte naš <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">tim za podršku</a>.`,
+    ClickHereToUnsubscribe: `Kliknite ovde da se odjavite`,
+  }
 };
 
 const RegisterEmail = ({
