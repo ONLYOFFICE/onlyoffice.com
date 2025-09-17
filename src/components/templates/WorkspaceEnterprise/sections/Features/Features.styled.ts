@@ -6,7 +6,7 @@ const StyledFeaturesWrapper = styled.div`
   display: grid;
   row-gap: 96px;
   > div {
-    justify-content: center;
+    justify-content: space-around;
   }
 
   @media ${device.tabletS} {

@@ -55,7 +55,7 @@ const PlatformItem = styled.div<{ $height: number }>`
   flex-direction: column;
   gap: 16px;
   text-align: center;
-  padding: 80px 0 ${(props) => props.$height}px;
+  padding: 80px 0 ${(props) => props.$height + 20}px;
   max-width: 592px;
   text-align: center;
   margin: 0 auto;

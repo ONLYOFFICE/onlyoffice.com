@@ -18,7 +18,7 @@ const StyledSupportBg = styled.div`
 `;
 
 const StyledSupportContainer = styled(Container)`
-  max-width: 736px;
+  max-width: 820px;
   padding: 112px 40px;
 
   @media ${device.mobile} {

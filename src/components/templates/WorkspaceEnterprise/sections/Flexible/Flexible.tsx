@@ -25,7 +25,7 @@ const Flexible = () => {
             size={2}
             textAlign="center"
           />
-          <Text textAlign="center">
+          <Text textAlign="center" size={1}>
             <Trans
               t={t}
               i18nKey={t("FlexibleChoiceText")}

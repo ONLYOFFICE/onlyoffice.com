@@ -25,7 +25,7 @@ const Support = () => {
             level={2}
             label={t("Support")}
             color="#fff"
-            size={2}
+            size={3}
             textAlign="center"
           />
           <StyledSupportText color="#fff" textAlign="center">

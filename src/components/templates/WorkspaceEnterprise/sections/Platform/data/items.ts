@@ -15,14 +15,14 @@ export const items: IItems[] = [
     image2x: "DocProcessingImg2x",
     link: "/docs-enterprise",
     width: 700,
-    height: 350,
+    height: 380,
   },
   {
     heading: "ProdTools",
     text: "ProdToolsText",
     image: "ProdToolsImg",
     image2x: "ProdToolsImg2x",
-    width: 644,
+    width: 710,
     height: 360,
   },
   {
@@ -30,7 +30,7 @@ export const items: IItems[] = [
     text: "CorporateMailingText",
     image: "CorporateMailingImg",
     image2x: "CorporateMailingImg2x",
-    width: 626,
+    width: 710,
     height: 360,
   },
   {
@@ -38,7 +38,7 @@ export const items: IItems[] = [
     text: "RealTimeCommunicationText",
     image: "RealTimeCommunicationImg",
     image2x: "RealTimeCommunicationImg2x",
-    width: 610,
+    width: 700,
     height: 380,
   },
 ];

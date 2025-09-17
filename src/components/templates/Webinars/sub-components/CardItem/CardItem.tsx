@@ -244,7 +244,7 @@ const CardItem = ({
         </StyledCardItemTop>
         <StyledCardItemContent>
           <StyledCardItemHeading level={4} size={4} label={title} />
-          <Text size={2}>
+          <Text size={3}>
             <Trans
               i18nKey={description}
               components={{
