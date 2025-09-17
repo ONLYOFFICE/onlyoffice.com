@@ -73,8 +73,6 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
 
     addClientReferenceOnReady(function () {
       const param = getClientReferenceParam();
-      console.log("Rewardful ready! param=", param);
-
       setReferenceParam(param);
     });
   }, []);

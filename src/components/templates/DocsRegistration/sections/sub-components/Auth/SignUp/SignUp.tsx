@@ -76,8 +76,6 @@ const SignUp = () => {
 
   useEffect(() => {
     loadRewardful();
-
-    console.log(document.querySelector('script[src="https://r.wdfl.co/rw.js"]'), "affiliateId=", getClientReferenceId(), "affiliateToken=", getAffiliateToken());
   }, []);
 
   const handleInputChange = (field: string, value: string) => {
