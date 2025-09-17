@@ -3,8 +3,8 @@ import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
 import { Container } from "@src/components/ui/Container";
 
-const StyledEditorsTabs = styled.ul`
-  max-width: 1120px;
+const StyledEditorsTabs = styled.ul<{ maxWidth?: string}>`
+  max-width: ${({ maxWidth }) => maxWidth } ;
   display: flex;
   margin: auto;
   justify-content: space-between;

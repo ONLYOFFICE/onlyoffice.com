@@ -12,6 +12,7 @@
   "SwitcherTitle5": "Erstellen & ausfüllen",
   "SwitcherTitle6": "Zusammenarbeiten",
   "SwitcherTitle7": "Mehr",
+  "SwitcherTitle8": "KI NUTZEN",
 
   "Feature1Title": "PDF bearbeiten",
   "Feature1Desc": "Bearbeiten Sie Text in Ihren PDF-Dateien. Einfügen und Anpassen verschiedener Objekte wie Tabellen, Formen, Bilder, Hyperlinks usw. Arbeit mit Seiten: drehen, neue Seiten hinzufügen, überflüssige Seiten löschen. Einfaches Umschalten zwischen dem Bearbeitungs- und dem Anzeigemodus.",
@@ -42,6 +43,10 @@
   "Feature7Title": "Erweitern Sie Ihre Arbeitsmöglichkeiten",
   "Feature7Desc": "Holen Sie das Beste aus Ihrem Online-PDF-Editor mit einer Sammlung von Add-ons von Drittanbietern heraus. Übersetzen Sie jedes Wort oder jeden Satz, bearbeiten Sie Bilder und vieles mehr.",
   "Feature7Link": "Finden Sie die Anwendungen, die Sie für den PDF-Editor benötigen",
+  "Feature8Title": "KI-Helfer verwenden",
+  "Feature8Desc": "Verbinden Sie einen beliebigen KI-Assistenten, um schneller zu arbeiten. Extrahieren Sie mühelos Text aus gescannten PDFs für eine bessere Benutzerfreundlichkeit – vergessen Sie das manuelle Abtippen, scannen Sie einfach und los geht‘s.",
+  "Feature8ImgUrl": "/images/templates/pdf-editor/features/de/screen8.png",
+  "Feature8ImgUrl2x": "/images/templates/pdf-editor/features/de/screen8@2x.png",
 
   "LearnMoreHeading": "Mehr über ONLYOFFICE-Reader und Konverter von PDF",
   "BlogDesc": "Konvertierung von PDF in DOCX",

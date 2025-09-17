@@ -12,6 +12,7 @@
   "SwitcherTitle5": "创建并填写表单",
   "SwitcherTitle6": "协作",
   "SwitcherTitle7": "更多功能",
+  "SwitcherTitle8": "使用 AI",
 
   "Feature1Title": "编辑 PDF",
   "Feature1Desc": "编辑 PDF 文件中的文本，插入和调整各种对象，例如表格、形状、图像、超链接等。旋转、添加、删除页面。在编辑和查看模式之间快速切换。",
@@ -42,8 +43,10 @@
   "Feature7Title": "扩展你的工作能力",
   "Feature7Desc": "通过一系列第三方插件，充分利用在线 PDF 编辑器。 翻译任何单词或句子、编辑图像等等。",
   "Feature7Link": "查找 PDF 编辑器所需的应用程序",
-  "Feature7ImgUrl": "/images/templates/pdf-editor/features/zh/screen7.png",
-  "Feature7ImgUrl2x": "/images/templates/pdf-editor/features/zh/screen7@2x.png",
+  "Feature8Title": "使用 AI 助手",
+  "Feature8Desc": "连接任何 AI 助手，提升工作效率。轻松从扫描的 PDF 中提取文本，提高易用性——无需手动重新输入，扫描即可使用。",
+  "Feature8ImgUrl": "/images/templates/pdf-editor/features/zh/screen8.png",
+  "Feature8ImgUrl2x": "/images/templates/pdf-editor/features/zh/screen8@2x.png",
 
   "LearnMoreHeading": "了解更多关于ONLYOFFICE PDF查看器和转换器的信息",
   "BlogDesc": "如何将PDF转换为DOCX",

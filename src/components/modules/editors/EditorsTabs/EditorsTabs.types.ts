@@ -1,3 +1,4 @@
+import { ILocale } from "@src/types/locale";
 import { TFunction } from "i18next";
 
 export interface IEditorsTab {
@@ -9,7 +10,7 @@ export interface IEditorsTab {
   label: string;
 }
 
-export interface IEditorsTabsProps {
+export interface IEditorsTabsProps extends ILocale {
   items: IEditorsTab[];
   t: TFunction;
   className?: string;

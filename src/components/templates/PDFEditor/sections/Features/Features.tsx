@@ -10,7 +10,7 @@ const Features = ({ locale }: ILocale) => {
 
   return (
     <>
-      <EditorsTabs items={tabs} t={t} />
+      <EditorsTabs locale={locale} items={tabs} t={t} />
       <EditorsFeatures
         items={items.map((items) => ({
           ...items,

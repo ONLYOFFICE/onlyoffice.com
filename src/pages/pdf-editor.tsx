@@ -25,6 +25,7 @@ const PDFEditorPage = ({ locale }: ILocale) => {
           theme="white"
           highlight={{
             buttonId: "oo-menu-item-btn-products",
+            linkId: "oo-menu-link-docs-pdf-editor",
           }}
         />
       </Layout.Header>

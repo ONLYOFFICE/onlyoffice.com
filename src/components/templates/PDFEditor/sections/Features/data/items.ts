@@ -91,6 +91,16 @@ export const items: IEditorsItem[] = [
       height: 540,
     },
   },
+  {
+    id: "ai-helper",
+    heading: "Feature8Title",
+    text: "Feature8Desc",
+    image: {
+      url: "Feature8ImgUrl",
+      url2x: "Feature8ImgUrl2x",
+      height: 440,
+    },
+  }
 ];
 
 export const tabs: IEditorsTab[] = [
@@ -128,5 +138,10 @@ export const tabs: IEditorsTab[] = [
     id: "do-more-link",
     url: "#do-more",
     label: "SwitcherTitle7",
+  },
+  {
+    id: "ai-helper-link",
+    url: "#ai-helper",
+    label: "SwitcherTitle8",
   },
 ];

@@ -12,6 +12,7 @@
   "SwitcherTitle5": "Créez et remplissez",
   "SwitcherTitle6": "Collaborez",
   "SwitcherTitle7": "Faites-en plus",
+  "SwitcherTitle8": "UTILISER L'IA",
 
   "Feature1Title": "Modifiez PDF",
   "Feature1Desc": "Modifiez le texte de vos fichiers PDF. Insérez et ajustez divers objets tels que des tableaux, des formes, des images, des liens hypertextes, etc. Travaillez avec les pages : faites pivoter, ajoutez de nouvelles pages, supprimez les pages inutiles. Passez facilement du mode d'édition au mode de visualisation.",
@@ -42,6 +43,10 @@
   "Feature7Title": "Étendez vos capacités de travail",
   "Feature7Desc": "Tirez le meilleur parti de votre éditeur PDF en ligne grâce à une collection de modules complémentaires tiers. Traduisez n'importe quel mot ou phrase, modifiez des images, et bien plus encore.",
   "Feature7Link": "Trouvez les applications dont vous avez besoin pour l'éditeur PDF",
+  "Feature8Title": "Utiliser l'assistant IA",
+  "Feature8Desc": "Connectez n'importe quel assistant IA pour travailler plus rapidement. Extrayez sans effort du texte à partir de fichiers PDF numérisés pour une meilleure utilisation : oubliez la saisie manuelle, il suffit de numériser et c'est parti.",
+  "Feature8ImgUrl": "/images/templates/pdf-editor/features/de/screen8.png",
+  "Feature8ImgUrl2x": "/images/templates/pdf-editor/features/de/screen8@2x.png",
 
   "LearnMoreHeading": "En savoir plus sur le lecteur et convertisseur de PDF ONLYOFFICE",
   "BlogDesc": "Comment convertir PDF en DOCX",

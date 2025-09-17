@@ -13,6 +13,7 @@
   "SwitcherTitle5": "Create & Fill out",
   "SwitcherTitle6": "Collaborate",
   "SwitcherTitle7": "Do more",
+  "SwitcherTitle8": "Use AI",
   "Feature1Title": "Edit PDF",
   "Feature1Desc": "Edit text in your PDF files. Insert and adjust various objects such as tables, shapes, images, hyperlinks, etc. Work with pages: rotate, add new pages, delete the unnecessary ones. Easily switch between the editing and viewing modes.",
   "Feature1ImgUrl": "/images/templates/pdf-editor/features/screen1.png",
@@ -44,6 +45,10 @@
   "Feature7ImgUrl": "/images/templates/pdf-editor/features/screen7.png",
   "Feature7ImgUrl2x": "/images/templates/pdf-editor/features/screen7@2x.png",
   "Feature7Link": "Find the apps you need for PDF editor",
+  "Feature8Title": "Use AI helper",
+  "Feature8Desc": "Connect any AI assistant to work faster. Extract text from scanned PDFs effortlessly for better usability – forget manual retyping, just scan and go.",
+  "Feature8ImgUrl": "/images/templates/pdf-editor/features/screen8.png",
+  "Feature8ImgUrl2x": "/images/templates/pdf-editor/features/screen8@2x.png",
 
   "LearnMoreHeading": "Learn more about ONLYOFFICE PDF reader and converter",
   "BlogDesc": "How to convert PDF to DOCX",
