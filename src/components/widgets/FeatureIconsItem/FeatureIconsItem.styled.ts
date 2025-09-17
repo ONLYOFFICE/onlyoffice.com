@@ -138,7 +138,7 @@ const StyledFeatureIconsButton = styled(Button)<{
   $isLink?: boolean;
   $isServer?: boolean;
 }>`
-  padding: ${({ $isLink }) => ($isLink ? "12px 0" : "12px 24px")};
+  padding: ${({ $isLink }) => ($isLink ? "12px 0" : "15px 24px")};
   font-size: ${({ $isLink }) => ($isLink ? "16px" : "12px")};
   line-height: 26px;
   border-radius: 9px;

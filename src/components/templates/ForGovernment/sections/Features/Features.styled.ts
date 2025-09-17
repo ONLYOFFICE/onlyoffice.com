@@ -128,10 +128,6 @@ const StyledFeaturesContent = styled.div`
     gap: 32px;
     flex-wrap: nowrap;
 
-    a {
-      line-height: 1.6em;
-    }
-
     a:nth-child(2) {
       font-size: 14px;
       text-align: left;
