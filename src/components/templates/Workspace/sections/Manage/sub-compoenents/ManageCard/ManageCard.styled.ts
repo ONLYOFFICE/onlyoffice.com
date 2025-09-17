@@ -2,12 +2,10 @@ import { device } from "@src/utils/device";
 import styled from "styled-components";
 
 const StyledManageCard = styled.div<{ $isActive: boolean }>`
-  max-width: 928px;
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 352px auto;
-  gap: 32px;
+  grid-template-columns: 418px auto;
 
   @media ${device.tablet} {
     grid-template-columns: 1fr 1fr;
@@ -15,6 +13,7 @@ const StyledManageCard = styled.div<{ $isActive: boolean }>`
 
   @media ${device.tabletS} {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 `;
 
@@ -22,6 +21,11 @@ const StyledManageCardContent = styled.div`
   display: grid;
   gap: 16px;
   align-self: start;
+  padding: 0 33px;
+
+  @media ${device.tabletS} {
+    padding: 0;
+  }
 `;
 
 const StyledManageCardTextList = styled.ul`
@@ -67,14 +71,13 @@ const StyledManageCardImage = styled.div<{
   $imgUrl2x: string;
   $height: number;
 }>`
-  max-width: 544px;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: ${({ $height }) => `${($height / 544) * 100}%`};
+  padding-bottom: ${({ $height }) => `${($height / 574) * 100}%`};
   background-image: url(${({ $imgUrl }) => $imgUrl});
-  background-position: 0;
+  background-position: right;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   @media ${device.retina} {
     background-image: url(${({ $imgUrl2x, $imgUrl }) => $imgUrl2x || $imgUrl});
@@ -85,7 +88,7 @@ const StyledManageCardImage = styled.div<{
   }
 
   @media ${device.tabletS} {
-    padding-bottom: ${({ $height }) => `${($height / 544) * 100 - 12}%`};
+    padding-bottom: ${({ $height }) => `${($height / 574) * 100}%`};
     background-position: center;
   }
 `;

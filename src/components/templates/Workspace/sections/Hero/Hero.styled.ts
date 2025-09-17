@@ -17,7 +17,7 @@ const StyledHeroSection = styled(Section)`
 
 const StyledHeroWrapper = styled.div`
   display: grid;
-  grid-template-columns: 484px auto;
+  grid-template-columns: 570px auto;
   gap: 20px;
   align-items: center;
 
@@ -33,7 +33,7 @@ const StyledHeroWrapper = styled.div`
 `;
 
 const StyledHeroContent = styled.div`
-  max-width: 523px;
+  max-width: 570px;
   display: grid;
   gap: 24px;
   justify-items: start;

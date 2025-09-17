@@ -39,7 +39,7 @@ export const carouselItems: ICarouselItems[] = [
     image: {
       url: "DocumentsImgUrl",
       url2x: "DocumentsImgUrl2x",
-      hight: 422,
+      hight: 351,
     },
     links: [
       { label: "LearnMore", href: "/document-management?from=workspace" },
@@ -60,7 +60,7 @@ export const carouselItems: ICarouselItems[] = [
     image: {
       url: "MailsImgUrl",
       url2x: "MailsImgUrl2x",
-      hight: 368,
+      hight: 311,
     },
     links: [{ label: "LearnMore", href: "/mail?from=workspace" }],
   },
@@ -75,7 +75,7 @@ export const carouselItems: ICarouselItems[] = [
     image: {
       url: "CrmImgUrl",
       url2x: "CrmImgUrl2x",
-      hight: 368,
+      hight: 326,
     },
     links: [{ label: "LearnMore", href: "/crm?from=workspace" }],
   },
@@ -90,7 +90,7 @@ export const carouselItems: ICarouselItems[] = [
     image: {
       url: "ProjectsImgUrl",
       url2x: "ProjectsImgUrl2x",
-      hight: 408,
+      hight: 367,
     },
     links: [
       { label: "LearnMore", href: "/projects?from=workspace" },
@@ -116,7 +116,7 @@ export const carouselItems: ICarouselItems[] = [
     image: {
       url: "CalendarImgUrl",
       url2x: "CalendarImgUrl2x",
-      hight: 410,
+      hight: 368,
     },
     links: [{ label: "LearnMore", href: "/calendar?from=workspace" }],
   },
