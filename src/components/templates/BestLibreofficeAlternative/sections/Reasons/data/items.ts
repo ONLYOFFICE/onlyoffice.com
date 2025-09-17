@@ -1,46 +1,56 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
-export const items: IFeatureItem[] = [
+interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
+  text: {
+    label: React.ReactNode;
+    links?: { href: string; isExternal?: boolean }[];
+  };
+}
+
+export const items: IFeatureItemExtended[] = [
   {
     icon: {
       url: "/images/templates/best-libreoffice-alternative/reasons/open_source.svg",
     },
     heading: "MaximumCompatibility",
-    text: "MaximumCompatibilityText",
+    text: { label: "MaximumCompatibilityText" },
   },
   {
     icon: {
       url: "/images/templates/best-libreoffice-alternative/reasons/desktop_app.svg",
     },
     heading: "DesktopApp",
-    text: "DesktopAppText",
+    text: { label: "DesktopAppText" },
   },
   {
     icon: {
       url: "/images/templates/best-libreoffice-alternative/reasons/docs_sheets_slides.svg",
     },
     heading: "DocsSheetsSlides",
-    text: "DocsSheetsSlidesText",
+    text: { label: "DocsSheetsSlidesText" },
   },
   {
     icon: {
       url: "/images/templates/best-libreoffice-alternative/reasons/seamless.svg",
     },
     heading: "Seamless",
-    text: "SeamlessText",
+    text: { label: "SeamlessText" },
   },
   {
     icon: {
       url: "/images/templates/best-libreoffice-alternative/reasons/flexibility.svg",
     },
     heading: "Flexibility",
-    text: "FlexibilityText",
+    text: { label: "FlexibilityText" },
   },
   {
     icon: {
       url: "/images/templates/best-libreoffice-alternative/reasons/ai_helper.svg",
     },
     heading: "AIHelper",
-    text: "AIHelperText",
+    text: { 
+      label: "AIHelperText",
+      links: [{ href: "/ai-assistants" }],
+    },
   },
 ];
