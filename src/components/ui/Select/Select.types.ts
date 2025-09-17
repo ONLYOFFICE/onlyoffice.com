@@ -36,4 +36,6 @@ export interface ISelect {
   withReset?: boolean;
   /** Shows an icon next to the selected option */
   withSelectedIcon?: boolean;
+  /** Enables scroll to selected option */
+  enableScrollToSelected?: boolean;
 }

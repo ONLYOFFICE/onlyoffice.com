@@ -16,8 +16,7 @@ const StyledPartnersCardItem = styled.li<{
   padding: 32px 0;
   box-shadow: 0px 7px 15px rgba(85, 85, 85, 0.1);
   border-radius: 5px;
-  transition: box-shadow 0.3s, max-height 0.6s ease, opacity 0.3s;
-  max-height: ${({$isItemOpen}) => $isItemOpen ? "970px" : "170px"};
+  transition: box-shadow 0.3s ease, opacity 0.3s ease;
   overflow: hidden;
   cursor: pointer;
   opacity: 1;
@@ -64,11 +63,13 @@ const StyledPartnersCardItemImg = styled.div.attrs<{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  margin: 0 auto;
 
   @media ${device.tabletS} {
     width: 126px;
     height: 78px;
     justify-self: flex-start;
+    margin-left: 0;
   }
 `;
 
@@ -90,6 +91,10 @@ const StyledPartnersCardItemHead = styled.div`
   grid-template-columns: auto 183px 107px;
   align-items: center;
 
+  @media ${device.tablet} {
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+
   @media ${device.tabletS} {
     display: block;
   }
@@ -97,6 +102,10 @@ const StyledPartnersCardItemHead = styled.div`
 
 const StyledPartnersCardItemName = styled(Heading)`
   transition-duration: 300ms;
+
+  @media ${device.tabletS} {
+    margin-bottom: 30px;
+  }
 `;
 
 const StyledPartnersCardItemCountry = styled(Text)`
@@ -119,6 +128,7 @@ const StyledPartnersCardItemLink = styled(Link)<{
   height: 24px;
   justify-self: center;
   position: relative;
+  flex-shrink: 0;
 
   ${({$urlType}) => $urlType === "site" && css`
     background-image: url(${getAssetUrl('/images/templates/find-partners/partners/external-link-symbol.svg')});
@@ -171,7 +181,6 @@ const StyledPartnersCardItemInfoWrapperMob = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 0 25px;
-    margin-top: 30px;
   }
 `;
 
@@ -184,19 +193,41 @@ const StyledPartnersCardItemLinkMob = styled(StyledPartnersCardItemLink)`
   display: block;
 `;
 
-const StyledPartnersCardItemDesc = styled(Text)<{
+const StyledPartnersCardItemDescWrapper = styled.div<{
+  $isItemOpen: boolean
+}>`
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, margin-bottom 0.3s ease;
+
+  @media ${device.tabletS} {
+    margin-bottom: ${({ $isItemOpen }) => $isItemOpen ? '30px' : '0'};
+  }
+`;
+
+const StyledPartnersCardItemDesc = styled.div<{
   $isItemOpen: boolean;
 }>`
-  color: #666;
+  font-size: 14px;
+  color: #666666;
   padding-right: 30px;
-  margin-top: 32px;
 
   @media ${device.tabletS} {
     overflow: hidden;
     transition-duration: 300ms;
     margin-top: 0;
-    padding-top: ${({$isItemOpen}) => $isItemOpen ? "32px" : "0"};
-    max-height: ${({$isItemOpen}) => $isItemOpen ? "970px" : "0"};
+  }
+
+  & > ul > li {
+    padding: 8px 0;
+    position: relative;
+
+    &::before {
+      color: #FF6F3D;
+      content: "♦";
+      transform: rotate(-45deg);
+      padding-right: 16px;
+    }
   }
 `;
 
@@ -212,7 +243,9 @@ const StyledPartnersLevel = styled.div<{
   position: absolute;
   top: 0;
   left: 15px;
-  background-image: ${({ $icon }) => `url(${$icon})`};
+  background-image: ${({ $icon }) => css`
+    url(${getAssetUrl($icon)})
+  `};
 
   @media ${device.tabletS} {
     left: auto;
@@ -235,6 +268,11 @@ const StyledPartnersLevel = styled.div<{
     opacity: 0;
     transition-duration: 300ms;
     transform: translateY(-50%);
+
+    @media ${device.tabletS} {
+      left: auto;
+      right: 125%;
+    }
   }
 
   &:hover {
@@ -253,6 +291,7 @@ export {
   StyledPartnersCardItemInfoWrapperMob,
   StyledPartnersCardItemCountryMob,
   StyledPartnersCardItemLinkMob,
+  StyledPartnersCardItemDescWrapper,
   StyledPartnersCardItemDesc,
   StyledPartnersLevel,
   StyledPartnersCardItemImg,

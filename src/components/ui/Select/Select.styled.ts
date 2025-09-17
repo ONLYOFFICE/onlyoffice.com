@@ -160,6 +160,7 @@ const StyledSelectOptions = styled.div`
   left: 0;
   border: 1px solid #666666;
   border-radius: 6px;
+  box-shadow: 0px 7px 25px 0px rgba(85, 85, 85, 0.15);
   padding: 8px 0;
   width: 100%;
   max-height: 200px;

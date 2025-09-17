@@ -10,7 +10,7 @@ export const getPartners = async (locale: string) => {
     &fields=level
     &fields=url_type
     &populate[logo][fields]=url
-    &pagination[limit]=300
+    &pagination[limit]=*
     &sort=name:asc
   `.replace(/\s+/g, "");
 

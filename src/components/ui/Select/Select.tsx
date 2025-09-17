@@ -29,13 +29,28 @@ const Select = ({
   maxWidth = "472px",
   withReset,
   withSelectedIcon,
+  enableScrollToSelected = false,
 }: ISelect) => {
   const { t } = useTranslation("Select");
   const selectRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef(null);
   const optionsRef = useRef<HTMLDivElement>(null);
+  const optionRefs = useRef<Record<string, HTMLButtonElement | null>>({});
 
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (!multiple && enableScrollToSelected) {
+      if (selected.length > 0) {
+        const option = selected[0];
+        if (optionsRef.current && optionRefs.current[option.value]) {
+          optionsRef.current.scrollTo({
+            top: optionRefs.current[option.value]?.offsetTop || 0,
+          });
+        }
+      }
+    }
+  }, [isOpen, selected, multiple, enableScrollToSelected]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -161,6 +176,13 @@ const Select = ({
               onClick={(e) => {
                 e.stopPropagation();
                 toggleOption(option);
+              }}
+              ref={(el) => {
+                if (el) {
+                  optionRefs.current[option.value] = el;
+                } else {
+                  delete optionRefs.current[option.value];
+                }
               }}
             >
               {option.label}
