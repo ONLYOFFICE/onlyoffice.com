@@ -51,7 +51,10 @@ export const items: IFeatureItemExtended[] = [
       url: "/images/templates/best-microsoft-office-alternative/reasons/ai_helper.svg",
     },
     heading: "AIHelper",
-    text: { label: "AIHelperText" },
+    text: { 
+      label: "AIHelperText",
+      links: [{ href: "/ai-assistants" }],
+    },
   },
   {
     icon: {
