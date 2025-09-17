@@ -34,7 +34,6 @@ const Hero = () => {
             <Button
               label={t("RequestADiscount")}
               variant="primary"
-              borderRadius="3px"
               as="a"
               href="mailto:sales@onlyoffice.com?subject=Request%20a%20discount%20for%20a%20non-profit"
             />

@@ -57,7 +57,6 @@ const Features = () => {
                 <Button
                   label={t("TryNow")}
                   variant="secondary"
-                  borderRadius="3px"
                   as="a"
                   href="/docspace-registration"
                 />

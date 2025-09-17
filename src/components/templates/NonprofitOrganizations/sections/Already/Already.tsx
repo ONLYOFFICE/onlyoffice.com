@@ -68,14 +68,12 @@ const Already = () => {
           <Button
             label={t("GetItNow")}
             variant="primary"
-            borderRadius="3px"
             as="a"
             href="/download#docs-enterprise"
           />
           <Button
             label={t("RequestADiscount")}
             variant="tertiary"
-            borderRadius="3px"
             as="a"
             href="mailto:sales@onlyoffice.com?subject=Non-profit%20integration%20request"
           />

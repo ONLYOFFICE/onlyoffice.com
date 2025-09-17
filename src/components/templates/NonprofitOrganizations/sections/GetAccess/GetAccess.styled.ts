@@ -64,13 +64,15 @@ const StyledGetAccessButtonsLink = styled(Link)<{
 const StyledGetAccessButtonsItem = styled.li`
   width: 170px;
   height: 64px;
-  border-radius: 3px;
+  border-radius: 9px;
   background-color: #f6f6f6;
   transition-duration: 300ms;
+  filter: grayscale(1);
 
   &:hover {
     background-color: #ffffff;
     box-shadow: 0 7px 25px rgba(85,85,85,0.15);
+    filter: grayscale(0);
   }
 
   &:nth-last-child(-n + 2) {

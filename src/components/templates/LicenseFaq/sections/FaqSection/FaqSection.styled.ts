@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
+import { Text } from "@src/components/ui/Text";
 
 const StyledSection = styled(Section)`
-  width: 970px;
+  width: 928px;
   margin: auto;
 
   @media ${device.tablet} {
@@ -17,44 +18,18 @@ const StyledSection = styled(Section)`
 `;
 
 const StyledQuestion = styled(Heading)`
-  font-size: 36px;
   line-height: 1.2em;
-
-  @media ${device.tablet} {
-    font-size: 30px;
-  }
-
-  @media ${device.tabletS} {
-    font-size: 26px;
-  }
-
-  @media ${device.mobile} {
-    font-size: 22px;
-  }
 `;
 
-const StyledAnswer = styled.p`
-  font-size: 13px;
+const StyledAnswer = styled(Text)`
   line-height: 1.5em;
-
-  @media ${device.tablet} {
-    font-size: 14px;
-  }
-
-  @media ${device.tabletS} {
-    font-size: 14px;
-  }
-
-  @media ${device.mobile} {
-    font-size: 15px;
-  }
 `;
 
 const StyledFaq = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 0 24px;
+  padding: 0 0 56px;
 `;
 
 export { StyledSection, StyledFaq, StyledQuestion, StyledAnswer };

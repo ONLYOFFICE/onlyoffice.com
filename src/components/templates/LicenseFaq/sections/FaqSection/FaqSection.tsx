@@ -30,8 +30,8 @@ const FaqSection = () => {
 
         return (
           <StyledFaq key={idx}>
-            <StyledQuestion level={2} label={t(item.question)} />
-            <StyledAnswer>
+            <StyledQuestion level={3} size={4} label={t(item.question)} />
+            <StyledAnswer size={2}>
               <Trans t={t} i18nKey={item.answer} components={linkComponents} />
             </StyledAnswer>
           </StyledFaq>

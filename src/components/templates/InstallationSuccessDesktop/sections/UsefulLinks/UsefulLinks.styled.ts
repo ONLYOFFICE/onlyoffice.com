@@ -28,6 +28,7 @@ const StyledUsefulLinkItem = styled.div`
   width: 544px;
   box-shadow: 0 7px 15px 0 rgba(85, 85, 85, 0.1);
   background: #fff;
+  transition: box-shadow 0.3s ease;
 
   @media ${device.desktop} {
     width: calc(50vw - 56px);
@@ -43,6 +44,10 @@ const StyledUsefulLinkItem = styled.div`
 
   @media ${device.mobileS} {
     width: 240px;
+  }
+
+  &:hover {
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.1);
   }
 `;
 

@@ -42,6 +42,7 @@ const StyledSolution = styled.div`
   box-shadow: 0 7px 15px 0 rgba(85, 85, 85, 0.1);
   background: #fff;
   text-align: center;
+  transition: box-shadow 0.3s ease;
 
   @media ${device.tabletS} {
     width: 320px;
@@ -49,6 +50,10 @@ const StyledSolution = styled.div`
 
   @media ${device.mobile} {
     width: 240px;
+  }
+
+  &:hover {
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.1);
   }
 `;
 
