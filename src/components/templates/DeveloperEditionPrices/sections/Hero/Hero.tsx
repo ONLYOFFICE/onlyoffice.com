@@ -82,7 +82,6 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
     loadRewardful();
 
     addClientReferenceOnReady(function () {
-      console.log("Rewardful ready!", getClientReferenceParam());
       setReferenceParam(getClientReferenceParam());
     });
   }, []);

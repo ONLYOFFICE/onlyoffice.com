@@ -45,7 +45,6 @@ export const getAffiliateToken = (): string | undefined =>
 export const getClientReferenceParam = (): string => {
   const id = getClientReferenceId();
   const token = getAffiliateToken();
-  console.log(document.querySelector('script[src="https://r.wdfl.co/rw.js"]'), id, token);
 
   return id
     ? `&affiliateId=${encodeURIComponent(id)}&affiliateToken=${encodeURIComponent(token ?? "")}`
@@ -54,10 +53,8 @@ export const getClientReferenceParam = (): string => {
 
 export const addClientReferenceOnReady = (callback: () => void) => {
   if (window.rewardful) {
-    console.log("~~ window.rewardful ~~");
     window.rewardful("ready", callback);
   } else {
-    console.log("~~ else ~~");
     setTimeout(() => addClientReferenceOnReady(callback), 50);
   }
 };
