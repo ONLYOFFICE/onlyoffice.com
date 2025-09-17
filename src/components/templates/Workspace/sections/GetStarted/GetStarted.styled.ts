@@ -53,6 +53,7 @@ const StyledGetStartedItem = styled.div`
   width: 100%;
   padding: 37px 32px 35px;
   align-content: space-between;
+  transition: box-shadow 0.3s ease;
 
   @media ${device.tabletS} {
     padding: 37px 26px 17px;
@@ -60,6 +61,10 @@ const StyledGetStartedItem = styled.div`
 
   @media ${device.mobile} {
     padding: 24px 16px;
+  }
+
+  &:hover {
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.1);
   }
 `;
 

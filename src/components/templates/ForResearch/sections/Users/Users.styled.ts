@@ -28,6 +28,15 @@ const StyledUsersItems = styled.ul`
     margin-left: 40px;
     width: 1120px;
   }
+
+  & li {
+    filter: grayscale(1);
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
 `;
 
 export {
