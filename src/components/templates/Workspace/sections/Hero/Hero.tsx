@@ -37,7 +37,7 @@ const Hero = () => {
               <Button
                 as="a"
                 href="/workspace-prices.aspx?from=workspace"
-                label={t("PickYourPrice")}
+                label={t("GetAQuote")}
                 variant="secondary"
               />
             </StyledHeroButtons>
