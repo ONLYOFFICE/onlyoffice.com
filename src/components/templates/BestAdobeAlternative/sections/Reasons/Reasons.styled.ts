@@ -24,22 +24,6 @@ const StyledFeaturesWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 40px 32px;
 
-  > div:last-child {
-    max-width: 584px;
-    grid-column: span 2;
-    margin: 0 auto;
-
-    @media ${device.mobile} {
-      grid-column: 1;
-      text-align: start;
-
-      &::before {
-        left: 0;
-        transform: none;
-      }
-    }
-  }
-
   @media ${device.mobile} {
     grid-template-columns: 1fr;
     gap: 24px;

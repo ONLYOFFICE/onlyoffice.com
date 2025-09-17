@@ -17,7 +17,9 @@
   "OOUsesItsNativeDocumentEditor": "ONLYOFFICE uses its native document editor for working with forms. To build a form, you don’t need to create a document in another word processor and then upload it to ours to add fields, like other editors handle it. With ONLYOFFICE, you can do everything in one editor — create a form template with fields, format text, and add even the most complex elements such as tables.",
   "SupportForAdobeFieldSettings": "Support for Adobe field settings",
   "InOOForms": "In ONLYOFFICE forms, you are able to add various types of fields, adjust their border and background colors, set character limit, apply multi-line entry and a comb of characters, add tips and placeholders, mark fields as required, group fields so that they can be filled out simultaneously and lock them.",
-
+  "AIHelper": "AI helper",
+  "AIHelperText": "Connect any AI assistant to work faster, use different AI models for different tasks. Activate the AI inline agent for smart interaction with the editors. Generate and rewrite texts, expand ideas, rephrase sentences, adapt tone and style. Apply formatting without searching through menus. Easily analyze and visualize data, create images based on descriptions. <0>Learn more</0>",
+  
   "PresentationTitle": "Watch <0>this presentation</0> to see the difference between office suites:",
 
   "ReadTheseArticles": "Read these articles to learn more about the advantages of ONLYOFFICE forms",

@@ -17,7 +17,9 @@
   "OOUsesItsNativeDocumentEditor": "ONLYOFFICE utilise son éditeur de documents natif pour travailler avec les formulaires. Pour créer un formulaire, vous n'avez pas besoin de rédiger un document dans un autre traitement de texte, puis de le télécharger dans le nôtre pour ajouter des champs, comme le font d'autres éditeurs. Avec ONLYOFFICE, vous pouvez tout faire dans un seul éditeur : créer un modèle de formulaire avec des champs, mettre en forme le texte et ajouter même les éléments les plus complexes comme des tableaux.",
   "SupportForAdobeFieldSettings": "Prise en charge des paramètres de champ Adobe",
   "InOOForms": "Avec les formulaires ONLYOFFICE, vous pouvez ajouter différents types de champs, ajuster leurs couleurs de bordure et d'arrière-plan, définir une limite de caractères, appliquer la saisie sur plusieurs lignes et un peigne de caractères, ajouter des conseils et des caractères de remplacement, marquer les champs comme obligatoires à remplir, regrouper les champs pour qu'ils puissent être remplis simultanément et les verrouiller.",
-
+  "AIHelper": "Assistant IA",
+  "AIHelperText": "Connectez n'importe quel assistant IA pour travailler plus rapidement, utilisez différents modèles IA pour différentes tâches. Activez l'agent IA intégré pour une interaction intelligente avec les éditeurs. Générez et réécrivez des textes, développez des idées, reformulez des phrases, adaptez le ton et le style. Appliquez des formats sans avoir à parcourir les menus. Analysez et visualisez facilement les données, créez des images à partir de descriptions. <0>En savoir plus</0>",
+  
   "PresentationTitle": "Suivez <0>cette présentation</0> pour voir la différence entre les suites bureautiques :",
 
   "ReadTheseArticles": "Lisez ces articles pour en savoir plus sur les avantages des formulaires ONLYOFFICE",

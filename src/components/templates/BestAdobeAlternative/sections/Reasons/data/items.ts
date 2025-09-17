@@ -1,13 +1,20 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
-export const items: IFeatureItem[] = [
+interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
+  text: {
+    label: React.ReactNode;
+    links?: { href: string; isExternal?: boolean }[];
+  };
+}
+
+export const items: IFeatureItemExtended[] = [
   {
     icon: {
       url: "/images/templates/best-adobe-alternative/reasons/icons.svg",
       positionX: "0",
     },
     heading: "FreeAndOpenSource",
-    text: "OOProvidesUsers",
+    text: { label: "OOProvidesUsers" },
   },
   {
     icon: {
@@ -15,7 +22,7 @@ export const items: IFeatureItem[] = [
       positionX: "-96px",
     },
     heading: "WebDesktopMobile",
-    text: "WithOOUouCanCreate",
+    text: { label: "WithOOUouCanCreate" },
   },
   {
     icon: {
@@ -23,7 +30,7 @@ export const items: IFeatureItem[] = [
       positionX: "-192px",
     },
     heading: "SeamlessOnlineCollaboration",
-    text: "YouAreAbleToCreateForms",
+    text: { label: "YouAreAbleToCreateForms" },
   },
   {
     icon: {
@@ -31,7 +38,7 @@ export const items: IFeatureItem[] = [
       positionX: "-384px",
     },
     heading: "CompleteFunctionality",
-    text: "OOUsesItsNativeDocumentEditor",
+    text: { label: "OOUsesItsNativeDocumentEditor" },
   },
   {
     icon: {
@@ -39,7 +46,17 @@ export const items: IFeatureItem[] = [
       positionX: "-480px",
     },
     heading: "SupportForAdobeFieldSettings",
-    text: "InOOForms",
-    variant: "vertical",
+    text: { label: "InOOForms" },
+  },
+  {
+    icon: {
+      url: "/images/templates/best-adobe-alternative/reasons/icons.svg",
+      positionX: "-570px",
+    },
+    heading: "AIHelper",
+    text: {
+      label: "AIHelperText",
+      links: [{ href: "/ai-assistants" }],
+    },
   },
 ];

@@ -17,7 +17,9 @@
   "OOUsesItsNativeDocumentEditor": "ONLYOFFICE gebruikt zijn eigen document editor voor het werken met formulieren. Om een formulier te maken, hoeft u niet eerst een document in een andere tekstverwerker te maken en het dan naar de onze te uploaden om velden toe te voegen, zoals andere tekstverwerkers dat doen. Met ONLYOFFICE kunt u alles in één editor doen - een formulier sjabloon met velden maken, tekst opmaken, en zelfs de meest complexe elementen zoals tabellen toevoegen.",
   "SupportForAdobeFieldSettings": "Ondersteuning voor Adobe veldinstellingen",
   "InOOForms": "In ONLYOFFICE formulieren kunt u verschillende soorten velden toevoegen, hun omranding en achtergrondkleur aanpassen, een tekenlimiet instellen, invoer op meerdere regels en een lettercombinatie toepassen, tips en plaatshouders toevoegen, velden als verplicht markeren, velden groeperen zodat ze tegelijk kunnen worden ingevuld en ze vergrendelen.",
-
+  "AIHelper": "AI helper",
+  "AIHelperText": "Connect any AI assistant to work faster, use different AI models for different tasks. Activate the AI inline agent for smart interaction with the editors. Generate and rewrite texts, expand ideas, rephrase sentences, adapt tone and style. Apply formatting without searching through menus. Easily analyze and visualize data, create images based on descriptions. <0>Learn more</0>",
+  
   "PresentationTitle": "Bekijk <0>deze presentatie</0> om het verschil tussen kantoorpakketten te zien:",
 
   "ReadTheseArticles": "Lees deze artikelen om meer te weten te komen over de voordelen van ONLYOFFICE formulieren",

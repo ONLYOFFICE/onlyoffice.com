@@ -17,7 +17,9 @@
   "OOUsesItsNativeDocumentEditor": "ONLYOFFICE utilizza il suo editor di documenti nativo per lavorare con i moduli. Per creare un modulo, non è necessario creare un documento in un altro processore di testo per poi caricarlo nel nostro per aggiungere campi, come lo gestiscono altri editor. Con ONLYOFFICE puoi fare tutto in un editor solo: crea un modello di modulo con vari campi, formatta il testo e aggiungi anche gli elementi più complessi come le tabelle.",
   "SupportForAdobeFieldSettings": "Supporto per le impostazioni dei campi Adobe",
   "InOOForms": "Nei moduli ONLYOFFICE puoi aggiungere vari tipi di campi, cambiare i colori di bordi e di sfondo, impostare il limite di caratteri, applicare le voci su più righe e i campi di caratteri comb, aggiungere suggerimenti e segnaposti, contrassegnare i campi come necessari, raggruppare i campi in modo che possono essere compilati contemporaneamente e bloccarli.",
-
+  "AIHelper": "Assistente AI",
+  "AIHelperText": "Connetti qualsiasi assistente AI per lavorare più velocemente, usa diversi modelli AI per attività differenti. Attiva l’agente AI inline per un’interazione intelligente con gli editor. Genera e riscrivi testi, amplia idee, riformula frasi, adatta tono e stile. Applica formattazioni senza cercare nei menu. Analizza e visualizza facilmente i dati, crea immagini a partire da descrizioni. <0>Scopri di più</0>",
+  
   "PresentationTitle": "Guarda <0>questa presentazione</0> per vedere la differenza tra le due suite:",
 
   "ReadTheseArticles": "Leggi questi articoli per saperne di più sui vantaggi dei moduli ONLYOFFICE",

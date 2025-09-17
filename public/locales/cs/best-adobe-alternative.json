@@ -17,6 +17,8 @@
   "OOUsesItsNativeDocumentEditor": "ONLYOFFICE používá pro práci s formuláři svůj nativní editor dokumentů. Chcete-li vytvořit formulář, nemusíte vytvářet dokument v jiném textovém editoru a poté jej nahrát do našeho editoru pro přidání polí, jak to dělají jiné editory. V ONLYOFFICE můžete vše provádět v jednom editoru - vytvořit šablonu formuláře s poli, formátovat text a přidávat i ty nejsložitější prvky, jako jsou tabulky.",
   "SupportForAdobeFieldSettings": "Podpora nastavení polí Adobe",
   "InOOForms": "Ve formulářích ONLYOFFICE můžete přidávat různé typy polí, upravovat jejich ohraničení a barvy pozadí, nastavovat omezení počtu znaků, používat víceřádkové zadávání a hřeben znaků, přidávat tipy a zástupné znaky, označovat pole jako povinná, seskupovat pole tak, aby je bylo možné vyplňovat současně, a zamykat je.",
+  "AIHelper": "AI helper",
+  "AIHelperText": "Connect any AI assistant to work faster, use different AI models for different tasks. Activate the AI inline agent for smart interaction with the editors. Generate and rewrite texts, expand ideas, rephrase sentences, adapt tone and style. Apply formatting without searching through menus. Easily analyze and visualize data, create images based on descriptions. <0>Learn more</0>",
 
   "PresentationTitle": "Shlédněte <0>tuto prezentaci</0> a porovnejte rozdíly mezi kancelářskými sadami:",
 

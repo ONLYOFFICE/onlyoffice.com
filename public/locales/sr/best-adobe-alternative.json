@@ -17,7 +17,9 @@
   "OOUsesItsNativeDocumentEditor": "ONLYOFFICE koristi svoj izvorni uređivač dokumenata za rad sa obrascima. Da biste napravili obrazac, ne morate da kreirate dokument u drugom programu za obradu teksta, a zatim ga otpremite na naš da biste dodali polja, kao što to drugi urednici obrađuju. Sa ONLYOFFICE-om možete sve da uradite u jednom uređivaču — kreirajte šablon obrasca sa poljima, formatirajte tekst i dodajte čak i najsloženije elemente kao što su tabele.",
   "SupportForAdobeFieldSettings": "Podrška za Adobe polja podešavanja",
   "InOOForms": "U ONLYOFFICE obrascima možete dodavati različite vrste polja, prilagoditi im boje okvira i pozadine, postaviti ograničenje broja znakova, primeniti višelinijski unos i kombinaciju znakova, dodati savete i rezervne tekstove, označiti polja kao obavezna, grupisati polja kako bi se mogla popuniti istovremeno i zaključati ih.",
-
+  "AIHelper": "AI pomoćnik",
+  "AIHelperText": "Povežite bilo kog AI asistenta za brži rad, koristite različite AI modele za različite zadatke. Aktivirajte AI inline agenta za pametnu interakciju sa editorima. Generišite i prepravljajte tekstove, proširujte ideje, preformulišite rečenice, prilagodite ton i stil. Primenujte formatiranje bez pretraživanja menija. Jednostavno analizirajte i vizualizujte podatke, kreirajte slike prema opisima. <0>Saznajte više</0>",
+  
   "PresentationTitle": "Pogledajte <0>ovu prezentaciju</0> da biste videli razliku između kancelarijskih paketa:",
 
   "ReadTheseArticles": "Pročitajte ove članke da biste saznali više o prednostima ONLYOFFICE obrazaca",

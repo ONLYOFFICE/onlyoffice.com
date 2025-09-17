@@ -17,7 +17,9 @@
   "OOUsesItsNativeDocumentEditor": "ONLYOFFICE verwendet für die Arbeit mit Formularen seinen eigenen Dokumenteneditor. Sie können dabei alles in einem Editor erledigen — eine Formularvorlage mit Feldern erstellen, Text formatieren und sogar die komplexesten Elemente wie Tabellen hinzufügen. Bei anderen Lösungen sollten Sie zuerst ein Dokument in einem Textverarbeitungsprogramm erstellen und dann es in die andere App hochladen, um Felder hinzuzufügen.",
   "SupportForAdobeFieldSettings": "Unterstützung von Adobe-Feldeinstellungen",
   "InOOForms": "In ONLYOFFICE-Formularen können Sie verschiedene Arten von Feldern hinzufügen, ihre Rahmen- und Hintergrundfarben anpassen, Zeichenlimit festlegen, mehrzeilige Eingaben erlauben, Tipps und Platzhalter hinzufügen, Felder als erforderlich markieren und sperren, mehrere Felder gruppieren, damit sie gleichzeitig ausgefüllt werden können.",
-
+  "AIHelper": "KI-Helfer",
+  "AIHelperText": "Verbinden Sie beliebige KI-Assistenten, um schneller zu arbeiten, und nutzen Sie verschiedene KI-Modelle für unterschiedliche Aufgaben. Aktivieren Sie den KI-Inline-Agenten für die intelligente Interaktion mit den Editoren. Generieren und überarbeiten Sie Texte, erweitern Sie Ideen, formulieren Sie Sätze um und passen Sie Ton und Stil an. Wenden Sie Formatierungen an, ohne Menüs durchsuchen zu müssen. Analysieren und visualisieren Sie Daten einfach und erstellen Sie Bilder basierend auf Beschreibungen. <0>Mehr erfahren</0>",
+  
   "PresentationTitle": "Sehen <0>Sie sich diese Präsentation</0> an, um mehr über die Unterschiede zwischen Office-Suiten zu erfahren:",
 
   "ReadTheseArticles": "Entdecken Sie alle Vorteile von ONLYOFFICE-Formularen",

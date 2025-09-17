@@ -17,7 +17,9 @@
   "OOUsesItsNativeDocumentEditor": "O ONLYOFFICE usa seu editor de documentos nativo para trabalhar com formulários. Para criar um formulário, você não precisa criar um documento em outro processador de texto e, a seguir, carregá-lo no nosso processador para adicionar campos, como outros editores fazem. No ONLYOFFICE, você pode fazer tudo em um único editor: criar um modelo de formulário com campos, formatar o texto e adicionar até os elementos mais complexos, como tabelas.",
   "SupportForAdobeFieldSettings": "Suporte para configurações de campo do Adobe",
   "InOOForms": "Nos formulários do ONLYOFFICE, você pode adicionar vários tipos de campos, ajustar as bordas e cores de fundo, definir o limite de caracteres, aplicar entrada de várias linhas e uma combinação de caracteres, adicionar dicas e espaços reservados, marcar campos conforme necessário, agrupar campos para que eles possam ser preenchidos de forma simultânea bem como bloqueá-los.",
-
+  "AIHelper": "Ajudante de IA",
+  "AIHelperText": "Conecte qualquer assistente de IA para trabalhar mais rápido, use diferentes modelos de IA para diferentes tarefas. Ative o agente em linha de IA para interação inteligente com os editores. Gere e reescreva textos, expanda ideias, reformule frases, adapte o tom e o estilo. Aplique formatação sem precisar pesquisar em menus. Analise e visualize dados facilmente, crie imagens com base em descrições. <0>Saiba mais</0>",
+  
   "PresentationTitle": "Assista a <0>esta apresentação</0> para ver a diferença entre os pacotes office:",
 
   "ReadTheseArticles": "Para saber mais sobre as vantagens dos formulários do ONLYOFFICE, leia estes artigos",
