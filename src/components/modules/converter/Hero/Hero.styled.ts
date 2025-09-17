@@ -28,7 +28,8 @@ const StyledHeroBody = styled.div`
     content: "";
     position: absolute;
     top: -11px;
-    right: calc(100% + 16px);
+    left: 0;
+    transform: translateX(-120%);
     width: 332px;
     height: 460px;
     background-image: url(${getAssetUrl('/images/modules/converter/hero/decor-left.svg')});
@@ -45,9 +46,10 @@ const StyledHeroBody = styled.div`
     content: "";
     position: absolute;
     top: -11px;
-    left: calc(100% + 78px);
-    width: 304px;
-    height: 480px;
+    right: 0;
+    transform: translateX(120%);
+    width: 332px;
+    height: 460px;
     background-image: url(${getAssetUrl('/images/modules/converter/hero/decor-right.svg')});
     background-repeat: no-repeat;
     background-size: contain;
