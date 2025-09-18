@@ -13,7 +13,7 @@
   "SMBsFeature15": "Invitación a los usuarios a través de enlaces externos para que puedan ver los documentos sin registrarse.",
   "SMBsImgUrl": "/images/templates/for-small-business/features/smb_docspace.svg",
   "UseItForFree": "Utilízalo gratis",
-  "RunOnYourOwnServer": "EJECUTAR EN TU PROPIO SERVIDOR",
+  "RunOnYourOwnServer": "Ejecutar en tu propio servidor",
 
   "SMBsHead2": "<0>ONLYOFFICE Workspace</0> para un trabajo en equipo eficaz",
   "SMBsSub2": "Sustitución de Google Workspace, Microsoft 365 y Zoho Workplace",
@@ -37,7 +37,7 @@
   "SMBsFeature36": "En el entorno local para mantener todos los datos dentro de la empresa O en la nube pública sin instalación",
   "JWTLink" : "https://www.onlyoffice.com/blog/es/2022/10/que-es-jwt",
   "SMBsImgUrl3": "/images/templates/for-small-business/features/onlyoffice_docs.svg",
-  "UseInTheCloud": "UTILIZAR EN LA NUBE",
+  "UseInTheCloud": "Utilizar en la nube",
   "Quote3": "\"La integración con Nextcloud funciona perfectamente. Nuestros usuarios están muy contentos de poder editar documentos en el entorno local, lo que les permite compartir documentos y colaborar en ellos. No hay necesidad de adjuntar correos ni de multiplicar las versiones de los documentos.\"",
   "Quote3Author": "Guenael S.",
   "Quote3Info": "Administrador de sistemas",
@@ -50,7 +50,7 @@
   "SMBsFeature44": "Cifrado de documentos con contraseñas y firmas digitales",
   "SMBsFeature45": "Aplicaciones nativas para Windows, Linux y macOS",
   "SMBsImgUrl4": "/images/templates/for-small-business/features/onlyoffice_free_desktop.svg",
-  "DownloadNow": "DESCARGAR AHORA",
+  "DownloadNow": "Descargar ahora",
 
   "SMBsHead5": "<0>Gratuitas</0> aplicaciones móviles para gestionar documentos sobre la marcha",
   "SMBsSub5": "Sustitución de Office, Google Docs móvil, Zoho Docs móvil, QuickOffice, Pages",

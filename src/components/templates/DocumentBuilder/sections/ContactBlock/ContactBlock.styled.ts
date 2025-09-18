@@ -1,4 +1,3 @@
-import { Button } from "@src/components/ui/Button";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
@@ -92,42 +91,9 @@ const StyledContactBlockText = styled(Text)`
     }
 `;
 
-const StyledButton = styled(Button)`
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 9px;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-    text-align: center;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 19px 24px;
-    background-color: #ff6f3d;
-    transition: background-color 0.2s;
-
-    &:hover {
-        background-color: #ff865c;
-    }
-
-    @media ${device.mobile} {
-        font-size: 12px;
-        line-height: 16px;
-        padding: 16px 26px;
-        display: block;
-        margin: 0 auto;
-        height: 48px;
-        width: fit-content;
-    }
-`;
 
 export {
     StyledContactBlock,
     StyledContactBlockHeading,
-    StyledContactBlockText,
-    StyledButton
+    StyledContactBlockText
 }
