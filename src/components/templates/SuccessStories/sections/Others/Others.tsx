@@ -19,17 +19,13 @@ import {
 
 const Others = ({ allOtherUsers }: ISuccessStoriesAllOtherUsers) => {
   const { t } = useTranslation("success-stories");
-
-  const [visibleUserCount, setVisibleUserCount] = useState<number>(2);
   const [visibleButton, setVisibleButton] = useState<boolean>(true);
 
   const handleShowMore = () => {
-    setVisibleUserCount(allOtherUsers.length);
     setVisibleButton(false);
   };
 
   const handleLinkClick = () => {
-    setVisibleUserCount(2);
     setVisibleButton(true);
   };
 
@@ -40,13 +36,16 @@ const Others = ({ allOtherUsers }: ISuccessStoriesAllOtherUsers) => {
         <StyledStoriesOthersCardList>
           {allOtherUsers.map(
             (story, index) =>
-              index < visibleUserCount && (
+              (
                 <StyledStoriesOthersCardItem key={story.id}>
                   <Link
                     href={`/success-stories/${story.slug}`}
                     onClick={() => handleLinkClick()}
                   >
-                    <StyledStoriesOthersCardContent>
+                    <StyledStoriesOthersCardContent
+                      $visibleButton={visibleButton}
+                      $index={index}
+                    >
                       <StyledStoriesOthersCardItemLeft>
                         <img src={story.user.image} alt="image" />
                       </StyledStoriesOthersCardItemLeft>

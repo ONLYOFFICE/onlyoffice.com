@@ -22,7 +22,6 @@ const StyledStoriesOthersTitle = styled.h2`
 const StyledStoriesOthersCardList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 32px;
   width: 100%;
   height: fit-content;
 
@@ -32,12 +31,10 @@ const StyledStoriesOthersCardList = styled.ul`
   }
 `;
 
-const StyledStoriesOthersCardItem = styled.li`
-  width: 100%;
-  height: fit-content;
-`;
-
-const StyledStoriesOthersCardContent = styled.div`
+const StyledStoriesOthersCardContent = styled.div<{
+  $visibleButton: boolean;
+  $index: number;
+}>`
   width: 100%;
   height: fit-content;
   padding: 35px 65px;
@@ -45,7 +42,12 @@ const StyledStoriesOthersCardContent = styled.div`
   align-items: center;
   gap: 85px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s ease, max-height 1s ease, padding 1s ease, opacity 0.5s ease;
+  max-height: ${({ $visibleButton, $index }) => ($visibleButton && $index > 1 ? "0" : "500px")};
+  padding: ${({ $visibleButton, $index }) => ($visibleButton && $index > 1 ? "0 65px" : "35px 65px")};
+  margin-bottom: ${({ $visibleButton, $index }) => ($visibleButton && $index > 1 ? "0" : "32px")};
+  opacity: ${({ $visibleButton, $index }) => ($visibleButton && $index > 1 ? "0" : "1")};
+  overflow: hidden;
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -53,8 +55,27 @@ const StyledStoriesOthersCardContent = styled.div`
 
   @media ${device.tablet} {
     flex-direction: column;
-    padding: 35px;
+    padding: ${({ $visibleButton, $index }) => ($visibleButton && $index > 1 ? "0" : "35px")};
     gap: 35px;
+  }
+
+  @media ${device.tabletS} {
+    max-height: ${({ $visibleButton, $index }) => ($visibleButton && $index > 1 ? "0" : "700px")};
+  }
+
+  @media ${device.mobile} {
+    max-height: ${({ $visibleButton, $index }) => ($visibleButton && $index > 1 ? "0" : "1000px")};
+  }
+`;
+
+const StyledStoriesOthersCardItem = styled.li`
+  width: 100%;
+  height: fit-content;
+
+  &:last-child {
+    ${StyledStoriesOthersCardContent} {
+      margin-bottom: 0;
+    }
   }
 `;
 
