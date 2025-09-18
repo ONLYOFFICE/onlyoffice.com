@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
 import {
   StyledHero,
@@ -22,10 +23,20 @@ import { CounterSelector } from "@src/components/widgets/CounterSelector";
 import { ToggleButtons } from "@src/components/widgets/ToggleButtons";
 import { List } from "@src/components/widgets/pricing/List";
 import { Reseller } from "@src/components/modules/pricing/Reseller";
+import { loadRewardful, addClientReferenceOnReady, getClientReferenceParam } from "@src/utils/rewardful";
 
 const Hero = ({ locale, productsData }: IDocSpaceFamilyPackTemplate) => {
   const { t } = useTranslation("docspace-family-pack");
   const currency = getCurrencyByLocale(locale);
+  const [referenceParam, setReferenceParam] = useState("");
+
+  useEffect(() => {
+    loadRewardful();
+
+    addClientReferenceOnReady(function () {
+      setReferenceParam(getClientReferenceParam());
+    });
+  }, []);
 
   return (
     <StyledHero
@@ -135,7 +146,7 @@ const Hero = ({ locale, productsData }: IDocSpaceFamilyPackTemplate) => {
             <Button
               data-testid="buy-now-button"
               as="a"
-              href={productsData.basic.url}
+              href={`${productsData.basic.url}${referenceParam}`}
               target="_blank"
               label={t("BuyNow")}
             />
