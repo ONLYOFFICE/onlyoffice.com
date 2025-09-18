@@ -23,7 +23,7 @@ const Hero = () => {
       tabletSmallSpacing={["96px", "80px"]}
       mobileSpacing={["96px", "54px"]}
     >
-      <Container>
+      <Container maxWidth="1280px">
         <StyledHeroWrapper $locale={locale}>
           <Heading level={1} color="#ffffff" label={t1("Header")} />
           <Text size={1} label={t1("SubHeader")} />

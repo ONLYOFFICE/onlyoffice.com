@@ -64,7 +64,6 @@ const StyledWrapper = styled.div`
 const StyledPageTitle = styled(Heading)`
   max-width: 452px;
   font-size: 40px;
-  font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.33em;
   @media ${device.mobile} {

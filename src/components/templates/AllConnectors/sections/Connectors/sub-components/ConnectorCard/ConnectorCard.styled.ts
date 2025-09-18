@@ -8,13 +8,12 @@ import { Badge } from "@src/components/ui/Badge";
 const StyledConnectorCard = styled.div`
   display: flex;
   flex-direction: column;
-  border-radius: 16px;
+  border-radius: 6px;
   width: 100%;
   height: 100%;
   transition: box-shadow 0.2s;
-  border: 1px solid #E5E5E5
+  border: 1px solid #E5E5E5;
   box-shadow: 0px 7px 15px 0px #5555551A;
-
 
   &:hover {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -28,7 +27,8 @@ const StyledConnectorCardImgWrapper = styled.div<{
   display: flex;
   padding: 24px 24px 0px;
   align-items: center;
-  border-radius: 5px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   background: #fff;
   gap: 16px;
 
@@ -53,25 +53,23 @@ const StyledConnectorCardImg = styled.div<{
 `;
 
 const StyledConnectorCardHeadingFor = styled.div`
-   
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 `;
 const StyledConnectorCardHeadingName = styled(Heading)`
-   
-    font-weight: 400;
-    font-size:12px;
-    text-transform: uppercase;
-    
+  font-weight: 400;
+  font-size:12px;
+  text-transform: uppercase;
 `;
 
 const StyledConnectorCardBody = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 16px 24px;
+  padding: 16px 24px 32px;
   height: 100%;
   background-color: #ffffff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 
   @media ${device.mobile} {
     padding: 24px;
@@ -119,6 +117,10 @@ const StyledConnectorCardInfo = styled.div`
 `;
 
 const StyledConnectorCardButton = styled(Button)<{ $isHidden?: boolean }>`
+  height: 48px;
+  min-height: 48px;
+  margin: 0 8px;
+
   ${(props) =>
     props.$isHidden &&
     css`

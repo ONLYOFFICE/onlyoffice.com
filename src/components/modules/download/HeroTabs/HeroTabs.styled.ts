@@ -46,7 +46,7 @@ const StyledHeroTabsButton = styled.button<{
   line-height: 16px;
   letter-spacing: 0.08em;
   color: ${(props) => (props.$activeTab ? "#ff6f3d" : "#444444")};
-  width: 204px;
+  width: 256px;
   text-align: center;
   text-transform: uppercase;
   background-color: transparent;
@@ -67,10 +67,6 @@ const StyledHeroTabsButton = styled.button<{
     background-position-y: ${(props) => props.$iconPositionY};
     background-size: ${(props) => props.$iconSize};
     background-repeat: no-repeat;
-  }
-
-  &:not(:last-child) {
-    margin-right: 24px;
   }
 
   @media ${device.mobile} {

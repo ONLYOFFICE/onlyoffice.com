@@ -47,7 +47,6 @@ const StyledSuggestionsTitle = styled(Heading)`
   letter-spacing: -0.02em;
   line-height: 1.33em;
   width: auto;
-  font-weight: 800;
   color: #ffffff;
   @media ${device.mobile} {
     font-size: 24px;

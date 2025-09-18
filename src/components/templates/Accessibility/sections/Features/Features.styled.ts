@@ -6,7 +6,6 @@ import { Text } from "@src/components/ui/Text";
 import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFeaturesHeading = styled(Heading)`
   font-size: 32px;
-  font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.33em;
   text-align: center;
