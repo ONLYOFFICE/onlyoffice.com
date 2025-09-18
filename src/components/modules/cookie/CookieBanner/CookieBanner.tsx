@@ -50,6 +50,7 @@ const CookieBanner = () => {
     (state) => state.IPGeolocationInfo.country,
   );
 
+  const MOBILE_BREAKPOINT = 592;
   const fabRef = useRef<HTMLDivElement | null>(null);
   const bannerRef = useRef<HTMLDivElement | null>(null);
   const [consent, setConsent] = useState<IConsentData | null>(null);
@@ -158,7 +159,10 @@ const CookieBanner = () => {
     setConsent(ALL_GRANTED);
     setShowBanner(false);
     setShowFab(true);
-    updateZendeskVerticalOffset();
+
+    if (window.innerWidth <= MOBILE_BREAKPOINT) {
+      updateZendeskVerticalOffset();
+    }
   };
 
   const handleDeclineAll = () => {
@@ -166,7 +170,10 @@ const CookieBanner = () => {
     setConsent(DEFAULT_CONSENT);
     setShowBanner(false);
     setShowFab(true);
-    updateZendeskVerticalOffset();
+
+    if (window.innerWidth <= MOBILE_BREAKPOINT) {
+      updateZendeskVerticalOffset();
+    }
   };
 
   const handleSettings = () => {
@@ -178,7 +185,10 @@ const CookieBanner = () => {
       setShowFab(false);
       setShowSettings(true);
     }
-    updateZendeskVerticalOffset();
+
+    if (window.innerWidth <= MOBILE_BREAKPOINT) {
+      updateZendeskVerticalOffset();
+    }
   };
 
   const handleBanner = () => {
@@ -186,7 +196,7 @@ const CookieBanner = () => {
     setShowFab(false);
     setShowSettings(false);
 
-    if (window.innerWidth <= 592) {
+    if (window.innerWidth <= MOBILE_BREAKPOINT) {
       setTimeout(() => {
         if (bannerRef.current) {
           updateZendeskVerticalOffset(bannerRef.current.offsetHeight);
@@ -239,7 +249,7 @@ const CookieBanner = () => {
 
   useEffect(() => {
     const updateZendeskOffset = () => {
-      if (window.innerWidth <= 592) {
+      if (window.innerWidth <= MOBILE_BREAKPOINT) {
         if (bannerRef.current && showBanner) {
           updateZendeskVerticalOffset(bannerRef.current.offsetHeight);
         }
