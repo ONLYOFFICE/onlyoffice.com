@@ -1,0 +1,14 @@
+{
+  "PageTitle": "Wrong Portal Name",
+  "YouEntered": "You entered: ",
+  "CheckTheSpelling": "Check the spelling.",
+  "CreatePortalNowItIsNotInUseYet": "Create <0>{{portal}}</0> portal now, it is not in use yet!",
+  "IfYoureStillHavingTrouble": "If you're still having trouble after several attempts, please write to <0>onlyoffice.com/support-contact-form</0>",
+  "SendFeedback": "Send feedback",
+  "PleaseWait": "Please, wait...",
+  "SendInstallFeedbackSuccessful": "Send Install Feedback Successful",
+  "ThankYouForYourTimeAndGoodLuck": "Thank you for your time and good luck!",
+  "OK": "OK",
+  "SendInstallFeedbackError": "Send Install Feedback Error",
+  "WeAreSorryBut": "We are sorry, but an error occurred, try again later"
+}
