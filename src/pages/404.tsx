@@ -8,7 +8,7 @@ const Error404Page = () => {
     <>
       <ErrorHead title="ONLYOFFICE is on maintenance" />
       <ErrorTemplate
-        heading="404 Error"
+        heading="404 Error!"
         description="It seems you clicked on an invalid link, or entered an address that is not on this website"
       />
     </>
