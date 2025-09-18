@@ -64,4 +64,11 @@ export const transKeysLink: ITransKeysLink[] = [
     color: "main",
     target: "_blank",
   },
+  {
+    key: 10,
+    href: "http://www.chgk-blanki.ru/",
+    fontWeight: 400,
+    color: "main",
+    target: "_blank",
+  },
 ];

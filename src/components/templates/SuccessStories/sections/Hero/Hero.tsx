@@ -19,7 +19,7 @@ import {
 
 const Hero = ({ userPreview }: ISuccessStoriesUserPreview) => {
   const { t } = useTranslation("success-stories");
-  
+
   const rawIndustry = t(userPreview?.profile.industry || "", {
     returnObjects: true,
   }) as string | string[];
@@ -63,6 +63,7 @@ const Hero = ({ userPreview }: ISuccessStoriesUserPreview) => {
                           fontWeight={item.fontWeight}
                         />
                       )),
+                      <Text as={"span"} fontStyle="italic" key={11} />,
                     ]}
                   />
                 </Text>
@@ -82,7 +83,8 @@ const Hero = ({ userPreview }: ISuccessStoriesUserPreview) => {
                               color={item.color}
                               fontWeight={item.fontWeight}
                             />
-                          )),
+                            )),
+                          <Text as={"span"} fontStyle="italic" key={11} />,
                         ]}
                       />
                     </Text>
@@ -108,6 +110,7 @@ const Hero = ({ userPreview }: ISuccessStoriesUserPreview) => {
                               fontWeight={item.fontWeight}
                             />
                           )),
+                          <Text as={"span"} fontStyle="italic" key={11} />,
                         ]}
                       />
                     </Text>
@@ -133,6 +136,7 @@ const Hero = ({ userPreview }: ISuccessStoriesUserPreview) => {
                               fontWeight={item.fontWeight}
                             />
                           )),
+                          <Text as={"span"} fontStyle="italic" key={11} />,
                         ]}
                       />
                     </Text>
