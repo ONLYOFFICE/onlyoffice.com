@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
 import {
   StyledHero,
@@ -91,6 +91,13 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
         );
       },
     });
+
+  useEffect(() => {
+    if (formData.hosting === "Cloud" && formData.cloudType === "Business") {
+      setFormData((prev) => ({ ...prev, supportLevel: "Basic"}))
+    }
+  }, [formData.cloudType, formData.hosting, formData.supportLevel])
+  
 
   const hostingIsCloud = formData.hosting === "Cloud";
   const hostingIsOnPremises = formData.hosting === "On-premises";
@@ -352,6 +359,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
                   {
                     id: "Plus",
                     label: t("Plus"),
+                    disabled: hostingIsCloud && formData.cloudType === "Business",
                     content: (
                       <List
                         variant="small"
@@ -371,6 +379,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
                   {
                     id: "Premium",
                     label: t("Premium"),
+                    disabled: hostingIsCloud && formData.cloudType === "Business",
                     content: (
                       <List
                         variant="small"
