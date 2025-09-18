@@ -11,6 +11,8 @@ export interface ITabs<T extends string> {
     label: string;
     /** Content rendered when the tab is active. */
     content: React.ReactNode;
+    /** Disables interaction with the tabs when set to true. */
+    disabled?: boolean;
   }[];
   /** Currently selected tab ID. */
   selected: string;

@@ -10,6 +10,11 @@ const StyledTabs = styled.div<{
   ${(props) => css`
     background-color: ${props.$bgColor};
   `}
+  .tab-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 `;
 
 const StyledTabsList = styled.div`

@@ -28,7 +28,10 @@ const Tabs = <T extends string>({
           <StyledTabsItem
             key={index}
             $active={selected === item.id}
-            onClick={() => onChange(item.id as T)}
+            onClick={() => { if (!item.disabled) {
+              onChange(item.id as T)}
+            }}
+            className={`tab ${item.disabled ? "tab-disabled" : ""}`}
           >
             {item.label}
           </StyledTabsItem>

@@ -1,4 +1,4 @@
 export interface IList {
-  items: string[];
+  items: React.ReactNode[];
   variant?: "small" | "medium";
 }

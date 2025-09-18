@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
 import {
   StyledHero,
@@ -100,6 +100,12 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
         );
       },
     });
+
+    useEffect(() => {
+      if (formData.hosting === "Cloud") {
+        setFormData((prev) => ({...prev, supportLevel: "Basic" }))
+      }
+    }, [formData.supportLevel, formData.hosting])
 
   const hostingIsCloud = formData.hosting === "Cloud";
   const hostingIsOnPremises = formData.hosting === "On-premises";
@@ -215,9 +221,20 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                 ...(hostingIsCloud
                   ? [t("ConversionService"), t("BrandingOptions")]
                   : [t("DocumentBuilder"), t("ConversionService")]),
+                hostingIsCloud 
+                ? (<StyledHeroCheckboxWrapper as="span">
+                  {t("AccessToAutomationAPI")}
+                  <Tooltip
+                    id="access-automation-api"
+                    content={t("AccessToAutomationAPITooltip")}
+                    infoIcon
+                    place="bottom-start"
+                  />
+                </StyledHeroCheckboxWrapper>) 
+                : null,
                 t("AllMinorAndMajorUpgrades"),
                 t("ProfessionalAssistance"),
-              ]}
+              ].filter(Boolean)}
             />
 
             {hostingIsOnPremises && (
@@ -488,6 +505,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                   {
                     id: "Plus",
                     label: t("Plus"),
+                    disabled: hostingIsCloud,
                     content: (
                       <List
                         variant="small"
@@ -505,6 +523,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                   {
                     id: "Premium",
                     label: t("Premium"),
+                    disabled: hostingIsCloud,
                     content: (
                       <List
                         variant="small"
@@ -533,7 +552,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
 
             <LabeledWrapper label={t("AdditionalToolsAndServices")}>
               <SelectorsWrapper>
-                <StyledHeroCheckboxWrapper>
+                { hostingIsOnPremises && <StyledHeroCheckboxWrapper>
                   <Checkbox
                     checked={formData.accessToAPI}
                     onChange={() =>
@@ -551,9 +570,9 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                     infoIcon
                     place="bottom-start"
                   ></Tooltip>
-                </StyledHeroCheckboxWrapper>
+                </StyledHeroCheckboxWrapper> }
 
-                <Checkbox
+                { hostingIsOnPremises && <Checkbox
                   checked={formData.liveViewer}
                   onChange={() =>
                     setFormData((prev) => ({
@@ -563,7 +582,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                   }
                   label={t("LiveViewer")}
                   size="small"
-                />
+                /> }
 
                 <Checkbox
                   checked={formData.nativeMobileApps}
