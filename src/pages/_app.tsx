@@ -1,12 +1,11 @@
 import "@src/styles/global.css";
 import { useEffect } from "react";
-import { appWithTranslation } from "next-i18next";
+import { appWithTranslation, useTranslation } from "next-i18next";
 import type { AppProps } from "next/app";
 import { Toaster } from "react-hot-toast";
 import { useUtmCookies } from "@src/utils/useUtmCookies";
 import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
 
 function App({ Component, pageProps }: AppProps) {
   useUtmCookies();
@@ -24,7 +23,9 @@ function App({ Component, pageProps }: AppProps) {
   }, [setIPGeolocationInfo]);
 
   useEffect(() => {
-    if (!router.locale || !i18n) return;
+    if (typeof window === "undefined" || !router.locale || !i18n) return;
+    if (typeof i18n.changeLanguage !== "function") return;
+
     if (i18n.language !== router.locale) {
       i18n.changeLanguage(router.locale).catch(() => {});
     }
