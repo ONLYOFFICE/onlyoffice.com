@@ -4,7 +4,7 @@
 
   "OnlineOfficeForConnector": "Suite ofimática en línea para Trello",
   "Subheader": "Trabaja en todo tipo de documentos ofimáticos dentro de Trello usando ONLYOFFICE Docs",
-  "GetStarted": "EMPEZAR AHORA",
+  "GetStarted": "Empezar ahora",
 
   "WorkWithinConnector": "Trabaja con documentos ofimáticos cargados en las tarjetas del tablero de Trello",
   "DocumentsTab1Label": "Permite a los administradores y miembros con derechos normales editar archivos DOCX, XLSX y PPTX.",
@@ -13,7 +13,7 @@
 
   "MarketplaceConnectorTitle": "Diseñado para una integración perfecta con Trello",
   "MarketplaceConnectorDescription": "Obtén ONLYOFFICE Power-Up para Trello ahora desde el Marketplace de Atlassian.",
-  "GetItNow": "OBTENER AHORA",
+  "GetItNow": "Obtener ahora",
 
   "WhyOO": "¿Por qué ONLYOFFICE?",
   "Reason1": "Soporte para más de <0>50 formatos de archivo</0>, con compatibilidad completa con los formatos de MS Office: DOCX, XLSX, PPTX.",
