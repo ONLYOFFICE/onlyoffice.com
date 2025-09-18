@@ -33,7 +33,7 @@ const CollaborationsHero = ({
       tabletSmallSpacing={["137px", "115px"]}
       mobileSpacing={["96px", "49px"]}
     >
-      <Container maxWidth="1295px">
+      <Container maxWidth="1280px">
         <StyledCollaborationsHeroWrapper>
           <StyledCollaborationsHeroContent>
             <StyledCollaborationsHeroHeading size={2} label={heading} />
