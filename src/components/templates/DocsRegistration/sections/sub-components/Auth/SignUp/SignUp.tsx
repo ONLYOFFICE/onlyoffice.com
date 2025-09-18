@@ -49,14 +49,6 @@ const SignUp = () => {
     return { ...item, label: t(item.label) };
   });
 
-  const [affiliate, setAffiliate] = useState<{
-    id?: string;
-    token?: string;
-  }>({
-    id: "",
-    token: "",
-  });
-
   const [formData, setFormData] = useState<ISignUpData>(initialFormData);
   const [selectedPlatform, setSelectedPlatform] = useState<ISelectOption[]>([]);
   const [isEmpty, setIsEmpty] = useState({
@@ -84,8 +76,6 @@ const SignUp = () => {
 
   useEffect(() => {
     loadRewardful();
-
-    console.log(document.querySelector('script[src="https://r.wdfl.co/rw.js"]'), "affiliateId=", getClientReferenceId(), "affiliateToken=", getAffiliateToken());
   }, []);
 
   const handleInputChange = (field: string, value: string) => {

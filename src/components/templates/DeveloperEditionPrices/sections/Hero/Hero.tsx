@@ -619,7 +619,7 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
                     data-testid="buy-now-button"
                     as="a"
                     fullWidth
-                    href={product?.url + referenceParam}
+                    href={`${product?.url}${referenceParam}`}
                     target="_blank"
                     label={t("BuyNow")}
                   />

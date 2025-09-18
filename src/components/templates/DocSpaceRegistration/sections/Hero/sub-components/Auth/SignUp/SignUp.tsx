@@ -84,8 +84,6 @@ const SignUp = ({
       const affiliateId = getClientReferenceId() || "";
       const affiliateToken = getAffiliateToken() || "";
 
-      console.log(document.querySelector('script[src="https://r.wdfl.co/rw.js"]'), "affiliateId=", affiliateId, "affiliateToken=", affiliateToken);
-
       setAffiliateId(affiliateId);
       setAffiliateToken(affiliateToken);
     });
