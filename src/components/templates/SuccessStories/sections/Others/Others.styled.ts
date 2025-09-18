@@ -42,7 +42,11 @@ const StyledStoriesOthersCardContent = styled.div<{
   align-items: center;
   gap: 85px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease, max-height 1s ease, padding 1s ease, opacity 0.5s ease;
+  transition:
+    box-shadow 0.3s ease,
+    max-height ${({ $visibleButton }) => ($visibleButton ? "0" : "1s")} ease,
+    padding ${({ $visibleButton }) => ($visibleButton ? "0" : "1s")} ease,
+    opacity 0.5s ease;
   max-height: ${({ $visibleButton, $index }) => ($visibleButton && $index > 1 ? "0" : "500px")};
   padding: ${({ $visibleButton, $index }) => ($visibleButton && $index > 1 ? "0 65px" : "35px 65px")};
   margin-bottom: ${({ $visibleButton, $index }) => ($visibleButton && $index > 1 ? "0" : "32px")};
