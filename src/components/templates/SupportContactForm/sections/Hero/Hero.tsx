@@ -14,6 +14,7 @@ import {
   ICheckStatus,
   IFormData,
   ISelectSubjectItems,
+  TAllowedFileTypes,
 } from "../../SupportContactForm.types";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { hasOption } from "../../utils/typeGuards";
@@ -57,8 +58,9 @@ import {
   StyledSelectOptionTitle,
 } from "./Hero.styled";
 
-const MAX_SIZE = 5 * 1024 * 1024;
+const MAX_SIZE = 5 * 1024 * 1024; // 5MB
 const MAX_FILES = 10;
+const ALLOWED_FILE_TYPES: TAllowedFileTypes[] = ["image/jpeg", "image/png", "application/pdf"];
 
 const Hero = () => {
   const { t } = useTranslation("support-contact-form");
@@ -108,6 +110,8 @@ const Hero = () => {
     email: "",
     hcaptcha: null,
   });
+
+  console.log(formData);
 
   const os = useClientOS();
 
@@ -179,6 +183,18 @@ const Hero = () => {
         }));
 
         setErrorFileName(t("YouCanAttachUp"));
+        resetFileStatus();
+
+        return false;
+      }
+
+      if (!ALLOWED_FILE_TYPES.includes(file.type as TAllowedFileTypes)) {
+        setCheckStatus((prev) => ({
+          ...prev,
+          file: "error",
+        }));
+
+        setErrorFileName(t("YouCanOnlyAttach"));
         resetFileStatus();
 
         return false;
@@ -548,6 +564,8 @@ const Hero = () => {
                 label={
                   errorFileName === t("YouCanAttachUp")
                     ? t("YouCanAttachUp")
+                    : errorFileName === t("YouCanOnlyAttach")
+                    ? t("YouCanOnlyAttach")
                     : `${t("FileSizeExceeded")} ${errorFileName}`
                 }
                 color="#CB0000"
