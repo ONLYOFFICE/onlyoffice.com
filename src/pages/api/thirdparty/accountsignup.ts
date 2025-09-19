@@ -16,6 +16,17 @@ export default async function handler(
   try {
     const { transport, awsRegion } = req.body;
 
+    if (
+      !transport ||
+      typeof transport !== "string" ||
+      !awsRegion ||
+      typeof awsRegion !== "string"
+    ) {
+      return res
+        .status(400)
+        .json({ status: "error", message: "Invalid request parameters" });
+    }
+
     const findBySocialRes = await fetch(
       `${process.env.THIRDPARTY_DOMAIN}/multiregion/findbysocial`,
       {

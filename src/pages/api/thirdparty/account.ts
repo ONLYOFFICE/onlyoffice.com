@@ -15,10 +15,10 @@ export default async function handler(
   try {
     const { transport } = req.body;
 
-    if (!transport) {
+    if (!transport || typeof transport !== "string") {
       return res
         .status(400)
-        .json({ status: "error", message: "Missing transport" });
+        .json({ status: "error", message: "Invalid request parameters" });
     }
 
     const findBySocialRes = await fetch(

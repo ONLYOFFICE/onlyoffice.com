@@ -34,6 +34,17 @@ export default async function handler(
       hCaptchaResponse,
     } = req.body;
 
+    if (
+      typeof email !== "string" ||
+      !validateEmail(email) ||
+      !spam ||
+      typeof spam !== "string"
+    ) {
+      return res
+        .status(400)
+        .json({ status: "error", message: "Invalid request parameters" });
+    }
+
     const ip = getClientIp(req);
 
     if (!isTestEmail(email)) {
@@ -45,19 +56,6 @@ export default async function handler(
           error: hCaptchaResult.error,
         });
       }
-    }
-
-    if (typeof email !== "string" || !validateEmail(email)) {
-      return res.status(400).json({
-        status: "error",
-        message: "Missing or invalid 'email' field",
-      });
-    }
-
-    if (typeof spam !== "string") {
-      return res
-        .status(400)
-        .json({ status: "error", message: "Missing 'spam' field" });
     }
 
     const { data: generateKeyData } = await generateKey({ email });

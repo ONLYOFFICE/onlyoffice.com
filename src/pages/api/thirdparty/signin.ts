@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
+import { validateEmail } from "@src/utils/validators";
 import { createAuthToken } from "@src/utils/createAuthToken";
 
 export default async function handler(
@@ -14,6 +15,17 @@ export default async function handler(
 
   try {
     const { email, passwordHash } = req.body;
+
+    if (
+      typeof email !== "string" ||
+      !validateEmail(email) ||
+      !passwordHash ||
+      typeof passwordHash !== "string"
+    ) {
+      return res
+        .status(400)
+        .json({ status: "error", message: "Invalid request parameters" });
+    }
 
     const findByEmailRes = await fetch(
       `${process.env.THIRDPARTY_DOMAIN}/multiregion/findbyemail`,
