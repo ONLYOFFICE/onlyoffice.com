@@ -96,7 +96,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
     if (formData.hosting === "Cloud" && formData.cloudType === "Business") {
       setFormData((prev) => ({ ...prev, supportLevel: "Basic"}))
     }
-  }, [formData.cloudType, formData.hosting, formData.supportLevel])
+  }, [formData.cloudType, formData.hosting])
   
 
   const hostingIsCloud = formData.hosting === "Cloud";
