@@ -70,10 +70,12 @@ export default async function handler(
 
       return res.status(200).json({
         status: "success",
-        tenants: {
-          ...findByEmailData[0],
-          path: `${findByEmailData[0].path}&social=true`,
-        },
+        tenants: findByEmailData.map(
+          (tenant: { domain: string; path: string }) => ({
+            ...tenant,
+            path: `${tenant.path}&social=true`,
+          }),
+        ),
         query: `epkey=${generateKeyData.emailKey}1&eskey=${generateKeyData.linkKey}&transport=${transport}&awsRegion=${awsRegion}`,
       });
     } else {
