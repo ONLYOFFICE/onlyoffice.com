@@ -18,7 +18,7 @@ const Card = ({ customers }: ICustomers) => {
         <StyledCardList>
           {fixUrlData.map((item) => (
             <StyledCardItemWrapper key={item.id} $showMore={showMore}>
-              <StyledCardItem href={item.url} target="_blank">
+              <StyledCardItem href={item.url} target="_blank" textUnderline={false}>
                 <StyledCardImg $imgUrl={item.img?.[0]?.url} />
                 <StyledCardHeading label={item.title} level={4} size={5} />
               </StyledCardItem>

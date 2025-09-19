@@ -10,6 +10,7 @@ import { useRef, useState, useEffect } from "react";
 const EditorsTabs = ({ items, t, className }: IEditorsTabsProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [isFixed, setIsFixed] = useState(false);
+  const [selectId, setSelectId] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +29,13 @@ const EditorsTabs = ({ items, t, className }: IEditorsTabsProps) => {
         <StyledEditorsTabs>
           {items.map(({ id, url, label }, index) => (
             <StyledEditorsTab key={index}>
-              <StyledEditorsTabLink id={id} href={url} label={t(label)} />
+              <StyledEditorsTabLink
+                id={id}
+                href={url}
+                label={t(label)}
+                onClick={() => setSelectId(id)}
+                $isActive={selectId === id}
+              />
             </StyledEditorsTab>
           ))}
         </StyledEditorsTabs>

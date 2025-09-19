@@ -9,7 +9,7 @@ const StyledBlogCard = styled.div<{ $isLarge: IBlogCard["isLarge"] }>`
   max-width: ${(props) => (props.$isLarge ? "544px" : "352px")};
   height: 100%;
   box-shadow: 0px 7px 25px 0px rgba(85, 85, 85, 0.15);
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.3s;
 
   &:hover {
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);

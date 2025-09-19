@@ -36,7 +36,7 @@ const OptionsContainer = styled.div`
 const OptionCard = styled.div`
   background: #ffffff;
   border-radius: 5px;
-  box-shadow: 0px 7px 25px rgba(85, 85, 85, 0.15);
+  box-shadow: 0px 7px 25px 0px rgba(85, 85, 85, 0.15);
   flex-shrink: 0;
   display: grid;
   align-items: start;
@@ -49,7 +49,7 @@ const OptionCard = styled.div`
   transition: box-shadow 0.3s;
 
   &:hover {
-    box-shadow: 0px 14px 25px rgba(85, 85, 85, 0.25);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
   }
 
   @media ${device.tabletS} {

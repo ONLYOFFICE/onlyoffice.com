@@ -76,14 +76,18 @@ const StyledCarouselWrapper = styled.div`
 const FeatureCard = styled.div`
   background-color: #ffffff;
   border-radius: 4px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 7px 25px 0px rgba(85, 85, 85, 0.15);
+  transition: box-shadow 0.3s;
   padding: 40px 32px 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  //height: 390px;
   max-width: 352px;
   width: auto;
+
+  &:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+  }
 
   @media ${device.mobile} {
     margin: 0 auto;
@@ -110,7 +114,7 @@ const FeatureDescription = styled(Text)`
 
 const StyledSwiperSlide = styled(SwiperSlide)`
   display: flex;
-  height: auto; // важно, чтобы не было фиксированной высоты
+  height: auto; // it is important that there is no fixed height
 `;
 
 export {

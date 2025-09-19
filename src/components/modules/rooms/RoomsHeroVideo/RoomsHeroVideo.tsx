@@ -23,7 +23,7 @@ const RoomsHeroVideo = ({
 }: IRoomsHeroVideo) => {
   return (
     <StyledRoomsHeroVideo
-      desktopSpacing={["120px", "126px"]}
+      desktopSpacing={["143px", "126px"]}
       tabletSpacing={["120px", "80px"]}
       tabletSmallSpacing={["136px", "32px"]}
       mobileSpacing={["96px", "48px"]}

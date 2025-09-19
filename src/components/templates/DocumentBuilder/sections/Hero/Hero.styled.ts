@@ -32,7 +32,6 @@ const DocumentBuilderBlock = styled.div`
 
 const StyledDocumentBuilderHeading = styled(Heading)`
     font-size: 40px;
-    font-weight: 800;
     line-height: 1.33em;
 
     @media ${device.mobile} {

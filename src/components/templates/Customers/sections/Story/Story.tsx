@@ -14,14 +14,12 @@ const Story = () => {
         <Button as="a"
           href="mailto:press@onlyoffice.com?subject=I%20want%20to%20share%20my%20experience%20with%20ONLYOFFICE"
           label={t("HeroButtonTellYour")}
-          borderRadius="3px"
         />
         <Text as={"span"} label={t("HeroOr")} size={3} />
         <Button
           as="a"
           href="/registration?from=customers"
           label={t("StartYourStory")}
-          borderRadius="3px"
           variant="secondary"
         />
       </StyledStoryContainer>

@@ -77,7 +77,6 @@ const Trusted = () => {
           <StyledTrustedButton
             label={showMore ? t("TrustedButtonShowMore") : t("TrustedButtonShowLess")}
             variant="tertiary"
-            borderRadius="3px"
             onClick={() => setShowMore(!showMore)}
           />
         )}

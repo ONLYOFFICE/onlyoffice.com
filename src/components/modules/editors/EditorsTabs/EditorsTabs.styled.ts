@@ -15,7 +15,9 @@ const StyledEditorsTab = styled.li`
   position: relative;
 `;
 
-const StyledEditorsTabLink = styled(Link)`
+const StyledEditorsTabLink = styled(Link)<{
+  $isActive: boolean;
+}>`
   border-bottom: 1px solid transparent;
   font-size: 13px;
   font-weight: 600;
@@ -30,6 +32,12 @@ const StyledEditorsTabLink = styled(Link)`
   align-items: center;
   line-height: 20px;
   transition-duration: 0.2s;
+
+  ${(props) => props.$isActive &&
+    css`
+      border-bottom: 1px solid #ff6f3d;
+      color: #ff6f3d;
+    `}
 
   &:hover {
     border-bottom: 1px solid #ff6f3d;

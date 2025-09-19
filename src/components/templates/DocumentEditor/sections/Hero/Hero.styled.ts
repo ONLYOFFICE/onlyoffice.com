@@ -62,7 +62,7 @@ const StyledHeroInput = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 702px;
-  padding: 32px 96px;
+  padding: 32px;
   width: 100%;
 
   .input-wrapper {
