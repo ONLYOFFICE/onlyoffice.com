@@ -102,6 +102,7 @@
   "Standard": "初级",
   "Plus": "中级",
   "Premium": "高级",
+  "NumberOfRequestsIncluded": "包含的请求数量",
   "FirstResponseTime": "首次响应时间",
   "48DuringWorkingHours": "在48工作小时内",
   "24DuringWorkingHours": "在24工作小时内",

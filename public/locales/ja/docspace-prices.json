@@ -102,6 +102,7 @@
   "Standard": "Standard",
   "Plus": "プラス",
   "Premium": "プレミアム",
+  "NumberOfRequestsIncluded": "含まれるリクエスト数",
   "FirstResponseTime": "最初の応答期間",
   "48DuringWorkingHours": "勤務時間中 48時間",
   "24DuringWorkingHours": "勤務時間中 24時間",

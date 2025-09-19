@@ -87,6 +87,8 @@ const EnterpriseModal = ({
       more: { price: null, url: "" },
     }[formData.usersNumber] || "";
 
+    const isUsers500Users1000 = formData.usersNumber === "500" || formData.usersNumber === "1000";
+
   const onSubmitRequest = async ({
     from,
     country,
@@ -263,8 +265,8 @@ const EnterpriseModal = ({
             <StyledEnterpriseModalTotal>
               <Heading level={4} label={t("Total")} />
 
-              <Heading level={5} size={isUponRequest ? 4 : 2} color="main">
-                {isUponRequest ? (
+              <Heading level={5} size={isUponRequest || isUsers500Users1000 ? 4 : 2} color="main">
+                {isUponRequest || isUsers500Users1000 ? (
                   t("UponRequest")
                 ) : (
                   <>
@@ -281,7 +283,7 @@ const EnterpriseModal = ({
           </StyledEnterpriseModalItems>
 
           <StyledEnterpriseModalBtns>
-            {isUponRequest ? (
+            {isUponRequest || isUsers500Users1000 ? (
               <StyledEnterpriseModalBtn
                 onClick={() => setIsModalOpen(true)}
                 data-testid="enterprise-modal-get-a-quote-button"

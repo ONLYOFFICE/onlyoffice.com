@@ -19,6 +19,10 @@ export const supportLevels: ISupportLevels = {
   head: [{}, { name: "Standard" }, { name: "Plus" }, { name: "Premium" }],
   body: [
     {
+      heading: [{ name: "NumberOfRequestsIncluded" }],
+      values: [{ name: "5" }, { name: "10" }, { name: "20" }],
+    },
+    {
       heading: [{ name: "FirstResponseTime" }],
       values: [
         { name: "48DuringWorkingHours" },
