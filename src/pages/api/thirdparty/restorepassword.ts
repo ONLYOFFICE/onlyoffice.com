@@ -23,7 +23,7 @@ export default async function handler(
     if (typeof email !== "string" || !validateEmail(email)) {
       return res.status(400).json({
         status: "error",
-        message: "Missing or invalid 'email' field",
+        message: "Invalid request parameters",
       });
     }
 
