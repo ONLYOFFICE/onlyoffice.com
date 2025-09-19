@@ -111,8 +111,6 @@ const Hero = () => {
     hcaptcha: null,
   });
 
-  console.log(formData);
-
   const os = useClientOS();
 
   const handleSubjectChoose = (option: string, value: string) => {
