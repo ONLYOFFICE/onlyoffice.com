@@ -13,7 +13,7 @@ export default async function handler(
   }
 
   try {
-    const { email, password } = req.body;
+    const { email, passwordHash } = req.body;
 
     const findByEmailRes = await fetch(
       `${process.env.THIRDPARTY_DOMAIN}/multiregion/findbyemail`,
@@ -43,7 +43,7 @@ export default async function handler(
           "Content-Type": "application/json",
           Authorization: createAuthToken("site", process.env.CORE_MACHINEKEY!),
         },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, passwordHash }),
       },
     );
 

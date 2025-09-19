@@ -19,6 +19,7 @@ import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { Button } from "@src/components/ui/Button";
 import { validateEmail } from "@src/utils/validators";
+import { createPasswordHash } from "@src/utils/createPasswordHash";
 import { PasswordInput } from "@src/components/widgets/PasswordInput";
 import { usePageTrack } from "@src/lib/hooks/useGA";
 
@@ -73,10 +74,19 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
     setIsFormLoading(true);
 
     try {
+      const passwordHash = createPasswordHash(formData.password, {
+        size: 256,
+        iterations: 100000,
+        salt: process.env.NEXT_PUBLIC_PASSWORDHASH_SALT!,
+      });
+
       const res = await fetch("/api/thirdparty/signin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          email: formData.email,
+          passwordHash,
+        }),
       });
 
       const result = await res.json();
