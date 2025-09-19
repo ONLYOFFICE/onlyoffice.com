@@ -4,7 +4,7 @@
 
   "FreeOnlineOfficeForDropbox": "Bureau en ligne gratuit pour <0>Dropbox</0>",
   "EditOfficeFilesRightInDropbox": "Modifiez vos fichiers bureautiques directement dans Dropbox en utilisant l'ensemble des fonctionnalités d'ONLYOFFICE Docs",
-  "GetFreeApp": "OBTENIR APPLICATION GRATUITE",
+  "GetFreeApp": "Obtenir application gratuite",
   "HeroImgUrl": "/images/templates/office-for-dropbox/hero/dropbox_header.png",
   "HeroImgUrl2x": "/images/templates/office-for-dropbox/hero/dropbox_header@2x.png",
 
@@ -33,7 +33,7 @@
   "FeaturesHighestCompatibility": "<0>Compatibilité maximale</0> avec les formats docx, xlsx et pptx",
   "FeaturesOpenSourceCode": "Filigrane, protection par mot de passe, <0>code source ouvert</0>",
   "FeaturesFreeApp": "<0>Application gratuite</0>, sans installation ni enregistrement",
-  "GetStarted": "COMMENCER",
+  "GetStarted": "Commencer",
 
   "HowToStart": "Comment commencer",
   "HowToStartStep1": "Connectez-vous à votre compte Dropbox.",
