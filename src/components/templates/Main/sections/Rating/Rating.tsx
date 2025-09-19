@@ -50,6 +50,7 @@ const Rating = () => {
                     height: item.image.height,
                   }}
                   value={item.value}
+                  maxValue={item.maxValue}
                 />
               </li>
             ))}

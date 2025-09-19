@@ -133,6 +133,16 @@ const StyledRatingStars = styled.ul`
       }
     }
 
+    &:nth-child(8) {
+      @media ${device.tablet} {
+        order: 8;
+      }
+
+      @media ${device.tabletS} {
+        order: initial;
+      }
+    }
+
     @media ${device.mobile} {
       padding: 23px 0 24px;
     }

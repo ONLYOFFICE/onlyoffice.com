@@ -9,7 +9,7 @@ export const starsRatingItems: IStarsRatingLogo[] = [
       width: 150,
       height: 22,
     },
-    value: 4.5,
+    value: 4.7,
   },
   {
     url: "https://www.getapp.com/operations-management-software/a/onlyoffice/",
@@ -70,5 +70,16 @@ export const starsRatingItems: IStarsRatingLogo[] = [
       height: 22,
     },
     value: 4.4,
+  },
+  {
+    url: "https://tekpon.com/software/onlyoffice-docspace/reviews/#reviews",
+    image: {
+      url: "/images/templates/main/rating/stars-rating/tekpon.svg",
+      alt: "Tekpon",
+      width: 150,
+      height: 24,
+    },
+    value: 9,
+    maxValue: 10,
   },
 ];
