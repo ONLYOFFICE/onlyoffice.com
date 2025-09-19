@@ -206,7 +206,8 @@ pipeline {
                         string(credentialsId: 'onlyoffice_site_test_core_io2_mysql_url', variable: 'onlyoffice_site_test_core_io2_mysql_url'),
                         string(credentialsId: 'onlyoffice_site_test_teamlabsite_mysql_url', variable: 'onlyoffice_site_test_teamlabsite_mysql_url'),
                         string(credentialsId: 'onlyoffice_site_test_personal_mysql_url', variable: 'onlyoffice_site_test_personal_mysql_url'),
-                        string(credentialsId: 'onlyoffice_site_test_captcha_secret_emails', variable: 'onlyoffice_site_test_captcha_secret_emails'),                        
+                        string(credentialsId: 'onlyoffice_site_test_captcha_secret_emails', variable: 'onlyoffice_site_test_captcha_secret_emails'),
+                        string(credentialsId: 'onlyoffice_site_test_next_public_passwordhash_salt', variable: 'onlyoffice_site_test_next_public_passwordhash_salt'),                      
                         string(credentialsId: 'onlyoffice_site_prod_hcaptcha_site_key', variable: 'onlyoffice_site_prod_hcaptcha_site_key'),
                         string(credentialsId: 'onlyoffice_site_prod_hcaptcha_secret_key', variable: 'onlyoffice_site_prod_hcaptcha_secret_key'),
                         string(credentialsId: 'onlyoffice_site_prod_billing_secret', variable: 'onlyoffice_site_prod_billing_secret'),
@@ -224,7 +225,8 @@ pipeline {
                         string(credentialsId: 'onlyoffice_site_prod_core_com2_mysql_url', variable: 'onlyoffice_site_prod_core_com2_mysql_url'),
                         string(credentialsId: 'onlyoffice_site_prod_core_teamlabsite_mysql_url', variable: 'onlyoffice_site_prod_core_teamlabsite_mysql_url'),
                         string(credentialsId: 'onlyoffice_site_prod_core_personal_mysql_url', variable: 'onlyoffice_site_prod_core_personal_mysql_url'),
-                        string(credentialsId: 'onlyoffice_site_prod_captcha_secret_emails', variable: 'onlyoffice_site_prod_captcha_secret_emails')]) {          
+                        string(credentialsId: 'onlyoffice_site_prod_captcha_secret_emails', variable: 'onlyoffice_site_prod_captcha_secret_emails'),
+                        string(credentialsId: 'onlyoffice_site_prod_next_public_passwordhash_salt', variable: 'onlyoffice_site_prod_next_public_passwordhash_salt')]) {          
         sh '''
 
           export AWS_ACCESS_KEY_ID="$cmsoforms_user"
@@ -311,7 +313,8 @@ pipeline {
             sed -i "s^var_personal_mysql_url^$onlyoffice_site_test_personal_mysql_url^" .env
 
             sed -i "s^var_captcha_secret_emails^$onlyoffice_site_test_captcha_secret_emails^" .env
-
+            sed -i "s^var_next_public_passwordhash_salt^$onlyoffice_site_test_next_public_passwordhash_salt^" .env
+            
             cp .jenkins/robots.txt ./
 
           fi
@@ -343,6 +346,7 @@ pipeline {
             sed -i "s^var_personal_mysql_url^$onlyoffice_site_prod_core_personal_mysql_url^" .env
 
             sed -i "s^var_captcha_secret_emails^$onlyoffice_site_prod_captcha_secret_emails^" .env
+            sed -i "s^var_next_public_passwordhash_salt^$onlyoffice_site_prod_next_public_passwordhash_salt^" .env
 
           fi
           
