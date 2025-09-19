@@ -159,7 +159,7 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
 
     window.SigninBySocial = async (data) => {
       try {
-        const res = await fetch("/api/auth/social", {
+        const res = await fetch("/api/thirdparty/account", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ transport: data }),
