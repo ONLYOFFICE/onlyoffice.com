@@ -19,6 +19,7 @@ import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { Button } from "@src/components/ui/Button";
 import { validateEmail } from "@src/utils/validators";
+import { createPasswordHash } from "@src/utils/createPasswordHash";
 import { PasswordInput } from "@src/components/widgets/PasswordInput";
 import { usePageTrack } from "@src/lib/hooks/useGA";
 
@@ -72,48 +73,46 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
     setIsFormValid(false);
     setIsFormLoading(true);
 
-    const findByEmailRes = await fetch("/api/thirdparty/findbyemail", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: formData.email }),
-    });
-    const findByEmailData = await findByEmailRes.json();
+    try {
+      const passwordHash = createPasswordHash(formData.password, {
+        size: 256,
+        iterations: 100000,
+        salt: process.env.NEXT_PUBLIC_PASSWORDHASH_SALT!,
+      });
 
-    if (findByEmailData.data?.length === 0) {
-      setIsError({ email: true, password: true });
-    } else {
-      const findByEmailPasswordRes = await fetch(
-        "/api/thirdparty/findbyemailpassword",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: formData.email,
-            password: formData.password,
-          }),
-        },
-      );
-      const findByEmailPasswordData = await findByEmailPasswordRes.json();
+      const res = await fetch("/api/thirdparty/signin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: formData.email,
+          passwordHash,
+        }),
+      });
 
-      if (
-        findByEmailPasswordData.status === "error" ||
-        findByEmailPasswordData.data?.length === 0
-      ) {
+      const result = await res.json();
+
+      if (result.status === "error") {
         setIsError({ email: true, password: true });
         setIsFormLoading(false);
         return;
-      } else if (findByEmailPasswordData.data?.length === 1) {
-        pageTrack("singin");
-        window.location.href = `${findByEmailPasswordData.data[0].domain}${findByEmailPasswordData.data[0].path}`;
+      }
 
+      if (result.redirect) {
+        pageTrack("singin");
+        window.location.href = result.redirect;
         return;
       }
 
-      pageTrack("singin");
-      setExistTenants(findByEmailPasswordData.data);
+      if (result.tenants) {
+        pageTrack("signin");
+        setExistTenants(result.tenants);
+      }
+    } catch (err) {
+      console.error("Unexpected login error:", err);
+      setIsLoginError(true);
+    } finally {
+      setIsFormLoading(false);
     }
-
-    setIsFormLoading(false);
   };
 
   const checkSignInCode = () => {
@@ -170,29 +169,21 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
 
     window.SigninBySocial = async (data) => {
       try {
-        const findBySocialRes = await fetch("/api/thirdparty/findbysocial", {
+        const res = await fetch("/api/thirdparty/account", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ transport: data }),
         });
-        const findBySocialData = await findBySocialRes.json();
 
-        if (findBySocialData.data.email) {
-          const findByEmailRes = await fetch("/api/thirdparty/findbyemail", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email: findBySocialData.data.email }),
-          });
-          const findByEmailData = await findByEmailRes.json();
-          redirectOrSetTenants(findByEmailData.data);
+        const result = await res.json();
+
+        if (result.status === "success") {
+          redirectOrSetTenants(result.tenants);
         } else {
-          redirectOrSetTenants(findBySocialData.data.tenants);
+          setIsLoginError(true);
         }
       } catch (err) {
-        console.error(
-          "Unexpected error:",
-          err instanceof Error ? err.message : err,
-        );
+        console.error("Unexpected error:", err);
         setIsLoginError(true);
       }
     };

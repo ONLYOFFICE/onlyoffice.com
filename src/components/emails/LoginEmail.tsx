@@ -1,3 +1,5 @@
+import { getServerI18n } from "@src/lib/helpers/getServerI18n";
+
 interface ILoginEmail {
   baseUrl: string;
   queryParams: string;
@@ -5,142 +7,15 @@ interface ILoginEmail {
   language: string;
 }
 
-const emailsTranslations: Record<
-  string,
-  Record<string, string | ((params: Record<string, string>) => string)>
-> = {
-  en: {
-    YourLoginLink: `Your login link to <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Hello!",
-    ClickTheButtonBelowToLoginToYourDocSpace:
-      "Click the button below to login to your DocSpace.",
-    LogInToDocSpace: "Log in to DocSpace",
-    TheLoginLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `The login link remains active for 60 minutes <br /> and is valid for a single use only.`,
-    TrulyYoursONLYOFFICETeam: `Truly Yours, ONLYOFFICE Team`,
-    ForAnyPurchaseQuestionsEmailUsAt: `For any purchase questions, email us at <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `In case of technical problems please contact our <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">support team</a>.`,
-    ClickHereToUnsubscribe: `Click here to unsubscribe`,
-  },
-  de: {
-    YourLoginLink: `Ihr Login-Link zu <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Hallo!",
-    ClickTheButtonBelowToLoginToYourDocSpace:
-      "Klicken Sie auf die Schaltfläche unten, um sich bei Ihrem DocSpace anzumelden.",
-    LogInToDocSpace: "Bei DocSpace anmelden",
-    TheLoginLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `Der Login-Link bleibt 60 Minuten lang aktiv <br>und kann nur einmal verwendet werden.`,
-    TrulyYoursONLYOFFICETeam: `Mit freundlichen Grüßen, ONLYOFFICE Team`,
-    ForAnyPurchaseQuestionsEmailUsAt: `Bei Fragen zum Kauf kontaktieren Sie uns bitte per E-Mail an <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `Bei technischen Problemen wenden Sie sich bitte an unser <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">Support-Team</a>.`,
-    ClickHereToUnsubscribe: `Hier klicken, um sich abzumelden`,
-  },
-  es: {
-    YourLoginLink: `Su enlace de acceso a <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "¡Hola!",
-    ClickTheButtonBelowToLoginToYourDocSpace:
-      "Haga clic en el botón de abajo para iniciar sesión en su DocSpace.",
-    LogInToDocSpace: "Iniciar sesión en DocSpace",
-    TheLoginLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `El enlace de inicio de sesión permanece activo durante 60 minutos <br>y es válido para un solo uso.`,
-    TrulyYoursONLYOFFICETeam: `Atentamente, Equipo de ONLYOFFICE`,
-    ForAnyPurchaseQuestionsEmailUsAt: `Para cualquier pregunta sobre la compra, envíenos un correo electrónico a <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `Si tiene problemas técnicos, póngase en contacto con nuestro <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">equipo de soporte</a>.`,
-    ClickHereToUnsubscribe: `Haga clic aquí para cancelar su suscripción`,
-  },
-  fr: {
-    YourLoginLink: `Votre lien de connexion à <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Bonjour !",
-    ClickTheButtonBelowToLoginToYourDocSpace:
-      "Cliquez sur le bouton ci-dessous pour vous connecter à votre DocSpace.",
-    LogInToDocSpace: "Connectez-vous à DocSpace",
-    TheLoginLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `Le lien de connexion reste actif pendant 60 minutes <br>et n'est valable que pour une seule utilisation.`,
-    TrulyYoursONLYOFFICETeam: `Bien à vous, équipe de ONLYOFFICE`,
-    ForAnyPurchaseQuestionsEmailUsAt: `Pour toute question relative à l'achat,contactez-nous à <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `En cas de problèmes techniques, veuillez contacter notre <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">équipe d'assistance</a>.`,
-    ClickHereToUnsubscribe: `Cliquez ici pour vous désabonner`,
-  },
-  it: {
-    YourLoginLink: `Il tuo link di accesso a <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Ciao!",
-    ClickTheButtonBelowToLoginToYourDocSpace:
-      "Fai clic sul pulsante qui sotto per accedere al tuo DocSpace.",
-    LogInToDocSpace: "Accedi a DocSpace",
-    TheLoginLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `Il link di accesso rimane attivo per 60 minuti <br>ed è valido per un solo utilizzo.`,
-    TrulyYoursONLYOFFICETeam: `Cordiali saluti, il team di ONLYOFFICE`,
-    ForAnyPurchaseQuestionsEmailUsAt: `Per domande relative agli acquisti, scrivici a <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `In caso di problemi tecnici, contatta il nostro <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">team di supporto</a>.`,
-    ClickHereToUnsubscribe: `Clicca qui per annullare l'iscrizione`,
-  },
-  ja: {
-    YourLoginLink: `<span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpaceへのログインリンク`,
-    Hello: "こんにちは！",
-    ClickTheButtonBelowToLoginToYourDocSpace:
-      "下のボタンをクリックして、DocSpace にログインしてください。",
-    LogInToDocSpace: "DocSpaceにログイン",
-    TheLoginLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `確認リンクは60分間有効で、 <br>1 回のみ使用可能です。`,
-    TrulyYoursONLYOFFICETeam: `ONLYOFFICE チーム`,
-    ForAnyPurchaseQuestionsEmailUsAt: `ご購入に関するご質問は、<a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>までメールでお問い合わせください。`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `技術的な問題が発生した場合は、<a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">サポートチーム</a>までご連絡ください。`,
-    ClickHereToUnsubscribe: `購読を解除するにはここをクリック`,
-  },
-  pt: {
-    YourLoginLink: `Seu link de login para o <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Olá!",
-    ClickTheButtonBelowToLoginToYourDocSpace:
-      "Clique no botão abaixo para acessar seu DocSpace.",
-    LogInToDocSpace: "Acesse o DocSpace",
-    TheLoginLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `O link de login permanece ativo por 60 minutos <br>e é válido apenas para um único uso.`,
-    TrulyYoursONLYOFFICETeam: `Atenciosamente, Equipe ONLYOFFICE`,
-    ForAnyPurchaseQuestionsEmailUsAt: `Para qualquer dúvida sobre compras, envie um e-mail para <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `Em caso de problemas técnicos, entre em contato com nossa <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">support team</a>.`,
-    ClickHereToUnsubscribe: `Clique aqui para cancelar a assinatura`,
-  },
-  ru: {
-    YourLoginLink: `Ваша ссылка для входа в <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Здравствуйте!",
-    ClickTheButtonBelowToLoginToYourDocSpace:
-      "Нажмите на кнопку ниже, чтобы войти в DocSpace.",
-    LogInToDocSpace: "Войти в DocSpace",
-    TheLoginLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `Ссылка для входа будет активна в течение 60 минут <br>и может быть использована однократно.`,
-    TrulyYoursONLYOFFICETeam: `С уважением, команда ONLYOFFICE`,
-    ForAnyPurchaseQuestionsEmailUsAt: `По вопросам покупки свяжитесь с нами по адресу <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `Для решения технических проблем свяжитесь с нашей <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">службой поддержки</a>.`,
-    ClickHereToUnsubscribe: `Если вы хотите отписаться, нажмите на следующую ссылку`,
-  },
-  zh: {
-    YourLoginLink: `您的 <span style="color: #FF6F3D;">ONLYOFFICE</span> 协作空间登录链接`,
-    Hello: "您好！",
-    ClickTheButtonBelowToLoginToYourDocSpace: "点击下方按钮登录您的协作空间。",
-    LogInToDocSpace: "登录协作空间",
-    TheLoginLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `此登录链接有效期为 60 分钟，<br>且仅限一次性使用。`,
-    TrulyYoursONLYOFFICETeam: `ONLYOFFICE 团队`,
-    ForAnyPurchaseQuestionsEmailUsAt: `如有任何购买问题，请发送电子邮件至 <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>。`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `如有任何技术问题，请联系我们的<a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">支持团队</a。`,
-    ClickHereToUnsubscribe: `点击此处取消订阅`,
-  },
-  sr: {
-    YourLoginLink: `Vaš link za prijavu na <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Zdravo!",
-    ClickTheButtonBelowToLoginToYourDocSpace:
-      "Kliknite na dugme ispod da se prijavite u svoj DocSpace.",
-    LogInToDocSpace: "Prijavite se u DocSpace",
-    TheLoginLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `Link za prijavu ostaje aktivan 60 minuta <br>i važi samo za jedno korišćenje.`,
-    TrulyYoursONLYOFFICETeam: `Srdačno, ONLYOFFICE tim`,
-    ForAnyPurchaseQuestionsEmailUsAt: `Za pitanja u vezi sa kupovinom, pišite nam na: <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `U slučaju tehničkih problema, kontaktirajte naš <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">tim za podršku</a>.`,
-    ClickHereToUnsubscribe: `Kliknite ovde da se odjavite`,
-  },
-};
-
-const LoginEmail = ({
+const LoginEmail = async ({
   baseUrl,
   queryParams,
   unsubscribeId,
   language,
 }: ILoginEmail) => {
-  const t = (key: string, params?: Record<string, string>): string => {
-    const langObj = emailsTranslations[language] || emailsTranslations.en;
-    const val = langObj[key];
-    return typeof val === "function" ? val(params || {}) : val || key;
-  };
+  const i18n = await getServerI18n(language, ["docspace-regisration"]);
+  const t = i18n.t.bind(i18n);
+
   return `
     <body
       background="#ffffff"
@@ -171,7 +46,7 @@ const LoginEmail = ({
                         >
                           <div style="text-align: left; height: 44px; width: 570px; margin: 0; padding: 0; padding-top: 20px; box-sizing: content-box;">
                             <a
-                              href="https://www.onlyoffice.com/${language !== 'en' ? language : ''}"
+                              href="https://www.onlyoffice.com/${language !== "en" ? language : ""}"
                               style="text-decoration: none; display: inline-block; width: 386px; height: 44px; margin: 0; padding: 0;"
                               target="_blank"
                             >
@@ -255,7 +130,7 @@ const LoginEmail = ({
                             ${t("TrulyYoursONLYOFFICETeam")} <br />
                             <a
                               rel="noopener noreferrer"
-                              href="https://www.onlyoffice.com/${language !== 'en' ? language : ''}"
+                              href="https://www.onlyoffice.com/${language !== "en" ? language : ""}"
                               style="color: #FF6F3D;text-decoration: none;"
                               target="_blank"
                             >
@@ -512,7 +387,7 @@ const LoginEmail = ({
                              </td>
                            </tr>
                               `
-                             }
+                            }
                             </tbody>
                           </table>
                         </td>

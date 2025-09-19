@@ -1,3 +1,5 @@
+import { getServerI18n } from "@src/lib/helpers/getServerI18n";
+
 interface IPasswordReminder {
   portals: {
     domain: string;
@@ -6,189 +8,10 @@ interface IPasswordReminder {
   language: string;
 }
 
-const emailsTranslations: Record<
-  string,
-  Record<string, string | ((params: Record<string, string>) => string)>
-> = {
-  en: {
-    PortalAddress: "Portal address:",
-    ToChangeYourPasswordPleaseFollow: "To change your password please follow",
-    ThisLink: "this link",
-    PasswordReminder: "Password Reminder",
-    YouHaveRequestedAPasswordReminder: `You have requested a password reminder for your portal at ONLYOFFICE.`,
-    HereAreYourLoginDetails: `Here are your log in details:`,
-    NeedTechHelp: `Need tech help?`,
-    SalesQuestions: `Sales Questions`,
-    OrderDemo: `Order Demo`,
-    SendYourQuestion: "Send your question",
-    EmailUs: "Email us",
-    SendARequest: "Send a request",
-    AllRightsReserved: "All rights reserved",
-  },
-  de: {
-    PortalAddress: "Portaladresse:",
-    ToChangeYourPasswordPleaseFollow:
-      "Um Ihr Kennwort zu ändern, folgen Sie bitte",
-    ThisLink: "diesem Link",
-    PasswordReminder: "Kennworterinnerung",
-    YouHaveRequestedAPasswordReminder: `Sie haben eine Kennworterinnerung für Ihr Firmenportal auf ONLYOFFICE angefordert.`,
-    HereAreYourLoginDetails: `Ihre Zugangsdaten sind:`,
-    NeedTechHelp: `Brauchen Tech-Hilfe?`,
-    SalesQuestions: `Verkaufsfragen`,
-    OrderDemo: `Demo Bestellen`,
-    SendYourQuestion: "Ihre Frage senden",
-    EmailUs: "Emailen Sie uns",
-    SendARequest: "Eine Anfrage senden",
-    AllRightsReserved: "Alle Rechte vorbehalten",
-  },
-  es: {
-    PortalAddress: "Dirección de portal:",
-    ToChangeYourPasswordPleaseFollow: "Para cambiar su contraseña siga",
-    ThisLink: "este enlace",
-    PasswordReminder: "Recordatorio de contraseña",
-    YouHaveRequestedAPasswordReminder: `Usted ha solicitado un recordatorio de contraseña de acceso a su portal corporativo en ONLYOFFICE.`,
-    HereAreYourLoginDetails: `Sus datos de acceso se encuentran a continuación:`,
-    NeedTechHelp: `¿Necesita soporte?`,
-    SalesQuestions: `Preguntas de Venta`,
-    OrderDemo: `Solicitar Demo`,
-    SendYourQuestion: "Enviar su Pregunta",
-    EmailUs: "Enviar un Email",
-    SendARequest: "Enviar Solicitud",
-    AllRightsReserved: "Todos los derechos reservados",
-  },
-  fr: {
-    PortalAddress: "Adresse du portail:",
-    ToChangeYourPasswordPleaseFollow:
-      "Pour changer votre mot de passe s'il vous plaît, suivez",
-    ThisLink: "ce lien",
-    PasswordReminder: "Rappel de mot de passe",
-    YouHaveRequestedAPasswordReminder: `Vous avez demandé un rappel de mot de passe pour votre portail d'entreprise à ONLYOFFICE.`,
-    HereAreYourLoginDetails: `Voici vos détails de connexion:`,
-    NeedTechHelp: `Besoin d'aide<br/> technique ?`,
-    SalesQuestions: `Questions sur les ventes`,
-    OrderDemo: `Commandez une démo`,
-    SendYourQuestion: "Envoyez votre question",
-    EmailUs: "Écrivez-nous",
-    SendARequest: "Envoyez une demande",
-    AllRightsReserved: "Tous droits réservés",
-  },
-  it: {
-    PortalAddress: "Indirizzo del portale:",
-    ToChangeYourPasswordPleaseFollow:
-      "Per cambiare la password per favore segui",
-    ThisLink: "questo link",
-    PasswordReminder: "Recupera la Password",
-    YouHaveRequestedAPasswordReminder: `Hai richiesto di recuperare la password per il tuo portale a ONLYOFFICE.`,
-    HereAreYourLoginDetails: `Ecco qui i dettagli per il log in:`,
-    NeedTechHelp: `Hai bisogno di aiuto?`,
-    SalesQuestions: `Domande di vendita`,
-    OrderDemo: `Ordina la demo`,
-    SendYourQuestion: "Invia la tua domanda",
-    EmailUs: "Mandaci una Email",
-    SendARequest: "Invia una richiesta",
-    AllRightsReserved: "Tutti i diritti riservati",
-  },
-  ja: {
-    PortalAddress: "ポータルのアドレス:",
-    ToChangeYourPasswordPleaseFollow: "パスワードを変更するには、",
-    ThisLink: "このリンク",
-    PWDAfter: "を参照してください",
-    PasswordReminder: "パスワード リマインダー",
-    YouHaveRequestedAPasswordReminder: `ONLYOFFICE ポータルにパスワード リマインダーをリクエストしました。`,
-    HereAreYourLoginDetails: `これが、ログインの詳細です。`,
-    NeedTechHelp: `ヘルプが必要ですか？`,
-    SalesQuestions: `購入に関する質問`,
-    OrderDemo: `デモ ポータルを注文`,
-    SendYourQuestion: "質問を送信",
-    EmailUs: "メール",
-    SendARequest: "リクエストを送信",
-    AllRightsReserved: "All rights reserved",
-  },
-  nl: {
-    PortalAddress: "Portaaladres:",
-    ToChangeYourPasswordPleaseFollow: "Om uw wachtwoord te wijzigen volgt u",
-    ThisLink: "deze link",
-    PasswordReminder: "Wachtwoordherinnering",
-    YouHaveRequestedAPasswordReminder: `U heeft bij ONLYOFFICE een wachtwoordherinnering voor uw portaal aangevraagd.`,
-    HereAreYourLoginDetails: `Hier zijn uw inloggegevens:`,
-    NeedTechHelp: `Technische hulp nodig?`,
-    SalesQuestions: `Vragen over verkoop`,
-    OrderDemo: `Bestel demo`,
-    SendYourQuestion: "Stuur ons uw vraag!",
-    EmailUs: "E-mail ons",
-    SendARequest: "Stuur een aanvraag",
-    AllRightsReserved: "Alle rechten voorbehouden",
-  },
-  pt: {
-    PortalAddress: "Endereço do portal:",
-    ToChangeYourPasswordPleaseFollow: "Para alterar a sua senha, clique",
-    ThisLink: "neste link",
-    PasswordReminder: "Lembrete de senha",
-    YouHaveRequestedAPasswordReminder: `Você solicitou um lembrete de senha para o seu portal no ONLYOFFICE.`,
-    HereAreYourLoginDetails: `Aqui estão as suas informações de login:`,
-    NeedTechHelp: `Precisa de ajuda<br/> técnica?`,
-    SalesQuestions: `Perguntas sobre vendas`,
-    OrderDemo: `Solicitar<br/> demonstração`,
-    SendYourQuestion: "Envie a sua pergunta",
-    EmailUs: "Envie-nos um e-mail",
-    SendARequest: "Envie uma solicitação",
-    AllRightsReserved: "Todos os direitos reservados",
-  },
-  ru: {
-    PortalAddress: "Адрес портала:",
-    ToChangeYourPasswordPleaseFollow:
-      "Для того, чтобы сменить пароль, перейдите по",
-    ThisLink: "этой ссылке",
-    PasswordReminder: "Восстановление пароля",
-    YouHaveRequestedAPasswordReminder: `Вами был отправлен запрос на восстановление пароля для Вашего портала ONLYOFFICE.`,
-    HereAreYourLoginDetails: `Параметры, необходимые для входа на портал, Вы можете найти ниже:`,
-    NeedTechHelp: `Нужна помощь?`,
-    SalesQuestions: `Вопросы по покупке`,
-    OrderDemo: `Заказ демонстрации`,
-    SendYourQuestion: "Задайте вопрос",
-    EmailUs: "Напишите нам",
-    SendARequest: "Отправьте запрос",
-    AllRightsReserved: "Все права защищены",
-  },
-  cs: {
-    PortalAddress: "Adresa portálu:",
-    ToChangeYourPasswordPleaseFollow: "Pro změnu hesla prosím následujte",
-    ThisLink: "tento odkaz",
-    PasswordReminder: "Připomenutí hesla",
-    YouHaveRequestedAPasswordReminder: `Zažádali jste o připomenutí hesla pro váš portál na ONLYOFFICE.`,
-    HereAreYourLoginDetails: `Zde je váš detailní záznam:`,
-    NeedTechHelp: `Potřebujete technickou podporu?`,
-    SalesQuestions: `Prodejní otázky`,
-    OrderDemo: `Demo objednávky`,
-    SendYourQuestion: "Odeslat váš dotaz",
-    EmailUs: "Napište nám",
-    SendARequest: "Odeslat požadavek",
-    AllRightsReserved: "Všechna práva vyhrazena",
-  },
-  zh: {
-    PortalAddress: "门户地址:",
-    ToChangeYourPasswordPleaseFollow: "请点击",
-    ThisLink: "该链接",
-    PWDAfter: "更改密码",
-    PasswordReminder: "密码提醒",
-    YouHaveRequestedAPasswordReminder: `您已在ONLYOFFICE上申请门户密码提醒。`,
-    HereAreYourLoginDetails: `这是您的登录信息：`,
-    NeedTechHelp: `需要技术帮助？`,
-    SalesQuestions: `销售问题`,
-    OrderDemo: `预订演示`,
-    SendYourQuestion: "发送问题",
-    EmailUs: "给我们发邮件",
-    SendARequest: "发送请求",
-    AllRightsReserved: "保留所有权利",
-  },
-};
+const PasswordReminder = async ({ portals, language }: IPasswordReminder) => {
+  const i18n = await getServerI18n(language, ["docspace-regisration"]);
+  const t = i18n.t.bind(i18n);
 
-const PasswordReminder = ({ portals, language }: IPasswordReminder) => {
-  const t = (key: string, params?: Record<string, string>): string => {
-    const langObj = emailsTranslations[language] || emailsTranslations.en;
-    const val = langObj[key];
-    return typeof val === "function" ? val(params || {}) : val || key;
-  };
   const portalsHtml = portals
     .map(
       ({ domain, path }) => `
@@ -538,7 +361,7 @@ const PasswordReminder = ({ portals, language }: IPasswordReminder) => {
                    </td>
                  </tr>
                     `
-                   }
+                  }
                   </tbody>
                 </table>
               </td>
