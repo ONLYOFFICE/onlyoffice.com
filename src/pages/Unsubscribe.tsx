@@ -76,7 +76,7 @@ export async function getServerSideProps({
 
   if (email) {
     await subscription({
-      email,
+      id: query.id || "",
       subscribe: false,
       newsOnly: false,
     });

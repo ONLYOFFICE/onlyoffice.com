@@ -221,7 +221,7 @@ const CookieBanner = () => {
       if (timeout) clearTimeout(timeout);
       timeout = setTimeout(() => {
         updateCookieFabPosition();
-      }, 500);
+      }, 1000);
     };
 
     const observeIframe = () => {

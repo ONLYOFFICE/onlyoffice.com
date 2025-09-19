@@ -56,7 +56,7 @@ const UnsubscribeTemplate = ({ email }: IUnsubscribeTemplate) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        email,
+        id: router.query.id,
         subscribe,
         newsOnly,
       }),
