@@ -7,11 +7,11 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  if (!(await checkRateLimit(req, res))) return;
-
   if (req.method !== "POST") {
     return res.status(405).end("Method Not Allowed");
   }
+
+  if (!(await checkRateLimit(req, res))) return;
 
   try {
     const { email, passwordHash } = req.body;

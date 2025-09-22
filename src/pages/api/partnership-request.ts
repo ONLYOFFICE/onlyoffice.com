@@ -35,7 +35,6 @@ export default async function handler(
     from,
     spam,
     partnerReqType,
-    locale,
     hCaptchaResponse,
   } = req.body;
 
@@ -105,7 +104,6 @@ export default async function handler(
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            language: locale,
             firstName: "",
             email: email,
             type: "Common",
