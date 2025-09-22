@@ -17,12 +17,10 @@ import {
 import { Modal } from "@src/components/ui/Modal";
 import { CrossIcon } from "@src/components/icons";
 import { validateEmail } from "@src/utils/validators";
-import { useRouter } from "next/router";
 import { ISubscribeInput } from "@src/components/widgets/SubscribeInput";
 
 const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
   const { t } = useTranslation("SubscribeModal");
-  const { locale } = useRouter();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -77,7 +75,6 @@ const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          language: locale === "en" ? "" : locale,
           firstName: formData.name,
           email: formData.email,
           type: "Common",
