@@ -6,6 +6,7 @@ import { Container } from "@src/components/ui/Container";
 import { Section } from "@src/components/ui/Section";
 
 import { getAssetUrl } from "@utils/getAssetUrl";
+import { CodeButton } from "@src/components/ui/CodeButton";
 const StyledActionsSection = styled(Section)`
   border-bottom: 1px solid #C4C4C4;
 `
@@ -25,7 +26,7 @@ const StyledActionsButtonWrapper = styled.div`
   gap: 16px;
 `;
 
-const StyledActionsButton = styled(Button)`
+const StyledActionsButton = styled(CodeButton)`
   width: 56px;
   height: 36px;
   background-image: url(${getAssetUrl('/images/templates/see-it-in-action/actions/close-tag.svg')});
@@ -44,6 +45,7 @@ const StyledActionsTabList = styled.ul`
 
   @media ${device.tablet} {
     overflow-x: scroll;
+    overflow-y: hidden;
     justify-content: flex-start;
   }
 `;
@@ -59,10 +61,38 @@ const StyledActionsTabButton = styled(Button)<{
   flex-grow: 1;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  box-shadow: ${(props) => (props.$isActive ? "0px 7px 15px 0px rgba(85, 85, 85, 0.1)" : "none")};
+  box-shadow: ${(props) => (props.$isActive ? "0 20px 50px rgba(85,85,85,0.15)" : "none")};
+  position: relative;
 
   &:hover {
     background-color: ${(props) => (props.$isActive ? "#fff" : "#ebebeb")};
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: ${(props) => (props.$isActive ? "#fff" : "#C4C4C4")};
+    transition: background-color 0.2s;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -101%;
+    width: 150%;
+    height: 100%;
+    pointer-events: none;
+    background: #fff;
+    transform: translateX(-50%);
+
+    @media ${device.tablet} {
+      display: none;
+    }
   }
 `;
 

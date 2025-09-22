@@ -69,7 +69,7 @@ const Actions = () => {
         <StyledActionsContainer>
           <StyledActionsButtonWrapper>
             <Heading level={4} size={4} label={t("ActionsDemoPreview")} />
-            <StyledActionsButton variant="secondary" borderRadius="0" onClick={() => setIsDemoModalOpen(true)} />
+            <StyledActionsButton onClick={() => setIsDemoModalOpen(true)} />
           </StyledActionsButtonWrapper>
           <ActionsContent
             url={tabInfo.url}
