@@ -2,12 +2,14 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { mkdirSync, writeFileSync, readdirSync, readFileSync } from "fs";
 import path from "path";
 import { File as FormidableFile, IncomingForm } from "formidable";
+import { fileTypeFromBuffer } from "file-type";
 import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
 import { SupportContactFormEmail } from "@src/components/emails/SupportContactFormEmail";
+import { TAllowedFileTypes } from "@src/components/templates/SupportContactForm/SupportContactForm.types";
 
 interface IAddSupportContactFormData {
   fromPage: string;
@@ -41,10 +43,18 @@ export default async function handler(
       .json({ status: "error", message: "Method Not Allowed" });
   }
 
+  const MAX_SIZE = 5 * 1024 * 1024; // 5MB
+  const MAX_FILES = 10;
+  const ALLOWED_FILE_TYPES: TAllowedFileTypes[] = [
+    "image/jpeg",
+    "image/png",
+    "application/pdf",
+  ];
+
   const form = new IncomingForm({
     multiples: true,
-    maxFiles: 10,
-    maxFileSize: 5 * 1024 * 1024,
+    maxFiles: MAX_FILES,
+    maxFileSize: MAX_SIZE,
   });
 
   form.parse(req, async (err, fields, filesRaw) => {
@@ -93,7 +103,7 @@ export default async function handler(
     }
 
     // Normalize raw files into array
-    const rawFiles = filesRaw.files;
+    const rawFiles = (filesRaw)?.files;
     const uploadedFiles: FormidableFile[] = [];
     if (Array.isArray(rawFiles)) {
       uploadedFiles.push(...rawFiles);
@@ -133,7 +143,7 @@ export default async function handler(
 
       if (uploadedFiles.length > 0) {
         // Prepare uploads directory
-        const baseUploads = path.join(process.cwd(), "public", "uploads");
+        const baseUploads = path.join(process.cwd(), "support-requests", "uploads");
         mkdirSync(baseUploads, { recursive: true });
 
         // Determine next request-N folder
@@ -141,20 +151,34 @@ export default async function handler(
           .filter((name) => name.startsWith("request-"))
           .map((name) => parseInt(name.split("-")[1] || "0", 10))
           .filter((n) => !isNaN(n));
+
         const nextIdx = existing.length ? Math.max(...existing) + 1 : 1;
         requestDirName = `request-${nextIdx}`;
         const requestDir = path.join(baseUploads, requestDirName);
         mkdirSync(requestDir);
 
         // Save each uploaded file
-        attachments = uploadedFiles.map((file) => {
-          const fileData = readFileSync(file.filepath);
-          const originalFilename = file.originalFilename ?? file.newFilename;
+        attachments = [];
+        for (const file of uploadedFiles) {
+          const fileData = readFileSync((file).filepath);
+
+          // Check real MIME
+          const detected = await fileTypeFromBuffer(fileData);
+          if (!detected || !ALLOWED_FILE_TYPES.includes(detected.mime as TAllowedFileTypes)) {
+            console.error(
+              `Error: File "${file.originalFilename}" rejected. Declared: ${file.mimetype}, Found: ${detected?.mime}`
+            );
+            errorMessages.push(`File ${file.originalFilename} has invalid type`);
+            continue;
+          }
+
+          const originalFilename = file.originalFilename ?? (file).newFilename;
           const finalName = originalFilename.replace(/ /g, "_");
           const finalPath = path.join(requestDir, finalName);
           writeFileSync(finalPath, fileData);
-          return { filename: finalName, path: finalPath };
-        });
+
+          attachments.push({ filename: finalName, path: finalPath });
+        }
       }
 
       // Send email with attachments
