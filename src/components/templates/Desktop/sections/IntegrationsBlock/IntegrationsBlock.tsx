@@ -5,13 +5,15 @@ import {
   Logo,
   StyledImage,
   StyledContainer,
-  StyledLink
+  StyledLink,
+  StyledButton
 } from "./IntegrationsBlock.styled";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Trans } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { connectors } from "./data/items";
+import { Button } from "@src/components/ui/Button";
 
 interface IntegrationsBlockProps {
   logos?: boolean;
@@ -21,6 +23,7 @@ interface IntegrationsBlockProps {
   description: string;
   linkHref?: string;
   linkText?: string;
+  btnText?: string;
 }
 
 const IntegrationsBlock = ({
@@ -31,6 +34,7 @@ const IntegrationsBlock = ({
   image2x,
   linkHref,
   linkText,
+  btnText
 }: IntegrationsBlockProps) => {
   const { t } = useTranslation("desktop");
 
@@ -44,7 +48,13 @@ const IntegrationsBlock = ({
             components={[<Text as="span" color="main" key={0} />]}
           />
         </Heading>
-        <StyledText>{t(description)}</StyledText>
+        <StyledText>
+          <Trans
+            t={t}
+            i18nKey={description}
+            components={{br: <br />}}
+          />
+        </StyledText>
         {logos && (
           <LogoRow>
             {connectors.map((logo, index) => (
@@ -53,6 +63,7 @@ const IntegrationsBlock = ({
           </LogoRow>
         )}
         {linkHref && linkText &&<StyledLink textUnderline hover="underline-none" href={linkHref} target="_blank" color="main">{t(linkText)}</StyledLink>}
+        {linkHref && btnText && <StyledButton forwardedAs="a" variant="secondary" href={linkHref} target="_blank">{t(btnText)}</StyledButton>}
         <StyledImage $image={t(image)} $image2x={t(image2x)} />
       </StyledContainer>
     </Section>

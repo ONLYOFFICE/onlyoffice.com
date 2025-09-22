@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
+import { Button } from "@src/components/ui/Button";
 
 const StyledText = styled(Text)`
   font-size: 18px;
@@ -70,4 +71,8 @@ const StyledLink = styled(Link)`
   margin: -24px auto 56px;
 `;
 
-export { StyledText, LogoRow, Logo, StyledImage, StyledContainer, StyledLink };
+const StyledButton = styled(Button)`
+  margin: -24px auto 56px;
+`
+
+export { StyledText, LogoRow, Logo, StyledImage, StyledContainer, StyledLink, StyledButton };

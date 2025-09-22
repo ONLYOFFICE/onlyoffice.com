@@ -53,6 +53,14 @@ const DesktopTemplate = ({ locale }: ILocale) => {
       />
 
       <DoEvenMore />
+      <IntegrationsBlock
+        image="DesktopEditorsImgUrl"
+        image2x="DesktopEditorsImgUrl2x"
+        title="DesktopEditorsTitle"
+        description="DesktopEditorsDescription"
+        linkHref="mailto:sales@onlyoffice.com"
+        btnText="ContactUs"
+      />
       <Download />
       <FeaturedIn />
       <Testimonials />
