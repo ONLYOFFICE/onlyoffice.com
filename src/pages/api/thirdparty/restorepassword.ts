@@ -11,11 +11,11 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  if (!(await checkRateLimit(req, res))) return;
-
   if (req.method !== "POST") {
     return res.status(405).end("Method Not Allowed");
   }
+
+  if (!(await checkRateLimit(req, res))) return;
 
   try {
     const { email } = req.body;
@@ -23,7 +23,7 @@ export default async function handler(
     if (typeof email !== "string" || !validateEmail(email)) {
       return res.status(400).json({
         status: "error",
-        message: "Missing or invalid 'email' field",
+        message: "Invalid request parameters",
       });
     }
 

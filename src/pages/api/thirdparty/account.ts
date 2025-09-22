@@ -6,19 +6,19 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  if (!(await checkRateLimit(req, res))) return;
-
   if (req.method !== "POST") {
     return res.status(405).end("Method Not Allowed");
   }
 
+  if (!(await checkRateLimit(req, res))) return;
+
   try {
     const { transport } = req.body;
 
-    if (!transport) {
+    if (!transport || typeof transport !== "string") {
       return res
         .status(400)
-        .json({ status: "error", message: "Missing transport" });
+        .json({ status: "error", message: "Invalid request parameters" });
     }
 
     const findBySocialRes = await fetch(
@@ -57,9 +57,21 @@ export default async function handler(
           .json({ status: "error", message: "No tenants found" });
       }
 
+      const map = new Map<string, { domain: string; path: string }>();
+
+      for (const t of findByEmailData) {
+        map.set(t.domain, { ...t, path: `${t.path}&social=true` });
+      }
+
+      for (const t of findBySocialData?.tenants || []) {
+        if (!map.has(t.domain)) {
+          map.set(t.domain, t);
+        }
+      }
+
       return res.status(200).json({
         status: "success",
-        tenants: findByEmailData,
+        tenants: Array.from(map.values()),
       });
     }
 

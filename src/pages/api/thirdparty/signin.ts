@@ -1,19 +1,31 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
+import { validateEmail } from "@src/utils/validators";
 import { createAuthToken } from "@src/utils/createAuthToken";
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  if (!(await checkRateLimit(req, res))) return;
-
   if (req.method !== "POST") {
     return res.status(405).end("Method Not Allowed");
   }
 
+  if (!(await checkRateLimit(req, res))) return;
+
   try {
     const { email, passwordHash } = req.body;
+
+    if (
+      typeof email !== "string" ||
+      !validateEmail(email) ||
+      !passwordHash ||
+      typeof passwordHash !== "string"
+    ) {
+      return res
+        .status(400)
+        .json({ status: "error", message: "Invalid request parameters" });
+    }
 
     const findByEmailRes = await fetch(
       `${process.env.THIRDPARTY_DOMAIN}/multiregion/findbyemail`,

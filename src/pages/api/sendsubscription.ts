@@ -1,4 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
+import { getLanguage } from "@src/lib/helpers/getLanguage";
 import { db } from "@src/config/db/site";
 import { validateEmail } from "@src/utils/validators";
 import { emailTransporter } from "@src/config/email/transporter";
@@ -20,9 +22,25 @@ export default async function handler(
     return res.status(405).end("Method Not Allowed");
   }
 
-  try {
-    const { language, firstName, email, type } = req.body;
+  if (!(await checkRateLimit(req, res))) return;
 
+  try {
+    const { firstName, email, type } = req.body;
+
+    if (
+      typeof firstName !== "string" ||
+      typeof email !== "string" ||
+      !validateEmail(email) ||
+      !type ||
+      typeof type !== "string"
+    ) {
+      return res.status(400).json({
+        status: "error",
+        message: "Invalid request parameters",
+      });
+    }
+
+    const language = getLanguage(req);
     const baseUrl = `${req.headers.origin}${language ? `/${language}` : ""}`;
 
     const emailSubjects: Record<string, Record<string, string>> = {

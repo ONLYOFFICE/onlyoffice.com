@@ -128,7 +128,6 @@ const Hero = ({ locale }: IHero) => {
         from,
         spam: formData.spam,
         partnerReqType,
-        locale: router.locale === "en" ? "" : router.locale,
         hCaptchaResponse: hCaptchaResponse || null,
       }),
     }).then((res) => res.json());
