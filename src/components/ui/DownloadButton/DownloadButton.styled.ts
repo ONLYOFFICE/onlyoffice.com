@@ -122,10 +122,11 @@ const StyledDownloadButton = styled(Link)<{
             `
           : $platform === "app-store"
             ? css`
+                background-color: #000000;
                 background-image: ${$imageSrc && `url(${$imageSrc})`};
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: inherit;
+                background-size: calc(100% - 40px) 56px;
               `
             : $platform === "google-play"
               ? css`
