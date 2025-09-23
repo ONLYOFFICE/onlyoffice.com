@@ -45,7 +45,7 @@
 
   "AICardHeading": "Work faster with AI assistants",
   "AICardText": "Make the process of document creation and editing much easier. Generate texts, images, and code. Get quick answers to your questions or explanation of some notions and concepts. Check your text spelling and grammar. Easily rewrite your text making it shorter or longer. Translate into different languages and do much more with integrated AI tools.",
-  "LearnMore": "Learn more",
+  "LearnMore": "Další informace",
 
   "ExtraCardHeading": "Make use of extra features",
   "ExtraCardText": "Activate the system plugins or add your own to extend your DocSpace functionality.",
@@ -87,5 +87,5 @@
   "HintsCardText": "Switch ONLYOFFICE DocSpace Server to HTTPS",
   "Hints": "Hints",
   "Diagrams": "Diagrams",
-  "WatchNow": "Watch now"
+  "WatchNow": "Sledovat nyní"
 }

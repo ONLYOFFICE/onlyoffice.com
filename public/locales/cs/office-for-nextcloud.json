@@ -4,8 +4,8 @@
 
   "OnlineOfficeForNextcloud": "Online office for Nextcloud",
   "WorkOnOfficeDocuments": "Work on office documents within Nextcloud using ONLYOFFICE Docs",
-  "GetItNow": "Get it now",
-  "RequestFreeDemo": "Request free demo",
+  "GetItNow": "Získat nyní",
+  "RequestFreeDemo": "Požádat o bezplatnou demo verzi",
   "HeroImgUrl": "/images/templates/office-for-nextcloud/hero/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-nextcloud/hero/hero@2x.png",
 
@@ -33,10 +33,10 @@
 
   "MarketplaceConnectorTitle": "Designed for seamless integration with Nextcloud",
   "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Nextcloud now from the Nextcloud App Store.",
-  "GetStarted": "Get started",
+  "GetStarted": "Začínáme",
 
-  "WhyOO": "Why ONLYOFFICE?",
-  "FeaturesFormats": "Support for more than <0>50 file formats</0>, fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
+  "WhyOO": "Proč ONLYOFFICE?",
+  "FeaturesFormats": "Podpora více než <0>50 formátů souborů</0>, plně kompatibilní s formáty MS Office: DOCX, XLSX, PPTX.",
   "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools. Integrated <0>AI helper</0>.",
   "FeaturesCoEditing": "Real-time and paragraph-locking <0>co-editing</0>, review, version history, document comparison, comments & chat. Audio and video calls.",
   "FeaturesSupport": "<0>Public sharing</0> support. Sharing via Nextcloud Talk. <0>Federated Cloud sharing</0> support.",
@@ -45,12 +45,12 @@
   "FeaturesFree": "Free Community version and <0>scalable Enterprise</0> solution. <0>Free 30-day trial.</0>",
   "FeaturesIntegration": "Integration with <0>Nextcloud desktop</0> and mobile apps.",
 
-  "HowToStart": "How to start",
+  "HowToStart": "Jak začít",
   "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>",
   "HowToStartStep2": "Get the integration app from the <0>Nextcloud App Store</0>",
   "HowToStartStep3": "Configure the integration app.",
   "HowToConnect": "Configuring ONLYOFFICE connector for Nextcloud",
-  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructions": "Podrobné pokyny najdete v <0>centru nápovědy</0>.",
 
   "PartnerHeading": "Are you a Nextcloud partner? How about improving your Nextcloud user experience and increasing your revenue?",
   "PartnerText": "Join the ONLYOFFICE partnership program right now.",
@@ -65,5 +65,5 @@
   "LearnMoreLoveFoundation": "How ONLYOFFICE and Nextcloud help Love Foundation support socially important projects",
   "ReadTheFullStory": "Read the full story",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
 }

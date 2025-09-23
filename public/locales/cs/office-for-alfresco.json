@@ -5,7 +5,7 @@
   "OnlineOfficeForAlfresco": "Online office for <0>Alfresco</0>",
   "EnableCollaborativeDocumentEditing": "Enable collaborative document editing in Alfresco Share using ONLYOFFICE Docs",
   "GetItNow": "Add to Zoom",
-  "RequestFreeDemo": "Request free demo",
+  "RequestFreeDemo": "Požádat o bezplatnou demo verzi",
   "HeroImgUrl": "/images/templates/office-for-alfresco/hero/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-alfresco/hero/hero@2x.png",
 
@@ -28,9 +28,9 @@
 
   "MarketplaceConnectorTitle": "Designed for seamless integration with Alfresco",
   "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Alfresco now in the official Alfresco Add-ons directory.",
-  "GetStarted": "Get started",
+  "GetStarted": "Začínáme",
 
-  "WhyOO": "Why ONLYOFFICE?",
+  "WhyOO": "Proč ONLYOFFICE?",
   "FeaturesFormats": "Support for more than <0>50 file formats</0>. Fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
   "FeaturesCoEditing": "<0>Real-time</0> and paragraph-locking co-editing, review, version history, document comparison, comments & mentions.",
   "FeaturesFree": "Free Community and Scalable Enterprise versions. <0>Free 30-day trial.</0> Self-hosted solution for total control over your data.",
@@ -38,7 +38,7 @@
   "FeaturesConfiguration": "<0>Easy configuration.</0> Seamless integration with the ready-to-use connector in the Alfresco admin console and automated testing.",
   "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools. <0>Integrated AI helper</0> (ChatGPT or ZhiPu Copilot).",
 
-  "HowToStart": "How to start",
+  "HowToStart": "Jak začít",
   "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Get the integration app from the <0>Alfresco Add-ons directory</0>.",
   "HowToStartStep3": "Configure the integration app in the  Alfresco Administration Console.",
@@ -52,5 +52,5 @@
   "SuccessStoryDescription": "Atol CD reinforces online collaboration in Alfresco Digital Workspace by integrating ONLYOFFICE Docs.",
   "ReadTheFullStory": "Read the full story",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
 }

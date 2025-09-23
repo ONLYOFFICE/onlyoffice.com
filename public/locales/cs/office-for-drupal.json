@@ -5,7 +5,7 @@
   "OnlineOfficeForConnector": "Online Office for <0>Drupal</0>",
   "Subheader": "Work on office files within Drupal",
   "GetItNow": "Začínáme",
-  "RequestFreeDemo": "Request free demo",
+  "RequestFreeDemo": "Požádat o bezplatnou demo verzi",
 
   "WorkWithinConnector": "ONLYOFFICE <0>DocSpace app</0> for Drupal",
   "DocumentsScreen1Header": "Embed office documents into your Drupal website",
@@ -31,7 +31,7 @@
   "DocsAppTab2Label": "Edit docs, sheets, slides, forms, and PDFs in the Drupal Media module.",
   "DocsAppTab3Label": "Collaborate on office files in real time with other Drupal users.",
 
-  "WhyOO": "Why ONLYOFFICE?",
+  "WhyOO": "Proč ONLYOFFICE?",
   "Reason1": "A robust set of editing, formatting, and styling tools. <0>Integrated AI helper</0> (ChatGPT or ZhiPu Copilot).",
   "Reason2": "<0>Real-time</0> and paragraph-locking co-editing, review, version history, document comparison, comments & mentions.",
   "Reason3": "<0>Built-in chat</0> and Telegram integration. Jitsi and Rainbow plugins for real-time communication.",
@@ -39,15 +39,15 @@
   "Reason5": "<0>Enhanced security.</0> Flexible access rights and JWT. Activity tracking and audit reporting. Encryption at rest and in transit. Open source code.",
   "Reason6": "<0>Free plan to start.</0> Business plan for more admins, bigger storage, enhanced security and professional support. Self-hosted solution for total control over your data.",
 
-  "HowToStart": "How to start",
+  "HowToStart": "Jak začít",
   "HowToStartStep1Docs": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Get the integration app from <0>Drupal Marketplace</0>.",
   "HowToStartStep3": "Upload and configure the integration app.",
   "HowToStartStep1Docspace": "Create your free <0>DocSpace account</0>.",
 
-  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructions": "Podrobné pokyny najdete v <0>centru nápovědy</0>.",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?",
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?",
 
   "Docs": "Docs",
   "DocSpace": "DocSpace"

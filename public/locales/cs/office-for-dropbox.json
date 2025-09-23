@@ -25,7 +25,7 @@
   "MarketplaceConnectorTitle": "Built to work in Dropbox seamlessly",
   "MarketplaceConnectorDescription": "Install ONLYOFFICE app for Dropbox today from the Dropbox Marketplace",
 
-  "WhyOO": "Why ONLYOFFICE?",
+  "WhyOO": "Proč ONLYOFFICE?",
   "FeaturesRobustSet": "<0>Robust set</0> of editing tools",
   "FeaturesFamiliarInterface": "<0>Familiar interface</0> with tabs",
   "FeaturesAIHelper": "<0>AI helper</0> & collection of free plugins",
@@ -33,9 +33,9 @@
   "FeaturesHighestCompatibility": "<0>Highest compatibility</0> with docx, xlsx, and pptx",
   "FeaturesOpenSourceCode": "Watermark, password protection, <0>open source code</0>",
   "FeaturesFreeApp": "<0>Free app</0>, no installation and registration required",
-  "GetStarted": "Get started",
+  "GetStarted": "Začínáme",
 
-  "HowToStart": "How to start",
+  "HowToStart": "Jak začít",
   "HowToStartStep1": "Log into your Dropbox account.",
   "HowToStartStep2": "Follow the <0>link</0>",
   "HowToStartStep3": "Grant the required permissions to the ONLYOFFICE app.",
@@ -43,5 +43,5 @@
   "HowToStartStep5": "Click Open in -> ONLYOFFICE Docs.",
   "ExploreMoreDetails": "Explore more details in <0>this guide</0>.",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
 }
