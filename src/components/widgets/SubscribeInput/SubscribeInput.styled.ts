@@ -19,10 +19,13 @@ const StyledSubscribeInput = styled.div<{ $status: ILoaderButton["status"] }>`
 `;
 
 const StyledSubscribeInputLoaderButton = styled(LoaderButton)`
+  max-height: 56px;
+  min-width: max-content;
   @media ${device.mobile} {
     padding: 15px 24px;
     min-width: 48px;
     min-height: 48px;
+    max-height: 48px;
   }
 `;
 
