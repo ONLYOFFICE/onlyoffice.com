@@ -39,9 +39,12 @@ type TNavigatorWithUAData = Navigator & {
   };
 };
 
+type TAllowedFileTypes = "image/jpeg" | "image/png" | "application/pdf";
+
 export type {
   ISelectSubjectItems,
   IFormData,
   ICheckStatus,
   TNavigatorWithUAData,
+  TAllowedFileTypes,
 };

@@ -1,13 +1,16 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { mkdirSync, writeFileSync, readdirSync, readFileSync } from "fs";
+import { promises as fsPromises, readFileSync } from "fs";
 import path from "path";
 import { File as FormidableFile, IncomingForm } from "formidable";
+import { fileTypeFromBuffer } from "file-type";
 import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
 import { SupportContactFormEmail } from "@src/components/emails/SupportContactFormEmail";
+import { TAllowedFileTypes } from "@src/components/templates/SupportContactForm/SupportContactForm.types";
+import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 
 interface IAddSupportContactFormData {
   fromPage: string;
@@ -26,38 +29,41 @@ interface IAddSupportContactFormData {
 }
 
 export const config = {
-  api: {
-    bodyParser: false,
-  },
+  api: { bodyParser: false },
 };
 
+const MAX_SIZE = 5 * 1024 * 1024; // 5MB
+const MAX_FILES = 10;
+const ALLOWED_FILE_TYPES: TAllowedFileTypes[] = ["image/jpeg", "image/png", "application/pdf"];
+const s3Client = new S3Client({
+  region: process.env.AWS_S3_REGION,
+  credentials: {
+    accessKeyId: process.env.AWS_S3_ACCESS_KEY!,
+    secretAccessKey: process.env.AWS_S3_SECRET_ACCESS_KEY!,
+  },
+});
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
   if (req.method !== "POST") {
-    return res
-      .status(405)
-      .json({ status: "error", message: "Method Not Allowed" });
+    return res.status(405).json({ status: "error", message: "Method Not Allowed" });
   }
 
   const form = new IncomingForm({
     multiples: true,
-    maxFiles: 10,
-    maxFileSize: 5 * 1024 * 1024,
+    maxFiles: MAX_FILES,
+    maxFileSize: MAX_SIZE,
   });
 
   form.parse(req, async (err, fields, filesRaw) => {
     if (err) {
       console.error("Form parsing error:", err);
-      return res
-        .status(400)
-        .json({ status: "error", message: "Form parsing failed" });
+      return res.status(400).json({ status: "error", message: "Form parsing failed" });
     }
 
     const errorMessages: string[] = [];
     const cookies = parse(req.headers.cookie || "");
-
     const getField = (value: string | string[] | undefined): string =>
       Array.isArray(value) ? value[0] : value || "";
 
@@ -76,33 +82,25 @@ export default async function handler(
     const ip =
       (Array.isArray(req.headers["x-forwarded-for"])
         ? req.headers["x-forwarded-for"][0]
-        : req.headers["x-forwarded-for"]
-      )?.split(",")[0] ||
+        : req.headers["x-forwarded-for"])?.split(",")[0] ||
       req.socket.remoteAddress ||
       null;
 
     if (!isTestEmail(email)) {
       const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
-
       if (!hCaptchaResult.success) {
-        return res.status(400).json({
-          status: "errorHCaptchaInvalid",
-          error: hCaptchaResult.error,
-        });
+        return res.status(400).json({ status: "errorHCaptchaInvalid", error: hCaptchaResult.error });
       }
     }
 
     // Normalize raw files into array
-    const rawFiles = filesRaw.files;
+    const rawFiles = (filesRaw)?.files;
     const uploadedFiles: FormidableFile[] = [];
-    if (Array.isArray(rawFiles)) {
-      uploadedFiles.push(...rawFiles);
-    } else if (rawFiles) {
-      uploadedFiles.push(rawFiles);
-    }
+    if (Array.isArray(rawFiles)) uploadedFiles.push(...rawFiles);
+    else if (rawFiles) uploadedFiles.push(rawFiles);
 
+    // Save form data to DB
     try {
-      // Save form data to DB
       const formRecord: IAddSupportContactFormData = {
         first_name: name,
         last_name: name,
@@ -118,46 +116,67 @@ export default async function handler(
         utm_content: cookies.utmContent ?? null,
         utm_term: cookies.utmTerm ?? null,
       };
-      await db.teamlabsite.query(
-        "INSERT INTO form_registration_request SET ?",
-        [formRecord],
-      );
+      await db.teamlabsite.query("INSERT INTO form_registration_request SET ?", [formRecord]);
     } catch (dbErr) {
       console.error("DB insert error:", dbErr);
       errorMessages.push("supportContactForm DB error");
     }
 
+    // Handle files: upload to S3
     try {
-      let attachments: { filename: string; path: string }[] = [];
-      let requestDirName: string | null = null;
+      const attachments: { filename: string; path: string }[] = [];
+      // Determine next request-N folder
+      const requestId = `request-${Date.now()}`;
+      const filenameCount: Record<string, number> = {};
 
-      if (uploadedFiles.length > 0) {
-        // Prepare uploads directory
-        const baseUploads = path.join(process.cwd(), "public", "uploads");
-        mkdirSync(baseUploads, { recursive: true });
+      // Save each uploaded file
+      for (const file of uploadedFiles) {
+        const fileData = readFileSync(file.filepath);
+        const detected = await fileTypeFromBuffer(fileData);
 
-        // Determine next request-N folder
-        const existing = readdirSync(baseUploads)
-          .filter((name) => name.startsWith("request-"))
-          .map((name) => parseInt(name.split("-")[1] || "0", 10))
-          .filter((n) => !isNaN(n));
-        const nextIdx = existing.length ? Math.max(...existing) + 1 : 1;
-        requestDirName = `request-${nextIdx}`;
-        const requestDir = path.join(baseUploads, requestDirName);
-        mkdirSync(requestDir);
+        // Check real MIME
+        if (!detected || !ALLOWED_FILE_TYPES.includes(detected.mime as TAllowedFileTypes)) {
+          console.error(`File "${file.originalFilename}" rejected. Declared: ${file.mimetype}, Found: ${detected?.mime}`);
+          errorMessages.push(`File ${file.originalFilename} has invalid type`);
+          await fsPromises.unlink(file.filepath);
+          continue;
+        }
 
-        // Save each uploaded file
-        attachments = uploadedFiles.map((file) => {
-          const fileData = readFileSync(file.filepath);
-          const originalFilename = file.originalFilename ?? file.newFilename;
-          const finalName = originalFilename.replace(/ /g, "_");
-          const finalPath = path.join(requestDir, finalName);
-          writeFileSync(finalPath, fileData);
-          return { filename: finalName, path: finalPath };
-        });
+        let originalFilename = file.originalFilename ?? file.newFilename ?? "file";
+        originalFilename = originalFilename.replace(/ /g, "_");
+
+        // Checking for duplicates within a query
+        const baseName = path.parse(originalFilename).name;
+        const ext = path.extname(originalFilename);
+        if (!filenameCount[originalFilename]) filenameCount[originalFilename] = 0;
+        else filenameCount[originalFilename] += 1;
+
+        const finalName = filenameCount[originalFilename] === 0
+          ? originalFilename
+          : `${baseName}-${filenameCount[originalFilename]}${ext}`;
+
+        const s3Key = `support-requests/${requestId}/${finalName}`;
+
+        try {
+          await s3Client.send(new PutObjectCommand({
+            Bucket: process.env.AWS_S3_BUCKET!,
+            Key: s3Key,
+            Body: fileData,
+            ContentType: detected.mime,
+          }));
+
+          const s3Url = `https://${process.env.AWS_S3_BUCKET}.s3.${process.env.AWS_S3_REGION}.amazonaws.com/${s3Key}`;
+          attachments.push({ filename: finalName, path: s3Url });
+
+          // Delete the temporary file only after successful download
+          await fsPromises.unlink(file.filepath);
+        } catch (s3Err) {
+          console.error(`Failed to upload file "${file.originalFilename}" to S3:`, s3Err);
+          errorMessages.push(`Failed to upload ${file.originalFilename}`);
+          // A temporary file remains for possible retry.
+        }
       }
 
-      // Send email with attachments
       const transporter = emailTransporter();
       await transporter.sendMail({
         to: [process.env.SUPPORT_EMAIL!],
@@ -172,19 +191,16 @@ export default async function handler(
           comment: description,
           languageCode,
           errorText: errorMessages.join(", "),
-          attachmentFiles: attachments.map((a) => a.filename).join(", "),
+          // The links in the letter are clickable.
+          attachmentFiles: attachments.map(a => `<a href="${a.path}">${a.filename}</a>`).join("<br>"),
         }),
-        attachments,
+        attachments: attachments.map(a => ({ filename: a.filename, href: a.path })),
       });
 
-      return res
-        .status(200)
-        .json({ status: "success", folder: requestDirName });
+      return res.status(200).json({ status: "success", folder: requestId });
     } catch (err) {
-      console.error("Processing error:", err);
-      return res
-        .status(500)
-        .json({ status: "error", message: "Processing failed" });
+      console.error("support-contact-form error:", err);
+      return res.status(500).json({ status: "error", message: "Internal Server Error" });
     }
   });
 }

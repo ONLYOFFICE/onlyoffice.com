@@ -12,7 +12,7 @@
   "FormFillingRooms" : "Salles de remplissage de formulaires",
   "VirtualDataRooms" : "Salles de données virtuelles",
   "CustomRooms" : "Salles personnalisées",
-  "ReadDocumentation" : "CONSULTER LA DOCUMENTATION",
+  "ReadDocumentation" : "Consulter la documentation",
   "SubmitRequest" : "Soumettre une demande",
   "LearnMore": "En savoir plus",
   "EmbeddingFeature1": "Intégration de préréglages et de modes personnalisés",
@@ -60,6 +60,6 @@
 
   "HaveAnyQuestions": "Vous avez des questions ?",
   "HaveAnyQuestionsText": "Nous serons heureux de vous conseiller et de discuter de tous les détails. Contactez-nous à sales@onlyoffice.com ou planifiez un appel avec notre équipe.",
-  "ContactUs": "NOUS CONTACTER",
-  "ScheduleATime": "FIXER UN RENDEZ-VOUS"
+  "ContactUs": "Nous contacter",
+  "ScheduleATime": "Fixer un rendez-vous"
 }

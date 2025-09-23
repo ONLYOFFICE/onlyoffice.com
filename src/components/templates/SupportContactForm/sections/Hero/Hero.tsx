@@ -14,6 +14,7 @@ import {
   ICheckStatus,
   IFormData,
   ISelectSubjectItems,
+  TAllowedFileTypes,
 } from "../../SupportContactForm.types";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { hasOption } from "../../utils/typeGuards";
@@ -57,8 +58,9 @@ import {
   StyledSelectOptionTitle,
 } from "./Hero.styled";
 
-const MAX_SIZE = 5 * 1024 * 1024;
+const MAX_SIZE = 5 * 1024 * 1024; // 5MB
 const MAX_FILES = 10;
+const ALLOWED_FILE_TYPES: TAllowedFileTypes[] = ["image/jpeg", "image/png", "application/pdf"];
 
 const Hero = () => {
   const { t } = useTranslation("support-contact-form");
@@ -184,6 +186,18 @@ const Hero = () => {
         return false;
       }
 
+      if (!ALLOWED_FILE_TYPES.includes(file.type as TAllowedFileTypes)) {
+        setCheckStatus((prev) => ({
+          ...prev,
+          file: "error",
+        }));
+
+        setErrorFileName(t("YouCanOnlyAttach"));
+        resetFileStatus();
+
+        return false;
+      }
+
       if (file.size > MAX_SIZE) {
         setCheckStatus((prev) => ({
           ...prev,
@@ -291,6 +305,12 @@ const Hero = () => {
     hCaptchaRef.current?.resetCaptcha();
   };
 
+  const autoResetForm = () => {
+    setTimeout(() => {
+      clearData();
+    }, 5000);
+  };
+
   const handleOnSubmit = async () => {
     if (loadStatus === "loading") return;
     if (loadStatus === "success") {
@@ -331,13 +351,21 @@ const Hero = () => {
 
       if (dataSupport.status === "errorHCaptchaInvalid") {
         setLoadStatus("error");
+        autoResetForm();
         return;
       } else if (dataSupport.status === "success") {
         setLoadStatus("success");
+        autoResetForm();
+      } else {
+        console.error("Unexpected server response:", dataSupport);
+        setLoadStatus("error");
+        autoResetForm();
+        return;
       }
     } catch (error) {
       console.error(error);
       setLoadStatus("error");
+      autoResetForm();
     }
   };
 
@@ -548,6 +576,8 @@ const Hero = () => {
                 label={
                   errorFileName === t("YouCanAttachUp")
                     ? t("YouCanAttachUp")
+                    : errorFileName === t("YouCanOnlyAttach")
+                    ? t("YouCanOnlyAttach")
                     : `${t("FileSizeExceeded")} ${errorFileName}`
                 }
                 color="#CB0000"

@@ -17,11 +17,11 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  if (!(await checkRateLimit(req, res))) return;
-
   if (req.method !== "POST") {
     return res.status(405).end("Method Not Allowed");
   }
+
+  if (!(await checkRateLimit(req, res))) return;
 
   try {
     const {
@@ -62,14 +62,15 @@ export default async function handler(
     const cookies = parse(req.headers.cookie || "");
     const utmCampaign = cookies.utm_campaign || null;
     const emailKey = `${generateKeyData.emailKey}1`;
-    const language = getLanguage(req) === "en" ? "" : getLanguage(req);
+    const language = getLanguage(req);
+    const langPrefix = language === "en" ? "" : language;
     const i18n = await getServerI18n(language, ["docspace-registration"]);
 
     const queryString = new URLSearchParams();
     if (desktop) queryString.append("desktop", desktop);
     queryString.append("epkey", emailKey);
     queryString.append("eskey", generateKeyData.linkKey);
-    if (language) queryString.append("language", language);
+    if (langPrefix) queryString.append("language", langPrefix);
     if (awsRegion) queryString.append("awsRegion", awsRegion);
     queryString.append("spam", spam);
     if (partnerId) queryString.append("partnerId", partnerId);
@@ -77,7 +78,7 @@ export default async function handler(
     if (utmCampaign) queryString.append("campaign", utmCampaign);
 
     const queryParams = queryString.toString();
-    const baseUrl = `${req.headers.origin}${language ? `/${language}` : ""}`;
+    const baseUrl = `${req.headers.origin}${langPrefix ? `/${langPrefix}` : ""}`;
 
     const { data: existingTernants } = await findByEmail({ email });
 

@@ -11,10 +11,12 @@ export async function checkRateLimit(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  const ip = getClientIp(req);
+  const ip = getClientIp(req) || "unknown";
+  const route = req.url?.split("?")[0] || "";
+  const key = `${route}:${ip}`;
 
   try {
-    await rateLimiter.consume(ip);
+    await rateLimiter.consume(key);
     return true;
   } catch {
     res.status(429).json({
