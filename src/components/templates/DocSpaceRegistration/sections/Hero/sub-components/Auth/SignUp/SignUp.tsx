@@ -17,7 +17,12 @@ import {
 import { ISignUp } from "./SignUp.types";
 import { ISelectOption } from "@src/components/ui/Select/Select.types";
 import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
-import { loadRewardful, addClientReferenceOnReady, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
+import {
+  loadRewardful,
+  addClientReferenceOnReady,
+  getClientReferenceId,
+  getAffiliateToken,
+} from "@src/utils/rewardful";
 import { validateEmail } from "@src/utils/validators";
 import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { Heading } from "@src/components/ui/Heading";
@@ -125,22 +130,17 @@ const SignUp = ({
     setisFormLoading(true);
     setIsFormValid(false);
 
-    const res = await fetch("/api/thirdparty/sendemail", {
+    const res = await fetch("/api/thirdparty/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         desktop: desktopQuery || "",
         email: formData.email,
         spam: formData.spam ? "true" : "false",
-        language: router.locale === "en" ? "" : router.locale,
         awsRegion: selected[0].value,
         partnerId: router.query.pid || "",
         affiliateId: affiliateId || "",
         affiliateToken: affiliateToken || "",
-        emailSubject: {
-          register: t("YourConfirmationLinkForOODocSpace"),
-          login: t("YourLoginLinkToOODocSpace"),
-        },
         hCaptchaResponse: token || null,
       }),
     });
@@ -197,51 +197,27 @@ const SignUp = ({
   useEffect(() => {
     window.SignInByGoogle = async (data) => {
       try {
-        const findBySocialRes = await fetch("/api/thirdparty/findbysocial", {
+        const res = await fetch("/api/thirdparty/accountsignup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             transport: data,
+            awsRegion: selected[0].value,
           }),
         });
-        const findBySocialData = await findBySocialRes.json();
 
-        const findByEmailRes = await fetch("/api/thirdparty/findbyemail", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: findBySocialData.data.email,
-          }),
-        });
-        const findByEmailData = await findByEmailRes.json();
+        const result = await res.json();
 
-        if (findByEmailData.data?.length > 0) {
-          const generateKeyRes = await fetch("/api/thirdparty/generate", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              email: findBySocialData.data.email,
-            }),
-          });
-          const generateKeyData = await generateKeyRes.json();
-          setCreateNewAccountQuery(
-            `epkey=${generateKeyData.data.emailKey}1&eskey=${generateKeyData.data.linkKey}&transport=${data}&awsRegion=${selected[0].value}`,
-          );
-          setExistTenants(findByEmailData.data);
+        if ("tenants" in result && "query" in result) {
+          setCreateNewAccountQuery(result.query);
+          setExistTenants(result.tenants);
+        } else if ("reference" in result) {
+          window.location.href = result.reference;
         } else {
-          const registerRes = await fetch("/api/thirdparty/register", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ thirdPartyProfile: data }),
-          });
-          const registerData = await registerRes.json();
-          window.location.href = registerData.data.reference + "&wizard=true";
+          console.error("Unexpected response:", result);
         }
       } catch (err) {
-        console.error(
-          "Unexpected error:",
-          err instanceof Error ? err.message : err,
-        );
+        console.error("Unexpected error:", err);
       }
     };
 

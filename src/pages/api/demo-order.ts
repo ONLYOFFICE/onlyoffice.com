@@ -73,7 +73,6 @@ export default async function handler(
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            language: lang,
             firstName: "",
             email: email,
             type: "Common",

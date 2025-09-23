@@ -10,10 +10,10 @@ export default async function handler(
   }
 
   try {
-    const { email, subscribe, newsOnly } = req.body;
+    const { id, subscribe, newsOnly } = req.body;
 
     if (
-      typeof email !== "string" ||
+      typeof id !== "string" ||
       typeof subscribe !== "boolean" ||
       typeof newsOnly !== "boolean"
     ) {
@@ -24,7 +24,7 @@ export default async function handler(
     }
 
     await subscription({
-      email,
+      id,
       subscribe,
       newsOnly,
     });
