@@ -10,7 +10,7 @@ import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
 import { SupportContactFormEmail } from "@src/components/emails/SupportContactFormEmail";
 import { TAllowedFileTypes } from "@src/components/templates/SupportContactForm/SupportContactForm.types";
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+import { S3Client, PutObjectCommand, S3ServiceException } from "@aws-sdk/client-s3";
 
 interface IAddSupportContactFormData {
   fromPage: string;
@@ -175,7 +175,15 @@ export default async function handler(
           errorMessages.push(`Failed to upload ${file.originalFilename}`);
           // A temporary file remains for possible retry.
 
-          return res.status(500).json({ status: "error", message: "Internal Server Error. ! TEMPORARY ! err: " + s3Err }); // Remove TEMPORARY + s3Err after testing
+          // Remove TEMPORARY + s3Err after testing
+          const e = s3Err as Partial<S3ServiceException> & { message?: string; name?: string; Code?: string };
+          return res.status(500).json({ 
+            status: "error", 
+            message: "S3 upload failed ! TEMPORARY ! s3Err: " + s3Err, 
+            awsCode: e.Code ?? e.name ?? "UnknownError", 
+            awsMessage: e.message ?? "No message available", 
+            awsDetails: e.$metadata ?? null
+          }); 
         }
       }
 
