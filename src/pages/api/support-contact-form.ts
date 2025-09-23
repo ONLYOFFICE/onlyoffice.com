@@ -174,6 +174,8 @@ export default async function handler(
           console.error(`Failed to upload file "${file.originalFilename}" to S3:`, s3Err);
           errorMessages.push(`Failed to upload ${file.originalFilename}`);
           // A temporary file remains for possible retry.
+
+          return res.status(500).json({ status: "error", message: "Internal Server Error. ! TEMPORARY ! err: " + s3Err }); // Remove TEMPORARY + s3Err after testing
         }
       }
 
@@ -200,7 +202,7 @@ export default async function handler(
       return res.status(200).json({ status: "success", folder: requestId });
     } catch (err) {
       console.error("support-contact-form error:", err);
-      return res.status(500).json({ status: "error", message: "Internal Server Error" });
+      return res.status(500).json({ status: "error", message: "Internal Server Error. ! TEMPORARY ! err: " + err }); // Remove TEMPORARY + err after testing
     }
   });
 }
