@@ -1,7 +1,7 @@
 {
-  "windows": "For Windows",
-  "macos": "For macOS",
-  "linux": "For Linux",
+  "windows": "Za Windows",
+  "macos": "Za macOS",
+  "linux": "Za Linux",
   "app-gallery": "/images/ui/download-button/sr/app-gallery.svg",
   "app-store": {
     "light": "/images/ui/download-button/sr/app-store.svg",
