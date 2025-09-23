@@ -3,7 +3,7 @@
     "PageDescription": "ONLYOFFICE Document Builder - Enable your application to modify or build documents in DOCX, XLSX, PPTX or PDF without running Microsoft Office.",
     
     "FrameworkForAdvanced": "Framework for advanced document processing",
-    "CompatibleWithMicrosoft": "100% Compatible with Microsoft Office Formats",
+    "CompatibleWithMicrosoft": "100% kompatibilní s formáty Microsoft Office",
     "GetStarted": "Get started",
 
     "WhatIsThis": "What is this?",
@@ -12,7 +12,7 @@
     "LiveDemo": "Live demo",
     "WhatMakesONLYOFFICE": "What makes ONLYOFFICE Document Builder unique?",
     "WithONLYOFFICEDocumentBuilder": "With ONLYOFFICE Document Builder you have a simple script created for each document, be it a new file or an existing one that you want to open and modify. No need to compile an application each time the changes are required, like in any other builders. Start generating your documents on-the-fly!",
-    "ReadDocumentation": "Read documentation",
+    "ReadDocumentation": "Přečíst dokumentaci",
 
     "TheTechnologyBehindONLYOFFICE": "The technology behind ONLYOFFICE Document Builder",
     "ONLYOFFICEDocumentBuilderProvides": "ONLYOFFICE Document Builder provides a <1>JavaScript</1> API, well-documented and really easy to use. Choose the appropriate methods and classes from our library or pick the commonly used JavaScript methods to change certain element formatting properties.",

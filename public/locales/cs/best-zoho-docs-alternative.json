@@ -17,11 +17,11 @@
   "SeamlessText": "ONLYOFFICE Docs provides users with character- and paragraph-level co-editing modes, review and track changes, version history, comments and mentions, built-in chat, plugins for audio and video calls. You can easily share your documents with flexible permissions such as commenting, reviewing, filling forms, custom filtering.",
   "Flexibility": "Flexibilita",
   "FlexibilityText": "You are free to choose how to use the online editors: as a part of the room-based environment ONLYOFFICE DocSpace, within any sync&share or ECM service like Nextcloud, Alfresco, Confluence, Seafile, etc., or integrated into the solution you're building yourself.",
-  "AIHelper": "AI helper",
-  "AIHelperText": "Make use of the AI assistant plugin to boost work with your texts: run word analysis and explore the meaning of unknown words, generate passages, images and keywords, summarize and translate stories, find synonyms.",
+  "AIHelper": "AI pomocník",
+  "AIHelperText": "Využijte plugin AI asistenta k zefektivnění práce s texty: provádějte analýzu slov a zkoumejte význam neznámých slov, generujte pasáže, obrázky a klíčová slova, shrňujte a překládejte příběhy, hledejte synonyma.",
   "Security": "Zabezpečení dat",
   "SecurityText": "Řešení ONLYOFFICE s otevřeným zdrojovým kódem lze nasadit na vlastní server, takže veškerá data zůstávají zcela ve vaší firmě. Soukromé místnosti umožňují ukládat, upravovat a spoluvytvářet dokumenty ve stále zašifrované podobě.",
 
-  "PresentationTitle": "Shlédněte <0>tuto prezentaci</0> a porovnejte rozdíly mezi kancelářskými sadami:",
+  "PresentationTitle": "Podívejte se na <0>tuto prezentaci</0> a zjistěte, v čem se liší jednotlivé kancelářské balíky:",
   "WhatWentWrong": "Co se stalo v Zoho Docs? <0>Kliknutím</0> sem zobrazíte podrobnosti"
 }

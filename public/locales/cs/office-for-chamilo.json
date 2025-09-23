@@ -24,7 +24,7 @@
   "Reason6": "Self-hosted solution. Scalable Enterprise versions. <0>Free 30-day trial.</0> Educational discounts.",
 
   "HowToStart": "Jak začít",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo se zaregistrujte do <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Get the integration app from <0>GitHub</0>.",
   "HowToStartStep3": "Upload the plugin to Chamilo.",
   "HowToStartStep4": "Configure the plugin by specifying ONLYOFFICE Docs address.",

@@ -38,7 +38,7 @@
   "WhyOO": "Proč ONLYOFFICE?",
   "FeaturesFormats": "Podpora více než <0>50 formátů souborů</0>, plně kompatibilní s formáty MS Office: DOCX, XLSX, PPTX.",
   "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools. Integrated <0>AI helper</0>.",
-  "FeaturesCoEditing": "Real-time and paragraph-locking <0>co-editing</0>, review, version history, document comparison, comments & chat. Audio and video calls.",
+  "FeaturesCoEditing": "<0>Spolupráce</0> v reálném čase a s uzamčením odstavců, revize, historie verzí, porovnání dokumentů, komentáře a chat. Audio a video hovory.",
   "FeaturesSupport": "<0>Public sharing</0> support. Sharing via Nextcloud Talk. <0>Federated Cloud sharing</0> support.",
   "FeaturesSecurity": "<0>Enhanced security.</0> Flexible access rights and JWT. Encryption in transit. Watermarking and password protection. Open source code.",
   "FeaturesConfiguration": "<0>Easy configuration</0> from the Nextcloud admin panel. Seamless integration with ready-to-use connector available on the Nextcloud App Store.",
@@ -46,7 +46,7 @@
   "FeaturesIntegration": "Integration with <0>Nextcloud desktop</0> and mobile apps.",
 
   "HowToStart": "Jak začít",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo se zaregistrujte do <1>ONLYOFFICE Docs Cloud</1>",
   "HowToStartStep2": "Get the integration app from the <0>Nextcloud App Store</0>",
   "HowToStartStep3": "Configure the integration app.",
   "HowToConnect": "Configuring ONLYOFFICE connector for Nextcloud",

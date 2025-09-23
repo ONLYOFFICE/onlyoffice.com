@@ -39,7 +39,7 @@
   "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools. <0>Integrated AI helper</0> (ChatGPT or ZhiPu Copilot).",
 
   "HowToStart": "Jak začít",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo se zaregistrujte do <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Get the integration app from the <0>Alfresco Add-ons directory</0>.",
   "HowToStartStep3": "Configure the integration app in the  Alfresco Administration Console.",
   "HowToConnect": "How to integrate ONLYOFFICE with Alfresco Share",
