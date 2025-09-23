@@ -2,14 +2,14 @@ import styled, { css } from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Button } from "@src/components/ui/Button";
-
 import { getAssetUrl } from "@utils/getAssetUrl";
-const StyledOtherEditors = styled(Section)`
+
+const StyledOtherSelector = styled(Section)`
   border-top: 1px solid #e2e2e2;
   background-color: #f9f9f9;
 `;
 
-const StyledOtherEditorsWrapper = styled.div`
+const StyledOtherSelectorWrapper = styled.div`
   display: grid;
   align-items: start;
   row-gap: 40px;
@@ -19,7 +19,7 @@ const StyledOtherEditorsWrapper = styled.div`
   }
 `;
 
-const StyledOtherEditorsItems = styled.ul`
+const StyledOtherSelectorItems = styled.ul`
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -16px;
@@ -48,7 +48,7 @@ const StyledOtherEditorsItems = styled.ul`
   }
 `;
 
-const StyledOtherEditorsItem = styled(Button)<{
+const StyledOtherSelectorItem = styled(Button)<{
   $active?: boolean;
 }>`
   gap: 10px;
@@ -91,7 +91,7 @@ const editorStyles: Record<string, { backgroundPositionY: number }> = {
   diagram_viewer: { backgroundPositionY: -156 },
 };
 
-const StyledOtherEditorsItemImg = styled.span<{ $id: string }>`
+const StyledOtherSelectorItemImg = styled.span<{ $id: string }>`
   width: 24px;
   height: 24px;
   background-image: url(${getAssetUrl('/images/modules/other-editors/editor-selector.svg')});
@@ -101,9 +101,9 @@ const StyledOtherEditorsItemImg = styled.span<{ $id: string }>`
 `;
 
 export {
-  StyledOtherEditors,
-  StyledOtherEditorsWrapper,
-  StyledOtherEditorsItems,
-  StyledOtherEditorsItem,
-  StyledOtherEditorsItemImg,
+  StyledOtherSelector,
+  StyledOtherSelectorWrapper,
+  StyledOtherSelectorItems,
+  StyledOtherSelectorItem,
+  StyledOtherSelectorItemImg,
 };

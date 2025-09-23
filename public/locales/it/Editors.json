@@ -14,16 +14,8 @@
   "Hints": "Suggerimenti",
   "Blog": "Blog",
   "HelpCenter": "Centro assistenza",
-  "ExploreOtherEditors": "Esplora altri editor",
   "ViewMacroSamples": "Guarda gli esempi di macro",
   "FindAppsYouNeed": "Trova le app di cui hai bisogno",
   "CheckUserGuides": "Guarda le guide per l'utente",
-  "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "Document editor",
-  "SpreadsheetEditor": "Spreadsheet editor",
-  "PresentationEditor": "Presentation editor",
-  "FormCreator": "Creatore di moduli",
-  "PDFEditor": "Editor PDF",
-  "EBookCreator": "Creatore di e-book",
-  "DiagramViewer": "Visualizzatore di diagrammi"
+  "GoToTheTemplateLibrary": "Go to the template library"
 }

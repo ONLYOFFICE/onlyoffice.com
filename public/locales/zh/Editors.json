@@ -14,16 +14,8 @@
   "Hints": "提示",
   "Blog": "博客",
   "HelpCenter": "帮助中心",
-  "ExploreOtherEditors": "探索其他编辑器",
   "ViewMacroSamples": "查看宏示例",
   "FindAppsYouNeed": "了解更多有关电子表格编辑软件的功能",
   "CheckUserGuides": "查看指南",
-  "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "文档编辑器",
-  "SpreadsheetEditor": "电子表格编辑器",
-  "PresentationEditor": "演示文稿编辑器",
-  "FormCreator": "表单创建器",
-  "PDFEditor": "PDF 编辑器",
-  "EBookCreator": "电子书创建器",
-  "DiagramViewer": "图表查看器"
+  "GoToTheTemplateLibrary": "Go to the template library"
 }

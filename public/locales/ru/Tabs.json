@@ -1,0 +1,22 @@
+{
+  "CollaborationRooms": "Комнаты для совместной работы",
+  "PublicRooms": "Публичные комнаты",
+  "CustomRooms": "Пользовательские комнаты",
+  "FormFillingRooms": "Комнаты для заполнения форм",
+  "ZoomMeetingRooms": "Комнаты для Zoom-конференций",
+  "VirtualDataRooms": "Виртуальные комнаты данных",
+  "ExploreOtherEditors": "Ознакомьтесь с другими редакторами",
+  "DocumentEditor": "Редактор документов",
+  "SpreadsheetEditor": "Редактор таблиц",
+  "PresentationEditor": "Редактор презентаций",
+  "FormCreator": "Редактор форм",
+  "PDFEditor": "Редактор PDF",
+  "EBookCreator": "Инструмент для создания электронных книг",
+  "DiagramViewer": "Просмотрщик диаграмм",
+  "DocumentManagement": "Управление документами",
+  "Mail": "Почта",
+  "Crm": "CRM",
+  "Projects": "Проекты",
+  "Calendar": "Календарь",
+  "Community": "Сообщество"
+}

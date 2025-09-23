@@ -1,0 +1,22 @@
+{
+  "CollaborationRooms": "コラボレーションルーム",
+  "PublicRooms": "パブリックルーム",
+  "CustomRooms": "カスタムルーム",
+  "FormFillingRooms": "フォーム記入ルーム",
+  "ZoomMeetingRooms": "Zoomミーティングルーム",
+  "VirtualDataRooms": "バーチャルデータルーム",
+  "ExploreOtherEditors": "他のエディタも試してみましょう",
+  "DocumentEditor": "ドキュメント・エディター",
+  "SpreadsheetEditor": "スプレッドシート・エディタ",
+  "PresentationEditor": "プレゼンテーション・エディター",
+  "FormCreator": "フォーム作成",
+  "PDFEditor": "PDFエディタ",
+  "EBookCreator": "電子書籍クリエイター",
+  "DiagramViewer": "図ビューア",
+  "DocumentManagement": "ドキュメント管理",
+  "Mail": "メール",
+  "Crm": "CRM",
+  "Projects": "プロジェクト",
+  "Calendar": "カレンダー",
+  "Community": "コミュニティ"
+}

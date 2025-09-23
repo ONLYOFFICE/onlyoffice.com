@@ -14,16 +14,8 @@
   "Hints": "Consejos",
   "Blog": "Blog",
   "HelpCenter": "Centro de ayuda",
-  "ExploreOtherEditors": "Explorar otros editores",
   "ViewMacroSamples": "Ver ejemplos de macros",
   "FindAppsYouNeed": "Leer más sobre las posibilidades del Editor de hojas de cálculo",
   "CheckUserGuides": "Consulta las guías del usuario",
-  "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "Editor de documentos",
-  "SpreadsheetEditor": "Editor de hojas de cálculo",
-  "PresentationEditor": "Editor de presentaciones",
-  "FormCreator": "Creador de formularios",
-  "PDFEditor": "Editor de PDF",
-  "EBookCreator": "Creador de libros electrónicos",
-  "DiagramViewer": "Visor de diagramas"
+  "GoToTheTemplateLibrary": "Go to the template library"
 }
