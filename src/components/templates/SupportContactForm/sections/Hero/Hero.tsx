@@ -305,6 +305,12 @@ const Hero = () => {
     hCaptchaRef.current?.resetCaptcha();
   };
 
+  const autoResetForm = () => {
+    setTimeout(() => {
+      clearData();
+    }, 5000);
+  };
+
   const handleOnSubmit = async () => {
     if (loadStatus === "loading") return;
     if (loadStatus === "success") {
@@ -345,13 +351,21 @@ const Hero = () => {
 
       if (dataSupport.status === "errorHCaptchaInvalid") {
         setLoadStatus("error");
+        autoResetForm();
         return;
       } else if (dataSupport.status === "success") {
         setLoadStatus("success");
+        autoResetForm();
+      } else {
+        console.error("Unexpected server response:", dataSupport);
+        setLoadStatus("error");
+        autoResetForm();
+        return;
       }
     } catch (error) {
       console.error(error);
       setLoadStatus("error");
+      autoResetForm();
     }
   };
 
