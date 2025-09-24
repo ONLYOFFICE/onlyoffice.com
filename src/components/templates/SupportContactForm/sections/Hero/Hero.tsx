@@ -311,6 +311,12 @@ const Hero = () => {
     }, 5000);
   };
 
+  const resetLoadStatus = () => {
+    setTimeout(() => {
+      setLoadStatus("default");
+    }, 5000);
+  };
+
   const handleOnSubmit = async () => {
     if (loadStatus === "loading") return;
     if (loadStatus === "success") {
@@ -318,7 +324,7 @@ const Hero = () => {
       return;
     }
     if (loadStatus === "error") {
-      clearData();
+      setLoadStatus("default");
       return;
     }
     setLoadStatus("loading");
@@ -351,7 +357,7 @@ const Hero = () => {
 
       if (dataSupport.status === "errorHCaptchaInvalid") {
         setLoadStatus("error");
-        autoResetForm();
+        resetLoadStatus();
         return;
       } else if (dataSupport.status === "success") {
         setLoadStatus("success");
@@ -359,13 +365,13 @@ const Hero = () => {
       } else {
         console.error("Unexpected server response:", dataSupport);
         setLoadStatus("error");
-        autoResetForm();
+        resetLoadStatus();
         return;
       }
     } catch (error) {
       console.error(error);
       setLoadStatus("error");
-      autoResetForm();
+      resetLoadStatus();
     }
   };
 
