@@ -172,9 +172,10 @@ const Hero = () => {
   const addFile = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (!event.target.files) return;
     const newFiles = Array.from(event.target.files);
+    let allowedCount = MAX_FILES - formData.files.length;
 
     const filtered = newFiles.filter((file) => {
-      if (formData.files.length >= MAX_FILES) {
+      if (allowedCount <= 0) {
         setCheckStatus((prev) => ({
           ...prev,
           file: "error",
@@ -209,6 +210,9 @@ const Hero = () => {
 
         return false;
       }
+
+      allowedCount--;
+
       setCheckStatus((prev) => ({
         ...prev,
         file: "success",
