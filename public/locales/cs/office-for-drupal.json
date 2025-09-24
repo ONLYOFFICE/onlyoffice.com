@@ -19,7 +19,7 @@
   "DocumentsScreen2Header": "Efficiently manage documents from your Drupal account",
   "DocumentsScreen2Tab1Label": "Create a secure space for all your docs. Easily access it anytime anywhere.",
   "DocumentsScreen2Tab2Label": "Organize your personal files and create rooms for your business documents.",
-  "DocumentsScreen2Tab3Label": "Provide flexible access permissions: edit, comment, review, or view only.",
+  "DocumentsScreen2Tab3Label": "Umožněte flexibilní přístupová oprávnění: úpravy, komentáře, kontrola nebo pouze prohlížení.",
   "DocumentsScreen2Tab4Label": "Edit and collaborate on documents with other Drupal users online.",
 
   "MarketplaceConnectorTitle": "Built to work in Drupal seamlessly",
@@ -35,7 +35,7 @@
   "Reason1": "A robust set of editing, formatting, and styling tools. <0>Integrated AI helper</0> (ChatGPT or ZhiPu Copilot).",
   "Reason2": "<0>Real-time</0> and paragraph-locking co-editing, review, version history, document comparison, comments & mentions.",
   "Reason3": "<0>Built-in chat</0> and Telegram integration. Jitsi and Rainbow plugins for real-time communication.",
-  "Reason4": "Support for more than <0>50 file formats</0>. Fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
+  "Reason4": "Podpora více než <0>50 formátů souborů</0>. Plně kompatibilní s formáty MS Office: DOCX, XLSX, PPTX.",
   "Reason5": "<0>Enhanced security.</0> Flexible access rights and JWT. Activity tracking and audit reporting. Encryption at rest and in transit. Open source code.",
   "Reason6": "<0>Free plan to start.</0> Business plan for more admins, bigger storage, enhanced security and professional support. Self-hosted solution for total control over your data.",
 
@@ -49,6 +49,6 @@
 
   "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?",
 
-  "Docs": "Docs",
+  "Docs": "Dokumenty",
   "DocSpace": "DocSpace"
 }
