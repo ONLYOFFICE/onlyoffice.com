@@ -10,7 +10,7 @@ import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
 import { SupportContactFormEmail } from "@src/components/emails/SupportContactFormEmail";
 import { TAllowedFileTypes } from "@src/components/templates/SupportContactForm/SupportContactForm.types";
-import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+import { S3Client, PutObjectCommand, S3ServiceException } from "@aws-sdk/client-s3";
 
 interface IAddSupportContactFormData {
   fromPage: string;
@@ -26,6 +26,11 @@ interface IAddSupportContactFormData {
   utm_campaign: string | null;
   utm_content: string | null;
   utm_term: string | null;
+}
+
+interface ISupportFormError {
+  source?: string;
+  error?: string | Error;
 }
 
 export const config = {
@@ -62,8 +67,9 @@ export default async function handler(
       return res.status(400).json({ status: "error", message: "Form parsing failed" });
     }
 
-    const errorMessages: string[] = [];
-    const cookies = parse(req.headers.cookie || "");
+    try {
+      const errorMessages: string[] = [];
+      const cookies = parse(req.headers.cookie || "");
     const getField = (value: string | string[] | undefined): string =>
       Array.isArray(value) ? value[0] : value || "";
 
@@ -79,56 +85,62 @@ export default async function handler(
     const os = getField(fields.os);
     const hCaptchaResponse = getField(fields.hCaptchaResponse);
 
-    const ip =
-      (Array.isArray(req.headers["x-forwarded-for"])
-        ? req.headers["x-forwarded-for"][0]
-        : req.headers["x-forwarded-for"])?.split(",")[0] ||
-      req.socket.remoteAddress ||
-      null;
+      const ip =
+        (Array.isArray(req.headers["x-forwarded-for"])
+          ? req.headers["x-forwarded-for"][0]
+          : req.headers["x-forwarded-for"])?.split(",")[0] ||
+        req.socket.remoteAddress ||
+        null;
 
-    if (!isTestEmail(email)) {
-      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
-      if (!hCaptchaResult.success) {
-        return res.status(400).json({ status: "errorHCaptchaInvalid", error: hCaptchaResult.error });
+      if (!isTestEmail(email)) {
+        try {
+          const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+          if (!hCaptchaResult.success) {
+            return res.status(400).json({ status: "errorHCaptchaInvalid", error: hCaptchaResult.error });
+          }
+        } catch (hErr) {
+          throw { error: hErr, source: "hCaptcha validation" };
+        }
       }
-    }
 
     // Normalize raw files into array
-    const rawFiles = (filesRaw)?.files;
-    const uploadedFiles: FormidableFile[] = [];
-    if (Array.isArray(rawFiles)) uploadedFiles.push(...rawFiles);
-    else if (rawFiles) uploadedFiles.push(rawFiles);
+      const rawFiles = (filesRaw)?.files;
+      const uploadedFiles: FormidableFile[] = [];
+      if (Array.isArray(rawFiles)) uploadedFiles.push(...rawFiles);
+      else if (rawFiles) uploadedFiles.push(rawFiles);
 
     // Save form data to DB
-    try {
-      const formRecord: IAddSupportContactFormData = {
-        first_name: name,
-        last_name: name,
-        phone: "",
-        company_name: "",
-        email,
-        choice_language: languageCode,
-        fromPage,
-        operating_system: os,
-        ip,
-        utm_source: cookies.utmSource ?? null,
-        utm_campaign: cookies.utmCampaign ?? null,
-        utm_content: cookies.utmContent ?? null,
-        utm_term: cookies.utmTerm ?? null,
-      };
-      await db.teamlabsite.query("INSERT INTO form_registration_request SET ?", [formRecord]);
-    } catch (dbErr) {
-      console.error("DB insert error:", dbErr);
-      errorMessages.push("supportContactForm DB error");
-    }
+      try {
+        const formRecord: IAddSupportContactFormData = {
+          first_name: name,
+          last_name: name,
+          phone: "",
+          company_name: "",
+          email,
+          choice_language: languageCode,
+          fromPage,
+          operating_system: os,
+          ip,
+          utm_source: cookies.utmSource ?? null,
+          utm_campaign: cookies.utmCampaign ?? null,
+          utm_content: cookies.utmContent ?? null,
+          utm_term: cookies.utmTerm ?? null,
+        };
+        await db.teamlabsite.query("INSERT INTO form_registration_request SET ?", [formRecord]);
+      } catch (dbErr) {
+        console.error("DB insert error:", dbErr);
+        errorMessages.push("supportContactForm DB error");
+        throw { error: dbErr, source: "DB insert" };
+      }
 
-    // Handle files: upload to S3
-    try {
+      // Handle files: upload to S3
       const attachments: { filename: string; path: string }[] = [];
       // Determine next request-N folder
       const requestId = `request-${Date.now()}`;
       const filenameCount: Record<string, number> = {};
 
+      // Wrap loop in try/finally, to delete tmp-files
+      try {
       // Save each uploaded file
       for (const file of uploadedFiles) {
         const fileData = readFileSync(file.filepath);
@@ -138,7 +150,6 @@ export default async function handler(
         if (!detected || !ALLOWED_FILE_TYPES.includes(detected.mime as TAllowedFileTypes)) {
           console.error(`File "${file.originalFilename}" rejected. Declared: ${file.mimetype}, Found: ${detected?.mime}`);
           errorMessages.push(`File ${file.originalFilename} has invalid type`);
-          await fsPromises.unlink(file.filepath);
           continue;
         }
 
@@ -165,44 +176,63 @@ export default async function handler(
             ContentType: detected.mime,
           }));
 
-          const s3Url = `https://${process.env.AWS_S3_BUCKET}.s3.${process.env.AWS_S3_REGION}.amazonaws.com/${s3Key}`;
-          attachments.push({ filename: finalName, path: s3Url });
+          // Generate a link to the download API route, not a direct link to S3
+          const downloadUrl = `${process.env.BASE_URL}/api/download/${requestId}/${finalName}`;
+          attachments.push({ filename: finalName, path: downloadUrl });
 
-          // Delete the temporary file only after successful download
-          await fsPromises.unlink(file.filepath);
         } catch (s3Err) {
           console.error(`Failed to upload file "${file.originalFilename}" to S3:`, s3Err);
           errorMessages.push(`Failed to upload ${file.originalFilename}`);
-          // A temporary file remains for possible retry.
-
-          return res.status(500).json({ status: "error", message: "Internal Server Error. ! TEMPORARY ! err: " + s3Err }); // Remove TEMPORARY + s3Err after testing
+          // Remove TEMPORARY + s3Err after testing
+          const e = s3Err as Partial<S3ServiceException> & { message?: string; name?: string; Code?: string };
+          return res.status(500).json({ 
+            status: "error", 
+            message: "S3 upload failed ! TEMPORARY ! s3Err: " + s3Err, 
+            awsCode: e.Code ?? e.name ?? "UnknownError", 
+            awsMessage: e.message ?? "No message available", 
+            awsDetails: e.$metadata ?? null
+          }); 
         }
       }
+      } finally {
+        // Remove all tmp-files
+        await Promise.all(uploadedFiles.map(f => fsPromises.unlink(f.filepath).catch(() => { })));
+      }
 
-      const transporter = emailTransporter();
-      await transporter.sendMail({
-        to: [process.env.SUPPORT_EMAIL!],
-        subject: `${email} - SupportContactForm${errorMessages.length ? " [Error]" : ""}`,
-        html: SupportContactFormEmail({
-          firstName: name,
-          email,
-          supProduct: product,
-          supTheme: subject,
-          supOtherTheme: specifyOfOther,
-          paidLicense,
-          comment: description,
-          languageCode,
-          errorText: errorMessages.join(", "),
-          // The links in the letter are clickable.
-          attachmentFiles: attachments.map(a => `<a href="${a.path}">${a.filename}</a>`).join("<br>"),
-        }),
-        attachments: attachments.map(a => ({ filename: a.filename, href: a.path })),
-      });
+      try {
+        const transporter = emailTransporter();
+        await transporter.sendMail({
+          to: [process.env.SUPPORT_EMAIL!],
+          subject: `${email} - SupportContactForm${errorMessages.length ? " [Error]" : ""}`,
+          html: SupportContactFormEmail({
+            firstName: name,
+            email,
+            supProduct: product,
+            supTheme: subject,
+            supOtherTheme: specifyOfOther,
+            paidLicense,
+            comment: description,
+            languageCode,
+            errorText: errorMessages.join(", "),
+            attachmentFiles: attachments.map(a => `<a href="${a.path}">${a.filename}</a>`).join(", "),
+          }),
+        });
+      } catch (mailErr) {
+        throw { error: mailErr, source: "sendMail" };
+      }
 
       return res.status(200).json({ status: "success", folder: requestId });
     } catch (err) {
+      // Generic with source specified
+      const typedErr = err as ISupportFormError;
+
       console.error("support-contact-form error:", err);
-      return res.status(500).json({ status: "error", message: "Internal Server Error. ! TEMPORARY ! err: " + err }); // Remove TEMPORARY + err after testing
+      return res.status(500).json({
+        status: "error",
+        message: "Internal Server Error. ! TEMPORARY ! err: " + JSON.stringify(err, Object.getOwnPropertyNames(err), 2) , // Remove TEMPORARY + err after testing
+        source: typedErr.source ?? "unknown",
+        details: typedErr.error ?? err,
+      });
     }
   });
 }

@@ -172,9 +172,10 @@ const Hero = () => {
   const addFile = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (!event.target.files) return;
     const newFiles = Array.from(event.target.files);
+    let allowedCount = MAX_FILES - formData.files.length;
 
     const filtered = newFiles.filter((file) => {
-      if (formData.files.length >= MAX_FILES) {
+      if (allowedCount <= 0) {
         setCheckStatus((prev) => ({
           ...prev,
           file: "error",
@@ -209,6 +210,9 @@ const Hero = () => {
 
         return false;
       }
+
+      allowedCount--;
+
       setCheckStatus((prev) => ({
         ...prev,
         file: "success",
@@ -311,6 +315,12 @@ const Hero = () => {
     }, 5000);
   };
 
+  const resetLoadStatus = () => {
+    setTimeout(() => {
+      setLoadStatus("default");
+    }, 5000);
+  };
+
   const handleOnSubmit = async () => {
     if (loadStatus === "loading") return;
     if (loadStatus === "success") {
@@ -318,7 +328,7 @@ const Hero = () => {
       return;
     }
     if (loadStatus === "error") {
-      clearData();
+      setLoadStatus("default");
       return;
     }
     setLoadStatus("loading");
@@ -351,7 +361,7 @@ const Hero = () => {
 
       if (dataSupport.status === "errorHCaptchaInvalid") {
         setLoadStatus("error");
-        autoResetForm();
+        resetLoadStatus();
         return;
       } else if (dataSupport.status === "success") {
         setLoadStatus("success");
@@ -359,13 +369,13 @@ const Hero = () => {
       } else {
         console.error("Unexpected server response:", dataSupport);
         setLoadStatus("error");
-        autoResetForm();
+        resetLoadStatus();
         return;
       }
     } catch (error) {
       console.error(error);
       setLoadStatus("error");
-      autoResetForm();
+      resetLoadStatus();
     }
   };
 
