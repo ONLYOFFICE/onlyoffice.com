@@ -139,16 +139,17 @@ export default async function handler(
       const requestId = `request-${Date.now()}`;
       const filenameCount: Record<string, number> = {};
 
+      // Wrap loop in try/finally, to delete tmp-files
+      try {
       // Save each uploaded file
       for (const file of uploadedFiles) {
-          const fileData = readFileSync(file.filepath);
-          const detected = await fileTypeFromBuffer(fileData);
+        const fileData = readFileSync(file.filepath);
+        const detected = await fileTypeFromBuffer(fileData);
 
         // Check real MIME
         if (!detected || !ALLOWED_FILE_TYPES.includes(detected.mime as TAllowedFileTypes)) {
           console.error(`File "${file.originalFilename}" rejected. Declared: ${file.mimetype}, Found: ${detected?.mime}`);
           errorMessages.push(`File ${file.originalFilename} has invalid type`);
-          await fsPromises.unlink(file.filepath);
           continue;
         }
 
@@ -175,16 +176,13 @@ export default async function handler(
             ContentType: detected.mime,
           }));
 
-          const s3Url = `https://${process.env.AWS_S3_BUCKET}.s3.${process.env.AWS_S3_REGION}.amazonaws.com/${s3Key}`;
-          attachments.push({ filename: finalName, path: s3Url });
+          // Generate a link to the download API route, not a direct link to S3
+          const downloadUrl = `${process.env.BASE_URL}/api/download/${requestId}/${finalName}`;
+          attachments.push({ filename: finalName, path: downloadUrl });
 
-          // Delete the temporary file only after successful download
-          await fsPromises.unlink(file.filepath);
         } catch (s3Err) {
           console.error(`Failed to upload file "${file.originalFilename}" to S3:`, s3Err);
           errorMessages.push(`Failed to upload ${file.originalFilename}`);
-          // A temporary file remains for possible retry.
-
           // Remove TEMPORARY + s3Err after testing
           const e = s3Err as Partial<S3ServiceException> & { message?: string; name?: string; Code?: string };
           return res.status(500).json({ 
@@ -195,6 +193,10 @@ export default async function handler(
             awsDetails: e.$metadata ?? null
           }); 
         }
+      }
+      } finally {
+        // Remove all tmp-files
+        await Promise.all(uploadedFiles.map(f => fsPromises.unlink(f.filepath).catch(() => { })));
       }
 
       try {
@@ -212,7 +214,7 @@ export default async function handler(
             comment: description,
             languageCode,
             errorText: errorMessages.join(", "),
-            attachmentFiles: attachments.map(a => `<a href="${a.path}">${a.filename}</a>`).join("<br>"),
+            attachmentFiles: attachments.map(a => `<a href="${a.path}">${a.filename}</a>`).join(", "),
           }),
         });
       } catch (mailErr) {
@@ -227,7 +229,7 @@ export default async function handler(
       console.error("support-contact-form error:", err);
       return res.status(500).json({
         status: "error",
-        message: "Internal Server Error. ! TEMPORARY ! err: " + err , // Remove TEMPORARY + err after testing
+        message: "Internal Server Error. ! TEMPORARY ! err: " + JSON.stringify(err, Object.getOwnPropertyNames(err), 2) , // Remove TEMPORARY + err after testing
         source: typedErr.source ?? "unknown",
         details: typedErr.error ?? err,
       });
