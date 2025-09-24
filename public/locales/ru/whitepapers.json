@@ -52,44 +52,21 @@
 
   "CardsWhitePapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
   "CardsWhitePapersHeadStressTest": "Отчет о нагрузочном тесте ONLYOFFICE Docs 7.2.2.",
-  "CardsWhitePapersTitleStressTest": "Отчет о нагрузочном тесте ONLYOFFICE Docs 7.2.2.",
-  "CardsWhitePapersDescriptionStressTest": "В настоящем документе описывается нагрузочный тест, который мы провели для ONLYOFFICE Docs 7.2.2, и его результаты. Его основная цель состояла в проверке нагрузки на сервер, равной 10 000 запросов к ONLYOFFICE Docs.",
 
   "CardsWhitePapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
   "CardsWhitePapersHeadForDevelopers": "ONLYOFFICE Docs для разработчиков: архитектура, интеграция и развертывание",
-  "CardsWhitePapersTitleForDevelopers": "ONLYOFFICE Docs для разработчиков: архитектура, интеграция и развертывание",
-  "CardsWhitePapersDescriptionForDevelopers": "В данной статье мы рассматриваем функциональные возможности, интеграцию и методы развертывания онлайн офисного пакета ONLYOFFICE Docs.",
 
   "CardsWhitePapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
   "CardsWhitePapersHeadLoadTestReport": "Отчет по нагрузочному тестированию ONLYOFFICE Docs",
-  "CardsWhitePapersTitleLoadTestReport": "Отчет по нагрузочному тестированию ONLYOFFICE Docs",
-  "CardsWhitePapersDescriptionLoadTestReport": "Этот документ описывает нагрузочное тестирование, которое мы провели с ONLYOFFICE Docs, и его результаты. Основной целью было определить количество одновременных подключений, которое может поддерживать ONLYOFFICE Docs.",
 
   "CardsWhitePapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
   "CardsWhitePapersHeadPrivateRooms": "Приватные комнаты ONLYOFFICE: 9 принципов безопасности",
-  "CardsWhitePapersTitlePrivateRooms": "Приватные комнаты ONLYOFFICE: 9 принципов безопасности",
-  "CardsWhitePapersDescriptionPrivateRooms": "В этом техническом документе описаны принципы, используемые в Приватных комнатах ONLYOFFICE для обеспечения безопасности на каждом этапе работы с документами.",
 
   "CardsWhitePapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
   "CardsWhitePapersHeadIntegrationExample": "Пример интеграции ONLYOFFICE Docs",
-  "CardsWhitePapersTitleIntegrationExample": "Пример интеграции ONLYOFFICE Docs",
-  "CardsWhitePapersDescriptionIntegrationExample": "В этом техническом документе рассматриваются возможности интеграции ONLYOFFICE, предоставляемые открытым API.",
 
   "CardsWhitePapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
   "CardsWhitePapersHeadForGovernmentOffices": "Безопасная инфраструктура для совместной работы в госучреждениях",
-  "CardsWhitePapersTitleForGovernmentOffices": "Безопасная инфраструктура для совместной работы в госучреждениях",
-  "CardsWhitePapersDescriptionForGovernmentOffices": "В этом документе рассмотрели проблемы, с которыми сталкивается госсектор при создании ИТ-среды в приватной сети, и предложили эффектное решение, основанное на открытых и безопасных технологиях.",
-
-  "CardsWhitePapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
-  "CardsWhitePapersHeadEndToEndDocumentEncryption": "Сквозное шифрование документов",
-  "CardsWhitePapersTitleEndToEndDocumentEncryption": "Сквозное шифрование документов",
-  "CardsWhitePapersDescriptionEndToEndDocumentEncryption": "В этом техническом документе описаны компоненты и механизмы сквозного шифрования в ONLYOFFICE Workspace.",
-
-  "CardsWhitePapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
-  "CardsWhitePapersHeadDataEncryptionAtRest": "Шифрование в состоянии покоя 1.0",
-  "CardsWhitePapersTitleDataEncryptionAtRest": "Шифрование в состоянии покоя 1.0",
-  "CardsWhitePapersDescriptionDataEncryptionAtRest": "В этом техническом документе описываются компоненты и механизмы шифрования данных в состоянии покоя в ONLYOFFICE Workspace.",
-
 
   "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
   "CardsDatasheetsTitleSecureCloudSpace": "Безопасное облачное пространство для вашей команды и не только",

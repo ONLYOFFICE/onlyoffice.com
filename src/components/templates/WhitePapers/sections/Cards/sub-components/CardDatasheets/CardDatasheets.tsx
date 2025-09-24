@@ -1,39 +1,56 @@
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
 import { CardForm } from "../CardForm";
-import { ICardDatasheetsItemsProps } from "@src/components/templates/WhitePapers/WhitePapers.types";
+import { ICardItem } from "@src/components/templates/WhitePapers/WhitePapers.types";
 import { ILocale } from "@src/types/locale";
 
 import {
   StyledCardDatasheets,
+  StyledCardDatasheetsBottom,
   StyledCardDatasheetsButton,
   StyledCardDatasheetsButtonWrapper,
   StyledCardDatasheetsImage,
-  StyledCardDatasheetsProduct,
-  StyledCardDatasheetsTitle
+  StyledCardDatasheetsTitle,
+  StyledCardDatasheetsLabel,
+  StyledCardDatasheetsTop,
+  StyledCardDatasheetsBottomText,
 } from "./CardDatasheets.styled";
+import { formatDateCards } from "../../utils/formatDateCards";
+import { Text } from "@src/components/ui/Text";
 
-const CardDatasheets = ({ title, product, image_url, download_url, displayOther, locale, id_url }: ICardDatasheetsItemsProps & ILocale) => {
+const CardDatasheets = ({ title, product, icon_position_y, download_url, displayOther, locale, id_url, date, type }: ICardItem & ILocale) => {
   const { t } = useTranslation("whitepapers");
   const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
       <StyledCardDatasheets $displayOther={displayOther}>
-        <StyledCardDatasheetsImage
-          $image_url={image_url}
-        />
-        <StyledCardDatasheetsTitle
-          label={title}
-          level={4}
-          size={5}
-        />
-        <StyledCardDatasheetsProduct
-          label={product}
-          size={4}
-          fontStyle="italic"
-          color="#808080"
-        />
+        <StyledCardDatasheetsLabel type={type} label={t(type)}/>
+        <StyledCardDatasheetsTop>
+          <StyledCardDatasheetsImage
+            $icon_position_y={icon_position_y}
+          />
+          <StyledCardDatasheetsTitle
+            label={t(title)}
+            level={4}
+            size={5}
+          />
+        </StyledCardDatasheetsTop>
+        <StyledCardDatasheetsBottom>
+          <StyledCardDatasheetsBottomText
+            label={t(product)}
+            product={product}
+            size={4}
+            fontStyle="italic"
+            color="#333"
+          />
+          <Text
+            label={formatDateCards(date, locale)}
+            color='#808080'
+            fontStyle='italic'
+            size={4}
+            />
+        </StyledCardDatasheetsBottom>
         <StyledCardDatasheetsButtonWrapper>
           <StyledCardDatasheetsButton
             label={t("CardsButtonDownload")}

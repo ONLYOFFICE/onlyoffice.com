@@ -2,31 +2,16 @@ interface ICardsProp {
   sortValue: string;
 }
 
-interface ICardWhitePapersItemsProps {
-  head: string;
+interface ICardItem {
+  id: number;
+  type: "WhitePapers" | "Datasheets";
   title: string;
   date: string;
-  download_url: string,
-  description: string;
-  id_url: string;
-}
-
-interface ICardWhitePapersItems extends ICardWhitePapersItemsProps {
-  id: number;
-}
-
-interface ICardDatasheetsItemsProps {
-  title: string;
   product: string;
-  image_url: string;
+  icon_position_y: string;
   download_url: string;
-  displayOther?: boolean;
   id_url: string;
-}
-
-interface ICardDatasheetsItems extends ICardDatasheetsItemsProps {
-  id: number;
-  date: string;
+  displayOther?: boolean;
 }
 
 interface ICardFormProp {
@@ -56,10 +41,7 @@ type TSortDateKey = "CardsSortNewestOldest" | "CardsSortOldestNewest" | string;
 
 export type {
   ICardsProp,
-  ICardWhitePapersItems,
-  ICardWhitePapersItemsProps,
-  ICardDatasheetsItems,
-  ICardDatasheetsItemsProps,
+  ICardItem,
   ICardFormProp,
   IFormData,
   ICheckStatus,

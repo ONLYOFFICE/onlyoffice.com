@@ -52,44 +52,21 @@
 
   "CardsWhitePapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
   "CardsWhitePapersHeadStressTest": "ONLYOFFICE 文档 7.2.2. 压力测试报告",
-  "CardsWhitePapersTitleStressTest": "ONLYOFFICE 文档 7.2.2. 压力测试报告",
-  "CardsWhitePapersDescriptionStressTest": "本文档描述了我们对ONLYOFFICE 文档 7.2.2 进行的压力测试过程以及测试结果。主要目标是测试相当于10,000个ONLYOFFICE 文档请求的服务器负载。",
 
   "CardsWhitePapersPdfForDevelopers": "/images/templates/whitepapers/pdf/zh/onlyoffice_docs_for_developers.pdf",
   "CardsWhitePapersHeadForDevelopers": "适合开发人员的ONLYOFFICE文档：架构、集成和部署",
-  "CardsWhitePapersTitleForDevelopers": "适合开发人员的ONLYOFFICE文档：架构、集成和部署",
-  "CardsWhitePapersDescriptionForDevelopers": "在本论文中，我们探讨了ONLYOFFICE文档在线办公套件的功能、集成和部署方法。",
 
   "CardsWhitePapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
   "CardsWhitePapersHeadLoadTestReport": "ONLYOFFICE文档负载测试报告",
-  "CardsWhitePapersTitleLoadTestReport": "ONLYOFFICE文档负载测试报告",
-  "CardsWhitePapersDescriptionLoadTestReport": "文档说明了我们针对ONLYOFFICE文档进行的负载测试及其结果。主要目标是确定ONLYOFFICE文档所支持的并发连接数。",
 
   "CardsWhitePapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
   "CardsWhitePapersHeadPrivateRooms": "ONLYOFFICE私密房间：9个安全原则",
-  "CardsWhitePapersTitlePrivateRooms": "ONLYOFFICE私密房间：9个安全原则",
-  "CardsWhitePapersDescriptionPrivateRooms": "在这份白皮书中，我们描述了ONLYOFFICE 私密房间所遵循的原则，以确保在处理文件的每一个步骤中的安全。",
 
   "CardsWhitePapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
   "CardsWhitePapersHeadIntegrationExample": "ONLYOFFICE 文档集成案例",
-  "CardsWhitePapersTitleIntegrationExample": "ONLYOFFICE 文档集成案例",
-  "CardsWhitePapersDescriptionIntegrationExample": "在本白皮书中，我们将探讨ONLYOFFICE的开放API所提供的集成能力。",
 
   "CardsWhitePapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
   "CardsWhitePapersHeadForGovernmentOffices": "政府办公室的主权协作基础设施",
-  "CardsWhitePapersTitleForGovernmentOffices": "政府办公室的主权协作基础设施",
-  "CardsWhitePapersDescriptionForGovernmentOffices": "我们回顾了公共部门在其网络内建立IT环境以支持协作流程时面临的共同挑战，并假设一个基于开放、主权和安全技术的有效模式。",
-
-  "CardsWhitePapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
-  "CardsWhitePapersHeadEndToEndDocumentEncryption": "端到端文件加密",
-  "CardsWhitePapersTitleEndToEndDocumentEncryption": "端到端文件加密",
-  "CardsWhitePapersDescriptionEndToEndDocumentEncryption": "本白皮书介绍了ONLYOFFICE Workspace中端到端文档加密的组件和机制。",
-
-  "CardsWhitePapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
-  "CardsWhitePapersHeadDataEncryptionAtRest": "静态数据加密 1.0",
-  "CardsWhitePapersTitleDataEncryptionAtRest": "静态数据加密 1.0",
-  "CardsWhitePapersDescriptionDataEncryptionAtRest": "本白皮书描述了ONLYOFFICE工作区1.0版静态加密的组件和机制。",
-
 
   "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/zh/onlyoffice_secure_cloud_space.pdf",
   "CardsDatasheetsTitleSecureCloudSpace": "适合您团队的安全云空间",

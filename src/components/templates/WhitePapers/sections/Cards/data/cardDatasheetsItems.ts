@@ -1,138 +1,123 @@
-import { ICardDatasheetsItems } from "../../../WhitePapers.types";
+import { ICardItem } from "../../../WhitePapers.types";
 
-const cardDatasheetsItems: ICardDatasheetsItems[] = [
+const cardDatasheetsItems: ICardItem[] = [
   {
     id: 14,
+    type: "Datasheets",
     title: "WhitePapers",
     date: "2020-10-20T14:00Z",
     product: "CardsDatasheetsProductSecureCloudSpace",
-    image_url: "/images/templates/whitepapers/cards/secure.svg",
+    icon_position_y: "-1812px",
     download_url: "CardsDatasheetsPdfSecureCloudSpace",
     id_url: "onlyoffice_secure_cloud_space"
   },
   {
     id: 13,
+    type: "Datasheets",
     title: "CardsDatasheetsTitleForBanking",
     date: "2020-10-19T14:00Z",
     product: "ONLYOFFICEDocs",
-    image_url: "/images/templates/whitepapers/cards/banking.svg",
+    icon_position_y: "-1092px",
     download_url: "CardsDatasheetsPdfForBanking",
     id_url: "onlyoffice_document_processing_for_banking"
   },
   {
-    id: 12,
-    title: "CardsDatasheetsTitleWorkspaceForHealthInstitutions",
-    date: "2020-02-05T14:00Z",
-    product: "ONLYOFFICEWorkspace",
-    image_url: "/images/templates/whitepapers/cards/health.svg",
-    download_url: "CardsDatasheetsPdfWorkspaceForHealthInstitutions",
-    id_url: "onlyoffice_workspace_health"
-  },
-  {
     id: 11,
+    type: "Datasheets",
     title: "CardsDatasheetsTitleDocsInYourCluster",
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICEDocs",
-    image_url: "/images/templates/whitepapers/cards/powerful.svg",
+    icon_position_y: "-1362px",
     download_url: "CardsDatasheetsPdfDocsInYourCluster",
     id_url: "onlyoffice_docs_cluster"
   },
   {
     id: 10,
+    type: "Datasheets",
     title: "DocumentCollaboration",
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICEDocs",
-    image_url: "/images/templates/whitepapers/cards/education.svg",
+    icon_position_y: "-1452px",
     download_url: "CardsDatasheetsPdfDocsDatasheetEducation",
     id_url: "document_collaboration_in_education"
   },
   {
     id:  9,
+    type: "Datasheets",
     title: "ONLYOFFICEOwnCloud",
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICEDocs",
-    image_url: "/images/templates/whitepapers/cards/ownCloud.svg",
+    icon_position_y: "-1542px",
     download_url: "CardsDatasheetsPdfDocsForOwncloud",
     id_url: "onlyoffice_docs_for_owncloud"
   },
   {
     id:  8,
+    type: "Datasheets",
     title: "ONLYOFFICENextcloud",
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICEDocs",
-    image_url: "/images/templates/whitepapers/cards/nextCloud.svg",
+    icon_position_y: "-1182px",
     download_url: "CardsDatasheetsPdfDocsForNextcloud",
     id_url: "onlyoffice_docs_for_nextcloud"
   },
   {
     id:  7,
+    type: "Datasheets",
     title: "ONLYOFFICEDocs",
     date: "2020-02-04T14:00Z",
     product: "ONLYOFFICEDocs",
-    image_url: "/images/templates/whitepapers/cards/docs.svg",
+    icon_position_y: "-1272px",
     download_url: "CardsDatasheetsPdfDocs",
     id_url: "onlyoffice_docs"
   },
   {
     id:  6,
+    type: "Datasheets",
     title:"ONLYOFFICENon_Profit",
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICEDocs",
-    image_url: "/images/templates/whitepapers/cards/npo.svg",
+    icon_position_y: "-912px",
     download_url: "CardsDatasheetsPdfDocsForNonprofit",
     id_url: "onlyoffice_for_non_profit_organizations"
   },
   {
     id:  5,
+    type: "Datasheets",
     title:"ONLYOFFICEPharmaceutical",
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICEDocs",
-    image_url: "/images/templates/whitepapers/cards/pharmaceutical.svg",
+    icon_position_y: "-822px",
     download_url: "CardsDatasheetsPdfDocsForPharmaceutical",
     id_url: "onlyoffice_for_pharmaceutical_companies"
   },
   {
     id:  4,
+    type: "Datasheets",
     title:"ONLYOFFICEMedical",
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICEDocs",
-    image_url: "/images/templates/whitepapers/cards/medical.svg",
+    icon_position_y: "-730px",
     download_url: "CardsDatasheetsPdfDocsForMedical",
     id_url: "onlyoffice_for_medical_industry"
   },
   {
-    id:  3,
-    title:"ONLYOFFICELawFirms",
-    date: "2020-02-03T14:00Z",
-    product: "ONLYOFFICEWorkspace",
-    image_url: "/images/templates/whitepapers/cards/law.svg",
-    download_url: "CardsDatasheetsPdfDocsForLawFirms",
-    id_url: "onlyoffice_for_law_firms"
-  },
-  {
     id:  2,
+    type: "Datasheets",
     title:"ONLYOFFICEPrivateRooms",
     date: "2020-02-03T14:00Z",
     product: "ONLYOFFICEDocs",
-    image_url: "/images/templates/whitepapers/cards/private.svg",
+    icon_position_y: "-547px",
     download_url: "CardsDatasheetsPdfWorkspacePrivateRooms",
     id_url: "onlyoffice_private_room"
   },
   {
-    id:  1,
-    title:"ONLYOFFICEWorkspace",
-    date: "2020-02-03T14:00Z",
-    product: "ONLYOFFICEWorkspace",
-    image_url: "/images/templates/whitepapers/cards/workspace.svg",
-    download_url: "CardsDatasheetsPdfWorkspace",
-    id_url: "onlyoffice_workspace"
-  },
-  {
     id: 15,
-    title: "ONLYOFFICE Groups",
+    type: "Datasheets",
+    title: "ONLYOFFICEGroups",
     date: "2020-02-05T14:00Z",
-    product: "ONLYOFFICE Groups",
-    image_url: "/images/templates/whitepapers/cards/groups.svg",
+    product: "ONLYOFFICEGroups",
+    icon_position_y: "-1182px",
     download_url: "CardsDatasheetsPdfGroups",
     id_url: "onlyoffice_groups"
   }

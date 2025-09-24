@@ -52,44 +52,21 @@
 
   "CardsWhitePapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
   "CardsWhitePapersHeadStressTest": "ONLYOFFICE Docs 7.2.2. stresstest verslag",
-  "CardsWhitePapersTitleStressTest": "ONLYOFFICE Docs 7.2.2. stresstest verslag",
-  "CardsWhitePapersDescriptionStressTest": "Dit document beschrijft een stresstest die wij hebben uitgevoerd op ONLYOFFICE Docs 7.2.2 en de resultaten van de test. Het hoofddoel was het testen van de serverbelasting gelijk aan 10.000 verzoeken aan ONLYOFFICE Docs.",
 
   "CardsWhitePapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
   "CardsWhitePapersHeadForDevelopers": "ONLYOFFICE Documenten voor ontwikkelaars: architectuur, integratie en implementatie",
-  "CardsWhitePapersTitleForDevelopers": "ONLYOFFICE Documenten voor ontwikkelaars: architectuur, integratie en implementatie",
-  "CardsWhitePapersDescriptionForDevelopers": "In this paper, we explore the functionality, integration, and deployment methods of the ONLYOFFICE Docs online office suite.",
 
   "CardsWhitePapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
   "CardsWhitePapersHeadLoadTestReport": "ONLYOFFICE Docs load test verslag",
-  "CardsWhitePapersTitleLoadTestReport": "ONLYOFFICE Docs load test verslag",
-  "CardsWhitePapersDescriptionLoadTestReport": "Dit document beschrijft een load test die we hebben uitgevoerd op ONLYOFFICE Docs en de resultaten van de test. Het belangrijkste doel was om het aantal gelijktijdige verbindingen te bepalen dat ONLYOFFICE Docs kan ondersteunen.",
 
   "CardsWhitePapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
   "CardsWhitePapersHeadPrivateRooms": "ONLYOFFICE Privékamers: 9 beveiligingsprincipes",
-  "CardsWhitePapersTitlePrivateRooms": "ONLYOFFICE Privékamers: 9 beveiligingsprincipes",
-  "CardsWhitePapersDescriptionPrivateRooms": "In deze white paper beschrijven wij de principes die in ONLYOFFICE Privékamers worden gebruikt om veiligheid te garanderen bij iedere stap van het werken met documenten.",
 
   "CardsWhitePapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
   "CardsWhitePapersHeadIntegrationExample": "ONLYOFFICE Docs integratie voorbeeld",
-  "CardsWhitePapersTitleIntegrationExample": "ONLYOFFICE Docs integratie voorbeeld",
-  "CardsWhitePapersDescriptionIntegrationExample": "In deze whitepaper bekijken we de integratiemogelijkheden van ONLYOFFICE die worden geboden door zijn open API.",
 
   "CardsWhitePapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
   "CardsWhitePapersHeadForGovernmentOffices": "Soevereine samenwerking infrastructuren voor overheidskantoren",
-  "CardsWhitePapersTitleForGovernmentOffices": "Soevereine samenwerking infrastructuren voor overheidskantoren",
-  "CardsWhitePapersDescriptionForGovernmentOffices": "Wij bekijken de veelvoorkomende uitdagingen waarmee de overheidssector wordt geconfronteerd bij het opbouwen van een IT-omgeving binnen zijn netwerk ter ondersteuning van samenwerkingsprocessen en gaan uit van een doeltreffend model op basis van open, soevereine en veilige technologieën.",
-
-  "CardsWhitePapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
-  "CardsWhitePapersHeadEndToEndDocumentEncryption": "End-to-end document versleuteling",
-  "CardsWhitePapersTitleEndToEndDocumentEncryption": "End-to-end document versleuteling",
-  "CardsWhitePapersDescriptionEndToEndDocumentEncryption": "Deze White Paper beschrijft de componenten en mechanismen van end-to-end documentenversleuteling in ONLYOFFICE Workspace.",
-
-  "CardsWhitePapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
-  "CardsWhitePapersHeadDataEncryptionAtRest": "Gegevensversleuteling at rest 1.0",
-  "CardsWhitePapersTitleDataEncryptionAtRest": "Gegevensversleuteling at rest 1.0",
-  "CardsWhitePapersDescriptionDataEncryptionAtRest": "Deze White Paper beschrijft de componenten en mechanismen van de versie 1.0 van versleuteling at rest in ONLYOFFICE Workspace.",
-
 
   "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
   "CardsDatasheetsTitleSecureCloudSpace": "Veilige cloudruimte voor uw team en daarbuiten",

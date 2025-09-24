@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next';
 import { Text } from '@src/components/ui/Text';
 import { CardForm } from '../CardForm';
 import { formatDateCards } from '../../utils/formatDateCards';
-import { ICardWhitePapersItemsProps } from '@src/components/templates/WhitePapers/WhitePapers.types';
+import { ICardItem } from '@src/components/templates/WhitePapers/WhitePapers.types';
 import { ILocale } from '@src/types/locale';
 
 import {
@@ -19,7 +19,7 @@ import {
 } from './CardWhitePapers.styled';
 
 
-const CardWhitePapers = ({ head, title, date, download_url, description, locale, id_url }: ICardWhitePapersItemsProps & ILocale) => {
+const CardWhitePapers = ({ type, title, date, download_url, locale, product, id_url }: ICardItem & ILocale) => {
   const { t } = useTranslation("whitepapers");
   const [openModal, setOpenModal] = useState(false);
 
@@ -30,7 +30,7 @@ const CardWhitePapers = ({ head, title, date, download_url, description, locale,
           <StyledCardWhitePapersHeading
             level={5}
             size={6}
-            label={head}
+            label={title}
             color={"#fff"}
           />
           <Text
@@ -52,7 +52,6 @@ const CardWhitePapers = ({ head, title, date, download_url, description, locale,
             size={4}
           />
           <StyledCardWhitePapersDescription
-            label={description}
             size={4}
           />
         </StyledCardWhitePapersMain>

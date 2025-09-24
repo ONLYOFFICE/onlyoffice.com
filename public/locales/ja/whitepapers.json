@@ -52,44 +52,21 @@
 
   "CardsWhitePapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
   "CardsWhitePapersHeadStressTest": "ONLYOFFICE Docs 7.2.2.ストレステストレポート",
-  "CardsWhitePapersTitleStressTest": "ONLYOFFICE Docs 7.2.2.ストレステストレポート",
-  "CardsWhitePapersDescriptionStressTest": "本資料は、ONLYOFFICE Docs 7.2.2にて実施したストレステストとその結果について記載したものです。主な目的は、ONLYOFFICE Docsへの1万リクエストに相当するサーバー負荷をテストすることでした。",
 
   "CardsWhitePapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
   "CardsWhitePapersHeadForDevelopers": "開発者向けのONLYOFFICE Docs：アーキテクチャ、統合、デプロイメント",
-  "CardsWhitePapersTitleForDevelopers": "開発者向けのONLYOFFICE Docs：アーキテクチャ、統合、デプロイメント",
-  "CardsWhitePapersDescriptionForDevelopers": "本稿では、オンラインオフィススイート「ONLYOFFICE Docs」の機能、統合、導入方法をご紹介します。",
 
   "CardsWhitePapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
   "CardsWhitePapersHeadLoadTestReport": "【ONLYOFFICE Docs 】負荷テストレポート",
-  "CardsWhitePapersTitleLoadTestReport": "【ONLYOFFICE Docs 】負荷テストレポート",
-  "CardsWhitePapersDescriptionLoadTestReport": "このドキュメントでは、ONLYOFFICE Docsで行った負荷テストとその結果をご紹介します。主な目的は、ONLYOFFICE Docsがサポートできる同時接続数を調べることでした。",
 
   "CardsWhitePapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
   "CardsWhitePapersHeadPrivateRooms": "ONLYOFFICE プライベート・ルーム：9つのセキュリティ原則",
-  "CardsWhitePapersTitlePrivateRooms": "ONLYOFFICE プライベート・ルーム：9つのセキュリティ原則",
-  "CardsWhitePapersDescriptionPrivateRooms": "このホワイトペーパーでは、ドキュメントを使用するすべてのステップでセキュリティを確保するためにONLYOFFICEプライベート・ルームで使用される原則について説明します。",
 
   "CardsWhitePapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
   "CardsWhitePapersHeadIntegrationExample": "ONLYOFFICE Docs 統合の例",
-  "CardsWhitePapersTitleIntegrationExample": "ONLYOFFICE Docs 統合の例",
-  "CardsWhitePapersDescriptionIntegrationExample": "このホワイトペーパーでは、オープンAPIによって提供されるONLYOFFICE統合機能について説明します。",
 
   "CardsWhitePapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
   "CardsWhitePapersHeadForGovernmentOffices": "政府機関向けの独立なコラボレーション環境",
-  "CardsWhitePapersTitleForGovernmentOffices": "政府機関向けの独立なコラボレーション環境",
-  "CardsWhitePapersDescriptionForGovernmentOffices": "この文章では、プライベートネットワークでIT環境を作成する際に公共部門が直面する課題を検討し、オープンで安全な技術に基づく効果的なソリューションを提案しました。",
-
-  "CardsWhitePapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
-  "CardsWhitePapersHeadEndToEndDocumentEncryption": "エンド ツー エンドのドキュメント暗号化",
-  "CardsWhitePapersTitleEndToEndDocumentEncryption": "エンド ツー エンドのドキュメント暗号化",
-  "CardsWhitePapersDescriptionEndToEndDocumentEncryption": "このホワイト ペーパーでは、ONLYOFFICE Workspaceでのエンド ツー エンドのドキュメント暗号化のコンポーネントと機構について説明します。",
-
-  "CardsWhitePapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
-  "CardsWhitePapersHeadDataEncryptionAtRest": "休眠データの暗号化 1.0",
-  "CardsWhitePapersTitleDataEncryptionAtRest": "休眠データの暗号化 1.0",
-  "CardsWhitePapersDescriptionDataEncryptionAtRest": "このホワイト ペーパーでは、ONLYOFFICE Workspaceの休眠データの暗号化のバージョン1.0のコンポーネントと機構について説明します。",
-
 
   "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
   "CardsDatasheetsTitleSecureCloudSpace": "チーム内外に安全なクラウドスペースを",

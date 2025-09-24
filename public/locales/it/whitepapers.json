@@ -52,44 +52,21 @@
 
   "CardsWhitePapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
   "CardsWhitePapersHeadStressTest": "ONLYOFFICE Docs 7.2.2. stress test report",
-  "CardsWhitePapersTitleStressTest": "ONLYOFFICE Docs 7.2.2. stress test report",
-  "CardsWhitePapersDescriptionStressTest": "Questo documento descrive uno stress test che abbiamo condotto su ONLYOFFICE Docs 7.2.2 e i risultati del test. L'obiettivo principale era testare il carico del server pari a 10.000 richieste a ONLYOFFICE Docs.",
 
   "CardsWhitePapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
   "CardsWhitePapersHeadForDevelopers": "ONLYOFFICE Docs per sviluppatori: architettura, integrazione e distribuzione",
-  "CardsWhitePapersTitleForDevelopers": "ONLYOFFICE Docs per sviluppatori: architettura, integrazione e distribuzione",
-  "CardsWhitePapersDescriptionForDevelopers": "In questo documento, esploriamo la funzionalità, l'integrazione e i metodi di distribuzione della suite per ufficio online ONLYOFFICE Docs.",
 
   "CardsWhitePapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
   "CardsWhitePapersHeadLoadTestReport": "ONLYOFFICE Docs rapporto di prova di carico",
-  "CardsWhitePapersTitleLoadTestReport": "ONLYOFFICE Docs rapporto di prova di carico",
-  "CardsWhitePapersDescriptionLoadTestReport": "Questo documento descrive un test di carico che abbiamo condotto in ONLYOFFICE Docs e i resultati del test. L'obiettivo principale era quello di determinare il numero di connessioni simultanee che ONLYOFFICE Docs può supportare.",
 
   "CardsWhitePapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
   "CardsWhitePapersHeadPrivateRooms": "Private Rooms di ONLYOFFICE: 9 principi di sicurezza",
-  "CardsWhitePapersTitlePrivateRooms": "Private Rooms di ONLYOFFICE: 9 principi di sicurezza",
-  "CardsWhitePapersDescriptionPrivateRooms": "In questo libro bianco sono descritti i principi usati in Private Rooms di ONLYOFFICE per garantire la sicurezza ad ogni passo di lavoro con i documenti",
 
   "CardsWhitePapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
   "CardsWhitePapersHeadIntegrationExample": "Esempio di integrazione di ONLYOFFICE Docs",
-  "CardsWhitePapersTitleIntegrationExample": "Esempio di integrazione di ONLYOFFICE Docs",
-  "CardsWhitePapersDescriptionIntegrationExample": "In questo libro bianco esamineremo le capacità di integrazione di ONLYOFFICE fornite dalla sua API aperta",
 
   "CardsWhitePapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
   "CardsWhitePapersHeadForGovernmentOffices": "Infrastrutture collaborative sovrane per uffici della pubblica amministrazione",
-  "CardsWhitePapersTitleForGovernmentOffices": "Infrastrutture collaborative sovrane per uffici della pubblica amministrazione",
-  "CardsWhitePapersDescriptionForGovernmentOffices": "Esaminiamo le sfide comuni che il settore pubblico affronta quando sviluppa un ambiente IT all'interno della sua rete per sostenere i processi collaborativi e assumere un modello efficace basato su tecnologie aperte, sovrane e sicure.",
-
-  "CardsWhitePapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
-  "CardsWhitePapersHeadEndToEndDocumentEncryption": "Crittografia dei documenti end-to-end",
-  "CardsWhitePapersTitleEndToEndDocumentEncryption": "Crittografia dei documenti end-to-end",
-  "CardsWhitePapersDescriptionEndToEndDocumentEncryption": "Questo White Paper descrive i componenti e la meccanica della crittografia end-to-end dei documenti in ONLYOFFICE Workspace.",
-
-  "CardsWhitePapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
-  "CardsWhitePapersHeadDataEncryptionAtRest": "Crittografia dei dati inattivi 1.0",
-  "CardsWhitePapersTitleDataEncryptionAtRest": "Crittografia dei dati inattivi 1.0",
-  "CardsWhitePapersDescriptionDataEncryptionAtRest": "Questo White Paper descrive i componenti e meccanica della versione 1.0 della crittografia di dati inattivi in ONLYOFFICE Workspace.",
-
 
   "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
   "CardsDatasheetsTitleSecureCloudSpace": "Spazio cloud sicuro per il tuo team e non solo",

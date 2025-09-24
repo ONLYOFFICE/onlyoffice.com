@@ -2,7 +2,6 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-import { CardWhitePapers } from "./sub-components/CardWhitePapers";
 import { CardDatasheets } from "./sub-components/CardDatasheets";
 import { cardWhitePapersItems } from "./data/cardWhitePapersItems";
 import { cardDatasheetsItems } from "./data/cardDatasheetsItems";
@@ -19,7 +18,6 @@ import {
   StyledCardsSortModules,
   StyledCardsSortDate,
   StyledCardsContent,
-  StyledCardsHeading,
   StyledCardsList,
   StyledCardsRefineHeading,
   StyledCardsRefineList,
@@ -64,7 +62,9 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
   const { t } = useTranslation("whitepapers");
 
   const [dataSheetsDisplayCount, setDataSheetsDisplayCount] = useState<number>(6);
+  const [whitepapersDisplayCount, setWhitepapersDisplayCount] = useState<number>(6);
   const [dataSheetsShowButton, setDataSheetsShowButton] = useState<boolean>(true);
+  const [whitePaperShowButton, setWhitePaperShowButton] = useState<boolean>(true)
   const [choosedFilter, setChoosedFilter] = useState<TFilterKey>("CardsFiltersAll");
   const [choosedModule, setChoosedModule] = useState<TFilterKey>("CardsFiltersAll");
   const [choosedDate, setChoosedDate] = useState<TSortDateKey>("CardsSortNewestOldest");
@@ -81,27 +81,36 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
   const { filterCounter } = useFilterCounter(choosedFilter, choosedModule, choosedDate);
 
   useHandleClickOutside(setActiveDropdown, filterBtnRef, moduleBtnRef, dateBtnRef);
+  
+  const allCards = useMemo(
+    () => [
+      ...cardWhitePapersItems, 
+      ...cardDatasheetsItems.filter(item => !(locale !== "fr" && item.id === 15))],
+    [locale]
+  );
 
   const sortModules = useMemo(() => {
+    const datasheets = allCards.filter(c => c.type === "Datasheets");
+
     if (locale !== "fr") {
-      const sorted = [...cardDatasheetsItems].filter((item) => item.id !== 15).sort((a, b) =>
-        a.title.localeCompare(b.title)
-      );
+      const sorted = datasheets
+      .filter((item) => Number(item.id) !== 15)
+      .sort((a, b) => a.title.localeCompare(b.title));
       return [{ title: "CardsFiltersAll" as TFilterKey }, ...sorted];
     } else {
-      const sorted = [...cardDatasheetsItems].sort((a, b) =>
+      const sorted = [...datasheets].sort((a, b) =>
         a.title.localeCompare(b.title)
       );
       return [{ title: "CardsFiltersAll" as TFilterKey }, ...sorted];
     }
-  }, [locale]);
+  }, [locale, allCards]);
 
-  const { refineWhitepaperItems, refineDatasheetsItems } = useRefineCardsItems(
-    cardWhitePapersItems,
-    cardDatasheetsItems,
+  const { refinedItems } = useRefineCardsItems(
+    allCards,
     sortValue,
     choosedModule,
-    choosedDate
+    choosedDate,
+    choosedFilter
   );
 
   const openMobileFilters = () => {
@@ -150,9 +159,15 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
     setActiveDropdown(prev => prev === dropdown ? null : dropdown);
   }, []);
 
-  const handleShowMore = () => {
-    setDataSheetsDisplayCount(cardDatasheetsItems.length);
-    setDataSheetsShowButton(false);
+  const handleShowMore = (type: string) => {
+    if (type === "WhitePapers") {
+      setWhitepapersDisplayCount(refinedItems.filter(i => i.type === "WhitePapers").length)
+      setWhitePaperShowButton(false);
+    }
+    if (type === "Datasheets") {
+      setDataSheetsDisplayCount(refinedItems.filter(i => i.type === "Datasheets").length)
+      setDataSheetsShowButton(false);
+    }
   };
 
   useEffect(() => {
@@ -268,65 +283,51 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
             </StyledCardsFilterMobIcon>
           </StyledCardsFiltersWrapper>
 
-          {refineWhitepaperItems.length > 0 &&
-            (t(choosedFilter) === t("WhitePapers") || t(choosedFilter) === t("CardsFiltersAll")) && (
+          {refinedItems.length > 0 &&
+              (
               <StyledCardsContent>
-                <StyledCardsHeading label={t("WhitePapers")} textAlign="center" level={2} size={4} />
                 <StyledCardsList>
-                  {refineWhitepaperItems.map(item => (
-                    <CardWhitePapers
-                      key={item.id}
-                      head={t(item.head)}
-                      title={t(item.title)}
-                      date={item.date}
-                      download_url={t(item.download_url)}
-                      description={t(item.description)}
-                      locale={locale}
-                      id_url={item.id_url}
-                    />
-                  ))}
-                </StyledCardsList>
-              </StyledCardsContent>
-            )
-          }
-          {refineDatasheetsItems.length > 0 &&
-            (t(choosedFilter) === t("Datasheets") || t(choosedFilter) === t("CardsFiltersAll")) && (
-              <StyledCardsContent>
-                <StyledCardsHeading label={t("Datasheets")} textAlign="center" level={2} size={4} />
-                <StyledCardsList>
-                  {locale !== "fr" && refineDatasheetsItems.map((item, index) => (
-                    item.id !== 15 && (
-                      <CardDatasheets
-                        key={item.id}
-                        title={t(item.title)}
-                        product={t(item.product)}
-                        image_url={item.image_url}
-                        download_url={t(item.download_url)}
-                        displayOther={index < dataSheetsDisplayCount}
-                        locale={locale}
-                        id_url={item.id_url}
-                      />
-                    )
-                  ))}
-
-                  {locale === "fr" && refineDatasheetsItems.map((item, index) => (
+                  {refinedItems.map((item, index) => {
+                    const whitepaperIndex = refinedItems.filter(i => i.type === "WhitePapers").indexOf(item);
+                    const datasheetIndex = refinedItems.filter(i => i.type === "Datasheets").indexOf(item);
+                  return (
                     <CardDatasheets
-                      key={item.id}
+                      key={`${item.type}-${item.id}`}
+                      {...item}
                       title={t(item.title)}
                       product={t(item.product)}
-                      image_url={item.image_url}
                       download_url={t(item.download_url)}
-                      displayOther={index < dataSheetsDisplayCount}
-                      locale={locale}
-                      id_url={item.id_url}
+                      displayOther={
+                      item.type === "Datasheets"
+                      ? datasheetIndex > -1 && datasheetIndex < dataSheetsDisplayCount
+                      : item.type === "WhitePapers"
+                      ? whitepaperIndex > -1 && whitepaperIndex < whitepapersDisplayCount
+                      : true }
+                    locale={locale}
                     />
-                  ))}
+                  )})}
                 </StyledCardsList>
-                {choosedModule === "CardsFiltersAll" && (
-                  <StyledCardsDatasheetsShowBtn $display={dataSheetsShowButton} onClick={handleShowMore}>
-                    {t("CardsButtonShowMore")}
-                  </StyledCardsDatasheetsShowBtn>
-                )}
+                {choosedFilter !== "Datasheets" &&
+                  whitepapersDisplayCount < refinedItems.filter(i => i.type === "WhitePapers").length && (
+                    <StyledCardsDatasheetsShowBtn
+                      variant="tertiary"
+                      $display={whitePaperShowButton}
+                      onClick={() => handleShowMore("WhitePapers")}
+                    >
+                      {t("CardsButtonShowMore")}
+                    </StyledCardsDatasheetsShowBtn>
+                  )}
+
+                {choosedFilter !== "WhitePapers" &&
+                  dataSheetsDisplayCount < refinedItems.filter(i => i.type === "Datasheets").length && (
+                    <StyledCardsDatasheetsShowBtn
+                      variant="tertiary"
+                      $display={dataSheetsShowButton}
+                      onClick={() => handleShowMore("Datasheets")}
+                    >
+                      {t("CardsButtonShowMore")}
+                    </StyledCardsDatasheetsShowBtn>
+                  )}
               </StyledCardsContent>
             )
           }

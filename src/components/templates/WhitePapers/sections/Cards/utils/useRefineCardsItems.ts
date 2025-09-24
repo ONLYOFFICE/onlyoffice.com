@@ -1,54 +1,48 @@
 import { useMemo } from "react";
-import { ICardDatasheetsItems, ICardWhitePapersItems } from "../../../WhitePapers.types";
+import { ICardItem } from "../../../WhitePapers.types";
 import { useTranslation } from "next-i18next";
 
 const useRefineCardsItems = (
-  cardWhitePapersItems: ICardWhitePapersItems[],
-  cardDatasheetsItems: ICardDatasheetsItems[],
+  allCards: ICardItem[],
   sortValue: string,
   choosedModule: string,
-  choosedDate: string
+  choosedDate: string,
+  choosedFilter: string
 ) => {
   const { t } = useTranslation("whitepapers");
 
-  const refineWhitepaperItems = useMemo(() => {
-    const filteredWhitePapers = cardWhitePapersItems.filter((item) => {
-      return t(item.title).toLowerCase().includes(sortValue.toLowerCase());
-    });
+  const refinedItems = useMemo(() => {
+    let filtered = allCards;
 
-    const filteredSortedWhitePapers = filteredWhitePapers.sort((a, b) => {
-      if (choosedDate === "CardsSortNewestOldest") {
-        return b.date.localeCompare(a.date);
-      }
-      return a.date.localeCompare(b.date);
-    });
+    if (choosedFilter && choosedFilter !== "CardsFiltersAll") {
+      filtered = filtered.filter(item => item.type === choosedFilter);
+    }
+    
+    if (sortValue) {
+      filtered = filtered.filter(item =>
+        t(item.title).toLowerCase().includes(sortValue.toLowerCase())
+      );
+    }
 
-    return filteredSortedWhitePapers;
-  }, [t, sortValue, cardWhitePapersItems, choosedDate]);
+    if (
+      choosedModule && choosedModule !== "CardsFiltersAll" && choosedFilter === "Datasheets"
+    ) {
+      filtered = filtered.filter(item =>
+        item.title?.toLowerCase().includes(choosedModule.toLowerCase()) ||
+        item.product?.toLowerCase().includes(choosedModule.toLowerCase())
+      );
+    }
 
-  const refineDatasheetsItems = useMemo(() => {
-    const filteredDatasheets = cardDatasheetsItems.filter((item) => {
-      return t(item.title).toLowerCase().includes(sortValue.toLowerCase());
-    })
+    filtered.sort((a, b) =>
+      choosedDate === "CardsSortNewestOldest"
+        ? b.date.localeCompare(a.date)
+        : a.date.localeCompare(b.date)
+    );
 
-    const filteredModuleDatasheets = filteredDatasheets.filter((item) => {
-      if (choosedModule === "CardsFiltersAll") {
-        return true;
-      }
-      return item.title.toLowerCase().includes(choosedModule.toLowerCase());
-    })
+    return filtered;
+  }, [allCards, t, sortValue, choosedModule, choosedDate, choosedFilter]);
 
-    const filteredSortedDatasheets = filteredModuleDatasheets.sort((a, b) => {
-      if (choosedDate === "CardsSortNewestOldest") {
-        return b.date.localeCompare(a.date);
-      }
-      return a.date.localeCompare(b.date);
-    });
-
-    return filteredSortedDatasheets;
-  }, [t, sortValue, cardDatasheetsItems, choosedModule, choosedDate]);
-
-  return { refineWhitepaperItems, refineDatasheetsItems };
-}
+  return { refinedItems };
+};
 
 export { useRefineCardsItems };

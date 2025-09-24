@@ -52,44 +52,21 @@
 
   "CardsWhitePapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
   "CardsWhitePapersHeadStressTest": "Zpráva o zátěžovém testu ONLYOFFICE Docs 7.2.2.",
-  "CardsWhitePapersTitleStressTest": "Zpráva o zátěžovém testu ONLYOFFICE Docs 7.2.2.",
-  "CardsWhitePapersDescriptionStressTest": "Tento dokument popisuje zátěžový test, který jsme provedli na ONLYOFFICE Docs 7.2.2, a jeho výsledky. Hlavním cílem bylo otestovat zátěž serveru rovnající se 10 000 požadavkům na ONLYOFFICE Docs.",
 
   "CardsWhitePapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
   "CardsWhitePapersHeadForDevelopers": "ONLYOFFICE Docs pro vývojáře: architektura, integrace a nasazení",
-  "CardsWhitePapersTitleForDevelopers": "ONLYOFFICE Docs pro vývojáře: architektura, integrace a nasazení",
-  "CardsWhitePapersDescriptionForDevelopers": "In this paper, we explore the functionality, integration, and deployment methods of the ONLYOFFICE Docs online office suite.",
 
   "CardsWhitePapersPdfLoadTestReport": "/images/templates/whitepapers/pdf/load_test_report.pdf",
   "CardsWhitePapersHeadLoadTestReport": "Zpráva o zátěžovém testu ONLYOFFICE Docs",
-  "CardsWhitePapersTitleLoadTestReport": "Zpráva o zátěžovém testu ONLYOFFICE Docs",
-  "CardsWhitePapersDescriptionLoadTestReport": "Tento dokument popisuje zátěžový test, který jsme provedli na ONLYOFFICE Docs, a jeho výsledky. Hlavním cílem bylo zjistit počet současných připojení, která dokáže ONLYOFFICE Docs podporovat.",
 
   "CardsWhitePapersPdfPrivateRooms": "/images/templates/whitepapers/pdf/private_rooms_9_security_principles.pdf",
   "CardsWhitePapersHeadPrivateRooms": "Soukromé místnosti ONLYOFFICE: 9 bezpečnostních zásad",
-  "CardsWhitePapersTitlePrivateRooms": "Soukromé místnosti ONLYOFFICE: 9 bezpečnostních zásad",
-  "CardsWhitePapersDescriptionPrivateRooms": "V této bílé knize popisujeme zásady používané v ONLYOFFICE Private Rooms k zajištění bezpečnosti na každém kroku práce s dokumenty.",
 
   "CardsWhitePapersPdfIntegrationExample": "/images/templates/whitepapers/pdf/integration_example.pdf",
   "CardsWhitePapersHeadIntegrationExample": "Příklad integrace ONLYOFFICE Docs",
-  "CardsWhitePapersTitleIntegrationExample": "Příklad integrace ONLYOFFICE Docs",
-  "CardsWhitePapersDescriptionIntegrationExample": "V této bílé knize se podíváme na možnosti integrace ONLYOFFICE, které poskytuje její otevřené rozhraní API.",
 
   "CardsWhitePapersPdfForGovernmentOffices": "/images/templates/whitepapers/pdf/onlyoffice_for_government_offices.pdf",
   "CardsWhitePapersHeadForGovernmentOffices": "Suverénní infrastruktura pro spolupráci pro vládní úřady",
-  "CardsWhitePapersTitleForGovernmentOffices": "Suverénní infrastruktura pro spolupráci pro vládní úřady",
-  "CardsWhitePapersDescriptionForGovernmentOffices": "Analyzujeme časté výzvy, kterým veřejný sektor čelí při budování prostředí IT v rámci své sítě, abychom podpořili procesy spolupráce a převzali efektivní model založený na otevřených, svrchovaných a bezpečných technologiích.",
-
-  "CardsWhitePapersPdfEndToEndDocumentEncryption": "/images/templates/whitepapers/pdf/end-to-end_document_encryption.pdf",
-  "CardsWhitePapersHeadEndToEndDocumentEncryption": "End-to-end šifrování dokumentů encryption",
-  "CardsWhitePapersTitleEndToEndDocumentEncryption": "End-to-end šifrování dokumentů encryption",
-  "CardsWhitePapersDescriptionEndToEndDocumentEncryption": "Tato bílá kniha popisuje komponenty a mechaniku šifrování dokumentů typu end-to-end v pracovním prostoru ONLYOFFICE Workspace.",
-
-  "CardsWhitePapersPdfDataEncryptionAtRest": "/images/templates/whitepapers/pdf/data_encryption_at_rest_1.0.pdf",
-  "CardsWhitePapersHeadDataEncryptionAtRest": "Šifrování dat v klidu 1.0",
-  "CardsWhitePapersTitleDataEncryptionAtRest": "Šifrování dat v klidu 1.0",
-  "CardsWhitePapersDescriptionDataEncryptionAtRest": "Tato bílá kniha popisuje komponenty a mechaniku šifrování verze 1.0 v klidu v pracovním prostoru ONLYOFFICE Workspace.",
-
 
   "CardsDatasheetsPdfSecureCloudSpace": "/images/templates/whitepapers/pdf/onlyoffice_secure_cloud_space.pdf",
   "CardsDatasheetsTitleSecureCloudSpace": "Bezpečný cloudový prostor pro váš tým i další uživatele",
