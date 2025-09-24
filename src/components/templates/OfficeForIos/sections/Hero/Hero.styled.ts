@@ -5,8 +5,13 @@ import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import { Link } from "@src/components/ui/Link";
-
+import { DownloadButton } from "@src/components/ui/DownloadButton";
 import { getAssetUrl } from "@utils/getAssetUrl";
+
+const StyledDownloadButton = styled(DownloadButton)`
+  background-color: #000000;
+`;
+
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
   overflow: hidden;
@@ -324,4 +329,5 @@ export {
   StyledHeroFooterImgLink,
   StyledHeroFooterHeading,
   StyledHeroFooterText,
+  StyledDownloadButton,
 };

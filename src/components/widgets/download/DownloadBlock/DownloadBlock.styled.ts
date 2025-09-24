@@ -9,6 +9,7 @@ const StyledDownloadBlock = styled.div`
   display: flex;
   flex-direction: column;
   border: 1px solid #e5e5e5;
+  border-radius: 9px;
   height: 100%;
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0px rgba(85, 85, 85, 0.1);
@@ -105,8 +106,9 @@ const StyledDownloadBlockButtons = styled.div`
 `;
 
 const StyledDownloadBlockButton = styled(Button)`
-  padding: 14px;
+  padding: 12px 14px;
   letter-spacing: initial;
+  min-height: 48px;
 
   &:not(:last-child) {
     margin-right: 8px;
@@ -124,6 +126,7 @@ const StyledDownloadBlockIconButton = styled(Button)`
   width: 48px;
   min-width: 48px;
   height: 48px;
+  min-height: 48px;
 
   svg {
     path {

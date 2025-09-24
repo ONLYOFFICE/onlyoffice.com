@@ -110,7 +110,7 @@ const FeatureDescription = styled(Text)`
 
 const StyledSwiperSlide = styled(SwiperSlide)`
   display: flex;
-  height: auto; // важно, чтобы не было фиксированной высоты
+  height: auto;
 `;
 
 export {

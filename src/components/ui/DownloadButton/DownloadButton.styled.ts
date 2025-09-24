@@ -122,7 +122,6 @@ const StyledDownloadButton = styled(Link)<{
             `
           : $platform === "app-store"
             ? css`
-                background-color: #000000;
                 background-image: ${$imageSrc && `url(${$imageSrc})`};
                 background-repeat: no-repeat;
                 background-position: center;

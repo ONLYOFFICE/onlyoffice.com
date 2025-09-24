@@ -3,6 +3,11 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { DownloadButton } from "@src/components/ui/DownloadButton";
+
+const StyledDownloadButton = styled(DownloadButton)`
+  background-color: #000000;
+`;
 
 const StyledChooseSection = styled(Section)`
   background-color: #333333;
@@ -107,4 +112,5 @@ export {
   StyledChooseList,
   StyledChooseButton,
   StyledChooseSubtitle,
+  StyledDownloadButton,
 };
