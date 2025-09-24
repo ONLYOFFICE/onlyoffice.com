@@ -27,7 +27,7 @@ const cardDatasheetsItems: ICardItem[] = [
     title: "CardsDatasheetsTitleDocsInYourCluster",
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICEDocs",
-    icon_position_y: "-1362px",
+    icon_position_y: "-1632px",
     download_url: "CardsDatasheetsPdfDocsInYourCluster",
     id_url: "onlyoffice_docs_cluster"
   },
@@ -117,7 +117,7 @@ const cardDatasheetsItems: ICardItem[] = [
     title: "ONLYOFFICEGroups",
     date: "2020-02-05T14:00Z",
     product: "ONLYOFFICEGroups",
-    icon_position_y: "-1182px",
+    icon_position_y: "-1362px",
     download_url: "CardsDatasheetsPdfGroups",
     id_url: "onlyoffice_groups"
   }
