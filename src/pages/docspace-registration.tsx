@@ -10,8 +10,7 @@ import {
   DocSpaceRegistrationTemplate,
   IDocSpaceRegistrationTemplate,
 } from "@src/components/templates/DocSpaceRegistration";
-import { validateKeys } from "@src/lib/requests/thirdparty/validate";
-import { findByEmail } from "@src/lib/requests/thirdparty/findByEmail";
+import { validateKeys, findByEmail } from "@src/lib/requests/thirdparty";
 
 const DocSpaceRegistrationPage = ({
   locale,
@@ -75,34 +74,56 @@ export async function getServerSideProps({
   let tenants = null;
 
   if (epkey && eskey) {
-    const validateKeysData = await validateKeys({
-      epkey: epkey.slice(0, -1),
-      eskey,
-      page: `reg_page_${eskey}`,
-    });
-
-    if (!validateKeysData.data?.valid) {
-      return {
-        redirect: {
-          destination: "/docspace-registration-proxy?errorCode=3",
-          permanent: false,
-        },
-      };
-    }
-
-    if (!validateKeysData.data.email) {
-      return {
-        redirect: {
-          destination: "/docspace-registration-proxy?errorCode=1",
-          permanent: false,
-        },
-      };
-    }
-
     try {
-      tenants = await findByEmail({ email: validateKeysData.data.email });
+      const validateKeysData = await validateKeys({
+        emailKey: epkey.slice(0, -1),
+        linkKey: eskey,
+        page: `reg_page_${eskey}`,
+      });
 
-      if (tenants.data.length === 0) {
+      if (validateKeysData.status !== 200) {
+        return {
+          redirect: {
+            destination: "/docspace-registration-proxy?errorCode=2",
+            permanent: false,
+          },
+        };
+      }
+
+      if (!validateKeysData.data?.valid) {
+        return {
+          redirect: {
+            destination: "/docspace-registration-proxy?errorCode=3",
+            permanent: false,
+          },
+        };
+      }
+
+      if (!validateKeysData.data.email) {
+        return {
+          redirect: {
+            destination: "/docspace-registration-proxy?errorCode=1",
+            permanent: false,
+          },
+        };
+      }
+
+      const findByEmailData = await findByEmail({
+        email: validateKeysData.data.email,
+      });
+
+      if (findByEmailData.status !== 200 || !findByEmailData.data) {
+        return {
+          redirect: {
+            destination: "/docspace-registration-proxy?errorCode=2",
+            permanent: false,
+          },
+        };
+      }
+
+      tenants = findByEmailData.data;
+
+      if (!Array.isArray(tenants) || tenants.length === 0) {
         return {
           redirect: {
             destination: `/docspace-registration-proxy?${queryParams}`,

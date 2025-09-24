@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import { IMailModal } from "./SubscribeModal.types";
 import {
   StyledMailModal,
@@ -21,6 +22,7 @@ import { ISubscribeInput } from "@src/components/widgets/SubscribeInput";
 
 const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
   const { t } = useTranslation("SubscribeModal");
+  const { locale } = useRouter();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -78,6 +80,7 @@ const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
           firstName: formData.name,
           email: formData.email,
           type: "Common",
+          locale,
         }),
       });
 

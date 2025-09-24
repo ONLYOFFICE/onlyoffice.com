@@ -8,7 +8,7 @@ import {
   DocSpaceRegistrationProxyTemplate,
   IDocSpaceRegistrationProxyTemplate,
 } from "@src/components/templates/DocSpaceRegistrationProxy";
-import { validateKeys } from "@src/lib/requests/thirdparty/validate";
+import { validateKeys } from "@src/lib/requests/thirdparty";
 import { register } from "@src/lib/requests/thirdparty/register";
 
 const DocSpaceRegistrationProxyPage = ({
@@ -47,43 +47,68 @@ export async function getServerSideProps({
 
   let errorMessage = "";
 
+  const handleError = async (message: string) => ({
+    props: {
+      ...(await serverSideTranslations(locale, [
+        "common",
+        "docspace-registration-proxy",
+      ])),
+      errorMessage: message,
+    },
+  });
+
   if (!epkey || !eskey) {
     errorMessage = "Invalid parameters";
   } else {
-    const validateKeysData = await validateKeys({
-      epkey: epkey.slice(0, -1),
-      eskey,
-      page: `reg_proxy_page_${eskey}`,
-    });
-
-    if (!validateKeysData.data?.valid) {
-      errorMessage = "Invalid, expired or already used link";
-    } else if (validateKeysData.data?.email) {
-      const registerData = await register({
-        email: validateKeysData.data.email,
-        thirdPartyProfile: transport,
-        language: language || "",
-        awsRegion: awsRegion || "",
-        spam,
-        partnerId: partnerId || "",
-        affiliateId: affiliateId || "",
-        campaign: campaign || "",
-        ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
+    try {
+      const validateKeysData = await validateKeys({
+        emailKey: epkey.slice(0, -1),
+        linkKey: eskey,
+        page: `reg_proxy_page_${eskey}`,
       });
 
-      if (registerData.data.reference) {
-        if (registerData.data.tenant != null)
-        {
-          sendGA(registerData.data.tenant.ownerId, query.desktop === "true", String(query.store), req.cookies?._ga || "");
+      if (validateKeysData.status !== 200 || !validateKeysData.data) {
+        return handleError("Failed to validate the link");
+      } else if (!validateKeysData.data.valid) {
+        return handleError("Invalid, expired or already used link");
+      } else if (validateKeysData.data.email) {
+        const registerData = await register({
+          email: validateKeysData.data.email,
+          thirdPartyProfile: transport,
+          language: language || "",
+          awsRegion: awsRegion || "",
+          spam,
+          partnerId: partnerId || "",
+          affiliateId: affiliateId || "",
+          campaign: campaign || "",
+          ip:
+            req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
+        });
+
+        if (registerData.status !== 200) {
+          return handleError("Unexpected error while processing your request");
         }
 
-        return {
-          redirect: {
-            destination: registerData.data.reference + "&wizard=true",
-            permanent: false,
-          },
-        };
+        if (registerData.data.reference) {
+          if (registerData.data.tenant != null) {
+            sendGA(
+              registerData.data.tenant.ownerId,
+              query.desktop === "true",
+              String(query.store),
+              req.cookies?._ga || "",
+            );
+          }
+
+          return {
+            redirect: {
+              destination: registerData.data.reference + "&wizard=true",
+              permanent: false,
+            },
+          };
+        }
       }
+    } catch {
+      return handleError("Unexpected error while processing your request");
     }
   }
 
@@ -98,7 +123,12 @@ export async function getServerSideProps({
   };
 }
 
-function sendGA(ownerId: string, isDesktop: boolean, store: string, _ga: string) {
+function sendGA(
+  ownerId: string,
+  isDesktop: boolean,
+  store: string,
+  _ga: string,
+) {
   let eventName;
   const isTestSite = process.env.NEXT_PUBLIC_TESTING_ON === "true";
 
@@ -109,14 +139,11 @@ function sendGA(ownerId: string, isDesktop: boolean, store: string, _ga: string)
         ? "Test_GA_Desktop" + store
         : "Portal_Created_Desktop" + store;
     } else {
-      eventName = isTestSite
-        ? "Test_GA"
-        : "DocSpace_Portal_Created";
+      eventName = isTestSite ? "Test_GA" : "DocSpace_Portal_Created";
     }
     sendReqToGA(eventName, ownerId, _ga).catch((err) =>
-      console.error("sendGA error", err)
+      console.error("sendGA error", err),
     );
-
   } catch (ex) {
     console.error("docspace-registration-proxy.aspx: " + ex);
   }
@@ -129,7 +156,7 @@ async function sendReqToGA(key: string, ownerId: string, _ga: string) {
   }
 
   if (_ga) {
-    const _gaParts = _ga.split('.');
+    const _gaParts = _ga.split(".");
     if (_gaParts.length >= 2) {
       _ga = _gaParts.slice(-2).join(".");
     }

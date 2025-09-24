@@ -5,5 +5,4 @@ export interface IInitialformData {
   link: string;
   moreDetails: string;
   hCaptcha: string | null;
-  errorText: string;
 }

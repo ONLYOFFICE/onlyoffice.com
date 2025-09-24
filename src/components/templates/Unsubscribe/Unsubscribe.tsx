@@ -97,6 +97,7 @@ const UnsubscribeTemplate = ({ email }: IUnsubscribeTemplate) => {
         firstName: "",
         email: value,
         type: "Common",
+        locale: router.locale,
       }),
     });
     const data = await res.json();

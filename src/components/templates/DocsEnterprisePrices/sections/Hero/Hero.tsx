@@ -20,7 +20,13 @@ import { IDocsEnterprisePricesFormData } from "./Hero.types";
 import { IDocsEnterprisePricesTemplate } from "@src/components/templates/DocsEnterprisePrices";
 import { getProduct } from "./utils/getProduct";
 import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
-import { loadRewardful, addClientReferenceOnReady, getClientReferenceParam, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
+import {
+  loadRewardful,
+  addClientReferenceOnReady,
+  getClientReferenceParam,
+  getClientReferenceId,
+  getAffiliateToken,
+} from "@src/utils/rewardful";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
@@ -105,7 +111,6 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         locale,
-        referer: document.referrer,
         fullName: quoteFormData.fullName,
         email: quoteFormData.email,
         phone: quoteFormData.phone,
@@ -523,7 +528,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
             buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
             onSubmitRequest={onSubmitRequest}
             onClose={() => setIsModalOpen(false)}
-            pageTrackName={isOrderNow ? "ie-order-now" : "ie-gaq" }
+            pageTrackName={isOrderNow ? "ie-order-now" : "ie-gaq"}
           />
         </StyledHeroWrapper>
 

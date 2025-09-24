@@ -355,7 +355,7 @@ const Hero = () => {
 
       const dataSupport = await responseSupport.json();
 
-      if (dataSupport.status === "errorHCaptchaInvalid") {
+      if (dataSupport.status === "hCaptchaInvalid") {
         setLoadStatus("error");
         resetLoadStatus();
         return;

@@ -159,7 +159,7 @@ const CardForm = ({
     try {
       setStatus("loading");
 
-      const responsePrivateRooms = await fetch("/api/private-rooms", {
+      const responsePrivateRooms = await fetch("/api/whitepapers", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -169,13 +169,14 @@ const CardForm = ({
           company: formData.companyName ?? "",
           email: formData.email ?? "",
           from: from ?? "",
+          id_url: "onlyoffice_private_room",
           hCaptchaResponse: formData.hCaptcha ?? null,
         }),
       });
       const dataPrivateRooms = await responsePrivateRooms.json();
 
       if (
-        dataPrivateRooms.status === "errorHCaptchaInvalid" ||
+        dataPrivateRooms.status === "hCaptchaInvalid" ||
         dataPrivateRooms.status === "error"
       ) {
         setStatus("error");

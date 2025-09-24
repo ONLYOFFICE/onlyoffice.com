@@ -7,7 +7,7 @@ import {
   StyledCanceledHCaptchaWrapper,
 } from "./CanceledForm.styled";
 import { Checkbox } from "@src/components/ui/Checkbox";
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useCallback, useRef } from "react";
 import { TextArea } from "@src/components/ui/TextArea";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
@@ -16,7 +16,6 @@ import { validateEmail } from "@src/utils/validators";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import { Input } from "@src/components/ui/Input";
-import { useRouter } from "next/router";
 import {
   ICanceledFormData,
   TMarkKeys,
@@ -24,6 +23,7 @@ import {
 } from "./CanceledForm.types";
 import { Heading } from "@src/components/ui/Heading";
 import { validateTestEmail } from "@src/utils/IsTestEmail";
+import { getFromParam } from "@src/utils/getParams";
 
 const CanceledForm = ({
   tableName,
@@ -34,10 +34,10 @@ const CanceledForm = ({
   locale,
 }: CanceledFormProps) => {
   const { t } = useTranslation("canceled");
-  const router = useRouter();
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const [formStatus, setFormStatus] =
     useState<ILoaderButton["status"]>("default");
+  const from = getFromParam();
 
   const initialFormData = {
     checkboxes: "Other",
@@ -49,13 +49,12 @@ const CanceledForm = ({
     mark6: 1,
     message: "",
     email: "",
-    from: "",
+    from: from ?? "",
     spam: 0,
     calls: 1,
     hCaptchaResponse: null,
     table_name: tableName,
     locale,
-    referer: "",
   };
   const [formData, setFormData] = useState<ICanceledFormData>(initialFormData);
   const [isEmpty, setIsEmpty] = useState({
@@ -126,29 +125,6 @@ const CanceledForm = ({
       ? formData.message.length > 0 && isEmailValid && isHCaptchaPassed
       : isEmailValid && isHCaptchaPassed);
 
-  useEffect(() => {
-    if (router.isReady) {
-      let fromParam =
-        typeof router.query.from === "string" ? router.query.from : "";
-      if (!fromParam) {
-        const path =
-          typeof window !== "undefined" ? window.location.pathname : "";
-        fromParam =
-          path.split("/").splice(1, 2).join("/").split(".").shift() || "";
-      }
-      setFormData((prev) => ({ ...prev, from: fromParam }));
-    }
-  }, [router.isReady, router.query.from]);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setFormData((prev) => ({
-        ...prev,
-        referer: document.referrer,
-      }));
-    }
-  }, []);
-
   const onSubmit = async () => {
     if (formStatus === "loading") return;
 
@@ -173,7 +149,7 @@ const CanceledForm = ({
       });
       const canceledFormData = await canceledFormResponse.json();
 
-      if (canceledFormData.status === "errorHCaptchaInvalid") {
+      if (canceledFormData.status === "hCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");

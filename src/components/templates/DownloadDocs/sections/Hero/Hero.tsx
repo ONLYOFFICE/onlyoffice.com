@@ -68,7 +68,6 @@ const Hero = ({
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         locale,
-        referer: document.referrer,
         type: formData.type,
         fullName: formData.fullName,
         email: formData.email,
@@ -102,7 +101,9 @@ const Hero = ({
             button: {
               id: "docs-enterprise",
               icon: {
-                url: getAssetUrl("/images/templates/download-docs/hero/icons.svg"),
+                url: getAssetUrl(
+                  "/images/templates/download-docs/hero/icons.svg",
+                ),
               },
               label: t("Enterprise"),
             },
@@ -170,7 +171,9 @@ const Hero = ({
             button: {
               id: "docs-developer",
               icon: {
-                url: getAssetUrl("/images/templates/download-docs/hero/icons.svg"),
+                url: getAssetUrl(
+                  "/images/templates/download-docs/hero/icons.svg",
+                ),
                 positionX: "-88px",
               },
               label: t("Developer"),
@@ -246,7 +249,9 @@ const Hero = ({
             button: {
               id: "docs-community",
               icon: {
-                url: getAssetUrl("/images/templates/download-docs/hero/icons.svg"),
+                url: getAssetUrl(
+                  "/images/templates/download-docs/hero/icons.svg",
+                ),
                 positionX: "-176px",
               },
               label: t("Community"),
