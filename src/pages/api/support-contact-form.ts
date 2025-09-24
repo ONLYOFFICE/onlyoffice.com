@@ -214,7 +214,6 @@ export default async function handler(
             errorText: errorMessages.join(", "),
             attachmentFiles: attachments.map(a => `<a href="${a.path}">${a.filename}</a>`).join("<br>"),
           }),
-          attachments: attachments.map(a => ({ filename: a.filename, href: a.path })),
         });
       } catch (mailErr) {
         throw { error: mailErr, source: "sendMail" };
