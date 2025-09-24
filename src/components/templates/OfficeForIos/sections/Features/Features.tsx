@@ -37,7 +37,7 @@ const Features = () => {
       tabletSmallSpacing={["0", "0"]}
       mobileSpacing={["0", "0"]}
     >
-      <Container maxWidth="1920px" tabletSpacing="0" mobileSpacing="0">
+      <Container maxWidth="1200px" tabletSpacing="0" mobileSpacing="0">
         <StyledFeaturesWrapper ref={containerRef}>
           <StyledFeaturesAside>
             <StyledFeaturesAsideTablet>
@@ -75,7 +75,7 @@ const Features = () => {
                 <FeatureItem
                   key={item.heading}
                   className="item"
-                  maxWidth="280px"
+                  maxWidth="352px"
                   icon={{
                     url: item.iconUrl,
                   }}

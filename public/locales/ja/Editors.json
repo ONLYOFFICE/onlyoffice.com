@@ -14,16 +14,8 @@
   "Hints": "ヒント",
   "Blog": "ブログ",
   "HelpCenter": "ヘルプセンター",
-  "ExploreOtherEditors": "他のエディタも試してみましょう",
   "ViewMacroSamples": "マクロサンプルを見る",
   "FindAppsYouNeed": "Spreadsheet Editor でできることについてもっと読む",
   "CheckUserGuides": "ユーザーガイドを確認する",
-  "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "ドキュメント・エディター",
-  "SpreadsheetEditor": "スプレッドシート・エディタ",
-  "PresentationEditor": "プレゼンテーション・エディター",
-  "FormCreator": "フォーム作成",
-  "PDFEditor": "PDFエディタ",
-  "EBookCreator": "電子書籍クリエイター",
-  "DiagramViewer": "図ビューア"
+  "GoToTheTemplateLibrary": "Go to the template library"
 }

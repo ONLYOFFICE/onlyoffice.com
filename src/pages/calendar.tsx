@@ -39,7 +39,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "calendar",
         "CollaborationsFeatures",
-        "CollaborationsTabs",
+        "Tabs",
       ])),
       locale,
     },

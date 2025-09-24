@@ -14,16 +14,8 @@
   "Hints": "Hints",
   "Blog": "Blog",
   "HelpCenter": "Help Center",
-  "ExploreOtherEditors": "Explore other editors",
   "ViewMacroSamples": "Bekijk macro-voorbeelden",
   "FindAppsYouNeed": "Lees meer over wat u kunt doen in Spreadsheet Editor",
   "CheckUserGuides": "Check user guides",
-  "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "Documenten editor",
-  "SpreadsheetEditor": "Spreadsheet editor",
-  "PresentationEditor": "Presentatie editor",
-  "FormCreator": "Formulier maker",
-  "PDFEditor": "PDF editor",
-  "EBookCreator": "E-book creator",
-  "DiagramViewer": "Diagram Viewer"
+  "GoToTheTemplateLibrary": "Go to the template library"
 }

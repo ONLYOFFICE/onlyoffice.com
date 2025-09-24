@@ -18,8 +18,8 @@ import {
   StyledHeroFooterImgLink,
   StyledHeroFooterText,
   StyledHeroFooter,
+  StyledDownloadButton,
 } from "./Hero.styled";
-import { DownloadButton } from "@src/components/ui/DownloadButton";
 
 const Hero = () => {
   const { t } = useTranslation("office-for-ios");
@@ -45,7 +45,7 @@ const Hero = () => {
               />
             </StyledHeroLeftHeading>
             <StyledHeroLeftButton>
-              <DownloadButton
+              <StyledDownloadButton
                 platform="app-store"
                 variant="secondary"
                 href="https://itunes.apple.com/us/app/onlyoffice-documents/id944896972"
