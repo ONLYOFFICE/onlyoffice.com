@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
-import { pipeline } from "stream";
+import { pipeline, Readable } from "stream";
 import { promisify } from "util";
 
 const s3Client = new S3Client({
@@ -37,7 +37,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.setHeader("Content-Disposition", `attachment; filename="${filename}"`);
     res.setHeader("Content-Type", s3Object.ContentType || "application/octet-stream");
 
-    await streamPipeline(s3Object.Body as any, res);
+    const Body = s3Object.Body;
+    if (!Body) {
+        throw new Error("Unexpected S3 object body type: undefined");
+    }
+
+    if (typeof (Body as Readable).pipe === "function") {
+        await streamPipeline(Body as Readable, res);
+    }
+    else if (Body instanceof Uint8Array) {
+        res.end(Buffer.from(Body));
+    }
+    else {
+        throw new Error("Unexpected S3 object body type");
+    }
   } catch (err) {
     console.error("Download attachment error:", err);
     res.status(500).send("Internal Server Error");
