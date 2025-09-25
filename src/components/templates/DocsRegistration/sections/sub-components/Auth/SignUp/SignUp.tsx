@@ -12,7 +12,11 @@ import {
   StyledSignUpCaption,
   StyledSuccessModal,
 } from "./SignUp.styled";
-import { loadRewardful, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
+import {
+  loadRewardful,
+  getClientReferenceId,
+  getAffiliateToken,
+} from "@src/utils/rewardful";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";
 import { validateTestEmail } from "@src/utils/IsTestEmail";
@@ -135,21 +139,20 @@ const SignUp = () => {
         email: formData.email,
         phone: "",
         tariffPlan: formData.tariffPlan,
-        docsPlatform: selectedPlatform[0]?.value,
+        docsPlatform: selectedPlatform[0]?.value || "",
         affiliateId: getClientReferenceId() || "",
         affiliateToken: getAffiliateToken() || "",
         spam: formData.spam ? "true" : "false",
         languageCode: curLang,
         language: getPostLang(curLang),
         from,
-        referer: document.referrer,
         hCaptchaResponse: token || null,
       }),
     });
 
     const data = await res.json();
 
-    if (data.status === "errorHCaptchaInvalid") {
+    if (data.status === "hCaptchaInvalid") {
       setIsFormValid(false);
       setFormStatus("error");
       setIsCaptchaInvalid(true);

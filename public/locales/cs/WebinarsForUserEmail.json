@@ -1,0 +1,13 @@
+{
+  "WebinarSubject": "Úspěšně jste se zaregistrovali na webinář ONLYOFFICE",
+  "Hello": "Dobrý den!",
+  "ThankYouForRegistering": "Děkujeme, že jste se zaregistrovali na webinář „{{webinarTheme}}“.",
+  "SaveTheDate": "Uložte si datum:",
+  "WebinarsAreLiveStreamed": "Webináře ONLYOFFICE jsou živě streamovány na našem <a target=\"_blank\" style=\"color: #FF6F3D;\" href=\"https://www.youtube.com/user/onlyofficeTV\">kanálu na YouTube</a>: předem vám pošleme přesný odkaz.",
+  "QuestionsSuggestions": "Máte-li jakékoli dotazy nebo návrhy týkající se nadcházejícího webináře, můžete nás kontaktovat na adrese <a target=\"_blank\" style=\"color: #FF6F3D;\" href=\"mailto:webinars@onlyoffice.com\">webinars@onlyoffice.com</a>.",
+  "CheckAllOnlineEvents": "Podívejte se na všechny naše online události <a target=\"_blank\" style=\"color: #FF6F3D;\" href=\"https://onlyoffice.com/cs/webinars\">zde</a>. Pokud znáte někoho, kdo by mohl mít zájem o zvládnutí ONLYOFFICE, oceníme, pokud mu zašlete tento odkaz.",
+  "TrulyYours": "S přátelským pozdravem,",
+  "ONLYOFFICETeam": "tým ONLYOFFICE",
+  "ThisEmailIsGeneratedAutomatically": "Tento e-mail je generován automaticky a nemusíte na něj odpovídat.",
+  "Unsubscribe": "Kliknutím sem se odhlásíte"
+}

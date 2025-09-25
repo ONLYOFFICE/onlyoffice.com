@@ -8,8 +8,8 @@ import { Header } from "@src/components/modules/Header";
 import { SubscribeTemplate } from "@src/components/templates/Subscribe";
 import { Footer } from "@src/components/modules/Footer";
 import { db } from "@src/config/db/site";
-import { subscribeChecking } from "@src/utils/subscription/subscribeChecking";
-import { validateUnsubscribeId } from "@src/lib/requests/thirdparty/validateUnsubscribeId";
+import { subscribeChecking } from "@src/lib/requests/subscription/subscribeChecking";
+import { validateUnsubscribeId } from "@src/lib/requests/thirdparty";
 
 const SubscribePage = ({ locale }: ILocale) => {
   const { t } = useTranslation("subscribe");
@@ -47,12 +47,12 @@ export async function getServerSideProps({
   let type: number | undefined;
 
   if (query.id) {
-    const validateUnsubscribeIdData = await validateUnsubscribeId({
-      id: query.id,
-    });
+    let parsedData: { email?: string; firstname?: string; type?: number } = {};
 
-    let parsedData;
     try {
+      const validateUnsubscribeIdData = await validateUnsubscribeId({
+        UnsubscribeId: query.id,
+      });
       parsedData = JSON.parse(validateUnsubscribeIdData.data?.email || "{}");
     } catch {
       parsedData = {};

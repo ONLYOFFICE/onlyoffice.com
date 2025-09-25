@@ -1,7 +1,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { logError } from "@src/lib/helpers/logger";
 import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
 import { validateEmail } from "@src/utils/validators";
-import { createAuthToken } from "@src/utils/createAuthToken";
+import { findByEmailPassword } from "@src/lib/requests/thirdparty";
 
 export default async function handler(
   req: NextApiRequest,
@@ -27,59 +28,42 @@ export default async function handler(
         .json({ status: "error", message: "Invalid request parameters" });
     }
 
-    const findByEmailRes = await fetch(
-      `${process.env.THIRDPARTY_DOMAIN}/multiregion/findbyemail`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: createAuthToken("site", process.env.CORE_MACHINEKEY!),
-        },
-        body: JSON.stringify({ email }),
-      },
-    );
+    const findByEmailPasswordData = await findByEmailPassword({
+      email,
+      passwordHash,
+    });
 
-    const findByEmailData = await findByEmailRes.json();
-
-    if (!findByEmailData || findByEmailData.length === 0) {
+    if (findByEmailPasswordData.status !== 200) {
       return res
-        .status(200)
-        .json({ status: "error", message: "Invalid email or password" });
+        .status(findByEmailPasswordData.status)
+        .json({ status: "error", message: findByEmailPasswordData.message });
     }
 
-    const findByEmailPasswordRes = await fetch(
-      `${process.env.THIRDPARTY_DOMAIN}/multiregion/findbyemailpassword`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: createAuthToken("site", process.env.CORE_MACHINEKEY!),
-        },
-        body: JSON.stringify({ email, passwordHash }),
-      },
-    );
-
-    const findByEmailPasswordData = await findByEmailPasswordRes.json();
-
-    if (!findByEmailPasswordData || findByEmailPasswordData.length === 0) {
-      return res
-        .status(200)
-        .json({ status: "error", message: "Invalid email or password" });
+    if (
+      !findByEmailPasswordData.data ||
+      findByEmailPasswordData.data.length === 0
+    ) {
+      return res.status(400).json({
+        status: "error",
+        message: "Failed to find by email or password",
+      });
     }
 
-    if (findByEmailPasswordData.length === 1) {
+    if (findByEmailPasswordData.data.length === 1) {
       return res.status(200).json({
         status: "success",
-        redirect: `${findByEmailPasswordData[0].domain}${findByEmailPasswordData[0].path}`,
+        redirect: `${findByEmailPasswordData.data[0].domain}${findByEmailPasswordData.data[0].path}`,
       });
     }
 
     return res.status(200).json({
       status: "success",
-      tenants: findByEmailPasswordData,
+      tenants: findByEmailPasswordData.data,
     });
-  } catch (err) {
-    console.error("signin error:", err);
-    res.status(500).json({ status: "error", message: "Internal Server Error" });
+  } catch (error) {
+    logError((req.url || "").split("?")[0], "API", error);
+    return res
+      .status(500)
+      .json({ status: "error", message: "Internal Server Error" });
   }
 }

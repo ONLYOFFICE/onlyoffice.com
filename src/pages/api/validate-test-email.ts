@@ -1,10 +1,16 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
 import { isTestEmail } from "@src/utils/IsTestEmail";
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse,
+) {
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method Not Allowed" });
   }
+
+  if (!(await checkRateLimit(req, res))) return;
 
   const { email } = req.body;
 

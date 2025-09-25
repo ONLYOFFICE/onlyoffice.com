@@ -20,7 +20,13 @@ import { IDocsEnterprisePricesFormData } from "./Hero.types";
 import { IDocsEnterprisePricesTemplate } from "@src/components/templates/DocsEnterprisePrices";
 import { getProduct } from "./utils/getProduct";
 import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
-import { loadRewardful, addClientReferenceOnReady, getClientReferenceParam, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
+import {
+  loadRewardful,
+  addClientReferenceOnReady,
+  getClientReferenceParam,
+  getClientReferenceId,
+  getAffiliateToken,
+} from "@src/utils/rewardful";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
@@ -83,14 +89,10 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
   const isGetIsQuote = [
     formData.hosting === "Cloud",
     formData.connectionsNumber === "more",
+    formData.disasterRecovery,
     formData.trainingCourses,
     formData.multiTenancy,
   ].some(Boolean);
-
-  const isOrderNow =
-    formData.disasterRecovery &&
-    !formData.trainingCourses &&
-    !formData.multiTenancy;
 
   const product = getProduct(formData, productsData);
 
@@ -105,7 +107,6 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         locale,
-        referer: document.referrer,
         fullName: quoteFormData.fullName,
         email: quoteFormData.email,
         phone: quoteFormData.phone,
@@ -462,13 +463,6 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
                     fullWidth
                     label={t("GetAQuote")}
                   />
-                ) : isOrderNow ? (
-                  <Button
-                    onClick={() => setIsModalOpen(true)}
-                    data-testid="get-a-quote-button"
-                    fullWidth
-                    label={t("OrderNow")}
-                  />
                 ) : (
                   <Button
                     data-testid="buy-now-button"
@@ -486,11 +480,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
           <QuoteModal
             locale={locale}
             isOpen={isModalOpen}
-            heading={
-              isOrderNow
-                ? t("FillInTheFormToReceive")
-                : t("FillInTheFormToGetAQuote")
-            }
+            heading={t("FillInTheFormToGetAQuote")}
             byClickedText={
               <Trans
                 t={t}
@@ -520,10 +510,10 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
             setFormData={setFormData}
             quoteFormData={quoteFormData}
             setQuoteFormData={setQuoteFormData}
-            buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
+            buttonLabel={t("GetAQuote")}
             onSubmitRequest={onSubmitRequest}
             onClose={() => setIsModalOpen(false)}
-            pageTrackName={isOrderNow ? "ie-order-now" : "ie-gaq" }
+            pageTrackName="ie-gaq"
           />
         </StyledHeroWrapper>
 

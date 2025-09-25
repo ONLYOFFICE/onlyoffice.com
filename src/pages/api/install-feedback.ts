@@ -1,3 +1,6 @@
+import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
+import { logError } from "@src/lib/helpers/logger";
+import { getClientIp } from "@src/lib/helpers/getClientIp";
 import { InstallFeedbackEmail } from "@src/components/emails/InstallFeedbackEmail";
 import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
@@ -11,6 +14,8 @@ export default async function handler(
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method Not Allowed" });
   }
+
+  if (!(await checkRateLimit(req, res))) return;
 
   const {
     os,
@@ -27,55 +32,78 @@ export default async function handler(
   } = req.body;
 
   try {
-    const ip =
-      (Array.isArray(req.headers["x-forwarded-for"])
-        ? req.headers["x-forwarded-for"][0]
-        : req.headers["x-forwarded-for"]
-      )?.split(",")[0] ||
-      req.socket.remoteAddress ||
-      null;
+    if (
+      !os ||
+      typeof os !== "string" ||
+      !users_count ||
+      typeof users_count !== "string" ||
+      typeof responsible !== "string" ||
+      !modules ||
+      typeof modules !== "object" ||
+      !issues ||
+      typeof issues !== "string" ||
+      !simple ||
+      typeof simple !== "string" ||
+      !meet ||
+      typeof meet !== "string" ||
+      !support ||
+      typeof support !== "string" ||
+      typeof comments !== "string" ||
+      (!isTestEmail(email) &&
+        (!hCaptchaResponse || typeof hCaptchaResponse !== "string"))
+    ) {
+      return res
+        .status(400)
+        .json({ status: "error", message: "Invalid request parameters" });
+    }
+
+    const ip = getClientIp(req);
 
     if (!isTestEmail(email)) {
       const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
       if (!hCaptchaResult.success) {
         return res.status(400).json({
-          status: "errorHCaptchaInvalid",
-          error: hCaptchaResult.error,
+          status: "hCaptchaInvalid",
         });
       }
     }
 
-    const modulesString = Object.keys(modules)
-      .filter((key) => modules[key])
-      .join(", ");
+    try {
+      const modulesString = Object.keys(modules)
+        .filter((key) => modules[key])
+        .join(", ");
 
-    const transporter = emailTransporter();
-    await transporter.sendMail({
-      to: process.env.SERVER_EMAIL!,
-      subject: "Install Feedback",
-      html: InstallFeedbackEmail({
-        os,
-        users_count,
-        responsible,
-        modules: modulesString,
-        issues,
-        simple,
-        meet,
-        support,
-        comments,
-      }),
-    });
+      const transporter = emailTransporter();
+      await transporter.sendMail({
+        to: process.env.SERVER_EMAIL!,
+        subject: "Install Feedback",
+        html: InstallFeedbackEmail({
+          os,
+          users_count,
+          responsible,
+          modules: modulesString,
+          issues,
+          simple,
+          meet,
+          support,
+          comments: comments.replace(/\n/g, "<br/>"),
+        }),
+      });
+    } catch (error) {
+      logError((req.url || "").split("?")[0], "Email transporter", error);
+      return res.status(500).json({
+        status: "error",
+        message: "Internal Server Error",
+      });
+    }
+
+    return res.status(200).json({ status: "success" });
   } catch (error) {
-    console.error("InstallFeedback api returns errors:", error);
-    res.status(500).json({
+    logError((req.url || "").split("?")[0], "API", error);
+    return res.status(500).json({
       status: "error",
-      message: error,
+      message: "Internal Server Error",
     });
   }
-
-  res.status(200).json({
-    status: "success",
-    message: "success",
-  });
 }

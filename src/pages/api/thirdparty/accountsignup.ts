@@ -1,6 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { logError } from "@src/lib/helpers/logger";
 import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
-import { createAuthToken } from "@src/utils/createAuthToken";
+import {
+  findBySocial,
+  findByEmail,
+  generateKey,
+} from "@src/lib/requests/thirdparty";
 import { register } from "@src/lib/requests/thirdparty/register";
 
 export default async function handler(
@@ -27,65 +32,48 @@ export default async function handler(
         .json({ status: "error", message: "Invalid request parameters" });
     }
 
-    const findBySocialRes = await fetch(
-      `${process.env.THIRDPARTY_DOMAIN}/multiregion/findbysocial`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: createAuthToken("site", process.env.CORE_MACHINEKEY!),
-        },
-        body: JSON.stringify({ transport }),
-      },
-    );
+    const findBySocialData = await findBySocial({ transport });
 
-    const findBySocialData = await findBySocialRes.json();
+    if (findBySocialData.status !== 200) {
+      return res
+        .status(findBySocialData.status)
+        .json({ status: "error", message: findBySocialData.message });
+    }
 
-    if (!findBySocialData?.email) {
+    if (!findBySocialData.data?.email) {
       return res
         .status(400)
         .json({ status: "error", message: "No email in social profile" });
     }
 
-    const findByEmailRes = await fetch(
-      `${process.env.THIRDPARTY_DOMAIN}/multiregion/findbyemail`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: createAuthToken("site", process.env.CORE_MACHINEKEY!),
-        },
-        body: JSON.stringify({ email: findBySocialData.email }),
-      },
-    );
+    const findByEmailData = await findByEmail({
+      email: findBySocialData.data.email,
+    });
 
-    const findByEmailData = await findByEmailRes.json();
+    if (findByEmailData.status !== 200) {
+      return res
+        .status(findByEmailData.status)
+        .json({ status: "error", message: findByEmailData.message });
+    }
 
-    if (findByEmailData?.length > 0) {
-      const generateKeyRes = await fetch(
-        `${process.env.THIRDPARTY_DOMAIN}/key/generate`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: createAuthToken(
-              "site",
-              process.env.CORE_MACHINEKEY!,
-            ),
-          },
-          body: JSON.stringify({ email: findBySocialData.email }),
-        },
-      );
+    if (findByEmailData.data?.length > 0) {
+      const generateKeyData = await generateKey({
+        email: findBySocialData.data.email,
+      });
 
-      const generateKeyData = await generateKeyRes.json();
+      if (generateKeyData.status !== 200) {
+        return res
+          .status(generateKeyData.status)
+          .json({ status: "error", message: generateKeyData.message });
+      }
 
       const map = new Map<string, { domain: string; path: string }>();
 
-      for (const t of findByEmailData) {
+      for (const t of findByEmailData.data) {
         map.set(t.domain, { ...t, path: `${t.path}&social=true` });
       }
 
-      for (const t of findBySocialData?.tenants || []) {
+      for (const t of findBySocialData.data?.tenants || []) {
         if (!map.has(t.domain)) {
           map.set(t.domain, t);
         }
@@ -94,21 +82,29 @@ export default async function handler(
       return res.status(200).json({
         status: "success",
         tenants: Array.from(map.values()),
-        query: `epkey=${generateKeyData.emailKey}1&eskey=${generateKeyData.linkKey}&transport=${transport}&awsRegion=${awsRegion}`,
+        query: `epkey=${generateKeyData.data.emailKey}1&eskey=${generateKeyData.data.linkKey}&transport=${transport}&awsRegion=${awsRegion}`,
       });
     } else {
-      const registerRes = await register({
+      const registerData = await register({
         thirdPartyProfile: transport,
         ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
       });
 
+      if (registerData.status !== 200) {
+        return res
+          .status(registerData.status)
+          .json({ status: "error", message: registerData.message });
+      }
+
       return res.status(200).json({
         status: "success",
-        reference: `${registerRes.data.reference}&wizard=true`,
+        reference: `${registerData.data.reference}&wizard=true`,
       });
     }
-  } catch (err) {
-    console.error("accountsignup error:", err);
-    res.status(500).json({ status: "error", message: "Internal Server Error" });
+  } catch (error) {
+    logError((req.url || "").split("?")[0], "API", error);
+    return res
+      .status(500)
+      .json({ status: "error", message: "Internal Server Error" });
   }
 }

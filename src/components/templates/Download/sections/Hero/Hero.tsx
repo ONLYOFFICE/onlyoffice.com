@@ -62,7 +62,6 @@ const Hero = ({ locale, docsProducts, docspaceProducts }: IHero) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         locale,
-        referer: document.referrer,
         type: formData.type,
         fullName: formData.fullName,
         email: formData.email,

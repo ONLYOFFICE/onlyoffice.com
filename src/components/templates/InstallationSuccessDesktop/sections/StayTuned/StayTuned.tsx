@@ -56,6 +56,7 @@ const StayTuned = () => {
           firstName: "",
           email,
           type: "Common",
+          locale,
         }),
       });
 
