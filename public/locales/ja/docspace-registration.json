@@ -50,8 +50,5 @@
   "IncorrectEmailOrPassword": "メールかパスワードが正しくありません",
   "YourEmail": "メールアドレス:",
   "IfAUserWithThisEmailExists": "このメールアドレスがあるユーザーが存在する場合、パスワード変更の説明書がこのメールアドレスに送信されました。",
-  "NoThirdPartyAccountFound": "サードパーティのアカウントが見つかりませんでした",
-  "YourConfirmationLinkForOODocSpace": "ONLYOFFICE DocSpaceの確認リンク",
-  "YourLoginLinkToOODocSpace": "ONLYOFFICE DocSpaceへのログインリンク",
-  "OOPasswordReminder": "ONLYOFFICE パスワード リマインダー"
+  "NoThirdPartyAccountFound": "サードパーティのアカウントが見つかりませんでした"
 }

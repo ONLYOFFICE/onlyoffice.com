@@ -1,0 +1,34 @@
+{
+  "PageTitle": "Aplicativo ONLYOFFICE DocSpace para o Monday | ONLYOFFICE Docs",
+  "PageDescription": "Trabalhe com arquivos de escritório relacionados aos seus quadros do Monday em salas do ONLYOFFICE DocSpace",
+
+  "OnlineOfficeForMonday": "Aplicativo ONLYOFFICE DocSpace para o Monday",
+  "WorkWithOfficeFiles": "Trabalhe com arquivos de escritório relacionados aos seus quadros do Monday em salas do ONLYOFFICE DocSpace.",
+
+  "AppInstallation": "Instalação e configuração do aplicativo",
+  "AppInstallationText": "<0>O aplicativo ONLYOFFICE DocSpace podem ser instalados pelo administrador da Monday por meio do Marketplace monday.com.</0> <0>Ao instalar o aplicativo, o administrador escolhe onde ele estará disponível: em todos os espaços de trabalho ou em um ou mais espaços de trabalho específicos. Posteriormente, isso pode ser alterado na seção Gerenciar Aplicativos.</0> <0>A opção Desinstalar do aplicativo também está disponível apenas para administradores.</0>",
+  "AppInstallationUrl": "/images/templates/office-for-monday/installation/screen_1@2x.png",
+
+  "WhatYouShouldKnowTitle": "O que você deve saber",
+  "WhenRoomDeleted": "Quando a sala é excluída",
+  "IfRoomDeletedText": "Se você excluir/arquivar a sala que estava vinculada ao quadro do Monday, é possível desvincular a sala clicando no botão correspondente na guia do aplicativo. Depois disso, você pode criar uma nova sala do DocSpace para esse quadro.",
+  "ViewerOrGuestRole": "Quando você tem uma conta DocSpace, mas sua função na Monday é Visualizador ou Convidado",
+  "ViewerOrGuestRoleText": "Se os usuários do Monday tiverem uma conta DocSpace existente, eles podem fazer login com sua conta clicando no ícone de engrenagem na guia do aplicativo. Um painel à direita será exibido, onde é necessário clicar em Ir para as configurações do aplicativo. Na janela pop-up, os usuários podem inserir seu login e senha do DocSpace. Esta opção está disponível para todas as funções do Monday. (Administrador, Membro, Visualizador, Convidado).",
+
+  "MondayConnectionSettingsTitle" : "Configurações de conexão (para administradores da monday)",
+  "MondayConnectionSettingsNote" : "Outros usuários do Monday só podem usar o aplicativo depois que o administrador do Monday o configurar.",
+  "MondayStep1": "Vá para o <2>Espaço de trabalho Monday</2> onde o aplicativo está instalado. Abra o quadro desejado e clique no ícone de adição. Na seção Apps, localize <0>ONLYOFFICE DocSpace</0>.",
+  "MondayStep2": "A guia do aplicativo correspondente será exibida. Lá, digite o endereço, o login e a senha de seu ONLYOFFICE DocSpace. Se você é novo no DocSpace, pode registrar uma conta gratuita <3>aqui</3>.",
+  "MondayStep3": "Quando estiver pronto, você também precisará ir para o <0>ONLYOFFICE DocSpace</0> → <0>Ferramentas do desenvolvedor</0> → <0>JavaScript SDK</0>. Lá, adicione os endereços do seu monday e DocSpace na seção - <1>Digite o endereço do DocSpace a ser incorporado</1>.",
+  "MondayStep4": "Após a autorização bem-sucedida, a janela <1>Bem-vindo ao DocSpace Board!</1> e a notificação <1>Você logou com sucesso</1> são exibidas.",
+
+  "AppUsage" : "Uso do aplicativo",
+  "AfterInstallingTheApp" : "Após instalar o aplicativo, o administrador da monday deve clicar no botão <1>Botão Criar sala</1>. Clicando nele, uma sala pública é criada no ONLYOFFICE DocSpace, com duas tags atribuídas: Integração Monday e quadro Monday - <0>board_id.</0>",
+  "AccessRights" : "Access rights",
+  "APublicRoomIsCreated" : "A public room is created on behalf of the DocSpace admin. All room participants with the Team Member role are added to the room with the <0>Content Creator</0> role. monday users with the <0>Viewer</0> and <0>Guest</0> roles are not invited to the room. Since the room is public, they will be able to open the files stored in the room for viewing. <br /> <br /> If the board is shared to a group of people (Everyone at \"project name\"), users are not invited to the room. The room is still available for viewing via an external link.",
+
+  "QuestionHead": "Suporte confiável em todas as etapas",
+  "QuestionSub": "Encontrou um problema? Nós o ajudamos. Envie suas questões por meio do <0>GitHub</0> ou participe do fórum do <1>ONLYOFFICE</1> para suporte e orientação rápidos.",
+
+  "AscensioSystem": "© Ascensio System SIA 1998-2025. Todos os direitos reservados"
+}

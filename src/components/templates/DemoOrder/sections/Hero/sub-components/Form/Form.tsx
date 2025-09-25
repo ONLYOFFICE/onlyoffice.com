@@ -24,8 +24,8 @@ import {
   StyledHeroLoadText,
   StyledHeroRequestStatusText,
   StyledTwoInputsContainer,
+  StyledHeading,
 } from "./Form.styled";
-import { Heading } from "@src/components/ui/Heading";
 import DateTimePicker from "@src/components/ui/DateTimePicker/DateTimePicker";
 import { validateTestEmail } from "@src/utils/IsTestEmail";
 
@@ -155,7 +155,7 @@ const Form = () => {
       });
       const dataDemoOrder = await responseDemoOrder.json();
 
-      if (dataDemoOrder.status === "errorHCaptchaInvalid") {
+      if (dataDemoOrder.status === "hCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");
@@ -232,7 +232,7 @@ const Form = () => {
 
   return (
     <>
-      <Heading size={4} level={2} label={t("BookDemo")} />
+      <StyledHeading size={4} level={2} label={t("BookDemo")} />
       <StyledHeroForm>
         <Input
           label={t("FullName")}

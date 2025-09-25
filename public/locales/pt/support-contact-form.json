@@ -11,6 +11,7 @@
   "No": "não",
   "AttachFileOrScreenshоts": "Anexar arquivo ou captura de tela <0>(max. 5 Мb)</0>",
   "YouCanAttachUp": "Você pode anexar até 10 arquivos",
+  "YouCanOnlyAttach": "Você pode anexar somente arquivos JPEG, PNG ou PDF.",
   "FileSizeExceeded": "Tamanho do arquivo excedido: ",
   "NameIsEmpty": "Nome está vazio",
   "NameIsIncorrect": "Nome está incorreto",

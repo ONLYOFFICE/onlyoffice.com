@@ -4,7 +4,7 @@
 
   "HeroTitle": "API d'automatisation de ONLYOFFICE",
   "HeroSubtitle" : "Placez n'importe quel contrôle dans l'interface de votre plateforme et gérez le contenu du document depuis l'extérieur des éditeurs",
-  "HeroButton" : "DEMANDER DÉMO GRATUITE",
+  "HeroButton" : "Demander démo gratuite",
 
   "WhatIsTitle" : "Qu'est-ce que l'<0>API d'automatisation</0>",
   "WhatIsSubtitle" : "<0>L'API d'automatisation de ONLYOFFICE</0> avec la classe connecteur permet d'interagir avec les documents bureautiques depuis l'extérieur. Vous pouvez obtenir les changements effectués dans les fichiers en utilisant vos propres éléments d'interface personnalisés.",
@@ -45,9 +45,9 @@
   "HowToGetONLYOFFICEAutomationAPI": "Comment obtenir l'API d'automatisation de ONLYOFFICE",
   "AutomationAPISsAPartOf": "L'API d'automatisation fait partie de <0>ONLYOFFICE Docs Developer</0> qui fournit une suite bureautique en ligne avec des éditeurs pour les documents, les feuilles de calcul, les présentations et les PDF destinés à être intégrés dans votre propre application ou plateforme web. L'accès à l'API d'automatisation est fourni dans le cadre de la <1>licence de ONLYOFFICE Docs Developer</1>.",
   "GetA30DayTrial": "Obtenez une version <0>d'essai de 30</0> jours de ONLYOFFICE Docs Developer avec l'API d'automatisation incluse pour le tester gratuitement.",
-  "DownloadNow": "TÉLÉCHARGER MAINTENANT",
+  "DownloadNow": "Télécharger maintenant",
 
   "HaveAnyQuestions": "Avez-vous des questions sur l'API d'automatisation de ONLYOFFICE ? Nous serons ravis de vous consulter et de discuter de tous les détails.",
   "HaveAnyQuestionsText": "L'équipe d'experts est là pour vous aider à chaque étape. <2 /> <2 /> Si vous avez des questions concernant la prévente, contactez-nous à <0>sales@onlyoffice.com</0> ou fixez un rendez-vous pour que notre équipe vous appelle. <2 /> <2 /> Pour tout problème technique, envoyez-nous un message à <1>support@onlyoffice.com</1>.",
-  "GetInTouch": "NOUS CONTACTER"
+  "GetInTouch": "Nous contacter"
 }

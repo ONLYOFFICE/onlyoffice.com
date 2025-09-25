@@ -1,4 +1,4 @@
-import { CollaborationsTabs } from "@src/components/modules/collaborations/CollaborationsTabs";
+import { OtherPagesSelector } from "@src/components/modules/OtherPagesSelector";
 import { Hero } from "./sections/Hero";
 import { Features } from "./sections/Features";
 import { Quote } from "./sections/Quote";
@@ -9,7 +9,7 @@ const MailTemplate = () => {
       <Hero />
       <Features />
       <Quote />
-      <CollaborationsTabs />
+      <OtherPagesSelector page={"collaboration"} />
     </>
   );
 };

@@ -52,7 +52,6 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         locale,
-        referer: document.referrer,
         type: formData.type,
         fullName: formData.fullName,
         email: formData.email,
@@ -86,7 +85,9 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
             button: {
               id: "docspace-enterprise",
               icon: {
-                url: getAssetUrl("/images/templates/download-docspace/hero/enterprise.svg"),
+                url: getAssetUrl(
+                  "/images/templates/download-docspace/hero/enterprise.svg",
+                ),
               },
               label: t("Enterprise"),
             },
@@ -146,7 +147,9 @@ const Hero = ({ locale, enterpriseProducts, communityProducts }: IHero) => {
             button: {
               id: "docspace-community",
               icon: {
-                url: getAssetUrl("/images/templates/download-docspace/hero/community.svg"),
+                url: getAssetUrl(
+                  "/images/templates/download-docspace/hero/community.svg",
+                ),
               },
               label: t("Community"),
             },

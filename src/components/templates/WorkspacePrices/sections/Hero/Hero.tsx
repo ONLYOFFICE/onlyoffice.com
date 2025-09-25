@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 import {
   StyledHero,
@@ -21,9 +21,19 @@ import { Reseller } from "@src/components/modules/pricing/Reseller";
 import { PricingPlan } from "./sub-components/PricingPlan";
 import { CompareFeatures } from "./sub-components/CompareFeatures";
 import { pricingPlans } from "./data/pricing-plans";
+import { loadRewardful, addClientReferenceOnReady, getClientReferenceParam } from "@src/utils/rewardful";
 
 const Hero = ({ locale, productsData }: IWorkspacePricesTemplate) => {
   const { t } = useTranslation("workspace-prices");
+  const [referenceParam, setReferenceParam] = useState("");
+
+  useEffect(() => {
+    loadRewardful();
+
+    addClientReferenceOnReady(function () {
+      setReferenceParam(getClientReferenceParam());
+    });
+  }, []);
 
   const [numberOfUsers, setNumberOfUsers] = useState<{
     basic: IPricingPlan["numberOfUsers"];
@@ -108,7 +118,7 @@ const Hero = ({ locale, productsData }: IWorkspacePricesTemplate) => {
                     active={plan.key === "plus"}
                     heading={t(plan.headingKey)}
                     price={product.price}
-                    url={product.url}
+                    url={`${product.url}${referenceParam}`}
                     numberOfUsers={numberOfUsers[plan.key]}
                     setNumberOfUsers={(value) =>
                       setNumberOfUsers((prev) => ({

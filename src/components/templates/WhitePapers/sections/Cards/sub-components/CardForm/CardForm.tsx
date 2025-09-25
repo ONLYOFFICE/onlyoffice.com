@@ -179,7 +179,7 @@ const CardForm = ({
       const dataWhitePapers = await responseWhitePapers.json();
 
       if (
-        dataWhitePapers.status === "errorHCaptchaInvalid" ||
+        dataWhitePapers.status === "hCaptchaInvalid" ||
         dataWhitePapers.status === "error"
       ) {
         setStatus("error");

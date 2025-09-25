@@ -50,8 +50,5 @@
   "IncorrectEmailOrPassword": "邮箱地址或密码错误",
   "YourEmail": "您的电子邮箱：",
   "IfAUserWithThisEmailExists": "电子邮箱为空。",
-  "NoThirdPartyAccountFound": "未找到第三方账户",
-  "YourConfirmationLinkForOODocSpace": "您的 ONLYOFFICE 协作空间确认链接",
-  "YourLoginLinkToOODocSpace": "您的 ONLYOFFICE 协作空间登录链接",
-  "OOPasswordReminder": "ONLYOFFICE密码提醒"
+  "NoThirdPartyAccountFound": "未找到第三方账户"
 }

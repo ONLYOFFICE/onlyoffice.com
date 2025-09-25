@@ -14,7 +14,7 @@ const StyledModal = styled.div<{
   height: 100%;
   background-color: ${(props) => props.$bgColor};
   overflow-y: auto;
-  z-index: 1001;
+  z-index: 999999;
   opacity: ${(props) => (props.$isOpen ? 1 : 0)};
   visibility: ${(props) => (props.$isOpen ? "visible" : "hidden")};
   transition:
@@ -55,12 +55,14 @@ const StyledModalCloseBtn = styled.button<{
       ? css`
           top: 24px;
           right: 24px;
-          background-image: url(${getAssetUrl('/images/icons/cross.svg')});
+          background-image: url(${getAssetUrl("/images/icons/cross.svg")});
         `
       : css`
           top: -24px;
           right: -24px;
-          background-image: url(${getAssetUrl('/images/icons/cross-white.svg')});
+          background-image: url(${getAssetUrl(
+            "/images/icons/cross-white.svg",
+          )});
         `}
 `;
 

@@ -12,7 +12,7 @@ const StyledCookieBannerHeading = styled(Heading)`
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url(${getAssetUrl('/images/icons/cookie.svg')});
+    background-image: url(${getAssetUrl("/images/icons/cookie.svg")});
     background-position-x: 50%;
     background-repeat: no-repeat;
   }
@@ -26,7 +26,7 @@ const StyledCookieBannerHeader = styled.div`
 
 const StyledCookieFab = styled.div`
   background-color: #ffffff;
-  background-image: url(${getAssetUrl('/images/icons/cookie.svg')});
+  background-image: url(${getAssetUrl("/images/icons/cookie.svg")});
   background-position: center;
   background-repeat: no-repeat;
   background-size: 24px auto;
@@ -35,11 +35,15 @@ const StyledCookieFab = styled.div`
   bottom: 13px;
   box-shadow: 0px 7px 15px 0px #5555551a;
   cursor: pointer;
-  height: 46px;
+  height: 48px;
   position: fixed;
-  right: 16px;
-  width: 46px;
+  right: 130px;
+  width: 48px;
   z-index: 1000;
+
+  @media ${device.mobile} {
+    right: 78px;
+  }
 `;
 
 const StyledCookieBanner = styled.div`
@@ -105,7 +109,7 @@ const StyledCross = styled.div`
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url(${getAssetUrl('/images/icons/cross.svg')});
+  background-image: url(${getAssetUrl("/images/icons/cross.svg")});
   background-position: center;
   background-repeat: no-repeat;
 `;

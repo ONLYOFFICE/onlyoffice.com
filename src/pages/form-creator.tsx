@@ -46,6 +46,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "form-creator",
         "GetStarted",
         "Editors",
+        "Tabs",
         "FaqCollapse",
       ])),
       locale,

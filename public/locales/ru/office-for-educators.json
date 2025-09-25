@@ -35,8 +35,8 @@
   "YourOnlineLibrarysBestFriendImgUrl": "/images/templates/office-for-educators/docs/ru/your-online-library-best-friend.png",
   "YourOnlineLibrarysBestFriendImgUrl2x": "/images/templates/office-for-educators/docs/ru/your-online-library-best-friend@2x.png",
 
-  "StartFreeTrial": "НАЧАТЬ БЕСПЛАТНУЮ ПРОБНУЮ ВЕРСИЮ",
-  "RequestFreeDemo": "ЗАПРОСИТЬ БЕСПЛАТНУЮ ДЕМО-ВЕРСИЮ",
+  "StartFreeTrial": "Начать бесплатную пробную версию",
+  "RequestFreeDemo": "Запросить бесплатную демо-версию",
 
   "OODocSpaceTitle": "<0>ONLYOFFICE DocSpace:</0> Соберите учебные материалы и студентов в настраиваемых комнатах",
   "OODocSpaceTitleDesc": "Если вам нужна еще большая гибкость при распределении студентов для выполнения групповых заданий (или у вас просто нет подходящей системы управления обучением), то ONLYOFFICE DocSpace — правильное решение для вас. Здесь вы можете контролировать, кто может просматривать файлы, совместно работать над ними или предоставлять к ним доступ в ваших виртуальных комнатах.",
@@ -61,7 +61,7 @@
   "FlexiblePermissionsAndRolesImgUrl": "/images/templates/office-for-educators/docspace/ru/flexible-permissions-and-roles.png",
   "FlexiblePermissionsAndRolesImgUrl2x": "/images/templates/office-for-educators/docspace/ru/flexible-permissions-and-roles@2x.png",
 
-  "GetStarted": "НАЧАТЬ",
+  "GetStarted": "Начать",
 
   "FreeCloud": "<0>Бесплатное облако</0> для школ",
   "FreeCloudText": "Создайте бесплатное облако DocSpace для своей школы — получите 2 ГБ хранилища и до 20 учетных записей администратора.",
@@ -87,8 +87,8 @@
   "YouWontFindABetterPlaceToCollaborate": "Нет лучшего варианта для совместной работы",
   "YouWontFindABetterPlaceToCollaborateDesc": "ONLYOFFICE был создан с важной целью: сделать совместную работу быстрой, легкой и эффективной. Функции, которые вы больше нигде не найдете, позволят вам объединить ваших учеников и коллег в новом формате.",
 
-  "GetItNow": "ПОЛУЧИТЬ СЕЙЧАС",
-  "TryInTheCloud": "ПОПРОБОВАТЬ В ОБЛАКЕ",
+  "GetItNow": "Получить сейчас",
+  "TryInTheCloud": "Попробовать в облаке",
 
   "SuccessStoriesTitle": "Истории успеха, которые показывают, как это делается",
   "SuccessStoriesText": "Мы могли бы долго рассказывать о том, как хорошо сочетаются ONLYOFFICE и образование. Но мы лучше покажем вам — продемонстрировав истории успеха других пользователей.",

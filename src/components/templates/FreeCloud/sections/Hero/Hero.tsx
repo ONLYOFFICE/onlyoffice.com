@@ -241,7 +241,7 @@ const Hero = () => {
       const freeCloudData = await freeCloudResponse.json();
 
       if (
-        freeCloudData.status === "errorHCaptchaInvalid" ||
+        freeCloudData.status === "hCaptchaInvalid" ||
         freeCloudData.status === "error"
       ) {
         setSubmitStatus("error");

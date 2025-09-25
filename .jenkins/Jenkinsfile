@@ -4,6 +4,7 @@ def aws_region = ""
 def region = ""
 def cloud_front_distribution_id = ""
 def src_domain = ""
+def base_domain = ""
 def next_public_static_url = ""
 def onlyoffice_site_mysql_host = ""
 def onlyoffice_site_mysql_database = ""
@@ -45,6 +46,7 @@ switch(BRANCH_NAME) {
     region="info"
     cloud_front_distribution_id="EQ4O7B2M9Q51X"
     src_domain="test-new.teamlab.info"
+    base_domain="https://test-new.teamlab.info"
     next_public_static_url="https://static-test-new.teamlab.info/public"
     onlyoffice_site_mysql_host="teamlab-4testing.cyxlgbdbuyvm.us-east-1.rds.amazonaws.com"
     onlyoffice_site_mysql_database="teamlab_site_test"
@@ -85,6 +87,7 @@ switch(BRANCH_NAME) {
     region="com"
     cloud_front_distribution_id="E2JZ8IECDUCP4S"
     src_domain="2025.onlyoffice.com"
+    base_domain="https://2025.onlyoffice.com"
     next_public_static_url="https://static-site.onlyoffice.com/public"
     onlyoffice_com_strapi_api_url="https://cms.onlyoffice.com"
     onlyoffice_com_next_public_site_url="https://www.onlyoffice.com"
@@ -142,6 +145,7 @@ pipeline {
       environment {
         region = "${region}"
         src_domain="${src_domain}"
+        base_domain="${base_domain}"
         next_public_static_url = "${next_public_static_url}"
         onlyoffice_site_mysql_host="${onlyoffice_site_mysql_host}"
         onlyoffice_site_mysql_database="${onlyoffice_site_mysql_database}"
@@ -206,7 +210,8 @@ pipeline {
                         string(credentialsId: 'onlyoffice_site_test_core_io2_mysql_url', variable: 'onlyoffice_site_test_core_io2_mysql_url'),
                         string(credentialsId: 'onlyoffice_site_test_teamlabsite_mysql_url', variable: 'onlyoffice_site_test_teamlabsite_mysql_url'),
                         string(credentialsId: 'onlyoffice_site_test_personal_mysql_url', variable: 'onlyoffice_site_test_personal_mysql_url'),
-                        string(credentialsId: 'onlyoffice_site_test_captcha_secret_emails', variable: 'onlyoffice_site_test_captcha_secret_emails'),                        
+                        string(credentialsId: 'onlyoffice_site_test_captcha_secret_emails', variable: 'onlyoffice_site_test_captcha_secret_emails'),
+                        string(credentialsId: 'onlyoffice_site_test_next_public_passwordhash_salt', variable: 'onlyoffice_site_test_next_public_passwordhash_salt'),                      
                         string(credentialsId: 'onlyoffice_site_prod_hcaptcha_site_key', variable: 'onlyoffice_site_prod_hcaptcha_site_key'),
                         string(credentialsId: 'onlyoffice_site_prod_hcaptcha_secret_key', variable: 'onlyoffice_site_prod_hcaptcha_secret_key'),
                         string(credentialsId: 'onlyoffice_site_prod_billing_secret', variable: 'onlyoffice_site_prod_billing_secret'),
@@ -224,7 +229,8 @@ pipeline {
                         string(credentialsId: 'onlyoffice_site_prod_core_com2_mysql_url', variable: 'onlyoffice_site_prod_core_com2_mysql_url'),
                         string(credentialsId: 'onlyoffice_site_prod_core_teamlabsite_mysql_url', variable: 'onlyoffice_site_prod_core_teamlabsite_mysql_url'),
                         string(credentialsId: 'onlyoffice_site_prod_core_personal_mysql_url', variable: 'onlyoffice_site_prod_core_personal_mysql_url'),
-                        string(credentialsId: 'onlyoffice_site_prod_captcha_secret_emails', variable: 'onlyoffice_site_prod_captcha_secret_emails')]) {          
+                        string(credentialsId: 'onlyoffice_site_prod_captcha_secret_emails', variable: 'onlyoffice_site_prod_captcha_secret_emails'),
+                        string(credentialsId: 'onlyoffice_site_prod_next_public_passwordhash_salt', variable: 'onlyoffice_site_prod_next_public_passwordhash_salt')]) {          
         sh '''
 
           export AWS_ACCESS_KEY_ID="$cmsoforms_user"
@@ -311,14 +317,17 @@ pipeline {
             sed -i "s^var_personal_mysql_url^$onlyoffice_site_test_personal_mysql_url^" .env
 
             sed -i "s^var_captcha_secret_emails^$onlyoffice_site_test_captcha_secret_emails^" .env
+            sed -i "s^var_next_public_passwordhash_salt^$onlyoffice_site_test_next_public_passwordhash_salt^" .env
 
+            sed -i "s^var_base_url^$base_domain^" .env
+            
             cp .jenkins/robots.txt ./
 
           fi
 
           if [ "${region}" = "com" ]; then
-
             sed -i "s^var_next_public_hcaptcha_site_key^$onlyoffice_site_prod_hcaptcha_site_key^" .env
+            sed -i "s^var_base_url^$base_domain^" .env
             sed -i "s^var_hcaptcha_secret_key^$onlyoffice_site_prod_hcaptcha_secret_key^" .env
             sed -i "s^var_billing_secret^$onlyoffice_site_prod_billing_secret^" .env
             sed -i "s^var_onlyoffice_document_server_token^$onlyoffice_site_prod_document_server_token^" .env
@@ -343,6 +352,7 @@ pipeline {
             sed -i "s^var_personal_mysql_url^$onlyoffice_site_prod_core_personal_mysql_url^" .env
 
             sed -i "s^var_captcha_secret_emails^$onlyoffice_site_prod_captcha_secret_emails^" .env
+            sed -i "s^var_next_public_passwordhash_salt^$onlyoffice_site_prod_next_public_passwordhash_salt^" .env
 
           fi
           

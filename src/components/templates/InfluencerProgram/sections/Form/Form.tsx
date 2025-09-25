@@ -15,6 +15,7 @@ import { Input } from "@src/components/ui/Input";
 import { useRef, useState } from "react";
 import { validateEmail, validateFullName } from "@src/utils/validators";
 import { validateTestEmail } from "@src/utils/IsTestEmail";
+import { getFromParam } from "@src/utils/getParams";
 import { TextArea } from "@src/components/ui/TextArea";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { Link } from "@src/components/ui/Link";
@@ -24,15 +25,15 @@ import { IInitialformData } from "./Form.types";
 const Form = () => {
   const { t } = useTranslation("influencer-program");
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
+  const from = getFromParam();
 
   const initialformData: IInitialformData = {
-    fromPage: "influencer-program-request",
+    fromPage: from ?? "",
     fullName: "",
     email: "",
     link: "",
     moreDetails: "",
-    hCaptcha: null,
-    errorText: "",
+    hCaptchaResponse: null,
   };
 
   const [formStatus, setFormStatus] =
@@ -51,7 +52,7 @@ const Form = () => {
   const handleHCaptchaChange = (token: string | null) => {
     setFormData((prevData) => ({
       ...prevData,
-      hCaptcha: token,
+      hCaptchaResponse: token,
     }));
     setIsFormValid(
       isFullNameValid &&
@@ -87,7 +88,9 @@ const Form = () => {
         isEmailValid &&
         isLinkValid &&
         isMoreDetailsValid &&
-        ((testEmailOverride ?? isTestEmailValid) ? true : !!formData.hCaptcha),
+        ((testEmailOverride ?? isTestEmailValid)
+          ? true
+          : !!formData.hCaptchaResponse),
     );
   };
 
@@ -114,13 +117,18 @@ const Form = () => {
     setFormStatus("loading");
 
     try {
-      const formResponse = await fetch("/api/influencer-program-request", {
+      const formResponse = await fetch("/api/influencer-program", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
       const responseFormData = await formResponse.json();
-      if (responseFormData.status === "success") {
+
+      if (responseFormData.status === "hCaptchaInvalid") {
+        setFormStatus("error");
+        hCaptchaRef.current?.resetCaptcha();
+        return;
+      } else if (responseFormData.status === "success") {
         setFormStatus("success");
 
         setTimeout(() => {
@@ -128,10 +136,6 @@ const Form = () => {
         }, 5000);
       } else {
         setFormStatus("error");
-        setFormData((prevData) => ({
-          ...prevData,
-          errorText: responseFormData.message || "error",
-        }));
         setTimeout(() => {
           setFormStatus("default");
           clearData();

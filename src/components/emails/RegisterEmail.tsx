@@ -1,3 +1,5 @@
+import { getT } from "@src/lib/helpers/i18next";
+
 interface IRegisterEmail {
   baseUrl: string;
   queryParams: string;
@@ -5,130 +7,14 @@ interface IRegisterEmail {
   language: string;
 }
 
-const emailsTranslations: Record<
-  string,
-  Record<string, string | ((params: Record<string, string>) => string)>
-> = {
-  en: {
-    YourLoginLink: `Your confirmation link for <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Hello!",
-    ClickTheButtonBelow:
-      "Click the button below to confirm your email and access your DocSpace.",
-    SignInToDocSpace: "Sign in to DocSpace",
-    TheConfirmationLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `The confirmation link remains active for 60 minutes <br /> and is valid for a single use only.`,
-    TrulyYoursONLYOFFICETeam: `Truly Yours, ONLYOFFICE Team`,
-    ForAnyPurchaseQuestionsEmailUsAt: `For any purchase questions, email us at <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `In case of technical problems please contact our <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">support team</a>.`,
-    ClickHereToUnsubscribe: `Click here to unsubscribe`,
-  },
-  de: {
-    YourLoginLink: `Ihr Bestätigungslink für <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Hallo!",
-    ClickTheButtonBelow:
-      "Klicken Sie auf die Schaltfläche unten, um Ihre E-Mail-Adresse zu bestätigen und auf Ihren DocSpace zuzugreifen.",
-    SignInToDocSpace: "Bei DocSpace anmelden",
-    TheConfirmationLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `Der Bestätigungslink bleibt 60 Minuten lang aktiv <br>und kann nur einmal verwendet werden.`,
-    TrulyYoursONLYOFFICETeam: `Mit freundlichen Grüßen, ONLYOFFICE Team`,
-    ForAnyPurchaseQuestionsEmailUsAt: `Bei Fragen zum Kauf kontaktieren Sie uns bitte per E-Mail an <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `Bei technischen Problemen wenden Sie sich bitte an unser <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">Support-Team</a>.`,
-    ClickHereToUnsubscribe: `Hier klicken, um sich abzumelden`,
-  },
-  es: {
-    YourLoginLink: `Su enlace de confirmación para <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "¡Hola!",
-    ClickTheButtonBelow:
-      "Haga clic en el botón de abajo para confirmar su correo electrónico y acceder a su DocSpace.",
-    SignInToDocSpace: "Acceder a DocSpace",
-    TheConfirmationLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `El enlace de confirmación permanece activo durante 60 minutos <br>y es válido para un solo uso.`,
-    TrulyYoursONLYOFFICETeam: `Atentamente, Equipo de ONLYOFFICE`,
-    ForAnyPurchaseQuestionsEmailUsAt: `Para cualquier pregunta sobre la compra, envíenos un correo electrónico a <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `Si tiene problemas técnicos, póngase en contacto con nuestro <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">equipo de soporte</a>.`,
-    ClickHereToUnsubscribe: `Haga clic aquí para cancelar su suscripción`,
-  },
-  fr: {
-    YourLoginLink: `Votre lien de confirmation pour <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Bonjour !",
-    ClickTheButtonBelow:
-      "Cliquez sur le bouton ci-dessous pour confirmer votre e-mail et accéder à votre DocSpace.",
-    SignInToDocSpace: "Connectez-vous à DocSpace",
-    TheConfirmationLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `Le lien de confirmation reste actif pendant 60 minutes <br>et n'est valable que pour une seule utilisation.`,
-    TrulyYoursONLYOFFICETeam: `Bien à vous, équipe de ONLYOFFICE`,
-    ForAnyPurchaseQuestionsEmailUsAt: `Pour toute question relative à l'achat,contactez-nous à <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `En cas de problèmes techniques, veuillez contacter notre <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">équipe d'assistance</a>.`,
-    ClickHereToUnsubscribe: `Cliquez ici pour vous désabonner`,
-  },
-  it: {
-    YourLoginLink: `Il tuo link di conferma per <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Ciao!",
-    ClickTheButtonBelow:
-      "Fai clic sul pulsante qui sotto per confermare il tuo indirizzo email e accedere al tuo DocSpace.",
-    SignInToDocSpace: "Accedi a DocSpace",
-    TheConfirmationLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `Il link di conferma rimane attivo per 60 minuti <br>ed è valido per un solo utilizzo.`,
-    TrulyYoursONLYOFFICETeam: `Cordiali saluti, il team di ONLYOFFICE`,
-    ForAnyPurchaseQuestionsEmailUsAt: `Per domande relative agli acquisti, scrivici a <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `In caso di problemi tecnici, contatta il nostro <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">team di supporto</a>.`,
-    ClickHereToUnsubscribe: `Clicca qui per annullare l'iscrizione`,
-  },
-  ja: {
-    YourLoginLink: `<span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpaceの確認リンク`,
-    Hello: "こんにちは！",
-    ClickTheButtonBelow:
-      "以下のボタンをクリックして、メールアドレスを確認し、DocSpaceにアクセスしてください。",
-    SignInToDocSpace: "DocSpaceにサインイン",
-    TheConfirmationLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `確認リンクは60分間有効で、<br>1 回のみ使用可能です。`,
-    TrulyYoursONLYOFFICETeam: `ONLYOFFICE チーム`,
-    ForAnyPurchaseQuestionsEmailUsAt: `ご購入に関するご質問は、<a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>までメールでお問い合わせください。`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `技術的な問題が発生した場合は、<a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">サポートチーム</a>までご連絡ください。`,
-    ClickHereToUnsubscribe: `購読を解除するにはここをクリック`,
-  },
-  pt: {
-    YourLoginLink: `Seu link de confirmação para o <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Olá!",
-    ClickTheButtonBelow:
-      "Clique no botão abaixo para confirmar seu e-mail e acessar seu DocSpace.",
-    SignInToDocSpace: "Faça login no DocSpace",
-    TheConfirmationLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `O link de confirmação permanece ativo por 60 minutos <br>e é válido apenas para um único uso.`,
-    TrulyYoursONLYOFFICETeam: `Atenciosamente, Equipe ONLYOFFICE`,
-    ForAnyPurchaseQuestionsEmailUsAt: `Para qualquer dúvida sobre compras, envie um e-mail para <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `Em caso de problemas técnicos, entre em contato com nossa <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">support team</a>.`,
-    ClickHereToUnsubscribe: `Clique aqui para cancelar a assinatura`,
-  },
-  ru: {
-    YourLoginLink: `Ваша ссылка подтверждения для <span style="color: #FF6F3D;">ONLYOFFICE</span> DocSpace`,
-    Hello: "Здравствуйте!",
-    ClickTheButtonBelow:
-      "Нажмите на кнопку ниже, чтобы подтвердить ваш адрес электронной почты и получить доступ к DocSpace.",
-    SignInToDocSpace: "Войти в DocSpace",
-    TheConfirmationLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `Ссылка подтверждения будет активна в течение 60 минут <br>и может быть использована однократно.`,
-    TrulyYoursONLYOFFICETeam: `С уважением, команда ONLYOFFICE`,
-    ForAnyPurchaseQuestionsEmailUsAt: `По вопросам покупки свяжитесь с нами по адресу <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `Для решения технических проблем свяжитесь с нашей <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">службой поддержки</a>.`,
-    ClickHereToUnsubscribe: `Если вы хотите отписаться, нажмите на следующую ссылку`,
-  },
-  zh: {
-    YourLoginLink: `您的 <span style="color: #FF6F3D;">ONLYOFFICE</span> 协作空间确认链接`,
-    Hello: "您好！",
-    ClickTheButtonBelow: "点击下方按钮确认您的邮箱并访问您的协作空间。",
-    SignInToDocSpace: "登录协作空间",
-    TheConfirmationLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly: `此确认链接有效期为 60 分钟，<br>且仅限一次性使用。`,
-    TrulyYoursONLYOFFICETeam: `ONLYOFFICE 团队`,
-    ForAnyPurchaseQuestionsEmailUsAt: `如有任何购买问题，请发送电子邮件至 <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>。`,
-    InCaseOfTechnicalProblemsPleaseContactOur: `如有任何技术问题，请联系我们的<a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">支持团队</a。`,
-    ClickHereToUnsubscribe: `点击此处取消订阅`,
-  },
-};
-
-const RegisterEmail = ({
+const RegisterEmail = async ({
   baseUrl,
   queryParams,
   unsubscribeId,
   language,
 }: IRegisterEmail) => {
-  const t = (key: string, params?: Record<string, string>): string => {
-    const langObj = emailsTranslations[language] || emailsTranslations.en;
-    const val = langObj[key];
-    return typeof val === "function" ? val(params || {}) : val || key;
-  };
+  const t = await getT(language, "RegisterEmail");
+
   return `
     <body
       background="#ffffff"
@@ -159,7 +45,7 @@ const RegisterEmail = ({
                         >
                           <div style="text-align: left; height: 44px; width: 570px; margin: 0; padding: 0; padding-top: 20px; box-sizing: content-box;">
                             <a
-                              href="https://www.onlyoffice.com/${language !== 'en' ? language : ''}"
+                              href="https://www.onlyoffice.com/${language !== "en" ? language : ""}"
                               style="text-decoration: none; display: inline-block; width: 386px; height: 44px; margin: 0; padding: 0;"
                               target="_blank"
                             >
@@ -175,7 +61,7 @@ const RegisterEmail = ({
                       <tr border="0" cellspacing="0" cellpadding="0">
                         <td style="padding: 0 40px; margin: 0; text-align: center; vertical-align: top; width: 600px;">
                           <h1 style="font-family: 'Open Sans', Helvetica, Arial, Tahoma, sans-serif; font-size: 24px;font-weight: 700;line-height: 1.33em;letter-spacing: -0.02em;margin: 0; padding: 32px 0 0 0;text-align: center;">
-                            ${t("YourLoginLink")}
+                            ${t("YourConfirmationLink")}
                           </h1>
                           <p style="font-size: 14px;line-height: 21px;margin: 0; padding: 32px 0 0 0;word-wrap: break-word !important;">
                             ${t("Hello")}
@@ -243,7 +129,7 @@ const RegisterEmail = ({
                             ${t("TrulyYoursONLYOFFICETeam")} <br />
                             <a
                               rel="noopener noreferrer"
-                              href="https://www.onlyoffice.com/${language !== 'en' ? language : ''}"
+                              href="https://www.onlyoffice.com/${language !== "en" ? language : ""}"
                               style="color: #FF6F3D;text-decoration: none;"
                               target="_blank"
                             >
@@ -500,7 +386,7 @@ const RegisterEmail = ({
                              </td>
                            </tr>
                               `
-                             }
+                            }
                             </tbody>
                           </table>
                         </td>

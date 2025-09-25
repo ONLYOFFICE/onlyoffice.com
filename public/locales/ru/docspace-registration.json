@@ -50,8 +50,5 @@
   "IncorrectEmailOrPassword": "Неверный пароль или email",
   "YourEmail": "Ваш email:",
   "IfAUserWithThisEmailExists": "Если пользователь с таким адресом существует, инструкция по смене пароля была отправлена на этот email.",
-  "NoThirdPartyAccountFound": "Сторонних аккаунтов не найдено",
-  "YourConfirmationLinkForOODocSpace": "Ваша ссылка подтверждения для ONLYOFFICE DocSpace",
-  "YourLoginLinkToOODocSpace": "Ваша ссылка для входа в ONLYOFFICE DocSpace",
-  "OOPasswordReminder": "Восстановление пароля на сайте ONLYOFFICE"
+  "NoThirdPartyAccountFound": "Сторонних аккаунтов не найдено"
 }

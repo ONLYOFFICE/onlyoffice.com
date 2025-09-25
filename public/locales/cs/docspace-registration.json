@@ -50,8 +50,5 @@
   "IncorrectEmailOrPassword": "Nesprávný e-mail nebo heslo",
   "YourEmail": "Váš email:",
   "IfAUserWithThisEmailExists": "Heslo bylo odesláno na Váš email.",
-  "NoThirdPartyAccountFound": "Účet třetí strany nenalezen",
-  "YourConfirmationLinkForOODocSpace": "Your confirmation link for ONLYOFFICE DocSpace",
-  "YourLoginLinkToOODocSpace": "Your login link to ONLYOFFICE DocSpace",
-  "OOPasswordReminder": "Připomenutí hesla"
+  "NoThirdPartyAccountFound": "Účet třetí strany nenalezen"
 }

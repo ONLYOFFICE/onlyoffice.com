@@ -37,7 +37,7 @@
   "SMBsFeature36": "Lokalno da se svi podaci čuvaju kod vas ILI u javnom oblaku bez instalacije.",
   "JWTLink": "https://www.onlyoffice.com/blog/2022/09/what-is-jwt",
   "SMBsImgUrl3": "/images/templates/for-small-business/features/onlyoffice_docs.svg",
-  "UseInTheCloud": "KORISTITE U OBLAKU",
+  "UseInTheCloud": "Koristite u oblaku",
   "Quote3": "„Nextcloud integracija funkcioniše savršeno! Naši korisnici su veoma zadovoljni mogućnošću uređivanja dokumenata na licu mesta, što im omogućava da dele i sarađuju na dokumentima. Nema potrebe za mejl prilozima i višestrukim verzijama dokumenata.”",
   "Quote3Author": "Guenael S.",
   "Quote3Info": "SysAdmin",
@@ -50,7 +50,7 @@
   "SMBsFeature44": "Enkripcija dokumenata lozinkom i digitalnim potpisima.",
   "SMBsFeature45": "Nativne aplikacije za Windows, Linux, macOS.",
   "SMBsImgUrl4": "/images/templates/for-small-business/features/onlyoffice_free_desktop.svg",
-  "DownloadNow": "PREUZMITE ODMAH",
+  "DownloadNow": "Preuzmite odmah",
 
   "SMBsHead5": "<0>Besplatne</0> mobilne aplikacije za upravljanje dokumentima u pokretu",
   "SMBsSub5": "Zamena za Office, Google Docs mobilno, Zoho Docs mobilno, QuickOffice, Pages",

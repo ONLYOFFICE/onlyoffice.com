@@ -50,8 +50,5 @@
   "IncorrectEmailOrPassword": "Incorrecte e-mail of wachtwoord",
   "YourEmail": "Uw e-mail:",
   "IfAUserWithThisEmailExists": "Het wachtwoord is naar uw e-mail gestuurd.",
-  "NoThirdPartyAccountFound": "Geen account van derden gevonden",
-  "YourConfirmationLinkForOODocSpace": "Your confirmation link for ONLYOFFICE DocSpace",
-  "YourLoginLinkToOODocSpace": "Your login link to ONLYOFFICE DocSpace",
-  "OOPasswordReminder": "ONLYOFFICE Wachtwoordherinnering"
+  "NoThirdPartyAccountFound": "Geen account van derden gevonden"
 }

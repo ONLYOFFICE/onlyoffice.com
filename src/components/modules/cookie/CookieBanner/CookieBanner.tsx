@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import { Trans, useTranslation } from "next-i18next";
 import {
   StyledCookieFab,
@@ -18,6 +19,13 @@ import {
   DEFAULT_CONSENT,
   ALL_GRANTED,
 } from "@src/utils/useUtmCookies";
+import { updateZendeskVerticalOffset } from "./utils/zendesk";
+
+declare global {
+  interface Window {
+    zE?: (command: string, ...args: unknown[]) => void;
+  }
+}
 
 function getConsentCookie(): IConsentData | null {
   if (typeof document === "undefined") return null;
@@ -42,6 +50,9 @@ const CookieBanner = () => {
     (state) => state.IPGeolocationInfo.country,
   );
 
+  const MOBILE_BREAKPOINT = 592;
+  const fabRef = useRef<HTMLDivElement | null>(null);
+  const bannerRef = useRef<HTMLDivElement | null>(null);
   const [consent, setConsent] = useState<IConsentData | null>(null);
   const [showBanner, setShowBanner] = useState(false);
   const [showFab, setShowFab] = useState(false);
@@ -82,26 +93,6 @@ const CookieBanner = () => {
   }, [IPGeolocationCountry]);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (!isFullGDPR && !scrolledRef.current && !getConsentCookie()) {
-        const top = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight;
-        const winHeight = window.innerHeight;
-
-        const scrollPercent = (top + winHeight) / docHeight;
-
-        if (scrollPercent >= 0.2) {
-          scrolledRef.current = true;
-          setConsentCookie(ALL_GRANTED);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [isFullGDPR]);
-
-  useEffect(() => {
     const consentFromCookie = getConsentCookie();
 
     if (consentFromCookie) {
@@ -131,7 +122,7 @@ const CookieBanner = () => {
     const handleScroll = () => {
       if (!isFullGDPR && !scrolledRef.current && !getConsentCookie()) {
         const top = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight; 
+        const docHeight = document.documentElement.scrollHeight;
         const winHeight = window.innerHeight;
 
         const scrollPercent = (top + winHeight) / docHeight;
@@ -147,11 +138,31 @@ const CookieBanner = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isFullGDPR]);
 
+  const updateCookieFabPosition = useCallback(() => {
+    if (!fabRef.current) return;
+
+    const iframe = document.getElementById(
+      "launcher",
+    ) as HTMLIFrameElement | null;
+    if (!iframe) return;
+
+    const iframeWidth = iframe.getBoundingClientRect().width;
+    const iframeOffset = iframeWidth + 30;
+
+    if (fabRef.current.style.right !== `${iframeOffset}px`) {
+      fabRef.current.style.right = `${iframeOffset}px`;
+    }
+  }, []);
+
   const handleAcceptAll = () => {
     setConsentCookie(ALL_GRANTED);
     setConsent(ALL_GRANTED);
     setShowBanner(false);
     setShowFab(true);
+
+    if (window.innerWidth <= MOBILE_BREAKPOINT) {
+      updateZendeskVerticalOffset();
+    }
   };
 
   const handleDeclineAll = () => {
@@ -159,6 +170,10 @@ const CookieBanner = () => {
     setConsent(DEFAULT_CONSENT);
     setShowBanner(false);
     setShowFab(true);
+
+    if (window.innerWidth <= MOBILE_BREAKPOINT) {
+      updateZendeskVerticalOffset();
+    }
   };
 
   const handleSettings = () => {
@@ -170,23 +185,96 @@ const CookieBanner = () => {
       setShowFab(false);
       setShowSettings(true);
     }
+
+    if (window.innerWidth <= MOBILE_BREAKPOINT) {
+      updateZendeskVerticalOffset();
+    }
   };
 
   const handleBanner = () => {
     setShowBanner(true);
     setShowFab(false);
     setShowSettings(false);
+
+    if (window.innerWidth <= MOBILE_BREAKPOINT) {
+      setTimeout(() => {
+        if (bannerRef.current) {
+          updateZendeskVerticalOffset(bannerRef.current.offsetHeight);
+        }
+      }, 0);
+    }
   };
 
   const handleCross = () => {
     setShowBanner(false);
     setShowFab(true);
+    updateZendeskVerticalOffset();
+    setTimeout(() => updateCookieFabPosition(), 0);
   };
+
+  useEffect(() => {
+    let observer: ResizeObserver | null = null;
+    let retryTimeout: NodeJS.Timeout | null = null;
+    let timeout: NodeJS.Timeout | null = null;
+
+    const debouncedUpdate = () => {
+      if (timeout) clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        updateCookieFabPosition();
+      }, 1000);
+    };
+
+    const observeIframe = () => {
+      const iframe = document.getElementById(
+        "launcher",
+      ) as HTMLIFrameElement | null;
+      if (iframe) {
+        observer = new ResizeObserver(() => {
+          debouncedUpdate();
+        });
+        observer.observe(iframe);
+      } else {
+        retryTimeout = setTimeout(observeIframe, 300);
+      }
+    };
+
+    observeIframe();
+
+    return () => {
+      if (observer) observer.disconnect();
+      if (retryTimeout) clearTimeout(retryTimeout);
+      if (timeout) clearTimeout(timeout);
+    };
+  }, [updateCookieFabPosition]);
+
+  useEffect(() => {
+    const updateZendeskOffset = () => {
+      if (window.innerWidth <= MOBILE_BREAKPOINT) {
+        if (bannerRef.current && showBanner) {
+          updateZendeskVerticalOffset(bannerRef.current.offsetHeight);
+        }
+      } else {
+        updateZendeskVerticalOffset();
+      }
+    };
+
+    updateZendeskOffset();
+
+    window.addEventListener("resize", updateZendeskOffset);
+    return () => window.removeEventListener("resize", updateZendeskOffset);
+  }, [showBanner]);
+
   return (
     <>
-      {showFab && <StyledCookieFab id="cookieBanner" onClick={handleBanner} />}
+      {showFab && (
+        <StyledCookieFab
+          ref={fabRef}
+          id="cookieBanner"
+          onClick={handleBanner}
+        />
+      )}
       {showBanner && (
-        <StyledCookieBanner>
+        <StyledCookieBanner ref={bannerRef}>
           <StyledCookieBannerHeader>
             <StyledCookieBannerHeading
               label={t("HarmonyInYourCookies")}

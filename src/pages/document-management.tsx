@@ -39,7 +39,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "common",
         "document-management",
         "DownloadButton",
-        "CollaborationsTabs",
+        "Tabs",
       ])),
       locale,
     },

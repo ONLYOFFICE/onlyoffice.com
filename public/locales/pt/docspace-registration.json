@@ -50,8 +50,5 @@
   "IncorrectEmailOrPassword": "E-mail ou senha incorreta",
   "YourEmail": "Seu e-mail:",
   "IfAUserWithThisEmailExists": "Se existir um usuário com este e-mail, a instrução de alteração de senha foi enviada para o endereço.",
-  "NoThirdPartyAccountFound": "Nenhuma conta de terceiro encontrada",
-  "YourConfirmationLinkForOODocSpace": "Seu link de confirmação para o ONLYOFFICE DocSpace",
-  "YourLoginLinkToOODocSpace": "Seu link de login para o ONLYOFFICE DocSpace",
-  "OOPasswordReminder": "Lembrete de senha do ONLYOFFICE"
+  "NoThirdPartyAccountFound": "Nenhuma conta de terceiro encontrada"
 }

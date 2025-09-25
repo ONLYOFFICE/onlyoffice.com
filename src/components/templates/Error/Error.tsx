@@ -14,7 +14,7 @@ const ErrorTemplate = ({ heading, description }: IError) => {
   const { t } = useTranslation("error");
 
   return (
-    <StyledError forwardedAs="div">
+    <StyledError forwardedAs="div" desktopSpacing={["64px", "64px"]} tabletSpacing={["64px", "64px"]} tabletSmallSpacing={["64px", "64px"]} mobileSpacing={["64px", "64px"]}>
       <Container>
         <StyledErrorWrapper>
           <StyledErrorImg />

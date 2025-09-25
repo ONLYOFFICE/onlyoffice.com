@@ -1,0 +1,22 @@
+{
+  "CollaborationRooms": "Sobe za saradnju",
+  "PublicRooms": "Javne sobe",
+  "CustomRooms": "Prilagođene sobe",
+  "FormFillingRooms": "Sobe za popunjavanje obrazaca",
+  "ZoomMeetingRooms": "Zoom Sobe za sastanke",
+  "VirtualDataRooms": "Virtuelne sobe za podatke",
+  "ExploreOtherEditors": "Istražite druge urednike",
+  "DocumentEditor": "Document Editor",
+  "SpreadsheetEditor": "Spreadsheet Editor",
+  "PresentationEditor": "Presentation Editor",
+  "FormCreator": "Kreator obrazaca",
+  "PDFEditor": "PDF Editor",
+  "EBookCreator": "E-book kreator",
+  "DiagramViewer": "Pregledač dijagrama",
+  "DocumentManagement": "Upravljanje dokumentima",
+  "Mail": "Mail",
+  "Crm": "CRM",
+  "Projects": "Projekti",
+  "Calendar": "Kalendar",
+  "Community": "Zajednica"
+}

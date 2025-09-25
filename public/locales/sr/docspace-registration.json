@@ -50,8 +50,5 @@
   "IncorrectEmailOrPassword": "Incorrect email or password",
   "YourEmail": "Vaš email:",
   "IfAUserWithThisEmailExists": "Email je prazan.",
-  "NoThirdPartyAccountFound": "No third party account found",
-  "YourConfirmationLinkForOODocSpace": "Your confirmation link for ONLYOFFICE DocSpace",
-  "YourLoginLinkToOODocSpace": "Your login link to ONLYOFFICE DocSpace",
-  "OOPasswordReminder": "ONLYOFFICE Password Reminder"
+  "NoThirdPartyAccountFound": "No third party account found"
 }
