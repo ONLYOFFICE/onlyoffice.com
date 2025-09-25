@@ -4,8 +4,8 @@
 
   "OnlineOfficeForConnector": "Online office for <0>Redmine</0>",
   "Subheader": "View, edit and collaborate on office documents within Redmine using ONLYOFFICE Docs",
-  "GetItNow": "Get it now",
-  "FullyCompatibleWithDocxXlsxAndPptx": "Fully compatible with docx, xlsx, and pptx",
+  "GetItNow": "Získat nyní",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Plně kompatibilní s formáty docx, xlsx a pptx",
 
   "HeroTab1ImgUrl": "/images/templates/office-for-redmine/hero/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-redmine/hero/screen1@2x.png",
@@ -22,12 +22,12 @@
   "HeroTab7ImgUrl": "/images/templates/office-for-redmine/hero/screen7.png",
   "HeroTab7ImgUrl2x": "/images/templates/office-for-redmine/hero/screen7@2x.png",
 
-  "GetStarted": "Get started",
+  "GetStarted": "Začínáme",
 
   "MarketplaceConnectorTitle": "Designed for seamless integration with Redmine",
   "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for Redmine now from the <0>Redmine Plugins Directory</0>.",
 
-  "WhyOO": "Why ONLYOFFICE Docs",
+  "WhyOO": "Proč ONLYOFFICE Docs",
   "WhySubheader": "ONLYOFFICE Docs is a self-hosted office suite for working on text documents, spreadsheets, presentations, and forms.",
   "Reason1": "<0>Ready-to-use</0> integration plugin",
   "Reason2": "<0>Easy installation</0> and quick configuration",
@@ -38,14 +38,14 @@
   "Reason7": "Free Community and <0>scalable Enterprise</0> versions",
   "Reason8": "<0>Otevřený zdrojový kód</0> dostupný na GitHubu",
 
-  "HowToStart": "How to start",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStart": "Jak začít",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo si vytvořte účet <1>Docs Cloud</1>.",
   "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>Redmine Plugins Directory</0>.",
-  "HowToStartStep3": "Configure the connector and enable JWT.",
+  "HowToStartStep3": "Nakonfigurujte konektor a povolte JWT.",
   "HowToStartImgUrl": "/images/templates/office-for-redmine/how-to-start/how-to-start.svg",
 
-  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructions": "Podrobné pokyny najdete v <0>centru nápovědy</0>.",
   "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/redmine.aspx",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
 }

@@ -4,8 +4,8 @@
 
   "HeroTitle": "ONLYOFFICE Docs, powerful document editing for your app users",
   "HeroSubtitle": "Maximum compatibility with MS Office formats",
-  "HeroButtonGetIt": "Get it now",
-  "HeroButtonSeeAction": "See it in action",
+  "HeroButtonGetIt": "Získat nyní",
+  "HeroButtonSeeAction": "Podívejte se, jak funguje",
 
   "ClientsTitle": "Trusted by",
 
@@ -26,7 +26,7 @@
   "DocumentBuildingDescription": "Generate docx, xlsx, pptx, and pdf files without having to run the editors. Lightweight tool and easy integration with your service. All programming languages supported.",
   "DocumentConversionTitle": "Document conversion",
   "DocumentConversionDescription": "One API converts all Office documents : texts, sheets, slides, forms, PDFs, and eBooks. More than 50 formats supported.",
-  "SeamlessCollaborationTitle": "Seamless collaboration",
+  "SeamlessCollaborationTitle": "Hladká spolupráce",
   "SeamlessCollaborationDescription": "Real-time and paragraph-locking co-editing, review, version history, comments, and chat. Jitsi and Rainbow integration.",
   "DocumentViewingTitle": "Document viewing",
   "DocumentViewingDescription": "50+ document formats supported for viewing. Switch from common view mode to live viewer to allow users to see the changes made by other collaborators in real time when opening a document in the view only mode.",
@@ -43,7 +43,7 @@
   "UsesDescription": "Including: document and content management systems, CRM and eLearning platforms, mail and project management software, and more.",
   "ExploreIntegrations": "Explore ready integrations",
 
-  "WhyOO": "Why ONLYOFFICE Docs",
+  "WhyOO": "Proč ONLYOFFICE Docs",
   "BenefitsUsersTitle": "Your users will love",
   "BenefitUserTitle1": "Familiar UI",
   "BenefitUserDesc1": "ONLYOFFICE interface is immediately recognizable by millions of people worldwide, so your users are instantly comfortable with creating and editing office documents in your app.",
@@ -73,7 +73,7 @@
   "BenefitDevDesc7": "ONLYOFFICE Docs can be scaled for any number of users, even if you have thousands. Need 1000, 10.000 or even 100K simultaneous connections? Not a problem!",  
   "BenefitDevTitle8": "High availability and performance",
   "BenefitDevDesc8": "Deploy ONLYOFFICE Docs sharded in Kubernetes to prove high availability and service continuity. ONLYOFFICE Docs supports all most commonly used architecture techniques.",
-  "ReadDocumentation": "Read documentation",
+  "ReadDocumentation": "Přečíst dokumentaci",
   "ContactUsForDetails": "Contact us for more details",
 
   "GetStartedTitle": "Getting started is easy",
@@ -83,7 +83,7 @@
   "AmiDescription": "One-click install, auto-update",
   "AlibabaTitle": "Alibaba Image",
   "AlibabaDescription": "Easy to install, auto-update",
-  "GetStarted": "Get started",
+  "GetStarted": "Začínáme",
 
   "Trusted": "Trusted by <0>15 000 000 users</0> worldwide",
   "Quote1": "This integration of ONLYOFFICE Docs into the NetExplorer platform makes collaboration safer and easier. We enable our users to co-edit documents online while ensuring ultimate security and data sovereignty.",
@@ -111,20 +111,20 @@
   "ReportLink": "https://onlyo.co/3m8vlR4",
   "VideoTitle": "Video",
   "VideoDescription": "Discover the latest release of ONLYOFFICE Docs",
-  "WatchNow": "Watch now",
+  "WatchNow": "Sledovat nyní",
   "YoutubeImgUrl": "/images/templates/developer-edition/learn-more/docs-9-0.png",
   "YoutubeLink": "https://www.youtube.com/watch?v=rH1sMMwtyPE",
   "BlogTitle": "Blog",
   "BlogDescription": "How mobile integration works",
   "BlogLink": "https://www.onlyoffice.com/blog/2022/07/onlyoffice-for-developers-how-the-mobile-integration-works",
-  "LearnMore": "Learn more",
+  "LearnMore": "Další informace",
 
 
   "SupportTitle": "Enterprise-level technical support",
   "SupportSubTitle": "The team of experts is here to help you at every step",
   "FreeDemoTitle": "Free demo",
   "FreeDemoDesc": "Request a demonstration of the main Docs features and benefits for your business.",
-  "FreeDemoBtn": "Schedule your free demo",
+  "FreeDemoBtn": "Naplánujte si bezplatnou ukázku",
   "AcademyTitle": "ONLYOFFICE Academy",
   "AcademyDesc": "Master ONLYOFFICE Docs under tutor’s control. Discounts for enterprise users are provided.",
   "AcademyBtn": "Book training",

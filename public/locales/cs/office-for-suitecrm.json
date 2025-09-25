@@ -4,8 +4,8 @@
 
   "OnlineOfficeForConnector": "Online office for <0>SuiteCRM</0>",
   "Subheader": "Work with office files in the SuiteCRM Documents module using ONLYOFFICE Docs",
-  "GetItNow": "Get it now",
-  "FullyCompatibleWithDocxXlsxAndPptx": "Fully compatible with docx, xlsx, and pptx",
+  "GetItNow": "Získat nyní",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Plně kompatibilní s formáty docx, xlsx a pptx",
 
   "HeroTab1ImgUrl": "/images/templates/office-for-suitecrm/hero/screen1.png",
   "HeroTab1ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen1@2x.png",
@@ -26,7 +26,7 @@
   "HeroTab9ImgUrl": "/images/templates/office-for-suitecrm/hero/screen9.png",
   "HeroTab9ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen9@2x.png",
 
-  "GetStarted": "Get started",
+  "GetStarted": "Začínáme",
 
   "MarketplaceConnectorTitle": "Designed for seamless integration with SuiteCRM",
   "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for SuiteCRM now from <0>GitHub</0>.",
@@ -42,14 +42,14 @@
   "Reason7": "<0>No installation required.</0> Quick configuration.",
   "Reason8": "<0>Otevřený zdrojový kód</0> dostupný na GitHubu",
 
-  "HowToStart": "How to start",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStart": "Jak začít",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo si vytvořte účet <1>Docs Cloud</1>.",
   "HowToStartStep2": "Get the ONLYOFFICE connector from <0>GitHub</0>.",
   "HowToStartStep3": "Install and configure the connector.",
   "HowToStartImgUrl": "/images/templates/office-for-suitecrm/how-to-start/how-to-start.png",
 
-  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructions": "Podrobné pokyny najdete v <0>centru nápovědy</0>.",
   "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/suitecrm.aspx",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
 }

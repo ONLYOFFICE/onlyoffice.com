@@ -1,0 +1,76 @@
+{
+  "PageTitle": "Online office for Pipedrive | ONLYOFFICE",
+  "PageDescription": "Edit and collaborate on office documents within Odoo Documents using ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Online office for Pipedrive",
+  "Subheader": "Work with office documents within Pipedrive Deals",
+  "GetStarted": "Začínáme",
+  "ScheduleFreeDemo": "Naplánujte si bezplatnou ukázku",
+  "HeroImgUrl": "/images/templates/office-for-pipedrive/hero/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-pipedrive/hero/hero@2x.png",
+
+  "DocspaceAppTitle": "ONLYOFFICE <0>DocSpace app</0> for Pipedrive",
+  "New": "New",
+  "DocspaceAppHeader": "Create a collaborative environment to work on your deal documents",
+  "DocspaceAppTab1Label": "Easily create a dedicated DocSpace room for document collaboration directly from any Pipedrive deal.",
+  "DocspaceAppTab1ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/screen1.png",
+  "DocspaceAppTab1ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/screen1@2x.png",
+  "DocspaceAppTab2Label": "Synchronize access permissions.",
+  "DocspaceAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/screen2.png",
+  "DocspaceAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/screen2@2x.png",
+  "DocspaceAppTab3Label": "Store all your deal data in one single place.",
+  "DocspaceAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/screen3.png",
+  "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/screen3@2x.png",
+  "DocspaceAppTab4Label": "Edit and collaborate on docs, sheets, slides, forms, PDFs. View media files.",
+  "DocspaceAppTab4ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/screen4.png",
+  "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-pipedrive/docspace-app/screen4@2x.png",
+
+  "DocsAppTitle": "ONLYOFFICE <0>Docs app</0> for Pipedrive",
+  "DocsAppHeader": "Edit and co-author office documents within the Pipedrive interface",
+  "DocsAppTab1Label": "Create or upload text documents, spreadsheets, presentations to Pipedrive.",
+  "DocsAppTab1ImgUrl": "/images/templates/office-for-pipedrive/docs-app/screen1.png",
+  "DocsAppTab1ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/screen1@2x.png",
+  "DocsAppTab2Label": "View and edit office documents attached to Pipedrive deals.",
+  "DocsAppTab2ImgUrl": "/images/templates/office-for-pipedrive/docs-app/screen2.png",
+  "DocsAppTab2ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/screen2@2x.png",
+  "DocsAppTab3Label": "Co-author documents with colleagues in real-time, track changes, leave comments, and chat.",
+  "DocsAppTab3ImgUrl": "/images/templates/office-for-pipedrive/docs-app/screen3.png",
+  "DocsAppTab3ImgUrl2x": "/images/templates/office-for-pipedrive/docs-app/screen3@2x.png",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Pipedrive",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Pipedrive now from the Pipedrive Marketplace.",
+
+  "WhyOO": "Proč ONLYOFFICE?",
+  "Reason1": "Podpora více než <0>50 formátů souborů</0>, plně kompatibilní s formáty MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "<0>Spolupráce</0> v reálném čase a s uzamčením odstavců, revize, historie verzí, porovnání dokumentů, komentáře a chat. Audio a video hovory.",
+  "Reason3": "Free Community and Scalable Enterprise versions. <0>Free 30-day trial</0>. Integration with cloud version.",
+  "Reason4": "Robustní sada nástrojů pro úpravy, formátování a stylizaci. Integrovaný <0>AI pomocník</0>.",
+  "Reason5": "<0>Easy installation</0> from the Pipedrive Marketplace & quick configuration",
+  "Reason6": "<0>Enhanced security</0>. Flexible access rights and JWT. Open source code. Self-hosted solution for total control over your data.",
+
+  "HowToStart": "Jak začít",
+
+  "Docs": "Dokumenty",
+  "DocSpace": "DocSpace",
+
+  "HowToStartStep1Docs": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo se zaregistrujte do <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStartStep2Docs": "Install the integration app from the <0>Pipedrive Marketplace</0>.",
+  "HowToStartStep3Docs": "Configure the integrated instances.",
+  "HowToStartStep1DocsImgUrl": "/images/templates/office-for-pipedrive/how-to-start/step1-dc.svg",
+  "HowToStartStep2DocsImgUrl": "/images/templates/office-for-pipedrive/how-to-start/step2-dc.svg",
+  "HowToStartStep3DocsImgUrl": "/images/templates/office-for-pipedrive/how-to-start/step3-dc.svg",
+
+  "HowToStartStep1Docspace": "Log in to your ONLYOFFICE DocSpace account or start by <0>signing up for a new account</0>.",
+  "HowToStartStep2Docspace": "Install the app from <0>Pipedrive Marketplace</0> and allow the requested permissions.",
+  "HowToStartStep3Docspace": "Configure the Pipedrive and ONLYOFFICE access settings.",
+  "HowToStartStep1DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/step1-ds.svg",
+  "HowToStartStep2DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/step2-ds.svg",
+  "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-pipedrive/how-to-start/step3-ds.svg",
+  "ReadDetailedInstructions": "Check useful guides on Pipedrive integration on <0>GitHub</0> or in the <1>Help Center</1>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/pipedrive.aspx",
+
+  "PartnerHeading": "Are you a Pipedrive partner? How about improving your Pipedrive user experience and increasing your revenue?",
+  "PartnerText": "Připojte se k partnerskému programu ONLYOFFICE hned teď.",
+
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro připojení ONLYOFFICE k vaší oblíbené webové službě? Nebo jste ji již vyvinuli?"
+}
