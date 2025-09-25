@@ -14,16 +14,8 @@
   "Hints": "Подсказки",
   "Blog": "Блог",
   "HelpCenter": "Справочный центр",
-  "ExploreOtherEditors": "Ознакомьтесь с другими редакторами",
   "ViewMacroSamples": "Просмотреть образцы макросов",
   "FindAppsYouNeed": "Найти дополнения",
   "CheckUserGuides": "Ознакомьтесь с руководствами пользователя",
-  "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "Редактор документов",
-  "SpreadsheetEditor": "Редактор таблиц",
-  "PresentationEditor": "Редактор презентаций",
-  "FormCreator": "Редактор форм",
-  "PDFEditor": "Редактор PDF",
-  "EBookCreator": "Инструмент для создания электронных книг",
-  "DiagramViewer": "Просмотрщик диаграмм"
+  "GoToTheTemplateLibrary": "Go to the template library"
 }

@@ -3,7 +3,7 @@ import { Features } from "./sections/Features";
 import { GetStarted } from "@src/components/modules/GetStarted";
 import { LearnMore } from "./sections/LearnMore";
 import { Faq } from "./sections/Faq";
-import { OtherEditors } from "@src/components/modules/OtherEditors";
+import { OtherPagesSelector } from "@src/components/modules/OtherPagesSelector";
 import { ILocale } from "@src/types/locale";
 
 const FormCreatorTemplate = ({ locale }: ILocale) => {
@@ -14,7 +14,7 @@ const FormCreatorTemplate = ({ locale }: ILocale) => {
       <GetStarted background="linear-gradient(180deg, #F8F9F9 43.75%, rgba(248, 249, 249, 0) 100%), #FFFFFF;" />
       <LearnMore />
       <Faq locale={locale} />
-      <OtherEditors />
+      <OtherPagesSelector page={"editors"} withImage={true} withTitle={true} />
     </>
   );
 };

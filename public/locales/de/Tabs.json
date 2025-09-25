@@ -1,0 +1,22 @@
+{
+  "CollaborationRooms": "Räume für Zusammenarbeit",
+  "PublicRooms": "Öffentliche Räume",
+  "CustomRooms": "Benutzerdefinierte Räume",
+  "FormFillingRooms": "Räume zum Ausfüllen von Formularen",
+  "ZoomMeetingRooms": "Zoom-Meeting-Räume",
+  "VirtualDataRooms": "Virtuelle Datenräume",
+  "ExploreOtherEditors": "Andere Editoren entdecken",
+  "DocumentEditor": "Dokumenteneditor",
+  "SpreadsheetEditor": "Tabellenkalkulationseditor",
+  "PresentationEditor": "Präsentationseditor",
+  "FormCreator": "Formularersteller",
+  "PDFEditor": "PDF-Editor",
+  "EBookCreator": "E-Book-Ersteller",
+  "DiagramViewer": "Diagramm-Viewer",
+  "DocumentManagement": "Dokumentenmanagement",
+  "Mail": "E-Mail",
+  "Crm": "CRM",
+  "Projects": "Projekte",
+  "Calendar": "Kalender",
+  "Community": "Community"
+}

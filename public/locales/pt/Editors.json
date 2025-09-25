@@ -14,16 +14,8 @@
   "Hints": "Dicas",
   "Blog": "Blog",
   "HelpCenter": "Central de Ajuda",
-  "ExploreOtherEditors": "Explorar outros editores",
   "ViewMacroSamples": "Ver amostras de macros",
   "FindAppsYouNeed": "Leia mais sobre o que você pode fazer no Editor de Planilhas",
   "CheckUserGuides": "Verifique os guias do usuário",
-  "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "Editor de documentos",
-  "SpreadsheetEditor": "Editor de planilhas",
-  "PresentationEditor": "Editor de apresentações",
-  "FormCreator": "Criador do formulário",
-  "PDFEditor": "Editor de PDF",
-  "EBookCreator": "Criador de E-book",
-  "DiagramViewer": "Visualizador de Diagramas"
+  "GoToTheTemplateLibrary": "Go to the template library"
 }

@@ -45,6 +45,7 @@ switch(BRANCH_NAME) {
     region="info"
     cloud_front_distribution_id="EQ4O7B2M9Q51X"
     src_domain="test-new.teamlab.info"
+    base_domain="https://test-new.teamlab.info/"
     next_public_static_url="https://static-test-new.teamlab.info/public"
     onlyoffice_site_mysql_host="teamlab-4testing.cyxlgbdbuyvm.us-east-1.rds.amazonaws.com"
     onlyoffice_site_mysql_database="teamlab_site_test"
@@ -314,6 +315,8 @@ pipeline {
 
             sed -i "s^var_captcha_secret_emails^$onlyoffice_site_test_captcha_secret_emails^" .env
             sed -i "s^var_next_public_passwordhash_salt^$onlyoffice_site_test_next_public_passwordhash_salt^" .env
+
+            sed -i "s^var_base_url^$base_domain^" .env
             
             cp .jenkins/robots.txt ./
 
@@ -321,7 +324,7 @@ pipeline {
 
           if [ "${region}" = "com" ]; then
 
-            sed -i "s^var_next_public_hcaptcha_site_key^$onlyoffice_site_prod_hcaptcha_site_key^" .env
+            sed -i "s^var_base_url^$onlyoffice_site_prod_hcaptcha_site_key^" .env
             sed -i "s^var_hcaptcha_secret_key^$onlyoffice_site_prod_hcaptcha_secret_key^" .env
             sed -i "s^var_billing_secret^$onlyoffice_site_prod_billing_secret^" .env
             sed -i "s^var_onlyoffice_document_server_token^$onlyoffice_site_prod_document_server_token^" .env

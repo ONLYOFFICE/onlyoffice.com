@@ -14,16 +14,8 @@
   "Hints": "Hints",
   "Blog": "Blog",
   "HelpCenter": "Help Center",
-  "ExploreOtherEditors": "Istražite druge urednike",
   "ViewMacroSamples": "View macro samples",
   "FindAppsYouNeed": "Find the apps you need",
   "CheckUserGuides": "Check user guides",
-  "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "Document Editor",
-  "SpreadsheetEditor": "Spreadsheet Editor",
-  "PresentationEditor": "Presentation Editor",
-  "FormCreator": "Kreator obrazaca",
-  "PDFEditor": "PDF Editor",
-  "EBookCreator": "E-book kreator",
-  "DiagramViewer": "Pregledač dijagrama"
+  "GoToTheTemplateLibrary": "Go to the template library"
 }

@@ -47,7 +47,7 @@ export async function getStaticProps({ locale }: ILocale) {
         "RoomsFeatures",
         "RoomsGetStarted",
         "RoomsFaq",
-        "RoomsTabs",
+        "Tabs",
         "FaqCollapse",
       ])),
       locale,

@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import { items } from "./data/items";
+import { items, itemsEn } from "./data/items";
 import { EditorsFeatures } from "@src/components/modules/editors/EditorsFeatures";
 import { getLink } from "@src/utils/getLink";
 import { ILocale } from "@src/types/locale";
@@ -8,9 +8,11 @@ const Features = ({ locale }: ILocale) => {
   const { t: t1 } = useTranslation("Editors");
   const { t: t2 } = useTranslation("slides");
 
+  const itemsList = locale !== "en" ? items : itemsEn;
+
   return (
     <EditorsFeatures
-      items={items.map((item, index) => ({
+      items={itemsList.map((item, index) => ({
         ...item,
         heading: t2(String(item.heading)),
         text: t2(String(item.text)),

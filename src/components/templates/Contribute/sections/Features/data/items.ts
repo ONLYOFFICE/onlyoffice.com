@@ -11,7 +11,7 @@ interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
 export const items: IFeatureItemExtended[] = [
   {
     icon: {
-      url: "/images/templates/contribute/contacts/icons.svg",
+      url: "/images/templates/contribute/contacts/icons.png",
       positionX: "-566px",
       mobilePositionX: "-380px",
     },
@@ -35,7 +35,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/contribute/contacts/icons.svg",
+      url: "/images/templates/contribute/contacts/icons.png",
       positionX: "-886px",
       mobilePositionX: "-592px",
     },
@@ -59,7 +59,7 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/contribute/contacts/icons.svg",
+      url: "/images/templates/contribute/contacts/icons.png",
       positionX: "-732px",
       mobilePositionX: "-490px",
     },

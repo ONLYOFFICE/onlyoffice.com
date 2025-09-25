@@ -1,0 +1,22 @@
+{
+  "CollaborationRooms": "协作房间",
+  "PublicRooms": "公共房间",
+  "CustomRooms": "自定义房间",
+  "FormFillingRooms": "表单填写房间",
+  "ZoomMeetingRooms": "Zoom 会议房间",
+  "VirtualDataRooms": "虚拟数据房间",
+  "ExploreOtherEditors": "探索其他编辑器",
+  "DocumentEditor": "文档编辑器",
+  "SpreadsheetEditor": "电子表格编辑器",
+  "PresentationEditor": "演示文稿编辑器",
+  "FormCreator": "表单创建器",
+  "PDFEditor": "PDF 编辑器",
+  "EBookCreator": "电子书创建器",
+  "DiagramViewer": "图表查看器",
+  "DocumentManagement": "文档管理",
+  "Mail": "邮件",
+  "Crm": "CRM",
+  "Projects": "项目",
+  "Calendar": "日历",
+  "Community": "社区"
+}
