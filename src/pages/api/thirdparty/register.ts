@@ -88,7 +88,7 @@ export default async function handler(
     if (utmCampaign) queryString.append("campaign", utmCampaign);
 
     const queryParams = queryString.toString();
-    const baseUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${langPrefix ? `/${langPrefix}` : ""}`;
+    const baseUrl = `${process.env.BASE_URL}${langPrefix ? `/${langPrefix}` : ""}`;
 
     const findByEmailData = await findByEmail({
       email,

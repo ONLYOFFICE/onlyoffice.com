@@ -135,7 +135,7 @@ export default async function handler(
           .json({ status: "error", message: generateKeyData.message });
       }
 
-      const baseUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${locale === "en" ? "" : `/${locale}`}`;
+      const baseUrl = `${process.env.BASE_URL}${locale === "en" ? "" : `/${locale}`}`;
       const emailKey = `${generateKeyData.data.emailKey}1`;
 
       try {

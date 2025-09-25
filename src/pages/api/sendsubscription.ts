@@ -43,7 +43,7 @@ export default async function handler(
 
     const langPrefix = locale === "en" ? "" : locale;
     const t = await getT(locale, "SubscribeEmail");
-    const baseUrl = `${process.env.NEXT_PUBLIC_SITE_URL}${langPrefix ? `/${langPrefix}` : ""}`;
+    const baseUrl = `${process.env.BASE_URL}${langPrefix ? `/${langPrefix}` : ""}`;
 
     let parsedType: SubscribeType = SubscribeType.Common;
     if (

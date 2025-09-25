@@ -98,7 +98,7 @@ export default async function handler(
 
     if (spam) {
       const resSubscr = await fetch(
-        `${process.env.NEXT_PUBLIC_SITE_URL}/api/sendsubscription`,
+        `${process.env.BASE_URL}/api/sendsubscription`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
