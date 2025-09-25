@@ -3,6 +3,7 @@ import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
 import { BestAlternativeCompatibility } from "@src/components/modules/best-alternative/BestAlternativeCompatibility";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Compatibility = () => {
   const { t } = useTranslation("best-wps-alternative");
 
@@ -11,7 +12,7 @@ const Compatibility = () => {
       alternative={{
         label: "WPS",
         logo: {
-          src: "/images/templates/best-wps-alternative/compatibility/logo_wps.svg",
+          src: getAssetUrl("/images/templates/best-wps-alternative/compatibility/logo_wps.svg"),
         },
       }}
       items={items}

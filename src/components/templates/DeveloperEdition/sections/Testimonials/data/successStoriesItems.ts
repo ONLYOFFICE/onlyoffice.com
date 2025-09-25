@@ -1,5 +1,6 @@
 import { IStoryCard } from "@src/components/widgets/StoryCard";
 
+
 export const successStoriesItems: IStoryCard[] = [
   {
     imgUrl: "/images/templates/developer-edition/testimonials/success-stories/easishare.png",

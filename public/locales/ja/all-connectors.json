@@ -5,6 +5,7 @@
   "IntegrateOODocsOrDocSpace": "すぐに使えるコネクタで<0>ONLYOFFICE Docs</0>や<1>DocSpace</1>をお気に入りのビジネスプラットフォームに統合できます",
   "FeaturedConnectors": "人気コネクタ",
   "ConnectorFor": "コネクタ",
+  "For": "用",
   "WOPIConnectorFor": "WOPIコネクタ",
   "New": "新着",
   "MoreInfo": "詳細",
@@ -15,7 +16,6 @@
   "Free": "無料",
   "Paid": "有料",
   "GetItOn": "入手先",
-  
 
   "FeatureConnectorTrelloText": "究極のチームワークプロジェクト管理ツールであるTrello内で、オフィス文書の閲覧、編集、共同作業をリアルタイムで",
   "FeatureConnectorOdooText": "オープンソースのビジネスアプリケーションスイートであるOdoo Documentsでオフィスファイルを編集し、共同作業を行います。",

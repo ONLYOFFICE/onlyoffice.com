@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Text } from "@src/components/ui/Text";
 import { FeatureSwitcher } from "@src/components/widgets/FeatureSwitcher";
 import { helpers } from "./data/helpers";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledAiHelpersBtnsWrapper,
   StyledAiHelpersHeading,
@@ -48,8 +49,8 @@ const AiHelpers = () => {
                   />
                 ),
                 image: {
-                  url: t(image.url),
-                  url2x: image.url2x ? t(image.url2x) : undefined,
+                  url: getAssetUrl(t(image.url)),
+                  url2x: image.url2x ? getAssetUrl(t(image.url2x)) : undefined,
                 },
               }))}
             />

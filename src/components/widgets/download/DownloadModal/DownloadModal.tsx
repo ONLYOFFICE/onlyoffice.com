@@ -8,6 +8,7 @@ import {
 } from "./DownloadModal.styled";
 import { IDownloadModal } from "./DownloadModal.types";
 import { getFromParam } from "@src/utils/getParams";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
 import { countries } from "@src/config/data/countries";
 import { Modal } from "@src/components/ui/Modal";
@@ -61,13 +62,15 @@ const DownloadModal = ({
   const [isFormValid, setIsFormValid] = useState(false);
   const [formStatus, setFormStatus] =
     useState<ILoaderButton["status"]>("default");
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   const isFullNameValid =
     formData.fullName.length > 0 && validateFullName(formData.fullName);
   const isEmailValid =
     formData.email.length > 0 && validateEmail(formData.email);
   const isCompanyValid = formData.companyName.length > 0;
-  const isPhoneValid = formData.phone.length > 0;
+  const phonePrefix = phoneInputRef.current?.getPrefix() || "";
+  const isPhoneValid = formData.phone.replace(phonePrefix, "").length > 0;
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -115,7 +118,7 @@ const DownloadModal = ({
     phoneInputRef.current?.reset();
   };
 
-  const onSubmit = async (token: string) => {
+  const onSubmit = async (token?: string) => {
     if (formStatus === "loading") return;
 
     if (formStatus === "error") {
@@ -143,7 +146,7 @@ const DownloadModal = ({
         from,
         country,
         region,
-        hCaptchaResponse: token,
+        hCaptchaResponse: token || null,
       });
 
       if (onSubmitRequestData.status === "errorHCaptchaInvalid") {
@@ -156,7 +159,10 @@ const DownloadModal = ({
         pageTrack(pageTrackName);
         setFormStatus("success");
         const endOfPartName = pageTrackName.indexOf("_for");
-        const partBtnName = endOfPartName != -1 ? pageTrackName.substring(0, endOfPartName) : pageTrackName;
+        const partBtnName =
+          endOfPartName != -1
+            ? pageTrackName.substring(0, endOfPartName)
+            : pageTrackName;
         pageTrack(partBtnName);
 
         if (buttonAction?.href) {
@@ -233,11 +239,13 @@ const DownloadModal = ({
 
           <Input
             onChange={(e) => handleInputChange("email", e.target.value)}
-            onBlur={() => {
+            onBlur={async () => {
               setIsEmpty((prev) => ({
                 ...prev,
                 email: formData.email.length === 0,
               }));
+              const isTestEmail = await validateTestEmail(formData.email);
+              setIsTestEmailValid(Boolean(isTestEmail));
               checkFormValid();
             }}
             value={formData.email}
@@ -289,9 +297,6 @@ const DownloadModal = ({
                 }));
                 checkFormValid();
               }}
-              status={
-                isEmpty.phone ? "error" : formData.phone ? "success" : "default"
-              }
               required
             />
           )}
@@ -382,7 +387,13 @@ const DownloadModal = ({
           </div>
 
           <LoaderButton
-            onClick={handleHCaptchaExecute}
+            onClick={() => {
+              if (isTestEmailValid) {
+                onSubmit();
+              } else {
+                handleHCaptchaExecute();
+              }
+            }}
             status={formStatus}
             label={t("GetItNow")}
             disabled={!isFormValid}

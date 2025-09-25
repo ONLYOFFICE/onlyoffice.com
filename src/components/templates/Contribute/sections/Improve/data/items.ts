@@ -1,5 +1,6 @@
 import { IImproveItem } from "../sub-components/ImproveItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 interface IImproveItemExtended extends Omit<IImproveItem, "text"> {
   text: {
     label: string;
@@ -10,7 +11,7 @@ interface IImproveItemExtended extends Omit<IImproveItem, "text"> {
 export const items: IImproveItemExtended[] = [
   {
     icon: {
-      url: "/images/templates/contribute/improve/icons.svg",
+      url: getAssetUrl("/images/templates/contribute/contacts/icons.png"),
       positionX: "-136px",
       mobilePositionX: "-92px",
     },
@@ -24,7 +25,7 @@ export const items: IImproveItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/contribute/improve/icons.svg",
+      url: getAssetUrl("/images/templates/contribute/contacts/icons.png"),
       positionX: "0px",
       mobilePositionX: "0px",
     },
@@ -38,7 +39,7 @@ export const items: IImproveItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/contribute/improve/icons.svg",
+      url: getAssetUrl("/images/templates/contribute/contacts/icons.png"),
       positionX: "-280px",
       mobilePositionX: "-188px",
     },
@@ -52,7 +53,7 @@ export const items: IImproveItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/contribute/improve/icons.svg",
+      url: getAssetUrl("/images/templates/contribute/contacts/icons.png"),
       positionX: "-417px",
       mobilePositionX: "-282px",
     },
@@ -61,7 +62,7 @@ export const items: IImproveItemExtended[] = [
       links: [
         { href: "https://github.com/ONLYOFFICE/", isExternal: true },
         {
-          href: "https://forum.onlyoffice.com/?_ga=2.159844410.648881030.1661151945-1933786737.1539158971",
+          href: "https://community.onlyoffice.com/",
           isExternal: true,
         },
       ],

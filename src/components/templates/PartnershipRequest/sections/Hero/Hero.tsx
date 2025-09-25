@@ -128,8 +128,7 @@ const Hero = ({ locale }: IHero) => {
         from,
         spam: formData.spam,
         partnerReqType,
-        locale: router.locale === "en" ? "" : router.locale,
-        hCaptchaResponse,
+        hCaptchaResponse: hCaptchaResponse || null,
       }),
     }).then((res) => res.json());
   };
@@ -166,6 +165,7 @@ const Hero = ({ locale }: IHero) => {
                   target="_blank"
                   textUnderline
                   hover="underline-none"
+                  color="main"
                 />,
               ]}
             />

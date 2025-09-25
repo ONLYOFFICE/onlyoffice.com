@@ -24,9 +24,10 @@ import {
   StyledHeroLoadText,
   StyledHeroRequestStatusText,
   StyledTwoInputsContainer,
+  StyledHeading,
 } from "./Form.styled";
-import { Heading } from "@src/components/ui/Heading";
 import DateTimePicker from "@src/components/ui/DateTimePicker/DateTimePicker";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 
 const Form = () => {
   const { t } = useTranslation("demo-order");
@@ -47,6 +48,7 @@ const Form = () => {
     note: false,
     spam: false,
   });
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
   const initialFormData: IFormData = {
     fullName: "",
     email: "",
@@ -74,7 +76,7 @@ const Form = () => {
     formData.time.length > 0 &&
     formData.timeZoneOffset.length > 0;
   const isProductValid = formData.module.length > 0;
-  const isHCaptchaValid = formData.hcaptcha !== null;
+  const isHCaptchaValid = isTestEmailValid ? true : formData.hcaptcha !== null;
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -230,7 +232,7 @@ const Form = () => {
 
   return (
     <>
-      <Heading size={4} level={2} label={t("BookDemo")} />
+      <StyledHeading size={4} level={2} label={t("BookDemo")} />
       <StyledHeroForm>
         <Input
           label={t("FullName")}
@@ -264,11 +266,13 @@ const Form = () => {
         />
         <Input
           onChange={(e) => handleInputChange("email", e.target.value)}
-          onBlur={() => {
+          onBlur={async () => {
             setIsEmpty((prev) => ({
               ...prev,
               email: formData.email.length === 0,
             }));
+            const isTestEmail = await validateTestEmail(formData.email);
+            setIsTestEmailValid(Boolean(isTestEmail));
           }}
           value={formData.email}
           label={t("Email")}

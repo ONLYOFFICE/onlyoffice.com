@@ -1,5 +1,6 @@
 import { ISolutionCard } from "@src/components/widgets/SolutionCard";
 
+
 interface ISolutionCardExtended extends Omit<ISolutionCard, "text"> {
   text?: { label?: string; links?: { url: string }[] } | string;
 }

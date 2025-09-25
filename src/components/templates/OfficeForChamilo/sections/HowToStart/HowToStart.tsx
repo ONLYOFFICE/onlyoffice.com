@@ -7,6 +7,7 @@ import { WatchVideo } from "@src/components/widgets/WatchVideo";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const HowToStart = () => {
   const { t } = useTranslation("office-for-chamilo");
@@ -18,7 +19,7 @@ const HowToStart = () => {
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: t(item.imgUrl),
+            imgUrl: getAssetUrl(t(item.imgUrl)),
             heading: item.headingLinks ? (
               <Trans
                 t={t}
@@ -43,7 +44,7 @@ const HowToStart = () => {
         <StyledHowToStartInfo>
           <WatchVideo
             heading={t("HowToConnect")}
-            videoImgUrl="/images/templates/office-for-chamilo/how-to-start/watch-video.png"
+            videoImgUrl={getAssetUrl("/images/templates/office-for-chamilo/how-to-start/watch-video.png")}
             videoUrl="https://www.youtube.com/embed/gl3gmhOKFk8?si=r2wab79sxUZokG2i"
           />
           <Text size={2} textAlign="center">

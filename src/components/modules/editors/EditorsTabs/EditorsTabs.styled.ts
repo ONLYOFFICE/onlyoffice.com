@@ -21,7 +21,7 @@ const StyledEditorsTabLink = styled(Link)`
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 25px 28px;
+  padding: 26px 28px 25px;
   text-decoration: none;
   color: #333;
   white-space: nowrap;

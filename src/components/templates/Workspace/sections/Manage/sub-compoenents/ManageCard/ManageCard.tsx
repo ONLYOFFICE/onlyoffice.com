@@ -3,10 +3,12 @@ import {
   StyledManageCard,
   StyledManageCardContent,
   StyledManageCardImage,
+  StyledManageCardLinks,
   StyledManageCardTextList,
   StyledManageCardTextListItem,
 } from "./ManageCard.styled";
 import { Text } from "@src/components/ui/Text";
+import { Link } from "@src/components/ui/Link";
 
 interface IManageCard {
   title: string;
@@ -18,6 +20,7 @@ interface IManageCard {
     hight: number;
   };
   isActive: boolean;
+  links: { label: string; href: string; isVideo?: boolean }[];
 }
 
 const ManageCard = ({
@@ -25,6 +28,7 @@ const ManageCard = ({
   text,
   textList,
   image,
+  links,
   isActive,
 }: IManageCard) => {
   return (
@@ -39,6 +43,21 @@ const ManageCard = ({
             </StyledManageCardTextListItem>
           ))}
         </StyledManageCardTextList>
+        <StyledManageCardLinks>
+          {links.map((link, index) => (
+            <Link
+              key={index}
+              fontSize="14px"
+              lineHeight="19px"
+              href={link.href}
+              color="main"
+              textUnderline
+              hover="underline-none"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </StyledManageCardLinks>
       </StyledManageCardContent>
       <StyledManageCardImage
         $height={image.hight}

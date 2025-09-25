@@ -1,5 +1,6 @@
 import { useTranslation, Trans } from "next-i18next";
 import { useRouter } from "next/router";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHowToStart,
   StyledHowToStartText,
@@ -17,8 +18,8 @@ const HowToStart = () => {
   const { t } = useTranslation("office-for-zoom");
   const { locale } = useRouter();
 
-  const imageSrc1 = "/images/templates/office-for-zoom/button.svg";
-  const imageSrc2 = "/images/templates/office-for-zoom/icon.svg";
+  const imageSrc1 = getAssetUrl("/images/templates/office-for-zoom/button.svg");
+  const imageSrc2 = getAssetUrl("/images/templates/office-for-zoom/icon.svg");
 
   return (
     <StyledHowToStart id="how-to-start" background="#f9f9f9">
@@ -27,7 +28,7 @@ const HowToStart = () => {
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: item.imgUrl,
+            imgUrl: getAssetUrl(item.imgUrl),
             heading: item.headingLinks ? (
               <Trans
                 t={t}

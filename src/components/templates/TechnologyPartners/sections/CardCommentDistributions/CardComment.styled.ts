@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledCardCommentWrapper = styled.div`
   background-color: #ffffff;
   border-radius: 10px;
@@ -13,7 +14,7 @@ const StyledCardCommentWrapper = styled.div`
   text-align: center;
 
   &::before {
-    background-image: url("/images/templates/technology-partners/cardcomment/quotes.svg");
+    background-image: url(${getAssetUrl('/images/templates/technology-partners/cardcomment/quotes.svg')});
     background-repeat: no-repeat;
     content: "";
     display: block;

@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { ISelect } from "./Select.types";
 import { ChevronDownIcon } from "@src/components/icons";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSelect = styled.div<{ $maxWidth: ISelect["maxWidth"] }>`
   position: relative;
   width: 100%;
@@ -27,7 +28,7 @@ const StyledSelectInput = styled.button<{
           : props.$status === "success"
             ? "#8bb825"
             : "#aaaaaa"};
-  border-radius: 3px;
+  border-radius: 6px;
   padding: ${(props) =>
     props.$labelVariant === "primary"
       ? "24px 48px 12px 16px"
@@ -158,7 +159,7 @@ const StyledSelectOptions = styled.div`
   top: 60px;
   left: 0;
   border: 1px solid #666666;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 8px 0;
   width: 100%;
   max-height: 200px;
@@ -203,9 +204,9 @@ const StyledSelectOption = styled.button<{
         width: 24px;
         height: 24px;
         background-image: ${props.$isReset
-          ? `url("/images/icons/cross.svg")`
+          ? `url(${getAssetUrl('/images/icons/cross.svg')})`
           : props.$isSelected
-            ? `url("/images/icons/check-large.svg")`
+            ? `url(${getAssetUrl('/images/icons/check-large.svg')})`
             : ""};
         background-repeat: no-repeat;
         background-size: contain;

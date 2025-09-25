@@ -73,8 +73,7 @@ export const items: IBlogCard[] = [
     ],
   },
   {
-    imgUrl:
-      "/images/templates/office-for-nextcloud/learn-more/love-foundation.png",
+    imgUrl: "/images/templates/office-for-nextcloud/learn-more/love-foundation.png",
     heading: { label: "LearnMoreLoveFoundation" },
     links: [
       {

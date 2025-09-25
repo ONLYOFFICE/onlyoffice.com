@@ -3,6 +3,7 @@ import { ContentImage } from "./ContentImage";
 import { IContentImage } from "./ContentImage.types";
 import { Container } from "@src/components/ui/Container";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export default {
   title: "Widgets/ContentImage",
   component: ContentImage,
@@ -49,6 +50,6 @@ export const Default = Template.bind({});
 Default.args = {
   children: "Text",
   image: {
-    url: "/images/storybook/widgets/content-image/secure-for-sensitive-documents.png",
+    url: getAssetUrl("/images/storybook/widgets/content-image/secure-for-sensitive-documents.png"),
   },
 };

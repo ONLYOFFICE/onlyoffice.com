@@ -14,11 +14,13 @@ import {
   ICheckStatus,
   IFormData,
   ISelectSubjectItems,
+  TAllowedFileTypes,
 } from "../../SupportContactForm.types";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { hasOption } from "../../utils/typeGuards";
 import { validateFullName, validateEmail } from "@src/utils/validators";
 import { getFromParam } from "@src/utils/getParams";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { useClientOS } from "../../utils/useClientOs";
 
 import { StyledSelectInputIcon } from "@src/components/ui/Select/Select.styled";
@@ -56,8 +58,9 @@ import {
   StyledSelectOptionTitle,
 } from "./Hero.styled";
 
-const MAX_SIZE = 5 * 1024 * 1024;
+const MAX_SIZE = 5 * 1024 * 1024; // 5MB
 const MAX_FILES = 10;
+const ALLOWED_FILE_TYPES: TAllowedFileTypes[] = ["image/jpeg", "image/png", "application/pdf"];
 
 const Hero = () => {
   const { t } = useTranslation("support-contact-form");
@@ -69,6 +72,7 @@ const Hero = () => {
     name: "default",
     email: "default",
     file: "default",
+    hcaptcha: "default",
   });
 
   const [errorFileName, setErrorFileName] = useState<string>("");
@@ -168,15 +172,28 @@ const Hero = () => {
   const addFile = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (!event.target.files) return;
     const newFiles = Array.from(event.target.files);
+    let allowedCount = MAX_FILES - formData.files.length;
 
     const filtered = newFiles.filter((file) => {
-      if (formData.files.length >= MAX_FILES) {
+      if (allowedCount <= 0) {
         setCheckStatus((prev) => ({
           ...prev,
           file: "error",
         }));
 
         setErrorFileName(t("YouCanAttachUp"));
+        resetFileStatus();
+
+        return false;
+      }
+
+      if (!ALLOWED_FILE_TYPES.includes(file.type as TAllowedFileTypes)) {
+        setCheckStatus((prev) => ({
+          ...prev,
+          file: "error",
+        }));
+
+        setErrorFileName(t("YouCanOnlyAttach"));
         resetFileStatus();
 
         return false;
@@ -193,6 +210,9 @@ const Hero = () => {
 
         return false;
       }
+
+      allowedCount--;
+
       setCheckStatus((prev) => ({
         ...prev,
         file: "success",
@@ -229,7 +249,16 @@ const Hero = () => {
     }
   };
 
-  const handleCheckStatusEmail = () => {
+  const handleCheckStatusEmail = async () => {
+    if (checkStatus.hcaptcha !== "success") {
+      const isTestEmailValid = await validateTestEmail(formData.email);
+
+      setCheckStatus((prev) => ({
+        ...prev,
+        hcaptcha: isTestEmailValid ? "success" : "default",
+      }));
+    }
+
     if (validateEmail(formData.email)) {
       setCheckStatus((prev) => ({
         ...prev,
@@ -241,6 +270,17 @@ const Hero = () => {
         email: "error",
       }));
     }
+  };
+
+  const handleHCaptchaChange = (token: string | null) => {
+    setFormData({
+      ...formData,
+      hcaptcha: token,
+    });
+    setCheckStatus((prev) => ({
+      ...prev,
+      hcaptcha: token ? "success" : "default",
+    }));
   };
 
   const clearData = () => {
@@ -259,6 +299,7 @@ const Hero = () => {
       name: "default",
       email: "default",
       file: "default",
+      hcaptcha: "default",
     });
     setErrorFileName("");
     setSelectedProduct([]);
@@ -268,6 +309,18 @@ const Hero = () => {
     hCaptchaRef.current?.resetCaptcha();
   };
 
+  const autoResetForm = () => {
+    setTimeout(() => {
+      clearData();
+    }, 5000);
+  };
+
+  const resetLoadStatus = () => {
+    setTimeout(() => {
+      setLoadStatus("default");
+    }, 5000);
+  };
+
   const handleOnSubmit = async () => {
     if (loadStatus === "loading") return;
     if (loadStatus === "success") {
@@ -275,7 +328,7 @@ const Hero = () => {
       return;
     }
     if (loadStatus === "error") {
-      clearData();
+      setLoadStatus("default");
       return;
     }
     setLoadStatus("loading");
@@ -308,13 +361,21 @@ const Hero = () => {
 
       if (dataSupport.status === "errorHCaptchaInvalid") {
         setLoadStatus("error");
+        resetLoadStatus();
         return;
       } else if (dataSupport.status === "success") {
         setLoadStatus("success");
+        autoResetForm();
+      } else {
+        console.error("Unexpected server response:", dataSupport);
+        setLoadStatus("error");
+        resetLoadStatus();
+        return;
       }
     } catch (error) {
       console.error(error);
       setLoadStatus("error");
+      resetLoadStatus();
     }
   };
 
@@ -525,6 +586,8 @@ const Hero = () => {
                 label={
                   errorFileName === t("YouCanAttachUp")
                     ? t("YouCanAttachUp")
+                    : errorFileName === t("YouCanOnlyAttach")
+                    ? t("YouCanOnlyAttach")
                     : `${t("FileSizeExceeded")} ${errorFileName}`
                 }
                 color="#CB0000"
@@ -578,12 +641,8 @@ const Hero = () => {
           <StyledHeroHCaptchaWrapper>
             <HCaptcha
               ref={hCaptchaRef}
-              onVerify={(token) => {
-                setFormData((prev) => ({ ...prev, hcaptcha: token }));
-              }}
-              onExpire={() => {
-                setFormData((prev) => ({ ...prev, hcaptcha: null }));
-              }}
+              onVerify={handleHCaptchaChange}
+              onExpire={() => handleHCaptchaChange(null)}
             />
             <StyledHeroAgreeText color="#808080">
               <Trans
@@ -622,7 +681,7 @@ const Hero = () => {
               disabled={
                 checkStatus.name !== "success" ||
                 checkStatus.email !== "success" ||
-                formData.hcaptcha === null
+                checkStatus.hcaptcha !== "success"
               }
               status={loadStatus}
               fullWidth={true}

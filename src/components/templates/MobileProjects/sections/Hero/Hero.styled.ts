@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeading = styled(Heading)`
   max-width: 544px;
   font-size: 48px;
@@ -43,7 +44,7 @@ const StyledButton = styled.div`
 `;
 
 const StyledSection = styled(Section)`
-  background-image: url("/images/templates/mobile-projects/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/mobile-projects/hero/bg.svg')});
   background-position-x: calc(50% + 350px);
   background-color: #f1f1f1;
   background-repeat: no-repeat;

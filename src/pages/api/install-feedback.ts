@@ -1,4 +1,5 @@
 import { InstallFeedbackEmail } from "@src/components/emails/InstallFeedbackEmail";
+import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { emailTransporter } from "@src/config/email/transporter";
 import { NextApiRequest, NextApiResponse } from "next";
@@ -21,7 +22,7 @@ export default async function handler(
     meet,
     support,
     comments,
-    from,
+    email,
     hCaptchaResponse,
   } = req.body;
 
@@ -34,13 +35,15 @@ export default async function handler(
       req.socket.remoteAddress ||
       null;
 
-    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+    if (!isTestEmail(email)) {
+      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
-    if (!hCaptchaResult.success) {
-      return res.status(400).json({
-        status: "errorHCaptchaInvalid",
-        error: hCaptchaResult.error,
-      });
+      if (!hCaptchaResult.success) {
+        return res.status(400).json({
+          status: "errorHCaptchaInvalid",
+          error: hCaptchaResult.error,
+        });
+      }
     }
 
     const modulesString = Object.keys(modules)
@@ -49,7 +52,6 @@ export default async function handler(
 
     const transporter = emailTransporter();
     await transporter.sendMail({
-      from,
       to: process.env.SERVER_EMAIL!,
       subject: "Install Feedback",
       html: InstallFeedbackEmail({

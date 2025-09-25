@@ -28,7 +28,20 @@
   "InAllSocial": "すべてのソーシャルメディア",
   "CustomFormats": "カスタム形とキャンペーン",
   "Creativity": "クリエイティビティ大歓迎",
-
+  
+  "SubscribeToOurNewsletters": "当社ニュースレター購読",
+  "Blog": "Blog",
+  "Twitter": "Twitter",
+  "Discord": "Discord",
+  "YouTube": "YouTube",
+  "TikTok": "TikTok",
+  "GitHub": "GitHub",
+  "LinkedIn": "LinkedIn",
+  "Facebook": "Facebook",
+  "Medium": "Medium",
+  "Fosstodon": "Fosstodon",
+  "Telegram": "Telegram",
+  "Instagram": "Instagram",
   "ApplyNow": "今すぐ応募",
 
   "BecomeAmbassador": "ブランドアンバサダーに<0>なりませんか</0>？",
@@ -72,5 +85,15 @@
   "ErrorRequestText": "申し訳ありませんが、エラーが発生しました。後で再試行してください。",
 
   "LookingForOtherWays": "ONLYOFFICEプロジェクトに貢献する他の方法をお探しですか？",
-  "CheckThisPage": "こちらのページをご覧ください"
+  "CheckThisPage": "こちらのページをご覧ください",
+
+  "ModalTitle": "更新をお見逃しなく！",
+  "GetTheLatestOONews": "お客様のメールボックス宛に ONLYOFFICE 最新ニュースをお届けします",
+  "FirstName": "名",
+  "FirstNameIsEmpty": "名前が入力されていません",
+  "YourEmail": "メールアドレス",
+  "Subscribe": "購読",
+
+  "MessageWithConfirmation": "お客様のメールアドレスに確認メールを送信しました。",
+  "OK": "OK"
 }

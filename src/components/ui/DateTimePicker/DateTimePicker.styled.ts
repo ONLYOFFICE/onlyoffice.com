@@ -5,6 +5,7 @@ import { Modal } from "@src/components/ui/Modal";
 import { StyledModalWrapper } from "../Modal/Modal.styled";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledDateTimePicker = styled.div`
   position: relative;
 `;
@@ -32,7 +33,7 @@ const StyledDateInput = styled.div<{
   background: ${(props) => (props.$isOpen ? "#ffffff" : "#f9f9f9")};
   border: solid 1px #aaaaaa;
   border-color: ${(props) => (props.$isOpen ? "#666666" : "#aaaaaa")};
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   display: grid;
   grid-template-columns: ${({ $isDateEmpty }) =>
@@ -97,7 +98,7 @@ const StyledDatePopup = styled.div<{ $isOpen: boolean }>`
   display: ${(props) => (props.$isOpen ? "block" : "none")};
   background-color: #ffffff;
   border: 1px solid #666666;
-  border-radius: 4px;
+  border-radius: 6px;
   box-sizing: border-box;
   margin-top: 3px;
   position: absolute;
@@ -107,7 +108,7 @@ const StyledDatePopup = styled.div<{ $isOpen: boolean }>`
 
 const StyledCalendarIcon = styled.div<{ $isOpen: boolean }>`
   content: "";
-  background-image: url("/images/icons/datetime-calendar.svg");
+  background-image: url(${getAssetUrl('/images/icons/datetime-calendar.svg')});
   background-repeat: no-repeat;
   background-size: 55px 24px;
   background-position-x: ${(props) => (props.$isOpen ? "-31px" : "0")};
@@ -184,7 +185,7 @@ const StyledDateWrapper = styled.div`
 
     .react-datepicker__day {
       font-weight: normal;
-      color: #666666;
+      color: #444444;
       font-size: 14px;
       line-height: 1.6em;
       text-align: center;
@@ -270,7 +271,7 @@ const Item = styled.li<{ selected: boolean }>`
   line-height: 1.6em;
   padding: 4px 16px;
   width: 76px;
-  border-radius: 5px;
+  border-radius: 6px;
   text-align: center;
 
   ${(props) =>
@@ -315,7 +316,7 @@ const MobilePicker = styled.div<{ $isOpen: boolean; $isSelected: boolean }>`
   justify-content: center;
   align-items: center;
   border: 1px solid #cccccc;
-  border-radius: 3px;
+  border-radius: 6px;
   font-size: 14px;
   line-height: 1.3em;
   width: 80px;
@@ -370,7 +371,7 @@ const StyledSwiperSlide = styled(SwiperSlide)`
     transform-origin: 0;
     transform: none;
     background: #ff6f3d !important;
-    border-radius: 5px;
+    border-radius: 6px;
     color: #ffffff !important;
   }
 `;

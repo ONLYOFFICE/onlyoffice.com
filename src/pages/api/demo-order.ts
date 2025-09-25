@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { emailTransporter } from "@src/config/email/transporter";
 import { DemoOrderEmail } from "@src/components/emails/DemoOrderEmail";
@@ -35,13 +36,15 @@ export default async function handler(
       req.socket.remoteAddress ||
       null;
 
-    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+    if (!isTestEmail(email)) {
+      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
-    if (!hCaptchaResult.success) {
-      return res.status(400).json({
-        status: "errorHCaptchaInvalid",
-        error: hCaptchaResult.error,
-      });
+      if (!hCaptchaResult.success) {
+        return res.status(400).json({
+          status: "errorHCaptchaInvalid",
+          error: hCaptchaResult.error,
+        });
+      }
     }
 
     const errorMessages = [];
@@ -70,7 +73,6 @@ export default async function handler(
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            language: lang,
             firstName: "",
             email: email,
             type: "Common",

@@ -7,6 +7,7 @@ const StyledComparisonCard = styled(Link)`
   display: grid;
   gap: 32px;
   width: 100%;
+  text-decoration: none;
 
   &:hover div {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);

@@ -5,10 +5,11 @@ import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { Button } from "@src/components/ui/Button";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMailModal = styled.div`
   margin: 0 -16px;
   height: 633px;
-  background-image: url("/images/modules/social-icons/mail-modal.png");
+  background-image: url(${getAssetUrl('/images/modules/social-icons/mail-modal.png')});
   background-repeat: no-repeat;
   background-position: center;
 

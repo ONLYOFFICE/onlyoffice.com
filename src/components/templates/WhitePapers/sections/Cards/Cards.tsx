@@ -287,9 +287,9 @@ const Cards = ({ sortValue, locale }: ICardsProp & ILocale) => {
               (
               <StyledCardsContent>
                 <StyledCardsList>
-                  {refinedItems.map((item, i) => {
-                    const whitepaperIndex = refinedItems.filter(i => i.type === "WhitePapers").indexOf(item);
-                    const datasheetIndex = refinedItems.filter(i => i.type === "Datasheets").indexOf(item);
+                  {refinedItems.map((item, index) => {
+                    const whitepaperIndex = refinedItems.filter(index => index.type === "WhitePapers").indexOf(item);
+                    const datasheetIndex = refinedItems.filter(index => index.type === "Datasheets").indexOf(item);
                   return (
                     <CardDatasheets
                       key={`${item.type}-${item.id}`}

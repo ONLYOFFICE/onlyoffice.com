@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledLearnMoreHeading,
   StyledLearnMoreItems,
@@ -7,6 +8,7 @@ import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { BlogCard } from "@src/components/widgets/BlogCard";
 import { items } from "./data/items";
+
 
 const LearnMore = () => {
   const { t } = useTranslation("pdf-editor");
@@ -25,7 +27,7 @@ const LearnMore = () => {
             <BlogCard
               className="blog-card"
               key={index}
-              imgUrl={t(item.imgUrl)}
+              imgUrl={getAssetUrl(t(item.imgUrl))}
               heading={{ label: t2(item.heading.label) }}
               text={t(item.text ?? "")}
               links={item.links?.map((item) => ({

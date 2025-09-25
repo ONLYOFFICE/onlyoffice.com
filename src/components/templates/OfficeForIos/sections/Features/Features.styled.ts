@@ -2,9 +2,18 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { IFeaturesItem } from "./Features.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledFeaturesWrapper = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 700px 352px;
   position: relative;
+  justify-content: center;
+  column-gap: 70px;
+
+  @media ${device.desktop} {
+    grid-template-columns: 57vw 352px;
+    column-gap: 3vw;
+  }
 
   @media ${device.tablet} {
     display: none;
@@ -19,28 +28,38 @@ const StyledFeaturesAside = styled.aside`
   top: calc(10vh + 36px);
   left: 0;
 
+  @media ${device.desktop} {
+    left: 50%;
+  }
+
   @media ${device.tablet} {
     position: relative;
     width: 100%;
     height: 77vw;
     top: 0;
+    left: 0;
   }
 `;
 
 const StyledFeaturesAsideTablet = styled.div`
-  background-image: url("/images/templates/office-for-ios/features/tablet.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-ios/features/tablet.svg')});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 92%;
-  height: 100%;
+  width: 1090px;
+  height: 830px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: -370px;
   z-index: 10;
+
+  @media ${device.desktop} {
+    left: -495px;
+  }
 
   @media ${device.tablet} {
     width: 100vw;
     height: 80vw;
+    left: -20px;
   }
 `;
 
@@ -52,11 +71,11 @@ const StyledFeaturesAsideTabletImg = styled.div<{
   background-image: ${(props) => `url(${props.$bgUrlTablet})`};
   background-repeat: no-repeat;
   background-size: contain;
-  width: 70%;
-  height: 65%;
+  width: 712px;
+  height: 534px;
   position: absolute;
   top: 48%;
-  left: 49%;
+  left: 47%;
   transform: translate(-50%, -50%);
   z-index: ${(props) => props.$zIndex};
 
@@ -74,21 +93,26 @@ const StyledFeaturesAsideTabletImg = styled.div<{
 `;
 
 const StyledFeaturesAsideMobile = styled.div`
-  background-image: url("/images/templates/office-for-ios/features/mobile.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-ios/features/mobile.svg')});
   background-repeat: no-repeat;
   background-size: contain;
-  width: 31%;
-  height: 75%;
+  bottom: -68px;
+  left: 380px;
+  width: 370px;
+  height: 630px;
   position: absolute;
-  top: 16%;
-  right: 1%;
   z-index: 11;
 
+  @media ${device.desktop} {
+    left: 265px;
+  }
+
   @media ${device.tablet} {
-    width: 48vw;
-    height: 62vw;
+    width: 34vw;
+    height: 57vw;
+    right: 0;
+    left: unset;
     top: 12vw;
-    right: -9vw;
   }
 `;
 
@@ -115,7 +139,7 @@ const StyledFeaturesAsideMobileImg = styled.div<{
   @media ${device.tablet} {
     width: 100%;
     height: 100%;
-    left: 53%;
+    left: 57.5%;
     top: 47%;
     transform: translate(-50%, -50%) scale(0.78);
   }

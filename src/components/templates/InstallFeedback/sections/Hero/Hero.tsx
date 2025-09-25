@@ -6,7 +6,7 @@ import { Container } from "@src/components/ui/Container";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { ILoaderButton } from "@src/components/ui/LoaderButton";
 import { QuestionBlock } from "./sub-components/QuestionBlock";
-import { getFromParam } from "@src/utils/getParams";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { IFormData } from "../../InstallFeedback.types";
 
 import {
@@ -36,6 +36,8 @@ import {
   StyledHeroStatusText,
   StyledHeroPopupCloseButton,
   StyledHeroPopupWrapper,
+  StyledHeroSubtitleText,
+  StyledHeroSubtitleWrapper,
 } from "./Hero.styled";
 
 const Hero = () => {
@@ -63,6 +65,8 @@ const Hero = () => {
     comments: "",
     captchaToken: null,
   });
+  const [inputValue, setInputValue] = useState("");
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   const clearData = () => {
     setStatus("default");
@@ -86,6 +90,7 @@ const Hero = () => {
       comments: "",
       captchaToken: null,
     });
+    hCaptchaRef.current?.resetCaptcha();
   };
 
   const handleHCaptchaChange = async (token: string | null) => {
@@ -103,7 +108,6 @@ const Hero = () => {
     }
 
     setStatus("loading");
-    const from = getFromParam();
 
     try {
       const response = await fetch("/api/install-feedback", {
@@ -121,8 +125,8 @@ const Hero = () => {
           meet: formData.degreeVersionMeet,
           support: formData.planToUse,
           comments: formData.comments,
-          from,
           hCaptchaResponse: formData.captchaToken,
+          email: inputValue,
         }),
       });
 
@@ -192,14 +196,17 @@ const Hero = () => {
               heading={t("WhichModulesDoYouUse")}
               isCheckBoxBlock={true}
             />
-            <QuestionBlock
-              formData={formData}
-              setFormData={setFormData}
-              items={issuesItems}
-              name="issues"
-              heading={t("DidYouHaveAnyIssues")}
-              columns={3}
-            />
+            <StyledHeroSubtitleWrapper>
+              <StyledHeroSubtitleText label={t("HaveYouAlreadyTried")} />
+              <QuestionBlock
+                formData={formData}
+                setFormData={setFormData}
+                items={issuesItems}
+                name="issues"
+                heading={t("DidYouHaveAnyIssues")}
+                columns={3}
+              />
+            </StyledHeroSubtitleWrapper>
             <QuestionBlock
               formData={formData}
               setFormData={setFormData}
@@ -248,6 +255,18 @@ const Hero = () => {
               onExpire={() => handleHCaptchaChange(null)}
             />
 
+            <input
+              id="email-input"
+              style={{ display: "none" }}
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onBlur={async () => {
+                const isTestEmail = await validateTestEmail(inputValue);
+                setIsTestEmailValid(Boolean(isTestEmail));
+              }}
+              type="email"
+            />
+
             <StyledHeroLoaderButtonWrapper>
               {status === "loading" && (
                 <StyledHeroLoaderStatusLoadText
@@ -260,7 +279,13 @@ const Hero = () => {
                 label={t("SendFeedback")}
                 onClick={handleSubmit}
                 status={status}
-                disabled={formData.captchaToken === null ? true : false}
+                disabled={
+                  isTestEmailValid
+                    ? false
+                    : formData.captchaToken === null
+                      ? true
+                      : false
+                }
               />
             </StyledHeroLoaderButtonWrapper>
           </StyledHeroForm>

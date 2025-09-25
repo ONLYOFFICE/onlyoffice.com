@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { Section } from "@src/components/ui/Section";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const StyledHero = styled(Section)`
   margin-top: -72px;
   background-color: #efefef;
-  background-image: url("/images/templates/office-for-suitecrm/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-suitecrm/hero/bg.svg')});
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -41,7 +42,7 @@ export const StyledHeroWrapper = styled.div`
 export const StyledHeroLogo = styled.div`
   width: 264px;
   height: 60px;
-  background: url("/images/templates/office-for-suitecrm/hero/logo.svg")
+  background: url(${getAssetUrl('/images/templates/office-for-suitecrm/hero/logo.svg')})
     no-repeat center;
   background-size: contain;
 

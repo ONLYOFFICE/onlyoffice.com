@@ -1,23 +1,23 @@
 {
-  "PageTitle": "Spreadsheet pivot tables and filters | ONLYOFFICE",
-  "PageDescription": "Briefly illustrate relevant data from your worksheets with summaries. Sort and filter sheets to create the most accurate display of information in ONLYOFFICE.",
-  "Header": "Lako analizirajte velike količine podataka",
-  "SubHeader": "Prikažite svoje podatke za svaki pojedinačni zadatak pomoću pivot tabela, filtera i parametara za sortiranje",
+  "PageTitle": "Kontrolne tabele i filteri u tabelama | ONLYOFFICE",
+  "PageDescription": "Kratko ilustrujte relevantne podatke iz svojih radnih listova sa sažecima. Sortirajte i filtrirajte tabele kako biste kreirali najprecizniji prikaz informacija u ONLYOFFICE-u.",
+  "Header": "Jednostavno analizirajte velike količine podataka",
+  "SubHeader": "Prikažite svoje podatke za svaki zadatak pomoću kontrolnih tabela, filtera i parametara sortiranja",
 
   "HeroImgUrl": "/images/templates/pivot-tables-and-filters/hero/hero.png",
   "HeroImgUrl2x": "/images/templates/pivot-tables-and-filters/hero/hero@2x.png",
 
-  "Feature1Title": "Kreirajte pivot tabele",
-  "Feature1Desc": "Sažeto prikažite relevantne podatke iz svojih radnih listova uz rezime. Menjajte i preuređujte polja za prikaz, birajte između više izgleda i organizujte podatke između filtera, redova, kolona i vrednosti.",
+  "Feature1Title": "Kreirajte kontrolne tabele",
+  "Feature1Desc": "Kratko ilustrujte relevantne podatke iz radnih listova sa sažecima. Menjajte i preuređujte prikaz polja, birajte između više rasporeda i organizujte podatke između filtera, redova, kolona i vrednosti.",
 
-  "Feature2Title": "Podesite izgled i napredne postavke",
-  "Feature2Desc": "Smestite rezime na isti ili novi radni list. Menjajte boje, veličine i stilove, birajte između Compact, Outline i Tabular oblika izveštaja i primenjujte postojeće stilove iz šablona ili kreirajte nove.",
+  "Feature2Title": "Prilagodite izgled i napredna podešavanja",
+  "Feature2Desc": "Smestite sažetke na isti ili novi radni list. Menjajte boje, veličine i stilove, birajte između kompaktnih, preglednih i tabelarnih formata izveštaja, i primenjajte postojeće stilove iz šablona ili kreirajte nove.",
 
-  "Feature3Title": "Lako dodajte filtere u tabele",
-  "Feature3Desc": "Sortirajte i filtrirajte listove i pivot tabele kako biste kreirali najtačniji prikaz informacija. Podesite sopstvene šablone za filtriranje. Delite listove sa dozvolom Custom Filter kako biste omogućili svojim kolegama da samostalno dodaju filtere na Excel tabele. Kreirajte Sheet Views (preglede listova) kako biste lično mogli da pregledate podatke sa sopstvenim filterima.",
+  "Feature3Title": "Jednostavno dodajte filtere u tabele",
+  "Feature3Desc": "Sortirajte i filtrirajte radne listove i kontrolne tabele kako biste kreirali najprecizniji prikaz informacija. Postavite svoje filter šablone. Delite tabele sa dozvolom Prilagođeni filter da biste kolegama omogućili samostalno dodavanje filtera na Excel tabelama. Kreirajte prikaze tabela da možete lično pregledati sa sopstvenim filterima.",
 
-  "Feature4Title": "Primenite slicere za brzo filtriranje",
-  "Feature4Desc": "Dodajte slicere za formatirane i pivot tabele kako biste brzo filtrirali informacije pomoću dugmadi. Prilagodite izgled, veličinu i položaj slicera, i konfigurišite parametre prilepljivanja za ćelije. Kreirajte i organizujte više slicera na svojim listovima.",
+  "Feature4Title": "Primena prekidača za brzo filtriranje",
+  "Feature4Desc": "Dodajte prekidače za formatirane i kontrolne tabele da brzo filtrirate informacije pomoću dugmadi. Prilagodite izgled, veličinu i položaj prekidača i podesite parametre prianjanja ćelija. Kreirajte i organizujte više prekidača na svojim tabelama.",
 
   "Feature1ImgUrl": "/images/templates/pivot-tables-and-filters/features/pic1.png",
   "Feature1ImgUrl2x": "/images/templates/pivot-tables-and-filters/features/pic1@2x.png",

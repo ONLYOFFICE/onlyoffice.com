@@ -53,7 +53,6 @@ const StayTuned = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          language: locale === "en" ? "" : locale,
           firstName: "",
           email,
           type: "Common",

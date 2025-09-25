@@ -39,6 +39,7 @@ const People = () => {
           textUnderline={true}
           hover="underline-none"
           color="#fff"
+          href="/customers?from=about"
         />
       </Container>
       <StyledPeopleLeafBg />

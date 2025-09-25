@@ -1,8 +1,9 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
+
 export const items: IBlogCard[] = [
   {
-    imgUrl: "/images/templates/pdf-editor/learn-more/blog.png",
+    imgUrl: "/images/templates/pdf-editor/learn-more/blog.png"  ,
     heading: { label: "Blog" },
     text: "BlogDesc",
     links: [

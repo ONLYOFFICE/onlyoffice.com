@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledError = styled(Section)`
   display: flex;
   align-items: center;
@@ -18,15 +19,16 @@ const StyledErrorWrapper = styled.div`
 
 const StyledErrorImg = styled.div`
   margin-bottom: 40px;
-  padding-bottom: 80%;
+  padding-bottom: 66.8%;
   width: 100%;
   max-width: 518px;
-  background-image: url("/images/templates/error/not-found.svg");
+  background-image: url(${getAssetUrl('/images/templates/error/not-found.svg')});
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 
   @media ${device.mobile} {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
   }
 `;
 

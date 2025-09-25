@@ -11,6 +11,7 @@ import { MedalAward } from "./sub-components/MedalAward";
 import { StarsRatingLogo } from "@src/components/widgets/StarsRatingLogo";
 import { awardItems } from "./data/awardItems";
 import { starsRatingItems } from "./data/starsRatingItems";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Rating = () => {
   const { t } = useTranslation("main");
@@ -30,7 +31,7 @@ const Rating = () => {
                 <li key={index}>
                   <MedalAward
                     linkUrl={item.linkUrl}
-                    imgUrl={item.imgUrl}
+                    imgUrl={getAssetUrl(item.imgUrl)}
                     heading={t(item.heading)}
                   />
                 </li>
@@ -44,7 +45,7 @@ const Rating = () => {
                 <StarsRatingLogo
                   url={item.url}
                   image={{
-                    url: item.image.url,
+                    url: getAssetUrl(item.image.url),
                     alt: item.image.alt,
                     width: item.image.width,
                     height: item.image.height,

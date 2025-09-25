@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Container } from "@src/components/ui/Container";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledContainer = styled(Container)`
   display: flex;
   flex-direction: column;
@@ -111,7 +112,7 @@ const LangImg = styled.div<{ $positionX: number; $width?: number }>`
   content: "";
   display: block;
   height: 58px;
-  background-image: url("/images/templates/developer-edition/developing/lang-logos.svg");
+  background-image: url(${getAssetUrl('/images/templates/developer-edition/developing/lang-logos.svg')});
   background-repeat: no-repeat;
   background-size: auto 58px;
   background-position: ${(props) => props.$positionX}px 50%;

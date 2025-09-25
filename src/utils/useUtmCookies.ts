@@ -52,6 +52,8 @@ export function setConsentCookie(data: IConsentData): void {
     "=" +
     encodeURIComponent(JSON.stringify(data)) +
     "; path=/; max-age=31536000; SameSite=Lax";
+
+    applyConsent(data);
 }
 
 declare global {

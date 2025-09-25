@@ -1,5 +1,17 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { register } from "@src/lib/requests/thirdparty/register";
+import { parse } from "cookie";
+import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
+import { getClientIp } from "@src/lib/helpers/getClientIp";
+import { isTestEmail } from "@src/utils/IsTestEmail";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
+import { validateEmail } from "@src/utils/validators";
+import { LoginEmail } from "@src/components/emails/LoginEmail";
+import { RegisterEmail } from "@src/components/emails/RegisterEmail";
+import { findByEmail } from "@src/lib/requests/thirdparty/findByEmail";
+import { generateKey } from "@src/lib/requests/thirdparty/generate";
+import { sendEmail } from "@src/lib/requests/thirdparty/send";
+import { getLanguage } from "@src/lib/helpers/getLanguage";
+import { getServerI18n } from "@src/lib/helpers/getServerI18n";
 
 export default async function handler(
   req: NextApiRequest,
@@ -9,24 +21,92 @@ export default async function handler(
     return res.status(405).end("Method Not Allowed");
   }
 
-  try {
-    const { thirdPartyProfile } = req.body;
+  if (!(await checkRateLimit(req, res))) return;
 
-    if (typeof thirdPartyProfile !== "string") {
-      return res.status(400).json({
-        status: "error",
-        message: "Missing or invalid 'thirdPartyProfile' field",
-      });
+  try {
+    const {
+      desktop,
+      email,
+      spam,
+      awsRegion,
+      partnerId,
+      affiliateId,
+      hCaptchaResponse,
+    } = req.body;
+
+    if (
+      typeof email !== "string" ||
+      !validateEmail(email) ||
+      !spam ||
+      typeof spam !== "string"
+    ) {
+      return res
+        .status(400)
+        .json({ status: "error", message: "Invalid request parameters" });
     }
 
-    const data = await register({
-      thirdPartyProfile,
-      ip: req.headers["x-forwarded-for"] || req.socket.remoteAddress || null,
-    });
+    const ip = getClientIp(req);
 
-    return res.status(200).json({ status: "success", data: data.data });
+    if (!isTestEmail(email)) {
+      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+      if (!hCaptchaResult.success) {
+        return res.status(400).json({
+          status: "errorHCaptchaInvalid",
+          error: hCaptchaResult.error,
+        });
+      }
+    }
+
+    const { data: generateKeyData } = await generateKey({ email });
+    const cookies = parse(req.headers.cookie || "");
+    const utmCampaign = cookies.utm_campaign || null;
+    const emailKey = `${generateKeyData.emailKey}1`;
+    const language = getLanguage(req);
+    const langPrefix = language === "en" ? "" : language;
+    const i18n = await getServerI18n(language, ["docspace-registration"]);
+
+    const queryString = new URLSearchParams();
+    if (desktop) queryString.append("desktop", desktop);
+    queryString.append("epkey", emailKey);
+    queryString.append("eskey", generateKeyData.linkKey);
+    if (langPrefix) queryString.append("language", langPrefix);
+    if (awsRegion) queryString.append("awsRegion", awsRegion);
+    queryString.append("spam", spam);
+    if (partnerId) queryString.append("partnerId", partnerId);
+    if (affiliateId) queryString.append("affiliateId", affiliateId);
+    if (utmCampaign) queryString.append("campaign", utmCampaign);
+
+    const queryParams = queryString.toString();
+    const baseUrl = `${req.headers.origin}${langPrefix ? `/${langPrefix}` : ""}`;
+
+    const { data: existingTernants } = await findByEmail({ email });
+
+    const isLogin = existingTernants.length > 0;
+    const subject = isLogin
+      ? i18n.t("YourLoginLinkToOODocSpace")
+      : i18n.t("YourConfirmationLinkForOODocSpace");
+    const body = isLogin
+      ? await LoginEmail({
+          baseUrl,
+          queryParams,
+          unsubscribeId: emailKey,
+          language,
+        })
+      : await RegisterEmail({
+          baseUrl,
+          queryParams,
+          unsubscribeId: emailKey,
+          language,
+        });
+
+    await sendEmail({ email, subject, body });
+
+    return res.status(200).json({ status: "success", message: email });
   } catch (err) {
     console.error("register error:", err);
-    res.status(500).json({ status: "error", message: "Internal Server Error" });
+    return res
+      .status(500)
+      .json({ status: "error", message: "Internal Server Error" });
   }
 }

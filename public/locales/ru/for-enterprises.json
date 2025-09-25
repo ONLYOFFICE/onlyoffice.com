@@ -21,7 +21,7 @@
   "EnterpriseSub2": "Замена Google Docs/Sheets/Slides/, Microsoft Office Online, Zoho Docs, Dropbox Paper",
   "EnterpriseFeature2": "Эффективные редакторы текстовых документов, электронных таблиц, презентаций, форм и PDF-файлов",
   "EnterpriseFeature22": "Все инструменты для профессионального редактирования и эффективной совместной работы",
-  "EnterpriseFeature23": "Простое развертывание и интеграция с вашей платформой, например, Nextcloud, Liferay, Nuxeo, Confluence, ownCloud, Jira, Alfresco, SharePoint. <1>Посмотреть все доступные варианты</1>",
+  "EnterpriseFeature23": "Простое развертывание и интеграция с вашей платформой, например: Nextcloud, Liferay, Nuxeo, Confluence, ownCloud, Jira, Alfresco, SharePoint. <1>Посмотреть все доступные варианты</1>",
   "EnterpriseFeature24": "Высочайший уровень безопасности: защита от несанкционированного доступа с помощью JWT, шифрование при передаче, настраиваемое время жизни кэша, ограничения копирования, скачивания и печати",
   "EnterpriseFeature25": "Масштабируемость для предприятий с любым количеством пользователей",
   "EnterpriseFeature26": "Профессиональная техническая поддержка и регулярные обновления",
@@ -51,7 +51,7 @@
   "EnterpriseFeature44": "Защита файлов с помощью паролей и цифровых подписей",
   "EnterpriseFeature45": "Приватные комнаты для сквозного шифрования документов и совместной работы",
   "EnterpriseImgUrl4": "/images/templates/for-enterprises/features/desktop_editors.svg",
-  "DownloadNow": "СКАЧАТЬ ПРЯМО СЕЙЧАС",
+  "DownloadNow": "Скачать прямо сейчас",
 
   "EnterpriseHead5": "<0>Мобильные приложения</0> для работы с документами на устройствах iOS и Android",
   "EnterpriseSub5": "Замена Office, Google Docs mobile, Zoho Docs mobile, QuickOffice, Pages",

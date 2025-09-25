@@ -13,14 +13,12 @@ const StyledButton = styled.button<{
   align-items: center;
   justify-content: center;
   border-radius: ${(props) => props.$borderRadius};
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 18px;
-  letter-spacing: 0.04em;
+  line-height: 22px;
   width: ${(props) => (props.$fullWidth ? "100%" : "auto")};
   min-height: 56px;
   text-align: center;
-  text-transform: uppercase;
   cursor: pointer;
 
   padding: ${(props) => {
@@ -32,8 +30,8 @@ const StyledButton = styled.button<{
 
     if (props.$size === "medium") {
       return props.$variant === "tertiary" || props.$variant === "quinary"
-        ? "18px 24px"
-        : "19px 24px";
+        ? "16px 24px"
+        : "17px 24px";
     }
 
     return "16px 24px";
@@ -78,8 +76,7 @@ const StyledButton = styled.button<{
               &:disabled {
                 background-color: #c7c7c7;
               }
-            }
-          `}
+            `}
           `
         : props.$variant === "tertiary"
           ? css`
@@ -159,17 +156,15 @@ const StyledButton = styled.button<{
   }
 
   @media ${device.mobile} {
-    font-size: 12px;
-    line-height: 16px;
     width: 100%;
     min-height: 48px;
 
     padding: ${(props) =>
       props.$size === "medium"
         ? props.$variant === "tertiary" || props.$variant === "quinary"
-          ? "15px 24px"
-          : "16px 24px"
-        : "16px 24px"};
+          ? "12px 24px"
+          : "13px 24px"
+        : "13px 24px"};
   }
 `;
 

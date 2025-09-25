@@ -1,14 +1,21 @@
+import { getServerI18n } from "@src/lib/helpers/getServerI18n";
+
 interface IRegisterEmail {
   baseUrl: string;
   queryParams: string;
   unsubscribeId: string;
+  language: string;
 }
 
-const RegisterEmail = ({
+const RegisterEmail = async ({
   baseUrl,
   queryParams,
   unsubscribeId,
+  language,
 }: IRegisterEmail) => {
+  const i18n = await getServerI18n(language, ["docspace-regisration"]);
+  const t = i18n.t.bind(i18n);
+
   return `
     <body
       background="#ffffff"
@@ -39,7 +46,7 @@ const RegisterEmail = ({
                         >
                           <div style="text-align: left; height: 44px; width: 570px; margin: 0; padding: 0; padding-top: 20px; box-sizing: content-box;">
                             <a
-                              href="https://www.onlyoffice.com"
+                              href="https://www.onlyoffice.com/${language !== "en" ? language : ""}"
                               style="text-decoration: none; display: inline-block; width: 386px; height: 44px; margin: 0; padding: 0;"
                               target="_blank"
                             >
@@ -55,16 +62,13 @@ const RegisterEmail = ({
                       <tr border="0" cellspacing="0" cellpadding="0">
                         <td style="padding: 0 40px; margin: 0; text-align: center; vertical-align: top; width: 600px;">
                           <h1 style="font-family: 'Open Sans', Helvetica, Arial, Tahoma, sans-serif; font-size: 24px;font-weight: 700;line-height: 1.33em;letter-spacing: -0.02em;margin: 0; padding: 32px 0 0 0;text-align: center;">
-                            Your confirmation link for
-                            <span style="color: #FF6F3D;">ONLYOFFICE</span>
-                            DocSpace
+                            ${t("YourConfirmationLink")}
                           </h1>
                           <p style="font-size: 14px;line-height: 21px;margin: 0; padding: 32px 0 0 0;word-wrap: break-word !important;">
-                            Hello!
+                            ${t("Hello")}
                           </p>
                           <p style="font-size: 14px;line-height: 21px;margin: 0; padding: 8px 0 0 0;word-wrap: break-word !important;">
-                            Click the button below to confirm your email and
-                            access your DocSpace.
+                            ${t("ClickTheButtonBelow")}
                           </p>
                           <p style="font-size: 14px;line-height: 21px;margin: 0; padding: 32px 0 0 0;word-wrap: break-word !important;">
                             <table
@@ -89,7 +93,7 @@ const RegisterEmail = ({
                                         arcsize="5%"
                                         strokecolor="#FF6F3D"
                                         fillcolor="#FF6F3D"
-                                        alt="Sign in to DocSpace"
+                                        alt="${t("SignInToDocSpace")}"
                                         target="_blank"
                                       >
                                         <w:anchorlock />
@@ -97,7 +101,7 @@ const RegisterEmail = ({
                                           class="fol"
                                           style="color:#ffffff; font-family: 'Open Sans', Helvetica, Arial, Tahoma, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.04em; text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap;"
                                         >
-                                          Sign in to DocSpace
+                                          ${t("SignInToDocSpace")}
                                         </center>
                                       </v:roundrect>
                                     </td>
@@ -107,10 +111,10 @@ const RegisterEmail = ({
                                         class="fol"
                                         href="${baseUrl}/docspace-registration-proxy?${queryParams}"
                                         style="background-color:#FF6F3D; border:1px solid #FF6F3D; border-radius: 3px; color:#ffffff; display: inline-block; font-family: 'Open Sans', Helvetica, Arial, Tahoma, sans-serif; font-size: 13px; font-weight: 600; line-height: 18px; padding-top: 18px; padding-right: 36px; padding-bottom: 18px; padding-left: 36px; text-align: center; text-decoration: none; text-transform: uppercase; -webkit-text-size-adjust: none; mso-hide: all; white-space: nowrap; letter-spacing: 0.04em;"
-                                        alt="Sign in to DocSpace"
+                                        alt="${t("SignInToDocSpace")}"
                                         target="_blank"
                                       >
-                                        Sign in to DocSpace
+                                        ${t("SignInToDocSpace")}
                                       </a>
                                     </td>
                                   <!-- <![endif]-->
@@ -120,15 +124,13 @@ const RegisterEmail = ({
                             </table>
                           </p>
                           <p style="font-size: 14px;line-height: 21px;margin: 0; padding: 32px 0 0 0;word-wrap: break-word !important;">
-                            The confirmation link remains active for 60 minutes
-                            <br />
-                            and is valid for a single use only.
+                            ${t("TheConfirmationLinkRemainsActiveFor60MinutesAndIsValidForASingleUseOnly")}
                           </p>
                           <p style="font-size: 14px;line-height: 21px;margin: 0; padding: 44px 0;word-wrap: break-word !important;">
-                            Truly Yours, ONLYOFFICE Team <br />
+                            ${t("TrulyYoursONLYOFFICETeam")} <br />
                             <a
                               rel="noopener noreferrer"
-                              href="https://www.onlyoffice.com"
+                              href="https://www.onlyoffice.com/${language !== "en" ? language : ""}"
                               style="color: #FF6F3D;text-decoration: none;"
                               target="_blank"
                             >
@@ -151,8 +153,7 @@ const RegisterEmail = ({
                           class="fol"
                           style="border-top-width: 1px; border-top-color: #E2E2E2; border-top-style: solid; color: #666666; font-family: 'Open Sans', Helvetica, Arial, Tahoma, sans-serif; font-size: 13px; line-height: 20px; margin: 0; padding: 40px 0 8px; vertical-align: top;"
                         >
-                          For any purchase questions, email us at
-                          <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="mailto:sales@onlyoffice.com">sales@onlyoffice.com</a>.
+                          ${t("ForAnyPurchaseQuestionsEmailUsAt")}
                         </td>
                       </tr>
                       <tr border="0" cellspacing="0" cellpadding="0">
@@ -160,8 +161,7 @@ const RegisterEmail = ({
                           class="fol"
                           style="color: #666666; font-family: 'Open Sans', Helvetica, Arial, Tahoma, sans-serif; font-size: 13px; line-height: 20px; margin: 0; padding: 0; vertical-align: top;"
                         >
-                          In case of technical problems please contact our
-                          <a style="color: #FF6F3D; text-decoration: underline;" target="_blank" href="https://helpdesk.onlyoffice.com">support team</a>.
+                          ${t("InCaseOfTechnicalProblemsPleaseContactOur")}
                         </td>
                       </tr>
                       <tr border="0" cellspacing="0" cellpadding="0">
@@ -174,7 +174,7 @@ const RegisterEmail = ({
                             style="color: #FF6F3D; text-decoration: underline; white-space: nowrap;"
                             target="_blank"
                           >
-                            Click here to unsubscribe
+                            ${t("ClickHereToUnsubscribe")}
                           </a>
                         </td>
                       </tr>
@@ -187,140 +187,207 @@ const RegisterEmail = ({
                             cellpadding="0"
                           >
                             <tbody>
-                              <tr border="0" cellspacing="0" cellpadding="0">
-                                <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
-                                  <a
-                                    href="https://www.facebook.com/pages/OnlyOffice/833032526736775"
-                                    style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 10px;"
-                                    target="_blank"
-                                  >
-                                    <!--[if mso]>
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/facebook.png"
-                                        style="border: 0px none; height: 36px; width: 36px;"
-                                        alt="FB"
-                                      />
-                                    <![endif]-->
-                                    <!--[if !mso]> <!---->
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/facebook.png"
-                                        alt="FB"
-                                        style="border: 0; color: #333333; display: block; height: auto; width: 100%;"
-                                      />
-                                    <!-- <![endif]-->
-                                  </a>
-                                </td>
-                                <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
-                                  <a
-                                    href="https://www.twitter.com/ONLY_OFFICE"
-                                    style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 18px;"
-                                    target="_blank"
-                                  >
-                                    <!--[if mso]>
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/february2024/twitter.png"
-                                        style="border: 0px none; height: 36px; width: 36px;"
-                                        alt="TW"
-                                      />
-                                    <![endif]-->
-                                    <!--[if !mso]> <!---->
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/february2024/twitter.png"
-                                        alt="TW"
-                                        style="border: 0; color: #333333; display: block; height: auto; width: 100%;"
-                                      />
-                                    <!-- <![endif]-->
-                                  </a>
-                                </td>
-                                <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
-                                  <a
-                                    href="https://www.youtube.com/user/onlyofficeTV"
-                                    style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 22px;"
-                                    target="_blank"
-                                  >
-                                    <!--[if mso]>
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/youtube.png"
-                                        style="border: 0px none; height: 36px; width: 36px;"
-                                        alt="YT"
-                                      />
-                                    <![endif]-->
-                                    <!--[if !mso]> <!---->
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/youtube.png"
-                                        alt="YT"
-                                        style="border: 0; color: #333333; display: block; height: auto; width: 100%;"
-                                      />
-                                    <!-- <![endif]-->
-                                  </a>
-                                </td>
-                                <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
-                                  <a
-                                    href="https://www.instagram.com/the_onlyoffice/"
-                                    style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 18px;"
-                                    target="_blank"
-                                  >
-                                    <!--[if mso]>
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/instagram.png"
-                                        style="border: 0px none; height: 36px; width: 36px;"
-                                        alt="IG"
-                                      />
-                                    <![endif]-->
-                                    <!--[if !mso]> <!---->
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/instagram.png"
-                                        alt="IG"
-                                        style="border: 0; color: #333333; display: block; height: auto; width: 100%;"
-                                      />
-                                    <!-- <![endif]-->
-                                  </a>
-                                </td>
-                                <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
-                                  <a
-                                    href="https://www.linkedin.com/company/ascensio-system-sia/"
-                                    style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 24px;"
-                                    target="_blank"
-                                  >
-                                    <!--[if mso]>
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2022/indesign.png"
-                                        style="border: 0px none; height: 36px; width: 36px;"
-                                        alt="LI"
-                                      />
-                                    <![endif]-->
-                                    <!--[if !mso]> <!---->
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2022/indesign.png"
-                                        alt="LI"
-                                        style="border: 0; color: #333333; display: block; height: auto; width: 100%; position: relative; top: 2px;"
-                                      />
-                                    <!-- <![endif]-->
-                                  </a>
-                                </td>
-                                <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
-                                  <a
-                                    href="https://www.tiktok.com/@only_office"
-                                    style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;"
-                                    target="_blank"
-                                  >
-                                    <!--[if mso]>
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2022/tiktok.png"
-                                        style="border: 0px none; height: 36px; width: 36px;"
-                                        alt="TT"
-                                      />
-                                    <![endif]-->
-                                    <!--[if !mso]> <!---->
-                                      <img
-                                        src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2022/tiktok.png"
-                                        alt="TT"
-                                        style="border: 0; color: #333333; display: block; height: auto; width: 100%; position: relative; top: 2px;"
-                                      />
-                                    <!-- <![endif]-->
-                                  </a>
-                                </td>
-                              </tr>
+                            ${
+                              language === "zh"
+                                ? `<tr border="0" cellspacing="0" cellpadding="0">
+                                   <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
+                                     <a href="https://v.douyin.com/kCcv5R1/" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">
+                                       <!--[if mso]>
+                                       <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2022/tiktok.png" style="border: 0px none; height: 20px; width: 20px; font-size: 8px;" alt="Douyin" />
+                                       <![endif]-->
+                                       <!--[if !mso]> <!---->
+                                       <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2022/tiktok.png" alt="Douyin" style="border: 0; color: #333333; display: block; height: auto; width: 100%; position: relative; font-size: 8px;">
+                                       <!-- <![endif]-->
+                                     </a>
+                                   </td>
+                                   <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
+                                     <a href="https://v.kuaishou.com/GeXfVT" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">
+                                       <!--[if mso]>
+                                       <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/kuaishou.png" style="font-size: 8px; border: 0px none; height: 20px; width: 20px;" alt="Kuaishou" />
+                                       <![endif]-->
+                                       <!--[if !mso]> <!---->
+                                       <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/kuaishou.png" alt="Kuaishou" style="font-size: 8px; border: 0; color: #333333; display: block; height: auto; width: 100%;">
+                                       <!-- <![endif]-->
+                                     </a>
+                                   </td>
+                                   <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
+                                     <a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAituLIinbu_T7phDvBDiqiVsev4z3kjH95MZsEpnq7Lv2MnXBh-Sp9tuAHzFnI-Tk/" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">
+                                       <!--[if mso]>
+                                       <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/xiaohongshu.png" style="font-size: 8px; border: 0px none; height: 20px; width: 20px;" alt="Toutiao" />
+                                       <![endif]-->
+                                       <!--[if !mso]> <!---->
+                                       <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/xiaohongshu.png" alt="Toutiao" style="font-size: 8px; border: 0; color: #333333; display: block; height: auto; width: 100%;">
+                                       <!-- <![endif]-->
+                                     </a>
+                                   </td>
+                                   <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
+                                     <a href="https://blog.csdn.net/m0_68274698" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">
+                                       <!--[if mso]>
+                                       <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/csdn.png" style="font-size: 8px; border: 0px none; height: 20px; width: 20px;" alt="CSDN" />
+                                       <![endif]-->
+                                       <!--[if !mso]> <!---->
+                                       <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/csdn.png" alt="CSDN" style="font-size: 8px; border: 0; color: #333333; display: block; height: auto; width: 100%;">
+                                       <!-- <![endif]-->
+                                     </a>
+                                   </td>
+                                   <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
+                                     <a href="https://www.xiaohongshu.com/user/profile/627e271800000000210253ec" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">    
+                                     <!--[if mso]>
+                                     <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/toutiao.png" style="font-size: 8px; border: 0px none; height: 20px; width: 20px;" alt="Xiaohongshu" />
+                                     <![endif]-->
+                                     <!--[if !mso]> <!---->
+                                     <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/toutiao.png" alt="Xiaohongshu" style="font-size: 8px; border: 0; color: #333333; display: block; height: auto; width: 100%;">
+                                     <!-- <![endif]-->
+                                   </a>
+                                 </td>
+                                 <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
+                                   <a href="https://space.bilibili.com/1870911731/" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">
+                                     <!--[if mso]>
+                                     <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/bilibili.png" style="font-size: 8px; border: 0px none; height: 20px; width: 20px;" alt="Bilibili" />
+                                     <![endif]-->
+                                     <!--[if !mso]> <!---->
+                                     <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/bilibili.png" alt="Bilibili" style="font-size: 8px; border: 0; color: #333333; display: block; height: auto; width: 100%;">
+                                     <!-- <![endif]-->
+                                   </a>
+                                 </td>
+                               </tr>
+                              `
+                                : `<tr border="0" cellspacing="0" cellpadding="0">
+                             <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
+                               <a
+                                 href="https://www.facebook.com/pages/OnlyOffice/833032526736775"
+                                 style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 10px;"
+                                 target="_blank"
+                               >
+                                 <!--[if mso]>
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/facebook.png"
+                                     style="border: 0px none; height: 36px; width: 36px; font-size: 8px;"
+                                     alt="FB"
+                                   />
+                                 <![endif]-->
+                                 <!--[if !mso]> <!---->
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/facebook.png"
+                                     alt="FB"
+                                     style="border: 0; color: #333333; display: block; height: auto; width: 100%; font-size: 8px;"
+                                   />
+                                 <!-- <![endif]-->
+                               </a>
+                             </td>
+                             <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
+                               <a
+                                 href="https://www.twitter.com/ONLY_OFFICE"
+                                 style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 18px;"
+                                 target="_blank"
+                               >
+                                 <!--[if mso]>
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/february2024/twitter.png"
+                                     style="border: 0px none; height: 36px; width: 36px; font-size: 8px;"
+                                     alt="TW"
+                                   />
+                                 <![endif]-->
+                                 <!--[if !mso]> <!---->
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/february2024/twitter.png"
+                                     alt="TW"
+                                     style="border: 0; color: #333333; display: block; height: auto; width: 100%; font-size: 8px;"
+                                   />
+                                 <!-- <![endif]-->
+                               </a>
+                             </td>
+                             <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
+                               <a
+                                 href="https://www.youtube.com/user/onlyofficeTV"
+                                 style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 22px;"
+                                 target="_blank"
+                               >
+                                 <!--[if mso]>
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/youtube.png"
+                                     style="border: 0px none; height: 36px; width: 36px; font-size: 8px;"
+                                     alt="YT"
+                                   />
+                                 <![endif]-->
+                                 <!--[if !mso]> <!---->
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/youtube.png"
+                                     alt="YT"
+                                     style="border: 0; color: #333333; display: block; height: auto; width: 100%; font-size: 8px;"
+                                   />
+                                 <!-- <![endif]-->
+                               </a>
+                             </td>
+                             <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
+                               <a
+                                 href="https://www.instagram.com/the_onlyoffice/"
+                                 style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 18px;"
+                                 target="_blank"
+                               >
+                                 <!--[if mso]>
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/instagram.png"
+                                     style="border: 0px none; height: 36px; width: 36px; font-size: 8px;"
+                                     alt="IG"
+                                   />
+                                 <![endif]-->
+                                 <!--[if !mso]> <!---->
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/august2020/instagram.png"
+                                     alt="IG"
+                                     style="border: 0; color: #333333; display: block; height: auto; width: 100%; font-size: 8px;"
+                                   />
+                                 <!-- <![endif]-->
+                               </a>
+                             </td>
+                             <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
+                               <a
+                                 href="https://www.linkedin.com/company/ascensio-system-sia/"
+                                 style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 24px;"
+                                 target="_blank"
+                               >
+                                 <!--[if mso]>
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2022/indesign.png"
+                                     style="border: 0px none; height: 36px; width: 36px; font-size: 8px;"
+                                     alt="LI"
+                                   />
+                                 <![endif]-->
+                                 <!--[if !mso]> <!---->
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2022/indesign.png"
+                                     alt="LI"
+                                     style="border: 0; color: #333333; display: block; height: auto; width: 100%; position: relative; top: 2px; font-size: 8px;"
+                                   />
+                                 <!-- <![endif]-->
+                               </a>
+                             </td>
+                             <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 40px;">
+                               <a
+                                 href="https://www.tiktok.com/@only_office"
+                                 style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;"
+                                 target="_blank"
+                               >
+                                 <!--[if mso]>
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2022/tiktok.png"
+                                     style="border: 0px none; height: 36px; width: 36px; font-size: 8px;"
+                                     alt="TT"
+                                   />
+                                 <![endif]-->
+                                 <!--[if !mso]> <!---->
+                                   <img
+                                     src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2022/tiktok.png"
+                                     alt="TT"
+                                     style="border: 0; color: #333333; display: block; height: auto; width: 100%; position: relative; top: 2px; font-size: 8px;"
+                                   />
+                                 <!-- <![endif]-->
+                               </a>
+                             </td>
+                           </tr>
+                              `
+                            }
                             </tbody>
                           </table>
                         </td>

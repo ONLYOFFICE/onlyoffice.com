@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useTranslation } from "next-i18next";
 import dayjs from "dayjs";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledLatestNewsHeading,
   StyledLatestNewsItems,
@@ -18,6 +19,7 @@ import { items } from "./data/items";
 import { getLink } from "@src/utils/getLink";
 import { formatDateRange } from "@src/utils/formatDateRange";
 import { formatDateLatestNews } from "./utils/formatDateLatestNews";
+
 
 const LatestNews = ({ locale }: ILocale) => {
   const { t } = useTranslation("main");
@@ -142,7 +144,7 @@ const LatestNews = ({ locale }: ILocale) => {
                       <NewsCard
                         className={newsItem.className}
                         heading={t(newsItem.heading)}
-                        imgUrl={t(newsItem.imgUrl)}
+                        imgUrl={getAssetUrl(t(newsItem.imgUrl))}
                         linkUrl={newsItem.linkUrl}
                         isExternalLink={newsItem.isExternalLink}
                         date={formatDateLatestNews(newsItemDate, locale)}
@@ -178,7 +180,7 @@ const LatestNews = ({ locale }: ILocale) => {
               {items.events.map((newsItem, newsIndex) => (
                 <NewsCard
                   heading={t(newsItem.heading)}
-                  imgUrl={t(newsItem.imgUrl)}
+                  imgUrl={getAssetUrl(t(newsItem.imgUrl))}
                   linkUrl={
                     newsItem.linkUrl
                       ? newsItem.linkUrl.startsWith("http")

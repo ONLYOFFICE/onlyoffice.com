@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledSecurityItems = styled.div`
   display: grid;
   row-gap: 56px;
@@ -34,7 +35,7 @@ const SecurityItem = styled.div<{ $icon?: string; $iconPosition?: number }>`
     background-image: ${(props) =>
       props.$icon
         ? `url(${props.$icon})`
-        : "url(/images/templates/workspace-enterprise/security/icons-sprite.svg)"};
+        : `url(${getAssetUrl('/images/templates/workspace-enterprise/security/icons-sprite.svg')})`};
     background-repeat: no-repeat;
     background-size: ${(props) => (props.$icon ? "contain" : "auto 64px")};
     background-position: ${(props) =>

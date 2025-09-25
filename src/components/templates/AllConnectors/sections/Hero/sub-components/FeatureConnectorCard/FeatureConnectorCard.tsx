@@ -46,7 +46,11 @@ const FeatureConnectorCard = ({
           </Text>
           <StyledFeatureConnectorCardHeading>
             <Heading level={4}>
-              {locale === "es" ? heading : t("For") + " " + heading}
+              {locale === "es"
+                ? heading
+                : locale === "ja"
+                  ? heading + " " + t("For")
+                  : t("For") + " " + heading}
             </Heading>
             {isNew && <Badge label={t("New")} />}
           </StyledFeatureConnectorCardHeading>

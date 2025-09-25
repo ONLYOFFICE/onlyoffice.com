@@ -4,6 +4,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { ICheckStatus } from "../../SupportContactForm.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroHeading = styled(Heading)`
   margin-bottom: 40px;
 
@@ -65,7 +66,7 @@ const StyledHeroSelect = styled.button<{
         : "1px solid #AAAAAA"
     };
   `};
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 24px 48px 12px 16px;
   transition: 0.2s;
   cursor: pointer;
@@ -117,7 +118,7 @@ const StyledHeroOptions = styled.div`
   top: 60px;
   left: 0;
   border: 1px solid #666666;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 8px 0;
   width: 100%;
   max-height: 200px;
@@ -182,7 +183,7 @@ const StyledSelectOptionNoInclude = styled(StyledSelectOption)`
 
 const StyledHeroPaidLicense = styled.div`
   background-color: #F9F9F9;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 16px;
   display: flex;
   align-items: center;
@@ -320,7 +321,7 @@ const StyledHeroUploadLabel = styled.label<{
     $fileStatus === "error" &&
     css`
       &::after {
-        background-image: url("/images/icons/cross-red.svg");
+        background-image: url(${getAssetUrl('/images/icons/cross-red.svg')});
         transform: translateY(-50%) scale(1.5);
         opacity: 0;
         animation: popError 0.5s forwards;
@@ -335,7 +336,7 @@ const StyledHeroUploadLabel = styled.label<{
     $fileStatus === "success" &&
     css`
       &::after {
-        background-image: url("/images/icons/check-green.svg");
+        background-image: url(${getAssetUrl('/images/icons/check-green.svg')});
         transform: translateY(-50%) scale(1);
         opacity: 1;
         animation: popSuccess 1s forwards;
@@ -346,7 +347,7 @@ const StyledHeroUploadLabel = styled.label<{
     $fileStatus === "default" &&
     css`
       &::after {
-        background-image: url("/images/icons/clip.svg");
+        background-image: url(${getAssetUrl('/images/icons/clip.svg')});
         filter: grayscale(1);
         transform: translateY(-50%) scale(1);
         opacity: 1;
@@ -411,7 +412,7 @@ const StyledHeroUploadItemRemove = styled.button`
   transform: translateY(-50%);
   border: none;
   background-color: transparent;
-  background-image: url("/images/icons/file-item-close.svg");
+  background-image: url(${getAssetUrl('/images/icons/file-item-close.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -425,7 +426,7 @@ const StyledHeroUploadItem = styled.li`
   align-items: center;
   gap: 16px;
   background-color: #F9F9F9;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 9px 10px;
   position: relative;
   transition-duration: 0.2s;

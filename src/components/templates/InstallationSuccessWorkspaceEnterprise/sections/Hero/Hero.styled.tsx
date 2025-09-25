@@ -3,9 +3,10 @@ import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Heading } from "@src/components/ui/Heading";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledInstallationSuccessWorkspaceEnterpriseHero = styled(Section)`
   background-image:
-    url("/images/templates/installation-success-workspace/hero/bg.svg"),
+    url(${getAssetUrl('/images/templates/installation-success-workspace/hero/bg.svg')}),
     linear-gradient(180deg, #ff8e3d 0%, #ff6f3d 100%);
   background-position:
     center 0,
@@ -43,7 +44,7 @@ const StyledInstallationSuccessWorkspaceEnterpriseHero = styled(Section)`
 `;
 
 const StyledInstallationSuccessWorkspaceEnterpriseHeroImage = styled.div`
-  background-image: url("/images/templates/installation-success-workspace/hero/logo.svg");
+  background-image: url(${getAssetUrl('/images/templates/installation-success-workspace/hero/logo.svg')});
   background-repeat: no-repeat;
   background-size: 56px;
   height: 56px;
@@ -61,7 +62,7 @@ const StyledInstallationSuccessWorkspaceEnterpriseHeroImage = styled.div`
 `;
 
 const StyledEditorsAreaImage = styled.div`
-  background-image: url("/images/templates/installation-success-workspace/hero/mascot.svg");
+  background-image: url(${getAssetUrl('/images/templates/installation-success-workspace/hero/mascot.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

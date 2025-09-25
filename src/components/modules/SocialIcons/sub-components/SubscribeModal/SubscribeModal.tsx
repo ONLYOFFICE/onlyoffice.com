@@ -17,6 +17,7 @@ import {
 import { Modal } from "@src/components/ui/Modal";
 import { CrossIcon } from "@src/components/icons";
 import { validateEmail } from "@src/utils/validators";
+import { ISubscribeInput } from "@src/components/widgets/SubscribeInput";
 
 const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
   const { t } = useTranslation("SubscribeModal");
@@ -30,6 +31,9 @@ const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
     email: false,
   });
   const [isFormValid, setIsFormValid] = useState(false);
+  const [subscribeStatus, setSubscribeStatus] =
+    useState<ISubscribeInput["status"]>("default");
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -49,7 +53,7 @@ const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
     setIsFormValid(nameIsValid && emailIsValid);
   };
 
-  const onSubmit = () => {
+  const onSubmit = async () => {
     const nameIsEmpty = formData.name.trim().length === 0;
     const emailIsEmpty = formData.email.trim().length === 0;
     const emailIsValid = validateEmail(formData.email);
@@ -62,7 +66,34 @@ const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
     const isValid = !nameIsEmpty && !emailIsEmpty && emailIsValid;
     setIsFormValid(isValid);
 
-    if (!isValid) return;
+    if (!isValid || !isFormValid) return;
+
+    setSubscribeStatus("loading");
+
+    try {
+      const res = await fetch("/api/sendsubscription", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firstName: formData.name,
+          email: formData.email,
+          type: "Common",
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.status === "success") {
+        setIsSuccess(true);
+        setSubscribeStatus("success");
+      } else {
+        console.log(data.message);
+        setSubscribeStatus("error");
+      }
+    } catch {
+      setIsSuccess(false);
+      setSubscribeStatus("error");
+    }
   };
 
   const onCloseModal = () => {
@@ -76,6 +107,8 @@ const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
       email: false,
     });
     setIsFormValid(false);
+    setSubscribeStatus("default");
+    setIsSuccess(false);
   };
 
   return (
@@ -95,7 +128,7 @@ const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
             </StyledMailModalCloseBtn>
           </StyledMailModalHeader>
 
-          {isFormValid ? (
+          {isSuccess ? (
             <>
               <StyledMailModalConfirmText
                 color="#666666"
@@ -160,6 +193,7 @@ const SubscribeModal = ({ isOpen, onClose }: IMailModal) => {
                 <StyledMailModalBtnWrapper>
                   <StyledMailModalBtn
                     onClick={onSubmit}
+                    disabled={subscribeStatus === "loading"}
                     label={t("Subscribe")}
                   />
                 </StyledMailModalBtnWrapper>

@@ -1,6 +1,7 @@
 import { Text } from "@src/components/ui/Text";
 import { Trans, useTranslation } from "next-i18next";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHeroSection,
   StyledHeroContainer,
@@ -17,8 +18,8 @@ import {
   StyledHeroFooterImgLink,
   StyledHeroFooterText,
   StyledHeroFooter,
+  StyledDownloadButton,
 } from "./Hero.styled";
-import { DownloadButton } from "@src/components/ui/DownloadButton";
 
 const Hero = () => {
   const { t } = useTranslation("office-for-ios");
@@ -44,7 +45,7 @@ const Hero = () => {
               />
             </StyledHeroLeftHeading>
             <StyledHeroLeftButton>
-              <DownloadButton
+              <StyledDownloadButton
                 platform="app-store"
                 variant="secondary"
                 href="https://itunes.apple.com/us/app/onlyoffice-documents/id944896972"
@@ -60,17 +61,17 @@ const Hero = () => {
             </StyledHeroLeftText>
             <StyledHeroLeftImgWrapper>
               <StyledHeroLeftImg
-                $backgroundUrl={t("HeroImageLeftUrl")}
+                $backgroundUrl={getAssetUrl(t("HeroImageLeftUrl"))}
                 $backgroundUrl2x={t("HeroImageLeftUrl2x")}
               />
             </StyledHeroLeftImgWrapper>
           </StyledHeroLeft>
           <StyledHeroRight
-            $backgroundUrl={t("HeroImageRightUrl")}
+            $backgroundUrl={getAssetUrl(t("HeroImageRightUrl"))}
             $backgroundUrl2x={t("HeroImageRightUrl2x")}
           />
           <StyledHeroPhoneImgMob
-            $backgroundUrl={t("HeroImageLeftUrl")}
+            $backgroundUrl={getAssetUrl(t("HeroImageLeftUrl"))}
             $backgroundUrl2x={t("HeroImageLeftUrl2x")}
           />
           <StyledHeroFooter>

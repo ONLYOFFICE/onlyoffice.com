@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketplaceConnector = styled.section`
   border-top: 1px solid #e2e2e2;
   background-color: #f9f9f9;
@@ -21,7 +22,7 @@ const StyledMarketplaceConnectorWrapper = styled.div`
     left: 118px;
     width: 1547px;
     height: 646px;
-    background-image: url("/images/templates/office-for-dropbox/marketplace-connector/bg.svg");
+    background-image: url(${getAssetUrl('/images/templates/office-for-dropbox/marketplace-connector/bg.svg')});
     background-repeat: no-repeat;
     background-size: contain;
     pointer-events: none;
@@ -59,7 +60,7 @@ const StyledMarketplaceConnectorBody = styled.div`
 
 const StyledMarketplaceConnectorImg = styled.div`
   min-height: 440px;
-  background-image: url("/images/templates/office-for-box/marketplace-connector/app.svg");
+  background-image: url(${getAssetUrl('/images/templates/office-for-box/marketplace-connector/app.svg')});
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

@@ -2,7 +2,7 @@ import { IBlogCard } from "@src/components/widgets/BlogCard";
 
 export const items: IBlogCard[] = [
   {
-    imgUrl: "YoutubeImgUrl",
+    imgUrl: "/images/templates/docspace/learn-more/blog.png",
     heading: { label: "YouTube" },
     text: "YoutubeCardText",
     links: [

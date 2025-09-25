@@ -1,55 +1,42 @@
 {
-  "PageTitle": "Utilisez des salles de données virtuelles pour une sécurité et une transparence accrues des fichiers",
-  "PageDescription": "Organisez le stockage et le partage sécurisés d'informations professionnelles confidentielles dans ONLYOFFICE DocSpace",
-
-  "UseVirtualDataRooms": "Utilisez des <0>salles de données virtuelles</0> pour une sécurité et une transparence accrues des fichiers",
-  "OrganizeSecure": "Organisez le stockage et le partage sécurisés d'informations professionnelles confidentielles dans ONLYOFFICE DocSpace",
-
-  "IdealForDueDiligence": "Idéales pour la vérification diligente",
-  "CompletelyOrganized": "Complètement organisées",
+  "PageTitle": "ONLYOFFICE - Applications bureautiques dans le cloud",
+  "PageDescription": "Organisez le stockage et le partage sécurisés des informations commerciales confidentielles dans ONLYOFFICE DocSpace",
+  "UseVirtualDataRooms": "Utilisez les <0>salles de données virtuelles</0> pour bénéficier d'une sécurité et d'une transparence avancées pour vos fichiers",
+  "OrganizeSecure": "Organisez le stockage et le partage sécurisés des informations commerciales confidentielles dans ONLYOFFICE DocSpace",
+  "IdealForDueDiligence": "Idéales pour la diligence raisonnable",
+  "CompletelyOrganized": "Parfaitement organisées",
   "HighLevelOfDataSecurity": "Haut niveau de sécurité des données",
-  "AdvancedRoleBased": "Remplissage avancé des formulaires en fonction des rôles",
-  "CostEffectiveForAnyBudget": "Cost-effective for any budget",
-
+  "AdvancedRoleBased": "Remplissage de formulaires avancé en fonction des rôles",
+  "CostEffectiveForAnyBudget": "Rapport coût-efficacité adapté à tous les budgets",
   "CreateFreeAccount": "Créer un compte gratuit",
-
   "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
   "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
-
-  "IdealForDueDiligenceDesc": "Utilisez les salles de données virtuelles dans le cadre d'une vérification diligente, d'une fusion, d'un projet avec d'autres entreprises ou d'une autre entreprise commune qui nécessite l'accès aux données partagées.",
-  "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/fr/ideal.png",
-  "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/fr/ideal@2x.png",
-
-  "CompletelyOrganizedDesc": "Indexez et suivez automatiquement tout le contenu afin de garder des enregistrements et de rester organisé. Générez un rapport récapitulatif sur la structure des fichiers de la salle.",
-  "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/fr/organized.png",
-  "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/fr/organized@2x.png",
-
-  "HighLevelOfDataSecurityDesc": "Activez les filigranes, définissez la durée de vie des fichiers, limitez le téléchargement et la copie pour protéger vos documents sensibles.",
-  "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/fr/security.png",
-  "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/fr/security@2x.png",
-
-  "AdvancedRoleBasedText": "Invitez votre équipe et attribuez des rôles qui correspondent parfaitement à la structure organisationnelle de votre entreprise. Suivez la progression des formulaires en temps réel. Visualisez facilement les formulaires complétés et en attente, finalisez-les et récupérez les versions finalisées pour un processus fluide.",
-  "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/fr/advanced.png",
-  "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/fr/advanced@2x.png",
-
-  "CostEffectiveForAnyBudgetDesc": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses, no matter if it's SMB or a big enterprise. Want to get full control over your corporate data? Deploy DocSpace on your private server.",
-  "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/fr/cost-effective-for-any-budget.png",
-  "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/fr/cost-effective-for-any-budget@2x.png",
-
-  "LearnMoreHeading": "En savoir plus sur les salles de données virtuelles dans DocSpace",
-
+  "IdealForDueDiligenceDesc": "Utilisez les salles de données virtuelles pour la diligence raisonnable, lors d'une fusion, d'un projet avec d'autres entreprises ou de toute autre coentreprise nécessitant l'accès à des données partagées.",
+  "IdealForDueDiligenceImgUrl": "/images/templates/virtual-data-rooms/features/ideal.png",
+  "IdealForDueDiligenceImgUrl2x": "/images/templates/virtual-data-rooms/features/ideal@2x.png",
+  "CompletelyOrganizedDesc": "Indexez et suivez automatiquement tout le contenu afin de conserver des archives complètes et de vous organiser efficacement. Générez un rapport récapitulatif sur la structure des fichiers de la salle.",
+  "CompletelyOrganizedImgUrl": "/images/templates/virtual-data-rooms/features/organized.png",
+  "CompletelyOrganizedImgUrl2x": "/images/templates/virtual-data-rooms/features/organized@2x.png",
+  "HighLevelOfDataSecurityDesc": "Activez les filigranes, définissez la durée de vie des fichiers, limitez le téléchargement et la copie afin de protéger vos documents sensibles.",
+  "HighLevelOfDataSecurityImgUrl": "/images/templates/virtual-data-rooms/features/security.png",
+  "HighLevelOfDataSecurityImgUrl2x": "/images/templates/virtual-data-rooms/features/security@2x.png",
+  "AdvancedRoleBasedText": "Invitez votre équipe et attribuez des rôles qui correspondent parfaitement à la structure organisationnelle de votre entreprise. Suivez la progression de remplissage des formulaires en temps réel. Consultez facilement les formulaires remplis et en attente, finalisez-les et récupérez les versions terminées pour un processus fluide.",
+  "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/advanced.png",
+  "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/advanced@2x.png",
+  "CostEffectiveForAnyBudgetDesc": "Ne payez que pour les administrateurs et ajoutez gratuitement autant d'utilisateurs réguliers et d'invités que vous le souhaitez. Bénéficiez d'un plan Startup gratuit pour les petites équipes. ONLYOFFICE DocSpace convient à toutes les entreprises, qu'il s'agisse de PME ou de grandes entreprises. Vous souhaitez avoir un contrôle total sur vos données d'entreprise ? Déployez DocSpace sur votre serveur privé.",
+  "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget.png",
+  "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget@2x.png",
+  "LearnMoreHeading": "En savoir plus sur les salles de données virtuelles de DocSpace",
   "HelpCenter": "Centre d'aide",
-  "HelpCenterDesc": "Consultez les guides détaillés pour un travail efficace",
+  "HelpCenterDesc": "Consultez les guides d'utilisation détaillés pour travailler efficacement",
   "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
   "LearnMore": "En savoir plus",
-
   "YouTube": "YouTube",
-  "MasterONLYOFFICEDocSpace": "Maîtrisez ONLYOFFICE DocSpace avec des guides vidéo",
+  "MasterONLYOFFICEDocSpace": "Maîtrisez ONLYOFFICE DocSpace grâce à des guides vidéo",
   "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
   "WatchNow": "Regarder maintenant",
-
-  "CustomerTestimonial": "Témoignage client",
+  "CustomerTestimonial": "Témoignages de client",
   "HowKinderhausBerlinSharesAndCollaborates": "Comment Kinderhaus Berlin partage et collabore sur des fichiers sensibles avec ONLYOFFICE DocSpace",
-  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
-  "ReadStory": "Lire l'histoire"
+  "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/fr/2023/11/comment-kinderhaus-berlin-utilise-onlyoffice-docspace",
+  "ReadStory": "Lire le témoignage"
 }

@@ -12,6 +12,7 @@ import { ConnectorCard } from "./sub-components/ConnectorCard";
 import { connectors } from "./data/connectors";
 import { SortByNameFilter } from "./sub-components/SortByNameFilter";
 import { CategoryFilter } from "./sub-components/CategoryFilter";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const Connectors = ({ locale }: ILocale) => {
   const { t } = useTranslation("all-connectors");
@@ -68,19 +69,21 @@ const Connectors = ({ locale }: ILocale) => {
               key={index}
               idName={connector.id}
               image={{
-                url: connector.image.url,
+                url: getAssetUrl(connector.image.url),
                 bgColor: connector.image.bgColor,
               }}
               name={
-                ["zh", "ja"].includes(locale)
+                locale === "zh"
                   ? `${connector.name} ${
                       connector.isWopi ? t("For") : t("For")
                     }`
                   : locale === "es"
                     ? connector.name
-                    : `${
-                        connector.isWopi ? t("For") : t("For")
-                      } ${connector.name}`
+                    : locale === "ja"
+                      ? `${connector.name} ${t("For")}`
+                      : `${
+                          connector.isWopi ? t("For") : t("For")
+                        } ${connector.name}`
               }
               text={t(connector.text)}
               moreInfoUrl={connector.moreInfoUrl}

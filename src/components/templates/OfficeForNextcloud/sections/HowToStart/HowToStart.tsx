@@ -7,6 +7,7 @@ import { WatchVideo } from "@src/components/widgets/WatchVideo";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const HowToStart = () => {
   const { t } = useTranslation("office-for-nextcloud");
@@ -18,7 +19,7 @@ const HowToStart = () => {
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: t(item.imgUrl),
+            imgUrl: getAssetUrl(t(item.imgUrl)),
             heading: item.headingLinks ? (
               <Trans
                 t={t}
@@ -43,7 +44,7 @@ const HowToStart = () => {
         <StyledHowToStartInfo>
           <WatchVideo
             heading={t("HowToConnect")}
-            videoImgUrl="/images/templates/office-for-nextcloud/how-to-start/watch-video.jpg"
+            videoImgUrl={getAssetUrl("/images/templates/office-for-nextcloud/how-to-start/watch-video.jpg")}
             videoUrl="https://youtube.com/embed/qI4up-G5NRM"
           />
 

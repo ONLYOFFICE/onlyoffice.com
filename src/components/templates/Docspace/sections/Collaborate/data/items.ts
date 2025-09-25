@@ -1,3 +1,4 @@
+import { getAssetUrl } from "@utils/getAssetUrl";
 export interface ICarouselItems {
   id: string;
   title: string;
@@ -20,14 +21,14 @@ export const carouselItems: ICarouselItems[] = [
     id: "collaboration-rooms",
     title: "SliderTitle1",
     icon: {
-      url: "/images/templates/docspace/collaborate/icons/collaboration-icon.svg",
+      url: getAssetUrl("/images/templates/docspace/collaborate/icons/collaboration-icon.svg"),
       urlActive:
-        "/images/templates/docspace/collaborate/icons/collaboration-icon-active.svg",
+        getAssetUrl("/images/templates/docspace/collaborate/icons/collaboration-icon-active.svg"),
     },
     description: "SliderDescription1",
     image: {
-      url: "SliderScreen1Url",
-      url2x: "SliderScreen1Url2x",
+      url: getAssetUrl("SliderScreen1Url"),
+      url2x: getAssetUrl("SliderScreen1Url2x"),
     },
     linkLabel: "LearnMore",
     href: "/collaboration-rooms",
@@ -37,13 +38,13 @@ export const carouselItems: ICarouselItems[] = [
     title: "SliderTitle2",
     description: "SliderDescription2",
     icon: {
-      url: "/images/templates/docspace/collaborate/icons/meeting-icon.svg",
+      url: getAssetUrl("/images/templates/docspace/collaborate/icons/meeting-icon.svg"),
       urlActive:
-        "/images/templates/docspace/collaborate/icons/meeting-icon-active.svg",
+        getAssetUrl("/images/templates/docspace/collaborate/icons/meeting-icon-active.svg"),
     },
     image: {
-      url: "SliderScreen2Url",
-      url2x: "SliderScreen2Url2x",
+      url: getAssetUrl("SliderScreen2Url"),
+      url2x: getAssetUrl("SliderScreen2Url2x"),
     },
     linkLabel: "LearnMore",
     href: "/office-for-zoom",
@@ -53,13 +54,13 @@ export const carouselItems: ICarouselItems[] = [
     title: "SliderTitle3",
     description: "SliderDescription3",
     icon: {
-      url: "/images/templates/docspace/collaborate/icons/public-icon.svg",
+      url: getAssetUrl("/images/templates/docspace/collaborate/icons/public-icon.svg"),
       urlActive:
-        "/images/templates/docspace/collaborate/icons/public-icon-active.svg",
+        getAssetUrl("/images/templates/docspace/collaborate/icons/public-icon-active.svg"),
     },
     image: {
-      url: "SliderScreen3Url",
-      url2x: "SliderScreen3Url2x",
+      url: getAssetUrl("SliderScreen3Url"),
+      url2x: getAssetUrl("SliderScreen3Url2x"),
     },
     linkLabel: "LearnMore",
     href: "/public-rooms",
@@ -69,13 +70,13 @@ export const carouselItems: ICarouselItems[] = [
     title: "SliderTitle4",
     description: "SliderDescription4",
     icon: {
-      url: "/images/templates/docspace/collaborate/icons/custom-icon.svg",
+      url: getAssetUrl("/images/templates/docspace/collaborate/icons/custom-icon.svg"),
       urlActive:
-        "/images/templates/docspace/collaborate/icons/custom-icon-active.svg",
+        getAssetUrl("/images/templates/docspace/collaborate/icons/custom-icon-active.svg"),
     },
     image: {
-      url: "SliderScreen4Url",
-      url2x: "SliderScreen4Url2x",
+      url: getAssetUrl("SliderScreen4Url"),
+      url2x: getAssetUrl("SliderScreen4Url2x"),
     },
     linkLabel: "LearnMore",
     href: "/custom-rooms",
@@ -85,13 +86,13 @@ export const carouselItems: ICarouselItems[] = [
     title: "SliderTitle5",
     description: "SliderDescription5",
     icon: {
-      url: "/images/templates/docspace/collaborate/icons/form-fill-icon.svg",
+      url: getAssetUrl("/images/templates/docspace/collaborate/icons/form-fill-icon.svg"),
       urlActive:
-        "/images/templates/docspace/collaborate/icons/form-fill-icon-active.svg",
+        getAssetUrl("/images/templates/docspace/collaborate/icons/form-fill-icon-active.svg"),
     },
     image: {
-      url: "SliderScreen5Url",
-      url2x: "SliderScreen5Url2x",
+      url: getAssetUrl("SliderScreen5Url"),
+      url2x: getAssetUrl("SliderScreen5Url2x"),
     },
     linkLabel: "LearnMore",
     href: "/form-filling-rooms",
@@ -101,13 +102,13 @@ export const carouselItems: ICarouselItems[] = [
     title: "SliderTitle6",
     description: "SliderDescription6",
     icon: {
-      url: "/images/templates/docspace/collaborate/icons/virtual-data-icon.svg",
+      url: getAssetUrl("/images/templates/docspace/collaborate/icons/virtual-data-icon.svg"),
       urlActive:
-        "/images/templates/docspace/collaborate/icons/virtual-data-icon-active.svg",
+        getAssetUrl("/images/templates/docspace/collaborate/icons/virtual-data-icon-active.svg"),
     },
     image: {
-      url: "SliderScreen6Url",
-      url2x: "SliderScreen6Url2x",
+      url: getAssetUrl("SliderScreen6Url"),
+      url2x: getAssetUrl("SliderScreen6Url2x"),
     },
     linkLabel: "LearnMore",
     href: "/virtual-data-rooms",
@@ -117,13 +118,13 @@ export const carouselItems: ICarouselItems[] = [
     title: "SliderTitle7",
     description: "SliderDescription7",
     icon: {
-      url: "/images/templates/docspace/collaborate/icons/private-icon.svg",
+      url: getAssetUrl("/images/templates/docspace/collaborate/icons/private-icon.svg"),
       urlActive:
-        "/images/templates/docspace/collaborate/icons/private-icon-active.svg",
+        getAssetUrl("/images/templates/docspace/collaborate/icons/private-icon-active.svg"),
     },
     image: {
-      url: "SliderScreen7Url",
-      url2x: "SliderScreen7Url2x",
+      url: getAssetUrl("SliderScreen7Url"),
+      url2x: getAssetUrl("SliderScreen7Url2x"),
     },
     linkLabel: "LearnMore",
     href: "/private-rooms",

@@ -1,4 +1,5 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
   text: {
@@ -10,35 +11,35 @@ interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
 export const items: IFeatureItemExtended[] = [
   {
     icon: {
-      url: "/images/templates/best-hancom-alternative/reasons/open_source.svg",
+      url: getAssetUrl("/images/templates/best-hancom-alternative/reasons/open_source.svg"),
     },
     heading: "OpenSource",
     text: { label: "OpenSourceText" },
   },
   {
     icon: {
-      url: "/images/templates/best-hancom-alternative/reasons/desktop_app.svg",
+      url: getAssetUrl("/images/templates/best-hancom-alternative/reasons/desktop_app.svg"),
     },
     heading: "DesktopApp",
     text: { label: "DesktopAppText" },
   },
   {
     icon: {
-      url: "/images/templates/best-hancom-alternative/reasons/docs_sheets_slides.svg",
+      url: getAssetUrl("/images/templates/best-hancom-alternative/reasons/docs_sheets_slides.svg"),
     },
     heading: "DocsSheetsSlides",
     text: { label: "DocsSheetsSlidesText" },
   },
   {
     icon: {
-      url: "/images/templates/best-hancom-alternative/reasons/security.svg",
+      url: getAssetUrl("/images/templates/best-hancom-alternative/reasons/security.svg"),
     },
     heading: "Security",
     text: { label: "SecurityText" },
   },
   {
     icon: {
-      url: "/images/templates/best-hancom-alternative/reasons/ai_helper.svg",
+      url: getAssetUrl("/images/templates/best-hancom-alternative/reasons/ai_helper.svg"),
     },
     heading: "AIHelper",
     text: { 
@@ -48,14 +49,14 @@ export const items: IFeatureItemExtended[] = [
   },
   {
     icon: {
-      url: "/images/templates/best-hancom-alternative/reasons/flexibility.svg",
+      url: getAssetUrl("/images/templates/best-hancom-alternative/reasons/flexibility.svg"),
     },
     heading: "Flexibility",
     text: { label: "FlexibilityText" },
   },
   {
     icon: {
-      url: "/images/templates/best-hancom-alternative/reasons/seamless.svg",
+      url: getAssetUrl("/images/templates/best-hancom-alternative/reasons/seamless.svg"),
     },
     variant: "vertical",
     heading: "Seamless",

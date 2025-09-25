@@ -5,6 +5,7 @@ import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import { IPartner } from "../../../../FindPartners.types";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledPartnersCardItem = styled.li<{
   $isItemOpen: boolean;
 }>`
@@ -120,11 +121,11 @@ const StyledPartnersCardItemLink = styled(Link)<{
   position: relative;
 
   ${({$urlType}) => $urlType === "site" && css`
-    background-image: url("/images/templates/find-partners/partners/external-link-symbol.svg");
+    background-image: url(${getAssetUrl('/images/templates/find-partners/partners/external-link-symbol.svg')});
   `}
 
   ${({$urlType}) => $urlType === "email" && css`
-    background-image: url("/images/templates/find-partners/partners/email-link-symbol.svg");
+    background-image: url(${getAssetUrl('/images/templates/find-partners/partners/email-link-symbol.svg')});
   `}
 
   @media ${device.tabletS} {

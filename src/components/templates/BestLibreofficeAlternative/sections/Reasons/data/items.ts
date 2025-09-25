@@ -1,4 +1,5 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
   text: {
@@ -10,42 +11,42 @@ interface IFeatureItemExtended extends Omit<IFeatureItem, "text"> {
 export const items: IFeatureItemExtended[] = [
   {
     icon: {
-      url: "/images/templates/best-libreoffice-alternative/reasons/open_source.svg",
+      url: getAssetUrl("/images/templates/best-libreoffice-alternative/reasons/open_source.svg"),
     },
     heading: "MaximumCompatibility",
     text: { label: "MaximumCompatibilityText" },
   },
   {
     icon: {
-      url: "/images/templates/best-libreoffice-alternative/reasons/desktop_app.svg",
+      url: getAssetUrl("/images/templates/best-libreoffice-alternative/reasons/desktop_app.svg"),
     },
     heading: "DesktopApp",
     text: { label: "DesktopAppText" },
   },
   {
     icon: {
-      url: "/images/templates/best-libreoffice-alternative/reasons/docs_sheets_slides.svg",
+      url: getAssetUrl("/images/templates/best-libreoffice-alternative/reasons/docs_sheets_slides.svg"),
     },
     heading: "DocsSheetsSlides",
     text: { label: "DocsSheetsSlidesText" },
   },
   {
     icon: {
-      url: "/images/templates/best-libreoffice-alternative/reasons/seamless.svg",
+      url: getAssetUrl("/images/templates/best-libreoffice-alternative/reasons/seamless.svg"),
     },
     heading: "Seamless",
     text: { label: "SeamlessText" },
   },
   {
     icon: {
-      url: "/images/templates/best-libreoffice-alternative/reasons/flexibility.svg",
+      url: getAssetUrl("/images/templates/best-libreoffice-alternative/reasons/flexibility.svg"),
     },
     heading: "Flexibility",
     text: { label: "FlexibilityText" },
   },
   {
     icon: {
-      url: "/images/templates/best-libreoffice-alternative/reasons/ai_helper.svg",
+      url: getAssetUrl("/images/templates/best-libreoffice-alternative/reasons/ai_helper.svg"),
     },
     heading: "AIHelper",
     text: { 

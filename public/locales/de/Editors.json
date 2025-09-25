@@ -1,5 +1,5 @@
 {
-  "RunOnYourOwnServer": "VOR ORT BEREITSTELLEN",
+  "RunOnYourOwnServer": "Vor ort bereitstellen",
   "SeeItInAction": "Sehen Sie es in Aktion",
   "GetItNow": "Jetzt starten",
   "EnterYourEmail": "Geben Sie Ihre E-Mail-Adresse ein",
@@ -14,16 +14,8 @@
   "Hints": "Tipps",
   "Blog": "Blog",
   "HelpCenter": "Hilfe-Center",
-  "ExploreOtherEditors": "Andere Editoren entdecken",
   "ViewMacroSamples": "Beispiele von Makros ansehen",
   "FindAppsYouNeed": "Weitere Informationen zu den Funktionalitäten des Tabelleneditors",
   "CheckUserGuides": "Benutzeranleitungen prüfen",
-  "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "Dokumenteneditor",
-  "SpreadsheetEditor": "Tabellenkalkulationseditor",
-  "PresentationEditor": "Präsentationseditor",
-  "FormCreator": "Formularersteller",
-  "PDFEditor": "PDF-Editor",
-  "EBookCreator": "E-Book-Ersteller",
-  "DiagramViewer": "Diagramm-Viewer"
+  "GoToTheTemplateLibrary": "Go to the template library"
 }

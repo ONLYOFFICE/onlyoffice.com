@@ -1,6 +1,7 @@
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledPartnersWrapper = styled.div`
   padding: 112px 0 80px;
   overflow-x: auto;
@@ -37,7 +38,7 @@ const StyledPartnersInner = styled.div`
 `;
 
 const StyledPartnerLogo = styled.div`
-  background-image: url("/images/templates/healthcare/partners-logos.svg");
+  background-image: url(${getAssetUrl('/images/templates/healthcare/partners-logos.svg')});
   background-position-y: center;
   background-repeat: no-repeat;
   filter: grayscale(1);

@@ -1,10 +1,10 @@
 {
   "PageTitle": "Online office for Odoo | ONLYOFFICE",
   "PageDescription": "Редактируйте офисные документы и работайте над ними совместно в Odoo Documents с помощью ONLYOFFICE Docs",
-  "OnlineOfficeForOdoo": "Онлайн офис для Odoo",
+  "OnlineOfficeForOdoo": "Онлайн-офис для Odoo",
   "WorkWithBusinessDocuments": "Работайте с деловыми документами в Odoo с помощью ONLYOFFICE",
   "GetStarted": "Начать работу",
-  "RequestFreeDemo": "ЗАПРОСИТЬ БЕСПЛАТНУЮ ДЕМО-ВЕРСИЮ",
+  "RequestFreeDemo": "Запросить бесплатную демо-версию",
   "WorkWithFillableFormTemplates": "Работайте с <0>заполняемыми шаблонами форм</0> в Odoo",
   "New": "НОВИНКА",
   "FillableFormTab1Label": "Создавайте новые шаблоны форм для любого модуля Odoo ",
@@ -20,7 +20,7 @@
   "FillableFormTab4ImgUrl": "/images/templates/office-for-odoo/fillable-form/ru/fillable-form-4.png",
   "FillableFormTab4ImgUrl2x": "/images/templates/office-for-odoo/fillable-form/ru/fillable-form-4@2x.png",
   "WatchHowItWorks": "Посмотреть, как это работает",
-  "CreateAndEditOfficeFiles": "Создавайте и редактируйте офисные документы в Odoo <0>Enterprise</0> документы",
+  "CreateAndEditOfficeFiles": "Создавайте и редактируйте офисные документы в Odoo <0>Enterprise Documents</0>",
   "EnterpriseTab1Label": "Создавайте новые документы, электронные таблицы и презентации",
   "EnterpriseTab1ImgUrl": "/images/templates/office-for-odoo/enterprise/ru/enterprise-1.png",
   "EnterpriseTab1ImgUrl2x": "/images/templates/office-for-odoo/enterprise/ru/enterprise-1@2x.png",
@@ -73,5 +73,5 @@
   "WorkWithFillableTemplates": "Работайте с заполняемыми шаблонами в Odoo с помощью принципиально нового приложения ONLYOFFICE Templates",
   "LearnMore": "Узнать больше",
   "ADetailedGuideOnCreating": "Подробное руководство пользователя по созданию шаблонов форм ONLYOFFICE для Odoo",
-  "NeedAnAppToConnect": "Необходимо приложение для подключения ONLYOFFICE Docs или DocSpace к вашему любимому веб-сервису? <0>Или вы разработали такое приложение? "
+  "NeedAnAppToConnect": "Необходимо приложение для подключения ONLYOFFICE Docs или DocSpace к вашему любимому веб-сервису? Или вы разработали такое приложение?"
 }

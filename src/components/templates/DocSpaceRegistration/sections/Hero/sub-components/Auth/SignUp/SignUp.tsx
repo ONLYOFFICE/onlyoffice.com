@@ -17,8 +17,14 @@ import {
 import { ISignUp } from "./SignUp.types";
 import { ISelectOption } from "@src/components/ui/Select/Select.types";
 import { useIPGeolocationStore } from "@src/store/useIPGeolocationStore";
-import { useRewardful } from "@src/utils/useRewardful";
+import {
+  loadRewardful,
+  addClientReferenceOnReady,
+  getClientReferenceId,
+  getAffiliateToken,
+} from "@src/utils/rewardful";
 import { validateEmail } from "@src/utils/validators";
+import { validateTestEmail } from "@src/utils/IsTestEmail";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
@@ -59,6 +65,7 @@ const SignUp = ({
   const intervalId = useRef<NodeJS.Timeout | null>(null);
 
   const [affiliateId, setAffiliateId] = useState("");
+  const [affiliateToken, setAffiliateToken] = useState("");
   const [formData, setFormData] = useState({
     email: "",
     spam: false,
@@ -70,19 +77,22 @@ const SignUp = ({
   const [isFormLoading, setisFormLoading] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
   const [selected, setSelected] = useState<ISelectOption[]>([]);
+  const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
   const emailIsValid =
     formData.email.trim().length > 0 && validateEmail(formData.email);
 
-  const { getClientReferenceId } = useRewardful({
-    onReady: () => {
-      const id = getClientReferenceId();
+  useEffect(() => {
+    loadRewardful();
 
-      if (id && id !== affiliateId) {
-        setAffiliateId(id);
-      }
-    },
-  });
+    addClientReferenceOnReady(function () {
+      const affiliateId = getClientReferenceId() || "";
+      const affiliateToken = getAffiliateToken() || "";
+
+      setAffiliateId(affiliateId);
+      setAffiliateToken(affiliateToken);
+    });
+  }, []);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -112,7 +122,7 @@ const SignUp = ({
     }
   };
 
-  const onSubmit = async (token?: string) => {
+  const onSubmit = async (token?: string | null) => {
     if (!emailIsValid) {
       return;
     }
@@ -120,22 +130,18 @@ const SignUp = ({
     setisFormLoading(true);
     setIsFormValid(false);
 
-    const res = await fetch("/api/thirdparty/sendemail", {
+    const res = await fetch("/api/thirdparty/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         desktop: desktopQuery || "",
         email: formData.email,
         spam: formData.spam ? "true" : "false",
-        language: router.locale === "en" ? "" : router.locale,
         awsRegion: selected[0].value,
         partnerId: router.query.pid || "",
         affiliateId: affiliateId || "",
-        emailSubject: {
-          register: t("YourConfirmationLinkForOODocSpace"),
-          login: t("YourLoginLinkToOODocSpace"),
-        },
-        hCaptchaResponse: token,
+        affiliateToken: affiliateToken || "",
+        hCaptchaResponse: token || null,
       }),
     });
 
@@ -174,7 +180,10 @@ const SignUp = ({
   };
 
   const handleGoogleSignIn = () => {
-    if (intervalId.current) clearInterval(intervalId.current);
+    if (intervalId.current) {
+      clearInterval(intervalId.current);
+      intervalId.current = null;
+    }
 
     modalDialog.current = window.open(
       `${location.origin}/login?auth=google&mode=popup&callback=SignInByGoogle`,
@@ -188,57 +197,34 @@ const SignUp = ({
   useEffect(() => {
     window.SignInByGoogle = async (data) => {
       try {
-        const findBySocialRes = await fetch("/api/thirdparty/findbysocial", {
+        const res = await fetch("/api/thirdparty/accountsignup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             transport: data,
+            awsRegion: selected[0].value,
           }),
         });
-        const findBySocialData = await findBySocialRes.json();
 
-        const findByEmailRes = await fetch("/api/thirdparty/findbyemail", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: findBySocialData.data.email,
-          }),
-        });
-        const findByEmailData = await findByEmailRes.json();
+        const result = await res.json();
 
-        if (findByEmailData.data?.length > 0) {
-          const generateKeyRes = await fetch("/api/thirdparty/generate", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              email: findBySocialData.data.email,
-            }),
-          });
-          const generateKeyData = await generateKeyRes.json();
-          setCreateNewAccountQuery(
-            `epkey=${generateKeyData.data.emailKey}1&eskey=${generateKeyData.data.linkKey}&transport=${data}&awsRegion=${selected[0].value}`,
-          );
-          setExistTenants(findByEmailData.data);
+        if ("tenants" in result && "query" in result) {
+          setCreateNewAccountQuery(result.query);
+          setExistTenants(result.tenants);
+        } else if ("reference" in result) {
+          window.location.href = result.reference;
         } else {
-          const registerRes = await fetch("/api/thirdparty/register", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ thirdPartyProfile: data }),
-          });
-          const registerData = await registerRes.json();
-          window.location.href = registerData.data.reference + "&wizard=true";
+          console.error("Unexpected response:", result);
         }
       } catch (err) {
-        console.error(
-          "Unexpected error:",
-          err instanceof Error ? err.message : err,
-        );
+        console.error("Unexpected error:", err);
       }
     };
 
     return () => {
       if (intervalId.current) {
         clearInterval(intervalId.current);
+        intervalId.current = null;
       }
     };
   }, [selected, setCreateNewAccountQuery, setExistTenants]);
@@ -320,11 +306,13 @@ const SignUp = ({
         <StyledSignUpBox>
           <Input
             onChange={(e) => handleInputChange("email", e.target.value)}
-            onBlur={() => {
+            onBlur={async () => {
               setIsEmpty((prev) => ({
                 ...prev,
                 email: formData.email.length === 0,
               }));
+              const isTestEmail = await validateTestEmail(formData.email);
+              setIsTestEmailValid(Boolean(isTestEmail));
               checkFormValid();
             }}
             data-testid="sign-up-email-input"
@@ -396,7 +384,13 @@ const SignUp = ({
             />
 
             <Button
-              onClick={handleHCaptchaExecute}
+              onClick={() => {
+                if (isTestEmailValid) {
+                  onSubmit();
+                } else {
+                  handleHCaptchaExecute();
+                }
+              }}
               data-testid="sign-up-button"
               fullWidth
               disabled={!isFormValid}

@@ -1,9 +1,10 @@
 import { Container } from "@src/components/ui/Container";
 import { Section } from "@src/components/ui/Section";
 import { Trans, useTranslation } from "next-i18next";
-import { StyledButton, StyledContactBlock, StyledContactBlockHeading, StyledContactBlockText } from "./ContactBlock.styled";
+import { StyledContactBlock, StyledContactBlockHeading, StyledContactBlockText } from "./ContactBlock.styled";
 import { items } from "./data/items";
 import { Link } from "@src/components/ui/Link";
+import { Button } from "@src/components/ui/Button";
 
 const ContactBlock = () => {
     const { t } = useTranslation("document-builder");
@@ -39,7 +40,7 @@ const ContactBlock = () => {
                             />
                         </StyledContactBlockText>
                     ))}
-                    <StyledButton as="a" href={items.button.url}>{t(items.button.label)}</StyledButton>
+                    <Button as="a" href={items.button.url}>{t(items.button.label)}</Button>
                 </StyledContactBlock>
             </Container>
         </Section>

@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { IDownloadButton } from "./DownloadButton.types";
 import Link from "next/link";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledDownloadButton = styled(Link)<{
   $variant: IDownloadButton["variant"];
   $platform: IDownloadButton["platform"];
@@ -86,7 +87,7 @@ const StyledDownloadButton = styled(Link)<{
             margin-right: 8px;
             width: 32px;
             height: 32px;
-            background-image: url("/images/ui/download-button/windows.svg");
+            background-image: url(${getAssetUrl('/images/ui/download-button/windows.svg')});
           }
         `
       : $platform === "linux"
@@ -100,8 +101,8 @@ const StyledDownloadButton = styled(Link)<{
               height: 32px;
               background-image: ${$variant === "primary" ||
               $variant === "quaternary"
-                ? "url('/images/ui/download-button/linux.svg')"
-                : "url('/images/ui/download-button/linux-white.svg')"};
+                ? `url(${getAssetUrl('/images/ui/download-button/linux.svg')})`
+                : `url(${getAssetUrl('/images/ui/download-button/linux-white.svg')})`};
             }
           `
         : $platform === "macos"
@@ -115,8 +116,8 @@ const StyledDownloadButton = styled(Link)<{
                 height: 32px;
                 background-image: ${$variant === "primary" ||
                 $variant === "quaternary"
-                  ? "url('/images/ui/download-button/macos.svg')"
-                  : "url('/images/ui/download-button/macos-white.svg')"};
+                  ? `url(${getAssetUrl('/images/ui/download-button/macos.svg')})`
+                  : `url(${getAssetUrl('/images/ui/download-button/macos-white.svg')})`};
               }
             `
           : $platform === "app-store"
@@ -124,7 +125,7 @@ const StyledDownloadButton = styled(Link)<{
                 background-image: ${$imageSrc && `url(${$imageSrc})`};
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: inherit;
+                background-size: calc(100% - 40px) 56px;
               `
             : $platform === "google-play"
               ? css`
@@ -151,8 +152,8 @@ const StyledDownloadButton = styled(Link)<{
                     ? css`
                         background-image: ${$variant === "primary" ||
                         $variant === "quaternary"
-                          ? "url('/images/ui/download-button/snap-store.svg')"
-                          : "url('/images/ui/download-button/snap-store-white.svg')"};
+                          ? `url(${getAssetUrl('/images/ui/download-button/snap-store.svg')})`
+                          : `url(${getAssetUrl('/images/ui/download-button/snap-store-white.svg')})`};
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: 100% 32px;

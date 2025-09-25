@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation, Trans } from "next-i18next";
 import {
   StyledHero,
@@ -12,7 +12,7 @@ import {
 } from "./Hero.styled";
 import { IDocSpaceDeveloperPricesFormData } from "./Hero.types";
 import { ILocale } from "@src/types/locale";
-import { useRewardful } from "@src/utils/useRewardful";
+import { loadRewardful, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -62,30 +62,10 @@ const Hero = ({ locale }: ILocale) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState(initialFormData);
   const [quoteFormData, setQuoteFormData] = useState(initialQuoteFormData);
-  const [affiliate, setAffiliate] = useState<{
-    id?: string;
-    token?: string;
-    params?: string;
-  }>({
-    id: "",
-    token: "",
-    params: "",
-  });
 
-  const { getClientReferenceId, getAffiliateToken, getClientReferenceParam } =
-    useRewardful({
-      onReady: () => {
-        const id = getClientReferenceId();
-        const token = getAffiliateToken();
-        const params = getClientReferenceParam();
-
-        setAffiliate((prev) =>
-          prev.id === id && prev.token === token && prev.params === params
-            ? prev
-            : { id, token, params },
-        );
-      },
-    });
+  useEffect(() => {
+    loadRewardful();
+  }, []);
 
   const onSubmitRequest = async ({
     from,
@@ -121,8 +101,8 @@ const Hero = ({ locale }: ILocale) => {
         country,
         region,
         hCaptchaResponse,
-        affiliateId: affiliate.id || "",
-        affiliateToken: affiliate.token || "",
+        affiliateId: getClientReferenceId() || "",
+        affiliateToken: getAffiliateToken() || "",
         type: "docspacedeveloperrequest",
       }),
     }).then((res) => res.json());

@@ -116,7 +116,7 @@ export const tableRows: IDocsEditions[] = [
       developer: {
         type: "link",
         value: "Commercial",
-        href: "https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5522566&doc=RVVQOEgvM2pOK0QvNzJ0Q25xSzRlVGZRUHdvYmgxUzIwNFRUUFhxbFpNWT0_IjU1MjI1NjYi0&_ga=2.149472369.614076766.1613394996-2029344581.1607272023",
+        href: "https://help.onlyoffice.co/products/files/doceditor.aspx?fileid=5522566&doc=RVVQOEgvM2pOK0QvNzJ0Q25xSzRlVGZRUHdvYmgxUzIwNFRUUFhxbFpNWT0_IjU1MjI1NjYi0",
         isExternal: true,
       },
     },

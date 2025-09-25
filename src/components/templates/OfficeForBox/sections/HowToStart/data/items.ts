@@ -1,5 +1,6 @@
 import { IStepCarouselItem } from "@src/components/widgets/StepCarousel";
 
+
 export const items: IStepCarouselItem[] = [
   {
     imgUrl: "/images/templates/office-for-box/how-to-start/step-1.svg",

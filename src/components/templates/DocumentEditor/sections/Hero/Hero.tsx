@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledHero,
   StyledHeroWrapper,
@@ -33,7 +34,7 @@ const Hero = () => {
       tabletSmallSpacing={["96px", "80px"]}
       mobileSpacing={["96px", "48px"]}
     >
-      <Container>
+      <Container maxWidth="1280px">
         <StyledHeroWrapper>
           <Heading level={1} color="#ffffff" label={t("Header")} />
           <Text size={1} label={t("SubHeader")} />
@@ -64,8 +65,8 @@ const Hero = () => {
         </StyledHeroWrapper>
 
         <StyledHeroImg
-          $imgUrl={t("HeroImgUrl")}
-          $imgUrl2x={t("HeroImgUrl2x")}
+          $imgUrl={getAssetUrl(t("HeroImgUrl"))}
+          $imgUrl2x={getAssetUrl(t("HeroImgUrl2x"))}
         />
       </Container>
     </StyledHero>

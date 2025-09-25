@@ -6,6 +6,7 @@ import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { Link } from "@src/components/ui/Link";
 import { Text } from "@src/components/ui/Text";
 import { items } from "./data/items";
+import { getAssetUrl } from "@utils/getAssetUrl";
 
 const HowToStart = () => {
   const { t } = useTranslation("office-for-plone");
@@ -17,7 +18,7 @@ const HowToStart = () => {
 
         <StepCarousel
           items={items.map((item) => ({
-            imgUrl: item.imgUrl,
+            imgUrl: getAssetUrl(item.imgUrl),
             heading: item.headingLinks ? (
               <Trans
                 t={t}

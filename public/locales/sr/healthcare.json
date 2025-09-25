@@ -1,0 +1,89 @@
+{
+  "PageTitle": "Online kancelarija za zdravstvene ustanove | ONLYOFFICE",
+  "PageDescription": "Uređujte i sarađujte na dokumentima bez prepreka u vašoj eLearning platformi uz ONLYOFFICE Docs. Besplatan probni period, popusti za obrazovne ustanove.",
+
+  "HeroTitle": "ONLYOFFICE <0>za zdravstvene ustanove</0>",
+  "HeroText": "Sigurno uređivanje i saradnja na dokumentima za zdravstvene radnike",
+
+  "FlexibleChoiceSoftwareTools": "<0>Fleksibilan izbor</0> softverskih alata prema potrebama vaše organizacije",
+  "LearnMore": "Saznajte više",
+  "UseItForFree": "Koristite besplatno",
+  "GetItNow": "Preuzmite odmah",
+
+  "EffectivelyCollaborateOnMedicalRecords": "Efikasna saradnja na medicinskoj dokumentaciji",
+  "OODocSpaceAllowsConnectingDoctors": "ONLYOFFICE DocSpace omogućava povezivanje lekara i dokumentacije u prilagodljivim sobama sa fleksibilnim podešavanjima.",
+  "EffectivelyCollabFeature1": "Kreirajte sobe za saradnju za zajednički rad na evidenciji pacijenata, kao multidisciplinarne diskusije, sobe za popunjavanje formi radi prikupljanja podataka i odgovora, ili prilagođene sobe za bilo koju namenu.",
+  "EffectivelyCollabFeature2": "Delite pristup lekarima koji su odgovorni za lečenje, uključujući slučajeve između bolnica. Za brz pristup koristite Javne sobe gde je moguće pregledati dokumente bez registracije.",
+  "EffectivelyCollabFeature3": "Zaštitite sobe i osetljive fajlove koje sadrže koristeći različite bezbednosne opcije.",
+  "EffectivelyCollabImgUrl": "/images/templates/healthcare/flexible-choice/docspace.svg",
+
+  "OrganizeASecureDigitalWorkplace": "Organizujte sigurno digitalno radno okruženje",
+  "OOOffersCollaborationPlatform": "ONLYOFFICE nudi kompletnu platformu za saradnju sa naprednim bezbednosnim funkcijama.",
+  "OrganizeASecureFeature1": "Sigurno čuvajte, delite i uređujte dokumente u <0>ONLYOFFICE Documents</0>. Kreirajte forme spremne za popunjavanje. Otvarajte video i audio fajlove i pregledajte slike raznih formata.",
+  "OrganizeASecureFeature2": "Poboljšajte upravljanje kontaktima uz <0>ONLYOFFICE CRM</0>. Organizujte kancelarijske zadatke uz <1>ONLYOFFICE Projects</1>.",
+  "OrganizeASecureFeature3": "Kreirajte internu komunikacionu mrežu za zaposlene uz <0>ONLYOFFICE Community</0>. Organizujte raspored uz <1>ONLYOFFICE Calendar</1>.",
+  "OrganizeASecureImgUrl": "/images/templates/healthcare/flexible-choice/new_icon_1.svg",
+
+  "AlreadyUseAPopularDms": "Već koristite popularan DMS? Omogućite sigurno uređivanje i saradnju na dokumentima uz ONLYOFFICE Docs",
+  "OOOffersConnectors": "ONLYOFFICE nudi kolekciju spremnih konektora za naprednu integraciju u vašu infrastrukturu.",
+  "AlreadyUseFeature1": "Zadržite informacije o pacijentima u tekstualnim dokumentima, tabelama ili prezentacijama šifrirano od početka do kraja. Sigurno ih uređujte i sarađujte u realnom vremenu. Visoka kompatibilnost sa MS Office formatima.",
+  "AlreadyUseFeature2": "Postavite detaljna prava pristupa dokumentima. Koristite razne funkcije za saradnju, uključujući istoriju verzija, praćenje promena, komentare i ugrađeni čet.",
+  "AlreadyUseFeature3": "Zaštitite informacije o pacijentima od kopiranja, preuzimanja ili štampanja.",
+  "AlreadyUseImgUrl": "/images/templates/healthcare/flexible-choice/new_icon_2.svg",
+
+
+  "UltimateProtectionHealthcareData": "<0>Maksimalna zaštita</0> medicinskih podataka od savremenih pretnji",
+  "OOCompliantWithHipaaPrivacy": "ONLYOFFICE dolazi sa ugrađenim funkcijama koje pomažu IT odeljenju da ispuni pravila <0>HIPAA privatnosti</0> i bezbednosti",
+
+  "EncryptDataAtRestAndTransit": "Šifrujte podatke u mirovanju i tokom prenosa",
+  "EncryptDataP1": "Šifrovanjem podataka u mirovanju i u toku prenosa onemogućavate napadačima da dešifruju podatke o pacijentima čak i ako im pristupe.",
+  "EncryptDataP2": "ONLYOFFICE koristi vodeći AES-256 standard enkripcije za zaštitu osetljivih podataka u mirovanju. Podaci su zaštićeni tokom prenosa uz HTTPS protokol sa najnovijim TLS algoritmom.",
+  "EncryptDataP3": "ONLYOFFICE Enterprise donosi privatne sobe koje obezbeđuju maksimalnu sigurnost podataka. Svaki simbol koji otkucate je šifrovan end-to-end.",
+  "EncryptDataImgUrl": "/images/templates/healthcare/screens/first/en/index_1_@x1.png",
+  "EncryptDataImgUrl2x": "/images/templates/healthcare/screens/first/en/index_1_@x2.png",
+  "LearnHowItWorks": "Saznajte kako radi",
+
+  "RestrictAccessToData": "Ograničite pristup podacima",
+  "RestrictAccessP1": "Dajte pristup podacima o pacijentima samo onima kojima je potreban za obavljanje posla.",
+  "RestrictAccessP2": "ONLYOFFICE nudi detaljna prava pristupa dokumentima za potpunu kontrolu pristupa uključujući pun pristup, samo čitanje, komentarisanje, pregled ili mod popunjavanja formi.",
+  "RestrictAccessP3": "Da biste potvrdili da su korisnici autorizovani za pristup podacima o pacijentima, ONLYOFFICE Workspace donosi set funkcija za autentifikaciju:",
+
+  "TwoFactorAuthentication": "dvofaktorska autentifikacija;",
+  "SingleSignOn": "Single Sign-On (SSO);",
+  "TrustedMailDomains": "povereni mail domeni;",
+  "PasswordCreationCriteria": "kriterijumi za kreiranje lozinke;",
+  "CookieLifetime": "trajanje kolačića;",
+  "IpRestriction": "IP ograničenja;",
+
+  "RestrictAccessP4": "Omogućava i IT odeljenju da ograniči pristup ONLYOFFICE Workspace modulima i alatima.",
+  "RestrictAccessImgUrl": "/images/templates/healthcare/screens/second/en/index_2_@x1.png",
+  "RestrictAccessImgUrl2x": "/images/templates/healthcare/screens/second/en/index_2_@x2.png",
+
+  "ProtectDataUsage": "Zaštitite upotrebu podataka",
+  "ProtectDataUsageP1": "Zaštitite informacije o pacijentima od kopiranja, preuzimanja ili štampanja.",
+  "ProtectDataUsageP2": "ONLYOFFICE API omogućava IT odeljenju da implementira dodatne kontrole za blokiranje rizičnih aktivnosti sa osetljivim podacima.",
+  "ProtectDataImgUrl": "/images/templates/healthcare/screens/third/en/index_3_@x1.png",
+  "ProtectDataImgUrl2x": "/images/templates/healthcare/screens/third/en/index_3_@x2.png",
+  "VisitAPI": "Posetite API",
+
+  "LogAndMonitorDataUsage": "Evidentirajte i pratite upotrebu podataka",
+  "LogAndMonitorDataUsageP1": "Pratite ko, kada i sa kog uređaja i lokacije pristupa informacijama.",
+  "LogAndMonitorDataUsageP2": "ONLYOFFICE Workspace ima ugrađene logove i alate za praćenje koji vam omogućavaju da brzo identifikujete i rešite probleme u slučaju incidenta.",
+  "LogAndMonitorImgUrl": "/images/templates/healthcare/screens/fourth/en/index_4_@x1.png",
+  "LogAndMonitorImgUrl2x": "/images/templates/healthcare/screens/fourth/en/index_4_@x2.png",
+
+  "BackupAndRestoreData": "Bekapujte i vratite podatke",
+  "BackupAndRestoreP1": "Zaštitite integritet i dostupnost osetljivih podataka redovnim rezervnim kopijama.",
+  "BackupAndRestoreP2": "ONLYOFFICE Workspace nudi alate za automatski backup i vraćanje podataka, omogućavajući IT odeljenju zdravstvene ustanove da izabere lokaciju za bekap: lokalni disk ili bilo koje privatno cloud skladište.",
+  "BackupAndRestoreImgUrl": "/images/templates/healthcare/screens/fifth/en/index_5_@x1.png",
+  "BackupAndRestoreImgUrl2x": "/images/templates/healthcare/screens/fifth/en/index_5_@x2.png",
+
+  
+  "EnterpriseReadySolution": "Rešenje spremno za preduzeća",
+  "OOProvidesEnterpriseVersion": "ONLYOFFICE nudi unapred konfigurisan i optimizovan enterprise paket:",
+  "AdvancedSetOfEditingTools": "napredan set alata za uređivanje",
+  "EnhancedSecurityOptions": "poboljšane mogućnosti za bezbednost",
+  "PriorityAccessSecurityStabilityFixes": "prioritetan pristup ispravkama vezanim za sigurnost i stabilnost",
+  "EasilyScalable": "lako skalabilno",
+  "FreeTrialLifetimeLicenseYearlyUpdatesSupport": "besplatan probni period, doživotna licenca + godišnja ažuriranja i podrška"
+}

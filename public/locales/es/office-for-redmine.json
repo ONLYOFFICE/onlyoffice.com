@@ -1,33 +1,50 @@
 {
   "PageTitle": "Suite ofimática en línea para Redmine | ONLYOFFICE Docs",
-  "PageDescription": "Edita y coedita documentos, crea y rellena formularios dentro de Redmine",
+  "PageDescription": "Edita y colabora en documentos, crea y rellena formularios en Redmine",
 
   "OnlineOfficeForConnector": "Suite ofimática en línea para <0>Redmine</0>",
-  "Subheader": "Ve, edita y colabora en documentos de oficina dentro de Redmine usando ONLYOFFICE Docs",
-  "GetStarted": "Empezar",
+  "Subheader": "Visualiza, edita y colabora en documentos ofimáticos dentro de Redmine usando ONLYOFFICE Docs",
+  "GetItNow": "Obtener ahora",
   "FullyCompatibleWithDocxXlsxAndPptx": "Totalmente compatible con docx, xlsx y pptx",
+
+  "HeroTab1ImgUrl": "/images/templates/office-for-redmine/hero/screen1.png",
+  "HeroTab1ImgUrl2x": "/images/templates/office-for-redmine/hero/screen1@2x.png",
+  "HeroTab2ImgUrl": "/images/templates/office-for-redmine/hero/screen2.png",
+  "HeroTab2ImgUrl2x": "/images/templates/office-for-redmine/hero/screen2@2x.png",
+  "HeroTab3ImgUrl": "/images/templates/office-for-redmine/hero/screen3.png",
+  "HeroTab3ImgUrl2x": "/images/templates/office-for-redmine/hero/screen3@2x.png",
+  "HeroTab4ImgUrl": "/images/templates/office-for-redmine/hero/screen4.png",
+  "HeroTab4ImgUrl2x": "/images/templates/office-for-redmine/hero/screen4@2x.png",
+  "HeroTab5ImgUrl": "/images/templates/office-for-redmine/hero/screen5.png",
+  "HeroTab5ImgUrl2x": "/images/templates/office-for-redmine/hero/screen5@2x.png",
+  "HeroTab6ImgUrl": "/images/templates/office-for-redmine/hero/screen6.png",
+  "HeroTab6ImgUrl2x": "/images/templates/office-for-redmine/hero/screen6@2x.png",
+  "HeroTab7ImgUrl": "/images/templates/office-for-redmine/hero/screen7.png",
+  "HeroTab7ImgUrl2x": "/images/templates/office-for-redmine/hero/screen7@2x.png",
+
+  "GetStarted": "Empezar",
 
   "MarketplaceConnectorTitle": "Diseñado para una integración perfecta con Redmine",
   "MarketplaceConnectorDescription": "Obtén el conector ONLYOFFICE para Redmine ahora desde el <0>Directorio de plugins de Redmine</0>.",
-  "GetItNow": "Obtener ahora",
 
   "WhyOO": "Por qué ONLYOFFICE Docs",
-  "WhySubheader": "ONLYOFFICE Docs es una suite ofimática autoalojada para trabajar con documentos de texto, hojas de cálculo, presentaciones y formularios",
-  "Reason1": "Plugin de integración listo para usar",
-  "Reason2": "Instalación sencilla y configuración rápida",
-  "Reason3": "Trabaja con archivos dentro de los módulos Asuntos, Archivos, Documentos, Wiki, Noticias",
-  "Reason4": "Interfaz intuitiva con pestañas",
-  "Reason5": "Múltiples herramientas de edición, formateo y diseño",
-  "Reason6": "Colaboración en tiempo real, seguimiento de cambios, comentarios, chat",
-  "Reason7": "Versión gratuita Community y versiones <0>escalables Enterprise</0>",
-  "Reason8": "Código abierto disponible en GitHub",
+  "WhySubheader": "ONLYOFFICE Docs es una suite ofimática autoalojada para trabajar con documentos de texto, hojas de cálculo, presentaciones y formularios.",
+  "Reason1": "Plugin de integración <0>listo para usar</0>",
+  "Reason2": "<0>Fácil instalación</0> y rápida configuración",
+  "Reason3": "<0>Trabajo con archivos</0> dentro de los módulos Asuntos, Archivos, Documentos, Wiki, Noticias",
+  "Reason4": "<0>Interfaz intuitiva</0> con pestañas",
+  "Reason5": "<0>Múltiples</0> herramientas de edición, formato y estilo",
+  "Reason6": "<0>Colaboración en tiempo real</0>, seguimiento de cambios, comentarios, chat",
+  "Reason7": "Versión gratuita Community y versión <0>escalable Enterprise</0>",
+  "Reason8": "<0>Código fuente abierto</0> disponible en GitHub",
 
   "HowToStart": "Cómo empezar",
-  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una <1>cuenta en Docs Cloud</1>.",
-  "HowToStartStep2": "Obtén el conector ONLYOFFICE del <0>directorio de plugins de Redmine</0>.",
+  "HowToStartStep1": "Implementa <0>ONLYOFFICE Docs</0> en tu propio servidor o crea una cuenta en <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Obtén el conector ONLYOFFICE del <0>Directorio de plugins de Redmine</0>.",
   "HowToStartStep3": "Configura el conector y activa JWT.",
+  "HowToStartImgUrl": "/images/templates/office-for-redmine/how-to-start/how-to-start.svg",
 
   "ReadDetailedInstructions": "Lee las instrucciones detalladas en el <0>Centro de ayuda</0>.",
 
-  "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE Docs a tu servicio web favorito? ¿O has desarrollado una?"
+  "NeedAnAppToConnect": "¿Necesitas una aplicación para conectar ONLYOFFICE Docs a tu servicio web favorito? ¿O ya has desarrollado una?"
 }

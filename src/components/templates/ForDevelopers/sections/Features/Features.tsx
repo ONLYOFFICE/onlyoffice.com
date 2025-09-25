@@ -1,4 +1,5 @@
 import { useTranslation } from "next-i18next";
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledFeaturesContent,
   StyledFeatureIconsButton,
@@ -36,7 +37,7 @@ const Features = () => {
                     connectorsSubheading={t(group.connectorsSubheading ?? "")}
                     showButtonsOutside={true}
                     image={{
-                      url: t(group.image.url),
+                      url: getAssetUrl(t(group.image.url)),
                       url2x: group.image.url2x
                         ? t(group.image.url2x)
                         : undefined,

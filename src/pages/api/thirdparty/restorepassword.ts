@@ -1,8 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
 import { resetPassword } from "@src/lib/requests/thirdparty/resetPassword";
 import { validateEmail } from "@src/utils/validators";
 import { sendEmail } from "@src/lib/requests/thirdparty/send";
 import { PasswordReminder } from "@src/components/emails/PasswordReminder";
+import { getLanguage } from "@src/lib/helpers/getLanguage";
+import { getServerI18n } from "@src/lib/helpers/getServerI18n";
 
 export default async function handler(
   req: NextApiRequest,
@@ -12,23 +15,20 @@ export default async function handler(
     return res.status(405).end("Method Not Allowed");
   }
 
+  if (!(await checkRateLimit(req, res))) return;
+
   try {
-    const { email, emailSubject } = req.body;
+    const { email } = req.body;
 
     if (typeof email !== "string" || !validateEmail(email)) {
       return res.status(400).json({
         status: "error",
-        message: "Missing or invalid 'email' field",
+        message: "Invalid request parameters",
       });
     }
 
-    if (!emailSubject) {
-      return res.status(400).json({
-        status: "error",
-        message: "Missing or invalid 'emailSubject' field",
-      });
-    }
-
+    const language = getLanguage(req);
+    const i18n = await getServerI18n(language, ["docspace-registration"]);
     const restorePasswordData = await resetPassword({ email });
 
     if (restorePasswordData.status !== "success") {
@@ -40,8 +40,11 @@ export default async function handler(
 
     const sendEmailData = await sendEmail({
       email,
-      subject: emailSubject,
-      body: PasswordReminder({ portals: restorePasswordData.data }),
+      subject: i18n.t("OOPasswordReminder"),
+      body: await PasswordReminder({
+        portals: restorePasswordData.data,
+        language: language,
+      }),
     });
 
     if (sendEmailData.status !== "success") {

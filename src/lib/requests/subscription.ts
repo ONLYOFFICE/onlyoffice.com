@@ -1,18 +1,23 @@
 import { db } from "@src/config/db/site";
+import { validateUnsubscribeId } from "./thirdparty/validateUnsubscribeId";
 import { connectionStrings } from "@src/config/db/connectionStrings";
 import { updateTeamlabNewsSubscription } from "@src/utils/subscription/updateTeamlabNewsSubscription";
 
 interface IUnsubscribe {
-  email: string;
+  id: string;
   subscribe: boolean;
   newsOnly: boolean;
 }
 
 export const subscription = async ({
-  email,
+  id,
   subscribe,
   newsOnly,
 }: IUnsubscribe) => {
+  const validateUnsubscribeData = await validateUnsubscribeId({
+    id,
+  });
+  const email = validateUnsubscribeData.data?.email;
   const emailLower = email.toLowerCase();
 
   try {

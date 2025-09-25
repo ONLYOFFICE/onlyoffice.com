@@ -5,8 +5,9 @@ import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
-  background-image: url("/images/templates/certificates/hero/orange-line.svg");
+  background-image: url(${getAssetUrl('/images/templates/certificates/hero/orange-line.svg')});
   background-repeat: no-repeat;
   background-position: center 141px;
 
@@ -28,7 +29,7 @@ const StyledHeroWrapper = styled.div`
   padding: 24px 80px 30px;
   min-height: 480px;
   background-color: #f5f5f5;
-  background-image: url("/images/templates/certificates/hero/gray-line.svg");
+  background-image: url(${getAssetUrl('/images/templates/certificates/hero/gray-line.svg')});
   background-repeat: no-repeat;
   background-position: center calc(50% - 7px);
 
@@ -118,7 +119,7 @@ const StyledHeroText = styled(Text)<{ $locale?: string }>`
 
 const StyledHeroImage = styled.div`
   padding-bottom: 66.5625%;
-  background-image: url("/images/templates/certificates/hero/hero-image.svg");
+  background-image: url(${getAssetUrl('/images/templates/certificates/hero/hero-image.svg')});
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

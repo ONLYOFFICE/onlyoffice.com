@@ -3,6 +3,7 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledLevels = styled.div`
   max-width: 1071px;
   margin: auto;
@@ -56,7 +57,7 @@ const KeyText = styled(Text)`
   &:before {
     width: 24px;
     height: 24px;
-    background-image: url(/images/templates/academy/courses/corner.svg);
+    background-image: url(${getAssetUrl('/images/templates/academy/courses/corner.svg')});
     background-size: cover;
     background-position: center;
     content: "";

@@ -19,6 +19,7 @@ import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
 import { Button } from "@src/components/ui/Button";
 import { validateEmail } from "@src/utils/validators";
+import { createPasswordHash } from "@src/utils/createPasswordHash";
 import { PasswordInput } from "@src/components/widgets/PasswordInput";
 import { usePageTrack } from "@src/lib/hooks/useGA";
 
@@ -72,48 +73,46 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
     setIsFormValid(false);
     setIsFormLoading(true);
 
-    const findByEmailRes = await fetch("/api/thirdparty/findbyemail", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: formData.email }),
-    });
-    const findByEmailData = await findByEmailRes.json();
+    try {
+      const passwordHash = createPasswordHash(formData.password, {
+        size: 256,
+        iterations: 100000,
+        salt: process.env.NEXT_PUBLIC_PASSWORDHASH_SALT!,
+      });
 
-    if (findByEmailData.data?.length === 0) {
-      setIsError({ email: true, password: true });
-    } else {
-      const findByEmailPasswordRes = await fetch(
-        "/api/thirdparty/findbyemailpassword",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: formData.email,
-            password: formData.password,
-          }),
-        },
-      );
-      const findByEmailPasswordData = await findByEmailPasswordRes.json();
+      const res = await fetch("/api/thirdparty/signin", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: formData.email,
+          passwordHash,
+        }),
+      });
 
-      if (
-        findByEmailPasswordData.status === "error" ||
-        findByEmailPasswordData.data?.length === 0
-      ) {
+      const result = await res.json();
+
+      if (result.status === "error") {
         setIsError({ email: true, password: true });
         setIsFormLoading(false);
         return;
-      } else if (findByEmailPasswordData.data?.length === 1) {
-        pageTrack("singin");
-        window.location.href = `${findByEmailPasswordData.data[0].domain}${findByEmailPasswordData.data[0].path}`;
+      }
 
+      if (result.redirect) {
+        pageTrack("singin");
+        window.location.href = result.redirect;
         return;
       }
 
-      pageTrack("singin");
-      setExistTenants(findByEmailPasswordData.data);
+      if (result.tenants) {
+        pageTrack("signin");
+        setExistTenants(result.tenants);
+      }
+    } catch (err) {
+      console.error("Unexpected login error:", err);
+      setIsLoginError(true);
+    } finally {
+      setIsFormLoading(false);
     }
-
-    setIsFormLoading(false);
   };
 
   const checkSignInCode = () => {
@@ -137,7 +136,10 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
   };
 
   const handleSignInBySocial = (platform: string) => {
-    if (intervalId.current) clearInterval(intervalId.current);
+    if (intervalId.current) {
+      clearInterval(intervalId.current);
+      intervalId.current = null;
+    }
 
     platformRef.current = platform;
 
@@ -151,44 +153,45 @@ const LogIn = ({ setExistTenants, setStatus }: ILogIn) => {
   };
 
   useEffect(() => {
+    const redirectOrSetTenants = (
+      tenants: { domain: string; path: string }[],
+    ) => {
+      if (!tenants || tenants.length === 0) {
+        setIsLoginError(true);
+        return;
+      }
+      if (tenants.length === 1) {
+        window.location.href = `${tenants[0].domain}${tenants[0].path}`;
+      } else {
+        setExistTenants(tenants);
+      }
+    };
+
     window.SigninBySocial = async (data) => {
       try {
-        const findBySocialRes = await fetch("/api/thirdparty/findbysocial", {
+        const res = await fetch("/api/thirdparty/account", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            transport: data,
-          }),
+          body: JSON.stringify({ transport: data }),
         });
-        const findBySocialData = await findBySocialRes.json();
 
-        const findByEmailRes = await fetch("/api/thirdparty/findbyemail", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            email: findBySocialData.data.email,
-          }),
-        });
-        const findByEmailData = await findByEmailRes.json();
+        const result = await res.json();
 
-        if (findByEmailData.data?.length === 1) {
-          window.location.href = `${findByEmailData.data[0].domain}${findByEmailData.data[0].path}`;
-        } else if (findByEmailData.data?.length > 1) {
-          setExistTenants(findByEmailData.data);
+        if (result.status === "success") {
+          redirectOrSetTenants(result.tenants);
         } else {
           setIsLoginError(true);
         }
       } catch (err) {
-        console.error(
-          "Unexpected error:",
-          err instanceof Error ? err.message : err,
-        );
+        console.error("Unexpected error:", err);
+        setIsLoginError(true);
       }
     };
 
     return () => {
       if (intervalId.current) {
         clearInterval(intervalId.current);
+        intervalId.current = null;
       }
     };
   }, [setExistTenants]);

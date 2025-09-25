@@ -4,6 +4,7 @@ import { Section } from "@src/components/ui/Section";
 import { items } from "./data/items";
 import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 import {
   StyledFeaturesList
 } from "./Features.styled";
@@ -21,8 +22,8 @@ const Features = () => {
               heading={t(item.title)}
               text={t(item.description)}
               image={{
-                url: t(item.image.url),
-                url2x: t(item.image.url2x)
+                url: getAssetUrl(t(item.image.url)),
+                url2x: getAssetUrl(t(item.image.url2x))
               }}
               position={{
                 desktop: index % 2 === 0 ? "right" : "left",

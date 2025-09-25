@@ -1,9 +1,10 @@
 import { IFeatureItem } from "@src/components/widgets/FeatureItem";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 export const items: IFeatureItem[] = [
   {
     icon: {
-      url: "/images/templates/resellers/conditions/resellers_conditions.svg",
+      url: getAssetUrl("/images/templates/resellers/conditions/resellers_conditions.svg"),
       positionX: "0",
       mobilePositionX: "0",
     },
@@ -12,7 +13,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/resellers/conditions/resellers_conditions.svg",
+      url: getAssetUrl("/images/templates/resellers/conditions/resellers_conditions.svg"),
       positionX: "-384px",
       mobilePositionX: "-288px",
     },
@@ -21,7 +22,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/resellers/conditions/resellers_conditions.svg",
+      url: getAssetUrl("/images/templates/resellers/conditions/resellers_conditions.svg"),
       positionX: "-98px",
       mobilePositionX: "-74px",
     },
@@ -30,7 +31,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/resellers/conditions/resellers_conditions.svg",
+      url: getAssetUrl("/images/templates/resellers/conditions/resellers_conditions.svg"),
       positionX: "-480px",
       mobilePositionX: "-359px",
     },
@@ -39,7 +40,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/resellers/conditions/resellers_conditions.svg",
+      url: getAssetUrl("/images/templates/resellers/conditions/resellers_conditions.svg"),
       positionX: "-192px",
       mobilePositionX: "-144px",
     },
@@ -48,7 +49,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/resellers/conditions/resellers_conditions.svg",
+      url: getAssetUrl("/images/templates/resellers/conditions/resellers_conditions.svg"),
       positionX: "-576px",
       mobilePositionX: "-432px",
     },
@@ -57,7 +58,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/resellers/conditions/resellers_conditions.svg",
+      url: getAssetUrl("/images/templates/resellers/conditions/resellers_conditions.svg"),
       positionX: "-672px",
       mobilePositionX: "-502px",
     },
@@ -66,7 +67,7 @@ export const items: IFeatureItem[] = [
   },
   {
     icon: {
-      url: "/images/templates/resellers/conditions/resellers_conditions.svg",
+      url: getAssetUrl("/images/templates/resellers/conditions/resellers_conditions.svg"),
       positionX: "-288px",
       mobilePositionX: "-216px",
     },

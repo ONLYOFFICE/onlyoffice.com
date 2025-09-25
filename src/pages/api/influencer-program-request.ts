@@ -39,7 +39,6 @@ export default async function handler(
     const transporter = emailTransporter();
 
     await transporter.sendMail({
-      from: process.env.SALES_EMAIL!,
       to: process.env.SALES_EMAIL!,
       subject: `Request ${fromPage}`,
       html: InfluencerProgram({

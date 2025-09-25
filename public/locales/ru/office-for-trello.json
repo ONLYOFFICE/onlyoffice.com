@@ -1,10 +1,10 @@
 {
-  "PageTitle": "Онлайн офис для Trello | ONLYOFFICE",
+  "PageTitle": "Онлайн-офис для Trello | ONLYOFFICE",
   "PageDescription": "Работайте с любыми офисными документами в Trello, используя ONLYOFFICE Docs",
 
-  "OnlineOfficeForConnector": "Онлайн офис для Trello",
+  "OnlineOfficeForConnector": "Онлайн-офис для Trello",
   "Subheader": "Работайте с любыми офисными документами в Trello, используя ONLYOFFICE Docs",
-  "GetStarted": "НАЧАТЬ",
+  "GetStarted": "Начать",
   "HeroImgUrl": "/images/templates/office-for-trello/hero/ru/main.png",
   "HeroImgUrl2x": "/images/templates/office-for-trello/hero/ru/main@2x.png",
 
@@ -21,7 +21,7 @@
 
   "MarketplaceConnectorTitle": "Разработано для беспрепятственной интеграции с Trello",
   "MarketplaceConnectorDescription": "Получите ONLYOFFICE Power-Up для Trello прямо сейчас в Atlassian Marketplace.",
-  "GetItNow": "НАЧАТЬ ПРЯМО СЕЙЧАС",
+  "GetItNow": "Начать прямо сейчас",
 
   "WhyOO": "Почему ONLYOFFICE?",
   "Reason1": "Поддержка более <0>50 форматов файлов</0>, полная совместимость с форматами MS Office: DOCX, XLSX, PPTX.",

@@ -13,14 +13,14 @@ export const items: INewsItems = {
     {
       className: "latest-news-item-blog",
       heading: "OODocSpaceReleased",
-      imgUrl: "OODocSpaceReleasedImage",
+      imgUrl: "/images/templates/main/latest-news/docs-9-0.png",
       linkUrl: "OODocSpaceReleasedLink",
       isExternalLink: false,
       date: "OODocSpaceReleasedDate",
     },
     {
       heading: "OODocsReleased",
-      imgUrl: "OODocsReleasedImage",
+      imgUrl: "/images/templates/main/latest-news/docspace-3-1.png",
       linkUrl: "OODocsReleasedLink",
       isExternalLink: false,
       date: "OODocsReleasedDate",
@@ -30,7 +30,7 @@ export const items: INewsItems = {
     {
       className: "latest-news-item-webinar",
       heading: "MeetOODocSpace",
-      imgUrl: "OODocSpaceReleasedImage",
+      imgUrl: "/images/templates/main/latest-news/docs-9-0.png",
       linkUrl: "https://www.youtube.com/watch?v=rH1sMMwtyPE&ab_channel=ONLYOFFICE",
       isExternalLink: true,
       date: "2025-06-18",
@@ -38,7 +38,7 @@ export const items: INewsItems = {
     },
     {
       heading: "MeetOODocs",
-      imgUrl: "OODocsReleasedImage",
+      imgUrl: "/images/templates/main/latest-news/docspace-3-1.png",
       linkUrl: "https://www.youtube.com/watch?v=sl9BmWjGtnk&ab_channel=ONLYOFFICE",
       isExternalLink: true,
       date: "2025-04-21",

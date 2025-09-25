@@ -3,10 +3,11 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
   background-color: #efefef;
-  background-image: url("/images/templates/document-editor-comparison/hero/bg.svg");
+  background-image: url(${getAssetUrl('/images/templates/document-editor-comparison/hero/bg.svg')});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;

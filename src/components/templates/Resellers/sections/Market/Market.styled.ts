@@ -3,6 +3,7 @@ import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledMarketWrapper = styled.div`
   margin: 0 auto 88px;
   max-width: 833px;
@@ -46,14 +47,14 @@ const StyledMarketImage = styled.div`
   margin: 0 auto;
   width: 420px;
   height: 204px;
-  background-image: url("/images/templates/resellers/market/promoting.svg");
+  background-image: url(${getAssetUrl('/images/templates/resellers/market/promoting.svg')});
   background-repeat: no-repeat;
   background-size: contain;
 
   @media ${device.mobile} {
     width: 230px;
     height: 169px;
-    background-image: url("/images/templates/resellers/market/promoting_mob.svg");
+    background-image: url(${getAssetUrl('/images/templates/resellers/market/promoting_mob.svg')});
   }
 `;
 
@@ -110,7 +111,7 @@ const StyledMarketLanguagesItem = styled.span`
     width: 30px;
     min-width: 30px;
     height: 24px;
-    background-image: url("/images/templates/resellers/market/flags.svg");
+    background-image: url(${getAssetUrl('/images/templates/resellers/market/flags.svg')});
     background-repeat: no-repeat;
 
     @media ${device.tabletS} {

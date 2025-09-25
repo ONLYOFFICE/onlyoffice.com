@@ -1,13 +1,13 @@
 {
   "PageTitle": "Banners | ONLYOFFICE",
-  "PageDescription": "Place at least one of these banner codes to your site",
+  "PageDescription": "Coloque pelo menos um desses códigos de banner em seu site",
 
-  "HeroTitle": "Place at least one of these banner codes to your site",
+  "HeroTitle": "Coloque pelo menos um desses códigos de banner em seu site",
 
-  "CopyBannerCode" : "Copy the banner code to clipboard",
-  "Animated" : "Animated",
-  "Static" : "Static",
-  "square" : "square",
+  "CopyBannerCode" : "Copie o código do banner para a área de transferência",
+  "Animated" : "Animado",
+  "Static" : "Estático",
+  "square" : "quadrado",
   "horizontal" : "horizontal",
   "vertical" : "vertical"
 }

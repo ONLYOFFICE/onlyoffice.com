@@ -4,6 +4,7 @@ import { Text } from "@src/components/ui/Text";
 import { device } from "@src/utils/device";
 import styled from "styled-components";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const StyledBenefitsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
@@ -57,7 +58,7 @@ const StyledText = styled(Text)`
 
     &::before {
         content: "";
-        background-image: url("/images/templates/projects-for-android/benefits/projects-icons.svg");
+        background-image: url(${getAssetUrl('/images/templates/projects-for-android/benefits/projects-icons.svg')});
         background-position-x: 0;
         background-repeat: no-repeat;
         position: absolute;

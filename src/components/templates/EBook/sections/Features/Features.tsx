@@ -6,6 +6,7 @@ import { Link } from "@src/components/ui/Link";
 import { getLink } from "@src/utils/getLink";
 import { ILocale } from "@src/types/locale";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Features = ({ locale }: ILocale) => {
   const { t } = useTranslation("e-book");
 
@@ -47,8 +48,8 @@ const Features = ({ locale }: ILocale) => {
                 }))
               : undefined,
           image: {
-            url: t(items.image.url),
-            url2x: items.image.url2x && t(items.image.url2x),
+            url: getAssetUrl(t(items.image.url)),
+            url2x: items.image.url2x && getAssetUrl(t(items.image.url2x)),
             height: items.image.height,
           },
         }))}

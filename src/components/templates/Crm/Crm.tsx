@@ -1,4 +1,4 @@
-import { CollaborationsTabs } from "@src/components/modules/collaborations/CollaborationsTabs";
+import { OtherPagesSelector } from "@src/components/modules/OtherPagesSelector";
 import { Features } from "./sections/Features";
 import { Hero } from "./sections/Hero";
 import { Quote } from "./sections/Quote";
@@ -9,7 +9,7 @@ const CrmTemplate = () => {
       <Hero />
       <Features />
       <Quote />
-      <CollaborationsTabs />
+      <OtherPagesSelector page={"collaboration"} />
     </>
   );
 };

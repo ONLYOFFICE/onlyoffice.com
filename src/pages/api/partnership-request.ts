@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { validateEmail } from "@src/utils/validators";
 import { parse } from "cookie";
@@ -34,7 +35,6 @@ export default async function handler(
     from,
     spam,
     partnerReqType,
-    locale,
     hCaptchaResponse,
   } = req.body;
 
@@ -49,13 +49,15 @@ export default async function handler(
       req.socket.remoteAddress ||
       null;
 
-    const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+    if (!isTestEmail(email)) {
+      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
-    if (!hCaptchaResult.success) {
-      return res.status(400).json({
-        status: "errorHCaptchaInvalid",
-        error: hCaptchaResult.error,
-      });
+      if (!hCaptchaResult.success) {
+        return res.status(400).json({
+          status: "errorHCaptchaInvalid",
+          error: hCaptchaResult.error,
+        });
+      }
     }
 
     const cookies = parse(req.headers.cookie || "");
@@ -69,7 +71,6 @@ export default async function handler(
 
     const transporter = emailTransporter();
     await transporter.sendMail({
-      from,
       to: [process.env.SALES_EMAIL!],
       subject: `${companyName} Partner Request ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${from}]`,
       html: PartnershipRequestEmail({
@@ -103,7 +104,6 @@ export default async function handler(
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            language: locale,
             firstName: "",
             email: email,
             type: "Common",

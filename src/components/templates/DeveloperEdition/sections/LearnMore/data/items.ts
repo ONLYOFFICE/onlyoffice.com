@@ -1,5 +1,6 @@
 import { IBlogCard } from "@src/components/widgets/BlogCard";
 
+
 export const items: IBlogCard[] = [
   {
     imgUrl: "/images/templates/developer-edition/learn-more/whitepaper.png",

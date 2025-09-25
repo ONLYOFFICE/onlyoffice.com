@@ -5,6 +5,7 @@ import { EditorsTabs } from "@src/components/modules/editors/EditorsTabs";
 import { getLink } from "@src/utils/getLink";
 import { ILocale } from "@src/types/locale";
 
+import { getAssetUrl } from "@utils/getAssetUrl";
 const Features = ({ locale }: ILocale) => {
   const { t } = useTranslation("pdf-editor");
 
@@ -27,8 +28,8 @@ const Features = ({ locale }: ILocale) => {
                 : link.href,
           })),
           image: {
-            url: t(items.image.url),
-            url2x: items.image.url2x && t(items.image.url2x),
+            url: getAssetUrl(t(items.image.url)),
+            url2x: items.image.url2x && getAssetUrl(t(items.image.url2x)),
             height: items.image.height,
           },
         }))}
