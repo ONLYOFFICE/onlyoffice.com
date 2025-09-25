@@ -145,6 +145,7 @@ pipeline {
       environment {
         region = "${region}"
         src_domain="${src_domain}"
+        base_domain="${base_domain}"
         next_public_static_url = "${next_public_static_url}"
         onlyoffice_site_mysql_host="${onlyoffice_site_mysql_host}"
         onlyoffice_site_mysql_database="${onlyoffice_site_mysql_database}"
