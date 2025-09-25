@@ -4,6 +4,7 @@ def aws_region = ""
 def region = ""
 def cloud_front_distribution_id = ""
 def src_domain = ""
+def base_domain = ""
 def next_public_static_url = ""
 def onlyoffice_site_mysql_host = ""
 def onlyoffice_site_mysql_database = ""
@@ -324,8 +325,8 @@ pipeline {
           fi
 
           if [ "${region}" = "com" ]; then
-
-            sed -i "s^var_base_url^$onlyoffice_site_prod_hcaptcha_site_key^" .env
+            sed -i "s^var_next_public_hcaptcha_site_key^$onlyoffice_site_prod_hcaptcha_site_key^" .env
+            sed -i "s^var_base_url^$base_domain^" .env
             sed -i "s^var_hcaptcha_secret_key^$onlyoffice_site_prod_hcaptcha_secret_key^" .env
             sed -i "s^var_billing_secret^$onlyoffice_site_prod_billing_secret^" .env
             sed -i "s^var_onlyoffice_document_server_token^$onlyoffice_site_prod_document_server_token^" .env
