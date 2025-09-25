@@ -310,7 +310,6 @@ const PartnershipRequestForm = ({
 
         setTimeout(() => {
           setFormStatus("default");
-          clearData();
         }, 5000);
       }
     } catch (error) {

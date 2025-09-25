@@ -117,9 +117,7 @@ export default async function handler(
           "Partnership request sendsubscription returns errors:",
           data,
         );
-        return res
-          .status(400)
-          .json({ status: data.status, message: data.message, isMailOK });
+        //TODO: add handler for 'no subscription' but successful admin sending
       }
     }
     res.status(200).json({ status: "success", message: "success" });
