@@ -32,11 +32,11 @@
 
   "WhyOO": "Proč ONLYOFFICE?",
   "FeaturesFormats": "Podpora více než <0>50 formátů souborů</0>. Plně kompatibilní s formáty MS Office: DOCX, XLSX, PPTX.",
-  "FeaturesCoEditing": "<0>Real-time</0> and paragraph-locking co-editing, review, version history, document comparison, comments & mentions.",
+  "FeaturesCoEditing": "<0>Spolupráce v reálném čase</0> a zamykání odstavců, revize, historie verzí, porovnání dokumentů, komentáře a zmínky.",
   "FeaturesFree": "Free Community and Scalable Enterprise versions. <0>Free 30-day trial.</0> Self-hosted solution for total control over your data.",
   "FeaturesSecurity": "<0>Enhanced security.</0> Flexible access rights and JWT. Encryption at rest and in transit. Watermarking and password protection. Open source code.",
   "FeaturesConfiguration": "<0>Easy configuration.</0> Seamless integration with the ready-to-use connector in the Alfresco admin console and automated testing.",
-  "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools. <0>Integrated AI helper</0> (ChatGPT or ZhiPu Copilot).",
+  "FeaturesAIHelper": "Robustní sada nástrojů pro úpravy, formátování a stylování. <0>Integrovaný AI pomocník</0> (ChatGPT nebo ZhiPu Copilot).",
 
   "HowToStart": "Jak začít",
   "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo se zaregistrujte do <1>ONLYOFFICE Docs Cloud</1>.",
@@ -50,7 +50,7 @@
   "VisitOurHelpCenter": "Visit our Help Center",
   "SuccessStory": "Success Story",
   "SuccessStoryDescription": "Atol CD reinforces online collaboration in Alfresco Digital Workspace by integrating ONLYOFFICE Docs.",
-  "ReadTheFullStory": "Read the full story",
+  "ReadTheFullStory": "Přečtěte si celý příběh",
 
   "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
 }

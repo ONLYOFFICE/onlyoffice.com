@@ -85,7 +85,7 @@
     "CardFormCompanyNameIsEmpty": "Pole pro název společnosti je prázdné",
     "CardFormEmail": "E-mail",
     "CardFormPlaceholderEmail": "name@domain.com",
-    "CardFormEmailIsEmpty": "Pole pro e-mail je prázdné",
+    "CardFormEmailIsEmpty": "E-mail je prázdný",
     "CardFormEmailIsIncorrect": "Nesprávný e-mail",
 
     "CardsFormSuccess": "Vaše žádost byla úspěšně odeslána",

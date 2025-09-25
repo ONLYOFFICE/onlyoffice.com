@@ -29,7 +29,7 @@
   "FreeAppsHeading": "Access and edit your documents stored in Nextcloud with <0>free desktop and mobile apps</0>",
   "FreeAppsDesktopText": "Edit and co-edit your Nextcloud files in the desktop environment with <0>ONLYOFFICE Desktop Editors</0> on Windows, Linux, or macOS",
   "FreeAppsMobileText": "Read and edit your Nextcloud docs, sheets, and slides with ONLYOFFICE Documents mobile apps",
-  "GetFreeDesktopApps": "Get free desktop apps",
+  "GetFreeDesktopApps": "Získejte bezplatné desktopové aplikace",
 
   "MarketplaceConnectorTitle": "Designed for seamless integration with Nextcloud",
   "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Nextcloud now from the Nextcloud App Store.",
@@ -48,12 +48,12 @@
   "HowToStart": "Jak začít",
   "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo se zaregistrujte do <1>ONLYOFFICE Docs Cloud</1>",
   "HowToStartStep2": "Get the integration app from the <0>Nextcloud App Store</0>",
-  "HowToStartStep3": "Configure the integration app.",
+  "HowToStartStep3": "Nakonfigurujte integrační aplikaci.",
   "HowToConnect": "Configuring ONLYOFFICE connector for Nextcloud",
   "ReadDetailedInstructions": "Podrobné pokyny najdete v <0>centru nápovědy</0>.",
 
   "PartnerHeading": "Are you a Nextcloud partner? How about improving your Nextcloud user experience and increasing your revenue?",
-  "PartnerText": "Join the ONLYOFFICE partnership program right now.",
+  "PartnerText": "Připojte se k partnerskému programu ONLYOFFICE hned teď.",
 
   "LearnMoreBlueDragon": "How the Blue Dragon Children’s Foundation helps young people in Vietnam using ONLYOFFICE and Nextcloud",
   "LearnMoreStiftung": "How the Stiftung der Deutschen Wirtschaft manages its funding processes with ONLYOFFICE and Nextcloud",
@@ -63,7 +63,7 @@
   "LearnMoreStellfeld": "How Stellfeld & Ernst GmbH shapes digital collaboration using ONLYOFFICE Docs and Nextcloud",
   "LearnMoreIBE": "Medical research at IBE: how ONLYOFFICE and Nextcloud help the institute",
   "LearnMoreLoveFoundation": "How ONLYOFFICE and Nextcloud help Love Foundation support socially important projects",
-  "ReadTheFullStory": "Read the full story",
+  "ReadTheFullStory": "Přečtěte si celý příběh",
 
   "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
 }

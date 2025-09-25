@@ -37,7 +37,7 @@
   "HowToStart": "Jak začít",
   "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0>.",
   "HowToStartStep2": "Get the integration app from the <0>Atlassian Marketplace</0>. Select the corresponding option by switching the hosting tabs (Server / Data Center / Cloud).",
-  "HowToStartStep3": "Configure the integration app.",
+  "HowToStartStep3": "Nakonfigurujte integrační aplikaci.",
 
   "HowToConnect": "How to connect ONLYOFFICE Docs to Confluence",
   "ReadDetailedInstructions": "Přečtěte si podrobné pokyny v <0>Centru nápovědy</0>.",

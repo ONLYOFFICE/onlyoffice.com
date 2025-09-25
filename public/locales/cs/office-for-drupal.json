@@ -13,12 +13,12 @@
   "DocumentsScreen1Tab2Label": "Embed the entier room into your webpage allowing visitors to view documents right in the browser.",
   "DocumentsScreen1Tab3Label": "Integrate complex PDF forms for filling them in online. Automatically collect and analyze data.",
   "DocumentsScreen1Tab4Label": "Prevent downloading, printing and copying documents from your website.",
-  "soon": "soon",
+  "soon": "brzy",
 
   "DocsAppHeading": "ONLYOFFICE <0>Docs app</0> for Drupal",
   "DocumentsScreen2Header": "Efficiently manage documents from your Drupal account",
   "DocumentsScreen2Tab1Label": "Create a secure space for all your docs. Easily access it anytime anywhere.",
-  "DocumentsScreen2Tab2Label": "Organize your personal files and create rooms for your business documents.",
+  "DocumentsScreen2Tab2Label": "Uspořádejte si své osobní soubory a vytvořte místnosti pro své obchodní dokumenty.",
   "DocumentsScreen2Tab3Label": "Umožněte flexibilní přístupová oprávnění: úpravy, komentáře, kontrola nebo pouze prohlížení.",
   "DocumentsScreen2Tab4Label": "Edit and collaborate on documents with other Drupal users online.",
 
@@ -32,8 +32,8 @@
   "DocsAppTab3Label": "Collaborate on office files in real time with other Drupal users.",
 
   "WhyOO": "Proč ONLYOFFICE?",
-  "Reason1": "A robust set of editing, formatting, and styling tools. <0>Integrated AI helper</0> (ChatGPT or ZhiPu Copilot).",
-  "Reason2": "<0>Real-time</0> and paragraph-locking co-editing, review, version history, document comparison, comments & mentions.",
+  "Reason1": "Robustní sada nástrojů pro úpravy, formátování a stylování. <0>Integrovaný AI pomocník</0> (ChatGPT nebo ZhiPu Copilot).",
+  "Reason2": "<0>Spolupráce v reálném čase</0> a zamykání odstavců, revize, historie verzí, porovnání dokumentů, komentáře a zmínky.",
   "Reason3": "<0>Built-in chat</0> and Telegram integration. Jitsi and Rainbow plugins for real-time communication.",
   "Reason4": "Podpora více než <0>50 formátů souborů</0>. Plně kompatibilní s formáty MS Office: DOCX, XLSX, PPTX.",
   "Reason5": "<0>Enhanced security.</0> Flexible access rights and JWT. Activity tracking and audit reporting. Encryption at rest and in transit. Open source code.",
