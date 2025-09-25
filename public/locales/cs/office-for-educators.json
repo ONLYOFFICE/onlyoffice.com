@@ -3,12 +3,12 @@
   "PageDescription": "Bring your lectures to life with a flexible office suite. Work together with students and colleagues.",
 
   "OfficeForEducators": "ONLYOFFICE for <0>educators</0>",
-  "BringYourLecturesToLife": "Bring your lectures to life with an easy-to-use and flexible office suite. Work together with your students and colleagues to create, share and team up to make sure everyone has the best access to your teachings.",
+  "BringYourLecturesToLife": "Oživte své přednášky pomocí snadno použitelné a flexibilní kancelářské sady. Spolupracujte se svými studenty a kolegy, vytvářejte, sdílejte a spojte se, abyste zajistili, že všichni budou mít nejlepší přístup k vašim výukovým materiálům.",
 
   "OODocsTitle": "<0>ONLYOFFICE Docs:</0> Collaborative online editors for your eLearning platform",
   "OODocsDesc": "Create and co-author your teaching materials effortlessly – the only limit to how you want to teach is your imagination.",
 
-  "FitToAnyLMSOrDMS": "Fit to any LMS or DMS",
+  "FitToAnyLMSOrDMS": "Vhodné pro jakýkoli systém LMS nebo DMS",
   "FitToAnyLMSOrDMSDesc": "No matter if you’re using your standard tread-of-the-mill school computer, or you’re one of those clever tinkering types — create the learning environment that meets your needs and those of your students. ONLYOFFICE can be easily integrated into common educational and content management platforms to work with documents directly within the course structure.",
 
   "ExploreAllIntegrations": "Explore all integrations",
@@ -56,7 +56,7 @@
   "AnotherTaskInMindImgUrl": "/images/templates/office-for-educators/docspace/en/another-task-in-mind.png",
   "AnotherTaskInMindImgUrl2x": "/images/templates/office-for-educators/docspace/en/another-task-in-mind@2x.png",
 
-  "FlexiblePermissionsAndRoles": "Flexible permissions and roles",
+  "FlexiblePermissionsAndRoles": "Flexibilní oprávnění a role",
   "FlexiblePermissionsAndRolesDesc": "Fine-tune room access with a wide range of flexible permissions: Room admins with managing rights, Power users with extended user rights, Editors with full access to the room files, Reviewers, Commenters and Form fillers with the corresponding rights, Viewers with read-only access. This way, you can assign roles of the invited people by task types and also protect sensitive files such as student personal info, grades, or academic papers.",
   "FlexiblePermissionsAndRolesImgUrl": "/images/templates/office-for-educators/docspace/en/flexible-permissions-and-roles.png",
   "FlexiblePermissionsAndRolesImgUrl2x": "/images/templates/office-for-educators/docspace/en/flexible-permissions-and-roles@2x.png",
@@ -69,7 +69,7 @@
   "FreeCloudImgUrl2x": "/images/templates/office-for-educators/docspace/free-cloud/en/free-cloud-for-schools@2x.png",
   "SubmitRequest": "Odeslat žádost",
 
-  "WhyOOTitle": "<0>Why</0> ONLYOFFICE?",
+  "WhyOOTitle": "<0>Proč</0> ONLYOFFICE?",
   "WhyOODesc": "So many options, so many solutions, each claiming they’re the real deal – we know how it is. But we’re truly the real deal, trust us! Or don’t, because we can show you how perfect ONLYOFFICE and education go together:",
 
   "ItProvidesFreeApps": "It provides free desktop and mobile apps",
@@ -78,7 +78,7 @@
   "ItsAffordable": "It’s affordable",
   "ItsAffordableDesc": "Sometimes, it’s all about the money. Tight budget for schools and institutions can make it difficult to find a suitable solution that works for all the teaching and learning needs. But ONLYOFFICE is extra affordable for schools and universities with the educational discounts provided. And completely free for your students, by the way.",
 
-  "ItsHighlyCustomizable": "It’s highly customizable with our built-in plugin marketplace",
+  "ItsHighlyCustomizable": "Je vysoce přizpůsobitelný díky našemu vestavěnému trhu s pluginy",
   "ItsHighlyCustomizableDesc": "Personalize your ONLYOFFICE experience with <0>numerous plugins</0> that enhance its functionality. Whether it’s boosting your document work with the ChatGPT plugin, simplifying research with bibliography plugins for Mendeley or Zotero, or improving writing and proofreading with LanguageTool & OCR, we’ve got you covered.",
 
   "ItsFullyCompatible": "It’s fully compatible with MS Office files and PDFs (and almost all other office file formats)",
@@ -88,16 +88,16 @@
   "YouWontFindABetterPlaceToCollaborateDesc": "ONLYOFFICE was built with one major goal: to make collaboration seamless, easy, and efficient. And it shows. Countless features you won’t find anywhere allow you to bring your students, your colleagues and yourself together in a new way.",
 
   "GetItNow": "Získat nyní",
-  "TryInTheCloud": "Try in the cloud",
+  "TryInTheCloud": "Vyzkoušet v cloudu",
 
-  "SuccessStoriesTitle": "Success stories that show you how it’s done",
-  "SuccessStoriesText": "We could go on and on about how well ONLYOFFICE and education go together. But we’d rather show you – by demonstrating stories of success by other users.",
+  "SuccessStoriesTitle": "Příběhy úspěchu, které vám ukážou, jak na to",
+  "SuccessStoriesText": "Mohli bychom dlouho vyprávět o tom, jak dobře ONLYOFFICE a vzdělávání k sobě pasují. Raději vám to ale ukážeme na příkladech úspěchů jiných uživatelů.",
 
   "DigitalTransformation": "Digital transformation in higher education: how Jambi University implemented ONLYOFFICE Docs",
   "DigitalTransformationLink": "https://www.onlyoffice.com/blog/2022/11/how-jambi-university-implemented-onlyoffice-docs",
   "DigitalTransformationImgUrl": "/images/templates/office-for-educators/success-stories/transformation.png",
 
-  "HowOOFacilitatesCollaboration": "How ONLYOFFICE facilitates collaboration for schools in Donaueschingen",
+  "HowOOFacilitatesCollaboration": "Jak ONLYOFFICE usnadňuje spolupráci školám v Donaueschingenu",
   "HowOOFacilitatesCollaborationLink": "https://www.onlyoffice.com/blog/2023/10/onlyoffice-in-donaueschingen-schools",
   "HowOOFacilitatesCollaborationImgUrl": "/images/templates/office-for-educators/success-stories/collaboration.png",
 
@@ -115,12 +115,12 @@
   "CanIUseOOForCollaborative": "Can I use ONLYOFFICE for collaborative projects within my class?",
   "CanIUseOOForCollaborativeAnswer": "Absolutely! ONLYOFFICE is designed with collaboration in mind. Features such as real-time co-editing, commenting, and DocSpace collaboration rooms make it easy for you to let your students work together on group assignments and projects. You and your class can edit documents simultaneously, simplifying teamwork.",
 
-  "DoesOOOfferTemplates": "Does ONLYOFFICE offer templates for academic documents?",
+  "DoesOOOfferTemplates": "Nabízí ONLYOFFICE šablony pro akademické dokumenty?",
   "DoesOOOfferTemplatesAnswer": "Yes, we do! Our <0>template library</0> includes a variety of templates tailored for academic use, such as report templates, research paper formats, and presentation layouts. This means you can focus more on the content and less on formatting.",
 
-  "IsOOSecure": "Is ONLYOFFICE secure for storing and sharing sensitive academic information?",
+  "IsOOSecure": "Je ONLYOFFICE bezpečný pro ukládání a sdílení citlivých akademických informací?",
   "IsOOSecureAnswer": "Yes, we <0>prioritize security</0> with robust measures. ONLYOFFICE is open-source and GDPR compliant – which means it fits all the legal criteria for data protection and privacy for educational establishments. ONLYOFFICE includes file encryption and multiple options for secure sharing and access control. Besides, our solutions can be deployed on private servers.",
 
-  "IsOOFree": "Is ONLYOFFICE free?",
+  "IsOOFree": "Je ONLYOFFICE zdarma?",
   "IsOOFreeAnswer": "We provide a free DocSpace Cloud for schools. For ONLYOFFICE Docs, there may be discounted or subsidized plans available through educational institutions or student programs."
 }

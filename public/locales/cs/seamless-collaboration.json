@@ -1,17 +1,17 @@
 {
   "PageTitle": "Collaborate effectively on all kinds of office documents | ONLYOFFICE",
-  "PageDescription": "Share, co-author and communicate in real time to get work done faster",
+  "PageDescription": "Sdílejte, spolupracujte a komunikujte v reálném čase, abyste práci dokončili rychleji",
 
   "Header": "Collaborate <0>effectively</0> on all kinds of office documents",
-  "SubHeader": "Share, co-author and communicate in real time to get work done faster",
+  "SubHeader": "Sdílejte, spolupracujte a komunikujte v reálném čase, abyste práci dokončili rychleji",
   "HeroImgUrl": "/images/templates/seamless-collaboration/hero/en/sc-header.png",
   "HeroImgUrl2x": "/images/templates/seamless-collaboration/hero/en/sc-header@2x.png",
 
   "SwitcherTitle1": "Share",
   "SwitcherTitle2": "Co-edit",
   "SwitcherTitle3": "Comment",
-  "SwitcherTitle4": "Communicate",
-  "SwitcherTitle5": "Track changes",
+  "SwitcherTitle4": "Komunikujte",
+  "SwitcherTitle5": "Sledování změn",
   "SwitcherTitle6": "Compare & Combine",
   "SwitcherTitle7": "Manage version",
 
@@ -20,7 +20,7 @@
   "Feature1ImgUrl": "/images/templates/seamless-collaboration/features/en/share-docs-providing-flexible-permissions.png",
   "Feature1ImgUrl2x": "/images/templates/seamless-collaboration/features/en/share-docs-providing-flexible-permissions@2x.png",
 
-  "Feature2Title": "Co-edit without stress",
+  "Feature2Title": "Společná úprava bez stresu",
   "Feature2Desc": "Co-author documents online in real-time, use the Fast mode to display all changes right after input. Enable the Strict mode to lock the paragraph you edit and work on it privately without interruptions.",
   "Feature2ImgUrl": "/images/templates/seamless-collaboration/features/en/co-edit-without-stress.png",
   "Feature2ImgUrl2x": "/images/templates/seamless-collaboration/features/en/co-edit-without-stress@2x.png",
@@ -30,17 +30,17 @@
   "Feature3ImgUrl": "/images/templates/seamless-collaboration/features/en/comment-mention.png",
   "Feature3ImgUrl2x": "/images/templates/seamless-collaboration/features/en/comment-mention@2x.png",
 
-  "Feature4Title": "Communicate",
+  "Feature4Title": "Komunikujte",
   "Feature4Desc": "Chat with co-authors right in your documents. Enable the Jitsi or Rainbow plugins to make audio calls and organize video meetings.",
   "Feature4ImgUrl": "/images/templates/seamless-collaboration/features/en/communicate.png",
   "Feature4ImgUrl2x": "/images/templates/seamless-collaboration/features/en/communicate@2x.png",
 
-  "Feature5Title": "Track changes",
+  "Feature5Title": "Sledování změn",
   "Feature5Desc": "Enable Track Changes to highlight your contributions and review changes made by other editors. Accept or reject changes one-by-one or all at once. Choose a way to display the changes you made.",
   "Feature5ImgUrl": "/images/templates/seamless-collaboration/features/en/track-changes.png",
   "Feature5ImgUrl2x": "/images/templates/seamless-collaboration/features/en/track-changes@2x.png",
 
-  "Feature6Title": "Compare & combine",
+  "Feature6Title": "Porovnat a kombinovat",
   "Feature6Desc": "Quickly compare and find differences between two documents. Navigate between changes, accept or reject them. Combine two docs together.",
   "Feature6ImgUrl": "/images/templates/seamless-collaboration/features/en/compare-combine.png",
   "Feature6ImgUrl2x": "/images/templates/seamless-collaboration/features/en/compare-combine@2x.png",

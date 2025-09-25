@@ -14,15 +14,15 @@
   "LogIn": "Log in",
   "StartWithYourFREEDocsCloud": "Start your <0>FREE</0> 30-day trial for Docs Cloud",
   "NoCreditCardRequired": "No credit card required",
-  "FullName": "Full name",
-  "NameSurname": "Name Surname",
+  "FullName": "Celé jméno",
+  "NameSurname": "Jméno Příjmení",
   "FullNameIsEmpty": "Pole pro celé jméno je prázdné",
   "FullNameIsIncorrect": "Nesprávný pole pro celé jméno",
   "WorkEMail": "Work e-mail",
   "EmailIsEmpty": "E-mail je prázdný",
   "EmailIsIncorrect": "Nesprávný e-mail",
   "TariffPlan": "Tariff plan",
-  "Business": "Business",
+  "Business": "Podnikání",
   "VIPDedicated": "VIP (Dedicated)",
   "Platform": "Platform",
   "Other": "Other",
@@ -43,7 +43,7 @@
   "TheLinkIsValidFor60Minutes": "The link is valid for 60 minutes. If you didn't receive an email, please check your spam.",
 
   "WrongCaptcha": "Recaptcha je nesprávný",
-  "YourRequestHasBeenSentSuccessfully": "Your request has been sent successfully",
+  "YourRequestHasBeenSentSuccessfully": "Vaše žádost byla úspěšně odeslána.",
   "WeAreSorryButAnErrorOccurred": "Omlouváme se, ale došlo k chybě, zkuste to znovu později",
   "PleaseWait": "Please wait..."
 }

@@ -1,25 +1,25 @@
 {
   "PageTitle": "Online Office for WordPress | ONLYOFFICE",
-  "PageDescription": "Work on office files from your WordPress account",
+  "PageDescription": "Pracujte s kancelářskými soubory ze svého účtu WordPress",
 
   "OnlineOfficeForConnector": "Online Office for WordPress",
-  "Subheader": "Work on office files from your WordPress account",
+  "Subheader": "Pracujte s kancelářskými soubory ze svého účtu WordPress",
   "GetItNow": "Získat nyní",
   "FullyCompatibleWithDocxXlsxAndPptx": "Plně kompatibilní s formáty docx, xlsx a pptx",
   "RequestFreeDemo": "Požádat o bezplatnou demo verzi",
 
   "DocspaceAppTitle": "ONLYOFFICE <0>DocSpace app</0> for WordPress",
   "DocspaceAppHeader": "Embed office documents into your WordPress website",
-  "DocspaceAppTab1Label": "Create, upload and embed docs, sheets, slides, PDFs or to your website.",
+  "DocspaceAppTab1Label": "Vytvářejte, nahrávejte a vkládejte dokumenty, tabulky, prezentace, PDF soubory nebo na svůj web.",
   "DocspaceAppTab1ImgUrl": "/images/templates/office-for-wordpress/docspace-app/screen1.png",
   "DocspaceAppTab1ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/screen1@2x.png",
   "DocspaceAppTab2Label": "Embed the entire room into your webpage allowing visitors to view documents right in the browser.",
   "DocspaceAppTab2ImgUrl": "/images/templates/office-for-wordpress/docspace-app/screen2.png",
   "DocspaceAppTab2ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/screen2@2x.png",
-  "DocspaceAppTab3Label": "Integrate complex PDF forms for filling them in online. Automatically collect and analyze data.",
+  "DocspaceAppTab3Label": "Integrujte složité PDF formuláře pro jejich vyplnění online. Automaticky shromažďujte a analyzujte data.",
   "DocspaceAppTab3ImgUrl": "/images/templates/office-for-wordpress/docspace-app/screen3.png",
   "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/screen3@2x.png",
-  "DocspaceAppTab4Label": "Prevent downloading, printing and copying documents from your website.",
+  "DocspaceAppTab4Label": "Zabraňte stahování, tisku a kopírování dokumentů z vašeho webu.",
   "DocspaceAppTab4ImgUrl": "/images/templates/office-for-wordpress/docspace-app/screen4.png",
   "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/screen4@2x.png",
   "soon": "brzy",
@@ -57,9 +57,9 @@
   "WhyOO": "Proč ONLYOFFICE?",
   "Reason1": "Robustní sada nástrojů pro úpravy, formátování a stylování. <0>Integrovaný AI pomocník</0> (ChatGPT nebo ZhiPu Copilot).",
   "Reason2": "<0>Spolupráce v reálném čase</0> a zamykání odstavců, revize, historie verzí, porovnání dokumentů, komentáře a zmínky.",
-  "Reason3": "<0>Built-in chat</0> and Telegram integration. Jitsi and Rainbow plugins for real-time communication.",
+  "Reason3": "<0>Integrovaný chat</0> a integrace Telegramu. Pluginy Jitsi a Rainbow pro komunikaci v reálném čase.",
   "Reason4": "Podpora více než <0>50 formátů souborů</0>. Plně kompatibilní s formáty MS Office: DOCX, XLSX, PPTX.",
-  "Reason5": "<0>Enhanced security.</0> Flexible access rights and JWT. Activity tracking and audit reporting. Encryption at rest and in transit. Open source code.",
+  "Reason5": "<0>Vylepšené zabezpečení.</0> Flexibilní přístupová práva a JWT. Sledování aktivit a auditní zprávy. Šifrování v klidu i při přenosu. Otevřený zdrojový kód.",
   "Reason6": "<0>Free plan to start</0>. Business plan for more admins, bigger storage, enhanced security and professional support. Self-hosted solution for total control over your data.",
 
   "Docs": "Dokumenty",
@@ -72,16 +72,16 @@
   "HowToStartStep2DocsImgUrl": "/images/templates/office-for-wordpress/how-to-start/step2-dc.svg",
   "HowToStartStep3DocsImgUrl": "/images/templates/office-for-wordpress/how-to-start/step3-dc.svg",
 
-  "HowToStartStep1Docspace": "Create your free <0>DocSpace account</0>.",
+  "HowToStartStep1Docspace": "Vytvořte si bezplatný účet <0>DocSpace</0>.",
   "HowToStartStep2Docspace": "Get the integration app from <0>WordPress Plugin Directory</0>.",
   "HowToStartStep1DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/step1-ds.svg",
   "HowToStartStep2DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/step2-ds.svg",
   "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/step3-ds.svg",
 
-  "HowToStartStep3": "Upload and configure the integration app.",
+  "HowToStartStep3": "Nahrajte a nakonfigurujte integrační aplikaci.",
 
   "ReadDetailedInstructionsDocSpace": "Podrobné pokyny najdete v <0>centru nápovědy</0>.",
-  "ReadDetailedInstructionsDocs": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",
+  "ReadDetailedInstructionsDocs": "Přečtěte si podrobné pokyny na <0>GitHubu</0> a v <1>Centru nápovědy</1>.",
   "ReadDetailedInstructionsDocsLink": "https://helpcenter.onlyoffice.com/integration/wordpress.aspx",
 
   "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"

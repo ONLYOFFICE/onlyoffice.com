@@ -40,7 +40,7 @@
   "CreateFile": "Create File",
   "CreateFolder": "Create Folder",
   "CreateRoom": "Create Room",
-  "Delete": "Delete",
+  "Delete": "Smazat",
   "DeleteFolderFromMyDocuments": "Delete Folder from My Documents",
   "DeleteFolder": "Delete Folder",
   "Share": "Share",
@@ -58,7 +58,7 @@
   "MarketplaceConnectorDescription": "Find your favorite app in Zapier’s marketplace and connect it with ONLYOFFICE DocSpace. No more switching between apps.",
 
   "HowToStart": "How to get started",
-  "HowToStartStep1": "Create your free <0>DocSpace account</0>.",
+  "HowToStartStep1": "Vytvořte si bezplatný účet <0>DocSpace</0>.",
   "HowToStartStep2": "Sign up for a <0>Zapier</0> account or log in.",
   "HowToStartStep3": "Go to the <0>Apps -> My apps</0> section.",
   "HowToStartStep4": "Click the <0>+ Add connection</0> button, find and sign in to your ONLYOFFICE DocSpace.",

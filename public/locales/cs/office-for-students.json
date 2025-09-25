@@ -3,12 +3,12 @@
   "PageDescription": "Supercharge your education with a free office suite. ONLYOFFICE offers you the right tool for every device.",
 
   "OfficeForStudents": "ONLYOFFICE for <0>students</0>",
-  "SuperchargeYourEducation": "Supercharge your education with a free office suite. Whether you’re working from the classroom, the library, the university cafè or the comfort of your own home – ONLYOFFICE offers you the right tool for every device.",
+  "SuperchargeYourEducation": "Vylepšete své vzdělání s bezplatnou kancelářskou sadou. Ať už pracujete ve třídě, knihovně, univerzitní kavárně nebo v pohodlí svého domova – ONLYOFFICE vám nabízí správný nástroj pro každé zařízení.",
 
   "OODesktopEditorsTitle": "<span>ONLYOFFICE Desktop Editors:</span> <br> Your free alternative to Word, Excel, PowerPoint + PDF Editor",
   "OODesktopEditorsText": "Work on your files just as you know it and just as you need it, in a straightforward yet flexible and easy-to-use solution. If you’ve ever used an office suite before, you’ll feel right at home with ONLYOFFICE Desktop Editors.",
 
-  "SmoothAndIntuitiveOfficeExperience": "Smooth & intuitive office experience",
+  "SmoothAndIntuitiveOfficeExperience": "Plynulá a intuitivní práce s kancelářskými aplikacemi",
   "SmoothAndIntuitiveOfficeExperienceDesc": "Your assignments might be complicated – your office suite should not. ONLYOFFICE Desktop Editors offers you an intuitive user experience with one interface for <0>text documents</0>, <1>spreadsheets</1>, <2>presentations</2>, and <3>PDF files</3>.",
   "SmoothAndIntuitiveOfficeExperienceUrl": "/images/templates/office-for-students/desktop-editors/en/smooth-intuitive-office-experience.png",
   "SmoothAndIntuitiveOfficeExperienceUrl2x": "/images/templates/office-for-students/desktop-editors/en/smooth-intuitive-office-experience@2x.png",
@@ -28,7 +28,7 @@
   "BothOfflineAndOnlineUrl": "/images/templates/office-for-students/desktop-editors/en/both-offline-and-online.png",
   "BothOfflineAndOnlineUrl2x": "/images/templates/office-for-students/desktop-editors/en/both-offline-and-online@2x.png",
 
-  "DigitalLibraryAtHand": "Digital library at hand",
+  "DigitalLibraryAtHand": "Digitální knihovna po ruce",
   "DigitalLibraryAtHandDesc": "Sure, research for your assignments looks way cooler with a dozen of books spread around your desk – but it’s also wildly impractical. With ONLYOFFICE Desktop Editors, you are able to read EPUB, FB2 and PDFs, and search through all the <0>digital e-books</0> directly within your office solution.",
   "DigitalLibraryAtHandUrl": "/images/templates/office-for-students/desktop-editors/en/digital-library-at-hand.png",
   "DigitalLibraryAtHandUrl2x": "/images/templates/office-for-students/desktop-editors/en/digital-library-at-hand@2x.png",
@@ -55,7 +55,7 @@
 
   "CreateFreeAccount": "Vytvořit bezplatný účet",
 
-  "WhyOOTitle": "<0>Why</0> ONLYOFFICE?",
+  "WhyOOTitle": "<0>Proč</0> ONLYOFFICE?",
   "WhyOODesc": "We get it – there are tons of office solutions out there. Why should you start using ONLYOFFICE and not another software? Because ONLYOFFICE and students – that’s just a perfect match. For various reasons, only few of which we’d love to tell you about: ",
 
   "ItSFree": "It’s free",
@@ -64,19 +64,19 @@
   "ItSCompatible": "It’s compatible with MS Office files (and almost all other office file formats)",
   "ItSCompatibleDesc": "Don’t worry about your co-eds or your professors using other office solutions and only seeing incomprehensible word salad once they open your files. ONLYOFFICE is completely compatible with MS Office files (e.g. DOCX, XLSX, PPTX etc.) and most other file formats, really.",
 
-  "ItSHighlyCustomizable": "It’s highly customizable with our built-in plugin marketplace",
+  "ItSHighlyCustomizable": "Je vysoce přizpůsobitelný díky našemu vestavěnému trhu s pluginy",
   "ItSHighlyCustomizableDesc": "Make your ONLYOFFICE setup entirely your own with <0>tons of plugins</0> that extend the functionality – whether it’s supercharging your document work by using our official ChatGPT plugin directly in the editors, making research easier a ton with bibliography plugins for Mendeley or Zotero or speeding up writing & proofreading with LanguageTool & OCR.",
 
   "ItSBuilt": "It’s built with collaboration in mind",
   "ItSBuiltDesc": "We simply love working in teams. And we assume you do, too. That’s why ONLYOFFICE offers tons of features that make collaborating with others as simple and seamless as possible.",
 
   "GetItNow": "Získat nyní",
-  "TryInTheCloud": "Try in the cloud",
+  "TryInTheCloud": "Vyzkoušet v cloudu",
 
-  "SuccessStoriesHeading": "Success stories that show you how it’s done",
-  "SuccessStoriesDesc": "We could go on and on about how well ONLYOFFICE and education go together. But we’d rather show you – by demonstrating stories of success by other users.",
+  "SuccessStoriesHeading": "Příběhy úspěchu, které vám ukážou, jak na to",
+  "SuccessStoriesDesc": "Mohli bychom dlouho vyprávět o tom, jak dobře ONLYOFFICE a vzdělávání k sobě pasují. Raději vám to ale ukážeme na příkladech úspěchů jiných uživatelů.",
 
-  "Blog1": "How ONLYOFFICE facilitates collaboration for schools in Donaueschingen",
+  "Blog1": "Jak ONLYOFFICE usnadňuje spolupráci školám v Donaueschingenu",
   "Blog1Link": "https://www.onlyoffice.com/blog/2023/10/onlyoffice-in-donaueschingen-schools",
   "Blog1ImgUrl": "/images/templates/office-for-students/success-stories/blog1.jpg",
 
@@ -84,7 +84,7 @@
   "Blog2Link": "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
   "Blog2ImgUrl": "/images/templates/office-for-students/success-stories/blog2.jpg",
 
-  "Blog3": "How Nanjing University integrated ONLYOFFICE Docs to improve faculty and student collaboration",
+  "Blog3": "Jak Nanjing University integrovala ONLYOFFICE Docs, aby zlepšila spolupráci mezi pedagogy a studenty",
   "Blog3Link": "https://www.onlyoffice.com/blog/2022/12/nanjing-university-integrated-onlyoffice-docs-to-improve-faculty-and-student-collaboration",
   "Blog3ImgUrl": "/images/templates/office-for-students/success-stories/blog3.jpg",
 
@@ -92,11 +92,11 @@
   "HowCanOOHelpAnswer": "We provide you with versatile tools for creating and editing documents, spreadsheets, presentations, and PDFs - all of which are invaluable for your assignments. More importantly, our collaboration features allow you to work together with your co-eds in real-time, which greatly speeds up your group projects and peer reviews.",
   "CanIUseOOForGroup": "Can I use ONLYOFFICE for group assignments with my classmates?",
   "CanIUseOOForGroupAnswer": "Yes, absolutely! Our solution has been built with collaboration in mind. Features like real-time co-editing, commenting, built-in chat, version history, etc. really facilitate your group projects. Each of you can collaborate on documents simultaneously, making it easy to work together on group assignments or projects.",
-  "DoesOOOfferTemplatesForAcademicDocuments": "Does ONLYOFFICE offer templates for academic documents?",
+  "DoesOOOfferTemplatesForAcademicDocuments": "Nabízí ONLYOFFICE šablony pro akademické dokumenty?",
   "DoesOOOfferTemplatesForAcademicDocumentsAnswer": "As a matter of fact, we do! Our <0>template library</0> includes tons of templates specifically designed for academic purposes, including report templates, research paper formats, presentation layouts, and more. For you that means: less effort needed for the basics, more time for what counts.",
-  "IsOOSecure": "Is ONLYOFFICE secure for storing and sharing sensitive academic information?",
+  "IsOOSecure": "Je ONLYOFFICE bezpečný pro ukládání a sdílení citlivých akademických informací?",
   "IsOOSecureAnswer": "We pride ourselves in being one of the most secure office solutions out there. <0>We take security seriously</0>, starting with encryption for files stored on the platform and numerous options for secure sharing and access control. Additionally, our solutions can always be deployed on private servers for enhanced data security.",
-  "IsOOFree": "Is ONLYOFFICE free?",
+  "IsOOFree": "Je ONLYOFFICE zdarma?",
   "IsOOFreeAnswer": "Yes, ONLYOFFICE Desktop Editors is an absolutely free app. ONLYOFFICE DocSpace offers a free plan, perfectly suitable to students' needs.",
   "AreThereAnyIntegrations": "Are there any integrations with other platforms?",
   "AreThereAnyIntegrationsAnswer": "Yes, along with the option to connect the desktop app to the cloud of your choice, it's possible to integrate the online editors – <0>ONLYOFFICE Docs</0> – with the eLearning or DMS service used in your educational establishment. This way, you will be able to work with office files directly within the course structure. Among popular ready-to-use <1>integrations</1> are <2>Moodle</2>, Chamilo, ownCloud, Nextcloud, HumHub, etc.",

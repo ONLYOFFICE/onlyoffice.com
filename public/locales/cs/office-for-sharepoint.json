@@ -35,7 +35,7 @@
 
   "HowToStart": "Jak začít",
   "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo si vytvořte účet <1>Docs Cloud</1>.",
-  "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>GitHub</0>.",
+  "HowToStartStep2": "Získejte konektor ONLYOFFICE z <0>GitHubu</0>.",
   "HowToStartStep3": "Nakonfigurujte konektor a povolte JWT.",
 
   "ReadDetailedInstructions": "Podrobné pokyny najdete v <0>centru nápovědy</0>.",
@@ -45,13 +45,13 @@
   "Video": "Video",
   "VideoDesc": "How to integrate ONLYOFFICE Docs with SharePoint.",
   "VideoLink": "Sledovat nyní",
-  "Compare": "Compare",
+  "Compare": "Porovnat",
   "CompareDesc": "Why ONLYOFFICE Docs is the best MS Office alternative.",
   "CompareLink": "Další informace",
   "HelpCenter": "Centrum nápovědy",
   "HelpCenterDesc": "How to connect ONLYOFFICE Docs with SharePoint over WOPI.",
   "HelpCenterLinkUrl": "https://helpcenter.onlyoffice.com/integration/sharepoint.aspx#WOPI_block",
-  "HelpCenterLink": "Read now",
+  "HelpCenterLink": "Přečíst nyní",
 
   "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
 }

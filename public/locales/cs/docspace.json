@@ -12,7 +12,7 @@
 
   "CollaborateTitle": "<0>Zvolte</0> si způsob spolupráce",
   "CollaborateDescription": "Prostor DocSpace nabízí flexibilní přístupová oprávnění. Vytvářejte místnosti, zvěte lidi, spolupracujte a komunikujte, abyste mohli pracovat.",
-  "CollaborateButton": "Start for free",
+  "CollaborateButton": "Začít zdarma",
   "SliderTitle1": "Místnosti pro spolupráci",
   "SliderDescription1": "Spoluautorství dokumentů s jedním ze dvou režimů spoluautorství: v reálném čase nebo se zamykáním odstavců. Sledujte změny, komunikujte v reálném čase pomocí integrovaného chatu nebo uskutečňujte audio a video hovory.",
   "SliderTitle2": "Meeting rooms",
@@ -27,13 +27,13 @@
   "SliderDescription6": "Use VDR for advanced file security and transparency, secure storing and sharing of confidential business information, for example, while due diligence. Automatically index and track all content to keep great records and stay organized. Enable watermarks, set file lifetime, restrict downloading and copying. Organize role-based form filling.",
   "SliderTitle7": "Soukromé pokoje",
   "SliderDescription7": "Pro citlivé nebo důvěrné dokumenty můžete využít soukromé místnosti, v nichž je každý zadaný symbol šifrován end-to-end šifrováním.",
-  "comingSoon": "Coming soon",
+  "comingSoon": "Brzy",
   "soon": "brzy",
 
   "ContentHeading": "Pracujte s <0>jakýmkoli</0> obsahem",
   "ContentSubHeading": "V místnostech můžete ukládat soubory různých formátů. Prohlížejte, upravujte a spolupracujte.",
   "ContentSubHeading2": "Nejvyšší kompatibilita s MS Office",
-  "ContentButton": "Start for free",
+  "ContentButton": "Začít zdarma",
   "TextDocuments": "Textové dokumenty",
   "Spreadsheets": "Tabulky",
   "Presentations": "Prezentace",
@@ -80,7 +80,7 @@
   "NonProfitDesc": "Vytvořte bezplatný cloudový prostor pro dokumenty pro svou školu nebo neziskovou organizaci, získejte 2 GB úložného prostoru a až 20 účtů správce.",
   "NonProfitLinkLabel": "Odeslat žádost",
 
-  "LearnMoreHeading": "Learn more about ONLYOFFICE DocSpace",
+  "LearnMoreHeading": "Další informace o ONLYOFFICE DocSpace",
 
   "YoutubeCardText": "Osvojte si ONLYOFFICE DocSpace pomocí videonávodů",
   "BlogCardText": "Integrate ONLYOFFICE DocSpace into a Single Page Application",

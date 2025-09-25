@@ -19,14 +19,14 @@
   "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for Strapi now from the <0>Strapi Market</0> or <1>npm directory</1>.",
 
   "WhyOO": "Proč ONLYOFFICE Docs",
-  "WhySubheader": "ONLYOFFICE Docs is a self-hosted office suite for working on text documents, spreadsheets, presentations, and forms.",
-  "Reason1": "<0>Ready-to-use</0> integration plugin",
+  "WhySubheader": "ONLYOFFICE Docs je samostatně hostovaná kancelářská sada pro práci s textovými dokumenty, tabulkami, prezentacemi a formuláři.",
+  "Reason1": "<0>Integrační</0> plugin připravený k použití",
   "Reason2": "Easy installation from <0>Strapi Market</0> & quick configuration",
   "Reason3": "<0>Intuitive interface</0> with tabs",
   "Reason4": "<0>Více</0> nástrojů pro úpravy, formátování a stylování",
   "Reason5": "<0>Spolupráce v reálném čase</0>, sledování změn, komentáře, chat",
   "Reason6": "<0>Free Community</0> and <0>scalable Enterprise</0> versions",
-  "Reason7": "<0>JWT protection</0> from unauthorized access",
+  "Reason7": "<0>JWT ochrana</0> před neoprávněným přístupem",
   "Reason8": "<0>Otevřený zdrojový kód</0> dostupný na GitHubu",
 
   "HowToStart": "Jak začít",
