@@ -89,10 +89,14 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
   const isGetIsQuote = [
     formData.hosting === "Cloud",
     formData.connectionsNumber === "more",
-    formData.disasterRecovery,
     formData.trainingCourses,
     formData.multiTenancy,
   ].some(Boolean);
+
+  const isOrderNow =
+    formData.disasterRecovery &&
+    !formData.trainingCourses &&
+    !formData.multiTenancy;
 
   const product = getProduct(formData, productsData);
 
@@ -445,7 +449,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
             </LabeledWrapper>
 
             <StyledHeroTotal>
-              {!isGetIsQuote && (
+              {!isGetIsQuote && !isOrderNow && (
                 <StyledHeroTotalWrapper>
                   <Heading level={4} color="#444444" label={t("Total")} />
                   <StyledHeroTotalPrice>
@@ -462,6 +466,13 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
                     data-testid="get-a-quote-button"
                     fullWidth
                     label={t("GetAQuote")}
+                  />
+                ) : isOrderNow ? (
+                  <Button
+                    onClick={() => setIsModalOpen(true)}
+                    data-testid="get-a-quote-button"
+                    fullWidth
+                    label={t("OrderNow")}
                   />
                 ) : (
                   <Button
@@ -480,7 +491,11 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
           <QuoteModal
             locale={locale}
             isOpen={isModalOpen}
-            heading={t("FillInTheFormToGetAQuote")}
+            heading={
+              isOrderNow
+                ? t("FillInTheFormToReceive")
+                : t("FillInTheFormToGetAQuote")
+            }
             byClickedText={
               <Trans
                 t={t}
@@ -510,10 +525,10 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
             setFormData={setFormData}
             quoteFormData={quoteFormData}
             setQuoteFormData={setQuoteFormData}
-            buttonLabel={t("GetAQuote")}
+            buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
             onSubmitRequest={onSubmitRequest}
             onClose={() => setIsModalOpen(false)}
-            pageTrackName="ie-gaq"
+            pageTrackName={isOrderNow ? "ie-order-now" : "ie-gaq"}
           />
         </StyledHeroWrapper>
 
