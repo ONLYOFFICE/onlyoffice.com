@@ -200,10 +200,12 @@ export default async function handler(
       }
 
       try {
+        const cookies = parse(req.headers.cookie || "");
+
         const transporter = emailTransporter();
         await transporter.sendMail({
           to: [process.env.SUPPORT_EMAIL!],
-          subject: `${email} - SupportContactForm${errorMessages.length ? " [Error]" : ""}`,
+          subject: `${errorMessages.length ? " [Error]" : ""}${name} - Support Request ${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}[from: ${fromPage}]`,
           html: SupportContactFormEmail({
             firstName: name,
             email,
@@ -221,7 +223,7 @@ export default async function handler(
         throw { error: mailErr, source: "sendMail" };
       }
 
-      return res.status(200).json({ status: "success", folder: requestId });
+      return res.status(200).json({ status: "success", folder: requestId, attachments: attachments });
     } catch (err) {
       // Generic with source specified
       const typedErr = err as ISupportFormError;
