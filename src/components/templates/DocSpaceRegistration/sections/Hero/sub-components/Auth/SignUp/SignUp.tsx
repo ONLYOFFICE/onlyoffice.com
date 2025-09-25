@@ -134,6 +134,7 @@ const SignUp = ({
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
+        locale: router.locale,
         desktop: desktopQuery || "",
         email: formData.email,
         spam: formData.spam ? "true" : "false",
@@ -147,7 +148,7 @@ const SignUp = ({
 
     const data = await res.json();
 
-    if (data.status === "errorHCaptchaInvalid") {
+    if (data.status === "hCaptchaInvalid") {
       setIsFormValid(false);
     } else if (data.status === "success") {
       setEmail(formData.email);

@@ -1,0 +1,22 @@
+{
+  "CollaborationRooms": "Salas de colaboración",
+  "PublicRooms": "Salas públicas",
+  "CustomRooms": "Salas personalizadas",
+  "FormFillingRooms": "Salas para rellenar formularios",
+  "ZoomMeetingRooms": "Salas de reuniones Zoom",
+  "VirtualDataRooms": "Salas de datos virtuales",
+  "ExploreOtherEditors": "Explorar otros editores",
+  "DocumentEditor": "Editor de documentos",
+  "SpreadsheetEditor": "Editor de hojas de cálculo",
+  "PresentationEditor": "Editor de presentaciones",
+  "FormCreator": "Creador de formularios",
+  "PDFEditor": "Editor de PDF",
+  "EBookCreator": "Creador de libros electrónicos",
+  "DiagramViewer": "Visor de diagramas",
+  "DocumentManagement": "Gestión de documentos",
+  "Mail": "Correo",
+  "Crm": "CRM",
+  "Projects": "Proyectos",
+  "Calendar": "Calendario",
+  "Community": "Comunidad"
+}

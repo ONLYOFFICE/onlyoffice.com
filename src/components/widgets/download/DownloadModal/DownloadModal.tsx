@@ -149,7 +149,7 @@ const DownloadModal = ({
         hCaptchaResponse: token || null,
       });
 
-      if (onSubmitRequestData.status === "errorHCaptchaInvalid") {
+      if (onSubmitRequestData.status === "hCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");

@@ -148,7 +148,7 @@ const QuoteModal = <T,>({
         hCaptchaResponse: quoteFormData.hCaptcha,
       });
 
-      if (onSubmitRequestData.status === "errorHCaptchaInvalid") {
+      if (onSubmitRequestData.status === "hCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");
@@ -174,7 +174,6 @@ const QuoteModal = <T,>({
   const onCloseModal = () => {
     onClose();
     setQuoteFormData((prev) => ({ ...prev, hCaptcha: null }));
-    hCaptchaRef.current?.resetCaptcha();
     setIsFormValid(false);
   };
 

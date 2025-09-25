@@ -177,7 +177,7 @@ const Hero = () => {
 
       const dataCallBack = await responseCallBack.json();
 
-      if (dataCallBack.status === "errorHCaptchaInvalid") {
+      if (dataCallBack.status === "hCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");

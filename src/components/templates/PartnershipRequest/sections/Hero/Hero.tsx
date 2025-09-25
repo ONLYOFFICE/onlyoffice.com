@@ -99,7 +99,6 @@ const Hero = ({ locale }: IHero) => {
   };
 
   const onSubmitRequest = async ({
-    from,
     hCaptchaResponse,
   }: IDownloadModalOnSubmitRequest) => {
     return fetch("/api/partnership-request", {
@@ -125,9 +124,9 @@ const Hero = ({ locale }: IHero) => {
         salesTraining: getYesOrNo(formData.salesTraining),
         infoSource: getSelectedNames(partnerInfoSource),
         comment: formData.comment,
-        from,
         spam: formData.spam,
         partnerReqType,
+        locale: router.locale,
         hCaptchaResponse: hCaptchaResponse || null,
       }),
     }).then((res) => res.json());

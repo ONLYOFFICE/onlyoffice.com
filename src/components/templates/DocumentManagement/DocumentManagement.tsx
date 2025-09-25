@@ -6,7 +6,7 @@ import { Productive } from "./sections/Productive";
 import { Protect } from "./sections/Protect";
 import { Seamlessly } from "./sections/Seamlessly";
 import { StayOrganized } from "./sections/StayOrganized";
-import { CollaborationsTabs } from "@src/components/modules/collaborations/CollaborationsTabs";
+import { OtherPagesSelector } from "@src/components/modules/OtherPagesSelector";
 
 const DocumentManagementTemplate = ({ locale }: ILocale) => {
   return (
@@ -18,7 +18,7 @@ const DocumentManagementTemplate = ({ locale }: ILocale) => {
       <Protect />
       <Productive locale={locale} />
       <FreeApps />
-      <CollaborationsTabs />
+      <OtherPagesSelector page={"collaboration"} />
     </>
   );
 };

@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { logError } from "@src/lib/helpers/logger";
 import { db } from "@src/config/db/site";
 import { RowDataPacket } from "mysql2";
 import { getConversionRate } from "@src/lib/requests/getConverionRate";
@@ -26,11 +27,14 @@ export default async function handler(
     const { ratingValue, converterPageName } = req.body;
 
     if (
+      !ratingValue ||
       typeof ratingValue !== "number" ||
       !converterPageName ||
       typeof converterPageName !== "string"
     ) {
-      return res.status(400).json({ error: "Invalid input data" });
+      return res
+        .status(400)
+        .json({ status: "error", message: "Invalid request parameters" });
     }
 
     const userIP =
@@ -77,14 +81,16 @@ export default async function handler(
       });
     }
 
-    res.status(200).json({
+    return res.status(200).json({
       status: "success",
-      message: "rateAppRequestSuccessful",
       numberOfVotes: ratingStats.numberOfVotes,
       averageRating: ratingStats.averageRating,
     });
   } catch (error) {
-    console.error("Error saving rating:", error);
-    res.status(500).json({ status: "error", message: "Internal Server Error" });
+    logError((req.url || "").split("?")[0], "API", error);
+    return res.status(500).json({
+      status: "error",
+      message: "Internal Server Error",
+    });
   }
 }

@@ -12,7 +12,11 @@ import {
 } from "./Hero.styled";
 import { IDocSpaceDeveloperPricesFormData } from "./Hero.types";
 import { ILocale } from "@src/types/locale";
-import { loadRewardful, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
+import {
+  loadRewardful,
+  getClientReferenceId,
+  getAffiliateToken,
+} from "@src/utils/rewardful";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
@@ -78,7 +82,6 @@ const Hero = ({ locale }: ILocale) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         locale,
-        referer: document.referrer,
         fullName: quoteFormData.fullName,
         email: quoteFormData.email,
         phone:

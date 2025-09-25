@@ -146,7 +146,7 @@ const ConvertFile = ({
 
       const data = await res.json();
 
-      if (data.status === "errorHCaptchaInvalid") {
+      if (data.status === "hCaptchaInvalid") {
         setCaptchaError(true);
         return;
       }

@@ -1,11 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { logError } from "@src/lib/helpers/logger";
 import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
-import { resetPassword } from "@src/lib/requests/thirdparty/resetPassword";
+import { resetPassword, sendEmail } from "@src/lib/requests/thirdparty";
 import { validateEmail } from "@src/utils/validators";
-import { sendEmail } from "@src/lib/requests/thirdparty/send";
-import { PasswordReminder } from "@src/components/emails/PasswordReminder";
-import { getLanguage } from "@src/lib/helpers/getLanguage";
-import { getServerI18n } from "@src/lib/helpers/getServerI18n";
+import { PasswordReminderEmail } from "@src/components/emails/PasswordReminderEmail";
+import { getT } from "@src/lib/helpers/i18next";
 
 export default async function handler(
   req: NextApiRequest,
@@ -18,7 +17,7 @@ export default async function handler(
   if (!(await checkRateLimit(req, res))) return;
 
   try {
-    const { email } = req.body;
+    const { email, locale } = req.body;
 
     if (typeof email !== "string" || !validateEmail(email)) {
       return res.status(400).json({
@@ -27,37 +26,36 @@ export default async function handler(
       });
     }
 
-    const language = getLanguage(req);
-    const i18n = await getServerI18n(language, ["docspace-registration"]);
+    const t = await getT(locale, "PasswordReminderEmail");
+
     const restorePasswordData = await resetPassword({ email });
 
-    if (restorePasswordData.status !== "success") {
-      return res.status(504).json({
-        status: "error",
-        message: restorePasswordData.message || "Failed to reset password",
-      });
+    if (restorePasswordData.status !== 200) {
+      return res
+        .status(restorePasswordData.status)
+        .json({ status: "error", message: restorePasswordData.message });
     }
 
     const sendEmailData = await sendEmail({
       email,
-      subject: i18n.t("OOPasswordReminder"),
-      body: await PasswordReminder({
+      Subject: t("OOPasswordReminder"),
+      Body: await PasswordReminderEmail({
         portals: restorePasswordData.data,
-        language: language,
+        language: locale,
       }),
     });
 
-    if (sendEmailData.status !== "success") {
-      return res.status(504).json({
-        status: "error",
-        message:
-          sendEmailData.message || "Failed to send password reminder email",
-      });
+    if (sendEmailData.status !== 200) {
+      return res
+        .status(sendEmailData.status)
+        .json({ status: "error", message: sendEmailData.message });
     }
 
     return res.status(200).json({ status: "success" });
-  } catch (err) {
-    console.error("restorepassword error:", err);
-    res.status(500).json({ status: "error", message: "Internal Server Error" });
+  } catch (error) {
+    logError((req.url || "").split("?")[0], "API", error);
+    return res
+      .status(500)
+      .json({ status: "error", message: "Internal Server Error" });
   }
 }

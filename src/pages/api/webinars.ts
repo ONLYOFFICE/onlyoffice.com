@@ -1,12 +1,16 @@
+import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
+import { validateEmail } from "@src/utils/validators";
+import { logError } from "@src/lib/helpers/logger";
+import { getClientIp } from "@src/lib/helpers/getClientIp";
 import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { emailTransporter } from "@src/config/email/transporter";
 import { NextApiRequest, NextApiResponse } from "next";
-import { parse } from "cookie";
 import { WebinarsForUsEmail } from "@src/components/emails/WebinarsForUsEmail";
 import { WebinarsForUserEmail } from "@src/components/emails/WebinarsForUserEmail";
-import { generateKey } from "@src/lib/requests/thirdparty/generate";
+import { generateKey } from "@src/lib/requests/thirdparty";
+import { getT } from "@src/lib/helpers/i18next";
 
 interface IWebinarsData {
   full_name: string;
@@ -24,6 +28,8 @@ export default async function handler(
     return res.status(405).json({ message: "Method Not Allowed" });
   }
 
+  if (!(await checkRateLimit(req, res))) return;
+
   const {
     fullName,
     email,
@@ -33,108 +39,128 @@ export default async function handler(
     questions,
     webinarLang,
     from,
-    emailSubject,
     hCaptchaResponse,
     locale,
   } = req.body;
 
   try {
-    const ip =
-      (Array.isArray(req.headers["x-forwarded-for"])
-        ? req.headers["x-forwarded-for"][0]
-        : req.headers["x-forwarded-for"]
-      )?.split(",")[0] ||
-      req.socket.remoteAddress ||
-      null;
+    if (
+      !fullName ||
+      typeof fullName !== "string" ||
+      typeof email !== "string" ||
+      !validateEmail(email) ||
+      !companyName ||
+      typeof companyName !== "string" ||
+      !webinarTheme ||
+      typeof webinarTheme !== "string" ||
+      !webinarDate ||
+      typeof webinarDate !== "string" ||
+      typeof questions !== "string" ||
+      !webinarLang ||
+      typeof webinarLang !== "string" ||
+      typeof from !== "string" ||
+      !locale ||
+      typeof locale !== "string" ||
+      (!isTestEmail(email) &&
+        (!hCaptchaResponse || typeof hCaptchaResponse !== "string"))
+    ) {
+      return res
+        .status(400)
+        .json({ status: "error", message: "Invalid request parameters" });
+    }
+
+    const ip = getClientIp(req);
 
     if (!isTestEmail(email)) {
       const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
       if (!hCaptchaResult.success) {
         return res.status(400).json({
-          status: "errorHCaptchaInvalid",
-          error: hCaptchaResult.error,
+          status: "hCaptchaInvalid",
         });
       }
     }
 
-    const errorMessages = [];
-    const cookies = parse(req.headers.cookie || "");
+    const t = await getT(locale, "WebinarsForUserEmail");
+    const past = new Date(webinarDate).getTime() < Date.now();
 
-    const addWebinarsRequest = async () => {
-      try {
-        const addWebinarsRequestData: IWebinarsData = {
-          full_name: fullName,
-          email,
-          company_name: companyName,
-          webinar_theme: webinarTheme,
-          webinar_lang: webinarLang,
-        };
+    try {
+      const addWebinarsRequestData: IWebinarsData = {
+        full_name: fullName,
+        email,
+        company_name: companyName,
+        webinar_theme: webinarTheme,
+        webinar_lang: webinarLang,
+      };
 
-        await db.teamlabsite.query("INSERT INTO webinar_request SET ?", [
-          addWebinarsRequestData,
-        ]);
-
-        return {
-          status: "success",
-          message: "webinarsRequestSuccessful",
-        };
-      } catch (error: unknown) {
-        console.error(
-          "Insert Webinars api returns errors:",
-          error instanceof Error ? error.message : error,
-        );
-
-        return {
-          status: "error",
-          message:
-            error instanceof Error ? error.message : "Unknown error occurred",
-        };
-      }
-    };
-
-    const addWebinarsRequestResult = await addWebinarsRequest();
-    if (addWebinarsRequestResult.status === "error") {
-      errorMessages.push(
-        `webinarsrequest: ${addWebinarsRequestResult.message}`,
-      );
+      await db.teamlabsite.query("INSERT INTO webinar_request SET ?", [
+        addWebinarsRequestData,
+      ]);
+    } catch (error) {
+      logError((req.url || "").split("?")[0], "DB", error);
+      return res.status(500).json({
+        status: "error",
+        message: "Internal Server Error",
+      });
     }
 
     const transporter = emailTransporter();
-    await transporter.sendMail({
-      to: [process.env.WEBINARS_EMAIL!],
-      subject: `${errorMessages.length ? "[Error] " : ""}${companyName} - Webinars For Us Request (${webinarTheme}) ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
-      html: WebinarsForUsEmail({
-        fullName,
+
+    try {
+      await transporter.sendMail({
+        to: [process.env.WEBINARS_EMAIL!],
+        subject: `Webinar subscription${past ? " past" : ""}`,
+        html: WebinarsForUsEmail({
+          fullName,
+          email,
+          companyName,
+          webinarTheme,
+          webinarDate,
+          webinarLang,
+          questions: questions.replace(/\n/g, "<br/>"),
+        }),
+      });
+    } catch (error) {
+      logError((req.url || "").split("?")[0], "Email transporter", error);
+    }
+
+    if (past === false) {
+      const generateKeyData = await generateKey({
         email,
-        companyName,
-        webinarTheme,
-        webinarDate,
-        webinarLang,
-        questions,
-      }),
-    });
+      });
 
-    const { data: generateKeyData } = await generateKey({ email });
-    const baseUrl = `${req.headers.origin}${locale === "en" ? "" : `/${locale}`}`;
-    const emailKey = `${generateKeyData.emailKey}1`;
+      if (generateKeyData.status !== 200) {
+        return res
+          .status(generateKeyData.status)
+          .json({ status: "error", message: generateKeyData.message });
+      }
 
-    await transporter.sendMail({
-      from,
-      to: email,
-      subject: emailSubject,
-      html: WebinarsForUserEmail({
-        webinarTheme,
-        webinarDate,
-        language: locale,
-        baseUrl,
-        unsubscribeId: emailKey,
-      }),
-    });
+      const baseUrl = `${process.env.BASE_URL}${locale === "en" ? "" : `/${locale}`}`;
+      const emailKey = `${generateKeyData.data.emailKey}1`;
 
-    res.status(200).json({ status: "success", message: "success" });
+      try {
+        await transporter.sendMail({
+          to: email,
+          subject: t("WebinarSubject"),
+          html: await WebinarsForUserEmail({
+            webinarTheme,
+            webinarDate,
+            language: locale,
+            baseUrl,
+            unsubscribeId: emailKey,
+          }),
+        });
+      } catch (error) {
+        logError((req.url || "").split("?")[0], "Email transporter", error);
+      }
+    }
+
+    return res.status(200).json({ status: "success" });
   } catch (error) {
-    console.error("Webinars api returns errors:", error);
-    res.status(500).json({ status: "error", message: error });
+    logError((req.url || "").split("?")[0], "API", error);
+    return res.status(500).json({
+      status: "error",
+      message: "Internal Server Error",
+    });
   }
 }

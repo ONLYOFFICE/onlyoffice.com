@@ -1,5 +1,5 @@
 {
-  "RunOnYourOwnServer": "EXÉCUTER SUR VOTRE PROPRE SERVEUR",
+  "RunOnYourOwnServer": "Exécuter sur votre propre serveur",
   "SeeItInAction": "Regarder en action",
   "GetItNow": "Obtenir maintenant",
   "EnterYourEmail": "Entrez votre e-mail",
@@ -14,16 +14,8 @@
   "Hints": "Conseils",
   "Blog": "Blog",
   "HelpCenter": "Centre d'aide",
-  "ExploreOtherEditors": "Explorez d'autres éditeurs",
   "ViewMacroSamples": "Afficher les exemples de macros",
   "FindAppsYouNeed": "Découvrez tout ce que vous pouvez faire à l'aide du tableur",
   "CheckUserGuides": "Consulter les guides d'utilisation",
-  "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "Traitement de texte",
-  "SpreadsheetEditor": "Tableur",
-  "PresentationEditor": "Outil de présentations",
-  "FormCreator": "Créateur de formulaires",
-  "PDFEditor": "Éditeur PDF",
-  "EBookCreator": "Créateur de livres électroniques",
-  "DiagramViewer": "Visionneuse de diagrammes"
+  "GoToTheTemplateLibrary": "Go to the template library"
 }

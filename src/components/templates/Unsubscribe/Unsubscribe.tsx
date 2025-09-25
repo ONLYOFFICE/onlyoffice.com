@@ -97,6 +97,7 @@ const UnsubscribeTemplate = ({ email }: IUnsubscribeTemplate) => {
         firstName: "",
         email: value,
         type: "Common",
+        locale: router.locale,
       }),
     });
     const data = await res.json();
@@ -203,10 +204,14 @@ const UnsubscribeTemplate = ({ email }: IUnsubscribeTemplate) => {
                 />
                 <SubscribeInput
                   dataTestId="unsubscribe-input"
-                  onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                    setValue(e.target.value)
-                  }
-                  onFocus={() => setSubscribeStatus("default")}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                    if (subscribeStatus === "loading") return;
+                    setValue(e.target.value);
+                  }}
+                  onFocus={() => {
+                    if (subscribeStatus === "loading") return;
+                    setSubscribeStatus("default");
+                  }}
                   onSubmit={handleSubscribeNews}
                   value={value}
                   placeholder={t("YourEmail")}

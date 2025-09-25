@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Text } from "@src/components/ui/Text";
+import { Heading } from "@src/components/ui/Heading";
 
 const StyledHeroForm = styled.form`
   max-width: 472px;
@@ -12,6 +13,10 @@ const StyledHeroForm = styled.form`
   @media ${device.mobile} {
     gap: 24px;
   }
+`;
+
+const StyledHeading = styled(Heading)`
+  max-width: 472px;
 `;
 
 const StyledTwoInputsContainer = styled.div`
@@ -64,4 +69,5 @@ export {
   StyledHeroLoadText,
   StyledHeroRequestStatusText,
   StyledTwoInputsContainer,
+  StyledHeading,
 };

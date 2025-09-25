@@ -11,6 +11,7 @@
   "No": "нет",
   "AttachFileOrScreenshоts": "Прикрепите файл или скриншоты <0>( максимум 5 Мб )</0>",
   "YouCanAttachUp": "Вы можете прикрепить до 10 файлов",
+  "YouCanOnlyAttach": "Вы можете прикрепить только файлы в формате JPEG, PNG или PDF.",
   "FileSizeExceeded": "Превышен размер файла:",
   "NameIsEmpty": "Имя не указано",
   "NameIsIncorrect": "Поле имя некорректно",

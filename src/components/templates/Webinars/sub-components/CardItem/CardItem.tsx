@@ -212,7 +212,6 @@ const CardItem = ({
           questions: formData.textArea,
           webinarLang,
           from,
-          emailSubject: t("WebinarSubject"),
           hCaptchaResponse: formData.hCaptcha || null,
           locale,
         }),
@@ -221,7 +220,7 @@ const CardItem = ({
       if (webinarsResponseData.status == "success") {
         pageTrack("join_webinar");
         setStatus(webinarsResponseData.status);
-      } else if (webinarsResponseData.status === "errorHCaptchaInvalid") {
+      } else if (webinarsResponseData.status === "hCaptchaInvalid") {
         setStatus("error");
       } else {
         setStatus(webinarsResponseData.status);
