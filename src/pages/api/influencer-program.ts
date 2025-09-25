@@ -2,6 +2,9 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { logError } from "@src/lib/helpers/logger";
 import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
 import { validateEmail } from "@src/utils/validators";
+import { getClientIp } from "@src/lib/helpers/getClientIp";
+import { isTestEmail } from "@src/utils/IsTestEmail";
+import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
 import { emailTransporter } from "@src/config/email/transporter";
 import { InfluencerProgramEmail } from "@src/components/emails/InfluencerProgramEmail";
@@ -26,7 +29,8 @@ export default async function handler(
 
   if (!(await checkRateLimit(req, res))) return;
 
-  const { fromPage, fullName, email, link, moreDetails } = req.body;
+  const { fromPage, fullName, email, link, moreDetails, hCaptchaResponse } =
+    req.body;
 
   try {
     if (
@@ -39,11 +43,25 @@ export default async function handler(
       !link ||
       typeof link !== "string" ||
       !moreDetails ||
-      typeof moreDetails !== "string"
+      typeof moreDetails !== "string" ||
+      (!isTestEmail(email) &&
+        (!hCaptchaResponse || typeof hCaptchaResponse !== "string"))
     ) {
       return res
         .status(400)
         .json({ status: "error", message: "Invalid request parameters" });
+    }
+
+    const ip = getClientIp(req);
+
+    if (!isTestEmail(email)) {
+      const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
+
+      if (!hCaptchaResult.success) {
+        return res.status(400).json({
+          status: "hCaptchaInvalid",
+        });
+      }
     }
 
     const errorMessages: string[] = [];

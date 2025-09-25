@@ -33,7 +33,7 @@ const Form = () => {
     email: "",
     link: "",
     moreDetails: "",
-    hCaptcha: null,
+    hCaptchaResponse: null,
   };
 
   const [formStatus, setFormStatus] =
@@ -52,7 +52,7 @@ const Form = () => {
   const handleHCaptchaChange = (token: string | null) => {
     setFormData((prevData) => ({
       ...prevData,
-      hCaptcha: token,
+      hCaptchaResponse: token,
     }));
     setIsFormValid(
       isFullNameValid &&
@@ -88,7 +88,9 @@ const Form = () => {
         isEmailValid &&
         isLinkValid &&
         isMoreDetailsValid &&
-        ((testEmailOverride ?? isTestEmailValid) ? true : !!formData.hCaptcha),
+        ((testEmailOverride ?? isTestEmailValid)
+          ? true
+          : !!formData.hCaptchaResponse),
     );
   };
 
@@ -121,7 +123,12 @@ const Form = () => {
         body: JSON.stringify(formData),
       });
       const responseFormData = await formResponse.json();
-      if (responseFormData.status === "success") {
+
+      if (responseFormData.status === "hCaptchaInvalid") {
+        setFormStatus("error");
+        hCaptchaRef.current?.resetCaptcha();
+        return;
+      } else if (responseFormData.status === "success") {
         setFormStatus("success");
 
         setTimeout(() => {

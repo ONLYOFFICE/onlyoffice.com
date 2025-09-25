@@ -55,7 +55,7 @@ const Hero = ({
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isDocsEnterprise = formData.type === "docsenterprisedownloadrequest";
-  const isDocsDeveloper = formData.type === "docsDeveloperDownloadRequest";
+  const isDocsDeveloper = formData.type === "docsdeveloperdownloadrequest";
 
   const onSubmitRequest = async ({
     from,

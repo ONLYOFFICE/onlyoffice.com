@@ -63,7 +63,7 @@ export const validateKeys = ({
   emailKey: string | string[];
   linkKey: string | string[];
   page: string;
-}) => request("/multiregion/resetpassword", { emailKey, linkKey, page });
+}) => request("/key/validate", { emailKey, linkKey, page });
 
 export const validateUnsubscribeId = ({
   UnsubscribeId,

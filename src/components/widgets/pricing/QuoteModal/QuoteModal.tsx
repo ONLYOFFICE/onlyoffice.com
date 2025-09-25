@@ -174,7 +174,6 @@ const QuoteModal = <T,>({
   const onCloseModal = () => {
     onClose();
     setQuoteFormData((prev) => ({ ...prev, hCaptcha: null }));
-    hCaptchaRef.current?.resetCaptcha();
     setIsFormValid(false);
   };
 

@@ -4,5 +4,5 @@ export interface IInitialformData {
   email: string;
   link: string;
   moreDetails: string;
-  hCaptcha: string | null;
+  hCaptchaResponse: string | null;
 }

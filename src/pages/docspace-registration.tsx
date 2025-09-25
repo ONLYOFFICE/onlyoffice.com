@@ -121,9 +121,9 @@ export async function getServerSideProps({
         };
       }
 
-      tenants = findByEmailData.data;
+      tenants = findByEmailData;
 
-      if (!Array.isArray(tenants) || tenants.length === 0) {
+      if (!Array.isArray(tenants.data) || tenants.data.length === 0) {
         return {
           redirect: {
             destination: `/docspace-registration-proxy?${queryParams}`,

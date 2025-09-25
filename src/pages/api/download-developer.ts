@@ -13,7 +13,23 @@ import { DownloadDocsDeveloperEmail } from "@src/components/emails/DownloadDocsD
 import { DownloadDocSpaceDeveloperEmail } from "@src/components/emails/DownloadDocSpaceDeveloperEmail";
 import { IDownloadModalData } from "@src/components/widgets/download/DownloadModal";
 
-interface IWebPaymentData {
+interface IWebPaymentDocsData {
+  FName: IDownloadModalData["fullName"];
+  LName: string;
+  Email: IDownloadModalData["email"];
+  Phone: IDownloadModalData["phone"];
+  CompanyName: IDownloadModalData["companyName"];
+  FirstHeard: string;
+  Position: string;
+  Host: IDownloadModalData["website"];
+  Comments: IDownloadModalData["comment"];
+  ButtonId: IDownloadModalData["buttonId"];
+  LanguageCode: string;
+  Language: string;
+  CommunicationLang: string;
+}
+
+interface IWebPaymentDocSpaceData {
   FName: IDownloadModalData["fullName"];
   Email: IDownloadModalData["email"];
   Phone: IDownloadModalData["phone"];
@@ -110,7 +126,23 @@ export default async function handler(
     const cookies = parse(req.headers.cookie || "");
 
     try {
-      const webPaymentData: IWebPaymentData = {
+      const webPaymentDocsData: IWebPaymentDocsData = {
+        FName: fullName,
+        LName: "",
+        Email: email,
+        Phone: phone,
+        CompanyName: companyName,
+        FirstHeard: "",
+        Position: "",
+        Host: website,
+        Comments: comment,
+        ButtonId: buttonId,
+        LanguageCode: getDisplayNameWithoutParentheses(locale),
+        Language: locale,
+        CommunicationLang: "",
+      };
+
+      const webPaymentDocSpaceData: IWebPaymentDocSpaceData = {
         FName: fullName,
         Email: email,
         Phone: phone,
@@ -130,7 +162,12 @@ export default async function handler(
             : "",
         {
           method: "POST",
-          body: new URLSearchParams(Object.entries(webPaymentData)),
+          body:
+            type === "docsdeveloperdownloadrequest"
+              ? new URLSearchParams(Object.entries(webPaymentDocsData))
+              : type === "docspacedeveloperdownloadrequest"
+                ? new URLSearchParams(Object.entries(webPaymentDocSpaceData))
+                : "",
         },
       );
     } catch (error) {
@@ -241,7 +278,7 @@ export default async function handler(
                 phone,
                 companyName,
                 website,
-                comment,
+                comment: comment.replace(/\n/g, "<br/>"),
                 buttonId,
                 position: "",
                 firstHeard: "",
@@ -256,7 +293,7 @@ export default async function handler(
                   phone,
                   companyName,
                   website,
-                  comment,
+                  comment: comment.replace(/\n/g, "<br/>"),
                   buttonId,
                   language: locale,
                   errorText: errorMessages.join("<br/><br/>"),

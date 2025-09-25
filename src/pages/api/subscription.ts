@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
 import { subscription } from "@src/lib/requests/subscription";
 import { logError } from "@src/lib/helpers/logger";
 
@@ -11,17 +10,13 @@ export default async function handler(
     return res.status(405).end("Method Not Allowed");
   }
 
-  if (!(await checkRateLimit(req, res))) return;
-
   try {
     const { id, subscribe, newsOnly } = req.body;
 
     if (
       !id ||
       typeof id !== "string" ||
-      !subscribe ||
       typeof subscribe !== "boolean" ||
-      !newsOnly ||
       typeof newsOnly !== "boolean"
     ) {
       return res.status(400).json({

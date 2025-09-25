@@ -224,7 +224,7 @@ export default async function handler(
           phone,
           companyName,
           website,
-          comment,
+          comment: comment.replace(/\n/g, "<br/>"),
           buttonId,
           language: locale,
           errorText: errorMessages.join("<br/><br/>"),

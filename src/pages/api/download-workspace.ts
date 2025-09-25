@@ -237,7 +237,7 @@ export default async function handler(
           phone,
           companyName,
           website,
-          comment,
+          comment: comment.replace(/\n/g, "<br/>"),
           buttonId,
           position: "",
           operatingSystem: "",

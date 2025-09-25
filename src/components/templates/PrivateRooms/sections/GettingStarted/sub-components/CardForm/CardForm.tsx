@@ -34,6 +34,7 @@ const CardForm = ({
   download_url,
   openModal,
   setOpenModal,
+  locale,
 }: ICardFormProp & ILocale) => {
   const { t } = useTranslation("private-rooms");
   const [status, setStatus] = useState<ILoaderButton["status"]>("default");
@@ -170,6 +171,7 @@ const CardForm = ({
           email: formData.email ?? "",
           from: from ?? "",
           id_url: "onlyoffice_private_room",
+          languageCode: locale,
           hCaptchaResponse: formData.hCaptcha ?? null,
         }),
       });
