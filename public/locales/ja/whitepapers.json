@@ -51,7 +51,7 @@
   "CardFormEmailIsIncorrect": "メールが正しくありません",
 
   "CardsWhitePapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
-  "CardsWhitePapersHeadStressTest": "ONLYOFFICE Docs 7.2.2.ストレステストレポート",
+  "CardsWhitePapersHeadStressTest": "ONLYOFFICE Docs ストレステストレポート",
 
   "CardsWhitePapersPdfForDevelopers": "/images/templates/whitepapers/pdf/onlyoffice_docs_for_developers.pdf",
   "CardsWhitePapersHeadForDevelopers": "開発者向けのONLYOFFICE Docs：アーキテクチャ、統合、デプロイメント",

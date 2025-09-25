@@ -51,7 +51,7 @@
   "CardFormEmailIsIncorrect": "电子邮箱错误",
 
   "CardsWhitePapersPdfStressTest": "/images/templates/whitepapers/pdf/stress_test_onlyoffice_7.2.2.pdf",
-  "CardsWhitePapersHeadStressTest": "ONLYOFFICE 文档 7.2.2. 压力测试报告",
+  "CardsWhitePapersHeadStressTest": "ONLYOFFICE 文档 压力测试报告",
 
   "CardsWhitePapersPdfForDevelopers": "/images/templates/whitepapers/pdf/zh/onlyoffice_docs_for_developers.pdf",
   "CardsWhitePapersHeadForDevelopers": "适合开发人员的ONLYOFFICE文档：架构、集成和部署",
