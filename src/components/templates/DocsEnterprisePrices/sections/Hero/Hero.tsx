@@ -89,14 +89,10 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
   const isGetIsQuote = [
     formData.hosting === "Cloud",
     formData.connectionsNumber === "more",
+    formData.disasterRecovery,
     formData.trainingCourses,
     formData.multiTenancy,
   ].some(Boolean);
-
-  const isOrderNow =
-    formData.disasterRecovery &&
-    !formData.trainingCourses &&
-    !formData.multiTenancy;
 
   const product = getProduct(formData, productsData);
 
@@ -467,13 +463,6 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
                     fullWidth
                     label={t("GetAQuote")}
                   />
-                ) : isOrderNow ? (
-                  <Button
-                    onClick={() => setIsModalOpen(true)}
-                    data-testid="get-a-quote-button"
-                    fullWidth
-                    label={t("OrderNow")}
-                  />
                 ) : (
                   <Button
                     data-testid="buy-now-button"
@@ -491,11 +480,7 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
           <QuoteModal
             locale={locale}
             isOpen={isModalOpen}
-            heading={
-              isOrderNow
-                ? t("FillInTheFormToReceive")
-                : t("FillInTheFormToGetAQuote")
-            }
+            heading={t("FillInTheFormToGetAQuote")}
             byClickedText={
               <Trans
                 t={t}
@@ -525,10 +510,10 @@ const Hero = ({ locale, productsData }: IDocsEnterprisePricesTemplate) => {
             setFormData={setFormData}
             quoteFormData={quoteFormData}
             setQuoteFormData={setQuoteFormData}
-            buttonLabel={isOrderNow ? t("OrderNow") : t("GetAQuote")}
+            buttonLabel={t("GetAQuote")}
             onSubmitRequest={onSubmitRequest}
             onClose={() => setIsModalOpen(false)}
-            pageTrackName={isOrderNow ? "ie-order-now" : "ie-gaq"}
+            pageTrackName="ie-gaq"
           />
         </StyledHeroWrapper>
 
