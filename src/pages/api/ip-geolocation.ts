@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import NodeCache from "node-cache";
 import { db } from "@src/config/db/site";
 import { RowDataPacket } from "mysql2/promise";
 import { regions } from "@src/config/data/docspace-regions";
@@ -13,7 +14,10 @@ interface ILocationRow extends RowDataPacket {
   timezone_name: string;
 }
 
-const ipCache = new Map<string, unknown>();
+const ipCache = new NodeCache({
+  stdTTL: 60 * 60 * 24,
+  checkperiod: 60 * 60 * 12,
+});
 
 function formatIP(ip: string | undefined) {
   ip = (ip || "").trim();
@@ -139,8 +143,9 @@ export default async function handler(
 
     const ipFormatted = formatIP(ip);
 
-    if (ipCache.has(ipFormatted)) {
-      return res.status(200).json(ipCache.get(ipFormatted));
+    const cached = ipCache.get(ipFormatted);
+    if (cached) {
+      return res.status(200).json(cached);
     }
 
     const [rows] = await db.teamlabsite.query<ILocationRow[]>(

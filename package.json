@@ -34,6 +34,7 @@
     "mysql2": "^3.14.1",
     "next": "15.5.3",
     "next-i18next": "^15.4.2",
+    "node-cache": "^5.1.2",
     "nodemailer": "^7.0.3",
     "onlyoffice-react-ui-kit": "ONLYOFFICE/onlyoffice-react-ui-kit#6a220c91846f549e509370ed14689f90832c33f7",
     "prismjs": "^1.30.0",
