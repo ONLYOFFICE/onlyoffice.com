@@ -74,7 +74,7 @@ const Hero = () => {
     { value: "Contributor", label: t("Contributor") },
   ];
 
-  const [portalNameErrorStatus, setPortalNameErrorStatus] = useState<TPortalNameErrorStatus>("busy");
+  const [portalNameErrorStatus, setPortalNameErrorStatus] = useState<TPortalNameErrorStatus>("default");
 
   useEffect(() => {
     if (selectedOption.length > 0) {
