@@ -430,7 +430,7 @@ const Hero = () => {
                 </StyledHeroFormPortalError>
               </StyledHeroFormPortalInputWrapper>
               <StyledHeroFormPortalText as={"span"}>
-                .onlyoffice.(co/eu/sg/com/com2)
+                {process.env.NEXT_PUBLIC_PORTAL_NAME_DOMAINS}
               </StyledHeroFormPortalText>
             </StyledHeroFormPortalWrapper>
             <div
