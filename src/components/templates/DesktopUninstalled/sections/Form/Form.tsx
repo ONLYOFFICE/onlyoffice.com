@@ -23,7 +23,7 @@ const Form = ({ locale }: ILocale) => {
     >
       <Container>
         <CanceledForm
-          tableName="desktop_uninstalled_request"
+          apiUrl="/api/desktop-uninstalled"
           textareaHeading={t("WhatShouldWeImproveInOnlyofficeDesktopEditors")}
           checkboxeItems={checkboxeItems}
           onShowCoupons={() => setShowMessage(true)}

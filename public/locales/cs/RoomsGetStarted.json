@@ -1,7 +1,7 @@
 {
   "GetStartedAndChooseWhereToWork": "Začněte a vyberte si, kde budete pracovat",
   "OnPremisesOrInTheCloud": "On-premises or in the cloud",
-  "CreateRoomsWithinYourSecureDocSpace": "Create rooms within your secure DocSpace, invite people, view, edit, and collaborate on all kinds of documents from any desktop or mobile device.",
+  "CreateRoomsWithinYourSecureDocSpace": "Vytvářejte místnosti ve svém zabezpečeném DocSpace, zvěte lidi, prohlížejte, upravujte a spolupracujte na všech druzích dokumentů z jakéhokoli stolního počítače nebo mobilního zařízení.",
   "StartWithYourFreeCloudAccount": "Start with your free cloud account",
   "DeployOnYourOwnServer": "Deploy on your own server",
   "InThePlatformYouUse": "V platformě, kterou používáte",
@@ -9,11 +9,11 @@
   "DiscoverAllIntegrations": "Discover all integrations",
   "InThePlatformYouBuild": "V platformě si vytvoříte",
   "EmbedRoomsOrTheWholeDocSpace": "Embed rooms or the whole DocSpace into your service to provide document storing and collaboration capabilities to your customers under your brand.",
-  "LearnMore": "Learn more",
-  "FromYourPC": "From your PC",
-  "EditDocsOfflineWithFreeOfficeApps": "Edit docs offline with free office apps for Windows, Linux, and macOS",
-  "DownloadNow": "Download now",
-  "FromYourMobileDevices": "From your mobile devices",
-  "WorkOnDocumentsOnTheGoWithFreeApps": "Work on documents on the go with free apps for iOS and Android devices",
-  "InstallNow": "Install now"
+  "LearnMore": "Další informace",
+  "FromYourPC": "Z vašeho PC",
+  "EditDocsOfflineWithFreeOfficeApps": "Upravujte dokumenty offline pomocí bezplatných kancelářských aplikací pro Windows, Linux a macOS",
+  "DownloadNow": "Stáhnout nyní",
+  "FromYourMobileDevices": "Z vašich mobilních zařízení",
+  "WorkOnDocumentsOnTheGoWithFreeApps": "Pracujte na dokumentech na cestách s bezplatnými aplikacemi pro zařízení iOS a Android.",
+  "InstallNow": "Nainstalovat"
 }

@@ -1,17 +1,17 @@
 {
   "PageTitle": "Use virtual data rooms for enhanced file security and transparency",
-  "PageDescription": "Organize secure storage and sharing of confidential business information in ONLYOFFICE DocSpace",
+  "PageDescription": "Organizujte bezpečné ukládání a sdílení důvěrných obchodních informací v ONLYOFFICE DocSpace",
 
   "UseVirtualDataRooms": "Use <0>virtual data rooms</0> for enhanced file security and transparency",
-  "OrganizeSecure": "Organize secure storage and sharing of confidential business information in ONLYOFFICE DocSpace",
+  "OrganizeSecure": "Organizujte bezpečné ukládání a sdílení důvěrných obchodních informací v ONLYOFFICE DocSpace",
 
   "IdealForDueDiligence": "Ideal for due diligence",
   "CompletelyOrganized": "Completely organized",
   "HighLevelOfDataSecurity": "High level of data security",
   "AdvancedRoleBased": "Advanced role-based form filling",
-  "CostEffectiveForAnyBudget": "Cost-effective for any budget",
+  "CostEffectiveForAnyBudget": "Cenově výhodné pro jakýkoli rozpočet",
 
-  "CreateFreeAccount": "Create free account",
+  "CreateFreeAccount": "Vytvořit bezplatný účet",
 
   "HeroImgUrl": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header.png",
   "HeroImgUrl2x": "/images/templates/virtual-data-rooms/hero/virtual-data-rooms-header@2x.png",
@@ -32,24 +32,24 @@
   "AdvancedRoleBasedImgUrl": "/images/templates/virtual-data-rooms/features/advanced.png",
   "AdvancedRoleBasedImgUrl2x": "/images/templates/virtual-data-rooms/features/advanced@2x.png",
 
-  "CostEffectiveForAnyBudgetDesc": "Pay for admins only and add any number of regular users and guests for free. Benefit from a free Startup plan for small teams. ONLYOFFICE DocSpace is suitable for all businesses, no matter if it's SMB or a big enterprise. Want to get full control over your corporate data? Deploy DocSpace on your private server.",
+  "CostEffectiveForAnyBudgetDesc": "Platíte pouze za administrátory a můžete přidat libovolný počet běžných uživatelů a hostů zdarma. Využijte bezplatný tarif Startup pro malé týmy. ONLYOFFICE DocSpace je vhodný pro všechny podniky, ať už se jedná o malé a střední podniky nebo velké společnosti. Chcete získat plnou kontrolu nad svými firemními daty? Nasadit DocSpace na svůj soukromý server.",
   "CostEffectiveForAnyBudgetImgUrl": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget.png",
   "CostEffectiveForAnyBudgetImgUrl2x": "/images/templates/virtual-data-rooms/features/cost-effective-for-any-budget@2x.png",
 
   "LearnMoreHeading": "Learn more about DocSpace virtual data rooms",
 
-  "HelpCenter": "Help Center",
+  "HelpCenter": "Centrum nápovědy",
   "HelpCenterDesc": "Check out detailed user guides for effective work",
   "HelpCenterLink": "https://helpcenter.onlyoffice.com/docspace",
-  "LearnMore": "Learn more",
+  "LearnMore": "Další informace",
 
   "YouTube": "YouTube",
-  "MasterONLYOFFICEDocSpace": "Master ONLYOFFICE DocSpace with video guides",
+  "MasterONLYOFFICEDocSpace": "Osvojte si ONLYOFFICE DocSpace pomocí videonávodů",
   "MasterONLYOFFICEDocSpaceLink": "https://www.youtube.com/playlist?list=PLCF48HEKMOYM8MBnwYs8q5J0ILMK9NzIx",
-  "WatchNow": "Watch now",
+  "WatchNow": "Sledovat nyní",
 
-  "CustomerTestimonial": "Customer testimonial",
+  "CustomerTestimonial": "Reference zákazníků",
   "HowKinderhausBerlinSharesAndCollaborates": "How Kinderhaus Berlin shares and collaborates on confidential files with ONLYOFFICE DocSpace",
   "CustomerTestimonialLink": "https://www.onlyoffice.com/blog/2023/11/how-kinderhaus-berlin-is-using-onlyoffice-docspace",
-  "ReadStory": "Read story"
+  "ReadStory": "Přečtěte si příběh"
 }

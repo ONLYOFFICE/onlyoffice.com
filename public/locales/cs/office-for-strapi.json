@@ -1,0 +1,42 @@
+{
+  "PageTitle": "Document viewing and editing within Strapi | ONLYOFFICE Docs",
+  "PageDescription": "Edit DOCX, XLSX, and PPTX files, and collaborate on content in Strapi",
+
+  "OnlineOfficeForConnector": "Online office for <0>Strapi</0>",
+  "Subheader": "Edit and co-author office files added to the Strapi Media Library using ONLYOFFICE Docs",
+  "GetItNow": "Získat nyní",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Plně kompatibilní s formáty docx, xlsx a pptx",
+
+  "HeroTab1ImgUrl": "/images/templates/office-for-strapi/hero/screen1.png",
+  "HeroTab2ImgUrl": "/images/templates/office-for-strapi/hero/screen2.png",
+  "HeroTab3ImgUrl": "/images/templates/office-for-strapi/hero/screen3.png",
+  "HeroTab4ImgUrl": "/images/templates/office-for-strapi/hero/screen4.png",
+  "HeroTab5ImgUrl": "/images/templates/office-for-strapi/hero/screen5.png",
+
+  "GetStarted": "Začínáme",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Strapi",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for Strapi now from the <0>Strapi Market</0> or <1>npm directory</1>.",
+
+  "WhyOO": "Proč ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs je samostatně hostovaná kancelářská sada pro práci s textovými dokumenty, tabulkami, prezentacemi a formuláři.",
+  "Reason1": "<0>Integrační</0> plugin připravený k použití",
+  "Reason2": "Easy installation from <0>Strapi Market</0> & quick configuration",
+  "Reason3": "<0>Intuitive interface</0> with tabs",
+  "Reason4": "<0>Více</0> nástrojů pro úpravy, formátování a stylování",
+  "Reason5": "<0>Spolupráce v reálném čase</0>, sledování změn, komentáře, chat",
+  "Reason6": "<0>Free Community</0> and <0>scalable Enterprise</0> versions",
+  "Reason7": "<0>JWT ochrana</0> před neoprávněným přístupem",
+  "Reason8": "<0>Otevřený zdrojový kód</0> dostupný na GitHubu",
+
+  "HowToStart": "Jak začít",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo si vytvořte účet <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>Strapi Market</0> or <1>npm directory</1>.",
+  "HowToStartStep3": "Nakonfigurujte konektor a povolte JWT.",
+  "HowToStartImgUrl": "/images/templates/office-for-strapi/how-to-start/how-to-start.svg",
+
+  "ReadDetailedInstructions": "Podrobné pokyny najdete v <0>centru nápovědy</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/strapi.aspx",
+
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
+}

@@ -22,11 +22,11 @@
   "Reason6": "Zdrojový kód na GitHubu",
 
   "HowToStart": "Jak začít",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo si vytvořte účet <1>Docs Cloud</1>.",
   "HowToStartStep2": "Get the ONLYOFFICE connector from <0>GitHub</0>.",
-  "HowToStartStep3": "Configure the connector and enable JWT.",
+  "HowToStartStep3": "Nakonfigurujte konektor a povolte JWT.",
 
-  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>",
+  "ReadDetailedInstructions": "Podrobné pokyny najdete v <0>centru nápovědy</0>",
 
   "NeedAnAppToConnect": "Potřebujete aplikaci k připojení ONLYOFFICE k vaší oblíbené webové službě? Nebo jste ji vyvinuli?"
 }

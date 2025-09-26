@@ -171,10 +171,20 @@ export default async function handler(
       .json({ status: "error", message: "Missing AWS S3 configuration" });
   }
 
-  const form = formidable();
+  const form = formidable({
+    maxFileSize: 5 * 1024 * 1024,
+  });
 
   form.parse(req, async (err, fields: ICustomFields, files: ICustomFiles) => {
     if (err) {
+      if (err.message.includes("maxTotalFileSize")) {
+        return res.status(400).json({
+          status: "error",
+          message:
+            "The uploaded file likely exceeded the maximum file size 5 Mb",
+        });
+      }
+
       console.error("Form parsing error:", err);
       return res
         .status(500)

@@ -18,7 +18,7 @@
   "Invoicing": "Fakturační systém",
   "InvoicingText": "Vytvořte fakturu přímo ve vašem ONLYOFFICE výběrem požadovaných příjemců z CRM databáze a následným propojením s požadovanou obchodní příležitostí.",
   "InvoicingImage": "/images/templates/crm/features/cs/invoicing.png",
-  "CloseIntegration": "Úzká integrace s Mail",
+  "CloseIntegration": "Úzká integrace s E-mail",
   "CloseIntegrationText": "Přidávejte kontakty z e-mailu do databáze, posílejte zprávy, faktury a zobrazte veškerou korespondenci s klienty přímo v CRM. Organizujte hromadnou korespondenci přímo z ONLYOFFICE CRM.",
   "CloseIntegrationImage": "/images/templates/crm/features/cs/close_integration.png",
   "CustomerCall": "Volání zákazníka",

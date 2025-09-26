@@ -20,7 +20,7 @@
   "EmbeddingFeature3": "<0>Připravené</0> příklady integrace",
   "EmbeddingImgUrl": "/images/templates/for-developers/features/document_storing.svg",
   "OnlineDocument": "Online editory dokumentů",
-  "Docs": "Docs",
+  "Docs": "Dokumenty",
   "Sheets" : "Sheets",
   "Slides" : "Slides",
   "Forms" : "Forms",
@@ -60,6 +60,6 @@
 
   "HaveAnyQuestions": "Máte nějaké otázky?",
   "HaveAnyQuestionsText": "Rádi vám poradíme a probereme všechny podrobnosti. Kontaktujte nás na sales@onlyoffice.com nebo si naplánujte čas pro hovor s naším týmem.",
-  "ContactUs": "Kontaktujte nás",
+  "ContactUs": "Kontakt",
   "ScheduleATime": "Naplánovat čas"
 }

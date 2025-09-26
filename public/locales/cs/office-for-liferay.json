@@ -11,30 +11,30 @@
   "DocumentsTab3Label": "Collaborate with multiple users on docs in real time and save the changes back to Liferay",
   "DocumentsTab4Label": "Open, edit and collaborate on PDF files.",
   "DocumentsTab5Label": "Create fillable PDF forms and fill them out online.",
-  "GetStarted": "Začněte",
-  "RequestFreeDemo": "Request free demo",
+  "GetStarted": "Začínáme",
+  "RequestFreeDemo": "Požádat o bezplatnou demo verzi",
 
   "FreeAppsHeading": "Access and edit your documents stored in Liferay with <0>free desktop apps</0>",
   "FreeAppsDesktopText": "Edit and co-edit your Liferay files in the desktop environment with <0>ONLYOFFICE Desktop Editors</0> on Windows, Linux, or macOS",
-  "GetFreeDesktopApps": "Get free desktop apps",
+  "GetFreeDesktopApps": "Získejte bezplatné desktopové aplikace",
 
   "MarketplaceConnectorTitle": "Designed for seamless integration with Liferay",
   "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Liferay now from the Liferay Marketplace.",
 
-  "WhyOO": "Why ONLYOFFICE?",
-  "Reason1": "Support for more than <0>50 file formats</0>, fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
-  "Reason2": "A robust set of editing, formatting, and styling tools. Integrated <0>AI helper</0>.",
+  "WhyOO": "Proč ONLYOFFICE?",
+  "Reason1": "Podpora více než <0>50 formátů souborů</0>, plně kompatibilní s formáty MS Office: DOCX, XLSX, PPTX.",
+  "Reason2": "Robustní sada nástrojů pro úpravy, formátování a stylizaci. Integrovaný <0>AI pomocník</0>.",
   "Reason3": "Real-time and paragraph-locking <0>co-editing</0>, review, version history, document comparison, comments &amp; chat. Audio and video calls.",
   "Reason4": "<0>Enhanced security</0>. Flexible access rights and JWT.  Watermarking and password protection. Open source code.",
   "Reason5": "<0>Easy integration and configuration</0>. Available in server and cloud versions.",
-  "Reason6": "Cloud and self-hosted solution for total control over your data. Scalable Enterprise versions. <0>Free 30-day trial</0>.",
+  "Reason6": "Cloudové a self-hosted řešení pro úplnou kontrolu nad vašimi daty. Škálovatelné podnikové verze. <0>30denní zkušební verze zdarma</0>.",
 
-  "HowToStart": "How to start",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStart": "Jak začít",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo si vytvořte účet <1>Docs Cloud</1>.",
   "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>Liferay Marketplace</0>.",
-  "HowToStartStep3": "Configure the connector and enable JWT.",
+  "HowToStartStep3": "Nakonfigurujte konektor a povolte JWT.",
 
-  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructions": "Podrobné pokyny najdete v <0>centru nápovědy</0>.",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
 }

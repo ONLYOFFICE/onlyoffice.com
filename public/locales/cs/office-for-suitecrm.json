@@ -1,0 +1,55 @@
+{
+  "PageTitle": "Online editors for SuiteCRM | ONLYOFFICE",
+  "PageDescription": "Pracujte s kancelářskými soubory v modulu SuiteCRM Documents pomocí ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Online office for <0>SuiteCRM</0>",
+  "Subheader": "Pracujte s kancelářskými soubory v modulu SuiteCRM Documents pomocí ONLYOFFICE Docs",
+  "GetItNow": "Získat nyní",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Plně kompatibilní s formáty docx, xlsx a pptx",
+
+  "HeroTab1ImgUrl": "/images/templates/office-for-suitecrm/hero/screen1.png",
+  "HeroTab1ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen1@2x.png",
+  "HeroTab2ImgUrl": "/images/templates/office-for-suitecrm/hero/screen2.png",
+  "HeroTab2ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen2@2x.png",
+  "HeroTab3ImgUrl": "/images/templates/office-for-suitecrm/hero/screen3.png",
+  "HeroTab3ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen3@2x.png",
+  "HeroTab4ImgUrl": "/images/templates/office-for-suitecrm/hero/screen4.png",
+  "HeroTab4ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen4@2x.png",
+  "HeroTab5ImgUrl": "/images/templates/office-for-suitecrm/hero/screen5.png",
+  "HeroTab5ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen5@2x.png",
+  "HeroTab6ImgUrl": "/images/templates/office-for-suitecrm/hero/screen6.png",
+  "HeroTab6ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen6@2x.png",
+  "HeroTab7ImgUrl": "/images/templates/office-for-suitecrm/hero/screen7.png",
+  "HeroTab7ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen7@2x.png",
+  "HeroTab8ImgUrl": "/images/templates/office-for-suitecrm/hero/screen8.png",
+  "HeroTab8ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen8@2x.png",
+  "HeroTab9ImgUrl": "/images/templates/office-for-suitecrm/hero/screen9.png",
+  "HeroTab9ImgUrl2x": "/images/templates/office-for-suitecrm/hero/screen9@2x.png",
+
+  "GetStarted": "Začínáme",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with SuiteCRM",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for SuiteCRM now from <0>GitHub</0>.",
+
+  "WhyOO": "Why ONLYOFFICE Docs Cloud",
+  "WhySubheader": "ONLYOFFICE Docs Cloud is a professional office suite for working with text documents, spreadsheets, presentations, forms, and PDFs.",
+  "Reason1": "<0>Ready-to-use</0> connector",
+  "Reason2": "<0>Editing and co-authoring office files</0> directly within the SuiteCRM Documents module",
+  "Reason3": "<0>Spolupráce v reálném čase</0>, sledování změn, komentáře, chat",
+  "Reason4": "<0>Intuitivní</0> rozhraní s kartami",
+  "Reason5": "<0>Více</0> nástrojů pro úpravy, formátování a stylování",
+  "Reason6": "<0>JWT ochrana</0> před neoprávněným přístupem",
+  "Reason7": "<0>No installation required.</0> Quick configuration.",
+  "Reason8": "<0>Otevřený zdrojový kód</0> dostupný na GitHubu",
+
+  "HowToStart": "Jak začít",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo si vytvořte účet <1>Docs Cloud</1>.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from <0>GitHub</0>.",
+  "HowToStartStep3": "Install and configure the connector.",
+  "HowToStartImgUrl": "/images/templates/office-for-suitecrm/how-to-start/how-to-start.png",
+
+  "ReadDetailedInstructions": "Podrobné pokyny najdete v <0>centru nápovědy</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/suitecrm.aspx",
+
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
+}

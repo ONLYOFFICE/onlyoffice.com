@@ -1,11 +1,11 @@
 {
   "PageTitle": "Online office for Nextcloud | ONLYOFFICE",
-  "PageDescription": "Work on office documents within Nextcloud using ONLYOFFICE Docs",
+  "PageDescription": "Pracujte s kancelářskými dokumenty v Nextcloud pomocí ONLYOFFICE Docs",
 
   "OnlineOfficeForNextcloud": "Online office for Nextcloud",
-  "WorkOnOfficeDocuments": "Work on office documents within Nextcloud using ONLYOFFICE Docs",
-  "GetItNow": "Get it now",
-  "RequestFreeDemo": "Request free demo",
+  "WorkOnOfficeDocuments": "Pracujte s kancelářskými dokumenty v Nextcloud pomocí ONLYOFFICE Docs",
+  "GetItNow": "Získat nyní",
+  "RequestFreeDemo": "Požádat o bezplatnou demo verzi",
   "HeroImgUrl": "/images/templates/office-for-nextcloud/hero/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-nextcloud/hero/hero@2x.png",
 
@@ -13,7 +13,7 @@
   "DocumentsTab1Label": "Edit text documents, spreadsheets, presentations and PDFs. Create files from blank or using your own templates.",
   "DocumentsTab1ImgUrl": "/images/templates/office-for-nextcloud/documents/documents-1.png",
   "DocumentsTab1ImgUrl2x": "/images/templates/office-for-nextcloud/documents/documents-1@2x.png",
-  "DocumentsTab2Label": "Build, edit, and fill out PDF forms.",
+  "DocumentsTab2Label": "Vytvářejte, upravujte a vyplňujte PDF formuláře.",
   "DocumentsTab2ImgUrl": "/images/templates/office-for-nextcloud/documents/documents-2.png",
   "DocumentsTab2ImgUrl2x": "/images/templates/office-for-nextcloud/documents/documents-2@2x.png",
   "DocumentsTab3Label": "Share documents and provide flexible access permissions for editing, commenting, reviewing, custom filtering, or reading only.",
@@ -29,31 +29,31 @@
   "FreeAppsHeading": "Access and edit your documents stored in Nextcloud with <0>free desktop and mobile apps</0>",
   "FreeAppsDesktopText": "Edit and co-edit your Nextcloud files in the desktop environment with <0>ONLYOFFICE Desktop Editors</0> on Windows, Linux, or macOS",
   "FreeAppsMobileText": "Read and edit your Nextcloud docs, sheets, and slides with ONLYOFFICE Documents mobile apps",
-  "GetFreeDesktopApps": "Get free desktop apps",
+  "GetFreeDesktopApps": "Získejte bezplatné desktopové aplikace",
 
   "MarketplaceConnectorTitle": "Designed for seamless integration with Nextcloud",
   "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Nextcloud now from the Nextcloud App Store.",
-  "GetStarted": "Get started",
+  "GetStarted": "Začínáme",
 
-  "WhyOO": "Why ONLYOFFICE?",
-  "FeaturesFormats": "Support for more than <0>50 file formats</0>, fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
-  "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools. Integrated <0>AI helper</0>.",
-  "FeaturesCoEditing": "Real-time and paragraph-locking <0>co-editing</0>, review, version history, document comparison, comments & chat. Audio and video calls.",
+  "WhyOO": "Proč ONLYOFFICE?",
+  "FeaturesFormats": "Podpora více než <0>50 formátů souborů</0>, plně kompatibilní s formáty MS Office: DOCX, XLSX, PPTX.",
+  "FeaturesAIHelper": "Robustní sada nástrojů pro úpravy, formátování a stylizaci. Integrovaný <0>AI pomocník</0>.",
+  "FeaturesCoEditing": "<0>Spolupráce</0> v reálném čase a s uzamčením odstavců, revize, historie verzí, porovnání dokumentů, komentáře a chat. Audio a video hovory.",
   "FeaturesSupport": "<0>Public sharing</0> support. Sharing via Nextcloud Talk. <0>Federated Cloud sharing</0> support.",
-  "FeaturesSecurity": "<0>Enhanced security.</0> Flexible access rights and JWT. Encryption in transit. Watermarking and password protection. Open source code.",
+  "FeaturesSecurity": "<0>Vylepšené zabezpečení.</0> Flexibilní přístupová práva a JWT. Šifrování při přenosu. Vodoznaky a ochrana heslem. Otevřený zdrojový kód.",
   "FeaturesConfiguration": "<0>Easy configuration</0> from the Nextcloud admin panel. Seamless integration with ready-to-use connector available on the Nextcloud App Store.",
   "FeaturesFree": "Free Community version and <0>scalable Enterprise</0> solution. <0>Free 30-day trial.</0>",
   "FeaturesIntegration": "Integration with <0>Nextcloud desktop</0> and mobile apps.",
 
-  "HowToStart": "How to start",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>",
+  "HowToStart": "Jak začít",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo se zaregistrujte do <1>ONLYOFFICE Docs Cloud</1>",
   "HowToStartStep2": "Get the integration app from the <0>Nextcloud App Store</0>",
-  "HowToStartStep3": "Configure the integration app.",
+  "HowToStartStep3": "Nakonfigurujte integrační aplikaci.",
   "HowToConnect": "Configuring ONLYOFFICE connector for Nextcloud",
-  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructions": "Podrobné pokyny najdete v <0>centru nápovědy</0>.",
 
   "PartnerHeading": "Are you a Nextcloud partner? How about improving your Nextcloud user experience and increasing your revenue?",
-  "PartnerText": "Join the ONLYOFFICE partnership program right now.",
+  "PartnerText": "Připojte se k partnerskému programu ONLYOFFICE hned teď.",
 
   "LearnMoreBlueDragon": "How the Blue Dragon Children’s Foundation helps young people in Vietnam using ONLYOFFICE and Nextcloud",
   "LearnMoreStiftung": "How the Stiftung der Deutschen Wirtschaft manages its funding processes with ONLYOFFICE and Nextcloud",
@@ -63,7 +63,7 @@
   "LearnMoreStellfeld": "How Stellfeld & Ernst GmbH shapes digital collaboration using ONLYOFFICE Docs and Nextcloud",
   "LearnMoreIBE": "Medical research at IBE: how ONLYOFFICE and Nextcloud help the institute",
   "LearnMoreLoveFoundation": "How ONLYOFFICE and Nextcloud help Love Foundation support socially important projects",
-  "ReadTheFullStory": "Read the full story",
+  "ReadTheFullStory": "Přečtěte si celý příběh",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
 }

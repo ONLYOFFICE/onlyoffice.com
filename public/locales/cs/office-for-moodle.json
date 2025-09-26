@@ -4,7 +4,7 @@
 
   "OnlineOfficeForMoodle": "Online office for Moodle",
   "WorkWithOfficeDocuments": "Work with office documents within Moodle using ONLYOFFICE",
-  "GetStarted": "Get started",
+  "GetStarted": "Začínáme",
 
   "MaterialsTitle": "Store all learning materials in one place and effortlessly share them with students",
   "MaterialsTab1Label": "Embed public rooms from your DocSpace account into Moodle courses",
@@ -39,7 +39,7 @@
 
   "ScheduleYourFreeDemo": "Schedule your demo",
 
-  "QuoteText": "\"We absolutely recommend ONLYOFFICE to schools. Maybe there is dedicated software for companies, but if you want to control your data and have a collaborative and simple system to work with your students, that's a great solution.\"",
+  "QuoteText": "„Školám rozhodně doporučujeme ONLYOFFICE. Možná existuje specializovaný software pro firmy, ale pokud chcete mít kontrolu nad svými daty a mít k dispozici jednoduchý systém pro spolupráci se svými studenty, je to skvělé řešení.“",
   "QuoteAuthor": "Dr. Colin Jonathan",
   "QuoteAuthorInfo": "Physics and Chemistry, Robotics, Science and Technology teacher",
 
@@ -60,16 +60,16 @@
   "MarketplaceConnectorTitle": "Built to work in Moodle seamlessly",
   "MarketplaceConnectorDescription": "Install ONLYOFFICE app for Moodle today from the Moodle App Marketplace",
 
-  "WhyOO": "Why ONLYOFFICE?",
+  "WhyOO": "Proč ONLYOFFICE?",
   "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools. Mendeley and Zotero integration. <0>AI helper.</0>",
   "FeaturesCoEditing": "Real-time and paragraph-locking <0>co-editing</0>, review, document comparison, comments & chat. Audio and video calls.",
-  "FeaturesFormats": "Support for more than <0>50 file formats</0>. Fully compatible with MS Office formats.",
+  "FeaturesFormats": "Podpora více než <0>50 formátů souborů</0>. Plně kompatibilní s formáty MS Office.",
   "FeaturesDesktopEditors": "Online access from any device. Edit your Moodle documents in the desktop environment with <1>ONLYOFFICE Desktop Editors</1>.",
   "FeaturesOpenSourceCode": "JWT. Watermarking and password protection. <0>Open source code</0> available on GitHub.",
   "FeaturesFreeTrial": "Scalable Enterprise versions. <0>Free 30-day trial.</0> Educational discounts.",
 
-  "HowToStart": "How to start?",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>",
+  "HowToStart": "Jak začít?",
+  "HowToStartStep1": "Nasaďte <0>ONLYOFFICE Docs</0> na svůj vlastní server nebo se zaregistrujte do <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Get the plugins from the Moodle directory: <0>main integration plugin</0> / <1>Assign Submission plugin</1>.",
   "HowToStartStep3": "Follow the usual Moodle plugin installation steps.",
   "HowToStartStep4": "Configure the installed plugin.",
@@ -83,11 +83,11 @@
 
 
   "LearnMoreHeading": "Learn more about Moodle ONLYOFFICE integration",
-  "HowEnsuresDigitalEquality": "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
-  "ReadTheFullStory": "Read the full story",
+  "HowEnsuresDigitalEquality": "Jak Collège-Lycée Sacré Cœur de Taravao zajišťuje digitální rovnost pro všechny studenty pomocí ONLYOFFICE a Moodle",
+  "ReadTheFullStory": "Přečtěte si celý příběh",
   "WatchAVideoVersion": "Watch a video version",
   "WhyWeChoseMoodle": "Why we chose Moodle for creating an ONLYOFFICE training center",
   "NewUpdatesOfOOPlugins": "New updates of ONLYOFFICE plugins for Moodle: PDF form creation and editing, Docs Cloud connection, certificate verification",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Potřebujete aplikaci pro propojení ONLYOFFICE Docs s vaší oblíbenou webovou službou? Nebo jste již nějakou vyvinuli?"
 }

@@ -24,7 +24,7 @@ const StyledCookieBannerHeader = styled.div`
   justify-content: space-between;
 `;
 
-const StyledCookieFab = styled.div`
+const StyledCookieFab = styled.div<{ $offset: string | null }>`
   background-color: #ffffff;
   background-image: url(${getAssetUrl("/images/icons/cookie.svg")});
   background-position: center;
@@ -37,12 +37,12 @@ const StyledCookieFab = styled.div`
   cursor: pointer;
   height: 48px;
   position: fixed;
-  right: 130px;
+  right: ${({ $offset }) => ($offset ? `${$offset}px` : "130px")};
   width: 48px;
   z-index: 1000;
 
   @media ${device.mobile} {
-    right: 78px;
+    right: ${({ $offset }) => ($offset ? `${$offset}px` : "78px")};
   }
 `;
 
