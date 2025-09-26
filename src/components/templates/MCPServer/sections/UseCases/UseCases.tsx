@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-//import { getAssetUrl } from "@utils/getAssetUrl";
+import { getAssetUrl } from "@src/utils/getAssetUrl";
 import {
   StyledLearnMoreHeading,
   StyledLearnMoreItems,
@@ -25,7 +25,7 @@ const UseCases = () => {
             <BlogCard
               className="blog-card"
               key={index}
-              imgUrl={item.imgUrl}
+              imgUrl={getAssetUrl(item.imgUrl)}
               heading={{ label: t(item.heading.label) }}
               text={t(item.text ?? "")}
             />

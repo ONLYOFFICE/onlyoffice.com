@@ -17,6 +17,7 @@ import { Button } from "@src/components/ui/Button";
 import { useTranslation, Trans } from "next-i18next";
 import { Container } from "@src/components/ui/Container";
 import { Link } from "@src/components/ui/Link";
+import { getAssetUrl } from "@src/utils/getAssetUrl";
 
 const GetStarted = () => {
   const { t } = useTranslation("mcp-server");
@@ -49,18 +50,18 @@ const GetStarted = () => {
                 />
               </ButtonsArea>
             </GetStartedArea>
-            <StyledScrollGif $src="/images/templates/mcp-server/get-started/robot1.svg" />
+            <StyledScrollGif $src={getAssetUrl("/images/templates/mcp-server/get-started/robot1.svg")} />
             <HubsArea>
               <Heading level={2} color="#fff">
                 {t("BeginYourJourneyFromSpecializedHubs")}
               </Heading>
 
               <StyledLink href="https://hub.docker.com/mcp/server/onlyoffice-docspace/overview">
-                <HubImg $src="/images/templates/mcp-server/get-started/logos.svg" />
+                <HubImg $src={getAssetUrl("/images/templates/mcp-server/get-started/logos.svg")} />
                 <Text color="main" as="span">mcp | Docker Hub</Text>
               </StyledLink>
             </HubsArea>
-            <StyledScrollGif $src="/images/templates/mcp-server/get-started/robot2.svg" />
+            <StyledScrollGif $src={getAssetUrl("/images/templates/mcp-server/get-started/robot2.svg")} />
           </StyledLeftArea>
         </Container>
         <Container maxWidth="432px">

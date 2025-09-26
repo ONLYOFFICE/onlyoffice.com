@@ -3,8 +3,7 @@ import { useTranslation } from "next-i18next";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
 import { items } from "./data/items";
-
-import { getAssetUrl } from "@utils/getAssetUrl";
+import { getAssetUrl } from "@src/utils/getAssetUrl";
 
 import {
   StyledSwitcherHeading,
@@ -111,7 +110,7 @@ const Switcher = () => {
               <StyledSwitcherImage
                 $isActive={activeSwitcher === index}
                 key={item.img.url}
-                $imageUrl={item.img.url}
+                $imageUrl={getAssetUrl(item.img.url)}
               />
             ))}
           </StyledSwitcherImageWrapper>

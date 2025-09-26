@@ -3,9 +3,10 @@ import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import styled from "styled-components";
 import { device } from "@src/utils/device";
+import { getAssetUrl } from "@src/utils/getAssetUrl";
 
 const StyledSection = styled(Section)`
-  background-image: url("/images/templates/mcp-server/background.svg");
+  background-image: url(${getAssetUrl("/images/templates/mcp-server/background.svg")});
   background-position: calc(50% + 220px) 0;
   background-repeat: no-repeat;
   background-size: auto 748px;
@@ -85,7 +86,7 @@ const StyledText = styled(Text)`
 `;
 
 const QuestionsImage = styled.div`
-  background-image: url("/images/templates/mcp-server/get-started/contact-us.svg");
+  background-image: url(${getAssetUrl("/images/templates/mcp-server/get-started/contact-us.svg")});
   width: 215px;
   height: 150px;
   background-size: contain;

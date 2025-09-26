@@ -4,7 +4,7 @@ import { Container } from "@src/components/ui/Container";
 import { StepCarousel } from "@src/components/widgets/StepCarousel";
 import { Link } from "@src/components/ui/Link";
 import { items } from "./data/items";
-//import { getAssetUrl } from "@utils/getAssetUrl";
+import { getAssetUrl } from "@src/utils/getAssetUrl";
 import { StyledHeading } from "./HowItWorks.styled";
 
 const HowItWorks = () => {
@@ -18,7 +18,7 @@ const HowItWorks = () => {
         <StepCarousel
           theme="dark"
           items={items.map((item) => ({
-            imgUrl: item.imgUrl,
+            imgUrl: getAssetUrl(item.imgUrl),
             title: t(String(item.title)),
             heading: item.headingLinks ? (
               <Trans

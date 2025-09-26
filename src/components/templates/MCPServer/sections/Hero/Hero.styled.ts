@@ -2,12 +2,11 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Section } from "@src/components/ui/Section";
 import { Container } from "@src/components/ui/Container";
-
-//import { getAssetUrl } from "@utils/getAssetUrl";
+import { getAssetUrl } from "@src/utils/getAssetUrl";
 
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
-  background-image: url('/images/templates/mcp-server/background.svg');
+  background-image: url(${getAssetUrl("/images/templates/mcp-server/background.svg")});
   background-position: calc(50% + 220px) 0;
   background-repeat: no-repeat;
   background-size: auto 748px;

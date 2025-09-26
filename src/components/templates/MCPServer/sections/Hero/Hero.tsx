@@ -11,6 +11,7 @@ import {
   StyledLeftHeroArea,
 } from "./Hero.styled";
 import { useState, useEffect } from "react";
+import { getAssetUrl } from "@src/utils/getAssetUrl";
 
 const Hero = () => {
   const { t } = useTranslation("mcp-server");
@@ -47,7 +48,7 @@ const Hero = () => {
             {t("HeroSubtitle")}
           </Text>
           <Text color="#ffffff">{t("HeroDescription")}</Text>
-          {mobile && <StyledHeroImage $src={"/images/templates/mcp-server/hero/main.svg"} />}
+          {mobile && <StyledHeroImage $src={getAssetUrl("/images/templates/mcp-server/hero/main.svg")} />}
           <StyledButtonsArea>
           <Button
             as="a"
@@ -62,7 +63,7 @@ const Hero = () => {
           />
           </StyledButtonsArea>
         </StyledLeftHeroArea>
-        {!mobile && <StyledHeroImage $src={"/images/templates/mcp-server/hero/main.svg"} />}
+        {!mobile && <StyledHeroImage $src={getAssetUrl("/images/templates/mcp-server/hero/main.svg")} />}
       </StyledHeroContent>
     </StyledHeroSection>
   );

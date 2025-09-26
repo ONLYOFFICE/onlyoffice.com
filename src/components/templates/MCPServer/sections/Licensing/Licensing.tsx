@@ -3,8 +3,8 @@ import { useTranslation, Trans } from "next-i18next";
 import { useState, useEffect } from "react";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { getAssetUrl } from "@src/utils/getAssetUrl";
 
-//import { getAssetUrl } from "@utils/getAssetUrl";
 const Licensing = () => {
   const { t } = useTranslation("mcp-server");
   const [mobile, setMobile] = useState(false);
@@ -29,7 +29,7 @@ const Licensing = () => {
           <Heading level={2}>{t("LicensingTitle")}</Heading>
           {mobile && (
             <StyledImage
-              $src={"/images/templates/mcp-server/licensing/apache.svg"}
+              $src={getAssetUrl("/images/templates/mcp-server/licensing/apache.svg")}
             />
           )}
           <Text>
@@ -42,7 +42,7 @@ const Licensing = () => {
         </Left>
         {!mobile && (
           <StyledImage
-            $src={"/images/templates/mcp-server/licensing/apache.svg"}
+            $src={getAssetUrl("/images/templates/mcp-server/licensing/apache.svg")}
           />
         )}
       </StyledContainer>
