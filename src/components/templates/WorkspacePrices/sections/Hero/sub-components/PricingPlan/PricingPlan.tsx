@@ -14,14 +14,11 @@ import {
 } from "./PricingPlan.styled";
 import { IPricingPlan } from "./PricingPlan.types";
 import { Text } from "@src/components/ui/Text";
-import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
+//import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
 
 const PricingPlan = ({
-  locale,
   active,
   heading,
-  price,
-  url,
   numberOfUsers,
   setNumberOfUsers,
   availableList,
@@ -31,7 +28,7 @@ const PricingPlan = ({
   planKey,
 }: IPricingPlan) => {
   const { t } = useTranslation("workspace-prices");
-  const currency = getCurrencyByLocale(locale);
+  //const currency = getCurrencyByLocale(locale);
 
   return (
     <StyledPricingPlan $active={active}>
@@ -47,14 +44,7 @@ const PricingPlan = ({
 
         <div>
           <StyledPricingPlanPrice>
-            {numberOfUsers === "more" ? (
-              <span>{t("UponRequest")}</span>
-            ) : (
-              <>
-                <span>{currency.symbol}</span>
-                {price}
-              </>
-            )}
+          <span>{t("UponRequest")}</span>
           </StyledPricingPlanPrice>
           <Text
             as="div"
@@ -64,24 +54,13 @@ const PricingPlan = ({
           />
         </div>
 
-        {numberOfUsers === "more" ? (
-          <StyledPricingPlanBtn
+        <StyledPricingPlanBtn
             data-testid={`${planKey}-get-a-quote-button`}
             forwardedAs="a"
-            href="mailto:sales@onlyoffice.com?subject=More%20connections%20for%20Enterprise%20Edition"
+            href={`mailto:sales@onlyoffice.com?subject=${numberOfUsers}%20connections%20for%20Enterprise%20Edition`}
             variant="secondary"
             label={t("GetAQuote")}
           />
-        ) : (
-          <StyledPricingPlanBtn
-            data-testid={`${planKey}-buy-now-button`}
-            forwardedAs="a"
-            target="_blank"
-            href={url}
-            variant={active ? "primary" : "secondary"}
-            label={t("BuyNow")}
-          />
-        )}
 
         <StyledPricingPlanCounterSelector
           bgColor="#f5f5f5"
