@@ -14,7 +14,7 @@
   "ActionsEditPdf": "Upravit PDF",
   "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
   "ActionsCreateForm": "Vytvořit formulář",
-  "ActionsFillInPdfForm": "Fill in PDF form",
+  "ActionsFillInPdfForm": "Vyplnit PDF formulář",
   "ActionsCollaborate": "Spolupracujte",
 
   "ActionsDemoPreview": "Náhled dema",
@@ -23,7 +23,7 @@
   "ActionsDemoModalHeadingOpenPptx": "Pro úpravy otevřete soubor PPTX",
   "ActionsDemoModalHeadingOpenPdf": "Upravit PDF",
   "ActionsDemoModalHeadingOpenCreateForm": "Vytvořit formulář",
-  "ActionsDemoModalHeadingOpenFill": "Fill in PDF form",
+  "ActionsDemoModalHeadingOpenFill": "Vyplnit PDF formulář",
   "ActionsDemoModalHeadingOpenCollaborate": "Spolupracujte",
   "ActionsDemoModalButtonClose": "Zavřít"
 }

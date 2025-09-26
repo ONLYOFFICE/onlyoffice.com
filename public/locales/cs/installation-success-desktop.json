@@ -1,0 +1,37 @@
+{
+  "PageTitle": "Thank you for installing ONLYOFFICE!",
+  "PageDescription": "ONLYOFFICE Features. Use online document editors, options on document management, project management, Gantt Chart, crm system, business collaboration, calendar.",
+
+  "HeroTitle": "Thank you for choosing <0>ONLYOFFICE Desktop Editors</0>!",
+  "HeroSubTitle": "We are glad that you have joined our community of happy ONLYOFFICE users.",
+
+  "EditingCapabilities": "With ONLYOFFICE Desktop Editors your editing capabilities are endless:",
+  "OpenCreateEdit": "<0>Open, create and edit</0> docs, sheets, slides, PDF files",
+  "StylingFormattingTools": "Use plenty of handy <0>styling and formatting tools</0>",
+  "CollaborateOnDocs": "<0>Collaborate on docs</0> within your cloud platform",
+  "CreateFillOut": "<0>Create and fill out</0> PDF fillable forms",
+  "ProtectDocs": "<0>Protect your docs</0> with a password, a watermark or a digital signature.",
+
+  "StayTuned": "Stay tuned",
+  "StayTunedSubTitle": "Sign up for a newsletter to receive app tips, updates and special offers!",
+  "StayTunedText": "*By clicking Subscribe, you agree to the <0>rules for using the service</0> and <1>processing personal data</1>.",
+
+  "Placeholder": "Enter your email address",
+  "Subscribe": "Subscribe",
+  "EmailIsEmpty": "E-mail je prázdný",
+  "EmailIsIncorrect": "E-mail je nesprávný",
+  "ThankYouForSubscribing": "Thank you for subscribing! Check your e-mail.",
+
+  "ExploreOOSolutions": "Explore ONLYOFFICE solutions",
+  "Cloud": "Cloud",
+  "ConnectToYourCloud": "Connect to your cloud",
+  "MobileOffice": "Mobile office",
+  "DownloadMobileOffice": "Download mobile office",
+  "OODocSpace": "ONLYOFFICE DocSpace",
+  "TryDocSpace": "Try ONLYOFFICE DocSpace",
+
+  "UsefulLinks": "Useful Links",
+  "ReadBlog": "<0>Read Blog</0> for tips and latest news",
+  "LearnMore": "<0>Learn more</0> about ONLYOFFICE Docs",
+  "ContactUs": "Got a question or a suggestion? Contact us at <0>info@onlyoffice.com</0>"
+}

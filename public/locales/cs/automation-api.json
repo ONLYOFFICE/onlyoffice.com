@@ -1,0 +1,53 @@
+{
+  "PageTitle": "Automation API | ONLYOFFICE",
+  "PageDescription": "Use your custom interface elements to interact with document content from the outside.",
+
+  "HeroTitle": "ONLYOFFICE Automation API",
+  "HeroSubtitle" : "Place any controls within your platform interface and manipulate document contents from the outside of the editors",
+  "HeroButton" : "Požádat o bezplatnou demo verzi",
+
+  "WhatIsTitle" : "What is <0>Automation API</0>",
+  "WhatIsSubtitle" : "<0>ONLYOFFICE Automation API</0> with the Connector class makes it possible to interact with office documents from the outside. You are able to get changes made in files using your own custom interface elements.",
+  "CheckExamples" : "Check examples",
+  "Webinar" : "ONLYOFFICE Automation API [Webinar 2024]",
+  "WatchOurWebinar" : "Watch our webinar",
+
+  "WhatAutomationAPICan" : "What <0>Automation API</0> can do",
+  "MostPopularExamples" : "Most popular examples",
+  "WorkingWithComments" : "Working with comments",
+  "WorkingWithReview" : "Working with review changes",
+  "FillingOutForms" : "Filling out forms",
+  "CollectsAllTheCommentsFrom" : "Collects all the comments from the document and displays them in the custom interface.",
+  "ThereAreNoComments" : "There are no comments in the document.",
+  "SendReply" : "Send Reply",
+  "AddReply" : "Add Reply",
+  "Delete" : "Smazat",
+  "SendComment" : "Send Comment",
+  "AddComment" : "Add Comment",
+  "EnterYourReplyHere" : "Enter your reply here",
+  "EnterYourCommentHere" : "Enter your comment here",
+  "ManagesReviewProcess" : "Manages review process from an external source.",
+  "Accept" : "Accept",
+  "Reject" : "Reject",
+  "FillsInTheEmptyCells" : "Fills in the empty cells in the given form.",
+  "ChooseExample" : "Choose Example",
+
+  "ReadyToUse" : "Ready-to-use example: Odoo integration",
+  "UsingAutomationAPI" : "Using Automation API, ONLYOFFICE makes it possible for Odoo users to create and fill out templates with data available in Odoo.",
+  "Screen1ImgUrl" : "/images/templates/automation-api/carousel/en/create_new_form_templates_for_any_odoo_module.png",
+  "Screen1ImgUrl2x" : "/images/templates/automation-api/carousel/en/create_new_form_templates_for_any_odoo_module@2x.png",
+  "Screen2ImgUrl" : "/images/templates/automation-api/carousel/en/edit_the_existing_form_templates.png",
+  "Screen2ImgUrl2x" : "/images/templates/automation-api/carousel/en/edit_the_existing_form_templates@2x.png",
+  "Screen3ImgUrl" : "/images/templates/automation-api/carousel/en/fill_templates_out_with_data_available_in_odoo.png",
+  "Screen3ImgUrl2x" : "/images/templates/automation-api/carousel/en/fill_templates_out_with_data_available_in_odoo@2x.png",
+  "LearnMore" : "Další informace",
+
+  "HowToGetONLYOFFICEAutomationAPI": "How to get ONLYOFFICE Automation API",
+  "AutomationAPISsAPartOf": "Automation API is a part of <0>ONLYOFFICE Docs Developer</0> which provides a best-in-breed online office suite with editors for documents, spreadsheets, presentations, and PDFs intended for integration into your own web app or platform. Access to Automation API is provided as a part of the extended <1>ONLYOFFICE Docs Developer license</1>.",
+  "GetA30DayTrial": "Get a <0>30-day trial</0> of ONLYOFFICE Docs Developer with Automation API included to test it for free.",
+  "DownloadNow": "Stáhnout nyní",
+
+  "HaveAnyQuestions": "Have any questions about ONLYOFFICE Automation API? We will be happy to consult you and discuss all the details.",
+  "HaveAnyQuestionsText": "The team of experts is here to help you at every step. <2 /> <2 /> In case of pre-sale questions, contact us at <0>sales@onlyoffice.com</0> or schedule a time to have our team call you.  <2 /> <2 /> For any technical issue, message us at <1>support@onlyoffice.com</1>.",
+  "GetInTouch": "Kontaktujte nás"
+}

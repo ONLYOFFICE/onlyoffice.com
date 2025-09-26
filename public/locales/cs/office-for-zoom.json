@@ -1,0 +1,58 @@
+{
+  "PageTitle": "Collaborate on office files within your Zoom sessions | ONLYOFFICE",
+  "PageDescription": "Edit and co-author docs, sheets, slides, forms, and PDF within Zoom using ONLYOFFICE DocSpace",
+
+  "OnlineOfficeForZoom": "Secure online office for <0>Zoom</0>",
+  "EnableCollaborativeDocumentEditing": "Work on office documents right in Zoom using a robust feature set of ONLYOFFICE",
+  "AddToZoom": "Add to",
+  "AddToZoomAfter" : "",
+
+  "CollaborateOfficeDocuments": "Collaborate on office documents during Zoom meetings",
+  "DocumentsTab1Label": "Create, upload and share docs providing Edit or Live view permissions.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-zoom/documents/en/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-zoom/documents/en/screen1@2x.png",
+  "DocumentsTab2Label": "Co-author docs, sheets, slides in real time with other participants.",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-zoom/documents/en/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-zoom/documents/en/screen2@2x.png",
+  "DocumentsTab3Label": "Discuss and fill out complex online forms, i.e. sales agreements or contracts.",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-zoom/documents/en/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-zoom/documents/en/screen3@2x.png",
+  "DocumentsTab4Label": "Navigate through PDF docs, add comments, annotations, drawings.",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-zoom/documents/en/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-zoom/documents/en/screen4@2x.png",
+  "DocumentsTab5Label": "Store files edited during Zoom meeting within a collaboration room and get constant access to them from anywhere at any time.",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-zoom/documents/en/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-zoom/documents/en/screen5@2x.png",
+
+  "EfficientlyManageYourDocuments": "Efficiently manage your documents between meetings",
+  "ManageTab1Label": "Create a secure space for all your docs. Easily access it from your Zoom account.",
+  "ManageTab1ImgUrl": "/images/templates/office-for-zoom/manage/en/screen1.png",
+  "ManageTab1ImgUrl2x": "/images/templates/office-for-zoom/manage/en/screen1@2x.png",
+  "ManageTab2Label": "Uspořádejte si své osobní soubory a vytvořte místnosti pro své obchodní dokumenty.",
+  "ManageTab2ImgUrl": "/images/templates/office-for-zoom/manage/en/screen2.png",
+  "ManageTab2ImgUrl2x": "/images/templates/office-for-zoom/manage/en/screen2@2x.png",
+  "ManageTab3Label": "Umožněte flexibilní přístupová oprávnění: úpravy, komentáře, kontrola nebo pouze prohlížení.",
+  "ManageTab3ImgUrl": "/images/templates/office-for-zoom/manage/en/screen3.png",
+  "ManageTab3ImgUrl2x": "/images/templates/office-for-zoom/manage/en/screen3@2x.png",
+  "ManageTab4Label": "Use public rooms to give access to your docs to people outside of your space.",
+  "ManageTab4ImgUrl": "/images/templates/office-for-zoom/manage/en/screen4.png",
+  "ManageTab4ImgUrl2x": "/images/templates/office-for-zoom/manage/en/screen4@2x.png",
+
+  "MarketplaceConnectorTitle": "Built to work in Zoom seamlessly",
+  "MarketplaceConnectorDescription": "Install ONLYOFFICE app for Zoom today from the Zoom App Marketplace.",
+
+  "WhyOO": "Proč ONLYOFFICE?",
+  "Reason1": "Robustní sada nástrojů pro úpravy, formátování a stylování. <0>Integrovaný AI pomocník</0> (ChatGPT nebo ZhiPu Copilot).",
+  "Reason2": "<0>Spolupráce v reálném čase</0> a zamykání odstavců, revize, historie verzí, porovnání dokumentů, komentáře a zmínky.",
+  "Reason3": "Podpora více než <0>50 formátů souborů</0>. Plně kompatibilní s formáty MS Office: DOCX, XLSX, PPTX.",
+  "Reason4": "<0>Enhanced security</0>. Flexible access rights and JWT. Activity tracking and audit reporting. Encryption at rest and in transit. Open source code.",
+  "Reason5": "<0>Free plan to start</0>. Business plan for more admins, bigger storage, enhanced security and professional support.",
+
+  "HowToStart": "Jak začít",
+  "HowToStartStep1": "Sign into your Zoom account.",
+  "HowToStartStep2": "Install ONLYOFFICE DocSpace from the <0>Zoom App Marketplace</0> and allow the requested app permissions.",
+  "HowToStartStep3": "Start a meeting, switch to the Apps tab and launch the ONLYOFFICE DocSpace app.",
+  "HowToStartStep4": "Initiate a collaboration session by selecting the needed file from the list.",
+
+  "ExploreMoreDetailsIn": "Explore more details in <0>this guide</0>"
+}

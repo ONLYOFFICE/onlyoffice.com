@@ -4,7 +4,7 @@
   "FirstName": "Jméno",
   "FirstNameIsEmpty": "Pole pro jméno je prázdné",
   "YourEmail": "Váš e-mail:",
-  "EmailIsEmpty": "Pole pro e-mail je prázdné",
+  "EmailIsEmpty": "E-mail je prázdný",
   "EmailIsIncorrect": "Nesprávný e-mail",
   "Subscribe": "Odebírejte",
 
