@@ -99,12 +99,12 @@ const WebinarsForUserEmail = async ({
                         <tbody>
                             <tr align="center" border="0" cellspacing="0" cellpadding="0">
                                 <td align="center" style="vertical-align: top; margin: 0; padding: 0; width: 560px; padding-bottom: 32px; padding-top: 40px; padding-left: 0px; padding-right: 0px; text-align: center;">
-                                    <table align="center" style="border-collapse: collapse; border: 0; border-spacing: 0; empty-cells: show; Margin: 0 auto; max-width: 240px; padding: 0; text-align: center; vertical-align: top; width: 100%;" cellspacing="0" cellpadding="0">
+                                    <table align="center" style="border-collapse: collapse; border: 0; border-spacing: 0; empty-cells: show; Margin: 0 auto; max-width: ${language === "zh" ? `200px` : `240px;`} padding: 0; text-align: center; vertical-align: top; width: 100%;" cellspacing="0" cellpadding="0">
                                         <tbody>
                                         ${
                                           language === "zh"
                                             ? `<tr border="0" cellspacing="0" cellpadding="0">
-                                               <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
+                                               <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 20%;">
                                                  <a href="https://v.douyin.com/kCcv5R1/" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">
                                                    <!--[if mso]>
                                                    <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2022/tiktok.png" style="border: 0px none; height: 20px; width: 20px; font-size: 8px;" alt="Douyin" />
@@ -114,7 +114,7 @@ const WebinarsForUserEmail = async ({
                                                    <!-- <![endif]-->
                                                  </a>
                                                </td>
-                                               <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
+                                               <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 20%;">
                                                  <a href="https://v.kuaishou.com/GeXfVT" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">
                                                    <!--[if mso]>
                                                    <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/kuaishou.png" style="font-size: 8px; border: 0px none; height: 20px; width: 20px;" alt="Kuaishou" />
@@ -124,17 +124,7 @@ const WebinarsForUserEmail = async ({
                                                    <!-- <![endif]-->
                                                  </a>
                                                </td>
-                                               <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
-                                                 <a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAituLIinbu_T7phDvBDiqiVsev4z3kjH95MZsEpnq7Lv2MnXBh-Sp9tuAHzFnI-Tk/" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">
-                                                   <!--[if mso]>
-                                                   <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/xiaohongshu.png" style="font-size: 8px; border: 0px none; height: 20px; width: 20px;" alt="Toutiao" />
-                                                   <![endif]-->
-                                                   <!--[if !mso]> <!---->
-                                                   <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/xiaohongshu.png" alt="Toutiao" style="font-size: 8px; border: 0; color: #333333; display: block; height: auto; width: 100%;">
-                                                   <!-- <![endif]-->
-                                                 </a>
-                                               </td>
-                                               <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
+                                               <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 20%;">
                                                  <a href="https://blog.csdn.net/m0_68274698" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">
                                                    <!--[if mso]>
                                                    <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/csdn.png" style="font-size: 8px; border: 0px none; height: 20px; width: 20px;" alt="CSDN" />
@@ -144,17 +134,17 @@ const WebinarsForUserEmail = async ({
                                                    <!-- <![endif]-->
                                                  </a>
                                                </td>
-                                               <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
-                                                 <a href="https://www.xiaohongshu.com/user/profile/627e271800000000210253ec" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">    
+                                               <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 20%;">
+                                                 <a href="https://weibo.com/u/7989605631" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">    
                                                  <!--[if mso]>
-                                                 <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/toutiao.png" style="font-size: 8px; border: 0px none; height: 20px; width: 20px;" alt="Xiaohongshu" />
+                                                 <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/september2025/weibo.png" style="font-size: 8px; border: 0px none; height: 20px; width: 20px;" alt="Weibo" />
                                                  <![endif]-->
                                                  <!--[if !mso]> <!---->
-                                                 <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/toutiao.png" alt="Xiaohongshu" style="font-size: 8px; border: 0; color: #333333; display: block; height: auto; width: 100%;">
+                                                 <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/september2025/weibo.png" alt="Weibo" style="font-size: 8px; border: 0; color: #333333; display: block; height: auto; width: 100%;">
                                                  <!-- <![endif]-->
                                                </a>
                                              </td>
-                                             <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 16%;">
+                                             <td style="Margin: 0; padding: 0; vertical-align: bottom; width: 20%;">
                                                <a href="https://space.bilibili.com/1870911731/" style="border: 0; display: block; height: auto; Margin: 0 auto; padding: 0; width: 20px;" target="_blank">
                                                  <!--[if mso]>
                                                  <img src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/june2023/bilibili.png" style="font-size: 8px; border: 0px none; height: 20px; width: 20px;" alt="Bilibili" />

@@ -76,9 +76,9 @@ export const socialIcons: ISocialIcon[] = [
     onlyFor: "zh",
   },
   {
-    title: "Xiaohongshu",
-    link: "https://www.xiaohongshu.com/user/profile/627e271800000000210253ec",
-    iconPosition: "-1022px",
+    title: "Weibo",
+    link: "https://weibo.com/u/7989605631",
+    iconPosition: "-1214px",
     onlyFor: "zh",
   },
   {
