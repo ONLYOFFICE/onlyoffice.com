@@ -1,0 +1,39 @@
+import { useTranslation } from "next-i18next";
+//import { getAssetUrl } from "@utils/getAssetUrl";
+import {
+  StyledLearnMoreHeading,
+  StyledLearnMoreItems,
+} from "./UseCases.styled";
+import { Section } from "@src/components/ui/Section";
+import { Container } from "@src/components/ui/Container";
+import { BlogCard } from "@src/components/widgets/BlogCard";
+import { items } from "./data/items";
+
+const UseCases = () => {
+  const { t } = useTranslation("mcp-server");
+
+  return (
+    <Section tabletSmallSpacing={["72px", "72px"]} background="#F9F9F9">
+      <Container>
+        <StyledLearnMoreHeading
+          level={2}
+          textAlign="center"
+          label={t("UseCases")}
+        />
+        <StyledLearnMoreItems>
+          {items.map((item, index) => (
+            <BlogCard
+              className="blog-card"
+              key={index}
+              imgUrl={item.imgUrl}
+              heading={{ label: t(item.heading.label) }}
+              text={t(item.text ?? "")}
+            />
+          ))}
+        </StyledLearnMoreItems>
+      </Container>
+    </Section>
+  );
+};
+
+export { UseCases };

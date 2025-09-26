@@ -6,9 +6,10 @@ const CarouselButton = ({
   id,
   className,
   direction = "left",
+  theme = "light",
 }: ICarouselButton) => {
   return (
-    <StyledCarouselButton id={id} className={className}>
+    <StyledCarouselButton id={id} className={className} $theme={theme}>
       {direction === "left" ? <ChevronLeftIcon /> : <ChevronRightIcon />}
     </StyledCarouselButton>
   );

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledCarouselButton = styled.button`
+const StyledCarouselButton = styled.button<{ $theme: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,14 @@ const StyledCarouselButton = styled.button`
       transition: fill 0.2s;
     }
   }
+
+  ${props => props.$theme === "dark" && `
+     svg {
+      path {
+        fill: #ff6f3d;
+      }
+    }
+  `}
 
   &:hover {
     box-shadow: 0px 20px 50px 0px rgba(85, 85, 85, 0.15);
