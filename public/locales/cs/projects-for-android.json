@@ -11,14 +11,14 @@
     "QuicklyBrowseSortAndFilter": "Quickly browse, sort and filter the existing projects and tasks, edit them, change status, assignees and due dates. Access work documents attached to each project.",
     "ManageNewProjects": "Manage new projects",
     "CreateNewProjects": "Create new projects and tasks and assign the responsible members. Set priorities and add smaller subtasks. Bind tasks to milestones to plan your work in time.",
-    "Communicate": "Communicate",
+    "Communicate": "Komunikujte",
     "StartProjectDiscussions": "Start project discussions to brainstorm ideas, solve issues, ask questions, and make announcements. Leave comments to take part in the communication process.",
     "KeepYourProjectsSafe": "Keep your projects safe",
     "MakeSureNoUnauthorized": "Make sure no unauthorized users can access your projects. Secure the application with a code, activate 2FA or authentication with a fingerprint.",
     "WorkComfortably": "Work comfortably",
     "EnjoyAnIntuitiveInterface": "Enjoy an intuitive interface and navigate seamlessly around all your projects and tasks. Protect your eyesight in poorly illuminated environments by switching to the Dark mode.",
 
-    "HowToStart": "How to start",
+    "HowToStart": "Jak začít",
     "CreateYourONLYOFFICEWorkspace": "<0>1.</0> Create your <1>ONLYOFFICE Workspace</1> account if you don’t have one.",
     "LaunchInTheCloud": "Launch in the cloud",
     "RunOnYourOwnServer": "Run on your own server",
@@ -30,6 +30,6 @@
     "CleanAndIntuitiveUI": "Clean and intuitive UI",
     "NoAds": "No ads or in-app purchases",
     "RegularUpdates": "Regular updates",
-    "TechnicalSupport": "Technical support",
+    "TechnicalSupport": "Technická podpora",
     "OnlineDocumentation": "Online documentation"
 }

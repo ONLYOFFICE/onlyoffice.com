@@ -19,7 +19,13 @@ import {
 import { IDeveloperEditionPricesFormData } from "./Hero.types";
 import { IDeveloperEditionPricesTemplate } from "@src/components/templates/DeveloperEditionPrices";
 import { getCurrencyByLocale } from "@src/utils/getCurrencyByLocale";
-import { loadRewardful, addClientReferenceOnReady, getClientReferenceParam, getClientReferenceId, getAffiliateToken } from "@src/utils/rewardful";
+import {
+  loadRewardful,
+  addClientReferenceOnReady,
+  getClientReferenceParam,
+  getClientReferenceId,
+  getAffiliateToken,
+} from "@src/utils/rewardful";
 import { Container } from "@src/components/ui/Container";
 import { Heading } from "@src/components/ui/Heading";
 import { Checkbox } from "@src/components/ui/Checkbox";
@@ -129,7 +135,6 @@ const Hero = ({ locale, productsData }: IDeveloperEditionPricesTemplate) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         locale,
-        referer: document.referrer,
         fullName: quoteFormData.fullName,
         email: quoteFormData.email,
         phone: quoteFormData.phone,

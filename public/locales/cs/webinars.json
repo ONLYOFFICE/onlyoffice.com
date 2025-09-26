@@ -22,7 +22,7 @@
 
   "CompanyNameIsEmpty": "Pole pro název firmy je prázdné",
 
-  "EmailIsEmpty": "Pole pro e-mail je prázdné",
+  "EmailIsEmpty": "E-mail je prázdný",
   "EmailIsIncorrect": "Nesprávný e-mail",
 
   "AgreementByClicking": "Kliknutím na Sledovat webinář potvrzujete porozumění a souhlas s naší <0>smlouvou SLA</0> a <1>Prohlášením o ochraně osobních údajů</1>.",
@@ -51,7 +51,5 @@
 
   "ContributeHeading": "Přispějte svými myšlenkami",
   "ContributeTextHave": "Máte skvělý nápad, jaký webinář bychom měli uspořádat?",
-  "ContributeTextGet": "Spojte se s naším týmem na <0>press@onlyoffice.com</0> nebo se připojte k našim DM na <1>Twitteru</1>.",
-
-  "WebinarSubject": "Úspěšně jste se zaregistrovali na webinář ONLYOFFICE"
+  "ContributeTextGet": "Spojte se s naším týmem na <0>press@onlyoffice.com</0> nebo se připojte k našim DM na <1>Twitteru</1>."
 }

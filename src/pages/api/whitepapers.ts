@@ -1,8 +1,11 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { logError } from "@src/lib/helpers/logger";
+import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
+import { validateEmail } from "@src/utils/validators";
+import { getClientIp } from "@src/lib/helpers/getClientIp";
 import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { db } from "@src/config/db/site";
-import { parse } from "cookie";
 import { emailTransporter } from "@src/config/email/transporter";
 import { WhitePapersEmail } from "@src/components/emails/WhitePapersEmail";
 
@@ -22,6 +25,8 @@ export default async function handler(
     return res.status(405).json({ message: "Method Not Allowed" });
   }
 
+  if (!(await checkRateLimit(req, res))) return;
+
   const {
     fullName,
     email,
@@ -33,90 +38,82 @@ export default async function handler(
   } = req.body;
 
   try {
-    const ip =
-      (Array.isArray(req.headers["x-forwarded-for"])
-        ? req.headers["x-forwarded-for"][0]
-        : req.headers["x-forwarded-for"]
-      )?.split(",")[0] ||
-      req.socket.remoteAddress ||
-      null;
+    if (
+      !fullName ||
+      typeof fullName !== "string" ||
+      typeof email !== "string" ||
+      !validateEmail(email) ||
+      !company ||
+      typeof company !== "string" ||
+      !id_url ||
+      typeof id_url !== "string" ||
+      !languageCode ||
+      typeof languageCode !== "string" ||
+      typeof from !== "string" ||
+      (!isTestEmail(email) &&
+        (!hCaptchaResponse || typeof hCaptchaResponse !== "string"))
+    ) {
+      return res
+        .status(400)
+        .json({ status: "error", message: "Invalid request parameters" });
+    }
+
+    const ip = getClientIp(req);
 
     if (!isTestEmail(email)) {
       const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
       if (!hCaptchaResult.success) {
         return res.status(400).json({
-          status: "errorHCaptchaInvalid",
-          error: hCaptchaResult.error,
+          status: "hCaptchaInvalid",
         });
       }
     }
 
-    const errorMessages = [];
-    const cookies = parse(req.headers.cookie || "");
+    try {
+      const addWhitePapersData: IAddWhitePapersData = {
+        full_name: fullName,
+        email,
+        company_name: company,
+        product: id_url,
+        lang: languageCode,
+      };
 
-    const addWhitePapersDataRequest = async () => {
-      try {
-        const addWhitePapersData: IAddWhitePapersData = {
-          full_name: fullName,
-          email,
-          company_name: company,
-          product: id_url,
-          lang: languageCode,
-        };
-
-        await db.teamlabsite.query("INSERT INTO whitepapers_request SET ?", [
-          addWhitePapersData,
-        ]);
-
-        return {
-          status: "success",
-          message: "whitepapersRequestSuccessful",
-        };
-      } catch (error: unknown) {
-        console.error(
-          "Add WhitePapers api returns errors:",
-          error instanceof Error ? error.message : error,
-        );
-
-        return {
-          status: "error",
-          message:
-            error instanceof Error ? error.message : "Unknown error occurred",
-        };
-      }
-    };
-
-    const addWhitePapersDataResult = await addWhitePapersDataRequest();
-    if (addWhitePapersDataResult.status === "error") {
-      errorMessages.push(
-        `whitepapersRequest: ${addWhitePapersDataResult.message}`,
-      );
+      await db.teamlabsite.query("INSERT INTO whitepapers_request SET ?", [
+        addWhitePapersData,
+      ]);
+    } catch (error) {
+      logError((req.url || "").split("?")[0], "DB", error);
+      return res.status(500).json({
+        status: "error",
+        message: "Internal Server Error",
+      });
     }
 
-    const transporter = emailTransporter();
-    await transporter.sendMail({
-      to: [process.env.SALES_EMAIL!],
-      subject: `${errorMessages.length ? "[Error] " : ""}${company} - WhitePapers Request ${`${cookies.utm_campaign ? `[utm: ${cookies.utm_campaign}]` : ""}`}[from: ${from}]`,
-      html: WhitePapersEmail({
-        fromPage: from,
-        fullName,
-        email,
-        company,
-        product: id_url,
-        languageCode,
-      }),
-    });
+    try {
+      const transporter = emailTransporter();
+      await transporter.sendMail({
+        to: [process.env.SALES_EMAIL!],
+        subject: `Request${from ? ` [from: ${from}]` : ""}`,
+        html: WhitePapersEmail({
+          fromPage: from,
+          fullName,
+          email,
+          company,
+          product: id_url,
+          languageCode,
+        }),
+      });
+    } catch (error) {
+      logError((req.url || "").split("?")[0], "Email transporter", error);
+    }
 
-    res.status(200).json({
-      status: "success",
-      message: "success",
-    });
+    return res.status(200).json({ status: "success" });
   } catch (error) {
-    console.error("WhitePapers api returns errors:", error);
-    res.status(500).json({
+    logError((req.url || "").split("?")[0], "API", error);
+    return res.status(500).json({
       status: "error",
-      message: error,
+      message: "Internal Server Error",
     });
   }
 }

@@ -14,7 +14,7 @@
   "FileSizeExceeded": "Překročena velikost souboru: ",
   "NameIsEmpty": "Jméno je prázdné",
   "NameIsIncorrect": "Nesprávný pole pro jméno",
-  "EmailIsEmpty": "Pole pro e-mail je prázdné",
+  "EmailIsEmpty": "E-mail je prázdný",
   "EmailIsIncorrect": "Nesprávný e-mail",
   "ByClickingSubmit": "Kliknutím na Odeslat potvrzujete porozumění a souhlas s naší <0>smlouvou SLA</0> a <1>Prohlášením o ochraně osobních údajů</1>.",
   "Submit": "Odeslat",

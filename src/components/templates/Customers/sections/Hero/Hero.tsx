@@ -26,7 +26,7 @@ const Hero = () => {
           />
           <Text as={"span"} label={t("HeroOr")} size={3} />
           <Button as="a"
-            href="/docspace-registration.aspx?from=customers"
+            href="/docspace-registration?from=customers"
             label={t("HeroButtonStartYour")}
             borderRadius="3px"
             variant="tertiary"

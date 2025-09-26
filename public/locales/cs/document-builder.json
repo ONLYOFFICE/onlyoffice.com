@@ -3,8 +3,8 @@
     "PageDescription": "ONLYOFFICE Document Builder - Enable your application to modify or build documents in DOCX, XLSX, PPTX or PDF without running Microsoft Office.",
     
     "FrameworkForAdvanced": "Framework for advanced document processing",
-    "CompatibleWithMicrosoft": "100% Compatible with Microsoft Office Formats",
-    "GetStarted": "Get started",
+    "CompatibleWithMicrosoft": "100% kompatibilní s formáty Microsoft Office",
+    "GetStarted": "Začínáme",
 
     "WhatIsThis": "What is this?",
     "PowerfulTextSpreadsheet": "Powerful text, spreadsheet, presentation and PDF generating tool.",
@@ -12,7 +12,7 @@
     "LiveDemo": "Live demo",
     "WhatMakesONLYOFFICE": "What makes ONLYOFFICE Document Builder unique?",
     "WithONLYOFFICEDocumentBuilder": "With ONLYOFFICE Document Builder you have a simple script created for each document, be it a new file or an existing one that you want to open and modify. No need to compile an application each time the changes are required, like in any other builders. Start generating your documents on-the-fly!",
-    "ReadDocumentation": "Read documentation",
+    "ReadDocumentation": "Přečíst dokumentaci",
 
     "TheTechnologyBehindONLYOFFICE": "The technology behind ONLYOFFICE Document Builder",
     "ONLYOFFICEDocumentBuilderProvides": "ONLYOFFICE Document Builder provides a <1>JavaScript</1> API, well-documented and really easy to use. Choose the appropriate methods and classes from our library or pick the commonly used JavaScript methods to change certain element formatting properties.",
@@ -28,7 +28,7 @@
     "ONLYOFFICEDocumentBuilderPart": "ONLYOFFICE Document Builder – part of ONLYOFFICE Docs Developer",
     "BringAdvancedDocument": "Bring advanced document processing to the end users <0>under your own brand</0>.",
     "HaveAnyQuestions": "Have any questions? We'll be glad to assist you and discuss all the details.",
-    "GetInTouch": "Get in touch",
+    "GetInTouch": "Kontaktujte nás",
 
     "ONLYOFFICEDocumentBuilderFeatures": "ONLYOFFICE Document Builder features",
     "SupportsAllPopular": "ONLYOFFICE Document Builder supports all popular document file formats: open DOC, DOCX, ODT, RTF, TXT, XLS, XLSX, ODS, CSV, PPT, PPSX, PPS, ODP, PPTX and save them to DOCX, ODT, XLSX, PPTX or PDF",
@@ -437,12 +437,12 @@
     "Ruby": "Ruby",
     "Python": "Python",
 
-    "Edit": "Edit",
-    "Convert": "Convert",
+    "Edit": "Upravit",
+    "Convert": "Převést",
     "Merge": "Merge",
     "Split": "Split",
     "Compress": "Compress",
-    "Compare": "Compare",
+    "Compare": "Porovnat",
     "Rotate": "Rotate",
     "DeletePages": "Delete pages",
     "GenerateReports": "Generate reports",
@@ -453,7 +453,7 @@
     "Parser": "Parser",
     "MailMerge": "Mail Merge",
     "OCR": "OCR",
-    "Watermarks": "Watermarks",
+    "Watermarks": "Vodoznaky",
     "Annotation": "Annotation",
 
     "xlxsToPdf": "XLSX to PDF",

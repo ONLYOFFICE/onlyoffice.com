@@ -2,19 +2,18 @@ import { ILocale } from "@src/types/locale";
 
 export interface ICanceledFormData {
   checkboxes: string;
-  mark1: number;
-  mark2: number;
-  mark3: number;
-  mark4: number;
-  mark5: number;
-  mark6: number;
+  mark1: string;
+  mark2: string;
+  mark3: string;
+  mark4: string;
+  mark5: string;
+  mark6: string;
   message: string;
   email: string;
   from: string;
   spam: number;
   calls: number;
   hCaptchaResponse: string | null;
-  table_name: string;
 }
 
 export type TMarkKeys =
@@ -32,7 +31,7 @@ export interface ICheckboxeItem {
 }
 
 export interface CanceledFormProps {
-  tableName: string;
+  apiUrl: string;
   checkboxeItems: ICheckboxeItem[];
   textareaHeading: string;
   onShowCoupons: () => void;

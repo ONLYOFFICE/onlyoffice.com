@@ -1,4 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { logError } from "@src/lib/helpers/logger";
+import { validateEmail } from "@src/utils/validators";
+import { getClientIp } from "@src/lib/helpers/getClientIp";
 import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { emailTransporter } from "@src/config/email/transporter";
@@ -28,47 +31,74 @@ export default async function handler(
   } = req.body;
 
   try {
-    const ip =
-      (Array.isArray(req.headers["x-forwarded-for"])
-        ? req.headers["x-forwarded-for"][0]
-        : req.headers["x-forwarded-for"]
-      )?.split(",")[0] ||
-      req.socket.remoteAddress ||
-      null;
+    if (
+      !fullName ||
+      typeof fullName !== "string" ||
+      typeof email !== "string" ||
+      !validateEmail(email) ||
+      typeof website !== "string" ||
+      typeof companyName !== "string" ||
+      !date ||
+      typeof date !== "string" ||
+      !time ||
+      typeof time !== "string" ||
+      !timeZoneOffset ||
+      typeof timeZoneOffset !== "string" ||
+      !lang ||
+      typeof lang !== "string" ||
+      !module ||
+      typeof module !== "string" ||
+      typeof note !== "string" ||
+      typeof spam !== "boolean" ||
+      (!isTestEmail(email) &&
+        (!hCaptchaResponse || typeof hCaptchaResponse !== "string"))
+    ) {
+      return res
+        .status(400)
+        .json({ status: "error", message: "Invalid request parameters" });
+    }
+
+    const ip = getClientIp(req);
 
     if (!isTestEmail(email)) {
       const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
       if (!hCaptchaResult.success) {
         return res.status(400).json({
-          status: "errorHCaptchaInvalid",
-          error: hCaptchaResult.error,
+          status: "hCaptchaInvalid",
         });
       }
     }
 
-    const errorMessages = [];
-    const transporter = emailTransporter();
-    await transporter.sendMail({
-      to: [process.env.SUPPORT_EMAIL!],
-      subject: `${errorMessages.length ? "[Error] " : ""} - Demonstration Request`,
-      html: DemoOrderEmail({
-        fullName,
-        email,
-        website,
-        companyName,
-        lang,
-        date,
-        time,
-        timeZoneOffset,
-        module,
-        note,
-      }),
-    });
+    try {
+      const transporter = emailTransporter();
+      await transporter.sendMail({
+        to: [process.env.SUPPORT_EMAIL!],
+        subject: "Demonstration Request",
+        html: DemoOrderEmail({
+          fullName,
+          email,
+          website,
+          companyName,
+          lang,
+          date,
+          time,
+          timeZoneOffset,
+          module,
+          note: note.replace(/\n/g, "<br/>"),
+        }),
+      });
+    } catch (error) {
+      logError((req.url || "").split("?")[0], "Email transporter", error);
+      return res.status(500).json({
+        status: "error",
+        message: "Internal Server Error",
+      });
+    }
 
     if (spam) {
       const resSubscr = await fetch(
-        `${process.env.NEXT_PUBLIC_SITE_URL}/api/sendsubscription`,
+        `${process.env.BASE_URL}/api/sendsubscription`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -76,15 +106,17 @@ export default async function handler(
             firstName: "",
             email: email,
             type: "Common",
+            locale: lang,
           }),
         },
       );
       const data = await resSubscr.json();
 
       if (data.status !== "success") {
-        console.error(
-          "Demonstration Request sendsubscription returns errors:",
-          data,
+        logError(
+          (req.url || "").split("?")[0],
+          "sendsubscription",
+          data.message,
         );
         return res
           .status(400)
@@ -92,15 +124,12 @@ export default async function handler(
       }
     }
 
-    res.status(200).json({
-      status: "success",
-      message: "success",
-    });
+    return res.status(200).json({ status: "success" });
   } catch (error) {
-    console.error("Demonstration Request api returns errors:", error);
-    res.status(500).json({
+    logError((req.url || "").split("?")[0], "API", error);
+    return res.status(500).json({
       status: "error",
-      message: error,
+      message: "Internal Server Error",
     });
   }
 }

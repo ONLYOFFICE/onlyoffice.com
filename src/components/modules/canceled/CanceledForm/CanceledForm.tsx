@@ -7,7 +7,7 @@ import {
   StyledCanceledHCaptchaWrapper,
 } from "./CanceledForm.styled";
 import { Checkbox } from "@src/components/ui/Checkbox";
-import { useState, useCallback, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { TextArea } from "@src/components/ui/TextArea";
 import { HCaptcha } from "@src/components/ui/HCaptcha";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
@@ -16,7 +16,6 @@ import { validateEmail } from "@src/utils/validators";
 import { Text } from "@src/components/ui/Text";
 import { Link } from "@src/components/ui/Link";
 import { Input } from "@src/components/ui/Input";
-import { useRouter } from "next/router";
 import {
   ICanceledFormData,
   TMarkKeys,
@@ -24,9 +23,10 @@ import {
 } from "./CanceledForm.types";
 import { Heading } from "@src/components/ui/Heading";
 import { validateTestEmail } from "@src/utils/IsTestEmail";
+import { getFromParam } from "@src/utils/getParams";
 
 const CanceledForm = ({
-  tableName,
+  apiUrl,
   checkboxeItems,
   textareaHeading,
   onShowCoupons,
@@ -34,28 +34,26 @@ const CanceledForm = ({
   locale,
 }: CanceledFormProps) => {
   const { t } = useTranslation("canceled");
-  const router = useRouter();
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const [formStatus, setFormStatus] =
     useState<ILoaderButton["status"]>("default");
+  const from = getFromParam();
 
   const initialFormData = {
     checkboxes: "Other",
-    mark1: 0,
-    mark2: 0,
-    mark3: 0,
-    mark4: 0,
-    mark5: 0,
-    mark6: 1,
+    mark1: "0",
+    mark2: "0",
+    mark3: "0",
+    mark4: "0",
+    mark5: "0",
+    mark6: "1",
     message: "",
     email: "",
-    from: "",
+    from: from ?? "",
     spam: 0,
     calls: 1,
     hCaptchaResponse: null,
-    table_name: tableName,
     locale,
-    referer: "",
   };
   const [formData, setFormData] = useState<ICanceledFormData>(initialFormData);
   const [isEmpty, setIsEmpty] = useState({
@@ -64,23 +62,25 @@ const CanceledForm = ({
   });
   const [isTestEmailValid, setIsTestEmailValid] = useState(false);
 
-  const handleCheckboxChange = useCallback((itemId: string, mark: string) => {
+  const handleCheckboxChange = (mark: TMarkKeys) => {
     setFormData((prev) => {
-      const selected = prev.checkboxes ? prev.checkboxes.split(", ") : [];
-      const isChecked = selected.includes(itemId);
-      let newCheckboxesArr: string[];
-      if (isChecked) {
-        newCheckboxesArr = selected.filter((id) => id !== itemId);
-      } else {
-        newCheckboxesArr = [...selected, itemId];
-      }
-      return {
+      const isChecked = prev[mark] === "1";
+
+      const updatedMarks = {
         ...prev,
-        checkboxes: newCheckboxesArr.filter(Boolean).join(", "),
-        [mark]: isChecked ? 0 : 1,
+        [mark]: isChecked ? "0" : "1",
+      };
+
+      const orderedIds = checkboxeItems
+        .filter((item) => updatedMarks[item.mark as TMarkKeys] === "1")
+        .map((item) => item.id);
+
+      return {
+        ...updatedMarks,
+        checkboxes: orderedIds.join(", "),
       };
     });
-  }, []);
+  };
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prevData) => ({
@@ -108,9 +108,9 @@ const CanceledForm = ({
 
   const isAnyMarkChecked = (
     ["mark1", "mark2", "mark3", "mark4", "mark5", "mark6"] as TMarkKeys[]
-  ).some((key) => formData[key] === 1);
+  ).some((key) => formData[key] === "1");
 
-  const isOtherChecked = formData.mark6 === 1;
+  const isOtherChecked = formData.mark6 === "1";
 
   const isEmailValid = isEmailRequired
     ? formData.email.length > 0 && validateEmail(formData.email)
@@ -125,29 +125,6 @@ const CanceledForm = ({
     (isOtherChecked
       ? formData.message.length > 0 && isEmailValid && isHCaptchaPassed
       : isEmailValid && isHCaptchaPassed);
-
-  useEffect(() => {
-    if (router.isReady) {
-      let fromParam =
-        typeof router.query.from === "string" ? router.query.from : "";
-      if (!fromParam) {
-        const path =
-          typeof window !== "undefined" ? window.location.pathname : "";
-        fromParam =
-          path.split("/").splice(1, 2).join("/").split(".").shift() || "";
-      }
-      setFormData((prev) => ({ ...prev, from: fromParam }));
-    }
-  }, [router.isReady, router.query.from]);
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setFormData((prev) => ({
-        ...prev,
-        referer: document.referrer,
-      }));
-    }
-  }, []);
 
   const onSubmit = async () => {
     if (formStatus === "loading") return;
@@ -166,14 +143,14 @@ const CanceledForm = ({
     setFormStatus("loading");
 
     try {
-      const canceledFormResponse = await fetch("/api/canceled-form", {
+      const canceledFormResponse = await fetch(apiUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
       const canceledFormData = await canceledFormResponse.json();
 
-      if (canceledFormData.status === "errorHCaptchaInvalid") {
+      if (canceledFormData.status === "hCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");
@@ -186,7 +163,7 @@ const CanceledForm = ({
         setFormStatus("success");
         onShowCoupons();
 
-        if (formData.table_name === "account_cancelled_request") {
+        if (apiUrl === "/api/account-canceled") {
           setTimeout(() => {
             window.location.href = "/";
           }, 1500);
@@ -222,7 +199,7 @@ const CanceledForm = ({
             key={item.id}
             label={t(item.label)}
             checked={formData.checkboxes.split(", ").includes(item.id)}
-            onChange={() => handleCheckboxChange(item.id, item.mark)}
+            onChange={() => handleCheckboxChange(item.mark)}
           />
         ))}
       </StyledCanceledFormCheckboxWrapper>
@@ -242,7 +219,7 @@ const CanceledForm = ({
           label={t("YourMessageHere")}
           rows={4}
           fullWidth
-          required={!!formData.mark6}
+          required={formData.mark6 === "1"}
           status={formData.message ? "success" : "default"}
         />
       </StyledCanceledFormTextarea>
@@ -250,10 +227,12 @@ const CanceledForm = ({
       <Input
         onChange={(e) => handleInputChange("email", e.target.value)}
         onBlur={async () => {
-          setIsEmpty((prev) => ({
-            ...prev,
-            email: formData.email.length === 0,
-          }));
+          if (isEmailRequired) {
+            setIsEmpty((prev) => ({
+              ...prev,
+              email: formData.email.length === 0,
+            }));
+          }
           const isTestEmail = await validateTestEmail(formData.email);
           setIsTestEmailValid(Boolean(isTestEmail));
         }}

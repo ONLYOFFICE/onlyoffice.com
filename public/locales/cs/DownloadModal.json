@@ -4,7 +4,7 @@
   "NameSurname": "Celé jméno",
   "FullNameIsEmpty": "Pole pro celé jméno je prázdné",
   "Email": "E-mail",
-  "EmailIsEmpty": "Pole pro e-mail je prázdné",
+  "EmailIsEmpty": "E-mail je prázdný",
   "EmailIsIncorrect": "Nesprávný e-mail",
   "CompanyName": "Název firmy",
   "CompanyNameIsEmpty": "Pole pro název firmy je prázdné",

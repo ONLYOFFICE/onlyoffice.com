@@ -9,18 +9,18 @@
   "ReasonsTitle": "<0>7 důvody</0>, proč je ONLYOFFICE nejlepší alternativou pro Microsoft Office",
   "MaximumCompatibility": "Maximální kompatibilita se soubory MS Office",
   "MaximumCompatibilityText": "Díky použití formátu Office Open XML jako základního formátu zajišťuje ONLYOFFICE Docs nejvyšší kompatibilitu se soubory Microsoft Office: DOCX, XLSX a PPTX.",
-  "DesktopApp": "Web, stolní počítač, mobilní zařízení",
+  "DesktopApp": "Web, desktop, mobil",
   "DesktopAppText": "S aplikací ONLYOFFICE můžete pracovat online z libovolného prohlížeče a operačního systému, upravovat dokumenty offline pomocí bezplatných aplikací pro počítače se systémy Windows, Linux a macOS a také používat bezplatné mobilní aplikace pro Android a iOS.",
-  "DocsSheetsSlides": "Docs, sheets, slides, forms, PDF",
-  "DocsSheetsSlidesText": "Edit and collaborate on text documents and spreadsheets of any complexity, create stunning presentations, view and annotate PDFs. Build professional-looking forms and templates from scratch or any existing DOCX file, let other users fill them out, and save forms as fillable PDF files.",
+  "DocsSheetsSlides": "Dokumenty, tabulky, prezentace, formuláře, PDF",
+  "DocsSheetsSlidesText": "Upravujte a spolupracujte na textových dokumentech a tabulkách jakékoli složitosti, vytvářejte úžasné prezentace, prohlížejte a anotujte soubory PDF. Vytvářejte profesionálně vypadající formuláře a šablony od nuly nebo z jakéhokoli existujícího souboru DOCX, nechte je vyplnit ostatními uživateli a ukládejte formuláře jako vyplnitelné soubory PDF.",
   "Seamless": "Bezproblémová spolupráce",
   "SeamlessText": "ONLYOFFICE Docs poskytuje uživatelům režimy společné editace na úrovni znaků a odstavců, prohlížení a sledování změn, historii verzí, komentáře a zmínky, vestavěný chat, pluginy pro audio a videohovory. Můžete snadno sdílet dokumenty s flexibilními oprávněními, jako je komentování, prohlížení, vyplňování formulářů, vlastní filtrování.",
   "DataSecurity": "Zabezpečení dat",
   "DataSecurityText": "Řešení ONLYOFFICE s otevřeným zdrojovým kódem lze nasadit na vlastní server, takže veškerá data zůstávají zcela ve vaší firmě. <0>Soukromé místnosti</0> umožňují ukládat, upravovat a spoluvytvářet dokumenty ve stále zašifrované podobě.",
-  "AIHelper": "AI helper",
-  "AIHelperText": "Make use of the AI assistant plugin to boost work with your texts: run word analysis and explore the meaning of unknown words, generate passages, images and keywords, summarize and translate stories, find synonyms.",
+  "AIHelper": "AI pomocník",
+  "AIHelperText": "Využijte plugin AI asistenta k zefektivnění práce s texty: provádějte analýzu slov a zkoumejte význam neznámých slov, generujte pasáže, obrázky a klíčová slova, shrňujte a překládejte příběhy, hledejte synonyma.",
   "Flexibility": "Flexibilita",
-  "FlexibilityText": "Unlike the tech giants, ONLYOFFICE doesn't lock the customers into its collaborative ecosystem. You are free to choose how to use the online editors: as a part of the room-based environment ONLYOFFICE DocSpace, within any sync&share or ECM service like Nextcloud, Alfresco, Confluence, Seafile, etc., or integrated into the solution you're building yourself.",
+  "FlexibilityText": "Na rozdíl od technologických gigantů ONLYOFFICE nezavazuje zákazníky ke svému ekosystému. Můžete si svobodně vybrat, jak budete online editory používat: jako součást prostředí ONLYOFFICE DocSpace založeného na místnostech, v rámci jakékoli služby synchronizace a sdílení nebo ECM, jako je Nextcloud, Alfresco, Confluence, Seafile atd., nebo integrované do řešení, které si sami vytváříte.",
 
-  "PresentationTitle": "Prohlédněte <0>si v prezentaci</0> rozdíl mezi kancelářskými balíky:"
+  "PresentationTitle": "Podívejte se na <0>tuto prezentaci</0> a zjistěte, v čem se liší jednotlivé kancelářské balíky:"
 }

@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import { logError } from "@src/lib/helpers/logger";
 import { parse } from "cookie";
 import { checkRateLimit } from "@src/lib/helpers/checkRateLimit";
 import { getClientIp } from "@src/lib/helpers/getClientIp";
@@ -7,11 +8,12 @@ import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 import { validateEmail } from "@src/utils/validators";
 import { LoginEmail } from "@src/components/emails/LoginEmail";
 import { RegisterEmail } from "@src/components/emails/RegisterEmail";
-import { findByEmail } from "@src/lib/requests/thirdparty/findByEmail";
-import { generateKey } from "@src/lib/requests/thirdparty/generate";
-import { sendEmail } from "@src/lib/requests/thirdparty/send";
-import { getLanguage } from "@src/lib/helpers/getLanguage";
-import { getServerI18n } from "@src/lib/helpers/getServerI18n";
+import {
+  generateKey,
+  findByEmail,
+  sendEmail,
+} from "@src/lib/requests/thirdparty";
+import { getT } from "@src/lib/helpers/i18next";
 
 export default async function handler(
   req: NextApiRequest,
@@ -25,6 +27,7 @@ export default async function handler(
 
   try {
     const {
+      locale,
       desktop,
       email,
       spam,
@@ -52,24 +55,31 @@ export default async function handler(
 
       if (!hCaptchaResult.success) {
         return res.status(400).json({
-          status: "errorHCaptchaInvalid",
-          error: hCaptchaResult.error,
+          status: "hCaptchaInvalid",
         });
       }
     }
 
-    const { data: generateKeyData } = await generateKey({ email });
+    const generateKeyData = await generateKey({
+      email,
+    });
+
+    if (generateKeyData.status !== 200) {
+      return res
+        .status(generateKeyData.status)
+        .json({ status: "error", message: generateKeyData.message });
+    }
+
     const cookies = parse(req.headers.cookie || "");
     const utmCampaign = cookies.utm_campaign || null;
-    const emailKey = `${generateKeyData.emailKey}1`;
-    const language = getLanguage(req);
-    const langPrefix = language === "en" ? "" : language;
-    const i18n = await getServerI18n(language, ["docspace-registration"]);
+    const emailKey = `${generateKeyData.data.emailKey}1`;
+    const langPrefix = locale === "en" ? "" : locale;
+    const t = await getT(locale, ["LoginEmail", "RegisterEmail"]);
 
     const queryString = new URLSearchParams();
     if (desktop) queryString.append("desktop", desktop);
     queryString.append("epkey", emailKey);
-    queryString.append("eskey", generateKeyData.linkKey);
+    queryString.append("eskey", generateKeyData.data.linkKey);
     if (langPrefix) queryString.append("language", langPrefix);
     if (awsRegion) queryString.append("awsRegion", awsRegion);
     queryString.append("spam", spam);
@@ -78,33 +88,49 @@ export default async function handler(
     if (utmCampaign) queryString.append("campaign", utmCampaign);
 
     const queryParams = queryString.toString();
-    const baseUrl = `${req.headers.origin}${langPrefix ? `/${langPrefix}` : ""}`;
+    const baseUrl = `${process.env.BASE_URL}${langPrefix ? `/${langPrefix}` : ""}`;
 
-    const { data: existingTernants } = await findByEmail({ email });
+    const findByEmailData = await findByEmail({
+      email,
+    });
 
-    const isLogin = existingTernants.length > 0;
-    const subject = isLogin
-      ? i18n.t("YourLoginLinkToOODocSpace")
-      : i18n.t("YourConfirmationLinkForOODocSpace");
-    const body = isLogin
-      ? await LoginEmail({
-          baseUrl,
-          queryParams,
-          unsubscribeId: emailKey,
-          language,
-        })
-      : await RegisterEmail({
-          baseUrl,
-          queryParams,
-          unsubscribeId: emailKey,
-          language,
-        });
+    if (findByEmailData.status !== 200) {
+      return res
+        .status(findByEmailData.status)
+        .json({ status: "error", message: findByEmailData.message });
+    }
 
-    await sendEmail({ email, subject, body });
+    const isLogin = findByEmailData.data.length > 0;
+
+    const sendEmailData = await sendEmail({
+      email,
+      Subject: isLogin
+        ? t("YourLoginLinkToOODocSpace")
+        : t("YourConfirmationLinkForOODocSpace"),
+      Body: isLogin
+        ? await LoginEmail({
+            baseUrl,
+            queryParams,
+            unsubscribeId: emailKey,
+            language: locale,
+          })
+        : await RegisterEmail({
+            baseUrl,
+            queryParams,
+            unsubscribeId: emailKey,
+            language: locale,
+          }),
+    });
+
+    if (sendEmailData.status !== 200) {
+      return res
+        .status(sendEmailData.status)
+        .json({ status: "error", message: sendEmailData.message });
+    }
 
     return res.status(200).json({ status: "success", message: email });
-  } catch (err) {
-    console.error("register error:", err);
+  } catch (error) {
+    logError((req.url || "").split("?")[0], "API", error);
     return res
       .status(500)
       .json({ status: "error", message: "Internal Server Error" });

@@ -21,7 +21,7 @@ const Faq = () => {
                 color="#FF6F3D"
                 textUnderline={true}
                 hover="underline-none"
-                href="/legalterms#nonprofit"
+                href="/legalterms"
               />,
               <Link
                 key="1"

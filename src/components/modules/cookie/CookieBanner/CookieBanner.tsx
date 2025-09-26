@@ -149,6 +149,8 @@ const CookieBanner = () => {
     const iframeWidth = iframe.getBoundingClientRect().width;
     const iframeOffset = iframeWidth + 30;
 
+    localStorage.setItem("COOKIE_FAB_OFFSET", String(iframeOffset));
+
     if (fabRef.current.style.right !== `${iframeOffset}px`) {
       fabRef.current.style.right = `${iframeOffset}px`;
     }
@@ -271,6 +273,7 @@ const CookieBanner = () => {
           ref={fabRef}
           id="cookieBanner"
           onClick={handleBanner}
+          $offset={localStorage.getItem("COOKIE_FAB_OFFSET")}
         />
       )}
       {showBanner && (

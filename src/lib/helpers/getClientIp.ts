@@ -1,11 +1,11 @@
 import type { NextApiRequest } from "next";
 
-export function getClientIp(req: NextApiRequest): string {
+export function getClientIp(req: NextApiRequest): string | null {
   return (
     (Array.isArray(req.headers["x-forwarded-for"])
       ? req.headers["x-forwarded-for"][0]
       : req.headers["x-forwarded-for"]) ||
     req.socket.remoteAddress ||
-    "unknown"
+    null
   );
 }

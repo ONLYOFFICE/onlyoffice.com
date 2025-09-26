@@ -11,7 +11,7 @@
   "YouHaveBeenResubscribed": "Byli jste znovu přihlášeni",
   "TheEmailHasBeenSuccessfullyAdded": "Váš e-mail - <0>{{email}}</0> - byl úspěšně přidán do seznamu adres ONLYOFFICE. Obdržíte aktualizace produktu a oznámení.",
   "WouldYouLikToUnsubscribeFromAllOOEmails": "Chcete se odhlásit ze všech ONLYOFFICE e-mailů: aktualizace a oznámení o produktu, oznámení na portálu a tipy a triky? Klikněte na odkaz: <0>Zrušit odběr všech oznámení</0>",
-  "EmailIsEmpty": "Pole pro e-mail je prázdné",
+  "EmailIsEmpty": "E-mail je prázdný",
   "EmailIsIncorrect": "Nesprávný e-mail",
   "TheEmailAddressIsNotRegistered": "Tato <0>{{email}}</0> e-mailová adresa není registrována.",
   "UnsubscribeSuccessful": "Odhlášení bylo úspěšné ",

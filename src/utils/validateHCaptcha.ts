@@ -16,14 +16,9 @@ export async function validateHCaptcha(response: string, ip: string | null) {
 
     const data = await res.json();
 
-    if (data.success) {
-      return { success: true };
-    } else {
-      console.error("hCaptcha api returns errors:", data);
-      return { success: false, error: data["error-codes"] };
-    }
+    return { success: data.success };
   } catch (error) {
-    console.error("hCaptcha validation exception:", error);
+    console.error("validateHCaptcha error:", error);
     return { success: false, error };
   }
 }

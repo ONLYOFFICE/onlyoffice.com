@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
+import { logError } from "@src/lib/helpers/logger";
 import {
   S3Client,
   S3ClientConfig,
@@ -11,6 +12,7 @@ import formidable, { Files, Fields, File } from "formidable";
 import fs from "fs";
 import jwt from "jsonwebtoken";
 import crypto, { randomUUID } from "crypto";
+import { getClientIp } from "@src/lib/helpers/getClientIp";
 import { isTestEmail } from "@src/utils/IsTestEmail";
 import { validateHCaptcha } from "@src/utils/validateHCaptcha";
 
@@ -169,10 +171,20 @@ export default async function handler(
       .json({ status: "error", message: "Missing AWS S3 configuration" });
   }
 
-  const form = formidable();
+  const form = formidable({
+    maxFileSize: 5 * 1024 * 1024,
+  });
 
   form.parse(req, async (err, fields: ICustomFields, files: ICustomFiles) => {
     if (err) {
+      if (err.message.includes("maxTotalFileSize")) {
+        return res.status(400).json({
+          status: "error",
+          message:
+            "The uploaded file likely exceeded the maximum file size 5 Mb",
+        });
+      }
+
       console.error("Form parsing error:", err);
       return res
         .status(500)
@@ -221,21 +233,14 @@ export default async function handler(
     const hCaptchaResponse = fields.hCaptchaResponse?.[0] || "";
 
     try {
-      const ip =
-        (Array.isArray(req.headers["x-forwarded-for"])
-          ? req.headers["x-forwarded-for"][0]
-          : req.headers["x-forwarded-for"]
-        )?.split(",")[0] ||
-        req.socket.remoteAddress ||
-        null;
+      const ip = getClientIp(req);
 
       if (!isTestEmail(email)) {
         const hCaptchaResult = await validateHCaptcha(hCaptchaResponse, ip);
 
         if (!hCaptchaResult.success) {
           return res.status(400).json({
-            status: "errorHCaptchaInvalid",
-            error: hCaptchaResult.error,
+            status: "hCaptchaInvalid",
           });
         }
       }
@@ -370,12 +375,12 @@ export default async function handler(
       cleanup(filePath, fileName);
 
       return res.status(200).json({
-        status: "convertRequestSuccessful",
+        status: "success",
         fileUrl: fileUrl,
         thumbnail: imageRequest?.fileUrl ?? "",
       });
     } catch (error) {
-      console.error("Upload error:", error);
+      logError((req.url || "").split("?")[0], "API", error);
 
       activeConversions.delete(uuid);
       cleanup(filePath, fileName);

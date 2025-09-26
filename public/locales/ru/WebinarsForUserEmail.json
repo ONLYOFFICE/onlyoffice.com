@@ -1,0 +1,13 @@
+{
+  "WebinarSubject": "Вы зарегистрировались на вебинар ONLYOFFICE",
+  "Hello": "Здравствуйте!",
+  "ThankYouForRegistering": "Спасибо за регистрацию на вебинар \"{{webinarTheme}}\".",
+  "SaveTheDate": "Сохраните дату",
+  "WebinarsAreLiveStreamed": "Вы сможете посмотреть трансляцию на нашем <a target=\"_blank\" style=\"color: #FF6F3D;\" href=\"https://www.youtube.com/user/onlyofficeTV\">YouTube-канале</a>: мы заранее пришлем вам ссылку.",
+  "QuestionsSuggestions": "Если у вас есть какие-либо вопросы или предложения, пишите нам на <a target=\"_blank\" style=\"color: #FF6F3D;\" href=\"mailto:webinars@onlyoffice.com\">webinars@onlyoffice.com</a>.",
+  "CheckAllOnlineEvents": "Посмотрите список всех онлайн-событий ONLYOFFICE <a target=\"_blank\" style=\"color: #FF6F3D;\" href=\"https://onlyoffice.com/ru/webinars\">на сайте</a>. Будем признательны, если вы поделитесь ссылкой с друзьями, которым мог бы быть интересен наш проект.",
+  "TrulyYours": "С уважением,",
+  "ONLYOFFICETeam": "Команда ONLYOFFICE",
+  "ThisEmailIsGeneratedAutomatically": "Это письмо создано автоматически, отвечать на него не нужно.",
+  "Unsubscribe": "Кликните здесь, чтобы отписаться"
+}
