@@ -23,7 +23,7 @@ const Form = ({ locale }: ILocale) => {
     >
       <Container>
         <CanceledForm
-          tableName="install_cancelled_request"
+          apiUrl="/api/install-canceled"
           textareaHeading={t("WhatShouldWeImproveInOnlyofficePersonal")}
           checkboxeItems={checkboxeItems}
           onShowCoupons={() => setShowMessage(true)}
