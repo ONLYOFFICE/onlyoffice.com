@@ -4,7 +4,7 @@
 
   "OnlineOfficeForAlfresco": "Online office for <0>Alfresco</0>",
   "EnableCollaborativeDocumentEditing": "Enable collaborative document editing in Alfresco Share using ONLYOFFICE Docs",
-  "RequestFreeDemo": "Request free demo",
+  "RequestFreeDemo": "Vraag een gratis demo aan",
   "HeroImgUrl": "/images/templates/office-for-alfresco/hero/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-alfresco/hero/hero@2x.png",
 
@@ -27,29 +27,29 @@
 
   "MarketplaceConnectorTitle": "Designed for seamless integration with Alfresco",
   "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Alfresco now in the official Alfresco Add-ons directory.",
-  "GetStarted": "Get started",
+  "GetStarted": "Beginnen",
 
-  "WhyOO": "Why ONLYOFFICE?",
-  "FeaturesFormats": "Support for more than <0>50 file formats</0>. Fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
-  "FeaturesCoEditing": "<0>Real-time</0> and paragraph-locking co-editing, review, version history, document comparison, comments & mentions.",
+  "WhyOO": "Waarom ONLYOFFICE?",
+  "FeaturesFormats": "Ondersteuning voor meer dan <0>50 bestandsformaten</0>. Volledig geschikt voor MS Office-formaten: DOCX, XLSX, PPTX.",
+  "FeaturesCoEditing": "<0>Realtime</0> en paragraafvergrendeling, gezamenlijke bewerking, beoordeling, versiegeschiedenis, documentvergelijking, opmerkingen en vermeldingen.",
   "FeaturesFree": "Free Community and Scalable Enterprise versions. <0>Free 30-day trial.</0> Self-hosted solution for total control over your data.",
   "FeaturesSecurity": "<0>Enhanced security.</0> Flexible access rights and JWT. Encryption at rest and in transit. Watermarking and password protection. Open source code.",
   "FeaturesConfiguration": "<0>Easy configuration.</0> Seamless integration with the ready-to-use connector in the Alfresco admin console and automated testing.",
-  "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools. <0>Integrated AI helper</0> (ChatGPT or ZhiPu Copilot).",
+  "FeaturesAIHelper": "Een uitgebreide reeks tools voor bewerken, opmaken en stylen. <0>Geïntegreerde AI helper</0> (ChatGPT of ZhiPu Copilot).",
 
-  "HowToStart": "How to start",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>.",
+  "HowToStart": "Hoe begint u?",
+  "HowToStartStep1": "Implementeer <0>ONLYOFFICE Docs</0> op uw eigen server of meld u aan voor <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Get the integration app from the <0>Alfresco Add-ons directory</0>.",
   "HowToStartStep3": "Configure the integration app in the  Alfresco Administration Console.",
   "HowToConnect": "How to integrate ONLYOFFICE with Alfresco Share",
 
   "LearnMoreHeading": "Learn more about ONLYOFFICE Alfresco integration",
-  "HelpCenter": "Help Center",
+  "HelpCenter": "Helpcentrum",
   "UsefulGuides": "Useful guides on ONLYOFFICE Alfresco Share integration.",
   "VisitOurHelpCenter": "Visit our Help Center",
   "SuccessStory": "Success Story",
   "SuccessStoryDescription": "Atol CD reinforces online collaboration in Alfresco Digital Workspace by integrating ONLYOFFICE Docs.",
-  "ReadTheFullStory": "Read the full story",
+  "ReadTheFullStory": "Lees het hele verhaal",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Heeft u een app nodig om ONLYOFFICE te koppelen aan uw favoriete webservice? Of heeft u er een ontwikkeld?"
 }

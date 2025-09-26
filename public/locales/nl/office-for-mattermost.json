@@ -4,7 +4,7 @@
 
   "OnlineOfficeForConnector": "Online office for <0>Mattermost</0>",
   "Subheader": "Open, bewerk en schrijf samen aan office documenten in uw Mattermost chat met ONLYOFFICE Docs",
-  "GetItNow": "Get it now",
+  "GetItNow": "Download nu",
   "FullyCompatibleWithDocxXlsxAndPptx": "Volledig geschikt voor docx, xlsx en pptx",
 
   "GetStarted": "Aan de slag",
@@ -22,7 +22,7 @@
   "Reason6": "Broncode op GitHub",
 
   "HowToStart": "Hoe begint u?",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or create <1>Docs Cloud</1> account.",
+  "HowToStartStep1": "Implementeer <0>ONLYOFFICE Docs</0> op uw eigen server of maak een <1>Docs Cloud</1>-account aan.",
   "HowToStartStep2": "Get the ONLYOFFICE connector from <0>GitHub</0>.",
   "HowToStartStep3": "Configure the connector and enable JWT.",
 

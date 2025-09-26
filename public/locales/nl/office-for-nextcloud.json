@@ -4,8 +4,8 @@
 
   "OnlineOfficeForNextcloud": "Online office for Nextcloud",
   "WorkOnOfficeDocuments": "Work on office documents within Nextcloud using ONLYOFFICE Docs",
-  "GetItNow": "Get it now",
-  "RequestFreeDemo": "Request free demo",
+  "GetItNow": "Download nu",
+  "RequestFreeDemo": "Vraag een gratis demo aan",
   "HeroImgUrl": "/images/templates/office-for-nextcloud/hero/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-nextcloud/hero/hero@2x.png",
 
@@ -29,31 +29,31 @@
   "FreeAppsHeading": "Access and edit your documents stored in Nextcloud with <0>free desktop and mobile apps</0>",
   "FreeAppsDesktopText": "Edit and co-edit your Nextcloud files in the desktop environment with <0>ONLYOFFICE Desktop Editors</0> on Windows, Linux, or macOS",
   "FreeAppsMobileText": "Read and edit your Nextcloud docs, sheets, and slides with ONLYOFFICE Documents mobile apps",
-  "GetFreeDesktopApps": "Get free desktop apps",
+  "GetFreeDesktopApps": "Download gratis desktop apps",
 
   "MarketplaceConnectorTitle": "Designed for seamless integration with Nextcloud",
   "MarketplaceConnectorDescription": "Get the ONLYOFFICE app for Nextcloud now from the Nextcloud App Store.",
-  "GetStarted": "Get started",
+  "GetStarted": "Beginnen",
 
-  "WhyOO": "Why ONLYOFFICE?",
-  "FeaturesFormats": "Support for more than <0>50 file formats</0>, fully compatible with MS Office formats: DOCX, XLSX, PPTX.",
-  "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools. Integrated <0>AI helper</0>.",
-  "FeaturesCoEditing": "Real-time and paragraph-locking <0>co-editing</0>, review, version history, document comparison, comments & chat. Audio and video calls.",
+  "WhyOO": "Waarom ONLYOFFICE?",
+  "FeaturesFormats": "Ondersteuning voor meer dan <0>50 bestandsformaten</0>, volledig geschikt voor MS Office formaten: DOCX, XLSX, PPTX.",
+  "FeaturesAIHelper": "Een uitgebreide reeks tools voor bewerken, opmaken en stylen. Geïntegreerde <0>AI helper</0>.",
+  "FeaturesCoEditing": "Realtime en paragraafvergrendeling, gezamenlijke bewerking, beoordeling, versiegeschiedenis, documentvergelijking, opmerkingen en chat. Audio and video calls.",
   "FeaturesSupport": "<0>Public sharing</0> support. Sharing via Nextcloud Talk. <0>Federated Cloud sharing</0> support.",
   "FeaturesSecurity": "<0>Enhanced security.</0> Flexible access rights and JWT. Encryption in transit. Watermarking and password protection. Open source code.",
   "FeaturesConfiguration": "<0>Easy configuration</0> from the Nextcloud admin panel. Seamless integration with ready-to-use connector available on the Nextcloud App Store.",
   "FeaturesFree": "Free Community version and <0>scalable Enterprise</0> solution. <0>Free 30-day trial.</0>",
   "FeaturesIntegration": "Integration with <0>Nextcloud desktop</0> and mobile apps.",
 
-  "HowToStart": "How to start",
+  "HowToStart": "Hoe begint u?",
   "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>",
   "HowToStartStep2": "Get the integration app from the <0>Nextcloud App Store</0>",
   "HowToStartStep3": "Configure the integration app.",
   "HowToConnect": "Configuring ONLYOFFICE connector for Nextcloud",
-  "ReadDetailedInstructions": "Read detailed instructions in the <0>Help Center</0>.",
+  "ReadDetailedInstructions": "Lees de gedetailleerde instructies in het <0>Helpcentrum</0>.",
 
   "PartnerHeading": "Are you a Nextcloud partner? How about improving your Nextcloud user experience and increasing your revenue?",
-  "PartnerText": "Join the ONLYOFFICE partnership program right now.",
+  "PartnerText": "Word nu lid van het ONLYOFFICE partnerprogramma.",
 
   "LearnMoreBlueDragon": "How the Blue Dragon Children’s Foundation helps young people in Vietnam using ONLYOFFICE and Nextcloud",
   "LearnMoreStiftung": "How the Stiftung der Deutschen Wirtschaft manages its funding processes with ONLYOFFICE and Nextcloud",
@@ -63,7 +63,7 @@
   "LearnMoreStellfeld": "How Stellfeld & Ernst GmbH shapes digital collaboration using ONLYOFFICE Docs and Nextcloud",
   "LearnMoreIBE": "Medical research at IBE: how ONLYOFFICE and Nextcloud help the institute",
   "LearnMoreLoveFoundation": "How ONLYOFFICE and Nextcloud help Love Foundation support socially important projects",
-  "ReadTheFullStory": "Read the full story",
+  "ReadTheFullStory": "Lees het hele verhaal",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Heeft u een app nodig om ONLYOFFICE te koppelen aan uw favoriete webservice? Of heeft u er een ontwikkeld?"
 }

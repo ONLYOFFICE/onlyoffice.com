@@ -4,7 +4,7 @@
 
   "OnlineOfficeForMoodle": "Online office for Moodle",
   "WorkWithOfficeDocuments": "Work with office documents within Moodle using ONLYOFFICE",
-  "GetStarted": "Get started",
+  "GetStarted": "Beginnen",
 
   "MaterialsTitle": "Store all learning materials in one place and effortlessly share them with students",
   "MaterialsTab1Label": "Embed public rooms from your DocSpace account into Moodle courses",
@@ -60,7 +60,7 @@
   "MarketplaceConnectorTitle": "Built to work in Moodle seamlessly",
   "MarketplaceConnectorDescription": "Install ONLYOFFICE app for Moodle today from the Moodle App Marketplace",
 
-  "WhyOO": "Why ONLYOFFICE?",
+  "WhyOO": "Waarom ONLYOFFICE?",
   "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools. Mendeley and Zotero integration. <0>AI helper.</0>",
   "FeaturesCoEditing": "Real-time and paragraph-locking <0>co-editing</0>, review, document comparison, comments & chat. Audio and video calls.",
   "FeaturesFormats": "Support for more than <0>50 file formats</0>. Fully compatible with MS Office formats.",
@@ -68,7 +68,7 @@
   "FeaturesOpenSourceCode": "JWT. Watermarking and password protection. <0>Open source code</0> available on GitHub.",
   "FeaturesFreeTrial": "Scalable Enterprise versions. <0>Free 30-day trial.</0> Educational discounts.",
 
-  "HowToStart": "How to start?",
+  "HowToStart": "Hoe begint u??",
   "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>",
   "HowToStartStep2": "Get the plugins from the Moodle directory: <0>main integration plugin</0> / <1>Assign Submission plugin</1>.",
   "HowToStartStep3": "Follow the usual Moodle plugin installation steps.",
@@ -83,11 +83,11 @@
 
 
   "LearnMoreHeading": "Learn more about Moodle ONLYOFFICE integration",
-  "HowEnsuresDigitalEquality": "How Collège-Lycée Sacré Cœur de Taravao ensures digital equality for all students using ONLYOFFICE and Moodle",
-  "ReadTheFullStory": "Read the full story",
+  "HowEnsuresDigitalEquality": "Hoe College Sacré Coeur Taravao digitale gelijkheid voor alle studenten waarborgt met behulp van ONLYOFFICE en Moodle",
+  "ReadTheFullStory": "Lees het hele verhaal",
   "WatchAVideoVersion": "Watch a video version",
   "WhyWeChoseMoodle": "Why we chose Moodle for creating an ONLYOFFICE training center",
   "NewUpdatesOfOOPlugins": "New updates of ONLYOFFICE plugins for Moodle: PDF form creation and editing, Docs Cloud connection, certificate verification",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?"
+  "NeedAnAppToConnect": "Heeft u een app nodig om ONLYOFFICE Docs te koppelen aan uw favoriete webservice? Of heeft u er een ontwikkeld?"
 }

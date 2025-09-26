@@ -1,0 +1,40 @@
+{
+  "PageTitle": "Online office for Trello | ONLYOFFICE",
+  "PageDescription": "Work on all kinds of office documents within Trello using ONLYOFFICE Docs",
+
+  "OnlineOfficeForConnector": "Online office for Trello",
+  "Subheader": "Work on all kinds of office documents within Trello using ONLYOFFICE Docs",
+  "GetItNow": "Download nu",
+  "HeroImgUrl": "/images/templates/office-for-trello/hero/main.png",
+  "HeroImgUrl2x": "/images/templates/office-for-trello/hero/main@2x.png",
+
+  "WorkWithinConnector": "Work on office documents uploaded to Trello board cards",
+  "DocumentsTab1Label": "Allow admins and members with normal rights to edit DOCX, XLSX, and PPTX files.",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-trello/documents/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-trello/documents/screen1@2x.png",
+  "DocumentsTab2Label": "Grant observers rights to view uploaded documents.",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-trello/documents/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-trello/documents/screen2@2x.png",
+  "DocumentsTab3Label": "Co-author documents with your colleagues in real-time.",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-trello/documents/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-trello/documents/screen3@2x.png",
+  "GetStarted": "Beginnen",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Trello",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE Power-Up for Trello now from the Atlassian Marketplace.",
+
+  "WhyOO": "Waarom ONLYOFFICE?",
+  "Reason1": "Ondersteuning voor meer dan <0>50 bestandsformaten</0>, volledig geschikt voor MS Office formaten: DOCX, XLSX, PPTX.",
+  "Reason2": "Een uitgebreide reeks tools voor bewerken, opmaken en stylen. Geïntegreerde <0>AI helper.</0>",
+  "Reason3": "Real-time and paragraph-locking <0>co-editing</0>, review, version history, document comparison, comments & chat.",
+  "Reason4": "<0>Verbeterde beveiliging.</0> Flexibele toegangsrechten en JWT. Watermerken en wachtwoordbeveiliging. Open source-code.",
+  "Reason5": "Seamless integration with ready-to-use connector from the Atlassian Marketplace. <0>Easy configuration</0>.",
+  "Reason6": "Cloud- en zelfgehoste oplossing voor volledige controle over uw gegevens. Schaalbare Enterprise versies. <0>Gratis proefperiode van 30 dagen</0>.",
+
+  "HowToStart": "Hoe begint u?",
+  "HowToStartStep1": "Implementeer <0>ONLYOFFICE Docs</0> op uw eigen server of maak een <1>Docs Cloud</1>-account aan.",
+  "HowToStartStep2": "Get the power-up from the <0>Atlassian Marketplace</0>.",
+  "HowToStartStep3": "Configure the power-up and enable JWT.",
+
+  "NeedAnAppToConnect": "Heeft u een app nodig om ONLYOFFICE te koppelen aan uw favoriete webservice? Of heeft u er een ontwikkeld?"
+}

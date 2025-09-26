@@ -3,7 +3,7 @@
   "PageDescription": "Vergelijk ONLYOFFICE met Zoho Docs. Open een en hetzelfde DOCX-document op verschillende platforms en vergelijk de resultaten.",
 
   "HeroTitle": "<0>ONLYOFFICE</0>, het beste alternatief voor Zoho Docs",
-  "GetOODocsNow": "Koop ONLYOFFICE nu",
+  "GetOODocsNow": "Download ONLYOFFICE DOCS nu",
   "CompatibleWithMicrosoftOfficeFormats": "100% compatibiliteit met Microsoft Office formats",
 
   "ReasonsTitle": "<0>7 redenen</0> waarom ONLYOFFICE het beste Zoho Docs-alternatief is",
@@ -11,17 +11,17 @@
   "OpenSourceText": "ONLYOFFICE biedt gebruikers open-source oplossingen. Onze source code staat op GitHub en dat garandeert transparantie en betrouwbaarheid: u kunt hem op elk moment bekijken.",
   "DesktopApp": "Web, desktop, mobiel",
   "DesktopAppText": "Met ONLYOFFICE kunt u online werken vanuit elke browser en elk besturingssysteem, offline documenten bewerken met de gratis desktop apps voor Windows, Linux en macOS, en gratis mobiele apps gebruiken voor Android en iOS.",
-  "DocsSheetsSlides": "Docs, sheets, slides, forms, PDF",
-  "DocsSheetsSlidesText": "Edit and collaborate on text documents and spreadsheets of any complexity, create stunning presentations, view and annotate PDFs. Build professional-looking forms and templates from scratch or any existing DOCX file, let other users fill them out, and save forms as fillable PDF files.",
+  "DocsSheetsSlides": "Documenten, bladen, dia's, PDF",
+  "DocsSheetsSlidesText": "Bewerk en werk samen aan tekstdocumenten en spreadsheets van elke complexiteit, maak verbluffende presentaties, bekijk en annoteer pdf's. Ontwerp professionele formulieren en sjablonen vanaf niets of op basis van een bestaand DOCX-bestand, laat andere gebruikers deze invullen en sla formulieren op als invulbare PDF-bestanden.",
   "Seamless": "Naadloze samenwerking",
-  "SeamlessText": "ONLYOFFICE Docs provides users with character- and paragraph-level co-editing modes, review and track changes, version history, comments and mentions, built-in chat, plugins for audio and video calls. You can easily share your documents with flexible permissions such as commenting, reviewing, filling forms, custom filtering.",
+  "SeamlessText": "ONLYOFFICE Docs biedt gebruikers mogelijkheden voor gezamenlijke bewerking op teken- en alinea-niveau, het beoordelen en bijhouden van wijzigingen, versiegeschiedenis, opmerkingen en vermeldingen, ingebouwde chat en plug-ins voor audio- en videogesprekken. U kunt uw documenten eenvoudig delen met flexibele machtigingen, zoals opmerkingen plaatsen, beoordelen, formulieren invullen en aangepaste filters instellen.",
   "Flexibility": "Flexibiliteit",
-  "FlexibilityText": "You are free to choose how to use the online editors: as a part of the room-based environment ONLYOFFICE DocSpace, within any sync&share or ECM service like Nextcloud, Alfresco, Confluence, Seafile, etc., or integrated into the solution you're building yourself.",
-  "AIHelper": "AI helper",
-  "AIHelperText": "Make use of the AI assistant plugin to boost work with your texts: run word analysis and explore the meaning of unknown words, generate passages, images and keywords, summarize and translate stories, find synonyms.",
-  "Security": "Gegevensbeveiliging",
+  "FlexibilityText": "U bent volledig vrij in het gebruik van de online editors: als onderdeel van de kamergebaseerde omgeving ONLYOFFICE DocSpace, binnen elke synchronisatie- en deelservice of ECM-dienst zoals Nextcloud, Alfresco, Confluence, Seafile, enzovoort, of geïntegreerd in de oplossing die u zelf ontwikkelt.",
+  "AIHelper": "AI-ondersteuning",
+  "AIHelperText": "Maak gebruik van de AI-assistent plug-in om uw werk met teksten te verbeteren: voer woordanalyses uit en ontdek de betekenis van onbekende woorden, genereer passages, afbeeldingen en trefwoorden, vat verhalen samen en vertaal ze, en zoek synoniemen.",
+  "Security": "Beveiliging",
   "SecurityText": "Open-source ONLYOFFICE oplossingen kunnen op uw eigen server worden ingezet, zodat alle gegevens volledig bij u blijven. In privékamers kunt u documenten altijd versleuteld opslaan, bewerken en samen bewerken.",
 
-  "PresentationTitle": "Bekijk <0>deze presentatie</0> om het verschil tussen kantoorpakketten te zien:",
+  "PresentationTitle": "Bekijk <0>deze presentatie</0> om het verschil tussen office suites te zien:",
   "WhatWentWrong": "Wat ging er mis in Zoho Docs? <0>Klik hier</0> om details te bekijken"
 }

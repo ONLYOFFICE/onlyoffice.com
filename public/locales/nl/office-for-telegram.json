@@ -1,0 +1,31 @@
+{
+  "PageTitle": "ONLYOFFICE bot for Telegram",
+  "PageDescription": "Open, create, convert, edit and collaborate on Office documents within Telegram",
+
+  "OnlineOfficeForTelegram": "ONLYOFFICE bot for Telegram",
+  "OpenCreateConvertEdit": "Open, create, convert, edit and collaborate on Office documents within Telegram",
+  "StartNow": "Start now. It’s free",
+  "HeroImgUrl": "/images/templates/office-for-telegram/hero/en/hero.png",
+  "HeroImgUrl2x": "/images/templates/office-for-telegram/hero/en/hero@2x.png",
+
+  "DocumentsTab1Label": "Create new DOCX, XLSX, and PPTX documents; open local ones",
+  "DocumentsTab1ImgUrl": "/images/templates/office-for-telegram/documents/en/screen1.png",
+  "DocumentsTab1ImgUrl2x": "/images/templates/office-for-telegram/documents/en/screen1@2x.png",
+  "DocumentsTab2Label": "Edit and collaborate on your Office documents with other Telegram users",
+  "DocumentsTab2ImgUrl": "/images/templates/office-for-telegram/documents/en/screen2.png",
+  "DocumentsTab2ImgUrl2x": "/images/templates/office-for-telegram/documents/en/screen2@2x.png",
+  "DocumentsTab3Label": "Read and edit PDFs, export/import to/from PDF",
+  "DocumentsTab3ImgUrl": "/images/templates/office-for-telegram/documents/en/screen3.png",
+  "DocumentsTab3ImgUrl2x": "/images/templates/office-for-telegram/documents/en/screen3@2x.png",
+  "DocumentsTab4Label": "Easily convert documents online. Over 50 formats are supported",
+  "DocumentsTab4ImgUrl": "/images/templates/office-for-telegram/documents/en/screen4.png",
+  "DocumentsTab4ImgUrl2x": "/images/templates/office-for-telegram/documents/en/screen4@2x.png",
+  "DocumentsTab5Label": "Group chat support available!",
+  "DocumentsTab5ImgUrl": "/images/templates/office-for-telegram/documents/en/screen5.png",
+  "DocumentsTab5ImgUrl2x": "/images/templates/office-for-telegram/documents/en/screen5@2x.png",
+
+  "WhyOO": "Waarom ONLYOFFICE?",
+  "FeaturesAIHelper": "A robust set of editing, formatting, and styling tools. Enhanced security.",
+  "FeaturesCoEditing": "<0>Real-time</0> and <0>paragraph-locking</0> co-editing, co-editing, review, version history, document comparison, comments & mentions.",
+  "FeaturesFormats": "Ondersteuning voor meer dan <0>50 bestandsformaten</0>. Volledig geschikt voor MS Office-formaten: DOCX, XLSX, PPTX."
+}

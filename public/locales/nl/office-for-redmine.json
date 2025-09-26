@@ -1,0 +1,51 @@
+{
+  "PageTitle": "Online office suite for Redmine | ONLYOFFICE Docs",
+  "PageDescription": "Edit and co-edit documents, create and fill out forms within Redmine",
+
+  "OnlineOfficeForConnector": "Online office for <0>Redmine</0>",
+  "Subheader": "View, edit and collaborate on office documents within Redmine using ONLYOFFICE Docs",
+  "GetItNow": "Download nu",
+  "FullyCompatibleWithDocxXlsxAndPptx": "Volledig geschikt voor docx, xlsx en pptx",
+
+  "HeroTab1ImgUrl": "/images/templates/office-for-redmine/hero/screen1.png",
+  "HeroTab1ImgUrl2x": "/images/templates/office-for-redmine/hero/screen1@2x.png",
+  "HeroTab2ImgUrl": "/images/templates/office-for-redmine/hero/screen2.png",
+  "HeroTab2ImgUrl2x": "/images/templates/office-for-redmine/hero/screen2@2x.png",
+  "HeroTab3ImgUrl": "/images/templates/office-for-redmine/hero/screen3.png",
+  "HeroTab3ImgUrl2x": "/images/templates/office-for-redmine/hero/screen3@2x.png",
+  "HeroTab4ImgUrl": "/images/templates/office-for-redmine/hero/screen4.png",
+  "HeroTab4ImgUrl2x": "/images/templates/office-for-redmine/hero/screen4@2x.png",
+  "HeroTab5ImgUrl": "/images/templates/office-for-redmine/hero/screen5.png",
+  "HeroTab5ImgUrl2x": "/images/templates/office-for-redmine/hero/screen5@2x.png",
+  "HeroTab6ImgUrl": "/images/templates/office-for-redmine/hero/screen6.png",
+  "HeroTab6ImgUrl2x": "/images/templates/office-for-redmine/hero/screen6@2x.png",
+  "HeroTab7ImgUrl": "/images/templates/office-for-redmine/hero/screen7.png",
+  "HeroTab7ImgUrl2x": "/images/templates/office-for-redmine/hero/screen7@2x.png",
+
+  "GetStarted": "Beginnen",
+
+  "MarketplaceConnectorTitle": "Designed for seamless integration with Redmine",
+  "MarketplaceConnectorDescription": "Get the ONLYOFFICE connector for Redmine now from the <0>Redmine Plugins Directory</0>.",
+
+  "WhyOO": "Waarom ONLYOFFICE Docs",
+  "WhySubheader": "ONLYOFFICE Docs is a self-hosted office suite for working on text documents, spreadsheets, presentations, and forms.",
+  "Reason1": "<0>Ready-to-use</0> integration plugin",
+  "Reason2": "<0>Easy installation</0> and quick configuration",
+  "Reason3": "<0>Work with files</0> within Issues, Files, Documents, Wiki, News modules",
+  "Reason4": "<0>Intuitive</0> interface with tabs",
+  "Reason5": "<0>Meerdere</0> bewerkings-, opmaak- en stylingtools",
+  "Reason6": "<0>Realtime samenwerking</0>, Wijzigingen bijhouden, opmerkingen, chat",
+  "Reason7": "Free Community and <0>scalable Enterprise</0> versions",
+  "Reason8": "<0>Open-source code</0> beschikbaar op GitHub",
+
+  "HowToStart": "Hoe begint u?",
+  "HowToStartStep1": "Implementeer <0>ONLYOFFICE Docs</0> op uw eigen server of maak een <1>Docs Cloud</1>-account aan.",
+  "HowToStartStep2": "Get the ONLYOFFICE connector from the <0>Redmine Plugins Directory</0>.",
+  "HowToStartStep3": "Configure the connector and enable JWT.",
+  "HowToStartImgUrl": "/images/templates/office-for-redmine/how-to-start/how-to-start.svg",
+
+  "ReadDetailedInstructions": "Lees de gedetailleerde instructies in het <0>Helpcentrum</0>.",
+  "ReadDetailedInstructionsLink": "https://helpcenter.onlyoffice.com/integration/redmine.aspx",
+
+  "NeedAnAppToConnect": "Heeft u een app nodig om ONLYOFFICE Docs te koppelen aan uw favoriete webservice? Of heeft u er een ontwikkeld?"
+}

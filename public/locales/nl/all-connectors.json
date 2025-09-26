@@ -15,7 +15,7 @@
   "Price": "Price:",
   "Free": "Free",
   "Paid": "Paid",
-  "GetItOn": "Get it now",
+  "GetItOn": "Download nu",
   "Bot": "BOT",
 
   "FeatureConnectorTrelloText": "View, edit and collaborate on office documents in real-time within Trello, the ultimate teamwork project management tool.",
@@ -76,7 +76,7 @@
   "FeatureConnectorMondayText": "Edit, view, and collaborate on files in real time, all within your monday work platform.",
   "DzzOfficeConnectorText": "View, edit, and co-edit office documents online within DzzOffice, an open-source office suite for enterprise and team collaboration.",
 
-  "NeedAnAppToConnect": "Need an app to connect ONLYOFFICE Docs to your favorite web service? Or have you developed one?",
+  "NeedAnAppToConnect": "Heeft u een app nodig om ONLYOFFICE Docs te koppelen aan uw favoriete webservice? Of heeft u er een ontwikkeld?",
   "LetUsKnow": "Let us know",
   "SortByName": "Sort by name:",
   "Filter": "Filter:",

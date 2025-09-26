@@ -28,7 +28,7 @@
   "SliderTitle7": "Privé kamers",
   "SliderDescription7": "Voor gevoelige of vertrouwelijke documenten kunt u privé kamers gebruiken waar elk symbool dat u typt end-to-end wordt versleuteld",
   "comingSoon": "Coming soon",
-  "soon": "soon",
+  "soon": "binnenkort",
 
   "ContentHeading": "Werk met al <0>het materiaal</0> dat u heeft",
   "ContentSubHeading": "Sla bestanden van verschillende formaten op in uw kamers.u hebt Bekijken, bewerken en samenwerken.",
@@ -45,7 +45,7 @@
 
   "AICardHeading": "Work faster with AI assistants",
   "AICardText": "Make the process of document creation and editing much easier. Generate texts, images, and code. Get quick answers to your questions or explanation of some notions and concepts. Check your text spelling and grammar. Easily rewrite your text making it shorter or longer. Translate into different languages and do much more with integrated AI tools.",
-  "LearnMore": "Learn more",
+  "LearnMore": "Meer informatie",
 
   "ExtraCardHeading": "Make use of extra features",
   "ExtraCardText": "Activate the system plugins or add your own to extend your DocSpace functionality.",
@@ -70,7 +70,7 @@
 
   "Enterprise": "Enterprise server",
   "EnterpriseDesc": "Implementeer DocSpace op uw eigen server en behoud de volledige controle over uw documenten. Deze office suite is gemakkelijk schaalbaar en groeit mee met uw bedrijf.",
-  "EnterpriseLinkLabel": "Get it now",
+  "EnterpriseLinkLabel": "Download nu",
 
   "Startup": "Gratis cloud voor startups",
   "StartupDesc": "Zorg voor gratis cloudruimte voor uw documenten. Nodig tot 3 beheerders en zoveel gebruikers uit als u nodig hebt en werk overal samen aan documenten.",
@@ -82,10 +82,10 @@
 
   "LearnMoreHeading": "Learn more about ONLYOFFICE DocSpace",
 
-  "YoutubeCardText": "Master ONLYOFFICE DocSpace with video guides",
+  "YoutubeCardText": "Krijg ONLYOFFICE DocSpace onder de knie met videogidsen",
   "BlogCardText": "Integrate ONLYOFFICE DocSpace into a Single Page Application",
   "HintsCardText": "Switch ONLYOFFICE DocSpace Server to HTTPS",
   "Hints": "Hints",
   "Diagrams": "Diagrams",
-  "WatchNow": "Watch now"
+  "WatchNow": "Nu bekijken"
 }
