@@ -11,6 +11,7 @@
   "No": "No",
   "AttachFileOrScreenshоts": "Attach file or screenshоts <0>( max. 5 Мb )</0>",
   "YouCanAttachUp": "You can attach up to 10 files",
+  "YouCanOnlyAttach": "Only JPEG, PNG, or PDF files can be attached.",
   "FileSizeExceeded": "File size exceeded:",
   "NameIsEmpty": "Name is empty",
   "NameIsIncorrect": "Name is incorrect",

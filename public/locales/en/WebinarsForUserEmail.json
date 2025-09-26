@@ -1,0 +1,13 @@
+{
+  "WebinarSubject": "You’ve successfully registered for ONLYOFFICE webinar",
+  "Hello": "Hello!",
+  "ThankYouForRegistering": "Thank you for registering for {{webinarTheme}} webinar.",
+  "SaveTheDate": "Save the date:",
+  "WebinarsAreLiveStreamed": "ONLYOFFICE webinars are live streamed via our <a target=\"_blank\" style=\"color: #FF6F3D;\" href=\"https://www.youtube.com/user/onlyofficeTV\">YouTube channel</a>: we’ll send you the exact link in advance.",
+  "QuestionsSuggestions": "If you have any questions or suggestions for the upcoming webinar, you’re welcome to contact us at <a target=\"_blank\" style=\"color: #FF6F3D;\" href=\"mailto:webinars@onlyoffice.com\">webinars@onlyoffice.com</a>.",
+  "CheckAllOnlineEvents": "Check all our online events <a target=\"_blank\" style=\"color: #FF6F3D;\" href=\"https://onlyoffice.com/webinars\">here</a>. If you know someone who might be interested in mastering ONLYOFFICE, we’ll appreciate you sharing this link with them.",
+  "TrulyYours": "Truly yours,",
+  "ONLYOFFICETeam": "ONLYOFFICE Team",
+  "ThisEmailIsGeneratedAutomatically": "This email is generated automatically and you do not need to answer it.",
+  "Unsubscribe": "Click here to unsubscribe"
+}

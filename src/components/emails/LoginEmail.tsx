@@ -1,4 +1,4 @@
-import { getServerI18n } from "@src/lib/helpers/getServerI18n";
+import { getT } from "@src/lib/helpers/i18next";
 
 interface ILoginEmail {
   baseUrl: string;
@@ -13,8 +13,7 @@ const LoginEmail = async ({
   unsubscribeId,
   language,
 }: ILoginEmail) => {
-  const i18n = await getServerI18n(language, ["docspace-regisration"]);
-  const t = i18n.t.bind(i18n);
+  const t = await getT(language, "LoginEmail");
 
   return `
     <body

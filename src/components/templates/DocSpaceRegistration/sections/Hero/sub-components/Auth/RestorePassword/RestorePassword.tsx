@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import {
   StyledRestorePassword,
   StyledRestorePasswordInput,
@@ -17,6 +18,7 @@ import { validateEmail } from "@src/utils/validators";
 
 const RestorePassword = ({ setStatus }: IRestorePassword) => {
   const { t } = useTranslation("docspace-registration");
+  const { locale } = useRouter();
   const [value, setValue] = useState("");
   const [formStatus, setFormStatus] =
     useState<ISubscribeInput["status"]>("default");
@@ -24,6 +26,11 @@ const RestorePassword = ({ setStatus }: IRestorePassword) => {
 
   const onSubmit = async () => {
     if (isLoading || formStatus === "success") return;
+
+    if (value.length > 0 && validateEmail(value) && formStatus === "error") {
+      setFormStatus("default");
+      return;
+    }
 
     if (!validateEmail(value)) {
       setFormStatus("error");
@@ -38,6 +45,7 @@ const RestorePassword = ({ setStatus }: IRestorePassword) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         email: value,
+        locale,
       }),
     });
     const restorePasswordData = await restorePasswordRes.json();
@@ -65,17 +73,18 @@ const RestorePassword = ({ setStatus }: IRestorePassword) => {
         <SubscribeInput
           dataTestId="restore-subscribe-input"
           onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+            if (formStatus === "loading") return;
             setValue(e.target.value);
             if (formStatus === "error") {
               setFormStatus("default");
             }
           }}
           onFocus={() => {
-            if (formStatus !== "loading") {
-              setFormStatus("default");
-            }
+            if (formStatus === "loading") return;
+            setFormStatus("default");
           }}
           onBlur={() => {
+            if (formStatus === "loading") return;
             if (value.length === 0 || !validateEmail(value)) {
               setFormStatus("error");
             }

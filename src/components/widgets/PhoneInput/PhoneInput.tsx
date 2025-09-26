@@ -43,7 +43,7 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
     };
 
     const prefix = currentValue.countryCode;
-    const [inputValue, setInputValue] = useState(prefix);
+    const [inputValue, setInputValue] = useState(prefix + " ");
 
     useEffect(() => {
       if (countriesRef.current && selectedRef.current) {
@@ -60,13 +60,13 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
     useEffect(() => {
       const selected = countries.find((item) => item.country === selectedKey);
       if (selected) {
-        setInputValue(
-          selected.countryCode +
-            inputValue.slice(
-              inputValue.indexOf(selected.countryCode) +
-                selected.countryCode.length,
-            ),
-        );
+        const numbers = inputValue
+          .slice(
+            inputValue.indexOf(selected.countryCode) +
+              selected.countryCode.length,
+          )
+          .trim();
+        setInputValue(selected.countryCode + " " + numbers);
       }
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedKey]);
@@ -76,7 +76,7 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
         const defaultCountry = countries.find(
           (item) => item.country === selectedKey,
         ) || { countryCode: "+1" };
-        setInputValue(defaultCountry.countryCode);
+        setInputValue(defaultCountry.countryCode + " ");
         setTouched(false);
       },
       getPrefix: () => {
@@ -107,28 +107,24 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
     }, [IPGeolocationCountry]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      let value = e.target.value;
+      const value = e.target.value;
+      const numbers = value.slice(prefix.length).replace(/[^\d]/g, "");
+      const newValue = prefix + " " + numbers;
 
-      if (!value.startsWith(prefix)) {
-        value = prefix + value.replace(/^\+?\d*/, "");
-      }
+      setInputValue(newValue);
 
-      const onlyNumbers =
-        prefix + value.slice(prefix.length).replace(/[^\d]/g, "");
-
-      setInputValue(onlyNumbers);
       onChange?.({
         ...e,
-        target: { ...e.target, value: onlyNumbers },
+        target: { ...e.target, value: newValue },
       } as React.ChangeEvent<HTMLInputElement>);
     };
 
     const status = touched
       ? required
-        ? inputValue.length === prefix.length
+        ? inputValue.length === prefix.length + 1
           ? "error"
           : "success"
-        : inputValue.length > prefix.length
+        : inputValue.length > prefix.length + 1
           ? "success"
           : "default"
       : "default";
@@ -177,10 +173,9 @@ const PhoneInput = forwardRef<IPhoneInputRef, IPhoneInput>(
                   <StyledPhoneInputContriesItem
                     $selected={item.country === selectedKey}
                     onClick={() => {
+                      const numbers = inputValue.slice(prefix.length).trim();
                       setSelectedCountry(item.country);
-                      setInputValue(
-                        item.countryCode + inputValue.slice(prefix.length),
-                      );
+                      setInputValue(item.countryCode + " " + numbers);
                       setIsOpen(false);
                     }}
                   >

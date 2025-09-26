@@ -4,7 +4,7 @@
 
   "HeroTitle": "ONLYOFFICE Automation API",
   "HeroSubtitle" : "Postavite bilo koje kontrole unutar interfejsa svoje platforme i manipulišite sadržajem dokumenata izvan editora",
-  "HeroButton" : "ZATRAŽITE BESPLATNU DEMO VERZIJU",
+  "HeroButton" : "Zatražite besplatnu demo verziju",
 
   "WhatIsTitle" : "Šta je <0>Automation API</0>",
   "WhatIsSubtitle" : "<0>ONLYOFFICE Automation API</0> sa Connector klasom omogućava interakciju sa kancelarijskim dokumentima spolja. Možete dobiti izmene napravljene u fajlovima koristeći svoje prilagođene elemente interfejsa.",
@@ -45,9 +45,9 @@
   "HowToGetONLYOFFICEAutomationAPI": "Kako nabaviti ONLYOFFICE Automation API",
   "AutomationAPISsAPartOf": "Automation API je deo <0>ONLYOFFICE Docs Developer</0> paketa, koji pruža vrhunski onlajn kancelarijski paket sa editorima za dokumente, tabele, prezentacije i PDF-ove, namenjen za integraciju u vašu veb aplikaciju ili platformu. Pristup Automation API-ju obezbeđen je kao deo proširene <1>ONLYOFFICE Docs Developer licence</1>.",
   "GetA30DayTrial": "Dobijte <0>30-dnevnu probu</0> ONLYOFFICE Docs Developer-a sa uključenim Automation API-jem i testirajte ga besplatno..",
-  "DownloadNow": "PREUZMITE ODMAH",
+  "DownloadNow": "Preuzmite odmah",
 
   "HaveAnyQuestions": "Imate li pitanja o ONLYOFFICE Automation API-ju? Biće nam drago da vas posavetujemo i razgovaramo o svim detaljima..",
   "HaveAnyQuestionsText": "Naš tim stručnjaka je tu da vam pomogne na svakom koraku. <2 /> <2 /> Za pitanja pre kupovine, kontaktirajte nas na <0>sales@onlyoffice.com</0> ili zakažite termin za razgovor sa našim timom. <2 /> <2 /> Za bilo koji tehnički problem, pišite nam na <1>support@onlyoffice.com</1>.",
-  "GetInTouch": "KONTAKTIRAJTE NAS"
+  "GetInTouch": "Kontaktirajte nas"
 }

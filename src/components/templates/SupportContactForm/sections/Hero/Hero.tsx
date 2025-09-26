@@ -14,6 +14,7 @@ import {
   ICheckStatus,
   IFormData,
   ISelectSubjectItems,
+  TAllowedFileTypes,
 } from "../../SupportContactForm.types";
 import ReactCaptcha from "@hcaptcha/react-hcaptcha";
 import { hasOption } from "../../utils/typeGuards";
@@ -57,8 +58,9 @@ import {
   StyledSelectOptionTitle,
 } from "./Hero.styled";
 
-const MAX_SIZE = 5 * 1024 * 1024;
+const MAX_SIZE = 5 * 1024 * 1024; // 5MB
 const MAX_FILES = 10;
+const ALLOWED_FILE_TYPES: TAllowedFileTypes[] = ["image/jpeg", "image/png", "application/pdf"];
 
 const Hero = () => {
   const { t } = useTranslation("support-contact-form");
@@ -170,15 +172,28 @@ const Hero = () => {
   const addFile = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (!event.target.files) return;
     const newFiles = Array.from(event.target.files);
+    let allowedCount = MAX_FILES - formData.files.length;
 
     const filtered = newFiles.filter((file) => {
-      if (formData.files.length >= MAX_FILES) {
+      if (allowedCount <= 0) {
         setCheckStatus((prev) => ({
           ...prev,
           file: "error",
         }));
 
         setErrorFileName(t("YouCanAttachUp"));
+        resetFileStatus();
+
+        return false;
+      }
+
+      if (!ALLOWED_FILE_TYPES.includes(file.type as TAllowedFileTypes)) {
+        setCheckStatus((prev) => ({
+          ...prev,
+          file: "error",
+        }));
+
+        setErrorFileName(t("YouCanOnlyAttach"));
         resetFileStatus();
 
         return false;
@@ -195,6 +210,9 @@ const Hero = () => {
 
         return false;
       }
+
+      allowedCount--;
+
       setCheckStatus((prev) => ({
         ...prev,
         file: "success",
@@ -291,6 +309,18 @@ const Hero = () => {
     hCaptchaRef.current?.resetCaptcha();
   };
 
+  const autoResetForm = () => {
+    setTimeout(() => {
+      clearData();
+    }, 5000);
+  };
+
+  const resetLoadStatus = () => {
+    setTimeout(() => {
+      setLoadStatus("default");
+    }, 5000);
+  };
+
   const handleOnSubmit = async () => {
     if (loadStatus === "loading") return;
     if (loadStatus === "success") {
@@ -298,7 +328,7 @@ const Hero = () => {
       return;
     }
     if (loadStatus === "error") {
-      clearData();
+      setLoadStatus("default");
       return;
     }
     setLoadStatus("loading");
@@ -329,15 +359,23 @@ const Hero = () => {
 
       const dataSupport = await responseSupport.json();
 
-      if (dataSupport.status === "errorHCaptchaInvalid") {
+      if (dataSupport.status === "hCaptchaInvalid") {
         setLoadStatus("error");
+        resetLoadStatus();
         return;
       } else if (dataSupport.status === "success") {
         setLoadStatus("success");
+        autoResetForm();
+      } else {
+        console.error("Unexpected server response:", dataSupport);
+        setLoadStatus("error");
+        resetLoadStatus();
+        return;
       }
     } catch (error) {
       console.error(error);
       setLoadStatus("error");
+      resetLoadStatus();
     }
   };
 
@@ -548,6 +586,8 @@ const Hero = () => {
                 label={
                   errorFileName === t("YouCanAttachUp")
                     ? t("YouCanAttachUp")
+                    : errorFileName === t("YouCanOnlyAttach")
+                    ? t("YouCanOnlyAttach")
                     : `${t("FileSizeExceeded")} ${errorFileName}`
                 }
                 color="#CB0000"

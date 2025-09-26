@@ -11,16 +11,16 @@
   "IntegrateOnline": "Intégrez des éditeurs de documents en ligne",
   "BringCollaborative": "Offrez aux utilisateurs de vos services Web, sous votre propre marque, la possibilité de modifier en collaboration des documents texte, des feuilles de calcul et des présentations, ainsi que de créer des formulaires et de visualiser des fichiers PDF.",
   "ExploreExisting": "Explorer les intégrations de partenaires existants",
-  "TryNow": "ESSAYER MAINTENANT",
-  "LearnMore": "EN SAVOIR PLUS",
+  "TryNow": "Essayer maintenant",
+  "LearnMore": "En savoir plus",
   "GenerateDocuments": "Générez des documents à partir du code",
   "NeedToBuildDocs": "Vous avez besoin de créer des documents basés sur les données de l'utilisateur dans votre service Web ? C'est simple ! Essayez ONLYOFFICE Document Builder pour générer des documents à partir de JavaScript.",
   "ExploreMoreThan": "Explorer plus de 1,5 mille méthodes de script",
-  "DownloadNow": "TÉLÉCHARGER MAINTENANT",
+  "DownloadNow": "Télécharger maintenant",
   "BuildYourOwnCollaboration": "Créez votre propre plateforme de collaboration",
   "CreateYourOwnProductivity": "Créez votre propre plateforme de productivité avec des outils de gestion de documents et de projets, de messagerie, de CRM, de calendriers et autres. Adaptez-la à un secteur spécifique et distribuez-la sous votre marque.",
   "CheckAPIDocumentation": "Consulter la documentation de l'API",
-  "SendRequest": "ENVOYER UNE DEMANDE",
+  "SendRequest": "Envoyer une demande",
   "AddYourService": "Ajoutez votre service en tant que module complémentaire",
   "ConsiderYourWebService": "Vous considérez que votre service web ou votre application peut être utile aux éditeurs et utilisateurs d'ONLYOFFICE ? Créez un module externe et soyez présent dans notre App Directory et Plugin Marketplace.",
   "ExploreAvailable": "Explorer les modules complémentaires disponibles",
@@ -76,7 +76,7 @@
 
   "WouldLikeToEnter": "Souhaitez-vous établir un partenariat technologique avec ONLYOFFICE ?",
   "ContactUsAtMail": "Contactez nous à <0>sales@onlyoffice.com</0> pour discuter de tous les détails.",
-  "ContactUs": "NOUS CONTACTER",
+  "ContactUs": "Nous contacter",
 
   "Benefits": "Avantages"
 }

@@ -47,7 +47,8 @@ export async function getStaticProps({ locale }: ILocale) {
         "diagram-viewer",
         "FaqCollapse",
         "GetStarted",
-        "Editors"
+        "Editors",
+        "Tabs"
       ])),
       locale,
     },

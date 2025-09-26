@@ -59,7 +59,6 @@ const Hero = ({ locale }: ILocale) => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         locale,
-        referer: document.referrer,
         type: formData.type,
         fullName: formData.fullName,
         email: formData.email,
@@ -93,7 +92,9 @@ const Hero = ({ locale }: ILocale) => {
             button: {
               id: "workspace-enterprise",
               icon: {
-                url: getAssetUrl("/images/templates/download-workspace/hero/enterprise.svg"),
+                url: getAssetUrl(
+                  "/images/templates/download-workspace/hero/enterprise.svg",
+                ),
               },
               label: t("Enterprise"),
             },
@@ -146,7 +147,9 @@ const Hero = ({ locale }: ILocale) => {
             button: {
               id: "workspace-community",
               icon: {
-                url: getAssetUrl("/images/templates/download-workspace/hero/community.svg"),
+                url: getAssetUrl(
+                  "/images/templates/download-workspace/hero/community.svg",
+                ),
               },
               label: t("Community"),
             },

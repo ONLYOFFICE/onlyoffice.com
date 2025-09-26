@@ -49,7 +49,7 @@ const Rating = ({ ratingData }: IRating) => {
 
       const data = await res.json();
 
-      if (data.message === "rateAppRequestSuccessful") {
+      if (data.status === "success") {
         setRatingCount(data.averageRating);
         setNumberOfVotes(data.numberOfVotes);
       }

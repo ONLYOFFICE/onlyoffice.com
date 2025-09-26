@@ -22,7 +22,6 @@ import { SuccessModal } from "./sub-components/SuccessModal/SuccessModal";
 import { CheckboxesBlock } from "./sub-components/CheckboxesBlock";
 import { YesNoRadioBlock } from "./sub-components/YesNoRadioBlock/YesNoRadioBlock";
 import { IPartnRequestForm } from "./PartnershipRequestForm.types";
-import { getFromParam } from "@src/utils/getParams";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 import { Input } from "@src/components/ui/Input";
@@ -50,7 +49,6 @@ const PartnershipRequestForm = ({
 }: IPartnRequestForm) => {
   const { t: t2 } = useTranslation("DownloadModal");
   const { t } = useTranslation("partnership-request");
-  const from = getFromParam();
 
   const hCaptchaRef = useRef<ReactCaptcha | null>(null);
   const phoneInputRef = useRef<IPhoneInputRef | null>(null);
@@ -283,11 +281,10 @@ const PartnershipRequestForm = ({
 
     try {
       const onSubmitRequestData = await onSubmitRequest({
-        from,
         hCaptchaResponse: token,
       });
 
-      if (onSubmitRequestData.status === "errorHCaptchaInvalid") {
+      if (onSubmitRequestData.status === "hCaptchaInvalid") {
         setFormStatus("error");
         setTimeout(() => {
           setFormStatus("default");
@@ -310,7 +307,6 @@ const PartnershipRequestForm = ({
 
         setTimeout(() => {
           setFormStatus("default");
-          clearData();
         }, 5000);
       }
     } catch (error) {

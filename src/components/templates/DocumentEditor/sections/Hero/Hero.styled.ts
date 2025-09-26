@@ -37,8 +37,8 @@ const StyledHeroWrapper = styled.div`
 
 const StyledHeroImg = styled.div<{ $imgUrl: string; $imgUrl2x: string }>`
   margin: 0 auto;
-  padding-bottom: 51.786%;
-  max-width: 1047px;
+  padding-bottom: 58.929%;
+  max-width: 1200px;
   background-image: url(${(props) => props.$imgUrl});
   background-position: center;
   background-repeat: no-repeat;

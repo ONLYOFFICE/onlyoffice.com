@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { subscription } from "@src/lib/requests/subscription";
+import { logError } from "@src/lib/helpers/logger";
 
 export default async function handler(
   req: NextApiRequest,
@@ -13,13 +14,14 @@ export default async function handler(
     const { id, subscribe, newsOnly } = req.body;
 
     if (
+      !id ||
       typeof id !== "string" ||
       typeof subscribe !== "boolean" ||
       typeof newsOnly !== "boolean"
     ) {
       return res.status(400).json({
         status: "error",
-        message: "Missing or invalid fields",
+        message: "Invalid request parameters",
       });
     }
 
@@ -30,8 +32,11 @@ export default async function handler(
     });
 
     return res.status(200).json({ status: "success" });
-  } catch (err) {
-    console.error("Unsubscribe error:", err);
-    res.status(500).json({ status: "error", message: "Internal Server Error" });
+  } catch (error) {
+    logError((req.url || "").split("?")[0], "API", error);
+    return res.status(500).json({
+      status: "error",
+      message: "Internal Server Error",
+    });
   }
 }

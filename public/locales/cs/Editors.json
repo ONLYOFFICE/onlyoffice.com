@@ -14,16 +14,8 @@
   "Hints": "Tipy",
   "Blog": "Blog",
   "HelpCenter": "Centrum nápovědy",
-  "ExploreOtherEditors": "Explore other editors",
   "ViewMacroSamples": "Zobrazit ukázky maker",
   "FindAppsYouNeed": "Přečtěte si více o tom, co můžete udělat v editoru tabulek",
   "CheckUserGuides": "Check user guides",
-  "GoToTheTemplateLibrary": "Go to the template library",
-  "DocumentEditor": "Editor dokumentů",
-  "SpreadsheetEditor": "Editor tabulek",
-  "PresentationEditor": "Editor prezentací",
-  "FormCreator": "Tvůrce formulářů",
-  "PDFEditor": "Editor PDF",
-  "EBookCreator": "E-book creator",
-  "DiagramViewer": "Diagram Viewer"
+  "GoToTheTemplateLibrary": "Go to the template library"
 }
