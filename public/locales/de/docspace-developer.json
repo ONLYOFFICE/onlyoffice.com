@@ -69,5 +69,9 @@
   ],
 
   "WorthButtonTry": "Jetzt testen",
-  "WorthButtonRead": "Dokumentation lesen"
+  "WorthButtonRead": "Dokumentation lesen",
+  
+  "MCPHeading": "Integrieren Sie KI in Ihre Dokumenten-Workflows",
+  "MCPDescription": "Verändern Sie die Art und Weise, wie Sie mit LLMs und externen Systemen interagieren, mit dem ONLYOFFICE DocSpace MCP Server.",
+  "LearnMore": "Mehr erfahren"
 }

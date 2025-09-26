@@ -69,5 +69,9 @@
   ],
 
   "WorthButtonTry": "Isprobajte sada",
-  "WorthButtonRead": "Pročitajte dokumentaciju"
+  "WorthButtonRead": "Pročitajte dokumentaciju",
+  
+  "MCPHeading": "Integrišite AI u vaše dokumentacione tokove",
+  "MCPDescription": "Transformišite način na koji komunicirate sa LLM-ovima i eksternim sistemima uz ONLYOFFICE DocSpace MCP Server.",
+  "LearnMore": "Saznajte više"
 }

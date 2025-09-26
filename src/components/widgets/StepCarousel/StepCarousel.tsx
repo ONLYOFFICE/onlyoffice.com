@@ -11,6 +11,7 @@ import {
   StyledStepCarouselBody,
   StyledStepCarouselNumber,
   StyledStepCarouselHeading,
+  StyledStepCarouselTitle,
 } from "./StepCarousel.styled";
 import { IStepCarousel } from "./StepCarousel.types";
 import { CarouselButton } from "@src/components/ui/CarouselButton";
@@ -22,6 +23,7 @@ const StepCarousel = ({
   items,
   activeTab,
   onChange,
+  theme = "light",
 }: IStepCarousel) => {
   const isTabbed = Array.isArray(tabs) && tabs.length > 0;
 
@@ -63,9 +65,12 @@ const StepCarousel = ({
                   <StyledStepCarouselSlide>
                     <StyledStepCarouselImg $imgUrl={item.imgUrl} />
                     <StyledStepCarouselBody>
-                      <StyledStepCarouselNumber>
+                      <StyledStepCarouselNumber $theme={theme}>
                         {index + 1}
                       </StyledStepCarouselNumber>
+                      {item.title && <StyledStepCarouselTitle level={3} $theme={theme}>
+                        {item.title}
+                      </StyledStepCarouselTitle>}
                       <StyledStepCarouselHeading>
                         {item.heading}
                       </StyledStepCarouselHeading>
@@ -76,9 +81,11 @@ const StepCarousel = ({
             </Swiper>
 
             <CarouselButton
+              theme={theme}
               className={`swiper-button-prev swiper-button-prev-${i}`}
             />
             <CarouselButton
+              theme={theme}
               className={`swiper-button-next swiper-button-next-${i}`}
               direction="right"
             />

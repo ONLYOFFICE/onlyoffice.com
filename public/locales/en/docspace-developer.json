@@ -69,5 +69,9 @@
   ],
 
   "WorthButtonTry": "Try it now",
-  "WorthButtonRead": "Read documentation"
+  "WorthButtonRead": "Read documentation",
+
+  "MCPHeading": "Integrate AI into your document workflows",
+  "MCPDescription": "Transform the way you interact with LLMs and external systems with the ONLYOFFICE DocSpace MCP Server.",
+  "LearnMore": "Learn more"
 }

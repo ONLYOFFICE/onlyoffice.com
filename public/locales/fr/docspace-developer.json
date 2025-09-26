@@ -69,5 +69,9 @@
   ],
 
   "WorthButtonTry": "Essayer maintenant",
-  "WorthButtonRead": "Lire la documentation"
+  "WorthButtonRead": "Lire la documentation",
+  
+  "MCPHeading": "Intégrez l'IA dans votre flux documentaire",
+  "MCPDescription": "Transformez votre façon d'interagir avec les LLM et les systèmes externes grâce au serveur MCP de ONLYOFFICE DocSpace.",
+  "LearnMore": "En savoir plus"
 }

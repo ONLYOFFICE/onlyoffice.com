@@ -10,6 +10,8 @@ export interface IStepCarouselItem {
     /** Whether the link is external. */
     isExternal?: boolean;
   }[];
+  /** The title for the carousel item. */
+  title?: string;
 }
 
 export interface IStepCarouselTab {
@@ -30,6 +32,8 @@ export interface IStepCarousel {
   items?: IStepCarouselItem[];
   /** The index of the tab that should be active by default. */
   activeTab?: number;
+  /** The theme for the carousel item. */
+  theme?: "dark" | "light";
   /** Callback fired when the active tab changes. */
   onChange?: (value: number) => void;
 }

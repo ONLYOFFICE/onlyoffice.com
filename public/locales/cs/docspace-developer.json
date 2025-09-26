@@ -67,7 +67,11 @@
     "Ready to use integration examples",
     "Support for every step from the ONLYOFFICE experts"
   ],
-
+  
   "WorthButtonTry": "Vyzkoušejte",
-  "WorthButtonRead": "Přečtěte si dokumentaci"
+  "WorthButtonRead": "Přečtěte si dokumentaci",
+
+  "MCPHeading": "Integrate AI into your document workflows",
+  "MCPDescription": "Transform the way you interact with LLMs and external systems with the ONLYOFFICE DocSpace MCP Server.",
+  "LearnMore": "Learn more"
 }

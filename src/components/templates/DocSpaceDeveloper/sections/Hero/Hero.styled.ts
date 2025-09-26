@@ -5,10 +5,11 @@ import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
 
 import { getAssetUrl } from "@utils/getAssetUrl";
+
 const StyledHeroSection = styled(Section)`
   margin-top: -72px;
-  background-image: url(${getAssetUrl('/images/templates/docspace-developer/hero/background.svg')});
-  background-position: 100% 0;
+  background-image: url(${getAssetUrl('/images/templates/docspace-developer/hero/bg.svg')});
+  background-position: calc(50% + 210px) -830px;
   background-repeat: no-repeat;
   background-size: auto;
 

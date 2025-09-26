@@ -98,7 +98,8 @@ const StyledCardsItem = styled.div`
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     transition-property: --smooth-gradient-color-1;
-    transition-duration: 300ms
+    transition-duration: 300ms;
+    border-radius: 4px;
   }
 
   &:hover {

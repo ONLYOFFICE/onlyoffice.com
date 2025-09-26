@@ -1,0 +1,1 @@
+export { MCPServerTemplate } from "./MCPServer";

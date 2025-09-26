@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { IStepCarouselItem } from "./StepCarousel.types";
 import { device } from "@src/utils/device";
+import { Heading } from "@src/components/ui/Heading";
 
 const StyledStepCarouselWrapper = styled.div`
   position: relative;
@@ -147,7 +148,7 @@ const StyledStepCarouselImg = styled.div<{
 `;
 
 const StyledStepCarouselBody = styled.div`
-  padding-top: 32px;
+  padding: 32px 0;
 
   @media ${device.tablet} {
     padding-top: 0;
@@ -156,12 +157,12 @@ const StyledStepCarouselBody = styled.div`
   }
 `;
 
-const StyledStepCarouselNumber = styled.div`
+const StyledStepCarouselNumber = styled.div<{ $theme: string }>`
+  color: ${(props) => props.$theme === "dark" ? "#ffffff" : "#808080"};
   margin-bottom: 16px;
   font-size: 60px;
   font-weight: 700;
   line-height: 42px;
-  color: #808080;
   opacity: 0.2;
 `;
 
@@ -175,6 +176,17 @@ const StyledStepCarouselHeading = styled.div`
   }
 `;
 
+const StyledStepCarouselTitle = styled(Heading)<{ $theme: string }>`
+  color: ${(props) => props.$theme === "dark" ? "#ffffff" : "#333333"};
+  font-size: 24px;
+  line-height: 1.33em;
+  padding-bottom: 16px;
+
+  @media ${device.mobile} {
+    font-size: 16px;
+  }
+`;
+
 export {
   StyledStepCarouselWrapper,
   StyledStepCarouselTabs,
@@ -185,4 +197,5 @@ export {
   StyledStepCarouselBody,
   StyledStepCarouselNumber,
   StyledStepCarouselHeading,
+  StyledStepCarouselTitle,
 };

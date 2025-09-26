@@ -5,4 +5,6 @@ export interface ICarouselButton {
   className?: string;
   /** The direction of the button. Default: "left". */
   direction?: "left" | "right";
+  /** The theme for the button. */
+  theme?: "dark" | "light";
 }

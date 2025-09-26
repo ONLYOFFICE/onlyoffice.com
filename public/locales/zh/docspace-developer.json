@@ -69,5 +69,9 @@
   ],
 
   "WorthButtonTry": "立即试用",
-  "WorthButtonRead": "阅读文档"
+  "WorthButtonRead": "阅读文档",
+  
+  "MCPHeading": "将 AI 集成到您的文档工作流程中",
+  "MCPDescription": "使用 ONLYOFFICE 协作空间 MCP 服务器，改变您与 LLM 和外部系统的交互方式。",
+  "LearnMore": "了解更多"
 }
