@@ -18,9 +18,11 @@ interface ICheckStatus {
   hCaptchaToken?: "default" | "success" | "error";
 }
 
+type TPortalNameErrorStatus =  "busy" | "notExist" | "default";
+
 interface IFaqItems {
   label: string;
   content: string;
 }
 
-export type { IDataForm, ICheckStatus, IFaqItems };
+export type { IDataForm, ICheckStatus, IFaqItems, TPortalNameErrorStatus };

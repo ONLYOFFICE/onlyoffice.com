@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "@src/utils/device";
 import { Heading } from "@src/components/ui/Heading";
 import { Text } from "@src/components/ui/Text";
+import { TPortalNameErrorStatus } from "../../FreeCloud.types";
 
 const StyledHeroHeading = styled(Heading)`
   margin-bottom: 56px;
@@ -94,6 +95,52 @@ const StyledHeroFormPortalText = styled(Text)`
   }
 `;
 
+const StyledHeroFormPortalInputWrapper = styled.div`
+  position: relative;
+  flex-grow: 1;
+`;
+
+const StyledHeroFormPortalError = styled.div<{
+  $display: TPortalNameErrorStatus;
+}>`
+  display: ${props => props.$display === "default" ? "none" : "block"};
+  width: 100%;
+  padding: 14px;
+  background: #fff;
+  box-shadow: 0px 7px 25px rgba(85, 85, 85, 0.15);
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 160%;
+  text-align: center;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+
+  &::before {
+    content: '';
+    display: block;
+    background: #FFFFFF;
+    box-shadow: -1px -1px 4px -4px #000000;
+    -webkit-box-shadow: -1px -1px 4px -4px #000000;
+    height: 16px;
+    transform: rotate(45deg);
+    width: 16px;
+    left: 50%;
+    position: absolute;
+    top: -8px;
+  }
+`;
+
+const StyledHeroFormPortalErrorText = styled(Text)`
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+`;
+
 export {
   StyledHeroHeading,
   StyledHeroFormWrapper,
@@ -104,6 +151,9 @@ export {
   StyledHeroStepSecond,
   StyledHeroForm,
   StyledHeroFormNameWrapper,
+  StyledHeroFormPortalInputWrapper,
   StyledHeroFormPortalWrapper,
+  StyledHeroFormPortalError,
+  StyledHeroFormPortalErrorText,
   StyledHeroFormPortalText
 };

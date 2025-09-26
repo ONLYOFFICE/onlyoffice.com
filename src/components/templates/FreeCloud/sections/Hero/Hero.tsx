@@ -11,7 +11,7 @@ import { HCaptcha } from "@src/components/ui/HCaptcha";
 import { ILoaderButton, LoaderButton } from "@src/components/ui/LoaderButton";
 import { Select } from "@src/components/ui/Select";
 import { ISelectOption } from "@src/components/ui/Select/Select.types";
-import { ICheckStatus, IDataForm } from "../../FreeCloud.types";
+import { ICheckStatus, IDataForm, TPortalNameErrorStatus } from "../../FreeCloud.types";
 import {
   validateFullName,
   validateEmail,
@@ -22,6 +22,9 @@ import { validateTestEmail } from "@src/utils/IsTestEmail";
 import {
   StyledHeroForm,
   StyledHeroFormNameWrapper,
+  StyledHeroFormPortalError,
+  StyledHeroFormPortalErrorText,
+  StyledHeroFormPortalInputWrapper,
   StyledHeroFormPortalText,
   StyledHeroFormPortalWrapper,
   StyledHeroFormWrapper,
@@ -70,6 +73,8 @@ const Hero = () => {
     { value: "NonProfit", label: t("NonProfit") },
     { value: "Contributor", label: t("Contributor") },
   ];
+
+  const [portalNameErrorStatus, setPortalNameErrorStatus] = useState<TPortalNameErrorStatus>("busy");
 
   useEffect(() => {
     if (selectedOption.length > 0) {
@@ -380,24 +385,50 @@ const Hero = () => {
               required
             />
             <StyledHeroFormPortalWrapper>
-              <Input
-                value={dataForm.portalName}
-                onChange={(event) =>
-                  setDataForm({ ...dataForm, portalName: event.target.value })
-                }
-                label={t("PortalName")}
-                onBlur={handleCheckStatusPortalName}
-                onFocus={() =>
-                  setCheckStatus((prev) => ({ ...prev, portalName: "default" }))
-                }
-                status={checkStatus.portalName}
-                caption={
-                  dataForm.portalName.length === 0
-                    ? t("AccountNameIsEmpty")
-                    : undefined
-                }
-                required
-              />
+              <StyledHeroFormPortalInputWrapper>
+                <Input
+                  value={dataForm.portalName}
+                  onChange={(event) =>
+                    setDataForm({ ...dataForm, portalName: event.target.value })
+                  }
+                  label={t("PortalName")}
+                  onBlur={handleCheckStatusPortalName}
+                  onFocus={() => {
+                    setCheckStatus((prev) => ({ ...prev, portalName: "default" }));
+                    setPortalNameErrorStatus("default");
+                  }}
+                  status={checkStatus.portalName}
+                  caption={
+                    dataForm.portalName.length === 0
+                      ? t("AccountNameIsEmpty")
+                      : undefined
+                  }
+                  required
+                />
+                <StyledHeroFormPortalError $display={portalNameErrorStatus}>
+                  <StyledHeroFormPortalErrorText size={4} color="#CB0000">
+                    {portalNameErrorStatus === "notExist" ? t("PortalNameIsNotExist") : undefined}
+                    {portalNameErrorStatus === "busy" ? t("PortalNameIsBusy") : undefined}
+                  </StyledHeroFormPortalErrorText>
+                  {portalNameErrorStatus === "notExist" && (
+                    <StyledHeroFormPortalErrorText size={4}>
+                      <Trans
+                        t={t}
+                        i18nKey={"PortalNameIsNotExistRegisterHere"}
+                        components={[
+                          <Link
+                            key="0"
+                            color="#FF6F3D"
+                            textUnderline={true}
+                            hover="underline-none"
+                            href="/docspace-registration?from=nonprofit"
+                          />,
+                        ]}
+                      />
+                    </StyledHeroFormPortalErrorText>
+                  )}
+                </StyledHeroFormPortalError>
+              </StyledHeroFormPortalInputWrapper>
               <StyledHeroFormPortalText as={"span"}>
                 .onlyoffice.(co/eu/sg/com/com2)
               </StyledHeroFormPortalText>
