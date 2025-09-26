@@ -1,5 +1,5 @@
 {
-  "PageTitle": "ONLYOFFICE - Cloud Office Applications",
+  "PageTitle": "ONLYOFFICE - Cloud Office Toepassingen",
 
   "BuyOODocSpaceFamilyPack": "Buy ONLYOFFICE <0>DocSpace Family Pack</0>",
   "DocSpaceFamilyPack": "DocSpace Family Pack",
@@ -7,21 +7,21 @@
   "OnlineEditors": "Online editors voor tekstdocumenten, spreadsheets, presentaties, formulieren en PDF's",
   "DesktopAndMobileApps": "Desktop and mobile apps, mobile web version",
   "EnhancedSecurityFeatures": "Verbeterde beveiligingsfuncties",
-  "AllMinorUpdatesAndMajorUpgrades": "All minor updates and major upgrades",
+  "AllMinorUpdatesAndMajorUpgrades": "Alle kleine updates en grote upgrades",
   "TryItFree": "Probeer het gratis",
 
   "NumberOfUsers": "Aantal gebruikers",
-  "NumberOfUsersTooltip": "Specified number of users defines how many people can have access to editing documents, spreadsheets, and presentations. The number of documents that can be edited at the same time is not limited. Other users will be able to open documents for viewing only.",
-  "LicenseDuration": "License duration",
-  "Lifetime": "Lifetime",
+  "NumberOfUsersTooltip": "Het opgegeven aantal gebruikers bepaalt hoeveel personen toegang hebben tot het bewerken van documenten, spreadsheets en presentaties. Het aantal documenten dat tegelijkertijd bewerkt kan worden, is onbeperkt. Andere gebruikers kunnen documenten alleen openen om te bekijken.",
+  "LicenseDuration": "Licentieduur",
+  "Lifetime": "Levensduur",
   "LifetimeTooltip": "You can use all the ONLYOFFICE DocSpace Family Pack features available at the moment of the purchase for an unlimited period of time, but one year after the purchase date you will no longer be able to get free updates.",
   "Updates": "Updates",
   "1Year": "1 jaar",
   "Total": "Totaal:",
   "BuyNow": "Koop nu",
 
-  "WhatDoesTheNumberOfUsersLabel": "Wat betekent het \"aantal gebruikers\"?",
-  "WhatDoesTheNumberOfUsersText": "Het opgegeven aantal gebruikers bepaalt hoeveel mensen toegang hebben tot het bewerken van documenten, spreadsheets, en presentaties. Het aantal documenten dat tegelijkertijd kan worden bewerkt is onbeperkt.<br/>Andere gebruikers kunnen documenten openen om alleen te bekijken.<br/><br/>Let op: ONLYOFFICE bewaart een gebruikers ID voor een periode van 30 dagen. Daarna kunt u de gebruiker vervangen door een nieuwe indien nodig. Als u een document deelt met externe gebruikers, krijgt ieder van hen een gebruikers-ID op naam voor een periode van 30 dagen.",
+  "WhatDoesTheNumberOfUsersLabel": "Wat houdt het ‘aantal gebruikers’ in?",
+  "WhatDoesTheNumberOfUsersText": "Het opgegeven aantal gebruikers bepaalt hoeveel personen toegang hebben tot het bewerken van documenten, spreadsheets en presentaties. Het aantal documenten dat tegelijkertijd kan worden bewerkt, is onbeperkt.<br/>Andere gebruikers kunnen documenten alleen openen om ze te bekijken.<br/><br/>Let op: ONLYOFFICE bewaart een gebruikers-ID gedurende 30 dagen. Daarna kunt u de gebruiker indien nodig vervangen door een nieuwe. Indien u een document deelt met externe gebruikers, ontvangt elk van hen een persoonlijke gebruikers-ID die 30 dagen geldig is.",
   "WhereCanIFindAnswersToOtherQuestionsLabel": "Waar kan ik antwoorden vinden op andere vragen?",
   "WhereCanIFindAnswersToOtherQuestionsText": "Bezoek ons <0>FAQ center</0> of <1>dien uw verzoek in</1> en wij zullen u zo snel mogelijk helpen."
 }

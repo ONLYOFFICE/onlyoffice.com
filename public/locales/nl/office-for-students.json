@@ -55,7 +55,7 @@
 
   "CreateFreeAccount": "Maak gratis account aan",
 
-  "WhyOOTitle": "<0>Why</0> ONLYOFFICE?",
+  "WhyOOTitle": "<0>Waarom</0> ONLYOFFICE?",
   "WhyOODesc": "We get it – there are tons of office solutions out there. Why should you start using ONLYOFFICE and not another software? Because ONLYOFFICE and students – that’s just a perfect match. For various reasons, only few of which we’d love to tell you about: ",
 
   "ItSFree": "It’s free",
@@ -64,19 +64,19 @@
   "ItSCompatible": "It’s compatible with MS Office files (and almost all other office file formats)",
   "ItSCompatibleDesc": "Don’t worry about your co-eds or your professors using other office solutions and only seeing incomprehensible word salad once they open your files. ONLYOFFICE is completely compatible with MS Office files (e.g. DOCX, XLSX, PPTX etc.) and most other file formats, really.",
 
-  "ItSHighlyCustomizable": "It’s highly customizable with our built-in plugin marketplace",
+  "ItSHighlyCustomizable": "Het is in hoge mate aanpasbaar met onze geïntegreerde plug-inmarktplaats.",
   "ItSHighlyCustomizableDesc": "Make your ONLYOFFICE setup entirely your own with <0>tons of plugins</0> that extend the functionality – whether it’s supercharging your document work by using our official ChatGPT plugin directly in the editors, making research easier a ton with bibliography plugins for Mendeley or Zotero or speeding up writing & proofreading with LanguageTool & OCR.",
 
   "ItSBuilt": "It’s built with collaboration in mind",
   "ItSBuiltDesc": "We simply love working in teams. And we assume you do, too. That’s why ONLYOFFICE offers tons of features that make collaborating with others as simple and seamless as possible.",
 
   "GetItNow": "Download nu",
-  "TryInTheCloud": "Try in the cloud",
+  "TryInTheCloud": "Probeer in de cloud",
 
-  "SuccessStoriesHeading": "Success stories that show you how it’s done",
-  "SuccessStoriesDesc": "We could go on and on about how well ONLYOFFICE and education go together. But we’d rather show you – by demonstrating stories of success by other users.",
+  "SuccessStoriesHeading": "Succesverhalen die u laten zien hoe het moet",
+  "SuccessStoriesDesc": "We zouden uitgebreid kunnen ingaan op de uitstekende combinatie van ONLYOFFICE en het onderwijs. Wij laten u echter liever zien hoe het werkt, door succesverhalen van andere gebruikers te demonstreren.",
 
-  "Blog1": "How ONLYOFFICE facilitates collaboration for schools in Donaueschingen",
+  "Blog1": "Hoe ONLYOFFICE de samenwerking voor scholen in Donaueschingen vergemakkelijkt",
   "Blog1Link": "https://www.onlyoffice.com/blog/2023/10/onlyoffice-in-donaueschingen-schools",
   "Blog1ImgUrl": "/images/templates/office-for-students/success-stories/blog1.jpg",
 
@@ -84,7 +84,7 @@
   "Blog2Link": "https://www.onlyoffice.com/blog/2023/02/college-lycee-sacre-coeur-uses-onlyoffice-and-moodle",
   "Blog2ImgUrl": "/images/templates/office-for-students/success-stories/blog2.jpg",
 
-  "Blog3": "How Nanjing University integrated ONLYOFFICE Docs to improve faculty and student collaboration",
+  "Blog3": "Hoe Nanjing University ONLYOFFICE Docs integreerde om de samenwerking tussen docenten en studenten te verbeteren",
   "Blog3Link": "https://www.onlyoffice.com/blog/2022/12/nanjing-university-integrated-onlyoffice-docs-to-improve-faculty-and-student-collaboration",
   "Blog3ImgUrl": "/images/templates/office-for-students/success-stories/blog3.jpg",
 
@@ -92,11 +92,11 @@
   "HowCanOOHelpAnswer": "We provide you with versatile tools for creating and editing documents, spreadsheets, presentations, and PDFs - all of which are invaluable for your assignments. More importantly, our collaboration features allow you to work together with your co-eds in real-time, which greatly speeds up your group projects and peer reviews.",
   "CanIUseOOForGroup": "Can I use ONLYOFFICE for group assignments with my classmates?",
   "CanIUseOOForGroupAnswer": "Yes, absolutely! Our solution has been built with collaboration in mind. Features like real-time co-editing, commenting, built-in chat, version history, etc. really facilitate your group projects. Each of you can collaborate on documents simultaneously, making it easy to work together on group assignments or projects.",
-  "DoesOOOfferTemplatesForAcademicDocuments": "Does ONLYOFFICE offer templates for academic documents?",
+  "DoesOOOfferTemplatesForAcademicDocuments": "Biedt ONLYOFFICE sjablonen voor academische documenten?",
   "DoesOOOfferTemplatesForAcademicDocumentsAnswer": "As a matter of fact, we do! Our <0>template library</0> includes tons of templates specifically designed for academic purposes, including report templates, research paper formats, presentation layouts, and more. For you that means: less effort needed for the basics, more time for what counts.",
-  "IsOOSecure": "Is ONLYOFFICE secure for storing and sharing sensitive academic information?",
+  "IsOOSecure": "Is ONLYOFFICE veilig voor het opslaan en delen van gevoelige academische informatie?",
   "IsOOSecureAnswer": "We pride ourselves in being one of the most secure office solutions out there. <0>We take security seriously</0>, starting with encryption for files stored on the platform and numerous options for secure sharing and access control. Additionally, our solutions can always be deployed on private servers for enhanced data security.",
-  "IsOOFree": "Is ONLYOFFICE free?",
+  "IsOOFree": "Is ONLYOFFICE gratis?",
   "IsOOFreeAnswer": "Yes, ONLYOFFICE Desktop Editors is an absolutely free app. ONLYOFFICE DocSpace offers a free plan, perfectly suitable to students' needs.",
   "AreThereAnyIntegrations": "Are there any integrations with other platforms?",
   "AreThereAnyIntegrationsAnswer": "Yes, along with the option to connect the desktop app to the cloud of your choice, it's possible to integrate the online editors – <0>ONLYOFFICE Docs</0> – with the eLearning or DMS service used in your educational establishment. This way, you will be able to work with office files directly within the course structure. Among popular ready-to-use <1>integrations</1> are <2>Moodle</2>, Chamilo, ownCloud, Nextcloud, HumHub, etc.",

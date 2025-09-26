@@ -25,7 +25,7 @@
 
   "SwitcherItemTitle3": "... on your own servers ...",
   "SwitcherItemText3": "ONLYOFFICE DocSpace Developer can be deployed on-premises as a private or hybrid cloud solution, so your user data always stay within your infrastructure: no hand-off to public clouds.",
-  "SwitcherItemLink3": "Try it now",
+  "SwitcherItemLink3": "Probeer nu",
   "SwitcherItemImgUrl3": "/images/templates/docspace-developer/switcher/server.png",
   "SwitcherItemImgUrl2x3": "/images/templates/docspace-developer/switcher/server@2x.png",
 
@@ -37,13 +37,13 @@
 
   "CardsHeading": "ONLYOFFICE DocSpace is built to seamlessly fit your app or website",
 
-  "CardsItemTitle1": "No matter what language your app is written in",
+  "CardsItemTitle1": "Het maakt niet uit in welke taal uw app is geschreven",
   "CardsItemText1": "ONLYOFFICE DocSpace can be integrated into any app or website regardless of its technology stack, programming language, and framework.",
 
-  "CardsItemTitle2": "No matter what deployment model you use",
+  "CardsItemTitle2": "Ongeacht welk implementatiemodel u gebruikt",
   "CardsItemText2": "You can integrate ONLYOFFICE DocSpace into your SaaS or on-premise solution.",
 
-  "CardsItemTitle3": "For multiple uses",
+  "CardsItemTitle3": "Voor veelvuldig gebruik",
   "CardsItemText3": "Including: CMS, CRM, eLearning platforms, mail, messaging apps and project management software, and more.",
 
   "WorthHeading": "ONLYOFFICE DocSpace is highly appreciated both",
@@ -54,7 +54,7 @@
     "Flexible access permissions",
     "Integrated online document editors for docs, sheets, slides, forms, PDFs",
     "Verbeterde beveiligingsfuncties",
-    "Flawless user experience on different devices"
+    "Probleemloze gebruikerservaring op verschillende apparaten"
   ],
 
   "WorthByDevelopersTitle": "By developers",
@@ -62,12 +62,12 @@
     "Embedding presets and custom mode",
     "API and webhook support",
     "Plugin SDK to extend functionality",
-    "High availability and performance",
+    "Hoge beschikbaarheid en prestaties",
     "Flexible, scalable pricing",
     "Ready to use integration examples",
     "Support for every step from the ONLYOFFICE experts"
   ],
 
-  "WorthButtonTry": "Try it now",
+  "WorthButtonTry": "Probeer nu",
   "WorthButtonRead": "Lees de documentatie"
 }

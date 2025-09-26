@@ -11,7 +11,7 @@
     "QuicklyBrowseSortAndFilter": "Quickly browse, sort and filter the existing projects and tasks, edit them, change status, assignees and due dates. Access work documents attached to each project.",
     "ManageNewProjects": "Manage new projects",
     "CreateNewProjects": "Create new projects and tasks and assign the responsible members. Set priorities and add smaller subtasks. Bind tasks to milestones to plan your work in time.",
-    "Communicate": "Communicate",
+    "Communicate": "Communiceer",
     "StartProjectDiscussions": "Start project discussions to brainstorm ideas, solve issues, ask questions, and make announcements. Leave comments to take part in the communication process.",
     "KeepYourProjectsSafe": "Keep your projects safe",
     "MakeSureNoUnauthorized": "Make sure no unauthorized users can access your projects. Secure the application with a code, activate 2FA or authentication with a fingerprint.",
@@ -30,6 +30,6 @@
     "CleanAndIntuitiveUI": "Clean and intuitive UI",
     "NoAds": "No ads or in-app purchases",
     "RegularUpdates": "Regular updates",
-    "TechnicalSupport": "Technical support",
+    "TechnicalSupport": "Technische ondersteuning",
     "OnlineDocumentation": "Online documentation"
 }

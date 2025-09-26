@@ -1,9 +1,9 @@
 {
   "PageTitle": "Online office for Confluence | ONLYOFFICE",
-  "PageDescription": "Work on all kinds of office documents within Confluence using ONLYOFFICE Docs",
+  "PageDescription": "Werk aan diverse soorten office documenten binnen Confluence met behulp van ONLYOFFICE Docs.",
 
   "OnlineOfficeForConfluence": "Online office for Confluence",
-  "WorkOnAllKindsOfOfficeDocuments": "Work on all kinds of office documents within Confluence using ONLYOFFICE Docs",
+  "WorkOnAllKindsOfOfficeDocuments": "Werk aan diverse soorten office documenten binnen Confluence met behulp van ONLYOFFICE Docs.",
   "GetStarted": "Beginnen",
   "RequestFreeDemo": "Vraag een gratis demo aan",
   "HeroImgUrl": "/images/templates/office-for-confluence/hero/hero.png",
@@ -37,7 +37,7 @@
   "HowToStart": "Hoe begint u?",
   "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0>.",
   "HowToStartStep2": "Get the integration app from the <0>Atlassian Marketplace</0>. Select the corresponding option by switching the hosting tabs (Server / Data Center / Cloud).",
-  "HowToStartStep3": "Configure the integration app.",
+  "HowToStartStep3": "Configureer de integratie app.",
 
   "HowToConnect": "How to connect ONLYOFFICE Docs to Confluence",
   "ReadDetailedInstructions": "Lees de gedetailleerde instructies in het <0>Helpcentrum</0>.",

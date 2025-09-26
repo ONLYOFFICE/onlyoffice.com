@@ -1,16 +1,16 @@
 {
   "PageTitle": "Online office for Pipedrive | ONLYOFFICE",
-  "PageDescription": "Edit and collaborate on office documents within Odoo Documents using ONLYOFFICE Docs",
+  "PageDescription": "Bewerk en werk samen aan Office documenten binnen Odoo Documents met behulp van ONLYOFFICE Docs.",
 
   "OnlineOfficeForConnector": "Online office for Pipedrive",
   "Subheader": "Work with office documents within Pipedrive Deals",
   "GetStarted": "Beginnen",
-  "ScheduleFreeDemo": "Schedule your free demo",
+  "ScheduleFreeDemo": "Plan uw gratis demo",
   "HeroImgUrl": "/images/templates/office-for-pipedrive/hero/hero.png",
   "HeroImgUrl2x": "/images/templates/office-for-pipedrive/hero/hero@2x.png",
 
   "DocspaceAppTitle": "ONLYOFFICE <0>DocSpace app</0> for Pipedrive",
-  "New": "New",
+  "New": "Nieuw",
   "DocspaceAppHeader": "Create a collaborative environment to work on your deal documents",
   "DocspaceAppTab1Label": "Easily create a dedicated DocSpace room for document collaboration directly from any Pipedrive deal.",
   "DocspaceAppTab1ImgUrl": "/images/templates/office-for-pipedrive/docspace-app/screen1.png",

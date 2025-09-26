@@ -65,7 +65,7 @@
   "ByChoosingSingle": "By choosing Single Sign-On over the classic authentication, you do not let us store any of your log-in data, ensuring it, instead, to one of the trusted global authentication services. ONLYOFFICE is the service provider (SP), while the third-party application acts as the Identity Provider (IdP). Providers verify user's authentication and discreetly keep credentials on their side minimizing the risk of unauthorized acquisition of this data.",
   "CurrentlyWeHave": "Currently, we have three IdPs integrated with ONLYOFFICE to perform Single Sign-On feature: Shibboleth, OneLogin, and AD FS.",
   "ReadMoreAboutHowSingle": "Read more about how Single Sign-On works in ONLYOFFICE",
-  "AccessRightsManagement": "Access rights management",
+  "AccessRightsManagement": "Beheer van toegangsrechten",
   "TheThreatOfMalicious": "The threat of malicious internal action scales with business size and data classification variety, thus necessitating the differentiation of rights.",
   "UsersOfYourPrivate": "Users of your private portal can be easily grouped and hierarchized. Set access rights to portal modules and data for each user or group to protect specific data from unwanted attention and insider actions.",
   "ReadMoreAboutTheAccess": "Read more about the access rights management",

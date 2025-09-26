@@ -5,12 +5,12 @@
   "BuyOODocsHomeServer": "Koop ONLYOFFICE <0>Docs Home Server</0>",
   "DocsHomeServer": "Docs Home Server",
   "OnlineEditors": "Online editors voor tekstdocumenten, spreadsheets, presentaties, formulieren en PDF's",
-  "MobileWebEditors": "Mobiele web-editors",
+  "MobileWebEditors": "Mobiele web editors",
   "ReadyToUseConnectors": "Kant-en-klare connectoren",
-  "DesktopAndMobileApps": "Desktop- en mobiele apps",
+  "DesktopAndMobileApps": "Desktop en mobiele apps",
   "EnhancedSecurityFeatures": "Verbeterde beveiligingsfuncties",
   "AllMinorUpdatesAndMajorUpgrades": "Alle kleine updates en grote upgrades",
-  "TryItFree": "Probeer gratis",
+  "TryItFree": "Probeer het gratis",
 
   "NumberOfUsers": "Aantal gebruikers",
   "NumberOfUsersTooltip": "Het opgegeven aantal gebruikers bepaalt hoeveel mensen toegang hebben tot het bewerken van documenten, spreadsheets en presentaties. Het aantal documenten dat tegelijkertijd kan worden bewerkt is niet beperkt. Andere gebruikers kunnen documenten alleen openen om te bekijken.",
@@ -20,12 +20,12 @@
   "Updates": "Updates",
   "1Year": "1 jaar",
   "Total": "Totaal:",
-  "BuyNow": "Nu kopen",
+  "BuyNow": "Koop nu",
 
   "WhatDoTheLifetimeLicenseAnd1YearUpdatesLabel": "Wat betekenen 'levenslange licentie' en '1 jaar updates'?",
   "WhatDoTheLifetimeLicenseAnd1YearUpdatesText": "U kunt alle functies van ONLYOFFICE Docs Home Server die beschikbaar zijn op het moment van aankoop voor onbeperkte tijd gebruiken, maar een jaar na de aankoopdatum kunt u geen gratis updates meer ontvangen. Als u uw versie van ONLYOFFICE Docs Home Server later wilt updaten, moet u een nieuwe licentiesleutel aanschaffen.",
-  "WhatDoesTheNumberOfUsersLabel": "Wat betekent 'aantal gebruikers'?",
-  "WhatDoesTheNumberOfUsersText": "Het opgegeven aantal gebruikers bepaalt hoeveel mensen toegang hebben tot het bewerken van documenten, spreadsheets en presentaties. Het aantal documenten dat tegelijkertijd kan worden bewerkt is niet beperkt.<br/>Andere gebruikers kunnen documenten alleen openen om te bekijken.<br/><br/>Opmerking: ONLYOFFICE bewaart een gebruikers-ID gedurende een periode van 30 dagen. Daarna kunt u de gebruiker indien nodig vervangen door een nieuwe. Als u een document deelt met externe gebruikers, ontvangt elk van hen een benoemd gebruikers-ID voor een periode van 30 dagen.",
+  "WhatDoesTheNumberOfUsersLabel": "Wat houdt het ‘aantal gebruikers’ in?",
+  "WhatDoesTheNumberOfUsersText": "Het opgegeven aantal gebruikers bepaalt hoeveel personen toegang hebben tot het bewerken van documenten, spreadsheets en presentaties. Het aantal documenten dat tegelijkertijd kan worden bewerkt, is onbeperkt.<br/>Andere gebruikers kunnen documenten alleen openen om ze te bekijken.<br/><br/>Let op: ONLYOFFICE bewaart een gebruikers-ID gedurende 30 dagen. Daarna kunt u de gebruiker indien nodig vervangen door een nieuwe. Indien u een document deelt met externe gebruikers, ontvangt elk van hen een persoonlijke gebruikers-ID die 30 dagen geldig is.",
   "WhereCanIFindAnswersToOtherQuestionsLabel": "Waar kan ik antwoorden vinden op andere vragen?",
-  "WhereCanIFindAnswersToOtherQuestionsText": "Bezoek ons <0>FAQ-centrum</0> of <1>dien uw verzoek in</1> en we helpen u binnenkort."
+  "WhereCanIFindAnswersToOtherQuestionsText": "Bezoek ons <0>FAQ center</0> of <1>dien uw verzoek in</1> en wij zullen u zo snel mogelijk helpen."
 }

@@ -30,7 +30,7 @@
   "Feature5ImgUrl": "/images/templates/form-creator/features/screen5.png",
   "Feature5ImgUrl2x": "/images/templates/form-creator/features/screen5@2x.png",
   "Feature6Title": "Secure your sensitive field data",
-  "Feature6ComingSoon": "coming soon",
+  "Feature6ComingSoon": "binnenkort",
   "Feature6Desc": "Protect your form and its contents, i.e., field data. ONLYOFFICE uses the symmetric AES 256 GCM algorithm to encrypt data and the asymmetric algorithm based on the Curve25519 keys to encrypt a key.",
   "Feature6ImgUrl": "/images/templates/form-creator/features/screen6.svg",
 

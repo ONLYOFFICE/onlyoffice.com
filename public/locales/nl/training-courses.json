@@ -12,7 +12,7 @@
   "ONLYOFFICEMail": "ONLYOFFICE Mail",
   "ONLYOFFICECRM": "ONLYOFFICE CRM",
   "ONLYOFFICEProjects": "ONLYOFFICE Projects",
-  "ONLYOFFICECalendar": "ONLYOFFICE Calendar",
+  "ONLYOFFICECalendar": "ONLYOFFICE Agenda",
   "ONLYOFFICECommunity": "ONLYOFFICE Community",
   "ONLYOFFICEPeople": "ONLYOFFICE People",
   "Integration": "Integration",
@@ -60,7 +60,7 @@
   "RequestSuccessfully": "Uw verzoek is succesvol verzonden",
   "RequestError": "Excuses, maar er is een fout gemaakt, probeer het later nog eens",
 
-  "NewSign": "New",
+  "NewSign": "Nieuw",
   "Sessions": "Sessies: ",
   "Hours": "Uren: ",
   "Price": "Prijs: ",

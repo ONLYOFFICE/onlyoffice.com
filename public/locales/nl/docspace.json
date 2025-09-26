@@ -12,7 +12,7 @@
 
   "CollaborateTitle": "<0>Kies</0> de manier waarop u samenwerkt",
   "CollaborateDescription": "DocSpace biedt flexibele toegangsrechten. Maak kamers aan, nodig mensen uit, werk samen en communiceer om uw werk af te krijgen.",
-  "CollaborateButton": "Start for free",
+  "CollaborateButton": "Begin gratis",
   "SliderTitle1": "Samenwerkingskamers",
   "SliderDescription1": "Samenwerken aan documenten* met een van de twee modi voor samen bewerken: realtime of paragraafblokkering. Volg wijzigingen, communiceer in realtime via de ingebouwde chat of voer audio- en videogesprekken.",
   "SliderTitle2": "Meeting rooms",
@@ -27,13 +27,13 @@
   "SliderDescription6": "Use VDR for advanced file security and transparency, secure storing and sharing of confidential business information, for example, while due diligence. Automatically index and track all content to keep great records and stay organized. Enable watermarks, set file lifetime, restrict downloading and copying. Organize role-based form filling.",
   "SliderTitle7": "Privé kamers",
   "SliderDescription7": "Voor gevoelige of vertrouwelijke documenten kunt u privé kamers gebruiken waar elk symbool dat u typt end-to-end wordt versleuteld",
-  "comingSoon": "Coming soon",
+  "comingSoon": "Binnenkort",
   "soon": "binnenkort",
 
   "ContentHeading": "Werk met al <0>het materiaal</0> dat u heeft",
   "ContentSubHeading": "Sla bestanden van verschillende formaten op in uw kamers.u hebt Bekijken, bewerken en samenwerken.",
   "ContentSubHeading2": "Maximale compatibiliteit met MS Office",
-  "ContentButton": "Start for free",
+  "ContentButton": "Begin gratis",
   "TextDocuments": "Tekstdocumenten",
   "Spreadsheets": "Spreadsheets",
   "Presentations": "Presentaties",
@@ -80,7 +80,7 @@
   "NonProfitDesc": "Maak gratis clouddocruimte voor uw school of non-profitorganisatie, ontvang 2 GB opslagruimte en tot 20 beheerdersaccounts.",
   "NonProfitLinkLabel": "Verzoek indienen",
 
-  "LearnMoreHeading": "Learn more about ONLYOFFICE DocSpace",
+  "LearnMoreHeading": "Meer informatie over ONLYOFFICE Docspace",
 
   "YoutubeCardText": "Krijg ONLYOFFICE DocSpace onder de knie met videogidsen",
   "BlogCardText": "Integrate ONLYOFFICE DocSpace into a Single Page Application",

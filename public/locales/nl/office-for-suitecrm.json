@@ -1,9 +1,9 @@
 {
   "PageTitle": "Online editors for SuiteCRM | ONLYOFFICE",
-  "PageDescription": "Work with office files in the SuiteCRM Documents module using ONLYOFFICE Docs",
+  "PageDescription": "Werk met office bestanden in de SuiteCRM-module Documenten met behulp van ONLYOFFICE Docs.",
 
   "OnlineOfficeForConnector": "Online office for <0>SuiteCRM</0>",
-  "Subheader": "Work with office files in the SuiteCRM Documents module using ONLYOFFICE Docs",
+  "Subheader": "Werk met office bestanden in de SuiteCRM-module Documenten met behulp van ONLYOFFICE Docs.",
   "GetItNow": "Download nu",
   "FullyCompatibleWithDocxXlsxAndPptx": "Volledig geschikt voor docx, xlsx en pptx",
 
@@ -36,9 +36,9 @@
   "Reason1": "<0>Ready-to-use</0> connector",
   "Reason2": "<0>Editing and co-authoring office files</0> directly within the SuiteCRM Documents module",
   "Reason3": "<0>Realtime samenwerking</0>, Wijzigingen bijhouden, opmerkingen, chat",
-  "Reason4": "<0>Intuitive</0> interface with tabs",
+  "Reason4": "<0>Intuïtieve</0> interface met tabbladen",
   "Reason5": "<0>Meerdere</0> bewerkings-, opmaak- en stylingtools",
-  "Reason6": "<0>JWT protection</0> from unauthorized access",
+  "Reason6": "<0>JWT beveiliging</0> tegen onbevoegde toegang",
   "Reason7": "<0>No installation required.</0> Quick configuration.",
   "Reason8": "<0>Open-source code</0> beschikbaar op GitHub",
 

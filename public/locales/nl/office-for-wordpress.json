@@ -1,16 +1,16 @@
 {
   "PageTitle": "Online Office for WordPress | ONLYOFFICE",
-  "PageDescription": "Work on office files from your WordPress account",
+  "PageDescription": "Werk aan office bestanden vanuit uw WordPress-account",
 
   "OnlineOfficeForConnector": "Online Office for WordPress",
-  "Subheader": "Work on office files from your WordPress account",
+  "Subheader": "Werk aan office bestanden vanuit uw WordPress-account",
   "GetItNow": "Download nu",
   "FullyCompatibleWithDocxXlsxAndPptx": "Volledig geschikt voor docx, xlsx en pptx",
   "RequestFreeDemo": "Vraag een gratis demo aan",
 
   "DocspaceAppTitle": "ONLYOFFICE <0>DocSpace app</0> for WordPress",
   "DocspaceAppHeader": "Embed office documents into your WordPress website",
-  "DocspaceAppTab1Label": "Create, upload and embed docs, sheets, slides, PDFs or to your website.",
+  "DocspaceAppTab1Label": "Creëer, upload en integreer documenten, spreadsheets, presentaties en PDF's op uw website.",
   "DocspaceAppTab1ImgUrl": "/images/templates/office-for-wordpress/docspace-app/screen1.png",
   "DocspaceAppTab1ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/screen1@2x.png",
   "DocspaceAppTab2Label": "Embed the entire room into your webpage allowing visitors to view documents right in the browser.",
@@ -19,7 +19,7 @@
   "DocspaceAppTab3Label": "Integrate complex PDF forms for filling them in online. Automatically collect and analyze data.",
   "DocspaceAppTab3ImgUrl": "/images/templates/office-for-wordpress/docspace-app/screen3.png",
   "DocspaceAppTab3ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/screen3@2x.png",
-  "DocspaceAppTab4Label": "Prevent downloading, printing and copying documents from your website.",
+  "DocspaceAppTab4Label": "Voorkom het downloaden, afdrukken en kopiëren van documenten van uw website.",
   "DocspaceAppTab4ImgUrl": "/images/templates/office-for-wordpress/docspace-app/screen4.png",
   "DocspaceAppTab4ImgUrl2x": "/images/templates/office-for-wordpress/docspace-app/screen4@2x.png",
   "soon": "binnenkort",
@@ -57,9 +57,9 @@
   "WhyOO": "Waarom ONLYOFFICE?",
   "Reason1": "Een uitgebreide reeks tools voor bewerken, opmaken en stylen. <0>Geïntegreerde AI helper</0> (ChatGPT of ZhiPu Copilot).",
   "Reason2": "<0>Realtime</0> en paragraafvergrendeling, gezamenlijke bewerking, beoordeling, versiegeschiedenis, documentvergelijking, opmerkingen en vermeldingen.",
-  "Reason3": "<0>Built-in chat</0> and Telegram integration. Jitsi and Rainbow plugins for real-time communication.",
+  "Reason3": "<0>Geïntegreerde chat</0> en Telegram integratie. Jitsi- en Rainbow-plug-ins voor realtime communicatie.",
   "Reason4": "Ondersteuning voor meer dan <0>50 bestandsformaten</0>. Volledig geschikt voor MS Office-formaten: DOCX, XLSX, PPTX.",
-  "Reason5": "<0>Enhanced security.</0> Flexible access rights and JWT. Activity tracking and audit reporting. Encryption at rest and in transit. Open source code.",
+  "Reason5": "<0>Verbeterde beveiliging.</0> Flexibele toegangsrechten en JWT. Tracking van activiteiten en auditverslagen. Versleuteling at rest en tijdens verzending. Open source-code.",
   "Reason6": "<0>Free plan to start</0>. Business plan for more admins, bigger storage, enhanced security and professional support. Self-hosted solution for total control over your data.",
 
   "Docs": "Docs",
@@ -72,13 +72,13 @@
   "HowToStartStep2DocsImgUrl": "/images/templates/office-for-wordpress/how-to-start/step2-dc.svg",
   "HowToStartStep3DocsImgUrl": "/images/templates/office-for-wordpress/how-to-start/step3-dc.svg",
 
-  "HowToStartStep1Docspace": "Create your free <0>DocSpace account</0>.",
+  "HowToStartStep1Docspace": "Maak uw gratis <0>DocSpace account</0>.",
   "HowToStartStep2Docspace": "Get the integration app from <0>WordPress Plugin Directory</0>.",
   "HowToStartStep1DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/step1-ds.svg",
   "HowToStartStep2DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/step2-ds.svg",
   "HowToStartStep3DocspaceImgUrl": "/images/templates/office-for-wordpress/how-to-start/step3-ds.svg",
 
-  "HowToStartStep3": "Upload and configure the integration app.",
+  "HowToStartStep3": "Upload en configureer de integratie app.",
 
   "ReadDetailedInstructionsDocSpace": "Lees de gedetailleerde instructies in het <0>Helpcentrum</0>.",
   "ReadDetailedInstructionsDocs": "Read detailed instructions on <0>GitHub</0> and in the <1>Help Center</1>.",

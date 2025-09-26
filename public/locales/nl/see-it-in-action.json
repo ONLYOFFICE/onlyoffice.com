@@ -13,17 +13,17 @@
   "ActionsExampleDocumentTitlePptx": "Example Document Title.pptx",
   "ActionsEditPdf": "PDF bewerken",
   "ActionsExampleDocumentTitlePdf": "Example Document Title.pdf",
-  "ActionsCreateForm": "Formulier maken",
-  "ActionsFillInPdfForm": "Fill in PDF form",
+  "ActionsCreateForm": "Maak Formulier Aan",
+  "ActionsFillInPdfForm": "Vul het PDF formulier in",
   "ActionsCollaborate": "Samenwerken",
 
   "ActionsDemoPreview": "Demo preview",
   "ActionsDemoModalHeadingOpenDocx": "Open DOCX om te bewerken",
   "ActionsDemoModalHeadingOpenXlsx": "Open XLSX om te bewerken",
   "ActionsDemoModalHeadingOpenPptx": "Open PPTX om te bewerken",
-  "ActionsDemoModalHeadingOpenPdf": "Edit PDF",
-  "ActionsDemoModalHeadingOpenCreateForm": "Formulier maken",
-  "ActionsDemoModalHeadingOpenFill": "Fill in PDF form",
+  "ActionsDemoModalHeadingOpenPdf": "Bewerk PDF",
+  "ActionsDemoModalHeadingOpenCreateForm": "Maak Formulier Aan",
+  "ActionsDemoModalHeadingOpenFill": "Vul het PDF formulier in",
   "ActionsDemoModalHeadingOpenCollaborate": "Samenwerken",
   "ActionsDemoModalButtonClose": "Sluiten"
 }

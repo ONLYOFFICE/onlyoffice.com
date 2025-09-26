@@ -21,7 +21,7 @@
   "ThereAreNoComments" : "There are no comments in the document.",
   "SendReply" : "Send Reply",
   "AddReply" : "Add Reply",
-  "Delete" : "Delete",
+  "Delete" : "Verwijderen",
   "SendComment" : "Send Comment",
   "AddComment" : "Add Comment",
   "EnterYourReplyHere" : "Enter your reply here",
@@ -49,5 +49,5 @@
 
   "HaveAnyQuestions": "Have any questions about ONLYOFFICE Automation API? We will be happy to consult you and discuss all the details.",
   "HaveAnyQuestionsText": "The team of experts is here to help you at every step. <2 /> <2 /> In case of pre-sale questions, contact us at <0>sales@onlyoffice.com</0> or schedule a time to have our team call you.  <2 /> <2 /> For any technical issue, message us at <1>support@onlyoffice.com</1>.",
-  "GetInTouch": "Get in touch"
+  "GetInTouch": "Neem contact met ons op"
 }

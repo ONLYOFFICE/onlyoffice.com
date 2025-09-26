@@ -37,7 +37,7 @@
   "DocumentsTab5ImgUrl": "/images/templates/office-for-moodle/documents/documents-5.png",
   "DocumentsTab5ImgUrl2x": "/images/templates/office-for-moodle/documents/documents-5@2x.png",
 
-  "ScheduleYourFreeDemo": "Schedule your free demo",
+  "ScheduleYourFreeDemo": "Plan uw gratis demo",
 
   "QuoteText": "\"We absolutely recommend ONLYOFFICE to schools. Maybe there is dedicated software for companies, but if you want to control your data and have a collaborative and simple system to work with your students, that's a great solution.\"",
   "QuoteAuthor": "Dr. Colin Jonathan",
@@ -69,7 +69,7 @@
   "FeaturesFreeTrial": "Scalable Enterprise versions. <0>Free 30-day trial.</0> Educational discounts.",
 
   "HowToStart": "Hoe begint u??",
-  "HowToStartStep1": "Deploy <0>ONLYOFFICE Docs</0> on your own server or sign up for <1>ONLYOFFICE Docs Cloud</1>",
+  "HowToStartStep1": "Implementeer <0>ONLYOFFICE Docs</0> op uw eigen server of meld u aan voor <1>ONLYOFFICE Docs Cloud</1>.",
   "HowToStartStep2": "Get the plugins from the Moodle directory: <0>main integration plugin</0> / <1>Assign Submission plugin</1>.",
   "HowToStartStep3": "Follow the usual Moodle plugin installation steps.",
   "HowToStartStep4": "Configure the installed plugin.",
