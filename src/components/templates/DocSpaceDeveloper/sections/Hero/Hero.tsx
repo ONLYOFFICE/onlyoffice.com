@@ -39,14 +39,12 @@ const Hero = () => {
             as="a"
             href="/download-developer#docspace-developer"
             label={t("HeroButtonGet")}
-            borderRadius="3px"
           />
           <Button
             as="a"
             href="/demo-order"
             label={t("HeroButtonSchedule")}
             variant="quinary"
-            borderRadius="3px"
           />
         </StyledHeroButtonsWrapper>
         <StyledHeroVideoWrapper>

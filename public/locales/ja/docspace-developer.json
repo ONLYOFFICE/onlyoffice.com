@@ -69,5 +69,9 @@
   ],
 
   "WorthButtonTry": "今すぐ試してみる",
-  "WorthButtonRead": "API ドキュメントを読む"
+  "WorthButtonRead": "API ドキュメントを読む",
+  
+  "MCPHeading": "AIをドキュメントワークフローに統合",
+  "MCPDescription": "ONLYOFFICE DocSpace MCPサーバーで、LLMや外部システムとのやり取り方法を変革しましょう。",
+  "LearnMore": "詳細を見る"
 }
