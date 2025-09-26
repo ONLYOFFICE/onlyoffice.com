@@ -219,19 +219,22 @@ export default async function handler(
               s3Err,
             );
             errorMessages.push(`Failed to upload ${file.originalFilename}`);
-            // Remove TEMPORARY + s3Err after testing
             const e = s3Err as Partial<S3ServiceException> & {
               message?: string;
               name?: string;
               Code?: string;
             };
-            return res.status(500).json({
-              status: "error",
-              message: "S3 upload failed ! TEMPORARY ! s3Err: " + s3Err,
-              awsCode: e.Code ?? e.name ?? "UnknownError",
-              awsMessage: e.message ?? "No message available",
-              awsDetails: e.$metadata ?? null,
-            });
+
+            if (process.env.NEXT_PUBLIC_TESTING_ON === "true") {
+              return res.status(500).json({
+                status: "error",
+                message: "S3 upload failed",
+                awsCode: e.Code ?? e.name ?? "UnknownError",
+                awsMessage: e.message ?? "No message available",
+                awsDetails: e.$metadata ?? null,
+              })
+            }
+            return res.status(500).json({ status: "error", message: "S3 upload failed", });
           }
         }
       } finally {
@@ -269,25 +272,19 @@ export default async function handler(
         throw { error: mailErr, source: "sendMail" };
       }
 
-      return res
-        .status(200)
-        .json({
+      if (process.env.NEXT_PUBLIC_TESTING_ON === "true") {
+        return res.status(200).json({
           status: "success",
           folder: requestId,
           attachments: attachments,
         });
+      }
+      return res.status(200).json({ status: "success" });
     } catch (err) {
-      // Generic with source specified
-      const typedErr = err as ISupportFormError;
-
       console.error("support-contact-form error:", err);
       return res.status(500).json({
         status: "error",
-        message:
-          "Internal Server Error. ! TEMPORARY ! err: " +
-          JSON.stringify(err, Object.getOwnPropertyNames(err), 2), // Remove TEMPORARY + err after testing
-        source: typedErr.source ?? "unknown",
-        details: typedErr.error ?? err,
+        message: "Internal Server Error",
       });
     }
   });
