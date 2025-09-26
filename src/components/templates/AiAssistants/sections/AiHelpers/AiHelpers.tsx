@@ -12,6 +12,7 @@ import {
 } from "./AiHelpers.styled";
 import { Button } from "@src/components/ui/Button";
 import { useRouter } from "next/router";
+import { FeatureImageItem } from "@src/components/widgets/FeatureImageItem";
 
 const AiHelpers = () => {
   const { t } = useTranslation("ai-assistants");
@@ -55,7 +56,33 @@ const AiHelpers = () => {
               }))}
             />
           ))}
-
+          <FeatureImageItem
+            fontSize="14px"
+            contentWidth={352}
+            heading={
+              <>
+                {t("AIInlineAgent")}
+                <sup style={{ color: "#FF6F3D", fontWeight: "400" }}>
+                  {" "}
+                  {t("BETA")}
+                </sup>
+              </>
+            }
+            text={t("AIInlineAgentText")}
+            position={{ desktop: "right" }}
+            links={[
+              {
+                href: t("AIInlineAgentFeaturesLink"),
+                label: t("AIInlineAgentFeatures"),
+              },
+            ]}
+            image={{
+              url: getAssetUrl(t("AIInlineAgentImg")),
+              url2x: getAssetUrl(t("AIInlineAgentImg2x")),
+              height: 420,
+              width: 736,
+            }}
+          />
           <StyledAiHelpersBtnsWrapper>
             <Button
               as="a"

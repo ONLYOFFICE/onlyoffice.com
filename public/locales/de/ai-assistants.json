@@ -80,11 +80,19 @@
   "ConvertMacrosImg": "/images/templates/ai-assistants/ai-helpers/de/calwa_3.png",
   "ConvertMacrosImg2x": "/images/templates/ai-assistants/ai-helpers/de/calwa_3@2x.png",
 
+  "AIInlineAgent": "KI-Inline-Agent",
+  "BETA": "BETA",
+  "AIInlineAgentText": "Kommunizieren Sie mit dem verknüpften KI-Assistenten in natürlicher Sprache über ein schwebendes Panel. Führen Sie alltägliche Aufgaben aus, ohne Menüs durchsuchen zu müssen. Verfeinern Sie Ergebnisse Schritt für Schritt oder führen Sie komplexe Anfragen fort.",
+  "AIInlineAgentFeatures": "Die Funktionen des KI-Agenten überprüfen",
+  "AIInlineAgentFeaturesLink": "https://www.onlyoffice.com/blog/de/2025/08/der-neue-ki-agent-fuer-onlyoffice-docs",
+  "AIInlineAgentImg": "/images/templates/ai-assistants/ai-helpers/de/ai.png",
+  "AIInlineAgentImg2x": "/images/templates/ai-assistants/ai-helpers/de/ai@2x.png",
+
   "TryInCloud": "In der Cloud testen",
   "TryInDesktop": "Desktop ausprobieren",
 
   "ConnectAnyAI": "Verbinden Sie einen beliebigen KI-Assistenten",
-  "ConnectAnyAIText": "Verbinden Sie jedes KI-Modell, auch ein lokales. Wählen Sie einen vorinstallierten Anbieter aus der Liste (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI) oder verbinden Sie Ihren eigenen.",
+  "ConnectAnyAIText": "Verbinden Sie jedes KI-Modell, auch ein lokales. Wählen Sie einen vorinstallierten Anbieter aus der Liste (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI, LM Studio, Zhipu AI) oder verbinden Sie Ihren eigenen.",
 
   "DifferentAI": "Verschiedene KI-Modelle – für verschiedene Aufgaben",
   "AdjustAI": "Passen Sie die KI-Nutzung nach Bedarf an. Wenden Sie verschiedene KI-Modelle an, um verschiedene Aktionen wie Chatbot-Anfragen, Übersetzungen, OCR usw. auszuführen.",
@@ -97,6 +105,7 @@
   "ClickSettings": "Klicken Sie auf <0>Einstellungen</0>, um das Konfigurationsfenster zu öffnen.",
   "ClickEditAIModels": "Klicken Sie auf <0>KI-Modelle bearbeiten</0>. Geben Sie Ihre Schlüssel für die ausgewählten KI-Anbieter aus der Liste ein oder fügen Sie neue KI-Modelle hinzu.",
   "SelectTheRequiredAIModels": "Wählen Sie die erforderlichen KI-Modelle für verschiedene Aufgaben aus.",
+  "Step8": "Drücken Sie Strg + /, um den KI-Agenten aufzurufen.",
 
   "LearnMoreHeading": "Erfahren Sie mehr über die Verwendung von KI in ONLYOFFICE",
   "Blog": "Blog",

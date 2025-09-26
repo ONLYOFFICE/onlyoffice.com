@@ -80,11 +80,19 @@
   "ConvertMacrosImg": "/images/templates/ai-assistants/ai-helpers/zh/calwa_3.png",
   "ConvertMacrosImg2x": "/images/templates/ai-assistants/ai-helpers/zh/calwa_3@2x.png",
 
+  "AIInlineAgent": "AI 内联智能体",
+  "BETA": "BETA",
+  "AIInlineAgentText": "通过浮动面板，以自然语言与连接的 AI 助手实时交互。无需搜索菜单即可执行常见任务，支持对输出结果进行渐进式优化，并可连续处理复杂请求。",
+  "AIInlineAgentFeatures": "查看 AI 智能体功能",
+  "AIInlineAgentFeaturesLink": "https://www.onlyoffice.com/blog/zh-hans/2025/08/meet-the-new-ai-agent-for-onlyoffice",
+  "AIInlineAgentImg": "/images/templates/ai-assistants/ai-helpers/zh/ai.png",
+  "AIInlineAgentImg2x": "/images/templates/ai-assistants/ai-helpers/zh/ai@2x.png",
+
   "TryInCloud": "使用云端版",
   "TryInDesktop": "在桌面客户端试一试",
 
   "ConnectAnyAI": "连接任何 AI 助手",
-  "ConnectAnyAIText": "连接任何 AI 模型，包括本地模型。选择各种预安装的提供商（OpenAI、Together AI、Mistral、Groq、GPT4All、Anthropic、Gemini、DeepSeek、Ollama、Stability AI）或连接您自己的提供商。",
+  "ConnectAnyAIText": "连接任何 AI 模型，包括本地模型。选择各种预安装的提供商（OpenAI、Together AI、Mistral、Groq、GPT4All、Anthropic、Gemini、DeepSeek、Ollama、Stability AI、LM Studio、Zhipu AI）或连接您自己的提供商。",
 
   "DifferentAI": "不同的 AI 模型 – 应对不同的任务",
   "AdjustAI": "可按需调整 AI 的使用。选择不同的 AI 模型来执行各种操作，例如聊天机器人请求、翻译、文字识别等。",
@@ -97,6 +105,7 @@
   "ClickSettings": "点击<0>设置</0>打开配置窗口。",
   "ClickEditAIModels": "点击<0>编辑 AI 模型</0>。从列表中输入所选 AI 提供商的密钥或添加新的 AI 模型。",
   "SelectTheRequiredAIModels": "针对不同的任务选择所需的AI模型。",
+  "Step8": "按 Ctrl + / 键调用 AI 智能体。",
 
   "LearnMoreHeading": "了解更多在 ONLYOFFICE 中使用 AI 的相关信息",
   "Blog": "博客",

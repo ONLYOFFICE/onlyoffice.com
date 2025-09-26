@@ -80,11 +80,19 @@
   "ConvertMacrosImg": "/images/templates/ai-assistants/ai-helpers/fr/calwa_3.png",
   "ConvertMacrosImg2x": "/images/templates/ai-assistants/ai-helpers/fr/calwa_3@2x.png",
 
+  "AIInlineAgent": "Agent IA intégré",
+  "BETA": "BETA",
+  "AIInlineAgentText": "Communiquez avec l'assistant IA connecté en langage naturel via un panneau flottant. Effectuez des tâches courantes sans avoir à parcourir les menus. Affinez les résultats étape par étape ou poursuivez vos requêtes complexes.",
+  "AIInlineAgentFeatures": "Découvrir les fonctionnalités de l'agent IA",
+  "AIInlineAgentFeaturesLink": "https://www.onlyoffice.com/blog/fr/2025/08/decouvrez-le-nouvel-agent-ia-pour-onlyoffice",
+  "AIInlineAgentImg": "/images/templates/ai-assistants/ai-helpers/fr/ai.png",
+  "AIInlineAgentImg2x": "/images/templates/ai-assistants/ai-helpers/fr/ai@2x.png",
+
   "TryInCloud": "Essayer dans cloud",
   "TryInDesktop": "Essayer sur le bureau",
 
   "ConnectAnyAI": "Connectez tout assistant IA",
-  "ConnectAnyAIText": "Connectez tout modèle d'IA, y compris un modèle local. Sélectionnez un fournisseur préinstallé dans la liste (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI) ou connectez le vôtre.",
+  "ConnectAnyAIText": "Connectez n'importe quel modèle d'IA, y compris un modèle local. Sélectionnez un fournisseur préinstallé dans la liste (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI, LM Studio, Zhipu AI) ou connectez le vôtre.",
 
   "DifferentAI": "Différents modèles d'IA pour différentes tâches",
   "AdjustAI": "Ajustez l'utilisation de l'IA en fonction de vos besoins. Appliquez différents modèles d'IA pour effectuer diverses actions telles que les demandes de chatbot, la traduction, l'OCR, etc.",
@@ -97,6 +105,7 @@
   "ClickSettings": "Cliquez sur <0>Paramètres</0> pour ouvrir la fenêtre de configuration.",
   "ClickEditAIModels": "Cliquez sur <0>Modifier les modèles d'IA</0>. Saisissez vos clés pour les fournisseurs d'IA sélectionnés dans la liste ou ajoutez de nouveaux modèles d'IA.",
   "SelectTheRequiredAIModels": "Sélectionnez les modèles d'IA nécessaires pour les différentes tâches.",
+  "Step8": "Appuyez sur Ctrl + / pour appeler l'agent IA.",
 
   "LearnMoreHeading": "En savoir plus sur l'utilisation de l'IA dans ONLYOFFICE",
   "Blog": "Blog",

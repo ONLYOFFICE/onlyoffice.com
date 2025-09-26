@@ -38,11 +38,17 @@
   "CreateNewMacros": "Crie novas macros",
   "ConvertMacros": "Converta macros VBA",
 
+  "AIInlineAgent": "Agente de IA em linha",
+  "BETA": "BETA",
+  "AIInlineAgentText": "Comunique-se com o assistente de IA conectado em linguagem natural por meio de um painel flutuante. Execute tarefas comuns sem precisar pesquisar menus. Refine os resultados passo a passo ou continue com solicitações complexas.",
+  "AIInlineAgentFeatures": "Confira os recursos do agente de IA",
+  "AIInlineAgentFeaturesLink": "https://www.onlyoffice.com/blog/fr/2025/08/decouvrez-le-nouvel-agent-ia-pour-onlyoffice",
+
   "TryInCloud": "Experimente na nuvem",
   "TryInDesktop": "Experimente no desktop",
 
   "ConnectAnyAI": "Conecte qualquer assistente de IA",
-  "ConnectAnyAIText": "Conecte qualquer modelo de IA, incluindo um local. Selecione um provedor pré-instalado da lista (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI) ou conecte o seu próprio.",
+  "ConnectAnyAIText": "Conecte qualquer modelo de IA, incluindo um local. Selecione um provedor pré-instalado na lista (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI, LM Studio, Zhipu AI) ou conecte o seu próprio.",
 
   "DifferentAI": "Diferentes modelos de IA - para diferentes tarefas",
   "AdjustAI": "Ajuste o uso da IA conforme sua necessidade. Aplique diferentes modelos de IA para executar várias ações, como solicitações de chatbot, tradução, OCR etc.",
@@ -55,6 +61,7 @@
   "ClickSettings": "Clique em <0>Settings</0> para abrir a janela de configuração.",
   "ClickEditAIModels": "Clique em <0>Editar modelos de IA</0>. Digite suas chaves para os provedores de IA selecionados na lista ou adicione novos modelos de IA.",
   "SelectTheRequiredAIModels": "Selecione os modelos de IA necessários para diferentes tarefas.",
+  "Step8": "Pressione Ctrl + / para chamar o agente de IA.",
 
   "LearnMoreHeading": "Saiba mais sobre o uso de IA no ONLYOFFICE",
   "Blog": "Blog",

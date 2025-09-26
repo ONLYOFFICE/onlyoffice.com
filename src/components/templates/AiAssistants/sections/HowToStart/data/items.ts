@@ -29,4 +29,8 @@ export const items: IStepCarouselItem[] = [
     imgUrl: "/images/templates/ai-assistants/how-to-start/en/step_7.svg",
     heading: "SelectTheRequiredAIModels",
   },
+  {
+    imgUrl: "/images/templates/ai-assistants/how-to-start/en/step_8.svg",
+    heading: "Step8",
+  },
 ];

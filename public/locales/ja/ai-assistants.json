@@ -38,11 +38,17 @@
   "CreateNewMacros": "新しいマクロを作成",
   "ConvertMacros": "VBAマクロを変換",
 
+  "AIInlineAgent": "AIインラインエージェント",
+  "BETA": "BETA",
+  "AIInlineAgentText": "フローティングパネルを通じて、接続されたAIアシスタントと自然言語でコミュニケーションします。メニューを検索せずに一般的なタスクを実行します。結果を段階的に洗練させたり、複雑なリクエストを継続したりできます。",
+  "AIInlineAgentFeatures": "AIエージェント機能を見る",
+  "AIInlineAgentFeaturesLink": "https://www.onlyoffice.com/blog/ja/2025/08/meet-the-new-ai-agent-for-onlyoffice",
+
   "TryInCloud": "クラウドで試す",
   "TryInDesktop": "デスクトップで試す",
 
   "ConnectAnyAI": "あらゆるAIアシスタントへの接続",
-  "ConnectAnyAIText": "ローカルのも含め、任意のAIモデルを接続できます。リストからプレインストールされたプロバイダー（OpenAI、Together AI、Mistral、Groq、GPT4All、Anthropic、Gemini、DeepSeek、Ollama、Stability AI）を選択するか、独自のものを接続することが可能です。",
+  "ConnectAnyAIText": "ローカルモデルを含む任意のAIモデルを接続できます。プリインストールされたプロバイダーのリスト（OpenAI、Together AI、Mistral、Groq、GPT4All、Anthropic、Gemini、DeepSeek、Ollama、Stability AI、LM Studio、Zhipu AI）から選択するか、独自のものを接続します。",
 
   "DifferentAI": "さまざまなタスクには，さまざまなAIモデルを",
   "AdjustAI": "必要に応じて AI の使用を調整しましょう。チャットボットのリクエスト、翻訳、OCR など、さまざまなアクションに異なる AI モデルを適用できます。",
@@ -55,6 +61,7 @@
   "ClickSettings": "<0>設定</0>をクリックして、設定ウィンドウを開きます。",
   "ClickEditAIModels": "<0>AIモデルの編集</0>をクリックします。 リストから選択したAIプロバイダー用のキーを入力するか、新しいAIモデルを追加します。",
   "SelectTheRequiredAIModels": "異なるタスクに必要なAIモデルを選択します。",
+  "Step8": "Ctrl + /を押してAIエージェントを呼び出せます。",
 
   "LearnMoreHeading": "ONLYOFFICEでのAI活用について",
   "Blog": "ブログ",

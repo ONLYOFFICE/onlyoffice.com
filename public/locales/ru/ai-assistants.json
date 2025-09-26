@@ -80,11 +80,18 @@
   "ConvertMacrosImg": "/images/templates/ai-assistants/ai-helpers/ru/calwa_3.png",
   "ConvertMacrosImg2x": "/images/templates/ai-assistants/ai-helpers/ru/calwa_3@2x.png",
 
+  "AIInlineAgent": "Встроенный ИИ-агент",
+  "BETA": "БЕТА-ВЕРСИЯ",
+  "AIInlineAgentText": "Общайтесь с подключенным ИИ-помощником на естественном языке через плавающую панель инструментов. Выполняйте задачи общего характера без поиска в меню. Обрабатывайте результаты поэтапно или выполняйте сложные запросы.",
+  "AIInlineAgentFeatures": "Посмотрите функциональные возможности ИИ-агента",
+  "AIInlineAgentImg": "/images/templates/ai-assistants/ai-helpers/ru/ai.png",
+  "AIInlineAgentImg2x": "/images/templates/ai-assistants/ai-helpers/ru/ai@2x.png",
+
   "TryInCloud": "Попробовать в облаке",
   "TryInDesktop": "Попробовать в десктопе",
 
   "ConnectAnyAI": "Подключите любой ИИ-помощник",
-  "ConnectAnyAIText": "Подключите любую ИИ-модель, в том числе локальную. Выберите предустановленный провайдер из списка (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI) или подключите собственный.",
+  "ConnectAnyAIText": "Подключите любую ИИ-модель, в том числе локальную. Выберите предустановленный провайдер из списка: OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI, LM Studio, Zhipu AI или подключите собственный.",
 
   "DifferentAI": "Различные модели ИИ для разных задач",
   "AdjustAI": "Адаптируйте использование ИИ к вашим задачам. Применяйте различные ИИ-модели для разных действий, таких как запросы чат-бота, перевод, распознавание текста и других.",
@@ -97,6 +104,7 @@
   "ClickSettings": "Нажмите <0>Настройки</0>, чтобы открыть окно конфигурации.",
   "ClickEditAIModels": "Нажмите <0>Редактировать ИИ-модели</0>. Введите ключи для ИИ-провайдеров, выбранных из списка, или добавьте новые ИИ-модели.",
   "SelectTheRequiredAIModels": "Выберите необходимые ИИ-модели для различных задач.",
+  "Step8": "Нажмите Ctrl + /, чтобы вызвать ИИ-агента.",
 
   "LearnMoreHeading": "Узнать больше об использовании ИИ в ONLYOFFICE",
   "Blog": "Блог",

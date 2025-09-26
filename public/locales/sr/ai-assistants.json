@@ -38,11 +38,17 @@
   "CreateNewMacros": "Kreirajte nove makroe",
   "ConvertMacros": "Konvertujte VBA makroe",
 
+  "AIInlineAgent": "AI inline asistent",
+  "BETA": "BETA",
+  "AIInlineAgentText": "Komunicirajte sa povezanim AI asistentom prirodnim jezikom putem plutajućeg panela. Obavljajte uobičajene zadatke bez pretraživanja menija. Poboljšajte rezultate korak po korak ili nastavite složene zahteve.",
+  "AIInlineAgentFeatures": "Proverite funkcije AI agenta",
+  "AIInlineAgentFeaturesLink": "https://www.onlyoffice.com/blog/sr/2025/08/upoznajte-novog-ai-agenta-za-onlyoffice",
+
   "TryInCloud": "Probajte u oblaku",
   "TryInDesktop": "Probajte na desktopu",
 
   "ConnectAnyAI": "Integrišite bilo kojeg AI asistenta",
-  "ConnectAnyAIText": "Želite li da povežete sopstvenog AI asistenta sa urednicima? Uradite to lako preko dodatka.",
+  "ConnectAnyAIText": "Povežite bilo koji AI model, uključujući lokalni. Izaberite unapred instaliranog provajdera sa liste (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI, LM Studio, Zhipu AI) ili povežite sopstvenog.",
 
   "DifferentAI": "Različiti AI modeli - za različite zadatke",
   "AdjustAI": "Prilagodite korišćenje AI prema vašim potrebama. Primenite različite AI modele za izvođenje različitih akcija kao što su chatbot zahtevi, prevođenje, OCR, itd.",
@@ -55,6 +61,7 @@
   "ClickSettings": "Kliknite na <0>Podešavanja</0> da otvorite prozor za konfiguraciju",
   "ClickEditAIModels": "Kliknite na <0>Uredi AI modele</0>. Unesite svoje ključeve za izabrane AI provajdere sa liste ili dodajte nove AI modele",
   "SelectTheRequiredAIModels": "Izaberite potrebne AI modele za različite zadatke",
+  "Step8": "Pritisnite Ctrl + / da pozovete AI agenta.",
 
   "LearnMoreHeading": "Saznajte više o korišćenju AI u ONLYOFFICE-u",
   "Blog": "Blog",

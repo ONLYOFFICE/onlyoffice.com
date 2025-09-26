@@ -79,12 +79,18 @@
   "ConvertMacros": "Convert VBA macros",
   "ConvertMacrosImg": "/images/templates/ai-assistants/ai-helpers/en/calwa_3.png",
   "ConvertMacrosImg2x": "/images/templates/ai-assistants/ai-helpers/en/calwa_3@2x.png",
+  
+  "AIInlineAgent": "AI inline agent",
+  "BETA": "BETA",
+  "AIInlineAgentText": "Communicate with the connected AI assistant in natural language via a floating panel. Perform common tasks without searching menus. Refine results step by step or continue complex requests.",
+  "AIInlineAgentFeatures": "Check the AI agent features",
+  "AIInlineAgentFeaturesLink": "https://www.onlyoffice.com/blog/2025/08/meet-the-new-ai-agent-for-onlyoffice",
 
   "TryInCloud": "Try in cloud",
   "TryInDesktop": "Try in desktop",
 
   "ConnectAnyAI": "Connect any AI assistant",
-  "ConnectAnyAIText": "Connect any AI model, including a local one. Select a pre-installed provider from the list (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI) or connect your own.",
+  "ConnectAnyAIText": "Connect any AI model, including a local one. Select a pre-installed provider from the list (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI, LM Studio, Zhipu AI) or connect your own.",
 
   "DifferentAI": "Different AI models – for different tasks",
   "AdjustAI": "Adjust the AI usage as you need it. Apply different AI models to perform various actions such as chatbot requests, translation, OCR, etc.",
@@ -97,6 +103,7 @@
   "ClickSettings": "Click <0>Settings</0> to open the configuration window.",
   "ClickEditAIModels": "Click <0>Edit AI models</0>. Enter your keys for the selected AI providers from the list or add new AI models.",
   "SelectTheRequiredAIModels": "Select the required AI models for different tasks.",
+  "Step8": "Press Ctrl + / to call the AI agent.",
 
   "LearnMoreHeading": "Learn more about using AI in ONLYOFFICE",
   "Blog": "Blog",

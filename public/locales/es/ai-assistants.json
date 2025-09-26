@@ -38,11 +38,17 @@
   "CreateNewMacros": "Crea nuevas macros",
   "ConvertMacros": "Convierte macros VBA",
 
+  "AIInlineAgent": "Agente de IA en línea",
+  "BETA": "BETA",
+  "AIInlineAgentText": "Comunícate con el asistente de IA conectado en lenguaje natural a través de un panel flotante. Realiza tareas comunes sin buscar en los menús. Perfecciona los resultados paso a paso o continúa con solicitudes complejas.",
+  "AIInlineAgentFeatures": "Comprueba las características del agente de IA",
+  "AIInlineAgentFeaturesLink": "https://www.onlyoffice.com/blog/es/2025/08/descubre-el-nuevo-agente-de-ia-para-onlyoffice",
+
   "TryInCloud": "Probar en la nube",
   "TryInDesktop": "Probar en el escritorio",
 
   "ConnectAnyAI": "Conecta cualquier asistente de IA",
-  "ConnectAnyAIText": "Conecta cualquier modelo de IA, incluido uno local. Selecciona un proveedor preinstalado de la lista (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI) o conecta el tuyo propio.",
+  "ConnectAnyAIText": "Conecta cualquier modelo de IA, incluido uno local. Selecciona un proveedor preinstalado de la lista (OpenAI, Together AI, Mistral, Groq, GPT4All, Anthropic, Gemini, DeepSeek, Ollama, Stability AI, LM Studio, Zhipu AI) o conecta el tuyo propio.",
 
   "DifferentAI": "Diferentes modelos de IA para diferentes tareas",
   "AdjustAI": "Ajusta el uso de la IA según tus necesidades. Aplica diferentes modelos de IA para realizar diversas acciones, como solicitudes al chatbot, traducción, OCR, etc.",
@@ -55,6 +61,7 @@
   "ClickSettings": "Haz clic en <0>Configuración</0> para abrir la ventana de configuración.",
   "ClickEditAIModels": "Haz clic en <0>Editar modelos de IA</0>. Introduce tus claves para los proveedores de IA seleccionados de la lista o añade nuevos modelos de IA.",
   "SelectTheRequiredAIModels": "Selecciona los modelos de IA necesarios para las diferentes tareas.",
+  "Step8": "Pulsa Ctrl + / para llamar al agente de IA.",
 
   "LearnMoreHeading": "Más información sobre el uso de la IA en ONLYOFFICE",
   "Blog": "Blog",
